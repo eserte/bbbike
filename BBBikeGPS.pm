@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.9 2004/03/04 23:20:19 eserte Exp eserte $
+# $Id: BBBikeGPS.pm,v 1.10 2004/07/04 22:16:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.99 2004/07/03 22:47:47 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.100 2004/07/04 22:10:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1125,6 +1125,10 @@ sub add_search_net_menu_entries {
 			   -command => \&change_net_type,
 			  );
     }
+    $nsbm->checkbutton(-label => M"Add fragezeichen",
+		       -variable => \$add_net{fz},
+		       -command => \&change_net_type,
+		      );
 }
 
 sub advanced_coord_menu {
