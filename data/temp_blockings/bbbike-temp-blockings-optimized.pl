@@ -73,14 +73,7 @@ userdel	q4 8370,25539 8182,25608
        undef,
        undef,
        undef,
-       {
-         'until' => 1102719600,
-         'text' => 'L 16; (Siedl.Schönwalde-Pausin); Bahnübergang Gleisbauarbeiten Vollsperrung; Umleitung 25.10.2004-10.12.2004 ',
-         'from' => 1098568800,
-         'data' => 'userdel	2 -10559,23255 -10737,23418
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1112306400,
          'text' => 'B 101; (Luckenwalder-, Berliner Str.); OD Trebbin Straßenbauarbeiten Vollsperrung 27.10.2004-31.03.2005 ',
@@ -152,14 +145,7 @@ userdel	q4 21637,30946 21955,30976
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1102719600,
-         'text' => 'L 166; (B 5-Friesack-Garz); zw. B 5 u. Friesack u. KG nördl. Zootzen Straßenbauarbeiten Vollsperrung 22.11.2004-10.12.2004 ',
-         'from' => 1100991600,
-         'data' => 'userdel	2 -45632,38429 -46170,36687
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1103583600,
@@ -169,14 +155,7 @@ userdel	q4 21637,30946 21955,30976
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1103151599,
-         'text' => 'Volkradstr. (Friedrichsfelde) in Richtung Rummelsburger Str. ab Sewanstr. Baustelle, Fahrtrichtung gesperrt, Umleitung: Sewanstr. - Rummelsburger Str. (bis Mitte 12.2004)',
-         'from' => 1100942003,
-         'data' => 'userdel	q4; 17427,10259 17621,10994
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1114898400,
@@ -235,6 +214,22 @@ userdel	q4 21637,30946 21955,30976
          'text' => 'Johannisthaler Chaussee (Neukölln) in Höhe der Ernst-Keller-Brücke Baustelle, Straße vollständig gesperrt wegen Brückenneubau (bis Ende 2004)',
          'from' => 1102540046,
          'data' => 'userdel	2 15573,4122 15608,4175
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1102910400,
+         'text' => 'Schulze-Boysen-Str. (Lichtenberg) in beiden Richtungen zwischen Wiesenweg und Pfarrstr. Kranarbeiten, Straße vollständig gesperrt (bis 13.12.2004 ca. 5:00 Uhr)',
+         'from' => 1102712612,
+         'data' => 'userdel	2 15452,11330 15480,11392
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1122760800,
+         'text' => 'K 6938; (Görzke-Hohenlobbese); zw. OL Görzke und Abzw. Reppinichen, Brücke Brücken- und Straßenbau Vollsperrung 10.01.2005-30.07.2005 ',
+         'from' => 1105225200,
+         'data' => 'userdel	2 -59599,-27568 -59265,-27286
 ',
          'type' => 'gesperrt'
        }

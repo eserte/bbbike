@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.32 2004/12/06 20:42:40 eserte Exp $
+# $Id: Makefile,v 2.34 2004/12/11 00:01:05 eserte Exp $
 #
 
 BBBIKEDIR=		..
@@ -54,6 +54,8 @@ COMPUTED_TARGETS+=	radwege_exact mount
 
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COMPUTED_TARGETS} ${COOKED_TARGETS}
+
+ALL_STREETS=		strassen landstrassen landstrassen2
 
 TARGETS_DISABLED=	label relation_gps 
 
@@ -362,53 +364,14 @@ vorfahrt:	vorfahrt-orig
 	$(CONVERT2HAFAS) vorfahrt-orig > vorfahrt
 	-@$(READONLY) $@
 
-comments_cyclepath: comments_cyclepath-orig
+.for f in ${COMMENTS_PARTIAL}
+${f}: ${f}-orig ${ALL_STREETS}
 	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
-	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
+	cat ${f} | $(CONVERT2HAFAS) -basefile ${f}-orig - | \
+	    $(RESOLVE_STARS) ${ALL_STREETS} - > $@~ && \
+	mv $@~ $@
 	-@$(READONLY) $@
-
-comments_ferry: comments_ferry-orig
-	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
-	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
-	-@$(READONLY) $@
-
-comments_misc: comments_misc-orig
-	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
-	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
-	-@$(READONLY) $@
-
-comments_mount: comments_mount-orig
-	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
-	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
-	-@$(READONLY) $@
-
-comments_path: comments_path-orig
-	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
-	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
-	-@$(READONLY) $@
-
-comments_route: comments_route-orig
-	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
-	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
-	-@$(READONLY) $@
-
-comments_tram: comments_tram-orig
-	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
-	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
-	-@$(READONLY) $@
-
-comments_kfzverkehr: comments_kfzverkehr-orig
-	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
-	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
-	-@$(READONLY) $@
+.endfor
 
 relation_gps:	relation_gps-orig
 	-@$(WRITEABLE) $@
