@@ -2790,6 +2790,7 @@ sub search_coord {
 	(-name => $cookiename,
 	 -value => { %persistent },
 	 -expires => '+1y',
+	 -path => $q->url(-absolute => 1),
 	);
 
     http_header(@weak_cache,
@@ -3470,6 +3471,7 @@ sub draw_route {
 	    (-name => $cookiename,
 	     -value => { %persistent },
 	     -expires => '+1y',
+	     -path => $q->url(-absolute => 1),
 	    );
     }
 
