@@ -339,7 +339,6 @@ sub parse_synop {
             require FindBin;;
   	    $ENV{PATH} = "$FindBin::RealBin:$FindBin::RealBin/lib:$ENV{PATH}";
 	    $ENV{PERL5LIB} = "$FindBin::RealBin:$FindBin::RealBin/lib:$ENV{PERL5LIB}";
-warn $ENV{PERL5LIB};
         ';
     local(@synop);
     if ($local) {
