@@ -15,6 +15,7 @@ package Strassen::MultiStrassen;
 package MultiStrassen;
 use strict;
 #use AutoLoader 'AUTOLOAD';
+require Strassen::Core;
 use vars qw(@ISA);
 @ISA = qw(Strassen);
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.9 2003/08/09 07:20:44 eserte Exp $
+# $Id: cgi.t,v 1.10 2003/08/18 06:02:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -150,6 +150,18 @@ for my $cgiurl (@urls) {
     {
 	my $content;
 	my $route;
+
+ XXX:
+
+	# Start and goal are in plaetze
+	$req = new HTTP::Request
+	    (GET => "$action?start=heinrichplatz&starthnr=&startcharimg.x=&startcharimg.y=&startmapimg.x=&startmapimg.y=&via=&viahnr=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=innsbrucker+platz&zielhnr=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=");
+	$res = $ua->request($req);
+	ok($res->is_success, "Heinrichplatz, Innsbrucker Platz") or diag $res->as_string;
+	$content = uncompr($res);
+	ok($content =~ qr/Start.*startc.*startname.*Heinrichplatz/);
+	ok($content =~ qr/Ziel.*zielc.*zielname.*Innsbrucker.*Platz/);
+
 	# search_coord in and to Potsdam
 	$req = new HTTP::Request
 	    ('GET', "$action?startname=Alemannenstr.+%28Nikolassee%29&startplz=14129&startc=-3360%2C2917&zielc=-11833%2C-63&zielname=Helmholtzstr.+%28Potsdam%29&zielplz=&pref_seen=1&pref_speed=21&pref_cat=&pref_quality=&pref_ampel=yes&scope=");
@@ -211,8 +223,6 @@ for my $cgiurl (@urls) {
 	} else {
 	    ok(0);
 	}
-
- XXX:
 
 	# Test comments_points (as part of Bemerkungen)
 	$req = new HTTP::Request

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.46 2003/08/07 23:25:39 eserte Exp eserte $
+# $Id: PLZ.pm,v 1.48 2003/08/15 21:08:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ use vars qw($PLZ_BASE_FILE @plzfile $OLD_AGREP $VERSION $VERBOSE $sep);
 use locale;
 use BBBikeUtil;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.46 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.48 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)
@@ -536,28 +536,26 @@ sub look_loop_best {
     }
 }
 
-sub make_name_hash {
-    my $self = shift;
+# In: an array of indexes FILE_...
+# Out: a hashref $hash->{VAL_INDEX_1}{VAL_INDEX_2}{...} = [$pos1, $pos2, ...]
+sub make_any_hash {
+    my($self, @indexes) = @_;
     die "Please call the load() method first" if !$self->{Data};
     my %hash;
     my $i = 0;
-    foreach (@{$self->{Data}}) {
-	$hash{$_->[LOOK_NAME]} = $i;
+    foreach my $datarec (@{$self->{Data}}) {
+	my $h = \%hash;
+	for(my $index_i = 0; $index_i <= $#indexes; $index_i++) {
+	    my $field_val = $datarec->[$indexes[$index_i]];
+	    if ($index_i == $#indexes) {
+		push @{$h->{$field_val}}, $i;
+	    } else {
+		$h = $h->{$field_val} ||= {};
+	    }
+	}
 	$i++;
     }
-    $self->{NameHash} = \%hash;
-}
-
-sub make_plz_hash {
-    my $self = shift;
-    die "Please call the load() method first" if !$self->{Data};
-    my %hash;
-    my $i = 0;
-    foreach (@{$self->{Data}}) {
-	$hash{$_->[LOOK_ZIP]} = $i;
-	$i++;
-    }
-    $self->{PlzHash} = \%hash;
+    \%hash;
 }
 
 sub kill_umlauts {

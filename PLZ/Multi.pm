@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Multi.pm,v 1.5 2003/08/08 19:17:23 eserte Exp $
+# $Id: Multi.pm,v 1.6 2003/08/18 06:02:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package PLZ::Multi;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 use Getopt::Long qw(GetOptions);
 BEGIN {
@@ -44,6 +44,44 @@ sub new {
 	die "No files specified";
     }
 
+    my $need_seen_hash;
+    for (@files) {
+	if (ref $_ && UNIVERSAL::isa($_, "Strassen")) {
+	    $need_seen_hash = 1;
+	}
+    }
+
+    my @cachefile_names;
+    my %seen;
+    for (@files) {
+	if (!ref $_) {
+	    # make $_ an absolute pathname
+	    if (!File::Spec->file_name_is_absolute($_)) {
+		for my $dir (@Strassen::datadirs) {
+		    my $f = File::Spec->catfile($dir, $_);
+		    if (-r $f) {
+			$_ = $f;
+			push @cachefile_names, basename($_);
+			last;
+		    }
+		}
+	    }
+
+	    my $f = $_;
+	    if ($need_seen_hash) {
+		local $_; # just to make sure...
+		my $plz = PLZ->new($f);
+		$plz->load;
+		%seen = (%seen,
+			 %{
+			     $plz->make_any_hash(PLZ::FILE_NAME(),
+						 PLZ::FILE_CITYPART())
+			 });
+	    }
+	}
+    }
+
+    # 2nd pass: .bbd files
     for (@files) {
 	if (ref $_ && UNIVERSAL::isa($_, "Strassen")) {
 	    # convert into PLZ file
@@ -58,29 +96,27 @@ sub new {
 		my $middle = $r->[Strassen::COORDS()]->[$#{ $r->[Strassen::COORDS()] }/2];
 		my($str, @cityparts) = Strasse::split_street_citypart($r->[Strassen::NAME()]);
 		if (!@cityparts) {
-		    print $fh "$str|||$middle\n";
+		    if (!$seen{$str}) {
+			print $fh "$str|||$middle\n";
+		    }
 		} else {
 		    for my $citypart (@cityparts) {
-			print $fh "$str|$citypart||$middle\n";
+			if (!$seen{$str}{$citypart}) {
+			    print $fh "$str|$citypart||$middle\n";
+			}
 		    }
 		}
 	    }
 	    close $fh;
+	    push @cachefile_names, $_->file;
 	    $_ = $filename;
-	} elsif (!File::Spec->file_name_is_absolute($_)) {
-	    for my $dir (@Strassen::datadirs) {
-		my $f = File::Spec->catfile($dir, $_);
-		if (-r $f) {
-		    $_ = $f;
-		    last;
-		}
-	    }
 	}
     }
 
     my $combined;
 
-    my $cachetoken = "multiplz_" . join("_", map { basename $_ } @files);
+    my $cachetoken = "multiplz_" .
+	             join("_", map { basename $_ } @cachefile_names);
     my $cachefile = Strassen::Util::get_cachefile($cachetoken);
     if ($args{cache}) {
 	if (Strassen::Util::valid_cache($cachetoken, \@files)) {

@@ -33,7 +33,7 @@ use vars
      $coords_ref $realcoords_ref $search_route_points_ref @realcoords
      $VERSION $PROG_REVISION $tmpdir %tmpfiles $progname
      $os $win32s $sfn $use_clipboard $verbose $advanced $devel_host
-     $datadir $city $citypkg $country
+     $datadir $no_original_datadir $city $citypkg $country
      $top %toplevel $transient $c $top_dpi $top_dpmm @want_extends
      $small_icons $is_handheld
      @scrollregion $init_scrollregion $normal_scrollregion $scrollre

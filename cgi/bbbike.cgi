@@ -3923,7 +3923,9 @@ sub new_trafficlights {
 sub init_plz {
     if (1) { # XXX introduce flag? (i.e. for other cities!!!)
 	require PLZ::Multi;
-	$plz = PLZ::Multi->new("Berlin.coords.data", "Potsdam.coords.data",
+	$plz = PLZ::Multi->new("Berlin.coords.data",
+			       "Potsdam.coords.data",
+			       Strassen->new("plaetze"),
 			       -cache => 1,
 			      );
     } else {

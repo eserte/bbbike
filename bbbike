@@ -1001,6 +1001,7 @@ if (defined $city) {
 		%global_search_args = $cityobj->search_args
 		    if $cityobj->can("search_args");
 		$found++;
+		$no_original_datadir = 1;
 		last;
 	    }
 	}
@@ -1015,6 +1016,7 @@ if (defined $city) {
     }
 } elsif ($datadir) {
     set_datadir($datadir, -clearold => 1);
+    $no_original_datadir = 1;
 } else {
     # default (Berlin)
     set_datadir("$FindBin::RealBin/data");
@@ -3999,17 +4001,22 @@ sub do_iconframe {
 	$col++;
     }
 
-    $misc_frame2->Label(-text => ' ')->grid(-row => $curr_row,
-					    -column => $col++);
+    if (!$standard_menubar) {
+	# No need for yet another close button if there's already a
+	# standard menu:
 
-    my $exit_photo = load_photo($misc_frame2, 'exit.' . $default_img_fmt);
-    my $exit_button = $misc_frame2->Button
-      (image_or_text($exit_photo, 'Exit'),
-       -command => \&exit_app,
-      )->grid(-row => $curr_row, -column => $col, -sticky => 's');
-    $balloon->attach($exit_button, -msg => M"BBBike beenden");
-    $ch->attach($exit_button, -pod => "^\\s*Ende-Symbol");
-    $col++;
+	$misc_frame2->Label(-text => ' ')->grid(-row => $curr_row,
+						-column => $col++);
+
+	my $exit_photo = load_photo($misc_frame2, 'exit.' . $default_img_fmt);
+	my $exit_button = $misc_frame2->Button
+	    (image_or_text($exit_photo, 'Exit'),
+	     -command => \&exit_app,
+	    )->grid(-row => $curr_row, -column => $col, -sticky => 's');
+	$balloon->attach($exit_button, -msg => M"BBBike beenden");
+	$ch->attach($exit_button, -pod => "^\\s*Ende-Symbol");
+	$col++;
+    }
 
 ## DEBUG_BEGIN
 #mymstat("iconframe: underline all");
@@ -4170,13 +4177,11 @@ $c->{Configure}{-seeview} = \&Tk::Canvas::smooth_scroll;
 my $sy = $canvas_frame->Scrollbar(-command => ["yview", $c],
 				  -takefocus => 0,
 				  -highlightthickness => 0,
--repeatinterval => 1000,
 				 );
 my $sx = $canvas_frame->Scrollbar(-orient => "horiz",
 				  -command => ["xview", $c],
 				  -takefocus => 0,
 				  -highlightthickness => 0,
--repeatinterval => 1000,
 				 );
 
 $c->configure(-yscrollcommand =>
@@ -4306,11 +4311,21 @@ if ($set_mode) {
 }
 foreach (keys %init_str_draw) {
     $str_draw{$_} = $init_str_draw{$_};
-    plot('str',$_)   if $str_draw{$_};   # Strecken plotten
+    eval {
+	plot('str',$_)   if $str_draw{$_};   # Strecken plotten
+    };
+    if ($@ && !$no_original_datadir) {
+	die $@;
+    }
 }
 foreach (keys %init_p_draw) {
     $p_draw{$_}   = $init_p_draw{$_};
-    plot('p',$_)     if $p_draw{$_};     # Punkte (z.B. Ampeln) zeichnen
+    eval {
+	plot('p',$_)     if $p_draw{$_};     # Punkte (z.B. Ampeln) zeichnen
+    };
+    if ($@ && !$no_original_datadir) {
+	die $@;
+    }
 }
 # Höhen einlesen
 read_hoehe()  if $show_grade || $steigung_optimierung || $use_hoehe;
@@ -4425,7 +4440,7 @@ if (defined $initial_layers && $initial_layers ne "") {
     }
 }
 
-$splash_screen->Destroy if $splash_screen;
+$splash_screen->Destroy if $splash_screen; undef $splash_screen;
 
 choose_streets()                            if $init_choose_street;
 
@@ -7706,7 +7721,11 @@ sub plotstr {
 		    return;
 		}
 		# Do not "die", may be in Progress mode
-		status_message($@, "err");
+		if (!$no_original_datadir) {
+		    $str_draw{$abk} = 0;
+		    status_message($@, "err");
+		}
+		return;
 	    }
 	}
 	if ($abk ne 'w') { # XXX get_cache_identifier benutzen
@@ -8566,7 +8585,9 @@ sub plot_point {
 		$bhf = new Strassen $filename;
 	    };
 	    if ($@) {
+		$p_draw{$abk} = 0;
 		die "OK" if ($abk eq 'r' && $coord_system ne 'standard');
+		die "no-original-datadir" if $no_original_datadir;
 		die $@;
 	    }
 	    if ($coord_system eq 'standard' &&
@@ -8631,7 +8652,9 @@ sub plot_point {
 	restack_delayed(); # XXX check!
     };
     if ($@) {
-	if ($@ !~ /^OK/) {
+	if ($@ =~ /^no-original-datadir/) {
+	    # silently ignore
+	} elsif ($@ !~ /^OK/) {
 	    status_message($@, ($edit_mode ? 'info-stack-trace' : 'err'));
 	}
     }
@@ -11943,7 +11966,9 @@ sub show_overview_populate {
     $overview_top->protocol('WM_DELETE_WINDOW', $withdraw_sub);
 
     # Canvas. Create scrollbars manually, so arrow_update can be called
-    $overview_canvas = $overview_top->Canvas;
+    $overview_canvas = $overview_top->Canvas
+	(-xscrollincrement => 15, # XXX check values
+	 -yscrollincrement => 15);
 
     my($overview_width, $overview_height);
     if ($coord_system eq 'standard') {
@@ -13435,20 +13460,30 @@ sub make_net {
 
 sub make_qualitaet_net {
     if (!$qualitaet_s_net) {
-	$qualitaet_s_net = StrassenNetz->new
-	    (MultiStrassen->new(Strassen->new("qualitaet_s"),
-				Strassen->new("qualitaet_l")));
-	$qualitaet_s_net->make_net_cat;
+	eval {
+	    $qualitaet_s_net = StrassenNetz->new
+		(MultiStrassen->new(Strassen->new("qualitaet_s"),
+				    Strassen->new("qualitaet_l")));
+	    $qualitaet_s_net->make_net_cat;
+	};
+	if ($@ && !$no_original_datadir) {
+	    status_message($@, "info");
+	}
     }
     $qualitaet_s_net;
 }
 
 sub make_handicap_net {
     if (!$handicap_s_net) {
-	$handicap_s_net = StrassenNetz->new
-	    (MultiStrassen->new(Strassen->new("handicap_s"),
-				Strassen->new("handicap_l")));
-	$handicap_s_net->make_net_cat;
+	eval {
+	    $handicap_s_net = StrassenNetz->new
+		(MultiStrassen->new(Strassen->new("handicap_s"),
+				    Strassen->new("handicap_l")));
+	    $handicap_s_net->make_net_cat;
+	};
+	if ($@ && !$no_original_datadir) {
+	    status_message($@, "info");
+	}
     }
     $handicap_s_net;
 }
@@ -14123,6 +14158,12 @@ sub menuarrow_unmanaged {
     1;
 }
 
+# error categories:
+#  info: never pops up a dialog: either writes to stderr or to the
+#        status bar if available
+#  warn: warn with a dialog
+#  err:  error with a dialog
+#  die:  error with a dialog and die afterwards
 sub status_message {
     my($msg, $err) = @_;
     if (!defined $err || $err =~ /^info/ || !$use_dialog) {
@@ -14151,6 +14192,7 @@ sub status_message {
 	if (!$top) {
 	    warn "$msg\n";
 	} else {
+	    $splash_screen->Destroy if $splash_screen; undef $splash_screen;
 	    require Tk::Dialog;
 	    my $d = $top->Dialog
 	      (-title  => ($err eq 'warn' ? 'Warnung' : 'Fehler'),
