@@ -10280,7 +10280,7 @@ sub show_info {
 					     -width => 40,
 					     -height => 10,
 					     )->pack(-expand => 1, -fill => "both");
-	    for (1 .. 2) {
+	    for (1 .. 3) {
 		$info_text->tagConfigure("link$_", -underline => 1,
 					 -foreground => "blue3");
 		$info_text->tagBind("link$_", "<Enter>" => sub {
@@ -10335,16 +10335,18 @@ sub show_info {
 	if ($devel_host) {
 	    push @mapserver_def, ["http://www/~eserte/bbbike/cgi/mapserver_address.cgi", "Lokaler Mapserver"];
 	}
+	my $linkcount = 1;
 	for my $def (@mapserver_def) {
 	    my $mapserver_url = $def->[0];
 	    my $url = "$mapserver_url?coords=" . join(",", anti_transpose($coords[0], $coords[1]));
-	    $info_text->insert("end", $def->[1], "link1");
-	    $info_text->tagBind("link1", "<ButtonRelease-1>" => sub {
+	    $info_text->insert("end", $def->[1], "link$linkcount");
+	    $info_text->tagBind("link$linkcount", "<ButtonRelease-1>" => sub {
 				    require WWWBrowser;
 				    WWWBrowser::start_browser($url);
 				}
 			       );
 	    $info_text->insert("end", "\n");
+	    $linkcount++;
 	}
 	if ($devel_host) {
 	    # t0p s3cr37!
@@ -10352,13 +10354,14 @@ sub show_info {
 		"plan".
 		    "dienst.de/tpl/vm005/map.asp?ll=%.5fx%.5f", $px, $py;
 	    $info_text->insert("end", "Stadt".
-			       "plandienst\n", "link2");
-	    $info_text->tagBind("link2", "<ButtonRelease-1>" => sub {
+			       "plandienst\n", "link$linkcount");
+	    $info_text->tagBind("link$linkcount", "<ButtonRelease-1>" => sub {
 				    require WWWBrowser;
 				    WWWBrowser::start_browser($url);
 				}
 			       );
 	    $info_text->insert("end", "\n");
+	    $linkcount++;
 	}
 
 	if (eval { require Astro::Sunrise; Astro::Sunrise->VERSION(0.85) }) {
