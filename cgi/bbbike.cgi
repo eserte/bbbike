@@ -1466,7 +1466,7 @@ EOF
 	}
 	if ((defined $$nameref and $$nameref ne '') ||
 	    (defined $coord and $coord ne '')) {
-	    print "<td valign=middle colspan=2>$fontstr" if $bi->{'can_table'};
+	    print "<td valign=middle>$fontstr" if $bi->{'can_table'};
 	    if (defined $coord) {
 		print "<input type=hidden name=" . $type . "c value=\""
 		  . $coord . "\">\n";
@@ -1491,6 +1491,18 @@ EOF
 	    }
 
 	    print "$fontend</td>\n" if $bi->{'can_table'};
+
+	    if ($nice_berlinmap && $bi->{'can_table'}) {
+		print "<td>";
+		if (!@$matchref) { # XXX why?
+		    $matchref = [[$$nameref, undef, undef, $coord]];
+		}
+		require PLZ; # XXX why?
+		berlinmap_with_choices($type, $matchref);
+		$has_init_map_js++;
+		print "</td>";
+	    }
+
 	} elsif (defined $$ortref and $$ortref ne '') {
 	    print "<td valign=middle>$fontstr" if $bi->{'can_table'};
 	    print "$$ortref\n";
@@ -1521,6 +1533,17 @@ EOF
 				   $type);
 	    }
 	    print "$fontend</td>" if $bi->{'can_table'};
+	    # show point in the overview map, too
+	    if ($nice_berlinmap && $bi->{'can_table'}) {
+		print "<td>";
+		if (!@$matchref) { # XXX why?
+		    $matchref = [[$strasse, $bezirk, $plz, $xy]];
+		}
+		require PLZ; # XXX why?
+		berlinmap_with_choices($type, $matchref);
+		$has_init_map_js++;
+		print "</td>";
+	    }
 	} elsif (@$matchref == 1) {
 # XXX wann kommt man hierher?
 	    print "<td>$fontstr" if $bi->{'can_table'};
@@ -1717,9 +1740,16 @@ sub berlinmap_with_choices {
 	my($tx,$ty) = map { int $_ } overview_map()->{Transpose}->(split /,/, $xy);
 	$tx -= 4; $ty -= 4; # center reddot.gif
 	my $divid = $type . "match" . $match_nr;
-	print "<div id=$divid style=\"position:absolute;visibility:show;background-color:#ff6060;\">";
-	print "<a href=\"#\" onclick=\"document.BBBikeForm.${type}2[" . ($match_nr-1) . "].checked = true; return false;\"><img src=\"$bbbike_images/reddot.gif\" border=0 width=8 height=8 alt=\"$s->[0] ($s->[1])\"></a>";
-	print "</div>";
+	my($a_start, $a_end) = ("", "");
+	if (@$matchref > 1) {
+	    $a_start = <<EOF;
+<a href="#" onclick="document.BBBikeForm.${type}2[@{[ ($match_nr-1) ]}].checked = true; return false;">
+EOF
+	    $a_end   = "</a>";
+	}
+	print <<EOF;
+<div id="$divid" style="position:absolute; visibility:show; background-color:#ff6060;">$a_start<img src="$bbbike_images/reddot.gif" border=0 width=8 height=8 alt="$s->[0] ($s->[1])">$a_end</div>
+EOF
 	$js .= "pos_rel(\"$divid\", \"${type}mapbelow\", $tx, $ty);\nvis(\"$divid\", \"show\");\n";
     }
 
