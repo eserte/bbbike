@@ -1177,6 +1177,7 @@ sub nearest_street {
     my($self, $c1, $c2) = @_;
     my $rueckwaerts = 0;
     my(@str);
+    return undef if !exists $self->{Net}{$c1};
     @str = keys %{ $self->{Net}{$c1} };
     if (!@str) {
 	($c1, $c2) = ($c2, $c1);
