@@ -22,5 +22,12 @@ The application can be installed with the ipkg manager program:
 
 	ipkg install tkbabybike.ipk
 
+For WindowsCE, you may take a look at this page for a Perl/Tk
+distribution:
+
+	http://www.rainer-keuchel.de/wince/perltk.html
+
+However I never tried this distro with tkbabybike.
+
 If you encounter problems, feel free to send a mail to
 slaven@rezic.de.
