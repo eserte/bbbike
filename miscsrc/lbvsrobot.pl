@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.1 2004/01/12 19:27:26 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.2 2004/01/12 20:09:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -22,7 +22,7 @@ use HTML::LinkExtor;
 #use HTML::Parser;
 use HTML::TreeBuilder;
 use HTTP::Cookies;
-#use HTML::FormatText 2; # can deal with tables
+use HTML::FormatText 2; # can deal with tables
 use LWP::UserAgent;
 use Getopt::Long;
 use URI::Escape qw(uri_unescape);
@@ -84,9 +84,7 @@ while(my($type,$file) = each %output_as) {
 }
 
 if ($test) {
-    die "test mode not implemented";
-#    $listing_url = "file:///home/www/download/www.vmz-berlin.de/vmz/trafficspotmap.do";
-#    $detail_url  = "file:///home/www/download/www.vmz-berlin.de/vmz/trafficmap.do";
+    $state_id_url = "http://localhost:8080/~slavenr/lbvs1.html";
 }
 
 my $ua;
@@ -101,17 +99,21 @@ if ($inputfile) {
     print STDERR "Get state id..." if !$quiet;
     get_state_id();
     print STDERR " OK\n" if !$quiet;
-    print STDERR "Get street names..." if !$quiet;
-    my @street_names = get_street_names();
-    print STDERR " OK\n" if !$quiet;
-    {
-	my $i = 0;
-	for my $street_name (@street_names) {
-	    printf STDERR "%d/%d (%d%%)   \r", ($i+1), scalar(@street_names), $i/$#street_names*100 if !$quiet;
-	    my @this_street_details = get_street_details($street_name);
-	    push @details, @this_street_details;
-	    $i++;
+    if (0) {
+	print STDERR "Get street names..." if !$quiet;
+	my @street_names = get_street_names();
+	print STDERR " OK\n" if !$quiet;
+	{
+	    my $i = 0;
+	    for my $street_name (@street_names) {
+		printf STDERR "%d/%d (%d%%)   \r", ($i+1), scalar(@street_names), $i/$#street_names*100 if !$quiet;
+		my @this_street_details = get_street_details($street_name);
+		push @details, @this_street_details;
+		$i++;
+	    }
 	}
+    } else {
+	@details = get_street_details2();
     }
 }
 
@@ -186,17 +188,34 @@ sub get_state_id {
     }
 }
 
-sub get_street_names {
-    my @street_names;
+sub get_street_details2 {
+    my @details;
     for my $ch ('L', 'B', 'K') {
-	my $url = get_url('all_listing') . $ch;
+	my $url = get_url('all_listing');
+	$url .= $ch if !$test;
 	warn "Get URL $url...\n" if !$quiet;
 	my $resp = $ua->get($url);
 	if (!$resp->is_success) {
 	    warn "Can't fetch $url: " . $resp->content;
 	    next;
 	}
-	push @street_names, parse_street_list($resp->content);
+	push @details, parse_details_content($resp->content);
+    }
+    @details;
+}
+
+sub get_street_names {
+    my @street_names;
+    for my $ch ('L', 'B', 'K') {
+	my $url = get_url('all_listing');
+	$url .= $ch if !$test;
+	warn "Get URL $url...\n" if !$quiet;
+	my $resp = $ua->get($url);
+	if (!$resp->is_success) {
+	    warn "Can't fetch $url: " . $resp->content;
+	    next;
+	}
+	push @street_names, parse_street_list($resp->content, $url);
     }
     if (!@street_names) {
 	warn "No street names in listing page found!\n";
@@ -212,7 +231,8 @@ sub get_street_details {
 #     } else {
 # 	$qs = "?$qs";
 #     }
-    my $url = get_url("str_listing").$street_name;
+    my $url = get_url("str_listing");
+    $url .= $street_name if !$test;
     warn "Get URL $url...\n" if !$quiet;
     my $resp = $ua->get($url);
     if (!$resp->is_success) {
@@ -223,7 +243,7 @@ sub get_street_details {
 }
 
 sub parse_street_list {
-    my $content = shift;
+    my($content, $url) = @_;
     my @street_names;
     my $p = HTML::LinkExtor->new
 	(sub {
@@ -245,25 +265,25 @@ sub parse_details_content {
     my $p = HTML::TreeBuilder->new;
     $p->parse($content);
     $p->eof;
-    $p->look_down(
+    () = $p->look_down(
 	'_tag', 'a',
 	sub {
-	    my $row_number = $_[0]->attr('name');
-	    return unless defined $row_number;
-	    my $tr = $_[0]->parent;
+	    my $href = $_[0]->attr('href');
+	    return unless defined $href && $href =~ /HS_BauBlatt\?BaustRowNr=(\d+)/;
+	    my $row_number = $1;
+
+	    my $tr = $_[0]->parent->parent;
 	    my $tr_pos = $tr->pos;
-	    my $text = join "\n", map { $_->content_list } $tr->find_by_tag_name('td') . "\n";
-	    my $tr_parent = $tr->parent;
-	    for my $c ($tr_parent->children) {
-		if ($c->tag eq 'tr' && $c->pos > $tr_pos) {
-		    $text .= join "\n", map { $_->content_list } $tr->find_by_tag_name('td') . "\n";
-		    last;
-		}
-	    }
+	    my $text = HTML::FormatText->new->format($tr);
+	    $text =~ s/^\s*Detail-Info\s*Karte\s*//;
+	    $tr = $tr->right;
+	    $text .= "\n" . HTML::FormatText->new->format($tr);
+
 	    $details{$row_number} = { row => $row_number,
 				      text => $text};
 
-	    my $this_map_url = get_url("map_url").$row_number;
+	    my $this_map_url = get_url("map");
+	    $this_map_url .= $row_number if !$test;
 	    warn "Get URL $this_map_url...\n" if !$quiet;
 	    my $resp_map = $ua->get($this_map_url);
 	    if (!$resp_map->is_success) {
@@ -274,7 +294,7 @@ sub parse_details_content {
 	    my $p2 = HTML::TreeBuilder->new;
 	    $p2->parse($resp_map->content);
 	    $p2->eof;
-	    $p2->look_down(
+	    () = $p2->look_down(
 	        '_tag', 'input',
 		sub {
 		    return if $_[0]->attr('type') !~ /^hidden$/i;
@@ -308,12 +328,16 @@ sub get_url {
     my $type = shift;
     my $url;
     if ($type eq 'all_listing') {
+	if ($test) { return "http://localhost:8080/~slavenr/lbvs2.html" }
 	$url = $all_listing_url;
     } elsif ($type eq 'str_listing') {
+	if ($test) { die }
 	$url = $str_listing_url;
     } elsif ($type eq 'detail') {
+	if ($test) { die }
 	$url = $detail_url;
     } elsif ($type eq 'map') {
+	if ($test) { return "http://localhost:8080/~slavenr/lbvs3.html" }
 	$url = $map_url;
     } else {
 	die "Invalid argument $type";
@@ -322,36 +346,36 @@ sub get_url {
     $url;
 }
 
-# sub diff {
-#     my $ref = YAML::LoadFile($oldfile);
-#     my @old_detail_links = @$ref;
-#     my %detail_links     = map {($_->{id} => $_)} @detail_links;
-#     my %old_detail_links = map {($_->{id} => $_)} @old_detail_links;
-#     my @diff_detail_links;
-#     for my $orig_detail_link (@detail_links) {
-# 	my $detail_link = dclone $orig_detail_link;
-# 	my $state;
-# 	if (!exists $old_detail_links{$detail_link->{id}}) {
-# 	    $state = "NEW:       ";
-# 	} elsif (exists $old_detail_links{$detail_link->{id}}) {
-# 	    if (Compare($detail_link, $old_detail_links{$detail_link->{id}}) == 0) {
-# 		$state = "CHANGED:   ";
-# 	    } else {
-# 		$state = "UNCHANGED: ";
-# 	    }
-# 	}
-# 	$detail_link->{text} = "$state$detail_link->{text}";
-# 	push @diff_detail_links, $detail_link;
-#     }
-#     for my $orig_detail_link (@old_detail_links) {
-# 	my $detail_link = dclone $orig_detail_link;
-# 	if (!exists $detail_links{$detail_link->{id}}) {
-# 	    $detail_link->{text} = "OLD:        $detail_link->{text}";
-# 	    push @diff_detail_links, $detail_link;
-# 	}
-#     }
-#     @diff_detail_links;
-# }
+sub diff {
+    my $ref = YAML::LoadFile($oldfile);
+    my @old_details = @$ref;
+    my %details     = map {($_->{row} => $_)} @details;
+    my %old_details = map {($_->{row} => $_)} @old_details;
+    my @diff_details;
+    for my $orig_detail (@details) {
+	my $detail = dclone $orig_detail;
+	my $state;
+	if (!exists $old_details{$detail->{row}}) {
+	    $state = "NEW:       ";
+	} elsif (exists $old_details{$detail->{row}}) {
+	    if (Compare($detail, $old_details{$detail->{row}}) == 0) {
+		$state = "CHANGED:   ";
+	    } else {
+		$state = "UNCHANGED: ";
+	    }
+	}
+	$detail->{text} = "$state$detail->{text}";
+	push @diff_details, $detail;
+    }
+    for my $orig_detail (@old_details) {
+	my $detail = dclone $orig_detail;
+	if (!exists $details{$detail->{row}}) {
+	    $detail->{text} = "REMOVED:    $detail->{text}";
+	    push @diff_details, $detail;
+	}
+    }
+    @diff_details;
+}
 
 __END__
 
