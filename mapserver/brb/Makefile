@@ -1,9 +1,17 @@
 #
-# $Id: Makefile,v 1.2 2003/07/01 14:48:47 eserte Exp $
+# $Id: Makefile,v 1.3 2003/07/01 14:55:26 eserte Exp $
 #
 
+# Please run this file with BSD make (often called pmake).
+# It is assumed that this directory is an subdirectory of the bbbike
+# distribution like this:
+#	.../bbbike
+#	.../bbbike/mapserver/brb
+#
+# Variables marked with *** are first candidates for configuration.
+
 # XXX should not be necessary!
-ABS_LOCAL_BBBIKE_DIR=	/home/e/eserte/src/bbbike
+ABS_LOCAL_BBBIKE_DIR=	/home/e/eserte/src/bbbike			 # ***
 
 # BRBDIR is the current directory. Do not use .CURDIR, because it may be
 # called via "make -f" from another directory.
@@ -26,19 +34,21 @@ TARGET=		radzeit.herceg.de
 
 # XXX Hmmm. This should be done automatically somehow.
 .if !exists(Makefile.${TARGET}.inc)
+# This line may fail for older pmake versions. Please do as this line
+# says (executing the touch command):
 .error Please execute "touch -t 197001010000 Makefile.${TARGET}.inc"
 .else
 .include "Makefile.${TARGET}.inc"
 .endif
 
 LOCAL_BBBIKE_DIR=	${.CURDIR:H:H}
-LOCAL_HOST=		www
+LOCAL_HOST=		www						# ***
 RADZEIT_APACHE_DIR=	${BBBIKE_RADZEIT_APACHE_DIR}
 RADZEIT_HOST=		${BBBIKE_RADZEIT_HOST}
 
 # Standard dimensions of mapserver image
-IMGWIDTH?=	550
-IMGHEIGHT?=	550
+IMGWIDTH?=	550							# ***
+IMGHEIGHT?=	550							# ***
 
 #####################################################################
 # Various destination system configurations
@@ -63,17 +73,17 @@ FONTS_LIST=		fonts-devpc01.list
 
 HOST=			$(LOCAL_HOST)
 MAPSERVER_DIR=		$(LOCAL_BBBIKE_DIR)/mapserver/brb
-MAPSERVER_RELURL=	/~eserte/mapserver/brb
+MAPSERVER_RELURL=	/~eserte/mapserver/brb				# ***
 MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
-MAPSERVER_PROG_RELURL=	/~eserte/cgi/mapserv.cgi
+MAPSERVER_PROG_RELURL=	/~eserte/cgi/mapserv.cgi			# ***
 MAPSERVER_PROG_URL=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
 IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
-BBBIKE_HTML_RELURL=	/~eserte/bbbike/html
+BBBIKE_HTML_RELURL=	/~eserte/bbbike/html				# ***
 BBBIKE_CGI_RELURL=	/~eserte/bbbike/cgi
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
-IMAGE_SUFFIX=		png # was: gif
-FONTS_LIST?=		fonts-vran.list
-WWW_USER=		eserte
+IMAGE_SUFFIX=		png # was: gif					# ***
+FONTS_LIST?=		fonts-vran.list					# ***
+WWW_USER=		eserte						# ***
 TARGET_DIR=		${.CURDIR}
 
 .elif ${TARGET} == "spiff"
