@@ -42,7 +42,7 @@ $bbbike_comment = "$fbsdpkg/pkg-comment";
 $bbbike_descr   = "$fbsdpkg/pkg-descr";
 
 if (!defined $bbbike_version) {
-    $bbbike_version = $BBBike::VERSION;
+    $bbbike_version = $BBBike::STABLE_VERSION;
     if (!defined $bbbike_version) {
 	die "Can't get BBBike's version";
     }
