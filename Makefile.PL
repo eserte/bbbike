@@ -337,6 +337,10 @@ sub MY::top_targets {
 	@echo "    $(PERL) bbbike"
 	@echo "to start the program"
 
+ext:
+	cd ext && ${MAKE} ext PERL="${FULLPERL}"
+
+
 '
 }
 
