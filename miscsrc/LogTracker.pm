@@ -218,6 +218,10 @@ sub init {
               );
     for my $l (@types) {
 	$layer{$l} = main::next_free_layer();
+	$main::layer_active_color{$layer{$l}} = 'red';
+	$main::layer_post_enter_command{$layer{$l}} = sub {
+	    $main::c->raise("current")
+	};
 	$main::occupied_layer{$layer{$l}} = 1;
 	main::fix_stack_order($layer{$l});
 	$accesslog_data{$l} = [];
@@ -266,15 +270,29 @@ sub draw_accesslog_data {
 }
 
 sub _today {
-    require Date::Pcalc;
-    my($y,$m,$d) = Date::Pcalc::Today();
+    eval {
+	require Date::Pcalc;
+	Date::Pcalc->import(qw(Today));
+    };
+    if ($@) {
+	require Date::Calc;
+	Date::Calc->import(qw(Today));
+    };
+    my($y,$m,$d) = Today();
     $m = _number_monthabbrev($m);
     sprintf "%02d/%s/%04d", $d, $m, $y;
 }
 
 sub _yesterday {
-    require Date::Pcalc;
-    my($y,$m,$d) = Date::Pcalc::Add_Delta_Days(Date::Pcalc::Today(), -1);
+    eval {
+	require Date::Pcalc;
+	Date::Pcalc->import(qw(Today Add_Delta_Days));
+    };
+    if ($@) {
+	require Date::Calc;
+	Date::Calc->import(qw(Today Add_Delta_Days));
+    }
+    my($y,$m,$d) = Add_Delta_Days(Today(), -1);
     $m = _number_monthabbrev($m);
     sprintf "%02d/%s/%04d", $d, $m, $y;
 }

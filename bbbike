@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.140 2004/08/09 22:47:36 eserte Exp $
+# $Id: bbbike,v 3.140 2004/08/09 22:47:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -6156,17 +6156,31 @@ sub set_map_mode {
 # ... unter Mauszeiger anzeigen
 # Punkte
 sub std_p_binding {
-    $c->bind($_[0], '<Any-Enter>' => sub { enterpoint($_[0]) });
+    my $tag = $_[0];
+    $c->bind($tag, '<Any-Enter>' => sub {
+		 $layer_pre_enter_command{$tag}->()
+		     if exists $layer_pre_enter_command{$tag};
+		 enterpoint($_[0]);
+		 $layer_post_enter_command{$tag}->()
+		     if exists $layer_post_enter_command{$tag};
+	     });
     unless (/^lsa-/) { # lsa-fg/bg: leavepoint wird unten gesetzt
-	$c->bind($_[0], '<Any-Leave>' => \&leavepoint);
+	$c->bind($tag, '<Any-Leave>' => \&leavepoint);
     }
 }
 # Strecken, Flächen
 sub std_str_binding {
-    $c->bind($_[0], '<Any-Enter>' => sub { enterstr($_[0]) });
-    $c->bind($_[0], '<Any-Leave>' => \&leavestr);
+    my $tag = $_[0];
+    $c->bind($tag, '<Any-Enter>' => sub {
+		 $layer_pre_enter_command{$tag}->()
+		     if exists $layer_pre_enter_command{$tag};
+		 enterstr($_[0]);
+		 $layer_post_enter_command{$tag}->()
+		     if exists $layer_post_enter_command{$tag};
+	     });
+    $c->bind($tag, '<Any-Leave>' => \&leavestr);
     if (defined $c_balloon) {
-	$c->bind($_[0], '<Any-Motion>' => sub { $c_balloon->Track });
+	$c->bind($tag, '<Any-Motion>' => sub { $c_balloon->Track });
     }
 }
 
@@ -8358,6 +8372,9 @@ if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->po
 			  -width => 5,
 			  -fill => $pp_color,
 			 );
+	if ($layer_active_color{$abk}) {
+	    $c->itemconfigure($abk, -activefill => $layer_active_color{$abk});
+	}
 	if ($abk eq 'e' && defined $linestip) {
 	    # XXX hacky: make sure that e-img do not get configured,
 	    # so use 'e-Q' instead of just 'e'

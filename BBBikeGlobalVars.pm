@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.19 2004/07/27 23:12:04 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.19 2004/07/27 23:12:04 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -65,6 +65,7 @@ use vars qw(
      %line_shorten
      %category_size %outline_color %category_color %str_color %p_color
      %category_font_color %category_font %category_width %category_image
+     %layer_active_color %layer_pre_enter_command %layer_post_enter_command
      $crossings $all_outline %str_attrib %p_attrib %category_attrib
      $init_choose_street %init_str_draw %str_draw %occupied_layer
      %init_p_draw %p_draw %str_outline $auto_show_list
