@@ -1060,4 +1060,12 @@ EOF
 userdel	q4 11186,-5297 10994,-5361
 EOF
      },
+     { from  => 1098914007, # 2004-10-27 23:53
+       until => 1099695600, # 2004-11-06 00:00
+       text  => 'Gleimstr. (Mitte) in beiden Richtungen zwischen Gleimtunnel und Graunstr. Baustelle, Straße vollständig gesperrt (bis 05.11.2004)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 9917,15613 10122,15647
+EOF
+     },
     );
