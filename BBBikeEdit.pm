@@ -2151,14 +2151,14 @@ sub editmenu {
     my $insert_point_mode = 0;
     my $old_mode;
     my $cb = $t->Checkbutton
-	(-text => "Split street",
+	(-text => "Insert point",
 	 -indicatoron => 0,
 	 -variable => \$insert_point_mode,
 	 -command => sub {
 	     if ($insert_point_mode) {
 		 $old_mode = $main::map_mode;
 		 $main::map_mode = main::MM_INSERTPOINT();
-		 my $cursorfile = main::build_text_cursor("Split");
+		 my $cursorfile = main::build_text_cursor("Insert");
 		 $main::c->configure(-cursor => defined $cursorfile ? $cursorfile : "hand2");
 	     } else {
 		 if (defined $old_mode) {
@@ -2311,7 +2311,7 @@ sub addnew {
 		       $t->destroy;
 		   },
 		  )->pack(-side => "left");
-	$f->Button(Name => "close",
+	$f->Button(Name => "cancel",
 		   -command => sub { $t->destroy }
 		  )->pack(-side => "left");
     }

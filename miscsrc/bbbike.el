@@ -55,6 +55,8 @@
 (if bbbike-mode-map
     nil
   (let ((map (make-sparse-keymap)))
+    (define-key map "\C-c\C-r" 'bbbike-reverse-street)
+    (define-key map "\C-c\C-s" 'bbbike-search-x-selection)
     (setq bbbike-mode-map map)))
 
 (defun bbbike-mode ()

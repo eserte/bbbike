@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_nearest,v 1.8 2004/08/09 22:49:02 eserte Exp $
+# $Id: check_nearest,v 1.8 2004/08/09 22:49:02 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2004 Slaven Rezic. All rights reserved.
@@ -104,10 +104,14 @@ while(my($k,$v) = each %$crossings) {
     }
     my($x, $y) = Strassen::Util::string_to_coord($k);
     my(@nearest) = $kr->nearest($x, $y, IncludeDistance => 1);
-    if (!exists $net->{Net}{$k}{$nearest[1]->[0]} &&
-	(!defined $maxdist || $maxdist >= $nearest[1]->[1])
-       ) {
-	push @nearest_glob, [$nearest[1]->[0], $k, $nearest[1]->[1]];
+    shift @nearest; # first is point itself
+    if (@nearest) {
+	my $nearest = $nearest[0];
+	if (!exists $net->{Net}{$k}{$nearest->[0]} &&
+	    (!defined $maxdist || $maxdist >= $nearest->[1])
+	   ) {
+	    push @nearest_glob, [$nearest->[0], $k, $nearest->[1]];
+	}
     }
 }
 print STDERR "\n" if $verbose;
@@ -117,7 +121,6 @@ my %seen;
 $i = 0;
 foreach my $c (sort { $a->[2] <=> $b->[2] } @nearest_glob) {
     if ($verbose) {
-	$i++;
 	if ($i%100==0) {
 	    printf STDERR "sorting %d%%\r", ($i/@nearest_glob)*100;
 	}
@@ -134,12 +137,13 @@ foreach my $c (sort { $a->[2] <=> $b->[2] } @nearest_glob) {
 	my $d = $dist > 100 ? 100 : $dist;
 	my $gv = (128/100)*$d;
 	my $color = sprintf "#%02x%02x%02x", ($gv)x3;
-	printf "%dm\t%s %s %s\n", $dist, $color, @outc;
+	printf "%05d %dm\t%s %s %s\n", $i, $dist, $color, @outc;
     } else {
 	printf "%s %s (%dm)\n", @outc, $dist;
     }
     $seen{$c->[0]}++;
     $seen{$c->[1]}++;
+    $i++;
 }
 print STDERR "\n" if $verbose;
 

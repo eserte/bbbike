@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.9 2004/12/10 01:24:56 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.10 2004/12/19 12:37:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -498,6 +498,7 @@ sub BBBikeLazy::plotstr_on_demand {
 	    my $name_draw = 0;
 	    my($name_draw_tag, $name_draw_other);
 	    my %no_overlap_label;
+	    my $no_overlap_label;
 
 	    # XXX Duplikate in plot_point:
 	    my $ubahn_length = ($abk eq 'u'
@@ -664,7 +665,8 @@ sub BBBikeLazy::plotstr_on_demand {
     my($std, $transpose, $municipality, $type, $label_tag, $orte, $lazy,
        $coordsys, %args);
     my $i;
-    my($place_category, $name_o, $progress_hack, $diffed_orte,
+    my($place_category, $name_o, $no_overlap_label,
+       $progress_hack, $diffed_orte,
        @orte_coords_labeling, $next_meth, $anzahl_eindeutig, $do_outline_text,
        $conv);
 
@@ -731,7 +733,9 @@ sub BBBikeLazy::plotstr_on_demand {
 			   ? $args{PlaceCategory} : $place_category);
 	$name_o        = (exists $args{NameDraw}
 			  ? $args{NameDraw}     : $p_name_draw{$type});
-	$progress_hack = ($name_o && $no_overlap_label{$type});
+	$no_overlap_label = (exists $args{NoOverlapLabel}
+			  ? $args{NoOverlapLabel} : $no_overlap_label{$type});
+	$progress_hack = ($name_o && $no_overlap_label);
 
 	$diffed_orte = 0;
 	if (($edit_mode || $edit_normal_mode) && $args{FastUpdate}) {
@@ -751,7 +755,7 @@ sub BBBikeLazy::plotstr_on_demand {
 	    }
 	}
 
-	if ($no_overlap_label{$type}) {
+	if ($no_overlap_label) {
 	    $orte->init;
 	    $next_meth = 'next';
 	} else {
@@ -823,7 +827,7 @@ sub BBBikeLazy::plotstr_on_demand {
 			     -font => $rot_font_sub->(100+$cat*12),
 			     -tags => \@tags,
 			    );
-		} elsif ($no_overlap_label{$type} && !$municipality) {
+		} elsif ($no_overlap_label && !$municipality) {
 		    push(@orte_coords_labeling,
 			 [$text, $tx, $ty, $cat, $point_item]);
 		} else {
@@ -857,7 +861,7 @@ sub BBBikeLazy::plotstr_on_demand {
 			  -fill => '#000080',
 			 );
 	if ($name_o) {
-	    if ($no_overlap_label{$type}) {
+	    if ($no_overlap_label) {
 		# nach Kategorie sortieren
 		@orte_coords_labeling
 		  = sort { $b->[3] <=> $a->[3] } @orte_coords_labeling;
@@ -892,7 +896,7 @@ sub BBBikeLazy::plotstr_on_demand {
 		    }
 		}
 	    }
-	    if (!$no_overlap_label{$type} && !$municipality &&
+	    if (!$no_overlap_label && !$municipality &&
 		!$do_outline_text) {
 		$c->itemconfigure($label_tag,
 				  -anchor => 'w', -justify => 'left');

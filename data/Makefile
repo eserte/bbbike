@@ -1,11 +1,19 @@
 #
 # $Id: Makefile,v 2.34 2004/12/11 00:01:05 eserte Exp eserte $
 #
+# This Makefile is only usable with a modern version of BSD make (also known
+# as "pmake"). The source for pmake can be found at
+#
+#   http://www.sourceforge.net/projects/srezic
+#
+# (This is a slightly modified version of the original pmake as found in
+# the FreeBSD sources)
 
 BBBIKEDIR=		..
 MISCDIR=		$(BBBIKEDIR)/misc
 MISCSRCDIR=		$(BBBIKEDIR)/miscsrc
 DATADIR=		.
+PERSISTENTTMPDIR=	$(BBBIKEDIR)/tmp
 
 #XXX del:
 #BERLINMAP2HAFAS=	${MISCSRCDIR}/berlinmap2hafas -strict
@@ -754,8 +762,26 @@ check-Berlin.coords.data:	.check_Berlin_coords_data
 	    ( env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} Berlin.coords.data | diff -u - Berlin.coords.data; false )
 	@touch $@
 
-check-nearest:
-	${MISCSRCDIR}/check_nearest strassen
+check-nearest:	${PERSISTENTTMPDIR}/check_nearest.bbd do-check-nearest
+
+${PERSISTENTTMPDIR}/check_nearest.bbd:	strassen landstrassen landstrassen2 fragezeichen brunnels faehren
+	${MISCSRCDIR}/check_nearest -asbbd \
+		-strfile strassen \
+		-strfile landstrassen \
+		-strfile landstrassen2 \
+		-strfile fragezeichen \
+		-strfile brunnels \
+		-strfile faehren \
+		> $@~
+	mv $@~ $@
+
+do-check-nearest:	.check-do-check-nearest
+
+.check-do-check-nearest:	${PERSISTENTTMPDIR}/check_nearest.bbd
+	perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib \
+	    -MStrassen -MObject::Iterate=iterate -e \
+	    '$$s = Strassen->new($$ARGV[0]);\
+	     iterate { ($$dist) = $$_->[Strassen::NAME] =~ /^\S+\s+(\d+)/; die "Distance $$dist m found" if $$dist < 14 } $$s' ${PERSISTENTTMPDIR}/check_nearest.bbd
 
 GNUmakefile: Makefile ../miscsrc/b2gmake
 	../miscsrc/b2gmake < Makefile > GNUmakefile

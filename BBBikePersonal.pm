@@ -48,13 +48,28 @@ sub str_object {
 
 sub dialog {
     str_object(1);
-    main::choose_ort("p","personal",
+    my $linetype = "p";
+    my $type = "personal";
+    my $container = $main::toplevel{"chooseort-$type-$linetype"};
+    if (Tk::Exists($container)) {
+	$_->destroy for ($container->children);
+	delete $main::toplevel{"chooseort-$type-$linetype"}; # XXX hacky...
+    } else {
+	undef $container;
+    }
+    main::choose_ort($linetype, $type,
 		     -data => $p,
 		     -nodraw => 1,
 		     -additionalframe => \&buttonframe,
 		     -ondestroy => \&cleanup,
 		     -rebuild => 1,
+		     -container => $container,
+		     -popup => $container ? 0 : 1,
 		    );
+    if ($container) {
+	$main::toplevel{"chooseort-$type-$linetype"} = $container; # XXX hacky...
+    }
+
     # XXX why $p gets deleted in choose_ort???
     $p = str_object();
 }
@@ -256,7 +271,8 @@ sub toggle_show {
     if ($show_places) {
 	require BBBikeAdvanced;
 	main::custom_draw("p", "personal", filename(),
-			  -namedraw => 1, -close => 0);
+			  -namedraw => 1, -close => 0,
+			  -nooverlaplabel => 1);
     } else {
 	main::plot('p', "personal", -draw => 0);
     }

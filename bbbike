@@ -4426,6 +4426,7 @@ $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
 		 } else {
 		     switch_standard_mode();
 		 }
+		 set_map_mode();
 	     })->pack(-side => "left");
 	$edit_mode_type = $indicator_frame->Label
 	    (-text => '', -relief => 'sunken')
@@ -5778,7 +5779,7 @@ EOF
 			     -font => $rot_font_sub->(100), # no $cat...
 			     -tags => $name_draw_tag,
 			    );
-		} elsif (!$no_overlap_label{$abk} ||
+		} elsif (!$no_overlap_label ||
 			 !draw_text_intelligent
 			 ($c, $x, $y,
 			  -abk  => $name_draw_other,
@@ -5840,7 +5841,7 @@ EOF
 				 -font => $rot_font_sub->(100+$cat*12),
 				 -tags => \@tags,
 				);
-		    } elsif ($no_overlap_label{$type} && !$municipality) {
+		    } elsif ($no_overlap_label && !$municipality) {
 			push(@orte_coords_labeling,
 			     [$text, $tx, $ty, $cat, $point_item]);
 		    } else {
@@ -8297,6 +8298,9 @@ sub plotstr {
 	($_, $category_size{$_}* $label_font_size/10)
     } keys %category_size;
 
+    my $no_overlap_label = (exists $args{NoOverlapLabel}
+			    ? $args{NoOverlapLabel} : $no_overlap_label{$abk});
+
     my $coordsys = $coord_system_obj->coordsys;
 
     my $use_stippleline = 0; # XXX Duplikat in BBBikeLazy
@@ -9248,6 +9252,8 @@ sub plot_point {
 	my $name_draw_other = ($name_draw_tag =~ /^[ubr]-label$/
 			       ? [qw(u-label b-label r-label)]
 			       : $name_draw_tag);
+	my $no_overlap_label = (exists $args{NoOverlapLabel}
+				? $args{NoOverlapLabel} : $no_overlap_label{$abk});
 	my $xadd_anchor = $xadd_anchor_type->{'u'};
 	my $yadd_anchor = $yadd_anchor_type->{'u'};
 	my $label_spaceadd = $label_spaceadd{'u'};
@@ -9323,6 +9329,7 @@ sub choose_ort {
     my $sorted = exists $args{-unsorted} ? !$args{-unsorted} : 1;
     my $splitter = $args{-splitter};
     my $container = $args{-container};
+    my $do_popup = exists $args{-popup} ? $args{-popup} : 1;
 
     unless ($nodraw) {
 	if ($linetype =~ /^s/) {
@@ -9593,14 +9600,14 @@ sub choose_ort {
 		    $lb->insert('end',
 				map { $_->[1] }
 				sort { $a->[0] <=> $b->[0] }
-				map { [$orte{$_}, $_] }
+				map { [lc $orte{$_}, $_] }
 				keys %orte);
 		} else {
 		    # XXX maybe use Sort::Naturally? speed issues?
 		    my $tf_sub = (defined &Win32Util::sort_cmp_hack_transform &&
 				  $os eq 'win'
 				  ? sub { Win32Util::sort_cmp_hack_transform($_[0]) }
-				  : sub { $_[0] });
+				  : sub { lc $_[0] });
 		    $lb->insert('end',
 				map { $_->[1] }
 				sort { $a->[0] cmp $b->[0] }
@@ -9730,7 +9737,7 @@ sub choose_ort {
 
 	$choose_ort_cache{"$linetype-$type"} =
 	    get_cache_identifier($linetype, $type);
-	if ($t->isa("Tk::Wm")) {
+	if ($t->isa("Tk::Wm") && $do_popup) {
 	    if (@popup_style == 0) {
 		if (eval {require Tk::Placement; 1; }) {
 		    # XXX use placer also for other toplevels --- replace
@@ -10233,7 +10240,9 @@ sub plotorte {
 			      ? $args{PlaceCategory} : $place_category);
 	my $name_o        = (exists $args{NameDraw}
 			     ? $args{NameDraw}     : $p_name_draw{$type});
-	my $progress_hack = ($name_o && $no_overlap_label{$type});
+	my $no_overlap_label = (exists $args{NoOverlapLabel}
+				? $args{NoOverlapLabel} : $no_overlap_label{$type});
+	my $progress_hack = $name_o && $no_overlap_label;
 
 	my $complete_str = $orte;
 	my $diffed_orte = 0;
@@ -10263,7 +10272,7 @@ sub plotorte {
 #  	}
 
 	my $next_meth;
-	if ($no_overlap_label{$type}) {
+	if ($no_overlap_label) {
 	    $orte->init;
 	    $next_meth = 'next';
 	} else {
@@ -10299,7 +10308,7 @@ sub plotorte {
 			  -fill => '#000080',
 			 );
 	if ($name_o) {
-	    if ($no_overlap_label{$type}) {
+	    if ($no_overlap_label) {
 		# nach Kategorie sortieren
 		@orte_coords_labeling
 		  = sort { $b->[3] <=> $a->[3] } @orte_coords_labeling;
@@ -10334,7 +10343,7 @@ sub plotorte {
 		    }
 		}
 	    }
-	    if (!$no_overlap_label{$type} && !$municipality &&
+	    if (!$no_overlap_label && !$municipality &&
 		!$do_outline_text) {
 		$c->itemconfigure($label_tag,
 				  -anchor => 'w', -justify => 'left');
@@ -13169,16 +13178,17 @@ sub show_overview_populate {
     {
 	# schöner wär's mit local(), aber geht nicht so ohne weiteres
 	my $orte_far_away_orig = $p_far_away{'o'};
-	my $overlap_label_orig = $no_overlap_label{'o'};
+	#XXX del: my $overlap_label_orig = $no_overlap_label{'o'};
 	$p_far_away{'o'} = 1;
-	$no_overlap_label{'o'} = 0; # XXX leider langsam
+	#XXX del: $no_overlap_label{'o'} = 0; # XXX leider langsam
 	plotorte(Canvas        => $overview_canvas,
 		 PlaceCategory => 4,
 		 AllSmall      => 1,
 		 Shortname     => 1,
+		 NoOverlapLabel => 0,
 		);
 	$p_far_away{'o'} = $orte_far_away_orig;
-	$no_overlap_label{'o'} = $overlap_label_orig;
+	#XXX del: $no_overlap_label{'o'} = $overlap_label_orig;
 
 	if ($show_overview_mode eq 'b') {
 	    plotorte(Canvas        => $overview_canvas,

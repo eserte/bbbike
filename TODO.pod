@@ -480,6 +480,11 @@ Win* anfangen kE<ouml>nnen...
 
 outline_text bei draw_text_intelligent verwenden
 
+=item * (M4)
+
+draw_text_intelligent should use the bbox of the central object
+if xaddanchor/yaddanchor is not defined
+
 =item *
 
 Beim intelligenten Zeichen von Ortsnamen bietet sich ein
@@ -841,6 +846,16 @@ plot* sollte alle LayerEditoren aktualisieren
 LayerEditor koennte weitere Spalten mit Funktionen enthalten, z.B.
 hidden/visible setzen vs. ganz loeschen, Reload, Ausschnitt anpassen,
 Strassenliste zeigen.
+
+LayerEditor bug: es wird special_raise nur auf alle vom LayerEditor
+verwalteten Layer gemacht. Dadurch wird die stacking order von
+nicht-verwalteten Layern kaputt gemacht.
+
+=item * (M3)
+
+Rewrite BBBikePersonal to a real object-oriented module: preserve
+widgets when do any actions, immediately show changes (plot, hlist)
+when editing.
 
 =item Preferences:
   - Stellung des Kopfsteinpflaster-/Ampelzeit-Buttons (nicht so wichtig)

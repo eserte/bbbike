@@ -1,18 +1,7 @@
 @temp_blocking = ();
-$#temp_blocking = 114;
+$#temp_blocking = 118;
 push @temp_blocking,
 (
-       {
-         'until' => 1103151600,
-         'text' => 'K 7318; (Pinnow-L 24-Haßleben); OD Buchholz Kanal- und Straßenbau Vollsperrung 07.09.2004-15.12.2004 ',
-         'from' => 1094421600,
-         'data' => 'userdel	q4 32334,89385 31796,89304
-',
-         'type' => 'handicap'
-       },
-       undef,
-       undef,
-       undef,
        {
          'until' => 1104620400,
          'text' => 'B 96a; (Bahnhofstr., Hauptstr.); OD Schildow Kanal- und Straßenbau Vollsperrung 20.09.2004-01.01.2005 ',
@@ -63,9 +52,9 @@ userdel	q4 8370,25539 8182,25608
        undef,
        undef,
        {
-         'until' => 1104534000,
-         'text' => 'Naumannstr. (Schöneberg) in beiden Richtungen zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt (bis 31.12.2004)',
-         'from' => 1098132674,
+         'until' => 1107212399,
+         'text' => 'Naumannstr. (Schöneberg) in beiden Richtungen zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt (bis Ende 01.2005)',
+         'from' => 1102981474,
          'data' => 'userdel	2 7716,8048 7717,7759
 ',
          'type' => 'gesperrt'
@@ -102,14 +91,7 @@ userdel	q4 21637,30946 21955,30976
        },
        undef,
        undef,
-       {
-         'until' => 1103410800,
-         'text' => 'L 171; (Hohen Neuendorf-Hennigsdorf); Bereich Anschlußstelle Straßenbau Vollsperrung 28.10.2004-18.12.2004 ',
-         'from' => 1098828000,
-         'data' => 'userdel	2 -926,27132 -2118,26060
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -157,14 +139,7 @@ userdel	q4 21637,30946 21955,30976
        },
        undef,
        undef,
-       {
-         'until' => 1114898400,
-         'text' => 'Ebertstr. Richtung Potsdamer Platz zwischen Behrensstr. und Hannah-Ahrendt-Str. Baustelle, Fahrtrichtung gesperrt (bis April 2005)',
-         'from' => 1101507035,
-         'data' => 'userdel	q4; 8595,12066 8571,11846
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1103583600,
@@ -174,32 +149,11 @@ userdel	q4 21637,30946 21955,30976
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1102892400,
-         'text' => 'Sophienstraße, zwischen Große Hamburger Straße und Rosenthaler Straße, für den Fahrzeugverkehr gesperrt (9. Umwelt- und Weihnachtsmarkt). Dauer: 11.12.2004 06:00 Uhr bis 12.12.2004 24:00 Uhr ',
-         'from' => 1102654800,
-         'data' => 'userdel	2 9982,13411 10312,13231
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
-       {
-         'until' => 1103065200,
-         'text' => 'L 912; (Päwesin-Gortz); Brücke über Seeverbindung bei Päwesin Brückenneubau Vollsperrung 26.11.2004-14.12.2004 ',
-         'from' => 1101337200,
-         'data' => 'userdel	2 -37026,11176 -36427,10861
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1102978800,
-         'text' => 'Emmentaler Str. (Reinickendorf) Richtung Westen zwischen Residenzstr. und Gamsbartweg Baustelle, Straße Richtung Westen gesperrt, Einbahnstraßenregelung Richtung Osten (bis 13.12.2004)',
-         'from' => 1101803392,
-         'data' => 'userdel	q4; 7693,18481 7350,18262
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
+       undef,
        {
          'until' => 1117576800,
          'text' => 'Akeleiweg, Tiefbauarbeiten, Straße von Eisenhutweg in Richtung Stubenrauchstraße gesperrt, Dauer: bis 31.05.2005 ',
@@ -224,19 +178,29 @@ userdel	q4 21637,30946 21955,30976
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1102910400,
-         'text' => 'Schulze-Boysen-Str. (Lichtenberg) in beiden Richtungen zwischen Wiesenweg und Pfarrstr. Kranarbeiten, Straße vollständig gesperrt (bis 13.12.2004 ca. 5:00 Uhr)',
-         'from' => 1102712612,
-         'data' => 'userdel	2 15452,11330 15480,11392
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1122760800,
          'text' => 'K 6938; (Görzke-Hohenlobbese); zw. OL Görzke und Abzw. Reppinichen, Brücke Brücken- und Straßenbau Vollsperrung 10.01.2005-30.07.2005 ',
          'from' => 1105225200,
          'data' => 'userdel	2 -59599,-27568 -59265,-27286
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1104015600,
+         'text' => 'Weihnachtsmarkt am Opernpalais, bis 25.12.2004',
+         'from' => 1102980646,
+         'data' => 'userdel	2 9890,12161 9853,12402
+userdel	2 9803,12243 9782,12393
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1104015600,
+         'text' => 'Weihnachtsmarkt am Schloßplatz, bis 25.12.2004',
+         'from' => 1102980716,
+         'data' => 'userdel	2 10170,12261 10083,12442
 ',
          'type' => 'gesperrt'
        }
