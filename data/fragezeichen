@@ -61,8 +61,6 @@ westlich des Sacrower Sees - Försterei Zedlitz - zur Straße nach Krampnitz: Qual
 Schopenhauer Str. (Potsdam): Einbahnstraße?	? -13531,-1534 -13554,-1235
 Hermann-Blankenstein-Str. - Landsberger Allee: Verbindung für Radfahrer?	? 14056,13386 13843,13681
 Grünanlage Kolonie Bäketal - Bäkepark: befahrbar, Qualität (anscheinend normale Parkwege, unbeleuchtet)?	? 5239,4078 5068,4261 4846,4592 4802,4921
-Stadtpark Steglitz, zur Albrechtstr.: befahrbar, Qualität, Fußgänger?; Ist die Albrechtstr. überquerbar?	? 5838,4454 6018,4850
-Stadtpark Steglitz: befahrbar, Qualität, Fußgänger?	? 5344,4672 5476,4626 5727,4693 6010,4677 6114,4709
 Lefevrestr.: Qualität? gute Verbindung?	? 4987,6902 5023,6762 5126,6655 5372,6663
 Rheingaustr.: Qualität? gute Alternative zur Laubacher Str.?	? 4894,6709 4886,7402
 Weimarische (Q2, Kopfsteinpflaster)/Livländische Str. (Q0, Asphalt)/Schoelerpark: durchgängig befahrbar, Qualität, Fußgänger, gute Verbindung?	? 5066,7998 5065,8339 5177,8341 5170,8465 5223,8611 5181,8731
@@ -355,7 +353,7 @@ Am Bötzsee: Genaue Wegführung, besonders zum Fängersee hin? Alternative Strecke 
 Badstr. am Straussee: Qualität?	? 42753,20225 42818,20290 42778,20387 42825,20490 42943,20578 43040,20818 43268,20903 43387,20971 43531,20975 43584,20871
 Alternative Strecke zum Roten Hof: Qualität?	? 43584,20871 43537,20996 43681,21175 44037,21303 44246,21496 44312,21556 44290,21668 44158,21724
 Krummensee - Wegendorf: laut "Berliner Umland" unterschiedliche Qualität (gut - schlecht)	? 29878,21448 29900,21825 30487,22025 31250,22150 33562,22062 33822,22066
-Entlang der Straßenbahnlinie: genaue Wegführung? Qualität?	? 21343,16713 21375,16926 21542,17465 21836,18214 21928,18403 21853,18700
+Entlang der Straßenbahnlinie: genaue Wegführung? Qualität? Wo kommt man in Ahrensfelde heraus?	? 21343,16713 21375,16926 21542,17465 21836,18214 21928,18403 21853,18700 21830,19016
 Hegemühlenstr. - Herrensee: genaue Wegführung? Qualität?	? 42850,17643 42806,17462 42218,17200 42175,16962 41993,16706 41900,16100 41725,16000 41675,15906 41681,15915
 Karl-Liebknecht-Str.: laut bln.verkehr-Artikel Radweg?	?; 11087,13359 11149,13442 11170,13475
 Karl-Liebknecht-Str.: laut bln.verkehr-Artikel Radstreifen?	?; 11257,13647 11170,13475
@@ -428,6 +426,9 @@ Bruno-Bauer-Str.: Kopfsteinpflaster Q2? (Unklare Eintragung existiert) Verbindun
 Crellestr. - Julius-Leber-Brücke: für Radfahrer befahrbar? Genaue Position?	? 7535,9087 7582,9010 7497,8916
 Jan-Petersen-Str.: Radwege (unklare Eintragung existiert)? Zugang zur Landsberger Allee vorhanden?	? 21022,16244 21195,16148 21037,15793 20943,15787 20918,15734
 Dann gibt es am Kuhfortdamm den tollen BÜ unter der Eisenbahnbrücke.	? -18148,-1381
+Braillestr.: Qualität, Einbahnstraße auch für Radfahrer?	? 4512,5199 4433,5315
+Stubenrauchstr. ist an der Autobahn nicht durchgängig. Existiert dennoch ein Stummel an der Detmolder Str.?	? 5068,7965 5066,7998
+von Marzahner Promenade bis Mehrower Allee über Mühlenbecker Weg: laut ADFC-Karte geeignet für Radfahrer	? 20222,15519 20150,15678 20401,16189 20775,16977
 wirklich?	? 9215,3599
 geplante Ampel in Hellersdorf	? 24321,14410
 geplante Ampel in Hellersdorf	? 25095,14171
@@ -447,7 +448,6 @@ Flaischlenstr.: nicht geeignet (laut ADFC-Karte)	? 13514,22642 13426,22398 13395
 (Spreeuferweg): mäßig geeignet (laut ADFC-Karte)	? 4543,12516 4501,12544 4331,12538
 Obersteiner Weg: mäßig geeignet (laut ADFC-Karte)	? 13183,17580 13525,17304
 Moltkestr.: mäßig geeignet (laut ADFC-Karte)	? 4596,3738 4487,3802 4235,3999 4092,4217 3926,4438
-Enzianstr.: mäßig geeignet (laut ADFC-Karte)	? 3926,4438 3826,4579 3794,4625
 Haynauer Str.: mäßig geeignet (laut ADFC-Karte)	? 8039,3242 8055,2885 8018,2657 7897,2380 7921,2302
 Alt-Hermsdorf: mäßig geeignet (laut ADFC-Karte (wahrscheinlich Kopfsteinpflaster))	? 4347,23205 4405,23149 4445,23128 4582,23035
 (Benekendorffstr - Lübars): mäßig geeignet (laut ADFC-Karte)	? 6606,23655 6674,23683 6765,23685
@@ -482,6 +482,7 @@ Blumenthalstr.: schlechtes Kopfsteinpflaster (stimmt die Feinkategorisierung?)	?
 Blumenthalstr.: Kopfsteinpflaster (stimmt die Feinkategorisierung?)	? 8961,6126 8990,5950
 Selkestr.: Kopfsteinpflaster (stimmt das?)	? 12685,7497 12703,7370
 Heegermühler Weg: schlechtes Kopfsteinpflaster (Hier wurde als Range "5-15" angegegeben. Hausnummern?)	? 7966,19968 8043,19725 8231,19806 8415,19910
+Rykestr.: Kopfsteinpflaster (aber ich erinnere mich ganz schwach, dass der südliche Abschnitt asphaltiert war... Außerdem: ist das Linksabbiegen in die Danziger möglich?)	? 11358,14331 11446,14508 11526,14693 11610,14886
 Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser (Richtung Süden sah es teilweise besser aus, wo genau?)	? 9772,-12194 9345,-11425 9472,-11297 9578,-10891 9598,-10356 9854,-9480 10023,-8859
 F XXX: fester Sandweg mit einigen Schlaglöschern (welche Nummer des F-Wegs?)	? -21063,-2021 -20721,-1935 -20486,-1956 -20295,-1870 -20176,-525
 Sellin - Viktoriahöhe: Waldweg (genauer erfassen:)	? 53959,173487 54093,173124 53932,172900 54243,172675 54419,172332 54382,172132

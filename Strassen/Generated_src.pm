@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: Generated_src.pm,v 1.17 2004/05/09 20:51:21 eserte Exp $
+# $Id: Generated_src.pm,v 1.18 2004/09/28 21:27:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -144,7 +144,6 @@ sub make_net_slow_<%=$type%> {
 
 sub net_read_cache_<%=$type%> {
     my($self) = @_;
-#XXX    my @src = $self->sourcefiles;
     my @src = $self->dependent_files;
     if (!@src || grep { !defined $_ } @src) {
 	return 0;
@@ -187,7 +186,6 @@ sub net_read_cache_<%=$type%> {
 
 sub net_write_cache_<%=$type%> {
     my($self) = @_;
-#XXX    my @src = $self->sourcefiles;
     my @src = $self->dependent_files;
     if (!@src || grep { !defined $_ } @src) {
 	return;
@@ -279,18 +277,6 @@ sub route_to_name_<%=$type%> {
 	    if ($str_i =~ /^\d/) {
 		$str = $self->{Strassen}->get($str_i)->[0];
 		$str = Strasse::beautify_landstrasse($str, $rueckwaerts);
-#  		if ($str =~ /^(\w+:\s+)?(.*\s-\s.*)$/) {
-#  		    my $str_nummer = "";
-#   		    if (defined $1 and $1 ne "") {
-#  		        $str_nummer = $1;
-#  			$str = $2;
-#  		    }
-#  		    my(@comp) = ($rueckwaerts ?
-#  				 reverse split(/\s-\s/, $str) :
-#  				 split(/\s-\s/, $str));
-#  		    $str = $str_nummer . "(" . join(" - ", @comp[0..$#comp-1])
-#  			. " -) " . $comp[$#comp];
-#  		}
 	    } else {
 		$str = $str_i;
 	    }

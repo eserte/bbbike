@@ -755,8 +755,8 @@ userdel	1 16655,10622 16460,10699 16153,10818 16032,10842
 EOF
      },
      { from  => 1094627730, # 2004-09-08 09:15
-       until => 1096063200, # 2004-09-25 00:00
-       text  => 'Gleim-Tunnel: Baustelle, Straße vollständig gesperrt (bis 24.09.2004)',
+       until => 1096668000, # 2004-10-02 00:00
+       text  => 'Gleim-Tunnel: Baustelle, Straße vollständig gesperrt (bis 01.10.2004)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 9917,15613 10122,15647
@@ -843,6 +843,23 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 2715,-6365 2443,-6309
+EOF
+     },
+     { from  => 1096754400, # 2004-10-03 00:00
+       until => 1103929200, # 2004-12-25 00:00
+       text  => 'K 6907; (B 2-AS Ferch); OD Neuseddin Straßenbauarbeiten Vollsperrung 04.10.2004-24.12.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -18080,-12637 -17374,-13449
+EOF
+     },
+     { from  => 1096754400, # 2004-10-03 00:00
+       until => 1097704800, # 2004-10-14 00:00
+       text  => 'L 90; (Potsdamer Str.); OD Werder, zw. A.-Kärger Str. u. Grüner Weg Schachtsanierung Vollsperrung 04.10.2004-13.10.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -21137,-4034 -21003,-4494
+userdel	q4 -21003,-4494 -20851,-4878
 EOF
      },
     );
