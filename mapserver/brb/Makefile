@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.4 2003/07/03 06:11:49 eserte Exp $
+# $Id: Makefile,v 1.5 2003/07/09 07:26:57 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -51,6 +51,7 @@ RADZEIT_HOST=		${BBBIKE_RADZEIT_HOST}
 # Standard dimensions of mapserver image:
 IMGWIDTH?=	550							# ***
 IMGHEIGHT?=	550							# ***
+IMAGECOLOR?=	225 225 225
 
 #####################################################################
 # Various destination system configurations
@@ -163,6 +164,7 @@ ALL_TPL_DEFINES=\
 	--define BBBIKE_SF_WWW="$(BBBIKE_SF_WWW)" \
 	--define IMGWIDTH="$(IMGWIDTH)" \
 	--define IMGHEIGHT="$(IMGHEIGHT)" \
+	--define IMAGECOLOR="$(IMAGECOLOR)" \
 	--define EDITWARNHTML="<!-- DO NOT EDIT. Created automatically from ${.ALLSRC:M*tpl} -->" \
 	--define EDITWARNJS="/* DO NOT EDIT. Created automatically from ${.ALLSRC:M*tpl} */" \
 	--define EDITWARNMAP="\#\# DO NOT EDIT. Created automatically from ${.ALLSRC:M*tpl}" \
@@ -271,6 +273,8 @@ brb-wide.map:	brb.map mkroutemap
 # zur Zeit auch kein Unterschied...
 brb-devel.map:	brb.map
 	sed -e 's/\.gif/\.png/g' < $> > $@
+
+brb-ipaq.map:
 
 ######################################################################
 # Temporaries

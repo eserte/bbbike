@@ -305,7 +305,7 @@ $(MAPFILES_DATA_DIR)/nolighting.shp:	nolighting
 mapfiles-shptree:	${ALL_MAPFILES:S/.shp$/.qix/}
 
 .for qix in ${ALL_MAPFILES:S/.shp$/.qix/}
-${qix}:
+${qix}:	${qix:S/.qix$/.shp/}
 	@[ -x ${SHPTREE} ] && ( \
 		echo $@; \
 		${SHPTREE} $@ \

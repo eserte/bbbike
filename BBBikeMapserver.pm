@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.12 2003/07/06 21:56:16 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.13 2003/07/08 20:53:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@
 package BBBikeMapserver;
 use strict;
 use File::Basename;
-use CGI qw(-oldstyle_urls);
+use CGI;
 
 sub new {
     my($class, %args) = @_;
@@ -31,6 +31,7 @@ sub new {
     if (!$self->{TmpDir}) {
 	die "Can't set TmpDir";
     }
+    CGI->import(qw(-oldstyle_urls)); # call as late as possible
     $self->{CGI} = CGI->new;
     $self;
 }
