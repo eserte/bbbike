@@ -1163,24 +1163,25 @@ sub advanced_coord_menu {
 		       -variable => \$p_draw{'pl'},
 		       -command => sub { plot('p','pl') },
 		      );
-    # XXX should move someday to bbbike, main streets menu
-    $bpcm->cascade(-label => M"Kommentare zeichnen");
-    {
-	my $c_bpcm = $bpcm->Menu(-title => M"Kommentare zeichnen");
-	$bpcm->entryconfigure("last", -menu => $c_bpcm);
-	foreach my $_type (@comments_types) {
-	    my $type = my $label = $_type;
-	    my $def = 'comm-' . $type;
-	    $c_bpcm->checkbutton
-		(-label => $label,
-		 -variable => \$str_draw{$def},
-		 -command => sub {
-		     my $file  = "comments_" . $type . ($edit_mode ? "-orig" : "");
-		     plot('str', $def, Filename => $file);
-		 },
-		);
-	}
-    }
+#XXX del:
+#     # XXX should move someday to bbbike, main streets menu
+#     $bpcm->cascade(-label => M"Kommentare zeichnen");
+#     {
+# 	my $c_bpcm = $bpcm->Menu(-title => M"Kommentare zeichnen");
+# 	$bpcm->entryconfigure("last", -menu => $c_bpcm);
+# 	foreach my $_type (@comments_types) {
+# 	    my $type = my $label = $_type;
+# 	    my $def = 'comm-' . $type;
+# 	    $c_bpcm->checkbutton
+# 		(-label => $label,
+# 		 -variable => \$str_draw{$def},
+# 		 -command => sub {
+# 		     my $file  = "comments_" . $type . ($edit_mode ? "-orig" : "");
+# 		     plot('str', $def, Filename => $file);
+# 		 },
+# 		);
+# 	}
+#     }
 
     $bpcm->command(-label => M"Neu laden",
 		   -command => \&reload_all,

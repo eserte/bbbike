@@ -2198,6 +2198,8 @@ sub do_iconframe {
     $strcm->checkbutton(-label => M"Höhenangaben",
 			-variable => \$p_draw{'hoehe'},
 			-command => sub { plot('p','hoehe') });
+
+#XXX include comments_cyclepath into radwege?
     $strcm->checkbutton(-label => M"Radwege",
 			-variable => \$str_draw{'rw'},
 			-command => sub { plot('str','rw')},
@@ -2308,6 +2310,26 @@ sub do_iconframe {
 			    -variable => \$str_draw{'comm'},
 			    -command => sub { plot('str','comm') },
 			   );
+#XXXXXXXXXXXXXXXXX do it nicer, maybe using an "all" category?
+	$strcm->cascade(-label => M"Kommentarkategorien");
+	{
+	    my $c_bpcm = $strcm->Menu(-title => M"Kommentarkategorien");
+	    $strcm->entryconfigure("last", -menu => $c_bpcm);
+	    foreach my $_type (@comments_types) {
+		my $type = my $label = $_type;
+		my $def = 'comm-' . $type;
+		$c_bpcm->checkbutton
+		    (-label => $label,
+		     -variable => \$str_draw{$def},
+		     -command => sub {
+			 my $file  = "comments_" . $type . ($edit_mode ? "-orig" : "");
+			 plot('str', $def, Filename => $file);
+		     },
+		    );
+	    }
+	}
+
+	# XXX include comments_mount?
 	$strcm->checkbutton
 	    (-label => M"Steigungen",
 	     -variable => \$str_draw{'mount'},
