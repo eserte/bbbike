@@ -95,6 +95,7 @@ png-to-gif:	\
 		flag_via_centered.gif \
 		flag_ziel_centered.gif \
 		usercross.gif \
+		redcross.gif \
 
 png-to-xpm:	\
 		ampel.xpm \
@@ -124,6 +125,7 @@ png-to-xpm:	\
 		flag_via_centered.xpm \
 		flag_ziel_centered.xpm \
 		usercross.xpm \
+		redcross.xpm \
 
 png-to-wbmp:	\
 		flag2_bl.wbmp \
