@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.21 2004/08/27 07:01:44 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.22 2004/11/28 23:59:10 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -253,7 +253,8 @@ sub choose_street {
 	my $ret = $str->next;
 	last if !@{$ret->[COORDS]};
 	my $check_strasse = $ret->[NAME];
-	if ($check_strasse =~ /^$strasse/) {
+	if (substr($check_strasse, 0, length($strasse)) eq $strasse) {
+#	if ($check_strasse =~ /^$strasse/) {
 	    my %bez;
 	    if ($check_strasse =~ /(.*)\s+\((.*)\)/) {
 		$check_strasse = $1;
