@@ -1017,6 +1017,12 @@ equal width (especially in end dialog buttons). Is HList white?
 Don't understand this one: E<quot>Bug: Busy-Zeiger zurücksetzen ist
 unter Win kontraproduktiv!!!E<quot>
 
+=item * (M1)
+
+An example how to programmatically make a screenshot on Windows ---
+maybe this can be of use somewhere (using instead of xwd?):
+L<http://www.perlmonks.org/index.pl?node_id=355073>
+
 =back
 
 =head2 BikePower
