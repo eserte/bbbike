@@ -4496,6 +4496,14 @@ $splash_screen->Destroy if $splash_screen; undef $splash_screen;
 
 choose_streets()                            if $init_choose_street;
 
+if ($ENV{BBBIKE_GUI_TEST}) {
+    eval qq{
+      require $ENV{BBBIKE_GUI_TEST};
+      \$top->afterIdle(\\&$ENV{BBBIKE_GUI_TEST}::start_guitest);
+    };
+    warn $@ if $@;
+}
+
 MainLoop unless $ENV{BBBIKE_TEST_PERFORMANCE};
 
 ##### Subs ### RELOADER_START ############################################
