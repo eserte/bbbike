@@ -2,6 +2,9 @@
 Brandenburger Str.: Fußgängerzone	q3 -12894,-977 -13171,-1042 -13556,-1140
 Neuer Garten: Schiebestrecke	q3 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12115,1331 -12185,1388
 Neuer Garten: Schiebestrecke	q3 -12081,1168 -12181,1196
+Neuer Garten: Schiebestrecke	q3 -11510,810 -11562,918 -11575,1031 -11537,1206 -11568,1287 -11868,1193 -12000,1243 -12115,1331
+Neuer Garten, Westufer des Heiligen Sees: Schiebestrecke	q3 -12265,-418 -12262,-362 -12328,-212 -12331,-131 -12321,9
+Neuer Garten: Schiebestrecke	q3 -12331,-131 -12412,-118 -12450,-34 -12557,11
 Heiliger See, Ostufer: Schiebestrecke	q3 -11903,-71 -11893,53 -11796,240 -11609,400 -11581,559 -11650,590 -11603,721 -11615,853
 Uferpromenade Caputh: Fußgänger	q3 -17643,-7028 -17703,-7228 -18009,-7528
 # temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -10,18 +13,18 @@ B 1; (Hauptstr.); OD Herzfelde; Kanal- und Straßenbau; Vollsperrung; 07.07.2004-
 B 96A; (Schönfließer Str.); OL Schildow; Straßenbau; Vollsperrung; 28.06.2004-23.07.2004	q4::inwork 8194,25966 8021,26285
 K 6949; (Prützke-Rietz); OL Prützke, Altes Dorf; Straßenbau; Vollsperrung; Umleitung; 28.06.2004-06.08.2004	q4::inwork -42050,-6999 -41923,-6892 -42009,-6765
 Potsdam, Friedrich-Engels-Str.: Bauarbeiten an der Nuthe-Brücke und weiter	q3::inwork -11507,-2130 -10995,-2108
-Potsdam, Großbeerenstr.: gesperrte Richtung, Gehweg benutzen	q4::inwork -9753,-2474 -10348,-2276
+Potsdam, Großbeerenstr.: Richtung Westen gesperrt, Gehweg benutzen	q4::inwork; -9753,-2474 -10348,-2276
 B 102; (Hauptstr.,H.-Heine-Str.); OD Premnitz, von E.-Thälmann-Str. bis Bergstr.; Kanal- und Straßenbau; Vollsperrung; 22.09.2003-30.10.2004	q4::inwork -62595,12860 -62505,12565 -62079,12612
 B 169; OU Senftenberg; Bau Ortsumfahrung; Vollsperrung; 06.11.2003-30.05.2006	q4::inwork 55158,-95910 54884,-96292 54357,-96691
 #XXX del K 6424; (LG Berlin (Friedrichshagen)-B 1); OD Münchehofe; Straßenausbau; Vollsperrung; 04.08.2003-10.04.2004	q4::inwork E7012,5177 E7015,5155
 #XXX del L 141; (B 5 südl.Segeletz-Neustadt (Dosse)); Bahnübergang zw. B 5 und Dreetz; Bau Straßenüberführung; Vollsperrung; 17.07.2003-01.07.2004	q4::inwork -49516,43006 -49641,42683 -49855,42530
 #XXX del L 16; (Wittstocker Allee); OD Neuruppin; Kanal- u. Straßenbau; Vollsperrung; 29.09.2003-30.06.2004	q4::inwork -30915,58087 -31791,60965
 #XXX del L 171; (zw. Hohen Neuendorf u. Hennigsdorf); Brücke über A111; Neubau Brücke üb. A 111; Vollsperrung; 18.06.2003-07.05.2004	q4::inwork -884,27149 -522,27491
-L 30; (Dorfstr.); OL Petershagen; Straßenbauarbeiten; Vollsperrung; 13.04.2004-18.07.2004 	q4::inwork 35427,13624 35234,13541 35359,12542
+#XXX del L 30; (Dorfstr.); OL Petershagen; Straßenbauarbeiten; Vollsperrung; 13.04.2004-18.07.2004 	q4::inwork 35427,13624 35234,13541 35359,12542
 #XXX del L 311; (Dorfstr., Ahrensfelder Ch.); OD Eiche; Straßenbauarbeiten; Vollsperrung; 08.09.2003-31.05.2004	q4::inwork 22886,17680 22795,17836 22944,18028
 #XXX del L 40; (Dahlewitz-Potsdam); OD Großbeeren, Bahnhofstr., Straßenbauarb. B101n, Vollsperrung, 16.02.2004-07.06.2004	q4::inwork 3131,-6334 3242,-6330 3653,-6050
 L 792; (Trebbiner Str.); OL Mahlow, zw. Glasower Damm u. Berliner Str.; grundhafter Straßenbau; Vollsperrung; 04.03.2004-19.11.2004	q4::inwork 11186,-5297 11291,-4485
-L 141; (Zernitz-Breddin); OD Stüdenitz; Straßenbauarbeiten; Vollsperrung; 15.03.2004-16.07.2004	q4::inwork -66293,52606 -66831,52431 -67037,52412 -67317,52176
+#XXX del: L 141; (Zernitz-Breddin); OD Stüdenitz; Straßenbauarbeiten; Vollsperrung; 15.03.2004-16.07.2004	q4::inwork -66293,52606 -66831,52431 -67037,52412 -67317,52176
 #XXX del: L 23; (nördl. Eberswalde-Joachimsthal); OD Britz, Joachimsthaler Str.; Fahrbahnerneuerung; Vollsperrung; 22.03.2004-30.04.2004	q4::inwork E7403,3082 E7424,3126
 #XXX del: L 382; (Kopernikusstr.); OL Frankfurt(O.), zw. Leipziger Str. u. Nuhnenstr.; grundh. Straßenausabau; Vollsperrung; 22.03.2004-31.05.2004	q4::inwork 86588,-6662 85945,-5682
 B 109; OD Klosterfelde; grundhafter Ausbau; Vollsperrung; 29.03.2004-30.10.2004	q4::inwork 14962,42702 14941,42957 14881,43618 15356,44334

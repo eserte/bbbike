@@ -83,7 +83,7 @@ Belziger Str.: m‰ﬂiges Kopfsteinpflaster	Q2 7381,9165 7315,9156 7115,9013
 Suadicanistr.: Asphalt	Q0 7859,7486 7854,7572
 Lilienthalstr.: teilweise keine befestigte Straﬂe	Q2 10675,8940 10598,8563
 Weichselstr.: m‰ﬂiges Kopfsteinpflaster, 15-17km/h	Q2 12330,8636 12394,8729 12483,8834 12590,8977 12769,9186 12849,9319 12841,9368
-Treptower Str.: m‰ﬂiges Kopfsteinpflaster, 17km/h	Q2 13857,8601 13957,8736 14002,8787 14140,8977
+Treptower Str.: m‰ﬂiges Kopfsteinpflaster, 17km/h	Q2 13857,8601 13982,8764 14002,8787 14140,8977
 Pfarrstr.: m‰ﬂiges Kopfsteinpflaster	Q2 15267,10865 15339,11123 15438,11305
 Pfarrstr.: sehr guter Asphalt	Q0 15438,11305 15452,11330
 Schulze-Boysen-Str: sehr guter Asphalt	Q0 15452,11330 15480,11392
@@ -618,7 +618,9 @@ Krampnitzer Weg: m‰ﬂig geeignet	Q2 -9005,4933 -8638,4874 -8098,4842 -7498,4786
 Schaperstr.: Asphalt	Q0 5706,10216 5597,10299 5471,10331
 Bleibtreustr.: Kopfsteinpflaster	Q2 4728,11195 4722,11030 4701,10837 4685,10689
 Wilhelmsaue: Kopfsteinpflaster	Q2 5181,8731 5346,8720 5510,8709
-Werderstr.: m‰ﬂig geeignet	Q2 8955,5549 8988,5821 8990,5950
+Werderstr.: Kopfsteinpflaster	Q2 8955,5549 8974,5708
+Werderstr.: asphaltiert	Q0 8974,5708 8988,5821
+Werderstr.: Kopfsteinpflaster	Q2 8988,5821 8990,5950
 Wikingerufer: Kopfsteinpflaster	Q2 5369,12529 5391,12626 5376,12781 5372,12818 5388,12885
 (Gemeindew‰ldchen): Parkweg	Q1 461,3118 82,3166
 Beerenstr.: Kopfsteinpflaster	Q2 82,3166 -765,3253 -1117,3317
@@ -852,3 +854,12 @@ Landsberger Allee: Radwege nur mit m‰ﬂiger Qualit‰t (Bordsteinkanten!)	Q1 16843,
 Landsberger Allee: Radwege nur mit m‰ﬂiger Qualit‰t (Bordsteinkanten!)	Q1 20266,15456 20800,15692 20994,15681 21183,15659 21237,15665 21699,15833
 Kurf¸rstenweg: fester Waldweg	Q1 -5983,-648 -5863,-426 -5762,-145 -5752,-44 -5658,135 -5567,231 -5539,308 -5376,450 -5295,545 -5155,758 -4974,900
 (Spreeufer): m‰ﬂig geeignet	Q2 -288,13279 -193,13318 303,13287 700,13371 984,13475 1193,13485
+Bosestr.: schlechtes Kopfsteinpflaster	Q3 8181,6341 8546,6307 8554,6329 8680,6322 8943,6292
+Schˆnburgstr.: schlechtes Kopfsteinpflaster	Q3 8949,6644 8946,6501 8995,6473
+Schˆnburgstr.: Kopfsteinpflaster	Q2 8995,6473 9029,6360
+Parkstr.: schlechtes Kopfsteinpflaster	Q3 8943,6292 9029,6360
+Parkstr.: Kopfsteinpflaster	Q2 9029,6360 9143,6415
+Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 8943,6292 8961,6126
+Blumenthalstr.: Kopfsteinpflaster	Q2 8961,6126 8990,5950
+Kaiserin-Augusta-Str.: Kopfsteinpflaster	Q2 8990,5950 9177,5922
+(Teltowkanal, Nordufer): Parkweg	Q2 8750,5173 9118,5328 9145,5323 9182,5332

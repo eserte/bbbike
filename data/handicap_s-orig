@@ -1,5 +1,6 @@
 # $Id: handicap_s-orig,v 4.2 2004/07/06 20:32:00 eserte Exp eserte $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Wassersportallee (Gr¸nau), Richtung Regattastraﬂe zwischen Ammerseestraﬂe und Regattastraﬂe Baustelle Straﬂe vollst‰ndig gesperrt (bis 2005-01-31)	q4::inwork; 22449,1281 22663,1441
 Mauerstraﬂe, zwischen J‰gerstraﬂe und Mohrenstraﬂe, Baustelle, Straﬂe gesperrt. Dauer: 17.05.2004 08.00 Uhr bis 30.09.2004 18:00 Uhr	q4::inwork 9108,11961 9144,11866 9173,11770
 Taubenstraﬂe, zwischen Glinkastraﬂe und Mauerstraﬂe, ver‰nderte Verkehrsf¸hrung (Sackgasse). Dauer: 17.05.2004 08.00 Uhr bis 30.09.2004 18:00 Uhr	q4::inwork 9144,11866 9208,11872
 ##: XXX andere Quelle sagt bis Ende 08.2004
@@ -20,7 +21,7 @@ Prenzlauer Promenade, zw. Am Steinberg und Ostseestr. Baustelle, Sperrung stadte
 #XXX del? Kˆpenicker Str. (Kˆpenick) in beiden Richtungen am S-Bahnhof Wulheide Baustelle, Straﬂe gesperrt, Umleitung: eine Umleitung ist eingerichtet (bis 25.06.2004)	q4::inwork 13443,9527 13424,9563
 Bitterfelder Straﬂe (Marzahn) Richtung M‰rkische Allee, Hˆhe S-Bahn-Br¸cke Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 2004-09-30)	q4::inwork; 19903,16632 20230,16560
 #XXX del? Gartenstraﬂe zwischen Torstraﬂe und Schrˆderstraﬂe in beiden Richtungen gesperrt. Asphaltarbeiten. Ab 29.03.2004, 07.00 Uhr bis ?	q4::inwork 9668,13629 9383,13978
-#XXX del Rathausstr./Alarichstr. (Schˆneberg) in beiden Richtungen zwischen Kreuzung Ringstr. und Attilaplatz Baustelle, Straﬂe vollst‰ndig gesperrt (bis 16.05.2004) (14:36)	q4::inwork 8576,5486 8689,5264 8756,5135 8772,5081 8801,4993 8838,4668 8862,4462 8877,4356 8954,4084 9003,3878
+#XXX del Rathausstr./Alarichstr. (Schˆneberg) in beiden Richtungen zwischen Kreuzung Ringstr. und Attilaplatz Baustelle, Straﬂe vollst‰ndig gesperrt (bis 16.05.2004) (14:36)	q4::inwork 8606,5496 8707,5289 8750,5173 8772,5081 8801,4993 8838,4668 8862,4462 8877,4356 8954,4084 9003,3878
 Jerusalemer Str. (Mitte) Richtung Norden zwischen Leipziger Str. und Hausvogteiplatz Baustelle, Richtungsfahrbahn Richtung S¸den gesperrt, Einbahnstraﬂenregelung (bis Juni 2005)	q4::inwork; 9878,11857 9892,11752 9899,11670
 Saatwinkler Damm (Spandau) in beiden Richtungen zwischen Rohrdamm und Gartenfelder Str. Baustelle, Straﬂe vollst‰ndig gesperrt (bis 31.12.2004)	q4::inwork -303,15526 468,15640
 #XXX del L¸ckstraﬂe Berlin-Friedrichsfelde Richtung Berlin-Friedrichshain Zwischen Rummelsburger Straﬂe und Schlichtallee wegen Bauarbeiten gesperrt bis 14.05.	q4::inwork 16032,10842 16153,10818 16460,10699 16655,10622
@@ -111,7 +112,7 @@ Am Volkspark: Parkweg	q1 5745,8194 5934,8220
 Karl-Marx-Str. - Marchlewskistr.: Gehweg	q2 12869,12425 12989,12314
 Lange Str. [vor Kaufhof]: Fuﬂg‰nger	q2 12401,11886 12522,11837
 Dircksenstr.: Gehweg	q2 11283,12278 11304,12234
-Gotenstr. - Kolonnenstr.: Fuﬂg‰nger	q2 7488,8768 7570,8863
+Gotenstr. - Kolonnenstr.: Fuﬂg‰nger	q2 7488,8768 7548,8879
 Nettelbeckplatz: Fuﬂg‰nger	q2 8035,15411 7989,15412 7891,15417
 Nettelbeckplatz: Fuﬂg‰nger	q2 7953,15362 7989,15412
 Volkspark Wilmersdorf: kombinierter Rad- und Fuﬂweg	q1 5919,8417 5823,8348 5666,8345 5533,8478 5481,8506
@@ -170,3 +171,6 @@ Zauritzweg: Fuﬂg‰nger	q1 4150,11871 4220,11820 4195,11690
 (Bl¸cherplatz - Zossener Str.): Fuﬂg‰nger, Bordsteine	q2 9689,10124 9811,10055
 Hebbelstr.: Fuﬂg‰nger	q2 3121,11838 3262,12003 3278,12021 3304,12053
 Spreewaldplatz: Fuﬂg‰nger	q1 12341,10218 12295,10392
+Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8556 8756,8453 8711,8371
+(Fritz-Br‰uning-Promenade): Bordsteine, Fuﬂg‰nger	q3 8724,8021 8616,8018
+(Teltowkanal, Nordufer): Fuﬂg‰nger (eigentlich f¸r Radfahrer verboten)	q2 8750,5173 9118,5328 9145,5323 9182,5332

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Dataset.pm,v 1.10 2004/03/22 23:48:20 eserte Exp $
+# $Id: Dataset.pm,v 1.11 2004/07/16 23:04:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::Dataset;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%file %net %crossings %obj @comments_types);
 
@@ -35,7 +35,8 @@ use vars qw(%file %net %crossings %obj @comments_types);
       'g'  => ['berlin',	undef,			undef],
       'e'  =>  'faehren',
 #XXX maybe change radwege_exact=>radwege and radwege=>radwege_display?
-      'rw' => ['radwege_exact',	undef,			undef],
+#XXX radwege_exact vs. comments_cyclepath is very strange...
+      'rw' => ['radwege_exact',	'comments_cyclepath',	undef],
       'q'  => ['qualitaet_s',	'qualitaet_l',		'qualitaet_l'],
       'h'  => ['handicap_s',	'handicap_l',		'handicap_l'],
       'nl' => ['nolighting',	undef,			undef],
@@ -164,6 +165,9 @@ C<$scoperef>. Additional arguments may be: C<-cache>, C<-makenetargs>
 sub get_net {
     my($self, $linetype, $type, $scoperef, %args) = @_;
     $scoperef = _normalize_scoperef($scoperef);
+    if ($linetype eq 'str' && $type eq 'rw') {
+	return $self->_get_rw_net($scoperef, %args);
+    }
     my $nettype = $args{-nettype} || "std";
     my $key = "$linetype-$type-$nettype-" . join("-", @$scoperef);
     if ($net{$key} && !(defined $args{-cache} && !$args{-cache})) {
@@ -182,6 +186,54 @@ sub get_net {
     }
     $net{$key} = $net;
     $net;
+}
+
+sub _get_rw_net {
+    my($self, $scoperef, %args) = @_;
+    my($linetype, $type) = qw(str rw);
+    my $nettype = $args{-nettype} || "std";
+    my $key = "$linetype-$type-$nettype-" . join("-", @$scoperef);
+    if ($net{$key} && !(defined $args{-cache} && !$args{-cache})) {
+	return $net{$key};
+    }
+
+    my($net1, $net2);
+    require Strassen::StrassenNetz;
+    if ("@$scoperef" =~ /city/) {
+	my $obj = $self->get($linetype, $type, 'city', %args);
+	$net1 = StrassenNetz->new($obj);
+	my @args = $args{-makenetargs} ? @{$args{-makenetargs}} : ();
+	push @args, -obeydir => 1; # Speciality!
+	if ($nettype eq 'std') {
+	    $net1->make_net(@args);
+	} elsif ($nettype eq 'cat') {
+	    $net1->make_net_cat(@args);
+	} else {
+	    die "NYI: make net for net type $nettype";
+	}
+    }
+    if ("@$scoperef" =~ /region/) {
+	my $obj = $self->get($linetype, $type, 'region', %args);
+	$net2 = StrassenNetz->new($obj);
+	my @args = $args{-makenetargs} ? @{$args{-makenetargs}} : ();
+	if ($nettype eq 'std') {
+	    $net2->make_net(@args);
+	} elsif ($nettype eq 'cat') {
+	    $net2->make_net_cat(@args);
+	} else {
+	    die "NYI: make net for net type $nettype";
+	}
+    }
+
+    # Merge or not
+    if ($net1) {
+	if ($net2) {
+	    $net1->merge($net2);
+	}
+    } else {
+	$net1 = $net2;
+    }
+    $net1;
 }
 
 =item get_crossings($linetype, $type, $scoperef, %args)

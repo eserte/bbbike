@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.103 2004/07/08 18:38:38 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.104 2004/07/16 23:19:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1736,9 +1736,13 @@ sub advanced_bindings {
 sub destroy_all_toplevels {
     while(my($token, $w) = each %toplevel) {
 	warn "Trying to destroy toplevel $token...\n";
-	$w->destroy if $w;
+	$w->destroy if Tk::Exists($w);
 	delete $toplevel{$token};
     }
+
+    # Special toplevels:
+    my $w = $top->Subwidget("Statistics");
+    $w->destroy if Tk::Exists($w);
 }
 
 use vars qw(%module_time %module_check $main_check_time);

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeStats.pm,v 1.7 2003/05/10 19:31:24 eserte Exp $
+# $Id: BBBikeStats.pm,v 1.10 2004/07/16 23:19:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ package BBBikeStats;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Util;
 use BBBikeUtil;
@@ -48,8 +48,7 @@ sub calculate {
 
     $net{Quality}    = $dataset->get_net("str","q","all",-nettype => "cat");
     $net{Handicap}   = $dataset->get_net("str","h","all",-nettype => "cat");
-    $net{Cyclepaths} = $dataset->get_net("str","rw","all",-nettype => "cat",
-					 -makenetargs => [-obeydir => 1]);
+    $net{Cyclepaths} = $dataset->get_net("str","rw","all",-nettype => "cat");
     $net{Category}   = $dataset->get_net("str","s","all",-nettype => "cat");
 
     for my $i (0 .. $#path-1) {
@@ -63,6 +62,7 @@ sub calculate {
 	    my($member, $fallback) = @$def;
 
 	    my $cat = $net{$member}{Net}{$path[$i]}{$path[$i+1]} || $fallback;
+	    $cat = "RW1" if $cat eq 'RW'; # comments_cyclepath special handling
 	    $len{$member}->{$cat} += $hop_len;
 	    push @{ $coords{$member}->{$cat} }, [$path[$i], $path[$i+1]];
 	}
@@ -103,14 +103,25 @@ sub tk_display_result {
 	$top->Advertise("Statistics" => $t);
 	# make transient?
 
-	$t->OnDestroy(sub {
-			  if ($t->{Photos}) {
-			      foreach (@{ $t->{Photos} }) {
-				  $_->delete;
-			      }
-			  }
-			  delete $t->{Photos};
-		      });
+	Hooks::get_hooks('new_route')->add
+ 	    (sub {
+		 my $upd_b = $t->Subwidget("UpdateButton");
+		 if (Tk::Exists($upd_b)) {
+		     $upd_b->configure(-text => M("Update needed!"));
+		 }
+	     }, 'bbbike-statistics');
+	
+
+	$t->OnDestroy
+	    (sub {
+		 if ($t->{Photos}) {
+		     foreach (@{ $t->{Photos} }) {
+			 $_->delete;
+		     }
+		 }
+		 delete $t->{Photos};
+		 Hooks::get_hooks('new_route')->del('bbbike-statistics');
+	     });
 
 	(my $path = $t->PathName) =~ s/^.//;
 	$t->optionAdd("*$path*Button*Pad", 0);
@@ -200,11 +211,17 @@ sub tk_display_result {
     if ($args{-updatecommand}) {
 	Tk::grid($t->Frame(-height => 1, -background => "black"),
 		 -sticky => "ew", -columnspan => 10);
-	Tk::grid($t->Button(-text => M("Update"),
-			    -anchor => "c",
-			    -font => $font{"bold"},
-			    -command => $args{-updatecommand},
-			   ), -sticky => "ew", -columnspan => 10);
+	my $upd_b;
+	Tk::grid($upd_b = $t->Button
+		 (-text => M("Update"),
+		  -anchor => "c",
+		  -font => $font{"bold"},
+		  -command => sub {
+		      $args{-updatecommand}->();
+		      $t->Subwidget("UpdateButton")->configure(-text => M("Update"));
+		  },
+		 ), -sticky => "ew", -columnspan => 10);
+	$t->Advertise(UpdateButton => $upd_b);
     }
 
     $t->update;
