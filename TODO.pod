@@ -1216,6 +1216,7 @@ points if delta exceeds 128/128 meters.
 
 Opera and Safari: Hitting the return key on the first screen calls the
 abc page (because it's the first <input image> element in the form).
+(SOLVED for Konqueror, Opera seems to be difficult, ask wosch about Safari)
 
 =item * (H1)
 

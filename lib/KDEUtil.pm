@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: KDEUtil.pm,v 2.11 2003/06/02 23:24:00 eserte Exp $
+# $Id: KDEUtil.pm,v 2.13 2004/06/25 22:21:14 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: srezic@cpan.org
+# WWW:  http://www.rezic.de/eserte
 #
 
 =head1 NAME
@@ -62,7 +62,8 @@ sub new {
 
 =head2 is_running
 
-Check if KDE is running (ie. kwm is running).
+Check if KDE is running (ie. kwm is running). Set the KDE_VERSION member to
+either 1 (version 1) or 2 (version 2 and 3).
 
 =cut
 
@@ -72,7 +73,7 @@ sub is_running {
 	$self->{KDE_VERSION} = 1;
 	1;
     } elsif ($self->get_property("KWIN_RUNNING")) { # KDE 2
-	$self->{KDE_VERSION} = 2;
+	$self->{KDE_VERSION} = 2; # or 3
 	1;
     } else {
 	0;
@@ -81,7 +82,7 @@ sub is_running {
 
 =head2 current_desktop
 
-Return active KDE desktop.
+Return the active KDE desktop.
 
 =cut
 
@@ -113,7 +114,7 @@ sub window_region {
 	} elsif ($self->{-top} && defined &Tk::Exists && Tk::Exists $self->{-top}) {
 	    (0, 0, $self->{-top}->screenwidth, $self->{-top}->screenheight);
 	} else {
-	    (0, 0, 800, 600); # XXX????
+	    (0, 0, 800, 600); # provide reasonable values as fallback
 	}
     }
 }
@@ -143,7 +144,7 @@ sub maximize {
 =head2 get_property
 
 Get property with name C<$prop>.
-If possible, use Tk methods, otherwise use the standard C<xprop> program.
+If possible, use Tk methods, otherwise use the standard X11 program C<xprop>.
 
 =cut
 
@@ -171,7 +172,13 @@ sub get_property {
     @ret;
 }
 
-# works with KDE 2
+=head2 keep_on_top($tkwin)
+
+Arrange the Tk window $tkwin to stay on top. This works with KDE 2 and
+3. Alias method name: stays_on_top.
+
+=cut
+
 sub keep_on_top {
     shift;
     my $w = shift;
@@ -190,6 +197,7 @@ sub keep_on_top {
 	1;
     }
 }
+*stays_on_top = \&keep_on_top;
 
 sub panel {
     bless {Parent => $_[0]}, 'KDEUtil::Panel';
@@ -203,6 +211,7 @@ sub fm {
     bless {Parent => $_[0]}, 'KDEUtil::FM';
 }
 
+# XXX Probably wrong for KDE 3
 sub kde_dirs {
     my $self = shift;
     my $given_prefix = shift;
@@ -320,6 +329,8 @@ sub get_kde_config {
 Set the appearance of Tk windows as close as possible to that of the
 current KDE defintions.
 
+XXX Does not work for KDE 3.
+
 =cut
 
 sub kde_config_for_tk {
@@ -396,18 +407,36 @@ sub kde_config_for_tk {
 
 }
 
+=head2 remove_kde_decoration($tkwin)
+
+Remove the window decoration for the Tk window $tkwin. This is
+different from overrideredirect, because window manager operations
+like lowering, raising etc. still work. This method works for KDE 2
+and 3.
+
+=cut
+
 sub remove_kde_decoration {
     my $self = shift;
     my $toplevel = shift || $self->{-top};
     return if $Tk::platform ne 'unix';
 
-    return; # XXX does not work very well!
+    my($wrapper) = $toplevel->wrapper;
 
-    eval {
-	my($wrapper) = $toplevel->wrapper;
-	$toplevel->property('set','KWM_WIN_DECORATION','KWM_WIN_DECORATION',
-			    32,[0],$wrapper);
-    }; warn $@ if $@;
+    if (eval {
+	scalar grep { $_ eq '_KDE_NET_WM_WINDOW_TYPE_OVERRIDE' } $toplevel->property('get', '_NET_SUPPORTED', 'root')
+    }) {
+	eval {
+	    $toplevel->property('set','_NET_WM_WINDOW_TYPE','ATOM',
+				32,['_KDE_NET_WM_WINDOW_TYPE_OVERRIDE'],$wrapper);
+	}; warn $@ if $@;
+    } else {
+	eval {
+	    my($wrapper) = $toplevel->wrapper;
+	    $toplevel->property('set','KWM_WIN_DECORATION','KWM_WIN_DECORATION',
+				32,[0],$wrapper);
+	}; warn $@ if $@;
+    }
 }
 
 #XXX tobedone

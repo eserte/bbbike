@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.98 2004/06/20 22:42:58 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.98 2004/06/20 22:42:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -724,8 +724,9 @@ sub change_datadir {
     $t->destroy;
 }
 
-use vars qw($standard_command_index $editberlin_command_index
-  	    $editbrb_command_index @edit_mode_any_cmd);
+use vars qw($standard_command_index $editstandard_command_index
+	    @edit_mode_any_cmd);
+#XXX del:	    $editberlin_command_index $editbrb_command_index
 
 $without_zoom_factor = 1 if !defined $without_zoom_factor;
 
@@ -770,13 +771,38 @@ sub set_coord_interactive {
     my $ey = $f1->Entry(-textvariable => \$valy);
     my $get_selection_sub = sub {
 	my $interactive = shift;
+
+	my $error_msg = sub {
+	    my $msg = shift;
+	    if ($interactive) {
+		$f1->messageBox(-icon => "error",
+				-message => $msg);
+	    } else {
+		warn $msg;
+	    }
+	};
+
 	my $s;
         Tk::catch {
 	    $s = $f1->SelectionGet('-selection' => ($os eq 'win'
 						    ? "CLIPBOARD"
 						    : "PRIMARY"));
 	};
-	if (defined $s and $s =~ /\d/) {
+	if (defined $s && $s =~ /^\s*([NS]\d+\s+\d+\s+[\d\.]+)
+				  \s+([EW]\d+\s+\d+\s+[\d\.]+)
+                                  \s*$
+                                /x) {
+	    my($lat,$long) = ($1, $2);
+	    require Karte::Polar;
+	    my $y = Karte::Polar::dms_string2ddd($lat);
+	    my $x = Karte::Polar::dms_string2ddd($long);
+	    if (defined $x && defined $y) {
+		($valx, $valy) = ($x, $y);
+		$set_sub->(1);
+	    } else {
+		$error_msg->("Can't parse selection $s");
+	    }
+	} elsif (defined $s and $s =~ /\d/) {
 	    $s =~ s/^[^\d.+-]+//;
 	    $s =~ s/[^\d.+-]+$//;
 	    my($x,$y) = split(/[^\d.+-]+/, $s);
@@ -784,22 +810,10 @@ sub set_coord_interactive {
 		($valx, $valy) = ($x, $y);
 		$set_sub->(1);
 	    } else {
-		my $msg = "Can't parse selection $s";
-		if ($interactive) {
-		    $f1->messageBox(-icon => "error",
-				    -message => $msg);
-		} else {
-		    warn $msg;
-		}
+		$error_msg->("Can't parse selection $s");
 	    }
 	} else {
-	    my $msg = "No useable selection";
-	    if ($interactive) {
-		$f1->messageBox(-icon => "error",
-				-message => $msg);
-	    } else {
-		warn $msg;
-	    }
+	    $error_msg->("No useable selection");
 	}
     };
     my $selb = $f1->Button
@@ -1219,7 +1233,7 @@ sub advanced_coord_menu {
 
     $bpcm->command(-label => M"Neu laden",
 		   -command => \&reload_all,
-		   -accelerator => 'Alt-r',
+		   -accelerator => 'Alt-R',
 		  );
     $bpcm->separator;
 
@@ -1236,27 +1250,30 @@ sub advanced_coord_menu {
 	$c_bpcm->command
 	    (-label => M"Edit-Modus Standard",
 	     -command => sub { switch_edit_standard_mode() },
-	    );
-	$c_bpcm->command
-	    (-label => M"Edit-Modus Berlin",
-	     -command => sub { switch_edit_berlin_mode() },
 	     -accelerator => 'F5',
 	    );
-	$editberlin_command_index = $c_bpcm->index('last');
-	$c_bpcm->command
-	    (-label => "Edit-Modus Brandenburg",
-	     -command => sub { switch_edit_brb_mode() },
-	     -accelerator => 'F6',
-	    );
-	$editbrb_command_index = $c_bpcm->index('last');
+	$editstandard_command_index = $c_bpcm->index('last');
+#XXX del:
+# 	$c_bpcm->command
+# 	    (-label => M"Edit-Modus Berlin",
+# 	     -command => sub { switch_edit_berlin_mode() },
+# 	    );
+# 	$editberlin_command_index = $c_bpcm->index('last');
+# 	$c_bpcm->command
+# 	    (-label => "Edit-Modus Brandenburg",
+# 	     -command => sub { switch_edit_brb_mode() },
+# 	     -accelerator => 'F6',
+# 	    );
+# 	$editbrb_command_index = $c_bpcm->index('last');
 	$c_bpcm->command
 	    (-label => M"Andere Edit-Modi",
 	     -command => sub { choose_edit_any_mode() },
 	     );
 
 	$top->bind("<F4>" => sub { $c_bpcm->invoke($standard_command_index) });
-	$top->bind("<F5>" => sub { $c_bpcm->invoke($editberlin_command_index) });
-	$top->bind("<F6>" => sub { $c_bpcm->invoke($editbrb_command_index) });
+	$top->bind("<F5>" => sub { $c_bpcm->invoke($editstandard_command_index) });
+#XXX del:
+# 	$top->bind("<F6>" => sub { $c_bpcm->invoke($editbrb_command_index) });
     }
 
     foreach my $def ({Label => M"Radwege",

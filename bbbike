@@ -1227,6 +1227,12 @@ if (!defined $top) {
 	for (qw(background highlightBackground)) {
 	    $top->optionAdd("*$_", 'grey80', 'startupFile');
 	}
+	# Workaround for a KDE 3.x problem: KDE sets background, but not
+	# highlightBackground options which looks quite ugly.
+	my $bg = $top->optionGet("background", "Background");
+	if ($top->optionGet("highlightBackground", "HighlightBackground") ne $bg) {
+	    $top->optionAdd("*highlightBackground", $bg, 'interactive');
+	}
 	# Unter Windows sind Balloons eigentlich -bg => white
 	for (qw(Balloon CanvasBalloon)) {
 	    $top->optionAdd("*$_.background", '#C0C080', 'startupFile');
@@ -2101,7 +2107,7 @@ sub do_iconframe {
     my $strcm = $strcmb->Menu(-title => M("Straßen"));
     menu_entry_choose_ort
 	($strcm, 's',
-	 -accelerator => 's',
+	 -accelerator => 'S',
 	 -strchooseortargs =>
 	 {'-markstartifactive' => 1,
 	  -completelistbutton => sub { choose_from_plz(-interactive => 1) },
@@ -2200,7 +2206,7 @@ sub do_iconframe {
     $strcm->checkbutton(-label => M"Radwege",
 			-variable => \$str_draw{'rw'},
 			-command => sub { plot('str','rw')},
-			-accelerator => 'R',
+			-accelerator => 'Shift-R',
 		       );
     my $radwege_check_index = $strcm->index('last');
     $strcm->cascade(-label => M"Radwegekategorien");
@@ -2223,7 +2229,7 @@ sub do_iconframe {
     $strcm->checkbutton(-label => M"Einbahn-/gesperrte Straßen",
 			-variable => \$p_draw{'sperre'},
 			-command => sub { plot_sperre() },
-			-accelerator => 'g',
+			-accelerator => 'G',
 		       );
     my $sperre_check_index = $strcm->index('last');
     $strcm->checkbutton(-label => M"Fähren",
@@ -2232,7 +2238,7 @@ sub do_iconframe {
     $strcm->checkbutton(-label => M"Ampeln",
 			-variable => \$p_draw{'lsa'},
 			-command => sub { plot('p','lsa') },
-			-accelerator => 'a',
+			-accelerator => 'A',
 		       );
     my $ampeln_check_index = $strcm->index('last');
     $strcm->checkbutton(-label => M"Outline zeichnen",
@@ -2253,7 +2259,7 @@ sub do_iconframe {
     $strcm->checkbutton(-label => M"Straßenqualität",
 			-variable => \$str_draw{'qs'},
 			-command => sub { plot('str','qs') },
-			-accelerator => 'Q',
+			-accelerator => 'Shift-Q',
 		       );
     my $qualitaet_check_index = $strcm->index('last');
     $strcm->cascade(-label => M"Qualitätskategorien");
@@ -2351,7 +2357,7 @@ sub do_iconframe {
     my $lstrcmb = $misc_frame->Menubutton;
     my $lstrcm = $lstrcmb->Menu(-title => M"Landstraßen");
     menu_entry_choose_ort($lstrcm, 'l',
-			  -accelerator => 'l',
+			  -accelerator => 'L',
 			  -strchooseortargs => {'-markstartifactive' => 1});
     $lstrcm->separator;
     $lstrcm->checkbutton(-label => M"Outline zeichnen",
@@ -2365,7 +2371,7 @@ sub do_iconframe {
 			 -command => sub {
 			     pending(1, 'replot-str-l');
 			 },
-			 -accelerator => 'L',
+			 -accelerator => 'Shift-L',
 			);
     my $land_jwd_check_index = $lstrcm->index('last');
     $lstrcm->checkbutton(-label => M"Straßennamen",
@@ -2383,7 +2389,7 @@ sub do_iconframe {
     $lstrcm->checkbutton(-label => M"Straßenqualität",
 			 -variable => \$str_draw{'ql'},
 			 -command => sub { plot('str','ql') },
-			 -accelerator => 'Q',
+			 -accelerator => 'Shift-Q',
 			);
     my $qualitaet_l_check_index = $lstrcm->index('last');
     $lstrcm->checkbutton(-label => M"Sonstige Behinderungen",
@@ -2407,7 +2413,7 @@ sub do_iconframe {
 
     my $ocmb = $misc_frame->Menubutton;
     my $ocm = $ocmb->Menu(-title => M"Orte");
-    menu_entry_choose_ort($ocm, 'o', -accelerator_p => 'o',
+    menu_entry_choose_ort($ocm, 'o', -accelerator_p => 'O',
 			  -pchooseortargs => {'-markstartifactive' => 1});
     $ocm->separator;
     $ocm->checkbutton(-label => M"Ortsnamen",
@@ -2436,7 +2442,7 @@ sub do_iconframe {
 		      -command => sub {
 			  pending(1, 'replot-p-o');
 		      },
-		      -accelerator => 'O',
+		      -accelerator => 'Shift-O',
 		     );
     my $ort_jwd_check_index = $ocm->index('last');
     $ocm->separator;
@@ -2488,7 +2494,7 @@ sub do_iconframe {
 
     my $ubcmb = $misc_frame->Menubutton;
     my $ubcm = $ubcmb->Menu(-title => M"U-Bahn");
-    menu_entry_choose_ort($ubcm, 'u', -accelerator => 'u',
+    menu_entry_choose_ort($ubcm, 'u', -accelerator => 'U',
 			  -pchooseortargs => {'-markstartifactive' => 1},
 			  -strblockings => 1,
 			 );
@@ -2541,7 +2547,7 @@ sub do_iconframe {
     $ch->attach($sbahn_check, -pod => "^\\s*S-Bahn-Symbol");
     my $sbcmb = $misc_frame->Menubutton;
     my $sbcm = $sbcmb->Menu(-title => M"S-Bahn");
-    menu_entry_choose_ort($sbcm, 'b', -accelerator => 'b',
+    menu_entry_choose_ort($sbcm, 'b', -accelerator => 'B',
 			  -pchooseortargs => {'-markstartifactive' => 1},
 			  -strblockings => 1,
 			 );
@@ -2595,7 +2601,7 @@ sub do_iconframe {
     $ch->attach($rbahn_check, -pod => "^\\s*RB-Symbol");
     my $rbcmb = $misc_frame->Menubutton;
     my $rbcm = $rbcmb->Menu(-title => M"Regionalbahn");
-    menu_entry_choose_ort($rbcm, 'r', -accelerator => 'r',
+    menu_entry_choose_ort($rbcm, 'r', -accelerator => 'R',
 			  -pchooseortargs => {'-markstartifactive' => 1},
 			  -strblockings => 1,
 			 );
@@ -2643,7 +2649,7 @@ sub do_iconframe {
     $ch->attach($wasser_check, -pod => "^\\s*Gewässer-Symbol");
     my $wcmb = $misc_frame->Menubutton;
     my $wcm = $wcmb->Menu(-title => M"Gewässer");
-    menu_entry_choose_ort($wcm, 'w', -accelerator => 'w');
+    menu_entry_choose_ort($wcm, 'w', -accelerator => 'W');
     $wcm->separator;
     $wcm->checkbutton(-label => M"Outline zeichnen",
 		      -variable => \$str_outline{'w'},
@@ -2669,7 +2675,7 @@ sub do_iconframe {
 		      -command => sub {
 			  pending(1, 'replot-str-w');
 		      },
-		      -accelerator => 'W',
+		      -accelerator => 'Shift-W',
 		     );
     my $wasserumland_check_index = $wcm->index('last');
     $wcm->checkbutton(-label => M"Gewässer jwd zeichnen",
@@ -2693,7 +2699,7 @@ sub do_iconframe {
     $ch->attach($flaechen_check, -pod => "^\\s*Flächen-Symbol");
     my $fcmb = $misc_frame->Menubutton;
     my $fcm = $fcmb->Menu(-title => M"sonstige Flächen");
-    menu_entry_choose_ort($fcm, 'f', -accelerator => 'f');
+    menu_entry_choose_ort($fcm, 'f', -accelerator => 'F');
     $fcm->checkbutton(-label => M"Namen der Flächen",
 		      -variable => \$str_name_draw{'f'},
 		      -command => sub {
@@ -2815,20 +2821,26 @@ sub do_iconframe {
 	my $kcmb = $misc_frame->Menubutton;
 	my $kcm = $kcmb->Menu(-title => M"reale Karte");
 	my $set_default_type;
-	foreach (@Karte::map) {
-	    my $o = $Karte::map{$_};
-	    if ($o->can('coord')) { # check auf Karten-Funktion
-		$kcm->radiobutton(-label => $o->name,
-				  -variable => \$map_default_type,
-				  -value => $o->token,
-				 );
-	    }
-	    if ($_ eq 'brbmap') {
-		my $index = $kcm->index('last');
-		push @edit_mode_brb_cmd, sub { $kcm->invoke($index) };
-	    } elsif ($_ eq 'berlinmap') {
-		my $index = $kcm->index('last');
-		push @edit_mode_b_cmd, sub { $kcm->invoke($index) };
+
+	$kcm->cascade(-label => M"Kartentypen");
+	{
+	    my $kcms = $kcm->Menu(-title => M"Automatische Anpassung");
+	    $kcm->entryconfigure('last', -menu => $kcms);
+	    foreach (@Karte::map) {
+		my $o = $Karte::map{$_};
+		if ($o->can('coord')) { # check auf Karten-Funktion
+		    $kcms->radiobutton(-label => $o->name,
+				       -variable => \$map_default_type,
+				       -value => $o->token,
+				      );
+		}
+		if ($_ eq 'brbmap') {
+		    my $index = $kcm->index('last');
+		    push @edit_mode_brb_cmd, sub { $kcm->invoke($index) };
+		} elsif ($_ eq 'berlinmap') {
+		    my $index = $kcm->index('last');
+		    push @edit_mode_b_cmd, sub { $kcm->invoke($index) };
+		}
 	    }
 	}
 
@@ -3332,6 +3344,7 @@ sub do_iconframe {
     my $slbm = $slbmb->Menu(-title => M"Beschreibung der aktuellen Route");
     $slbm->checkbutton
 	(-label    => M"Routenliste",
+	 -accelerator => "Shift-B",
 	 -variable => \$show_strlist,
 	 -command  => \&show_route_strname);
     $slbm->checkbutton

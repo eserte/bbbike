@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.78 2004/06/10 22:57:01 eserte Exp $
+# $Id: bbbike.cgi,v 6.78 2004/06/10 22:57:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -1431,6 +1431,15 @@ EOF
 
     print "<td>" if ($bi->{'can_table'});
     print "<form action=\"$bbbike_script\" name=BBBikeForm>\n";
+
+    # Hack for browsers which use the first button, regardless whether it's
+    # image or button, for firing in a <Return> event
+    # XXX Does not work for Opera, Safari is untested...
+    if ($bi->{user_agent_name} =~ /^(konqueror|safari|opera)/i) {
+	print <<EOF;
+<input type="submit" value="Weiter" style="text-align:center;visibility:hidden"/>
+EOF
+    }
 
     print "<table id=inputtable>\n" if ($bi->{'can_table'});
 

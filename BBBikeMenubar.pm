@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMenubar.pm,v 1.15 2004/06/15 22:55:04 eserte Exp $
+# $Id: BBBikeMenubar.pm,v 1.15 2004/06/15 22:55:04 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2002,2003 Slaven Rezic. All rights reserved.
@@ -88,7 +88,7 @@ sub menubar {
 			-command => $self->{PrintCommand});
     my $print_menu = $file_menu->cascade(-label => M"D~ruckeinstellungen");
     $file_menu->command(-label => M"~Beenden",
-			-accelerator => "Ctrl-q",
+			-accelerator => "Ctrl-Q",
 			-command => $self->{ExitCommand});
 
     my $layer_menu = $mb->cascade(-label => M"~Kartenebenen");

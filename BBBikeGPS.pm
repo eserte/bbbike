@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.9 2004/03/04 23:20:19 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.9 2004/03/04 23:20:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -548,11 +548,13 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	    }
 	}
 
-	if ($main::edit_mode) {
+	if ($main::edit_mode || $main::edit_normal_mode) {
+	    # This is somewhat hacky --- in edit mode all files should have
+	    # the -orig suffix
 	    $real_speed_outfile = $speed_outfile . "-orig";
 	}
 	$s_speed->write($real_speed_outfile);
-	main::plot_layer('str',$speed_outfile,-fallbackxxx=>1);
+	main::plot_layer('str',$speed_outfile);
 	Hooks::get_hooks("after_new_layer")->execute;
     }
 
@@ -571,11 +573,12 @@ sub BBBikeGPS::do_draw_gpsman_data {
 
     if ($draw_gpsman_data_p) {
 	my $real_outfile = my $outfile = "$tmpdir/$base-gpspoints.bbd";
-	if ($main::edit_mode) {
+	if ($main::edit_mode || $main::edit_normal_mode) {
+	    # See above
 	    $real_outfile = $outfile . "-orig";
 	}
 	$s->write($real_outfile);
-	main::plot_layer('p',$outfile,-fallbackxxx=>1);
+	main::plot_layer('p',$outfile);
     }
 }
 
