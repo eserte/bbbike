@@ -5,7 +5,7 @@
 # $Id: check_nearest,v 1.6 2002/11/06 15:28:32 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,6 +28,8 @@ use File::Basename;
 eval 'use BBBikeXS 0.02';
 
 my $verbose = 0;
+my $mindist;
+my $strfile = "strassen";
 GetOptions("v!" => \$verbose,
 	   "datadir=s" => sub {
 	       my $dir = $_[1];
@@ -35,10 +37,28 @@ GetOptions("v!" => \$verbose,
 	       $dir =~ s|/+$||;
 	       ($Strassen::Util::cacheprefix = basename($dir)) =~ s/\W/_/g;
 	   },
+	   "strfile=s" => \$strfile,
+	   "mindist=i" => \$mindist,
 	  );
 
 warn "new Strassen...\n" if $verbose;
-my $str = new Strassen "strassen";
+my $str = new Strassen $strfile;
+my $conv = $str->get_conversion;
+if ($conv) {
+    warn "Conversion needed...\n" if $verbose;
+    my $new_str = Strassen->new;
+    $new_str->{DependentFiles} = [ $str->dependent_files ];
+    $str->init;
+    while(1) {
+	my $ret = $str->next;
+	last if !@{ $ret->[Strassen::COORDS] };
+	for my $c (@{ $ret->[Strassen::COORDS] }) {
+	    $c = join ",", map { int } split(/,/, $conv->($c));
+	}
+	$new_str->push($ret);
+    }
+    $str = $new_str;
+}
 warn "make_net...\n" if $verbose;
 my $net = new StrassenNetz $str;
 $net->make_net;
@@ -56,7 +76,9 @@ while(my($k,$v) = each %$crossings) {
     my($x, $y) = Strassen::Util::string_to_coord($k);
     my(@nearest) = $kr->nearest($x, $y, IncludeDistance => 1);
 #warn join(", ", @{ $nearest[1] }), "\n";
-    if (!exists $net->{Net}{$k}{$nearest[1]->[0]}) {
+    if (!exists $net->{Net}{$k}{$nearest[1]->[0]} &&
+	(!defined $mindist || $mindist >= $nearest[1]->[1])
+       ) {
 	push @nearest_glob, [$nearest[1]->[0], $k, $nearest[1]->[1]];
     }
 #     foreach (@nearest) {
@@ -74,7 +96,7 @@ warn "sorting...\n" if $verbose;
 my %seen;
 foreach (sort { $a->[2] <=> $b->[2] } @nearest_glob) {
     next if ($seen{$_->[0]} || $seen{$_->[1]});
-    print join(", ", @$_), "\n";
+    printf "%s %s (%dm)\n", @$_;
     $seen{$_->[0]}++;
     $seen{$_->[1]}++;
 }
