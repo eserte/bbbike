@@ -28,12 +28,22 @@ while(<STDIN>) {
     s/^\.error (.+)/\$(error $1)/;
     s/^\.include "Makefile(.+)"/include GNUmakefile$1/; # Hack --- all Makefiles should be translated into GNUmakefiles
     s/^\.include "(.+)"/include $1/;
-    s/^\.for\s+(\S+)\s+in\s+(\S+)//;#XXX how to translate this???
     s/^\.endfor//;#XXX
     s/\$\{\.?MAKEFLAGS\}/-\${MAKEFLAGS}/g;
     s/\$\(\.?MAKEFLAGS\)/-\${MAKEFLAGS}/g;
     s/\$>/\$^/g;
     s[\${(.*):M/(.*)/(.*)/}][\$($1:$2=$3)]g;
+    s[\${(.*):C/(.*)(?<!\\)/(.*)(?<!\\)/(g)?}][]g;
+    if (/^\.for\s+(\S+)\s+in\s+(\S+)/) { # XXX not implementable in GNU make?
+	my($loopvar, $subst) = @_;
+	my $for_body = "";
+	while(<STDIN>) {
+	    last if /^\.endfor/;
+	    $for_body .= $_;
+	}
+#	print $for_body;
+	next;
+    }
     print;
 }
 
