@@ -97,8 +97,8 @@
       </div>
 
       <p>
-      <input type="radio" name="mode" value="browse" checked> <b>Karte zoomen/bewegen</b> <small><a href="help.html#browse" onclick="return help('browse')">(Hilfe)</a></small><br>
-     <input type="radio" name="mode" value="nquery"> <b>Merkmale anzeigen</b> <small><a href="help.html#query" onclick="return help('query')">(Hilfe)</a></small>
+      <input type="radio" name="mode" value="browse" onclick="toggled_searchroute_mode();" checked> <b>Karte zoomen/bewegen</b> <small><a href="help.html#browse" onclick="return help('browse')">(Hilfe)</a></small><br>
+     <input type="radio" name="mode" value="nquery" onclick="toggled_searchroute_mode();"> <b>Merkmale anzeigen</b> <small><a href="help.html#query" onclick="return help('query')">(Hilfe)</a></small>
 
       <p>
       <input type=radio name=zoomdir value=1 [zoomdir_1_check] onclick="set_gui_browse_mode()">&nbsp;Hineinzoomen<br>
