@@ -14,6 +14,8 @@
  *
  */
 
+#include "sqrt.h"
+
 #if 0
 
  These are the results for running the program on a 486DX50 on
