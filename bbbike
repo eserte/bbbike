@@ -936,6 +936,8 @@ speicherplatzsparender.",
     label => M"Editmodus", var => \$set_mode],
    ['stderr','!',0,
     label => M"Fehlerausgabe auf stderr", var => \$stderr],
+   ['stderrwindow','!',undef,
+    label => M"STDERR in ein Fenster", var => \$stderr_window],
    ['autoinstall','!',0,
     label => M"Auto-Installation vom CPAN", var => \$auto_install_cpan],
    ['advanced','!',undef, var => \$advanced],
@@ -4477,6 +4479,11 @@ if ($advanced) {
     # minutenweise überprüfen, ob neue Module geladen wurden.
     check_new_modules();
     $top->repeat(60*1000, \&check_new_modules);
+}
+
+if ($stderr_window) {
+    require BBBikeAdvanced;
+    stderr_window_command();
 }
 
 ## DEBUG_BEGIN
