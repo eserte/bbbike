@@ -4575,6 +4575,8 @@ sub load_photos {
     $zugbruecke_photo    = load_photo($top, 'zugbruecke.' . $default_img_fmt);
     $zugbruecke_klein_photo
 	= load_photo($top, 'zugbruecke_klein.' . $default_img_fmt);
+#XXX not yet necessary:
+#    $blocked_photo       = load_photo($top, 'redcross.' . $default_img_fmt);
 }
 
 sub set_default_geometry {
@@ -8470,6 +8472,10 @@ sub plot_sperre {
 				   -tags => [$abk, $type2cat{$cat}, undef, $abk.'-'.$pos],
 				  );
 		} elsif ($cat eq StrassenNetz::BLOCKED_COMPLETE) {
+# 		    $c->createImage($xm,$ym,
+# 				    -image => $blocked_photo,
+# 				    -tags => [$abk, 'sperre2',
+# 					      $ret->[Strassen::NAME], $abk.'-'.$pos]);
 		    $c->createLine($xm-$length2, $ym-$length2,
 				   $xm+$length2, $ym+$length2,
 				   -fill => $fill2,
@@ -11935,24 +11941,28 @@ sub scale_width {
 	    }
 	}
 
-##XXX Does not work. Probably best is too put the code snippets of plot_sperre
-## into strings to be evaled, used in plot_sperre and re-used here.
-#  	if ($sperre_type =~ /^sperre1/) {
-#  	    my $new_length = get_line_length($sperre_type);
-#  	    my $old_length = get_line_length($sperre_type, $old_scale);
-#  	    if ($new_width != $old_width && $new_width > 0) {
-#  		foreach my $item ($c->find("withtag", $sperre_type)) {
-#  		    if ($c->type($item) ne 'image') {
-#  			my($x1,$y1,$x2,$y2) = $c->coords($item);
-#  			my($xm,$ym) = (int(($x2-$x1)/2+$x1), int(($y2-$y1)/2+$y1));
-#  			my $item_length = Strassen::Util::strecke([$x1,$y1],
-#  								  [$x2,$y2]);
-#  			my $f = $item_length*$new_length/$old_length;
-#  			$c->coords(map { $f*$_} ($x1,$y1,$x2,$y2));
-#  		    }
-#  		}
-#  	    }
-#  	}
+	##XXX Works, but maybe it's better to put the code snippets of
+	##plot_sperre into strings to be evaled, used in plot_sperre
+	##and re-used here.
+ 	if ($sperre_type =~ /^sperre[12]/) {
+ 	    my $new_length = get_line_length($sperre_type);
+	    my $old_length = get_line_length($sperre_type, $old_scale) * $scale/$old_scale;
+	    my $f = $new_length / $old_length;
+	    foreach my $item ($c->find("withtag", $sperre_type)) {
+		if ($c->type($item) ne 'image') {
+		    my($x1,$y1,$x2,$y2) = $c->coords($item);
+		    my($xm,$ym) = (($x2+$x1)/2, ($y2+$y1)/2);
+		    my $xd1 = $x1-$xm;
+		    my $xd2 = $x2-$xm;
+		    my $yd1 = $y1-$ym;
+		    my $yd2 = $y2-$ym;
+		    $c->coords($item,
+			       $xm+$xd1*$f, $ym+$yd1*$f,
+			       $xm+$xd2*$f, $ym+$yd2*$f,
+			      );
+ 		}
+ 	    }
+	}
     }
 
     foreach (qw(lsa-X lsa-B lsa-Zbr rest kn)) {
