@@ -149,6 +149,14 @@ push @temp_blocking,
 userdel	2 -27793,4863 -27127,5270
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1112306400,
+         'text' => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzend., zw. G.-Hauptmann-Str. u. K.-Liebknecht-Str. Kanal- und Straßenbau Vollsperrung 29.11.2004-31.03.2005 ',
+         'from' => 1101596400,
+         'data' => 'userdel	q4 25185,-3955 23463,-4466
+',
+         'type' => 'handicap'
        }
      
 );

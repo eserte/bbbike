@@ -5538,7 +5538,7 @@ EOF
 Autor: Slaven Rezic<br>
 <a href="mailto:@{[ $BBBike::EMAIL ]}">E-Mail:</a> <a href="mailto:@{[ $BBBike::EMAIL ]}">@{[ $BBBike::EMAIL ]}</a><br>
 <a href="@{[ $BBBike::HOMEPAGE ]}">Homepage:</a> <a href="@{[ $BBBike::HOMEPAGE ]}">@{[ $BBBike::HOMEPAGE ]}</a></a><br>
-Telefon: @{[ CGI::escapeHTML("+49-0172-1661969") ]}<br>
+Telefon: @{[ CGI::escapeHTML("+49-172-1661969") ]}<br>
 Donji Crna&#x10d; 81, BiH-88220 &#x160;iroki Brijeg<br>
 </center>
 <p>

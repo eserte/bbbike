@@ -1,11 +1,12 @@
 # $Id: handicap_s-orig,v 4.11 2004/12/19 12:45:01 eserte Exp eserte $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Alexanderstr.: von 2005-01-03 bis 2005-10-31 für Autos gesperrt, Radfahrer können weiterhin passieren. Teilweise Sperren zu den kreuzenden Straßen errichtet. 	q1::inwork 11134,12793 11207,12706 11323,12484 11333,12437 11351,12221
 Behrenstr./Bebelplatz: Einbahnstraße	q3::inwork; 9626,12227 9803,12243
-Wassersportallee (Grünau), Richtung Regattastraße zwischen Ammerseestraße und Regattastraße Baustelle Straße vollständig gesperrt (bis 2005-01-31)	q4::inwork; 22449,1281 22663,1441
+#XXX del: Wassersportallee (Grünau), Richtung Regattastraße zwischen Ammerseestraße und Regattastraße Baustelle Straße vollständig gesperrt (bis 2005-01-31)	q4::inwork; 22449,1281 22663,1441
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
 Wilhelmstr.: Fahrbahn vor der britischen Botschaft gesperrt, passierbar für Radfahrer (bis 2005-12-31)	q3 8851,12123 8804,12280
 Tucholskystr.: Einbahnstr., Richtung Süden gesperrt	q4::inwork; 9651,13406 9605,13248
-Prenzlauer Promenade, zw. Am Steinberg und Ostseestr. Baustelle, Sperrung stadteinwärts an Elsa-Brandström-Straße. Umleitung: Elsa-Brandström -Straße - Neumannstraße - Wisbyer Straße bis 31.05.2005	q4::inwork; 12012,16752 12046,16568 12054,16517 12097,16263 12091,16209
+Prenzlauer Promenade, zw. Am Steinberg und Ostseestr. Baustelle, Sperrung stadteinwärts an Elsa-Brandström-Straße. Umleitung: Elsa-Brandström -Straße - Neumannstraße - Wisbyer Straße bis 31.08.2005	q4::inwork; 12012,16752 12046,16568 12054,16517 12097,16263 12091,16209
 Mohrenstr.: Bauarbeiten	q4::inwork; 9173,11770 9220,11781
 #XXX wahrscheinlich bis Fertigstellung der S-Bahnhof-Verschiebung?
 Krumme Str.: Bauarbeiten	q4::inwork; 3942,11010 3827,10980

@@ -1355,4 +1355,12 @@ userdel	2 -27793,4863 -28134,4796
 userdel	2 -27793,4863 -27127,5270
 EOF
      },
+     { from  => 1101596400, # 2004-11-28 00:00
+       until => 1112306400, # 2005-04-01 00:00
+       text  => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzend., zw. G.-Hauptmann-Str. u. K.-Liebknecht-Str. Kanal- und Straßenbau Vollsperrung 29.11.2004-31.03.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 25185,-3955 23463,-4466
+EOF
+     },
     );
