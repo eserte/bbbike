@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.61 2004/01/17 20:31:05 eserte Exp $
+# $Id: bbbike.cgi,v 6.62 2004/02/16 23:07:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -607,7 +607,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.61 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.62 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -4237,12 +4237,14 @@ sub header {
 	    print "$args{-title}";
 	    print "<img alt=\"\" src=\"$bbbike_images/srtbike.gif\" hspace=10>";
 	} else {
-	    my $use_ilayer = 0;
-	    print "<ilayer left=200>" if $use_ilayer;
-	    print "<a href='$bbbike_url?begin=1' title='Zurück zur Hauptseite' style='color:black;'>$args{-title}</a>";
-	    print "</ilayer><ilayer left=175 top=5>" if $use_ilayer;
-	    print "<a href='$bbbike_url?begin=1'><img alt=\"\" src=\"$bbbike_images/srtbike.gif\" hspace=10 border=0></a>";
-	    print "</ilayer>" if $use_ilayer;
+	    my $use_css = !$bi->{'buggy_css'};
+	    print "<a href='$bbbike_url?begin=1' title='Zurück zur Hauptseite' style='text-decoration:none; color:black;'>$args{-title}";
+	    print "<img";
+	    if ($use_css) {
+		print ' style="position:relative; top:15px; left:-15px;"';
+	    }
+	    print " alt=\"\" src=\"$bbbike_images/srtbike.gif\" border=0>";
+	    print "</a>";
 	}
 	print "</h1>\n";
     } else {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.4 2004/02/16 07:43:19 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.5 2004/02/17 07:58:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.

@@ -428,6 +428,7 @@ $radwege_optimierung = 0;
 for(0..$#Radwege::category_order) {
     $radwege_speed{"RW$_"} = 100;
 }
+$radwege_speed{"RW"} = 100;
 
 %strcat_bez =
   (
@@ -4658,6 +4659,7 @@ sub define_item_attribs {
 	 'RW7' => 'green',
 	 'RW8' => '#000060',
 	 'RW9' => 'SlateBlue',
+	 'RW'  => 'SlateBlue',
 
 	 'sperre0' => 'red',	# Tragen
 	 'sperre1' => 'blue',	# Einbahnstraßen

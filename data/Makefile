@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.87 2004/02/16 01:58:56 eserte Exp $
+# $Id: Makefile,v 1.88 2004/02/16 22:25:09 eserte Exp $
 #
 
 MISCDIR=		../misc
@@ -438,8 +438,9 @@ check:	.check_strassen1 .check_strassen2 \
 	@touch .check_green
 
 # XXX against landstrassen, too?
-.check_brunnels:	brunnels strassen
-	$(CHECK_NEIGHBOUR) -type standard -data brunnels
+.check_brunnels:	brunnels strassen landstrassen landstrassen2
+	$(CHECK_NEIGHBOUR) -type standard -data brunnels \
+	    -against strassen -against landstrassen -against landstrassen2
 	@touch .check_brunnels
 
 #.PHONY: .modified

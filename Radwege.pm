@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Radwege.pm,v 1.14 2003/06/02 23:21:41 eserte Exp $
+# $Id: Radwege.pm,v 1.15 2004/02/16 23:32:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -40,6 +40,7 @@ my @category =
    "zweigegenpflicht" => ["RW8", M"Zweirichtungsradweg (Gegenrichtung, benutzungspflichtig)", M"Zweirichtungsradwege (Gegenrichtung, benutzungspflichtig)"],
    "zweigegen" => ["RW9", M"Zweirichtungsradweg (Gegenrichtung)", M"Zweirichtungsradwege (Gegenrichtung)"],
    "kein"      => ["RW0", M"kein Radweg", M"keine Radwege"],
+   "nichtkat"  => ["RW", M"Radweg (ohne Kategorisierung)", M"Radwege (ohne Kategorisierung)"],
   );
 
 undef %category_code;         # "radweg" => "RW0"

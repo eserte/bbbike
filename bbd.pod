@@ -221,6 +221,10 @@ Benutzungspflichtiger Zweirichtungsradweg, Gegenrichtung.
 
 Nicht benutzungspflichtiger Zweirichtungsradweg, Gegenrichtung.
 
+=item C<RW>
+
+Radweg vorhanden, aber nicht weiter kategorisiert.
+
 =back
 
 =head2 RAILROADS
@@ -321,7 +325,8 @@ Höchstgeschwindigkeit.
 
 =back
 
-Andere, nicht fahrbahnbezogene Handicaps. Used in files: F<handicap_s>,
+Andere, nicht fahrbahnbezogene Handicaps, zum Beispiel Behinderungen
+durch Fußgänger oder enge Kurven. Used in files: F<handicap_s>,
 F<handicap_l>.
 
 =over
