@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.28 2004/09/25 22:24:31 eserte Exp $
+# $Id: GpsmanData.pm,v 1.29 2005/01/23 12:07:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_WAYPOINT => 0;
 use constant TYPE_TRACK    => 1;
@@ -108,14 +108,18 @@ sub convert_to_route {
     $self->load($file);
 
     require Karte::Polar;
+    require Karte::Standard;
     my $obj = $Karte::Polar::obj;
+    my $to_obj = $Karte::Standard::obj = $Karte::Standard::obj; # peacify -w
 
     my @res;
 
     my $converter = _get_converter($self->PositionFormat, "DDD");
     foreach my $wpt (@{ $self->Track }) {
-	my($x,$y) = $obj->map2standard(map { $converter->($_) }
-				           $wpt->Longitude, $wpt->Latitude);
+	my($x,$y) = $to_obj->trim_accuracy
+	    ($obj->map2standard(map { $converter->($_) }
+				$wpt->Longitude, $wpt->Latitude)
+	    );
 	if (!@res || ($x != $res[-1]->[0] ||
 		      $y != $res[-1]->[1])) {
 	    push @res, [$x, $y];

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.18 2005/01/15 22:15:44 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.18 2005/01/15 22:15:44 eserte Exp eserte $
 #
 
 # should this be here?
@@ -67,6 +67,7 @@ $(MAPFILES_IMG_DIR)/reference.png: strassen landstrassen berlin deutschland orte
 	mv $@~ $@
 	perl -e '$$draw=do "$(MAPFILES_IMG_DIR)/reference.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn "Bbox is " . join(" ", map { int } $$sub->(0,0), $$sub->($(REFWIDTH)-1,$(REFHEIGHT)-1)) . "\n";'
 	chmod ugo+r $@
+	chmod ugo+r $(MAPFILES_IMG_DIR)/reference.dim
 
 $(MAPFILES_IMG_DIR)/reference-b.png: strassen landstrassen berlin potsdam orte orte_city wasserstrassen wasserumland
 	$(BBBIKEDRAW) -datadirs . \
@@ -82,6 +83,7 @@ $(MAPFILES_IMG_DIR)/reference-b.png: strassen landstrassen berlin potsdam orte o
 	mv $@~ $@
 	perl -e '$$draw=do "$(MAPFILES_IMG_DIR)/reference-b.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn "Bbox is " . join(" ", map { int } $$sub->(0,0), $$sub->($(REFWIDTH)-1,$(REFHEIGHT)-1)) . "\n";'
 	chmod ugo+r $@
+	chmod ugo+r $(MAPFILES_IMG_DIR)/reference-b.dim
 
 $(MAPFILES_IMG_DIR)/reference-inner-b.png: strassen berlin wasserstrassen sbahn ubahn flaechen orte_city
 	$(BBBIKEDRAW) -datadirs . \
@@ -95,6 +97,7 @@ $(MAPFILES_IMG_DIR)/reference-inner-b.png: strassen berlin wasserstrassen sbahn 
 	mv $@~ $@
 	perl -e '$$draw=do "$(MAPFILES_IMG_DIR)/reference-inner-b.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn "Bbox is " . join(" ", map { int } $$sub->(0,0), $$sub->($(REFWIDTH)-1,$(REFHEIGHT)-1)) . "\n";'
 	chmod ugo+r $@
+	chmod ugo+r $(MAPFILES_IMG_DIR)/reference-inner-b.dim
 
 $(MAPFILES_IMG_DIR)/reference-wide.png: strassen landstrassen landstrassen2 berlin orte orte2 wasserstrassen wasserumland wasserumland2
 	$(BBBIKEDRAW) -datadirs . \
@@ -110,6 +113,7 @@ $(MAPFILES_IMG_DIR)/reference-wide.png: strassen landstrassen landstrassen2 berl
 	mv $@~ $@
 	perl -e '$$draw=do "$(MAPFILES_IMG_DIR)/reference-wide.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn "Bbox is " . join(" ", map { int } $$sub->(0,0), $$sub->($(REFWIDTH)-1,$(REFHEIGHT)-1)) . "\n";'
 	chmod ugo+r $@
+	chmod ugo+r $(MAPFILES_IMG_DIR)/reference-wide.dim
 
 $(MAPFILES_IMG_DIR)/reference-p.png: strassen landstrassen berlin orte wasserstrassen wasserumland rbahn
 	$(BBBIKEDRAW) -datadirs . \
@@ -125,6 +129,7 @@ $(MAPFILES_IMG_DIR)/reference-p.png: strassen landstrassen berlin orte wasserstr
 	mv $@~ $@
 	perl -e '$$draw=do "$(MAPFILES_IMG_DIR)/reference-p.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn "Bbox is " . join(" ", map { int } $$sub->(0,0), $$sub->($(REFWIDTH)-1,$(REFHEIGHT)-1)) . "\n";'
 	chmod ugo+r $@
+	chmod ugo+r $(MAPFILES_IMG_DIR)/reference-p.dim
 
 $(MAPFILES_IMG_DIR)/reference.gif:	$(MAPFILES_IMG_DIR)/reference.png
 	convert $> $@
