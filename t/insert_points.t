@@ -24,7 +24,7 @@ BEGIN {
 my @insert_points = ($^X, "$FindBin::RealBin/../miscsrc/insert_points");
 my $datadir = "$FindBin::RealBin/../data";
 if (!-x $insert_points[-1]) {
-    plan tests => 0;
+    print "1..0 # skip: insert_points script not available\n";
     exit 0;
 }
 
