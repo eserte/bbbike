@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.18 2005/01/15 22:15:44 eserte Exp eserte $
+# $Id: Makefile.mapfiles,v 1.19 2005/02/15 22:31:46 eserte Exp $
 #
 
 # should this be here?
@@ -325,7 +325,7 @@ $(MAPFILES_DATA_DIR)/ampeln.shp:	ampeln
 	$(BBD2ESRI) -shapetype point -o $(MAPFILES_DATA_DIR)/ampeln ampeln
 
 $(MAPFILES_DATA_DIR)/gesperrt.shp:	gesperrt
-	$(BBD2ESRI) -onewayhack -shapetype auto \
+	$(BBD2ESRI) -onewayhack \
 	     -o $(MAPFILES_DATA_DIR)/gesperrt gesperrt
 
 # Shorten both ends of each "gesperrt" street by 30 meters
@@ -358,7 +358,7 @@ $(MAPFILES_DATA_DIR)/gesperrt30.shp:	gesperrt
          ); \
  } \
 ' > /tmp/gesperrt30
-	$(BBD2ESRI) -onewayhack -shapetype auto \
+	$(BBD2ESRI) -onewayhack \
 	     -o $(MAPFILES_DATA_DIR)/gesperrt30 /tmp/gesperrt30
 
 

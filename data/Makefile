@@ -774,11 +774,44 @@ check-disabled:	.check_label
 		.strassen.tmp landstrassen landstrassen2
 	@touch $@
 
-.check_temp_blockings:	temp_blockings/*.bbd strassen
+.check_temp_blockings:	temp_blockings/*.bbd $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd \
+			strassen landstrassen landstrassen2 faehren
 	cat temp_blockings/*.bbd > /tmp/all_temp_blockings.bbd
-	$(CHECK_NEIGHBOUR) -type standard -data /tmp/all_temp_blockings.bbd -against strassen -against landstrassen -against landstrassen2
+	cat $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd >> /tmp/all_temp_blockings.bbd
+	$(CHECK_NEIGHBOUR) -type standard -data /tmp/all_temp_blockings.bbd \
+		-against strassen -against landstrassen -against landstrassen2 \
+		-against faehren
 	rm -f /tmp/all_temp_blockings.bbd
 	@touch $@
+
+temp_blockings/bbbike-temp-blockings.yml: temp_blockings/bbbike-temp-blockings.pl
+	perl -MYAML -e '\
+	    $$YAML::UseBlock = 1;\
+	    do $$ARGV[0];\
+	    die 1 if not @temp_blocking;\
+	    YAML::DumpFile($$ARGV[1], \@temp_blocking);\
+	' $> $@
+	perl -MData::Compare -MData::Dumper -MYAML -e '\
+	    do $$ARGV[0];\
+	    $$y = YAML::LoadFile($$ARGV[1]);\
+	    die 2 if not @temp_blocking;\
+	    $$Data::Dumper::Sortkeys = 1;\
+	    die Data::Dumper->new([\@temp_blocking, $$y],[qw(a b)])->Dump \
+	        if not Compare(\@temp_blocking, $$y);\
+	' $> $@
+
+$(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blockings.yml
+	perl -MYAML -e '\
+		$$x = YAML::LoadFile($$ARGV[0]);\
+		for (@$$x) {\
+		    $$d = $$_->{data};\
+		    next if not $$d;\
+		    $$t = $$_->{text};\
+		    $$t =~ s/[\n\t]/ /g;\
+		    $$d =~ s/^/$$t /gm;\
+		    print $$d;\
+		}\
+	' $> > $@
 
 #.PHONY: .modified
 
@@ -893,13 +926,6 @@ GNUmakefile: Makefile ../miscsrc/b2gmake
 GNUmakefile.mapfiles: Makefile.mapfiles ../miscsrc/b2gmake
 	../miscsrc/b2gmake < Makefile.mapfiles > GNUmakefile.mapfiles
 	chmod ugo+r GNUmakefile.mapfiles
-
-######################################################################
-# Temporary rules
-
-temp_blockings/bbbike-temp-blockings.yml: temp_blockings/bbbike-temp-blockings.pl
-	perl -MYAML -e '$$YAML::UseBlock = 1; do $$ARGV[0]; die if not @temp_blocking; YAML::DumpFile($$ARGV[1], \@temp_blocking)' $> $@
-	perl -MData::Compare -MYAML -e 'do $$ARGV[0]; die if not @temp_blocking; die if not Compare(\@temp_blocking, YAML::LoadFile($$ARGV[1]))' $> $@
 
 ######################################################################
 

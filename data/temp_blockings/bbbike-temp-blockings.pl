@@ -592,7 +592,7 @@ EOF
        type  => 'handicap',
       data  => <<EOF,
 userdel	q4 6040,12480 5798,12021
-userdel	q4 5771,11887 5798,12021
+userdel	q4 5771,11887 5787,11966 5798,12021
 EOF
      },
      { from  => 1093125600, # 2004-08-22 00:00
@@ -722,11 +722,11 @@ EOF
 userdel	2 12180,7387 12122,7553
 userdel	2 11920,8252 11933,8198
 userdel	2 11920,8252 11892,8372
-userdel	2 12041,7788 12075,7696
+userdel	2 12041,7788 12055,7751 12075,7696
 userdel	2 11979,8014 11960,8090
-userdel	2 11979,8014 12025,7852
+userdel	2 11979,8014 11998,7948 12025,7852
 userdel	2 11933,8198 11960,8090
-userdel	2 12075,7696 12122,7553
+userdel	2 12075,7696 12090,7651 12122,7553
 EOF
      },
      { from  => 1094187600, # 2004-09-03 07:00
@@ -1095,7 +1095,7 @@ EOF
        text  => 'Lennéstr. zwischen Bellvuestr. und Eberstr. Baustelle, Straße gesperrt Richtung Ebertstr. (bis 15.11.2004) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 8489,11782 8326,11732
+userdel	2 8489,11782 8436,11766 8326,11732
 userdel	2 8326,11732 8223,11700
 EOF
      },
@@ -1160,7 +1160,7 @@ EOF
        text  => 'Volkradstr. (Friedrichsfelde) in Richtung Rummelsburger Str. ab Sewanstr. Baustelle, Fahrtrichtung gesperrt, Umleitung: Sewanstr. - Rummelsburger Str. (bis Mitte 12.2004)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 17427,10259 17621,10994
+userdel	q4; 17427,10259 17475,10442 17621,10994
 EOF
      },
      { from  => 1100991600, # 2004-11-21 00:00
@@ -1348,7 +1348,7 @@ EOF
      },
      { from  => 1105916400, # 2005-01-17 00:00
        until => 1107990000, # 2005-02-10 00:00
-       text  => 'L 86; zw. Schmergow und Ketzin Straßenbau Vollsperrung 18.01.2005-09.02.2005 ',
+       text  => 'L 86; zw. Schmergow und Ketzin Straßenbau Vollsperrung 18.01.2005-09.02.2005',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -27793,4863 -27127,5270
@@ -1392,6 +1392,18 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 22508,-102744 22382,-102254
+EOF
+     },
+     { from  => 1108249200, # 2005-02-13 00:00
+       until => 1114898400, # 2005-05-01 00:00
+       text  => 'Im Zeitraum vom 14.02.2005 bis 30.04.2005 besteht für die L 73 zwischen Langerwisch und Wildenbruch Vollsperrung auf Grund von Bauarbeiten. ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -12156,-13509 -12221,-13124
+userdel	2 -12156,-13509 -12177,-13787
+userdel	2 -12372,-12676 -12221,-13124
+userdel	2 -12372,-12676 -12459,-12120
+userdel	2 -12403,-10753 -12459,-12120
 EOF
      },
     );

@@ -167,6 +167,18 @@ push @temp_blocking,
          'data' => 'userdel	2 22508,-102744 22382,-102254
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1114898400,
+         'text' => 'Im Zeitraum vom 14.02.2005 bis 30.04.2005 besteht für die L 73 zwischen Langerwisch und Wildenbruch Vollsperrung auf Grund von Bauarbeiten. ',
+         'from' => 1108249200,
+         'data' => 'userdel	2 -12156,-13509 -12221,-13124
+userdel	2 -12156,-13509 -12177,-13787
+userdel	2 -12372,-12676 -12221,-13124
+userdel	2 -12372,-12676 -12459,-12120
+userdel	2 -12403,-10753 -12459,-12120
+',
+         'type' => 'gesperrt'
        }
      
 );
