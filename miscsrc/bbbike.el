@@ -51,20 +51,57 @@
 	    ))
       (error "No X selection"))))
 
+(defun bbbike-toggle-tabular-view ()
+  (interactive)
+  (if truncate-lines
+      (progn
+	(setq truncate-lines nil)
+	(setq tab-width 8))
+    (setq truncate-lines t)
+    (setq tab-width 72))
+  (recenter)
+  )
+
 (defvar bbbike-mode-map nil "Keymap for BBBike bbd mode.")
 (if bbbike-mode-map
     nil
   (let ((map (make-sparse-keymap)))
     (define-key map "\C-c\C-r" 'bbbike-reverse-street)
     (define-key map "\C-c\C-s" 'bbbike-search-x-selection)
+    (define-key map "\C-c\C-t" 'bbbike-toggle-tabular-view)
+    (define-key map "\C-c\C-c" 'comment-region)
     (setq bbbike-mode-map map)))
+
+(defvar bbbike-syntax-table nil "Syntax table for BBBike bbd mode.")
+(if bbbike-syntax-table
+    nil
+  (setq bbbike-syntax-table (make-syntax-table))
+  (modify-syntax-entry ?#  "<" bbbike-syntax-table)
+  (modify-syntax-entry ?\n ">" bbbike-syntax-table)
+  (modify-syntax-entry ?\" "." bbbike-syntax-table)
+  )
 
 (defun bbbike-mode ()
   (interactive)
   (use-local-map bbbike-mode-map)
   (setq mode-name "BBBike"
 	major-mode 'bbbike-mode)
+  (set-syntax-table bbbike-syntax-table)
   (run-hooks 'bbbike-mode-hook)
+  ;;; XXX (setq font-lock-keywords-only t)
+  (setq font-lock-keywords
+	'(t
+	  ("\t\\([^ ]+\\)" (1 font-lock-keyword-face))
+	  ;("\\(#:\\)"  (1 font-lock-function-name-fact)) ;;; XXX does not work
+	  ;("#.*" (0 font-lock-comment-face)) ;;; XXX does not work
+	  ("^\\([^:\t]+\\)" (1 font-lock-constant-face))
+	  ))
+  (make-local-variable 'comment-use-syntax)
+  (make-local-variable 'comment-start)
+  (make-local-variable 'comment-padding)
+  (setq comment-use-syntax nil)
+  (setq comment-start "#")
+  (setq comment-padding " ")
   )
 
 (provide 'bbbike-mode)
