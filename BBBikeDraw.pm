@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.40 2005/01/16 22:02:33 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.41 2005/02/25 01:34:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.40 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.41 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, %args) = @_;
@@ -75,7 +75,12 @@ sub new {
     if ($self->{Module}) {
 	# some king of untainting
 	(my $module = $self->{Module}) =~ s/[^A-Za-z_0-9:]+//g;
-	$require = $pkg = "BBBikeDraw::" . $self->{Module};
+	$pkg = "BBBikeDraw::" . $self->{Module};
+	if ($pkg->can("init")) {
+	    # already loaded...
+	} else {
+	    $require = $pkg;
+	}
     } elsif (defined $self->{ImageType} && $self->{ImageType} =~ /^pdf$/i) {
 	$require = $pkg = "BBBikeDraw::PDF";
     } elsif (defined $self->{ImageType} && $self->{ImageType} =~ /^svg$/i) {
@@ -418,8 +423,8 @@ sub get_color_values {
     $c{green}       = [0,255,0];
     $c{darkgreen}   = [0,128,0];
     $c{darkblue}    = [0,0,128];
-    #$c{lightblue}   = [186,213,247];
-    $c{lightblue}   = [0xa0,0xa0,0xff];
+    $c{lightblue}   = [186,213,247];
+    #$c{lightblue}   = [0xa0,0xa0,0xff];
     $c{middlegreen} = [0, 200, 0];
     $c{black}       = [0, 0, 0];
     push @c, qw(red green darkgreen darkblue lightblue middlegreen black);
@@ -438,7 +443,7 @@ sub set_category_colors {
     }
 
     local $^W; # $self->{FrontierColor}
-    eval "package $pkg;\n" . <<'EOF';
+    my $code = "package $pkg;\n" . <<'EOF';
 
     %color = (B  => $red,
 	      H  => $yellow,
@@ -457,6 +462,7 @@ sub set_category_colors {
 	      UA => $darkblue,
 	      UB => $darkblue,
 	      W  => $lightblue,
+	      W0 => $lightblue,
 	      W1 => $lightblue,
 	      W2 => $lightblue,
 	      I  => $grey_bg,
@@ -470,7 +476,8 @@ sub set_category_colors {
 	      Route => $red,
 	     );
 EOF
-    die $@ if $@;
+    eval $code;
+    die "$code: $@" if $@;
 }
 
 sub set_category_outline_colors {
@@ -483,7 +490,7 @@ sub set_category_outline_colors {
 	return;
     }
 
-    eval "package $pkg;\n" . <<'EOF';
+    my $code = "package $pkg;\n" . <<'EOF';
 
     %outline_color = (B  => $black,
 		      H  => $black,
@@ -491,6 +498,7 @@ sub set_category_outline_colors {
 		      N  => $black,
 		      NN => $black,
 		      W  => $darkblue,
+		      W0 => $darkblue,
 		      W1 => $darkblue,
 		      W2 => $darkblue,
 		     );
@@ -503,7 +511,8 @@ sub set_category_outline_colors {
 	delete $outline_color{$_} for (keys %notseen);
     }
 EOF
-    die $@ if $@;
+    eval $code;
+    die "$code: $@" if $@;
 }
 
 sub get_color {
@@ -528,7 +537,7 @@ sub set_category_widths {
 	return;
     }
 
-    eval "package $pkg;\n" . <<'EOF';
+    my $code = "package $pkg;\n" . <<'EOF';
 
     %width = (B  => 3*$m,
 	      H  => 3*$m,
@@ -547,13 +556,15 @@ sub set_category_widths {
 	      UA => 2*$m,
 	      UB => 2*$m,
 	      W  => 2*$m,
+	      W0 => 1*$m,
 	      W1 => 3*$m,
-	      W2 => 2*$m,
+	      W2 => 4*$m,
 	      Z  => 1*$m,
 	      Route => 3*$m,
 	     );
 EOF
-    die $@ if $@;
+    eval $code;
+    die "$code: $@" if $@;
 }
 
 sub set_draw_elements {
@@ -810,3 +821,7 @@ sub can_multiple_passes {
 }
 
 1;
+
+__END__
+
+# Modules based on BBBikeDraw should be named C<BBBikeDraw::I<Type>>.

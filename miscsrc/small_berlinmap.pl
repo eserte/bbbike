@@ -2,15 +2,15 @@
 # -*- perl -*-
 
 #
-# $Id: small_berlinmap.pl,v 2.14 2002/08/22 20:58:23 eserte Exp $
+# $Id: small_berlinmap.pl,v 2.15 2005/02/25 01:31:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net/
 #
 
 =head1 NAME
@@ -20,7 +20,7 @@ small_berlinmap.pl - create a small overview map of Berlin
 =head1 SYNOPSIS
 
     ./small_berlinmap.pl [-width w] [-height h] [-normbg bgcolor]
-                         [-includepotsdam] [-nogif]
+                         [-includepotsdam] [-nogif] [-v [-v ...]]
 
 =head1 DESCRIPTION
 
@@ -41,6 +41,9 @@ With -nogif only the PNG images will be created.
 
 =over 4
 
+=item FreeBSD port: graphics/ImageMagick
+
+=comment
 =item FreeBSD port: graphics/giftrans
 
 =item FreeBSD port: graphics/netpbm
@@ -57,7 +60,7 @@ results.
 
 =head1 AUTHOR
 
-Slaven Rezic <slaven.rezic@berlin.de>
+Slaven Rezic <eserte@users.sourceforge.net>
 
 =head1 COPYRIGHT
 
@@ -70,22 +73,9 @@ it under the same terms as Perl itself.
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib", "$FindBin::RealBin/../data");
 use BBBikeDraw;
+use BBBikeUtil qw(is_in_path);
 use Getopt::Long;
 use strict;
-
-##XXX was ist das?
-# use Strassen;
-#  open(BA, "$FindBin::RealBin/combine_streets.pl - < $FindBin::RealBin/../data/berlin |");
-#  open(OUT, ">/tmp/berlin_area") or die $!;
-#  while(<BA>) {
-#      my $l = Strassen::parse($_);
-#      $l->[Strassen::CAT] = "F:" . $l->[Strassen::CAT];
-#      $l->[Strassen::COORDS] = join(" ", @{ $l->[Strassen::COORDS] });
-#      print OUT Strassen::arr2line($l);
-#  }
-#  close OUT;
-#  close BA;
-# push @Strassen::datadirs, "/tmp";
 
 my $img_w = 200;
 my $img_h = 200;
@@ -94,8 +84,10 @@ my $geometry;
 my $includepotsdam;
 my $use_imagemagick;
 my $use_gif = 1;
+my $use_xpm = 1;
 my @strfiles = ('sbahn', 'ubahn', 'wasser');
 my @border;
+my $v = 0;
 
 my @orig_ARGV = @ARGV;
 if (!GetOptions("width=i" => \$img_w,
@@ -107,6 +99,8 @@ if (!GetOptions("width=i" => \$img_w,
 		"borderfiles=s" => sub { @border = split /,/, $_[1] },
 		"imagemagick!" => \$use_imagemagick,
 		"gif!" => \$use_gif,
+		"xpm!" => \$use_xpm,
+		"v+" => \$v,
 	       )) {
     die "usage!";
 }
@@ -119,7 +113,7 @@ if (defined $geometry) {
 }
 
 my %draw_args;
-my %draw2_args = (Draw => [@strfiles]);
+my %draw2_args = (Draw => [@strfiles, '!sbahnhof', '!ubahnhof']);
 if ($img_w <= 50 || $img_h <= 50) {
     $draw_args{NoScale} = 1;
     $draw2_args{Draw} = [];
@@ -139,9 +133,10 @@ for my $type ('norm', 'hi') {
     my $base = "/tmp/berlin_small" . ($type eq 'hi' ? '_hi' : '');
     my $img     = "$base.png";
     my $img_gif = "$base.gif";
+    my $img_xpm = "$base.xpm";
     my $img_dim = "$base.dim";
     open(IMG, ">$img") or die "Can't write $img: $!";
-    print STDERR "# Creating $type ...\n";
+    print STDERR "# Creating $type ...\n" if $v;
     my($w, $h) = ($img_w, $img_h);
     my $draw = new BBBikeDraw
 	Fh => \*IMG,
@@ -158,18 +153,18 @@ my \$minx = $draw->{Min_x};
 my \$maxx = $draw->{Max_x};
 my \$miny = $draw->{Min_y};
 my \$maxy = $draw->{Max_y}
-\n";
+\n" if $v >= 2;
     $draw->create_transpose(-asstring => 1);
     my $xm = ($draw->{Max_x}-$draw->{Min_x})/$w;
     my $ym = ($draw->{Max_y}-$draw->{Min_y})/$h;
-    print "my \$xm = $xm;\nmy \$ym = $ym;\n\n";
+    print "my \$xm = $xm;\nmy \$ym = $ym;\n\n" if $v >= 2;
 #    warn join(", ", $draw->{Transpose}->($draw->{Min_x}, $draw->{Min_y}))."\n";
 #    warn join(", ", $draw->{Transpose}->($draw->{Max_x}, $draw->{Max_y}))."\n";
     my($xx,$yy) = $draw->{Transpose}->($draw->{Min_x}, $draw->{Min_y});
 #    warn join(", ", $draw->{AntiTranspose}->(0, 0))."\n";
 #    warn join(", ", $draw->{AntiTranspose}->($img_w, $img_h))."\n";
-    print "my \$transpose = $draw->{TransposeCode};\n";
-    print "my \$anti_transpose = $draw->{AntiTransposeCode};\n\n";
+    print "my \$transpose = $draw->{TransposeCode};\n" if $v >= 2;
+    print "my \$anti_transpose = $draw->{AntiTransposeCode};\n\n" if $v >= 2;
 
     $draw->draw_map;
     my $gd_img = $draw->{Image};
@@ -190,7 +185,31 @@ my \$maxy = $draw->{Max_y}
 	    }
 	}
     }
+
+    {
+	package BBBikeDraw::MyGD;
+	use base qw(BBBikeDraw::GD);
+	no strict;
+	sub init {
+	    my $self = shift;
+	    # The following are just a hack ... no proper inheritance
+	    # yet possible with BBBikeDraw::*
+	    $self->{CategoryColors} = { %BBBikeDraw::GD::color };
+	    $self->{CategoryOutlineColors} = { %BBBikeDraw::GD::outline_color };
+	    $self->{CategoryWidths} = { %BBBikeDraw::GD::width };
+	    $self->SUPER::init();
+	}
+
+	sub set_category_colors {
+	    my($self, @args) = @_;
+	    $self->SUPER::set_category_colors(@args);
+	    # XXX ugly hack follows!
+	    $BBBikeDraw::GD::color{I} = $self->{Bg} =~ /white/ ? $BBBikeDraw::GD::white : $BBBikeDraw::GD::grey_bg; # XXX why ::GD:: and not ::MyGD::
+	}
+    }
+
     my $draw2 = new BBBikeDraw
+        Module => 'MyGD',
 	OldImage => $gd_img,
 	Fh => \*IMG,
         Geometry => $w."x".$h,
@@ -205,16 +224,6 @@ my \$maxy = $draw->{Max_y}
     $draw2->flush;
     close IMG;
 
-    if ($use_gif) {
-	system("pngtopnm $img | ppmtogif > $img_gif");
-
-	if (is_in_path("giftool")) {
-	    # add comment
-	    system("giftool", "-B", "+c", "created by $0 on ".scalar(localtime),
-		   $img_gif);
-	}
-    }
-
     if (open(DIM, ">$img_dim")) {
 	require Data::Dumper;
 	print DIM "# generated by $0 @orig_ARGV\n";
@@ -223,91 +232,43 @@ my \$maxy = $draw->{Max_y}
     }
 
     if ($use_gif) {
-	if ($type eq 'norm' && $normbg =~ /transparent/) {
-	    # find transparent color
-	    my $tr_color;
-	    open(GIFTR, "giftrans -L $img_gif 2>&1 |");
-	    while(<GIFTR>) {
-		if (/Color\s+(\d+):.*\#999999/) {
-		    $tr_color = $1;
-		    last;
+	system("convert", $img, $img_gif) == 0
+	    or die "Failed $img -> $img_gif conversion: $?";
+	if (0) { # XXX old code using netpbm
+	    system("pngtopnm $img | ppmtogif > $img_gif");
+
+	    if (is_in_path("giftool")) {
+		# add comment
+		system("giftool", "-B", "+c", "created by $0 on ".scalar(localtime),
+		       $img_gif);
+	    }
+
+	    if ($type eq 'norm' && $normbg =~ /transparent/) {
+		# find transparent color
+		my $tr_color;
+		open(GIFTR, "giftrans -L $img_gif 2>&1 |");
+		while (<GIFTR>) {
+		    if (/Color\s+(\d+):.*\#999999/) {
+			$tr_color = $1;
+			last;
+		    }
 		}
+		close GIFTR;
+		if (!defined $tr_color) {
+		    die "Can't find transparent color in $img_gif";
+		}
+
+		rename $img_gif, "$img_gif~";
+		system "giftrans -t $tr_color -o $img_gif $img_gif~";
+		die if $?;
 	    }
-	    close GIFTR;
-	    if (!defined $tr_color) {
-		die "Can't find transparent color in $img_gif";
-	    }
-
-	    rename $img_gif, "$img_gif~";
-	    system "giftrans -t $tr_color -o $img_gif $img_gif~";
-	    die if $?;
 	}
     }
-}
 
-# REPO BEGIN
-# REPO NAME is_in_path /home/e/eserte/src/repository 
-# REPO MD5 1b42243230d92021e6c361e37c9771d1
-
-=head2 is_in_path($prog)
-
-=for category File
-
-Return the pathname of $prog, if the program is in the PATH, or undef
-otherwise.
-
-DEPENDENCY: file_name_is_absolute
-
-=cut
-
-sub is_in_path {
-    my($prog) = @_;
-    return $prog if (file_name_is_absolute($prog) and -f $prog and -x $prog);
-    require Config;
-    my $sep = $Config::Config{'path_sep'} || ':';
-    foreach (split(/$sep/o, $ENV{PATH})) {
-	if ($^O eq 'MSWin32') {
-	    return "$_\\$prog"
-		if (-x "$_\\$prog.bat" ||
-		    -x "$_\\$prog.com" ||
-		    -x "$_\\$prog.exe");
-	} else {
-	    return "$_/$prog" if (-x "$_/$prog");
-	}
+    if ($use_xpm) {
+	system("convert", $img, $img_xpm) == 0
+	    or die "Failed $img -> $img_xpm conversion: $?";
     }
-    undef;
 }
-# REPO END
-
-# REPO BEGIN
-# REPO NAME file_name_is_absolute /home/e/eserte/src/repository 
-# REPO MD5 a77759517bc00f13c52bb91d861d07d0
-
-=head2 file_name_is_absolute($file)
-
-=for category File
-
-Return true, if supplied file name is absolute. This is only necessary
-for older perls where File::Spec is not part of the system.
-
-=cut
-
-sub file_name_is_absolute {
-    my $file = shift;
-    my $r;
-    eval {
-        require File::Spec;
-        $r = File::Spec->file_name_is_absolute($file);
-    };
-    if ($@) {
-	if ($^O eq 'MSWin32') {
-	    $r = ($file =~ m;^([a-z]:(/|\\)|\\\\|//);i);
-	} else {
-	    $r = ($file =~ m|^/|);
-	}
-    }
-    $r;
-}
-# REPO END
 
 __END__

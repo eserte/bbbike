@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GDHeavy.pm,v 1.5 2004/12/29 17:42:29 eserte Exp eserte $
+# $Id: GDHeavy.pm,v 1.6 2005/02/25 01:35:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2004 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package BBBikeDraw::GDHeavy;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 package BBBikeDraw::GD;
 use Strassen::Core;

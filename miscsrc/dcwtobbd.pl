@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: dcwtobbd.pl,v 1.2 2004/03/10 21:53:08 eserte Exp $
+# $Id: dcwtobbd.pl,v 1.3 2005/02/25 01:45:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -13,7 +13,7 @@
 # WWW:  http://bbbike.sourceforge.net/
 #
 
-# convert dcw data (ARC2 ?) to bbd
+# Convert dcw data (ARC2 ?) to bbd
 
 # Get country data from:
 #   http://www.maproom.psu.edu/dcw/

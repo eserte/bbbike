@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mps_reader.pl,v 1.3 2003/08/24 23:24:27 eserte Exp eserte $
+# $Id: mps_reader.pl,v 1.4 2005/02/25 01:52:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.

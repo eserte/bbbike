@@ -182,6 +182,32 @@ userdel	2 -12403,-10753 -12459,-12120
 userdel	2 13525,-21873 13988,-21217
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1109631600,
+         'text' => 'Späthstraße (Treptow) In beiden Richtungen zwischen A113 und Königsheideweg Störungen durch geplatzte Wasserleitung, Straße gesperrt (bis 28.02.2005) ',
+         'from' => 1109280022,
+         'data' => 'userdel	2 14705,5176 14994,5193
+userdel	2 14994,5193 15174,5463
+userdel	2 15174,5463 15373,5675
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1110754800,
+         'text' => 'L 24; (AS Pfingstberg-Gerswalde); Bereich AS Pfingstberg, Brücke A 11 Brückenabruch Vollsperrung 11.03.2005-13.03.2005 ',
+         'from' => 1110409200,
+         'data' => 'userdel	2 41292,81052 41593,80703
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1128117600,
+         'text' => 'B 179; (Berliner Str.); OL Königs Wusterhausen, zw. Schloßplatz u. Funkerberg Kanalarbeiten halbseitig gesperrt (XXX welche Richtung?); Einbahnstraße 01.03.2005-30.09.2005 ',
+         'from' => 1109545200,
+         'data' => 'userdel	q4; 25859,-11559 25640,-11357
+',
+         'type' => 'handicap'
        }
      
 );

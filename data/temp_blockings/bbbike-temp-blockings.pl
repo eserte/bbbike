@@ -1423,4 +1423,30 @@ userdel	2 13525,-21873 13014,-22300
 userdel	2 13525,-21873 13988,-21217
 EOF
      },
+     { from  => 1109280022, # 2005-02-24 22:20
+       until => 1109631600, # 2005-03-01 00:00
+       text  => 'Späthstraße (Treptow) In beiden Richtungen zwischen A113 und Königsheideweg Störungen durch geplatzte Wasserleitung, Straße gesperrt (bis 28.02.2005) ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 14705,5176 14994,5193
+userdel	2 14994,5193 15174,5463
+userdel	2 15174,5463 15373,5675
+EOF
+     },
+     { from  => 1110409200, # 2005-03-10 00:00
+       until => 1110754800, # 2005-03-14 00:00
+       text  => 'L 24; (AS Pfingstberg-Gerswalde); Bereich AS Pfingstberg, Brücke A 11 Brückenabruch Vollsperrung 11.03.2005-13.03.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 41292,81052 41593,80703
+EOF
+     },
+     { from  => 1109545200, # 2005-02-28 00:00
+       until => 1128117600, # 2005-10-01 00:00
+       text  => 'B 179; (Berliner Str.); OL Königs Wusterhausen, zw. Schloßplatz u. Funkerberg Kanalarbeiten halbseitig gesperrt (XXX welche Richtung?); Einbahnstraße 01.03.2005-30.09.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 25859,-11559 25640,-11357
+EOF
+     },
     );

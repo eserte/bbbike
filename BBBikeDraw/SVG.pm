@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SVG.pm,v 1.9 2004/01/04 11:16:33 eserte Exp $
+# $Id: SVG.pm,v 1.10 2005/02/25 01:36:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -28,7 +28,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -119,6 +119,7 @@ sub set_category_styles {
 	 UA => {'stroke' => 'rgb(0,0,128)'},
 	 UB => {'stroke' => 'rgb(0,0,128)'},
 	 W  => {'stroke' => 'rgb(128,128,255)'},
+	 W0 => {'stroke' => 'rgb(128,128,255)', 'stroke-width' => 1},
 	 W1 => {'stroke' => 'rgb(128,128,255)', 'stroke-width' => 2},
 	 W2 => {'stroke' => 'rgb(128,128,255)', 'stroke-width' => 3},
 	 'F:W'  => {'fill' => 'rgb(128,128,255)'},

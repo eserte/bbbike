@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.17 2004/08/24 21:12:42 eserte Exp $
+# $Id: LogTracker.pm,v 1.18 2005/02/25 01:55:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -32,7 +32,7 @@ use vars qw($VERSION $lastcoords
 	    $error_checks $ua $safe
             $remoteuser $remotehost $logfile $tracking $tail_pid $bbbike_cgi
 	    $last_parselog_call);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 # XXX replace all %layer, %show etc. with @layer, @show...
 use constant ROUTES => 0;
@@ -885,7 +885,8 @@ sub worst_routes_of_the_day {
     my $terminal = Tgetent Term::Cap { TERM => undef, OSPEED => 9600 };
     my $clear = $terminal->Tputs("cl");
     my $rows = 23;
-    $logfile = "$ENV{HOME}/www/log/radzeit.de-access_log";
+    # old: $logfile = "$ENV{HOME}/www/log/radzeit.de-access_log";
+    $logfile = "$ENV{HOME}/www/log/radzeit.combined_log";
     my($bw, $is_tied) = _open_any_log();
     my $today = _today();
     my $today_rx = qr{\Q$today};

@@ -1,10 +1,20 @@
 #
-# $Id: Makefile,v 1.16 2004/12/28 14:46:57 eserte Exp eserte $
+# $Id: Makefile,v 1.18 2005/02/25 01:33:45 eserte Exp $
 #
 
 # XXX needs MORE work
 
 all:	favicon.ico srtbike.ico
+
+small-berlinmap:
+	../miscsrc/small_berlinmap.pl
+	cp -f /tmp/berlin_small.png .
+	cp -f /tmp/berlin_small.gif .
+	cp -f /tmp/berlin_small.xpm .
+	cp -f /tmp/berlin_small_hi.png .
+	cp -f /tmp/berlin_small_hi.gif .
+	cp -f /tmp/berlin_small_hi.xpm .
+	chmod ogu+r berlin_small*.*
 
 favicon.ico:	/tmp/bbbike_favicon1.ppm /tmp/bbbike_favicon2.ppm
 	ppmtowinicon -andppms -output /tmp/favicon.ico~ \

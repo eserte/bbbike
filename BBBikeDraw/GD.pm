@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.42 2004/12/29 23:31:33 eserte Exp eserte $
+# $Id: GD.pm,v 1.43 2005/02/25 01:35:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.43 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -431,18 +431,21 @@ sub draw_map {
 	if ($self->{Xk} < 0.06) {
 	    $do_bahnhof = 0;
 	}
-
-	my $brush;
-	if ($points->[2] =~ /^[sr]$/) {
-	    $brush = $self->{GD_Image}->new($xw_s,$yw_s);
-	    $brush->transparent($brush->colorAllocate(255,255,255));
-	    my $col = $brush->colorAllocate($im->rgb($color{'SA'}));
-	    $brush->arc($xw_s/2,$yw_s/2,$xw_s,$yw_s,0,360,$col);
-	    $brush->fill($xw_s/2,$yw_s/2,$col);
-	    $im->setBrush($brush);
-	}
+	# Skip drawing if !ubahnhof, !sbahnhof or !rbahnhof is specified
+	next if $str_draw{"!" . $points->[1]};
 
 	if ($str_draw{$points->[0]}) {
+
+	    my $brush;
+	    if ($points->[2] =~ /^[sr]$/) {
+		$brush = $self->{GD_Image}->new($xw_s,$yw_s);
+		$brush->transparent($brush->colorAllocate(255,255,255));
+		my $col = $brush->colorAllocate($im->rgb($color{'SA'}));
+		$brush->arc($xw_s/2,$yw_s/2,$xw_s,$yw_s,0,360,$col);
+		$brush->fill($xw_s/2,$yw_s/2,$col);
+		$im->setBrush($brush);
+	    }
+
 	    my $p = ($points->[0] eq 'ort'
 		     ? $self->_get_orte
 		     : new Strassen $points->[1]);
