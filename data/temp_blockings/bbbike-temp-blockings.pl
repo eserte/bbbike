@@ -1230,4 +1230,12 @@ EOF
 userdel	2 -37026,11176 -36427,10861
 EOF
      },
+     { from  => 1101803392, # 2004-11-30 09:29
+       until => 1102978800, # 2004-12-14 00:00
+       text  => 'Emmentaler Str. (Reinickendorf) Richtung Westen zwischen Residenzstr. und Gamsbartweg Baustelle, Straße Richtung Westen gesperrt, Einbahnstraßenregelung Richtung Osten (bis 13.12.2004)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 7693,18481 7350,18262
+EOF
+     },
     );

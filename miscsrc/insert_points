@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.47 2004/11/27 12:08:24 eserte Exp $
+# $Id: insert_points,v 1.48 2004/11/30 21:21:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -776,7 +776,7 @@ sub process {
 			}
 		    } elsif ($operation eq 'delete') {
 			if ($type == T_NORMAL || $type == T_TEMPBLOCK || $type == T_TEMPBLOCKMAIN || $type == T_RADWEGE || $type == T_VORFAHRT) {
-			    s/(?:(?<=\s)|^)$map_from($|\b)//g;
+			    s/\s*$map_from\b//g;
 			    if (/^[^\t]\t\S+$/) {
 				# remove this record
 			    } else {
