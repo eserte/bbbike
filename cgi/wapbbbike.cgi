@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.4 2003/06/09 21:45:54 eserte Exp eserte $
+# $Id: wapbbbike.cgi,v 2.5 2003/07/10 00:05:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.6 2003/06/01 21:54:25 eserte Exp eserte $
+# $Id: BBBikeGlobalVars.pm,v 1.7 2003/07/09 22:55:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -174,7 +174,9 @@ use vars qw($handicap_s_optimierung %handicap_s_speed
 	    $handicap_s_net);
 
 use vars qw($radwege_optimierung $radwege_net $N_RW_optimization $N_RW_net
-	    %radwege_speed $green_optimization $green_net);
+	    %radwege_speed $green_optimization $green_net
+	    $unlit_streets_optimization $unlit_streets_net
+	   );
 use vars qw($strcat_optimierung $strcat_net %strcat_speed
 	    %strcat_bez @strcat_order);
 # XXX use curr_selection instead of inslauf_selection some day

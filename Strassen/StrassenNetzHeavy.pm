@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetzHeavy.pm,v 1.10 2003/06/28 14:30:15 eserte Exp eserte $
+# $Id: StrassenNetzHeavy.pm,v 1.12 2003/07/10 00:01:22 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -205,10 +205,10 @@ sub make_net_cat {
 	my @kreuzungen = @{$ret->[Strassen::COORDS()]};
 	last if @kreuzungen == 0;
 	my($cat_hin, $cat_rueck);
-	if ($ret->[Strassen::CAT()] =~ /^(.*);(.*)$/) {
+	if ($ret->[Strassen::CAT()] =~ /^(.*?)(?:::.*)?;(.*?)(?:::.*)?$/) {
 	    ($cat_hin, $cat_rueck) = ($1, $2);
 	} else {
-	    $cat_hin = $cat_rueck = $ret->[Strassen::CAT()];
+	    ($cat_hin) = ($cat_rueck) = $ret->[Strassen::CAT()] =~ /^(.*?)(?:::.*)?$/;
 	}
 	my $strassen_pos = $strassen->pos;
 	my $i;

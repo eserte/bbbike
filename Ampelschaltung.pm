@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Ampelschaltung.pm,v 1.6 1999/06/28 23:53:30 eserte Exp eserte $
+# $Id: Ampelschaltung.pm,v 1.7 2003/07/10 00:04:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.

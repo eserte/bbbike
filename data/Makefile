@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.81 2003/06/29 22:23:59 eserte Exp $
+# $Id: Makefile,v 1.82 2003/07/09 21:26:23 eserte Exp $
 #
 
 MISCDIR=		../misc
@@ -41,7 +41,7 @@ all:	targets check .modified .rsync_include make_misc
 targets:	${TARGETS}
 
 # Useful checks, but normally too slow for a quick build
-slow_checks:	inaccessible_strassen check-line-lengths
+slow-checks:	inaccessible_strassen check-line-lengths check-dates
 	env LC_ALL=de_DE.ISO_8859-1 sort -c Berlin.coords.data || \
 	    ( env LC_ALL=de_DE.ISO_8859-1 sort Berlin.coords.data | diff -u - Berlin.coords.data; false )
 
@@ -446,5 +446,8 @@ check-line-lengths:
 
 count-streets:
 	cut -f1 -d"	" strassen | sort -u | wc -l
+
+check-dates:
+	${MISCSRCDIR}/check_dates *-orig
 
 .include "Makefile.mapfiles"

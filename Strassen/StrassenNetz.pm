@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.24 2003/06/30 22:05:55 eserte Exp eserte $
+# $Id: StrassenNetz.pm,v 1.25 2003/07/09 22:56:24 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -321,6 +321,7 @@ struct('StrassenNetz::SearchContext' =>
 	HasRadwege => "\$",
 	HasRadwegeStrcat => "\$",
 	HasGreen => "\$",
+	HasUnlitStreets => "\$",
 	HasSteigung => "\$",
 	HasTragen => "\$",
 	Velocity => "\$",
@@ -406,6 +407,16 @@ sub build_penalty_code {
                             $pen *= $green_penalty->{$green_net->{$last_node}{$next_node}};
                         } else {
                             $pen *= $green_penalty->{"green0"};
+                        }
+
+		    }
+';
+    }
+    if ($sc->HasUnlitStreets) {
+	$penalty_code .= '
+		    if (defined $last_node) {
+                        if (exists $unlit_streets_net->{$last_node}{$next_node}) {
+                            $pen *= $unlit_streets_penalty->{$unlit_streets_net->{$last_node}{$next_node}};
                         }
 
 		    }
@@ -1125,6 +1136,7 @@ sub search {
 		    exists $args{Radwege}   ||
 		    exists $args{RadwegeStrcat} ||
 		    exists $args{Green} ||
+		    exists $args{UnlitStreets} ||
 		    exists $args{Steigung}  ||
 		    exists $args{Abbiegen}  ||
 		    exists $args{Tragen}
@@ -1141,6 +1153,7 @@ sub search {
     $sc->HasRadwege       (exists $args{Radwege});
     $sc->HasRadwegeStrcat (exists $args{RadwegeStrcat});
     $sc->HasGreen         (exists $args{Green});
+    $sc->HasUnlitStreets  (exists $args{UnlitStreets});
     $sc->HasSteigung      (exists $args{Steigung});
     $sc->HasAbbiegen      (exists $args{Abbiegen} and exists $args{Ampeln});
     $sc->HasTragen        (exists $args{Tragen} and exists $args{Velocity});
@@ -1189,6 +1202,11 @@ sub search {
     if (exists $args{Green}) {
 	$green_net = $args{Green}->{Net}->{Net};
 	$green_penalty = $args{Green}->{Penalty} || die "No penalty";
+    }
+    my($unlit_streets_net, $unlit_streets_penalty);
+    if (exists $args{UnlitStreets}) {
+	$unlit_streets_net = $args{UnlitStreets}->{Net}->{Net};
+	$unlit_streets_penalty = $args{UnlitStreets}->{Penalty} || die "No penalty";
     }
     my($steigung_net, $steigung_penalty, $steigung_penalty_sub);
     if (exists $args{Steigung}) {

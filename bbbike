@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.106 2003/06/28 14:27:26 eserte Exp eserte $
+# $Id: bbbike,v 3.107 2003/07/09 22:55:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -209,7 +209,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.106 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.107 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -765,6 +765,8 @@ eval { local $SIG{'__DIE__'};
    ['N_RW_optimization', '!', 0, var => \$N_RW_optimization, nogui => 1],
    ['greenoptimierung', '!', 0, var => \$green_optimization,
     label => M"Grüne Wege bevorzugen"],
+   ['unbeleuchtetoptimierung', '!', 0, var => \$unlit_streets_optimization,
+    label => M"Unbeleuchtete Straßen meiden"],
    ['steigungoptimierung', '!', 0, var => \$steigung_optimierung,
     label => M"Steigungsoptimierung"],
    ['handicapoptimierung','!',0,
@@ -2219,6 +2221,7 @@ sub do_iconframe {
 			-variable => \$str_draw{'hs'},
 			-command => sub { plot('str','hs') },
 		       );
+    my $handicap_check_index = $strcm->index('last');
     $strcm->checkbutton(-label => M"Unbeleuchtete Straßen",
 			-variable => \$str_draw{'nl'},
 			-command => sub { plot('str','nl') },
@@ -2303,6 +2306,7 @@ sub do_iconframe {
 			 -variable => \$str_draw{'hl'},
 			 -command => sub { plot('str','hl') },
 			);
+    my $handicap_l_check_index = $lstrcm->index('last');
     menu_entry_up_down($lstrcm, $tag_group{'str_l'});
     menuright($landstrasse_check, $lstrcm);
     menuarrow($lstrcmb, $lstrcm, $col++, -special => 'LAYER');
@@ -3142,6 +3146,9 @@ sub do_iconframe {
 		      );
     $sb2m->checkbutton(-label => M"Grüne Wege bevorzugen",
 		       -variable => \$green_optimization,
+		      );
+    $sb2m->checkbutton(-label => M"Unbeleuchtete Straßen meiden",
+		       -variable => \$unlit_streets_optimization,
 		      );
     $sb2m->checkbutton(-label => M"Steigungsoptimierung",
 		      -variable => \$steigung_optimierung,
@@ -4038,6 +4045,17 @@ sub do_iconframe {
 		   }
 		   if ($str_draw{'s'} || $str_draw{'qs'} || !$str_draw{'l'}) {
 		       $strcm->invoke($qualitaet_check_index);
+		   }
+	       });
+    $top->bind("<H>" => sub {
+		   # XXX hmmm... nicht gerade ideal. Beispiel: Landstraßen
+		   # sind aktiv, H, Straßen werden aktiv gemacht, H
+		   # togglet jetzt genau entgegengesetzt...
+		   if ($str_draw{'l'} || $str_draw{'hl'}) {
+		       $lstrcm->invoke($handicap_l_check_index);
+		   }
+		   if ($str_draw{'s'} || $str_draw{'hs'} || !$str_draw{'l'}) {
+		       $strcm->invoke($handicap_check_index);
 		   }
 	       });
     $top->bind("<question>" => sub {
@@ -12435,6 +12453,19 @@ sub search_route {
 			  };
 	    $extra_args{Green} =
 		{Net => $green_net,
+		 Penalty => $penalty,
+		};
+	}
+
+	if ($unlit_streets_optimization) {
+	    if (!$unlit_streets_net) {
+		$unlit_streets_net = new StrassenNetz(Strassen->new("nolighting"));
+		$unlit_streets_net->make_net_cat;
+	    }
+	    my $penalty = { "NL" => 4,
+			  };
+	    $extra_args{UnlitStreets} =
+		{Net => $unlit_streets_net,
 		 Penalty => $penalty,
 		};
 	}

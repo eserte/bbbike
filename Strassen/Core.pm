@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.21 2003/06/08 21:19:38 eserte Exp $
+# $Id: Core.pm,v 1.22 2003/07/09 21:07:59 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -63,6 +63,9 @@ sub AUTOLOAD {
     }
 }
 
+# Arguments:
+#   NoRead
+#   PreserveLineInfo
 sub new {
     my($class, $filename, %arg) = @_;
 
@@ -128,7 +131,7 @@ sub new {
 	    Carp::confess("Can't open ", join(", ", @filenames));
 	}
 	unless ($arg{NoRead}) {
-	    $self->read_data;
+	    $self->read_data(PreserveLineInfo => $arg{PreserveLineInfo});
 	}
     }
 
@@ -138,7 +141,7 @@ sub new {
 }
 
 sub read_data {
-    my($self) = @_;
+    my($self, %args) = @_;
     my $file = $self->{File};
     if ($self->{IsGzipped}) {
 	die "Can't execute zcat $file" if !open(FILE, "gzip -dc $file |");
@@ -148,10 +151,17 @@ sub read_data {
     $self->{Modtime} = (stat($file))[STAT_MODTIME];
     binmode FILE;
     my @data;
-    my $line;
-    while (defined($line = <FILE>)) {
-	next if $line =~ /^\#/ || $line =~ /^\s*$/;
-	push @data, $line;
+    if ($args{PreserveLineInfo}) {
+	while (<FILE>) {
+	    next if m{^(\#|\s*$)};
+	    push @data, $_;
+	    $self->{LineInfo}[$#data] = $.;
+	}
+    } else {
+	while (<FILE>) {
+	    next if m{^(\#|\s*$)};
+	    push @data, $_;
+        }
     }
     close FILE;
     $self->{Data}  = \@data;
@@ -476,6 +486,11 @@ sub count {
 
 # gibt die aktuelle Position zurück
 sub pos { shift->{Pos} }
+
+sub line {
+    my $self = shift;
+    $self->{LineInfo}[$self->{Pos}];
+}
 
 # Accessor for Data (but it's OK to use {Data})
 sub data { shift->{Data} }
