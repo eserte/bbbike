@@ -73,6 +73,33 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 	$self->FontsList("fonts-radzeit.list");
 	$self;
     }
+
+    sub bbbike_cgi_conf {
+	my $self = shift->new;
+	# guess position of bbbike.cgi.config
+	require File::Basename;
+	require File::Spec;
+	my $bbbike_dir = File::Spec->rel2abs(File::Basename::dirname(File::Basename::dirname($INC{"BBBikeDraw/MapServer.pm"})));
+	my $bbbike_cgi_conf_path = File::Spec->catfile($bbbike_dir, "cgi", "bbbike.cgi.config");
+	if (!-r $bbbike_cgi_conf_path) {
+	    die "$bbbike_cgi_conf_path is not existent or readable";
+	}
+	require BBBikeMapserver;
+	my $ms = BBBikeMapserver->new;
+	$ms->read_config($bbbike_cgi_conf_path);
+	$self->BbbikeDir("$bbbike_dir");
+	$self->MapserverMapDir($ms->{MAPSERVER_DIR});
+	if (!defined $ms->{MAPSERVER_BIN_DIR}) {
+	    die "Please define \$mapserver_bin_dir in $bbbike_cgi_conf_path";
+	}
+	$self->MapserverBinDir($ms->{MAPSERVER_BIN_DIR});
+	$self->MapserverRelurl($ms->{MAPSERVER_PROG_RELURL});
+	$self->MapserverUrl($ms->{MAPSERVER_PROG_URL});
+	$self->TemplateMap("brb.map-tpl");
+	$self->ImageSuffix("png"); # XXX maybe check
+	$self->FontsList("fonts-radzeit.list"); # XXX do not hardcode
+	$self;
+    }
 }
 
 {
@@ -122,7 +149,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 	    } elsif ($ENV{SERVER_NAME} =~ /radzeit\.de$/) {
 		$conf = BBBikeDraw::MapServer::Conf->radzeit_default;
 	    } else {
-		die "No configuration supplied --- set self->{Image}->Conf";
+		$conf = BBBikeDraw::MapServer::Conf->bbbike_cgi_conf;
 	    }
 	}
 	my($mapfh, $mapfile) = tempfile(UNLINK => 1,
