@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.144 2004/08/21 23:09:15 eserte Exp eserte $
+# $Id: bbbike,v 3.145 2004/09/05 11:19:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -212,7 +212,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.144 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.145 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -11049,14 +11049,62 @@ sub show_info {
 	$info_text->insert("end", "\nBBBike:\t$sx,$sy");
 	$info_text->insert("end", "\n\n");
 
+	# Mapserver XXX move to function for creating URL
 	my @mapserver_def = ([$BBBike::BBBIKE_MAPSERVER_ADDRESS_URL,
 			      "Mapserver"]);
 	if ($devel_host) {
 	    push @mapserver_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/mapserver_address.cgi" : "http://www/~eserte/bbbike/cgi/mapserver_address.cgi", "Lokaler Mapserver"];
 	}
+
+	my @mapext = $c->get_corners;
+	@mapext[0,1] = map { int } anti_transpose(@mapext[0,1]);
+	@mapext[2,3] = map { int } anti_transpose(@mapext[2,3]);
+
+	my @layers;
+	# XXX move mapping or this function to a config-like module
+	my @str_draw_mapping = ([w => "gewaesser"],
+				[f => "flaechen"],
+				[[qw(g gP gD)] => "grenzen"],
+				[[qw(u b r)] => "bahn"],
+				[[qw(qs ql)] => "qualitaet"],
+				[[qw(hs hl)] => "handicap"],
+				[rw => "radwege"],
+				[e => "faehren"],
+				[fz => "fragezeichen"],
+				[v => "sehenswuerdigkeit"],
+			       );
+	my @p_draw_mapping   = ([o => "orte"],
+				[lsa => "ampeln"],
+				[obst => "obst"],
+				[sperre => "blocked"],
+			       );
+	for my $type (qw(str p)) {
+	    my $mapping = $type eq 'str' ? \@str_draw_mapping : \@p_draw_mapping;
+	    my $draw    = $type eq 'str' ? \%str_draw         : \%p_draw;
+	    for my $check (@$mapping) {
+		my($abk, $ms_layer) = @$check;
+		my $doit;
+		if (ref $abk eq 'ARRAY') {
+		    for (@$abk) {
+			if ($draw->{$_}) {
+			    $doit = 1;
+			    last;
+			}
+		    }
+		} elsif ($draw->{$abk}) {
+		    $doit = 1;
+		}
+		if ($doit) {
+		    push @layers, $ms_layer;
+		}
+	    }
+	}
+
 	for my $def (@mapserver_def) {
 	    my $mapserver_url = $def->[0];
 	    my $url = "$mapserver_url?coords=" . join(",", anti_transpose($coords[0], $coords[1]));
+	    $url .= ";mapext=" . join("+",@mapext);
+	    $url .= ";" . join(";", map { "layer=$_" } @layers);
 	    $info_text->insert("end", $def->[1], "link$linkcount");
 	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");

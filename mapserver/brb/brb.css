@@ -6,3 +6,4 @@
 .smb2 { font-size:x-small; } /* does not work with NS6.0: padding-left:5px; padding-right:5px; } */
 .hfb { width:100%; }
 .lyrchk { font-size:small; }
+.msg { color:#800000; font-weight:bold; border:#800000 solid 2px; padding:3px; margin:3px 3px 10px 3px; }

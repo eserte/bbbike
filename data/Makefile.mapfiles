@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.14 2004/08/19 22:10:08 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.14 2004/08/19 22:10:08 eserte Exp eserte $
 #
 
 # should this be here?
@@ -19,7 +19,7 @@ MAPSERVER_BIN_DIR?=	/usr/local/src/work/mapserver
 SHPTREE=		${MAPSERVER_BIN_DIR}/shptree
 
 mapfiles:	mapfiles-prepare mapfiles-convert mapfiles-shptree \
-		mapfiles-permissions mapfiles-reference
+		mapfiles-permissions mapfiles-reference-maps
 
 mapfiles-prepare:
 	[ ! -d $(MAPFILES_ROOT_DIR) ] && mkdir $(MAPFILES_ROOT_DIR) || true
@@ -33,17 +33,17 @@ mapfiles-permissions:
 	chmod o+rx $(MAPFILES_DATA_DIR)
 	chmod o+r $(MAPFILES_DATA_DIR)/*
 
-# These may be added to mapfiles-reference, if needed:
+# These may be added to mapfiles-reference-maps, if needed:
 #			$(MAPFILES_IMG_DIR)/reference.xpm
 #			$(MAPFILES_IMG_DIR)/reference-b.xpm
 #			$(MAPFILES_IMG_DIR)/reference-wide.xpm
 
-mapfiles-reference:	$(MAPFILES_IMG_DIR)/reference.png \
-			$(MAPFILES_IMG_DIR)/reference-b.png \
-			$(MAPFILES_IMG_DIR)/reference-wide.png \
-			$(MAPFILES_IMG_DIR)/reference.gif \
-			$(MAPFILES_IMG_DIR)/reference-b.gif \
-			$(MAPFILES_IMG_DIR)/reference-wide.gif
+mapfiles-reference-maps:	$(MAPFILES_IMG_DIR)/reference.png \
+				$(MAPFILES_IMG_DIR)/reference-b.png \
+				$(MAPFILES_IMG_DIR)/reference-wide.png \
+				$(MAPFILES_IMG_DIR)/reference.gif \
+				$(MAPFILES_IMG_DIR)/reference-b.gif \
+				$(MAPFILES_IMG_DIR)/reference-wide.gif
 $(MAPFILES_IMG_DIR)/reference.png: strassen landstrassen berlin deutschland orte orte2 wasserstrassen wasserumland wasserumland2
 	$(BBBIKEDRAW) -datadirs . \
 	    -outtype png \

@@ -68,25 +68,25 @@ END
 # Start of reference map
 #
 ### BEGIN REFMAP REGION
-REFERENCE
-  IMAGE "[% MAPSERVER_DIR %]/graphics/reference.[% IMAGE_SUFFIX %]"
-  EXTENT -80800 -95855 107255 92200
-  SIZE 200 200
-  STATUS ON
-  COLOR -1 -1 -1
-  OUTLINECOLOR [% REFMAPCOLOR %]
-END
-### END REFMAP REGION
-
-### BEGIN REFMAP CITY
 #REFERENCE
-#  IMAGE "[% MAPSERVER_DIR %]/graphics/reference-b.[% IMAGE_SUFFIX %]"
-#  EXTENT -15700 -14985 37034 37749
+#  IMAGE "[% MAPSERVER_DIR %]/graphics/reference.[% IMAGE_SUFFIX %]"
+#  EXTENT -80800 -95855 107255 92200
 #  SIZE 200 200
 #  STATUS ON
 #  COLOR -1 -1 -1
 #  OUTLINECOLOR [% REFMAPCOLOR %]
 #END
+### END REFMAP REGION
+
+### BEGIN REFMAP CITY
+REFERENCE
+  IMAGE "[% MAPSERVER_DIR %]/graphics/reference-b.[% IMAGE_SUFFIX %]"
+  EXTENT -15700 -14985 37034 37749
+  SIZE 200 200
+  STATUS ON
+  COLOR -1 -1 -1
+  OUTLINECOLOR [% REFMAPCOLOR %]
+END
 ### END REFMAP CITY
 
 ### BEGIN REFMAP WIDEREGION
@@ -392,7 +392,7 @@ LAYER
     [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_W size=1 minscale=20000 maxscale=undef -%]
+[% PROCESS CLASS_W size=1 minscale=20000 maxscale=400000 -%]
 [% PROCESS CLASS_W size=2 minscale=10000 maxscale=20000 -%]
 [% PROCESS CLASS_W size=4 minscale=undef maxscale=10000 -%]
 
@@ -416,9 +416,10 @@ LAYER
     [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_W1 size=3 minscale=20000 maxscale=undef -%]
-[% PROCESS CLASS_W1 size=5 minscale=10000 maxscale=20000 -%]
-[% PROCESS CLASS_W1 size=7 minscale=undef maxscale=10000 -%]
+[% PROCESS CLASS_W1 size=2 minscale=200000 maxscale=1000000 -%]
+[% PROCESS CLASS_W1 size=3 minscale=20000  maxscale=200000 -%]
+[% PROCESS CLASS_W1 size=5 minscale=10000  maxscale=20000 -%]
+[% PROCESS CLASS_W1 size=7 minscale=undef  maxscale=10000 -%]
 
 [% BLOCK CLASS_W2 -%]
   CLASS
@@ -440,9 +441,10 @@ LAYER
     [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_W2 size=6 minscale=20000 maxscale=undef -%]
-[% PROCESS CLASS_W2 size=9 minscale=10000 maxscale=20000 -%]
-[% PROCESS CLASS_W2 size=12 minscale=undef maxscale=10000 -%]
+[% PROCESS CLASS_W2 size=2  minscale=1000000 maxscale=undef   -%]
+[% PROCESS CLASS_W2 size=6  minscale=20000   maxscale=1000000 -%]
+[% PROCESS CLASS_W2 size=9  minscale=10000   maxscale=20000   -%]
+[% PROCESS CLASS_W2 size=12 minscale=undef   maxscale=10000   -%]
 
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -537,7 +539,7 @@ LAYER
   CLASSITEM 'CAT'
   CLASS
     EXPRESSION "F:Pabove" 
-    NAME "Park, Wald"
+#    NAME "Park, Wald"
     COLOR 0 225 0
   END
   TEMPLATE "query.html"
@@ -904,7 +906,9 @@ LAYER
 [% BLOCK CLASS_N -%]
   CLASS
     EXPRESSION 'NN'
+[% IF legend -%]
     NAME "Nebenstraﬂe, f¸r Kfz gesperrt"
+[% END -%]
     LABEL
 #      MINFEATURESIZE 200
       MINFEATURESIZE AUTO
@@ -925,7 +929,9 @@ LAYER
   END
   CLASS
     EXPRESSION 'N'
+[% IF legend -%]
     NAME "Nebenstraﬂe"
+[% END -%]
     LABEL
 #      MINFEATURESIZE 200
       MINFEATURESIZE AUTO
@@ -945,14 +951,16 @@ LAYER
     [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_N size=3 minscale=20000 maxscale=1000000 -%]
-[% PROCESS CLASS_N size=4 minscale=10000 maxscale=20000 -%]
-[% PROCESS CLASS_N size=5 minscale=undef maxscale=10000 -%]
+[% PROCESS CLASS_N size=3 minscale=20000 maxscale=1000000 legend=0 -%]
+[% PROCESS CLASS_N size=4 minscale=10000 maxscale=20000   legend=0 -%]
+[% PROCESS CLASS_N size=5 minscale=undef maxscale=10000   legend=1 -%]
 
 [% BLOCK CLASS_H -%]
   CLASS
     EXPRESSION 'H'
+[% IF legend -%]
     NAME "Hauptstraﬂe"
+[% END -%]
     LABEL
 #      MINFEATURESIZE 200
       MINFEATURESIZE AUTO
@@ -973,7 +981,9 @@ LAYER
   END
   CLASS
     EXPRESSION 'HH'
+[% IF legend -%]
     NAME "Wichtige Hauptstraﬂe"
+[% END -%]
     LABEL
       MINFEATURESIZE 40
       MINDISTANCE 50
@@ -992,14 +1002,16 @@ LAYER
     [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_H size=4 minscale=20000 maxscale=1000000 -%]
-[% PROCESS CLASS_H size=5 minscale=10000 maxscale=20000 -%]
-[% PROCESS CLASS_H size=6 minscale=undef maxscale=10000 -%]
+[% PROCESS CLASS_H size=4 minscale=20000 maxscale=1000000 legend=0 -%]
+[% PROCESS CLASS_H size=5 minscale=10000 maxscale=20000   legend=0 -%]
+[% PROCESS CLASS_H size=6 minscale=undef maxscale=10000   legend=1 -%]
 
 [% BLOCK CLASS_B -%]
   CLASS
     EXPRESSION 'B'
+[% IF legend -%]
     NAME "Bundesstraﬂe"
+[% END -%]
     LABEL
       MINFEATURESIZE 40
       MINDISTANCE 50
@@ -1018,11 +1030,11 @@ LAYER
     [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_B size=2 minscale=1000000 maxscale=undef   -%]
-[% PROCESS CLASS_B size=3 minscale=500000  maxscale=1000000 -%]
-[% PROCESS CLASS_B size=4 minscale=20000   maxscale=500000  -%]
-[% PROCESS CLASS_B size=5 minscale=10000   maxscale=20000   -%]
-[% PROCESS CLASS_B size=6 minscale=undef   maxscale=10000   -%]
+[% PROCESS CLASS_B size=2 minscale=1000000 maxscale=undef   legend=0 -%]
+[% PROCESS CLASS_B size=3 minscale=500000  maxscale=1000000 legend=0 -%]
+[% PROCESS CLASS_B size=4 minscale=20000   maxscale=500000  legend=0 -%]
+[% PROCESS CLASS_B size=5 minscale=10000   maxscale=20000   legend=0 -%]
+[% PROCESS CLASS_B size=6 minscale=undef   maxscale=10000   legend=1 -%]
 
   CLASS # should not happen
     EXPRESSION /./ 
@@ -1446,14 +1458,14 @@ LAYER
     NAME "Fragezeichen"
     SYMBOL 'raute'
     SIZE 4
-    COLOR 255 0 255
+    COLOR 159 0 0
     LABEL
       MINFEATURESIZE 20
       MINDISTANCE 100
       POSITION CC
       TYPE truetype
       FONT "lucida"
-      SIZE 10
+      SIZE 11
       COLOR 180 0 0
       OUTLINECOLOR 225 225 225
     END

@@ -123,7 +123,6 @@ LOCAL_URL=	http://localhost:8080/bbbike
 LOCAL_CGI_URL=	http://localhost:8080/bbbike/cgi
 LOCAL_HTML_URL=	http://localhost:8080/bbbike
 DATA_DIR=	data
-NO_BERLINER_STADTPLAN=	yes
 .endif
 
 .include "${BBBIKE_ROOT_DIR}/mapserver/brb/Makefile.${TARGET}.inc"
@@ -231,7 +230,7 @@ prepare-bbbike-dist-prog-bbbike:
 	    ${MAKE} newstreetform.html CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin
 
 prepare-bbbike-dist-prog-stadtplan:
-	[ "${NO_BERLINER_STADTPLAN}" = "yes" ] && true || (cp -pf ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com/lib/BBBikeDraw/BerlinerStadtplan.pm ${CURDIR}/BBBike/BBBikeDraw/)
+	[ ! -e ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com ] && echo Skip berliner-stadtplan.com deployment || (cp -pf ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com/lib/BBBikeDraw/BerlinerStadtplan.pm ${CURDIR}/BBBike/BBBikeDraw/)
 
 prepare-bbbike-dist-data:	prepare-bbbike-dist-data-datadir \
 				prepare-bbbike-dist-data-temp-blockings-dir \

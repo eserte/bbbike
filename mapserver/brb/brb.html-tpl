@@ -1,5 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <!-- -*-html-*- -->
 [% EDITWARNHTML %]
+[% SET style="new" -%]
 <html>
 <head><title>Berlin/Brandenburg - BBBike - Mapserver</title>
 <base href="[% MAPSERVER_URL %]/brb.html">
@@ -8,6 +9,10 @@
 <script type="text/javascript" src="brb.js"></script>
 </head>
 <body bgcolor=#FFFFFF onload="init()">
+
+<noscript>
+<div class="msg">BBBike/Mapserver benötigt Javascript für den vollständigen Funktionsumfang. Ohne Javascript funktioniert beispielsweise das Zoomen, Suchen und die Detailanzeige nicht.</div>
+</noscript>
 
 <form name="map" target="_self" method=GET
       action="[% IF SMALLDEVICE %][% BBBIKE_CGI_RELURL %]/mapserver_setcoord.cgi[% ELSE %][program][% END %]"
@@ -60,7 +65,7 @@
         <td>&nbsp;</td>
         <td>
          <input type="hidden" name="map" value="[map]">
-          Andere Referenzkarte:<br>
+          Andere Übersichtskarte:<br>
           <input class="hfb" type="button" onclick="return change_map('brb-b.map')" value="Berlin"><br>
           <input class="hfb" type="button" onclick="return change_map('brb.map')" value="Brandenburg"><br>
           <input class="hfb" type="button" onclick="return change_map('brb-wide.map')" value="Nordostdeutschland"><br>
@@ -97,13 +102,34 @@
       </div>
 
       <p>
+      <b>Bei Klick in die Karte:</b><br>
+[% IF style == "new" %]
+      <input type="hidden" name="mode" />
+      <input type="hidden" name="zoomdir" />
+      <input type="radio" name="mode_or_zoomdir" value="0" [zoomdir_0_check] onclick="change_mode_or_zoomdir()">&nbsp;Karte bewegen
+        <small><a href="help.html#query" onclick="return help('move')">(Hilfe)</a></small>
+	<br>
+      <input type="radio" name="mode_or_zoomdir" value="1" [zoomdir_1_check] onclick="change_mode_or_zoomdir()">&nbsp;Hineinzoomen
+        <small><a href="help.html#query" onclick="return help('zoomin')">(Hilfe)</a></small>
+	<br>
+      <input type="radio" name="mode_or_zoomdir" value="-1" [zoomdir_-1_check] onclick="change_mode_or_zoomdir()">&nbsp;Herauszoomen
+        <small><a href="help.html#query" onclick="return help('zoomout')">(Hilfe)</a></small>
+	<br>
+      <input type="radio" name="mode_or_zoomdir" value="nquery" onclick="change_mode_or_zoomdir()">&nbsp;Details anzeigen
+        <small><a href="help.html#query" onclick="return help('query')">(Hilfe)</a></small>
+	<br>
+      <input type="radio" name="mode_or_zoomdir" value="searchroute" onclick="change_mode_or_zoomdir()"> Start/Zielpunkt setzen <small>(experimentell! - <a href="help.html#search" onclick="return help('query')">Hilfe</a>)</small>
+      <p>
+
+[% ELSE %]
       <input type="radio" name="mode" value="browse" onclick="toggled_searchroute_mode();" checked> <b>Karte zoomen/bewegen</b> <small><a href="help.html#browse" onclick="return help('browse')">(Hilfe)</a></small><br>
      <input type="radio" name="mode" value="nquery" onclick="toggled_searchroute_mode();"> <b>Merkmale anzeigen</b> <small><a href="help.html#query" onclick="return help('query')">(Hilfe)</a></small>
-
       <p>
       <input type=radio name=zoomdir value=1 [zoomdir_1_check] onclick="set_gui_browse_mode()">&nbsp;Hineinzoomen<br>
       <input type=radio name=zoomdir value=0 [zoomdir_0_check] onclick="set_gui_browse_mode()">&nbsp;Bewegen<br> 
       <input type=radio name=zoomdir value=-1 [zoomdir_-1_check] onclick="set_gui_browse_mode()">&nbsp;Herauszoomen
+[% END %]
+
       <p>
       Zoomstufe <input type=text name=zoomsize size=4 value=[zoomsize]> <small><a href="help.html#zoomin" onclick="return help('zoomin')">(Hilfe)</a></small>
       <p>
@@ -116,8 +142,9 @@
 -->
       <center><input type="submit" value="Neu zeichnen" onclick="adjust_for_redraw()"></center>
 
-
+[% IF style != "new" %]
 <input type="radio" name="mode" value="searchroute" onclick="toggled_searchroute_mode();"> Start/Zielpunkt setzen <small>(experimentell! - <a href="help.html#search" onclick="return help('query')">Hilfe</a>)</small>
+[% END %]
 
       <h3>Legende</h3>
       <img title="" alt="legend" src="[legend]">

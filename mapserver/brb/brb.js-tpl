@@ -1,6 +1,7 @@
 /* -*- java -*- */
 /* (c) 2002, 2003 Slaven Rezic */
 [% EDITWARNJS %]
+[% SET style="new" -%]
 
 var force_mode = "";
 var orig_action = "";
@@ -10,13 +11,14 @@ function redirect_form(frm) {
     if (force_mode != "") {
 	mode = force_mode;
     } else {
-	for(var i = 0; i < frm.mode.length; i++) {
-	    if (frm.mode[i].checked) {
-		if (frm.mode[i].value == "nquery") {
-		    mode = "nquery";
-		}
-	    }
-	}
+	mode = get_mode();
+// 	for(var i = 0; i < frm.mode.length; i++) {
+// 	    if (frm.mode[i].checked) {
+// 		if (frm.mode[i].value == "nquery") {
+// 		    mode = "nquery";
+// 		}
+// 	    }
+// 	}
     }
     if (mode == "nquery") {
 	var w = window.open("","queryresult",'toolbar=no,width=350,height=350,resizable=yes,scrollbars=yes');
@@ -36,31 +38,65 @@ function force_browse_move_mode() {
 }
 
 function set_gui_browse_mode() {
+    set_mode("browse", null);
+//     var frm = document.forms.map;
+//     for(var i = 0; i < frm.mode.length; i++) {
+// 	if (frm.mode[i].value == "browse") {
+// 	    frm.mode[i].checked = true;
+// 	    break;
+// 	}
+//     }
+    toggled_searchroute_mode();
+}
+
+function change_mode_or_zoomdir() {
     var frm = document.forms.map;
-    for(var i = 0; i < frm.mode.length; i++) {
-	if (frm.mode[i].value == "browse") {
-	    frm.mode[i].checked = true;
-	    break;
+    var mode_or_zoomdir;
+    for(var i = 0; i < frm.mode_or_zoomdir.length; i++) {
+	if (frm.mode_or_zoomdir[i].checked) {
+	    mode_or_zoomdir = frm.mode_or_zoomdir[i].value;
 	}
     }
-    toggled_searchroute_mode();
+    if (mode_or_zoomdir == "nquery" || mode_or_zoomdir == "searchroute") {
+	set_mode(mode_or_zoomdir, 0);
+	toggled_searchroute_mode();
+    } else {
+	set_mode("browse", mode_or_zoomdir);
+	set_gui_browse_mode();
+    }
+}
+
+function get_mode() {
+    var frm = document.forms.map;
+[% IF style == "new" %]
+    return frm.mode.value;
+[% ELSE %]
+    for(var i = 0; i < frm.mode.length; i++) {
+	if (frm.mode[i].checked) {
+	    return frm.mode[i].value;
+	}
+    }
+[% END %]
+}
+
+function get_zoomdir() {
+    var frm = document.forms.map;
+[% IF style == "new" %]
+    return frm.zoomdir.value;
+[% ELSE %]
+    for(var i = 0; i < frm.zoomdir.length; i++) {
+	if (frm.zoomdir[i].checked) {
+	    return frm.zoomdir[i].value;
+	}
+    }
+[% END %]
 }
 
 function set_mode(mode,zoomdir) {
     var frm = document.forms.map;
     // Set orig fields first
-    for(var i = 0; i < frm.mode.length; i++) {
-	if (frm.mode[i].checked) {
-	    frm.orig_mode.value = frm.mode[i].value;
-	    break;
-	}
-    }
-    for(var i = 0; i < frm.zoomdir.length; i++) {
-	if (frm.zoomdir[i].checked) {
-	    frm.orig_zoomdir.value = frm.zoomdir[i].value;
-	    break;
-	}
-    }
+    frm.orig_mode.value    = get_mode();
+    frm.orig_zoomdir.value = get_zoomdir();
 
     set_mode_no_orig_change(mode,zoomdir);
 }
@@ -68,24 +104,46 @@ function set_mode(mode,zoomdir) {
 function set_mode_no_orig_change(mode,zoomdir) {
     var frm = document.forms.map;
     if (mode != null) {
-	for(var i = 0; i < frm.mode.length; i++) {
+[% IF style == "new" %]
+        frm.mode.value = mode;
+[% ELSE %]
+        for(var i = 0; i < frm.mode.length; i++) {
 	    if (frm.mode[i].value == mode) {
 		frm.mode[i].checked = true;
 	    } else {
 		frm.mode[i].checked = false;
 	    }
 	}
-	if (mode != "searchroute") {
+[% END %]
+        if (mode != "searchroute") {
 	    frm.coordset.value = "";
 	}
     }
     if (zoomdir != null) {
-	for(var i = 0; i < frm.zoomdir.length; i++) {
+[% IF style == "new" %]
+        frm.zoomdir.value = zoomdir;
+[% ELSE %]
+        for(var i = 0; i < frm.zoomdir.length; i++) {
 	    if (frm.zoomdir[i].value == zoomdir) {
 		frm.zoomdir[i].checked = true;
 	    } else {
 		frm.zoomdir[i].checked = false;
 	    }
+	}
+[% END %]
+    }
+}
+
+function set_mode_radios(mode,zoomdir) {
+    var frm = document.forms.map;
+    if (mode == "browse") {
+	mode = zoomdir;
+    }
+    for(var i = 0; i < frm.mode.length; i++) {
+	if (frm.mode[i].value == mode) {
+	    frm.mode[i].checked = true;
+	} else {
+	    frm.mode[i].checked = false;
 	}
     }
 }
@@ -177,6 +235,7 @@ function init() {
     if (frm.orig_zoomdir.value != "" && frm.orig_zoomdir.value != "[orig_zoomdir]") {
 	orig_zoomdir = frm.orig_zoomdir.value;
     }
+    set_mode_radios(orig_mode, orig_zoomdir);
     set_mode_no_orig_change(orig_mode, orig_zoomdir);
     if (is_searchroute_set()) {
         set_setcoord_action();
@@ -189,14 +248,16 @@ function adjust_for_redraw() {
 }
 
 function is_searchroute_set() {
-    var frm = document.forms["map"];
-    var val = false;
-    for(var i = 0; i < frm.mode.length; i++) {
-	if (frm.mode[i].value == "searchroute") {
-	    return frm.mode[i].checked; 
-	}
-    }
-    return false;
+    var mode = get_mode();
+    return mode == "searchroute";
+//     var frm = document.forms["map"];
+//     var val = false;
+//     for(var i = 0; i < frm.mode.length; i++) {
+// 	if (frm.mode[i].value == "searchroute") {
+// 	    return frm.mode[i].checked; 
+// 	}
+//     }
+//     return false;
 }
 
 function set_setcoord_action() {
