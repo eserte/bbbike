@@ -1,4 +1,4 @@
-CGI_SCRIPTS=	bbbike.cgi mapserver_address.cgi mapserver_comment.cgi wapbbbike.cgi
+CGI_SCRIPTS=	bbbike.cgi mapserver_address.cgi mapserver_comment.cgi mapserver_setcoord.cgi wapbbbike.cgi
 ROOT_URL?=	/bbbike
 # Set this to "cgi" or "Apache::Registry"
 CGI_TYPE?=	cgi

@@ -401,6 +401,8 @@ sub redirect_to_ms {
 	$args{-layers} = [qw(bahn flaechen gewaesser
 			     faehren route grenzen orte)] if !$args{-layers};
     }
+    require File::Basename;
+    $args{-bbbikeurl} = File::Basename::dirname(url) . "/bbbike.cgi";
 
     require BBBikeMapserver;
     my $ms = BBBikeMapserver->new;

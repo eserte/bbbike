@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.8 2003/09/09 06:46:58 eserte Exp $
+# $Id: Makefile,v 1.9 2003/11/27 20:23:40 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -76,18 +76,27 @@ FONTS_LIST=		fonts-devpc01.list
 
 HOST=			$(LOCAL_HOST)
 MAPSERVER_DIR=		$(LOCAL_BBBIKE_DIR)/mapserver/brb
-# Relative URL to this directory:
+# Relative URL to this directory and to the mapserv binary:
+.if ${TARGET} == "local"
 MAPSERVER_RELURL=	/~eserte/mapserver/brb				# ***
-MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
-# Relative URL to the mapserv binary:
 MAPSERVER_PROG_RELURL?=	/~eserte/cgi/mapserv.cgi			# ***
+.elif ${TARGET} == "devpc01"
+MAPSERVER_RELURL=	/bbbike/mapserver/brb				# ***
+MAPSERVER_PROG_RELURL?=	/mapserver/cgi/mapserv.cgi			# ***
+.endif
+MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 MAPSERVER_PROG_URL?=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
 # Filesystem path of the mapserv binary:
 MAPSERVER_PROG_FSPATH?=	/home/e/eserte/www/cgi/mapserv.cgi		# ***
 IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
-# Relative URL to the bbbike html and cgi directories (not important):
+# Relative URL to the bbbike html and cgi directories:
+.if ${TARGET} == "local"
 BBBIKE_HTML_RELURL=	/~eserte/bbbike/html				# ***
 BBBIKE_CGI_RELURL=	/~eserte/bbbike/cgi				# ***
+.elif ${TARGET} == "devpc01"
+BBBIKE_HTML_RELURL=	/bbbike/html					# ***
+BBBIKE_CGI_RELURL=	/bbbike/cgi					# ***
+.endif
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 # Which kind of images should be generated:
 IMAGE_SUFFIX=		png # was: gif					# ***
@@ -155,6 +164,7 @@ ALL_TPL_DEFINES=\
 	--define IMAGE_DIR="$(IMAGE_DIR)" \
 	--define BBBIKE_HTML_RELURL="$(BBBIKE_HTML_RELURL)" \
 	--define BBBIKE_URL="$(BBBIKE_URL)" \
+	--define BBBIKE_URL_ENC=`perl -MURI::Escape -e 'print uri_escape(shift)' $(BBBIKE_URL)` \
 	--define BBBIKE_CGI_RELURL="$(BBBIKE_CGI_RELURL)" \
 	--define IMAGE_SUFFIX="$(IMAGE_SUFFIX)" \
 	--define FONTS_LIST="$(FONTS_LIST)" \

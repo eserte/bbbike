@@ -57,8 +57,8 @@ if ($set eq 'ziel') {
     # XXX Delete more params... or use -pass mode?
     $q2->delete($_) for (qw(img.x img.y map zoomdir zoomsize mode
 			    orig_mode orig_zoomdir imgxy imgext));
-    print redirect("http://www/~eserte/bbbike/cgi/bbbike.cgi?"
-		   . $q2->query_string);
+    my $bbbikeurl = param("bbbikeurl") || "http://www/~eserte/bbbike/cgi/bbbike.cgi";
+    print redirect("$bbbikeurl?" . $q2->query_string);
 } elsif ($set eq 'start') {
     push_INC();
     require BBBikeMapserver;
@@ -91,7 +91,9 @@ if ($set eq 'ziel') {
 
 # XXX do not hardcode!
 sub push_INC {
-    push @INC, ("/home/e/eserte/src/bbbike",
+    require FindBin;
+    push @INC, ("$FindBin::RealBin/..",
+		"/home/e/eserte/src/bbbike",
 		"/usr/local/apache/radzeit/BBBike",
 	       );
 }
