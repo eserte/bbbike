@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.38 2004/07/03 22:43:55 eserte Exp $
+# $Id: insert_points,v 1.38 2004/07/03 22:43:55 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -78,6 +78,7 @@ my $custom_file_list;
 my @add_check_files_noorig;
 my $useint; # XXX never used?
 my $orig = 1;
+my $logfile;
 
 my $operation;
 
@@ -89,6 +90,7 @@ sub process {
     if (!GetOptions('tk!'        => \$use_tk,
 		    'bbbikerootdir=s' => \$bbbikerootdir,
 		    'datadir=s'  => \$datadir,
+		    'logfile=s'  => \$logfile,
 		    'tempblockingdir=s' => \$tempblockingdir,
 		    'v!'         => \$verbose,
 		    'coordsys=s' => \$current_coordsys,
@@ -136,6 +138,7 @@ sub process {
     my($from, $middle, $to, $new_to);
     my $top;
     my $extra;
+    my @coords;
     if ($use_tk) {
 	require Tk;
 	require Tk::ErrorDialog;
@@ -148,28 +151,22 @@ sub process {
 			  }
 		       : $top->SelectionGet);
 	$sel_str =~ s/^\s+//; # my clipboard content is something faulty
-	if ($operation eq 'insert') {
-	    ($from, $middle, $to, $extra) = map { s/\.\d+//g; $_ } split(/\s+/, $sel_str);
-	} elsif ($operation eq 'changeline') {
-	    ($from, $to, $new_to, $extra) = map { s/\.\d+//g; $_ } split(/\s+/, $sel_str);
-	} elsif ($operation eq 'change') {
-	    ($from, $to, $extra) = map { s/\.\d+//g; $_ } split(/\s+/, $sel_str);
-	} elsif ($operation =~ /^(grep|delete)$/) {
-	    ($from, $extra) = map { s/\.\d+//g; $_ } split(/\s+/, $sel_str);
-	}
-	
+	@coords = map { s/\.\d+//g; $_ } split(/\s+/, $sel_str);
     } else {
-	# XXX -useint here too?
-	if ($operation eq 'insert') {
-	    ($from, $middle, $to, $extra) = @ARGV;
-	} elsif ($operation eq 'changeline') {
-	    ($from, $to, $new_to, $extra) = @ARGV;
-	} elsif ($operation eq 'change') {
-	    ($from, $to, $extra) = @ARGV;
-	} elsif ($operation =~ /^(grep|delete)$/) {
-	    ($from, $extra) = @ARGV;
-	}
+	@coords = @ARGV;
     }
+
+    if ($operation eq 'insert') {
+	($from, $middle, $to, $extra) = @coords;
+    } elsif ($operation eq 'changeline') {
+	($from, $to, $new_to, $extra) = @coords;
+    } elsif ($operation eq 'change') {
+	($from, $to, $extra) = @coords;
+    } elsif ($operation =~ /^(grep|delete)$/) {
+	($from, $extra) = @coords;
+    }
+
+    my @cmd_args = ($operation, @coords);
     warn "from=$from middle=$middle to=$to new_to=$new_to\n" if $verbose;
 
     if (defined $extra) {
@@ -458,8 +455,10 @@ sub process {
     my $ans;
     if ($use_tk) {
 	require Tk::DialogBox;
-	my $dia = $top->DialogBox(-title => $0,
-				  -buttons => ['Ja', 'Nein']);
+	my $dia = $top->DialogBox
+	    (-title => $0,
+	     -buttons => ($operation eq 'grep' ? ['Ok'] : ['Ja', 'Nein']),
+	    );
 	$dia->add('Label', -text => {insert => 'Punkt einfügen',
 				     changeline => 'Strecke verschieben',
 				     change => 'Punkt verschieben',
@@ -515,8 +514,11 @@ sub process {
     }
 
     if ($ans =~ /^j/) {
+	# Do the operation!
+	my @changed_files;
 	for(my $type = 0; $type <= $#check_files; $type++) {
 	    foreach my $file (@{$change_files[$type]}) {
+		push @changed_files, $file;
 		# XXX not used, del?
 		my $map_char = (($file2base{$file}||'') eq $current_coordsys ? '' : $current_coordsys);
 		my $map_char_rx = ($operation =~ /^(insert|changeline)$/
@@ -651,6 +653,7 @@ sub process {
 		}
 	    }
 	}
+	do_log(@cmd_args, @changed_files);
     }
 }
 
@@ -661,6 +664,29 @@ sub _interpolate {
 	push @res, @$_ if ref $_ eq 'ARRAY';
     }
     @res;
+}
+
+sub do_log {
+    my(@args) = @_;
+    my $logfile = $logfile;
+    $logfile = "$datadir/datachange.log" if !$logfile;
+    warn "Log to $logfile...\n" if $verbose;
+    if (open(LOG, ">>$logfile")) {
+	print LOG "@args\n";
+	close LOG;
+    } else {
+	my $msg = "Can't write to $logfile: $!";
+	warn $msg;
+	if (defined &main::status_message) {
+	    main::status_message($msg, "warn");
+	} elsif ($use_tk) {
+	    require Tk;
+	    my $top = MainWindow->new;
+	    $top->withdraw;
+	    $top->messageBox(-message => $msg);
+	    $top->destroy;
+	}
+    }
 }
 
 return 1 if caller;

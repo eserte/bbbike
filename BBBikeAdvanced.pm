@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.101 2004/07/06 20:44:28 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.103 2004/07/08 18:38:38 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -917,12 +917,23 @@ sub set_coord_interactive {
 			 = $f1->SelectionGet('-selection' => ($os eq 'win'
 							      ? "CLIPBOARD"
 							      : "PRIMARY"));
+		     $stadtplandiensturl =~ s/\n//g;
 		 };
 	     })->pack(-side => "left");
 	$f->Button
 	    (-text => M"Setzen",
 	     -command => sub {
-		 if ($stadtplandiensturl =~ m{x_wgs/(.*?)/y_wgs/(.*?)/}) {
+		 if (0 && $stadtplandiensturl =~ m{gps=(\d+)%7C(\d+)}) {
+		     # XXX passt nicht ...
+		     my($x, $y) = ($1, $2);
+		     require Karte::Polar;
+		     my $x_ddd = 13 + $x/10000;
+		     my $y_ddd = 52 + $y/10000;
+warn "$x $y $x_ddd $y_ddd";
+		     my($tx,$ty) = transpose($Karte::Polar::obj->map2standard($x_ddd, $y_ddd));
+		     mark_point('-x' => $tx, '-y' => $ty,
+				-clever_center => 1);
+		 } elsif ($stadtplandiensturl =~ m{x_wgs/(.*?)/y_wgs/(.*?)/}) {
 		     my($x, $y) = ($1, $2);
 		     require Karte::Polar;
 		     my $x_ddd = Karte::Polar::dmm2ddd(13, $x);
@@ -2432,8 +2443,17 @@ sub search_anything {
     }
 
     require File::Basename;
+
     require PLZ;
-    my $plz = new PLZ;
+    my @plz = PLZ->new;
+    my @plz_labels = "PLZ-Datenbank (Berlin)";
+    eval {
+	my $plz = PLZ->new("$datadir/Potsdam.coords.data");
+	die "Can't get Potsdam data" if (!$plz);
+	push @plz, $plz;
+	push @plz_labels, "PLZ-Datenbank (Potsdam)";
+    };
+    warn $@ if $@;
 
     # XXX do a dump, blocking, unix-only search in datadir
     my @search_files = (@str_file{qw/s l u b r w f v e/},
@@ -2514,15 +2534,17 @@ sub search_anything {
 		}
 	    }
 
-	    # special case: PLZ file
-	    my @plz_matches = $plz->look($s);
-	    if (@plz_matches) {
-		# in Strassen-Format umwandeln
-		my @matches;
-		foreach (@plz_matches) {
-		    push @matches, [$_->[&PLZ::LOOK_NAME] . " (".$_->[&PLZ::LOOK_CITYPART].")", [$_->[&PLZ::LOOK_COORD]], "X", []];
+	    # special case: PLZ files
+	    for my $i (0 .. $#plz) {
+		my @plz_matches = $plz[$i]->look($s);
+		if (@plz_matches) {
+		    # in Strassen-Format umwandeln
+		    my @matches;
+		    foreach (@plz_matches) {
+			push @matches, [$_->[&PLZ::LOOK_NAME] . " (".$_->[&PLZ::LOOK_CITYPART].")", [$_->[&PLZ::LOOK_COORD]], "X", []];
+		    }
+		    $found_in{$plz_labels[$i]} = \@matches;
 		}
-		$found_in{"PLZ-Datenbank"} = \@matches;
 	    }
 
 	    $lb->delete(0, "end");
@@ -2537,7 +2559,8 @@ sub search_anything {
 	    @inx2match = ();
 
 	    my %sort_order = ('strassen' => 100,
-			      'PLZ-Datenbank' => 90,
+			      'PLZ-Datenbank (Berlin)' => 90,
+			      'PLZ-Datenbank (Potsdam)' => 89,
 			      'orte' => 80,
 			      'orte2' => 79,
 			      'landstrassen' => 70,

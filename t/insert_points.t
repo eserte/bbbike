@@ -2,13 +2,14 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points.t,v 1.5 2004/05/09 22:12:44 eserte Exp $
+# $Id: insert_points.t,v 1.6 2004/07/09 07:34:37 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
 use FindBin;
 use IO::Pipe;
+use File::Temp qw(tempfile);
 
 BEGIN {
     if (!eval q{
@@ -29,6 +30,8 @@ if (!-x $insert_points[-1]) {
 
 plan tests => 5;
 
+my($logfh,$logfile) = tempfile(SUFFIX => ".log");
+
 my $dudenstr      = "9222,8787";
 my $dudenstr_orig = $dudenstr; # "8796,8817";
 
@@ -36,6 +39,10 @@ BEGIN { $^W = 0 }
 my @methfesselstr = qw(8982,8781 9057,8936);
 BEGIN { $^W = 1 }
 
+my @common_args = ("-report", "-useint",
+		   "-datadir", $datadir, "-n",
+		   "-logfile", $logfile,
+		  );
 SKIP: {
     skip "relation_gps-orig missing", 4
 	unless -f "$datadir/relation_gps-orig";
@@ -43,8 +50,7 @@ SKIP: {
     {
 	my @res = IO::Pipe->new->reader(@insert_points,
 					"-operation", "grep",
-					"-report", "-useint",
-					"-datadir", $datadir, "-n",
+					@common_args,
 					$dudenstr_orig)->getlines;
 	chomp @res;
 	is(join(" ", sort @res),
@@ -61,9 +67,8 @@ SKIP: {
     {
 	my @res = IO::Pipe->new->reader(@insert_points,
 					"-operation", "grep",
-					"-report", "-useint",
+					@common_args,
 					"-noorig", "-coordsys", "H",
-					"-datadir", $datadir, "-n",
 					$dudenstr)->getlines;
 	chomp @res;
 	is(join(" ", sort @res),
@@ -80,8 +85,7 @@ SKIP: {
     {
 	my @res = IO::Pipe->new->reader(@insert_points,
 					"-operation", "change",
-					"-report", "-useint",
-					"-datadir", $datadir, "-n",
+					@common_args,
 					$dudenstr_orig, "0,0")->getlines;
 	chomp @res;
 	is(join(" ", sort @res),
@@ -100,9 +104,8 @@ SKIP: {
     {
 	my @res = IO::Pipe->new->reader(@insert_points,
 					"-operation", "change",
-					"-report", "-useint",
+					@common_args,
 					"-noorig", "-coordsys", "H",
-					"-datadir", $datadir, "-n",
 					$dudenstr, "0,0")->getlines;
 	chomp @res;
 	is(join(" ", sort @res),
@@ -121,8 +124,7 @@ SKIP: {
     {
 	my @res = IO::Pipe->new->reader(@insert_points,
 					"-operation", "changeline",
-					"-report", "-useint",
-					"-datadir", $datadir, "-n",
+					@common_args,
 					@methfesselstr, "0,0")->getlines;
 	chomp @res;
 	is(join(" ", sort @res),

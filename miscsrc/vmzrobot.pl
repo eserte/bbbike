@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.13 2004/05/21 20:58:03 eserte Exp $
+# $Id: vmzrobot.pl,v 1.13 2004/05/21 20:58:03 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -289,7 +289,7 @@ sub mark_irrelevant_entries {
     my(@detail_links) = @_;
     for my $detail (@detail_links) {
 	my $ignore = 0;
-	if ($detail->{text} =~ /^A(\d+)/) {
+	if ($detail->{text} =~ /^A\s*(\d+)/) {
 	    $ignore = 1;
 	} else {
 	    my(@comp) = split /,\s+/, $detail->{text};
