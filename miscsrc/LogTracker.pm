@@ -25,7 +25,7 @@ use strict;
 use vars qw($VERSION $lastcoords
             $layer @colors $colors_i @accesslog_data
 	    $do_search_route $ua $safe
-            $logfile $tracking $tail_pid $bbbike_cgi);
+            $remoteuser $remotehost $logfile $tracking $tail_pid $bbbike_cgi);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 use URI::Escape;
@@ -42,6 +42,8 @@ sub register {
     for(my $i=0; $i<$#plugin_args; $i+=2) {
 	my($k,$v) = @plugin_args[$i..$i+2];
 	if    ($k eq 'logfile') { $logfile = $v }
+	elsif ($k eq 'remoteuser') { $remoteuser = $v }
+	elsif ($k eq 'remotehost') { $remotehost = $v }
 	elsif ($k eq 'bbbike_cgi') { $bbbike_cgi = $v }
 	elsif ($k eq 'tracking') { $tracking = $v; parse_tail_log() if $v } # XXX
 	else {
@@ -85,6 +87,12 @@ sub add_button {
 		   my $e;
                    Tk::grid($t->Label(-text => "Logfile"),
                             $e = $t->PathEntry(-textvariable => \$logfile),
+                           );
+		   Tk::grid($t->Label(-text => "Remote SSH user"),
+			    $e = $t->Entry(-textvariable => \$remoteuser),
+                           );
+		   Tk::grid($t->Label(-text => "Remote host"),
+			    $e = $t->Entry(-textvariable => \$remotehost),
                            );
                    Tk::grid($t->Label(-text => "BBBike CGI"),
                             $t->PathEntry(-textvariable => \$bbbike_cgi),
@@ -178,8 +186,7 @@ sub parse_accesslog {
     warn "Free layer: $layer\n";
     @accesslog_data = ();
     if (!$fh) {
-	open($fh, $logfile) or die "Can't open $logfile: $!";
-	_maybe_gunzip($fh);
+	$fh = _open_log();
     }
     while(<$fh>) {
 	chomp;
@@ -242,17 +249,17 @@ sub parse_accesslog_any_day {
     my $rx = shift;
     my $is_tied = 0;
     @accesslog_data = ();
-    if ($logfile =~ /\.gz$/) {
+    my $bw;
+    if ($logfile =~ /\.gz$/ || (defined $remotehost && $remotehost ne "")) {
 	# Can't read backwards
-	open(BW, $logfile) or die $!;
-	_maybe_gunzip(\*BW); # here it is not "maybe"
+	$bw = _open_log();
     } else {
 	require File::ReadBackwards;
-	tie *BW, 'File::ReadBackwards', $logfile or die $!;
+	tie *$bw, 'File::ReadBackwards', $logfile or die $!;
 	$is_tied++;
     }
     my $gather = 0;
-    while(<BW>) {
+    while(<$bw>) {
 	if (!$gather) {
 	    if (index($_, $rx) != -1) {
 		$gather = 1;
@@ -265,7 +272,7 @@ sub parse_accesslog_any_day {
 	my(@d) = parse_line($_);
 	push @accesslog_data, @d if @d;
     }
-    untie *BW if $is_tied;
+    untie *$bw if $is_tied;
     draw_accesslog_data();
 }
 
@@ -280,8 +287,7 @@ sub parse_tail_log {
     kill_tail();
     $tail_pid = open FH, "-|";
     if (!$tail_pid) {
-        exec "tail", "-f", $logfile;
-        die $!;
+	_tail_log();
     };
     warn "Start parsing file $logfile...\n";
     _maybe_gunzip(\*FH);
@@ -295,6 +301,31 @@ sub stop_parse_tail_log {
     $main::top->fileevent(\*FH, "readable", "");
     close FH;
     warn "Stopped parsing log...\n";
+}
+
+sub _tail_log {
+    if (!defined $remotehost || $remotehost eq '') {
+	exec "tail", "-f", $logfile;
+	die $!;
+    } else {
+	exec "ssh", "-n", (defined $remoteuser && $remoteuser ne ""
+			   ? ("-l", $remoteuser) : ()
+			  ), $remotehost, "tail", "-f", $logfile;
+	die $!;
+    }
+}
+
+sub _open_log {
+    my $fh;
+    if (!defined $remotehost || $remotehost eq '') {
+	open($fh, $logfile) or die "Can't open $logfile: $!";
+    } else {
+	open($fh, "ssh " . (defined $remoteuser && $remoteuser ne ""
+			    ? "-l $remoteuser " : "")
+	     . "$remotehost cat $logfile | ");
+    }
+    _maybe_gunzip($fh);
+    $fh;
 }
 
 sub fileevent_read_line {
