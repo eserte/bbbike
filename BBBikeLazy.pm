@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.8 2004/12/05 22:09:56 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.9 2004/12/10 01:24:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -481,7 +481,7 @@ sub BBBikeLazy::plotstr_on_demand {
 	    next if $abk eq 'o';
 	    next if !$lazy_p{$abk}; # XXX should not happen, but it happens
 # 	    my %category_width;
-# 	    my $default_width = get_line_width($abk) || 4;
+ 	    my $default_width = 4;
 # 	    #XXX skalieren...
 # 	    {
 # 		foreach (keys %line_width) {
