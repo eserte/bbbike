@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.26 2003/10/07 22:33:23 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.27 2003/11/15 14:26:23 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -54,6 +54,10 @@ struct('BBBikeRouting' => {Context => "BBBikeRouting::Context",
 			   #PenaltyNets => "\$",
 			  });
 
+sub BBBikeRouting_Position_Class { 'BBBikeRouting::Position' }
+sub BBBikeRouting_Context_Class  { 'BBBikeRouting::Context'  }
+sub Strassen_Dataset_Class       { 'Strassen::Dataset'       }
+
 sub BBBikeRouting::LastVia {
     my $self = shift;
     if (ref $self->Via eq 'ARRAY') {
@@ -75,14 +79,17 @@ sub BBBikeRouting::Context::ExpandedScope {
 
 sub init_context {
     my $self = shift;
-    my $context = BBBikeRouting::Context->new;
+    my $context = $self->BBBikeRouting_Context_Class->new;
     $self->Context($context);
-    $self->Start(BBBikeRouting::Position->new);
+    $self->Start($self->BBBikeRouting_Position_Class->new);
     $self->StartChoices([]);
-    $self->Goal(BBBikeRouting::Position->new);
+    $self->Goal($self->BBBikeRouting_Position_Class->new);
     $self->GoalChoices([]);
-    require Strassen::Dataset;
-    $self->Dataset(Strassen::Dataset->new); # XXX arguments?
+    if ($self->Strassen_Dataset_Class eq 'Strassen::Dataset') {
+	# Just for convenience:
+	require Strassen::Dataset;
+    }
+    $self->Dataset($self->Strassen_Dataset_Class->new);
     $context->Vehicle("bike");
     $context->Velocity(kmh2ms(20));
     $context->Scope("city");
@@ -109,10 +116,24 @@ sub read_conf {
     $context->Algorithm($BBBikeConf::search_algorithm);
 }
 
+# Remove all routing information (Start, Goal, Path, ...)
+sub reset {
+    my $self = shift;
+    $self->Path(undef);
+    $self->RouteInfo(undef);
+    $self->Start($self->BBBikeRouting_Position_Class->new);
+    $self->StartChoices([]);
+    $self->Via([]);
+    $self->ViaChoices([]);
+    $self->Goal($self->BBBikeRouting_Position_Class->new);
+    $self->GoalChoices([]);
+}
+
+# Remove all data references and routing information, and change the scope
 sub change_scope {
     my($self, $scope) = @_;
     $self->Context->Scope($scope);
-    $self->Dataset(Strassen::Dataset->new); # XXX arguments?
+    $self->Dataset($self->Strassen_Dataset_Class->new);
     $self->Streets(undef);
     $self->ZIP(undef);
     $self->ZIPStreets(undef);
@@ -120,11 +141,7 @@ sub change_scope {
     $self->Stations(undef);
     $self->Crossings(undef);
     $self->Cities(undef);
-    $self->Path(undef);
-    $self->RouteInfo(undef);
-    $self->Start(BBBikeRouting::Position->new);
-    $self->Via([]);
-    $self->Goal(BBBikeRouting::Position->new);
+    $self->reset;
 }
 
 sub init_str {
@@ -370,7 +387,7 @@ sub resolve_position {
 	if (@{ $from_res[0] } > 1 && $context->MultipleChoices) {
 	    @$choices_o = ();
 	    for (@{ $from_res[0] }) {
-		my $new_pos = BBBikeRouting::Position->new;
+		my $new_pos = $self->BBBikeRouting_Position_Class->new;
 		$new_pos->Street  ($_->[PLZ::LOOK_NAME()]);
 		$new_pos->Citypart($_->[PLZ::LOOK_CITYPART()]);
 		$new_pos->Coord   ($_->[PLZ::LOOK_COORD()]);
@@ -412,7 +429,7 @@ sub fix_position {
     $self->init_net;
     if (!$self->Net->reachable($pos_o->Coord)) {
 	$self->init_crossings;
-	$pos_o->Coord(($self->Crossings->nearest_loop(split /,/, $pos_o->Coord))[0]);
+	$pos_o->Coord($self->Crossings->nearest_loop(split(/,/, $pos_o->Coord), BestOnly => 1, UseCache => $self->Context->UseCache));
 	if ($self->Context->Vehicle eq 'oepnv') {
 	    $self->init_crossings;
 	    $pos_o->Street($self->Crossings->get_first($pos_o->Coord));
@@ -422,7 +439,7 @@ sub fix_position {
 }
 
 sub search {
-    my $self = shift;
+    my($self) = @_;
 
     $self->init_net;
 
@@ -547,7 +564,7 @@ sub delete_to_last_via {
 	    last if (join(",", @$last) eq $via->Coord);
 	}
 	if (@{$self->Path}) {
-	    my $new_goal = BBBikeRouting::Position->new;
+	    my $new_goal = $self->BBBikeRouting_Position_Class->new;
 	    $new_goal->Coord(join(",", @{ $self->Path->[-1] }));
 	    $self->Goal($new_goal);
 	}

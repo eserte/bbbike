@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.84 2003/10/19 22:01:14 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.84 2003/10/19 22:01:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2003 Slaven Rezic. All rights reserved.
@@ -1546,7 +1546,7 @@ sub check_new_modules {
     my %inc = %{$pkg."::INC"};
     while(my($k, $v) = each %inc) {
 	# only record BBBike-related and own modules
-	next if $v !~ /bbbike/i && $v !~ /$ENV{HOME}/;
+	next if $v !~ /bbbike/i && $v !~ /\Q$ENV{HOME}/;
 	next if exists $module_time{$v};
 	$module_time{$v} = (stat($v))[9];
 	warn "recorded $module_time{$v} for $k\n" if $verbose;

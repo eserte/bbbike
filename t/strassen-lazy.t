@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-lazy.t,v 1.7 2003/08/09 07:20:44 eserte Exp $
+# $Id: strassen-lazy.t,v 1.8 2003/11/16 20:42:39 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -26,7 +26,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 14 }
+BEGIN { plan tests => 22 }
 
 {
     my $s = Strassen::Lazy->new("strassen");
@@ -56,4 +56,34 @@ BEGIN { plan tests => 14 }
     ok($r);
     ok($r->[Strassen::NAME], "B96");
 }
+
+my $projectdir = "$FindBin::RealBin/../projects/radlstadtplan_muenchen/data_Muenchen_DE";
+
+if (-d $projectdir && -f "$projectdir/strassen") {
+    local @Strassen::datadirs = $projectdir;
+    {
+	my $s = Strassen::Lazy->new("strassen");
+	my $r;
+	$r = $s->get(1); # trigger realization
+	ok($s->isa("Strassen"));
+	ok($r);
+	$r = $s->get_by_name("Arcostr.");
+	ok($r);
+	ok($r->[Strassen::NAME], "Arcostr.");
+    }
+
+    {
+	my $s = MultiStrassen::Lazy->new("strassen");
+	my $r;
+	$r = $s->get(1); # trigger realization
+	ok($s->isa("MultiStrassen"));
+	ok($r);
+	$r = $s->get_by_name("Arcostr.");
+	ok($r);
+	ok($r->[Strassen::NAME], "Arcostr.");
+    }
+} else {
+    skip("No $projectdir available", 1) for 1..8;
+}
+
 __END__

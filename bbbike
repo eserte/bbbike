@@ -14851,6 +14851,7 @@ sub show_logo { # und About
 			    )->pack(-fill => 'both', -expand => 1);
     my $f = $ff->Frame->pack(-side => 'left',
 			     -fill => 'both', -expand => 1,
+			     -padx => 4, -pady => 4,
 			    );
     my $Button_or_Label = ($as_about ? "Button" : "Label");
     my $www_b =
@@ -14896,6 +14897,9 @@ sub show_logo { # und About
 			   $txt->insert("end", $_);
 		       }
 		       close C;
+		       $t->Button(Name => 'close',
+				  -command => sub { $t->destroy },
+				 )->pack(-fill => "x", -expand => 1);
 		   }
 	       }
 	      ) : ()),
@@ -14949,7 +14953,7 @@ sub show_logo { # und About
 	if $balloon;
 
     $ff->Label(-image => $srtbike_photo
-	      )->pack(-side => 'left', -expand => 1, -fill => 'both');
+	      )->pack(-side => 'left', anchor => "ne");
     if ($as_about) {
 	my $okb = $logotop->Button(Name => 'ok',
 				   -command => sub { hide_logo($as_about) },

@@ -4,7 +4,7 @@ no strict 'refs';  # Let's just make this very clear right off
 
 use Carp;
 use vars qw($VERSION);
-$VERSION = do { my @r = (q$Revision: 1.1 $ =~ /\d+/g); sprintf '%d.%03d'.'%02d' x ($#r-1), @r};
+$VERSION = do { my @r = (q$Revision: 1.16 $ =~ /\d+/g); sprintf '%d.%03d'.'%02d' x ($#r-1), @r};
 
 my $Ident = '[^\W_0-9]\w*';
 
@@ -297,9 +297,6 @@ ever use this feature...?
 =head1 HISTORY
 
   $Log: enum.pm,v $
-  Revision 1.1  2001/07/09 15:39:01  eserte
-  Initial revision
-
   Revision 1.16  1999/05/27 16:00:35  byron
 
 

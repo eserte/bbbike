@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: db_impl.t,v 1.10 2003/08/07 21:31:54 eserte Exp eserte $
+# $Id: db_impl.t,v 1.11 2003/09/02 21:40:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002, 2003 Slaven Rezic. All rights reserved.
@@ -100,7 +100,8 @@ $net = StrassenNetz->new($s);
 $net->use_data_format($StrassenNetz::FMT_MMAP);
 #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$net->can("make_net")],[])->Deparse(1)->Indent(1)->Useqq(1)->Dump; # XXX
 
-if (0) {
+if (0) { # This does not work because search_c does not use
+    # StrassenNetz::search, where BlockingNet is activated
     $net->make_net;
     $net->make_sperre("gesperrt", Type => [qw(einbahn sperre wegfuehrung)]);
 } else {

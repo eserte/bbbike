@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.29 2003/10/07 22:34:25 eserte Exp $
+# $Id: Core.pm,v 1.30 2003/11/15 14:28:23 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -150,6 +150,7 @@ sub read_data {
     } else {
 	die "Can't open $file" if !open(FILE, $file);
     }
+    warn "Read Strassen file $file...\n" if ($VERBOSE && $VERBOSE > 1);
     $self->{Modtime} = (stat($file))[STAT_MODTIME];
     binmode FILE;
     my @data;
@@ -165,6 +166,7 @@ sub read_data {
 	    push @data, $_;
         }
     }
+    warn "... done\n" if ($VERBOSE && $VERBOSE > 1);
     close FILE;
     $self->{Data}  = \@data;
 }

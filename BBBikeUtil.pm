@@ -207,20 +207,26 @@ sub iso_cp850 {
 # keine Zeichensatz-Konvertierung
 sub nil { $_[0] }
 
-sub min {
-    my $min;
-    for (@_) {
-	$min = $_ if (!defined $min || $min > $_);
+BEGIN {
+    if (eval { require List::Util; 1 }) {
+	*min = \&List::Util::min;
+	*max = \&List::Util::max;
+    } else {
+	*min = sub {
+	    my $min;
+	    for (@_) {
+		$min = $_ if (!defined $min || $min > $_);
+	    }
+	    $min;
+	};
+	*max = sub {
+	    my $max;
+	    for (@_) {
+		$max = $_ if (!defined $max || $max < $_);
+	    }
+	    $max;
+	};
     }
-    $min;
-}
-
-sub max {
-    my $max;
-    for (@_) {
-	$max = $_ if (!defined $max || $max < $_);
-    }
-    $max;
 }
 
 1;

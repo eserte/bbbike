@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Build.pm,v 1.15 2003/09/02 22:29:28 eserte Exp $
+# $Id: Build.pm,v 1.16 2003/11/15 14:26:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
@@ -16,20 +16,21 @@ package Strassen::Build;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz::CNetFile;
 
 use vars qw($FILE_VERSION $MAGIC $VERBOSE);
+use Config;
 
 $FILE_VERSION = 1;
-$MAGIC = 'stnt';
+$MAGIC = 'stnt'; # STrassenNeTz
 
 require Strassen::Util;
 
 # Format of mmap file:
 # (all little endian longs)
-#   at the top of the file: a version number
+#   at the top of the file: magic and file version number
 #
 #   foreach coordinate
 #     x of this coordinate
@@ -124,7 +125,7 @@ sub create_mmap_net {
 
 sub filename_c_net_mmap {
     my($self, $file_prefix) = @_;
-    $file_prefix . "_net.mmap";
+    $file_prefix . "_net_" . $Config{byteorder} . ".mmap";
 }
 
 sub create_mmap_net_if_needed {

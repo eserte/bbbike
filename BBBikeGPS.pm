@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.7 2003/08/05 22:44:34 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.7 2003/08/05 22:44:34 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -17,6 +17,18 @@ package BBBikeGPS;
 package main;
 use strict;
 use BBBikeGlobalVars;
+
+# i18n functions M and Mfmt
+BEGIN {
+    if (!eval '
+use Msg; # This call has to be in bbbike!
+1;
+') {
+	warn $@ if $@;
+	eval 'sub M ($) { $_[0] }';
+	eval 'sub Mfmt { sprintf(shift, @_) }';
+    }
+}
 
 sub BBBikeGPS::gps_interface {
     my($label, $mod) = @_;

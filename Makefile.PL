@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.88 2003/11/13 00:11:00 eserte Exp $
+# $Id: Makefile.PL,v 1.88 2003/11/13 00:11:00 eserte Exp eserte $
 
 BEGIN {
     $^W = 0;
@@ -402,6 +402,11 @@ EOF
     if (-r "projects/www.radzeit.de/Makefile") {
 	$out .= <<'EOF';
 	cd projects/www.radzeit.de && $(MAKE) deploy-local
+EOF
+    }
+    if (-r "projects/radlstadtplan_muenchen/Makefile.PL") {
+	$out .= <<'EOF';
+	cd projects/radlstadtplan_muenchen && $(PERL) Makefile.PL && $(MAKE) test
 EOF
     }
     $out .= "\n";

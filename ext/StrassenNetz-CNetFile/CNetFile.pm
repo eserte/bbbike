@@ -1,10 +1,10 @@
-# -*- perl -*-
+# -*- c -*-
 
 #
-# $Id: CNetFile.pm,v 1.10 2003/04/13 15:56:40 eserte Exp $
+# $Id: CNetFile.pm,v 1.10 2003/04/13 15:56:40 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001, 2002, 2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -104,14 +104,14 @@ void get_coord_struct(SV* self, void* ptr) {
     no_succ = *(ptr_i++);
 
     Inline_Stack_Reset;
-    // sv_2mortal here?
-    Inline_Stack_Push(newSViv(x));
-    Inline_Stack_Push(newSViv(y));
-    Inline_Stack_Push(newSViv(no_succ));
+    /* sv_2mortal obviously needed here: */
+    Inline_Stack_Push(sv_2mortal(newSViv(x)));
+    Inline_Stack_Push(sv_2mortal(newSViv(y)));
+    Inline_Stack_Push(sv_2mortal(newSViv(no_succ)));
 
     for(i=0; i<no_succ; i++) {
-	Inline_Stack_Push(newSViv(*(ptr_i++)));
-	Inline_Stack_Push(newSViv(*(ptr_i++)));
+	Inline_Stack_Push(sv_2mortal(newSViv(*(ptr_i++))));
+	Inline_Stack_Push(sv_2mortal(newSViv(*(ptr_i++))));
     }
 
     Inline_Stack_Done;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Imager.pm,v 1.7 2003/09/09 06:46:57 eserte Exp $
+# $Id: Imager.pm,v 1.8 2003/11/16 20:42:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -45,7 +45,7 @@ use vars @colors;
 #      }
 #  }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -169,10 +169,12 @@ sub draw_map {
     my $title_draw = $self->{_TitleDraw};
 
     my($restrict, $restrict_code);
-    if (UNIVERSAL::isa($self->{Restrict}, 'ARRAY')) {
-	$restrict = { map { ($_ => 1) } @{ $self->{Restrict} } };
-    } elsif (UNIVERSAL::isa($self->{Restrict}, 'CODE')) {
-	$restrict_code = $self->{Restrict};
+    if (defined $self->{Restrict}) {
+	if (UNIVERSAL::isa($self->{Restrict}, 'ARRAY')) {
+	    $restrict = { map { ($_ => 1) } @{ $self->{Restrict} } };
+	} elsif (UNIVERSAL::isa($self->{Restrict}, 'CODE')) {
+	    $restrict_code = $self->{Restrict};
+	}
     }
 
     if ($self->{Outline}) {

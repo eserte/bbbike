@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Kreuzungen.pm,v 1.8 2003/10/01 21:22:55 eserte Exp $
+# $Id: Kreuzungen.pm,v 1.9 2003/11/15 14:27:53 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -148,6 +148,7 @@ sub make_grid {
 	    my $hashref = Strassen::Util::get_from_cache($cachefile, [$self->file]);
 	    if (defined $hashref) {
 		warn "Using cache for $cachefile\n" if $VERBOSE;
+		$self->{Grid} = $hashref;
 		return $hashref;
 	    }
 	}
@@ -181,13 +182,16 @@ sub grid {
 #    $x, $y
 #    IncludeDistance: Rückgabewert ist ein Feld mit den Elementen ["x,y", dist]
 #    Grids (default 1): Anzahl der Grids, die vom Mittelpunkt abweichen dürfen
+#    BestOnly: return only the best match, otherwise return all in grid
 # Ansonsten wird ein Feld mit den Elementen "x,y" zurückgegeben. In beiden
 # Fällen ist das Feld nach der Entfernung von $x und $y sortiert (kürzeste
 # zuerst).
 ### AutoLoad Sub
 sub nearest {
     my($self, $x, $y, %args) = @_;
-    $self->make_grid if (!$self->{Grid});
+    my $use_cache = delete $args{UseCache};
+    my $best_only = delete $args{BestOnly};
+    $self->make_grid(UseCache => $use_cache) if (!$self->{Grid});
     my $xy = join(",", $x, $y);
     my $grids = $args{Grids} || 1;
 #   my $distance = $args{Distance};
@@ -195,39 +199,49 @@ sub nearest {
 #    if (!defined $distance) { $distance = 1000 }
     my($gridx, $gridy) = $self->grid($x, $y);
     my @res;
-    for my $xx (-$grids .. $grids) {
-	for my $yy (-$grids .. $grids) {
-	    my $s = join(",", $gridx+$xx, $gridy+$yy);
-	    if (defined $self->{Grid}{$s}) {
-		push @res, @{$self->{Grid}{$s}};
+    my %seen_combination;
+    for my $grids_i (0 .. $grids) {
+	my @grid_sequence = (0);
+	push @grid_sequence, map { ($_, -$_) } (1 .. $grids_i);
+	for my $xx (@grid_sequence) {
+	    for my $yy (@grid_sequence) {
+		next if (exists $seen_combination{"$xx,$yy"});
+		$seen_combination{"$xx,$yy"} = 1;
+		my $s = join(",", $gridx+$xx, $gridy+$yy);
+		if (defined $self->{Grid}{$s}) {
+		    push @res, @{$self->{Grid}{$s}};
+		}
 	    }
 	}
+	last if $best_only && @res;
     }
+
     if ($args{IncludeDistance}) {
 	foreach (@res) {
 	    my $dist = Strassen::Util::strecke_s($_, $xy);
 	    $_ = [$_, $dist];
 	}
-	sort { $a->[1] <=> $b->[1] } @res;
+	@res = sort { $a->[1] <=> $b->[1] } @res;
     } else {
+	@res =
 	map  { $_->[0] }
 	sort { $a->[1] <=> $b->[1] }
 	map  { [$_, Strassen::Util::strecke_s($_, $xy)] }
 	@res;
     }
+    if ($best_only) {
+	$res[0];
+    } else {
+	@res;
+    }
 }
 
-# incrementally try nearest with Grids => 1 to Grids => 5
+# Incrementally try nearest with Grids => 1 to Grids => 5
 # 5 can be replaced by MaxGrids parameter
 sub nearest_loop {
     my($self, $x, $y, %args) = @_;
     my $max_grids = delete $args{MaxGrids} || 5;
-    my @res;
-    for my $grids (1 .. $max_grids) {
-	@res = $self->nearest($x, $y, %args, Grids => $grids);
-	return @res if (@res);
-    }
-    ();
+    return $self->nearest($x, $y, %args, Grids => $max_grids);
 }
 
 # wie nearest, nur wird hier "x,y" als ein Argument übergeben

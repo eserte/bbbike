@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Inline.pm,v 1.13 2003/10/01 22:31:28 eserte Exp $
+# $Id: Inline.pm,v 1.14 2003/11/15 18:59:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package VectorUtil::Inline;
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Inline 0.40; # because of API changes
@@ -37,6 +37,8 @@ __C__
 
 typedef struct { int x; int y; } POINT;
 
+#undef MIN
+#undef MAX
 #define MIN(x,y) (x < y ? x : y)
 #define MAX(x,y) (x > y ? x : y)
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-build.t,v 1.2 2003/06/23 22:04:48 eserte Exp $
+# $Id: strassen-build.t,v 1.3 2003/11/16 20:42:39 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -13,6 +13,7 @@ use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../data",
 	 "$FindBin::RealBin/../lib");
+use Config;
 use Strassen;
 use Strassen::Build;
 use StrassenNetz::CNetFile;
@@ -48,7 +49,7 @@ mkdir $tmpdir, 0755 if !-d $tmpdir;
 my $prefix = "$tmpdir/strassen";
 
 my $coord2ptr_file = "$tmpdir/strassen_coord2ptr.st";
-my $mmap_net_file = "$tmpdir/strassen_net.mmap";
+my $mmap_net_file = "$tmpdir/strassen_net_$Config{byteorder}.mmap";
 
 unlink $coord2ptr_file;
 unlink $mmap_net_file;

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.14 2003/09/02 21:43:29 eserte Exp $
+# $Id: Makefile,v 1.14 2003/09/02 21:43:29 eserte Exp eserte $
 #
 
 # XXX Installieren immer über *dieses* Makefile (wegen INLINE2DIST)!!!
@@ -57,7 +57,7 @@ ext-strassennetz-cnetfile-clean:
 	-cd StrassenNetz-CNetFile && $(PERL) Makefile.PL && ${MAKE} clean
 
 ext-strassennetz-cnetfile-build:
-	cd StrassenNetz-CNetFile && $(INLINE2DIST) StrassenNetz::CNetFile && $(PERL) Makefile.PL && env PERL5LIB=../..:../../lib:$$PERL5LIB ${MAKE} ${.MAKEFLAGS}
+	cd StrassenNetz-CNetFile && $(INLINE2DIST) StrassenNetz::CNetFile && $(PERL) Makefile.PL && rm -f Inline.inl && env PERL5LIB=../..:../../lib:$$PERL5LIB ${MAKE} ${.MAKEFLAGS}
 
 ext-strassennetz-cnetfile-test:
 	cd StrassenNetz-CNetFile && env PER5LLIB=../..:../../lib:$$PERL5LIB ${MAKE} ${.MAKEFLAGS} test
@@ -70,7 +70,7 @@ ext-strassen-inline-clean:
 	-cd Strassen-Inline && $(PERL) Makefile.PL && ${MAKE} clean
 
 ext-strassen-inline-build:
-	cd Strassen-Inline && $(INLINE2DIST) Strassen::Inline && $(PERL) Makefile.PL && ${MAKE} ${.MAKEFLAGS}
+	cd Strassen-Inline && $(INLINE2DIST) Strassen::Inline && $(PERL) Makefile.PL && rm -f Inline.inl && ${MAKE} ${.MAKEFLAGS}
 
 ext-strassen-inline-test:
 	cd Strassen-Inline && ${MAKE} ${.MAKEFLAGS} test
@@ -83,7 +83,7 @@ ext-strassen-inline2-clean:
 	-cd Strassen-Inline2 && $(PERL) Makefile.PL && ${MAKE} clean
 
 ext-strassen-inline2-build:
-	cd Strassen-Inline2 && $(INLINE2DIST) Strassen::Inline2 && $(PERL) Makefile.PL && ${MAKE} ${.MAKEFLAGS}
+	cd Strassen-Inline2 && $(INLINE2DIST) Strassen::Inline2 && $(PERL) Makefile.PL && rm -f Inline.inl && ${MAKE} ${.MAKEFLAGS}
 
 ext-strassen-inline2-test:
 	cd Strassen-Inline2 && env PERL5OPT=-Mblib=../StrassenNetz-CNetFile ${MAKE} ${.MAKEFLAGS} test
@@ -96,7 +96,7 @@ ext-vectorutil-inline-clean:
 	-cd VectorUtil-Inline && $(PERL) Makefile.PL && ${MAKE} clean
 
 ext-vectorutil-inline-build:
-	cd VectorUtil-Inline && $(INLINE2DIST) VectorUtil::Inline && $(PERL) Makefile.PL && ${MAKE} ${.MAKEFLAGS}
+	cd VectorUtil-Inline && $(INLINE2DIST) VectorUtil::Inline && $(PERL) Makefile.PL && rm -f Inline.inl && ${MAKE} ${.MAKEFLAGS}
 
 ext-vectorutil-inline-test:
 	cd VectorUtil-Inline && ${MAKE} ${.MAKEFLAGS} test

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.13 2003/06/19 22:33:29 eserte Exp $
+# $Id: Util.pm,v 1.13 2003/06/19 22:33:29 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,6 +12,7 @@
 
 package Strassen::Util;
 use strict;
+use Config;
 use BBBikeUtil qw(rad2deg STAT_MODTIME);
 #use AutoLoader 'AUTOLOAD';
 use vars qw($VERBOSE $tmpdir
@@ -237,7 +238,8 @@ sub try_cache {
     my $rw_text   = ($write ? 'writing' : 'reading');
     my $rw_text_2 = ($write ? 'to' : 'from');
     foreach $cache_type (@cacheable) {
-	my $filename = $filename . cache_ext($cache_type);
+	my $filename = $filename .
+	    ($cache_type =~ /^(Storable|CDB_File)$/ ? "_$Config{byteorder}" : "") . cache_ext($cache_type);
 	warn "Try $rw_text cache type $cache_type $rw_text_2 $filename ...\n"
 	    if $VERBOSE;
 	if ($cache_type eq 'VirtArray') {

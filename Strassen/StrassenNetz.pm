@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.31 2003/09/02 21:37:17 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.32 2003/11/15 14:26:50 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -1352,28 +1352,34 @@ sub search {
 	warn $@ if $@;
     } else {
 	my $inner_search_sub;
-	if ($sc->Algorithm eq 'C-A*-2') { # XXXXXXXXXXXXXXXXXXX
+	if ($sc->Algorithm eq 'C-A*-2') {
 	    require Strassen::Inline2Dist;
 	    $inner_search_sub = \&Strassen::Inline2::search_c;
 	} else {
 	    require Strassen::InlineDist;
 	    $inner_search_sub = \&Strassen::Inline::search_c;
 	}
-	my $penalty_code = <<'EOF' .
+	my $penalty_code = build_penalty_code($sc);
+	my $penalty_sub;
+	if ($penalty_code ne "") {
+	    $penalty_code = <<'EOF' .
 sub {
     my($next_node, $last_node, $pen) = @_;
     my $penalty = $self->{Penalty}; # XXX should not be here...
 EOF
-        build_penalty_code($sc) . <<'EOF'
+		$penalty_code . <<'EOF'
     $pen;
 }
 EOF
-        ;
-	warn $penalty_code if $VERBOSE;
-	my $penalty_sub = eval $penalty_code;
-	die "While eval'ing penalty sub: $@" if $@;
+	    ;
+	    warn $penalty_code if $VERBOSE;
+	    $penalty_sub = eval $penalty_code;
+	    die "While eval'ing penalty sub: $@" if $@;
+	}
 	$search_sub = sub {
-	    $inner_search_sub->(@_, -penaltysub => $penalty_sub);
+	    $inner_search_sub->(@_,
+				($penalty_sub ? (-penaltysub => $penalty_sub) : ()),
+			       );
 	};
     }
 

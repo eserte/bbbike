@@ -3372,8 +3372,6 @@ sub add_cross_road_blockings {
 # REPO NAME month_days /home/e/eserte/src/repository 
 # REPO MD5 349f6caae4054c70e91da1cda0eeea5f
 
-=cut
-
 sub month_days {
     my($m,$y) = @_;
     my $d = [31,28,31,30,31,30,31,31,30,31,30,31]->[$m-1];

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ESRI.pm,v 1.4 2003/01/08 20:14:32 eserte Exp eserte $
+# $Id: ESRI.pm,v 1.5 2003/11/15 19:00:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2001 Slaven Rezic. All rights reserved.

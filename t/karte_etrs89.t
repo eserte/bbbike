@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: karte_etrs89.t,v 1.3 2003/09/01 05:51:25 eserte Exp $
+# $Id: karte_etrs89.t,v 1.4 2003/11/16 20:42:39 eserte Exp $
 # Author: Slaven Rezic
 #
 

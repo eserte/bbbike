@@ -120,13 +120,17 @@ sub doMenu {
     my($menu, $sub) = @_;
     my @menuentry;
     my $i;
-    # XXX gibt warnings wenn -tearoff => 0 spezifiert ist
-    for $i (0 .. $menu->index('last')) {
-	if ($menu->type($i) ne 'separator' &&
-	    $menu->type($i) ne 'tearoff') {
-	    push(@menuentry, [$i, $menu->entrycget($i, '-label')]);
-	    if ($menu->type($i) eq 'cascade') {
-		doMenu($menu->entrycget($i, '-menu'), $sub);
+    my $last = $menu->index('last');
+    if ($last ne "none") {
+	for $i (0 .. $last) {
+	    my $menu_type = $menu->type($i);
+	    if (defined $menu_type &&
+		$menu_type ne 'separator' &&
+		$menu_type ne 'tearoff') {
+		push(@menuentry, [$i, $menu->entrycget($i, '-label')]);
+		if ($menu_type eq 'cascade') {
+		    doMenu($menu->entrycget($i, '-menu'), $sub);
+		}
 	    }
 	}
     }

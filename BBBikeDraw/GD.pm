@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.33 2003/09/02 22:32:17 eserte Exp $
+# $Id: GD.pm,v 1.33 2003/09/02 22:32:17 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -258,10 +258,12 @@ sub draw_map {
     my $title_draw = $self->{_TitleDraw};
 
     my($restrict, $restrict_code);
-    if (UNIVERSAL::isa($self->{Restrict}, 'ARRAY')) {
-	$restrict = { map { ($_ => 1) } @{ $self->{Restrict} } };
-    } elsif (UNIVERSAL::isa($self->{Restrict}, 'CODE')) {
-	$restrict_code = $self->{Restrict};
+    if (defined $self->{Restrict}) {
+	if (UNIVERSAL::isa($self->{Restrict}, 'ARRAY')) {
+	    $restrict = { map { ($_ => 1) } @{ $self->{Restrict} } };
+	} elsif (UNIVERSAL::isa($self->{Restrict}, 'CODE')) {
+	    $restrict_code = $self->{Restrict};
+	}
     }
 
     if ($self->{Outline}) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Lazy.pm,v 1.6 2003/08/23 21:45:03 eserte Exp $
+# $Id: Lazy.pm,v 1.7 2003/11/15 16:07:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ package Strassen::Lazy;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 use Object::Realize::Later
     becomes => 'Strassen',
@@ -29,11 +29,14 @@ use Object::Realize::Later
 
 sub new {
     my $class = shift;
-    bless {args=>[@_]}, $class;
+    bless {args => [@_],
+	   strassen_datadirs => [@Strassen::datadirs],
+	  }, $class;
 }
 
 sub load {
     my $self = shift;
+    local @Strassen::datadirs = @{ $self->{strassen_datadirs} },
     my $s = Strassen->new(@{ $self->{args} });
     bless $self, ref $s;
     %$self = %$s;
@@ -51,11 +54,14 @@ use Object::Realize::Later
 
 sub new {
     my $class = shift;
-    bless {args=>[@_]}, $class;
+    bless {args => [@_],
+	   strassen_datadirs => [@Strassen::datadirs],
+	  }, $class;
 }
 
 sub load {
     my $self = shift;
+    local @Strassen::datadirs = @{ $self->{strassen_datadirs} },
     my $s = MultiStrassen->new(@{ $self->{args} });
     bless $self, ref $s;
     %$self = %$s;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAlarm.pm,v 1.25 2003/06/25 23:31:06 eserte Exp $
+# $Id: BBBikeAlarm.pm,v 1.25 2003/06/25 23:31:06 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -548,16 +548,16 @@ sub tk_interface {
 
     if ($args{-ask}) {
 	if ($top->messageBox
-	    (-title => "Set alarm?",
+	    (-title => M"Alarm setzen?",
 	     -icon => "question",
-	     -text => "Set alarm to @{[ scalar localtime $end_time]}?",
+	     -text => Mfmt("Alarm auf %s setzen?", scalar localtime $end_time),
 	     -type => "YesNo") =~ /no/i) {
 	    return;
 	}
     }
 
     my $cb =
-	$top->Button(-text => "Leave",
+	$top->Button(-text => M("Verlassen"),
 		     -command => sub { $top->destroy },
 		    )->pack;
 #    $balloon->attach($cb, -msg => $text);
@@ -571,16 +571,16 @@ sub tk_interface {
     }
 
     {
-	my $ack_t = $top->Toplevel(-title => "Alarm set");
+	my $ack_t = $top->Toplevel(-title => M"Alarm gesetzt");
 	my $wait = int($wait/60);
-	$ack_t->Button(-text => "Alarm set in $wait minute".($wait!=1?"s":""),
+	$ack_t->Button(-text => Mfmt("Alarm in %s %s gesetzt", $wait, $wait==1 ? M"Minute" : M"Minuten"),
 		       -command => sub { $ack_t->destroy },
 		      )->pack;
 	$ack_t->after(10*1000, sub { $ack_t->destroy });
 	$ack_t->Popup;
     }
 
-    add_tk_alarm($$, $end_time, "leave");
+    add_tk_alarm($$, $end_time, M"verlassen");
 
     $top->after
 	($wait*1000, sub {
@@ -643,7 +643,7 @@ sub tk_show_all {
     } else {
 	$top = MainWindow->new;
     }
-    $top->title("Alarm processes");
+    $top->title(M("Alarmprozesse"));
     my $hl;
     $hl = $top->Scrolled("HList", -header => 1,
 			 -columns => 6, -scrollbars => "osoe",
@@ -652,7 +652,7 @@ sub tk_show_all {
 			     my $entry = shift;
 			     my $data = $hl->entrycget($entry, -data);
 			     if ($data->[LIST_HOST] eq $this_host &&
-				 $hl->messageBox(-text => "Kill process $data->[LIST_PID]?",
+				 $hl->messageBox(-text => Mfmt("Prozess %s abbrechen?", $data->[LIST_PID]),
 						 -type => "YesNo",
 						) =~ /yes/i) {
 				 kill 9 => $data->[LIST_PID];
@@ -662,12 +662,12 @@ sub tk_show_all {
 			     }
 			 },
 			)->pack(-fill => "both", -expand => 1);
-    $hl->headerCreate(LIST_HOST,    -text => "Host");
-    $hl->headerCreate(LIST_PID,     -text => "Pid");
-    $hl->headerCreate(LIST_TIME,    -text => "Time");
-    $hl->headerCreate(LIST_RELTIME, -text => "Rel Time");
-    $hl->headerCreate(LIST_DESC,    -text => "Desc");
-    $hl->headerCreate(LIST_STATE,   -text => "State");
+    $hl->headerCreate(LIST_HOST,    -text => M"Rechner");
+    $hl->headerCreate(LIST_PID,     -text => M"Pid");
+    $hl->headerCreate(LIST_TIME,    -text => M"Zeit");
+    $hl->headerCreate(LIST_RELTIME, -text => M"Verbl. Zeit");
+    $hl->headerCreate(LIST_DESC,    -text => M"Beschr.");
+    $hl->headerCreate(LIST_STATE,   -text => M"Status");
     my $i=0;
     foreach my $result (@result) {
 	$hl->add($i, -text => $result->[LIST_HOST], -data => $result);
@@ -675,7 +675,7 @@ sub tk_show_all {
 	$hl->itemCreate($i, LIST_TIME, -text => scalar localtime $result->[LIST_TIME]);
 	my $min = ($result->[LIST_TIME]-time)/60;
 	if ($min < 0) {
-	    $hl->itemCreate($i, LIST_RELTIME, -text => "overdue");
+	    $hl->itemCreate($i, LIST_RELTIME, -text => M"überfällig");
 	} else {
 	    $hl->itemCreate($i, LIST_RELTIME, -text => sprintf "%d:%02d h", $min/60, abs($min)%60);
 	}
@@ -690,21 +690,22 @@ sub show_all {
     my @result;
     my $this_host = _get_host();
 
-    eval <<'EOF';
-    use DB_File;
-    tie my %pids, 'DB_File', get_alarms_file(), O_RDONLY, 0600
-	or die "Can't tie DB_File " . get_alarms_file() . ": $!";
-    while(my($k,$v) = each %pids) {
-	my(@l) = split /\t/, $v;
-	my($host, $pid, $time, $desc) = @l;
-	my $state = "unknown";
-	if ($host eq $this_host) {
-	    $state = (kill(0 => $pid) ? "running" : "not running");
+    eval {
+	require DB_File;
+	require Fcntl;
+	tie my %pids, 'DB_File', get_alarms_file(), &Fcntl::O_RDONLY, 0600
+	    or die "Can't tie DB_File " . get_alarms_file() . ": $!";
+	while(my($k,$v) = each %pids) {
+	    my(@l) = split /\t/, $v;
+	    my($host, $pid, $time, $desc) = @l;
+	    my $state = "unknown";
+	    if ($host eq $this_host) {
+		$state = (kill(0 => $pid) ? M("läuft") : M("läuft nicht"));
+	    }
+	    push @result, [@l, $state];
 	}
-	push @result, [@l, $state];
-    }
-    untie %pids;
-EOF
+	untie %pids;
+    };
     warn $@ if $@;
 
     @result;
@@ -715,13 +716,15 @@ sub add_tk_alarm {
     if (!defined $pid) { $pid = $$ }
     my $this_host = _get_host();
 
-    eval <<'EOF';
-    use DB_File;
-    tie my %pids, 'DB_File', get_alarms_file(), O_RDWR|O_CREAT, 0600
-	or die "Can't tie DB_File " . get_alarms_file() . ": $!";
-    $pids{$this_host.":".$pid} = join("\t", $this_host, $pid, $time, $desc);
-    untie %pids;
-EOF
+    eval {
+	require DB_File;
+	require Fcntl;
+	tie my %pids, 'DB_File', get_alarms_file(),
+	    &Fcntl::O_RDWR|&Fcntl::O_CREAT, 0600
+		or die "Can't tie DB_File " . get_alarms_file() . ": $!";
+	$pids{$this_host.":".$pid} = join("\t", $this_host, $pid, $time, $desc);
+	untie %pids;
+    };
     warn $@ if $@;
 }
 
@@ -730,24 +733,25 @@ sub del_tk_alarm {
     if (!defined $this_pid) { $this_pid = $$ }
     my $this_host = _get_host();
 
-    eval <<'EOF';
-    use DB_File;
-    tie my %pids, 'DB_File', get_alarms_file(), O_RDWR, 0600
-	or die "Can't read DB_File " . get_alarms_file() . ": $!";
-    delete $pids{$this_host.":".$this_pid};
-    my @to_del;
-    while(my($k, $string) = each %pids) {
-	if ($this_host eq (split /\t/, $string)[LIST_HOST]) {
-	    my $time = (split /\t/, $string)[LIST_TIME];
-	    my $pid = (split /\t/, $string)[LIST_PID];
-	    if (!kill 0 => $pid || $time < time) {
-		push @to_del, $k;
+    eval {
+	require DB_File;
+	require Fcntl;
+	tie my %pids, 'DB_File', get_alarms_file(), &Fcntl::O_RDWR, 0600
+	    or die "Can't read DB_File " . get_alarms_file() . ": $!";
+	delete $pids{$this_host.":".$this_pid};
+	my @to_del;
+	while(my($k, $string) = each %pids) {
+	    if ($this_host eq (split /\t/, $string)[LIST_HOST]) {
+		my $time = (split /\t/, $string)[LIST_TIME];
+		my $pid = (split /\t/, $string)[LIST_PID];
+		if (!kill 0 => $pid || $time < time) {
+		    push @to_del, $k;
+		}
 	    }
 	}
-    }
-    delete $pids{$_} foreach @to_del;
-    untie %pids;
-EOF
+	delete $pids{$_} foreach @to_del;
+	untie %pids;
+    };
     warn $@ if $@;
 }
 

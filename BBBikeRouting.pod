@@ -60,9 +60,11 @@ in city scope. For the routing, maximum caching and speed (by using
 the C variant of the A* algorithm) will be used. See L<"MEMBERS"> for a
 list of C<Context> members.
 
-=item search
+=item search(%args)
 
-Perform a search from the start to the goal position.
+Perform a search from the start to the goal position. The parameters
+in C<%args> are optional and will be passed to the underlying
+C<StrassenNetz::search> method.
 
 =item continue($position)
 
@@ -203,10 +205,10 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2001 Slaven Rezic. All rights reserved.
+Copyright (c) 2001,2003 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
 =head1 SEE ALSO
 
-L<bbbike>(1), L<Strassen>(3)
+L<bbbike>(1), L<Strassen>(3), L<Strassen::StrassenNetz>(3).

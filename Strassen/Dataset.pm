@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Dataset.pm,v 1.6 2003/10/07 22:34:02 eserte Exp $
+# $Id: Dataset.pm,v 1.8 2003/11/15 16:14:55 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +16,7 @@ package Strassen::Dataset;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%file %net %crossings %obj);
 
@@ -64,6 +64,15 @@ my %scope2inx = (city   => 0,
 		 wideregion => 2,
 		);
 
+sub file { \%file }
+
+sub datadir { () }
+
+sub Strassen_Module      { "Strassen::Core" }
+sub Strassen_Class       { "Strassen" }
+sub MultiStrassen_Module { "Strassen::MultiStrassen" }
+sub MultiStrassen_Class  { "MultiStrassen" }
+
 # XXX in the future this will do something sensible like using a
 # specific directory or similar
 sub new { bless {}, $_[0] }
@@ -90,25 +99,39 @@ sub get {
     }
     my $obj;
     my @type_files;
-    if (UNIVERSAL::isa($file{$linetype}{$type}, "ARRAY")) {
-	@type_files = @{ $file{$linetype}{$type} };
+
+    if (@$scoperef == 1) {
+	eval q{ require } . $self->Strassen_Module;
+	die $@ if $@;
     } else {
-	@type_files = map { $file{$linetype}{$type} } (0..2);
+	eval q{ require } . $self->MultiStrassen_Module;
+	die $@ if $@;
+    }
+
+    local @Strassen::datadirs = @Strassen::datadirs;
+    my @new_datadirs = $self->datadir;
+    if (@new_datadirs) {
+	@Strassen::datadirs = @new_datadirs;
+    }
+
+    my $file = $self->file;
+    if (UNIVERSAL::isa($file->{$linetype}{$type}, "ARRAY")) {
+	@type_files = @{ $file->{$linetype}{$type} };
+    } else {
+	@type_files = map { $file->{$linetype}{$type} } (0..2);
     }
     if (@$scoperef == 1) {
-	require Strassen::Core;
 	my $filename = $type_files[$scope2inx{$scoperef->[0]}];
 	if (!defined $filename) {
 	    die "No filename for linetype=$linetype, type=$type, scope=@$scoperef defined";
 	}
-	$obj = Strassen->new($filename);
+	$obj = $self->Strassen_Class->new($filename);
     } else {
-	require Strassen::MultiStrassen;
 	my @filenames = grep { defined $_ } @type_files[map { $scope2inx{$_} } @$scoperef];
 	if (!@filenames) {
 	    die "No filenames for linetype=$linetype, type=$type, scopes=@$scoperef defined";
 	}
-	$obj = MultiStrassen->new(@filenames);
+	$obj = $self->MultiStrassen_Class->new(@filenames);
     }
 
     # Add Inaccessible member to strassen only
@@ -116,7 +139,7 @@ sub get {
     if ($linetype eq 'str' && $type eq 's') {
 	my $inacc_str;
 	eval {
-	    $inacc_str = Strassen->new("inaccessible_strassen");
+	    $inacc_str = $self->Strassen_Class->new("inaccessible_strassen");
 	    $obj->{Inaccessible} = $inacc_str;
 	};
     }
