@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAlarm.pm,v 1.22 2003/02/11 23:58:57 eserte Exp $
+# $Id: BBBikeAlarm.pm,v 1.3 2003/05/27 23:13:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -41,7 +41,7 @@ my $install_datebook_additions = 1;
 
 use Time::Local;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
@@ -70,11 +70,39 @@ sub enter_alarm {
 
 	$t->Label(-text => M("Ankunft").":")->grid(-row => 0, -column => 0,
 					     -sticky => "e");
+	my $sunset_choice;
 	my $e = $t->Entry(-textvariable => \$ankunft,
 			  -width => 6,
+			  -validate => 'key',
+			  -vcmd => sub {
+			      $sunset_choice = "";
+			      1;
+			  },
 			 )->grid(-row => 0, -column => 1,
 				 -sticky => "w");
 	$e->focus;
+	if (defined $args{-location} && eval { require Astro::Sunrise; 1 }) {
+	    my($px,$py) = (ref $args{-location} eq 'ARRAY'
+			   ? @{ $args{-location} }
+			   : split /,/, $args{-location}
+			  );
+	    my $get_sun_set = sub {
+		my $alt = shift;
+		Astro::Sunrise::sun_set($px,$py, $alt);
+	    };
+	    my $sunset_real      = $get_sun_set->();
+	    my $sunset_civil     = $get_sun_set->(-6);
+	    my $om = $t->Optionmenu
+		(-variable => \$sunset_choice,
+		 -options => [["" => ""],
+			      ["Sonnenuntergang" => $sunset_real],
+			      ["Ende der bürgerl. Dämmerung" => $sunset_civil],
+			     ],
+		 -command => sub {
+		     $ankunft = $sunset_choice;
+		 },
+		)->grid(-row => 0, -column => 2);
+	}
 
 	$t->Label(-text => M("Abfahrt").":")->grid(-row => 1, -column => 0,
 					     -sticky => "e");
