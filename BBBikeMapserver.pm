@@ -65,12 +65,14 @@ sub read_config {
     $BBBikeMapserver::Config::bbd2esri_prog = $BBBikeMapserver::Config::bbd2esri_prog;
     $BBBikeMapserver::Config::mapserver_prog_relurl = $BBBikeMapserver::Config::mapserver_prog_relurl;
     $BBBikeMapserver::Config::mapserver_prog_url = $BBBikeMapserver::Config::mapserver_prog_url;
+    $BBBikeMapserver::Config::mapserver_bin_dir = $BBBikeMapserver::Config::mapserver_bin_dir;
 
     eval {
 	$self->{MAPSERVER_DIR} = $BBBikeMapserver::Config::mapserver_dir || die "mapserver_dir\n";
 	$self->{MAPSERVER_PROG_RELURL} = $BBBikeMapserver::Config::mapserver_prog_relurl || die "mapserver_prog_relurl\n";
 	$self->{MAPSERVER_PROG_URL} = $BBBikeMapserver::Config::mapserver_prog_url || die "mapserver_prog_url\n";
 	$self->{BBD2ESRI_PROG} = $BBBikeMapserver::Config::bbd2esri_prog || die "bbd2esri_prog\n";
+	$self->{MAPSERVER_BIN_DIR} = $BBBikeMapserver::Config::mapserver_bin_dir; # this is optional
     };
     if ($@) {
 	die "Missing variables in config file $file: $@";
