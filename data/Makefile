@@ -78,7 +78,7 @@ strassen:	.strassen.tmp plaetze
 	-@$(READONLY) $@
 
 .strassen.tmp: strassen-orig
-	$(CONVERT2HAFAS) strassen-orig > $@
+	$(CONVERT2HAFAS) strassen-orig > $@ || (rm -f .strassen.tmp; false)
 
 plaetze: plaetze-orig
 	-@$(WRITEABLE) $@
