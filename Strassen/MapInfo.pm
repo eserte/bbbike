@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapInfo.pm,v 1.13 2004/05/10 20:01:36 eserte Exp $
+# $Id: MapInfo.pm,v 1.14 2004/05/12 13:33:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
@@ -880,6 +880,14 @@ sub export_datadir {
 =back
 
 =cut
+
+# XXX Hack: autoloader does not work for inherited methods
+for my $method (qw(get_anti_conversion)) {
+    my $code = 'sub ' . $method . ' { shift->Strassen::' . $method . '(@_) }';
+    #warn $code;
+    eval $code;
+    die "$code: $@" if $@;
+}
 
 return 1 if caller;
 
