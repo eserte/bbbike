@@ -184,6 +184,20 @@ sub EXISTS {
     exists $str_net->{CNetCoord2Ptr}->{$key};
 }
 
+sub FIRSTKEY {
+    my($self) = @_;
+    my $str_net = $self->{StrassenNetz};
+    keys %{ $str_net->{CNetCoord2Ptr} }; # reset each() iterator
+    $self->NEXTKEY;
+}
+
+sub NEXTKEY {
+    my($self) = @_;
+    my $str_net = $self->{StrassenNetz};
+    my $k = each %{ $str_net->{CNetCoord2Ptr} };
+    $k;
+}
+
 ######################################################################
 
 package StrassenNetz::CNetFile::Net_Level2;
@@ -230,5 +244,30 @@ sub EXISTS {
     }
     0;
 }
+
+sub FIRSTKEY {
+    my($self) = @_;
+    my $str_net = $self->{StrassenNetz};
+    $self->{_Iterator} = -1;
+    $self->NEXTKEY;
+}
+
+sub NEXTKEY {
+    my($self) = @_;
+    my $str_net = $self->{StrassenNetz};
+    $self->{_Iterator}++;
+    my(undef,undef,undef,@neighbors) =
+	$str_net->get_coord_struct
+	    ($str_net->translate_pointer
+	     ($str_net->{CNetCoord2Ptr}->{$self->{Key1}}));
+    if ($self->{_Iterator} < @neighbors/2) {
+	my($x,$y) = $str_net->get_coord_struct
+	    ($str_net->translate_pointer
+	     ($neighbors[$self->{_Iterator}*2]));
+	return "$x,$y";
+    }
+    return;
+}
+
 
 1;
