@@ -67,13 +67,16 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 	my $self = shift->new;
 	my $apache_root;
 	my $htdocs;
+        my $fontslist;
 	if (-d "/var/www/domains/radzeit.de/www/BBBike/data/") {
 	    # new radzeit.de
 	    $apache_root = "/var/www/domains/radzeit.de/www";
 	    $htdocs = "public";
+            $fontslist = "fonts-radzeit-new.list";
 	} else {
 	    $apache_root = "/usr/local/apache/radzeit";
 	    $htdocs = "htdocs";
+            $fontslist = "fonts-radzeit.list";
 	}
 	$self->BbbikeDir("$apache_root/BBBike");
 	$self->MapserverMapDir("$apache_root/$htdocs/mapserver/brb");
@@ -82,7 +85,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 	$self->MapserverUrl("http://www.radzeit.de/mapserver/brb");
 	$self->TemplateMap("brb.map-tpl");
 	$self->ImageSuffix("png");
-	$self->FontsList("fonts-radzeit.list");
+        $self->FontsList($fontslist);
 	$self;
     }
 
