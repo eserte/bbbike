@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.20 2004/10/02 16:04:57 eserte Exp eserte $
+# $Id: BBBikeMapserver.pm,v 1.21 2004/12/06 20:38:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.

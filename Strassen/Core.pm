@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.48 2004/12/05 21:55:27 eserte Exp $
+# $Id: Core.pm,v 1.49 2004/12/06 20:34:50 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.48 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.49 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -108,10 +108,11 @@ sub new {
 
     my(@filenames);
     if (defined $filename) {
-	push @filenames, $filename;
 	if (!file_name_is_absolute($filename)) { 
 	    push @filenames, map { $_ . "/$filename" } @datadirs;
 	}
+	# relative filenames to end
+	push @filenames, $filename;
     }
     my $self = { Data => [],
 		 Directives => [],
@@ -758,6 +759,8 @@ sub to_koord_slow {
 	    CORE::push(@res, [$1, $2]);
 	} elsif ($_ eq '*') {
 	    CORE::push(@res, $_);
+	} elsif (/(-?\d+(?:\.\d*)?),(-?\d+(?:\.\d*)?)$/) { # float numbers
+	    CORE::push(@res, [$1, $2]);
 	} else {
 	    warn "Unrecognized reference: $_";
 	    return [];
@@ -776,6 +779,8 @@ sub to_koord1_slow {
     } elsif ($s =~ /^((:[^:]*:)?([A-Za-z])?)?(-?\d+),(-?\d+)$/) {
 	# Ausgabe: x, y, coordsystem, bahnhof
 	[$4, $5, $3, $2];
+    } elsif (/(-?\d+(?:\.\d*)?),(-?\d+(?:\.\d*)?)$/) { # float numbers
+	[$1, $2];
     } else {
 	warn "Unrecognized string: $s...";
 	[undef, undef]; # XXX
