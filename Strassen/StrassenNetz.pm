@@ -101,7 +101,7 @@ sub get_cachefile {
     my $self = shift;
     require File::Basename;
     my(@src) = $self->sourcefiles;
-    my $cachefile = join("_", map { File::Basename::basename($_) } @src);
+    my $cachefile = join("_", map { defined $_ ? File::Basename::basename($_) : "undef" } @src);
     $cachefile;
 }
 
