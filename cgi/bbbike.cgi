@@ -3455,11 +3455,15 @@ EOF
 		if ($with_comments && $comments_net) {
 		    print "<td>$fontstr$etappe_comment$fontend</td>";
 		}
-		if ($has_fragezeichen && $fragezeichen_comment ne "") {
-		    my $qs = CGI->new({strname => $fragezeichen_comment,
-				       strname_html => CGI::escapeHTML($fragezeichen_comment),
-				      })->query_string;
-		    print qq{<td>$fontstr<a target="newstreetform" href="$bbbike_html/fragezeichenform.html?$qs">Kommentar eintragen</a>$fontend</td>};
+		if ($has_fragezeichen) {
+		    if ($fragezeichen_comment ne "") {
+			my $qs = CGI->new({strname => $fragezeichen_comment,
+					   strname_html => CGI::escapeHTML($fragezeichen_comment),
+					  })->query_string;
+			print qq{<td>$fontstr<a target="newstreetform" href="$bbbike_html/fragezeichenform.html?$qs">Kommentar eintragen</a>$fontend</td>};
+		    } else {
+			print qq{<td>&nbsp;</td>};
+		    }
 		}
 		print "</tr>\n";
 	    }
