@@ -387,7 +387,7 @@ sub radweg_draw_arrow {
 					$radweg_data[$index]->[1]);
     my($cx1, $cy1, $cx2, $cy2) = ($c_w/2, $c_h/2,
 				  ($x2-$x1)/$len*15+$c_w/2,
-				  ($y2-$y1)/$len*15+$c_h/2);
+				  ($y1-$y2)/$len*15+$c_h/2);
     $c->createLine($cx1, $cy1, $cx2, $cy2,
 		   -arrow => ($reverse ? 'first' : 'last'),
 		   -width => 4,
@@ -416,6 +416,7 @@ sub BBBikeEdit::radweg_draw_canvas {
 	$progress->Init(-dependents => $c,
 			-label => File::Basename::basename($radweg_file));
     }
+local $scale = 1;#XXX remove $scale
     eval {
 	my $i = 0;
 	foreach my $l (@data) {

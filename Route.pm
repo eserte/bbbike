@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Route.pm,v 1.19 2003/12/22 19:39:09 eserte Exp $
+# $Id: Route.pm,v 1.19 2003/12/22 19:39:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2001 Slaven Rezic. All rights reserved.
@@ -442,6 +442,11 @@ sub load {
 
 sub save {
     my(%args) = @_;
+    my $obj = delete $args{-object}; # the same as the return value of load
+    if ($obj) {
+	$args{-realcoords} = $obj->{RealCoords};
+	$args{-searchroutepoints} = $obj->{SearchRoutePoints};
+    }
     die "-file?"       if !$args{-file};
     die "-realcoords?" if !$args{-realcoords};
     $args{-searchroutepoints} = [] if !$args{-searchroutepoints};

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: correct_data.pl,v 1.14 2004/06/07 23:04:54 eserte Exp eserte $
+# $Id: correct_data.pl,v 1.15 2004/06/08 21:51:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,6 @@
 #
 
 # TODO: pre-populate %conv (i.e. from "strassen")
-#       also convert .bbd
 #       load_conv/save_conv behaves badly for concurrent processes
 
 package BBBike::CorrectData;
@@ -49,6 +48,7 @@ my $in_place;
 my $force;
 my $in_berlin_check;
 my $in_berlin_sub;
+my $is_bbr;
 # See also data_corrected/Makefile
 my @INNER_BERLIN_COORDS = qw(-5400 19500 20800 1950);
 
@@ -68,10 +68,11 @@ sub process {
 		    "inplace!" => \$in_place,
 		    "f|force!" => \$force,
 		    "inberlincheck!" => \$in_berlin_check,
+		    "bbr" => \$is_bbr,
 		   )) {
 	die <<EOF;
 usage: $0 [-refdist dist1,dist2,...] [-correction datfile] [-verboseoutput ...] [-minpoints ...] [-convdata ...] [-reverse] [-keepeverything]
-[-inplace] [-force] [-inberlincheck] streetfile
+[-inplace] [-force] [-inberlincheck] [-bbr] streetfile
 EOF
     }
     _init_ref_dist();
@@ -100,7 +101,7 @@ EOF
 	my $maxx = List::Util::max(map { $_->[0] } @polygon);
 	my $maxy = List::Util::max(map { $_->[1] } @polygon);
 
- 	my $in_berlin_sub = sub {
+ 	$in_berlin_sub = sub {
  	    my $c = shift;
 	    my($px,$py) = split /,/, $c;
 	    return 1 if (VectorUtil::point_in_grid($px,$py,@INNER_BERLIN_COORDS));
@@ -108,6 +109,24 @@ EOF
 	    return 1 if (VectorUtil::point_in_polygon([$px,$py],\@polygon));
 	    return 0;
 	};
+    }
+
+    if ($is_bbr) {
+	require Route;
+	my $r = Route::load($file);
+	for my $p (@{ $r->{SearchRoutePoints} }) {
+	    my($x,$y) = split /,/, $p->[0];
+	    ($x,$y) = convert_record_for_x_y($x,$y);
+	    $p->[0] = "$x,$y";
+	}
+	for my $p (@{ $r->{RealCoords} }) {
+	    # "int" to avoid strings in route dump
+	    my($x,$y) = map { int } convert_record_for_x_y(@$p);
+	    $p = [$x,$y];
+	}
+
+	Route::save(-file => "-", -object => $r);
+	return;
     }
 
     my $in_place_file;

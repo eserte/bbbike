@@ -401,4 +401,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'B 1; (Hauptstr.); OD Herzfelde Kanal- und Straßenbau Vollsperrung 05.07.2004-30.08.2004 ',
        type  => 'handicap',
      },
+     { from  => 1086865200, # 2004-06-10 13:00
+       until => 1086998400, # 2004-06-12 02:00
+       file  => 'sowj_ehrenmal.bbd',
+       text  => 'Die Straße des 17.Juni zwischen Entlastungsstraße und Ebertstraße (Start- und Zielbereich) ist von 11.06.2004,13:00 Uhr bis 12.06.2004, ca. 02:00 Uhr gesperrt (Sportveranstaltung).',
+       type  => 'handicap',
+     },
     );
