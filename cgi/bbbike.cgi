@@ -1573,37 +1573,8 @@ EOF
 
 		# show choices in the overview map, too
 		if ($nice_berlinmap) {
-		    print "<div id=${type}mapbelow style=\"position:relative;visibility:hidden;\">";
-		    print "<img src=\"$bbbike_images/berlin_small.gif\" border=0 width=200 height=200 alt=\"\">";
-		    print "</div>";
-
-		    my $js = "";
-		    my $match_nr = 0;
-
-		    my $out_i = 0;
-		    foreach $s (@$matchref) {
-			last if ++$out_i > $max_matches;
-			$match_nr++;
-			next if $s->[MATCHREF_ISORT_INDEX];
-			my $xy = $s->[PLZ::LOOK_COORD()];
-			next if !defined $xy;
-			my($tx,$ty) = map { int $_ } overview_map()->{Transpose}->(split /,/, $xy);
-			$tx -= 4; $ty -= 4; # center reddot.gif
-			my $divid = $type . "match" . $match_nr;
-			print "<div id=$divid style=\"position:absolute;visibility:show;background-color:#ff6060;\">";
-			print "<a href=\"#\" onclick=\"document.BBBikeForm.${type}2[" . ($match_nr-1) . "].checked = true; return false;\"><img src=\"$bbbike_images/reddot.gif\" border=0 width=8 height=8 alt=\"$s->[0] ($s->[1])\"></a>";
-			print "</div>";
-			$js .= "pos_rel(\"$divid\", \"${type}mapbelow\", $tx, $ty);\nvis(\"$divid\", \"show\");\n";
-		    }
-
-		    print <<EOF;
-<script type="text/javascript"><!--
-function $ {type}map_init() { vis("${type}mapbelow", "show"); $js }
-// --></script>
-EOF
+		    berlinmap_with_choices($type, $matchref);
                     $has_init_map_js++;
-
-
 		} else {
 		    print "&nbsp;";
 		}
@@ -1725,6 +1696,38 @@ function " . $type . "char_init() {}
     print footer_as_string();
 
     print $q->end_html;
+}
+
+sub berlinmap_with_choices {
+    my($type, $matchref) = @_;
+    print "<div id=${type}mapbelow style=\"position:relative;visibility:hidden;\">";
+    print "<img src=\"$bbbike_images/berlin_small.gif\" border=0 width=200 height=200 alt=\"\">";
+    print "</div>";
+
+    my $js = "";
+    my $match_nr = 0;
+
+    my $out_i = 0;
+    foreach my $s (@$matchref) {
+	last if ++$out_i > $max_matches;
+	$match_nr++;
+	next if $s->[MATCHREF_ISORT_INDEX];
+	my $xy = $s->[PLZ::LOOK_COORD()];
+	next if !defined $xy;
+	my($tx,$ty) = map { int $_ } overview_map()->{Transpose}->(split /,/, $xy);
+	$tx -= 4; $ty -= 4; # center reddot.gif
+	my $divid = $type . "match" . $match_nr;
+	print "<div id=$divid style=\"position:absolute;visibility:show;background-color:#ff6060;\">";
+	print "<a href=\"#\" onclick=\"document.BBBikeForm.${type}2[" . ($match_nr-1) . "].checked = true; return false;\"><img src=\"$bbbike_images/reddot.gif\" border=0 width=8 height=8 alt=\"$s->[0] ($s->[1])\"></a>";
+	print "</div>";
+	$js .= "pos_rel(\"$divid\", \"${type}mapbelow\", $tx, $ty);\nvis(\"$divid\", \"show\");\n";
+    }
+
+    print <<EOF;
+<script type="text/javascript"><!--
+function $ {type}map_init() { vis("${type}mapbelow", "show"); $js }
+// --></script>
+EOF
 }
 
 sub choose_ch_form {
