@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.8 2004/08/01 17:38:47 eserte Exp $
+# $Id: Strasse.pm,v 1.8 2004/08/01 17:38:47 eserte Exp eserte $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -183,6 +183,18 @@ sub split_street_citypart {
 	@cityparts = split /\s*,\s*/, $2;
     }
     ($str, @cityparts);
+}
+
+sub get_crossing_streets {
+    my($main_street, $prev_street, $cross_streets_ref) = @_;
+    my @cross_streets = $cross_streets_ref ? @$cross_streets_ref : ();
+
+    @cross_streets = grep { ($_ ne $main_street &&
+			     (!defined $prev_street || $_ ne $prev_street)
+			    ) 
+			} @cross_streets;
+
+    @cross_streets;
 }
 
 1;

@@ -15,7 +15,7 @@
 
 package BBBikeRouting;
 
-BEGIN { $^W = 1 }
+BEGIN { $^W = 0 }
 
 use strict;
 use Class::Struct;

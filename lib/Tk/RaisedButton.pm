@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: RaisedButton.pm,v 1.1 1999/12/20 01:20:09 eserte Exp $
+# $Id: RaisedButton.pm,v 1.1 1999/12/20 01:20:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
@@ -12,14 +12,14 @@
 # WWW:  http://user.cs.tu-berlin.de/~eserte/
 #
 
-# XXX package Tk::RaisedButton verwenden!!!!!
-# oder per import festlegen, ob Tk::Button oder Tk::RaisedButton
+# evtl. per import festlegen, ob alle Tk::Buttons sich wie
+# Tk::RaisedButton verhalten sollen
 
-package
-   Tk::Button;
-use Tk::Button;
+package Tk::RaisedButton;
+use Tk;
+use base 'Tk::Button';
 
-local $^W = 0;
+Construct Tk::Widget 'RaisedButton';
 
 sub Enter
 {

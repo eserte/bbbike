@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.39 2004/09/10 00:24:05 eserte Exp $
+# $Id: Makefile,v 1.40 2004/10/02 16:03:00 eserte Exp eserte $
 #
 
 # Targets:
@@ -62,7 +62,13 @@ RSYNC_DEST?=	${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_HOST}:${BBBIKE_RADZEIT_APAC
 RSYNC_SRCDEST?=	. ${RSYNC_DEST}
 
 # XXX Should be set from mapserver/brb/Makefile:
-WWW_USER=	www
+WWW_USER?=	www
+
+TESTS=		basic.t \
+		cgihead.t \
+		cgi-mechanize.t \
+		cgi.t \
+		wapcgi.t \
 
 .if ${OSTYPE} == "linux"
 XARGS_REPL?=	xargs --replace=%
@@ -223,10 +229,9 @@ prepare-bbbike-dist-prog-bbbike:
 	    ${CURDIR}/BBBike/miscsrc/
 	[ -d ${CURDIR}/BBBike/t ] || \
 	    mkdir ${CURDIR}/BBBike/t
-	cp -pf ${BBBIKE_ROOT_DIR}/t/cgihead.t 		\
-	       ${BBBIKE_ROOT_DIR}/t/cgi-mechanize.t	\
-	       ${BBBIKE_ROOT_DIR}/t/cgi.t     		\
-	       ${BBBIKE_ROOT_DIR}/t/wapcgi.t  ${CURDIR}/BBBike/t
+	for f in ${TESTS}; do \
+	    cp -pf ${BBBIKE_ROOT_DIR}/t/$$f ${CURDIR}/BBBike/t; \
+	done
 	cp -pf ${BBBIKE_ROOT_DIR}/html/Makefile		\
 	       ${BBBIKE_ROOT_DIR}/html/newstreetform.tpl.html	\
 	    ${CURDIR}/BBBike/html
@@ -240,7 +245,7 @@ prepare-bbbike-dist-data:	prepare-bbbike-dist-data-datadir \
 				prepare-bbbike-dist-data-temp-blockings-dir \
 				prepare-bbbike-dist-data-teasers
 
-# Usually data/* is already hardlinkes against the originals, so
+# Usually data/* is already hardlinked against the originals, so
 # no additional copying for data/* is necessary
 prepare-bbbike-dist-data-datadir:
 
@@ -307,9 +312,7 @@ test:
 	BBBIKE_TEST_WAPURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/wapbbbike.cgi \
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
-		cgihead.t \
-		cgi.t \
-		wapcgi.t
+		${TESTS}
 
 test-on-remote:
 	ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
@@ -319,10 +322,7 @@ test-on-remote:
 	BBBIKE_TEST_WAPURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/wapbbbike.cgi \
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
-		cgihead.t \
-		cgi-mechanize.t \
-		cgi.t \
-		wapcgi.t \
+		${TESTS} \
 	'
 
 test-on-remote-and-send-mail:
@@ -333,10 +333,7 @@ test-on-remote-and-send-mail:
 	BBBIKE_TEST_WAPURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/wapbbbike.cgi \
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
 	    (perl -MTest::Harness -e "runtests(@ARGV)" \
-		cgihead.t \
-		cgi-mechanize.t \
-		cgi.t \
-		wapcgi.t | mail slaven@rezic.de ) & \
+		${TESTS} | mail slaven@rezic.de ) & \
 	'
 
 test-local:
@@ -347,10 +344,7 @@ test-local:
 	BBBIKE_TEST_MAPSERVERURL=http://localhost/~eserte/cgi/mapserv.cgi \
 	BBBIKE_TEST_HTMLDIR=${LOCAL_HTML_URL} \
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
-		cgihead.t \
-		cgi-mechanize.t \
-		cgi.t \
-		wapcgi.t
+		${TESTS}
 
 server-permissions:
 	ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\

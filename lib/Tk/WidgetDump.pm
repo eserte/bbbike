@@ -470,7 +470,7 @@ sub WidgetInfo {
     if (!eval {
 		require Tk::ObjEditor;
 		$ObjScanner = "ObjEditor";
-		$Storable::forgive_me = 1; # XXX hack to prevent problems with code refs
+		$Storable::forgive_me = $Storable::forgive_me = 1; # XXX hack to prevent problems with code refs
 		1;
 	    }) {
 	eval { require Tk::ObjScanner;
@@ -1251,6 +1251,8 @@ sub entry {
     $f;
 }
 
+$Tk::Config::xinc = $Tk::Config::xinc if 0; # peacify -w
+
 package Tk::WidgetDump::Command;
 use base qw(Tk::WidgetDump::Entry);
 
@@ -1346,9 +1348,15 @@ Tk::WidgetDump - dump the widget hierarchie
 
 =head1 SYNOPSIS
 
+In a script:
+
     use Tk::WidgetDump;
     $mw = new MainWindow;
     $mw->WidgetDump;
+
+From the command line for a quick widget option test:
+
+    perl -MTk -MTk::WidgetDump -e '$mw=tkinit; $mw->Button->pack; $mw->WidgetDump; MainLoop'
 
 =head1 DESCRIPTION
 

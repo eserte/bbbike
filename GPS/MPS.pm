@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MPS.pm,v 1.2 2003/12/22 19:44:38 eserte Exp $
+# $Id: MPS.pm,v 1.3 2004/10/02 18:17:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -16,9 +16,9 @@ package GPS::MPS;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
-use Fcntl qw(:seek);
+use constant SEEK_CUR => 1; # no Fcntl for 5.005 compatibility
 
 sub check {
     my $self = shift;

@@ -123,6 +123,13 @@ sub add {
     }
 }
 
+# Return true if the given $coord is a crossing
+### AutoLoad Sub
+sub crossing_exists {
+    my($self, $coord) = @_;
+    exists $self->{Hash}{$coord};
+}
+
 # Return an array reference of street names of this coord
 ### AutoLoad Sub
 sub get {

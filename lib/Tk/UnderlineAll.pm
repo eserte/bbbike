@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: UnderlineAll.pm,v 1.11 2001/08/26 11:26:56 eserte Exp eserte $
+# $Id: UnderlineAll.pm,v 1.12 2004/10/02 08:50:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright © 1997,2001 Slaven Rezic. All rights reserved.

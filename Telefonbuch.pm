@@ -1088,6 +1088,9 @@ sub get_from_db {
 
 1;
 
+%main::str_file = %$main::str_file if 0; # peacify -w
+$main::devel_host = $main::devel_host if 0; # peacify -w
+
 __END__
 
 use FindBin;
@@ -1133,8 +1136,5 @@ $tel_t->OnDestroy(sub {
 });
 
 MainLoop;
-
-%main::str_file = %$main::str_file if 0; # peacify -w
-$main::devel_host = $main::devel_host if 0; # peacify -w
 
 1;

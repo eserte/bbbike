@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.19 2004/06/01 23:14:35 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.20 2004/10/02 16:04:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -67,12 +67,14 @@ sub read_config {
     }
 
     # cease -w
-    $BBBikeMapserver::Config::mapserver_dir	    = $BBBikeMapserver::Config::mapserver_dir;
-    $BBBikeMapserver::Config::bbd2esri_prog	    = $BBBikeMapserver::Config::bbd2esri_prog;
-    $BBBikeMapserver::Config::mapserver_prog_relur  = $BBBikeMapserver::Config::mapserver_prog_relurl;
-    $BBBikeMapserver::Config::mapserver_prog_url    = $BBBikeMapserver::Config::mapserver_prog_url;
-    $BBBikeMapserver::Config::mapserver_bin_dir	    = $BBBikeMapserver::Config::mapserver_bin_dir;
-    $BBBikeMapserver::Config::mapserver_fonts_list  = $BBBikeMapserver::Config::mapserver_fonts_list;
+    if (0) {
+	$BBBikeMapserver::Config::mapserver_dir	    = $BBBikeMapserver::Config::mapserver_dir;
+	$BBBikeMapserver::Config::bbd2esri_prog	    = $BBBikeMapserver::Config::bbd2esri_prog;
+	$BBBikeMapserver::Config::mapserver_prog_relurl = $BBBikeMapserver::Config::mapserver_prog_relurl;
+	$BBBikeMapserver::Config::mapserver_prog_url    = $BBBikeMapserver::Config::mapserver_prog_url;
+	$BBBikeMapserver::Config::mapserver_bin_dir	= $BBBikeMapserver::Config::mapserver_bin_dir;
+	$BBBikeMapserver::Config::mapserver_fonts_list  = $BBBikeMapserver::Config::mapserver_fonts_list;
+    }
 
     eval {
 	$self->{MAPSERVER_DIR}	       = $BBBikeMapserver::Config::mapserver_dir || die "mapserver_dir\n";

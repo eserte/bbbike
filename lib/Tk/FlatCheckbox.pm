@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: FlatCheckbox.pm,v 1.10 2002/02/23 18:41:36 eserte Exp eserte $
+# $Id: FlatCheckbox.pm,v 1.11 2004/10/02 08:49:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2002 Slaven Rezic. All rights reserved.

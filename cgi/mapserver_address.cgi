@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.16 2003/12/22 19:49:03 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.16 2003/12/22 19:49:03 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -18,6 +18,7 @@ BEGIN { delete $INC{"FindBin.pm"} }
 use FindBin;
 use vars qw($BBBIKE_ROOT $BBBIKE_URL);
 BEGIN { # XXX do not hardcode
+    $ENV{SERVER_NAME} ||= "";
     if ($ENV{SERVER_NAME} eq 'radzeit.herceg.de') {
 	$BBBIKE_ROOT = "/home/e/eserte/src/bbbike/projects/www.radzeit.de/BBBike";
 	$BBBIKE_URL = "/BBBike";

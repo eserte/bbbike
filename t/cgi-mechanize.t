@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.9 2004/09/10 00:24:15 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.10 2004/10/02 16:03:20 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -250,7 +250,7 @@ $agent->form("BBBikeForm");
 $agent->submit();
 
 like($agent->content, qr/Kleine Parkstr\..*ist nicht bekannt/i, "Street not in database");
-like($agent->content, qr{\Qhtml/newstreetform.html?strname=Kleine%20Parkstr}i, "newstreetform link");
+like($agent->content, qr{\Qhtml/newstreetform.html?\E.*\Qstrname=Kleine%20Parkstr}i, "newstreetform link");
 like($agent->content, qr{Lehrter Bahnhof.*?die nächste Kreuzung}is,  "S-Bhf.");
 like($agent->content, qr{Invalidenstr./Heidestr.}i,  "S-Bhf., next crossing");
 

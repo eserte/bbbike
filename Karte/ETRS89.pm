@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ETRS89.pm,v 1.3 2003/04/17 18:14:12 eserte Exp $
+# $Id: ETRS89.pm,v 1.4 2004/10/02 08:23:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Karte::ETRS89;
 
 use strict;
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Exporter);
 @EXPORT_OK = qw(UTMToETRS89 ETRS89ToUTM ETRS89ToDegrees);
@@ -65,6 +65,8 @@ sub ETRS89ToDegrees {
 #    Karte::UTM::ConvFromTM($x, $y, 0, $long0, 1.0, $datum);
     Karte::UTM::ConvFromTM($x, $y, 0, $long0, $Karte::UTM::UTMk0, $datum);
 }
+
+$Karte::UTM::UTMk0 = $Karte::UTM::UTMk0 if 0; # peacify -w
 
 1;
 

@@ -122,7 +122,7 @@ Grenzstr.: Kopfsteinpflaster	Q2 8570,15107 8412,14923
 Scheringstr.: Kopfsteinpflaster	Q2 8900,15146 8686,14934
 Charlottenstr.: mäßiges Kopfsteinpflaster	Q2 9653,10950 9615,11225
 Admiralbrücke: Kopfsteinpflaster	Q2 11177,9935 11193,9995
-Admirlastr.: Kopfsteinpflaster	Q2 11193,9995 11237,10114
+Admiralstr.: Kopfsteinpflaster	Q2 11193,9995 11237,10114
 Böckhstr.: teilweise Kopfsteinpflaster, teilweise Asphalt	Q1 11200,9889 11411,9810 11639,9716
 Kohlfurter Str.: Kopfsteinpflaster (mit Rennrad trotzdem 25 km/h möglich)	Q2 11512,10105 11269,10204 11089,10276
 Archibaldweg: Kopfsteinpflaster	Q2 16160,11154 16028,11049
@@ -167,7 +167,7 @@ Liberdastr.: Kopfsteinpflaster	Q2 12150,9545 12207,9632 12257,9703
 Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
 Fuldastr.: Kopfsteinpflaster	Q2 12907,9073 12740,8862
 Reuterstr.: Kopfsteinpflaster	Q2 12195,8436 12217,8320
-Torfstr.: Kopfsteinpflaster	Q2 6647,15094 6859,14837
+Torfstr.: Kopfsteinpflaster	Q2 6647,15094 6756,14962 6859,14837
 Ostpreußendamm.: gutes Kopfsteinpflaster	Q1 3450,543 3579,627 3626,699 3647,739 3849,1116 3879,1211
 Alexandrinenstr.: Kopfsteinpflaster	Q2 10678,11172 10586,11116
 Schulzendorfer Str.: (schlechtes?) Kopfsteinpflaster	Q2 -596,23009 -862,22946 -1484,22799
@@ -361,7 +361,7 @@ Zillestr.: Kopfsteinpflaster	Q2 3268,11834 3121,11838
 Am Graben: Kopfsteinpflaster	Q2 -4755,7736 -4800,7767
 Imchenallee: holpriger Weg	Q1 -6853,4756 -6970,4546 -6981,4469 -7092,4198 -7182,4137 -7263,4145 -7547,4131 -7686,4182 -7706,4221
 Tegeler Weg: Kopfsteinpflaster	Q2 7467,14633 7285,14854
-Tegeler Weg: Kopfsteinpflaster	Q2 7199,14978 7095,15222 7020,15314
+Tegeler Weg: Kopfsteinpflaster	Q2 7199,14978 7144,15106 7095,15222 7020,15314
 Lynarstr.: Kopfsteinpflaster	Q2 7152,14779 7285,14854 7754,15160
 Kiautschoustr.: Kopfsteinpflaster	Q2 7199,14978 7020,14897 6976,14879
 Henriette-Herz-Platz: Kopfsteinpflaster, OK	Q1 10132,12941 10255,12959 10371,13006
@@ -876,8 +876,8 @@ Blumenthalstr.: Kopfsteinpflaster	Q2 8961,6126 8990,5950
 Kaiserin-Augusta-Str.: Kopfsteinpflaster	Q2 8990,5950 9177,5922
 (Teltowkanal, Nordufer): Parkweg	Q2 8750,5173 9118,5328 9145,5323 9182,5332
 Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
-(Kynaststr. - Uferwanderweg): Parkweg	Q2 14828,10628 14887,10584
-Paul-und-Paula-Ufer: Parkweg	Q2 15321,10099 15261,10167 14905,10424 14856,10459 14887,10584 14937,10598 14990,10581 15100,10637 15209,10581
+(Kynaststr. - Uferwanderweg): Parkweg	Q1 14828,10628 14906,10587
+Paul-und-Paula-Ufer: Parkweg, teilweise auch Asphalt/Beton	Q1 15314,10121 15261,10167 15204,10201 15137,10239 14903,10403 14864,10451 14906,10587 14937,10598 14990,10581 15100,10637 15209,10581
 Am Rummelsburger See: glatt gepflastert	Q0 15209,10581 15453,10415
 Am Rummelsburger See: Parkweg	Q2 15453,10415 15456,10356 15518,10234 15625,10187 15828,9875 15931,9846
 Am Rummelsburger See: Betonweg	Q0 15931,9846 16046,9746 16262,9925
@@ -896,6 +896,12 @@ Vorfahrt Reichstagsgebäude: Kopfsteinpflaster, OK	Q1 8400,12417 8400,12605
 Hagenauer Str.: Kopfsteinpflaster	Q2 11154,14985 11187,14763
 Kolmarer Str.: Kopfsteinpflaster	Q2 11299,14112 11418,14290
 südliches Spreeufer: Parkweg	Q1 7477,12374 7684,12543 7934,12734 8033,12813 8084,12914 8228,12964 8496,12750 8554,12593
+Glasbläserallee: Verbundsteinpflaster	Q0 14759,10096 14850,10265 14893,10359
+Fischzug: Asphalt	Q0 14850,10265 14929,10221 15090,10140
+Fischzug: Kopfsteinpflaster, teilweise auch Verbundsteinpflaster	Q2 15090,10140 15153,10112 15209,10087
+Am Speicher: Kopfsteinpflaster	Q2 15209,10087 15261,10167
+Palmkernzeile: Verbundsteinpflaster	Q0 15100,9831 15209,10087
+Friedrich-Junge-Str.: Asphalt	Q0 15020,9875 15153,10112 15181,10154
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
 Schützallee: mäßiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfläche	Q2 2230,3823 1952,3864 1677,3885
 Riemeisterstr.: mäßiges Kopfsteinpflaster	Q2 373,4816 319,4906 168,5092 103,5123
@@ -974,3 +980,5 @@ Wunnibaldstr.: Asphalt	Q0 19396,456 19509,745
 Tannenweg: mäßig	Q2 -2993,17856 -3003,17990
 Klüberstr.: Beton	Q0 7912,2690 7943,2834
 Dregerhoffstr.: Beton	Q0 22904,2675 23427,2812 24050,2968 24084,2925 24190,2987
+Sprengelstr. (Wedding): Asphalt	Q0 6756,14962 6959,15032 7144,15106 7292,15154
+Zum Großen Windkanal: Asphalt	Q0 19151,3101 19334,3268 19570,3509

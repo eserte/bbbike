@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTScrollbar.pm,v 1.1 1998/10/31 02:06:10 eserte Exp $
+# $Id: SRTScrollbar.pm,v 1.2 2004/10/02 08:50:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -16,6 +16,14 @@
 use Tk::Scrollbar;
 
 package Tk::Scrollbar;
+
+BEGIN {
+    if ($] < 5.006) {
+	$INC{"warnings.pm"} = 1;
+	*warnings::unimport = sub { };
+    }
+}
+no warnings 'redefine';
 
 sub ClassInit
 {

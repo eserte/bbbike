@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman_split.pl,v 1.4 2004/03/02 08:37:58 eserte Exp $
+# $Id: gpsman_split.pl,v 1.4 2004/03/02 08:37:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.

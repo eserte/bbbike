@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Tk.pm,v 1.8 2003/10/22 21:36:04 eserte Exp $
+# $Id: Tk.pm,v 1.9 2004/10/02 08:21:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright: see BikePower.pm
@@ -43,7 +43,7 @@ sub set_lang {
 package BikePower::Tk;
 use BikePower;
 use vars qw($VERSION @interfaces %icons);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 # language strings
 my $lang_s =
@@ -125,7 +125,7 @@ sub load_air_resistance_icons {
     my $f = shift;
     my $air_r;
     foreach $air_r (keys %BikePower::air_resistance) {
-	if (!defined $Bikepower::air_resistance{$air_r}->{'icon'}) {
+	if (!defined $BikePower::air_resistance{$air_r}->{'icon'}) {
 	    eval {
 		$BikePower::air_resistance{$air_r}->{'icon'} =
 		  $f->MainWindow->Pixmap(-file =>
@@ -466,6 +466,8 @@ sub tk_interface {
 
     my $res_frame = $top->Frame(-bg => 'yellow')->pack(-fill => 'x',
 						       -ipady => 5);
+    # XXX But the entries should still be grey or white depending on the
+    # windowing system
     $res_frame->optionAdd('*' . substr($res_frame->PathName, 1) . "*background"
 			  => 'yellow', 'userDefault');
     $row = 0;

@@ -1961,4 +1961,6 @@ sub use_data_format {
 
 sub DESTROY { }
 
+*make_net_classic = *make_net_classic if 0; # peacify -w
+
 1;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MasterStrassen.pm,v 1.2 1999/04/13 13:39:04 eserte Exp $
+# $Id: MasterStrassen.pm,v 1.2 1999/04/13 13:39:04 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
@@ -167,6 +167,11 @@ package MasterStrassen;
 #use AutoLoader 'AUTOLOAD';
 use DB_File;
 use vars qw(@datadirs $VERBOSE); # XXX $OLD_AGREP 
+
+if (!defined $FindBin::RealBin) {
+    require FindBin;
+    import FindBin;
+}
 
 @datadirs = ("$FindBin::RealBin/data", './data');
 foreach (@INC) {

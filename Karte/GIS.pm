@@ -61,7 +61,7 @@ sub save_as_route {
     my $file = shift;
     require Data::Dumper;
     my @res = convert_to_route($file);
-    local $Data::Dumper::Indent = 0;
+    local $Data::Dumper::Indent = $Data::Dumper::Indent = 0;
     print Data::Dumper->Dumpxs([\@res], ['realcoords_ref']);
 }
 

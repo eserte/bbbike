@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.87 2004/09/10 00:24:26 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.88 2004/10/02 16:04:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -23,6 +23,7 @@ bbbike.cgi - CGI interface to bbbike
 =cut
 
 BEGIN {
+    $ENV{SERVER_NAME} ||= "";
     open(STDERR, ">/home/groups/b/bb/bbbike/bbbike.log")
 	if $ENV{SERVER_NAME} =~ /sourceforge/ && -w "/home/groups/b/bb/bbbike";
     $^W = 1 if $ENV{SERVER_NAME} =~ /herceg\.de/i;
@@ -626,7 +627,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.87 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.88 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -5207,7 +5208,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/09/10 00:24:26 $';
+    my $cgi_date = '$Date: 2004/10/02 16:04:07 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: FlatRadiobutton.pm,v 1.3 2001/11/07 19:09:16 eserte Exp eserte $
+# $Id: FlatRadiobutton.pm,v 1.4 2004/10/02 08:49:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.

@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: LayerEditorCore.pm,v 1.7 2001/12/04 22:18:40 eserte Exp eserte $
+# $Id: LayerEditorCore.pm,v 1.8 2004/10/02 08:20:47 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999, 2000 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999, 2000, 2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -23,6 +23,13 @@ use Tk::DropSite;
 {
     package Tk::DragDrop;
 no strict 'refs';
+BEGIN {
+    if ($] < 5.006) {
+	$INC{"warnings.pm"} = 1;
+	*warnings::unimport = sub { };
+    }
+}
+no warnings 'redefine';
 sub Tk::DragDrop::StartDrag
 {
  my $token = shift;

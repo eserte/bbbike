@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Salesman.pm,v 1.12 2003/07/03 00:10:10 eserte Exp $
+# $Id: Salesman.pm,v 1.12 2003/07/03 00:10:10 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2003 Slaven Rezic. All rights reserved.
@@ -91,7 +91,7 @@ sub _calculate_distances {
     my $distances = $self->{Distances};
     my $tk        = $self->{Tk};
     my $progress  = $self->{Progress};
-    local $Strassen::StrassenNetz::VERBOSE = 0; # too verbose
+    local $Strassen::StrassenNetz::VERBOSE = $Strassen::StrassenNetz::VERBOSE = 0; # too verbose
     for(my $i = 0; $i <= $#points; $i++) {
 	$progress->Update(0.5*($i/scalar @points)) if $progress;
 	if ($tk) {
