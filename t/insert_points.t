@@ -44,8 +44,8 @@ my @common_args = ("-report", "-useint",
 		   "-logfile", $logfile,
 		  );
 SKIP: {
-    skip "relation_gps-orig missing", 4
-	unless -f "$datadir/relation_gps-orig";
+    skip "Workaround utf-8 problem", 4
+	if $] == 5.008 && defined $ENV{LANG} && $ENV{LANG} =~ /utf/i;
 
     {
 	my @res = IO::Pipe->new->reader(@insert_points,
@@ -58,7 +58,6 @@ SKIP: {
 			hoehe-orig
 			housenumbers-orig
 			radwege-orig
-			relation_gps-orig
 			strassen-orig
 		       )),
 	   "orig and grep");
@@ -76,7 +75,6 @@ SKIP: {
 			hoehe
 			housenumbers
 			radwege_exact
-			relation_gps
 			strassen
 		       )),
 	   "generated and grep");
@@ -95,7 +93,6 @@ SKIP: {
 			hoehe-orig
 			housenumbers-orig
 			radwege-orig
-			relation_gps-orig
 			strassen-orig
 		       )),
 	   "orig and change");
@@ -115,7 +112,6 @@ SKIP: {
 			hoehe
 			housenumbers
 			radwege_exact
-			relation_gps
 			strassen
 		       )),
 	   "generated and change");
