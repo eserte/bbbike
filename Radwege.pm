@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Radwege.pm,v 1.16 2004/07/27 23:17:24 eserte Exp $
+# $Id: Radwege.pm,v 1.17 2004/08/05 13:39:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package Radwege;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!eval '
@@ -28,7 +28,7 @@ use Msg qw(frommain);
 }
 
 use strict;
-use vars qw(%category_code %category_name %category_plural
+use vars qw(%category_code %code_category %category_name %category_plural
 	    %bez @category_order @bbbike_category_order);
 
 my @category =
@@ -45,26 +45,34 @@ my @category =
    "nichtkat"  => ["RW", M"Radweg (ohne Kategorisierung)", M"Radwege (ohne Kategorisierung)"],
   );
 
-undef %category_code;         # "radweg" => "RW0"
-undef %category_name;         # "radweg" => "Radweg"
-undef %category_plural;       # "radweg" => "Radwege"
-undef @category_order;        # ("radweg", "pflicht" ...)
-undef @bbbike_category_order; # ("RW0", "RW1", ...)
+%category_code = ();		# "radweg" => "RW0"
+%code_category = ();		# "RW0" => "radweg"
+%category_name = ();		# "radweg" => "Radweg"
+%category_plural = ();		# "radweg" => "Radwege"
+@category_order = ();		# ("radweg", "pflicht" ...)
+@bbbike_category_order = ();	# ("RW0", "RW1", ...)
 
-for(my $i=0; $i<$#category; $i+=2) {
-    my $rw_cat     = $category[$i];
-    my $bbbike_cat = $category[$i+1]->[0];
-    my $bez        = $category[$i+1]->[1];
-    my $plural     = $category[$i+1]->[2] || $bez;
-    $category_name{$rw_cat} = $bez
-	if defined $bez;
-    if (defined $plural) {
-	$category_plural{$rw_cat} = $plural;
+init();
+
+sub init {
+    for (my $i=0; $i<$#category; $i+=2) {
+	my $rw_cat     = $category[$i];
+	my $bbbike_cat = $category[$i+1]->[0];
+	my $bez        = $category[$i+1]->[1];
+	my $plural     = $category[$i+1]->[2] || $bez;
+	$category_name{$rw_cat} = $bez
+	    if defined $bez;
+	if (defined $plural) {
+	    $category_plural{$rw_cat} = $plural;
+	}
+	push @category_order, $rw_cat;
+	$bez{$bbbike_cat} = $bez;
+	$category_code{$rw_cat} = $bbbike_cat;
+	$code_category{$bbbike_cat} = $rw_cat;
+	push @bbbike_category_order, $bbbike_cat;
     }
-    push @category_order, $rw_cat;
-    $bez{$bbbike_cat} = $bez;
-    $category_code{$rw_cat} = $bbbike_cat;
-    push @bbbike_category_order, $bbbike_cat;
 }
+
+sub code2name { $category_name{$code_category{$_[0]}} }
 
 1;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.139 2004/08/01 17:38:13 eserte Exp $
+# $Id: bbbike,v 3.139 2004/08/01 17:38:13 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -5860,7 +5860,7 @@ sub set_bindings {
 
     foreach (qw(s S l L u b r f v v-fg w W i e comm mount),
 	     (map { "comm-$_" } @comments_types),
-	     qw(gr qs hs ql hl fz nl ovl temp_sperre_s)) {
+	     qw(gr qs hs ql hl fz nl ovl temp_sperre_s rw)) {
 	std_str_binding($_);
     }
 
@@ -10592,20 +10592,30 @@ sub leavepoint {
 sub enterstr {
     my $c = shift;
     my(@tags) = $c->gettags('current');
-    $act_value{Strasse} = $tags[1];
-    $act_value{Strasse} =~ s/\|.*$//; # Teil hinter "|" abschneiden
-    if (($edit_mode || $edit_normal_mode) and defined $tags[3] and $tags[3] =~ /-(\d+)$/) {
-	$act_value{Strasse} .= " [" . ($1+1) . "]"; # Zeilennummer
-    }
-    $str_label->configure(-fg => 'black');
-
     my @l;
-    if ($hs_label->cget(-fg) eq 'black') {
-	push @l, $act_value{Haltestelle};
+    if (grep { $_ eq 'rw' } @tags) {
+	# Special handling for cyclepaths
+	(my $rw_code) = $tags[2] =~ /^rw-(RW\d+)/;
+	my $name = Radwege::code2name($rw_code);
+	if (defined $name) {
+	    push @l, $name;
+	}
+    } else {
+	$act_value{Strasse} = $tags[1];
+	$act_value{Strasse} =~ s/\|.*$//; # Teil hinter "|" abschneiden
+	if (($edit_mode || $edit_normal_mode) and defined $tags[3] and $tags[3] =~ /-(\d+)$/) {
+	    $act_value{Strasse} .= " [" . ($1+1) . "]"; # Zeilennummer
+	}
+	$str_label->configure(-fg => 'black');
+
+	if ($hs_label->cget(-fg) eq 'black') {
+	    push @l, $act_value{Haltestelle};
+	}
+	if (defined $act_value{Strasse} && $act_value{Strasse} ne '') {
+	    push @l, $act_value{Strasse};
+	}
     }
-    if (defined $act_value{Strasse} && $act_value{Strasse} ne '') {
-	push @l, $act_value{Strasse};
-    }
+
     if (defined $c_balloon) {
 	if (@l && $use_c_balloon > 1) {
 	    if ($leave_after) {	$leave_after->cancel; undef $leave_after }
