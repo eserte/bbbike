@@ -30,7 +30,7 @@ TARGETS+=	sehenswuerdigkeit obst radwege radwege_exact
 TARGETS+=	qualitaet_s qualitaet_l
 TARGETS+=	handicap_s handicap_l
 TARGETS+=	label vorfahrt comments relation_gps nolighting
-TARGETS+=	housenumbers green
+TARGETS+=	housenumbers green brunnels
 
 WRITEABLE=	chmod u+w,ugo+r
 READONLY=	chmod ugo+r,ugo-w
@@ -43,6 +43,9 @@ targets:	${TARGETS}
 slow-checks:	inaccessible_strassen check-line-lengths check-dates
 	env LC_ALL=de_DE.ISO_8859-1 sort -c Berlin.coords.data || \
 	    ( env LC_ALL=de_DE.ISO_8859-1 sort Berlin.coords.data | diff -u - Berlin.coords.data; false )
+
+# even slower (about four minutes)
+really-slow-checks:	check-crossings
 
 # XXX do also landstrassen (at least Potsdam):
 inaccessible_strassen: strassen gesperrt
@@ -88,6 +91,11 @@ flaechen: flaechen-orig
 	-@$(READONLY) $@
 
 green:	green-orig
+	-@$(WRITEABLE) $@
+	$(CONVERT2HAFAS) $> > $@
+	-@$(READONLY) $@
+
+brunnels:	brunnels-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) $> > $@
 	-@$(READONLY) $@
@@ -304,6 +312,7 @@ check:	.check_strassen1 .check_strassen2 \
 	.check_label .check_vorfahrt \
 	.check_comments1 .check_comments2 .check_nolighting \
 	.check_housenumbers .check_sehenswuerdigkeit .check_green \
+	.check_brunnels \
 
 .check_strassen1:	.strassen.tmp add_str multi_bez_str
 	$(CHECK_STR_PLZ) -data .strassen.tmp
@@ -422,6 +431,11 @@ check:	.check_strassen1 .check_strassen2 \
 	$(CHECK_NEIGHBOUR) -type standard -data green
 	@touch .check_green
 
+# XXX against landstrassen, too?
+.check_brunnels:	brunnels strassen
+	$(CHECK_NEIGHBOUR) -type standard -data brunnels
+	@touch .check_brunnels
+
 #.PHONY: .modified
 
 # This also creates .rsync_include
@@ -449,5 +463,8 @@ count-streets:
 
 check-dates:
 	${MISCSRCDIR}/check_dates *-orig
+
+check-crossings:
+	${MISCSRCDIR}/check_crossings strassen brunnels
 
 .include "Makefile.mapfiles"

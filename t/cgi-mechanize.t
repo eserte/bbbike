@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.1 2003/07/14 21:35:27 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.2 2003/08/08 19:31:30 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -46,7 +46,10 @@ $agent->submit();
 #like($agent->content_type, qr{^image/}); # XXX how test?
 $agent->back();
 
-$agent->form(3);
+{
+    my $formnr = (($agent->forms)[0]->attr("name") =~ /Ausweichroute/ ? 4 : 3);
+    $agent->form($formnr);
+}
 $agent->submit();
 
 $agent->follow('Start beibehalten');
@@ -66,7 +69,10 @@ like($agent->content, qr/Kreuzung/);
 $agent->submit();
 
 like($agent->content, qr/Route/);
-$agent->form(2);
+{
+    my $formnr = (($agent->forms)[0]->attr("name") =~ /Ausweichroute/ ? 3 : 2);
+    $agent->form($formnr);
+}
 { local $^W; $agent->current_form->value('pref_speed', '25'); };
 { local $^W; $agent->current_form->value('pref_cat', 'N_RW'); };
 { local $^W; $agent->current_form->value('pref_quality', 'Q2'); };
