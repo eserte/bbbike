@@ -119,11 +119,20 @@ sub BBBikeHeavy::load_plugin {
     }
     $file .= ".pm" if ($file !~ /\.pm$/);
     my($mod) = fileparse($file, '\..*');
+    my $loading_error = 0;
     if (-r $file) {
-	do $file;
+	do $file or do {
+	    # XXX use status_message etc.
+	    warn "Die Datei $file konnte nicht geladen werden";
+	    return;
+	};
 	$INC{"$mod.pm"} = $file;
     } elsif (-r "$FindBin::RealBin/$file") {
-	do "$FindBin::RealBin/$file";
+	do "$FindBin::RealBin/$file" or do {
+	    # XXX use status_message etc.
+	    warn "Die Datei $FindBin::RealBin/$file konnte nicht geladen werden";
+	    return;
+	};
 	$INC{"$mod.pm"} = "$FindBin::RealBin/$file";
     } else {
 	my $ok = 0;

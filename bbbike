@@ -5724,6 +5724,9 @@ sub set_bindings {
     $top->Advertise(PopupMenu => $popup_menu);
 
     my $alt_mouse1 = sub {
+	if ($alt_set_route_point{$map_mode}) {
+	    return $alt_set_route_point{$map_mode}->(@_);
+	}
 	if ($map_mode eq MM_BUTTONPOINT) {
 	    freerec_sub(@_);
 	}
@@ -10312,7 +10315,7 @@ sub show_info {
 	    $info_text->insert("end", "\n");
 	}
 
-	if (eval { require Astro::Sunrise }) {
+	if (eval { require Astro::Sunrise; Astro::Sunrise->VERSION(0.85) }) {
 	    my $get_sun_rise = sub {
 		my $alt = shift;
 		Astro::Sunrise::sun_rise($px,$py, $alt);
@@ -13577,6 +13580,7 @@ sub delete_user_dels {
     }
 }
 
+# Return "x,y"
 sub set_coords_str {
     my($c, @tags) = @_;
     @tags = $c->gettags('current') if !@tags;

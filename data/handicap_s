@@ -13,6 +13,7 @@ Oranienburger Str: Straßenbahnarbeiten, nur der Gehweg ist benutzbar, bis ca. 13
 Oranienburger Str: Behinderungen wegen Straßenbahnarbeiten, bis ca. 13.9.2003	q2::inwork 9932,13109 9786,13178 9771,13182 9605,13248 9415,13315 9281,13374 9215,13392
 Möllendorffstr.: Einbahnstraße Richtung Norden, Ausweichen auf Gehweg	q2::inwork; 15536,12486 15531,12622 15527,12689 15513,12856
 Tempelhofer Weg zwischen Gradestraße und Britzer Damm gesperrt aufgrund einer Fahrbahnerneuerung. Dauer: 10.08.2003 bis ca. 14.09.2003	q3::inwork 12731,4841 12499,5226
+Behrenstr.: eigentlich Einbahnstr., Ausweichen auf Gehweg möglich	q3::inwork; 9059,12155 9164,12172 9365,12196
 Georgenstr.: Fußgänger	q1 9437,12662 9308,12649
 Neue Promenade: Fußgänger	q2 10294,13070 10132,12941
 Pariser Platz/Brandenburger Tor: Fußgänger	q2 8804,12280 8610,12254 8515,12242
@@ -76,6 +77,7 @@ Volkspark Friedrichshain: Fußgänger	q1 12325,13148 12391,13189 12382,13262 12474
 Volkspark Friedrichshain: Fußgänger	q1 12336,13646 12067,13591 12115,13540 11982,13471
 Luisenhain: Fußgänger	q1 22196,4847 22147,4831 22038,4565 22071,4501
 Uferweg am Schlachtensee: Fußgänger	q2 -3348,3055 -3384,3212 -3324,3382 -3087,3646 -2937,3740 -2813,3775 -2494,3758 -2347,3884 -2080,4228 -1935,4303 -1831,4300 -1531,4159 -1391,4135 -1353,4205 -1278,4239
+südlicher Uferweg an der Krummen Lanke: Fußgänger	q2 -1274,4367 -1245,4414 -1185,4450 -1139,4575 -1134,4706 -971,4971 -724,5080 -604,5228
 Pankeweg, Bürgerpark: Fußgänger	q2 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9414,18278 9304,18165 9310,18108
 Breite Str.: Fußgängerzone	q3 -3012,14546 -3155,14340 -3227,14260
 Markt: Fußgängerzone	q3 -3155,14340 -3244,14380
@@ -126,4 +128,3 @@ Fürther Str.: Gehweg	q2 5773,10318 5808,10284
 Goerdelersteg: enge scheckenförmige Rampen	q3 3619,14183 3600,14278
 Goerdelerdamm: enger Zweirichtungsradweg	q1 3600,14278 4676,14534
 Radweg eng und bewachsen	q1 5071,14614 5264,14671 5451,14833
-Jungfernbrücke: Fußgänger, tragen	q4 10227,12013 10201,11995

@@ -89,7 +89,7 @@ use vars qw(
      @remember_plot_str @remember_plot_p
      @standard_mode_cmd @edit_mode_cmd @edit_mode_b_cmd @edit_mode_brb_cmd
      $map_mode %map_mode_callback $map_mode_deactivate $b2_mode %b2_mode_desc
-     %set_route_point $search_stat $search_visual
+     %set_route_point %alt_set_route_point $search_stat $search_visual
      $coord_prefix %delayed_sub_timer
      %global_search_args %penalty_subs %optprefs $autosave_opts
      $autoscroll_speed $autoscroll_middle

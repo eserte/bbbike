@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVia.pm,v 1.9 2003/07/27 21:01:19 eserte Exp eserte $
+# $Id: BBBikeVia.pm,v 1.10 2003/08/20 23:02:37 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeVia;
 
 use strict;
 use vars qw($VERSION $move_index $add_point);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use BBBikeGlobalVars;
@@ -119,14 +119,6 @@ sub BBBikeVia::delete_via_flags {
     $c->delete("viaflag");
 }
 
-sub BBBikeVia::add_via_flag {
-#    NYI
-}
-
-sub BBBikeVia::delete_via_flag {
-#    NYI
-}
-
 ######################################################################
 # move
 
@@ -158,6 +150,7 @@ sub BBBikeVia::move_via_2 {
 
     set_cursor("via_move_2");
     $set_route_point{$map_mode} = \&BBBikeVia::move_via_action;
+    $alt_set_route_point{$map_mode} = \&BBBikeVia::move_via_alt_action;
     for (qw(start via ziel)) {
 	$c->bind($_."flag", "<ButtonPress-1>" => "");
     }
@@ -175,6 +168,19 @@ sub BBBikeVia::move_via_action {
 	re_search();
 	BBBikeVia::move_via_cont();
     }
+}
+
+# XXX still flaky!
+sub BBBikeVia::move_via_alt_action {
+    my $c = shift;
+    my $e = $c->XEvent;
+    my($xx, $yy) = ($c->canvasx($e->x), $c->canvasy($e->y));
+    my($ax, $ay) = map { int } anti_transpose($xx, $yy);
+    my $coord = "$ax,$ay";
+    $search_route_points[$BBBikeVia::move_index]->[SRP_COORD] = $coord;
+    $search_route_points[$BBBikeVia::move_index]->[SRP_TYPE] = POINT_MANUELL;
+    re_search();
+    BBBikeVia::move_via_cont();
 }
 
 sub BBBikeVia::move_via_cont {

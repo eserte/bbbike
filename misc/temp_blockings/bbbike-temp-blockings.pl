@@ -126,4 +126,22 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'John-Foster-Dulles-Allee zwischen Spreeweg und Entlastungsstraße, Sportveranstaltung, Straße in beiden Richtungen gesperrt. Dauer: 10.08.2003, 10.00 Uhr bis 20.00 Uhr',
        type  => 'gesperrt',
      },
+     { from  => 1061496000, # 2003-08-21 22:00
+       until => 1061676000, # 2003-08-24 00:00
+       file  => 'hanfparade.bbd',
+       text  => 'Sperrungen zur Hafparade am 23.8.2003',
+       type  => 'gesperrt',
+     },
+     { from  => 1061625600, # 2003-08-23 10:00
+       until => 1061730000, # 2003-08-24 15:00
+       file  => 'kudamm_rad.bbd',
+       text  => 'Kurfürstendamm (südl. Richtungsfahrbahn) zwischen Uhlandstraße und Leibnizstraße gesperrt. Grund: Radsportveranstaltung Dauer: 24.08.2003,10.00 Uhr bis 15.00 Uhr',
+       type  => 'gesperrt',
+     },
+     { from  => 1062136800, # 2003-08-29 08:00
+       until => 1062280800, # 2003-08-31 00:00
+       file  => 'kudamm_rad.bbd',
+       text  => 'Kurfürstendamm (südl. Richtungsfahrbahn) zwischen Uhlandstraße und Leibnizstraße gesperrt. Grund: Radsportveranstaltung Dauer: 30.08.2003 zwischen 08.00 Uhr und 24.00 Uhr Uhr ',
+       type  => 'gesperrt',
+     },
     );

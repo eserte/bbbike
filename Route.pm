@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Route.pm,v 1.18 2002/11/27 09:33:47 eserte Exp $
+# $Id: Route.pm,v 1.18 2002/11/27 09:33:47 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2001 Slaven Rezic. All rights reserved.
@@ -289,6 +289,7 @@ sub _strecke {
 	       sqr($_[0]->[1] - $_[1]->[1]));
 }
 
+# Return "x,y"
 sub _coord_as_string {
     my $coord = shift;
     "$coord->[0],$coord->[1]";

@@ -2975,8 +2975,8 @@ sub temp_blockings_editor_parse_dates {
     my $date_rx      = qr/(\d{1,2})\.(\d{1,2})\.(20\d{2})/;
     my $time_rx      = qr/(\d{1,2})[\.:](\d{2})\s*Uhr/;
     my $full_date_rx = qr/$date_rx\D+$time_rx/;
-    my $ab_rx        = qr/(?:ab[:\s]+|Dauer[:\s]+)/;
-    my $bis_und_rx   = qr/(?:bis|und)(?:\s+(?:ca\.|voraussichtlich))?/;
+    my $ab_rx        = qr/(?:ab[:\s]+|Dauer[:\s]+|vom[:\s]+)/;
+    my $bis_und_rx   = qr/(?:bis|und)(?:\s+(?:ca\.|voraussichtlich|zum))?/;
 
     my($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2);
     # XXX use $full_date_rx etc. (after testing rxes!)
@@ -3170,15 +3170,20 @@ sub temp_blockings_editor {
 	     if (defined $new_prewarn_days) {
 		 $prewarn_days = $new_prewarn_days;
 	     }
+	     my @parse_error;
 	     if (defined $new_start_time) {
 		 $start_w->configure(-value => $new_start_time);
 	     } else {
-		 main::status_message("Kann das Startdatum nicht parsen", "warn");
+		 push @parse_error, "Startdatum";
 	     }
 	     if (defined $new_end_time) {
 		 $end_w->configure  (-value => $new_end_time);
 	     } else {
-		 main::status_message("Kann das Startdatum nicht parsen", "warn");
+		 push @parse_error, "Enddatum";
+	     }
+	     if (@parse_error) {
+		 main::status_message("Kann " . join(" und ", @parse_error) .
+				      " nicht parsen", "warn");
 	     }
 	 });
 
