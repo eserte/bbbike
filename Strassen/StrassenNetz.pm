@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.40 2004/04/11 21:47:06 eserte Exp eserte $
+# $Id: StrassenNetz.pm,v 1.41 2004/04/12 20:52:55 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -285,7 +285,76 @@ sub make_net_steigung {
     $self->{Net} = {};
     my $net = $self->{Net};
 
-    # Search resursively until $max_search_dist is exceeded
+    # Search recursively until $max_search_dist is exceeded
+    my $find_neighborsXXX;
+    $find_neighborsXXX = sub {
+	my($from, $seen, $dist_so_far, $initial_elevation) = @_;
+
+	my $nodes = keys %{ $sourcenet->{Net} };
+
+	my %CLOSED;
+	my %OPEN;
+	my %PRED;
+
+	my $act_coord = $from;
+	my $act_dist = $dist_so_far || 0;
+	$OPEN{$act_coord} = $act_dist;
+	$PRED{$act_coord} = undef;
+
+	while (1) {
+	    $CLOSED{$act_coord} = $act_dist;
+	    delete $OPEN{$act_coord};
+
+	    while (my($neighbor, $dist) = each %{ $sourcenet->{Net}{$act_coord} }) {
+#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\%OPEN, \%CLOSED],[])->Indent(1)->Useqq(1)->Dump; # XXX
+
+#warn "($neighbor, $dist)";
+		next if exists $CLOSED{$neighbor} && $CLOSED{$neighbor} <= $act_dist + $dist;
+		next if exists $OPEN{$neighbor} && $OPEN{$neighbor} <= $act_dist + $dist;
+		$OPEN{$neighbor} = $act_dist + $dist;
+		delete $CLOSED{$neighbor};
+		$PRED{$neighbor} = $act_coord;
+	    }
+
+	    # XXX Better use a heap!
+	    my $new_act_coord;
+	    my $new_act_dist = 99999999;
+	    while (my($c, $dist) = each %OPEN) {
+		if ($dist < $new_act_dist) {
+		    $new_act_coord = $c;
+		    $new_act_dist = $dist;
+		}
+	    }
+	    if (!defined $new_act_coord) {
+		last;
+	    }
+	    if ($new_act_dist > $max_search_dist) {
+		last;
+	    }
+
+	    if (exists $hoehe->{$new_act_coord}) {
+		my $hoehendiff = $hoehe->{$new_act_coord} - $initial_elevation;
+		if (!exists $net->{$from}{$new_act_coord} && $new_act_dist > 0) {
+		    my $mount = int(($hoehendiff/$new_act_dist)*1000)/1000;
+		    if ($mount >= $min_mount) {
+			for my $i (0 .. $#$seen - 1) {
+			    $net->{$seen->[$i]}{$seen->[$i+1]} = $mount
+				unless exists $net->{$seen->[$i]}{$seen->[$i+1]};
+			}
+			$net->{$seen->[-1]}{$from} = $mount
+			    unless exists $net->{$seen->[-1]}{$from};
+			$net->{$from}{$new_act_coord} = $mount
+			    unless exists $net->{$from}{$new_act_coord};
+		    }
+		}
+	    }
+
+	    $act_coord = $new_act_coord;
+	    $act_dist = $new_act_dist;
+	    # warn $act_dist;
+	}
+    };
+
     my $find_neighbors;
     $find_neighbors = sub {
 	my($from, $seen, $dist_so_far, $initial_elevation) = @_;
@@ -321,16 +390,19 @@ sub make_net_steigung {
 	}
     };
 
-#    my $keys = scalar keys %{$sourcenet->{Net}};
-#    my $i = 0;
-    while(my($p1,$v) = each %{$sourcenet->{Net}}) {
-#	if ($v) {
-#	    if ($i%100 == 0) {
-#		printf "$i/$keys (%d%%) ($p1)...\r", $i/$keys*100;
-#	    }
-#	    $i++;
-#	}
-	while(my($p2) = each %$v) {
+    my $keys = scalar keys %{$sourcenet->{Net}};
+    my $i = 0;
+    my @keys = keys %{$sourcenet->{Net}};
+    foreach my $p1 (@keys) {
+	my $val = $sourcenet->{Net}{$p1};
+	if ($v) {
+	    if ($i%100 == 0) {
+		printf STDERR "$i/$keys (%d%%) ($p1)...\r", $i/$keys*100;
+	    }
+	    $i++;
+	}
+	my @keys = keys %$val; # no iterator reset!
+	foreach my $p2 (@keys) {
 	    if (exists $hoehe->{$p1}) {
 		if (exists $hoehe->{$p2}) {
 		    my $strecke = $calc_strecke->($p1, $p2);
@@ -346,7 +418,7 @@ sub make_net_steigung {
 	    }
 	}
     }
-#    printf "\n" if $v;
+    printf STDERR "\n" if $v;
 }
 
 ### AutoLoad Sub

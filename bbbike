@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.130 2004/04/08 21:40:26 eserte Exp $
+# $Id: bbbike,v 3.130 2004/04/08 21:40:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -5460,8 +5460,9 @@ sub generate_plot_functions {
 			}
 			if ($street_photo) {
 			    my($mx,$my) = get_polyline_center(@coordlist);
+			    my $anchor = $street_photo eq $steigung_photo ? "s" : "nw";
 			    $c->createImage($mx,$my,
-					    -anchor => "nw",
+					    -anchor => $anchor,
 					    -image => $street_photo,
 					    # $abk-img or $abk-fg ?
 					    -tags => [$abk,$strname,"$abk-img",
@@ -5470,13 +5471,13 @@ sub generate_plot_functions {
 				if ($strname =~ /([\d\.]+)\s*%/) {
 				    outline_text
 					($c,
-					 $mx, $my+18,
-					 -anchor => "nw",
+					 $mx, $my,
+					 -anchor => "n",
 					 -text => "$1%",
 					 -font => $font{'small'},
 					 -tags => [$abk,$strname,"$abk-fg",
 						   "$abk-" . ($i-1)],
-					 -outlinewidth => 1,
+					 -outlinewidth => 2,
 					);
 				}
 			    }
@@ -9461,7 +9462,7 @@ sub clever_center {
     # Is ($tx/$ty) already visible? Then do nothing
     my($rx, $ry) = ($c->rootx+$c->widgetx($tx), $c->rooty+$c->widgety($ty));
     my $curr_w = $top->containing($rx, $ry);
-    return if $curr_w eq $c;
+    return 1 if $curr_w eq $c;
     my @win = Tk::Placement::get_toplevel_regions($top);
     if (!@win) { # no clever placement needed --- fallback to normal center
 	return 0;
