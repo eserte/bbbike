@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Dialog.pm,v 1.6 2002/09/30 20:27:23 eserte Exp eserte $
+# $Id: Dialog.pm,v 1.8 2003/11/13 21:50:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ use Tk::PathEntry;
 use base qw(Tk::DialogBox);
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 Construct Tk::Widget 'PathEntryDialog';
 
@@ -25,8 +25,17 @@ sub import {
     if (defined $_[1] and $_[1] eq 'as_default') {
 	local $^W = 0;
 	package Tk;
-	*FDialog      = \&Tk::PathEntry::Dialog::FDialog;
-	*MotifFDialog = \&Tk::PathEntry::Dialog::FDialog;
+	if ($Tk::VERSION < 804) {
+	    *FDialog      = \&Tk::PathEntry::Dialog::FDialog;
+	    *MotifFDialog = \&Tk::PathEntry::Dialog::FDialog;
+	} else {
+            *tk_getOpenFile = sub {
+                Tk::PathEntry::Dialog::FDialog("tk_getOpenFile", @_);
+            };
+            *tk_getSaveFile = sub {
+                Tk::PathEntry::Dialog::FDialog("tk_getSaveFile", @_);
+            };
+	}
     }
 }
 

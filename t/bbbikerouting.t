@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.10 2003/12/09 19:04:46 eserte Exp $
+# $Id: bbbikerouting.t,v 1.11 2003/12/19 08:28:10 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -31,7 +31,7 @@ BEGIN {
 
 my $num_tests = 54; # basic number of tests
 
-use vars qw($single $all $bench $v);
+use vars qw($single $all $bench $v $do_xxx);
 
 use vars qw($token %times $cmp_path
 	    $usexs $algorithm $usenetserver $usecache $cachetype);
@@ -45,6 +45,7 @@ if (!GetOptions("full|slow|all" => sub { $all = 1 },
 		"usenetserver!" => \$usenetserver,
 		"usecache!" => \$usecache,
 		"cachetype=s" => \$cachetype,
+		"xxx" => \$do_xxx,
 	       )) {
     die "usage!";
 }
@@ -121,10 +122,17 @@ sub _my_init_context {
 sub do_tests {
 
     my $routing = BBBikeRouting->new();
+
     is(ref $routing, "BBBikeRouting");
     $routing->init_context;
     my $context = $routing->Context;
     _my_init_context($context);
+
+    if (!$all) {
+	diag Dumper($context);
+    }
+    if ($do_xxx) { goto XXX }
+
     @Strassen::Util::cacheable = $cachetype if defined $cachetype;
     if ("@Strassen::Util::cacheable" eq "VirtArray") {
 	# VirtArray can only cache flat arrays ... add a fallback
@@ -298,11 +306,11 @@ sub do_tests {
     ok(scalar @{ $routing->Path } > 0, "scope=wideregion test");
     ok(scalar @{ $routing->RouteInfo } > 0);
 
+ XXX:
     {
 	my $routing2 = BBBikeRouting->new;
 	$routing2->init_context;
-	my $context = $routing->Context;
-	_my_init_context($context);
+	_my_init_context($routing2->Context);
 
 	# Start position which is in the net, but really unreachable
 	my $start_pos = BBBikeRouting::Position->new;

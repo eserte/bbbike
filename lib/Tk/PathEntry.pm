@@ -1,22 +1,22 @@
 # -*- perl -*-
 
 #
-# $Id: PathEntry.pm,v 2.19 2002/10/04 23:17:59 eserte Exp eserte $
+# $Id: PathEntry.pm,v 2.21 2003/11/13 21:49:28 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2002,2003 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
 # Mail: srezic@cpan.org
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# WWW:  http://www.sourceforge.net/srezic
 #
 
 package Tk::PathEntry;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 2.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.21 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Tk::Derived Tk::Entry);
 
