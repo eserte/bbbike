@@ -75,8 +75,18 @@ class MyCanvas extends Canvas
   Vector text  = new Vector();
   int hpos = 500; // XXX
   int vpos = 350; // XXX
+  BBBike app;
 
   public MyCanvas() {
+    init();
+  }
+
+  public MyCanvas(BBBike app_arg) {
+    app = app_arg;
+    init();
+  }
+
+  private void init() {
     setBackground(Color.lightGray);
     addMouseListener(this);
   }
@@ -106,7 +116,12 @@ class MyCanvas extends Canvas
   }
 
   public void mouseClicked(MouseEvent event) {
-    System.err.println("pressed x="+event.getX()+"/y="+event.getY());
+    try {
+      System.err.println("pressed x="+event.getX()+"/y="+event.getY());
+      app.mouseClicked(event.getX(), event.getY());
+    } catch (Exception e) {
+      System.err.println("Caught " + e.toString());
+    }
   }
   public void mousePressed(MouseEvent event) { }
   public void mouseReleased(MouseEvent event) { }
@@ -139,4 +154,9 @@ class MyCanvas extends Canvas
   }
   public void keyTyped(KeyEvent e) { }
   public void keyReleased(KeyEvent e) { }
+
 }
+
+// Local variables:
+// c-basic-offset: 2
+// End:

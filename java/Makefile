@@ -12,7 +12,7 @@ JAVA=$(JAVAROOT)/bin/java
 all:	Strasse.class \
 	Strassen.class MultiStrassen.class GeneralStrassen.class \
 	StrassenNetz.class QSort.class BBBike.class MyCanvas.class \
-	TestBBBike.class
+	TestBBBike.class Kreuzungen.class
 
 Strasse.class:	Strasse.java
 	$(JAVAC) Strasse.java
@@ -43,6 +43,9 @@ MyCanvas.class: MyCanvas.java
 
 CanvasProp.class: CanvasProp.java
 	$(JAVAC) CanvasProp.java
+
+Kreuzungen.class: Kreuzungen.java
+	$(JAVAC) Kreuzungen.java
 
 test:	all
 	$(JAVA) BBBike -v

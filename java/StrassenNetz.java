@@ -19,6 +19,7 @@ class StrassenNetz {
   Hashtable KoordXY;
   Vector Additional;
   Vector AdditionalNet;
+  boolean verbose = false;
 
   public StrassenNetz (GeneralStrassen s) {
     strassen = s;
@@ -116,11 +117,13 @@ class StrassenNetz {
       NODES.put(from, initvec);
     }
 
-    System.err.println("Start Search...");
+    if (verbose)
+      System.err.println("Start Search...");
 
     while(true) {
       if (OPEN_CLOSED.size() == 0) { // XXX stimmt nicht
-	System.out.println("Nothing found!");
+	if (verbose)
+	  System.out.println("Nothing found!");
 	return new Vector();
       }
 
@@ -141,7 +144,10 @@ class StrassenNetz {
       OPEN_CLOSED.put(min_node, new Integer(2)); // closed
 
       if (min_node.equals(to)) {
-	System.err.println("Path found");
+	Vector res = new Vector();
+	res.addElement(to);
+	if (verbose)
+	  System.err.println("Path found");
 	int len = 0;
 	while(true) {
 	  if (((Vector)(NODES.get(min_node))).elementAt(0) != null) {
@@ -149,14 +155,18 @@ class StrassenNetz {
 	      (String)(((Vector)(NODES.get(min_node))).elementAt(0));
 	    int etappe = (int)strecke_s(min_node, prev_node);
 	    len += etappe;
-	    System.err.println("* " + min_node + " => " + prev_node + " (" + etappe + ")");
+	    if (verbose)
+	      System.err.println("* " + min_node + " => " + prev_node + " (" + etappe + ")");
+	    res.addElement(prev_node);
 	    min_node = prev_node;
 	  } else {
 	    break;
 	  }
 	}
-	System.err.println("Length: " + len + "m");
-	System.exit(2); // XXX ausgabe
+
+	if (verbose)
+	  System.err.println("Length: " + len + "m");
+	return res;
       }
 
       for (Enumeration k = ((Hashtable)(Net.get(min_node))).keys();
@@ -396,3 +406,7 @@ class StrassenNetz {
 
   public static double sqr(double x) { return x * x; }
 }
+
+// Local variables:
+// c-basic-offset: 2
+// End:

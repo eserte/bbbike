@@ -143,6 +143,30 @@ class Strassen implements GeneralStrassen {
     return koord;
   }
 
+  public Hashtable all_crossings_hash() {
+    Hashtable crossings = new Hashtable();
+    init();
+    while(true) {
+      Strasse ret = next();
+      String name = ret.Name;
+      Vector kreuzungen = ret.Kreuzungen;
+      if (kreuzungen.isEmpty()) break;
+      Vector kreuz_coord = to_koord(kreuzungen);
+      for (Enumeration e = kreuz_coord.elements() ; e.hasMoreElements() ;) {
+	Vector i = (Vector)e.nextElement();
+	String xy = i.elementAt(0) + "," + i.elementAt(1); // XXX ???
+	if (!crossings.containsKey(xy)) {
+	  crossings.put(xy, new Integer(1));
+	} else {
+	  crossings.put(xy,
+			new Integer(((Integer)crossings.get(xy)).intValue()
+				    + 1));
+	}
+      }
+    }
+    return crossings;
+  }
+
   public Vector all_crossings () {
     Hashtable crossings = new Hashtable();
     Hashtable crossing_name = new Hashtable();
@@ -213,3 +237,7 @@ class Strassen implements GeneralStrassen {
   }
 
 }
+
+// Local variables:
+// c-basic-offset: 2
+// End:

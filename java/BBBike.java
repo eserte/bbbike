@@ -22,6 +22,10 @@ class BBBike {
   Hashtable str_draw = new Hashtable();
   int scale = 2;
   boolean verbose = false; // debugging
+  StrassenNetz str_net;
+  Kreuzungen crossings;
+  String start_xy;
+  String goal_xy;
 
   public BBBike() {
     init();
@@ -35,7 +39,7 @@ class BBBike {
   private void init() {
     top = new Frame("BBBike $Revision: 1.5 $");
     top.setLayout(new BorderLayout());
-    c = new MyCanvas();
+    c = new MyCanvas(this);
     try {
       plotstr();
     } catch (FileNotFoundException e) {
@@ -107,6 +111,15 @@ System.err.println("x/y=" + berlin_mitte_txy[0] + "/" + berlin_mitte_txy[1]);
     }
     if (verbose)
       System.err.println();
+
+    if (verbose)
+      System.err.println("Making net...");
+    str_net = new StrassenNetz(str);
+    str_net.make_net();
+    crossings = new Kreuzungen(str.all_crossings_hash());
+    if (verbose)
+      System.err.println();
+
   }
 
   public int[] transpose (int x, int y) {
@@ -126,6 +139,51 @@ System.err.println("x/y=" + berlin_mitte_txy[0] + "/" + berlin_mitte_txy[1]);
   public static void main(String argv[]) {
     boolean verbose = (argv.length > 0 && argv[0].equals("-v"));
     BBBike bbbike = new BBBike(verbose);
+  }
+
+  public void mouseClicked(int cx, int cy) throws Exception {
+    int[] xy = anti_transpose(cx, cy);
+    Vector res = crossings.nearest(xy[0], xy[1]);
+    if (!res.isEmpty()) {
+      if (start_xy == null) {
+	start_xy = (String)res.elementAt(0);
+      } else {
+	goal_xy = (String)res.elementAt(0);
+	Vector route = str_net.search_Astar(start_xy, goal_xy);
+	drawRoute(route);
+	start_xy = null;
+      }
+    }
+  }
+
+  public void drawRoute(Vector route) {
+    Enumeration e_route = route.elements();
+    if (!e_route.hasMoreElements())
+      return;
+    String first = (String)e_route.nextElement();
+    int comma_index = first.indexOf(',');
+    int first_x = Integer.parseInt(first.substring(0, comma_index));
+    int first_y =  Integer.parseInt(first.substring(comma_index+1));
+    int[] cxy1 = transpose(first_x, first_y);
+    for(; e_route.hasMoreElements(); ) {
+      String next = (String)e_route.nextElement();
+      comma_index = next.indexOf(',');
+      int next_x = Integer.parseInt(next.substring(0, comma_index));
+      int next_y = Integer.parseInt(next.substring(comma_index+1));
+      int[] cxy2 = transpose(next_x, next_y);
+      Vector lineCoords = new Vector(4);
+      lineCoords.addElement(new Integer(cxy1[0]));
+      lineCoords.addElement(new Integer(cxy1[1]));
+      lineCoords.addElement(new Integer(cxy2[0]));
+      lineCoords.addElement(new Integer(cxy2[1]));
+      CanvasProp prop = new CanvasProp();
+      prop.put(CanvasProp.FILL, Color.red);
+      prop.put(CanvasProp.WIDTH, new Integer(7));
+      c.createLine(lineCoords, prop);
+
+      cxy1 = cxy2;
+    }
+    c.repaint();
   }
 }
 
@@ -148,3 +206,7 @@ class MyScrollbar extends Scrollbar {
     return true;
   }
 }
+
+// Local variables:
+// c-basic-offset: 2
+// End:
