@@ -811,7 +811,7 @@ userdel	q4 8370,25539 8182,25608
 EOF
      },
      { from  => 1096149600, # 2004-09-26 00:00
-       until => 1117231200, # 2005-05-28 00:00
+       until => 1100216074, # was 2005-05-28 00:00
        text  => 'K 6413; (Wriezener Straße); OL Buckow, zw. Ringstr. u. Weinbergsweg Kanal- u. Straßenbau Vollsperrung 27.09.2004-27.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -1114,6 +1114,22 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 26581,-7087 26146,-6218
+EOF
+     },
+     { from  => 1089496800, # 2004-07-11 00:00
+       until => 1114898400, # 2005-05-01 00:00
+       text  => 'K 6740; (L 38 östl. Berkenbrück-Steinhöfel); OL Demnitz Straßenbauarbeiten Vollsperrung 12.07.2004-30.04.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 64514,-1544 64439,-1243
+EOF
+     },
+     { from  => 1097359200, # 2004-10-10 00:00
+       until => 1114898400, # 2005-05-01 00:00
+       text  => 'L 19; (Zechlinerhütte-Wesenberg (MVP)); zw. Abzw. Klein Zerlang u. LG (nö. Prebelowbrücke) Brückenneubau Vollsperrung 11.10.2004-30.04.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -26403,85177 -26316,84900
 EOF
      },
     );
