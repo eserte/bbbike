@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.5 2003/06/06 19:34:54 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.5 2003/06/06 19:34:54 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -166,7 +166,7 @@ sub BBBikeHeavy::layer_editor {
 		 {'Image' => $ampel_klein_photo,
 		  'Text'  => M"Ampeln",
 		  'Visible' => $p_draw{'lsa'},
-		  'Data' => {Group => '',
+		  'Data' => {Tag => 'lsa-fg',
 			     Type  => 'p',
 			     Subtype => 'lsa',
 			    }
@@ -363,6 +363,12 @@ sub BBBikeHeavy::layer_editor {
 			my $tag = ($_->{Data}{Tags}
 				   ? $_->{Data}{Tags}[0]
 				   : $_->{Data}{Tag});
+#XXXvvv del: sollten keine warnings mehr auftreten
+if (!defined $tag) {
+warn "Tag is undefined for: ";
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$_],[])->Indent(1)->Useqq(1)->Dump; # XXX
+}
+#XXX^^^
 			[$score{$tag}, $_] # XXX oder 0?
 		    }
 		} @elem;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.9 2003/06/02 23:16:22 eserte Exp $
+# $Id: BBBikeRuler.pm,v 1.10 2003/06/11 22:22:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ use base qw(BBBikePlugin);
 use strict;
 use vars qw($button_image $ruler_cursor $old_motion
 	    $c_x $c_y $m_x $m_y $real_x $real_y $real_height
-	    $aftertask $circle);
+	    $aftertask $circle $gpsman_tracks $gpsman_track_tag $old_message);
 
 use BBBikeUtil;
 use Hooks;
@@ -118,6 +118,8 @@ sub add_button {
 	     # XXX Msg.pm
 	     [[Checkbutton => "~Kreis",
 	       -variable => \$circle, -command => sub { toggle_circle() }],
+	      [Checkbutton => "~GPSMan-Tracks vermessen",
+	       -variable => \$gpsman_tracks],
 	     ],
 	     $b,
 	    );
@@ -140,6 +142,14 @@ sub button {
     my $fill = "blue";
     $c->delete("ruler");
     my(@tags) = $c->gettags($c->current_item(-ignorerx => "^ruler\$"));
+    if ($gpsman_tracks) {
+	if ($tags[1] && $tags[1] =~ /abstime=/) {
+	    $gpsman_track_tag = $tags[1];
+	} else {
+	    undef $gpsman_track_tag;
+	    return;
+	}
+    }
     if (@tags >= 2 && $tags[0] =~ /^L\d+/ && $tags[2] =~ /^([-+]?[\d\.]+)/) {
 	$real_height = $1;
     } else {
@@ -170,12 +180,13 @@ sub _fmt_time {
 
 sub motion {
     my($c) = @_;
+    my $message = "";
     return if !defined $real_x;
     my $e = $c->XEvent;
     ($m_x,$m_y) = ($c->canvasx($e->x), $c->canvasy($e->y));
     my($new_real_x, $new_real_y) = main::anti_transpose($m_x, $m_y);
     my $deg = atan2($new_real_y-$real_y, $new_real_x-$real_x);
-	$deg = 2*pi-$deg+pi/2;
+    $deg = 2*pi-$deg+pi/2;
     if ($deg < 0) {
 	$deg += 2*pi;
     }
@@ -183,25 +194,50 @@ sub motion {
     # Distance-related
     my $dist = sqrt(sqr($new_real_x-$real_x)+
 		    sqr($new_real_y-$real_y));
-    my $message = sprintf("Winkel: %d°; Dist: %dm",
-			  rad2deg($deg)%360, $dist);
-    if (@main::speed) {
-	for my $speed (@main::speed) {
-	    $message .= ", \@ $speed km/h: " . _fmt_time($dist/($speed/3.6));
-	}
-    }
-    # Manhatten-Distance-related
-    my $manh_dist = abs($new_real_x-$real_x)+abs($new_real_y-$real_y);
-    $message .= sprintf "; Manh.-Dist: %dm", $manh_dist;
-    if (@main::speed) {
-	for my $speed (@main::speed) {
-	    $message .= ", \@ $speed km/h: " . _fmt_time($manh_dist/($speed/3.6));
-	}
-    }
 
-    # misc:
-    if (defined $real_height) {
-	$message .= sprintf ", Höhe: %.1fm", $real_height;
+    if ($gpsman_tracks && $gpsman_track_tag) {
+	my(@tags) = $c->gettags($c->current_item(-ignorerx => "^ruler\$"));
+	if ($gpsman_tracks && $tags[1] && $tags[1] =~ /dist=([\d\.]+).*?time=([\d:]+).*abstime=([\d:]+)/) {
+	    my($dist2,$time2,$abstime2) = ($1, $2, $3);
+	    my $time2 = _min2sec($time2);
+	    my $abstime2 = _hms2sec($abstime2);
+	    $gpsman_track_tag =~ /dist=([\d\.]+).*?time=([\d:]+).*abstime=([\d:]+)/;
+	    my($dist1,$time1,$abstime1) = ($1, $2, $3);
+	    my $time1 = _min2sec($time1);
+	    my $abstime1 = _hms2sec($abstime1);
+	    if ($abstime2 < $abstime1) { $abstime2 += 86400 }
+	    $message  = "Zeit: " . _fmt_time($time2-$time1) . "; ";
+	    $message .= sprintf "Dist: %.3fkm; ", $dist2-$dist1;
+	    $message .= sprintf "Speed: %.1fkm/h; ", ((($dist2-$dist1)*1000/($time2-$time1))*3.6);
+	    $message .= "Abszeit: " . _fmt_time($abstime2-$abstime1) . "; ";
+	    $message .= sprintf "Absspeed: %.1fkm/h; ", ((($dist2-$dist1)*1000/($abstime2-$abstime1))*3.6);
+	    $message .= sprintf "Luft-Dist: %.3fkm; ", $dist/1000;
+	    $message .= sprintf "Luft-Speed: %.1fkm/h", (($dist/($time2-$time1))*3.6);
+	    $old_message = $message;
+	} else {
+	    $message = "(" . $old_message . ")";
+	}
+    } else {
+	$message = sprintf("Winkel: %d°; Dist: %dm",
+			   rad2deg($deg)%360, $dist);
+	if (@main::speed) {
+	    for my $speed (@main::speed) {
+		$message .= ", \@ $speed km/h: " . _fmt_time($dist/($speed/3.6));
+	    }
+	}
+	# Manhatten-Distance-related
+	my $manh_dist = abs($new_real_x-$real_x)+abs($new_real_y-$real_y);
+	$message .= sprintf "; Manh.-Dist: %dm", $manh_dist;
+	if (@main::speed) {
+	    for my $speed (@main::speed) {
+		$message .= ", \@ $speed km/h: " . _fmt_time($manh_dist/($speed/3.6));
+	    }
+	}
+
+	# misc:
+	if (defined $real_height) {
+	    $message .= sprintf ", Höhe: %.1fm", $real_height;
+	}
     }
 
     main::status_message($message, "info");
@@ -253,6 +289,18 @@ sub toggle_circle {
 	    $main::c->itemconfigure("ruler-circle", -state => "hidden");
 	}
     }
+}
+
+sub _min2sec {
+    my($min) = @_;
+    my($m,$s) = split /:/, $min;
+    $m*60+$s;
+}
+
+sub _hms2sec {
+    my($hms) = @_;
+    my($h,$m,$s) = split /:/, $hms;
+    $h*3600+$m*60+$s;
 }
 
 1;
