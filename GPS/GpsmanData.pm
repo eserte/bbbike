@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.29 2005/01/23 12:07:07 eserte Exp $
+# $Id: GpsmanData.pm,v 1.30 2005/03/23 22:02:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_WAYPOINT => 0;
 use constant TYPE_TRACK    => 1;
@@ -130,6 +130,8 @@ sub convert_to_route {
 }
 
 # XXX maybe better use a route instead of a tracklog
+# If called as a static method: return the track as a string
+# If called as an object method: fill the object with the route data
 sub convert_from_route {
     my($self, $route, %args) = @_;
 

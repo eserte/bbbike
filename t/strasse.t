@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strasse.t,v 1.6 2005/03/07 23:15:13 eserte Exp $
+# $Id: strasse.t,v 1.8 2005/03/24 00:04:03 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -66,7 +66,22 @@ my @beautify_landstrasse =
       "(Alt-Golm -) Saarow", "(Saarow -) Alt-Golm"],
      ["(Möllendorffstr. - Karl-Lade-Str.)" =>
       "((Möllendorffstr. -) Karl-Lade-Str.)", "((Karl-Lade-Str. -) Möllendorffstr.)"],
+     ["Tiergarten (Hardenbergplatz - S-Bhf. Tiergarten)" =>
+      "Tiergarten ((Hardenbergplatz -) S-Bhf. Tiergarten)",
+      "Tiergarten ((S-Bhf. Tiergarten -) Hardenbergplatz)",
+     ],
     );
+
+if ($] >= 5.008) {
+    eval q{
+push @beautify_landstrasse,
+     ["B104 - Milow - Schönwerder - B198" =>
+      "(B104 \x{2192} Milow \x{2192} Schönwerder \x{2192}) B198",
+      "(B198 \x{2192} Schönwerder \x{2192} Milow \x{2192}) B104", undef, "can_unicode"],
+;
+};
+    die $@ if $@;
+}
 
 my $strip_bezirk_tests = 6;
 plan tests => scalar(@split_street_citypart) + scalar(@beautify_landstrasse)*2 + $strip_bezirk_tests;
@@ -78,13 +93,15 @@ for my $s (@split_street_citypart) {
 }
 
 for my $s (@beautify_landstrasse) {
-    my($str, $expected_forward, $expected_backward, $todo) = @$s;
+    my($str, $expected_forward, $expected_backward, $todo, $can_unicode) = @$s;
     if (!defined $expected_backward) {
 	$expected_backward = $expected_forward;
     }
     local $TODO = $todo;
-    is(Strasse::beautify_landstrasse($str), $expected_forward, "$str forward");
-    is(Strasse::beautify_landstrasse($str, 1), $expected_backward, "$str backward");
+    is(Strasse::beautify_landstrasse($str, 0, -unicode => $can_unicode),
+       $expected_forward, "$str forward" . ($can_unicode ? " with unicode" : ""));
+    is(Strasse::beautify_landstrasse($str, 1, -unicode => $can_unicode),
+       $expected_backward, "$str backward" . ($can_unicode ? " with unicode" : ""));
 }
 
 my $city = "Berlin_DE";

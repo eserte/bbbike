@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize-upload.t,v 1.3 2005/02/03 21:40:41 eserte Exp eserte $
+# $Id: cgi-mechanize-upload.t,v 1.4 2005/03/23 22:01:56 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -22,8 +22,10 @@ BEGIN {
 use FindBin;
 use lib ("$FindBin::RealBin",
 	 "$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib", # for enum.pm
 	);
 use BBBikeTest;
+use File::Temp qw(tempfile);
 
 # See also: https://rt.cpan.org/NoAuth/Bug.html?id=9268
 sub WWW::Mechanize::_image_from_token {
@@ -52,20 +54,31 @@ sub WWW::Mechanize::_image_from_token {
         });
 }
 
-my @gps_types = ("trk", "ovl", "bbr");
+my @gps_types = ("trk", "ovl", "bbr",
+		 "bbr-generated", "ovl-generated", "trk-generated",
+		);
 my $png_tests = 2;
 my $pdf_tests = 2;
 my $mapserver_tests = 5;
 my $gpsman_tests = $png_tests + $pdf_tests + $mapserver_tests;
-
-plan tests => 3 + $gpsman_tests * @gps_types;
+my $only;
 
 use Getopt::Long;
 
 if (!GetOptions(get_std_opts("cgiurl", "xxx", "display", "debug"),
+		"only=s" => \$only,
 	       )) {
-    die "usage: $0 [-cgiurl url] [-xxx] [-display] [-debug]";
+    die "usage: $0 [-cgiurl url] [-xxx] [-display] [-debug] [-only type]";
 }
+
+if (defined $only) {
+    @gps_types = grep { $_ eq $only } @gps_types;
+}
+
+my $sample_coords = [[8982,8781], [9050,8783], [9222,8787],
+		     [9227,8890], [9796,8905], [9799,8962]];
+
+plan tests => 3 + $gpsman_tests * @gps_types;
 
 {
     my $agent = WWW::Mechanize->new();
@@ -109,6 +122,50 @@ if (!GetOptions(get_std_opts("cgiurl", "xxx", "display", "debug"),
 		skip("No bbbike route files available", $gpsman_tests)
 		    if !@bbr;
 		$filename = $bbr[rand(@bbr)];
+	    } elsif ($gps_type eq 'bbr-generated') {
+		(undef, $filename) = tempfile(UNLINK => !$debug,
+					      SUFFIX => ".bbr");
+		my $route = {RealCoords => $sample_coords,
+			     Type => "bbr"};
+		require Route;
+		Route::save(-object => $route,
+			    -file => $filename);
+	    } elsif ($gps_type eq 'ovl-generated') {
+		my $fh;
+		($fh, $filename) = tempfile(UNLINK => !$debug,
+					    SUFFIX => ".ovl");
+		print $fh <<'EOF';
+[Symbol 1]
+Typ=3
+Group=1
+Col=3
+Zoom=1
+Size=103
+Art=1
+Punkte=75
+XKoord0=13.4337486
+YKoord0=52.5100654
+XKoord1=13.4305501
+YKoord1=52.5113623
+XKoord2=13.4302192
+YKoord2=52.5102429
+XKoord3=13.4277053
+YKoord3=52.5076669
+XKoord4=13.4257345
+YKoord4=52.5059382
+[Overlay]
+Symbols=1
+EOF
+		close $fh;
+	    } elsif ($gps_type eq 'trk-generated') {
+		(undef, $filename) = tempfile(UNLINK => !$debug,
+					      SUFFIX => ".ovl");
+		require GPS::GpsmanData;
+		require Route;
+		my $route = Route->new_from_realcoords($sample_coords);
+		my $trk = GPS::GpsmanData->new;
+		$trk->convert_from_route($route);
+		$trk->write($filename);
 	    }
 	    
 	    if ($do_xxx) {

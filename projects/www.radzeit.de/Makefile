@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.52 2005/03/21 23:16:07 eserte Exp $
+# $Id: Makefile,v 1.54 2005/03/23 22:05:13 eserte Exp eserte $
 #
 
 # Targets:
@@ -78,6 +78,7 @@ RSYNC_SRCDEST?=	. ${RSYNC_DEST}
 
 # XXX Should be set from mapserver/brb/Makefile:
 WWW_USER?=	www
+WWW_GROUP?=	www
 
 .if ${OSTYPE} == "linux"
 XARGS_REPL?=	xargs --replace=%
@@ -148,7 +149,7 @@ LOCAL_HTML_URL=	http://localhost:8080/bbbike
 DATA_DIR=	data
 .endif
 
-RADZEIT_NEW_URL=	http://130.149.231.46
+#RADZEIT_NEW_URL=	http://130.149.231.46
 RADZEIT_NEW_URL=	http://www.radzeit.de
 .if ${TARGET} == "radzeit-new"
 SSH_PROG_AND_ARGS=	ssh -2 -p 534
@@ -176,6 +177,7 @@ rsync:			check-rsync-ok \
 			post-rsync-bbbike-data
 
 check-rsync-ok:
+	perl -nle '/^(.*)www.radzeit.de/ && $$1 !~ /\#/ && print "Using new radzeit server"' /etc/hosts
 	[ ! -e ${CURDIR}/.not_rsyncable ] || ( echo "Not rsyncable!"; false )
 	[ ! -e ${CURDIR}/.rsync_block ] || ( echo "Not rsyncable because:"; cat ${CURDIR}/.rsync_block; false )
 
@@ -447,12 +449,13 @@ test-radzeit-new:
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS}
 
-# XXX missing: chown ${WWW_USER} /var/www/domains/radzeit.de/www/public/mapserver/brb
 server-permissions:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
-		chown ${WWW_USER} "${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/BBBike/tmp/berlin_map*"; \
-		chown 644 "${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/BBBike/tmp/berlin_map*"; \
-		chmod 777 "${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/BBBike/tmp"; \
+		chown ${WWW_USER} "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/tmp/berlin_map*"; \
+		chown 644 "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/tmp/berlin_map*"; \
+		chmod 777 "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/tmp"; \
+		chown ${WWW_USER} "${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/mapserver/brb"; \
+		chown ${WWW_USER} "${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/mapserver/brb/tmp"; \
 	'
 
 backup:

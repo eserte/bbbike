@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.155 2005/03/23 00:36:35 eserte Exp $
+# $Id: bbbike,v 3.155 2005/03/23 00:36:35 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -927,15 +927,12 @@ speicherplatzsparender.",
     label => M"xwd als Screengrabber", var => \$use_xwd_if_possible],
 
    M"Advanced",
-## XXX rethink...
-#    ['edit','!',undef,
-#     label => M"Editmodus beim Starten (experimentell!!!)", # XXX
-#     var => sub {
-# 	$set_mode = "std-no-orig";
-# 	$lazy_plot = 1;
-# 	$advanced = 1;
-#     }
-#    ],
+    ['edit','!',undef,
+     label => M"Editmodus beim Starten (experimentell!!!)",
+     var => sub {
+ 	$set_mode = "edit";
+     }
+    ],
    ['stderr','!',0,
     label => M"Fehlerausgabe auf stderr", var => \$stderr],
    ['stderrwindow','!',undef,
@@ -4445,9 +4442,11 @@ $splash_screen->Update(0.4) if $splash_screen;
 #BEGIN{mymstat("before init draw BEGIN");} mymstat("before init draw");
 ## DEBUG_END
 $progress->InitGroup;
-if ($set_mode) {
+if (defined $set_mode && $set_mode eq 'edit') {
     require BBBikeAdvanced;
-    switch_mode($set_mode);
+    #XXX inefficient!
+    switch_edit_standard_mode();
+    $lazy_plot = 1;
 }
 foreach (keys %init_str_draw) {
     $str_draw{$_} = $init_str_draw{$_};

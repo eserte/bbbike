@@ -1,10 +1,10 @@
 # $Id: handicap_s-orig,v 4.13 2005/03/19 11:12:22 eserte Exp eserte $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+#: XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
 Unter den Linden (Mitte) Richtung Westen zwischen Schadowstr. und Wilhelmstr. Baustelle, Straße für Autos gesperrt, Radfahrer können weiterhin passieren (bis August 2005)	q1::inwork; 9028,12307 8804,12280
 Ebertstr.: bis 2005-04-30 für Autofahrer gesperrt, Radfahrer können weiterhin passieren	q1::inwork 8595,12066 8579,11917 8571,11846
 Alexanderstr.: von 2005-01-03 bis 2005-10-31 für Autos gesperrt, Radfahrer können weiterhin passieren. Teilweise Sperren zu den kreuzenden Straßen errichtet. 	q2::inwork 11134,12793 11207,12706 11323,12484 11333,12437 11351,12221
 Behrenstr./Bebelplatz: Einbahnstraße	q3::inwork; 9626,12227 9803,12243
-#XXX del: Wassersportallee (Grünau), Richtung Regattastraße zwischen Ammerseestraße und Regattastraße Baustelle Straße vollständig gesperrt (bis 2005-01-31)	q4::inwork; 22449,1281 22663,1441
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
 Wilhelmstr.: Fahrbahn vor der britischen Botschaft für Autos gesperrt, passierbar für Radfahrer (bis 2006-12-31, vielleicht auch länger)	q2 8851,12123 8804,12280
 Tucholskystr.: Einbahnstr., Richtung Süden gesperrt	q4::inwork; 9651,13406 9605,13248
@@ -167,7 +167,7 @@ Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8556 8756,8453 8711,8
 (Kynaststr. - Uferwanderweg): Fußgänger	q1 14828,10628 14906,10587
 Paul-und-Paula-Ufer: Fußgänger, kurvenreich	q1 15314,10121 15261,10167 15204,10201 15137,10239 14903,10403 14864,10451 14906,10587 14937,10598 14990,10581 15100,10637 15209,10581
 Am Rummelsburger See: teilweise enge Kurven	q2 15453,10415 15456,10356 15518,10234 15625,10187 15828,9875 15931,9846
-Unterführung unter Adlergestell und S-Bahn: sehr eng, nicht für Anhänger geeigner	q3 20928,2412 20810,2398
+Unterführung unter Adlergestell und S-Bahn ist sehr eng, nicht für Anhänger geeignet	q3 20928,2412 20810,2398
 Vorfahrt Reichstagsgebäude: Fußgänger	q3 8400,12417 8400,12605
 Am Teltowkanal: kurverreich und recht eng	q1 3743,1385 3695,1308 3619,1207 3458,1063 3366,1007
 Körnerpark: Fußgänger, Bordsteine	q3 12703,7370 12722,7261
@@ -194,6 +194,8 @@ Fritz-Schiff-Weg: Fußgänger	q1 13468,12497 13484,12436 13472,12337
 Verl. Pücklerstr.: Fußgänger, Hundeauslaufgebiet	q1 1558,6729 1170,6654 967,6620 905,6631 880,6645 832,6607 778,6603 698,6567 546,6583 369,6594 218,6571
 Weimarer Str.: Fußgänger	q1 4092,11338 4077,11226
 Norwegerstr. - Behmstr.: Rampe	q2 10033,16232 10068,16093 10078,16164
+#: add_fragezeichen: Stimmt das?
+Marzahner Promenade - Mühlenbecker Weg: Fußgänger	q1 20222,15519 20150,15678
 ######################### User Contributions #################################
 #: by: André Käding
 Neustrelitzer Str.: kurvenreich	q1 16739,14733 16668,14765 16534,14740 16443,14825 16346,14750 16256,14828
@@ -214,3 +216,5 @@ Hünensteig: Fußgänger	q2 6396,5125 6406,5223 6108,5253
 (Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Kleingartenanlage, tiefe Steinregenabläufe quer zum Weg	q2 7921,4451 8162,4725
 (Götzstr. - Albrechtstr.): Fußgänger	q2 9460,6519 9453,6415 9371,6350 9321,6079
 #: by: ^^^
+#: by: Philipp Kaufmann
+Mühlenbecker Weg: Fußgänger	q1 20150,15678 20334,16043

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.15 2005/03/19 11:12:47 eserte Exp $
+# $Id: Strasse.pm,v 1.18 2005/03/24 00:18:59 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -60,13 +60,17 @@ sub is_in {
 ### AutoLoad Sub
 sub de_artikel {
     my($strasse) = @_;
-    if ($strasse =~ /(str\.|straße\b|allee\b|chaussee\b|promenade\b)/i) {
+    if ($strasse =~ /^(am|an|auf|hinter|im|in|unter|zum|zur|zwischen|u-bhf|s-bhf)\b/i) {
+	"=>";
+    } elsif ($strasse =~ /^rue\b/i) { # oh la la
+	"in die";
+    } elsif ($strasse =~ /(str\.|straße\b|allee\b|chaussee\b|promenade\b|zeile\b|gasse\b)/i) {
 	"in die";
     } elsif ($strasse =~ /(park\b|garten\b|ring\b)/i) {
 	"in den";
     } elsif ($strasse =~ /(damm\b|weg\b|steig\b)/i) {
 	"in den";
-    } elsif ($strasse =~ /(platz\b|steg\b)/i) {
+    } elsif ($strasse =~ /(platz\b|steg\b|markt\b|pfad\b)/i) {
 	"auf den";
     } elsif ($strasse =~ /(ufer\b|gestell\b)/i) {
 	"in das";
@@ -121,8 +125,12 @@ sub short {
 #    B1: (Potsdam -) Berlin
 # depending on the traveling direction.
 # Street numbers like "B1" or "F2.2" are recognized.
+# Arguments:
+#   $backwards: reverse the direction
+#   -unicode => 1: use unicode characters, if appropriate
 sub beautify_landstrasse {
-    my($str, $backwards) = @_;
+    my($str, $backwards, %args) = @_;
+    my $can_unicode = $args{-unicode};
     if ($str =~ m/^(.*\()([^\)]+\s-\s[^\)]+)(\).*)$/) {
 	my($begin, $middle, $end) = ($1, $2, $3);
 	return $begin . beautify_landstrasse($middle, $backwards) . $end;
@@ -139,36 +147,10 @@ sub beautify_landstrasse {
 	if ($backwards) {
 	    @comp = reverse @comp;
 	}
+	my $arrow = $can_unicode ? chr(0x2192) : "-";
 	$str = $pre .
-	       "(" . join(" - ", @comp[0 .. $#comp-1]) . " -) " . $comp[-1] .
+	       "(" . join(" $arrow ", @comp[0 .. $#comp-1]) . " $arrow) " . $comp[-1] .
 	       $post;
-    }
-    $str;
-}
-
-sub XXX_Old_and_obsolete_beautify_landstrasse {
-    my($str, $backwards) = @_;
-    if ($str =~ /^([\w\.]+:\s+)?(.*\s-\s.*)$/) {
-	my $str_nummer = "";
-	if (defined $1 and $1 ne "") {
-	    $str_nummer = $1;
-	    $str = $2;
-	}
-	my(@comp) = split /\s-\s/, $str;
-	my $add_parens = 0;
-	if ($backwards) {
-	    if ($comp[0] =~ /^\(/ && $comp[-1] =~ /\)$/) {
-		$comp[0] =~ s/^\(//;
-		$comp[-1] =~ s/\)$//;
-		$add_parens = 1;
-	    }
-	    @comp = reverse @comp;
-	}
-	$str = $str_nummer . "(" . join(" - ", @comp[0..$#comp-1])
-	    . " -) " . $comp[$#comp];
-	if ($add_parens) {
-	    $str = "($str)";
-	}
     }
     $str;
 }

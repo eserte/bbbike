@@ -1,9 +1,11 @@
 #
-# $Id: Makefile,v 1.20 2004/12/12 20:32:42 eserte Exp $
+# $Id: Makefile,v 1.21 2005/03/23 21:38:49 eserte Exp eserte $
 #
 
 # cygwin: failures while building in some directories. Solution:
 # build with "make -k" and try again
+
+# XXX Should migrate to Makefile.PL
 
 PERL?=perl
 
