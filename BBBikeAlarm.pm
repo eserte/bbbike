@@ -550,7 +550,7 @@ sub tk_interface {
 	if ($top->messageBox
 	    (-title => M"Alarm setzen?",
 	     -icon => "question",
-	     -text => Mfmt("Alarm auf %s setzen?", scalar localtime $end_time),
+	     -message => Mfmt("Alarm auf %s setzen?", scalar localtime $end_time),
 	     -type => "YesNo") =~ /no/i) {
 	    return;
 	}
@@ -652,7 +652,7 @@ sub tk_show_all {
 			     my $entry = shift;
 			     my $data = $hl->entrycget($entry, -data);
 			     if ($data->[LIST_HOST] eq $this_host &&
-				 $hl->messageBox(-text => Mfmt("Prozess %s abbrechen?", $data->[LIST_PID]),
+				 $hl->messageBox(-message => Mfmt("Prozess %s abbrechen?", $data->[LIST_PID]),
 						 -type => "YesNo",
 						) =~ /yes/i) {
 				 kill 9 => $data->[LIST_PID];
