@@ -13,11 +13,15 @@
 # WWW:  http://bbbike.sourceforge.net
 #
 
+BEGIN { open(STDERR, ">/tmp/wapbbbike.log") }
+
 package BBBikeRouting::WAP;
 BEGIN { delete $INC{"FindBin.pm"} }
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/../BBBike", "$FindBin::RealBin/../BBBike/lib");
+use lib "/home/e/eserte/lib/perl"; # fuer GD
+use lib "/tmp/bbbike";
 use BBBikeRouting;
 use BBBikeVar;
 @ISA = 'BBBikeRouting';
@@ -278,6 +282,7 @@ sub wap_cgi_object {
     my $self = shift;
 
     require CGI;
+    CGI->import('-newstyle_urls');
     my $q = $self->Context->CGI(CGI->new);
     eval {
 	require BrowserInfo;
@@ -327,6 +332,7 @@ return 1 if ((caller() and (caller())[0] ne 'Apache::Registry')
 
 my $routing = BBBikeRouting->new->init_context;
 bless $routing, 'BBBikeRouting::WAP'; # 5.005 compat
+$routing->Context->Algorithm("A*");
 
 
 my $q = $routing->wap_init;
