@@ -275,7 +275,6 @@ Jungstr.: Kopfsteinpflaster	Q2 14550,11732 14623,11867 14675,11964
 Oberhofer Platz: Kopfsteinpflaster	Q2 5443,2109 5411,2098 5382,2080 5437,1941 5469,1949 5495,1964 5443,2109
 Kieler Str.: Kopfsteinpflaster, OK	Q1 5124,5750 5050,5785
 Düppelstr.: Kopfsteinpflaster	Q2 5124,5750 4957,5542
-Behrenstr.: mäßiger Asphalt	Q1 9492,12214 9626,12227 9803,12243
 Königstr.: schlechtes Kopfsteinpflaster	Q3 525,3008 -141,2648 -267,2576
 Königsweg: Waldweg, mäßig bis OK	Q1 -3161,975 -4257,328 -5983,-648 -6395,-887 -6807,-1093 -6928,-1076
 Königsweg: Waldweg, mäßig bis OK	Q1 -1088,2134 -1303,2003 -1606,1836 -2618,1281
@@ -743,7 +742,8 @@ Ella-Kay-Str.: guter Asphalt	Q0 12202,15099 12089,14891 11990,14714
 Landecker Str.: Kopfsteinpflaster	Q2 3140,8525 2973,8569
 Kufsteiner Str.: glatter Parkweg	Q1 5919,8417 5934,8220
 Rolandufer: Kopfsteinpflaster	Q2 11278,12185 11155,12184 10945,12150
-Rolandufer/Spreeufer: gutes Kopfsteinpflaster	Q1 10945,12150 10837,12158 10660,12176 10583,12206 10423,12353 10422,12395
+Rolandufer/Spreeufer: gutes Kopfsteinpflaster	Q1 10945,12150 10837,12158 10660,12176
+Spreeufer: Verbundsteine	Q1 10583,12206 10423,12353 10422,12395
 Rathenower Str.: mäßig geeignet	Q2 6743,14008 6670,14302
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
 Treptower Park: Schotterweg	Q2 14242,9448 14304,9538
@@ -874,7 +874,7 @@ Christinenstr.: Kopfsteinpflaster, teilweise OK	Q1 10569,13719 10639,13865 10686
 (Am Schinkelplatz): teilweise schlechtes Kopfsteinpflaster, Baustelle	Q3 9987,12421 10084,12228
 Sorauer Str.: teilweise Kopfsteinpflaster	Q1 12829,10504 12689,10273
 am Beisheim-Center: sehr gutes Kopfsteinpflaster	Q0 8326,11732 8399,11630 8490,11526
-Hans-Bülow-Str.: Asphalt/sehr gutes Kopfsteinpflaster	Q0 8399,11630 8553,11638
+Hans-Bülow-Str.: Asphalt/sehr gutes Kopfsteinpflaster	Q0 8399,11630 8473,11634 8553,11638
 Katzlerstr.: mäßiges Kopfsteinpflaster	Q2 8035,9437 8095,9639
 Derfflingerstr.: einige kurze Kopfsteinpflasterabschnitte, sonst Asphalt	Q0 7117,10611 7236,10936
 Weimarer Str.: gutes Kopfsteinpflaster	Q1 4092,11338 4077,11226
@@ -966,6 +966,7 @@ Bettina-von-Arnim-Ufer: Parkweg	Q1 7437,12368 7529,12496 7670,12576
 Große Querallee: Parkweg	Q1 7875,12363 7816,12150
 Werrastr.: sehr gutes Kopfsteinpflaster	Q1 13648,8321 13566,8386 13469,8462
 Rungestr.: Kopfsteinpflaster	Q2 11197,11882 11283,11876 11378,11856 11506,11851
+Wassergasse: Kopfsteinpflaster	Q2 11022,11782 11034,11895
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
 Schützallee: mäßiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfläche	Q2 2230,3823 1952,3864 1677,3885
 Riemeisterstr.: mäßiges Kopfsteinpflaster	Q2 373,4816 319,4906 168,5092 103,5123

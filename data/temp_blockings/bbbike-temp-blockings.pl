@@ -979,9 +979,9 @@ EOF
 userdel	q4 32100,18012 31887,17453
 EOF
      },
-     { from  => 1098132674, # 2004-10-18 22:51
-       until => 1104534000, # 2005-01-01 00:00
-       text  => 'Naumannstr. (Schöneberg) in beiden Richtungen zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt (bis 31.12.2004)',
+     { from  => 1102981474, # 2004-12-14 00:44
+       until => 1107212399, # 2005-01-31 23:59
+       text  => 'Naumannstr. (Schöneberg) in beiden Richtungen zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt (bis Ende 01.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 7716,8048 7717,7759
@@ -1173,7 +1173,7 @@ userdel	q4 26136,29466 25361,29596
 EOF
      },
      { from  => 1101507035, # 2004-11-26 23:10
-       until => 1114898400, # 2005-05-01 00:00
+       until => 1102980501, # passierbar für Radfahrer!
        text  => 'Ebertstr. Richtung Potsdamer Platz zwischen Behrensstr. und Hannah-Ahrendt-Str. Baustelle, Fahrtrichtung gesperrt (bis April 2005)',
        type  => 'handicap',
        data  => <<EOF,
@@ -1228,10 +1228,10 @@ EOF
 userdel	2 -37026,11176 -36427,10861
 EOF
      },
-     { from  => 1101803392, # 2004-11-30 09:29
-       until => 1102978800, # 2004-12-14 00:00
-       text  => 'Emmentaler Str. (Reinickendorf) Richtung Westen zwischen Residenzstr. und Gamsbartweg Baustelle, Straße Richtung Westen gesperrt, Einbahnstraßenregelung Richtung Osten (bis 13.12.2004)',
-       type  => 'handicap',
+     { from  => 1102981307, # 2004-12-14 00:41
+       until => 1103324400, # 2004-12-18 00:00
+       text  => 'Emmentaler Str. (Reinickendorf) Richtung Westen zwischen Residenzstr. und Gamsbartweg Baustelle, Straße Richtung Westen gesperrt, Einbahnstraßenregelung Richtung Osten (bis 17.12.2004)',
+       type  => 'gesperrt',
        data  => <<EOF,
 userdel	q4; 7693,18481 7350,18262
 EOF
@@ -1274,6 +1274,23 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -59599,-27568 -59265,-27286
+EOF
+     },
+     { from  => 1102980646, # 2004-12-14 00:30
+       until => 1104015600, # 2004-12-26 00:00
+       text  => 'Weihnachtsmarkt am Opernpalais, bis 25.12.2004',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 9890,12161 9853,12402
+userdel	2 9803,12243 9782,12393
+EOF
+     },
+     { from  => 1102980716, # 2004-12-14 00:31
+       until => 1104015600, # 2004-12-26 00:00
+       text  => 'Weihnachtsmarkt am Schloßplatz, bis 25.12.2004',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 10170,12261 10083,12442
 EOF
      },
     );

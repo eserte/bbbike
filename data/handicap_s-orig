@@ -1,5 +1,6 @@
 # $Id: handicap_s-orig,v 4.9 2004/09/25 22:55:59 eserte Exp eserte $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Behrenstr./Bebelplatz: Einbahnstraße	q3::inwork; 9626,12227 9803,12243
 #XXX del? Müggelseedamm Erkner Richtung Köpenick zwischen Fürstenwalder Damm (Ost) und Bölschestraße wegen Bauarbeiten gesperrt (bis 15.09.2004)	q4::inwork; 28195,5141 27427,5188 27215,5200 26964,5039 26625,4958 26277,4957 25960,4839 25801,4831 25742,4835 25541,4845
 #XXX del Alt-Biesdorf, Berlin-Mitte Richtung Berlin-Biesdorf, Zwischen Märkische Allee und Köpenicker Straße wegen Bauarbeiten gesperrt bis 15.08.	q4::inwork; 20115,11730 20368,11711 20575,11698 21106,11651
 Wassersportallee (Grünau), Richtung Regattastraße zwischen Ammerseestraße und Regattastraße Baustelle Straße vollständig gesperrt (bis 2005-01-31)	q4::inwork; 22449,1281 22663,1441
@@ -14,7 +15,7 @@ Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
 #XXX del? Voßstr.: Bauarbeiten an der Ebertstr.	q3::inwork 8553,11638 8837,11676
 Gärtnerstraße, Richtung Rhinstraße, zwischen Konrad-Wolf-Straße und Rhinstraße: Straßenarbeiten, gesperrt (bis 15.12.2004)	q4::inwork; 16872,15827 17080,15779 17379,15781 17489,15781
 #XXX del Naumannstr.: Bauarbeiten, eine Richtung gesperrt. Dauer: 27.10.2003, 14.00 Uhr bis 30.11.2004	q4::inwork; 7717,7759 7716,8048
-Wilhelmstr.: Fahrbahn vor der britischen Botschaft gesperrt	q4 8851,12123 8804,12280
+Wilhelmstr.: Fahrbahn vor der britischen Botschaft gesperrt, passierbar für Radfahrer	q3 8851,12123 8804,12280
 Tucholskystr.: Einbahnstr., Richtung Süden gesperrt	q4; 9654,13397 9605,13248
 # früher wurde 2005-03-00 als Ende genannt, und dann 19.9.2004, dann 19.9.2005, dann 15.9.2004, dann wieder Mitte 2005 (noch nicht geändert)...
 #XXX del Regattastraße, zwischen Wassersportallee und Grünauer Straße/Bohnsdorfer Straße, Einrichtung als Einbahnstraße Richtung Grünauer Straße. Baumaßnahmen. Dauer: 12.01.2004 bis vorraussichtlich 15.09.2005	q4; 22074,2666 22421,1872 22663,1441
