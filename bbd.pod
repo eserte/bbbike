@@ -13,6 +13,8 @@ Bbd files consist of newline-terminated records in the format:
 
     Name TAB Category SPACE x,y SPACE x,y ...
 
+=head2 Coordinate lines
+
 =over
 
 =item Name
@@ -68,9 +70,29 @@ meters (as in GKK or UTM). A record may contain an unlimited number of
 coordinates, though there may be limitations in the interpreting
 software (currently the maximum number of points is hardcoded in
 L<BBBikeXS> and checked in the rule C<check-line-lengths> of
-C<data/Makefile>).
+F<data/Makefile>). See also below for the B<map> directive in
+L</Directive lines>.
 
 =back
+
+=head2 Directive lines
+
+If a line begines with a hash sign followed by a color (C<#:>), then
+the line is treated as a directive. The following directives are
+defined:
+
+=over
+
+=item C<map: I<maptype>>
+
+This directive sets the coordinate system of the bbd file. If no
+C<map> directive is specified, then the proprietary bbbike coordinate
+system is used. For WGS84 coordinates specified as DDD use the maptype
+B<polar>.
+
+=back
+
+=head2 Comment lines
 
 If a line begins with a hash sign (C<#>), then it is treated as a
 comment. Empty lines are ignored.
@@ -81,7 +103,7 @@ Here's a list of special categories:
 
 =head2 STREETS
 
-Used in files: C<strassen>, C<landstrassen>, C<landstrassen2>.
+Used in files: F<strassen>, F<landstrassen>, F<landstrassen2>.
 
 =over
 
@@ -121,32 +143,32 @@ Bridges.
 
 =head2 BLOCKINGS
 
-Used in files: C<gesperrt>.
+Used in files: F<gesperrt>.
 
 =over
 
-=item * 1:
+=item * C<1>:
 
 One way street. The blocking is in the direction of the polyline.
 
-=item * 2:
+=item * C<2>:
 
 Blocked street (in both directions).
 
-=item * 0:
+=item * C<0>:
 
 The bicycle has to be carried. An optional penalty parameter expressed
 in seconds of lost time may be added after the category, with a C<:>
 as separator. Example: C<0:30> for a penalty of 30 seconds. This is
 only for point records.
 
-=item * 3:
+=item * C<3>:
 
 A blocked route (gesperrte Wegführung). This means that the whole path
 specified by the coordinates of this record are blocked, but parts of
 the path are not.
 
-=item * BNP:
+=item * C<BNP>:
 
 A narrow passage (E<quot>DrE<auml>ngelgitterE<quot> etc.). An optional
 penalty parameter may be added, like for the C<0> category.
@@ -155,47 +177,47 @@ penalty parameter may be added, like for the C<0> category.
 
 =head2 CYCLE PATHS (RADWEGE)
 
-Used in files: C<radwege_exact>.
+Used in files: F<radwege_exact>.
 
 =over
 
-=item RW0
+=item C<RW0>
 
 Kein Radweg.
 
-=item RW1
+=item C<RW1>
 
 Normaler nicht benutzungspflichtiger Radweg.
 
-=item RW2
+=item C<RW2>
 
 Benutzungspflichtiger Radweg.
 
-=item RW3
+=item C<RW3>
 
 Suggestivstreifen für Radfahrer.
 
-=item RW4
+=item C<RW4>
 
 Radstreifen.
 
-=item RW5
+=item C<RW5>
 
 Busspur (eventuell nur temporär), auch für Radfahrer frei.
 
-=item RW6
+=item C<RW6>
 
 Verkehrsberuhigte Straße.
 
-=item RW7
+=item C<RW7>
 
 Fahrradstraße.
 
-=item RW8
+=item C<RW8>
 
 Benutzungspflichtiger Zweirichtungsradweg, Gegenrichtung.
 
-=item RW9
+=item C<RW9>
 
 Nicht benutzungspflichtiger Zweirichtungsradweg, Gegenrichtung.
 
@@ -203,68 +225,68 @@ Nicht benutzungspflichtiger Zweirichtungsradweg, Gegenrichtung.
 
 =head2 RAILROADS
 
-Used in files: C<ubahn>, C<sbahn>, C<rbahn>, C<ubahnhof>, C<sbahnhof>,
-C<rbahnhof>.
+Used in files: F<ubahn>, F<sbahn>, F<rbahn>, F<ubahnhof>, F<sbahnhof>,
+F<rbahnhof>.
 
 =over
 
-=item R
+=item C<R>
 
 Regionalbahnen außerhalb des Stadtgebiets.
 
-=item RA
+=item C<RA>
 
 Regionalbahnen Zone A.
 
-=item RB
+=item C<RB>
 
 Regionalbahnen Zone B.
 
-=item RC
+=item C<RC>
 
 Regionalbahnen Zone C.
 
-=item R0
+=item C<R0>
 
 Regionalbahnen außer Betrieb oder in Bau.
 
-=item S
+=item C<S>
 
 S-Bahnen außerhalb des Stadtgebiets.
 
-=item SA
+=item C<SA>
 
 S-Bahnen Zone A.
 
-=item SB
+=item C<SB>
 
 S-Bahnen Zone B.
 
-=item SC
+=item C<SC>
 
 S-Bahnen Zone C.
 
-=item S0
+=item C<S0>
 
 S-Bahnen außer Betrieb oder in Bau.
 
-=item U
+=item C<U>
 
 U-Bahnen außerhalb des Stadtgebiets.
 
-=item UA
+=item C<UA>
 
 U-Bahnen Zone A.
 
-=item UB
+=item C<UB>
 
 U-Bahnen Zone B.
 
-=item UC
+=item C<UC>
 
 U-Bahnen Zone C.
 
-=item U0
+=item C<U0>
 
 U-Bahnen außer Betrieb oder in Bau.
 
@@ -274,53 +296,53 @@ U-Bahnen außer Betrieb oder in Bau.
 
 Qualität der Wege (Fahrbahnbeschaffenheit).
 
-Used in files: C<quality_s>, C<quality_l>.
+Used in files: F<quality_s>, F<quality_l>.
 
 =over
 
-=item Q0
+=item C<Q0>
 
 Beste Qualität, keine Einschränkungen.
 
-=item Q1
+=item C<Q1>
 
 Gute Kopfsteinpflasterstrecken, mäßiger Asphalt, etwa 25 km/h
 Höchstgeschwindigkeit.
 
-=item Q2
+=item C<Q2>
 
 Gewöhnliche Kopfsteinpflasterstrecken, schlechter Asphalt, Waldwege,
 etwa 18 km/h Höchstgeschwindigkeit.
 
-=item Q3
+=item C<Q3>
 
 Schlechte Kopfsteinpflasterstrecken, sandige Strecken, etwa 13 km/h
 Höchstgeschwindigkeit.
 
 =back
 
-Andere, nicht fahrbahnbezogene Handicaps. Used in files: C<handicap_s>,
-C<handicap_l>.
+Andere, nicht fahrbahnbezogene Handicaps. Used in files: F<handicap_s>,
+F<handicap_l>.
 
 =over
 
-=item q0
+=item C<q0>
 
 Keine.
 
-=item q1
+=item C<q1>
 
 Auf 25 km/h.
 
-=item q2
+=item C<q2>
 
 Auf 18 km/h.
 
-=item q3
+=item C<q3>
 
 Auf 13 km/h.
 
-=item q4
+=item C<q4>
 
 Auf Schrittgeschwidigkeit (z.B. in FuE<szlig>gE<auml>ngerzonen).
 
@@ -328,49 +350,49 @@ Auf Schrittgeschwidigkeit (z.B. in FuE<szlig>gE<auml>ngerzonen).
 
 =head2 COMMENTS
 
-Used in files: C<comments>.
+Used in files: F<comments>.
 
 =over
 
-=item P1
+=item C<CP;>
 
 Only for records with three points. Comment is valid for point B if
 driving from A to C.
 
-=item P2
+=item C<CP>
 
-Same as P1, but valid for both directions.
+Same as C<CP;>, but valid for both directions.
 
-=item S1
+=item C<CS;>
 
 Comment is valid for the whole route in this direction.
 
-=item S2
+=item C<CS>
 
 Comment is valid for the whole route in both directions.
 
-=item PI
+=item C<PI>
 
 Path instruction (genauere Wegbeschreibung).
 
-=item P0
+=item C<P0>
 
 Dieser Weg ist gesperrt (z.B. Abbiegen nicht möglich), aber eine
-Umfahrung ist möglich ... siehe auch Kategorie "3" in C<Blocking>.
+Umfahrung ist möglich ... siehe auch Kategorie C<3> in L</BLOCKINGS>.
 
 =back
 
 =head2 AREAS
 
-Used in files: C<flaechen>. Mostly prefixed with "F:", see above.
+Used in files: F<flaechen>. Mostly prefixed with C<F:>, see above.
 
 =over
 
-=item P
+=item C<P>
 
 Parks and forests.
 
-=item Ae
+=item C<Ae>
 
 Airports.
 
@@ -380,15 +402,15 @@ Airports.
 
 =over
 
-=item radroute
+=item C<radroute>
 
 Haupt- oder Freizeitrouten.
 
-=item Q
+=item C<Q>
 
 Fähren.
 
-=item X
+=item C<X>
 
 The category will not be used in this case.
 
@@ -415,15 +437,35 @@ XXX To be continued
 
 =head1 EXAMPLES
 
-                      List of coordinates (x,y pairs)
-                      v
-    Dudenstr. <TAB> H 9222,8787 8982,8781 8594,8773
+    #: map: polar
+    # a comment
+    Dudenstr.	H 13.3857982559056,52.4850047136888 13.3822671967909,52.4849893166144 13.3765591649622,52.4849797043717 13.3721313913775,52.4849830887141 13.3708964575072,52.4850055627098
+    Viktoriapark	F:P 13.3770529147335,52.4891642850551 13.376956820767,52.4876188211697 13.3778829456197,52.4875997186591
+
+And a detailed explanation...
+
+    Start of a directive
+    v
+    #: map: polar
+       ^
+       Coordinate system of this file is defined as WGS84, DDD
+
+    Start of a comment
+    v
+    # a comment
+
+(Note that spaces are insignificant in the following examples, but
+C<< <TAB> >> and C<< <SPACE> >> should be inserted)
+    
+                              List of coordinates (x,y pairs)
+                              v
+    Dudenstr. <TAB> H <SPACE> 13.3857982559056,52.4850047136888 13.3822671967909,52.4849893166144 13.3765591649622,52.4849797043717 13.3721313913775,52.4849830887141 13.3708964575072,52.4850055627098
     ^               ^
     Street name     Category (H = main street)
 
-                           List of coordinates for a polygon
-                           v
-    Viktoriapark <TAB> F:P 8554,8628 8551,8698 8577,8699 8579,8727
+                                   List of coordinates for a polygon
+                                   v
+    Viktoriapark <TAB> F:P <SPACE> 13.3770529147335,52.4891642850551 13.376956820767,52.4876188211697 13.3778829456197,52.4875997186591
     ^                  ^
     Name of a park     Category (F = area (polygon, Fläche),
                                  P = park)
