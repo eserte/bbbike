@@ -43,7 +43,7 @@ Graefestr.: mäßiges Kopfsteinpflaster	Q2 11507,10004 11411,9810
 Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11512,10105 11735,10022 12119,9823 12591,9584 12712,9523
 Maybachufer: Kopfsteinpflaster	Q2 11543,10015 11880,9874 12093,9783 12257,9703 12569,9547 12785,9443 12841,9368 12870,9366
 Innstr.: Kopfsteinpflaster (mäßig bis schlecht)	Q2 13107,8343 13217,8493 13366,8694
-Elsenstr.: mäßiges Kopfsteinpflaster	Q2 13504,8882 13657,9063
+Elsenstr.: mäßiges Kopfsteinpflaster	Q2 13402,8741 13504,8882 13657,9063
 Herrfurthstr.: mäßiges Kopfsteinpflaster	Q2 11979,8014 11757,7965
 Herrfurthstr.: mäßiges Kopfsteinpflaster	Q2 11647,7940 11472,7899
 Herrfurthplatz: mäßiges Kopfsteinpflaster	Q2 11647,7940 11670,7911 11717,7895 11753,7930 11757,7965 11732,8001 11695,8005 11659,7982 11647,7940
@@ -159,7 +159,7 @@ Rotherstr.: Mitte der Fahrbahn asphaltiert	Q1 13854,10858 13676,10926
 Rotherstr.: Kopfsteinpflaster	Q2 13676,10926 13478,10998
 Warschauer Platz: Kopfsteinpflaster	Q2 13520,11097 13478,10998 13471,10983 13389,10808
 Colditzstr.: Kopfsteinpflaster	Q2 9665,6029 9781,5789 9955,5376 10029,5230
-Volkmarstr.: Kopfsteinpflaster	Q2 9651,5237 9955,5376 10217,5493
+Volkmarstr.: Kopfsteinpflaster	Q2 9661,5224 9690,5255 9955,5376 10217,5493
 Str. 229: Kopfsteinpflaster mit asphaltierten Banketten	Q2 11058,4338 11232,4327
 Reuterstr.: Kopfsteinpflaster	Q2 12150,9019 12148,9209 12148,9426 12150,9545
 Lenaustr.: Kopfsteinpflaster	Q2 12148,9426 12047,9429 11810,9392
@@ -748,7 +748,7 @@ Grunewald: teilweise sandig	Q2 -2080,6897 -1925,6790
 verlängerte Verbindungschaussee: teilweise sandige Stellen, sonst 20km/h möglich	Q2 -1112,7891 -1328,7597 -1851,6887 -1925,6790 -2834,5578 -3605,4520
 Teltower Weg: Waldweg?	Q1 -903,6923 -1008,7427 -1112,7891 -1317,8836 -1336,9001 -1415,9144
 Teltower Weg: Waldweg?	Q1 -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -174,5941 -107,5880
-Parforceweg: Waldweg?	Q1 -643,7252 -728,7310 -1008,7427 -1142,7493 -1308,7558 -1328,7597 -1787,7932 -1843,8128 -2028,8270 -2078,8217 -2117,8204 -2156,8208 -2294,8232 -2386,8282
+Parforceweg: Waldweg?	Q2 -643,7252 -728,7310 -1008,7427 -1142,7493 -1308,7558 -1328,7597 -1787,7932 -1843,8128 -2028,8270 -2078,8217 -2117,8204 -2156,8208 -2294,8232 -2386,8282
 Alte Spandauer Poststr.: Waldweg?	Q1 -1415,9144 -1482,9276 -1512,9438 -1495,9518 -1448,9644 -1453,9748 -1491,9801 -1602,9915 -1846,10292
 (Pappelplatz): Asphalt	Q0 425,8766 297,8894 197,8973 30,9105
 (Weg am Müggelsee): Waldweg, teilweise sandig, teilweise OK	Q2 27427,5188 27470,5093 27852,5017 28286,4943 28361,5068
@@ -756,4 +756,7 @@ Alte Spandauer Poststr.: Waldweg?	Q1 -1415,9144 -1482,9276 -1512,9438 -1495,9518
 (Waldweg parallel zur Straßenbahn): Waldweg, Schotter, teilweise sandig	Q2 30339,5457 32192,5915
 Wanderweg Erkner - Hessenwinkel: guter Parkweg	Q1 33530,2765 33361,2752 33086,2790 32972,2832
 (Zu den Müggelheimer Wiesen): asphaltiert	Q0 29899,2399 29549,2267 29414,2373
+Südendstr.: Kopfsteinpflaster	Q2 5687,5486 6002,5424
+Am Teltowkanal: Parkweg, teilweise mit schmalem Verbundsteinradweg	Q1 7990,4420 8242,4648 8590,4976 8772,5081 8881,5143 9185,5271
+(Weg am Friedhof): Parkweg	Q1 11587,7260 12180,7387
 Voigtstr.: Kopfsteinpflaster	Q2 14702,12157 14748,12314 14798,12502 14842,12826

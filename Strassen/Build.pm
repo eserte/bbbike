@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Build.pm,v 1.14 2003/09/02 21:42:22 eserte Exp $
+# $Id: Build.pm,v 1.15 2003/09/02 22:29:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::Build;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz::CNetFile;
 
@@ -116,8 +116,8 @@ sub create_mmap_net {
     close F;
 
     warn "Write cache files...\n" if $VERBOSE;
-    Strassen::Util::write_cache($coord2ptr, $self->get_cachefile . "_coord2ptr");
-    Strassen::Util::write_cache($self->{Net2Name}, $self->get_cachefile . "_net2name");
+    Strassen::Util::write_cache($coord2ptr, $self->get_cachefile(%args) . "_coord2ptr");
+    Strassen::Util::write_cache($self->{Net2Name}, $self->get_cachefile(%args) . "_net2name");
 
     1;
 }
@@ -146,10 +146,10 @@ sub create_mmap_net_if_needed {
 	}
     }
     if (   !$doit &&
-	   (!Strassen::Util::valid_cache($self->get_cachefile . "_coord2ptr",
+	   (!Strassen::Util::valid_cache($self->get_cachefile(%args) . "_coord2ptr",
 					 \@depend_files)
 	    || !-e $self->filename_c_net_mmap($file_prefix)
-	    || !Strassen::Util::valid_cache($self->get_cachefile . "_net2name",
+	    || !Strassen::Util::valid_cache($self->get_cachefile(%args) . "_net2name",
 					    \@depend_files)
 	   )
        ) {

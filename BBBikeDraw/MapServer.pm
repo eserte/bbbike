@@ -46,7 +46,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 	$self;
     }
 
-    sub ipaq_default { # XXX still hosts-dependent :-(
+    sub ipaq_vran_default {
 	my $self = shift->new;
 	my(%args) = @_;
 	$self->BbbikeDir("$ENV{HOME}/src/bbbike");

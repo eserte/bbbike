@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CNetFilePerl.pm,v 1.14 2003/09/02 21:41:53 eserte Exp $
+# $Id: CNetFilePerl.pm,v 1.15 2003/09/02 22:29:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
@@ -19,30 +19,45 @@ use Strassen::StrassenNetzHeavy; # XXX hack
 @StrassenNetz::CNetFile::ISA = qw(StrassenNetz);
 use strict;
 
+sub get_cachefile {
+    my($self, %args) = @_;
+    my $cachefile = $self->SUPER::get_cachefile;
+    if ($args{-blocked}) {
+	if (UNIVERSAL::isa($args{-blocked}, "Strassen")) {
+	    $cachefile .= "_" . join("_", $args{-blocked}->file);
+	} else {
+	    $cachefile .= "_" . $args{-blocked};
+	}
+    }
+    $cachefile;
+}
+
 sub make_net {
     my($self, %args) = @_;
-    # XXX $self->get_cachefile should take file in -blocked into account!
-    my $cache_prefix = Strassen::Util::get_cachefile($self->get_cachefile);
 
-    require Strassen::Build;
-    require Strassen::Util;
-    require Storable;
-
-    my $try = 0;
     my %args2;
     while(my($k,$v) = each %args) {
 	if ($k =~ /^-(blocked|blockedtype)$/) {
 	    $args2{$k} = $v;
 	}
     }
+
+    my $cachefile = $self->get_cachefile(%args);
+    my $cache_prefix = Strassen::Util::get_cachefile($cachefile);
+
+    require Strassen::Build;
+    require Strassen::Util;
+    require Storable;
+
+    my $try = 0;
     $self->create_mmap_net_if_needed($cache_prefix, %args2);
     $self->mmap_net_file($self->filename_c_net_mmap($cache_prefix));
 
-    my $coord2ptr_cache_file = $self->get_cachefile . "_coord2ptr";
+    my $coord2ptr_cache_file = $cachefile . "_coord2ptr";
     $self->{CNetCoord2Ptr} = Strassen::Util::get_from_cache
 	($coord2ptr_cache_file, [$self->{Strassen}->{File}])
 	    or die "Should not happen: Cachefile $coord2ptr_cache_file is not current and/or cannot be created";
-    my $net2name_cache_file = $self->get_cachefile . "_net2name";
+    my $net2name_cache_file = $cachefile . "_net2name";
     $self->{Net2Name} = Strassen::Util::get_from_cache
 	($net2name_cache_file, [$self->{Strassen}->{File}])
 	    or die "Should not happen: Cachefile $net2name_cache_file is not current and/or cannot be created";

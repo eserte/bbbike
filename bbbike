@@ -3861,7 +3861,7 @@ sub do_iconframe {
 		       -command => sub {
 			   require BBBikeAdvanced;
 			   tk_plot_additional_layer('str') });
-	$cusm->command(-label => M"Sperrungen-Layer zeichnen", # XXX label?
+	$cusm->command(-label => M"Sperrungen-Layer zeichnen", # XXX label? only in advanced mode? (there is no way to delete the blockings from net!)
 		       -command => sub {
 			   require BBBikeAdvanced;
 			   plot_additional_sperre_layer() });
@@ -6050,8 +6050,8 @@ sub set_route_point {
 	Tk->break; # XXX insert more Tk->break in this subroutine?
     } elsif ($map_mode eq MM_BUTTONPOINT) {
 	my(@tags) = $c->gettags('current');
-	if ($tags[0] ne 'pp') {
-	    warn "Not over a <pp> point, got @tags";
+	if ($tags[0] !~ /^(pp|o)$/) {
+	    warn "Not over a <pp> or <o> point, got @tags";
 	    return;
 	}
 	require BBBikeAdvanced;

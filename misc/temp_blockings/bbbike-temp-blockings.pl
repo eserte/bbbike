@@ -168,4 +168,16 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Global City (05.09.03 - 07.09.03): Kurfürstendamm/Tauentzienstr. von Uhlandstr. bis Passauer Str. gesperrt',
        type  => 'gesperrt',
      },
+     { from  => 1062813600, # 2003-09-06 04:00
+       until => 1064181600, # 2003-09-22 00:00
+       file  => '20030907b.bbd',
+       text  => 'Fürstenwalder Damm zwischen Bölschestraße und Hartlebenstraße Baustell stadtauswärts, Straße gesperrt, eine Umleitung ist eingerichtet, Dauer: 07.09.2003,04.00 Uhr bis 21.09.2003',
+       type  => 'gesperrt',
+     },
+     { from  => 1063339200, # 2003-09-12 06:00
+       until => 1063576800, # 2003-09-15 00:00
+       file  => 'winzerfest.bbd',
+       text  => 'Bahnhofstraße, zwischen Goltzstraße und Steinstraße Vollsperrung, vom 13.09.2003, 06.00 Uhr bis 14.09.2003, 24.00 Uhr ',
+       type  => 'gesperrt',
+     },
     );

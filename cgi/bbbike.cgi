@@ -94,7 +94,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    @weak_cache @no_cache %proc
 	    $bbbike_script $cgi $port
 	    $search_algorithm $use_background_image
-	    $use_apache_session $cookiename
+	    $use_apache_session $apache_session_module $cookiename
 	    @temp_blocking
 	   );
 
@@ -211,6 +211,25 @@ This may help if there are memory leaks. Default: true if MOD_PERL.
 =cut
 
 $modperl_lowmem = $ENV{MOD_PERL};
+
+=item $use_apache_session
+
+Use an L<Apache::Session> class for storing the route coordinates.
+This is useful for large routes which would overflow the URL capacity
+of most browsers and web servers. Default: false.
+
+=cut
+
+$use_apache_session = 0;
+
+=item $apache_session_module
+
+The class of the L<Apache::Session> family to be used. Default is
+L<Apache::Session::DB_File>.
+
+=cut
+
+$apache_session_module = "Apache::Session::DB_File";
 
 =back
 
@@ -4597,13 +4616,13 @@ sub tie_session {
     my $id = shift;
     return unless $use_apache_session;
 
-    if (!eval {require Apache::Session::DB_File}) {
+    if (!eval qq{ require $apache_session_module }) {
 	$use_apache_session = undef;
 	warn $@ if $debug;
 	return;
     }
 
-    tie my %sess, 'Apache::Session::DB_File', $id,
+    tie my %sess, $apache_session_module, $id,
 	{ FileName => "/tmp/bbbike_sessions_" . $< . ".db", # XXX make configurable
 	  LockDirectory => '/tmp',
 	} or do {
