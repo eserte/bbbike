@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.16 2004/03/23 00:09:30 eserte Exp $
+# $Id: bbbikerouting.t,v 1.17 2004/03/30 18:41:06 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -49,7 +49,11 @@ if (!GetOptions("full|slow|all" => sub { $all = 1 },
 		"usecache!"     => sub { $common = 0; $usecache = $_[1] },
 		"cachetype=s"   => sub { $common = 0; $cachetype = $_[1] },
 	       )) {
-    die "usage!";
+    die <<EOF;
+usage: $0 [-full|-slow|-all] [-single] [-bench] [-v [-v ...]] [-xxx]
+          [-[no]usexs] [-algorithm A*|C-A*|C-A*-2]
+          [-[no]usenetserver] [-[no]usecache] [-cachetype ...]
+EOF
 }
 
 if ($all) { $v = 1 }
