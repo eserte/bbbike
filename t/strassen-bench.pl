@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-bench.pl,v 1.2 2003/06/23 22:04:48 eserte Exp $
+# $Id: strassen-bench.pl,v 1.3 2003/10/08 11:50:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -122,3 +122,56 @@ rx          6168/s        34%         --       -39%       -39%       -39%
 index      10037/s       119%        63%         --        -1%        -1%
 split      10112/s       120%        64%         1%         --        -1%
 splitindex 10188/s       122%        65%         2%         1%         --
+
+======================================================================
+
+More results under RedHat 8.0, Intel Pentium 4 2.4MHz, perl 5.8.0:
+
+short line:
+
+Benchmark: running index, index2, rx, split, splitindex for at least 1 CPU seconds...
+     index:  1 wallclock secs ( 1.08 usr +  0.00 sys =  1.08 CPU) @ 159287.96/s (n=172031)
+    index2:  1 wallclock secs ( 1.11 usr +  0.00 sys =  1.11 CPU) @ 119218.02/s (n=132332)
+        rx:  1 wallclock secs ( 1.11 usr +  0.00 sys =  1.11 CPU) @ 110701.80/s (n=122879)
+     split:  1 wallclock secs ( 1.09 usr +  0.00 sys =  1.09 CPU) @ 143478.90/s (n=156392)
+splitindex:  1 wallclock secs ( 1.10 usr +  0.00 sys =  1.10 CPU) @ 156392.73/s (n=172032)
+               Rate         rx     index2      split splitindex      index
+rx         110702/s         --        -7%       -23%       -29%       -31%
+index2     119218/s         8%         --       -17%       -24%       -25%
+split      143479/s        30%        20%         --        -8%       -10%
+splitindex 156393/s        41%        31%         9%         --        -2%
+index      159288/s        44%        34%        11%         2%         --
+
+----------------------------------------------------------------------
+Medium line:
+
+Benchmark: running index, index2, rx, split, splitindex for at least 1 CPU seconds...
+     index:  1 wallclock secs ( 1.03 usr +  0.00 sys =  1.03 CPU) @ 43952.43/s (n=45271)
+    index2:  1 wallclock secs ( 1.08 usr +  0.00 sys =  1.08 CPU) @ 20958.33/s (n=22635)
+        rx:  2 wallclock secs ( 1.12 usr +  0.00 sys =  1.12 CPU) @ 29538.39/s (n=33083)
+     split:  1 wallclock secs ( 1.00 usr +  0.00 sys =  1.00 CPU) @ 43007.00/s (n=43007)
+splitindex:  1 wallclock secs ( 1.08 usr +  0.00 sys =  1.08 CPU) @ 44246.30/s (n=47786)
+              Rate     index2         rx      split      index splitindex
+index2     20958/s         --       -29%       -51%       -52%       -53%
+rx         29538/s        41%         --       -31%       -33%       -33%
+split      43007/s       105%        46%         --        -2%        -3%
+index      43952/s       110%        49%         2%         --        -1%
+splitindex 44246/s       111%        50%         3%         1%         --
+
+----------------------------------------------------------------------
+Long line:
+
+Benchmark: running index, index2, rx, split, splitindex for at least 1 CPU seconds...
+     index:  1 wallclock secs ( 1.07 usr +  0.00 sys =  1.07 CPU) @ 2643.93/s (n=2829)
+    index2:  2 wallclock secs ( 1.12 usr +  0.01 sys =  1.13 CPU) @ 1080.53/s (n=1221)
+        rx:  1 wallclock secs ( 1.08 usr +  0.00 sys =  1.08 CPU) @ 1776.85/s (n=1919)
+     split:  1 wallclock secs ( 1.11 usr +  0.00 sys =  1.11 CPU) @ 2548.65/s (n=2829)
+splitindex:  1 wallclock secs ( 1.07 usr +  0.00 sys =  1.07 CPU) @ 2643.93/s (n=2829)
+             Rate     index2         rx      split splitindex      index
+index2     1081/s         --       -39%       -58%       -59%       -59%
+rx         1777/s        64%         --       -30%       -33%       -33%
+split      2549/s       136%        43%         --        -4%        -4%
+splitindex 2644/s       145%        49%         4%         --         0%
+index      2644/s       145%        49%         4%         0%         --
+
+----------------------------------------------------------------------

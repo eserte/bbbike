@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen2-bench.pl,v 1.2 2003/06/23 22:04:48 eserte Exp $
+# $Id: strassen2-bench.pl,v 1.3 2003/10/08 11:52:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -80,3 +80,15 @@ Benchmark: running coord_a, coord_s, coord_s2 for at least 1 CPU seconds...
 coord_s2 39564/s       --     -15%     -41%
 coord_s  46773/s      18%       --     -30%
 coord_a  67236/s      70%      44%       --
+
+======================================================================
+More results under RedHat 8.0, Intel Pentium 4 2.4MHz, perl 5.8.0
+
+Benchmark: running coord_a, coord_s, coord_s2 for at least 1 CPU seconds...
+   coord_a:  1 wallclock secs ( 1.01 usr +  0.00 sys =  1.01 CPU) @ 400773.27/s (n=404781)
+   coord_s:  1 wallclock secs ( 1.11 usr + -0.01 sys =  1.10 CPU) @ 284350.00/s (n=312785)
+  coord_s2:  2 wallclock secs ( 1.01 usr +  0.00 sys =  1.01 CPU) @ 227103.96/s (n=229375)
+             Rate coord_s2  coord_s  coord_a
+coord_s2 227104/s       --     -20%     -43%
+coord_s  284350/s      25%       --     -29%
+coord_a  400773/s      76%      41%       --
