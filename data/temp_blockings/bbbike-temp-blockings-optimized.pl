@@ -210,8 +210,8 @@ userdel	q4 -18080,-12637 -17374,-13449
          'type' => 'handicap'
        },
        {
-         'until' => 1111705200,
-         'text' => 'Sterndamm (Treptow) in Richtung Rudow zwischen Königsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt (bis 24.03.2005)',
+         'until' => 1114380000,
+         'text' => 'Sterndamm (Treptow) in Richtung Rudow zwischen Königsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt (bis 24.04.2005)',
          'from' => 1110232931,
          'data' => 'userdel	1 17518,4644 17428,4503
 ',
@@ -226,6 +226,32 @@ userdel	q4 -18080,-12637 -17374,-13449
          'data' => 'userdel	q4 52650,51875 51437,51575
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1116194400,
+         'text' => 'Wassersportallee - Regattastraße, Zwischen Kreuzung Adlergestell und Kreuzung Wassersportallee in beiden Richtungen gesperrt, Baustelle, Dauer: 14.03.2005 03:00 Uhr bis 15.05.2005 ',
+         'from' => 1110679200,
+         'data' => 'userdel	q4 22449,1281 22217,1108
+userdel	q4 22449,1281 22663,1441
+userdel	q4 22217,1108 22162,1067
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1111013999,
+         'text' => 'Kantstraße Richtung Spandau: Zwischen Kreuzung Hardenbergstraße und Kreuzung Joachimstaler Straße gesperrt, Dauer: 16.03.2005 06:00 Uhr bis 16:00 Uhr (Filmarbeiten) ',
+         'from' => 1110862800,
+         'data' => 'userdel	1 5652,11004 5613,10963 5505,10971
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1111168800,
+         'text' => 'Die Stadthausstraße ist zwischen Türschmidtstraße und Archibaldweg gesperrt. Grund Bauarbeiten. Dauer: 14.03.05, 09.00 Uhr bis 18.03.05, 19.00 Uhr. ',
+         'from' => 1110700800,
+         'data' => 'userdel	2 15657,10846 15628,10915
+',
+         'type' => 'gesperrt'
        }
      
 );

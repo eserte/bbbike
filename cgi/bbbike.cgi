@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.15 2005/03/09 21:58:45 eserte Exp eserte $
+# $Id: bbbike.cgi,v 7.16 2005/03/14 22:00:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -654,7 +654,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.16 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3479,29 +3479,35 @@ EOF
 	    if (!$bi->{'text_browser'} && !$printmode) {
 		my $qq = new CGI $q->query_string;
 		$qq->param('output_as', "print");
-		print
-		    "<tr bgcolor=white><td></td><td></td><td></td>";
+		print qq{<tr bgcolor="white"><td colspan="};
+		my $cols = 4;
 		if ($with_comments && $comments_net) {
-		    print "<td></td>";
+		    $cols++;
 		}
 		if ($has_fragezeichen) {
-		    print "<td></td>";
+		    $cols++;
 		}
-		print "<td align=center bgcolor=white>",
+		print qq{$cols" style="background-color:white; text-align:right;">};
+		print
 		    "<a title=Druckvorlage target=printwindow href=\"$bbbike_script?" . $qq->query_string . "\">" .
 		    "<img src=\"$bbbike_images/printer.gif\" " .
 		    "width=16 height=16 border=0 alt=Druckvorlage></a>";
 		if ($can_palmdoc) {
 		    my $qq2 = new CGI $q->query_string;
 		    $qq2->param('output_as', "palmdoc");
-		    print "&nbsp;"x10;
 		    my $href = $bbbike_script;
 #XXX not needed anymore:
 #		    if ($ENV{SERVER_SOFTWARE} !~ /Roxen/) {
 #			# with Roxen there are mysterious overflow redirects...
 #			$href .= "/route.pdb";
 #		    }
-		    print "<a href=\"$href?" . $qq2->query_string . "\">PalmDoc</a>";
+		    print qq{<a style="padding:0 0.5cm 0 0.5cm;" href="$href?} . $qq2->query_string . qq{">PalmDoc</a>};
+		}
+		if (0) { # XXX not yet
+		    my $qq2 = CGI->new({});
+		    $qq2->param("query", $q->query_string);
+		    my $href = "bbbike_comment.cgi";
+		    print qq{<a target="BBBikeComment" style="padding:0 0.5cm 0 0.5cm;" href="$href?} . $qq2->query_string . qq{">Kommentar zur Route</a>};
 		}
 		print "</td></tr>";
 	    }
@@ -5553,7 +5559,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/03/09 21:58:45 $';
+    my $cgi_date = '$Date: 2005/03/14 22:00:36 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.20 2005/03/02 23:31:20 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.21 2005/03/14 21:59:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -131,6 +131,18 @@ eval {
 	print BACKUP $dump;
 	print $fh $dump;
 	close BACKUP;
+    } elsif (param("formtype") eq 'bbbikeroute') {
+	$comment =
+	    "Von: " . ($by || "anonymous\@bbbike.de") . "\n" .
+	    "An:  $to\n\n" .
+	    "Kommentar:\n" .
+	    param("comment") . "\n" .
+	    "Query: " . param("query") . "\n",
+	print $fh $comment . "\n";
+	$link1 = $bbbike_url . "?" . param("query");
+	$link2 = "http://www/bbbike/cgi/bbbile.cgi?" . param("query");
+	print $fh "Remote: ", $link1, "\n";
+	print $fh "Lokal:  ", $link2, "\n";
     } else {
 	$comment =
 	    "Von: " . ($by || "anonymous\@bbbike.de") . "\n" .
