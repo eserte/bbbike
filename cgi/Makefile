@@ -6,8 +6,8 @@ CGI_TYPE?=	cgi
 # XXX better to use CURDIR with substitution:
 ROOT_DIR!=	perl -MFindBin=RealBin -MCwd=cwd -le 'chdir("$RealBin/..") or die; print cwd'
 # GNU MAKE
+#.CURDIR?=	${CURDIR}
 #ROOT_DIR=	$(shell perl -MFindBin -MCwd -le 'chdir("$$FindBin::RealBin/..") or die; print cwd')
-#.CURDIR=	$(shell pwd)
 # ALL MAKE
 
 all:
