@@ -163,8 +163,16 @@ sub custom_draw {
 
 	    my $f;
 	    $f = $t->Frame->pack(-fill => "x");
+	    my $weiter = 0;
 	    my $pe;
-	    Tk::grid($pe = $f->PathEntry(-textvariable => \$file),
+	    Tk::grid($pe = $f->PathEntry(-textvariable => \$file,
+					 -selectcmd => sub {
+					     $weiter = 1;
+					 },
+					 -cancelcmd => sub {
+					     $weiter = -1;
+					 },
+					),
 		     $f->Button(-image => $t->Getimage("openfolder"),
 				-command => $get_file
 			       )
@@ -191,7 +199,6 @@ sub custom_draw {
 			);
 	    }
 	    $f = $t->Frame->pack(-fill => "x");
-	    my $weiter = 0;
 	    Tk::grid($f->Button(Name => "ok",
 				-command => sub {
 				    $weiter = 1;

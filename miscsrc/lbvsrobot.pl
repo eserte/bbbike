@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.11 2004/03/15 08:19:20 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.12 2004/04/15 07:47:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -133,7 +133,11 @@ if ($oldfile) {
 
     @details = diff();
     if ($do_diffcount) {
-	my $diffcount = grep { $_->{text} !~ /^UNCHANGED/ } @details;
+	my $diffcount = grep {
+	    $_->{_state} && !grep {
+		$_ =~ /^UNCHANGED/
+	    } @{ $_->{_state} }
+	} @details;
 	if (!$diffcount) {
 	    warn "No changes.\n" if !$quiet;
 	    exit 0;
@@ -147,7 +151,7 @@ if ($oldfile) {
 if (exists $output_as{'text'}) {
     my $fh = file_or_stdout($output_as{text});
     my $sep = "-"x50 . "\n";
-    print $fh join($sep, map { $_->{text} } @details);
+    print $fh join($sep, map { state_out($_) . $_->{text} } @details);
 }
 
 if (exists $output_as{'bbd'}) {
@@ -163,6 +167,7 @@ if (exists $output_as{'bbd'}) {
 
     for my $info (@details) {
 	(my $text = $info->{text}) =~ s/[\n\t]+/ /g;
+	$text = state_out($info) . $text;
 	my($x1, $y1) = map { int } $Karte::Polar::obj->map2standard
 	    ($info->{"x"}, $info->{"y"});
 	($x1, $y1) = BBBike::CorrectData::convert_record_for_x_y($x1, $y1);
@@ -377,34 +382,31 @@ sub diff {
     for my $orig_detail (@details) {
 	my $detail = dclone $orig_detail;
 	my $old_detail = $old_details{$detail->{$diffcol}};
-	my $state;
-	my $info = "";
 	if (!defined $old_detail) {
-	    $state = "NEW:       ";
+	    push @{ $detail->{_state} }, "NEW";
 	} else {
 	    my $c1 = dclone $detail;
 	    my $c2 = dclone $old_detail;
 	    delete $c1->{"row"};
 	    delete $c2->{"row"};
 	    if (Compare($c1, $c2) == 0) {
-		$state = "CHANGED:   ";
+		push @{ $detail->{_state} }, "CHANGED";
 		if ($detail->{$infocol} eq $old_detail->{$infocol}) {
-		    $info = " (coord change)";
+		    push @{ $detail->{_state} }, "(coord change)";
 		} else {
 		    # XXX will never happen!!!
-		    $info = " (old text was: $old_detail->{$infocol})";
+		    push @{ $detail->{_state} }, "(old text was: $old_detail->{$infocol})";
 		}
 	    } else {
-		$state = "UNCHANGED: ";
+		push @{ $detail->{_state} }, "UNCHANGED";
 	    }
 	}
-	$detail->{text} = "$state$detail->{text}$info";
 	push @diff_details, $detail;
     }
     for my $orig_detail (@old_details) {
 	my $detail = dclone $orig_detail;
 	if (!exists $details{$detail->{$diffcol}}) {
-	    $detail->{text} = "REMOVED:    $detail->{$infocol}";
+	    push @{ $detail->{_state} }, "REMOVED";
 	    push @diff_details, $detail;
 	}
     }
@@ -433,9 +435,18 @@ sub mark_irrelevant_entries {
 	    $ignore = 1;
 	}
 	if ($ignore) {
-	    $detail->{text} = "IGNORE " . $detail->{text};
+	    push @{ $detail->{_state} }, "IGNORE";
 	}
     }
+}
+
+sub state_out {
+    my $detail = shift;
+    my $text = "";
+    if ($detail->{_state}) {
+	$text = join(", ", @{ $detail->{_state} }) . ": ";
+    }
+    sprintf "%-20s", $text;
 }
 
 __END__

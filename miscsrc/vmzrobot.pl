@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.10 2004/03/22 23:40:33 eserte Exp eserte $
+# $Id: vmzrobot.pl,v 1.11 2004/04/14 19:47:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -109,7 +109,11 @@ if ($oldfile) {
 
     @detail_links = diff();
     if ($do_diffcount) {
-	my $diffcount = grep { $_->{text} !~ /^UNCHANGED/ } @detail_links;
+	my $diffcount = grep {
+	    $_->{_state} && !grep {
+		$_ =~ /^UNCHANGED/
+	    } @{ $_->{_state} }
+	} @detail_links;
 	if (!$diffcount) {
 	    warn "No changes.\n" if !$quiet;
 	    exit 0;
@@ -123,7 +127,7 @@ if ($oldfile) {
 if (exists $output_as{'text'}) {
     my $fh = file_or_stdout($output_as{text});
     my $sep = "-"x50 . "\n";
-    print $fh join($sep, map { $_->{text} } @detail_links);
+    print $fh join($sep, map { state_out($_) . $_->{text} } @detail_links);
 }
 
 if (exists $output_as{'bbd'}) {
@@ -133,6 +137,7 @@ if (exists $output_as{'bbd'}) {
     for my $info (@detail_links) {
 	(my $text = $info->{text}) =~ s/[\n\t]+/ /g;
 	$text =~ s/\[IMAGE\]//g; # XXX
+	$text = state_out($info) . $text;
 	my($x1, $y1) = map { int } $Karte::Polar::obj->map2standard
 	    ($info->{x1}, $info->{y1});
 	my($x2, $y2) = map { int } $Karte::Polar::obj->map2standard
@@ -252,23 +257,27 @@ sub diff {
     my @diff_detail_links;
     for my $orig_detail_link (@detail_links) {
 	my $detail_link = dclone $orig_detail_link;
-	my $state;
-	if (!exists $old_detail_links{$detail_link->{id}}) {
-	    $state = "NEW:       ";
-	} elsif (exists $old_detail_links{$detail_link->{id}}) {
-	    if (Compare($detail_link, $old_detail_links{$detail_link->{id}}) == 0) {
-		$state = "CHANGED:   ";
+	my $old_detail_link = $old_detail_links{$detail_link->{id}};
+	if (!$old_detail_link) {
+	    push @{ $detail_link->{_state} }, "NEW";
+	} else {
+	    if (Compare($detail_link, $old_detail_link) == 0) {
+		push @{ $detail_link->{_state} }, "CHANGED";
+		if (Compare($detail_link->{text}, $old_detail_link->{text}) == 0) {
+		    push @{ $detail_link->{_state} }, "(text)";
+		} else {
+		    push @{ $detail_link->{_state} }, "(coords)";
+		}
 	    } else {
-		$state = "UNCHANGED: ";
+		push @{ $detail_link->{_state} }, "UNCHANGED";
 	    }
 	}
-	$detail_link->{text} = "$state$detail_link->{text}";
 	push @diff_detail_links, $detail_link;
     }
     for my $orig_detail_link (@old_detail_links) {
 	my $detail_link = dclone $orig_detail_link;
 	if (!exists $detail_links{$detail_link->{id}}) {
-	    $detail_link->{text} = "REMOVED:    $detail_link->{text}";
+	    push @{ $detail_link->{_state} }, "REMOVED";
 	    push @diff_detail_links, $detail_link;
 	}
     }
@@ -295,9 +304,18 @@ sub mark_irrelevant_entries {
 	    }
 	}
 	if ($ignore) {
-	    $detail->{text} = "IGNORE " . $detail->{text};
+	    push @{ $detail->{_state} }, "IGNORE";
 	}
     }
+}
+
+sub state_out {
+    my $detail = shift;
+    my $text = "";
+    if ($detail->{_state}) {
+	$text = join(", ", @{ $detail->{_state} }) . ": ";
+    }
+    sprintf "%-20s", $text;
 }
 
 __END__
