@@ -439,6 +439,9 @@ exits:	exits-orig
 .PHONY:	fragezeichen
 
 fragezeichen:	.create_fragezeichen
+	-@$(WRITEABLE) $@
+	cp .create_fragezeichen $@
+	-@$(READONLY) $@
 
 # ::inwork => will maybe change to :inwork
 #XXX in "-orig" transition: handicap_s-orig and gesperrt-orig always need to have the same base map!

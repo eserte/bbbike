@@ -131,6 +131,7 @@ use constant REQTABLE_LONGDESC=> 5;
   [qw/Image::Info	0	all	0	test/],
   [qw/Test::More	0	all	0	test/],
   [qw/Test::Differences	0	all	0	test/],
+  [qw/Test::NoWarnings	0	all	0	test/],
   [qw/WWW::Mechanize	0	all	0	test/,
    'Für Testen des CGI-Interfaces'],
  );

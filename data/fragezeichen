@@ -13,7 +13,7 @@ existiert eine Verbindung durch den Schloßpark Lichterfelde zum Teltowkanal?	? 4
 Gotthard - Residenzstr.: laut ADFC-Karte Durchfahrt möglich	? 7466,17904 6761,17741 6512,17696 6376,17687
 Fräsersteig: Teile für Kfz-Verkehr gesperrt bzw. mäßig geeignet?	? 6298,20599 6184,20550 6134,20585 5770,20407
 Alter Bernauer Heerweg: die gesamte Straße mäßig geeignet? durchlässig für KfZ-Verkehr an beiden Seiten?	? 6668,22746 7072,22905 7782,23172 7923,23225 8176,23315 8584,23421
-Waldpark Steinberg: laut ADFC-Karte befahrbar	? 5138,21358 4717,21199 4412,21154 4208,21159 3979,21211 3553,21665 3406,21911 3139,22201
+Waldpark Steinberg: laut ADFC-Karte befahrbar	? 5138,21358 4717,21199 4412,21154 4208,21159 3979,21211 3718,21489 3553,21665 3406,21911 3139,22201
 Waldweg über den Beyschlagtunnel befahrbar?	? 506,22266 742,22666
 Soldiner Str.: laut ADFC mäßig geeignet	? 9096,16976 9317,16882 9604,16760
 Pankeweg durch Wedding: Durchfahrt möglich? Qualität?	?? 8153,14769 8235,14835 8270,15233 8348,15474 8155,15648 8158,15850 8359,16271 8675,16518 8983,17195 9165,17910 9310,18108
@@ -302,7 +302,7 @@ Mauerweg in Schildow: Qualität? Wegführung? einzelne Straßen benennen?	? 7639,24
 Mauerweg in Frohnau: Verlauf weitgehend unklar, Qualität?	? 3848,24546 3600,24490 3515,24668 3546,24859 3603,24968 3306,25259 3200,25429 3211,25484 3473,25618 3662,25618 3615,25890 3362,26046 3390,26225 3540,26465 3450,26503 3403,26668
 Mauerweg in Frohnau: laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 3403,26668 3081,27368 3706,27812 3512,28053 3078,28028 2162,28077 1979,28091 1871,28131 1741,27539
 Krumme Lanke - Grunewaldsee: genaue Wegführung? Qualität (wahrscheinlich Waldweg)?	? -604,5228 -579,5320 -236,5389 63,5600 157,5607 213,5582 288,5601 344,5738 325,5925 381,6094 331,6225 394,6368 441,6435
-Grunewaldsee - Hundekehlesee (Umgehungschaussee): Qualität (wahrscheinlich Waldweg)?	? 905,6631 1149,7205 1263,7450 1252,7741 1043,7929 860,8052 864,8110
+Grunewaldsee - Hundekehlesee (Umgehungschaussee): Qualität (wahrscheinlich Waldweg); Fußgänger und Hundeauslaufgebiet?	? 905,6631 1149,7205 1263,7450 1252,7741 1043,7929 860,8052 864,8110
 Rehbrücke - Langerwisch: Qualität? genaue Wegführung?	? -9626,-6603 -9541,-6955 -9753,-7192 -9953,-7604 -10067,-8165 -10302,-8515 -10364,-8839 -10726,-9726 -11737,-10275 -12382,-10517
 Blankensee - Stangenhagen: laut "Berliner Umland" witterungsabhängige Strecke	? -6860,-20736 -7519,-21034 -8005,-21334 -9578,-21920 -9710,-22155
 Stangenhagen - Hennickendorf: Qualität? genaue Wegführung?	? -9710,-22155 -9815,-22769 -9453,-23518 -9291,-23955 -9853,-25278 -9403,-26688 -9375,-27159
@@ -416,7 +416,7 @@ Alt-Köpenick: laut Message-ID: <41614486$0$3640$9b4e6d93@newsread2.arcor-online.
 Alter Markt: laut Message-ID: <2scvijF1io77eU1@uni-berlin.de> soll hier asphaltiert werden	?::inwork 22502,4528 22472,4572 22449,4605 22383,4703
 Grünstr.: Qualität? für Autofahrer gesperrt?	? 22111,4562 22162,4546 22312,4593
 Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut	?::inwork 31000,61437 30784,60950 30778,60221 30671,59984 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
-Togostr./Antwerpener Str.: Qualität der Fahrbahn? Ist eine Verbindung zwischen Antwerpener und Tegeler Str. für Radfahrer vorhanden?	? 5325,16915 5602,16718 6119,16203 6575,15831 7020,15314
+Togostr./Antwerpener Str.: Qualität der Fahrbahn (wahrscheinlich teilweise Kopfsteinpflaster)? Ist eine Verbindung zwischen Antwerpener und Tegeler Str. für Radfahrer vorhanden?	? 5325,16915 5602,16718 6119,16203 6575,15831 7020,15314
 Zichow-Lindenwegsiedlung: Qualität?	? 54500,87934 51992,88068
 Greifenhagener Str.: Brücke tatsächlich nur für Fußgänger/Radfahrer offen?	? 11162,15903 11190,15950
 Laubenheimer Str.: Qualität laut ADFC-Karte gut	? 4317,7069 4439,6958 4503,6822 4528,6711
@@ -441,9 +441,9 @@ Günter-Litfin-Str.: laut ADFC-Karte gut geeignet, Eintrag in PLZ-DB fehlt	? 1336
 Thiesstr.: laut ADFC-Karte im westlichen Teil gut, im östlichen Teil mäßig geeignet	? 13023,17379 13115,17410 13251,17525 13290,17570
 Neukirchstr.: laut ADFC-Karte gut geeignet, Zugang zur Prenzlauer Promenade vorhanden, Zugang zur Blankenburger Str. vorhanden?	? 12896,18317 12752,18387 12562,18483 12002,18768
 Bleicheroder Str./Stiftsweg: Qualität laut ADFC-Karte gut, Tram auf Fahrbahn? Einbahnstraße beachten	? 11937,19175 11725,19007 11268,18851 11025,18531
-Galenusstr.: laut ADFC-Karte gut geeignet	? 11915,19580 11275,19250 11054,19226
+Galenusstr.: laut ADFC-Karte gut geeignet	? 11915,19580 11275,19250 11164,19238 11054,19226
 Am Schloßpark: Qualität? für Radfahrer befahrbar? Autoverkehr vorhanden?	? 11054,19226 10775,19054 10496,18704
-Majakowskiring: laut ADFC-Karte gut geeignet, aber Treppen vorhanden (???)	? 10440,18910 10318,18921 10018,18842 9951,18744 10009,18707 10359,18814 10440,18910
+Majakowskiring: laut ADFC-Karte gut geeignet, aber Treppen vorhanden (???)	? 10440,18910 10318,18921 10055,18831 9951,18744 10009,18707 10359,18814 10440,18910
 Waldstr. (Pankow): laut ADFC-Karte gut geeignet	? 10018,19429 9970,19500 9840,19923 9773,20136 9753,20454
 Birkenallee (Pankow): Qualität?	? 9753,20454 9655,20703
 Nordendstr.: laut ADFC-Karte westlicher Teil mäßig, östlicher Teil gut geeignet	? 10026,20576 9753,20454 9174,20316 8415,19910
@@ -476,14 +476,13 @@ Laut <41b75ea5$0$23129$9b622d9e@news.freenet.de> wird hier (Berliner Str./Floras
 Parkstr. (Potsdam): Fortsetzung zur Schopenhauerstr.?	? -13803,-462 -13965,-590 -14034,-571
 Voltaireweg in diese Fahrtrichtung gesperrt?	?; -14034,-571 -13795,-407 -13636,-331
 Rübelandstr.: Qualität?	? 12787,7546 12818,7403
-Alexanderstr.: von 2005-01-03 bis 2005-10-31 für Autos gesperrt, Radfahrer können weiterhin passieren. Teilweise Sperren zu den kreuzenden Straßen errichtet. 	?::inwork 11134,12793 11207,12706 11323,12484 11333,12437 11351,12221
 Unter den Linden: irgendwo hier ist noch eine Ampel	? 9603,12372 9782,12393 9853,12402 9918,12411
 Delbrückstr. (Neukölln): Qualität? Einbahnstraße auch für Radfahrer?	? 12468,6592 12746,6635 13125,6717
 Koburger Str.: Qualität? Linksabbiegen in die Hauptstr. möglich?	? 6534,8467 6560,8219
 Krahmerstr.: laut ADFC-Karte gute Qualität; am Hindenburgdamm links abbiegen möglich; wie sieht die Verbindung zur Uferpromenade aus?	? 4534,3456 4801,3370 4862,3345 5015,3292
 Nach den Bauarbeiten in der Naumannstr. sollte hier auch ein -1 bei comments_kfzverkehr stehen	?::inwork 7499,7880 7497,8168 7582,8123
 Schönhauser Allee: gibt es im südlichen Abschnitt jetzt auch (benutzungspflichtige?) Radwege?	? 10746,13673 10793,13785 10832,13877 10906,13950 10947,14114
-Watt/Strelitzer Str.: Qualität?	? 9361,15066 9437,14926 9621,14624 9685,14495 9801,14288 9864,14181
+Wattstr./nördlicher Teil der Strelitzer Str.: Qualität?	? 9361,15066 9437,14926 9526,14779 9621,14624
 Ruppiner Str.: Qualität?	? 9857,15122 9904,15014 9929,14957 9956,14909 10011,14810 10043,14735 10070,14678 10150,14525
 Segelfliegerdamm: nach den Bauarbeiten voraussichtlich kein Kopfsteinpflaster mehr und wahrscheinlich Radwege auf beiden Seiten	? 18058,4627 17797,4441 17628,4148 17586,3728 17490,3637
 Schillerstr. (Lichtenrade): Qualität? (Bessere Alternative zur Halker Zeile?)	? 9993,686 10051,642 10300,34 10403,-266 10500,-543 10600,-823
@@ -504,6 +503,8 @@ Straßen in der Kolonie Margaretenhöhe fehlen, früher Str. 1 bis 7, und jetzt?	? 
 Heinrich-Roller-Str.: Drängelgitter auf dem Mittelstreifen	? 11832,13795
 Immanuelkirchstr.: Drängelgitter auf dem Mittelstreifen	? 11958,13986
 Gustav-Müller-Str.: asphaltiert? Linksabbiegen in die Kolonnenstr. möglich?	? 7637,8159 7650,8765
+Bornholmer Str.: Überqueren der Straßenbahntrasse möglich?	? 10215,16527 10300,16521 10635,16497
+nördlicher Radweg auf der Bulgarischen Str.: siehe Message-ID: <1kl0p5nkwlmb1.dlg@tebe.my-fqdn.de>	? 15166,8489 15383,8662 15580,8839
 wirklich?	? 9215,3599
 Wirklich?	? -3755,17090
 geplante Ampel in der Johannisthaler	? 14196,2876
@@ -560,9 +561,10 @@ Parkstr.: Kopfsteinpflaster (stimmt das?)	? 9029,6360 9143,6415
 Blumenthalstr.: schlechtes Kopfsteinpflaster (stimmt die Feinkategorisierung?)	? 8943,6292 8961,6126
 Blumenthalstr.: Kopfsteinpflaster (stimmt die Feinkategorisierung?)	? 8961,6126 8990,5950
 Selkestr.: Kopfsteinpflaster (stimmt das?)	? 12685,7497 12703,7370
-Greifenhagener Str.: Kopfsteinpflaster (Kopfsteinpflaster laut Bild im Tagesspiegel)	? 11040,15398 11093,15771 11162,15903
+Greifenhagener Str.: Kopfsteinpflaster (Kopfsteinpflaster laut Bild im Tagesspiegel)	? 11040,15398 11055,15504 11093,15771 11162,15903
 Greifenhagener Str.: Kopfsteinpflaster (Kopfsteinpflaster laut Bild im Tagesspiegel)	? 11190,15950 11232,16037 11306,16194 11341,16273 11397,16405
 Naumannstr.: Kopfsteinpflaster (überprüfen!)	? 7706,8875 7709,8770
+Margueritenring: Kopfsteinpflaster (Hier widerspricht die ADFC-Karte und meint "gut geeignet")	? 16491,2239 16807,2245 16898,2239 17009,2095 17060,2087 17382,2064 17421,2090
 Heegermühler Weg: schlechtes Kopfsteinpflaster (Hier wurde als Range "5-15" angegegeben. Hausnummern?)	? 7966,19968 8043,19725 8231,19806 8415,19910
 Rykestr.: Kopfsteinpflaster (aber ich erinnere mich ganz schwach, dass der südliche Abschnitt asphaltiert war... Außerdem: ist das Linksabbiegen in die Danziger möglich?)	? 11358,14331 11446,14508 11526,14693 11610,14886
 Zermatter Str.: Kopfsteinpflaster, schlechte Straße (die ADFC-Karte sagt hier aber "gut geeignet")	? 6512,17696 6653,17696 6761,17741 6859,17753

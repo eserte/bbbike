@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.17 2004/12/30 21:45:11 eserte Exp $
+# $Id: Util.pm,v 1.17 2004/12/30 21:45:11 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -224,6 +224,12 @@ sub best_from_direction {
     }
     $best_p;
 }
+
+# This should be sufficient on the earth:
+sub infinity () { 40_000_000 }
+
+######################################################################
+# Cache routines
 
 ### AutoLoad Sub
 sub cache_ext {

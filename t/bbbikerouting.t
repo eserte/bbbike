@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.20 2004/12/13 08:06:39 eserte Exp $
+# $Id: bbbikerouting.t,v 1.21 2005/02/14 01:09:55 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -56,7 +56,7 @@ my $num_tests = 63; # basic number of tests
 
 use vars qw($single $all $common $bench $v $do_xxx);
 
-use vars qw($token %times $cmp_path
+use vars qw($token %times $previous_path $previous_token
 	    $usexs $algorithm @algorithm $usenetserver $usecache $cachetype);
 
 $common = 1;
@@ -92,14 +92,16 @@ my @runs;
 
 if ($common) {
     push @runs,
-	([1, 0, 1, "CDB_File", "A*"], # standard bbbike with compilation
-	 [1, 0, 1, "Storable", "A*"], # as above, without CDB_File
+	#xs,ns,cache,cachetype,algorithm
+	(
 	 [1, 0, 1, "CDB_File", "C-A*"], # standard bbbike with C-A* set
+	 [1, 0, 1, "CDB_File", "C-A*-2"], # radlstadtplan
+	 [1, 0, 1, "Storable", "A*"], # as above, without CDB_File
 	 [0, 0, 1, "Storable", "A*"], # standard bbbike without anything
+	 [1, 0, 1, "CDB_File", "A*"], # standard bbbike with compilation
 
 	 [1, 0, 1, "CDB_File", "A*"], # cgi on radzeit (?)
 
-	 [1, 0, 1, "CDB_File", "C-A*-2"], # radlstadtplan
 	);
 } elsif (!$all) {
     for my $algorithm (@algorithm) {
@@ -175,6 +177,12 @@ sub _my_init_context {
 
 sub do_tests {
 
+    @Strassen::Util::cacheable = $cachetype if defined $cachetype;
+    if ("@Strassen::Util::cacheable" eq "VirtArray") {
+	# VirtArray can only cache flat arrays ... add a fallback
+	push @Strassen::Util::cacheable, "Storable";
+    }
+
     my $routing = BBBikeRouting->new();
 
     is(ref $routing, "BBBikeRouting");
@@ -187,11 +195,7 @@ sub do_tests {
     }
     if ($do_xxx) { goto XXX }
 
-    @Strassen::Util::cacheable = $cachetype if defined $cachetype;
-    if ("@Strassen::Util::cacheable" eq "VirtArray") {
-	# VirtArray can only cache flat arrays ... add a fallback
-	push @Strassen::Util::cacheable, "Storable";
-    }
+    $previous_token = $token;
     $token = "Algorithm=".$context->Algorithm.", UseXS=".$context->UseXS.", UseNetServer=".$context->UseNetServer.", UseCache=".$context->UseCache.(defined $cachetype ? " ($cachetype)" : "");
     if ($v) {
 	print STDERR "$token\n";
@@ -229,12 +233,13 @@ sub do_tests {
     eq_or_diff($routing->Path, $path, "Path after continuation and cropping ok");
     eq_or_diff($routing->RouteInfo, $routeinfo, "Routeinfo after continuation and cropping ok");
 
-    if ($cmp_path) {
-	eq_or_diff($cmp_path, $path, "Path is the same as in the previous run");
+    if ($previous_path) {
+	eq_or_diff($path, $previous_path, "Path is the same as in the previous run")
+	    or diag "This run uses $token, the previous run used $previous_token, Route from " . $routing->Start->Coord . " to " . $routing->Goal->Coord;
     } else {
-	$cmp_path = $path;
 	pass("No previous run, no path to compare");
     }
+    $previous_path = $path;
 
     my $custom_pos = BBBikeRouting::Position->new;
     $custom_pos->Street("???");

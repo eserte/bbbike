@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: route-pdf.t,v 1.7 2004/03/21 23:10:55 eserte Exp $
+# $Id: route-pdf.t,v 1.8 2005/02/14 01:09:56 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -11,7 +11,9 @@ use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
-	 "$FindBin::RealBin/../data");
+	 "$FindBin::RealBin/../data",
+	 "$FindBin::RealBin",
+	);
 use Route::PDF;
 use Strassen::Core;
 use Strassen::MultiStrassen;
@@ -19,6 +21,8 @@ use Strassen::StrassenNetz;
 use Strassen::Dataset;
 use BBBikeXS;
 use Getopt::Long;
+
+use BBBikeTest;
 
 BEGIN {
     if (!eval q{
@@ -32,18 +36,18 @@ BEGIN {
 
 BEGIN { plan tests => 1 }
 
-my $pdf_prog;
-if (!GetOptions("pdfprog=s" => \$pdf_prog)) {
-    die "usage: $0 [-pdfprog pdfviewer]";
+$pdf_prog = "gv";
+if (!GetOptions(get_std_opts(qw(display pdfprog)))) {
+    die "usage: $0 [-pdfprog pdfviewer] [-display]";
 }
 
 my @arg;
-if ($pdf_prog && $pdf_prog eq 'gv') {
-    open(GV, "|$pdf_prog -");
-    @arg = (-fh => \*GV);
-} else {
+# if ($do_display && $pdf_prog eq 'gv') {
+#     open(GV, "|$pdf_prog -");
+#     @arg = (-fh => \*GV);
+# } else {
     @arg = (-filename => "/tmp/test.pdf");
-}
+# }
 
 my $s = Strassen->new("strassen");
 my $inacc = Strassen->new("inaccessible_strassen");
@@ -92,8 +96,8 @@ $rp->{PDF}->close;
 
 if (fileno(GV)) {
     close(GV);
-} elsif ($pdf_prog) {
-    system($pdf_prog, "/tmp/test.pdf");
+} elsif ($do_display) {
+    do_display("/tmp/test.pdf");
 }
 
 ok(1);

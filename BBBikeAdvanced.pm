@@ -1785,9 +1785,13 @@ sub _insert_points_and_co {
 # 			);
 # 	}
 	warn "@args\n";
-	$ret = BBBikeModify::process(@args) == BBBikeModify::RET_MODIFIED();
-	# clear the selection
-	delete_route();
+	my $modify_ret = BBBikeModify::process(@args);
+	$ret = $modify_ret == BBBikeModify::RET_MODIFIED();
+
+	# clear the selection (sometimes)
+	if ($modify_ret != BBBikeModify::RET_ERROR() && $oper_name ne "grep") {
+	    delete_route();
+	}
     };
     warn $@ if $@;
     $ret;

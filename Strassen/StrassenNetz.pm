@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.45 2005/01/01 22:29:32 eserte Exp eserte $
+# $Id: StrassenNetz.pm,v 1.46 2005/02/13 10:27:00 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -29,7 +29,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.46 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz;
 use strict;
@@ -530,11 +530,11 @@ sub build_penalty_code {
                         if (exists $blocked_net->{$last_node}{$next_node}) {
 			    my $cat = $blocked_net->{$last_node}{$next_node};
 			    if ($cat =~ /^(?:' . BLOCKED_COMPLETE . '|' . BLOCKED_ONEWAY . ')$/) {
-			        return 40_000_000; # nearly infinity
+			        return Strassen::Util::infinity();
 			    } # XXX strict oneway?
 			} elsif (exists $blocked_net->{$next_node}{$last_node} &&
 				 $blocked_net->{$next_node}{$last_node} =~ /^' . BLOCKED_COMPLETE . '/) {
-			    return 40_000_000;
+			    return Strassen::Util::infinity();
 			}
 		    }
 ';
@@ -1622,26 +1622,30 @@ sub get_point_comment {
     for my $pos1 (@pos) {
 	next if $seen && $seen->{$pos1};
 	my $r = $self->{Strassen}->get($pos1);
-	if ($r->[Strassen::CAT()] =~ /^(P1|PC;)$/ && $routeinx > 0) {
-	    my $xy0 = join ",", @{ $routeref->[$routeinx-1] };
-	    if (($r->[Strassen::COORDS()][0] eq $xy0 || $r->[Strassen::COORDS()][0] eq '*') &&
-		($r->[Strassen::COORDS()][1] eq $xy1 || $r->[Strassen::COORDS()][1] eq '*') &&
-		($r->[Strassen::COORDS()][2] eq $xy2 || $r->[Strassen::COORDS()][2] eq '*')) {
-		push @res, $r->[Strassen::NAME()];
-		next POS;
+	if ($r->[Strassen::CAT()] =~ /^(P1|CP;)$/) {
+	    if ($routeinx > 0) {
+		my $xy0 = join ",", @{ $routeref->[$routeinx-1] };
+		if (($r->[Strassen::COORDS()][0] eq $xy0 || $r->[Strassen::COORDS()][0] eq '*') &&
+		    ($r->[Strassen::COORDS()][1] eq $xy1 || $r->[Strassen::COORDS()][1] eq '*') &&
+		    ($r->[Strassen::COORDS()][2] eq $xy2 || $r->[Strassen::COORDS()][2] eq '*')) {
+		    push @res, $r->[Strassen::NAME()];
+		    next POS;
+		}
 	    }
-	} elsif ($r->[Strassen::CAT()] =~ /^(P2|PC)$/ && $routeinx > 0) {
-	    my $xy0 = join ",", @{ $routeref->[$routeinx-1] };
-	    if ((($r->[Strassen::COORDS()][0] eq $xy0 || $r->[Strassen::COORDS()][0] eq '*') &&
-		 ($r->[Strassen::COORDS()][1] eq $xy1 || $r->[Strassen::COORDS()][1] eq '*') &&
-		 ($r->[Strassen::COORDS()][2] eq $xy2 || $r->[Strassen::COORDS()][2] eq '*')) ||
-		(($r->[Strassen::COORDS()][0] eq $xy2 || $r->[Strassen::COORDS()][2] eq '*') &&
-		 ($r->[Strassen::COORDS()][1] eq $xy1 || $r->[Strassen::COORDS()][1] eq '*') &&
-		 ($r->[Strassen::COORDS()][2] eq $xy0 || $r->[Strassen::COORDS()][0] eq '*'))) {
-		push @res, $r->[Strassen::NAME()];
-		next POS;
+	} elsif ($r->[Strassen::CAT()] =~ /^(P2|CP)$/) {
+	    if ($routeinx > 0) {
+		my $xy0 = join ",", @{ $routeref->[$routeinx-1] };
+		if ((($r->[Strassen::COORDS()][0] eq $xy0 || $r->[Strassen::COORDS()][0] eq '*') &&
+		     ($r->[Strassen::COORDS()][1] eq $xy1 || $r->[Strassen::COORDS()][1] eq '*') &&
+		     ($r->[Strassen::COORDS()][2] eq $xy2 || $r->[Strassen::COORDS()][2] eq '*')) ||
+		    (($r->[Strassen::COORDS()][0] eq $xy2 || $r->[Strassen::COORDS()][2] eq '*') &&
+		     ($r->[Strassen::COORDS()][1] eq $xy1 || $r->[Strassen::COORDS()][1] eq '*') &&
+		     ($r->[Strassen::COORDS()][2] eq $xy0 || $r->[Strassen::COORDS()][0] eq '*'))) {
+		    push @res, $r->[Strassen::NAME()];
+		    next POS;
+		}
 	    }
-	} elsif ($r->[Strassen::CAT()] =~ /^(S1|SC;)$/) {
+	} elsif ($r->[Strassen::CAT()] =~ /^(S1|CS;)$/) {
 	    for my $i (0 .. $#{$r->[Strassen::COORDS()]}-1) {
 		if ($r->[Strassen::COORDS()][$i] eq $xy1 &&
 		    $r->[Strassen::COORDS()][$i+1] eq $xy2) {
@@ -1650,7 +1654,7 @@ sub get_point_comment {
 		    next POS;
 		}
 	    }
-	} elsif ($r->[Strassen::CAT()] =~ /^(S2|SC)$/) {
+	} elsif ($r->[Strassen::CAT()] =~ /^(S2|CS)$/) {
 	    for my $i (0 .. $#{$r->[Strassen::COORDS()]}-1) {
 		if (($r->[Strassen::COORDS()][$i] eq $xy1 &&
 		     $r->[Strassen::COORDS()][$i+1] eq $xy2) ||

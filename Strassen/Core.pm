@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.50 2005/01/22 00:17:51 eserte Exp $
+# $Id: Core.pm,v 1.50 2005/01/22 00:17:51 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -1090,7 +1090,7 @@ sub reachable {
 sub nearest_point {
     my($s, $xy, %args) = @_;
     my($x,$y) = split /,/, $xy;
-    my $mindist = 40_000*1000; # größte Distanz auf der Erde
+    my $mindist = Strassen::Util::infinity();
     my @line;
 
     if (!defined &VectorUtil::distance_point_line) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.4 2005/01/20 00:26:22 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.6 2005/02/12 19:20:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeTest;
 
 use vars qw(@opt_vars);
 BEGIN {
-    @opt_vars = qw($logfile $do_xxx $do_display $cgiurl $debug);
+    @opt_vars = qw($logfile $do_xxx $do_display $pdf_prog $cgiurl $debug);
 }
 
 use strict;
@@ -46,10 +46,11 @@ if (defined $ENV{BBBIKE_TEST_CGIURL}) {
 
 sub get_std_opts {
     my(@what) = @_;
-    my %std_opts = ("cgiurl=s" => \$cgiurl,
-		    "xxx"      => \$do_xxx,
-		    "display!" => \$do_display,
-		    "debug!"   => \$debug,
+    my %std_opts = ("cgiurl=s"  => \$cgiurl,
+		    "xxx"       => \$do_xxx,
+		    "display!"  => \$do_display,
+		    "debug!"    => \$debug,
+		    "pdfprog=s" => \$pdf_prog,
 		   );
     my %opts;
  OPT: for (@what) {
@@ -75,6 +76,10 @@ sub set_user_agent {
     $ua->env_proxy;
 }
 
+# $filename_or_scalar: may be a filename or a scalar ref to the image contents
+# $imagetype: the image type like "svg" or "pdf". May be omitted if supplying a filename
+# with proper extension.
+# The pseudo image format "http.html" can be used to start a WWW browser.
 sub do_display {
     my($filename_or_scalar, $imagetype) = @_;
 
@@ -90,14 +95,23 @@ sub do_display {
 	$filename = $filename_or_scalar;
     }
 
+    if (!defined $imagetype && $filename =~ m{\.([^\.]+)}) {
+	$imagetype = $1;
+    }
+
     if ($imagetype eq 'svg') {
-	if (is_in_path("mozilla")) {
+	# prefer ImageMagick (needs at least version 6) over Mozilla
+	if (is_in_path("display")) {
+	    system("display $filename &");
+	} elsif (is_in_path("mozilla")) {
 	    system("mozilla -noraise -remote 'openURL(file:$filename,new-tab)' &");
 	} else {
 	    warn "Can't display $filename";
 	}
     } elsif ($imagetype eq 'pdf') {
-	if (is_in_path("xpdf")) {
+	if (defined $pdf_prog) {
+	    system("$pdf_prog $filename &");
+	} elsif (is_in_path("xpdf")) {
 	    system("xpdf $filename &");
 	} else {
 	    warn "Can't display $filename";

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpsman.t,v 1.2 2005/01/09 23:00:12 eserte Exp $
+# $Id: strassen-gpsman.t,v 1.3 2005/02/13 10:40:48 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -11,6 +11,7 @@ use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
+use Getopt::Long;
 use Strassen::Core;
 
 BEGIN {
@@ -23,11 +24,27 @@ BEGIN {
     }
 }
 
+my $have_nowarnings;
+BEGIN {
+    $have_nowarnings = 1;
+    eval 'use Test::NoWarnings';
+    if ($@) {
+	$have_nowarnings = 0;
+	warn $@;
+    }
+}
+
 my $tests = 4;
-plan tests => $tests;
+plan tests => $tests + $have_nowarnings;
+
+my $gpsman_dir = "$FindBin::RealBin/../misc/gps_data";
+if (!GetOptions("gpsmandir=s" => \$gpsman_dir)) {
+    die <<EOF;
+usage: $0 [-gpsmandir directory]
+EOF
+}
 
 SKIP: {
-    my $gpsman_dir = "$FindBin::RealBin/../misc/gps_data";
     skip("No gpsman data directory found", $tests) if !-d $gpsman_dir;
 
     my @trk = glob("$gpsman_dir/*.trk");
