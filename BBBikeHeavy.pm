@@ -1025,12 +1025,50 @@ sub BBBikeHeavy::perlmod_install_advice {
     }
 }
 
-# PDF-Export
 ### AutoLoad Sub
 sub BBBikeHeavy::pdf_export {
     my(%args) = @_;
+
+    # XXX A better solution would be some kind of "can_handle_imagetype"
+    # method in BBBikeDraw.pm. This would return false and a list of
+    # all missing modules, or "true" if everything's ok
+    if (!eval { require PDF::Create; 1 }) {
+	status_message("PDF::Create is not available", "warn");
+	# XXX This is not exactly true --- the necessary PDF::Create
+	# version is only available at sourceforge
+	perlmod_install_advice("PDF::Create");
+	return 1;
+    }
+
+    $args{-ext} = ".pdf";
+    $args{-imagetype} = "pdf";
+    BBBikeHeavy::any_bbbikedraw_export(%args);
+}
+
+### AutoLoad Sub
+sub BBBikeHeavy::svg_export {
+    my(%args) = @_;
+
+    # XXX see above
+    if (!eval { require SVG; 1 }) {
+	status_message("SVG is not available", "warn");
+	perlmod_install_advice("SVG");
+	return 1;
+    }
+
+    $args{-ext} = ".svg";
+    $args{-imagetype} = "svg";
+    BBBikeHeavy::any_bbbikedraw_export(%args);
+}
+
+
+
+# any export via BBBikeDraw
+### AutoLoad Sub
+sub BBBikeHeavy::any_bbbikedraw_export {
+    my(%args) = @_;
     my $use_visible_map = $args{-visiblemap} || !@realcoords;
-    my $file = $args{-file} || $top->getSaveFile(-defaultextension => '.pdf');
+    my $file = $args{-file} || $top->getSaveFile(-defaultextension => $args{'-ext'});
     my $geometry = $args{-geometry} || "auto";
     return unless defined $file;
     require BBBikeDraw;
@@ -1069,7 +1107,7 @@ sub BBBikeHeavy::pdf_export {
     IncBusy($top);
     eval {
 	my $draw = BBBikeDraw->new
-	    (ImageType => 'pdf',
+	    (ImageType => $args{-imagetype},
 	     Coords => [map { join ",", @$_ } @realcoords],
 	     Fh => \*OUT,
 	     Scope => $scope,
@@ -1101,7 +1139,7 @@ sub BBBikeHeavy::pdf_export {
     close OUT;
     if ($err) {
 	unlink $file;
-	status_message(Mfmt("Die PDF-Datei konnte nicht erstellt werden. Grund: %s", $err), "error");
+	status_message(Mfmt("Die %s-Datei konnte nicht erstellt werden. Grund: %s", $args{-imagetype}, $err), "error");
 	return;
     }
 }
