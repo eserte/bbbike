@@ -203,8 +203,8 @@ use vars qw(%category_rot_font);
 use vars qw($frame $ctrl_frame);
 use vars qw($hs_label $str_label);
 use vars qw($misc_frame $misc_frame2 $DockFrame $Checkbutton $Radiobutton);
-use vars qw/%flag_photo/;
-use vars qw/$berlin_overview_photo/; # wird bei Bedarf nachgeladen
+use vars qw(%flag_photo);
+use vars qw($berlin_overview_photo); # wird bei Bedarf nachgeladen
 ##### Statuszeile/Progress Bar #####
 use vars qw($status_label $status_button $status_button_column
 	    $edit_mode_type $edit_mode_indicator
@@ -217,7 +217,7 @@ use vars qw($xadd_anchor_type $yadd_anchor_type %label_spaceadd);
 use vars qw(@normal_stack_order @set_stack_order);
 use vars qw(%perlmod_install_advice_seen);
 
-use enum qw(:EXPORT_TXT_ FULL SIMPLIFY_NAME SIMPLIFY_ANGLE SIMPLIFY_NAME_OR_ANGLE SIMPLIFY_AUTO);
+use enum qw/:EXPORT_TXT_ FULL SIMPLIFY_NAME SIMPLIFY_ANGLE SIMPLIFY_NAME_OR_ANGLE SIMPLIFY_AUTO/;
 
 use constant DEFAULT_SCALE => 4;
 use constant DEFAULT_SMALL_SCALE => 1;
