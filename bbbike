@@ -548,6 +548,8 @@ eval { local $SIG{'__DIE__'};
     label => M"Straßen",	var => \$init_str_draw{'s'}],
    ['landstr','!',0,	alias=>[qw(landstrasse landstrassen)],
     label => M"Landstraßen",	var => \$init_str_draw{'l'}],
+   ['landstrjwd','!',0,
+    label => M"Landstraßen jwd", var => \$str_far_away{'l'}], # XXX init_str_far_away?
    ['sbahn','!',1,
     label => M"S-Bahnlinien",	var => \$init_str_draw{'b'}],
    ['sbahnhof','!',1,
@@ -562,16 +564,20 @@ eval { local $SIG{'__DIE__'};
     label => M"R-Bahnhöfe",	var => \$init_p_draw{'r'}],
    ['wasser','!',0,	alias=>[qw(gewaesser)],
     label => M"Gewässer",	var =>\$init_str_draw{'w'}],
-   ['wasserumland','!',0,
-    label => M"Gewässer im Umland", var => \$wasserumland], # XXX auch init!
    ['wasserstadt','!',1,
     label => M"Gewässer in der Stadt", var => \$wasserstadt],
+   ['wasserumland','!',0,
+    label => M"Gewässer im Umland", var => \$wasserumland], # XXX auch init!
+   ['wasserjwd','!',0,
+    label => "MGewässer jwd", var => \$str_far_away{'w'}],
    ['faehre','!',0,	alias=>[qw(faehren)],
     label => M"Fähren",	var => \$init_str_draw{'e'}],
    ['flaeche','!',0,	alias=>[qw(flaechen)],
     label => M"Flächen",	var => \$init_str_draw{'f'}],
    ['ort','!',0,	alias=>[qw(orte)],
     label => M"Orte",		var => \$init_p_draw{'o'}],
+   ['ortjwd','!',0,
+    label => M"Orte",		var => \$p_far_away{'o'}],
    ['pp','!',0,
     label => M"Kurvenpunkte und Kreuzungen", var => \$init_p_draw{'pp'}],
 
