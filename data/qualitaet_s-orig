@@ -526,9 +526,10 @@ Zwieseler Str.: Kopfsteinpflaster	Q2 19510,9035 19629,9094
 Kˆpenicker Allee: wechselnd: holpriger Fahrweg, m‰ﬂiger Asphalt	Q2 19907,8407 20213,7872 20280,7757
 Vulkanstr.: Kopfsteinpflaster, OK	Q1 15880,13535 15873,14046 15838,14319
 Sandinostr.: Kopfsteinpflaster	Q2 15883,14606 15830,14647 15685,14757
-Orankeweg: Kopfsteinpflaster (evtl. schlechtes)	Q2 14934,15860 14802,15857 14720,15905 14619,15920
+#: add_fragezeichen: m‰ﬂiges oder schlechtes Kopfsteinpflaster?
+Orankeweg: Kopfsteinpflaster	Q2 14934,15860 14802,15857 14720,15905 14619,15920
 Orankeweg: holpriger Feldweg	Q2 14934,15860 15305,15858 15439,15859
-Orankestr.: Kopfsteinpflaster	Q2 16331,15486 15665,15765
+Orankestr.: schlechtes Kopfsteinpflaster	Q3 16331,15486 15665,15765
 Orankestrand: guter Parkweg	Q1 15871,16399 15664,16115 15599,16077 15479,16072
 Dehnerstr.: m‰ﬂiger Belag	Q1 16801,16501 17009,16718
 Genslerstr.: Kopfsteinpflaster	Q2 16888,15462 16849,15263 16799,15007 16783,14927 16765,14842
@@ -714,6 +715,10 @@ Walderseestr.: m‰ﬂig geeignet	Q2 7333,17149 7631,17239
 Alter Bernauer Heerweg: m‰ﬂig geeignet	Q2 6668,22746 7072,22905 7782,23172 7923,23225 8176,23315 8584,23421
 #: unverified_by ADFC-Karte
 Cyclopstr.: nicht geeignet	Q3 4825,21718 5138,21358
+#: unverified_by ADFC-Karte
+Friedhofstr.: gut geeignet	Q0 15534,15675 15598,15793
+#: unverified_by ADFC-Karte
+(Orankestr. - Orankesee): gut geeignet	Q0 15598,15793 15581,15846
 Peter-Vischer-Str.: Asphalt	Q0 6185,6469 6324,6480 6473,6493 6706,6513 6826,6523
 Riemenschneiderweg: m‰ﬂiger Asphalt	Q1 6826,6523 6811,6737 6802,6816 6773,7116
 Wuhlewanderweg (Ahrensfelder Berg): glatter Parkweg	Q1 22631,16215 22690,16383 22699,16501 22735,16630 22722,16906
@@ -1385,14 +1390,21 @@ Winfriedstr.: sehr guter Asphalt	Q0 1415,3362 1201,3445 971,3534
 Br¸sseler Str.: Kopfsteinpflaster	Q2 6381,15401 6695,15692 6809,15798 6914,15908
 Antwerpener Str.: asphaltiert, Parkstreifen mit Kopfsteinpflaster	Q0 6575,15831 6695,15692 6900,15454
 #: by: ^^^
-#: by: Heiko Astalosch:
-Goeckestr.: m‰ﬂiges Kopfsteinpflaster	Q2 16128,14685 16256,14828 16502,15091 16651,15345
+#: by: Heiko Astalosch: vvv
+Goeckestr.: m‰ﬂiges Kopfsteinpflaster	Q2 16128,14685 16256,14828 16502,15091 16580,15224 16651,15345
+Simon-Bolivar-Str.: geteert, guter Zustand	Q0 15763,15003 16025,14753 16128,14685 16284,14601
+Freienwalder Str.: Kopfsteinpflaster (einigermaﬂen gut)	Q2 16849,15263 16651,15345 16600,15371 16331,15486
+Wriezener Str.: Kopfsteinpflaster	Q2 16580,15224 16501,15255 16208,15379
+Roedernstr.: geteert	Q0 16208,15379 15534,15675
+#: by: ^^^
 #: by: Christoph Sachsenmaier:
 Ortlerweg: schlechtes Kopfsteinpflaster	Q3 3500,1587 3740,1918 3700,2045
 #: by: W.Oertel:
 Kˆgelstr.: m‰ﬂiges Kopfsteinpflaster	Q2 5221,17921 5367,17876
-#: by: Christian:
+#: by: Christian: vvv
 Wielandstr. (Friedenau): sehr guter Asphalt	Q0 6083,7582 6081,7215 6082,6965
+Fregestr.: guter Asphalt	Q0 5897,6799 5957,6889 5958,7220 5955,7406
+#: by: ^^^
 #: by: Thomas (dobr@...) vvv
 (Ringstr. - Gersdorfstr. (Kolonie Marienhˆhe)): Asphalt	Q0 7921,4451 8162,4725
 (Gersdorfstr. - Wulfilaufer): fester sandiger Parkweg	Q1 8162,4725 8249,4769

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.43 2005/02/25 01:35:08 eserte Exp $
+# $Id: GD.pm,v 1.43 2005/02/25 01:35:08 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -276,7 +276,7 @@ sub draw_map {
 #  		}
 #  		$im->filledPolygon($poly, $c);
 #	    } elsif ($cat !~ /^[SRU]0$/) { # Ausnahmen: in Bau
-		next if $restrict && !$restrict->{$cat};
+		next if $restrict && !exists $restrict->{$cat};
 	        next if (!$outline_brush{$cat});
 		my $color;
 	        $im->setBrush($outline_brush{$cat});
@@ -312,13 +312,12 @@ sub draw_map {
 			);
 		my $c = defined $color{$cat} ? $color{$cat} : $white;
 		my $poly = $self->{GD_Polygon}->new();
-		for(my $i = 0; $i <= $#{$s->[Strassen::COORDS]}; $i++) {
-		    $poly->addPt(&$transpose
-				 (@{Strassen::to_koord1($s->[Strassen::COORDS][$i])}));
+		for my $coord (@{ $s->[Strassen::COORDS] }) {
+		    $poly->addPt($transpose->(split /,/, $coord));
 		}
 		$im->filledPolygon($poly, $c);
 	    } elsif ($cat !~ /^[SRU]0$/) { # Ausnahmen: in Bau
-		next if $restrict && !$restrict->{$cat};
+		next if $restrict && !exists $restrict->{$cat};
 		my $color;
 		if ($brush{$cat}) {
 		    $im->setBrush($brush{$cat});
@@ -326,17 +325,10 @@ sub draw_map {
 		} else {
 		    $color = defined $color{$cat} ? $color{$cat} : $white;
 		}
-		for(my $i = 0; $i < $#{$s->[Strassen::COORDS]}; $i++) {
-		    my($x1, $y1, $x2, $y2) =
-		      (@{Strassen::to_koord1($s->[Strassen::COORDS][$i])},
-		       @{Strassen::to_koord1($s->[Strassen::COORDS][$i+1])});
-		    # XXX evtl. aus Performancegründen testen, ob
-		    # überhaupt im Zeichenbereich.
-		    # Evtl. eine XS-Funktion für diese Schleife
-		    # schreiben?
-		    my($x1t, $y1t, $x2t, $y2t) = (&$transpose($x1, $y1),
-						  &$transpose($x2, $y2));
-		    $im->line($x1t, $y1t, $x2t, $y2t, $color);
+		my @txy = map { $transpose->(split/,/, $_) } @{ $s->[Strassen::COORDS] };
+		next if @txy < 4; # ignore points
+		for my $i (0 .. $#txy/2-1) {
+		    $im->line(@txy[$i*2 .. $i*2+3], $color);
 		}
 	    }
 	}
