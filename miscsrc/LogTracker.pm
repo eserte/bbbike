@@ -64,7 +64,12 @@ sub register {
 	    $ {$k} = $v;
 	}
 	elsif ($k eq 'tracking') { $tracking = $v; parse_tail_log() if $v } # XXX
-	elsif ($k eq 'replay_route_search') { $do_search_route = $v }
+	elsif ($k eq 'replay_route_search') {
+	    $do_search_route = $v;
+	    if ($do_search_route) {
+		init_search_route();
+	    }
+	}
 	elsif ($k eq 'show_routes') { $show{routes} = $v }
 	elsif ($k eq 'show_mapserver') { $show{mapserver} = $v }
 	else {
