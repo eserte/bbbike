@@ -24,6 +24,7 @@ use BBBikeUtil;
 $BBBikeRouting::Position::Members =
     {Street => "\$", Citypart => "\$",
      City => "\$",
+     ZIP => "\$",
      Coord => "\$", Multi => "\$",
      Attribs => "\$",
     };
@@ -412,9 +413,10 @@ sub resolve_position {
 	    @$choices_o = ();
 	    for (@{ $from_res[0] }) {
 		my $new_pos = $self->BBBikeRouting_Position_Class->new;
-		$new_pos->Street  ($_->[PLZ::LOOK_NAME()]);
+		$new_pos->Street  ($_->[PLZ::LOOK_NAME    ()]);
 		$new_pos->Citypart($_->[PLZ::LOOK_CITYPART()]);
-		$new_pos->Coord   ($_->[PLZ::LOOK_COORD()]);
+		$new_pos->Coord   ($_->[PLZ::LOOK_COORD   ()]);
+		$new_pos->ZIP     ($_->[PLZ::LOOK_ZIP     ()]);
 		push @$choices_o, $new_pos;
 		last if defined $limit && @$choices_o >= $limit;
 	    }
@@ -422,9 +424,10 @@ sub resolve_position {
 	}
 
 	my $from_data = $from_res[0]->[0];
-	$pos_o->Street  ($from_data->[PLZ::LOOK_NAME()]);
+	$pos_o->Street  ($from_data->[PLZ::LOOK_NAME    ()]);
 	$pos_o->Citypart($from_data->[PLZ::LOOK_CITYPART()]);
-	$pos_o->Coord   ($from_data->[PLZ::LOOK_COORD()]);
+	$pos_o->Coord   ($from_data->[PLZ::LOOK_COORD   ()]);
+	$pos_o->ZIP     ($from_data->[PLZ::LOOK_ZIP     ()]);
     } else {
 	$self->init_str; # for $self->Streets
 	# rx or not?
