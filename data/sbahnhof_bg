@@ -1,7 +1,10 @@
 Anhalter Bhf.	bg 8880,10853
+Friedrichstr.	bg 9181,12732
 Oranienburger Str.	bg 9610,13258
 Nordbahnhof	bg 9264,14032
+Gesundbrunnen	bg 9299,15930
 Bornholmer Str.	bg 9860,16507
+Schönhauser Allee	bg 11064,15971
 Pankow	bg 10796,17924
 Wittenau	bg 5468,21190
 Hermsdorf	bg 3651,23416
@@ -15,6 +18,7 @@ Schichauweg	bg 9660,-833
 Lichtenrade	bf 10151,-2046
 Lichterfelde-Ost	bg 5378,2507
 Lankwitz	bf 6371,3590
+Friedenau	bg 6252,7147
 Bundesplatz	bg 5404,7902
 Feuerbachstr.	bg 5663,6312
 Rathaus Steglitz	bg 5002,5412
@@ -22,6 +26,9 @@ Botanischer Garten	bg 3926,4532
 Lichterfelde-West	bg 2994,3988
 Sundgauer Str.	bg 1763,3213
 Zehlendorf	bg 718,2601
+Mexikoplatz	bg -1079,3232
+Schlachtensee	bg -2275,3548
+Nikolassee (Wannseebahn)	bg -3684,2606
 Wannsee	bg -4677,1420
 Griebnitzsee	bg -8063,-1651
 Messe Süd (Eichkamp)	bg 1208,10234
@@ -35,8 +42,10 @@ Tiergarten	bg 5814,11967
 Bellevue	bg 6603,12609
 Hackescher Markt	bg 10295,12996
 Alexanderplatz	bg 10847,12890
+Jannowitzbrücke	bg 11398,12103
 Ostbahnhof: auf der Ostseite große Aufzüge, leider häufig kaputt, nur von der Seite Am Ostbahnhof niveaufrei erreichar; auf der Westseite normale Aufzüge, nur von der Seite Erich-Steinfurth-Str. erreichbar	bg 12609,11662
 Karlshorst	bg 18801,8501
+Köpenick	bg 22530,6100
 Friedrichshagen	bg 25489,6023
 Rahnsdorf	bg 30020,5477
 Erkner	bg 34138,2805
@@ -44,7 +53,8 @@ Ahrensfelde	bf 21199,18617
 Mehrower Allee	bf 20458,17110
 Raoul-Wallenberg-Str.	bf 20069,16334
 Poelchaustr.	bf 19221,14465
-Springpfuhl	bf 19367,13687
+Springpfuhl	bg 19367,13687
+Friedrichsfelde Ost	bg 18295,12195
 Lichtenberg	bf 16796,11777
 Wuhletal	bf 22121,12080
 Mahlsdorf	bg 24482,12106
@@ -55,6 +65,7 @@ Storkower Str.	bg 14557,13168
 Landsberger Allee	bg 13839,13778
 Greifswalder Str.	bg 12732,14995
 Prenzlauer Allee	bg 11818,15492
+Pankow-Heinersdorf	bf 12076,19329
 Buch	bf 16101,25760
 Röntgental	bg 17671,27148
 Treptower Park	bg 14325,9793
@@ -72,6 +83,7 @@ Hohenzollerndamm	bg 3405,9059
 Westend	bg 2256,12334
 Jungfernheide	bg 3352,13752
 Beusselstr.	bg 5299,14185
+Westhafen	bg 6329,14428
 Wedding	bg 7842,15194
 Olympiastadion	bg -612,11484
 Pichelsberg	bg -1638,11411
@@ -104,7 +116,7 @@ Königs Wusterhausen	bf 26358,-11950
 Zeuthen	bf 26029,-6170
 Osdorfer Str.	bg 4502,1316
 Lichterfelde Süd	bg 4146,385
-Schulzendorf (b. Tegel)	bf -537,22867
+Schulzendorf (b. Tegel)	bg -537,22867
 Heiligensee	bg -1623,24049
 Hennigsdorf	bg -3381,25591
 Stresow	bg -2901,13742

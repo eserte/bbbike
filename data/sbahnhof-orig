@@ -5,6 +5,7 @@ Yorckstr. (Großgörschenstr.)	SA 7985,9576
 Anhalter Bhf.	SA 8880,10853
 Potsdamer Platz	SA 8540,11480
 Unter den Linden	SA 8838,12259
+#: attrs bg
 Friedrichstr.	SA 9181,12732
 #: attrs bg
 Oranienburger Str.	SA 9610,13258
@@ -12,9 +13,11 @@ Lehrter Bahnhof (Hauptbahnhof)	SA 7996,13271
 #: attrs bg
 Nordbahnhof	SA 9264,14032
 Humboldthain	SA 8658,15442
+#: attrs bg
 Gesundbrunnen	SA 9299,15930
 #: attrs bg
 Bornholmer Str.	SB 9860,16507
+#: attrs bg
 Schönhauser Allee	SA 11064,15971
 Wollankstr.	SB 9472,17700
 #: attrs bg
@@ -54,6 +57,7 @@ Lichtenrade	SB 10151,-2046
 Lichterfelde-Ost	SB 5378,2507
 #: attrs bf
 Lankwitz	SB 6371,3590
+#: attrs bg
 Friedenau	SB 6252,7147
 #: attrs bg
 Bundesplatz	SB 5404,7902
@@ -69,8 +73,11 @@ Lichterfelde-West	SB 2994,3988
 Sundgauer Str.	SB 1763,3213
 #: attrs bg
 Zehlendorf	SB 718,2601
+#: attrs bg
 Mexikoplatz	SB -1079,3232
+#: attrs bg
 Schlachtensee	SB -2275,3548
+#: attrs bg
 Nikolassee (Wannseebahn)	SB -3684,2606
 Nikolassee	SB -3736,2625
 #: attrs bg
@@ -101,6 +108,7 @@ Bellevue	SA 6603,12609
 Hackescher Markt	SA 10295,12996
 #: attrs bg
 Alexanderplatz	SA 10847,12890
+#: attrs bg
 Jannowitzbrücke	SA 11398,12103
 #: attrs bg (auf der Ostseite große Aufzüge, leider häufig kaputt, nur von der Seite Am Ostbahnhof niveaufrei erreichar; auf der Westseite normale Aufzüge, nur von der Seite Erich-Steinfurth-Str. erreichbar)
 Ostbahnhof	SA 12609,11662
@@ -112,6 +120,7 @@ Betriebsbhf. Rummelsburg	SB 16877,9840
 #: attrs bg
 Karlshorst	SB 18801,8501
 Wuhlheide	SB 20705,7189
+#: attrs bg
 Köpenick	SB 22530,6100
 Hirschgarten	SB 23963,6063
 #: attrs bg
@@ -130,9 +139,11 @@ Raoul-Wallenberg-Str.	SB 20069,16334
 Marzahn	SB 19623,15444
 #: attrs bf
 Poelchaustr.	SB 19221,14465
-#: attrs bf
+#: attrs bg
 Springpfuhl	SB 19367,13687
+#: XXX bf nur Richtung Westen
 Biesdorf	SB 20766,12124
+#: attrs bg
 Friedrichsfelde Ost	SB 18295,12195
 #: attrs bf
 Lichtenberg	SB 16796,11777
@@ -157,6 +168,7 @@ Landsberger Allee	SA 13839,13778
 Greifswalder Str.	SA 12732,14995
 #: attrs bg
 Prenzlauer Allee	SA 11818,15492
+#: attrs bf
 Pankow-Heinersdorf	SB 12076,19329
 Blankenburg	SB 12918,20692
 Karow	SB 14608,23364
@@ -197,6 +209,7 @@ Westend	SA 2256,12334
 Jungfernheide	SA 3352,13752
 #: attrs bg
 Beusselstr.	SA 5299,14185
+#: attrs bg
 Westhafen	SA 6329,14428
 #: attrs bg
 Wedding	SA 7842,15194
@@ -268,7 +281,7 @@ Osdorfer Str.	SB 4502,1316
 Lichterfelde Süd	SB 4146,385
 # wird nicht mehr eröffnet: Teltow	S0 E5841,5733
 Teltow-Stadt	S0 1917,-1180
-#: attrs bf
+#: attrs bg
 Schulzendorf (b. Tegel)	SB -537,22867
 #: attrs bg
 Heiligensee	SB -1623,24049

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.29 2004/11/09 21:26:01 eserte Exp eserte $
+# $Id: Makefile,v 2.30 2004/11/16 22:39:22 eserte Exp $
 #
 
 BBBIKEDIR=		..
@@ -72,17 +72,33 @@ targets-clean:
 
 # Useful checks, but normally too slow for a quick build
 # XXX merge with sort-Berlin.coords.data rule below?
-slow-checks:	inaccessible_strassen check-line-lengths check-dates check-Berlin.coords.data
+slow-checks:	inaccessible_strassen inaccessible_landstrassen \
+		check-line-lengths check-dates check-Berlin.coords.data
 
 # even slower (about four minutes)
 really-slow-checks:	check-crossings
 
-# XXX do also landstrassen (at least Potsdam):
 inaccessible_strassen: strassen gesperrt
 	-@$(WRITEABLE) $@
+	-cp -f $@ /tmp/old_inaccessible_strassen
 	${SEARCH_INACCESSIBLE} -street strassen -blocked gesperrt \
 	    -blockedtype einbahn -blockedtype sperre \
 	    > inaccessible_strassen~ && mv inaccessible_strassen~ inaccessible_strassen
+	@if [ -e /tmp/old_inaccessible_strassen ] ; then \
+	    diff -u $@ /tmp/old_inaccessible_strassen; \
+	fi
+	-@$(READONLY) $@
+
+inaccessible_landstrassen: strassen landstrassen landstrassen2 gesperrt
+	-@$(WRITEABLE) $@
+	-cp -f $@ /tmp/old_inaccessible_landstrassen
+	${SEARCH_INACCESSIBLE} -street strassen -street landstrassen \
+	    -street landstrassen2 -blocked gesperrt \
+	    -blockedtype einbahn -blockedtype sperre \
+	    > inaccessible_landstrassen~ && mv inaccessible_landstrassen~ inaccessible_landstrassen
+	@if [ -e /tmp/old_inaccessible_landstrassen ] ; then \
+	    diff -u $@ /tmp/old_inaccessible_landstrassen; \
+	fi
 	-@$(READONLY) $@
 
 strassen:	.strassen.tmp plaetze

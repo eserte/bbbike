@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.45 2004/08/26 23:55:34 eserte Exp eserte $
+# $Id: insert_points,v 1.46 2004/11/15 23:24:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -32,7 +32,6 @@
 # geben die Strecke an, von der der zweite Punkt zum dritten Punkt
 # der Eingabe verschoben werden soll. Also:
 # Strecke A --- B; B wird nach C verschoben
-
 # grep_point:
 # show files containing the point
 
@@ -84,7 +83,9 @@ my $verbose = 0;
 my $current_coordsys = '';
 my $n;
 my @custom_check_files;
+my @add_custom_check_files;
 my $custom_file_list;
+my $add_custom_file_list;
 my @add_check_files_noorig;
 my %noorig_files;
 my $useint; # XXX never used?
@@ -99,6 +100,7 @@ sub process {
     local @ARGV = @argv;
 
     @custom_check_files = (); # reset
+    @add_custom_check_files = (); # reset
     if (!GetOptions('tk!'        => \$use_tk,
 		    'bbbikerootdir=s' => \$bbbikerootdir,
 		    'datadir=s'  => \$datadir,
@@ -109,7 +111,9 @@ sub process {
 		    'n'          => \$n,
 		    'operation=s' => \$operation,
 		    'file=s@'    => \@custom_check_files,
+		    'addfile=s@' => \@add_custom_check_files,
 		    'fl|filelist=s' => \$custom_file_list,
+		    'addfl|addfilelist=s' => \$add_custom_file_list,
 		    'useint!'    => \$useint,
 		    'orig!'      => \$orig,
 		    "report!"    => \$report,
@@ -120,28 +124,37 @@ sub process {
     $datadir = "$bbbikerootdir/data" if !defined $datadir;
     $tempblockingdir = "$bbbikerootdir/data/temp_blockings" if !defined $tempblockingdir; # XXX was misc
 
-    if ($custom_file_list) {
-	open(F, $custom_file_list) or die "Can't open $custom_file_list: $!";
-	while(<F>) {
-	    chomp;
-	    my $f = $_;
-	    if (!-r $f) {
-		if (-r "$datadir/$f") {
-		    $f = "$datadir/$f";
-		} else {
-		    warn "Cannot handle $f, skipping...\n";
-		    next;
+    for my $def ([$custom_file_list, \@custom_check_files],
+		 [$add_custom_file_list, \@add_custom_check_files],
+		) {
+	my($file_list, $check_files) = @$def;
+	if ($file_list) {
+	    open(F, $file_list) or die "Can't open $file_list: $!";
+	    while(<F>) {
+		chomp;
+		my $f = $_;
+		if (!-r $f) {
+		    if (-r "$datadir/$f") {
+			$f = "$datadir/$f";
+		    } else {
+			warn "Cannot handle $f, skipping...\n";
+			next;
+		    }
 		}
+		push @$check_files, $f;
 	    }
-	    push @custom_check_files, $f;
+	    close F;
 	}
-	close F;
     }
 
     if ($current_coordsys eq '') {
 	@add_check_files_noorig = glob("$tempblockingdir/*.bbd");
     } else {
 	@add_check_files_noorig = ();
+    }
+
+    if (@add_custom_check_files) {
+	push @add_check_files_noorig, @add_custom_check_files;
     }
 
     warn "Custom check files are @custom_check_files\n" if $verbose and @custom_check_files;
@@ -269,7 +282,7 @@ sub process {
     if (!@custom_check_files) {
 	chdir $datadir or die "chdir to $datadir failed: $!";
 
-	if ($operation =~ /^(insert|insertmulti|changeline|grep|delete)$/) {
+	if ($operation =~ /^(insert|insertmulti|changeline|change|grep|delete)$/) {
 	    # folgende Dateien werden bei insert_points überprüft:
 	    # normales Format
 	    # XXX gesperrt/gesperrt_car: Die Kategorie 3 müsste
@@ -362,7 +375,7 @@ sub process {
 	close BASE;
 
 	if ($operation eq 'change') {
-	    @{$check_files[T_NORMAL]} = grep { !$ignore_files{$_} } keys %file2base;
+#XXX	    @{$check_files[T_NORMAL]} = grep { !$ignore_files{$_} } keys %file2base;
 	    $file2base{'../misc/ampelschaltung-orig.txt'} = 'B'; # XXX aus ../misc/BASE holen
 	    if (!$orig) {
 		$file2base{'radwege_exact-orig'} = $file2base{'radwege-orig'};
@@ -378,6 +391,10 @@ sub process {
 	    my @f = glob("$ENV{HOME}/.bbbike/data/*.bbd");
 	    push @{$check_files[T_NORMAL]}, @f;
 	    $noorig_files{$_} = 1 for (@f);
+	}
+
+	for (@add_check_files_noorig) {
+	    $noorig_files{$_} = 1;
 	}
 
     } else { # custom_check_files

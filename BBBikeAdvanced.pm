@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.108 2004/08/21 23:08:02 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.109 2004/11/15 23:25:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1683,7 +1683,7 @@ sub _insert_points_and_co {
     eval {
 	require "$FindBin::RealBin/miscsrc/insert_points";
 	my @args = (-operation => $oper_name,
-		    (-e "$datadir/.custom_files" ? (-filelist => "$datadir/.custom_files") : ()),
+		    (-e "$datadir/.custom_files" ? (-addfilelist => "$datadir/.custom_files") : ()),
 		    "-useint", # XXX but not for polar coordinates
 		    -datadir => $datadir,
 		    -bbbikerootdir => $FindBin::RealBin,

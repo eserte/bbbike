@@ -19,7 +19,8 @@ Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15586,27150 15231,26587 14859,26029 
 Hobrechtsfelder Chaussee (ab Kurve): schlechtes Kopfsteinpflaster, 13 km/h	Q3 15586,27150 15709,27984 15757,28054
 Wisbyer Str.: m‰ﬂiges Kopfsteinpflaster	Q2 11033,16464 11397,16405 11688,16365 11727,16358
 Weserstr.: Kopfsteinpflaster, schmale Radwege	Q1 11888,9203 11993,9211 12074,9217 12148,9209 12180,9193 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
-Stuttgarter Str.: m‰ﬂiger Asphalt	Q1 13663,8011 13510,8138 13331,8283 13166,8423
+Stuttgarter Str.: m‰ﬂiger Asphalt	Q1 13663,8011 13510,8138 13331,8283
+Stuttgarter Str.: Kopfsteinpflaster	Q2 13331,8283 13166,8423
 Brockenstr.: Kopfsteinpflaster	Q2 13575,8593 13687,8734
 Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz mˆglich	Q2 13687,8734 13778,8846
 Sinsheimer Weg: Betonstraﬂe	Q0 13778,8846 13834,8925
@@ -222,7 +223,7 @@ Mittelweg: Kopfsteinpflaster	Q2 12923,7611 12781,7691 12644,7688 12516,7718
 Mittelweg: Kopfsteinpflaster	Q3 12182,7824 12335,7770
 Karl-Marx-Platz/Richardplatz: Kopfsteinpflaster	Q2 12980,7597 13177,7644 13297,7654 13429,7689
 Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622 13400,7642 13432,7649 13429,7689
-Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 13226,7775 13297,7654 13303,7622 13336,7467 13369,7307
+Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12887,8099 13226,7775 13297,7654 13303,7622 13336,7467 13369,7307
 Heerstr.: Kopfsteinpflaster auf den Parallelstraﬂen	Q2 467,11221 41,11168 -572,11092 -1269,11008 -1499,10990 -2212,11196
 Alt-Rudow: Kopfsteinpflaster	Q2 16960,1282 16838,1457
 Fichtestr.: Kopfsteinpflaster, mit Teer gefugt	Q2 11108,9194 11064,9543
@@ -319,8 +320,8 @@ Boddinstr.: Kopfsteinpflaster	Q2 11920,8252 12096,8300
 Boddinstr.: teilweise Asphalt auf der Fahrbahn	Q1 12096,8300 12217,8320
 Boddinstr.: Kopfsteinpflaster	Q2 12217,8320 12368,8356 12582,8408
 Rollbergstr.: Asphalt	Q0 11960,8090 12139,8128
-Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12407,8177 12714,8249
-Falkstr.: Asphalt	Q0 12139,8128 12162,8055 12211,7830
+Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12407,8177 12528,8205 12714,8249
+Falkstr.: Asphalt	Q0 12139,8128 12162,8055 12177,7988 12211,7830
 Schillerpromenade: Kopfsteinpflaster	Q2 11665,8130 11695,8005
 Schillerpromenade: Kopfsteinpflaster	Q2 11717,7895 11736,7801 11755,7704 11797,7492
 S‰ntisstr.: Kopfsteinpflaster	Q2 8892,802 8533,512
@@ -951,6 +952,9 @@ Neckarstr.: Kopfsteinpflaster	Q2 12639,8344 12384,8284
 Isarstr.: Kopfsteinpflaster	Q2 12384,8284 12368,8356 12349,8464
 Heidelberger Str.: Trampelpfad	Q2 13657,9063 13483,9195
 Lexisstr.: Beton	Q1 12989,9471 13059,9417 13140,9354
+Briesestr.: Kopfsteinpflaster	Q2 11998,7948 12177,7988
+Falkstr.: Kopfsteinpflaster	Q2 12177,7988 12211,7830
+Geygerstr.: Beton	Q1 13066,8153 13194,8276
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
 Sch¸tzallee: m‰ﬂiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfl‰che	Q2 2230,3823 1952,3864 1677,3885
 Riemeisterstr.: m‰ﬂiges Kopfsteinpflaster	Q2 373,4816 319,4906 168,5092 103,5123

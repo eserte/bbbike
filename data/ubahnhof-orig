@@ -5,6 +5,7 @@ Warschauer Str.	UA 13506,11159
 Schlesisches Tor	UA 12986,10636
 Görlitzer Bhf.	UA 12076,10426
 Kottbusser Tor	UA 11370,10398
+#: XXX bg nur Richtung Osten
 Prinzenstr.	UA 10529,10306
 Hallesches Tor	UA 9582,10220
 Möckernbrücke (U1)	UA 8985,10360
@@ -37,6 +38,7 @@ Uhlandstr.	UA 5157,10657
 #: attrs bg
 Pankow	UB 10843,18001
 Vinetastr.	UB 10934,17049
+#: attrs bg
 Schönhauser Allee	UA 10983,15984
 Eberswalder Str.	UA 10890,15097
 Senefelderplatz	UA 10936,14074
@@ -48,6 +50,7 @@ Klosterstr.	UA 10954,12399
 Märkisches Museum	UA 10827,11864
 Spittelmarkt	UA 10337,11730
 Hausvogteiplatz	UA 9829,11957
+#: attrs bg
 Stadtmitte (U2)	UA 9452,11808
 Mohrenstr.	UA 9098,11754
 Potsdamer Platz	UA 8667,11478
@@ -122,8 +125,10 @@ Platz der Luftbrücke	UA 9217,8888
 Mehringdamm	UA 9396,9871
 #: attrs bg
 Kochstr.	UA 9491,11089
+#: attrs bg
 Stadtmitte (U6)	UA 9423,11697
 Französische Str.	UA 9383,12049
+#: attrs bg
 Friedrichstr.	UA 9306,12725
 #: attrs bg
 Oranienburger Tor	UA 9239,13286
@@ -204,6 +209,7 @@ Rosenthaler Platz	UA 10157,13817
 #: attrs bg
 Bernauer Str.	UA 9828,14659
 Voltastr.	UA 9602,15110
+#: attrs bg
 Gesundbrunnen	UA 9226,15911
 Pankstr.	UB 8796,16239
 #: attrs bg
@@ -214,6 +220,7 @@ Residenzstr.	UB 7325,18276
 Paracelsus-Bad	UB 6509,18665
 #: attrs bg
 Lindauer Allee	UB 6056,18753
+#: attrs bg
 Karl-Bonhoeffer-Nervenklinik	UB 5448,19169
 #: attrs bg
 Rathaus Reinickendorf	UB 4934,20186
@@ -222,6 +229,7 @@ Wittenau	UB 5501,21018
 # U9
 Nauener Platz	UB 7829,16158
 Amrumer Str.	UB 6647,15084
+#: attrs bg
 Westhafen	UA 6197,14494
 Birkenstr.	UA 6112,13947
 Turmstr.	UA 6122,13261

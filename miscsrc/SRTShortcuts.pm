@@ -208,7 +208,7 @@ sub upload {
     my $rule = shift;
     if (fork == 0) {
 	exec(qw(xterm -e sh -c),
-	     'cd $bbbike_rootdir/misc/gps_data && make ' . $rule . '; sleep 9999');
+	     'cd ' . $bbbike_rootdir . '/misc/gps_data && make ' . $rule . '; sleep 9999');
 	die $!;
     }
 }
