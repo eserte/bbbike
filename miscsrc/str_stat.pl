@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: str_stat.pl,v 1.9 2004/07/20 20:51:05 eserte Exp $
+# $Id: str_stat.pl,v 1.10 2004/12/22 00:45:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2004 Slaven Rezic. All rights reserved.
@@ -18,12 +18,18 @@ use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 use Strassen::Core;
 use Strassen::MultiStrassen;
 use Strassen::Stat;
+use Getopt::Long;
 use strict;
 
 my %seen;
 my %str;
 
 my $do_wasserstrassen = 0;
+
+my $do_area;
+if (!GetOptions("area!" => \$do_area)) {
+    die "usage: $0 [-area] file ...";
+}
 
 my @strfile = @ARGV;
 if (!@strfile) {
@@ -47,9 +53,15 @@ my $str_total_total_len = 0;
     while(1) {
 	my $r = $s->next;
 	last if !@{$r->[1]};
-	my $total_len = Strassen::total_len($r);
-	$str{$r->[Strassen::NAME]} += $total_len/1_000;
-	$str_total_total_len += $total_len/1_000;
+	if ($do_area) {
+	    my $total_area = Strassen::area($r);
+	    $str{$r->[Strassen::NAME]} += $total_area/1_000_000;
+	    $str_total_total_len += $total_area/1_000_000;
+	} else {
+	    my $total_len = Strassen::total_len($r);
+	    $str{$r->[Strassen::NAME]} += $total_len/1_000;
+	    $str_total_total_len += $total_len/1_000;
+	}
     }
 }
 
@@ -66,13 +78,23 @@ if (%seen) {
     print "-" x 70, "\n";
 }
 
-print "Straﬂen:\n";
+if ($do_area) {
+    print "Fl‰chen:\n";
+} else {
+    print "Straﬂen:\n";
+}
+my $unit = $do_area ? 'km≤' : 'km';
 print join("\n",
-	   map { sprintf "%-40s %6.2f km",
+	   map { sprintf "%-40s %6.2f $unit",
 		   $_, $str{$_}
 	       } sort { $str{$b} <=> $str{$a} } keys %str), "\n";
 
-printf "Gesamtes Straﬂennetz: %6.2f km\n", $str_total_total_len;
+if ($do_area) {
+    print "Gesamte Fl‰che: ";
+} else {
+    print "Gesamtes Straﬂennetz: ";
+}
+printf "%6.2f $unit\n", $str_total_total_len;
 
 sub do_wasserstrassen {
     my $s = new MultiStrassen
