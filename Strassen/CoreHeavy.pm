@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.14 2004/06/02 00:29:43 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.15 2004/06/15 00:05:50 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -640,8 +640,8 @@ sub sort_by_cat {
 sub is_current {
     my($self) = @_;
     my @dependent_files;
-    if ($self->{DependentFiles}) {
-	@dependent_files = @{ $self->{DependentFiles} };
+    if ($self->dependent_files) {
+	@dependent_files = $self->dependent_files;
     } elsif (defined $self->file) {
 	@dependent_files = $self->file;
     }

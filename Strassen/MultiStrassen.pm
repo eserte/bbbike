@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiStrassen.pm,v 1.8 2004/05/11 21:03:35 eserte Exp eserte $
+# $Id: MultiStrassen.pm,v 1.9 2004/06/15 00:06:15 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::MultiStrassen;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 package MultiStrassen;
 use strict;
@@ -73,7 +73,7 @@ sub dependent_files {
 }
 
 sub is_current {
-    my $self;
+    my $self = shift;
     for my $subobj (@{ $self->{SubObj} }) {
 	return 0 if !$subobj->is_current;
     }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEditUtil.pm,v 1.8 2004/06/10 22:27:24 eserte Exp $
+# $Id: BBBikeEditUtil.pm,v 1.9 2004/06/14 21:02:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -138,6 +138,11 @@ sub parse_dates {
 	$new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
 	$new_end_time   = $date_time_to_epoch->(0,$M2,$H2,$d1,$m1,$y1);
 	$rx_matched     = 1;
+    } elsif (($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2, $M2) = $btxt =~
+	     /$full_date_rx\s*$bis_und_rx\s*$full_date_rx/) {
+	$new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
+	$new_end_time   = $date_time_to_epoch->(0,$M2,$H2,$d2,$m2,$y2);
+	$rx_matched     = 16;
     } elsif (($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2) = $btxt =~
 	     /$full_date_rx\s*$bis_und_rx\s*$date_rx/) {
 	$new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);

@@ -1017,6 +1017,12 @@ L<http://www.wirtschaft.brandenburg.de/sixcms/media.php/1312/broschurrad.pdf>
 
 =over
 
+=item * (H3)
+
+misc/fragezeichen nach data migrieren. Alle Skripte/Module anpassen
+(MANIFEST, CVS, RCS-rename, in insert_points aufnehmen,
+data_corrected/fragezeichen aus bbbike.pl entfernen ...)
+
 =item * (M1)
 
 Convert the data/Makefile to data/Makefile.PL or similar (to solve

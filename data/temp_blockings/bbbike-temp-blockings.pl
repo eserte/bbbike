@@ -407,4 +407,16 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Die Straße des 17.Juni zwischen Entlastungsstraße und Ebertstraße (Start- und Zielbereich) ist von 11.06.2004,13:00 Uhr bis 12.06.2004, ca. 02:00 Uhr gesperrt (Sportveranstaltung).',
        type  => 'handicap',
      },
+     { from  => 1087545600, # 2004-06-18 10:00
+       until => 1087689600, # 2004-06-20 02:00
+       file  => 'altwittenau.bbd',
+       text  => 'Alt-Wittenau zwischen Eichborndamm und Triftstraße Bürgerfest, Straße gesperrt, Dauer: 19.06.2004, 10.00 Uhr bis 20.06.2004, 02.00 Uhr.',
+       type  => 'handicap',
+     },
+     { from  => 1088114400, # 2004-06-25 00:00
+       until => 1088352000, # 2004-06-27 18:00
+       file  => 'wiesenfest.bbd',
+       text  => 'Finsterwalder Straße zwischen Engelroder Weg und Calauer Straße Wiesenfest, Verkehrsbehinderung erwartet, Dauer: 26.06.2004, 10.00 UHr bis 27.06.2004, 18.00 Uhr.',
+       type  => 'handicap',
+     },
     );

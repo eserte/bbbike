@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: temp_blockings_dates.t,v 1.4 2004/05/09 22:26:19 eserte Exp $
+# $Id: temp_blockings_dates.t,v 1.5 2004/06/14 21:02:14 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -162,6 +162,13 @@ ab: 21.07.2003, 07.00 Uhr für ca. 4 Monate.
 EOF
       Mktime(2003,7,21,7,0,0),
       Mktime(2003,11,21,7,0,0),
+     ],
+
+     [<<EOF,
+Alt-Wittenau zwischen Eichborndamm und Triftstraße Bürgerfest, Straße gesperrt, Dauer: 19.06.2004, 10.00 Uhr bis 20.06.2004, 02.00 Uhr.
+EOF
+      Mktime(2004,06,19,10,00,00),
+      Mktime(2004,06,20,02,00,00),
      ],
     ) {
 	my $btxt = shift @$test_data;

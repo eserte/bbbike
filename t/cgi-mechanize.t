@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.7 2004/06/10 23:00:56 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.7 2004/06/10 23:00:56 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -118,6 +118,7 @@ like($agent->content, qr/Route/);
 ######################################################################
 # test for Kaiser-Friedrich-Str. (Potsdam) problem
 
+XXX:
 {
 
 my $agent = WWW::Mechanize->new;
@@ -194,7 +195,6 @@ like($agent->content, qr/\QAm Neuen Palais (F2.2) (Potsdam)/i,  "Correct start r
 ######################################################################
 # A street in Potsdam but not in "landstrassen"
 
-XXX:
 {
 
 my $agent = WWW::Mechanize->new;
