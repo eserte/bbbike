@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.14 2004/01/18 09:42:21 eserte Exp $
+# $Id: bbbikerouting.t,v 1.15 2004/03/15 15:38:39 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -29,7 +29,7 @@ BEGIN {
     }
 }
 
-my $num_tests = 60; # basic number of tests
+my $num_tests = 63; # basic number of tests
 
 use vars qw($single $all $common $bench $v $do_xxx);
 
@@ -362,6 +362,36 @@ sub do_tests {
     ok(scalar @{ $routing->RouteInfo } > 0);
 
  XXX:
+
+    {
+	# (Similar test in cgi.t)
+	# this is critical --- both streets in the neighborhood of Berlin
+	my $routing2 = BBBikeRouting->new;
+	$routing2->init_context;
+	_my_init_context($routing2->Context);
+	$routing2->change_scope("region");
+	my $start_pos = BBBikeRouting::Position->new;
+	$start_pos->Street("Otto-Nagel-Str.");
+	$start_pos->Coord("-12064,-284");
+	$routing2->fix_position($start_pos);
+	$routing2->Start($start_pos);
+	my $goal_pos = BBBikeRouting::Position->new;
+	$goal_pos->Street("Helmholtzstr.");
+	$goal_pos->Coord("-11831,-70");
+	$routing2->fix_position($goal_pos);
+	$routing2->Goal($goal_pos);
+	eval {
+	    $routing2->search;
+	};
+	is($@, "", "successful search between " .
+	   $start_pos->Coord . " and " . $routing2->Goal->Coord);
+	ok($routing2->Path && scalar @{ $routing2->Path } > 0,
+	   "Non-empty path");
+	my $route_len = $routing2->RouteInfo->[-1]->{WholeMeters};
+	ok($route_len < 500, "check route length")
+	    or diag "Route length: $route_len too large, Route is " . Dumper($routing2->RouteInfo);
+    }
+
     {
 	my $routing2 = BBBikeRouting->new;
 	$routing2->init_context;
