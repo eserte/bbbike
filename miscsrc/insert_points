@@ -247,6 +247,9 @@ sub process {
 	    # XXX gesperrt/gesperrt_car: Die Kategorie 3 müsste
 	    # eigentlich gesondert betrachtet werden (wie die Drei-Punkte-Form
 	    # von comments). Aber es sollte so auch funktionieren.
+
+	    # "potsdam" ist nicht dabei --- wahrscheinlich nicht notwendig
+	    # "plz" ist auch nicht dabei --- hoffentlich schon jetzt gut genug
 	    @{$check_files[T_NORMAL]} =
 		qw(gesperrt gesperrt_u gesperrt_s gesperrt_r gesperrt_car
 		   landstrassen landstrassen2
