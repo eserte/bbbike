@@ -863,8 +863,8 @@ userdel	q4 -21003,-4494 -20851,-4878
 EOF
      },
      { from  => 1096754400, # 2004-10-03 00:00
-       until => 1104534000, # 2005-01-01 00:00
-       text  => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 04.10.2004-31.12.2004 ',
+       until => 1102460400, # 2004-12-08 00:00
+       text  => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 04.10.2004-07.12.2004 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 49039,44131 48583,44366
@@ -1196,21 +1196,19 @@ EOF
 userdel	q4 13225,-681 13309,-1268
 EOF
      },
-     { from  => 1101445200, # 2004-11-26 06:00
-       until => 1101682800, # 2004-11-29 00:00
-       text  => 'Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße Umwelt- und Weihnachtsmarkt, Straße gesperrt. Dauer 27.11.2004, 06.00 Uhr bis 28.11.2004, 24.00 Uhr ',
+     { from  => 1102050000, # 2004-12-03 06:00
+       until => 1102287600, # 2004-12-06 00:00
+       text  => 'Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße Umwelt- und Weihnachtsmarkt, für den Fahrzeugverkehr gesperrt. Dauer 04.12.2004, 06.00 Uhr bis 05.12.2004, 24.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 9982,13411 10312,13231
 EOF
      },
-     { from  => 1101445200, # 2004-11-26 06:00
-       until => 1101600000, # 2004-11-28 01:00
-       text  => 'Bahnhofstr. zwischen Goltzstraße und Steinstraße Weihnachstsmarkt, Straße gesperrt, Dauer: 27.11.2004, 06:00 Uhr bis 28.11.2004, 01:00 Uhr ',
+     { from  => 1102050000, # 2004-12-03 06:00
+       until => 1102204800, # 2004-12-05 01:00
+       text  => 'Bahnhofstr. zwischen Goltzstr. und Steinstraße Weihnachstsmarkt, in beiden Richtungen gesperrt. Dauer: 04.12.2004, 06:00 Uhr bis 05.12.2004, 01:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 10945,-2124 10747,-2129
-userdel	2 10310,-2136 10453,-2133
 userdel	2 10453,-2133 10747,-2129
 EOF
      },

@@ -1,10 +1,4 @@
-# $Id: plaetze-orig,v 4.3 2004/08/28 23:26:44 eserte Exp eserte $
-Kottbusser Tor	Pl 11370,10398
-Anhalter Bahnhof	Pl 8947,10956
-Flughafen Tempelhof	Pl 9346,8612
-Engelbecken	Pl 11421,11073
-Schlesisches Tor	Pl 12995,10669
-Flughafen Tegel	Pl 2756,16344
+# $Id: plaetze-orig,v 4.4 2004/12/04 22:51:27 eserte Exp eserte $
 Hackescher Markt	Pl 10264,13097
 Rosenthaler Platz	Pl 10177,13766
 Potsdamer Platz	Pl 8542,11502
@@ -16,7 +10,6 @@ Hochmeisterplatz	Pl 3431,9763
 Fehrbelliner Platz	Pl 4347,9290
 Emser Platz	Pl 4708,9498
 Walther-Schreiber-Platz	Pl 5370,6500
-Steglitzer Kreisel	Pl 4748,5357
 Bundesplatz	Pl 5357,8005
 Olivaer Platz	Pl 4239,10358
 Adenauerplatz	Pl 3830,10351
@@ -69,15 +62,11 @@ Kurt-Schumacher-Platz	Pl 5126,17487
 Mexikoplatz	Pl -1117,3317
 Rüdesheimer Platz	Pl 4391,7258
 Dahlem-Dorf	Pl 2771,5678
-# auch wenn es einen echten Thielplatz nicht gibt, nur den U-Bhf.
-Thielplatz	Pl 2313,4901
 Rosa-Luxemburg-Platz	Pl 10746,13673
 Senefelderplatz	Pl 10947,14114
 Elsterwerdaer Platz	Pl 21124,11476
 Richard-Wagner-Platz	Pl 3763,12279
 Nauener Platz	Pl 7829,16158
-Zoo	Pl 5542,11075
-Zoologischer Garten	Pl 5542,11075
 Roseneck (Grunewald)	Pl 2129,7728
 Viktoriaplatz	Pl 3489,4115
 Weddingplatz	Pl 7929,15006
@@ -154,7 +143,6 @@ R.-Sintenis-Platz	Pl 5657,7227
 Breslauer Platz	Pl 5817,7223
 Kaisereiche	Pl 5654,6941
 Schillerplatz	Pl 5074,7207
-#gibt's bereits in strassen: Märkischer Platz	Pl 9615,7503
 Garbatyplatz	Pl 10722,17940
 Louise-Schröder-Platz	Pl 7696,16759
 Platz des 23. April	Pl 21954,5229
@@ -184,6 +172,23 @@ Kläre-Bloch-Platz	Pl 2960,11817
 Schmetterlingsplatz	Pl 701,9122
 Rankeplatz	Pl 5529,10453
 Herbert-Lewin-Platz	Pl 5518,12159
+######################################################################
+# Keine offiziellen Straßennamen, sondern
+# bekannte Bezeichnungen oder Sehenswürdigkeiten
+Kottbusser Tor	Pl 11370,10398
+Anhalter Bahnhof	Pl 8947,10956
+Flughafen Tempelhof	Pl 9346,8612
+Brandenburger Tor (Mitte)	Pl 8610,12254
+Engelbecken	Pl 11421,11073
+Schlesisches Tor	Pl 12995,10669
+Flughafen Tegel	Pl 2756,16344
+Steglitzer Kreisel	Pl 4748,5357
+# auch wenn es einen echten Thielplatz nicht gibt, nur den U-Bhf.
+Thielplatz	Pl 2313,4901
+Zoo	Pl 5542,11075
+Zoologischer Garten	Pl 5542,11075
+Tierpark	Pl 18628,10177
+Reichstag	Pl 8400,12417
 ######################################################################
 # Brücken
 Sellheimbrücke	Br 14632,21667

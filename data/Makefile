@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.30 2004/11/16 22:39:22 eserte Exp $
+# $Id: Makefile,v 2.31 2004/12/04 20:26:36 eserte Exp eserte $
 #
 
 BBBIKEDIR=		..
@@ -505,7 +505,7 @@ check-fragezeichen:	/tmp/check-fragezeichen.bbd \
 # Makefile in ../misc ausführen
 # drat ... ich möchte nicht gmake verwenden :-(
 make_misc:
-	cd $(MISCDIR) && ${MAKE} #${MAKEFLAGS} 
+	cd $(MISCDIR) && ${MAKE} ${MAKEFLAGS} 
 
 # create Storable versions of data files
 # handling of Storable files is slower, so it is not done by default
@@ -787,5 +787,14 @@ GNUmakefile: Makefile ../miscsrc/b2gmake
 GNUmakefile.mapfiles: Makefile.mapfiles ../miscsrc/b2gmake
 	../miscsrc/b2gmake < Makefile.mapfiles > GNUmakefile.mapfiles
 	chmod ugo+r GNUmakefile.mapfiles
+
+######################################################################
+# Temporary rules
+
+temp_blockings/bbbike-temp-blockings.yml: temp_blockings/bbbike-temp-blockings.pl
+	perl -MYAML -e '$$YAML::UseBlock = 1; do $$ARGV[0]; die if not @temp_blocking; YAML::DumpFile($$ARGV[1], \@temp_blocking)' $> $@
+	perl -MData::Compare -MYAML -e 'do $$ARGV[0]; die if not @temp_blocking; die if not Compare(\@temp_blocking, YAML::LoadFile($$ARGV[1]))' $> $@
+
+######################################################################
 
 .include "Makefile.mapfiles"

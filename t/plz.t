@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.13 2004/10/05 07:06:19 eserte Exp $
+# $Id: plz.t,v 1.14 2004/12/05 10:16:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -23,11 +23,12 @@ package main;
 
 use Test::More;
 BEGIN { eval "use Test::Differences" };
-BEGIN { plan tests => 41 }
+BEGIN { plan tests => 46 }
 
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../data", "$FindBin::RealBin/../lib");
 use PLZ;
+use PLZ::Multi;
 use Strassen;
 use File::Basename;
 use Getopt::Long;
@@ -89,11 +90,18 @@ if (!defined $plz) {
     if ($INTERACTIVE) {
 	die "Das PLZ-Objekt konnte nicht definiert werden";
     } else {
-	ok(0, "PLZ object");
+	fail("PLZ object");
 	exit;
     }
 }
-ok(1, "PLZ object");
+pass("PLZ object");
+
+my $plz_multi = PLZ::Multi->new("Berlin.coords.data",
+				"Potsdam.coords.data",
+				Strassen->new("plaetze"),
+				-cache => 1,
+			       );
+isa_ok($plz_multi, "PLZ");
 
 my $dump = sub {
     my $obj = shift;
@@ -272,7 +280,6 @@ EOF
        "S-Bahnhof (Heerstr), long form")
 	or diag $dump->(\@res);
 
- XXX:
     @res = $plz->look_loop("s-bahnhof grunewald",
 			   @standard_look_loop_args);
     is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grunewald' } @{$res[0]}), 1,
@@ -284,6 +291,24 @@ EOF
 			   @standard_look_loop_args);
     is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Lehrter Bahnhof (Hauptbahnhof)' } @{$res[0]}), 1,
        "U-Bahnhof")
+	or diag $dump->(\@res);
+
+    @res = $plz_multi->look("brandenburger tor");
+    is(scalar(grep { $_->[PLZ::LOOK_CITYPART] eq 'Mitte' } @res), 1,
+       "Should find Brandenburger Tor in Mitte")
+	or diag $dump->(\@res);
+    is(scalar(grep { $_->[PLZ::LOOK_CITYPART] eq 'Potsdam' } @res), 1,
+       "Should find Brandenburger Tor in Potsdam")
+	or diag $dump->(\@res);
+
+ XXX:
+    @res = $plz_multi->look_loop("brandenburger tor",
+				 @standard_look_loop_args);
+    is(scalar(grep { $_->[PLZ::LOOK_CITYPART] eq 'Mitte' } @{$res[0]}), 1,
+       "Should find Brandenburger Tor in Mitte")
+	or diag $dump->(\@res);
+    is(scalar(grep { $_->[PLZ::LOOK_CITYPART] eq 'Potsdam' } @{$res[0]}), 1,
+       "Should find Brandenburger Tor in Potsdam")
 	or diag $dump->(\@res);
 
 }

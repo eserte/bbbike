@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.90 2004/11/07 23:03:48 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.93 2004/12/05 00:09:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -98,7 +98,8 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $bbbike_script $cgi $port
 	    $search_algorithm $use_background_image
 	    $use_apache_session $apache_session_module $cookiename
-	    $bbbike_temp_blockings_file @temp_blocking
+	    $bbbike_temp_blockings_file $bbbike_temp_blockings_optimized_file
+	    @temp_blocking
 	    $use_cgi_compress_gzip $max_matches
 	   );
 
@@ -604,13 +605,19 @@ eval { local $SIG{'__DIE__'};
        #warn "$0.config";
        do "$0.config" };
 
-if (defined $bbbike_temp_blockings_file) {
-    @temp_blocking = ();
-    do $bbbike_temp_blockings_file;
-    if (!@temp_blocking) {
-	warn "Could not load $bbbike_temp_blockings_file or file is empty: $@";
-    }
-}
+# if (defined $bbbike_temp_blockings_file) {
+#     @temp_blocking = ();
+#     if (defined $bbbike_temp_blockings_optimized_file &&
+# 	-e $bbbike_temp_blockings_optimized_file &&
+# 	-M $bbbike_temp_blockings_optimized_file < -M $bbbike_temp_blockings_file) {
+# 	do $bbbike_temp_blockings_optimized_file;
+#     } else {
+# 	do $bbbike_temp_blockings_file;
+#     }
+#     if (!@temp_blocking) {
+# 	warn "Could not load $bbbike_temp_blockings_file/$bbbike_temp_blockings_optimized_file or file is empty: $@";
+#     }
+# }
 
 if ($VERBOSE) {
     $StrassenNetz::VERBOSE    = $VERBOSE;
@@ -627,7 +634,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.90 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.93 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1326,8 +1333,11 @@ sub choose_form {
 			foreach ($multi_bez_str->bezirke($first)) {
 			    $bezirk{$_}++;
 			}
-			foreach (@$matchref) {
-			    last TRY if !exists $bezirk{$_->[1]};
+			foreach my $match (@$matchref) {
+			    my(@bezirke) = split /\s*,\s*/, $match->[1]; # may be "Britz, Buckow, Rudow"
+			    for my $bezirk (@bezirke) {
+				last TRY if !exists $bezirk{$bezirk};
+			    }
 			}
 			splice @$matchref, 1;
 		    }
@@ -2604,6 +2614,8 @@ sub search_coord {
     if (defined $search_algorithm) {
 	$extra_args{Algorithm} = $search_algorithm;
     }
+
+    load_temp_blockings();
 
     my(%custom_s, @current_temp_blocking);
     {
@@ -4255,6 +4267,22 @@ sub init_plz {
     $plz;
 }
 
+sub load_temp_blockings {
+    if (!@temp_blocking && defined $bbbike_temp_blockings_file) {
+	@temp_blocking = ();
+	if (defined $bbbike_temp_blockings_optimized_file &&
+	    -e $bbbike_temp_blockings_optimized_file &&
+	    -M $bbbike_temp_blockings_optimized_file < -M $bbbike_temp_blockings_file) {
+	    do $bbbike_temp_blockings_optimized_file;
+	} else {
+	    do $bbbike_temp_blockings_file;
+	}
+	if (!@temp_blocking) {
+	    warn "Could not load $bbbike_temp_blockings_file/$bbbike_temp_blockings_optimized_file or file is empty: $@";
+	}
+    }
+}
+
 sub crossing_text {
     my $c = shift;
     all_crossings();
@@ -5246,7 +5274,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/11/07 23:03:48 $';
+    my $cgi_date = '$Date: 2004/12/05 00:09:31 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_str_plz,v 1.20 2004/06/02 00:30:34 eserte Exp $
+# $Id: check_str_plz,v 1.21 2004/12/05 00:10:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2004 Slaven Rezic. All rights reserved.
@@ -22,12 +22,17 @@ use Strassen;
 use PLZ;
 use Symbol;
 
+use strict;
+
 unshift(@Strassen::datadirs, "$FindBin::RealBin/../data");
 
-$do_multi_bez = 1;
-$datafile = "strassen";
-$ignore_in_parens = 1;
-$plzfield = PLZ::FILE_ZIP();
+my $do_multi_bez = 1;
+my $datafile = "strassen";
+my $ignore_in_parens = 1;
+my $plzfield = PLZ::FILE_ZIP();
+my $plzdata;
+my $addstr;
+my $do_check_coords;
 
 GetOptions("plzdata=s"  => \$plzdata,
 	   "plzfield=i" => \$plzfield,
@@ -38,11 +43,15 @@ GetOptions("plzdata=s"  => \$plzdata,
 	   "checkcoords!" => \$do_check_coords,
 	  );
 
+my $plz;
 if (!defined $plzdata) {
-    my $plz = PLZ->new();
+    $plz = PLZ->new();
     $plzdata = $plz->{File};
 }
 
+my %str_in_plz;
+my %str_in_plz2;
+my %str_coord;
 my $fh = gensym;
 open($fh, $plzdata) or die "$plzdata: $!";
 while(<$fh>) {
@@ -75,6 +84,7 @@ while(<D>) {
 }
 close D;
 
+my %str_in_multi_bez;
 if ($do_multi_bez) {
     my $multi_bez_str = new MultiBezStr;
     if ($multi_bez_str) {
@@ -89,6 +99,7 @@ if ($do_multi_bez) {
 }
 
 my @lastbezirk;
+my $lastname;
 my @coords;
 my $check_coords = sub {
     return unless $do_check_coords;
@@ -120,7 +131,11 @@ my $check_coords = sub {
     }
 };
 
-$s = new Strassen $datafile;
+my @ambiguous;
+my @unknown;
+my @unknown2;
+
+my $s = new Strassen $datafile;
 $s->init;
 while(1) {
     my $ret = $s->next;

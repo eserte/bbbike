@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plzlogfile.t,v 1.7 2004/08/27 07:00:14 eserte Exp $
+# $Id: plzlogfile.t,v 1.9 2004/12/05 00:11:33 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -31,7 +31,10 @@ BEGIN { plan tests => 1 }
 
 my $doit;
 my $hnr;
-my $logfile = "$ENV{HOME}/www/log/radzeit.de-access_log";
+# Old logfile
+#my $logfile = "$ENV{HOME}/www/log/radzeit.de-access_log";
+# New logfile since 2004-09-28 ca.
+my $logfile = "$ENV{HOME}/www/log/radzeit.combined_log";
 my $seek = 0;
 my $potsdam = 1;
 my $extern = 1;
@@ -98,20 +101,23 @@ my $lastdate;
 
     while(defined($_ = $nextline->())) {
 	m{GET\s+\S+bbbike\.cgi\?(.*)\s+} or next;
+	next if m{"BBBike-Test/\d};
 	chomp;
 	my $q = CGI->new($1);
 	my($thisdate) = $_ =~ m{\[(\d{2}/.{3}/\d{4}):};
-	my $s = $q->param("start");
-	if (defined $s && ((!$hnr && $s ne "") ||
-			   ( $hnr && $s =~ /\s+\d+\s*$/))) {
-	    my @res = lookup($s);
-	    if (!defined $lastdate || $lastdate ne $thisdate) {
-		print "# $thisdate " . ("#"x60) . "\n";
-		$lastdate = $thisdate;
+	for my $param (qw(start via ziel)) {
+	    my $s = $q->param($param);
+	    if (defined $s && ((!$hnr && $s ne "") ||
+			       ( $hnr && $s =~ /\s+\d+\s*$/))) {
+		my @res = lookup($s);
+		if (!defined $lastdate || $lastdate ne $thisdate) {
+		    print "# $thisdate " . ("#"x60) . "\n";
+		    $lastdate = $thisdate;
+		}
+		printf "# %-35s => %2d %-35s\n",
+		    $s, scalar @{$res[0]},
+			(!@{$res[0]} ? "-"x30 : $res[0]->[0]->[PLZ::LOOK_NAME]);
 	    }
-	    printf "# %-35s => %2d %-35s\n",
-		$s, scalar @{$res[0]},
-		    (!@{$res[0]} ? "-"x30 : $res[0]->[0]->[PLZ::LOOK_NAME]);
 	}
     }
     $LOGFILE->close;

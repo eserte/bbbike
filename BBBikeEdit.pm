@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.78 2004/09/30 22:38:02 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.79 2004/12/05 00:17:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3112,8 +3112,8 @@ sub temp_blockings_editor {
 	require "$FindBin::RealBin/miscsrc/check_bbbike_temp_blockings";
     }; warn $@ if $@;
 
-    my $initialdir = $BBBike::check_bbbike_temp_blockings::temp_blockings_dir . "/"; # XXX del "$FindBin::RealBin/misc/temp_blockings/";
-    my $pl_file = $BBBike::check_bbbike_temp_blockings::temp_blockings_pl; # XXX del "$initialdir/bbbike-temp-blockings.pl";
+    my $initialdir = $BBBike::check_bbbike_temp_blockings::temp_blockings_dir . "/";
+    my $pl_file = $BBBike::check_bbbike_temp_blockings::temp_blockings_pl;
     my $file = $initialdir;
     my $as_data;
     my $prewarn_days = 1;
@@ -3121,7 +3121,7 @@ sub temp_blockings_editor {
     my $edit_after = 0;
     my $do_delete_blockings = 1;
     my $auto_cross_road_blockings = 0;
-    my $change_pl_file = 1;
+    my $meta_data_handling = "append";
     my $pe;
     Tk::grid($t->Label(-text => M("bbd-Datei").":"),
 	     $pe = $t->PathEntry(-textvariable => \$file),
@@ -3185,10 +3185,11 @@ sub temp_blockings_editor {
 	     -sticky => "w",
 	    );
 
+    my $cs = 3;
     {
 	my $f = $t->LabFrame(-label => M"Typ",
 			     -labelside => "acrosstop");
-	Tk::grid($f, -sticky => "ew", -columnspan => 2);
+	Tk::grid($f, -sticky => "ew", -columnspan => $cs);
 	$f->Radiobutton(-text => M"gesperrt",
 			-value => "gesperrt",
 			-variable => \$blocking_type,
@@ -3199,7 +3200,6 @@ sub temp_blockings_editor {
 		       )->pack(-anchor => "w");
     }
 
-    my $cs = 3;
     Tk::grid($t->Checkbutton(-text => M"Überqueren der gesperrten Straßen nicht möglich",
 			     -variable => \$auto_cross_road_blockings,
 			    ),
@@ -3207,30 +3207,37 @@ sub temp_blockings_editor {
 	     -columnspan => $cs,
 	    );
 
-    Tk::grid($t->Checkbutton(-text => M"Dateien an zentrale pl-Datei anhängen",
-			     -variable => \$change_pl_file,
-			    ),
-	     -sticky => "w",
-	     -columnspan => $cs,
-	    );
+    {
+	my $f = $t->LabFrame(-label => M"Metadaten",
+			     -labelside => "acrosstop");
+	Tk::grid($f, -sticky => "ew", -columnspan => $cs);
+	$f->Radiobutton(-text => M"Nichts",
+			-value => "",
+			-variable => \$meta_data_handling,
+		       )->pack(-anchor => "w");
+	$f->Radiobutton(-text => M"An zentrale pl-Datei anhängen",
+			-value => "append",
+			-variable => \$meta_data_handling,
+		       )->pack(-anchor => "w");
+	$f->Radiobutton(-text => M"Existierenden Eintrag ersetzen",
+			-value => "replace",
+			-variable => \$meta_data_handling,
+		       )->pack(-anchor => "w");
+    }
 
-    Tk::grid($t->Label(-text => M"Im Anschluss..."),
-	     -sticky => "w",
-	     -columnspan => $cs,
-	    );
+    {
+	my $f = $t->LabFrame(-label => M"Im Anschluss...",
+			     -labelside => "acrosstop");
+	Tk::grid($f, -sticky => "ew", -columnspan => $cs);
+	
 
-    Tk::grid($t->Checkbutton(-text => M"Dateien editieren",
-			     -variable => \$edit_after,
-			    ),
-	     -sticky => "w",
-	     -columnspan => $cs,
-	    );
-    Tk::grid($t->Checkbutton(-text => M"Sperrungen in BBBike löschen",
-			     -variable => \$do_delete_blockings,
-			    ),
-	     -sticky => "w",
-	     -columnspan => $cs,
-	    );
+	$f->Checkbutton(-text => M"Dateien editieren",
+			-variable => \$edit_after,
+		       )->pack(-anchor => "w");
+	$f->Checkbutton(-text => M"Sperrungen in BBBike löschen",
+			-variable => \$do_delete_blockings,
+		       )->pack(-anchor => "w");
+    }
 
     my $get_text = sub {
 	my $btxt = $real_txt->get("1.0", "end");
@@ -3373,16 +3380,20 @@ EOF
 
 		  if ($old_contents[-1] =~ m{^\s*\);\s*$}) {
 		      splice @old_contents, -1, 0, $pl_entry;
-		      if ($change_pl_file) {
+		      if ($meta_data_handling eq 'append') {
 			  open(PL_OUT, "> $pl_file")
 			      or main::status_message("Kann auf $pl_file nicht schreiben: $!", "die");
 			  print PL_OUT join "", @old_contents;
 			  close PL_OUT;
+		      } elsif ($meta_data_handling eq 'replace') {
+			  temp_blockings_editor_replace(-string => $pl_entry,
+							-text   => $blocking_text,
+						       );
 		      } else {
 			  print STDERR join "", @old_contents;
 		      }
 		  } else {
-		      main::status_message("Can't parse old contents...", "err");
+		      main::status_message("Can't parse old contents in file <$pl_file>", "err");
 		      return;
 		  }
 
@@ -3423,6 +3434,74 @@ EOF
 
     $pe->idletasks; # to fill the variable
     $pe->xview(1);#XXX does not work???
+}
+
+sub temp_blockings_editor_replace {
+    my(%args) = @_;
+    my $new_string = $args{-string};
+    my $new_text   = $args{-text};
+    if (!eval { require String::Similarity; 1 }) {
+	main::status_message($@, "die");
+    }
+    use vars qw(@temp_blocking);
+    my $pl_file = $BBBike::check_bbbike_temp_blockings::temp_blockings_pl;
+    do $pl_file;
+    if (!@temp_blocking) {
+	main::status_message("Keine Einträge in <$pl_file> gefunden", "die");
+    }
+    my $max_similarity;
+    my $max_index;
+    for my $index (0 .. $#temp_blocking) {
+	my $record = $temp_blocking[$index];
+	my $similarity = String::Similarity::similarity(lc $record->{text}, lc $new_text);
+	if (!defined $max_similarity || $similarity > $max_similarity) {
+	    $max_index = $index;
+	    $max_similarity = $similarity;
+	}
+    }
+    if ($max_similarity == 0) {
+	main::status_message("Keinen ähnlichen Eintrag gefunden", "info");
+	return;
+    }
+
+    open(PL_IN, "< $pl_file")
+	or main::status_message("Kann $pl_file nicht lesen: $!", "die");
+    my $stage = "pre";
+    my %s;
+    my $record_count = -1;
+    while(<PL_IN>) {
+	if (/^\s*\{/) {
+	    $record_count++;
+	    if ($record_count == $max_index) {
+		$stage = "inner";
+	    }
+	} elsif (/^\s*\}/) {
+	    $s{$stage} .= $_;
+	    if ($record_count == $max_index) {
+		$stage = "post";
+	    }
+	    next;
+	}
+	$s{$stage} .= $_;
+    }
+    close PL_IN;
+
+    my $yesno = $main::top->messageBox(-type => "YesNo",
+				       -message => <<EOF);
+Replace the following record:
+$s{"inner"}
+with
+$new_string
+? (index = $max_index, similarity factor = $max_similarity)
+EOF
+    if ($yesno !~ /yes/i) {
+	return;
+    }
+
+    open PL_OUT, "> $pl_file" or die $!;
+    print PL_OUT $s{pre} . $new_string . $s{post};
+    close PL_OUT;
+
 }
 
 sub add_cross_road_blockings {

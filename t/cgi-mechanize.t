@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.11 2004/10/05 21:53:48 eserte Exp eserte $
+# $Id: cgi-mechanize.t,v 1.12 2004/12/04 22:50:51 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -238,7 +238,7 @@ like($agent->content, qr{\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marqu
 ######################################################################
 # test for a street in Berlin.coords.data but not in strassen
 
-XXX: {
+{
 
 my $agent = WWW::Mechanize->new;
 $agent->env_proxy;
@@ -256,4 +256,61 @@ like($agent->content, qr{Invalidenstr./Heidestr.}i,  "S-Bhf., next crossing");
 
 }
 
+######################################################################
+# Brandenburger Tor: in Berlin and Potsdam
+
+XXX: {
+my $agent = WWW::Mechanize->new;
+$agent->env_proxy;
+
+$agent->get($cgiurl);
+$agent->form("BBBikeForm");
+{ local $^W; $agent->current_form->value('start', 'brandenburger tor'); };
+{ local $^W; $agent->current_form->value('ziel', 'seumestr'); };
+$agent->submit();
+
+like($agent->content, qr/genaue.*startstr.*ausw/i, "Start is ambigous");
+
+my $form = $agent->current_form;
+my $input = $form->find_input("start2");
+ok($input, "start2 input exists");
+for my $test (["Brandenburger Tor/Mitte among start alternatives",
+	       qr/brandenburger tor.*mitte/i],
+	      ["Brandenburger Tor/Potsdam among start alternatives",
+	       qr/brandenburger tor.*potsdam/i],
+	     )
+    {
+    TRY: {
+	    my $testname = $test->[0];
+	    my $rx       = $test->[1];
+	    for my $value ($input->possible_values) {
+		if ($value =~ $rx) {
+		    pass($testname);
+		    last TRY;
+		}
+	    }
+	    fail($testname);
+	}
+    }
+
+$input->value(($input->possible_values)[0]);
+$agent->submit;
+
+like($agent->content, qr/brandenburger tor.*mitte/i, "Mitte alternative selected");
+
+$agent->back;
+
+$form = $agent->current_form;
+$input = $form->find_input("start2");
+for my $value ($input->possible_values) {
+    if ($value =~ /potsdam/i) {
+	$input->value($value);
+	last;
+    }
+}
+$agent->submit;
+
+like($agent->content, qr/brandenburger tor.*potsdam/i, "Potsdam alternative selected");
+
+}
 __END__

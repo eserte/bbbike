@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.52 2004/10/04 22:24:16 eserte Exp $
+# $Id: PLZ.pm,v 1.53 2004/12/04 22:51:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use vars qw($PLZ_BASE_FILE @plzfile $OLD_AGREP $VERSION $VERBOSE $sep);
 use locale;
 use BBBikeUtil;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.52 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.53 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)
@@ -231,8 +231,13 @@ sub look {
     my %res;
     my $push_sub = sub {
 	my(@to_push) = (split(/\|/, $_[FILE_NAME]))[@push_inx];
-	if (($args{MultiCitypart}||!exists $res{$to_push[FILE_NAME]}->{$to_push[FILE_CITYPART]}) &&
-	    ($args{MultiZIP}     ||!exists $res{$to_push[FILE_NAME]}->{$to_push[FILE_ZIP]})) {
+	if (($args{MultiCitypart}||
+	     $to_push[FILE_CITYPART] eq "" ||
+	     !exists $res{$to_push[FILE_NAME]}->{$to_push[FILE_CITYPART]}) &&
+	    ($args{MultiZIP}     ||
+	     $to_push[FILE_ZIP] eq "" ||
+	     !exists $res{$to_push[FILE_NAME]}->{$to_push[FILE_ZIP]})
+	   ) {
 	    push @res, [@to_push];
 	    return if defined $args{Max} and $args{Max} < $#res;
 	    $res{$to_push[FILE_NAME]}->{$to_push[FILE_CITYPART]}++;
@@ -357,8 +362,8 @@ sub combine {
     foreach my $s (@in) {
 	if (exists $out{$s->[LOOK_NAME]}) {
 	    foreach my $r (@{ $out{$s->[LOOK_NAME]} }) {
-		my $eq_cp = grep { $s->[LOOK_CITYPART] eq $_ } @{ $r->[LOOK_CITYPART] };
-		my $eq_zp = grep { $s->[LOOK_ZIP]      eq $_ } @{ $r->[LOOK_ZIP] };
+		my $eq_cp = grep { $s->[LOOK_CITYPART] eq $_ } grep { $_ ne "" } @{ $r->[LOOK_CITYPART] };
+		my $eq_zp = grep { $s->[LOOK_ZIP]      eq $_ } grep { $_ ne "" } @{ $r->[LOOK_ZIP] };
 		if ($eq_cp || $eq_zp) {
 		    push @{ $r->[LOOK_CITYPART] }, $s->[LOOK_CITYPART]
 			unless $eq_cp;

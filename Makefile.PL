@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.103 2004/07/27 23:16:50 eserte Exp eserte $
+# $Id: Makefile.PL,v 1.104 2004/12/04 20:26:12 eserte Exp $
 
 use 5.005;
 
@@ -54,7 +54,7 @@ use constant REQTABLE_LONGDESC=> 5;
   [qw/Tk::DateEntry	1.38	all	0	gui/],
 
   [qw/LWP::UserAgent	0	all	0	www/,
-   'für die WWW-Verbindungen (Stadtplan und Wetterbericht)'],
+   'für die WWW-Verbindungen (z.B. Wetterbericht)'],
   [qw/Image::Magick	0	all	0	www/,
    'für Bildmanipulationen beim Radar-Bild der FU'],
 
@@ -65,13 +65,15 @@ use constant REQTABLE_LONGDESC=> 5;
   [qw/XML::Simple	0	all	0	cgi/,
    'optional für XML-Dumps der BBBike-Route'],
   [qw/YAML	0	all	0	cgi/,
-   'optional für YAML-Dumps der BBBike-Route'],
+   'optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings'],
 
   [qw/Mail::Send	0	unix	0	mail/,
    'falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will'],
 
   [qw/String::Approx	2.7	all	0	base/,
    'oder man verwendet agrep (mindestens Version 3.0)'],
+  [qw/String::Similarity 0	all	0	devel/,
+   'optional für den temp_blockings-Editor'],
   [qw/Storable		0	all	0	base/,
    'für das Caching beim CGI-Programm'],
   [qw/MLDBM		0	all	0	base/],

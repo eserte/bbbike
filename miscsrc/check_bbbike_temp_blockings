@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_bbbike_temp_blockings,v 1.18 2004/09/07 23:05:39 eserte Exp $
+# $Id: check_bbbike_temp_blockings,v 1.22 2004/12/05 00:12:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003, 2004 Slaven Rezic. All rights reserved.
@@ -26,11 +26,14 @@ use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 use Strassen::Core;
 
-use vars qw($temp_blockings_dir $temp_blockings_pl);
+use vars qw($temp_blockings_dir $temp_blockings_pl $temp_blockings_yml);
 
 my $do_output_files;
 my $check_net = 1;
 my $v;
+my $do_yaml = 0;
+my $do_checks = 1;
+my @action;
 #my $temp_blockings_dir = "$FindBin::RealBin/../misc/temp_blockings";
 if (!defined $temp_blockings_dir) {
     for my $test ("$FindBin::RealBin/data/temp_blockings",
@@ -45,7 +48,10 @@ if (!defined $temp_blockings_dir) {
 }
 $temp_blockings_pl  = "$temp_blockings_dir/bbbike-temp-blockings.pl"
     if !defined $temp_blockings_pl;
+$temp_blockings_yml  = "$temp_blockings_dir/bbbike-temp-blockings.yml"
+    if !defined $temp_blockings_yml;
 my $file = $temp_blockings_pl;
+my $yaml_file = $temp_blockings_yml;
 
 my $longest_file_length;
 
@@ -53,11 +59,17 @@ sub process {
     local @ARGV = @_;
 
     if (!GetOptions("outputfiles" => \$do_output_files,
-		    "f=s" => \$file,
+		    "f|file=s" => \$file,
 		    "checknet!" => \$check_net,
-		    "v+" => \$v,
+		    "v|verbose+" => \$v,
+		    "useyaml!" => \$do_yaml,
+		    'action=s@' => \@action,
+		    "checks!" => \$do_checks,
 		   )) {
 	die "usage";
+    }
+    if (!@action) {
+	@action = "output_future";
     }
     if (defined $v && $v >= 2) {
 	Strassen::set_verbose($v - 1);
@@ -65,6 +77,14 @@ sub process {
 }
 
 sub load_file {
+    if ($do_yaml) {
+	load_yaml_file();
+    } else {
+	load_perl_file();
+    }
+}
+
+sub load_perl_file {
     if (!-r $file) {
 	die "$file is not readable";
     }
@@ -73,6 +93,15 @@ sub load_file {
     if (!@temp_blocking) {
 	system($^X, "-c", $file);
 	die "No \@temp_blocking variable in $file found (perl check returned $?)";
+    }
+}
+
+sub load_yaml_file {
+    require YAML;
+    my $in = YAML::LoadFile($yaml_file);
+    @temp_blocking = @$in;
+    if (!@temp_blocking) {
+	die "No \@temp_blocking variable in $yaml_file found";
     }
 }
 
@@ -165,6 +194,7 @@ sub run_checks {
 }
 
 sub output_future {
+    use constant LENGTH_OF_DATE_STRINGS => 55;
     # Sortieren nach dem nächsten Ereignis (Beginn oder Ende)
     for my $o (map  { $_->[1] }
 	       sort { $a->[0] <=> $b->[0] }
@@ -184,8 +214,15 @@ sub output_future {
 	    if ($do_output_files) {
 		print _get_name($o), "\n";
 	    } else {
+		my $name = _get_name($o);
+		my $max_name_len = 80 - LENGTH_OF_DATE_STRINGS;
+		if ($longest_file_length > $max_name_len) {
+		    $longest_file_length = $max_name_len;
+		}
+		$name = substr($name, 0, $max_name_len)
+		    if length $name > $max_name_len;
 		printf STDERR "  %-${longest_file_length}s: %s - %s\n",
-		    _get_name($o), format_date($o->{from}),
+		    $name, format_date($o->{from}),
 			format_date($o->{until});
 	    }
 	}
@@ -205,6 +242,57 @@ sub return_future {
 	}
     }
     @res;
+}
+
+sub dump_future_as_perl {
+    my @new_temp_blocking;
+    my $first_index;
+    for my $i (0 .. $#temp_blocking) {
+	my $o = $temp_blocking[$i];
+	if (!defined $o->{until} || $o->{until} > time) {
+	    if (!defined $first_index) {
+		$first_index = $i;
+	    }
+	    $new_temp_blocking[$i] = $temp_blocking[$i];
+	}
+    }
+    if (!$first_index) {
+	die "No active or future records found";
+    }
+    my $s;
+    if ($first_index > 1) {
+	$s = <<EOF;
+\@temp_blocking = ();
+\$#temp_blocking = @{[ $first_index-1 ]};
+push \@temp_blocking,
+EOF
+    } else {
+	$s = <<'EOF';
+@temp_blocking =
+EOF
+    }
+    my $dd = Data::Dumper->new([[@new_temp_blocking[$first_index .. $#new_temp_blocking]]], ["x"])->Dump;
+    $dd =~ s/\A\$x\s*=\s*\[//;
+    $dd =~ s/\];\Z//;
+    $s .= "(";
+    $s .= $dd;
+    $s .= ");\n";
+
+    if (0) { # Testing only
+	my $temp = "/tmp/n";
+	open(OUT, "> $temp") or die $!;
+	print OUT $s;
+	close OUT;
+
+	my $old = `$^X $0 -action output_future 2>&1`;
+	my $new = `$^X $0 -action output_future -f $temp 2>&1`;
+	unlink $temp;
+
+	die "$old\n====================\n$new\n"
+	    if $old ne $new;
+    }
+
+    print $s;
 }
 
 sub format_date {
@@ -232,7 +320,10 @@ return 1 if caller;
 
 process(@ARGV);
 load_file();
-run_checks();
-output_future();
+run_checks() if $do_checks;
+for my $action (@action) {
+    no strict 'refs';
+    $action->();
+}
 
 __END__

@@ -453,7 +453,14 @@ sub fileevent_read_line {
 	close FH;
         return;
     }
+#XXXXXXXXXXX Blocks on FreeBSD?!
+#warn "about to read line...";
+#     my $line = "";
+#     while(sysread(FH, $line, 1, length($line)) == 1) {
+# 	last if $line =~ /\n\z/;
+#     }
     my $line = <FH>;
+#warn "ok...";
     my %d;
     eval {
 	($d{routes}, $d{mapserver}) = parse_line($line);
