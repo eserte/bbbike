@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.9 2004/12/29 23:32:36 eserte Exp $
+# $Id: Strasse.pm,v 1.10 2005/01/08 23:27:59 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -148,6 +148,32 @@ sub beautify_landstrasse {
     $str;
 }
 
+# Turn "(Berlin - Potsdam)" or "Berlin - Potsdam" into Berlin
+# or leave the name unchanged.
+sub get_first_part {
+    my($str) = @_;
+    if ($str =~ /^\((.+?)\)/) {
+	$str = $1;
+    }
+    if ($str =~ /^(.+?)\s+-\s+/) {
+	$1;
+    } else {
+	$str;
+    }
+}
+
+sub get_last_part {
+    my($str) = @_;
+    if ($str =~ /^\((.+?)\)/) {
+	$str = $1;
+    }
+    if ($str =~ /\s+-\s+(.+)/) {
+	$1;
+    } else {
+	$str;
+    }
+}
+
 # the following schemes are recognized:
 #   (B 109)       (anywhere)
 #   B 109:        (at beginning)
@@ -172,7 +198,7 @@ sub parse_street_type_nr {
 sub strip_bezirk {
     my $str = shift;
     if ($str !~ /^\s*\(/) {
-	$str =~ s/\s*\(.*\)\s*$//;
+	$str =~ s/\s*\(.*?\)\s*$//;
     }
     $str;
 }

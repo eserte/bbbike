@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.81 2004/12/27 23:23:36 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.81 2004/12/27 23:23:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3133,14 +3133,16 @@ sub temp_blockings_editor {
     my $t = main::redisplay_top($main::top, "temp_blockings_editor",
 				-title => M"Temporäre Sperrungen");
     return if !defined $t;
-    require Tk::PathEntry;
-    require Tk::Date;
-    require Tk::NumEntry;
-    require Tk::LabFrame;
     require File::Spec;
     require File::Basename;
     require File::Copy;
     require POSIX;
+
+    require Tk::PathEntry;
+    require Tk::Date;
+    require Tk::NumEntry;
+    require Tk::LabFrame;
+    require Tk::ROText;
 
     $t->gridColumnconfigure($_, -weight => 1) for (1..2);
     $t->gridRowconfigure   ($_, -weight => 1) for (1..8);

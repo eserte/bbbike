@@ -2,12 +2,12 @@
 # -*- perl -*-
 
 #
-# $Id: shapefile.t,v 1.13 2004/08/19 20:41:00 eserte Exp $
+# $Id: shapefile.t,v 1.14 2005/01/08 11:10:09 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2004,2005 Slaven Rezic. All rights reserved.
 #
-# Mail: slaven@rezic.de
+# Mail: eserte@users.sourceforge.net
 # WWW:  http://bbbike.sourceforge.net
 #
 
@@ -56,10 +56,15 @@ for my $f (@files) {
        "index loaded from " . abs2rel($f));
     ok(UNIVERSAL::isa($shapefile->DBase, "ESRI::Shapefile::DBase"),
        "dbase loaded from " . abs2rel($f));
-    my $bbd = $shapefile->as_bbd;
-    ok(length $bbd > 0, "Non empty bbd export");
-    my $s = Strassen->new_from_data(split /\n/, $bbd);
-    ok(scalar @{ $s->data } > 0, "Non empty Strassen::Core object");
+    my $dbase_obj = $shapefile->DBase->tie_array;
+ SKIP: {
+	my $tests = 2;
+	skip("DBase database is empty", $tests) if !$dbase_obj->FETCHSIZE;
+	my $bbd = $shapefile->as_bbd;
+	ok(length $bbd > 0, "Non empty bbd export");
+	my $s = Strassen->new_from_data(split /\n/, $bbd);
+	ok(scalar @{ $s->data } > 0, "Non empty Strassen::Core object");
+    }
 }
 
 __END__

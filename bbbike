@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.147 2004/12/27 23:27:05 eserte Exp $
+# $Id: bbbike,v 3.148 2005/01/08 12:02:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -213,7 +213,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.147 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.148 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -8639,7 +8639,8 @@ sub plot_sperre {
 			);
 		}
 		next;
-	    } elsif ($cat eq StrassenNetz::BLOCKED_ROUTE) {
+	    } elsif ($cat =~ /^@{[ StrassenNetz::BLOCKED_ROUTE ]}(nocross)?/) {
+		my $is_nocross = defined $1;
 		my @c;
 		for(my $i = 0; $i <= $#kreuzungen; $i++) {
 		    push @c, map { transpose(@$_) } Strassen::to_koord1($kreuzungen[$i]);
@@ -8647,8 +8648,8 @@ sub plot_sperre {
 
 		line_shorten(\@c);
 
-		# move to the right
-		{
+		if (!$is_nocross) {
+		    # move to the right
 		    my $delta = -3;
 		    for(my $i = 2; $i < $#c; $i+=2) {
 			# atan2(y2-y1, x2-x1)
@@ -8666,10 +8667,15 @@ sub plot_sperre {
 
 		$c->createLine
 		    (@c,
-		     -fill => 'red', -width => $width3,
-		     -smooth => 1,
-		     -arrow => 'last',
-		     -arrowshape => [4,6,3],
+		     -width => $width3,
+		     (!$is_nocross ? (-arrow => 'last',
+				      -arrowshape => [4,6,3],
+				      -smooth => 1,
+				      -fill => 'red',				
+				     )
+		                   : (-fill => 'orange',
+				     )
+		     ),
 		     ($Tk::VERSION >= 800.016 ? (-dash => $line_dash{sperre3}) : ()),
 		     -tags => [$abk, 'sperre3',
 			       $ret->[Strassen::NAME], $abk.'-'.$pos],

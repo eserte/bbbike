@@ -1,17 +1,16 @@
 vor der Columbiahalle: häufig Glasscherben auf dem Radweg	CS 9801,8683 9373,8728
 Seesener Str.: Zufahrt führt über den Henriettenplatz	CS; 2770,9945 2770,10024
 Rasthof Avus: zweite Möglichkeit nach rechts	CS; 1957,10426 1894,10390
-bereits bei der Fußgängerampel am Lützowplatz die Straßenseite wechseln	PI; 6824,10904 6873,11011 6732,11106 6626,11178
+bereits bei der Fußgängerampel am Lützowplatz die Straßenseite wechseln	PI; 6824,10904 6873,11011 6732,11106
 bereits bei der Ampel an der Corneliusstr. die Straßenseite wechseln	PI; 6880,11110 6882,11061 6873,11011 7002,11034
-auf linken Gehweg fahren, Straßenseite an der Corneliusstr. wechseln	PI; 6626,11178 6732,11106 6873,11011 6882,11061
+auf linken Gehweg fahren, Straßenseite an der Corneliusstr. wechseln	PI; 6732,11106 6873,11011 6882,11061
 bereits an der Kreuzung An der Urania/Kurfürstenstr. die Straßenseite wechseln	PI; 6732,10754 6674,10693 6745,10619
 bereits an der Kreuzung Dominicusstr./Ebersstr. die Straßenseite wechseln	PI; 6935,8208 7005,8150 7268,8225
 Richtung Hochbahnhof Hallesches Tor abbiegen	PI; 9522,10017 9536,10064 9579,10122 9592,10174
 Fußgängerampel am Spittelmarkt zum Wechseln der Straßenseite benutzen, zwischen den Hochhäusern zur Axel-Springer-Str.	PI; 10313,11805 10296,11790 10222,11724 10135,11661 10154,11590
 Straßenseite bei der Fußgängerampel Yorckstr./Katzbachstr. wechseln	PI; 8773,9524 8648,9526 8595,9495
 von der Brandenburgischen in die Paderborner: frühzeitig auf den linken Gehweg wechseln	PI; 3930,9919 3906,10035 3720,9996
-nach links zum Bahndamm abbiegen: bis zur Kreuzung Braschestr. vorfahren	PI; 18690,10016 18698,9996 19675,10410
-Treskowallee - Ontarioseestr: an der Kreuzung Braschestr. auf den linken Gehweg wechseln	PI; 18737,9901 18698,9996 18690,10016 18577,10023
+nach links zum Bahndamm abbiegen: bis zur Kreuzung Gregoroviusweg vorfahren	PI; 18690,10016 18698,9996 19675,10410
 Treptower Str./Sonnenallee: Ampel an der Hertzbergstr. benutzen	CP 13566,8212 13510,8138 13459,8072 13359,7949
 zur Prenzlauer Promenade: Straßenseite wechseln	PI; 11907,19838 11907,19749 11933,19590
 zur Pasewalker Straße: Straßenseite wechseln	PI; 11950,18529 11934,18576
@@ -30,7 +29,7 @@ Potsdamer Str. - Am Karlsbad: auf linken Gehweg wechseln	PI; 7980,11070 7968,110
 Am Karlsbad - Potsdamer Str.: entweder Fußgängerampel am Schöneberger Ufer oder an der Lützowstr. benutzen	PI; 8011,11014 7968,11048 7912,10945
 Otto-Braun-Str. - Wadzeckstr.: bereits am Alexanderplatz die Straßenseite wechseln	PI; 11236,12946 11378,13166 11291,13218
 Wadzeckstr. - Otto-Braun-Str.: zunächst auf linken Gehweg weiter fahren	PI; 11291,13218 11378,13166 11456,13286
-Sachsendamm - Naumannstr.: frühzeitig auf den linken Radweg wechseln	PI; 7606,7611 7717,7564 7718,7641
+Sachsendamm - Naumannstr.: frühzeitig (z.B. am Vorarlberger Damm) auf den linken Radweg wechseln	PI; 7606,7611 7717,7564 7718,7641
 Naumannstr. - Sachsendamm: auf dem Sachsendamm zunächst den linken Radweg benutzen	PI; 7718,7641 7717,7564 7859,7486
 Fußgängerampel benutzen	CP; 9944,13665 9918,13733 9792,13681 9668,13629
 Fußgängerampel benutzen	CP; 9944,13665 9918,13733 9810,14066
@@ -38,7 +37,7 @@ Fußgängerampel benutzen	CP; 9810,14066 9918,13733 9944,13665
 Fußgängerampel benutzen	CP; 9810,14066 9918,13733 10177,13766
 Kopernikusstr./Warschauer Str.: Fußgängerampel auf der linken Seite benutzen	CP; 13467,11787 13655,11727 13895,11663
 Wisbyer Str. Richtung Duckerstr.: linken Gehweg benutzen	PI; 12091,16209 12026,16247 11939,16084
-Stahlheimer Richtung Wisbyer Str.: linken Gehweg bis Fußgängerampeln benutzen	PI; 11550,16068 11618,16183 11727,16358 11688,16365
+Stahlheimer Richtung Wisbyer Str.: linken Gehweg bis Fußgängerampeln benutzen	PI; 11618,16183 11727,16358 11688,16365
 Fußgängerampel links benutzen	CP; 6033,10403 6020,10351 5997,10286
 Fußgängerampel links benutzen	CP; 6033,10403 6020,10351 6147,10383
 Fußgängerampel vor der Passauer Str. benutzen	CP; 6147,10383 6020,10351 5997,10286
@@ -51,8 +50,10 @@ Tiergarten: rechts des Neuen Sees halten	CP; 5901,11902 5890,11865 5870,11842
 Tiergarten: links des Neuen Sees halten	CP; 5901,11902 5890,11865 5933,11775
 Klingelhöferstr. - Köbisstr.: bereits an der Ampel Stülerstr./Tiergartenstr. die Straßenseite wechseln	PI; 6825,11486 6853,11336 7160,11225
 Blissestr. - Am Volkspark: bereits an der Ampel Mecklenburgische Str. auf die linke Seite wechseln	PI; 4783,8557 4784,8508 4960,8440
-Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (rechts) benutzen	PI:35; 5320,8456 5444,8406 5669,8207
-Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (links) benutzen	PI:35; 5669,8207 5444,8406 5320,8456
+Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (rechts) benutzen	PI; 5320,8456 5444,8406 5669,8207
+Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (links) benutzen	PI; 5669,8207 5444,8406 5320,8456
+Bundesallee - Am Volkspark: bereits an der Durlacher Str. die Straßenseite wechseln	PI; 5421,8337 5444,8406 5320,8456
+Am Volkspark - Bundesallee: zunächst den linken Gehweg der Bundesallee benutzen	PI; 5669,8207 5444,8406 5421,8337
 Lietzenburger Str. - Rankestr.: bereits an der Ampel Joachimstaler Str. auf den linken Gehweg wechseln	PI; 5468,10442 5529,10453 5636,10626
 nach *links* abbiegen	CP; 3619,14183 3600,14278 4676,14534
 nach *rechts* zur Rampe abbiegen	CP; 4676,14534 3600,14278 3619,14183
@@ -96,3 +97,6 @@ Am Schinkelplatz: Nicht ausgeschildert, Fortsetzung der Unterwasserstr.	CP; 1010
 Am Schinkelplatz: Nicht ausgeschildert, Fortsetzung der Unterwasserstr.	CP; 9959,12180 10084,12228 9987,12421
 Am Schinkelplatz: Nicht ausgeschildert, Fortsetzung der Unterwasserstr.	CP; 10201,11995 10084,12228 9987,12421
 Unter Umständen bereits an der Ampel Steinmetzstr. die Straßenseite wechseln	PI; 7698,10147 7813,10112 7850,10351
+Weißenhöher Weg - Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen, bis zum Tunnel Friedrichsfelde vorfahren und ggfs. die Straßenseite wechseln	PI; 19827,11686 19693,11762 19283,11785
+Regensburger Str. - Bundesallee: zunächst auf der linken Gehwegseite bis zur Kreuzung Nachodstr. fahren und dort die Straßenseite wechseln	PI; 5541,9923 5475,9914 5472,9850
+Bundesallee - Pariser Str.: an der Kreuzung Nachodstr. auf die linken Gehwegseite der Bundesallee wechseln	PI; 5472,9850 5475,9914 5416,9928

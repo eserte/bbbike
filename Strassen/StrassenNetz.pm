@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.45 2005/01/01 22:29:32 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.45 2005/01/01 22:29:32 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -486,9 +486,10 @@ sub get_street_record {
     }
 }
 
-use Class::Struct;
+#use Class::Struct;
 #BEGIN { Class::Struct::printem() }
-struct('StrassenNetz::SearchContext' =>
+#struct('StrassenNetz::SearchContext' =>
+use Class::Struct 'StrassenNetz::SearchContext' =>
        {Algorithm => "\$",
 	HasPenalty => "\$",
 	HasAmpeln => "\$",
@@ -508,7 +509,8 @@ struct('StrassenNetz::SearchContext' =>
 	UserDefPenaltySub => "\$",
 	HasBlocked => "\$",
        }
-      );
+#      )
+;
 
 sub build_penalty_code {
     my $sc = shift || die "No build context given";

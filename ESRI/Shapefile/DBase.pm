@@ -1,12 +1,12 @@
 # -*- perl -*-
 
 #
-# $Id: DBase.pm,v 1.11 2003/01/08 20:11:54 eserte Exp eserte $
+# $Id: DBase.pm,v 1.12 2005/01/08 11:09:41 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2002,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2002,2004,2005 Slaven Rezic. All rights reserved.
 #
-# Mail: slaven@rezic.de
+# Mail: eserte@users.sourceforge.net
 # WWW:  http://bbbike.sourceforge.net
 #
 
@@ -103,6 +103,10 @@ sub preload_records {
     }
     sub STORE {
 	die "Not supported";
+    }
+    sub FETCHSIZE {
+	my $self = shift;
+	$self->[0]->last_record + 1;
     }
 }
 

@@ -2,15 +2,15 @@
 # -*- perl -*-
 
 #
-# $Id: resolve_stars,v 1.3 2004/10/19 07:38:07 eserte Exp $
+# $Id: resolve_stars,v 1.4 2005/01/08 22:54:34 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2005 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
 # Resolve "*" in bbd data
@@ -26,8 +26,13 @@ use lib ("$FindBin::RealBin/..",
 use Strassen::Core;
 use Strassen::MultiStrassen;
 use Strassen::StrassenNetz;
+# XXX What's faster? use BBBikeXS or usecache => 1?
 eval q{ use BBBikeXS }; warn $@ if $@;
 use Object::Iterate qw(iterate);
+use Getopt::Long;
+
+my $sperre_file;
+GetOptions("sperrefile=s" => \$sperre_file) or die "usage?";
 
 my @str_files = @ARGV;
 my $file_to_change = pop @str_files;
@@ -39,6 +44,14 @@ if (!@str_files) {
 my $s = MultiStrassen->new(@str_files);
 my $net = StrassenNetz->new($s);
 $net->make_net;
+
+if ($sperre_file) {
+    $net->make_sperre($sperre_file,
+		      Type => [StrassenNetz::BLOCKED_ONEWAY,
+			       StrassenNetz::BLOCKED_COMPLETE,
+			      ],
+		     );
+}
 
 my $s2 = Strassen->new($file_to_change);
 iterate {

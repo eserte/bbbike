@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: berlinmap2hafas,v 1.47 2004/07/20 07:09:23 eserte Exp $
+# $Id: berlinmap2hafas,v 1.51 2005/01/08 23:27:34 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2001,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2001,2004,2005 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -22,6 +22,7 @@ use lib ("$FindBin::RealBin/..",
 use Route;
 use Getopt::Long;
 use Karte;
+use BBBikeUtil qw(schnittwinkel rad2deg pi min);
 Karte::preload(':all');
 # -w:
 $Karte::Polar::obj = $Karte::Polar::obj;
@@ -101,7 +102,11 @@ if ($convert_all) {
 my $k_obj;
 my $bahnhof;
 my $specborder;
-my($specsperre, $specsperre_str, %specsperre_cr);
+my($specsperre, @specsperre_files, $specsperre_str, $specsperre_cr_kp);
+my $specsperre_net;
+my $specsperre_cr;
+my $specsperre_exceptions;
+my $specsperre_exceptions_hash;
 my $append;
 my $verbose = 0;
 my $quiet = 0;
@@ -117,9 +122,12 @@ my $keep_point_attrib;
 my $keep_everything;
 my $auto_descent_from_mount = 1;
 my $base_file;
+my $cr;
+my $do_nocross = 1;
 if (!GetOptions("bahnhof=s"        => \$bahnhof,
 		"specborder=s"     => \$specborder,
 		"specsperre=s"     => \$specsperre,
+		"specsperre-exceptions=s" => \$specsperre_exceptions,
 		"v!"               => \$verbose,
 		"q!"               => \$quiet,
 		'map|frommap=s'    => \$use_map,
@@ -137,6 +145,7 @@ if (!GetOptions("bahnhof=s"        => \$bahnhof,
 		"keepeverything!"  => \$keep_everything,
 		"autodescent!"     => \$auto_descent_from_mount,
 		"basefile=s"       => \$base_file,
+		"nc!"              => \$do_nocross,
 	       )) {
     usage("Wrong option");
 }
@@ -227,12 +236,15 @@ if (defined $specborder) {
 
 if ($specsperre) {
     require Strassen;
-    require BBBikeUtil;
-    my @s = split /,/, $specsperre;
-    $specsperre_str = MultiStrassen->new(@s);
-    %specsperre_cr = %{ $specsperre_str->all_crossings(RetType => 'hashpos',
+    @specsperre_files = split /,/, $specsperre;
+    my $MultiStrassen = "MultiStrassen";
+    if (eval { require Strassen::Lazy; 1 }) {
+	$MultiStrassen = "MultiStrassen::Lazy";
+    }
+    $specsperre_str = $MultiStrassen->new(@specsperre_files);
+    $specsperre_cr_kp = $specsperre_str->all_crossings(RetType => 'hashpos',
 						       UseCache => 1,
-						       Kurvenpunkte => 1) };
+						       Kurvenpunkte => 1);
 }
 
 my $no_coords = 0;
@@ -463,13 +475,13 @@ LINES: while(defined($_ = nextline())) {
 
     if ($specsperre && $cat =~ /^(0|BNP)/) {
 	my($_cat, @addinfo) = split /:/, $cat;
-	if (exists $specsperre_cr{$coords} &&
-	    (scalar @{$specsperre_cr{$coords}} == 1 ||
-	     scalar @{$specsperre_cr{$coords}} == 2)) {
+	if (exists $specsperre_cr_kp->{$coords} &&
+	    (scalar @{$specsperre_cr_kp->{$coords}} == 1 ||
+	     scalar @{$specsperre_cr_kp->{$coords}} == 2)) {
 
 	    my $angle;
 
-	    my @c = @{ $specsperre_str->get($specsperre_cr{$coords}->[0])->[&Strassen::COORDS] };
+	    my @c = @{ $specsperre_str->get($specsperre_cr_kp->{$coords}->[0])->[&Strassen::COORDS] };
 	    for my $i (0 .. $#c) {
 		if ($c[$i] eq $coords) {
 		    my $ii = ($i > 0 ? $i : 1);
@@ -478,7 +490,7 @@ LINES: while(defined($_ = nextline())) {
 		    # calculate angle, swap to mathematical coordinate system
 		    my $_angle = atan2(-($y2-$y1),$x2-$x1);
 		    # 0° means straight forward => subtract 90°
-		    $angle = int(BBBikeUtil::rad2deg($_angle)-90);
+		    $angle = int(rad2deg($_angle)-90);
 		    # XXX maybe range checking/adjusting should be done
 		}
 	    }
@@ -490,7 +502,25 @@ LINES: while(defined($_ = nextline())) {
 	}
     }
 
-    if ($coords ne "") {
+    my $print_record = 1;
+
+    if ($specsperre && $do_nocross && $cat =~ /^(.*)nocross$/) {
+	my $out_cat = $1;
+	my $out_name = $name;
+	if ($name =~ /^.*?:\s*(.*)$/) {
+	    $out_name = $1;
+	}
+	my @res = handle_no_cross_record($out_name, $out_cat, $coords);
+	for (@res) {
+	    my $name = shift @$_;
+	    my $cat  = shift @$_;
+	    print W "$name\t$cat ", join(" ", @$_), "\n";
+	}
+
+	$print_record = 0;
+    }
+
+    if ($coords ne "" && $print_record) {
 	print W "$name\t$cat $coords\n";
     }
 
@@ -619,6 +649,162 @@ sub from_to_convert {
     exit 0;
 }
 
+sub get_crossings {
+    return $specsperre_cr if $specsperre_cr;
+
+    die "Can't handle stdin" if $f eq '-';
+
+    if (!$specsperre_net) {
+	$specsperre_net = StrassenNetz->new($specsperre_str);
+	$specsperre_net->make_net(UseCache => 1);
+	$specsperre_net->make_sperre($f,
+				     Type => [StrassenNetz::BLOCKED_ONEWAY(),
+					      StrassenNetz::BLOCKED_COMPLETE(),
+					     ],
+				    );
+    }
+
+    $specsperre_cr = $specsperre_str->all_crossings(RetType => "hashpos",
+						    UseCache => 1);
+    $specsperre_cr;
+}
+
+sub get_specsperre_exceptions {
+    return $specsperre_exceptions_hash if $specsperre_exceptions_hash;
+
+    $specsperre_exceptions_hash = {};
+    my $s = Strassen->new($specsperre_exceptions);
+    $s->init;
+    while(1) {
+	my $r = $s->next;
+	my $c = $r->[Strassen::COORDS()];
+	last if !@$c;
+	for my $i (0 .. $#$c - 1) {
+	    push @{ $specsperre_exceptions_hash->{$c->[0]} }, [@{$c}[$i+1 .. $#$c]];
+	}
+    }
+    $specsperre_exceptions_hash;
+}
+
+sub match_specsperre_exception {
+    my($coords) = @_;
+    my $first = $coords->[0];
+    my $hash = get_specsperre_exceptions();
+    my $exceptions = $hash->{$first};
+    return if !$exceptions;
+ EXCEPTION:
+    for my $exception (@$exceptions) {
+	for my $i (1 .. $#$coords) {
+	    next EXCEPTION if $coords->[$i] ne $exception->[$i-1];
+	}
+	warn "(exception match <@$coords> <$first @$exception>)\n"
+	    if $verbose;
+	return 1;
+    }
+    0;
+}
+
+sub handle_no_cross_record {
+    my($name, $cat, $coords) = @_;
+    my @coords = split /\s+/, $coords;
+    if (@coords < 3) {
+	warn "Need at least three coordinates for handling nocross records. <$name $cat $coords>\n";
+	return;
+    }
+    my @res;
+
+    for my $i (2 .. $#coords) {
+	my @blocked = @coords[$i-2 .. $i];
+	my $middle = $blocked[1];
+	my @surrounding = get_surrounding_points($middle);
+	for my $p (@surrounding) {
+	    if (!exists $specsperre_net->{Net}{$p}{$middle}) {
+		warn "$p -> $middle already blocked, ignoring...\n" if $verbose;
+		next;
+	    }
+	    my @angles;
+	    push @angles, real_schnittwinkel($p, $middle, $blocked[0]) if $p ne $blocked[0];
+	    push @angles, real_schnittwinkel($p, $middle, $blocked[2]) if $p ne $blocked[2];
+	    my $angle = min(@angles);
+	    for my $last (@surrounding) {
+		next if $last eq $p;
+		if (!exists $specsperre_net->{Net}{$middle}{$last}) {
+		    warn "$middle -> $last already blocked, ignoring...\n" if $verbose;
+		    next;
+		}
+		my $other_angle = real_schnittwinkel($p, $middle, $last);
+		if ($other_angle > $angle) {
+		    my $name = get_street_name_by_coords($p, $middle, "first") . " -> " .
+			       get_street_name_by_coords($middle, $last, "last") . ": " . $name;
+		    my @coords = ($p, $middle, $last);
+		    if ($specsperre_exceptions && match_specsperre_exception(\@coords)) {
+			warn "Ignore <@coords>, found entry in $specsperre_exceptions\n"
+			    if $verbose;
+		    } else {
+			push @res, [$name, $cat, @coords];
+		    }
+		}
+	    }
+	}
+    }
+
+    @res;
+}
+
+sub get_street_name_by_coords {
+    my($c1, $c2, $first_or_last) = @_;
+    my $rec = $specsperre_net->get_street_record($c1, $c2);
+    my $is_backward = 1;
+    my $c = $rec->[Strassen::COORDS()];
+    for my $i (1 .. $#$c) {
+	if ($c1 eq $c->[$i-1] && $c2 eq $c->[$i]) {
+	    $is_backward = 0;
+	    last;
+	}
+    }
+    my $name = Strasse::strip_bezirk($rec->[Strassen::NAME()]);
+    if (($first_or_last eq 'first' && !$is_backward) ||
+	($first_or_last eq 'last'  &&  $is_backward)) {
+	$name = Strasse::get_first_part($name);
+    } else {
+	$name = Strasse::get_last_part($name);
+    }    
+    Strasse::short($name, 1);
+}
+
+sub get_surrounding_points {
+    my($middle) = @_;
+    my $cr = get_crossings();
+    my $ss = $cr->{$middle};
+    return if !$ss;
+    my %res;
+    for my $s_pos (@$ss) {
+	my $s_obj = $specsperre_str->get($s_pos);
+	my $c = $s_obj->[Strassen::COORDS()];
+	for my $i (0 .. $#$c) {
+	    if ($c->[$i] eq $middle) {
+		if ($i > 0) {
+		    $res{$c->[$i-1]}++;
+		}
+		if ($i < $#$c) {
+		    $res{$c->[$i+1]}++;
+		}
+	    }
+	}
+    }
+    keys %res;
+}
+
+sub real_schnittwinkel {
+    my(@x) = map { split /,/ } @_;
+    my($winkel, $richtung) = schnittwinkel(@x);
+    if ($richtung eq 'l') {
+	$winkel += pi;
+    } else {
+	$winkel = pi - $winkel;
+    }
+    $winkel;
+}
 
 sub usage {
     die <<EOF;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.PL,v 1.8 2003/01/08 20:58:32 eserte Exp eserte $
+# $Id: Makefile.PL,v 1.9 2004/12/12 20:33:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -71,6 +71,8 @@ $inlinedistpm:	$inlinepm
 	\$(PERL) ../inline2dist.pl \$(NAME)
 
 EOF
+
+    $rule;
 }
 
 

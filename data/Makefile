@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.38 2005/01/01 19:01:56 eserte Exp eserte $
+# $Id: Makefile,v 2.39 2005/01/08 22:56:00 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -305,9 +305,18 @@ ampelschaltung:	ampelschaltung-orig
 	$(CONVERT2HAFAS) -ampelschaltung ampelschaltung-orig > ampelschaltung
 	-@$(READONLY) $@
 
-gesperrt:	gesperrt-orig strassen landstrassen landstrassen2
+gesperrt:	gesperrt-orig strassen landstrassen landstrassen2 comments_path
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) -specsperre=strassen,landstrassen,landstrassen2 gesperrt-orig > $@~
+	$(CONVERT2HAFAS) -specsperre=strassen,landstrassen,landstrassen2 \
+	    -specsperre-exceptions=comments_path gesperrt-orig > $@~
+	cp $@~ $@
+	rm $@~
+	-@$(READONLY) $@
+
+${PERSISTENTTMPDIR}/gesperrt-without-nocross:	gesperrt-orig strassen landstrassen landstrassen2
+	-@$(WRITEABLE) $@
+	$(CONVERT2HAFAS) -specsperre=strassen,landstrassen,landstrassen2 \
+	    -nonc gesperrt-orig > $@~
 	cp $@~ $@
 	rm $@~
 	-@$(READONLY) $@
@@ -390,10 +399,11 @@ vorfahrt:	vorfahrt-orig
 	-@$(READONLY) $@
 
 .for f in ${COMMENTS_PARTIAL}
-${f}: ${f}-orig ${ALL_STREETS}
+${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 	-@$(WRITEABLE) $@
 	cat ${f}-orig | $(CONVERT2HAFAS) -basefile ${f}-orig - | \
-	    $(RESOLVE_STARS) ${ALL_STREETS} - > $@~ && \
+	    $(RESOLVE_STARS) -sperrefile ${PERSISTENTTMPDIR}/gesperrt-without-nocross \
+	    ${ALL_STREETS} - > $@~ && \
 	mv $@~ $@
 	-@$(READONLY) $@
 .endfor

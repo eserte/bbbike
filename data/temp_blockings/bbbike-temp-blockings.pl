@@ -1331,4 +1331,12 @@ userdel	q4 6725,12113 6653,12067
 userdel	q4 6799,12083 6725,12113
 EOF
      },
+     { from  => 1105311600, # 2005-01-10 00:00
+       until => 1105830000, # 2005-01-16 00:00
+       text  => 'K 6304; (Priorter Chaussee); OD Priort, Bahnübergang Gleisbauarbeiten Vollsperrung 11.01.2005-15.01.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -19149,11495 -18916,11666
+EOF
+     },
     );

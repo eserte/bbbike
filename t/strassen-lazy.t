@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-lazy.t,v 1.9 2003/11/17 07:21:05 eserte Exp $
+# $Id: strassen-lazy.t,v 1.10 2005/01/09 12:13:43 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -87,3 +87,26 @@ if (-d $projectdir && -f "$projectdir/strassen") {
 }
 
 __END__
+
+=head1 BENCHMARK
+
+Here's a benchmark script to test the performance gain of ::Lazy.
+Please run the script twice to fill the all_crossings-Cache first.
+
+    use Strassen;
+    use Strassen::Lazy;
+    use Time::HiRes qw(gettimeofday tv_interval);
+    
+    @s = qw(strassen landstrassen landstrassen2);
+    
+    $x = [gettimeofday];
+    $s = MultiStrassen->new(@s);
+    $s->all_crossings(RetType => 'hashpos',UseCache => 1,Kurvenpunkte => 1);
+    warn tv_interval($x);
+    
+    $x = [gettimeofday];
+    $s = MultiStrassen::Lazy->new(@s);
+    $s->all_crossings(RetType => 'hashpos',UseCache => 1,Kurvenpunkte => 1);
+    warn tv_interval($x);
+
+=cut

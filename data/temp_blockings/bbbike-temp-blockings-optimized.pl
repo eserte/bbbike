@@ -127,6 +127,15 @@ push @temp_blocking,
          'data' => 'userdel	2 -26784,5756 -26840,5684
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'until' => 1105830000,
+         'text' => 'K 6304; (Priorter Chaussee); OD Priort, Bahnübergang Gleisbauarbeiten Vollsperrung 11.01.2005-15.01.2005 ',
+         'from' => 1105311600,
+         'data' => 'userdel	2 -19149,11495 -18916,11666
+',
+         'type' => 'gesperrt'
        }
      
 );
