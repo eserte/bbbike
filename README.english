@@ -7,16 +7,21 @@
 =head2 General
 
 You can find the newest distribution file of BBBike in the directory
-L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike> . The current source version is
-L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13.tar.gz> .
+L<http://sourceforge.net/project/showfiles.php?group_id=19142> . The current source version is
+L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.13.tar.gz> .
 
 =head2 FreeBSD
 
 For FreeBSD, since 3.0-RELEASE there is a I<port> for BBBike in the
 category B<german>. For older versions of FreeBSD, you can find the
 I<port> at L<http://www.freebsd.org/cgi/ports.cgi?query=bbbike&stype=all>.
-If you don't have the BBBike I<port>, you can install BBBike like in other
-UNIX's.
+To install the application via the ports system type:
+
+	cd /usr/ports/german/BBBike
+	make all install
+
+If you don't have the BBBike I<port>, you can install BBBike like L<in other
+UNIX's|/Linux, Solaris, other UNIX operating systems>.
 
 =head2 Linux, Solaris, other UNIX operating systems
 
@@ -33,7 +38,7 @@ Next step is to extract the BBBike distribution:
 
 	zcat BBBike-3.13.tar.gz | tar xfv -
 
-If perl/Tk (the recommended version is 800.025) is not installed:
+If perl/Tk (the recommended version is 800.025 or 804.027) is not installed:
 change to the directory
 C<BBBike-3.13> and type as super user:
 
@@ -78,7 +83,7 @@ BBBike and Perl need approx. 32 MB hard disk space.
 
 
 Download the file
-L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13-Windows.zip> and 
+L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.13-Windows.zip> and 
 extract this file
 with WinZip. To start BBBike just click on the icon C<bbbike.bat> in
 the directory BBBike-3.13-Windows.
@@ -130,7 +135,7 @@ to download and install perl/Tk. To leave the ppm program, type
 =item *
 
 Download
-C<BBBike-3.13.tar.gz|ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13.tar.gz>
+C<BBBike-3.13.tar.gz|http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.13-Windows.zip>
 and extract this file with 
 WinZip. The unpacked directory will not move in the later
 installation.
@@ -150,7 +155,8 @@ menu and a desktop icon.
 =head2 Alternative Windows Installation (2)
 
 If you have Cygwin (L<http://www.cygwin.org/>) installed, you can start
-a bash shell and follow the UNIX instructions.
+a bash shell and follow the
+L<UNIX instructions|/Linux, Solaris, other UNIX operating systems>.
 
 =head2 Alternative Windows Installation (3)
 
@@ -182,7 +188,7 @@ L<http://groups.google.com>).
 
 Folgende Anleitung habe ich von Wolfram Kroll erhalten:
 
-L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13.tar.gz> und (von
+L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.13.tar.gz> und (von
 L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
 besorgt.
 
@@ -266,7 +272,7 @@ C<cbbbike> and C<cmdbbbike> are simpler command line versions of the program.
 The current BBBike development may be tracked via CVS. Look at
 L<http://sourceforge.net/cvs/?group_id=19142> for instructions on how to use CVS.
 
-To use from command line type the following:
+To use the CVS repository from command line type the following:
 
     # login is necessary only once, leave the password empty
     cvs -d :pserver:anonymous@cvs.bbbike.sourceforge.net:/cvsroot/bbbike login

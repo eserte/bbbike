@@ -11,16 +11,18 @@
 ## dnl Warning: use no-fill in the next line!
 ## replace #TESTPLATFORMS# "Solaris-2.5, Solaris 8, FreeBSD-3.5, FreeBSD-4.6, FreeBSD-4.9, Linux Suse 6.4, Linux Suse 7.0, Linux Debian 3.0, Red Hat Linux 8.0, Windows 95, Windows 98, Windows NT 4.0, Windows 2000"
 ## perlrequire BBBikeVar
-## perlreplace #DISTDIRURL#	$BBBike::DISTDIR
+## perlreplace #BBBIKEVAR_DISPLAY_DISTDIR#	$BBBike::DISPLAY_DISTDIR
+## perlreplace #BBBIKEVAR_DISTFILE_SOURCE#	$BBBike::DISTFILE_SOURCE
+## perlreplace #BBBIKEVAR_DISTFILE_WINDOWS#	$BBBike::DISTFILE_WINDOWS
 ## perlreplace #BBBIKEVER#  $BBBike::STABLE_VERSION
-## perlreplace #BBBIKEWINVER#  3.13
+## perlreplace #BBBIKEWINVER#  $BBBike::WINDOWS_VERSION
 ## perlreplace #MAIL#       $BBBike::EMAIL
 ## perlreplace #CGIURL#     $BBBike::BBBIKE_WWW
 ## perlreplace #DIRECTCGIURL#     $BBBike::BBBIKE_DIRECT_WWW
 ## perlreplace #HTTPCVS#    '"http://sourceforge.net/cvs/?group_id=19142"'
 ## perlreplace #CVSREPO#    '":pserver:anonymous\@cvs.bbbike.sourceforge.net:/cvsroot/bbbike"'
 ## dnl
-## dnl $Id: README.spp,v 2.29 2004/08/19 21:43:38 eserte Exp $
+## dnl $Id: README.spp,v 2.30 2004/11/29 23:06:50 eserte Exp $
 ## dnl strpp source of README
 ## dnl
 =head1 README
@@ -37,21 +39,21 @@ a route-finder for cyclists in Berlin and Brandenburg
 
 =head2 
 ## only DE
-Allgemein
+Download
 ## but DE
-General
+Download
 ## yes
 
 
 
 ## only DE
 Die aktuellste BBBike-Archivdatei findet man im Verzeichnis
-L<#DISTDIRURL#> . Die aktuelle Sourcedatei ist
-L<#DISTDIRURL#/BBBike-#BBBIKEVER#.tar.gz> .
+L<#BBBIKEVAR_DISPLAY_DISTDIR#> . Die aktuelle Sourcedatei ist
+L<#BBBIKEVAR_DISTFILE_SOURCE#> .
 ## but DE
 You can find the newest distribution file of BBBike in the directory
-L<#DISTDIRURL#> . The current source version is
-L<#DISTDIRURL#/BBBike-#BBBIKEVER#.tar.gz> .
+L<#BBBIKEVAR_DISPLAY_DISTDIR#> . The current source version is
+L<#BBBIKEVAR_DISTFILE_SOURCE#> .
 ## yes
 
 
@@ -62,19 +64,24 @@ L<#DISTDIRURL#/BBBike-#BBBIKEVER#.tar.gz> .
 Für FreeBSD existiert seit 3.0-RELEASE ein I<Port> für BBBike in der
 Kategorie B<german>. Besitzer älterer FreeBSD-Versionen können den
 I<Port> über L<http://www.freebsd.org/cgi/ports.cgi?query=bbbike&stype=all>
-finden.
+finden. Die Installation über das Ports-System erfolgt wie folgt:
 ## but DE
 For FreeBSD, since 3.0-RELEASE there is a I<port> for BBBike in the
 category B<german>. For older versions of FreeBSD, you can find the
 I<port> at L<http://www.freebsd.org/cgi/ports.cgi?query=bbbike&stype=all>.
+To install the application via the ports system type:
 ## yes
 
 
+	cd /usr/ports/german/BBBike
+	make all install
+
+
 ## only DE
-Ohne I<Port> kann BBBike wie bei anderen Unices installiert werden.
+Ohne I<Port> kann BBBike wie bei L<anderen Unices|/Linux, Solaris, andere Unices> installiert werden.
 ## but DE
-If you don't have the BBBike I<port>, you can install BBBike like in other
-UNIX's.
+If you don't have the BBBike I<port>, you can install BBBike like L<in other
+UNIX's|/Linux, Solaris, other UNIX operating systems>.
 ## yes
 
 
@@ -116,11 +123,11 @@ Next step is to extract the BBBike distribution:
 
 
 ## only DE
-Falls perl/Tk (eine möglichst neue Version, z.B. 800.025) nicht
+Falls perl/Tk (eine möglichst neue Version, z.B. 800.025 order 804.027) nicht
 installiert ist: in das Verzeichnis C<BBBike-#BBBIKEVER#>
 wechseln und als Superuser
 ## but DE
-If perl/Tk (the recommended version is 800.025) is not installed:
+If perl/Tk (the recommended version is 800.025 or 804.027) is not installed:
 change to the directory
 C<BBBike-#BBBIKEVER#> and type as super user:
 ## yes
@@ -213,7 +220,7 @@ This requires the perl module L<Inline::C>.
 
 BBBike und Perl benötigen ca. 32 MB an Festplattenspeicher.
 
-Die Datei L<#DISTDIRURL#/BBBike-#BBBIKEWINVER#-Windows.zip>
+Die Datei L<#BBBIKEVAR_DISTFILE_WINDOWS#>
 laden und mit WinZip an einer
 beliebigen Stelle auf der Festplatte auspacken. Zum Starten von BBBike
 muss das Icon C<bbbike.bat> im Verzeichnis BBBike-#BBBIKEWINVER#-Windows
@@ -228,7 +235,7 @@ BBBike and Perl need approx. 32 MB hard disk space.
 
 
 Download the file
-L<#DISTDIRURL#/BBBike-#BBBIKEWINVER#-Windows.zip> and 
+L<#BBBIKEVAR_DISTFILE_WINDOWS#> and 
 extract this file
 with WinZip. To start BBBike just click on the icon C<bbbike.bat> in
 the directory BBBike-#BBBIKEWINVER#-Windows.
@@ -327,12 +334,12 @@ wird das ppm-Programm verlassen.
 
 
 ## only DE
-L<BBBike-#BBBIKEVER#.tar.gz|#DISTDIRURL#/BBBike-#BBBIKEVER#.tar.gz>
+L<BBBike-#BBBIKEWINVER#.tar.gz|#BBBIKEVAR_DISTFILE_WINDOWS#>
 downloaden und mit WinZip auspacken. Das
 ausgepackte Verzeichnis wird später nicht mehr verschoben.
 ## but DE
 Download
-C<BBBike-#BBBIKEVER#.tar.gz|#DISTDIRURL#/BBBike-#BBBIKEVER#.tar.gz>
+C<BBBike-#BBBIKEWINVER#.tar.gz|#BBBIKEVAR_DISTFILE_WINDOWS#>
 and extract this file with 
 WinZip. The unpacked directory will not move in the later
 installation.
@@ -343,7 +350,7 @@ installation.
 
 
 ## only DE
-In der Eingabeaufforderung oder im Explorer zum Verzeichnis BBBike-#BBBIKEVER#
+In der Eingabeaufforderung oder im Explorer zum Verzeichnis BBBike-#BBBIKEWINVER#
 wechseln und
 
 
@@ -369,11 +376,13 @@ menu and a desktop icon.
 
 ## only DE
 Wenn Cygwin (L<http://www.cygwin.org/>) installiert ist, können aus einer
-bash-Shell heraus die Anweisungen wie bei einer UNIX-Installation
+cygwin-Shell heraus die Anweisungen wie bei einer
+L<UNIX-Installation|/Linux, Solaris, andere Unices>
 befolgt werden.
 ## but DE
 If you have Cygwin (L<http://www.cygwin.org/>) installed, you can start
-a bash shell and follow the UNIX instructions.
+a cygwin shell and follow the
+L<UNIX instructions|/Linux, Solaris, other UNIX operating systems>.
 ## yes
 
 
@@ -445,7 +454,7 @@ L<http://groups.google.com>).
 
 Folgende Anleitung habe ich von Wolfram Kroll erhalten:
 
-L<#DISTDIRURL#/BBBike-#BBBIKEVER#.tar.gz> und (von
+L<#BBBIKEVAR_DISTFILE_SOURCE#> und (von
 L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
 besorgt.
 

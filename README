@@ -7,16 +7,20 @@
 =head2 Allgemein
 
 Die aktuellste BBBike-Archivdatei findet man im Verzeichnis
-L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike> . Die aktuelle Sourcedatei ist
-L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13.tar.gz> .
+L<http://sourceforge.net/project/showfiles.php?group_id=19142> . Die aktuelle Sourcedatei ist
+L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.13.tar.gz> .
 
 =head2 FreeBSD
 
 Für FreeBSD existiert seit 3.0-RELEASE ein I<Port> für BBBike in der
 Kategorie B<german>. Besitzer älterer FreeBSD-Versionen können den
 I<Port> über L<http://www.freebsd.org/cgi/ports.cgi?query=bbbike&stype=all>
-finden.
-Ohne I<Port> kann BBBike wie bei anderen Unices installiert werden.
+finden. Die Installation über das Ports-System erfolgt wie folgt:
+
+	cd /usr/ports/german/BBBike
+	make all install
+
+Ohne I<Port> kann BBBike wie bei L<anderen Unices|/Linux, Solaris, andere Unices> installiert werden.
 
 =head2 Linux, Solaris, andere Unices
 
@@ -34,7 +38,7 @@ Danach kann BBBike ausgepackt werden:
 
 	zcat BBBike-3.13.tar.gz | tar xfv -
 
-Falls perl/Tk (eine möglichst neue Version, z.B. 800.025) nicht
+Falls perl/Tk (eine möglichst neue Version, z.B. 800.025 order 804.027) nicht
 installiert ist: in das Verzeichnis C<BBBike-3.13>
 wechseln und als Superuser
 
@@ -79,7 +83,7 @@ ausgeführt werden. Dazu ist das Perl-Modul L<Inline::C> notwendig.
 
 BBBike und Perl benötigen ca. 32 MB an Festplattenspeicher.
 
-Die Datei L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13-Windows.zip>
+Die Datei L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.13-Windows.zip>
 laden und mit WinZip an einer
 beliebigen Stelle auf der Festplatte auspacken. Zum Starten von BBBike
 muss das Icon C<bbbike.bat> im Verzeichnis BBBike-3.13-Windows
@@ -131,7 +135,7 @@ wird das ppm-Programm verlassen.
 
 =item *
 
-L<BBBike-3.13.tar.gz|ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13.tar.gz>
+L<BBBike-3.13.tar.gz|http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.13-Windows.zip>
 downloaden und mit WinZip auspacken. Das
 ausgepackte Verzeichnis wird später nicht mehr verschoben.
 
@@ -151,7 +155,8 @@ Einträge für BBBike im Startmenü und erzeugt ein Icon auf dem Desktop.
 =head2 Alternative Windows Installation (2)
 
 Wenn Cygwin (L<http://www.cygwin.org/>) installiert ist, können aus einer
-bash-Shell heraus die Anweisungen wie bei einer UNIX-Installation
+bash-Shell heraus die Anweisungen wie bei einer
+L<UNIX-Installation|/Linux, Solaris, andere Unices>
 befolgt werden.
 
 =head2 Alternative Windows Installation (3)
@@ -185,7 +190,7 @@ von Perl/Tk auf Mac OS X bekommt man in der comp.lang.perl.tk Newsgroup
 
 Folgende Anleitung habe ich von Wolfram Kroll erhalten:
 
-L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13.tar.gz> und (von
+L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.13.tar.gz> und (von
 L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
 besorgt.
 

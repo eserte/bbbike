@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.29 2004/06/01 23:13:49 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.31 2004/11/29 23:07:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2004 Slaven Rezic. All rights reserved.
@@ -18,6 +18,7 @@ package BBBike;
 
 $VERSION	   = '3.14-DEVEL'; # remove "-DEVEL" for releases
 $STABLE_VERSION	   = '3.13';
+$WINDOWS_VERSION   = '3.13'; # Windows distribution
 
 $EMAIL_OLD	   = 'eserte@cs.tu-berlin.de';
 $EMAIL		   = 'slaven@rezic.de';
@@ -45,15 +46,16 @@ $BBBIKE_UPDATE_WWW = "http://bbbike.sourceforge.net/bbbike";
 # WAP version
 $BBBIKE_WAP	   = 'http://bbbike.de/wap';
 $BBBIKE_DIRECT_WAP = 'http://www.radzeit.de/cgi-bin/wapbbbike.cgi';
-# distribution directory for scripts:
-$DISTDIR	   = 'ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike';
-# distribution directory for humans (entry to 'show files' at sourceforge)
+
+# Distribution directory for scripts. Unfortunately there's no directory
+# index available anymore at sourceforge...
+$DISTDIR	   = 'http://belnet.dl.sourceforge.net/sourceforge/bbbike';
+$DISTFILE_SOURCE   = "$DISTDIR/BBBike-$STABLE_VERSION.tar.gz";
+$DISTFILE_WINDOWS  = "$DISTDIR/BBBike-$WINDOWS_VERSION-Windows.zip";
+# Distribution directory for humans (entry to 'show files' at sourceforge)
 $DISPLAY_DISTDIR   = 'http://sourceforge.net/project/showfiles.php?group_id=19142';
 $LATEST_RELEASE_DISTDIR  = 'http://sourceforge.net/project/showfiles.php?group_id=19142&package_id=14052&release_id=210614';
-# XXX not used ... should be moved to sourceforge, too
-# XXX first check whether I can connect to a subdir of cgi-bin, then
-# try symlinks, then do a cp on the machine itself...
-$UPDATE_DIR	   = 'http://www.onlineoffice.de/bbbike';
+
 # URL auf die Diplomarbeit
 $DIPLOM_URL        = 'http://user.cs.tu-berlin.de/~eserte/diplom/';
 

@@ -2,13 +2,12 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.4 2003/08/09 07:20:44 eserte Exp $
+# $Id: cgihead2.t,v 1.5 2004/11/30 08:26:46 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
 
-use Test;
 use FindBin;
 use lib "$FindBin::RealBin/..";
 use BBBikeVar;
@@ -16,39 +15,63 @@ use File::Basename;
 
 BEGIN {
     if (!eval q{
-	use Test;
+	use Test::More;
+	use LWP::UserAgent;
 	1;
     }) {
-	print "1..0 # skip: no Test module\n";
+	print "1..0 # skip: no Test::More and/or LWP::UserAgent module\n";
 	exit;
     }
 }
 
-my @prog;
-push @prog, ($BBBike::HOMEPAGE,
-	     $BBBike::BBBIKE_WWW,
-	     @BBBike::BBBIKE_WWW,
-	     $BBBike::BBBIKE_DIRECT_WWW,
-	     $BBBike::BBBIKE_SF_WWW,
-	     $BBBike::BBBIKE_UPDATE_WWW,
-	     $BBBike::BBBIKE_WAP,
-	     $BBBike::BBBIKE_DIRECT_WAP,
-	     $BBBike::DISTDIR,
-	     $BBBike::DISPLAY_DISTDIR,
-	     $BBBike::UPDATE_DIR,
-	     $BBBike::DIPLOM_URL,
-	     $BBBike::BBBIKE_MAPSERVER_URL,
-	     $BBBike::BBBIKE_MAPSERVER_ADDRESS_URL,
-	     $BBBike::BBBIKE_MAPSERVER_DIRECT,
-	     $BBBike::BBBIKE_MAPSERVER_INDIRECT,
-	    );
+my @var;
+push @var, (qw($BBBike::HOMEPAGE
+	       $BBBike::BBBIKE_WWW
+	       @BBBike::BBBIKE_WWW
+	       $BBBike::BBBIKE_DIRECT_WWW
+	       $BBBike::BBBIKE_SF_WWW
+	       $BBBike::BBBIKE_UPDATE_WWW
+	       $BBBike::BBBIKE_WAP
+	       $BBBike::BBBIKE_DIRECT_WAP
+	       $BBBike::DISTFILE_SOURCE
+	       $BBBike::DISTFILE_WINDOWS
+	       $BBBike::DISPLAY_DISTDIR
+	       $BBBike::DIPLOM_URL
+	       $BBBike::BBBIKE_MAPSERVER_URL
+	       $BBBike::BBBIKE_MAPSERVER_ADDRESS_URL
+	       $BBBike::BBBIKE_MAPSERVER_DIRECT
+	       $BBBike::BBBIKE_MAPSERVER_INDIRECT
+	      )
+	   );
+# Not HEADable:
+#   DISTDIR
 
-plan tests => 2 * scalar @prog;
+my %url;
+for my $var (@var) {
+    my @url = eval $var;
+    die $@ if $@;
+    if ($var eq '$BBBike::BBBIKE_UPDATE_WWW') {
+	@url = map { "$_/data/" } @url;
+    }
+    $url{$var} = \@url;
+}
 
-for my $prog (@prog) {
-    ok(defined $prog, 1, "not defined");
-    system("HEAD -H 'User-Agent: BBBike-Test/1.0' $prog > '/tmp/head." . basename($prog) . ".log'");
-    ok($?, 0, $prog);
+plan tests => 2 * scalar(map { @$_ } values %url);
+
+my $ua = LWP::UserAgent->new;
+$ua->agent('BBBike-Test/1.0');
+
+for my $var (@var) {
+    for my $url (@{ $url{$var} }) {
+	ok(defined $url, "$var -> $url");
+	my $req = $ua->head($url);
+    SKIP: {
+	    skip("No internet available", 1)
+		if ($req->code == 500 && $req->message =~ /Bad hostname|No route to host/i);
+	    #warn $req->content;
+	    ok($req->is_success) or diag $req->content;
+	}
+    }
 }
 
 __END__
