@@ -23,7 +23,7 @@
 	(progn
 	  (goto-char (point-min))
 	  (search-forward-regexp (concat "\\(\t\\| \\)" sel "\\( \\|$\\)"))
-	  (goto-char (- (point) (length sel))))
+	  (goto-char (1- (- (point) (length sel)))))
       (error "No X selection"))))
 
 (defvar bbbike-mode-map nil "Keymap for BBBike bbd mode.")

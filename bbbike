@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.138 2004/07/27 23:11:39 eserte Exp $
+# $Id: bbbike,v 3.139 2004/08/01 17:38:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -212,7 +212,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.138 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.139 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -296,6 +296,7 @@ foreach (@Radwege::category_order) {
     $str_restrict{'rw'}->{$Radwege::category_code{$_}} = 1
         if defined $Radwege::category_code{$_};
 }
+$str_nr_draw{'comm-route'} = 1;
 
 %tag_group = # group related tags (for stacking)
   ('str_s' => ['s-out', 'gr', 'rw',
@@ -5154,7 +5155,7 @@ sub define_item_attribs {
     @normal_stack_order =
 	(qw(map f w-out w i-out i f-Pabove e e-img
 	    gP gD z g gP gD
-	    s-out l-out gr rw s-NN s-N s-H s-HH s-B s-BAB l v
+	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB l v
 	    f-label-bg w-label-bg f-label w-label
 	    s-label-bg s-label l-label-bg l-label
 	    u sperre_u u-bg u-fg u_bg-img r sperre_r b sperre_b
@@ -5163,7 +5164,7 @@ sub define_item_attribs {
 	    hoehe vf-bg sperre temp_sperre_s temp_sperre v-fg obst
 	    fz route comm),
 	 (map { "comm-$_" } @comments_types),
-	 qw(qs hs ql hl mount nl delnet
+	 qw(comm-route-label-bg comm-route-label qs hs ql hl mount nl delnet
 	    O o p pl-fg lsas lsas-t lsa-bg lsa-fg
 	    vf-fg pp kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
 	    L pp-L L-img L-fg personal-fg personal-label ovl
@@ -6333,7 +6334,27 @@ sub set_route_point {
 sub draw_street_numbers {
     # the coloring is german specific
     my($c,$strname,$abk,$coordlist_ref) = @_;
+    my $do_round = 0;
     my($type,$nr) = Strasse::parse_street_type_nr($strname);
+    # Extra routes in and outer Berlin:
+    if (!defined $type) {
+	if ($strname =~ /berlin\s*-\s*usedom/i) {
+	    $type = 'BU';
+	} elsif ($strname =~ /berlin\s*-\s*kopenhagen/i) {
+	    $type = 'BK';
+	} elsif ($strname =~ /mauerweg/i) {
+	    $type = 'M';
+	} elsif ($strname =~ /havellandradweg/i) {
+	    $type = 'HVL';
+	} elsif ($strname =~ /spreeradweg/i) {
+	    $type = 'S';
+	} elsif ($strname =~ /hofjagdweg/i) {
+	    $type = 'H';
+	}
+	if (defined $type) {
+	    $do_round = 1;
+	}
+    }
     if (defined $type) {
 	my $dist = 0;
 	my $drawn = 0;
@@ -6342,21 +6363,33 @@ sub draw_street_numbers {
 	    my($midx,$midy) = Strassen::Util::middle(@{$coordlist_ref}[$coord_i..$coord_i+3]);
 	    my $item = $c->createText
 		($midx,$midy,-text => ($type =~ /^(B|BAB)$/ ? "" : $type) . $nr,
-		 -fill => ($type eq 'BAB' ? 'white' :
-			   ($type =~ /^(F|R)$/ ? 'green4' :
-			    'black')),
+		 -fill => ($do_round          ? 'white'  :
+			   $type eq 'BAB'     ? 'white'  :
+			   $type =~ /^(F|R)$/ ? 'green4' :
+			                        'black'),
 		 -tags => "$abk-label");
 	    my(@bbox) = $c->bbox($item);
-	    my $r_item = $c->createRectangle
-		($bbox[0]-2,$bbox[1]-2,$bbox[2]+2,$bbox[3]+2,
-		 -fill => ($type eq 'B' ? 'yellow' :
-			   ($type eq 'BAB' ? 'blue' :
-			    'white')),
-		 -outline => ($type eq 'BAB' ? 'white' :
-			      ($type =~ /^(F|R)$/ ? 'green4' : 'black')),
-		 -width => 2,
-		 -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
-		);
+	    my $r_item;
+	    if ($do_round) {
+		$r_item = $c->createOval
+		    ($bbox[0]-2,$bbox[1]-2,$bbox[2]+2,$bbox[3]+2,
+		     -fill => '#90d090',
+		     -outline => 'black',
+		     -width => 1,
+		     -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
+		    );
+	    } else {
+		$r_item = $c->createRectangle
+		    ($bbox[0]-2,$bbox[1]-2,$bbox[2]+2,$bbox[3]+2,
+		     -fill => ($type eq 'B' ? 'yellow' :
+			       ($type eq 'BAB' ? 'blue' :
+				'white')),
+		     -outline => ($type eq 'BAB' ? 'white' :
+				  ($type =~ /^(F|R)$/ ? 'green4' : 'black')),
+		     -width => 2,
+		     -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
+		    );
+	    }
 	    $c->raise($item,$r_item);
 	    $dist = 0;
 	    $drawn++;

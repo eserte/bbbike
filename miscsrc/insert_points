@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.38 2004/07/03 22:43:55 eserte Exp eserte $
+# $Id: insert_points,v 1.39 2004/07/29 22:12:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -19,6 +19,9 @@
 # _gab_ es eine Sonderbehandlung.
 # Da diese Funktion gefährlich ist, wird zuerst angezeigt, welche
 # Dateien geändert werden.
+
+# -operation insertmulti:
+# Like -operation insert, but allow more than one point to be inserted.
 
 # change_points:
 # Als Eingabe werden zwei Punkte erwartet. Der erste Punkt wird in allen
@@ -135,7 +138,7 @@ sub process {
     warn "Custom check files are @custom_check_files\n" if $verbose and @custom_check_files;
     warn "Additional files to check are @add_check_files_noorig\n" if $verbose and @add_check_files_noorig;
 
-    my($from, $middle, $to, $new_to);
+    my($from, @middle, $to, $new_to);
     my $top;
     my $extra;
     my @coords;
@@ -157,7 +160,11 @@ sub process {
     }
 
     if ($operation eq 'insert') {
-	($from, $middle, $to, $extra) = @coords;
+	($from, $middle[0], $to, $extra) = @coords;
+    } elsif ($operation eq 'insertmulti') {
+	$from = $coords[0];
+	$to = $coords[-1];
+	@middle = @coords[1 .. $#coords-1];
     } elsif ($operation eq 'changeline') {
 	($from, $to, $new_to, $extra) = @coords;
     } elsif ($operation eq 'change') {
@@ -167,7 +174,7 @@ sub process {
     }
 
     my @cmd_args = ($operation, @coords);
-    warn "from=$from middle=$middle to=$to new_to=$new_to\n" if $verbose;
+    warn "from=$from middle=@middle to=$to new_to=$new_to\n" if $verbose;
 
     if (defined $extra) {
 	if ($use_tk) {
@@ -178,7 +185,7 @@ sub process {
 	    $top->destroy;
 	}
 	warn "Too many points ($extra)";
-	return;
+	return 1;
     }
 
     if ($operation eq 'change' && $from eq $to) {
@@ -190,32 +197,39 @@ sub process {
 	    $top->destroy;
 	}
 	warn "Same point $from eq $to";
-	return;
+	return 0;
     }
 
-    if (!defined $from   or $from   !~ /\d+,.*\d+$/
+    my $coord_rx = qr/\d+,.*\d+$/;
+
+    if (!defined $from or $from   !~ $coord_rx
 	or
-	($operation eq 'insert' and (!defined $middle or $middle !~ /\d+,.*\d+$/))
+	($operation eq 'insert' and (!defined $middle[0] or $middle[0] !~ $coord_rx))
 	or
-	((!defined $to     or $to     !~ /\d+,.*\d+$/) && $operation !~ /^(delete|grep)$/)
+	($operation eq 'insertmulti' and (!@middle or grep { !/$coord_rx/ } @middle))
 	or
-	($operation eq 'changeline' and (!defined $new_to or $new_to !~ /\d+,.*\d+$/))
+	($operation eq 'changeline' and (!defined $new_to or $new_to !~ $coord_rx))
+	or
+	((!defined $to or $to     !~ $coord_rx) && $operation !~ /^(delete|grep)$/)
        ) {
 	if ($use_tk) {
 	    my $var_text = ($operation =~ /^(insert|changeline)$/
 			    ? "müssen genau drei Punkte"
 			    : ($operation eq 'grep'
 			       ? "muss genau ein Punkt"
-			       : "müssen genau zwei Punkte"
+			       : ($operation eq 'insertmulti'
+				  ? "mindestens drei Punkte"
+				  : "müssen genau zwei Punkte"
+				 )
 			      )
 			   );
 	    $top->Dialog(-title => $0,
 			 -text => 'In der Auswahl ' . $var_text . ' sein!',
 			 -bitmap => 'error',
 			 -buttons => ['OK'])->Show;
-	    warn "Found operation=$operation from=$from middle=$middle to=$to";
+	    warn "Found operation=$operation from=$from middle=@middle to=$to";
 	    $top->destroy;
-	    return;
+	    return 1;
 	} else {
 	    if ($operation eq 'insert') {
 		die "Usage: $0 from middle to";
@@ -246,7 +260,7 @@ sub process {
     if (!@custom_check_files) {
 	chdir $datadir or die "chdir to $datadir failed: $!";
 
-	if ($operation =~ /^(insert|changeline|grep|delete)$/) {
+	if ($operation =~ /^(insert|insertmulti|changeline|grep|delete)$/) {
 	    # folgende Dateien werden bei insert_points überprüft:
 	    # normales Format
 	    # XXX gesperrt/gesperrt_car: Die Kategorie 3 müsste
@@ -378,7 +392,7 @@ sub process {
 	    warn "Read $file...\n" if $verbose;
 	    my(@data) = <F>;
 	    close F;
-	    if ($operation =~ /^(insert|changeline)$/) {
+	    if ($operation =~ /^(insert|insertmulti|changeline)$/) {
 		if ($type == T_NORMAL || $type == T_TEMPBLOCK || $type == T_RADWEGE) {
 		    if ($verbose) {
 			warn "Check for ($map_from $map_to|$map_to $map_from)\n";
@@ -443,7 +457,7 @@ sub process {
 	} else {
 	    print STDERR "$dialog_text.\n";
 	}
-	return;
+	return 0;
     }
 
     if ($report) {
@@ -469,6 +483,7 @@ sub process {
 	     -buttons => ($operation eq 'grep' ? ['Ok'] : ['Ja', 'Nein']),
 	    );
 	$dia->add('Label', -text => {insert => 'Punkt einfügen',
+				     insertmulti => 'Mehrere Punkte einfügen',
 				     changeline => 'Strecke verschieben',
 				     change => 'Punkt verschieben',
 				     grep => 'Punkt gefunden',
@@ -530,7 +545,7 @@ sub process {
 		push @changed_files, $file;
 		# XXX not used, del?
 		my $map_char = (($file2base{$file}||'') eq $current_coordsys ? '' : $current_coordsys);
-		my $map_char_rx = ($operation =~ /^(insert|changeline)$/
+		my $map_char_rx = ($operation =~ /^(insert|insertmulti|changeline)$/
 				   ? ($current_coordsys ne ''
 				      ? "(?:$current_coordsys)?"
 				      : '(?:B)?'
@@ -549,9 +564,11 @@ sub process {
 		if ($operation eq 'change') {
 		    $map_new_from = $to;
 		}
-		my $map_middle;
-		if ($operation eq 'insert') {
-		    $map_middle = "$current_coordsys$middle";
+		my @map_middle;
+		my @rev_middle;
+		if ($operation =~ /^insert(multi)?$/) {
+		    @map_middle = map { "$current_coordsys$_" } @middle;
+		    @rev_middle = reverse @map_middle;
 		}
 		my $map_to     = "$map_char_rx$to";
 		my $map_new_to;
@@ -565,7 +582,7 @@ sub process {
 		    $map_new_from .= " " x (length($map_from)-length($map_new_from));
 		}
 
-#warn "from=$map_from, middle=$map_middle, to=$map_to, new_from=$map_new_from, new_to=$map_new_to\n";
+#warn "from=$map_from, middle=@map_middle, to=$map_to, new_from=$map_new_from, new_to=$map_new_to\n";
 
 		# auschecken, falls notwendig...
 		if (!$n) {
@@ -589,22 +606,22 @@ sub process {
 		}
 		binmode W; # XXX check on NT
 		while(<R>) {
-		    if ($operation eq 'insert') {
+		    if ($operation =~ /^insert(multi)?$/) {
 			if ($type == T_NORMAL || $type == T_TEMPBLOCK) {
 			    if (/(?:(?<=\s)|^)$map_from $map_to\b/) {
-				s/(?:(?<=\s)|^)($map_from) ($map_to)\b/$1 $map_middle $2/;
+				s/(?:(?<=\s)|^)($map_from) ($map_to)\b/$1 @map_middle $2/;
 			    } elsif (/(?:(?<=\s)|^)$map_to $map_from\b/) {
-				s/(?:(?<=\s)|^)($map_to) ($map_from)\b/$1 $map_middle $2/;
+				s/(?:(?<=\s)|^)($map_to) ($map_from)\b/$1 @rev_middle $2/;
 			    }
 			    print W $_;
 			} elsif ($type == T_RADWEGE) {
 			    if (/(?:(?<=\s)|^)$map_from $map_to\b/) {
-				(my $first = $_) =~ s/(?:(?<=\s)|^)($map_from) ($map_to)\b/$1 $map_middle/;
-				(my $second = $_) =~ s/(?:(?<=\s)|^)($map_from) ($map_to)\b/$map_middle $2/;
+				(my $first = $_) =~ s/(?:(?<=\s)|^)($map_from) ($map_to)\b/$1 @map_middle/;
+				(my $second = $_) =~ s/(?:(?<=\s)|^)($map_from) ($map_to)\b/@map_middle $2/;
 				print W "$first$second";
 			    } elsif (/(?:(?<=\s)|^)$map_to $map_from\b/) {
-				(my $first = $_) =~ s/(?:(?<=\s)|^)($map_to) ($map_from)\b/$1 $map_middle/;
-				(my $second = $_) =~ s/(?:(?<=\s)|^)($map_to) ($map_from)\b/$map_middle $2/;
+				(my $first = $_) =~ s/(?:(?<=\s)|^)($map_to) ($map_from)\b/$1 @rev_middle/;
+				(my $second = $_) =~ s/(?:(?<=\s)|^)($map_to) ($map_from)\b/@rev_middle $2/;
 				print W "$first$second";
 			    } else {
 				print W $_;
@@ -612,11 +629,11 @@ sub process {
 			} elsif ($type == T_OLD_RADWEGE) {
 			    # XXX not supported anymore
 			    if (/^($map_from)\t($map_to)\b(.*)/) {
-				print W "$1\t$map_middle$3\n";
-				print W "$map_middle\t$2$3\n";
+				print W "$1\t@map_middle$3\n";
+				print W "@map_middle\t$2$3\n";
 			    } elsif (/^($map_to)\t($map_from)\b(.*)/) {
-				print W "$1\t$map_middle$3\n";
-				print W "$map_middle\t$2$3\n";
+				print W "$1\t@rev_middle$3\n";
+				print W "@rev_middle\t$2$3\n";
 			    } else {
 				print W $_;
 			    }
@@ -662,8 +679,11 @@ sub process {
 		}
 	    }
 	}
-	do_log(@cmd_args, @changed_files);
+	if (!$n) {
+	    do_log(@cmd_args, @changed_files);
+	}
     }
+    0;
 }
 
 sub _interpolate {
@@ -700,17 +720,12 @@ sub do_log {
 
 return 1 if caller;
 
-$operation = ($0 =~ /insert_points$/
-	      ? 'insert'
-	      : ($0 =~ /change_line$/
-		 ? 'changeline'
-		 : ($0 =~ /grep_point$/
-		    ? 'grep'
-		    : ($0 =~ /delete_point$/
-		       ? 'delete'
-		       : 'change')
-		   )
-		)
+$operation = ($0 =~ /       insert_points$ /x ? 'insert'      :
+	      $0 =~ / insert_multi_points$ /x ? 'insertmulti' :
+	      $0 =~ /         change_line$ /x ? 'changeline'  :
+	      $0 =~ /          grep_point$ /x ? 'grep'        :
+	      $0 =~ /        delete_point$ /x ? 'delete'      :
+	      					'change'
 	     );
 
 exit process(@ARGV);

@@ -909,7 +909,7 @@ $draw = bless( {
                  'Filename' => undef,
                  'Module' => undef,
                  'FontSizeScale' => 1,
-                 'Image' => bless( do{\(my $o = 139317248)}, 'GD::Image' ),
+                 'Image' => bless( do{\(my $o = 139325440)}, 'GD::Image' ),
                  '_StrDraw' => {
                                  'potsdam' => 1,
                                  'berlin' => 1

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.69 2004/07/08 07:07:34 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.70 2004/07/29 22:11:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2118,11 +2118,13 @@ sub editmenu {
     my $t = $top->Toplevel(-title => "Edit menu");
     $t->transient($top) unless defined $main::transient && !$main::transient;
     require BBBikeAdvanced;
-    $t->Button(-text => "Reload",
-	       -command => \&main::reload_all)->pack(-anchor => "w");
+    my $b0 = $t->Button(-text => "Reload",
+			-command => \&main::reload_all,
+			-anchor => "w",
+		       )->pack(-fill => 'x');
     my $insert_point_mode = 0;
     my $old_mode;
-    $t->Checkbutton
+    my $cb = $t->Checkbutton
 	(-text => "Split street",
 	 -indicatoron => 0,
 	 -variable => \$insert_point_mode,
@@ -2139,13 +2141,27 @@ sub editmenu {
 		 }
 		 $main::c->configure(-cursor => undef);
 	     }
-	 })->pack(-anchor => "w");
-    $t->Button(-text => "Move point",
-	       -command => \&main::change_points)->pack(-anchor => "w");
+	 },
+	 -padx => 14, # XXX X11 only?
+	 -anchor => "w", 
+	)->pack(-fill => "x");
+    $cb->configure(-pady => ($b0->reqheight-$cb->reqheight)/2);
+    $t->Button(-text => "Insert multiple points",
+	       -command => \&main::insert_multi_points,
+	       -anchor => "w", 
+	      )->pack(-fill => "x");
+    $t->Button(-text => "Move point (F3)",
+	       -command => \&main::change_points,
+	       -anchor => "w",
+	      )->pack(-fill => "x");
     $t->Button(-text => "Move line",
-	       -command => \&main::change_line)->pack(-anchor => "w");
+	       -command => \&main::change_line,
+	       -anchor => "w",
+	      )->pack(-fill => "x");
     $t->Button(-text => "Grep point",
-	       -command => \&main::grep_point)->pack(-anchor => "w");
+	       -command => \&main::grep_point,
+	       -anchor => "w",
+	      )->pack(-fill => "x");
     {
 	my @files = (!defined $main::edit_mode || $main::edit_mode eq ''
 		     ? BBBikeEditUtil::get_generated_files()
@@ -2170,9 +2186,11 @@ sub editmenu {
 	$be->insert("end", @files);
     }
     $t->Button(-text => "Delete point",
-	       -command => \&main::delete_point)->pack(-anchor => "w"); # XXX NYI
+	       -command => \&main::delete_point,
+	       -anchor => "w",
+	      )->pack(-fill => "x");
     $t->Label(-justify => "left",
-	      -text => "Use F8 to edit element under cursor.\nAlternatively use F2 for insert point\nand F3 for change point.",
+	      -text => "Use F8 to edit element under cursor.\nAlternatively use F2 for insert point.",
 	     )->pack(-anchor => "w");
     $t->update;
     $t->Popup(-popover => $top,

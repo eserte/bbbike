@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.7 2003/08/07 23:16:11 eserte Exp $
+# $Id: Strasse.pm,v 1.8 2004/08/01 17:38:47 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -153,11 +153,13 @@ sub beautify_landstrasse {
 #   B 109 (...)   (at beginning)
 #   F: Radrouten in Potsdam
 #   R: Europaradwege
+#   ZR: Zubringer zum Radweg
+#   RR: Radialrouten (in Berlin)
 sub parse_street_type_nr {
     my $strname = shift;
-    my($type,$nr) = $strname =~ /\((B|L|BAB|F|R)\s*([\d\.]+)\)/;
+    my($type,$nr) = $strname =~ /\((B|L|BAB|F|R|ZR|RR)\s*([\d\.]+)\)/;
     if (!defined $type) {
-	($type,$nr) = $strname =~ /^(B|L|BAB|F|R)\s*([\d\.]+)(?::|$|\s*\()/;
+	($type,$nr) = $strname =~ /^(B|L|BAB|F|R|ZR|RR)\s*([\d\.]+)(?::|$|\s*\()/;
     }
     ($type, $nr);
 }

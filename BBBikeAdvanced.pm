@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.104 2004/07/16 23:19:22 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.105 2004/07/29 22:12:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1657,6 +1657,7 @@ sub _insert_points_and_co {
 }
 
 sub insert_points { _insert_points_and_co("insert_points", "insert")     }
+sub insert_multi_points { _insert_points_and_co("insert_multi_points", "insertmulti") }
 sub change_points { _insert_points_and_co("change_points", "change")     }
 sub change_line   { _insert_points_and_co("change_line",   "changeline") }
 sub grep_point    { _insert_points_and_co("grep_point",    "grep")       }
