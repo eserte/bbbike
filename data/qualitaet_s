@@ -204,7 +204,7 @@ Edelhofdamm: Kopfsteinpflaster (?)	Q2 3473,25618 3211,25484
 Zepernicker Str: Kopfsteinpflaster, OK (?)	Q1 17223,26153 17013,25874
 Alt-Buch: Kopfsteinpflaster, OK (?)	Q1 17013,25874 16850,25821 16586,25675 16414,25575
 Müggelseedamm: Kopfsteinpflaster, OK	Q1 26625,4958 26964,5039 27215,5200
-Müggelseedamm: Kopfsteinpflaster	Q2 28195,5141 27215,5200
+Müggelseedamm: Kopfsteinpflaster	Q2 28195,5141 27427,5188 27215,5200
 Dahlwitzer Landstr.: Kopfsteinpflaster	Q2 25585,6050 25579,5980
 Auguste-Viktoria-Str.: Kopfsteinpflaster	Q2 2690,8814 2668,8372
 Hüttenweg: Kopfsteinpflaster	Q1 1585,5136 1964,5070
@@ -454,14 +454,13 @@ Wuhlewanderweg: teilweise fester Kies, etwas sandig	Q2 21351,9066 21280,8954 212
 Wuhlewanderweg: Parkweg	Q1 21348,8254 21568,8052 21598,7922 21587,7865 21547,7780 21546,7635
 Wuhlewanderweg: guter Asphalt	Q0 21592,7643 21590,7414 21569,7273 21609,7202 21897,6952 21976,6848 22054,6622
 Wuhlewanderweg: guter Asphalt	Q0 22025,6612 22099,6401 22150,6324 22214,6271 22225,6244 22238,6195
-Wuhlewanderweg: guter Verbundsteinbelag	Q0 22240,6118 22135,5882 22079,5873 21846,5856 21662,5768 21615,5693
-Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1 22079,5873 21846,5856 21662,5768 21615,5693
-Hämmerlingstr.: Kopfsteinpflaster	Q2 22079,5873 22084,5774
+Wuhlewanderweg: guter Verbundsteinbelag	Q0 22240,6118 22135,5882 22079,5873 21846,5856 21744,5804 21630,5671
+Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1 22079,5873 21846,5856 21744,5804 21630,5671
 Hämmerlingstr.: mäßiger Asphalt	Q1 22084,5774 22095,5585
 Dorfstr.: Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2 30370,3571 30183,3377 30158,3275 29902,3104 29955,3046
 Rialtoring: teilweise Kopfsteinpflaster, sonst Asphalt	Q1 31078,3372 31012,3146
 Biberpelzstr.: teilweise Kopfsteinpflaster	Q1 31441,2744 31546,2768
-(Pelzlake): Waldweg, teilweise matschig	Q2 31950,1810 31115,2105
+(Pelzlake): Waldweg, teilweise matschig oder sandig	Q2 31865,1794 31115,2105
 Am Kleinen Müggelsee: asphaltierter Waldweg	Q0 29964,2422 29899,2399 29738,2467 29532,2556 28862,2916 28783,2916 28748,2963 28723,3098
 Koppelweg: Kopfsteinpflaster	Q2 12173,4350 12288,4378 12543,4386
 Limastr.: Kopfsteinpflaster	Q2 -1117,3317 -1128,3334 -1195,3503 -1211,3638 -1277,3854 -1354,4005
@@ -515,7 +514,7 @@ Rominter Allee: Kopfsteinpflaster (Q2, vielleicht aber Q1?)	Q2 -67,11989 -95,120
 Waldemarstr.: teilweise Kopfsteinpflaster/Asphalt	Q1 12180,10604 12056,10655
 Sebastianstr.: Bordsteine	Q3 10918,11084 10939,11045
 Wuhlheide/R1: Parkweg, OK	Q1 20021,6402 18186,7200 18052,7148 18003,7144
-Sobernheimer Str.: Kopfsteinpflaster/Asphalt	Q2 27609,305 27667,368 27741,446 28190,984
+Sobernheimer Str.: Kopfsteinpflaster/Asphalt	Q2 27609,305 27667,368 27741,446 28188,962
 An der Krampe: Waldweg, OK	Q1 28520,281 28430,259 28349,364 28292,365 28265,157 28265,68 28213,-45 28188,-342 28107,-336 28008,-390 27978,-473 27847,-665
 An der Krampe: schlechter Waldweg, Wurzeln	Q3 27847,-665 27793,-733 27759,-995 27727,-1078 27767,-1217 27758,-1358 27765,-1654 27695,-2161 27718,-2301 27932,-2444 27985,-2389 28144,-2262 28116,-2127 28163,-2013
 Am Seddinsee: Waldweg	Q2 28163,-2013 28338,-2265 28568,-2346 28794,-2258 28898,-1986 28841,-1872
@@ -751,4 +750,9 @@ Teltower Weg: Waldweg?	Q1 -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -174
 Parforceweg: Waldweg?	Q1 -643,7252 -728,7310 -1008,7427 -1142,7493 -1308,7558 -1328,7597 -1787,7932 -1843,8128 -2028,8270 -2078,8217 -2117,8204 -2156,8208 -2294,8232 -2386,8282
 Alte Spandauer Poststr.: Waldweg?	Q1 -1415,9144 -1482,9276 -1512,9438 -1495,9518 -1448,9644 -1453,9748 -1491,9801 -1602,9915 -1846,10292
 (Pappelplatz): Asphalt	Q0 425,8766 297,8894 197,8973 30,9105
+(Weg am Müggelsee): Waldweg, teilweise sandig, teilweise OK	Q2 27427,5188 27470,5093 27852,5017 28286,4943 28361,5068
+(Waldweg): OK, 22 km/h möglich	Q1 29075,4753 29092,4761 29704,5009
+(Waldweg parallel zur Straßenbahn): Waldweg, Schotter, teilweise sandig	Q2 30339,5457 32192,5915
+Wanderweg Erkner - Hessenwinkel: guter Parkweg	Q1 33530,2765 33361,2752 33086,2790 32972,2832
+(Zu den Müggelheimer Wiesen): asphaltiert	Q0 29899,2399 29549,2267 29414,2373
 Voigtstr.: Kopfsteinpflaster	Q2 14702,12157 14748,12314 14798,12502 14842,12826

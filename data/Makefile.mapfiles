@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.9 2003/07/10 00:03:52 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.9 2003/07/10 00:03:52 eserte Exp eserte $
 #
 
 # should this be here?
@@ -134,6 +134,7 @@ MAPFILES=		$(MAPFILES_DATA_DIR)/strassen.shp \
 			$(MAPFILES_DATA_DIR)/comments.shp \
 			$(MAPFILES_DATA_DIR)/faehren.shp \
 			$(MAPFILES_DATA_DIR)/hoehe.shp \
+			$(MAPFILES_DATA_DIR)/mount.shp \
 			$(MAPFILES_DATA_DIR)/ampeln.shp \
 			$(MAPFILES_DATA_DIR)/gesperrt.shp \
 			$(MAPFILES_DATA_DIR)/gesperrt30.shp \
@@ -243,6 +244,10 @@ $(MAPFILES_DATA_DIR)/comments.shp:	comments
 
 $(MAPFILES_DATA_DIR)/faehren.shp:	faehren
 	$(BBD2ESRI) -type ferry -o $(MAPFILES_DATA_DIR)/faehren faehren
+
+# XXX
+$(MAPFILES_DATA_DIR)/mount.shp:	mount
+	$(BBD2ESRI) -type mount -o $(MAPFILES_DATA_DIR)/mount mount
 
 $(MAPFILES_DATA_DIR)/hoehe.shp:	hoehe
 	$(BBD2ESRI) -shapetype point -o $(MAPFILES_DATA_DIR)/hoehe hoehe

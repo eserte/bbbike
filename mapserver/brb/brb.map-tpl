@@ -1200,6 +1200,55 @@ LAYER
   END
 END
 
+# Steigungen
+LAYER
+  NAME "Steigungen"
+  TYPE LINE
+  STATUS ON
+  GROUP mount
+  DATA mount
+
+  LABELITEM "NAME"
+  
+  CLASS
+    COLOR 255 255 255
+    SYMBOL "raute"
+    SIZE 4
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+
+  METADATA
+    WMS_TITLE "Steigungen"
+    WMS_ABSTRACT "Steigungen"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Steigungen (Annotations)"
+  GROUP mount
+  MAXSCALE 75000
+  STATUS ON
+  DATA mount
+  TYPE ANNOTATION
+
+  LABELITEM "STRNR" # dummy ... should be invisible i.e. one space
+  CLASS
+    NAME "mount"
+    COLOR 0 255 0
+    SYMBOL '[% IMAGE_DIR %]/steigung.[% IMAGE_SUFFIX %]'
+    LABEL
+      MINFEATURESIZE 10
+      MINDISTANCE 150
+      POSITION CC
+      SIZE TINY
+      COLOR 0 0 0
+    END
+  END
+END
+
 LAYER
   NAME "Fragezeichen"
   GROUP fragezeichen
