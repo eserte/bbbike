@@ -1222,9 +1222,9 @@ if (!defined $top) {
     $top->scaling($scaling) if defined $scaling && $scaling ne "";
 
     # Es gibt gute Gründe, für CloseMainWin kein Escape zu nehmen
-    # (damit können Vorgänge abgebrochen werden) und für CloseWin kein q
-    # zu nehmen (weil in Dialogen evtl. Text eingegeben werden muss).
-    $top->eventAdd(qw[<<CloseMainWin>> <Control-c> <q>]);
+    # (damit können Vorgänge abgebrochen werden). Verwendung von C-q,
+    # weil das mittlerweile quasi-Standard ist.
+    $top->eventAdd(qw[<<CloseMainWin>> <Control-c> <Control-q>]);
     $top->eventAdd(qw[<<CloseWin>>     <Control-c> <Escape>]);
 
     if ($os eq 'win') { # vorerst, Windows kann keine tearoffs

@@ -88,7 +88,7 @@ sub menubar {
 			-command => $self->{PrintCommand});
     my $print_menu = $file_menu->cascade(-label => M"D~ruckeinstellungen");
     $file_menu->command(-label => M"~Beenden",
-			-accelerator => "q",
+			-accelerator => "Ctrl-q",
 			-command => $self->{ExitCommand});
 
     my $layer_menu = $mb->cascade(-label => M"~Kartenebenen");
