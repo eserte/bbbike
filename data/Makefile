@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.39 2005/01/08 22:56:00 eserte Exp eserte $
+# $Id: Makefile,v 2.40 2005/01/20 00:45:21 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at

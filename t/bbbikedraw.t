@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.14 2005/01/14 00:50:37 eserte Exp $
+# $Id: bbbikedraw.t,v 1.15 2005/01/20 00:26:34 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -13,6 +13,7 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/../data",
 	 "$FindBin::RealBin",
+	 "$FindBin::RealBin/../projects/www.berliner-stadtplan.com/lib",
 	);
 use Strassen::Core;
 use BBBikeDraw;
@@ -37,7 +38,12 @@ BEGIN {
     @modules = qw(GD/png GD/gif GD/jpeg GD::SVG SVG PDF PDF2
 		  Imager/png Imager/jpeg
 		  MapServer MapServer;noroute
-		  ImageMagick/png ImageMagick/jpeg);
+		  ImageMagick/png ImageMagick/jpeg
+		 );
+
+    if (eval { require BBBikeDraw::BerlinerStadtplan; 1 }) {
+	push @modules, "BerlinerStadtplan";
+    }
 }
 
 # Timings are (on my 466MHz machine) with -slow:
@@ -110,6 +116,8 @@ sub draw_map {
 	$imagetype = "svg";
     } elsif ($module =~ /^PDF2?$/) {
 	$imagetype = "pdf";
+    } elsif ($module eq 'BerlinerStadtplan') {
+	$imagetype = "http.html";
     }
 
     my($fh, $filename) = tempfile(UNLINK => !$debug,

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.46 2004/12/30 21:45:34 eserte Exp eserte $
+# $Id: Makefile,v 1.47 2005/01/20 00:44:16 eserte Exp $
 #
 
 # Targets:
@@ -151,7 +151,10 @@ clean-cache-files-on-remote:
 	-ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
 	    rm /tmp/b_de_\*
 
-rsync:	check-rsync-ok clean-cache-files-on-remote do-rsync
+rsync:			check-rsync-ok \
+			clean-cache-files-on-remote \
+			do-rsync \
+			post-rsync-bbbike-data
 
 check-rsync-ok:
 	[ ! -e ${CURDIR}/.not_rsyncable ] || ( echo "Not rsyncable!"; false )
@@ -168,9 +171,17 @@ rsync-mapserver:
 	@echo NYI
 	false
 
-rsync-bbbike-data:	clean-cache-files-on-remote
+rsync-bbbike-data:	clean-cache-files-on-remote \
+			do-rsync-bbbike-data \
+			post-rsync-bbbike-data
+
+do-rsync-bbbike-data:
 	${RSYNC} ${RSYNC_ARGS} \
 	    BBBike/data/ ${RSYNC_DEST}/BBBike/data/
+
+post-rsync-bbbike-data:
+	-ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
+	   "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/miscsrc/winter_optimization.pl &"
 
 # use -t in rsync?
 tkrsync:
@@ -289,8 +300,6 @@ prepare-bbbike-dist-data-datadir:
 prepare-bbbike-dist-data-datadir-additional:
 	cp -pf ${BBBIKE_ROOT_DIR}/data/*-cooked \
 	    ${CURDIR}/BBBike/data/
-	cp -pf ${BBBIKE_ROOT_DIR}/tmp/winter_optimization.st \
-	    ${CURDIR}/BBBike/tmp/
 
 # temp_blockings is not yet in MANIFEST, so copy is necessary
 prepare-bbbike-dist-data-temp-blockings-dir:

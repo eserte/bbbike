@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.6 2005/01/14 00:56:49 eserte Exp $
+# $Id: bbbike.cgi,v 7.7 2005/01/20 00:30:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -637,7 +637,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.7 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -4020,7 +4020,8 @@ sub draw_route {
 	    );
     }
 
-    eval { $draw->pre_draw }; return if $@; # XXX use ->can instead?
+    $draw->pre_draw
+	if $draw->can("pre_draw");
     $draw->draw_wind   if $draw->can("draw_wind"); # see comment in BBBikeDraw
     $draw->draw_map    if $draw->can("draw_map");
     $draw->draw_route  if $draw->can("draw_route");
@@ -5426,7 +5427,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/01/14 00:56:49 $';
+    my $cgi_date = '$Date: 2005/01/20 00:30:23 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

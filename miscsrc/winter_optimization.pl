@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: winter_optimization.pl,v 1.2 2005/01/01 22:24:34 eserte Exp $
+# $Id: winter_optimization.pl,v 1.3 2005/01/20 00:45:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -27,8 +27,8 @@ use lib ("$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/../data",
 	);
 use Strassen;
-use BBBikeXS;
-use Hash::Util qw(lock_keys);
+eval 'use BBBikeXS';
+#use Hash::Util qw(lock_keys);
 use Getopt::Long;
 use Storable qw(store);
 
@@ -45,7 +45,7 @@ $str{"qs"} = Strassen->new("qualitaet_s");
 $str{"rw"} = Strassen->new("radwege_exact");
 $str{"kfz"} = Strassen->new("comments_kfzverkehr");
 $str{"tram"} = Strassen->new("comments_tram");
-lock_keys %str;
+#lock_keys %str;
 
 my %net;
 for my $type (keys %str) {
@@ -62,7 +62,7 @@ for my $type (keys %str) {
     }
     $net{$type}->make_net_cat(%args);
 }
-lock_keys %net;
+#lock_keys %net;
 
 my $net = {};
 

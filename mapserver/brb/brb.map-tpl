@@ -1023,7 +1023,12 @@ LAYER
 
   CLASSITEM 'CAT'
 
+[%# This is a workaround for a strange bug on radzeit.de.
+  # Unless the first entry is disabled, nothing will get displayed
+-%]
+[% xxx_is_first = 1 -%]
 [% BLOCK CLASS_N -%]
+[% IF !xxx_is_first -%]
   CLASS
     EXPRESSION 'NN'
 [% IF p.legend -%]
@@ -1047,6 +1052,9 @@ LAYER
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
+[% ELSE -%]
+[%  xxx_is_first = 0 -%]
+[% END -%]
   CLASS
     EXPRESSION 'N'
 [% IF p.legend -%]

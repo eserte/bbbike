@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.16 2003/12/22 19:49:03 eserte Exp eserte $
+# $Id: mapserver_address.cgi,v 1.17 2005/01/20 00:31:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -275,7 +275,7 @@ sub resolve_fulltext {
     my @res;
     my @files = grep { !/(relation_gps|coords\.data|ampelschaltung|-orig|-info|~|\.st|\.desc|RCS|CVS)$/ } glob("$dir/*");
     die "No files in directory $dir" if !@files; # should not happen
-    my @cmd = ("fgrep", "-i", "--", param("searchterm"), @files);
+    my @cmd = ("fgrep", "-q", "-i", "--", param("searchterm"), @files);
     #warn "Cmd: @cmd\n";
     open(GREP, "-|") or do {
 	exec @cmd;

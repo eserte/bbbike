@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.3 2005/01/02 22:48:39 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.4 2005/01/20 00:26:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -101,6 +101,13 @@ sub do_display {
 	    system("xpdf $filename &");
 	} else {
 	    warn "Can't display $filename";
+	}
+    } elsif ($imagetype =~ /http\.html$/) { # very pseudo image type
+	# XXX strip HTTP header from $filename!
+	if (eval { require WWWBrowser; 1}) {
+	    WWWBrowser::start_browser("file:$filename");
+	} else {
+	    warn "Can't find a browser to display $filename";
 	}
     } else {
 	if (is_in_path("xv")) {

@@ -7871,6 +7871,8 @@ sub load_save_route {
 
 	    undef $search_route_flag;
 	    search_route_mouse_cont();
+
+	    status_message(Mfmt("Typ der Routendatei: %s, Punkte: %s", $res->{Type}, scalar(@realcoords)), "info");
 	};
 
 	if ($@) {
