@@ -28,7 +28,11 @@ MYDESTDIR=	${PREFIX}/BBBike
 
 .if !defined(PERL_VER) || ${PERL_VER} == 5.005
 PLIST=		${PKGDIR}/pkg-plist.5005
+LOCAL_PERL_ARCH!=perl -MConfig -e 'print qq{$$Config{archname}}'
+.else
+LOCAL_PERL_ARCH!=perl -MConfig -e 'print qq{$$Config{version}/$$Config{archname}}'
 .endif
+PLIST_SUB=	LOCAL_PERL_ARCH=${LOCAL_PERL_ARCH}
 
 do-build:
 	cd ${WRKSRC}/ext && ${MAKE} PERL=${PERL5} all install
