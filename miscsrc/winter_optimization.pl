@@ -134,7 +134,7 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 		last CALC;
 	    }
 
-	    if (!$is_bridge && $net{"br"}->{Net}{$k1}{$k2} eq 'Br') {
+	    if (!$is_bridge && defined $net{"br"}->{Net}{$k1}{$k2} && $net{"br"}->{Net}{$k1}{$k2} eq 'Br') {
 		$is_bridge = 1;
 	    }
 
