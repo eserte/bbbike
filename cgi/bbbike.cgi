@@ -1006,7 +1006,7 @@ sub _potsdam_hack {
 	$name = $potsdam_str->get($pos)->[Strassen::NAME];
 	my $scope = $q->param("scope");
 	if (!$scope || $scope eq "city") {
-	    $q->param("scope", "region");
+	    $q->param("scope", "region"); # XXX increment_scope?
 	}
     }
     $name;
@@ -1095,7 +1095,7 @@ sub choose_form {
 		    if (!defined $pos) {
 			if ($str->{Scope} eq 'city') {
 			    warn "Enlarge streets for umland\n" if $debug;
-			    $q->param("scope", "region");
+			    $q->param("scope", "region");  # XXX increment_scope?
 			    $str = get_streets_rebuild_dependents(); # XXX maybe wideregion too?
 			}
 			$pos = $str->choose_street($strasse, $bezirk);
@@ -1337,7 +1337,7 @@ sub choose_form {
 		    if (!defined $pos) {
 			if ($str->{Scope} eq 'city') {
 			    warn "Enlarge streets for umland\n" if $debug;
-			    $q->param("scope", "region");
+			    $q->param("scope", "region");  # XXX increment_scope?
 			    $str = get_streets_rebuild_dependents(); # XXX maybe wideregion too?
 			}
 			$pos = $str->choose_street($strasse, $bezirk);
@@ -1508,9 +1508,9 @@ EOF
 	    print "<td>$fontstr" if $bi->{'can_table'};
 	    if (defined $xy) {
 		new_kreuzungen();
-		my $cr = crossing_text($xy);
-		print "$cr";
 		my($best) = get_nearest_crossing_coords(split(/,/, $xy));
+		my $cr = crossing_text(defined $best ? $best : $xy);
+		print "$cr";
 		print "<input type=hidden name=" . $type .
 		    "c value=\"$best\">";
 		print "<input type=hidden name=" . $type .
@@ -4097,7 +4097,7 @@ sub init_plz {
 	require PLZ::Multi;
 	$plz = PLZ::Multi->new("Berlin.coords.data",
 			       "Potsdam.coords.data",
-			       Strassen->new("plaetze"),
+			       Strassen->new("plaetze"), # XXX why?
 			       -cache => 1,
 			      );
     } else {
@@ -4154,6 +4154,21 @@ sub get_next_scopes {
     } else {
 	return ();
     }
+}
+
+# Increment scope and return the new scope, or undef if the largest scope
+# is already used. Call get_streets_rebuild_dependents after.
+sub increment_scope {
+    my $scope = $q->param("scope");
+    if ($scope eq "" || $scope eq "city") {
+	$scope = "region";
+    } elsif ($scope eq "region") {
+	$scope = "wideregion";
+    } else {
+	return undef;
+    }
+    $q->param("scope", $scope);
+    $scope;
 }
 
 # falls die Koordinaten nicht exakt existieren, wird der nächste Punkt
@@ -4702,12 +4717,18 @@ sub get_nearest_crossing_coords {
     my($x,$y) = @_;
     new_kreuzungen();
     my $xy;
-    if ($use_exact_streetchooser) {
-	my $str = get_streets();
-	my $ret = $str->nearest_point("$x,$y", FullReturn => 1);
-	$xy = $ret->{Coord};
-    } else {
-	$xy = (($kr->nearest_loop($x,$y))[0]);
+    while (1) {
+	if ($use_exact_streetchooser) {
+	    my $str = get_streets();
+	    my $ret = $str->nearest_point("$x,$y", FullReturn => 1);
+	    $xy = $ret->{Coord};
+	} else {
+	    $xy = (($kr->nearest_loop($x,$y))[0]);
+	}
+	last if defined $xy;
+	my $new_scope = increment_scope();
+	last if !defined $new_scope;
+	get_streets_rebuild_dependents();
     }
     $xy;
 }
