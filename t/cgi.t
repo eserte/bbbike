@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.11 2003/08/25 06:47:23 eserte Exp $
+# $Id: cgi.t,v 1.12 2003/08/28 06:00:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -150,8 +150,6 @@ for my $cgiurl (@urls) {
     {
 	my $content;
 	my $route;
-
- XXX:
 
 	# Start and goal are in plaetze
 	$req = new HTTP::Request
@@ -329,6 +327,18 @@ for my $cgiurl (@urls) {
 	    is($res->content_type, 'image/png', $image_url);
 	    ok(length($content) > 0);
 	}
+    }
+
+ XXX:
+
+    {
+	# Klick on "alle Straßen" link
+	$req = new HTTP::Request
+	    (GET => "$action?all=1", $hdrs);
+	$res = $ua->request($req);
+	ok($res->is_success) or diag $res->as_string;
+	my $content = uncompr($res);
+	like($content, qr/B(?:ö|&ouml;)lschestr.*Brachvogelstr.*(?:Ö|&Ouml;)schelbronner.Weg.*Pallasstr/s, "Correct sort order");
     }
 
     if ($ortsuche) {

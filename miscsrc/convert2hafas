@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: berlinmap2hafas,v 1.39 2003/08/24 23:20:28 eserte Exp eserte $
+# $Id: berlinmap2hafas,v 1.39 2003/08/24 23:20:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001 Slaven Rezic. All rights reserved.
@@ -92,7 +92,6 @@ my($do_ampelschaltung, $do_ampelschaltung2);
 my $data_from_file;
 my $data_from_bbd_file;
 my $strict;
-my $preserve_comments; # XXX needs more thought...
 if (!GetOptions("bahnhof=s"        => \$bahnhof,
 		"specborder=s"     => \$specborder,
 		"specsperre=s"     => \$specsperre,
@@ -106,7 +105,6 @@ if (!GetOptions("bahnhof=s"        => \$bahnhof,
 		"datafromfile=s"   => \$data_from_file,
 		"datafrombbd|datafrombbdfile=s"   => \$data_from_bbd_file,
 		"strict!"          => \$strict,
-		"preservecomments!" => \$preserve_comments,
 	       )) {
     usage("Wrong option");
 }
@@ -213,20 +211,18 @@ if ($f eq '-') {
 LINES: while(defined($_ = nextline())) {
     chomp;
 
-    if (!$preserve_comments) {
-	if (/^\#--(\S+)\s*(.*)/) {
-	    my($dir, $text) = ($1, $2);
-	    if ($dir eq 'append') {
-		$append = $text;
-	    } elsif ($dir eq 'end_append') {
-		undef $append;
-	    } else {
-		die "Unknown directive: $dir";
-	    }
+    if (/^\#--(\S+)\s*(.*)/) {
+	my($dir, $text) = ($1, $2);
+	if ($dir eq 'append') {
+	    $append = $text;
+	} elsif ($dir eq 'end_append') {
+	    undef $append;
+	} else {
+	    die "Unknown directive: $dir";
 	}
     }
 
-    next if !$preserve_comments && (/^\#/ or /^\s*$/);
+    next if /^\#/ or /^\s*$/;
 
     my @specborder_list;
     my $specborder_flag = 0;
@@ -265,18 +261,8 @@ LINES: while(defined($_ = nextline())) {
     my $coords = "";
     my $last;
   LINE: foreach (@coord) {
-	if ($_ eq 'X') {
-	    if ($preserve_comments) {
-		die "Hit X in line @coord";
-	    }
-	    next;
-	}
-	if ($_ =~ /^\#/) {
-	    if ($preserve_comments) {
-		die "Hit # in line @coord";
-	    }
-	    last LINE;
-	}
+	next if $_ eq 'X';
+	last LINE if $_ =~ /^\#/;
 
 	# überprüft, ob es doppelte Koordinaten gibt
 	if (defined $last and $_ eq $last) {
@@ -291,9 +277,6 @@ LINES: while(defined($_ = nextline())) {
 	}
 
 	if (/^(\d+)$/) {
-	    if ($preserve_comments) {
-		die "Unsupported conversion of old index style: $_";
-	    }
 	    if ($convert_all) {
 		my($x, $y) = @{$koord->FETCH($1)};
 		$coords .= " " if $coords ne '';

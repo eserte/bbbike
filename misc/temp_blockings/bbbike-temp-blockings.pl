@@ -156,4 +156,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Wegen eines Festes kann die Reichsstraße am Sonnabend ab 4 Uhr bis Sonntag (24 Uhr) vom Steubenplatz bis zum Theodor-Heuss-Platz nicht passiert werden',
        type  => 'gesperrt',
      },
+     { from  => 1062829800, # 2003-09-06 08:30
+       until => 1062943200, # 2003-09-07 16:00
+       file  => '20030907.bbd',
+       text  => 'Rixdorfer Straße, Alt-Mariendorf, Mariendorfer Damm, Ullsteinstraße wegen Rundkurs Sportveranstaltung gesperrt. Dauer: 07.09.2003 zwischen 08.30 Uhr und 16.00 Uhr',
+       type  => 'gesperrt',
+     },
     );
