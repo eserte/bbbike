@@ -1,4 +1,4 @@
-// $Id: bbbike_result.js,v 1.10 2003/09/02 22:02:05 eserte Exp $
+// $Id: bbbike_result.js,v 1.11 2004/07/01 14:06:43 eserte Exp $
 // (c) 2003 Slaven Rezic. All rights reserved.
 
 function test_temp_blockings_set() {
@@ -72,11 +72,18 @@ function show_map(bbbike_html_dir) {
 	imagetype_value != 'berlinerstadtplan') {
         geometry_string = ",height=" + y + ",width=" + x;
     }
-    var w = window.open(bbbike_html_dir + "/pleasewait.html", "BBBikeGrafik",
-			"locationbar=no,menubar=" + menubar +
-			",screenX=20,screenY=20" + addwindowparam +
-                        geometry_string);
-    w.focus();
+
+    // XXX cb_attachment and as_attachment never tested
+    if (frm.cb_attachment.checked) {
+	frm.as_attachment.value = "bla.foo";
+    } else {
+	frm.as_attachment.value = "";
+	var w = window.open(bbbike_html_dir + "/pleasewait.html", "BBBikeGrafik",
+			    "locationbar=no,menubar=" + menubar +
+			    ",screenX=20,screenY=20" + addwindowparam +
+			    geometry_string);
+	w.focus();
+    }
     return true;
 }
 
