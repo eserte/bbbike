@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Multi.pm,v 1.1 2003/07/14 06:37:01 eserte Exp $
+# $Id: Multi.pm,v 1.2 2003/07/17 19:55:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -16,13 +16,17 @@ package PLZ::Multi;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 use Getopt::Long qw(GetOptions);
-use File::Temp qw(tempfile);
+BEGIN {
+    if (!eval q{ use File::Temp qw(tempfile); 1; }) {
+	*tempfile = sub { (undef, "/tmp/plzmulti.$$") };
+    }
+}
 use File::Copy qw(move);
 use File::Basename qw(basename);
-use File::Spec::Functions qw(file_name_is_absolute catfile);
+use File::Spec;
 
 use PLZ;
 use Strassen::Core;
@@ -41,9 +45,9 @@ sub new {
     }
 
     for (@files) {
-	if (!file_name_is_absolute($_)) {
+	if (!File::Spec->file_name_is_absolute($_)) {
 	    for my $dir (@Strassen::datadirs) {
-		my $f = catfile($dir, $_);
+		my $f = File::Spec->catfile($dir, $_);
 		if (-r $f) {
 		    $_ = $f;
 		    last;

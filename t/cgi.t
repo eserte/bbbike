@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.6 2003/07/14 06:36:42 eserte Exp $
+# $Id: cgi.t,v 1.7 2003/07/17 19:55:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -20,6 +20,7 @@ use LWP::UserAgent;
 use URI::WithBase;
 use Getopt::Long;
 use Data::Dumper;
+use Safe;
 
 eval { require Compress::Zlib };
 
@@ -28,6 +29,8 @@ my @urls;
 if (defined $ENV{BBBIKE_TEST_CGIURL}) {
     push @urls, $ENV{BBBIKE_TEST_CGIURL};
 }
+
+my $cpt = Safe->new;
 
 my $fast = 0;
 my $ortsuche = 0; # XXX funktioniert nicht mehr
@@ -132,9 +135,7 @@ for my $cgiurl (@urls) {
 	    ok($content =~ /Dudenstr/);
 	} elsif ($output_as eq 'perldump') {
 	    is($res->content_type, 'text/plain');
-	    require Safe;
-	    my $s = Safe->new;
-	    my $route = $s->reval($content);
+	    my $route = $cpt->reval($content);
 	    is(ref $route, 'HASH');
 	} elsif ($output_as eq 'mapserver') {
 	    #warn $res->content_type;
@@ -146,11 +147,10 @@ for my $cgiurl (@urls) {
 	}
     }
 
- XXX:
-
     {
 	my $content;
-	# search_coord => Potsdam
+	my $route;
+	# search_coord in and to Potsdam
 	$req = new HTTP::Request
 	    ('GET', "$action?startname=Alemannenstr.+%28Nikolassee%29&startplz=14129&startc=-3360%2C2917&zielc=-11833%2C-63&zielname=Helmholtzstr.+%28Potsdam%29&zielplz=&pref_seen=1&pref_speed=21&pref_cat=&pref_quality=&pref_ampel=yes&scope=");
 	$res = $ua->request($req);
@@ -171,6 +171,69 @@ for my $cgiurl (@urls) {
 	ok($res->is_success, "Potsdam => Potsdam") or diag $res->as_string;
 	$content = uncompr($res);
 	ok($content =~ qr/angekommen/);
+
+	# this is critical --- both streets in the neighborhood of Berlin
+	$req = new HTTP::Request
+	    ('GET', "$action?startc=-12064%2C-284&zielc=-11831%2C-70&startname=Otto-Nagel-Str.+%28Potsdam%29&zielname=Helmholtzstr.+%28Potsdam%29&pref_seen=1&pref_speed=21&pref_cat=&pref_quality=&output_as=perldump");
+	$res = $ua->request($req);
+	ok($res->is_success, "Otto-Nagel => Manger (Potsdam)") or diag $res->as_string;
+	$content = uncompr($res);
+	$route = $cpt->reval($content);
+	is(ref $route, "HASH");
+	ok($route->{Len} > 0 && $route->{Len} < 500, "check route length")
+	    or diag "Route length: $route->{Len}";
+
+	# this had once an empty route as the result:
+	$req = new HTTP::Request
+	    ('GET', "$action?startname=Mangerstr.+%28Potsdam%29&startplz=&startc=-12236%2C-447&zielname=Berliner+Allee&zielplz=13088&zielc=13332%2C15765&pref_seen=1&pref_speed=21&pref_cat=&pref_quality=&scope=region&output_as=perldump");
+	$res = $ua->request($req);
+	ok($res->is_success, "Manger => Berliner Allee")
+	    or diag $res->as_string;
+	$content = uncompr($res);
+	$route = $cpt->reval($content);
+	is(ref $route, "HASH");
+	ok($route->{Len} > 30000 && $route->{Len} < 35000,
+	   "check route length")
+	    or diag "Route length: $route->{Len}";
+
+	# scope=region gets lost in "Rückweg". bbbike.cgi should handle
+	# this case:
+	$req = new HTTP::Request
+	    ('GET', "$action?startc=13332%2C15765&zielc=-12236%2C-447&startname=Berliner+Allee&zielname=Mangerstr.+%28Potsdam%29&pref_seen=1&pref_speed=21&pref_cat=&pref_quality=&output_as=perldump");
+	$res = $ua->request($req);
+	ok($res->is_success, "way back") or diag $res->as_string;
+	$content = uncompr($res);
+	$route = $cpt->reval($content);
+	if (is(ref $route, "HASH")) {
+	    ok($route->{Len} > 30000 && $route->{Len} < 35000,
+	       "check route length")
+		or diag "Route length: $route->{Len}";
+	} else {
+	    ok(0);
+	}
+
+ XXX:
+
+	# This is only correct with use_exact_streetchooser=true
+	$req = new HTTP::Request
+	    ('GET', "$action?startc=13332%2C15765&zielc=-10825,-62&startname=Berliner+Allee&zielname=Babelsberg+%28Potsdam%29&pref_seen=1&pref_speed=21&pref_cat=&pref_quality=&output_as=perldump&scope=");
+	$res = $ua->request($req);
+	ok($res->is_success, "use exact streetchooser") or diag $res->as_string;
+	$content = uncompr($res);
+	$route = $cpt->reval($content);
+	if (is(ref $route, "HASH")) {
+	    ok($route->{Len} > 30000 && $route->{Len} < 35000,
+	       "check route length")
+		or diag "Route length: $route->{Len}";
+	    ok(grep({ $_->{Strname} =~ /Park Babelbsberg/ } @{ $route->{Route} }),
+	       "Route through Park Babelsberg");
+	} else {
+	    diag($@);
+	    ok(0);
+	    ok(0);
+	}
+
+	# XXX Maybe utilize WWW::Mechanize(::Shell) for more tests
     }
 
     $req = new HTTP::Request
@@ -326,9 +389,7 @@ for my $cgiurl (@urls) {
 	$res = $ua->request($req);
 	ok($res->is_success) or diag $res->as_string;
 	$content = uncompr($res);
-	require Safe;
-	my $s = Safe->new;
-	my $route = $s->reval($content);
+	my $route = $cpt->reval($content);
 	is(ref $route, "HASH");
 	for my $h_member (qw(Speed Power)) {
 	    is(ref $route->{$h_member}, "HASH");

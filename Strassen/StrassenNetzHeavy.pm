@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetzHeavy.pm,v 1.12 2003/07/10 00:01:22 eserte Exp $
+# $Id: StrassenNetzHeavy.pm,v 1.12 2003/07/10 00:01:22 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -555,11 +555,9 @@ sub add_umsteigebahnhoefe {
 	}
 	my $coords = $ret->[Strassen::COORDS()][0];
 	if (exists $bahnhoefe{$name}) {
-	    my($x1,$y1) = split(/,/, $coords);
 	    foreach my $p (@{ $bahnhoefe{$name} }) {
 		if ($coords ne $p) {
-		    my($x2,$y2) = split(/,/, $p);
-		    my $entf = Strassen::Util::strecke([$x1,$y1],[$x2,$y2]);
+		    my $entf = Strassen::Util::strecke_s($coords, $p);
 		    $self->store_to_hash($self->{Net}, $coords, $p, $entf);
 		    $self->store_to_hash($self->{Net}, $p, $coords, $entf);
 		}

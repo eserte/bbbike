@@ -76,4 +76,19 @@ require Time::Local;
 Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beiden Richtungen gesperrt. Dauer: 11.07.2003, 20.00 Uhr bis 14.07.2003, 04.00 Uhr",
        type  => "handicap",
      },
+     { from  => Time::Local::timelocal(reverse(2003-1900,7-1,19,8,00,00)),
+       until => Time::Local::timelocal(reverse(2003-1900,7-1,20,20,00,00)),
+       file  => "stauffenbergstr.bbd",
+       text  => "Stauffenbergstr. und Umgebung wegen Veranstaltung gesperrt. Dauer: 20.07.2003, 08.00 Uhr bis 20.00 Uhr"
+     },
+     { from  => Time::Local::timelocal(reverse(2003-1900,7-1,18,7,00,00)),
+       until => Time::Local::timelocal(reverse(2003-1900,7-1,20,23,59,00)),
+       file  => "oberbaumbruecke.bbd",
+       text  => "Oberbaum-Brückenfest am 20.07.2003 zwischen 07.00 Uhr bis 24.00 Uhr für den Fahrzeugverkehr gesperrt."
+     },
+     { from  => Time::Local::timelocal(reverse(2003-1900,8-1,8,7,00,00)),
+       until => Time::Local::timelocal(reverse(2003-1900,8-1,10,23,59,00)),
+       file  => "oberbaumbruecke.bbd",
+       text  => "Oberbaum-Brückenfest am 10.08.2003 zwischen 07.00 Uhr bis 24.00 Uhr für den Fahrzeugverkehr gesperrt."
+     },
     );

@@ -180,6 +180,7 @@ sub look {
     my $file = $args{File} || $self->{File};
     my @res;
 
+    #XXX use fgrep instead of grep? slightly faster, no quoting needed!
     my $grep_type = ($args{Agrep} ? 'agrep' : 'grep');
     my @push_inx;
     if      ($self->{DataFmt} == FMT_NORMAL) {

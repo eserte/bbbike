@@ -32,7 +32,6 @@ TARGETS+=	handicap_s handicap_l
 TARGETS+=	label vorfahrt comments relation_gps nolighting
 TARGETS+=	housenumbers green
 
-# XXX sp of writable/writeable?
 WRITEABLE=	chmod u+w,ugo+r
 READONLY=	chmod ugo+r,ugo-w
 

@@ -538,6 +538,8 @@ eval { local $SIG{'__DIE__'};
 #BEGIN{mymstat("before getopt BEGIN");} mymstat("before getopt");
 ## DEBUG_END
 
+Tk::CmdLine::SetArguments();
+
 @opttable =
   (M"Strecken/Punkte",
    ['','',M"Strecken und Punkte, die beim Start von BBBike\ngezeichnet werden sollen."],
@@ -1188,6 +1190,7 @@ eval { local $SIG{'__DIE__'};
 
 if (!defined $top) {
     $top = MainWindow->new(@extra_args);
+    $top->{initial_iconic} = $top->state eq 'iconic';
 
     $top->scaling($scaling) if defined $scaling && $scaling ne "";
 
@@ -4369,7 +4372,7 @@ $last_loaded_obj =
 load_last_loaded($last_loaded_obj);
 
 hide_logo();
-$top->deiconify;
+$top->deiconify unless $top->{initial_iconic};
 
 # XXX should be after deiconify, otherwise center does not work (?)
 choose_from_plz(-str   => $center_on_str)   if defined $center_on_str;

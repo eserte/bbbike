@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.25 2003/07/09 22:56:24 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.26 2003/07/14 19:59:29 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -204,7 +204,6 @@ sub make_sperre_1 {
 	require Strassen::Core;
 	$sperre_obj = new Strassen $sperre_file;
     }
-    my $net      = $self->{Net};
     $sperre_obj->init;
     while(1) {
 	my $ret = $sperre_obj->next;
@@ -1789,28 +1788,36 @@ sub get_point_comment {
 sub del_net {
     my($self, $point1, $point2, $dir, $del_token) = @_;
     if (!defined $point2) {
-	foreach (keys %{$self->{Net}{$point1}}) {
-	    if (defined $del_token) {
-		if (exists $self->{Net}{$point1}{$_}) {
-		    $self->{"_Deleted$del_token"}{$point1}{$_} = $self->{Net}{$point1}{$_};
+	if (exists $self->{Net}{$point1}) {
+	    foreach (keys %{$self->{Net}{$point1}}) {
+		if (defined $del_token) {
+		    if (exists $self->{Net}{$point1}{$_}) {
+			$self->{"_Deleted$del_token"}{$point1}{$_} = $self->{Net}{$point1}{$_};
+		    }
+		    if (exists $self->{Net}{$_}{$point1}) {
+			$self->{"_Deleted$del_token"}{$_}{$point1} = $self->{Net}{$_}{$point1};
+		    }
 		}
-		if (exists $self->{Net}{$_}{$point1}) {
-		    $self->{"_Deleted$del_token"}{$_}{$point1} = $self->{Net}{$_}{$point1};
-		}
+		delete $self->{Net}{$point1}{$_};
+		delete $self->{Net}{$_}{$point1};
 	    }
-	    delete $self->{Net}{$point1}{$_};
-	    delete $self->{Net}{$_}{$point1};
 	}
     } else {
-	if (defined $del_token && exists $self->{Net}{$point1}{$point2}) {
-	    $self->{"_Deleted$del_token"}{$point1}{$point2} = $self->{Net}{$point1}{$point2};
-	}
-	delete $self->{Net}{$point1}{$point2};
-	if ($dir ne BLOCKED_ONEWAY) { # "2"
-	    if (defined $del_token && exists $self->{Net}{$point2}{$point1}) {
-		$self->{"_Deleted$del_token"}{$point2}{$point1} = $self->{Net}{$point2}{$point1};
+	if (exists $self->{Net}{$point1}) {
+	    if (defined $del_token &&
+		exists $self->{Net}{$point1}{$point2}) {
+		$self->{"_Deleted$del_token"}{$point1}{$point2} = $self->{Net}{$point1}{$point2};
 	    }
-	    delete $self->{Net}{$point2}{$point1};
+	    delete $self->{Net}{$point1}{$point2};
+	}
+	if ($dir ne BLOCKED_ONEWAY) { # "2"
+	    if (exists $self->{Net}{$point2}) {
+		if (defined $del_token &&
+		    exists $self->{Net}{$point2}{$point1}) {
+		    $self->{"_Deleted$del_token"}{$point2}{$point1} = $self->{Net}{$point2}{$point1};
+		}
+		delete $self->{Net}{$point2}{$point1};
+	    }
 	}
     }
 }

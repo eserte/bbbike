@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.43 2003/07/13 21:19:07 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.46 2003/07/15 22:49:35 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -20,7 +20,11 @@ bbbike.cgi - CGI interface to bbbike
 
 =cut
 
-BEGIN { $^W = 1 if $ENV{SERVER_NAME} =~ /herceg\.de/i }
+BEGIN {
+    open(STDERR, ">/home/groups/b/bb/bbbike/bbbike.log")
+	if $ENV{SERVER_NAME} =~ /sourceforge/ && -w "/home/groups/b/bb/bbbike/bbbike.log";
+    $^W = 1 if $ENV{SERVER_NAME} =~ /herceg\.de/i;
+}
 use vars qw(@extra_libs);
 BEGIN { delete $INC{"FindBin.pm"} }
 use FindBin;
@@ -68,8 +72,8 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $bbbike_root $bbbike_images $bbbike_url $bbbike_html
 	    $modperl_lowmem $use_imagemap $create_imagemap $detailmap_module
 	    $q %persistent
-	    $str $orte $orte2 $multiorte
-	    $ampeln $qualitaet_s_net $handicap_s_net
+	    $g_str $orte $orte2 $multiorte
+	    $ampeln $qualitaet_net $handicap_net
 	    $strcat_net $radwege_strcat_net $routen_net $comments_net
 	    $green_net
 	    $inaccess_str $crossings $kr $plz $net $multi_bez_str
@@ -91,6 +95,10 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $use_apache_session $cookiename
 	    @temp_blocking
 	   );
+
+#XXX in mod_perl/Apache::Registry operation there are a lot of "shared
+# variable" warnings. They seem to be not harmful, but I should get
+# rid of them.
 
 #open(STDERR, ">>/tmp/bbbike.log");
 
@@ -508,11 +516,11 @@ $use_mysql_db = 0;
 =item $use_exact_streetchooser
 
 Exact chooser for near coordinates ... somewhat slower, but more
-exact. Default: false.
+exact. Default: true.
 
 =cut
 
-$use_exact_streetchooser = 0;
+$use_exact_streetchooser = 1;
 
 =item $VERBOSE
 
@@ -558,6 +566,7 @@ unshift(@Strassen::datadirs,
 	"$FindBin::RealBin/../BBBike/data",
        );
 
+# XXX hier require verwenden???
 eval { local $SIG{'__DIE__'};
        #warn "$0.config";
        do "$0.config" };
@@ -576,7 +585,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.43 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.46 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -629,7 +638,7 @@ if (!$use_background_image) {
 my @pref_keys = qw/speed cat quality ampel green/;
 
 $q = new CGI;
-undef $str; # XXX because it may already contain landstrassen etc.
+undef $g_str; # XXX because it may already contain landstrassen etc.
 undef $net; # dito
 
 #$str = new Strassen "strassen" unless defined $str;
@@ -642,7 +651,7 @@ if (!defined $inaccess_str) {
 	$inaccess_str = $i_s->get_hashref;
     }
 }
-get_streets($use_umland_jwd ? "wideregion" : $use_umland ? "region" : "city");
+#get_streets($use_umland_jwd ? "wideregion" : $use_umland ? "region" : "city");
 
 # Maximale Anzahl der angezeigten Straßen, wenn eine Auswahl im PLZ-Gebiet
 # gezeigt wird.
@@ -898,7 +907,7 @@ undef $cgic;
 REQUEST_DONE:
 if ($modperl_lowmem) {
     undef $q;
-    undef $str;
+    undef $g_str;
     undef $orte;
     undef $orte2;
     undef $multiorte;
@@ -2150,6 +2159,7 @@ sub via_not_needed {
 sub make_netz {
     my $lite = shift;
     if (!$net) {
+	my $str = get_streets();
 	$net = new StrassenNetz $str;
 	if (defined $search_algorithm && $search_algorithm eq 'C-A*-2') {
 	    $net->use_data_format($StrassenNetz::FMT_MMAP)
@@ -2193,6 +2203,8 @@ sub search_coord {
 
     ($startcoord, $viacoord, $zielcoord)
       = fix_coords($startcoord, $viacoord, $zielcoord);
+
+    my $scope = $q->param("scope") || "city";
 
     if ($inaccess_str) {
 	if (exists $inaccess_str->{$startcoord} ||
@@ -2265,10 +2277,16 @@ sub search_coord {
 
     # Handicap-Optimierung ... zurzeit nur Fußgängerzonenoptimierung automatisch
     if (1) {
-	if (!$handicap_s_net) {
-	    $handicap_s_net =
-		new StrassenNetz(Strassen->new("handicap_s"));
-	    $handicap_s_net->make_net_cat;
+	if (!$handicap_net) {
+	    if ($scope eq 'region') {
+		$handicap_net =
+		    new StrassenNetz(MultiStrassen->new("handicap_s",
+							"handicap_l"));
+	    } else {
+		$handicap_net =
+		    new StrassenNetz(Strassen->new("handicap_s"));
+	    }
+	    $handicap_net->make_net_cat;
 	}
 	my $penalty;
 	$penalty = { "q4" => $velocity_kmh/5, # hardcoded für Fußgängerzonen
@@ -2277,7 +2295,7 @@ sub search_coord {
 	    $penalty->{"q$q"} = 1;
 	}
 	$extra_args{Handicap} =
-	    {Net => $handicap_s_net,
+	    {Net => $handicap_net,
 	     Penalty => $penalty,
 	    };
 
@@ -2286,10 +2304,16 @@ sub search_coord {
     # Qualitätsoptimierung
     if (defined $q->param('pref_quality') && $q->param('pref_quality') ne '') {
 	# XXX landstraßen?
-	if (!$qualitaet_s_net) {
-	    $qualitaet_s_net =
-		new StrassenNetz(Strassen->new("qualitaet_s"));
-	    $qualitaet_s_net->make_net_cat;
+	if (!$qualitaet_net) {
+	    if ($scope eq 'region') {
+		$qualitaet_net =
+		    new StrassenNetz(MultiStrassen->new("qualitaet_s",
+							"qualitaet_l"));
+	    } else {
+		$qualitaet_net =
+		    new StrassenNetz(Strassen->new("qualitaet_s"));
+	    }
+	    $qualitaet_net->make_net_cat;
 	}
 	my $penalty;
 	if ($q->param('pref_quality') eq 'Q2') {
@@ -2304,7 +2328,7 @@ sub search_coord {
 			 "Q3" => 1.8 };
 	}
 	$extra_args{Qualitaet} =
-	    {Net => $qualitaet_s_net,
+	    {Net => $qualitaet_net,
 	     Penalty => $penalty,
 	    };
 
@@ -2315,6 +2339,7 @@ sub search_coord {
 	my $penalty;
 	if ($q->param('pref_cat') eq 'N_RW') {
 	    if (!$radwege_strcat_net) {
+		my $str = get_streets();
 		$radwege_strcat_net = new StrassenNetz $str;
 		$radwege_strcat_net->make_net_cyclepath(Strassen->new("radwege_exact"), 'N_RW', UseCache => 0); # UseCache => 1 for munich
 	    }
@@ -2328,6 +2353,7 @@ sub search_coord {
 		};
 	} else {
 	    if (!$strcat_net) {
+		my $str = get_streets();
 		$strcat_net = new StrassenNetz $str;
 		$strcat_net->make_net_cat(-usecache => 0); # 1 for munich
 	    }
@@ -2368,8 +2394,9 @@ sub search_coord {
 	my $t = time;
 	my $index = 0;
 	for my $tb (@temp_blocking) {
-	    if ($t >= $tb->{from} &&
-		$t <= $tb->{until}) {
+	    if (($t >= $tb->{from} &&
+		 $t <= $tb->{until}) ||
+		(defined $q->param("test") && grep { /^temp-blocking/ } $q->param("test"))) {
 		my $type = $tb->{type} || 'gesperrt';
 		push @current_temp_blocking, $tb;
 		$tb->{'index'} = $index;
@@ -2412,10 +2439,10 @@ sub search_coord {
 		    if ($type eq 'gesperrt' && $custom_s{$type}) {
 			$net->make_sperre($custom_s{$type}, Type => 'all');
 		    } elsif ($type eq 'handicap' && $custom_s{$type}) {
-			if (!$handicap_s_net) {
+			if (!$handicap_net) {
 			    warn "No net for handicap defined, ignoring temp_blocking=handicap";
 			} else {
-			    $handicap_s_net->merge_net_cat($custom_s{$type});
+			    $handicap_net->merge_net_cat($custom_s{$type});
 			}
 		    }
 		}
@@ -2525,20 +2552,20 @@ sub search_coord {
 	    my $def = {};
 	    $def->{Pref} = ($q->param('pref_speed') && $speed == $q->param('pref_speed'));
 	    my $time;
-	    if ($handicap_s_net) {
-		my %handicap_s_speed = ("q4" => 5); # hardcoded für Fußgängerzonen
+	    if ($handicap_net) {
+		my %handicap_speed = ("q4" => 5); # hardcoded für Fußgängerzonen
 		$time = 0;
 		my @realcoords = @{ $r[0]->path };
 		for(my $ii=0; $ii<$#realcoords; $ii++) {
 		    my $s = Strassen::Util::strecke($realcoords[$ii],$realcoords[$ii+1]);
 		    my @etappe_speeds = $speed;
-#		    if ($qualitaet_s_net && (my $cat = $qualitaet_s_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
+#		    if ($qualitaet_net && (my $cat = $qualitaet_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
 #		    push @etappe_speeds, $qualitaet_s_speed{$cat}
 #			if defined $qualitaet_s_speed{$cat};
 #		}
-		    if ($handicap_s_net && (my $cat = $handicap_s_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
-			push @etappe_speeds, $handicap_s_speed{$cat}
-			    if defined $handicap_s_speed{$cat};
+		    if ($handicap_net && (my $cat = $handicap_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
+			push @etappe_speeds, $handicap_speed{$cat}
+			    if defined $handicap_speed{$cat};
 		    }
 		    $time += ($s/1000)/min(@etappe_speeds);
 		}
@@ -2563,11 +2590,17 @@ sub search_coord {
 	    if (!$comments_net) {
 		my @s;
 		my @comment_files = qw(comments qualitaet_s);
+		if ($scope eq 'region') {
+		    push @comment_files, "qualitaet_l";
+		}
 		if (@custom && grep { $_ =~ /^temp-blocking-/ } @custom &&
 		    $custom_s{"handicap"}) {
 		    push @s, $custom_s{"handicap"};
 		} else {
 		    push @comment_files, "handicap_s";
+		    if ($scope eq 'region') {
+			push @comment_files, "handicap_l";
+		    }
 		}
 		for my $s (@comment_files) {
 		    eval {
@@ -3204,10 +3237,11 @@ EOF
 		    ">$fontstr $text $fontend</span></td>\n";
 	    }
 	    print "</tr>\n";
-	    if (scalar $str->file > 1 || $multiorte) {
-		# XXX scope instead???
-		print "<input type=hidden name=draw value=umland>\n";
-	    }
+##XXX Fix this without using $str
+#  	    if (scalar $str->file > 1 || $multiorte) {
+#  		# XXX scope instead???
+#  		print "<input type=hidden name=draw value=umland>\n";
+#  	    }
 	    print "</table>\n";
 	    print "<p>";
 	    print <<EOF;
@@ -3221,7 +3255,7 @@ EOF
 	}
 
 	print "<input type=hidden name=scope value='" .
-	    (defined $q->param("scope") ? $q->param("scope") : "") . "'>";
+	    ($scope ne 'city' ? $scope : "") . "'>";
 	print "</form>\n";
 
 	print "<hr><form name=settings action=\"" . $q->self_url . "\">\n";
@@ -3626,6 +3660,7 @@ sub draw_map {
     };
 
     if (!$args{'-force'}) {
+	my $str = get_streets();
 	foreach (qw(png gif)) {
 	    $ext = $_;
 #XXX	    next if $ext eq 'png' and !$bi->{'can_png'};
@@ -3832,11 +3867,11 @@ sub detailmap_to_coord {
 
 sub get_streets {
     my($scope) = shift || $q->param("scope") || "city";
-    if ($str) {
-	return $str
-	    if (($scope eq 'city' && scalar @{[ $str->file ]} == 1) ||
-		($scope eq 'region' && scalar @{[ $str->file ]} == 2) ||
-		($scope eq 'wideregion' && scalar @{[ $str->file ]} == 3)
+    if ($g_str) {
+	return $g_str
+	    if (($scope eq 'city' && scalar @{[ $g_str->file ]} == 1) ||
+		($scope eq 'region' && scalar @{[ $g_str->file ]} == 2) ||
+		($scope eq 'wideregion' && scalar @{[ $g_str->file ]} == 3)
 	       );
     }
     my @f = ("strassen",
@@ -3844,9 +3879,9 @@ sub get_streets {
 	     ($scope eq 'wideregion' ? "landstrassen2" : ()),
 	    );
     if (@f == 1) {
-	$str = new Strassen $f[0];
+	$g_str = new Strassen $f[0];
     } else {
-	$str = new MultiStrassen @f;
+	$g_str = new MultiStrassen @f;
     }
 
     if ($crossings) {
@@ -3862,7 +3897,7 @@ sub get_streets {
 	make_netz();
     }
 
-    $str;
+    $g_str;
 }
 
 ###XXX do not delete this ---
@@ -3878,6 +3913,7 @@ sub get_streets {
 
 sub all_crossings {
     if (scalar keys %$crossings == 0) {
+	my $str = get_streets();
 	$crossings = $str->all_crossings(RetType => 'hash',
 					 UseCache => 1);
     }
@@ -3886,6 +3922,7 @@ sub all_crossings {
 sub new_kreuzungen {
     if (!$kr) {
 	all_crossings();
+	my $str = get_streets();
 	$kr = new Kreuzungen(Hash => $crossings,
 			     Strassen => $str);
 	$kr->make_grid(UseCache => 1);
@@ -3972,19 +4009,37 @@ sub fix_coords {
 	if (!defined $kr) {
 	    new_kreuzungen();
 	}
-	my(@nearest) = $kr->nearest_coord($$varref);
-	if (@nearest) {
-	    $$varref = $nearest[0];
-	} else {
-	    # Try to enlarge search region
-	    $q->param("scope", "region");
-	    get_streets(); # XXX enlarge to wideregion???
-	    new_kreuzungen();
-	    @nearest = $kr->nearest_loop_coord($$varref);
-	    if (@nearest) {
-		$$varref = $nearest[0];
+	if ($use_exact_streetchooser) {
+	    my $str = get_streets();
+	    my $ret = $str->nearest_point($$varref, FullReturn => 1);
+	    if ($ret && $ret->{Dist} < 50) {
+		$$varref = $ret->{Coord};
 	    } else {
-		warn "Can't find nearest for $$varref. Either try to enlarge search space or add some grids for nearest_coord searching";
+		# Try to enlarge search region
+		$q->param("scope", "region");
+		my $str = get_streets(); # XXX enlarge to wideregion???
+		my $ret = $str->nearest_point($$varref, FullReturn => 1);
+		if ($ret) {
+		    $$varref = $ret->{Coord};
+		} else {
+		    warn "Can't find nearest for $$varref. Maybe try to enlarge search space?";
+		}
+	    }
+	} else {
+	    my(@nearest) = $kr->nearest_coord($$varref, IncludeDistance => 1);
+	    if (@nearest && $nearest[0]->[1] < 50) {
+		$$varref = $nearest[0]->[0];
+	    } else {
+		# Try to enlarge search region
+		$q->param("scope", "region");
+		get_streets(); # XXX enlarge to wideregion???
+		new_kreuzungen();
+		@nearest = $kr->nearest_loop_coord($$varref);
+		if (@nearest) {
+		    $$varref = $nearest[0];
+		} else {
+		    warn "Can't find nearest for $$varref. Either try to enlarge search space or add some grids for nearest_coord searching";
+		}
 	    }
 	}
     }
@@ -4268,6 +4323,7 @@ sub choose_street_html {
     $plz = init_plz();
     my $plz_re = $plz->make_plz_re($plz_number);
     my @res = $plz->look($plz_re, Noquote => 1);
+    my $str = get_streets();
     my @strres = $str->union(\@res);
     if (!@strres) {
 	print "Keine Stra&szlig;en im PLZ-Gebiet $plz_number.<br>\n";
@@ -4334,6 +4390,7 @@ sub choose_all_form {
 	  );
 
     my @strlist;
+    my $str = get_streets();
     $str->init;
     while(1) {
 	my $ret = $str->next;
@@ -4417,6 +4474,7 @@ sub get_nearest_crossing_coords {
     new_kreuzungen();
     my $xy;
     if ($use_exact_streetchooser) {
+	my $str = get_streets();
 	my $ret = $str->nearest_point("$x,$y", FullReturn => 1);
 	$xy = $ret->{Coord};
     } else {
