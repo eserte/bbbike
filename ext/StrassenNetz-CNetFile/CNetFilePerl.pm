@@ -225,9 +225,9 @@ sub FETCH {
 	    return $neighbors[$n_i+1];
 	}
     }
-    warn "Can't find distance for $self->{Key1} - $key2! Try the hard way...";
-    require Strassen::Util;
-    int(Strassen::Util::strecke_s($self->{Key1}, $key2));
+#    warn "Can't find distance for $self->{Key1} - $key2! Try the hard way...";
+#    require Strassen::Util;
+#    int(Strassen::Util::strecke_s($self->{Key1}, $key2));
 }
 
 sub STORE {
