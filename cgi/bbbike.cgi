@@ -67,7 +67,8 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $debug $tmp_dir $mapdir_fs $mapdir_url $local_route_dir
 	    $bbbike_root $bbbike_images $bbbike_url $bbbike_html
 	    $max_proc $use_miniserver $auto_switch_slow  $use_fcgi
-	    $modperl_lowmem $use_imagemap $create_imagemap $q %persistent
+	    $modperl_lowmem $use_imagemap $create_imagemap $detailmap_module
+	    $q %persistent
 	    $str $lstr $lstr2 $multistr $orte $orte2 $multiorte
 	    $ampeln $qualitaet_s_net $handicap_s_net
 	    $strcat_net $radwege_strcat_net $routen_net $comments_net
