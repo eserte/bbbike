@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.17 2004/06/03 07:42:34 eserte Exp $
+# $Id: Makefile,v 1.18 2004/09/07 07:01:04 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -231,7 +231,7 @@ ADD_BBBIKEVAR_VARS=\
 	BBBIKE_SF_WWW \
 	EMAIL \
 
-MAPFILES=	brb.map brb-b.map brb-wide.map
+MAPFILES=	brb.map brb-b.map brb-inner-b.map brb-wide.map brb-p.map
 HTMLFILES=	brb.html brb_init.html brb.js help.html query_header.html query_footer.html index.html
 ######################################################################
 
@@ -285,12 +285,28 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile ${ABS_LOCAL_BBBIKE_DIR}
 ######################################################################
 # maps
 
-brb-b.map:	brb.map mkroutemap
-	${BRBDIR}/mkroutemap -force -scope city brb.map brb-b.map
+.brb.map:	brb.map-tpl
+	tpage $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 
-brb-wide.map:	brb.map mkroutemap
-	${BRBDIR}/mkroutemap -force -scope wideregion brb.map brb-wide.map
+brb.map:	.brb.map mkroutemap
+	${BRBDIR}/mkroutemap -force -scope region .brb.map $@
+	chmod ugo+r $@
+
+brb-b.map:	.brb.map mkroutemap
+	${BRBDIR}/mkroutemap -force -scope city .brb.map $@
+	chmod ugo+r $@
+
+brb-inner-b.map:	.brb.map mkroutemap
+	${BRBDIR}/mkroutemap -force -scope innercity .brb.map $@
+	chmod ugo+r $@
+
+brb-wide.map:	.brb.map mkroutemap
+	${BRBDIR}/mkroutemap -force -scope wideregion .brb.map $@
+	chmod ugo+r $@
+
+brb-p.map:	.brb.map mkroutemap
+	${BRBDIR}/mkroutemap -force -scope potsdam .brb.map $@
 	chmod ugo+r $@
 
 brb-ipaq.map:

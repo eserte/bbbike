@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.36 2004/01/17 13:39:59 eserte Exp eserte $
+# $Id: GD.pm,v 1.37 2004/09/06 22:57:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.36 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.37 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -289,6 +289,7 @@ sub draw_map {
 
     foreach my $strecke (@netz) {
 	my $flaechen_pass = $self->{FlaechenPass};
+my %seen;
 $strecke->make_grid(UseCache => 1);
 my @grids = $strecke->get_new_grids($self->{Min_x}, $self->{Min_y},
 				    $self->{Max_x}, $self->{Max_y},
@@ -300,6 +301,8 @@ my @grids = $strecke->get_new_grids($self->{Min_x}, $self->{Min_y},
 for my $grid (@grids) {
 if ($strecke->{Grid}{$grid}) {
 for my $strpos (@{ $strecke->{Grid}{$grid}}) {
+next if $seen{$strpos};
+$seen{$strpos}++;
 my $s = $strecke->get($strpos);
 	    my $cat = $s->[Strassen::CAT];
 	    if ($cat =~ /^F:(.*)/) {

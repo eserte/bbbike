@@ -5,16 +5,40 @@
  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
  <link rev="made" href="mailto:slaven@rezic.de" />
  <link rel="stylesheet" type="text/css" href="bbbike.css" />
+ <script>
+function check() {
+  if (!check_strname()) return false;
+  return true;
+}
+function check_strname() {
+  var frm = document.forms.newstreet;
+  if (frm.elements.strname.value == "") {
+    alert("Der Straßenname darf nicht leer sein!");
+    return false;
+  }
+  return true;
+}
+function init() {
+  var frm = document.forms.newstreet;
+  if (location.search) {
+    var search = unescape(location.search);
+    if (search.match(/strname=(.*)/)) {
+      frm.supplied_strname.value = RegExp.$1;
+    }
+  }
+}
+ </script>
 </head>
-<body>
+<body onload="init()">
  <h1>Neue Straße für BBBike</h1>
  <form name="newstreet" method="post" action="../cgi/mapserver_comment.cgi">
   <input type="hidden" name="formtype" value="newstreetform" />
+  <input type="hidden" name="supplied_strname" value="" />
   <table>
    <tr>
     <td>Straßenname</td>
-    <td><input name="strname" />
-        (ggfs. mit Bezirk)</td>
+    <td><input name="strname"  size="30"/>
+        (ggfs. mit Bezirk oder Ortsteil)</td>
    </tr>
 
    <tr><td colspan="3"><hr /></td></tr>
@@ -27,28 +51,32 @@
       <tr><td colspan="2"><b>Bewertung:</b></td></tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qcat_1" value="Q0" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qcat_1" value="Q0"
+ /></td>
        <td>sehr gut
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qcat_1" value="Q1" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qcat_1" value="Q1"
+ /></td>
        <td>gut
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qcat_1" value="Q2" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qcat_1" value="Q2"
+ /></td>
        <td>mäßig
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qcat_1" value="Q3" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qcat_1" value="Q3"
+ /></td>
        <td>schlecht
 
        </td>
@@ -59,36 +87,57 @@
       <tr><td colspan="2"><b>Beschreibung:</b></td></tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="Asphalt" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="Asphalt"
+ /></td>
        <td>Asphalt
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="Beton" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="Beton"
+ /></td>
        <td>Beton
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="fester Sandweg" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="Kopfsteinpflaster"
+ /></td>
+       <td>Kopfsteinpflaster
+
+       </td>
+      </tr>
+
+
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="fester Sandweg"
+ /></td>
        <td>fester Sandweg
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="loser Sandweg" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="loser Sandweg"
+ /></td>
        <td>loser Sandweg
+
+       </td>
+      </tr>
+
+
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="Verbundsteinpflaster"
+ /></td>
+       <td>Verbundsteinpflaster
 
        </td>
       </tr>
 
       <tr>
        <td>
-        <input type="radio" name="Qdesc_1" value="userdefined" />
+        <input type="radio" name="Qdesc_1" value="userdefined"
+ />
        </td>
        <td>
         <input name="Qdescuserdef_1" />
@@ -99,14 +148,15 @@
     
     <td>     <input type="radio" name="Qrange_1" value="whole"checked />
      gesamte Straße<br />
-     <input type="radio" name="Qrange_1" value="part" />
+     <input type="radio" name="Qrange_1" value="part" 
+ />
      Teilabschnitt<br />
      <table cellpadding="0" cellspacing="0">
       <tr>       <td style="padding-right:1ex;">von</td>
        <td><input name="Qrangefrom_1" /></td>
       </tr>
       <tr>       <td style="padding-right:1ex;">bis </td>
-       <td><input name="Qrangeto_1"/></td>
+       <td><input name="Qrangeto_1" /></td>
       </tr>
      </table>
     </td>
@@ -123,35 +173,40 @@
       <tr><td colspan="2"><b>Eingeschränkte Geschwindigkeit:</b></td></tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qcat_1" value="q0" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="qcat_1" value="q0"
+ /></td>
        <td>keine
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qcat_1" value="q1" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="qcat_1" value="q1"
+ /></td>
        <td>bis 25 km/h
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qcat_1" value="q2" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="qcat_1" value="q2"
+ /></td>
        <td>bis 18 km/h
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qcat_1" value="q3" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="qcat_1" value="q3"
+ /></td>
        <td>bis 13 km/h
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qcat_1" value="q4" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="qcat_1" value="q4"
+ /></td>
        <td>Schrittgeschwindigkeit
 
        </td>
@@ -161,21 +216,24 @@
       <tr><td colspan="2"><b>Grund:</b></td></tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qdesc_1" value="viele Fußgänger" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="qdesc_1" value="viele Fußgänger"
+ /></td>
        <td>viele Fußgänger
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qdesc_1" value="Fußgängerzone" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="qdesc_1" value="Fußgängerzone"
+ /></td>
        <td>Fußgängerzone
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qdesc_1" value="kurvenreich" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="qdesc_1" value="kurvenreich"
+ /></td>
        <td>kurvenreich
 
        </td>
@@ -183,7 +241,8 @@
 
       <tr>
        <td>
-        <input type="radio" name="qdesc_1" value="userdefined" />
+        <input type="radio" name="qdesc_1" value="userdefined"
+ />
        </td>
        <td>
         <input name="qdescuserdef_1" />
@@ -194,14 +253,15 @@
     
     <td>     <input type="radio" name="qrange_1" value="whole"checked />
      gesamte Straße<br />
-     <input type="radio" name="qrange_1" value="part" />
+     <input type="radio" name="qrange_1" value="part" 
+ />
      Teilabschnitt<br />
      <table cellpadding="0" cellspacing="0">
       <tr>       <td style="padding-right:1ex;">von</td>
        <td><input name="qrangefrom_1" /></td>
       </tr>
       <tr>       <td style="padding-right:1ex;">bis </td>
-       <td><input name="qrangeto_1"/></td>
+       <td><input name="qrangeto_1" /></td>
       </tr>
      </table>
     </td>
@@ -215,64 +275,72 @@
     <td>
      <table cellpadding="0" cellspacing="0">
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW0" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW0"
+ /></td>
        <td>keine
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW1" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW1"
+ /></td>
        <td>Radweg
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW4" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW4"
+ /></td>
        <td>Radstreifen
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW7" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW7"
+ /></td>
        <td>Fahrradstraße
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW5" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW5"
+ /></td>
        <td>Busspur
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW6" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW6"
+ /></td>
        <td>verkehrsberuhigt
 
        </td>
       </tr>
 
       <tr>
-       <td><input type="radio" name="RWcat_1" value="userdefined" /></td>
-       <td><input name="RWdescuserdef_1" /></td>
+       <td><input type="radio" name="RWcat_1" value="userdefined"
+ /></td>
+       <td><input name="RWdescuserdef_1"  /></td>
       </tr>
      </table>
     </td>
     
     <td>     <input type="radio" name="RWrange_1" value="whole"checked />
      gesamte Straße<br />
-     <input type="radio" name="RWrange_1" value="part" />
+     <input type="radio" name="RWrange_1" value="part" 
+ />
      Teilabschnitt<br />
      <table cellpadding="0" cellspacing="0">
       <tr>       <td style="padding-right:1ex;">von</td>
        <td><input name="RWrangefrom_1" /></td>
       </tr>
       <tr>       <td style="padding-right:1ex;">bis </td>
-       <td><input name="RWrangeto_1"/></td>
+       <td><input name="RWrangeto_1" /></td>
       </tr>
      </table>
     </td>
@@ -285,35 +353,40 @@
     <td>
      <table cellpadding="0" cellspacing="0">
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="sperrecat_1" value=""checked /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="sperrecat_1" value=""checked
+ /></td>
        <td>offen für Radfahrer
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="sperrecat_1" value="1" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="sperrecat_1" value="1"
+ /></td>
        <td>Einbahnstraße in Richtung
-<input name="sperre_oneway_1" />
+<input name="sperre_oneway_1"  />
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="sperrecat_1" value="BNP" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="sperrecat_1" value="BNP"
+ /></td>
        <td>Drängelgitter/Schranke an der Kreuzung
-<input name="sperre_BNP_1" />
+<input name="sperre_BNP_1"  />
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="sperrecat_1" value="0" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="sperrecat_1" value="0"
+ /></td>
        <td>Treppe, Rad muss getragen werden
-<input name="sperre_carry_1" />
+<input name="sperre_carry_1"  />
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="sperrecat_1" value="2" /></td>
+      <tr>       <td><input style="margin-right:1em;" type="radio" name="sperrecat_1" value="2"
+ /></td>
        <td>Straße vollkommen gesperrt für Radfahrer
 
        </td>
@@ -333,16 +406,16 @@
 
    <tr>
     <td>Dein Name</td>
-    <td><input name="author"></td>
+    <td><input name="author"  size="30"></td>
    </tr>
    <tr>
     <td>Deine E-Mail</td>
-    <td><input name="email"></td>
+    <td><input name="email"  size="30"></td>
    </tr>
 
    <tr>
     <td></td>
-    <td><input type="submit" value="Abschicken"></td>
+    <td><input type="submit" onclick="return check()" value="Abschicken"></td>
    </tr>
 
    <tr>

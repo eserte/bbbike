@@ -60,12 +60,22 @@ function check_strname() {
   }
   return true;
 }
+function init() {
+  var frm = document.forms.newstreet;
+  if (location.search) {
+    var search = unescape(location.search);
+    if (search.match(/strname=(.*)/)) {
+      frm.supplied_strname.value = RegExp.$1;
+    }
+  }
+}
  </script>
 </head>
-<body>
+<body onload="init()">
  <h1>Neue Straße für BBBike</h1>
  <form name="newstreet" method="post" action="[% cgidir | html %]/mapserver_comment.cgi">
   <input type="hidden" name="formtype" value="newstreetform" />
+  <input type="hidden" name="supplied_strname" value="" />
   <table>
    <tr>
     <td>Straßenname</td>

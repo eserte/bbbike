@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2esri,v 1.11 2004/06/01 21:04:51 eserte Exp eserte $
+# $Id: bbd2esri,v 1.13 2004/09/06 23:12:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -122,6 +122,7 @@ sub create_shape_file {
 			     : die "Unhandled shape type $shapetype");
 
     for my $file (@files) {
+	my $qualityshack = $qualityshack && $file =~ /qualitaet_s/;
 	my $type = $type;
 	my $s = Strassen->new($file);
 	if ($file =~ /landstrassen/) {
@@ -171,8 +172,10 @@ sub create_shape_file {
 		for my $res (oneway_hack($_)) {
 		    $create_esri_and_dbf_record->($res);
 		}
-	    } elsif ($qualityshack && $_->[Strassen::CAT] ne "Q0") {
-		$create_esri_and_dbf_record->($_);
+	    } elsif ($qualityshack) {
+		if ($_->[Strassen::CAT] ne "Q0") {
+		    $create_esri_and_dbf_record->($_);
+		}
 	    } else {
 		$create_esri_and_dbf_record->($_);
 	    }

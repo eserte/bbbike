@@ -63,23 +63,24 @@ Bei Veränderungen in der Auswahl muss der Button <i>Neu zeichnen</i> angeklickt 
 <h3><a name="browse">Karte bewegen/zoomen</a></h3>
 Beim Klick in die Karte wird eine Aktion, die vom Zustand der Radiobuttons <i>Hineinzoomen</i>, <i>Bewegen</i> und <i>Herauszoomen</i> abhängig ist, durchgeführt.
 <dl>
+
+ <dt><a name="move">Karte bewegen</a>
+ <dd>Beim Klick in die Karte wird der Kartenausschnitt bewegt. Der angeklickte Punkt wird zum neuen Mittelpunkt des Kartenausschnitts. Alternativ können zum Bewegen die Himmelsrichtung-Buttons verwendet werden.
+
  <dt><a name="zoomin">Hineinzoomen</a>
  <dd>Abhängig von der Zoomstufe wird in die Karte hineingezoomt, d.h. der Maßstab verkleinert und die Detaildichte vergrößert. Eine Zoomstufe von 2 bedeutet beispielsweise, dass der Maßstab um den Faktor zwei verkleinert wird.
 
- <dt>Bewegen
- <dd>Beim Klick in die Karte wird der Kartenausschnitt bewegt. Der angeklickte Punkt wird zum neuen Mittelpunkt des Kartenausschnitts. Alternativ können zum Bewegen die Himmelsrichtung-Buttons verwendet werden.
-
- <dt>Herauszoomen
+ <dt><a name="zoomout">Herauszoomen</a>
  <dd>Abhängig von der Zoomstufe wird aus der Karte herausgezoomt, d.h. der Maßstab vergrößert und die Detaildichte verkleinert. Eine Zoomstufe von 2 bedeutet beispielsweise, dass der Maßstab um den Faktor zwei vergrößert wird.
 
 </dl>
 
-<h3><a name="query">Merkmale anzeigen</a></h3>
+<h3><a name="query">Details anzeigen</a></h3>
 
-Beim Klick in die Karte wird ein Fenster mit den Merkmalen des
-ausgewählten Punktes angezeigt. Merkmale sind genauere Beschreibungen
-zu den Ebenen, z.B. Namen von Straßen, die genauere Beschreibung einer
-Fahrbahnbeschaffenheit oder Fährzeiten.
+Beim Klick in die Karte wird ein Fenster mit den Details des
+ausgewählten Punktes angezeigt. Es handelt sich dabei um genauere
+Beschreibungen zu den Ebenen, z.B. Namen von Straßen, die genauere
+Beschreibung einer Fahrbahnbeschaffenheit oder Fährzeiten.
 
 <h3><a name="scale">Maßstab</a></h3>
 Der Maßstab gilt nur für Monitore mit einer Auflösung von 72dpi (Pixel pro Zoll).

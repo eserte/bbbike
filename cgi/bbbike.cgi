@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.85 2004/08/28 23:13:20 eserte Exp $
+# $Id: bbbike.cgi,v 6.86 2004/09/06 22:59:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -626,7 +626,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.85 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.86 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1539,8 +1539,9 @@ EOF
 	    print "<input type=hidden name=" . $type . "isort value=1>\n";
 	} elsif ($$oneref ne '' && @$matchref == 0) {
 	    print "<td align=center>$fontstr" if $bi->{'can_table'};
-	    print "<i>$$oneref</i> ist nicht bekannt.\n";
-	    print qq{(<a target="newstreetform" href="$bbbike_html/newstreetform.html">Straﬂe eintragen</a>)<br>\n};
+	    print "<i>$$oneref</i> ist nicht bekannt.<br>\n";
+	    my $qs = CGI->new({strname => $$oneref})->query_string;
+	    print qq{<a target="newstreetform" href="$bbbike_html/newstreetform.html?$qs">Straﬂe eintragen</a><br>\n};
 	    $no_td = 1;
 	    $tryempty = 1;
 	} elsif ($$tworef ne '') {
@@ -1550,7 +1551,8 @@ EOF
 		new_kreuzungen();
 		my($best) = get_nearest_crossing_coords(split(/,/, $xy));
 		my $cr = crossing_text(defined $best ? $best : $xy);
-		print qq{<i>$strasse</i> ist nicht bekannt (<a target="newstreetform" href="$bbbike_html/newstreetform.html">Straﬂe eintragen</a>).<br>\nDie n‰chste bekannte Kreuzung ist:<br>\n};
+		my $qs = CGI->new({strname => $strasse})->query_string;
+		print qq{<i>$strasse</i> ist nicht bekannt (<a target="newstreetform" href="$bbbike_html/newstreetform.html?$qs">Straﬂe eintragen</a>).<br>\nDie n‰chste bekannte Kreuzung ist:<br>\n};
 		print "<i>$cr</i>";
 		print qq{<br>\nund wird f¸r die Suche verwendet.<br>\n};
 		print "<input type=hidden name=" . $type .
@@ -1585,6 +1587,18 @@ EOF
 	    print "<td>${fontstr}" if $bi->{'can_table'};
 	    print "Genaue <b>" . $printtype .
 	      "stra&szlig;e</b> ausw&auml;hlen:<br>\n";
+
+	    # Sort Potsdam streets to the end:
+	    @$matchref = sort {
+		if ($a->[1] eq 'Potsdam' && $b->[1] ne 'Potsdam') {
+		    return +1;
+		} elsif ($a->[1] ne 'Potsdam' && $b->[1] eq 'Potsdam') {
+		    return -1;
+		} else {
+		    return 0;
+		}
+	    } @$matchref;
+
 	    my $s;
 	    my $checked = 0;
 	    my $out_i = 0;
@@ -5181,7 +5195,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/08/28 23:13:20 $';
+    my $cgi_date = '$Date: 2004/09/06 22:59:10 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

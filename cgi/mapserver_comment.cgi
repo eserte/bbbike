@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.15 2004/08/27 00:02:34 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.17 2004/09/06 22:59:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -119,6 +119,7 @@ eval {
 	    my $dump = Data::Dumper->new([param($param)],[$param])->Indent(1)->Useqq(1)->Dump;
 	    print $fh $dump;
 	}
+	print $fh Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
     } else {
 	$comment =
 	    "Von: " . (param("author") || param("email") || "anonymous\@bbbike.de") . "\n" .
@@ -167,8 +168,6 @@ sub error_msg {
 	  end_html;
     exit;
 }
-
-__END__
 
 =head1 NAME
 

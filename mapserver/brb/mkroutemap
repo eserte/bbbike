@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mkroutemap,v 1.2 2004/06/02 00:36:30 eserte Exp $
+# $Id: mkroutemap,v 1.3 2004/09/07 07:01:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2004 Slaven Rezic. All rights reserved.
@@ -110,15 +110,9 @@ while(<OLD>) {
 	    s/\#\#\#\s+MARKERPOINT\s+\#\#\#/$marker_point/g;
 	    s/^\#//;
 	}
-    } elsif ($in_section eq 'refmap_region') {
-	if (/\#\#\#\s+END\s+REFMAP\s+REGION/) {
-	    $in_section = '';
-	} else {
-	    s/^/\#/ if defined $scope && $scope ne 'region';
-	}
-    } elsif ($in_section =~ /^refmap_(city|wideregion)$/) {
+    } elsif ($in_section =~ /^refmap_(innercity|city|wideregion|region|potsdam)$/) {
 	my $this_section = $1;
-	if (/\#\#\#\s+END\s+REFMAP\s+(CITY|WIDEREGION)/) {
+	if (/\#\#\#\s+END\s+REFMAP\s+(INNERCITY|CITY|WIDEREGION|REGION|POTSDAM)/) {
 	    $in_section = '';
 	} else {
 	    s/^\#// if defined $scope && $scope eq $this_section;
@@ -158,9 +152,7 @@ while(<OLD>) {
 	if (defined $marker_point) {
 	    $in_section = 'marker';
 	}
-    } elsif (/\#\#\#\s+BEGIN\s+REFMAP\s+REGION/) {
-	$in_section = 'refmap_region';
-    } elsif (/\#\#\#\s+BEGIN\s+REFMAP\s+(CITY|WIDEREGION)/) {
+    } elsif (/\#\#\#\s+BEGIN\s+REFMAP\s+(INNERCITY|CITY|REGION|WIDEREGION|POTSDAM)/) {
 	$in_section = 'refmap_' . lc($1);
     } elsif (/\#\#\#\s+BEGIN\s+ADDITIONAL\s+LAYERS/) {
 	$in_section = "addlayers";

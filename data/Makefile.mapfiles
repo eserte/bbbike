@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.14 2004/08/19 22:10:08 eserte Exp eserte $
+# $Id: Makefile.mapfiles,v 1.16 2004/09/06 23:12:26 eserte Exp $
 #
 
 # should this be here?
@@ -36,14 +36,20 @@ mapfiles-permissions:
 # These may be added to mapfiles-reference-maps, if needed:
 #			$(MAPFILES_IMG_DIR)/reference.xpm
 #			$(MAPFILES_IMG_DIR)/reference-b.xpm
+#			$(MAPFILES_IMG_DIR)/reference-inner-b.xpm
 #			$(MAPFILES_IMG_DIR)/reference-wide.xpm
+#			$(MAPFILES_IMG_DIR)/reference-p.xpm
 
 mapfiles-reference-maps:	$(MAPFILES_IMG_DIR)/reference.png \
 				$(MAPFILES_IMG_DIR)/reference-b.png \
+				$(MAPFILES_IMG_DIR)/reference-inner-b.png \
 				$(MAPFILES_IMG_DIR)/reference-wide.png \
+				$(MAPFILES_IMG_DIR)/reference-p.png \
 				$(MAPFILES_IMG_DIR)/reference.gif \
 				$(MAPFILES_IMG_DIR)/reference-b.gif \
-				$(MAPFILES_IMG_DIR)/reference-wide.gif
+				$(MAPFILES_IMG_DIR)/reference-inner-b.gif \
+				$(MAPFILES_IMG_DIR)/reference-wide.gif \
+				$(MAPFILES_IMG_DIR)/reference-p.gif
 $(MAPFILES_IMG_DIR)/reference.png: strassen landstrassen berlin deutschland orte orte2 wasserstrassen wasserumland wasserumland2
 	$(BBBIKEDRAW) -datadirs . \
 	    -outtype png \
@@ -74,6 +80,19 @@ $(MAPFILES_IMG_DIR)/reference-b.png: strassen landstrassen berlin potsdam orte o
 	perl -e '$$draw=do "/tmp/reference-b.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn join(" ", map { int } $$sub->(0,0), $$sub->(199,199));'
 	chmod ugo+r $@
 
+$(MAPFILES_IMG_DIR)/reference-inner-b.png: strassen berlin wasserstrassen sbahn ubahn flaechen orte_city
+	$(BBBIKEDRAW) -datadirs . \
+	    -outtype png \
+	    -geometry 200x200 -nooutline -fillimage \
+	    -scope city \
+	    -drawtypes str,wasser,sbahn,ubahn,flaechen,orte_city -restrict HH,H,B,W1,W2,Z,SA,UA,SB,UB \
+	    -o $@~ -dimfile /tmp/reference-inner-b.dim \
+	    -nodrawscalebar -background \#e0e0e0 \
+	    -bbox 1887,16087,15337,6525 -fontsizescale 0.8
+	mv $@~ $@
+	perl -e '$$draw=do "/tmp/reference-inner-b.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn join(" ", map { int } $$sub->(0,0), $$sub->(199,199));'
+	chmod ugo+r $@
+
 $(MAPFILES_IMG_DIR)/reference-wide.png: strassen landstrassen landstrassen2 berlin orte orte2 wasserstrassen wasserumland wasserumland2
 	$(BBBIKEDRAW) -datadirs . \
 	    -outtype png \
@@ -89,13 +108,34 @@ $(MAPFILES_IMG_DIR)/reference-wide.png: strassen landstrassen landstrassen2 berl
 	perl -e '$$draw=do "/tmp/reference-wide.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn join(" ", map { int } $$sub->(0,0), $$sub->(199,199));'
 	chmod ugo+r $@
 
+$(MAPFILES_IMG_DIR)/reference-p.png: strassen landstrassen berlin orte wasserstrassen wasserumland rbahn
+	$(BBBIKEDRAW) -datadirs . \
+	    -outtype png \
+	    -geometry 200x200 -nooutline -fillimage \
+	    -scope region \
+	    -drawtypes str,wasser,berlin,ort,rbahn -restrict B,HH,H,W1,W2,Z,RA,RB,RC,R \
+	    -minplacecat 0 \
+	    -bbox -17562,2587,-7200,-4800 \
+	    -o $@~ -dimfile /tmp/reference-p.dim \
+	    -nodrawscalebar -background \#e0e0e0 \
+	    -fontsizescale 0.8
+	mv $@~ $@
+	perl -e '$$draw=do "/tmp/reference-p.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn join(" ", map { int } $$sub->(0,0), $$sub->(199,199));'
+	chmod ugo+r $@
+
 $(MAPFILES_IMG_DIR)/reference.gif:	$(MAPFILES_IMG_DIR)/reference.png
 	convert $> $@
 
 $(MAPFILES_IMG_DIR)/reference-b.gif:	$(MAPFILES_IMG_DIR)/reference-b.png
 	convert $> $@
 
+$(MAPFILES_IMG_DIR)/reference-inner-b.gif:	$(MAPFILES_IMG_DIR)/reference-inner-b.png
+	convert $> $@
+
 $(MAPFILES_IMG_DIR)/reference-wide.gif:	$(MAPFILES_IMG_DIR)/reference-wide.png
+	convert $> $@
+
+$(MAPFILES_IMG_DIR)/reference-p.gif:	$(MAPFILES_IMG_DIR)/reference-p.png
 	convert $> $@
 
 $(MAPFILES_IMG_DIR)/reference.xpm:	$(MAPFILES_IMG_DIR)/reference.png
@@ -104,9 +144,14 @@ $(MAPFILES_IMG_DIR)/reference.xpm:	$(MAPFILES_IMG_DIR)/reference.png
 $(MAPFILES_IMG_DIR)/reference-b.xpm:	$(MAPFILES_IMG_DIR)/reference-b.png
 	convert $> $@
 
+$(MAPFILES_IMG_DIR)/reference-inner-b.xpm:	$(MAPFILES_IMG_DIR)/reference-inner-b.png
+	convert $> $@
+
 $(MAPFILES_IMG_DIR)/reference-wide.xpm:	$(MAPFILES_IMG_DIR)/reference-wide.png
 	convert $> $@
 
+$(MAPFILES_IMG_DIR)/reference-p.xpm:	$(MAPFILES_IMG_DIR)/reference-p.png
+	convert $> $@
 
 # This variable is not used anymore because of difficulties to translate some
 # BSD make constructs for GNU make
@@ -173,7 +218,7 @@ $(MAPFILES_DATA_DIR)/strassen.shp:	\
 	    $(MAPFILES_TEMP_PREFIX)landstrassen2-sorted
 
 $(MAPFILES_DATA_DIR)/qualitaet.shp:	qualitaet_s qualitaet_l
-	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/qualitaet \
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/qualitaet -qualityshack \
 	    qualitaet_s qualitaet_l
 
 $(MAPFILES_DATA_DIR)/handicap.shp:	handicap_s handicap_l
