@@ -90,6 +90,10 @@ MAPSERVER_EXE=	$(HOME)/work2/mapserver/mapserv.cgi
 LOCAL_URL=	http://localhost:8080/bbbike
 LOCAL_CGI_URL=	http://localhost:8080/bbbike/cgi
 LOCAL_HTML_URL=	http://localhost:8080/bbbike
+DATA_DIR=	data
+NO_DATA_CORRECTED=	yes
+NO_SLOW_CHECKS=		yes
+NO_BERLINER_STADTPLAN=	yes
 .endif
 
 .include "${BBBIKE_ROOT_DIR}/mapserver/brb/Makefile.${TARGET}.inc"
@@ -139,8 +143,9 @@ test-makefile:
 # Reihenfolge sollte hoffentlich richtig sein
 prepare-bbbike-data:
 	$(BBBIKE_ROOT_DIR)/miscsrc/check_bbbike_temp_blockings
-	cd $(BBBIKE_ROOT_DIR)/data && ${MAKE} all slow-checks
-	cd $(BBBIKE_ROOT_DIR)/data_corrected && ${MAKE} init all mapfiles
+	cd $(BBBIKE_ROOT_DIR)/data && ${MAKE} all
+	[ "${NO_SLOW_CHECKS}" == "yes" ] && true || (cd $(BBBIKE_ROOT_DIR)/data && ${MAKE} slow-checks)
+	[ "${NO_DATA_CORRECTED}" == "yes" ] && true || (cd $(BBBIKE_ROOT_DIR)/data_corrected && ${MAKE} init all mapfiles)
 #XXX .if "${DATA_DIR}" != "data" && "${DATA_DIR}" != "data_corrected"
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE}
 #XXX .endif
@@ -185,7 +190,7 @@ prepare-bbbike-dist-prog-bbbike:
 	       ${BBBIKE_ROOT_DIR}/t/wapcgi.t  ${CURDIR}/BBBike/t
 
 prepare-bbbike-dist-prog-stadtplan:
-	cp -pf ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com/lib/BBBikeDraw/BerlinerStadtplan.pm ${CURDIR}/BBBike/BBBikeDraw/
+	[ "${NO_BERLINER_STADTPLAN}" == "yes" ] && true || (cp -pf ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com/lib/BBBikeDraw/BerlinerStadtplan.pm ${CURDIR}/BBBike/BBBikeDraw/)
 
 prepare-bbbike-dist-data:
 	@echo "XXX The following command will fail because 'RCS' cannot be copied"
