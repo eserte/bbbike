@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.14 2004/12/05 10:16:48 eserte Exp $
+# $Id: plz.t,v 1.15 2004/12/14 23:16:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -15,15 +15,15 @@
 
 #
 # Diese Tests können fehlschlagen, wenn "strassen" oder "plaetze" erweitert
-# wurde. In diesem Fall muss die Testausgabe per Augenschein überprüft oder
-# mit der Option -create aktualisiert werden.
+# wurde. In diesem Fall muss die Testausgabe per Augenschein überprüft und
+# dann mit der Option -create aktualisiert werden.
 #
 
 package main;
 
 use Test::More;
 BEGIN { eval "use Test::Differences" };
-BEGIN { plan tests => 46 }
+BEGIN { plan tests => 54 }
 
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../data", "$FindBin::RealBin/../lib");
@@ -177,6 +177,20 @@ EOF
     is($friedenau_schoeneberg->[PLZ::LOOK_NAME], "Hauptstr.");
     is($friedenau_schoeneberg->[PLZ::LOOK_CITYPART], "Friedenau, Sch\366neberg");
     is($friedenau_schoeneberg->[PLZ::LOOK_ZIP], "10827, 12159", "Check PLZ");
+
+    @res = $plz->look("friedrichstr", Citypart => "mitte");
+    is(scalar @res, 1, "Lower case match, Citypart supplied")
+	or diag $dump->(\@res);
+    is($res[0]->[PLZ::LOOK_NAME], 'Friedrichstr.');
+    is($res[0]->[PLZ::LOOK_CITYPART], 'Mitte');
+    is($res[0]->[PLZ::LOOK_ZIP], 10117);
+
+    @res = $plz->look("friedrichstr", Citypart => 10117);
+    is(scalar @res, 1, "ZIP supplied as citypart")
+	or diag $dump->(\@res);
+    is($res[0]->[PLZ::LOOK_NAME], 'Friedrichstr.');
+    is($res[0]->[PLZ::LOOK_CITYPART], 'Mitte');
+    is($res[0]->[PLZ::LOOK_ZIP], 10117);
 
     @res = $plz->look_loop(PLZ::split_street("Heerstr. 1"),
 			   @standard_look_loop_args);
