@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.13 2003/11/29 23:25:55 eserte Exp $
+# $Id: wapbbbike.cgi,v 2.13 2003/11/29 23:25:55 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -369,16 +369,13 @@ sub wap_surrounding_image {
 sub wap_surrounding_image_page {
     my $self = shift;
 
-    use constant {
-	FIRST   => 0,
-	PREV    => 1,
-	NEXT    => 2,
-	LAST    => 3,
-	PREVDIR => 4,
-	NEXTDIR => 5,
-	_LAST   => 5,
-    };
-
+    use constant FIRST   => 0;
+    use constant PREV    => 1;
+    use constant NEXT    => 2;
+    use constant LAST    => 3;
+    use constant PREVDIR => 4;
+    use constant NEXTDIR => 5;
+    use constant _LAST   => 5;
 
     my $q2 = $self->Context->CGI;
     my $q3 = CGI->new($q2->query_string);
