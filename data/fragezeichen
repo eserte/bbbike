@@ -12,7 +12,7 @@ Neuendorf (Nl) wird ab 2002-08-18 geschlossen; neu: 'Cottbus-Willmersdorf Nord' 
 existiert eine Verbindung durch den Schloßpark Lichterfelde zum Teltowkanal?	? 4596,3738 4970,3684
 Gotthard - Residenzstr.: laut ADFC-Karte Durchfahrt möglich	? 7466,17904 6761,17741 6522,17688 6280,17725 6391,17838
 Fräsersteig: Teile für Kfz-Verkehr gesperrt bzw. mäßig geeignet?	? 6298,20599 6184,20550 6134,20585 5770,20407
-Alter Bernauer Heerweg: die gesamte Straße mäßig geeignet? durchlässig für KfZ-Verkehr an beiden Seiten?	? 6668,22746 7072,22905 7923,23225 8176,23315 8584,23421
+Alter Bernauer Heerweg: die gesamte Straße mäßig geeignet? durchlässig für KfZ-Verkehr an beiden Seiten?	? 6668,22746 7072,22905 7782,23172 7923,23225 8176,23315 8584,23421
 Waldpark Steinberg: laut ADFC-Karte befahrbar	? 5138,21358 4717,21199 4412,21154 4208,21159 3979,21211 3553,21665 3406,21911 3139,22201
 Waldweg über den Beyschlagtunnel befahrbar?	? 506,22266 742,22666
 Soldiner Str.: laut ADFC mäßig geeignet	? 9096,16976 9604,16760
@@ -45,7 +45,7 @@ Mauerweg, Zugang	? 6634,-137 6725,-89
 Mauerweg Teltow: befahrbar, Qualität? (laut "Berliner Umland" gut geeigneter Radweg)	? 3400,515 3268,828
 Mauerweg Schönow: befahrbar, Qualität? (laut "Berliner Umland" gut geeigneter Radweg)	? 325,-180 135,-29 118,407 -21,1073
 Str. 19 (Am Nordgraben): Qualität? (westl. Seite: mäßiger Feldweg)	? 10228,21940 11008,21725 11183,21598 11345,21360 11705,21072
-Nisbléstr.: Qualität? (laut ADFC-Karte gut geeignet)	? 11870,21574 11008,21725
+Nisbléstr.: Qualität? (laut ADFC-Karte gut geeignet)	? 11870,21574 11659,21611 11008,21725
 Möllersdorfer Weg: Qualität (laut ADFC-Karte mäßig geeignet)	? 9813,24015 10106,24090 10855,24664 11150,24434 11514,24284
 Staakener Heuweg: Qualität (nur mäßig)?, für Kfz befahrbar?	? -7506,15938 -7428,16314
 Zum Eiskeller: Qualität OK?	? -6668,20809 -7015,20320 -7572,20024 -7566,19861 -7980,19618 -7960,19066
@@ -443,6 +443,28 @@ Am Ahrensfelder Berg, westlicher Weg: Qualität laut ADFC-Karte gut	? 22690,16383
 Flämingstr.: Qualität laut ADFC-Karte gut	? 21451,18415 21131,17784
 entlang der neuen Wuhle: Qualität laut ADFC-Karte gut, wie ist die Verbindung zur Märkischen Allee und Wuhletalstr.?	? 22002,17492 21579,17559 21131,17784 20965,17862
 Eichhorster Str.: Qualität laut ADFC-Karte gut	? 21451,18415 21543,18571 21853,18700
+Marie-Elisabeth-von-Humboldt-Str.: Qualität laut ADFC-Karte gut, Eintrag in PLZ-DB fehlt noch	? 20619,18497 20598,18560 20987,19604
+Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
+Cottbusser Str.: laut ADFC-Karte gute Qualität	? 23097,14855 23279,14785 23736,14844
+Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23279,14785 23378,14528
+Marchwitzastr. - Langhoffstr.: laut ADFC-Karte gut geeignet, wo führt der Weg genau entlang, Einschränkung wegen Fußgängern?	? 19897,13535 19826,14070 19813,14479
+Beilsteiner Str.: laut ADFC-Karte im südlichen Abschnitt gut geeignet, Einbahnstraße!	? 18749,12413 18875,13473 18859,14048 18998,14089 19025,14037
+Albertinenstr./Amalienstr.: laut ADFC-Karte gut geeignet, im Mittelteil Einbahnstraße	? 14067,16127 14153,16528 13990,16629 13814,16759 13589,16965 13361,17172
+Gäblerstr.: laut ADFC-Karte gut geeignet	? 13146,17016 13029,17185 13023,17379 13011,17470
+Günter-Litfin-Str.: laut ADFC-Karte gut geeignet, Eintrag in PLZ-DB fehlt	? 13361,17172 13115,17410
+Thiesstr.: laut ADFC-Karte im westlichen Teil gut, im östlichen Teil mäßig geeignet	? 13023,17379 13115,17410 13251,17525 13290,17570
+Neukirchstr.: laut ADFC-Karte gut geeignet, Zugang zur Prenzlauer Promenade vorhanden, Zugang zur Blankenburger Str. vorhanden?	? 12896,18317 12752,18387 12562,18483 12002,18768
+Bleicheroder Str./Stiftsweg: Qualität laut ADFC-Karte gut, Tram auf Fahrbahn? Einbahnstraße beachten	? 11937,19175 11725,19007 11268,18851 11025,18531
+Galenusstr.: laut ADFC-Karte gut geeignet	? 11915,19580 11275,19250 11054,19226
+Am Schloßpark: Qualität? für Radfahrer befahrbar? Autoverkehr vorhanden?	? 11054,19226 10775,19054 10496,18704
+Majakowskiring: laut ADFC-Karte gut geeignet, aber Treppen vorhanden (???)	? 10440,18910 10318,18921 10018,18842 9951,18744 10009,18707 10359,18814 10440,18910
+Waldstr. (Pankow): laut ADFC-Karte gut geeignet	? 10018,19429 9970,19500 9840,19923 9773,20136 9753,20454
+Birkenallee (Pankow): Qualität?	? 9753,20454 9655,20703
+Nordendstr.: laut ADFC-Karte westlicher Teil mäßig, östlicher Teil gut geeignet	? 10026,20576 9753,20454 9174,20316 8415,19910
+Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11326,23923 10889,23381 10775,23253 10396,23128 9890,22932
+Clémentweg/Dr.-Dorsch-Allee: laut ADFC-Karte gut geeignet, Eintrag in PLZ-DB fehlt	? 11740,22770 10889,23381
+Kalvinistenweg: laut ADFC-Karte gut geeignet, Eintrag in PLZ-DB fehlt	? 11693,22482 11807,22395 11718,21978 11659,21611
+Alte Fasanerie/Freizeitpark Lübars: Qualität laut ADFC-Karte nur mäßig	? 7423,22368 8015,22512 8062,22631 7782,23172
 wirklich?	? 9215,3599
 Wirklich?	? -3755,17090
 geplante Ampel in der Johannisthaler	? 14196,2876
@@ -457,7 +479,7 @@ Rufacher Weg: bedingt geeignet (laut ADFC-Karte)	? 12255,2058 12582,2129 12738,2
 (Am Bahndamm): mäßig geeignet (laut ADFC-Karte)	? 8173,3299 8103,3354 7757,4294
 Flaischlenstr.: nicht geeignet (laut ADFC-Karte)	? 13514,22642 13426,22398 13395,22365
 (Spreeuferweg): mäßig geeignet (laut ADFC-Karte)	? 4543,12516 4501,12544 4331,12538
-Obersteiner Weg: mäßig geeignet (laut ADFC-Karte)	? 13183,17580 13525,17304
+Obersteiner Weg: mäßig geeignet (laut ADFC-Karte)	? 13183,17580 13251,17525 13525,17304
 Moltkestr.: mäßig geeignet (laut ADFC-Karte)	? 4596,3738 4487,3802 4235,3999 4092,4217 3926,4438
 Haynauer Str.: mäßig geeignet (laut ADFC-Karte)	? 8039,3242 8055,2885 8018,2657 7897,2380 7921,2302
 Alt-Hermsdorf: mäßig geeignet (laut ADFC-Karte (wahrscheinlich Kopfsteinpflaster))	? 4347,23205 4405,23149 4445,23128 4582,23035
@@ -479,7 +501,7 @@ Schererstr.: mäßig geeignet (laut ADFC-Karte)	? 7786,15785 7960,15801
 Nymphenufer: mäßig geeignet (laut ADFC-Karte)	? -4044,1841 -3981,1764 -3806,1644 -3761,1576 -3654,1539
 Dolomitenstr.: mäßig geeignet (laut ADFC-Karte)	? 10596,17554 10473,17446 10305,17299
 Walderseestr.: mäßig geeignet (laut ADFC-Karte)	? 7333,17149 7631,17239
-Alter Bernauer Heerweg: mäßig geeignet (laut ADFC-Karte (wenigstens der östliche Teil))	? 6668,22746 7072,22905 7923,23225 8176,23315 8584,23421
+Alter Bernauer Heerweg: mäßig geeignet (laut ADFC-Karte (wenigstens der östliche Teil))	? 6668,22746 7072,22905 7782,23172 7923,23225 8176,23315 8584,23421
 Cyclopstr.: nicht geeignet (laut ADFC-Karte)	? 4825,21718 5138,21358
 Rathenower Str.: mäßig geeignet (laut ADFC-Karte)	? 6743,14008 6670,14302
 (Spreeufer): mäßig geeignet (laut ADFC-Karte)	? -288,13279 -193,13318 303,13287 700,13371 984,13475 1193,13485
