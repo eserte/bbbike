@@ -1436,6 +1436,8 @@ LAYER
   END
 END
 
+## XXX geht nicht in mapserver-3.6.6!
+[% IF !MAPSERVER_VERSION.defined || MAPSERVER_VERSION != "3.6.6" -%]
 LAYER
   NAME "Einbahnstraßen"
   TYPE LINE
@@ -1444,7 +1446,6 @@ LAYER
   GROUP blocked
 
   CLASSITEM 'CAT'
-## XXX geht nicht in mapserver-3.6.6!
 ## Hack 1_left/1_right notwendig, siehe -onewayhack in .../miscsrc/bbd2esri
   CLASS
     EXPRESSION '1_left'
@@ -1486,6 +1487,7 @@ LAYER
     WMS_SRS "EPSG:4326"
   END
 END
+[% END -%]
 
 # Steigungen
 # XXX Suboptimal gezeichnet. Vielleicht mit (mehrfachen) Größer-Zeichen,

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.25 2005/02/27 23:34:09 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.25 2005/02/27 23:34:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -106,8 +106,10 @@ BBBIKE_SF_DIR=$(HOME)/www/bbbike.sourceforge.net
 
 BBBIKE_RADZEIT_USER=		root
 BBBIKE_RADZEIT_HOST=		www.radzeit.de
-BBBIKE_RADZEIT_APACHE_DIR=	/usr/local/apache/radzeit
+BBBIKE_RADZEIT_OLD_APACHE_DIR=	/usr/local/apache/radzeit
+BBBIKE_RADZEIT_APACHE_DIR=	/var/www/domains/radzeit.de/www/
 BBBIKE_RADZEIT_CGI_DIR=		$(BBBIKE_RADZEIT_APACHE_DIR)/cgi-bin
+BBBIKE_RADZEIT_HTDOCS_DIR=      $(BBBIKE_RADZEIT_APACHE_DIR)/public
 BBBIKE_RADZEIT_DIR=		$(BBBIKE_RADZEIT_APACHE_DIR)/BBBike
 BBBIKE_RADZEIT_DIR2=		$(BBBIKE_RADZEIT_APACHE_DIR)/BBBike2
 BBBIKE_RADZEIT_DEST=		$(BBBIKE_RADZEIT_USER)@$(BBBIKE_RADZEIT_HOST):$(BBBIKE_RADZEIT_DIR)

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.55 2005/03/24 00:56:47 eserte Exp $
+# $Id: Makefile,v 1.55 2005/03/24 00:56:47 eserte Exp eserte $
 #
 
 # Targets:
@@ -40,7 +40,7 @@ TESTS=			basic.t \
 			cgi.t \
 			wapcgi.t
 TESTS_ADD=		BBBikeTest.pm
-HTDOCS=			htdocs
+HTDOCS=			public
 
 
 # XXX maybe use test-on-remote-and-send-mail (after tests)
@@ -70,7 +70,7 @@ DEPLOY_LOCAL_DATA_TARGETS=	prepare-bbbike-data \
 				prepare-bbbike-dist \
 				test-local
 
-SSH_PROG_AND_ARGS?=	ssh
+SSH_PROG_AND_ARGS?=	ssh -2
 RSYNC_PROG?=	rsync
 RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --exclude-from .rsync.exclude
 RSYNC_DEST?=	${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_HOST}:${BBBIKE_RADZEIT_APACHE_DIR}
@@ -89,8 +89,8 @@ XARGS_REPL?=	xargs -J %
 MAPSERVER_EXE?=	$(HOME)/www/cgi/mapserv.cgi
 
 .ifndef TARGET
-.if ${CURDIR:T} == "www.radzeit-new.de"
-TARGET=radzeit-new
+.if ${CURDIR:T} == "www.radzeit-old.de"
+TARGET=radzeit-old
 .endif
 .endif
 
@@ -149,12 +149,11 @@ LOCAL_HTML_URL=	http://localhost:8080/bbbike
 DATA_DIR=	data
 .endif
 
-#RADZEIT_NEW_URL=	http://130.149.231.46
-RADZEIT_NEW_URL=	http://www.radzeit.de
-.if ${TARGET} == "radzeit-new"
-SSH_PROG_AND_ARGS=	ssh -2 -p 534
-HTDOCS=			public
-LOCAL_URL=		http://radzeit-new.herceg.de
+RADZEIT_OLD_URL=	http://www.radzeit.de
+.if ${TARGET} == "radzeit-old"
+SSH_PROG_AND_ARGS=	ssh
+HTDOCS=			htdocs
+LOCAL_URL=		http://radzeit-old.herceg.de
 .endif
 
 .include "${BBBIKE_ROOT_DIR}/mapserver/brb/Makefile.${TARGET}.inc"
@@ -177,7 +176,7 @@ rsync:			check-rsync-ok \
 			post-rsync-bbbike-data
 
 check-rsync-ok:
-	perl -nle '/^(.*)www.radzeit.de/ && $$1 !~ /\#/ && print "Using new radzeit server"' /etc/hosts
+	#perl -nle '/^(.*)www.radzeit.de/ && $$1 !~ /\#/ && print "Using new radzeit server"' /etc/hosts
 	[ ! -e ${CURDIR}/.not_rsyncable ] || ( echo "Not rsyncable!"; false )
 	[ ! -e ${CURDIR}/.rsync_block ] || ( echo "Not rsyncable because:"; cat ${CURDIR}/.rsync_block; false )
 
@@ -440,12 +439,12 @@ test-local:
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
 		${TESTS}
 
-test-radzeit-new:
+test-radzeit-old:
 	cd ${.CURDIR}/BBBike/t && \
-	BBBIKE_TEST_CGIDIR=${RADZEIT_NEW_URL}/cgi-bin \
-	BBBIKE_TEST_CGIURL=${RADZEIT_NEW_URL}/cgi-bin/bbbike.cgi \
-	BBBIKE_TEST_WAPURL=${RADZEIT_NEW_URL}/cgi-bin/wapbbbike.cgi \
-	BBBIKE_TEST_HTMLDIR=${RADZEIT_NEW_URL}/BBBike \
+	BBBIKE_TEST_CGIDIR=${RADZEIT_OLD_URL}/cgi-bin \
+	BBBIKE_TEST_CGIURL=${RADZEIT_OLD_URL}/cgi-bin/bbbike.cgi \
+	BBBIKE_TEST_WAPURL=${RADZEIT_OLD_URL}/cgi-bin/wapbbbike.cgi \
+	BBBIKE_TEST_HTMLDIR=${RADZEIT_OLD_URL}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS}
 

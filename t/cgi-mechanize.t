@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.22 2005/03/24 00:53:21 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.22 2005/03/24 00:53:21 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -45,12 +45,8 @@ if (!@browsers) {
 }
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
-my $tests = 67; # XXX
+my $tests = 76;
 plan tests => $tests * @browsers;
-
-if ($do_xxx) {
-    goto XXX;
-}
 
 ######################################################################
 # general testing
@@ -88,6 +84,9 @@ for my $browser (@browsers) {
 	}
     };
 
+    if ($do_xxx) {
+	goto XXX;
+    }
 
     {
 	$get_agent->();
@@ -200,7 +199,7 @@ for my $browser (@browsers) {
     ######################################################################
     # test for Kaiser-Friedrich-Str. (Potsdam) problem
 
- XXX: {
+    {
 
 	$get_agent->();
 
@@ -460,6 +459,40 @@ for my $browser (@browsers) {
 	    cmp_ok($len{"WI1"}, "<=", $len{"WI2"}, "Strong optimization is farthest");
 	}
 
+    }
+
+ XXX: {
+	$get_agent->();
+
+	$agent->get($cgiurl);
+	$agent->follow_link(text_regex => qr/Info/);
+	my_tidy_check($agent);
+
+	like($agent->content, qr{Information}, "On the info page");
+	$agent->follow_link(text_regex => qr{dieses Formular});
+	my_tidy_check($agent);
+
+	like($agent->content, qr{Neue Stra.*e f.*r BBBike}, "On the new street form");
+	my $fragezeichenform_url = $agent->uri;
+	$fragezeichenform_url =~ s{newstreetform}{fragezeichenform};
+
+	$agent->field("strname", "TEST IGNORE");
+	$agent->field("author",  "TEST IGNORE");
+	$agent->submit;
+	my_tidy_check($agent);
+
+	like($agent->content, qr{Danke, die Angaben.*gesendet}, "Sent comment");
+
+	$agent->get($fragezeichenform_url);
+	my_tidy_check($agent);
+
+	$agent->field("strname",  "TEST IGNORE");
+	$agent->field("comments", "TEST IGNORE");
+	$agent->field("author",   "TEST IGNORE");
+	$agent->submit;
+	my_tidy_check($agent);
+
+	like($agent->content, qr{Danke, die Angaben.*gesendet}, "Sent comment (fragezeichenform)");
     }
 
 } # for

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.24 2005/03/22 08:37:24 eserte Exp $
+# $Id: Makefile,v 1.25 2005/03/25 08:24:17 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -128,13 +128,13 @@ FONTS_LIST=		fonts-spiff.list
 WWW_USER=		eserte
 TARGET_DIR=		${.CURDIR:H}/brb-spiff
 
-.elif ${TARGET} == "radzeit" || ${TARGET} == "radzeit.herceg.de" || ${TARGET} == "radzeit-new"
+.elif ${TARGET} == "radzeit" || ${TARGET} == "radzeit.herceg.de" || ${TARGET} == "radzeit-old"
 
 HOST=			$(RADZEIT_HOST)
-.if ${TARGET} == "radzeit-new"
-HTDOCS=			public
-.else
+.if ${TARGET} == "radzeit-old"
 HTDOCS=			htdocs
+.else
+HTDOCS=			public
 .endif
 MAPSERVER_DIR=		$(RADZEIT_APACHE_DIR)/$(HTDOCS)/mapserver/brb
 MAPSERVER_RELURL=	/mapserver/brb
@@ -143,6 +143,7 @@ MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 #MAPSERVER_PROG_URL=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
 MAPSERVER_PROG_RELURL=	$(BBBIKE_MAPSERVER_URL:C/^http:\/\/[^\/]+//)
 MAPSERVER_PROG_URL=	$(BBBIKE_MAPSERVER_URL)
+MAPSERVER_VERSION=	3.6.6
 # XXX should be changed to BBBike for real production
 IMAGE_DIR=		$(RADZEIT_APACHE_DIR)/BBBike/images
 BBBIKE_HTML_RELURL=	/BBBike/html
@@ -151,7 +152,7 @@ BBBIKE_IMAGES_RELURL=	/BBBike/images
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 IMAGE_SUFFIX=		png
 
-.if ${TARGET} == "radzeit" || ${TARGET} == "radzeit-new"
+.if ${TARGET} == "radzeit" || ${TARGET} == "radzeit-old"
 WWW_USER=		www
 TARGET_DIR=		${.CURDIR:H}/brb-radzeit
 .elif ${TARGET} == "radzeit.herceg.de"
@@ -159,10 +160,10 @@ WWW_USER=		eserte
 TARGET_DIR=		${.CURDIR:H}/brb-radzeit.herceg.de
 .endif
 
-.if ${TARGET} == "radzeit"
+.if ${TARGET} == "radzeit-old"
+FONTS_LIST=		fonts-radzeit-old.list
+.elif ${TARGET} == "radzeit"
 FONTS_LIST=		fonts-radzeit.list
-.elif ${TARGET} == "radzeit-new"
-FONTS_LIST=		fonts-radzeit-new.list
 .elif ${TARGET} == "radzeit.herceg.de"
 FONTS_LIST=		fonts-vran.list
 .endif
@@ -287,7 +288,8 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile ${ABS_LOCAL_BBBIKE_DIR}
 	touch $@
 	chmod ugo+r $@
 	echo "### DO NOT EDIT. Automatically created by Makefile" >> $@
-.if ${TARGET} == "radzeit-new"
+.if ${TARGET} == "radzeit-old"
+.error not supported anymore
 	echo "RSYNC=	rsync" >> $@
 	echo "BBBIKE_RADZEIT_USER=	root" >> $@
 #	echo "BBBIKE_RADZEIT_HOST=	130.149.231.37" >> $@
