@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.61 2004/01/10 22:36:05 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.62 2004/02/20 21:53:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2562,6 +2562,12 @@ sub edit_gpsman_waypoint {
 	    $_->destroy for $edit_gpsman_waypoint_tl->children;
 	    $edit_gpsman_waypoint_tl->deiconify;
 	    $tl = $edit_gpsman_waypoint_tl;
+	    $tl->Walk(sub {
+			  my $w = shift;
+			  eval {
+			      $w->configure(-state => "normal");
+			  };
+		      });
 	} else {
 	    $tl = $main::top->Toplevel(-title => "Waypoint");
 	    $edit_gpsman_waypoint_tl = $tl;
@@ -2669,31 +2675,47 @@ sub edit_gpsman_waypoint {
 	    $create_tl->();
 	    my @f = split /\t/, $line;
 	    my $acc = "";
-	    if ($f[4] =~ /^(~+)/) {
+	    if ($f[4] =~ /^(~+|\?)/) {
 		$acc = $1;
 	    }
-	    my $weiter = 0;
-	    my $close = sub { $weiter = 1 };
+	    #my $weiter = 0;
+	    #my $close = sub { $weiter = 1 };
+	    my $disable = sub {
+		$tl->Walk(sub {
+			      my $w = shift;
+			      eval {
+				  $w->configure(-state => "disabled");
+			      };
+			  });
+	    };
 	    my $set_accuracy = sub {
-		$f[4] =~ s/^~*/$acc/;
+		$f[4] =~ s/^(~*\|?)/$acc/;
 		my $new_line = join("\t", @f);
 		warn $new_line;
 		$gpsman_data[$inx] = $new_line;
-		$close->();
+		$disable->();
+		untie @gpsman_data;
+		#$close->();
 	    };
-	    for my $accval ('', '~', '~~') {
-		$tl->Radiobutton(-text => $accval eq '' ? '!' : $accval,
-				 -value => $accval,
-				 -variable => \$acc,
-				 -indicator => 0,
-				 -command => $set_accuracy)->pack;
+	    my $f = $tl->Frame->pack;
+	    for my $accval ('', '?', '~', '~~') {
+		$f->Radiobutton(-text => $accval eq '' ? '!' : $accval,
+				-value => $accval,
+				-variable => \$acc,
+				-indicator => 0,
+				-command => $set_accuracy)->pack(-side => "left");
 	    }
 	    $tl->Button(Name => "close",
-			-command => $close)->pack;
-	    $tl->OnDestroy(sub { $weiter = -1 });
-	    $tl->waitVariable(\$weiter);
-	    untie @gpsman_data;
-	    $tl->withdraw if Tk::Exists($tl);
+			#-command => $close,
+			-command => sub {
+			    untie @gpsman_data;
+			    $tl->withdraw if Tk::Exists($tl);
+			},
+		       )->pack;
+	    #$tl->OnDestroy(sub { $weiter = -1 });
+	    #$tl->waitVariable(\$weiter);
+	    #untie @gpsman_data;
+	    #$tl->withdraw if Tk::Exists($tl);
 	    return;
 	}
 
@@ -2793,8 +2815,8 @@ warn "ok";
 use vars qw($remember_map_mode_for_edit_gps_track);
 sub edit_gps_track_mode {
     $remember_map_mode_for_edit_gps_track = $main::map_mode
-	if $main::map_mode ne main::MM_CUSTOMCHOOSE();
-    $main::map_mode = main::MM_CUSTOMCHOOSE();
+	if $main::map_mode ne main::MM_CUSTOMCHOOSE_TAG();
+    $main::map_mode = main::MM_CUSTOMCHOOSE_TAG();
     my $cursorfile = main::build_text_cursor("GPS trk");
     $main::c->configure(-cursor => defined $cursorfile ? $cursorfile : "hand2");
     main::status_message(M("Track zum Editieren auswählen"), "info");
@@ -2858,8 +2880,8 @@ sub edit_gps_track {
 
 sub show_gps_track_mode {
     $remember_map_mode_for_edit_gps_track = $main::map_mode
-	if $main::map_mode ne main::MM_CUSTOMCHOOSE();
-    $main::map_mode = main::MM_CUSTOMCHOOSE();
+	if $main::map_mode ne main::MM_CUSTOMCHOOSE_TAG();
+    $main::map_mode = main::MM_CUSTOMCHOOSE_TAG();
     my $cursorfile = main::build_text_cursor("GPS trk");
     $main::c->configure(-cursor => defined $cursorfile ? $cursorfile : "hand2");
     main::status_message(M("Track zum Anzeigen auswählen"), "info");
@@ -3378,10 +3400,33 @@ sub draw_pp {
     my $transpose = \&main::transpose;
     my $abk = $args{-abk} || '';
     $c->delete("pp-$abk");
+
+    my @orig_files;
+    my $s;
+    if (UNIVERSAL::isa($file, "ARRAY")) {
+	@orig_files = map { "$_-orig" } @$file;
+	$s = MultiStrassen->new(@orig_files);
+    } else {
+	@orig_files = $file."-orig";
+	$s = Strassen->new(@orig_files);
+    }
+
+    my $maptoken = $args{-map};
     require Karte;
-    require Karte::Berlinmap1996;
-    my $map = $Karte::Berlinmap1996::obj;
-    my $s = Strassen->new($file."-orig");
+    Karte::preload(":all");
+    require BBBikeEditUtil;
+    my $map = $Karte::map{$maptoken};
+    my $mapprefix = $map->coordsys if $map;
+    for my $f (@orig_files) {
+	my $baseprefix = { BBBikeEditUtil::base() }->{$f};
+	if (defined $mapprefix && $mapprefix ne $baseprefix) {
+	    warn "Ambigous base prefixes ($mapprefix vs $baseprefix)";
+	} else {
+	    $mapprefix = $baseprefix;
+	}
+    }
+    $map = $Karte::map_by_coordsys{$mapprefix};
+
     main::IncBusy($top);
     eval {
 	$s->init;
@@ -3390,11 +3435,15 @@ sub draw_pp {
 	    last if !@{ $r->[Strassen::COORDS()] };
 	    for my $p (@{ $r->[Strassen::COORDS()] }) {
 		my($ox,$oy) = split /,/, $p;
+		my($prefix) = $ox =~ m/^([^0-9+-]+)/; # stores prefix
+		$ox =~ s/^([^0-9+-]+)//; # removes prefix
+		my $map = $prefix ? $Karte::map_by_coordsys{$prefix} : $map;
+		#if (!defined $map) { warn "@$r $p $prefix" }
 		my($x, $y)  = $map->map2standard($ox,$oy);
 		my($cx,$cy) = $transpose->($x,$y);
 		$c->createLine($cx,$cy,$cx,$cy,
 			       -tags => ['pp', "$x,$y",
-					 "ORIG:$ox,$oy", "pp-$abk"],
+					 "ORIG:$prefix$ox,$oy", "pp-$abk"],
 			      );
 	    }
 	}

@@ -19,7 +19,7 @@ Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15586,27150 15231,26587 14859,26029 
 Hobrechtsfelder Chaussee (ab Kurve): schlechtes Kopfsteinpflaster, 13km/h	Q3 15586,27150 15709,27984 15757,28054
 Wisbyer Str.: mäßiges Kopfsteinpflaster	Q2 11033,16464 11397,16405 11688,16365 11727,16358
 Weserstr.: Kopfsteinpflaster, schmale Radwege	Q1 11888,9203 12074,9217 12148,9209 12322,9124 12590,8977 12740,8862 13029,8632 13217,8493 13384,8354 13566,8212 13724,8090
-Donaustr. bis zur Schönstedtstr.: schlechtes bis mäßiges Kopfsteinpflaster (15-20km/h)	Q2 12150,8891 12202,8895 12394,8729 12549,8616 12771,8439
+Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster (15-20km/h)	Q2 12150,8891 12202,8895 12394,8729 12549,8616 12649,8535
 Donaustr.: Kopfsteinpflaster	Q2 12852,8366 12918,8232
 Friesenstr.: mäßiges Kopfsteinpflaster	Q2 9801,8683 9796,8905 9799,8962 9793,9241
 Heimstr.: mäßiges Kopfsteinpflaster	Q2 9958,8966 9962,9237
@@ -40,7 +40,7 @@ Legiendamm: Kopfsteinpflaster	Q2 11283,10981 11220,10839 11186,10843 11151,10781
 Segitzdamm: Kopfsteinpflaster	Q2 11151,10781 11133,10714 11157,10699 11134,10642 11090,10538 11062,10458 11009,10442 10971,10367 10962,10340 10974,10266 10910,10131
 Graefestr.: Kopfsteinpflaster, teils OK, teils uneben	Q1 11266,9496 11346,9655 11411,9810
 Graefestr.: mäßiges Kopfsteinpflaster	Q2 11507,10004 11411,9810
-Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11512,10105 11735,10022 12119,9823 12591,9584 12712,9523
+Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11512,10105 11735,10022 11946,9913 12119,9823 12591,9584 12712,9523
 Maybachufer: Kopfsteinpflaster	Q2 11543,10015 11880,9874 12093,9783 12257,9703 12569,9547 12785,9443 12841,9368 12870,9366
 Innstr.: Kopfsteinpflaster (mäßig bis schlecht)	Q2 13107,8343 13217,8493 13366,8694
 Elsenstr.: mäßiges Kopfsteinpflaster	Q2 13402,8741 13504,8882 13657,9063
@@ -90,7 +90,7 @@ Schulze-Boysen-Str: sehr guter Asphalt	Q0 15452,11330 15480,11392
 Buchberger Str.: teilweise mäßige Betonplatten	Q1 16225,11523 16373,11933
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, Richtung Westen 17km/h möglich (weil bergab)	Q3 7497,8168 7268,8225 7005,8150
 Ebersstr.: gutes Kopfsteinpflaster, >22 km/h	Q1 6935,8208 6918,8178 6658,8063
-Reichenberger Str.: Kopfsteinpflaster	Q2 11454,10400 11610,10305 11833,10206 12237,10023 12718,9802 12837,9748 12939,9703
+Reichenberger Str.: Kopfsteinpflaster	Q2 11454,10400 11610,10305 11833,10206 12054,10108 12237,10023 12718,9802 12837,9748 12939,9703
 Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11833,10206 11949,10414
 Aachener Str.: Kopfsteinpflaster	Q2 4687,8034 4688,8323 4623,8457
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13302,9894 13266,9851
@@ -767,5 +767,10 @@ Bergstr. (Mitte): Kopfsteinpflaster	Q2 9792,13681 9663,14036
 Lepsiusstr.: Kopfsteinpflaster	Q2 4981,6642 4948,6582 4922,6537
 Artemisstr.: kleinteiliges Kopfsteinpflaster	Q1 4387,22222 4293,22365 4140,22623
 Bohnsdorfer Str.: Waldweg??	Q2 21999,2171 21996,1683 22162,1183 22217,1108
+Nostitzstr.: Kopfsteinpflaster	Q2 9477,9214 9492,9311 9506,9434 9532,9600 9568,9825
+Riemannstr.: gutes Kopfsteinpflaster, etwas erhöhte Bordsteine zu passieren	Q1 9642,9405 9578,9419
+Fontanepromenade: Kopfsteinpflaster	Q2 10752,9662 10629,9360
+Südstern: gutes Kopfsteinpflaster	Q1 10747,9326 10629,9360
+Südstern: Kopfsteinpflaster	Q2 10629,9360 10567,9379
 Voigtstr.: Kopfsteinpflaster	Q2 14702,12157 14748,12314 14798,12502 14842,12826
 Friedrichshaller Str.: Kopfsteinpflaster	Q2 3083,7587 2784,7711

@@ -1,4 +1,4 @@
-Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199 9141,10292 8804,10314 8720,10342 8661,10377 8525,10626 8430,10710
+Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034 6873,11011
 Kanalstraßen Nordufer	1 6880,11110 7160,11225 7333,11179 7595,11086 7873,11142 7993,11137 8241,11024
 Kanalstraßen Nordufer	1 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8739,10404 8820,10379 9029,10366 9147,10359 9241,10324 9392,10260 9593,10238 9865,10286
@@ -201,7 +201,8 @@ Sybelstr.	1 4006,10585 4256,10583
 Sybelstr.	1 4006,10585 3883,10577
 Sybel/Waltzstr.	1 3883,10577 3800,10580 3744,10668 3734,10756
 Aßmannstr.	1 25039,5766 25030,5307
-Schönblicker Str.	N 31695,3635 31684,3701 31720,3734 31786,3723 31798,3659 31749,3629 31695,3635
+Schönblicker Str.	1 31695,3635 31684,3701 31720,3734 31786,3723 31798,3659 31749,3629 31695,3635
+Bayerische Str.	1 4296,10004 4349,10247
 Hans-Thoma-Str.	1 -12151,-768 -12258,-768 -12323,-555
 Behlertstr.	1 -12237,-427 -12195,-469 -12066,-768
 Potsdamer Damm	2 -5717,-3655 -6229,-4018
@@ -213,6 +214,8 @@ Geschwister-Scholl-Str.	1 -14476,-1775 -14199,-1604
 Altlandsberger Chaussee	1 40283,16977 40625,16977
 Bernau, Bahnhofstr.	1 22784,30674 22827,30546
 Elisenau - Börnicke: Privatgelände?	2 24289,26604 24352,26945
+Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s 12119,9823 11946,9913 11735,10022 11512,10105
+Vorbergstr.	1s 7315,9156 7137,9216 7022,9211
 Gubener Str.	1s 13411,11899 13362,12002
 Czeminskistr.	1s 7603,8911 7570,8863
 Stallschreiberstr.	1s 10489,11405 10678,11172
@@ -368,6 +371,7 @@ Blankenburger Weg: Baustelle, Straße gesperrt bis 29.02.2004	2:inwork 12030,2049
 Crailsheimer Str., von Steglitzer Damm bis Ellwanger Str. Baustelle, Straße gesperrt, Einbahnstraßenregelung, Umleitung über Attilastr. bis 31.03.2004	1:inwork 7223,4724 7124,4529
 Johannisthaler Chaussee, Ernst-Keller Brücke; Bauarbeiten; Brücke gesperrt bis 30.06.	2:inwork 15573,4122 15608,4175 15779,4430
 am Beisheim-Center	2:inwork 8399,11630 8326,11732
+Wielandstr., S-Bahn-Sanierung (bis ca. 2004-04-30)	2:inwork 4415,11050 4399,10860
 B 101; (Bad Liebenwerda-Herzberg); Brücken Mühlengraben b.Langennau. u. Ziehtgraben b.Wied; Brückenneubau; Vollsperrung; 27.10.2003-30.04.2004	2:inwork 7881,-88140 7946,-88652
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen; schlechte Straße; Vollsperrung; 01.11.96-unbekannt	2:inwork -49943,24999 -49814,24722 -49685,24403 -49812,23869 -50004,23720 -50066,23101 -50767,21564
 L 11; (Bad Wilsnack-Wittenberge); Bahnübergang zw. Klein Lüben u. Kuhblank; Brückenbauarbeiten; Vollsperrung; 16.10.2003-30.06.2004	2:inwork -93851,63380 -93870,62356

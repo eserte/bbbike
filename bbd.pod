@@ -117,7 +117,8 @@ Bundesstraßen
 
 =item HH
 
-Important main streets (wichtige Hauptstraßen)
+Important main streets (wichtige Hauptstraßen). Entspricht von der
+Kfz-Dichte meist Bundesstraßen.
 
 =item H
 
@@ -384,6 +385,18 @@ Path instruction (genauere Wegbeschreibung).
 
 Dieser Weg ist gesperrt (z.B. Abbiegen nicht möglich), aber eine
 Umfahrung ist möglich ... siehe auch Kategorie C<3> in L</BLOCKINGS>.
+
+=item C<-2> relativ ruhiger Kfz-Verkehr
+
+=item C<-1>
+
+=item C<+1>
+
+=item C<+2> relativ starker Kfz-Verkehr
+
+Relativ zu der Kategorie einer Straße (von Nebenstraße C<NN> bis zur
+Bundesstraße C<B>) kann das subjektive Empfinden der Kfz-Dichte mit
+C<-2> bis C<+2> angepasst werden.
 
 =back
 

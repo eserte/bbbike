@@ -168,7 +168,8 @@ use BBBikeGlobalVars 1.012;
 # Please don't change order to stay compatible with tkbabybike
 use enum qw(:MM_
 	    SEARCH INFO BUTTONPOINT USEREDIT DRAG EDITPOINT
-	    SPECIALEDIT INSERTPOINT CREATERELATION CUSTOMCHOOSE
+	    SPECIALEDIT INSERTPOINT CREATERELATION
+	    CUSTOMCHOOSE CUSTOMCHOOSE_TAG
 	    BABYBIKE_SELECT BABYBIKE_BROWSE SCRIBBLE
 	   );
 
@@ -180,7 +181,7 @@ use enum qw(:B2M_
 use enum qw(:ATTRIB_ SINGULAR PLURAL LINES LONG);
 
 # XXX maybe this should go to Strassen::Dataset?
-@comments_types = qw(cyclepath ferry misc mount path route tram);
+@comments_types = qw(cyclepath ferry misc mount path route tram kfzverkehr);
 
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before use constant");}
@@ -4680,9 +4681,11 @@ sub define_item_attribs {
 	 'GPSs'   => "#c000c0",  # GPS street
 	 'GPSs~'  => "#f4c0f4",  # inaccurate
 	 'GPSs~~' => "#e4c8e4",  # even more inaccurate
+	 'GPSs?'  => "#303030",  # unsure
 	 'GPSp'   => "#0000a0",  # GPS point
 	 'GPSp~'  => "#c0c0b0",  # GPS point
 	 'GPSp~~' => "#c8c8c0",  # GPS point
+	 'GPSp?'  => "#303030",  # unsure
 
 	 'CP' => '#a000a0',
 	 'CS' => '#a000a0',
@@ -4690,6 +4693,11 @@ sub define_item_attribs {
 	 'Gf' => '#c00080',
 	 'PI' => '#a000a0',
 	 'P0' => '#a000a0',
+
+	 '-2' => '#008000', # (relativ) verkehrsarme Straße
+	 '-1' => '#00c000',
+	 '+1' => '#c00000',
+	 '+2' => '#800000', # (relativ) verkehrsreiche Straße
 
 	 'green1' => '#7fbb7f',
 	 'green2' => '#008b00',
@@ -6098,7 +6106,7 @@ sub set_route_point {
     } elsif ($special_edit ne '') {
 	eval $special_edit . '_edit_mouse1(@_)';
 	die $@ if $@;
-    } elsif ($map_mode eq MM_CUSTOMCHOOSE) {
+    } elsif ($map_mode eq MM_CUSTOMCHOOSE_TAG || $map_mode eq MM_CUSTOMCHOOSE) {
 	$customchoosecmd->($c, $e);
     } elsif ($map_mode eq MM_SEARCH) { # XXX doppelt
 	#XXX defined $search_route_flag && ????
@@ -10353,8 +10361,7 @@ sub show_info {
 	    $comments_pos_net = $str_obj{"comm"}->make_coord_to_pos
 		(sub {
 		     my $cat = $_[0]->[Strassen::CAT];
-		     #$cat =~ /^(S1|S2)$/ ? 2 : 0;
-		     $cat =~ /^CS/ ? 2 : 0;
+		     $cat =~ /^(?:CS|[-+][12])/ ? 2 : 0;
 		 });
 	}; warn $@ if $@;
     }

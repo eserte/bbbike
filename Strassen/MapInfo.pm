@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapInfo.pm,v 1.3 2004/02/18 08:28:30 eserte Exp $
+# $Id: MapInfo.pm,v 1.4 2004/02/23 07:24:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
@@ -121,6 +121,10 @@ sub read_mif {
 		if (/^pline/i) { # XXX other geometry types and pen not handled
 		    $push->();
 		    $current_record = [];
+		} elsif (/^point\s+([-+\d\.]+)\s+([-+\d\.]+)/i) {
+		    my($x, $y) = ($1, $2);
+		    $push->();
+		    $current_record = ["$x,$y"];
 		} elsif (/^\s*([-+\d\.]+)\s+([-+\d\.]+)/) {
 		    push @$current_record, "$1,$2";
 		}
@@ -266,13 +270,19 @@ EOF
 	my $no_coords = @{ $r->[Strassen::COORDS()] };
 	last if !$no_coords;
 
-	$mif .= "Pline $no_coords\n";
-	for my $p (@{ $r->[Strassen::COORDS()] }) {
-	    my($x, $y) = split /,/, $p;
+	if ($no_coords == 1) {
+	    my($x, $y) = split /,/, $r->[Strassen::COORDS()]->[0];
 	    ($x,$y) = $conv->($x,$y) if $conv;
-	    $mif .= "$x $y\n";
+	    $mif .= "Point $x $y\n";
+	} else {
+	    $mif .= "Pline $no_coords\n";
+	    for my $p (@{ $r->[Strassen::COORDS()] }) {
+		my($x, $y) = split /,/, $p;
+		($x,$y) = $conv->($x,$y) if $conv;
+		$mif .= "$x $y\n";
+	    }
+	    $mif .= "    Pen (1,2,1)\n";
 	}
-	$mif .= "    Pen (1,2,1)\n";
 
 	(my $name = $r->[Strassen::NAME()]) =~ s/\"//g; # XXX better solution!
 	(my $cat  = $r->[Strassen::CAT()])  =~ s/\"//g; # XXX better solution!
@@ -315,8 +325,15 @@ if (!Getopt::Long::GetOptions(\%args, "o=s", "map=s", "tomap=s")) {
 }
 my $o = delete $args{o};
 if (!defined $o) { die "-o option missing" }
-my $f = shift || die "Strassen file missing";
-my $s = Strassen->new($f);
+my $s;
+if (@ARGV == 0) {
+    die "Strassen file missing";
+} elsif (@ARGV == 1) {
+    my $f = shift;
+    $s = Strassen->new($f);
+} else {
+    $s = MultiStrassen->new(@ARGV);
+}
 export($s, $o, %args);
 
 =head1 AUTHOR

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.88 2004/02/16 22:25:09 eserte Exp $
+# $Id: Makefile,v 1.89 2004/02/22 23:14:23 eserte Exp $
 #
 
 MISCDIR=		../misc
@@ -262,7 +262,8 @@ comments:	comments_cyclepath-orig \
 		comments_mount-orig \
 		comments_path-orig \
 		comments_route-orig \
-		comments_tram-orig
+		comments_tram-orig \
+		comments_kfzverkehr-orig
 	-@$(WRITEABLE) $@
 	cat $> | $(CONVERT2HAFAS) -map B - | \
 	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
