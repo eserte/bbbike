@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTProgress.pm,v 1.6 2003/01/06 01:55:02 eserte Exp $
+# $Id: SRTProgress.pm,v 1.6 2003/01/06 01:55:02 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -103,28 +103,7 @@ sub Init {
 
     $w->{InProgress}++;
 
-    my @hidden_widgets;
-  TRY: {
-	if ($w->{'CurrentDependents'}[-1]) {
-#  	    if (exists $w->{'Group'}) {
-#  		if ($w->{'Group'}{'Start'}) {
-#  		    $w->{'Group'}{'Start'} = 0;
-#  		} else {
-#  		    last TRY;
-#  		}
-#  	    }
-	    warn "inprogress=$w->{InProgress}\n" if $VERBOSE;
-	    last TRY if ($w->{InProgress} != 1);
-	    if (!$w->{'CurrentVisible'}[-1]) {
-		foreach (@{ $w->{'CurrentDependents'}[-1] }) {
-		    push @hidden_widgets, $_
-			if $w->HideWidget($_);
-		}
-	    }
-	}
-    }
-    push @{$w->{'HiddenWidgets'}}, \@hidden_widgets;
-
+    push @{$w->{HideDone}}, 0;
     $w->Update(0);
 }
 
@@ -136,6 +115,9 @@ sub Update {
     my $text = $w->{'CurrentLabel'}[-1] .
       ($frac > 0 ? " " . int($frac*100) . "%" : "");
     $w->itemconfigure('label', -text => $text);
+    if ($frac > 0) {
+	$w->HideDependents;
+    }
     $w->idletasks;
 }
 
@@ -161,10 +143,11 @@ sub UpdateFloat {
 	       $w->{'Height'});
     $w->itemconfigure('label', -text => $w->{CurrentLabel}[-1])
       if defined $w->{CurrentLabel}[-1];
+    $w->HideDependents;
     $w->idletasks;
 }
 
-sub _restore_dependents {
+sub RestoreDependents {
     my $w = shift;
     if ($w->{'HiddenWidgets'} && @{$w->{'HiddenWidgets'}}) {
 	foreach my $dep (@{ $w->{'HiddenWidgets'}[-1] }) {
@@ -182,8 +165,9 @@ sub Finish {
     pop @{$w->{'CurrentDependents'}};
     pop @{$w->{'CurrentLabel'}};
     pop @{$w->{'CurrentVisible'}};
+    pop @{$w->{'HideDone'}};
     if (!$w->{Group} || @{$w->{'HiddenWidgets'}} > 1) {
-	$w->_restore_dependents;
+	$w->RestoreDependents;
     }
     $w->{InProgress}--;
 }
@@ -193,7 +177,7 @@ sub FinishGroup {
     warn "FinishGroup\n" if $VERBOSE;
     $w->{Group}{Count}--;
     if (!$w->{Group}{Count}) {
-	$w->_restore_dependents;
+	$w->RestoreDependents;
 	# if-Abfrage, um autovivify zu verhindern (??? häh?)
 	delete $w->{Group};
 	if ($w->cget(-grab)) {
@@ -201,6 +185,33 @@ sub FinishGroup {
 	    $w->toplevel->bindtags($w->{OldBindtags});
 	}
     }
+}
+
+sub HideDependents {
+    my($w) = @_;
+    return if $w->{HideDone}[-1];
+    my @hidden_widgets;
+ TRY: {
+	if ($w->{'CurrentDependents'}[-1]) {
+#  	    if (exists $w->{'Group'}) {
+#  		if ($w->{'Group'}{'Start'}) {
+#  		    $w->{'Group'}{'Start'} = 0;
+#  		} else {
+#  		    last TRY;
+#  		}
+#  	    }
+	    warn "inprogress=$w->{InProgress}\n" if $VERBOSE;
+	    last TRY if ($w->{InProgress} != 1);
+	    if (!$w->{'CurrentVisible'}[-1]) {
+		foreach (@{ $w->{'CurrentDependents'}[-1] }) {
+		    push @hidden_widgets, $_
+			if $w->HideWidget($_);
+		}
+	    }
+	}
+    }
+    push @{$w->{'HiddenWidgets'}}, \@hidden_widgets;
+    $w->{HideDone}[-1] = 1;
 }
 
 sub HideWidget {

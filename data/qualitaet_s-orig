@@ -2,7 +2,7 @@
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Br¸cken, Straﬂen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
-Markgrafendamm/Hauptstr.: Kopfsteinpflaster, m‰ﬂig bis schlecht	Q2 14641,10552 14657,10696 14681,10847 14794,10844 15255,10751
+Markgrafendamm/Hauptstr.: Kopfsteinpflaster, m‰ﬂig bis schlecht	Q2 14641,10552 14675,10693 14681,10847 14794,10844 15255,10751
 Karlshorster Str.: m‰ﬂiges Kopfsteinpflaster	Q2 15267,10865 15266,10791 15255,10751
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1683,9847 1511,10051 1382,10124 1308,10031
 Werkst‰ttenweg: m‰ﬂiges Kopfsteinpflaster	Q2 2121,10089 1691,9717
@@ -350,7 +350,7 @@ Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q0 14373,10046 14192,10145 1
 Hasenheide: asphaltiert	Q0 11308,8317 11128,9100 11131,9189
 Hasenheide, zur Lilienthalstr.: Parkweg	Q1 10709,9192 11128,9100
 Carl-Herz-Ufer: Kopfsteinpflaster (kann auf Uferweg umgangen werden)	Q2 10601,9922 10490,10080
-Carl-Herz-Ufer: Kopfsteinpflaster (kann auf breitem Uferweg umgangen werden)	Q2 10168,10085 10313,10084 10490,10080
+Carl-Herz-Ufer: Kopfsteinpflaster (kann auf breitem asphaltierten Uferweg umgangen werden)	Q1 10168,10085 10313,10084 10490,10080
 #XXX del Schloﬂstr.: Kopfsteinpflaster, teilweise sehr schlecht	Q3 3121,11838 3103,11968
 Zillestr.: Kopfsteinpflaster	Q2 3268,11834 3121,11838
 Am Graben: Kopfsteinpflaster	Q2 -4755,7736 -4800,7767
@@ -829,7 +829,7 @@ Artemisstr.: kleinteiliges Kopfsteinpflaster	Q1 4387,22222 4293,22365 4140,22623
 #: XXX geraten:
 Bohnsdorfer Str.: Waldweg??	Q2 21999,2171 21996,1683 22162,1183 22217,1108
 #: XXX die letzte Teilstrecke auch?
-Nostitzstr.: Kopfsteinpflaster	Q2 9477,9214 9492,9311 9506,9434 9532,9600 9568,9825
+Nostitzstr.: Kopfsteinpflaster	Q2 9477,9214 9492,9311 9506,9434 9532,9600
 Riemannstr.: gutes Kopfsteinpflaster, etwas erhˆhte Bordsteine zu passieren	Q1 9642,9405 9578,9419
 Fontanepromenade: Kopfsteinpflaster	Q2 10752,9662 10705,9555 10629,9360
 Freiligrathstr.: Kopfsteinpflaster	Q2 10903,9475 10705,9555
@@ -866,7 +866,7 @@ Wolffring: Kopfsteinpflaster	Q2 8807,8353 8711,8371 8670,8370
 Forster Str.: teilweise Kopfsteinpflaster, teilweise Asphalt	Q1 12276,9745 12403,9948
 Liegnitzer Str.: Kopfsteinpflaster	Q2 12439,9660 12562,9875
 Dirschauer Str.: Kopfsteinpflaster	Q2 14032,11570 13970,11366
-Laskerstr.: m‰ﬂiger Asphalt	Q1 14657,10696 14541,10735
+Laskerstr.: m‰ﬂiger Asphalt	Q1 14675,10693 14541,10735
 #: XXX
 Bˆdikerstr.: Kopfsteinpflaster	Q2 14541,10735 14488,10603 14439,10496 14396,10345
 Rudolfstr.: Kopfsteinpflaster	Q2 13520,11097 13713,11025 14026,10869
@@ -936,7 +936,7 @@ Lauterstr.: guter Asphalt	Q0 5812,7637 5807,7771 5814,7818
 Friedrich-Wilhelm-Platz: guter Asphalt	Q0 5341,7203 5310,7325 5315,7376 5357,7381
 #: ^^^
 (Kynaststr. - Uferwanderweg): Parkweg	Q2 14828,10628 14887,10584
-(Paul-und-Paula-Ufer): Parkweg	Q2 14856,10459 14887,10584 14990,10581 15100,10637 15209,10581
+(Paul-und-Paula-Ufer): Parkweg	Q2 14856,10459 14887,10584 14937,10598 14990,10581 15100,10637 15209,10581
 Am Rummelsburger See: glatt gepflastert	Q0 15209,10581 15453,10415
 Am Rummelsburger See: Parkweg	Q2 15453,10415 15456,10356 15518,10234 15625,10187 15828,9875 15931,9846
 Am Rummelsburger See: Betonweg	Q0 15931,9846 16046,9746 16262,9925

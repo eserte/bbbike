@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: K2Listbox.pm,v 1.10 2004/01/11 14:45:21 eserte Exp $
+# $Id: K2Listbox.pm,v 1.11 2004/02/16 01:06:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999, 2000, 2002, 2004 Slaven Rezic. All rights reserved.
@@ -223,7 +223,7 @@ Construct Tk::Widget 'Raw_K2Listbox';
 sub selectionSet {
     my $w = shift;
     $w->SUPER::selectionSet(@_);
-    my $cur = $w->curselection;
+    my($cur) = $w->curselection;
     if (defined $cur) {
         ${ $w->{Master}->{Configure}{-textvariable} } = $w->get($cur);
     }

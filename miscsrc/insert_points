@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.41 2004/08/18 22:44:18 eserte Exp $
+# $Id: insert_points,v 1.41 2004/08/18 22:44:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -74,10 +74,11 @@ use File::Basename;
 use Strassen::Dataset;
 use Strassen::Core;
 
+use vars qw($datadir);
+
 my $use_tk = 0;
 my $report;
 my $bbbikerootdir = "..";
-my $datadir;
 my $tempblockingdir;
 my $verbose = 0;
 my $current_coordsys = '';
@@ -734,7 +735,7 @@ sub do_log {
     $logfile = "$datadir/datachange.log" if !$logfile;
     warn "Log to $logfile...\n" if $verbose;
 
-    # LAST EDIT line
+    # EDIT line
     my $last_date_line;
     my @l = localtime;
     my $this_date_line = sprintf "%04d-%02d-%02d", $l[5]+1900, $l[4]+1, $l[3];
@@ -746,13 +747,13 @@ sub do_log {
 	$this_date_line .= " on=" . Sys::Hostname::hostname();
     }
 
-    # Do we need a current LAST EDIT line?
+    # Do we need a current EDIT line?
     my $date_line_needed = 1;
     if (eval { require File::ReadBackwards; 1 }) {
 	if (tie *BW, "File::ReadBackwards", $logfile) {
 	    while(<BW>) {
 		chomp;
-		if (/^\#\s+LAST\s+EDIT:\s*(.*)/) {
+		if (/^\#\s+EDIT:\s*(.*)/) {
 		    if ($1 eq $this_date_line) {
 			$date_line_needed = 0;
 			last;
@@ -767,7 +768,7 @@ sub do_log {
 
     if (open(LOG, ">>$logfile")) {
 	if ($date_line_needed) {
-	    print LOG "# LAST EDIT: $this_date_line\n";
+	    print LOG "# EDIT: $this_date_line\n";
 	}
 	print LOG "@args\n";
 	close LOG;

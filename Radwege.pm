@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Radwege.pm,v 1.17 2004/08/05 13:39:18 eserte Exp $
+# $Id: Radwege.pm,v 1.17 2004/08/05 13:39:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -41,6 +41,7 @@ my @category =
    "radstr"    => ["RW7", M"Fahrradstraße", M"Fahrradstraßen"],
    "zweigegenpflicht" => ["RW8", M"Zweirichtungsradweg (Gegenrichtung, benutzungspflichtig)", M"Zweirichtungsradwege (Gegenrichtung, benutzungspflichtig)"],
    "zweigegen" => ["RW9", M"Zweirichtungsradweg (Gegenrichtung)", M"Zweirichtungsradwege (Gegenrichtung)"],
+   "neben"     => ["RW10", M"Nebenstraße vorhanden", M"Nebenstraßen vorhanden"],
    "kein"      => ["RW0", M"kein Radweg", M"keine Radwege"],
    "nichtkat"  => ["RW", M"Radweg (ohne Kategorisierung)", M"Radwege (ohne Kategorisierung)"],
   );

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.73 2004/08/19 22:09:42 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.73 2004/08/19 22:09:42 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -1901,7 +1901,12 @@ struct(LinePartInfo => [ 'basefile' => "\$",
 use constant BBBIKEEDIT_TOPLEVEL => "bbbikeedit";
 
 use vars qw($sel_file $tmpdir);
-$tmpdir = $main::tmpdir || "/tmp";
+if (!defined $tmpdir) {
+    $tmpdir = $main::tmpdir || "/tmp";
+}
+
+use vars qw($auto_reload);
+$auto_reload = 0 if !defined $auto_reload;
 
 sub create {
     my($pkg) = @_;
@@ -2109,13 +2114,18 @@ use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n"
 			    $rec[$rec_count] = $l;
 			}
 			untie @rec;
+			if (eval { require "$FindBin::RealBin/miscsrc/insert_points" }) {
+			    BBBikeModify::do_log("changerec", "$rec_count $name\t$cat $coords", $file);
+			} else {
+			    warn $@ if $@;
+			}
+			if ($auto_reload) {
+			    main::reload_all();
+			}
 			$t->destroy;
 		    });
 
 }
-
-use vars qw($auto_reload);
-$auto_reload = 0;
 
 sub editmenu {
     my($top) = @_;
@@ -2285,7 +2295,7 @@ sub addnew {
 		       close ADD;
 
 		       if (eval { require "$FindBin::RealBin/miscsrc/insert_points" }) {
-			   BBBikeModify::do_log("add", "$name\t $cat $coords", $file);
+			   BBBikeModify::do_log("add", "$name\t$cat $coords", $file);
 		       } else {
 			   warn $@ if $@;
 		       }

@@ -412,10 +412,9 @@ $lost_time_per_ampel = 15; # verlorene Zeit pro Ampel in s
 $average_v = 0;
 
 $radwege_optimierung = 0;
-for(0..$#Radwege::category_order) {
+for(0..$#Radwege::category_order, "") {
     $radwege_speed{"RW$_"} = 100;
 }
-$radwege_speed{"RW"} = 100;
 
 %strcat_bez =
   (
@@ -4795,6 +4794,7 @@ sub define_item_attribs {
 	 'RW7' => 'green',
 	 'RW8' => '#000060',
 	 'RW9' => 'SlateBlue',
+	 'RW10' => 'green',
 	 'RW'  => 'SlateBlue',
 
 	 'sperre0' => 'red',	# Tragen
