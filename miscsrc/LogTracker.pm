@@ -413,7 +413,7 @@ sub fileevent_read_line {
     my $line = <FH>;
     my %d;
     eval {
-	($d{routes}, $d{mapserver}) = parse_line($_);
+	($d{routes}, $d{mapserver}) = parse_line($line);
     };
     if ($@) {
 	show_errors($@);
