@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: polizei-faxabruf-diff.pl,v 1.4 2005/02/25 01:52:51 eserte Exp eserte $
+# $Id: polizei-faxabruf-diff.pl,v 1.5 2005/03/13 20:11:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004, 2005 Slaven Rezic. All rights reserved.
@@ -88,7 +88,9 @@ for (@flat) {
 	my @lines_new = expand split /\n/, wrap("", "", as_string($index_new, "new"));
 	my @lines_old = expand split /\n/, wrap("", "", as_string($index_old, "old"));
 	if (@lines_new < @lines_old) {
-	    @lines_new = ("") x (@lines_old-@lines_new);
+	    push @lines_new, ("") x (@lines_old-@lines_new);
+	} elsif (@lines_new > @lines_old) {
+	    push @lines_old, ("") x (@lines_new-@lines_old);
 	}
 
 	@lines_new = map {

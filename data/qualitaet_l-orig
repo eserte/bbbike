@@ -220,7 +220,9 @@ Bertikow - Seelübbe: Betonplatten (wie vor Blankenburg)	Q1 44193,94953 43844,954
 #: according_to: "Up na Prenzlow", nördliches Ende per Sicht bestätigt:
 Bertikow - Seelübbe: Sand/Kopfsteinpflaster	Q2 43844,95441 43284,95954 42943,96687
 #: according_to: "Up na Prenzlow", südliches Ende per Sicht bestätigt:
-Seelübbe - Prenzlau: Kopfsteinplaster	Q2 42943,96687 42180,97682 42158,97874 42070,98088 41787,98345 41461,99029 41306,99542 40954,100113 40754,100635 40864,100741
+Seelübbe - Prenzlau: Kopfsteinplaster	Q2 42943,96687 42180,97682 42158,97874 42070,98088 41787,98345 41461,99029 41306,99542 40954,100113
+#: add_fragezeichen: aus der Bahn heraus gesehen
+Seelübbe - Prenzlau: Kopfsteinplaster	Q0 40864,100741 40754,100635 40954,100113
 #: according_to: "Up na Prenzlow":
 Röpersdorf - Prenzlau: asphaltierter Radweg	Q0 38615,98224 38613,99411 38386,100299 38498,100704 38717,100895
 #: according_to: "Up na Prenzlow":
@@ -437,7 +439,8 @@ Bertikow (Kirchweg): Verbundsteinpflaster	Q0 45239,93930 45183,93889 45094,93921
 	Q0 64591,100585 64632,100784 64284,101838 64406,102156 64381,102396 64143,102818 63618,103006 63468,103293 63519,103759 62890,104520 62596,105160 62837,105731 62767,106530 62608,106744 62104,106729
 	Q0 60225,104998 59976,105056 59774,105301 59501,105074
 	Q0 62045,106328 62104,106729
-	Q0 47871,103089 47647,102951 46276,102169 45494,101896 45189,101514 45050,101273
+	Q0 47871,103089 47647,102951 46276,102169
+	Q0 45494,101896 45189,101514 45050,101273
 	Q0 46686,94869 46489,94852 45470,94127 45239,93930
 	Q0 45140,94000 45094,93921 45018,93785 45016,93573 45523,92626
 	Q0 45239,93930 45140,94000 44442,94395 44193,94953
@@ -882,8 +885,8 @@ Wendtshof - Carmzow: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q
 Wallmow: Betonstraße	Q0 54790,104980 54861,105010 55022,105033 55239,104988
 Wallmow - Grünberg: schlechtes Kopfsteinplaster, teilweise mit Gehweg oder Sandbanketten	Q3 55239,104988 55375,105118 55493,105350
 Wallmow - Grünberg: Feldweg	Q2 55493,105350 55543,105468
-#: add_fragezeichen: aus der Bahn heraus gesehen:
-Steinhöfel - B198: asphaltiert	Q0 43106,77287 44301,77619
+#: add_fragezeichen: aus der Bahn heraus gesehen (beide Seiten):
+Steinhöfel - B198: asphaltiert, nur unter der Bahnbrücke ist ein kurzes Stück Kopfsteinplaster	Q0 41472,77229 42820,77327 43106,77287 44301,77619
 #: add_fragezeichen: aus der Bahn heraus gesehen:
 Greiffenberg: Kopfsteinplaster	Q2 44200,74890 45817,75966
 	Q0 28615,-17905 28018,-18051 27605,-17999 26832,-17882
@@ -1048,6 +1051,8 @@ Ziemkendorf: schlechtes Kopfsteinpflaster, aber teilweise Ausweichen auf engen G
 Biesenthal: Kopfsteinpflaster	Q2 28993,38709 28262,39100 26237,40190
 #: add_fragezeichen: von der Zugstrecke aus gesehen, "Berliner Umland" attestiert der gesamten Strecke eine gute Qualität:
 Rüdnitz - Danenwitz: Asphalt	Q0 27303,37099 26687,36525 26372,36360
+#: add_fragezeichen: von der Zugstrecke aus gesehen:
+Rüdnitz - Bahnhof: Asphalt	Q0 25095,35601 25737,35075
 # von der Zugstrecke aus gesehen (2x):
 nach Senftenhütte: Schotterstraße	Q2 43637,57787 43418,57899
 Nechlin - Nieden: überwiegend gute Betonplatten	Q0 41839,115987 42250,115925 42905,115846 43275,115703 43753,115606 44617,115833

@@ -1351,6 +1351,11 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (E3)
+
+/robots.txt einrichten, um das Indexieren von tempor‰ren Dateien bei
+bbbike und mapserver zu verhindern.
+
 =item * (H1)
 
 Bei pref_fragezeichen=yes: Straﬂenbezeichnungen aus fragezeichen

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: XXX_new_comments.pl,v 1.1 2005/03/12 07:33:11 eserte Exp eserte $
+# $Id: XXX_new_comments.pl,v 1.2 2005/03/13 21:43:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -26,7 +26,10 @@ use YAML;
 use Getopt::Long;
 
 my $skip_lines;
-GetOptions("skiplines=i" => \$skip_lines) or die "usage!";
+my $use_internal_test_data;
+GetOptions("skiplines=i" => \$skip_lines,
+	   "internaltestdata!" => \$use_internal_test_data,
+	  ) or die "usage!";
 
 # base net
 my $s = Strassen->new("strassen");
@@ -54,17 +57,25 @@ sub len_fmt ($) {
 use CGI;
 use URI::Escape;
 
-for my $logfile (@logfiles) {
-    open(LOG, "tail -r $logfile | ") or die $!;
-    while(<LOG>) {
-	if ($skip_lines > 0) {
-	    $skip_lines--;
-	    next;
-	}
-	my $d = parse_line($_);
-	next if !$d;
+if ($use_internal_test_data) {
+    for my $inx (0 .. 2) { # 0 .. 2
+	my $d = get_internal_test_data($inx);
 	process_data($d);
 	output_data($d);
+    }
+} else {
+    for my $logfile (@logfiles) {
+	open(LOG, "tail -r $logfile | ") or die $!;
+	while(<LOG>) {
+	    if ($skip_lines > 0) {
+		$skip_lines--;
+		next;
+	    }
+	    my $d = parse_line($_);
+	    next if !$d;
+	    process_data($d);
+	    output_data($d);
+	}
     }
 }
 
@@ -144,14 +155,20 @@ sub process_data {
 
 	    my $begin_coord = $hop_coords[$v->[0]];
 	    my $end_coord   = $hop_coords[$v->[1]];
+	    my $r           = $v->[2];
 
 	    $k =~ s/^.*?:\s*//;
 	    my $main_street = $d->{Route}[$hop_i]{Strname};
 	    #print $main_street . "\t";
 
+	    if ($r->[Strassen::CAT] =~ /^CP/) {
+		return $k; # point comment
+	    }
+
 	    my $ret;
-	    if ($v->[0] == 0 && $v->[1] == $#hop_coords) {
-		$ret = "$k (*)"; # XXX "(*)" only for debugging
+	    if (0 #$v->[0] == 0 && $v->[1] == $#hop_coords
+	       ) {
+		$ret = "$k (*)"; # XXX "(*)" only for debugging XXX aber was bedeutet das?
 	    } else {
 		my $prev_street = $hop_i >= 0 ? $d->{Route}[$hop_i-1]{Strname} : undef;
 
@@ -214,14 +231,28 @@ sub process_data {
 
 	    my $valid_comment_for_this_point = sub {
 		my($r) = @_;
-		if ($r->[Strassen::CAT] =~ /^PI/) {
-#XXX weitermachen!
-# 		    my $pos;
-# 		    for my $c (@{ $r->[Strassen::COORDS] }) {
-# 			if ($c eq $hop_coords[$hop_coord_i-1]) {
-			    
-# 		    }
-		    1;
+		if ($r->[Strassen::CAT] =~ /^CP/) {
+		    my $this_coord = $hop_coords[$hop_coord_i-1];
+		    return 0 if $this_coord ne $r->[Strassen::COORDS][1]; # der mittlere Punkt?
+		    my $index_of_point = $d->{PathIndex}[$hop_i] + $hop_coord_i - 1; # XXX correct?
+		    my $ret = seq_in_seq_including_point($d->{Path}, $index_of_point,
+							 $r->[Strassen::COORDS]);
+		    return $ret if $ret;
+		    if ($r->[Strassen::CAT] ne 'CP;') { # both directions
+			my @rev = reverse @{ $r->[Strassen::COORDS] };
+			$ret = seq_in_seq_including_point($d->{Path}, $index_of_point, \@rev);
+		    }
+		    $ret;
+		} elsif ($r->[Strassen::CAT] =~ /^PI/) {
+		    my $index_of_point = $d->{PathIndex}[$hop_i] + $hop_coord_i - 1; # XXX correct?
+		    my $ret = seq_in_seq_including_point($d->{Path}, $index_of_point,
+							 $r->[Strassen::COORDS]);
+		    return $ret if $ret;
+		    if ($r->[Strassen::CAT] ne 'PI;') { # both directions
+			my @rev = reverse @{ $r->[Strassen::COORDS] };
+			$ret = seq_in_seq_including_point($d->{Path}, $index_of_point, \@rev);
+		    }
+		    $ret;
 		} else {
 		    1;
 		}
@@ -236,9 +267,12 @@ sub process_data {
 			my($name) = $r->[Strassen::NAME];
 			if (exists $last_attribs{$name}) {
 			    $next_last_attribs{$name} = [$last_attribs{$name}[0],
-							 $hop_coord_i];
+							 $hop_coord_i,
+							 $r];
 			} else {
-			    $next_last_attribs{$name} = [$hop_coord_i-1];
+			    $next_last_attribs{$name} = [$hop_coord_i-1,
+							 undef,
+							 $r];
 			}
 		    }
 		}
@@ -277,9 +311,9 @@ sub output_data {
     $tb->load(
 	      map {
 		  local $Text::Wrap::columns = 30;
-		  my $strname = wrap("", "", $_->{Strname});
+		  my $strname = wrap("", "", $_->{Strname}||"");
 		  local $Text::Wrap::columns = 55;
-		  my $comment = wrap("", "", $_->{Comment});
+		  my $comment = wrap("", "", $_->{Comment}||"");
 		  [$_->{DistString},
 		   $_->{DirectionString},
 		   $strname,
@@ -304,109 +338,75 @@ sub get_path_part_len {
     $len;
 }
 
+sub seq_in_seq_including_point {
+    my($path, $index_of_point, $small_sequence) = @_;
+ DELTA:
+    for my $delta (0 .. $#$small_sequence) {
+	for my $i (0 .. $#$small_sequence) {
+	    my $c1 = $small_sequence->[$i];
+	    my $c2 = $path->[$index_of_point + $i - $delta];
+	    if (defined $c1 && defined $c2 && $c1 eq $c2) {
+		# nop
+	    } else {
+		next DELTA;
+	    }
+	}
+	# found!
+	return 1;
+    }
+    0;
+}
+
 sub get_internal_test_data {
-
-my $yaml =<<'EOF';
+    my($inx) = @_;
+my @yaml;
+# http://www/bbbike/cgi/bbbike.cgi?startname=Columbiadamm&startplz=10965&startc=11416%2C8283&zielname=Eschersheimer+Str.&zielplz=12099&zielc=11672%2C6737&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&pref_winter=&scope=;output_as=yaml
+push @yaml, <<'EOF';
 --- #YAML:1.0
-Len: 5993
+Len: 1564
 LongLatPath:
-  - 13.413655,52.488360
-  - 13.413992,52.488311
-  - 13.413921,52.487512
-  - 13.416331,52.480445
   - 13.417909,52.480122
   - 13.417843,52.478595
   - 13.418617,52.476662
+  - 13.418954,52.475319
+  - 13.419175,52.474453
+  - 13.419447,52.473362
   - 13.419668,52.472497
   - 13.419787,52.472100
   - 13.420115,52.470900
   - 13.420374,52.469863
+  - 13.420489,52.469359
   - 13.420955,52.467465
   - 13.421095,52.466807
   - 13.421206,52.466186
-  - 13.421425,52.465257
-  - 13.421834,52.462546
-  - 13.417839,52.460522
-  - 13.424916,52.457945
-  - 13.427275,52.456355
-  - 13.432911,52.452472
-  - 13.436206,52.448974
-  - 13.437584,52.448384
-  - 13.438741,52.448228
-  - 13.440141,52.447880
-  - 13.440936,52.447457
-  - 13.443971,52.445851
-  - 13.441486,52.445419
 Path:
-  - 11108,9194
-  - 11131,9189
-  - 11128,9100
-  - 11308,8317
   - 11416,8283
   - 11415,8113
   - 11472,7899
+  - 11498,7750
+  - 11515,7654
+  - 11536,7533
   - 11553,7437
   - 11562,7393
   - 11587,7260
   - 11607,7145
+  - 11616,7089
   - 11652,6879
   - 11663,6806
   - 11672,6737
-  - 11689,6634
-  - 11723,6333
-  - 11456,6103
-  - 11943,5825
-  - 12107,5651
-  - 12499,5226
-  - 12731,4841
-  - 12826,4777
-  - 12905,4761
-  - 13001,4724
-  - 13056,4678
-  - 13266,4503
-  - 13098,4452
 Power: {}
 Route:
   - Angle: ~
     Comment: ''
-    Coord: 11108,9194
-    Direction: W
-    DirectionString: nach W
+    Coord: 11416,8283
+    Direction: S
+    DirectionString: nach S¸den
     Dist: 0
     DistString: ~
-    Strname: Hasenheide
+    PathIndex: 0
+    Strname: Straﬂe 645
     TotalDist: 0
     TotalDistString: ''
-  - Angle: 70
-    Comment: Parkweg
-    Coord: 11131,9189
-    Direction: r
-    DirectionString: rechts (70∞) =>
-    Dist: 23
-    DistString: nach 0.02 km
-    Strname: '(Hasenheide)'
-    TotalDist: 23
-    TotalDistString: 0.0 km
-  - Angle: 50
-    Comment: ''
-    Coord: 11308,8317
-    Direction: l
-    DirectionString: links (50∞) in den
-    Dist: 892
-    DistString: nach 0.89 km
-    Strname: Columbiadamm
-    TotalDist: 915
-    TotalDistString: 0.9 km
-  - Angle: 70
-    Comment: ''
-    Coord: 11416,8283
-    Direction: r
-    DirectionString: rechts (70∞) in die
-    Dist: 113
-    DistString: nach 0.11 km
-    Strname: Straﬂe 645
-    TotalDist: 1028
-    TotalDistString: 1.0 km
   - Angle: 0
     Comment: Kopfsteinpflaster
     Coord: 11472,7899
@@ -414,269 +414,553 @@ Route:
     DirectionString: ''
     Dist: 391
     DistString: nach 0.39 km
+    PathIndex: 2
     Strname: Oderstr.
-    TotalDist: 1419
-    TotalDistString: 1.4 km
-  - Angle: 0
-    Comment: ''
-    Coord: 11672,6737
-    Direction: ''
-    DirectionString: ''
-    Dist: 1175
-    DistString: nach 1.18 km
-    Strname: Eschersheimer Str.
-    TotalDist: 2594
-    TotalDistString: 2.6 km
-  - Angle: 50
-    Comment: ''
-    Coord: 11723,6333
-    Direction: r
-    DirectionString: rechts (50∞) in die
-    Dist: 406
-    DistString: nach 0.41 km
-    Strname: Gottlieb-Dunkel-Str.
-    TotalDist: 3000
-    TotalDistString: 3.0 km
-  - Angle: 100
-    Comment: ''
-    Coord: 11456,6103
-    Direction: l
-    DirectionString: links (100∞) in den
-    Dist: 352
-    DistString: nach 0.35 km
-    Strname: Tempelhofer Weg
-    TotalDist: 3352
-    TotalDistString: 3.4 km
-  - Angle: 20
-    Comment: ''
-    Coord: 12731,4841
-    Direction: ''
-    DirectionString: ''
-    Dist: 1826
-    DistString: nach 1.83 km
-    Strname: Fulhamer Allee
-    TotalDist: 5178
-    TotalDistString: 5.2 km
-  - Angle: 120
-    Comment: ''
-    Coord: 13266,4503
-    Direction: r
-    DirectionString: rechts (120∞) in die
-    Dist: 640
-    DistString: nach 0.64 km
-    Strname: Parchimer Allee
-    TotalDist: 5818
-    TotalDistString: 5.8 km
-  - Coord: 13098,4452
+    TotalDist: 391
+    TotalDistString: 0.4 km
+  - Coord: 11672,6737
     DirectionString: angekommen!
-    Dist: 175
-    DistString: nach 0.17 km
-    Strname: Parchimer Allee
-    TotalDist: 5993
-    TotalDistString: 6.0 km
+    Dist: 1173
+    DistString: nach 1.17 km
+    PathIndex: 13
+    Strname: Eschersheimer Str.
+    TotalDist: 1564
+    TotalDistString: 1.6 km
 Speed:
   10:
     Pref: ''
-    Time: 0.600582223743283
+    Time: 0.157066841594913
   15:
     Pref: ''
-    Time: 0.400388149162189
+    Time: 0.104711227729942
   20:
     Pref: 1
-    Time: 0.300291111871641
+    Time: 0.0785334207974565
   25:
     Pref: ''
-    Time: 0.240232889497313
-Trafficlights: 5
+    Time: 0.0628267366379652
+Trafficlights: 0
 
 EOF
 
-$yaml =<<'EOF';
+# push @yaml, <<'EOF';
+# --- #YAML:1.0
+# Len: 5993
+# LongLatPath:
+#   - 13.413655,52.488360
+#   - 13.413992,52.488311
+#   - 13.413921,52.487512
+#   - 13.416331,52.480445
+#   - 13.417909,52.480122
+#   - 13.417843,52.478595
+#   - 13.418617,52.476662
+#   - 13.419668,52.472497
+#   - 13.419787,52.472100
+#   - 13.420115,52.470900
+#   - 13.420374,52.469863
+#   - 13.420955,52.467465
+#   - 13.421095,52.466807
+#   - 13.421206,52.466186
+#   - 13.421425,52.465257
+#   - 13.421834,52.462546
+#   - 13.417839,52.460522
+#   - 13.424916,52.457945
+#   - 13.427275,52.456355
+#   - 13.432911,52.452472
+#   - 13.436206,52.448974
+#   - 13.437584,52.448384
+#   - 13.438741,52.448228
+#   - 13.440141,52.447880
+#   - 13.440936,52.447457
+#   - 13.443971,52.445851
+#   - 13.441486,52.445419
+# Path:
+#   - 11108,9194
+#   - 11131,9189
+#   - 11128,9100
+#   - 11308,8317
+#   - 11416,8283
+#   - 11415,8113
+#   - 11472,7899
+#   - 11553,7437
+#   - 11562,7393
+#   - 11587,7260
+#   - 11607,7145
+#   - 11652,6879
+#   - 11663,6806
+#   - 11672,6737
+#   - 11689,6634
+#   - 11723,6333
+#   - 11456,6103
+#   - 11943,5825
+#   - 12107,5651
+#   - 12499,5226
+#   - 12731,4841
+#   - 12826,4777
+#   - 12905,4761
+#   - 13001,4724
+#   - 13056,4678
+#   - 13266,4503
+#   - 13098,4452
+# Power: {}
+# Route:
+#   - Angle: ~
+#     Comment: ''
+#     Coord: 11108,9194
+#     Direction: W
+#     DirectionString: nach W
+#     Dist: 0
+#     DistString: ~
+#     Strname: Hasenheide
+#     TotalDist: 0
+#     TotalDistString: ''
+#   - Angle: 70
+#     Comment: Parkweg
+#     Coord: 11131,9189
+#     Direction: r
+#     DirectionString: rechts (70∞) =>
+#     Dist: 23
+#     DistString: nach 0.02 km
+#     Strname: '(Hasenheide)'
+#     TotalDist: 23
+#     TotalDistString: 0.0 km
+#   - Angle: 50
+#     Comment: ''
+#     Coord: 11308,8317
+#     Direction: l
+#     DirectionString: links (50∞) in den
+#     Dist: 892
+#     DistString: nach 0.89 km
+#     Strname: Columbiadamm
+#     TotalDist: 915
+#     TotalDistString: 0.9 km
+#   - Angle: 70
+#     Comment: ''
+#     Coord: 11416,8283
+#     Direction: r
+#     DirectionString: rechts (70∞) in die
+#     Dist: 113
+#     DistString: nach 0.11 km
+#     Strname: Straﬂe 645
+#     TotalDist: 1028
+#     TotalDistString: 1.0 km
+#   - Angle: 0
+#     Comment: Kopfsteinpflaster
+#     Coord: 11472,7899
+#     Direction: ''
+#     DirectionString: ''
+#     Dist: 391
+#     DistString: nach 0.39 km
+#     Strname: Oderstr.
+#     TotalDist: 1419
+#     TotalDistString: 1.4 km
+#   - Angle: 0
+#     Comment: ''
+#     Coord: 11672,6737
+#     Direction: ''
+#     DirectionString: ''
+#     Dist: 1175
+#     DistString: nach 1.18 km
+#     Strname: Eschersheimer Str.
+#     TotalDist: 2594
+#     TotalDistString: 2.6 km
+#   - Angle: 50
+#     Comment: ''
+#     Coord: 11723,6333
+#     Direction: r
+#     DirectionString: rechts (50∞) in die
+#     Dist: 406
+#     DistString: nach 0.41 km
+#     Strname: Gottlieb-Dunkel-Str.
+#     TotalDist: 3000
+#     TotalDistString: 3.0 km
+#   - Angle: 100
+#     Comment: ''
+#     Coord: 11456,6103
+#     Direction: l
+#     DirectionString: links (100∞) in den
+#     Dist: 352
+#     DistString: nach 0.35 km
+#     Strname: Tempelhofer Weg
+#     TotalDist: 3352
+#     TotalDistString: 3.4 km
+#   - Angle: 20
+#     Comment: ''
+#     Coord: 12731,4841
+#     Direction: ''
+#     DirectionString: ''
+#     Dist: 1826
+#     DistString: nach 1.83 km
+#     Strname: Fulhamer Allee
+#     TotalDist: 5178
+#     TotalDistString: 5.2 km
+#   - Angle: 120
+#     Comment: ''
+#     Coord: 13266,4503
+#     Direction: r
+#     DirectionString: rechts (120∞) in die
+#     Dist: 640
+#     DistString: nach 0.64 km
+#     Strname: Parchimer Allee
+#     TotalDist: 5818
+#     TotalDistString: 5.8 km
+#   - Coord: 13098,4452
+#     DirectionString: angekommen!
+#     Dist: 175
+#     DistString: nach 0.17 km
+#     Strname: Parchimer Allee
+#     TotalDist: 5993
+#     TotalDistString: 6.0 km
+# Speed:
+#   10:
+#     Pref: ''
+#     Time: 0.600582223743283
+#   15:
+#     Pref: ''
+#     Time: 0.400388149162189
+#   20:
+#     Pref: 1
+#     Time: 0.300291111871641
+#   25:
+#     Pref: ''
+#     Time: 0.240232889497313
+# Trafficlights: 5
+
+# EOF
+
+# push @yaml, <<'EOF';
+# --- #YAML:1.0
+# Len: 5993
+# LongLatPath:
+#   - 13.441486,52.445419
+#   - 13.443971,52.445851
+#   - 13.440936,52.447457
+#   - 13.440141,52.447880
+#   - 13.438741,52.448228
+#   - 13.437584,52.448384
+#   - 13.436206,52.448974
+#   - 13.432911,52.452472
+#   - 13.427275,52.456355
+#   - 13.424916,52.457945
+#   - 13.417839,52.460522
+#   - 13.421834,52.462546
+#   - 13.421425,52.465257
+#   - 13.421206,52.466186
+#   - 13.421095,52.466807
+#   - 13.420955,52.467465
+#   - 13.420374,52.469863
+#   - 13.420115,52.470900
+#   - 13.419787,52.472100
+#   - 13.419668,52.472497
+#   - 13.418617,52.476662
+#   - 13.417843,52.478595
+#   - 13.417909,52.480122
+#   - 13.416331,52.480445
+#   - 13.413921,52.487512
+#   - 13.413992,52.488311
+#   - 13.413655,52.488360
+# Path:
+#   - 13098,4452
+#   - 13266,4503
+#   - 13056,4678
+#   - 13001,4724
+#   - 12905,4761
+#   - 12826,4777
+#   - 12731,4841
+#   - 12499,5226
+#   - 12107,5651
+#   - 11943,5825
+#   - 11456,6103
+#   - 11723,6333
+#   - 11689,6634
+#   - 11672,6737
+#   - 11663,6806
+#   - 11652,6879
+#   - 11607,7145
+#   - 11587,7260
+#   - 11562,7393
+#   - 11553,7437
+#   - 11472,7899
+#   - 11415,8113
+#   - 11416,8283
+#   - 11308,8317
+#   - 11128,9100
+#   - 11131,9189
+#   - 11108,9194
+# Power: {}
+# Route:
+#   - Angle: ~
+#     Comment: ''
+#     Coord: 13098,4452
+#     Direction: W
+#     DirectionString: nach W
+#     Dist: 0
+#     DistString: ~
+#     Strname: Parchimer Allee
+#     TotalDist: 0
+#     TotalDistString: ''
+#   - Angle: 120
+#     Comment: ''
+#     Coord: 13266,4503
+#     Direction: l
+#     DirectionString: links (120∞) in die
+#     Dist: 175
+#     DistString: nach 0.17 km
+#     Strname: Fulhamer Allee
+#     TotalDist: 175
+#     TotalDistString: 0.2 km
+#   - Angle: 20
+#     Comment: ''
+#     Coord: 12731,4841
+#     Direction: ''
+#     DirectionString: ''
+#     Dist: 640
+#     DistString: nach 0.64 km
+#     Strname: Tempelhofer Weg
+#     TotalDist: 815
+#     TotalDistString: 0.8 km
+#   - Angle: 100
+#     Comment: ''
+#     Coord: 11456,6103
+#     Direction: r
+#     DirectionString: rechts (100∞) in die
+#     Dist: 1826
+#     DistString: nach 1.83 km
+#     Strname: Gottlieb-Dunkel-Str.
+#     TotalDist: 2641
+#     TotalDistString: 2.6 km
+#   - Angle: 50
+#     Comment: ''
+#     Coord: 11723,6333
+#     Direction: l
+#     DirectionString: links (50∞) in die
+#     Dist: 352
+#     DistString: nach 0.35 km
+#     Strname: Eschersheimer Str.
+#     TotalDist: 2993
+#     TotalDistString: 3.0 km
+#   - Angle: 0
+#     Comment: Kopfsteinpflaster
+#     Coord: 11672,6737
+#     Direction: ''
+#     DirectionString: ''
+#     Dist: 406
+#     DistString: nach 0.41 km
+#     Strname: Oderstr.
+#     TotalDist: 3399
+#     TotalDistString: 3.4 km
+#   - Angle: 0
+#     Comment: ''
+#     Coord: 11472,7899
+#     Direction: ''
+#     DirectionString: ''
+#     Dist: 1175
+#     DistString: nach 1.18 km
+#     Strname: Straﬂe 645
+#     TotalDist: 4574
+#     TotalDistString: 4.6 km
+#   - Angle: 70
+#     Comment: ''
+#     Coord: 11416,8283
+#     Direction: l
+#     DirectionString: links (70∞) in den
+#     Dist: 391
+#     DistString: nach 0.39 km
+#     Strname: Columbiadamm
+#     TotalDist: 4965
+#     TotalDistString: 5.0 km
+#   - Angle: 50
+#     Comment: Parkweg
+#     Coord: 11308,8317
+#     Direction: r
+#     DirectionString: rechts (50∞) =>
+#     Dist: 113
+#     DistString: nach 0.11 km
+#     Strname: '(Hasenheide)'
+#     TotalDist: 5078
+#     TotalDistString: 5.1 km
+#   - Angle: 70
+#     Comment: ''
+#     Coord: 11131,9189
+#     Direction: l
+#     DirectionString: links (70∞) =>
+#     Dist: 892
+#     DistString: nach 0.89 km
+#     Strname: Hasenheide
+#     TotalDist: 5970
+#     TotalDistString: 6.0 km
+#   - Coord: 11108,9194
+#     DirectionString: angekommen!
+#     Dist: 23
+#     DistString: nach 0.02 km
+#     Strname: Fichtestr. (Kreuzberg)
+#     TotalDist: 5993
+#     TotalDistString: 6.0 km
+# Speed:
+#   10:
+#     Pref: ''
+#     Time: 0.600582223743283
+#   15:
+#     Pref: ''
+#     Time: 0.400388149162189
+#   20:
+#     Pref: 1
+#     Time: 0.300291111871642
+#   25:
+#     Pref: ''
+#     Time: 0.240232889497313
+# Trafficlights: 5
+
+# EOF
+
+# GET 'http://www/bbbike/cgi/bbbike.cgi?startname=Frankfurter+Allee&startplz=10247&startc=13792%2C12292&zielname=Frankfurter+Allee&zielplz=10247&zielc=15349%2C12073&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&pref_winter=&scope=;output_as=yaml'
+push @yaml, <<'EOF';
 --- #YAML:1.0
-Len: 5993
+Len: 1566
 LongLatPath:
-  - 13.441486,52.445419
-  - 13.443971,52.445851
-  - 13.440936,52.447457
-  - 13.440141,52.447880
-  - 13.438741,52.448228
-  - 13.437584,52.448384
-  - 13.436206,52.448974
-  - 13.432911,52.452472
-  - 13.427275,52.456355
-  - 13.424916,52.457945
-  - 13.417839,52.460522
-  - 13.421834,52.462546
-  - 13.421425,52.465257
-  - 13.421206,52.466186
-  - 13.421095,52.466807
-  - 13.420955,52.467465
-  - 13.420374,52.469863
-  - 13.420115,52.470900
-  - 13.419787,52.472100
-  - 13.419668,52.472497
-  - 13.418617,52.476662
-  - 13.417843,52.478595
-  - 13.417909,52.480122
-  - 13.416331,52.480445
-  - 13.413921,52.487512
-  - 13.413992,52.488311
-  - 13.413655,52.488360
+  - 13.454060,52.515774
+  - 13.455424,52.515642
+  - 13.460160,52.515195
+  - 13.461376,52.515047
+  - 13.463472,52.514808
+  - 13.464264,52.514737
+  - 13.464777,52.514677
+  - 13.466213,52.514527
+  - 13.467401,52.514415
+  - 13.469425,52.514240
+  - 13.470584,52.514137
+  - 13.471684,52.514044
+  - 13.473283,52.513901
+  - 13.476890,52.513556
 Path:
-  - 13098,4452
-  - 13266,4503
-  - 13056,4678
-  - 13001,4724
-  - 12905,4761
-  - 12826,4777
-  - 12731,4841
-  - 12499,5226
-  - 12107,5651
-  - 11943,5825
-  - 11456,6103
-  - 11723,6333
-  - 11689,6634
-  - 11672,6737
-  - 11663,6806
-  - 11652,6879
-  - 11607,7145
-  - 11587,7260
-  - 11562,7393
-  - 11553,7437
-  - 11472,7899
-  - 11415,8113
-  - 11416,8283
-  - 11308,8317
-  - 11128,9100
-  - 11131,9189
-  - 11108,9194
+  - 13792,12292
+  - 13885,12279
+  - 14208,12235
+  - 14291,12220
+  - 14434,12196
+  - 14488,12189
+  - 14523,12183
+  - 14621,12168
+  - 14702,12157
+  - 14840,12140
+  - 14919,12130
+  - 14994,12121
+  - 15103,12107
+  - 15349,12073
+Power: {}
+Route:
+  - Angle: ~
+    Comment: RR8
+    Coord: 13792,12292
+    Direction: E
+    DirectionString: nach Osten
+    Dist: 0
+    DistString: ~
+    PathIndex: 0
+    Strname: Frankfurter Allee
+    TotalDist: 0
+    TotalDistString: ''
+  - Coord: 15349,12073
+    DirectionString: angekommen!
+    Dist: 1566
+    DistString: nach 1.57 km
+    PathIndex: 13
+    Strname: Frankfurter Allee
+    TotalDist: 1566
+    TotalDistString: 1.6 km
+Speed:
+  10:
+    Pref: ''
+    Time: 0.15725245647252
+  15:
+    Pref: ''
+    Time: 0.10483497098168
+  20:
+    Pref: 1
+    Time: 0.0786262282362601
+  25:
+    Pref: ''
+    Time: 0.0629009825890081
+Trafficlights: 6
+
+EOF
+
+# GET 'http://www/bbbike/cgi/bbbike.cgi?startname=Frankfurter+Allee&startplz=10247&startc=14208%2C12235&zielname=Kreutzigerstr.&zielplz=10247&zielc=14161%2C11930&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&pref_winter=&scope=;output_as=yaml'
+push @yaml, <<'EOF';
+--- #YAML:1.0
+Len: 402
+LongLatPath:
+  - 13.460160,52.515195
+  - 13.461376,52.515047
+  - 13.461279,52.514778
+  - 13.459377,52.512461
+Path:
+  - 14208,12235
+  - 14291,12220
+  - 14285,12190
+  - 14161,11930
 Power: {}
 Route:
   - Angle: ~
     Comment: ''
-    Coord: 13098,4452
-    Direction: W
-    DirectionString: nach W
+    Coord: 14208,12235
+    Direction: E
+    DirectionString: nach Osten
     Dist: 0
     DistString: ~
-    Strname: Parchimer Allee
+    PathIndex: 0
+    Strname: Frankfurter Allee
     TotalDist: 0
     TotalDistString: ''
-  - Angle: 120
-    Comment: ''
-    Coord: 13266,4503
-    Direction: l
-    DirectionString: links (120∞) in die
-    Dist: 175
-    DistString: nach 0.17 km
-    Strname: Fulhamer Allee
-    TotalDist: 175
-    TotalDistString: 0.2 km
-  - Angle: 20
-    Comment: ''
-    Coord: 12731,4841
-    Direction: ''
-    DirectionString: ''
-    Dist: 640
-    DistString: nach 0.64 km
-    Strname: Tempelhofer Weg
-    TotalDist: 815
-    TotalDistString: 0.8 km
-  - Angle: 100
-    Comment: ''
-    Coord: 11456,6103
+  - Angle: 90
+    Comment: Einfahrt in Hausdurchgang
+    Coord: 14291,12220
     Direction: r
-    DirectionString: rechts (100∞) in die
-    Dist: 1826
-    DistString: nach 1.83 km
-    Strname: Gottlieb-Dunkel-Str.
-    TotalDist: 2641
-    TotalDistString: 2.6 km
-  - Angle: 50
+    DirectionString: rechts (90∞) in die
+    Dist: 84
+    DistString: nach 0.08 km
+    PathIndex: 1
+    Strname: '((Frankfurter Allee -) Kreutzigerstr.)'
+    TotalDist: 84
+    TotalDistString: 0.1 km
+  - Angle: 10
     Comment: ''
-    Coord: 11723,6333
-    Direction: l
-    DirectionString: links (50∞) in die
-    Dist: 352
-    DistString: nach 0.35 km
-    Strname: Eschersheimer Str.
-    TotalDist: 2993
-    TotalDistString: 3.0 km
-  - Angle: 0
-    Comment: Kopfsteinpflaster
-    Coord: 11672,6737
+    Coord: 14285,12190
     Direction: ''
     DirectionString: ''
-    Dist: 406
-    DistString: nach 0.41 km
-    Strname: Oderstr.
-    TotalDist: 3399
-    TotalDistString: 3.4 km
-  - Angle: 0
-    Comment: ''
-    Coord: 11472,7899
-    Direction: ''
-    DirectionString: ''
-    Dist: 1175
-    DistString: nach 1.18 km
-    Strname: Straﬂe 645
-    TotalDist: 4574
-    TotalDistString: 4.6 km
-  - Angle: 70
-    Comment: ''
-    Coord: 11416,8283
-    Direction: l
-    DirectionString: links (70∞) in den
-    Dist: 391
-    DistString: nach 0.39 km
-    Strname: Columbiadamm
-    TotalDist: 4965
-    TotalDistString: 5.0 km
-  - Angle: 50
-    Comment: Parkweg
-    Coord: 11308,8317
-    Direction: r
-    DirectionString: rechts (50∞) =>
-    Dist: 113
-    DistString: nach 0.11 km
-    Strname: '(Hasenheide)'
-    TotalDist: 5078
-    TotalDistString: 5.1 km
-  - Angle: 70
-    Comment: ''
-    Coord: 11131,9189
-    Direction: l
-    DirectionString: links (70∞) =>
-    Dist: 892
-    DistString: nach 0.89 km
-    Strname: Hasenheide
-    TotalDist: 5970
-    TotalDistString: 6.0 km
-  - Coord: 11108,9194
+    Dist: 30
+    DistString: nach 0.03 km
+    PathIndex: 2
+    Strname: Kreutzigerstr.
+    TotalDist: 114
+    TotalDistString: 0.1 km
+  - Coord: 14161,11930
     DirectionString: angekommen!
-    Dist: 23
-    DistString: nach 0.02 km
-    Strname: Fichtestr. (Kreuzberg)
-    TotalDist: 5993
-    TotalDistString: 6.0 km
+    Dist: 288
+    DistString: nach 0.29 km
+    PathIndex: 3
+    Strname: Kreutzigerstr.
+    TotalDist: 402
+    TotalDistString: 0.4 km
 Speed:
   10:
     Pref: ''
-    Time: 0.600582223743283
+    Time: 0.0402994198815616
   15:
     Pref: ''
-    Time: 0.400388149162189
+    Time: 0.0268662799210411
   20:
     Pref: 1
-    Time: 0.300291111871642
+    Time: 0.0201497099407808
   25:
     Pref: ''
-    Time: 0.240232889497313
-Trafficlights: 5
+    Time: 0.0161197679526246
+Trafficlights: 1
 
 EOF
 
-my $d = YAML::Load($yaml);
+$inx = 0 if !defined $inx;
+my $d = YAML::Load($yaml[$inx]);
 
 $d;
 }

@@ -504,7 +504,7 @@ $city = "Berlin_DE";
 
 =item $use_umland
 
-Experimental: search in the region. Default: false.
+NYI: search in the region. Default: false.
 
 =cut
 
@@ -512,7 +512,7 @@ $use_umland = 0;
 
 =item $use_umland_jwd
 
-Even more experimental: search in the wide region. Default: false.
+NYI: search in the wide region. Default: false.
 
 =cut
 
@@ -3156,6 +3156,7 @@ sub search_coord {
 			       (FragezeichenComment => $fragezeichen_comment) : () # XXX key label may change!
 			      ),
 			      Coord => join(",", @{$r->path->[$route_inx->[0]]}),
+			      PathIndex => $route_inx->[0],
 			     };
 	}
 	$ges_entf += $next_entf;
@@ -3169,6 +3170,7 @@ sub search_coord {
 			  DirectionString => "angekommen!",
 			  Strname => $zielname,
 			  Coord => join(",", @{$r->path->[-1]}),
+			  PathIndex => $#{$r->path},
 			 };
     }
 
