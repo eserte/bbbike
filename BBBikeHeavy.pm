@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.2 2003/05/09 22:49:39 eserte Exp eserte $
+# $Id: BBBikeHeavy.pm,v 1.1 2003/05/20 21:16:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -483,7 +483,7 @@ sub BBBikeHeavy::getmap {
 	    local @INC = (@INC, "$FindBin::RealBin/miscsrc");
 	    require "convert_berlinmap.pl";
 	    my $ret;
-	    for my $ref_dist (qw(10000 20000 40000 80000 160000, 320000)) {
+	    for my $ref_dist (qw(10000 20000 40000 80000 160000 320000)) {
 		$ret = BBBike::Convert::process
 		    (-datafromany => "$FindBin::RealBin/misc/gps_correction_all.dat",
 		     -refpoint => "$c,$ref_dist",
