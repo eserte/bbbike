@@ -29,6 +29,9 @@ sub get_cachefile {
 	    $cachefile .= "_" . $args{-blocked};
 	}
     }
+    if ($args{-addcacheid}) {
+	$cachefile .= "_" . $args{-addcacheid};
+    }
     $cachefile;
 }
 
@@ -37,7 +40,7 @@ sub make_net {
 
     my %args2;
     while(my($k,$v) = each %args) {
-	if ($k =~ /^-(blocked|blockedtype)$/) {
+	if ($k =~ /^-(blocked|blockedtype|addcacheid)$/) {
 	    $args2{$k} = $v;
 	}
     }

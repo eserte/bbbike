@@ -237,7 +237,7 @@ sub init_net {
 				#require StrassenNetz::CNetFileDist;
 				#StrassenNetz::CNetFile::make_net($_[0]);
 				$_[0]->use_data_format($StrassenNetz::FMT_MMAP);
-				$_[0]->make_net;
+				$_[0]->make_net(-addcacheid => $context->Vehicle);
 				$_[0]->make_sperre
 					('gesperrt',
 					 Type => ['einbahn', 'sperre',
@@ -245,7 +245,8 @@ sub init_net {
 				# XXX make_sperre nyi
 			    } else {
 				$_[0]->make_net(UseCache => $context->UseCache,
-						PreferCache => $context->PreferCache);
+						PreferCache => $context->PreferCache,
+					       );
 				if ($context->Vehicle eq 'bike') {
 				    $_[0]->make_sperre
 					('gesperrt',
