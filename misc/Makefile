@@ -37,8 +37,10 @@ fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 
 # Die mit "laut adfc-karte" u.‰. gekennzeichneten Straﬂen extrahieren und
 # nach other-source-fragezeichen schreiben.
+# XXX Very strange: with db4 on RedHat 8.0 I have to use O_RDWR instead of
+# O_RDONLY, otherwise the oneliner will die without an error message.
 /tmp/other-source-fragezeichen:	${DATADIR}/qualitaet_s-orig ${DATADIR}/qualitaet_l-orig
-	cd ${DATADIR} && perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib -MStrassen::Core -MDB_File -e 'for my $$file (qw(qualitaet_s-orig qualitaet_l-orig)) { tie @l, "DB_File", $$file, O_RDONLY, 0, $$DB_RECNO or die $$!; for my $$i (1 .. $$#l) { if ($$l[$$i-1] =~ /\#:\s+unverified_by\s+(.*?):?\s*$$/i) { my $$comment = "laut $$1"; my $$x = Strassen::parse($$l[$$i]); $$x->[Strassen::NAME()] .= " ($$comment)"; $$x->[Strassen::CAT()] = "?"; print Strassen::arr2line2($$x),"\n" } } }' > /tmp/other-source-fragezeichen-orig
+	cd ${DATADIR} && perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib -MStrassen::Core -MDB_File -e 'for my $$file (qw(qualitaet_s-orig qualitaet_l-orig)) { tie @l, "DB_File", $$file, O_RDWR, 0, $$DB_RECNO or die qq{Cannot open $$file: $$!}; for my $$i (1 .. $$#l) { if ($$l[$$i-1] =~ /\#:\s+unverified_by\s+(.*?):?\s*$$/i) { my $$comment = "laut $$1"; my $$x = Strassen::parse($$l[$$i]); $$x->[Strassen::NAME()] .= " ($$comment)"; $$x->[Strassen::CAT()] = "?"; print Strassen::arr2line2($$x),"\n" } } }' > /tmp/other-source-fragezeichen-orig
 	${CONVERT2HAFAS} -basefile ${DATADIR}/qualitaet_s-orig /tmp/other-source-fragezeichen-orig > /tmp/other-source-fragezeichen
 
 PREFIXMAP=sperr=SP,kopfstein=KP,qualit‰t=QU,m‰ﬂig.geeignet=QU,radweg=RW,bau=BA,vorfahrt=VF
