@@ -9,11 +9,14 @@
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net/
 #
 
 # convert dcw data (ARC2 ?) to bbd
+
+# Get country data from:
+# http://www.maproom.psu.edu/dcw/
 
 use strict;
 use FindBin;
