@@ -1628,7 +1628,7 @@ for(my $i = 0; $i <= $#speed; $i++) {
 		 -command => sub { change_kopfstein_count("speed", $ii) },
 		)->pack;
 	$balloon->attach($kopfstein_count_button->{"speed"}[$i],
-			 -msg => M"Kopfsteinpflasterstraßen in Zeitberechnung aufnehmen");
+			 -msg => M"Langsamfahrstrecken in Zeitberechnung aufnehmen");
     }
     my $l = $speed_frame[$i]->Button
       (-width => 7,
@@ -1660,7 +1660,7 @@ for(my $i = 0; $i <= $#speed; $i++) {
     enter_leave_bind_for_help($ampel_count_button->{"speed"}[$i],
 			      [M"Ampeln in Zeitberechnung aufnehmen", "", ""]);
     enter_leave_bind_for_help($kopfstein_count_button->{"speed"}[$i],
-			      [M"Kopfsteinpflasterstraßen in Zeitberechnung aufnehmen", "", ""]);
+			      [M"Langsamfahrstrecken in Zeitberechnung aufnehmen", "", ""]);
 }
 
 if ($bikepwr) {
@@ -1699,7 +1699,7 @@ if (0) { # XXX activate if implemented in updatekm()
 		     -command => sub { change_kopfstein_count("power", $ii) },
 		    )->pack;
 	    $balloon->attach($kopfstein_count_button->{"power"}[$i],
-			     -msg => M"Kopfsteinpflasterstraßen in Zeitberechnung aufnehmen");
+			     -msg => M"Langsamfahrstrecken in Zeitberechnung aufnehmen");
 }
 	}
 	my $l = $power_frame[$i]->Button
@@ -1733,7 +1733,7 @@ if (0) { # XXX activate if implemented in updatekm()
 	#enter_leave_bind_for_help($ampel_count_button->{"speed"}[$i],
 	#[M"Ampeln in Zeitberechnung aufnehmen", "", ""]);
 	#enter_leave_bind_for_help($kopfstein_count_button->{"speed"}[$i],
-	#[M"Kopfsteinpflasterstraßen in Zeitberechnung aufnehmen", "", ""]);
+	#[M"Langsamfahrstrecken in Zeitberechnung aufnehmen", "", ""]);
     }
 }
 
