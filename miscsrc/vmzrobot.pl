@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.10 2004/03/22 23:40:33 eserte Exp $
+# $Id: vmzrobot.pl,v 1.10 2004/03/22 23:40:33 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -286,8 +286,8 @@ sub mark_irrelevant_entries {
 	    if ($comp[-1] =~ /( Fahrbahn\s+auf\s+\S+\s+Fahrstreifen\s+verengt
 			      | Fahrstreifen\s+gesperrt
 			      | Fahrbahnverengung
-			      | Ampeln ausgefallen
-			      | von\s+\d\s+auf\s+\d\s+Fahrstreifen\s+reduziert
+			      | Ampeln\s+ausgefallen
+			      | auf\s+\d\s+Fahrstreifen\s+reduziert
 			      )/xs) {
 		$ignore = 1;
 	    }

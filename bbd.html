@@ -18,7 +18,7 @@
 <li><a class="POD_NAVLINK" href="#NAME">NAME</a>
 <li><a class="POD_NAVLINK" href="#DESCRIPTION">DESCRIPTION</a>
 <ul>
-<li><a class="POD_NAVLINK" href="#Coordinate_lines">Coordinate lines</a>
+<li><a class="POD_NAVLINK" href="#Coordinate_lines_dat">Coordinate lines (data lines)</a>
 <li><a class="POD_NAVLINK" href="#Directive_lines">Directive lines</a>
 <li><a class="POD_NAVLINK" href="#Comment_lines">Comment lines</a>
 </ul>
@@ -31,10 +31,12 @@
 <li><a class="POD_NAVLINK" href="#QUALITY">QUALITY</a>
 <li><a class="POD_NAVLINK" href="#COMMENTS">COMMENTS</a>
 <li><a class="POD_NAVLINK" href="#AREAS">AREAS</a>
+<li><a class="POD_NAVLINK" href="#CITIES_AND_PLACES">CITIES AND PLACES</a>
 <li><a class="POD_NAVLINK" href="#MISC">MISC</a>
 <li><a class="POD_NAVLINK" href="#OTHER_STANDARD_FILES">OTHER STANDARD FILES</a>
 </ul>
 <li><a class="POD_NAVLINK" href="#EXAMPLES">EXAMPLES</a>
+<li><a class="POD_NAVLINK" href="#CAVEATS">CAVEATS</a>
 <li><a class="POD_NAVLINK" href="#AUTHOR">AUTHOR</a>
 <li><a class="POD_NAVLINK" href="#SEE_ALSO">SEE ALSO</a>
 </ul>
@@ -54,12 +56,19 @@ Bbd files consist of newline-terminated records in the format:
 <pre class="POD_VERBATIM">
     Name TAB Category SPACE x,y SPACE x,y ...
 </pre>
-<h3 class="POD_HEAD2"><a name="Coordinate_lines">Coordinate lines</a></h3>
+<h3 class="POD_HEAD2"><a name="Coordinate_lines_dat">Coordinate lines (data lines)</a></h3>
 <dl class="POD_LIST">
 <dt class="POD_ITEM"><a name="Name">Name</a>
 <dd>
 A descriptive name, for example the street name. This field should not
 contain any TAB characters.
+<p class="POD_TEXT">
+If there is a main name and a descriptive part, then the latter should
+be separated by a <code>|</code> character. This helps for intelligent
+labelling, i.e. leaving out unimportant parts if necessary. Example:
+<b>Ringenwalde|(Uckermark)</b> could be labelled as <b>Ringenwalde</b> or
+<b>Ringenwalde (Uckermark)</b>.
+</p>
 <dt class="POD_ITEM"><a name="Category">Category</a>
 <dd>
 The category of this point or polyline. If the category matches
@@ -74,6 +83,9 @@ If the category matches <i>forwardcat</i><code>;</code><i>backwardcat</i>, then
 <i>backwardcat</i> applies to the street in backward direction. Either
 <i>forwardcat</i> or <i>backwardcat</i> may be empty; in this case the
 category applies only to the other direction.
+</p>
+<p class="POD_TEXT">
+The <b>X</b> category should be used if there is no category.
 </p>
 <p class="POD_TEXT">
 Other predefined categories are listed below. The category should not
@@ -116,16 +128,59 @@ software (currently the maximum number of points is hardcoded in
 <h3 class="POD_HEAD2"><a name="Directive_lines">Directive lines</a></h3>
 <p class="POD_TEXT">
 If a line begines with a hash sign followed by a color (<code>#:</code>), then
-the line is treated as a directive. The following directives are
-defined:
+the line is treated as a directive. There are global directives, line
+directives and block directives. Global directives should be specified
+at top of the file before the first data line and should be separated
+by the data lines with an empty directive line. Line directives are
+valid for the next line only. Block directives are valid for the
+specified block. Block directives are markes as such:
+</p>
+<pre class="POD_VERBATIM">
+ #: directive_name directive_arguments ... vvv
+ ... data lines
+ #: directive_name ^^^
+</pre>
+<p class="POD_TEXT">
+The <code>v</code> and <code>^</code> markers could be repeated an indefinite number of
+times, but at least three times.
+</p>
+<p class="POD_TEXT">
+An colon (:) after the directive_name is always optional.
+</p>
+<p class="POD_TEXT">
+The following directives are defined:
 </p>
 <dl class="POD_LIST">
 <dt class="POD_ITEM"><a name="map_maptype"><code>map: <i>maptype</i></code></a>
 <dd>
-This directive sets the coordinate system of the bbd file. If no
-<code>map</code> directive is specified, then the proprietary bbbike coordinate
-system is used. For WGS84 coordinates specified as DDD use the maptype
-<b>polar</b>.
+This global directive sets the coordinate system of the bbd file. If
+no <code>map</code> directive is specified, then the proprietary bbbike
+coordinate system is used. For WGS84 coordinates specified as DDD use
+the maptype <b>polar</b>.
+<dt class="POD_ITEM"><a name="by_source"><code>by: <i>source</i></code></a>
+<dd>
+Denotes that the information in the next block or line was provided by
+<i>source</i>. This may be an email address or full name of an author, an
+URL providing more information, a Message-Id of a mail or posting, a
+date, or a combination of all.
+<dt class="POD_ITEM"><a name="unverified_by_source"><code>unverified_by: <i>source</i></code></a>
+<dd>
+Same as &quot;by:&quot; for unverified data.
+&quot;Unverified&quot; means that there's no communication channel
+back to the information provider.
+<dt class="POD_ITEM"><a name="temporary_"><code>temporary:</code></a>
+<dd>
+The next block or line is just temporary. Typically the date
+information is included in the Name field of the data line, preferred
+in a ISO-date similar notation (e.g. YYYY-MM-DD - YYYY-MM-DD for a
+starting and an end date).
+<dt class="POD_ITEM"><a name="unsure_why"><code>unsure: <i>why</i></code></a>
+<dd>
+The next block or line is unsure information. The <i>why</i> text
+specifies an additional comment. An alias for <code>unsure:</code> is <code>XXX</code>.
+<dt class="POD_ITEM"><a name="section_section_name"><code>section: <i>section name</i></code></a>
+<dd>
+The next block is part of a named section. Sections may be nested.
 </dl>
 <h3 class="POD_HEAD2"><a name="Comment_lines">Comment lines</a></h3>
 <p class="POD_TEXT">
@@ -382,6 +437,11 @@ Parks and forests.
 <dd>
 Airports.
 </dl>
+<h3 class="POD_HEAD2"><a name="CITIES_AND_PLACES">CITIES AND PLACES</a></h3>
+<p class="POD_TEXT">
+The category interval span from <code></code> to <code>6</code> where <code></code> denotes city
+parts, <code>1</code> villages and <code>6</code> metropolises.
+</p>
 <h3 class="POD_HEAD2"><a name="MISC">MISC</a></h3>
 <dl class="POD_LIST">
 <dt class="POD_ITEM"><a name="radroute"><code>radroute</code></a>
@@ -399,8 +459,8 @@ The category will not be used in this case.
 <dt class="POD_ITEM"><a name="ampeln">ampeln</a>
 <dd>
 File with point records for traffic lights (Ampeln). The category is
-set to <code>B</code> for railroad crossings and <code>F</code> for pedestrian-only
-traffic lights, otherwise not used.
+set to <b>B</b> for railroad crossings, <b>F</b> for pedestrian-only traffic
+lights and <b>Zbr</b> for drawbridges, otherwise not used.
 <dt class="POD_ITEM"><a name="hoehe">hoehe</a>
 <dd>
 File with elevation points. The <code>Name</code> fields denotes the elevation
@@ -448,6 +508,11 @@ And a detailed explanation...
     Name of a park     Category (F = area (polygon, Fl&auml;che),
                                  P = park)
 </pre>
+<h2 class="POD_HEAD1"><a name="CAVEATS">CAVEATS</a></h2>
+<p class="POD_TEXT">
+Some category values may change. It is likely that either the blocking
+and/or city category values will change, as both use digits.
+</p>
 <h2 class="POD_HEAD1"><a name="AUTHOR">AUTHOR</a></h2>
 <p class="POD_TEXT">
 Slaven Rezic &lt;slaven@rezic.de&gt;
@@ -458,7 +523,7 @@ Slaven Rezic &lt;slaven@rezic.de&gt;
 </p>
 <hr>
 <a class="POD_NAVLINK" href="#Pod_TOP_OF_PAGE">[Top]</a>
-Generated by Marek::Pod::HTML 0.49 on Sat Mar  6 10:54:16 2004
+Generated by Marek::Pod::HTML 0.49 on Wed Mar 24 23:01:52 2004
 </body>
 </html>
 

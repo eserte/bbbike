@@ -945,6 +945,7 @@ speicherplatzsparender.",
 		 $no_map = 1;
 		 $public = 1;
 		 $autosave_opts = 0;
+		 $lazy_plot = 0;
 		 undef $proxy;
 	     }],
    ['v','!',0,	alias => [qw(verbose)],
