@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.105 2004/07/29 22:12:15 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.105 2004/07/29 22:12:15 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1229,29 +1229,17 @@ sub advanced_coord_menu {
 	my $c_bpcm = $bpcm->Menu(-title => M"Edit-Modus");
 	$bpcm->entryconfigure("last", -menu => $c_bpcm);
 	$c_bpcm->command
+	    (-label => M"Edit-Modus",
+	     -command => sub { switch_edit_standard_mode() },
+	     -accelerator => 'F5',
+	    );
+	$editstandard_command_index = $c_bpcm->index('last');
+	$c_bpcm->command
 	    (-label => M"Standard-Modus",
 	     -command => sub { switch_standard_mode() },
 	     -accelerator => 'F4',
 	    );
 	$standard_command_index = $c_bpcm->index('last');
-	$c_bpcm->command
-	    (-label => M"Edit-Modus Standard",
-	     -command => sub { switch_edit_standard_mode() },
-	     -accelerator => 'F5',
-	    );
-	$editstandard_command_index = $c_bpcm->index('last');
-#XXX del:
-# 	$c_bpcm->command
-# 	    (-label => M"Edit-Modus Berlin",
-# 	     -command => sub { switch_edit_berlin_mode() },
-# 	    );
-# 	$editberlin_command_index = $c_bpcm->index('last');
-# 	$c_bpcm->command
-# 	    (-label => "Edit-Modus Brandenburg",
-# 	     -command => sub { switch_edit_brb_mode() },
-# 	     -accelerator => 'F6',
-# 	    );
-# 	$editbrb_command_index = $c_bpcm->index('last');
 	$c_bpcm->command
 	    (-label => M"Andere Edit-Modi",
 	     -command => sub { choose_edit_any_mode() },
@@ -1259,8 +1247,6 @@ sub advanced_coord_menu {
 
 	$top->bind("<F4>" => sub { $c_bpcm->invoke($standard_command_index) });
 	$top->bind("<F5>" => sub { $c_bpcm->invoke($editstandard_command_index) });
-#XXX del:
-# 	$top->bind("<F6>" => sub { $c_bpcm->invoke($editbrb_command_index) });
     }
 
     foreach my $def ({Label => M"Radwege",
@@ -2211,45 +2197,57 @@ sub switch_mode {
 ### AutoLoad Sub
 sub switch_standard_mode {
     my $init = shift;
-    my($oldx, $oldy) =
-      $coord_system_obj->map2standard
-	(anti_transpose($c->get_center));
-    remove_plot() unless $init;
-    foreach (@standard_mode_cmd) { $_->() }
-    $map_mode = MM_SEARCH();
-    set_edit_mode(0);
-    $do_flag{'start'} = $do_flag{'ziel'} = 1; # XXX better solution
-    set_remember_plot() unless $init;
-    $ampelstatus_label->configure(-text => '') if $ampelstatus_label;
-    $c->center_view
-	(transpose($coord_system_obj->standard2map($oldx, $oldy)),
-	 NoSmoothScroll => 1);
+    IncBusy($top) unless $init;
+    eval {
+	my($oldx, $oldy) =
+	    $coord_system_obj->map2standard
+		(anti_transpose($c->get_center));
+	remove_plot() unless $init;
+	foreach (@standard_mode_cmd) { $_->() }
+	$map_mode = MM_SEARCH();
+	set_edit_mode(0);
+	$do_flag{'start'} = $do_flag{'ziel'} = 1; # XXX better solution
+	set_remember_plot() unless $init;
+	$ampelstatus_label->configure(-text => '') if $ampelstatus_label;
+	$c->center_view
+	    (transpose($coord_system_obj->standard2map($oldx, $oldy)),
+	     NoSmoothScroll => 1);
+    };
+    my $err = $@;
+    DecBusy($top) unless $init;
+    status_message($err, "die") if $err;
 }
 
 # Schaltet in den Edit-Standard-Modus um.
 ### AutoLoad Sub
 sub switch_edit_standard_mode {
     my $init = shift;
-    my($oldx, $oldy) =
-      $coord_system_obj->map2standard
-	(anti_transpose($c->get_center));
-    remove_plot() unless $init;
-    foreach (@edit_mode_cmd) { $_->() }
-    foreach (@edit_mode_standard_cmd) { $_->() }
-    $map_mode = MM_BUTTONPOINT();
-    $use_current_coord_prefix = 0;
-    $coord_prefix = "";
-    set_edit_mode('std-no-orig');
-    $do_flag{'start'} = $do_flag{'ziel'} = 1; # XXX better solution
-    local $lazy_plot = 1;
-    set_remember_plot() unless $init;
-#    $ampelstatus_label->configure(-text => '') if $ampelstatus_label;
-    $c->center_view
-	(transpose($coord_system_obj->standard2map($oldx, $oldy)),
-	 NoSmoothScroll => 1);
-    if ($unit_km eq 'km') {
-	change_unit();
-    }
+    IncBusy($top) unless $init;
+    eval {
+	my($oldx, $oldy) =
+	    $coord_system_obj->map2standard
+		(anti_transpose($c->get_center));
+	remove_plot() unless $init;
+	foreach (@edit_mode_cmd) { $_->() }
+	foreach (@edit_mode_standard_cmd) { $_->() }
+	$map_mode = MM_BUTTONPOINT();
+	$use_current_coord_prefix = 0;
+	$coord_prefix = "";
+	set_edit_mode('std-no-orig');
+	$do_flag{'start'} = $do_flag{'ziel'} = 1; # XXX better solution
+	local $lazy_plot = 1;
+	set_remember_plot() unless $init;
+	#    $ampelstatus_label->configure(-text => '') if $ampelstatus_label;
+	$c->center_view
+	    (transpose($coord_system_obj->standard2map($oldx, $oldy)),
+	     NoSmoothScroll => 1);
+	if ($unit_km eq 'km') {
+	    change_unit();
+	}
+    };
+    my $err = $@;
+    DecBusy($top) unless $init;
+    status_message($err, "die") if $err;
 }
 
 # Schaltet in den Edit-Mode für Berlin um.

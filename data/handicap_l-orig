@@ -1,4 +1,4 @@
-# $Id: handicap_l-orig,v 4.6 2004/08/01 17:39:45 eserte Exp $
+# $Id: handicap_l-orig,v 4.6 2004/08/01 17:39:45 eserte Exp eserte $
 Brandenburger Str.: Fußgängerzone	q3 -12894,-977 -13171,-1042 -13556,-1140
 Neuer Garten: Schiebestrecke	q3 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12115,1331 -12185,1388
 Neuer Garten: Schiebestrecke	q3 -12081,1168 -12181,1196
@@ -33,7 +33,7 @@ L 792; (Trebbiner Str.); OL Mahlow, zw. Glasower Damm u. Berliner Str.; grundhaf
 B 109; OD Klosterfelde; grundhafter Ausbau; Vollsperrung; 29.03.2004-30.10.2004	q4::inwork 14962,42702 14941,42957 14881,43618 15356,44334
 #XXXL 21; (Zehlendorf-Liebenwalde); OL Liebenwalde, Krz. mit B167; grundh. Straßenbau; Vollsperrung; 29.03.2004-19.05.2004	q4::inwork E6090,3215 E6090,3200
 #XXX del: B 168; (Fürstenwalde-Müncheberg); OD Beerfelde; Kanalarbeiten; Vollsperrung; 05.04.2004-03.05.2004	q4::inwork 54024,3804 54449,4338
-L 622; (Rückersdorf-Doberlug KIrchhain); zw. Abzw. Lindena u. Doberlug-Kirchhain; Straßen- u. Brückenbauarb.; Vollsperrung; 06.04.2004-29.07.2004	q4::inwork 22558,-89699 22495,-89358 22453,-89037
+#XXX del: L 622; (Rückersdorf-Doberlug KIrchhain); zw. Abzw. Lindena u. Doberlug-Kirchhain; Straßen- u. Brückenbauarb.; Vollsperrung; 06.04.2004-29.07.2004	q4::inwork 22558,-89699 22495,-89358 22453,-89037
 #XXX nicht mehr (gesehen 2004-07-10): B 2; (LG Berlin-AS Berlin-Weißensee); bei Lindenberg, Brücke über Fließgraben; Brückenneubau; Richtungsverk. (Radfahrer können Umleitung benutzen oder bis zur Baustelle vorfahren); 29.03.2004-29.10.2004	q4::inwork; 17825,21931 18356,22225
 L 214; (Marienthal-Blumenow); Brücke ü.Tornowfließ; Brückenersatzbau; Vollsperrung; 13.04.2004-14.09.2004	q4::inwork 1039,72835 1320,72982
 #XXX del L 60; (Friedrich-List-Str.); Krz. H.-Zille-Str./ Uebigauer Str. u. Bahnhofstr.; Straßenbauarbeiten; Vollsperrung; 13.04.2004-31.07.2004	q4::inwork 1142,-91254 2001,-91126

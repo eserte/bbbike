@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.24 2004/07/29 22:13:25 eserte Exp $
+# $Id: Makefile,v 2.24 2004/07/29 22:13:25 eserte Exp eserte $
 #
 
 BBBIKEDIR=		..
@@ -45,7 +45,7 @@ TARGETS+=	gesperrt gesperrt_car
 .for i in u s r
 TARGETS+=	gesperrt_$(i)
 .endfor
-TARGETS+=	${COMMENTS_PARTIAL} fragezeichen
+TARGETS+=	${COMMENTS_PARTIAL} fragezeichen exits
 
 TARGETS_DISABLED=	label relation_gps 
 
@@ -388,6 +388,11 @@ mount:	strassen hoehe
 	$(STEIGUNG_STAT) -minmount 1.0 -commentscompatible -str strassen -i hoehe -o $@
 	-@$(READONLY) $@
 
+exits:	exits-orig
+	-@$(WRITEABLE) $@
+	$(CONVERT2HAFAS) $> > $@
+	-@$(READONLY) $@
+
 # ::inwork => will maybe change to :inwork
 #XXX in "-orig" transition: handicap_s-orig and gesperrt-orig always need to have the same base map!
 fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
@@ -485,6 +490,7 @@ check:	.check_strassen1 .check_strassen2 \
 	.check_comments1 .check_comments2 .check_nolighting \
 	.check_housenumbers .check_sehenswuerdigkeit .check_green \
 	.check_brunnels .check_comments_ferry \
+	.check_exits \
 	.check_temp_blockings \
 
 check-disabled:	.check_label
@@ -635,10 +641,25 @@ check-disabled:	.check_label
 		-against strassen -against landstrassen
 	@touch $@
 
-# XXX against landstrassen, too?
 .check_brunnels:	brunnels strassen landstrassen landstrassen2
 	$(CHECK_NEIGHBOUR) -type standard -data brunnels \
 	    -against strassen -against landstrassen -against landstrassen2
+	@touch $@
+
+.check_exits:	exits \
+		ubahnhof sbahnhof rbahnhof \
+		.strassen.tmp landstrassen landstrassen2
+	perl -I../lib -I.. -MStrassen::Core -MObject::Iterate=iterate -e '\
+	$$s=Strassen->new(q{exits});\
+	$$new_s=Strassen->new;\
+	iterate {\
+	    $$_->[Strassen::COORDS] = [@{$$_->[Strassen::COORDS]}[0, -1]];\
+	    $$new_s->push($$_);\
+	} $$s;\
+	print $$new_s->as_string' > /tmp/exits-first-last
+	$(CHECK_POINTS) /tmp/exits-first-last \
+		ubahnhof sbahnhof rbahnhof \
+		.strassen.tmp landstrassen landstrassen2
 	@touch $@
 
 .check_temp_blockings:	temp_blockings/*.bbd strassen
