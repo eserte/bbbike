@@ -288,7 +288,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'handicap',
      },
      { from  => 1083708000, # 2004-05-05 00:00
-       until => Time::Local::timelocal(reverse(2004-1900,5-1,19,23,59,59)),
+       until => Time::Local::timelocal(reverse(2004-1900,5-1,24,23,59,59)),
        file  => 'karstaedt.bbd',
        text  => 'B 5; OD Karstädt, Bahnübergang; Gleisbauarbeiten; Vollsperrung; 06.05.2004-24.05.2004 ',
        type  => 'handicap',
