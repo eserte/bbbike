@@ -30,7 +30,6 @@ BEGIN { # XXX do not hardcode
 use strict;
 use FindBin;
 use CGI qw(:standard *table);
-# XXX fix warning if $BBBIKE_ROOT is
 use lib (defined $BBBIKE_ROOT ? ("$BBBIKE_ROOT",
 				 "$BBBIKE_ROOT/lib",
 				 "$BBBIKE_ROOT/data") : (),

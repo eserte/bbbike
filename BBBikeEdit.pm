@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.56 2003/07/20 22:12:00 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.57 2003/07/23 00:26:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003 Slaven Rezic. All rights reserved.
@@ -2933,7 +2933,111 @@ sub clone {
     $clone;
 }
 
-# XXX Implemented and untested...
+sub temp_blockings_editor_parse_dates {
+    my $btxt = shift;
+
+    my @month_names = qw(Januar Februar März April Mai Juni Juli
+			 August September Oktober November Dezember);
+    my $month_rx = join("|", map { quotemeta } @month_names);
+    my %month_to_num;
+    $month_to_num{$month_names[$_-1]} = $_ for (1..@month_names);
+
+    require Time::Local;
+
+    my $date_time_to_epoch = sub {
+	my($S,$M,$H,$d,$m,$y) = @_;
+	$m--;
+	$y-=1900;
+	my $day_inc = 0;
+	if ($H == 24) {
+	    $H = 0;
+	    $day_inc = 1;
+	}
+	my $time;
+	eval {
+	    $time = Time::Local::timelocal($S,$M,$H,$d,$m,$y);
+	};
+	if ($@) {
+	    if (defined &main::status_message) {
+		main::status_message($@, "die");
+	    } else {
+		die $@;
+	    }
+	}
+	if ($day_inc) {
+	    $time += 86400;
+	}
+	$time;
+    };
+
+    my($new_start_time, $new_end_time, $prewarn_days);
+
+    my $date_rx      = qr/(\d{1,2})\.(\d{1,2})\.(20\d{2})/;
+    my $time_rx      = qr/(\d{1,2})[\.:](\d{2})\s*Uhr/;
+    my $full_date_rx = qr/$date_rx\D+$time_rx/;
+    my $ab_rx        = qr/(?:ab[:\s]+|Dauer[:\s]+)/;
+    my $bis_und_rx   = qr/(?:bis|und)(?:\s+(?:ca\.|voraussichtlich))?/;
+
+    my($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2);
+    # XXX use $full_date_rx etc. (after testing rxes!)
+    if (($d1,$m1,$y1, $H1,$M1, $H2,$M2) = $btxt =~
+	/(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*$bis_und_rx\s*(\d{1,2})\.(\d{2})\s*Uhr/) {
+	$new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
+	$new_end_time   = $date_time_to_epoch->(0,$M2,$H2,$d1,$m1,$y1);
+    } elsif (($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2) = $btxt =~
+	     /$full_date_rx\s*$bis_und_rx\s*$date_rx/) {
+	$new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
+	$new_end_time   = $date_time_to_epoch->(0,  0, 24,$d2,$m2,$y2);
+    } elsif (($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2) = $btxt =~
+	     /(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*$bis_und_rx\s*(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr/) {
+	$new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
+	$new_end_time   = $date_time_to_epoch->(0,$M2,$H2,$d2,$m2,$y2);
+#      } elsif (($d2,$m2,$y2, $H2,$M2) = $btxt =~ /bis\s+$full_date_rx/) {
+#  	$new_start_time = time; # now
+#  	$prewarn_days = 0;
+#  	$new_end_time   = $date_time_to_epoch->(0,$M2,$H2,$d2,$m2,$y2);
+#    } elsif (($d2,$m2,$y2) = $btxt =~ /bis\s+$date_rx/) {
+#	$new_start_time = time; # now
+#	$prewarn_days = 0;
+#	$new_end_time   = $date_time_to_epoch->(0,0,24,$d2,$m2,$y2);
+    } else {
+	if (($d1,$m1,$y1, $H1,$M1) = $btxt =~
+	    /$ab_rx$date_rx(?:\D+$time_rx)?/) {
+	    $H1 = 0 if !defined $H1;
+	    $M1 ||= 0;
+	    $new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
+	}
+	if (($d1,$m1,$y1, $H1,$M1) = $btxt =~
+	    /$bis_und_rx\s*$date_rx(?:\D+$time_rx)?/) {
+	    $H1 = 24 if !defined $H1;
+	    $M1 ||= 0;
+	    $new_end_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
+	} elsif ((my $month, $y1) = $btxt =~
+		 /$bis_und_rx\s*($month_rx)\s+(\d+)/i) {
+	    $H1 = 24;
+	    $M1 = 0;
+	    $m1 = $month_to_num{$month};
+	    $d1 = month_days($m1, $y1);
+	    $new_end_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
+	} elsif (my($months) = $btxt =~
+		 /für\s+(?:ca\.|voraussichtlich)\s+(\d+)\s+Monat/i) {
+	    my @l = localtime $new_start_time;
+	    $l[4]+=$months; # XXX >12 months not handled yet
+	    if ($l[4] > 11) {
+		$l[4]-=12;
+		$l[5]++;
+	    }
+	    $new_end_time = Time::Local::timelocal(@l);
+	}
+    }
+
+    if (defined $new_end_time && !defined $new_start_time) {
+	$new_start_time = time;
+	$prewarn_days = 0;
+    }
+    ($new_start_time, $new_end_time, $prewarn_days);
+}
+
 # XXX further implementation needed:
 #     * verschiedene Typen von blockings editierbar machen, mindestens jedoch
 #       "3" und "q4". Untermenü zum Auswählen des aktuellen blocking-typs.
@@ -2956,7 +3060,6 @@ sub temp_blockings_editor {
 				-title => M"Temporäre Sperrungen");
     return if !defined $t;
     require Tk::PathEntry;
-    require Time::Local;
     require Tk::Date;
     require Tk::NumEntry;
     require Tk::LabFrame;
@@ -3056,64 +3159,25 @@ sub temp_blockings_editor {
 	$btxt;
     };
 
-    my $date_time_to_epoch = sub {
-	my($S,$M,$H,$d,$m,$y) = @_;
-	$m--;
-	$y-=1900;
-	my $day_inc = 0;
-	if ($H == 24) {
-	    $H = 0;
-	    $day_inc = 1;
-	}
-	my $time;
-	eval {
-	    $time = Time::Local::timelocal($S,$M,$H,$d,$m,$y);
-	};
-	if ($@) {
-	    main::status_message($@, "die");
-	}
-	if ($day_inc) {
-	    $time += 86400;
-	}
-	$time;
-    };
-
     $act_b->configure
 	(-command => sub {
 	     my $btxt = $get_text->();
 	     $real_txt->delete("1.0","end");
 	     $real_txt->insert("end", $btxt);
-	     my($new_start_time, $new_end_time);
-
-	     my $date_rx      = qr/(\d{1,2})\.(\d{1,2})\.(20\d{2})/;
-	     my $time_rx      = qr/(\d{1,2})[\.:](\d{2})\s*Uhr/;
-	     my $full_date_rx = qr/$date_rx\D+$time_rx/;
-	     my $bis_und_rx   = qr/(?:bis|und)(?:\s+ca\.)?/;
-
-	     my($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2);
-	     # XXX use $full_date_rx etc. (after testing rxes!)
-	     if (($d1,$m1,$y1, $H1,$M1, $H2,$M2) = $btxt =~
-		 /(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*$bis_und_rx\s*(\d{1,2})\.(\d{2})\s*Uhr/) {
-		 $new_start_time =$date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
-		 $new_end_time   =$date_time_to_epoch->(0,$M2,$H2,$d1,$m1,$y1);
-	     } elsif (($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2) = $btxt =~
-		      /(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*$bis_und_rx\s*(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr/) {
-		 $new_start_time =$date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
-		 $new_end_time   =$date_time_to_epoch->(0,$M2,$H2,$d2,$m2,$y2);
-	     } elsif (($d2,$m2,$y2, $H2,$M2) = $btxt =~ /bis\s+$full_date_rx/) {
-		 $new_start_time =time; # now
-		 $prewarn_days = 0;
-		 $new_end_time   =$date_time_to_epoch->(0,$M2,$H2,$d2,$m2,$y2);
-	     } elsif (($d2,$m2,$y2) = $btxt =~ /bis\s+$date_rx/) {
-		 $new_start_time =time; # now
-		 $prewarn_days = 0;
-		 $new_end_time   =$date_time_to_epoch->(0,0,24,$d2,$m2,$y2);
+	     my($new_start_time, $new_end_time, $new_prewarn_days) =
+		 temp_blockings_editor_parse_dates($btxt);
+	     if (defined $new_prewarn_days) {
+		 $prewarn_days = $new_prewarn_days;
 	     }
 	     if (defined $new_start_time) {
 		 $start_w->configure(-value => $new_start_time);
+	     } else {
+		 main::status_message("Kann das Startdatum nicht parsen", "warn");
+	     }
+	     if (defined $new_end_time) {
 		 $end_w->configure  (-value => $new_end_time);
 	     } else {
-		 main::status_message("Kann kein Datum parsen", "warn");
+		 main::status_message("Kann das Startdatum nicht parsen", "warn");
 	     }
 	 });
 
@@ -3280,5 +3344,28 @@ sub add_cross_road_blockings {
 
     $add_userdels;
 }
+
+# REPO BEGIN
+# REPO NAME month_days /home/e/eserte/src/repository 
+# REPO MD5 349f6caae4054c70e91da1cda0eeea5f
+
+=head2 month_days($mon,$year)
+
+=for category Date
+
+Return the number of days for the specified month (1..12) and year
+(4-digit).
+
+DEPENDENCY: leapyear
+
+=cut
+
+sub month_days {
+    my($m,$y) = @_;
+    my $d = [31,28,31,30,31,30,31,31,30,31,30,31]->[$m-1];
+    $d++ if $m == 2 && leapyear($y);
+    $d;
+}
+# REPO END
 
 1;

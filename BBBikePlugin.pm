@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePlugin.pm,v 1.5 2003/01/08 18:48:15 eserte Exp eserte $
+# $Id: BBBikePlugin.pm,v 1.6 2003/07/22 23:25:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -135,21 +135,15 @@ sub _find_all_plugins_unix {
     @p;
 }
 
-# XXX Warum wird im iconified state das menu fuer SRTShortcuts nicht
-# XXX gezeichnet? warns danach wieder entfernen...
 sub place_menu_button {
     my($frame, $menuitems, $refwidget) = @_;
-warn "@_";
     $refwidget->idletasks;    # XXX idletasks needed?
     my($x,$width) = ($refwidget->x, $refwidget->width);
-warn "$x $width";
+    # If $refwidget is not yet mapped:
+    if ($width <= 1) { $width = $refwidget->reqwidth }
     my $menubutton = $frame->Menubutton;
-warn $menubutton;
     my $menu = $menubutton->Menu(-menuitems => $menuitems);
-warn $menu;
-warn "result of menuarrow_unmanaged:";
-    warn main::menuarrow_unmanaged($menubutton, $menu);
-warn "ok";
+    main::menuarrow_unmanaged($menubutton, $menu);
     $menubutton->place(-x => $x, -y => 0, -width => $width);
 }
 
