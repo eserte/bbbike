@@ -593,7 +593,7 @@ sub _prepare_ms_qs_dump {
     my $query_string_ref = shift;
     my $q = CGI->new($$query_string_ref);
     for (qw(map mode zoomdir zoomsize orig_mode orig_zoomdir imgxy
-	    imgext savequery program bbbikeurl bbbikeemail startc coordset
+	    imgext savequery program bbbikeurl bbbikemail startc coordset
 	    img.x img.y)) {
 	$q->delete($_);
     }
