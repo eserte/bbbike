@@ -26,6 +26,14 @@ MAN1=		bbbike.1
 
 MYDESTDIR=	${PREFIX}/BBBike
 
+.if !defined(PERL_VER) || ${PERL_VER} == 5.005
+PLIST=			${PKGDIR}/pkg-plist.5005
+LOCAL_PERL_ARCH=	${PERL_ARCH}
+.else
+LOCAL_PERL_ARCH=	${PERL_VER}/${ARCH}-freebsd
+.endif
+PLIST_SUB=		LOCAL_PERL_ARCH=${LOCAL_PERL_ARCH}
+
 do-build:
 	cd ${WRKSRC}/ext && ${MAKE} PERL=${PERL5} all install
 	cd ${WRKSRC}/ext && ${MAKE} PERL=${PERL5} clean
@@ -51,11 +59,3 @@ do-install:
 .endfor
 
 .include <bsd.port.mk>
-
-.if !defined(PERL_VER) || ${PERL_VER} == 5.005
-PLIST=		${PKGDIR}/pkg-plist.5005
-LOCAL_PERL_ARCH!=${PERL5} -MConfig -e 'print qq{$$Config{archname}}'
-.else
-LOCAL_PERL_ARCH!=${PERL5} -MConfig -e 'print qq{$$Config{version}/$$Config{archname}}'
-.endif
-PLIST_SUB=	LOCAL_PERL_ARCH=${LOCAL_PERL_ARCH}
