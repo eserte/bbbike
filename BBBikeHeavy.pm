@@ -680,6 +680,13 @@ sub BBBikeHeavy::getmap {
 					-out_mime => $o->mimetype,
 					-width => $newwidth,
 					-height => $newheight);
+	    if ($o->mimetype eq 'image/png') {
+		require Tk::PNG;
+	    } elsif ($o->mimetype eq 'image/jpeg') {
+		require Tk::JPEG;
+	    } elsif ($o->mimetype eq 'image/tiff') {
+		require Tk::TIFF;
+	    }
 	    $map_img = $top->Photo(-file => $tmpfile);
 	};
 	warn __LINE__ . ": $@" if $@ and $verbose;
