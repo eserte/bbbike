@@ -26,7 +26,7 @@ Heimstr.: m‰ﬂiges Kopfsteinpflaster	Q2 9958,8966 9959,9050 9962,9151 9962,9237
 Lilienthal/Z¸llichauer Str.: m‰ﬂiges Kopfsteinpflaster	Q2 10708,9214 10709,9192 10741,9072 10675,8940 10480,8807 10293,8800
 Golﬂener Str.: m‰ﬂiges Kopfsteinpflaster	Q2 10213,8665 10293,8800 10287,8951
 J¸terboger Str.: m‰ﬂiges Kopfsteinpflaster	Q2 10287,8951 9958,8966 9799,8962
-Methfesselstr.: sehr gutes Kopfsteinpflaster, 40km/h	Q0 9211,9354 9163,9209 9106,9038
+Methfesselstr.: sehr gutes Kopfsteinpflaster, 40km/h	Q0 9211,9354 9163,9209 9141,9142 9106,9038
 Methfesselstr.: Kopfsteinpflaster OK, 25km/h (wenn bergab)	Q1 9106,9038 9057,8936 8982,8781
 Priesterweg: m‰ﬂiges Kopfsteinpflaster	Q2 7231,7349 7222,6458 7217,6065 7216,5888 7175,5843
 Groﬂgˆrschenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8035,9437 7960,9466
@@ -44,7 +44,7 @@ Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11512,10105 11735,10022 11946,9913 12119,
 Maybachufer: Kopfsteinpflaster	Q2 11543,10015 11880,9874 12093,9783 12257,9703 12416,9625 12569,9547 12785,9443 12841,9368 12870,9366
 Innstr.: Kopfsteinpflaster (m‰ﬂig bis schlecht)	Q2 13107,8343 13217,8493 13366,8694
 Elsenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13402,8741 13504,8882 13657,9063
-Herrfurthstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11979,8014 11757,7965
+Herrfurthstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11979,8014 11823,7980 11757,7965
 Herrfurthstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11647,7940 11472,7899
 Herrfurthplatz: m‰ﬂiges Kopfsteinpflaster	Q2 11647,7940 11670,7911 11717,7895 11753,7930 11757,7965 11732,8001 11695,8005 11659,7982 11647,7940
 Feurigstr.: m‰ﬂiges Kopfsteinpflaster	Q2 7497,8916 7467,8863 7391,8832
@@ -304,10 +304,15 @@ Glienicker Str.: m‰ﬂiges Kopfsteinpflaster	Q2 -7587,312 -7732,313 -8013,255
 Sch‰ferstr.: Kopfsteinpflaster	Q2 -7232,445 -7365,371 -7587,312
 Karlsgartenstr.: Kopfsteinpflaster	Q2 11882,8527 11769,8515
 Fontanestr.: Kopfsteinpflaster	Q2 11632,8302 11645,8212 11665,8130
+Weisestr.: Kopfsteinpflaster	Q2 11763,8337 11770,8292 11773,8231 11786,8165 11823,7980 11923,7516
+Selchower Str.: Kopfsteinpflaster	Q2 11532,8104 11665,8130 11786,8165 11933,8198
 Mahlower Str.: Kopfsteinpflaster	Q2 11523,8178 11645,8212 11773,8231 11920,8252
 Boddinstr.: Kopfsteinpflaster	Q2 11920,8252 12096,8300
 Boddinstr.: teilweise Asphalt auf der Fahrbahn	Q1 12096,8300 12217,8320
 Boddinstr.: Kopfsteinpflaster	Q2 12217,8320 12582,8408
+Rollbergstr.: Asphalt	Q0 11960,8090 12139,8128
+Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12407,8177 12714,8249
+Falkstr.: Asphalt	Q0 12139,8128 12162,8055 12211,7830
 Schillerpromenade: Kopfsteinpflaster	Q2 11665,8130 11695,8005
 Schillerpromenade: Kopfsteinpflaster	Q2 11717,7895 11797,7492
 S‰ntisstr.: Kopfsteinpflaster	Q2 8892,802 8533,512
@@ -423,7 +428,7 @@ Reichstagufer: Kopfsteinpflaster	Q2 9091,12681 8892,12576 8766,12541 8665,12548
 Reichstagufer: m‰ﬂiger Asphalt	Q1 9283,12856 9209,12795 9091,12681
 Kopfstr.: Kopfsteinpflaster	Q2 12480,7887 12582,7909
 Morusstr.: Kopfsteinpflaster	Q2 12480,7887 12516,7718
-Leinestr.: Kopfsteinpflaster	Q2 12122,7553 11797,7492 11553,7437
+Leinestr.: Kopfsteinpflaster	Q2 12122,7553 11923,7516 11797,7492 11553,7437
 Auguststr.: Kopfsteinpflaster	Q2 10262,13583 10148,13546 10031,13509
 Magazinstr.: Kopfsteinpflaster, OK	Q1 11558,12588 11323,12484
 Saarbr¸cker Str.: Kopfsteinpflaster	Q2 10969,13914 10924,13940
@@ -919,3 +924,7 @@ Niederstr.: altes grobes Kopfsteinpflaster	Q3 7887,19706 7660,19810
 Denkstr.: Asphalt	Q0 6865,4659 7040,4615
 Peschkestr.: Asphalt	Q0 5424,6584 5532,6525
 Peschkestr.: Kopfsteinpflaster	Q2 5532,6525 5657,6457
+Fregestr.: grob gepflastert	Q2 5629,6421 5657,6457
+Fregestr.: asphaltiert	Q0 5657,6457 5897,6799
+Bochumer Str.: Asphalt	Q0 5876,13209 5902,13009 5936,12775
+Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6401,15956 6503,16068 6608,16180

@@ -222,7 +222,7 @@ Basdorf - Bernauer Heide: passierbar (Bahnstrecke), Qualität, Kfz-los?	? 12887,3
 Schwedter Steg - Norwegerstr.: flachere Rampe ist in Bau	? 10078,16164 10033,16232
 Zugbrücke/Schleuse?	? 35066,4548
 Zugbrücke?	? 32737,183789
-Stimmt das: L19 Saatwinkler Damm Berlin-Haselhorst - Berlin-Tiergarten in beiden Richtungen Zwischen Gartenfelder Straße und Flughafen Tegel beidseitig wegen Bauarbeiten gesperrt bis 31.05.	? -303,15526 468,15640 982,15710 1257,15704 3033,15694
+#XXX give up... Stimmt das: L19 Saatwinkler Damm Berlin-Haselhorst - Berlin-Tiergarten in beiden Richtungen Zwischen Gartenfelder Straße und Flughafen Tegel beidseitig wegen Bauarbeiten gesperrt bis 31.05.	? -303,15526 468,15640 982,15710 1257,15704 3033,15694
 #XXX Koordinaten stimmen nicht mehr! Darßer Str.: beidseitiger Radweg ja, eintragen!	? B24943,-13819 B23513,-13631
 #XXX Koordinaten stimmen nicht mehr! Granitzstr.: wenigstens teilweise Radweg Richtung Osten? (Richtung Westen definitiv kein Radweg)	? B14908,-13452 B15798,-14098
 Helgoländer Ufer - Bundesratufer: noch mal überdenken	? 6531,12898 6186,12969
@@ -454,8 +454,7 @@ Klockow - Kleptow (Feldweg): auf der Nordseite sandiger Feldweg (Q2?)	? 49487,11
 Wallenbergstr - Rudolstädter Str.: Verbindung vorhanden?	? 4139,8498 4046,8487 3964,8559
 Rüdickenstr. und Verlängerung: Qualität? Verbindung existent?	? 17149,17656 17425,17281 17891,17097
 Arnimstr.: Qualität? Wo ist die Verbindung zur Gehrenseestr.?	? 17891,17097 18500,16831 18313,16643
-Falkstr.: Kopfsteinpflaster?	? 12139,8128 12162,8055 12211,7830
-Rollbergstr.: Qualität? Durchgängig in Höhe der Brauerei?	? 12714,8249 12407,8177 12139,8128 11960,8090
+Falkstr.: ist hier für Autofahrer gesperrt? Durchgängig Asphalt?	? 12162,8055 12211,7830
 Unterbaumstr.: bereits befahrbar oder noch Bauarbeiten?	? 8581,13013 8503,12885
 Tiergarten, Große Querallee: südlich John-Foster-Dulles-Allee wahrscheinlich Parkweg, nördlich davon asphaltiert?	? 7921,12575 7875,12363 7816,12150
 Hittorfstr.: Einbahnstraße auch für Radfahrer?	? 2212,4600 2290,4709 2381,4737 2434,4787 2465,4934 2587,4965
@@ -474,7 +473,7 @@ Name der Promenade? In die Datenbank aufnehmen?	? 8770,8777 8737,8573 8696,8453
 Allee nach Sanssouci: Kopfsteinpflaster?	? -13556,-1140 -13857,-1040
 Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2037,55223 -281,58252
 Rallenweg: Qualität?	? -2307,20958 -1978,20928
-Fregestr.: Qualität?	? 5657,6457 5897,6799 5957,6889 5958,7220 5955,7406
+Fregestr.: Qualität?	? 5897,6799 5957,6889 5958,7220 5955,7406
 Urselweg: Qualität?	? -1155,3255 -990,3160 -887,3081 -812,2915
 Wolzogenstr.: Qualität? Durchfahrt zum Königsweg für Radfahrer möglich?	? -990,3160 -867,2722 -845,2664 -785,2492 -670,2361
 Robert-von-Ostertag-Str.: Qualität?	? -613,1949 -745,2320
@@ -482,3 +481,7 @@ Oertzenweg: Qualität?	? -1248,2508 -845,2664 -693,2720
 Agastr.: Qualität?	? 20277,2463 19723,3068 19611,3167
 Route H: geht es hier weiter?	? 4224,2659 4582,3076 4787,3342 4825,3402 4825,3402 4970,3684 5093,3912 5145,3984 5236,4078 5533,4267 5557,4294
 Kramerstr.: Qualität (laut ADFC-Karte gut geeignet)? Ab Kramersteg Richtung SO nur für Radfahrer offen? Wie ist die Anbindung Kramersteg/Uferpromenade?	? 4534,3456 4801,3370 5015,3292
+Humboldtstr. (Grunewald): Qualität?	? 2444,8919 2453,9156 2467,9428 2477,9551 2481,9606
+Viktoriapark: Weg wird aufgenommen, wenn bbbike.cgi Steigungen kann	? 8598,9061 8884,9078 8901,9104 8943,9098 8962,9048 9106,9038
+Viktoriapark: Weg wird aufgenommen, wenn bbbike.cgi Steigungen kann	? 9141,9142 8973,9171 9007,9264 8955,9318
+Viktoriapark: 40m Höhe	? 9007,9264

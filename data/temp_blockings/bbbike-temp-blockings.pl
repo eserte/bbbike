@@ -1,6 +1,7 @@
 # temp-blocking
 # XXX undef old entries
-# iso2epoch: date +%s -j YYYYMMDDhhmm
+# iso2epoch: date -j 2004MMDDhhmm +%s
+#            date +%s
 require Time::Local;
 @temp_blocking =
     (
@@ -468,7 +469,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'handicap',
      },
      { from  => 1091055057, # 2004-07-29 00:50
-       until => 1094335200, # 2004-09-05 00:00
+       until => 1094507940, # 2004-09-06 23:59
        file  => 'dietzgenstr.bbd',
        text  => 'Dietzgenstr. (Pankow) Richtung stadteinwärts zwischen Schillerstr. und Uhlandstr. Baustelle, Richtungsfahrbahn komplett gesperrt (bis 04.09.2004) ',
        type  => 'gesperrt',
@@ -652,6 +653,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1 9410,11803 9538,11818
+EOF
+     },
+     { from  => 1093816800, # 2004-08-30 00:00
+       until => 1098914400, # 2004-10-28 00:00
+       text  => 'Oberwallstraße, Baustelle, Straße gesperrt zwischen Jägerstraße und Hausvogteiplatz, Dauer: 31.08.2004 bis 27.10.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 9925,11947 9907,12055
+userdel	2 10582,13104 10445,13091
 EOF
      },
     );

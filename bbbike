@@ -303,7 +303,8 @@ $str_nr_draw{'comm-route'} = 1;
 	       's-NN', 's-N', 's-H', 's-HH', 's-B', 's-BAB', 'comm',
 	       (map { "comm-$_" } @comments_types),
 	       'nl', 'qs', 'hs', 'mount',
-	       's-label-bg', 's-label', 'hoehe', 'vf-bg', 'sperre',
+	       's-label-bg', 's-label', 'hoehe', 'vf-bg',
+	       'sperre', 'temp_sperre_s', 'temp_sperre',
 	       'delnet', 'pl-fg', 'lsa-bg', 'vf-fg', 'lsa-fg'],
    'str_l' => ['l-out', 'l', 'comm',
 	       (map { "comm-$_" } @comments_types),
@@ -8663,7 +8664,8 @@ sub plot_sperre {
 				   -width => $width1,
 				   -arrow => 'last',
 				   -arrowshape => [4,6,3],
-				   -tags => [$abk, $type2cat{$cat}, undef, $abk.'-'.$pos],
+				   -tags => [$abk, $type2cat{$cat},
+					     $ret->[Strassen::NAME], $abk.'-'.$pos],
 				  );
 		} elsif ($cat eq StrassenNetz::BLOCKED_COMPLETE) {
 # 		    $c->createImage($xm,$ym,

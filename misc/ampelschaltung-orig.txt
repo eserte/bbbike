@@ -4,7 +4,7 @@
 Do, 22.10.1998
 8594,8773     Dudenstr./Katzbachstr.             O->W       11:24:12
 8598,9061     Katzbachstr./Monumentenstr.        S->N       11:25:10  11:24:45
-8598,9256     Katzbachstr./Kreuzbergstr.         S->N                 11:25:45
+8598,9264     Katzbachstr./Kreuzbergstr.         S->N                 11:25:45
 8595,9495     Katzbachstr./Yorckstr.             S->N   60  11:26:00  11:26:10
 7829,9723     Goebenstr./Kulmer Str.             O->W       11:28:32
 7941,9686     Goebenstr./Mansteinstr.            O->W                 11:28:52
@@ -49,7 +49,7 @@ Sa, 24.10.1998
                                                             18:18:12
 8293,8768     Dudenstr./Loewenhardtdamm          O->W   60  18:22:53  18:22:20
 8594,8773     Dudenstr./Katzbachstr.             O->W   70  18:22:25  18:22:53
-8598,9256     Katzbachstr./Kreuzbergstr.         S->N   70  18:25:46  18:25:06
+8598,9264     Katzbachstr./Kreuzbergstr.         S->N   70  18:25:46  18:25:06
 8598,9061     Katzbachstr./Monumentenstr.        S->N   70  18:25:42  18:25:15
 8595,9495     Katzbachstr./Yorckstr.             S->N   60  18:27:00  18:27:10
 8595,9495     Yorckstr./Katzbachstr.             O->W   60  18:32:20  18:29:55
@@ -88,7 +88,7 @@ Sa, 24.10.1998
 9492,9311     Bergmannstr./Nostitzstr.           W->O       19:29:10  19:28:42
 9248,9350     Kreuzbergstr./Mehringdamm          O->W   70  19:32:20  19:32:38
 8955,9318     Kreuzbergstr./Großbeerenstr.       O->W   70  19:34:08  19:33:34
-8598,9256     Kreuzbergstr./Katzbachstr.         O->W   70  19:34:07  19:34:27
+8598,9264     Kreuzbergstr./Katzbachstr.         O->W   70  19:34:07  19:34:27
 8994,9509     Großbeerenstr./Hagelberger Str.    S->N   50  19:36:50  19:37:07
 9043,9745     Großbeerenstr./Yorckstr.           S->N   60  19:38:18  19:38:28
 
@@ -148,7 +148,7 @@ Mo, 26.10.1998
 8188,9610     Yorckstr./Bautzener Str.           W->O   70  16:56:16  16:55:46
 8595,9495     Yorckstr./Katzbachstr. (Auto)      W->O   70  16:57:50  16:57:18
 8595,9495     Yorckstr./Katzbachstr. (Rad)       W->O   70            16:58:02
-8598,9256     Katzbachstr./Kreuzbergstr.         N->S   70  16:59:10  16:59:33
+8598,9264     Katzbachstr./Kreuzbergstr.         N->S   70  16:59:10  16:59:33
 8598,9061     Katzbachstr./Monumentenstr.        N->S       17:00:26  17:01:03
 8594,8773     Katzbachstr./Dudenstr.             N->S   70  17:02:39  17:01:54
 
@@ -578,7 +578,7 @@ So, 15.11.1998
 So, 14.03.1999
 8616,8595     Boelckestr./Bayernring             O->W       14:36:30
 8594,8773     Dudenstr./Katzbachstr./Boelckestr  S->N       14:37:08
-8401,9079     Kreuzbergstr./Monumentenstr.       O->W       14:38:20
+8389,9087     Kreuzbergstr./Monumentenstr.       O->W       14:38:20
 7782,9115     Monumentenstr./Hohenfriedbergstr.  O->W       14:39:20  14:38:55
 7655,9188     Langenscheidtstr./Crellestr.       SO->NW     14:40:00  14:39:35
 7655,9188     Langenscheidtstr./Crellestr.       SW->NO     14:41:05  14:40:33
@@ -966,7 +966,7 @@ Mo, 26.04.1999
 7941,9686     Yorckstr./Goebenstr./Bülowstr.     N->S   70  18:23:54? 18:22:57?
 8188,9610     Yorckstr./Bautzener Str.           W->O       18:24:37
 8595,9495     Katzbachstr./Yorckstr.             NW->NO     18:26:12  18:25:41
-8598,9256     Katzbachstr./Kreuzbergstr.         N->S   70  18:26:21  18:26:45
+8598,9264     Katzbachstr./Kreuzbergstr.         N->S   70  18:26:21  18:26:45
 8598,9061     Katzbachstr./Monumentenstr.        N->S       18:27:39  18:27:05
 8594,8773     Dudenstr./Katzbachstr./Boelckestr  N->S   70  18:28:41  18:29:05
 8982,8781     Dudenstr./Methfesselstr./Mussehls  W->O   70  18:29:41  18:30:29
@@ -977,7 +977,7 @@ Mo, 26.04.1999
 Di, 27.04.1999
 8594,8773     Dudenstr./Katzbachstr./Boelckestr  O->W   70? 14:24:14  14:24:43
 8598,9061     Katzbachstr./Monumentenstr.        S->N       14:26:22  14:25:56
-8598,9256     Katzbachstr./Kreuzbergstr.         S->N                 14:25:45
+8598,9264     Katzbachstr./Kreuzbergstr.         S->N                 14:25:45
 8595,9495     Katzbachstr./Yorckstr.             S->N       14:27:20?
 7579,10183    Potsdamer Str./Bülowstr.           O->W   60  14:30:32  14:30:51
 7413,10244    Bülowstr./Frobenstr.               O->W       14:31:55  14:31:20
