@@ -36,10 +36,13 @@ BEGIN { # XXX do not hardcode
 use CGI qw(:standard *table);
 use lib (defined $BBBIKE_ROOT ? ("$BBBIKE_ROOT",
 				 "$BBBIKE_ROOT/lib",
-				 "$BBBIKE_ROOT/data") : (),
+				 "$BBBIKE_ROOT/data",
+				 "$BBBIKE_ROOT/miscsrc",
+				) : (),
 	 "/home/e/eserte/src/bbbike",
 	 "/home/e/eserte/src/bbbike/lib",
 	 "/home/e/eserte/src/bbbike/data",
+	 "/home/e/eserte/src/bbbike/miscsrc",
 	); # XXX do not hardcode
 
 if (defined param("mapserver")) {
@@ -149,10 +152,11 @@ sub resolve_street {
     require BBBikeRouting;
     my $br = BBBikeRouting->new;
     $br->init_context;
+    $br->Context->UseTelbuchDBApprox(1); # XXX experimental!!!
     my $start = $br->Start;
     $start->Street(param("street"));
-    $start->Citypart(param("citypart"));
-    my $coord = $br->get_start_position;
+    $start->Citypart(param("citypart") || undef);
+    my $coord = $br->get_start_position(fixposition => 0);
 
     if (!defined $coord) {
 	if (!$br->StartChoices && !@{$br->StartChoices}) {
@@ -171,7 +175,7 @@ sub resolve_street {
 	    (-name=>"coords",
 	     -values => [map { $_->Coord } @{$br->StartChoices}],
 	     -labels => {map { ($_->Coord =>
-				$_->Street . " (" . $_->Citypart . ", " . $_->ZIP . ")" ) } @{$br->StartChoices}},
+				$_->Street . " (" . $_->Citypart . (defined $_->ZIP ? ", " . $_->ZIP : "") . ")" ) } @{$br->StartChoices}},
 	     -linebreak => "true",
 	    ), br;
 	print submit(-value => "Zeigen");
