@@ -1298,7 +1298,7 @@ sub advanced_coord_menu {
 
     $bpcm->command(-label => M"Neu laden",
 		   -command => \&reload_all,
-		   -accelerator => 'Alt-R',
+		   -accelerator => 'Ctrl-R',
 		  );
     $bpcm->separator;
 

@@ -437,11 +437,11 @@ LAYER
 
   CLASSITEM 'CAT'
 
-[% BLOCK CLASS_W -%]
+[% BLOCK CLASS_W_ANY -%]
   CLASS
-    EXPRESSION "W"
+    EXPRESSION "[% expr %]"
     LABEL
-      MINFEATURESIZE 200
+      MINFEATURESIZE [% IF expr == "W" || expr == "W0" %]200[% ELSE %]40[% END %]
       MINDISTANCE 150
       POSITION auto
       TYPE truetype
@@ -457,59 +457,23 @@ LAYER
     [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_W size=1 minscale=20000 maxscale=400000 -%]
-[% PROCESS CLASS_W size=2 minscale=10000 maxscale=20000 -%]
-[% PROCESS CLASS_W size=4 minscale=undef maxscale=10000 -%]
+[% PROCESS CLASS_W_ANY expr="W" size=1 minscale=20000 maxscale=400000 -%]
+[% PROCESS CLASS_W_ANY expr="W" size=2 minscale=10000 maxscale=20000 -%]
+[% PROCESS CLASS_W_ANY expr="W" size=4 minscale=undef maxscale=10000 -%]
 
-[% BLOCK CLASS_W1 -%]
-  CLASS
-    EXPRESSION "W1"
-    LABEL
-      MINFEATURESIZE 40
-      MINDISTANCE 150
-      POSITION auto
-      TYPE truetype
-      FONT "lucida"
-      MINSIZE 8
-      COLOR 0 0 255
-      ANGLE AUTO
-    END
-    SYMBOL "circle"
-    COLOR 180 180 255
-    SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
-  END
-[% END -%]
-[% PROCESS CLASS_W1 size=2 minscale=200000 maxscale=1000000 -%]
-[% PROCESS CLASS_W1 size=3 minscale=20000  maxscale=200000 -%]
-[% PROCESS CLASS_W1 size=5 minscale=10000  maxscale=20000 -%]
-[% PROCESS CLASS_W1 size=7 minscale=undef  maxscale=10000 -%]
+[% PROCESS CLASS_W_ANY expr="W0" size=1 minscale=10000 maxscale=80000 -%]
+[% PROCESS CLASS_W_ANY expr="W0" size=2 minscale=5000  maxscale=10000 -%]
+[% PROCESS CLASS_W_ANY expr="W0" size=3 minscale=undef maxscale=5000 -%]
 
-[% BLOCK CLASS_W2 -%]
-  CLASS
-    EXPRESSION "W2"
-    LABEL
-      MINFEATURESIZE 40
-      MINDISTANCE 150
-      POSITION auto
-      TYPE truetype
-      FONT "lucida"
-      MINSIZE 8
-      COLOR 0 0 255
-      ANGLE AUTO
-    END
-    SYMBOL "circle"
-    COLOR 180 180 255
-    SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
-  END
-[% END -%]
-[% PROCESS CLASS_W2 size=2  minscale=1000000 maxscale=undef   -%]
-[% PROCESS CLASS_W2 size=6  minscale=20000   maxscale=1000000 -%]
-[% PROCESS CLASS_W2 size=9  minscale=10000   maxscale=20000   -%]
-[% PROCESS CLASS_W2 size=12 minscale=undef   maxscale=10000   -%]
+[% PROCESS CLASS_W_ANY expr="W1" size=2 minscale=200000 maxscale=1000000 -%]
+[% PROCESS CLASS_W_ANY expr="W1" size=3 minscale=20000  maxscale=200000 -%]
+[% PROCESS CLASS_W_ANY expr="W1" size=5 minscale=10000  maxscale=20000 -%]
+[% PROCESS CLASS_W_ANY expr="W1" size=7 minscale=undef  maxscale=10000 -%]
+
+[% PROCESS CLASS_W_ANY expr="W2" size=2  minscale=1000000 maxscale=undef   -%]
+[% PROCESS CLASS_W_ANY expr="W2" size=6  minscale=20000   maxscale=1000000 -%]
+[% PROCESS CLASS_W_ANY expr="W2" size=9  minscale=10000   maxscale=20000   -%]
+[% PROCESS CLASS_W_ANY expr="W2" size=12 minscale=undef   maxscale=10000   -%]
 
   TEMPLATE "query.html"
   HEADER "query_header2.html"

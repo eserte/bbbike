@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mps_reader.pl,v 1.3 2003/08/24 23:24:27 eserte Exp $
+# $Id: mps_reader.pl,v 1.3 2003/08/24 23:24:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -25,6 +25,7 @@ my $force;
 
 if (!GetOptions("destdir=s" => \$destdir,
 		"force!" => \$force,
+		"d!" => \$GPS::MPS::DEBUG,
 	       )) {
     die "usage!";
 }

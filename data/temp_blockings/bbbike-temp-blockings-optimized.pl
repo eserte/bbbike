@@ -141,14 +141,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1107990000,
-         'text' => 'L 86; zw. Schmergow und Ketzin Straßenbau Vollsperrung 18.01.2005-09.02.2005 ',
-         'from' => 1105916400,
-         'data' => 'userdel	2 -27793,4863 -27127,5270
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1112306400,
          'text' => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzend., zw. G.-Hauptmann-Str. u. K.-Liebknecht-Str. Kanal- und Straßenbau Vollsperrung 29.11.2004-31.03.2005 ',
@@ -156,6 +149,24 @@ push @temp_blocking,
          'data' => 'userdel	q4 25185,-3955 23463,-4466
 ',
          'type' => 'handicap'
+       },
+       undef,
+       undef,
+       {
+         'until' => 1108681200,
+         'text' => 'K 6148; (Brand-Halbe); Bahnübergang in OL Teurow Arbeiten an Signaltechnik Vollsperrung 08.02.2005-17.02.2005 ',
+         'from' => 1107730800,
+         'data' => 'userdel	2 32937,-34794 32747,-34772
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1109199600,
+         'text' => 'L 62; (Elsterwerda-Hohenleipisch); Bahnübergang bei Dreska Gleisbauarbeiten Vollsperrung 21.02.2005-23.02.2005 ',
+         'from' => 1108854000,
+         'data' => 'userdel	2 22508,-102744 22382,-102254
+',
+         'type' => 'gesperrt'
        }
      
 );

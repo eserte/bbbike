@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MPS.pm,v 1.3 2004/10/02 18:17:11 eserte Exp $
+# $Id: MPS.pm,v 1.3 2004/10/02 18:17:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package GPS::MPS;
 
 use strict;
-use vars qw($VERSION);
+use vars qw($VERSION $DEBUG);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 use constant SEEK_CUR => 1; # no Fcntl for 5.005 compatibility
@@ -55,7 +55,6 @@ sub convert_to_gpsman {
 % Edit at your own risk!
 
 !Format: DDD 1 WGS 84
-!Creation: yes
 
 EOF
 
@@ -83,7 +82,7 @@ EOF
 
     read($fh, $buf, 4);
     my $len = unpack("V", $buf);
-    #warn $len;
+    warn "Len=$len\n" if $DEBUG;
     read($fh, $buf, $len+1);
 
     #warn $buf;
@@ -98,6 +97,8 @@ EOF
 #      warn $buf; # time
 #    seek($fh, 1, SEEK_CUR);
 
+    my $last_type;
+
     while(!eof($fh)) {
 	read($fh, $buf, 4);
 	my $len = unpack("V", $buf);
@@ -105,22 +106,27 @@ EOF
 	my $type = substr($buf, 0, 1);
 	if ($type eq 'W') {
 	    my($name) = substr($buf, 1) =~ /^([^\0]+)/;
-#	    warn "Waypoint $name\n";
+	    warn "Waypoint <$name>\n" if $DEBUG;
 	    $buf = substr($buf, length($name)); # skip name
 	    $buf = substr($buf, 12*2+($version==2?1:0)); # skip 00 and ff
 	    my $coords = substr($buf, 0, 16);
 	    my @c = unpack("V*", $coords);
-#	    warn join(", ", @c), "\n";;
-#warn semicirc_deg($c[0]);
-#warn semicirc_deg($c[1]);
+	    my $lat = semicirc_deg($c[0]);
+	    my $long = semicirc_deg($c[1]);
+	    if (!defined $last_type || $last_type ne 'W') {
+		$out .= "!W:\n";
+		$last_type = 'W';
+	    }
+	    $out .= uc($name) . "\t\tN$lat\tE$long\n";
 	    if (substr($buf, 17) !~ /^\0/) {
-#		warn substr($buf, 17); # comment
+		warn "Comment: " . substr($buf, 17) if $DEBUG;
 	    }
 	} elsif ($type eq 'T') {
 	    my $dist = 0;
 	    my($name) = substr($buf, 1) =~ /^([^\0]+)/;
 #	    warn "Track $name\n";
 	    $out .= "!T:\t$name\n";
+	    $last_type = 'T';
 	    $buf = substr($buf, length($name));
 	    my($lastx,$lasty);
 	    while($buf =~ /(.{31})/gs) {

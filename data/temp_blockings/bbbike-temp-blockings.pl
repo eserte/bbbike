@@ -1362,4 +1362,36 @@ EOF
 userdel	q4 25185,-3955 23463,-4466
 EOF
      },
+     { from  => 1107475200, # 2005-02-04 01:00
+       until => 1107741600, # 2005-02-07 03:00
+       text  => 'Berliner Straße, Zwischen Kreuzung Granitzstraße und Florastr. in beiden Richtungen Brückenarbeiten, gesperrt, Dauer: 05.02.2005 01:00 Uhr bis 07.02.2005 03:00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 10846,17992 10859,17854
+EOF
+     },
+     { from  => 1075827600, # 2004-02-03 18:00
+       until => 1107748800, # 2005-02-07 05:00
+       text  => 'Blockdammweg in Richtung Köpenicker Chaussee ab Hönower Wiesenweg gesperrt (Arbeiten an Gasleitung). Dauer: 04.02.2004 18:00 Uhr bis 07.02.2005 05:00 Uhr ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 17375,8847 17072,8714
+EOF
+     },
+     { from  => 1107730800, # 2005-02-07 00:00
+       until => 1108681200, # 2005-02-18 00:00
+       text  => 'K 6148; (Brand-Halbe); Bahnübergang in OL Teurow Arbeiten an Signaltechnik Vollsperrung 08.02.2005-17.02.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 32937,-34794 32747,-34772
+EOF
+     },
+     { from  => 1108854000, # 2005-02-20 00:00
+       until => 1109199600, # 2005-02-24 00:00
+       text  => 'L 62; (Elsterwerda-Hohenleipisch); Bahnübergang bei Dreska Gleisbauarbeiten Vollsperrung 21.02.2005-23.02.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 22508,-102744 22382,-102254
+EOF
+     },
     );
