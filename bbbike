@@ -4396,7 +4396,11 @@ if ($c->can('DropSite')) {
     eval {
 	$c->DropSite
 	  (-dropcommand => [\&accept_drop, $c],
-	   -droptypes => ($os eq 'win' ? 'Win32' : ['KDE', 'XDND', 'Sun'])
+	   -droptypes => ($os eq 'win' ?
+			  'Win32' :
+			  # KDE is removed from Tk804.02x
+			  [($Tk::VERSION >= 804 ? () : 'KDE'), 'XDND', 'Sun']
+			 )
 	  );
 	warn M("Datei-DND wird akzeptiert") if $verbose;
     };
