@@ -75,6 +75,8 @@ data/vorfahrt-orig
 data/wasserstrassen-orig
 data/wasserumland-orig
 data/wasserumland2-orig
+data/temp_blockings/*.bbd
+data/temp_blockings/*.pl
 ext/Strassen-Inline/.cvsignore
 ext/Strassen-Inline2/.cvsignore
 ext/StrassenNetz-CNetFile/.cvsignore
@@ -111,8 +113,6 @@ mapserver/daemon/mapscript_daemon.pl
 misc/ampelschaltung.txt
 misc/ampelschaltung2.txt
 misc/fragezeichen
-misc/temp_blockings/*.bbd
-misc/temp_blockings/*.pl
 misc/data_corrected/Makefile
 miscsrc/ApproxCityparts.pm
 miscsrc/BBBikeLocalizator.pm

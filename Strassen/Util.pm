@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.15 2004/01/13 19:51:59 eserte Exp eserte $
+# $Id: Util.pm,v 1.16 2004/06/10 22:53:53 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Util;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 use strict;
 use Config;
@@ -313,7 +313,7 @@ sub try_cache {
 # in $srcref (Array-Referenz oder ein String) ist.
 # Internal function.
 ### AutoLoad Sub
-sub _valid_cache {
+sub cache_is_recent {
     my($cachefile, $srcref) = @_;
 
     my(@stat_cache) = stat $cachefile;
@@ -339,7 +339,7 @@ sub valid_cache {
     $cachefile = get_cachefile($cachefile);
     my($cache_func_found, $cachepath) = try_cache($cachefile);
     return 0 if (!$cache_func_found);
-    return _valid_cache($cachepath, $srcref);
+    return cache_is_recent($cachepath, $srcref);
 }
 
 # Return cache file name
@@ -377,9 +377,9 @@ sub get_from_cache {
     }
     warn "Using $cache_func_found for reading.\n" if $VERBOSE;
 
-    if (!_valid_cache($cachepath, $srcref)) {
-	warn "Cache file $cachepath is not valid.
-Checked against @$srcref.\n" if $VERBOSE;
+    if (!cache_is_recent($cachepath, $srcref)) {
+	warn "Cache file $cachepath is not recent is respect to
+the source files @$srcref.\n" if $VERBOSE;
 	return undef;
     }
 

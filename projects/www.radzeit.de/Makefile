@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.33 2004/06/02 22:45:52 eserte Exp eserte $
+# $Id: Makefile,v 1.34 2004/06/10 22:25:55 eserte Exp $
 #
 
 # Targets:
@@ -25,7 +25,9 @@ CURDIR=			${.CURDIR}
 LOCAL_URL?=		http://radzeit.herceg.de
 LOCAL_CGI_URL?=		${LOCAL_URL}/cgi-bin
 LOCAL_HTML_URL?=	${LOCAL_URL}/BBBike
-DATA_DIR=		data_corrected
+#XXXDATA_DIR=		data_corrected
+DATA_DIR=		data
+TEMP_BLOCKINGS_DIR=	data/temp_blockings
 
 DEPLOY_TARGETS=		prepare-bbbike-data \
 			prepare-bbbike-dist \
@@ -91,8 +93,6 @@ LOCAL_URL=	http://localhost:8080/bbbike
 LOCAL_CGI_URL=	http://localhost:8080/bbbike/cgi
 LOCAL_HTML_URL=	http://localhost:8080/bbbike
 DATA_DIR=	data
-NO_DATA_CORRECTED=	yes
-NO_SLOW_CHECKS=		yes
 NO_BERLINER_STADTPLAN=	yes
 .endif
 
@@ -143,11 +143,11 @@ test-makefile:
 # Reihenfolge sollte hoffentlich richtig sein
 prepare-bbbike-data:
 	$(BBBIKE_ROOT_DIR)/miscsrc/check_bbbike_temp_blockings
-	cd $(BBBIKE_ROOT_DIR)/data && ${MAKE} all
-	[ "${NO_SLOW_CHECKS}" = "yes" ] && true || (cd $(BBBIKE_ROOT_DIR)/data && ${MAKE} slow-checks)
-	[ "${NO_DATA_CORRECTED}" = "yes" ] && true || (cd $(BBBIKE_ROOT_DIR)/data_corrected && ${MAKE} init all mapfiles)
+	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} all
+	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} slow-checks
+	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} mapfiles
 #XXX .if "${DATA_DIR}" != "data" && "${DATA_DIR}" != "data_corrected"
-	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE}
+#XXX	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE}
 #XXX .endif
 
 prepare-bbbike-dist:	prepare-bbbike-dist-prog prepare-bbbike-dist-data
@@ -200,11 +200,11 @@ prepare-bbbike-dist-data:
 	-cp -pf ${BBBIKE_ROOT_DIR}/${DATA_DIR}/* \
 	    ${CURDIR}/BBBike/data/
 	-rm -f ${CURDIR}/BBBike/data/conv.db*
-	[ -d ${CURDIR}/BBBike/misc/temp_blockings ] || \
-	    mkdir -p ${CURDIR}/BBBike/misc/temp_blockings
-	find ${BBBIKE_ROOT_DIR}/misc/temp_blockings/ -maxdepth 1 -type f ! -name "*~" | ${XARGS_REPL} cp -pf % ${CURDIR}/BBBike/misc/temp_blockings/
-	-cp -pf ${BBBIKE_ROOT_DIR}/misc/temp_blockings/* \
-	    ${CURDIR}/BBBike/misc/temp_blockings/
+	[ -d ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR} ] || \
+	    mkdir -p ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}
+	find ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/ -maxdepth 1 -type f ! -name "*~" | ${XARGS_REPL} cp -pf % ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}/
+	-cp -pf ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/* \
+	    ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}/
 	rm -f ${CURDIR}/cgi-bin/bbbike-teaser.pl
 	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike-teaser.pl
 

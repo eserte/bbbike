@@ -1,4 +1,4 @@
-# $Id: sbahnhof-orig,v 3.2 2004/05/21 22:26:06 eserte Exp $
+# $Id: sbahnhof-orig,v 3.2 2004/05/21 22:26:06 eserte Exp eserte $
 Yorckstr.	SA 8280,9528
 Yorckstr. (Großgörschenstr.)	SA 7985,9576
 #: attrs bg
@@ -76,7 +76,7 @@ Nikolassee	SB -3736,2625
 #: attrs bg
 Wannsee	SB -4677,1420
 #: attrs bg
-Griebnitzsee	SC -8060,-1637
+Griebnitzsee	SC -8063,-1651
 Grunewald	SB 806,9026
 #: attrs bg
 Messe Süd (Eichkamp)	SB 1208,10234
@@ -120,7 +120,7 @@ Friedrichshagen	SB 25489,6023
 Rahnsdorf	SB 30020,5477
 Wilhelmshagen	SB 32189,4124
 #: attrs bg
-Erkner	SC 34237,2969
+Erkner	SC 34138,2805
 #: attrs bf
 Ahrensfelde	SB 21199,18617
 #: attrs bf
@@ -142,7 +142,7 @@ Kaulsdorf	SB 23002,12073
 #: attrs bg
 Mahlsdorf	SB 24482,12106
 #: attrs bf
-Birkenstein	SC 27032,12557
+Birkenstein	SC 27052,12463
 Gehrenseestr.	SB 18518,16904
 #: attrs bf
 Hohenschönhausen	SB 17607,18021
@@ -163,7 +163,7 @@ Karow	SB 14608,23364
 #: attrs bf
 Buch	SB 16101,25760
 #: attrs bg
-Röntgental	SC 17626,27274
+Röntgental	SC 17671,27148
 #: attrs bg
 Treptower Park	SA 14325,9793
 #: attrs bg
@@ -182,7 +182,7 @@ Adlershof	SB 19944,3344
 #: attrs bg
 Grünau	SB 22166,986
 #: attrs bf
-Flughafen Berlin-Schönefeld	SC 18091,-1509
+Flughafen Berlin-Schönefeld	SC 18079,-1507
 #: attrs bf
 Grünbergallee	SB 20117,-578
 #: attrs bf
@@ -213,67 +213,67 @@ Neukölln	SA 13130,7132
 #: attrs bg
 Sonnenallee	SA 13999,7541
 #: attrs bg
-Mahlow	SC 11024,-4900
+Mahlow	SC 10994,-4934
 #: attrs bf
-Blankenfelde	SC 11542,-7436
+Blankenfelde	SC 11511,-7471
 #: attrs bg
-Babelsberg	SC -10526,-1959
+Babelsberg	SC -10527,-1979
 #: attrs bg
-Potsdam Hauptbahnhof	SC -12255,-2026
+Potsdam Hauptbahnhof	SC -12248,-2045
 #: attrs bg
-Hohen Neuendorf	SC 2120,29117
+Hohen Neuendorf	SC 2097,29095
 #: attrs bg
-Birkenwerder	SC 2157,31399
+Birkenwerder	SC 2136,31373
 #: attrs bf
-Borgsdorf	SC 1317,34319
+Borgsdorf	SC 1288,34296
 #: attrs bf
-Lehnitz	SC 242,37345
+Lehnitz	SC 210,37316
 #: attrs bg
-Oranienburg	SC -614,38516
+Oranienburg	SC -672,38539
 #: attrs bf
-Mühlenbeck-Mönchsmühle	SC 8913,27766
+Mühlenbeck-Mönchsmühle	SC 8916,27732
 #: attrs bf
-Schönfließ	SC 5623,28868
+Schönfließ	SC 5600,28848
 #: attrs bg
-Bergfelde b. Berlin	SC 4319,29271
-Zepernick	SC 18839,28512
+Bergfelde b. Berlin	SC 4293,29252
+Zepernick	SC 18899,28383
 #: attrs bg
-Bernau-Friedenstal	SC 20972,29519
+Bernau-Friedenstal	SC 21038,29414
 #: attrs bg
-Bernau	SC 22763,30375
+Bernau	SC 22841,30263
 #: attrs bf (problemlos)
-Strausberg Nord	SC 44329,21335
+Strausberg Nord	SC 44484,21068
 #: attrs bf
-Strausberg Stadt	SC 43030,19819
+Strausberg Stadt	SC 43151,19585
 #: attrs bf
-Hegermühle	SC 41693,16809
+Hegermühle	SC 41778,16599
 #: attrs bf (anscheinend problemlos)
-Strausberg	SC 39584,14715
+Strausberg	SC 39652,14539
 #: attrs bf
-Petershagen Nord	SC 36468,14282
+Petershagen Nord	SC 36541,14129
 #: attrs bf
-Fredersdorf (bei Berlin)	SC 34676,13958
+Fredersdorf (bei Berlin)	SC 34747,13818
 #: attrs bf
-Neuenhagen (bei Berlin)	SC 30429,13224
-Hoppegarten (Mark)	SC 28721,12922
+Neuenhagen (bei Berlin)	SC 30462,13112
+Hoppegarten (Mark)	SC 28747,12824
 #: attrs bf
-Königs Wusterhausen	SC 26456,-11862
-Wildau	SC 26578,-9111
+Königs Wusterhausen	SC 26358,-11950
+Wildau	SC 26479,-9206
 #: attrs bf
-Zeuthen	SC 26100,-6105
-Eichwalde	SC 25240,-3505
+Zeuthen	SC 26029,-6170
+Eichwalde	SC 25164,-3561
 #: attrs bg
 Osdorfer Str.	SB 4502,1316
 #: attrs bg
 Lichterfelde Süd	SB 4146,385
 # wird nicht mehr eröffnet: Teltow	S0 E5841,5733
-Teltow-Stadt	S0 1922,-1163
+Teltow-Stadt	S0 1917,-1180
 #: attrs bf
 Schulzendorf (b. Tegel)	SB -537,22867
 #: attrs bg
 Heiligensee	SB -1623,24049
 #: attrs bg
-Hennigsdorf	SC -3329,25610
+Hennigsdorf	SC -3381,25591
 #: attrs bg
 Stresow	SB -2901,13742
 #: attrs bg

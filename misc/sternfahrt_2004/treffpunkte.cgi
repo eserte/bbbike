@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: treffpunkte.cgi,v 1.2 2004/06/02 22:46:37 eserte Exp $
+# $Id: treffpunkte.cgi,v 1.3 2004/06/10 21:55:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -30,6 +30,7 @@ sub show_list {
     require Strassen::Core;
     my $s;
     eval {
+	# XXX del This is obsoleted...
 	$s = Strassen->new("$FindBin::RealBin/treffpunkte2004-corrected.bbd");
     };
     if (!$s) {

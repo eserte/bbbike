@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Multi.pm,v 1.9 2004/06/03 07:42:33 eserte Exp $
+# $Id: Multi.pm,v 1.10 2004/06/10 23:02:50 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +16,7 @@ package PLZ::Multi;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 use Getopt::Long qw(GetOptions);
 BEGIN {
@@ -44,34 +44,45 @@ sub new {
     if (!GetOptions(\%args, "cache=i")) {
 	die "usage!";
     }
-    my @files = @ARGV;
-    if (!@files) {
-	die "No files specified";
+    my @in = @ARGV;
+    if (!@in) {
+	die "No files or strassen objects specified";
     }
 
     my $need_seen_hash;
-    for (@files) {
+    my @files;
+    for (@in) {
 	if (ref $_ && UNIVERSAL::isa($_, "Strassen")) {
 	    $need_seen_hash = 1;
-	}
-    }
-
-    my @cachefile_names;
-    my %seen;
-    for (@files) {
-	if (!ref $_) {
+	    push @files, $_->dependent_files;
+	} else {
 	    # make $_ an absolute pathname
 	    if (!File::Spec->file_name_is_absolute($_)) {
 		for my $dir (@Strassen::datadirs) {
 		    my $f = File::Spec->catfile($dir, $_);
 		    if (-r $f) {
 			$_ = $f;
-			push @cachefile_names, basename($_);
-			last;
 		    }
 		}
 	    }
+	    push @files, $_;
+	}
+    }
 
+    my $combined;
+    my $cachetoken = "multiplz_" .
+	             join("_", map { basename $_ } @files);
+    my $cachefile = Strassen::Util::get_cachefile($cachetoken);
+    if ($args{cache}) {
+	if (Strassen::Util::cache_is_recent($cachefile, \@files)) {
+	    $combined = $cachefile;
+	    goto FINISH;
+	}
+    }
+
+    my %seen;
+    for (@in) {
+	if (!ref $_) {
 	    my $f = $_;
 	    if ($need_seen_hash) {
 		local $_; # just to make sure...
@@ -87,7 +98,7 @@ sub new {
     }
 
     # 2nd pass: .bbd files
-    for (@files) {
+    for (@in) {
 	if (ref $_ && UNIVERSAL::isa($_, "Strassen")) {
 	    # convert into PLZ file
 	    require Strassen::Strasse;
@@ -112,25 +123,13 @@ sub new {
 		}
 	    }
 	    close $fh;
-	    push @cachefile_names, $_->file;
 	    $_ = $filename;
-	}
-    }
-
-    my $combined;
-
-    my $cachetoken = "multiplz_" .
-	             join("_", map { basename $_ } @cachefile_names);
-    my $cachefile = Strassen::Util::get_cachefile($cachetoken);
-    if ($args{cache}) {
-	if (Strassen::Util::valid_cache($cachetoken, \@files)) {
-	    $combined = $cachefile;
 	}
     }
 
     if (!defined $combined) {
 	my($fh, $temp) = tempfile(UNLINK => 1);
-	system("cat @files | sort -u > $temp"); # XXX what on non-Unix?
+	system("cat @in | sort -u > $temp"); # XXX what on non-Unix?
 	if ($args{cache}) {
 	    $combined = $cachefile;
 	    move($temp, $combined);
@@ -139,6 +138,7 @@ sub new {
 	}
     }
 
+ FINISH:
     PLZ->new($combined);
 }
 

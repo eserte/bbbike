@@ -1,4 +1,4 @@
-# $Id: sehenswuerdigkeit-orig,v 3.1 2004/05/02 20:28:42 eserte Exp eserte $
+# $Id: sehenswuerdigkeit-orig,v 3.4 2004/06/10 20:56:53 eserte Exp eserte $
 # Berlin ##################################################
 Brandenburger Tor	IMG:sehenswuerdigkeit_img/brandenburger_tor.gif|ANCHOR:s 8593,12243
 Philharmonie	F:SW 8028,11538 8054,11499 8122,11510 8128,11560 8081,11576
@@ -45,7 +45,7 @@ Museum für Naturkunde und Zoologisches Museum	F:SW 8713,13790 8667,13762 8646,13
 Museum für Naturkunde und Zoologisches Museum	F:SW 8729,13815 8750,13779 8810,13800 8782,13846
 Neue Synagoge	SW 9736,13221
 Flughafen Tempelhof	F:SW|IMG:airport.gif 9297,8095 9352,8244 9437,8377 9377,8445 9331,8429 9262,8420 9261,8560 9327,8574 9403,8492 9468,8550 9385,8625 9401,8692 9531,8675 9523,8618 9504,8571 9582,8496 9723,8546 9884,8562 10027,8548 10020,8526 9875,8542 9733,8519 9590,8459 9481,8378 9391,8255 9333,8130 9303,8019 9274,8021 9301,8115
-Flughafen Schönefeld	F:SW|IMG:airport.gif 18597,-1759 18610,-1808 18376,-1887 18351,-1841
+Flughafen Schönefeld	F:SW|IMG:airport.gif 18581,-1760 18594,-1810 18359,-1889 18335,-1843
 Flughafen Tegel	F:SW|IMG:airport.gif 2752,16408 2770,16371 2721,16343 2695,16308 2694,16274 2704,16244 2671,16278 2552,16258 2478,16353 2513,16459 2632,16482 2710,16395
 Luftbrückendenkmal	IMG:sehenswuerdigkeit_img/luftbrueckendenkmal.gif|ANCHOR:s 9317,8702
 Schinkeldenkmal	SW|IMG:monument.gif 8911,9073
@@ -72,7 +72,6 @@ Grunewaldturm	SW -3613,7768
 Schloß Köpenick	F:SW 22043,4451 22029,4404 22004,4411 22025,4461
 Schloß Glienicke	F:SW -10354,527 -10341,505 -10382,481 -10395,506 -10381,516 -10375,499 -10358,507 -10364,524
 Kirche St. Peter u. Paul	SW|IMG:church.gif -8878,1726
-Schloß Babelsberg	F:SW -10480,-181 -10484,-208 -10513,-228 -10509,-179
 Schloß Pfaueninsel	F:SW -8644,2422 -8651,2405 -8685,2421 -8676,2444
 Forsthaus Nikolskoe	F:SW -8866,1633 -8843,1604 -8821,1621 -8844,1645
 Zitadelle	F:SW -2740,14858 -2722,14841 -2608,14861 -2582,14903 -2557,14911 -2549,14887 -2576,14859 -2551,14761 -2595,14718 -2640,14682 -2699,14666 -2726,14695 -2715,14720 -2729,14818 -2769,14822 -2767,14855
@@ -195,80 +194,81 @@ Oberbaumbruecke	IMG:sehenswuerdigkeit_img/oberbaumbruecke.gif 13300,10750
 Oberbaum City	IMG:sehenswuerdigkeit_img/oberbaumcity.gif 13600,11000
 Schultheissbrauerei	IMG:sehenswuerdigkeit_img/schultheiss.gif 9050,8975
 # Potsdam ##################################################
-Neues Palais	SW -15738,-989
-Schloß Charlottenhof	SW -15074,-1584
-Chinesisches Teehaus	SW -14563,-1029
-Communs (Universität Potsdam)	SW -15951,-1010
-Kaiserbahnhof	SW -15928,-1543
-Schloß Sanssouci	SW -14223,-666
-Nikolaikirche (Potsdam)	SW|IMG:church.gif -12598,-1515
-Schloß Cecilienhof	SW -12070,1065
-Ruinenberg (Potsdam)	SW -14203,-26
-Historische Mühle (Potsdam)	SW -14479,-666
-Orangerie (Sanssouci)	SW -14863,-560
-Belvedere (Sanssouci)	SW -15547,-284
-Drachenhaus (Sanssouci)	SW -15397,-412
-Brandenburger Tor (Potsdam)	F:SW -13560,-1091
-Jägertor	SW -13261,-813
-Nauener Tor	SW -12899,-684
-Holländisches Viertel	F:SW -12877,-684 -12621,-641 -12599,-811 -12877,-855
-St.-Peter und Paul-Kirche	SW|IMG:church.gif -12770,-982
-Französische Kirche	SW|IMG:church.gif -12514,-939
-Friedenskirche	SW|IMG:church.gif -13859,-942
-Belvedere (Pfingstberg)	SW -12818,1064
-Russ.-Orth. Kirche/Kapellenberg	SW|IMG:church.gif -12945,680
-Flatowturm (Babelsberg)	SW -10956,-701
-Heilandskirche (Sacrow)	SW|IMG:church.gif -10364,1709
-Sacrower Schloß	SW -10535,1986
-Gothische Bibliothek (Neuer Garten, Potsdam)	SW -12280,-320
-Marmorpalais (Neuer Garten, Potsdam)	SW -12090,362
-Krongut Bornstedt	SW -14715,-176
-Bornstedter Kirche	SW -14822,-70
-Wasserwerk Sanssouci	SW -13815,-1518
-Rathaus Potsdam	SW -12921,-471
-Rathaus Babelsberg	SW -10590,-1852
-Medienstadt und Filmpark Babelsberg	F:SW -8455,-1954 -8517,-2786 -9072,-2617 -8860,-1977
-Sternwarte Babelsberg	SW -9718,-443
+Schloß Babelsberg	F:SW -10482,-195 -10486,-222 -10515,-242 -10511,-193
+Neues Palais	SW -15737,-1011
+Schloß Charlottenhof	SW -15071,-1601
+Chinesisches Teehaus	SW -14559,-1050
+Communs (Universität Potsdam)	SW -15950,-1032
+Kaiserbahnhof	SW -15925,-1565
+Schloß Sanssouci	SW -14221,-686
+Nikolaikirche (Potsdam)	SW|IMG:church.gif -12593,-1533
+Schloß Cecilienhof	SW -12076,1047
+Ruinenberg (Potsdam)	SW -14203,-45
+Historische Mühle (Potsdam)	SW -14477,-686
+Orangerie (Sanssouci)	SW -14861,-580
+Belvedere (Sanssouci)	SW -15549,-305
+Drachenhaus (Sanssouci)	SW -15398,-433
+Brandenburger Tor (Potsdam)	F:SW -13556,-1107
+Jägertor	SW -13259,-834
+Nauener Tor	SW -12897,-705
+Holländisches Viertel	F:SW -12875,-705 -12619,-662 -12596,-827 -12874,-871
+St.-Peter und Paul-Kirche	SW|IMG:church.gif -12766,-998
+Französische Kirche	SW|IMG:church.gif -12511,-955
+Friedenskirche	SW|IMG:church.gif -13856,-963
+Belvedere (Pfingstberg)	SW -12825,1046
+Russ.-Orth. Kirche/Kapellenberg	SW|IMG:church.gif -12943,670
+Flatowturm (Babelsberg)	SW -10957,-716
+Heilandskirche (Sacrow)	SW|IMG:church.gif -10369,1692
+Sacrower Schloß	SW -10540,1969
+Gothische Bibliothek (Neuer Garten, Potsdam)	SW -12277,-327
+Marmorpalais (Neuer Garten, Potsdam)	SW -12095,345
+Krongut Bornstedt	SW -14714,-196
+Bornstedter Kirche	SW -14822,-89
+Wasserwerk Sanssouci	SW -13809,-1535
+Rathaus Potsdam	SW -12920,-491
+Rathaus Babelsberg	SW -10591,-1872
+Medienstadt und Filmpark Babelsberg	F:SW -8458,-1969 -8515,-2805 -9070,-2636 -8859,-1999
+Sternwarte Babelsberg	SW -9719,-457
 # Brandenburg ##################################################
-Schloß Rheinsberg	SW -25498,76701
-Schloß Diedersdorf	SW 7443,-7573
-Denkmal (?) 	SW|IMG:monument.gif -28992,39928
-Schloß Oranienburg	SW -1511,38642
-Schloß Teupitz (?)	SW 25155,-29352
-Schloß Branitz	SW 78618,-72084
-Otto-Spreeauenpark (Buga Cottbus)	SW 77592,-71489
-Tierpark Cottbus	SW 77721,-71937
-Dom St. Peter und Paul (Brandenburg)	SW|IMG:church.gif -46315,248
-Marienberg Brandenburg	SW -47639,288
-Pulverturm Bernau	SW 22143,30715
-Kantorhaus Bernau	SW 22229,30673
-Henkerhaus Bernau	SW 22186,30843
-St. Marien Bernau	F:SW|IMG:church.gif 22314,30822
-Steintor Bernau	SW 22699,30674
-Stadtmauer Bernau	SW 22187,30523 22143,30715 22207,30886 22527,30993 22720,30652 22614,30524 22293,30438
-Einsteinturm (Potsdam)	SW -12358,-3455
-Landtag (Potsdam)	SW -12595,-2475
-Schiffshebewerk Niederfinow	SW 45708,50299
-Kloster Chorin	SW 41490,55131
-Windradpark bei Güstow	SW 32617,102541
-Schloss Boitzenburg	SW 21725,95310
-Marienkirche Prenzlau	SW|IMG:church.gif 38405,101870
-Schleuse Große Tränke	SW 50988,-3153
-Jagdschloß Königs Wusterhausen	SW 26050,-11543
-Kinderbauernhof Roter Hof (Strausberg)	SW 44062,21912
+Schloß Rheinsberg	SW -25852,76666
+Schloß Diedersdorf	SW 7420,-7598
+Denkmal (?) 	SW|IMG:monument.gif -29249,39712
+Schloß Oranienburg	SW -1559,38608
+Schloß Teupitz (?)	SW 24950,-29407
+Schloß Branitz	SW 77500,-72834
+Otto-Spreeauenpark (Buga Cottbus)	SW 76496,-72220
+Tierpark Cottbus	SW 76618,-72671
+Dom St. Peter und Paul (Brandenburg)	SW|IMG:church.gif -46277,8
+Marienberg Brandenburg	SW -47601,38
+Pulverturm Bernau	SW 22217,30605
+Kantorhaus Bernau	SW 22304,30562
+Henkerhaus Bernau	SW 22261,30732
+St. Marien Bernau	F:SW|IMG:church.gif 22390,30710
+Steintor Bernau	SW 22778,30561
+Stadtmauer Bernau	SW 22261,30413 22217,30605 22283,30775 22606,30879 22799,30539 22692,30412 22367,30328
+Einsteinturm (Potsdam)	SW -12348,-3476
+Landtag (Potsdam)	SW -12587,-2495
+Schiffshebewerk Niederfinow	SW 46113,49913
+Kloster Chorin	SW 41912,54746
+Windradpark bei Güstow	SW 33239,102263
+Schloss Boitzenburg	SW 22106,95131
+Marienkirche Prenzlau	SW|IMG:church.gif 39157,101572
+Schleuse Große Tränke	SW 50927,-3539
+Jagdschloß Königs Wusterhausen	SW 25953,-11628
+Kinderbauernhof Roter Hof (Strausberg)	SW 44211,21646
 #: XXX genaue Position? vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-Schloss Steinhöfel	SW 62775,875
-Schloss Neuhardenberg	SW 66800,22850
-Schloss Wulkow 	SW 66475,20000
-Schloss Trebnitz	SW 65450,16025
-Sauener Herrenhaus	SW 66275,-14550
-Schloss Groß Rietz	SW 66150,-19750
-Schloss Kossenblatt	SW 58200,-30500
+Schloss Steinhöfel	SW 62739,317
+Schloss Neuhardenberg	SW 67024,22301
+Schloss Wulkow 	SW 66684,19478
+Schloss Trebnitz	SW 65639,15551
+Sauener Herrenhaus	SW 66048,-15160
+Schloss Groß Rietz	SW 65864,-20329
+Schloss Kossenblatt	SW 57796,-30982
 #: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 # elsewhere ##################################################
-Brocken	SW -180184,-67845
-Schloß Wernigerode	SW -167702,-64557
-Wesendahler Mühle	SW 39311,21581
-Eisenbahnhubbrücke Karnin	SW 36762,160833
-Schloß Mellenthin	SW 47222,170067
-Mahnmal bei Kamminke	SW 59937,166262
+Brocken	SW -177603,-70746
+Schloß Wernigerode	SW -165459,-67258
+Wesendahler Mühle	SW 39431,21380
+Eisenbahnhubbrücke Karnin	SW 38039,160491
+Schloß Mellenthin	SW 48860,169621
+Mahnmal bei Kamminke	SW 61911,165656

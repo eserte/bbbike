@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: correct_data.pl,v 1.15 2004/06/08 21:51:27 eserte Exp eserte $
+# $Id: correct_data.pl,v 1.16 2004/06/10 22:24:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -241,7 +241,7 @@ sub convert_record {
 			$loop_i++;
 			my @args =
 			    (-datafromany => $corr_data,
-			     -refpoint => "$c,$ref_dist",
+			     -refpoint => "$real_c,$ref_dist",
 			     '-nooutput', '-reusemapdata',
 			     (defined $minpoints ? (-minpoints => $minpoints) : ()), # hier eigentlich egal
 			    );
@@ -250,19 +250,19 @@ sub convert_record {
 			print "# $_->[Strassen::NAME], Pos=" . $s->pos . "\n"
 			    if $v_output && !$comment_printed && $s;
 			$comment_printed++;
-			print "# coord_i=$coord_i, coord=$c, refdist=$ref_dist: $count sample(s)\n"
+			print "# coord_i=$coord_i, coord=$real_c, refdist=$ref_dist: $count sample(s)\n"
 			    if $v_output >= 2;
 			next if ($count < $minpoints);
 			my $k_obj = Karte::create_obj("Karte::Custom", %$ret);
 			my $_new_c;
 			if ($reverse) {
 			    $_new_c = join(",", map { int }
-					   $k_obj->standard2map(split /,/, $c));
+					   $k_obj->standard2map(split /,/, $real_c));
 			} else {
 			    $_new_c = join(",", map { int }
-					   $k_obj->map2standard(split /,/, $c));
+					   $k_obj->map2standard(split /,/, $real_c));
 			}
-			$conv{$c} = $_new_c unless $conv_read_only;
+			$conv{$real_c} = $_new_c unless $conv_read_only;
 			$new_c = $_new_c;
 			last TRY;
 		    }
@@ -273,7 +273,7 @@ sub convert_record {
 		die if ($@ =~ /interrupt/i);
 		my $msg = "# $_->[Strassen::NAME]";
 		if ($s) { $msg .= ", Pos=" . $s->pos }
-		$msg .= " ($c): cannot convert\n";
+		$msg .= " ($real_c): cannot convert\n";
 		print $msg if $v_output >= 2;
 		warn $msg;
 		return;

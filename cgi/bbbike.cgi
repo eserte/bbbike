@@ -2551,8 +2551,11 @@ sub search_coord {
 	}
 	if (@current_temp_blocking) {
 	    push @Strassen::datadirs,
+		"$FindBin::RealBin/../BBBike/data/temp_blockings",
+		"$FindBin::RealBin/../data/temp_blockings",
+		# XXX obsolete locations
 		"$FindBin::RealBin/../BBBike/misc/temp_blockings",
-		"$FindBin::RealBin/../misc/temp_blockings"
+		"$FindBin::RealBin/../misc/temp_blockings",
 		;
 	    for(my $i = 0; $i <= $#current_temp_blocking; $i++) {
 		my $tb = $current_temp_blocking[$i];

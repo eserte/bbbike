@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.15 2004/06/02 22:48:15 eserte Exp $
+# $Id: Makefile,v 2.16 2004/06/10 22:03:05 eserte Exp $
 #
 
 BBBIKEDIR=		..
@@ -559,8 +559,8 @@ check-disabled:	.check_label
 	    -against strassen -against landstrassen -against landstrassen2
 	@touch $@
 
-.check_temp_blockings:	${MISCDIR}/temp_blockings/*.bbd strassen
-	cat ${MISCDIR}/temp_blockings/*.bbd > /tmp/all_temp_blockings.bbd
+.check_temp_blockings:	temp_blockings/*.bbd strassen
+	cat temp_blockings/*.bbd > /tmp/all_temp_blockings.bbd
 	$(CHECK_NEIGHBOUR) -type standard -data /tmp/all_temp_blockings.bbd -against strassen -against landstrassen -against landstrassen2
 	rm -f /tmp/all_temp_blockings.bbd
 	@touch $@

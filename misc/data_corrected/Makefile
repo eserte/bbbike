@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.20 2004/06/10 07:26:59 eserte Exp $
+# $Id: Makefile,v 1.21 2004/06/10 22:02:10 eserte Exp $
 #
 
 # See also comments in correct_data.pl
@@ -48,6 +48,8 @@
 #     keine mehr!
 #
 # - Schritte zur Konvertierung:
+#   - Checkin aller Dateien in data/*, misc/temp_blockings/*, misc/(bbd),
+#     ~/.bbbike/route/**
 #   - Ausführen
 #     make realclean
 #XXX clean bbr/**?
@@ -60,9 +62,10 @@
 #
 #   - alle konvertierten Dateien müssen händisch mit diff kontrolliert werden!
 #
-#   - Dateien in ~/.bbbike/route/... => RCS
-#   - data => data/old, data_corrected => data
-#   - make test
+#   - Dateien in ~/.bbbike/route/... => RCS. OK, gemacht!
+#   - data/*-orig => data/old, data_corrected/*-orig => data
+#   - make in data
+#   - make test in bbbike
 #   - misc/temp_blockings => data/old, RCS-Dateien retten
 #   - alle Programmreferenzen und MANIFESTe und CVS checkins für
 #     temp_blockings ändern
@@ -126,7 +129,7 @@ conv-bbr:
 	    fi \
 	done
 	for dir in $(HOME)/.bbbike/route/*; do \
-	    if [ -d $$dir ] ; then \
+	    if [ -d $$dir -a $$dir != "$(HOME)/.bbbike/route/RCS" ] ; then \
 	        echo "Directory $$dir"; \
 		for i in $$dir/*.bbr; do \
 		    target=bbr/`basename $$dir`/`basename $$i`; \

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.67 2004/03/26 22:09:27 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.68 2004/06/10 22:27:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3042,8 +3042,12 @@ sub temp_blockings_editor {
     $t->gridColumnconfigure($_, -weight => 1) for (1..2);
     $t->gridRowconfigure   ($_, -weight => 1) for (1..8);
 
-    my $initialdir = "$FindBin::RealBin/misc/temp_blockings/";
-    my $pl_file = "$initialdir/bbbike-temp-blockings.pl";
+    eval {
+	require "$FindBin::RealBin/miscsrc/check_bbbike_temp_blockings";
+    }; warn $@ if $@;
+
+    my $initialdir = $BBBike::check_bbbike_temp_blockings::temp_blockings_dir . "/"; # XXX del "$FindBin::RealBin/misc/temp_blockings/";
+    my $pl_file = $BBBike::check_bbbike_temp_blockings::temp_blockings_pl; # XXX del "$initialdir/bbbike-temp-blockings.pl";
     my $file = $initialdir;
     my $prewarn_days = 1;
     my $blocking_type = "gesperrt";

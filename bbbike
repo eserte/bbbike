@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.132 2004/05/17 23:36:45 eserte Exp eserte $
+# $Id: bbbike,v 3.133 2004/06/10 22:22:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -223,7 +223,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.132 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.133 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -8615,7 +8615,7 @@ sub activate_temp_blockings {
     my(%args) = @_;
     my $now = $args{-now} || time;
     # XXX these should come from a file as constants
-    my $temp_blockings_dir = "$FindBin::RealBin/misc/temp_blockings";
+    my $temp_blockings_dir = "$FindBin::RealBin/data/temp_blockings"; # XXX was misc
     my $file = "$temp_blockings_dir/bbbike-temp-blockings.pl";
     if (!-r $file) {
 	status_message(M("Kein Support fuer temporaere Sperrungen, das Verzeichnis $temp_blockings_dir fehlt. Dieses Verzeichnis ist aus dem CVS erhältlich, siehe README."), "warn");

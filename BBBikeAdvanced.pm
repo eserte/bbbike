@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.95 2004/05/17 23:32:04 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.96 2004/06/10 22:23:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2887,7 +2887,7 @@ sub active_temp_blockings_for_date_dialog {
     if (BBBike::check_bbbike_temp_blockings->can("process")) {
 	my $txt = $t->Scrolled("ROText", -scrollbars => "osoe",
 			       -width => 40, -height => 5)->pack(-fill => "both", -expand => 1);
-	BBBike::check_bbbike_temp_blockings::process(-f => "$FindBin::RealBin/misc/temp_blockings/bbbike-temp-blockings.pl");
+	BBBike::check_bbbike_temp_blockings::process(-f => $BBBike::check_bbbike_temp_blockings::temp_blockings_pl);
 	BBBike::check_bbbike_temp_blockings::load_file();
 	my @future = BBBike::check_bbbike_temp_blockings::return_future();
 	for my $rec (@future) {

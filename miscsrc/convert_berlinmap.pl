@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: convert_berlinmap.pl,v 1.41 2004/03/03 23:15:30 eserte Exp eserte $
+# $Id: convert_berlinmap.pl,v 1.42 2004/06/10 22:25:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003 Slaven Rezic. All rights reserved.
@@ -574,6 +574,9 @@ TRY: {
      while(1) {
 	 my $r = $s->next;
 	 last if !@{ $r->[Strassen::COORDS()] };
+	 for (@{ $r->[Strassen::COORDS()] }) {
+	     s/^:.*://; # remove additional point info
+	 }
 	 push @map_data_lines, join("\t",
 				    @{ $r->[Strassen::COORDS()] }[0,1],
 				    "# " . $r->[Strassen::NAME()]
@@ -591,6 +594,9 @@ TRY: {
 	     push @map_data_lines, $_;
 	 } else {
 	     my $r = Strassen::parse($_);
+	     for (@{ $r->[Strassen::COORDS()] }) {
+		 s/^:.*://; # remove additional point info
+	     }
 	     push @map_data_lines, join("\t",
 					@{ $r->[Strassen::COORDS()] }[0,1],
 					"# " . $r->[Strassen::NAME()]
