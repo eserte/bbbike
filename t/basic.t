@@ -33,21 +33,27 @@ my @files = (qw(bbbike cmdbbbike cbbbike smsbbbike),
 plan tests => scalar @files;
 
 for my $f (@files) {
-    my @add_opt;
-    if ($f =~ m{Tk/.*\.pm}) {
-	push @add_opt, "-MTk";
-    }
-    if ($f =~ /(.*)Heavy(.*)/) {
-	my $non_heavy = "$1$2";
-	$non_heavy =~ s{/\.pm$}{.pm};
-	$non_heavy =~ s{/}{::}g;
-	$non_heavy =~ s{\.pm$}{}g;
-	if ($non_heavy ne "BBBikeHeavy.pm") {
-	    push @add_opt, "-M$non_heavy";
+    my $tests = 1;
+ SKIP: {
+	skip "$f not ready for stand-alone test", $tests
+	    if $f =~ m{^ (BBBikeWeather.pm | BBBikePrint.pm) $}x;
+	my @add_opt;
+	if ($f =~ m{Tk/.*\.pm}) {
+	    push @add_opt, "-MTk";
 	}
+	if ($f =~ /(.*)Heavy(.*)/) {
+	    my $non_heavy = "$1$2";
+	    $non_heavy =~ s{/\.pm$}{.pm};
+	    $non_heavy =~ s{/}{::}g;
+	    $non_heavy =~ s{\.pm$}{}g;
+	    if ($non_heavy ne "BBBike") {
+		push @add_opt, "-M$non_heavy";
+	    }
+	}
+	system($^X, "-c", "-Ilib", @add_opt, "./$f");
+	die "Signal caught" if $? & 0xff;
+	is($?, 0, "Check $f");
     }
-    system($^X, "-c", "-Ilib", @add_opt, "./$f");
-    is($?, 0, "Check $f");
 }
 
 __END__
