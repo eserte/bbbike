@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.80 2004/12/08 22:24:33 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.81 2004/12/27 23:23:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2522,7 +2522,9 @@ sub do_create_relation {
 
 use vars qw($gps_penalty_koeff $gps_penalty_multiply
 	    $bbd_penalty_koeff $bbd_penalty_multiply $bbd_penalty_file
-	    $bbd_penalty_invert);
+	    $bbd_penalty_invert
+	    $st_net_koeff $st_net_penalty_file
+	   );
 
 sub build_gps_penalty_for_search {
     require Strassen::Core;
@@ -2618,6 +2620,41 @@ sub build_bbd_penalty_for_search {
 		$pen *= $bbd_penalty_koeff;
 	    }
 	    #warn "Hit penalty node $next_node\n";#XXX
+	}
+	$pen;
+    };
+}
+
+sub choose_st_net_file_for_penalty {
+    my $f = $main::top->getOpenFile
+	(-filetypes =>
+	 [
+	  [M"Net/Storable-Dateien", '.st'],
+	  [M"Alle Dateien", '*'],
+	 ],
+	 -initialdir => $main::datadir,
+	);
+    return if !defined $f;
+    $st_net_penalty_file = $f;
+}
+
+sub build_st_net_penalty_for_search {
+    if (!defined $st_net_penalty_file) {
+	choose_st_net_file_for_penalty();
+	return if (!defined $st_net_penalty_file);
+    }
+    require Storable;
+    my $penalty = Storable::retrieve($st_net_penalty_file);
+    die "Can't retrieve $st_net_penalty_file" if !$penalty;
+
+    $main::penalty_subs{stnetpenalty} = sub {
+	my($pen, $next_node, $last_node) = @_;
+	if (exists $penalty->{$last_node.",".$next_node}) {
+	    my $this_penalty = $penalty->{$last_node.",".$next_node};
+	    $this_penalty = $st_net_koeff * $this_penalty + (100-$st_net_koeff*100)
+		if $st_net_koeff != 1;
+	    if ($this_penalty < 1) { $this_penalty = 1 } # avoid div by zero or negative values
+	    $pen *= (100 / $this_penalty);
 	}
 	$pen;
     };

@@ -1,4 +1,4 @@
-// $Id: bbbike_result.js,v 1.11 2004/07/01 14:06:43 eserte Exp $
+// $Id: bbbike_result.js,v 1.12 2004/12/27 23:34:18 eserte Exp $
 // (c) 2003 Slaven Rezic. All rights reserved.
 
 function test_temp_blockings_set() {
@@ -110,7 +110,9 @@ function all_checked() {
     }
 }
 
-function reset_form(default_speed, default_cat, default_quality, default_routen, default_ampel, default_green) {
+function reset_form(default_speed, default_cat, default_quality,
+		    default_routen, default_ampel, default_green,
+		    default_winter) {
     var frm = document.forms.settings;
     if (!frm) {
 	frm = document.forms[0];
@@ -119,11 +121,22 @@ function reset_form(default_speed, default_cat, default_quality, default_routen,
 	elements["pref_speed"].value = default_speed;
 	elements["pref_cat"].options[default_cat].selected = true;
 	elements["pref_quality"].options[default_quality].selected = true;
-//	elements["pref_routen"].options[default_routen].selected = true;
+	if (elements["pref_routen"]) {
+	    elements["pref_routen"].options[default_routen].selected = true;
+	}
 	elements["pref_ampel"].checked = default_ampel;
-	elements["pref_green"].checked = default_green;
+	elements["pref_green"].options[default_green].selected = true;
+	if (elements["pref_winter"]) {
+	    elements["pref_winter"].options[default_winter].selected = true;
+	}
     }
     return false;
+}
+
+function show_info(what) {
+    if (what == "winter_optimization") {
+	alert("Erfahrungsgem‰ﬂ werden bei Schnee und Eis Hauptstraﬂen am ehesten ger‰umt. Deshalb wird bei dieser Einstellung verst‰rkt auf Hauptstraﬂen optimiert und Nebenstraﬂen gemieden. Weiterhin gemieden werden: benutzungspflichtige Radwege, Kopfsteinpflasterstraﬂen und Br¸cken.");
+    }
 }
 
 // Local variables:

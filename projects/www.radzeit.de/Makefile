@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.42 2004/12/05 00:11:53 eserte Exp eserte $
+# $Id: Makefile,v 1.44 2004/12/27 23:30:44 eserte Exp $
 #
 
 # Targets:
@@ -253,6 +253,8 @@ prepare-bbbike-dist-data-datadir:
 prepare-bbbike-dist-data-datadir-additional:
 	cp -pf ${BBBIKE_ROOT_DIR}/data/*-cooked \
 	    ${CURDIR}/BBBike/data/
+	cp -pf ${BBBIKE_ROOT_DIR}/tmp/winter_optimization.st \
+	    ${CURDIR}/BBBike/tmp/
 
 # temp_blockings is not yet in MANIFEST, so copy is necessary
 prepare-bbbike-dist-data-temp-blockings-dir:

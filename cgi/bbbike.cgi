@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.94 2004/12/06 20:40:02 eserte Exp eserte $
+# $Id: bbbike.cgi,v 7.1 2004/12/27 23:21:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -101,6 +101,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $bbbike_temp_blockings_file $bbbike_temp_blockings_optimized_file
 	    @temp_blocking
 	    $use_cgi_compress_gzip $max_matches
+	    $use_winter_optimization
 	   );
 # XXX This may be removed one day
 use vars qw($use_cooked_street_data);
@@ -636,7 +637,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.94 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.1 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -690,7 +691,7 @@ if (!$use_background_image) {
     $ziel_bgcolor  = '#e8f0ff';
 }
 
-@pref_keys = qw/speed cat quality ampel green/;
+@pref_keys = qw/speed cat quality ampel green winter/;
 
 CGI->import('-no_xhtml');
 
@@ -2191,6 +2192,7 @@ sub get_kreuzung {
 <hr><p><b>Einstellungen</b>:</p>
 EOF
     settings_html();
+    reset_html();
     print "<hr>\n";
 
     suche_button();
@@ -2257,6 +2259,46 @@ sub set_cookie {
 	);
 }
 
+my $default_speed;
+my $default_cat;
+my $default_quality;
+my $default_ampel;
+my $default_routen;
+my $default_green;
+my $default_winter;
+
+sub get_settings_defaults {
+    my %c = get_cookie();
+
+    $default_speed   = (defined $c{"pref_speed"}   ? $c{"pref_speed"}+0 : 20);
+    $default_cat     = (defined $c{"pref_cat"}     ? $c{"pref_cat"}     : "");
+    $default_quality = (defined $c{"pref_quality"} ? $c{"pref_quality"} : "");
+    $default_ampel   = (defined $c{"pref_ampel"} && $c{"pref_ampel"} eq 'yes' ? 1 : 0);
+    $default_routen  = (defined $c{"pref_routen"}  ? $c{"pref_routen"}  : "");
+    $default_green   = (defined $c{"pref_green"}   ? $c{"pref_green"}   : "");
+    # Backward compatibility:
+    if ($default_green eq 'yes') {
+	$default_green = 2;
+    }
+    $default_winter   = (defined $c{"pref_winter"}   ? $c{"pref_winter"}   : "");
+}
+
+sub reset_html {
+    if ($bi->{'can_javascript'}) {
+	my(%strcat)    = ("" => 0, "N1" => 1, "N2" => 2, "H1" => 3, "H2" => 4);
+	my(%strqual)   = ("" => 0, "Q0" => 1, "Q2" => 2);
+	my(%strrouten) = ("" => 0, "RR" => 1);
+	my(%strgreen)  = ("" => 0, "GR1" => 1, "GR2" => 2);
+	my(%strwinter) = ("" => 0, "WI1" => 1, "WI2" => 2);
+
+	get_settings_defaults();
+
+	print <<EOF
+<input type=button value="Reset" onclick="return reset_form($default_speed, @{[defined $strcat{$default_cat} ? $strcat{$default_cat} : 0]}, @{[defined $strqual{$default_quality} ? $strqual{$default_quality}: 0]}, @{[defined $strrouten{$default_routen} ? $strrouten{$default_routen} : 0]}, @{[ $default_ampel?"true":"false" ]}, @{[defined $strgreen{$default_green} ? $strgreen{$default_green} : 0]}, @{[defined $strwinter{$default_winter} ? $strwinter{$default_winter} : 0]});">
+EOF
+    }
+}
+
 sub settings_html {
     # Einstellungen ########################################
     my %c = get_cookie();
@@ -2267,21 +2309,7 @@ sub settings_html {
 	}
     }
 
-    my(%strcat)    = ("" => 0, "N1" => 1, "N2" => 2, "H1" => 3, "H2" => 4);
-    my(%strqual)   = ("" => 0, "Q0" => 1, "Q2" => 2);
-    my(%strrouten) = ("" => 0, "RR" => 1);
-    my(%strgreen)  = ("" => 0, "GR1" => 1, "GR2" => 2);
-
-    my $default_speed   = (defined $c{"pref_speed"}   ? $c{"pref_speed"}+0 : 20);
-    my $default_cat     = (defined $c{"pref_cat"}     ? $c{"pref_cat"}     : "");
-    my $default_quality = (defined $c{"pref_quality"} ? $c{"pref_quality"} : "");
-    my $default_ampel   = (defined $c{"pref_ampel"} && $c{"pref_ampel"} eq 'yes' ? 1 : 0);
-    my $default_routen  = (defined $c{"pref_routen"}  ? $c{"pref_routen"}  : "");
-    my $default_green   = (defined $c{"pref_green"}   ? $c{"pref_green"}   : "");
-    # Backward compatibility:
-    if ($default_green eq 'yes') {
-	$default_green = 2;
-    }
+    get_settings_defaults();
 
     my $cat_checked = sub { my $val = shift;
 			    'value="' . $val . '" ' .
@@ -2298,6 +2326,10 @@ sub settings_html {
     my $green_checked = sub { my $val = shift;
 			      'value="' . $val . '" ' .
 			      ($default_green eq $val ? "selected" : "")
+			};
+    my $winter_checked = sub { my $val = shift;
+			      'value="' . $val . '" ' .
+			      ($default_winter eq $val ? "selected" : "")
 			};
 
     print <<EOF;
@@ -2336,15 +2368,21 @@ EOF
 <option @{[ $green_checked->("") ]}>egal
 <option @{[ $green_checked->("GR1") ]}>bevorzugen
 <option @{[ $green_checked->("GR2") ]}>stark bevorzugen <!-- expr? -->
-</select></td>
+</select></td></tr>
 EOF
-    if ($bi->{'can_javascript'}) {
-	print <<EOF
-<td><input type=button value="Reset" onclick="return reset_form($default_speed, @{[defined $strcat{$default_cat} ? $strcat{$default_cat} : 0]}, @{[defined $strqual{$default_quality} ? $strqual{$default_quality}: 0]}, @{[defined $strrouten{$default_routen} ? $strrouten{$default_routen} : 0]}, @{[ $default_ampel?"true":"false" ]}, @{[defined $strgreen{$default_green} ? $strgreen{$default_green} : 0]});"></td>
+    if ($use_winter_optimization) {
+	print <<EOF;
+<tr>
+ <td>Winteroptimierung</td><td><select $bi->{hfill} name="pref_winter">
+<option @{[ $winter_checked->("") ]}>nein
+<option @{[ $winter_checked->("WI1") ]}>schwach
+<option @{[ $winter_checked->("WI2") ]}>stark
+</select></td>
+ <td style="vertical-align:bottom"><small><a href="#" onclick="show_info('winter_optimization'); return false;">Was ist das?</a></small></td>
+</tr>
 EOF
     }
-print <<EOF;
-</tr>
+    print <<EOF;
 </table>
 EOF
 }
@@ -2457,6 +2495,8 @@ sub search_coord {
 	}
     }
 
+    my @penalty_subs;
+
     # Haupt/Freizeitrouten-Optimierung
     if (defined $q->param('pref_routen') && $q->param('pref_routen') ne '') { # 'RR'
 	if (!$routen_net) {
@@ -2464,10 +2504,64 @@ sub search_coord {
 		new StrassenNetz(Strassen->new("radrouten"));
 	    $routen_net->make_net;
 	}
-	$extra_args{UserDefPenaltySub} = sub {
+	push @penalty_subs, sub {
 	    my($p, $next_node, $last_node) = @_;
 	    if (!$routen_net->{Net}{$last_node}{$next_node}) {
 		$p *= 2; # XXX differenzieren?
+	    }
+	    $p;
+	};
+    }
+
+    # Winteroptimierung
+    if (defined $q->param('pref_winter') && $q->param('pref_winter') ne '') {
+	require Storable;
+	my $penalty;
+	for my $try (1 .. 2) {
+	    for my $dir ("$FindBin::RealBin/../tmp", @Strassen::datadirs) {
+		my $f = "$dir/winter_optimization.st";
+		if (-r $f) {
+		    $penalty = Storable::retrieve($f);
+		    last;
+		}
+	    }
+	    if (!$penalty) {
+		if ($try == 2) {
+		    die "Can't find winter_optimization.st in @Strassen::datadirs and cannot build...";
+		} else {
+		    system("$FindBin::RealBin/../miscsrc/winter_optimization.pl");
+		}
+	    } else {
+		last;
+	    }
+	}
+
+	my $koeff = 1;
+	if ($q->param('pref_winter') eq 'WI1') {
+	    $koeff = 0.5;
+	}
+
+	push @penalty_subs, sub {
+	    my($pen, $next_node, $last_node) = @_;
+	    if (exists $penalty->{$last_node.",".$next_node}) {
+		my $this_penalty = $penalty->{$last_node.",".$next_node};
+		$this_penalty = $koeff * $this_penalty + (100-$koeff*100)
+		    if $koeff != 1;
+		if ($this_penalty < 1) { $this_penalty = 1 } # avoid div by zero or negative values
+		$pen *= (100 / $this_penalty);
+	    }
+	    $pen;
+	};
+    }
+
+    # UserDefPenaltySubs
+    if (@penalty_subs) {
+	# Note: the @penalty_subs should only multiply $p, not add to
+	# if there are more than one penalty sub!
+	$extra_args{UserDefPenaltySub} = sub {
+	    my($p, $next_node, $last_node) = @_;
+	    for my $sub (@penalty_subs) {
+		$p = $sub->($p, $next_node, $last_node);
 	    }
 	    $p;
 	};
@@ -3516,6 +3610,7 @@ EOF
 	print "<b>Einstellungen</b>:<p>\n";
 	settings_html();
 	print "<input type=submit value=\"Route mit ge&auml;nderten Einstellungen\">\n";
+	reset_html();
 	print "</form>\n";
 
 	print "<hr><form action=\"$bbbike_script\">\n";
@@ -5293,7 +5388,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/12/06 20:40:02 $';
+    my $cgi_date = '$Date: 2004/12/27 23:21:46 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

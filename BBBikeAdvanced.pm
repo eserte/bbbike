@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.109 2004/11/15 23:25:47 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.110 2004/12/27 23:24:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1479,6 +1479,8 @@ sub penalty_menu {
     my $pen_m = $bpcm->Menu(-title => M"Penalty");
     $bpcm->entryconfigure('last', -menu => $pen_m);
 
+    ######################################################################
+
     my $penalty_nolighting = 0;
     my $penalty_nolighting_koeff = 2;
     $pen_m->checkbutton
@@ -1515,6 +1517,8 @@ sub penalty_menu {
 	}
     }
     $pen_m->separator;
+
+    ######################################################################
 
     my $penalty_tram = 0;
     my $penalty_tram_koeff = 2;
@@ -1553,6 +1557,8 @@ sub penalty_menu {
     }
     $pen_m->separator;
 
+    ######################################################################
+
     my $penalty_on_current_route = 0;
     my $penalty_on_current_route_koeff = 2;
     $pen_m->checkbutton
@@ -1587,6 +1593,8 @@ sub penalty_menu {
 	}
     }
     $pen_m->separator;
+
+    ######################################################################
 
     use vars qw($bbd_penalty);
     $bbd_penalty = 0;
@@ -1653,6 +1661,68 @@ sub penalty_menu {
 	 }
 	);
     $pen_m->separator;
+
+    ######################################################################
+
+    use vars qw($st_net_penalty);
+    $st_net_penalty = 0;
+    $pen_m->checkbutton
+      (-label => M"Penalty für Net/Storable-Datei",
+       -variable => \$st_net_penalty,
+       -command => sub {
+	   if ($st_net_penalty) {
+	       require BBBikeEdit;
+	       BBBikeEdit::build_st_net_penalty_for_search();
+	   } else {
+	       delete $penalty_subs{'stnetpenalty'};
+	   }
+       });
+    $pen_m->command
+      (-label => M"Net/Storable-Datei auswählen",
+       -command => sub {
+	   require BBBikeEdit;
+	   BBBikeEdit::choose_st_net_file_for_penalty();
+       });
+    $BBBikeEdit::st_net_koeff = 1
+ 	if !defined $BBBikeEdit::st_net_koeff;
+     $pen_m->command
+ 	(-label => M("Penalty-Koeffizient")." ...",
+	 -command => sub
+	 {
+	     my $t = redisplay_top($top, "bbd-koeff", -title => M"Penalty-Koeffizient für Net/Storable-Datei");
+	     return if !defined $t;
+	     Tk::grid($t->Label(-text => M"Koeffizient"),
+		      $t->Entry(-textvariable => \$BBBikeEdit::st_net_koeff)
+		     );
+	     {
+		 my $f = $t->Frame;
+		 Tk::grid($f, -columnspan => 2, -sticky => "we");
+
+		 Tk::grid($f->Label(-text => M"Schwächen"),
+			  $f->LogScale(-from => 0.25, -to => 4,
+				       -resolution => 0.1,
+				       -showvalue => 0,
+				       -orient => 'horiz',
+				       -variable => \$BBBikeEdit::st_net_koeff,
+				       -command => sub {
+					   $BBBikeEdit::st_net_koeff =
+					       sprintf "%.2f", $BBBikeEdit::st_net_koeff,;
+				       }
+				      ),
+			  $f->Label(-text => M"Verstärken"),
+			  -sticky => "we",
+			 );
+	     }
+	     Tk::grid($t->Button(Name => "close",
+				 -command => sub { $t->withdraw }),
+		      -columnspan => 2, -sticky => "we"
+		     );
+	     $t->protocol("WM_DELETE_WINDOW" => sub { $t->withdraw });
+	 }
+	);
+    $pen_m->separator;
+
+    ######################################################################
 
     my $gps_search_penalty = 0;
     $pen_m->checkbutton
