@@ -89,7 +89,7 @@ use autouse 'BBBikeHeavy'
     => qw(start_followmouse stop_followmouse
 	  string_eval_die load_plugin layer_editor
 	  getmap get_file_or_url get_user_agent delete_map
-	  pdf_export perlmod_install_advice
+	  pdf_export svg_export perlmod_install_advice
 	  show_register save_register_routes load_register_routes
 	  show_calories check_available_memory
 	  reload_all);
@@ -681,12 +681,16 @@ eval { local $SIG{'__DIE__'};
    M"Anzeige",
    ['fontrot','!',1,
     label => M"Rotierte Zeichensätze", var => \$use_font_rot],
-   ['fontfamily','=s','helvetica',
+   ['fontfamily','=s',undef, #'helvetica',#XXX no defaults!
     label => M"Zeichensatz (Proportional)", var =>        \$font_family],
    ['fixedfontfamily','=s','courier',
     label => M"Zeichensatz (Fixed)", var =>   \$fixed_font_family],
-   ['fontheight','=i',12,
+   ['fontheight','=i',undef, #12,#XXX no defaults!
+    alias => [qw(fontsize)],
     label => M"Zeichensatzgröße", var => \$font_size],
+   ['labelfontheight','=i',10,
+    alias => [qw(labelfontsize)],
+    label => M"Zeichensatzgröße für Labels", var => \$label_font_size],
    ['fontweight','=s',undef,
     label => M"Zeichensatzform", var => \$font_weight],
    ['geometry','=s',undef,
@@ -704,7 +708,7 @@ eval { local $SIG{'__DIE__'};
 		     $_ *= ($scale/$oldscale);
 		 }
 	     }],
-   ['overviewwasser','!',0,
+   ['overviewwasser','!',1,
     label => M"Übersichtskarte mit Gewässern", var => \$overview_draw{'w'}],
    ['overviewsbahn','!',0,
     label => M"Übersichtskarte mit S-Bahnen", var => \$overview_draw{'b'}],
@@ -1008,6 +1012,11 @@ die "Please report to author: use opttable_to_getopt!!!! XXX";
     $opt->process_options;
 }
 Tk::CmdLine::SetArguments(); # XXX here correct position?
+if (@ARGV) {
+    require Getopt::Long;
+    Getopt::Long::config('nopass_through');
+    Getopt::Long::GetOptions() or die;
+}
 
 # Check for -public option --- in this case do not load the config file.
 sub pre_check_arguments {
@@ -1278,7 +1287,8 @@ if ($run_under_kde) {
 	require KDEUtil;
 	if ($kde = new KDEUtil -top => $top, -checkrunning => 1) {
 	    my $kde_focus_policy =
-	      KDEUtil::WM::get_config($kde, 'General', 'FocusPolicy');
+		KDEUtil::WM::get_config($kde, 'General', 'FocusPolicy');
+	    local $^W = 0;
 	    $focus_policy = ($kde_focus_policy eq 'ClickToFocus'
 			     ? 'click'
 			     : 'follow');
@@ -1433,7 +1443,7 @@ for(my $i=0; $i <= $#power; $i++) {
 mk_power_txt();
 
 # Zeichensätze für Straßennamen
-if ($font_family =~ /nimbus/) {
+if (defined $font_family && $font_family =~ /nimbus/) {
     # XXX nimbus is a rather obscure font found in
     # /usr/ports/x11-fonts/freefonts --- maybe use another?
     #
@@ -1449,7 +1459,7 @@ if (!$rot_font_sub) {
     $rot_font_sub  = sub { "-*-$font_family-medium-r-normal--0-" . $_[0]
 			     . "-0-0-p-0-iso8859-1"};
 }
-if ($font_family =~ /nimbus/) {
+if (defined $font_family && $font_family =~ /nimbus/) {
     $rot_bold_font_sub  = sub { "-*-nimbus sans l-bold-r-condensed--0-" . $_[0]
 				  . "-0-0-p-0-iso8859-1"};
     if (!check_font($rot_bold_font_sub->(120))) {
@@ -3520,7 +3530,10 @@ sub do_iconframe {
 		     'PDF',
 		     'XFig',
 		     'bbd (BBBike data)',
-		     ($advanced ? 'ESRI' : ()),
+		     ($advanced
+		      ? ('ESRI',
+			 'SVG'
+			) : ()),
 		     #'-',
 		     ['G7toWin (ASCII)', 'G7toWin_ASCII'],
 		     ['GPSMAN (Tracklog)', 'GpsmanData'],
@@ -3535,6 +3548,11 @@ sub do_iconframe {
 	    $svm->command
 		(-label => $fmt,
 		 -command => \&pdf_export,
+		);
+	} elsif ($fmt eq 'SVG') {
+	    $svm->command
+		(-label => $fmt,
+		 -command => \&svg_export,
 		);
 	} elsif ($fmt eq 'XFig') {
 	    $svm->command
@@ -3678,22 +3696,24 @@ sub do_iconframe {
 				     });
 	$opbm->separator;
     }
-    $opbm->radiobutton(-label => M"Landscape",
-		       -variable => \$orientation,
-		       -value => 'landscape',
-		       -command => sub {
-			   my $replotsub = get_plotted();
-			   set_landscape();
-			   $replotsub->();
-		       });
-    $opbm->radiobutton(-label => M"Portrait",
-		       -variable => \$orientation,
-		       -value => 'portrait',
-		       -command => sub {
-			   my $replotsub = get_plotted();
-			   set_portrait();
-			   $replotsub->();
-		       });
+    if ($advanced) {
+        $opbm->radiobutton(-label => M"Landscape",
+			   -variable => \$orientation,
+			   -value => 'landscape',
+			   -command => sub {
+			       my $replotsub = get_plotted();
+			       set_landscape();
+			       $replotsub->();
+			   });
+        $opbm->radiobutton(-label => M"Portrait",
+			   -variable => \$orientation,
+			   -value => 'portrait',
+			   -command => sub {
+			       my $replotsub = get_plotted();
+			       set_portrait();
+			       $replotsub->();
+			   });
+    }
     $opbm->cascade(-label => M('Scope').' ...');
     {
 	my $sbm = $opbm->Menu(-title => M('Scope').' ...');
@@ -3882,31 +3902,21 @@ sub do_iconframe {
 		   },
 		  );
 
-    {
-	package Tk::LazyMenu;
-	@Tk::LazyMenu::ISA = qw(Tk::Menu);
-	Construct Tk::Widget 'LazyMenu';
-	sub postcascade {
-	    my $w = shift;
-	    if (!$w->{'job_done'}
-		&& $w->index("active") eq $w->index(main::M("Letzte geöffnete Layer")."...")) {
-		my $m = $w->entrycget("active", -menu);
-		{ package main; require BBBikeAdvanced; }
-		$main::last_loaded_layers_obj =
-		    {
-		     List => [],
-		     File => "$main::bbbike_configdir/last_layers",
-		     Menu => $m,
-		     Title => main::M("Letzte Layer").":",
-		     Cb => sub { main::plot_additional_layer_s($_[0]) },
-		     Max => 8,
-		    };
-		main::load_last_loaded($main::last_loaded_layers_obj);
-		$w->{'job_done'} = 1;
-	    }
-	    $w->SUPER::postcascade(@_);
-	}
-    }
+    # XXX not used anymore!
+#     {
+# 	package Tk::LazyMenu;
+# 	@Tk::LazyMenu::ISA = qw(Tk::Menu);
+# 	Construct Tk::Widget 'LazyMenu';
+# 	sub postcascade {
+# 	    my $w = shift;
+# 	    if (!$w->{'job_done'}
+# 		&& $w->index("active") eq $w->index(main::M("Letzte geöffnete Layer")."...")) {
+# 		main::load_last_loaded($main::last_loaded_layers_obj);
+# 		$w->{'job_done'} = 1;
+# 	    }
+# 	    $w->SUPER::postcascade(@_);
+# 	}
+#     }
 
     # XXX it would be nice to use autouse in the following callbacks,
     # but it does not work because of artificial restrictions in
@@ -3914,7 +3924,10 @@ sub do_iconframe {
     # XXX This menu is duplicated in setting and map layers. It should not.
     $opbm->cascade(-label => M"Zusätzlich zeichnen ...");
     {
-	my $cusm = $opbm->LazyMenu(-title => M"Zusätzlich zeichnen ...");
+	# XXX this used to be LazyMenu to postpone loading of layers
+	# XXX maybe re-enable this one day if I find a possibility to
+	# update the cascade menu without showing the menu first.
+	my $cusm = $opbm->Menu(-title => M"Zusätzlich zeichnen ...");
 	$BBBike::Menubar::additional_layer_menu = $cusm;
 	$BBBike::Menubar::additional_layer_menu = $BBBike::Menubar::additional_layer_menu; # peacify -w
 	$cusm->{BBBike_Menulabel} = M"Zusätzliche Kartenebenen";
@@ -3940,8 +3953,26 @@ sub do_iconframe {
 		       -command => sub {
 			   require BBBikeAdvanced;
 			   choose_from_additional_layer() });
-	$cusm->cascade(-label => M("Letzte geöffnete Layer")."...",
-		       -menu => $cusm->Menu);
+	$cusm->cascade(-label => M("Letzte geöffnete Layer")."...");
+	{
+	    my $m = $cusm->Menu(-title => M("Letzte geöffnete Layer")."...");
+	    $cusm->entryconfigure("last", -menu => $m);
+	    $main::last_loaded_layers_obj =
+		{
+		 List => [],
+		 File => "$main::bbbike_configdir/last_layers",
+		 Menu => $m,
+		 Title => M("Letzte Layer").":",
+		 Cb => sub {
+		     my($file, %args) = @_;
+		     my $linetype = delete $args{-linetype};
+		     require BBBikeAdvanced;
+		     plot_additional_layer($linetype, $file, %args);
+		 },
+		 Max => 8,
+		};
+	    load_last_loaded($last_loaded_layers_obj);
+	}
 	if ($Tk::platform ne 'MSWin32') {
 	    $cusm->command(-label => M"Umordnen",
 			   -accelerator => 'Shift-X',
@@ -4119,20 +4150,20 @@ sub do_iconframe {
 ## DEBUG_BEGIN
 #mymstat("iconframe: bindings");
 ## DEBUG_END
-    $top->bind("<s>" => sub { $strasse_check->invoke });
-    $top->bind("<l>" => sub { $landstrasse_check->invoke });
-    $top->bind("<o>" => sub { $ort_check->invoke });
-    $top->bind("<u>" => sub { $ubahn_check->invoke });
-    $top->bind("<b>" => sub { $sbahn_check->invoke });
-    $top->bind("<r>" => sub { $rbahn_check->invoke });
-    $top->bind("<w>" => sub { $wasser_check->invoke });
-    $top->bind("<f>" => sub { $flaechen_check->invoke });
-    $top->bind("<p>" => sub { $hs_check->invoke }) if $hs_check;
+    bind_nomod($top, "<s>" => sub { $strasse_check->invoke });
+    bind_nomod($top, "<l>" => sub { $landstrasse_check->invoke });
+    bind_nomod($top, "<o>" => sub { $ort_check->invoke });
+    bind_nomod($top, "<u>" => sub { $ubahn_check->invoke });
+    bind_nomod($top, "<b>" => sub { $sbahn_check->invoke });
+    bind_nomod($top, "<r>" => sub { $rbahn_check->invoke });
+    bind_nomod($top, "<w>" => sub { $wasser_check->invoke });
+    bind_nomod($top, "<f>" => sub { $flaechen_check->invoke });
+    bind_nomod($top, "<p>" => sub { $hs_check->invoke }) if $hs_check;
 
-    $top->bind("<R>" => sub { $strcm->invoke($radwege_check_index) });
-    $top->bind("<a>" => sub { $strcm->invoke($ampeln_check_index) });
-    $top->bind("<g>" => sub { $strcm->invoke($sperre_check_index) });
-    $top->bind("<Q>" => sub {
+    bind_nomod($top, "<R>" => sub { $strcm->invoke($radwege_check_index) });
+    bind_nomod($top, "<a>" => sub { $strcm->invoke($ampeln_check_index) });
+    bind_nomod($top, "<g>" => sub { $strcm->invoke($sperre_check_index) });
+    bind_nomod($top, "<Q>" => sub {
 		   # XXX hmmm... nicht gerade ideal. Beispiel: Landstraßen
 		   # sind aktiv, Q, Straßen werden aktiv gemacht, Q
 		   # togglet jetzt genau entgegengesetzt...
@@ -4143,7 +4174,7 @@ sub do_iconframe {
 		       $strcm->invoke($qualitaet_check_index);
 		   }
 	       });
-    $top->bind("<H>" => sub {
+    bind_nomod($top, "<H>" => sub {
 		   # XXX hmmm... nicht gerade ideal. Beispiel: Landstraßen
 		   # sind aktiv, H, Straßen werden aktiv gemacht, H
 		   # togglet jetzt genau entgegengesetzt...
@@ -4154,14 +4185,14 @@ sub do_iconframe {
 		       $strcm->invoke($handicap_check_index);
 		   }
 	       });
-    $top->bind("<question>" => sub {
+    bind_nomod($top, "<question>" => sub {
 	$strcm->invoke($fragezeichen_check_index) })
 	if defined $fragezeichen_check_index;
 
-    $top->bind("<L>" => sub { $lstrcm->invoke($land_jwd_check_index) });
-    $top->bind("<O>" => sub { $ocm->invoke($ort_jwd_check_index) });
-    $top->bind("<W>" => sub { $wcm->invoke($wasserumland_check_index) });
-    $top->bind("<B>" => sub { $strlist_button->invoke });
+    bind_nomod($top, "<L>" => sub { $lstrcm->invoke($land_jwd_check_index) });
+    bind_nomod($top, "<O>" => sub { $ocm->invoke($ort_jwd_check_index) });
+    bind_nomod($top, "<W>" => sub { $wcm->invoke($wasserumland_check_index) });
+    bind_nomod($top, "<B>" => sub { $strlist_button->invoke });
 
     # XXX restliche Widgets fehlen noch
     for my $w ($strasse_check, $landstrasse_check, $ort_check,
@@ -4389,21 +4420,17 @@ $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
     $status_frame->gridColumnconfigure(2, -weight => 0);
     $status_frame->gridColumnconfigure(3, -weight => 0);
     my $gridx = 0;
-    if (!$stderr) {
-	require Tk::SRTProgress;
-	Tk::SRTProgress->VERSION(0.06);
-	$progress = $status_frame->SRTProgress
-	  (-relief => 'sunken',
-	   -borderwidth => 2,
-	   -visible => 0,
-	   -width => $top->width/10,
-	  )->grid(-row => 0,
-		  -column => $gridx++,
-		  -sticky => 'ew');
-    } else {
-	require Tk::TextProgress;
-	$progress = new Tk::TextProgress;
-    }
+
+    require Tk::SRTProgress;
+    Tk::SRTProgress->VERSION(0.06);
+    $progress = $status_frame->SRTProgress
+	(-relief => 'sunken',
+	 -borderwidth => 2,
+	 -visible => 0,
+	 -width => $top->width/10,
+	)->grid(-row => 0,
+		-column => $gridx++,
+		-sticky => 'ew');
     $status_label = $status_frame->Label(-justify => 'left', -anchor => 'w')
       ->grid(-row => 0, -column => $gridx++, -sticky => 'ew');
 
@@ -4576,7 +4603,7 @@ if (defined $initial_plugins && $initial_plugins ne "") {
 if (defined $initial_layers && $initial_layers ne "") {
     require BBBikeAdvanced;
     foreach my $layer_def (split /,/, $initial_layers) {
-	plot_additional_layer_s($layer_def);
+	plot_additional_layer_cmdline($layer_def);
     }
 }
 
@@ -4595,6 +4622,24 @@ if ($ENV{BBBIKE_GUI_TEST}) {
 MainLoop unless $ENV{BBBIKE_TEST_PERFORMANCE};
 
 ##### Subs ### RELOADER_START ############################################
+
+# For binding plain keybindings without modifiers
+sub bind_nomod {
+    my($top, $ev, $cb) = @_;
+    $top->bind
+	($ev, sub {
+	     my $w = shift;
+	     my $e = $w->XEvent;
+	     # auf Alt, Control und CapsLock checken
+	     # bei Win32s und Win95/NT ist 8 nicht CapsLock, sondern NumLock
+	     if ($Tk::VERSION < 800) {
+		 return if $e->s & (1+($os eq 'win' ? 0 : 8)); # XXX control is missing ... 4? 2 ist Shift?
+	     } else {
+		 return if $e->s =~ /\b(Alt|Lock|Control)-/;
+	     }
+	     $cb->($w, @_);
+	 });
+}
 
 # km <=> m
 sub change_unit {
@@ -4985,15 +5030,16 @@ sub define_item_attribs {
 	 'gr' => 'green',
 	 'comm' => 'comments', # this is splitted into multiple files
 	 'mount' => 'mount',
-	 'fz' => "$FindBin::RealBin/misc/fragezeichen", # only for development
+	 'fz' => "fragezeichen",
 	);
     foreach my $type (@comments_types) {
 	$str_file{"comm-$type"} = "comments-$type";
     }
-    # XXX fragezeichen should really be in "data"
-    if (defined $datadir && $datadir =~ /data_corrected/) {
-	$str_file{'fz'} = "fragezeichen";
-    }
+#XXX del:
+#     # XXX fragezeichen should really be in "data"
+#     if (defined $datadir && $datadir =~ /data_corrected/) {
+# 	$str_file{'fz'} = "fragezeichen";
+#     }
     %p_file =
 	('lsa'    => 'ampeln',
 	 'u'      => 'ubahnhof',
@@ -6033,13 +6079,13 @@ sub set_bindings {
     $top->bind("<Escape>" => sub { $escape = 1 });
     $top->bind('Busy', '<Escape>' => sub { $escape = 1; });
     $top->bind('Busy', '<KeyRelease-Escape>' => sub { });
-    $top->bind('<asterisk>' => \&show_register);
+    bind_nomod($top, '<asterisk>' => \&show_register);
     for my $i (0 .. 9) {
 	my $ii = $i;
 	$top->bind("<Key-$ii>" => sub { get_route_from_register($ii) });
     }
 
-    $top->bind("<P>" => sub {
+    bind_nomod($top, "<P>" => sub {
 		   require BBBikeAdvanced;
 		   start_ptksh();
 	       });
@@ -6047,24 +6093,26 @@ sub set_bindings {
 		   require BBBikeAdvanced;
 		   reload_new_modules();
 	       });
-    $top->bind("<S>" => sub {
-		   if ($BBBikeExp::mode) {
-		       bbbikeexp_clear();
-		   } else {
-		       bbbikeexp_init();
-		   }
+    bind_nomod($top, "<S>" => sub {
+#XXX del?
+# 		   if ($BBBikeExp::mode) {
+# 		       bbbikeexp_clear();
+# 		   } else {
+# 		       bbbikeexp_init();
+# 		   }
+		   set_map_mode(MM_SEARCH);
 	       });
-    $top->bind("<U>" => sub {
+    bind_nomod($top, "<U>" => sub {
 		   $map_mode = MM_USEREDIT;
 		   set_cursor('delnet');
 	       });
     if ($Tk::platform ne 'MSWin32') {
-	$top->bind("<X>" => \&layer_editor);
+	bind_nomod($top, "<X>" => \&layer_editor);
     }
-    $top->bind("<i>" => sub { show_info() });
+    bind_nomod($top, "<i>" => sub { show_info() });
 
     if (!$no_map) {
-	$top->bind('<Key-M>' => sub { $map_draw = 1; getmap() });
+	bind_nomod($top, '<Key-M>' => sub { $map_draw = 1; getmap() });
     }
 
     $top->bind("<BackSpace>" => \&mouse_dellast);
@@ -7818,8 +7866,14 @@ sub save_route_as_esri {
     my $tmpfile1 = "$tmpdir/bbbike-$$.bbr";
     my $tmpfile2 = "$tmpdir/bbbike-$$.bbd";
     load_save_route(1, $tmpfile1);
-    system("$FindBin::RealBin/miscsrc/bbr2bbd", $tmpfile1, $tmpfile2);
-    system("$FindBin::RealBin/miscsrc/bbd2esri", $tmpfile2, "-o", $file);
+    eval {
+	# XXX Better diagnostics. bbr2bbd and bbd2esri should be
+	# callable as modules.
+	system("$FindBin::RealBin/miscsrc/bbr2bbd", $tmpfile1, $tmpfile2);
+	status_message(Mfmt("Das Ausführen von %s ist mit dem Code %s fehlgeschlagen", "bbr2bbd", $?), "die") if $? != 0;
+	system("$FindBin::RealBin/miscsrc/bbd2esri", $tmpfile2, "-o", $file);
+	status_message(Mfmt("Das Ausführen von %s ist mit dem Code %s fehlgeschlagen", "bbd2esri", $?), "die") if $? != 0;
+    }; warn $@ if $@;
     unlink $tmpfile2;
     unlink $tmpfile1;
 }
@@ -8183,13 +8237,12 @@ sub plotstr {
 	}
     }
 
-    my $coordsys = $coord_system_obj->coordsys;
+    # current category size
+    my %category_size = map {
+	($_, $category_size{$_}* $label_font_size/10)
+    } keys %category_size;
 
-#XXX del:
-#      foreach ($str->file) {
-#  	$old_mtime{$_} = (stat($_))[STAT_MODTIME];
-#  	$mtime_file_type{$_} = ['str', $abk];
-#      }
+    my $coordsys = $coord_system_obj->coordsys;
 
     my $use_stippleline = 0; # XXX Duplikat in BBBikeExp
     if (exists $line_dash{$abk}) {
@@ -15913,20 +15966,23 @@ sub cache_decider {
 
 ### AutoLoad Sub
 sub add_last_loaded {
-    my($file, $last_loaded_obj) = @_;
+    my($file, $last_loaded_obj, $add_def) = @_;
+    $add_def = "" if !defined $add_def;
     eval {
 	require File::Spec;
 	$file = File::Spec->canonpath($file);
+	$file = File::Spec->rel2abs($file);
     };
     my $max = $last_loaded_obj->{Max} || 4; # maximale Anzahl in @last_loaded
     my $i;
     for($i = 0; $i <= $#{ $last_loaded_obj->{List} }; $i++) {
-	if ($last_loaded_obj->{List}->[$i] eq $file) {
+	my($file_part) = $last_loaded_obj->{List}->[$i] =~ /^([^\t]*)/;
+	if ($file_part eq $file) {
 	    splice @{ $last_loaded_obj->{List} }, $i, 1;
 	    $i--;
 	}
     }
-    unshift @{ $last_loaded_obj->{List} }, $file;
+    unshift @{ $last_loaded_obj->{List} }, $file . $add_def;
     splice @{ $last_loaded_obj->{List} }, $max
 	if @{ $last_loaded_obj->{List} } > $max;
     update_last_loaded_menu($last_loaded_obj);
@@ -15974,10 +16030,10 @@ sub update_last_loaded_menu {
 	$last_loaded_menu->command(-label => $last_loaded_obj->{Title},
 				   -state => 'disabled',
 				   -font => $font{'bold'});
-	my $file;
-	foreach $file (@{ $last_loaded_obj->{List} }) {
+	foreach my $_file (@{ $last_loaded_obj->{List} }) {
+	    my($file, @args) = split /\t/, $_file;
 	    $last_loaded_menu->command(-label => $file,
-				       -command => [$last_loaded_obj->{Cb}, $file],
+				       -command => [$last_loaded_obj->{Cb}, $file, @args],
 				      );
 	}
     }
