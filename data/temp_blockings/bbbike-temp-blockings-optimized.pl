@@ -153,14 +153,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1109199600,
-         'text' => 'L 62; (Elsterwerda-Hohenleipisch); Bahnübergang bei Dreska Gleisbauarbeiten Vollsperrung 21.02.2005-23.02.2005 ',
-         'from' => 1108854000,
-         'data' => 'userdel	2 22508,-102744 22382,-102254
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1114898400,
          'text' => 'Im Zeitraum vom 14.02.2005 bis 30.04.2005 besteht für die L 73 zwischen Langerwisch und Wildenbruch Vollsperrung auf Grund von Bauarbeiten. ',

@@ -269,7 +269,7 @@ Goethestr.: teilweise Kopfsteinpflaster, teilweise Verbundsteine	Q2 4312,11341 4
 Knesebeckstr.: Kopfsteinpflaster	Q2 4868,10934 4847,10677 4847,10589 4828,10356
 Mommsenstr.: Kopfsteinpflaster	Q2 4685,10689 4847,10677
 Linienstr.: m‰ﬂiger Asphalt	Q1 10432,13678 10597,13647 10718,13625
-Linienstr.: m‰ﬂiger Asphalt	Q1 9903,13646 9607,13507 9281,13374
+Linienstr.: m‰ﬂiger Asphalt	Q1 9903,13646 9752,13575 9607,13507 9281,13374
 Mulackstr.: m‰ﬂiger Asphalt	Q1 10640,13471 10535,13509 10385,13548 10304,13575
 R¸ckerstr.: m‰ﬂiger Asphalt	Q1 10597,13647 10535,13509
 Knaackstr.: m‰ﬂiger Asphalt	Q1 11237,14414 11358,14331 11418,14290 11506,14230
@@ -453,7 +453,7 @@ Reichstagufer: m‰ﬂiger Asphalt	Q1 9283,12856 9209,12795 9091,12681
 Kopfstr.: Kopfsteinpflaster	Q2 12480,7887 12582,7909
 Morusstr.: Kopfsteinpflaster	Q2 12480,7887 12516,7718
 Leinestr.: Kopfsteinpflaster	Q2 12122,7553 11923,7516 11797,7492 11656,7460 11553,7437
-Auguststr.: Kopfsteinpflaster	Q2 10307,13600 10256,13592 10142,13556 10026,13521
+Auguststr.: Kopfsteinpflaster	Q2 10307,13600 10256,13592 10142,13556 10049,13528 10026,13521
 Kleine Rosenthaler Str.: m‰ﬂiger, teilweise auch schlechter Asphalt	Q2 10308,13679 10307,13600 10304,13575 10277,13542
 Magazinstr.: Kopfsteinpflaster, OK	Q1 11558,12588 11323,12484
 Saarbr¸cker Str.: Kopfsteinpflaster	Q2 10969,13914 10924,13940
@@ -1356,7 +1356,12 @@ Neuchateller Str.: schlechter Sandweg	Q3 3898,4477 3998,4539
 Neuchateller Str.: Kopfsteinpflaster	Q2 3998,4539 4517,4853
 Schieferweg: Betonstr.	Q0 10817,2370 10585,1879
 #: by: ^^^
-#: by: Paul Vomend:
+#: by: Paul Vomend: vvv
 Nordlichtstr.: guter Asphalt	Q0 4335,17642 4953,17412 4918,17308 4904,17262 4893,17217
+Meteorstr.: gutes Verbundsteinpflaster	Q1 4279,17537 4918,17308
+Uranusweg	Q0 4386,17760 4335,17642 4279,17537
+Straﬂe 442	Q0 4904,17262 5009,17235
+Straﬂe 462	Q0 5068,17384 4953,17412
+#: by: ^^^
 #: by: stefan g:
 Duisburger Str.: Asphalt	Q0 3874,10153 4183,10144
