@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.10 2003/11/30 14:16:42 eserte Exp $
+# $Id: wapcgi.t,v 1.11 2003/12/02 09:59:17 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -116,15 +116,19 @@ sub validate_wml {
 	return 1;
     }
     my $xml_catalog = "/home/e/eserte/src/bbbike/misc/xml-catalog";
+    my @xmllint_args;
     if (!-e $xml_catalog) {
-	warn "Cannot find $xml_catalog, skipping test...\n";
-	return 1;
+##XXX validate over the 'net
+#	warn "Cannot find $xml_catalog, skipping test...\n";
+#	return 1;
+    } else {
+	push @xmllint_args, "--catalogs", "file://$xml_catalog";
     }
     $ENV{SGML_CATALOG_FILES} = "";
     my($fh,$filename) = tempfile(UNLINK => 1);
     print $fh $wml;
     close $fh; # to avoid problems (flush?) with 5.00503
-    system("xmllint --catalogs file://$xml_catalog $filename 2>&1 >/dev/null");
+    system("xmllint @xmllint_args $filename 2>&1 >/dev/null");
     $? == 0;
 }
 
