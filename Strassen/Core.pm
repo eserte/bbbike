@@ -371,7 +371,7 @@ sub dependent_files {
     if ($self->{DependentFiles}) {
 	@{ $self->{DependentFiles} };
     } else {
-	$self->file;
+	defined $self->file ? $self->file : ();
     }
 }
 
@@ -392,7 +392,12 @@ sub id {
 
 ### AutoLoad Sub
 sub as_string {
-    join "", @{ shift->{Data} };
+    my $self = shift;
+    my $s = "";
+    if ($self->{GlobalDirectives}) {
+	$s = join("\n", map { "#: $_: $self->{GlobalDirectives}{$_}" } keys %{ $self->{GlobalDirectives} }) . "\n";
+    }
+    $s . join "", @{ $self->{Data} };
 }
 
 ### AutoLoad Sub
@@ -1098,10 +1103,10 @@ sub get_conversion {
     if ($frommap) {
 	my $map = $frommap;
 	require Karte;
-	Karte::preload($map);
-	my $tomap = $args{-tomap} || "Standard";
+	Karte::preload(":all"); # Can't preload specific maps, because $map is a token, not a map module name
+	my $tomap = $args{-tomap} || "standard";
 	return if $map eq $tomap; # no conversion needed
-	if ($tomap ne "Standard") {
+	if ($tomap ne "standard") {
 	    if ($tomap ne $map) {
 		Karte::preload($tomap);
 		$convsub = sub {
