@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.83 2004/08/24 21:51:52 eserte Exp $
+# $Id: bbbike.cgi,v 6.84 2004/08/26 23:36:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -626,7 +626,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.83 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.84 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2792,16 +2792,25 @@ sub search_coord {
 			push @comment_files, "handicap_l";
 		    }
 		}
+
 		for my $s (@comment_files) {
 		    eval {
 			if ($s eq 'comments') {
-			    push @s, MultiStrassen->new(map { "comments_$_" } grep { $_ ne "kfzverkehr" } @Strassen::Dataset::comments_types);
+			    push @s, MultiStrassen->new
+				(map { "comments_$_" } grep { $_ ne "kfzverkehr" } @Strassen::Dataset::comments_types);
+			} elsif ($s =~ /^(qualitaet|handicap)/) {
+			    my $old_s = Strassen->new($s);
+			    my $new_s = $old_s->grepstreets
+				(sub { $_->[Strassen::CAT] !~ /^[qQ]0/ },
+				 -idadd => "q1234");
+			    push @s, $new_s;
 			} else {
 			    push @s, Strassen->new($s);
 			}
 		    };
 		    warn "$s: $@" if $@;
 		}
+
 		if (@s) {
 		    $comments_net = StrassenNetz->new(MultiStrassen->new(@s));
 		    $comments_net->make_net_cat(-obeydir => 1,
@@ -5158,7 +5167,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/08/24 21:51:52 $';
+    my $cgi_date = '$Date: 2004/08/26 23:36:54 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

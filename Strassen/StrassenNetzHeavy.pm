@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetzHeavy.pm,v 1.17 2004/08/12 22:43:34 eserte Exp $
+# $Id: StrassenNetzHeavy.pm,v 1.18 2004/08/26 23:37:28 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -95,6 +95,8 @@ sub statistics {
     }
 
     $msg .= "Sourcen: " . join(", ", $self->sourcefiles) . "\n";
+    $msg .= "Abhängige Dateien: " . join(", ", $self->dependent_files) . "\n";
+    $msg .= "Id: " . $self->id . "\n";
 
     $msg;
 }
@@ -278,7 +280,8 @@ sub make_net_cyclepath {
     my $cachefile;
     my $cacheable = defined $args{UseCache} ? $args{UseCache} : $Strassen::Util::cacheable;
     if ($cacheable) {
-	my @src = $self->sourcefiles;
+	#XXXmy @src = $self->sourcefiles;
+	my @src = $self->dependent_files;
 	$cachefile = $self->get_cachefile;
 	my $net = Strassen::Util::get_from_cache("net_" . $args2filename . "_$cachefile", \@src);
 	if (defined $net) {
@@ -342,6 +345,7 @@ sub save_net_mldbm {
     require Fcntl;
     require File::Basename;
 
+    # XXX use dependent_files?
     my(@src) = $self->sourcefiles;
     $dir = $Strassen::Util::cachedir unless $dir;
     my $file_net = "$dir/net_" .
@@ -392,6 +396,7 @@ sub load_net_mldbm {
     require Fcntl;
     require File::Basename;
 
+    # XXX use dependent_files?
     my(@src) = $self->sourcefiles;
     $dir = $Strassen::Util::cachedir unless $dir;
     my $file_net = "$dir/net_" .

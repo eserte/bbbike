@@ -2,11 +2,16 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-tie.t,v 1.2 2003/06/23 22:04:48 eserte Exp $
+# $Id: strassen-tie.t,v 1.3 2004/08/27 07:23:52 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
+
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/../data");
 
 use Strassen::Core;
 use Strassen::Tie;

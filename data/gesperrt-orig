@@ -232,6 +232,8 @@ Ruhwaldweg: Schranke gesperrt	2 830,13353 801,13323
 Alt-Reinickendorf	1 7003,18715 6734,18728 6567,18812 6766,18794 7003,18715
 Lauterstr.	1 5817,7223 5810,7337
 Friedrich-Wilhelm-Platz	1 5357,7381 5315,7376 5310,7325 5341,7203
+Stolbergstr.	1 8850,6421 8834,6639
+Richnowstr.	1 8946,6501 8850,6421
 #
 # Potsdam
 #
@@ -540,7 +542,7 @@ K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen; schlechte Straße; Vollsperr
 L 39; (ASFriedersdorf-Neu Zittau); keine Brücke ü. Oder-Spree-Kanal; kein Bw ü. Oder-Spree-Kanal; Vollsperrung; 00:00:00-unbekannt	2:inwork 35335,-6272 35143,-5650
 #XXX del L 40; zw. Großbeeren und Güterfelde; Bau der L 40n; Vollsperrung; 16.06.2003-28.06.2004	2:inwork 1663,-5427 2031,-5468 2471,-6025 2356,-6128 2443,-6309
 L 70 (Doberlug Kirchhain-Dahme); zw. B87 Hohenbuckow u. Hillmersdorf; Fahrbahnschäden; Vollsperrung; 22.05.97-unbekannt	2:inwork 17023,-71738 17783,-72721 17979,-73530 17960,-73915 17961,-74364 18228,-75553 18187,-76301 18061,-76878
-L 75; (B 96a Mahlow-Berlin); zwischen B 96a und Klein Ziethen; Neubau B 96; Vollsperrung; 04.08.2003-30.09.2004	2:inwork 13348,-3283 13289,-4660
+#XXX del L 75; (B 96a Mahlow-Berlin); zwischen B 96a und Klein Ziethen; Neubau B 96; Vollsperrung; 04.08.2003-30.09.2004	2:inwork 13348,-3283 13289,-4660
 L 76; (Mahlow-Teltow); zw. B101 nördl. Großbeeren und B101n; Straßenbauarb. B101n; Vollsperrung; 29.11.2003-31.08.2004	2:inwork 5394,-3053 4260,-2373
 #XXX del L 24; (Greiffenberg-Gerswalde); bei Pfingstberg, Brücke über DB; Brückenneubau; Vollsperrung; 19.01.2004-31.08.2004	2:inwork 41593,80703 41292,81052
 #: XXX ist REMOVEd?:
@@ -562,7 +564,7 @@ L 22; (Zehdenick-Gransee); OD Gransee, Krz. Berliner Damm/Strelitzer    Str.    
 #XXX del L 55; (Calau-Boblitz); zwischen Bischdorf und Groß Lübbenau; Deckenerneuerung; Vollsperrung; 29.03.2004-14.05.2004	2:inwork 50968,-63078 50909,-65254
 #XXX del L 239; (Kerkow (Angermünde)-Joachimsthal); zwischen Joachimsthal und    Glambeck    Instandsetzung Durchlässe    Vollsperrung    10.05.2004-11.06.2004	2:inwork 34297,66446 34612,66468 35512,66695
 L 592; Brücken über Pulsnitz,Binnengraben und zwei Durchlässe; Ersatzneubau; Vollsperrung; 10.05.2004-19.11.2004	2:inwork 25830,-109886 26164,-109378
-L 75; (Karl-Marx-Straße); von Dorfstraße bis Friedhofsweg; Straßenbauarbeiten; Vollsperrung; 24.05.2004-20.12.2004	2:inwork 13225,-681 13309,-1268
+#XXX del L 75; (Karl-Marx-Straße); von Dorfstraße bis Friedhofsweg; Straßenbauarbeiten; Vollsperrung; 24.05.2004-20.12.2004	2:inwork 13225,-681 13309,-1268
 L 912; (Päwesin-Gortz); zw. OA Päwesin u. Bagow, Brücke über Seeverbindung; Brückenneubau; Vollsperrung; 10.05.2004-06.11.2004	2:inwork -36427,10861 -37026,11176
 #XXX del L 71; (B 96-Drahnsdorf); bei Krossen Brücke über Vorflutkanal; Brückenneubau; Vollsperrung; 25.03.2004-31.07.2004	2:inwork 24195,-54396 24639,-53978
 #XXX del B 5; zw. OU Müncheberg und Friedrichshof; Deckenerneurung; Vollsperrung; 06.07.2004-09.07.2004	2:inwork 61195,11119 65071,7242

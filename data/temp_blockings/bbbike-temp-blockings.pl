@@ -506,7 +506,7 @@ userdel	q4 -74489,80545 -74038,78181
 EOF
      },
      { from  => undef, # 
-       until => undef, # 1092725846,
+       until => 1092725846,
        text  => 'Flottwellstr. (Tiergarten) in beiden Richtungen zwischen Lützowstraße und Am Karlsbad Verkehrsbehinderung durch Absenkung der Fahrbahn, Straße vollständig gesperrt',
        type  => 'handicap',
       data  => <<EOF,
@@ -628,6 +628,14 @@ userdel	q4 33215,-85288 33047,-85458
 userdel	q4 33559,-85384 33412,-85191
 userdel	q4 33559,-85384 33488,-85803
 userdel	q4 33089,-85779 33047,-85458
+EOF
+     },
+     { from  => 1095544800, # 2004-09-19 00:00
+       until => undef, # XXX
+       text  => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 20.09.2004-unbekannt ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 49039,44131 48583,44366
 EOF
      },
     );

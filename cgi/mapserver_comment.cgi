@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.13 2004/08/24 21:51:35 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.15 2004/08/27 00:02:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -67,7 +67,12 @@ eval {
 	}
     }
 
+    my $by = param("author") || param("email");
+
     my $subject = param("subject") || "BBBike/Mapserver comment";
+    if ($by) {
+	$subject .= " by $by";
+    }
     $subject = substr($subject, 0, 70) . "..." if length $subject > 70;
     my $msg = Mail::Send->new(Subject => $subject,
 			      To      => $to,
@@ -116,7 +121,7 @@ eval {
 	}
     } else {
 	$comment =
-	    "Von: " . (param("email")||"anonymous\@bbbike.de") . "\n" .
+	    "Von: " . (param("author") || param("email") || "anonymous\@bbbike.de") . "\n" .
 	    "An:  $to\n\n" .
 	    (defined $mapx ? "Kartenkoordinaten: " . $mapx . "/" . $mapy . "\n\n" : "") .
 	    "Kommentar:\n" .

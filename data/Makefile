@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.25 2004/08/09 23:50:12 eserte Exp $
+# $Id: Makefile,v 2.26 2004/08/26 23:52:01 eserte Exp $
 #
 
 BBBIKEDIR=		..
@@ -407,18 +407,24 @@ fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 		/tmp/other-source-fragezeichen Makefile \
 		${DATADIR}/handicap_s-orig ${DATADIR}/gesperrt-orig
 	-@$(WRITEABLE) $@
-	cat fragezeichen-orig | ${GREPSTRASSEN} -v -sectionrx "projektierte Radstreifen" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > fragezeichen
+	cat fragezeichen-orig |\
+	        ${GREPSTRASSEN} -v -sectionrx "projektierte Radstreifen" |\
+	        ${GREPSTRASSEN} -v -sectionrx "Straßen in Planung" |\
+	    ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
 	grep '?' ${DATADIR}/ampeln-orig | \
-	    ${CONVERT2HAFAS} -basefile ${DATADIR}/ampeln-orig -- - >> fragezeichen
+	    ${CONVERT2HAFAS} -basefile ${DATADIR}/ampeln-orig -- - >> $@
 	${MISCSRCDIR}/temporary_streets.pl \
 	    ${DATADIR}/handicap_s-orig ${DATADIR}/gesperrt-orig | \
 	    perl -nle '/(.*\t)(\S+)(.*)/ && !/\b(\d{4}-\d{2}-\d{2}|[0123]?\d\.[01]?\d\.\d{4})\b/ && print "Noch immer? $$1?::inwork$$3"' | \
-	    ${CONVERT2HAFAS} -basefile ${DATADIR}/handicap_s-orig -- - >> fragezeichen
-	cat /tmp/other-source-fragezeichen >> fragezeichen
+	    ${CONVERT2HAFAS} -basefile ${DATADIR}/handicap_s-orig -- - >> $@
+	cat /tmp/other-source-fragezeichen >> $@
 	-@$(READONLY) $@
 
 /tmp/projektierte_radstreifen.bbd:	fragezeichen-orig
 	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "projektierte Radstreifen" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
+
+/tmp/strassen_in_planung.bbd:	fragezeichen-orig
+	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "Straßen in Planung" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
 
 # Die mit "laut adfc-karte" u.ä. gekennzeichneten Straßen extrahieren und
 # nach other-source-fragezeichen schreiben.

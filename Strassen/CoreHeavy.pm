@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.17 2004/08/19 22:08:53 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.21 2004/08/27 07:01:44 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -705,6 +705,35 @@ sub get_anti_conversion {
 	}
     }
     $convsub;
+}
+
+# Filter by a subroutine.
+# Return a new Strassen object.
+# Arguments:
+#  -idadd => $string      add this string to the id of the created object
+#  -preservedir => $bool  preserve directives
+sub grepstreets {
+    my($s, $sub, %args) = @_;
+    my $new_s = Strassen->new;
+    $new_s->{DependentFiles} = [ $s->dependent_files ];
+    if ($args{-idadd}) {
+	my $id = $new_s->id;
+	$new_s->{Id} = $id . "_" . $args{-idadd};
+    }
+    my $preserve_dir = $args{-preservedir} || 0;
+    $s->init_for_iterator("grepstreets");
+    while(1) {
+	my $r = $s->next_for_iterator("grepstreets");
+	last if !@{$r->[Strassen::COORDS]};
+	local $_ = $r;
+	next if !&$sub;
+	if ($preserve_dir) {
+	    $new_s->push_ext($r, $s->get_directive_for_iterator("grepstreets"));
+	} else {
+	    $new_s->push($r);
+	}
+    }
+    $new_s;
 }
 
 1;

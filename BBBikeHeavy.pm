@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.17 2004/08/19 22:09:23 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.18 2004/08/26 23:54:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -1115,6 +1115,7 @@ sub BBBikeHeavy::any_bbbikedraw_export {
 	     Geometry => $geometry, # landscape or portrait
 	     Draw => [@draw],
 	     NoInit => 1,
+	     ($net ? (MakeNet => sub { $net }) : ()),
 	    );
 	if ($use_visible_map) {
 	    # use visible map for bounding box
@@ -1132,6 +1133,9 @@ sub BBBikeHeavy::any_bbbikedraw_export {
 	$draw->draw_map;
 	if (@realcoords) {
 	    $draw->draw_route;
+	}
+	if ($net && $draw->can("add_route_descr")) {
+	    $draw->add_route_descr(-net => $net)
 	}
 	$draw->flush;
     };

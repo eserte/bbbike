@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.42 2004/07/21 23:58:13 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.43 2004/08/26 23:37:49 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -29,7 +29,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.43 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz;
 use strict;
@@ -102,13 +102,17 @@ sub new_from_best {
 
 sub get_cachefile {
     my $self = shift;
-    require File::Basename;
-    my(@src) = $self->dependent_files;
-    my $cachefile = join("_", map { File::Basename::basename($_) } @src);
-    $cachefile;
+#XXX del:
+#     require File::Basename;
+#     my(@src) = $self->dependent_files;
+#     my $cachefile = join("_", map { File::Basename::basename($_) } @src);
+#     $cachefile;
+    $self->id;
 }
 
-# markiert die angegebenen Objekte als Quell-Objekte für dieses StrassenNetz
+# Markiert die angegebenen Objekte als Quell-Objekte für dieses StrassenNetz
+# Im Gegensatz dazu müssen dependent_files nicht unbedingt die direkten
+# Quellen sein.
 ### AutoLoad Sub
 sub source {
     my($self, @source) = @_;
@@ -150,6 +154,11 @@ sub sourcefiles {
 sub dependent_files {
     my $self = shift;
     $self->{Strassen}->dependent_files;
+}
+
+sub id {
+    my $self = shift;
+    $self->{Strassen}->id;
 }
 
 if (!defined &make_net) {

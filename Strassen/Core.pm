@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.45 2004/08/12 22:44:40 eserte Exp $
+# $Id: Core.pm,v 1.46 2004/08/27 07:01:29 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.46 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -194,7 +194,12 @@ sub open_file {
 
 sub read_data {
     my($self, %args) = @_;
-    my $file = $self->open_file(%args);
+    my $fh = $self->open_file(%args);
+    $self->read_from_fh($fh, %args);
+}
+
+sub read_from_fh {
+    my($self, $fh, %args) = @_;
 
     my @data;
     my @directives;
@@ -205,13 +210,13 @@ sub read_data {
     my @line_directive;
     my @block_directives;
     if ($args{PreserveLineInfo}) {
-	while (<$file>) {
+	while (<$fh>) {
 	    next if m{^(\#|\s*$)};
 	    push @data, $_;
 	    $self->{LineInfo}[$#data] = $.;
 	}
     } else {
-	while (<$file>) {
+	while (<$fh>) {
 	    if (/^\#:\s*([^\s:]+):?\s*(.*)$/) {
 		my($directive, $value_and_marker) = ($1, $2);
 		$directive = $directive_aliases{$directive}
@@ -262,7 +267,7 @@ sub read_data {
 	die "Stray line directive `@line_directive' at end of file";
     }
     warn "... done\n" if ($VERBOSE && $VERBOSE > 1);
-    close $file;
+    close $fh;
 
     $self->{Data} = \@data;
     $self->{Directives} = \@directives;
@@ -273,12 +278,14 @@ sub read_data {
 ### AutoLoad Sub
 sub has_data { $_[0]->{Data} && @{$_[0]->{Data}} }
 
+# new_from_data can't handle directives:
 ### AutoLoad Sub
 sub new_from_data {
     my($class, @data) = @_;
     $class->new_from_data_ref(\@data);
 }
 
+# new_from_data_ref can't handle directives:
 ### AutoLoad Sub
 sub new_from_data_ref {
     my($class, $data_ref) = @_;
@@ -290,8 +297,22 @@ sub new_from_data_ref {
 
 ### AutoLoad Sub
 sub new_from_data_string {
-    my($class, $string) = @_;
-    $class->new_from_data(map { "$_\n" } split /\n/, $string);
+    my($class, $string, %args) = @_;
+    if ($args{PreserveLineInfo} || $args{UseLocalDirectives}) {
+	my $self = { Pos => 0 };
+	bless $self, $class;
+	my $fh;
+	if ($] >= 5.008) {
+	    eval 'open($fh, "<", \$string)';
+	} else {
+	    require IO::String; # XXX add as prereq_pm for <5.008
+	    $fh = IO::String->new($string);
+	}
+	$self->read_from_fh($fh, %args);
+	$self;
+    } else {
+	$class->new_from_data_ref([map { "$_\n" } split /\n/, $string], %args);
+    }
 }
 
 # Erzeugt ein neues Strassen-Objekt mit Restriktionen
@@ -477,6 +498,12 @@ sub get_directive {
     $pos = $self->{Pos} if !defined $pos;
     return {} if !$self->{Directives};
     $self->{Directives}[$pos] || {};
+}
+
+sub get_directive_for_iterator {
+    my($self, $iterator) = @_;
+    my $pos = $self->{"Pos_Iterator_$iterator"};
+    $self->get_directive($pos);
 }
 
 # Returns a list of all elements in the streets database

@@ -932,6 +932,18 @@ bbbike.cgi (Kopfsteinpflaster vermeiden, rennradtauglich, Custom).
 Überprüfen, ob der Menüpunkt E<quot>GPS-Track bearbeitenE<quot> im
 Edit-Modus funktioniert.
 
+=item * (M2)
+
+Drucken: optional auch die Routenansicht/PDF drucken, mit/ohne
+Routenbeschreibung. 
+
+=item * (H3)
+
+Bessere Platzierung der Labels in der PDF-Ausgabe. U- und
+S-Bahn-Symbole sind suboptimal, evtl. GIFs stattdessen verwenden. Wenn
+Platz ist, könnten auch die Bahnhöfe mit Labels versehen werden. Wenn
+ich rotierte Fonts zeichnen kann, dann auch wichtige Straßen.
+
 =back
 
 =head2 Windows specific
