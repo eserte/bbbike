@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.18 2005/03/15 23:08:23 eserte Exp $
+# $Id: bbbike.cgi,v 7.18 2005/03/15 23:08:23 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -3469,6 +3469,8 @@ EOF
 		printf $line_fmt,
 		  $entf, $richtung, string_kuerzen($strname, 31), $ges_entf_s;
 	    } else {
+		## XXX rechter Pfeil, sieht eigentlich schöner aus, aber wo ist es unterstützt?
+		#$richtung =~ s/=>/&#x2192;/g;
 		print "<tr class=" . ($odd ? "odd" : "even") . "><td nowrap>$fontstr$entf$fontend</td><td>$fontstr$richtung$fontend</td><td>$fontstr";
 		print "<a class=ms href='#' onclick='return ms($etappe->{Coord})'>"
 		    if $can_jslink;
