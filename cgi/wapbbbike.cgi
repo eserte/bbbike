@@ -225,16 +225,16 @@ sub wap_output_table {
     my $out = "<table columns=\"2\">\n";
     foreach (@{ $self->RouteInfo }) {
 	$out .= "<tr><td>";
-	if (defined $_->{Street}) {
-	    $out .= $_->{Street};
-	}
-	$out .= "</td><td>";
 	if (defined $_->{Way} && $_->{Way} ne "") {
 	    $out .= $_->{Way};
 	}
+	$out .= "</td><td>";
+	if (defined $_->{Street}) {
+	    $out .= $_->{Street};
+	}
 	$out .= "</td></tr>\n";
     }
-    $out .= "<tr><td>@{[$self->RouteInfo->[-1]->{Whole}]}</td><td></td></tr></table>\n";
+    $out .= "<tr><td></td><td>@{[$self->RouteInfo->[-1]->{Whole}]}</td></tr></table>\n";
     $out;
 }
 
@@ -291,7 +291,10 @@ sub wap_cgi_object {
 sub wap_std_header {
     my $self = shift;
     my %args = @_;
-    print $self->Context->CGI->header(-type => "text/vnd.wap.wml", %args);
+    print $self->Context->CGI->header(-type => "text/vnd.wap.wml",
+				      -expires => "now",
+				      '-cache-control' => 'no-cache',
+				      %args);
 }
 
 sub wap_init {
