@@ -307,6 +307,7 @@ ampelschaltung:	ampelschaltung-orig
 
 gesperrt:	gesperrt-orig strassen landstrassen landstrassen2 comments_path
 	-@$(WRITEABLE) $@
+	-rm $@~
 	$(CONVERT2HAFAS) -specsperre=strassen,landstrassen,landstrassen2 \
 	    -specsperre-exceptions=comments_path gesperrt-orig > $@~
 	cp $@~ $@
@@ -315,6 +316,7 @@ gesperrt:	gesperrt-orig strassen landstrassen landstrassen2 comments_path
 
 ${PERSISTENTTMPDIR}/gesperrt-without-nocross:	gesperrt-orig strassen landstrassen landstrassen2
 	-@$(WRITEABLE) $@
+	-rm $@~
 	$(CONVERT2HAFAS) -specsperre=strassen,landstrassen,landstrassen2 \
 	    -nonc gesperrt-orig > $@~
 	cp $@~ $@
@@ -440,7 +442,7 @@ exits:	exits-orig
 
 fragezeichen:	.create_fragezeichen
 	-@$(WRITEABLE) $@
-	cp .create_fragezeichen $@
+	cmp .create_fragezeichen $@ && true || cp .create_fragezeichen $@
 	-@$(READONLY) $@
 
 # ::inwork => will maybe change to :inwork

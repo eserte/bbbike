@@ -1,7 +1,7 @@
 # -*- c -*-
 
 #
-# $Id: Inline.pm,v 2.31 2005/02/14 00:39:44 eserte Exp eserte $
+# $Id: Inline.pm,v 2.32 2005/02/14 01:05:48 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ package Strassen::Inline2;
 require 5.005; # new semantics of hv_iterinit
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 2.31 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 2.32 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Cwd;
@@ -43,8 +43,8 @@ BEGIN {
 use Inline 0.40; # because of API changes
 use Config;
 #use Inline Config => CLEAN_AFTER_BUILD => 0;   #XXX debugging, both needed
-#use Inline C => Config => CCFLAGS => "-g -O2 -DDUMP_NODES"; #XXX debugging
-#use Inline C => Config => CCFLAGS => "-g -DDUMP_NODES"; #XXX debugging, faster
+#use Inline C => Config => CCFLAGS => "-g -O2"; #XXX debugging
+use Inline C => Config => CCFLAGS => "-g"; #XXX debugging, faster
 use Inline (C => DATA =>
 
 	    NAME => 'Strassen::Inline2',
@@ -61,11 +61,12 @@ use Inline (C => DATA =>
 __DATA__
 __C__
 
-/* #define DEBUG_HEAP      /* */
-/* #define DEBUG_MINNODE   /* */
-/* #define DEBUG_SUCC      /* */
-/* #define DEBUG_MMAP_IMPL /* */
-/* #define DEBUG_STRECKE   /* */
+/* #define DEBUG_DUMP_NODES /* */
+/* #define DEBUG_HEAP       /* */
+/* #define DEBUG_MINNODE    /* */
+/* #define DEBUG_SUCC       /* */
+/* #define DEBUG_MMAP_IMPL  /* */
+/* #define DEBUG_STRECKE    /* */
 
 #include "ppport.h"
 
@@ -742,8 +743,9 @@ done:
 #endif
   SvREFCNT_dec(CLOSED);
 
-#if defined(USE_MMAP_IMPL) && defined(DUMP_NODES)
+#if defined(DEBUG_DUMP_NODES)
   {
+#if defined(USE_MMAP_IMPL)
     HV* c_net_ptr2coord = newHV();
     hv_iterinit(c_net_coord2ptr);
     {
@@ -756,6 +758,7 @@ done:
 	hv_store(c_net_ptr2coord, val, val_len, key_sv, 0);
       }
     }
+#endif
 
     if (!hv_iterinit(NODES))
       croak("Cannot iterate NODES");
@@ -766,11 +769,17 @@ done:
       while(NODES_he = hv_iternext(NODES)) {
 	SV* node_sv = hv_iterval(NODES, NODES_he);
 	search_node* sn = (search_node*)SvIV(node_sv);
+#ifdef USE_MMAP_IMPL
 	int pred_x = *((int*)(c_net_mmap + sn->predecessor));
 	int pred_y = *(((int*)(c_net_mmap + sn->predecessor))+1);
+#else
+	char* pred_node = sn->predecessor;
+#endif
 
 	I32 keylen;
 	char* key = hv_iterkey(NODES_he, &keylen);
+	char* coord_ch;
+#ifdef USE_MMAP_IMPL
 	SV** coord;
 	int ptr = *(int*)key;
 	char* ptrIVch;
@@ -778,8 +787,16 @@ done:
 	sv_setiv(ptrIV, ptr);
 	ptrIVch = SvPV(ptrIV, ptrIVlen);
 	coord = hv_fetch(c_net_ptr2coord, ptrIVch, ptrIVlen, 0);
+	coord_ch = (coord ? SvPV(*coord, PL_na) : "?");
+#else
+	coord_ch = key;
+#endif
 
-	warn("(%s) <- (%d,%d) %d %d\n", (coord ? SvPV(*coord, PL_na) : "?"), pred_x, pred_y, sn->dist, sn->heuristic_dist);
+#ifdef USE_MMAP_IMPL
+	warn("f=%d g=%d\tX; %d,%d %s\n", sn->dist, sn->heuristic_dist, pred_x, pred_y, coord_ch);
+#else
+	warn("f=%d g=%d\tX; %s %s\n", sn->dist, sn->heuristic_dist, pred_node, coord_ch);
+#endif
       }
     }
   }
