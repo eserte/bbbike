@@ -2379,7 +2379,7 @@ EOF
     if ($use_winter_optimization) {
 	print <<EOF;
 <tr>
- <td>Winteroptimierung</td><td><select $bi->{hfill} name="pref_winter" onchange=enable_settings_buttons()>
+ <td>Winteroptimierung</td><td><select $bi->{hfill} name="pref_winter" @{[ $bi->{'can_javascript'} ? "onchange='enable_settings_buttons()'" : "" ]}>
 <option @{[ $winter_checked->("") ]}>nein
 <option @{[ $winter_checked->("WI1") ]}>schwach
 <option @{[ $winter_checked->("WI2") ]}>stark
@@ -2504,7 +2504,7 @@ sub search_coord {
 	for my $try (1 .. 2) {
 	    for my $dir ("$FindBin::RealBin/../tmp", @Strassen::datadirs) {
 		my $f = "$dir/winter_optimization.st";
-		if (-r $f) {
+		if (-r $f && -s $f) {
 		    $penalty = Storable::retrieve($f);
 		    last;
 		}
@@ -3508,7 +3508,7 @@ EOF
 	    print "<input type=submit name=interactive value=\"Grafik zeichnen\"> <font size=-1>(neues Fenster wird ge&ouml;ffnet)</font>";
 	    print " <input type=checkbox name=outputtarget value='print' " . ($default_print?"checked":"") . "> f&uuml;r Druck optimieren";
 #XXX not yet	    print " <input type=checkbox name='cb_attachment'> als Download";
-	    print "&nbsp;&nbsp; <span class=nobr>Ausgabe als: <select name=imagetype onchange='enable_size_details_buttons()'>\n";
+	    print "&nbsp;&nbsp; <span class=nobr>Ausgabe als: <select name=imagetype " . ($bi->{'can_javascript'} ? "onchange='enable_size_details_buttons()'" : "") . ">\n";
 	    print " <option " . $imagetype_checked->("png") . ">PNG\n" if $graphic_format eq 'png';
 	    print " <option " . $imagetype_checked->("gif") . ">GIF\n" if $graphic_format eq 'gif' || $can_gif;
 	    print " <option " . $imagetype_checked->("jpeg") . ">JPEG\n" unless $cannot_jpeg;
