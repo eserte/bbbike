@@ -217,7 +217,7 @@ sub resolve_city {
 	print "Nichs gefunden!<br>";
 	show_form();
 	print end_html;
-    } elsif (@res > 1) {
+    } elsif (@res == 1) {
 	my $xy = $res[0]->[Strassen::COORDS()]->[0];
 	redirect_to_ms($xy);
     } else {
