@@ -344,8 +344,8 @@ sub MY::top_targets {
 	@echo "Nothing to do --- please proceed with"
 	@echo "    make install"
 	@echo "or type"
-	@echo "    $(PERL) bbbike"
-	@echo "to start the program"
+	@echo "    $(PERL) ./bbbike"
+	@echo "to start the program without installation"
 
 ext:
 	cd ext && ${MAKE} ext PERL="${FULLPERL}"
