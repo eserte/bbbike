@@ -54,7 +54,8 @@ use vars qw(
      $essen_photo $essen_klein_photo $kino_klein_photo
      $search_photo $search_pref_photo $steigung_photo $gefaelle_photo
      $inwork_photo $star_photo
-     $menuarrow_photo $ferry_photo $ferry_klein_photo %photo
+     $menuarrow_photo $ferry_photo $ferry_klein_photo $blocked_photo
+     %photo
 );
 use vars qw(
      @wetter_dir $wetter_dir %wetter_zuordnung %wetter_name
