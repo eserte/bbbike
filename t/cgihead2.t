@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.6 2004/12/02 23:09:17 eserte Exp $
+# $Id: cgihead2.t,v 1.7 2005/03/23 14:17:17 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -51,7 +51,7 @@ for my $var (@var) {
     my @url = eval $var;
     die $@ if $@;
     if ($var eq '$BBBike::BBBIKE_UPDATE_WWW') {
-	@url = map { "$_/data/" } @url;
+	@url = map { "$_/data/.modified" } @url;
     }
     $url{$var} = \@url;
 }
