@@ -14,6 +14,9 @@
 
 package BBBikeUtil;
 
+use strict;
+use vars qw(@ISA @EXPORT @EXPORT_OK);
+
 require Exporter;
 @ISA = qw(Exporter);
 
@@ -21,8 +24,9 @@ require Exporter;
              int_round sqr s2hm s2ms h2hm m2km
 	     pi deg2rad rad2deg schnittwinkel float_prec
 	     cp850_iso iso_cp850 nil
-	     min max kmh2ms
+	     kmh2ms
 	     STAT_MODTIME);
+@EXPORT_OK = qw(min max);
 
 use constant STAT_MODTIME => 9;
 
@@ -180,7 +184,7 @@ sub rcs_co {
     require Cwd;
     my $cwd = Cwd::cwd();
     my($f, $dir) = File::Basename::fileparse($file);
-    chdir $dir or die "Kann kein chdir zum Verzeichnis $dir durchführen: $!";
+    chdir $dir or die "Kann kein chdir zum Verzeichnis $dir durchf\x{fc}hren: $!";
     system("co -l $f");
     my $ok = 1;
     if ($? != 0) {
