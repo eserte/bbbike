@@ -9402,6 +9402,7 @@ sub choose_from_plz {
 
     my $str;
     if (defined $args{'-str'}) { # auf Straße zentrieren
+	return if ($args{'-str'} eq "");
 	$str = $args{'-str'};
 	my($matchref) = $plz->look_loop($str, Agrep => 3, Max => 20);
 	my(@match) = @$matchref;
@@ -9409,8 +9410,12 @@ sub choose_from_plz {
 	$show_sub->($match[0], 1) if !$args{-noshow};
 	return $match[0]->[PLZ::LOOK_COORD()]; # return coords
     } elsif (defined $args{'-coord'}) { # auf Koordinaten zentrieren
-	mark_point(-coords => [[[ transpose(split(/,/, $args{'-coord'})) ]]],
-		   -dont_mark => 1);
+	return if ($args{'-coord'} eq "");
+	eval {
+	    mark_point(-coords => [[[ transpose(split(/,/, $args{'-coord'})) ]]],
+		       -dont_mark => 1);
+	};
+	warn $@ if $@;
     } else { # interaktiv
 	my $t = $top->Toplevel(-title => M"Auswahl aus kompletter Straßenliste",
 			       -class => "Bbbike Extended Chooser");
