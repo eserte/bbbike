@@ -108,7 +108,11 @@ $(MAPFILES_IMG_DIR)/reference-wide.xpm:	$(MAPFILES_IMG_DIR)/reference-wide.png
 	convert $> $@
 
 
+# This variable is not used anymore because of difficulties to translate some
+# BSD make constructs for GNU make
 RADWEGE_DELTA=	5 10 20
+# The radwege* expansion used to be:
+#			${RADWEGE_DELTA:C/[0-9]+/$(MAPFILES_DATA_DIR)\/radwege&.shp/g}
 # XXX comments_.*.shp generieren?
 MAPFILES=		$(MAPFILES_DATA_DIR)/strassen.shp \
 			$(MAPFILES_DATA_DIR)/wasserstrassen.shp \
@@ -126,7 +130,9 @@ MAPFILES=		$(MAPFILES_DATA_DIR)/strassen.shp \
 			$(MAPFILES_DATA_DIR)/sbahnhof.shp \
 			$(MAPFILES_DATA_DIR)/rbahn.shp \
 			$(MAPFILES_DATA_DIR)/rbahnhof.shp \
-			${RADWEGE_DELTA:C/[0-9]+/$(MAPFILES_DATA_DIR)\/radwege&.shp/g} \
+			$(MAPFILES_DATA_DIR)/radwege5.shp \
+			$(MAPFILES_DATA_DIR)/radwege10.shp \
+			$(MAPFILES_DATA_DIR)/radwege20.shp \
 			$(MAPFILES_DATA_DIR)/obst.shp \
 			$(MAPFILES_DATA_DIR)/comments.shp \
 			$(MAPFILES_DATA_DIR)/faehren.shp \
@@ -227,11 +233,23 @@ $(MAPFILES_DATA_DIR)/potsdam.shp:	potsdam
 $(MAPFILES_DATA_DIR)/deutschland.shp:	deutschland
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/deutschland deutschland
 
-.for delta in ${RADWEGE_DELTA}
-$(MAPFILES_DATA_DIR)/radwege${delta}.shp:	radwege_exact
-	${CONVERT_RADWEGE} -inmap Standard -delta ${delta} < $> > /tmp/radwege${delta}
-	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege${delta} /tmp/radwege${delta}
-.endfor
+#.for delta in ${RADWEGE_DELTA}
+#$(MAPFILES_DATA_DIR)/radwege${delta}.shp:	radwege_exact
+#	${CONVERT_RADWEGE} -inmap Standard -delta ${delta} < $> > /tmp/radwege${delta}
+#	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege${delta} /tmp/radwege${delta}
+#.endfor
+
+$(MAPFILES_DATA_DIR)/radwege5.shp:	radwege_exact
+	${CONVERT_RADWEGE} -inmap Standard -delta 5 < $> > /tmp/radwege5
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege5 /tmp/radwege5
+
+$(MAPFILES_DATA_DIR)/radwege10.shp:	radwege_exact
+	${CONVERT_RADWEGE} -inmap Standard -delta 10 < $> > /tmp/radwege10
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege10 /tmp/radwege10
+
+$(MAPFILES_DATA_DIR)/radwege20.shp:	radwege_exact
+	${CONVERT_RADWEGE} -inmap Standard -delta 20 < $> > /tmp/radwege20
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege20 /tmp/radwege20
 
 $(MAPFILES_DATA_DIR)/obst.shp:	obst
 	$(BBD2ESRI) -shapetype point -o $(MAPFILES_DATA_DIR)/obst obst
@@ -315,16 +333,6 @@ mapfiles-shptree:	${ALL_MAPFILES:M/.shp/.qix/}
 	) || ( \
 		echo "Warning: no shptree program found for converting $@" \
 	)
-
-# .for qix in ${ALL_MAPFILES:S/.shp$/.qix/}
-# ${qix}:	${qix:S/.qix$/.shp/}
-# 	@[ -x ${SHPTREE} ] && ( \
-# 		echo $@; \
-# 		${SHPTREE} $@ \
-# 	) || ( \
-# 		echo "Warning: no shptree program found for converting $@" \
-# 	)
-# .endfor
 
 # XXX more needed
 cleanup-tmp:
