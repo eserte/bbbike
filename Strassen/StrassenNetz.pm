@@ -1298,10 +1298,18 @@ The output is an array of hash elements with the following keys:
 
 The distance of the current hop as a string (number with unit, usually km).
 
+=item HopMeters
+
+Same as B<Hop> as a number in meters.
+
 =item Whole
 
 The distance from the start to the end point of the current hop. Same
 format as Hop.
+
+=item WholeMeters
+
+Same as B<Whole> as a number in meters.
 
 =item Way
 
@@ -1403,14 +1411,18 @@ sub route_info {
 	}
 	$whole += $hop;
 
-	$route_info_item->{Hop}       = $s_sub->($hop);
-	$route_info_item->{Whole}     = $s_sub->($whole);
-	$route_info_item->{Way}       = $direction;
-	$route_info_item->{Angle}     = $angle;
-	$route_info_item->{Direction} = $compassdirection;
-	$route_info_item->{Street}    = $str;
-	$route_info_item->{Coords}    =
-	    join(",", @{$routeref->[$index_arr->[0]]});
+	for ($route_info_item) {
+	    $_->{Hop}         = $s_sub->($hop);
+	    $_->{HopMeters}   = $hop;
+	    $_->{Whole}       = $s_sub->($whole);
+	    $_->{WholeMeters} = $whole;
+	    $_->{Way}         = $direction;
+	    $_->{Angle}       = $angle;
+	    $_->{Direction}   = $compassdirection;
+	    $_->{Street}      = $str;
+	    $_->{Coords}      =
+		join(",", @{$routeref->[$index_arr->[0]]});
+	}
 
 	push @route_info, $route_info_item;
    }
