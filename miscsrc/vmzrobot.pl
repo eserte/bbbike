@@ -25,9 +25,12 @@ use LWP::UserAgent;
 use Getopt::Long;
 use URI::Escape qw(uri_unescape);
 use Text::Balanced qw(extract_delimited);
+use Data::Compare qw(Compare);
+use Storable qw(dclone);
 
 my $test;
 my $inputfile;
+my $oldfile;
 my $quiet;
 my $force;
 my $listing_url = "http://www.vmz-berlin.de/vmz/trafficspotmap.do";
@@ -36,12 +39,13 @@ my @output_as;
 
 if (!GetOptions("test" => \$test,
 		"i|inputfile=s" => \$inputfile,
+		"old|oldffile=s" => \$oldfile,
 		"q" => \$quiet,
 		"f" => \$force,
 		'outputas=s@' => \@output_as,
 	       )) {
     die <<EOF;
-usage: $0 [-test] [-i|-inputfile file] [-q] [-outputas type] ...
+usage: $0 [-test] [-i|-inputfile file] [-old|-oldfile file] [-q] [-outputas type] ...
 
 Multiple -outputas optione are possible, default is "text". -outputas
 is of the form "type:file". If ":file" is left, then the output goes
@@ -56,10 +60,16 @@ if (!@output_as) { @output_as = "text" }
 my %output_as = map { my($type, $file) = split /:/, $_, 2;
 		      ($type => $file);
 		    } @output_as;
+my @valid_types = qw(text bbd dump yaml);
+my $valid_types_rx = '(' . join("|", map { quotemeta } @valid_types) . ')';
+$valid_types_rx = qr/$valid_types_rx/;
 
-while(my($k,$v) = each %output_as) {
-    if (defined $v && -e $v && !$force) {
-	die "Won't overwrite existing file $v without -f\n";
+while(my($type,$file) = each %output_as) {
+    if ($type !~ $valid_types_rx) {
+	die "The type $type is invalid, try @valid_types\n";
+    }
+    if (defined $file && -e $file && !$force) {
+	die "Won't overwrite existing file $file without -f\n";
     }
 }
 
@@ -76,17 +86,22 @@ if ($inputfile) {
     @detail_links = @$ref;
 } else {
     $ua = LWP::UserAgent->new;
+    #$ua->agent(...);
     print STDERR "Get listing..." if !$quiet;
     @detail_links = get_listing();
     print STDERR " OK\n" if !$quiet;
     {
 	my $i = 0;
 	for my $detail_link (@detail_links) {
-	    printf STDERR "%d/%d (%d%%)   \r", $i, scalar(@detail_links), $i/@detail_links*100 if !$quiet;
+	    printf STDERR "%d/%d (%d%%)   \r", ($i+1), scalar(@detail_links), $i/$#detail_links*100 if !$quiet;
 	    $detail_link->{text} = get_detail($detail_link->{querystring});
 	    $i++;
 	}
     }
+}
+
+if ($oldfile) {
+    @detail_links = diff();
 }
 
 if (exists $output_as{'text'}) {
@@ -197,6 +212,37 @@ sub file_or_stdout {
 	$fh = \*STDOUT;
     }
     $fh;
+}
+
+sub diff {
+    my $ref = YAML::LoadFile($oldfile);
+    my @old_detail_links = @$ref;
+    my %detail_links     = map {($_->{id} => $_)} @detail_links;
+    my %old_detail_links = map {($_->{id} => $_)} @old_detail_links;
+    my @diff_detail_links;
+    for my $orig_detail_link (@detail_links) {
+	my $detail_link = dclone $orig_detail_link;
+	my $state;
+	if (!exists $old_detail_links{$detail_link->{id}}) {
+	    $state = "NEW:       ";
+	} elsif (exists $old_detail_links{$detail_link->{id}}) {
+	    if (Compare($detail_link, $old_detail_links{$detail_link->{id}}) == 0) {
+		$state = "CHANGED:   ";
+	    } else {
+		$state = "UNCHANGED: ";
+	    }
+	}
+	$detail_link->{text} = "$state$detail_link->{text}";
+	push @diff_detail_links, $detail_link;
+    }
+    for my $orig_detail_link (@old_detail_links) {
+	my $detail_link = dclone $orig_detail_link;
+	if (!exists $detail_links{$detail_link->{id}}) {
+	    $detail_link->{text} = "OLD:        $detail_link->{text}";
+	    push @diff_detail_links, $detail_link;
+	}
+    }
+    @diff_detail_links;
 }
 
 __END__
