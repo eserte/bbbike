@@ -50,16 +50,16 @@ sub wap_can_table {
     shift->{BrowserInfo}->{can_table};
 }
 
+sub _wap_hr {
+    print "<p>" . "-"x10 . "</p>";
+}
+
 sub wap_input {
     my $self = shift;
 
     print <<EOF;
 @{[ $self->wap_header ]}
  <card id="input" title="BBBike">
-EOF
-    $self->_wap_info;
-    print <<EOF;
-  <do type="reset" label="Neu" name="reset"><refresh /></do>
 <!--  <p align="center"><big>BBBike</big></p> -->
   <p><b>Start</b><br/>
      Straße: <input type="text" name="startname" emptyok="false"/><br/>
@@ -68,13 +68,14 @@ EOF
      Straße: <input type="text" name="zielname" emptyok="false" /><br/>
      Bezirk: <input type="text" name="zielbezirk" emptyok="true"/><br/>
   <anchor>Route zeigen
-   <go href="@{[ $self->Context->CGI->script_name ]}" method="get">
-    <postfield name="startname"   value="\$startname" />
-    <postfield name="startbezirk" value="\$startbezirk" />
-    <postfield name="zielname"    value="\$zielname" />
-    <postfield name="zielbezirk"  value="\$zielbezirk" />
-   </go>
+   <go href="@{[ $self->Context->CGI->script_name ]}?startname=\$(startname)&amp;startbezirk=\$(startbezirk)&amp;zielname=\$(zielname)&amp;zielbezirk=\$(zielbezirk)" method="get"/>
   </anchor>
+  </p>
+EOF
+    $self->_wap_hr;
+    print "<p>";
+    $self->_wap_info;
+    print <<EOF;
   </p>
  </card>
 @{[ $self->wap_footer ]}
@@ -87,10 +88,6 @@ sub wap_resolve_street {
     print <<EOF;
 @{[ $self->wap_header ]}
  <card id="input" title="BBBike">
-  <do type="options" label="Info" name="info">
-   <go href="@{[ $self->Context->CGI->script_name ]}?info=1"/>
-  </do>
-  <do type="prev" label="Zurück" name="prev"><prev /></do>
 <!--  <p align="center"><big>BBBike</big></p> -->
 EOF
     my %has_postfields;
@@ -154,26 +151,33 @@ EOF
 sub _wap_info {
     my $self = shift;
     print <<EOF;
-  <do type="options" label="Info" name="info">
-   <go href="@{[ $self->Context->CGI->script_name ]}">
-    <postfield name="info" value="1" />
-   </go>
-  </do>
+  <anchor>Info
+   <go href="@{[ $self->Context->CGI->script_name ]}?info=1"/>
+  </anchor><br/>
 EOF
 }
 
 sub _wap_new_search {
     my $self = shift;
     print <<EOF;
-  <do type="options" label="Neue Anfrage" name="newsearch">
+  <anchor>Neue Anfrage
    <go href="@{[ $self->Context->CGI->script_name ]}">
     <setvar name="startname"   value="" />
     <setvar name="startbezirk" value="" />
     <setvar name="zielname"    value="" />
     <setvar name="zielbezirk"  value="" />
    </go>
-  </do>
+  </anchor><br/>
 EOF
+}
+
+sub _def_citypart {
+    my $pos = shift;
+    if (defined $pos->Citypart) {
+	"(" . $pos->Citypart . ")";
+    } else {
+	"";
+    }
 }
 
 sub wap_output {
@@ -182,20 +186,9 @@ sub wap_output {
     print <<EOF;
 @{[ $self->wap_header ]}
  <card id="output" title="BBBike Resultat">
-  <do type="options" label="Rückweg" name="back">
-   <go href="@{[ $self->Context->CGI->script_name ]}">
-    <postfield name="startname"   value="@{[$self->Goal->Street]}" />
-    <postfield name="startbezirk" value="@{[$self->Goal->Citypart]}" />
-    <postfield name="zielname"    value="@{[$self->Start->Street]}" />
-    <postfield name="zielbezirk"  value="@{[$self->Start->Citypart]}" />
-   </go>
-  </do>
-EOF
-    $self->_wap_new_search;
-    $self->_wap_info;
-    print <<EOF;
-  <do type="prev" label="Zurück" name="prev"><prev /></do>
-  <p>Route von <b> @{[$self->Start->Street]} (@{[$self->Start->Citypart]}) </b> nach <b> @{[$self->Goal->Street]} (@{[$self->Goal->Citypart]}) </b><br/>
+  <p>Route von
+   <b> @{[$self->Start->Street]} @{[_def_citypart($self->Start)]} </b> nach
+   <b> @{[$self->Goal->Street]} @{[_def_citypart($self->Goal)]} </b><br/>
   @{[ $self->wap_can_table ? $self->wap_output_table : $self->wap_output_notable ]}
   </p><p>
 EOF
@@ -204,7 +197,7 @@ EOF
 	$q2->param("output_as", "imagepage");
 	$q2->param("sess", $self->{Session}{_session_id});
 	print <<EOF;
-   <anchor>Als Grafik zeigen<go href="@{[ $q2->script_name ]}?@{[ $q2->query_string ]}"></go></anchor>
+   <anchor>Als Grafik zeigen<go href="@{[ $q2->script_name ]}?@{[ $q2->query_string ]}"></go></anchor><br/>
 EOF
     } else {
 	print <<EOF;
@@ -215,10 +208,22 @@ EOF
     <postfield name="zielbezirk" value="@{[$self->Goal->Citypart]}" />
     <postfield name="output_as" value="imagepage" />
     </go>
-   </anchor>
+   </anchor><br/>
 EOF
     }
     print <<EOF;
+  <anchor>Rückweg
+   <go href="@{[ $self->Context->CGI->script_name ]}">
+    <postfield name="startname"   value="@{[$self->Goal->Street]}" />
+    <postfield name="startbezirk" value="@{[$self->Goal->Citypart]}" />
+    <postfield name="zielname"    value="@{[$self->Start->Street]}" />
+    <postfield name="zielbezirk"  value="@{[$self->Start->Citypart]}" />
+   </go>
+  </anchor><br/>
+EOF
+    $self->_wap_new_search;
+    print <<EOF;
+
   </p>
  </card>
 @{[ $self->wap_footer ]}
@@ -232,7 +237,6 @@ sub wap_error {
     print <<EOF;
 @{[ $self->wap_header ]}
  <card id="output" title="BBBike Fehler">
-  <do type="prev" label="Zurück" name="prev"><prev /></do>
   <p><b>Fehler:</b> @{[ wml($errormessage) ]}</p>
  </card>
 @{[ $self->wap_footer ]}
@@ -253,7 +257,8 @@ sub _any_image {
 
     my $convert_to = undef;
     my %extra_args;
-    if ($ENV{SERVER_NAME} =~ /herceg.de/) {
+    if ($ENV{SERVER_NAME} =~ /herceg.de/ ||
+	$ENV{SERVER_NAME} =~ /devpc01/) {
 	require BBBikeDraw::MapServer;
 	# XXX Usually can't use gif with gd:
 	if ($imagetype ne 'png') {
@@ -342,14 +347,12 @@ sub wap_image_page {
     print <<EOF;
 @{[ $self->wap_header ]}
  <card id="output" title="BBBike Karte">
+  <p>
+   <img src="@{[ $q2->script_name ]}?@{[ $q2->query_string ]}" alt="Route von @{[$self->Start->Street]} @{[_def_citypart($self->Start)]} nach @{[$self->Goal->Street]} @{[_def_citypart($self->Goal)]}" /><br/>
+   <anchor>Routenliste<prev /></anchor><br/>
 EOF
     $self->_wap_new_search;
-    $self->_wap_info;
     print <<EOF;
-  <do type="prev" label="Zurück" name="prev"><prev /></do>
-  <p>
-   <img src="@{[ $q2->script_name ]}?@{[ $q2->query_string ]}" alt="Route von @{[$self->Start->Street]} (@{[$self->Start->Citypart]}) nach @{[$self->Goal->Street]} (@{[$self->Goal->Citypart]})" /><br/>
-   <anchor>Routenliste<prev /></anchor>
   </p>
  </card>
 @{[ $self->wap_footer ]}
@@ -407,7 +410,8 @@ sub wap_surrounding_image_page {
 		$q[PREV] ->param("center", $route_info->[$i-1]->{Coords});
 	    TRY: {
 		    for my $ii (reverse(0 .. $i-1)) {
-			if ($route_info->[$ii]->{Way} ne "") {
+			if (defined $route_info->[$ii]->{Way} &&
+			    $route_info->[$ii]->{Way} ne "") {
 			    $q[PREVDIR]->param("center",
 					       $route_info->[$ii]->{Coords});
 			    last TRY;
@@ -423,7 +427,8 @@ sub wap_surrounding_image_page {
 		$q[LAST]->param("center", $route_info->[-1]->{Coords});
 	    TRY: {
 		    for my $ii ($i+1 .. $#$route_info) {
-			if ($route_info->[$ii]->{Way} ne "") {
+			if (defined $route_info->[$ii]->{Way} &&
+			    $route_info->[$ii]->{Way} ne "") {
 			    $q[NEXTDIR]->param("center",
 					       $route_info->[$ii]->{Coords});
 			    last TRY;
@@ -438,7 +443,7 @@ sub wap_surrounding_image_page {
     }
 
     if (!$found) {
-warn "fallback!";
+	warn "Nothing found in RouteInfo, fallback to search in Path";
 	# Fallback to searching in path
 	for my $i (0 .. $#$path) {
 	    local $" = ",";
@@ -470,11 +475,6 @@ warn "fallback!";
     print <<EOF;
 @{[ $self->wap_header ]}
  <card id="output" title="BBBike Karte">
-EOF
-    $self->_wap_new_search;
-    $self->_wap_info;
-    print <<EOF;
-  <do type="prev" label="Zurück" name="prev"><prev /></do>
   <p>
   <img src="@{[ $q2->script_name ]}?@{[ $q2->query_string ]}" alt="Umgebungskarte" />
 EOF
@@ -486,25 +486,28 @@ EOF
   <p>
 EOF
     if ($q[FIRST]) {
-	print "<a href=\"" . $q[FIRST]->url(-path_info=>1,-query=>1) . "\">|&lt;</a> ";
+	print "<a href=\"" . $q[FIRST]->url(-absolute => 1,-path_info=>1,-query=>1) . "\">|&lt;</a> ";
     }
     if ($q[PREVDIR]) {
-	print "<a href=\"" . $q[PREVDIR]->url(-path_info=>1,-query=>1) . "\">&lt;&lt;</a> ";
+	print "<a href=\"" . $q[PREVDIR]->url(-absolute => 1,-path_info=>1,-query=>1) . "\">&lt;&lt;</a> ";
     }
     if ($q[PREV]) {
-	print "<a href=\"" . $q[PREV]->url(-path_info=>1,-query=>1) . "\">&lt;</a> ";
+	print "<a href=\"" . $q[PREV]->url(-absolute => 1,-path_info=>1,-query=>1) . "\">&lt;</a> ";
     }
     if ($q[NEXT]) {
-	print "<a href=\"" . $q[NEXT]->url(-path_info=>1,-query=>1) . "\">&gt;</a> ";
+	print "<a href=\"" . $q[NEXT]->url(-absolute => 1,-path_info=>1,-query=>1) . "\">&gt;</a> ";
     }
     if ($q[NEXTDIR]) {
-	print "<a href=\"" . $q[NEXTDIR]->url(-path_info=>1,-query=>1) . "\">&gt;&gt;</a> ";
+	print "<a href=\"" . $q[NEXTDIR]->url(-absolute => 1,-path_info=>1,-query=>1) . "\">&gt;&gt;</a> ";
     }
     if ($q[LAST]) {
-	print "<a href=\"" . $q[LAST]->url(-path_info=>1,-query=>1) . "\">&gt;|</a> ";
+	print "<a href=\"" . $q[LAST]->url(-absolute => 1,-path_info=>1,-query=>1) . "\">&gt;|</a> ";
     }
     print <<EOF;
-  <a href="@{[ $q3->script_name ]}?@{[ $q3->query_string ]}">Routenliste</a>
+  <br/><anchor><go href="@{[ $q3->script_name ]}?@{[ $q3->query_string ]}"/>Routenliste</anchor><br/>
+EOF
+    $self->_wap_new_search;
+    print <<EOF;
   </p>
  </card>
 @{[ $self->wap_footer ]}
@@ -540,7 +543,8 @@ sub wap_output_table {
 	}
 	$out .= "</td></tr>\n";
     }
-    $out .= "<tr><td></td><td>@{[$self->RouteInfo->[-1]->{Whole}]}</td></tr></table>\n";
+    $out .= "</table>\n";
+
     $out;
 }
 
@@ -557,7 +561,6 @@ sub wap_output_notable {
 	}
 	$out .= "<br/>\n";
     }
-    $out .= "@{[$self->RouteInfo->[-1]->{Whole}]}<br/>\n";
     $out;
 }
 
@@ -567,7 +570,6 @@ sub wap_info {
     print <<EOF;
 @{[ $self->wap_header ]}
  <card id="info"  title="BBBike Info">
-  <do type="prev" label="Zurück" name="prev"><prev /></do>
   <p><b>BBBike</b><br/>
   Routensuche für Radfahrer in Berlin<br/>
   von Slaven Rezic [<a href="mailto:$BBBike::EMAIL">$BBBike::EMAIL</a>]</p>
@@ -601,10 +603,11 @@ sub wap_std_header {
     my %args = @_;
     # Don't be defensive --- better to maintain a list of devices
     # where caching is crucial...
-    print $self->Context->CGI->header(-type => "text/vnd.wap.wml",
-				      #-expires => "now",
-				      #'-cache-control' => 'no-cache',
-				      %args);
+    print $self->Context->CGI->header
+	(-type => "text/vnd.wap.wml",
+	 #-expires => "now",
+	 #'-cache-control' => 'no-cache',
+	 %args);
 }
 
 sub wap_init {
@@ -620,6 +623,13 @@ sub wap_header {
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
 <wml>
+<!-- <head>
+  <meta forua="true" http-equiv="Cache-Control" content="no-cache, max-age=0, must-revalidate, proxy-revalidate, s-maxage=0"/>
+ </head>
+-->
+ <template>
+  <do type="prev" label="Zurück"><prev/></do>
+ </template>
 EOF
 }
 
@@ -637,7 +647,7 @@ sub search {
     my $route_info = $self->RouteInfo;
     my $path       = $self->Path;
     if ($route_info && $path) {
-	push @$route_info, {Street => "angekommen!",
+	push @$route_info, {Street => "angekommen, " . $route_info->[-1]{Whole},
 			    Coords => join ",", @{$path->[-1]},
 			   };
     }
