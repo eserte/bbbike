@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.4 2004/04/08 21:38:45 eserte Exp $
+# $Id: Makefile,v 2.4 2004/04/08 21:38:45 eserte Exp eserte $
 #
 
 BBBIKEDIR=		..
@@ -72,13 +72,8 @@ strassen:	.strassen.tmp plaetze
 # Call with:
 #   make -k origconvert origconvert-all
 #
-# XXX B_ON/OFF is not preserved in plz-orig
-# XXX radwege und radwege_exact angucken
-# XXX Ungereimheiten zwischen beiden mount-Versionen (wahrscheinlich falsche
-#     Berechnung in steigungen_stat)
-#
 # Quick diff between both directories:
-# diff --exclude="*~" --exclude="*.st" --exclude="*-info" --exclude="*.desc" --exclude=BASE --exclude=".check*" --exclude="*-orig" -ru /tmp/convert ~/src/bbbike/data | less
+# diff --exclude="*~" --exclude="*.st" --exclude="*-info" --exclude="*.desc" --exclude=BASE --exclude=".check*" --exclude=".*" --exclude="*-orig" --exclude "GNUmakefile*" --exclude "*.coords.data" --exclude RCS --exclude README --exclude "add_*" --exclude "inaccessible_strassen" --exclude "innerberliner_grenze" --exclude "kinos" --exclude "kneipen" --exclude "restaurants*" --exclude "old" --exclude "oldcoord" --exclude "orig" --exclude "multi_bez_str" --exclude "sehenswuerdigkeit_img" --exclude "str_cont_ausnahme" --exclude "umsteigebhf" -ru /tmp/convert ~/src/bbbike/data | less
 #
 
 ORIGCONVERTDIR=/tmp/convert
@@ -95,10 +90,10 @@ origconvert:	$(ORIGCONVERTDIR) $(TARGETS3) \
 origconvert-all:	origconvert-all1 origconvert-all2
 
 origconvert-all1:
-	cd $(ORIGCONVERTDIR) && make BBBIKEDIR=${.CURDIR}/..
+	cd $(ORIGCONVERTDIR) && env BBBIKE_DATADIR=$(ORIGCONVERTDIR) make BBBIKEDIR=${.CURDIR}/..
 
 origconvert-all2:
-	cd $(ORIGCONVERTDIR) && make -f ${.CURDIR}/../misc/Makefile BBBIKEDIR=${.CURDIR}/.. DATADIR=$(ORIGCONVERTDIR)
+	cd $(ORIGCONVERTDIR) && env BBBIKE_DATADIR=$(ORIGCONVERTDIR) make -f ${.CURDIR}/../misc/Makefile BBBIKEDIR=${.CURDIR}/.. DATADIR=$(ORIGCONVERTDIR)
 
 
 .PHONY: $(ORIGCONVERTDIR)
@@ -113,26 +108,26 @@ $(ORIGCONVERTDIR):
 
 .for f in $(TARGETS2)
 $(ORIGCONVERTDIR)/$f:	$f
-	$(CONVERT2HAFAS) -keepeverything $f > $(ORIGCONVERTDIR)/$f
+	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -keepeverything $f > $(ORIGCONVERTDIR)/$f
 .endfor
 
 $(ORIGCONVERTDIR)/rbahn-orig: rbahn-orig
-	$(CONVERT2HAFAS) -keepeverything rbahn-orig > $(ORIGCONVERTDIR)/rbahn-orig
+	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -keepeverything rbahn-orig > $(ORIGCONVERTDIR)/rbahn-orig
 
 $(ORIGCONVERTDIR)/plz-orig: plz-orig
-	$(CONVERT2HAFAS) -keepeverything plz-orig > $(ORIGCONVERTDIR)/plz-orig
+	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -keepeverything plz-orig > $(ORIGCONVERTDIR)/plz-orig
 
 $(ORIGCONVERTDIR)/fragezeichen-orig: ../misc/fragezeichen-orig
-	$(CONVERT2HAFAS) -keepeverything ../misc/fragezeichen-orig > $(ORIGCONVERTDIR)/fragezeichen-orig
+	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -keepeverything ../misc/fragezeichen-orig > $(ORIGCONVERTDIR)/fragezeichen-orig
 
 $(ORIGCONVERTDIR)/ampelschaltung-orig: ampelschaltung-orig
-	$(CONVERT2HAFAS) -ampelschaltung -keepeverything ampelschaltung-orig > $(ORIGCONVERTDIR)/ampelschaltung-orig
+	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -ampelschaltung -keepeverything ampelschaltung-orig > $(ORIGCONVERTDIR)/ampelschaltung-orig
 
 $(ORIGCONVERTDIR)/ampelschaltung-orig.txt: ../misc/ampelschaltung-orig.txt
-	$(CONVERT2HAFAS) -ampelschaltung2 -keepeverything ../misc/ampelschaltung-orig.txt > $(ORIGCONVERTDIR)/ampelschaltung-orig.txt
+	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -ampelschaltung2 -keepeverything ../misc/ampelschaltung-orig.txt > $(ORIGCONVERTDIR)/ampelschaltung-orig.txt
 
 #strassen-orig:	oldcoord/strassen-orig
-#	$(CONVERT2HAFAS) -frommap B -keepeverything $> > $@
+#	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -frommap B -keepeverything $> > $@
 
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -403,7 +398,7 @@ housenumbers:	housenumbers-orig
 
 mount:	strassen hoehe
 	-@$(WRITEABLE) $@
-	$(STEIGUNG_STAT) -minmount 1.0 -commentscompatible -i hoehe -o $@
+	$(STEIGUNG_STAT) -minmount 1.0 -commentscompatible -str strassen -i hoehe -o $@
 	-@$(READONLY) $@
 
 # Makefile in ../misc ausführen

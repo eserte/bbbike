@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.39 2004/04/08 21:40:41 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.40 2004/04/11 21:47:06 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -255,6 +255,17 @@ sub make_sperre_1 {
 #   hoehe: Hash-Referenz mit den Hoehenangaben
 #   -min => minimale_Steigung in %
 #   -maxsearchdist => maximale Suche nach Höhenpunkten
+#   -v (verbose, but not activated)
+# XXX Problems if the net contains a null-distance edge!
+#
+# XXX Problem mit der rekursiven Suche: unterschiedliche
+# Wege/Ausgangspunkte können unterschiedliche Ergebnisse verursachen.
+# Denkfehler! Ich benutze nicht zwangsweise den *kuerzesten* Weg!
+# find_neighbors sollte eine Breitensuche mit korrekter Sortierung nach
+# Wegstrecke verwenden.
+# Problemfaelle: Bersarinplatz, Heilbronner Str.; Imchenweg, bevor ich den
+# korrigierenden Höhenpunkt eingefügt habe.
+#
 ### AutoLoad Sub
 sub make_net_steigung {
     my($self, $sourcenet, $hoehe, %args) = @_;
@@ -263,6 +274,8 @@ sub make_net_steigung {
     my $calc_strecke = $args{'-strecke'} || \&Strassen::Util::strecke_s;
     my $min_mount = 0.001; # 0.1% als minimale Steigung
     my $max_search_dist = 1000; # bricht die Suche nach Höhenpunkten nach 1000m ab
+    my $v = $args{-v} || 0;
+
     if (exists $args{'-min'}) {
 	$min_mount = $args{'-min'}/100;
     }
@@ -294,6 +307,7 @@ sub make_net_steigung {
 			    $net->{$seen->[$i]}{$seen->[$i+1]} = $mount
 				unless exists $net->{$seen->[$i]}{$seen->[$i+1]};
 			}
+#XXX$mount = "$mount @$seen";
 			$net->{$seen->[-1]}{$from} = $mount
 			    unless exists $net->{$seen->[-1]}{$from};
 			$net->{$from}{$neighbor} = $mount
@@ -307,7 +321,15 @@ sub make_net_steigung {
 	}
     };
 
+#    my $keys = scalar keys %{$sourcenet->{Net}};
+#    my $i = 0;
     while(my($p1,$v) = each %{$sourcenet->{Net}}) {
+#	if ($v) {
+#	    if ($i%100 == 0) {
+#		printf "$i/$keys (%d%%) ($p1)...\r", $i/$keys*100;
+#	    }
+#	    $i++;
+#	}
 	while(my($p2) = each %$v) {
 	    if (exists $hoehe->{$p1}) {
 		if (exists $hoehe->{$p2}) {
@@ -324,6 +346,7 @@ sub make_net_steigung {
 	    }
 	}
     }
+#    printf "\n" if $v;
 }
 
 ### AutoLoad Sub

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: steigung_stat,v 1.9 2003/08/25 23:06:19 eserte Exp $
+# $Id: steigung_stat,v 1.10 2004/04/11 21:46:35 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001,2003 Slaven Rezic. All rights reserved.
@@ -14,8 +14,12 @@
 #
 
 use FindBin;
-use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib", "$FindBin::RealBin/../data");
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/../data",
+	);
 use Strassen;
+#eval 'use BBBikeXS';
 use strict;
 use Getopt::Long;
 
@@ -23,38 +27,49 @@ my @steigung;
 my %hoehe;
 my $steigung_schwelle = 0.05; # darüber wird alles schwarz gezeichnet
 my $o = "/tmp/steigungen.bbd";
+my $strfile = "strassen";
 my $i = "hoehe";
+my $v = 0;
 my $commentscompatible = 0;
 my $gefaelle = 0;
 my $orig = 0;
 my $min_mount;
 
 if (!GetOptions("i=s" => \$i,
+		"str=s" => \$strfile,
 		"o=s" => \$o,
 		"commentscompatible!" => \$commentscompatible,
 		"gefaelle!" => \$gefaelle,
 		"orig!" => \$orig,
 		"minmount=f" => \$min_mount,
+		"v+" => \$v,
 	       )) {
-    die "usage: $0 [-i hoehe.bbd] [-o output.bbd]
-                   [-[no]commentscompatible] [-[no]gefaelle] [-[no]orig]
+    die "usage: $0 [-str strassen.bbd] [-i hoehe.bbd] [-o output.bbd]
+                   [-[no]commentscompatible] [-[no]gefaelle] [-[no]orig] [-v]
 
+Default for -str: $strfile
 Default for -i: $i
 Default for -o: $o
 ";
 }
 
-my $str = new Strassen ($orig ? "strassen-orig" : "strassen");
 if ($orig) {
+    # This is not correct, because "-orig" does not mean automatically
+    # "b1996". But it's ok, because there's only a non-orig rule in
+    # data/Makefile.
     require Karte;
     Karte::preload("Berlinmap1996", "Standard");
     $Karte::Berlinmap1996::obj = $Karte::Berlinmap1996::obj; # peacify -w
     $i = $i . "-orig";
 }
+my $str = new Strassen ($orig ? "$strfile-orig" : $strfile);
 my $netz = new StrassenNetz $str;
+print STDERR "make net..." if ($v);
 $netz->make_net;
+print STDERR "done\n" if ($v);
 read_hoehe();
 my $steigungsnetz = new StrassenNetz Strassen->new;
+print STDERR "make net steigung...\n" if ($v);
 $steigungsnetz->make_net_steigung
     ($netz, \%hoehe,
      (defined $min_mount ? (-min => $min_mount) : ()),
@@ -65,7 +80,9 @@ $steigungsnetz->make_net_steigung
 			   ($p1, $p2);
 		   Strassen::Util::strecke_s($pp1, $pp2);
 	       }) : ()),
+     ($v ? (-v => 1) : ()),
     );
+print STDERR "done\n" if ($v);
 while(my($p1,$v) = each %{$steigungsnetz->{Net}}) {
     while(my($p2,$steigung) = each %$v) {
 	if ($steigung > 0) {
@@ -90,6 +107,7 @@ foreach (@steigung) {
     my $grade_percent = $_->[0]*100;
     my $strname = $_->[1];
     my @coords = @{$_}[2, 3];
+#XXXprint BBD "@$_\n";next;
     if ($commentscompatible) {
 	printf BBD "Steigung %.1f%% (%s)\tSt; %s %s\n",
 	    $grade_percent, $strname, @coords;
