@@ -2,15 +2,15 @@
 # -*- perl -*-
 
 #
-# $Id: b2dmake,v 1.1 1999/05/04 00:07:58 eserte Exp $
+# $Id: b2dmake,v 1.2 2003/08/12 22:50:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net/
 #
 
 while(<STDIN>) {

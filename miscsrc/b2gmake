@@ -2,16 +2,19 @@
 # -*- perl -*-
 
 #
-# $Id: b2gmake,v 1.1 2003/08/12 22:38:46 eserte Exp $
+# $Id: b2gmake,v 1.2 2003/08/12 22:53:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net/
 #
+
+# Note: if MAKEFLAGS is empty, then this will result in an lone-standing
+# dash. However, this does not seem to hurt GNU make.
 
 while(<STDIN>) {
     s/^\.if\s+defined\(([^\)]+)\)/ifdef $1/;
