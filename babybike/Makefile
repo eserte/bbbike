@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.47 2004/04/23 22:40:54 eserte Exp eserte $
+# $Id: Makefile,v 1.48 2004/07/09 21:29:18 eserte Exp eserte $
 #
 
 # Prerequisites:
@@ -20,8 +20,7 @@ RSYNC?=			rsync -e ssh -Pv
 DISTDEST?=		/tmp/bbbike
 BBBIKEDIR?=		..
 MISCSRCDIR?=		../miscsrc
-DATADIR?=		../data_corrected
-#DATADIR?=		../data
+DATADIR?=		../data
 
 # BIG only useable for tiled images
 BIG_GEOMETRY=		3000x2250
@@ -56,6 +55,7 @@ update_rest:
 	gzip -9 < ${DATADIR}/sbahnhof > data/sbahnhof.gz
 	gzip -9 < ${DATADIR}/ubahnhof > data/ubahnhof.gz
 	gzip -9 < ${DATADIR}/qualitaet_s > data/qualitaet_s.gz
+	gzip -9 < ${DATADIR}/fragezeichen > data/fragezeichen.gz
 	cat ${DATADIR}/orte ${DATADIR}/orte2 | $(REMOVE_COMMENTS) | gzip -9 > data/orte.gz
 #	../miscsrc/create_plz_file '(Potsdam)' ${DATADIR}/landstrassen > /tmp/Potsdam.coords.data
 	grep '[^|]$$' ${DATADIR}/Berlin.coords.data > /tmp/Berlin.coords.data-noempty

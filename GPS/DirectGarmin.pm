@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.24 2004/01/23 00:12:10 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.24 2004/01/23 00:12:10 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -54,7 +54,7 @@ sub transfer {
 
     if ($args{-test}) {
 	require Data::Dumper;
-	print STDERR Data::Dumper->new([$data],[])->Useqq(1)->Dump . "\n";
+	print STDERR Data::Dumper->new([$data],["gps_data"])->Useqq(1)->Dump . "\n";
 	my $wpt = 0;
 	foreach (@$data) {
 	    $wpt++ if ($_->[0] eq $gps->GRMN_RTE_WPT_DATA);
@@ -336,6 +336,9 @@ sub convert_from_route {
 	    *handler      = sub { bless {}, 'GPS::Garmin::Dummy' };
 	    sub dummy { 0 }
 	    sub AUTOLOAD { goto &dummy }
+	    # more dummy definition
+	    sub GRMN_RTE_LINK_DATA { 1 }
+	    sub GRMN_RTE_WPT_DATA  { 2 }
 	}
     }
 
@@ -352,9 +355,9 @@ sub convert_from_route {
     my @path;
     my $obj_type;
     if ($args{-routetoname}) {
-	@path = map
-	    { $route->path->[$_->[&StrassenNetz::ROUTE_ARRAYINX][0]] }
-		@{$args{-routetoname}};
+	@path = map {
+	    $route->path->[$_->[&StrassenNetz::ROUTE_ARRAYINX][0]]
+	} @{$args{-routetoname}};
 	push @path, $route->path->[-1]; # add goal node
 	$obj_type = 'routetoname';
     } else {

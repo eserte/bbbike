@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.10 2004/07/04 22:16:03 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.10 2004/07/04 22:16:03 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -65,6 +65,7 @@ sub BBBikeGPS::gps_interface {
 					 -test => $extra_args{-test});
     }
 
+
     if ($export_txt_mode == EXPORT_TXT_FULL) {
 	status_message("Export mode: full", "info");
     } elsif ($export_txt_mode == EXPORT_TXT_SIMPLIFY_NAME) {
@@ -86,17 +87,20 @@ sub BBBikeGPS::gps_interface {
 	# XXX besser binäre Suche statt inkrementell
 	my $routetoname;
 	my $step = 5;
-	for(my $tryangle = 5; $tryangle <= 90; $tryangle+=$step) {
-	    $routetoname = [StrassenNetz::simplify_route_to_name
-			    ([$net->route_to_name([@realcoords],-startindex=>0,-combinestreet=>0)],
-			     -minangle => $tryangle, -samestreet => 1)];
-	    if (@$routetoname <= $gps_waypoints) {
-		status_message("Export simplify mode: auto; using $tryangle° as minimum angle", "info");
-		last;
+    TRY: {
+	    for(my $tryangle = 5; $tryangle <= 90; $tryangle+=$step) {
+		$routetoname = [StrassenNetz::simplify_route_to_name
+				([$net->route_to_name([@realcoords],-startindex=>0,-combinestreet=>0)],
+				 -minangle => $tryangle, -samestreet => 1)];
+		if (@$routetoname <= $gps_waypoints) {
+		    status_message("Export simplify mode: auto; using $tryangle° as minimum angle", "info");
+		    last TRY;
+		}
+		if ($tryangle+$step > $export_txt_min_angle) {
+		    $step = 15;
+		}
 	    }
-	    if ($tryangle+$step > $export_txt_min_angle) {
-		$step = 15;
-	    }
+	    status_message("Export simplify mode: auto; using 90° as minimum angle --- maybe split the route?", "info");
 	}
 	$extra_args{"-routetoname"} = $routetoname;
     }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.16 2004/06/10 22:53:53 eserte Exp $
+# $Id: Util.pm,v 1.16 2004/06/10 22:53:53 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -378,7 +378,7 @@ sub get_from_cache {
     warn "Using $cache_func_found for reading.\n" if $VERBOSE;
 
     if (!cache_is_recent($cachepath, $srcref)) {
-	warn "Cache file $cachepath is not recent is respect to
+	warn "Cache file $cachepath is not recent with respect to
 the source files @$srcref.\n" if $VERBOSE;
 	return undef;
     }
