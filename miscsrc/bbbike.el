@@ -16,6 +16,34 @@
       (delete-region (region-beginning) (region-end))
     ))
 
+(defun bbbike-split-street ()
+  (interactive)
+  (let (begin-line-pos end-name-cat-pos begin-coord-pos end-coord-pos name-cat coord)
+    (save-excursion
+      (beginning-of-line)
+      (setq begin-line-pos (point)))
+    (save-excursion
+      (search-forward-regexp "\\($\\| \\)")
+      (if (string= (buffer-substring (match-beginning 0) (match-end 0)) "")
+	  (error "Cannot split at end"))
+      (setq end-coord-pos (1- (match-end 0))))
+    (save-excursion
+      (search-backward-regexp " " begin-line-pos)
+      (setq begin-coord-pos (1+ (match-beginning 0))))
+    (setq coord (buffer-substring begin-coord-pos end-coord-pos))
+    (save-excursion
+      (beginning-of-line)
+      (search-forward-regexp "\t[^ ]+ ")
+      (setq end-name-cat-pos (match-end 0))
+      (setq name-cat (buffer-substring begin-line-pos end-name-cat-pos)))
+    (save-excursion
+      (goto-char (1+ end-coord-pos))
+      (insert "\n")
+      (insert name-cat)
+      (insert coord)
+      (insert " "))
+    ))
+
 (defun bbbike-search-x-selection ()
   (interactive)
   (let* ((sel (x-selection))
@@ -70,6 +98,7 @@
     (define-key map "\C-c\C-s" 'bbbike-search-x-selection)
     (define-key map "\C-c\C-t" 'bbbike-toggle-tabular-view)
     (define-key map "\C-c\C-c" 'comment-region)
+    (define-key map "\C-c|"    'bbbike-split-street)
     (setq bbbike-mode-map map)))
 
 (defvar bbbike-syntax-table nil "Syntax table for BBBike bbd mode.")

@@ -1644,4 +1644,12 @@ userdel	2 -3880,13032 -4025,12801
 userdel	2 -4025,12801 -4137,12651
 EOF
      },
+     { from  => 1112654002, # 2005-04-05 00:33
+       until => 1121896800, # 2005-07-21 00:00
+       text  => 'B102 Zwischen Treuenbrietzen Umgehungsstraße/Kreuzung Treuenbrietzen und Einmündung Treuenbrietzen wegen Bauarbeiten gesperrt (bis 20.07.2005) ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -24967,-35112 -24515,-36113
+EOF
+     },
     );

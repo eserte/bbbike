@@ -276,6 +276,15 @@ userdel	q4 22217,1108 22162,1067
          'data' => 'userdel	2 -26784,5756 -26840,5684
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'until' => 1121896800,
+         'text' => 'B102 Zwischen Treuenbrietzen Umgehungsstraße/Kreuzung Treuenbrietzen und Einmündung Treuenbrietzen wegen Bauarbeiten gesperrt (bis 20.07.2005) ',
+         'from' => 1112654002,
+         'data' => 'userdel	q4 -24967,-35112 -24515,-36113
+',
+         'type' => 'handicap'
        }
      
 );
