@@ -26,6 +26,7 @@ my $streets_track      = "$ENV{HOME}/src/bbbike/tmp/streets.bbd";
 my $orig_streets_track = "$ENV{HOME}/src/bbbike/tmp/streets.bbd-orig";
 my $acc_streets_track  = "$ENV{HOME}/src/bbbike/tmp/streets-accurate.bbd";
 
+use vars qw($hm_layer);
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -140,7 +141,8 @@ sub add_button {
 	       -command => sub {
 		   my $f = "$ENV{HOME}/src/bbbike/miscsrc/senat_b/hm96.bbd";
 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
-		   add_new_layer("p", $f);
+		   $hm_layer = add_new_layer("p", $f);
+		   $main::top->bind("<F12>"=> \&find_nearest_hoehe);
 	       }
 	      ],
 	      [Button => "Edit in normal mode",
@@ -193,6 +195,7 @@ sub add_new_layer {
 	main::bbbikeexp_add_data($type, $free_layer, $file);
     }
     Hooks::get_hooks("after_new_layer")->execute;
+    $free_layer;
 }
 
 sub show_vmz_diff {
@@ -261,6 +264,33 @@ sub define_subs {
 	}
 	$res;
     };
+}
+
+sub find_nearest_hoehe {
+    my @inslauf_selection = @main::inslauf_selection;
+    if (!@inslauf_selection) {
+	main::status_message("No point in selection!", "warn");
+	return;
+    }
+    if (@inslauf_selection > 1) {
+	main::status_message("Multiple points in selection!", "warn");
+	return;
+    }
+    my $xy = $Karte::Berlinmap1996::obj->map2standard_s($inslauf_selection[0]);
+    my $nearest = $main::exp_p{$hm_layer}->nearest_point($xy, FullReturn => 1);
+    if (!$nearest) {
+	main::status_message("No nearest point found", "warn");
+	return;
+    }
+    my $obj = $nearest->{StreetObj};
+    (my $elevation) = $obj->[Strassen::NAME()] =~ /^([+-]?\d+\.\d)/;
+    my $selbuf = "$elevation\tX $inslauf_selection[0]\n";
+
+    $main::c->SelectionHandle
+	(sub {
+	     my($offset, $maxbytes) = @_;
+	     substr($selbuf, $offset, $maxbytes);
+	 });
 }
 
 1;

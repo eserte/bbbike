@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.29 2004/01/10 22:35:33 eserte Exp $
+# $Id: insert_points,v 1.30 2004/03/21 14:22:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -61,6 +61,7 @@ use Getopt::Long;
 use FindBin;
 use lib "$FindBin::RealBin/..";
 use BBBikeUtil;
+use Strassen::Dataset;
 use File::Basename;
 
 my $use_tk = 0;
@@ -188,14 +189,8 @@ sub process {
 
     my @check_files;
     my %file2base;
-    my @comments_part_files = qw(comments_cyclepath
-				 comments_ferry
-				 comments_misc
-				 comments_mount
-				 comments_path
-				 comments_route
-				 comments_tram
-				);
+    my @comments_part_files = map { "comments_$_" } @Strassen::Dataset::comments_types;
+
     my %ignore_files;
     if (!$orig) {
 	%ignore_files = map{("$_-orig"=>1)} @comments_part_files;
@@ -237,12 +232,6 @@ sub process {
 	    # XXX for now use the normal insert ... the additional points have to
 	    # be put out manually (but this is easier than do nothing)
 	    push @{$check_files[T_NORMAL]}, qw(vorfahrt);
-	    if ($orig) {
-		push @{$check_files[T_NORMAL]}, @comments_part_files;
-	    } else {
-		# combined
-		push @{$check_files[T_NORMAL]}, qw(comments);
-	    }
 
 	    @{$check_files[T_RADWEGE]} =
 		($orig ? qw(radwege) : qw(radwege_exact));

@@ -23,6 +23,7 @@ use Route;
 use Getopt::Long;
 use Karte;
 Karte::preload(':all');
+$Karte::Polar::obj = $Karte::Polar::obj;
 
 # XXX Verwendung von Karte::*
 
@@ -211,6 +212,9 @@ if (defined $to_map) {
     from_to_convert();
 }
 
+my @skip_directives = qw(temporary);
+my $skip_directives = "^(?:" . join("|", map { quotemeta } @skip_directives) . ")\$";
+
 my @str_buffer;
 if ($f eq '-') {
     open(F, "<&STDIN") or die "Can't open stdin: $!";
@@ -220,14 +224,23 @@ if ($f eq '-') {
 LINES: while(defined($_ = nextline())) {
     chomp;
 
-    if (/^\#--(\S+)\s*(.*)/) {
+    if (/^\#: (\S+)\s*(.*\S)\s+v+$/) {
 	my($dir, $text) = ($1, $2);
-	if ($dir eq 'append') {
+	if ($dir eq 'append_comment') {
 	    $append = $text;
-	} elsif ($dir eq 'end_append') {
-	    undef $append;
+	} elsif ($dir =~ /$skip_directives/) {
+	    #
 	} else {
-	    die "Unknown directive: $dir";
+	    #die "Unknown directive: $dir";
+	}
+    } elsif (/^\#: (\S+)\s+\^+$/) {
+	my($dir) = ($1);
+	if ($dir eq 'append_comment') {
+	    undef $append;
+	} elsif ($dir =~ /$skip_directives/) {
+	    #
+	} else {
+	    #die "Unknown directive: $dir";
 	}
     }
 

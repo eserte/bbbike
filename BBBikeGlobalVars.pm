@@ -132,8 +132,10 @@ use vars qw(@popup_style $focus_policy
 	    $map_default_type $use_map_fallback
 	    $map_surround $dont_delete_map
 	    @special_lower %special_lower @special_raise %special_raise
-	    $str_file $landstr_file $wasser_file $flaechen_file
-	    $plz_file $border_file %obst_file);
+	    %obst_file);
+#XXX del:
+# 	    $str_file $landstr_file $wasser_file $flaechen_file
+# 	    $plz_file $border_file 
 use vars qw($last_loaded_menu $last_loaded_obj $last_loaded_layers_obj
 	    $coord_output $coord_output_sub);
 # %old_mtime: last modification time

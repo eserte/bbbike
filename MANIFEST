@@ -177,7 +177,14 @@ data/ampeln
 data/ampelschaltung
 data/berlin
 data/brunnels
-data/comments
+data/comments_cyclepath
+data/comments_ferry
+data/comments_kfzverkehr
+data/comments_misc
+data/comments_mount
+data/comments_path
+data/comments_route
+data/comments_tram
 data/deutschland
 data/faehren
 data/flaechen
@@ -566,8 +573,10 @@ images/ubahn_klein.png
 images/ubahn_klein.xpm
 images/zugbruecke.xpm
 images/zugbruecke.gif
+images/zugbruecke.png
 images/zugbruecke_klein.xpm
 images/zugbruecke_klein.gif
+images/zugbruecke_klein.png
 images/flag2_bl_centered.gif
 images/flag2_bl_centered.png
 images/flag2_bl_centered.xpm

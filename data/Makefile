@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.92 2004/03/08 21:40:13 eserte Exp $
+# $Id: Makefile,v 1.94 2004/03/21 13:43:11 eserte Exp $
 #
 
 MISCDIR=		../misc
@@ -36,7 +36,7 @@ TARGETS+=	qualitaet_s qualitaet_l
 TARGETS+=	handicap_s handicap_l
 TARGETS+=	label vorfahrt relation_gps nolighting
 TARGETS+=	housenumbers green brunnels mount
-TARGETS+=	comments ${COMMENTS_PARTIAL}
+TARGETS+=	${COMMENTS_PARTIAL}
 
 WRITEABLE=	chmod u+w,ugo+r
 READONLY=	chmod ugo+r,ugo-w
@@ -260,9 +260,6 @@ vorfahrt:	vorfahrt-orig
 	$(CONVERT2HAFAS) vorfahrt-orig > vorfahrt
 	-@$(READONLY) $@
 
-# the comments* rules really should check against strassen etc. too
-# this should be better done in a loop, but unfortunately there's no way
-# to define a loop in a compatible way
 comments_cyclepath: comments_cyclepath-orig
 	-@$(WRITEABLE) $@
 	cat $> | $(CONVERT2HAFAS) -map B - | \
@@ -311,15 +308,6 @@ comments_kfzverkehr: comments_kfzverkehr-orig
 	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
 	-@$(READONLY) $@
 
-comments:	${COMMENTS_PARTIAL}
-	-@$(WRITEABLE) $@
-	echo -n > $@
-	for i in $>; do \
-	    echo "# BEGIN $$i" >> $@; \
-	    cat $$i >> $@; \
-	done
-	-@$(READONLY) $@
-
 relation_gps:	relation_gps-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) relation_gps-orig > relation_gps
@@ -337,7 +325,7 @@ housenumbers:	housenumbers-orig
 
 mount:	strassen hoehe
 	-@$(WRITEABLE) $@
-	$(STEIGUNG_STAT) -minmount 0.5 -commentscompatible -i hoehe -o $@
+	$(STEIGUNG_STAT) -minmount 1.0 -commentscompatible -i hoehe -o $@
 	-@$(READONLY) $@
 
 # Makefile in ../misc ausführen
@@ -461,14 +449,20 @@ check:	.check_strassen1 .check_strassen2 \
 	$(CHECK_COUNT) -type vorfahrt -data vorfahrt
 	@touch .check_vorfahrt
 
-.check_comments1:	comments .strassen.tmp landstrassen landstrassen2 faehren
-	$(CHECK_POINTS) comments .strassen.tmp landstrassen landstrassen2 faehren
+.check_comments1:	$(COMMENTS_PARTIAL) .strassen.tmp landstrassen landstrassen2 faehren
+	for i in $(COMMENTS_PARTIAL); do \
+	    echo "Check $$i"; \
+	    $(CHECK_POINTS) $$i .strassen.tmp landstrassen landstrassen2 faehren; \
+	done
 	@touch .check_comments1
 
-.check_comments2:	comments strassen landstrassen landstrassen2 faehren
-	$(CHECK_NEIGHBOUR) -type standard \
-		-against strassen -against landstrassen -against landstrassen2 \
-		-against faehren -data comments
+.check_comments2:	$(COMMENTS_PARTIAL) strassen landstrassen landstrassen2 faehren
+	for i in $(COMMENTS_PARTIAL); do \
+	    echo "Check $$i"; \
+	    $(CHECK_NEIGHBOUR) -type standard \
+		    -against strassen -against landstrassen -against landstrassen2 \
+		    -against faehren -data $$i; \
+	done
 	@touch .check_comments2
 
 .check_nolighting:	nolighting strassen

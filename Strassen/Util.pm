@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.15 2004/01/13 19:51:59 eserte Exp $
+# $Id: Util.pm,v 1.15 2004/01/13 19:51:59 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -314,13 +314,16 @@ sub _valid_cache {
     my($cachefile, $srcref) = @_;
 
     my(@stat_cache) = stat $cachefile;
+warn "$cachefile " . $stat_cache[STAT_MODTIME];
     if (!defined $stat_cache[STAT_MODTIME]) { # cachefile nicht vorhanden
 	return undef;
     }
     my $src;
     my(@src) = (ref $srcref eq 'ARRAY' ? @$srcref : $srcref);
+warn "@src";
     foreach $src (@src) {
 	my(@stat_orig)  = stat $src;
+warn "$stat_orig[STAT_MODTIME]";
 	if (defined $stat_orig[STAT_MODTIME] &&
 	    $stat_cache[STAT_MODTIME] < $stat_orig[STAT_MODTIME]) {
 	    # Cache ist nicht gültig

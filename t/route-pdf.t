@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: route-pdf.t,v 1.6 2003/11/16 20:42:39 eserte Exp $
+# $Id: route-pdf.t,v 1.7 2004/03/21 23:10:55 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -16,6 +16,7 @@ use Route::PDF;
 use Strassen::Core;
 use Strassen::MultiStrassen;
 use Strassen::StrassenNetz;
+use Strassen::Dataset;
 use BBBikeXS;
 use Getopt::Long;
 
@@ -70,7 +71,8 @@ my($route) = $net->search($start_coord, $goal_coord,
 my $comments_net;
 {
     my @s;
-    for my $s (qw(comments handicap_s qualitaet_s)) {
+    for my $s ((map { "comments_$_" } @Strassen::Dataset::comments_types),
+	       qw(handicap_s qualitaet_s)) {
 	eval {
 	    push @s, Strassen->new($s);
 	};

@@ -228,4 +228,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Die Langhansstraße ist zwischen Prenzlauer Promenade und Heinersdorfer Straße in beiden Richtungen gesperrt. Grund: Baumaßnahmen. Dauer:15.03.2004, 05:00 Uhr bis 28.03.2004, 17:00 Uhr. Eine Umleitung ist ausgeschildert.',
        type  => 'gesperrt',
      },
+     { from  => 1079766000, # 2004-03-20 08:00
+       until => 1079888400, # 2004-03-21 18:00
+       file  => 'residenz_rad.bbd',
+       text  => 'Residenzstraße zwischen Lindauer Allee und Emmentaler Straße, Emmentaler Straße zwischen Residenzstraße und Aroser Allee, Aroser Allee zwischen Emmentaler Straße und Lindauer Allee sowie Lindauer Allee zwischen Aroser Allee und Residenzstraße. Straßen gesperrt. Radrennen. Umleitung ist ausgeschildert. Dauer: 21.03.2004, 08.00 Uhr bis 18.00 Uhr',
+       type  => 'gesperrt',
+     },
     );

@@ -129,6 +129,7 @@ use BBBikeTrans;
 #BEGIN{mymstat("before Strassen");}
 ## DEBUG_END
 use Strassen;
+use Strassen::Dataset;
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before Route");}
 ## DEBUG_END
@@ -182,8 +183,7 @@ use enum qw(:B2M_
 # Attribute description field indexes
 use enum qw(:ATTRIB_ SINGULAR PLURAL LINES LONG);
 
-# XXX maybe this should go to Strassen::Dataset?
-@comments_types = qw(cyclepath ferry misc mount path route tram kfzverkehr);
+@comments_types = @Strassen::Dataset::comments_types;
 
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before use constant");}
@@ -379,12 +379,12 @@ $map_default_type = 'berlinmap';
 $use_map_fallback = 1;
 $map_surround = 0;
 $dont_delete_map = 1;
-$str_file = "strassen";
-$landstr_file = "landstrassen";
-$wasser_file = "wasserstrassen";
-$flaechen_file = "flaechen";
-$plz_file = "plz";
-$border_file = "berlin";
+#XXX del: $str_file = "strassen";
+#XXX del: $landstr_file = "landstrassen";
+#XXX del: $wasser_file = "wasserstrassen";
+#XXX del: $flaechen_file = "flaechen";
+#XXX del: $plz_file = "plz";
+#XXX del: $border_file = "berlin";
 $use_current_coord_prefix = 0;
 $coord_prefix = undef;
 $coordlist_lbox_nl = "";
@@ -2310,7 +2310,7 @@ sub do_iconframe {
 	    (-label => M"Steigungen",
 	     -variable => \$str_draw{'mount'},
 	     -command => sub {
-		 my $comm = Strassen->new("comments");
+		 my $comm = Strassen->new("comments_mount");
 		 my $comm_mount = Strassen->new_copy_restricted($comm, -grep => ["St;"]);
 		 my $mount = MultiStrassen->new($str_file{"mount"},
 						$comm_mount);
@@ -4291,12 +4291,7 @@ if ($c->can('DropSite')) {
 # abhängt
 $category_color{'I'} = $c->cget(-background);
 
-$c->SelectionHandle
-  (sub {
-       my($offset, $maxbytes) = @_;
-       my($inslauf) = join(" ", @inslauf_selection);
-       substr($inslauf, $offset, $maxbytes);
-   });
+standard_selection_handle();
 
 $sy->grid(-row => 0, -column => 1, -sticky => 'ns');
 $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
@@ -4510,6 +4505,15 @@ if ($ENV{BBBIKE_GUI_TEST}) {
 MainLoop unless $ENV{BBBIKE_TEST_PERFORMANCE};
 
 ##### Subs ### RELOADER_START ############################################
+
+sub standard_selection_handle {
+    $c->SelectionHandle
+	(sub {
+	     my($offset, $maxbytes) = @_;
+	     my($inslauf) = join(" ", @inslauf_selection);
+	     substr($inslauf, $offset, $maxbytes);
+	 });
+}
 
 sub load_photos {
     $flag_photo{'start'} = load_photo($top, 'flag2_bl_centered.' . $default_img_fmt);
@@ -4855,16 +4859,16 @@ sub define_item_attribs {
 	 'i' => 'blue4',
 	);
     %str_file =
-	('s'  => $str_file,
-	 'l'  => $landstr_file, # XXX scoped
+	('s'  => 'strassen',
+	 'l'  => 'landstrassen', # this is really scoped
 	 'u'  => 'ubahn',
 	 'b'  => 'sbahn',
 	 'r'  => 'rbahn',
-	 'w'  => $wasser_file,	# XXX scoped
-	 'f'  => $flaechen_file,
+	 'w'  => 'wasserstrassen', # this is really scoped
+	 'f'  => 'flaechen',
 	 'v'  => 'sehenswuerdigkeit',
-	 'z'  => $plz_file,
-	 'g'  => $border_file,
+	 'z'  => 'plz',
+	 'g'  => 'berlin',
 	 'gP' => "potsdam",
 	 'gD' => "deutschland",
 	 'e'  => 'faehren',
@@ -4875,7 +4879,7 @@ sub define_item_attribs {
 	 'hl' => 'handicap_l',
 	 'nl' => 'nolighting',
 	 'gr' => 'green',
-	 'comm' => 'comments',
+	 'comm' => 'comments', # this is splitted into multiple files
 	 'mount' => 'mount',
 	 'fz' => "$FindBin::RealBin/misc/fragezeichen", # only for development
 	);
@@ -7894,6 +7898,8 @@ sub plotstr {
 	    $str = _get_wasser_obj($filename);
 	} elsif ($abk eq 'l') {
 	    $str = _get_landstr_obj();
+	} elsif ($abk eq 'comm') {
+	    $str = _get_comments_obj();
 	} else {
 	    eval { $str = new Strassen $filename };
 	    if ($@) {
@@ -8684,6 +8690,19 @@ sub _get_landstr_obj {
     new MultiStrassen @obj;
 }
 
+# Gibt ein Kommentar-Objekt zurück.
+### AutoLoad Sub
+sub _get_comments_obj {
+    MultiStrassen->new(map {
+	"comments_$_" . ($coord_system eq 'standard'
+			 ? ""
+			 : "-orig"
+			)
+    } grep {
+	$_ ne "mount"
+    } @comments_types);
+}
+
 # Zeichnet Punkte auf dem Canvas.
 # plotp ist nur ein Dispatcher.
 ### AutoLoad Sub
@@ -9145,6 +9164,8 @@ sub choose_ort {
 			$object = _get_wasser_obj($str_file{$type} . $origext);
 		    } elsif ($type eq 'l') {
 			$object = _get_landstr_obj();
+		    } elsif ($type eq 'comm') {
+			$object = _get_comments_obj();
 		    } else {
 			$object = new Strassen $str_file{$type} . $origext;
 		    }
@@ -9388,14 +9409,18 @@ sub clever_center {
     # For now, $tx2 and $ty2 are not used, but should be used to move
     # the region towards this point. See Tk::CanvasUtil::center_view2.
     return 0 if (!eval { require Tk::Placement; 1 });
+    # Is ($tx/$ty) already visible? Then do nothing
+    my($rx, $ry) = ($c->rootx+$c->widgetx($tx), $c->rooty+$c->widgety($ty));
+    my $curr_w = $top->containing($rx, $ry);
+    return if $curr_w eq $c;
     my @win = Tk::Placement::get_toplevel_regions($top);
     if (!@win) { # no clever placement needed --- fallback to normal center
 	return 0;
     }
     for (@win) {
 	# adjust to canvas frame
-	$_->{x} -= $c->rootx;
-	$_->{y} -= $c->rooty;
+	$_->{"x"} -= $c->rootx;
+	$_->{"y"} -= $c->rooty;
     }
     my $box_w = $top->width/3;
     my $box_h = $top->height/3;
@@ -10443,7 +10468,8 @@ sub show_info {
 
     my @comments;
     if (!$str_obj{"comm"}) {
-	$str_obj{"comm"} = Strassen->new("comments");
+	$str_obj{'comm'} = _get_comments_obj();
+#	$str_obj{"comm"} = Strassen->new("comments");
     }
     if (!$comments_pos_net) {
 	eval {
@@ -10475,9 +10501,9 @@ sub show_info {
 	require Strassen::Stat;
 	my $s;
 	if ($base_tag eq 'w') {
-	    $s = _get_wasser_obj($wasser_file);
+	    $s = _get_wasser_obj($str_file{'w'});
 	} else {
-	    $s = Strassen->new($flaechen_file);
+	    $s = Strassen->new($str_file{'f'});
 	}
 	my $r = $s->get($index);
 # XXX bei weitem noch nicht perfekt: statt des Indexes sollte der
@@ -13957,7 +13983,8 @@ sub make_handicap_net {
 
 sub make_comments_net {
     if (!$str_obj{"comm"}) {
-	$str_obj{"comm"} = Strassen->new("comments");
+	$str_obj{'comm'} = _get_comments_obj();
+#XXX del:	$str_obj{"comm"} = Strassen->new("comments");
     }
     if ($str_obj{"comm"}) {
 	$comments_net = new StrassenNetz $str_obj{"comm"};

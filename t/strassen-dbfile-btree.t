@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-dbfile-btree.t,v 1.2 2003/06/23 22:04:48 eserte Exp $
+# $Id: strassen-dbfile-btree.t,v 1.3 2004/03/21 23:10:55 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -24,7 +24,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 12 }
+BEGIN { plan tests => 17 }
 
 my $tmpfile = "/tmp/test-dbfile-btree.db";
 
@@ -44,8 +44,15 @@ ok(@{$r->[Strassen::COORDS]} > 1);
 
 my @r = $s2->get_all_by_name("Baruther Str.");
 ok(scalar @r, 3);
-ok($r[0]->[Strassen::NAME], "Baruther Str.");
-ok($r[1]->[Strassen::CAT], "NN");
+my $nn_seen;
+for (@r) {
+    ok($_->[Strassen::NAME], "Baruther Str.");
+    ok($_->[Strassen::CAT] =~ /^(N|NN)$/);
+    if ($_->[Strassen::CAT] eq "NN") {
+	$nn_seen++;
+    }
+}
+ok($nn_seen, 1);
 ok(ref $r[2]->[Strassen::COORDS], "ARRAY");
 ok(@{$r[2]->[Strassen::COORDS]} > 1);
 

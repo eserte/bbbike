@@ -2,19 +2,19 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.16 2004/01/18 09:42:21 eserte Exp $
+# $Id: wapcgi.t,v 1.17 2004/03/21 23:10:55 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
 
-use LWP::UserAgent 2.003; # get method
+use LWP::UserAgent 2.001; # get method
 use Getopt::Long;
 use File::Temp qw(tempfile);
 use URI;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!eval q{

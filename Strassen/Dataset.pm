@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Dataset.pm,v 1.9 2003/12/22 19:47:14 eserte Exp $
+# $Id: Dataset.pm,v 1.9 2003/12/22 19:47:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ use strict;
 use vars qw($VERSION);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
-use vars qw(%file %net %crossings %obj);
+use vars qw(%file %net %crossings %obj @comments_types);
 
 # XXX don't hardcode for Berlin!
 %file =
@@ -58,6 +58,8 @@ use vars qw(%file %net %crossings %obj);
       'hoehe'  =>  'hoehe',
      },
     );
+
+@comments_types = qw(cyclepath ferry misc mount path route tram kfzverkehr);
 
 my %scope2inx = (city   => 0,
 		 region => 1,

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: shapefile.t,v 1.11 2004/01/04 11:34:54 eserte Exp $
+# $Id: shapefile.t,v 1.12 2004/03/21 13:42:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003,2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ use Test::More;
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../..",
-	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/../../lib",
 	);
 use ESRI::Shapefile;
 use BBBikeESRI;

@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.101 2004/03/08 00:13:03 eserte Exp $
+# $Id: Makefile.PL,v 1.102 2004/03/21 14:21:39 eserte Exp $
 
 use 5.005;
 
@@ -123,6 +123,7 @@ use constant REQTABLE_LONGDESC=> 5;
 
   [qw/Image::Info	0	all	0	test/],
   [qw/Test::More	0	all	0	test/],
+  [qw/Test::Differences	0	all	0	test/],
  );
 
 # EXE corequisites ####################################################

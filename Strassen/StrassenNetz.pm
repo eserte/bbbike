@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.36 2004/01/11 00:07:36 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.38 2004/03/21 13:43:24 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -248,6 +248,7 @@ sub make_sperre_1 {
 #              als Vorlage dient
 #   hoehe: Hash-Referenz mit den Hoehenangaben
 #   -min => minimale_Steigung in %
+#   -maxsearchdist => maximale Suche nach Höhenpunkten
 ### AutoLoad Sub
 sub make_net_steigung {
     my($self, $sourcenet, $hoehe, %args) = @_;
@@ -255,11 +256,51 @@ sub make_net_steigung {
 	if !$sourcenet->isa('StrassenNetz');
     my $calc_strecke = $args{'-strecke'} || \&Strassen::Util::strecke_s;
     my $min_mount = 0.001; # 0.1% als minimale Steigung
+    my $max_search_dist = 1000; # bricht die Suche nach Höhenpunkten nach 1000m ab
     if (exists $args{'-min'}) {
 	$min_mount = $args{'-min'}/100;
     }
+    if (exists $args{'-maxsearchdist'}) {
+	$max_search_dist = $args{'-maxsearchdist'};
+    }
     $self->{Net} = {};
     my $net = $self->{Net};
+
+    # Search resursively until $max_search_dist is exceeded
+    my $find_neighbors;
+    $find_neighbors = sub {
+	my($from, $seen, $dist_so_far, $initial_elevation) = @_;
+	$seen ||= [];
+	$dist_so_far ||= 0;
+	my %seen = map { ($_=>1) } @$seen;
+
+	while(defined(my $neighbor = each %{$sourcenet->{Net}{$from}})) {
+	    next if exists $seen{$neighbor};
+	    my $strecke1 = $dist_so_far;
+	    my $strecke2 = $calc_strecke->($from, $neighbor);
+	    my $strecke = $strecke1 + $strecke2;
+	    if (exists $hoehe->{$neighbor}) {
+		my $hoehendiff = $hoehe->{$neighbor} - $initial_elevation;
+		if (!exists $net->{$from}{$neighbor} && $strecke > 0) {
+		    my $mount = int(($hoehendiff/$strecke)*1000)/1000;
+		    if ($mount >= $min_mount) {
+			for my $i (0 .. $#$seen - 1) {
+			    $net->{$seen->[$i]}{$seen->[$i+1]} = $mount
+				unless exists $net->{$seen->[$i]}{$seen->[$i+1]};
+			}
+			$net->{$seen->[-1]}{$from} = $mount
+			    unless exists $net->{$seen->[-1]}{$from};
+			$net->{$from}{$neighbor} = $mount
+			    unless exists $net->{$from}{$neighbor};
+		    }
+		}
+	    } else {
+		return if $strecke > $max_search_dist;
+		$find_neighbors->($neighbor, [@$seen, $from], $strecke, $initial_elevation);
+	    }
+	}
+    };
+
     while(my($p1,$v) = each %{$sourcenet->{Net}}) {
 	while(my($p2) = each %$v) {
 	    if (exists $hoehe->{$p1}) {
@@ -272,29 +313,7 @@ sub make_net_steigung {
 			    if $mount >= $min_mount;
 		    }
 		} else {
-		    # XXX Hack! Find a better solution!
-		    # Find neighbors of $p2
-		    while(my($p3, $v1) = each %{$sourcenet->{Net}{$p2}}) {
-			next if $p3 eq $p1;
-			if (exists $hoehe->{$p3}) {
-			    my $strecke1 = $calc_strecke->($p1, $p2);
-			    my $strecke2 = $calc_strecke->($p2, $p3);
-			    my $strecke = $strecke1 + $strecke2;
-			    my $hoehendiff = $hoehe->{$p3}-$hoehe->{$p1};
-			    if (!exists $net->{$p1}{$p2} && $strecke > 0) {
-				my $mount = int((($hoehendiff/$strecke)
-						 *($strecke1/$strecke))*1000)/1000;
-				$net->{$p1}{$p2} = $mount
-				    if $mount >= $min_mount;
-			    }
-			    if (!exists $net->{$p2}{$p3} && $strecke > 0) {
-				my $mount = int((($hoehendiff/$strecke)
-						 *($strecke2/$strecke))*1000)/1000;
-				$net->{$p2}{$p3} = $mount
-				    if $mount >= $min_mount;
-			    }
-			}
-		    }
+		    $find_neighbors->($p2, [$p1], $calc_strecke->($p1, $p2), $hoehe->{$p1});
 		}
 	    }
 	}

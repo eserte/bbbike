@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.65 2004/03/11 00:13:53 eserte Exp $
+# $Id: bbbike.cgi,v 6.65 2004/03/11 00:13:53 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -61,6 +61,7 @@ BEGIN {
 use lib (@extra_libs);
 
 use Strassen; # XXX => Core etc.?
+use Strassen::Dataset;
 #use Strassen::Lazy; # XXX mal sehen...
 use BBBikeCalc;
 use BBBikeVar;
@@ -2637,7 +2638,11 @@ sub search_coord {
 		}
 		for my $s (@comment_files) {
 		    eval {
-			push @s, Strassen->new($s);
+			if ($s eq 'comments') {
+			    push @s, MultiStrassen->new(map { "comments_$_" } @Strassen::Dataset::comments_types);
+			} else {
+			    push @s, Strassen->new($s);
+			}
 		    };
 		    warn "$s: $@" if $@;
 		}
