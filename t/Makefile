@@ -7,7 +7,7 @@
 PERL?=	perl
 
 test:
-	$(PERL) -w -I.. -I../lib -MTest::Harness -e \
+	LANG=C $(PERL) -w -I.. -I../lib -MTest::Harness -e \
 	    'BEGIN { if (!eval q{ use List::Util qw(shuffle); 1 }) { \
 			*shuffle = sub { @_ }; \
 		     } \
