@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Kreuzungen.pm,v 1.14 2004/10/18 20:50:06 eserte Exp $
+# $Id: Kreuzungen.pm,v 1.15 2004/12/05 21:54:41 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Kreuzungen;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 package Kreuzungen;
 use strict;
@@ -30,6 +30,7 @@ sub new {
     my $rettype = 'hash';
     my $usecache = defined $args{UseCache} ? $args{UseCache} : 1;
     my $all_points = $args{AllPoints} || $args{Kurvenpunkte} || 0;
+    my @config = ($all_points ? "kurvenp" : ());
     if (!exists $args{Hash}) {
 	die "Missing arg for new Kreuzungen: either Hash or Strassen"
 	    if !exists $args{Strassen};
@@ -40,12 +41,15 @@ sub new {
 	    (RetType => $rettype, AllPoints => $all_points,
 	     UseCache => $usecache);
 	$args{Hash} = $kreuzungen_ref;
+	if ($args{Strassen}->{Inaccessible}) {
+	    push @config, "inacc";
+	}
     }
     $self->{Hash}  = $args{Hash};
     $self->{Array} = $args{Array};
     $self->{IsPos} = $args{WantPos};
     $self->{Strassen} = $args{Strassen};
-    $self->{Config} = [ ($all_points ? "kurvenp" : ()) ];
+    $self->{Config} = \@config;
 
     bless $self, $class;
 }

@@ -162,6 +162,7 @@ sub start_mapserver {
 	}
 	@mapext = $self->get_extents($width, $height, $args{-markerpoint}, @args);
     }
+    $self->{MapExt} = \@mapext;
 
     my $q2 = CGI->new({});
     if ($pass) {
@@ -291,6 +292,12 @@ sub create_mapfile {
 	    push @marker_args, -markerpoint => $args{-markerpoint};
 	}
 
+	my @title_args;
+	if ($args{-titletext}) {
+	    push @title_args, -titletext => $args{-titletext};
+	    push @title_args, -titlepoint => join ",", @{$self->{MapExt}}[0, 1];
+	}
+
 	foreach my $scope (@scopes) {
 	    $map_path = $path_for_scope->($scope, "$prefix-");
 
@@ -315,6 +322,7 @@ sub create_mapfile {
 		  : (-routecoords => join(",",@{$self->{Coords}}))
 		 ),
 		 @marker_args,
+		 @title_args,
 		 (defined $scope && $scope ne "" ? (-scope => $scope) : ()),
 		 $orig_map_path,
 		 $map_path);

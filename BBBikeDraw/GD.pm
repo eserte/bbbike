@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.38 2004/10/18 20:49:20 eserte Exp $
+# $Id: GD.pm,v 1.38 2004/10/18 20:49:20 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -504,7 +504,7 @@ my $s = $p->get($strpos);
 			if (!$seen_bahnhof{$name}) {
 			    $self->outline_text($ort_font{'bhf'},
 						$x1+4, $y1,
-						patch_string($name),
+						$self->patch_string($name),
 						$darkblue, $grey_bg,
 #						$white, $darkblue
 					       );
@@ -521,7 +521,7 @@ my $s = $p->get($strpos);
 			if (!$seen_bahnhof{$name}) {
 			    $self->outline_text($ort_font{'bhf'},
 						$x+4, $y,
-						patch_string($name),
+						$self->patch_string($name),
 						$darkgreen, $grey_bg,
 #						$white, $darkgreen
 					       );
@@ -539,7 +539,7 @@ my $s = $p->get($strpos);
 			    $self->outline_text
 				($ort_font{$cat} || $self->{GD_Font}->Small,
 				 $x, $y,
-				 patch_string($ort), $black, $grey_bg,
+				 $self->patch_string($ort), $black, $grey_bg,
 				 -anchor => "c",
 				);
 			} else {
@@ -547,7 +547,7 @@ my $s = $p->get($strpos);
 			    $self->outline_text
 				($ort_font{$cat} || $self->{GD_Font}->Small,
 				 $x, $y,
-				 patch_string($ort), $black, $grey_bg,
+				 $self->patch_string($ort), $black, $grey_bg,
 				 -padx => 4, -pady => 4,
 				);
 			}
@@ -856,7 +856,7 @@ else { warn $! }
 	    my $f_i  = $e->[4][0];
 	    my($x,$y) = &$transpose(split ',', $self->{Coords}[$f_i]);
 	    my @args = ($ort_font{strname}, $x, $y,
-			patch_string($name),
+			$self->patch_string($name),
 			$text_inner, $text_outer
 		       );
 	    my(@bounds) = $self->check_outline_text(@args);
@@ -877,17 +877,7 @@ else { warn $! }
     }
 
     if ($self->{TitleDraw}) {
-	my $start = patch_string($self->{Startname});
-	my $ziel  = patch_string($self->{Zielname});
-	foreach my $s (\$start, \$ziel) {
-	    # Text in Klammern entfernen, damit der Titel kürzer wird
-	    my(@s) = split(m|/|, $$s);
-	    foreach (@s) {
-		s/\s+\(.*\)$//;
-	    }
-	    $$s = join("/", @s);
-	}
-	my $s =  "$start -> $ziel";
+	my $s = $self->make_default_title;
 
 	my $gdfont;
 	if (7*length($s) <= $self->{Width}) {
@@ -1134,18 +1124,6 @@ EOF
     print $fh "</map>";
 }
 
-sub is_in_map {
-    my($self, @coords) = @_;
-    my $i;
-    for($i = 0; $i<$#coords; $i+=2) {
-	return 1 if ($coords[$i]   >= 0 &&
-		     $coords[$i]   <= $self->{Width} &&
-		     $coords[$i+1] >= 0 &&
-		     $coords[$i+1] <= $self->{Height});
-    }
-    return 0;
-}
-
 sub flush {
     my $self = shift;
     my %args = @_;
@@ -1155,6 +1133,7 @@ sub flush {
 }
 
 sub patch_string {
+    my $self = shift;
     if (defined $gd_version and $gd_version >= 1.16) {
 	shift;
     } else {

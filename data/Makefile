@@ -52,7 +52,8 @@ SOURCE_TARGETS+=	${COMMENTS_PARTIAL} fragezeichen exits
 COMPUTED_TARGETS=	sbahnhof_bg ubahnhof_bg rbahnhof berlin
 COMPUTED_TARGETS+=	radwege_exact mount
 
-TARGETS+=	${SOURCE_TARGETS} ${COMPUTED_TARGETS}
+COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
+TARGETS+=	${SOURCE_TARGETS} ${COMPUTED_TARGETS} ${COOKED_TARGETS}
 
 TARGETS_DISABLED=	label relation_gps 
 
@@ -110,6 +111,16 @@ strassen:	.strassen.tmp plaetze
 	$(CONVERT2HAFAS) strassen-orig > $@~
 	cp $@~ $@
 	rm $@~
+
+.for f in ${COOKED_TARGETS}
+$f:	${f:S/-cooked$//} inaccessible_landstrassen
+	-@${WRITEABLE} $@
+	perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib -MStrassen -e \
+	    '$$s = Strassen->new($$ARGV[0]); $$ina = Strassen->new($$ARGV[1]); $$s->new_with_removed_points($$ina)->write("-")' \
+	    ${f:S/-cooked$//} inaccessible_landstrassen \
+	    > $@ || rm -f $@
+	-@${READONLY} $@
+.endfor
 
 plaetze: plaetze-orig
 	-@$(WRITEABLE) $@

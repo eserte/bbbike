@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.93 2004/12/05 00:09:31 eserte Exp $
+# $Id: bbbike.cgi,v 6.93 2004/12/05 00:09:31 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -102,6 +102,8 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    @temp_blocking
 	    $use_cgi_compress_gzip $max_matches
 	   );
+# XXX This may be removed one day
+use vars qw($use_cooked_street_data);
 
 #XXX in mod_perl/Apache::Registry operation there are a lot of "shared
 # variable" warnings. They seem to be not harmful, but I should get
@@ -4164,16 +4166,31 @@ sub get_streets {
 	     ($scope =~ /region/ ? "landstrassen" : ()),
 	     ($scope eq 'wideregion' ? "landstrassen2" : ()),
 	    );
-    if (@f == 1) {
-	$g_str = new Strassen $f[0];
-    } else {
-	$g_str = new MultiStrassen @f;
+
+ LOAD_STREETS:
+    local $use_cooked_street_data = $use_cooked_street_data;
+    if ($use_cooked_street_data) {
+	@f = map { "$_-cooked" } @f;
+    }
+    eval {
+	if (@f == 1) {
+	    $g_str = new Strassen $f[0];
+	} else {
+	    $g_str = new MultiStrassen @f;
+	}
+    };
+    if ($@) {
+	if ($use_cooked_street_data) {
+	    warn 'Maybe the "cooked" version is missing? Try again the normal version...';
+	    $use_cooked_street_data = 0;
+	    goto LOAD_STREETS;
+	} else {
+	    die $@;
+	}
     }
     $g_str->{Scope} = $scope;
 
-    {
-	# XXX cache?
-	# XXX Maybe better use Strassen::Dataset implementation?
+    if (!$use_cooked_street_data) {
 	my $i_s;
 	eval { $i_s = new Strassen "inaccessible_strassen" };
 	if ($i_s) {

@@ -142,8 +142,8 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 		    ColorLightBlue ColorBlack
 		    OnFlaechen OnGewaesser OnStrassen OnUBahn OnSBahn OnRBahn
 		    OnAmpeln OnOrte OnFaehren OnGrenzen OnFragezeichen OnObst
-		    OnRoute OnStartFlag OnGoalFlag OnMarkerPoint
-		    StartFlagPoints GoalFlagPoints MarkerPoint RouteCoords
+		    OnRoute OnStartFlag OnGoalFlag OnMarkerPoint OnTitle
+		    StartFlagPoints GoalFlagPoints MarkerPoint TitleText RouteCoords
 		    MapserverDir MapserverRelurl MapserverUrl
 		    BbbikeDir ImageDir ImageSuffix FontsList
 		   );
@@ -336,7 +336,9 @@ sub draw_map {
 
     foreach (@{$self->{Draw}}) {
 	if ($_ eq 'title') {
-	    warn "title?";
+	    # XXX never positively tested
+	    $im->OnTitle(1);
+	    $im->TitleText($self->make_default_title);
 	} elsif (/^ampeln?$/) {
 	    $im->OnAmpeln(1);
 	} elsif ($_ eq 'strname') {
@@ -448,137 +450,6 @@ sub draw_route {
 	$im->OnMarkerPoint(1);
 	$im->MarkerPoint(join " ", split /,/, $self->{MarkerPoint});
     }
-
-#      my $strnet; # StrassenNetz-Objekt
-
-#      foreach (@{$self->{Draw}}) {
-#  	if ($_ eq 'strname' && $self->{'MakeNet'}) {
-#  	    $strnet = $self->{MakeNet}->('lite');
-#  	}
-#      }
-
-#      my $brush; # should be *outside* the next block!!!
-#      my $line_style;
-#      if ($self->{RouteWidth}) {
-#  	# fette Routen für die WAP-Ausgabe (B/W)
-#  	$brush = GD::Image->new($self->{RouteWidth}, $self->{RouteWidth});
-#  	$brush->colorAllocate($im->rgb($black));
-#  	$im->setBrush($brush);
-#  	$line_style = GD::gdBrushed();
-#      } elsif ($brush{Route}) {
-#  	$im->setBrush($brush{Route});
-#  	$line_style = GD::gdBrushed();
-#      } else {
-#  	# Vorschlag von Rainer Scheunemann: die Route in blau zu zeichnen,
-#  	# damit Rot-Grün-Blinde sie auch erkennen können. Vielleicht noch
-#  	# besser: rot-grün-gestrichelt
-#  	$im->setStyle($darkblue, $darkblue, $darkblue, $red, $red, $red);
-#  	$line_style = GD::gdStyled();
-#      }
-
-#      # Route
-#      for(my $i = 0; $i < $#c1; $i++) {
-#  	my($x1, $y1, $x2, $y2) = (@{$c1[$i]}, @{$c1[$i+1]});
-#  	$im->line(&$transpose($x1, $y1),
-#  		  &$transpose($x2, $y2), $line_style);
-#      }
-
-#      # Flags
-#      if (@c1 > 1) {
-#  	if ($self->{UseFlags} &&
-#  	    defined &GD::Image::copyMerge &&
-#  	    $self->imagetype ne 'wbmp') {
-#  	    my $images_dir = $self->get_images_dir;
-#  	    my $imgfile;
-#  	    $imgfile = "$images_dir/flag2_bl." . $self->imagetype;
-#  	    if (open(GIF, $imgfile)) {
-#  		binmode GIF;
-#  		my $start_flag = newFromImage GD::Image \*GIF;
-#  		close GIF;
-#  		if ($start_flag) {
-#  		    my($w, $h) = $start_flag->getBounds;
-#  		    my($x, $y) = &$transpose(@{ $c1[0] });
-#  		    # workaround: newFromPNG vergisst die Transparency-Information
-#  		    $start_flag->transparent($start_flag->colorClosest(192,192,192));
-#  		    $im->copyMerge($start_flag, $x-5, $y-15,
-#  				   0, 0, $w, $h, 50);
-#  		} else {
-#  		    warn "$imgfile exists, but can't be read by GD";
-#  		}
-#  	    }
-
-#  	    $imgfile = "$images_dir/flag_ziel." . $self->imagetype;
-#  	    if (open(GIF, $imgfile)) {
-#  		binmode GIF;
-#  		my $end_flag = newFromImage GD::Image \*GIF;
-#  		close GIF;
-#  		if ($end_flag) {
-#  		    my($w, $h) = $end_flag->getBounds;
-#  		    my($x, $y) = &$transpose(@{ $c1[-1] });
-#  		    # workaround: newFromPNG vergisst die Transparency-Information
-#  		    $end_flag->transparent($end_flag->colorClosest(192,192,192));
-#  		    $im->copyMerge($end_flag, $x-5, $y-15,
-#  				   0, 0, $w, $h, 50);
-#  		} else {
-#  		    warn "$imgfile exists, but can't be read by GD";
-#  		}
-#  	    }
-#  	} elsif ($self->{UseFlags} && $self->imagetype eq 'wbmp' &&
-#  		 $self->{RouteWidth}) {
-#  	    my($x, $y) = &$transpose(@{ $c1[0] });
-#  	    for my $w ($self->{RouteWidth}+5 .. $self->{RouteWidth}+6) {
-#  		$im->arc($x,$y,$w,$w,0,360,$black);
-#  	    }
-#  	}
-#      }
-
-#      # Ausgabe der Straßennnamen
-#      if ($strnet) {
-#  	my($text_inner, $text_outer);
-#  	if ($self->{Bg} eq 'white') {
-#  	    ($text_inner, $text_outer) = ($darkblue, $white);
-#  	} else {
-#  	    ($text_inner, $text_outer) = ($white, $darkblue);
-#  	}
-#  	my(@strnames) = $strnet->route_to_name
-#  	    ([ map { [split ','] } @{ $self->{Coords} } ]);
-#  	foreach my $e (@strnames) {
-#  	    my $name = Strassen::strip_bezirk($e->[0]);
-#  	    my $f_i  = $e->[4][0];
-#  	    my($x,$y) = &$transpose(split ',', $self->{Coords}[$f_i]);
-#  	    $self->outline_text(&GD::Font::Small, $x, $y,
-#  				patch_string($name), $text_inner, $text_outer);
-#  	}
-#      }
-
-#      if ($self->{TitleDraw}) {
-#  	my $start = patch_string($self->{Startname});
-#  	my $ziel  = patch_string($self->{Zielname});
-#  	foreach my $s (\$start, \$ziel) {
-#  	    # Text in Klammern entfernen, damit der Titel kürzer wird
-#  	    my(@s) = split(m|/|, $$s);
-#  	    foreach (@s) {
-#  		s/\s+\(.*\)$//;
-#  	    }
-#  	    $$s = join("/", @s);
-#  	}
-#  	my $s =  "$start -> $ziel";
-
-#  	my $gdfont;
-#  	if (7*length($s) <= $self->{Width}) {
-#  	    $gdfont = \&GD::Font::MediumBold;
-#  	} elsif (6*length($s) <= $self->{Width}) {
-#  	    $gdfont = \&GD::Font::Small;
-#  	} else {
-#  	    $gdfont = \&GD::Font::Tiny;
-#  	}
-#  	my $inner = $white;
-#  	my $outer = $darkblue;
-#  	if ($self->{Bg} =~ /^white/) {
-#  	    ($inner, $outer) = ($outer, $inner);
-#  	}
-#  	$self->outline_text(&$gdfont, 1, 1, $s, $inner, $outer);
-#      }
 }
 
 # Draw this first, otherwise the filling of the circle won't work!
@@ -650,87 +521,8 @@ sub draw_wind {
 }
 
 sub make_imagemap {
-    warn "make_imagemap NYI";
-#      my $self = shift;
-#      my $fh = shift || confess "No file handle supplied";
-#      my(%args) = @_;
-
-#      if (!defined $self->{Width} &&
-#  	!defined $self->{Height}) {
-#  	if ($self->{Geometry} =~ /^(\d+)x(\d+)$/) {
-#  	    ($self->{Width}, $self->{Height}) = ($1, $2);
-#  	}
-#      }
-
-#      my $transpose = $self->{Transpose};
-#      my $multistr = $self->_get_strassen; # XXX Übergabe von %str_draw?
-
-#      # keine Javascript-Abfrage, damit der Code generell bleibt und
-#      # gecachet werden kann...
-#      if ($args{'-generate_javascript'}) {
-#  	print $fh <<EOF;
-#  <script language=javascript>
-#  <!--
-#  function s(text) {
-#    self.status=text;
-#    return true;
-#  }
-#  // -->
-#  </script>
-#  EOF
-#      }
-#      print $fh "<map name=\"map\">";
-
-#      $multistr->init;
-#      while(1) {
-#  	my $s = $multistr->next_obj;
-#  	last if $s->is_empty;
-#  	if ($s->category !~ /^F/ && $#{$s->coords} > 0) {
-#  	    my(@polygon1, @polygon2);
-#  	    my($dx, $dy, $c);
-#  	    my($x1, $y1, $x2, $y2);
-#  	    for(my $i = 0; $i < $#{$s->coords}; $i++) {
-#  		($x1, $y1, $x2, $y2) = 
-#  		  (&$transpose(@{$s->coord_as_list($i)}),
-#  		   &$transpose(@{$s->coord_as_list($i+1)}));
-#  		$dx = $x2-$x1;
-#  		$dy = $y2-$y1;
-#  		$c = CORE::sqrt($dx*$dx + $dy*$dy)/2;
-#  		if ($c == 0) { $c = 0.00001; }
-#  		$dx /= $c;
-#  		$dy /= $c;
-#  		push    @polygon1, int($x1-$dy), int($y1+$dx);
-#  		unshift @polygon2, int($x1+$dy), int($y1-$dx);
-#  	    }
-#  	    # letzter Punkt
-#  	    push    @polygon1, int($x2-$dy), int($y2+$dx);
-#  	    unshift @polygon2, int($x2+$dy), int($y2-$dx);
-
-#  	    # Optimierung: nur die eine Seite des Polygons wird überprüft
-#  	    next unless $self->is_in_map(@polygon1);
-
-#  	    my $coordstr = join(",", @polygon1, @polygon2,
-#  				$polygon1[0], $polygon1[1]);
-#  	    print $fh
-#  # XXX folgendes: AREA ONMOUSEOVER funktioniert für
-#  # FreeBSD-Netscape
-#  # bei Win-MSIE wird es ignoriert
-#  # und bei WIn-NS wird ein falscher Link erzeugt
-#  # title= wird noch nicht von NS und IE unterstützt
-#  # evtl. AREA ganz weglassen
-#  # XXX check mit onclick. evtl. onclick so patchen, dass submit mit
-#  # richtigen Werten aufgerufen wird.
-#  #	      "<area title=\"" . $s->name . "\" ",
-#  	      "<area href=\"\" ",
-#  		"shape=poly ",
-#  		"coords=\"$coordstr\" ",
-#  		"onmouseover=\"return s('" . $s->name . "')\" ",
-#  	        "onclick=\"return false\" ",
-#  		">\n";
-#  	}
-#      }
-
-#      print $fh "</map>";
+    require BBBikeDraw::GD;
+    BBBikeDraw::GD::make_imagemap(@_);
 }
 
 sub flush {

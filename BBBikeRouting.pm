@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.32 2004/01/03 23:37:17 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.33 2004/12/05 21:55:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -512,7 +512,7 @@ sub fix_position {
 	$self->init_crossings;
 	$pos_o->Coord($self->Crossings->nearest_loop(split(/,/, $pos_o->Coord), BestOnly => 1, UseCache => $self->Context->UseCache));
 	if ($self->Context->Vehicle eq 'oepnv') {
-	    $self->init_crossings;
+	    $self->init_crossings; # XXX überflüssig?
 	    $pos_o->Street($self->Crossings->get_first($pos_o->Coord));
 	}
     }

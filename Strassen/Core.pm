@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.47 2004/10/02 16:04:29 eserte Exp $
+# $Id: Core.pm,v 1.48 2004/12/05 21:55:27 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.47 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.48 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -624,16 +624,17 @@ sub arr2line2 {
 
 # This is a static method
 sub parse {
-    my $line = shift;
-    return [undef, [], undef] if !$line;
-    my $tab_inx = index($line, "\t");
+    # $_[0] is $line
+    # my $_[0] = shift;
+    return [undef, [], undef] if !$_[0];
+    my $tab_inx = index($_[0], "\t");
     if ($tab_inx < 0) {
 	warn "Probably tab character is missing\n" if $VERBOSE;
-	[$line];
+	[$_[0]];
     } else {
-	my @s = split /\s+/, substr($line, $tab_inx+1);
+	my @s = split /\s+/, substr($_[0], $tab_inx+1);
 	my $category = shift @s;
-	[substr($line, 0, $tab_inx), \@s, $category];
+	[substr($_[0], 0, $tab_inx), \@s, $category];
     }
 }
 
@@ -811,6 +812,9 @@ sub all_crossings {
     my $cachefile = "all_crossings_${basename}_$rettype";
     if ($all_points) {
 	$cachefile .= "_kurvenp";
+    }
+    if ($self->{Inaccessible}) {
+	$cachefile .= "_inacc";
     }
     if ($use_cache && $rettype =~ /^hash/) {
 	require Strassen::Util;

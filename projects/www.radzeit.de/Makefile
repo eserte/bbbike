@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.42 2004/12/05 00:11:53 eserte Exp $
+# $Id: Makefile,v 1.42 2004/12/05 00:11:53 eserte Exp eserte $
 #
 
 # Targets:
@@ -248,12 +248,17 @@ prepare-bbbike-dist-prog-stadtplan:
 	[ ! -e ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com ] && echo Skip berliner-stadtplan.com deployment || (cp -pf ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com/lib/BBBikeDraw/BerlinerStadtplan.pm ${CURDIR}/BBBike/BBBikeDraw/)
 
 prepare-bbbike-dist-data:	prepare-bbbike-dist-data-datadir \
+				prepare-bbbike-dist-data-datadir-additional \
 				prepare-bbbike-dist-data-temp-blockings-dir \
 				prepare-bbbike-dist-data-teasers
 
 # Usually data/* is already hardlinked against the originals, so
 # no additional copying for data/* is necessary
 prepare-bbbike-dist-data-datadir:
+
+prepare-bbbike-dist-data-datadir-additional:
+	cp -pf ${BBBIKE_ROOT_DIR}/data/*-cooked \
+	    ${CURDIR}/BBBike/data/
 
 # temp_blockings is not yet in MANIFEST, so copy is necessary
 prepare-bbbike-dist-data-temp-blockings-dir:

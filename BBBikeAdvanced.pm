@@ -194,7 +194,9 @@ sub custom_draw {
 		Tk::grid($f->Checkbutton(-text => M"Namen zeichnen",
 					 -variable => \$args{-namedraw}),
 			);
-	    } else {
+	    }
+
+	    {
 		my $e;
 		if (eval { require Tk::NumEntry; 1 }) {
 		    $e = $f->NumEntry(-minvalue => 1,
@@ -203,9 +205,10 @@ sub custom_draw {
 				      -width => 3,
 				     );
 		} else {
-		    $e = $f->Entry(-width => 3);
+		    $e = $f->Entry(-width => 3,
+				   -textvariable => \$args{Width});
 		}
-		Tk::grid($f->Label(-text => M"Linienbreite"),
+		Tk::grid($f->Label(-text => $linetype eq "p" ? M"Punktbreite" : M"Linienbreite"),
 			 $e,
 			 -sticky => "w",
 			);
@@ -485,6 +488,7 @@ sub plot_additional_layer {
 	    $add_def = "\t" . join "\t", @args;
 	}
 	add_last_loaded($file, $last_loaded_layers_obj, $add_def);
+	save_last_loaded($last_loaded_layers_obj);
     }
 
     Hooks::get_hooks("after_new_layer")->execute;

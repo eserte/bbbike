@@ -3920,7 +3920,7 @@ sub do_iconframe {
 		     require BBBikeAdvanced;
 		     plot_additional_layer($linetype, $file, %args);
 		 },
-		 Max => 8,
+		 Max => 12,
 		};
 	    load_last_loaded($last_loaded_layers_obj);
 	}
@@ -4507,7 +4507,7 @@ $last_loaded_obj =
      Menu => $last_loaded_menu,
      Title => M('Letzte Routen-Dateien').':',
      Cb => sub { load_save_route(0, $_[0]) },
-     Max => 8,
+     Max => 12,
     };
 load_last_loaded($last_loaded_obj);
 
@@ -5736,7 +5736,7 @@ EOF
 			       -tags => "$abk-bg");
 	    } elsif ($abk =~ /^L(\d+)/) {
 		my $color = $category =~ /^\#/ ? $category : exists $category_color{$category} ? $category_color{$category} : undef;
-		my $width = $category_width{$category} || 6;
+		my $width = $category_width{$category} || $p_width{$abk} || $default_width || 6;
 		$c->createLine($x, $y, $x, $y,
 			       (defined $color ? (-fill => $color) : ()),
 			       -width => $width,
@@ -5753,7 +5753,7 @@ EOF
 	    } else {
 		# Else draw a generic point (broad, color from cat)
 		my $color = $category_color{$category} || ($category =~ /^\#/ ? $category : 'red');
-		my $width = $category_width{$category} || 6;
+		my $width = $category_width{$category} || $p_width{$abk} || $default_width || 6;
 		$c->createLine($x, $y, $x, $y,
 			       -fill => $color, -capstyle => 'round',
 			       -width => $width,
@@ -9148,6 +9148,9 @@ sub plot_point {
 	}
     }
 
+    my $default_width;
+    if (defined $args{Width}) { $default_width = $args{Width} }
+
     my $coordsys = $coord_system_obj->coordsys;
 
     destroy_delayed_restack();
@@ -11246,7 +11249,9 @@ EOF
 		    my $text = splice @tags, 2, 1;
 		    unshift @tags, $text, "";
 		}
-		$show_info_sub->(join("\n", $dbf_info, grep { !/^current$/ } @tags));
+		$show_info_sub->(join("\n", $dbf_info,
+				      "\nInterne Canvas-Tags:",
+				      grep { !/^current$/ } @tags));
 		return;
 	    }
 	}
@@ -11289,7 +11294,9 @@ EOF
 		    }
 		}
 	    }
-	    $show_info_sub->(join("\n", grep { !/^current$/ } @tags));
+	    $show_info_sub->(join("\n",
+				  "Interne Canvas-Tags:",
+				  grep { !/^current$/ } @tags));
 	}
 	untie %info;
     } else {
@@ -11298,7 +11305,9 @@ EOF
 		my $text = splice @tags, 2, 1;
 		unshift @tags, $text, "";
 	    }
-	    $show_info_sub->(join("\n", grep { !/^current$/ } @tags));
+	    $show_info_sub->(join("\n",
+				  "Interne Canvas-Tags:",
+				  grep { !/^current$/ } @tags));
 	} else {
 	    if ($tags[0] =~ /^L\d+-(fg|img)$/) {
 		$show_info_sub->($tags[2]); # show name

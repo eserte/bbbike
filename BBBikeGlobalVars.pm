@@ -63,7 +63,8 @@ use vars qw(
      $customchoosecmd $b2m_customcmd
      %line_width %line_length %line_dash %line_arrow $default_line_width
      %line_shorten
-     %category_size %outline_color %category_color %str_color %p_color
+     %category_size %outline_color %category_color
+     %str_color %p_color %p_width
      %category_font_color %category_font %category_width %category_image
      %layer_active_color %layer_pre_enter_command %layer_post_enter_command
      %layer_pre_leave_command %layer_post_leave_command

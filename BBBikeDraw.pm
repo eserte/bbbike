@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.36 2004/08/26 23:55:01 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.36 2004/08/26 23:55:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -737,5 +737,35 @@ sub get_images_dir {
 sub module_handles_all_cgi { 0 }
 
 sub origin_position { "nw" }
+
+sub is_in_map {
+    my($self, @coords) = @_;
+    my $i;
+    for($i = 0; $i<$#coords; $i+=2) {
+	return 1 if ($coords[$i]   >= 0 &&
+		     $coords[$i]   <= $self->{Width} &&
+		     $coords[$i+1] >= 0 &&
+		     $coords[$i+1] <= $self->{Height});
+    }
+    return 0;
+}
+
+sub make_default_title {
+    my $self = shift;
+    my $start = $self->{Startname};
+    $start = $self->patch_string($start) if $self->can("patch_string");
+    my $ziel  = $self->{Zielname};
+    $ziel = $self->patch_string($ziel) if $self->can("patch_string");
+    foreach my $s (\$start, \$ziel) {
+	# Text in Klammern entfernen, damit der Titel kürzer wird
+	my(@s) = split(m|/|, $$s);
+	foreach (@s) {
+	    s/\s+\(.*\)$//;
+	}
+	$$s = join("/", @s);
+    }
+    my $s =  "$start -> $ziel";
+    $s;
+}
 
 1;
