@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapInfo.pm,v 1.7 2004/03/08 07:05:49 eserte Exp $
+# $Id: MapInfo.pm,v 1.8 2004/03/10 16:31:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
@@ -439,13 +439,19 @@ EOF
 	}
 
 	my $str;
-	if (ref $file eq 'ARRAY') {
-	    $str = MultiStrassen->new(@$file);
-	    if ($args{v}) { print STDERR "@$file...\n" }
-	} else {
-	    $str = Strassen->new($file);
-	    if ($args{v}) { print STDERR "$file...\n" }
+	eval {
+	    if (ref $file eq 'ARRAY') {
+		$str = MultiStrassen->new(@$file);
+		if ($args{v}) { print STDERR "@$file...\n" }
+	    } else {
+		$str = Strassen->new($file);
+		if ($args{v}) { print STDERR "$file...\n" }
+	    };
 	};
+	if (!$str) {
+	    warn "$@, skipping $file...";
+	    next;
+	}
 
 	my($this_minx, $this_miny, $this_maxx, $this_maxy) = $str->bbox;
 	$minx = $this_minx if !defined $minx || $this_minx < $minx;
