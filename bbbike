@@ -8531,8 +8531,8 @@ sub plot_sperre {
 
 	# XXX don't duplicate code from plotstr!
 	my $diffed_str = 0;
-	my $complete_str = $str;
 	my $str = $gesperrt;
+	my $complete_str = $str;
 	#XXX Abfrage auf $edit_mode notwendig?
 	if (#XXX del: ($edit_mode || $edit_normal_mode) &&
 	    $args{FastUpdate}) {
