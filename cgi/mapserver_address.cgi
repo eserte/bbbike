@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.8 2003/05/19 20:21:11 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.11 2003/06/29 22:24:10 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,9 +14,9 @@
 #
 
 use vars qw($BBBIKE_ROOT);
-BEGIN {
+BEGIN { # XXX do not hardcode
     if ($ENV{SERVER_NAME} eq 'radzeit.herceg.de') {
-	$BBBIKE_ROOT = "/home/e/eserte/www/www.radzeit.de/BBBike";
+	$BBBIKE_ROOT = "/home/e/eserte/src/bbbike/projects/www.radzeit.de/BBBike";
 	@Strassen::datadirs = "$BBBIKE_ROOT/data";
     } else {
 	$BBBIKE_ROOT = "/usr/local/apache/radzeit/BBBike";
@@ -45,6 +45,11 @@ if (defined param("mapserver")) {
     resolve_city();
 } elsif (defined param("searchterm") && param("searchterm") !~ /^\s*$/) {
     resolve_fulltext();
+} elsif (defined param("latD") && defined param("latM") &&
+	 defined param("longD") && defined param("longM")) {
+    my $lat  = param("latD")  + param("latM")/60  + param("latS")/3600;
+    my $long = param("longD") + param("longM")/60 + param("longS")/3600;
+    resolve_latlong($lat, $long);
 } elsif (defined param("lat") && defined param("long") &&
 	 param("lat") !~ /^\s*$/ && param("long") !~ /^\s*$/) {
     resolve_latlong(param("lat"), param("long"));
@@ -95,6 +100,23 @@ sub show_form {
 		    td(['(Angaben als DDD)']),
 		    td(['Breite' , textfield('lat')]),
 		    td(['Länge' , textfield('long'), submit(-value => "Zeigen")]),
+		   ]
+                  )
+	       );
+    # Check -size and -maxlength, N and E if porting to other world regions.
+    print table({-border=>0},
+		Tr(
+		   [
+		    td(['(Angaben als DMS)']),
+		    td(['Breite' ,
+			'N', textfield(-name => 'latD', -size => 2, -maxlength => 2), '°',
+			textfield(-name => 'latM', -size => 2, -maxlength => 2),"'",
+			textfield(-name => 'latS', -size => 4, -maxlength => 2), "''"]),
+		    td(['Länge' ,
+			'E', textfield(-name => 'longD', -size => 2, -maxlength => 2), '°',
+			textfield(-name => 'longM', -size => 2, -maxlength => 2),"'",
+			textfield(-name => 'longS', -size => 4, -maxlength => 2), "''",
+			submit(-value => "Zeigen")]),
 		   ]
                   )
 	       );
@@ -174,7 +196,7 @@ sub resolve_city {
 	print "Nichs gefunden!<br>";
 	show_form();
 	print end_html;
-    } elsif (@res == 1) {
+    } elsif (@res > 1) {
 	my $xy = $res[0]->[Strassen::COORDS()]->[0];
 	redirect_to_ms($xy);
     } else {
@@ -208,7 +230,7 @@ sub resolve_fulltext {
 
     # heurstic to find data directory
     my $dir;
-    for my $try_dir (@INC) {
+    for my $try_dir (@Strassen::datadirs, @INC) {
 	if (-e "$try_dir/strassen") {
 	    $dir = $try_dir;
 	    last;
@@ -243,10 +265,7 @@ sub resolve_fulltext {
 	print "Nichs gefunden!<br>";
 	show_form();
 	print end_html;
-    } elsif (@res == 1) {
-	my $xy = $res[0]->[Strassen::COORDS()]->[0];
-	redirect_to_ms($xy);
-    } else {
+    } elsif (@res > 1) {
 	splice @res, 40 if @res > 40;
 	my @new_res;
 	my %seen;
@@ -258,25 +277,31 @@ sub resolve_fulltext {
 	}
 	@res = @new_res;
 
-	print header, start_html("Auswahl nach Straßen und Orten"), h1("Auswahl nach Straßen und Orten");
-	print h2("Mehrere Treffer");
-	print start_form;
-	print radio_group
-	    (-name=>"coords",
-	     -values => [map { $_->[$STRASSEN_CENTER] }
-			 sort { lc $a->[Strassen::NAME()] cmp lc $b->[Strassen::NAME()]}
-			 @res],
-	     -labels => {map { my $n = $_->[Strassen::NAME()];
-			       $n =~ s/\|/ /;
-			       $n .= " (" . $_->[$STRASSEN_LABEL] . ")";
-			       ($_->[$STRASSEN_CENTER] => $n)
-			   } @res},
-	     -linebreak => "true",
-	    ), br;
-	print submit(-value => "Zeigen");
-	print end_form, hr;
-	show_form();
-	print end_html;
+	if (@res > 1) {
+	    print header, start_html("Auswahl nach Straßen und Orten"), h1("Auswahl nach Straßen und Orten");
+	    print h2("Mehrere Treffer");
+	    print start_form;
+	    print radio_group
+		(-name=>"coords",
+		 -values => [map { $_->[$STRASSEN_CENTER] }
+			     sort { lc $a->[Strassen::NAME()] cmp lc $b->[Strassen::NAME()]}
+			     @res],
+		 -labels => {map { my $n = $_->[Strassen::NAME()];
+				   $n =~ s/\|/ /;
+				   $n .= " (" . $_->[$STRASSEN_LABEL] . ")";
+				   ($_->[$STRASSEN_CENTER] => $n)
+			       } @res},
+		 -linebreak => "true",
+		), br;
+	    print submit(-value => "Zeigen");
+	    print end_form, hr;
+	    show_form();
+	    print end_html;
+	}
+    }
+    if (@res == 1) {
+	my $xy = $res[0]->[Strassen::COORDS()]->[0];
+	redirect_to_ms($xy);
     }
 }
 
@@ -296,22 +321,29 @@ sub redirect_to_ms {
     }
     $args{-scope} = "all," . $args{-scope};
 
-    if ($args{-scope} eq 'city') {
-	@args{qw(-width -height)} = (2000, 2000);
-    } elsif ($args{-scope} eq 'region') {
-	@args{qw(-width -height)} = (5000, 5000);
+    if (param("width")) {
+	$args{-width} = param("width");
+	$args{-height} = (param("height") ? param("height") : $args{-width});
     } else {
-	@args{qw(-width -height)} = (8000, 8000);
+	if ($args{-scope} eq 'city') {
+	    @args{qw(-width -height)} = (2000, 2000);
+	} elsif ($args{-scope} eq 'region') {
+	    @args{qw(-width -height)} = (5000, 5000);
+	} else {
+	    @args{qw(-width -height)} = (8000, 8000);
+	}
     }
-    $args{-layers} = [qw(bahn flaechen gewaesser
-			 faehren route grenzen orte)] if !$args{-layers};
+
+    if (param("layer")) {
+	$args{-layers} = [param("layer")];
+    } else {
+	$args{-layers} = [qw(bahn flaechen gewaesser
+			     faehren route grenzen orte)] if !$args{-layers};
+    }
+
     require BBBikeMapserver;
     my $ms = BBBikeMapserver->new;
-    if (0 && $ENV{SERVER_NAME} =~ /radzeit\.de/) { # XXX !!!
-	$ms->read_config("$FindBin::RealBin/bbbike2.cgi.config"); # XXX do not hardcode
-    } else {
-	$ms->read_config("$FindBin::RealBin/bbbike.cgi.config"); # XXX do not hardcode
-    }
+    $ms->read_config("$FindBin::RealBin/bbbike.cgi.config");
     $ms->{Coords} = [$coord] if $coord;
     $ms->{CGI} = CGI->new;
     $ms->start_mapserver(%args);
@@ -340,6 +372,7 @@ sub scope {
 
 sub file_to_label {
     my $file = shift;
+    # XXX do not hardcode
     my %map =
 	(
 	 'Berlin.coords.data' => 'Berliner Koordinaten',
@@ -395,3 +428,7 @@ sub file_to_label {
 }
 
 __END__
+
+Calling example:
+
+http://<path to mapserver_address.cgi>?coords=5775,11631;layer=bahn;layer=flaechen;layer=route;layer=gewaesser;layer=sehenswuerdigkeit;width=2000

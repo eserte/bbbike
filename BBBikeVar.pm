@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.24 2003/06/09 21:44:34 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.25 2003/06/28 20:35:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2001 Slaven Rezic. All rights reserved.
@@ -55,10 +55,14 @@ $UPDATE_DIR	   = 'http://www.onlineoffice.de/bbbike';
 # URL auf die Diplomarbeit
 $DIPLOM_URL        = 'http://user.cs.tu-berlin.de/~eserte/diplom/';
 
+# The URL of the mapserver CGI
 $BBBIKE_MAPSERVER_URL  = 'http://www.radzeit.de/cgi-bin/mapserv';
+# Address form for mapserver
 $BBBIKE_MAPSERVER_ADDRESS_URL = 'http://www.radzeit.de/cgi-bin/mapserver_address.cgi';
-#XXX evtl. link unter www.bbbike.de einrichten
-$BBBIKE_MAPSERVER_INIT = 'http://www.radzeit.de/mapserver/brb/';
+# The initial mapserver URL (direct)
+$BBBIKE_MAPSERVER_DIRECT = 'http://www.radzeit.de/mapserver/brb/';
+# The initial mapserver URL (indirect, from www.bbbike.de)
+$BBBIKE_MAPSERVER_INDIRECT = "http://www.bbbike.de/mapserver/brb/";
 
 1;
 

@@ -100,7 +100,7 @@ use vars qw(
      $without_zoom_factor $coord_output_int
     );
 
-use vars qw(@speed @power
+use vars qw(@speed @power $speed_power_reference_string
 	    $wetter_station %wetter_source
 	    $wetter_force_update $wetter_route_update
 	    $do_route_strnames $do_route_strnames_km

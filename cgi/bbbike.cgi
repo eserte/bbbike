@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.33 2003/06/27 21:42:23 eserte Exp $
+# $Id: bbbike.cgi,v 6.34 2003/06/29 10:17:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -66,7 +66,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $debug $tmp_dir $mapdir_fs $mapdir_url $local_route_dir
 	    $bbbike_root $bbbike_images $bbbike_url $bbbike_html
 	    $max_proc $use_miniserver $auto_switch_slow  $use_fcgi
-	    $modperl_lowmem $use_imagemap $create_imagemap $q $cgic %persistent
+	    $modperl_lowmem $use_imagemap $create_imagemap $q %persistent
 	    $str $lstr $lstr2 $multistr $orte $orte2 $multiorte
 	    $ampeln $qualitaet_s_net $handicap_s_net
 	    $strcat_net $radwege_strcat_net $routen_net $comments_net
@@ -374,7 +374,7 @@ Absolute URL to the page which starts the mapserver program.
 
 =cut
 
-$mapserver_init_url = $BBBike::BBBIKE_MAPSERVER_INIT;
+$mapserver_init_url = $BBBike::BBBIKE_MAPSERVER_DIRECT;
 
 =item $mapserver_address_url
 
@@ -645,7 +645,7 @@ use vars qw(@ISA);
 
 } # jetzt beginnt wieder package main
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.33 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.34 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -701,6 +701,7 @@ if (!$use_background_image) {
 
 my @pref_keys = qw/speed cat quality ampel green/;
 
+my $cgic;
 $q = new CGI::BBBike;
 $str = new Strassen "strassen" unless defined $str;
 #$str = new Strassen::Lazy "strassen" unless defined $str;
@@ -992,6 +993,10 @@ while (1) {
     } else {
 	choose_form();
     }
+
+    # XXX Seems to be necessary for CGI::Compress::Gzip to flush the
+    # output buffer. XXX But does not always work...
+    undef $cgic;
 
   LOOP_CONT:
     if ($use_miniserver) {
@@ -3531,7 +3536,9 @@ sub draw_route {
 	my $ms = BBBikeMapserver->new_from_cgi($q, -tmpdir => $tmp_dir);
 	$ms->read_config("$0.config");
 	my $layers;
-	if (grep { $_ eq 'all' } $q->param("draw")) {
+	if (defined $q->param("layer")) { # Mapserver styled parameters
+	    $layers = [ "route", $q->param("layer") ];
+	} elsif (grep { $_ eq 'all' } $q->param("draw")) {
 	    $layers = [ $ms->all_layers ];
 	} else {
 	    $layers = [ "route",
@@ -3564,6 +3571,10 @@ sub draw_route {
 	     -externshape => 1,
 	     -layers => $layers,
 	     -cookie => $cookie,
+	     (defined $q->param("mapext")
+	      ? (-mapext => $q->param("mapext"))
+	      : ()
+	     ),
 	    );
 	return;
     }
@@ -4059,7 +4070,8 @@ sub etag {
 # Write a HTTP header (always with etag) and maybe enabled compression
 sub http_header {
     my(@args) = @_;
-    if (!$ENV{MOD_PERL} && eval { require CGI::Compress::Gzip; 1 }) {
+    if (!$ENV{MOD_PERL} &&
+	eval { require CGI::Compress::Gzip; 1 }) {
 	$CGI::Compress::Gzip::global_give_reason = $debug;
 	$cgic = CGI::Compress::Gzip->new;
 	print $cgic->header(@args, etag());

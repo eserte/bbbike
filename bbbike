@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.106 2003/06/28 14:27:26 eserte Exp $
+# $Id: bbbike,v 3.106 2003/06/28 14:27:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -665,7 +665,7 @@ eval { local $SIG{'__DIE__'};
    ['fontweight','=s',undef,
     label => M"Zeichensatzform", var => \$font_weight],
    ['geometry','=s',undef,
-    subtype => "geometry",
+    subtype => "geometry", # XXX use fix_geometry for tk::getopt editor
     label => M"Geometry", var => \$geometry],
    ['scaling','=f',undef,
     label => M"Skalierung", var => \$scaling],
@@ -760,6 +760,13 @@ eval { local $SIG{'__DIE__'};
 			  N  => 100,
 			  NN => 100},
     label => M"Straßenkategorien konfigurieren", var => \%strcat_speed],
+   ['radwegeoptimierung','!',0, var => \$radwege_optimierung,
+    label => M"Radwege-Optimierung"],
+   ['N_RW_optimization', '!', 0, var => \$N_RW_optimization, nogui => 1],
+   ['greenoptimierung', '!', 0, var => \$green_optimization,
+    label => M"Grüne Wege bevorzugen"],
+   ['steigungoptimierung', '!', 0, var => \$steigung_optimierung,
+    label => M"Steigungsoptimierung"],
    ['handicapoptimierung','!',0,
     label => M"Sonstige Behinderungen beachten", var => \$handicap_s_optimierung],
    ['handicapwerte','!',{q0 => 100,
@@ -773,12 +780,16 @@ eval { local $SIG{'__DIE__'};
     label => M"Gesperrte Straßen beachten", nogui => 1,
     var => sub {
 	$sperre{'einbahn'} = $sperre{'sperre'} = $sperre{'wegfuehrung'} = 1;
-    }],
+    },
+    savevar => \$sperre{'einbahn'},
+   ],
    ['einbahn-strict','!',undef,
     label => M"Alle Einbahnstraßen *strikt* beachten", nogui => 1,
     var => sub {
 	$sperre{'einbahn-strict'} = 1;
-    }],
+    },
+    savevar => \$sperre{'einbahn-strict'},
+   ],
    ['nichttragen','!',0,
     label => M"Tragen strikt vermeiden", var => \$sperre{'tragen'}],
    ['ampeloptimierung','!',0,
@@ -787,12 +798,15 @@ eval { local $SIG{'__DIE__'};
     label => M"Beschleunigung (m/s^2)", var => \$beschleunigung],
    ['wind','!',1,
     label => M"Windgeschwindigkeit beachten", var => \$want_wind],
+   ['faehre','!',0,
+    label => M"Fähren verwenden", var => \$use_faehre],
    ['bikepwr','!',1,	alias => [qw(bikepower)],
     label => M"Bikepower verwenden", var => \$bikepwr],
    ['resetpower','!',undef, nogui => 1, var => sub { @power = () }],
    ['power','=i@',undef, nogui => 1, var => \@power], # XXX gui => 1
    ['resetspeed','!',undef, nogui => 1, var => sub { @speed = () }],
    ['speed','=i@',[qw(15 20)], nogui => 1, var => => \@speed], # XXX gui => 1
+   ['speedpowerreference','=s',undef, nogui => 1, var => \$speed_power_reference_string],
    ['from','=s',undef, nogui => 1, -var => \$init_from],
    ['to','=s',undef, nogui => 1, -var => \$init_to],
 
@@ -851,7 +865,7 @@ eval { local $SIG{'__DIE__'};
     label => M"GV-Fenster wiederverwenden", var => \$gv_reuse],
    ['server','!',undef,
     label => M"Server-Modus", var => \$use_server],
-   ['autosave','!',undef,
+   ['autosave','!',1,
     label => M"Speichern beim Beenden", var => \$autosave_opts],
    ['environment','=s','normal',
     # "novacom" (für GDF-Daten als Standard)
@@ -883,6 +897,7 @@ speicherplatzsparender.",
 		 $do_www = 0;
 		 $no_map = 1;
 		 $public = 1;
+		 $autosave_opts = 0;
 		 undef $proxy;
 	     }],
    ['v','!',0,	alias => [qw(verbose)],
@@ -916,7 +931,7 @@ speicherplatzsparender.",
 
 eval {
     require Tk::Getopt;
-    Tk::Getopt->VERSION(0.40);
+    Tk::Getopt->VERSION(0.49);
 };
 if ($@) { # XXX
 die "Please report to author: use opttable_to_getopt!!!! XXX";
@@ -1074,6 +1089,28 @@ if ($bikepwr) {
 }
 if (!@power) {
     @power = (50, 100);
+}
+
+TRY_SPEED_POWER_REFERENCE_STRING: {
+    $active_speed_power{Type} = 'power';
+    $active_speed_power{Index} = 0;
+    if (defined $speed_power_reference_string) {
+	my($type, $val) = split /:/, $speed_power_reference_string;
+	if ($type =~ /^(speed|power)$/) {
+	    my $i = 0;
+	    for ($type eq 'speed' ? @speed : @power) {
+		if ($val eq $_) {
+		    $active_speed_power{Index} = $i;
+		    $active_speed_power{Type} = $type;
+		    last TRY_SPEED_POWER_REFERENCE_STRING;
+		}
+		$i++;
+	    }
+	    warn "Ignore reference $type $val"; # XXX german
+	} else {
+	    warn "-reference should be in the form type:value, where type is either speed or power"; # XXX german
+	}
+    }
 }
 
 mk_speed_txt();
@@ -1744,7 +1781,7 @@ if (0) { # XXX activate if implemented in updatekm()
     }
 }
 
-change_active_speed_power("power", 0);
+change_active_speed_power($active_speed_power{Type}, $active_speed_power{Index});
 
 ##### Wind & Wetter #####
 $wind_frame = $top_frame->Frame
@@ -6074,7 +6111,7 @@ sub exit_app_noninteractive {
 
     if ($autosave_opts && defined $opt) {
 	# get actual geometry
-	$geometry = $top->geometry;
+	$geometry = fix_geometry();
 	# get actual font parameters
 	if ($top->can("fontActual")) {
 	    my %f_attr = $top->fontActual($font{'normal'});
@@ -6082,6 +6119,12 @@ sub exit_app_noninteractive {
 	    $font_size   = $f_attr{-size};
 	    $font_weight = $f_attr{-weight};
 	}
+	# Reference power/speed
+	my $speed_or_power = ($active_speed_power{Type} eq 'speed'
+			      ? \@speed
+			      : \@power
+			     );
+	$speed_power_reference_string = $active_speed_power{Type} . ":" . $speed_or_power->[$active_speed_power{Index}];
 	# save options
 	$opt->save_options;
     }
@@ -10154,14 +10197,21 @@ sub show_info {
 	}
 	$info_text->insert("end", "\n\n");
 
+	my @mapserver_def = ([$BBBike::BBBIKE_MAPSERVER_ADDRESS_URL,
+			      "Mapserver"]);
 	if ($devel_host) {
-	    my $url = "http://www/~eserte/bbbike/cgi/mapserver_address.cgi?coords=" . join(",", anti_transpose($coords[0], $coords[1]));
-	    $info_text->insert("end", "Lokaler Mapserver", "link1");
+	    push @mapserver_def, ["http://www/~eserte/bbbike/cgi/mapserver_address.cgi", "Lokaler Mapserver"];
+	}
+	for my $def (@mapserver_def) {
+	    my $mapserver_url = $def->[0];
+	    my $url = "$mapserver_url?coords=" . join(",", anti_transpose($coords[0], $coords[1]));
+	    $info_text->insert("end", $def->[1], "link1");
 	    $info_text->tagBind("link1", "<ButtonRelease-1>" => sub {
 				    require WWWBrowser;
 				    WWWBrowser::start_browser($url);
 				}
 			       );
+	    $info_text->insert("end", "\n");
 	}
 
 	if (eval { require Astro::Sunrise }) {
@@ -10186,7 +10236,6 @@ sub show_info {
 
 	    # XXX use fixed font or tabs
 	    $info_text->insert("end", <<EOF);
-
 
 Sonnenaufgang: $sunrise_real
 Dämmerung        ab:
@@ -15372,6 +15421,14 @@ sub geometry {
     my($t, @extends) = @_;
     $t->geometry("$extends[GEOMETRY_WIDTH]x$extends[GEOMETRY_HEIGHT]" .
 		 "+$extends[GEOMETRY_X]+$extends[GEOMETRY_Y]");
+}
+
+sub fix_geometry {
+    my $geom_string = shift || $top->geometry;
+    my(@extends) = parse_geometry_string($geom_string);
+    $extends[GEOMETRY_HEIGHT] += ($top->wrapper)[1];
+    "$extends[GEOMETRY_WIDTH]x$extends[GEOMETRY_HEIGHT]" .
+	"+$extends[GEOMETRY_X]+$extends[GEOMETRY_Y]"
 }
 
 # check if the toplevel is too large and resize, if appropriate

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.2 2003/06/23 22:04:48 eserte Exp $
+# $Id: cgihead2.t,v 1.3 2003/06/30 07:32:05 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -39,7 +39,8 @@ push @prog, ($BBBike::HOMEPAGE,
 	     $BBBike::DIPLOM_URL,
 	     $BBBike::BBBIKE_MAPSERVER_URL,
 	     $BBBike::BBBIKE_MAPSERVER_ADDRESS_URL,
-	     $BBBike::BBBIKE_MAPSERVER_INIT,
+	     $BBBike::BBBIKE_MAPSERVER_DIRECT,
+	     $BBBike::BBBIKE_MAPSERVER_INDIRECT,
 	    );
 
 plan tests => 2 * scalar @prog;
