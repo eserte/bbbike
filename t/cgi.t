@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.22 2004/02/24 17:08:18 eserte Exp $
+# $Id: cgi.t,v 1.23 2004/03/30 19:57:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004 Slaven Rezic. All rights reserved.
@@ -40,6 +40,7 @@ my $ortsuche = 0; # XXX funktioniert nicht mehr
 my $do_display = 0;
 my $do_xxx;
 my $v = 0;
+my %skip;
 
 my $ua = new LWP::UserAgent;
 $ua->agent("BBBike-Test/1.0");
@@ -52,8 +53,9 @@ if (!GetOptions("cgiurl=s" => sub {
 		"display!" => \$do_display,
 		"xxx" => \$do_xxx,
 		"v!" => \$v,
+		"skip-mapserver!" => \$skip{mapserver},
 	       )) {
-    die "usage: $0 [-cgiurl url] [-fast] [-ortsuche] [-display] [-v]";
+    die "usage: $0 [-cgiurl url] [-fast] [-ortsuche] [-display] [-v] [-skip-mapserver]";
 }
 
 if (!@urls) {
@@ -129,29 +131,33 @@ for my $cgiurl (@urls) {
 
     # search_coord
     for my $output_as ("", qw(xml print perldump yaml yaml-short palmdoc mapserver)) {
-	$req = new HTTP::Request
-	    ('GET', "$action?startname=Dudenstr.&startplz=10965&startc=9222%2C8787&zielname=Grimmstr.+%28Kreuzberg%29&zielplz=10967&zielc=11036%2C9592&pref_seen=1&output_as=$output_as", $hdrs);
-	$res = $ua->request($req);
-	ok($res->is_success, "output_as=$output_as") or diag $res->as_string;
-	my $content = uncompr($res);
-	if ($output_as eq '' || $output_as eq 'print') {
-	    is($res->content_type, 'text/html');
-	    ok($content =~ /L.*nge:.*(\d[\d.,]+).*km/ && $1 > 0);
-	    ok($content =~ /angekommen/);
-	} elsif ($output_as eq 'palmdoc') {
-	    is($res->content_type, 'application/x-palm-database');
-	    ok($content =~ /Dudenstr/);
-	} elsif ($output_as eq 'perldump') {
-	    is($res->content_type, 'text/plain');
-	    my $route = $cpt->reval($content);
-	    is(ref $route, 'HASH');
-	} elsif ($output_as eq 'mapserver') {
-	    #warn $res->content_type;
-	} elsif ($output_as eq 'xml' && is_in_path('xmllint')) {
-	    open(XMLLINT, "| xmllint - 2>&1 >/dev/null");
-	    print XMLLINT $content;
-	    close XMLLINT;
-	    is($?, 0, "xmllint") or diag $content;
+    SKIP: {
+	    skip "No mapserver tests", 1 if $skip{mapserver};
+
+	    $req = new HTTP::Request
+		('GET', "$action?startname=Dudenstr.&startplz=10965&startc=9222%2C8787&zielname=Grimmstr.+%28Kreuzberg%29&zielplz=10967&zielc=11036%2C9592&pref_seen=1&output_as=$output_as", $hdrs);
+	    $res = $ua->request($req);
+	    ok($res->is_success, "output_as=$output_as") or diag $res->as_string;
+	    my $content = uncompr($res);
+	    if ($output_as eq '' || $output_as eq 'print') {
+		is($res->content_type, 'text/html');
+		ok($content =~ /L.*nge:.*(\d[\d.,]+).*km/ && $1 > 0);
+		ok($content =~ /angekommen/);
+	    } elsif ($output_as eq 'palmdoc') {
+		is($res->content_type, 'application/x-palm-database');
+		ok($content =~ /Dudenstr/);
+	    } elsif ($output_as eq 'perldump') {
+		is($res->content_type, 'text/plain');
+		my $route = $cpt->reval($content);
+		is(ref $route, 'HASH');
+	    } elsif ($output_as eq 'mapserver') {
+		#warn $res->content_type;
+	    } elsif ($output_as eq 'xml' && is_in_path('xmllint')) {
+		open(XMLLINT, "| xmllint - 2>&1 >/dev/null");
+		print XMLLINT $content;
+		close XMLLINT;
+		is($?, 0, "xmllint") or diag $content;
+	    }
 	}
     }
 
@@ -357,10 +363,11 @@ for my $cgiurl (@urls) {
 
     # Klick on Mapserver link
     SKIP: {
-	if ($cgiurl =~ /bbbike-fast.cgi/) {
-	    skip("Does not work with CGI::MiniSvr", 1) for (1..6);
-	    last SKIP;
-	}
+	my $tests = 6;
+	skip "Does not work with CGI::MiniSvr", $tests
+	    if ($cgiurl =~ /bbbike-fast.cgi/);
+	skip "No mapserver tests", $tests
+	    if $skip{mapserver};
 
 	$req = new HTTP::Request
 	    (GET => "$action?mapserver=1", $hdrs);
@@ -440,34 +447,40 @@ for my $cgiurl (@urls) {
 		       "svg", "mapserver",
 		       "pdf", "pdf-auto", "pdf-landscape",
 		      ) {
-	my $imagetype_param = ($imagetype ne "" ? "imagetype=$imagetype&" : "");
-	# This coords are sensitive to changes if search_algorithm=C-A*-2 is
-	# used. Expect failures in this case and try to fix the coords list.
-	my $url = "$action?${imagetype_param}coords=9222%2C8787%219227%2C8890%219796%2C8905%219799%2C8962%219958%2C8966%219962%2C9237%219987%2C9238%2110109%2C9240%2110189%2C9403%2110298%2C9649%2110345%2C9764%2110408%2C9800%2110480%2C9949%2110503%2C10046%2110490%2C10080%2110511%2C10128%2110605%2C10312%2110859%2C10333%2110962%2C10340%2111114%2C10338%2111336%2C10390%2111370%2C10398%2111454%2C10400%2111660%2C10402%2111949%2C10414%2112230%2C10437%2112274%2C10436%2112328%2C10442%2112755%2C10552%2112899%2C10595%2112980%2C10575%2113035%2C10635%2113082%2C10634%2113178%2C10623%2113216%2C10664%2113297%2C10781%2113332%2C10832%2113409%2C11004%2113546%2C11352%2113594%2C11489%2113720%2C11459%2113890%2C11411%2114139%2C11269%2114211%2C11229%2114286%2C11186%2114442%2C11101%2114509%2C11060%2114677%2C11027%2114752%2C11041%2114798%2C10985&startname=Dudenstr.&zielname=Sonntagstr.&windrichtung=E&windstaerke=2&geometry=400x300&draw=str&draw=wasser&draw=flaechen&draw=ampel&draw=strname&draw=title&draw=all";
-	$req = new HTTP::Request('GET', $url, $hdrs);
+    SKIP: {
+	    my $tests = 3;
+	    skip "No mapserver tests", $tests if $skip{mapserver};
 
-	$res = $ua->request($req);
-	ok($res->is_success, "imagetype=$imagetype") or diag $res->as_string;
-	if ($imagetype eq 'gif') {
-	    is($res->header('Content_Type'), 'image/gif');
-	    my $content = uncompr($res);
-	    ok($content =~ /^GIF8/) or diag "Not a gif: $url"; # no qr//!
-	    display($res);
-	} elsif ($imagetype =~ /(png|jpeg)/) {
-	    is($res->header('Content_Type'), 'image/' . $imagetype);
-	    ok(defined uncompr($res));
-	    display($res);
-	} elsif ($imagetype =~ /pdf/) {
-	    is($res->header('Content_Type'), 'application/pdf');
-	    ok(defined uncompr($res));
-	    display($res);
-	} elsif ($imagetype =~ /svg/) {
-	    is($res->header('Content_Type'), "image/svg+xml");
-	    ok(defined uncompr($res));
-	    display($res);
-	} else {
-	    like($res->header('Content_Type'), qr{^text/html}, $imagetype);
-	    ok(defined uncompr($res));
+	    my $imagetype_param = ($imagetype ne "" ? "imagetype=$imagetype&" : "");
+	    # This coords are sensitive to changes if
+	    # search_algorithm=C-A*-2 is used. Expect failures in this
+	    # case and try to fix the coords list.
+	    my $url = "$action?${imagetype_param}coords=9222%2C8787%219227%2C8890%219796%2C8905%219799%2C8962%219958%2C8966%219962%2C9237%219987%2C9238%2110109%2C9240%2110189%2C9403%2110298%2C9649%2110345%2C9764%2110408%2C9800%2110480%2C9949%2110503%2C10046%2110490%2C10080%2110511%2C10128%2110605%2C10312%2110859%2C10333%2110962%2C10340%2111114%2C10338%2111336%2C10390%2111370%2C10398%2111454%2C10400%2111660%2C10402%2111949%2C10414%2112230%2C10437%2112274%2C10436%2112328%2C10442%2112755%2C10552%2112899%2C10595%2112980%2C10575%2113035%2C10635%2113082%2C10634%2113178%2C10623%2113216%2C10664%2113297%2C10781%2113332%2C10832%2113409%2C11004%2113546%2C11352%2113594%2C11489%2113720%2C11459%2113890%2C11411%2114139%2C11269%2114211%2C11229%2114286%2C11186%2114442%2C11101%2114509%2C11060%2114677%2C11027%2114752%2C11041%2114798%2C10985&startname=Dudenstr.&zielname=Sonntagstr.&windrichtung=E&windstaerke=2&geometry=400x300&draw=str&draw=wasser&draw=flaechen&draw=ampel&draw=strname&draw=title&draw=all";
+	    $req = new HTTP::Request('GET', $url, $hdrs);
+
+	    $res = $ua->request($req);
+	    ok($res->is_success, "imagetype=$imagetype") or diag $res->as_string;
+	    if ($imagetype eq 'gif') {
+		is($res->header('Content_Type'), 'image/gif');
+		my $content = uncompr($res);
+		ok($content =~ /^GIF8/) or diag "Not a gif: $url"; # no qr//!
+		display($res);
+	    } elsif ($imagetype =~ /(png|jpeg)/) {
+		is($res->header('Content_Type'), 'image/' . $imagetype);
+		ok(defined uncompr($res));
+		display($res);
+	    } elsif ($imagetype =~ /pdf/) {
+		is($res->header('Content_Type'), 'application/pdf');
+		ok(defined uncompr($res));
+		display($res);
+	    } elsif ($imagetype =~ /svg/) {
+		is($res->header('Content_Type'), "image/svg+xml");
+		ok(defined uncompr($res));
+		display($res);
+	    } else {
+		like($res->header('Content_Type'), qr{^text/html}, $imagetype);
+		ok(defined uncompr($res));
+	    }
 	}
     }
 
