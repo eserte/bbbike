@@ -1,4 +1,6 @@
 .check_*
+.create_fragezeichen
+.fragezeichen-*
 .rsync_include
 .strassen.tmp
 ampeln.st
@@ -57,3 +59,9 @@ vorfahrt.st
 wasserstrassen.st
 wasserumland.st
 wasserumland2.st
+landstrassen-cooked
+landstrassen-cooked.st
+landstrassen2-cooked
+landstrassen2-cooked.st
+strassen-cooked
+strassen-cooked.st
