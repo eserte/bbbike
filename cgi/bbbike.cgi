@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.59 2004/01/03 21:19:52 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.61 2004/01/17 20:31:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -95,7 +95,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $bbbike_script $cgi $port
 	    $search_algorithm $use_background_image
 	    $use_apache_session $apache_session_module $cookiename
-	    @temp_blocking
+	    @temp_blocking $use_cgi_compress_gzip
 	   );
 
 #XXX in mod_perl/Apache::Registry operation there are a lot of "shared
@@ -607,7 +607,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.59 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.61 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -4145,12 +4145,9 @@ sub etag {
 sub http_header {
     my(@header_args) = @_;
     push @header_args, etag(), (-Vary => "User-Agent");
-    if (#!$ENV{MOD_PERL} &&
-	#0 && # XXX CGI::Compress::Gzip 0.11 not ready for prime time!!!
-	#XXX
-	$ENV{SERVER_NAME}=~/herceg.de/ &&
+    if ($use_cgi_compress_gzip &&
 	eval { require CGI::Compress::Gzip;
-	       CGI::Compress::Gzip->VERSION(0.15); # XXX bug in 0.15, 0.16 does not exist...
+	       CGI::Compress::Gzip->VERSION(0.16);
 	       package MyCGICompressGzip;
 	       @MyCGICompressGzip::ISA = 'CGI::Compress::Gzip';
 	       sub isCompressibleType {

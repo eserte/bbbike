@@ -1,4 +1,4 @@
-BBBike RELEASE 3.13
+BBBike RELEASE 3.13 (2004-01-17)
 
 bbbike (ptk)
 - support for Tk804.025
@@ -11,6 +11,8 @@ bbbike (ptk)
 - mousewheel support
 - -printbackend option may be ps or pdf, fallback on Windows to pdf
 - internal reorganization (more autouse'd functions, BBBikeGlobalVars ...)
+- -gpsdevice: better defaults for Win and Linux
+- "Route speichern als": more entries formerly only in -advanced mode available
 - numerous bugfixes and little improvements
 
 Modules

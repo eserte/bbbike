@@ -1,27 +1,26 @@
 /* XPM */
-static char *noname[] = {
-/* width height ncolors chars_per_pixel */
+static char *ampel[] = {
+/* columns rows colors chars-per-pixel */
 "6 16 4 1",
-/* colors */
-"` c #000000",
-"a c #FA1340",
-"b c #3BFA34",
-"c c #FFFF00",
+"  c opaque",
+". c #3bfa34",
+"X c #fa1340",
+"o c yellow",
 /* pixels */
-"``````",
-"``aa``",
-"`aaaa`",
-"`aaaa`",
-"``aa``",
-"``````",
-"``cc``",
-"`cccc`",
-"`cccc`",
-"``cc``",
-"``````",
-"``bb``",
-"`bbbb`",
-"`bbbb`",
-"``bb``",
-"``````"
+"      ",
+"  XX  ",
+" XXXX ",
+" XXXX ",
+"  XX  ",
+"      ",
+"  oo  ",
+" oooo ",
+" oooo ",
+"  oo  ",
+"      ",
+"  ..  ",
+" .... ",
+" .... ",
+"  ..  ",
+"      "
 };

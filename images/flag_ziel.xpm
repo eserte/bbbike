@@ -1,27 +1,26 @@
 /* XPM */
-static char *noname[] = {
-/* width height ncolors chars_per_pixel */
+static char *flag_ziel[] = {
+/* columns rows colors chars-per-pixel */
 "20 16 4 1",
-/* colors */
-"` c #000000",
-"a s mask c none",
-"b c #000080",
-"c c #FFFFFF",
+"  c opaque",
+". c navy",
+"X c white",
+"o c None",
 /* pixels */
-"`aaaaaaaaaaaaaaaaaaa",
-"``c```aaaaaaaaaaaaaa",
-"a`ac````aaaaaaaaaaaa",
-"a`ac````cccc```aaaaa",
-"a`acc```````````ccaa",
-"aa`a``cc````ccc```ba",
-"aa`a```cc````cbbbbbb",
-"aa`acbbcc```bbbaaaaa",
-"aa`abaabbbbbbaaaaaaa",
-"aaa`aaaaaaaaaaaaaaaa",
-"aaa`aaaaaaaaaaaaaaaa",
-"aaa`aaaaaaaaaaaaaaaa",
-"aaa`aaaaaaaaaaaaaaaa",
-"aaaa`aaaaaaaaaaaaaaa",
-"aaaa`aaaaaaaaaaaaaaa",
-"aaaa`aaaaaaaaaaaaaaa"
+" ooooooooooooooooooo",
+"  X   oooooooooooooo",
+"o oX    oooooooooooo",
+"o oX    XXXX   ooooo",
+"o oXX           XXoo",
+"oo o  XX    XXX   .o",
+"oo o   XX    X......",
+"oo oX..XX   ...ooooo",
+"oo o.oo......ooooooo",
+"ooo oooooooooooooooo",
+"ooo oooooooooooooooo",
+"ooo oooooooooooooooo",
+"ooo oooooooooooooooo",
+"oooo ooooooooooooooo",
+"oooo ooooooooooooooo",
+"oooo ooooooooooooooo"
 };

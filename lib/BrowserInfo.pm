@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.38 2004/01/04 10:49:16 eserte Exp $
+# $Id: BrowserInfo.pm,v 1.40 2004/01/17 13:45:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, $q) = @_;
@@ -97,7 +97,9 @@ sub set_info {
 			      );
     $self->{'wap_browser'} = ($q->user_agent('sie-c3i') ||
 			      $q->user_agent('sie-s35') ||
-			      $q->user_agent('SIE_S55') ||
+			      $q->user_agent('SIE-S55') ||
+			      $q->user_agent('SIE-MC60') ||
+			      $q->user_agent('SIE-SX1') ||
                               $q->user_agent('nokia-wap-toolkit') ||
 			      $q->user_agent('Nokia7110') ||
 			      $q->user_agent('Nokia6210') ||
@@ -106,11 +108,14 @@ sub set_info {
 			      $q->user_agent('Nokia6100') ||
 			      $q->user_agent('Nokia3650') ||
 			      $q->user_agent('Nokia7650') ||
+			      $q->user_agent('Nokia6600') ||
+			      $q->user_agent('NokiaN-Gage') ||
 			      $q->user_agent('SEC_SGHV200') ||
 			      $q->user_agent('SonyEricssonP800') ||
 			      $q->user_agent('SonyEricssonT68') ||
 			      $q->user_agent('SonyEricssonT300') ||
 			      $q->user_agent('SonyEricssonT610') ||
+			      $q->user_agent('MOT-') ||
 			      (defined $ENV{HTTP_ACCEPT} &&
 			       $ENV{HTTP_ACCEPT} =~ /vnd.wap.wml/i
 			      )
@@ -160,6 +165,8 @@ sub set_info {
 	$self->{'display_size'} = [125,95]; # visible screen size
     } elsif ($q->user_agent('TriumEclipse')) { # XXX
 	$self->{'display_size'} = [143,120];
+    } elsif ($q->user_agent('SIE-SX1')) {
+	$self->{'display_size'} = [170,144];
     } elsif ($q->user_agent('SIE-')) { # S55, ...
 	$self->{'display_size'} = [101,80];
     } elsif ($q->user_agent('SAMSUNG-SGH-')) { # X...,E700
@@ -169,6 +176,8 @@ sub set_info {
 	$self->{'display_size'} = [128,141];
     } elsif ($q->user_agent('portalmmm')) {
 	$self->{'display_size'} = [120,120]; # minimum size, newer imode devices have larger displays
+    } elsif ($q->user_agent('MOT-A835')) {
+	$self->{'display_size'} = [165,162]; # XXX roughly...
     } elsif ($q->user_agent('Nokia')) {
 	my %nokias =
 	    (
@@ -194,6 +203,7 @@ sub set_info {
 	     Nokia3650 => [170, 144], # visible size
 	     Nokia3660 => [170, 144],
 	     Nokia7650 => [170, 144], # max image width is smaller? check wapbbbike.cgi output
+	     Nokia6600 => [170, 144],
 	     "NokiaN-Gage" => [170, 144],
 	    );
     TRY: {

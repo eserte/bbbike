@@ -1,14 +1,16 @@
 /* XPM */
-static char * ferry_klein_xpm[] = {
-"8 8 3 1",
-" 	c None",
-".	c #2BA2E2",
-"+	c #FFFFFF",
-"........",
-".++++++.",
-".+..+++.",
-"........",
-"........",
-".+.+.+..",
-"..+.+.+.",
-"........"};
+static char *ferry_klein[] = {
+/* columns rows colors chars-per-pixel */
+"8 8 2 1",
+"  c #2ba2e2",
+". c white",
+/* pixels */
+"        ",
+" ...... ",
+" .  ... ",
+"        ",
+"        ",
+" . . .  ",
+"  . . . ",
+"        "
+};

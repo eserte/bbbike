@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Kreuzungen.pm,v 1.10 2004/01/13 19:53:07 eserte Exp eserte $
+# $Id: Kreuzungen.pm,v 1.11 2004/01/17 13:40:18 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the

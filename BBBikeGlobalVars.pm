@@ -211,7 +211,7 @@ use vars qw($status_label $status_button $status_button_column
 use vars qw(%cursor %cursor_mask);
 use vars qw(%busy_watch_args);
 use vars qw($pp_color);
-use vars qw($xadd_anchor_type $yadd_anchor_type);
+use vars qw($xadd_anchor_type $yadd_anchor_type %label_spaceadd);
 use vars qw(@normal_stack_order @set_stack_order);
 use vars qw(%perlmod_install_advice_seen);
 

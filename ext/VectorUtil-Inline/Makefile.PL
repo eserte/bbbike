@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.PL,v 1.2 2003/01/08 20:59:26 eserte Exp $
+# $Id: Makefile.PL,v 1.3 2004/01/17 23:26:31 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,7 +13,7 @@
 # WWW:  http://bbbike.sourceforge.net
 #
 
-use Inline::MakeMaker;
+use ExtUtils::MakeMaker;
 
 use Config;
 use Cwd;
@@ -23,13 +23,13 @@ chdir("../..");
 my $root = getcwd();
 chdir($thisdir);
 
-WriteInlineMakefile
+WriteMakefile
   (
    'NAME'	   => 'VectorUtil::Inline',
    'VERSION_FROM'  => 'Inline.pm',
    'AUTHOR'        => 'Slaven Rezic (slaven@rezic.de)',
 
-   'CCFLAGS'       => "$Config{ccflags} -ffast-math -fomit-frame-pointer -lm",
+   'CCFLAGS'       => "$Config{ccflags} -ffast-math -fomit-frame-pointer",
   );
 
 sub MY::install {

@@ -2,19 +2,19 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.15 2004/01/04 21:54:41 eserte Exp $
+# $Id: wapcgi.t,v 1.16 2004/01/18 09:42:21 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
 
-use LWP::UserAgent;
+use LWP::UserAgent 2.003; # get method
 use Getopt::Long;
 use File::Temp qw(tempfile);
 use URI;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!eval q{
@@ -86,7 +86,7 @@ for my $wapurl (@wap_url) {
 	like($resp->content, qr/Sonntagstr/, "Sonntagstr. in $url");
 
 	my($surr_url) = $resp->content =~ /href=\"([^\"]+sess=[^\"]+)\"/;
-	ok(defined $surr_url);
+	ok(defined $surr_url, "Session parameter exists? --- only with Apache::Session");
 	isnt($surr_url, "");
 	$surr_url = $absolute->($surr_url);
 

@@ -1,16 +1,18 @@
 /* XPM */
-static char * ampel_klein2_rahmen_xpm[] = {
-"4 8 5 1",
-" 	c None",
-".	c #000000",
-"+	c #FA1340",
-"@	c #FFFF00",
-"#	c #09C409",
-"....",
-".++.",
-".++.",
-".@@.",
-".@@.",
-".##.",
-".##.",
-"...."};
+static char *ampel_klein2_rahmen[] = {
+/* columns rows colors chars-per-pixel */
+"4 8 4 1",
+"  c opaque",
+". c #09c409",
+"X c #fa1340",
+"o c yellow",
+/* pixels */
+"    ",
+" XX ",
+" XX ",
+" oo ",
+" oo ",
+" .. ",
+" .. ",
+"    "
+};

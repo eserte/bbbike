@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.13 2004/01/04 21:54:41 eserte Exp $
+# $Id: bbbikerouting.t,v 1.14 2004/01/18 09:42:21 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -232,7 +232,6 @@ sub do_tests {
 	ok($routing->RouteInfo->[-1]->{Whole} > $routing->RouteInfo->[-2]->{Whole}, "Distance Ok");
     }
 
- XXX:
     {
 	my $routing2 = BBBikeRouting->new;
 	$routing2->init_context;
@@ -362,6 +361,7 @@ sub do_tests {
     ok(scalar @{ $routing->Path } > 0, "scope=wideregion test");
     ok(scalar @{ $routing->RouteInfo } > 0);
 
+ XXX:
     {
 	my $routing2 = BBBikeRouting->new;
 	$routing2->init_context;
@@ -373,7 +373,8 @@ sub do_tests {
 	my $inacc_xy = "21306,381"; # B96a
 	$start_pos->Coord($inacc_xy);
 	$routing2->fix_position($start_pos);
-	ok($start_pos->Coord ne $inacc_xy, "fixed start position");
+	ok($start_pos->Coord ne $inacc_xy,
+	   "fixed start position from $inacc_xy to " . $start_pos->Coord);
 	ok(Strassen::Util::strecke_s($inacc_xy, $start_pos->Coord) < 600,
 	   "new fixed position is reasonably near");
 	$routing2->Start($start_pos);
@@ -382,7 +383,8 @@ sub do_tests {
 	eval {
 	    $routing2->search;
 	};
-	is($@, "", "successful search");
+	is($@, "", "successful search between " .
+	   $start_pos->Coord . " and " . $routing2->Goal->Coord);
 	ok($routing2->Path && scalar @{ $routing2->Path } > 0,
 	   "Non-empty path");
     }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTrans.pm,v 1.5 2003/06/02 23:17:12 eserte Exp $
+# $Id: BBBikeTrans.pm,v 1.6 2004/01/17 17:56:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
@@ -157,7 +157,7 @@ sub anti_transpose_pt_medium {
 my $create_transpose_subs_no_int_created = 0;
 sub old_create_transpose_subs_no_int {
     return if ($create_transpose_subs_no_int_created);
-    warn "XXX Using old_create_transpose_subs_no_int ...\n";
+    #warn "XXX Using old_create_transpose_subs_no_int ...\n";
     $create_transpose_subs_no_int_created++;
     my $code = '
 sub transpose_ls_slow {

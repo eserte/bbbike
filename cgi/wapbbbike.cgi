@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.16 2004/01/03 23:53:34 eserte Exp $
+# $Id: wapbbbike.cgi,v 2.17 2004/01/16 00:32:08 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2001,2003,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -257,19 +257,21 @@ sub _any_image {
 
     my $convert_to = undef;
     my %extra_args;
-    if ($BBBikeConf::wapbbbike_use_mapserver &&
-	eval { require BBBikeDraw::MapServer; 1 }
-       ) {
-	# XXX Usually can't use gif with gd:
-	if ($imagetype ne 'png') {
-	    if (!$cgi->Accept("image/png")) {
-		$convert_to = $imagetype;
+    if ($BBBikeConf::wapbbbike_use_mapserver) {
+	if (!eval { require BBBikeDraw::MapServer; 1 }) {
+	    warn $@ if $@;
+	} else {
+	    # XXX Usually can't use gif with gd:
+	    if ($imagetype ne 'png') {
+		if (!$cgi->Accept("image/png")) {
+		    $convert_to = $imagetype;
+		}
+		$imagetype = "png";
 	    }
-	    $imagetype = "png";
+	    $extra_args{Conf} = BBBikeDraw::MapServer::Conf->bbbike_cgi_ipaq_conf
+		(ImageType => $imagetype);
+	    $extra_args{Module} = "MapServer";
 	}
-	$extra_args{Conf} = BBBikeDraw::MapServer::Conf->bbbike_cgi_ipaq_conf
-	    (ImageType => $imagetype);
-	$extra_args{Module} = "MapServer";
     }
 
     my(@geometry) = @{$self->{BrowserInfo}->{display_size}};
@@ -391,7 +393,7 @@ sub wap_surrounding_image_page {
     use constant LAST    => 3;
     use constant PREVDIR => 4;
     use constant NEXTDIR => 5;
-    use constant _LAST   => 5;
+    use constant LAST_INX => 5;
 
     my $q2 = $self->Context->CGI;
     my $q3 = CGI->new($q2->query_string);
@@ -413,7 +415,7 @@ sub wap_surrounding_image_page {
 	    if ($i > 0) {
 		$label .= " (" . $route_info->[$i-1]->{Whole} . ")";
 	    }
-	    for (0 .. _LAST) {
+	    for (0 .. LAST_INX) {
 		push @q, CGI->new($q2->query_string);
 	    }
 	    if ($i == 0) {

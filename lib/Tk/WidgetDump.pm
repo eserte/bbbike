@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: WidgetDump.pm,v 1.28 2002/07/29 21:02:24 eserte Exp eserte $
+# $Id: WidgetDump.pm,v 1.29 2004/01/14 22:52:15 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package Tk::WidgetDump;
 use vars qw($VERSION);
 use strict;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
 
 package # hide from CPAN indexer
   Tk::Widget;
@@ -1191,7 +1191,10 @@ sub entry {
     my $e = $p->Entry(-textvariable => $valref)->pack(-side => "left");
     $p->Button(-text => "Browse",
 	       -command => sub {
-		   require Tk::FontDialog;
+		   if (!eval { require Tk::FontDialog; 1 }) {
+		       $p->messageBox(-message => "Tk::FontDialog is not installed!");
+		       return;
+		   }
 		   my $new_font = $f->FontDialog(-initfont => $$valref)->Show;
 		   if (defined $new_font) {
 		       $$valref = $new_font;
@@ -1386,6 +1389,23 @@ with arguments only, e.g. (for creating a line on a canvas):
 
 Because C<WidgetDump> is a pseudo widget, it cannot be configured
 itself.
+
+=head1 BUGS
+
+=over
+
+=item * Changing configuration values
+
+You have to hit <Return> to see the changes. The changes are not
+reflected in the configuration window, you have to hit the "Refresh"
+button.
+
+=item * Tk::WidgetDump does not follow the conventions of a "real"
+widget (ConfiSpecs etc.)
+
+=item * The number of open windows may be confusing
+
+=back
 
 =head1 AUTHOR
 

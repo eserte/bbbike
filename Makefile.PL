@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.97 2004/01/11 12:02:25 eserte Exp eserte $
+# $Id: Makefile.PL,v 1.99 2004/01/17 20:58:03 eserte Exp $
 
 use 5.005;
 
@@ -353,8 +353,8 @@ EOF
 EOF
     }
     if (-r "ext/Makefile") {
-	$out .= <<'EOF';
-	cd ext && $(MAKE) test
+	$out .= <<'EOF'; # XXX "build" should not be here!
+	cd ext && $(MAKE) build test PERL=$(FULLPERL)
 EOF
     }
     if (-r "projects/www.radzeit.de/Makefile") {
@@ -372,18 +372,19 @@ EOF
 }
 
 sub MY::install {
-    <<'EOF';
+    my $out = "";
+    $out .= <<'EOF';
 install:
 	@echo "*** No installation process yet."
 	@echo ""
 	@sleep 1
 
 EOF
-    return;
+    return $out;
 
     # XXX disabled for now --- the installer does not work with newer
     # KDE or GNOME releases
-    <<'EOF';
+    $out .= <<'EOF';
 install:
 	@echo "*** This will proceed an unusual installation process."
 	@echo "*** The program and data will reside in this directory."
@@ -398,6 +399,7 @@ install:
 #	@echo "(e.g. from /usr/local/bin/bbbike to /usr/local/BBBike/bbbike)"
 
 EOF
+    $out;
 }
 
 sub MY::dist_dir {

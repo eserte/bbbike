@@ -1,12 +1,14 @@
 /* XPM */
-static char * ubahn_mini_xpm[] = {
-"5 5 4 1",
-" 	c None",
-".	c #000080",
-"+	c #FFFFFF",
-"@	c #9B9BCD",
-".....",
-".+.+.",
-".+.+.",
-".@+@.",
-"....."};
+static char *ubahn_mini[] = {
+/* columns rows colors chars-per-pixel */
+"5 5 3 1",
+"  c navy",
+". c #9b9bcd",
+"X c white",
+/* pixels */
+"     ",
+" X X ",
+" X X ",
+" .X. ",
+"     "
+};

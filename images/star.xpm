@@ -2,8 +2,8 @@
 static char *star[] = {
 /* columns rows colors chars-per-pixel */
 "13 13 2 1",
-"  c black",
-". s mask c none",
+"  c opaque",
+". c None",
 /* pixels */
 "...... ......",
 "...... ......",

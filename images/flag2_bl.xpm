@@ -1,27 +1,26 @@
 /* XPM */
-static char *noname[] = {
-/* width height ncolors chars_per_pixel */
+static char *flag2_bl[] = {
+/* columns rows colors chars-per-pixel */
 "20 16 4 1",
-/* colors */
-"` c #000000",
-"a s mask c none",
-"b c #000080",
-"c c #0000FF",
+"  c opaque",
+". c navy",
+"X c blue",
+"o c None",
 /* pixels */
-"`aaaaaaaaaaaaaaaaaaa",
-"``ccccaaaaaaaaaaaaaa",
-"a`acccccaaaaaaaaaaaa",
-"a`accccccccccccaaaaa",
-"a`acccccccccccccccaa",
-"aa`accccccccccccccba",
-"aa`accccccccccbbbbbb",
-"aa`acbbcccccbbbaaaaa",
-"aa`abaabbbbbbaaaaaaa",
-"aaa`aaaaaaaaaaaaaaaa",
-"aaa`aaaaaaaaaaaaaaaa",
-"aaa`aaaaaaaaaaaaaaaa",
-"aaa`aaaaaaaaaaaaaaaa",
-"aaaa`aaaaaaaaaaaaaaa",
-"aaaa`aaaaaaaaaaaaaaa",
-"aaaa`aaaaaaaaaaaaaaa"
+" ooooooooooooooooooo",
+"  XXXXoooooooooooooo",
+"o oXXXXXoooooooooooo",
+"o oXXXXXXXXXXXXooooo",
+"o oXXXXXXXXXXXXXXXoo",
+"oo oXXXXXXXXXXXXXX.o",
+"oo oXXXXXXXXXX......",
+"oo oX..XXXXX...ooooo",
+"oo o.oo......ooooooo",
+"ooo oooooooooooooooo",
+"ooo oooooooooooooooo",
+"ooo oooooooooooooooo",
+"ooo oooooooooooooooo",
+"oooo ooooooooooooooo",
+"oooo ooooooooooooooo",
+"oooo ooooooooooooooo"
 };

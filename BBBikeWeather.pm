@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeWeather.pm,v 1.2 2003/11/16 22:58:27 eserte Exp $
+# $Id: BBBikeWeather.pm,v 1.3 2004/01/17 17:56:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -35,7 +35,7 @@ sub BBBikeWeather::wetter_dir_exists {
 # ggfs. neu.
 ### AutoLoad Sub
 sub BBBikeWeather::ignore_weather {
-    reset_wind();
+    BBBikeWeather::reset_wind();
     if ($wetter_route_update) {
 	redraw_path();
 	updatekm();

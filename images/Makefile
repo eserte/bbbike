@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.14 2003/12/22 19:56:20 eserte Exp $
+# $Id: Makefile,v 1.14 2003/12/22 19:56:20 eserte Exp eserte $
 #
 
 # XXX needs MORE work
@@ -36,19 +36,31 @@ bbbike_splash_tkbabybike.xpm: srtbike.xpm
 
 .SUFFIXES: .gif .xpm .png .wbmp
 
-.xpm.gif:
+# .xpm.gif:
+# 	convert $> $@
+# 	chmod ugo+r $@
+
+# .xpm.png:
+# 	convert $> $@
+# 	chmod ugo+r $@
+
+.png.xpm:
 	convert $> $@
 	chmod ugo+r $@
 
-.xpm.png:
+.png.gif:
 	convert $> $@
 	chmod ugo+r $@
 
-.xpm.wbmp:
+# .xpm.wbmp:
+# 	convert $> $@
+# 	chmod ugo+r $@
+
+.png.wbmp:
 	convert $> $@
 	chmod ugo+r $@
 
-xpm-to-gif:	\
+png-to-gif:	\
 		airport.gif \
 		ampel_klein2_rahmen.gif \
 		apfel.gif \
@@ -78,36 +90,38 @@ xpm-to-gif:	\
 		ubahn_mini.gif \
 		zugbruecke.gif \
 		opt.gif \
+		flag2_bl_centered.gif \
+		flag_via_centered.gif \
+		flag_ziel_centered.gif \
 
+png-to-xpm:	\
+		ampel.xpm \
+		ampel_klein2_rahmen.xpm \
+		andreaskr.xpm \
+		apfel.xpm \
+		birne.xpm \
+		church.xpm \
+		ferry.xpm \
+		ferry_klein.xpm \
+		flag2_bl.xpm \
+		flag_ziel.xpm \
+		kirsche.xpm \
+		pflaume.xpm \
+		sbahn.xpm \
+		sbahn_klein.xpm \
+		sbahn_mini.xpm \
+		star.xpm \
+		steigung.xpm \
+		ubahn.xpm \
+		ubahn_klein.xpm \
+		ubahn_mini.xpm \
+		zugbruecke.xpm \
+		hatched_ring.xpm \
+		flag2_bl_centered.xpm \
+		flag_via_centered.xpm \
+		flag_ziel_centered.xpm \
 
-xpm-to-png:	\
-		ampel.png \
-		ampel_klein2_rahmen.png \
-		andreaskr.png \
-		apfel.png \
-		birne.png \
-		church.png \
-		ferry.png \
-		ferry_klein.png \
-		flag2_bl.png \
-		flag_ziel.png \
-		kirsche.png \
-		pflaume.png \
-		sbahn.png \
-		sbahn_klein.png \
-		sbahn_mini.png \
-		star.png \
-		steigung.png \
-		ubahn.png \
-		ubahn_klein.png \
-		ubahn_mini.png \
-		zugbruecke.png \
-
-png-to-xpm:
-	convert hatched_ring.png hatched_ring.xpm
-	chmod ugo+r hatched_ring.xpm
-
-xpm-to-wbmp:	\
+png-to-wbmp:	\
 		flag2_bl.wbmp \
 
 

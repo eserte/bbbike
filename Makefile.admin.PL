@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.16 2004/01/11 12:02:49 eserte Exp eserte $
+# $Id: Makefile.admin.PL,v 1.19 2004/01/17 20:57:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -129,68 +129,6 @@ rsync-cs-test:
 rsync-sf-data:
 	$(RSYNC_DATA_CMD) $(BBBIKE_SF_DEST)/cgi-bin/BBBike/data
 
-#  ######################################################################
-#  # radzeit.de rules
-
-#  rsync-radzeit-data:
-#  	$(RSYNC_RADZEIT_DATA)
-#  #	$(RSYNC_DATA_CMD) $(BBBIKE_RADZEIT_DEST)/data
-
-#  rsync-radzeit-test-data:
-#  	$(RSYNC_RADZEIT_TEST_DATA)
-
-#  rsync-radzeit-prog-fresh:	do-rsync-radzeit-prog \
-#  				do-ssh-radzeit
-
-#  rsync-radzeit-test-prog-fresh:	prepare-rsync-radzeit-test-prog \
-#  				do-rsync-radzeit-test-prog \
-#  				do-ssh-radzeit-test
-
-#  rsync-radzeit-prog-quick:	do-rsync-radzeit-prog \
-#  				do-ssh-radzeit
-
-#  rsync-radzeit-test-prog-quick:	do-rsync-radzeit-test-prog \
-#  				do-ssh-radzeit-test
-
-#  prepare-rsync-radzeit-test-prog:
-#  	ssh -l $(BBBIKE_RADZEIT_USER) $(BBBIKE_RADZEIT_HOST) sh -c 'test -d $(BBBIKE_RADZEIT_DIR2) && echo rm -rf $(BBBIKE_RADZEIT_DIR2); cp -Rp $(BBBIKE_RADZEIT_DIR) $(BBBIKE_RADZEIT_DIR2)'
-
-#  do-rsync-radzeit-prog:	distdir
-#  	cd $(DISTVNAME) && $(RSYNC) -Pvzr --exclude "data/**" . $(BBBIKE_RADZEIT_DEST)
-#  	$(RSYNC_RADZEIT_DATA)
-#  	ssh -l $(BBBIKE_RADZEIT_USER) $(BBBIKE_RADZEIT_HOST) sh -c 'test -d $(BBBIKE_RADZEIT_DIR)/miscsrc || mkdir $(BBBIKE_RADZEIT_DIR)/miscsrc; true'
-#  	cd miscsrc && $(RSYNC) -Pvzr bbd2esri $(BBBIKE_RADZEIT_DEST)/miscsrc/
-#  	cd cgi && $(RSYNC) -Pvzr bbbike-radzeit.cgi.config $(BBBIKE_RADZEIT_USER)@$(BBBIKE_RADZEIT_HOST):$(BBBIKE_RADZEIT_CGI_DIR)/bbbike.cgi.config
-
-#  do-rsync-radzeit-test-prog:	distdir
-#  	cd $(DISTVNAME) && $(RSYNC) -Pvzr --exclude "data/**" . $(BBBIKE_RADZEIT_DEST2)
-#  	$(RSYNC_RADZEIT_TEST_DATA)
-#  	cd miscsrc && $(RSYNC) -Pvzr bbd2esri $(BBBIKE_RADZEIT_DEST2)/miscsrc/
-#  	cd cgi && $(RSYNC) -Pvzr bbbike-radzeit.cgi.config $(BBBIKE_RADZEIT_USER)@$(BBBIKE_RADZEIT_HOST):$(BBBIKE_RADZEIT_CGI_DIR)/bbbike2.cgi.config
-
-#  do-ssh-radzeit:
-#  	ssh -l $(BBBIKE_RADZEIT_USER) $(BBBIKE_RADZEIT_HOST) \
-#  	    sh -c 'cp -p $(BBBIKE_RADZEIT_DIR)/cgi/bbbike.cgi \
-#  	          	 $(BBBIKE_RADZEIT_CGI_DIR)/bbbike.cgi;
-#  	    	   cp -p $(BBBIKE_RADZEIT_DIR)/cgi/mapserver_comment.cgi \
-#  	          	 $(BBBIKE_RADZEIT_CGI_DIR)/mapserver_comment.cgi;
-#  	    	   cp -p $(BBBIKE_RADZEIT_DIR)/cgi/mapserver_address.cgi \
-#  	          	 $(BBBIKE_RADZEIT_CGI_DIR)/mapserver_address.cgi;
-#  	    	   cp -p $(BBBIKE_RADZEIT_DIR)/cgi/wapbbbike.cgi \
-#  	          	 $(BBBIKE_RADZEIT_CGI_DIR)/wapbbbike.cgi;
-#  		  '
-
-#  do-ssh-radzeit-test:
-#  	ssh -l $(BBBIKE_RADZEIT_USER) $(BBBIKE_RADZEIT_HOST) \
-#  	    cp -p $(BBBIKE_RADZEIT_DIR2)/cgi/bbbike.cgi \
-#  	          $(BBBIKE_RADZEIT_APACHE_DIR)/cgi-bin/bbbike2.cgi
-#  	ssh -l $(BBBIKE_RADZEIT_USER) $(BBBIKE_RADZEIT_HOST) \
-#  	    cp -p $(BBBIKE_RADZEIT_DIR2)/cgi/mapserver_comment.cgi \
-#  	          $(BBBIKE_RADZEIT_APACHE_DIR)/cgi-bin/mapserver_comment.cgi
-#  	ssh -l $(BBBIKE_RADZEIT_USER) $(BBBIKE_RADZEIT_HOST) \
-#  	    cp -p $(BBBIKE_RADZEIT_DIR2)/cgi/mapserver_address.cgi \
-#  	          $(BBBIKE_RADZEIT_APACHE_DIR)/cgi-bin/mapserver_address.cgi
-
 ######################################################################
 #
 
@@ -276,6 +214,14 @@ EOF
                               ) . "-devel.zip\n\n" .
 
     <<'EOF'
+#### development + distribution ##########################################
+
+dist-to-tmp:
+	$(PERL) -MExtUtils::Manifest=manicopy,maniread -e "manicopy(maniread(),'$(TMPDIR)/$(DISTVNAME)','best')"
+	find $(TMPDIR)/$(DISTVNAME) -type d -exec chmod ugo+rx {} \;
+	find $(TMPDIR)/$(DISTVNAME) -type f -exec chmod ugo+r {} \;
+
+
 # bbbike.cgi #####################
 
 CGI_ARCH=	$(TMPDIR)/bbbikecgi.zip
@@ -367,7 +313,7 @@ distdir2:
 	umask 022 && $(MAKE) $(MAKEFLAGS) distdir
 	# for testing with extension based systems like Windows
 	cd $(DISTVNAME) && ln -s bbbike bbbike.pl
-	-rm -f /tmp/$(DISTVNAME)
+	-rm -fr /tmp/$(DISTVNAME)
 	ln -s `pwd`/$(DISTVNAME) /tmp/$(DISTVNAME)
 
 develdist:

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVia.pm,v 1.11 2003/11/16 22:18:09 eserte Exp $
+# $Id: BBBikeVia.pm,v 1.11 2003/11/16 22:18:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -108,7 +108,7 @@ sub BBBikeVia::show_via_flags {
 	    $p1->[SRP_TYPE] eq POINT_SEARCH
 	   ) {
 	    my($x,$y) = transpose(split(/,/, $p1->[SRP_COORD]));
-	    $c->createImage($x+7, $y-7, -image => $flag_photo{"via"},
+	    $c->createImage($x, $y, -image => $flag_photo{"via"},
 			    -tags => ['route', "", "viaflag", "via-$i"],
 			   );
 	}

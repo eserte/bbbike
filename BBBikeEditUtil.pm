@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEditUtil.pm,v 1.7 2003/10/19 21:59:26 eserte Exp $
+# $Id: BBBikeEditUtil.pm,v 1.7 2003/10/19 21:59:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -54,16 +54,18 @@ sub get_generated_files {
     opendir(DIR, $datadir) or die "Can't opendir $datadir: $!";
     my $f;
     while(defined(my $f = readdir DIR)) {
-	next if $f =~ /^(\.|.*Makefile.*|README.*|BASE)/;
+	next if $f =~ /^(\.|.*[Mm]akefile.*|README.*|BASE)/;
 	next if $f =~ /(-info|\.coords\.data|\.desc|\.st|~)$/;
 	if (-f "$datadir/$f" && $f !~ /-orig$/) {
 	    push @files, $f;
 	}
     }
     closedir DIR;
-    my $fr_file = "$FindBin::RealBin/misc/fragezeichen";
-    if (-e $fr_file) {
- 	push @files, $fr_file;
+    for my $misc_file (qw(fragezeichen zebrastreifen)) {
+	my $file = "$FindBin::RealBin/misc/$misc_file";
+	if (-e $file) {
+	    push @files, $file;
+	}
     }
     sort @files;
 }

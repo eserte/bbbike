@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.9 2004/01/13 18:31:18 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.10 2004/01/17 20:11:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -156,8 +156,9 @@ sub BBBikeHeavy::load_plugin {
 	if (!$ok) {
 	    eval 'require $file';
 	    if ($@) {
-		status_message(Mfmt("Die Datei %s konnte nicht geladen werden. Grund: %s", $file, $@), "error");
-		warn $@;
+		my $err = $@;
+		status_message(Mfmt("Die Datei %s konnte nicht geladen werden. Grund: %s", $file, $err), "error");
+		warn $err;
 		return;
 	    }
 	}

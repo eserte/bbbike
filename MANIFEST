@@ -99,6 +99,7 @@ README
 README.english
 README.html
 README.english.html
+TODO.pod
 Route.pm
 Route/Heavy.pm
 Route/PDF.pm
@@ -277,8 +278,7 @@ ext/Strassen-Inline2/t/db_impl.t
 ext/Strassen-Inline2/t/hv_impl.t
 ext/Strassen-Inline2/ppport.h
 ext/VectorUtil-Inline/Inline.pm
-ext/VectorUtil-Inline/InlineDist.pm
-ext/VectorUtil-Inline/InlinePerl.pm
+ext/VectorUtil-Inline/Inline.xs
 ext/VectorUtil-Inline/Makefile.PL
 ext/VectorUtil-Inline/t/vectorutil.t
 ext/VectorUtil-Inline/t/point_in_poly.t

@@ -1,23 +1,26 @@
 /* XPM */
-static char * steigung_xpm[] = {
+static char *steigung[] = {
+/* columns rows colors chars-per-pixel */
 "16 16 4 1",
-" 	c None",
-".	c #FF0000",
-"+	c #FFFFFF",
-"@	c #000000",
-"        .       ",
-"       ...      ",
-"      ..+..     ",
-"      .+++.     ",
-"     ..+++..    ",
-"    ..+++++..   ",
-"    .+++++++.   ",
-"   ..+++++++..  ",
-"   .++++++@@@.  ",
-"  .+++++@@@@@.  ",
-" ..+++@@@@@@@.. ",
-" .++@@@@@@@@@@. ",
-"..+@@@@@@@@@@@..",
-".@@@@@@@@@@@@@@.",
-" .............. ",
-"  ............  "};
+"  c opaque",
+". c red",
+"X c white",
+"o c None",
+/* pixels */
+"oooooooo.ooooooo",
+"ooooooo...oooooo",
+"oooooo..X..ooooo",
+"oooooo.XXX.ooooo",
+"ooooo..XXX..oooo",
+"oooo..XXXXX..ooo",
+"oooo.XXXXXXX.ooo",
+"ooo..XXXXXXX..oo",
+"ooo.XXXXXX   .oo",
+"oo.XXXXX     .oo",
+"o..XXX       ..o",
+"o.XX          .o",
+"..X           ..",
+".              .",
+"o..............o",
+"oo............oo"
+};

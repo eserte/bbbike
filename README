@@ -79,10 +79,10 @@ ausgeführt werden. Dazu ist das Perl-Modul L<Inline::C> notwendig.
 
 BBBike und Perl benötigen ca. 32 MB an Festplattenspeicher.
 
-Die Datei L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.12-Windows.zip>
+Die Datei L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13-Windows.zip>
 laden und mit WinZip an einer
 beliebigen Stelle auf der Festplatte auspacken. Zum Starten von BBBike
-muss das Icon C<bbbike.bat> im Verzeichnis BBBike-3.12-Windows
+muss das Icon C<bbbike.bat> im Verzeichnis BBBike-3.13-Windows
 angeklickt werden.
 
 Mit C<setup.bat> kann man optional BBBike nach C<C:\BBBike>
@@ -265,7 +265,7 @@ C<lib/Text/ScriptTemplate.pm> von Taisuke Yamada, C<lib/enum.pm> von
 Zenin, C<ext/Strassen-Inline/heap.[ch]> der Internet Software
 Consortium, C<ext/BBBikeXS/sqrt.c> von Eyal Lebedinsky.
 
-C<BBBike-3.12-Windows.zip> enthält einen Teil der
+C<BBBike-3.13-Windows.zip> enthält einen Teil der
 C<SiePerl>-Distribution.
 
 
