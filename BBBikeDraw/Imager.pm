@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Imager.pm,v 1.10 2004/03/25 07:30:24 eserte Exp $
+# $Id: Imager.pm,v 1.11 2004/03/25 11:18:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -45,7 +45,7 @@ use vars @colors;
 #      }
 #  }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -214,11 +214,19 @@ sub draw_map {
     }
 
     foreach my $strecke (@netz) {
-	$strecke->init;
 	my $flaechen_pass = $self->{FlaechenPass};
-	while(1) {
-	    my $s = $strecke->next;
-	    last if !@{$s->[1]};
+$strecke->make_grid(UseCache => 1);
+my @grids = $strecke->get_new_grids($self->{Min_x}, $self->{Min_y},
+				    $self->{Max_x}, $self->{Max_y},
+				   );
+#	$strecke->init;
+#	while(1) {
+#	    my $s = $strecke->next;
+#	    last if !@{$s->[1]};
+for my $grid (@grids) {
+if ($strecke->{Grid}{$grid}) {
+for my $strpos (@{ $strecke->{Grid}{$grid}}) {
+my $s = $strecke->get($strpos);
 	    my $cat = $s->[2];
 	    if ($cat =~ /^F:(.*)/) {
 		my $cat = $1;
@@ -249,6 +257,8 @@ sub draw_map {
 	    }
 	}
     }
+}
+}
 
 #XXX not yet
 #      # $self->{Xk} bezeichnet den Vergrößerungsfaktor
