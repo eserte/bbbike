@@ -15,7 +15,8 @@ SORTBYCAT=		${MISCSRCDIR}/sortbycat
 BBD2ESRI=		${MISCSRCDIR}/bbd2esri
 CONVERT_RADWEGE=	${MISCSRCDIR}/convert_radwege
 
-SHPTREE=		/usr/local/src/work/mapserver/shptree
+MAPSERVER_BIN_DIR?=	/usr/local/src/work/mapserver
+SHPTREE=		${MAPSERVER_BIN_DIR}/shptree
 
 mapfiles:	mapfiles-prepare mapfiles-convert mapfiles-shptree \
 		mapfiles-permissions mapfiles-reference
@@ -303,7 +304,7 @@ $(MAPFILES_DATA_DIR)/fragezeichen.shp:	${MISCDIR}/fragezeichen
 $(MAPFILES_DATA_DIR)/nolighting.shp:	nolighting
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/nolighting nolighting
 
-mapfiles-shptree:	${ALL_MAPFILES:S/.shp$/.qix/}
+mapfiles-shptree:	${ALL_MAPFILES:M/.shp/.qix/}
 
 .SUFFIXES: .shp .qix
 
