@@ -313,6 +313,7 @@ gnome/bbbike.mime
 html/allstreet.html
 html/empty.html
 html/legende.html
+html/help.html
 html/pleasewait.html
 html/presse.html
 html/bbbike_result.js
@@ -748,3 +749,5 @@ images/redcross.png
 images/redcross.xpm
 images/usercross.png
 lib/PDF/Create/MyPage.pm
+BBBikeOvlPlugin.pm
+GPS/Ovl.pm

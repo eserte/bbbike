@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.37 2004/12/29 21:48:52 eserte Exp $
+# $Id: Makefile,v 2.38 2005/01/01 19:01:56 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -439,10 +439,7 @@ fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 	    ${DATADIR}/handicap_s-orig ${DATADIR}/gesperrt-orig | \
 	    perl -nle '/(.*\t)(\S+)(.*)/ && !/\b(\d{4}-\d{2}-\d{2}|[0123]?\d\.[01]?\d\.\d{4})\b/ && print "Noch immer? $$1?::inwork$$3"' | \
 	    ${CONVERT2HAFAS} -basefile ${DATADIR}/handicap_s-orig -- - >> $@
-	cat .fragezeichen-other-source >> $@
-.for i in ${SOURCE_TARGETS:S|^|.fragezeichen-|}
-	cat $(i) >> $@
-.endfor
+	cat .fragezeichen-other-source ${SOURCE_TARGETS:S|^|.fragezeichen-|} >> $@
 	-@$(READONLY) $@
 
 .for i in ${SOURCE_TARGETS}
@@ -791,13 +788,41 @@ check-dates:	.check_dates
 	@${MISCSRCDIR}/check_dates -reldays 14 *-orig
 	@touch $@
 
-check-crossings:	.check_crossings
+check-crossings:	${PERSISTENTTMPDIR}/crossings.bbd \
+			${PERSISTENTTMPDIR}/crossings_gewaesser.bbd \
+			${PERSISTENTTMPDIR}/crossings_bahn.bbd \
+			${PERSISTENTTMPDIR}/crossings_gewaesser_noignore.bbd
 
-.check_crossings:	strassen landstrassen landstrassen2 brunnels
+${PERSISTENTTMPDIR}/crossings.bbd:	strassen landstrassen landstrassen2 \
+					brunnels
 	${MISCSRCDIR}/check_crossings -v \
-	    -o /tmp/crossings.bbd -against brunnels \
+	    -o $@~ -against brunnels \
 	    strassen landstrassen landstrassen2
-	@touch $@
+	mv $@~ $@
+
+# XXX überirdische U-Bahnen?
+# XXX Andreaskreuz
+${PERSISTENTTMPDIR}/crossings_bahn.bbd:	strassen sbahn rbahn brunnels
+	${MISCSRCDIR}/check_crossings -v \
+	    -o $@~ -against brunnels \
+	    strassen sbahn rbahn
+	mv $@~ $@
+
+# Note also the empty string in the -ignore option!
+${PERSISTENTTMPDIR}/crossings_gewaesser.bbd:	\
+					strassen wasserstrassen brunnels
+	${MISCSRCDIR}/check_crossings -v \
+	    -ignore "Fasaneriegraben,Packereigraben,Tränkegraben,Teufelsseekanal,(See im Tiergarten),,Luiseninsel,Fennpfuhl,Heidekampgraben,Karpfenteich,Panke,Nordgraben,Tegeler Fließ,Wuhle,Flutgraben" \
+	    -o $@~ -against brunnels \
+	    strassen wasserstrassen
+	mv $@~ $@
+
+${PERSISTENTTMPDIR}/crossings_gewaesser_noignore.bbd:	\
+					strassen wasserstrassen brunnels
+	${MISCSRCDIR}/check_crossings -v \
+	    -o $@~ -against brunnels \
+	    strassen wasserstrassen
+	mv $@~ $@
 
 ## Einzeiler zum Extrahieren einer Postleitzahl:
 # perl -F'\|' -nale '$F[2] == 12489 and $F[3] and print "$F[0] $F[1]\tX $F[3]"' Berlin.coords.data > /tmp/12489.bbd

@@ -3,7 +3,7 @@
 #: by http://www.berlinonline.de/berliner-zeitung/berlin/327989.html?2004-03-26 vvv
 Heinrich-Heine-Str.	? 10885,10928 10939,11045 11034,11249 11095,11389 11242,11720
 Leipziger Straße zwischen Leipziger Platz und Wilhelmstraße (entweder beidseitig oder nur auf der Südseite)	? 8733,11524 9046,11558
-Hochstr.	? 8456,15235 8607,15426 8923,15850 9059,16038
+Hochstr.	? 8456,15235 8607,15426 8865,15772 8923,15850 9059,16038
 Wiesenstr.	? 8607,15426 8283,15727 8185,15821 8158,15850 7960,15801
 Mollstr.	? 11905,13069 11839,13083 11456,13286 11319,13379 11170,13475
 Stralauer Str.	? 11351,12221 11304,12234 11139,12243 11094,12243 10946,12241 10825,12271 10780,12297 10732,12355
@@ -215,7 +215,7 @@ Zugbrücke?	? 32737,183789
 #XXX give up... Stimmt das: L19 Saatwinkler Damm Berlin-Haselhorst - Berlin-Tiergarten in beiden Richtungen Zwischen Gartenfelder Straße und Flughafen Tegel beidseitig wegen Bauarbeiten gesperrt bis 31.05.	? -303,15526 468,15640 982,15710 1257,15704 3033,15694
 #XXX Koordinaten stimmen nicht mehr! Darßer Str.: beidseitiger Radweg ja, eintragen!	? B24943,-13819 B23513,-13631
 #XXX Koordinaten stimmen nicht mehr! Granitzstr.: wenigstens teilweise Radweg Richtung Osten? (Richtung Westen definitiv kein Radweg)	? B14908,-13452 B15798,-14098
-Holsteiner Ufer abfahren, Verbindung zur Lessingstr. für Radfahrer? Am S-Bhf. Bellevue mit Kopfsteinpflaster (OK)	? 6690,12637 6597,12764 6354,12870 6212,12862 6171,12856 6177,12920
+Holsteiner Ufer abfahren, Verbindung zur Lessingstr. für Radfahrer? Am S-Bhf. Bellevue mit Kopfsteinpflaster (OK)	? 6690,12637 6597,12764 6354,12870 6169,12867
 Uferweg an der Kongreßhalle noch in Bau	?::inwork 7775,12631 7670,12576
 Verlängerung der Paul-Löbe-Str. Richtung Kongreßhalle/Spree noch in Bau	?::inwork 7851,12590 7670,12576
 Alexanderufer: Existiert diese Verbindung?	? 8259,13009 8312,13296 8378,13425 8337,13541
@@ -228,7 +228,7 @@ Schillingstr. - Volkspark Friedrichshain: existiert eine direkte Verbindung?	? 1
 O-Grüneberg-Weg/Seelingstr. befahrbar, Verbindung existent?	? 3278,12021 3177,12100 3087,12084 2496,12023
 Schwaebische str durchgaengig befahrbar, aufnehmen?	? 6923,9266 6837,9389 6743,9523 6514,9775
 karl-schrader-str aufnehmen?	? 6837,9389 6859,9521
-(Naturlehrpfad): unbekannte Qualität	? 5692,23948 5216,24157
+(Naturlehrpfad): unbekannte Qualität	? 5692,23948 5609,23986 5535,24016 5216,24157
 Nordufer des Teltowkanals befahrbar?	? 8249,4769 8162,4725 7921,4451
 Falkenwalde - Neu-Kleinow: nach Bauarbeiten wahrscheinlich bessere Qualität	? 49480,96389 49576,95796 49681,95541 49872,95222
 Fahrenwalde - Brüssow: Bauarbeiten, Straße wahrscheinlich gesperrt. Nach den Bauarbeiten kann Q3 wahrscheinlich entfernt werden	? 54570,114006 53900,114432 53445,115324 53340,115664
@@ -299,8 +299,8 @@ Ortumfahrung Schwedt	? 65570,76221 66300,75725 67725,76050 68075,77375 68375,778
 Wendisch-Rietz - Radlow: Qualität?	? 54370,-20977 55509,-18644
 Normannenstr. (Treptow): Qualität?	? 19913,1678 19965,1462 19963,1238
 Lianenweg: Qualität? Durchfahrt möglich?	? 19686,1542 19965,1462
-Germanenstr.: Qualität?	? 19965,1462 20387,1359 20696,1134 21103,600 21159,450
-Fußgängerbrücke: Tragen?	? 21159,450 21265,334
+Germanenstr.: Qualität? Brücke über Fernbahnstrecke? 	? 19965,1462 20387,1359 20696,1134 21103,600 21159,450
+Fußgängerbrücke: Tragen? Als Brunnel eintragen!	? 21159,450 21265,334
 Ewaldstr.: Qualität?	? 21303,621 21159,450 20906,200 20690,175 20650,-50 20146,-541
 Paradiesstr.: Qualität?	? 21265,334 21168,212 21265,93 21343,-309 21281,-762
 Böcklinstr. (Potsdam): Qualität? (wahrscheinlich Kopfsteinpflaster)	? -11231,696 -11609,400
@@ -440,7 +440,7 @@ Otto-von-Simson-Str.: Einbahnstraße auch für Radfahrer?	? 2560,5044 2835,5410
 Gelfertstr - Faradayweg: Brücke über U-Bahn vorhanden?	? 2169,4854 2190,4823
 Thielpark - Hüttenweg: Verbindung vorhanden? Qualität?	? 2288,4932 2221,5081 1964,5070
 Von Gülzower Str. bis Neue Grottkauer Str.: für Radfahrer durchgängig befahrbar? Qualität?	? 23014,12706 22960,13298 23110,13966 23184,14100
-Carola-Neher-Str - Kastanienallee: für Radfahrer durchgängig befahrbar? Qualität?	? 23393,14356 23794,14533
+Carola-Neher-Str - Kastanienallee: für Radfahrer durchgängig befahrbar? Qualität?	? 23393,14356 23782,14598
 Wuhlewanderweg - Teterower Ring: Durchfahrt für Radfahrer möglich? Qualität?	? 22168,12931 22315,12984
 Wuhlewanderweg - Alte/Hellerdorfer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? 22827,14356 23172,14395
 Bäkepromenade?	? -2618,-1473 -2800,-1484 -2802,-1636
@@ -477,7 +477,7 @@ Prenzlauer Allee: tatsächlich ein Radstreifen, wie bei der MoPo behauptet?	?; 11
 Corinth/Rochowstr.: Ampelanlage noch nicht eingeschaltet	?::inwork 14170,10675
 Onkel-Bräsig-Str.: Qualität laut ADFC-Karte gut, Einbahnstraße auch für Radfahrer?	? 13305,4504 13345,5087 13323,5222
 Alt-Köpenick: laut Message-ID: <41614486$0$3640$9b4e6d93@newsread2.arcor-online.net> wieder gepflastert	? 22196,4847 22138,4661 22111,4562 22093,4499
-Alter Markt: laut Message-ID: <2scvijF1io77eU1@uni-berlin.de> soll hier asphaltiert werden	?::inwork 22502,4528 22472,4572 22383,4703
+Alter Markt: laut Message-ID: <2scvijF1io77eU1@uni-berlin.de> soll hier asphaltiert werden	?::inwork 22502,4528 22472,4572 22449,4605 22383,4703
 Grünstr.: Qualität? für Autofahrer gesperrt?	? 22111,4562 22162,4546 22312,4593
 Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut	?::inwork 31000,61437 30784,60950 30778,60221 30671,59984 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
 Togostr./Antwerpener Str.: Qualität der Fahrbahn? Ist eine Verbindung zwischen Antwerpener und Tegeler Str. für Radfahrer vorhanden?	? 5325,16915 5602,16718 6119,16203 6575,15831 7020,15314
@@ -544,3 +544,7 @@ Alexanderstr.: von 2005-01-03 bis 2005-10-31 für Autos gesperrt, auch Auswirkung
 Unter den Linden: irgendwo hier ist noch eine Ampel	? 9603,12372 9782,12393 9853,12402 9918,12411
 Delbrückstr. (Neukölln): Qualität? Einbahnstraße auch für Radfahrer?	? 12468,6592 12746,6635 13125,6717
 Koburger Str.: Qualität? Linksabbiegen in die Hauptstr. möglich?	? 6534,8467 6560,8219
+Krahmerstr.: laut ADFC-Karte gute Qualität; am Hindenburgdamm links abbiegen möglich; wie sieht die Verbindung zur Uferpromenade aus?	? 4534,3456 4801,3370 4862,3345 5015,3292
+Uferweg auf der Fischerinsel?	? 10672,11870 10517,11795 10370,11790 10314,11865
+Nach den Bauarbeiten in der Naumannstr. sollte hier auch ein -1 bei comments_kfzverkehr stehen	?::inwork 7499,7880 7497,8168 7582,8123
+Schönhauser Allee: gibt es im südlichen Abschnitt jetzt auch (benutzungspflichtige?) Radwege?	? 10746,13673 10793,13785 10832,13877 10906,13950 10947,14114

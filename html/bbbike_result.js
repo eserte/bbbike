@@ -1,4 +1,4 @@
-// $Id: bbbike_result.js,v 1.13 2004/12/30 11:44:09 eserte Exp $
+// $Id: bbbike_result.js,v 1.14 2005/01/01 22:37:27 eserte Exp $
 // (c) 2003 Slaven Rezic. All rights reserved.
 
 function test_temp_blockings_set() {
@@ -133,9 +133,14 @@ function reset_form(default_speed, default_cat, default_quality,
     return false;
 }
 
-function show_info(what) {
-    if (what == "winter_optimization") {
-	alert("Erfahrungsgemäß werden bei Schnee und Eis Hauptstraßen am ehesten geräumt. Deshalb wird bei dieser Einstellung verstärkt auf Hauptstraßen optimiert und Nebenstraßen gemieden. Weiterhin gemieden werden: benutzungspflichtige Radwege, Kopfsteinpflasterstraßen und Brücken.");
+// XXX The texts here should be duplicated in help.html!!!
+function show_help(what) {
+    if (what == "winteroptimization") {
+	alert("Erfahrungsgemäß werden bei Schnee und Eis Hauptstraßen am ehesten geräumt. Deshalb wird bei dieser Einstellung verstärkt auf Hauptstraßen optimiert und Nebenstraßen gemieden. Weitere Eigenschaften fließen in eine schlechtere Bewertung einer Straße ein: benutzungspflichtige Radwege, Kopfsteinpflasterstraßen, Straßenbahnen auf der Fahrbahn und Brücken.");
+    } else if (what == "") {
+	alert("Es wurde kein Hilfethema angegeben");
+    } else {
+	alert("Keine Hilfe für das Thema " + what);
     }
 }
 

@@ -1037,7 +1037,7 @@ EOF
      },
      { from  => 1098568800, # 2004-10-24 00:00
        until => 1104534000, # 2005-01-01 00:00
-       text  => 'L 302; (Schöneicher Straße in Schöneiche); zwischen Stegweg bis Dorfaue: Gleisbau, Vollsperrung, 25.10.2004-31.12.2004 ',
+       text  => 'L 302; (Schöneicher Straße in Schöneiche); zwischen Stegeweg bis Dorfaue Gleisbau Vollsperrung 25.10.2004-31.12.2004 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 31221,8312 30688,8432
@@ -1301,9 +1301,9 @@ EOF
 userdel	2 -26784,5756 -26840,5684
 EOF
      },
-     { from  => 1104123600, # 2004-12-27 06:00
-       until => 1104692400, # 2005-01-02 20:00
-       text  => 'Straße des 17. Juni zwischen Bachstraße und Ebertstraße Silvester-Party, Straße gesperrt, Dauer: 28.12.2004, 06:00 Uhr bis 02.01.2005, 20:00 Uhr',
+     { from  => 1104409481, # 2004-12-30 13:24
+       until => 1104573600, # 2005-01-01 11:00
+       text  => 'Str. des 17. Juni: Großer Stern - Brandenburger Tor (Mitte) in allen Richtungen sowie angrenzende Nebenstraßen Veranstaltung, Straße vollständig gesperrt (bis 01.01.2005 ca. 11:00 Uhr)',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 8214,12205 8063,12182
@@ -1314,14 +1314,19 @@ userdel	q4 8610,12254 8515,12242
 userdel	q4 7816,12150 8063,12182
 userdel	q4 7816,12150 7383,12095
 userdel	q4 6744,11936 6809,11979
-userdel	q4 5771,11887 5901,11902
+userdel	q4 8851,12123 8737,12098
 userdel	q4 6809,11979 6828,12031
+userdel	q4 8539,12286 8560,12326
 userdel	q4 8539,12286 8515,12242
 userdel	q4 6828,12031 7383,12095
 userdel	q4 6828,12031 6799,12083
+userdel	q4 8775,12457 8540,12420
+userdel	q4 8737,12098 8595,12066
 userdel	q4 6642,12010 5901,11902
 userdel	q4 6642,12010 6685,11954
-userdel	q4 8600,12165 8515,12242
+userdel	q4 8595,12066 8600,12165
+userdel	q4 8540,12420 8560,12326
+userdel	q4 8515,12242 8600,12165
 userdel	q4 6725,12113 6653,12067
 userdel	q4 6799,12083 6725,12113
 EOF

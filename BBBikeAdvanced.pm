@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.110 2004/12/27 23:24:41 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.111 2005/01/01 19:04:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2611,11 +2611,14 @@ sub search_anything {
     my @search_files = (@str_file{qw/s l u b r w f v e/},
 			@p_file  {qw/u b r o pl kn ki rest/},
 			# additional scoped files XXX
+			"brunnels",
 			"wasserumland", "wasserumland2", "landstrassen2",
 			"orte2",
 		       );
-    @search_files = map { -r "$datadir/$_" ? "$datadir/$_" : () } @search_files;
-
+    @search_files = map {
+	file_name_is_absolute($_) && -r $_ ? $_ :
+	    "$datadir/$_" ? "$datadir/$_" : ()
+	} @search_files;
     my %file_to_abbrev;
     while(my($k,$v) = each %str_file) {
 	$file_to_abbrev{$v} = ['s', $k];
@@ -2717,6 +2720,7 @@ sub search_anything {
 			      'orte2' => 79,
 			      'landstrassen' => 70,
 			      'landstrassen2' => 69,
+			      'brunnels' => 60,
 			     );
 
 	    foreach my $file (sort {
@@ -3090,7 +3094,9 @@ sub build_text_cursor {
 }
 
 sub path_to_selection {
-    @inslauf_selection = map { join ",", @$_ } @realcoords;
+    @inslauf_selection = map {
+	join ",", $coord_system_obj->trim_accuracy(@$_)
+    } @realcoords;
     $c->SelectionOwn;
     standard_selection_handle();
 }

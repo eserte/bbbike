@@ -53,14 +53,7 @@ userdel	q4 8370,25539 8182,25608
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1104533999,
-         'text' => 'Blankenburger Weg - Blankenburger-Weg-Brücke (Pankow) Richtung Bahnhofstr. zwischen Pasewalker Str. und Bahnhofsstraße Baustelle, Einbahnstraße in Richtung Bahnhofstr. (bis 12/2004)',
-         'from' => 1103789525,
-         'data' => 'userdel	1 12442,20805 12030,20490
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -72,14 +65,7 @@ userdel	q4 8370,25539 8182,25608
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1104534000,
-         'text' => 'L 302; (Schöneicher Straße in Schöneiche); zwischen Stegweg bis Dorfaue: Gleisbau, Vollsperrung, 25.10.2004-31.12.2004 ',
-         'from' => 1098568800,
-         'data' => 'userdel	q4 31221,8312 30688,8432
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -141,14 +127,7 @@ userdel	q4 8370,25539 8182,25608
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1104533999,
-         'text' => 'Johannisthaler Chaussee (Neukölln) in Höhe der Ernst-Keller-Brücke Baustelle, Straße vollständig gesperrt wegen Brückenneubau (bis Ende 2004)',
-         'from' => 1102540046,
-         'data' => 'userdel	2 15573,4122 15608,4175
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1122760800,
@@ -167,31 +146,6 @@ userdel	q4 8370,25539 8182,25608
          'data' => 'userdel	2 -26784,5756 -26840,5684
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'until' => 1104692400,
-         'text' => 'Straße des 17. Juni zwischen Bachstraße und Ebertstraße Silvester-Party, Straße gesperrt, Dauer: 28.12.2004, 06:00 Uhr bis 02.01.2005, 20:00 Uhr',
-         'from' => 1104123600,
-         'data' => 'userdel	q4 8214,12205 8063,12182
-userdel	q4 8214,12205 8515,12242
-userdel	q4 6653,12067 6642,12010
-userdel	q4 6685,11954 6744,11936
-userdel	q4 8610,12254 8515,12242
-userdel	q4 7816,12150 8063,12182
-userdel	q4 7816,12150 7383,12095
-userdel	q4 6744,11936 6809,11979
-userdel	q4 5771,11887 5901,11902
-userdel	q4 6809,11979 6828,12031
-userdel	q4 8539,12286 8515,12242
-userdel	q4 6828,12031 7383,12095
-userdel	q4 6828,12031 6799,12083
-userdel	q4 6642,12010 5901,11902
-userdel	q4 6642,12010 6685,11954
-userdel	q4 8600,12165 8515,12242
-userdel	q4 6725,12113 6653,12067
-userdel	q4 6799,12083 6725,12113
-',
-         'type' => 'handicap'
        }
      
 );

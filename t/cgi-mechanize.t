@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.16 2004/12/29 23:34:33 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.18 2004/12/30 21:45:41 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -21,22 +21,15 @@ BEGIN {
     }
 }
 
-my $do_xxx;
+use FindBin;
+use lib ("$FindBin::RealBin",
+	 "$FindBin::RealBin/..",
+	);
+use BBBikeTest;
 
 use Getopt::Long;
 
-my $cgiurl;
-if (defined $ENV{BBBIKE_TEST_CGIURL}) {
-    $cgiurl = $ENV{BBBIKE_TEST_CGIURL};
-} elsif (defined $ENV{BBBIKE_TEST_CGIDIR}) {
-    $cgiurl = $ENV{BBBIKE_TEST_CGIDIR} . "/bbbike.cgi";
-} else {
-    $cgiurl = 'http://www/bbbike/cgi/bbbike.cgi';
-}
-
-if (!GetOptions("cgiurl=s" => \$cgiurl,
-		"xxx" => \$do_xxx,
-	       )) {
+if (!GetOptions(get_std_opts("cgiurl", "xxx"))) {
     die "usage: $0 [-cgiurl url] [-xxx]";
 }
 

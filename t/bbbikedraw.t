@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.12 2004/12/29 23:33:40 eserte Exp $
+# $Id: bbbikedraw.t,v 1.13 2004/12/30 20:48:44 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -11,13 +11,15 @@ use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
-	 "$FindBin::RealBin/../data"
+	 "$FindBin::RealBin/../data",
+	 "$FindBin::RealBin",
 	);
 use Strassen::Core;
 use BBBikeDraw;
-use BBBikeUtil qw(is_in_path);
 use File::Temp qw(tempfile);
 use Getopt::Long;
+
+use BBBikeTest;
 
 my @modules;
 
@@ -47,14 +49,13 @@ my @drawtypes = qw(all);
 my $width = 640;
 my $height = 480;
 my $geometry = $width."x".$height;
-my $display = 0;
 my $verbose = 0;
 my $debug   = 0;
 my $do_slow = 0;
 
 my @only_modules;
 
-if (!GetOptions("display!" => \$display,
+if (!GetOptions(get_std_opts("display"),
 		"v|verbose!" => \$verbose,
 		"debug!" => \$debug,
 		"slow!" => \$do_slow,
@@ -83,7 +84,7 @@ for my $module (@modules) {
     }
 }
 
-if ($display) {
+if ($do_display) {
     warn "Hit on <RETURN>\n";
     <STDIN>;
 }
@@ -141,28 +142,8 @@ sub draw_map {
 	warn sprintf "... drawing time: %.2fs\n", $elapsed;
     }
 
-    if ($display) {
-	if ($imagetype eq 'svg') {
-	    if (is_in_path("mozilla")) {
-		system("mozilla -noraise -remote 'openURL(file:$filename,new-tab)' &");
-	    } else {
-		warn "Can't display $filename";
-	    }
-	} elsif ($imagetype eq 'pdf') {
-	    if (is_in_path("xpdf")) {
-		system("xpdf $filename &");
-	    } else {
-		warn "Can't display $filename";
-	    }
-	} else {
-	    if (is_in_path("xv")) {
-		system("xv $filename &");
-	    } elsif (is_in_path("display")) {
-		system("display $filename &");
-	    } else {
-		warn "Can't display $filename";
-	    }
-	}
+    if ($do_display) {
+	do_display($filename, $imagetype);
     }
 
  SKIP: {

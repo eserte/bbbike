@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: winter_optimization.pl,v 1.1 2004/12/27 22:55:13 eserte Exp $
+# $Id: winter_optimization.pl,v 1.2 2005/01/01 22:24:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -44,6 +44,7 @@ $str{"br"} = Strassen->new("brunnels");
 $str{"qs"} = Strassen->new("qualitaet_s");
 $str{"rw"} = Strassen->new("radwege_exact");
 $str{"kfz"} = Strassen->new("comments_kfzverkehr");
+$str{"tram"} = Strassen->new("comments_tram");
 lock_keys %str;
 
 my %net;
@@ -67,8 +68,13 @@ my $net = {};
 
 while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
     while(my($k2,$cat) = each %$v) {
-	my $res;
+	#my($xxx) = $net{"s"}->get_street_record($k1, $k2); next if $xxx->[Strassen::NAME] !~ /admiralbrücke/i;#XXX
+
+        my $res = 99999;
+	my @reason;
+
     CALC: {
+	    my $quality_penalty = 0;
 	    my $q = $net{"qs"}->{Net}{$k1}{$k2};
 	    if (defined $q) {
 		if ($q =~ /^Q(\d+)/) {
@@ -77,10 +83,15 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 		    if ($rec->[Strassen::NAME] =~ /(kopfstein|verbundstein)/i) {
 			if ($cat =~ /^3/) {
 			    $res = 0;
+			    push @reason, "Schlechtes Kopfsteinpflaster";
+			    last CALC;
 			} else {
 			    $res = 1;
+			    push @reason, "Kopfsteinpflaster";
 			}
-			last CALC;
+		    } elsif ($cat ne "0") {
+			$quality_penalty = 1;
+			push @reason, "Quality penalty";
 		    }
 		}
 	    }
@@ -89,7 +100,7 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 	    if (defined $rw) {
 		if ($rw =~ /^RW(2|8|)$/) {
 		    $res = 1;
-		    last CALC;
+		    push @reason, "Radweg";
 		}
 	    }
 
@@ -109,9 +120,9 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 		}
 	    };
 
-	    my $cat_num = {NN => 0,
-			   N  => 2,
-			   H  => 4,
+	    my $cat_num = {NN => 1,
+			   N  => 3,
+			   H  => 5,
 			   HH => 6,
 			   B  => 6,
 			  }->{$main_cat};
@@ -130,18 +141,28 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 	    my $kfz = $net{"kfz"}->{Net}{$k1}{$k2};
 	    if (defined $kfz) {
 		$cat_num += $kfz;
+		push @reason, $main_cat . $kfz;
+	    } else {
+		push @reason, $main_cat;
 	    }
+
+	    $res = $cat_num if $cat_num < $res;
 
 	    if ($is_bridge) {
-		$cat_num -= 2;
+		$res -= 2;
+		push @reason, "Brücke";
 	    }
 
-	    $cat_num++;
+	    $res -= $quality_penalty;
 
-	    if    ($cat_num < 0) { $cat_num = 0 }
-	    elsif ($cat_num > 7) { $cat_num = 7 }
-	    
-	    $res = $cat_num;
+	    my $tram = $net{"tram"}->{Net}{$k1}{$k2};
+	    if (defined $tram) {
+		$res -= 1;
+		push @reason, "Tram";
+	    }
+
+	    if    ($res < 0) { $res = 0 }
+	    elsif ($res > 6) { $res = 6 }
 	}
 
 	if (defined $res) {
@@ -150,7 +171,7 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 	    $cat = 0;
 	}
 
-	my $out_cat = int($cat/7*100);
+	my $out_cat = int($cat/6*100);
 	$net->{"$k1,$k2"} = $out_cat;
 
 	if ($do_display) {
@@ -160,16 +181,18 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 			 '#f6ff00',
 			 '#c7ff00',
 			 '#00ff26',
-			 '#00ffe1',
+			 #'#00ffe1',
 			 '#0000ff',
 			]->[$cat];
-	    print "$cat\t$color; $k1 $k2\n";
+	    print "$cat " . join(", ", @reason) . "\t$color; $k1 $k2\n";
 	}
     }
 }
 
 my $outfile = "$FindBin::RealBin/../tmp/winter_optimization.st";
-store($net, $outfile);
-chmod 0644, $outfile;
+store($net, "$outfile~");
+chmod 0644, "$outfile~";
+rename "$outfile~", $outfile
+    or die "Can't rename from $outfile~ to $outfile: $!";
 
 __END__

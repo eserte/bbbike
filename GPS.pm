@@ -1,24 +1,25 @@
 # -*- perl -*-
 
 #
-# $Id: GPS.pm,v 1.8 2003/08/04 18:20:15 eserte Exp $
+# $Id: GPS.pm,v 1.9 2004/12/30 13:32:33 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
 # XXX rename to BBBikeGPS, to avoid conflicts with GPS:: namespace
+# XXX no --- BBBikeGPS is already taken...
 package GPS;
 
 use strict;
 use vars qw(@gps);
 
-@gps = qw(GpsmanData Unknown1 Unknown2 G7toWin_ASCII WaypointPlus MPS);
+@gps = qw(GpsmanData Unknown1 Unknown2 G7toWin_ASCII Ovl WaypointPlus MPS);
 
 sub new { bless {}, shift }
 

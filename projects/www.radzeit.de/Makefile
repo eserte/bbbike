@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.45 2004/12/29 21:49:15 eserte Exp $
+# $Id: Makefile,v 1.46 2004/12/30 21:45:34 eserte Exp eserte $
 #
 
 # Targets:
@@ -38,7 +38,8 @@ TESTS=			basic.t \
 			cgihead.t \
 			cgi-mechanize.t \
 			cgi.t \
-			wapcgi.t \
+			wapcgi.t
+TESTS_ADD=		BBBikeTest.pm
 
 
 # XXX maybe use test-on-remote-and-send-mail (after tests)
@@ -248,7 +249,7 @@ prepare-bbbike-dist-prog-bbbike-miscsrc:
 	[ -d ${CURDIR}/BBBike/miscsrc ] || \
 	    mkdir ${CURDIR}/BBBike/miscsrc
 .for f in ${EXTRA_MISCSRC_FILES}
-	if [ ${BBBIKE_ROOT_DIR}/miscsrc/$f -nt ${CURDIR}/BBBike/miscsrc/$f ] ; then \
+	if [ ! -e ${CURDIR}/BBBike/miscsrc/$f -o ${BBBIKE_ROOT_DIR}/miscsrc/$f -nt ${CURDIR}/BBBike/miscsrc/$f ] ; then \
 	    cp -pf ${BBBIKE_ROOT_DIR}/miscsrc/$f ${CURDIR}/BBBike/miscsrc/$f; \
 	fi
 .endfor
@@ -256,15 +257,15 @@ prepare-bbbike-dist-prog-bbbike-miscsrc:
 prepare-bbbike-dist-prog-bbbike-t:
 	[ -d ${CURDIR}/BBBike/t ] || \
 	    mkdir ${CURDIR}/BBBike/t
-.for f in ${TESTS}
-	if [ ${BBBIKE_ROOT_DIR}/t/$f -nt ${CURDIR}/BBBike/t/$f ] ; then \
+.for f in ${TESTS} ${TESTS_ADD}
+	if [ ! -e ${CURDIR}/BBBike/t/$f -o ${BBBIKE_ROOT_DIR}/t/$f -nt ${CURDIR}/BBBike/t/$f ] ; then \
 	    cp -pf ${BBBIKE_ROOT_DIR}/t/$f ${CURDIR}/BBBike/t/$f; \
 	fi
 .endfor
 
 prepare-bbbike-dist-prog-bbbike-html:
 .for f in ${EXTRA_HTML_FILES}
-	if [ ${BBBIKE_ROOT_DIR}/html/$f -nt ${CURDIR}/BBBike/html/$f ] ; then \
+	if [ ! -e ${CURDIR}/BBBike/html/$f -o ${BBBIKE_ROOT_DIR}/html/$f -nt ${CURDIR}/BBBike/html/$f ] ; then \
 	    cp -pf ${BBBIKE_ROOT_DIR}/html/$f ${CURDIR}/BBBike/html/$f; \
 	fi
 .endfor

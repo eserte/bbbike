@@ -126,7 +126,6 @@ miscsrc/Cov.pm
 miscsrc/GelbeSeitenPlugin.pm
 miscsrc/GpsmanDataAmpeln.pm
 miscsrc/LogTracker.pm
-miscsrc/OvlFile.pm
 miscsrc/SRTShortcuts.pm
 miscsrc/TelbuchApprox.pm
 miscsrc/TelbuchDBApprox.pm
@@ -168,7 +167,6 @@ miscsrc/convert_coordsys
 miscsrc/convert_radwege
 miscsrc/correct_data.pl
 miscsrc/correct_data_map.pl
-miscsrc/draw_ovl
 miscsrc/filter_version.pl
 miscsrc/flood_search.pl
 miscsrc/gpsman2bbd.pl

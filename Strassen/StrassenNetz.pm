@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.44 2004/12/05 21:59:00 eserte Exp eserte $
+# $Id: StrassenNetz.pm,v 1.45 2005/01/01 22:29:32 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -29,7 +29,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz;
 use strict;
@@ -476,7 +476,11 @@ sub get_street_record {
     my($net, $from, $to) = @_;
     my($pos) = $net->net2name($from, $to);
     if (defined $pos) {
-	$net->{Strassen}->get($pos);
+	if (ref $pos eq 'ARRAY') {
+	    map { $net->{Strassen}->get($_) } @$pos;
+	} else {
+	    $net->{Strassen}->get($pos);
+	}
     } else {
 	undef;
     }

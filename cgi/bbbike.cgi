@@ -5,10 +5,10 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.2 2004/12/28 17:03:32 eserte Exp eserte $
+# $Id: bbbike.cgi,v 7.3 2005/01/01 22:20:25 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -76,7 +76,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $debug $tmp_dir $mapdir_fs $mapdir_url $local_route_dir
 	    $bbbike_root $bbbike_images $bbbike_url $bbbike_html
 	    $modperl_lowmem $use_imagemap $create_imagemap $detailmap_module
-	    $q %persistent
+	    $q %persistent %c $got_cookie
 	    $g_str $orte $orte2 $multiorte
 	    $ampeln $qualitaet_net $handicap_net
 	    $strcat_net $radwege_strcat_net $routen_net $comments_net
@@ -637,7 +637,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.3 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -767,6 +767,8 @@ if ($show_weather || $bp_obj) {
 
 $q->delete('Dummy');
 $smallform = $q->param('smallform') || $bi->{'mobile_device'};
+$got_cookie = 0;
+%c = ();
 
 foreach my $type (qw(start via ziel)) {
     if (defined $q->param($type . "charimg.x") and
@@ -2245,6 +2247,13 @@ EOF
 #      }
 #  }
 
+sub get_global_cookie {
+    if (!$got_cookie) {
+	%c = get_cookie();
+	$got_cookie = 1;
+    }
+}
+
 sub get_cookie {
     $q->cookie(-name => $cookiename,
 	       -path => $q->url(-absolute => 1),
@@ -2265,7 +2274,7 @@ use vars qw($default_speed $default_cat $default_quality
 	    $default_ampel $default_routen $default_green $default_winter);
 
 sub get_settings_defaults {
-    my %c = get_cookie();
+    get_global_cookie();
 
     $default_speed   = (defined $c{"pref_speed"}   ? $c{"pref_speed"}+0 : 20);
     $default_cat     = (defined $c{"pref_cat"}     ? $c{"pref_cat"}     : "");
@@ -2297,8 +2306,7 @@ EOF
 }
 
 sub settings_html {
-    # Einstellungen ########################################
-    my %c = get_cookie();
+    get_global_cookie();
 
     if ($q->param("pref_seen")) {
 	foreach my $key (@pref_keys) {
@@ -2343,8 +2351,8 @@ sub settings_html {
 </select></td></tr>
 <tr><td>Bevorzugter Straßenbelag:</td><td><select $bi->{hfill} name="pref_quality">
 <option @{[ $qual_checked->("") ]}>egal
-<option @{[ $qual_checked->("Q0") ]}>nur sehr gute Beläge bevorzugen (rennradtauglich)
 <option @{[ $qual_checked->("Q2") ]}>Kopfsteinpflaster vermeiden
+<option @{[ $qual_checked->("Q0") ]}>nur sehr gute Beläge bevorzugen (rennradtauglich)
 </select></td></tr>
 EOF
 #  <!--
@@ -2375,7 +2383,7 @@ EOF
 <option @{[ $winter_checked->("WI1") ]}>schwach
 <option @{[ $winter_checked->("WI2") ]}>stark
 </select></td>
- <td style="vertical-align:bottom"><span class="experimental">Experimentell</span><small><a href="#" onclick="show_info('winter_optimization'); return false;">Was ist das?</a></small></td>
+ <td style="vertical-align:bottom"><span class="experimental">Experimentell</span><small><a target="BBBikeHelp" href="$bbbike_html/help.html#winteroptimization" onclick="show_help('winteroptimization'); return false;">Was ist das?</a></small></td>
 </tr>
 EOF
     }
@@ -4686,7 +4694,7 @@ sub header {
 	     -BGCOLOR => '#ffffff',
 	     ($use_background_image && !$printmode ? (-BACKGROUND => "$bbbike_images/bg.jpg") : ()),
 	     -meta=>{'keywords'=>'berlin fahrrad route bike karte suche cycling route routing routenplaner routenplanung fahrradroutenplaner radroutenplaner',
-		     'copyright'=>'(c) 1998-2004 Slaven Rezic',
+		     'copyright'=>'(c) 1998-2005 Slaven Rezic',
 		    },
 	     -author => $BBBike::EMAIL,
 	    );
@@ -5104,7 +5112,7 @@ sub upload_button_html {
     # XXX warum ist dummy notwendig???
     print $q->start_multipart_form(-method => 'post',
 				   -action => "$bbbike_url?dummy=@{[ time ]}"),
-          "Anzuzeigende Route-Datei (GPSman-Tracks oder .bbr-Dateien):<br>\n",
+          "Anzuzeigende Route-Datei (GPSman-Tracks, .ovl- oder .bbr-Dateien):<br>\n",
 	  $q->filefield(-name => 'routefile'),
 	  "<p>\n",
 	  # hier könnte noch ein maxdist-Feld stehen, um die maximale
@@ -5386,7 +5394,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/12/28 17:03:32 $';
+    my $cgi_date = '$Date: 2005/01/01 22:20:25 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {
@@ -5523,7 +5531,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
+Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
 This is free software; you can redistribute it and/or modify it under the
 terms of the GNU General Public License, see the file COPYING.
 
