@@ -27,80 +27,37 @@ use Tk::Balloon;
 
 sub WidgetDump {
     my($top, %args) = @_;
-    my $ex_t = $args{-toplevel};
-    my $t;
-    if ($ex_t && Tk::Exists($ex_t)) {
-	map { $_->destroy } $ex_t->children;
-	$t = $ex_t;
-    } else {
-	$t = $top->Toplevel;
-    }
+    my $t = $top->Toplevel;
     $t->title("WidgetDump of $top");
     $t->geometry("620x420");
     foreach my $key (qw(Control-C q)) {
 	$t->bind("<$key>" => sub { $t->destroy });
     }
+    $t->{Top}  = $top;
+    $t->{Args} = \%args;
 
     bless $t, 'Tk::WidgetDump';
 
     my $bf = $t->Frame->pack(-fill => 'x', -side => "bottom");
 
-    my $hl;
-    $hl = $t->Scrolled('Tree', -drawbranch => 1, -header => 1,
-		       #-columns => 5,
-		       -columns => 4,
-		       -scrollbars => "osow",
-		       -selectmode => "multiple",
-		       -exportselection => 1,
-		       -takefocus => 1,
-		       -width => 40,
-		       -height => 20,
-		       ($args{-font} ? (-font => $args{-font}) : ()),
-		       -command => sub {
-			   my $sw = $hl->info('data', $_[0]);
-			   $t->_show_widget($sw);
-		       },
-		      )->pack(-fill => 'both', -expand => 1);
-    $t->Advertise("Tree" => $hl);
-    $hl->focus;
-    $hl->headerCreate(0, -text => "Tk Name");
-    $hl->headerCreate(1, -text => "Tk Class");
-    $hl->headerCreate(2, -text => "Characteristics");
-    $hl->headerCreate(3, -text => "Perl-Class");
-    #XXX $hl->headerCreate(4, -text => "Size");
-    $t->_insert_wd($hl, $top);
-    if (exists $args{-openinfo}) {
-#XXX needs work
-#	while(my($k,$v) = each %{ $args{-openinfo} }) {
-#	    $hl->setmode($k, $v);
-#	}
-    } else {
-	$hl->autosetmode;
-    }
+    my $hl = $t->WD_HList->pack(-fill => 'both', -expand => 1);
+    $t->Advertise("HList" => $hl);
 
     my $rb = $bf->Button(-text => "Refresh",
-			 -command => sub {
-			     my %args;
-			     my %openinfo;
-			     foreach ($hl->info('children')) {
-				 $openinfo{$_} = $hl->getmode($_);
-			     }
-			     my $first_seen = $hl->nearest($hl->height/2);
-			     if (defined $first_seen) {
-				 $args{'-see'} = $hl->info("data",$first_seen);
-			     }
-			     $top->WidgetDump(-toplevel => $t,
-					      -font => $hl->cget(-font),
-					      #-openinfo => \%openinfo,
-					      %args,
-					     );
-			 }
+			 -command => [$t, "WD_Refresh"],
 			)->pack(-side => "left");
     my $cb = $bf->Button(-text => "Close",
-			 -command => sub {
-			     $t->destroy;
-			 }
+			 -command => [$t, "WD_Close"],
 			)->pack(-side => "left");
+    $bf->Button(-text => "Help",
+		-command => sub {
+		    if (!eval { require Tk::Pod; 1}) {
+			$bf->messageBox(-message => "Tk::Pod is not installed!");
+			return;
+		    }
+		    $bf->Pod(-file => $INC{"Tk/WidgetDump.pm"},
+			     -title => "Tk::WidgetDump documentation");
+		})->pack(-side => "right", -anchor => "e");
     $t->bind("<Alt-r>"  => sub { $rb->invoke });
     $t->bind("<Escape>" => sub { $cb->invoke });
 
@@ -128,14 +85,55 @@ sub WidgetDump {
 			    }, Ev('X'), Ev('Y') ]);
     }
 
+}
+
+sub WD_HList {
+    my($t) = @_;
+
+    my $top  = $t->{Top};
+    my $args = $t->{Args};
+
+    my $hl;
+    $hl = $t->Scrolled('Tree', -drawbranch => 1, -header => 1,
+		       #-columns => 5,
+		       -columns => 4,
+		       -scrollbars => "osow",
+		       -selectmode => "multiple",
+		       -exportselection => 1,
+		       -takefocus => 1,
+		       -width => 40,
+		       -height => 20,
+		       ($args->{-font} ? (-font => $args->{-font}) : ()),
+		       -command => sub {
+			   my $sw = $hl->info('data', $_[0]);
+			   $t->_show_widget($sw);
+		       },
+		      )->pack(-fill => 'both', -expand => 1);
+    $t->Advertise("Tree" => $hl);
+    $hl->focus;
+    $hl->headerCreate(0, -text => "Tk Name");
+    $hl->headerCreate(1, -text => "Tk Class");
+    $hl->headerCreate(2, -text => "Characteristics");
+    $hl->headerCreate(3, -text => "Perl-Class");
+    #XXX $hl->headerCreate(4, -text => "Size");
+    $t->_insert_wd($hl, $top);
+    if (exists $args->{-openinfo}) {
+#XXX needs work
+#	while(my($k,$v) = each %{ $args->{-openinfo} }) {
+#	    $hl->setmode($k, $v);
+#	}
+    } else {
+	$hl->autosetmode;
+    }
+
     if ($hl->can("menu") and $hl->can("PostPopupMenu")) {
 	my $popup_menu = $hl->Menu
 	    (-menuitems =>
 	     [
 	      [Cascade => "~Edit", -menuitems =>
 	       [
-		[Button => "~Refresh", -command => sub { $rb->invoke }],
-		[Button => "~Close", -command => sub { $cb->invoke }],
+		[Button => "~Refresh", -command => sub { $t->WD_Refresh }],
+		[Button => "~Close", -command => sub { $t->WD_Close }],
 	       ],
 	      ],
 	      [Cascade => "~Font", -menuitems =>
@@ -161,9 +159,7 @@ sub WidgetDump {
 		      });
     }
 
-    if ($args{'-see'}) {
-	$t->see($args{'-see'});
-    }
+    $hl;
 }
 
 sub _WD_Size {
@@ -178,6 +174,36 @@ sub _WD_Size {
     };
     warn $@ if $@;
     $size;
+}
+
+sub WD_Refresh {
+    my $t = shift;
+    my %args;
+    my %openinfo;
+    my $hl = $t->Subwidget("HList");
+    foreach ($hl->info('children')) {
+	$openinfo{$_} = $hl->getmode($_);
+    }
+    my $first_seen = $hl->nearest($hl->height/2);
+    my $see;
+    if (defined $first_seen) {
+	$see = $hl->info("data",$first_seen);
+    }
+    my %pack_info = $hl->packInfo;
+
+    $hl->destroy;
+    $hl = $t->WD_HList($t->{Top}, $t->{Args});
+    $hl->pack(%pack_info);
+    $t->Advertise("HList" => $hl);
+
+    if (defined $see) {
+	$t->see($see);
+    }
+}
+
+sub WD_Close {
+    my $t = shift;
+    $t->destroy;
 }
 
 ######################################################################
@@ -263,7 +289,8 @@ sub WidgetInfo {
     my $txt = $wi->Subwidget("Information");
     $txt->delete("1.0", "end");
 
-    $txt->insert("end", "Configuration:\n\n");
+    $txt->insert("end", "Configuration:\n\n", "title");
+    $txt->insert("end", "Option Switch\tOptionDB Name\tOptionDB Class\tDefault Value\tCurrent Value\n", "title");
     foreach my $c ($w->configure) {
 	$txt->insert("end",
 		     join("\t", map { !defined $_ ? "<undef>" : $_ } @$c),
@@ -278,6 +305,8 @@ sub WidgetInfo {
 	$label = $meth if !defined $label;
 	$txt->insert("end", "$label:\t" . $w->$meth() . "\n");
     };
+
+    $txt->insert("end", "Miscellaneous:\n\n", "title");
 
     $insert_method->("name", "Name");
     $insert_method->("PathName");
@@ -343,8 +372,23 @@ sub WidgetInfo {
     my $manager = $w->manager;
     if ($manager) {
 	my $info_cmd = ($manager eq 'tixForm' ? 'formInfo' : $manager.'Info');
-	eval 'my $info = join(", ", $w->' . $info_cmd. ');
-              $txt->insert("end", "    info:\t" . $info . "\n");'
+	my %info = eval { $w->$info_cmd() };
+	warn $@ if $@;
+	if (keys %info) {
+	    my $need_comma;
+	    my %win_info;
+	    $txt->insert("end", "    info:\t");
+	    if ($info{-in}) {
+		$win_info{-in} = delete $info{-in};
+		$txt->insert("end", "-in => $win_info{-in}",
+			     ["widgetlink", "href-" . $win_info{-in}]);
+		$Tk::WidgetDump::ref2widget{$win_info{-in}} = $win_info{-in};
+		$need_comma++;
+	    }
+	    my $info = ($need_comma ? ", " : "") .
+		join(", ", map { "$_ => $info{$_}" } keys %info);
+	    $txt->insert("end", $info . "\n");
+	}
     }
     eval {
 	my(@wrapper) = $w->wrapper;
@@ -395,6 +439,15 @@ sub WidgetInfo {
     $insert_method->("colormapfull", "    full");
     $insert_method->("depth", "    depth");
 
+    $txt->insert("end", "\n");
+
+    {
+	my $b = $txt->Button(-text => "Flash widget",
+			     -command => sub {
+				 $wd->Flash($w);
+			     });
+	$txt->windowCreate("end", -window => $b);
+    }
     my $b = $txt->Button(-text => "Method call",
 			 -command => sub {
 			     $wd->method_call($w);
@@ -537,6 +590,9 @@ sub _edit_config {
 	$e = eval 'Tk::WidgetDump::Entry->entry($t, \$val, $set_sub)';
 	warn $@ if $@;
     }
+    $t->Button(-text => "Close",
+	       -command => [$t, 'destroy'],
+	      )->pack(-side => "left");
     $e->focus if Tk::Exists($e);
     $t->bind("<Escape>" => [$t, 'destroy']);
 }
@@ -545,13 +601,15 @@ sub method_call {
     my($wd, $w) = @_;
 
     my $t = $wd->Toplevel(-title => "Method call");
+    my $f = $t->Frame->pack(-fill => "x");
     my $eval;
-    $t->Label(-text => "... on $w")->pack(-side => "left");
-    my $e = $t->_hist_entry({-textvariable => \$eval},
+    $f->Label(-text => "Method call on $w")->pack(-side => "left");
+    my $e = $f->_hist_entry({-textvariable => \$eval},
 			    {-match => 1, -dup => 0})->pack(-side => "left");
     $e->focus;
     my $ww = $w;
-    $e->bind("<Return>" => sub {
+    my $text;
+    my $doit = sub {
 	if ($e->can('historyAdd')) {
 	    $e->historyAdd;
 	}
@@ -559,9 +617,18 @@ sub method_call {
 	my $cmd = '$ww->' . $eval;
 	my(@res) = eval($cmd);
 	require Data::Dumper;
-	print Data::Dumper->Dumpxs([\@res, $@],[$cmd, 'Error']);
-	print "\@res = <@res>\n";
-    });
+	my $res = Data::Dumper->Dumpxs([\@res, $@],[$cmd, 'Error']) .
+	          "\@res = <@res>\n";
+	warn $res;
+	$text->delete("1.0", "end");
+	$text->insert("end", $res);
+    };
+    $e->bind("<Return>" => $doit);
+    $f->Button(-text => "Execute!", -command => $doit)->pack(-side => "left");
+    $f->Button(-text => "Close", -command => [$t, "destroy"])->pack(-side => "left");
+    $text = $t->Scrolled("ROText", -scrollbars => "osoe",
+			 -font => "courier 10", # XXX do not hardcode
+			 -width => 40, -height => 5)->pack(-fill => "both", -expand => 1);
 }
 
 sub _text_link_config {
@@ -594,6 +661,7 @@ sub _text_link_config {
 	    $text->tagAdd('hot', $txt->{last_line}, $txt->{last_line}." lineend");
 	}
     });
+    $txt->tagConfigure("title", -font => "Helvetica 10 bold"); # XXX do not hardcode!
 }
 
 sub canvas_config {
@@ -601,20 +669,24 @@ sub canvas_config {
     my $t = $wd->Toplevel(-title => "Canvas config of item $item");
 
     my $txt = $t->Scrolled("ROText",
-			   -scrollbars => "osow"
+			   -tabs => [map { (5*$_) . "c" } (1 .. 8)],
+			   -scrollbars => "osow",
+			   -wrap => "none",
 			  )->pack(-fill => "both", -expand => 1);
     _text_link_config($txt, sub { _bind_text_tag($_[0], $wd) } );
 
-    $txt->insert("end", "Configuration:\n\n");
+    $txt->insert("end", "Canvas Item Configuration:\n\n", "title");
+    $txt->insert("end", "Option\tDefault Value\tCurrent Value\n", "title");
     foreach my $cc ($c->itemconfigure($item)) {
+	my @cc = @{$cc}[0,3,4];
 	$txt->insert("end",
-		     join("\t", map { !defined $_ ? "<undef>" : $_ } @$cc),
-		     ["widgetlink", "cconfig-" . $c . "-" . $item . $cc->[0]],
+		     join("\t", map { !defined $_ ? "<undef>" : $_ } @cc),
+		     ["widgetlink", "cconfig-" . $c . "-" . $item . $cc[0]],
 		     "\n"
 		    );
     }
 
-    $txt->insert("end", "Coords",
+    $txt->insert("end", "\nCoords\n",
 		 ["widgetlink", "ccoords-" . $c . "-" . $item],
 		 "\n"
 		);
@@ -625,12 +697,15 @@ sub canvas_dump {
     my($wd, $c) = @_;
     my $t = $wd->Toplevel(-title => "Canvas dump of $c");
     require Tk::ROText;
-    my $txt = $t->Scrolled("ROText", -scrollbars => "osow"
+    my $txt = $t->Scrolled("ROText", -scrollbars => "osow",
+			   -tabs => [map { (3*$_) . "c" } (1 .. 3)],
 			  )->pack(-fill => "both", -expand => 1);
     _text_link_config($txt, sub { _bind_text_tag($_[0], $wd) } );
 
+    $txt->insert("end", "Canvas Dump\n\n", "title");
+    $txt->insert("end", "Item number\tType\tTag list\n", "title");
     foreach my $i ($c->find("all")) {
-	$txt->insert("end", "$i (" . $c->type($i) . ") [" .
+	$txt->insert("end", "$i\t" . $c->type($i) . "\t[" .
 		     join(",",$c->gettags($i)) . "]",
 		     ["widgetlink", "c-" . $c . "-" . $i],
 		     "\n");
@@ -658,12 +733,13 @@ sub edit_canvas_config {
 	};
 	warn $@ if $@;
     };
-    $t->Label(-text => "Edit $opt for $item:")->pack(-side => "left");
+    $t->Label(-text => "Edit $opt for canvas item $item:")->pack(-side => "left");
     my $e;
     $e = eval 'Tk::WidgetDump::Entry->entry($t, \$val, $set_sub)';
     warn $@ if $@;
     $e->focus if Tk::Exists($e);
     $t->bind("<Escape>" => [$t, 'destroy']);
+    $t->Button(-text => "Close", -command => [$t, "destroy"])->pack(-side => "left");
 }
 
 sub edit_canvas_coords {
@@ -687,12 +763,13 @@ sub edit_canvas_coords {
 	};
 	warn $@ if $@;
     };
-    $t->Label(-text => "Edit coords for $item:")->pack(-side => "left");
+    $t->Label(-text => "Edit coords for canvas item $item:")->pack(-side => "left");
     my $e;
     $e = eval 'Tk::WidgetDump::Entry->entry($t, \$val, $set_sub)';
     warn $@ if $@;
     $e->focus if Tk::Exists($e);
     $t->bind("<Escape>" => [$t, 'destroy']);
+    $t->Button(-text => "Close", -command => [$t, "destroy"]);
 }
 
 sub _insert_wd {
@@ -852,6 +929,8 @@ sub _get_widget_info_window {
     }
 
     require Tk::ROText;
+    my $bf = $wi->Frame->pack(-fill => 'x', -side => "bottom");
+
     my $txt = $wi->Scrolled("ROText",
 			    -tabs => [map { (5*$_) . "c" } (1 .. 8)],
 			    -wrap => "none",
@@ -860,13 +939,11 @@ sub _get_widget_info_window {
 
     $wi->Advertise("Information" => $txt);
 
-    my $f = $wi->Frame->pack;
-
-    my $rb = $f->Button(-text => "Refresh",
+    my $rb = $bf->Button(-text => "Refresh",
 			-command => sub {
 			    $wd->WidgetInfo($wd->{WidgetInfoWidget});
 			})->pack(-side => "left");
-    my $cb = $f->Button(-text => "Close",
+    my $cb = $bf->Button(-text => "Close",
 			-command => sub { $wi->destroy }
 			)->pack(-side => "left");
     $wi->Advertise(Close => $cb);
