@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.12 2004/04/15 07:47:30 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.13 2004/05/13 07:57:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -30,6 +30,10 @@ use URI::Escape qw(uri_unescape);
 use Text::Balanced qw(extract_delimited);
 use Data::Compare qw(Compare);
 use Storable qw(dclone);
+
+use Karte;
+Karte::preload(qw(Standard Polar));
+use Strassen::Util;
 
 my $test;
 my $inputfile;
@@ -390,12 +394,23 @@ sub diff {
 	    delete $c1->{"row"};
 	    delete $c2->{"row"};
 	    if (Compare($c1, $c2) == 0) {
-		push @{ $detail->{_state} }, "CHANGED";
 		if ($detail->{$infocol} eq $old_detail->{$infocol}) {
-		    push @{ $detail->{_state} }, "(coord change)";
+		    my($x1,$y1) = $Karte::Polar::obj->map2standard(@{$detail}{qw(x y)});
+		    my($x2,$y2) = $Karte::Polar::obj->map2standard(@{$old_detail}{qw(x y)});
+		    my $dist = int Strassen::Util::strecke([$x1,$y1],[$x2,$y2]);
+		    if ($dist <= 10) {
+			push @{ $detail->{_state} },
+			    "UNCHANGED";
+		    } else {
+			push @{ $detail->{_state} },
+			    "CHANGED",
+				"(coord change $dist m)";
+		    }
 		} else {
 		    # XXX will never happen!!!
-		    push @{ $detail->{_state} }, "(old text was: $old_detail->{$infocol})";
+		    push @{ $detail->{_state} },
+			"CHANGED",
+			    "(old text was: $old_detail->{$infocol})";
 		}
 	    } else {
 		push @{ $detail->{_state} }, "UNCHANGED";

@@ -18,7 +18,7 @@ L 141; (Zernitz-Breddin); OD Stüdenitz; Straßenbauarbeiten; Vollsperrung; 15.03.
 #XXX del: L 23; (nördl. Eberswalde-Joachimsthal); OD Britz, Joachimsthaler Str.; Fahrbahnerneuerung; Vollsperrung; 22.03.2004-30.04.2004	q4::inwork E7403,3082 E7424,3126
 L 382; (Kopernikusstr.); OL Frankfurt(O.), zw. Leipziger Str. u. Nuhnenstr.; grundh. Straßenausabau; Vollsperrung; 22.03.2004-31.05.2004	q4::inwork 86588,-6662 85945,-5682
 B 109; OD Klosterfelde; grundhafter Ausbau; Vollsperrung; 29.03.2004-30.10.2004	q4::inwork 14854,42792 14832,43048 14787,43709 15255,44435
-#XXX del: L 21; (Zehlendorf-Liebenwalde); OL Liebenwalde, Krz. mit B167; grundh. Straßenbau; Vollsperrung; 29.03.2004-01.05.2004	q4::inwork E6090,3215 E6090,3200
+L 21; (Zehlendorf-Liebenwalde); OL Liebenwalde, Krz. mit B167; grundh. Straßenbau; Vollsperrung; 29.03.2004-19.05.2004	q4::inwork E6090,3215 E6090,3200
 #XXX del: B 168; (Fürstenwalde-Müncheberg); OD Beerfelde; Kanalarbeiten; Vollsperrung; 05.04.2004-03.05.2004	q4::inwork 54024,3804 54449,4338
 L 622; (Rückersdorf-Doberlug KIrchhain); zw. Abzw. Lindena u. Doberlug-Kirchhain; Straßen- u. Brückenbauarb.; Vollsperrung; 06.04.2004-29.07.2004	q4::inwork 22873,-89559 22808,-89218 22764,-88898
 B 2; (LG Berlin-AS Berlin-Weißensee); bei Lindenberg, Brücke über Fließgraben; Brückenneubau; Richtungsverk. (Radfahrer können Umleitung benutzen oder bis zur Baustelle vorfahren); 29.03.2004-29.10.2004	q4::inwork; 17810,21941 18343,22348
@@ -31,4 +31,6 @@ B 1; (Brandenburger Str.); OD Groß Kreutz, zw. Lehniner Str. u. Bahnhofstr.; Str
 L 74; (Kehrigk-Märkisch Buchholz); OL Märkisch Buchholz, Friedrichstr.; Pflasterarbeiten; Vollsperrung; 26.04.2004-15.05.2004	q4::inwork 36286,-32059 36201,-32464
 K 6016; (Angermünde-KG-Althüttendorf); OD Neugrimnitz; Straßenneubau; Vollsperrung; 10.05.2004-31.12.2004	q4::inwork 37369,63738 38114,64592
 B 168; (Tiefensee-Eberswalde); OD Heckelberg; Straßenbauarbeiten; Vollsperrung; 13.04.2004-31.07.2004	q4::inwork 39185,37618 39589,38237
+# ???
+B 101; zw. Großbeeren u. Heinersdorf; Umbau Knoten; Vollsperrung; 17.05.2004-30.06.2004	q4::inwork 4851,-4166 5404,-3035
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
