@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeScribble.pm,v 1.4 2003/01/08 20:00:36 eserte Exp eserte $
+# $Id: BBBikeScribble.pm,v 1.5 2003/11/16 22:15:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeScribble;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 package Tk::Babybike; # XXX
 no strict;

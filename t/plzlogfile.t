@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plzlogfile.t,v 1.4 2003/11/13 00:16:20 eserte Exp $
+# $Id: plzlogfile.t,v 1.5 2003/11/16 22:55:41 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -14,15 +14,15 @@ use PLZ;
 use PLZ::Multi;
 use Getopt::Long;
 use CGI;
-use Fcntl qw(:seek);
-use File::ReadBackwards 1.00; # tell method
 
 BEGIN {
     if (!eval q{
 	use Test;
+	use Fcntl qw(:seek);
+	use File::ReadBackwards 1.00; # tell method
 	1;
     }) {
-	print "1..0 # skip: no Test module\n";
+	print "1..0 # skip: no Test, recent Fcntl and/or File::ReadBackwards modules\n";
 	exit;
     }
 }

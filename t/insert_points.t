@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points.t,v 1.1 2003/10/19 20:24:19 eserte Exp $
+# $Id: insert_points.t,v 1.2 2003/11/16 22:34:59 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -20,9 +20,9 @@ BEGIN {
     }
 }
 
-my $insert_points = "$FindBin::RealBin/../miscsrc/insert_points";
+my @insert_points = ($^X, "$FindBin::RealBin/../miscsrc/insert_points");
 my $datadir = "$FindBin::RealBin/../data";
-if (!-x $insert_points) {
+if (!-x $insert_points[-1]) {
     plan tests => 0;
     exit 0;
 }
@@ -33,7 +33,7 @@ my $dudenstr      = "9222,8787";
 my $dudenstr_orig = "8796,8817";
 
 {
-    my @res = IO::Pipe->new->reader($insert_points,
+    my @res = IO::Pipe->new->reader(@insert_points,
 				    "-operation", "grep",
 				    "-report", "-useint",
 				    "-datadir", $datadir, "-n",
@@ -51,7 +51,7 @@ my $dudenstr_orig = "8796,8817";
 }
 
 {
-    my @res = IO::Pipe->new->reader($insert_points,
+    my @res = IO::Pipe->new->reader(@insert_points,
 				    "-operation", "grep",
 				    "-report", "-useint",
 				    "-noorig", "-coordsys", "H",
@@ -70,7 +70,7 @@ my $dudenstr_orig = "8796,8817";
 }
 
 {
-    my @res = IO::Pipe->new->reader($insert_points,
+    my @res = IO::Pipe->new->reader(@insert_points,
 				    "-operation", "change",
 				    "-report", "-useint",
 				    "-datadir", $datadir, "-n",
@@ -90,7 +90,7 @@ my $dudenstr_orig = "8796,8817";
 }
 
 {
-    my @res = IO::Pipe->new->reader($insert_points,
+    my @res = IO::Pipe->new->reader(@insert_points,
 				    "-operation", "change",
 				    "-report", "-useint",
 				    "-noorig", "-coordsys", "H",

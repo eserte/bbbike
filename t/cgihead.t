@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead.t,v 1.5 2003/11/16 20:42:39 eserte Exp $
+# $Id: cgihead.t,v 1.6 2003/11/17 07:21:05 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -43,6 +43,7 @@ if (defined $mapserver_prog_url) {
 
 plan tests => scalar @prog;
 
+delete $ENV{PERL5LIB}; # override Test::Harness setting
 for my $prog (@prog) {
     my $qs = "";
     if ($prog =~ /mapserver_comment/) {

@@ -1,7 +1,7 @@
 # -*- c -*-
 
 #
-# $Id: CNetFile.pm,v 1.10 2003/04/13 15:56:40 eserte Exp eserte $
+# $Id: CNetFile.pm,v 1.11 2003/11/16 21:12:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002, 2003 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package StrassenNetz::CNetFile;
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Inline 0.40; # because of API changes
@@ -33,7 +33,7 @@ use StrassenNetz::CNetFilePerl;
 __DATA__
 __C__
 
-
+#include "ppport.h"
 #include <sys/types.h>
 #include <sys/mman.h>
 #include <fcntl.h>
@@ -59,13 +59,13 @@ int mmap_net_file(SV* self, char* filename) {
     /* check magic and version number */
     strncpy(magic, (char*)buf, 4);
     magic[4] = 0;
-    sv = perl_get_sv("StrassenNetz::CNetFile::MAGIC", FALSE);
+    sv = get_sv("StrassenNetz::CNetFile::MAGIC", FALSE);
     if (!sv)
       croak("Can't get $StrassenNetz::CNetFile::MAGIC");
     if (strncmp(magic, SvPV(sv, PL_na), 4) != 0)
       croak("Wrong magic <%s> found in %s\n", magic, filename);
     version = *(((int*)buf)+1);
-    sv = perl_get_sv("StrassenNetz::CNetFile::FILE_VERSION", FALSE);
+    sv = get_sv("StrassenNetz::CNetFile::FILE_VERSION", FALSE);
     if (!sv)
       croak("Can't get $StrassenNetz::CNetFile::FILE_VERSION");
     if (SvIV(sv) != version)

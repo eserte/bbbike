@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-lazy.t,v 1.8 2003/11/16 20:42:39 eserte Exp $
+# $Id: strassen-lazy.t,v 1.9 2003/11/17 07:21:05 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -15,9 +15,9 @@ use lib ("$FindBin::RealBin/..",
 
 BEGIN {
     if (!eval q{
-	use Test;
 	use Strassen::Lazy;
 	require Object::Realize::Later; Object::Realize::Later->VERSION(0.13);
+	use Test;
 	1;
     }) {
 	warn $@;

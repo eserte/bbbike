@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.6 2003/10/08 07:33:06 eserte Exp $
+# $Id: bbbikerouting.t,v 1.7 2003/11/17 07:21:05 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -56,7 +56,7 @@ if (defined $v && $v > 1) {
     Strassen::set_verbose(1);
 }
 
-system("$FindBin::RealBin/../miscsrc/bbbikestrserver -restart");
+system($^X, "$FindBin::RealBin/../miscsrc/bbbikestrserver", "-restart");
 
 if (!$all) {
     plan tests => $num_tests;
@@ -99,7 +99,7 @@ for $usexs (0, 1) {
     }
 }
 
-system("$FindBin::RealBin/../miscsrc/bbbikestrserver -stop");
+system($^X, "$FindBin::RealBin/../miscsrc/bbbikestrserver", "-stop");
 
 EXIT:
 if ($bench) {
@@ -159,17 +159,26 @@ sub do_tests {
     is($routing->RouteInfo->[-1]->{Street}, $routing->Goal->Street);
 
     $routing->delete_to_last_via;
-    is(Data::Dumper->new([$routing->Path],[])->Useqq(1)->Dump,
-       Data::Dumper->new([$path],[])->Useqq(1)->Dump);
-    is(Data::Dumper->new([$routing->RouteInfo],[])->Useqq(1)->Dump,
-       Data::Dumper->new([$routeinfo],[])->Useqq(1)->Dump);
+ SKIP: {
+	eval {
+	    Data::Dumper->VERSION(2.12); # Sortkeys
+	};
+	if ($@) {
+	    skip("Need recent Data::Dumper (2.12)", 3);
+	}
 
-    if ($cmp_path) {
-	is(Data::Dumper->new([$cmp_path],[])->Useqq(1)->Dump,
+	is(Data::Dumper->new([$routing->Path],[])->Useqq(1)->Dump,
 	   Data::Dumper->new([$path],[])->Useqq(1)->Dump);
-    } else {
-	$cmp_path = $path;
-	ok(1);
+	is(Data::Dumper->new([$routing->RouteInfo],[])->Useqq(1)->Dump,
+	   Data::Dumper->new([$routeinfo],[])->Useqq(1)->Dump);
+
+	if ($cmp_path) {
+	    is(Data::Dumper->new([$cmp_path],[])->Useqq(1)->Dump,
+	       Data::Dumper->new([$path],[])->Useqq(1)->Dump);
+	} else {
+	    $cmp_path = $path;
+	    ok(1);
+	}
     }
 
     my $custom_pos = BBBikeRouting::Position->new;

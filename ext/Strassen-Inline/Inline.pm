@@ -1,7 +1,7 @@
 # -*- c -*-
 
 #
-# $Id: Inline.pm,v 2.24 2003/11/16 12:15:09 eserte Exp eserte $
+# $Id: Inline.pm,v 2.25 2003/11/16 21:12:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ package Strassen::Inline;
 require 5.005; # new semantics of hv_iterinit
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 2.24 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 2.25 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Cwd;
@@ -68,6 +68,8 @@ use Inline (C => DATA =>
 
 __DATA__
 __C__
+
+#include "ppport.h"
 
 #ifdef HAS_HEAP
 #include "heap.h"
@@ -372,7 +374,7 @@ void search_c(SV* self, char* from, char* to, ...) {
 
 	AV* path = newAV();
 	dist_t len = 0;
-	SV* verbose = perl_get_sv("StrassenNetz::VERBOSE", FALSE);
+	SV* verbose = get_sv("StrassenNetz::VERBOSE", FALSE);
 	if (verbose && SvTRUE(verbose))
 	  fprintf(stderr, "Path found.\n");
 	while(1) {
@@ -554,8 +556,8 @@ void search_c(SV* self, char* from, char* to, ...) {
 #endif
 	      Inline_Stack_Push(sv_2mortal(newSViv(len_pen))); // XXX depends on dist_t!!!
 	      PUTBACK;
-	      if (perl_call_sv(penaltysub, G_SCALAR) != 1)
-		croak("perl_call_sv return value should be 1");
+	      if (call_sv(penaltysub, G_SCALAR) != 1)
+		croak("call_sv return value should be 1");
 
 	      SPAGAIN;
 	      len_pen = POPi;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.8 2003/10/01 07:01:01 eserte Exp $
+# $Id: wapcgi.t,v 1.9 2003/11/17 07:21:05 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -122,6 +122,7 @@ sub validate_wml {
     $ENV{SGML_CATALOG_FILES} = "";
     my($fh,$filename) = tempfile(UNLINK => 1);
     print $fh $wml;
+    close $fh; # to avoid problems (flush?) with 5.00503
     system("xmllint --catalogs file://$xml_catalog $filename 2>&1 >/dev/null");
     $? == 0;
 }

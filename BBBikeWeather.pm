@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeWeather.pm,v 1.1 2003/05/04 19:56:12 eserte Exp eserte $
+# $Id: BBBikeWeather.pm,v 1.2 2003/11/16 22:58:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.

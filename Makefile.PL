@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.88 2003/11/13 00:11:00 eserte Exp eserte $
+# $Id: Makefile.PL,v 1.89 2003/11/16 22:59:19 eserte Exp eserte $
 
 BEGIN {
     $^W = 0;
@@ -114,13 +114,20 @@ use constant REQTABLE_LONGDESC=> 5;
    'Erzeugen der Mapserver- oder anderer ESRI-Dateien'],
   [qw/IPC::Run		0	all	0	base/,
    'hilft bei der sicheren Ausführung von externen Kommandos (insbesondere für Win32)'],
+  [qw/Imager	0	all	0	devel/,
+   'additional optional BBBikeDraw backend for PNG graphics'],
+  [qw/SVG	0	all	0	cgi/,
+   'additional optional BBBikeDraw backend for SVG graphics'],
+
+  [qw/Image::Info	0	all	0	test/],
+  [qw/Test::More	0	all	0	test/],
  );
 
 # EXE corequisites ####################################################
 # standard Unix: uname, who, tee, at, diff, zcat, ping
 # BSD Unix:      leave
 # extra:         enscript, gv, ghostview, gs, netpbm-utils, cjpeg, agrep,
-#                netscape, socket
+#                netscape, socket, mapserver
 # local extra:   cdmount, dial
 # palm utils:    install-datebook, pilot_makedoc, iSilo*, txt2pdbdoc,
 #                pilot-xfer

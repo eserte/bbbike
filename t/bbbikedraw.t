@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.5 2003/08/30 22:20:52 eserte Exp $
+# $Id: bbbikedraw.t,v 1.6 2003/11/16 22:15:22 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -17,16 +17,17 @@ use Strassen::Core;
 use BBBikeDraw;
 use File::Temp qw(tempfile);
 use Getopt::Long;
-use Time::HiRes qw(gettimeofday tv_interval);
 
 my @modules;
 
 BEGIN {
     if (!eval q{
 	use Test;
+	use Time::HiRes qw(gettimeofday tv_interval);
+	use Image::Info qw(image_info);
 	1;
     }) {
-	print "1..0 # skip: no Test module\n";
+	print "1..0 # skip: no Test, Time::HiRes and/or Image::Info modules\n";
 	exit;
     }
 
@@ -39,10 +40,12 @@ BEGIN {
 # MapServer: 60 s
 # ImageMagick: 461 s (with VectorUtil XS)
 
-plan tests => scalar @modules;
+plan tests => scalar @modules * 4;
 
 my @drawtypes = "all";
-my $geometry = "640x480";
+my $width = 640;
+my $height = 480;
+my $geometry = $width."x".$height;
 my $display = 0;
 my $verbose = 0;
 my $do_slow = 0;
@@ -58,7 +61,10 @@ if (!GetOptions("display!" => \$display,
 }
 
 for my $module (@modules) {
-    draw_map($module);
+    eval {
+	draw_map($module);
+    };
+    ok($@, "");
 }
 
 if ($display) {
@@ -104,7 +110,10 @@ sub draw_map {
 	system("xv $filename &");
     }
 
-    ok(1); # XXX actually check for png!
+    my $image_info = image_info($filename);
+    ok($image_info->{file_media_type}, "image/png");
+    ok($image_info->{width}, $width);
+    ok($image_info->{height}, $height);
 }
 
 __END__

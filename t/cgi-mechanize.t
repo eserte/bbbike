@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.3 2003/09/22 20:02:34 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.4 2003/11/16 21:19:38 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -10,10 +10,10 @@ use strict;
 
 BEGIN {
     if (!eval q{
-	use Test::More qw(no_plan);
 	use WWW::Mechanize;
 	use WWW::Mechanize::FormFiller;
 	use URI::URL;
+	use Test::More qw(no_plan);
 	1;
     }) {
 	print "1..0 # skip: no Test::More and/or WWW::Mechanize modules\n";

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-grid.t,v 1.1 2003/10/01 22:35:52 eserte Exp $
+# $Id: strassen-grid.t,v 1.2 2003/11/16 22:37:23 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -53,9 +53,9 @@ for my $p_def (# Köpenicker Chaussee/Rummelsburg (with wrong $p_kr)
     my($p, $p_exact, $p_fast, $p_kr) = @$p_def;
     if (!defined $p_fast) { $p_fast = $p_exact }
     if (!defined $p_kr)   { $p_kr   = $p_fast }
-    is($s_exact->nearest_point($p), $p_exact);
-    is(($kr->nearest_loop(split /,/, $p))[0], $p_kr);
-    is($s_fast->nearest_point($p), $p_fast);
+    is($s_exact->nearest_point($p), $p_exact, "Exact test for $p");
+    is(($kr->nearest_loop(split /,/, $p))[0], $p_kr, "Nearest loop test for $p");
+    is($s_fast->nearest_point($p), $p_fast, "Fast test for $p");
 }
 
 __END__

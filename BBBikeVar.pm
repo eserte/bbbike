@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.25 2003/06/28 20:35:37 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.26 2003/11/16 22:16:46 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000-2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000-2003 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
 # Mail: slaven@rezic.de
-# WWW:  http://bbbike.sf.net/
+# WWW:  http://bbbike.sourceforge.net/
 #
 
 # BBBike variables and constants
