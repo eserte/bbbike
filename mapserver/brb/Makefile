@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.14 2004/05/10 10:16:51 eserte Exp $
+# $Id: Makefile,v 1.15 2004/05/17 07:06:09 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -405,3 +405,6 @@ dist-spiff:
 
 # To build mapserver on devpc01, use:
 # ./configure --with-gd=static,/home/slavenr/tmp/gd-2.0.12/ --enable-debug
+
+# On www.radzeit.de, use the mapserv-3.6.6 binary instead of the
+# mapserv-3.6.4 binary. The latter seems to segfault more often.

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.70 2004/05/09 20:52:03 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.72 2004/05/13 22:03:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -97,7 +97,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $bbbike_script $cgi $port
 	    $search_algorithm $use_background_image
 	    $use_apache_session $apache_session_module $cookiename
-	    @temp_blocking $use_cgi_compress_gzip
+	    @temp_blocking $use_cgi_compress_gzip $max_matches
 	   );
 
 #XXX in mod_perl/Apache::Registry operation there are a lot of "shared
@@ -582,6 +582,9 @@ Explanation text for temporary blockings.
 
 =cut
 
+# XXX document: # show max n matches in start form
+$max_matches = 20;
+
 ####################################################################
 
 unshift(@Strassen::datadirs,
@@ -609,7 +612,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.70 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.72 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -944,11 +947,16 @@ sub abc_link {
     if ($bi->{'mobile_device'}) {
 	# we don't need any extras
     } elsif ($bi->{'text_browser'}) {
-	for my $ch ('A' .. 'Z') {
-	    print "<input type=submit name="
-	      . $type . "char value=" . $ch . ">";
+	# This is disabled for now --- it is too cumbersome to navigate
+	# to the via and goal entry fields with this link list. Maybe just
+	# provide a separate link to this link list.
+	if (0) {
+	    for my $ch ('A' .. 'Z') {
+		print "<input type=submit name="
+		    . $type . "char value=" . $ch . ">";
+	    }
+	    print "<br>\n";
 	}
-	print "<br>\n";
     } elsif ($nice_abcmap) {
 	print "<input type=hidden name=\"" . $type . "charimg.x\" value=\"\">";
 	print "<input type=hidden name=\"" . $type . "charimg.y\" value=\"\">";
@@ -981,18 +989,21 @@ sub choose_form {
     my $start     = $q->param('start')     || '';
     my $startplz  = $q->param('startplz')  || '';
     my $starthnr  = $q->param('starthnr')  || '';
+    my $startc    = $q->param('startc')    || '';
 
     my $vianame   = $q->param('vianame')   || '';
     my $via2      = $q->param('via2')      || '';
     my $via       = $q->param('via')       || '';
     my $viaplz    = $q->param('viaplz')    || '';
     my $viahnr    = $q->param('viahnr')    || '';
+    my $viac      = $q->param('viac')      || '';
 
     my $zielname  = $q->param('zielname')  || '';
     my $ziel2     = $q->param('ziel2')     || '';
     my $ziel      = $q->param('ziel')      || '';
     my $zielplz   = $q->param('zielplz')   || '';
     my $zielhnr   = $q->param('zielhnr')   || '';
+    my $zielc     = $q->param('zielc')     || '';
 
     my $nl = sub {
 	if ($bi->{'can_table'}) {
@@ -1010,6 +1021,12 @@ sub choose_form {
 	    print "<center>$text</center>\n";
 	}
     };
+
+    # This is needed if the user first types a street name and then
+    # chooses the detailmap:
+    undef $start if $startc;
+    undef $via   if $viac;
+    undef $ziel  if $zielc;
 
     # Namen und Koordinaten der Start...orte
     my($startort, $viaort, $zielort,
@@ -1121,6 +1138,7 @@ sub choose_form {
 	     [\$zielname, \$ziel, \$ziel2, \@ziel_matches, 'ziel', \$zielplz],
 	    ) {
 	my  (  $nameref,  $oneref,$tworef, $matchref,      $type,  $zipref)=@$_;
+	local $^W = 0; # too many defined checks missing...
 
 	# Darstellung eines Vias nicht erw¸nscht
 	next if ($type eq 'via' and $$oneref eq 'NO');
@@ -1177,11 +1195,9 @@ sub choose_form {
 			    $q->param($type . 'c', $ret->[1][0]);
 			}
 		    }
-#XXX		    next;
 		}
 
 		if (@$matchref == 0 && !defined $$nameref) {
-#XXX ‹berpr¸fen ...
 		    # Noch immer ohne Erfolg. In der Strassen-Datei
 		    # nachschauen, weil einige Straﬂen nicht in der PLZ-Datei
 		    # stehen.
@@ -1197,11 +1213,7 @@ sub choose_form {
 		    }
 		}
 
-		next; # XXX delete?
-		# XXX enable???
-		#if (@$matchref == 0 && !defined $$nameref) {
-		#    next;
-		#}
+		next;
 	    }
 
 	    # If this is a crossing, then get the exact point, but don't fail
@@ -1466,7 +1478,9 @@ EOF
 	      "stra&szlig;e</b> ausw&auml;hlen:<br>\n";
 	    my $s;
 	    my $checked = 0;
+	    my $out_i = 0;
 	    foreach $s (@$matchref) {
+		last if ++$out_i > $max_matches;
 		my $strasse2val;
 		my $is_ort = $s->[MATCHREF_ISORT_INDEX];
 		print "<input type=radio name=" . $type . "2";
@@ -1510,7 +1524,9 @@ EOF
 		    my $js = "";
 		    my $match_nr = 0;
 
+		    my $out_i = 0;
 		    foreach $s (@$matchref) {
+			last if ++$out_i > $max_matches;
 			$match_nr++;
 			next if $s->[MATCHREF_ISORT_INDEX];
 			my $xy = $s->[PLZ::LOOK_COORD()];
@@ -2121,7 +2137,7 @@ sub settings_html {
 <option @{[ $cat_checked->("N2") ]}>nur Nebenstraﬂen benutzen
 <option @{[ $cat_checked->("H1") ]}>Hauptstraﬂen bevorzugen
 <option @{[ $cat_checked->("H2") ]}>nur Hauptstraﬂen benutzen
-<option @{[ $cat_checked->("N_RW") ]}>Hauptstraﬂen ohne Radwege meiden
+<option @{[ $cat_checked->("N_RW") ]}>Hauptstraﬂen ohne Radwege/Busspuren meiden
 </select></td></tr>
 <tr><td>Bevorzugter Straﬂenbelag:</td><td><select $bi->{hfill} name="pref_quality">
 <option @{[ $qual_checked->("") ]}>egal
@@ -2781,6 +2797,7 @@ sub search_coord {
 			 };
     }
 
+ OUTPUT_DISPATCHER:
     if ($output_as =~ /^(xml|yaml|yaml-short|perldump)$/) {
 	require Karte;
 	Karte::preload(qw(Polar Standard));
@@ -2874,6 +2891,7 @@ sub search_coord {
     $header_args{-printmode} = 1 if $printmode;
     header(%header_args);
 
+ ROUTE_HEADER:
     if (!@out_route) {
 	print "Keine Route gefunden.\n";
     } else {
@@ -2917,6 +2935,7 @@ EOF
 	    print "<center>Mˆgliche Ausweichroute</center>\n";
 	}
 
+    ROUTE_TABLE:
 	print "<center>" unless $printmode;
 	print "<table bgcolor=\"#ffcc66\"";
 	if ($printmode) {
@@ -3567,10 +3586,10 @@ sub draw_route {
 			} $q->param('draw')
 		      ];
 	}
-	my $scope = (defined $q->param('scope')
-		     ? $q->param('scope')
-		     : 'all,city' # "all", so switching between reference maps is possible
-		    );
+	my $scope = $q->param('scope');
+	if (!defined $scope || $scope eq "") {
+	    $scope = 'all,city' # "all", so switching between reference maps is possible
+	}
 	if ($scope !~ /^all/) {
 	    $scope = "all,$scope";
 	}
@@ -4933,6 +4952,23 @@ EOF
 	require Config;
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
+
+    my $cgi_date = '$Date: 2004/05/13 22:03:43 $';
+    ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
+    my $data_date;
+    for (@Strassen::datadirs) {
+	if (my(@s) = stat "$_/.modified") {
+	    my @l = localtime $s[9];
+	    $data_date = sprintf "%04d/%02d/%02d", $l[5]+1900,$l[4]+1,$l[3];
+	}
+    }
+    $data_date = "unbekannt" if !defined $data_date;
+    print <<EOF;
+Version des Programms bbbike.cgi: $VERSION ($cgi_date)<br/>
+Stand der Daten: $data_date<br/>
+bbbike.cgi ist Bestandteil von <a href="$BBBike::BBBIKE_SF_WWW">BBBike</a> Release $BBBike::VERSION<br/><br/>
+EOF
+
     if (defined $os) {
         print "Betriebssystem: $os\n";
         if ($os =~ /freebsd/i) {
@@ -4981,7 +5017,7 @@ Verwendete Software:
 EOF
     if (defined $Apache::VERSION) {
 	print <<EOF;
-<li><a href="${scpan}Apache">Apache $Apache::VERSION</a> (auch bekannt als "mod_perl")
+<li><a href="${scpan}Apache">Apache $Apache::VERSION</a> (auch bekannt als <a href="http://perl.apache.org">mod_perl</a>)
 EOF
     }
     if ($can_palmdoc) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GfxConvert.pm,v 1.13 2004/01/03 01:07:51 eserte Exp eserte $
+# $Id: GfxConvert.pm,v 1.14 2004/05/16 20:04:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003 Slaven Rezic. All rights reserved.
@@ -296,6 +296,9 @@ sub transform_image {
 #    my $colormode = $args{-colormode} || 'color';
 
     require GD;
+    if ($GD::VERSION >= 2) {
+	GD->VERSION(2.13); # older versions may coredump on invalid image files --- note that 2.13 is not out yet as of 2004-05-16 (but there's a patch at rt.cpan.org)
+    }
     open(GIF, $in_file)
       or die "Die Datei $in_file konnte nicht geöffnet werden: $!";
     binmode GIF;

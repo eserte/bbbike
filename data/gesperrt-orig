@@ -6,7 +6,7 @@
 # die Richtung gibt bei Einbahnstraßen die Sperrung an
 #
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8525,10626 8430,10710
-Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034 6873,11011
+Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
 Kanalstraßen Nordufer	1 6880,11110 7160,11225 7251,11202 7333,11179 7595,11086 7873,11142 7993,11137 8241,11024
 # Hier kann ein kurzes Stück auf dem Gehweg überbrückt werden
 Kanalstraßen Nordufer	1 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8739,10404 8820,10379 9029,10366 9147,10359 9241,10324 9392,10260 9593,10238 9865,10286
@@ -288,74 +288,83 @@ Groebenufer	1s 13206,10651 13077,10747
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
-Lützowufer - Lützowplatz (unbequem passierbarer Mittelstreifen)	3 6626,11178 6873,11011 7002,11034
-Düsseldorfer - Paderborner (Tunneleinfahrt Adenauerplatz)	3 4151,10026 3906,10035 3720,9996
-Paderborner - Düsseldorfer (Tunneleinfahrt Adenauerplatz)	3 3720,9996 3906,10035 4151,10026
-Paderborner - Brandenburgische (Tunneleinfahrt Adenauerplatz)	3 3720,9996 3906,10035 3852,10236
-Brandenburgische - Düsseldorfer (Tunneleinfahrt Adenauerplatz)	3 3852,10236 3906,10035 4151,10026
-Bahndamm - Treskowallee - Ontarioseestr. (Straßenbahntrasse)	3 19675,10410 18698,9996 18690,10016 18577,10023
-Regensburger - Pariser (unbequem passierbarer Mittelstreifen)	3 5541,9923 5475,9914 5416,9928
-Pariser - Regensburger (unbequem passierbarer Mittelstreifen)	3 5416,9928 5475,9914 5541,9923
+Lützowufer - Lützowplatz: unbequem passierbarer Mittelstreifen	3 6732,11106 6873,11011 7002,11034
+Lützowplatz - Lützowufer: unbequem passierbarer Mittelstreifen	3 7002,11034 6873,11011 6732,11106
+Lützowufer - Schillstr.: unbequem passierbarer Mittelstreifen	3 7002,11034 6873,11011 6824,10904
+Düsseldorfer - Paderborner: Tunneleinfahrt Adenauerplatz	3 4151,10026 3906,10035 3720,9996
+Paderborner - Düsseldorfer: Tunneleinfahrt Adenauerplatz	3 3720,9996 3906,10035 4151,10026
+Paderborner - Brandenburgische: Tunneleinfahrt Adenauerplatz	3 3720,9996 3906,10035 3852,10236
+Brandenburgische - Düsseldorfer: Tunneleinfahrt Adenauerplatz	3 3852,10236 3906,10035 4151,10026
+Bahndamm - Treskowallee - Ontarioseestr.: Straßenbahntrasse	3 19675,10410 18698,9996 18690,10016 18577,10023
+Regensburger - Pariser: unbequem passierbarer Mittelstreifen	3 5541,9923 5475,9914 5416,9928
+Pariser - Regensburger: unbequem passierbarer Mittelstreifen	3 5416,9928 5475,9914 5541,9923
 Marzahner Kreuz	3 19408,15007 19466,14910 19506,15002
 Marzahner Kreuz	3 19551,14961 19506,15002 19466,14910
 Marzahner Kreuz	3 19605,15073 19735,15155 19694,15149
-Waterlooufer - Brachvogelstr. (unbequem passierbarer Mittelstreifen)	3 9812,10211 9849,10202 9884,10192
-Grunerstr. - Alexanderplatz (Straßentunnel)	3 10959,12629 11062,12710 11030,12741
-Dircksenstr. - Alexanderplatz (Straßentunnel)	3 11156,12581 11062,12710 11030,12741
-Alexanderplatz - Grunerstr. (Straßentunnel)	3 11030,12741 11062,12710 11134,12793
-Alexanderplatz - Dircksenstr. (Straßentunnel)	3 11030,12741 11062,12710 11156,12581
-Wilhelmsaue - Bundesallee (Straßentunnel)	3 5346,8720 5510,8709 5505,8832
-Bundesallee - Wilhelmsaue (Straßentunnel)	3 5513,8588 5510,8709 5346,8720 5181,8731
-Volkspark - Bundesallee (Absperrung)	3 5533,8478 5481,8506 5417,8519
-Volkspark - Bundesallee (Absperrung)	3 5533,8478 5481,8506 5444,8406
-Volkspark - Bundesallee (Absperrung)	3 5417,8519 5481,8506 5533,8478
-Volkspark - Bundesallee (Absperrung)	3 5417,8519 5481,8506 5513,8588
-Teltowkanalufer - Tempelhofer Damm (unbequem passierbarer Mittelstreifen)	3 8881,5143 9185,5271 9184,5310
-Wörther Str. - Schönhauser Allee (U-Bahn-Rampe)	3 11163,14548 10924,14491 10947,14114
-Schönhauser Allee - Wörther Str. (U-Bahn-Rampe)	3 10909,14710 10924,14491 11163,14548
-Alt-Friedrichsfelde - Charlottenstr. (Straßentunnel)	3 18853,11798 18529,11722 18526,11640
-Charlottenstr. - Alt-Friedrichsfelde (Straßentunnel)	3 18526,11640 18529,11722 18220,11710
-Dunckerstr. - Wisbyer Str. (Straßenbahn)	3 11939,16084 12026,16247 11905,16318
-Berliner Str. - Thulestr. (U-Bahn-Rampe)	3 10986,16897 11042,16605 11645,16616
-Thulestr. - Berliner Str. (U-Bahn-Rampe)	3 11645,16616 11042,16605 11033,16464
-Löwenberger Str. - Alt-Friedrichsfelde (nicht passierbarer Mittelstreifen)	3 17477,11893 17436,11791 17750,11771
-Alt-Friedrichsfelde - Löwenberger Str. (nicht passierbarer Mittelstreifen)	3 17249,11802 17436,11791 17477,11893
-Robert-Uhrig-Str. - Alt-Friedrichsfelde (nicht passierbarer Mittelstreifen)	3 17734,11408 17750,11771 17436,11791
-Alt-Friedrichsfelde - Robert-Uhrig-Str. (nicht passierbarer Mittelstreifen)	3 18220,11710 17750,11771 17734,11408
-Alt-Friedrichsfelde - Gensinger Str. (nicht passierbarer Mittelstreifen)	3 19005,11796 19283,11785 19144,11859
-Alt-Friedrichsfelde - Gensinger Str. (nicht passierbarer Mittelstreifen)	3 19144,11859 19005,11796 19283,11785
-Alt-Friedrichsfelde - Gensinger Str. (nicht passierbarer Mittelstreifen)	3 19283,11785 19005,11796 19005,11705
-Alt-Friedrichsfelde - Gensinger Str. (nicht passierbarer Mittelstreifen)	3 19005,11705 19005,11796 18853,11798
+Waterlooufer - Brachvogelstr.: unbequem passierbarer Mittelstreifen	3 9812,10211 9849,10202 9884,10192
+Grunerstr. - Alexanderplatz: Straßentunnelrampe	3 10959,12629 11062,12710 11030,12741
+Dircksenstr. - Alexanderplatz: Straßentunnelrampe	3 11156,12581 11062,12710 11030,12741
+Alexanderplatz - Grunerstr.: Straßentunnelrampe	3 11030,12741 11062,12710 11134,12793
+Alexanderplatz - Dircksenstr.: Straßentunnelrampe	3 11030,12741 11062,12710 11156,12581
+Grunerstr. - Littenstr: Straßentunnelrampe.	3 11062,12710 10959,12629 11056,12461
+Littenstr. - Grunerstr.: Straßentunnelrampe	3 11056,12461 10959,12629 10887,12543
+Wilhelmsaue - Bundesallee: Straßentunnelrampe	3 5346,8720 5510,8709 5505,8832
+Bundesallee - Wilhelmsaue: Straßentunnelrampe	3 5513,8588 5510,8709 5346,8720 5181,8731
+Volkspark - Bundesallee: Absperrung	3 5533,8478 5481,8506 5417,8519
+Volkspark - Bundesallee: Absperrung	3 5533,8478 5481,8506 5444,8406
+Volkspark - Bundesallee: Absperrung	3 5417,8519 5481,8506 5533,8478
+Volkspark - Bundesallee: Absperrung	3 5417,8519 5481,8506 5513,8588
+Teltowkanalufer - Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3 8881,5143 9185,5271 9184,5310
+Wörther Str. - Schönhauser Allee: U-Bahnrampe	3 11163,14548 10924,14491 10947,14114
+Schönhauser Allee - Wörther Str.: U-Bahnrampe	3 10909,14710 10924,14491 11163,14548
+Alt-Friedrichsfelde - Charlottenstr.: Straßentunnelrampe	3 18853,11798 18529,11722 18526,11640
+Charlottenstr. - Alt-Friedrichsfelde: Straßentunnelrampe	3 18526,11640 18529,11722 18220,11710
+Dunckerstr. - Wisbyer Str.: Straßenbahn	3 11939,16084 12026,16247 11905,16318
+Berliner Str. - Thulestr.: U-Bahnrampe	3 10986,16897 11042,16605 11645,16616
+Thulestr. - Berliner Str.: U-Bahnrampe	3 11645,16616 11042,16605 11033,16464
+Löwenberger Str. - Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3 17477,11893 17436,11791 17750,11771
+Alt-Friedrichsfelde - Löwenberger Str.: nicht passierbarer Mittelstreifen	3 17249,11802 17436,11791 17477,11893
+Robert-Uhrig-Str. - Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3 17734,11408 17750,11771 17436,11791
+Alt-Friedrichsfelde - Robert-Uhrig-Str.: nicht passierbarer Mittelstreifen	3 18220,11710 17750,11771 17734,11408
+Alt-Friedrichsfelde - Gensinger Str.: nicht passierbarer Mittelstreifen	3 19005,11796 19283,11785 19144,11859
+Alt-Friedrichsfelde - Gensinger Str.: nicht passierbarer Mittelstreifen	3 19144,11859 19005,11796 19283,11785
+Alt-Friedrichsfelde - Gensinger Str.: nicht passierbarer Mittelstreifen	3 19283,11785 19005,11796 19005,11705
+Alt-Friedrichsfelde - Gensinger Str.: nicht passierbarer Mittelstreifen	3 19005,11705 19005,11796 18853,11798
 #XXX Problem with search algorithm!!!
-#Weißenhöher Weg - Alt-Friedrichsfelde (nicht passierbarer Mittelstreifen)	3 13147,7737 13093,7705 12926,7692
-Märkische Allee - Weißenhöher Weg (nicht passierbarer Mittelstreifen)	3 19802,11794 19693,11762 19827,11686
-Gervinusstr./Lewishamstr.	3 3839,10904 3631,10784 3587,10768
-Sybelstr./Lewishamstr.	3 3712,10566 3739,10576 3644,10759
-Sybelstr./Lewishamstr.	3 3813,10435 3739,10576 3712,10566
-Waitzstr./Lewishamstr.	3 3737,10322 3739,10576 3644,10759
-Waitzstr./Lewishamstr.	3 3813,10435 3739,10576 3737,10322
-Rauchstr./Klingelhöferstr.	3 6683,11367 6853,11336 6825,11486
-Rauchstr./Klingelhöferstr.	3 7160,11225 6853,11336 6880,11110
-Köbisstr./Klingelhöferstr.	3 6880,11110 6853,11336 6683,11367
-Rauchstr./Köbisstr.	3 7160,11225 6853,11336 6683,11367
-Rauchstr./Köbisstr.	3 6683,11367 6853,11336 7160,11225
-Grunerstr. - Littenstr.	3 11062,12710 10959,12629 11056,12461
-Littenstr. - Grunerstr.	3 11056,12461 10959,12629 10887,12543
-Bornholmer Str. - Kolonnenweg	3 10215,16527 9998,16547 9982,16527
-Bornholmer Str. - Kolonnenweg	3 9883,16557 9998,16547 9983,16561
-Kolonnenweg - Bornholmer Str.	3 9983,16561 9998,16547 10215,16527
-Kolonnenweg - Bornholmer Str.	3 9982,16527 9998,16547 9883,16557
-Kreutzigerstr - Frankfurter Allee: schwer passierbarer Mittelstreifen (?)	3 14285,12190 14291,12220 14208,12235
-Frankfurter Allee - Kreutzigerstr: schwer passierbarer Mittelstreifen (?)	3 14434,12196 14291,12220 14285,12190
+#Weißenhöher Weg - Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3 13147,7737 13093,7705 12926,7692
+Märkische Allee - Weißenhöher Weg: nicht passierbarer Mittelstreifen	3 19802,11794 19693,11762 19827,11686
+Gervinusstr./Lewishamstr.: Straßentunnelrampe	3 3839,10904 3631,10784 3587,10768
+Sybelstr./Lewishamstr.: Straßentunnelrampe	3 3712,10566 3739,10576 3644,10759
+Sybelstr./Lewishamstr.: Straßentunnelrampe	3 3813,10435 3739,10576 3712,10566
+Waitzstr./Lewishamstr.: Straßentunnelrampe	3 3737,10322 3739,10576 3644,10759
+Waitzstr./Lewishamstr.: Straßentunnelrampe	3 3813,10435 3739,10576 3737,10322
+Rauchstr./Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3 6683,11367 6853,11336 6825,11486
+Rauchstr./Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3 7160,11225 6853,11336 6880,11110
+Köbisstr./Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3 6880,11110 6853,11336 6683,11367
+Rauchstr./Köbisstr.: unbequem passierbarer Mittelstreifen	3 7160,11225 6853,11336 6683,11367
+Rauchstr./Köbisstr.: unbequem passierbarer Mittelstreifen	3 6683,11367 6853,11336 7160,11225
+Bornholmer Str. - Kolonnenweg: Straßenbahn auf Mittelstreifen	3 10215,16527 9998,16547 9982,16527
+Bornholmer Str. - Kolonnenweg: Straßenbahn auf Mittelstreifen	3 9883,16557 9998,16547 9983,16561
+Kolonnenweg - Bornholmer Str.: Straßenbahn auf Mittelstreifen	3 9983,16561 9998,16547 10215,16527
+Kolonnenweg - Bornholmer Str.: Straßenbahn auf Mittelstreifen	3 9982,16527 9998,16547 9883,16557
+Kreutzigerstr - Frankfurter Allee: unbequem passierbarer Mittelstreifen	3 14285,12190 14291,12220 14208,12235
+Frankfurter Allee - Kreutzigerstr: unbequem passierbarer Mittelstreifen	3 14434,12196 14291,12220 14285,12190
 Kopenhagener Str. - Schönhauser Allee: U-Bahnviadukt	3 10581,15936 10972,15895 10994,16120
 Schönhauser Allee - Kopenhagener Str.: U-Bahnviadukt	3 10963,15789 10972,15895 10581,15936
-Leipziger - Jerusalemer: schlecht passierbarer Mittelstreifen	3 9701,11649 9899,11670 9892,11752
+Leipziger - Jerusalemer: unbequem passierbarer Mittelstreifen	3 9701,11649 9899,11670 9892,11752
 Langenbeckstr - Landsberger: Mittelstreifen	3 13081,13457 13161,13360 13353,13459
 Landsberger - Langenbeckstr: Mittelstreifen	3 13089,13323 13161,13360 13081,13457
 Greifswalder - Chodowieckistr: Mittelstreifen mit Straßenbahn	3 12188,14321 12285,14458 11992,14599
 Chodowieckistr - Greifswalder: Mittelstreifen mit Straßenbahn	3 11992,14599 12285,14458 12338,14532
 Christinenstr. - Torstr.: Mittelstreifen mit Straßenbahn	3 10639,13865 10569,13719 10746,13673
 Torstr. - Christinenstr.: Mittelstreifen mit Straßenbahn	3 10445,13752 10569,13719 10639,13865
+Katzlerstr. - Yorckstr.: Linksabbiegen verboten (und unbequem)	3 8035,9437 8095,9639 7941,9686
+Yorckstr. - Katzlerstr.: Linksabbiegen verboten (und unbequem)	3 8188,9610 8095,9639 8035,9437
+Neue Blumenstr.: Mittelstreifen	3 11709,12601 12006,12464 12118,12462
+Neue Blumenstr - Lichtenberger Str.: Mittelstreifen	3 11709,12601 12006,12464 12047,12572
+Neue Blumenstr - Lichtenberger Str.: Mittelstreifen	3 12118,12462 12006,12464 11929,12263
+Lichtenberger - Neue Blumenstr.: Mittelstreifen	3 11929,12263 12006,12464 11709,12601
+Lichtenberger - Neue Blumenstr.: Mittelstreifen	3 12047,12572 12006,12464 12118,12462
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Dorotheenstr. an der US-Botschaft	3 8907,12472 9112,12499 9323,12528
 Dorotheenstr. an der US-Botschaft	3 9323,12528 9112,12499 8907,12472
@@ -432,6 +441,11 @@ Schranke (Krankenhaus Herzberge)	BNP:5 17247,13519
 zwei Drängelgitter (S-Bhf. Grunewald)	BNP:10 731,9103
 Drängelgitter (vor der Straßenbahnhaltestelle)	BNP:5 29092,4761
 Schranke (Berliner Str./Woltersdorf)	BNP:5 32192,5915
+Schranke, schwer passierbarf (Neue Steinmetzstr.)	BNP:10 7628,9364
+Schranke (Neue Steinmetzstr.)	BNP:5 7612,9446
+# XXX nur für Fahrräder mit Anhänger relevant: vvvvvvvvvvvvvvvvvvvvvvvvvvv
+#Barriere: Zillestr.	BNP:30 3268,11834
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #
 ############################################################################
 #
@@ -450,14 +464,15 @@ Sperrung vor der amerikanischen Botschaft	2 9141,12320 9112,12499 9100,12627
 (Neue Naumannstr.) (noch in Bau)	2:inwork 7606,7611 7717,7759
 #geplante Verlängerung des Groß-Berliner Damms (2006-00-00)	2:inwork 12675,10932 12904,11268
 Französische Str. (Bauarbeiten)	1:inwork 9183,12076 9076,12054
-Mauerstr. (Bauarbeiten, Dauer: 19.01.2004 bis voraussichtlich 15.07.2004)	1:inwork 9173,11770 9144,11866
+## XXX aufgehoben wegen Mohrenstr.
+#Mauerstr. (Bauarbeiten, Dauer: 19.01.2004 bis voraussichtlich 15.07.2004)	1:inwork 9173,11770 9144,11866
 Mauerstr. (Bauarbeiten, Dauer: 19.01.2004 bis voraussichtlich 15.07.2004)	2:inwork 9144,11866 9108,11961
 Mohrenstr. (Bauarbeiten)	1:inwork 9410,11803 9220,11781
 #Mohrenstr. (Bauarbeiten)	1:inwork 9092,7578 9008,7586
 Gertrud-Kolmar-Str. (Bauarbeiten am Holocaust-Denkmal)	2:inwork 8804,11838 8769,11971
 Goethestr. (Bauarbeiten)	1:inwork 4896,11345 5053,11343
 Krausenstr. (Bauarbeiten)	1s:inwork 9449,11512 9581,11523
-Potsdamer Platz/Ebertstr.	1:inwork 8553,11638 8546,11537 8542,11502
+#XXX del Potsdamer Platz/Ebertstr.	1:inwork 8553,11638 8546,11537 8542,11502
 Auguststr. (Bauarbeiten)	2:inwork 10262,13583 10306,13591
 #XXX del? Müggelseedamm (Bauarbeiten)	2:inwork 16185,10440 16498,10466
 Markgrafenstraße  Richtung Französische  Straße zwischen Behrenstraße und Französische Straße, Bauarbeiten als Einbahnstraße eingerichtet, Dauer: 05.01.2004, 06.00 Uhr bis 31.07.2004	1:inwork 9636,12126 9626,12227
@@ -466,12 +481,12 @@ Markgrafenstraße  Richtung Französische  Straße zwischen Behrenstraße und Franzö
 # tatsächlich für Radfahrer gesperrt?
 Johannisthaler Chaussee, Ernst-Keller Brücke; Bauarbeiten; Brücke gesperrt bis 30.06.	2:inwork 15573,4122 15608,4175 15779,4430
 #XXX Haeh? Da ist nichts! XXX Die Brückenstraße, Richtung Heinrich-Heine-Straße ist zwischen Märkisches Ufer und Köpenicker Straße wegen Bauarbeiten als Einbahnstraße eingerichtet. Die nördliche Einmündung Rungestraße/Brückenstraße wird gesperrt. Zufahrt zu den Grundstücken 6 - 11 und 28 - 30 ist nur über den Köllnischen Park möglich. Dauer: 23.04.2003, 04.00 Uhr bis ca. 29.08.2004	1:inwork 9647,7646 9665,7583 9685,7517
-am Beisheim-Center	2:inwork 8399,11630 8326,11732
+#XXX del am Beisheim-Center	2:inwork 8399,11630 8326,11732
 # XXX ja? NEW:       L19 Saatwinkler Damm Berlin-Haselhorst - Berlin-Tiergarten in beiden Richtungen Zwischen Gartenfelder Straße und Flughafen Tegel beidseitig wegen Bauarbeiten gesperrt 
 #XXX del? Wielandstr., S-Bahn-Sanierung (bis ca. 2004-04-30)	2:inwork 6857,7856 6849,7933
 Alt-Köpenick Treptow - Köpenick, zwischen Rosenstr. und Müggelheimer Str. Baustelle, Straße gesperrt bis 31.05.	2:inwork 22196,4847 22138,4661 22093,4499
 Die Prenzlauer  Allee ist zwischen Grellstraße und Ostseestraße stadtauswärts gesperrt. Grund: Bauarbeiten. Dauer: 29.03.2004, 07:00 Uhr bis voraussichtlich 2004-08-00	1:inwork 11941,15586 11997,15834 12030,15968 12076,16129 12091,16209
-Zimmerstraße, Richtung Axel-Springer-Straße, zwischen Markgrafenstraße und Jerusalemer Straße, als Einbahnstraße  eingerichtet. Dauer: bis 15.05.2004, 18.00 Uhr	1:inwork 9945,11371 9737,11349
+#XXX del Zimmerstraße, Richtung Axel-Springer-Straße, zwischen Markgrafenstraße und Jerusalemer Straße, als Einbahnstraße  eingerichtet. Dauer: bis 15.05.2004, 18.00 Uhr	1:inwork 9945,11371 9737,11349
 # XXX Korrekt?
 L103 Alarichstraße Berlin-Mariendorf Richtung Berlin-Schöneberg zwischen Ringstr. und Kaiserstr. wegen Bauarbeiten gesperrt, eine Umleitung ist eingerichtet (bis 16.05.2004)	1:inwork 9003,3878 8954,4084 8877,4356
 #XXX del? L54 Bitterfelder Straße Berlin-Hohenschönhausen Richtung Berlin-Marzahn Zwischen Hohenschönhauser Straße und Märkische Allee wegen Bauarbeiten gesperrt eine Umleitung ist eingerichtet bis 30.09.	1:inwork 18730,16973 18866,16905 19484,16704 19573,16674 19903,16632 20230,16560

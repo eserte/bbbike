@@ -3219,7 +3219,7 @@ sub do_iconframe {
 			   }
 		       }
 		      );
-    $sb2m->checkbutton(-label => M"Hauptstraßen ohne Radwege meiden",
+    $sb2m->checkbutton(-label => M"Hauptstraßen ohne Radwege/Busspuren meiden",
 		       -variable => \$N_RW_optimization,
 		       -command => sub {
 			   if ($N_RW_optimization) {
@@ -7025,7 +7025,7 @@ sub enter_opt_preferences {
 	    };
 	my $default = M"Alle Straßen berücksichtigen";
 	my $o = $act_page[1]->Optionmenu
-	  (-options => [keys %$name2inx],
+	  (-options => [sort { $name2inx->{$a} <=> $name2inx->{$b} } keys %$name2inx],
 	   -variable => \$default,
 	   -command => sub {
 	       my $i = 0;
@@ -7096,7 +7096,7 @@ sub enter_opt_preferences {
     change_state_all($act_page[2], $radwege_optimierung, {$cb3=>3});
 
     $N_RW_cb = $act_page[2]->Checkbutton
-	(-text => M"Hauptstraßen ohne Radwege meiden",
+	(-text => M"Hauptstraßen ohne Radwege/Busspuren meiden",
 	 -variable => \$N_RW_optimization,
 	 -command => sub {
 	     if ($N_RW_optimization) {
@@ -13900,6 +13900,15 @@ sub make_net {
 	# clone:
 	$user_dels = eval substr(Data::Dumper::Dumper($net->{_Deleted}), 7);
     }
+
+    undef $qualitaet_s_net;
+    undef $handicap_s_net;
+    undef $strcat_net;
+    undef $radwege_net;
+    undef $N_RW_net;
+    undef $green_net;
+    undef $unlit_streets_net;
+    undef $steigung_net;
 
     eval {
 	my(@net_source, @net_source_abk);

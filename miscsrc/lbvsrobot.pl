@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.13 2004/05/13 07:57:58 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.14 2004/05/17 07:06:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -50,6 +50,7 @@ my $str_listing_url = "$base_url/ZeigeStrasse?lstStr="; # . Streetname
 my $detail_url      = "$base_url/HS_BauBlatt?BaustRowNr="; # . Rownumber
 my $map_url         = "$base_url/ZeigeBaustelle?baust=" ; # . Rownumber
 my @output_as;
+my $delay = 0;
 
 if (!GetOptions("test" => \$test,
 		"i|inputfile=s" => \$inputfile,
@@ -59,10 +60,11 @@ if (!GetOptions("test" => \$test,
 		"f" => \$force,
 		'outputas=s@' => \@output_as,
 		'markirrelevant!' => \$do_irrelevant,
+		'delay=i' => \$delay,
 	       )) {
     die <<EOF;
 usage: $0 [-test] [-i|-inputfile file] [-old|-oldfile file]
-          [-diffcount] [-irrelevant] [-q] [-outputas type] ...
+          [-diffcount] [-irrelevant] [-delay sec] [-q] [-outputas type] ...
 
 Multiple -outputas optione are possible, default is "text". -outputas
 is of the form "type:file". If ":file" is left, then the output goes
@@ -223,6 +225,7 @@ sub get_street_details2 {
     for my $ch ('L', 'B', 'K') {
 	my $url = get_url('all_listing');
 	$url .= $ch if !$test;
+	sleep $delay if $delay;
 	warn "Get URL $url...\n" if !$quiet;
 	my $resp = $ua->get($url);
 	if (!$resp->is_success) {
@@ -314,6 +317,7 @@ sub parse_details_content {
 
 	    my $this_map_url = get_url("map");
 	    $this_map_url .= $row_number if !$test;
+	    sleep $delay if $delay;
 	    warn "Get URL $this_map_url...\n" if !$quiet;
 	    my $resp_map = $ua->get($this_map_url);
 	    if (!$resp_map->is_success) {

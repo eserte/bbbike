@@ -226,3 +226,9 @@ use constant MINMEM        => 28000;
 1;
 
 __END__
+
+If for some reason I want to switch from "use vars" to "our", then I
+may use the following script:
+
+perl -e '$/=undef;open A, "BBBikeGlobalVars.pm" or die; $buf=<A>; $buf =~ s/use vars/our/g; $buf =~ s{qw\((.*?)\)}{"(" . join(",", grep { !/^\s*$/ } split /\s+/, $1) . ")"}ges; print $buf' > BBBikeGlobalVars_with_our.pm
+

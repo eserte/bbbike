@@ -1,7 +1,8 @@
 # $Id: handicap_s-orig,v 2.1 2004/05/02 15:17:13 eserte Exp eserte $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
-Voﬂstr.: Bauarbeiten an der Ebertstr., schieben	q4::inwork 8553,11638 8837,11676
+#XXX nicht mehr lange?
+Voﬂstr.: Bauarbeiten an der Ebertstr.	q3::inwork 8553,11638 8837,11676
 G‰rtnerstraﬂe, Richtung Rhinstraﬂe, zwischen Konrad-Wolf-Straﬂe und Rhinstraﬂe: Straﬂenarbeiten, gesperrt (bis 15.12.2004)	q4::inwork; 16872,15827 17080,15779 17379,15781 17489,15781
 Naumannstr.: Bauarbeiten, eine Richtung gesperrt. Dauer: 27.10.2003, 14.00 Uhr bis 30.11.2004	q4::inwork; 7717,7759 7716,8048
 Wilhelmstr.: Fahrbahn vor der britischen Botschaft gesperrt	q4 8851,12123 8804,12280
@@ -16,9 +17,13 @@ Gartenstraﬂe zwischen Torstraﬂe und Schrˆderstraﬂe in beiden Richtungen gesperrt
 # XXX Korrekt?
 Rathausstr./Alarichstr. (Schˆneberg) in beiden Richtungen zwischen Kreuzung Ringstr. und Attilaplatz Baustelle, Straﬂe vollst‰ndig gesperrt (bis 16.05.2004) (14:36)	q4::inwork 8576,5486 8689,5264 8756,5135 8772,5081 8801,4993 8838,4668 8862,4462 8877,4356 8954,4084 9003,3878
 Jerusalemer Str. (Mitte) Richtung Norden zwischen Leipziger Str. und Hausvogteiplatz Baustelle, Richtungsfahrbahn gesperrt, Einbahnstraﬂenregelung (bis Juni 2005)	q4::inwork; 9899,11670 9892,11752
+# XXX Stimmt das oben? Das hier habe ich n‰mlich gesehen:
+Jerusalemer Str.: Baustelle, Einbahnstraﬂe in Gegenrichtung	q4::inwork; 9878,11857 9892,11752
 Saatwinkler Damm (Spandau) in beiden Richtungen zwischen Rohrdamm und Gartenfelder Str. Baustelle, Straﬂe vollst‰ndig gesperrt (bis 31.12.2004)	q4::inwork -303,15526 491,15640
-# XXX jetzt angeblich bis 14.05.?
-L¸ckstraﬂe Berlin-Friedrichsfelde Richtung Berlin-Friedrichshain Zwischen Rummelsburger Straﬂe und Schlichtallee wegen Bauarbeiten gesperrt bis 14.05.	q4::inwork 16032,10842 16153,10818 16460,10699 16655,10622
+#XXX del L¸ckstraﬂe Berlin-Friedrichsfelde Richtung Berlin-Friedrichshain Zwischen Rummelsburger Straﬂe und Schlichtallee wegen Bauarbeiten gesperrt bis 14.05.	q4::inwork 16032,10842 16153,10818 16460,10699 16655,10622
+Mohrenstr.: Bauarbeiten	q4::inwork; 9173,11770 9220,11781
+#XXX wahrscheinlich bis Fertigstellung der S-Bahnhof-Verschiebung?
+Krumme Str.: Bauarbeiten	q4::inwork; 3942,11010 3827,10980
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Georgenstr.: Fuﬂg‰nger	q1 9437,12662 9308,12649
 Neue Promenade: Fuﬂg‰nger	q2 10294,13070 10132,12941
@@ -155,3 +160,7 @@ Hermannplatz: oft Fuﬂg‰nger auf dem Radweg	q1 11824,8995 11909,9155
 Spreepromenade am Aquadom: Fuﬂg‰nger, Cafe	q3 10300,12587 10171,12769
 zur Gormannstr.: Bordstein	q4 10331,13397 10349,13447
 Am Zeughaus: Fuﬂg‰nger	q3 9912,12623 9987,12421
+Steinmetzstr.: Fuﬂg‰ngerzone, Radfahren erlaubt	q1 7624,9763 7648,9944 7698,10147
+L¸tzowplatz: Einbahnstraﬂe, Ausweichen auf Gehweg	q3; 7002,11034 6873,11011
+Zauritzweg: Fuﬂg‰nger	q1 4150,11871 4220,11820 4195,11690
+(Bl¸cherplatz - Zossener Str.): Fuﬂg‰nger, Bordsteine	q2 9689,10124 9811,10055

@@ -948,6 +948,67 @@ geht ein import?
   restaurants etc.
   2. use data_corrected for CVS and all distributions!
 
+[Ab hier wieder geordnet:]
+
+=over
+
+=item * (M1)
+
+Maybe under Windows or for all click-to-focus systems: make bbbike
+internal windows act as focus follows mouse. Something like:
+
+   $t->bind("<Enter>" => sub { $t->focus });
+
+may do (but only if the main toplevel or one of its descendents
+already has the focus). This is really only necessary for convenient
+keyboard control.
+
+=item * (H1)
+
+Windows: An activating click should only activate the window but not
+doing an action. This should be like in Excel (but unlink Windows
+Commander). This sounds like a generell Tk problem (is it maybe solved
+with Tk804?).
+
+=item * (H2)
+
+Cycle paths are displaced when zooming. Correct this.
+
+=item * (M1)
+
+Remove SRT Algo (bbbike menu, StrassenNetz.pm ...)
+
+=item * (M2)
+
+enter_opt_preferences, Straßenqualität: additional select box like in
+bbbike.cgi (Kopfsteinpflaster vermeiden, rennraudtauglich, Custom).
+
+=item * (E1)
+
+Show all plugins: Change the dialog to select first the plugin and
+then on a button E<quot>Load pluginE<quot> (multiple selection
+possible). Add a cancel button. Double-1 is a shortcut for loading the
+plugin.
+
+=item * (E3)
+
+Windows: add List::Permutor to the bindist of Windows (sieperl)
+
+=item * (M1)
+
+Check appearance on Windows, especially the buttons (is the ipady
+value OK now?). I do not use some optionAdd commands for fg/bg on
+Windows --- is this OK? It seems that it is standard on Windows to
+have some more spacing between buttons and make related buttons the
+equal width (especially in end dialog buttons). Is HList white?
+
+=item * (H1)
+
+Don't understand this one: E<quot>Bug: Busy-Zeiger zurücksetzen ist
+unter Win kontraproduktiv!!!E<quot>
+
+=back
+
 =head2 BikePower
 
 =over

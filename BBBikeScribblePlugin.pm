@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeScribblePlugin.pm,v 1.5 2003/08/24 23:33:41 eserte Exp $
+# $Id: BBBikeScribblePlugin.pm,v 1.5 2003/08/24 23:33:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -67,6 +67,8 @@ sub deactivate {
     $Tk::Babybike::scribble_mode = 0; # XXX
 }
 
+# XXX Check toggling modes ... the distinction between the radiobutton
+# and the menu item "Scribble" is not intuitive, and seems to behave wrong.
 sub add_button {
     my $mf = $main::top->Subwidget("ModePluginFrame");
     my $mmf = $main::top->Subwidget("ModeMenuPluginFrame");

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiStrassen.pm,v 1.8 2004/05/11 21:03:35 eserte Exp $
+# $Id: MultiStrassen.pm,v 1.8 2004/05/11 21:03:35 eserte Exp eserte $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -57,8 +57,11 @@ sub id {
     if (defined $self->{Id}) {
 	return $self->{Id};
     }
+    my @depfiles = $self->dependent_files;
     require File::Basename;
-    join("_", sort map { File::Basename::basename($_) } $self->dependent_files);
+    my $basedir = File::Basename::basename(File::Basename::dirname($depfiles[0]));
+    $basedir = ($basedir eq "data" ? "" : $basedir . "_");
+    $basedir . join("_", sort map { File::Basename::basename($_) } @depfiles);
 }
 
 sub is_current {

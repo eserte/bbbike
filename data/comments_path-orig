@@ -1,4 +1,4 @@
-# $Id: comments_path-orig,v 2.2 2004/05/11 21:03:24 eserte Exp $
+# $Id: comments_path-orig,v 2.2 2004/05/11 21:03:24 eserte Exp eserte $
 # CP; : Kommentar an Punkt B bei Fahrt von A nach C
 # CP  : wie "CP;", Kommentar gültig für beide Fahrtrichtungen
 # CS; : Kommentar gültig für Strecke in einer Richtung
@@ -13,9 +13,9 @@
 vor der Columbiahalle: häufig Glasscherben auf dem Radweg	CS 9801,8683 9373,8728
 Seesener Str.: Zufahrt führt über den Henriettenplatz	CS; 2770,9945 2770,10024
 Rasthof Avus: zweite Möglichkeit nach rechts	CS; 1957,10426 1894,10390
-bereits bei der Fußgängerampel am Lützowplatz die Straßenseite wechseln	PI; 6824,10904 6873,11011 6626,11178
+bereits bei der Fußgängerampel am Lützowplatz die Straßenseite wechseln	PI; 6824,10904 6873,11011 6732,11106 6626,11178
 bereits bei der Ampel an der Corneliusstr. die Straßenseite wechseln	PI; 6880,11110 6882,11061 6873,11011 7002,11034
-auf linken Gehweg fahren, Straßenseite an der Corneliusstr. wechseln	PI; 6626,11178 6873,11011 6882,11061
+auf linken Gehweg fahren, Straßenseite an der Corneliusstr. wechseln	PI; 6626,11178 6732,11106 6873,11011 6882,11061
 bereits an der Kreuzung An der Urania/Kurfürstenstr. die Straßenseite wechseln	PI; 6732,10754 6674,10693 6745,10619
 bereits an der Kreuzung Dominicusstr./Ebersstr. die Straßenseite wechseln	PI; 6935,8208 7005,8150 7268,8225
 Richtung Hochbahnhof Hallesches Tor abbiegen	PI; 9522,10017 9536,10064 9579,10122 9592,10174
@@ -77,3 +77,5 @@ Mariendorfer Damm => Am Teltowkanal: bereits an der Ullsteinstr. auf den linken 
 Jerusalemer => Leipziger Str.: zunächst linken Gehweg benutzen (schlecht passierbarer Mittelstreifen)	PI; 9892,11752 9899,11670 9982,11680
 hinter dem "Alten Zollhaus" halbrechts abbiegen	PI; 10313,10084 10168,10085 10059,10147
 Frankfurter Allee - Kreutzigerstr.: Einfahrt in Hausdurchgang	CP; 14208,12235 14291,12220 14285,12190
+Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8172,11679 8223,11700 8326,11732 8489,11782 8571,11846
+Jüdenstr.: unbequemes Passieren der Grunerstr.	CS 10778,12493 10810,12448 10832,12343

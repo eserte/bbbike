@@ -1,0 +1,54 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: grepstrassen,v 1.3 2004/05/16 11:22:00 eserte Exp $
+# Author: Slaven Rezic
+#
+
+# Strassen-Dateien filtern
+
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../data",
+	 "$FindBin::RealBin/../lib",
+	);
+use Strassen::Core;
+use strict;
+
+use Getopt::Long;
+my($v, $cat, $catrx, $name, $namerx, $section, $sectionrx);
+GetOptions("v" => \$v,
+	   "cat=s" => \$cat,
+	   "catrx=s" => \$catrx,
+	   "name=s" => \$name,
+	   "namerx=s" => \$namerx,
+	   "section=s" => \$section,
+	   "sectionrx=s" => \$sectionrx,
+	  ) or die "usage!";
+
+$catrx = qr{$catrx} if $catrx;
+$namerx = qr{$namerx} if $namerx;
+$sectionrx = qr{$sectionrx} if $sectionrx;
+
+my $datafile = shift || "-";
+
+my $s = Strassen->new($datafile, UseLocalDirectives => 1);
+my $new_s = Strassen->new;
+$s->init;
+while(1) {
+    my $r = $s->next;
+    last if !@{ $r->[1] };
+    if (defined $name) { if ($r->[0] eq $name) { next if $v } else { next unless $v } }
+    if (defined $namerx) { if ($r->[0] =~ $namerx) { next if $v } else { next unless $v } }
+    if (defined $cat) { if ($r->[2] eq $cat) { next if $v } else { next unless $v } }
+    if (defined $catrx) { if ($r->[2] =~ $catrx) { next if $v } else { next unless $v } }
+    my $dir = $s->get_directive;
+    if (defined $section) { if (defined $dir->{section} && $dir->{section} eq $section) { next if $v } else { next unless $v } }
+    if (defined $sectionrx) { if (defined $dir->{section} && $dir->{section} =~ $sectionrx) { next if $v } else { next unless $v } }
+    $new_s->push_ext($r, $dir);
+}
+
+print $new_s->as_string;
+
+__END__

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.13 2004/03/22 23:46:26 eserte Exp eserte $
+# $Id: BBBikeHeavy.pm,v 1.14 2004/05/16 20:05:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -645,6 +645,14 @@ sub BBBikeHeavy::getmap {
     }
     $tmpfile = "$tmpdir/bbbikemap.$$";
 
+    my $too_big = sub {
+	if ($newwidth > 1400 || $newheight > 1000) {
+	    status_message("Die Karte zu groß ($newwidth x $newheight) und wird nicht angezeigt", "warn");
+	    return 1;
+	}
+	0;
+    };
+
     my $convert_image = sub {
 	my($filename, $nofail) = @_;
 	my $map_img;
@@ -653,6 +661,7 @@ sub BBBikeHeavy::getmap {
 	    $rotate_cmd ne '' ||
 	    $map_color =~ /^(mono|pixmap|gray)$/
 	   ) {
+	    return if $too_big->();
 	    my $cmd;
 	    $cmd = "$toppm $filename " .
 	      $rotate_cmd .
@@ -705,6 +714,7 @@ sub BBBikeHeavy::getmap {
 	    die "newwidth=$newwidth width=$width " .
 	      "newheight=$newheight height=$height"
 		if $newwidth == $width and $newheight == $height;
+	    die "too big" if $too_big->();
 	    require GfxConvert;
 	    GfxConvert::transform_image($filename, $tmpfile,
 					-in_mime => $o->mimetype,

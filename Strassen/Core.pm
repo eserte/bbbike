@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.39 2004/05/11 21:04:24 eserte Exp $
+# $Id: Core.pm,v 1.40 2004/05/16 11:22:51 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.39 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -384,7 +384,9 @@ sub id {
     my @depfiles = $self->dependent_files;
     if (@depfiles) {
 	require File::Basename;
-	join("_", map { File::Basename::basename($_) } @depfiles);
+	my $basedir = File::Basename::basename(File::Basename::dirname($depfiles[0]));
+	$basedir = ($basedir eq "data" ? "" : $basedir . "_");
+	$basedir . join("_", map { File::Basename::basename($_) } @depfiles);
     } else {
 	undef;
     }
@@ -394,10 +396,22 @@ sub id {
 sub as_string {
     my $self = shift;
     my $s = "";
-    if ($self->{GlobalDirectives}) {
+    if ($self->{GlobalDirectives} && keys %{$self->{GlobalDirectives}}) {
 	$s = join("\n", map { "#: $_: $self->{GlobalDirectives}{$_}" } keys %{ $self->{GlobalDirectives} }) . "\n";
     }
-    $s . join "", @{ $self->{Data} };
+    if ($self->{Directives}) {
+	for my $pos (0 .. $#{$self->{Data}}) {
+	    if ($self->{Directives}[$pos]) {
+		while(my($k,$v) = each %{ $self->{Directives}[$pos] }) {
+		    $s .= "#: $k: $v\n";
+		}
+	    }
+	    $s .= $self->{Data}[$pos];
+	}
+	$s;
+    } else {
+	$s . join "", @{ $self->{Data} };
+    }
 }
 
 ### AutoLoad Sub
@@ -507,6 +521,16 @@ sub push {
     my($self, $arg) = @_;
     my $x = [$arg->[NAME], join(" ", @{$arg->[COORDS]}), $arg->[CAT]];
     push @{$self->{Data}}, arr2line($x);
+}
+
+# Push with directives
+sub push_ext {
+    my($self, $arg, $dir) = @_;
+    if ($dir) {
+	my $pos = @{$self->{Data}} || 0;
+	$self->{Directives}[$pos] = $dir;
+    }
+    $self->push($arg);
 }
 
 sub delete_current { # funktioniert in init/next-Schleifen

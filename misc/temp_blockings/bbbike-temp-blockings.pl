@@ -305,4 +305,28 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Florastr. (Pankow) in beiden Richtungen zwischen Florapromenade und Heystr. Straßenfest, Straße vollständig gesperrt (bis 09.05.2004 20:00 Uhr) (16:47) ',
        type  => 'gesperrt',
      },
+     { from  => 1084464000, # 2004-05-13 18:00
+       until => 1084658400, # 2004-05-16 00:00
+       file  => '20040514.bbd',
+       text  => 'Ebertstraße, zwischen Behrenstraße und Dorotheenstraße, Straße des 17.Juni, zwischen Großen Stern und Entlastungsstraße sowie zwischen Entlastungsstraße und Platz des 18. März Veranstaltung. Straßen gesperrt. Dauer: 14.05.2004, 18.00 Uhr bis 15.04.2004, 24.00 Uhr ',
+       type  => 'gesperrt',
+     },
+     { from  => 1084485600, # 2004-05-14 00:00
+       until => 1084741200, # 2004-05-16 23:00
+       file  => 'hermannstr.bbd',
+       text  => 'Hermannstr. (Neukölln) in beiden Richtungen, zwischen Flughafenstr. und Thomasstr. Veranstaltung, Straße vollständig gesperrt (bis 16.05. 23 Uhr)',
+       type  => 'gesperrt',
+     },
+     { from  => 1084485600, # 2004-05-14 00:00
+       until => 1084741200, # 2004-05-16 23:00
+       file  => 'reichsstr.bbd',
+       text  => 'Reichsstr. (Charlottenburg) in beiden Richtungen, zwischen Theodor-Heuss-Platz und Steubenplatz Veranstaltung, Straße vollständig gesperrt (bis 16.05. 23 Uhr) Reichsstraßenfest',
+       type  => 'gesperrt',
+     },
+     { from  => 1084485600, # 2004-05-14 00:00
+       until => 1084741200, # 2004-05-16 23:00
+       file  => 'siegfriedstr.bbd',
+       text  => 'Siegfriedstr. (Lichtenberg) in beiden Richtungen, zwischen Landsberger Allee und Herzbergstr. Veranstaltung, Straße vollständig gesperrt (bis 16.05. 23 Uhr) Siegfriedstraßenfest',
+       type  => 'gesperrt',
+     },
     );
