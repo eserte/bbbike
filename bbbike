@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.123 2004/01/21 23:42:29 eserte Exp eserte $
+# $Id: bbbike,v 3.124 2004/02/13 22:11:02 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -219,7 +219,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.123 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.124 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -8795,10 +8795,10 @@ sub plot_point {
 	my $yadd_anchor = $yadd_anchor_type->{'u'};
 	my $label_spaceadd = $label_spaceadd{'u'};
 
+	my $conv = $bhf->get_conversion;
+
 	my $draw_sub = eval $plotpoint_draw_sub;
 	string_eval_die($@, $plotpoint_draw_sub) if $@; #die $@ if $@;
-
-	my $conv = $bhf->get_conversion;
 
 	while(1) {
 	    my $ret = $bhf->next;

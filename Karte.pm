@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Karte.pm,v 1.38 2003/12/31 13:44:35 eserte Exp $
+# $Id: Karte.pm,v 1.39 2004/02/13 22:12:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2002 Slaven Rezic. All rights reserved.

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.31 2004/01/13 18:33:56 eserte Exp $
+# $Id: Core.pm,v 1.32 2004/02/13 22:11:41 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.31 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -991,15 +991,26 @@ sub nearest_point {
 }
 
 sub get_conversion {
-    my $self = shift;
+    my($self, %args) = @_;
     my $convsub;
     if ($self->{Directives}{map}) {
 	my $map = $self->{Directives}{map};
 	require Karte;
 	Karte::preload($map);
-	$convsub = sub {
-	    join ",", $Karte::map{$map}->map2standard(split /,/, $_[0]);
-	};
+	my $tomap = $args{-tomap};
+	if ($tomap) {
+	    if ($tomap ne $map) {
+		Karte::preload($tomap);
+		$convsub = sub {
+		    join ",", $Karte::map{$map}->map2map($Karte::map{$tomap},
+							 split /,/, $_[0]);
+		};
+	    }
+	} else {
+	    $convsub = sub {
+		join ",", $Karte::map{$map}->map2standard(split /,/, $_[0]);
+	    };
+	}
     }
     $convsub;
 }

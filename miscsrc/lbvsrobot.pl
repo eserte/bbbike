@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.2 2004/01/12 20:09:46 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.3 2004/02/14 16:12:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -348,29 +348,44 @@ sub get_url {
 
 sub diff {
     my $ref = YAML::LoadFile($oldfile);
+    #my $diffcol = "row";
+    my $diffcol = "text";
+    my $infocol = "text";
     my @old_details = @$ref;
-    my %details     = map {($_->{row} => $_)} @details;
-    my %old_details = map {($_->{row} => $_)} @old_details;
+    my %details     = map {($_->{$diffcol} => $_)} @details;
+    my %old_details = map {($_->{$diffcol} => $_)} @old_details;
     my @diff_details;
     for my $orig_detail (@details) {
 	my $detail = dclone $orig_detail;
+	my $old_detail = $old_details{$detail->{$diffcol}};
 	my $state;
-	if (!exists $old_details{$detail->{row}}) {
+	my $info = "";
+	if (!defined $old_detail) {
 	    $state = "NEW:       ";
-	} elsif (exists $old_details{$detail->{row}}) {
-	    if (Compare($detail, $old_details{$detail->{row}}) == 0) {
+	} else {
+	    my $c1 = dclone $detail;
+	    my $c2 = dclone $old_detail;
+	    delete $c1->{"row"};
+	    delete $c2->{"row"};
+	    if (Compare($c1, $c2) == 0) {
 		$state = "CHANGED:   ";
+		if ($detail->{$infocol} eq $old_detail->{$infocol}) {
+		    $info = " (coord change)";
+		} else {
+		    # XXX will never happen!!!
+		    $info = " (old text was: $old_detail->{$infocol})";
+		}
 	    } else {
 		$state = "UNCHANGED: ";
 	    }
 	}
-	$detail->{text} = "$state$detail->{text}";
+	$detail->{text} = "$state$detail->{text}$info";
 	push @diff_details, $detail;
     }
     for my $orig_detail (@old_details) {
 	my $detail = dclone $orig_detail;
-	if (!exists $details{$detail->{row}}) {
-	    $detail->{text} = "REMOVED:    $detail->{text}";
+	if (!exists $details{$detail->{$diffcol}}) {
+	    $detail->{text} = "REMOVED:    $detail->{$infocol}";
 	    push @diff_details, $detail;
 	}
     }
