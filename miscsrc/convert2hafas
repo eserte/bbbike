@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: berlinmap2hafas,v 1.46 2004/05/16 11:21:36 eserte Exp $
+# $Id: berlinmap2hafas,v 1.47 2004/07/20 07:09:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2004 Slaven Rezic. All rights reserved.
@@ -298,8 +298,12 @@ LINES: while(defined($_ = nextline())) {
     if (defined $append) {
 	$name .= " ($append)";
     }
-    if ($strict && $rest =~ /(^\s|\s$)/) {
-	die "Leading or trailing space in coordinates, line $_";
+    if ($strict) {
+	if ($rest =~ /^\s/) {
+	    die "Leading space in coordinates, line $_";
+	} elsif ($rest =~ /\s$/) {
+	    die "Trailing space in coordinates, line $_";
+	}
     }
     my(@coord) = split(/ /, $rest); # nur nach Space trennen (160 kein Trennzeichen)
     if (!@coord) {
