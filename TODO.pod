@@ -16,25 +16,8 @@ Legend:
 
 =item * (H5)
 
-The -lazy option seems to cause a big memory leak.
-
-=item * (M3)
-
-last_loaded_streets muss komplizierter werden und den gesamten State
-beim Zeichnen der Datei enthalten (z.b. die Aufrufparameter von
-plot())
-
-=item * (M2)
-
-Request:
-
- > Wäre es auch möglich, daß man die Acrobat -datei erst speichern
- > könnte, bevor man sie sich anzeigen läßt? Oder, daß man diese
- > vielleicht per autom. Email zugeschickt bekommt?
-
-Ersteres könnte man machen, indem man einen Link bereitstellt, der das
-gleiche wie der submit-Button macht, nur mit Content-Disposition:
-attachment oder ähnlichem. Vielleicht nicht allzu schwer.
+The -lazy option seems to cause a big memory leak. (Hmmm, I cannot
+reproduce this one anymore...)
 
 =item * (M2)
 
@@ -1212,11 +1195,29 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (E2)
+
+Info page: link to screenshot html page instead of single screenshot
+image.
+
+=item * (M2)
+
+Request:
+
+ > Wäre es auch möglich, daß man die Acrobat -datei erst speichern
+ > könnte, bevor man sie sich anzeigen läßt? Oder, daß man diese
+ > vielleicht per autom. Email zugeschickt bekommt?
+
+Ersteres könnte man machen, indem man einen Link bereitstellt, der das
+gleiche wie der submit-Button macht, nur mit Content-Disposition:
+attachment oder ähnlichem. Vielleicht nicht allzu schwer.
+
 =item * (M5)
 
 Opera and Safari: Hitting the return key on the first screen calls the
 abc page (because it's the first <input image> element in the form).
-(SOLVED for Konqueror, Opera seems to be difficult, ask wosch about Safari)
+(SOLVED for Konqueror, Opera seems to be difficult, ask wosch about
+Safari, same for MSIE!)
 
 =item * (H1)
 

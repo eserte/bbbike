@@ -1434,8 +1434,8 @@ EOF
 
     # Hack for browsers which use the first button, regardless whether it's
     # image or button, for firing in a <Return> event
-    # XXX Does not work for Opera, Safari is untested...
-    if ($bi->{user_agent_name} =~ /^(konqueror|safari|opera)/i) {
+    # XXX Does not work for Opera, Safari and MSIE are untested...
+    if ($bi->{user_agent_name} =~ /^(konqueror|safari|opera|msie)/i) {
 	print <<EOF;
 <input type="submit" value="Weiter" style="text-align:center;visibility:hidden"/>
 EOF
@@ -3282,16 +3282,21 @@ EOF
 	    # pauschal herausgenommen.
 	    # Uns das bleibt auch so, es sei denn ich habe Zugang zu den
 	    # meisten Browsern...
-  	    if (0 &&
-		$bi->{'user_agent_name'} =~ m;(Mozilla|MSIE);i &&
-		$bi->{'user_agent_version'} =~ m;^[4-9]; &&
-		$bi->{'user_agent_os'} !~ m|OS/2|) {
+  	    if (0
+#                 $bi->{'user_agent_name'} =~ m;(Mozilla|MSIE);i &&
+# 		$bi->{'user_agent_version'} =~ m;^[4-9]; &&
+# 		$bi->{'user_agent_os'} !~ m|OS/2|
+#                 $bi->{'user_agent_name'} =~ m{(Mozilla)}i &&
+# 		$bi->{'user_agent_version'} =~ m{^[5-9]}
+               ) {
   		print " onsubmit='return show_map(\"$bbbike_html\");'";
   	    }
 	    print ">\n";
 	    print "<input type=hidden name=center value=''>\n";
+#XXX not yet	    print "<input type=hidden name='as_attachment' value=''>\n";
 	    print "<input type=submit name=interactive value=\"Grafik zeichnen\"> <font size=-1>(neues Fenster wird ge&ouml;ffnet)</font>";
 	    print " <input type=checkbox name=outputtarget value='print' " . ($default_print?"checked":"") . "> f&uuml;r Druck optimieren";
+#XXX not yet	    print " <input type=checkbox name='cb_attachment'> als Download";
 	    print "&nbsp;&nbsp; <span class=nobr>Ausgabe als: <select name=imagetype>\n";
 	    print " <option " . $imagetype_checked->("png") . ">PNG\n" if $graphic_format eq 'png';
 	    print " <option " . $imagetype_checked->("gif") . ">GIF\n" if $graphic_format eq 'gif' || $can_gif;
@@ -4359,6 +4364,9 @@ sub etag {
 sub http_header {
     my(@header_args) = @_;
     push @header_args, etag(), (-Vary => "User-Agent");
+    if ($q->param("as_attachment")) {
+	push @header_args, -Content_Disposition => "attachment;file=" . $q->param("as_attachment");
+    }
     if ($use_cgi_compress_gzip &&
 	eval { require CGI::Compress::Gzip;
 	       CGI::Compress::Gzip->VERSION(0.16);
