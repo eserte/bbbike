@@ -3442,6 +3442,7 @@ sub do_iconframe {
 		  -font => $font{"bold"});
 
     foreach my $fmt (['Postscript', 'ps'],
+		     ['PDF',        'pdf'],
 		     ['PNG',        'png'],
 		     ['GIF',        'gif'],
 		     ['JPEG',       'jpeg'],
@@ -16458,7 +16459,7 @@ sub export_visible_map {
 	    );
 
 	if ($use_xwd_if_possible and
-	    $fmt ne 'ps' and
+	    $fmt !~ /^( ps | pdf )$/x and
 	    is_in_path("xwd")) {
 
 	    $args{-rotate} = -90 if $orientation eq 'portrait';
