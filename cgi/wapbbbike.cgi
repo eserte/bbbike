@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.11 2003/09/22 19:58:49 eserte Exp $
+# $Id: wapbbbike.cgi,v 2.13 2003/11/29 23:25:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -56,9 +56,9 @@ sub wap_input {
     print <<EOF;
 @{[ $self->wap_header ]}
  <card id="input" title="BBBike">
-  <do type="options" label="Info" name="info">
-   <go href="@{[ $self->Context->CGI->script_name ]}?info=1"/>
-  </do>
+EOF
+    $self->_wap_info;
+    print <<EOF;
   <do type="reset" label="Neu" name="reset"><refresh /></do>
 <!--  <p align="center"><big>BBBike</big></p> -->
   <p><b>Start</b><br/>
@@ -151,6 +151,31 @@ EOF
 EOF
 }
 
+sub _wap_info {
+    my $self = shift;
+    print <<EOF;
+  <do type="options" label="Info" name="info">
+   <go href="@{[ $self->Context->CGI->script_name ]}">
+    <postfield name="info" value="1" />
+   </go>
+  </do>
+EOF
+}
+
+sub _wap_new_search {
+    my $self = shift;
+    print <<EOF;
+  <do type="options" label="Neue Anfrage" name="newsearch">
+   <go href="@{[ $self->Context->CGI->script_name ]}">
+    <setvar name="startname"   value="" />
+    <setvar name="startbezirk" value="" />
+    <setvar name="zielname"    value="" />
+    <setvar name="zielbezirk"  value="" />
+   </go>
+  </do>
+EOF
+}
+
 sub wap_output {
     my $self = shift;
 
@@ -165,31 +190,50 @@ sub wap_output {
     <postfield name="zielbezirk"  value="@{[$self->Start->Citypart]}" />
    </go>
   </do>
-  <do type="options" label="Neue Anfrage" name="newsearch">
-   <go href="@{[ $self->Context->CGI->script_name ]}">
-    <setvar name="startname"   value="" />
-    <setvar name="startbezirk" value="" />
-    <setvar name="zielname"    value="" />
-    <setvar name="zielbezirk"  value="" />
-   </go>
-  </do>
-  <do type="options" label="Info" name="info">
-   <go href="@{[ $self->Context->CGI->script_name ]}">
-    <postfield name="info" value="1" />
-   </go>
-  </do>
+EOF
+    $self->_wap_new_search;
+    $self->_wap_info;
+    print <<EOF;
   <do type="prev" label="Zurück" name="prev"><prev /></do>
   <p>Route von <b> @{[$self->Start->Street]} (@{[$self->Start->Citypart]}) </b> nach <b> @{[$self->Goal->Street]} (@{[$self->Goal->Citypart]}) </b><br/>
   @{[ $self->wap_can_table ? $self->wap_output_table : $self->wap_output_notable ]}
-  </p>
-  <p><anchor>Als Grafik zeigen<go href="@{[ $self->Context->CGI->script_name ]}">
+  </p><p>
+EOF
+    if ($self->{Session}) {
+	my $q2 = $self->Context->CGI;
+	$q2->param("output_as", "imagepage");
+	$q2->param("sess", $self->{Session}{_session_id});
+	print <<EOF;
+   <anchor>Als Grafik zeigen<go href="@{[ $q2->script_name ]}?@{[ $q2->query_string ]}"></go></anchor>
+EOF
+    } else {
+	print <<EOF;
+   <anchor>Als Grafik zeigen<go href="@{[ $self->Context->CGI->script_name ]}">
     <postfield name="startname"    value="@{[$self->Start->Street]}" />
     <postfield name="startbezirk"  value="@{[$self->Start->Citypart]}" />
     <postfield name="zielname"   value="@{[$self->Goal->Street]}" />
     <postfield name="zielbezirk" value="@{[$self->Goal->Citypart]}" />
     <postfield name="output_as" value="imagepage" />
-   </go>
-  </anchor></p>
+    </go>
+   </anchor>
+EOF
+    }
+    print <<EOF;
+  </p>
+ </card>
+@{[ $self->wap_footer ]}
+EOF
+}
+
+sub wap_error {
+    my $self = shift;
+    my $errormessage = shift;
+
+    print <<EOF;
+@{[ $self->wap_header ]}
+ <card id="output" title="BBBike Fehler">
+  <do type="prev" label="Zurück" name="prev"><prev /></do>
+  <p><b>Fehler:</b> @{[ wml($errormessage) ]}</p>
  </card>
 @{[ $self->wap_footer ]}
 EOF
@@ -224,13 +268,18 @@ sub _any_image {
     }
 
     my(@geometry) = @{$self->{BrowserInfo}->{display_size}};
+    if ($cgi->param("debug")) {
+	@geometry = (170, 144);
+    }
+
     require BBBikeDraw;
     my $draw = BBBikeDraw->new
 	(ImageType => $imagetype,
 	 Geometry => join("x", @geometry),
 	 Coords => [ map { join ",", @$_ } @{$self->Path} ],
-	 Draw => ['str'],
+	 Draw => ['str', 'wasser', 'flaechen', 'ubahn', 'sbahn'],
 	 NoScale => ($geometry[0] < 400),
+	 MarkerPoint => $args{markerpoint},
 	 %extra_args,
 	);
 
@@ -286,18 +335,21 @@ sub wap_image_page {
 
     my $q2 = $self->Context->CGI;
     $q2->param("output_as", "image");
+    if ($self->{Session}) {
+	$q2->param("sess", $self->{Session}{_session_id});
+    }
 
     print <<EOF;
 @{[ $self->wap_header ]}
  <card id="output" title="BBBike Karte">
-  <do type="options" label="Info" name="info">
-   <go href="@{[ $self->Context->CGI->script_name ]}">
-    <postfield name="info" value="1" />
-   </go>
-  </do>
+EOF
+    $self->_wap_new_search;
+    $self->_wap_info;
+    print <<EOF;
   <do type="prev" label="Zurück" name="prev"><prev /></do>
   <p>
-  <img src="@{[ $self->Context->CGI->script_name ]}?@{[ $q2->query_string ]}" alt="Route von @{[$self->Start->Street]} (@{[$self->Start->Citypart]}) nach @{[$self->Goal->Street]} (@{[$self->Goal->Citypart]})" />
+   <img src="@{[ $q2->script_name ]}?@{[ $q2->query_string ]}" alt="Route von @{[$self->Start->Street]} (@{[$self->Start->Citypart]}) nach @{[$self->Goal->Street]} (@{[$self->Goal->Citypart]})" /><br/>
+   <anchor>Routenliste<prev /></anchor>
   </p>
  </card>
 @{[ $self->wap_footer ]}
@@ -306,73 +358,156 @@ EOF
 
 sub wap_surrounding_image {
     my $self = shift;
-    my($cx,$cy) = split /,/, $self->Context->CGI->param("center");
-    $self->_any_image(bbox => [$cx-500,$cy-500,$cx+500,$cy+500]);
+    my $center = $self->Context->CGI->param("center");
+    my($cx,$cy) = split /,/, $center;
+    $self->_any_image(bbox => [$cx-500,$cy-500,$cx+500,$cy+500],
+		      markerpoint => $center);
 }
 
+# XXX This is not optimal! Better to check for tile borders and
+# XXX create another image from there on...
 sub wap_surrounding_image_page {
     my $self = shift;
 
+    use constant {
+	FIRST   => 0,
+	PREV    => 1,
+	NEXT    => 2,
+	LAST    => 3,
+	PREVDIR => 4,
+	NEXTDIR => 5,
+	_LAST   => 5,
+    };
+
+
     my $q2 = $self->Context->CGI;
+    my $q3 = CGI->new($q2->query_string);
 
     my @q;
 
     my $path = $self->{Session}->{Path};
+    my $route_info = $self->{Session}->{RouteInfo};
+
     my $center = $q2->param("center");
-    # XXX This is not optimal! Better to check for tile borders and
-    # XXX create another image from there on...
-    for my $i (0 .. $#$path) {
-	local $" = ",";
-	my $hop = $path->[$i];
-	if ($center eq "@{$hop}") {
-	    for (1..4) {
+    my $found;
+    my $label;
+
+    # First try to get a route point...
+    for my $i (0 .. $#$route_info) {
+	my $hop = $route_info->[$i];
+	if ($center eq $hop->{Coords}) {
+	    $label = $hop->{Street};
+	    if ($i > 0) {
+		$label .= " (" . $route_info->[$i-1]->{Whole} . ")";
+	    }
+	    for (0 .. _LAST) {
 		push @q, CGI->new($q2->query_string);
 	    }
 	    if ($i == 0) {
-		$q[0] = $q[1] = undef; # no prev
+		$q[FIRST] = $q[PREVDIR] = $q[PREV] = undef;
 	    } else {
-		$q[0]->param("center", "@{$path->[0]}");
-		$q[1]->param("center", "@{$path->[$i-1]}");
+		$q[FIRST]->param("center", $route_info->[0]->{Coords});
+		$q[PREV] ->param("center", $route_info->[$i-1]->{Coords});
+	    TRY: {
+		    for my $ii (reverse(0 .. $i-1)) {
+			if ($route_info->[$ii]->{Way} ne "") {
+			    $q[PREVDIR]->param("center",
+					       $route_info->[$ii]->{Coords});
+			    last TRY;
+			}
+		    }
+		    $q[PREVDIR] = undef;
+		}
 	    }
-	    if ($i == $#$path) {
-		$q[2] = $q[3] = undef; # no next
+	    if ($i == $#$route_info) {
+		$q[NEXT] = $q[NEXTDIR] = $q[LAST] = undef;
 	    } else {
-		$q[2]->param("center", "@{$path->[$i+1]}");
-		$q[3]->param("center", "@{$path->[-1]}");
+		$q[NEXT]->param("center", $route_info->[$i+1]->{Coords});
+		$q[LAST]->param("center", $route_info->[-1]->{Coords});
+	    TRY: {
+		    for my $ii ($i+1 .. $#$route_info) {
+			if ($route_info->[$ii]->{Way} ne "") {
+			    $q[NEXTDIR]->param("center",
+					       $route_info->[$ii]->{Coords});
+			    last TRY;
+			}
+		    }
+		    $q[NEXTDIR] = undef;
+		}
 	    }
+	    $found++;
 	    last;
 	}
     }
 
+    if (!$found) {
+warn "fallback!";
+	# Fallback to searching in path
+	for my $i (0 .. $#$path) {
+	    local $" = ",";
+	    my $hop = $path->[$i];
+	    if ($center eq "@{$hop}") {
+		for (0 .. 3) { # no PREVDIR and NEXTDIR
+		    push @q, CGI->new($q2->query_string);
+		}
+		if ($i == 0) {
+		    $q[FIRST] = $q[PREV] = undef; # no prev
+		} else {
+		    $q[FIRST]->param("center", "@{$path->[0]}");
+		    $q[PREV] ->param("center", "@{$path->[$i-1]}");
+		}
+		if ($i == $#$path) {
+		    $q[NEXT] = $q[LAST] = undef; # no next
+		} else {
+		    $q[NEXT]->param("center", "@{$path->[$i+1]}");
+		    $q[LAST]->param("center", "@{$path->[-1]}");
+		}
+		last;
+	    }
+	}
+    }
+
     $q2->param("output_as", "surroundingimage");
+    $q3->param("output_as", "resultpage");
 
     print <<EOF;
 @{[ $self->wap_header ]}
  <card id="output" title="BBBike Karte">
-  <do type="options" label="Info" name="info">
-   <go href="@{[ $q2->script_name ]}">
-    <postfield name="info" value="1" />
-   </go>
-  </do>
+EOF
+    $self->_wap_new_search;
+    $self->_wap_info;
+    print <<EOF;
   <do type="prev" label="Zurück" name="prev"><prev /></do>
   <p>
   <img src="@{[ $q2->script_name ]}?@{[ $q2->query_string ]}" alt="Umgebungskarte" />
+EOF
+    if (defined $label) {
+	print "<br/>" . wml($label) . "<br/>";
+    }
+    print <<EOF;
   </p>
   <p>
 EOF
-    if ($q[0]) {
-	print "<a href=\"" . $q[0]->url(-path_info=>1,-query=>1) . "\">|&lt;</a> ";
+    if ($q[FIRST]) {
+	print "<a href=\"" . $q[FIRST]->url(-path_info=>1,-query=>1) . "\">|&lt;</a> ";
     }
-    if ($q[1]) {
-	print "<a href=\"" . $q[1]->url(-path_info=>1,-query=>1) . "\">&lt;</a> ";
+    if ($q[PREVDIR]) {
+	print "<a href=\"" . $q[PREVDIR]->url(-path_info=>1,-query=>1) . "\">&lt;&lt;</a> ";
     }
-    if ($q[2]) {
-	print "<a href=\"" . $q[2]->url(-path_info=>1,-query=>1) . "\">&gt;</a> ";
+    if ($q[PREV]) {
+	print "<a href=\"" . $q[PREV]->url(-path_info=>1,-query=>1) . "\">&lt;</a> ";
     }
-    if ($q[3]) {
-	print "<a href=\"" . $q[3]->url(-path_info=>1,-query=>1) . "\">&gt;|</a> ";
+    if ($q[NEXT]) {
+	print "<a href=\"" . $q[NEXT]->url(-path_info=>1,-query=>1) . "\">&gt;</a> ";
+    }
+    if ($q[NEXTDIR]) {
+	print "<a href=\"" . $q[NEXTDIR]->url(-path_info=>1,-query=>1) . "\">&gt;&gt;</a> ";
+    }
+    if ($q[LAST]) {
+	print "<a href=\"" . $q[LAST]->url(-path_info=>1,-query=>1) . "\">&gt;|</a> ";
     }
     print <<EOF;
+  <a href="@{[ $q3->script_name ]}?@{[ $q3->query_string ]}">Routenliste</a>
   </p>
  </card>
 @{[ $self->wap_footer ]}
@@ -498,6 +633,19 @@ sub wap_footer {
 EOF
 }
 
+# Add the last point manually --- or should this be done in BBBikeRouting? XXX
+sub search {
+    my $self = shift;
+    $self->SUPER::search(@_);
+    my $route_info = $self->RouteInfo;
+    my $path       = $self->Path;
+    if ($route_info && $path) {
+	push @$route_info, {Street => "angekommen!",
+			    Coords => join ",", @{$path->[-1]},
+			   };
+    }
+}
+
 sub tie_session {
     my $id = shift;
     return unless $use_apache_session;
@@ -527,9 +675,26 @@ return 1 if ((caller() and (caller())[0] ne 'Apache::Registry')
 
 adjust_lib() if $ENV{MOD_PERL};
 
-use vars qw($routing $q $do_image $sess);
+use vars qw($routing $q $do_image $sess @member);
+
+@member = qw(Path RouteInfo Start Goal);
+
+sub get_session {
+    my $routing = shift;
+    for my $member (@member) {
+	$routing->$member($sess->{$member});
+    }
+}
+
+sub store_session {
+    my $routing = shift;
+    for my $member (@member) {
+	$sess->{$member} = $routing->$member();
+    }
+}
 
 $routing = BBBikeRouting->new->init_context;
+$routing->Context->MultipleChoicesLimit(7);
 bless $routing, 'BBBikeRouting::WAP'; # 5.005 compat
 $routing->read_conf("$FindBin::RealBin/bbbike.cgi.config");
 
@@ -556,6 +721,9 @@ if ($q->param("info")) {
     $routing->wap_image_page;
 } elsif (defined $q->param("output_as") && $q->param("output_as") eq 'surroundingimagepage') {
     $routing->wap_surrounding_image_page;
+} elsif (defined $q->param("output_as") && $q->param("output_as") eq 'image' && $sess && $sess->{Path}) {
+    $routing->get_session;
+    $routing->wap_image;
 } elsif (defined $q->param("startname") &&
 	 $q->param("startname") ne ""
 	 &&
@@ -578,24 +746,31 @@ if ($q->param("info")) {
 	    if (!$sess || !$sess->{Path}) {
 		$routing->search;
 	    } else {
-		$routing->Path($sess->{Path});
+		$routing->get_session;
 	    }
 	    $routing->wap_image;
 	} else {
 	    $routing->search;
 	    $routing->wap_output;
 	    if ($sess) {
-		$sess->{Path} = $routing->Path;
+		$routing->store_session;
 	    }
 	}
+    }
+} elsif (defined $q->param("output_as") && $q->param("output_as") eq 'resultpage') {
+    if (!$sess || !$sess->{Path}) {
+	$routing->wap_error("Die Session ist nicht mehr gültig!");
+    } else {
+	$routing->get_session;
+	$routing->wap_output;
     }
 } elsif (defined $q->param("output_as") && $q->param("output_as") eq 'surroundingimage') {
     # Search or session
     if (!$sess || !$sess->{Path}) {
 	$routing->search;
-	$sess->{Path} = $routing->Path;
+	$routing->store_session;
     } else {
-	$routing->Path($sess->{Path});
+	$routing->get_session;
     }
     $routing->wap_surrounding_image;
 } else {

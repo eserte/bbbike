@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SVG.pm,v 1.7 2003/01/08 20:11:29 eserte Exp $
+# $Id: SVG.pm,v 1.7 2003/01/08 20:11:29 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -139,9 +139,10 @@ sub allocate_fonts {
     my $self = shift;
     my $im = $self->{Image};
 
-    $sansserif = $self->{PDF}->font('Subtype'  => 'Type1',
-				    'Encoding' => 'WinAnsiEncoding',
-				    'BaseFont' => 'Helvetica');
+#XXX???
+#    $sansserif = $self->{PDF}->font('Subtype'  => 'Type1',
+#				    'Encoding' => 'WinAnsiEncoding',
+#				    'BaseFont' => 'Helvetica');
 }
 
 

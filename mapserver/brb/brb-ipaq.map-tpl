@@ -109,6 +109,13 @@ SYMBOL
   IMAGE "[% IMAGE_DIR %]/flag_ziel.[% IMAGE_SUFFIX %]"
 END
 
+SYMBOL
+  NAME 'ring'
+  TYPE ELLIPSE
+  POINTS 5 5 END
+  FILLED FALSE
+END
+
 LAYER
   NAME "Flächen"
   TYPE POLYGON
@@ -1141,6 +1148,25 @@ LAYER
     NAME "Ende der Route"
     COLOR 255 0 255
     SYMBOL 'goalflag'
+  END
+END
+[% END %]
+
+[% IF ON_MARKER_POINT %]
+LAYER
+  NAME markerlayer
+  GROUP route
+  TYPE POINT
+  STATUS ON
+  FEATURE
+    POINTS [% MARKER_POINT %] END
+  END
+
+  CLASS
+    NAME "Markierung"
+    COLOR 255 180 200
+    SYMBOL 'ring'
+    SIZE 20
   END
 END
 [% END %]

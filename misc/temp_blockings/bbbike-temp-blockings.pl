@@ -198,4 +198,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Schlichtallee, zwischen Hauptstraße und Lückstraße, Vollsperrung vom 24.10.03, 18.00 Uhr bis 27.10.03, 04.00 Uhr wegen Ein-/Ausbau der Bahnbrücken. ',
        type  => 'gesperrt',
      },
+     { from  => 1070341200, # 2003-12-02 06:00
+       until => 1070924399, # 2003-12-08 23:59
+       file  => 'rixdorfer_weihnachtsmarkt.bbd',
+       text  => 'Rixdorfer Weihnachtsmarkt',
+       type  => 'gesperrt',
+     },
     );

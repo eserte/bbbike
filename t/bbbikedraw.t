@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.7 2003/11/28 00:19:08 eserte Exp $
+# $Id: bbbikedraw.t,v 1.8 2003/11/29 23:26:16 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -43,25 +43,31 @@ BEGIN {
 # MapServer: 60 s
 # ImageMagick: 461 s (with VectorUtil XS)
 
-plan tests => scalar @modules * 4;
-
 my @drawtypes = qw(all);
 my $width = 640;
 my $height = 480;
 my $geometry = $width."x".$height;
 my $display = 0;
 my $verbose = 0;
+my $debug   = 0;
 my $do_slow = 0;
+
+my @only_modules;
 
 if (!GetOptions("display!" => \$display,
 		"v|verbose!" => \$verbose,
+		"debug!" => \$debug,
 		"slow!" => \$do_slow,
-		"only=s" => sub {
-		    @modules = $_[1]; # Tests will fail with -only.
+		'only=s@' => sub {
+		    push @only_modules, $_[1]; # Tests will fail with -only.
 		},
 	       )) {
-    die "usage $0: [-display] [-v|-verbose] [-slow] [-only module]";
+    die "usage $0: [-display] [-v|-verbose] [-debug] [-slow] [-only module] ...";
 }
+
+@modules = @only_modules if @only_modules;
+
+plan tests => scalar @modules * 4;
 
 for my $module (@modules) {
     eval {
@@ -94,7 +100,7 @@ sub draw_map {
 	$imagetype = "pdf";
     }
 
-    my($fh, $filename) = tempfile(UNLINK => 1,
+    my($fh, $filename) = tempfile(UNLINK => !$debug,
 				  SUFFIX => "-$module.$imagetype",
 				 );
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.9 2003/11/17 07:21:05 eserte Exp $
+# $Id: wapcgi.t,v 1.10 2003/11/30 14:16:42 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -82,7 +82,8 @@ for my $wapurl (@wap_url) {
 
     $url = "$wapurl?startname=Dudenstr.&startbezirk=Kreuzberg&zielname=Sonntagstr.&zielbezirk=Friedrichshain&output_as=image";
     $resp = $ua->get($url);
-    ok(!!$resp->is_success, 1, $url);
+    ok(!!$resp->is_success, 1, $url)
+	or warn $resp->content;
     ok($resp->header('Content_Type'), qr|^image/|, $url);
     ok(length $resp->content > 0, 1, "No content: $url");
     if (defined &image_info) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.10 2003/09/22 19:59:39 eserte Exp $
+# $Id: MapServer.pm,v 1.11 2003/11/29 21:18:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -20,9 +20,10 @@ use Strassen;
 # sparen:
 use Carp qw(confess);
 
-use vars qw($VERSION %color %outline_color %width);
+use vars qw($VERSION $DEBUG %color %outline_color %width);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+$DEBUG = 0;
+$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -126,8 +127,8 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 		    ColorLightBlue ColorBlack
 		    OnFlaechen OnGewaesser OnStrassen OnUBahn OnSBahn OnRBahn
 		    OnAmpeln OnOrte OnFaehren OnGrenzen OnFragezeichen OnObst
-		    OnRoute OnStartFlag OnGoalFlag
-		    StartFlagPoints GoalFlagPoints RouteCoords
+		    OnRoute OnStartFlag OnGoalFlag OnMarkerPoint
+		    StartFlagPoints GoalFlagPoints MarkerPoint RouteCoords
 		    MapserverDir MapserverRelurl MapserverUrl
 		    BbbikeDir ImageDir ImageSuffix FontsList
 		   );
@@ -165,8 +166,9 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 		$conf = BBBikeDraw::MapServer::Conf->bbbike_cgi_conf;
 	    }
 	}
-	my($mapfh, $mapfile) = tempfile(UNLINK => 1,
-					SUFFIX => ".map");
+	my($mapfh, $mapfile) = tempfile
+	    (UNLINK => !$BBBikeDraw::MapServer::DEBUG,
+	     SUFFIX => ".map");
 	$self->BbbikeDir($conf->BbbikeDir);
 	$self->ImageDir($self->BbbikeDir . "/images");
 	my $mapserver_dir = $conf->MapserverMapDir;
@@ -412,6 +414,10 @@ sub draw_route {
     $im->RouteCoords(join " ", map { @$_ } @c1);
     $im->StartFlagPoints(join " ", @{ $c1[0] });
     $im->GoalFlagPoints(join " ", @{ $c1[-1] });
+    if ($self->{MarkerPoint}) {
+	$im->OnMarkerPoint(1);
+	$im->MarkerPoint(join " ", split /,/, $self->{MarkerPoint});
+    }
 
 #      my $strnet; # StrassenNetz-Objekt
 

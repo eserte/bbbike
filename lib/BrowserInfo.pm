@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.35 2003/06/23 22:00:38 eserte Exp $
+# $Id: BrowserInfo.pm,v 1.36 2003/11/29 21:21:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2001 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.35 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.36 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, $q) = @_;
@@ -178,9 +178,11 @@ sub set_info {
 	     Nokia6310 => [96, 65],
 	     Nokia7110 => [96, 65],
 	     Nokia6610 => [128, 128],
-	     Nokia7650 => [176, 208],
 	     Nokia6100 => [128, 90], # XXX ca.
 	     Nokia3650 => [170, 144], # visible size
+	     Nokia3660 => [170, 144],
+	     Nokia7650 => [170, 144],
+	     "NokiaN-Gage" => [170, 144],
 	    );
     TRY: {
 	    while(my($k,$v) = each %nokias) {

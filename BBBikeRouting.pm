@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.28 2003/11/16 21:15:24 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.29 2003/11/29 21:22:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -37,6 +37,7 @@ struct('BBBikeRouting::Context' => {Vehicle => "\$", Scope => "\$",
 				    RouteInfoKm => "\$",
 				    Verbose => "\$",
 				    MultipleChoices => "\$",
+				    MultipleChoicesLimit => "\$",
 				   });
 struct('BBBikeRouting' => {Context => "BBBikeRouting::Context",
 			   Start => "BBBikeRouting::Position",
@@ -100,6 +101,7 @@ sub init_context {
     $context->Algorithm("C-A*");
     $context->RouteInfoKm(1);
     $context->MultipleChoices(1);
+    $context->MultipleChoicesLimit(undef);
     $self;
 }
 
@@ -385,6 +387,7 @@ sub resolve_position {
 	return undef if (!@{ $from_res[0] });
 
 	if (@{ $from_res[0] } > 1 && $context->MultipleChoices) {
+	    my $limit = $context->MultipleChoicesLimit;
 	    @$choices_o = ();
 	    for (@{ $from_res[0] }) {
 		my $new_pos = $self->BBBikeRouting_Position_Class->new;
@@ -392,6 +395,7 @@ sub resolve_position {
 		$new_pos->Citypart($_->[PLZ::LOOK_CITYPART()]);
 		$new_pos->Coord   ($_->[PLZ::LOOK_COORD()]);
 		push @$choices_o, $new_pos;
+		last if defined $limit && @$choices_o >= $limit;
 	    }
 	    return undef;
 	}

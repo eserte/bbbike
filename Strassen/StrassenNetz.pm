@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.32 2003/11/15 14:26:50 eserte Exp eserte $
+# $Id: StrassenNetz.pm,v 1.33 2003/11/29 21:21:34 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -1613,7 +1613,8 @@ The distance of the current hop as a string (number with unit, usually km).
 
 =item Whole
 
-The distance from the start to the current end point. Same format as Hop.
+The distance from the start to the end point of the current hop. Same
+format as Hop.
 
 =item Way
 
@@ -1656,24 +1657,24 @@ sub route_info {
    my @search_route = $self->route_to_name($routeref);
    my @route_info;
    my @route_strnames;
-   my $ges_entf = 0;
-   my($ges_entf_s, $next_winkel, $next_richtung)
-	= ("", "", undef, "");
+   my $whole = 0;
+   my($next_angle, $next_direction)
+	= ("", undef, "");
    my $last_str;
    for(my $i = 0; $i <= $#search_route; $i++) {
 	my $route_info_item = {};
 	my($str, $index_arr);
-	my $himmelsrichtung;
-	my $entf;
-	my($winkel, $richtung)
-	    = ($next_winkel, $next_richtung);
+	my $compassdirection;
+	my $hop;
+	my($angle, $direction)
+	    = ($next_angle, $next_direction);
 
 	my $val = $search_route[$i];
-	$str	       = $val->[ROUTE_NAME];
-	$entf	       = $val->[ROUTE_DIST];
-	$next_winkel   = $val->[ROUTE_ANGLE];
-	$next_richtung = $val->[ROUTE_DIR];
-	$index_arr     = $val->[ROUTE_ARRAYINX];
+	$str	        = $val->[ROUTE_NAME];
+	$hop	        = $val->[ROUTE_DIST];
+	$next_angle     = $val->[ROUTE_ANGLE];
+	$next_direction = $val->[ROUTE_DIR];
+	$index_arr      = $val->[ROUTE_ARRAYINX];
 
 	my $route_strnames_index;
 	if ($str ne '...' &&
@@ -1693,33 +1694,33 @@ sub route_info {
 	}
 
 	if ($i < $#search_route and  ref $index_arr eq 'ARRAY') {
-	    $himmelsrichtung =
+	    $compassdirection =
 		    uc(main::line_to_canvas_direction
 		       (@{ $routeref->[$index_arr->[0]] },
 			@{ $routeref->[$index_arr->[0]+1] }));
 	}
 
 	if ($i > 0) {
-	    if (!$winkel) { $winkel = 0 }
-	    $winkel = int($winkel/$angle_accuracy)*$angle_accuracy;
-	    if ($winkel < 30) {
-		$richtung = "";
+	    if (!$angle) { $angle = 0 }
+	    $angle = int($angle/$angle_accuracy)*$angle_accuracy;
+	    if ($angle < 30) {
+		$direction = "";
 	    } else {
-		$richtung = ($winkel <= 45 ? 'H' : '') . uc($richtung);
+		$direction = ($angle <= 45 ? 'H' : '') . uc($direction);
 	    }
 	    # XXX is this correct (that is, in the $i>0 condition)?
 	    if (defined $route_strnames_index) {
 		$route_strnames[$route_strnames_index]->[ROUTE_ARRAYINX]
-		    = $s_sub->($ges_entf);
+		    = $s_sub->($whole);
 	    }
 	}
-	$ges_entf += $entf;
+	$whole += $hop;
 
-	$route_info_item->{Hop}       = $s_sub->($entf);
-	$route_info_item->{Whole}     = $s_sub->($ges_entf);
-	$route_info_item->{Way}       = $richtung;
-	$route_info_item->{Angle}     = $winkel;
-	$route_info_item->{Direction} = $himmelsrichtung;
+	$route_info_item->{Hop}       = $s_sub->($hop);
+	$route_info_item->{Whole}     = $s_sub->($whole);
+	$route_info_item->{Way}       = $direction;
+	$route_info_item->{Angle}     = $angle;
+	$route_info_item->{Direction} = $compassdirection;
 	$route_info_item->{Street}    = $str;
 	$route_info_item->{Coords}    =
 	    join(",", @{$routeref->[$index_arr->[0]]});

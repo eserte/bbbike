@@ -141,6 +141,16 @@ Only for CGI scripts: the BrowserInfo object.
 
 Be verbose (output statistics to stderr etc.).
 
+=item MultipleChoices
+
+Fill the StartChoices/ViaChoices/GoalChoices members if a search for a
+start/via/goal has multiple results.
+
+=item MultipleChoicesLimit
+
+Limit the number of entries in the *Choices members. By default this
+is C<undef>, which means unlimited.
+
 =back
 
 =item C<Start>, C<Goal>
@@ -174,6 +184,9 @@ After finding a route, this member will contain an array reference of
 the route "elements". Please refer to the
 L<Strassen::StrassenNetz|Strassen::StrassenNetz> documentation for the
 format of a route element.
+
+XXX For now, the goal node is *not* part of the RouteInfo. This may
+change in future.
 
 =back
 

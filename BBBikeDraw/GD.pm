@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.34 2003/11/28 00:18:06 eserte Exp $
+# $Id: GD.pm,v 1.34 2003/11/28 00:18:06 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ use Strassen;
 # sparen:
 use Carp qw(confess);
 
-use vars qw($gd_version $VERSION @colors %color %outline_color %width
+use vars qw($gd_version $VERSION $DEBUG @colors %color %outline_color %width
 	    $TTF_STREET $TTF_CITY);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
@@ -39,6 +39,7 @@ sub AUTOLOAD {
     }
 }
 
+$DEBUG = 0;
 $VERSION = sprintf("%d.%02d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
@@ -91,7 +92,8 @@ sub init {
 		        warn "Can't create gif files, fallback to png: $@";
 		        $self->{ImageType} = 'png';
 		    } else {
-		        warn "OK, using GD::Convert for gif conversion";
+		        warn "OK, using GD::Convert for gif conversion"
+			    if $DEBUG;
 		    }
 #XXX	        }
 	    }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.34 2003/09/02 22:35:05 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.35 2003/11/29 21:21:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.34 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.35 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, %args) = @_;
@@ -32,6 +32,7 @@ sub new {
     $self->{Return}    = delete $args{Return};
     $self->{Geometry}  = delete $args{Geometry};
     $self->{Coords}    = delete $args{Coords}; # route coordinates
+    $self->{MarkerPoint} = delete $args{MarkerPoint};
     $self->{Draw}      = delete $args{Draw};
     $self->{Scope}     = delete $args{Scope} || 'city';
     $self->{Startname} = delete $args{Startname};
@@ -109,6 +110,8 @@ sub new_from_cgi {
       if defined $q->param('geometry');
     $args{Coords}    = [ split(/[!; ]/, $q->param('coords')) ]
       if defined $q->param('coords');
+    $args{MarkerPoint} = $q->param('markerpoint')
+      if defined $q->param('markerpoint');
     $args{Draw}      = [ $q->param('draw') ]
       if defined $q->param('draw');
     $args{Scope}     = $q->param('scope')
