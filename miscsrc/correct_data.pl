@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: correct_data.pl,v 1.9 2004/03/08 00:09:44 eserte Exp $
+# $Id: correct_data.pl,v 1.10 2004/03/13 13:37:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -38,12 +38,11 @@ use BBBikeXS;
 
 my $corr_data = "$FindBin::RealBin/../misc/gps_correction_all.dat";
 my $ref_dist = "10000,20000,40000";
-use vars qw($v_output $minpoints @ref_dist);
+use vars qw($v_output $minpoints @ref_dist $reverse);
 _init_ref_dist();
 my $file;
 my %conv;
 my $s;
-my $reverse;
 
 sub process {
     local @ARGV = @_;
@@ -80,6 +79,13 @@ sub process {
     } $s;
 
     untie %conv;
+}
+
+sub convert_record_for_x_y {
+    my($x, $y) = @_;
+    local $_ = ["", ["$x,$y"], ""];
+    my $new_coord_ref = &convert_record;
+    split /,/, $new_coord_ref->[0];
 }
 
 sub convert_record {

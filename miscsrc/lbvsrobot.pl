@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.10 2004/03/02 08:06:08 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.11 2004/03/15 08:19:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -17,6 +17,7 @@ use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/../miscsrc",
 	);
 use HTML::LinkExtor;
 #use HTML::Parser;
@@ -151,12 +152,20 @@ if (exists $output_as{'text'}) {
 
 if (exists $output_as{'bbd'}) {
     my $fh = file_or_stdout($output_as{bbd});
+
+    require "correct_data.pl";
+    local $BBBike::CorrectData::minpoints = 5;
+    local @BBBike::CorrectData::ref_dist = (10000,20000,40000,80000,120000);
+    local $BBBike::CorrectData::reverse = 1;
+
     require Karte;
     Karte::preload(qw(Standard Polar));
+
     for my $info (@details) {
 	(my $text = $info->{text}) =~ s/[\n\t]+/ /g;
 	my($x1, $y1) = map { int } $Karte::Polar::obj->map2standard
-	    ($info->{x}, $info->{y});
+	    ($info->{"x"}, $info->{"y"});
+	($x1, $y1) = BBBike::CorrectData::convert_record_for_x_y($x1, $y1);
 	print $fh "$text\tX $x1,$y1\n";
     }
 }

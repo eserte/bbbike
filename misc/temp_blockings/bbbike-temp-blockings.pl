@@ -222,4 +222,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Berliner Straße zwischen Florastraße und Granitzstraße in beiden Richtungen gesperrt (Höhe S-Bhf. Pankow). Grund: Brückenarbeiten. Eine Umleitung ist ausgeschildert. Dauer: 13.03.2004, 00:00 Uhr bis 15.03.2004, 04:00 Uhr',
        type  => 'gesperrt',
      },
+     { from  => 1079236800, # 2004-03-14 05:00
+       until => 1080514800, # 2004-03-29 01:00
+       file  => 'langhansstr.bbd',
+       text  => 'Die Langhansstraße ist zwischen Prenzlauer Promenade und Heinersdorfer Straße in beiden Richtungen gesperrt. Grund: Baumaßnahmen. Dauer:15.03.2004, 05:00 Uhr bis 28.03.2004, 17:00 Uhr. Eine Umleitung ist ausgeschildert.',
+       type  => 'gesperrt',
+     },
     );
