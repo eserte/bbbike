@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.22 2003/07/09 21:07:59 eserte Exp eserte $
+# $Id: Core.pm,v 1.23 2003/07/20 22:13:16 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -303,6 +303,15 @@ sub write {
 	warn "Can't write to $filename: $!" if $VERBOSE;
 	0;
     }
+}
+
+### AutoLoad Sub
+sub append {
+    my($self, $filename) = @_;
+    open(COPY, ">>$filename") or die "Can't append to $filename: $!";
+    binmode COPY;
+    print COPY $self->as_string;
+    close COPY;
 }
 
 sub get {

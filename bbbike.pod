@@ -2207,7 +2207,7 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
   * DegreesToNZGrid sieht interessant aus --- das brauche ich: x und y
     und keine Zonen. Implementieren, angucken!
 
-  * Was ist mit dem Koordinatensystem ETRS 89
+  * Was ist mit dem Koordinatensystem ETRS 89?
 
 * Niederschlagsprognosen:
 
@@ -2216,6 +2216,10 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
   http://puma.dkrz.de/theomet/prognosen/bilder/colorpop6_12.jpg
 
   Kommerzielles Programm: http://www.einfalt.de/x_rad_vorher.html
+
+* Volltextsuchfunktion in bbbike erweitern: agrep mit fester
+  Fehleranzahl, automatische Operation mit schrittweiser
+  ErhE<ouml>hung der Fehleranzahl
 
 =back
 

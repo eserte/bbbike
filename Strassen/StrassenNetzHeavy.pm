@@ -180,19 +180,23 @@ sub make_net_cat {
     my $cachefile;
     if ($cacheable) {
 	my @src = $self->sourcefiles;
-	$cachefile = $self->get_cachefile;
-	my $net2name = Strassen::Util::get_from_cache("net2name_" . $args2filename . "_$cachefile", \@src);
-	my $net = Strassen::Util::get_from_cache("net_" . $args2filename . "_$cachefile", \@src);
-	if (defined $net2name && defined $net) {
-	    $self->{Net2Name} = $net2name;
-	    $self->{Net} = $net;
-	    if ($VERBOSE) {
-		warn "Using cache for $cachefile\n";
+	if (!@src || grep { !defined $_ } @src) {
+	    warn "Not cacheable...";
+	    $cacheable = 0;
+	} else {
+	    $cachefile = $self->get_cachefile;
+	    my $net2name = Strassen::Util::get_from_cache("net2name_" . $args2filename . "_$cachefile", \@src);
+	    my $net = Strassen::Util::get_from_cache("net_" . $args2filename . "_$cachefile", \@src);
+	    if (defined $net2name && defined $net) {
+		$self->{Net2Name} = $net2name;
+		$self->{Net} = $net;
+		if ($VERBOSE) {
+		    warn "Using cache for $cachefile\n";
+		}
+		return;
 	    }
-	    return;
 	}
     }
-
     $self->{Net} = {};
     $self->{Net2Name} = {};
     my $net      = $self->{Net};
@@ -673,14 +677,19 @@ sub load_user_deletions {
 ### AutoLoad Sub
 sub create_user_deletions_object {
     my $net = shift;
-    my $del_token = shift;
+    my(%args) = @_;
+    my $del_token = $args{-del_token};
+    my $cat = BLOCKED_COMPLETE;
+    if (defined $args{-type} && $args{-type} eq 'handicap-q4') {
+	$cat = "q4";
+    }
     my $s = Strassen->new;
     my %set;
     while(my($k1,$v1) = each %{ $net->{"_Deleted$del_token"} }) {
 	while(my($k2,$v2) = each %$v1) {
 	    if (!exists $set{$k1}->{$k2} &&
 		!exists $set{$k2}->{$k1}) {
-		$s->push(["userdel", [$k1,$k2], BLOCKED_COMPLETE]);
+		$s->push(["userdel", [$k1,$k2], $cat]);
 		$set{$k1}->{$k2}++;
 	    }
 	}
@@ -690,9 +699,9 @@ sub create_user_deletions_object {
 
 ### AutoLoad Sub
 sub save_user_deletions {
-    my($net, $filename, $del_token) = @_;
-    $del_token ||= "";
-    my $s = $net->create_user_deletions_object($del_token);
+    my($net, $filename, %args) = @_;
+    $args{-del_token} ||= "";
+    my $s = $net->create_user_deletions_object(%args);
     $s->write($filename);
 }
 

@@ -63,6 +63,9 @@ sub make_net_slow_1 {
 sub net_read_cache_1 {
     my($self) = @_;
     my @src = $self->sourcefiles;
+    if (!@src || grep { !defined $_ } @src) {
+	return 0;
+    }
     my $cachefile = $self->get_cachefile;
 
     my $net2name = Strassen::Util::get_from_cache("net2name_1_$cachefile", \@src);
@@ -89,6 +92,10 @@ sub net_read_cache_1 {
 
 sub net_write_cache_1 {
     my($self) = @_;
+    my @src = $self->sourcefiles;
+    if (!@src || grep { !defined $_ } @src) {
+	return;
+    }
     my $cachefile = $self->get_cachefile;
 
     Strassen::Util::write_cache($self->{Net2Name}, "net2name_1_$cachefile", -modifiable => 1);
@@ -167,6 +174,9 @@ sub make_net_slow_2 {
 sub net_read_cache_2 {
     my($self) = @_;
     my @src = $self->sourcefiles;
+    if (!@src || grep { !defined $_ } @src) {
+	return 0;
+    }
     my $cachefile = $self->get_cachefile;
 
     my $coord2index = Strassen::Util::get_from_cache("coord2index_2_$cachefile", \@src);
@@ -199,6 +209,10 @@ sub net_read_cache_2 {
 
 sub net_write_cache_2 {
     my($self) = @_;
+    my @src = $self->sourcefiles;
+    if (!@src || grep { !defined $_ } @src) {
+	return;
+    }
     my $cachefile = $self->get_cachefile;
 
     Strassen::Util::write_cache($self->{Coord2Index}, "coord2index_2_$cachefile");

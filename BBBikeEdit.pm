@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.55 2003/06/20 18:05:50 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.56 2003/07/20 22:12:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003 Slaven Rezic. All rights reserved.
@@ -2931,6 +2931,342 @@ sub clone {
 	$clone = eval Data::Dumper->new([$orig], ['clone'])->Indent(0)->Purity(1)->Dump;
     }
     $clone;
+}
+
+# XXX Implemented and untested...
+# XXX further implementation needed:
+#     * verschiedene Typen von blockings editierbar machen, mindestens jedoch
+#       "3" und "q4". Untermenü zum Auswählen des aktuellen blocking-typs.
+#       das Zeichnen der zusätzlichen Sperrungen mit dem normalen
+#       Zeichnen möglichst unifizieren.
+#     * beim Abspeichern sollte der Typ nicht mehr angegeben werden müssen
+#     * beim Laden ebenfalls nicht. Im cgi und in bbbike wird statt pauschal
+#       "make_sperre" nach Kategorien differenziert und je Strassen-Objekte
+#       für make_sperre und merge_handicap_net on-the-fly generiert
+#     * bbbike-temp-blockings.pl => misc/temp_blockings verschieben, cgi
+#       und temp_blockings_editor() entsprechend anpassen
+#     * Option, damit alle (aktuellen?) temp_blockings automatisch
+#       geladen werden
+#     * Teile von miscsrc/bbbike-check-temp-blockings modularisieren
+#       und nach bbbike/BBBikeTempBlockings.pm verschieben: Laden der
+#       temp-blockings.pl-Datei, Checken, was davon aktuell ist
+#     * bbbike: Einzelne blockings sollten ein/ausgeblendet werden können
+sub temp_blockings_editor {
+    my $t = main::redisplay_top($main::top, "temp_blockings_editor",
+				-title => M"Temporäre Sperrungen");
+    return if !defined $t;
+    require Tk::PathEntry;
+    require Time::Local;
+    require Tk::Date;
+    require Tk::NumEntry;
+    require Tk::LabFrame;
+    require File::Spec;
+    require File::Basename;
+    require File::Copy;
+    require POSIX;
+
+    $t->gridColumnconfigure($_, -weight => 1) for (1..2);
+    $t->gridRowconfigure   ($_, -weight => 1) for (1..8);
+
+    my $initialdir = "$FindBin::RealBin/misc/temp_blockings/";
+    my $file = $initialdir;
+    my $prewarn_days = 1;
+    my $blocking_type = "gesperrt";
+    my $edit_after = 1;
+    my $auto_cross_road_blockings = 0;
+    my $change_pl_file = 1;
+    my $pe;
+    Tk::grid($t->Label(-text => M("bbd-Datei").":"),
+	     $pe = $t->PathEntry(-textvariable => \$file),
+	     -sticky => "w",
+	    );
+    $pe->focus;
+    $pe->icursor("end");
+
+    my $txt;
+    Tk::grid($txt = $t->Scrolled("Text", -scrollbars => "e",
+				 -width => 40, -height => 3,
+				),
+	     -sticky => "ew",
+	     -columnspan => 2);
+    my $real_txt = $txt->Subwidget("scrolled");
+
+    my $act_b = $real_txt->Button
+	(-text => "Act", -bd => 1, -padx => 0, -pady => 0
+	)->place(-relx => 1, -rely => 1, -anchor => "se");
+
+    my($start_w, $end_w);
+    Tk::grid($t->Label(-text => M"Start"),
+	     $start_w = $t->Date,
+	     -sticky => "w",
+	    );
+
+    Tk::grid($t->Label(-text => M"Ende"),
+	     $end_w = $t->Date,
+	     -sticky => "w",
+	    );
+
+    Tk::grid($t->Label(-text => M"Vorwarnzeit in Tagen"),
+	     $t->NumEntry(-textvariable => \$prewarn_days,
+			  -width => 3,
+			  -minvalue => 0,
+			 ),
+	     -sticky => "w",
+	    );
+
+    {
+	my $f = $t->LabFrame(-label => M"Typ",
+			     -labelside => "acrosstop");
+	Tk::grid($f, -sticky => "ew", -columnspan => 2);
+	$f->Radiobutton(-text => M"gesperrt",
+			-value => "gesperrt",
+			-variable => \$blocking_type,
+		       )->pack(-anchor => "w");
+	$f->Radiobutton(-text => M"handicap",
+			-value => "handicap-q4",
+			-variable => \$blocking_type,
+		       )->pack(-anchor => "w");
+    }
+
+    Tk::grid($t->Checkbutton(-text => M"Überqueren der gesperrten Straßen nicht möglich",
+			     -variable => \$auto_cross_road_blockings,
+			    ),
+	     -sticky => "w",
+	     -columnspan => 2,
+	    );
+
+    Tk::grid($t->Checkbutton(-text => M"Dateien an zentrale pl-Datei anhängen",
+			     -variable => \$change_pl_file,
+			    ),
+	     -sticky => "w",
+	     -columnspan => 2,
+	    );
+
+    Tk::grid($t->Checkbutton(-text => M"Dateien im Anschluss editieren",
+			     -variable => \$edit_after,
+			    ),
+	     -sticky => "w",
+	     -columnspan => 2,
+	    );
+
+    my $get_text = sub {
+	my $btxt = $real_txt->get("1.0", "end");
+	$btxt =~ s/\n\Z//;
+	$btxt =~ s/\s+/ /gs;
+	$btxt;
+    };
+
+    my $date_time_to_epoch = sub {
+	my($S,$M,$H,$d,$m,$y) = @_;
+	$m--;
+	$y-=1900;
+	my $day_inc = 0;
+	if ($H == 24) {
+	    $H = 0;
+	    $day_inc = 1;
+	}
+	my $time;
+	eval {
+	    $time = Time::Local::timelocal($S,$M,$H,$d,$m,$y);
+	};
+	if ($@) {
+	    main::status_message($@, "die");
+	}
+	if ($day_inc) {
+	    $time += 86400;
+	}
+	$time;
+    };
+
+    $act_b->configure
+	(-command => sub {
+	     my $btxt = $get_text->();
+	     my($new_start_time, $new_end_time);
+
+	     my $date_rx      = qr/(\d{1,2})\.(\d{1,2})\.(20\d{2})/;
+	     my $time_rx      = qr/(\d{1,2})[\.:](\d{2})\s*Uhr/;
+	     my $full_date_rx = qr/$date_rx\D+$time_rx/;
+
+	     my($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2);
+	     # XXX use $full_date_rx etc. (after testing rxes!)
+	     if (($d1,$m1,$y1, $H1,$M1, $H2,$M2) = $btxt =~
+		 /(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*bis\s*(\d{1,2})\.(\d{2})\s*Uhr/) {
+		 $new_start_time =$date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
+		 $new_end_time   =$date_time_to_epoch->(0,$M2,$H2,$d1,$m1,$y1);
+	     } elsif (($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2) = $btxt =~
+		      /(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*bis\s*(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr/) {
+		 $new_start_time =$date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
+		 $new_end_time   =$date_time_to_epoch->(0,$M2,$H2,$d2,$m2,$y2);
+	     } elsif (($d2,$m2,$y2, $H2,$M2) = $btxt =~ /bis\s+$full_date_rx/) {
+		 $new_start_time =time; # now
+		 $prewarn_days = 0;
+		 $new_end_time   =$date_time_to_epoch->(0,$M2,$H2,$d2,$m2,$y2);
+	     } elsif (($d2,$m2,$y2) = $btxt =~ /bis\s+$date_rx/) {
+		 $new_start_time =time; # now
+		 $prewarn_days = 0;
+		 $new_end_time   =$date_time_to_epoch->(0,0,24,$d2,$m2,$y2);
+	     }
+	     if (defined $new_start_time) {
+		 $start_w->configure(-value => $new_start_time);
+		 $end_w->configure  (-value => $new_end_time);
+	     } else {
+		 main::status_message("Kann kein Datum parsen", "warn");
+	     }
+	 });
+
+
+    Tk::grid($t->Button
+	     (-text => "Ok",
+	      -command => sub {
+		  if (!defined $file || $file =~ /^\s*$/) {
+		      $t->messageBox(-message => "Dateiname fehlt");
+		      return;
+		  }
+		  if (-e $file) {
+		      $t->messageBox(-message => "Existierende Datei kann nicht überschrieben werden");
+		      return;
+		  }
+		  my $blocking_text = $get_text->();
+		  $blocking_text =~ s/\'/\\\'/g; # mask for perl sq string
+		  if ($blocking_text eq '') {
+		      $t->messageBox(-message => "Beschreibender Text fehlt");
+		      return;
+		  }
+		  my $start_time = $start_w->get;
+		  my $end_time   = $end_w->get;
+		  if (!defined $start_time || !defined $end_time) {
+		      $t->messageBox(-message => "Start/Endzeit fehlt");
+		      return;
+		  }
+		  $start_time -= $prewarn_days * 86400;
+
+		  main::save_user_dels($file, -type => $blocking_type);
+		  if ($auto_cross_road_blockings) {
+		      my $add_userdels = add_cross_road_blockings();
+		      if ($add_userdels) {
+			  $add_userdels->append($file);
+		      }
+		  }
+
+		  my $rel_file = $file;
+		  if (index($rel_file, $initialdir) != 0) {
+		      $rel_file = File::Spec->abs2rel($rel_file); # XXX base needed?
+		  } else {
+		      $rel_file = File::Basename::basename($rel_file); # XXX handle deeper hiearchies?
+		  }
+
+		  my $pl_file = "$FindBin::RealBin/cgi/bbbike-temp-blockings.pl"; # XXX this will change
+		  File::Copy::copy($pl_file, "$pl_file~");
+		  my @old_contents;
+		  open(PL_FILE, $pl_file)
+		      or main::status_message("Can't open $pl_file: $!", "die");
+		  @old_contents = <PL_FILE>;
+		  close PL_FILE;
+
+		  my $pl_entry = <<EOF;
+     { from  => $start_time, # @{[ POSIX::strftime("%Y-%m-%d %H:%M", localtime $start_time) ]}
+       until => $end_time, # @{[ POSIX::strftime("%Y-%m-%d %H:%M", localtime $end_time) ]}
+       file  => '$rel_file',
+       text  => '$blocking_text'
+     },
+EOF
+
+		  if ($old_contents[-1] =~ m{^\s*\);\s*$}) {
+		      splice @old_contents, -1, 0, $pl_entry;
+		      if ($change_pl_file) {
+			  open(PL_OUT, "> $pl_file")
+			      or main::status_message("Kann auf $pl_file nicht schreiben: $!", "die");
+			  print PL_OUT join "", @old_contents;
+			  close PL_OUT;
+		      } else {
+			  print STDERR join "", @old_contents;
+		      }
+		  } else {
+		      main::status_message("Can't parse old contents...", "err");
+		      return;
+		  }
+
+		  my $err = `$FindBin::RealBin/miscsrc/check_bbbike_temp_blockings 2>&1`;
+		  if ($? != 0) {
+		      my $t = $main::top->Toplevel(-title => "check_bbbike_temp_blockings problems");
+		      my $txt = $t->Scrolled("ROText")->pack(-fill => "both",
+							     -expand => 1);
+		      $txt->insert("end", $err);
+		  }
+
+		  if ($edit_after) {
+		      if (fork == 0) {
+			  exec("emacsclient", "-n", $pl_file);
+			  CORE::exit(1);
+		      }
+		      if (fork == 0) {
+			  exec("emacsclient", "-n", $file);
+			  CORE::exit(1);
+		      }
+		  }
+
+		  $t->destroy;
+	      }),
+	     $t->Button
+	      (-text => M"Abbruch",
+	       -command => sub {
+		   $t->destroy;
+	       }),
+	      -sticky => "ew",
+	     );
+
+    $pe->idletasks; # to fill the variable
+    $pe->xview(1);#XXX does not work???
+}
+
+sub add_cross_road_blockings {
+    # Do not reuse $main::net, because there are already the deletions stored!
+    require Strassen::Core;
+    require Strassen::StrassenNetz;
+    my $str = Strassen->new("strassen");
+    my $str_net = StrassenNetz->new($str);
+    $str_net->make_net;
+    # XXX use del_token?
+    my $dels_str = $main::net->create_user_deletions_object;
+    my $dels_net = StrassenNetz->new($dels_str);
+    $dels_net->make_net;
+    my $str_net_Net  = $str_net->{Net};
+    my $dels_net_Net = $dels_net->{Net};
+    $dels_str->init;
+    my %cross_road_blockings;
+    my %seen;
+    while(1) {
+	my $r = $dels_str->next;
+	last if !@{ $r->[Strassen::COORDS()] };
+	for my $p (@{ $r->[Strassen::COORDS()] }) {
+	    next if $seen{$p};
+	    next if keys %{ $dels_net_Net->{$p} } == 1; # Endpunkt der Sperrung
+	    my %all_neighbors = map {($_,1)} keys %{ $str_net_Net->{$p} };
+	    for (keys %{ $dels_net_Net->{$p} }) {
+		delete $all_neighbors{$_};
+	    }
+	    if (keys %all_neighbors > 1) {
+		for my $p1 (keys %all_neighbors) {
+		    for my $p2 (keys %all_neighbors) {
+			next if $p1 eq $p2;
+			$cross_road_blockings{$p1}{$p}{$p2}++;
+		    }
+		}
+	    }
+	    $seen{$p}++;
+	}
+    }
+
+    my $add_userdels = Strassen->new;
+    while(my($p1,$v) = each %cross_road_blockings) {
+	while(my($p,$v2) = each %$v) {
+	    while(my($p2) = each %$v2) {
+		$add_userdels->push(["userdel auto", [$p1, $p, $p2], "3"]);
+	    }
+	}
+    }
+
+    $add_userdels;
 }
 
 1;

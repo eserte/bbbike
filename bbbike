@@ -1210,8 +1210,10 @@ if (!defined $top) {
 	$top->optionAdd("*$_.background", '#C0C080', 'startupFile');
     }
     # Browse is for Tk::HistEntry::Browse
-    for (qw(Browse Entry NumEntry PathEntry Listbox KListbox K2Listbox
-	    TixHList HList Text ROText BrowseEntry.Entry SimpleHistEntry)) {
+    for (qw(Browse Entry NumEntry Date*NumEntryPlain PathEntry
+	    Listbox KListbox K2Listbox
+	    TixHList HList Text ROText BrowseEntry.Entry SimpleHistEntry
+	   )) {
 	$top->optionAdd("*$_.background", "grey95", "startupFile");
     }
     for (qw(Scale Scrollbar)) {
@@ -3068,15 +3070,8 @@ sub do_iconframe {
 	    $bdm->command
 		(-label => M"Speichern für temp_blockings",
 		 -command => sub {
-		     my $file = $top->getSaveFile
-			 (-initialdir => "$FindBin::RealBin/misc/temp_blockings",
-			  -defaultextension => ".bbd",
-			  -filetypes => [[M"bbd-Dateien" => '.bbd'],
-					 [M"Alle Dateien" => '*']],
-			 );
-		     if (defined $file) {
-			 save_user_dels($file);
-		     }
+		     require BBBikeEdit;
+		     BBBikeEdit::temp_blockings_editor();
 		 }
 		);
 	}
@@ -13440,9 +13435,10 @@ sub _save_umask (&) {
 
 sub save_user_dels {
     my $file = shift || "$bbbike_configdir/userdels.bbd";
+    my(%args) = @_;
     _save_umask {
 	umask 022;
-	$net->save_user_deletions($file);
+	$net->save_user_deletions($file, %args);
     };
 }
 

@@ -91,4 +91,14 @@ Florastraﬂe zwischen Grunowstraﬂe und Berliner Straﬂe, Baustelle, Straﬂe in beid
        file  => "oberbaumbruecke.bbd",
        text  => "Oberbaum-Br¸ckenfest am 10.08.2003 zwischen 07.00 Uhr bis 24.00 Uhr f¸r den Fahrzeugverkehr gesperrt."
      },
+     { from  => 1060257600, # 2003-08-07 14:00
+       until => 1060466400, # 2003-08-10 00:00
+       file  => '20030809.bbd',
+       text  => 'Im Bereich Tauentzienstraﬂe, Kurf¸rstendamm zwischen N¸rnberger Straﬂe und Joachim-Friedrich-Straﬂe, Droysenstraﬂe, Kantstraﬂe, in beiden Richtungen Sportveranstaltung, Straﬂe gesperrt. Dauer: 09.08.2003, 14.00 Uhr bis 24.00 Uhr'
+     },
+     { from  => 1061640000, # 2003-08-23 14:00
+       until => 1061748000, # 2003-08-24 20:00
+       file  => 'xrace.bbd',
+       text  => 'Straﬂe des 17. Juni ist zwischen Entlastungstraﬂe und Klopstockstraﬂe gesperrt. (X Race-Veranstaltung) Dauer: 24.08.2003, von 14.00 Uhr bis 20.00 Uhr'
+     },
     );

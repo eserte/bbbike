@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: Generated_src.pm,v 1.14 2003/06/19 20:59:55 eserte Exp $
+# $Id: Generated_src.pm,v 1.14 2003/06/19 20:59:55 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -143,6 +143,9 @@ sub make_net_slow_<%=$type%> {
 sub net_read_cache_<%=$type%> {
     my($self) = @_;
     my @src = $self->sourcefiles;
+    if (!@src || grep { !defined $_ } @src) {
+	return 0;
+    }
     my $cachefile = $self->get_cachefile;
 <% if ($type == $FMT_ARRAY) { %>
     my $coord2index = Strassen::Util::get_from_cache("coord2index_<%=$type%>_$cachefile", \@src);
@@ -181,6 +184,10 @@ sub net_read_cache_<%=$type%> {
 
 sub net_write_cache_<%=$type%> {
     my($self) = @_;
+    my @src = $self->sourcefiles;
+    if (!@src || grep { !defined $_ } @src) {
+	return;
+    }
     my $cachefile = $self->get_cachefile;
 <% if ($type == $FMT_ARRAY) { %>
     Strassen::Util::write_cache($self->{Coord2Index}, "coord2index_<%=$type%>_$cachefile");
