@@ -10,7 +10,7 @@ Legend:
 
   Priority from 1 (unimportant) to 5 (very important).
 
-=head2 Perl/Tk version of bbbike
+=head1 Perl/Tk version of bbbike
 
 =over
 
@@ -1025,19 +1025,66 @@ L<http://www.perlmonks.org/index.pl?node_id=355073>
 
 =back
 
-=head2 BikePower
+=head1 Daten allgemein
+
+=head2 Radwege und -touren im Netz
 
 =over
 
-=item *
+=item * (E3)
 
-BikePower: Profile laden/speichern, evtl. auch direkt aus bbbike
-sichtbar. Erst einmal das Problem mit dem Komma (Linux, Solaris mit
-LANG gesetzt) lösen.
+Der Spreeradweg: L<http://www.spreeradweg.de/>
+
+=item * (E3)
+
+Berlin-Kopenhagen: L<http://www.bike-berlin-copenhagen.com/>
+
+=item * (E3)
+
+Berlin-Usedom: L<http://www.berlin-usedom-radweginfo.de/>
+
+=item * (E3)
+
+Broschuere der Landesregierung Brandenburg:
+L<http://www.wirtschaft.brandenburg.de/sixcms/media.php/1312/broschurrad.pdf>
 
 =back
 
-=head2 Daten allgemein
+=head2 Fehler, Ergänzungen, ...
+
+=over
+
+ neue stuetzpunkte fuer gps_correction_map (entsprechungen in standard-koordinaten suchen)
+ N52 46 59.9 E14 02 11.3	Bad Freienwalde B158/B167
+ N52 35 49.4 E14 14 17.8	bei Neuhardenberg B167/L36 nach Trebnitz
+ N52 48 50.5 E12 45 48.1	Fehrbellin (Knick der L16)
+ N53 15 52.1 E13 36 23.6	Boitzenburg (hmmm, reichlich unspezifisch)
+ N53 23 36.8 E13 35 04.5	L259/L25 bei Fuerstenwerder (vielleicht anstelle von Boitzenburg)
+ N52 53 37.2 E11 45 09.4	Seehausen/Altmark, Kreuzung, richtig!
+ N51 21 59.7 E12 44 38.9	Wurzen: B6/S11
+ N52 16 52.3 E11 25 22.9	Haldensleben:B245/L24 nach Hundisburg
+ N52 31 42.2 E11 26 02.5	B71/B188
+
+ stolpe => stolpe/oder
+ hohensaatener wasserstr. eintragen
+ H-str. B2 => Stolpe/oder => neukuenkendorf eintragen
+ deichstr. ab stolpe richtung sueden
+ siehe auch: http://www.grass-net.de/modules.php?name=Content&pa=showpage&pid=16
+ Radtouren um bestensee herum: http://www.mediapur.de/foto_rad.html
+
+ Fahrplanaenderungen Dezember 2003 bei RE/RB beachten!
+
+ alle Brücken aus plaetze => brunnels überführen
+ brunnels mit nicht-leeren NAME suchbar machen
+
+ S-Bahn: N-S-Tunnel als brunnel markieren
+ U-Bahn: Negativliste erstellen, alle Strecke, die nicht enthalten
+ sind, sind automatisch als Tunnel markieren. U1 nach Krumme Lanke =
+ tunnel.
+
+=back
+
+=head2 Verschiedenes
 
 =over
 
@@ -1105,41 +1152,7 @@ Recherchieren! => Jan hat etwas gefunden (Aldi-Karten...)
 
 =back
 
-=head2 Daten Fehler, Ergänzungen, ...
-
-=over
-
- neue stuetzpunkte fuer gps_correction_map (entsprechungen in standard-koordinaten suchen)
- N52 46 59.9 E14 02 11.3	Bad Freienwalde B158/B167
- N52 35 49.4 E14 14 17.8	bei Neuhardenberg B167/L36 nach Trebnitz
- N52 48 50.5 E12 45 48.1	Fehrbellin (Knick der L16)
- N53 15 52.1 E13 36 23.6	Boitzenburg (hmmm, reichlich unspezifisch)
- N53 23 36.8 E13 35 04.5	L259/L25 bei Fuerstenwerder (vielleicht anstelle von Boitzenburg)
- N52 53 37.2 E11 45 09.4	Seehausen/Altmark, Kreuzung, richtig!
- N51 21 59.7 E12 44 38.9	Wurzen: B6/S11
- N52 16 52.3 E11 25 22.9	Haldensleben:B245/L24 nach Hundisburg
- N52 31 42.2 E11 26 02.5	B71/B188
-
- stolpe => stolpe/oder
- hohensaatener wasserstr. eintragen
- H-str. B2 => Stolpe/oder => neukuenkendorf eintragen
- deichstr. ab stolpe richtung sueden
- siehe auch: http://www.grass-net.de/modules.php?name=Content&pa=showpage&pid=16
- Radtouren um bestensee herum: http://www.mediapur.de/foto_rad.html
-
- Fahrplanaenderungen Dezember 2003 bei RE/RB beachten!
-
- alle Brücken aus plaetze => brunnels überführen
- brunnels mit nicht-leeren NAME suchbar machen
-
- S-Bahn: N-S-Tunnel als brunnel markieren
- U-Bahn: Negativliste erstellen, alle Strecke, die nicht enthalten
- sind, sind automatisch als Tunnel markieren. U1 nach Krumme Lanke =
- tunnel.
-
-=back
-
-=head2 Routing (BBBikeRouting.pm, Strassen::StrassenNetz)
+=head1 Routing (BBBikeRouting.pm, Strassen::StrassenNetz)
 
 =over
 
@@ -1221,7 +1234,7 @@ points if delta exceeds 128/128 meters.
 
 =back
 
-=head2 bbbike.cgi
+=head1 bbbike.cgi
 
 =over
 
@@ -1261,7 +1274,7 @@ verwenden, aber die XML-Ausgabe ist als "experimentell" markiert.
 
 =back
 
-=head2 WAP version of bbbike
+=head1 WAP version of bbbike
 
 =over
 
@@ -1274,7 +1287,7 @@ verwenden, aber die XML-Ausgabe ist als "experimentell" markiert.
 
 =back
 
-=head2 tkbabybike
+=head1 tkbabybike
 
 =over
 
@@ -1300,7 +1313,7 @@ leaving the entry.
 
 =back
 
-=head2 Modules (Strassen/ESRI/...)
+=head1 Modules (Strassen/ESRI/...)
 
 =over
 
@@ -1311,7 +1324,19 @@ Only needed if my functions would be too slow one day.
 
 =back
 
-=head2 Distribution/Installation
+=head1 BikePower
+
+=over
+
+=item *
+
+BikePower: Profile laden/speichern, evtl. auch direkt aus bbbike
+sichtbar. Erst einmal das Problem mit dem Komma (Linux, Solaris mit
+LANG gesetzt) lösen.
+
+=back
+
+=head1 Distribution/Installation
 
 =over
 
@@ -1337,7 +1362,7 @@ AbhE<auml>ngigkeit von HAVE_KDE angeben.
 
 =back
 
-=head2 Tests
+=head1 Tests
 
 =over
 
@@ -1353,7 +1378,7 @@ AbhE<auml>ngigkeit von HAVE_KDE angeben.
 
 =back
 
-=head2 Sonstiges
+=head1 Sonstiges
 
 =over
 
