@@ -15,6 +15,7 @@ use lib ("$FindBin::RealBin/..",
 	);
 use Strassen::Core;
 use BBBikeDraw;
+use BBBikeUtil qw(is_in_path);
 use File::Temp qw(tempfile);
 use Getopt::Long;
 
@@ -31,7 +32,7 @@ BEGIN {
 	exit;
     }
 
-    @modules = qw(GD Imager MapServer ImageMagick);
+    @modules = qw(GD GD::SVG Imager MapServer ImageMagick);
 }
 
 # Timings are (on my 466MHz machine) with -slow:
@@ -42,7 +43,7 @@ BEGIN {
 
 plan tests => scalar @modules * 4;
 
-my @drawtypes = "all";
+my @drawtypes = qw(all);
 my $width = 640;
 my $height = 480;
 my $geometry = $width."x".$height;
@@ -78,17 +79,27 @@ sub draw_map {
 
     my $t0 = [gettimeofday];
 
+    my $imagetype = "png";
+    if ($module eq 'GD::SVG') {
+	$module = "GD";
+	$imagetype = "svg";
+    }
+
     my($fh, $filename) = tempfile(UNLINK => 1,
-				  SUFFIX => "-$module.png",
+				  SUFFIX => "-$module.$imagetype",
 				 );
+
     my $draw = new BBBikeDraw
 	NoInit     => 1,
 	Fh         => $fh,
 	Geometry   => $geometry,
 	Draw       => [@drawtypes],
         Scope      => "city",
-        ImageType  => "png",
+        ImageType  => $imagetype,
 	Module     => $module,
+	Startname  => "Start",
+	Zielname   => "Goal",
+	Coords     => ["9222,8787", "8209,8769"],
     ;
     if ($do_slow) {
 	$draw->set_bbox_max(Strassen->new("strassen"));
@@ -98,6 +109,7 @@ sub draw_map {
     $draw->init;
     $draw->create_transpose(-asstring => 1);
     $draw->draw_map if $draw->can("draw_map");
+    $draw->draw_route if $draw->can("draw_route");
     $draw->flush;
     close $fh;
 
@@ -107,13 +119,32 @@ sub draw_map {
     }
 
     if ($display) {
-	system("xv $filename &");
+	if ($imagetype eq 'svg') {
+	    if (is_in_path("mozilla")) {
+		system("mozilla $filename &");
+	    } else {
+		warn "Can't display $filename";
+	    }
+	} else {
+	    if (is_in_path("xv")) {
+		system("xv $filename &");
+	    } elsif (is_in_path("display")) {
+		system("display $filename &");
+	    } else {
+		warn "Can't display $filename";
+	    }
+	}
     }
 
     my $image_info = image_info($filename);
-    ok($image_info->{file_media_type}, "image/png");
+    if ($imagetype eq 'png') {
+	ok($image_info->{file_media_type}, "image/png");
+    } elsif ($imagetype eq 'svg') {
+	ok($image_info->{file_media_type}, "image/svg-xml");
+    }
     ok($image_info->{width}, $width);
     ok($image_info->{height}, $height);
 }
+
 
 __END__
