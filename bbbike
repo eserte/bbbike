@@ -7458,7 +7458,11 @@ sub plot {
     if ($type eq 'str') {
 	plotstr($abk, %args);
     } elsif ($type eq 'p') {
-	plotp($abk, %args);
+	if ($abk eq 'sperre') {
+	    plot_sperre($args{-filename});
+	} else {
+	    plotp($abk, %args);
+	}
     } else {
 	die "Unknown type $type";
     }
@@ -7537,7 +7541,9 @@ sub plotstr {
     my($filename, $str);
     if (!defined $args{-object}) {
 	$filename = $args{-filename} || $args{Filename};
-	if (!defined $filename) {
+	if (defined $filename) {
+	    $str_file{$abk} = $filename;
+	} else {
 	    $filename = ($coord_system eq 'standard'
 			 ? $str_file{$abk}
 			 : "$str_file{$abk}-orig"
@@ -7551,6 +7557,7 @@ sub plotstr {
 	}
     } else {
 	$str = delete $args{-object};
+	delete $str_file{$abk}; # XXX -orig?
     }
 
 
@@ -13281,9 +13288,28 @@ sub load_user_dels {
     _restore_cursor();
 }
 
+sub _save_umask (&) {
+    my $code = shift;
+    my $old_umask;
+    eval {
+	$old_umask = umask;
+    };
+    eval {
+	$code->();
+    };
+    my $err = $@;
+    if (defined $old_umask) {
+	umask $old_umask;
+    }
+    die $err if $err;
+}
+
 sub save_user_dels {
     my $file = shift || "$bbbike_configdir/userdels.bbd";
-    $net->save_user_deletions($file);
+    _save_umask {
+	umask 022;
+	$net->save_user_deletions($file);
+    };
 }
 
 sub restore_user_dels {
@@ -14354,6 +14380,13 @@ sub remove_from_array {
 
 sub destroy_delayed_restack {
     destroy_delayed_sub('restack');
+}
+
+sub fix_stack_order {
+    my($abk) = @_;
+    if (!grep { $_ eq $abk } @normal_stack_order) {
+	push @normal_stack_order, $abk, "$abk-fg";
+    }
 }
 
 sub restack_delayed {

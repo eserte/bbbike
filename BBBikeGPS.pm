@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.5 2003/06/20 20:01:48 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.5 2003/06/20 20:01:48 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -255,19 +255,29 @@ EOF
     {
 	my $f3 = $f2->Frame->pack(-fill => "x", -anchor => "w");
 	$f3->gridColumnconfigure($_, -weight => 1) for (0 .. 1);
-	Tk::grid($f3->Checkbutton(-text => M"Graphen zeichnen",
-				  -variable => \$show_track_graph),
-		 $f3->Checkbutton(-text => M"Geschwindigkeit",
-				  -variable => \$show_track_graph_speed),
+	my @dep;
+	my $update_dep = sub {
+	    for (@dep) {
+		$_->configure(-state => $show_track_graph ? "normal" : "disabled");
+	    }
+	};
+	Tk::grid($f3->Checkbutton
+		 (-text => M"Graphen zeichnen",
+		  -variable => \$show_track_graph,
+		  -command => $update_dep,
+		 ),
+		 $dep[0] = $f3->Checkbutton(-text => M"Geschwindigkeit",
+					    -variable => \$show_track_graph_speed),
 		 -sticky => "w");
 	Tk::grid($f3->Label,
-		 $f3->Checkbutton(-text => M"Höhe",
-				  -variable => \$show_track_graph_alt),
+		 $dep[1] = $f3->Checkbutton(-text => M"Höhe",
+					    -variable => \$show_track_graph_alt),
 		 -sticky => "w");
 	Tk::grid($f3->Label,
-		 $f3->Checkbutton(-text => M"Steigung",
-				  -variable => \$show_track_graph_grade),
+		 $dep[2] = $f3->Checkbutton(-text => M"Steigung",
+					    -variable => \$show_track_graph_grade),
 		 -sticky => "w");
+	$update_dep->();
     }
     $f2->Checkbutton(-text => M"Statistik zeigen",
 		     -variable => \$show_statistics)->pack(-anchor => "w");

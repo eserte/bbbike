@@ -256,7 +256,8 @@ sub parse_accesslog_any_day {
 	$bw = _open_log();
     } else {
 	require File::ReadBackwards;
-	tie *$bw, 'File::ReadBackwards', $logfile or die $!;
+	tie *BW, 'File::ReadBackwards', $logfile or die $!;
+	$bw = \*BW;
 	$is_tied++;
     }
     my $gather = 0;
@@ -273,7 +274,7 @@ sub parse_accesslog_any_day {
 	my(@d) = parse_line($_);
 	push @accesslog_data, @d if @d;
     }
-    untie *$bw if $is_tied;
+    untie *BW if $is_tied;
     draw_accesslog_data();
 }
 

@@ -336,13 +336,6 @@ sub plot_additional_layer {
     $abk;
 }
 
-sub fix_stack_order {
-    my($abk) = @_;
-    if (!grep { $_ eq $abk } @normal_stack_order) {
-	push @normal_stack_order, $abk, "$abk-fg";
-    }
-}
-
 sub additional_layer_dialog {
     my(%args) = @_;
     my $title = delete $args{-title} || M"Straﬂen/Punkte ausw‰hlen";

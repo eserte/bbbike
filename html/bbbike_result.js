@@ -1,4 +1,4 @@
-// $Id: bbbike_result.js,v 1.6 2003/06/23 22:04:48 eserte Exp $
+// $Id: bbbike_result.js,v 1.7 2003/06/23 22:09:37 eserte Exp $
 // (c) 2003 Slaven Rezic. All rights reserved.
 
 function test_temp_blockings_set() {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.23 2003/06/19 22:33:13 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.23 2003/06/19 22:33:13 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -181,6 +181,11 @@ sub make_sperre_1 {
 		$sperre_type{&BLOCKED_ROUTE} = 1;
 	    } elsif ($_ eq 'narrowpassage') {
 		$sperre_type{&BLOCKED_NARROWPASSAGE} = 1;
+	    } elsif ($_ eq 'all') {
+		$sperre_type{$_} = 1
+		    for (BLOCKED_ONEWAY, BLOCKED_ONEWAY_STRICT,
+			 BLOCKED_COMPLETE, BLOCKED_CARRY, BLOCKED_ROUTE,
+			 BLOCKED_NARROWPASSAGE);
 	    } else {
 		$sperre_type{$_} = 1;
 	    }

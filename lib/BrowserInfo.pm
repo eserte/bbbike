@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.34 2003/06/20 18:06:14 eserte Exp $
+# $Id: BrowserInfo.pm,v 1.35 2003/06/23 22:00:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2001 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.35 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, $q) = @_;
@@ -110,6 +110,7 @@ sub set_info {
 			      $q->user_agent('SonyEricssonP800') ||
 			      $q->user_agent('SonyEricssonT68') ||
 			      $q->user_agent('SonyEricssonT300') ||
+			      $q->user_agent('SonyEricssonT610') ||
 			      (defined $ENV{HTTP_ACCEPT} &&
 			       $ENV{HTTP_ACCEPT} =~ /vnd.wap.wml/i &&
 			       $ENV{HTTP_ACCEPT} !~ /text\/html/i)
@@ -149,6 +150,8 @@ sub set_info {
 	$self->{'display_size'} = [101,80];
     } elsif ($q->user_agent('SonyEricssonP800')) {
 	$self->{'display_size'} = [208,320]; # flip open, with flip closed: 208x144
+    } elsif ($q->user_agent('SonyEricssonP610')) {
+	$self->{'display_size'} = [125,95]; # visible screen size
     } elsif ($q->user_agent('TriumEclipse')) { # XXX
 	$self->{'display_size'} = [143,120];
     } elsif ($q->user_agent('SIE-S55')) {
@@ -177,6 +180,7 @@ sub set_info {
 	     Nokia6610 => [128, 128],
 	     Nokia7650 => [176, 208],
 	     Nokia6100 => [128, 90], # XXX ca.
+	     Nokia3650 => [170, 144], # visible size
 	    );
     TRY: {
 	    while(my($k,$v) = each %nokias) {

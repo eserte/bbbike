@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.11 2003/06/17 21:29:17 eserte Exp $
+# $Id: BBBikeRuler.pm,v 1.11 2003/06/17 21:29:17 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -204,17 +204,21 @@ sub motion {
 	    $abstime2 = _hms2sec($abstime2);
 	    $gpsman_track_tag =~ /dist=([\d\.]+).*?time=([\d:]+).*abstime=([\d:]+)/;
 	    my($dist1,$time1,$abstime1) = ($1, $2, $3);
-	    $time1 = _min2sec($time1);
-	    $abstime1 = _hms2sec($abstime1);
-	    if ($abstime2 < $abstime1) { $abstime2 += 86400 }
-	    $message  = "Zeit: " . _fmt_time($time2-$time1) . "; ";
-	    $message .= sprintf "Dist: %.3fkm; ", $dist2-$dist1;
-	    $message .= sprintf "Speed: %.1fkm/h; ", ((($dist2-$dist1)*1000/($time2-$time1))*3.6);
-	    $message .= "Abszeit: " . _fmt_time($abstime2-$abstime1) . "; ";
-	    $message .= sprintf "Absspeed: %.1fkm/h; ", ((($dist2-$dist1)*1000/($abstime2-$abstime1))*3.6);
-	    $message .= sprintf "Luft-Dist: %.3fkm; ", $dist/1000;
-	    $message .= sprintf "Luft-Speed: %.1fkm/h", (($dist/($time2-$time1))*3.6);
-	    $old_message = $message;
+	    if ($time2 != $time1 && $abstime2 != $abstime1) {
+		$time1 = _min2sec($time1);
+		$abstime1 = _hms2sec($abstime1);
+		if ($abstime2 < $abstime1) { $abstime2 += 86400 }
+		$message  = "Zeit: " . _fmt_time($time2-$time1) . "; ";
+		$message .= sprintf "Dist: %.3fkm; ", $dist2-$dist1;
+		$message .= sprintf "Speed: %.1fkm/h; ", ((($dist2-$dist1)*1000/($time2-$time1))*3.6);
+		$message .= "Abszeit: " . _fmt_time($abstime2-$abstime1) . "; ";
+		$message .= sprintf "Absspeed: %.1fkm/h; ", ((($dist2-$dist1)*1000/($abstime2-$abstime1))*3.6);
+		$message .= sprintf "Luft-Dist: %.3fkm; ", $dist/1000;
+		$message .= sprintf "Luft-Speed: %.1fkm/h", (($dist/($time2-$time1))*3.6);
+		$old_message = $message;
+	    } else {
+		$message = "(" . $old_message . ")";
+	    }
 	} else {
 	    $message = "(" . $old_message . ")";
 	}

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.4 2003/06/09 21:45:54 eserte Exp $
+# $Id: wapbbbike.cgi,v 2.4 2003/06/09 21:45:54 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -296,9 +296,11 @@ sub wap_std_header {
     my $self = shift;
     return if $ENV{WAPBBBIKE_FROM_CMDLINE};
     my %args = @_;
+    # Don't be defensive --- better to maintain a list of devices
+    # where caching is crucial...
     print $self->Context->CGI->header(-type => "text/vnd.wap.wml",
-				      -expires => "now",
-				      '-cache-control' => 'no-cache',
+				      #-expires => "now",
+				      #'-cache-control' => 'no-cache',
 				      %args);
 }
 

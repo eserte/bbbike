@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.22 2003/06/19 22:30:51 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.22 2003/06/19 22:30:51 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -186,9 +186,11 @@ sub init_net {
 		       (Strassen => $self->Streets,
 			OnCreate => sub {
 			    if ($context->Algorithm eq 'C-A*-2') {
-				require Strassen::CNetFileDist;
-				Strassen::CNetFile::make_net($_[0]);
-				    $_[0]->make_sperre
+				#require StrassenNetz::CNetFileDist;
+				#StrassenNetz::CNetFile::make_net($_[0]);
+				$_[0]->use_data_format($StrassenNetz::FMT_MMAP);
+				$_[0]->make_net;
+				$_[0]->make_sperre
 					('gesperrt',
 					 Type => ['einbahn', 'sperre',
 						  'wegfuehrung']);

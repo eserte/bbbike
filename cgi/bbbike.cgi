@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.30 2003/06/17 20:58:09 eserte Exp $
+# $Id: bbbike.cgi,v 6.32 2003/06/21 20:21:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -63,7 +63,7 @@ use CGI::Carp; # Nur zum Debuggen verwenden --- manche Web-Server machen bei den
 use BrowserInfo 1.31;
 use strict;
 use vars qw($VERSION $VERBOSE $WAP_URL
-	    $debug $tmp_dir $mapdir_fs $mapdir_url
+	    $debug $tmp_dir $mapdir_fs $mapdir_url $local_route_dir
 	    $bbbike_root $bbbike_images $bbbike_url $bbbike_html
 	    $max_proc $use_miniserver $auto_switch_slow  $use_fcgi
 	    $modperl_lowmem $use_imagemap $create_imagemap $q %persistent
@@ -145,6 +145,15 @@ and htdocs are in seperate directories. Default: false.
 =cut
 
 $use_cgi_bin_layout = 0;
+
+=item $local_route_dir
+
+A directory where local route files are stored. These may be drawn
+with the C<localroutefile> parameter.
+
+=cut
+
+undef $local_route_dir;
 
 =back
 
@@ -636,7 +645,7 @@ use vars qw(@ISA);
 
 } # jetzt beginnt wieder package main
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.32 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -702,32 +711,7 @@ if (!defined $inaccess_str) {
 	$inaccess_str = $i_s->get_hashref;
     }
 }
-if ($use_umland) {
-
-    # Strassen
-    # XXX there should also be a lazy version of Multistrassen
-    my @s = $str;
-    $lstr  = new Strassen "landstrassen"  unless defined $lstr;
-    push @s, $lstr;
-    if ($use_umland_jwd) {
-	$lstr2 = new Strassen "landstrassen2" unless defined $lstr2;
-	push @s, $lstr2;
-    }
-    $multistr = new MultiStrassen @s unless defined $multistr;
-
-    # Orte
-    my @o;
-    $orte = new Strassen "orte" unless defined $orte;
-    push @o, $orte;
-    if ($use_umland_jwd) {
-	$orte2 = new Strassen "orte2" unless defined $orte2;
-	push @o, $orte2;
-    }
-    $multiorte = new MultiStrassen @o unless defined $multiorte;
-
-} else {
-    $multistr = $str;
-}
+get_streets($use_umland);
 
 # Maximale Anzahl der angezeigten Straßen, wenn eine Auswahl im PLZ-Gebiet
 # gezeigt wird.
@@ -943,6 +927,13 @@ while (1) {
     } elsif (defined $q->param('routefile') and
 	     $q->param('routefile') ne "") {
 	draw_route_from_fh($q->param('routefile'));
+    } elsif (defined $q->param('localroutefile') &&
+	     defined $local_route_dir) {
+	(my $local_route_file = $q->param('localroutefile')) =~ s/[^A-Za-z0-9._-]//g;
+	$local_route_file = "$local_route_dir/$local_route_file";
+	open(FH, $local_route_file)
+	    or die "Can't open $local_route_file: $!";
+	draw_route_from_fh(\*FH);
     } elsif (defined $q->param('coords') || defined $q->param('coordssession')) {
 	draw_route(-cache => []);
     } elsif (defined $q->param('create_all_maps')) {
@@ -2235,9 +2226,13 @@ sub make_netz {
     my $lite = shift;
     if (!$net) {
 	$net = new StrassenNetz $multistr;
-	# XXX überprüfen, ob sich der Cache lohnt...
-	# evtl. mit IPC::Shareable arbeiten (Server etc.)
-	$net->make_net(UseCache => 1);
+	if ($search_algorithm eq 'C-A*-2') {
+	    $net->use_data_format($StrassenNetz::FMT_MMAP)
+	} else {
+	    # XXX überprüfen, ob sich der Cache lohnt...
+	    # evtl. mit IPC::Shareable arbeiten (Server etc.)
+	    $net->make_net(UseCache => 1);
+	}
 	if (!$lite) {
 	    $net->make_sperre('gesperrt',
 			      Type => ['einbahn', 'sperre',
@@ -2485,10 +2480,11 @@ sub search_coord {
 
 		if (@custom && $custom_s{$type}) {
 		    if ($type eq 'gesperrt' && $custom_s{$type}) {
-			$net->load_user_deletions
-			    ($custom_s{$type},
-			     -merge => 1,
-			    );
+#			$net->load_user_deletions
+#			    ($custom_s{$type},
+#			     -merge => 1,
+#			    );
+			$net->make_sperre($custom_s{$type}, Type => 'all');
 		    } elsif ($type eq 'handicap' && $custom_s{$type}) {
 			if (!$handicap_s_net) {
 			    warn "No net for handicap defined, ignoring temp_blocking=handicap";
@@ -3870,6 +3866,42 @@ sub detailmap_to_coord {
     get_nearest_crossing_coords($x,$y);
 }
 
+sub get_streets {
+    my($use_umland) = @_;
+    if ($use_umland) {
+
+	# Strassen
+	# XXX there should also be a lazy version of Multistrassen
+	my @s = $str;
+	$lstr  = new Strassen "landstrassen"  unless defined $lstr;
+	push @s, $lstr;
+	if ($use_umland_jwd) {
+	    $lstr2 = new Strassen "landstrassen2" unless defined $lstr2;
+	    push @s, $lstr2;
+	}
+	$multistr = new MultiStrassen @s;
+
+	# Orte
+	my @o;
+	$orte = new Strassen "orte" unless defined $orte;
+	push @o, $orte;
+	if ($use_umland_jwd) {
+	    $orte2 = new Strassen "orte2" unless defined $orte2;
+	    push @o, $orte2;
+	}
+	$multiorte = new MultiStrassen @o;
+
+	undef $crossings;
+	undef $kr;
+	if ($net) {
+	    undef $net;
+	    make_netz();
+	}
+    } else {
+	$multistr = $str;
+    }
+}
+
 sub all_crossings {
     if (scalar keys %$crossings == 0) {
 	$crossings = $multistr->all_crossings(RetType => 'hash',
@@ -3882,11 +3914,6 @@ sub new_kreuzungen {
 	all_crossings();
 	$kr = new Kreuzungen(Hash => $crossings,
 			     Strassen => $multistr);
-	if ($lstr) {
-	    my($lstr_crossings) = $lstr->all_crossings(RetType => 'hash',
-						       UseCache => 1);
-	    $kr->add(Hash => $lstr_crossings);
-	}
 	$kr->make_grid(UseCache => 1);
     }
     $kr;
@@ -3960,6 +3987,16 @@ sub fix_coords {
 	my(@nearest) = $kr->nearest_coord($$varref);
 	if (@nearest) {
 	    $$varref = $nearest[0];
+	} else {
+	    # Try to enlarge search region
+	    get_streets("use_umland");
+	    new_kreuzungen();
+	    @nearest = $kr->nearest_coord($$varref);
+	    if (@nearest) {
+		$$varref = $nearest[0];
+	    } else {
+		warn "Can't find nearest for $$varref. Either try to enlarge search space or add some grids for nearest_coord searching";
+	    }
 	}
     }
     ($startcoord, $viacoord, $zielcoord);
@@ -4400,6 +4437,7 @@ sub draw_route_from_fh {
 	print OUT $_;
     }
     close OUT;
+    close $fh;
 
     require Route;
     Route->VERSION(1.09);

@@ -43,4 +43,9 @@ require Time::Local;
        file  => "strassenfest-karl-marx-str.bbd",
        text  => "Karl-Marx-Straße zwischen Flughafenstraße und Werbellinstraße, Erkstraße zwischen Karl-Marx-Straße und Donaustraße: Straßenfest, Straßen gesperrt. Datum: 21.06.2003, 04.00 Uhr bis 22.06.2003, 24.00 Uhr",
      },
+     { from  => Time::Local::timelocal(reverse(2003-1900,6-1,23,5,0,0)),#27
+       until => Time::Local::timelocal(reverse(2003-1900,6-1,29,5,0,0)),
+       file  => "csd.bbd",
+       text  => "CSD am 28.5.",
+     },
     );

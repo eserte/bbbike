@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.7 2003/05/19 20:24:19 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.8 2003/06/21 15:24:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -136,3 +136,31 @@ sub error_msg {
 }
 
 __END__
+
+=head1 NAME
+
+mapserver_comment.cgi - send comments about mapserver data
+
+=head1 SYNOPSIS
+
+none
+
+=head1 DESCRIPTION
+
+Send comments about mapserver data via email. The receiver is the
+C<$EMAIL> address in L<BBBikeVar>.
+
+=head2 Configuration
+
+To define the mail sending method, define the C<@Mail_Send_open>
+variable in C<bbbike.cgi.config>. The value of this variable is the
+same as the arguments of the C<open> method of L<Mail::Send>. To
+define an SMTP server, use the following:
+
+    @Mail_Send_open = ("smtp", Server => "mail.example.com");
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=cut
