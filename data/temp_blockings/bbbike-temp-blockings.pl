@@ -469,9 +469,9 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'handicap',
      },
      { from  => 1091055057, # 2004-07-29 00:50
-       until => 1094507940, # 2004-09-06 23:59
+       until => 1095112740, # 2004-09-13 23:59
        file  => 'dietzgenstr.bbd',
-       text  => 'Dietzgenstr. (Pankow) Richtung stadteinwärts zwischen Schillerstr. und Uhlandstr. Baustelle, Richtungsfahrbahn komplett gesperrt (bis 04.09.2004) ',
+       text  => 'Dietzgenstr. (Pankow) Richtung stadteinwärts zwischen Schillerstr. und Uhlandstr. Baustelle, Richtungsfahrbahn komplett gesperrt (bis 13.09.2004) ',
        type  => 'gesperrt',
      },
      { from  => 1092240000, # 2004-08-11 18:00
@@ -555,7 +555,7 @@ userdel	q4 9909,18333 10089,18180
 EOF
      },
      { from  => 1093125600, # 2004-08-22 00:00
-       until => 1093125600, # XXX removed! 2004-08-28 00:00
+       until => 1093125600, # 2004-08-28 00:00 removed
        text  => 'L 792; (Groß Schulzendorf-Blankenfelde); OD Blankenfelde, Dorfstr. Straßenbauarbeiten Vollsperrung 23.08.2004-27.08.2004 ',
        type  => 'handicap',
       data  => <<EOF,
@@ -587,7 +587,7 @@ userdel	q4 -12325,-13958 -12177,-13787
 EOF
      },
      { from  => undef, # 
-       until => 1093376850, # 2004-08-26 12:00 XXX früher
+       until => 1093376850, # 2004-08-26 12:00 früher
        text  => 'Bachstraße: In beiden Richtungen Störungen durch Rohrbruch, gesperrt bis Do 12:00 ',
        type  => 'handicap',
       data  => <<EOF,
@@ -697,6 +697,22 @@ EOF
        data  => <<EOF,
 userdel	2 12598,8390 12771,8439
 userdel	2 12771,8439 12925,8494
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Leibnizstraße (Charlottenburg) zwischen Bismarckstr. und Otto-Suhr-Allee in Richtung Kantstr. Baustelle, Fahrtrichtung gesperrt ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 4359,11979 4345,11710
+EOF
+     },
+     { from  => 1094508000, # 2004-09-07 00:00
+       until => 1094853600, # 2004-09-11 00:00
+       text  => 'L 771; (Gröben-Saarmund); Autobahnbrücke südl. Saarmund Brückenabriss u. -neubau Vollsperrung 08.09.2004-10.09.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -8879,-12309 -8457,-11261
 EOF
      },
     );
