@@ -1,0 +1,20 @@
+/* XPM */
+static char *redcross[] = {
+/* columns rows colors chars-per-pixel */
+"11 11 3 1",
+"  c opaque",
+". c red",
+"X c None",
+/* pixels */
+"XX.XXXXX.XX",
+"X...XXX...X",
+".....X.....",
+"X.........X",
+"XX.......XX",
+"XXX.....XXX",
+"XX.......XX",
+"X.........X",
+".....X.....",
+"X...XXX...X",
+"XX.XXXXX.XX"
+};

@@ -1,19 +1,22 @@
 /* XPM */
-static char * usercross_xpm[] = {
+static char *usercross[] = {
+/* columns rows colors chars-per-pixel */
 "16 13 3 1",
-" 	c None",
-".	c #000000",
-"+	c #FF0000",
-"            ..  ",
-"            ..  ",
-"  +     + ......",
-" +++   +++......",
-"+++++ +++++ ..  ",
-" +++++++++  ..  ",
-"  +++++++       ",
-"   +++++        ",
-"  +++++++       ",
-" +++++++++      ",
-"+++++ +++++     ",
-" +++   +++      ",
-"  +     +       "};
+"  c opaque",
+". c red",
+"X c None",
+/* pixels */
+"XXXXXXXXXXXX  XX",
+"XXXXXXXXXXXX  XX",
+"XX.XXXXX.X      ",
+"X...XXX...      ",
+".....X.....X  XX",
+"X.........XX  XX",
+"XX.......XXXXXXX",
+"XXX.....XXXXXXXX",
+"XX.......XXXXXXX",
+"X.........XXXXXX",
+".....X.....XXXXX",
+"X...XXX...XXXXXX",
+"XX.XXXXX.XXXXXXX"
+};
