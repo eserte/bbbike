@@ -149,6 +149,12 @@ The next block is part of a named section. Sections may be nested.
 Useful for preprocessing bbd data files to add a comment to each
 record in the block.
 
+=item C<attributes: I<attribute>, ...>
+
+Define additional attributes for the following line or block. The
+attributes may be used in a preprocessing script to generate
+additional layers.
+
 =back
 
 =head2 Comment lines

@@ -113,6 +113,9 @@ my $data_from_bbd_file;
 my $strict;
 my $keep_comment;
 my $keep_prefixed;
+my $keep_point_attrib;
+my $keep_everything;
+my $base_file;
 if (!GetOptions("bahnhof=s"        => \$bahnhof,
 		"specborder=s"     => \$specborder,
 		"specsperre=s"     => \$specsperre,
@@ -129,8 +132,15 @@ if (!GetOptions("bahnhof=s"        => \$bahnhof,
 		"strict!"          => \$strict,
 		"keepcomment!"	   => \$keep_comment,
 		"keepprefixed!"    => \$keep_prefixed,
+		"keeppointattrib!" => \$keep_point_attrib,
+		"keepeverything!"  => \$keep_everything,
+		"basefile=s"       => \$base_file,
 	       )) {
     usage("Wrong option");
+}
+
+if ($keep_everything) {
+    $keep_comment = $keep_prefixed = $keep_point_attrib = 1;
 }
 
 if (defined $data_from_file) {
@@ -149,6 +159,9 @@ if ($f eq '-') {
 if (!defined $use_map) {
     my $f_dir  = dirname($f);
     my $f_base = basename($f);
+    if ($base_file) {
+	$f_base = $base_file;
+    }
     my $BASE   = "$f_dir/BASE";
     if (!open(BASE, $BASE)) {
 	die "-map is not set and $BASE could not be read";
@@ -293,7 +306,7 @@ LINES: while(defined($_ = nextline())) {
     }
     my $cat = shift @coord;
 
-    if ($cat eq 'St;') {
+    if ($cat eq 'St;' && !$keep_everything) {
 	# Steigungen: automatische Erzeugung der Gegenrichtung
 	# "Steigung" durch "Gefälle" ersetzen
 	require Strassen::Core;
@@ -389,6 +402,9 @@ LINES: while(defined($_ = nextline())) {
 				    : ($oldx, $oldy))));
 	}
 	$coords .= " " if $coords ne '';
+	if ($keep_point_attrib && $spec) {
+	    $coords .= ":$spec:";
+	}
 	$coords .= Route::_coord_as_string([$newx,$newy]);
 	if ($bahnhof && $spec) {
 	    $spec =~ s/_/ /g;
@@ -417,7 +433,7 @@ LINES: while(defined($_ = nextline())) {
 		    print
 		      SPEC "Berlin\tZ " . join(" ", @specborder_list) . "\n";
 		    $specborder_flag = 0;
-		    undef @specborder_list;
+		    @specborder_list = ();
 		} elsif ($spec ne 'B_ON') {
 		    die "Unknown specifier $spec in $name";
 		}
@@ -517,8 +533,12 @@ sub gismap2hafas {
 sub do_ampelschaltung {
     open(F, $f) or die "$f? $!";
     while(<F>) {
-	next if /^\#/;
 	chomp;
+	if ($keep_comment && /^#/) {
+	    print "$_\n";
+	    next;
+	}
+	next if /^\#/;
 	my($c, $r) = split(/\t/, $_, 2);
 	my($x, $y) = split(/,/, $c);
 	my($newx, $newy) = berlinmap2hafas($x, $y);
@@ -531,8 +551,12 @@ sub do_ampelschaltung2 {
     require Text::Tabs;
     open(F, $f) or die "$f? $!";
     while(<F>) {
-	next if /^\#/;
 	chomp;
+	if ($keep_comment && /^#/) {
+	    print "$_\n";
+	    next;
+	}
+	next if /^\#/;
 	if (/^(\d+),(\d+)/) {
 	    my($x, $y) = ($1, $2);
 	    my($newx, $newy) = berlinmap2hafas($x, $y);

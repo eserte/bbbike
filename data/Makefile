@@ -1,9 +1,10 @@
 #
-# $Id: Makefile,v 1.96 2004/03/28 18:04:13 eserte Exp eserte $
+# $Id: Makefile,v 2.1 2004/03/29 21:40:57 eserte Exp eserte $
 #
 
-MISCDIR=		../misc
-MISCSRCDIR=		../miscsrc
+BBBIKEDIR=		..
+MISCDIR=		$(BBBIKEDIR)/misc
+MISCSRCDIR=		$(BBBIKEDIR)/miscsrc
 
 #XXX del:
 #BERLINMAP2HAFAS=	${MISCSRCDIR}/berlinmap2hafas -strict
@@ -66,8 +67,60 @@ strassen:	.strassen.tmp plaetze
 	cat $> > $@
 	-@$(READONLY) $@
 
+#XXX vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# XXX ampelschaltung, ampelschaltung.txt and fragezeichen are wrong converted
+# in the 2nd origconvert-all step. Probably best to put these files into BASE.
+# XXX B_ON/OFF is not preserved in plz-orig
+# XXX radwege und radwege_exact angucken
+ORIGCONVERTDIR=/tmp/convert
+TARGETS2=$(TARGETS:Nampelschaltung:Nrbahn:Nrbahnhof:Nradwege_exact:Nmount:Nberlin:S/$/-orig/)
+TARGETS3=$(TARGETS2:S/^/$(ORIGCONVERTDIR)\//)
+
+origconvert:	$(ORIGCONVERTDIR) $(TARGETS3) \
+		$(ORIGCONVERTDIR)/rbahn-orig \
+		$(ORIGCONVERTDIR)/plz-orig \
+		$(ORIGCONVERTDIR)/fragezeichen-orig \
+		$(ORIGCONVERTDIR)/ampelschaltung-orig \
+		$(ORIGCONVERTDIR)/ampelschaltung-orig.txt
+
+origconvert-all:
+	cd $(ORIGCONVERTDIR) && make BBBIKEDIR=${.CURDIR}/..
+
+
+.PHONY: $(ORIGCONVERTDIR)
+
+$(ORIGCONVERTDIR):
+	if [ ! -d $(ORIGCONVERTDIR) ] ; then \
+	    mkdir $(ORIGCONVERTDIR); \
+	fi
+	cp -f Makefile $(ORIGCONVERTDIR)
+	cp -f Makefile.mapfiles $(ORIGCONVERTDIR)
+	perl -pe 's/\t+./\tH/' < BASE > $(ORIGCONVERTDIR)/BASE
+
+.for f in $(TARGETS2)
+$(ORIGCONVERTDIR)/$f:	$f
+	$(CONVERT2HAFAS) -keepeverything $f > $(ORIGCONVERTDIR)/$f
+.endfor
+
+$(ORIGCONVERTDIR)/rbahn-orig: rbahn-orig
+	$(CONVERT2HAFAS) -keepeverything rbahn-orig > $(ORIGCONVERTDIR)/rbahn-orig
+
+$(ORIGCONVERTDIR)/plz-orig: plz-orig
+	$(CONVERT2HAFAS) -keepeverything plz-orig > $(ORIGCONVERTDIR)/plz-orig
+
+$(ORIGCONVERTDIR)/fragezeichen-orig: ../misc/fragezeichen-orig
+	$(CONVERT2HAFAS) -keepeverything ../misc/fragezeichen-orig > $(ORIGCONVERTDIR)/fragezeichen-orig
+
+$(ORIGCONVERTDIR)/ampelschaltung-orig: ampelschaltung-orig
+	$(CONVERT2HAFAS) -ampelschaltung -keepeverything ampelschaltung-orig > $(ORIGCONVERTDIR)/ampelschaltung-orig
+
+$(ORIGCONVERTDIR)/ampelschaltung-orig.txt: ../misc/ampelschaltung-orig.txt
+	$(CONVERT2HAFAS) -ampelschaltung2 -keepeverything ../misc/ampelschaltung-orig.txt > $(ORIGCONVERTDIR)/ampelschaltung-orig.txt
+
 #strassen-orig:	oldcoord/strassen-orig
-#	$(CONVERT2HAFAS) -frommap B -keepcomment $> > $@
+#	$(CONVERT2HAFAS) -frommap B -keepeverything $> > $@
+
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .strassen.tmp: strassen-orig
 	$(CONVERT2HAFAS) strassen-orig > .strassen.tmp
@@ -266,49 +319,49 @@ vorfahrt:	vorfahrt-orig
 
 comments_cyclepath: comments_cyclepath-orig
 	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -map B - | \
+	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
 	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
 	-@$(READONLY) $@
 
 comments_ferry: comments_ferry-orig
 	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -map B - | \
+	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
 	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
 	-@$(READONLY) $@
 
 comments_misc: comments_misc-orig
 	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -map B - | \
+	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
 	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
 	-@$(READONLY) $@
 
 comments_mount: comments_mount-orig
 	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -map B - | \
+	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
 	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
 	-@$(READONLY) $@
 
 comments_path: comments_path-orig
 	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -map B - | \
+	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
 	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
 	-@$(READONLY) $@
 
 comments_route: comments_route-orig
 	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -map B - | \
+	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
 	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
 	-@$(READONLY) $@
 
 comments_tram: comments_tram-orig
 	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -map B - | \
+	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
 	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
 	-@$(READONLY) $@
 
 comments_kfzverkehr: comments_kfzverkehr-orig
 	-@$(WRITEABLE) $@
-	cat $> | $(CONVERT2HAFAS) -map B - | \
+	cat $> | $(CONVERT2HAFAS) -basefile $> - | \
 	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
 	-@$(READONLY) $@
 
