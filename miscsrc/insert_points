@@ -149,6 +149,7 @@ sub process {
 	    ($from) = @ARGV;
 	}
     }
+    warn "from=$from middle=$middle to=$to new_to=$new_to\n" if $verbose;
 
     if (!defined $from   or $from   !~ /\d+,.*\d+$/
 	or
@@ -317,7 +318,14 @@ sub process {
 			      ); # XXX right? ''; # XXX
 	    my $map_from = "$map_char_rx$from";
 	    my $map_to   = "$map_char_rx$to" if defined $to;
-	    open(F, $file) or die "Can't open $file: $!";
+	    open(F, $file) or do {
+		if (0 && $file =~ /(relation_gps|comments_)/) { # XXX for debugging without -orig files only...
+		    warn "Can't open $file: $!, skipping...";
+		    next;
+		} else {
+		    die "Can't open $file: $!";
+		}
+	    };
 	    warn "Read $file...\n" if $verbose;
 	    my(@data) = <F>;
 	    close F;
@@ -465,6 +473,7 @@ sub process {
     if ($ans =~ /^j/) {
 	for(my $type = 0; $type <= $#check_files; $type++) {
 	    foreach my $file (@{$change_files[$type]}) {
+		# XXX not used, del?
 		my $map_char = (($file2base{$file}||'') eq $current_coordsys ? '' : $current_coordsys);
 		my $map_char_rx = ($operation =~ /^(insert|changeline)$/
 				   ? ($current_coordsys ne ''
