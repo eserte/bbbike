@@ -121,7 +121,7 @@ sub process {
     $tempblockingdir = "$bbbikerootdir/data/temp_blockings" if !defined $tempblockingdir; # XXX was misc
 
     if ($custom_file_list) {
-	open(F, $custom_file_list) or die $!;
+	open(F, $custom_file_list) or die "Can't open $custom_file_list: $!";
 	while(<F>) {
 	    chomp;
 	    my $f = $_;
