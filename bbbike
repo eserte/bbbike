@@ -9675,7 +9675,17 @@ sub choose_from_plz {
     }
 
     require PLZ;
-    my $plz = new PLZ;
+    my $plz;
+    if (1) { # XXX
+	require PLZ::Multi;
+	$plz = PLZ::Multi->new("Berlin.coords.data",
+			       "Potsdam.coords.data",
+			       Strassen->new("plaetze"), # XXX why?
+			       -cache => 1,
+			      );
+    } else {
+	$plz = new PLZ;
+    }
     if (!$plz) {
 	$plzmcmd->configure(-state => 'disabled');
 	status_message(M"Keine PLZ-Datenbank vorhanden!", 'err');
