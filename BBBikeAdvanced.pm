@@ -160,6 +160,10 @@ sub custom_draw {
 		   ? [M"ARC/DCW/E00-Dateien", ['.e00','.E00']]
 		   : ()
 		  ),
+		  ($linetype eq 'p'
+		   ? [M"Gpsman-Waypoints", ['.wpt']]
+		   : [M"Gpsman-Tracks oder -Routen", ['.trk', '.rte']]
+		  ),
 		  [M"Alle Dateien", '*'],
 		 ],
 		 (defined $file ? (-initialdir => $file =~ m{/$} ? $file : File::Basename::dirname($file)) : ()),

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.20 2004/11/27 12:26:28 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.20 2004/11/27 12:26:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -142,14 +142,14 @@ sub add_button {
 # 		   BBBikeEdit::editmenu($main::top);
 # 		   main::plot('str','fz', -draw => 1);
 # 	       }],
-	      [Button => "Standard upload all",
-	       -command => sub { make_gps_target("upload") },
+	      [Button => "Standard download all",
+	       -command => sub { make_gps_target("download") },
 	      ],
-	      [Button => "Standard upload trk only",
-	       -command => sub { make_gps_target("upload-trk") },
+	      [Button => "Standard download trk only",
+	       -command => sub { make_gps_target("download-trk") },
 	      ],
-	      [Button => "Standard upload wpt only",
-	       -command => sub { make_gps_target("upload-wpt") },
+	      [Button => "Standard download wpt only",
+	       -command => sub { make_gps_target("download-wpt") },
 	      ],
 	      [Button => "Update tracks and matches.bbd",
 	       -command => sub { make_gps_target("tracks develtracks ../../tmp/unique-matches.bbd") },

@@ -1,4 +1,4 @@
-# $Id: comments_path-orig,v 4.7 2005/01/08 22:53:08 eserte Exp $
+# $Id: comments_path-orig,v 4.7 2005/01/08 22:53:08 eserte Exp eserte $
 # CP; : Kommentar an Punkt B bei Fahrt von A nach C
 # CP  : wie "CP;", Kommentar gültig für beide Fahrtrichtungen
 # CS; : Kommentar gültig für Strecke in einer Richtung
@@ -10,7 +10,6 @@
 #
 # Path instructions etc.
 #
-vor der Columbiahalle: häufig Glasscherben auf dem Radweg	CS 9801,8683 9373,8728
 Seesener Str.: Zufahrt führt über den Henriettenplatz	CS; 2770,9945 2770,10024
 Rasthof Avus: zweite Möglichkeit nach rechts	CS; 1957,10426 1894,10390
 bereits bei der Fußgängerampel am Lützowplatz die Straßenseite wechseln	PI; 6824,10904 6873,11011 6732,11106

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.49 2004/12/06 20:34:50 eserte Exp $
+# $Id: Core.pm,v 1.49 2004/12/06 20:34:50 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -104,6 +104,11 @@ sub new {
 	}
 	close DCWTOBBD;
 	$filename = $tmpfile;
+    }
+    if (defined $filename &&
+	$filename =~ /\.(wpt|trk|rte)$/) {
+	require Strassen::Gpsman;
+	return Strassen::Gpsman->new($filename, %args);
     }
 
     my(@filenames);

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.39 2005/01/08 22:56:00 eserte Exp $
+# $Id: Makefile,v 2.39 2005/01/08 22:56:00 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -517,9 +517,11 @@ ${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt:	fragezeichen Makefile
 	    -symbol danger > $@
 	@echo gpsman with file $@
 
+# The both bboxes are: Potsdam and central Berlin (Mitte,
+# Friedrichshain, Kreuzberg)
 ${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt:	fragezeichen Makefile
 	${MAKE} /tmp/upload-restricted-fragezeichen.wpt \
-	    RESTRICT_BBOX="-8250,2025,-15000,-2675 16500,15375,4625,8125"
+	    RESTRICT_BBOX="-8250,2025,-15000,-2675 16500,15375,4625,5984"
 	cp -pf /tmp/upload-restricted-fragezeichen.wpt $@
 
 temp_blockings/bbbike-temp-blockings-optimized.pl:	temp_blockings/bbbike-temp-blockings.pl .check_bbbike-temp-blockings-optimized

@@ -120,14 +120,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Aufgrund eines Motorschaden ist der Fährverkehr zwischen Ketzin und Schmergow bis auf weiteres eingestellt ',
-         'from' => undef,
-         'data' => 'userdel	2 -26784,5756 -26840,5684
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1105830000,
