@@ -5,7 +5,7 @@ Rungiusstr: Kopfsteinpflaster?	? 13027,6168 13116,5689 13158,5490
 Neubau der Späthstr.: ist die neue Verkehrsführung schon aktiv?	?? 14025,5319 14340,5393 14720,5490 14861,5449 14994,5193
 Jägerndorfer Zeile abfahren	? 2751,3665 2640,3391 2207,2917 2119,2790
 Abkürzung Weißwasserweg	? 2639,2989 2229,2898 2119,2790
-Europarc Dreilingen: Wege abfahren	? -1549,1421 -6147,-1125
+Europarc Dreilingen: Wege abfahren; wenigstens Teerofendamm ist asphaltiert 	? -1549,1421 -6147,-1125
 Arkenberge: irgendwo ist eine Sackgasse für Autos	? 10402,26369 10318,26399 10203,26387 10120,26363
 Spreeuferweg: bereits fertiggestellt?	?::inwork 7973,12868 7791,12706 7541,12582 7360,12430 7217,12383 7054,12414
 Neuendorf (Nl) wird ab 2002-08-18 geschlossen; neu: 'Cottbus-Willmersdorf Nord' und 'Teichland'. Grund: Umverlegung der Trasse (betr. RE1 und RE18)	?? 80691,-66664 80603,-64961 81213,-63504 82460,-63229
@@ -43,7 +43,7 @@ Wasgenstr./Am Rohrgarten: Qualität?	? -2592,3122 -2481,2887 -2305,2158 -2127,176
 Wolliner Str.: Alternative für Kopfsteinpflaster auf der Swinemünder?	? 10405,14425 10320,14608 10176,14896 10022,15203
 Kleinziethen - Lichtenrade (Pechsteinstr.): befahrbare Verbindung, Qualität?	? 13457,-2796 12229,-2273
 Mauerweg Lichtenrade - Lichterfelde: befahrbar, Qualität?	? 10291,-3193 9560,-3155 9471,-2138 8334,-2101 8384,-1581 7115,-599 6172,306 4400,-913
-Mauerweg Lichterfelde: befahrbar (insbesondere am zukünftigen Fernbahndamm), Qualität?	?? 4400,-913 3941,-279 3423,497
+Mauerweg Lichterfelde: befahrbar (insbesondere am zukünftigen Fernbahndamm --- zurzeit wird dort gebaut und die zukuenftige Unterfuehrung sieht noch gesperrt aus), Qualität?	?? 4400,-913 3941,-279 3423,497
 Mauerweg Teltow: befahrbar, Qualität?	? 3423,497 3238,770 2065,-316 1480,-458
 Mauerweg Schönow: befahrbar, Qualität?	? 277,-1 135,-29 118,407 -2,1105
 Str. 19 (Am Nordgraben): Qualität? (westl. Seite: mäßiger Feldweg)	? 10228,21940 11008,21725 11183,21598 11345,21360 11733,21134
@@ -95,7 +95,7 @@ Fähre Liepnitzsee zum Großen Werder: wo genau?	? 16050,38181 16455,37790
 Prenden - Sophienstädt - Marienwerder: Hier ist Loblo langgefahren: Qualität?	? 20114,42825 20374,43076 20396,43307 20955,43367 21496,43924 22253,44600 22923,45477 23062,46171 22746,46867 22758,47772 23002,48254 22897,48799
 Hertelstr.: Einbahnstraße Richtung Osten?	? 4787,6899 5046,6903
 Name der Promenade?	? 8724,8021 8616,8018
-Sputendorfer Str.: laut http://home.arcor.de/hoge-online/std_tlw/std_tlw00.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2049,-2144 -1856,-2336 -1831,-4065
+Sputendorfer Str.: laut http://www.bsisb.de/s_teltow/s_teltow03.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2049,-2144 -1856,-2336 -1831,-4065
 Spandau: Kurstr. - Galenstr. - Am Bahnhof Spandau - etc.: sieht als Umfahrunf für Altstädter Ring etc. gut aus. Qualität, etc?	? -2962,15645 -3058,15341 -3195,15134 -3231,15096 -3453,14815 -3610,14594 -3700,14469 -3752,14369 -3805,14138 -3844,13928 -3904,13944 -3971,13755 -4006,13478 -3986,13367
 # http://www.agenda21berlin.de/vonwegen/map_tmpvelo.htm
 Tempelhofer Veloroutenpläne: Neue Straße - Blumenthalstr.: Qualität etc.	? 9028,6962 9040,6656 8942,6637 8956,6489 9025,6355 8990,5950
@@ -255,3 +255,7 @@ Joachimsthal - B198: Qualität unbekannt, Teil der Route Berlin-Usedom?	? 32533,6
 Wallmow - Grünberg: wie geht es hier weiter?	? 55550,105487 57224,106265
 Ernst-Thälmann-Str. in Fürstenwalde umbenannt in Eisenbahnstr.?	? 55393,-4240 55374,-3621
 Verbindung nach Seeberg?	? 28575,16318 28775,16193 29456,16337
+war hier nicht ein Radweg auf der westl. Seite?	? 26583,-15677 26444,-16935
+hier war frueher nur maessiger Asphalt --- renoviert?	? 24250,-12071 23633,-12005 23271,-12068
+Kremnitzufer aufnehmen (asphaltiert, siehe GPS-Track)	? -7050,-1237 -6996,-1359 -6846,-1287 -6371,-1400 -5984,-1387 -5790,-1368
+Stolper Weg ist asphaltiert	? -4925,-821 -4496,-700
