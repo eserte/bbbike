@@ -15473,9 +15473,9 @@ sub set_fonts {
 
         my %normal_attr = $top->fontActual($font{'normal'});
 
-        my $pt = $normal_attr{'-size'};
+        my $pt = $normal_attr{'-size'}; # points or pixels depending on Tk ver
 	my $win_width = @want_extends ? $want_extends[GEOMETRY_WIDTH] : $top->width;
-	if ($win_width <= 800 && $pt >= 10 && !$font_size_from_user) {
+	if ($win_width <= 800 && abs($pt) >= 10 && !$font_size_from_user) {
 ## XXX This is evil: because the fontsize will be from time to time smaller
 ## if the use resizes below the limits and then above the limits.
 ## On the other side, this will result in too big fonts on small
@@ -15528,7 +15528,7 @@ sub set_fonts {
 			    -slant => 'roman',
 			    -underline => 0,
 			    -overstrike => 0);
-	if ($pt >= 8) {
+	if (abs($pt) >= 8) {
 	    $font{'fixed'}
 		= sprintf("-*-$fixed_font_family-medium-r-normal--*-%d-*-*-m-*-iso8859-1", $pt*10);
 	} else {
