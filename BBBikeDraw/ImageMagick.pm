@@ -19,7 +19,10 @@ use Strassen;
 use Image::Magick;
 use VectorUtil;
 use vars qw($DEBUG);
-eval 'use VectorUtil::InlineDist'; warn $@ if $DEBUG && $@;
+eval 'local $SIG{__DIE__};
+      require VectorUtil::InlineDist;
+      VectorUtil::InlineDist->import;
+     '; warn $@ if $DEBUG && $@;
 
 # Strassen benutzt FindBin benutzt Carp, also brauchen wir hier nicht zu
 # sparen:
