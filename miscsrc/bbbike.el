@@ -31,8 +31,9 @@
 		(while rev-rx-list
 		  (setq rev-rx (concat rev-rx " " (pop rev-rx-list))))
 		(setq rx (concat "\\(" rx "\\|" rev-rx "\\)"))
-		(message rx)
-		))
+		)
+	    (setq rx (concat "\\(" rx "\\)")))
+	  (message rx)
 	  (while (not (eq search-state 'found))
 	    (if (eq search-state 'again)
 		(goto-char (point-min)))

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.34 2004/12/11 00:01:05 eserte Exp $
+# $Id: Makefile,v 2.34 2004/12/11 00:01:05 eserte Exp eserte $
 #
 
 BBBIKEDIR=		..
@@ -107,6 +107,7 @@ inaccessible_landstrassen: strassen landstrassen landstrassen2 gesperrt
 strassen:	.strassen.tmp plaetze
 	-@$(WRITEABLE) $@
 	cat $> > $@
+	-rm -f strassen-cooked
 	-@$(READONLY) $@
 
 .strassen.tmp: strassen-orig
@@ -168,6 +169,7 @@ landstrassen: landstrassen-orig
 	$(CONVERT2HAFAS) landstrassen-orig > $@~
 	cp $@~ $@
 	rm $@~
+	-rm -f landstrassen-cooked
 	-@$(READONLY) $@
 
 landstrassen2: landstrassen2-orig
@@ -175,6 +177,7 @@ landstrassen2: landstrassen2-orig
 	$(CONVERT2HAFAS) landstrassen2-orig > $@~
 	cp $@~ $@
 	rm $@~
+	-rm -f landstrassen2-cooked
 	-@$(READONLY) $@
 
 # Get categories with:

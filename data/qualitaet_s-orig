@@ -225,7 +225,7 @@ Auguste-Viktoria-Str.: Kopfsteinpflaster	Q2 2690,8814 2668,8372
 Hüttenweg: Kopfsteinpflaster	Q1 1585,5136 1964,5070
 Wuhlheide: fester Waldweg, bei Trockenheit etwas sandig	Q2 20887,7267 20858,7143 21576,6644
 Wuhlheide: Waldweg	Q2 21378,5843 22012,6219
-Mittelweg: Kopfsteinpflaster	Q2 12923,7611 12781,7691 12644,7688 12516,7718
+Mittelweg: Kopfsteinpflaster	Q2 12923,7611 12781,7691 12697,7689 12644,7688 12516,7718
 Mittelweg: Kopfsteinpflaster	Q3 12182,7824 12335,7770
 Karl-Marx-Platz/Richardplatz: Kopfsteinpflaster	Q2 12980,7597 13177,7644 13297,7654 13429,7689
 Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622 13400,7642 13432,7649 13429,7689
@@ -490,7 +490,7 @@ Kieler Str. (Mitte): Kopfsteinpflaster	Q2 8054,14257 7968,14190
 Kruppstr.: Kopfsteinpflaster	Q2 7351,14120 6833,13837
 Weg 7: Kopfsteinpflaster	Q2 17039,7685 17297,7752 17527,7812
 Futranplatz: Kopfsteinpflaster	Q2 22377,4836 22439,4838
-Schierker Str.: Kopfsteinpflaster	Q2 12259,7164 12421,7197 12613,7236 12722,7261 13013,7329 13032,7334
+Schierker Str.: Kopfsteinpflaster	Q2 12259,7164 12421,7197 12613,7236 12722,7261 12843,7290 12908,7305 13013,7329 13032,7334
 Hönower Weg: mäßiger Asphalt	Q1; 16899,9848 16984,9857 17378,9715
 Splanemannstr.: mäßiger Asphalt mit Schlaglöchern	Q2 18403,10077 18408,10041 18389,9925
 Wuhlewanderweg: teilweise fester Kies, etwas sandig	Q2 21351,9066 21280,8954 21210,8898 21181,8766 21185,8483 21276,8374 21348,8254
@@ -1021,6 +1021,12 @@ Große Querallee: Parkweg	Q1 7875,12363 7816,12150
 Werrastr.: sehr gutes Kopfsteinpflaster	Q1 13648,8321 13566,8386 13469,8462
 Rungestr.: Kopfsteinpflaster	Q2 11197,11882 11283,11876 11378,11856 11506,11851
 Wassergasse: Kopfsteinpflaster	Q2 11022,11782 11034,11895
+Warthestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 11616,7089 11853,7133 12244,7205
+Altenbraker Str.: Kopfsteinpflaster	Q2 12367,7429 12396,7312 12421,7197 12465,7051 12477,6975
+Selkestr.: Kopfsteinpflaster	Q2 12751,7109 12722,7261
+Wittmannsdorfer Str.: mäßiges bis gutes Kopfsteinpflaster	Q2 12908,7305 12878,7415
+Rübelandstr.: Kopfsteinpflaster	Q2 12843,7290 12859,7215
+Bornsdorfer Str.: mäßiges bis gutes Kopfsteinpflaster	Q2 12697,7689 12775,7725 12740,7884 12679,7996 12668,8077
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -1246,7 +1252,12 @@ Nordendstr.: Asphalt	Q0 10026,20576 9174,20316 8409,19956 8415,19910
 Oldenburger Str.: schlechtes Kopfsteinpflaster, "Moabiter Kissen"	Q3 5723,13346 5748,13748 5778,14078
 #: by: Sebastian Kröger
 Anton-Saefkow-Str.: Asphalt	Q0 12536,14827 12885,14616 13202,14388
-#: by: Katha
+#: by: Katha vvv
 Julierstr.: Beton	Q1 6376,17687 6268,17709
+Septimerstr.: Beton	Q0 5854,17530 5931,17609 6243,17603 6274,17403
+Winterthurstr.: Beton	Q0 6243,17603 6268,17709 6279,17753 6297,17821
+#: add_fragezeichen: die ADFC-Karte sagt hier aber "gut geeignet"
+Zermatter Str.: Kopfsteinpflaster, schlechte Straße	Q2 6512,17696 6653,17696 6761,17741 6859,17753
+#: by: ^^^
 #: by: Carsten
 Am Iderfenngraben: schlechtes Kopfsteinpflaster	Q3 8623,19353 8653,19431 9015,19606 9408,19707 9578,19759

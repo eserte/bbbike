@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.94 2004/12/06 20:40:02 eserte Exp $
+# $Id: bbbike.cgi,v 6.94 2004/12/06 20:40:02 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -4167,8 +4167,8 @@ sub get_streets {
 	     ($scope eq 'wideregion' ? "landstrassen2" : ()),
 	    );
 
- LOAD_STREETS:
     local $use_cooked_street_data = $use_cooked_street_data;
+ LOAD_STREETS:
     if ($use_cooked_street_data) {
 	@f = map { "$_-cooked" } @f;
     }
