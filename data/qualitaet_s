@@ -60,13 +60,13 @@ Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11787 13655,11727
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13303,11791 13467,11787
 Kaskelstr.: mäßiges Kopfsteinpflaster	Q2 15339,11123 15495,11060 15569,11029 15738,10962
 Spittastr.: mäßiges Kopfsteinpflaster	Q2 15433,10871 15495,11060 15562,11234
-Geusenstr.: mäßiges Kopfsteinpflaster	Q2 15569,11029 15519,10883
+Geusenstr.: mäßiges Kopfsteinpflaster	Q2 15569,11029 15539,10940 15519,10883
 Türrschmidtstr.: mäßiges Kopfsteinpflaster	Q2 15267,10865 15433,10871 15519,10883 15628,10915 15738,10962
 Giselastr.: mäßiges Kopfsteinpflaster	Q2 16345,11328 16262,11116 16218,10994
 Zobtener Str.: teils sandiger und holpriger Fahrweg	Q3 16525,10118 16157,10342 15751,10582
 Zobtener Str.: sandig	Q2 16734,9990 16811,9937
 Wielandstr.: schlechtes Kopfsteinpflaster	Q3 23171,8835 23003,8582
-Fischerstr.: Kopfsteinpflaster	Q2 16032,10842 16280,10428
+Fischerstr.: Kopfsteinpflaster	Q2 16032,10842 16187,10587
 Wallensteinstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 17378,9715 17360,9629 17456,9594 17549,9529 18037,9195 18120,9100 18124,9056
 Halker Zeile: schlechtes Kopfsteinpflaster	Q3 9940,559 10161,3 10273,-301 10467,-822
 (Am Bahndamm): schlechtes Pflaster, teilweise grober Schotter	Q2 18698,9996 19675,10410 19711,10426
@@ -172,7 +172,7 @@ Ostpreußendamm.: gutes Kopfsteinpflaster	Q1 3450,543 3579,627 3626,699 3647,739 
 Alexandrinenstr.: Kopfsteinpflaster	Q2 10678,11172 10586,11116
 Schulzendorfer Str.: (schlechtes?) Kopfsteinpflaster	Q2 -596,23009 -862,22946 -1484,22799
 Bellermannstr.: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1 9170,16324 9413,16085
-Swinemünder Str.: teilweise Kopfsteinpflaster	Q2 10094,14847 10189,14649
+Swinemünder Str.: teilweise Kopfsteinpflaster	Q2 10094,14847 10155,14719 10189,14649
 Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10315,14386
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9734,15579 9652,15738
 Fürstenberger Str.: Kopfsteinpflaster	Q2 10320,14608 10474,14633
@@ -463,7 +463,8 @@ Kruppstr.: Kopfsteinpflaster	Q2 7351,14120 6833,13837
 Weg 7: Kopfsteinpflaster	Q2 17039,7685 17297,7752 17527,7812
 Futranplatz: Kopfsteinpflaster	Q2 22377,4836 22439,4838
 Schierker Str.: Kopfsteinpflaster	Q2 12259,7164 12613,7236 12722,7261 13013,7329 13032,7334
-Hönower Weg: mäßiger Asphalt	Q1 16899,9848 16984,9857 17378,9715
+Hönower Weg: mäßiger Asphalt	Q1; 16899,9848 16984,9857 17378,9715
+Splanemannstr.: mäßiger Asphalt mit Schlaglöchern	Q2 18403,10077 18408,10041 18389,9925
 Wuhlewanderweg: teilweise fester Kies, etwas sandig	Q2 21351,9066 21280,8954 21210,8898 21181,8766 21185,8483 21276,8374 21348,8254
 Wuhlewanderweg: Parkweg	Q1 21348,8254 21568,8052 21598,7922 21587,7865 21547,7780 21546,7635
 Wuhlewanderweg: guter Asphalt	Q0 21592,7643 21590,7414 21569,7273 21609,7202 21897,6952 21976,6848 22054,6622
@@ -905,6 +906,7 @@ Schinkestr.: Kopfsteinpflaster	Q2 11623,9841 11734,9856 11880,9874
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): asphaltierer Radweg	Q0 17587,17965 16990,18694
 Greifenhagener Str.: Kopfsteinpflaster	Q2 11040,15398 11093,15771 11162,15903
 Greifenhagener Str.: Kopfsteinpflaster	Q2 11190,15950 11232,16037 11306,16194 11341,16273 11397,16405
+Tuchollaplatz: Kopfsteinpflaster	Q2 15628,10915 15539,10940
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
 Schützallee: mäßiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfläche	Q2 2230,3823 1952,3864 1677,3885
 Riemeisterstr.: mäßiges Kopfsteinpflaster	Q2 373,4816 319,4906 168,5092 103,5123
@@ -1008,3 +1010,5 @@ Malplaquetstr.: mäßiges Kopfsteinpflaster	Q2 7441,15909 7051,16264
 Stahnsdorfer Damm: breiter asphaltierter Forstweg	Q2 -4995,1075 -4974,900 -4717,694 -4257,328 -3985,115 -3541,-144
 Ringenwalder Str.: Asphalt	Q0 22478,16195 22406,16309 22215,16343 22090,16365 21801,16392
 Schönholzer Str.: Asphalt	Q0 9838,14640 10043,14735
+Rheinsberger Str.: Asphalt	Q0 10402,14835 10242,14765 10155,14719 9864,14578 9685,14495
+Wolliner Str.: Asphalt	Q0 10405,14425 10320,14608 10242,14765 10176,14896 10022,15203

@@ -523,7 +523,7 @@ do-checks:	.check_strassen1 .check_strassen2 \
 
 check-disabled:	.check_label
 
-.check_strassen1:	.strassen.tmp add_str multi_bez_str
+.check_strassen1:	.strassen.tmp add_str multi_bez_str Berlin.coords.data
 	$(CHECK_STR_PLZ) -data .strassen.tmp
 	@touch $@
 
