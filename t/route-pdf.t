@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: route-pdf.t,v 1.4 2003/08/09 07:20:44 eserte Exp $
+# $Id: route-pdf.t,v 1.5 2003/10/23 12:43:44 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -17,6 +17,7 @@ use Strassen::Core;
 use Strassen::MultiStrassen;
 use Strassen::StrassenNetz;
 use BBBikeXS;
+use Getopt::Long;
 
 BEGIN {
     if (!eval q{
@@ -30,11 +31,14 @@ BEGIN {
 
 BEGIN { plan tests => 1 }
 
-my $out_to_gv = 0;
+my $pdf_prog;
+if (!GetOptions("pdfprog=s" => \$pdf_prog)) {
+    die "usage: $0 [-pdfprog pdfviewer]";
+}
 
 my @arg;
-if ($out_to_gv) {
-    open(GV, "|gv -");
+if ($pdf_prog && $pdf_prog eq 'gv') {
+    open(GV, "|$pdf_prog -");
     @arg = (-fh => \*GV);
 } else {
     @arg = (-filename => "/tmp/test.pdf");
@@ -84,8 +88,10 @@ $rp->output(-vianame => $via_name,
 	    -net => $net, -route => $route);
 $rp->{PDF}->close;
 
-if ($out_to_gv) {
+if (fileno(GV)) {
     close(GV);
+} elsif ($pdf_prog) {
+    system($pdf_prog, "/tmp/test.pdf");
 }
 
 ok(1);
