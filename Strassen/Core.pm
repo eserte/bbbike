@@ -84,7 +84,9 @@ sub new {
 	    push @filenames, map { $_ . "/$filename" } @datadirs;
 	}
     }
-    my $self = { Data => [] };
+    my $self = { Data => [],
+		 Directives => {},
+	       };
     bless $self, $class;
 
     if (@filenames) {
@@ -154,6 +156,7 @@ sub read_data {
     $self->{Modtime} = (stat($file))[STAT_MODTIME];
     binmode FILE;
     my @data;
+    my %directives;
     if ($args{PreserveLineInfo}) {
 	while (<FILE>) {
 	    next if m{^(\#|\s*$)};
@@ -162,13 +165,17 @@ sub read_data {
 	}
     } else {
 	while (<FILE>) {
+	    if (/^\#:\s*(.*?):\s*(.*)/) {
+		$directives{$1} = $2;
+	    }
 	    next if m{^(\#|\s*$)};
 	    push @data, $_;
         }
     }
     warn "... done\n" if ($VERBOSE && $VERBOSE > 1);
     close FILE;
-    $self->{Data}  = \@data;
+    $self->{Data} = \@data;
+    $self->{Directives} = \%directives;
 }
 
 # Return true if there is no data loaded.
@@ -981,6 +988,20 @@ sub nearest_point {
     } else {
 	undef;
     }
+}
+
+sub get_conversion {
+    my $self = shift;
+    my $convsub;
+    if ($self->{Directives}{map}) {
+	my $map = $self->{Directives}{map};
+	require Karte;
+	Karte::preload($map);
+	$convsub = sub {
+	    join ",", $Karte::map{$map}->map2standard(split /,/, $_[0]);
+	};
+    }
+    $convsub;
 }
 
 # set all $VERBOSE vars in this file

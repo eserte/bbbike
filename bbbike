@@ -5020,6 +5020,8 @@ sub generate_plot_functions {
 	    my $ret = shift;
 	    my $strname = $ret->[Strassen::NAME];
 	    my @kreuzungen = @{$ret->[Strassen::COORDS]};
+            @kreuzungen = map { $conv->($_) } @kreuzungen
+		if $conv;
 	    my $cat_hin = $ret->[Strassen::CAT];
 	    my $cat_rueck;
 	    my(@addinfo_hin, @addinfo_rueck);
@@ -5458,6 +5460,7 @@ EOF
 	    return if defined $restrict and $category !~ /$restrict/;
 	    my $pointname = $ret->[Strassen::NAME];
 	    my $koord = $ret->[Strassen::COORDS][0]; # erste Koordinate
+            $koord = $conv->($koord) if $conv;
 	    my($xx,$yy);
 	    $_ = $koord;
 EOF
@@ -5618,6 +5621,7 @@ EOF
 	    my($name, $add) = split(/\|/, $ret->[Strassen::NAME]);
 	    my($xx,$yy);
 	    $_ = $ret->[Strassen::COORDS][0];
+            $_ = $conv->($_) if $conv;
 EOF
     . $parse_coords_code . <<'EOF';
 #	    if ($ret->[Strassen::COORDS][0] =~ /(-?\d+),(-?\d+)/) {
@@ -8061,6 +8065,8 @@ sub plotstr {
 	$escape = 0;
 	my @extra_tags = ($abk =~ /^L\d+/ ? ("$abk-s") : ());
 
+	my $conv = $str->get_conversion;
+
 	my $draw_sub = eval $plotstr_draw_sub;
 	string_eval_die($@, $plotstr_draw_sub) if $@; #die $@ if $@;
 
@@ -8791,6 +8797,8 @@ sub plot_point {
 
 	my $draw_sub = eval $plotpoint_draw_sub;
 	string_eval_die($@, $plotpoint_draw_sub) if $@; #die $@ if $@;
+
+	my $conv = $bhf->get_conversion;
 
 	while(1) {
 	    my $ret = $bhf->next;
@@ -9699,6 +9707,8 @@ sub plotorte {
 	}
 	my $anzahl_eindeutig = $orte->count;
 	my $do_outline_text = $do_outline_text{$type};
+
+	my $conv = $orte->get_conversion;
 
 	my $draw_sub = eval $plotorte_draw_sub;
 	die $@ if $@;

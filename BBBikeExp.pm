@@ -383,6 +383,7 @@ sub BBBikeExp::plotstr_on_demand {
 
 	    my $label_spaceadd = ''; # XXX?
 	    my $transpose = \&transpose;
+	    my $conv = $exp_str{$abk}->get_conversion;
 	    my $draw_sub = eval $plotstr_draw_sub;
 	    die $@ if $@;
 
@@ -433,6 +434,7 @@ sub BBBikeExp::plotstr_on_demand {
 	    my $label_spaceadd = ''; # XXX?
 
 	    my $transpose = \&transpose;
+	    my $conv = $exp_p{$abk}->get_conversion;
 	    my $draw_sub = eval $plotpoint_draw_sub;
 	    die $@ if $@;
 
@@ -465,6 +467,7 @@ sub BBBikeExp::plotstr_on_demand {
  	    my $coordsys = $coord_system_obj->coordsys;
 
 	    my $transpose = \&transpose;
+	    my $conv = $exp_p{$abk}->get_conversion;
 	    my $draw_sub = eval $plotorte_draw_sub;
 	    die $@ if $@;
 
