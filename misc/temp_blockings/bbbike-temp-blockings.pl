@@ -1,5 +1,6 @@
 # temp-blocking
-require Time::Local;
+# undef old entries
+require Time::Local;# XXX remove
 @temp_blocking =
     (
      { from  => Time::Local::timelocal(reverse(2003-1900,5-1,21,0,0,0)),
