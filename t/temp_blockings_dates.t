@@ -63,7 +63,7 @@ EOF
 Blankenburger Weg - Blankenburger-Weg-Brücke (Pankow) in beiden Richtungen zwischen Pasewalker Str. und Bahnhofsstraße Baustelle, Straße vollständig gesperrt (bis 12/2004) (11:02) 
 EOF
       Mktime(@Today_and_Now),
-      Mktime(2004,12,15,23,59,59),
+      Mktime(2004,12,31,23,59,59),
       0
      ],
 

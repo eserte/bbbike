@@ -136,12 +136,14 @@ sub parse_dates {
 	}
 	return undef if !defined $month;
 
+	local $^W = 0; # $day_nat may be undef
+
 	my $day;
 	if ($day_nat =~ /anfang/i) {
 	    $day = 1;
 	} elsif ($day_nat =~ /mitte/i) {
 	    $day = 15;
-	} else {
+	} else { # undef and anything else is treated as "ende"
 	    $day = month_days($month, $year);
 	}
 
@@ -163,7 +165,7 @@ sub parse_dates {
     my $isodaterx = qr/\b(20\d{2})-(\d{2})-(\d{2})\b/;
     my $eudaterx  = qr/\b([0123]?\d)\.([01]?\d)\.(\d{4})\b/;
     # XXX add ? after Anfang... group?
-    my $nat_de_rx = qr{(Anfang|Mitte|Ende)\s+($month_rx|\d|0\d|1[012])[./ ](20\d{2})}i;
+    my $nat_de_rx = qr{(Anfang|Mitte|Ende)?\s+($month_rx|\d|0\d|1[012])[./ ](20\d{2})}i;
 
     my $this_year = (localtime)[5] + 1900;
     my($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2, @to_matches, $rest);
