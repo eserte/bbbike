@@ -817,11 +817,13 @@ sub build_search_code {
     #      $g:    Streckenlänge (oder Penalty) bis Node (DIST),
     #      $f:    abgeschätzte Länge bis Ziel über Node (HEURISTIC_DIST),
     #      weitere Array-Elemente sind optional ...]
-    my $use_heap = 0; # XXX the heap version seems to be faster, but first do some tests and enable it after 3.13 RELEASE. Use also a Array::Heap2-existance text.
+    my $use_heap = 0; # XXX the heap version seems to be faster, but first do some tests and enable it after 3.13 RELEASE. Use also a Array::Heap2-existance text. XXX I changed the heap calls due to use -> require/import change, so check this too!
+    if ($use_heap && !eval q{ require Array::Heap2; import Array::Heap2; 1 }) {
+	$use_heap = 0;
+    }
     $code .= '
 
 '; if ($use_heap) { $code .= '
-    use Array::Heap2;
     my @OPEN = ([0, $from]); make_heap @OPEN;
 '; } else { $code .= '
     my %OPEN = ($from => 1);
@@ -849,7 +851,7 @@ sub build_search_code {
         my $min_node;
         my $min_node_f = 999_999_999; # not suitable for extraterrestrial searches
 '; if ($use_heap) { $code .= '
-	my($min_node_f, $min_node) = @{ pop_heap(@OPEN) };
+	my($min_node_f, $min_node) = @{ pop_heap(\@OPEN) };
 '; } else { $code .= '
         foreach (keys %OPEN) {
             if ($NODES{$_}->[HEURISTIC_DIST] < $min_node_f) {
@@ -947,7 +949,7 @@ sub build_search_code {
             if (!exists $NODES{$successor}) {
                 $NODES{$successor} = [$min_node, $g, $f];
 '; if ($use_heap) { $code .= '
-		push_heap @OPEN, [$f, $successor];
+		push_heap(\@OPEN, [$f, $successor]);
 '; } else { $code .= '
                 $OPEN{$successor} = 1;
 '; } $code .= '
@@ -956,7 +958,7 @@ sub build_search_code {
                     $NODES{$successor} = [$min_node, $g, $f];
                     if (exists $CLOSED{$successor}) {
 '; if ($use_heap) { $code .= '
-			push_heap @OPEN, [$f, $successor];
+			push_heap(\@OPEN, [$f, $successor]);
 '; } else { $code .= '
                         $OPEN{$successor} = 1;
 '; } $code .= '
@@ -970,7 +972,7 @@ sub build_search_code {
 				last;
 			    }
 			}
-			make_heap @OPEN;
+			make_heap(\@OPEN);
 		    }
 '; } $code .= '
                 }
