@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: redirect-bbbike.cgi,v 1.5 2003/06/23 22:09:37 eserte Exp $
+# $Id: redirect-bbbike.cgi,v 1.6 2005/03/22 08:37:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -13,6 +13,8 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
+# XXX Wird dieses Skript irgendwo verwendet?
+
 use strict;
 use CGI qw(:standard);
 use FindBin;
@@ -21,15 +23,13 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../data",
 	);
 
-my $bbbike_url;
+my $bbbike_url = "http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.cgi"; # the fallback
 if (eval { require BBBikeVar; 1 }) {
     $BBBike::BBBIKE_DIRECT_WWW = $BBBike::BBBIKE_DIRECT_WWW; # peacify -w
     $bbbike_url = $BBBike::BBBIKE_DIRECT_WWW;
     #$bbbike_url = "http://www/~eserte/bbbike/cgi/bbbike.cgi";
 } else {
     #warn "Can't get value of BBBIKE_DIRECT_WWW, use fallback:";
-    print redirect("http://www.bbbike.cgi"); # without params!
-    exit(0);
 }
 
 my $redirect = $bbbike_url;

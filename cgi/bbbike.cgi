@@ -3148,8 +3148,6 @@ sub search_coord {
 		    }
 		}
 
-#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@comment_objs, \%comments_in_whole_etappe, \%comments_at_beginning],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
-
 		for (@comment_objs) {
 		    # Alle Kommentare, die sich nur auf Teilstrecken
 		    # beziehen, bekommen ein Anhängsel. Ausnahme:

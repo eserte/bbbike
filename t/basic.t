@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.7 2005/03/06 17:03:28 eserte Exp $
+# $Id: basic.t,v 1.7 2005/03/06 17:03:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -44,7 +44,8 @@ for my $f (@files) {
 	    if $f =~ m{^( lib/TkChange.pm
 			| lib/AutoInstall/Tk.pm
                         | bbbike
-			| BBBikeEdit.pm
+		        | BBBikeAdvanced.pm
+		        | BBBikeEdit.pm
 		        | PointEdit.pm
  			)$}x && !eval { require Tk };
 	skip "$f needs Inline", $tests_per_file

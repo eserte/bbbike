@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.82 2005/02/27 23:37:47 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.83 2005/03/21 21:15:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3261,6 +3261,10 @@ sub temp_blockings_editor {
 			-value => "replace",
 			-variable => \$meta_data_handling,
 		       )->pack(-anchor => "w");
+	$f->Radiobutton(-text => M"Existierenden Eintrag ersetzen, Strecken beibehalten",
+			-value => "replace_preserve_data",
+			-variable => \$meta_data_handling,
+		       )->pack(-anchor => "w");
     }
 
     {
@@ -3404,13 +3408,17 @@ sub temp_blockings_editor {
        text  => '$blocking_text',
        type  => '$blocking_type',
 EOF
-		  if ($as_data) {
-		      my $s = Strassen->new($file);
-		      $pl_entry .= "       data  => <<EOF,\n" . $s->as_string . "EOF\n";
+		  if ($meta_data_handling eq 'replace_preserve_data') {
+		      $pl_entry .= "###PRESERVE DATA\n";
 		  } else {
-		      $pl_entry .= <<EOF;
+		      if ($as_data) {
+			  my $s = Strassen->new($file);
+			  $pl_entry .= "       data  => <<EOF,\n" . $s->as_string . "EOF\n";
+		      } else {
+			  $pl_entry .= <<EOF;
        file  => '$rel_file',
 EOF
+		      }
 		  }
 		  $pl_entry .= <<EOF;
      },
@@ -3423,10 +3431,13 @@ EOF
 			      or main::status_message("Kann auf $pl_file nicht schreiben: $!", "die");
 			  print PL_OUT join "", @old_contents;
 			  close PL_OUT;
-		      } elsif ($meta_data_handling eq 'replace') {
-			  my $ret = temp_blockings_editor_replace(-string => $pl_entry,
-								  -text   => $blocking_text,
-								 );
+		      } elsif ($meta_data_handling eq 'replace' ||
+			       $meta_data_handling eq 'replace_preserve_data') {
+			  my $ret = temp_blockings_editor_replace
+			      (-string => $pl_entry,
+			       -text   => $blocking_text,
+			       -preserve_data => $meta_data_handling eq 'replace_preserve_data',
+			      );
 			  if (!$ret) {
 			      return;
 			  }
@@ -3477,11 +3488,36 @@ EOF
     $pe->xview(1);#XXX does not work???
 }
 
+sub temp_blockings_editor_preserve_data {
+    my($new, $old) = @_;
+    my $data_or_file = "";
+    my $stage = '';
+    for my $line (split /\n/, $old) {
+	if ($stage eq '') {
+	    if ($line =~ /^\s*data/) {
+		$stage = 'in_data';
+		$data_or_file .= $line . "\n";
+	    }
+	} elsif ($stage eq 'in_data') {
+	    $data_or_file .= $line . "\n";
+	    if ($line =~ /^EOF/) {
+		$stage = '';
+	    }
+	}
+    }
+    if ($new !~ s/^###PRESERVE DATA\n/$data_or_file/m) {
+	warn "Can't find PRESERVE DATA tag in <$new>";
+	main::status_message("Can't find PRESERVE DATA tag!", "die");
+    }
+    $new;
+}
+
 sub temp_blockings_editor_replace {
     my(%args) = @_;
     my $ret = 0;
     my $new_string = $args{-string};
     my $new_text   = $args{-text};
+    my $preserve_data = $args{-preserve_data};
     if (!eval { require String::Similarity; 1 }) {
 	main::status_message($@, "die");
     }
@@ -3527,6 +3563,10 @@ sub temp_blockings_editor_replace {
 	$s{$stage} .= $_;
     }
     close PL_IN;
+
+    if ($preserve_data) {
+	$new_string = temp_blockings_editor_preserve_data($new_string, $s{inner});
+    }
 
     my $yesno;
     {
@@ -3601,6 +3641,19 @@ sub temp_blockings_editor_replace {
 	    $rec_i++;
 	}
 
+	{
+	    my $search_term = "";
+	    my $search_e = $t->LabEntry(-labelPack => ['-side' => 'left'],
+					-textvariable => \$search_term,
+					-label => M"Suchen",
+				       )->pack(-fill => 'x');
+	    $search_e->bind("<Return>" => sub {
+				search_in_hlist($hl, $search_term,
+						-nocase => 1,
+						-match => 'substr');
+			    });
+	}
+
 	my $weiter;
 	{
 	    my $f = $t->Frame->pack(-fill => "x");
@@ -3616,6 +3669,7 @@ sub temp_blockings_editor_replace {
 			       ),
 		    );
 	}
+
 
     TRYAGAIN:
 	$t->OnDestroy(sub { $weiter = -1 });
@@ -3651,6 +3705,74 @@ sub temp_blockings_editor_replace {
     }
 
     $ret;
+}
+
+sub search_in_hlist {
+    my($hl, $search_term, %args) = @_;
+    my $begin_at = $args{-beginat} || 'anchor';
+    my $match_type = $args{-match} || 'exact';
+    my $no_case = $args{-nocase};
+
+    if ($no_case) {
+	$search_term = lc $search_term;
+    }
+
+    my $curr_entry;
+    if ($begin_at eq 'anchor') {
+	$curr_entry = $hl->info('anchor');
+	if (!defined $curr_entry || $curr_entry eq '') {
+	    $curr_entry = ($hl->info('children'))[0];
+	}
+    } else {
+	$curr_entry = $hl->info($begin_at);
+    }
+    if (!defined $curr_entry || $curr_entry eq '') {
+	return;
+    }
+
+    my $wrapped = 0;
+    my $no_next = 0;
+    while (1) {
+	while(1) {
+	    if (!$no_next) {
+		$curr_entry = $hl->info('next', $curr_entry);
+	    } else {
+		$no_next = 0;
+	    }
+	    last if !defined $curr_entry || $curr_entry eq ''; # at bottom
+	    for my $col_i (0 .. $hl->cget(-columns) - 1) {
+		my $text = $hl->itemCget($curr_entry, $col_i, '-text');
+		$text = lc $text if $no_case;
+
+		my $found = sub {
+		    $hl->anchorSet($curr_entry);
+		    $hl->see($curr_entry);
+		    return $curr_entry;
+		};
+
+		if ($match_type eq 'exact') {
+		    if ($text eq $search_term) {
+			return $found->();
+		    }
+		} elsif ($match_type =~ /^substr/) {
+		    if (index($text, $search_term) > -1) {
+			return $found->();
+		    }
+		} elsif ($match_type =~ /^regex/) {
+		    if ($text =~ /$search_term/) {
+			return $found->();
+		    }
+		}
+	    }
+	}
+	if ($wrapped) {
+	    return;
+	} else {
+	    $wrapped = 1;
+	    $no_next = 1;
+	    $curr_entry = ($hl->info('children'))[0];
+	}
+    }
 }
 
 sub add_cross_road_blockings {

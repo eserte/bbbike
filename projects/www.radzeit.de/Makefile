@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.51 2005/03/16 22:14:02 eserte Exp $
+# $Id: Makefile,v 1.52 2005/03/21 23:16:07 eserte Exp $
 #
 
 # Targets:
@@ -149,6 +149,7 @@ DATA_DIR=	data
 .endif
 
 RADZEIT_NEW_URL=	http://130.149.231.46
+RADZEIT_NEW_URL=	http://www.radzeit.de
 .if ${TARGET} == "radzeit-new"
 SSH_PROG_AND_ARGS=	ssh -2 -p 534
 HTDOCS=			public
@@ -437,16 +438,14 @@ test-local:
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
 		${TESTS}
 
-test-on-radzeit-new:
-	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
-	cd ${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/t && \
+test-radzeit-new:
+	cd ${.CURDIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=${RADZEIT_NEW_URL}/cgi-bin \
 	BBBIKE_TEST_CGIURL=${RADZEIT_NEW_URL}/cgi-bin/bbbike.cgi \
 	BBBIKE_TEST_WAPURL=${RADZEIT_NEW_URL}/cgi-bin/wapbbbike.cgi \
 	BBBIKE_TEST_HTMLDIR=${RADZEIT_NEW_URL}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
-		${TESTS} \
-	'
+		${TESTS}
 
 # XXX missing: chown ${WWW_USER} /var/www/domains/radzeit.de/www/public/mapserver/brb
 server-permissions:

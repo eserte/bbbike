@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.106 2005/01/20 22:40:45 eserte Exp $
+# $Id: Makefile.PL,v 1.107 2005/03/21 23:17:20 eserte Exp $
 
 use 5.005;
 
@@ -30,6 +30,10 @@ use constant REQTABLE_REQ     => 3;
 use constant REQTABLE_DESC    => 4;
 use constant REQTABLE_LONGDESC=> 5;
 
+use constant REQ_BBBIKE_TK      => 1; # mandatory for the Perl/Tk version
+use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
+# ... 4, 8, 16 ...
+
 # Table of prerequisites:
 # Name, Version, OS, Req/CoReq, description token, long description
 @req_table =
@@ -53,39 +57,39 @@ use constant REQTABLE_LONGDESC=> 5;
    'optionales Redirect von Fehlermeldungen in ein Tk-Fenster'],
   [qw/Tk::DateEntry	1.38	all	0	gui/],
 
-  [qw/LWP::UserAgent	0	all	0	www/,
+  [qw/LWP::UserAgent	0	all	2	www/,
    'für die WWW-Verbindungen (z.B. Wetterbericht)'],
   [qw/Image::Magick	0	all	0	www/,
    'für Bildmanipulationen beim Radar-Bild der FU'],
 
-  [qw/Apache::Session::DB_File	0	all	0	cgi/,
-   'optionale Session-Verwaltung für das CGI-Programm'],
+  [qw/Apache::Session::DB_File	0	all	2	cgi/,
+   'optionale Session-Verwaltung für das CGI-Programm, notwendig für wapbbbike'],
   [qw/XML::SAX	0	all	0	cgi/,
    'CPAN.pm kann XML::SAX nicht über XML::Simple automatisch installieren'],
-  [qw/XML::Simple	0	all	0	cgi/,
+  [qw/XML::Simple	0	all	2	cgi/,
    'optional für XML-Dumps der BBBike-Route'],
-  [qw/XML::Parser	0	all	0	cgi/,
+  [qw/XML::Parser	0	all	2	cgi/,
    'optional für UAProf parsing (alternative wäre XML::SAX::PurePerl)'],
-  [qw/YAML	0	all	0	cgi/,
+  [qw/YAML	0	all	2	cgi/,
    'optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings'],
 
-  [qw/Mail::Send	0	unix	0	mail/,
+  [qw/Mail::Send	0	unix	2	mail/,
    'falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will'],
 
-  [qw/String::Approx	2.7	all	0	base/,
+  [qw/String::Approx	2.7	all	2	base/,
    'oder man verwendet agrep (mindestens Version 3.0)'],
   [qw/String::Similarity 0	all	0	devel/,
    'optional für den temp_blockings-Editor'],
   [qw/Storable		0	all	0	base/,
    'für das Caching beim CGI-Programm'],
   [qw/MLDBM		0	all	0	base/],
-  [qw/GD		1.18	all	0	base/,
+  [qw/GD		1.18	all	2	base/,
    'zum On-the-fly-Erzeugen von Grafiken beim CGI-Programm'],
   [qw/Chart::ThreeD::Pie	0	all	0	base/,
    'Tortendiagramme in der Statistik'],
   [qw/List::Permutor	0	all	0	base/,
    'Für das Problem des Handlungsreisenden'],
-  [qw/PDF::Create	0.06	all	0	base/,
+  [qw/PDF::Create	0.06	all	2	base/,
    'Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download)'],
   [qw/Font::Metrics::Helvetica	0	all	0	base/,
    'Für die Reparatur der Zeichenbreitentabellen in PDF::Create'],
@@ -101,9 +105,9 @@ use constant REQTABLE_LONGDESC=> 5;
   [qw/Devel::Peek	0	all	0	devel/],
   [qw/Statistics::Descriptive	0	all	0	devel/],
   [qw/Math::MatrixReal	0	all	0	devel/],
-  [qw/Class::Accessor	0	all	0	base/,
+  [qw/Class::Accessor	0	all	2	base/,
    'für GPS::GpsmanData, die ESRI-Module etc.'],
-  [qw/Template	0	all	0	devel/,
+  [qw/Template	0	all	2	devel/,
    'für BBBikeDraw::MapServer'],
   [qw/Inline::C		0	all	0	base/,
    'für den schnelleren Suchalgorithmus, siehe ext/Strassen-Inline'],
@@ -111,7 +115,7 @@ use constant REQTABLE_LONGDESC=> 5;
    { de => 'für das Ausgeben der \'Usage\' in einigen Entwicklungs-Tools',
      en => 'for printing the usage in some development tools'
    }],
-  [qw/Palm::PalmDoc	0	all	0	base/,
+  [qw/Palm::PalmDoc	0	all	2	base/,
    'für das Erzeugen von palmdoc-Dateien mit der Routenbeschreibung'],
   [qw/Astro::Sunrise	0	all	0	base/,
    'Anzeige des Sonnenuntergangs/-aufgangs im Info-Fenster'],
@@ -119,22 +123,22 @@ use constant REQTABLE_LONGDESC=> 5;
    'LogTracker plugin, Edititeren'],
   [qw/Date::Pcalc	0	all	0	devel/,
    'LogTracker plugin (Alternative wäre Date::Calc)'],
-  [qw/XBase		0	all	0	devel/,
+  [qw/XBase		0	all	2	devel/,
    'Erzeugen der Mapserver- oder anderer ESRI-Dateien, notwendig für radzeit.de'],
   [qw/IPC::Run		0	all	0	base/,
    'hilft bei der sicheren Ausführung von externen Kommandos (insbesondere für Win32)'],
   [qw/Imager	0	all	0	devel/,
    'additional optional BBBikeDraw backend for PNG graphics'],
-  [qw/SVG	0	all	0	cgi/,
+  [qw/SVG	0	all	2	cgi/,
    'additional optional BBBikeDraw backend for SVG graphics'],
-  [qw/Object::Iterate	0	all	0	base/,
+  [qw/Object::Iterate	0	all	2	base/,
    'Notwendig für die radzeit.de-Version (bbd2esri)'],
 
   [qw/Image::Info	0	all	0	test/],
   [qw/Test::More	0	all	0	test/],
   [qw/Test::Differences	0	all	0	test/],
   [qw/Test::NoWarnings	0	all	0	test/],
-  [qw/WWW::Mechanize	0	all	0	test/,
+  [qw/WWW::Mechanize	0	all	2	test/,
    'Für Testen des CGI-Interfaces'],
  );
 
@@ -169,6 +173,7 @@ my(%prereq, @prereq);
 # call before maniread!
 exit make_bundle()       if $0 =~ /make_bundle/;
 exit make_small_bundle() if $0 =~ /make_small_bundle/;
+exit make_radzeit_bundle() if $0 =~ /make_radzeit_bundle/;
 exit make_pi_osd('win')
     if $0 =~ /make_pi_osd/ && defined $ARGV[0] && $ARGV[0] eq 'win';
 exit make_pi_osd()       if $0 =~ /make_pi_osd/;
@@ -213,7 +218,11 @@ sub make_bundle {
 }
 
 sub make_small_bundle {
-    make_general_bundle(1, "BBBike_small.pm");
+    make_general_bundle(REQ_BBBIKE_TK, "BBBike_small.pm");
+}
+
+sub make_radzeit_bundle {
+    make_general_bundle(REQ_BBBIKE_RADZEIT, "BBBike_radzeit.pm");
 }
 
 sub make_general_bundle {
@@ -226,7 +235,9 @@ sub make_general_bundle {
 	if (/^=head1\s+CONTENTS/) {
 	    print BUNDLE "\n";
 	    foreach my $prereq (@prereq) {
-		next if $prereq->[REQTABLE_REQ] < $type;
+		if ($type != 0) {
+		    next if ($prereq->[REQTABLE_REQ] & $type) == 0;
+		}
 		print BUNDLE $prereq->[REQTABLE_MODNAME];
 		if ($prereq->[REQTABLE_VERSION]) {
 		    print BUNDLE " " . $prereq->[REQTABLE_VERSION];
@@ -253,16 +264,19 @@ sub make_general_bundle {
 }
 
 sub make_pi_osd {
+    die "Not supported anymore (changes for new REQTABLE_REQ needed!)";
     my $os = shift || 'unix';
     make_general_pi_osd(0, "BBBike-$os.osd", $os);
 }
 
 sub make_small_pi_osd {
+    die "Not supported anymore (changes for new REQTABLE_REQ needed!)";
     my $os = shift || 'unix';
     make_general_pi_osd(1, "BBBike_small-$os.osd", $os);
 }
 
 sub make_general_pi_osd {
+    die "Not supported anymore (changes for new REQTABLE_REQ needed!)";
     my $type = shift;
     my $file = shift;
     my $os   = shift;

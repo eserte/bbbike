@@ -1491,9 +1491,9 @@ userdel	q4 -16605,-14239 -17374,-13449
 userdel	q4 -18080,-12637 -17374,-13449
 EOF
      },
-     { from  => 1110232931, # 2005-03-07 23:02
-       until => 1111791600, # 2005-03-26 00:00
-       text  => 'Sterndamm (Treptow) in Richtung Rudow zwischen Königsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt (bis 25.03.2005)',
+     { from  => 1111437775, # 2005-03-21 21:42
+       until => 1111705200, # 2005-03-25 00:00
+       text  => 'Sterndamm (Treptow) in Richtung Rudow zwischen Königsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 24.03.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1 17518,4644 17428,4503
@@ -1563,6 +1563,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 8066,25646 8182,25608
+EOF
+     },
+     { from  => 1111439519, # 2005-03-21 22:11
+       until => 1191189599, # 2007-09-30 23:59
+       text  => 'Nennhauser Damm (Spandau) stadteinwärts zwischen Heerstr. und Döberitzer Weg Baustelle, Fahrtrichtung gesperrt (bis 09.2007)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 -8749,13269 -8662,13322 -8365,13294 -8014,13292
 EOF
      },
     );

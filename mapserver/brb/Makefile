@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.23 2005/03/09 23:49:52 eserte Exp $
+# $Id: Makefile,v 1.24 2005/03/22 08:37:24 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -150,14 +150,21 @@ BBBIKE_CGI_RELURL=	/cgi-bin
 BBBIKE_IMAGES_RELURL=	/BBBike/images
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 IMAGE_SUFFIX=		png
+
 .if ${TARGET} == "radzeit" || ${TARGET} == "radzeit-new"
-FONTS_LIST=		fonts-radzeit.list
 WWW_USER=		www
 TARGET_DIR=		${.CURDIR:H}/brb-radzeit
 .elif ${TARGET} == "radzeit.herceg.de"
-FONTS_LIST=		fonts-vran.list
 WWW_USER=		eserte
 TARGET_DIR=		${.CURDIR:H}/brb-radzeit.herceg.de
+.endif
+
+.if ${TARGET} == "radzeit"
+FONTS_LIST=		fonts-radzeit.list
+.elif ${TARGET} == "radzeit-new"
+FONTS_LIST=		fonts-radzeit-new.list
+.elif ${TARGET} == "radzeit.herceg.de"
+FONTS_LIST=		fonts-vran.list
 .endif
 
 .endif
@@ -283,7 +290,9 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile ${ABS_LOCAL_BBBIKE_DIR}
 .if ${TARGET} == "radzeit-new"
 	echo "RSYNC=	rsync" >> $@
 	echo "BBBIKE_RADZEIT_USER=	root" >> $@
-	echo "BBBIKE_RADZEIT_HOST=	130.149.231.37" >> $@
+#	echo "BBBIKE_RADZEIT_HOST=	130.149.231.37" >> $@
+## Only with faked /etc/hosts entry:
+	echo "BBBIKE_RADZEIT_HOST=	www.radzeit.de" >> $@
 	echo "BBBIKE_RADZEIT_APACHE_DIR=	/var/www/domains/radzeit.de/www/" >> $@
 .else
 .for makefile_var in $(ADD_MAKEFILE_VARS)

@@ -158,14 +158,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1111359600,
-         'text' => 'L 24; (AS Pfingstberg-Gerswalde); Bereich AS Pfingstberg, Brücke A 11 Brückenabruch Vollsperrung 18.03.2005-20.03.2005 ',
-         'from' => 1111014000,
-         'data' => 'userdel	2 41292,81052 41593,80703
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1128117600,
          'text' => 'B 179; (Berliner Str.); OL Königs Wusterhausen, zw. Schloßplatz u. Funkerberg Kanalarbeiten halbseitig gesperrt (XXX welche Richtung?); Einbahnstraße 01.03.2005-30.09.2005 ',
@@ -210,9 +203,9 @@ userdel	q4 -18080,-12637 -17374,-13449
          'type' => 'handicap'
        },
        {
-         'until' => 1111791600,
-         'text' => 'Sterndamm (Treptow) in Richtung Rudow zwischen Königsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt (bis 25.03.2005)',
-         'from' => 1110232931,
+         'until' => 1111705200,
+         'text' => 'Sterndamm (Treptow) in Richtung Rudow zwischen Königsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 24.03.2005)',
+         'from' => 1111437775,
          'data' => 'userdel	1 17518,4644 17428,4503
 ',
          'type' => 'gesperrt'
@@ -247,6 +240,14 @@ userdel	q4 22217,1108 22162,1067
          'data' => 'userdel	q4 8066,25646 8182,25608
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1191189599,
+         'text' => 'Nennhauser Damm (Spandau) stadteinwärts zwischen Heerstr. und Döberitzer Weg Baustelle, Fahrtrichtung gesperrt (bis 09.2007)',
+         'from' => 1111439519,
+         'data' => 'userdel	1 -8749,13269 -8662,13322 -8365,13294 -8014,13292
+',
+         'type' => 'gesperrt'
        }
      
 );
