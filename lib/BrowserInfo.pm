@@ -100,6 +100,7 @@ sub set_info {
 			      $q->user_agent('SIE-S55') ||
 			      $q->user_agent('SIE-MC60') ||
 			      $q->user_agent('SIE-SX1') ||
+			      $q->user_agent('SIE-CX65') ||
                               $q->user_agent('nokia-wap-toolkit') ||
 			      $q->user_agent('Nokia7110') ||
 			      $q->user_agent('Nokia6210') ||
@@ -174,6 +175,8 @@ sub set_info {
 	$self->{'display_size'} = [143,120];
     } elsif ($q->user_agent('SIE-SX1')) {
 	$self->{'display_size'} = [170,144];
+    } elsif ($q->user_agent('SIE-CX65')) {
+	$self->{'display_size'} = [132,140]; # useable
     } elsif ($q->user_agent('SIE-')) { # S55, ...
 	$self->{'display_size'} = [101,80];
     } elsif ($q->user_agent('SAMSUNG-SGH-')) { # X...,E700
