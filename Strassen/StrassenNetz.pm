@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.26 2003/07/14 19:59:29 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.26 2003/07/14 19:59:29 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -440,11 +440,21 @@ sub build_penalty_code {
     }
     # should be last, because of addition
     if ($sc->HasTragen) {
-	$penalty_code .= '
+	if ($sc->HasGreen) {
+	    # Adjust penalty according to penalty for "normal" (non-green)
+	    # streets:
+	    $penalty_code .= '
+		    if ($penalty and exists $penalty->{$next_node}) {
+                        $pen += ' . $sc->Velocity . '*$penalty->{$next_node}*$green_penalty->{"green0"};
+		    }
+';
+	} else {
+	    $penalty_code .= '
 		    if ($penalty and exists $penalty->{$next_node}) {
                         $pen += ' . $sc->Velocity . '*$penalty->{$next_node};
 		    }
 ';
+	}
     }
 
     $penalty_code;

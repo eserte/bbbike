@@ -7912,7 +7912,8 @@ sub plotstr {
 # XXXXXX can this ever happen? XXXXXXXXXXXXXXXXXXXXXXXXXXX
 if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->pos . " != " . scalar(@{$str->{Data}}) . "!", "dialog", "err") }
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-	warn ("Plotting streets took " . (Tk::Time_So_Far()-$bench) . "s\n") if $verbose;
+	warn sprintf "Plotting streets took %.3fs\n", Tk::Time_So_Far()-$bench
+	    if $verbose;
 
       PLOTSTR_CONT:
 	$c->itemconfigure('pp',
@@ -11442,7 +11443,7 @@ sub scale_width {
     }
     # rearrange outline_text
     # XXX performance is quite bad (about 0.6s for all U+S-Bahnhöfe)
-    my$t=Tk::timeofday();#XXX
+    my $t = Tk::timeofday();
     foreach my $item ($c->find(withtag => 'outlmaster')) {
 	my($x,$y) = $c->coords($item);
 	my $outline_width = 1;
@@ -11464,7 +11465,8 @@ sub scale_width {
 	    }
 	}
     }
-    warn "Time for repositioning labels: " . (Tk::timeofday()-$t) if $devel_host;#XXX
+    warn sprintf "Repositioning labels took %.3fs\n", (Tk::timeofday()-$t)
+	if $devel_host;
 
     while(my($name,$scalecommand) = each %scalecommand) {
 	warn "Scale for $name...\n";
@@ -14551,7 +14553,7 @@ sub delayed_sub {
 	       warn "restack\n"
 		 if $verbose;
 	       $sub->();
-	       warn sprintf("delayed sub $name done in %.3fms\n",
+	       warn sprintf("Delayed sub $name took %.3fs\n",
 			    Tk::timeofday()-$t)
 		 if $verbose;
 	   };

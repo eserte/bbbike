@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Multi.pm,v 1.2 2003/07/17 19:55:56 eserte Exp $
+# $Id: Multi.pm,v 1.3 2003/07/18 05:36:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package PLZ::Multi;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 use Getopt::Long qw(GetOptions);
 BEGIN {
