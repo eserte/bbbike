@@ -1017,3 +1017,30 @@ sub set_verbose {
 sub DESTROY { }
 
 1;
+
+__END__
+
+=head1 NAME
+
+Strassen::Core - the main Strassen object for bbd data
+
+=head1 SYNOPSIS
+
+   use Strassen::Core;
+   $s = Strassen->new($bbdfile);
+   $s->init;
+   while(1) {
+     my $ret = $s->next;
+     last if !@{ $ret->[Strassen::COORDS] };
+     print "Name:        $ret->[Strassen::NAME]\n";
+     print "Category:    $ret->[Strassen::CAT]\n";
+     print "Coordinates: " . join(" ", @{ $ret->[Strassen::COORDS] }) . "\n";
+   }
+
+=head1 DESCRIPTION
+
+See SYNOPSIS.
+
+=head1 SEE ALSO
+
+L<BBBikeRouting>.

@@ -16,3 +16,16 @@ use Strassen::Heavy;
 
 __END__
 
+=head1 NAME
+
+Strassen - the interface to bbd data
+
+=head1 SYNOPSIS
+
+   use Strassen;
+
+=head1 DESCRIPTION
+
+This module loads L<Strassen::Heavy>, which in turn loads
+L<Strassen::Core>, L<Strassen::StrassenNetz> and many more
+Strassen-related modules.
