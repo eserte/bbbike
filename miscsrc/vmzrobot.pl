@@ -259,3 +259,11 @@ sub diff {
 }
 
 __END__
+
+cd .../bbbike/miscsrc
+cp -f /tmp/vmz.yaml /tmp/oldvmz.yaml
+./vmzrobot.pl -f -outputas yaml:/tmp/newvmz.yaml || exit 1
+mv -f /tmp/newvmz.yaml /tmp/vmz.yaml
+./vmzrobot.pl -old /tmp/oldvmz.yaml -i /tmp/vmz.yaml -diffcount || \
+   (./vmzrobot.pl -old /tmp/oldvmz.yaml -i /tmp/vmz.yaml -f -outputas bbd:/tmp/vmz.bbd; \
+    tkmessage -center -font "helvetica 18" -bg red -fg white "New VMZ data available" )
