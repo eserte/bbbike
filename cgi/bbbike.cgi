@@ -4792,6 +4792,7 @@ EOF
         $s .= "<td><a href=\"$mapserver_init_url\">Mapserver</a></td>";
     }
     $s .= <<EOF;
+</tr>
 </table>
 </center>
 EOF
