@@ -57,6 +57,9 @@ all:	targets check .modified .rsync_include make_misc
 
 targets:	${TARGETS}
 
+clean:
+	mv -f ${TARGETS} /tmp
+
 # Useful checks, but normally too slow for a quick build
 # XXX merge with sort-Berlin.coords.data rule below?
 slow-checks:	inaccessible_strassen check-line-lengths check-dates check-Berlin.coords.data
