@@ -96,6 +96,10 @@ sub scope_by_map {
 	return 'all,city';
     } elsif ($base =~ /brb\.map$/) {
 	return 'all,region';
+    } elsif ($base =~ /brb-p\.map$/) {
+	return 'all,region';
+    } elsif ($base =~ /brb-inner-b\.map$/) {
+	return 'all,city';
     }
     undef;
 }
@@ -214,12 +218,13 @@ sub create_mapfile {
     my $path_for_scope = sub {
 	my $scope = shift;
 	my $prefix = shift || "";
-	my $orig_map_path = ($scope eq 'wideregion'
-			     ? "$orig_map_dir/${prefix}${mapname}-wide.map"
-			     : $scope eq 'city'
-			     ? "$orig_map_dir/${prefix}${mapname}-b.map"
-			     : "$orig_map_dir/${prefix}${mapname}.map"
-			    );
+	my $orig_map_path = 
+	    ( $scope eq 'wideregion' ? "$orig_map_dir/${prefix}${mapname}-wide.map"
+	    : $scope eq 'city'       ? "$orig_map_dir/${prefix}${mapname}-b.map"
+	    : $scope eq 'innercity'  ? "$orig_map_dir/${prefix}${mapname}-inner-b.map"
+	    : $scope eq 'potsdam'    ? "$orig_map_dir/${prefix}${mapname}-p.map"
+	    :                          "$orig_map_dir/${prefix}${mapname}.map"
+	    );
 	$orig_map_path;
     };
     my $orig_map_path = $path_for_scope->($scope);
@@ -251,7 +256,7 @@ sub create_mapfile {
 	my $preferred_scope;
 	if ($scope =~ /^all,(.*)/) {
 	    my $preferred_scope = $1;
-	    @scopes = qw(city region wideregion);
+	    @scopes = qw(city region wideregion innercity potsdam);
 	    for my $i (0 .. $#scopes) {
 		if ($scopes[$i] eq $preferred_scope) {
 		    splice @scopes, $i, 1;
