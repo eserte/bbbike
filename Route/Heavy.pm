@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Heavy.pm,v 1.2 2003/01/08 20:13:23 eserte Exp $
+# $Id: Heavy.pm,v 1.3 2005/01/15 22:39:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -14,11 +14,13 @@
 
 package Route::Heavy;
 
+use Route;
+
 package Route;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 # XXX Msg.pm
 
@@ -51,6 +53,32 @@ sub as_strassen {
 
     my $s = Strassen->new_from_data("Route\t#ff0000 " . join(" ", map { $_->[0].",".$_->[1] } @$realcoords_ref));
     $s;
+}
+
+# XXX make more sophisticated
+sub get_sample_coords {
+    my($coordref, $max_samples) = @_;
+    my @res;
+    if (@$coordref < $max_samples) {
+	@res = @$coordref;
+    } else {
+	my $delta = @$coordref/$max_samples;
+	for(my $i=0; $i<@$coordref;$i+=$delta) {
+	    push @res, $coordref->[$i];
+	}
+    }
+    @res;
+}
+
+sub load_from_string {
+    my($string, @args) = @_;
+    require File::Temp;
+    my($fh, $file) = File::Temp::tempfile(UNLINK => !$Route::DEBUG);
+    print $fh $string;
+    close $fh;
+    my $ret = Route::load($file, @args);
+    unlink $file if !$Route::DEBUG;
+    $ret;    
 }
 
 1;

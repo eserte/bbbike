@@ -129,6 +129,14 @@ push @temp_blocking,
          'data' => 'userdel	2 -19149,11495 -18916,11666
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1106780400,
+         'text' => 'L 62; (Elsterwerda-Hohenleipisch); Bahnübergang bei Dreska Gleisbauarbeiten Vollsperrung 24.01.2005-26.01.2005 ',
+         'from' => 1106434800,
+         'data' => 'userdel	2 22508,-102744 22382,-102254
+',
+         'type' => 'gesperrt'
        }
      
 );
