@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.32 2003/06/02 23:40:18 eserte Exp $
+# $Id: BrowserInfo.pm,v 1.32 2003/06/02 23:40:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2001 Slaven Rezic. All rights reserved.
@@ -151,6 +151,8 @@ sub set_info {
 	$self->{'display_size'} = [208,320]; # flip open, with flip closed: 208x144
     } elsif ($q->user_agent('TriumEclipse')) { # XXX
 	$self->{'display_size'} = [143,120];
+    } elsif ($q->user_agent('SIE-S55')) {
+	$self->{'display_size'} = [101,80];
     } elsif ($q->user_agent('Trium320') ||
 	     $q->user_agent('Trium630')) { # XXX
 	$self->{'display_size'} = [128,141];
@@ -174,6 +176,7 @@ sub set_info {
 	     Nokia7110 => [96, 65],
 	     Nokia6610 => [128, 128],
 	     Nokia7650 => [176, 208],
+	     Nokia6100 => [128, 90], # XXX ca.
 	    );
     TRY: {
 	    while(my($k,$v) = each %nokias) {
