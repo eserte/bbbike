@@ -493,6 +493,13 @@ läuft!
 als erstes solltest du mal Xcode (das sind die developer tools) installieren. das findest du entweder auf einer mit Xcode beschrifteten CD (bei älteren Macs) oder in deinem Applications Ordner unter Installers/Xcode Tools/Developer.mpkg (bei neueren Macs).
 Wenn du das installierst hast du erst mal (neben vielem anderen) alle
 Perl dokumentationen und nen gcc (C kompiler). 
+
+also, im Auslieferungszustand, befindet sich eine Perl v5.8.1-RC3, ohne Tk!
+Alles was ich installiert habe, ist eine X11, bzw. Darwin Umgebung, die gibts von und für Apple, auf der Apple - Homepage. Danach hab ich die XCode - Tools installiert, auch die sind auf der Apple Page zu finden. Bzw. bei mir, lag eine CD bei und die Pakete waren auf der Festplatte zu finden, unter installers!
+So, als nächstes und das wusste ich nicht hab ich ein Paket installiert, dass durch die installation, der Xcode Tools auf der Platte, in dem ordner der XCode Tools zu finden war es hies: X11sdk.pkg
+Zu guter letzt, über die Cpan-Shell, noch ein Force install Tk und
+alles lioef wunderbar!
+
 ## yes
 
 ## only DE
