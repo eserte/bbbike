@@ -4128,6 +4128,16 @@ $c->configure(-yscrollcommand =>
 		},
 	     );
 
+# Additional MouseWheel bindings
+$c->Tk::bind("<4>" => [sub { return if $_[1] ne "B4-";
+			     $c->yviewScroll(-1,"units") },
+		       Tk::Ev('s')]);
+$c->Tk::bind("<5>" => [sub { return if $_[1] ne "B5-";
+			     $c->yviewScroll(+1,"units") },
+		       Tk::Ev('s')]);
+$c->Tk::bind("<Shift-5>" => sub { $c->xviewScroll(+1,"units") });
+$c->Tk::bind("<Shift-4>" => sub { $c->xviewScroll(-1,"units") });
+
 if ($c->can('DropSite')) {
     eval {
 	$c->DropSite
@@ -4499,6 +4509,7 @@ sub define_item_attribs {
 
 	 '?'  => '#9f0000',
 	 '??' => '#8b0000', 	# DarkRed, bei Win undefiniert
+	 '?p' => '#af0000',
 	 'GPS' => 'red',	# GPS Relation
 	 'GPSs'   => "#c000c0",  # GPS street
 	 'GPSs~'  => "#f4c0f4",  # inaccurate
@@ -4839,6 +4850,12 @@ sub generate_plot_functions {
 	    my $cat_rueck;
 	    if ($cat_hin =~ /^(.*);(.*)$/) {
 		($cat_hin, $cat_rueck) = ($1, $2);
+	    }
+	    if ($cat_hin =~ /^([^:]+):\d+$/) {
+		$cat_hin = $1;
+	    }
+	    if (defined $cat_rueck && $cat_rueck =~ /^([^:]+):\d+/) {
+		$cat_rueck = $1;
 	    }
 	    return if defined $ignore and $cat_hin =~ /$ignore/;
 	    return if defined $restrict and $cat_hin !~ /$restrict/;
@@ -5698,7 +5715,7 @@ sub set_map_mode {
     $map_mode_deactivate->() if $map_mode_deactivate;
     undef $map_mode_deactivate; # XXX do something useful...
     if ($map_mode eq MM_SEARCH) {
-	if ($search_route_flag =~ /^ziel/) {
+	if (defined $search_route_flag && $search_route_flag =~ /^ziel/) {
 	    set_cursor('ziel');
 	} else {
 	    set_cursor('start');
@@ -7746,6 +7763,9 @@ sub plotstr {
 
 	    $draw_sub->($ret); # XXX evtl. den Code mit eval erzeugen
 	}
+# XXX turn into a warning if these do not match
+warn $str->pos;
+warn scalar @{$str->{Data}};
 	warn (Tk::Time_So_Far()-$bench . "s\n") if $verbose;
 
       PLOTSTR_CONT:
@@ -14545,6 +14565,7 @@ sub IncBusy {
 	if (eval q{ require Tk::InputO; 1 }) {
 	    for my $t ($top, values(%toplevel)) {
 		next if !Tk::Exists($t);
+		next if $args{-except} && $args{-except}{$t};
 		my $io = (Tk::Exists($t->{'BusyIO'})
 			  ? $t->{'BusyIO'}
 			  : $t->InputO);

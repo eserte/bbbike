@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.19 2003/05/09 22:51:23 eserte Exp $
+# $Id: Core.pm,v 1.19 2003/05/09 22:51:23 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -476,6 +476,9 @@ sub count {
 
 # gibt die aktuelle Position zurück
 sub pos { shift->{Pos} }
+
+# Accessor for Data (but it's OK to use {Data})
+sub data { shift->{Data} }
 
 # Gibt die Positionen (als Array) für einen bestimmten Namen zurück
 # Achtung: eine laufende init/next-Schleife wird hiermit zurückgesetzt!

@@ -146,6 +146,7 @@ cbbbike
 cbbbike.bat
 cmdbbbike
 cgi/bbbike.cgi
+cgi/bbbike-teaser.pl
 cgi/berlinmap.cgi
 cgi/configure-bbbike.cgi
 cgi/wapbbbike.cgi
@@ -157,6 +158,9 @@ cgi/tinyhttpd.config
 cgi/mksymlinks
 cgi/mapserver_comment.cgi
 cgi/mapserver_address.cgi
+cgi/mapserver_setcoord.cgi
+cgi/bbbike-temp-blockings.pl
+cgi/httpd.conf.tpl
 data/README
 data/.modified			for updating over the internet
 data/Berlin.coords.data
@@ -175,6 +179,7 @@ data/handicap_s
 data/hoehe
 data/housenumbers
 data/inaccessible_strassen
+data/innerberliner_grenze
 data/kinos
 data/kneipen
 data/kneipen-info
@@ -200,6 +205,7 @@ data/rbahnhof
 data/restaurants
 data/sbahn
 data/sbahnhof
+data/sbahnhof_bg
 data/sehenswuerdigkeit
 data/sehenswuerdigkeit.desc
 data/sehenswuerdigkeit_img/brandenburger_tor.gif
@@ -213,6 +219,7 @@ data/strassen
 data/strassen.desc
 data/ubahn
 data/ubahnhof
+data/ubahnhof_bg
 data/umsteigebhf
 data/wasserstrassen
 data/wasserumland
@@ -224,6 +231,8 @@ ext/BBBikeXS/BBBikeXS.xs
 ext/BBBikeXS/MANIFEST
 ext/BBBikeXS/Makefile.PL
 ext/BBBikeXS/t/base.t
+ext/BBBikeXS/t/makenet.t
+ext/BBBikeXS/t/strecke.t
 ext/BBBikeXS/typemap
 ext/BBBikeXS/README
 ext/BBBikeXS/sqrt.c

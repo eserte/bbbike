@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.18 2003/05/19 20:23:39 eserte Exp $
+# $Id: bbbike.cgi,v 6.20 2003/05/27 06:44:32 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -22,7 +22,7 @@ bbbike.cgi - CGI interface to bbbike
 use vars qw(@extra_libs);
 use FindBin;
 BEGIN {
-    if ($ENV{SERVER_NAME} =~ /radzeit\.de$/) {
+    if ($ENV{SERVER_NAME} =~ /(radzeit\.de|radzeit.herceg.de)$/) {
 	# Make it easy to switch between versions:
 	if ($FindBin::Script =~ /bbbike2/) {
 	    @extra_libs =
@@ -85,8 +85,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $bbbike_script $bbbike_script_cgi $cgi $port
 	    $search_algorithm $use_background_image
 	    $use_apache_session $cookiename
-	    $temp_blocking_from $temp_blocking_until
-	    $temp_blocking_file $temp_blocking_text
+	    @temp_blocking
 	   );
 
 #open(STDERR, ">>/tmp/bbbike.log");
@@ -509,37 +508,30 @@ Set this to true for debugging purposes.
 
 $VERBOSE = 0;
 
-=item $temp_blocking_from
+=item @temp_blocking
+
+Array with temporary blocking elements. Each element is a hash with the
+following keys set:
+
+=over
+
+=item from
 
 unix time of start of temporary blocking or undef.
 
-=cut
-
-$temp_blocking_from = undef;
-
-=item $temp_blocking_until
+=item until
 
 unix time of end of temporary blocking or undef.
 
-=cut
-
-$temp_blocking_until = undef;
-
-=item $temp_blocking_file
+=item file
 
 bbd file for temporary blocking data or undef.
 
-=cut
-
-$temp_blocking_file = undef;
-
-=item $temp_blocking_text
+=item text
 
 Explanation text for temporary blockings.
 
-=cut
-
-$temp_blocking_text = undef;
+=back
 
 =back
 
@@ -555,6 +547,9 @@ unshift(@Strassen::datadirs,
 eval { local $SIG{'__DIE__'};
        #warn "$0.config";
        do "$0.config" };
+
+eval { local $SIG{'__DIE__'};
+       do "$FindBin::RealBin/bbbike-teaser.pl" };
 
 if ($VERBOSE) {
     $StrassenNetz::VERBOSE    = $VERBOSE;
@@ -620,7 +615,7 @@ use vars qw(@ISA);
 
 } # jetzt beginnt wieder package main
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.20 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¶ verwenden!
@@ -1377,7 +1372,7 @@ sub choose_form () {
 Nebenstra&szlig;en). Bei nicht erfassten Straﬂen wird automatisch die
 n‰chste bekannte verwendet.<br>
 <i>Neu</i>: In der Datenbank sind jetzt auch ca. 120 Potsdamer Stra&szlig;en.</td>
-<td valign="top" @{[ $start_bgcolor ? "bgcolor=$start_bgcolor" : "" ]}>@{[ teaser() ]}</td>
+<td valign="top" @{[ $start_bgcolor ? "bgcolor=$start_bgcolor" : "" ]}>@{[ defined &teaser ? teaser() : "" ]}</td>
 </tr>
 </table>
 <p>
@@ -2421,27 +2416,52 @@ sub search_coord {
 	$extra_args{Algorithm} = $search_algorithm;
     }
 
-    my($custom_s, $custom_net);
-    if (defined $temp_blocking_file && defined $temp_blocking_from &&
-	defined $temp_blocking_until) {
+    my(%custom_s, $custom_net, %current_temp_blocking);
+    {
 	my $t = time;
-	if ($t >= $temp_blocking_from &&
-	    $t <= $temp_blocking_until) {
-	    if ($ENV{SERVER_NAME} =~ /vran.herceg.de/i) {
-		push @Strassen::datadirs, "/home/e/eserte/src/bbbike/misc"; # f¸r zu Hause
+	for my $temp_blocking (@temp_blocking) {
+	    if ($t >= $temp_blocking->{from} &&
+		$t <= $temp_blocking->{until}) {
+		my $type = $temp_blocking->{type} || 'gesperrt';
+		push @{ $current_temp_blocking{$type} }, $temp_blocking;
 	    }
+	}
+	if (keys %current_temp_blocking) {
+	    push @Strassen::datadirs,
+		"$FindBin::RealBin/../BBBike/misc/temp_blockings",
+		"$FindBin::RealBin/../misc/temp_blockings"
+		;
+	}
+	while(my($type, $list) = each %current_temp_blocking) {
+	    if (@$list) {
+		eval {
+		    $custom_s{$type} = MultiStrassen->new
+			(map { $_->{file} } @$list);
+		};
+		warn $@ if $@;
+	    }
+	    if ($custom && $custom eq 'temp-blocking') {
+		if ($type eq 'gesperrt' && $custom_s{$type}) {
+		    $net->load_user_deletions
+			($custom_s{$type},
+			 -merge => 1,
+			);
+		} elsif ($type eq 'handicap' && $custom_s{$type}) {
+		    if (!$handicap_s_net) {
+			warn "No net for handicap defined, ignoring temp_blocking=handicap";
+		    } else {
+			$handicap_s_net->merge_net_cat($custom_s{$type});
+		    }
+		}
+	    }
+	}
+	if (keys %custom_s) {
 	    eval {
-		$custom_s = Strassen->new($temp_blocking_file);
-		$custom_net = StrassenNetz->new($custom_s);
+		my $custom_multi = MultiStrassen->new(values %custom_s);
+		$custom_net = StrassenNetz->new($custom_multi);
 		$custom_net->make_net;
 	    };
-	    warn $@ if $@;
-	}
-	if ($custom && $custom_s && $custom eq 'temp-blocking') {
-	    $net->load_user_deletions
-		($custom_s,
-		 -merge => 1, # there is nothing to merge, but should be faster
-		);
+	    warn $@ if @;
 	}
     }
 
@@ -2455,6 +2475,14 @@ sub search_coord {
 	print BBBikePalm::route2palm(-net => $net, -route => $r[0],
 				     -startname => $startname,
 				     -zielname => $zielname);
+	return;
+    }
+
+    if (defined $output_as && $output_as eq 'mapserver') {
+	$q->param('coords', join("!", map { "$_->[0],$_->[1]" }
+				 @{ $r[0]->path }));
+	$q->param("imagetype", "mapserver");
+	draw_route();
 	return;
     }
 
@@ -2559,9 +2587,9 @@ sub search_coord {
 					      -default => 'temp-blocking');
 			print <<EOF;
 <center><form name="Ausweichroute" action="@{[ $q->self_url ]}">
-$temp_blocking_text
+@{[ join("<br>\n", map { $_->{text} } map { @$_ } values %current_temp_blocking) ]}
 $hidden
-<input type=submit value="Ausweichroute suchen">
+<br><input type=submit value="Ausweichroute suchen"><hr>
 </form></center><p>
 EOF
                     }
@@ -2726,7 +2754,14 @@ EOF
 	if ($with_comments) {
 	    if (!$comments_net) {
 		my @s;
-		for my $s (qw(comments handicap_s qualitaet_s)) {
+		my @comment_files = qw(comments qualitaet_s);
+		if ($custom && $custom eq 'temp-blocking' &&
+		    $custom_s{"handicap"}) {
+		    push @s, $custom_s{"handicap"};
+		} else {
+		    push @comment_files, "handicap_s";
+		}
+		for my $s (@comment_files) {
 		    eval {
 			push @s, Strassen->new($s);
 		    };
@@ -4341,38 +4376,6 @@ sub set_process {
     dbmopen(%proc, "$tmp_dir/bbbike-limit", 0640);
     $proc{$slot} = $$;
     dbmclose(%proc);
-}
-
-######################################################################
-#
-# Teaser
-#
-sub teaser {
-    my @teasers = (#'none',
-		   'routen', 'link');
-    my $sub = "teaser_" . $teasers[int(rand(@teasers))];
-    my $t = eval $sub . '()';
-    teaser_perltk() . ($t ne '' ? "<br>".blind_image(1,3)."<hr>".blind_image(1,3)."<br>$t" : "");
-}
-
-sub teaser_perltk {
-    <<EOF;
-<small><a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">Download</a> der Perl/Tk-Version</small>
-EOF
-}
-
-sub teaser_none { "" }
-
-sub teaser_routen {
-    <<EOF;
-<small>Ich sammle GPS-Routen von Berlin und Brandenburg. Bitte per Mail an <a target="_top" href="mailto:@{[ $BBBike::EMAIL ]}?subject=BBBike-GPS">Slaven Rezic</a> schicken.</small>
-EOF
-}
-
-sub teaser_link {
-    <<EOF;
-<small><a href="$bbbike_url?info=1#link">Link auf BBBike setzen</a></small>
-EOF
 }
 
 ######################################################################

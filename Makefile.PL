@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.84 2003/05/17 00:39:26 eserte Exp $
+# $Id: Makefile.PL,v 1.84 2003/05/17 00:39:26 eserte Exp eserte $
 
 BEGIN {
     $^W = 0;
@@ -103,7 +103,10 @@ use constant REQTABLE_LONGDESC=> 5;
    'für das Erzeugen von palmdoc-Dateien mit der Routenbeschreibung'],
   [qw/Astro::Sunrise	0	all	0	base/,
    'Anzeige des Sonnenuntergangs/-aufgangs im Info-Fenster'],
-
+  [qw/File::ReadBackwards 0	all	0	devel/,
+   'LogTracker plugin'],
+  [qw/Date::Calc	0	all	0	devel/,
+   'LogTracker plugin'],
  );
 
 # EXE prerequisites ####################################################

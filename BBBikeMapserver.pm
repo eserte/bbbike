@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.7 2003/02/04 23:47:14 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.7 2003/02/04 23:47:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -18,6 +18,7 @@
 package BBBikeMapserver;
 use strict;
 use File::Basename;
+use CGI qw(-oldstyle_urls);
 
 sub new {
     my($class, %args) = @_;
@@ -30,6 +31,7 @@ sub new {
     if (!$self->{TmpDir}) {
 	die "Can't set TmpDir";
     }
+    $self->{CGI} = CGI->new;
     $self;
 }
 
@@ -129,6 +131,19 @@ sub start_mapserver {
 	    @scopes = $scope;
 	}
 
+	my @marker_args;
+	if ($args{-start}) {
+	    @marker_args = (-start => $args{-start});
+	    $self->{CenterTo} = $args{-start};
+	} elsif (@{$self->{Coords}} > 1) {
+	    @marker_args = (-start => $self->{Coords}[0],
+			    -goal => $self->{Coords}[-1]);
+	    $self->{CenterTo} = $self->{Coords}[0];
+	} else {
+	    @marker_args = (-markerpoint => $self->{Coords}[-1]);
+	    $self->{CenterTo} = $self->{Coords}[0];
+	}
+
 	foreach my $scope (@scopes) {
 	    $map_path = $path_for_scope->($scope, "$prefix-");
 
@@ -151,11 +166,7 @@ sub start_mapserver {
 		  ? (-routeshapefile => $tmpfile2)
 		  : (-routecoords => join(",",@{$self->{Coords}}))
 		 ),
-		 (@{$self->{Coords}} > 1
-		  ? (-start => $self->{Coords}[0],
-		     -goal => $self->{Coords}[-1])
-		  : (-markerpoint => $self->{Coords}[-1])
-		 ),
+		 @marker_args,
 		 -scope => $scope,
 		 $orig_map_path,
 		 $map_path);
@@ -171,42 +182,56 @@ sub start_mapserver {
 
     # send Location:
     my $cgi_prog = $self->{MAPSERVER_PROG_RELURL};
-    my $cgi_prog_esc = CGI::escape($cgi_prog);
+#XXX del esc versions
+#    my $cgi_prog_esc = CGI::escape($cgi_prog);
     my $url = $self->{MAPSERVER_PROG_URL};
     my($width, $height) = ($args{-width}||6000, $args{-height}||6000); # meters
     my(@mapext) = $self->get_extents($width, $height);
-    my $mapext_esc = CGI::escape(join(" ", @mapext));
-    my $map_esc = CGI::escape($map_path);
+#    my $mapext_esc = CGI::escape(join(" ", @mapext));
+#    my $map_esc = CGI::escape($map_path);
     my @layers;
     if ($args{-layers}) {
 	@layers = @{ $args{-layers} };
     } else {
 	@layers = grep { $_ ne 'route' || $do_route } all_layers();
     }
-    my $layers = join("&", map { "layer=$_" } @layers);
-    my @param = ("zoomsize=2",
-		 "mapext=$mapext_esc",
-		 "map=$map_esc",
-		 "program=$cgi_prog_esc",
-		 $layers,
-		);
+#    my $layers = join("&", map { "layer=$_" } @layers);
+    my $q2 = CGI->new({});
+    $q2->param(zoomsize => 2);
+    $q2->param(mapext => join(" ", @mapext));
+    $q2->param(map => $map_path);
+    $q2->param(program => $cgi_prog);
+    for (@layers) {
+	$q2->param(layer => $_);
+    }
     if (defined $args{-bbbikeurl}) {
-	push @param, "bbbikeurl=" . CGI::escape($args{-bbbikeurl});
+#	push @param, "bbbikeurl=" . CGI::escape($args{-bbbikeurl});
+	$q2->param(bbbikeurl => $args{-bbbikeurl});
     }
     if (defined $args{-bbbikemail}) {
-	push @param, "bbbikemail=" . CGI::escape($args{-bbbikemail});
+#	push @param, "bbbikemail=" . CGI::escape($args{-bbbikemail});
+	$q2->param(bbbikemail => $args{-bbbikemail});
     }
-    print $self->{CGI}->redirect("$url?" . join("&", @param));
+    if (defined $args{-start}) {
+	$q2->param(startc => $args{-start});
+    }
+#    print $self->{CGI}->redirect("$url?" . join("&", @param));
+    print $self->{CGI}->redirect("$url?" . $q2->query_string);
 }
 
 sub get_extents {
     my($self, $width, $height) = @_;
-    if (!$self->{Coords} || !$self->{Coords}[0]) {
-	# Default is Brandenburger Tor, do not hardcode XXX
-	$self->{Coords} = ["8593,12243"];
+    my $center_to = $self->{CenterTo};
+    if (!defined $center_to) {
+	if (!$self->{Coords} || !$self->{Coords}[0]) {
+	    # Default is Brandenburger Tor, do not hardcode XXX
+	    $center_to = ["8593,12243"];
+	} else {
+	    $center_to = $self->{Coords}[0];
+	}
     }
-    my($x1,$y1) = split /,/, $self->{Coords}[0];
-    if (@{$self->{Coords}} == 1) {
+    my($x1,$y1) = split /,/, $center_to;
+    if (!$self->{Coords} || @{$self->{Coords}} <= 1) {
 	($x1-$width/2, $y1-$height/2, $x1+$width/2, $y1+$height/2);
     } else {
 	my($x2,$y2) = split /,/, $self->{Coords}[-1];

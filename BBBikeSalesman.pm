@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeSalesman.pm,v 1.6 2003/01/08 20:00:19 eserte Exp $
+# $Id: BBBikeSalesman.pm,v 1.6 2003/01/08 20:00:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -138,7 +138,7 @@ sub map_mode_activate {
 		      (-text => M"Abbruch",
 		       -command => sub { $main::escape = 1 },
 		      )->grid(-row => 0, -column => 2, -sticky => "eswn");
-		  main::IncBusy($main::top);
+		  main::IncBusy($main::top, -except => {$t=>1});
 		  #$t->Busy;
 		  eval {
 		      my(@path) = $salesman->best_path;
@@ -153,7 +153,7 @@ sub map_mode_activate {
 		  my $err = $@;
 		  #$t->Unbusy;
 		  main::DecBusy($main::top);
-		  $t->destroy;
+		  $t->destroy if Tk::Exists($t);
 		  $reset->();
 
 		  if ($err) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Salesman.pm,v 1.10 2003/01/17 19:33:42 eserte Exp $
+# $Id: Salesman.pm,v 1.10 2003/01/17 19:33:42 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2003 Slaven Rezic. All rights reserved.
@@ -22,14 +22,14 @@
 
 package Salesman;
 BEGIN {
-#    eval 'use Algorithm::Permute';
-#    if ($@) {
-#	warn "$@, fallback to List::Permutor";
+    eval 'use Algorithm::Permute 0.05; 1'; # XXX 0.06
+    if ($@) {
+	warn "$@, fallback to List::Permutor";
 	eval 'use List::Permutor;';
 	if ($@) {
 	    die $@;
 	}
-#    }
+    }
 }
 
 use strict;
@@ -116,77 +116,77 @@ sub _calculate_distances {
     }
 }
 
-#  sub best_path_algorithm_permute {
-#      my $self = shift;
-#      my $progress  = $self->{Progress};
-#      $main::escape = 0;
+sub best_path_algorithm_permute {
+    my $self = shift;
+    my $progress  = $self->{Progress};
+    $main::escape = 0;
 
-#      if ($progress) {
-#  	$progress->Init(-label => "Abbruch mit Esc");
-#      }
+    if ($progress) {
+	$progress->Init(-label => "Abbruch mit Esc");
+    }
 
-#      $self->_points; # XXX conditional?
-#      if (!$self->{Start} || !$self->{End}) {
-#  	return ();
-#      }
+    $self->_points; # XXX conditional?
+    if (!$self->{Start} || !$self->{End}) {
+	return ();
+    }
 
-#      if (!scalar keys %{ $self->{Distances} }) {
-#  	$self->_calculate_distances;
-#      }
-#      my@row = @{ $self->{Points} };
-#      my $count    = _fact(scalar @{ $self->{Points} });
+    if (!scalar keys %{ $self->{Distances} }) {
+	$self->_calculate_distances;
+    }
+    my@row = @{ $self->{Points} };
+    my $count    = _fact(scalar @{ $self->{Points} });
 
-#      my $best_permute;
-#      my $shortest_path;
-#      my $distances = $self->{Distances};
-#      my $tk        = $self->{Tk};
-#      my $i = 0;
-#      eval {
-#  	Algorithm::Permute::permute(sub {
-#   PERMUTE:
-#  	my $permute = [@row];
-#  	$i++;
-#  	if ($i%500 == 0) {
-#  	    $progress->Update(0.5+0.5*($i/$count));
-#  	    if ($tk) {
-#  		$tk->update;
-#  		if ($main::escape) {
-#  		    CORE::die("User break, using best path at moment");
-#  		}
-#  	    }
-#  	}
-#  	unshift @$permute, $self->{Start};
-#  	push    @$permute, $self->{End};
-#  	my $pathlen = 0;
-#  	for(my $j = 1; $j <= $#$permute; $j++) {
-#  	    if (exists $distances->{$permute->[$j-1]}{$permute->[$j]}) {
-#  		$pathlen += $distances->{$permute->[$j-1]}{$permute->[$j]};
-#  	    } else {
-#  		#XXX to verbose: warn "No path for permutation @$permute";
-#  		next PERMUTE;
-#  	    }
-#  	}
-#  	if (!defined $shortest_path ||
-#  	    $shortest_path > $pathlen) {
-#  	    $shortest_path = $pathlen;
-#  	    $best_permute = $permute;
-#  	    warn "Best one is $shortest_path" if $main::verbose;
-#  	}
-#      }, @row);
-#      };
-#      warn $@ if $@;
+    my $best_permute;
+    my $shortest_path;
+    my $distances = $self->{Distances};
+    my $tk        = $self->{Tk};
+    my $i = 0;
+    eval {
+	Algorithm::Permute::permute(sub {
+ PERMUTE:
+	my $permute = [@row];
+	$i++;
+	if ($i%500 == 0) {
+	    $progress->Update(0.5+0.5*($i/$count));
+	    if ($tk) {
+		$tk->update;
+		if ($main::escape) {
+		    CORE::die("User break, using best path at moment");
+		}
+	    }
+	}
+	unshift @$permute, $self->{Start};
+	push    @$permute, $self->{End};
+	my $pathlen = 0;
+	for(my $j = 1; $j <= $#$permute; $j++) {
+	    if (exists $distances->{$permute->[$j-1]}{$permute->[$j]}) {
+		$pathlen += $distances->{$permute->[$j-1]}{$permute->[$j]};
+	    } else {
+		#XXX to verbose: warn "No path for permutation @$permute";
+		next PERMUTE;
+	    }
+	}
+	if (!defined $shortest_path ||
+	    $shortest_path > $pathlen) {
+	    $shortest_path = $pathlen;
+	    $best_permute = $permute;
+	    warn "Best one is $shortest_path" if $main::verbose;
+	}
+    }, @row);
+    };
+    warn $@ if $@;
 
-#      if ($progress) {
-#  	$progress->Finish;
-#      }
+    if ($progress) {
+	$progress->Finish;
+    }
 
-#      if ($best_permute) {
-#  	warn "best one is: @$best_permute";
-#  	@$best_permute;
-#      } else {
-#  	();
-#      }
-#  }
+    if ($best_permute) {
+	warn "best one is: @$best_permute";
+	@$best_permute;
+    } else {
+	();
+    }
+}
 
 sub best_path_list_permutor {
     my $self = shift;
@@ -268,11 +268,11 @@ sub _fact {
     }
 }
 
-#if (defined &Algorithm::Permute::permute) {
-#    *best_path = \&best_path_algorithm_permute;
-#} else {
+if (defined &Algorithm::Permute::permute) {
+    *best_path = \&best_path_algorithm_permute;
+} else {
     *best_path = \&best_path_list_permutor;
-#}
+}
 
 1;
 

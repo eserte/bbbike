@@ -46,6 +46,7 @@ Knoten Märkische Allee	1 19693,11762 19802,11794 19882,11860 19918,11891
 Knoten Märkische Allee	1 19918,11891 19988,11821 20115,11730
 Knoten Märkische Allee	1 20115,11730 20014,11651
 Knoten Märkische Allee	1 20014,11651 20018,11698 19985,11739
+Gensinger Str./Alt-Friedrichsfelde	1 19005,11796 19144,11859 19283,11785
 Altstadt Köpenick	1 22196,4847 22377,4836 22383,4703 22472,4572 22502,4528 22396,4464
 Altstadt Köpenick	1 22093,4499 22196,4847
 Wuhletalstr.	1 20691,17463 20675,17515 20754,17672 20832,17824 20878,17842
@@ -234,6 +235,8 @@ Löwenberger Str. - Alt-Friedrichsfelde (nicht passierbarer Mittelstreifen)	3 174
 Alt-Friedrichsfelde - Löwenberger Str. (nicht passierbarer Mittelstreifen)	3 17249,11802 17436,11791 17477,11893
 Robert-Uhrig-Str. - Alt-Friedrichsfelde (nicht passierbarer Mittelstreifen)	3 17734,11408 17750,11771 17436,11791
 Alt-Friedrichsfelde - Robert-Uhrig-Str. (nicht passierbarer Mittelstreifen)	3 18220,11710 17750,11771 17734,11408
+Alt-Friedrichsfelde - Gensinger Str. (nicht passierbarer Mittelstreifen)	3 19005,11796 19283,11785 19144,11859
+Alt-Friedrichsfelde - Gensinger Str. (nicht passierbarer Mittelstreifen)	3 19144,11859 19005,11796 19283,11785
 Märkische Allee - Weißenhöher Weg (nicht passierbarer Mittelstreifen)	3 19802,11794 19693,11762 19827,11686
 Gervinusstr./Lewishamstr.	3 3587,10768 3631,10784 3839,10904
 Gervinusstr./Lewishamstr.	3 3839,10904 3631,10784 3587,10768
@@ -294,7 +297,6 @@ Schranke (Griesinger-Krankenhaus)	BNP:5:-169 21581,12182
 Hauptweg: Schranke	BNP:5:-105 9459,21686
 Drängelgitter (Hoher Bogen)	BNP:5:48 3831,8674
 Entlastungsstr. (Tiergartentunnel)	1:inwork 8172,11679 8129,11735 8056,12061 8063,12182
-Reichstagufer (Bauarbeiten)	2:inwork 8766,12541 8665,12548 8554,12593
 Schönow - Bernau: Autobahnbrücke gesperrt	2:inwork 20200,30732 20712,31032
 Behrenstr. (Bauarbeiten)	1:inwork 9492,12214 9365,12196
 Charlottenstr. (Bauarbeiten)	1:inwork 9476,12359 9492,12214
@@ -323,6 +325,10 @@ Gendarmenmarkt (Filmaufnahmen, ca. bis 2003-06-00)	2:inwork 9526,11911 9663,1192
 Brückenstr. (Bauarbeiten, ca. bis 2004-08-29)	1:inwork 11242,11720 11328,12040
 Krausenstr. (Bauarbeiten)	1s:inwork 9449,11512 9581,11523
 Potsdamer Platz/Ebertstr.	1:inwork 8553,11638 8542,11502
+Hönower Straße, Richtung Köpenick: Bauarbeiten, zwischen Wilhelmsmühlenweg und B1/5, gesperrt bis 2003-05-31	1:inwork 24631,11719 24591,11625 24603,11450 24658,11293
+Plauener Straße, Richtung Rhinstraße zwischen Marzahner Straße und Treffurter Straße: Straßenarbeiten, gesperrt bis 2003-06-30	1:inwork 17935,15781 17959,15084
+Dunckerstr.: Einbahnstr. während der Bauarbeiten in der Prenzlauer Allee ca. bis 2003-08-00	1:inwork 11603,15455 11744,15720 11840,15910 11939,16084
+Prenzlauer Allee (Bauarbeiten ca. bis 2003-08-00)	1:inwork 12076,16129 11997,15834 11941,15586 11898,15437
 Reutlinger Str.	1 7676,4216 7601,4485
 Sybelstr.	1 4006,10585 4256,10583
 Sybelstr.	1 4006,10585 3883,10577

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.21 2003/05/17 20:06:16 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.21 2003/05/17 20:06:16 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -1618,6 +1618,7 @@ sub route_info {
 # $routeinx: current route index
 # $seen: optional hash reference of seen comments XXX Rundfahrten?
 # XXX flaky.
+# XXX support for ":" in categories missing (except for PI)
 sub get_point_comment {
     my($self, $routeref, $routeinx, $seen, %args) = @_;
     return if $routeinx == $#$routeref;
@@ -1699,7 +1700,7 @@ sub get_point_comment {
 		    next POS;
 		}
 	    }
-	} elsif ($r->[Strassen::CAT()] eq 'PI') {
+	} elsif ($r->[Strassen::CAT()] =~ /^PI(:|$)/) {
 	CHECK: {
 		for my $i (0 .. $#{$r->[Strassen::COORDS()]}) {
 		    my $xy = join ",", @{ $routeref->[$routeinx+$i] };

@@ -198,7 +198,7 @@ sub BBBikeExp::plotstr_on_demand {
 	    my $restrict = undef; #XXX
 	    my $coordsys = $coord_system_obj->coordsys;
 	    my $use_stippleline = 0; # XXX Duplikat in plotstr
-	    if ($abk =~ /^q[ls]$/) {
+	    if (exists $line_dash{$abk}) {
 		if ($Tk::VERSION >= 800.016) {
 		    $use_stippleline = 2; # new dash code
 		} else {
