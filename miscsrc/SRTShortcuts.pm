@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.15 2004/07/03 22:44:47 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.15 2004/07/03 22:44:47 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -31,8 +31,6 @@ if (-e "$FindBin::RealBin/bbbike") {
 my $streets_track      = "$bbbike_rootdir/tmp/streets.bbd";
 my $orig_streets_track = "$bbbike_rootdir/tmp/streets.bbd-orig";
 my $acc_streets_track  = "$bbbike_rootdir/tmp/streets-accurate.bbd";
-my $acc_streets_uncorrect_track = "$bbbike_rootdir/tmp/streets-accurate-uncorrected.bbd";
-my $acc_points_uncorrect_track = "$bbbike_rootdir/tmp/points-all-uncorrected.bbd";
 
 use vars qw($hm_layer);
 
@@ -68,16 +66,12 @@ sub add_button {
     BBBikePlugin::place_menu_button
 	    ($mmf,
 	     [
-	      [Button => "Default penalty",
-	       -command => sub {
-		   require BBBikeEdit;
-		   $main::bbd_penalty = 1;
-		   $BBBikeEdit::bbd_penalty_file = "$ENV{HOME}/src/bbbike/tmp/unique-matches.bbd";
-		   if ($Strassen::datadirs[0] =~ /data_corrected/) {
-		       $BBBikeEdit::bbd_penalty_file = "$ENV{HOME}/src/bbbike/tmp/unique-matches-corrected.bbd";
-		   }
-		   BBBikeEdit::build_bbd_penalty_for_search();
-	       }],
+	      [Button => "Default penalty (unique matches)",
+	       -command => \&default_penalty,
+	      ],
+	      [Button => "Default penalty (fragezeichen)",
+	       -command => \&default_penalty_fragezeichen,
+	      ],
 	      [Button => "Edit with new GPS trk",
 	       -command => sub {
 		   require BBBikeEdit;
@@ -158,7 +152,7 @@ sub add_button {
 	       -command => sub { upload("upload-wpt") },
 	      ],
 	      [Button => "Update tracks and matches.bbd",
-	       -command => sub { upload("tracks develtracks ../../tmp/unique-matches.bbd ../../tmp/unique-matches-corrected.bbd") },
+	       -command => sub { upload("tracks develtracks ../../tmp/unique-matches.bbd") },
 	      ],
 	      [Button => "Add streets-accurate.bbd (all accurate GPS tracks)",
 	       -command => sub {
@@ -167,14 +161,6 @@ sub add_button {
 		   add_new_layer("str", $f);
 	       }
 	      ],
-##XXX del obsoleted by great conversion
-# 	      [Button => "Add streets-accurate-uncorrected.bbd (for region editing)",
-# 	       -command => sub {
-# 		   my $f = $acc_streets_uncorrect_track;
-# 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
-# 		   add_new_layer("str", $f);
-# 	       }
-# 	      ],
 	      [Button => "Add streets.bbd (all GPS tracks)",
 	       -command => sub {
 		   my $f = $streets_track;
@@ -189,14 +175,6 @@ sub add_button {
 		   add_new_layer("p", $f);
 	       }
 	      ],
-##XXX del obsoleted by great conversion
-# 	      [Button => "Add points-accurate-uncorrected.bbd (for region editing)",
-# 	       -command => sub {
-# 		   my $f = $acc_points_uncorrect_track;
-# 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
-# 		   add_new_layer("p", $f);
-# 	       }
-# 	      ],
 	      [Button => "Add hm96.bbd (Höhenpunkte)",
 	       -command => sub {
 		   my $f = "$ENV{HOME}/src/bbbike/miscsrc/senat_b/hm96.bbd";
@@ -205,16 +183,6 @@ sub add_button {
 		   $main::top->bind("<F12>"=> \&find_nearest_hoehe);
 	       }
 	      ],
-##XXX del obsoleted by great conversion
-# 	      [Button => "Edit in normal mode",
-# 	       -command => \&edit_in_normal_mode,
-# 	      ],
-# 	      [Button => "Edit in normal mode (landstrassen)",
-# 	       -command => \&edit_in_normal_mode_landstrassen,
-# 	      ],
-# 	      [Button => "Cancel edit in normal mode",
-# 	       -command => \&cancel_edit_in_normal_mode,
-# 	      ],
 	      [Button => "Show vmz diff",
 	       -command => \&show_vmz_diff,
 	      ],
@@ -383,6 +351,26 @@ sub find_nearest_hoehe {
 	     my($offset, $maxbytes) = @_;
 	     substr($selbuf, $offset, $maxbytes);
 	 });
+}
+
+sub default_penalty {
+    require BBBikeEdit;
+    $main::bbd_penalty = 1;
+    $BBBikeEdit::bbd_penalty_invert = 0;
+    $BBBikeEdit::bbd_penalty_file = "$ENV{HOME}/src/bbbike/tmp/unique-matches.bbd";
+    BBBikeEdit::build_bbd_penalty_for_search();
+}
+
+sub default_penalty_fragezeichen {
+    $main::add_net{fz} = 1;
+    main::change_net_type();
+
+    require BBBikeEdit;
+    $main::bbd_penalty = 1;
+    $BBBikeEdit::bbd_penalty_invert = 1;
+    $BBBikeEdit::bbd_penalty_file = "$ENV{HOME}/src/bbbike/data/fragezeichen";
+
+    BBBikeEdit::build_bbd_penalty_for_search();
 }
 
 1;
