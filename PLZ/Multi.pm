@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Multi.pm,v 1.6 2003/08/18 06:02:54 eserte Exp $
+# $Id: Multi.pm,v 1.7 2003/09/02 12:42:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -16,12 +16,16 @@ package PLZ::Multi;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 use Getopt::Long qw(GetOptions);
 BEGIN {
     if (!eval q{ use File::Temp qw(tempfile); 1; }) {
-	*tempfile = sub { (undef, "/tmp/plzmulti.$$") };
+	*tempfile = sub {
+	    my $f = "/tmp/plzmulti.$$";
+	    open(TEMP, ">$f") or die $!;
+	    (\*TEMP, $f);
+        };
     }
 }
 use File::Copy qw(move);
@@ -86,8 +90,7 @@ sub new {
 	if (ref $_ && UNIVERSAL::isa($_, "Strassen")) {
 	    # convert into PLZ file
 	    require Strassen::Strasse;
-	    require File::Temp;
-	    my($fh, $filename) = File::Temp::tempfile(UNLINK => 1);
+	    my($fh, $filename) = tempfile(UNLINK => 1);
 	    my $s = $_;
 	    $s->init;
 	    while(1) {
