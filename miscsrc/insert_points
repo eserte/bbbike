@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.32 2004/04/27 22:34:33 eserte Exp $
+# $Id: insert_points,v 1.33 2004/05/02 21:24:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -49,7 +49,7 @@ package BBBikeModify;
 # 3: comments
 # 4: new radwege (like T_NORMAL, but insert to multiple lines)
 use constant T_NORMAL => 0;
-use constant T_OLD_RADWEGE => 1;
+use constant T_OLD_RADWEGE => 1; # XXX not supported anymore
 use constant T_AMPEL => 2;
 use constant T_COMMENTS => 3;
 use constant T_RADWEGE => 4;
@@ -76,7 +76,7 @@ my $n;
 my @custom_check_files;
 my $custom_file_list;
 my @add_check_files_noorig;
-my $useint;
+my $useint; # XXX never used?
 my $orig = 1;
 
 my $operation;
@@ -350,13 +350,14 @@ sub process {
 		    if ($verbose) {
 			warn "Check for ($map_from $map_to|$map_to $map_from)\n";
 		    }
-		    my @changed = grep(/\b($map_from $map_to|$map_to $map_from)\b/, @data);
+		    my @changed = grep(/(?<=\s)($map_from $map_to|$map_to $map_from)\b/, @data);
 		    if (@changed) {
 			push @{$change_files[$type]}, $file;
 			push @{$change_names{$file}},
 			    map { /^([^\t]+)/ ? $1 : () } @changed;
 		    }
 		} elsif ($type == T_OLD_RADWEGE) {
+		    # XXX not supported anymore
 		    if ($verbose) {
 			warn "Check for ($map_from\t$map_to|$map_to\t$map_from)\n";
 		    }
@@ -385,7 +386,7 @@ sub process {
 		my $map_rx = ($current_coordsys eq '' ? 'B?' : $current_coordsys.'?');
 		# XXX verbose fehlt
 		if ($type == T_NORMAL || $type == T_TEMPBLOCK || $type == T_COMMENTS || $type == T_OLD_RADWEGE || $type == T_RADWEGE) {
-		    if (grep(/\b$map_rx$map_from\b/, @data)) {
+		    if (grep(/(?<=\s)$map_rx$map_from\b/, @data)) {
 			push @{$change_files[$type]}, $file;
 		    }
 		} elsif ($type == T_AMPEL) {
@@ -552,25 +553,26 @@ sub process {
 		while(<R>) {
 		    if ($operation eq 'insert') {
 			if ($type == T_NORMAL || $type == T_TEMPBLOCK) {
-			    if (/\b$map_from $map_to\b/) {
-				s/\b($map_from) ($map_to)\b/$1 $map_middle $2/;
-			    } elsif (/\b$map_to $map_from\b/) {
-				s/\b($map_to) ($map_from)\b/$1 $map_middle $2/;
+			    if (/(?<=\s)$map_from $map_to\b/) {
+				s/(?<=\s)($map_from) ($map_to)\b/$1 $map_middle $2/;
+			    } elsif (/(?<=\s)$map_to $map_from\b/) {
+				s/(?<=\s)($map_to) ($map_from)\b/$1 $map_middle $2/;
 			    }
 			    print W $_;
 			} elsif ($type == T_RADWEGE) {
-			    if (/\b$map_from $map_to\b/) {
-				(my $first = $_) =~ s/\b($map_from) ($map_to)\b/$1 $map_middle/;
-				(my $second = $_) =~ s/\b($map_from) ($map_to)\b/$map_middle $2/;
+			    if (/(?<=\s)$map_from $map_to\b/) {
+				(my $first = $_) =~ s/(?<=\s)($map_from) ($map_to)\b/$1 $map_middle/;
+				(my $second = $_) =~ s/(?<=\s)($map_from) ($map_to)\b/$map_middle $2/;
 				print W "$first$second";
-			    } elsif (/\b$map_to $map_from\b/) {
-				(my $first = $_) =~ s/\b($map_to) ($map_from)\b/$1 $map_middle/;
-				(my $second = $_) =~ s/\b($map_to) ($map_from)\b/$map_middle $2/;
+			    } elsif (/(?<=\s)$map_to $map_from\b/) {
+				(my $first = $_) =~ s/(?<=\s)($map_to) ($map_from)\b/$1 $map_middle/;
+				(my $second = $_) =~ s/(?<=\s)($map_to) ($map_from)\b/$map_middle $2/;
 				print W "$first$second";
 			    } else {
 				print W $_;
 			    }
 			} elsif ($type == T_OLD_RADWEGE) {
+			    # XXX not supported anymore
 			    if (/^($map_from)\t($map_to)\b(.*)/) {
 				print W "$1\t$map_middle$3\n";
 				print W "$map_middle\t$2$3\n";
@@ -583,10 +585,10 @@ sub process {
 			}
 		    } elsif ($operation eq 'changeline') {
 			if ($type == T_NORMAL || $type == T_TEMPBLOCK || $type == T_RADWEGE) {
-			    if (/\b$map_from $map_to\b/) {
-				s/\b($map_from) $map_to\b/$1 $map_new_to/;
-			    } elsif (/\b$map_to $map_from\b/) {
-				s/\b$map_to ($map_from)\b/$map_new_to $1/;
+			    if (/(?<=\s)$map_from $map_to\b/) {
+				s/(?<=\s)($map_from) $map_to\b/$1 $map_new_to/;
+			    } elsif (/(?<=\s)$map_to $map_from\b/) {
+				s/(?<=\s)$map_to ($map_from)\b/$map_new_to $1/;
 			    }
 			    print W $_;
 			} elsif ($type == T_OLD_RADWEGE) {
@@ -605,7 +607,7 @@ sub process {
 			}
 		    } elsif ($operation eq 'change') {
 			if ($type == T_NORMAL || $type == T_TEMPBLOCK || $type == T_RADWEGE) {
-			    s/\b$map_from\b/$1$map_new_from/g;
+			    s/(?<=\s)$map_from\b/$1$map_new_from/g;
 			    print W $_;
 			} elsif ($type == T_AMPEL) {
 			    if (/^$map_from\b/) {

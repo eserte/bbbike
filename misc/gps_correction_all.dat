@@ -288,7 +288,7 @@ E 12°50'42.8"	N 52°43'15.0"	-27826,34514	# bei Kuhhorst
 E 12°38'36.5"	N 52°42'40.9"	-41445,33569	# Warsow/nach Jahnberge
 E 12°24'37.6"	N 52°44'41.8"	-57189,36948	# Schönholz-Neuwerder/n. Neust.
 E 12°22'27.6"	N 52°52'48.0"	-59810,51935	# bei Zernitz
-E 11°45'13.3"	N 52°53'39.8"	-101767,52956	# Seehausen
+#XXX eher falsch, siehe oben: E 11°45'13.3"	N 52°53'39.8"	-101767,52956	# Seehausen
 E 11°55'34.6"	N 52°51'37.0"	-90058,49547	# Wendemark
 E 11°45'58.3"	N 52°11'26.9"	-100781,-25093	# Körbelitz/B1
 E 11°49'44.9"	N 52°04'22.7"	-96457,-38135	# Gommern
@@ -332,3 +332,13 @@ E 13°41'15.0"	N 52°39'46.8"	29154,29127	# Wilmersdorf/Barnim
 -1651,2415	-1651,2415	#
 15873,14046	15873,14046	#
 21847,794	21847,794	#
+######################################################################
+# weitere Stützpunkte from mapsource, noch ungeprüft
+N52 46 59.9	E14 02 11.3	52281,43189	# Bad Freienwalde B158/B167
+N52 35 49.4	E14 14 17.8	66637,22704	# Neuhardenberg B167/L36 nach Trebnitz
+N52 48 50.5	E12 45 48.1	-33528,44837	# Fehrbellin (Knick der L16)
+#N53 15 52.1	E13 36 23.6	Boitzenburg (hmmm, reichlich unspezifisch)
+N53 23 36.8	E13 35 04.5	20214,110213	# L259/L25, Fuerstenwerder
+#N51 21 59.7	E12 44 38.9	Wurzen: B6/S11 (hmmm, wo ist das?)
+#N52 16 52.3	E11 25 22.9	Haldensleben:B245/L24 nach Hundisburg (hmmm, es gibt zwei Stränge der B245?)
+N52 31 42.2	E11 26 02.5	-126837,12362	# B71/B188

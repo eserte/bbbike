@@ -115,6 +115,7 @@ my $keep_comment;
 my $keep_prefixed;
 my $keep_point_attrib;
 my $keep_everything;
+my $auto_descent_from_mount = 1;
 my $base_file;
 if (!GetOptions("bahnhof=s"        => \$bahnhof,
 		"specborder=s"     => \$specborder,
@@ -134,6 +135,7 @@ if (!GetOptions("bahnhof=s"        => \$bahnhof,
 		"keepprefixed!"    => \$keep_prefixed,
 		"keeppointattrib!" => \$keep_point_attrib,
 		"keepeverything!"  => \$keep_everything,
+		"autodescent!"     => \$auto_descent_from_mount,
 		"basefile=s"       => \$base_file,
 	       )) {
     usage("Wrong option");
@@ -141,6 +143,7 @@ if (!GetOptions("bahnhof=s"        => \$bahnhof,
 
 if ($keep_everything) {
     $keep_comment = $keep_prefixed = $keep_point_attrib = 1;
+    $auto_descent_from_mount = 0;
 }
 
 if (defined $data_from_file) {
@@ -307,7 +310,7 @@ LINES: while(defined($_ = nextline())) {
     }
     my $cat = shift @coord;
 
-    if ($cat eq 'St;' && !$keep_everything) {
+    if ($cat eq 'St;' && $auto_descent_from_mount) {
 	# Steigungen: automatische Erzeugung der Gegenrichtung
 	# "Steigung" durch "Gefälle" ersetzen
 	require Strassen::Core;
@@ -368,7 +371,12 @@ LINES: while(defined($_ = nextline())) {
 	    }
 	    if ($keep_prefixed) {
 		if ($type eq $global_use_map) {
-		    warn "Unnecessary prefix found, therefore converting";
+		    #warn "Unnecessary prefix found, therefore converting";
+		} elsif ((!defined $to_map && $type eq 'H') ||
+			 (defined $to_map && $type eq $to_map)) {
+		    $coords .= " " if $coords ne '';
+		    $coords .= "$oldx,$oldy";
+		    next LINE;
 		} else {
 		    $coords .= " " if $coords ne '';
 		    $coords .= $_;

@@ -274,17 +274,23 @@ sub new_from_data_ref {
 }
 
 # Erzeugt ein neues Strassen-Objekt mit Restriktionen
+# -restrictions => \@cats: do not copy records with these categories
+# -grep => \@cats: do only copy records with these categories (only if set)
+# -callback => sub { my($record) = shift; ... }: copy only if the callback
+#    returns a true value for the given record
 ### AutoLoad Sub
 sub new_copy_restricted {
     my($class, $old_s, %args) = @_;
     my %restrictions;
     my %grep;
+    my $callback;
     if ($args{-restrictions}) {
 	%restrictions = map { ($_ => 1) } @{ $args{-restrictions} };
     }
     if ($args{-grep}) {
 	%grep = map { ($_ => 1) } @{ $args{-grep} };
     }
+    $callback = delete $args{-callback};
 
     my $res = $class->new;
     $old_s->init;
@@ -293,6 +299,7 @@ sub new_copy_restricted {
 	last if !@{$ret->[COORDS]};
 	next if (keys %grep && !exists $grep{$ret->[CAT]});
 	next if exists $restrictions{$ret->[CAT]};
+	next if ($callback && !$callback->($ret));
 	$res->push($ret);
     }
 

@@ -1110,9 +1110,6 @@ sub advanced_coord_menu {
 		   -command => \&set_coord_interactive);
     $bpcm->command(-label => M"Linienkoordinaten setzen",
 		   -command => \&set_line_coord_interactive);
-    $bpcm->command(-label => M"Suchen",
-		   -accelerator => "Ctrl-F",
-		   -command => sub { search_anything() });
     $bpcm->separator;
     {
 	$bpcm->checkbutton(-label => M"Kreuzungen/Kurvenpunkte (pp) zeichnen",
@@ -2370,7 +2367,7 @@ sub search_anything {
 	    foreach my $search_file (@search_files) {
 		my @matches;
 		my $pid;
-		if (is_in_path("grep")) {
+		if (is_in_path("XXXgrep")) {
 		    $pid = open(GREP, "-|");
 		    if (!$pid) {
 			exec("grep", "-i", $s, $search_file) || warn "Can't exec program grep with $search_file: $!";

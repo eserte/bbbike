@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.49 2004/01/17 20:30:47 eserte Exp $
+# $Id: PLZ.pm,v 1.49 2004/01/17 20:30:47 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003 Slaven Rezic. All rights reserved.
@@ -177,10 +177,10 @@ use constant LOOK_COORD    => 3;
 sub look {
     my($self, $str, %args) = @_;
 
-    warn "->look($str, " . join(" ", %args) .")\n" if $VERBOSE;
-
     my $file = $args{File} || $self->{File};
     my @res;
+
+    warn "->look($str, " . join(" ", %args) .") in `$file'\n" if $VERBOSE;
 
     #XXX use fgrep instead of grep? slightly faster, no quoting needed!
     my $grep_type = ($args{Agrep} ? 'agrep' : 'grep');

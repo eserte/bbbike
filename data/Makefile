@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.7 2004/04/27 22:25:47 eserte Exp eserte $
+# $Id: Makefile,v 2.9 2004/05/02 21:08:12 eserte Exp $
 #
 
 BBBIKEDIR=		..
@@ -75,6 +75,8 @@ strassen:	.strassen.tmp plaetze
 # radwege werden leicht anders konvertiert (approx. 1m Abweichung), aber
 # noch tolerierbar
 #
+# XXX Hx,y nach x,y umwandeln!
+#
 # diff sieht zurzeit gut aus, Konvertierung kann erfolgen, wenn Tools
 # wie insert_points etc. funktionieren
 #
@@ -82,8 +84,24 @@ strassen:	.strassen.tmp plaetze
 #   make -k origconvert origconvert-all
 #
 # Quick diff between both directories:
+#
 # diff --exclude="*~" --exclude="*.st" --exclude="*-info" --exclude="*.desc" --exclude=BASE --exclude=".check*" --exclude=".nextrun*" --exclude=".*" --exclude="*-orig" --exclude "GNUmakefile*" --exclude "*.coords.data" --exclude RCS --exclude README --exclude "add_*" --exclude "inaccessible_strassen" --exclude "innerberliner_grenze" --exclude "kinos" --exclude "kneipen" --exclude "restaurants*" --exclude "old" --exclude "oldcoord" --exclude "orig" --exclude "multi_bez_str" --exclude "sehenswuerdigkeit_img" --exclude "str_cont_ausnahme" --exclude "umsteigebhf" -ru /tmp/convert ~/src/bbbike/data | less
 #
+#   and:
+#
+# diff /tmp/convert/ampelschaltung-orig.txt  ~/src/bbbike/misc/ampelschaltung.txt
+#
+# Vorgehensweise zur Konvertierung:
+# - Datei-orig einchecken und wieder auschecken
+# - "make origconvert" (mindestens für diese Datei) aufrufen
+# - zur Sicherheit: "diff /tmp/convert/datei datei" aufrufen
+# - zur Sicherheit: wc -l auf beide -orig-Versionen aufrufen (sollte gleich sein)
+# - Datei-orig nach oldcoord verschieben
+# - mv /tmp/convert/datei-orig hierher
+# - Eintrag in BASE korrigieren
+# - zur Sicherheit "make" aufrufen
+# - datei-orig mit inkrementierten Version einchecken
+#   logeintrag: map transition (B => H)
 
 ORIGCONVERTDIR=/tmp/convert
 TARGETS2=$(TARGETS:Nampelschaltung:Nrbahn:Nrbahnhof:Nplz:Nradwege_exact:Nmount:Nberlin:S/$/-orig/)
@@ -137,6 +155,68 @@ $(ORIGCONVERTDIR)/ampelschaltung-orig.txt: ../misc/ampelschaltung-orig.txt
 
 #strassen-orig:	oldcoord/strassen-orig
 #	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -frommap B -keepeverything $> > $@
+
+######################################################################
+# 2. Phase
+# Alle Dateien, die E oder andere Prefixe haben:
+ORIGCONVERT2DIR=/tmp/convert2
+TARGETS4=
+TARGETS4+=ampeln-orig
+TARGETS4+=brunnels-orig
+TARGETS4+=comments_cyclepath-orig
+TARGETS4+=comments_ferry-orig
+TARGETS4+=comments_kfzverkehr-orig
+TARGETS4+=comments_misc-orig
+TARGETS4+=comments_mount-orig
+TARGETS4+=comments_route-orig
+TARGETS4+=deutschland-orig
+TARGETS4+=faehren-orig
+TARGETS4+=flaechen-orig
+TARGETS4+=gesperrt-orig
+TARGETS4+=gesperrt_car-orig
+TARGETS4+=green-orig
+TARGETS4+=handicap_l-orig
+TARGETS4+=hoehe-orig
+TARGETS4+=landstrassen-orig
+TARGETS4+=landstrassen2-orig
+TARGETS4+=obst-orig
+TARGETS4+=orte-orig
+TARGETS4+=orte2-orig
+TARGETS4+=potsdam-orig
+TARGETS4+=qualitaet_l-orig
+TARGETS4+=qualitaet_s-orig
+TARGETS4+=rbahn-orig
+TARGETS4+=relation_gps-orig
+TARGETS4+=sbahn-orig
+TARGETS4+=sbahnhof-orig
+TARGETS4+=sbahnhof_bg-orig
+TARGETS4+=sehenswuerdigkeit-orig
+TARGETS4+=vorfahrt-orig
+TARGETS4+=wasserstrassen-orig
+TARGETS4+=wasserumland-orig
+TARGETS4+=wasserumland2-orig
+TARGETS5=$(TARGETS4:S/^/$(ORIGCONVERT2DIR)\//)
+
+.for f in $(TARGETS4)
+$(ORIGCONVERT2DIR)/$f:	$f
+	env BBBIKE_DATADIR=$(ORIGCONVERT2DIR) $(CONVERT2HAFAS) -keepcomment -keeppointattrib -noautodescent $f > $(ORIGCONVERT2DIR)/$f
+.endfor
+
+origconvert2:	$(ORIGCONVERT2DIR) $(TARGETS5)
+
+$(ORIGCONVERT2DIR):
+	if [ ! -d $(ORIGCONVERT2DIR) ] ; then \
+	    mkdir $(ORIGCONVERT2DIR); \
+	fi
+	cp -f Makefile $(ORIGCONVERT2DIR)
+	cp -f Makefile.mapfiles $(ORIGCONVERT2DIR)
+	if [ ! -e $(ORIGCONVERT2DIR)/strassen ] ; then \
+	    cp strassen $(ORIGCONVERT2DIR); \
+	fi
+	cat BASE $(MISCDIR)/BASE | perl -pe 's/\t+./\tH/' > $(ORIGCONVERT2DIR)/BASE
+
+origconvert2-all:
+	cd $(ORIGCONVERT2DIR) && env BBBIKE_DATADIR=$(ORIGCONVERT2DIR) make BBBIKEDIR=${.CURDIR}/..
 
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

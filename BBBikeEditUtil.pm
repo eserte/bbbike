@@ -84,7 +84,8 @@ sub parse_dates {
     my $date_time_to_epoch = sub {
 	my($S,$M,$H,$d,$m,$y) = @_;
 	$m--;
-	if ($y < 100) { $y += 2000 }
+	if    ($y < 90)  { $y += 2000 }
+	elsif ($y < 100) { $y += 1900 }
 	$y-=1900;
 	my $day_inc = 0;
 	if ($H == 24) {
@@ -96,10 +97,21 @@ sub parse_dates {
 	    $time = Time::Local::timelocal($S,$M,$H,$d,$m,$y);
 	};
 	if ($@) {
-	    if (defined &main::status_message) {
-		main::status_message($@, "die");
-	    } else {
-		die $@;
+	    if ($d == 0) {
+		# use end of month
+		# warn "adjust to end of month";
+		$d = month_days($m,$y);
+	    }
+	    eval {
+		$time = Time::Local::timelocal($S,$M,$H,$d,$m,$y);
+	    };
+	    if ($@) {
+		if (defined &main::status_message) {
+		    main::status_message($@, "die");
+		} else {
+		    require Carp;
+		    Carp::confess($@);
+		}
 	    }
 	}
 	if ($day_inc) {
@@ -116,6 +128,8 @@ sub parse_dates {
     my $full_date_rx  = qr/$date_rx\D+$time_rx/;
     my $ab_rx         = qr/(?:ab[:\s]+|Dauer[:\s]+|vom[:\s]+)/;
     my $bis_und_rx    = qr/(?:bis|und|\s*-\s*)(?:\s+(?:ca\.|voraussichtlich|zum))?/;
+    my $isodaterx = qr/\b(20\d{2})-(\d{2})-(\d{2})\b/;
+    my $eudaterx  = qr/\b([0123]?\d)\.([01]?\d)\.(\d{4})\b/;
 
     my($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2);
     # XXX use $full_date_rx etc. (after testing rxes!)
@@ -183,6 +197,44 @@ sub parse_dates {
 	    }
 	    $new_end_time = Time::Local::timelocal(@l);
 	    $rx_matched     = 6;
+
+	# These are originally from check_dates:
+	} elsif (($y1,$m1,$d1, $y2,$m2,$d2) = $btxt =~
+		 /$isodaterx # start date
+		  .*
+		  $isodaterx # end date
+		  /x) {
+	    $new_start_time = $date_time_to_epoch->(0,0,0,$d1,$m1,$y1);
+	    $new_end_time   = $date_time_to_epoch->(59,59,23,$d2,$m2,$y2);
+	    $rx_matched     = 10;
+	} elsif (($d1,$m1,$y1, $d2,$m2,$y2) = $btxt =~
+		 /$eudaterx # start date
+		  .*
+		  $eudaterx # end date
+		  /x) {
+	    $new_start_time = $date_time_to_epoch->(0,0,0,$d1,$m1,$y1);
+	    $new_end_time   = $date_time_to_epoch->(59,59,23,$d2,$m2,$y2);
+	    $rx_matched     = 11;
+	} elsif (($y1,$m1,$d1) = $btxt =~
+		 /\b(?: seit|ab|vom )\s+(?: dem\s+ )? $isodaterx/xi) {
+	    $new_start_time = $date_time_to_epoch->(0,0,0,$d1,$m1,$y1);
+	    $rx_matched     = 12;
+	} elsif (($d1,$m1,$y1) = $btxt =~
+		 /\b(?: seit|ab|vom )\s+(?: dem\s+ )? $eudaterx/xi){
+	    $new_start_time = $date_time_to_epoch->(0,0,0,$d1,$m1,$y1);
+	    $rx_matched     = 13;
+	} elsif (($y2,$m2,$d2) = $btxt =~
+		 /$isodaterx      # end date
+		  /x) {
+	    $new_end_time   = $date_time_to_epoch->(59,59,23,$d2,$m2,$y2);
+	    $rx_matched     = 14;
+	} elsif (($d2,$m2,$y2) = $btxt =~
+		 /$eudaterx         # end date
+		  /x) {
+	    $new_end_time   = $date_time_to_epoch->(59,59,23,$d2,$m2,$y2);
+	    $rx_matched     = 15;
+	# ^^^ until here
+
 	} else {
 	    $rx_matched     = 7;
 	}
@@ -194,6 +246,18 @@ sub parse_dates {
     }
     ($new_start_time, $new_end_time, $prewarn_days, $rx_matched);
 }
+
+# REPO BEGIN
+# REPO NAME month_days /home/e/eserte/src/repository 
+# REPO MD5 349f6caae4054c70e91da1cda0eeea5f
+
+sub month_days {
+    my($m,$y) = @_;
+    my $d = [31,28,31,30,31,30,31,31,30,31,30,31]->[$m-1];
+    $d++ if $m == 2 && leapyear($y);
+    $d;
+}
+# REPO END
 
 1;
 

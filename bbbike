@@ -2169,6 +2169,12 @@ sub do_iconframe {
 			       }
 			   });
 	}
+	$ausm->command(-label => M"Volltextsuche",
+		       -accelerator => "Ctrl-F",
+		       -command => sub {
+			   require BBBikeAdvanced;
+			   search_anything();
+		       });
     }
     $strcm->separator;
     $strcm->cascade(-label => M"Straßenkategorien");
@@ -8526,6 +8532,11 @@ sub activate_temp_blockings {
 	plot("p", "temp_sperre", -draw => 0);
 	plot("str", "temp_sperre_s", -draw => 0);
 	make_net(); # XXX find more performant solution
+	undef $temporary_handicap_s;
+	if ($handicap_s_net) {
+	    undef $handicap_s_net;
+	    make_handicap_net();
+	}
 	return;
     }
 
@@ -8563,9 +8574,14 @@ sub activate_temp_blockings {
 	warn "Aktive temporäre Sperrungen: " . join(", ", $ms->dependent_files) . "\n" if $verbose;
 	make_net() if !$net;
 	$net->make_sperre($ms, Type => "all");
+	$temporary_handicap_s = Strassen->new_copy_restricted($ms, -callback => sub { $_[0]->[Strassen::CAT] =~ /^q\d/ });
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$temporary_handicap_s],[])->Indent(1)->Useqq(1)->Dump; # XXX
+	if ($handicap_s_net) {
+	    undef $handicap_s_net;
+	    make_handicap_net();
+	}
 	plot("p", "temp_sperre", -object => $ms, -draw => 1);
 	plot("str", "temp_sperre_s", -object => $ms, -draw => 1);
-	# XXX handicaps werden noch nicht bei der Routensuche berücksichtigt!
     };
     if ($@) {
 	$show_active_temp_blockings = 0;
@@ -12918,7 +12934,7 @@ sub search_route {
 	    # XXX optprefs
 	}
 
-	# Qualität und Handicap
+	# Qualität, Handicap und temporäre Handicaps
 	foreach my $def ({OptSwitch	 => \$qualitaet_s_optimierung,
 			  OptName	 => 'Qualität',
 			  Speed          => \%qualitaet_s_speed,
@@ -12935,7 +12951,8 @@ sub search_route {
 			 },
 			) {
 	    my $opt = $ {$def->{OptSwitch}};
-	    if ($opt || $optprefs{$def->{OptName}}) {
+	    my $optname = $def->{OptName};
+	    if ($opt || (defined $optname && $optprefs{$optname})) {
 		my $speed = $def->{Speed};
 		my $makenet = $def->{MakeNet};
 		my $catprefix = $def->{CatPrefix};
@@ -14061,9 +14078,13 @@ sub make_qualitaet_net {
 sub make_handicap_net {
     if (!$handicap_s_net) {
 	eval {
-	    $handicap_s_net = StrassenNetz->new
-		(MultiStrassen->new(Strassen->new("handicap_s"),
-				    Strassen->new("handicap_l")));
+	    my @s = (Strassen->new("handicap_s"),
+		     Strassen->new("handicap_l"),
+		    );
+	    if ($temporary_handicap_s) {
+		push @s, $temporary_handicap_s;
+	    }
+	    $handicap_s_net = StrassenNetz->new(MultiStrassen->new(@s));
 	    $handicap_s_net->make_net_cat;
 	};
 	if ($@ && !$no_original_datadir) {
@@ -16214,6 +16235,7 @@ sub set_verbose {
     $GfxConvert::VERBOSE      = $verbose;
     $Hooks::VERBOSE           = $verbose;
     $FURadar::VERBOSE         = $verbose;
+    $PLZ::VERBOSE             = $verbose;
 }
 
 # crops the array in $want_extends to the limits in $extends

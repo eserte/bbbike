@@ -3165,8 +3165,10 @@ sub temp_blockings_editor {
 		      return;
 		  }
 		  if (-e $file) {
-		      $t->messageBox(-message => "Existierende Datei kann nicht überschrieben werden");
-		      return;
+		      my $ans = $t->messageBox(-type => "YesNo", -icon => "question", -message => "Soll die existierende Datei `$file' überschrieben werden?");
+		      if ($ans !~ /yes/i) {
+			  return;
+		      }
 		  }
 		  my $blocking_text = $get_text->();
 		  $blocking_text =~ s/\'/\\\'/g; # mask for perl sq string
@@ -3404,17 +3406,5 @@ sub draw_pp {
     main::DecBusy($top);
     main::status_message($err, "die") if $err;
 }
-
-# REPO BEGIN
-# REPO NAME month_days /home/e/eserte/src/repository 
-# REPO MD5 349f6caae4054c70e91da1cda0eeea5f
-
-sub month_days {
-    my($m,$y) = @_;
-    my $d = [31,28,31,30,31,30,31,31,30,31,30,31]->[$m-1];
-    $d++ if $m == 2 && leapyear($y);
-    $d;
-}
-# REPO END
 
 1;

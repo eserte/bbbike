@@ -45,3 +45,14 @@ a.ms:link    { color:#000000; }
 a.ms:visited { color:#333333; }
 
 .new { font-weight:bold;color:#a00000; }
+
+.teaserbox {
+  width:100%;
+  background-color:#ffdead;
+  padding:4px;
+  margin-bottom:4px;
+}
+
+.teaser {
+  font-size:small;
+}

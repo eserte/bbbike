@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.12 2004/03/22 23:38:16 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.13 2004/05/02 20:41:06 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 my $streets_track      = "$ENV{HOME}/src/bbbike/tmp/streets.bbd";
 my $orig_streets_track = "$ENV{HOME}/src/bbbike/tmp/streets.bbd-orig";
@@ -93,6 +93,41 @@ sub add_button {
 		       main::status_message("No file from draw_gpsman_data", "warn");
 		   }
 		   main::plot('str','fz', -draw => 1);
+	       }],
+	      [Button => "Tracks in region",
+	       -command => sub {
+		   require BBBikeEdit;
+		   require BBBikeGPS;
+		   if (@main::coords != 2) {
+		       main::status_message("Expecting exactly two points forming a region", "die");
+		   }
+		   my @region_corners = map { @$_ } @main::coords;
+		   my %seen_track;
+		   my @tracks = sort grep {
+		       if (!$seen_track{$_}) {
+			   $seen_track{$_}++;
+			   1;
+		       } else {
+			   0;
+		       }
+		   } grep { /\.trk$/ }
+		       map { ($main::c->gettags($_))[1] }
+			   $main::c->find(overlapping => @region_corners);
+		   my $t = $main::top->Toplevel(-title => "Tracks in region");
+		   $t->transient($main::top) if $main::transient;
+		   my $lb = $t->Scrolled("Listbox", -scrollbars => "osoe")->pack(-fill => "both", -expand => 1);
+		   $lb->insert("end", @tracks);
+		   $lb->bind("<1>" => sub {
+				 my $base = $lb->get(($lb->curselection)[0]);
+				 my $file = BBBikeEdit::find_gpsman_file($base);
+				 if (!$file) {
+				     main::status_message(M("Keine Datei zu $base gefunden"));
+				     return;
+				 }
+				 BBBikeGPS::do_draw_gpsman_data($main::top, $file, -solidcoloring => 1);
+			     });
+		   $t->Button(Name => "close",
+			      -command => sub { $t->destroy })->pack;
 	       }],
 	      [Button => "My edit mode",
 	       -command => sub {
@@ -212,7 +247,7 @@ sub show_lbvs_diff {
 
 sub edit_in_normal_mode {
     require BBBikeEdit;
-    my $map = "berlinmap";
+    my $map = "standard";
     BBBikeEdit->draw_pp("strassen", -abk => "s");
 #XXX does not work :-(
 #    require BBBikeExp;
@@ -226,7 +261,7 @@ sub edit_in_normal_mode {
 
 sub edit_in_normal_mode_landstrassen {
     require BBBikeEdit;
-    my $map = "brbmap";
+    my $map = "standard";
     BBBikeEdit->draw_pp(["landstrassen", "landstrassen2"], -abk => "l");
 #XXX does not work :-(
 #    require BBBikeExp;
@@ -234,7 +269,7 @@ sub edit_in_normal_mode_landstrassen {
     main::set_coord_output_sub($map);
     $SRTShortcuts::force_edit_mode = 1;
     $main::use_current_coord_prefix = 0;
-    $main::coord_prefix = "E";
+    $main::coord_prefix = undef;
     main::set_map_mode(&main::MM_BUTTONPOINT);
 }
 

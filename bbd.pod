@@ -120,7 +120,7 @@ the maptype B<polar>.
 Denotes that the information in the next block or line was provided by
 I<source>. This may be an email address or full name of an author, an
 URL providing more information, a Message-Id of a mail or posting, a
-date, or a combination of all.
+date, or a combination of all. An alias for C<by:> is C<according_to:>.
 
 =item C<unverified_by: I<source>>
 

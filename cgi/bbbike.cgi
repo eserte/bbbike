@@ -4818,7 +4818,7 @@ bekommt man dazu mehr Informationen. Als Beispiel kann man sich einen
 <a name="pda"><h4>PDA-Version für iPAQ/Linux</h4></a>
 Für iPAQ-Handhelds mit Familiar Linux gibt es eine kleine Version von BBBike: <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">tkbabybike</a>.
 <a name="wap"><h4>WAP</h4></a>
-Per WAP-Handy kann man unter <a href="@{[ $BBBike::BBBIKE_WAP ]}">@{[ $BBBike::BBBIKE_WAP ]}</a> BBBike nutzen.
+BBBike kann man per WAP-Handy unter der Adresse <a href="@{[ $BBBike::BBBIKE_WAP ]}">@{[ $BBBike::BBBIKE_WAP ]}</a> nutzen.
 <p>
 <a name="gpsupload"><h4>GPS-Upload</h4></a>
 Es besteht die experimentelle Möglichkeit, sich <a href="@{[ $bbbike_url ]}?uploadpage=1">GPS-Tracks oder bbr-Dateien</a> anzeigen zu lassen.<p>
