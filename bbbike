@@ -699,7 +699,7 @@ Tk::CmdLine::SetArguments();
     label => M"Übersichtskarte mit Hauptstraßen", var => \$overview_draw{'s'}],
    ['coloring','=s','red',
     label => M"Einfärben der Route", var => \$coloring,
-    choices => [qw(red blue power wind)]],
+    choices => [qw(red blue black power wind)]],
    ['handheld','!',undef,
     label => M"Handheld", var => \$is_handheld],
 

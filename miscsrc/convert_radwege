@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: convert_radwege,v 1.20 2003/06/02 23:02:52 eserte Exp $
+# $Id: convert_radwege,v 1.21 2003/11/12 00:11:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002 Slaven Rezic. All rights reserved.
@@ -94,11 +94,16 @@ my %rev_category_code;
     $s = Strassen->new("-");
     $s->init;
     %rev_category_code = reverse %Radwege::category_code;
+    my $r;   # current street record
+    my $rci; # current street coord counter
     $getnext = sub {
-	my $r = $s->next;
-	return if !@{ $r->[Strassen::COORDS()] };
-	if (@{ $r->[Strassen::COORDS()] } != 2) {
-	    die "Nicht genau zwei Koordinaten, Position " . $s->pos;
+	if (!$r || @{$r->[Strassen::COORDS()]} == $rci) {
+	    $r = $s->next;
+	    return if !@{ $r->[Strassen::COORDS()] };
+	    $rci = 1;
+	}
+	if (@{ $r->[Strassen::COORDS()] } < 2) {
+	    die "Sollte mindestens zwei Koordinaten enthalten, Position " . $s->pos;
 	}
 	my @l;
 	if ($r->[Strassen::CAT()] =~ /;/) {
@@ -109,7 +114,8 @@ my %rev_category_code;
 	    push @l, $rev_category_code{$r->[Strassen::CAT()]};
 	    push @l, "kein";
 	}
-	push @l, @{$r->[Strassen::COORDS()]};
+	push @l, @{$r->[Strassen::COORDS()]}[$rci-1, $rci];
+	$rci++;
 	@l;
     };
 }

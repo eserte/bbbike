@@ -53,7 +53,8 @@ auf der Strecke?
 
 =item *
 
-Auf welchen StraE<szlig>en fahre ich, wenn ich von A nach B kommen will?
+Auf welchen StraE<szlig>en muss ich fahren und wie muss ich abbiegen,
+wenn ich von A nach B kommen will?
 
 =item *
 
@@ -68,6 +69,11 @@ Wo gibt es Steigungen und GefE<auml>lle?
 Kann ich HauptstraE<szlig>en und/oder Kopfsteinpflasterstrecken auf
 meiner Strecke vermeiden?
 
+=item *
+
+Kann ich E<quot>grE<uuml>neE<quot> Wege auf meiner Strecke bevorzugen?
+Kann ich unbeleuchtete StraE<szlig>en meiden?
+
 =back
 
 =head2 AUTOMATISCHE SUCHE
@@ -75,29 +81,36 @@ meiner Strecke vermeiden?
 Start- und Zielpunkt einer Route setzt man, indem man mit der linken
 Maustaste auf eine StraE<szlig>e klickt. Nach dem Setzen des
 Zielpunktes berechnet das Programm die kE<uuml>rzeste Route und zeigt
-sie an. Danach kann die Route verlE<auml>ngert werden. Soll eine neue
-Route (mit neuem Start- und Zielpunkt) berechnet werden, kann die alte
-mit der rechten Maustaste oder mit Klick auf das Icon B<Route
-zurE<uuml>cksetzen> gelE<ouml>scht werden. Mit der mittleren Maustaste
-oder mit der Backspace-Taste kann jeweils der letzte Punkt der Route
-gelE<ouml>scht werden. Mit der Delete-Taste (Entf) kann die Route bis
-zum letzten Via-Punkt gelE<ouml>scht werden.
+sie an. Danach kann die Route mit Klick verlE<auml>ngert werden. Soll
+eine neue Route (mit neuem Start- und Zielpunkt) berechnet werden,
+kann die alte mit dem KontextmenE<uuml>punkt E<quot>Route
+lE<ouml>schenE<quot> oder mit Klick auf das Icon B<Route
+zurE<uuml>cksetzen> gelE<ouml>scht werden. Mit der Backspace-Taste
+kann der letzte Punkt der Route gelE<ouml>scht werden. Mit der
+Delete-Taste (Entf) kann die Route bis zum letzten Via-Punkt
+gelE<ouml>scht werden.
 
-Wenn Winddaten existieren (automatisch aus dem WWW geholt oder manuell
-eingegeben), werden die RE<uuml>ckenwindstrecken grE<uuml>n und die
-Gegenwindstrecken rot dargestellt.
+Die Route kann eingefE<auml>rbt werden (MenE<uuml>punkt Route >
+EinfE<auml>rben der Route), und zwar rot, schwarz, blau oder nach
+Windrichtung oder Leistung. FE<uuml>r das EinfE<auml>rben nach
+Windrichtung benE<ouml>tigt man Winddaten (automatisch aus dem WWW
+geholt oder manuell eingegeben). Die RE<uuml>ckenwindstrecken werden
+dann grE<uuml>n und die Gegenwindstrecken rot dargestellt. FE<uuml>r
+das EinfE<auml>rben nach Leistung benE<ouml>tigt man zusE<auml>tzlich
+die persE<ouml>nlichen Daten des Fahrers (siehe
+L<Bikepower|"Fahrrad-Symbol">).
 
 =head2 MANUELLE ROUTENERSTELLUNG
 
 Die manuelle Routenerstellung wird zum Beispiel bei der Erstellung
 einer Tourplanung verwendet, bei der nicht das Suchen einer
 kE<uuml>rzesten Strecke im Vordergrund steht. Sie funktioniert
-prinzipiell wie die B<automatische Suche>, nur wird der Benutzer mehr
-Punkte eingeben, um die Route festzulegen. Mit Klick auf Alt-Button1
-oder Shift-Button1 (Klick auf die linke Maustaste und gleichzeitiges
-DrE<uuml>cken der Alt- oder Shift-Taste) kann ein beliebiger Punkt
-gekennzeichnet werden (also ein Punkt, der nicht auf einer
-StraE<szlig>e liegt).
+prinzipiell wie die B<automatische Suche>, nur wird der Benutzer
+mehrere Zwischenpunkte eingeben, um die Route festzulegen. Mit Klick
+auf Alt-Button1 oder Shift-Button1 (Klick auf die linke Maustaste und
+gleichzeitiges DrE<uuml>cken der Alt- oder Shift-Taste) kann ein
+beliebiger Punkt gekennzeichnet werden (also ein Punkt, der nicht auf
+einer StraE<szlig>e liegt).
 
 =head1 INFORMATIONSLEISTE
 
@@ -120,8 +133,9 @@ Klick wird die StraE<szlig>en-Auswahl angezeigt.
 
 =item km
 
-LE<auml>nge der aktuellen Route in Kilometern. Mit der rechten Taste
-kann zwischen der Angabe in Kilometern und Metern umgeschaltet werden.
+LE<auml>nge der aktuellen Route in Kilometern. Mit Klick auf den
+Schriftzug E<quot>kmE<quot> kann zwischen der Angabe in Kilometern und
+Metern umgeschaltet werden.
 
 =item %
 
@@ -136,7 +150,9 @@ Klick auf die Fahrzeit wird das Alarm-Fenster geE<ouml>ffnet. Mit der
 rechten Maustaste kann die jeweilige Geschwindigkeit als
 E<quot>ReferenzgeschwindigkeitE<quot> ausgewE<auml>hlt werden. Mit dem
 Ampel-Icon kann das Einbeziehen von Ampeln in die Fahrzeit
-ein-/ausgeschaltet werden.
+ein-/ausgeschaltet werden. Mit dem Kopfsteinpflaster-Icon unterhalb
+des Ampel-Icons kann das Einbeziehen von Kopfsteinpflaster- und
+E<auml>hnlichen Strecken in die Fahrzeit ein-/ausgeschaltet werden.
 
 =item W
 
@@ -147,9 +163,9 @@ W-Feld kann eine andere Leistung (in Watt) eingegeben werden. Mit
 Klick auf die Fahrzeit wird das Alarm-Fenster geE<ouml>ffnet. Mit der
 rechten Maustaste kann die jeweilige Leistung als
 E<quot>ReferenzleistungE<quot> (intern wird diese auf eine
-Geschwindigkeit umberechnet) ausgewE<auml>hlt werden. Mit dem
-Ampel-Icon kann das Einbeziehen von Ampeln in die Fahrzeit
-ein-/ausgeschaltet werden.
+Geschwindigkeit umberechnet) ausgewE<auml>hlt werden. Auch hier kann
+man mit Ampel- und Kopfsteinpflaster-Icon zum Einbeziehen von
+Ampeln/Kopfsteinpflasterstrecken in die Fahrzeit einbeziehen.
 
 =item Datum der Winddaten
 

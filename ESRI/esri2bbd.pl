@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: esri2bbd.pl,v 1.11 2003/11/11 23:28:08 eserte Exp $
+# $Id: esri2bbd.pl,v 1.12 2003/11/11 23:32:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -131,6 +131,9 @@ Convert the ESRI shapefile with this script:
 Start bbbike with no initial data:
 
     env LC_ALL=en perl bbbike -fast -menu
+
+The setting of the environment variable causes bbbike to start with
+english labels.
 
 =item *
 

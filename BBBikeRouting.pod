@@ -181,20 +181,20 @@ Other members of C<BBBikeRouting> are not meant for public use.
 
 =head2 DATA FILES
 
-It is assumed that data is available in a C<data> subdirectory of the
-current script. The C<data/strassen> file is mandatory if routing on
+It is assumed that data is available in a F<data> subdirectory of the
+current script. The F<data/strassen> file is mandatory if routing on
 streets is used (this is true for the vehicles C<pedestrian>, C<bike>
 and C<car>), otherwise, for public transport, the files C<data/ubahn>
-(for undergrounds) and C<data/sbahn> (for city railway) are used.
+(for undergrounds) and F<data/sbahn> (for city railway) are used.
 
-For public transport, also a file C<data/umsteigebhf> is needed for
+For public transport, also a file F<data/umsteigebhf> is needed for
 railway junctions with different station names (e.g. in Berlin you can
 change between "Rathaus Spandau" (U-Bahn) and "Spandau" (S-Bahn)).
 
-For bike and car street routing, the file C<data/gesperrt> should
+For bike and car street routing, the file F<data/gesperrt> should
 contain one-way streets, blocked streets, and blocked paths. Extra
 blocked streets for cars only should be put into the file
-C<data/gesperrt_car>. It is assumed that there are no blocked streets
+F<data/gesperrt_car>. It is assumed that there are no blocked streets
 for pedestrians at all.
 
 =head1 AUTHOR
