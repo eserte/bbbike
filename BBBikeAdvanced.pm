@@ -981,7 +981,9 @@ warn "$x $y $x_ddd $y_ddd";
 		     my($tx,$ty) = transpose($Karte::Polar::obj->map2standard($x_ddd, $y_ddd));
 		     mark_point('-x' => $tx, '-y' => $ty,
 				-clever_center => 1);
-		 } elsif ($stadtplandiensturl =~ m{x_wgs/(.*?)/y_wgs/(.*?)/}) {
+		 } elsif ($stadtplandiensturl =~ m{x_wgs/(.*?)/y_wgs/(.*?)/}    ||
+			  $stadtplandiensturl =~ m{x_wgs=(.*?)[&;]y_wgs=([\.\d]+)}
+			 ) {
 		     my($x, $y) = ($1, $2);
 		     require Karte::Polar;
 		     my $x_ddd = Karte::Polar::dmm2ddd(13, $x);

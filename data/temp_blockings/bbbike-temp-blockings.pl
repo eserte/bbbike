@@ -1019,4 +1019,20 @@ EOF
 userdel	2 -10559,23255 -10737,23418
 EOF
      },
+     { from  => 1098741600, # 2004-10-26 00:00
+       until => 1104534000, # 2005-01-01 00:00
+       text  => 'B 101; (B101 in Trebbin); in der Ortslage Trebbin Straßenbau Vollsperrung 27.10.2004-31.12.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -1623,-21150 -1887,-21501
+EOF
+     },
+     { from  => 1097964000, # 2004-10-17 00:00
+       until => 1098828000, # 2004-10-27 00:00
+       text  => 'L 43; (Dorfstraße in Kobbeln); südl. vom Kieselwitzer Weg Durchlaßbau Vollsperrung 18.10.2004-26.10.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 90062,-33160 90271,-33398
+EOF
+     },
     );

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.28 2004/10/10 22:59:47 eserte Exp $
+# $Id: Makefile,v 2.28 2004/10/10 22:59:47 eserte Exp eserte $
 #
 
 BBBIKEDIR=		..
@@ -732,7 +732,7 @@ check-dates:	.check_dates
 .check_dates:	*-orig ${MISCSRCDIR}/check_dates
 	@echo Expired today:
 	@${MISCSRCDIR}/check_dates *-orig
-	@echo Expired in two weeks:
+	@echo Expired in the next two weeks:
 	@${MISCSRCDIR}/check_dates -reldays 14 *-orig
 	@touch $@
 

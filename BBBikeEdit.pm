@@ -3126,7 +3126,11 @@ sub temp_blockings_editor {
     Tk::grid($t->Label(-text => M("bbd-Datei").":"),
 	     $pe = $t->PathEntry(-textvariable => \$file),
 	     $t->Checkbutton(-text => "as data",
-			     -variable => \$as_data),
+			     -variable => \$as_data,
+			     -command => sub {
+				 $pe->configure(-state => $as_data ? "disabled" : "normal"),
+			     },
+			    ),
 	     -sticky => "w",
 	    );
     $pe->focus;
