@@ -557,13 +557,14 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
     my $old_umask = umask 0022;
     my %kdedirs;
     if ($type eq 'root' || $type eq 'best') {
-	%kdedirs = $kde->kde_dirs(undef, 1);
+	%kdedirs = $kde->kde_dirs(-writable => 1);
     }
 
     if ($type eq 'user' || (!defined %kdedirs && $type eq 'best')) {
 	my $homedir = _get_homedir();
 	if (defined $homedir) {
-	    %kdedirs = $kde->kde_dirs("$homedir/.kde", 1);
+	    %kdedirs = $kde->kde_dirs(-prefix => "$homedir/.kde",
+				      -writable => 1);
 	}
 	Print "$@\n" if $@;
 	$type = 'user';
