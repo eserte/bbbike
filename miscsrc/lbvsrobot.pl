@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.16 2004/05/23 06:06:23 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.17 2004/06/01 06:03:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -437,6 +437,13 @@ sub mark_irrelevant_entries {
     my(@details) = @_;
     for my $detail (@details) {
 	my $ignore = 0;
+	# These are never ignored, even if it would match the next regexp
+	if ($detail->{text} =~
+	    /( Einbahnstr
+	     | Vollsperrung
+            )/xs) {
+	    next;
+	}
 	if ($detail->{text} =~
 	    /( halbseitige\s+Sperrung
 	     | halbseitig\s+gesperrt
@@ -447,7 +454,7 @@ sub mark_irrelevant_entries {
 	     | ger\.Eineng
 	     | Fahrstreifen\s+eingeengt
 	     | Höhenbeschränk.
-	     | Tragfähigk.
+	     | Tragfähigk\.
 	     | Traglastbeschränkung
 	     | Randsicherung
 	     | Fahrbahn\s+nicht\s+betroffen

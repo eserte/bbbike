@@ -288,7 +288,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'handicap',
      },
      { from  => 1083708000, # 2004-05-05 00:00
-       until => Time::Local::timelocal(reverse(2004-1900,5-1,24,23,59,59)),
+       until => Time::Local::timelocal(reverse(2004-1900,5-1,19,23,59,59)),
        file  => 'karstaedt.bbd',
        text  => 'B 5; OD Karstädt, Bahnübergang; Gleisbauarbeiten; Vollsperrung; 06.05.2004-24.05.2004 ',
        type  => 'handicap',
@@ -364,5 +364,17 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        file  => 'radrennen_hindenburgdamm.bbd',
        text  => 'Auguststraße zwischen Hindenburgdamm und Augustplatz Manteuffelstraße zwischen Augustplatz und Hindenburgdamm Hindenburgdamm (westliche Fahrbahn) zwischen Manteuffelstraße und Auguststraße Radrennen, Straße gesperrt, Dauer: 22.05.2004, 12.00 Uhr bis 20.00 Uhr. ',
        type  => 'gesperrt',
+     },
+     { from  => 1086919200, # 2004-06-11 04:00
+       until => 1087163999, # 2004-06-13 23:59
+       file  => 'karlmarx.bbd',
+       text  => 'Karl-Marx-Straße zwischen Flughafenstraße und Uthmannstraße sowie Erkstraße zwischen Donaustraße und Karl-Marx-Straße: Straßenfest, Straßen gesperrt, Dauer: 12.06.2004, 04.00 Uhr bis 13.06,24.00 Uhr. ',
+       type  => 'gesperrt',
+     },
+     { from  => 1086041261, # 2004-06-01 00:07
+       until => 1086991200, # 2004-06-12 00:00
+       file  => 'liesenstr.bbd',
+       text  => 'Liesenstr. (Mitte) Richtung Süden zwischen Gartenstr. und Chausseestr. Baustelle, Fahrtrichtung gesperrt (bis 11.06.2004)',
+       type  => 'handicap',
      },
     );

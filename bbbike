@@ -4930,6 +4930,10 @@ sub define_item_attribs {
     foreach my $type (@comments_types) {
 	$str_file{"comm-$type"} = "comments-$type";
     }
+    # XXX fragezeichen should really be in "data"
+    if ($datadir =~ /data_corrected/) {
+	$str_file{'fz'} = "fragezeichen";
+    }
     %p_file =
 	('lsa'    => 'ampeln',
 	 'u'      => 'ubahnhof',
