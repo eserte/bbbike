@@ -23,6 +23,8 @@ extern "C" {
 #include <stdlib.h>
 #include <string.h>
 
+#include "sqrt.h"
+
 #if PERL_REVISION > 5 || (PERL_REVISION == 5 && (PERL_VERSION > 5 || (PERL_VERSION == 5 && (PERL_SUBVERSION > 57))))
 # define MODERN_PERL
 #endif
@@ -67,6 +69,27 @@ extern "C" {
 # define TRANSPOSE_X_SCALAR(x) (newSVnv(TRANSPOSE_X(x)))
 # define TRANSPOSE_Y_SCALAR(y) (newSVnv(TRANSPOSE_Y(y)))
 #endif
+
+#define LOAD_AMPEL_IMAGE(tag,var)	{			\
+    dSP;							\
+    dXSTARG; /* XXX why is this necessary? */			\
+    int count;							\
+    ENTER;							\
+    SAVETMPS;							\
+    PUSHMARK(SP);						\
+    XPUSHp(tag, 5);						\
+    PUTBACK;							\
+    count = call_pv("main::get_symbol_scale", G_SCALAR);	\
+    SPAGAIN;							\
+    if (count != 1) {						\
+	croak("Unsuccesful call to get_symbol_scale");		\
+    }								\
+    var = newSVsv(POPs);					\
+    PUTBACK;							\
+    FREETMPS;							\
+    LEAVE;							\
+}
+        
 
 typedef SV* StrassenNetz;
 
@@ -939,12 +962,17 @@ fast_plot_point(canvas, abk, fileref, progress)
 	strcpy(abkcat, abk);
 	strcat(abkcat, "-fg");
 	av_push(tags, newSVpv(abkcat, 0));
-
+#ifdef LOAD_AMPEL_IMAGE
+	LOAD_AMPEL_IMAGE("lsa-B", andreaskreuz);
+	LOAD_AMPEL_IMAGE("lsa-X", ampel);
+	LOAD_AMPEL_IMAGE("lsa-Zbr", zugbruecke);
+#else
 	andreaskreuz = perl_get_sv("main::andreaskr_klein_photo", 0);
-	if (!andreaskreuz) croak("Can't get andreaskr_klein_photo\n");
 	ampel        = perl_get_sv("main::ampel_klein_photo", 0);
-	if (!ampel) croak("Can't get ampel_klein_photo\n");
 	zugbruecke   = perl_get_sv("main::zugbruecke_klein_photo", 0);
+#endif
+	if (!andreaskreuz) croak("Can't get andreaskr_klein_photo\n");
+	if (!ampel) croak("Can't get ampel_klein_photo\n");
 	if (!zugbruecke) croak("Can't get zugbruecke_klein_photo\n");
 
 	if (SvROK(fileref) && SvTYPE(SvRV(fileref)) == SVt_PVAV) {
@@ -1042,9 +1070,14 @@ fast_plot_point(canvas, abk, fileref, progress)
 	  if (!fileref_array) break;
 	  if (av_len(fileref_array) < file_count) break;
 	}
-	
+
 	SvREFCNT_dec(tags_sv);
 	SvREFCNT_dec(image_sv);
+#ifdef LOAD_AMPEL_IMAGE
+	SvREFCNT_dec(ampel);
+	SvREFCNT_dec(andreaskreuz);
+	SvREFCNT_dec(zugbruecke);
+#endif
 
 	av_undef(tags);
 
