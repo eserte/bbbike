@@ -7664,6 +7664,7 @@ sub plot_layer {
 sub plotstr {
     my($abk, %args) = @_;
     my $c = $c;
+    return if !$c;
     my $std = 1;
     my $transpose = \&transpose;
     if (exists $args{Canvas}) {
@@ -8487,6 +8488,7 @@ sub _get_landstr_obj {
 sub plotp {
     my($abk, %args) = @_;
     return if $abk =~ /^pp/; # wird in plotstr gezeichnet
+    return if !$c;
     if ($abk eq 'p') {
 	require BBBikeAdvanced;
 	ploths();

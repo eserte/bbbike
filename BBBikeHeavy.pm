@@ -129,14 +129,14 @@ sub BBBikeHeavy::load_plugin {
     if (-r $file) {
 	do $file or do {
 	    # XXX use status_message etc.
-	    warn "Die Datei $file konnte nicht geladen werden";
+	    warn "Die Datei $file konnte nicht geladen werden: $@";
 	    return;
 	};
 	$INC{"$mod.pm"} = $file;
     } elsif (-r "$FindBin::RealBin/$file") {
 	do "$FindBin::RealBin/$file" or do {
 	    # XXX use status_message etc.
-	    warn "Die Datei $FindBin::RealBin/$file konnte nicht geladen werden";
+	    warn "Die Datei $FindBin::RealBin/$file konnte nicht geladen werden: $@";
 	    return;
 	};
 	$INC{"$mod.pm"} = "$FindBin::RealBin/$file";

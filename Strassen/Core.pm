@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.30 2003/11/15 14:28:23 eserte Exp $
+# $Id: Core.pm,v 1.30 2003/11/15 14:28:23 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -461,6 +461,12 @@ sub init {
     $self->{Pos} = -1;
 }
 
+# Like init(), but use a private iterator
+sub init_for_iterator {
+    my($self, $iterator) = @_;
+    $self->{"Pos_Iterator_$iterator"} = -1;
+}
+
 # Setzt den Index auf den angegeben Wert (jedenfalls so, dass ein
 # anschließendes next() das richtige zurückgibt).
 sub set_index {
@@ -482,6 +488,12 @@ sub first {
 sub next {
     my $self = shift;
     $self->get(++($self->{Pos}));
+}
+
+# Like next(), but use a private iterator
+sub next_for_iterator {
+    my($self, $iterator) = @_;
+    $self->get(++($self->{"Pos_Iterator_$iterator"}));
 }
 
 sub prev {
@@ -592,6 +604,7 @@ sub to_koord1_slow {
 #   UseCache: gibt an, ob vom Cache gelesen und ein Cache geschrieben werden
 #             soll
 #   Kurvenpunkte: bei TRUE werden auch die Kurvenpunkte zurückgegeben
+#   AllPoints:    synonym for KurvenPunkte
 #
 # See below for the output forms.
 ### AutoLoad Sub
@@ -599,12 +612,13 @@ sub all_crossings {
     my($self, %args) = @_;
     my $rettype      = $args{RetType};
     my $use_cache    = $args{UseCache};
-    my $min_strassen = ($args{'Kurvenpunkte'} ? 1 : 2);
+    my $all_points   = $args{AllPoints} || $args{Kurvenpunkte};
+    my $min_strassen = ($all_points ? 1 : 2);
 
     if (!defined $rettype) { $rettype = 'array' }
     my $basename = $self->id;
     my $cachefile = "all_crossings_${basename}_$rettype";
-    if ($args{'Kurvenpunkte'}) {
+    if ($all_points) {
 	$cachefile .= "_kurvenp";
     }
     if ($use_cache && $rettype =~ /^hash/) {
@@ -691,8 +705,8 @@ sub split_ort {
 #   UseCache: use cache
 #   Exact: use "exact" algorithm
 #   GridHeight, GridWidth: grid extents (by default 1000)
-# warning: don't call this in a Strassen-loop (init, next ...)
 # With -rebuild => 1 the grid will be build again.
+# Uses the private Strassen::Core iterator "make_grid".
 ### AutoLoad Sub
 sub make_grid {
     my($self, %args) = @_;
@@ -741,10 +755,10 @@ sub make_grid {
 sub _make_grid_fast {
     my $self = shift;
     my %grid_build;
-    $self->init;
+    $self->init_for_iterator("make_grid");
     my $strpos = 0;
     while(1) {
-	my $r = $self->next;
+	my $r = $self->next_for_iterator("make_grid");
 	last if !@{$r->[COORDS]};
 	foreach my $c (@{$r->[COORDS]}) {
 	    $grid_build{join(",",$self->grid(split(/,/, $c)))}->{$strpos}++;
@@ -768,10 +782,10 @@ sub _make_grid_exact {
     if ($@ && $VERBOSE) { warn $@ }
 
     my %grid_build;
-    $self->init;
+    $self->init_for_iterator("make_grid");
     my $strpos = 0;
     while(1) {
-	my $r = $self->next;
+	my $r = $self->next_for_iterator("make_grid");
 	last if !@{$r->[COORDS]};
 	if (@{ $r->[COORDS] } == 1) {
 	    $grid_build{join(",",$self->grid(split(/,/, $r->[COORDS][0])))}->{$strpos}++;
@@ -867,7 +881,7 @@ sub reachable {
 #   CoordIndex: the index of Coord in the Strassen::COORDS array
 #   Dist:       the distance from the given point to Coord
 #   Coord:      the nearest coordinate to the given point
-# Warning: Initializes the Strassen iterator!
+# Uses the private iterator "make_grid"
 sub nearest_point {
     my($s, $xy, %args) = @_;
     my($x,$y) = split /,/, $xy;

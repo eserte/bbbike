@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.3 2003/11/03 22:48:45 eserte Exp $
+# $Id: vmzrobot.pl,v 1.4 2004/01/13 09:46:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -155,8 +155,7 @@ print STDERR "\n" if !$quiet;
 sub get_listing {
     my $resp = $ua->get($listing_url);
     if (!$resp->is_success) {
-	warn "Can't fetch $listing_url: " . $resp->content;
-	return;
+	die "Can't fetch $listing_url: " . $resp->content;
     }
     my @detail_links;
     my $p = HTML::LinkExtor->new

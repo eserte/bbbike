@@ -2326,6 +2326,14 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
   * Evtl. eine weitere Zeit einführen: von-bis der Sperrung, von der
     Warnzeit
 
+=item Inline modules => XS modules (less hassle with dependencies,
+faster compilation)
+
+=item Rename Kurvenpunkte => ... to AllPoints => ... in all scripts
+and modules.
+
+=item Turn all comments in Strassen/*.pm into Pod.
+
 =back
 
 =head1 KOMPATIBILITE<Auml>T
