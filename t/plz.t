@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.17 2005/01/03 00:16:24 eserte Exp $
+# $Id: plz.t,v 1.18 2005/01/19 08:17:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -160,7 +160,9 @@ EOF
 }
 
 {
-    my @res = $plz->look("Hauptstr.", MultiZIP => 1);
+    my @res;
+    
+    @res = $plz->look("Hauptstr.", MultiZIP => 1);
     is(scalar @res, 8, "Hits for Hauptstr.")
 	or diag $dump->(\@res);
     @res = map { $plz->combined_elem_to_string_form($_) } $plz->combine(@res);

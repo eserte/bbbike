@@ -63,7 +63,7 @@ Ahornallee|Blankenburg|13129|14234,21381
 Ahornallee|Charlottenburg|14050|1676,11445
 Ahornallee|Friedrichshagen|12587|24943,5545
 Ahornallee|Kladow|14089|-8308,6390
-Ahornallee|Köpenick|12555|24943,5545
+Ahornallee|Köpenick|12555|21471,4907
 Ahornallee|Mahlsdorf|12623|25199,9426
 Ahornallee|Rosenthal|13158|9855,20556
 Ahornstr.|Hessenwinkel|12589|32613,2833
@@ -1222,7 +1222,7 @@ Birkenknick|Karlshorst|10318|19835,7994
 Birkensteinweg|Mahlsdorf|12623|26914,13217
 Birkenstr.|Hessenwinkel|12589|31641,2845
 Birkenstr.|Kaulsdorf|12621|22612,9468
-Birkenstr.|Köpenick|12559|31641,2845
+Birkenstr.|Köpenick|12559|24067,4612
 Birkenstr.|Tiergarten|10551|6061,13993
 Birkenstr.|Tiergarten|10559|6061,13993
 Birkenwäldchen|Charlottenburg|14050|
@@ -3637,7 +3637,7 @@ Grünbergallee|Bohnsdorf|12526|19897,-327
 Grünberger Str.|Friedrichshain|10243|13852,11880
 Grünberger Str.|Friedrichshain|10245|13852,11880
 Gründerstr.|Bohnsdorf|12526|22230,518
-Gründerstr.|Johannisthal|12487|22230,518
+Gründerstr.|Johannisthal|12487|
 Grundweg|Blankenfelde|13159|
 Grüne Aue|Biesdorf|12683|21965,10999
 Grüne Aue|Friedenau|12157|
@@ -4330,7 +4330,7 @@ Hoevelstr.|Johannisthal|12487|17002,4498
 Hofackerzeile|Charlottenburg|13627|2801,14373
 Hoffbauerpfad|Zehlendorf|14165|317,1160
 Hoffmann-von-Fallersleben-Platz|Wilmersdorf|10713|
-Hoffmannstr.|Adlershof|12489|14180,9900
+Hoffmannstr.|Adlershof|12489|20468,4118
 Hoffmannstr.|Treptow|12435|14180,9900
 Hoffnung|Baumschulenweg|12437|
 Hoffnung|Buchholz|13127|
@@ -5079,7 +5079,7 @@ Kirchplatz|Spandau|13591|-7039,14664
 Kirchsteig|Altglienicke|12524|21310,78
 Kirchsteig|Bohnsdorf|12526|21310,78
 Kirchstr.|Blankenburg|13129|14723,20642
-Kirchstr.|Köpenick|12555|31596,3705
+Kirchstr.|Köpenick|12555|22243,4710
 Kirchstr.|Marienfelde|12277|8198,1146
 Kirchstr.|Rosenthal|13158|9745,20763
 Kirchstr.|Schmargendorf|14199|3050,7336
@@ -5317,7 +5317,7 @@ Köpenicker Landstr.|Treptow|12435|15847,7806
 Köpenicker Str.|Adlershof|12489|19568,1762
 Köpenicker Str.|Altglienicke|12524|19568,1762
 Köpenicker Str.|Biesdorf|12683|21005,9488
-Köpenicker Str.|Johannisthal|12487|19568,1762
+Köpenicker Str.|Johannisthal|12487|17589,4231
 Köpenicker Str.|Köpenick|12555|20768,7319
 Köpenicker Str.|Kreuzberg|10997|12145,11224
 Köpenicker Str.|Mitte|10179|11295,11691
@@ -5539,7 +5539,7 @@ Kurt-Schumacher-Platz|Reinickendorf|13405|
 Kurze Str.|Friedrichsfelde|10315|17964,11330
 Kurze Str.|Hermsdorf|13467|3143,23918
 Kurze Str.|Johannisthal|12487|
-Kurze Str.|Pankow|13189|7230,19935
+Kurze Str.|Pankow|13189|11553,16507
 Kurze Str.|Rosenthal|13158|7230,19935
 Kurze Str.|Spandau|13585|-3433,15152
 Kurze Str.|Steglitz|12167|5091,5008
@@ -6473,7 +6473,8 @@ Mittelstr.|Steglitz|12167|5502,5105
 Mittelstr.|Zehlendorf|14163|128,2834
 Mittelweg|Altglienicke|12524|19941,500
 Mittelweg|Blankenfelde|13159|
-Mittelweg|Johannisthal|12487|19941,500
+Mittelweg|Bohnsdorf|12524|20031,-401
+Mittelweg|Johannisthal|12487|
 Mittelweg|Kaulsdorf|12621|
 Mittelweg|Neukölln|12053|12789,7694
 Mittenwalder Str.|Hellersdorf|12629|23412,15811
@@ -6585,7 +6586,7 @@ Mühlendamm|Mitte|10178|10680,12306
 Mühlenfeldstr.|Hermsdorf|13467|3568,22261
 Mühlengrund|Hohenschönhausen|13053|
 Mühlenstr.|Blankenburg|13129|14556,20483
-Mühlenstr.|Buchholz|13127|10857,17090
+Mühlenstr.|Buchholz|13127|12034,22550
 Mühlenstr.|Friedrichshain|10243|12643,11323
 Mühlenstr.|Lankwitz|12247|6930,3172
 Mühlenstr.|Lankwitz|12249|6930,3172
@@ -8496,7 +8497,7 @@ Schloßstr.|Charlottenburg|14059|3173,11633
 Schloßstr.|Hermsdorf|13467|3702,23445
 Schloßstr.|Steglitz|12163|4415,5103
 Schloßstr.|Steglitz|12165|4415,5103
-Schloßstr.|Tegel|13507|3702,23445
+Schloßstr.|Tegel|13507|2039,20500
 Schluchseestr.|Lübars|13469|5455,22015
 Schluchseestr.|Waidmannslust|13469|5455,22015
 Schlütersteig|Heiligensee|13503|
@@ -8585,7 +8586,7 @@ Schönhauser Allee|Mitte|10119|10718,13684
 Schönhauser Allee|Prenzlauer Berg|10435|11021,16343
 Schönhauser Allee|Prenzlauer Berg|10437|11021,16343
 Schönhauser Allee|Prenzlauer Berg|10439|11021,16343
-Schönhauser Str.|Buchholz|13127|9615,20882
+Schönhauser Str.|Buchholz|13127|11705,21072
 Schönhauser Str.|Rosenthal|13158|9615,20882
 Schönhauser Str.|Steglitz|12157|5856,5908
 Schönhauser Str.|Steglitz|12169|5856,5908
@@ -9089,9 +9090,9 @@ Spreeblick|Charlottenburg|14050|
 Spreegrund|Charlottenburg|14050|
 Spreeheim|Müggelheim|12559|
 Spreepromenade|Friedrichshagen|12587|
-Spreestr.|Friedrichshagen|12587|21794,5189
+Spreestr.|Friedrichshagen|12587|24984,4770
 Spreestr.|Köpenick|12555|21794,5189
-Spreestr.|Müggelheim|12559|21794,5189
+Spreestr.|Müggelheim|12559|31012,2390
 Spreestr.|Niederschöneweide|12439|17827,6017
 Spreetalallee|Charlottenburg|14050|788,12783
 Spreetunnel|Köpenick|12559|
@@ -9303,7 +9304,6 @@ Straße 120|Altglienicke|12524|
 Straße 120|Rosenthal|13158|8434,20238
 Straße 121|Buchholz|13127|
 Straße 121|Rosenthal|13158|8502,20261
-Straße 122|Buchholz|13127|8595,20341
 Straße 122|Kaulsdorf|12621|24641,13619
 Straße 122|Rosenthal|13158|8595,20341
 Straße 123|Buchholz|13127|8616,20275
@@ -9407,7 +9407,7 @@ Straße 194|Johannisthal|12487|17161,3110
 Straße 195|Johannisthal|12487|17098,3242
 Straße 196|Johannisthal|12487|17344,3004
 Straße 197|Altglienicke|12524|19047,2379
-Straße 197|Johannisthal|12487|19047,2379
+Straße 197|Johannisthal|12487|17179,3229
 Straße 199|Buchholz|13127|11709,20266
 Straße 199|Niederschönhausen|13156|11709,20266
 Straße 199|Rudow|12355|15438,456
@@ -9417,7 +9417,6 @@ Straße 19|Buchholz|13127|11709,20266
 Straße 19|Heinersdorf|13089|12912,18018
 Straße 19|Kaulsdorf|12621|21440,8183
 Straße 1|Heinersdorf|13089|13737,22828
-Straße 1|Margaretenhöhe|13051|17254,16834
 Straße 1|Wartenberg|13059|17254,16834
 Straße 200|Rudow|12355|15323,443
 Straße 201|Niederschönhausen|13156|9528,18650
@@ -9467,7 +9466,6 @@ Straße 299|Köpenick|12559|23721,4944
 Straße 29|Buchholz|13127|
 Straße 2|Falkenberg|13057|20791,19131
 Straße 2|Heinersdorf|13089|13500,17380
-Straße 2|Margaretenhöhe|13051|20791,19131
 Straße 3 (Wiesengrund)|Karlshorst|10318|
 Straße 30|Buchholz|13127|11823,21450
 Straße 30|Heinersdorf|13089|12997,18219
@@ -9513,17 +9511,16 @@ Straße 39|Karow|13125|15113,20727
 Straße 39|Niederschönhausen|13156|11421,20050
 Straße 3A|Rudow|12357|
 Straße 3|Heinersdorf|13089|15316,21284
-Straße 3|Margaretenhöhe|13051|18821,19595
 Straße 3|Wartenberg|13059|18821,19595
 Straße 40|Blankenburg|13129|14993,20636
-Straße 40|Karow|13125|14993,20636
+Straße 40|Karow|13125|14673,21981
 Straße 41|Karow|13125|15158,22572
 Straße 41|Müggelheim|12559|30431,2962
 Straße 41|Niederschönhausen|13156|11414,20094
 Straße 427|Marienfelde|12279|
-Straße 42|Blankenburg|13129|15450,22402
+Straße 42|Blankenburg|13129|14684,20904
 Straße 42|Buchholz|13127|12241,20377
-Straße 42|Heinersdorf|13089|15450,22402
+Straße 42|Heinersdorf|13089|12209,20464
 Straße 42|Karow|13125|15450,22402
 Straße 432|Lichtenrade|12305|
 Straße 435|Marienfelde|12277|8754,883
@@ -9534,7 +9531,7 @@ Straße 44|Buckow|12349|12139,1278
 Straße 44|Karow|13125|15248,21856
 Straße 455|Buckow|12349|
 Straße 456|Buckow|12349|
-Straße 45|Blankenburg|13129|15148,21755
+Straße 45|Blankenburg|13129|14528,20328
 Straße 45|Karow|13125|15148,21755
 Straße 461|Marienfelde|12279|7198,43
 Straße 468|Marienfelde|12277|
@@ -9555,7 +9552,6 @@ Straße 49|Karow|13125|15087,21753
 Straße 4|Buch|13125|12248,20333
 Straße 4|Heinersdorf|13089|15405,21705
 Straße 4|Karlshorst|10318|
-Straße 4|Margaretenhöhe|13051|18815,20025
 Straße 4|Wartenberg|13059|18815,20025
 Straße 50|Adlershof|12489|
 Straße 50|Karow|13125|15282,21791
@@ -9592,7 +9588,6 @@ Straße 59|Buchholz|13127|12546,20858
 Straße 59|Karow|13125|
 Straße 5|Buch|13125|10509,20692
 Straße 5|Heinersdorf|13089|15457,22402
-Straße 5|Margaretenhöhe|13051|18955,20161
 Straße 5|Wartenberg|13059|18955,20161
 Straße 600|Spandau|13589|-6760,15564
 Straße 603|Spandau|13591|-6707,15068
@@ -9624,7 +9619,6 @@ Straße 695|Müggelheim|12559|28686,2625
 Straße 696|Müggelheim|12559|28726,2692
 Straße 69|Karow|13125|15816,22299
 Straße 6|Buch|13125|17704,26370
-Straße 6|Margaretenhöhe|13051|19016,20162
 Straße 6|Wartenberg|13059|19016,20162
 Straße 70|Charlottenburg|13627|3439,15237
 Straße 70|Karow|13125|16283,22232
@@ -9654,7 +9648,6 @@ Straße 79|Altglienicke|12524|20390,1835
 Straße 79|Niederschönhausen|13158|7933,19321
 Straße 7|Blankenburg|13129|16133,22328
 Straße 7|Buch|13125|12781,22608
-Straße 7|Margaretenhöhe|13051|19202,20420
 Straße 7|Mariendorf|12105|9178,4325
 Straße 7|Wartenberg|13059|19202,20420
 Straße 80|Altglienicke|12524|20479,1760

@@ -1,7 +1,17 @@
 @temp_blocking = ();
-$#temp_blocking = 122;
+$#temp_blocking = 119;
 push @temp_blocking,
 (
+       {
+         'until' => 1117231200,
+         'text' => 'K 6413; (Wriezener Straße); OL Buckow, zw. Weinbergsweg u. Ringstr. Kanal- u. Straßenbau Vollsperrung 17.01.2005-27.05.2005 ',
+         'from' => 1105830000,
+         'data' => 'userdel	q4 55664,19342 55558,19957
+',
+         'type' => 'handicap'
+       },
+       undef,
+       undef,
        {
          'until' => 1114898400,
          'text' => 'L 40; (Großbeeren-Güterfelde); zw. Großbeeren u. Neubeeren Neubau Bauwerk; Vollsperrung; 24.09.2004-30.04.2005 ',
@@ -128,6 +138,15 @@ push @temp_blocking,
          'text' => 'L 62; (Elsterwerda-Hohenleipisch); Bahnübergang bei Dreska Gleisbauarbeiten Vollsperrung 24.01.2005-26.01.2005 ',
          'from' => 1106434800,
          'data' => 'userdel	2 22508,-102744 22382,-102254
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1107298800,
+         'text' => 'L 86; zw. Schmergow und Ketzin Straßenbau Vollsperrung 18.01.2005-01.02.2005 ',
+         'from' => 1105916400,
+         'data' => 'userdel	2 -27793,4863 -28134,4796
+userdel	2 -27793,4863 -27127,5270
 ',
          'type' => 'gesperrt'
        }
