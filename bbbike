@@ -3839,7 +3839,7 @@ sub do_iconframe {
 	$opbm->command
 	    (-label => M"Daten-Update über das Internet",
 	     -command => sub {
-		 if ($devel_host) {
+		 if ($devel_host && $ENV{HOST} !~ /^devpc01/) {
 		     status_message("Kein Update auf cabulja/vran/cvrsnica/spiff möglich!", "die");
 		     die;
 		 }
