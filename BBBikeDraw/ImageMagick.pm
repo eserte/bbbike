@@ -18,7 +18,8 @@ use base qw(BBBikeDraw);
 use Strassen;
 use Image::Magick;
 use VectorUtil;
-eval 'use VectorUtil::InlineDist'; warn $@ if $@;
+use vars qw($DEBUG);
+eval 'use VectorUtil::InlineDist'; warn $@ if $DEBUG && $@;
 
 # Strassen benutzt FindBin benutzt Carp, also brauchen wir hier nicht zu
 # sparen:
