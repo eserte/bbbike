@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.12 2003/12/02 20:45:46 eserte Exp $
+# $Id: wapcgi.t,v 1.13 2003/12/02 21:04:38 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -44,7 +44,7 @@ if (!@wap_url) {
     @wap_url = "http://www/bbbike/cgi/wapbbbike.cgi";
 }
 
-plan tests => (22 + (defined &image_info ? 2 : 0)) * scalar @wap_url;
+plan tests => (24 + (defined &image_info ? 2 : 0)) * scalar @wap_url;
 
 for my $wapurl (@wap_url) {
     my $resp;
@@ -90,7 +90,7 @@ for my $wapurl (@wap_url) {
 	ok(image_info($resp->content)->{file_media_type},
 	   $resp->header('Content_Type'));
     } else {
-	ok(0, "image_info not defined");
+	skip("image_info not defined", 1);
     }
 
     $resp = $ua->get($surr_url);
@@ -109,7 +109,7 @@ for my $wapurl (@wap_url) {
 	ok(image_info($resp->content)->{file_media_type},
 	   $resp->header('Content_Type'));
     } else {
-	ok(0, "image_info not defined");
+	skip("image_info not defined", 1);
     }
 }
 
