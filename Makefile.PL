@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.3 2003/05/27 23:13:16 eserte Exp $
+# $Id: Makefile.PL,v 1.84 2003/05/17 00:39:26 eserte Exp eserte $
 
 BEGIN {
     $^W = 0;
@@ -388,7 +388,7 @@ install:
 	@sleep 1
 
 EOF
-    exit 0;
+    return;
 
     # XXX disabled for now --- the installer does not work with newer
     # KDE or GNOME releases

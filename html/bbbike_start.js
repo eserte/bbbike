@@ -1,4 +1,4 @@
-// $Id: bbbike_start.js,v 1.8 2003/01/12 23:20:55 eserte Exp $
+// $Id: bbbike_start.js,v 1.9 2003/05/31 20:58:04 eserte Exp $
 // (c) 2001-2002 Slaven Rezic. All rights reserved.
 // See comment in bbbike.cgi regarding x/ygridwidth
 
@@ -188,6 +188,44 @@ function any_detail(type, Evt) {
     document.BBBikeForm[type + "img.y"].value = Evt.layerY;
   }
   document.BBBikeForm.submit();
+}
+
+function list_all_streets_onload() {
+  if (!document.body) return;
+  var types = [["Start", "start"],
+	       ["Via", "via"],
+	       ["Ziel", "ziel"]];
+  var e = document.getElementById("list");
+  for (i = 0; i < e.childNodes.length; i++) {
+    var n = e.childNodes[i];
+    if (n.nodeName == "#text") {
+      var nextNode = e.childNodes[i+1];
+      var label = n.nodeValue;
+      n.appendData(" ");
+
+      for (t = 0; t < types.length; t++) {
+	var type_label = types[t][0];
+	var type = types[t][1];
+	var elem = document.createElement("a");
+	elem.setAttribute('href', 'javascript:all_streets_set_input("'+type+'", "'+escape(label)+'")');
+	elem.appendChild(document.createTextNode(type_label));
+	e.insertBefore(elem, nextNode);
+
+	var spacer = document.createElement("span");
+	spacer.appendChild(document.createTextNode(" "));
+	e.insertBefore(spacer, nextNode);
+      }
+    }
+  }
+}
+
+function all_streets_set_input(type, label) {
+  if (window.opener &&
+      window.opener.document &&
+      window.opener.document.forms.BBBikeForm &&
+      window.opener.document.forms.BBBikeForm.elements[type]) {
+    window.opener.document.forms.BBBikeForm.elements[type].value = unescape(label);
+  }
 }
 
 // Local variables:

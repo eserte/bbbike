@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.28 2003/05/19 06:45:09 eserte Exp eserte $
+# $Id: GD.pm,v 1.29 2003/05/30 07:56:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -39,7 +39,7 @@ sub AUTOLOAD {
     }
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -73,8 +73,11 @@ sub init {
 	if ($self->{ImageType} eq 'gif' && $GD::VERSION >= 1.20) {
 	    # XXX automatic detection does not seem to work with GD 1.41 ?
 #XXX	    if ($GD::VERSION < 1.37 || !GD::Image->can("gif")) {
-		if (!eval { require GD::Convert; GD::Convert->import("gif=any"); 1}) {
+		if (!eval { require GD::Convert; GD::Convert->import("gif=any", "newFromGif=any"); 1}) {
+		    warn "Can't create gif files, fallback to png: $@";
 		    $self->{ImageType} = 'png';
+		} else {
+		    warn "OK, using GD::Convert for gif conversion";
 		}
 #XXX	    }
 	}
@@ -110,7 +113,7 @@ sub init {
 	    } elsif ($self->imagetype eq 'jpeg' && $image->can('newFromJpeg')) {
 		$image->newFromJpeg(@_);
 	    } else {
-		die "Fatal error: no newFromGif or newFromPng methods";
+		die "Fatal error: no newFrom" . ucfirst($self->imagetype) . " method available";
 	    }
 	}
     };
@@ -171,6 +174,10 @@ sub init {
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
 #$self->{StrLabel} = ['str:HH,H'];#XXX
 
+    if ($self->imagetype eq 'wbmp' && !defined $self->{RouteWidth}) {
+	$self->{RouteWidth} = 3;
+    }
+
     $self;
 }
 
@@ -180,6 +187,14 @@ sub allocate_colors {
 
 #    my $GREY = 153;
     my $GREY = 225;
+
+    if ($self->imagetype eq 'wbmp') {
+	# black-white image for WAP
+	$white = $grey_bg = $im->colorAllocate(0, 0, 0);
+	$black = $yellow = $red = $green = $darkgreen = $darkblue =
+	    $lightblue = $middlegreen = $im->colorAllocate(255,255,255);
+	return;
+    }
 
     $self->{'Bg'} = '' if !defined $self->{'Bg'};
     if ($self->{'Bg'} =~ /^white/) {
@@ -197,23 +212,17 @@ sub allocate_colors {
 	$grey_bg   = $im->colorAllocate($GREY,$GREY,$GREY);
 	$im->transparent($grey_bg) if ($self->{'Bg'} =~ /transparent$/);
     }
-    if ($self->imagetype eq 'wbmp') {
-	# black-white image for WAP
-	$white = $im->colorAllocate(255,255,255) if !defined $white;
-	$yellow = $red = $green = $darkgreen = $darkblue =
-	    $lightblue = $middlegreen = $black = $im->colorAllocate(0, 0, 0);
-    } else {
-	$white       = $im->colorAllocate(255,255,255) if !defined $white;
-	$yellow      = $im->colorAllocate(255,255,0)   if !defined $yellow;
-	$red         = $im->colorAllocate(255,0,0);
-	$green       = $im->colorAllocate(0,255,0);
-	$darkgreen   = $im->colorAllocate(0,128,0);
-	$darkblue    = $im->colorAllocate(0,0,128);
-	#$lightblue   = $im->colorAllocate(186,213,247);
-	$lightblue   = $im->colorAllocate(0xa0,0xa0,0xff);
-	$middlegreen = $im->colorAllocate(0, 200, 0);
-	$black       = $im->colorAllocate(0, 0, 0);
-    }
+
+    $white       = $im->colorAllocate(255,255,255) if !defined $white;
+    $yellow      = $im->colorAllocate(255,255,0)   if !defined $yellow;
+    $red         = $im->colorAllocate(255,0,0);
+    $green       = $im->colorAllocate(0,255,0);
+    $darkgreen   = $im->colorAllocate(0,128,0);
+    $darkblue    = $im->colorAllocate(0,0,128);
+    #$lightblue   = $im->colorAllocate(186,213,247);
+    $lightblue   = $im->colorAllocate(0xa0,0xa0,0xff);
+    $middlegreen = $im->colorAllocate(0, 200, 0);
+    $black       = $im->colorAllocate(0, 0, 0);
 }
 
 sub draw_map {
@@ -690,7 +699,12 @@ sub draw_route {
     my $brush; # should be *outside* the next block!!!
     my $line_style;
     my $width;
-    if ($self->{RouteWidth}) {
+    if ($self->{RouteDotted}) {
+	# gepunktete Routen für die WAP-Ausgabe (B/W)
+	$im->setStyle($white, $white, $black, $black);
+	$line_style = GD::gdStyled();
+#	$width = $width{Route};
+    } elsif ($self->{RouteWidth}) {
 	# fette Routen für die WAP-Ausgabe (B/W)
 	$brush = GD::Image->new($self->{RouteWidth}, $self->{RouteWidth});
 	$brush->colorAllocate($im->rgb($black));

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.1 2003/05/24 22:38:29 eserte Exp eserte $
+# $Id: bbbike-teaser.pl,v 1.3 2003/05/29 20:24:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -17,11 +17,17 @@
 # Teaser for bbbike.cgi
 #
 sub teaser {
-    my @teasers = (#'none',
-		   'routen', 'link', 'mapserver');
-    my $sub = "teaser_" . $teasers[int(rand(@teasers))];
+    my @teasers_optional = ('routen', 'link');
+    my @teasers_mandatory = (teaser_perltk(), teaser_mapserver());
+    my $sub = "teaser_" . $teasers_optional[int(rand(@teasers_optional))];
     my $t = eval $sub . '()';
-    teaser_perltk() . ($t ne '' ? "<br>".blind_image(1,3)."<hr>".blind_image(1,3)."<br>$t" : "");
+    join(blind_image(1,8),
+	 map {
+	     '<table width="100%" bgcolor="#ffdead"><tr><td>' . $_ . '</td></tr></table>'
+	 } (@teasers_mandatory,
+	    defined $t ? $t : (),
+	   )
+	);
 }
 
 sub teaser_sternfahrt {
@@ -32,7 +38,7 @@ EOF
 
 sub teaser_perltk {
     <<EOF;
-<small><a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">Download</a> der Perl/Tk-Version</small>
+<small><a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">Download</a> der Perl/Tk-Version von BBBike mit interaktiver Karte. Läuft auf Linux, Unix und Windows.</small><br>
 EOF
 }
 
@@ -40,7 +46,7 @@ sub teaser_none { "" }
 
 sub teaser_routen {
     <<EOF;
-<small>Ich sammle GPS-Routen von Berlin und Brandenburg. Bitte per Mail an <a target="_top" href="mailto:@{[ $BBBike::EMAIL ]}?subject=BBBike-GPS">Slaven Rezic</a> schicken.</small>
+<small>Ich sammele GPS-Routen von Berlin und Brandenburg. Bitte per Mail an <a target="_top" href="mailto:@{[ $BBBike::EMAIL ]}?subject=BBBike-GPS">Slaven Rezic</a> schicken.</small>
 EOF
 }
 
@@ -62,5 +68,7 @@ sub teaser_mapserver {
 <small>Die BBBike-Kartendaten mit <a href="$mapserver_url">Mapserver</a> visualisiert.</small>
 EOF
 }
+
+1;
 
 __END__

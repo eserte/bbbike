@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.79 2003/05/17 00:38:11 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.79 2003/05/17 00:38:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2003 Slaven Rezic. All rights reserved.
@@ -618,7 +618,7 @@ sub set_coord_interactive {
 	my $f = $t->Frame->pack;
 	$f->Label(-text => M("Koordinatensystem").":")->pack(-side => "left");
 	$coord_menu = $f->Optionmenu(-variable => \$coord_output,
-				     -options => [ map { [ $Karte::map{$_}->name, $_ ] } @Karte::map ])->pack(-side => "left");
+				     -options => [ (map { [ $Karte::map{$_}->name, $_ ] } @Karte::map), "canvas" ])->pack(-side => "left");
     }
 
     my($valx, $valy);
@@ -630,7 +630,12 @@ sub set_coord_interactive {
 	    $valx = Karte::Polar::dms2ddd($val2{'X'}->[0], $val2{'X'}->[1], $val2{'X'}->[2]);
 	    $valy = Karte::Polar::dms2ddd($val2{'Y'}->[0], $val2{'Y'}->[1], $val2{'Y'}->[2]);
 	}
-	my($setx, $sety) = transpose($Karte::map{$coord_output}->map2standard($valx, $valy));
+	my($setx, $sety);
+	if ($coord_output eq 'canvas') {
+	    ($setx, $sety) = ($valx, $valy);
+	} else {
+	    ($setx, $sety) = transpose($Karte::map{$coord_output}->map2standard($valx, $valy));
+	}
 	mark_point('-x' => $setx, '-y' => $sety,
 		   -clever_center => 1);
     };

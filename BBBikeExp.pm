@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeExp.pm,v 1.12 2003/05/07 15:19:35 eserte Exp eserte $
+# $Id: BBBikeExp.pm,v 1.13 2003/05/29 20:31:22 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -15,6 +15,8 @@
 # BBBike-Experimente
 
 package BBBikeExp;
+
+use vars qw($setup_done);
 
 package main;
 
@@ -37,13 +39,12 @@ use vars qw(%exp_str_drawn %exp_str
 use vars qw($xadd_anchor $yadd_anchor @extra_tags $ignore);
 use BBBikeGlobalVars;
 
-my(@defs_str, @defs_p, @defs_p_o);
-my @defs_str_abk;
-my @defs_p_abk;
-my @defs_p_o_abk;
+use vars qw(@defs_str @defs_p @defs_p_o
+	    @defs_str_abk
+	    @defs_p_abk
+	    @defs_p_o_abk);
 
-sub BBBikeExp::bbbikeexp_init {
-
+sub BBBikeExp::bbbikeexp_setup {
     @defs_str = ();
     @defs_p = ();
     @defs_p_o = ();
@@ -118,31 +119,95 @@ sub BBBikeExp::bbbikeexp_init {
     @defs_p_abk   = map { $_->[0] } @defs_p;
     @defs_p_o_abk = map { $_->[0] } @defs_p_o;
 
+    $BBBikeExp::setup_done = 1;
+}
+
+# XXX for now "-orig" has to be specified unlike in other functions
+# like main::plotstr
+sub BBBikeExp::bbbikeexp_add_data {
+    my($type, $abk, $file) = @_;
+    if (!defined $file) {
+	if ($type eq 'str' && $str_file{$abk}) {
+	    $file = $str_file{$abk};
+	} elsif ($type eq 'p' && $p_file{$abk}) {
+	    $file = $p_file{$abk};
+	} else {
+	    die "No file for $type/$abk defined";
+	}
+    } else {
+	if ($type eq 'str') {
+	    $str_file{$abk} = $file;
+	} else {
+	    $p_file{$abk} = $file;
+	}
+    }
+    if ($type eq 'str') {
+	my $def = [$abk, $file];
+	push @defs_str, $def;
+	push @defs_str_abk, $abk;
+	BBBikeExp::draw_streets($def);
+    } elsif ($type eq 'p') {
+	my $def = [$abk, $file];
+	push @defs_p, $def;
+	push @defs_p_abk, $abk;
+	BBBikeExp::draw_points($def);
+    } else {
+	die "type has to be either str or p, not $type";
+    }
+    %exp_known_grids = (); # to force redraw
+    BBBikeExp::bbbikeexp_redraw_current_view();
+}
+
+sub BBBikeExp::draw_streets {
+    my $def = shift;
+    if (!$exp_str{$def->[0]}) {
+	$exp_str{$def->[0]} = new Strassen $def->[1];
+	$exp_str{$def->[0]}->make_grid(UseCache => 1);
+    }
+    $str_draw{$def->[0]} = 1;
+    $str_outline{$def->[0]} = 0;
+    if ($def->[0] =~ /^L\d+/) {
+	std_str_binding($def->[0]);
+    }
+}
+
+sub BBBikeExp::draw_points {
+    my $def = shift;
+    if (!$exp_p{$def->[0]}) {
+	$exp_p{$def->[0]} = new Strassen $def->[1];
+	$exp_p{$def->[0]}->make_grid(UseCache => 1);
+    }
+    $p_draw{$def->[0]} = 1;
+    if ($def->[0] =~ /^L\d+/) {
+	p_str_binding($def->[0]);
+    }
+}
+
+sub BBBikeExp::bbbikeexp_init {
+    if (!$BBBikeExp::setup_done) {
+	bbbikeexp_setup();
+    }
+
     %exp_str_drawn = ();
     %exp_p_drawn = ();
     %exp_known_grids = ();
     foreach my $def (@defs_str) {
-	if (!$exp_str{$def->[0]}) {
-	    $exp_str{$def->[0]} = new Strassen $def->[1];
-	    $exp_str{$def->[0]}->make_grid(UseCache => 1);
-	}
-	$str_draw{$def->[0]} = 1;
-	$str_outline{$def->[0]} = 0;
+	BBBikeExp::draw_streets($def);
     }
     foreach my $def (@defs_p, @defs_p_o) {
-	if (!$exp_p{$def->[0]}) {
-	    $exp_p{$def->[0]} = new Strassen $def->[1];
-	    $exp_p{$def->[0]}->make_grid(UseCache => 1);
-	}
-	$p_draw{$def->[0]} = 1;
+	BBBikeExp::draw_points($def);
     }
 #XXX needed here???    make_net(-l_add => 1) if !defined $net and !$no_make_net;
-    my($x1,$y1,$x2,$y2) = $c->get_corners;
-    BBBikeExp::plotstr_on_demand
-      (anti_transpose($x1,$y1),
-       anti_transpose($x2,$y2));
+    BBBikeExp::bbbikeexp_redraw_current_view();
 
     $BBBikeExp::mode = 1;
+}
+
+sub BBBikeExp::bbbikeexp_redraw_current_view {
+    my($x1,$y1,$x2,$y2) = $c->get_corners;
+    BBBikeExp::plotstr_on_demand
+	    (anti_transpose($x1,$y1),
+	     anti_transpose($x2,$y2));
 }
 
 sub BBBikeExp::bbbikeexp_clear {
@@ -165,6 +230,36 @@ sub BBBikeExp::bbbikeexp_clear {
 }
 
 sub BBBikeExp::bbbikeexp_reload {
+    my $redraw_needed = 0;
+
+    foreach my $def (@defs_str) {
+	my $abk = $def->[0];
+	if (!$exp_str{$abk}->is_current) {
+	    warn "Reload str-$abk...\n";
+	    $exp_str{$abk}->reload;
+	    $exp_str_drawn{$abk} = {};
+	    $c->delete($abk);
+	    $redraw_needed++;
+	}
+    }
+    foreach my $def (@defs_p) {
+	my $abk = $def->[0];
+	if (!$exp_p{$abk}->is_current) {
+	    warn "Reload p-$abk...\n";
+	    $exp_p{$abk}->reload;
+	    $exp_p_drawn{$abk} = {};
+	    $c->delete($abk);
+	    $redraw_needed++;
+	}
+    }
+
+    if ($redraw_needed) {
+	%exp_known_grids = ();
+	BBBikeExp::bbbikeexp_redraw_current_view();
+    }
+}
+
+sub BBBikeExp::bbbikeexp_reload_all {
     bbbikeexp_clear();
     %exp_str = ();
     %exp_p = ();
@@ -274,7 +369,7 @@ sub BBBikeExp::plotstr_on_demand {
 		    }
 		}
 	    }
-	    plot_symbol($abk);
+	    plot_symbol($c, $abk);
 	}
 
 	my $municipality = 0;

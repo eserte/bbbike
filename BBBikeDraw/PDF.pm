@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.24 2003/01/08 20:11:20 eserte Exp $
+# $Id: PDF.pm,v 2.24 2003/01/08 20:11:20 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 1.3 2003/05/27 23:13:17 eserte Exp $
+# $Id: bbbike,v 3.102 2003/05/17 01:56:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -81,7 +81,8 @@ use Config;
 use autouse 'BBBikeMail'	=> qw(enter_send_mail enter_send_fax);
 use autouse 'Text::Wrap'	=> qw(wrap);
 use autouse 'File::Copy'	=> qw(copy mv);
-use autouse 'BBBikeGPS'         => qw(gps_interface draw_gpsman_data);
+use autouse 'BBBikeGPS'
+    => qw(gps_interface draw_gpsman_data do_draw_gpsman_data);
 use autouse 'BBBikeWeather'
     => qw(wetter_dir_exists ignore_weather reset_wind update_weather
 	  show_weather_db parse_wetterline analyze_wind);
@@ -96,9 +97,12 @@ use autouse 'BBBikeHeavy'
 #XXX problems with autouse!
 use autouse 'BBBikeEdit'
     => qw(insert_point_from_canvas create_relation_from_canvas
-	  ampeln_on_route radweg_open radweg_draw_canvas);
+	  ampeln_on_route radweg_open radweg_draw_canvas
+	 );
 use autouse 'BBBikeExp'
-    => qw(bbbikeexp_init bbbikeexp_clear bbbikeexp_reload plotstr_on_demand);
+    => qw(bbbikeexp_setup bbbikeexp_init bbbikeexp_clear
+	  bbbikeexp_reload bbbikeexp_reload_all bbbikeexp_redraw_current_view
+	  bbbikeexp_add_data plotstr_on_demand);
 use autouse 'BBBikePrint'
     => qw(create_postscript toggle_legend print_text_postscript);
 
@@ -149,6 +153,7 @@ use strict;
 
 use BBBikeGlobalVars;
 
+# XXX move to BBBikeGlobalVars?
 # Map modes
 # Please don't change order to stay compatible with tkbabybike
 use enum qw(:MM_
@@ -204,7 +209,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.102 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4835,8 +4840,8 @@ sub define_item_attribs {
 	    route comm),
 	 (map { "comm-$_" } @comments_types),
 	 qw(qs hs ql hl nl delnet
-	    O o p pp pl-fg lsas lsas-t lsa-bg lsa-fg
-	    vf-fg kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
+	    O o p pl-fg lsas lsas-t lsa-bg lsa-fg
+	    vf-fg pp kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
 	    fz L pp-L L-img L-fg xxx pp-xxx xxx-img xxx-fg ovl
 	    gpsanimrect zoomrect),
 	);
@@ -5146,7 +5151,6 @@ sub generate_plot_functions {
 				    next;
 				}
 				my $delta = -$this_width;
-warn "(@$cl, $this_color, $this_width, $cat) $delta $strname";
 
 				for(my $ii = 2; $ii < $#$cl; $ii+=2) {
 				    # atan2(y2-y1, x2-x1)
@@ -5885,6 +5889,11 @@ sub set_route_point {
 	}
 	Tk->break; # XXX insert more Tk->break in this subroutine?
     } elsif ($map_mode eq MM_BUTTONPOINT) {
+	my(@tags) = $c->gettags('current');
+	if ($tags[0] ne 'pp') {
+	    warn "Not over a <pp> point, got @tags";
+	    return;
+	}
 	require BBBikeAdvanced;
 	buttonpoint();
 	freedraw_sub($_[0]);
@@ -6176,8 +6185,9 @@ sub enter_power {
 	$t->Label(-text => "Referenzleistung",
 		 )->grid(-row => $ref_row, -column => 0, -columnspan => 2);
     };
-    if (!($active_speed_power{Type} eq 'power' &&
-	  $active_speed_power{Index} eq $i)) {
+    my $is_reference = ($active_speed_power{Type} eq 'power' &&
+			$active_speed_power{Index} eq $i);
+    if (!$is_reference) {
 	my $rb;
 	$rb = $t->Button
 	    (-text => "Als Referenzleistung verwenden",
@@ -6197,6 +6207,8 @@ sub enter_power {
 			     eval {
 				 $power[$i] = $var;
 				 mk_power_txt($i);
+				 calc_ampel_optimierung()
+				     if $ampel_optimierung && $is_reference;
 				 recalc_bikepwr();
 				 updatekm();
 			     };
@@ -6266,8 +6278,9 @@ sub enter_speed {
 	$t->Label(-text => "Referenzgeschwindigkeit",
 		 )->grid(-row => $ref_row, -column => 0, -columnspan => 2);
     };
-    if (!($active_speed_power{Type} eq 'speed' &&
-	  $active_speed_power{Index} eq $i)) {
+    my $is_reference = ($active_speed_power{Type} eq 'speed' &&
+			$active_speed_power{Index} eq $i);
+    if (!$is_reference) {
 	my $rb;
 	$rb = $t->Button
 	    (-text => "Als Referenzgeschwidigkeit verwenden",
@@ -6287,6 +6300,8 @@ sub enter_speed {
 			     eval {
 				 $speed[$i] = $var;
 				 mk_speed_txt($i);
+				 calc_ampel_optimierung()
+				     if $ampel_optimierung && $is_reference;
 				 updatekm();
 			     };
 			     DecBusy($t);
@@ -7765,10 +7780,10 @@ sub plotstr {
 
 	    $draw_sub->($ret); # XXX evtl. den Code mit eval erzeugen
 	}
-# XXX turn into a warning if these do not match
-warn $str->pos;
-warn scalar @{$str->{Data}};
-	warn (Tk::Time_So_Far()-$bench . "s\n") if $verbose;
+# XXXXXX can this ever happen? XXXXXXXXXXXXXXXXXXXXXXXXXXX
+if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->pos . " != " . scalar(@{$str->{Data}}) . "!", "dialog", "err") }
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	warn ("Plotting street took " . (Tk::Time_So_Far()-$bench) . "s\n") if $verbose;
 
       PLOTSTR_CONT:
 	$c->itemconfigure('pp',
@@ -10017,14 +10032,16 @@ sub show_info {
 					     -highlightthickness => 0,
 					     -borderwidth => 0,
 					     )->pack;
-	    $info_text->tagConfigure("link", -underline => 1,
-				     -foreground => "blue3");
-	    $info_text->tagBind("link", "<Enter>" => sub {
-				    $info_text->configure(-cursor => "hand2");
+	    for (1 .. 2) {
+		$info_text->tagConfigure("link$_", -underline => 1,
+					 -foreground => "blue3");
+		$info_text->tagBind("link$_", "<Enter>" => sub {
+					$info_text->configure(-cursor => "hand2");
 				});
-	    $info_text->tagBind("link", "<Leave>" => sub {
-				    $info_text->configure(-cursor => undef);
-				});
+		$info_text->tagBind("link$_", "<Leave>" => sub {
+					$info_text->configure(-cursor => undef);
+				    });
+	    }
 	}
 	$info_text->delete("1.0", "end");
 	$info_text->insert("1.0", $txt);
@@ -10040,8 +10057,19 @@ sub show_info {
 	if ($polarcoord) {
 	    $info_text->insert("end", "\n\n$polarcoord");
 	    if (0) { # XXX Stadtplandienst-URL has changed :-(
-		$info_text->insert("end", "Stadtplandienst", "link");
-		$info_text->tagBind("link", "<ButtonRelease-1>" => sub {
+		$info_text->insert("end", "Stadtplandienst", "link2");
+		$info_text->tagBind("link2", "<ButtonRelease-1>" => sub {
+					require WWWBrowser;
+					WWWBrowser::start_browser($url);
+				    }
+				   );
+	    }
+	    if ($devel_host) {
+		# t0p s3cr37!
+		my $url = sprintf "http://www.stadtplandienst.de/tpl/vm005/map.asp?ll=%.5fx%.5f", $px, $py;
+		$info_text->insert("end", "\n");
+		$info_text->insert("end", "Stadtplandienst\n", "link2");
+		$info_text->tagBind("link2", "<ButtonRelease-1>" => sub {
 					require WWWBrowser;
 					WWWBrowser::start_browser($url);
 				    }
@@ -10064,8 +10092,8 @@ sub show_info {
 
 	if ($devel_host) {
 	    my $url = "http://www/~eserte/bbbike/cgi/mapserver_address.cgi?coords=" . join(",", anti_transpose($coords[0], $coords[1]));
-	    $info_text->insert("end", "Lokaler Mapserver", "link");
-	    $info_text->tagBind("link", "<ButtonRelease-1>" => sub {
+	    $info_text->insert("end", "Lokaler Mapserver", "link1");
+	    $info_text->tagBind("link1", "<ButtonRelease-1>" => sub {
 				    require WWWBrowser;
 				    WWWBrowser::start_browser($url);
 				}
@@ -10406,22 +10434,27 @@ sub addpoint_xy {
 	    # bei Erfolg eine Durchschnittssteigung errechnet.
 	    my($prev_x, $prev_y) = @{$realcoords[-2]};
 	    my $grade;
+	    my @grade_symbol_pos;
 	    my $prev_hoehe = $hoehe{"$prev_x,$prev_y"};
 	    my $this_hoehe = $hoehe{"$x,$y"};
 	    my $grade_length = $etappe;
-	    if ($use_hoehe) {
+	    if ($use_hoehe && defined $this_hoehe) {
 		if (defined $prev_hoehe) {
-		    if (defined $this_hoehe) {
-			$grade = ($this_hoehe-$prev_hoehe)/$grade_length;
-		    }
-		} elsif (defined $this_hoehe) {
+		    $grade = ($this_hoehe-$prev_hoehe)/$grade_length;
+		    @grade_symbol_pos = (int(($xx-$prex)/2+$prex)+1,
+					 int(($yy-$prey)/2+$prey)+1);
+		} else {
 		    for(my $j = $#{$bikepwr_all_time[$i]}; $j >= 0; $j--) {
 			if (defined $bikepwr_all_time[$i]->[$j][3]) {
+			    my @grade_line;
 			    for(my $k = $j;
 				$k <= $#{$bikepwr_all_time[$i]}; $k++) {
 				$grade_length +=
 				  $bikepwr_all_time[$i]->[$k][2];
+				push @grade_line, @{$coords[$k]};
 			    }
+			    push @grade_line, $prex, $prey, $xx, $yy;
+			    @grade_symbol_pos = get_polyline_center(@grade_line);
 			    # XXX ist $etappe (und damit $grade_length)
 			    # immer != 0?
 			    $grade =
@@ -10470,16 +10503,14 @@ sub addpoint_xy {
 		(($grade_length >= $grade_minimum_short_length && abs($grade) >= $grade_minimum) ||
 		 ($grade_length < $grade_minimum_short_length && abs($grade) >= $grade_minimum_short))) {
 		$c->createImage
-		    (int(($xx-$prex)/2+$prex)+1,
-		     int(($yy-$prey)/2+$prey)+1,
+		    (@grade_symbol_pos,
 		     -image => ($grade > 0 ? $steigung_photo : $gefaelle_photo),
 		     -anchor => 's',
 		     -tags => ['route', "route-$nr"],
 		    );
 
 		outline_text($c,
-			     int(($xx-$prex)/2+$prex)+1,
-			     int(($yy-$prey)/2+$prey)+1,
+			     @grade_symbol_pos,
 			     -font => $font{'small'},
 			     -text => float_prec($grade*100, 1) . '%',
 			     -tags => ['route', "route-$nr"],
@@ -15160,8 +15191,7 @@ sub get_polyline_center {
 		    ($koord[$i-1]-$koord[$i+1])/2+$koord[$i+1]);
 	}
     }
-    # fallback, should not happen
-    warn "fallback for get_polyline_center";
+    warn "Fallback for get_polyline_center, should not happen. Coords are @koord";
     (($koord[2]-$koord[0])/2+$koord[0],
      ($koord[3]-$koord[1])/2+$koord[1]);
 }

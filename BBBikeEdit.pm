@@ -2813,7 +2813,7 @@ sub show_gps_track_mode {
 		    main::status_message(M("Keine Datei zu $base gefunden"));
 		    return;
 		}
-		do_draw_gpsman_data($main::top, $file, -solidcoloring => 1);
+		BBBikeGPS::do_draw_gpsman_data($main::top, $file, -solidcoloring => 1);
 
 		if (defined $remember_map_mode_for_edit_gps_track) {
 		    undef $main::customchoosecmd;

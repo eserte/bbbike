@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_setcoord.cgi,v 1.1 2003/05/25 08:33:16 eserte Exp eserte $
+# $Id: mapserver_setcoord.cgi,v 1.2 2003/05/29 20:24:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -39,7 +39,7 @@ if ($set eq 'ziel') {
 #    print redirect(referer() . "&startc=" . param("startc"));
     push @INC, "/home/e/eserte/src/bbbike"; # XXX
     require BBBikeMapserver;
-    require FindBin;
+    require FindBin; $FindBin::RealBin = $FindBin::RealBin; # peacify -w
     my $ms = BBBikeMapserver->new(-tmpdir => "/tmp"); # XXX
     $ms->read_config("$FindBin::RealBin/bbbike.cgi.config");
     $ms->start_mapserver(-start => param("startc")); # XXX bbbikeurl etc.

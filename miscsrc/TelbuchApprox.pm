@@ -1,14 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: TelbuchApprox.pm,v 1.10 2002/11/06 15:26:08 eserte Exp $
+# $Id: TelbuchApprox.pm,v 1.11 2003/04/26 19:46:25 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
+# Mail: slaven.rezic@berlin.de
 # WWW:  http://www.rezic.de/eserte/
 #
 
@@ -46,9 +46,9 @@ sub split_street {
     if ($s =~ /((?:Straﬂe|Str\.)\s+\d+)\s+(?:Nr\.|Nummer)\s*(\d+)/) {
 	# Straﬂe 635 Nr. 1
 	($str, $hnr) = ($1,$2);
-    } elsif ($s =~ /(.*?)\b\s*([\d-]+\s?[a-z])-[a-z]$/) { # same as below, with a-c
+    } elsif ($s =~ /(.*?)\b\s*([\d-]+\s?(?:[a-zA-Z]|bis))-(?:[a-zA-Z]|bis)$/) { # same as below, with a-c
 	($str, $hnr) = ($1,$2);
-    } elsif ($s =~ /(.*?)\b\s*([\d-]+\s?[a-z]?)$/) {
+    } elsif ($s =~ /(.*?)\b\s*([\d-]+\s?(?:[a-zA-Z]|bis)?)$/) {
 	($str, $hnr) = ($1,$2);
     } elsif ($s =~ /(.*\.)([0-9-]+)$/) {
 	($str, $hnr) = ($1,$2);

@@ -129,6 +129,7 @@ Telefonbuch.pm
 Telefonbuch98.pm
 Telefonbuch99.pm
 Telefonbuch2001.pm
+TelefonbuchAny.pm
 Update.pm
 Way.pm
 Way/Metric.pm
@@ -300,6 +301,9 @@ images/ampel_klein2.gif
 images/ampel_klein_grey.xpm
 images/ampel_klein.png
 images/ampel_klein2.png
+images/ampel_klein2_rahmen.gif
+images/ampel_klein2_rahmen.png
+images/ampel_klein2_rahmen.xpm
 images/andreaskr.gif
 images/andreaskr.png
 images/andreaskr_klein.gif
@@ -316,6 +320,10 @@ images/apfel.gif
 images/apfel.png
 images/bbbike_splash.xpm
 images/bbbike_splash.gif
+images/behindertenfreundlich.gif
+images/behindertengerecht.gif
+images/behindertengerecht_klein.gif
+images/behindertengerecht_klein2.gif
 images/berlin_overview_small.gif
 images/berlin_small.gif
 images/berlin_small_hi.gif
@@ -346,6 +354,7 @@ images/ferry.xpm
 images/ferry.png
 images/ferry_klein.gif
 images/ferry_klein.xpm
+images/ferry_klein.png
 images/flaechen.gif
 images/flag2_bl.gif
 images/flag2_bl.png
@@ -395,6 +404,7 @@ images/pflaume.gif
 images/pflaume.png
 images/PoweredByPerl.gif
 images/printer.gif
+images/ptr.xbm
 images/px_1t.gif
 images/radrouten.gif
 images/reddot.gif
@@ -407,6 +417,9 @@ images/salesman_ptr_mask.xbm
 images/save.gif
 images/sbahn.gif
 images/sbahn.png
+images/sbahn_mini.gif
+images/sbahn_mini.png
+images/sbahn_mini.xpm
 images/search.gif
 images/search_pref.gif
 images/search_pref.xpm
@@ -433,9 +446,14 @@ images/stip.xbm
 images/strasse.gif
 images/ubahn.gif
 images/ubahn.png
+images/ubahn_mini.gif
+images/ubahn_mini.png
+images/ubahn_mini.xpm
 images/usercross.gif
 images/usercross.xpm
 images/via.gif
+images/via_move_2_ptr.xbm
+images/via_move_2_ptr_mask.xbm
 images/viewmag-.gif
 images/viewmag+.gif
 images/vorfahrt.gif

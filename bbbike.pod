@@ -1330,16 +1330,10 @@ oder RE<uuml>ckweg angewE<auml>hlt wurde.
 =item *
 
 Suche: Das AnwE<auml>hlen eines Punktes innerhalb einer gesperrten
-StraE<szlig>e ist fE<auml>lschlicherweise erlaubt.
-
-=item *
-
-Falsche StreckenfE<uuml>hrung, wenn fE<uuml>r das gleiche
-StreckenstE<uuml>ck zweimal der Punkt mit nearest_line_points
-ausgewE<auml>hlt wurde. Problematisch, wenn ich irgendwann bei den
-LandstraE<szlig>en auf lange StreckenstE<uuml>cke (Kilometer werden
-nur zwischen Kreuzungen und nicht mehr zwischen Kurvenpunkten
-vorberechnet) umsteigen werde.
+StraE<szlig>e ist fE<auml>lschlicherweise erlaubt. =E<gt> LE<ouml>sung:
+mit inaccessible_streets feststellen, ob der Punkt (oder beide
+Nachbarnpunkte) nicht erreicht werden kann und das AnwE<auml>hlen
+verhindern.
 
 =item *
 
@@ -1357,7 +1351,9 @@ Bedarf nachladen (wie feststellen???).
 =item *
 
 Vias verschieben etc.: wenn eine Via-Flagge sich unterhalb eines
-anderen Symbol befindet, kann es nicht angeklickt werden
+anderen Symbol befindet, kann es nicht angeklickt werden =E<gt>
+LE<ouml>sung: Start,Via,Zielflagge bekommen ein zusE<auml>tzliches
+Tag, das relativ weit hinten in stack_order steht.
 
 =item *
 
@@ -1416,14 +1412,15 @@ mit nearest_... arbeiten.
 
 =item *
 
-Update E<uuml>ber das Internet: rsync-UnterstE<uuml>tzung austesten. 
+Update E<uuml>ber das Internet: rsync-UnterstE<uuml>tzung austesten.
 
 =item *
 
 Telefonbuch-Datenbank (Name): Die Suche ist suboptimal. Bei der
 Suche von hE<auml>ufigen Nachnamen (ME<uuml>ller, Schulze)
 wird das Ergebnis begrenzt (200 Namen) und kann mit "Weiter"
-fortgesetzt werden.
+fortgesetzt werden. =E<gt> ME<ouml>glichst auf tbb oder E<auml>hnliche
+Programme zurE<uuml>ckgreifen.
 
 =item *
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.20 2003/05/27 06:44:32 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.24 2003/05/30 07:56:59 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -78,7 +78,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $bp_obj $bi $use_select
 	    $graphic_format $use_mysql_db $use_exact_streetchooser
 	    $cannot_gif_png $cannot_jpeg $cannot_pdf $cannot_svg $can_gif
-	    $can_palmdoc $can_mapserver $mapserver_address_url
+	    $can_wbmp $can_palmdoc $can_mapserver $mapserver_address_url
 	    $mapserver_init_url $no_berlinmap $max_plz_streets $with_comments
 	    $use_coord_link
 	    @weak_cache @no_cache %proc
@@ -303,6 +303,14 @@ Set this to a true value if you can produce gif images. Default: false.
 =cut
 
 $can_gif = 0;
+
+=item $can_wbmp
+
+Set this to a true value if you can produce wbmp images. Default: false.
+
+=cut
+
+$can_wbmp = 0;
 
 =item $can_palmdoc
 
@@ -549,7 +557,14 @@ eval { local $SIG{'__DIE__'};
        do "$0.config" };
 
 eval { local $SIG{'__DIE__'};
-       do "$FindBin::RealBin/bbbike-teaser.pl" };
+       my $teaser_file = "$FindBin::RealBin/bbbike-teaser.pl";
+       if (defined $BBBikeCGI::teaser_file_modtime &&
+	   (stat($teaser_file))[9] > $BBBikeCGI::teaser_file_modtime) {
+	   delete $INC{$teaser_file};
+       }
+       require $teaser_file;
+       $BBBikeCGI::teaser_file_modtime = (stat($teaser_file))[9];
+}; warn $@ if $@;
 
 if ($VERBOSE) {
     $StrassenNetz::VERBOSE    = $VERBOSE;
@@ -594,7 +609,11 @@ package CGI::BBBike;
 sub new {
     my($class, @args) = @_;
     my $caller_pkg = caller();
-    my $code = '
+    my $code = "";
+    if ($] >= 5.006) {
+	$code .= "no warnings 'redefine';\n";
+    }
+    $code .= '
 sub header
  {
     if (!$ ' . $caller_pkg . '::first_time && $ ' . $caller_pkg . '::use_miniserver) {
@@ -604,6 +623,7 @@ sub header
     shift->SUPER::header(@_);
 }
 ';
+    #warn $code;
     eval $code;
     $class->SUPER::new(@args);
 }
@@ -615,7 +635,7 @@ use vars qw(@ISA);
 
 } # jetzt beginnt wieder package main
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.20 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.24 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -668,8 +688,11 @@ if (!$use_background_image) {
     $ziel_bgcolor  = '#e8f0ff';
 }
 
+my @pref_keys = qw/speed cat quality ampel green/;
+
 $q = new CGI::BBBike;
 $str = new Strassen "strassen" unless defined $str;
+#$str = new Strassen::Lazy "strassen" unless defined $str;
 $cookiename = "bbbike";
 if (!defined $inaccess_str) {
     my $i_s;
@@ -1678,7 +1701,7 @@ function " . $type . "char_init() {}
 	print window_open("$bbbike_script?all=1", "BBBikeAll",
 			  "dependent,height=500,resizable," .
 			  "screenX=500,screenY=30,scrollbars,width=250")
-	    . "Liste aller bekannten Stra&szlig;en</a> (ca. 50 kB)";
+	    . "Liste aller bekannten Stra&szlig;en</a> (ca. 75 kB)";
 	print "<hr>";
     }
 
@@ -2086,7 +2109,7 @@ sub settings_html {
     # Einstellungen ########################################
     my %c = $q->cookie(-name => $cookiename);
 
-    foreach my $key (qw/speed cat quality ampel green/) {
+    foreach my $key (@pref_keys) {
 	$c{"pref_$key"} = $q->param("pref_$key")
 	    if defined $q->param("pref_$key");
     }
@@ -2337,7 +2360,7 @@ sub search_coord {
     }
 
     # Qualitätsoptimierung
-    if ($q->param('pref_quality') ne '') {
+    if (defined $q->param('pref_quality') && $q->param('pref_quality') ne '') {
 	# XXX landstraßen?
 	if (!$qualitaet_s_net) {
 	    $qualitaet_s_net =
@@ -2364,12 +2387,12 @@ sub search_coord {
     }
 
     # Kategorieoptimierung
-    if ($q->param('pref_cat') ne '') {
+    if (defined $q->param('pref_cat') && $q->param('pref_cat') ne '') {
 	my $penalty;
 	if ($q->param('pref_cat') eq 'N_RW') {
 	    if (!$radwege_strcat_net) {
 		$radwege_strcat_net = new StrassenNetz $multistr;
-		$radwege_strcat_net->make_net_cyclepath(Strassen->new("radwege_exact"), 'N_RW');
+		$radwege_strcat_net->make_net_cyclepath(Strassen->new("radwege_exact"), 'N_RW', UseCache => 0); # UseCache => 1 for munich
 	    }
 	    $penalty = { "H"    => 4,
 			 "H_RW" => 1,
@@ -2382,7 +2405,7 @@ sub search_coord {
 	} else {
 	    if (!$strcat_net) {
 		$strcat_net = new StrassenNetz $multistr;
-		$strcat_net->make_net_cat;
+		$strcat_net->make_net_cat(-usecache => 0); # 1 for munich
 	    }
 	    if ($q->param('pref_cat') eq 'N2') {
 		$penalty = { "HH" => 4,
@@ -2491,48 +2514,25 @@ sub search_coord {
 	@weather_res = gather_weather_proc();
     }
 
-    %persistent = $q->cookie(-name => $cookiename);
-    foreach my $key (qw/speed cat quality ampel green/) {
-	$persistent{"pref_$key"} = $q->param("pref_$key");
-    }
-    my $cookie = $q->cookie
-	(-name => $cookiename,
-	 -value => { %persistent },
-	 -expires => '+1y',
-	);
+    my $sess = tie_session(undef);
 
-    print $q->header(@weak_cache,
-		     -cookie => $cookie,
-		     etag());
-    my %header_args;
-##XXX die Idee hierbei war: table.background ist bei Netscape der Hintergrund
-## ohne cellspacing, während es beim IE mit cellspacing ist. Also für
-## jedes td bgcolor setzen. Oder besser mit Stylesheets arbeiten. Nur wie,
-## wenn man nicht für jedes td die Klasse setzen will?
-#     if ($can_css) {
-# 	$header_args{'-style'} = <<EOF;
-# <!--
-# $std_css
-# td { background:#ffcc66; }
-# -->
-# EOF
-#     }
-    $header_args{-printmode} = 1 if $printmode;
-    header(%header_args);
+    my $r;
+    my @out_route;
+    my %speed_map;
+    my %power_map;
+    my @strnames;
+    my @path;
+ CALC_ROUTE_TEXT: {
+	last CALC_ROUTE_TEXT if (!@r);
 
-    if (!@r) {
-	print "Keine Route gefunden.\n";
-    } else {
-	my $r;
 	if (defined $alternative &&
 	    $alternative >= 0 && $alternative <= $#r) {
 	    $r = $r[$alternative];
 	} else {
 	    $r = $r[0];
 	}
-	if (!$r->path_list) {
-	    print "Keine Route gefunden.\n";
-	} # XXX else-Teil fehlt
+
+	last CALC_ROUTE_TEXT if (!$r->path_list);
 
 	my(@power) = (50, 100, 200);
 	my @bikepwr_time = (0, 0, 0);
@@ -2571,7 +2571,223 @@ sub search_coord {
 	    }
 	}
 
-	if ($custom_net) {
+	@strnames = $net->route_to_name($r->path);
+
+	my @speeds = qw(10 15 20 25);
+	if ($q->param('pref_speed')) {
+	    if (!grep { $_ == $q->param('pref_speed') } @speeds) {
+		push @speeds, $q->param('pref_speed');
+		@speeds = sort { $a <=> $b } @speeds;
+		if ($q->param('pref_speed') > 17) {
+		    shift @speeds;
+		} else {
+		    pop @speeds;
+		}
+	    }
+	}
+
+	foreach my $speed (@speeds) {
+	    my $def = {};
+	    $def->{Pref} = ($q->param('pref_speed') && $speed == $q->param('pref_speed'));
+	    my $time;
+	    if ($handicap_s_net) {
+		my %handicap_s_speed = ("q4" => 5); # hardcoded für Fußgängerzonen
+		$time = 0;
+		my @realcoords = @{ $r[0]->path };
+		for(my $ii=0; $ii<$#realcoords; $ii++) {
+		    my $s = Strassen::Util::strecke($realcoords[$ii],$realcoords[$ii+1]);
+		    my @etappe_speeds = $speed;
+#		    if ($qualitaet_s_net && (my $cat = $qualitaet_s_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
+#		    push @etappe_speeds, $qualitaet_s_speed{$cat}
+#			if defined $qualitaet_s_speed{$cat};
+#		}
+		    if ($handicap_s_net && (my $cat = $handicap_s_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
+			push @etappe_speeds, $handicap_s_speed{$cat}
+			    if defined $handicap_s_speed{$cat};
+		    }
+		    $time += ($s/1000)/min(@etappe_speeds);
+		}
+	    } else {
+		$time = $r->len/1000/$speed;
+	    }
+	    $def->{Time} = $time;
+	    $speed_map{$speed} = $def;
+	}
+
+	if ($bp_obj and $bikepwr_time[0]) {
+	    for my $i (0 .. $#power) {
+		$power_map{$power[$i]} = {Time => $bikepwr_time[$i]};
+	    }
+	}
+
+	if (!defined $r->trafficlights && new_trafficlights()) {
+	    $r->add_trafficlights($ampeln);
+	}
+
+	if ($with_comments) {
+	    if (!$comments_net) {
+		my @s;
+		my @comment_files = qw(comments qualitaet_s);
+		if ($custom && $custom eq 'temp-blocking' &&
+		    $custom_s{"handicap"}) {
+		    push @s, $custom_s{"handicap"};
+		} else {
+		    push @comment_files, "handicap_s";
+		}
+		for my $s (@comment_files) {
+		    eval {
+			push @s, Strassen->new($s);
+		    };
+		    warn "$s: $@" if $@;
+		}
+		if (@s) {
+		    $comments_net = StrassenNetz->new(MultiStrassen->new(@s));
+		    $comments_net->make_net_cat(-net2name => 1, -multiple => 1);
+		}
+	    }
+	    @path = $r->path_list;
+	}
+
+	my($next_entf, $ges_entf_s, $next_winkel, $next_richtung, $next_route_inx);
+	($next_entf, $ges_entf_s, $next_winkel, $next_richtung, $next_route_inx)
+	    = (0, "", undef, "");
+
+	my $ges_entf = 0;
+	for(my $i = 0; $i <= $#strnames; $i++) {
+	    my $strname;
+	    my $etappe_comment = '';
+	    my $entf_s;
+	    my $raw_direction;
+	    my($entf, $winkel, $richtung, $route_inx)
+		= ($next_entf, $next_winkel, $next_richtung, $next_route_inx);
+	    ($strname, $next_entf, $next_winkel, $next_richtung, $next_route_inx)
+		= @{$strnames[$i]};
+	    if ($i > 0) {
+		if (!$winkel) { $winkel = 0 }
+		$winkel = int($winkel/10)*10;
+		if ($winkel < 30) {
+		    $richtung = "";
+		    $raw_direction = "";
+		} else {
+		    $raw_direction =
+			($winkel <= 45 ? 'h' : '') .
+			    ($richtung eq 'l' ? 'l' : 'r');
+		    $richtung =
+			($winkel <= 45 ? 'halb' : '') .
+			    ($richtung eq 'l' ? 'links ' : 'rechts ') .
+				"($winkel°) " . Strasse::de_artikel($strname);
+		}
+		$ges_entf += $entf;
+		$ges_entf_s = sprintf "%.1f km", $ges_entf/1000;
+		$entf_s = sprintf "nach %.2f km", $entf/1000;
+	    } elsif ($#{ $r->path } > 1) {
+		# XXX main:: ist haesslich
+		$raw_direction =
+		    uc(#main::opposite_direction #XXX why???
+		       (main::line_to_canvas_direction
+			(@{ $r->path->[0] },
+			 @{ $r->path->[1] })));
+		$richtung = "nach " . $raw_direction;
+	    }
+
+	    if ($with_comments && $comments_net) {
+		my @comments;
+		my %seen_comments_in_this_etappe;
+		for my $i ($strnames[$i]->[4][0] .. $strnames[$i]->[4][1]) {
+		    my @etappe_comments = $comments_net->get_point_comment(\@path, $i, undef);
+		    foreach my $etappe_comment (@etappe_comments) {
+			$etappe_comment =~ s/^.+?:\s+//; # strip street
+			if (!exists $seen_comments_in_this_etappe{$etappe_comment}) {
+			    push @comments, $etappe_comment;
+			    $seen_comments_in_this_etappe{$etappe_comment}++;
+			}
+		    }
+		}
+		$etappe_comment = join("; ", @comments) if @comments;
+	    }
+
+	    push @out_route, {
+			      Dist => $entf,
+			      DistString => $entf_s,
+			      TotalDist => $ges_entf,
+			      TotalDistString => $ges_entf_s,
+			      Direction => $raw_direction,
+			      DirectionString => $richtung,
+			      Angle => $winkel,
+			      Strname => $strname,
+			      ($with_comments && $comments_net ?
+			       (Comment => $etappe_comment) : ()
+			      ),
+			      Coord => join(",", @{$r->path->[$route_inx->[0]]}),
+			     };
+	}
+	$ges_entf += $next_entf;
+	$ges_entf_s = sprintf "%.1f km", $ges_entf/1000;
+	my $entf_s = sprintf "nach %.2f km", $next_entf/1000;
+	push @out_route, {
+			  Dist => $next_entf,
+			  DistString => $entf_s,
+			  TotalDist => $ges_entf,
+			  TotalDistString => $ges_entf_s,
+			  DirectionString => "angekommen!",
+			  Strname => $zielname,
+			  Coord => join(",", @{$r->path->[-1]}),
+			 };
+    }
+
+    if ($output_as eq 'perldump') {
+	require Data::Dumper;
+	print $q->header(-type => "text/plain",
+			 @no_cache,
+			 etag(),
+			);
+	print Data::Dumper->new
+	    ([{
+	       Route => \@out_route,
+	       Len   => $r->len, # in meters
+	       Trafficlights => $r->trafficlights,
+	       Speed => \%speed_map,
+	       Power => \%power_map,
+	       ($sess ? (Session => $sess->{_session_id}) : ()),
+	       Path => [ map { join ",", @$_ } @{ $r->path }],
+	      }
+	     ], ['route'])->Dump;
+	return;
+    }
+
+    %persistent = $q->cookie(-name => $cookiename);
+    foreach my $key (@pref_keys) {
+	$persistent{"pref_$key"} = $q->param("pref_$key");
+    }
+    my $cookie = $q->cookie
+	(-name => $cookiename,
+	 -value => { %persistent },
+	 -expires => '+1y',
+	);
+
+    print $q->header(@weak_cache,
+		     -cookie => $cookie,
+		     etag());
+    my %header_args;
+##XXX die Idee hierbei war: table.background ist bei Netscape der Hintergrund
+## ohne cellspacing, während es beim IE mit cellspacing ist. Also für
+## jedes td bgcolor setzen. Oder besser mit Stylesheets arbeiten. Nur wie,
+## wenn man nicht für jedes td die Klasse setzen will?
+#     if ($can_css) {
+# 	$header_args{'-style'} = <<EOF;
+# <!--
+# $std_css
+# td { background:#ffcc66; }
+# -->
+# EOF
+#     }
+    $header_args{-printmode} = 1 if $printmode;
+    header(%header_args);
+
+    if (!@out_route) {
+	print "Keine Route gefunden.\n";
+    } else {
+	if ($custom_net && !$printmode) {
 	    my(@path) = $r->path_list;
 	    for(my $i = 0; $i < $#path; $i++) {
 		my($x1, $y1) = @{$path[$i]};
@@ -2601,7 +2817,6 @@ EOF
 	    print "<center>Mögliche Ausweichroute</center>\n";
 	}
 
-	my(@strnames) = $net->route_to_name($r->path);
 	print "<center>" unless $printmode;
 	print "<table bgcolor=\"#ffcc66\"";
 	if ($printmode) {
@@ -2647,64 +2862,39 @@ EOF
 	printf "<tr><td>${fontstr}L&auml;nge:$fontend</td><td>${fontstr}%.2f km$fontend</td>\n", $r->len/1000;
 	print
 	  "<tr><td>${fontstr}Fahrzeit:$fontend</td>";
-	my @speeds = qw(10 15 20 25);
-	if ($q->param('pref_speed')) {
-	    if (!grep { $_ == $q->param('pref_speed') } @speeds) {
-		push @speeds, $q->param('pref_speed');
-		@speeds = sort { $a <=> $b } @speeds;
-		if ($q->param('pref_speed') > 17) {
-		    shift @speeds;
+
+	{
+	    my $i = 0;
+	    for my $speed (sort { $a <=> $b } keys %speed_map) {
+		my $def = $speed_map{$speed};
+		my $bold = $def->{Pref};
+		my $time = $def->{Time};
+		print "<td>$fontstr" . make_time($time)
+		    . "h (" . ($bold ? "<b>" : "") . "bei $speed km/h" . ($bold ? "</b>" : "") . ")";
+		print "," if $speed != 25;
+		print "$fontend</td>";
+		if ($i == 1) {
+		    print "</tr><tr><td></td>";
+		}
+		$i++;
+	    }
+	}
+	print "<tr>\n";
+	print "$fontend</td></tr>";
+	if (%power_map) {
+	    print "<tr><td></td>";
+	    my $is_first = 1;
+	    for my $power (sort { $a <=> $b } keys %power_map) {
+		if (!$is_first) {
+		    print ",";
 		} else {
-		    pop @speeds;
+		    $is_first = 0;
 		}
+		print "<td>", $fontstr,  make_time($power_map{$power}->{Time}/3600) . "h (bei $power W)", $fontend, "</td>"
 	    }
-	}
-	foreach my $speed (@speeds) {
-	    my $bold = ($q->param('pref_speed') && $speed == $q->param('pref_speed'));
-	    my $time;
-	    if ($handicap_s_net) {
-		my %handicap_s_speed = ("q4" => 5); # hardcoded für Fußgängerzonen
-		$time = 0;
-		my @realcoords = @{ $r[0]->path };
-		for(my $ii=0; $ii<$#realcoords; $ii++) {
-		    my $s = Strassen::Util::strecke($realcoords[$ii],$realcoords[$ii+1]);
-		    my @etappe_speeds = $speed;
-#		    if ($qualitaet_s_net && (my $cat = $qualitaet_s_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
-#		    push @etappe_speeds, $qualitaet_s_speed{$cat}
-#			if defined $qualitaet_s_speed{$cat};
-#		}
-		    if ($handicap_s_net && (my $cat = $handicap_s_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
-			push @etappe_speeds, $handicap_s_speed{$cat}
-			    if defined $handicap_s_speed{$cat};
-		    }
-		    $time += ($s/1000)/min(@etappe_speeds);
-		}
-	    } else {
-		$time = $r->len/1000/$speed;
-	    }
-	    print "<td>" . ($bold ? "<b>" : "") . "$fontstr" . make_time($time)
-		. "h (bei $speed km/h" . ($bold ? "</b>" : "") . ")";
-	    print "," if $speed != 25;
-	    print "$fontend</td>";
-	    if ($speed == $speeds[1]) {
-		print "</tr><tr><td></td>";
-	    }
-	}
-	print "<tr><td></td></tr>";
-	if ($bp_obj and $bikepwr_time[0]) {
-	    print
-	      "<tr><td></td><td>$fontstr",
-	      make_time($bikepwr_time[0]/3600) . "h (bei $power[0] W),",
-	      "$fontend</td><td>$fontstr",
-	      make_time($bikepwr_time[1]/3600) . "h (bei $power[1] W),",
-	      "$fontend</td><td>$fontstr ",
-	      make_time($bikepwr_time[2]/3600) . "h (bei $power[2] W)",
-	      "$fontend</td></tr>";
+	    print "</tr>\n";
 	}
 	print "</table>\n";
-	if (!defined $r->trafficlights && new_trafficlights()) {
-	    $r->add_trafficlights($ampeln);
-	}
 	if (defined $r->trafficlights) {
 	    my $nr = $r->trafficlights;
 	    print $nr . " Ampel" . ($nr == 1 ? "" : "n") .
@@ -2712,8 +2902,8 @@ EOF
 	}
 	print "</center>\n" unless $printmode;
 	print "<hr>";
+
 	my $line_fmt;
-	my($next_entf, $ges_entf_s, $next_winkel, $next_richtung);
 	if (!$bi->{'can_table'}) {
 	    $with_comments = 0;
 	    if ($bi->{'mobile_device'}) {
@@ -2722,8 +2912,6 @@ EOF
 		$line_fmt = "%-13s %-24s %-31s %-8s\n";
 	    }
 	    print "<pre>";
-	    ($next_entf, $ges_entf_s, $next_winkel, $next_richtung)
-	      = ("", "", undef, "");
 	} else {
 	    # Ist width=... bei Netscape4 buggy? Das nachfolgende Attribut
 	    # ignoriert font-family.
@@ -2746,85 +2934,13 @@ EOF
 		print "<th>${fontstr}Bemerkungen$fontend</th>";
 	    }
 	    print "</tr>\n";
-	    ($next_entf, $ges_entf_s, $next_winkel, $next_richtung)
-	      = ("&nbsp;", "&nbsp;", undef, "&nbsp;");
 	}
 
-	my @path;
-	if ($with_comments) {
-	    if (!$comments_net) {
-		my @s;
-		my @comment_files = qw(comments qualitaet_s);
-		if ($custom && $custom eq 'temp-blocking' &&
-		    $custom_s{"handicap"}) {
-		    push @s, $custom_s{"handicap"};
-		} else {
-		    push @comment_files, "handicap_s";
-		}
-		for my $s (@comment_files) {
-		    eval {
-			push @s, Strassen->new($s);
-		    };
-		    warn "$s: $@" if $@;
-		}
-		if (@s) {
-		    $comments_net = StrassenNetz->new(MultiStrassen->new(@s));
-		    $comments_net->make_net_cat(-net2name => 1, -multiple => 1);
-		}
-	    }
-	    @path = $r->path_list;
-	}
-
-	my $odd = 0;
-	my $ges_entf = 0;
-	for(my $i = 0; $i <= $#strnames; $i++) {
-	    my $strname;
-	    my $etappe_comment = '&nbsp;';
-	    my($entf, $winkel, $richtung)
-	      = ($next_entf, $next_winkel, $next_richtung);
-	    ($strname, $next_entf, $next_winkel, $next_richtung)
-	      = @{$strnames[$i]};
-	    if ($i > 0) {
-		if (!$winkel) { $winkel = 0 }
-		$winkel = int($winkel/10)*10;
-		if ($winkel < 30) {
-		    # ein Space, damit bgcolor ausgefüllt wird
-		    $richtung = (!$bi->{'can_table'} ? "" : "&nbsp;");
-		} else {
-		    $richtung =
-		      ($winkel <= 45 ? 'halb' : '') .
-			($richtung eq 'l' ? 'links ' : 'rechts ') .
-			  "($winkel°) " . Strasse::de_artikel($strname);
-		}
-		$ges_entf += $entf;
-		$ges_entf_s = sprintf "%.1f km", $ges_entf/1000;
-		$entf = sprintf "nach %.2f km", $entf/1000;
-
-	    } elsif ($#{ $r->path } > 1) {
-		# XXX main:: ist haesslich
-		$richtung = "nach " .
-		    uc(#main::opposite_direction #XXX why???
-		       (main::line_to_canvas_direction
-			(@{ $r->path->[0] },
-			 @{ $r->path->[1] })));
-	    }
-
-	    if ($with_comments && $comments_net) {
-		my @comments;
-		my %seen_comments_in_this_etappe;
-		for my $i ($strnames[$i]->[4][0] .. $strnames[$i]->[4][1]) {
-		    my @etappe_comments = $comments_net->get_point_comment(\@path, $i, undef);
-		    foreach my $etappe_comment (@etappe_comments) {
-			$etappe_comment =~ s/^.+?:\s+//; # strip street
-			if (!exists $seen_comments_in_this_etappe{$etappe_comment}) {
-			    push @comments, $etappe_comment;
-			    $seen_comments_in_this_etappe{$etappe_comment}++;
-			}
-		    }
-		}
-		$etappe_comment = join("; ", @comments) if @comments;
-	    }
-
+  	my $odd = 0;
+	for my $etappe (@out_route) {
+	    my($entf, $richtung, $strname, $ges_entf_s,
+	       $etappe_comment) =
+		   @{$etappe}{qw(DistString DirectionString Strname TotalDistString Comment)};
 	    if (!$bi->{'can_table'}) {
 		printf $line_fmt,
 		  $entf, $richtung, string_kuerzen($strname, 31), $ges_entf_s;
@@ -2837,19 +2953,8 @@ EOF
 		print "</tr>\n";
 	    }
 	}
-	$ges_entf_s = sprintf "%.1f km", ($ges_entf+$next_entf)/1000;
-	my $entf = sprintf "nach %.2f km", $next_entf/1000;
-	if (!$bi->{'can_table'}) {
-	    printf $line_fmt, $entf, "angekommen!", "", $ges_entf_s;
-	    print "</pre>\n";
-	} else {
-	    print
-	      "<tr class=" . ($odd ? "odd" : "even") . "><td>$fontstr$entf$fontend</td><td>${fontstr}angekommen!$fontend</td><td>&nbsp;</td><td>$fontstr$ges_entf_s$fontend</td>";
-	    if ($with_comments && $comments_net) {
-		print "<td></td>";
-	    }
-	    print "</tr>\n";
 
+	if ($bi->{'can_table'}) {
 	    if (!$bi->{'text_browser'} && !$printmode) {
 		my $qq = new CGI $q->query_string;
 		$qq->param('output_as', "print");
@@ -2999,6 +3104,7 @@ EOF
 	    print " <option " . $imagetype_checked->("png") . ">PNG\n" if $graphic_format eq 'png';
 	    print " <option " . $imagetype_checked->("gif") . ">GIF\n" if $graphic_format eq 'gif' || $can_gif;
 	    print " <option " . $imagetype_checked->("jpeg") . ">JPEG\n" unless $cannot_jpeg;
+	    print " <option " . $imagetype_checked->("wbmp") . ">WBMP\n" if $can_wbmp;
 	    print " <option " . $imagetype_checked->("pdf-auto") . ">PDF\n" unless $cannot_pdf;
 	    print " <option " . $imagetype_checked->("pdf") . ">PDF (Längsformat)\n" unless $cannot_pdf;
 	    print " <option " . $imagetype_checked->("pdf-landscape") . ">PDF (Querformat)\n" unless $cannot_pdf;
@@ -3007,7 +3113,6 @@ EOF
 	    print " </select></span>\n";
 	    print "<br>\n";
 
-	    my $sess = tie_session(undef);
 	    if ($sess) {
 		$sess->{routestringrep} = $string_rep;
 		print "<input type=hidden name=coordssession value=\"$sess->{_session_id}\">";
@@ -3366,6 +3471,25 @@ sub draw_route {
 	$q->param(coords => $sess->{routestringrep});
     }
 
+    my $cookie;
+    %persistent = $q->cookie(-name => $cookiename);
+    if (defined $q->param("interactive")) {
+	foreach my $key (qw/outputtarget imagetype geometry/) {
+	    $persistent{$key} = $q->param($key);
+	}
+	# draw is an array;
+	my $i = 0;
+	foreach ($q->param("draw")) {
+	    $persistent{"draw$i"} = $_;
+	    $i++;
+	}
+	$cookie = $q->cookie
+	    (-name => $cookiename,
+	     -value => { %persistent },
+	     -expires => '+1y',
+	    );
+    }
+
     if (defined $q->param('imagetype') &&
 	$q->param('imagetype') =~ /^mapserver/) {
 	require BBBikeMapserver;
@@ -3399,28 +3523,11 @@ sub draw_route {
 	     -scope => "all,city", # so switching between reference maps is possible
 	     -externshape => 1,
 	     -layers => $layers,
+	     -cookie => $cookie,
 	    );
 	return;
     }
 
-    my $cookie;
-    %persistent = $q->cookie(-name => $cookiename);
-    if (defined $q->param("interactive")) {
-	foreach my $key (qw/outputtarget imagetype geometry/) {
-	    $persistent{$key} = $q->param($key);
-	}
-	# draw is an array;
-	my $i = 0;
-	foreach ($q->param("draw")) {
-	    $persistent{"draw$i"} = $_;
-	    $i++;
-	}
-	$cookie = $q->cookie
-	    (-name => $cookiename,
-	     -value => { %persistent },
-	     -expires => '+1y',
-	    );
-    }
     my @header_args = @cache;
     if ($cookie) { push @header_args, "-cookie", $cookie }
     push @header_args, etag();
@@ -4133,7 +4240,10 @@ sub choose_all_form {
     };
 
     print $q->header(@weak_cache, etag());
-    header();
+    header(#too slow XXX -onload => "list_all_streets_onload()",
+	   -script => {-src => $bbbike_html . "/bbbike_start.js",
+		      },
+	  );
 
     my @strlist;
     $str->init;
@@ -4153,7 +4263,7 @@ sub choose_all_form {
     for my $ch ('A' .. 'Z') {
 	print "<a href=\"#$ch\">$ch</a> ";
     }
-    print "</center><p>";
+    print "</center><div id='list'>";
 
     for(my $i = 0; $i <= $#strlist; $i++) {
 	next if ($strlist[$i] =~ /^\(/);
@@ -4167,11 +4277,11 @@ sub choose_all_form {
 	     $last_initial ne $initial{$initial})) {
 	    print "<hr>";
 	    $last_initial = ($initial{$initial} ? $initial{$initial} : $initial);
-	    print "<a name=\"$last_initial\">$strname</a><br>\n";
-	} else {
-	    print "$strname<br>\n";
+	    print "<a name=\"$last_initial\"><b>$last_initial</b></a><br>";
 	}
+	print "$strname<br>";
     }
+    print "</div>";
     print $q->end_html;
 }
 
@@ -4319,7 +4429,7 @@ sub tie_session {
     }
 
     tie my %sess, 'Apache::Session::DB_File', $id,
-	{ FileName => '/tmp/bbbike_sessions.db', # XXX make configurable
+	{ FileName => "/tmp/bbbike_sessions_" . $< . ".db", # XXX make configurable
 	  LockDirectory => '/tmp',
 	} or do {
 	    $use_apache_session = undef;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEditUtil.pm,v 1.5 2003/01/08 18:47:01 eserte Exp $
+# $Id: BBBikeEditUtil.pm,v 1.5 2003/01/08 18:47:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -40,11 +40,10 @@ sub get_orig_files {
 	}
     }
     closedir DIR;
-#XXX full path or not
-#      my $fr_file = "$FindBin::RealBin/misc/fragezeichen-orig";
-#      if (-e $fr_file) {
-#  	push @files, $fr_file;
-#      }
+    my $fr_file = "$FindBin::RealBin/misc/fragezeichen-orig";
+    if (-e $fr_file) {
+ 	push @files, $fr_file;
+    }
     sort @files;
 }
 

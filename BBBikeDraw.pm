@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.25 2003/02/26 14:21:14 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.26 2003/05/30 07:56:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.25 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.26 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, %args) = @_;
@@ -43,6 +43,7 @@ sub new {
     $self->{UseFlags}  = delete $args{UseFlags};
     $self->{Width}     = delete $args{Width}; # boolean
     $self->{RouteWidth}= delete $args{RouteWidth}; # width of route
+    $self->{RouteDotted}=delete $args{RouteDotted}; # draw dotted route
     $self->{StrLabel}  = delete $args{StrLabel};
     $self->{MakeNet}   = delete $args{MakeNet};
     $self->{ImageType} = delete $args{ImageType}; # gif, png or wbmp
