@@ -46,6 +46,7 @@ sub register {
 	elsif ($k eq 'remotehost') { $remotehost = $v }
 	elsif ($k eq 'bbbike_cgi') { $bbbike_cgi = $v }
 	elsif ($k eq 'tracking') { $tracking = $v; parse_tail_log() if $v } # XXX
+	elsif ($k eq 'replay_route_search') { $do_search_route = $v }
 	else {
 	    warn "Ignore unknown plugin parameter $k";
 	}
@@ -392,6 +393,9 @@ sub parse_line {
 	    if (defined $lastcoords && $coords eq $lastcoords) {
 		return ();
 	    }
+	    if ($coords =~ /^\s*$/) {
+		return ();
+	    }
 	    $lastcoords = $coords;
 	    my $bbdline = "$routename [$date] " .
 		_prepare_qs_dump(\$query_string) .
@@ -405,6 +409,7 @@ sub parse_line {
 	    for my $type (qw(start via ziel)) {
 		if ($query_string =~ /${type}c=([^&; ]+)/) {
 		    my $coords = uri_unescape(uri_unescape($1));
+		    next if $coords =~ /^\s*$/;
 		    my $name = "$coords";
 		    if ($type =~ /(?:start|ziel)/) {
 			$has{$type}++;
