@@ -669,6 +669,30 @@ sub reload {
     }
 }
 
+# See also get_conversion
+sub get_anti_conversion {
+    my($self, %args) = @_;
+    my $convsub;
+    my $tomap = $self->{GlobalDirectives}{map} || $args{Map};
+    if ($tomap) {
+	require Karte;
+	Karte::preload(":all"); # Can't preload specific maps, because $map is a token, not a map module name
+	my $frommap = $args{-frommap} || "standard";
+	return if $tomap eq $frommap; # no conversion needed
+	if ($frommap ne "standard") {
+	    $convsub = sub {
+		join ",", $Karte::map{$frommap}->map2map($Karte::map{$tomap},
+							 split /,/, $_[0]);
+	    };
+	} else {
+	    $convsub = sub {
+		join ",", $Karte::map{$tomap}->standard2map(split /,/, $_[0]);
+	    };
+	}
+    }
+    $convsub;
+}
+
 1;
 
 __END__
