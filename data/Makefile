@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.11 2004/05/09 21:25:40 eserte Exp $
+# $Id: Makefile,v 2.11 2004/05/09 21:25:40 eserte Exp eserte $
 #
 
 BBBIKEDIR=		..
@@ -737,6 +737,9 @@ check-Berlin.coords.data:	.check_Berlin_coords_data
 	env LC_ALL=de_DE.ISO_8859-1 sort -c Berlin.coords.data || \
 	    ( env LC_ALL=de_DE.ISO_8859-1 sort Berlin.coords.data | diff -u - Berlin.coords.data; false )
 	@touch $@
+
+check-nearest:
+	${MISCSRCDIR}/check_nearest strassen
 
 GNUmakefile: Makefile ../miscsrc/b2gmake
 	../miscsrc/b2gmake < Makefile > GNUmakefile

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.132 2004/05/17 23:36:45 eserte Exp $
+# $Id: bbbike,v 3.132 2004/05/17 23:36:45 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -8630,7 +8630,7 @@ require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . 
     };
     if ($@) {
 	$show_active_temp_blockings = 0;
-	status_message($@, "die");
+	status_message($@, "warn"); # do not die, may be called before mainloop
     } else {
 	$show_active_temp_blockings = 1;
     }

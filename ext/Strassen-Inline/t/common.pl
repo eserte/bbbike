@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: common.pl,v 1.3 2003/08/07 21:31:50 eserte Exp $
+# $Id: common.pl,v 1.4 2004/05/19 20:02:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -32,7 +32,7 @@ TEST5:
 
     require BBBikeRouting;
     my $routing = BBBikeRouting->new->init_context;
-    $routing->Start->Street("Scheidemann/Entlastung");
+    $routing->Start->Street("Yitzhak-Rabin/Scheidemann");
     $routing->resolve_position($routing->Start);
     ok(defined $routing->Start->Coord);
     $routing->Goal->Street("Unter den Linden/Glinka");

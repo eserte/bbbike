@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: tkbabybike,v 3.1 2004/04/20 22:21:52 eserte Exp $
+# $Id: tkbabybike,v 3.1 2004/04/20 22:21:52 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -433,16 +433,36 @@ sub main_gui {
     $hbox_start = $vbox_entries->Frame->pack(-fill => 'x', -expand => 1);
     $hbox_ziel  = $vbox_entries->Frame->pack(-fill => 'x', -expand => 1);
 
+    my $set_position = sub {
+	my($pos, $s) = @_;
+	if ($scope =~ /^(city|berlin)$/) {
+	    $pos->Street($s);
+	    $pos->Citypart(undef);
+	} else {
+	    $pos->Street(undef);
+	    $pos->City($s);
+	}
+    };
+
+    my $get_position_desc = sub {
+	my $pos = shift;
+	if ($scope =~ /^(city|berlin)$/) {
+	    $pos->Street .
+		(defined $pos->Citypart ?
+		 ' (' . $pos->Citypart . ')' : '');
+	} else {
+	    $pos->City .
+		(defined $pos->Street ?
+		 ' (' . $pos->Street . ')' : '');
+	}
+    };
+
     $se_return = sub {
 	$se->Finish if $se->can('Finish');
-	# XXX => to sub?
-	$routing->Start->Street($se->get);
-	$routing->Start->Citypart(undef);
+	$set_position->($routing->Start, $se->get);
 	$routing->get_start_position;
 	set_street_coord('start',
-			 $routing->Start->Street .
-			 (defined $routing->Start->Citypart ?
-			  ' (' . $routing->Start->Citypart . ')' : ''),
+			 $get_position_desc->($routing->Start),
 			 $routing->Start->Coord);
 	my($x,$y) = $transpose->(split /,/, $routing->Start->Coord);
 	set_mark($x,$y);
@@ -451,14 +471,10 @@ sub main_gui {
 
     $ze_return = sub {
 	$ze->Finish if $ze->can('Finish');
-	# XXX => to sub?
-	$routing->Goal->Street($ze->get);
-	$routing->Goal->Citypart(undef);
+	$set_position->($routing->Goal, $ze->get);
 	$routing->get_goal_position;
 	set_street_coord('ziel',
-			 $routing->Goal->Street .
-			 (defined $routing->Goal->Citypart ?
-			  ' (' . $routing->Goal->Citypart . ')' : ''),
+			 $get_position_desc->($routing->Goal),
 			 $routing->Goal->Coord);
 	my($x,$y) = $transpose->(split /,/, $routing->Goal->Coord);
 	set_mark($x,$y);
@@ -468,6 +484,7 @@ sub main_gui {
     $sl = $hbox_start->Label(-text => "Start:")->pack(-side => 'left');
     if (!$use_pathentry) {
 	$se = $hbox_start->Entry;
+	$se->bind('<Return>', $se_return);
     } else {
 	$se = $hbox_start->PathEntry
 	    (-autocomplete => 1,
@@ -478,7 +495,6 @@ sub main_gui {
     }
     $se->pack(-side => 'left', -fill => 'x', -expand => 1);
     _set_active_entry($se);
-    $se->bind('<Return>', $se_return);
 
     $hbox_start->Button
 	(-text => "x",
@@ -495,6 +511,7 @@ sub main_gui {
     $zl = $hbox_ziel->Label(-text => "Ziel: ")->pack(-side => 'left');
     if (!$use_pathentry) {
 	$ze = $hbox_ziel->Entry;
+	$ze->bind('<Return>', $ze_return);
     } else {
 	$ze = $hbox_ziel->PathEntry
 	    (-autocomplete => 1,
@@ -504,7 +521,6 @@ sub main_gui {
 	    );
     }
     $ze->pack(-side => 'left', -fill => 'x', -expand => 1);
-    $ze->bind('<Return>', $ze_return);
 
     $hbox_ziel->Button
 	(-text => "x",

@@ -288,7 +288,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'handicap',
      },
      { from  => 1083708000, # 2004-05-05 00:00
-       until => Time::Local::timelocal(reverse(2004-1900,5-1,24,23,59,59)),
+       until => Time::Local::timelocal(reverse(2004-1900,5-1,19,23,59,59)),
        file  => 'karstaedt.bbd',
        text  => 'B 5; OD Karstädt, Bahnübergang; Gleisbauarbeiten; Vollsperrung; 06.05.2004-24.05.2004 ',
        type  => 'handicap',
@@ -333,6 +333,36 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        until => 1085436000, # 2004-05-25 00:00
        file  => 'pillgram.bbd',
        text  => 'K 6733; Bahnübergang zw. Pillgram u. Jacobsdorf Gleisbauarbeiten Vollsperrung 22.05.2004-24.05.2004 ',
+       type  => 'gesperrt',
+     },
+     { from  => 1085123951, # 2004-05-21 09:19
+       until => 1085335200, # 2004-05-23 20:00
+       file  => 'hauptstr_pankow.bbd',
+       text  => 'Hauptstr. (Pankow) in beiden Richtungen zwischen Gravensteinstr. und Blankenfelder Str. Veranstaltung, Verkehrsbehinderung erwartet (bis 23.05.2004 20:00 Uhr)',
+       type  => 'handicap',
+     },
+     { from  => 1085205600, # 2004-05-22 08:00
+       until => 1085349600, # 2004-05-24 00:00
+       file  => 'dorotheenstr.bbd',
+       text  => 'Dorotheenstraße zwischen Eberetstraße und Wilhelmstraße sowie Ebertstraße zwischen Straße des 17.Juni und Dorotheenstraße Veranstaltung, gesperrt, Dauer: 23.05.2004, 08.00 Uhr bis 24.00 Uhr.',
+       type  => 'gesperrt',
+     },
+     { from  => 1085124135, # 2004-05-21 09:22
+       until => 1085342400, # 2004-05-23 22:00
+       file  => 'marzahner_promenade.bbd',
+       text  => 'Marzahner Promenade (Marzahn) in beiden Richtungen im Bereich des Freizeitforums Marzahn Veranstaltung, Straße vollständig gesperrt (bis 23.05.2004 22:00 Uhr) "Marzahner Frühling"',
+       type  => 'handicap',
+     },
+     { from  => 1085124182, # 2004-05-21 09:23
+       until => 1085428800, # 2004-05-24 22:00
+       file  => 'scheidemannstr.bbd',
+       text  => 'Scheidemannstr., Ebertstr. (Mitte) in beiden Richtungen im Bereich des Reichstagsgebäudes Veranstaltung, Straße vollständig gesperrt (bis 24.05.2004 22:00 Uhr)',
+       type  => 'gesperrt',
+     },
+     { from  => 1085133600, # 2004-05-21 12:00
+       until => 1085248800, # 2004-05-22 20:00
+       file  => 'radrennen_hindenburgdamm.bbd',
+       text  => 'Auguststraße zwischen Hindenburgdamm und Augustplatz Manteuffelstraße zwischen Augustplatz und Hindenburgdamm Hindenburgdamm (westliche Fahrbahn) zwischen Manteuffelstraße und Auguststraße Radrennen, Straße gesperrt, Dauer: 22.05.2004, 12.00 Uhr bis 20.00 Uhr. ',
        type  => 'gesperrt',
      },
     );

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.72 2004/05/13 22:03:43 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.73 2004/05/18 22:02:38 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -612,7 +612,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.72 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.73 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1333,6 +1333,11 @@ sub choose_form {
     }
     header(@extra_headers, -from => "chooseform");
 
+    print <<EOF if ($bi->{'can_table'});
+<table>
+<tr>
+EOF
+
     if ($start eq ''  && $ziel eq '' &&
 	$start2 eq '' && $ziel2 eq '' &&
 	$startname eq '' && $zielname eq '' &&
@@ -1340,17 +1345,17 @@ sub choose_form {
 	load_teaser();
 	# use "make count-streets" in ../data
  	print <<EOF;
-<table>
-<tr>
 <td valign="top">@{[ blind_image(420,1) ]}<br>Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 3200 von 10000 Berliner Stra&szlig;en sowie ca. 120 Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
 Nebenstra&szlig;en). Bei nicht erfassten Straﬂen wird automatisch die
-n‰chste bekannte verwendet. Hausnummern k&ouml;nnen nicht angegeben werden.<br>
+n‰chste bekannte verwendet. Hausnummern k&ouml;nnen nicht angegeben werden.<br><br>
 </td>
-<td valign="top" @{[ $start_bgcolor ? "bgcolor=$start_bgcolor" : "" ]}>@{[ defined &teaser ? teaser() : "" ]}</td>
+<td rowspan="3" valign="top" @{[ $start_bgcolor ? "bgcolor=$start_bgcolor" : "" ]}>@{[ defined &teaser ? teaser() : "" ]}</td>
 </tr>
-</table>
 <p>
 EOF
+
+	print "<tr><td>" if ($bi->{'can_table'});
+
         if ($bi->{'text_browser'}) {
             print q{<a name="navig"></a><a href="#start">Start-</a>};
             unless ($via eq 'NO') {
@@ -1368,8 +1373,12 @@ EOF
 	    unless ($via eq 'NO') { print " (Via ist optional)" }
 	    print ": <p>\n";
         }
+
+	print "</td></tr>" if ($bi->{'can_table'});
+
     }
 
+    print "<td>" if ($bi->{'can_table'});
     print "<form action=\"$bbbike_script\" name=BBBikeForm>\n";
 
     print "<table id=inputtable>\n" if ($bi->{'can_table'});
@@ -1399,7 +1408,7 @@ EOF
 	my $no_td     = 0;
 
 	if ($bi->{'can_table'}) {
-	    print "<tr id=${type}tr $bgcolor_s><td align=center valign=middle width=40><a name=\"$type\"><img src=\"$imagetype\" border=0 alt=\"$printtype\"></a></td>";
+	    print qq{<tr id=${type}tr $bgcolor_s><td align=center valign=middle width=40><a name="$type"><img style="padding-bottom:8px;" src="$imagetype" border=0 alt="$printtype"></a></td>};
 	    my $color = {'start' => '#e0e0e0',
 			 'via'   => '#c0c0c0',
 			 'ziel'  => '#a0a0a0',
@@ -1650,6 +1659,12 @@ function " . $type . "char_init() {}
 
     print "</table>\n" if $bi->{'can_table'};
 
+    print "<input type=hidden name=scope value='" .
+	(defined $q->param("scope") ? $q->param("scope") : "") . "'>";
+
+    print "</form>\n";
+    print "</td></tr></table>\n" if $bi->{'can_table'};
+
     print "<hr>";
 
     if (!$smallform) {
@@ -1661,9 +1676,6 @@ function " . $type . "char_init() {}
     }
 
     print footer_as_string();
-    print "<input type=hidden name=scope value='" .
-	(defined $q->param("scope") ? $q->param("scope") : "") . "'>";
-    print "</form>\n";
 
     print $q->end_html;
 }
@@ -4344,7 +4356,7 @@ sub footer_as_string {
     my $smallformstr = ($q->param('smallform')
 			? '&smallform=' . $q->param('smallform')
 			: '');
-    $s .= "<center><table ";
+    $s .= qq{<center style="padding-top:5px;"><table };
     if (1 || !$bi->{'can_css'}) { # XXX siehe oben Kommentar am Anfang von "sub search_*" bzgl. css
 	$s .= "bgcolor=\"#ffcc66\" ";
     }
@@ -4953,7 +4965,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/05/13 22:03:43 $';
+    my $cgi_date = '$Date: 2004/05/18 22:02:38 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PathEntry.pm,v 2.21 2003/11/13 21:49:28 eserte Exp $
+# $Id: PathEntry.pm,v 2.22 2004/05/16 21:53:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2002,2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Tk::PathEntry;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 2.21 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.22 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Tk::Derived Tk::Entry);
 
@@ -471,6 +471,16 @@ an Entry, depending on what is installed:
 
 Since C<Tk::PathEntry> version 2.17, it is not recommended to bind the
 Return key directly. Use the C<-selectcmd> option instead.
+
+=head1 TODO
+
+=over
+
+=item * Check color settings on Windows
+
+=item * Add ctrl-tab or another key as tab replacement
+
+=back
 
 =head1 SEE ALSO
 

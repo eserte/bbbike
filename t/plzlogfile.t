@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plzlogfile.t,v 1.5 2003/11/16 22:55:41 eserte Exp $
+# $Id: plzlogfile.t,v 1.6 2004/05/19 23:33:24 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -17,12 +17,12 @@ use CGI;
 
 BEGIN {
     if (!eval q{
-	use Test;
+	use Test::More;
 	use Fcntl qw(:seek);
 	use File::ReadBackwards 1.00; # tell method
 	1;
     }) {
-	print "1..0 # skip: no Test, recent Fcntl and/or File::ReadBackwards modules\n";
+	print "1..0 # skip: no Test::More, recent Fcntl and/or File::ReadBackwards modules\n";
 	exit;
     }
 }
@@ -35,18 +35,18 @@ my $logfile = "$ENV{HOME}/www/log/radzeit.de-access_log";
 my $seek = 0;
 my $potsdam = 1;
 my $extern = 1;
+my $forward = 0;
 
 GetOptions("doit!" => \$doit,
 	   "hnr!"  => \$hnr,
 	   "logfile=s" => \$logfile,
 	   "seek=i" => \$seek,
+	   "forward" => \$forward,
 	   "potsdam!" => \$potsdam,
 	   "extern!" => \$extern,
 	  ) or die "usage?";
-if (!$doit) {
-    skip(1, "Call this test script with -doit");
-    exit 0;
-}
+SKIP: {
+skip("Call this test script with -doit", 1) unless $doit;
 
 my $plz = ($potsdam
 	   ? PLZ::Multi->new("Berlin.coords.data", "Potsdam.coords.data",
@@ -67,13 +67,20 @@ my @standard_look_loop_args =
 
 my $LOGFILE;
 #open(LOGFILE, $logfile)
-$LOGFILE = File::ReadBackwards->new($logfile)
-    or die "Can't open $logfile: $!";
-
-if ($seek) {
-    $LOGFILE->{seek_pos} = $seek; # XXX Hack!
-    #$LOGFILE->seek($seek, SEEK_SET);
+if ($forward) {
+    require IO::File;
+    $LOGFILE = IO::File->new($logfile, "r")
+	or die "Can't open $logfile in forward mode: $!";
+    $LOGFILE->seek($seek, SEEK_SET);
+} else {
+    $LOGFILE = File::ReadBackwards->new($logfile)
+	or die "Can't open $logfile: $!";
+    if ($seek) {
+	$LOGFILE->{seek_pos} = $seek; # XXX Hack! not needed with newer versions of File::ReadBackward?
+	#$LOGFILE->seek($seek, SEEK_SET);
+    }
 }
+
 
 my $lastdate;
 {
@@ -82,7 +89,11 @@ my $lastdate;
 	exit 1;
     };
 
-    while(defined($_ = $LOGFILE->readline)) {
+    my $nextline = $LOGFILE->can("readline")
+	? sub { $LOGFILE->readline }
+	    : sub { $LOGFILE->getline };
+
+    while(defined($_ = $nextline->())) {
 	m{GET\s+\S+bbbike\.cgi\?(.*)\s+} or next;
 	chomp;
 	my $q = CGI->new($1);
@@ -110,6 +121,8 @@ sub lookup {
     my @res = $plz->look_loop(PLZ::split_street($street),
 			      @standard_look_loop_args);
     @res;
+}
+
 }
 
 __END__

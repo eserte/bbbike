@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.47 2004/04/23 22:40:54 eserte Exp $
+# $Id: Makefile,v 1.47 2004/04/23 22:40:54 eserte Exp eserte $
 #
 
 # Prerequisites:
@@ -416,7 +416,9 @@ image_koethen_tiles:
 
 #BBOX_UCKERMARK=85200,125500,3000,30000
 # Das hier schließt Neubrandenburg mit ein:
-BBOX_UCKERMARK=85200,141100,-19300,30000
+#BBOX_UCKERMARK=85200,141100,-19300,30000
+# Das hier geht nur von der Uckermark bis nach Usedom, ohne Berlin:
+BBOX_UCKERMARK=11807,92994,67114,186179
 
 data_uckermark:
 	-mkdir data_uckermark
@@ -460,7 +462,7 @@ image_uckermark_tiles:
 	pngtopnm /tmp/uckermark.png > /tmp/uckermark.ppm
 	perl -I$HOME/lib/perl ../miscsrc/tilemap -image /tmp/uckermark.ppm -destdir images/uckermark_tiles -geometry 100x100 -conf /tmp/uckermark.conf
 
-rsync-uckermark: do-rsync-tkbabybike ipaq-generate-cache-uckermark
+rsync-uckermark: do-rsync-uckermark ipaq-generate-cache-uckermark
 
 do-rsync-uckermark:
 	$(RSYNC) -L --times -r -z --hard-links \
@@ -474,6 +476,80 @@ do-rsync-uckermark:
 
 ipaq-generate-cache-uckermark:
 	ssh -l $(IPAQUSER) $(IPAQHOST) $(IPAQTMPBBBIKE)/generate_cache.pl -scopes uckermark
+
+######################################################################
+
+## XXX Does not work. Problem: $(BBOX_$(REGION))
+## It's probably easier to use Makefile.PL instead.
+
+# REGIONS=uckermarkXXX
+# BBOX_uckermarkXXX=85200,125500,3000,30000
+
+# .for region in $(REGIONS)
+# all_${region}:	data_${region} \
+# 		data_${region}_gpstracks \
+# 		image_${region}_tiles
+
+# data_${region}:
+# 	-mkdir data_${region}
+# 	echo -n | gzip > data_${region}/strassen.gz
+# 	echo -n | gzip > data_${region}/landstrassen2.gz
+# 	echo -n | gzip > data_${region}/wasserstrassen.gz
+# 	echo -n | gzip > data_${region}/wasserumland2.gz
+# 	echo -n | gzip > data_${region}/gesperrt.gz
+# 	echo -n | gzip > data_${region}/orte2.gz
+# 	echo -n | gzip > data_${region}/qualitaet_s.gz
+# 	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_${REGION}) -scope wideregion -strdata ${DATADIR}/landstrassen,${DATADIR}/landstrassen2 -o - | gzip -9f > data_${region}/landstrassen.gz
+# 	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_${REGION}) -scope wideregion -strdata ${DATADIR}/wasserumland,${DATADIR}/wasserumland2 -o - | gzip -9f > data_${region}/wasserumland.gz
+# 	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_${REGION}) -scope wideregion -strdata ${DATADIR}/rbahn -o - | gzip -9f > data_${region}/rbahn.gz
+# 	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_${REGION}) -scope wideregion -strdata ${DATADIR}/rbahnhof -o - | gzip -9f > data_${region}/rbahnhof.gz
+# 	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_${REGION}) -scope wideregion -strdata ${DATADIR}/orte,${DATADIR}/orte2 -o - | gzip -9f > data_${region}/orte.gz
+# 	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_${REGION}) -scope wideregion -strdata ${DATADIR}/qualitaet_l -o - | gzip -9f > data_${region}/qualitaet_l.gz
+
+# data_${region}_gpstracks:
+# 	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_${REGION})  -strdata ${BBBIKEDIR}/tmp/streets.bbd,${BBBIKEDIR}/tmp/streets-bahn.bbd,${BBBIKEDIR}/misc/mps_examples/streets.bbd -o - | gzip -9f > data_${region}/gpstracks.gz
+
+
+# image_${region}:
+# 	env BBBIKE_DATADIR=data_${region} ../miscsrc/bbbikedraw.pl -geometry 900x* -ipaq -nooutline\
+# 	    -outtype png -bbox $(BBOX_${REGION}) \
+# 	    -scope wideregion -drawtypes str,wasser,rbahn,ort \
+# 	    -mapserver \
+# 	    -minplacecat 0 \
+# 	    -o images/${region}.png -dimfile images/${region}.dim
+# 	pngtopnm images/${region}.png | ppmtoxpm | gzip -9 > images/${region}.xpm.gz
+
+# # XXX evtl. cleanup ${region}_tiles
+# image_${region}_tiles:
+# 	-mkdir images/${region}_tiles
+# 	env BBBIKE_DATADIR=data_${region} ../miscsrc/bbbikedraw.pl \
+# 	    -outtype png -bbox $(BBOX_${REGION}) \
+# 	    -mapserver \
+# 	    -geometry 2250x* -ipaq -nooutline -fillimage \
+# 	    -scope wideregion -drawtypes str,wasser,rbahn,ort \
+# 	    -minplacecat 0 \
+# 	    -o /tmp/${region}.png -dimfile images/${region}_tiles/${region}.dim
+# 	pngtopnm /tmp/${region}.png > /tmp/${region}.ppm
+# 	perl -I$HOME/lib/perl ../miscsrc/tilemap -image /tmp/${region}.ppm -destdir images/${region}_tiles -geometry 100x100 -conf /tmp/${region}.conf
+
+# rsync-${region}: do-rsync-${region} ipaq-generate-cache-${region}
+
+# do-rsync-${region}:
+# 	$(RSYNC) -L --times -r -z --hard-links \
+# 	    --cvs-exclude \
+# 	    data_${region}/ \
+# 	    $(IPAQTMPBBBIKEDEST)/data_${region}/
+# 	$(RSYNC) -L --times -r -z --hard-links \
+# 	    --cvs-exclude \
+# 	     images/${region}_tiles/ \
+# 	    $(IPAQTMPBBBIKEDEST)/images/${region}_tiles/
+
+# ipaq-generate-cache-${region}:
+# 	ssh -l $(IPAQUSER) $(IPAQHOST) $(IPAQTMPBBBIKE)/generate_cache.pl -scopes ${region}
+
+# .PHONY: data_${region}
+
+# .endfor
 
 ######################################################################
 

@@ -14,6 +14,16 @@ Legende:
 
 =over
 
+=item * (M5)
+
+relation_gps-orig aus insert_points herausnehmen? Ueberdenken...
+
+=item * (M3)
+
+last_loaded_streets muss komplizierter werden und den gesamten State
+beim Zeichnen der Datei enthalten (z.b. die Aufrufparameter von
+plot())
+
 =item * (H4)
 
 Acrobat Reader often shows an error message for
@@ -1025,7 +1035,18 @@ LANG gesetzt) lösen.
 
 =over
 
+=item * (H5)
+
+data_corrected => data-Transition
+
+Problems: Nord-Rügen. Stützpunkte in Hiddensee und Sassnitz einfügen.
+
 =item * (H4)
+
+Wie zeige ich an, dass ein BNP unpassierbar fuer anhaenger ist?
+Fr-Jahn-Sportpark zur Topsstr ist so ein fall.
+
+=item * (M4)
 
 Alle in "strassen" vorkommende StraE<szlig>en sollten auch in
 "Berlin.coords.data" stehen. Ansonsten gibt es derart PE<Uuml>robleme,
@@ -1034,7 +1055,10 @@ z.B. "Hallesches Tor" angezeigt wird, diese StraE<szlig>e als Eingabe
 aber nicht akzeptiert wird. Sprich: die Datei data/add_str sollte auf
 AktualitE<auml>t E<uuml>berprE<uuml>ft werden und dann mE<ouml>glichst
 alle fehlende StraE<szlig>en nach Berlin.coords.data E<uuml>bertragen
-werden.
+werden. => Ist das noch immer problematisch? Ich dachte, ich hätte im
+CGI zusätzliche Logik eingeführt, um dieses Problem zu umgehen. Eine
+ähnliche Logik fehlt vielleicht noch in BBBikeRouting.pm => Nein, es
+geht noch immer nicht. Test: Suche nach Treptower Hafen.
 
 Hatte ich schonmal:
 [in add_str sollten möglichst KEINE "richtigen" Straßen stehen --- nur
@@ -1044,8 +1068,8 @@ existieren!]
 
 =item * (M2)
 
-Weitere Kategorisierung der LandstraE<szlig>en? Gibt es Untersuchungen
-zur Verkehrsdichte? Recherchieren!
+LandstraE<szlig>en: Gibt es Untersuchungen zur Verkehrsdichte?
+Recherchieren!
 
 =back
 
@@ -1206,6 +1230,28 @@ verwenden, aber die XML-Ausgabe ist als "experimentell" markiert.
  - XHTML-Lösung?
  - Nokia 6650 in Browserinfo.pm aufnehmen (ca. 120x160, nachmessen!)
  - width=/height= in BBBike Karte angeben, damit Platz reserviert wird
+
+=back
+
+=head2 tkbabybike
+
+=over
+
+=item * (M4)
+
+Tk::PathEntry (used in start/goal entries): -autocompletion does not
+work (anymore)?
+
+=item * (M5)
+
+Why are the E<quot>NE<quot> streets and airports colored black? Wrong
+mapserver/brb/brb-ipaq.map?
+
+=item * (M5)
+
+Completion failure for E<quot>StrausbE<quot>. It should be
+Strausberger Platz (the first in list), but it is not completed when
+leaving the entry.
 
 =back
 

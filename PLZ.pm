@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.49 2004/01/17 20:30:47 eserte Exp eserte $
+# $Id: PLZ.pm,v 1.50 2004/05/19 23:32:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003 Slaven Rezic. All rights reserved.
@@ -13,6 +13,9 @@
 #
 
 package PLZ;
+
+use 5.005; # qr{}
+
 use strict;
 # Setting $OLD_AGREP to a true value really means: use String::Approx
 # instead or no agrep at all.
@@ -20,11 +23,14 @@ use vars qw($PLZ_BASE_FILE @plzfile $OLD_AGREP $VERSION $VERBOSE $sep);
 use locale;
 use BBBikeUtil;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.49 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.50 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)
 use constant FMT_COORDS  => 2; # ./data/Berlin.coords.data
+
+# agrep says that 32 is the max length, but experiments show something else:
+use constant AGREP_LONGEST_RX => 29;
 
 $PLZ_BASE_FILE = "Berlin.coords.data" if !defined $PLZ_BASE_FILE;
 
@@ -42,6 +48,7 @@ $OLD_AGREP = 0 unless defined $OLD_AGREP;
 my %uml = ('ä' => 'ae', 'ö' => 'oe', 'ü' => 'ue', 'ß' => 'ss',
 	   'Ä' => 'Ae', 'Ö' => 'Öe', 'Ü' => 'Ue', 'é' => 'e', 'è' => 'e');
 my $umlkeys = join("",keys %uml);
+my $umlkeys_rx = qr{[$umlkeys]};
 
 # indexes of file fields
 use constant FILE_NAME     => 0;
@@ -165,7 +172,7 @@ use constant LOOK_COORD    => 3;
 
 # XXX make gzip-aware
 # Argumente: (Beschreibung fehlt XXX)
-#  Agrep
+#  Agrep/GrepType
 #  Noextern
 #  NoStringApprox
 #  Citypart (optionale Einschränkung auf einen Bezirk oder Postleitzahl,
@@ -183,7 +190,7 @@ sub look {
     warn "->look($str, " . join(" ", %args) .") in `$file'\n" if $VERBOSE;
 
     #XXX use fgrep instead of grep? slightly faster, no quoting needed!
-    my $grep_type = ($args{Agrep} ? 'agrep' : 'grep');
+    my $grep_type = ($args{Agrep} ? 'agrep' : ($args{GrepType} || 'grep'));
     my @push_inx;
     if      ($self->{DataFmt} == FMT_NORMAL) {
 	@push_inx = (FILE_NAME, FILE_CITYPART, $self->{FieldPLZ});
@@ -195,8 +202,8 @@ sub look {
     if ($grep_type eq 'agrep') {
 	if ($OLD_AGREP ||
 	    (!$args{Noextern} && !is_in_path('agrep')) ||
-	    length($str) > 32 # otherwise there are "pattern too long" errors
-	    # XXX 32 is not perfect --- the string is rx-escaped, see below
+	    length($str) > AGREP_LONGEST_RX # otherwise there are "pattern too long" errors
+	    # XXX AGREP_LONGEST_RX is not perfect --- the string is rx-escaped, see below
 	   ) {
 	    $args{Noextern} = 1;
 	}
@@ -233,7 +240,7 @@ sub look {
 	}
     };
 
-    if (!$args{Noextern}) {
+    if (!$args{Noextern} && $grep_type =~ /^a?grep$/) {
 	unless ($args{Noquote}) {
 	    if ($grep_type eq 'grep') {
 		# XXX quotemeta verwenden?
@@ -245,8 +252,8 @@ sub look {
 	}
 
 	# limitation of agrep:
-	if (length($str) > 32) {
-	    $str = substr($str, 0, 32);
+	if ($grep_type eq 'agrep' && length($str) > AGREP_LONGEST_RX) {
+	    $str = substr($str, 0, AGREP_LONGEST_RX);
 	    $str =~ s/\\$//; # remove a (lonely?) backslash at the end
 	    # XXX but this will be wrong if it's really a \\
 	}
@@ -256,8 +263,13 @@ sub look {
 	    unshift @grep_args, "-$args{Agrep}";
 	}
 	my @cmd = ($grep_type, @grep_args);
-	#warn "@cmd";#XXX
-	CORE::open(PLZ, "-|") or exec @cmd;
+	#warn "@cmd";
+	CORE::open(PLZ, "-|") or do {
+	    exec @cmd;
+	    warn "While doing @cmd: $!";
+	    require POSIX;
+	    POSIX::_exit(1); # avoid running any END blocks
+	};
 	my %res;
 	while(<PLZ>) {
 	    chomp;
@@ -276,10 +288,21 @@ sub look {
 		$push_sub->($_);
 	    }
 	} elsif ($grep_type eq 'grep-umlaut') {
-	    $str = '^' . kill_umlauts($str);
+	    $str = '(?i:^' . kill_umlauts($str) . ')';
+	    $str = qr{$str};
 	    while(<PLZ>) {
 		chomp;
-		if (kill_umlauts($_) =~ /$str/i) {
+		if (kill_umlauts($_) =~ $str) {
+		    $push_sub->($_);
+		}
+	    }
+	    close PLZ;
+	} elsif ($grep_type eq 'grep-inword') {
+	    $str = '(?i:\b' . kill_umlauts($str) . '\b)';
+	    $str = qr{$str};
+	    while(<PLZ>) {
+		chomp;
+		if (kill_umlauts($_) =~ $str) {
 		    $push_sub->($_);
 		}
 	    }
@@ -287,10 +310,12 @@ sub look {
 	} else {
 	    $str = "^$str" unless $args{Noquote};
 	    $str =~ s/\|/\\|/g;
+	    $str = '(?i:' . $str . ')';
+	    $str = qr{$str};
 	    my %res;
 	    while(<PLZ>) {
 		chomp;
-		if (/$str/i) {
+		if ($_ =~ $str) {
 		    $push_sub->($_);
 		}
 	    }
@@ -306,6 +331,7 @@ sub look {
 	} else {
 	    $rx = "^".quotemeta($args{Citypart});
 	}
+	$rx = qr{$rx};
 	my @new_res;
 	foreach (@res) {
 	    if ($_->[LOOK_CITYPART] =~ /$rx/i ||
@@ -425,11 +451,23 @@ sub look_loop {
     };
     my $expand_strasse = sub {
 	my $str = shift;
+	my $replaced = 0;
+if(0){#XXX activate this code if all U/S-Bhf. in Berlin.coords.data have coords
+	if ($str =~ /^([US])\s+/i) {
+	    $str =~ s/^([US])\s+/uc($1)."-Bhf "/ie;
+	    $replaced++;
+	} elsif ($str =~ /^([US])-Bahnhof\s+/) {
+	    $str =~ s/^([US])-Bahnhof\s+/uc($1)."-Bhf "/ie;
+	    $replaced++;
+	}
+}
 	if ($str =~ /^\s*str\./i) {
 	    $str =~ s/^\s*(s)tr\./$1traße/i;
 	    $str;
 	} elsif ($str =~ /^\s*strasse/i) {
 	    $str =~ s/^\s*(s)trasse/$1traße/i;
+	    $str;
+	} elsif ($replaced) {
 	    $str;
 	} else {
 	    undef;
@@ -461,7 +499,6 @@ sub look_loop {
 	if (!@matchref) {
 	    if (my $str0 = $expand_strasse->($str)) {
 		@matchref = $self->look($str0, %args);
-
 		if (!@matchref) {
 		    if ($str0 = $strip_hnr->($str0)) {
 			@matchref = $self->look($str0, %args);
@@ -469,7 +506,14 @@ sub look_loop {
 		}
 	    }
 	}
-	# 5. Use increasing approximate match. Try first unaltered, then
+	# 5. Try word match in the middle of the string
+	if (!@matchref && length $str >= 4) {
+	    my %args = %args;
+	    delete $args{Agrep};
+	    $args{GrepType} = "grep-inword";
+	    @matchref = $self->look($str, %args);
+	}
+	# 6. Use increasing approximate match. Try first unaltered, then
 	#    with stripped street, then without house number.
 	if (!@matchref) {
 	    $agrep = 1;
@@ -517,11 +561,12 @@ sub look_loop_best {
     my($matchref, $agrep) = $self->look_loop($str, %args);
     if (@$matchref) {
 	my @rating;
+	my $str_rx = qr{(?i:^$str)};
 	for(my $i=0; $i<=$#$matchref; $i++) {
 	    my $item = $matchref->[$i];
 	    if ($item->[LOOK_NAME] eq $str) {
 		push @rating, [ 100, $item ];
-	    } elsif ($item->[LOOK_NAME] =~ /^$str/i) {
+	    } elsif ($item->[LOOK_NAME] =~ $str_rx) {
 		push @rating, [ 40 + 40-length($item->[LOOK_NAME]), $item ];
 	    } else {
 		push @rating, [ 40-length($item->[LOOK_NAME]), $item ];
@@ -560,7 +605,7 @@ sub make_any_hash {
 
 sub kill_umlauts {
     my $s = shift;
-    $s =~ s/([$umlkeys])/$uml{$1}/go;
+    $s =~ s/($umlkeys_rx)/$uml{$1}/go;
     $s;
 }
 
@@ -819,3 +864,7 @@ print "*** Errors: $errors\n";
 # Waldstr. in Schmöckwitz haben die gleiche PLZ 12527. Erschwerend kommt
 # hinzu, dass Grünau (früher Köpenick) und Schmöckwitz (früher Treptow)
 # heute im gleichen Bezirk liegen. Lösung zurzeit: ignorieren.
+
+# Quick check:
+# perl -MData::Dumper -MPLZ -e '$p=PLZ->new;warn Dumper $p->look_loop($ARGV[0], Max => 1, MultiZIP => 1, MultiCitypart => 1, Agrep => "default")' ...
+#
