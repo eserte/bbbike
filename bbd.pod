@@ -217,6 +217,11 @@ Used in files: F<gesperrt>.
 
 One way street. The blocking is in the direction of the polyline.
 
+=item * C<1s>:
+
+One way street, but not strictly for cyclists (means: it is
+non-legally possible to pass the street in the wrong direction).
+
 =item * C<2>:
 
 Blocked street (in both directions).

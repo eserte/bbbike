@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.35 2004/03/10 23:59:48 eserte Exp $
+# $Id: Core.pm,v 1.36 2004/04/07 21:36:27 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.35 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.36 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -489,7 +489,8 @@ sub set_current { # funktioniert in init/next-Schleifen
     $self->set($self->{Pos}, $arg);
 }
 
-# arguments: [name, [xy1, xy2, ...], cat]
+# Arguments: [name, [xy1, xy2, ...], cat],
+# which is the same as the return value of next().
 sub push {
     my($self, $arg) = @_;
     my $x = [$arg->[NAME], join(" ", @{$arg->[COORDS]}), $arg->[CAT]];

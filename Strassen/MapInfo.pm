@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapInfo.pm,v 1.11 2004/03/16 23:22:06 eserte Exp $
+# $Id: MapInfo.pm,v 1.12 2004/04/08 06:50:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
@@ -372,10 +372,20 @@ sub create_mif_mid_from_data_directory {
 	!defined $scope || $scope eq 'region' ? @_ : ();
     };
 
+    my @depend_on_master_streets =
+	qw(ampeln brunnels comments_cyclepath comments_ferry
+	   comments_kfzverkehr comments_misc comments_mount
+	   comments_path comments_route comments_tram
+	   gesperrt green hoehe nolighting
+	  );
+    my %depend_on_master_streets = map {($_=>1)} @depend_on_master_streets;
+
+    my @master_streets =
+	($if_city->("strassen", "plaetze"),
+	 $if_region->("landstrassen", "landstrassen2"), "faehren");
+
     my @street_files =
-	([[$if_city->("strassen", "plaetze"),
-	   $if_region->("landstrassen", "landstrassen2"), "faehren"],
-	  "strassen", NAME => "Name", CAT => "Category"],
+	([[@master_streets], "strassen", NAME => "Name", CAT => "Category"],
 	 ["ampeln", "ampeln",
 	  NAME => "Trafficlight_Comment", CAT => "Traffic_Category"],
 	 ["brunnels", "brunnels",
@@ -599,6 +609,14 @@ EOF
     my($minx,$miny,$maxx,$maxy);
     my %max_len;
 
+    my $master_s = MultiStrassen->new(@master_streets);
+    require Strassen::StrassenNetz;
+    my $master_net = StrassenNetz->new($master_s);
+    eval { require BBBikeXS };
+    $master_net->make_net;
+    my $net = $master_net->{Net};
+#XXX use Data::Dumper;open(X,">/tmp/bla.dump")or die;print X Dumper $net; close X;
+
  FILELOOP:
     for my $def (@street_files) {
 	my($file, $label, undef, $field_map_ref) = $getdef->($def);
@@ -624,11 +642,13 @@ EOF
 	}
 
 	my $str;
+	my $do_depend = 0;
 	if (ref $file eq 'ARRAY') {
 	    my @s;
 	    for my $file (@$file) {
 		eval {
 		    push @s, Strassen->new($file);
+		    $do_depend++ if ($depend_on_master_streets{$file});
 		};
 		if ($@) {
 		    warn "$@, skipping $file";
@@ -643,12 +663,40 @@ EOF
 	} else {
 	    eval {
 		$str = Strassen->new($file);
+		$do_depend++ if ($depend_on_master_streets{$file});
 		if ($args{v}) { print STDERR "$file...\n" }
 	    };
 	    if (!$str) {
 		warn "$@, skipping $file...";
 		next;
 	    }
+	}
+
+	if ($do_depend) {
+	    print STDERR "  Dependency check for $label...\n" if $args{v};
+	    my $new_str = Strassen->new;
+	    $str->init;
+	    while(1) {
+		my $r = $str->next;
+		my $coords = $r->[Strassen::COORDS()];
+		last if !@$coords;
+		if (@$coords == 1) {
+		    if (exists $net->{$coords->[0]}) {
+			$new_str->push($r);
+		    }
+		} else {
+		    for my $i (0 .. $#$coords-1) {
+			if ((exists $net->{$coords->[$i]} &&
+			     exists $net->{$coords->[$i]}{$coords->[$i+1]}) ||
+			    (exists $net->{$coords->[$i+1]} &&
+			     exists $net->{$coords->[$i+1]}{$coords->[$i]})) {
+			    $new_str->push($r);
+			    last;
+			}
+		    }
+		}
+	    }
+	    $str = $new_str;
 	}
 
 	my($this_minx, $this_miny, $this_maxx, $this_maxy) = $str->bbox;
@@ -862,6 +910,12 @@ if ($use_datadir) {
 } else {
     export($s, $o, %args);
 }
+
+=head1 EXAMPLES
+
+Example usage from command line:
+
+    perl -Ilib Strassen/MapInfo.pm -o /tmp/brb -scope region -tomap polar -v data_corrected/
 
 =head1 AUTHOR
 
