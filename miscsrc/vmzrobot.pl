@@ -251,7 +251,7 @@ sub diff {
     for my $orig_detail_link (@old_detail_links) {
 	my $detail_link = dclone $orig_detail_link;
 	if (!exists $detail_links{$detail_link->{id}}) {
-	    $detail_link->{text} = "OLD:        $detail_link->{text}";
+	    $detail_link->{text} = "REMOVED:    $detail_link->{text}";
 	    push @diff_detail_links, $detail_link;
 	}
     }
