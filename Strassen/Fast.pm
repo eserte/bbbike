@@ -11,6 +11,9 @@
 #
 
 package Strassen::Fast;
+
+$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+
 use strict;
 #use AutoLoader 'AUTOLOAD';
 use vars qw(@ISA);

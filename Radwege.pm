@@ -14,6 +14,8 @@
 
 package Radwege;
 
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+
 BEGIN {
     if (!eval '
 use Msg qw(frommain);

@@ -29,6 +29,8 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
+$VERSION = sprintf("%d.%02d", q$Revision: 1.41 $ =~ /(\d+)\.(\d+)/);
+
 package StrassenNetz;
 use strict;
 # XXX StrassenNetzLite?

@@ -14,6 +14,8 @@
 
 package BBBikeHeavy;
 
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+
 package main;
 use strict;
 use BBBikeGlobalVars;

@@ -14,6 +14,8 @@
 
 package BBBikeUtil;
 
+$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
+
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
 

@@ -12,6 +12,8 @@
 
 package Strassen::Strasse;
 
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+
 package Strasse;
 use strict;
 #use AutoLoader 'AUTOLOAD';

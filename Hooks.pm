@@ -15,7 +15,9 @@
 package Hooks;
 
 use strict;
-use vars qw(%pool $VERBOSE);
+use vars qw(%pool $VERBOSE $VERSION);
+
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 sub get_hooks {
     my $label = shift;

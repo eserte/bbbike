@@ -14,6 +14,8 @@
 
 package BBBikeWeather;
 
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+
 package main;
 use strict;
 use BBBikeGlobalVars;

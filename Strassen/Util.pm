@@ -11,6 +11,9 @@
 #
 
 package Strassen::Util;
+
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+
 use strict;
 use Config;
 use BBBikeUtil qw(rad2deg STAT_MODTIME);

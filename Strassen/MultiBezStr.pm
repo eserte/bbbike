@@ -12,6 +12,8 @@
 
 package Strassen::MultiBezStr;
 
+$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+
 package MultiBezStr;
 use strict;
 #use AutoLoader 'AUTOLOAD';

@@ -12,6 +12,8 @@
 
 package Strassen::Kreuzungen;
 
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+
 package Kreuzungen;
 use strict;
 use vars qw($VERBOSE);

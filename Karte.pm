@@ -15,6 +15,8 @@
 package Karte;
 #use AutoLoader 'AUTOLOAD';
 
+$VERSION = sprintf("%d.%02d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
+
 use strict;
 use vars qw(%map %map_by_modname %map_by_coordsys @map $cache_root $map_root);
 
