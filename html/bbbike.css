@@ -127,3 +127,15 @@ a.ms:visited { color:#333333; }
   border-color: black;
   padding: 0px 2px 0px 2px;
 }
+
+.pseudolink {
+  margin-bottom:2px;
+}
+
+.pseudolink span {
+ border-bottom: dashed black 1px;
+}
+
+.pseudolink span:hover {
+  background-color:yellow;
+}

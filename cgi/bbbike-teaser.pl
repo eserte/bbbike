@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.7 2004/08/19 22:06:07 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.7 2004/08/19 22:06:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ sub teaser {
     my @teasers_optional  = (
 			     'link',
 			     'wap',
-			     'dobli',
+			     #'dobli',
 			    );
     my @teasers_mandatory = (
 			     #teaser_perltk_newrelease(),

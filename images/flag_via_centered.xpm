@@ -2,10 +2,10 @@
 static char *flag_via_centered[] = {
 /* columns rows colors chars-per-pixel */
 "32 32 5 1",
-"  c opaque",
+"  c black",
 ". c navy",
 "X c blue",
-"o c white",
+"o c gray100",
 "O c None",
 /* pixels */
 "OOOOOOOOOOOO OOOOOOOOOOOOOOOOOOO",

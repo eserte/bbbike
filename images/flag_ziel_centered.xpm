@@ -2,9 +2,9 @@
 static char *flag_ziel_centered[] = {
 /* columns rows colors chars-per-pixel */
 "32 32 4 1",
-"  c opaque",
+"  c black",
 ". c navy",
-"X c white",
+"X c gray100",
 "o c None",
 /* pixels */
 "oooooooooooo ooooooooooooooooooo",

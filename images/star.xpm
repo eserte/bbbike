@@ -1,21 +1,22 @@
 /* XPM */
 static char *star[] = {
 /* columns rows colors chars-per-pixel */
-"13 13 2 1",
-"  c opaque",
-". c None",
+"13 13 3 1",
+"  c black",
+". c gray100",
+"X c None",
 /* pixels */
-"...... ......",
-"...... ......",
-"...... ......",
-".....   .....",
-".....   .....",
+"XXXXXX XXXXXX",
+"XXXXXX XXXXXX",
+"XXXXXX XXXXXX",
+"XXXXX   XXXXX",
+"XXXXX   XXXXX",
 "             ",
-"..         ..",
-"...       ...",
-"....     ....",
-"...       ...",
-"...   .   ...",
-"..   ...   ..",
-"..  .....  .."
+"XX         XX",
+"XXX       XXX",
+"XXXX     XXXX",
+"XXX       XXX",
+"XXX   X   XXX",
+"XX   XXX   XX",
+"XX  XXXXX  XX"
 };

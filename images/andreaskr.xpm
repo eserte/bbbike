@@ -2,9 +2,9 @@
 static char *andreaskr[] = {
 /* columns rows colors chars-per-pixel */
 "12 16 4 1",
-"  c opaque",
-". c #fa1340",
-"X c white",
+"  c black",
+". c #FA1340",
+"X c gray100",
 "o c None",
 /* pixels */
 "o  oooooo  o",

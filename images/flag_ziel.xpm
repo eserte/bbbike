@@ -2,16 +2,16 @@
 static char *flag_ziel[] = {
 /* columns rows colors chars-per-pixel */
 "20 16 4 1",
-"  c opaque",
-". c navy",
-"X c white",
+"  c black",
+". c #00007F",
+"X c gray100",
 "o c None",
 /* pixels */
 " ooooooooooooooooooo",
 "  X   oooooooooooooo",
 "o oX    oooooooooooo",
-"o oX    XXXX   ooooo",
-"o oXX           XXoo",
+"o oX    oooo   ooooo",
+"o oXX           oooo",
 "oo o  XX    XXX   .o",
 "oo o   XX    X......",
 "oo oX..XX   ...ooooo",

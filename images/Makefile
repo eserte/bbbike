@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.18 2005/02/25 01:33:45 eserte Exp $
+# $Id: Makefile,v 1.18 2005/02/25 01:33:45 eserte Exp eserte $
 #
 
 # XXX needs MORE work
@@ -113,6 +113,8 @@ png-to-gif:	\
 		usercross.gif \
 		redcross.gif \
 		vorfahrt_klein.gif \
+		abc.gif \
+		abc_hi.gif \
 
 png-to-xpm:	\
 		ampel.xpm \
@@ -130,6 +132,7 @@ png-to-xpm:	\
 		sbahn.xpm \
 		sbahn_klein.xpm \
 		sbahn_mini.xpm \
+		search_pref.xpm \
 		star.xpm \
 		steigung.xpm \
 		ubahn.xpm \
@@ -144,6 +147,8 @@ png-to-xpm:	\
 		usercross.xpm \
 		redcross.xpm \
 		vorfahrt_klein.xpm \
+		abc.xpm \
+		abc_hi.xpm \
 
 png-to-wbmp:	\
 		flag2_bl.wbmp \

@@ -120,7 +120,14 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1112824800,
+         'text' => 'L 86; zw. Schmergow und Ketzin Straßenbau Vollsperrung 30.03.2005-06.04.2005 ',
+         'from' => 1112047200,
+         'data' => 'userdel	2 -27793,4863 -27127,5270
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,

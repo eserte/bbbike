@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: polizei-faxabruf-diff.pl,v 1.6 2005/03/24 01:04:24 eserte Exp $
+# $Id: polizei-faxabruf-diff.pl,v 1.7 2005/04/05 21:26:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004, 2005 Slaven Rezic. All rights reserved.
@@ -112,17 +112,17 @@ for (@flat) {
     $seen_new{$index_new}++;
 }
 
-print "Removed:\n";
-for my $i (0 .. $#events_old) {
-    next if $seen_old{$i};
-    print wrap("", "", as_string($i, "old")), "\n";
-    print "-"x70, "\n";
-}
-
 print "Added:\n";
 for my $i (0 .. $#events_new) {
     next if $seen_new{$i};
     print wrap("", "", as_string($i, "new")), "\n";
+    print "-"x70, "\n";
+}
+
+print "Removed:\n";
+for my $i (0 .. $#events_old) {
+    next if $seen_old{$i};
+    print wrap("", "", as_string($i, "old")), "\n";
     print "-"x70, "\n";
 }
 

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.22 2005/03/24 00:54:59 eserte Exp $
+# $Id: bbbike.cgi,v 7.22 2005/03/24 00:54:59 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -5465,7 +5465,7 @@ EOF
       "berechnet werden.<p>\n";
     print <<EOF;
 Für die technisch Interessierten: als Suchalgorithmus wird
-A<sup>*</sup> eingesetzt<sup> <a href="#footnote1">1</a></sup>.<p>
+A<sup>*</sup> eingesetzt<sup> <a class="pseudolink" title="@{[ footnote(1) ]}" href="#footnote1">1</a></sup>.<p>
 EOF
     {
 	for my $dir (@Strassen::datadirs) {
@@ -5506,6 +5506,9 @@ bereits vordefinierten Ziel setzen. Die Vorgehensweise sieht so aus:
      vorkommen, müssen sie durch <tt>+</tt> ersetzt werden.
 </ul>
 Für einen vordefinierten Startort geht man genauso vor, lediglich werden alle Vorkommen von <tt>ziel</tt> durch <tt>start</tt> ersetzt.
+
+<a name="mambo"><h4>BBBike-Modul für Mambo</h4></a>
+Für das CMS Mambo gibt es auf mamboforge ein <a href="http://mamboforge.net/frs/?group_id=1094">BBBike-Modul</a> von Ramiro G&#243;mez.
 <hr>
 <p>
 EOF
@@ -5722,16 +5725,28 @@ EOF
     print <<EOF;
 <p><p><p><hr>
 Fußnoten:<br>
-<a name="footnote1"><sup>1</sup> R. Dechter and J. Pearl, Generalized
-best-first search strategies and the optimality of A<sup>*</sup>,
-Journal of the Association for Computing Machinery, Vol. 32, No. 3,
-July 1985, Seiten 505-536.<hr><p>
+<a name="footnote1"><sup>1</sup> @{[ footnote(1) ]}<hr><p>
 EOF
 
     footer();
 
     print $q->end_html;
 }
+
+sub footnote {
+    my($nr) = @_;
+    if ($nr == 1) {
+	<<EOF;
+R. Dechter and J. Pearl, Generalized
+best-first search strategies and the optimality of A<sup>*</sup>,
+Journal of the Association for Computing Machinery, Vol. 32, No. 3,
+July 1985, Seiten 505-536.
+EOF
+    } else {
+	"";
+    }
+}
+
 
 =head1 AUTHOR
 
