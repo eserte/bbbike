@@ -131,6 +131,7 @@ sub custom_draw {
     my $draw      = eval '\%' . $linetype . "_draw";
     my $fileref   = eval '\%' . $linetype . "_file";
     my $name_draw = eval '\%' . $linetype . "_name_draw";
+    my $coord_input;
 
     require File::Basename;
 
@@ -167,11 +168,11 @@ sub custom_draw {
 	    my $pe;
 	    Tk::grid($pe = $f->PathEntry(-textvariable => \$file,
 					 -selectcmd => sub {
-					     $weiter = 1;
+					     $pe->focusNext;
 					 },
-					 -cancelcmd => sub {
-					     $weiter = -1;
-					 },
+# 					 -cancelcmd => sub {
+# 					     $weiter = -1;
+# 					 },
 					),
 		     $f->Button(-image => $t->Getimage("openfolder"),
 				-command => $get_file
@@ -196,8 +197,19 @@ sub custom_draw {
 		}
 		Tk::grid($f->Label(-text => M"Linienbreite"),
 			 $e,
+			 -sticky => "w",
 			);
 	    }
+	    Tk::grid($f->Label(-text => "Kartenkoordinaten"),
+		     my $om = $f->Optionmenu
+		     (-variable => \$coord_input,
+#XXX this causes -width to be ignored?		      -anchor => "w",
+		      -width => 10,
+		      -options => [ (map { [ $Karte::map{$_}->name, $_ ] } @Karte::map) ]),
+		     -sticky => "w",
+		    );
+	    $coord_input = "Standard";
+
 	    $f = $t->Frame->pack(-fill => "x");
 	    Tk::grid($f->Button(Name => "ok",
 				-command => sub {
@@ -259,6 +271,7 @@ sub custom_draw {
     }
     $args{-draw} = 1;
     $args{-filename} = $file;
+    $args{-map} = $coord_input if defined $coord_input && $coord_input ne "Standard";
     plot($linetype, $abk, %args);
 
     for (($linetype eq 'p' ? ("$abk-img", "$abk-fg") : ($abk))) {
