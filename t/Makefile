@@ -1,11 +1,13 @@
 #
-# $Id: Makefile,v 1.14 2003/08/08 19:32:08 eserte Exp $
+# $Id: Makefile,v 1.15 2003/10/01 22:35:45 eserte Exp $
 #
 
 # läuft nicht mit 5.004 oder älter
 
+PERL?=	perl
+
 test:
-	perl -w -I.. -I../lib -MTest::Harness -e \
+	$(PERL) -w -I.. -I../lib -MTest::Harness -e \
 	    'runtests(grep { !/(bbbikesoap|cgihead2).t/ } @ARGV)' *.t
 
 interactive:

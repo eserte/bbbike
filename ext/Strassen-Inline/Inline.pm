@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Inline.pm,v 2.22 2003/08/07 21:31:27 eserte Exp $
+# $Id: Inline.pm,v 2.23 2003/10/01 21:22:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ package Strassen::Inline;
 require 5.005; # new semantics of hv_iterinit
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 2.22 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 2.23 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Cwd;
@@ -441,17 +441,18 @@ void search_c(SV* self, char* from, char* to, ...) {
 	  int succ_key = *(mmap_ptr++);
 	  int succ_key_len = sizeof(int);
 	  dist_t len_pen = *(mmap_ptr++);
-#else
+#else /* USE_MMAP_IMPL */
 	HE* succ_he;
 	SV** tmp = hv_fetch(net, min_node, min_node_len, 0);
 	HV* min_node_net = (HV*)SvRV(*tmp);
 	SV** node_sv = hv_fetch(NODES, min_node, min_node_len, 0);
 	search_node* sn = (search_node*)SvIV(*node_sv);
+	hv_iterinit(min_node_net);
 	while(succ_he = hv_iternext(min_node_net)) {
 	  int succ_key_len;
 	  char* succ_key = HePV(succ_he, succ_key_len);
 	  dist_t len_pen;
-#endif
+#endif /* USE_MMAP_IMPL */
 
 	  /* do not check against the predecessor of this node */
 #ifdef USE_MMAP_IMPL

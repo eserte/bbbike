@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.11 2003/08/14 05:14:10 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.12 2003/09/22 20:03:05 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -64,6 +64,35 @@ sub union {
 	}
     }
     keys %res;
+}
+
+# Create a new Strassen object from $self and remove points specified
+# in Strassen object $to_remove.
+sub new_with_removed_points {
+    my($self, $to_remove, %args) = @_;
+    my $new_s = Strassen->new;
+    require Strassen::Kreuzungen;
+    my $kr = Kreuzungen->new_from_strassen(Strassen => $to_remove);
+    my $h = $kr->{Hash};
+    $self->init;
+    while(1) {
+	my $r = $self->next;
+	last if !@{ $r->[COORDS] };
+	my @newcoords = ([]);
+	for my $p (@{ $r->[COORDS] }) {
+	    if (!exists $h->{$p}) {
+		CORE::push @{$newcoords[-1]}, $p;
+	    } else {
+		CORE::push @newcoords, [] if @{$newcoords[-1]} != 0;
+	    }
+	}
+	pop @newcoords if @{$newcoords[-1]} == 0;
+	for my $new_c (@newcoords) {
+	    $new_s->push([$r->[NAME], $new_c, $r->[CAT]]);
+	}
+    }
+    $new_s->{Id} = $self->id . "_removed_" . $to_remove->id;
+    $new_s;
 }
 
 ### AutoLoad Sub

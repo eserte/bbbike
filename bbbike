@@ -765,7 +765,7 @@ Tk::CmdLine::SetArguments();
    ['radwegeoptimierung','!',0, var => \$radwege_optimierung,
     label => M"Radwege-Optimierung"],
    ['N_RW_optimization', '!', 0, var => \$N_RW_optimization, nogui => 1],
-   ['greenoptimierung', '=i', choices => [0,1,2],
+   ['greenoptimierung', '=i', 0, choices => [0,1,2],
     longhelp => "0: ".M("egal")."\n".
                 "1: ".M("bevorzugen")."\n".
                 "2: ".M("stark bevorzugen")."\n",

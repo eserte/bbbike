@@ -1,0 +1,316 @@
+BBBike RELEASE 3.13
+
+bbbike (ptk)
+
+Modules
+
+Plugins
+
+Data
+
+Install
+
+CGI
+
+Misc
+
+----------------------------------------------------------------------
+BBBike RELEASE 3.12
+
+bbbike (ptk)
+- new menu for search preferences
+- "sights" now main icon instead of "kneipen"
+- appearance approvements (ferry icon, outlines for U- and S-Bhf.
+  labels, labels for areas, improved stacking order)
+- binding fixes
+- new menu entries (e.g. alarm list, delete user deletions,
+  statistics, obey oneway strictly)
+- support for PNG images
+- new options (-focuspolicy, -algorithm, -layers)
+- improved additional layer support (menu is now publicly available)
+- show/set reference power/speed from enter_speed/power window
+- position is preserved while zooming
+- automatic hiding of U-/S-Bahn labels
+- via support (add, del, move vias, see also BBBikeVia.pm)
+- another english translation update
+- internal: transition to full Tk::Getopt support
+- bug fixes
+
+Modules
+- Strassen::Inline: faster search (now using heaps)
+                    use hypot function
+- compatibility fixes for 5.8.0
+- BBBikeRouting.pm is getting more mature, support for Strassen::Dataset
+- Strassen::Util: removed old and slow FreezeThaw code
+- experimental integer sqrt code in BBBikeXS.xs (may be faster on
+  machines without a FPU)
+- changed return value in Strassen::all_crossings
+- Strassen::*: more cache support. CDB caches use now
+  Storable::nfreeze (shorter files).
+- new module BBBikeStats: make statistics and pie charts for routes
+- BBBikeAdvanced: new penalty type "bbd file"
+  penalties are now moved to the "Search settings" menu
+- new module: Strassen::Stat (used in bbbike's info command)
+- new module: Strassen::DB_File_Btree (btree version of Strassen::CORE)
+- new module: Strassen::Lazy (load Strassen::Core module lazily)
+- new draw types in BBBikeDraw: R-Bahn, U-Bhf. labels, S-Bhf. labels
+- PDF output: new automatic mode (either landscape or portrait)
+- GD.pm: some methods now in GDHeavy.pm
+- Karte::UTM improvements
+- BBBikeESRI is now more efficient
+- new: BBBikeVia.pm
+- TelbuchDBApprox.pm improvements
+- Berlin_DE.pm: new function get_all_subparts
+- new widget Tk::Ruler
+- Strassen::Core: Object::Iterate support
+- new: HouseNumbers.pm
+- Update.pm: now also rsync possible (but not yet tested)
+- beginning MapServer support (for the cgi and a standalone mapserver)
+- bug fixes
+
+Plugins
+- Salesman: new cancel button
+- new plugin: Scribble
+- BBBikeRuler: show more: height and grade, manhatten distance, time
+  etc.
+  new circle menu
+- improvements in GelbeSeitenPlugin.pm (still not public yet)
+- bug fixes
+
+Data
+- various updates and fixes, new data
+- first thoughts on a "housenumbers" file
+
+Install
+- no changes
+
+CGI
+- using inaccessible_strassen database
+- favicon.ico for Mozilla
+- support for pdf-auto
+- info page with browserinfo
+- no more links to www.stadtplandienst.de (blame them :-( )
+
+Misc
+- more tests (t/bbbikerouting.t, ext/Strassen-Inline/t/*, t/dataset.t, ...)
+
+----------------------------------------------------------------------
+BBBike RELEASE 3.11
+
+bbbike (ptk)
+- new map modes: custom choose, dragging (with button)
+- more GPS export modes
+- support for multiple additional layers
+- Salesman is now a plugin
+- new plugin: BBBikeRuler
+- star photo for sehenswuerdigkeiten
+- landstrassen with Straﬂennamen and -nummern
+- user-defined blockings
+- new options: -plugin
+- translated some internal function and variable names to English
+- bug fixes
+
+Modules
+- split Strassen.pm into nine modules
+- Telefonbuch2001: new implementation with "telekom" script
+- KDEUtil: some fixes for KDE2
+- BBBikeEdit: new features in draw_track_graph, editing GPSMAN points
+- new: GPS::SerialStty
+- various bug fixes
+
+Data
+- major additions and changes (e.g. S-Bahn)
+- existing data is checked by using a GPS receiver
+
+Install
+
+CGI
+- support for temporary blockings
+- use Apache::Session if available
+
+Misc
+- fixes in runbbbikecgi
+
+----------------------------------------------------------------------
+BBBike RELEASE 3.10
+
+bbbike (ptk)
+- support for personal places (only with -advanced option)
+- better busy cursor implementation (workaround bugs in Perl/Tk)
+- draw nolighting, "vorfahrt" and narrowpassage data
+- more complete legend (F1 key)
+- info window: link to www.stadtplandienst.de and polar coordinates
+- draw gpsman tracks (only with -advanced)
+- advanced mode: new penalties in search: avoid gps tracked routes, avoid
+  route for way back. Better support for user defined penalities.
+- menu for Button-2 modes
+- "options" is now also in the menubar
+- improvements in the edit interface (relationship editor, street editor)
+- moved some legacy code to TkCompat.pm
+- many bug fixes and improvements
+
+Modules
+- new module Strassen::Inline with two new C implementations of search
+  routine
+- new module Strassen::Build for building mmap-file for second C
+  implementation
+- Strassen::Ext: new sort_by_cat method
+- new module BBBikeRouting, replaces old cmdbbbike script/module
+- many bug fixes and improvements
+- new GPS related modules (but only activated in -advanced mode):
+  GPS::GpsmanData (create/read data files for the gpsman application) and
+  GPS::DirectGarmin (upload tracks directly to the Garmin, but only with
+  a patched perl-gps distribution)
+- new experimental BBBikeDraw::ImageMagick module (as an alternative for
+  BBBikeDraw::GD, much slower, but nicer output)
+- new BBBikeDraw::SVG module
+- Karte::Polar: conversion functions for ddd <=> dms
+- new Karte::UTM module (still needs work)
+- Tk::ColorFlowChooser and Tk::PathEntry in distribution
+- PLZ: better handling of gzipped files
+
+Data
+- new file gesperrt_car (blocked streets for cars only)
+- new file nolighting (unbeleuchtete Straﬂen)
+- updates
+
+Install
+- SiePerl 5.6.1 is used for the Windows distribution
+
+CGI
+
+Misc
+- wapbbbike, smsbbbike, cmdbbbike, and tkbabybike now use BBBikeRouting.pm
+- documentation for BBBikeRouting
+
+----------------------------------------------------------------------
+BBBike RELEASE 3.09
+
+bbbike (ptk)
+- new edit menu (only in -advanced mode)
+
+Modules
+- Strassen.pm: do not use Text::ScriptTemplate anymore, because it's
+  crashing perl 5.6.1!
+- new module Karte::Cityinfo
+
+Data
+- some minor additions
+
+Install
+
+CGI
+- settings are now changeable in result page
+
+Misc
+
+----------------------------------------------------------------------
+BBBike RELEASE 3.08
+
+bbbike (ptk)
+- support for "plugins"
+- comments (path instructions) in the route list
+- carry points are now handled in the route search algorithm (in both
+  perl/tk version and cgi version)
+- maps: works now also in non-standard coord systems
+- icons for "in work" sections
+- cursor images for all map modes
+- new options -grademinimum, -grademinimumshort, -scaling, -handheld
+- plot points: category IMG:.* recognized
+- use default font size as base
+- bugfixes
+
+Modules
+- new (plugin) module BBBikeThunder.pm
+- better Tk::CanvasFig (former Tk::Fig) support
+- Strassen.pm: exact grid calculation
+- Berlin_DE.pm: supercityparts (neue Bezirke)
+- canvas related methods now in Tk::CanvasUtil
+- BBBikeDraw/GD.pm: new draw type potsdam
+- PLZ.pm: umlaut approximation also without String::Approx/agrep
+- lib/KDEUtil.pm: compatibility for KDE 2
+
+Data
+- data/hoehe-orig: additions in Brandenburg and Berlin from hm96 file
+- misc data updates
+
+Install
+
+CGI
+- new optimization option (Hauptstraﬂen ohne Radwege meiden)
+
+Misc
+- cmdbbbike: support for vehicle=pedestrian
+
+----------------------------------------------------------------------
+BBBike RELEASE 3.07
+
+bbbike (ptk)
+- using new Tk::FlatRadiobutton widget for some icons
+- better GUI consistency: $map_mode variable replaces $search_flag and
+  $special_mode
+- map drag mode
+- windrose button can be driven in two modes (RADIO or SCROLL, only settable
+  in the program)
+- better small display (e.g. 320x240) support
+- new -exporttxtmode option (for G7toWin_ASCII support)
+
+Modules
+- StrassenNetz::route_to_name is created through a template
+- the enum module is now bundled with bbbike
+
+Data
+- new radwege category RW7 (Zweirichtungsradweg)
+
+Install
+
+CGI
+- ability to specify crossings in the inputs
+- compability for new stadtplandienst query syntax
+- fixing an unnecessary intermediate page (ZIP was already known, but again
+  asked)
+- accept path_info too (instead of only query_strings)
+- better bbbike_sidebar.html
+
+Misc
+- bug fixes
+- There is a babybike version of bbbike, which uses Gtk instead of Tk and run
+  on Linux handhelds. It needs 64MB RAM machines. Please ask the author
+  for a copy, this version is not included into this distribution.
+
+----------------------------------------------------------------------
+BBBike RELEASE 3.06
+
+bbbike (ptk)
+- using icons for mounts/descents
+- prevent fonts from being to small
+- edit mode:
+  * F8/F9 calls editor (internal or emacsclient). Not yet documented.
+  * switching radwege mode on/off is now faster
+- internal cleanups (usage of your.pm etc.)
+
+Modules
+- ESRI modules are now perl 5.005 compatible
+- Strassen.pm uses Text::ScriptTemplate
+
+Data
+- parts of the R-Bahn net updated
+- misc data additions
+
+Install
+- minimal setup.exe for windows
+
+CGI
+- javascript for most browsers disabled
+- multiple match display
+- reordered information page
+
+Misc
+- bug fixes
+
+----------------------------------------------------------------------
+Former releases:
+
+BBBike RELEASE 2.48 (1998-08-01): First release with FreeBSD port.
+
+BBBike VERSION 2.01 (1998-01-20): Renamed to "bbbike"

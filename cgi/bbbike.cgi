@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.55 2003/09/09 20:40:45 eserte Exp $
+# $Id: bbbike.cgi,v 6.56 2003/09/22 20:01:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -78,7 +78,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $ampeln $qualitaet_net $handicap_net
 	    $strcat_net $radwege_strcat_net $routen_net $comments_net
 	    $comments_points $green_net
-	    $inaccess_str $crossings $kr $plz $net $multi_bez_str
+	    $crossings $kr $plz $net $multi_bez_str
 	    $overview_map
 	    $use_umland $use_umland_jwd $use_special_destinations
 	    $check_map_time $use_cgi_bin_layout
@@ -607,7 +607,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.55 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.56 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -666,13 +666,6 @@ undef $net; # dito
 #$str = new Strassen "strassen" unless defined $str;
 #$str = new Strassen::Lazy "strassen" unless defined $str;
 $cookiename = "bbbike";
-if (!defined $inaccess_str) {
-    my $i_s;
-    eval { $i_s = new Strassen "inaccessible_strassen" };
-    if ($i_s) {
-	$inaccess_str = $i_s->get_hashref;
-    }
-}
 #get_streets($use_umland_jwd ? "wideregion" : $use_umland ? "region" : "city");
 
 # Maximale Anzahl der angezeigten Straßen, wenn eine Auswahl im PLZ-Gebiet
@@ -1041,8 +1034,7 @@ sub choose_form {
 		my $str = get_streets();
 		my $pos = $str->choose_street($strasse, $bezirk);
 		if (!defined $pos) {
-		    my @files = $str->file;
-		    if (@files == 1) {
+		    if ($str->{Scope} eq 'city') {
 			warn "Enlarge streets for umland\n" if $debug;
 			$q->param("scope", "region");
 			$str = get_streets_rebuild_dependents(); # XXX maybe wideregion too?
@@ -1279,8 +1271,7 @@ sub choose_form {
 		my $str = get_streets();
 		my $pos = $str->choose_street($strasse, $bezirk);
 		if (!defined $pos) {
-		    my @files = $str->file;
-		    if (@files == 1) {
+		    if ($str->{Scope} eq 'city') {
 			warn "Enlarge streets for umland\n" if $debug;
 			$q->param("scope", "region");
 			$str = get_streets_rebuild_dependents(); # XXX maybe wideregion too?
@@ -1660,6 +1651,8 @@ sub choose_ch_form {
     my $use_javascript = ($bi->{'can_javascript'} &&
 			  !$bi->{'javascript_incomplete'});
 
+#XXX Diese locale-Manipulation mit choose_all_form verbinden, und Sortierung
+#    in eigene Subroutine auslagern.
     use locale;
     eval {
 	local $SIG{'__DIE__'};
@@ -1935,8 +1928,6 @@ sub get_kreuzung {
 	    my %used;
 	    my $ecke_printed = 0;
 	    foreach (@coords) {
-		# inaccessible point
-		next if ($inaccess_str && $inaccess_str->{$_});
 		unless ($ecke_printed) {
 		    if ($use_select) {
 			print " Ecke ";
@@ -2244,17 +2235,6 @@ sub search_coord {
       = fix_coords($startcoord, $viacoord, $zielcoord);
 
     my $scope = $q->param("scope") || "city";
-
-    if ($inaccess_str) {
-	if (exists $inaccess_str->{$startcoord} ||
-	    (defined $viacoord && exists $inaccess_str->{$viacoord}) ||
-	    exists $inaccess_str->{$zielcoord}) {
-	    http_header();
-	    print "Die angegebenen Punkte <$startcoord>, <$viacoord>, <$zielcoord> können nicht erreicht werden.<br>\n";
-	    print "<a href=\"$bbbike_url\">Zurück zu BBBike</a><br>";
-	    my_exit(0);
-	}
-    }
 
     my $via_array = (defined $viacoord && $viacoord ne ''
 		     ? [$viacoord]
@@ -3256,7 +3236,7 @@ EOF
 	    }
 	    print "</tr>\n";
 ##XXX Fix this without using $str
-#  	    if (scalar $str->file > 1 || $multiorte) {
+#  	    if ($str->{Scope} ne "cityXXX" || $multiorte) {
 #  		# XXX scope instead???
 #  		print "<input type=hidden name=draw value=umland>\n";
 #  	    }
@@ -3891,9 +3871,9 @@ sub get_streets {
     my($scope) = shift || $q->param("scope") || "city";
     if ($g_str) {
 	return $g_str
-	    if (($scope eq 'city' && scalar @{[ $g_str->file ]} == 1) ||
-		($scope eq 'region' && scalar @{[ $g_str->file ]} == 2) ||
-		($scope eq 'wideregion' && scalar @{[ $g_str->file ]} == 3)
+	    if (($scope eq 'city'       && $g_str->{Scope} eq 'city') ||
+		($scope eq 'region'     && $g_str->{Scope} eq 'region') ||
+		($scope eq 'wideregion' && $g_str->{Scope} eq 'wideregion')
 	       );
     }
     my @f = ("strassen",
@@ -3904,6 +3884,17 @@ sub get_streets {
 	$g_str = new Strassen $f[0];
     } else {
 	$g_str = new MultiStrassen @f;
+    }
+    $g_str->{Scope} = $scope;
+
+    {
+	# XXX cache?
+	my $i_s;
+	eval { $i_s = new Strassen "inaccessible_strassen" };
+	if ($i_s) {
+	    $g_str = $g_str->new_with_removed_points($i_s);
+	    $g_str->{Scope} = $scope;
+	}
     }
 
     $g_str;
@@ -4410,15 +4401,17 @@ EOF
 }
 
 sub choose_all_form {
-
-    my $locale_set =0;
+#XXX siehe choose_ch_form
+    my $locale_set = 0;
+    my $old_locale;
     use locale;
     eval {
 	local $SIG{'__DIE__'};
 	require POSIX;
+	$old_locale = &POSIX::setlocale(&POSIX::LC_COLLATE, "");
 	foreach my $locale (qw(de de_DE de_DE.ISO8859-1 de_DE.ISO_8859-1)) {
 	    $locale_set=1, last
-		if (&POSIX::setlocale( &POSIX::LC_ALL, $locale));
+		if (&POSIX::setlocale(&POSIX::LC_COLLATE, $locale));
 	}
     };
 
@@ -4483,6 +4476,15 @@ sub choose_all_form {
     }
     print "</div>";
     print $q->end_html;
+
+    if ($locale_set && defined $old_locale) {
+	eval {
+	    local $SIG{'__DIE__'};
+warn "restore old locale $old_locale";
+	    &POSIX::setlocale( &POSIX::LC_COLLATE, $old_locale);
+	};
+warn $@ if $@;
+    }
 }
 
 sub nahbereich {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.10 2003/08/09 23:32:55 eserte Exp $
+# $Id: wapbbbike.cgi,v 2.11 2003/09/22 19:58:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -218,7 +218,7 @@ sub _any_image {
 	    }
 	    $imagetype = "png";
 	}
-	$extra_args{Conf} = BBBikeDraw::MapServer::Conf->ipaq_default
+	$extra_args{Conf} = BBBikeDraw::MapServer::Conf->bbbike_cgi_ipaq_conf
 	    (ImageType => $imagetype);
 	$extra_args{Module} = "MapServer";
     }
@@ -243,15 +243,32 @@ sub _any_image {
     if (defined $convert_to) {
 	$draw->{ImageType} = $convert_to;
 	print $cgi->header(-type => $draw->mimetype);
+
 	my $temp = "/tmp/wapbbbike." . time . ".$$";
 	open(FH, ">$temp") or die "Can't write to $temp: $!";
 	$draw->flush(Fh => \*FH);
 	close FH;
-	if ($convert_to eq 'gif') {
-	    system("pngtopnm $temp | ppmquant 256 | ppmtogif");
-	} else { # wbmp
-	    system("pngtopnm $temp | ppmtopgm | pgmtopbm | pbmtowbmp");
+
+	my $temp2cmd = "";
+	my $temp2;
+	if ($ENV{MOD_PERL}) {
+	    $temp2 = "/tmp/wapbbbike2." . time . ".$$";
+	    $temp2cmd = " > $temp2";
 	}
+	if ($convert_to eq 'gif') {
+	    system("pngtopnm $temp | ppmquant 256 | ppmtogif $temp2cmd");
+	} else { # wbmp
+	    system("pngtopnm $temp | ppmtopgm | pgmtopbm | pbmtowbmp $temp2cmd");
+	}
+
+	if (defined $temp2) {
+	    open(IMG, $temp2) or die "Can't open file $temp2: $!";
+	    local $/ = undef;
+	    print <IMG>;
+	    close IMG;
+	    unlink $temp2;
+	}
+	unlink $temp;
     } else {
 	print $cgi->header(-type => $draw->mimetype);
 	$draw->flush;

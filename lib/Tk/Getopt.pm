@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Getopt.pm,v 1.47 2003/06/29 20:09:19 eserte Exp $
+# $Id: Getopt.pm,v 1.47 2003/06/29 20:09:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1997,1998,1999,2000,2003 Slaven Rezic. All rights reserved.
@@ -45,6 +45,9 @@ sub new {
 	    if (ref $_ eq 'ARRAY' and
 		defined $_->[OPTEXTRA] and
 		ref $_->[OPTEXTRA] ne 'HASH') {
+		if ((@$_ - OPTEXTRA) % 2 != 0) {
+		    warn "Odd number of elements in definition for " . $_->[OPTNAME];
+		}
 		my %h = splice @$_, OPTEXTRA;
 		$_->[OPTEXTRA] = \%h;
 	    }
@@ -891,13 +894,8 @@ sub _do_undo {
 		@{ $undo_options->{$opt->[OPTNAME]}} = @swap;
 	    } elsif ($ref eq 'HASH') {
 		my %swap = % {$self->_varref($opt)};
-warn $opt->[OPTNAME];
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$undo_options->{$opt->[OPTNAME]},$self->_varref($opt)],[])->Indent(1)->Useqq(1)->Dump; # XXX
-
 		% {$self->_varref($opt)} = %{ $undo_options->{$opt->[OPTNAME]} };
-warn "ok...";
 		%{ $undo_options->{$opt->[OPTNAME]}} = %swap;
-warn "ok???";
 	    } elsif ($ref eq 'SCALAR') {
 		my $swap = $ {$self->_varref($opt)};
 		$ {$self->_varref($opt)} = $undo_options->{$opt->[OPTNAME]};

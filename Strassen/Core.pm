@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.27 2003/09/02 21:43:21 eserte Exp $
+# $Id: Core.pm,v 1.28 2003/09/22 20:03:11 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -404,7 +404,7 @@ sub delete_current { # funktioniert in init/next-Schleifen
 # wandelt eine Array-Referenz ["name", $Koordinaten, "cat"] in
 # einen String zum Abspeichern um
 # Achtung: das Koordinaten-Argument ist hier anders als beim Rückgabewert von
-# parse()!
+# parse()! Siehe arr2line2().
 # Tabs werden aus dem Namen entfernt
 # Achtung: ein "\n" wird angehängt
 ### AutoLoad Sub
@@ -750,8 +750,8 @@ sub _make_grid_exact {
     }
     eval {
 	require VectorUtil::InlineDist;
-#XXX	*VectorUtil::distance_point_line = \&VectorUtil::Inline::distance_point_line;
     };
+    if ($@ && $VERBOSE) { warn $@ }
 
     my %grid_build;
     $self->init;
@@ -864,8 +864,8 @@ sub nearest_point {
 	require VectorUtil;
 	eval {
 	    require VectorUtil::InlineDist;
-#XXX	    *VectorUtil::distance_point_line = \&VectorUtil::Inline::distance_point_line;
 	};
+	if ($@ && $VERBOSE) { warn $@ }
     }
 
     $s->make_grid(UseCache => 1,

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: VectorUtil.pm,v 1.13 2003/08/30 20:01:17 eserte Exp $
+# $Id: VectorUtil.pm,v 1.14 2003/10/01 22:31:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
 require Exporter;
 @ISA = 'Exporter';
@@ -98,13 +98,7 @@ sub vector_in_grid {
 	}
 
 	# Schnittpunkt-Test am unteren Rand (geometrisch oben)
-	# Der letzte Test ist nicht notwendig, weil ein Vektor das Gitter in
-	# genau zwei Punkten schneiden muss, ansonsten wurde er entweder von
-	# der ersten Regel erschlagen oder er geht genau durch einen Eckpunkt,
-	# was für meine Bedürfnisse uninteressant ist.
-	return 3;
 
-	# Der Vollständigkeit halber:
 	my $d_y1_gridy1 = ($gridy1 - $y1);
 	$a = $d_y1_gridy1*$ges_strecke/($y2-$y1);
 	$b = sqrt($a*$a - $d_y1_gridy1*$d_y1_gridy1);

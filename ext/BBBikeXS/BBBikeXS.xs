@@ -213,7 +213,8 @@ MODULE = BBBikeXS		PACKAGE = Strassen::Util
 
 PROTOTYPES: DISABLE
 
-double strecke_XS(p1, p2)
+double
+strecke_XS(p1, p2)
 	SV *p1;
 	SV *p2;
 	PREINIT:
@@ -248,7 +249,8 @@ double strecke_XS(p1, p2)
 	RETVAL
 
 
-double strecke_s_XS(p1, p2)
+double
+strecke_s_XS(p1, p2)
 	char *p1;
 	char *p2;
 	PREINIT:

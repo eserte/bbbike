@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Inline.pm,v 1.12 2003/08/30 21:43:57 eserte Exp $
+# $Id: Inline.pm,v 1.13 2003/10/01 22:31:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package VectorUtil::Inline;
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Inline 0.40; # because of API changes
@@ -114,8 +114,10 @@ int vector_in_grid(double x1, double y1, double x2, double y2,
     if (y2 != y1) {
 	/* Schnittpunkt-Test am oberen Rand (geometrisch unten) */
 	double d_y1_gridy2 = (gridy2 - y1);
+	double d_y1_gridy1;
 	double a = d_y1_gridy2*ges_strecke/(y2-y1);
 	double b = sqrt(a*a - d_y1_gridy2*d_y1_gridy2);
+	double schnitt_x_gridy1;
 	double schnitt_x_gridy2;
 	sgn = (x1 < x2 ? 1 : -1);
 	if ((y1 < y2 && y1 > gridy2) ||
@@ -132,28 +134,24 @@ int vector_in_grid(double x1, double y1, double x2, double y2,
 	    return 4;
 	}
 
-	/* Schnittpunkt-Test am unteren Rand (geometrisch oben) 
-	 * Der letzte Test ist nicht notwendig, weil ein Vektor das Gitter in
-	 * genau zwei Punkten schneiden muss, ansonsten wurde er entweder von
-	 * der ersten Regel erschlagen oder er geht genau durch einen Eckpunkt,
-	 * was für meine Bedürfnisse uninteressant ist.
-	 */
-	return 3;
+	/* Schnittpunkt-Test am unteren Rand (geometrisch oben) */
+	d_y1_gridy1 = (gridy1 - y1);
+	a = d_y1_gridy1*ges_strecke/(y2-y1);
+	b = sqrt(a*a - d_y1_gridy1*d_y1_gridy1);
+	sgn = (x1 < x2 ? 1 : -1);
+	if ((y1 < y2 && y1 > gridy1) ||
+	    (y2 < y1 && y1 < gridy1)) {
+	  sgn *= -1 ;
+	}
+	schnitt_x_gridy1 = x1 + sgn*b;
 
-/*  	# Der Vollständigkeit halber: */
-/*  	my $d_y1_gridy1 = ($gridy1 - $y1); */
-/*  	$a = $d_y1_gridy1*$ges_strecke/($y2-$y1); */
-/*  	$b = sqrt($a*$a - $d_y1_gridy1*$d_y1_gridy1); */
-/*  	$sgn = ($x1 < $x2 ? 1 : -1); */
-/*  	$sgn *= -1 if (($y1 < $y2 && $y1 > $gridy1) || */
-/*  		       ($y2 < $y1 && $y1 < $gridy1)); */
-/*  	my $schnitt_x_gridy1 = $x1 + $sgn*$b; */
-
-/*  	if ($schnitt_x_gridy1 >= $gridx1 && */
-/*  	    $schnitt_x_gridy1 <= $gridx2) { */
-/*  	    warn "Gefunden: $gridx1 <= $schnitt_x_gridy1 <= $gridx2\n" if $VERBOSE; */
-/*  	    return 3; */
-/*  	} */
+	if (schnitt_x_gridy1 >= gridx1 &&
+	    schnitt_x_gridy1 <= gridx2) {
+#ifdef VECTOR_UTIL_DEBUG
+	    fprintf(stderr, "Gefunden: %f <= %f <= %f\n", gridx1, schnitt_x_gridy1, gridx2);
+#endif
+	    return 3;
+	}
     }
 
     return 0;

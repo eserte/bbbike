@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.15 2003/10/01 07:01:01 eserte Exp $
+# $Id: cgi.t,v 1.16 2003/10/02 06:31:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -244,7 +244,7 @@ for my $cgiurl (@urls) {
 	    ok($route->{Len} > 30000 && $route->{Len} < 35000,
 	       "check route length")
 		or diag "Route length: $route->{Len}";
-	    ok(grep({ $_->{Strname} =~ /Park Babelbsberg/ } @{ $route->{Route} }),
+	    ok((grep { $_->{Strname} =~ /Park Babelbsberg/ } @{ $route->{Route} }),
 	       "Route through Park Babelsberg");
 	} else {
 	    diag($@);

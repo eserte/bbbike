@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.15 2003/07/22 21:21:52 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.16 2003/09/22 19:59:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -61,18 +61,20 @@ sub read_config {
     }
 
     # cease -w
-    $BBBikeMapserver::Config::mapserver_dir = $BBBikeMapserver::Config::mapserver_dir;
-    $BBBikeMapserver::Config::bbd2esri_prog = $BBBikeMapserver::Config::bbd2esri_prog;
-    $BBBikeMapserver::Config::mapserver_prog_relurl = $BBBikeMapserver::Config::mapserver_prog_relurl;
-    $BBBikeMapserver::Config::mapserver_prog_url = $BBBikeMapserver::Config::mapserver_prog_url;
-    $BBBikeMapserver::Config::mapserver_bin_dir = $BBBikeMapserver::Config::mapserver_bin_dir;
+    $BBBikeMapserver::Config::mapserver_dir	    = $BBBikeMapserver::Config::mapserver_dir;
+    $BBBikeMapserver::Config::bbd2esri_prog	    = $BBBikeMapserver::Config::bbd2esri_prog;
+    $BBBikeMapserver::Config::mapserver_prog_relur  = $BBBikeMapserver::Config::mapserver_prog_relurl;
+    $BBBikeMapserver::Config::mapserver_prog_url    = $BBBikeMapserver::Config::mapserver_prog_url;
+    $BBBikeMapserver::Config::mapserver_bin_dir	    = $BBBikeMapserver::Config::mapserver_bin_dir;
+    $BBBikeMapserver::Config::mapserver_fonts_list  = $BBBikeMapserver::Config::mapserver_fonts_list;
 
     eval {
-	$self->{MAPSERVER_DIR} = $BBBikeMapserver::Config::mapserver_dir || die "mapserver_dir\n";
+	$self->{MAPSERVER_DIR}	       = $BBBikeMapserver::Config::mapserver_dir || die "mapserver_dir\n";
 	$self->{MAPSERVER_PROG_RELURL} = $BBBikeMapserver::Config::mapserver_prog_relurl || die "mapserver_prog_relurl\n";
-	$self->{MAPSERVER_PROG_URL} = $BBBikeMapserver::Config::mapserver_prog_url || die "mapserver_prog_url\n";
-	$self->{BBD2ESRI_PROG} = $BBBikeMapserver::Config::bbd2esri_prog || die "bbd2esri_prog\n";
-	$self->{MAPSERVER_BIN_DIR} = $BBBikeMapserver::Config::mapserver_bin_dir; # this is optional
+	$self->{MAPSERVER_PROG_URL}    = $BBBikeMapserver::Config::mapserver_prog_url || die "mapserver_prog_url\n";
+	$self->{BBD2ESRI_PROG}	       = $BBBikeMapserver::Config::bbd2esri_prog || die "bbd2esri_prog\n";
+	$self->{MAPSERVER_BIN_DIR}     = $BBBikeMapserver::Config::mapserver_bin_dir; # this is optional
+	$self->{MAPSERVER_FONTS_LIST}  = $BBBikeMapserver::Config::mapserver_fonts_list;
     };
     if ($@) {
 	die "Missing variables in config file $file: $@";

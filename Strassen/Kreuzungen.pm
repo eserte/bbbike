@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Kreuzungen.pm,v 1.7 2003/07/10 22:59:01 eserte Exp $
+# $Id: Kreuzungen.pm,v 1.8 2003/10/01 21:22:55 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -154,6 +154,7 @@ sub make_grid {
     }
 
     $self->{Grid} = {};
+    keys %{$self->{Hash}}; # reset iterator
     while(defined(my $k = each %{$self->{Hash}})) {
 	my $grid = join(",", $self->grid(split(/,/, $k)));
 	push @{$self->{Grid}{$grid}}, $k;

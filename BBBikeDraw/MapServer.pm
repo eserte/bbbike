@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.9 2003/08/09 23:14:45 eserte Exp $
+# $Id: MapServer.pm,v 1.10 2003/09/22 19:59:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -22,7 +22,7 @@ use Carp qw(confess);
 
 use vars qw($VERSION %color %outline_color %width);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -96,10 +96,22 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 	$self->MapserverRelurl($ms->{MAPSERVER_PROG_RELURL});
 	$self->MapserverUrl($ms->{MAPSERVER_PROG_URL});
 	$self->TemplateMap("brb.map-tpl");
-	$self->ImageSuffix("png"); # XXX maybe check
-	$self->FontsList("fonts-radzeit.list"); # XXX do not hardcode
+	$self->ImageSuffix("png");
+	if (!defined $ms->{MAPSERVER_FONTS_LIST}) {
+	    die "Please define \$mapserver_fonts_list in $bbbike_cgi_conf_path";
+	}
+	$self->FontsList($ms->{MAPSERVER_FONTS_LIST});
 	$self;
     }
+
+    sub bbbike_cgi_ipaq_conf {
+	my $self = __PACKAGE__->bbbike_cgi_conf;
+	my(%args) = @_[1..$#_];
+	$self->TemplateMap("brb-ipaq.map-tpl");
+	$self->ImageSuffix($args{ImageType} || "png");
+	$self;
+    }
+
 }
 
 {
@@ -188,16 +200,33 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 		    $vars, $mapfh) || die $t->error;
 	close $mapfh;
 
-	open(SHP2IMG, "-|") or do {
-	    exec("$mapserver_bin_dir/shp2img",
-		 "-m", $mapfile,
-		 "-e", @{ $self->BBox },
-		);
-	    die "Can't exec: $!";
-	};
-	local $/ = undef;
-	my $buf = <SHP2IMG>;
-	close SHP2IMG;
+	my @cmd = ("$mapserver_bin_dir/shp2img",
+		   "-m", $mapfile,
+		   "-e", @{ $self->BBox },
+		  );
+	#warn "@cmd";
+	my $buf;
+
+#  	if ($ENV{MOD_PERL}) {
+#  	    my($s2i_fh, $s2i_filename) = tempfile(UNLINK => 1,
+#  						  SUFFIX => ".img");
+#  	    push @cmd, "-o", $s2i_filename;
+#  	    system(@cmd);
+#  	    die "Command failed with $?: @cmd" if $?;
+#  	    open(IMG, $s2i_filename) or die "Can't open $s2i_filename: $!";
+#  	    local $/ = undef;
+#  	    $buf = <IMG>;
+#  	    close IMG;
+#  	} else {
+	    open(SHP2IMG, "-|") or do {
+		exec @cmd;
+		die "Can't exec @cmd: $!";
+	    };
+	    local $/ = undef;
+	    $buf = <SHP2IMG>;
+	    close SHP2IMG;
+#	}
+
 	$buf;
     }
 }
@@ -265,6 +294,9 @@ sub allocate_colors {
 
 sub draw_map {
     my $self = shift;
+
+    $self->pre_draw if !$self->{PreDrawCalled};
+
     my $im        = $self->{Image};
 
     $im->BBox([$self->{Min_x}, $self->{Min_y},
@@ -371,8 +403,6 @@ sub draw_scale {
 
 sub draw_route {
     my $self = shift;
-
-    $self->pre_draw if !$self->{PreDrawCalled};
 
     my $im = $self->{Image};
     $im->OnRoute(1);
