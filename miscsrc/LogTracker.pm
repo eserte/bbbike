@@ -229,6 +229,9 @@ sub init_gui {
 	$main::layer_post_enter_command{$layer{$l}} = sub {
 	    $main::c->raise("current")
 	};
+	$main::layer_post_leave_command{$layer{$l}} = sub {
+	    $main::c->lower("current", $layer{$l})
+	};
 	$main::occupied_layer{$layer{$l}} = 1;
 	main::fix_stack_order($layer{$l});
     }

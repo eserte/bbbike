@@ -6181,7 +6181,13 @@ sub std_p_binding {
 		     if exists $layer_post_enter_command{$tag};
 	     });
     unless (/^lsa-/) { # lsa-fg/bg: leavepoint wird unten gesetzt
-	$c->bind($tag, '<Any-Leave>' => \&leavepoint);
+	$c->bind($tag, '<Any-Leave>' => sub {
+		     $layer_pre_leave_command{$tag}->()
+			 if exists $layer_pre_leave_command{$tag};
+		     leavepoint($_[0]);
+		     $layer_post_leave_command{$tag}->()
+			 if exists $layer_post_leave_command{$tag};
+		 });
     }
 }
 # Strecken, Flächen
@@ -6194,7 +6200,13 @@ sub std_str_binding {
 		 $layer_post_enter_command{$tag}->()
 		     if exists $layer_post_enter_command{$tag};
 	     });
-    $c->bind($tag, '<Any-Leave>' => \&leavestr);
+    $c->bind($tag, '<Any-Leave>' => sub {
+		 $layer_pre_leave_command{$tag}->()
+		     if exists $layer_pre_leave_command{$tag};
+		 leavestr($_[0]);
+		 $layer_post_leave_command{$tag}->()
+		     if exists $layer_post_leave_command{$tag};
+	     });
     if (defined $c_balloon) {
 	$c->bind($tag, '<Any-Motion>' => sub { $c_balloon->Track });
     }

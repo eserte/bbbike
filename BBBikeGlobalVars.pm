@@ -66,6 +66,7 @@ use vars qw(
      %category_size %outline_color %category_color %str_color %p_color
      %category_font_color %category_font %category_width %category_image
      %layer_active_color %layer_pre_enter_command %layer_post_enter_command
+     %layer_pre_leave_command %layer_post_leave_command
      $crossings $all_outline %str_attrib %p_attrib %category_attrib
      $init_choose_street %init_str_draw %str_draw %occupied_layer
      %init_p_draw %p_draw %str_outline $auto_show_list
