@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.6 2003/11/16 22:15:22 eserte Exp $
+# $Id: bbbikedraw.t,v 1.7 2003/11/28 00:19:08 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -32,7 +32,9 @@ BEGIN {
 	exit;
     }
 
-    @modules = qw(GD GD::SVG Imager MapServer ImageMagick);
+    @modules = qw(GD/png GD/gif GD/jpeg GD::SVG SVG PDF
+		  Imager/png Imager/jpeg MapServer
+		  ImageMagick/png ImageMagick/jpeg);
 }
 
 # Timings are (on my 466MHz machine) with -slow:
@@ -83,6 +85,13 @@ sub draw_map {
     if ($module eq 'GD::SVG') {
 	$module = "GD";
 	$imagetype = "svg";
+    } elsif ($module =~ m{(.*)/(.*)}) {
+	$module = $1;
+	$imagetype = $2;
+    } elsif ($module eq 'SVG') {
+	$imagetype = "svg";
+    } elsif ($module eq 'PDF') {
+	$imagetype = "pdf";
     }
 
     my($fh, $filename) = tempfile(UNLINK => 1,
@@ -125,6 +134,12 @@ sub draw_map {
 	    } else {
 		warn "Can't display $filename";
 	    }
+	} elsif ($imagetype eq 'pdf') {
+	    if (is_in_path("xpdf")) {
+		system("xpdf $filename &");
+	    } else {
+		warn "Can't display $filename";
+	    }
 	} else {
 	    if (is_in_path("xv")) {
 		system("xv $filename &");
@@ -136,14 +151,20 @@ sub draw_map {
 	}
     }
 
-    my $image_info = image_info($filename);
-    if ($imagetype eq 'png') {
-	ok($image_info->{file_media_type}, "image/png");
-    } elsif ($imagetype eq 'svg') {
-	ok($image_info->{file_media_type}, "image/svg-xml");
+ SKIP: {
+	my $image_info = image_info($filename);
+	if ($imagetype =~ /^(png|gif|jpeg)$/) {
+	    ok($image_info->{file_media_type}, "image/$imagetype");
+	} elsif ($imagetype eq 'svg') {
+	    ok($image_info->{file_media_type}, "image/svg-xml");
+	} else {
+	    skip "image_info does not work for $imagetype", 1
+		for 1..3;
+	    last SKIP;
+	}
+	ok($image_info->{width}, $width);
+	ok($image_info->{height}, $height);
     }
-    ok($image_info->{width}, $width);
-    ok($image_info->{height}, $height);
 }
 
 

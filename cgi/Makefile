@@ -2,15 +2,9 @@ CGI_SCRIPTS=	bbbike.cgi mapserver_address.cgi mapserver_comment.cgi mapserver_se
 ROOT_URL?=	/bbbike
 # Set this to "cgi" or "Apache::Registry"
 CGI_TYPE?=	cgi
-# BSD MAKE
-# XXX better to use CURDIR with substitution:
-ROOT_DIR!=	perl -MFindBin=$$RealBin -MCwd=cwd -le 'chdir("$RealBin/..") or die; print cwd'
-# GNU MAKE
-#.CURDIR?=	${CURDIR}
-#ROOT_DIR=	$(shell perl -MFindBin -MCwd -le 'chdir("$$FindBin::RealBin/..") or die; print cwd')
-# ALL MAKE
+ROOT_DIR!=	perl -MFindBin=$$RealBin -MCwd=cwd -le 'chdir("$$RealBin/..") or die; print cwd'
 
-all:
+all:	httpd.conf rights
 
 httpd.conf: httpd.conf.tpl Makefile
 	tpage --define ROOT_URL=$(ROOT_URL) \
@@ -24,6 +18,10 @@ httpd.conf: httpd.conf.tpl Makefile
 	@echo "    Include ${.CURDIR}/httpd.conf"
 	@echo to your Apache\'s httpd.conf
 
-GNUmakefile:	Makefile
-	perl -nle 'if (/^# GNU MAKE/) { $$stage = "gnu" } elsif (/^# BSD MAKE/) { $$stage = "bsd" } elsif (/^# ALL MAKE/) { undef $$stage } elsif ($$stage eq "gnu") { s/^#//; } elsif ($$stage eq "bsd") { s/^/#/; } print' Makefile > GNUmakefile
+GNUmakefile:	Makefile ../miscsrc/b2gmake
+	../miscsrc/b2gmake < Makefile > GNUmakefile
+	chmod ugo+r GNUmakefile
 
+rights:
+	chmod ugo+rx *.cgi
+	chmod ugo+r,ugo-x *.cgi.config

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.24 2003/01/08 20:11:20 eserte Exp eserte $
+# $Id: PDF.pm,v 2.25 2003/11/28 00:18:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -28,7 +28,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.24 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.25 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -512,6 +512,9 @@ sub draw_scale {
 
 sub draw_route {
     my $self = shift;
+
+    $self->pre_draw if !$self->{PreDrawCalled};
+
     my $im        = $self->{Image};
     my $transpose = $self->{Transpose};
     my(@c1)       = @{ $self->{C1} };

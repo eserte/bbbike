@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: b2gmake,v 1.3 2003/09/02 22:31:31 eserte Exp $
+# $Id: b2gmake,v 1.4 2003/11/28 00:40:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -16,6 +16,7 @@
 # Note: if MAKEFLAGS is empty, then this will result in an lone-standing
 # dash. However, this does not seem to hurt GNU make.
 
+print ".CURDIR?=	\${CURDIR}\n";
 while(<STDIN>) {
     s/^\.if\s+defined\(([^\)]+)\)/ifdef $1/;
     s/^\.ifdef ([^\)]+)/ifdef $1/;
@@ -34,6 +35,7 @@ while(<STDIN>) {
     s/\$>/\$^/g;
     s[\${(.*):M/(.*)/(.*)/}][\$($1:$2=$3)]g;
     s[\${(.*):C/(.*)(?<!\\)/(.*)(?<!\\)/(g)?}][]g;
+    s[\!=(\s*)(.*)][=$1\$(shell $2)]g;
     if (/^\.for\s+(\S+)\s+in\s+(\S+)/) { # XXX not implementable in GNU make?
 	my($loopvar, $subst) = @_;
 	my $for_body = "";

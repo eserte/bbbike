@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.15 2003/10/01 22:35:45 eserte Exp $
+# $Id: Makefile,v 1.16 2003/11/28 00:28:48 eserte Exp $
 #
 
 # läuft nicht mit 5.004 oder älter
@@ -8,7 +8,10 @@ PERL?=	perl
 
 test:
 	$(PERL) -w -I.. -I../lib -MTest::Harness -e \
-	    'runtests(grep { !/(bbbikesoap|cgihead2).t/ } @ARGV)' *.t
+	    'BEGIN { if (!eval q{ use List::Util qw(shuffle); 1 }) { \
+			*shuffle = sub { @_ }; \
+		     } \
+	     } runtests(grep { !/(bbbikesoap|cgihead2).t/ } shuffle @ARGV)' *.t
 
 interactive:
 	./cgi2.pl -v -netscape -today
