@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.10 2003/11/29 00:10:37 eserte Exp $
+# $Id: Makefile,v 1.11 2004/02/04 11:46:25 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -375,3 +375,6 @@ dist-spiff:
 # vran:           sh configure --with-freetype=/usr/local --with-jpeg=/usr/local --with-gd=/usr/local --with-png=/usr/local --with-xpm=/usr/X11R6 --with-ming=/usr/local
 # then hand-edit Makefile: MING_INC=-I/usr/local/include/ming
 # and add -lming to MING_LIB
+
+# To build mapserver on devpc01, use:
+# ./configure --with-gd=static,/home/slavenr/tmp/gd-2.0.12/ --enable-debug
