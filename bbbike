@@ -218,7 +218,7 @@ $PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.145 $ =~ /(\d+)\.(\d+)/);
 
 # OS related
 $progname = basename($0);
-$devel_host = ($ENV{HOST} && $ENV{HOST} =~ /^(vran|cabulja|cvrsnica|spiff|devpc01.iconmobile.de)/i);
+$devel_host = ($ENV{HOST} && $ENV{HOST} =~ /^(vran|cabulja|cvrsnica|spiff|devpc01)/i);
 $os =   $^O eq 'MSWin32' || $^O eq 'os2' || $^O eq 'dos' ? 'win'
       : $^O eq 'MacOS'				    	 ? 'mac'
       : 						   'unix';
@@ -11144,13 +11144,12 @@ sub show_info {
 	    $linkcount++;
 	}
 
-	if ($devel_host) {
-	    # t0p s3cr37!
-	    my $url = sprintf "http://www.stadt".
-		"plan".
-		    "dienst.de/tpl/vm005/map.asp?ll=%.5fx%.5f", $px, $py;
-	    $info_text->insert("end", "Stadt".
-			       "plandienst\n", "link$linkcount");
+	if ($devel_host && $ENV{HOME} !~ /^devpc01/) {
+	    my $url = sprintf "http://www.stad".
+		"tpland".
+		    "ienst.de/tpl/vm005/map.asp?ll=%.5fx%.5f", $px, $py;
+	    $info_text->insert("end", "Stadtp".
+			       "landienst\n", "link$linkcount");
 	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;

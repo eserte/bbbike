@@ -35,10 +35,6 @@ sub new {
 
        Fs_base   => "map2002",
        Cache_dir => "$Karte::cache_root/map2002",
-       Root_URL  => "http://www.stadtp" .
-       "landienst.de/cities/berlin/grid1",
-       Users    => ['Stadtpl' .
-		    'andienst 2002'],
 
        X0 => -11837.5948498893,
        X1 => 2.48091758841086,

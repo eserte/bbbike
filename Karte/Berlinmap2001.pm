@@ -33,10 +33,6 @@ sub new {
 
        Fs_base   => "map2001",
        Cache_dir => "$Karte::cache_root/map2001",
-       Root_URL  => "http://www.stadtpl" .
-       "andienst.de/cities/b/b/pq/r195/b010404-std",
-       Users    => ['Stadtp' .
-		    'landienst 2001'],
 
        X0 => -11129.5289835653,
        X1 => 2.62357003833534,

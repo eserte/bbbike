@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlinmap2003.pm,v 1.4 2004/06/10 07:29:40 eserte Exp $
+# $Id: Berlinmap2003.pm,v 1.5 2004/10/25 23:11:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -35,10 +35,6 @@ sub new {
 
        Fs_base   => "map2003",
        Cache_dir => "$Karte::cache_root/map2003",
-       Root_URL  => "http://www.stadtp" .
-       "landienst.de/cities/berlin/grid1",
-       Users    => ['Stadtpla' .
-		    'ndienst 2003'],
 
        X0 => -11837.5948498893-15570,
        X1 => 2.48091758841086,

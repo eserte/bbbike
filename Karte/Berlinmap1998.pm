@@ -34,10 +34,6 @@ sub new {
 
        Fs_base   => "newnewmap",
        Cache_dir => "$Karte::cache_root/newnewmap",
-       Root_URL  => "http://www.stadtp" .
-       "landienst.de/cities/b/b/pq/r195/195",
-       Users    => ['Stadtpla' .
-		    'ndienst 1998'],
 
        X0 => -12867.098241163,
        X1 => 2.31694338671684,

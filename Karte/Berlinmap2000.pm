@@ -33,10 +33,6 @@ sub new {
 
        Fs_base   => "map2000",
        Cache_dir => "$Karte::cache_root/map2000",
-       Root_URL  => "http://www.stadtpla".
-       "ndienst.de/cities/b/b/pq/r195/b0003",
-       Users    => ['Stadtpla' .
-		    'ndienst 2000'],
 
        X0 => -12822.983798183,
        X1 => 2.59708522291797,

@@ -36,8 +36,6 @@ sub new {
 
        Fs_base   => "map1999",
        Cache_dir => "$Karte::cache_root/map1999",
-       Root_URL  => "http://www.stad" .
-       "tplandienst.de/cities/b/b/pq/r195/b9812c",
 
        X0 => -12822.983798183,
        X1 => 2.59708522291797,

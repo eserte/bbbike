@@ -35,10 +35,6 @@ sub new {
 
        Fs_base   => "potsdammap2002",
        Cache_dir => "$Karte::cache_root/potsdammap2002",
-       Root_URL  => "http://www.stadtpla" .
-       "ndienst.de/cities/potsdam/grid1",
-       Users    => ['Stadtpla' .
-		    'ndienst 2002'],
 
        X0 => -27118.2922275088,
        X1 => 2.48640820411157,

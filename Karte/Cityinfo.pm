@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Cityinfo.pm,v 1.3 2002/07/13 20:55:17 eserte Exp $
+# $Id: Cityinfo.pm,v 1.3 2002/07/13 20:55:17 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -32,8 +32,10 @@ sub new {
 
        Fs_base   => "cityinfo",
        Cache_dir => "$Karte::cache_root/cityinfo",
-       Root_URL  => "http://germany.city-info.ch/germany.rcl?",
-       Users    => ['Cityinfo'],
+       Root_URL  => "http://germany.city-in" .
+       "fo.ch/germany.rcl?",
+       Users    => ['Cityi' .
+		    'nfo'],
 
        X0 => -501509.375271274,
        X1 => 61.8845992415835,

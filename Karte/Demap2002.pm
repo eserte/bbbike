@@ -35,10 +35,6 @@ sub new {
 
        Fs_base   => "demap2002",
        Cache_dir => "$Karte::cache_root/demap2002",
-       Root_URL  => "http://www.stadtp" .
-       "landienst.de/cities/de/datlas",
-       Users    => ['Stadtpl'.
-		    'andienst 2002'],
 
        X0 => -514788.710269181,
        X1 => 17.025482843199,

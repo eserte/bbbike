@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PilotPl.pm,v 1.3 2002/04/15 22:24:53 eserte Exp $
+# $Id: PilotPl.pm,v 1.3 2002/04/15 22:24:53 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -31,8 +31,10 @@ sub new {
 
        Fs_dir   => "/usr/www/map/map-pilot-pl",
        Cache_dir => "$Karte::cache_root/pilot-pl",
-       Root_URL  => "http://pilot.pilot.pl/obrazek_new.php?katalog=pl13&num_x=%x&num_y=%y&y=0&x=0&copyright=0",
-       Users    => ['www.pilot.pl'],
+       Root_URL  => "http://pilot.pil" .
+       "ot.pl/obrazek_new.php?katalog=pl13&num_x=%x&num_y=%y&y=0&x=0&copyright=0",
+       Users    => ['www.pil'.
+		    'ot.pl'],
 
        X0 => -2098331.16766041,
        X1 => 77.2601058052018,

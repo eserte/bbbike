@@ -31,9 +31,6 @@ sub new {
 
        Fs_base   => "newmap",
        Cache_dir => "$Karte::cache_root/newmap",
-       Root_URL  => "http://www.kulturbox.de/stadtware/cities/b/pq/r195/195",
-       Users    => ['Stadtpla' .
-		    'ndienst 1997'],
 
        X0 => -12832.5603303591,
        X1 => 2.60107157639434,

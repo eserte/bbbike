@@ -951,27 +951,28 @@ sub set_coord_interactive {
 
     {
 	# combined:
-	# www.berliner-stadtplan.com, www.berlinonline.de, old Stadtplandienst
+	# www.berliner-stadtplan.com, www.berlinonline.de, old Stadtplan-
+	# dienst
 
 	my $f = $t->Frame->pack(-anchor => "w", -fill => "x");
 	$f->Label(-text => M"Stadtplan-URL")->pack(-side => "left");
-	my $stadtplandiensturl;
-	$f->Entry(-textvariable => \$stadtplandiensturl)->pack(-side => "left", -fill => "x", -expand => 1);
+	my $url;
+	$f->Entry(-textvariable => \$url)->pack(-side => "left", -fill => "x", -expand => 1);
 	$f->Button
 	    (-text => M"Selection",
 	     -command => sub {
 		 Tk::catch {
-		     $stadtplandiensturl
+		     $url
 			 = $f1->SelectionGet('-selection' => ($os eq 'win'
 							      ? "CLIPBOARD"
 							      : "PRIMARY"));
-		     $stadtplandiensturl =~ s/\n//g;
+		     $url =~ s/\n//g;
 		 };
 	     })->pack(-side => "left");
 	$f->Button
 	    (-text => M"Setzen",
 	     -command => sub {
-		 if (0 && $stadtplandiensturl =~ m{gps=(\d+)%7C(\d+)}) {
+		 if (0 && $url =~ m{gps=(\d+)%7C(\d+)}) {
 		     # XXX passt nicht ...
 		     my($x, $y) = ($1, $2);
 		     require Karte::Polar;
@@ -981,8 +982,8 @@ warn "$x $y $x_ddd $y_ddd";
 		     my($tx,$ty) = transpose($Karte::Polar::obj->map2standard($x_ddd, $y_ddd));
 		     mark_point('-x' => $tx, '-y' => $ty,
 				-clever_center => 1);
-		 } elsif ($stadtplandiensturl =~ m{x_wgs/(.*?)/y_wgs/(.*?)/}    ||
-			  $stadtplandiensturl =~ m{x_wgs=(.*?)[&;]y_wgs=([\.\d]+)}
+		 } elsif ($url =~ m{x_wgs/(.*?)/y_wgs/(.*?)/}    ||
+			  $url =~ m{x_wgs=(.*?)[&;]y_wgs=([\.\d]+)}
 			 ) {
 		     my($x, $y) = ($1, $2);
 		     require Karte::Polar;
@@ -991,7 +992,7 @@ warn "$x $y $x_ddd $y_ddd";
 		     my($tx,$ty) = transpose($Karte::Polar::obj->map2standard($x_ddd, $y_ddd));
 		     mark_point('-x' => $tx, '-y' => $ty,
 				-clever_center => 1);
-		 } elsif ($stadtplandiensturl =~ /ADR_ZIP=(\d+)&ADR_STREET=(.+?)&ADR_HOUSE=(.*)/) {
+		 } elsif ($url =~ /ADR_ZIP=(\d+)&ADR_STREET=(.+?)&ADR_HOUSE=(.*)/) {
 		     my($zip, $street, $hnr) = ($1, $2, $3);
 		     local @INC = @INC;
 		     push @INC, "$FindBin::RealBin/miscsrc";
@@ -1004,7 +1005,7 @@ warn "$x $y $x_ddd $y_ddd";
 		     my($x,$y) = transpose(split /,/, $res[0]->{Coord});
 		     mark_point('-x' => $x, '-y' => $y,
 				-clever_center => 1);
-		 } elsif ($stadtplandiensturl =~ /LL=%2B([0-9.]+)%2B([0-9.]+)/) {
+		 } elsif ($url =~ /LL=%2B([0-9.]+)%2B([0-9.]+)/) {
  		     $valx = $2;
  		     $valy = $1;
  		     $coord_output = 'polar';
@@ -1012,7 +1013,7 @@ warn "$x $y $x_ddd $y_ddd";
  		     $set_sub->(1);
 
 		 } else {
-		     status_message("Can't parse <$stadtplandiensturl>", "die");
+		     status_message("Can't parse <$url>", "die");
 		 }
 	     })->pack(-side => "left");
     }

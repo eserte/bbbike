@@ -1035,4 +1035,29 @@ EOF
 userdel	q4 90062,-33160 90271,-33398
 EOF
      },
+     { from  => 1098568800, # 2004-10-24 00:00
+       until => 1104534000, # 2005-01-01 00:00
+       text  => 'L 302; (Schöneicher Straße in Schöneiche); zwischen Stegweg bis Dorfaue: Gleisbau, Vollsperrung, 25.10.2004-31.12.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 31221,8312 30688,8432
+EOF
+     },
+     { from  => 1098655200, # 2004-10-25 00:00
+       until => 1103842800, # 2004-12-24 00:00
+       text  => 'L 30; (Schönower Chaussee); zwischen Weinbergstraße und Edelweißstraße: Straßen- u. Radwegebau, Vollsperrung, 26.10.2004-23.12.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 21637,30946 20794,30899
+userdel	q4 21637,30946 21955,30976
+EOF
+     },
+     { from  => 1098568800, # 2004-10-24 00:00
+       until => 1101855600, # 2004-12-01 00:00
+       text  => 'L 792; Trebbiner Str.-Glasower Damm: Straßenbau, Vollsperrung, 25.10.2004-30.11.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 11186,-5297 10994,-5361
+EOF
+     },
     );

@@ -32,9 +32,6 @@ sub new {
 
        Fs_base   => "satmap",
        Cache_dir => "$Karte::cache_root/satmap",
-       # XXX URL checken, evtl. Satmap1999 erstellen
-       Root_URL  => "http://www.kulturbox.de/stadtware/cities/b/pq/r195/1500",
-       Users    => ['Kulturbox'],
 
        X0 => -12907.0725073228,
        X1 => 20.0037569198591,
