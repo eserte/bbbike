@@ -101,8 +101,8 @@ sub new_from_best {
 sub get_cachefile {
     my $self = shift;
     require File::Basename;
-    my(@src) = $self->sourcefiles;
-    my $cachefile = join("_", map { defined $_ ? File::Basename::basename($_) : "undef" } @src);
+    my(@src) = $self->dependent_files;
+    my $cachefile = join("_", map { File::Basename::basename($_) } @src);
     $cachefile;
 }
 
@@ -143,6 +143,11 @@ sub sourcefiles {
     } else {
 	$self->{Strassen}->file;
     }
+}
+
+sub dependent_files {
+    my $self = shift;
+    $self->{Strassen}->dependent_files;
 }
 
 if (!defined &make_net) {
