@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.24 2003/06/20 18:05:37 eserte Exp $
+# $Id: GpsmanData.pm,v 1.24 2003/06/20 18:05:37 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -42,11 +42,15 @@ BEGIN {
     }
 }
 
-use vars qw($VERSION);
+use vars qw($VERSION @EXPORT_OK);
 $VERSION = sprintf("%d.%03d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_WAYPOINT => 0;
 use constant TYPE_TRACK    => 1;
+use constant TYPE_ROUTE    => 2;
+
+use base qw(Exporter);
+@EXPORT_OK = qw(TYPE_WAYPOINT TYPE_TRACK TYPE_ROUTE);
 
 use GPS::Util; # for eliminate_umlauts
 
@@ -341,6 +345,16 @@ sub parse_track {
     $wpt;
 }
 
+sub parse_route {
+    my @f = split /\t/;
+    my $wpt = GPS::Gpsman::Waypoint->new;
+    $wpt->Ident($f[0]);
+    $wpt->Comment($f[1]);
+    $wpt->Latitude($f[2]);
+    $wpt->Longitude($f[3]); # no altitude here
+    $wpt;
+}
+
 sub parse {
     my($self, $buf) = @_;
     my $type;
@@ -350,6 +364,7 @@ sub parse {
     my %parse =
 	(TYPE_WAYPOINT() => \&parse_waypoint,
 	 TYPE_TRACK()    => \&parse_track,
+	 TYPE_ROUTE()    => \&parse_route,
 	);
 
     my @data;
@@ -376,6 +391,12 @@ sub parse {
 	    $self->Name($l[1]);
 	    $self->Type(TYPE_TRACK);
 	    $type = TYPE_TRACK;
+	} elsif (/^!(R:.*)/) {
+	    my @l = split /\t/, $1;
+	    $self->Name($l[1]);
+	    # XXX safe more attribs
+	    $self->Type(TYPE_ROUTE);
+	    $type = TYPE_ROUTE;
 	} elsif (/^!/) {
 	    # ignore
 	} else {
@@ -389,6 +410,8 @@ sub parse {
 	$self->Waypoints(\@data);
     } elsif ($type == TYPE_TRACK) {
 	$self->Track(\@data);
+    } elsif ($type == TYPE_ROUTE) {
+	$self->Track(\@data); # XXX or Route???
     }
 }
 
@@ -506,7 +529,7 @@ sub merge {
 	if ($self->PositionFormat ne $another->PositionFormat);
     die "DatumFormats do not match"
 	if ($self->DatumFormat ne $another->DatumFormat);
-    if ($another->Type == TYPE_WAYPOINT || $another->Type == TYPE_TRACK) {
+    if ($another->Type == TYPE_WAYPOINT || $another->Type == TYPE_TRACK || $another->Type == TYPE_ROUTE) {
 	my $arrref = ($self->Type == TYPE_WAYPOINT ? $self->{Waypoints} : $self->{Track} );
 	foreach my $wpt ($self->Type == TYPE_WAYPOINT
 			 ? @{ $another->Waypoints }
@@ -564,6 +587,20 @@ sub as_string {
 		       (defined $wpt->Altitude ? $wpt->Altitude : ""))
 		. "\n";
 	}
+    } elsif ($self->Type == TYPE_ROUTE) {
+	$s .= "!R:";
+	if (defined $self->Name) {
+	    $s .= "\t" . $self->Name;
+	}
+	$s .= "\n";
+	foreach my $wpt (@{ $self->Track }) {
+	    $s .= join("\t",
+		       $wpt->Ident,
+		       (defined $wpt->Comment ? $wpt->Comment : ""),
+		       $wpt->Latitude, $wpt->Longitude,
+		      )
+		. "\n";
+	}
     } else {
 	die "NYI!";
     }
@@ -575,7 +612,7 @@ sub Points {
     my $self = shift;
     if ($self->Type eq TYPE_WAYPOINT) {
 	$self->Waypoints;
-    } elsif ($self->Type eq TYPE_TRACK) {
+    } elsif ($self->Type eq TYPE_TRACK || $self->Type eq TYPE_ROUTE) {
 	$self->Track;
     } else {
 	die;

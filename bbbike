@@ -3057,6 +3057,22 @@ sub do_iconframe {
 			      save_user_dels($file);
 			  }
 		      });
+	if ($advanced) {
+	    $bdm->command
+		(-label => M"Speichern für temp_blockings",
+		 -command => sub {
+		     my $file = $top->getSaveFile
+			 (-initialdir => "$FindBin::RealBin/misc/temp_blockings",
+			  -defaultextension => ".bbd",
+			  -filetypes => [[M"bbd-Dateien" => '.bbd'],
+					 [M"Alle Dateien" => '*']],
+			 );
+		     if (defined $file) {
+			 save_user_dels($file);
+		     }
+		 }
+		);
+	}
 	$bdm->command(-label => M"Alle löschen",
 		      -command => sub { delete_user_dels() });
 	if ($advanced) {
@@ -3424,8 +3440,8 @@ sub do_iconframe {
 		 -command => sub {
 		     my $file = $top->getSaveFile
 			 (-defaultextension => '.fig',
-			  -filetypes => [['FIG-Dateien' => '.fig'],
-					 ['Alle Dateien' => '*']],
+			  -filetypes => [[M"FIG-Dateien" => '.fig'],
+					 [M"Alle Dateien" => '*']],
 			 );
 		     return unless defined $file;
 		     require Tk::CanvasFig;
@@ -6126,7 +6142,12 @@ sub exit_app_noninteractive {
 			     );
 	$speed_power_reference_string = $active_speed_power{Type} . ":" . $speed_or_power->[$active_speed_power{Index}];
 	# save options
-	$opt->save_options;
+	eval {
+	    $opt->save_options;
+	};
+	if ($@) {
+	    status_message($@, "warn");
+	}
     }
 
     if (defined &BBBikeServer::server_cleanup) {
@@ -7332,9 +7353,9 @@ sub load_save_route {
 	     -initialdir => $oldpath,
 	     ($save ?
 	      (-defaultextension => ".$ext") :
-	      (-filetypes => [['Route-Dateien', '.' . $bbbike_route_ext],
-			      ['GPS-Tracks', ['.tracks','.trk']],
-			      ['Alle Dateien',  '*']]),
+	      (-filetypes => [[M"Route-Dateien", '.' . $bbbike_route_ext],
+			      [M"GPS-Tracks", ['.tracks','.trk']],
+			      [M"Alle Dateien",  '*']]),
 	     ));
 	return if !defined $file;
 	$oldpath = dirname $file;
@@ -13849,8 +13870,8 @@ sub plugin_menu {
 		   -command => sub {
 		       my($file) = $top->getOpenFile
 			   (-title => M("Plugin laden"),
-			    -filetypes => [['Perl-Module' => '.pm'],
-					   ['Alle Dateien' => '*']],
+			    -filetypes => [[M"Perl-Module" => '.pm'],
+					   [M"Alle Dateien" => '*']],
 			   );
 		       if (defined $file) {
 			   load_plugin($file);

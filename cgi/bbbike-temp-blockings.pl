@@ -64,4 +64,9 @@ require Time::Local;
        file  => "loveparade.bbd",
        text  => "Love parade",
      },
+     { from  => Time::Local::timelocal(reverse(2003-1900,7-1,3,6,0,0)),
+       until => Time::Local::timelocal(reverse(2003-1900,12-1,7,20,00,00)),
+       file  => "kranarbeiten.bbd",
+       text  => "Charlottenstraße zwischen Kochstraße und Besselstraße Kranarbeiten, Straße gesperrt. Dauer: 08.07.2003, 06.00 Uhr bis 12.07.2003, 20.00 Uhr",
+     },
     );

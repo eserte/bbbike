@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Ampelschaltung.pm,v 1.6 1999/06/28 23:53:30 eserte Exp $
+# $Id: Ampelschaltung.pm,v 1.6 1999/06/28 23:53:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -585,9 +585,15 @@ sub open {
     my $basefile = shift || "ampelschaltung-orig.txt";
     require MyFile;
     use FindBin; # XXX
-    my $file = MyFile::openlist(*RW, map { "$_/$basefile" }
-				@Strassen::datadirs, "$FindBin::RealBin/misc",
-				@INC);
+    my $file;
+    if (-e $basefile) {
+	$file = $basefile;
+	open(RW, $file) or return 0;
+    } else {
+	$file = MyFile::openlist(*RW, map { "$_/$basefile" }
+				 @Strassen::datadirs, "$FindBin::RealBin/misc",
+				 @INC);
+    }
     if ($file) {
 	$self->{File}             = $file;
 	@{ $self->{Data} }        = (); # Ampelschaltung2::Entry-Objekte
