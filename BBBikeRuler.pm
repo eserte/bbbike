@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.12 2003/08/24 23:33:23 eserte Exp $
+# $Id: BBBikeRuler.pm,v 1.13 2004/07/20 20:51:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -206,8 +206,8 @@ sub motion {
 	    $abstime2 = _hms2sec($abstime2);
 	    $gpsman_track_tag =~ /dist=([\d\.]+).*?time=([\d:]+).*abstime=([\d:]+)/;
 	    my($dist1,$time1,$abstime1) = ($1, $2, $3);
+	    $time1 = _min2sec($time1);
 	    if ($time2 != $time1 && $abstime2 != $abstime1) {
-		$time1 = _min2sec($time1);
 		$abstime1 = _hms2sec($abstime1);
 		if ($abstime2 < $abstime1) { $abstime2 += 86400 }
 		$message  = "Zeit: " . _fmt_time($time2-$time1) . "; ";

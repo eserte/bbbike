@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: sortbycat,v 2.8 2002/12/30 02:16:18 eserte Exp $
+# $Id: sortbycat,v 2.9 2004/07/20 20:45:54 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -45,12 +45,17 @@ for (0 .. 10) {
 
 my $reverse = 0;
 my $catref = \%catval;
+my $ignoreref;
 
 if (!GetOptions("reverse" => \$reverse,
 		"sort=s" => sub {
 		    $catref = [split /,/, $_[1]]
-		})) {
-    die "usage: $0 [-sort cat1,cat2,cat3...] [-reverse] [datafile]";
+		},
+		"ignore=s" => sub {
+		    $ignoreref = [split /,/, $_[1]]
+		},
+	       )) {
+    die "usage: $0 [-sort cat1,cat2,cat3...] [-ignore cat,...] [-reverse] [datafile]";
 }
 
 my $datafile = shift || '';
@@ -70,7 +75,11 @@ if ($reverse) {
 }
 
 my $s = new Strassen $datafile;
-$s->sort_by_cat($catref);
+my %args;
+if ($ignoreref) {
+    $args{-ignore} = $ignoreref;
+}
+$s->sort_by_cat($catref, %args);
 $s->write("-");
 
 __END__

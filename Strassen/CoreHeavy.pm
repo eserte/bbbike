@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.15 2004/06/15 00:05:50 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.16 2004/07/20 20:51:18 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -621,7 +621,7 @@ sub bbox {
 # $catref is either a hash reference of category => level mapping or a
 # an array reference of categories. Lower categories should be first.
 sub sort_by_cat {
-    my($self, $catref) = @_;
+    my($self, $catref, %args) = @_;
     my %catval;
     if (ref $catref eq 'HASH') {
 	%catval = %$catref;
@@ -629,12 +629,23 @@ sub sort_by_cat {
 	my $i = 0;
 	$catval{$_} = $i++ foreach (@$catref);
     }
+    my %ignore;
+    %ignore = map { ($_,1) } @{ $args{-ignore} } if $args{-ignore};
     @{ $self->{Data} } =
 	map  { $_->[1] }
-	sort { $a->[0] <=> $b->[0] }
-        map  { my $l = parse($_);
-	       [exists $catval{$l->[CAT]} ?
-		$catval{$l->[CAT]} : 9999, $_] } @{ $self->{Data} };
+	sort {
+	    if (exists $ignore{$a->[2][CAT]} || exists $ignore{$b->[2][CAT]}) {
+		0;
+	    } else {
+		$a->[0] <=> $b->[0];
+	    }
+	}
+	map  { my $l = parse($_);
+	       [exists $catval{$l->[CAT]} ? $catval{$l->[CAT]} : 9999,
+		$_,
+		$l
+	       ]
+	} @{ $self->{Data} };
 }
 
 sub is_current {

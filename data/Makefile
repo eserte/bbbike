@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.21 2004/07/06 21:18:12 eserte Exp eserte $
+# $Id: Makefile,v 2.22 2004/07/20 20:46:32 eserte Exp $
 #
 
 BBBIKEDIR=		..
@@ -91,21 +91,23 @@ plaetze: plaetze-orig
 	$(CONVERT2HAFAS) plaetze-orig > plaetze
 	-@$(READONLY) $@
 
-# XXX sortbycat sollte die Inseln von der Sortierung ausschließen ---
-# sie sollten weiterhin an den zugehörigen Gewässsern "kleben"
+# sortbycat does not change the sort order of islands
 wasserstrassen: wasserstrassen-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) wasserstrassen-orig | $(SORTBYCAT) > wasserstrassen
+	$(CONVERT2HAFAS) wasserstrassen-orig | $(SORTBYCAT) -ignore F:I > $@ \
+	    || (rm -f $@; false)
 	-@$(READONLY) $@
 
 wasserumland: wasserumland-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) wasserumland-orig | $(SORTBYCAT) > wasserumland
+	$(CONVERT2HAFAS) wasserumland-orig | $(SORTBYCAT) -ignore F:I > $@ \
+	    || (rm -f $@; false)
 	-@$(READONLY) $@
 
 wasserumland2: wasserumland2-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) wasserumland2-orig | $(SORTBYCAT) > wasserumland2
+	$(CONVERT2HAFAS) wasserumland2-orig | $(SORTBYCAT) -ignore F:I > $@ \
+	    || (rm -f $@; false)
 	-@$(READONLY) $@
 
 flaechen: flaechen-orig
