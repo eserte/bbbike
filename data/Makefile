@@ -59,6 +59,7 @@ SOURCE_TARGETS+=	${COMMENTS_PARTIAL} fragezeichen exits
 # These do not have a -orig file of their own
 COMPUTED_TARGETS=	sbahnhof_bg ubahnhof_bg rbahnhof berlin
 COMPUTED_TARGETS+=	radwege_exact mount
+COMPUTED_TARGETS+=	temp_blockings/bbbike-temp-blockings-optimized.pl
 
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COMPUTED_TARGETS} ${COOKED_TARGETS}
@@ -89,7 +90,8 @@ slow-checks:	inaccessible_strassen inaccessible_landstrassen \
 
 persistent-tmp:	${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
 		${PERSISTENTTMPDIR}/strassen_in_planung.bbd \
-		${PERSISTENTTMPDIR}/upload-fragezeichen.wpt
+		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
+		${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt
 
 # even slower (about four minutes)
 really-slow-checks:	check-crossings check-nearest
@@ -384,7 +386,7 @@ vorfahrt:	vorfahrt-orig
 .for f in ${COMMENTS_PARTIAL}
 ${f}: ${f}-orig ${ALL_STREETS}
 	-@$(WRITEABLE) $@
-	cat ${f} | $(CONVERT2HAFAS) -basefile ${f}-orig - | \
+	cat ${f}-orig | $(CONVERT2HAFAS) -basefile ${f}-orig - | \
 	    $(RESOLVE_STARS) ${ALL_STREETS} - > $@~ && \
 	mv $@~ $@
 	-@$(READONLY) $@
@@ -461,12 +463,14 @@ ${PERSISTENTTMPDIR}/strassen_in_planung.bbd:	fragezeichen-orig
 
 PREFIXMAP=sperr=SP,kopfstein=KP,qualit‰t=QU,m‰ﬂig.geeignet=QU,radweg=RW,benutzungspflich=RW,bau=BA,vorfahrt=VF,name=NA,bezeichn=NA,vorfahrt=VF,ampel=AM
 
-${PERSISTENTTMPDIR}/upload-fragezeichen.wpt:	fragezeichen Makefile
+${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt:	fragezeichen Makefile
 	${MISCSRCDIR}/bbd2gpsman.pl -filter nearby=200 \
 	    -prefix XXX -match name \
 	    -prefixmap ${PREFIXMAP} \
 	    -symbol danger < $> > $@
 	@echo gpsman with file $@
+
+.PHONY: /tmp/upload-restricted-fragezeichen.wpt
 
 /tmp/upload-restricted-fragezeichen.wpt:	fragezeichen
 	@if [ "${RESTRICT_BBOX}" = "" ]; then \
@@ -475,11 +479,27 @@ ${PERSISTENTTMPDIR}/upload-fragezeichen.wpt:	fragezeichen Makefile
 	else \
 	    true; \
 	fi
-	${MISCSRCDIR}/restrict_bbd_data.pl -bbox ${RESTRICT_BBOX} -strdata $> -o - | ${MISCSRCDIR}/bbd2gpsman.pl -filter nearby=200 \
+	${MISCSRCDIR}/restrict_bbd_data.pl \
+	    ${RESTRICT_BBOX:C/(^| )/ -bbox /g} \
+	    -strdata $> -o - | \
+	${MISCSRCDIR}/bbd2gpsman.pl -filter nearby=200 \
 	    -prefix XXX -match name \
 	    -prefixmap ${PREFIXMAP} \
 	    -symbol danger > $@
 	@echo gpsman with file $@
+
+${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt:	fragezeichen Makefile
+	${MAKE} /tmp/upload-restricted-fragezeichen.wpt \
+	    RESTRICT_BBOX="-8250,2025,-15000,-2675 16500,15375,4625,8125"
+	cp -pf /tmp/upload-restricted-fragezeichen.wpt $@
+
+# XXX This should be updated at least check once a day
+temp_blockings/bbbike-temp-blockings-optimized.pl:	temp_blockings/bbbike-temp-blockings.pl
+	-@$(WRITEABLE) $@
+	$(MISCSRCDIR)/check_bbbike_temp_blockings \
+	    -action output_future \
+	    -action dump_future_as_perl > $@
+	-@$(READONLY) $@
 
 # It is legal for fragezeichen points to not be on strassen, so this is
 # only informative...

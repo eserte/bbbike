@@ -14785,6 +14785,9 @@ sub user_edit_street {
 			   : warn "Unhandled net type $net_type"
 			  )
 		       );
+    if ($net_type eq 's' && $use_faehre) {
+	push @click_items, "e";
+    }
     my($item, @tags) = find_below($c, @click_items);
     if (defined $item) {
 	my($pos, @points) = nearest_line_points_mouse($c, @tags);

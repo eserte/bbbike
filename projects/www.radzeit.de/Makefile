@@ -187,13 +187,7 @@ test-makefile:
 # Sub targets
 # Reihenfolge sollte hoffentlich richtig sein
 
-TEMP_BLOCKINGS_OPTIMZED=$(BBBIKE_ROOT_DIR)/${DATA_DIR}/temp_blockings/bbbike-temp-blockings-optimized.pl
-
 prepare-bbbike-data:
-	$(BBBIKE_ROOT_DIR)/miscsrc/check_bbbike_temp_blockings \
-	    -action output_future \
-	    -action dump_future_as_perl > $(TEMP_BLOCKINGS_OPTIMZED)
-	chmod 644 $(TEMP_BLOCKINGS_OPTIMZED)
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} all
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} slow-checks
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.44 2004/12/05 21:59:00 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.44 2004/12/05 21:59:00 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the

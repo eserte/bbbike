@@ -1293,4 +1293,12 @@ EOF
 userdel	2 10170,12261 10083,12442
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Aufgrund eines Motorschaden ist der Fährverkehr zwischen Ketzin und Schmergow bis auf weiteres eingestellt ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -26784,5756 -26840,5684
+EOF
+     },
     );

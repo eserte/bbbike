@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: restrict_bbd_data.pl,v 2.2 2003/06/29 22:23:02 eserte Exp $
+# $Id: restrict_bbd_data.pl,v 2.2 2003/06/29 22:23:02 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -35,6 +35,9 @@ Stdin/out operation with:
 
     restrict_bbd_data.pl -bbox ... -strdata=- -o=- < ... > ...
 
+It is possible to specify multiple -bbox options. In this case the
+points should be at least in one of the bounding boxes.
+
 =cut
 
 use strict;
@@ -50,7 +53,7 @@ eval 'use BBBikeXS';
 
 @Strassen::datadirs = ();
 
-my $bbox;
+my @bbox_s;
 my @in;
 my @notin;
 my $scope = "city";
@@ -64,7 +67,7 @@ sub usage {
     Pod::Usage::pod2usage(1);
 }
 
-if (!GetOptions("bbox=s" => \$bbox,
+if (!GetOptions('bbox=s@' => \@bbox_s,
 		"scope=s" => \$scope,
 		"datadir=s@" => \@Strassen::datadirs,
 		"str|strdata=s" => \$strdata,
@@ -79,14 +82,17 @@ if (!GetOptions("bbox=s" => \$bbox,
     usage();
 }
 
-usage() if (!$bbox && !@in && !@notin);
-my @bbox;
-if ($bbox) {
-    @bbox = split /,/, $bbox;
-    usage("Wrong bounding box") if @bbox != 4;
-    #warn "Bounding box is @bbox\n";
-    if ($bbox[0] > $bbox[2]) { @bbox[0,2] = @bbox[2,0] }
-    if ($bbox[1] > $bbox[3]) { @bbox[1,3] = @bbox[3,1] }
+usage() if (!@bbox_s && !@in && !@notin);
+my @bboxes;
+if (@bbox_s) {
+    for my $bbox_s (@bbox_s) {
+	my @bbox = split /,/, $bbox_s;
+	usage("Wrong bounding box") if @bbox != 4;
+	#warn "Bounding box is @bbox\n";
+	if ($bbox[0] > $bbox[2]) { @bbox[0,2] = @bbox[2,0] }
+	if ($bbox[1] > $bbox[3]) { @bbox[1,3] = @bbox[3,1] }
+	push @bboxes, \@bbox;
+    }
 }
 
 my($in_net, $notin_net);
@@ -158,8 +164,15 @@ while(1) {
 	# enters again?
 	for my $c (@{ $r->[Strassen::COORDS] }) {
 	    my($x,$y) = split /,/, $c;
-	    if ($x >= $bbox[0] && $x <= $bbox[2] &&
-		$y >= $bbox[1] && $y <= $bbox[3]) {
+	    my $in = 0;
+	    for my $bbox (@bboxes) {
+		if ($x >= $bbox->[0] && $x <= $bbox->[2] &&
+		    $y >= $bbox->[1] && $y <= $bbox->[3]) {
+		    $in = 1;
+		    last;
+		}
+	    }
+	    if ($in) {
 		push @new_c, $c;
 	    } else {
 		if (@new_c) {

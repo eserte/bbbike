@@ -22,14 +22,7 @@ userdel	q4 8370,25539 8182,25608
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1103929200,
-         'text' => 'K 6907; (B 2-AS Ferch); OD Neuseddin Straßenbauarbeiten Vollsperrung 04.10.2004-24.12.2004 ',
-         'from' => 1096754400,
-         'data' => 'userdel	q4 -18080,-12637 -17374,-13449
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -87,15 +80,7 @@ userdel	q4 8370,25539 8182,25608
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1103842800,
-         'text' => 'L 30; (Schönower Chaussee); OL Bernau,zw. Weinbergstraße und Edelweißstraße Straßen- u. Radwegebau Vollsperrung 26.10.2004-23.12.2004 ',
-         'from' => 1098655200,
-         'data' => 'userdel	q4 21637,30946 20794,30899
-userdel	q4 21637,30946 21955,30976
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -155,14 +140,7 @@ userdel	q4 21637,30946 21955,30976
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1103929200,
-         'text' => 'Düsseldorfer Str. in beiden Richtungen zwischen Brandenburgische Str. und Konstanzer Str. Baustelle, Straße vollständig gesperrt (bis 24.12.2004)',
-         'from' => 1102538190,
-         'data' => 'userdel	2 4151,10026 3906,10035
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1104533999,
          'text' => 'Johannisthaler Chaussee (Neukölln) in Höhe der Ernst-Keller-Brücke Baustelle, Straße vollständig gesperrt wegen Brückenneubau (bis Ende 2004)',
@@ -180,20 +158,13 @@ userdel	q4 21637,30946 21955,30976
 ',
          'type' => 'gesperrt'
        },
+       undef,
+       undef,
        {
-         'until' => 1104015600,
-         'text' => 'Weihnachtsmarkt am Opernpalais, bis 25.12.2004',
-         'from' => 1102980646,
-         'data' => 'userdel	2 9890,12161 9853,12402
-userdel	2 9803,12243 9782,12393
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1104015600,
-         'text' => 'Weihnachtsmarkt am Schloßplatz, bis 25.12.2004',
-         'from' => 1102980716,
-         'data' => 'userdel	2 10170,12261 10083,12442
+         'until' => undef,
+         'text' => 'Aufgrund eines Motorschaden ist der Fährverkehr zwischen Ketzin und Schmergow bis auf weiteres eingestellt ',
+         'from' => undef,
+         'data' => 'userdel	2 -26784,5756 -26840,5684
 ',
          'type' => 'gesperrt'
        }
