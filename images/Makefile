@@ -37,27 +37,27 @@ bbbike_splash_tkbabybike.xpm: srtbike.xpm
 .SUFFIXES: .gif .xpm .png .wbmp
 
 # .xpm.gif:
-# 	convert $> $@
+# 	convert $^ $@
 # 	chmod ugo+r $@
 
 # .xpm.png:
-# 	convert $> $@
+# 	convert $^ $@
 # 	chmod ugo+r $@
 
 .png.xpm:
-	convert $> $@
+	convert $^ $@
 	chmod ugo+r $@
 
 .png.gif:
-	convert $> $@
+	convert $^ $@
 	chmod ugo+r $@
 
 # .xpm.wbmp:
-# 	convert $> $@
+# 	convert $^ $@
 # 	chmod ugo+r $@
 
 .png.wbmp:
-	convert $> $@
+	convert $^ $@
 	chmod ugo+r $@
 
 png-to-gif:	\
@@ -94,6 +94,7 @@ png-to-gif:	\
 		flag2_bl_centered.gif \
 		flag_via_centered.gif \
 		flag_ziel_centered.gif \
+		usercross.gif \
 
 png-to-xpm:	\
 		ampel.xpm \
@@ -122,6 +123,7 @@ png-to-xpm:	\
 		flag2_bl_centered.xpm \
 		flag_via_centered.xpm \
 		flag_ziel_centered.xpm \
+		usercross.xpm \
 
 png-to-wbmp:	\
 		flag2_bl.wbmp \
