@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.8 2003/05/09 22:50:46 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.2 2003/05/20 21:16:42 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -605,6 +605,7 @@ sub sort_by_cat {
 
 sub is_current {
     my($self) = @_;
+    return 1 if !defined $self->file;
     return 0 if !defined $self->{Modtime};
     for my $f ($self->file) {
 	my $now_modtime = (stat($f))[STAT_MODTIME];
