@@ -68,7 +68,7 @@ use Strassen::Dataset;
 use BBBikeCalc;
 use BBBikeVar;
 use BBBikeUtil qw(is_in_path min max);
-use CGI qw(-no_xhtml);
+use CGI;
 use CGI::Carp; # Nur zum Debuggen verwenden --- manche Web-Server machen bei den kleinsten Kleinigkeiten Probleme damit: qw(fatalsToBrowser);
 use BrowserInfo 1.31;
 use strict;
