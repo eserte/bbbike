@@ -29,14 +29,32 @@ LOCAL_HTML_URL?=	${LOCAL_URL}/BBBike
 DATA_DIR=		data
 TEMP_BLOCKINGS_DIR=	data/temp_blockings
 
-DEPLOY_TARGETS=		prepare-bbbike-data \
-			prepare-bbbike-dist \
-			prepare-mapserver-dist \
-			prepare-touren-dist \
-			rsync \
-			test-on-remote
-# XXX test-on-remote-and-send-mail
-DEPLOY_LOCAL_TARGETS=	${DEPLOY_TARGETS:S/prepare-mapserver-dist/prepare-mapserver-local-dist/:S/rsync//:S/test$/test-local/:S/test-on-remote/test-local/}
+# XXX maybe use test-on-remote-and-send-mail (after tests)
+DEPLOY_TARGETS=			prepare-bbbike-data \
+				prepare-mapserver-data \
+				prepare-bbbike-dist \
+				prepare-mapserver-dist \
+				prepare-touren-dist \
+				rsync \
+				test-on-remote
+
+# only bbbike data, no program, no mapserver
+DEPLOY_DATA_TARGETS=		prepare-bbbike-data \
+				prepare-bbbike-dist \
+				rsync-bbbike-data \
+				test-on-remote
+
+# local deployment
+DEPLOY_LOCAL_TARGETS=		prepare-bbbike-data \
+				prepare-mapserver-data \
+				prepare-bbbike-dist \
+				prepare-mapserver-local-dist \
+				prepare-touren-dist \
+				test-local
+
+DEPLOY_LOCAL_DATA_TARGETS=	prepare-bbbike-data \
+				prepare-bbbike-dist \
+				test-local
 
 RSYNC_PROG?=	rsync
 RSYNC_ARGS=	-e ssh -Pvz -r -t --links --copy-unsafe-links --exclude-from .rsync.exclude
@@ -75,9 +93,20 @@ TARGET=radzeit.herceg.de
 .endif
 
 .ifndef TARGET
-.if make(deploy) || make(tkrsync) || make(backup) || make(test) || make(prepare-bbbike-dist-data) || make(rsync) || make(rsync-bbbike-data) || make(clean-cache-files-on-remote)
+.if   make(deploy)                   || \
+      make(deploy-data)		     || \
+      make(tkrsync)		     || \
+      make(backup) 		     || \
+      make(test)		     || \
+      make(prepare-bbbike-dist-data) || \
+      make(rsync)		     || \
+      make(rsync-bbbike-data)	     || \
+      make(clean-cache-files-on-remote)
 TARGET=radzeit
-.elif make(deploy-local) || make(backup-local) || make(test-local)
+.elif make(deploy-local)      || \
+      make(deploy-local-data) || \
+      make(backup-local)      || \
+      make(test-local)
 .if ${HOST} == "devpc01.iconmobile.de"
 TARGET=devpc01
 .else
@@ -131,9 +160,13 @@ clean-cache-files-on-remote:
 tkrsync:
 	tkrsync -showchanges -rsync="-zrt --cvs-exclude --exclude-from .rsync.exclude" ${RSYNC_SRCDEST}
 
-deploy:	${DEPLOY_TARGETS}
+deploy:			${DEPLOY_TARGETS}
 
-deploy-local: ${DEPLOY_LOCAL_TARGETS}
+deploy-local:		${DEPLOY_LOCAL_TARGETS}
+
+deploy-data:		${DEPLOY_DATA_TARGETS}
+
+deploy-local-data:	${DEPLOY_LOCAL_DATA_TARGETS}
 
 test-makefile:
 	${MAKE} -n deploy-local > /tmp/test-makefile.cmd
@@ -148,10 +181,9 @@ prepare-bbbike-data:
 	$(BBBIKE_ROOT_DIR)/miscsrc/check_bbbike_temp_blockings
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} all
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} slow-checks
+
+prepare-mapserver-data:
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} mapfiles
-#XXX .if "${DATA_DIR}" != "data" && "${DATA_DIR}" != "data_corrected"
-#XXX	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE}
-#XXX .endif
 
 prepare-bbbike-dist:	prepare-bbbike-dist-prog prepare-bbbike-dist-data
 

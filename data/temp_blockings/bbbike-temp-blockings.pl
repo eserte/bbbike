@@ -469,7 +469,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'handicap',
      },
      { from  => 1091055057, # 2004-07-29 00:50
-       until => 1095112740, # 2004-09-13 23:59
+       until => 1095112740, # 2004-09-13 23:59 XXX removed?
        file  => 'dietzgenstr.bbd',
        text  => 'Dietzgenstr. (Pankow) Richtung stadteinwärts zwischen Schillerstr. und Uhlandstr. Baustelle, Richtungsfahrbahn komplett gesperrt (bis 13.09.2004) ',
        type  => 'gesperrt',
@@ -661,7 +661,6 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 9925,11947 9907,12055
-userdel	2 10582,13104 10445,13091
 EOF
      },
      { from  => 1093924800, # 2004-08-31 06:00
@@ -700,8 +699,8 @@ userdel	2 12771,8439 12925,8494
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Leibnizstraße (Charlottenburg) zwischen Bismarckstr. und Otto-Suhr-Allee in Richtung Kantstr. Baustelle, Fahrtrichtung gesperrt ',
+       until => 1094407200, # 5.9.2004 20:00
+       text  => 'Leibnizstraße (Charlottenburg) zwischen Bismarckstr. und Otto-Suhr-Allee in Richtung Kantstr. Baustelle, Fahrtrichtung gesperrt bis 5.9.2004, 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1 4359,11979 4345,11710
@@ -713,6 +712,38 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -8879,-12309 -8457,-11261
+EOF
+     },
+     { from  => 1094176800, # 2004-09-03 04:00
+       until => 1094418000, # 2004-09-05 23:00
+       text  => 'Hermannstraßenfest zwischen Flughafenstraße und Thomasstraße, Straße gesperrt, Dauer: 04.09.2004 04:00 Uhr bis 05.09.2004 23:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 12180,7387 12122,7553
+userdel	2 11920,8252 11933,8198
+userdel	2 11920,8252 11892,8372
+userdel	2 12041,7788 12075,7696
+userdel	2 11979,8014 11960,8090
+userdel	2 11979,8014 12025,7852
+userdel	2 11933,8198 11960,8090
+userdel	2 12075,7696 12122,7553
+EOF
+     },
+     { from  => 1094187600, # 2004-09-03 07:00
+       until => 1094407200, # 2004-09-05 20:00
+       text  => 'Platz des 4. Juli zwischen Goerzallee und Osteweg gesperrt, Sportveranstaltung. Dauer: 04.09.2004 und 05.09.2004 jeweils von 07:00 Uhr bis 20:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 2632,1706 2843,1281
+EOF
+     },
+     { from  => undef, # 
+       until => 1094421599, # 2004-09-05 23:59
+       text  => 'Alt-Rudow in beiden Richtungen, zwischen Krokusstr. und Neudecker Weg Veranstaltung, Straße vollständig gesperrt (bis 05.09. 24 Uhr), Rudower Meilenfest ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 16596,1730 16838,1457
+userdel	2 16960,1282 16838,1457
 EOF
      },
     );

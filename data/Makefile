@@ -724,8 +724,8 @@ check-line-lengths:	.check_line_lengths
 	@touch $@
 
 count-streets:
-	@echo -n "Berlin:  "; cut -f1 -d"(" strassen | sort -u | wc -l
-	@echo -n "Potsdam: "; fgrep "(Potsdam)" landstrassen | cut -f1 -d"(" | sort -u | wc -l
+	@echo -n "Berlin:  "; grep -v "^(" strassen | cut -f1 -d"(" | sort -u | wc -l
+	@echo -n "Potsdam: "; fgrep "(Potsdam)" landstrassen | grep -v "^(" | cut -f1 -d"(" | sort -u | wc -l
 
 check-dates:	.check_dates
 

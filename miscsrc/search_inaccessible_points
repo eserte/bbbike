@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: search_inaccessible_points,v 1.7 2004/07/04 09:54:02 eserte Exp $
+# $Id: search_inaccessible_points,v 1.8 2004/09/04 14:36:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003,2004 Slaven Rezic. All rights reserved.
@@ -23,8 +23,6 @@ use lib ("$FindBin::RealBin/..",
 	);
 use Strassen;
 use Object::Iterate qw(iterate);
-eval 'use BBBikeXS';
-warn "Can't load BBBikeXS, expect slower operation. $@" if $@;
 use Getopt::Long;
 use strict;
 
@@ -32,6 +30,8 @@ my $s;
 my $blocked;
 my $refpoint;
 my $quiet;
+my $usecache;
+my $v;
 
 my @s_files;
 my @blocked_files;
@@ -44,14 +44,25 @@ if (!GetOptions("street=s@"  => sub { push @s_files, split /,/, $_[1] },
 		"blockedtype=s@" => \@blocked_type,
 		"refpoint=s" => \$refpoint,
 		"q" => \$quiet,
+		"cache" => \$usecache,
+		"v" => \$v,
 	       )) {
     die <<EOF;
 usage: $0 [-street file] [-blocked file]
-       [-blockedtype type] [-refpoint x,y] [-q]
+       [-blockedtype type] [-refpoint x,y] [-q] [-v] [-cache]
 -street and -blocked may be given multiple times or separated with commas
 -blockedtype may be given multiple times and should be one of
              @allowed_blocked_type
 EOF
+}
+
+if (!$usecache) {
+    eval 'use BBBikeXS';
+    warn "Can't load BBBikeXS, expect slower operation or specify -cache. $@" if $@;
+}
+
+if ($v) {
+    Strassen::set_verbose($v);
 }
 
 if (!@s_files) { push @s_files, "strassen" }
@@ -91,7 +102,7 @@ sub old_search {
     }
 
     my $net = StrassenNetz->new($s);
-    $net->make_net;
+    $net->make_net(UseCache => $usecache);
     $net->make_sperre($blocked, %blocked_type);
 
     # loop over all points
@@ -100,7 +111,7 @@ sub old_search {
     while(1) {
 	my $r = $s->next;
 	last if !@{$r->[Strassen::COORDS]};
-	printf STDERR "%3d%%\r", ($i++/@{$s->{Data}})*100;
+	printf STDERR "%3d%%\r", (($i++)/@{$s->{Data}})*100;
 	foreach my $c (@{$r->[Strassen::COORDS]}) {
 	    next if $c eq $refpoint;
 	    my(@r) = $net->search($c, $refpoint, AsObj => 1);
@@ -120,7 +131,7 @@ sub old_search {
 
 sub new_search {
     my $net = StrassenNetz->new($s);
-    $net->make_net;
+    $net->make_net(UseCache => $usecache);
     $net->make_sperre($blocked, %blocked_type);
     flood_search($net);
 }
@@ -174,14 +185,25 @@ sub flood_search {
 
     # Check against streets:
     my $s = $net->{Strassen};
+    my %inaccessible;
     iterate {
 	for my $c (@{ $_->[Strassen::COORDS] }) {
 	    if (!exists $CLOSED{$c}) {
-		warn "Inaccessible: $c in $_->[Strassen::NAME]\n" if !$quiet;
+		push @{ $inaccessible{$_->[Strassen::NAME]} }, $c;
 		print "$_->[Strassen::NAME]\tX $c\n";
 	    }
 	}
     } $s;
+
+    if (!$quiet) {
+	require Text::Wrap;
+	print STDERR "Inaccessible:\n";
+	for my $name (sort keys %inaccessible) {
+	    print STDERR Text::Wrap::wrap("  $name ", " "x(3+length($name)),
+					  "(" . join(" ", @{ $inaccessible{$name} }) . ")\n"
+					 );
+	}
+    }
 }
 
 __END__

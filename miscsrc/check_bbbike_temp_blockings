@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_bbbike_temp_blockings,v 1.15 2004/08/26 22:15:14 eserte Exp $
+# $Id: check_bbbike_temp_blockings,v 1.16 2004/09/04 12:52:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003, 2004 Slaven Rezic. All rights reserved.
@@ -55,9 +55,12 @@ sub process {
     if (!GetOptions("outputfiles" => \$do_output_files,
 		    "f=s" => \$file,
 		    "checknet!" => \$check_net,
-		    "v" => \$v,
+		    "v+" => \$v,
 		   )) {
 	die "usage";
+    }
+    if (defined $v && $v >= 2) {
+	Strassen::set_verbose($v - 1);
     }
 }
 
@@ -126,12 +129,12 @@ sub run_checks {
 	    # Checks for now restricted to Berlin
 	    warn "  Check points...\n" if $v;
 	    require "$FindBin::RealBin/check_points";
-	    my $ret = BBBike::check_points::doit("-q", $full_path, "strassen");
+	    my $ret = BBBike::check_points::doit("-q", "-memcache", $full_path, "strassen");
 	    if ($ret != 0) {
 		# Otherwise do a full region check
 		warn "  Check points (wide region)...\n" if $v;
 		$ret = BBBike::check_points::doit
-		    ($full_path, "strassen", "landstrassen", "landstrassen2");
+		    ("-memcache", $full_path, "strassen", "landstrassen", "landstrassen2");
 		if ($ret != 0) {
 		    die "File $full_path failed check_points test";
 		}
@@ -194,7 +197,16 @@ sub format_date {
 
 sub _get_name {
     my $o = shift;
-    $o->{file} || "Data for " . ($o->{from}||"...") ." - " . ($o->{until}||"...");
+    if ($o->{file}) {
+	$o->{file};
+    } elsif ($o->{text}) {
+	my $name = substr($o->{text}, 0, 25);
+	$name =~ s/\S+$//;
+	$name =~ s/[\.,;\s]+$//;
+	$name;
+    } else {
+	"Data for " . ($o->{from}||"...") ." - " . ($o->{until}||"...");
+    }
 }
 
 return 1 if caller;
