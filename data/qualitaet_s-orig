@@ -610,7 +610,7 @@ Am Walde: Richtung Westen schlechtes Kopfsteinpflaster	Q3; 17775,7874 17678,7850
 Oskarstr.: Richtung Süden schlechtes Kopfsteinpflaster	Q3; 17762,7931 17775,7874
 Prager Platz: gutes Kopfsteinpflaster	Q1 5661,9630 5657,9600 5630,9592 5575,9623
 Normannenstr.: Kopfsteinpflaster	Q2 16156,12286 16270,12261
-Rüdigerstr. (Lichtenberg): Kopfsteinpflaster	Q2 17487,12244 16810,12342
+Rüdigerstr. (Lichtenberg): Kopfsteinpflaster	Q2 17487,12244 17010,12313 16810,12342
 Barbarossastr.: Kopfsteinpflaster	Q2 7128,9512 7025,9517
 Prühßstr.: Kopfsteinpflaster	Q2 8766,4038 8967,4082 9338,4129 9455,4159 9848,4254
 #: unverified_by ADFC-Karte
@@ -841,7 +841,7 @@ Südstern: gutes Kopfsteinpflaster	Q1 10747,9326 10629,9360
 Südstern: Kopfsteinpflaster	Q2 10629,9360 10567,9379
 Samariterstr.: Kopfsteinpflaster	Q2 14488,12189 14538,12371 14595,12557 14632,12681 14661,12798
 #: add_fragezeichen:
-Fanningerstr.: Kopfsteinpflaster	Q2 16261,12224 16445,12193 16782,12154 17139,12100
+Fanningerstr.: Kopfsteinpflaster	Q2 16261,12224 16445,12193 16782,12154 16983,12124 17139,12100
 Marienhöher Weg: Kopfsteinpflaster	Q2 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250
 Voigtstr.: Kopfsteinpflaster	Q2 14702,12157 14748,12314 14798,12502 14814,12626 14842,12826
 Friedrichshaller Str.: Kopfsteinpflaster	Q2 3083,7587 2784,7711
@@ -1121,7 +1121,11 @@ Jägerndorfer Zeile: Kopfsteinpflaster	Q2 2684,3520 2640,3391 2207,2917
 #: by: ^^^
 #: by: Tabea Pohl:
 Thurneysserstr.: Kopfsteinpflaster	Q2 8582,16052 8402,16198
-#: by: Normen:
+#: by: Normen: vvv
 Dievenowstr.: Asphalt	Q0 3206,7109 3189,7249 3225,7390
+Borkumer Str.: Asphalt	Q0 3056,7095 3206,7109 3302,7092 3585,7028
+#: by: ^^^
 #: by: Stefan Micke:
 Görschstr.: mäßiger Asphalt	Q1 10112,17287 10085,17370 10056,17781 9870,17971
+#: by: arndt westphal:
+Guntherstr.: Kopfsteinpflaster	Q2 17010,12313 16983,12124 16970,11976
