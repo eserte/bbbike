@@ -685,7 +685,7 @@ EOF
        text  => 'Turmstraße zwischen Kreuzung Beusselstraße und Kreuzung Stromstraße sowie Thusneldaallee: Straße gesperrt (Turmstraßenfest), Dauer: 03.09.2004 02:00 Uhr bis 06.09.2004 02:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 5256,13420 5388,13398 5585,13368 5723,13346 5844,13334 5964,13324 6113,13313 6247,13304
+userdel	2 5256,13420 5388,13398 5565,13370 5723,13346 5844,13334 5964,13324 6113,13313 6247,13304
 userdel	2 5975,13256 5964,13324
 EOF
      },
