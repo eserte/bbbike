@@ -16964,11 +16964,13 @@ sub optedit {
 		       save => "Speichern",
 		       defaults => "Voreinstellungen",
 		       ok => "Ok",
+		       oksave => "Ok",
 		       apply => "Anwenden",
 		       cancel => "Abbrechen",
 		       helpfor => "Hilfe für",
 		      }
 	  ) : ()),
+	 -buttons => ['oksave', 'defaults', 'cancel'],
 	);
     $top->{GetoptEditor} = $opt_edit;
 }

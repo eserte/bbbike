@@ -419,7 +419,7 @@ sub process_options {
 sub _fix_layout {
     my($self, $frame, $widget, %args) = @_;
     my($w, $real_w);
-    if ($Tk::VERSION < 999) { # XXX
+    if ($Tk::VERSION < 804) {
 	my $f = $frame->Frame;
 	$f->Label->pack(-side => "left"); # dummy
 	$real_w = $f->$widget(%args)->pack(-side => "left", -padx => 1);
@@ -627,8 +627,12 @@ sub _filedialog_widget {
 	   if ($Tk::VERSION >= 800) {
 	       if ($subtype eq 'dir') {
 		   $fd = '_dir_select';
-	       } else {
+	       } elsif ($subtype eq 'savefile') {
+		   $fd = 'getSaveFile';
+	       } elsif ($subtype eq 'file') {
 		   $fd = 'getOpenFile';
+	       } else {
+		   die "Unknown subtype <$subtype>";
 	       }
 	   } else {
 	       $fd = 'FileDialog';
@@ -655,13 +659,13 @@ sub _filedialog_widget {
 	       $base = File::Basename::basename($act_val);
 	       $dir = '.' if (!-d $dir);
 
-	       if ($fd eq 'getOpenFile') {
-		   $file = $topframe->getOpenFile(-initialdir => $dir,
-						  -initialfile => $base,
-						  -title => 'Select file',
+	       if ($fd =~ /^get(Open|Save)File$/) {
+		   $file = $topframe->$fd(-initialdir => $dir,
+					  -initialfile => $base,
+					  -title => 'Select file',
 # XXX erst ab 800.013 (?)
 #						  -force => 1,
-						 );
+					 );
 	       } elsif ($fd eq '_dir_select') {
 		   $file = _dir_select($topframe, $dir);
 	       } elsif ($fd eq 'FileDialog') {
@@ -677,8 +681,8 @@ sub _filedialog_widget {
 		   }
 	       }
 	   } else {
-	       if ($fd eq 'getOpenFile') {
-		   $file = $topframe->getOpenFile(-title => 'Select file');
+	       if ($fd =~ /^get(Open|Save)File$/) {
+		   $file = $topframe->$fd(-title => 'Select file');
 	       } elsif ($fd eq '_dir_select') {
 		   require Cwd;
 		   $file = _dir_select($topframe, Cwd::cwd());
@@ -835,10 +839,10 @@ sub _create_page {
 	    my $subtype = (defined $opt->[OPTEXTRA] &&
 			   exists $opt->[OPTEXTRA]{'subtype'} ?
 			   $opt->[OPTEXTRA]{'subtype'} : "");
-	    if ($subtype eq 'file') {
-		$w = $self->_filedialog_widget($f, $opt);
-	    } elsif ($subtype eq 'dir') {
-		$w = $self->_filedialog_widget($f, $opt, -subtype => "dir");
+	    if ($subtype eq 'file' ||
+		$subtype eq 'savefile' ||
+		$subtype eq 'dir') {
+		$w = $self->_filedialog_widget($f, $opt, -subtype => $subtype);
 	    } elsif ($subtype eq 'geometry') {
 		$w = $self->_geometry_widget($f, $opt);
 	    } elsif ($subtype eq 'color') {
@@ -922,15 +926,16 @@ sub option_editor {
 			     ? delete $a{'-delaypagecreate'}
 			     : 1);
     if (!defined $string) {
-	$string = {'optedit'   => 'Option editor',
-		   'undo'      => 'Undo',
-		   'lastsaved' => 'Last saved',
-		   'save'      => 'Save',
-		   'defaults'  => 'Defaults',
-		   'ok'        => 'OK',
-		   'apply'     => 'Apply',
-		   'cancel'    => 'Cancel',
-		   'helpfor'   => 'Help for:',
+	$string = {'optedit'    => 'Option editor',
+		   'undo'       => 'Undo',
+		   'lastsaved'  => 'Last saved',
+		   'save'       => 'Save',
+		   'defaults'   => 'Defaults',
+		   'ok'         => 'OK',
+		   'apply'      => 'Apply',
+		   'cancel'     => 'Cancel',
+		   'helpfor'    => 'Help for:',
+		   'oksave'     => 'OK',
 	          };
     }
     $self->{_string} = $string;
@@ -1081,11 +1086,8 @@ sub option_editor {
         }
     }
 
-    my($ok_button, $apply_button, $cancel_button, $undo_button,
-       $lastsaved_button, $save_button, $def_button);
-
     if (!$buttons || $allowed_button{'ok'}) {
-	$ok_button
+	my $ok_button
 	    = $f->Button(-text => $string->{'ok'},
 			 -underline => 0,
 			 -command => sub {
@@ -1099,8 +1101,32 @@ sub option_editor {
         push @tiler_b, $ok_button;
     }
 
+    if ($allowed_button{'oksave'}) {
+	my $ok_button
+	    = $f->Button(-text => $string->{'oksave'},
+			 -underline => 0,
+			 -command => sub {
+			     $top->Busy;
+			     eval {
+				 $self->save_options;
+				 $self->process_options(\%undo_options, 1);
+				 if (!$dont_use_notebook) {
+				     $self->{'raised'} = $opt_notebook->raised();
+				 }
+			     };
+			     my $err = $@;
+			     $top->Unbusy;
+			     if ($err) {
+				 die $err;
+			     }
+                             $opt_editor->destroy;
+                         }
+                        );
+        push @tiler_b, $ok_button;
+    }
+
     if (!$buttons || $allowed_button{'apply'}) {
-	$apply_button
+	my $apply_button
 	    = $f->Button(-text => $string->{'apply'},
 			 -command => sub {
 			     $self->process_options(\%undo_options, 1);
@@ -1108,7 +1134,8 @@ sub option_editor {
 			);
 	push @tiler_b, $apply_button;
     }
-
+	
+    my $cancel_button;
     if (!$buttons || $allowed_button{'cancel'}) {
 	$cancel_button
 	    = $f->Button(-text => $string->{'cancel'},
@@ -1124,7 +1151,7 @@ sub option_editor {
     }
 
     if (!$buttons || $allowed_button{'undo'}) {
-	$undo_button
+	my $undo_button
 	    = $f->Button(-text => $string->{'undo'},
 			 -command => sub {
 			     $self->_do_undo(\%undo_options);
@@ -1135,7 +1162,7 @@ sub option_editor {
 
     if ($self->{'filename'}) {
 	if (!$buttons || $allowed_button{'lastsaved'}) {
-	    $lastsaved_button
+	    my $lastsaved_button
 		= $f->Button(-text => $string->{'lastsaved'},
 			     -command => sub {
 				 $top->Busy;
@@ -1147,6 +1174,7 @@ sub option_editor {
 	}
 
 	if (!$nosave && (!$buttons || $allowed_button{'save'})) {
+	    my $save_button;
 	    $save_button
 		= $f->Button(-text => $string->{'save'},
 			     -command => sub {
@@ -1163,7 +1191,7 @@ sub option_editor {
     }
 
     if (!$buttons || $allowed_button{'defaults'}) {
-	$def_button
+	my $def_button
 	    = $f->Button(-text => $string->{'defaults'},
 			 -command => sub {
 			     $self->set_defaults;
@@ -1640,12 +1668,14 @@ match either the choices or the range.
 
 =item subtype
 
-The subtypes are I<file>, I<dir>, I<geometry>, I<font> and I<color>.
-These can be used with string options. For the first two, the GUI
-interface will pop up a file dialog for this option (either for
-selecting files or directories). If the I<geometry> subtype is
-specified, the user can set the current geometry of the main window.
-The I<color> subtype is not yet implemented.
+Valid subtypes are I<file>, I<savefile>, I<dir>, I<geometry>, I<font>
+and I<color>. These can be used with string options. For I<file> and
+I<savefile>, the GUI interface will pop up a file dialog, using
+C<getOpenFile> for the former and C<getSaveFile> for the latter. For
+I<dir>, the GUI interface will pop up dialog for selecting
+directories. If the I<geometry> subtype is specified, the user can set
+the current geometry of the main window. The I<color> subtype is not
+yet implemented.
 
 =item var
 
