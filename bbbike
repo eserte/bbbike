@@ -17,6 +17,8 @@ package main;
 
 #perl2exe_include Tk/Checkbutton.pm
 
+#XXX does not work: BEGIN { $Devel::Trace::TRACE = 0 }
+
 use FindBin;
 use lib ("$FindBin::RealBin",
 	 "$FindBin::RealBin/images",
@@ -15674,6 +15676,7 @@ sub fast_settings {
     undef $center_on_coord;
     $init_choose_street = 0;
     $autosave_opts = 0; # besser ist's
+    $do_activate_temp_blockings = 0;
 }
 
 sub set_mouse_desc {

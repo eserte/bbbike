@@ -322,7 +322,7 @@ LINES: while(defined($_ = nextline())) {
 		($newx, $newy) = $k_obj->map2standard($px, $py);
 	    } elsif ($use_map eq 'g') {
 		my($x,$y) = map { $_/100 } ($oldx, $oldy);
-		($newx,$newy) = $Karte::GISmap::obj->map2standard($x,$y);
+		($newx,$newy) = $Karte::Polar::obj->map2standard($x,$y);
 	    } elsif ($use_map ne $global_use_map) {
 		warn "Ignore $oldx,$oldy ($use_map ne $global_use_map)";
 		next LINE;
