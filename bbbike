@@ -10448,13 +10448,13 @@ sub show_info {
 #	    $info_text->insert("end", "\n\n" . join("\n", @comments));
 	}
 	if (defined $area) {
-	    $info_text->insert("end", sprintf "\n\nFläche:\t%.2f km²", $area); # XXX Msg
+	    $info_text->insert("end", sprintf "\n\n" . M("Fläche") . ":\t%.2f km²", $area); # XXX Msg
 	}
 	if (defined $total_len) {
-	    $info_text->insert("end", sprintf "\n\nLänge:\t%.2f km", $total_len); # XXX Msg
+	    $info_text->insert("end", sprintf "\n\n" . M("Länge") . ":\t%.2f km", $total_len); # XXX Msg
 	}
 	if (@polarcoord) {
-	    $info_text->insert("end", "\n\nKoordinaten\nPolar:\t$polarcoord[0]\n\t$polarcoord[1]");
+	    $info_text->insert("end", "\n\n" . M("Koordinaten") . "\n" . M("Polar") . ":\t$polarcoord[0]\n\t$polarcoord[1]");
 	}
 
 	if (defined $gkk_zone_potsdam) {
