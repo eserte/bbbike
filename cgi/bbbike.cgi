@@ -1,4 +1,5 @@
 #!/usr/bin/env perl
+#!/usr/local/bin/perl
 # -*- perl -*-
 
 #
@@ -47,7 +48,6 @@ BEGIN {
 	     "$FindBin::RealBin/BBBike", # weitere Alternative
 	     "$FindBin::RealBin/BBBike/lib",
 	     "$FindBin::RealBin",
-	     "/home/e/eserte/lib/perl", # only for TU Berlin
 	    );
     }
 }
