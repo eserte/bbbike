@@ -69,7 +69,7 @@ use vars qw(
      %category_size %outline_color %category_color %str_color %p_color
      %category_font_color %category_font
      $crossings $all_outline %str_attrib %p_attrib %category_attrib
-     $init_choose_street %init_str_draw %str_draw
+     $init_choose_street %init_str_draw %str_draw %occupied_layer
      %init_p_draw %p_draw %str_outline $auto_show_list
      %str_name_draw %str_nr_draw %p_name_draw %str_far_away %p_far_away
      %p_regions %str_regions

@@ -53,4 +53,15 @@ require Time::Local;
        file  => "badstr.bbd",
        text  => "Badstraße zwischen Böttgerstraße und Pankstraße: in beiden Richtungen Veranstaltung, Straße gesperrt",
      },
+     { from  => Time::Local::timelocal(reverse(2003-1900,7-1,3,6,0,0)),
+       until => Time::Local::timelocal(reverse(2003-1900,7-1,7,23,59,59)),
+       file  => "rheinstrassenfest.bbd",
+       text  => "Rheinstraßenfest in der Rheinstraße zwischen Breslauer Platz  und Walter-Schreiber-Platz. Beide Richtungsfahrbahnen sind ab dem 05.07.2003, 06.00 Uhr bis zum 06.07.2003, 24.00 Uhr gesperrt.",
+     },
+     # XXX
+     { from  => Time::Local::timelocal(reverse(2003-1900,10-1,3,6,0,0)),
+       until => Time::Local::timelocal(reverse(2003-1900,12-1,7,23,59,59)),
+       file  => "loveparade.bbd",
+       text  => "Love parade",
+     },
     );

@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.10 2003/07/01 00:15:41 eserte Exp $
+# $Id: LogTracker.pm,v 1.12 2003/07/03 00:09:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -21,12 +21,22 @@ package LogTracker;
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
+# XXX use Msg.pm some day
+sub M ($) { $_[0] } # XXX
+sub Mfmt { sprintf M(shift), @_ } # XXX
+
 use strict;
 use vars qw($VERSION $lastcoords
-            $layer @colors $colors_i @accesslog_data
-	    $do_search_route $error_checks $ua $safe
-            $remoteuser $remotehost $logfile $tracking $tail_pid $bbbike_cgi);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+            @types %layer @colors $colors_i %accesslog_data
+	    $do_search_route %show
+	    $error_checks $ua $safe
+            $remoteuser $remotehost $logfile $tracking $tail_pid $bbbike_cgi
+	    $last_parselog_call);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+
+# XXX replace all %layer, %show etc. with @layer, @show...
+use constant ROUTES => 0;
+use constant MAPSERVER => 1;
 
 use URI::Escape;
 use Strassen::Core;
@@ -36,18 +46,27 @@ $bbbike_cgi = "http://localhost/bbbike/cgi/bbbike.cgi"
     if !defined $bbbike_cgi;
 $logfile = "/tmp/AccessLog"
     if !defined $logfile;
+$show{routes} = 1
+    if !defined $show{routes};
+$show{mapserver} = 1
+    if !defined $show{mapserver};
+
+@types = qw(routes mapserver);
 
 sub register {
     my(@plugin_args) = @_;
+    my %switch = map {($_=>1)} qw(logfile remoteuser remotehost bbbike_cgi
+				  error_checks);
     for(my $i=0; $i<$#plugin_args; $i+=2) {
 	my($k,$v) = @plugin_args[$i..$i+2];
-	if    ($k eq 'logfile') { $logfile = $v }
-	elsif ($k eq 'remoteuser') { $remoteuser = $v }
-	elsif ($k eq 'remotehost') { $remotehost = $v }
-	elsif ($k eq 'bbbike_cgi') { $bbbike_cgi = $v }
+	if    (exists $switch{$k}) {
+	    no strict 'refs';
+	    $ {$k} = $v;
+	}
 	elsif ($k eq 'tracking') { $tracking = $v; parse_tail_log() if $v } # XXX
 	elsif ($k eq 'replay_route_search') { $do_search_route = $v }
-	elsif ($k eq 'error_checks') { $error_checks = $v }
+	elsif ($k eq 'show_routes') { $show{routes} = $v }
+	elsif ($k eq 'show_mapserver') { $show{mapserver} = $v }
 	else {
 	    warn "Ignore unknown plugin parameter $k";
 	}
@@ -135,6 +154,16 @@ sub add_button {
               [Checkbutton => "Error checks",
 	       -variable => \$error_checks,
 	      ],
+	      '-',
+              [Checkbutton => "Show bbbike routes",
+	       -variable => \$show{routes},
+	       -command => sub { update_view("routes") },
+	      ],
+              [Checkbutton => "Show mapserver tiles",
+	       -variable => \$show{mapserver},
+	       -command => sub { update_view("mapserver") },
+	      ],
+	      '-',
 	      [Button => 'AccessLog today',
 	       -command => sub {
 		   parse_accesslog_today();
@@ -181,29 +210,36 @@ sub init {
     @colors = ('#000080', '#0000a0', '#0000c0', '#0000f0',
                '#0080f0', '#8000f0', '#6000c0', '#4000a0',
               );
-    $layer = main::next_free_layer();
-    main::fix_stack_order($layer);
-    @accesslog_data = ();
+    for my $l (@types) {
+	$layer{$l} = main::next_free_layer();
+	$main::occupied_layer{$layer{$l}} = 1;
+	main::fix_stack_order($layer{$l});
+	$accesslog_data{$l} = [];
+    }
 }
 
 sub parse_accesslog {
     my $fh = shift;
-    warn "Free layer: $layer\n";
-    @accesslog_data = ();
+    $last_parselog_call = ['parse_accesslog']; # XXX can't store $fh...
+    for my $l (@types) {
+	$accesslog_data{$l} = [];
+    }
     if (!$fh) {
 	$fh = _open_log();
     }
     my $error_txt = "";
     while(<$fh>) {
 	chomp;
-	my @d;
+	my %d;
 	eval {
-	    @d = parse_line($_);
+	    ($d{routes}, $d{mapserver}) = parse_line($_);
 	};
 	if ($@) {
 	    $error_txt .= $@;
 	}
-	push @accesslog_data, @d if @d;
+	for my $l (@types) {
+	    push @{$accesslog_data{$l}}, @{$d{$l}} if @{$d{$l}};
+	}
     }
     close $fh;
     draw_accesslog_data();
@@ -211,10 +247,15 @@ sub parse_accesslog {
 }
 
 sub draw_accesslog_data {
-    my $s = Strassen->new_from_data_ref(\@accesslog_data);
-    $s->write("/tmp/LogTracker.bbd");
-    main::plot("str", $layer, -draw => 1, Filename => "/tmp/LogTracker.bbd");
-    $main::str_obj{$layer} = $s; # for LayerEditor
+    for my $l (@types) {
+	if (@{ $accesslog_data{$l} }) {
+	    my $s = Strassen->new_from_data_ref($accesslog_data{$l});
+	    $s->write("/tmp/LogTracker-$l.bbd");
+	    main::plot("str", $layer{$l},
+		       -draw => 1, Filename => "/tmp/LogTracker-$l.bbd");
+	    $main::str_obj{$layer{$l}} = $s; # for LayerEditor
+	}
+    }
 }
 
 sub _today {
@@ -260,15 +301,20 @@ sub parse_accesslog_for_date {
 
 sub parse_accesslog_any_day {
     my $rx = shift;
+    $last_parselog_call = ['parse_accesslog_any_day', $rx];
     my $is_tied = 0;
-    @accesslog_data = ();
+    for my $l (@types) {
+	$accesslog_data{$l} = [];
+    }
     my $bw;
     if ($logfile =~ /\.gz$/ || (defined $remotehost && $remotehost ne "")) {
 	# Can't read backwards
 	$bw = _open_log();
     } else {
 	require File::ReadBackwards;
-	tie *BW, 'File::ReadBackwards', $logfile or die $!;
+	tie *BW, 'File::ReadBackwards', $logfile
+	    or main::status_message(Mfmt("Kann die Datei %s nicht öffnen: %s",
+					 $logfile, $!), "die");
 	$bw = \*BW;
 	$is_tied++;
     }
@@ -284,14 +330,16 @@ sub parse_accesslog_any_day {
 	}
 	last if index($_, $rx) == -1;
 	chomp;
-	my @d;
+	my %d;
 	eval {
-	    @d = parse_line($_);
+	    ($d{routes}, $d{mapserver}) = parse_line($_);
 	};
 	if ($@) {
 	    $error_txt .= $@;
 	}
-	push @accesslog_data, @d if @d;
+	for my $l (@types) {
+	    push @{$accesslog_data{$l}}, @{$d{$l}} if @{$d{$l}};
+	}
     }
     untie *BW if $is_tied;
     draw_accesslog_data();
@@ -340,7 +388,9 @@ sub _tail_log {
 sub _open_log {
     my $fh;
     if (!defined $remotehost || $remotehost eq '') {
-	open($fh, $logfile) or die "Can't open $logfile: $!";
+	open($fh, $logfile)
+	    or main::status_message(Mfmt("Kann die Datei %s nicht öffnen: %s",
+					 $logfile, $!), "die");
     } else {
 	open($fh, "ssh " . (defined $remoteuser && $remoteuser ne ""
 			    ? "-l $remoteuser " : "")
@@ -359,29 +409,32 @@ sub fileevent_read_line {
         return;
     }
     my $line = <FH>;
-    my @d;
+    my %d;
     eval {
-	@d = parse_line($line);
+	($d{routes}, $d{mapserver}) = parse_line($_);
     };
     if ($@) {
 	show_errors($@);
     }
-    if (@d) {
-	push @accesslog_data, @d;
-	eval {
-	    my $s = Strassen->new_from_data_ref(\@accesslog_data);
-	    $s->write("/tmp/LogTracker.bbd");
-	    main::plot("str", $layer, -draw => 1, Filename => "/tmp/LogTracker.bbd");
-	    $main::str_obj{$layer} = $s; # for LayerEditor
-	    my $last = $s->get($s->count-1);
-	    if ($last && $last->[Strassen::COORDS()]->[-1]) {
-		main::mark_point
-			(-point =>  join(",", main::transpose(split /,/, $last->[Strassen::COORDS()]->[-1])),
-			 -dont_center => 1);
+    for my $l (@types) {
+	if (@{$d{$l}}) {
+	    push @{$accesslog_data{$l}}, @{$d{$l}};
+	    eval {
+		my $s = Strassen->new_from_data_ref($accesslog_data{$l});
+		$s->write("/tmp/LogTracker-$l.bbd");
+		main::plot("str", $layer{$l}, -draw => 1,
+			   Filename => "/tmp/LogTracker-$l.bbd");
+		$main::str_obj{$layer{$l}} = $s; # for LayerEditor
+		my $last = $s->get($s->count-1);
+		if ($last && $last->[Strassen::COORDS()]->[-1]) {
+		    main::mark_point
+			    (-point =>  join(",", main::transpose(split /,/, $last->[Strassen::COORDS()]->[-1])),
+			     -dont_center => 1);
+		}
+	    };
+	    if ($@) {
+		main::status_message($@, "warn");
 	    }
-	};
-	if ($@) {
-	    main::status_message($@, "warn");
 	}
     }
 }
@@ -389,7 +442,8 @@ sub fileevent_read_line {
 sub parse_line {
     my $line = shift;
     my $lastcoords;
-    if ($line =~ m{GET\s+
+    if ($show{routes} &&
+	$line =~ m{GET\s+
 		   (?:
 		    /~eserte/bbbike/cgi/bbbike\.cgi |
 		    /cgi-bin/bbbike\.cgi            |
@@ -428,10 +482,10 @@ sub parse_line {
 
 	    $coords =~ s/[!;]/ /g;
 	    if (defined $lastcoords && $coords eq $lastcoords) {
-		return ();
+		return ([],[]);
 	    }
 	    if ($coords =~ /^\s*$/) {
-		return ();
+		return ([],[]);
 	    }
 	    $lastcoords = $coords;
 	    my $bbdline = "$routename [$date] " .
@@ -439,7 +493,7 @@ sub parse_line {
 		    "\t" . $colors[$colors_i] . " $coords\n";
 	    $colors_i++; $colors_i %= scalar @colors;
 
-	    return ($bbdline);
+	    return ([$bbdline],[]);
 	} else {
 	    my(@bbdlines);
 	    my %has;
@@ -482,11 +536,12 @@ sub parse_line {
 		    warn $resp->error_as_HTML;
 		}
 	    }
-            return @bbdlines;
+            return (\@bbdlines,[]);
         }
     }
 
-    elsif ($line =~ m{GET\s+
+    elsif ($show{mapserver} &&
+	   $line =~ m{GET\s+
 		      (?:
 		       /~eserte/cgi/mapserv\.cgi |
 		       /cgi-bin/mapserv
@@ -517,17 +572,21 @@ sub parse_line {
 		_prepare_ms_qs_dump(\$query_string) .
 		    "\t" . $colors[$colors_i] . " $coords\n";
 	    $colors_i++; $colors_i %= scalar @colors;
-	    return ($bbdline);
+	    return ([],[$bbdline]);
 	}
     }
 
     # else { warn "Can't match <$line>\n" }
-    ();
+    ([],[]);
 }
 
 sub pref_statistics {
+    pipe(RDR,WTR);
     if (fork == 0) {
-	open(AL, $logfile) or die $!;
+	close RDR;
+	open(AL, $logfile)
+	    or main::status_message(Mfmt("Kann die Datei %s nicht öffnen: %s",
+					 $logfile, $!), "die");
 	my %pref;
 	while(<AL>) {
 	    print STDERR "$. \r" if $.%1000 == 0;
@@ -542,14 +601,38 @@ sub pref_statistics {
 		}
 	    }
 	}
+	while(my($pref,$v) = each %pref) {
+	    while(my($val,$count) = each %$v) {
+		$v->{$val} = [$count, sprintf("%.1f%%", 100*$count/$pref{seen}{1})];
+	    }
+	}
 	close AL;
 	require Data::Dumper;
-	my $res = Data::Dumper->new([\%pref],[])->Sortkeys(1)->Indent(1)->Useqq(1)->Dump;
+	my $res = Data::Dumper->new([\%pref],[])
+	    ->Sortkeys(sub { [ sort { $a <=> $b } keys %{$_[0]} ] } )
+	    ->Indent(1)->Useqq(1)->Dump;
 	warn $res;
-	my $txt = $main::top->Toplevel->Scrolled("Text", -scrollbars => "oe")->pack;
-	$txt->insert("end", $res);
+	print WTR $res, "\n";
+	close WTR;
 	CORE::exit(0);
     }
+    close WTR;
+
+    my $t = $main::top->Toplevel;
+    $t->title("Preference statistics");
+    my $txt = $t->Scrolled("ROText", -scrollbars => "oe"
+			  )->pack(-expand => 1,
+				  -fill => "both");
+    $t->fileevent
+	(\*RDR, "readable", sub {
+	     if (eof(RDR)) {
+		 $t->fileevent(\*RDR, "readable", "") if Tk::Exists($t);
+		 close RDR;
+		 return;
+	     }
+	     my $line = <RDR>;
+	     $txt->insert("end", $line) if Tk::Exists($txt);
+	 });
 }
 
 sub _number_monthabbrev {
@@ -594,12 +677,12 @@ sub _prepare_ms_qs_dump {
     my $q = CGI->new($$query_string_ref);
     for (qw(map mode zoomdir zoomsize orig_mode orig_zoomdir imgxy
 	    imgext savequery program bbbikeurl bbbikemail startc coordset
-	    img.x img.y)) {
+	    img.x img.y ref.x ref.y)) {
 	$q->delete($_);
     }
     my @p;
     for my $p ($q->param) {
-	push @p, "$p=" . $q->param($p);
+	push @p, "$p=" . join(",",$q->param($p));
     }
     join(" ", @p);
 }
@@ -637,6 +720,28 @@ sub show_errors {
 	$t->Advertise(Log => $txt);
     }
     $txt->insert("end", $errors);
+}
+
+sub update_view {
+    my $l = shift;
+warn "update $l";
+    if ($main::c->find(withtag => $layer{$l})) {
+	$main::c->itemconfigure($layer{$l}, -state => $show{$l} ? "normal" : "hidden");
+    } elsif ($show{$l}) {
+	if ($last_parselog_call) {
+	    local(%show) = %show;
+	    for (@types) {
+		$show{$_} = 0 if $_ ne $l;
+	    }
+	    require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$last_parselog_call, \%show],[])->Indent(1)->Useqq(1)->Dump; # XXX
+
+	    my $sub = shift @$last_parselog_call;
+	    no strict 'refs';
+	    &{$sub}(@$last_parselog_call);
+	} else {
+	    warn "Can't draw $l, no last_parselog_call variable set";
+	}
+    }
 }
 
 return 1 if caller;

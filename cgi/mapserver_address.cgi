@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.11 2003/06/29 22:24:10 eserte Exp eserte $
+# $Id: mapserver_address.cgi,v 1.12 2003/07/01 22:07:59 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -13,19 +13,23 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-use vars qw($BBBIKE_ROOT);
+use vars qw($BBBIKE_ROOT $BBBIKE_URL);
 BEGIN { # XXX do not hardcode
     if ($ENV{SERVER_NAME} eq 'radzeit.herceg.de') {
 	$BBBIKE_ROOT = "/home/e/eserte/src/bbbike/projects/www.radzeit.de/BBBike";
+	$BBBIKE_URL = "/BBBike";
 	@Strassen::datadirs = "$BBBIKE_ROOT/data";
+    } elsif ($ENV{SERVER_NAME} eq 'vran.herceg.de') {
+	$BBBIKE_URL = "/~eserte/bbbike";
     } else {
 	$BBBIKE_ROOT = "/usr/local/apache/radzeit/BBBike";
+	$BBBIKE_URL = "/BBBike";
 	#$BBBIKE_ROOT = "/usr/local/apache/radzeit/BBBike2";
     }
 }
 use strict;
 use FindBin;
-use CGI qw(:standard);
+use CGI qw(:standard *table);
 use lib ("$BBBIKE_ROOT",
 	 "$BBBIKE_ROOT/lib",
 	 "$BBBIKE_ROOT/data",
@@ -227,6 +231,8 @@ sub resolve_fulltext {
     my $STRASSEN_FILE   = Strassen::LAST() + 1;
     my $STRASSEN_CENTER = Strassen::LAST() + 2;
     my $STRASSEN_LABEL  = Strassen::LAST() + 3;
+    my $STRASSEN_ICON   = Strassen::LAST() + 4;
+    my $STRASSEN_ICONS  = Strassen::LAST() + 5;
 
     # heurstic to find data directory
     my $dir;
@@ -256,6 +262,7 @@ sub resolve_fulltext {
 	    $ret->[$STRASSEN_FILE] = File::Basename::basename($file);
 	    $ret->[$STRASSEN_CENTER] = $ret->[Strassen::COORDS()]->[$#{$ret->[Strassen::COORDS()]}/2];
 	    $ret->[$STRASSEN_LABEL] = file_to_label($ret->[$STRASSEN_FILE]);
+	    $ret->[$STRASSEN_ICON] = file_to_icon($ret->[$STRASSEN_FILE]);
 	    push @res, $ret;
 	}
     }
@@ -266,33 +273,66 @@ sub resolve_fulltext {
 	show_form();
 	print end_html;
     } elsif (@res > 1) {
-	splice @res, 40 if @res > 40;
 	my @new_res;
 	my %seen;
 	for my $element (@res) {
-	    if (!$seen{$element->[$STRASSEN_CENTER]}) {
-		push @new_res, $element;
-		$seen{$element->[$STRASSEN_CENTER]}++;
+	    my $e = $element;
+	    if (!exists $seen{$e->[$STRASSEN_CENTER]}) {
+		push @new_res, $e;
+		$seen{$e->[$STRASSEN_CENTER]} = $#new_res;
+		$e->[$STRASSEN_ICONS] = [];
+	    } else {
+		$e = $new_res[$seen{$element->[$STRASSEN_CENTER]}];
 	    }
+	    if (defined $element->[$STRASSEN_ICON]) {
+		push @{ $e->[$STRASSEN_ICONS] }, $element->[$STRASSEN_ICON];
+	    }
+	    last if @new_res > 40;
 	}
+
 	@res = @new_res;
 
 	if (@res > 1) {
 	    print header, start_html("Auswahl nach Straßen und Orten"), h1("Auswahl nach Straßen und Orten");
 	    print h2("Mehrere Treffer");
 	    print start_form;
-	    print radio_group
-		(-name=>"coords",
-		 -values => [map { $_->[$STRASSEN_CENTER] }
-			     sort { lc $a->[Strassen::NAME()] cmp lc $b->[Strassen::NAME()]}
-			     @res],
-		 -labels => {map { my $n = $_->[Strassen::NAME()];
-				   $n =~ s/\|/ /;
-				   $n .= " (" . $_->[$STRASSEN_LABEL] . ")";
-				   ($_->[$STRASSEN_CENTER] => $n)
-			       } @res},
-		 -linebreak => "true",
-		), br;
+
+	    {
+		my $use_icons = 1;
+		my $values = [map { $_->[$STRASSEN_CENTER] }
+			      sort { lc $a->[Strassen::NAME()] cmp lc $b->[Strassen::NAME()]}
+			      @res];
+		my $labels = {map { my $n = $_->[Strassen::NAME()];
+				    $n =~ s/\|/ /;
+				    $n .= " (" . $_->[$STRASSEN_LABEL] . ")";
+				    ($_->[$STRASSEN_CENTER] => $n)
+				} @res};
+		my $icons = {map {  my $n = "";
+				    my @icons = @{ $_->[$STRASSEN_ICONS] };
+				    if (@icons && $use_icons) {
+					for my $icon (@icons) {
+					    $n .= qq( <img src="$BBBIKE_URL/images/$icon">);
+					}
+				    }
+				    ($_->[$STRASSEN_CENTER] => $n)
+				} @res};
+
+		my $name = "coords";
+		if (!$use_icons) {
+		    print radio_group
+			(-name=>$name,
+			 -values => $values,
+			 -labels => $labels,
+			 -linebreak => "true",
+			), br;
+		} else {
+		    print start_table;
+		    for my $value (@$values) {
+			print qq(<tr><td><input type="radio" name="$name" value="$value"></td><td>$labels->{$value}</td><td>$icons->{$value}</td></tr>);
+		    }
+		    print end_table;
+		}
+	    }
 	    print submit(-value => "Zeigen");
 	    print end_form, hr;
 	    show_form();
@@ -396,6 +436,8 @@ sub file_to_label {
 	 kinos => 'Kinos',
 	 kneipen => 'Kneipen',
 	 label => 'Labels',	# XXX
+	 landstrassen => 'Landstraßen',
+	 landstrassen2 => 'Landstraßen (jwd)',
 	 nolighting => 'Stadtstraßen ohne Beleuchtung',
 	 orte => 'Orte',
 	 orte2 => 'Orte (jwd)',
@@ -425,6 +467,45 @@ sub file_to_label {
 	 wasserumland2 => 'Gewässer jwd',
 	);
     exists $map{$file} ? $map{$file} : $file;
+}
+
+sub file_to_icon {
+    my $file = shift;
+    # XXX do not hardcode
+    my %map =
+	(
+	 ampeln => 'ampel',
+	 ampelschaltung => 'ampel',
+	 berlin => 'berlin_overview_small',
+	 faehren => 'ferry',
+	 flaechen => 'flaechen',
+	 gesperrt => 'legend_blocked',
+	 gesperrt_car => 'legend_blocked',
+	 kinos => 'kino_klein',
+	 kneipen => 'glas',
+	 landstrassen => 'landstrasse',
+	 landstrassen2 => 'landstrasse',
+	 orte => 'ort',
+	 orte2 => 'ort',
+	 qualitaet_l => 'kopfstein_klein',
+	 qualitaet_s => 'kopfstein_klein',
+	 rbahn => 'rbahn',
+	 rbahnhof => 'rbahn',
+	 sbahn => 'sbahn',
+	 sbahnhof => 'sbahn',
+	 sbahnhof_bg => 'behindertenfreundlich',
+	 sehenswuerdigkeit => 'star',
+	 strassen => 'strasse',
+	 strassen_b_and_p => 'strasse',
+	 ubahn => 'ubahn',
+	 ubahnhof => 'ubahn',
+	 ubahnhof_bg => 'behindertenfreundlich',
+	 vorfahrt => 'vorfahrt',
+	 wasserstrassen => 'wasser',
+	 wasserumland => 'wasser',
+	 wasserumland2 => 'wasser',
+	);
+    exists $map{$file} ? $map{$file} . ".gif" : undef;
 }
 
 __END__

@@ -20,6 +20,7 @@ bbbike.cgi - CGI interface to bbbike
 
 =cut
 
+#BEGIN { $^W = 1 }
 use vars qw(@extra_libs);
 BEGIN { delete $INC{"FindBin.pm"} }
 use FindBin;
@@ -601,10 +602,19 @@ if ($use_miniserver) {
     warn __LINE__ .  ": Warnung: $@<br>\n" if $@;
 }
 
+use vars qw($cgic); # Can't use my here!
+sub my_exit {
+    # Seems to be necessary for CGI::Compress::Gzip to flush the
+    # output buffer.
+warn "call my exit with @_";#XXX remove
+    undef $cgic;
+    exit @_;
+}
+
 if ($0 =~ /\.fcgi$/) {
     require FCGI;
     $use_fcgi = 1;
-    exit if FCGI::accept() < 0;
+    my_exit if FCGI::accept() < 0;
 }
 
 # beim ersten Mal *darf* kein HTTP-Response-Header übermittelt werden,
@@ -701,7 +711,6 @@ if (!$use_background_image) {
 
 my @pref_keys = qw/speed cat quality ampel green/;
 
-my $cgic;
 $q = new CGI::BBBike;
 $str = new Strassen "strassen" unless defined $str;
 #$str = new Strassen::Lazy "strassen" unless defined $str;
@@ -761,7 +770,7 @@ if ($use_miniserver) {
     user_agent_info();
     choose_form();
     $cgi->done(0);
-    $cgi->spawn and exit 0;
+    $cgi->spawn and my_exit 0;
 #    $cgi->sigpipe_catch;#XXX needed? minisvr is unstable...
     # Prozessnummer korrigieren
     set_process($proc_slot);
@@ -772,7 +781,7 @@ if ($use_miniserver) {
 while (1) {
     $header_written = 0;
     if ($use_miniserver) {
-	$q = new CGI::Request::BBBike or $cgi->exit;
+	$q = new CGI::Request::BBBike or $cgi->exit; # my_exit?
 	$q->delete("~SequenceNumber ");    # stört nur...
     } elsif ($use_fcgi) {
 	# XXX workaround mit QUERY_STRING
@@ -796,7 +805,7 @@ while (1) {
         exec("./wapbbbike.cgi", @ARGV);
 	warn "exec failed, try redirect...";
 	print $q->redirect($WAP_URL || $BBBike::BBBIKE_WAP);
-	exit(0);
+	my_exit(0);
     }
 
     undef $bp_obj unless $use_miniserver;
@@ -961,7 +970,7 @@ while (1) {
 			);
 	    }
 	}
-	exit(0);
+	my_exit(0);
     } elsif (defined $q->param('startchar')) {
 	choose_ch_form($q->param('startchar'), 'start');
     } elsif (defined $q->param('viachar')) {
@@ -994,8 +1003,6 @@ while (1) {
 	choose_form();
     }
 
-    # XXX Seems to be necessary for CGI::Compress::Gzip to flush the
-    # output buffer. XXX But does not always work...
     undef $cgic;
 
   LOOP_CONT:
@@ -1003,7 +1010,7 @@ while (1) {
 	$cgi->done(0);
     } elsif ($use_fcgi) {
 	FCGI::flush();
-	exit 1 if FCGI::accept() < 0;
+	my_exit 1 if FCGI::accept() < 0;
     } else {
 	last;
     }
@@ -1024,6 +1031,7 @@ if ($modperl_lowmem) {
     undef $multi_bez_str;
 }
 
+my_exit 0;
 
 sub abc_link {
     my($type, %args) = @_;
@@ -1907,7 +1915,7 @@ sub get_kreuzung {
 	## Das hier muss man wieder herein nehmen, wenn man nicht die
 	## Preferences braucht:
 	# search_coord();
-	# exit(0);
+	# my_exit(0);
     }
 
     http_header(@weak_cache);
@@ -2099,7 +2107,7 @@ EOF
 #  	binmode IMG;
 #  	$draw->flush(Fh => \*IMG);
 #  	close IMG;
-#  	exit 0;
+#  	my_exit 0;
 #      } else {
 #  	return "$mapdir_url/$basefile";
 #      }
@@ -2162,7 +2170,7 @@ EOF
     print <<EOF;
 <input type=hidden name="pref_seen" value=1>
 <table>
-<tr><td>Bevorzugte Geschwindigkeit:</td><td><input type=text maxlength=4 size=2 name="pref_speed" value="$default_speed"> km/h</td></tr>
+<tr><td>Bevorzugte Geschwindigkeit:</td><td><input type=text maxlength=2 size=4 name="pref_speed" value="$default_speed"> km/h</td></tr>
 <tr><td>Bevorzugter Straßentyp:</td><td><select $bi->{hfill} name="pref_cat">
 <option @{[ $cat_checked->("") ]}>egal
 <option @{[ $cat_checked->("N1") ]}>Nebenstraßen bevorzugen
@@ -2282,7 +2290,7 @@ sub search_coord {
 	    http_header();
 	    print "Die angegebenen Punkte <$startcoord>, <$viacoord>, <$zielcoord> können nicht erreicht werden.<br>\n";
 	    print "<a href=\"$bbbike_url\">Zurück zu BBBike</a><br>";
-	    exit(0);
+	    my_exit(0);
 	}
     }
 
@@ -3614,7 +3622,7 @@ sub draw_route {
 		    @no_cache,
 		   );
 	print "<body>Fehler in BBBikeDraw: $err</body>";
-	exit 0;
+	my_exit 0;
     }
 
     unless ($header_written) {
@@ -4036,7 +4044,7 @@ sub start_weather_proc {
 		    }; warn $@ if $@;
 		    unlink "$tmp_dir/wettermeldung";
 		    exec @weather_cmdline;
-		    exit 1;
+		    my_exit 1;
 		}
 	    };
 	}
@@ -4070,8 +4078,10 @@ sub etag {
 # Write a HTTP header (always with etag) and maybe enabled compression
 sub http_header {
     my(@args) = @_;
-    if (!$ENV{MOD_PERL} &&
-	0 && # XXX CGI::Compress::Gzip 0.11 not ready for prime time!!!
+    if (#!$ENV{MOD_PERL} &&
+	#0 && # XXX CGI::Compress::Gzip 0.11 not ready for prime time!!!
+	#XXX
+	$ENV{SERVER_NAME}=~/herceg.de/ &&
 	eval { require CGI::Compress::Gzip; 1 }) {
 	$CGI::Compress::Gzip::global_give_reason = $debug;
 	$cgic = CGI::Compress::Gzip->new;
@@ -4582,7 +4592,7 @@ sub limit_processes {
 
 	if ($auto_switch_slow && $slow_cgi) {
 	    print $q->redirect(-uri => $slow_cgi, @no_cache);
-	    exit;
+	    my_exit;
 	}
 
 	http_header(@no_cache);
@@ -4600,7 +4610,7 @@ EOF
 EOF
         footer();
 	print $q->end_html;
-	exit;
+	my_exit;
     }
     dbmclose(%proc);
     $i;

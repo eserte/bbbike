@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.3 2003/07/01 14:55:26 eserte Exp $
+# $Id: Makefile,v 1.4 2003/07/03 06:11:49 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -11,6 +11,7 @@
 # Variables marked with *** are first candidates for configuration.
 
 # XXX should not be necessary!
+# Absolute path to the bbbike source directory.
 ABS_LOCAL_BBBIKE_DIR=	/home/e/eserte/src/bbbike			 # ***
 
 # BRBDIR is the current directory. Do not use .CURDIR, because it may be
@@ -42,11 +43,12 @@ TARGET=		radzeit.herceg.de
 .endif
 
 LOCAL_BBBIKE_DIR=	${.CURDIR:H:H}
+# The hostname of the web server:
 LOCAL_HOST=		www						# ***
 RADZEIT_APACHE_DIR=	${BBBIKE_RADZEIT_APACHE_DIR}
 RADZEIT_HOST=		${BBBIKE_RADZEIT_HOST}
 
-# Standard dimensions of mapserver image
+# Standard dimensions of mapserver image:
 IMGWIDTH?=	550							# ***
 IMGHEIGHT?=	550							# ***
 
@@ -73,16 +75,24 @@ FONTS_LIST=		fonts-devpc01.list
 
 HOST=			$(LOCAL_HOST)
 MAPSERVER_DIR=		$(LOCAL_BBBIKE_DIR)/mapserver/brb
+# Relative URL to this directory:
 MAPSERVER_RELURL=	/~eserte/mapserver/brb				# ***
 MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
+# Relative URL to the mapserv binary:
 MAPSERVER_PROG_RELURL=	/~eserte/cgi/mapserv.cgi			# ***
 MAPSERVER_PROG_URL=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
+# Filesystem path of the mapserv binary:
+MAPSERVER_PROG_FSPATH?=	/home/e/eserte/www/cgi/mapserv.cgi		# ***
 IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
+# Relative URL to the bbbike html and cgi directories (not important):
 BBBIKE_HTML_RELURL=	/~eserte/bbbike/html				# ***
-BBBIKE_CGI_RELURL=	/~eserte/bbbike/cgi
+BBBIKE_CGI_RELURL=	/~eserte/bbbike/cgi				# ***
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
+# Which kind of images should be generated:
 IMAGE_SUFFIX=		png # was: gif					# ***
+# File with the font mapping for this host:
 FONTS_LIST?=		fonts-vran.list					# ***
+# The unix user of the webserver process:
 WWW_USER=		eserte						# ***
 TARGET_DIR=		${.CURDIR}
 
@@ -97,7 +107,7 @@ MAPSERVER_PROG_URL=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
 IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
 BBBIKE_HTML_RELURL=	/~eserte/bbbike/html
 BBBIKE_CGI_RELURL=	/~eserte/bbbike/cgi
-BBBIKE_URL=		http://spiff$(BBBIKE_CGI_RELURL)/bbbike.cgi
+BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 IMAGE_SUFFIX=		png
 FONTS_LIST=		fonts-spiff.list
 WWW_USER=		eserte
@@ -153,8 +163,9 @@ ALL_TPL_DEFINES=\
 	--define BBBIKE_SF_WWW="$(BBBIKE_SF_WWW)" \
 	--define IMGWIDTH="$(IMGWIDTH)" \
 	--define IMGHEIGHT="$(IMGHEIGHT)" \
-	--define EDITWARNHTML="<!-- DO NOT EDIT. Created automatically -->" \
-	--define EDITWARNJS="/* DO NOT EDIT. Created automatically */" \
+	--define EDITWARNHTML="<!-- DO NOT EDIT. Created automatically from ${.ALLSRC:M*tpl} -->" \
+	--define EDITWARNJS="/* DO NOT EDIT. Created automatically from ${.ALLSRC:M*tpl} */" \
+	--define EDITWARNMAP="\#\# DO NOT EDIT. Created automatically from ${.ALLSRC:M*tpl}" \
 	--define SMALLDEVICE=0
 
 # Distfiles for dist-* rules

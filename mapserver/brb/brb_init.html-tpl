@@ -9,6 +9,7 @@
 [%- END -%]
 [%- SET redirect_url = MAPSERVER_PROG_URL _ "?program=" _ MAPSERVER_PROG_RELURL _ "&map=" _ MAPSERVER_DIR _ "/brb.map&zoomsize=2&" _ layer_s -%]
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <!-- -*-html-*- -->
+[% EDITWARNHTML %]
 <html>
 <head><title>BBBike &amp; MapServer</title>
 <meta http-equiv="refresh" content="0; URL=[% redirect_url | html_entity %]">

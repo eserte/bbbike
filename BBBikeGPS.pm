@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.5 2003/06/20 20:01:48 eserte Exp eserte $
+# $Id: BBBikeGPS.pm,v 1.6 2003/07/03 00:07:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -282,9 +282,9 @@ EOF
     $f2->Checkbutton(-text => M"Statistik zeigen",
 		     -variable => \$show_statistics)->pack(-anchor => "w");
     my $accuracy_level = 2;
-    my $acc_opt = [["Nur genaue Punkte zeichnen" => 0],
-		   ["Leicht ungenaue Punkte auch zeichnen" => 1],
-		   ["Alle Punkte zeichnen" => 2],
+    my $acc_opt = [[M("Nur genaue Punkte auswerten") => 0],
+		   [M("Leicht ungenaue Punkte auch auswerten") => 1],
+		   [M("Alle Punkte auswerten") => 2],
 		  ];
     my $acc_om =
 	$f2->Optionmenu
@@ -407,9 +407,6 @@ sub BBBikeGPS::do_draw_gpsman_data {
 			my $speed;
 			if ($legtime) {
 			    $speed = $dist/($legtime)*3.6;
-			    if (!defined $max_speed || $max_speed < $speed) {
-				$max_speed = $speed;
-			    }
 			}
 			my $grade;
 			if ($dist != 0 && defined $alt) {
@@ -436,12 +433,17 @@ sub BBBikeGPS::do_draw_gpsman_data {
 
  			my $color = "#000000";
 			if ($max_acc <= $accuracy_level) {
-			    if (defined $speed && !$solid_coloring) {
-				$color = $cfc_mapping->{int($speed)};
+			    if (defined $speed) {
+				if (!defined $max_speed || $max_speed < $speed) {
+				    $max_speed = $speed;
+				}
+				if (!$solid_coloring) {
+				    $color = $cfc_mapping->{int($speed)};
+				}
 			    }
 			    if (!defined $color) {
 				my(@sorted) = sort { $a <=> $b } keys %$cfc_mapping;
-				if ($speed <= $sorted[0]) {
+				if (defined $speed && $speed <= $sorted[0]) {
 				    $color = $cfc_mapping->{$sorted[0]};
 				} else {
 				    $color = $cfc_mapping->{$sorted[-1]};
@@ -813,9 +815,16 @@ sub BBBikeGPS::draw_track_graph {
 	my $max_x_cooked;
 	my $x_unit;
 	if ($against eq 'dist') {
-	    $max_x_cooked = $max_x/1000; # km
+	    $max_x_cooked = $max_x/1000;
+	    $x_unit = "km";
 	} else {
-	    $max_x_cooked = $max_x/3600; # h
+	    if ($max_x < 2*60*60) {
+		$max_x_cooked = $max_x/60;
+		$x_unit = "min";
+	    } else {
+		$max_x_cooked = $max_x/3600;
+		$x_unit = "h";
+	    }
 	}
 	my $xtic = BBBikeGPS::make_tics(0, $max_x_cooked);
 	my @xtics;
@@ -829,7 +838,36 @@ sub BBBikeGPS::draw_track_graph {
 
 	}
 
-	$graph_c{$type}->createText($c_w, $c_h, -anchor => "e", -text => $unit{$against}, -fill => "blue");
+	$graph_c{$type}->createText($c_w, $c_h, -anchor => "e", -text => $x_unit, -fill => "blue");
+    }
+
+
+    if ($against eq 'dist') { # XXX warum geht es mit "time" nicht?
+	# XXX comment missing
+	my(%last_x, %last_y);
+	my $type = "speed";
+	foreach (@$add_wpt_prop_ref) {
+	    my $time = $_->wholetime;
+	    if ($time) {
+		my $whole = $_->wholedist;
+		my $val = $whole/$time*3.6; # speed
+		my $x = $c_x{$type} + ($c_w{$type}/$max_x)*$whole;
+
+		if (defined $last_x{$type}) {
+		    if (defined $val) {
+			my $y = $c_y + $c_h{$type}-( ($c_h{$type}/$delta{$type})*($val-$min{$type}));
+			if (defined $last_y{$type}) {
+			    $graph_c{$type}->createLine
+				($last_x{$type}, $last_y{$type}, $x, $y,
+				 -fill => "green3",
+				 -tags => "$type-average");
+			}
+			$last_y{$type} = $y;
+		    }
+		}
+		$last_x{$type} = $x;
+	    }
+	}
     }
 
     {

@@ -10374,10 +10374,16 @@ sub show_statistics {
 ### AutoLoad Sub
 sub next_free_layer {
     my $max_i = 1;
+    while($occupied_layer{"L$max_i"}) {
+	$max_i++;
+    }
     for my $type (\%str_draw, \%p_draw) {
 	while(my($abk, $val) = each %$type) {
 	    if ($val && $abk =~ /^L(\d+)/ && $1 >= $max_i) {
 		$max_i = $1+1;
+		while($occupied_layer{"L$max_i"}) {
+		    $max_i++;
+		}
 	    }
 	}
     }
