@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.38 2004/08/21 23:11:30 eserte Exp $
+# $Id: Makefile,v 1.38 2004/08/21 23:11:30 eserte Exp eserte $
 #
 
 # Targets:
@@ -188,6 +188,11 @@ prepare-bbbike-dist-prog-bbbike:
 	       ${BBBIKE_ROOT_DIR}/t/cgi-mechanize.t	\
 	       ${BBBIKE_ROOT_DIR}/t/cgi.t     		\
 	       ${BBBIKE_ROOT_DIR}/t/wapcgi.t  ${CURDIR}/BBBike/t
+	cp -pf ${BBBIKE_ROOT_DIR}/html/Makefile		\
+	       ${BBBIKE_ROOT_DIR}/html/newstreetform.tpl.html	\
+	    ${CURDIR}/BBBike/html
+	cd ${CURDIR}/BBBike/html && \
+	    ${MAKE} newstreetform.html CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin
 
 prepare-bbbike-dist-prog-stadtplan:
 	[ "${NO_BERLINER_STADTPLAN}" = "yes" ] && true || (cp -pf ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com/lib/BBBikeDraw/BerlinerStadtplan.pm ${CURDIR}/BBBike/BBBikeDraw/)

@@ -84,7 +84,9 @@ strassen:	.strassen.tmp plaetze
 	-@$(READONLY) $@
 
 .strassen.tmp: strassen-orig
-	$(CONVERT2HAFAS) strassen-orig > $@ || (rm -f .strassen.tmp; false)
+	$(CONVERT2HAFAS) strassen-orig > $@~
+	cp $@~ $@
+	rm $@~
 
 plaetze: plaetze-orig
 	-@$(WRITEABLE) $@
@@ -127,12 +129,16 @@ brunnels:	brunnels-orig
 
 landstrassen: landstrassen-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) landstrassen-orig > landstrassen
+	$(CONVERT2HAFAS) landstrassen-orig > $@~
+	cp $@~ $@
+	rm $@~
 	-@$(READONLY) $@
 
 landstrassen2: landstrassen2-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) landstrassen2-orig > landstrassen2
+	$(CONVERT2HAFAS) landstrassen2-orig > $@~
+	cp $@~ $@
+	rm $@~
 	-@$(READONLY) $@
 
 # Get categories with:
@@ -240,7 +246,9 @@ ampelschaltung:	ampelschaltung-orig
 
 gesperrt:	gesperrt-orig strassen landstrassen landstrassen2
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) -specsperre=strassen,landstrassen,landstrassen2 gesperrt-orig > gesperrt
+	$(CONVERT2HAFAS) -specsperre=strassen,landstrassen,landstrassen2 gesperrt-orig > $@~
+	cp $@~ $@
+	rm $@~
 	-@$(READONLY) $@
 
 .for i in u s r

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.12 2004/05/09 13:58:31 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.12 2004/05/09 13:58:31 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -40,9 +40,12 @@ eval {
 };
 warn $@ if $@;
 
-my($to, $comment);
+use vars qw($to $comment);
 
 eval {
+    undef $to;
+    undef $comment;
+
     # from bbbike.cgi:
     $bbbike_url = url;
     ($bbbike_root = $bbbike_url) =~ s|[^/]*/[^/]*$|| if !defined $bbbike_root;
@@ -105,23 +108,44 @@ eval {
     my $fh = $msg->open(@Mail_Send_open);
     die "Kann open mit @Mail_Send_open nicht durchführen" if !$fh;
 
-    $comment =
-	"Von: " . (param("email")||"anonymous\@bbbike.de") . "\n" .
-	"An:  $to\n\n" .
-	(defined $mapx ? "Kartenkoordinaten: " . $mapx . "/" . $mapy . "\n\n" : "") .
-        "Kommentar:\n" .
-	param("comment") . "\n";
-    print $fh $comment . "\n";
-    print $fh "Remote: ", $link1, "\n" if defined $link1;
-    print $fh "Lokal:  ", $link2, "\n" if defined $link2;
+    if (param("formtype") && param("formtype") eq "newstreetform") {
+	require Data::Dumper;
+	for my $param (param) {
+	    my $dump = Data::Dumper->new([param($param)],[$param])->Indent(1)->Useqq(1)->Dump;
+	    print $fh $dump;
+	}
+    } else {
+	$comment =
+	    "Von: " . (param("email")||"anonymous\@bbbike.de") . "\n" .
+	    "An:  $to\n\n" .
+	    (defined $mapx ? "Kartenkoordinaten: " . $mapx . "/" . $mapy . "\n\n" : "") .
+	    "Kommentar:\n" .
+	    param("comment") . "\n";
+	print $fh $comment . "\n";
+	print $fh "Remote: ", $link1, "\n" if defined $link1;
+	print $fh "Lokal:  ", $link2, "\n" if defined $link2;
+    }
     $fh->close or die "Can't close mail filehandle";
 
-    print header,
-	start_html(-title=>"Kommentar abgesandt",
-		   -style=>{'src'=>"$bbbike_html/bbbike.css"}),
-	"Danke, der folgende Kommentar wurde an $to gesendet:",br(),br(),
-	 pre($comment),
-	 end_html;
+    if (param("formtype") && param("formtype") eq "newstreetform") {
+	my $url = defined $bbbike_html
+	          ? "$bbbike_html/newstreetform.html"
+		  : "../html/newstreetform.html"
+		  ;
+	print header,
+	    start_html(-title=>"Neue Straße für BBBike",
+		       -style=>{'src'=>"$bbbike_html/bbbike.css"}),
+	    "Danke, die Angaben wurden an $to gesendet:",br(),br(),
+	    a({-href => $url}, "Weitere Straße"),
+	    end_html;
+    } else {
+	print header,
+	    start_html(-title=>"Kommentar abgesandt",
+		       -style=>{'src'=>"$bbbike_html/bbbike.css"}),
+	    "Danke, der folgende Kommentar wurde an $to gesendet:",br(),br(),
+	    pre($comment),
+	    end_html;
+    }
 };
 if ($@) {
     warn $@;
