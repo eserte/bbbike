@@ -68,10 +68,18 @@ strassen:	.strassen.tmp plaetze
 	-@$(READONLY) $@
 
 #XXX vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-# XXX ampelschaltung, ampelschaltung.txt and fragezeichen are wrong converted
-# in the 2nd origconvert-all step. Probably best to put these files into BASE.
+# Call with:
+#   make -k origconvert origconvert-all
+#
 # XXX B_ON/OFF is not preserved in plz-orig
 # XXX radwege und radwege_exact angucken
+# XXX Ungereimheiten zwischen beiden mount-Versionen (wahrscheinlich falsche
+#     Berechnung in steigungen_stat)
+#
+# Quick diff between both directories:
+# diff --exclude="*~" --exclude="*.st" --exclude="*-info" --exclude="*.desc" --exclude=BASE --exclude=".check*" --exclude="*-orig" -ru /tmp/convert ~/src/bbbike/data | less
+#
+
 ORIGCONVERTDIR=/tmp/convert
 TARGETS2=$(TARGETS:Nampelschaltung:Nrbahn:Nrbahnhof:Nradwege_exact:Nmount:Nberlin:S/$/-orig/)
 TARGETS3=$(TARGETS2:S/^/$(ORIGCONVERTDIR)\//)
