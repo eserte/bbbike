@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEditUtil.pm,v 1.12 2004/09/30 22:24:25 eserte Exp $
+# $Id: BBBikeEditUtil.pm,v 1.12 2004/09/30 22:24:25 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -162,6 +162,7 @@ sub parse_dates {
     my $bis_und_rx    = qr/(?:[Bb]is|und|\s*-\s*)(?:\s+(?:ca\.|voraussichtlich|zum))?/;
     my $isodaterx = qr/\b(20\d{2})-(\d{2})-(\d{2})\b/;
     my $eudaterx  = qr/\b([0123]?\d)\.([01]?\d)\.(\d{4})\b/;
+    # XXX add ? after Anfang... group?
     my $nat_de_rx = qr{(Anfang|Mitte|Ende)\s+($month_rx|\d|0\d|1[012])[./ ](20\d{2})}i;
 
     my $this_year = (localtime)[5] + 1900;

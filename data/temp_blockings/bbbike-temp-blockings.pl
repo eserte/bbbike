@@ -927,7 +927,7 @@ userdel	q4 26500,71425 25875,71662
 EOF
      },
      { from  => 1098136800, # 2004-10-19 00:00
-       until => 1100905200, # 2004-11-20 00:00
+       until => 1098342189, # was 1100905200/2004-11-20 00:00
        text  => 'L 34; (Philipp-Müller-Str.); OL Strausberg Fahrbahninstandsetzung Vollsperrung 20.10.2004-19.11.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -993,6 +993,30 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 375,28109 938,28349
+EOF
+     },
+     { from  => undef, # 
+       until => 1101855600, # 2004-12-01 00:00
+       text  => 'Blankenburger Weg - Blankenburger-Weg-Brücke (Pankow) in beiden Richtungen zwischen Pasewalker Str. und Bahnhofsstraße Baustelle, Straße vollständig gesperrt (bis 12/2004)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 12030,20490 12442,20805
+EOF
+     },
+     { from  => 1098309600, # 2004-10-21 00:00
+       until => 1101596400, # 2004-11-28 00:00
+       text  => 'B 109; (Templin-Zehdenick); Bahnübergang südwestl.Ortsausg.Hammelspring Gleisbauarbeiten Vollsperrung 22.10.2004-27.11.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 10170,73230 8656,71489
+EOF
+     },
+     { from  => 1098568800, # 2004-10-24 00:00
+       until => 1100818800, # 2004-11-19 00:00
+       text  => 'L 16; (Siedl.Schönwalde-Pausin); Bahnübergang Gleisbauarbeiten Vollsperrung; Umleitung 25.10.2004-18.11.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -10559,23255 -10737,23418
 EOF
      },
     );

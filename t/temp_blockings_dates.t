@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: temp_blockings_dates.t,v 1.6 2004/09/30 22:23:54 eserte Exp $
+# $Id: temp_blockings_dates.t,v 1.6 2004/09/30 22:23:54 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -56,6 +56,14 @@ Brunnenstr. (Mitte) in beiden Richtungen, zwischen Bernauer Str. und Anklamer St
 EOF
       Mktime(@Today_and_Now),
       Mktime(2005,9,30,23,59,59),
+      0
+     ],
+
+     [<<EOF,
+Blankenburger Weg - Blankenburger-Weg-Brücke (Pankow) in beiden Richtungen zwischen Pasewalker Str. und Bahnhofsstraße Baustelle, Straße vollständig gesperrt (bis 12/2004) (11:02) 
+EOF
+      Mktime(@Today_and_Now),
+      Mktime(2004,12,15,23,59,59),
       0
      ],
 
