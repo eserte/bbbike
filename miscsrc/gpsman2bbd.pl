@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman2bbd.pl,v 2.7 2003/11/15 19:02:18 eserte Exp $
+# $Id: gpsman2bbd.pl,v 2.7 2003/11/15 19:02:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -49,8 +49,8 @@ sub gpsman2bbd {
     my $destpoints = "points.bbd";
     my $breakmin = 5;
     my $breakdist = 0;
-    my @pcat  = (qw(GPSp GPSp~ GPSp~~));
-    my @scat  = (qw(GPSs GPSs~ GPSs~~));
+    my @pcat  = (qw(GPSp GPSp~ GPSp~~ GPSp?));
+    my @scat  = (qw(GPSs GPSs~ GPSs~~ GPSs?));
     my $destmaptoken = "standard";
     my $add_prefix;
     my $prefix = "";

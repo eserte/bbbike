@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.11 2004/03/04 23:18:52 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.11 2004/03/04 23:18:52 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -21,6 +21,11 @@ push @ISA, 'BBBikePlugin';
 use strict;
 use vars qw($VERSION);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+
+my $streets_track      = "$ENV{HOME}/src/bbbike/tmp/streets.bbd";
+my $orig_streets_track = "$ENV{HOME}/src/bbbike/tmp/streets.bbd-orig";
+my $acc_streets_track  = "$ENV{HOME}/src/bbbike/tmp/streets-accurate.bbd";
+
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -76,14 +81,8 @@ sub add_button {
 		   main::bbbikeexp_setup();
 
 		   main::bbbikeexp_init();
-		   add_new_layer("str",
-				 "$ENV{HOME}/src/bbbike/tmp/streets.bbd-orig"
-				);
+		   add_new_layer("str", $orig_streets_track);
 
-#  		   {
-#  		       local $main::default_line_width = 1;
-#  		       main::plot_additional_layer("str", "$ENV{HOME}/src/bbbike/tmp/streets.bbd");
-#  		   }
 		   my $file = main::draw_gpsman_data($main::top);
 		   if (defined $file) {
 		       BBBikeEdit::edit_gps_track(File::Basename::basename($file));
@@ -116,9 +115,16 @@ sub add_button {
 	      [Button => "Update tracks and matches.bbd",
 	       -command => sub { upload("tracks develtracks ../../tmp/unique-matches.bbd ../../tmp/unique-matches-corrected.bbd") },
 	      ],
+	      [Button => "Add streets-accurate.bbd (all accurate GPS tracks)",
+	       -command => sub {
+		   my $f = $acc_streets_track;
+		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
+		   add_new_layer("str", $f);
+	       }
+	      ],
 	      [Button => "Add streets.bbd (all GPS tracks)",
 	       -command => sub {
-		   my $f = "$ENV{HOME}/src/bbbike/tmp/streets.bbd";
+		   my $f = $streets_track;
 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
 		   add_new_layer("str", $f);
 	       }
