@@ -929,6 +929,7 @@ speicherplatzsparender.",
    M"Advanced",
     ['edit','!',undef,
      label => M"Editmodus beim Starten (experimentell!!!)",
+     nogui => 1,
      var => sub {
  	$set_mode = "edit";
      }
