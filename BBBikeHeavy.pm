@@ -1339,6 +1339,7 @@ sub BBBikeHeavy::reload_all {
     }
     foreach my $type (keys %p_obj) {
 	my $o = $p_obj{$type};
+	warn "Should not happen: No object for point type $type", next if !$o;
 	if (!$o->is_current) {
 	    $o->reload;
 	    $change{"p"}->{$type} = 1;

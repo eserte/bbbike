@@ -371,6 +371,8 @@ LAYER
   LABELITEM "NAME"
 
   CLASSITEM 'CAT'
+
+[% BLOCK CLASS_W -%]
   CLASS
     EXPRESSION "W"
     LABEL
@@ -384,9 +386,17 @@ LAYER
       ANGLE AUTO
     END
     SYMBOL "circle"
-    SIZE 1
     COLOR 180 180 255
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
+[% END -%]
+[% PROCESS CLASS_W size=1 minscale=20000 maxscale=undef -%]
+[% PROCESS CLASS_W size=2 minscale=10000 maxscale=20000 -%]
+[% PROCESS CLASS_W size=4 minscale=undef maxscale=10000 -%]
+
+[% BLOCK CLASS_W1 -%]
   CLASS
     EXPRESSION "W1"
     LABEL
@@ -400,9 +410,17 @@ LAYER
       ANGLE AUTO
     END
     SYMBOL "circle"
-    SIZE 3
     COLOR 180 180 255
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
+[% END -%]
+[% PROCESS CLASS_W1 size=3 minscale=20000 maxscale=undef -%]
+[% PROCESS CLASS_W1 size=5 minscale=10000 maxscale=20000 -%]
+[% PROCESS CLASS_W1 size=7 minscale=undef maxscale=10000 -%]
+
+[% BLOCK CLASS_W2 -%]
   CLASS
     EXPRESSION "W2"
     LABEL
@@ -416,9 +434,16 @@ LAYER
       ANGLE AUTO
     END
     SYMBOL "circle"
-    SIZE 6
     COLOR 180 180 255
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
+[% END -%]
+[% PROCESS CLASS_W2 size=6 minscale=20000 maxscale=undef -%]
+[% PROCESS CLASS_W2 size=9 minscale=10000 maxscale=20000 -%]
+[% PROCESS CLASS_W2 size=12 minscale=undef maxscale=10000 -%]
+
   TEMPLATE "query.html"
   HEADER "query_header2.html"
   FOOTER "query_footer2.html"
@@ -536,12 +561,20 @@ LAYER
   DATA faehren
 
   LABELITEM "NAME"
-  
+
+[% BLOCK CLASS_FAEHREN -%]  
   CLASS
     COLOR 255 255 255
     SYMBOL "raute"
-    SIZE 4
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
+[% END -%]
+[% PROCESS CLASS_FAEHREN size=4 minscale=20000 maxscale=undef -%]
+[% PROCESS CLASS_FAEHREN size=5 minscale=10000 maxscale=20000 -%]
+[% PROCESS CLASS_FAEHREN size=6 minscale=undef maxscale=10000 -%]
+
   TEMPLATE "query.html"
   HEADER "query_header2.html"
   FOOTER "query_footer2.html"
@@ -676,37 +709,59 @@ LAYER
   DUMP FALSE
 
   CLASSITEM 'CAT'
+[% BLOCK CLASS_N_OUTL -%]
   CLASS
     EXPRESSION 'NN'
     COLOR 210 210 210
     SYMBOL 'width'
-    SIZE 6
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
   CLASS
     EXPRESSION 'N'
     COLOR 210 210 210
     SYMBOL 'width'
-    SIZE 6
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
+[% END -%]
+[% PROCESS CLASS_N_OUTL size=5 minscale=20000 maxscale=undef -%]
+[% PROCESS CLASS_N_OUTL size=6 minscale=10000 maxscale=20000 -%]
+[% PROCESS CLASS_N_OUTL size=7 minscale=undef maxscale=10000 -%]
+
+[% BLOCK CLASS_H_OUTL -%]
   CLASS
     EXPRESSION 'H'
     COLOR 210 210 210
     SYMBOL 'width'
-    SIZE 6
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
   # sligtly darker outline
   CLASS
     EXPRESSION 'HH'
     COLOR 180 180 180
     SYMBOL 'width'
-    SIZE 6
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
   CLASS
     EXPRESSION 'B'
     COLOR 180 180 180
     SYMBOL 'width'
-    SIZE 6
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
+[% END -%]
+[% PROCESS CLASS_H_OUTL size=6 minscale=20000 maxscale=undef -%]
+[% PROCESS CLASS_H_OUTL size=7 minscale=10000 maxscale=20000 -%]
+[% PROCESS CLASS_H_OUTL size=8 minscale=undef maxscale=10000 -%]
+
   METADATA
     WMS_TITLE "Straﬂen (Outline)"
     WMS_ABSTRACT "Stadt- und Landstraﬂen"
@@ -838,6 +893,8 @@ LAYER
   LABELITEM "NAME"
 
   CLASSITEM 'CAT'
+
+[% BLOCK CLASS_N -%]
   CLASS
     EXPRESSION 'NN'
     NAME "Nebenstraﬂe, f¸r Kfz gesperrt"
@@ -855,7 +912,9 @@ LAYER
     END
     COLOR 200 255 200
     SYMBOL 'width'
-    SIZE 4
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
   CLASS
     EXPRESSION 'N'
@@ -874,8 +933,16 @@ LAYER
     END
     COLOR 255 255 255
     SYMBOL 'width'
-    SIZE 4
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
+[% END -%]
+[% PROCESS CLASS_N size=3 minscale=20000 maxscale=undef -%]
+[% PROCESS CLASS_N size=4 minscale=10000 maxscale=20000 -%]
+[% PROCESS CLASS_N size=5 minscale=undef maxscale=10000 -%]
+
+[% BLOCK CLASS_H -%]
   CLASS
     EXPRESSION 'H'
     NAME "Hauptstraﬂe"
@@ -893,7 +960,9 @@ LAYER
     END
     COLOR 255 255 200
     SYMBOL 'width'
-    SIZE 4
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
   CLASS
     EXPRESSION 'HH'
@@ -911,7 +980,9 @@ LAYER
     END
     COLOR 255 255 0
     SYMBOL 'width'
-    SIZE 4
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
   CLASS
     EXPRESSION 'B'
@@ -929,8 +1000,15 @@ LAYER
     END
     COLOR 255 130 130
     SYMBOL 'width'
-    SIZE 4
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
+[% END -%]
+[% PROCESS CLASS_H size=4 minscale=20000 maxscale=undef -%]
+[% PROCESS CLASS_H size=5 minscale=10000 maxscale=20000 -%]
+[% PROCESS CLASS_H size=6 minscale=undef maxscale=10000 -%]
+
   CLASS # should not happen
     EXPRESSION /./ 
     COLOR 200 200 200
@@ -958,9 +1036,8 @@ LAYER
   LABELITEM "STRNR"
   CLASSITEM "CAT"
   CLASS
-# XXX warum geht das nicht, aber B geht???
-    EXPRESSION /^[FR]/
-    COLOR 0 255 0
+    EXPRESSION /^B/
+    COLOR 255 255 0
     SYMBOL 'strnrbox'
     SIZE 10
     LABEL
@@ -974,8 +1051,9 @@ LAYER
     END
   END
   CLASS
-    EXPRESSION /^B/
-    COLOR 255 255 0
+# XXX warum geht /^F/ nicht???
+    EXPRESSION /^.+/
+    COLOR 0 255 0
     SYMBOL 'strnrbox'
     SIZE 10
     LABEL
@@ -1013,6 +1091,14 @@ LAYER
   CLASS
     EXPRESSION /^U[ABC]?$/
     COLOR 0 0 128
+    MINSCALE 20000
+  END
+  CLASS
+    EXPRESSION /^U[ABC]?$/
+    COLOR 0 0 128
+    MAXSCALE 20000
+    SYMBOL 'width'
+    SIZE 2
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -1038,6 +1124,14 @@ LAYER
   CLASS
     EXPRESSION /^S[ABC]?$/
     COLOR 0 128 0
+    MINSCALE 20000
+  END
+  CLASS
+    EXPRESSION /^S[ABC]?$/
+    COLOR 0 128 0
+    MAXSCALE 20000
+    SYMBOL 'width'
+    SIZE 2
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -1063,6 +1157,14 @@ LAYER
   CLASS
     EXPRESSION /^R[ABC]?$/
     COLOR 0 128 0
+    MINSCALE 20000
+  END
+  CLASS
+    EXPRESSION /^R[ABC]?$/
+    COLOR 0 128 0
+    SYMBOL 'width'
+    SIZE 2
+    MAXSCALE 20000
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -1421,6 +1523,7 @@ LAYER
   LABELITEM "NAME"
 
   CLASSITEM 'CAT'
+[% BLOCK CLASS_R_BHF -%]
   CLASS
     EXPRESSION /^R[ABC]?$/
     COLOR 0 128 0
@@ -1435,8 +1538,15 @@ LAYER
       COLOR 0 128 0
       OUTLINECOLOR 225 225 225
     END
-    SIZE 6
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
+[% END -%]
+[% PROCESS CLASS_R_BHF size=6 minscale=20000 maxscale=undef -%]
+[% PROCESS CLASS_R_BHF size=8 minscale=10000 maxscale=20000 -%]
+[% PROCESS CLASS_R_BHF size=10 minscale=undef maxscale=10000 -%]
+
   TEMPLATE "query.html"
   HEADER "query_header2.html"
   FOOTER "query_footer2.html"
@@ -1517,117 +1627,56 @@ LAYER
   LABELITEM "NAME"
 
   CLASSITEM 'CAT'
+[% BLOCK CLASS_ORT -%]
   CLASS
-    EXPRESSION "0"
+    EXPRESSION "[% cat %]"
     COLOR 0 0 0
     SYMBOL 'circle'
     LABEL
+      FORCE [% force %]
       MINFEATURESIZE 40
       MINDISTANCE 150
       POSITION auto
       TYPE truetype
       FONT "lucida"
-      SIZE 6
+      SIZE [% lblsize %]
       COLOR 0 0 0
     END
-    SIZE 2
-    MAXSCALE 300000
+    SIZE [% size %]
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
-  CLASS
-    EXPRESSION "1"
-    COLOR 0 0 0
-    SYMBOL 'circle'
-    LABEL
-      MINFEATURESIZE 40
-      MINDISTANCE 150
-      POSITION auto
-      TYPE truetype
-      FONT "lucida"
-      SIZE 7
-      COLOR 0 0 0
-    END
-    SIZE 4
-    MAXSCALE 450000
-  END
-  CLASS
-    EXPRESSION "2"
-    COLOR 0 0 0
-    SYMBOL 'circle'
-    LABEL
-      MINFEATURESIZE 40
-      MINDISTANCE 150
-      POSITION auto
-      TYPE truetype
-      FONT "lucida"
-      SIZE 8
-      COLOR 0 0 0
-    END
-    SIZE 6
-    MAXSCALE 600000
-  END
-  CLASS
-    EXPRESSION "3"
-    COLOR 0 0 0
-    SYMBOL 'circle'
-    LABEL
-      MINFEATURESIZE 40
-      MINDISTANCE 150
-      POSITION auto
-      TYPE truetype
-      FONT "lucida"
-      SIZE 9
-      COLOR 0 0 0
-    END
-    SIZE 8
-  END
-  CLASS
-    EXPRESSION "4"
-    COLOR 0 0 0
-    SYMBOL 'circle'
-    LABEL
-      FORCE true
-      MINFEATURESIZE 40
-      MINDISTANCE 150
-      POSITION auto
-      TYPE truetype
-      FONT "lucida"
-      SIZE 10
-      COLOR 0 0 0
-    END
-    SIZE 10
-  END
-  CLASS
-    EXPRESSION "5"
-    COLOR 0 0 0
-    SYMBOL 'circle'
-    LABEL
-      FORCE true
-      MINFEATURESIZE 40
-      MINDISTANCE 150
-      POSITION auto
-      TYPE truetype
-      FONT "lucida"
-      SIZE 11
-      COLOR 0 0 0
-    END
-    SIZE 12
-  END
-  CLASS
-    EXPRESSION "6"
-    COLOR 0 0 0
-    SYMBOL 'circle'
-    LABEL
-      FORCE true
-      MINFEATURESIZE 40
-      MINDISTANCE 150
-      POSITION auto
-      TYPE truetype
-      FONT "lucida"
-      SIZE 12
-      COLOR 0 0 0
-    END
-    SIZE 15
-  END
+[% END -%]
+[% SET force="false" -%]
+[% PROCESS CLASS_ORT cat=0 size=2 lblsize=6 minscale=35000 maxscale=200000 -%]
+[% PROCESS CLASS_ORT cat=0 size=4 lblsize=8 minscale=10000 maxscale=35000 -%]
+[% PROCESS CLASS_ORT cat=0 size=6 lblsize=10 minscale=undef maxscale=10000 -%]
+
+[% PROCESS CLASS_ORT cat=1 size=4 lblsize=7 minscale=35000 maxscale=300000 -%]
+[% PROCESS CLASS_ORT cat=1 size=6 lblsize=9 minscale=10000 maxscale=35000 -%]
+[% PROCESS CLASS_ORT cat=1 size=8 lblsize=11 minscale=undef maxscale=10000 -%]
+
+[% PROCESS CLASS_ORT cat=2 size=6 lblsize=8 minscale=35000 maxscale=400000 -%]
+[% PROCESS CLASS_ORT cat=2 size=8 lblsize=10 minscale=10000 maxscale=35000 -%]
+[% PROCESS CLASS_ORT cat=2 size=10 lblsize=12 minscale=undef maxscale=10000 -%]
+
+[% PROCESS CLASS_ORT cat=3 size=8 lblsize=9 minscale=35000 maxscale=undef -%]
+[% PROCESS CLASS_ORT cat=3 size=10 lblsize=11 minscale=10000 maxscale=35000 -%]
+[% PROCESS CLASS_ORT cat=3 size=12 lblsize=13 minscale=undef maxscale=10000 -%]
+
+[% PROCESS CLASS_ORT cat=4 size=10 lblsize=10 minscale=35000 maxscale=undef -%]
+[% PROCESS CLASS_ORT cat=4 size=12 lblsize=12 minscale=10000 maxscale=35000 -%]
+[% PROCESS CLASS_ORT cat=4 size=14 lblsize=14 minscale=undef maxscale=10000 -%]
+
+[% SET force="true" -%]
+[% PROCESS CLASS_ORT cat=5 size=12 lblsize=11 minscale=35000 maxscale=undef -%]
+[% PROCESS CLASS_ORT cat=5 size=14 lblsize=13 minscale=10000 maxscale=35000 -%]
+[% PROCESS CLASS_ORT cat=5 size=16 lblsize=15 minscale=undef maxscale=10000 -%]
+
+[% PROCESS CLASS_ORT cat=6 size=15 lblsize=12 minscale=35000 maxscale=undef -%]
+[% PROCESS CLASS_ORT cat=6 size=17 lblsize=14 minscale=10000 maxscale=35000 -%]
+[% PROCESS CLASS_ORT cat=6 size=19 lblsize=16 minscale=undef maxscale=10000 -%]
+
   CLASS
     EXPRESSION /./
     COLOR 0 0 0
