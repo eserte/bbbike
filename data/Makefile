@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.91 2004/03/08 00:08:50 eserte Exp $
+# $Id: Makefile,v 1.92 2004/03/08 21:40:13 eserte Exp $
 #
 
 MISCDIR=		../misc
@@ -313,6 +313,7 @@ comments_kfzverkehr: comments_kfzverkehr-orig
 
 comments:	${COMMENTS_PARTIAL}
 	-@$(WRITEABLE) $@
+	echo -n > $@
 	for i in $>; do \
 	    echo "# BEGIN $$i" >> $@; \
 	    cat $$i >> $@; \

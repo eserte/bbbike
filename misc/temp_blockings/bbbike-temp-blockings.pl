@@ -216,4 +216,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Sophienstraße zwischen Rosenthaler Straße und Große Hamburger Straße wegen 8. Umwelt - und Weihnachtsmarkt für den Fahrzeugverkehr gesperrt (keine Wendemöglichkeit für Lkw). Dauer : 6.12.2003 / 06.00 Uhr bis 7.12.2003 / 24.00 Uhr ',
        type  => 'gesperrt',
      },
+     { from  => 1079046000, # 2004-03-12 00:00
+       until => 1079319600, # 2004-03-15 04:00
+       file  => 'sbhf_pankow.bbd',
+       text  => 'Berliner Straße zwischen Florastraße und Granitzstraße in beiden Richtungen gesperrt (Höhe S-Bhf. Pankow). Grund: Brückenarbeiten. Eine Umleitung ist ausgeschildert. Dauer: 13.03.2004, 00:00 Uhr bis 15.03.2004, 04:00 Uhr',
+       type  => 'gesperrt',
+     },
     );

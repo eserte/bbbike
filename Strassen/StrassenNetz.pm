@@ -266,9 +266,11 @@ sub make_net_steigung {
 		if (exists $hoehe->{$p2}) {
 		    my $strecke = $calc_strecke->($p1, $p2);
 		    my $hoehendiff = $hoehe->{$p2}-$hoehe->{$p1};
-		    my $mount = int(($hoehendiff/$strecke)*1000)/1000;
-		    $net->{$p1}{$p2} = $mount
-			if $mount >= $min_mount;
+		    if ($strecke > 0) {
+			my $mount = int(($hoehendiff/$strecke)*1000)/1000;
+			$net->{$p1}{$p2} = $mount
+			    if $mount >= $min_mount;
+		    }
 		} else {
 		    # XXX Hack! Find a better solution!
 		    # Find neighbors of $p2
@@ -279,13 +281,13 @@ sub make_net_steigung {
 			    my $strecke2 = $calc_strecke->($p2, $p3);
 			    my $strecke = $strecke1 + $strecke2;
 			    my $hoehendiff = $hoehe->{$p3}-$hoehe->{$p1};
-			    if (!exists $net->{$p1}{$p2}) {
+			    if (!exists $net->{$p1}{$p2} && $strecke > 0) {
 				my $mount = int((($hoehendiff/$strecke)
 						 *($strecke1/$strecke))*1000)/1000;
 				$net->{$p1}{$p2} = $mount
 				    if $mount >= $min_mount;
 			    }
-			    if (!exists $net->{$p2}{$p3}) {
+			    if (!exists $net->{$p2}{$p3} && $strecke > 0) {
 				my $mount = int((($hoehendiff/$strecke)
 						 *($strecke2/$strecke))*1000)/1000;
 				$net->{$p2}{$p3} = $mount
