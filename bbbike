@@ -3427,7 +3427,9 @@ sub do_iconframe {
 		     ($advanced ?
 		      (['GPSMAN (Tracklog)', 'GpsmanData'],
 		       ['Send Route to Garmin', 'DirectGarmin'],
-		       ['Simulate send to Garmin', 'DirectGarmin_Test']) :
+		       ['Simulate send to Garmin', 'DirectGarmin_Test'],
+		       ['Waypoint+ (Track)', 'WaypointPlus'],
+		      ) :
 		      ()),
 		     'PDF',
 		     'XFig',

@@ -170,7 +170,8 @@ sub convert_from_route {
 	$obj_type = 'routetoname';
     } else {
 	if ($net && $args{-simplify}) {
-	    @path = $route->path_list_max($net, 20);
+	    my $max_waypoints = $args{-maxwaypoints} || 50;
+	    @path = $route->path_list_max($net, $max_waypoints);
 	} else {
 	    @path = $route->path_list;
 	}

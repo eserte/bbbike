@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GPS.pm,v 1.6 2002/04/04 00:20:37 eserte Exp $
+# $Id: GPS.pm,v 1.6 2002/04/04 00:20:37 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ package GPS;
 use strict;
 use vars qw(@gps);
 
-@gps = qw(GpsmanData Unknown1 Unknown2 G7toWin_ASCII);
+@gps = qw(GpsmanData Unknown1 Unknown2 G7toWin_ASCII WaypointPlus);
 
 sub new { bless {}, shift }
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: G7toWin_ASCII.pm,v 1.15 2002/08/01 13:56:40 eserte Exp $
+# $Id: G7toWin_ASCII.pm,v 1.15 2002/08/01 13:56:40 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -110,7 +110,8 @@ EOF
 	$obj_type = 'routetoname';
     } else {
 	if ($net && $args{-simplify}) {
-	    @path = $route->path_list_max($net, 20);
+	    my $max_waypoints = $args{-maxwaypoints} || 50;
+	    @path = $route->path_list_max($net, $max_waypoints);
 	} else {
 	    @path = $route->path_list;
 	}

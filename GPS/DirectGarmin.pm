@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.21 2003/06/18 22:32:43 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.21 2003/06/18 22:32:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -360,7 +360,8 @@ sub convert_from_route {
 	$obj_type = 'routetoname';
     } else {
 	if ($net && $args{-simplify}) {
-	    @path = $route->path_list_max($net, 50); # XXX don't hardcode ... limit to 20 for older Garmins
+	    my $max_waypoints = $args{-maxwaypoints} || 50;
+	    @path = $route->path_list_max($net, $max_waypoints);
 	} else {
 	    @path = $route->path_list;
 	}
