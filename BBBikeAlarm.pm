@@ -317,9 +317,9 @@ sub enter_alarm_small_dialog {
     my $okb =
 	$t->Button(-text => "OK",
 		   -command => sub {
-		       my($h_a, $m_a) = $time =~ /(\d{1,2})[:.](\d{2})/;
+		       my($h_a, $m_a) = $time =~ /(?:^|\s)(\d{1,2})[:.]?(\d{2})(?:$|\s)/;
 		       if (!defined $h_a || !defined $m_a) {
-			   $top->messageBox(-message => "Wrong time format (ankunft)",
+			   $top->messageBox(-message => "Wrong time format, should be HH:MM",
 					    -icon => "error",
 					    -type => "OK");
 			   return undef;
