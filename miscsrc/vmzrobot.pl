@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.6 2004/01/25 10:18:49 eserte Exp $
+# $Id: vmzrobot.pl,v 1.7 2004/02/17 21:56:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -32,6 +32,7 @@ my $test;
 my $inputfile;
 my $oldfile;
 my $do_diffcount;
+my $do_irrelevant;
 my $quiet;
 my $force;
 my $listing_url = "http://www.vmz-berlin.de/vmz/rdstmc.do";
@@ -45,10 +46,11 @@ if (!GetOptions("test" => \$test,
 		"q" => \$quiet,
 		"f" => \$force,
 		'outputas=s@' => \@output_as,
+		'markirrelevant!' => \$do_irrelevant,
 	       )) {
     die <<EOF;
 usage: $0 [-test] [-i|-inputfile file] [-old|-oldfile file]
-          [-diffcount] [-q] [-outputas type] ...
+          [-diffcount] [-irrelevant] [-q] [-outputas type] ...
 
 Multiple -outputas optione are possible, default is "text". -outputas
 is of the form "type:file". If ":file" is left, then the output goes
@@ -78,11 +80,11 @@ while(my($type,$file) = each %output_as) {
 
 if ($test) {
     $listing_url = "file:///home/www/download/www.vmz-berlin.de/vmz/rdstmc.do";
-#    $detail_url  = "file:///home/www/download/www.vmz-berlin.de/vmz/trafficmap.do";#XXX
 }
 
 my $ua;
 my @detail_links;
+my @old_detail_links;
 if ($inputfile) {
     require YAML;
     my $ref = YAML::LoadFile($inputfile);
@@ -93,18 +95,18 @@ if ($inputfile) {
     print STDERR "Get listing..." if !$quiet;
     @detail_links = get_listing();
     print STDERR " OK\n" if !$quiet;
-#XXX del:
-#     {
-# 	my $i = 0;
-# 	for my $detail_link (@detail_links) {
-# 	    printf STDERR "%d/%d (%d%%)   \r", ($i+1), scalar(@detail_links), $i/$#detail_links*100 if !$quiet;
-# 	    $detail_link->{text} = get_detail($detail_link->{querystring});
-# 	    $i++;
-# 	}
-#     }
 }
 
 if ($oldfile) {
+    require YAML;
+    my $ref = YAML::LoadFile($oldfile);
+    @old_detail_links = @$ref;
+
+    if ($do_irrelevant) {
+	mark_irrelevant_entries(@detail_links);
+	mark_irrelevant_entries(@old_detail_links);
+    }
+
     @detail_links = diff();
     if ($do_diffcount) {
 	my $diffcount = grep { $_->{text} !~ /^UNCHANGED/ } @detail_links;
@@ -245,9 +247,6 @@ sub file_or_stdout {
 }
 
 sub diff {
-    require YAML;
-    my $ref = YAML::LoadFile($oldfile);
-    my @old_detail_links = @$ref;
     my %detail_links     = map {($_->{id} => $_)} @detail_links;
     my %old_detail_links = map {($_->{id} => $_)} @old_detail_links;
     my @diff_detail_links;
@@ -274,6 +273,34 @@ sub diff {
 	}
     }
     @diff_detail_links;
+}
+
+sub mark_irrelevant_entries {
+    my(@detail_links) = @_;
+    for my $detail (@detail_links) {
+	my $ignore = 0;
+	if ($detail->{text} =~ /^A(\d+)/) {
+	    $ignore = 1;
+	} else {
+	    my(@comp) = split /,\s+/, $detail->{text};
+	    if ($comp[-1] =~ /( Fahrbahn\s+auf\s+zwei\s+Fahrstreifen\s+verengt
+			      | Fahrbahn\s+auf\s+einen\s+Fahrstreifen\s+verengt
+			      | Verkehrsbehinderung\s+erwartet
+			      | ein\s+Fahrstreifen\s+gesperrt
+			      | Fahrstreifen\s+gesperrt
+			      | rechter\s+Fahrstreifen\s+gesperrt
+			      | linker\s+Fahrstreifen\s+gesperrt
+			      | mittlerer\s+Fahrstreifen\s+gesperrt
+			      | Fahrbahnverengung
+			      | Fahrbahn\s+auf\s+einen\s+Fahrstreifen\s+verengt
+			      )/xs) {
+		$ignore = 1;
+	    }
+	}
+	if ($ignore) {
+	    $detail->{text} = "IGNORE " . $detail->{text};
+	}
+    }
 }
 
 __END__

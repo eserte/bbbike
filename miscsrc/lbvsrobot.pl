@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.5 2004/02/17 07:58:57 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.6 2004/02/18 00:05:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -34,6 +34,7 @@ my $test;
 my $inputfile;
 my $oldfile;
 my $do_diffcount;
+my $do_irrelevant;
 my $quiet;
 my $force;
 my $state_id;
@@ -52,10 +53,11 @@ if (!GetOptions("test" => \$test,
 		"q" => \$quiet,
 		"f" => \$force,
 		'outputas=s@' => \@output_as,
+		'markirrelevant!' => \$do_irrelevant,
 	       )) {
     die <<EOF;
 usage: $0 [-test] [-i|-inputfile file] [-old|-oldfile file]
-          [-diffcount] [-q] [-outputas type] ...
+          [-diffcount] [-irrelevant] [-q] [-outputas type] ...
 
 Multiple -outputas optione are possible, default is "text". -outputas
 is of the form "type:file". If ":file" is left, then the output goes
@@ -89,6 +91,7 @@ if ($test) {
 
 my $ua;
 my @details;
+my @old_details;
 if ($inputfile) {
     require YAML;
     my $ref = YAML::LoadFile($inputfile);
@@ -118,6 +121,15 @@ if ($inputfile) {
 }
 
 if ($oldfile) {
+    require YAML;
+    my $ref = YAML::LoadFile($oldfile);
+    @old_details = @$ref;
+
+    if ($do_irrelevant) {
+	mark_irrelevant_entries(@details);
+	mark_irrelevant_entries(@old_details);
+    }
+
     @details = diff();
     if ($do_diffcount) {
 	my $diffcount = grep { $_->{text} !~ /^UNCHANGED/ } @details;
@@ -347,11 +359,9 @@ sub get_url {
 }
 
 sub diff {
-    my $ref = YAML::LoadFile($oldfile);
     #my $diffcol = "row";
     my $diffcol = "text";
     my $infocol = "text";
-    my @old_details = @$ref;
     my %details     = map {($_->{$diffcol} => $_)} @details;
     my %old_details = map {($_->{$diffcol} => $_)} @old_details;
     my @diff_details;
@@ -390,6 +400,33 @@ sub diff {
 	}
     }
     @diff_details;
+}
+
+sub mark_irrelevant_entries {
+    my(@details) = @_;
+    for my $detail (@details) {
+	my $ignore = 0;
+	if ($detail->{text} =~
+	    /( halbseitige\s+Sperrung
+	     | halbseitig\s+gesperrt
+	     | halbseitige\s+Sperrung\/Lichtsignalanl.
+	     | Einengung
+	     | ger\.Eineng
+	     | Fahrstreifen\s+eingeengt
+	     | Höhenbeschränk.
+	     | Tragfähigk.
+	     | Traglastbeschränkung
+	     | Randsicherung
+	     | Fahrbahn\s+nicht\s+betroffen
+	     | zwei\s+Fahrstreifen\s+gesperrt
+	     | ein\s+Fahrstreifen\s+gesperrt
+	    )/xs) {
+	    $ignore = 1;
+	}
+	if ($ignore) {
+	    $detail->{text} = "IGNORE " . $detail->{text};
+	}
+    }
 }
 
 __END__

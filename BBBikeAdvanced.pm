@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.87 2004/01/13 18:32:14 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.88 2004/02/17 23:18:00 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -139,6 +139,7 @@ sub custom_draw {
 	      [M"BBD-Dateien", '.bbd'],
 	      [M"BBBike-Route-Dateien", '.bbr'],
 	      [M"ESRI-Shape-Dateien", '.shp'],
+	      [M"MapInfo-Dateien", ['.mif','.MIF']],
 	      [M"Alle Dateien", '*'],
 	     ]
 	    );
