@@ -22,7 +22,7 @@ BEGIN {
 	die "No data/Makefile" if !-e "../data/Makefile";
 	1;
     }) {
-	print "# tests only work with installed Test module\n";
+	print "# tests only work with installed Test mode and a Makefile in the data directory\n";
 	print "1..1\n";
 	print "ok 1\n";
 	exit;
