@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.58 2003/09/02 19:28:34 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.59 2003/10/19 21:59:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003 Slaven Rezic. All rights reserved.
@@ -2137,7 +2137,10 @@ sub editmenu {
     $t->Button(-text => "Grep point",
 	       -command => \&main::grep_point)->pack(-anchor => "w");
     {
-	my @files = BBBikeEditUtil::get_orig_files();
+	my @files = (!defined $main::edit_mode || $main::edit_mode eq ''
+		     ? BBBikeEditUtil::get_generated_files()
+		     : BBBikeEditUtil::get_orig_files()
+		    );
 	if (!@files) {
 	    main::status_message("No files in $main::datadir found", "err");
 	    return;

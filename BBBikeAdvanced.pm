@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.83 2003/08/05 22:45:17 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.84 2003/10/19 22:01:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2003 Slaven Rezic. All rights reserved.
@@ -334,7 +334,7 @@ sub plot_additional_layer {
   	$abk = "$abk-sperre";
     }
     warn "Use new Layer $abk\n";
-    fix_stack_order($abk);
+    add_to_stack($abk, "before", "pp");
     if ($linetype !~ /^(str|p|sperre)$/) {
 #XXXdel	$str_draw{$abk} = 1;
 #    } elsif ($linetype eq 'p') {
@@ -948,6 +948,7 @@ sub add_search_net_menu_entries {
 		     [M"U/S-Bahn", 'us'],
 		     [M"R-Bahn", 'r'],
 		     [M"Gesamtes Bahnnetz", 'rus'],
+		     [M"Custom", 'custom'],
 		    ) {
 	my($label, $value) = @$def;
 	$nsbm->radiobutton(-label => $label,
@@ -1438,24 +1439,31 @@ sub penalty_menu {
 ### AutoLoad Sub
 sub _insert_points_and_co {
     my $action = shift;
+    my $oper_name = shift;
     my $vstr = ($verbose ? " -v" : "");
+    $action = "insert_points"; # so symlinks are not necessary anymore
     # Don't use -x --- NT reports only an executable if it have a known
     # extension:
     if (-e "$FindBin::RealBin/miscsrc/$action") {
-	system("$^X $FindBin::RealBin/miscsrc/$action"
-	       . ($coord_system_obj->coordsys eq 'B' ? "" : " -coordsys " . $coord_system_obj->coordsys)
-	       . " -useint" # XXX but not for polar coordinates
-	       . " -datadir $datadir -tk $vstr &");
+	my $cmd = "$^X $FindBin::RealBin/miscsrc/$action"
+	        . " -operation $oper_name"
+		. (!defined $edit_mode || $edit_mode eq '' ? " -noorig" : "")
+		. (-e "$datadir/.custom_files" ? " -filelist $datadir/.custom_files" : "")
+	        . ($coord_system_obj->coordsys eq 'B' ? "" : " -coordsys " . $coord_system_obj->coordsys)
+	        . " -useint" # XXX but not for polar coordinates
+	        . " -datadir $datadir -tk $vstr &";
+	warn "$cmd\n";
+	system $cmd;
 	# clear the selection
 	$top->after(2000, sub { delete_route() });
     }
 }
 
-sub insert_points { _insert_points_and_co("insert_points") }
-sub change_points { _insert_points_and_co("change_points") }
-sub change_line   { _insert_points_and_co("change_line")   }
-sub grep_point    { _insert_points_and_co("grep_point")    }
-sub delete_point  { _insert_points_and_co("delete_point")  }
+sub insert_points { _insert_points_and_co("insert_points", "insert")     }
+sub change_points { _insert_points_and_co("change_points", "change")     }
+sub change_line   { _insert_points_and_co("change_line",   "changeline") }
+sub grep_point    { _insert_points_and_co("grep_point",    "grep")       }
+sub delete_point  { _insert_points_and_co("delete_point",  "delete")     }
 
 sub find_canvas_item_file {
     my $ev = $_[0]->XEvent;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.112 2003/08/25 23:07:44 eserte Exp eserte $
+# $Id: bbbike,v 3.113 2003/10/19 22:03:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -206,7 +206,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.112 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.113 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -6022,6 +6022,8 @@ sub change_net_type {
 	*set_coords = \&set_coords_usbahn;
     } elsif ($net_type eq "rus") {
 	*set_coords = \&set_coords_bahn;
+    } elsif ($net_type eq 'custom') {
+	*set_coords = \&set_coords_custom;
     } else {
 	*set_coords = \&set_coords_str;
     }
@@ -13388,6 +13390,19 @@ sub make_net {
 		push @net_source,     $str_obj{$_};
 		push @net_source_abk, $_;
 	    }
+	} elsif ($net_type eq 'custom') {
+	    while(my($abk,$val) = each %str_draw) {
+		if ($val && $abk =~ /^L\d/) {
+		    eval {
+			if (!$str_obj{$abk}) {
+			    $str_obj{$abk} = new Strassen $str_file{$abk};
+			}
+			push @net_source, $str_obj{$abk};
+			push @net_source_abk, $abk;
+		    };
+		    warn "Cannot get Strassen for $abk: $@" if $@;
+		}
+	    }
 	} else {
 	    if ($str_obj{'l'}) {
 		push @net_source,     $str_obj{'l'};
@@ -13736,6 +13751,31 @@ sub set_coords_bahn {
 	return if !defined $item;
 	set_coords($c, @tags); # hoffentlich keine Endlosrekursion...
 	#die "Tag [@tags] ist weder p, pp, o, s noch l sollte nicht vorkommen!";
+    }
+}
+
+# Return "x,y"
+### AutoLoad Sub
+sub set_coords_custom {
+    my($c, @tags) = @_;
+    @tags = $c->gettags('current') if !@tags;
+    return if !@tags;
+    if ($tags[0] =~ /^L\d$/) {
+	my($pos, @points) = nearest_line_points_mouse($c, @tags);
+	make_net() if !$net;
+	if ($net->can("adjust_to_nearest")) {
+	    $points[0] = [ split /,/,
+			   $net->adjust_to_nearest(join ",", @{$points[0]})
+			 ];
+	} else {
+	    $net->add_net($pos, @points);
+	}
+	my($x, $y) = @{$points[0]};
+	Route::_coord_as_string([$x,$y]);
+    } else {
+	my($item, @tags) = find_below_rx($c, ['^L\d'], [0]);
+	return if !defined $item;
+	set_coords($c, @tags); # hoffentlich keine Endlosrekursion...
     }
 }
 
@@ -14711,6 +14751,28 @@ sub fix_stack_order {
     if (!grep { $_ eq $abk } @normal_stack_order) {
 	push @normal_stack_order, $abk, "$abk-fg";
     }
+}
+
+### AutoLoad Sub
+sub add_to_stack {
+    my($abk, $how, $other_abk) = @_;
+    return if (grep { $_ eq $abk } @normal_stack_order);
+    my $i = 0;
+    for (@normal_stack_order) {
+	if ($_ eq $other_abk) {
+	    if ($how eq 'after') {
+		splice @normal_stack_order, $i+1, 0, $abk, "$abk-fg";
+		return;
+	    } elsif ($how eq 'before') {
+		splice @normal_stack_order, $i, 0, $abk, "$abk-fg";
+		return;
+	    } else {
+		die "Cannot handle $how in add_to_stack";
+	    }
+	}
+	$i++;
+    }
+    push @normal_stack_order, $abk, "$abk-fg";
 }
 
 sub restack_delayed {

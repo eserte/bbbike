@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.18 2003/10/09 07:26:10 eserte Exp $
+# $Id: cgi.t,v 1.19 2003/10/20 07:26:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -270,8 +270,6 @@ for my $cgiurl (@urls) {
 	    diag($@);
 	    ok(0);
 	}
-
-	# XXX Maybe utilize WWW::Mechanize(::Shell) for more tests
     }
 
     {
@@ -520,7 +518,7 @@ for my $cgiurl (@urls) {
 	}
 
 	for my $s (qw(Methfesselstr Skalitzer Sonntagstr)) {
-	    ok(grep { $_->{Strname} =~ /$s/ } @{$route->{Route}},
+	    ok((grep { $_->{Strname} =~ /$s/ } @{$route->{Route}}),
 	       "Street $s expected in route");
 	}
 	ok($route->{Len} > 7000 && $route->{Len} < 8000, "check route length")
