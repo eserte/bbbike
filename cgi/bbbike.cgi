@@ -4050,6 +4050,18 @@ sub make_time {
 # gesucht und gesetzt
 sub fix_coords {
     my($startcoord, $viacoord, $zielcoord) = @_;
+
+    my $get_next_scopes = sub {
+	my $scope = shift;
+	if ($scope =~  /\bcity\b/) {
+	    return (qw(region wideregion));
+	} elsif ($scope =~ /\bregion\b/) {
+	    return (qw(wideregion));
+	} else {
+	    return ();
+	}
+    };
+
     foreach my $varref (\$startcoord, \$viacoord, \$zielcoord) {
 	next if (!defined $$varref or
 		 $$varref eq ''    or
@@ -4057,16 +4069,19 @@ sub fix_coords {
 	if (!defined $kr) {
 	    new_kreuzungen();
 	}
-	if ($use_exact_streetchooser) {
-	    my $str = get_streets();
-	    my $ret = $str->nearest_point($$varref, FullReturn => 1);
-	    if ($ret && $ret->{Dist} < 50) {
-		$$varref = $ret->{Coord};
-	    } else {
-		# Try to enlarge search region
-	    TRY: {
-		    for my $scope ("region", "wideregion") {
-			$q->param("scope", $scope);
+
+    TRY: {
+	    if ($use_exact_streetchooser) {
+		my $str = get_streets();
+		my $ret = $str->nearest_point($$varref, FullReturn => 1);
+		if ($ret && $ret->{Dist} < 50) {
+		    $$varref = $ret->{Coord};
+		    last TRY;
+		} else {
+		    # Try to enlarge search region
+		    my @scopes = $get_next_scopes->($q->param("scope"));
+		    for my $scope (@scopes) {
+			$q->param("scope", $scope); # XXX "all," gets lost
 			my $str = get_streets_rebuild_dependents();
 			my $ret = $str->nearest_point($$varref, FullReturn => 1);
 			if ($ret) {
@@ -4074,29 +4089,37 @@ sub fix_coords {
 			    last TRY;
 			}
 		    }
-		    warn "Can't find nearest for $$varref. Maybe try to enlarge search space?";
 		}
 	    }
-	} else {
+
+	    # Fallback to old, non-exact chooser
 	    my(@nearest) = $kr->nearest_coord($$varref, IncludeDistance => 1);
 	    if (@nearest && $nearest[0]->[1] < 50) {
 		$$varref = $nearest[0]->[0];
 	    } else {
 		# Try to enlarge search region
-	    TRY: {
-		    for my $scope ("region", "wideregion") {
-			$q->param("scope", $scope);
+		$q->param("scope", "city") if !$q->param("scope");
+		my @scopes = $get_next_scopes->($q->param("scope"));
+		if (@scopes) {
+		    for my $scope (@scopes) {
+			$q->param("scope", $scope); # XXX "all," gets lost
 			get_streets_rebuild_dependents();
-			new_kreuzungen();
 			@nearest = $kr->nearest_loop_coord($$varref);
 			if (@nearest) {
 			    $$varref = $nearest[0];
 			    last TRY;
 			}
 		    }
-		    warn "Can't find nearest for $$varref. Either try to enlarge search space or add some grids for nearest_coord searching";
+		} else {
+		    @nearest = $kr->nearest_loop_coord($$varref);
+		    if (@nearest) {
+			$$varref = $nearest[0];
+			last TRY;
+		    }
 		}
 	    }
+
+	    warn "Can't find nearest for $$varref. Either try to enlarge search space or add some grids for nearest_coord searching";
 	}
     }
     ($startcoord, $viacoord, $zielcoord);
