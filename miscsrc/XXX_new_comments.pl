@@ -162,6 +162,8 @@ sub process_data {
 		    undef $begin_crossing;
 		} else {
 		    $begin_crossing = $begin_crossing->[0];
+		    $begin_crossing =~ s/^\(//;
+		    $begin_crossing =~ s/\)$//;
 		}
 		
 		my $end_crossing   = eval { $kr->get($end_coord)   };
@@ -171,6 +173,8 @@ sub process_data {
 		    undef $end_crossing;
 		} else {
 		    $end_crossing = $end_crossing->[0];
+		    $end_crossing =~ s/^\(//;
+		    $end_crossing =~ s/\)$//;
 		}
 
 		if ($v->[0] == 0 && defined $end_crossing) {
@@ -249,15 +253,20 @@ sub output_data {
     my $d = shift;
 
     use Text::Table;
+    use Text::Wrap;
     my $tb = Text::Table->new("Etappe", "Richtung", "Straße", \"|", "Gesamt", \"|", "Bemerkungen");
 
     $tb->load(
 	      map {
+		  local $Text::Wrap::columns = 30;
+		  my $strname = wrap("", "", $_->{Strname});
+		  local $Text::Wrap::columns = 55;
+		  my $comment = wrap("", "", $_->{Comment});
 		  [$_->{DistString},
 		   $_->{DirectionString},
-		   $_->{Strname},
+		   $strname,
 		   $_->{TotalDistString},
-		   $_->{Comment},
+		   $comment,
 		  ]
 	      } @{ $d->{Route} }
 	     );
@@ -657,16 +666,71 @@ __END__
 
 XXX Weitere Verbesserungen:
 
-"ab (Lichtensteinallee - Tiergartenufer) Parkweg, Fußgänger" => Klammern weg? ja!
-"nach 657 m für 43 m Fußgänger" => gruselig!
-"ab Luckauer Str. Berliner Mauer-Radweg" => hier wäre ein Doppelpunkt besser
-"bis Dorotheenstr. R1" => hier auch
+"ab Treskowallee für 2.2 km: Parkweg, OK; R1 (*); ab (Wuhlheide/FEZ):
+Fußgänger " => sortieren, und zwar: Gesamtstrecken zuerst, und dann
+nach Startpunkt sortiert
 
-# Ab jetzt mit Doppelpunkten
-"ab Treskowallee für 2.2 km: Parkweg, OK; R1 (*); ab (Wuhlheide/FEZ): Fußgänger " => sortieren, und zwar: Gesamtstrecken zuerst, und dann nach Startpunkt sortiert
-"bis (Wuhlewanderweg, östliches Ufer): bereits an der Ampel Köpenicker Allee die Straßenseite wechseln (Straßenbahn auf Mittelstreifen); R1 (*); ab (Wuhlewanderweg, östliches Ufer): zunächst linken Gehweg benutzen" => für PI und ähnliches keine Start/Endpunkte verwenden, Sortierung siehe oben
-"bis Schreiberhauer Str.: sehr guter Asphalt; ab Schreiberhauer Str.: mäßiges Kopfsteinpflaster": wie bislang Q0 und q0 ignorieren
-"zwischen Sonnenallee und Weigandufer" (Innstr) => was ist hier passiert? (verbessert!)
-"nach 0.1 km bis Tempelhofer Ufer: reger Fußgängerverkehr" (Blücherplatz) => besser wäre es hier, wenn man den Gehwegbereich explizit angeben würde. Oder das Kaufhaus an der Stelle
-"ab Hallesches Ufer für 0.0 km: reger Fußgängerverkehr" => hmmm, hier vielleicht die Meterangaben anzeigen oder "für kurze Strecke"?
-"ab Goethestr.: gutes Kopfsteinpflaster; ab Goethestr.: Mi und Sa Wochenmarkt, Behinderungen möglich" => kann das hier zusammengefasst werden?
+"bis (Wuhlewanderweg, östliches Ufer): bereits an der Ampel Köpenicker
+Allee die Straßenseite wechseln (Straßenbahn auf Mittelstreifen); R1
+(*); ab (Wuhlewanderweg, östliches Ufer): zunächst linken Gehweg
+benutzen" => für PI und ähnliches keine Start/Endpunkte verwenden,
+Sortierung siehe oben
+
+"bis Schreiberhauer Str.: sehr guter Asphalt; ab Schreiberhauer Str.:
+mäßiges Kopfsteinpflaster": wie bislang Q0 und q0 ignorieren
+
+"zwischen Sonnenallee und Weigandufer" (Innstr) => was ist hier
+passiert? (verbessert!)
+
+"nach 0.1 km bis Tempelhofer Ufer: reger Fußgängerverkehr"
+(Blücherplatz) => besser wäre es hier, wenn man den Gehwegbereich
+explizit angeben würde. Oder das Kaufhaus an der Stelle
+
+"ab Hallesches Ufer für 0.0 km: reger Fußgängerverkehr" => hmmm, hier
+vielleicht die Meterangaben anzeigen oder "für kurze Strecke"?
+
+"ab Goethestr.: gutes Kopfsteinpflaster; ab Goethestr.: Mi und Sa
+Wochenmarkt, Behinderungen möglich" => kann das hier zusammengefasst
+werden?
+
+ab Prinzregentenstr. für 0.4 km: zum Überqueren der Bundesallee Ampel
+an der Hildegarstr. (links) benutzen => "für 0.4 km" ist hier albern
+
+Hauptstr | bis (Am Rummelsburger See): wegen Straßenbahn so früh wie
+möglich auf die linke Gehwegseite wechseln; ab (Am Rummelsburger See)
+für 0.2 km: wegen Straßenbahn zunächst auf der linken Gehwegseite
+weiterfahren => ups... solche Kommentare (PI;) nur anzeigen, wenn die
+kompletter Strecke befahren wird!!!
+
+Mangerstr. | Kopfsteinpflaster; Kopfsteinpflaster, Ausweichen auf
+Uferweg möglich => geht es hier (landstrassen) mit der
+Kreuzungserkennung nicht? (wahrscheinlich, siehe Sourcecode)
+
+nach 0.0 km für 0.1 km => optimieren: "nach 0.0 km" weglassen, "für
+0.0 km" in "für eine kurze Strecke" übersetzen
+
+nach 0.0 km für 0.0 km: rechts des Neuen Sees halten => jaja...
+
+Gleimstr. | ab Swinemünder Str. für 0.2 km: Kopfsteinpflaster (noch);
+nach 0.2 km bis Schwedter Str.: Kopfsteinpflaster (noch) => hier hat
+die Zusammenfassung nicht funktioniert, da einmal "Gleimtunnel" und
+einmal "Gleimstr." vor dem Doppelpunkt in qualitaet_s-orig steht.
+Ergo: zuerst abschneiden, dann zusammenfassen
+
+ab Oberwallstr. für 0.2 km: mäßiger Asphalt => statt "0.2 km" könnte
+man vielleicht "200 m" schreiben, ist kürzer und weniger pseudo-genau
+(evtl. vielleicht auf 50er-Meter runden, um nicht ganz so ungenau zu
+sein...) (lieber nicht, da ich in der Etappenbeschreibung auf 10 Meter
+genau bin)
+
+Klemkestr. | zwischen (An der Nordbahn) und (An der Nordbahn):
+Berliner Mauer-Radweg => obskur, aber so ist meine Benamung der
+Querstraßen...
+
+
+DONE:
+
+"ab (Lichtensteinallee - Tiergartenufer) Parkweg, Fußgänger" => Klammern weg? ja! DONE
+"nach 657 m für 43 m Fußgänger" => gruselig! DONE: Doppelpunkt, ungenauere Meterangaben
+"ab Luckauer Str. Berliner Mauer-Radweg" => hier wäre ein Doppelpunkt besser DONE
+"bis Dorotheenstr. R1" => hier auch DONE
