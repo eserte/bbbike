@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.13 2004/05/02 20:41:06 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.14 2004/06/05 01:25:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,11 +20,13 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
 my $streets_track      = "$ENV{HOME}/src/bbbike/tmp/streets.bbd";
 my $orig_streets_track = "$ENV{HOME}/src/bbbike/tmp/streets.bbd-orig";
 my $acc_streets_track  = "$ENV{HOME}/src/bbbike/tmp/streets-accurate.bbd";
+my $acc_streets_uncorrect_track = "$ENV{HOME}/src/bbbike/tmp/streets-accurate-uncorrected.bbd";
+my $acc_points_uncorrect_track = "$ENV{HOME}/src/bbbike/tmp/points-all-uncorrected.bbd";
 
 use vars qw($hm_layer);
 
@@ -158,6 +160,13 @@ sub add_button {
 		   add_new_layer("str", $f);
 	       }
 	      ],
+	      [Button => "Add streets-accurate-uncorrected.bbd (for region editing)",
+	       -command => sub {
+		   my $f = $acc_streets_uncorrect_track;
+		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
+		   add_new_layer("str", $f);
+	       }
+	      ],
 	      [Button => "Add streets.bbd (all GPS tracks)",
 	       -command => sub {
 		   my $f = $streets_track;
@@ -168,6 +177,13 @@ sub add_button {
 	      [Button => "Add points-all.bbd (all GPS trackpoints)",
 	       -command => sub {
 		   my $f = "$ENV{HOME}/src/bbbike/tmp/points-all.bbd";
+		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
+		   add_new_layer("p", $f);
+	       }
+	      ],
+	      [Button => "Add points-accurate-uncorrected.bbd (for region editing)",
+	       -command => sub {
+		   my $f = $acc_points_uncorrect_track;
 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
 		   add_new_layer("p", $f);
 	       }
