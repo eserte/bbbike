@@ -414,7 +414,7 @@ Sachsendamm: Mittelstreifen	3 7737,7505 7717,7564 7606,7611
 Sachsendamm: Mittelstreifen	3 7737,7505 7717,7564 7718,7641
 Sachsendamm: Mittelstreifen	3 7859,7486 7717,7564 7737,7505
 Sachsendamm: Mittelstreifen	3 7718,7641 7717,7564 7737,7505
-Boddinstr. - Karl-Marx-Str.: Mittelstreifen	3 12217,8320 12368,8356 12582,8408 12540,8458
+Boddinstr. - Karl-Marx-Str.: Mittelstreifen	3 12368,8356 12582,8408 12540,8458
 Weisestr. - Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3 11770,8292 11763,8337 11632,8302
 Flughafenstr. - Weisestr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3 11892,8372 11763,8337 11770,8292
 Bundesratufer - Stromstr.: unpassierbarer Mittelstreifen	3 6131,12978 6185,12968 6201,13058
@@ -487,6 +487,7 @@ tragen (Treppe und Rampe)	0:30 39281,17353
 tragen (Treppe oder sehr steile, sandige Rampe)	0:60 41715,18446
 tragen (Treppe am Körnerpark)	0:30 12734,7384
 tragen (zwei Treppen)	0:30 12115,8556
+tragen (Treppe mit Kinderwagenrampe)	0:30 13960,9365
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)

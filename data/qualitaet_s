@@ -18,7 +18,7 @@ B96a: Radweg Richtung N, OK	Q0 9228,23643 9146,23843 8984,24078 8659,24959 8493,
 Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15586,27150 15231,26587 14859,26029 14183,25020
 Hobrechtsfelder Chaussee (ab Kurve): schlechtes Kopfsteinpflaster, 13 km/h	Q3 15586,27150 15709,27984 15757,28054
 Wisbyer Str.: mäßiges Kopfsteinpflaster	Q2 11033,16464 11397,16405 11688,16365 11727,16358
-Weserstr.: Kopfsteinpflaster, schmale Radwege	Q1 11888,9203 11993,9211 12074,9217 12148,9209 12180,9193 12322,9124 12402,9080 12480,9037 12590,8977 12740,8862 12881,8750 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
+Weserstr.: Kopfsteinpflaster, schmale Radwege	Q1 11888,9203 11993,9211 12074,9217 12148,9209 12180,9193 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Stuttgarter Str.: mäßiger Asphalt	Q1 13663,8011 13510,8138 13331,8283 13166,8423
 Brockenstr.: Kopfsteinpflaster	Q2 13575,8593 13687,8734
 Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz möglich	Q2 13687,8734 13778,8846
@@ -97,9 +97,9 @@ Ebersstr.: gutes Kopfsteinpflaster, >22 km/h	Q1 6935,8208 6918,8178 6658,8063
 Reichenberger Str.: Kopfsteinpflaster	Q2 11454,10400 11610,10305 11833,10206 12054,10108 12237,10023 12403,9948 12562,9875 12718,9802 12837,9748 12939,9703
 Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11833,10206 11949,10414
 Aachener Str.: Kopfsteinpflaster	Q2 4687,8034 4688,8323 4623,8457
-Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13302,9894 13266,9851
+Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12870,9366 12912,9367
-Kiefholzstr.: Kopfsteinpflaster	Q2 13601,9572 13473,9720 13266,9851
+Kiefholzstr.: Kopfsteinpflaster	Q2 13601,9572 13457,9701 13251,9829
 Bouchestr.: Kopfsteinpflaster	Q2 13601,9572 13867,9864
 Hirschberger Str.: Kopfsteinpflaster	Q2 14988,11130 15012,11148 15082,11120
 Marzahner Chaussee: Kopfsteinpflaster	Q2 18559,12105 18390,11775
@@ -349,6 +349,8 @@ Görlitzer Park: teils fester sandiger Weg	Q1 12817,9964 12848,10039 12869,10071 
 Görlitzer Park, Rondell: teils fester sandiger Weg	Q1 12802,10097 12737,10051 12690,10062 12659,10119 12670,10176 12704,10201 12761,10195 12801,10146 12802,10097
 Görlitzer Park: teils fester sandiger Weg	Q1 12507,10130 12559,10220
 Görlitzer Park: schlechtes Kopfsteinpflaster	Q3 12559,10220 12603,10312
+Zur Eisenbahnbrücke: gutes Kopfsteinpflaster	Q1 13302,9894 13229,9853
+Bahndamm: fester Sandweg	Q1 13282,9828 13476,9720 13951,9356
 Tiergartenufer: Parkweg (Bodenwellen)	Q2 6292,11427 6128,11500 5976,11603 5835,11768 5711,11841 5566,11860
 (Lichtensteinallee - Tiergartenufer): Parkweg	Q2 6309,11443 6128,11500
 Fasanerieallee: Parkweg	Q1 6435,11606 6459,11638 6540,11754 6685,11954
@@ -936,6 +938,7 @@ Finowstr. (Neukölln): Kopfsteinpflaster	Q2 13218,8693 13171,8621 13124,8562
 Kleine Innstr.: Asphalt	Q0 13171,8621 13262,8554
 Erlanger Str.: Kopfsteinpflaster	Q2 12309,8487 12183,8538
 Tellstr.: Kopfsteinpflaster	Q2 12320,8927 12402,9080
+Jansastr.: Kopfsteinpflaster	Q2 12438,8859 12531,9009
 Ossastr.: Kopfsteinpflaster	Q2 12615,9132 12681,9083
 Ossastr.: gutes Kopfsteinpflaster	Q1 12829,8971 12881,8926
 Hüttenroder Weg: gutes Kopfsteinpflaster	Q1 13274,8945 13453,8812
@@ -947,6 +950,7 @@ Laubestr.: Kopfsteinpflaster	Q2 12980,8566 12822,8675
 Neckarstr.: Kopfsteinpflaster	Q2 12639,8344 12384,8284
 Isarstr.: Kopfsteinpflaster	Q2 12384,8284 12368,8356 12349,8464
 Heidelberger Str.: Trampelpfad	Q2 13657,9063 13483,9195
+Lexisstr.: Beton	Q1 12989,9471 13059,9417 13140,9354
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
 Schützallee: mäßiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfläche	Q2 2230,3823 1952,3864 1677,3885
 Riemeisterstr.: mäßiges Kopfsteinpflaster	Q2 373,4816 319,4906 168,5092 103,5123

@@ -360,7 +360,7 @@ Sachsendamm: Mittelstreifen	3 7737,7505 7717,7564 7606,7611
 Sachsendamm: Mittelstreifen	3 7737,7505 7717,7564 7718,7641
 Sachsendamm: Mittelstreifen	3 7859,7486 7717,7564 7737,7505
 Sachsendamm: Mittelstreifen	3 7718,7641 7717,7564 7737,7505
-Boddinstr. - Karl-Marx-Str.: Mittelstreifen	3 12217,8320 12368,8356 12582,8408 12540,8458
+Boddinstr. - Karl-Marx-Str.: Mittelstreifen	3 12368,8356 12582,8408 12540,8458
 Weisestr. - Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3 11770,8292 11763,8337 11632,8302
 Flughafenstr. - Weisestr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3 11892,8372 11763,8337 11770,8292
 Bundesratufer - Stromstr.: unpassierbarer Mittelstreifen	3 6131,12978 6185,12968 6201,13058
@@ -397,7 +397,7 @@ tragen? (Fußgängerbrücke)	0:120:-70 20445,536
 tragen? (Fußgängerbrücke)	0:120:-190 19770,-213
 tragen (Stufen), mit MTB befahrbar	0:30:-69 5725,11644
 tragen (Stufen), mit MTB befahrbar	0:30:-129 7684,12543
-tragen (Stufen)	0:60:-238 13145,9920
+tragen (Stufen)	0:60:-231 13145,9920
 unter der S-Bahn-Brücke tragen	0:30:-152 3745,18988
 tragen oder Aufzug (Storkower Str.)	0:60:-161 14528,13241
 tragen (Storkower Str.)	0:60:-114 14503,13167
@@ -424,6 +424,7 @@ tragen (Treppe und Rampe)	0:30:-154 39281,17353
 tragen (Treppe oder sehr steile, sandige Rampe)	0:60:-255 41715,18446
 tragen (Treppe am Körnerpark)	0:30:-114 12734,7384
 tragen (zwei Treppen)	0:30:-255 12115,8556
+tragen (Treppe mit Kinderwagenrampe)	0:30:-135 13960,9365
 Drängelgitter (Görlitzer Park)	BNP:5:13 12686,10045
 Drängelgitter (Görlitzer Park)	BNP:5:22 12770,10210
 Drängelgitter (Görlitzer Park)	BNP:5:-153 12904,10141
