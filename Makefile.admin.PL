@@ -562,9 +562,6 @@ linkextmod:
 EOF
 . <<'EOF'
 
-ext:
-	cd ext && ${MAKE} ext
-
 generatemods: Strassen/Generated.pm
 
 bundles:
