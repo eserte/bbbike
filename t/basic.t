@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.1 2004/03/26 22:04:36 eserte Exp $
+# $Id: basic.t,v 1.2 2004/05/10 22:17:02 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -50,6 +50,7 @@ for my $f (@files) {
 		push @add_opt, "-M$non_heavy";
 	    }
 	}
+	*OLDERR = *OLDERR; # cease -w
 	open(OLDERR, ">&STDERR") or die;
 	my $diag_file = "/tmp/bbbike-basic.text";
 	open(STDERR, ">$diag_file") or die $!;
