@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.82 2003/07/09 21:26:23 eserte Exp eserte $
+# $Id: Makefile,v 1.83 2003/08/25 23:06:55 eserte Exp $
 #
 
 MISCDIR=		../misc
@@ -19,6 +19,7 @@ CHECK_IMAGES=		${MISCSRCDIR}/check_images
 RESOLVE_STARS=		${MISCSRCDIR}/resolve_stars
 SORTBYCAT=		${MISCSRCDIR}/sortbycat
 SEARCH_INACCESSIBLE=	${MISCSRCDIR}/search_inaccessible_points
+STEIGUNG_STAT=		${MISCSRCDIR}/steigung_stat
 
 TARGETS=	strassen plaetze landstrassen landstrassen2 flaechen
 TARGETS+=	wasserstrassen wasserumland wasserumland2
@@ -30,7 +31,7 @@ TARGETS+=	sehenswuerdigkeit obst radwege radwege_exact
 TARGETS+=	qualitaet_s qualitaet_l
 TARGETS+=	handicap_s handicap_l
 TARGETS+=	label vorfahrt comments relation_gps nolighting
-TARGETS+=	housenumbers green brunnels
+TARGETS+=	housenumbers green brunnels mount
 
 WRITEABLE=	chmod u+w,ugo+r
 READONLY=	chmod ugo+r,ugo-w
@@ -281,6 +282,11 @@ nolighting:	nolighting-orig
 housenumbers:	housenumbers-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) housenumbers-orig > housenumbers
+	-@$(READONLY) $@
+
+mount:	strassen hoehe
+	-@$(WRITEABLE) $@
+	$(STEIGUNG_STAT) -minmount 0.5 -commentscompatible -i hoehe -o $@
 	-@$(READONLY) $@
 
 # Makefile in ../misc ausführen

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.111 2003/08/24 23:09:37 eserte Exp $
+# $Id: bbbike,v 3.112 2003/08/25 23:07:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -211,7 +211,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.111 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.112 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -303,12 +303,12 @@ foreach (@Radwege::category_order) {
   ('str_s' => ['s-out', 'gr', 'rw',
 	       's-NN', 's-N', 's-H', 's-HH', 's-B', 's-BAB', 'comm',
 	       (map { "comm-$_" } @comments_types),
-	       'nl', 'qs', 'hs',
+	       'nl', 'qs', 'hs', 'mount',
 	       's-label-bg', 's-label', 'hoehe', 'vf-bg', 'sperre',
 	       'delnet', 'pl-fg', 'lsa-bg', 'vf-fg', 'lsa-fg'],
    'str_l' => ['l-out', 'l', 'comm',
 	       (map { "comm-$_" } @comments_types),
-	       'ql', 'hl', 'l-label-bg', 'l-label'],
+	       'ql', 'hl', 'l-label-bg', 'l-label'], # XXX mount?
    'p_o'   => ['o', 'O'],
    'p_p'   => ['p'],
    'str_u' => ['u', 'u-bg', 'u-fg', 'u-label'],
@@ -2261,6 +2261,17 @@ sub do_iconframe {
 			    -variable => \$str_draw{'comm'},
 			    -command => sub { plot('str','comm') },
 			   );
+	$strcm->checkbutton
+	    (-label => M"Steigungen",
+	     -variable => \$str_draw{'mount'},
+	     -command => sub {
+		 my $comm = Strassen->new("comments");
+		 my $comm_mount = Strassen->new_copy_restricted($comm, -grep => ["St;"]);
+		 my $mount = MultiStrassen->new($str_file{"mount"},
+						$comm_mount);
+		 plot('str','mount', -object => $mount);
+	     },
+	    );
     }
     menu_entry_up_down($strcm, $tag_group{'str_s'});
     menuright($strasse_check, $strcm);
@@ -4696,6 +4707,7 @@ sub define_item_attribs {
 	 's-N'      => [1, 1, 2, 2, 4, 7],
 	 's-NN'     => [1, 1, 2, 2, 4, 7],
 	 'comm'     => [1, 2, 3, 4, 6, 10],
+	 'mount'    => [1, 2, 3, 4, 6, 10],
 	 'qs'       => [3, 4, 5, 6, 8, 12],
 	 'hs'       => [3, 4, 5, 6, 8, 12],
 	 'rw'       => [1, 2, 3, 4, 6, 10],
@@ -4736,6 +4748,7 @@ sub define_item_attribs {
 	 'hl'   => [2,5],
 	 'nl'   => [2,4],
 	 'comm' => [5,2],
+	 'mount'=> [5,2],
 	 'e'    => [5,2],	# Fähren
 	 'g'    => [8,5,2,5],	# Grenzen
 	 'z'    => [8,5,2,5],	# PLZ-Grenzen
@@ -4802,6 +4815,7 @@ sub define_item_attribs {
 	 'nl' => 'nolighting',
 	 'gr' => 'green',
 	 'comm' => 'comments',
+	 'mount' => 'mount',
 	 'fz' => "$FindBin::RealBin/misc/fragezeichen", # only for development
 	);
     foreach my $type (@comments_types) {
@@ -4850,6 +4864,7 @@ sub define_item_attribs {
 	 'nl' => [M"Unbeleuchtete Straße", M"Unbeleuchtete Straßen", 0],
 	 'gr' => [M"Grüner Weg", M"Grüne Wege", 0],
 	 'comm' => [M"Kommentare", M"Kommentare", 0],
+	 'mount' => [M"Steigung", M"Steigungen", 0],
 	 # XXX specific comm types?
 	);
     %p_attrib =
@@ -4956,7 +4971,7 @@ sub define_item_attribs {
 	    hoehe vf-bg sperre v-fg obst
 	    route comm),
 	 (map { "comm-$_" } @comments_types),
-	 qw(qs hs ql hl nl delnet
+	 qw(qs hs ql hl mount nl delnet
 	    O o p pl-fg lsas lsas-t lsa-bg lsa-fg
 	    vf-fg pp kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
 	    fz L pp-L L-img L-fg ovl
@@ -5353,6 +5368,20 @@ sub generate_plot_functions {
 					    # $abk-img or $abk-fg ?
 					    -tags => [$abk,$strname,"$abk-img",
 						      "$abk-" . ($i-1)]);
+			    if ($street_photo eq $steigung_photo) {
+				if ($strname =~ /([\d\.]+)\s*%/) {
+				    outline_text
+					($c,
+					 $mx, $my+18,
+					 -anchor => "nw",
+					 -text => "$1%",
+					 -font => $font{'small'},
+					 -tags => [$abk,$strname,"$abk-fg",
+						   "$abk-" . ($i-1)],
+					 -outlinewidth => 1,
+					);
+				}
+			    }
 			}
 		    }
 		}
@@ -5612,7 +5641,7 @@ sub set_bindings {
 	std_p_binding($_);
     }
 
-    foreach (qw(s S l L u b r f v v-fg w W i e comm),
+    foreach (qw(s S l L u b r f v v-fg w W i e comm mount),
 	     (map { "comm-$_" } @comments_types),
 	     qw(gr qs hs ql hl fz nl ovl)) {
 	std_str_binding($_);
@@ -8324,7 +8353,8 @@ sub read_ampeln {
 ### AutoLoad Sub
 sub read_hoehe {
     my(%args) = @_;
-    return if (!$args{-force} && keys %hoehe != 0);
+    return if (!$args{-force} && keys %hoehe != 0 &&
+	       $p_obj{"hoehe"} && $p_obj{"hoehe"}->is_current);
     if (!eval {
 	my $h = new Strassen ($args{-file}
 			      ? $args{-file}
@@ -8334,6 +8364,7 @@ sub read_hoehe {
 				)
 			     );
 	%hoehe = %{ $h->get_hashref };
+	$p_obj{"hoehe"} = $h;
 	1;
     }) {
 	warn $@;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.29 2003/08/24 23:02:02 eserte Exp eserte $
+# $Id: StrassenNetz.pm,v 1.30 2003/08/25 23:05:45 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -246,22 +246,52 @@ sub make_sperre_1 {
 #   sourcenet: bereits existierendes StrassenNetz-Objekt, das
 #              als Vorlage dient
 #   hoehe: Hash-Referenz mit den Hoehenangaben
-#   -min => minimale_Steigung
+#   -min => minimale_Steigung in %
 ### AutoLoad Sub
 sub make_net_steigung {
     my($self, $sourcenet, $hoehe, %args) = @_;
     die "sourcenet must be StrassenNetz object"
-      if !$sourcenet->isa('StrassenNetz');
-    my $min_steigung = $args{'-min'} || 0.001; # 0.1% als minimale Steigung
+	if !$sourcenet->isa('StrassenNetz');
+    my $calc_strecke = $args{'-strecke'} || \&Strassen::Util::strecke_s;
+    my $min_mount = 0.001; # 0.1% als minimale Steigung
+    if (exists $args{'-min'}) {
+	$min_mount = $args{'-min'}/100;
+    }
     $self->{Net} = {};
     my $net = $self->{Net};
     while(my($p1,$v) = each %{$sourcenet->{Net}}) {
 	while(my($p2) = each %$v) {
 	    if (exists $hoehe->{$p1}) {
 		if (exists $hoehe->{$p2}) {
-		    my $strecke = Strassen::Util::strecke_s($p1, $p2);
+		    my $strecke = $calc_strecke->($p1, $p2);
 		    my $hoehendiff = $hoehe->{$p2}-$hoehe->{$p1};
-		    $net->{$p1}{$p2} = int(($hoehendiff/$strecke)*1000)/1000;
+		    my $mount = int(($hoehendiff/$strecke)*1000)/1000;
+		    $net->{$p1}{$p2} = $mount
+			if $mount >= $min_mount;
+		} else {
+		    # XXX Hack! Find a better solution!
+		    # Find neighbors of $p2
+		    while(my($p3, $v1) = each %{$sourcenet->{Net}{$p2}}) {
+			next if $p3 eq $p1;
+			if (exists $hoehe->{$p3}) {
+			    my $strecke1 = $calc_strecke->($p1, $p2);
+			    my $strecke2 = $calc_strecke->($p2, $p3);
+			    my $strecke = $strecke1 + $strecke2;
+			    my $hoehendiff = $hoehe->{$p3}-$hoehe->{$p1};
+			    if (!exists $net->{$p1}{$p2}) {
+				my $mount = int((($hoehendiff/$strecke)
+						 *($strecke1/$strecke))*1000)/1000;
+				$net->{$p1}{$p2} = $mount
+				    if $mount >= $min_mount;
+			    }
+			    if (!exists $net->{$p2}{$p3}) {
+				my $mount = int((($hoehendiff/$strecke)
+						 *($strecke2/$strecke))*1000)/1000;
+				$net->{$p2}{$p3} = $mount
+				    if $mount >= $min_mount;
+			    }
+			}
+		    }
 		}
 	    }
 	}

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.25 2003/08/14 22:29:43 eserte Exp $
+# $Id: Core.pm,v 1.26 2003/08/25 23:09:04 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.25 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.26 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -193,8 +193,12 @@ sub new_from_data_ref {
 sub new_copy_restricted {
     my($class, $old_s, %args) = @_;
     my %restrictions;
+    my %grep;
     if ($args{-restrictions}) {
 	%restrictions = map { ($_ => 1) } @{ $args{-restrictions} };
+    }
+    if ($args{-grep}) {
+	%grep = map { ($_ => 1) } @{ $args{-grep} };
     }
 
     my $res = $class->new;
@@ -202,7 +206,8 @@ sub new_copy_restricted {
     while(1) {
 	my $ret = $old_s->next;
 	last if !@{$ret->[COORDS]};
-	next if $restrictions{$ret->[CAT]};
+	next if (keys %grep && !exists $grep{$ret->[CAT]});
+	next if exists $restrictions{$ret->[CAT]};
 	$res->push($ret);
     }
 
