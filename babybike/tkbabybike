@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: tkbabybike,v 2.35 2004/01/04 11:03:46 eserte Exp $
+# $Id: tkbabybike,v 3.1 2004/04/20 22:21:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package Tk::Babybike;
 
 use strict;
 use vars qw($VERSION $splash_screen $moduledir);
-$VERSION = sprintf("%d.%03d", q$Revision: 2.35 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 3.1 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     # FindBin and Cwd is not installed in the iPAQ dist
@@ -76,6 +76,8 @@ use lib "$FindBin::RealBin/lib"; # just for the ProgressSplash widget
 #      }
 #  }
 
+my $tcltk;
+
 sub start_progress_splash {
     my $type = shift || "slow";
     if ($] >= 5.005) {
@@ -99,15 +101,28 @@ sub start_progress_splash {
     }
 }
 
+my $Pixmap;
+
 BEGIN {
+    if (grep { $_ eq '-tcltk' } @ARGV) {
+	$tcltk = 1;
+	$Tcl::Tk::DEBUG = 1;
+    }
+
     # show only splash screen if activated explicitely or if started
     # as a script
-    if (!caller(2)) {
+    if (!caller(2) && !$tcltk) {
 	start_progress_splash("fast"); # only here use "fast"
     }
-}
 
-use Tk;
+    if ($tcltk) {
+	eval 'use Tcl::Tk qw(:perlTk)'; die $@ if $@;
+	$Pixmap = "Photo";
+    } else {
+	eval 'use Tk'; die $@ if $@;
+	$Pixmap = "Pixmap";
+    }
+}
 
 BEGIN {
     # find myself
@@ -136,7 +151,20 @@ BEGIN {
 }
 
 use Tk::CanvasUtil;
-use Tk::PathEntry 2.17;
+BEGIN {
+    if (!$tcltk) {
+	eval 'use Tk::PathEntry 2.17;'; die $@ if $@;
+    } else {
+	for my $meth (qw(center_view center_view2 current_item
+			 get_center get_corners get_cursor is_visible
+			 load_canvas save_canvas scroll_canvasxy_to_rootxy
+			 scroll_pixels see see_view set_cursor
+			 view_to_coords widgetx widgety)) {
+	    no strict 'refs';
+	    *{"Tcl::Tk::Widget::Canvas::$meth"} = \&{"Tk::Canvas::$meth"};
+	}
+    }
+}
 
 use BBBikeRouting;
 #use Strassen;
@@ -212,7 +240,7 @@ my $tiledir = "$moduledir/images/tiles"; # XXX
 ($centerx, $centery) = (14598,11245);
 
 $can_overview = 0;
-$use_pathentry = 1;
+$use_pathentry = !$tcltk;
 
 $scope = "berlin" if !defined $scope;
 @normal_strassen_datadirs = @Strassen::datadirs;
@@ -281,11 +309,13 @@ sub parse_cmd_line {
 	} elsif ($ARGV[0] eq '-d' || $^O eq 'freebsd') { # XXX do not hardcode $^O condition
 	    shift @ARGV;
 	    eval 'use blib "/tmp"';
-	    eval 'use blib "/home/e/eserte/src/perl/Tk-App"';
-	    eval '
-	    require Tk::App::Reloader;
-	    $Tk::App::Reloader::VERBOSE = 1;
-        '; warn $@ if $@;
+	    if (!$tcltk) {
+		eval 'use blib "/home/e/eserte/src/perl/Tk-App"';
+		eval '
+	        require Tk::App::Reloader;
+	        $Tk::App::Reloader::VERBOSE = 1;
+            '; warn $@ if $@;
+	    }
 	} else {
 	    warn "Unrecognized switch $ARGV[0]";
 	    shift @ARGV;
@@ -316,13 +346,13 @@ sub main_gui {
 	    $mw0->standard_key_bindings($mw);
 	}
     } else {
-	$mw = new MainWindow;
+	$mw = MainWindow->new;
     }
     $mw->title("tkbabybike $VERSION");
     $mw->withdraw;
     $mw->OnDestroy(\&cleanup);
 
-    {
+    if (!$tcltk) {
 	my $bits = pack("b8"x8,
 			".....11.",
 			"....1111",
@@ -373,13 +403,15 @@ sub main_gui {
     $vbox_entries = $hbox_top->Frame->pack(-side => 'left', -fill => 'x', -expand => 1);
     $hbox_buttons = $hbox_top->Frame->pack(-side => 'left');
 
-    $transpose_image = $mw->Pixmap(-file => "$moduledir/images/transpose.xpm");
+    $transpose_image = $mw->$Pixmap(-file => "$moduledir/images/transpose.xpm");
+    $transpose_image = $transpose_image->path if $tcltk;
     $toggle       = $hbox_top->Button
 	(-command => \&swap_start_goal,
 	 -pady => 10,
 	 -image => $transpose_image)->pack(-side => 'left');
 
-    $browse_image = $mw->Pixmap(-file => "$moduledir/images/mini.gnome.xpm");
+    $browse_image = $mw->$Pixmap(-file => "$moduledir/images/mini.gnome.xpm");
+    $browse_image = $browse_image->path if $tcltk;
     $browse_b = $hbox_top->Checkbutton
 	(-variable => \$browse_mode,
 	 -indicatoron => 0,
@@ -395,7 +427,8 @@ sub main_gui {
 	 },
 	 -image => $browse_image)->pack(-side => 'left');
 
-    $center_image = $mw->Pixmap(-file => "$moduledir/images/center.xpm");
+    $center_image = $mw->$Pixmap(-file => "$moduledir/images/center.xpm");
+    $center_image = $center_image->path if $tcltk;
 
     $hbox_start = $vbox_entries->Frame->pack(-fill => 'x', -expand => 1);
     $hbox_ziel  = $vbox_entries->Frame->pack(-fill => 'x', -expand => 1);
@@ -505,7 +538,7 @@ sub main_gui {
     $cframe->gridRowconfigure(0, -weight => 1);
     $c = $cframe->Canvas
 	(
-	 -scrollregion => [0,0,$draw->{Width},$draw->{Height}],
+	 -scrollregion => ($tcltk ? "0 0 $draw->{Width} $draw->{Height}" : [0,0,$draw->{Width},$draw->{Height}]),
 	 -highlightthickness => 0,
 	 -borderwidth => 0,
 	)->grid(-row => 0, -column => 0, -sticky => "eswn");
@@ -529,7 +562,7 @@ sub main_gui {
     $kbd_adjust = $cframe->Button
 	(-padx => 0, -pady => 0, -borderwidth => 0,
 	 -highlightthickness => 0,
-	 -bitmap=>'updown',
+	 ($tcltk ? (-text => "^") : (-bitmap=>'updown')),
 	 #-command => \&adjust_geometry_for_kbd
 	 -command => sub {
 	     if (!$kbd) {
@@ -784,9 +817,11 @@ sub main_gui {
 	    [Button => "~Speak", -command => \&speak],
 	    [Button => "~Lat/Long", -command => \&tk_set_lat_long],
 	    [Button => "Lat/Long of Start", -command => \&get_lat_long],
+	    ($tcltk ? () : (
 	    [Button => "Simulate route to GPS", -command => [\&gps_interface, 1]],
 	    [Button => "Send route to GPS", -command => [\&gps_interface, 0]],
 	    [Button => "Download from GPS", -command => [\&gps_download, 0]],
+			   )),
 	   ]
 	  ],
 	  [Cascade => '~Help', -menuitems =>
@@ -821,7 +856,8 @@ sub main_gui {
     $mw->afterIdle
 	(sub {
 	     $mw->after(300,sub {
-			    $c->see($transpose->($centerx, $centery));
+			    $c->see($transpose->($centerx, $centery))
+				if !$tcltk;
 			    # set as late as possible
 			    $c->configure(-yscrollcommand =>
 					  sub {
@@ -833,7 +869,8 @@ sub main_gui {
 					      $sx->set(@_);
 					      overview_update();
 					  },
-					 );
+					 )
+				if !$tcltk;
 			})
 	 });
 
@@ -871,21 +908,22 @@ sub set_scope {
     if (!$use_tiles) {
 	if (-r "/tmp/$imgname.xpm" &&
 	    -M "/tmp/$imgname.xpm" < -M "$moduledir/images/$imgname.xpm.gz") {
-	    $map = $mw->Pixmap(-file => "/tmp/$imgname.xpm");
+	    $map = $mw->$Pixmap(-file => "/tmp/$imgname.xpm");
 	} elsif (!-r "$moduledir/images/$imgname.xpm" &&
 		 -r "$moduledir/images/$imgname.xpm.gz") {
 	    print STDERR "Decompressing $imgname.xpm.gz... ";
 	    my $tmp = "/tmp/$imgname.xpm";
 	    system("gzip -dc $moduledir/images/$imgname.xpm.gz > $tmp");
 	    print STDERR "OK\n";
-	    $map = $mw->Pixmap(-file => $tmp);
+	    $map = $mw->$Pixmap(-file => $tmp);
 	    unlink $tmp;
 	} else {
-	    $map = $mw->Pixmap(-file => "$moduledir/images/$imgname.xpm");
+	    $map = $mw->$Pixmap(-file => "$moduledir/images/$imgname.xpm");
 	}
 	if (!$map) {
 	    die "Can't load $moduledir/images/$imgname ...";
 	}
+	$map = $map->path if $tcltk;
     } else {
 	$tiledir = "$moduledir/images/${imgname}_tiles";
 	if (!-d $tiledir) {
@@ -1400,7 +1438,7 @@ sub error_dialog {
 sub toplevel_checker {
     my($t) = @_;
 
-    if ($mw->property('exists', '_MB_THEME', 'root')) {
+    if ($tcltk || $mw->property('exists', '_MB_THEME', 'root')) {
 	# assuming we are running matchbox and toplevel resizing is
 	# not necessary
 	return;
@@ -1470,7 +1508,7 @@ sub overview_update {
 		    if (-r $file) {
 			system("gzip -dc $file > /tmp/tile.xpm");
 			my $p = $c->{Tile}{"$x-$y"} =
-			    $c->Pixmap(-file => "/tmp/tile.xpm");
+			    $c->$Pixmap(-file => "/tmp/tile.xpm");
 			$c->createImage($x*$tilewidth, $y*$tileheight, -anchor => "nw",
 					-image => $p,
 					-tags => ["map", "map-$x-$y"]);
@@ -1509,7 +1547,7 @@ sub overview_update {
 	my($midx, $midy) = (($c[2]-$c[0])/2+$c[0],
 			    ($c[3]-$c[1])/2+$c[1]);
 
-	if (!$overview_canvas->is_visible($midx, $midy)) {
+	if (!$overview_canvas->is_visible($midx, $midy) && !$tcltk) {
 	    $overview_canvas->center_view($midx, $midy);
 	}
     }
@@ -1521,7 +1559,7 @@ sub create_overview_button {
 		  -bg => '#c0c0c0',
 		 );
     if ($scope eq "berlin") {
-	$ov_img = $mw->Pixmap(-file => "$moduledir/images/berlin_overview_small_border.xpm");
+	$ov_img = $mw->$Pixmap(-file => "$moduledir/images/berlin_overview_small_border.xpm");
 	if ($ov_img) {
 	    $ov_b = $c->Button
 		(@b_args,
@@ -1545,7 +1583,7 @@ sub toggle_overview {
 	if (!$overview_canvas || !Tk::Exists($overview_canvas)) {
 	    my($width,$height);
 	    if ($scope eq 'berlin') {
-		$small_img = $mw->Pixmap(-file => "$moduledir/images/berlin_small.xpm");
+		$small_img = $mw->$Pixmap(-file => "$moduledir/images/berlin_small.xpm");
 		my $draw = do "$moduledir/images/berlin_small.dim";
 		($width, $height) = ($draw->{Width}, $draw->{Height});
 		$overview_canvas = $c->Canvas
@@ -2356,4 +2394,4 @@ return 1 if caller;
 
 parse_cmd_line();
 main_gui(undef);
-Tk::MainLoop();
+MainLoop();
