@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.10 2004/07/04 22:16:03 eserte Exp eserte $
+# $Id: BBBikeGPS.pm,v 1.11 2004/08/02 20:48:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -183,7 +183,8 @@ sub BBBikeGPS::draw_gpsman_data {
 		$show_track_graph_speed
 		$show_track_graph_alt
 		$show_track_graph_grade
-		$show_statistics);
+		$show_statistics
+		$do_center_begin);
     $draw_gpsman_data_s = 1 if !defined $draw_gpsman_data_s;
     $draw_gpsman_data_p = 1 if !defined $draw_gpsman_data_p;
     $show_track_graph = 0   if !defined $show_track_graph;
@@ -191,6 +192,7 @@ sub BBBikeGPS::draw_gpsman_data {
     $show_track_graph_alt = 0 if !defined $show_track_graph_alt;
     $show_track_graph_grade = 0 if !defined $show_track_graph_grade;
     $show_statistics = 0    if !defined $show_statistics;
+    $do_center_begin = 0    if !defined $do_center_begin;
 
     my $file = $gpsman_last_dir || Cwd::cwd();
     my $weiter = 0;
@@ -343,6 +345,8 @@ EOF
     }
     $f2->Checkbutton(-text => M"Statistik zeigen",
 		     -variable => \$show_statistics)->pack(-anchor => "w");
+    $f2->Checkbutton(-text => M"Auf Anfang zentrieren",
+		     -variable => \$do_center_begin)->pack(-anchor => "w");
     my $accuracy_level = 2;
     my $acc_opt = [[M("Nur genaue Punkte auswerten") => 0],
 		   [M("Leicht ungenaue Punkte auch auswerten") => 1],
@@ -400,6 +404,7 @@ EOF
 				   -drawstreets => $draw_gpsman_data_s,
 				   -drawpoints  => $draw_gpsman_data_p,
 				   -accuracylevel => $accuracy_level,
+				   -centerbegin => $do_center_begin,
 				  );
 
     $file;
@@ -416,6 +421,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
     my $draw_gpsman_data_s = exists $args{-drawstreets} ? $args{-drawstreets} : $global_draw_gpsman_data_s;
     my $draw_gpsman_data_p = exists $args{-drawpoints} ? $args{-drawpoints} : $global_draw_gpsman_data_p;
     my $accuracy_level = exists $args{-accuracylevel} ? $args{-accuracylevel} : 3;
+    my $do_center_begin = $args{-centerbegin} || 0;
 
     my $base;
     my $s;
@@ -581,6 +587,17 @@ sub BBBikeGPS::do_draw_gpsman_data {
 				 -accuracylevel => $accuracy_level,
 				})
 	    if $show_track_graph;
+
+    if ($do_center_begin && @{ $gps->Points }) {
+	my $wpt = $gps->Points->[0];
+	my($x,$y) = map { int } $Karte::map{"polar"}->map2map($main::coord_system_obj, $wpt->Longitude, $wpt->Latitude);
+	my($x0,$y0) = ($main::coord_system eq 'standard' ? ($x,$y) : map { int } $Karte::map{"polar"}->map2standard($wpt->Longitude, $wpt->Latitude));
+	my $tcoords = [[]];
+	$tcoords->[0][0] = [ transpose($x0, $y0) ];
+	main::mark_point(-coords => $tcoords,
+			 -clever_center => 1);
+    }
+
     };
     my $err = $@;
     main::DecBusy($top);

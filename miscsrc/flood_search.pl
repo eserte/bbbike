@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: flood_search.pl,v 1.10 2003/08/24 23:23:40 eserte Exp $
+# $Id: flood_search.pl,v 1.11 2004/08/02 21:49:32 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -23,8 +23,11 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/../data",
 	);
-use vars qw($net_type);
+use vars qw($net_type $show_rings $circle_unit);
 $net_type = "s" if !defined $net_type;
+$show_rings = 0 if !defined $show_rings;
+$circle_unit = "km" if !defined $circle_unit;
+
 use base qw(BBBikePlugin);
 use Strassen::Util;
 use BBBikeUtil qw(s2hm);
@@ -71,6 +74,34 @@ sub add_button {
     $main::balloon->attach($b, -msg => "Flood search")
 	if $main::balloon;
 
+    my $update_ring_visibility = sub {
+	if ($show_rings == 0) {
+	    $main::c->itemconfigure("flood", -state => "normal");
+	} else {
+	    my $dist = $show_rings;
+	    $main::c->itemconfigure("flood", -state => "hidden");
+	    while($dist < 600) { # max. 10 hours
+		$main::c->itemconfigure("flood-$dist", -state => "normal");
+		$dist += $show_rings;
+	    }
+	}
+    };
+
+    my $ein_ausblenden_menuitems =
+	[[Radiobutton => "Alles",
+	  -variable => \$show_rings,
+	  -value => 0,
+	  -command => $update_ring_visibility,
+	 ]];
+    for my $ring (2, 3, 4, 5, 7, 10, 15, 20, 25, 30, 40, 50, 60, 80, 100, 150) {
+	push @$ein_ausblenden_menuitems,
+	    [Radiobutton => "Alle $ring km",
+	     -variable => \$show_rings,
+	     -value => $ring,
+	     -command => $update_ring_visibility,
+	    ];
+    }
+	       
     BBBikePlugin::place_menu_button
 	    ($mmf,
 	     [[Button => "~Delete", -command => sub { delete_flood_lines() }],
@@ -81,7 +112,20 @@ sub add_button {
 	      [Radiobutton => "Straßen und Bahnen",
 	       -variable => \$net_type,
 	       -value => "s_b",
-	      ]
+	      ],
+	      "-",
+	      [Radiobutton => "km",
+	       -variable => \$circle_unit,
+	       -value => "km",
+	      ],
+	      [Radiobutton => "Minuten",
+	       -variable => \$circle_unit,
+	       -value => "min",
+	      ],
+	      "-",
+	      [Cascade => "Ein-/ausblenden",
+	       -menuitems => $ein_ausblenden_menuitems,
+	      ],
 	     ],
 	     $b,
 	     __PACKAGE__."_menu",
@@ -147,11 +191,11 @@ sub flood_search {
     $PRED{$act_coord} = undef;
 
     my $adjust_dist_text =
-	($net_type eq 's'
+	($circle_unit eq 'km'
 	 ? sub { $_[0] }
 	 : sub {
 	     my $dist = shift;
-	     my $time = $dist * 1000/(5/3.6);
+	     my $time = $dist*1000 / (main::get_active_speed()/3.6);
 	     s2hm($time);
 	 }
 	);
@@ -184,7 +228,7 @@ sub flood_search {
 			$entf %  5 == 0 ? "#00b000" :
 			"black");
 	    $c->createLine(@$cdef, -fill => $fill,
-			   -tags => ["flood","flood-circle"]);
+			   -tags => ["flood","flood-circle","flood-$entf"]);
 	    my $label_dist;
 	    for(my $coord_i = 0; $coord_i < $#$cdef; $coord_i+=2) {
 		if ($coord_i > 0) {
@@ -198,7 +242,7 @@ sub flood_search {
 				-anchor => "w",
 				-text => $adjust_dist_text->($entf),
 				-fill => $fill,
-				-tags => ["flood", "flood-text"]);
+				-tags => ["flood", "flood-text","flood-$entf"]);
 		    if (defined &main::outline_text) {
 			#warn "@args";
 			main::outline_text($c, @args);
@@ -220,7 +264,7 @@ sub flood_search {
     };
 
     # XXX configurable
-    my $CIRCLE_DELTA = ($net_type eq 's' ? 1000 : 1000*16);
+    my $CIRCLE_DELTA = 1000; # XXX ($circle_unit eq 'km' ? 1000 : 1000*16);
 
     while (1) {
 	$CLOSED{$act_coord} = $act_dist;

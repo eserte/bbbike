@@ -362,6 +362,32 @@ kE<auml>me noch eine abgeschE<auml>tzte Zeit fE<uuml>r die Benutzung
 des Verkehrsmittels (Fahrzeit + Zusteigzeit + Umsteigezeiten). Eine
 Verbindung zu Fahrinfo wE<auml>re genial.
 
+Vorgehensweise:
+
+=over
+
+=item * automatisch Verknüpfungspunkte Bahnhof-Straßennetz erstellen.
+Z.B. exact_streetchooser verwenden, um die nächste Straße zu
+ermitteln, und dann mit add_net den Lotpunkt neu erzeugen.
+
+=item * evtl. für pathologische Fälle Verknüpfungspunkte manuell
+erstellen
+
+=item * make_net_cat für die Geschwindigkeit. Faustregel: RB 80-100
+km/h (?), U-/S-Bahn anhand von einigen Fahrplänen
+Durchschnittsgeschwindigkeiten ermitteln
+
+=item * jeder Verknüpfungspunkt wird mit einer Penalty belegt, die der
+Wartezeit ungefähr entspricht.
+
+=item * auch Umsteigemöglichkeiten im Netz mit Penaltys belegen (wie?)
+
+=item * Suche modifizieren: Verabschieden vom Grundsatz gleiche
+Koordinate = Verknüpfung? Mitführen der aktuellen Linie (bzw.
+Liniengruppe), um Umsteigen zu erkennen.
+
+=back
+
 =item *
 
 Aufteilung des Routen-MenE<uuml>s. In das zweite MenE<uuml> kommen
