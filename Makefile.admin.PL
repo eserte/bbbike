@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.19 2004/01/17 20:57:52 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.19 2004/01/17 20:57:52 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -231,7 +231,7 @@ CGI2_ARCH_WEB=  $(TMPDIR)/bbbikecgi_web.zip
 # CGI-Distribution: alle Dateien in einer Hierarchie
 cgidist: cgidistdir
 	$(RM_F) $(CGI_ARCH)
-	cd $(BBBIKE_TMP); $(ZIP) $(ZIPFLAGS) $(CGI_ARCH) $(DISTNAME)
+	cd $(BBBIKE_TMP) && $(ZIP) $(ZIPFLAGS) $(CGI_ARCH) $(DISTNAME)
 
 cgidistdir:   MANIFEST.bbbikecgi
 	$(RM_RF) $(BBBIKE_TMP)
@@ -263,13 +263,13 @@ cgidist2:
 		-MExtUtils::Manifest=manicopy,maniread \
                 -e "manicopy(maniread(q{MANIFEST.bbbikecgi.prog}),q{$(BBBIKE_TMP)/$(DISTNAME)}, q{$(DIST_CP)});"
 	$(MV) $(BBBIKE_TMP)/$(DISTNAME)/cgi/* $(BBBIKE_TMP)
-	cd $(BBBIKE_TMP); $(ZIP) $(ZIPFLAGS) $(CGI2_ARCH_PROG) .
+	cd $(BBBIKE_TMP) && $(ZIP) $(ZIPFLAGS) $(CGI2_ARCH_PROG) .
 	$(RM_RF) $(BBBIKE_TMP)
 	$(MKPATH) $(BBBIKE_TMP)
 	$(PERL) -I$(PERL_ARCHLIB) -I$(PERL_LIB) \
 		-MExtUtils::Manifest=manicopy,maniread \
                 -e "manicopy(maniread(q{MANIFEST.bbbikecgi.web}),q{$(BBBIKE_TMP)/$(DISTNAME)}, q{$(DIST_CP)});"
-	cd $(BBBIKE_TMP); $(ZIP) $(ZIPFLAGS) $(CGI2_ARCH_WEB) $(DISTNAME)
+	cd $(BBBIKE_TMP) && $(ZIP) $(ZIPFLAGS) $(CGI2_ARCH_WEB) $(DISTNAME)
 
 # In beiden MANIFEST-Dateien sind images enthalten, weil images sowohl vom
 # Browser aus, als auch bei der PNG/GIF-Erstellung verwendet werden.
@@ -292,7 +292,7 @@ RECODE=            recode
 
 cbbbikedist: cbbbikedistdir
 	$(RM_F) $(CBBBIKE_ARCH)
-	cd $(TMPDIR); $(ZIP) $(ZIPFLAGS) $(CBBBIKE_ARCH) $(DISTNAME)
+	cd $(TMPDIR) && $(ZIP) $(ZIPFLAGS) $(CBBBIKE_ARCH) $(DISTNAME)
 
 cbbbikedistdir:
 	$(RM_RF) $(BBBIKE_TMP)
@@ -303,11 +303,11 @@ cbbbikedistdir:
 # nach cp850 (besser als cp437) konvertiert
 cbbbikedosdist: cbbbikedosdistdir
 	$(RM_F) $(CBBBIKE_DOS_ARCH)
-	cd $(TMPDIR); $(ZIP) $(ZIPFLAGS) $(CBBBIKE_DOS_ARCH) $(DISTNAME)
+	cd $(TMPDIR) && $(ZIP) $(ZIPFLAGS) $(CBBBIKE_DOS_ARCH) $(DISTNAME)
 
 cbbbikedosdistdir: cbbbikedistdir
-	cd $(BBBIKE_TMP); chmod u+w *; $(RECODE) latin1:cp850 *.pm cbbbike; chmod 755 cbbbike
-	cd $(BBBIKE_TMP)/data; chmod u+w *; $(RECODE) latin1:cp850 *
+	cd $(BBBIKE_TMP) && chmod u+w *; $(RECODE) latin1:cp850 *.pm cbbbike; chmod 755 cbbbike
+	cd $(BBBIKE_TMP)/data && chmod u+w *; $(RECODE) latin1:cp850 *
 
 distdir2:
 	umask 022 && $(MAKE) $(MAKEFLAGS) distdir
@@ -318,7 +318,7 @@ distdir2:
 
 develdist:
 	rm -rf $(DEVEL_ARCH)
-	cd ..; $(ZIP) $(ZIPFLAGS) $(DEVEL_ARCH) bbbike \
+	cd .. && $(ZIP) $(ZIPFLAGS) $(DEVEL_ARCH) bbbike \
 	    -x \*.tar.gz \
 	    -x \*/old/\* \
 	    -x \*/cache/\* \
@@ -364,7 +364,7 @@ win32sdist:
 	./miscsrc/win32sdist
 
 predist:
-	cd data; ${MAKE}
+	cd data && ${MAKE}
 	${MAKE} generatemods
 	${MAKE} extmod
 	${MAKE} linkextmod
@@ -401,7 +401,10 @@ clean_cache:
 # PORTS, BINDISTS...####################################################
 
 fbsdport:
-	cd port/freebsd; env TMPDIR=$(TMPDIR) ./mkport.pl
+	cd port/freebsd && env TMPDIR=$(TMPDIR) ./mkport.pl -useversion last
+
+fbsdport-devel:
+	cd port/freebsd && env TMPDIR=$(TMPDIR) ./mkport.pl
 
 fbsdport-distfiles-link:
 	[ -d /usr/ports/distfiles ] && \
@@ -410,8 +413,12 @@ fbsdport-distfiles-link:
 	ln -s ${.CURDIR}/distfiles/BBBike-$(VERSION).tar.gz /usr/ports/distfiles || \
 	exit 0
 
-fbsdportdiff: fbsdport
-	-cd $(TMPDIR); diff --new-file -u /usr/ports/german/BBBike BBBike > $(TMPDIR)/bbbike-freebsdport.diff
+fbsdportdiff: fbsdport do-fbsdportdiff
+
+fbsdportdiff-devel: fbsdport-devel do-fbsdportdiff
+
+do-fbsdportdiff:
+	-cd $(TMPDIR) && diff --new-file -u /usr/ports/german/BBBike BBBike > $(TMPDIR)/bbbike-freebsdport.diff
 
 VARPORTDIR=/var/tmp/BBBike
 TMPPORTDIR=$(TMPDIR)/BBBike
@@ -441,7 +448,7 @@ winbindist-pre:
 	umask 022; cp -Rp $(WINPERLBIN) $(WINBINDISTDIR)
 	mv $(WINBINDISTDIR)/`basename $(WINPERLBIN)` $(WINBINDISTDIR)/windows
 	umask 022; if [ -r distfiles/BBBike-$(VERSION).tar.gz ] ; then \
-	    cat distfiles/BBBike-$(VERSION).tar.gz | (cd $(WINBINDISTDIR); tar xfvz - ); \
+	    cat distfiles/BBBike-$(VERSION).tar.gz | (cd $(WINBINDISTDIR) && tar xfvz - ); \
 	else \
 	    cp -Rp BBBike-$(VERSION) $(WINBINDISTDIR); \
 	    chmod ugo+rx $(WINBINDISTDIR)/BBBike-$(VERSION); \
@@ -456,7 +463,7 @@ winbindist-pre:
 #	      cdrom/windows/setup.exe
 
 winbindist: winbindist-pre
-	cd $(WINBINDISTDIR)/..; umask 022; zip -r $(WINBINDIST) `basename $(WINBINDISTDIR)`
+	cd $(WINBINDISTDIR)/.. && umask 022; zip -r $(WINBINDIST) `basename $(WINBINDISTDIR)`
 	chmod 644 $(WINBINDIST)
 
 #XXX	[ -d /usr/ports/distfiles -a ! -l /usr/ports/distfiles/BBBike-$(VERSION)-Windows.zip ] && ln -s 
@@ -474,7 +481,7 @@ BACKUP_FILE=	/home5/bak/bbbike-devel.tar.gz
 
 backup:
 	-[ -f ${BACKUP_FILE} ] && mv -f ${BACKUP_FILE} ${BACKUP_FILE}~
-	cd ..; tar -c -v -z -f ${BACKUP_FILE} --exclude "*.tar.gz" --exclude "*patch.gz" --exclude "*~" bbbike
+	cd .. && tar -c -v -z -f ${BACKUP_FILE} --exclude "*.tar.gz" --exclude "*patch.gz" --exclude "*~" bbbike
 
 # XXX Problem: binary files (xdelta? uuencode? nix?)
 makepatch:
@@ -554,7 +561,7 @@ EOF
 . <<'EOF'
 
 ext:
-	cd ext; ${MAKE} ext
+	cd ext && ${MAKE} ext
 
 generatemods: Strassen/Generated.pm
 

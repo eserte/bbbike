@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mkport.pl,v 1.22 2004/01/04 21:39:30 eserte Exp $
+# $Id: mkport.pl,v 1.22 2004/01/04 21:39:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000 Slaven Rezic. All rights reserved.
@@ -30,6 +30,22 @@ use vars qw($bbbike_base $bbbike_archiv
 	    $bbbike_archiv_dir $bbbike_archiv_path);
 
 my %dir;
+
+my $v = 0;
+my $use_version;
+
+if (!GetOptions("v" => \$v,
+		"useversion=s" => \$use_version)) {
+    die "usage: $0 [-v] [-useversion x.yy]";
+}
+
+if (defined $use_version) {
+    if ($use_version eq 'last' && $BBBike::VERSION =~ m{^(\d+)\.(\d+)}) {
+	my($major, $minor) = ($1, $2);
+	$use_version = $major.".".sprintf("%02d", $minor-1);
+    }
+    $bbbike_version = $BBBike::VERSION = $use_version;
+}
 
 my $bbbike_base        = "BBBike-$bbbike_version";
 my $bbbike_archiv      = "$bbbike_base.tar.gz";
@@ -67,12 +83,6 @@ if (open(M, $old_ports_makefile)) {
 }
 
 my $portdir = "$tmpdir/BBBike";
-
-my $v = 0;
-
-if (!GetOptions("v" => \$v)) {
-    die "usage: $0 [-v]";
-}
 
 my $bbbike_manifest;
 {

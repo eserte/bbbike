@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.122 2004/01/17 17:48:22 eserte Exp eserte $
+# $Id: bbbike,v 3.123 2004/01/21 23:42:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -219,7 +219,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.122 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.123 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4971,8 +4971,6 @@ sub generate_plot_functions {
 	    my $ret = shift;
 	    my $strname = $ret->[Strassen::NAME];
 	    my @kreuzungen = @{$ret->[Strassen::COORDS]};
-my $xxx = ($kreuzungen[0] eq '12012,16752');
-warn $xxx;
 	    my $cat_hin = $ret->[Strassen::CAT];
 	    my $cat_rueck;
 	    my(@addinfo_hin, @addinfo_rueck);
@@ -8824,17 +8822,21 @@ sub choose_ort {
 	}
 
 	my $Listbox = "Listbox";
-	if (!defined $K2Listbox && $sorted) {
-	  TRYLISTBOX: {
-	      foreach my $try (qw(K2Listbox KListbox WListbox)) {
-		  if (eval q{ require Tk::} . $try . q{; 1;} && !$@) {
-		      $K2Listbox = $Listbox = $try;
-		      last TRYLISTBOX;
-		  } else {
-		      warn "Can't use module Tk::$try: $@";
-		  }
-	      }
-	  }
+	if ($sorted) {
+	    if (!defined $K2Listbox) {
+	    TRYLISTBOX: {
+		    foreach my $try (qw(K2Listbox KListbox WListbox)) {
+			if (eval q{ require Tk::} . $try . q{; 1;} && !$@) {
+			    $K2Listbox = $Listbox = $try;
+			    last TRYLISTBOX;
+			} else {
+			    warn "Can't use module Tk::$try: $@";
+			}
+		    }
+		}
+	    } else {
+		$Listbox = $K2Listbox;
+	    }
 	}
 	my $attrib = ($linetype eq 's'
 		      ? $str_attrib{$type}

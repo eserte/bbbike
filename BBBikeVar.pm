@@ -48,6 +48,7 @@ $BBBIKE_DIRECT_WAP = 'http://www.radzeit.de/cgi-bin/wapbbbike.cgi';
 $DISTDIR	   = 'ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike';
 # distribution directory for humans (entry to 'show files' at sourceforge)
 $DISPLAY_DISTDIR   = 'http://sourceforge.net/project/showfiles.php?group_id=19142';
+$LATEST_RELEASE_DISTDIR  = 'http://sourceforge.net/project/showfiles.php?group_id=19142&package_id=14052&release_id=210614';
 # XXX not used ... should be moved to sourceforge, too
 # XXX first check whether I can connect to a subdir of cgi-bin, then
 # try symlinks, then do a cp on the machine itself...

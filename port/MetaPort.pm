@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MetaPort.pm,v 1.6 2001/07/29 21:18:31 eserte Exp $
+# $Id: MetaPort.pm,v 1.6 2001/07/29 21:18:31 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2000 Slaven Rezic. All rights reserved.
@@ -57,7 +57,7 @@ if (!-f $bbbike_archiv_path) {
     $bbbike_archiv_dir = "$bbbike_dir/distfiles";
     $bbbike_archiv_path = "$bbbike_archiv_dir/$bbbike_archiv";
     if (!-f $bbbike_archiv_path) {
-	die "Can't find $bbbike_archiv in $bbbike_archiv_dir";
+	warn "Can't find $bbbike_archiv in $bbbike_archiv_dir";
     }
 }
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.40 2004/01/17 13:45:25 eserte Exp $
+# $Id: BrowserInfo.pm,v 1.40 2004/01/17 13:45:25 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -109,9 +109,13 @@ sub set_info {
 			      $q->user_agent('Nokia3650') ||
 			      $q->user_agent('Nokia7650') ||
 			      $q->user_agent('Nokia6600') ||
+			      $q->user_agent('Nokia3100') ||
+			      $q->user_agent('Nokia3200') ||
+			      $q->user_agent('Nokia6620') ||
 			      $q->user_agent('NokiaN-Gage') ||
 			      $q->user_agent('SEC_SGHV200') ||
 			      $q->user_agent('SonyEricssonP800') ||
+			      $q->user_agent('SonyEricssonP900') ||
 			      $q->user_agent('SonyEricssonT68') ||
 			      $q->user_agent('SonyEricssonT300') ||
 			      $q->user_agent('SonyEricssonT610') ||
@@ -159,7 +163,8 @@ sub set_info {
     } elsif ($q->user_agent('SonyEricssonT68i') ||
 	     $q->user_agent('SonyEricssonT68ie')) {
 	$self->{'display_size'} = [101,80];
-    } elsif ($q->user_agent('SonyEricssonP800')) {
+    } elsif ($q->user_agent('SonyEricssonP800') ||
+	     $q->user_agent('SonyEricssonP900')) { # XXX sizes for P900 guessed
 	$self->{'display_size'} = [208,320]; # flip open, with flip closed: 208x144
     } elsif ($q->user_agent('SonyEricssonP610')) {
 	$self->{'display_size'} = [125,95]; # visible screen size
@@ -198,6 +203,7 @@ sub set_info {
 	     Nokia7110 => [96, 65],
 	     Nokia3100 => [124, 128], # space for horiz scrollbar
 	     Nokia3200 => [124, 128], # space for horiz scrollbar
+	     Nokia6620 => [124, 128], # space for horiz scrollbar
 	     Nokia6610 => [128, 128],
 	     Nokia6100 => [128, 90], # XXX ca.
 	     Nokia3650 => [170, 144], # visible size
