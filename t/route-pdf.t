@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: route-pdf.t,v 1.9 2005/03/23 17:26:49 eserte Exp $
+# $Id: route-pdf.t,v 1.10 2005/03/23 17:31:52 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -26,27 +26,29 @@ use BBBikeTest;
 
 BEGIN {
     if (!eval q{
-	use Test;
+	use Test::More;
 	1;
     }) {
-	print "1..0 # skip: no Test module\n";
+	print "1..0 # skip: no Test::More module\n";
 	exit;
     }
 }
 
-BEGIN { plan tests => 1 }
+BEGIN { plan tests => 2 }
 
 $pdf_prog = "gv";
 if (!GetOptions(get_std_opts(qw(display pdfprog)))) {
     die "usage: $0 [-pdfprog pdfviewer] [-display]";
 }
 
+my $pdffile = "/tmp/test.pdf";
+
 my @arg;
 # if ($do_display && $pdf_prog eq 'gv') {
 #     open(GV, "|$pdf_prog -");
 #     @arg = (-fh => \*GV);
 # } else {
-    @arg = (-filename => "/tmp/test.pdf");
+    @arg = (-filename => $pdffile);
 # }
 
 my $s = Strassen->new("strassen");
@@ -97,9 +99,12 @@ $rp->{PDF}->close;
 if (fileno(GV)) {
     close(GV);
 } elsif ($do_display) {
-    do_display("/tmp/test.pdf");
+    do_display($pdffile);
 }
 
-ok(1);
+ok(-s $pdffile, "$pdffile is non-empty");
+open(PDF, $pdffile) or die $!;
+my $firstline = <PDF>;
+like($firstline, qr/^%PDF-1\.\d+/, "PDF magic");
 
 __END__
