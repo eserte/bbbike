@@ -212,7 +212,7 @@ Stolbergstr.	1 8850,6421 8834,6639
 Richnowstr.	1 8946,6501 8850,6421
 Menzelstr.	1 6185,6469 6154,6734
 Cranachstr.	1 6301,6748 6324,6480 6338,6312
-Boddinstr.	1 12582,8408 12217,8320 12096,8300 11920,8252
+Boddinstr.	1 12582,8408 12368,8356 12217,8320 12096,8300 11920,8252
 Schlangenbader Str.	1 3969,7888 3965,7725
 Geisenheimer Str.	1 4391,7258 4462,7137 4534,7015
 Tannenweg	1 -2993,17856 -3003,17990
@@ -224,6 +224,7 @@ Splanemannstr.	1 18284,9948 18389,9925 18408,10041 18403,10077
 Burgherrenstr.	1 8969,8640 9050,8783
 Travestr.	1 14825,11844 14903,11809 14977,11754
 Schmollerplatz/str.	1 13241,9407 13184,9340 13209,9325
+Isarstr.	1 12349,8464 12368,8356
 Hans-Thoma-Str.	1 -12148,-784 -12255,-784 -12304,-628 -12322,-576
 Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
 Potsdamer Damm	2 -5736,-3629 -6439,-3969
@@ -359,7 +360,7 @@ Sachsendamm: Mittelstreifen	3 7737,7505 7717,7564 7606,7611
 Sachsendamm: Mittelstreifen	3 7737,7505 7717,7564 7718,7641
 Sachsendamm: Mittelstreifen	3 7859,7486 7717,7564 7737,7505
 Sachsendamm: Mittelstreifen	3 7718,7641 7717,7564 7737,7505
-Boddinstr. - Karl-Marx-Str.: Mittelstreifen	3 12217,8320 12582,8408 12540,8458
+Boddinstr. - Karl-Marx-Str.: Mittelstreifen	3 12217,8320 12368,8356 12582,8408 12540,8458
 Weisestr. - Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3 11770,8292 11763,8337 11632,8302
 Flughafenstr. - Weisestr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3 11892,8372 11763,8337 11770,8292
 Bundesratufer - Stromstr.: unpassierbarer Mittelstreifen	3 6131,12978 6185,12968 6201,13058
@@ -376,6 +377,8 @@ Stralauer - Naglerstr.: unbequemes Abbiegen	3 13389,10808 13483,10769 13575,1096
 Naglerstr. - Stralauer: unbequemes Abbiegen	3 13575,10963 13483,10769 13605,10719
 Prenzlauer Allee - Hiddenseer Str.: Linksabbiegen wegen Straßenbahn nicht möglich	3 11776,15060 11822,15193 11655,15253
 Hiddenseer Str. - Prenzlauer Allee: Linksabbiegen wegen Straßenbahn nicht möglich	3 11655,15253 11822,15193 11852,15281
+Sonnenallee - Schönstedtstr.: unbequemes Passieren des Mittelstreifens (parkende Autos)	3 12772,8612 12742,8635 12649,8535
+Schönstedtstr. - Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3 12649,8535 12742,8635 12630,8722
 Dorotheenstr. an der US-Botschaft	3 8907,12472 9112,12499 9323,12528
 Dorotheenstr. an der US-Botschaft	3 9323,12528 9112,12499 8907,12472
 tragen (Eisebahnbrücke Templiner See)	0:60:-231 -15497,-4614

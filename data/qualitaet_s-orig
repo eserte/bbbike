@@ -321,7 +321,7 @@ Selchower Str.: Kopfsteinpflaster	Q2 11532,8104 11665,8130 11786,8165 11933,8198
 Mahlower Str.: Kopfsteinpflaster	Q2 11523,8178 11645,8212 11773,8231 11920,8252
 Boddinstr.: Kopfsteinpflaster	Q2 11920,8252 12096,8300
 Boddinstr.: teilweise Asphalt auf der Fahrbahn	Q1 12096,8300 12217,8320
-Boddinstr.: Kopfsteinpflaster	Q2 12217,8320 12582,8408
+Boddinstr.: Kopfsteinpflaster	Q2 12217,8320 12368,8356 12582,8408
 Rollbergstr.: Asphalt	Q0 11960,8090 12139,8128
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12407,8177 12714,8249
 Falkstr.: Asphalt	Q0 12139,8128 12162,8055 12211,7830
@@ -994,7 +994,11 @@ Ossastr.: gutes Kopfsteinpflaster	Q1 12829,8971 12881,8926
 Hüttenroder Weg: gutes Kopfsteinpflaster	Q1 13274,8945 13453,8812
 Beermannstr.: Kopfsteinpflaster	Q2 13977,9462 14157,9345
 Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14179,9515
-Elbestr.: Kopfsteinpflaster	Q2 12772,8612 12881,8750 13048,8956
+Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2 12772,8612 12822,8675 12881,8750 12954,8840 13048,8956
+Schandauer Str.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2 13102,8724 12954,8840
+Laubestr.: Kopfsteinpflaster	Q2 12980,8566 12822,8675
+Neckarstr.: Kopfsteinpflaster	Q2 12639,8344 12384,8284
+Isarstr.: Kopfsteinpflaster	Q2 12384,8284 12368,8356 12349,8464
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -1170,7 +1174,7 @@ Neue Schönholzer Str.: Kopfsteinpflaster	Q2 10179,17772 10140,18080
 #: by: arndt westphal:
 Guntherstr.: Kopfsteinpflaster	Q2 17010,12313 16983,12124 16970,11976
 #: by: D.Mahlow:
-Cheruskerstr.: Asphalt	Q0 7450,8206 7412,8253 7409,8621 7493,8756
+Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7409,8621 7488,8768
 #: by: Mara Kuhl:
 Malplaquetstr.: mäßiges Kopfsteinpflaster	Q2 7441,15909 7051,16264
 #: by: Frank I:
