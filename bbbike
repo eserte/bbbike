@@ -10961,7 +10961,7 @@ sub show_info {
     require Karte::UTM;
     require Karte::ETRS89;
     my($sx,$sy) = anti_transpose($coords[0], $coords[1]);
-    my($px,$py) = $coord_system_obj->map2map($Karte::Polar::obj, $sx, $sy);
+    my($px,$py) = $Karte::Polar::obj->trim_accuracy($coord_system_obj->map2map($Karte::Polar::obj, $sx, $sy));
     my @polarcoord = (Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($py)),
 		      Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($px)));
     my($gkk_zone_potsdam, $gkk_easting_potsdam, $gkk_northing_potsdam) = Karte::UTM::DegreesToGKK($py, $px, "Potsdam");
