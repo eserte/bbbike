@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.14 2004/01/04 22:11:54 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.15 2004/01/10 23:18:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -68,6 +68,31 @@ $poddef->[POD_HTML]: $poddef->[POD_POD]
 EOF
     }
 }
+
+my(@bundled_perl_module_dists) =
+    qw(Tk-ContextHelp Tk-Enscript Tk-Getopt Tk-Autoscroll Tk-PathEntry
+       Tk-CanvasFig BikePower savevars GD-Convert Tk-Splash
+       Http Msg
+       Tk-SREZIC Tk-CanvasBalloon Tk-CanvasUtil Tk-LogScale
+       Tk-ColorFlowChooser Tk-LayerEditor Tk-Placement
+       Tk-StippleLine Tk-WidgetDump Win32Util WWWBrowser
+      );
+my $EXTMODCPANTOP = "$ENV{HOME}/src/CPAN";
+my $EXTMODPERLTOP = "$ENV{HOME}/src/perl";
+my(@EXTMODCPAN, @EXTMODPERL);
+for my $module_dist (@bundled_perl_module_dists) {
+    if (-e "$EXTMODCPANTOP/$module_dist") {
+	push @EXTMODCPAN, $module_dist;
+    } elsif (-e "$EXTMODPERLTOP/$module_dist") {
+	push @EXTMODPERL, $module_dist;
+    } else {
+	if (defined $ENV{USER} && $ENV{USER} eq 'eserte') {
+	    warn "Can't find $module_dist neither in $EXTMODCPANTOP nor in $EXTMODPERLTOP\n";
+	}
+    }
+}
+my $EXTMODCPAN = join(" ", @EXTMODCPAN);
+my $EXTMODPERL = join(" ", @EXTMODPERL);
 
 $bbbike_makefile_admin = <<'EOF'
 #### RSYNCS ###############################################################

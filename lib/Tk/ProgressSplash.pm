@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ProgressSplash.pm,v 1.7 2003/04/26 08:35:11 eserte Exp $
+# $Id: ProgressSplash.pm,v 1.7 2003/04/26 08:35:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -132,8 +132,8 @@ L<Tk::Splash> as the underlying splash widget. "normal", "safe" or
 
 =item Update
 
-Advance the progressbar (and make it visible, if it was not yet
-visible). The argument is a number between 0 and 1.
+Advance the progressbar and make it visible, if it was not yet
+visible. The argument is a floating number between 0 and 1.
 
 =item Destroy
 

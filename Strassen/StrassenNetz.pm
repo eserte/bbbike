@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.34 2004/01/03 21:17:05 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.36 2004/01/11 00:07:36 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -608,8 +608,6 @@ sub build_search_code {
 ';
     # Code für die Abfrage, ob die Wegführung des aktuellen Pfades nicht
     # erlaubt ist
-    # XXX Dieser Code sollte im SRT-Algorithmus verwendet werden, wird aber
-    # nicht...
     # XXX ich habe die Datenstruktur von $wegfuehrung umgestellt, hier
     # aber noch nicht...
     my $skip_path_code3 = '
@@ -669,12 +667,10 @@ sub build_search_code {
 	$penalty_code = build_penalty_code($sc);
     }
 
-###
-### XXX grausam! Wie erstellt man sauber perl-Code?
-### Vielleicht ein Modul dazu schreiben?
-### Geschickt in Chunks aufteilen?
-### ????
-###
+    if ($sc->Algorithm eq 'srt') {
+	require Strassen::Obsolete;
+	return $self->build_search_code_srt($code, $sc, $seen_optimierung, $use_2, $do_visual, $penalty_code, $len_pen, $skip_path_code, $skip_path_code2, $pure_depth, $backtracking, $cut_path_nr, \%args, $aufschlag_code);
+    }
 
     ######################################################################
     # A*
@@ -684,13 +680,20 @@ sub build_search_code {
     #      $g:    Streckenlänge (oder Penalty) bis Node (DIST),
     #      $f:    abgeschätzte Länge bis Ziel über Node (HEURISTIC_DIST),
     #      weitere Array-Elemente sind optional ...]
-    if ($sc->Algorithm ne 'srt') { # A*
-	$code .= '
+    my $use_heap = 0; # XXX the heap version seems to be faster, but first do some tests and enable it after 3.13 RELEASE. Use also a Array::Heap2-existance text.
+    $code .= '
 
+'; if ($use_heap) { $code .= '
+    use Array::Heap2;
+    my @OPEN = ([0, $from]); make_heap @OPEN;
+'; } else { $code .= '
     my %OPEN = ($from => 1);
+'; } $code .= '
     my %NODES = ($from => [undef, 0, 0, undef]);
     my %CLOSED;
     while (1) {
+#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@OPEN],[])->Indent(1)->Useqq(1)->Dump; # XXX
+
 '; if ($do_visual) { $code .= '
         if (Tk::timeofday() > $last_time + $visual_delay) {
             $canvas->idletasks;
@@ -699,10 +702,18 @@ sub build_search_code {
         $red_val+=5 if $red_val < 255;
         my $red_col = sprintf("#%02x0000", $red_val);
 '; } $code .= '
-        return () if (keys %OPEN == 0);
+        return ()
+'; if ($use_heap) { $code .= '
+	    if (!@OPEN);
+'; } else { $code .= '
+	    if (keys %OPEN == 0);
+'; } $code .= '
 
         my $min_node;
         my $min_node_f = 999_999_999; # not suitable for extraterrestrial searches
+'; if ($use_heap) { $code .= '
+	my($min_node_f, $min_node) = @{ pop_heap(@OPEN) };
+'; } else { $code .= '
         foreach (keys %OPEN) {
             if ($NODES{$_}->[HEURISTIC_DIST] < $min_node_f) {
                 $min_node = $_;
@@ -710,8 +721,9 @@ sub build_search_code {
             }
         }
         # min_node wird aus OPEN nach CLOSED bewegt
-        $CLOSED{$min_node} = 1;
         delete $OPEN{$min_node};
+'; } $code .= '
+        $CLOSED{$min_node} = 1;
         if ($min_node eq $to) {
             my @path;
             my $len = 0;
@@ -726,9 +738,12 @@ sub build_search_code {
                 }
             }
             @path = map { [ split(/,/, $_) ] } reverse @path;
-'; if ($sc->Statistics) { $code .= '
+'; if ($sc->Statistics) {
+    if ($use_heap) { $code .= '
+            $visited_nodes = scalar(@OPEN) + scalar(keys %CLOSED);
+';  } else { $code .= '
             $visited_nodes = scalar(keys %OPEN) + scalar(keys %CLOSED);
-'; } $code .= '
+'; }} $code .= '
             my @ret;
             $ret[RES_PATH]          = \@path;
             $ret[RES_LEN]           = $len;
@@ -794,14 +809,33 @@ sub build_search_code {
             # !exists in OPEN and !exists in CLOSED:
             if (!exists $NODES{$successor}) {
                 $NODES{$successor} = [$min_node, $g, $f];
+'; if ($use_heap) { $code .= '
+		push_heap @OPEN, [$f, $successor];
+'; } else { $code .= '
                 $OPEN{$successor} = 1;
+'; } $code .= '
             } else {
                 if ($f < $NODES{$successor}->[HEURISTIC_DIST]) {
                     $NODES{$successor} = [$min_node, $g, $f];
                     if (exists $CLOSED{$successor}) {
+'; if ($use_heap) { $code .= '
+			push_heap @OPEN, [$f, $successor];
+'; } else { $code .= '
                         $OPEN{$successor} = 1;
+'; } $code .= '
                         delete $CLOSED{$successor};
                     }
+'; if ($use_heap) { $code .= '
+		    else { # exists in OPEN
+			for my $i (0 .. $#OPEN) {
+			    if ($OPEN[$i][1] eq $successor) {
+				$OPEN[$i][0] = $f;
+				last;
+			    }
+			}
+			make_heap @OPEN;
+		    }
+'; } $code .= '
                 }
             }
         }
@@ -827,360 +861,7 @@ sub build_search_code {
     }
  } # Achtung, Einrückung für make_autoload!
 ';
-	return $code;
-    }
-
-    ######################################################################
-    # SRT-Algo - nur von historischem Interesse...
-
-    # Format von $path_def:
-    # 0: Referenz auf Pfad
-    # 1: derzeitige Länge
-    # 2: virtuelle Penalty (ab hier einschließlich nur wenn
-    #                       $sc->HasPenalty wahr ist)
-    # 3: wahre Penalty
-    # 4: Anzahl der Ampeln auf der Strecke (falls Ampeln eingestellt wurden)
-
-    # Algorithm_Init
-    $code .= '
-    my @all_paths =
-      (
-       [[$from], 0';
-    if ($sc->HasPenalty) {
-	$code .= ', undef, 0';
-	if ($sc->HasAmpeln) {
-	    $code .= ', 0';
-	}
-    }
-    if ($seen_optimierung) {
-	$code .= ', {}';
-    }
-
-    $code .= '],
-      );
-    my(@found_paths, @suspended_paths);
-    my %visited = ( $from => 0 );
-BIGLOOP:
-    while (1) {
-';
-    if ($sc->Statistics > 1) {
-	$code .= '
-        $loop_count[0]++;
-';
-    };
-    $code .= '
-	while (@all_paths) {
-';
-    if ($do_visual) {
-# XXX vielleicht auch: tags von visual0 bis visualX festlegen
-# red_val-Inkrement mit (255-100)/X festlegen
-# nachträglich mit itemconfigure ändern
-	$code .= '
-	    if (Tk::timeofday() > $last_time+$visual_delay) {
-                $canvas->idletasks;
-                $last_time = Tk::timeofday();
-            }
-            $red_val+=5 if $red_val < 255;
-            my $red_col = sprintf("#%02x0000", $red_val);
-';
-    }
-    if ($sc->Statistics > 2) {
-	$code .= '
-            $loop_count[1]++;
-';
-    };
-    $code .= '
-	    my @new_all_paths;
-	    foreach my $path_def (@all_paths) {
-';
-    if ($sc->Statistics > 3) {
-	$code .= '
-                $loop_count[2]++;
-';
-    };
-    $code .= '
-		my @path = @{$path_def->[0]};
-		my $curr_len = $path_def->[1];
-';
-    if ($sc->HasPenalty) {
-	$code .= '
-		my $curr_pen = $path_def->[3];
-';
-	if ($sc->HasAmpeln) {
-	    $code .= '
-		my $ampeln   = $path_def->[4];
-';
-	}
-    }
-    if ($seen_optimierung) {
-	$code .= '
-                my $seen = $path_def->[5];
-';
-    }
-    $code .= '
-		my $last_node = $path[$#path];
-';
-    if ($use_2) {
-	$code .= '
-                my $net_s = $net->[$last_node];
-                my $net_s_len = length($net_s);
-                for(my $i = 0; $i < $net_s_len; $i+=8) {
-                    my $next_node = unpack("l", substr($net_s, $i, 4));
-                    my $len = unpack("l", substr($net_s, $i+4, 4));
-';
-    } else {
-	$code .= '
-	        my $last_node_ref = $net->{$last_node};
-		while(my($next_node, $len)
-		      = each %$last_node_ref) {
-';
-    }
-    if ($seen_optimierung) {
-	$code .= '
-                   next if $seen->{$next_node};
-';
-    }
-
-    $code .= '
-                    next if $#path > 0 && $next_node eq $path[$#path-1];
-';
-    if ($do_visual) {
-	$code .= '
-                    { my($lx, $ly) = $transpose_sub->(split(/,/, $last_node));
-                      my($nx, $ny) = $transpose_sub->(split(/,/, $next_node));
-                      $canvas->createLine($lx,$ly,$nx,$ny,
-                                          -tag=>"visual",
-                                          -fill=>$red_col,-width=>3);
-                    }
-';
-    }
-    if ($sc->Statistics) {
-	$code .= '
-                    $node_touches++;
-';
-    }
-    my $sort_index = ($sc->HasPenalty ? 3 : 1);
-
-    if ($sc->HasPenalty) {
-	$code .= '  my $pen = $len;
-';
-    }
-    $code .= $penalty_code;
-    $code .= '
-		    my $next_node_'.$len_pen." = \$".$len_pen.' + $curr_'.$len_pen . ';
-' . $skip_path_code;
-    if ($sc->HasAmpeln) {
-	# XXX Penalty anpassen, falls nach links/rechts abgebogen wird.
-	# Keine Penalty bei Besonderheiten (nur eine Richtung ist relevant,
-	# Fußgängerampel...) XXX
-	$code .= '
-		    if (exists $ampel_net->{$next_node}) {
-			$next_node_pen += ' . $sc->AmpelPenalty . ';
-' . $skip_path_code . '
-			$ampeln++;
-		    }
-';
-    }
-
-    if ($sc->HasAbbiegen) {
-	# Dieser Code ist nicht perfekt, aber eine gute Näherung.
-	# Es wird festgestellt, ob es im vorherigen Knoten einen
-	# Linksabbiegevorgang ohne Ampel gab. Wenn ja, wird noch
-	# festgestellt, ob es beim Abbiegen eine Kategorieänderung
-	# gab. Nur in diesem Fall ist ein echtes Linksabbiegen
-	# wahrscheinlich, ansonsten hat die Straße möglicherweise nur
-	# einen leichten Knick gemacht. Da Hauptstraßenkreuzungen
-	# üblicherweise eine Ampel haben, geht diese Regel nur bei
-	# Kreuzungen von Nebenstraßen und Hauptstraßen.
-	# XXX Echte Geradeausstrecken feststellen.
-	$code .= '
-                    if (@path > 1 and
-                        !exists $ampel_net->{$path[$#path]} and
-                        $net->{$path[$#path]} > 2
-                       ) {
-                        if ((Strassen::Util::abbiegen_s($path[$#path-1],
-                                                        $path[$#path],
-                                                        $next_node))[0] eq "l") {
-                            my $str_i0 = $self->net2name($path[$#path-1],
-                                                         $path[$#path]);
-                            my $str_i = $self->net2name($path[$#path],
-                                                        $next_node);
-                            my $cat0 = $str->get($str_i0)->[2];
-                            my $cat = $str->get($str_i)->[2];
-                            if (($category_order->{$cat0} < $category_order->{$cat}
-                                 and exists $abbiegen_penalty->{$cat}) or
-                                ($category_order->{$cat0} > $category_order->{$cat}
-                                 and exists $abbiegen_penalty->{$cat0})) {
-#warn "pen=".($abbiegen_penalty->{$cat}||$abbiegen_penalty->{$cat0})." for " . $str->get($self->net2name($path[$#path-1],$path[$#path]))->[0] . " => " . $str->get($str_i)->[0] . "\n";
-                                $next_node_pen += $abbiegen_penalty->{$cat};
-' . $skip_path_code . '
-                            }
-			}
-                    }
-';
-    }
-    $code .= ($aufschlag_code ne '' ? '
-                    if (!exists $visited{$next_node} or
-                        $next_node_'.$len_pen.' < $visited{$next_node}) {' 
-	      : '') . '
-		        $visited{$next_node} = $next_node_'.$len_pen.';
-' . ($aufschlag_code ne '' ? '}' : '') . '
-';
-    if ($sc->HasPenalty) {
-	$code .= '
-		    my $next_node_len = $len + $curr_len;
-';
-    }
-    $code .= '
-		    if ($next_node eq $to) {
-			my @koords = (@path, $to);
-';
-    if ($use_2) {
-	$code .= '
-	                foreach (@koords) {
-                            $_ = join(",", unpack("l2", $self->{Index2Coord}[$_]));
-			}
-';
-    }
-    $code .= '
-			warn "Found path, len: $next_node_len\n"
-			    if $VERBOSE;
-			push(@found_paths,
-			     [Strassen::to_koord(\@koords),
-			      $next_node_len';
-    if ($sc->HasPenalty) {
-	$code .= ',
-			      undef,
-			      $next_node_pen,
-';
-	if ($sc->HasAmpeln) {
-	    $code .= '			      $ampeln,
-';
-	}
-    }
-    $code .= '			     ]
-			    );
-';
-    if ($pure_depth) {
-	$code .= '
-                        last BIGLOOP;
-';
-    }
-    $code .= '
-			next;
-		    }
-		    my $virt_'.$len_pen.' = $next_node_'.$len_pen;
-    if ($use_2) {
-	$code .= '
-		      + Strassen::Util::strecke_i($self, $next_node, $to);
-';
-    } else {
-	$code .= '
-		      + Strassen::Util::strecke_s($next_node, $to);
-';
-    }
-    if ($seen_optimierung) {
-	$code .= '
-                      $seen->{$next_node} = 1;
-';
-    }
-    $code .= $skip_path_code2 . '
-                    my $new_path_ref = [[@path, $next_node],
-					 $next_node_len,
-					 $virt_'.$len_pen.',
-';
-    if ($sc->HasPenalty) {
-	$code .= '					  $next_node_pen,';
-	if ($sc->HasAmpeln) {
-	    $code .= '					  $ampeln,';
-	}
-    }
-    if ($seen_optimierung) {
-	$code .= '
-                                                          $seen,';
-    }
-    $code .= '					 ];
-                    push @new_all_paths, $new_path_ref;
-		}
-	    }
-';
-    if ($sc->Statistics) {
-	$code .= '
-	    if ($max_new_paths < @all_paths) { $max_new_paths = @all_paths }
-';
-    }
-    if ($pure_depth || $backtracking) {
-	$code .= '
-	    @all_paths = (sort({ $a->[2] <=> $b->[2] } @new_all_paths),
-	                 @suspended_paths);
-';
-    } else {
-	$code .= '
-	    @all_paths = sort { $a->[2] <=> $b->[2] } 
-	                 (@new_all_paths, @suspended_paths);
-';
-    }
-    $code .= '
-	    { local $^W = 0;
-            @suspended_paths = splice(@all_paths, ' . $cut_path_nr . ');
-	    }
-';
-    if ($sc->Statistics) {
-	$code .= '
-	    if ($max_suspended_paths < @suspended_paths) {
-                $max_suspended_paths = @suspended_paths;
-            }
-';
-    }
-	    # @all_paths enthält jetzt die besten 5 Pfade,
-	    # während in @suspended_paths alle anderen sind
-	    # Damit wird gesichert, daß
-	    # a) die besten Pfade nur bevorzugt bearbeitet werden
-	    # b) suspended_paths, falls sie irgendwann mal besser werden,
-	    #    doch wieder zum Zug kommen können
-    $code .= '
-
-	}
-	if (@suspended_paths) {
-	    @all_paths = sort { $a->[2] <=> $b->[2] } splice
-	      (@suspended_paths, 0, 5);
-	} else {
-	    last;
-	}
-    }
-
-    if (!@found_paths) {
-	warn "Nothing found!\n" if $VERBOSE;
-        ';
-    $code .= ($args{All} ? '()' : 'undef');
-    $code .= ';
-    } else {
-	@found_paths = sort { $a->['.$sort_index.'] <=> $b->['.$sort_index.'] } @found_paths;
-        ';
-
-    if ($sc->Statistics) {
-	$code .= '
-        $visited_nodes = scalar keys %visited;
-        warn "\nAlgorithm: SRT (CutPath=' . $cut_path_nr .', PureDepth=' . $pure_depth . ', BackTracking=' . $backtracking . ')\n";
-';
-    }
-
-    $code .= ($args{All} 
-	      ? ($args{OnlyPath}
-		 ? 'map { $_->[0] } @found_paths'
-		 : '@found_paths'
-		)
-	      : ($args{OnlyPath}
-		 ? '$found_paths[0]->[0]'
-		 : '$found_paths[0]'
-		)
-	     );
-    $code .= ';
-    }
- } # Achtung, Einrückung für make_autoload!
-';
-
-    $code;
+    return $code;
 }
 
 # Sucht eine Route im Netz von $from bis $to.

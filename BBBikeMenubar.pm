@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMenubar.pm,v 1.13 2003/01/18 13:02:59 eserte Exp $
+# $Id: BBBikeMenubar.pm,v 1.13 2003/01/18 13:02:59 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2002,2003 Slaven Rezic. All rights reserved.
@@ -88,6 +88,7 @@ sub menubar {
 			-command => $self->{PrintCommand});
     my $print_menu = $file_menu->cascade(-label => M"D~ruckeinstellungen");
     $file_menu->command(-label => M"~Beenden",
+			-accelerator => "q",
 			-command => $self->{ExitCommand});
 
     my $layer_menu = $mb->cascade(-label => M"~Kartenebenen");
@@ -164,7 +165,7 @@ sub plugin_menu {
     my $menulabel = M("Plugins");
     my $menu = $mb->Menu;
     main::plugin_menu($menu);
-    $menu->separator;
+    # $menu->separator; # XXX enable if there's actually something
     # XXX more to follow... (what?)
     $mb->cascade(-menu => $menu,
 		 -label => $menulabel);

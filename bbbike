@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.117 2004/01/04 11:06:22 eserte Exp $
+# $Id: bbbike,v 3.117 2004/01/04 11:06:22 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -3812,6 +3812,7 @@ sub do_iconframe {
     # XXX it would be nice to use autouse in the following callbacks,
     # but it does not work because of artificial restrictions in
     # autouse.pm
+    # XXX This menu is duplicated in setting and map layers. It should not.
     $opbm->cascade(-label => M"Zusätzlich zeichnen ...");
     {
 	my $cusm = $opbm->LazyMenu(-title => M"Zusätzlich zeichnen ...");
@@ -3826,10 +3827,12 @@ sub do_iconframe {
 		       -command => sub {
 			   require BBBikeAdvanced;
 			   tk_plot_additional_layer('str') });
-	$cusm->command(-label => M"Sperrungen-Layer zeichnen", # XXX label? only in advanced mode? (there is no way to delete the blockings from net!)
-		       -command => sub {
-			   require BBBikeAdvanced;
-			   plot_additional_sperre_layer() });
+	if ($advanced) {
+	    $cusm->command(-label => M"Sperrungen-Layer zeichnen", # XXX label? in advanced mode because there is no way to delete the blockings from net!
+			   -command => sub {
+			       require BBBikeAdvanced;
+			       plot_additional_sperre_layer() });
+	}
 	$cusm->command(-label => M"Punkte-Layer zeichnen",
 		       -command => sub {
 			   require BBBikeAdvanced;
@@ -10140,7 +10143,8 @@ sub show_info {
     require Karte::Polar;
     require Karte::UTM;
     require Karte::ETRS89;
-    my($px,$py) = $coord_system_obj->map2map($Karte::Polar::obj, anti_transpose($coords[0], $coords[1]));
+    my($sx,$sy) = anti_transpose($coords[0], $coords[1]);
+    my($px,$py) = $coord_system_obj->map2map($Karte::Polar::obj, $sx, $sy);
     @polarcoord = (Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($py)),
 		   Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($px)));
     $url = "$stadtplan_url?ORT=b&LL=+${py}+${px}";
@@ -10267,7 +10271,7 @@ sub show_info {
 	    $info_text->insert("end", sprintf "\n\nLänge:\t%.2f km", $total_len); # XXX Msg
 	}
 	if (@polarcoord) {
-	    $info_text->insert("end", "\n\nPolar:\t$polarcoord[0]\n\t$polarcoord[1]");
+	    $info_text->insert("end", "\n\nKoordinaten\nPolar:\t$polarcoord[0]\n\t$polarcoord[1]");
 	}
 
 	if (defined $gkk_zone_potsdam) {
@@ -10282,6 +10286,7 @@ sub show_info {
 	if (defined $etrs_east) {
 	    $info_text->insert("end", "\nETRS 89:\t$etrs_east/$etrs_north");
 	}
+	$info_text->insert("end", "\nBBBike:\t$sx,$sy");
 	$info_text->insert("end", "\n\n");
 
 	my @mapserver_def = ([$BBBike::BBBIKE_MAPSERVER_ADDRESS_URL,
@@ -13197,7 +13202,7 @@ sub show_route_strname {
       (-text => M"Sichern",
        -command => sub {
 	   my($file) = $bf->getSaveFile
-	       (($os eq 'win' ? (-defaultextension => '*.TXT') : ()),
+	       (($os eq 'win' ? (-defaultextension => '.TXT') : ()),
 		-title => M"Route sichern",
 		-initialdir => $tmpdir,
 	       );

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Splash.pm,v 1.11 2003/04/26 08:35:33 eserte Exp $
+# $Id: Splash.pm,v 1.11 2003/04/26 08:35:33 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -68,7 +68,7 @@ sub Destroy {
 
 =head1 NAME
 
-Tk::Splash - create a splash screen in a compatible way
+Tk::Splash - create a splash screen
 
 =head1 SYNOPSIS
 

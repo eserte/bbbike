@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.59 2004/01/03 21:19:52 eserte Exp $
+# $Id: bbbike.cgi,v 6.59 2004/01/03 21:19:52 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -3130,9 +3130,11 @@ EOF
 
 
 	    print " target=\"BBBikeGrafik\" action=\"$bbbike_script\"";
-	    # scheint bei OS/2 nicht zu funktionieren
-	    # ... und bei weiteren Browsern, deshalb erst einmal pauschal
-	    # herausgenommen XXX
+	    # show_map scheint bei OS/2 nicht zu funktionieren
+	    # ... und bei weiteren Browsern (MSIE), deshalb erst einmal
+	    # pauschal herausgenommen.
+	    # Uns das bleibt auch so, es sei denn ich habe Zugang zu den
+	    # meisten Browsern...
   	    if (0 &&
 		$bi->{'user_agent_name'} =~ m;(Mozilla|MSIE);i &&
 		$bi->{'user_agent_version'} =~ m;^[4-9]; &&

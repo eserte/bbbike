@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BikePower.pm,v 2.5.1.15 2001/10/13 14:28:41 eserte Exp eserte $
+# $Id: BikePower.pm,v 2.5.1.16 2003/10/22 21:36:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright: see at bottom of file

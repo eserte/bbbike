@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.60 2003/11/16 21:13:29 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.61 2004/01/10 22:36:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003 Slaven Rezic. All rights reserved.
@@ -1940,6 +1940,8 @@ sub click_info {
 	    # XXX NYI
 	} elsif (exists $o->str_file->{$abk}) {
 	    $str_filename = $o->str_file->{$abk};
+	} elsif ($abk =~ /^v-SW/ && exists $o->str_file->{"v"}) {
+	    $str_filename = $o->str_file->{$abk};
 	}
 	if ($str_filename) {
 	    my $ret = LinePartInfo->new;
@@ -1991,6 +1993,7 @@ sub click {
     }
 
     my $t = $o->top->Toplevel(-title => M("BBBike-Editor: ") . $click_info->basefile);
+    $t->transient($t) unless defined $main::transient && !$main::transient;
     my($name, $cat, $coords);
 
     my $e1 = $t->LabEntry(-label => M("Name"),

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Convert.pm,v 2.6 2003/07/13 13:15:48 eserte Exp eserte $
+# $Id: Convert.pm,v 2.10 2003/11/28 00:44:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -9,14 +9,14 @@
 # modify it under the same terms as Perl itself.
 #
 # Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  http://www.sourceforge.net/projects/srezic
 #
 
 package GD::Convert;
 
 use strict;
 use vars qw($VERSION $DEBUG %installed);
-$VERSION = sprintf("%d.%02d", q$Revision: 2.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.10 $ =~ /(\d+)\.(\d+)/);
 
 $DEBUG = 0 if !defined $DEBUG;
 
@@ -28,7 +28,8 @@ sub import {
 	    if (!defined $as || $as eq 'any') {
 		# check whether GD handles the gif itself
 		if ($GD::VERSION <= 1.19 ||
-		    ($GD::VERSION >= 1.37 && $GD::VERSION < 1.40 && GD::Image->can($f))) {
+		    ($GD::VERSION >= 1.37 && $GD::VERSION < 1.40 && !$installed{"gif"} && GD::Image->can("gif")) # better check for "gif" than for $f
+		   ) {
 		    undef $as;
 		} elsif ($GD::VERSION >= 1.40 && !$installed{$f} && GD::Image->can($f)) {
 		    $@ = "";
@@ -47,7 +48,7 @@ sub import {
 			# convert is a special command on MSWin32
 			$as = $f . "_imagemagick";
 		    } else {
-			die "Can't find any GIF converter for $f in $ENV{PATH}";
+			die "Can't find any converter for $f in $ENV{PATH}";
 		    }
 		}
 	    }
@@ -426,6 +427,7 @@ sub _wbmp {
 
 sub _data_from_file {
     my $file = shift;
+    no strict 'refs'; # for perl 5.00503
     my $FH;
     my $do_close;
     if (ref $file eq 'GLOB' || UNIVERSAL::isa($file, 'IO::Handle')) {
@@ -495,7 +497,7 @@ sub _3_pipe_file_temp {
     print $fh $$in_ref;
     close $fh;
 
-    my $cmd = "cat $filename | @$cmd_ref";
+    my $cmd = "cat $filename | @$cmd_ref 2>/dev/null";
     warn "Cmd (for File::Temp): $cmd, length of data: ".length($$in_ref)."\n"
 	if $GD::Convert::DEBUG;
     my $out = `$cmd`;
@@ -503,7 +505,6 @@ sub _3_pipe_file_temp {
     if ($GD::Convert::DEBUG < 10) {
 	unlink $filename;
     } else {
-	Carp::cluck();
 	warn "Keep temporary file $filename";
     }
 
@@ -514,7 +515,6 @@ sub _3_pipe_file_temp {
 sub _3_pipe_ipc_run {
     my($in_ref, $cmd_ref) = @_;
 
-$GD::Convert::DEBUG =2;#XXX
     require IPC::Run;
 
     my $h = IPC::Run::start(
@@ -673,6 +673,9 @@ GD::Convert - additional output formats for GD
 
     use GD;
     use GD::Convert qw(gif=gif_netpbm newFromGif=newFromGif_imagemagick wbmp);
+    # or:
+    require GD::Convert;
+    import GD::Convert;
     ...
     $gd->ppm;
     $gd->xpm;
@@ -692,22 +695,35 @@ C<newFromGif_imagemagick>, C<newFromGifData_imagemagick>.
 
 The new methods go into the C<GD> namespace.
 
-For convenience, it is possible to set shorter names for the C<gif>
-etc. methods:
+For convenience, it is possible to set shorter names for the C<gif>,
+C<newFromGif> and C<newFromGifData> methods by providing one of the
+following strings in the import list:
 
 =over 4
 
 =item gif=gif_netpbm
 
-Use external commands from netpbm to create GIF images.
+=item newFromGif=newFromGif_netpbm
+
+=item newFromGifData=newFromGifData_netpbm
+
+Use external commands from netpbm to load and create GIF images.
 
 =item gif=gif_imagemagick
 
-Use external commands from imagemagick to create GIF images.
+=item newFromGif=newFromGif_imagemagick
+
+=item newFromGifData=newFromGifData_imagemagick
+
+Use external commands from imagemagick to load and create GIF images.
 
 =item gif=any
 
-Use any of the above methods to create GIF images.
+=item newFromGif=any
+
+=item newFromGifData=any
+
+Use any of the above methods to load and create GIF images.
 
 =item wbmp
 
@@ -715,9 +731,6 @@ Create wbmp images. Only necessary for GD before version 1.26, but it
 does not hurt if it is included with newer GD versions.
 
 =back
-
-The same convenience importer is defined for C<newFromGif> and
-C<newFromGifData>.
 
 The new methods and constructors:
 
@@ -734,9 +747,10 @@ Take a GD image and return a string with a XPM file as its content.
 =item $gifdata = $image->gif_netpbm([...])
 
 Take a GD image and return a string with a GIF file as its content.
-The conversion will use the C<ppmtogif> binary from C<netpbm>. If you
-specify C<gif=gif_netpbm> in the C<use> line, then you can use the
-method name C<gif> instead.
+The conversion will use the C<ppmtogif> binary from C<netpbm>. Make
+sure that C<ppmtogif> is actually in your C<PATH>. If you specify
+C<gif=gif_netpbm> in the C<use> line, then you can use the method name
+C<gif> instead.
 
 The gif_netpbm handles the optional parameter C<-transparencyhack>. If
 set to a true value, a transparent GIF file will be produced. Note

@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.28 2003/10/19 21:56:30 eserte Exp $
+# $Id: insert_points,v 1.29 2004/01/10 22:35:33 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -40,6 +40,8 @@
 
 # XXX vorfahrt beachten
 
+package BBBikeModify;
+
 # Types
 # 0: normal (Strassen.pm)
 # 1: (früher) radwege
@@ -72,534 +74,527 @@ my $custom_file_list;
 my $useint;
 my $orig = 1;
 
-my $operation = ($0 =~ /insert_points$/
-		 ? 'insert'
-		 : ($0 =~ /change_line$/
-		    ? 'changeline'
-		    : ($0 =~ /grep_point$/
-		       ? 'grep'
-		       : ($0 =~ /delete_point$/
-			  ? 'delete'
-			  : 'change')
-		      )
-		   )
-		);
+my $operation;
 
-if (!GetOptions('tk!'        => \$use_tk,
-		'datadir=s'  => \$datadir,
-		'v!'         => \$verbose,
-		'coordsys=s' => \$current_coordsys,
-		'n'          => \$n,
-		'operation=s' => \$operation,
-		'file=s@'    => \@custom_check_files,
-		'fl|filelist=s' => \$custom_file_list,
-		'useint!'    => \$useint,
-		'orig!'      => \$orig,
-		"report!"    => \$report,
-	       )) {
-    die "Usage!";
-}
+sub process {
+    my(@argv) = @_;
 
-if ($custom_file_list) {
-    open(F, $custom_file_list) or die $!;
-    while(<F>) {
-	chomp;
-	my $f = $_;
-	if (!-r $f) {
-	    if (-r "$datadir/$f") {
-		$f = "$datadir/$f";
-	    } else {
-		warn "Cannot handle $f, skipping...\n";
-		next;
+    local @ARGV = @argv;
+
+    if (!GetOptions('tk!'        => \$use_tk,
+		    'datadir=s'  => \$datadir,
+		    'v!'         => \$verbose,
+		    'coordsys=s' => \$current_coordsys,
+		    'n'          => \$n,
+		    'operation=s' => \$operation,
+		    'file=s@'    => \@custom_check_files,
+		    'fl|filelist=s' => \$custom_file_list,
+		    'useint!'    => \$useint,
+		    'orig!'      => \$orig,
+		    "report!"    => \$report,
+		   )) {
+	die "Usage!";
+    }
+
+    if ($custom_file_list) {
+	open(F, $custom_file_list) or die $!;
+	while(<F>) {
+	    chomp;
+	    my $f = $_;
+	    if (!-r $f) {
+		if (-r "$datadir/$f") {
+		    $f = "$datadir/$f";
+		} else {
+		    warn "Cannot handle $f, skipping...\n";
+		    next;
+		}
 	    }
+	    push @custom_check_files, $f;
 	}
-	push @custom_check_files, $f;
-    }
-    close F;
-}
-
-my($from, $middle, $to, $new_to);
-my $top;
-if ($use_tk) {
-    require Tk;
-    require Tk::ErrorDialog;
-    require Tk::Dialog;
-    $top = MainWindow->new;
-    $top->withdraw;
-    my $sel_str = ($^O eq 'MSWin32'
-		   ? do { require Tk::Clipboard;
-			  $top->Tk::Clipboard::clipboardGet;
-		      }
-		   : $top->SelectionGet);
-    $sel_str =~ s/^\s+//; # my clipboard content is something faulty
-    if ($operation eq 'insert') {
-	($from, $middle, $to) = map { s/\.\d+//g; $_ } split(/\s+/, $sel_str, 3);
-    } elsif ($operation eq 'changeline') {
-	($from, $to, $new_to) = map { s/\.\d+//g; $_ } split(/\s+/, $sel_str, 3);
-    } elsif ($operation eq 'change') {
-	($from, $to) = map { s/\.\d+//g; $_ } split(/\s+/, $sel_str, 2);
-    } elsif ($operation =~ /^(grep|delete)$/) {
-	($from) = map { s/\.\d+//g; $_ } split(/\s+/, $sel_str, 1);
-    }
-} else {
-    # XXX -useint here too?
-    if ($operation eq 'insert') {
-	($from, $middle, $to) = @ARGV;
-    } elsif ($operation eq 'changeline') {
-	($from, $to, $new_to) = @ARGV;
-    } elsif ($operation eq 'change') {
-	($from, $to) = @ARGV;
-    } elsif ($operation =~ /^(grep|delete)$/) {
-	($from) = @ARGV;
-    }
-}
-
-if (!defined $from   or $from   !~ /\d+,.*\d+$/
-    or
-    ($operation eq 'insert' and (!defined $middle or $middle !~ /\d+,.*\d+$/))
-    or
-    ((!defined $to     or $to     !~ /\d+,.*\d+$/) && $operation !~ /^(delete|grep)$/)
-    or
-    ($operation eq 'changeline' and (!defined $new_to or $new_to !~ /\d+,.*\d+$/))
-   ) {
-    if ($use_tk) {
-	my $var_text = ($operation =~ /^(insert|changeline)$/
-			? "müssen genau drei Punkte"
-			: ($operation eq 'grep'
-			   ? "muss genau ein Punkt"
-			   : "müssen genau zwei Punkte"
-			  )
-		       );
-	$top->Dialog(-title => $0,
-		     -text => 'In der Auswahl ' . $var_text . ' sein!',
-		     -bitmap => 'error',
-		     -buttons => ['OK'])->Show;
-	$top->destroy;
-	exit;
-    } else {
-	if ($operation eq 'insert') {
-	    die "Usage: $0 from middle to";
-	} elsif ($operation eq 'changeline') {
-	    die "Usage: $0 from to newto";
-	} elsif ($operation eq 'change') {
-	    die "Usage: $0 from to";
-	} elsif ($operation =~ /^(grep|delete)$/) {
-	    die "Usage: $0 point";
-	}
-    }
-}
-
-my @check_files;
-my %file2base;
-my @comments_part_files = qw(comments_cyclepath
-			     comments_ferry
-			     comments_misc
-			     comments_mount
-			     comments_path
-			     comments_route
-			     comments_tram
-			    );
-my %ignore_files;
-if (!$orig) {
-    %ignore_files = map{("$_-orig"=>1)} @comments_part_files;
-    $ignore_files{"radwege-orig"} = 1;
-}
-if (!@custom_check_files) {
-    chdir $datadir or die "chdir to $datadir failed: $!";
-
-    if ($operation =~ /^(insert|changeline|grep|delete)$/) {
-	# folgende Dateien werden bei insert_points überprüft:
-	# normales Format
-	# XXX gesperrt/gesperrt_car: Die Kategorie 3 müsste
-	# eigentlich gesondert betrachtet werden (wie die Drei-Punkte-Form
-	# von comments). Aber es sollte so auch funktionieren.
-	@{$check_files[T_NORMAL]} =
-	    qw(gesperrt gesperrt_car
-	       landstrassen landstrassen2
-	       qualitaet_l qualitaet_s
-	       handicap_l handicap_s
-	       strassen faehren
-	       rbahn
-	       sbahn sbahnhof sbahnhof_bg
-	       ubahn ubahnhof ubahnhof_bg
-	       nolighting
-	       flaechen wasserstrassen wasserumland
-	       wasserumland2 ampeln hoehe
-	       housenumbers green brunnels
-	       deutschland relation_gps
-	      );
-	# XXX gehört housenumbers hier rein???
-
-	# Format von radwege
-	#@{$check_files[T_OLD_RADWEGE]} = qw(radwege);
-
-	# Besonderer Code für die Die Drei-Punkte-Form von comments bei
-	# insert_points.
-	# XXX ist noch nicht implementiert!
-	#@{$check_files[T_COMMENTS]} = qw(comments vorfahrt);
-	# XXX for now use the normal insert ... the additional points have to
-	# be put out manually (but this is easier than do nothing)
-	push @{$check_files[T_NORMAL]}, qw(vorfahrt);
-	if ($orig) {
-	    push @{$check_files[T_NORMAL]}, @comments_part_files;
-	} else {
-	    # combined
-	    push @{$check_files[T_NORMAL]}, qw(comments);
-	}
-
-	@{$check_files[T_RADWEGE]} =
-	    ($orig ? qw(radwege) : qw(radwege_exact));
-
-	if (!$orig) {
-	    my $temp_blockings_dir = "$FindBin::RealBin/../misc/temp_blockings";
-	    if (-d $temp_blockings_dir) {
-		push @{$check_files[T_NORMAL]},
-		    glob("$temp_blockings_dir/*.bbd");
-	    }
-	}
-    }
-
-    open(BASE, "BASE") or die "Can't open BASE: $!";
-    while(<BASE>) {
-	chomp;
-	my($file, $base) = split(/\s+/, $_);
-	$file2base{$file} = $base;
-    }
-    close BASE;
-
-    if ($operation eq 'change') {
-	@{$check_files[T_NORMAL]} = grep { !$ignore_files{$_} } keys %file2base;
-	$file2base{'../misc/ampelschaltung-orig.txt'} = 'B'; # XXX aus ../misc/BASE holen
-	if (!$orig) {
-	    $file2base{'radwege_exact-orig'} = $file2base{'radwege-orig'};
-	    delete $file2base{'radwege-orig'};
-	    push @{$check_files[T_NORMAL]}, "radwege_exact-orig";
-	}
-	@{$check_files[T_AMPEL]} = ('../misc/ampelschaltung-orig.txt');
-    }
-} else { # custom_check_files
-    @{$check_files[T_NORMAL]} = @custom_check_files;
-    for (T_NORMAL+1 .. T_MAX) {
-	@{$check_files[$_]} = ();
-    }
-}
-
-# uhm... how hackish :-(
-if ($orig) {
-    if ($operation ne 'change') {
-	for my $cf (@check_files) {
-	    for my $f (@$cf) {
-		$f .= "-orig";
-	    }
-	}
-    }
-} else {
-    if ($operation eq 'change') {
-	for my $cf (@check_files) {
-	    for my $f (@$cf) {
-		$f =~ s/-orig//;
-	    }
-	}
-    }
-    my %new_file2base;
-    while(my($k,$v) = each %file2base) {
-	next if $ignore_files{$k};
-	(my $new_k = $k) =~ s/-orig$//;
-	$new_file2base{$new_k} = "H"; # everything in "standard" coordinates
-    }
-    %file2base = %new_file2base;
-}
-
-my @change_files;
-my %change_names;
-
-for(my $type = 0; $type <= $#check_files; $type++) {
-    foreach my $file (@{$check_files[$type]}) {
-	my $map_char_rx = ($current_coordsys ne ''
-			   ? "($current_coordsys)?"
-			   : '(B)?'
-			  ); # XXX right? ''; # XXX
-	my $map_from = "$map_char_rx$from";
-	my $map_to   = "$map_char_rx$to" if defined $to;
-	open(F, $file) or die "Can't open $file: $!";
-	warn "Read $file...\n" if $verbose;
-	my(@data) = <F>;
 	close F;
-	if ($operation =~ /^(insert|changeline)$/) {
-	    if ($type == T_NORMAL || $type == T_RADWEGE) {
-		if ($verbose) {
-		    warn "Check for ($map_from $map_to|$map_to $map_from)\n";
-		}
-		my @changed = grep(/\b($map_from $map_to|$map_to $map_from)\b/, @data);
-		if (@changed) {
-		    push @{$change_files[$type]}, $file;
-		    push @{$change_names{$file}},
-			map { /^([^\t]+)/ ? $1 : () } @changed;
-		}
-	    } elsif ($type == T_OLD_RADWEGE) {
-		if ($verbose) {
-		    warn "Check for ($map_from\t$map_to|$map_to\t$map_from)\n";
-		}
-		# XXX not necesary anymore???: my @changed = ...
-		if (grep(/^($map_from\t$map_to|$map_to\t$map_from)\b/, @data)) {
-
-		    if ($operation eq 'changeline') {
-			my $msg = 'changeline noch nicht für Typ 1 (radwege) implementiert!';
-			if ($use_tk) {
-			    $top->messageBox(-title => $0,
-					     -text => $msg,
-					     -icon => 'error');
-			    $top->destroy;
-			}
-			die $msg;
-		    }
-
-		    push @{$change_files[$type]}, $file;
-		}
-	    } elsif ($type == T_COMMENTS) {
-		# XXX implement!
-		#my $rx = "P\d.*
-		#if ($verbose) {
-		#warn "Check for ($map_from\t$map_to|$map_to\t$map_from)\n";
-		#}
-	    }
-	} elsif ($operation =~ /^(change|grep|delete)$/) {
-	    my $map_rx = ($current_coordsys eq '' ? 'B?' : $current_coordsys.'?');
-	    # XXX verbose fehlt
-	    if ($type == T_NORMAL || $type == T_COMMENTS || $type == T_OLD_RADWEGE || $type == T_RADWEGE) {
-		if (grep(/\b$map_rx$map_from\b/, @data)) {
-		    push @{$change_files[$type]}, $file;
-		}
-	    } elsif ($type == T_AMPEL) {
-warn "XXX NYI $operation for $file";
-		if (grep(/^$map_rx$map_from\b/, @data)) {
-		    push @{$change_files[$type]}, $file;
-		}
-	    }
-	}
     }
-}
 
-my $dialog_text = "Keine Umwandlung nötig.";
-if (!_interpolate(@change_files)) {
+    my($from, $middle, $to, $new_to);
+    my $top;
     if ($use_tk) {
-	$top->Dialog(-title => $0,
-		     -text  => $dialog_text,
-		     -bitmap => 'info',
-		     -buttons => ['OK'])->Show;
-	$top->destroy;
+	require Tk;
+	require Tk::ErrorDialog;
+	require Tk::Dialog;
+	$top = MainWindow->new;
+	$top->withdraw;
+	my $sel_str = ($^O eq 'MSWin32'
+		       ? do { require Tk::Clipboard;
+			      $top->Tk::Clipboard::clipboardGet;
+			  }
+		       : $top->SelectionGet);
+	$sel_str =~ s/^\s+//; # my clipboard content is something faulty
+	if ($operation eq 'insert') {
+	    ($from, $middle, $to) = map { s/\.\d+//g; $_ } split(/\s+/, $sel_str, 3);
+	} elsif ($operation eq 'changeline') {
+	    ($from, $to, $new_to) = map { s/\.\d+//g; $_ } split(/\s+/, $sel_str, 3);
+	} elsif ($operation eq 'change') {
+	    ($from, $to) = map { s/\.\d+//g; $_ } split(/\s+/, $sel_str, 2);
+	} elsif ($operation =~ /^(grep|delete)$/) {
+	    ($from) = map { s/\.\d+//g; $_ } split(/\s+/, $sel_str, 1);
+	}
     } else {
-	print STDERR "$dialog_text.\n";
-    }
-    exit;
-}
-
-if ($report) {
-    print join("\n", _interpolate(@change_files)), "\n";
-    exit 0;
-}
-
-$dialog_text = "Betroffene Dateien:\n";
-for my $changed_file (_interpolate(@change_files)) {
-    $dialog_text .= "\t" . $changed_file;
-    if (exists $change_names{$changed_file} &&
-	@{ $change_names{$changed_file} }) {
-	$dialog_text .= " (" . join(", ", @{ $change_names{$changed_file} }) . ")";
-    }
-    $dialog_text .= "\n";
-}
-$dialog_text .= "\nSoll die Umwandlung vorgenommen werden?";
-my $ans;
-if ($use_tk) {
-    require Tk::DialogBox;
-    my $dia = $top->DialogBox(-title => $0,
-			      -buttons => ['Ja', 'Nein']);
-    $dia->add('Label', -text => {insert => 'Punkt einfügen',
-				 changeline => 'Strecke verschieben',
-				 change => 'Punkt verschieben',
-				 grep => 'Punkt gefunden',
-				 delete => 'Punkt löschen',
-				}->{$operation}
-	     )->pack;
-    $dia->add('Label', -text => 'Betroffene Dateien:')->pack;
-    my @check;
-    my @orig_change_files;
-    for (my $type = 0; $type <= $#change_files; $type++) {
-	next if !defined $change_files[$type];
-	@{$orig_change_files[$type]} = @{$change_files[$type]};
-	$change_files[$type] = [];
-	foreach my $file (@{$orig_change_files[$type]}) {
-	    my $names = "";
-	    if (exists $change_names{$file} &&
-		@{ $change_names{$file} }) {
-		$names = join(", ", @{ $change_names{$file} });
-		$names = substr($names, 0, 40)."..." if length $names > 40;
-		$names = " ($names)";
-	    }
-	    $check[$type]->{$file} = 1;
-	    $dia->add('Checkbutton',
-		      -text => "$file$names",
-		      -variable => \$check[$type]->{$file})->pack(-anchor => "w");
+	# XXX -useint here too?
+	if ($operation eq 'insert') {
+	    ($from, $middle, $to) = @ARGV;
+	} elsif ($operation eq 'changeline') {
+	    ($from, $to, $new_to) = @ARGV;
+	} elsif ($operation eq 'change') {
+	    ($from, $to) = @ARGV;
+	} elsif ($operation =~ /^(grep|delete)$/) {
+	    ($from) = @ARGV;
 	}
     }
-    unless ($operation eq 'grep') {
-	$dia->add('Label',
-		  -text => "Soll die Umwandlung vorgenommen werden?")->pack;
-    }
 
-    $ans = $dia->Show;
-    for (my $type = 0; $type <= $#check_files; $type++) {
-	foreach my $file (@{$orig_change_files[$type]}) {
-	    push @{$change_files[$type]}, $file
-	      if $check[$type]->{$file};
-	}
-    }
-    if ($ans =~ /ja/i and _interpolate(@change_files)) {
-	$ans = 'j';
-    } else {
-	$ans = 'n';
-    }
-} else {
-    print STDERR "$dialog_text (j/N) ";
-    $ans = <STDIN>;
-}
-
-if ($operation eq 'grep') {
-    exit(0);
-}
-
-if ($ans =~ /^j/) {
-    for(my $type = 0; $type <= $#check_files; $type++) {
-	foreach my $file (@{$change_files[$type]}) {
-	    my $map_char = (($file2base{$file}||'') eq $current_coordsys ? '' : $current_coordsys);
-	    my $map_char_rx = ($operation =~ /^(insert|changeline)$/
-			       ? ($current_coordsys ne ''
-				  ? "(?:$current_coordsys)?"
-				  : '(?:B)?'
-				 )
-			       : ($current_coordsys ne ''
-				  ? "($current_coordsys)?"
-				  : '(B)?'
-				 )
-			      );
-	    if ($type == T_AMPEL) {
-		$map_char_rx = '';
-	    }
-
-	    my $map_from     = "$map_char_rx$from";
-	    my $map_new_from;
-	    if ($operation eq 'change') {
-		$map_new_from = $to;
-	    }
-	    my $map_middle;
+    if (!defined $from   or $from   !~ /\d+,.*\d+$/
+	or
+	($operation eq 'insert' and (!defined $middle or $middle !~ /\d+,.*\d+$/))
+	or
+	((!defined $to     or $to     !~ /\d+,.*\d+$/) && $operation !~ /^(delete|grep)$/)
+	or
+	($operation eq 'changeline' and (!defined $new_to or $new_to !~ /\d+,.*\d+$/))
+       ) {
+	if ($use_tk) {
+	    my $var_text = ($operation =~ /^(insert|changeline)$/
+			    ? "müssen genau drei Punkte"
+			    : ($operation eq 'grep'
+			       ? "muss genau ein Punkt"
+			       : "müssen genau zwei Punkte"
+			      )
+			   );
+	    $top->Dialog(-title => $0,
+			 -text => 'In der Auswahl ' . $var_text . ' sein!',
+			 -bitmap => 'error',
+			 -buttons => ['OK'])->Show;
+	    $top->destroy;
+	    return;
+	} else {
 	    if ($operation eq 'insert') {
-		$map_middle = "$current_coordsys$middle";
+		die "Usage: $0 from middle to";
+	    } elsif ($operation eq 'changeline') {
+		die "Usage: $0 from to newto";
+	    } elsif ($operation eq 'change') {
+		die "Usage: $0 from to";
+	    } elsif ($operation =~ /^(grep|delete)$/) {
+		die "Usage: $0 point";
 	    }
-	    my $map_to     = "$map_char_rx$to";
-	    my $map_new_to;
-	    if ($operation eq 'changeline') {
-		$map_new_to = "$new_to";
+	}
+    }
+
+    my @check_files;
+    my %file2base;
+    my @comments_part_files = qw(comments_cyclepath
+				 comments_ferry
+				 comments_misc
+				 comments_mount
+				 comments_path
+				 comments_route
+				 comments_tram
+				);
+    my %ignore_files;
+    if (!$orig) {
+	%ignore_files = map{("$_-orig"=>1)} @comments_part_files;
+	$ignore_files{"radwege-orig"} = 1;
+    }
+    if (!@custom_check_files) {
+	chdir $datadir or die "chdir to $datadir failed: $!";
+
+	if ($operation =~ /^(insert|changeline|grep|delete)$/) {
+	    # folgende Dateien werden bei insert_points überprüft:
+	    # normales Format
+	    # XXX gesperrt/gesperrt_car: Die Kategorie 3 müsste
+	    # eigentlich gesondert betrachtet werden (wie die Drei-Punkte-Form
+	    # von comments). Aber es sollte so auch funktionieren.
+	    @{$check_files[T_NORMAL]} =
+		qw(gesperrt gesperrt_car
+		   landstrassen landstrassen2
+		   qualitaet_l qualitaet_s
+		   handicap_l handicap_s
+		   strassen faehren
+		   rbahn
+		   sbahn sbahnhof sbahnhof_bg
+		   ubahn ubahnhof ubahnhof_bg
+		   nolighting
+		   flaechen wasserstrassen wasserumland
+		   wasserumland2 ampeln hoehe
+		   housenumbers green brunnels
+		   deutschland relation_gps
+		  );
+	    # XXX gehört housenumbers hier rein???
+
+	    # Format von radwege
+	    #@{$check_files[T_OLD_RADWEGE]} = qw(radwege);
+
+	    # Besonderer Code für die Die Drei-Punkte-Form von comments bei
+	    # insert_points.
+	    # XXX ist noch nicht implementiert!
+	    #@{$check_files[T_COMMENTS]} = qw(comments vorfahrt);
+	    # XXX for now use the normal insert ... the additional points have to
+	    # be put out manually (but this is easier than do nothing)
+	    push @{$check_files[T_NORMAL]}, qw(vorfahrt);
+	    if ($orig) {
+		push @{$check_files[T_NORMAL]}, @comments_part_files;
+	    } else {
+		# combined
+		push @{$check_files[T_NORMAL]}, qw(comments);
 	    }
 
-	    if ($operation eq 'change' and $type == T_AMPEL
-		and length($map_new_from) < length($map_from)) {
-		# mit Leerzeichen auffüllen, da ich mit LHS substr arbeite
-		$map_new_from .= " " x (length($map_from)-length($map_new_from));
+	    @{$check_files[T_RADWEGE]} =
+		($orig ? qw(radwege) : qw(radwege_exact));
+
+	    if (!$orig) {
+		my $temp_blockings_dir = "$FindBin::RealBin/../misc/temp_blockings";
+		if (-d $temp_blockings_dir) {
+		    push @{$check_files[T_NORMAL]},
+			glob("$temp_blockings_dir/*.bbd");
+		}
 	    }
+	}
+
+	open(BASE, "BASE") or die "Can't open BASE: $!";
+	while(<BASE>) {
+	    chomp;
+	    my($file, $base) = split(/\s+/, $_);
+	    $file2base{$file} = $base;
+	}
+	close BASE;
+
+	if ($operation eq 'change') {
+	    @{$check_files[T_NORMAL]} = grep { !$ignore_files{$_} } keys %file2base;
+	    $file2base{'../misc/ampelschaltung-orig.txt'} = 'B'; # XXX aus ../misc/BASE holen
+	    if (!$orig) {
+		$file2base{'radwege_exact-orig'} = $file2base{'radwege-orig'};
+		delete $file2base{'radwege-orig'};
+		push @{$check_files[T_NORMAL]}, "radwege_exact-orig";
+	    }
+	    @{$check_files[T_AMPEL]} = ('../misc/ampelschaltung-orig.txt');
+	}
+    } else { # custom_check_files
+	@{$check_files[T_NORMAL]} = @custom_check_files;
+	for (T_NORMAL+1 .. T_MAX) {
+	    @{$check_files[$_]} = ();
+	}
+    }
+
+    # uhm... how hackish :-(
+    if ($orig) {
+	if ($operation ne 'change') {
+	    for my $cf (@check_files) {
+		for my $f (@$cf) {
+		    $f .= "-orig";
+		}
+	    }
+	}
+    } else {
+	if ($operation eq 'change') {
+	    for my $cf (@check_files) {
+		for my $f (@$cf) {
+		    $f =~ s/-orig//;
+		}
+	    }
+	}
+	my %new_file2base;
+	while(my($k,$v) = each %file2base) {
+	    next if $ignore_files{$k};
+	    (my $new_k = $k) =~ s/-orig$//;
+	    $new_file2base{$new_k} = "H"; # everything in "standard" coordinates
+	}
+	%file2base = %new_file2base;
+    }
+
+    my @change_files;
+    my %change_names;
+
+    for(my $type = 0; $type <= $#check_files; $type++) {
+	foreach my $file (@{$check_files[$type]}) {
+	    my $map_char_rx = ($current_coordsys ne ''
+			       ? "($current_coordsys)?"
+			       : '(B)?'
+			      ); # XXX right? ''; # XXX
+	    my $map_from = "$map_char_rx$from";
+	    my $map_to   = "$map_char_rx$to" if defined $to;
+	    open(F, $file) or die "Can't open $file: $!";
+	    warn "Read $file...\n" if $verbose;
+	    my(@data) = <F>;
+	    close F;
+	    if ($operation =~ /^(insert|changeline)$/) {
+		if ($type == T_NORMAL || $type == T_RADWEGE) {
+		    if ($verbose) {
+			warn "Check for ($map_from $map_to|$map_to $map_from)\n";
+		    }
+		    my @changed = grep(/\b($map_from $map_to|$map_to $map_from)\b/, @data);
+		    if (@changed) {
+			push @{$change_files[$type]}, $file;
+			push @{$change_names{$file}},
+			    map { /^([^\t]+)/ ? $1 : () } @changed;
+		    }
+		} elsif ($type == T_OLD_RADWEGE) {
+		    if ($verbose) {
+			warn "Check for ($map_from\t$map_to|$map_to\t$map_from)\n";
+		    }
+		    # XXX not necesary anymore???: my @changed = ...
+		    if (grep(/^($map_from\t$map_to|$map_to\t$map_from)\b/, @data)) {
+			if ($operation eq 'changeline') {
+			    my $msg = 'changeline noch nicht für Typ 1 (radwege) implementiert!';
+			    if ($use_tk) {
+				$top->messageBox(-title => $0,
+						 -text => $msg,
+						 -icon => 'error');
+				$top->destroy;
+			    }
+			    die $msg;
+			}
+			push @{$change_files[$type]}, $file;
+		    }
+		} elsif ($type == T_COMMENTS) {
+		    # XXX implement!
+		    #my $rx = "P\d.*
+		    #if ($verbose) {
+		    #warn "Check for ($map_from\t$map_to|$map_to\t$map_from)\n";
+		    #}
+		}
+	    } elsif ($operation =~ /^(change|grep|delete)$/) {
+		my $map_rx = ($current_coordsys eq '' ? 'B?' : $current_coordsys.'?');
+		# XXX verbose fehlt
+		if ($type == T_NORMAL || $type == T_COMMENTS || $type == T_OLD_RADWEGE || $type == T_RADWEGE) {
+		    if (grep(/\b$map_rx$map_from\b/, @data)) {
+			push @{$change_files[$type]}, $file;
+		    }
+		} elsif ($type == T_AMPEL) {
+		    #warn "XXX NYI $operation for $file";
+                    if (grep(/^$map_rx$map_from\b/, @data)) {
+			push @{$change_files[$type]}, $file;
+		    }
+		}
+	    }
+	}
+    }
+
+    my $dialog_text = "Keine Umwandlung nötig.";
+    if (!_interpolate(@change_files)) {
+	if ($use_tk) {
+	    $top->Dialog(-title => $0,
+			 -text  => $dialog_text,
+			 -bitmap => 'info',
+			 -buttons => ['OK'])->Show;
+	    $top->destroy;
+	} else {
+	    print STDERR "$dialog_text.\n";
+	}
+	return;
+    }
+
+    if ($report) {
+	print join("\n", _interpolate(@change_files)), "\n";
+	return 0;
+    }
+
+    $dialog_text = "Betroffene Dateien:\n";
+    for my $changed_file (_interpolate(@change_files)) {
+	$dialog_text .= "\t" . $changed_file;
+	if (exists $change_names{$changed_file} &&
+	    @{ $change_names{$changed_file} }) {
+	    $dialog_text .= " (" . join(", ", @{ $change_names{$changed_file} }) . ")";
+	}
+	$dialog_text .= "\n";
+    }
+    $dialog_text .= "\nSoll die Umwandlung vorgenommen werden?";
+    my $ans;
+    if ($use_tk) {
+	require Tk::DialogBox;
+	my $dia = $top->DialogBox(-title => $0,
+				  -buttons => ['Ja', 'Nein']);
+	$dia->add('Label', -text => {insert => 'Punkt einfügen',
+				     changeline => 'Strecke verschieben',
+				     change => 'Punkt verschieben',
+				     grep => 'Punkt gefunden',
+				     delete => 'Punkt löschen',
+				    }->{$operation}
+		 )->pack;
+	$dia->add('Label', -text => 'Betroffene Dateien:')->pack;
+	my @check;
+	my @orig_change_files;
+	for (my $type = 0; $type <= $#change_files; $type++) {
+	    next if !defined $change_files[$type];
+	    @{$orig_change_files[$type]} = @{$change_files[$type]};
+	    $change_files[$type] = [];
+	    foreach my $file (@{$orig_change_files[$type]}) {
+		my $names = "";
+		if (exists $change_names{$file} &&
+		    @{ $change_names{$file} }) {
+		    $names = join(", ", @{ $change_names{$file} });
+		    $names = substr($names, 0, 40)."..." if length $names > 40;
+		    $names = " ($names)";
+		}
+		$check[$type]->{$file} = 1;
+		$dia->add('Checkbutton',
+			  -text => "$file$names",
+			  -variable => \$check[$type]->{$file})->pack(-anchor => "w");
+	    }
+	}
+	unless ($operation eq 'grep') {
+	    $dia->add('Label',
+		      -text => "Soll die Umwandlung vorgenommen werden?")->pack;
+	}
+
+	$ans = $dia->Show;
+	for (my $type = 0; $type <= $#check_files; $type++) {
+	    foreach my $file (@{$orig_change_files[$type]}) {
+		push @{$change_files[$type]}, $file
+		    if $check[$type]->{$file};
+	    }
+	}
+	if ($ans =~ /ja/i and _interpolate(@change_files)) {
+	    $ans = 'j';
+	} else {
+	    $ans = 'n';
+	}
+    } else {
+	print STDERR "$dialog_text (j/N) ";
+	$ans = <STDIN>;
+    }
+
+    if ($operation eq 'grep') {
+	return 0;
+    }
+
+    if ($ans =~ /^j/) {
+	for(my $type = 0; $type <= $#check_files; $type++) {
+	    foreach my $file (@{$change_files[$type]}) {
+		my $map_char = (($file2base{$file}||'') eq $current_coordsys ? '' : $current_coordsys);
+		my $map_char_rx = ($operation =~ /^(insert|changeline)$/
+				   ? ($current_coordsys ne ''
+				      ? "(?:$current_coordsys)?"
+				      : '(?:B)?'
+				     )
+				   : ($current_coordsys ne ''
+				      ? "($current_coordsys)?"
+				      : '(B)?'
+				     )
+				  );
+		if ($type == T_AMPEL) {
+		    $map_char_rx = '';
+		}
+
+		my $map_from     = "$map_char_rx$from";
+		my $map_new_from;
+		if ($operation eq 'change') {
+		    $map_new_from = $to;
+		}
+		my $map_middle;
+		if ($operation eq 'insert') {
+		    $map_middle = "$current_coordsys$middle";
+		}
+		my $map_to     = "$map_char_rx$to";
+		my $map_new_to;
+		if ($operation eq 'changeline') {
+		    $map_new_to = "$new_to";
+		}
+
+		if ($operation eq 'change' and $type == T_AMPEL
+		    and length($map_new_from) < length($map_from)) {
+		    # mit Leerzeichen auffüllen, da ich mit LHS substr arbeite
+		    $map_new_from .= " " x (length($map_from)-length($map_new_from));
+		}
 
 #warn "from=$map_from, middle=$map_middle, to=$map_to, new_from=$map_new_from, new_to=$map_new_to\n";
 
-	    # auschecken, falls notwendig...
-	    if (!$n) {
-		my $rcsfile = "RCS/$file,v";
-		if (!-w $file && -f $rcsfile) {
-		    my $ok = BBBikeUtil::rcs_co($file);
-		    if (!$ok) {
-			die "Problems while check-out $file";
+		# auschecken, falls notwendig...
+		if (!$n) {
+		    my $rcsfile = "RCS/$file,v";
+		    if (!-w $file && -f $rcsfile) {
+			my $ok = BBBikeUtil::rcs_co($file);
+			if (!$ok) {
+			    die "Problems while check-out $file";
+			}
 		    }
 		}
-	    }
 
-	    if (!$n) {
-		chmod 0644, "$file~";
-		rename $file, "$file~" or die "rename $file to $file~: $!";
-		open(R, "$file~") or die "Can't open $file~: $!";
-		open(W, ">$file") or die "Can't write to $file: $!";
-	    } else {
-		open(R, $file) or die "Can't open $file: $!";
-		open(W, ">/tmp/insert_change_points_test") or die "Can't write to file: $!";
-	    }
-	    binmode W; # XXX check on NT
-	    while(<R>) {
-		if ($operation eq 'insert') {
-		    if ($type == T_NORMAL) {
-			if (/\b$map_from $map_to\b/) {
-			    s/\b($map_from) ($map_to)\b/$1 $map_middle $2/;
-			} elsif (/\b$map_to $map_from\b/) {
-			    s/\b($map_to) ($map_from)\b/$1 $map_middle $2/;
+		if (!$n) {
+		    chmod 0644, "$file~";
+		    rename $file, "$file~" or die "rename $file to $file~: $!";
+		    open(R, "$file~") or die "Can't open $file~: $!";
+		    open(W, ">$file") or die "Can't write to $file: $!";
+		} else {
+		    open(R, $file) or die "Can't open $file: $!";
+		    open(W, ">/tmp/insert_change_points_test") or die "Can't write to file: $!";
+		}
+		binmode W; # XXX check on NT
+		while(<R>) {
+		    if ($operation eq 'insert') {
+			if ($type == T_NORMAL) {
+			    if (/\b$map_from $map_to\b/) {
+				s/\b($map_from) ($map_to)\b/$1 $map_middle $2/;
+			    } elsif (/\b$map_to $map_from\b/) {
+				s/\b($map_to) ($map_from)\b/$1 $map_middle $2/;
+			    }
+			    print W $_;
+			} elsif ($type == T_RADWEGE) {
+			    if (/\b$map_from $map_to\b/) {
+				(my $first = $_) =~ s/\b($map_from) ($map_to)\b/$1 $map_middle/;
+				(my $second = $_) =~ s/\b($map_from) ($map_to)\b/$map_middle $2/;
+				print W "$first$second";
+			    } elsif (/\b$map_to $map_from\b/) {
+				(my $first = $_) =~ s/\b($map_to) ($map_from)\b/$1 $map_middle/;
+				(my $second = $_) =~ s/\b($map_to) ($map_from)\b/$map_middle $2/;
+				print W "$first$second";
+			    } else {
+				print W $_;
+			    }
+			} elsif ($type == T_OLD_RADWEGE) {
+			    if (/^($map_from)\t($map_to)\b(.*)/) {
+				print W "$1\t$map_middle$3\n";
+				print W "$map_middle\t$2$3\n";
+			    } elsif (/^($map_to)\t($map_from)\b(.*)/) {
+				print W "$1\t$map_middle$3\n";
+				print W "$map_middle\t$2$3\n";
+			    } else {
+				print W $_;
+			    }
 			}
-			print W $_;
-		    } elsif ($type == T_RADWEGE) {
-			if (/\b$map_from $map_to\b/) {
-			    (my $first = $_) =~ s/\b($map_from) ($map_to)\b/$1 $map_middle/;
-			    (my $second = $_) =~ s/\b($map_from) ($map_to)\b/$map_middle $2/;
-			    print W "$first$second";
-			} elsif (/\b$map_to $map_from\b/) {
-			    (my $first = $_) =~ s/\b($map_to) ($map_from)\b/$1 $map_middle/;
-			    (my $second = $_) =~ s/\b($map_to) ($map_from)\b/$map_middle $2/;
-			    print W "$first$second";
+		    } elsif ($operation eq 'changeline') {
+			if ($type == T_NORMAL || $type == T_RADWEGE) {
+			    if (/\b$map_from $map_to\b/) {
+				s/\b($map_from) $map_to\b/$1 $map_new_to/;
+			    } elsif (/\b$map_to $map_from\b/) {
+				s/\b$map_to ($map_from)\b/$map_new_to $1/;
+			    }
+			    print W $_;
+			} elsif ($type == T_OLD_RADWEGE) {
+			    die "NYI!!!";
+			}
+		    } elsif ($operation eq 'delete') {
+			if ($type == T_NORMAL || $type == T_RADWEGE) {
+			    s/\s*$map_from//g;
+			    if (/^[^\t]\t\S+$/) {
+				# remove this record
+			    } else {
+				print W $_;
+			    }
 			} else {
+			    die "NYI!";
+			}
+		    } elsif ($operation eq 'change') {
+			if ($type == T_NORMAL || $type == T_RADWEGE) {
+			    s/\b$map_from\b/$1$map_new_from/g;
+			    print W $_;
+			} elsif ($type == T_AMPEL) {
+			    if (/^$map_from\b/) {
+				substr($_, 0, length($map_new_from)) = $map_new_from;
+			    }
 			    print W $_;
 			}
-		    } elsif ($type == T_OLD_RADWEGE) {
-			if (/^($map_from)\t($map_to)\b(.*)/) {
-			    print W "$1\t$map_middle$3\n";
-			    print W "$map_middle\t$2$3\n";
-			} elsif (/^($map_to)\t($map_from)\b(.*)/) {
-			    print W "$1\t$map_middle$3\n";
-			    print W "$map_middle\t$2$3\n";
-			} else {
-			    print W $_;
-			}
-		    }
-		} elsif ($operation eq 'changeline') {
-		    if ($type == T_NORMAL || $type == T_RADWEGE) {
-			if (/\b$map_from $map_to\b/) {
-			    s/\b($map_from) $map_to\b/$1 $map_new_to/;
-			} elsif (/\b$map_to $map_from\b/) {
-			    s/\b$map_to ($map_from)\b/$map_new_to $1/;
-			}
-			print W $_;
-		    } elsif ($type == T_OLD_RADWEGE) {
-			die "NYI!!!";
-		    }
-		} elsif ($operation eq 'delete') {
-		    if ($type == T_NORMAL || $type == T_RADWEGE) {
-			s/\s*$map_from//g;
-			if (/^[^\t]\t\S+$/) {
-			    # remove this record
-			} else {
-			    print W $_;
-			}
-		    } else {
-			die "NYI!";
-		    }
-		} elsif ($operation eq 'change') {
-		    if ($type == T_NORMAL || $type == T_RADWEGE) {
-			s/\b$map_from\b/$1$map_new_from/g;
-			print W $_;
-		    } elsif ($type == T_AMPEL) {
-			if (/^$map_from\b/) {
-			    substr($_, 0, length($map_new_from)) = $map_new_from;
-			}
-			print W $_;
 		    }
 		}
-	    }
-	    close W;
-	    close R;
-	    if (!$n) {
-		chmod 0644, $file;
+		close W;
+		close R;
+		if (!$n) {
+		    chmod 0644, $file;
+		}
 	    }
 	}
     }
@@ -613,5 +608,22 @@ sub _interpolate {
     }
     @res;
 }
+
+return 1 if caller;
+
+$operation = ($0 =~ /insert_points$/
+	      ? 'insert'
+	      : ($0 =~ /change_line$/
+		 ? 'changeline'
+		 : ($0 =~ /grep_point$/
+		    ? 'grep'
+		    : ($0 =~ /delete_point$/
+		       ? 'delete'
+		       : 'change')
+		   )
+		)
+	     );
+
+exit process(@ARGV);
 
 __END__

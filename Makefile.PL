@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.95 2004/01/04 21:48:14 eserte Exp $
+# $Id: Makefile.PL,v 1.96 2004/01/10 23:18:46 eserte Exp $
 
 use 5.005;
 
@@ -399,31 +399,6 @@ EOF
 }
 
 sub MY::postamble {
-    my(@bundled_perl_module_dists) =
-	qw(Tk-ContextHelp Tk-Enscript Tk-Getopt Tk-Autoscroll Tk-PathEntry
-	   Tk-CanvasFig BikePower savevars GD-Convert Tk-Splash
-	   Http Msg
-	   Tk-SREZIC Tk-CanvasBalloon Tk-CanvasUtil Tk-LogScale
-	   Tk-ColorFlowChooser Tk-LayerEditor Tk-Placement
-	   Tk-StippleLine Tk-WidgetDump Win32Util WWWBrowser
-	  );
-    my $EXTMODCPANTOP = "$ENV{HOME}/src/CPAN";
-    my $EXTMODPERLTOP = "$ENV{HOME}/src/perl";
-    my(@EXTMODCPAN, @EXTMODPERL);
-    for my $module_dist (@bundled_perl_module_dists) {
-	if (-e "$EXTMODCPANTOP/$module_dist") {
-	    push @EXTMODCPAN, $module_dist;
-	} elsif (-e "$EXTMODPERLTOP/$module_dist") {
-	    push @EXTMODPERL, $module_dist;
-	} else {
-	    if (defined $ENV{USER} && $ENV{USER} eq 'eserte') {
-		warn "Can't find $module_dist neither in $EXTMODCPANTOP nor in $EXTMODPERLTOP\n";
-	    }
-	}
-    }
-    my $EXTMODCPAN = join(" ", @EXTMODCPAN);
-    my $EXTMODPERL = join(" ", @EXTMODPERL);
-
     $bbbike_makefile_admin = "";
     my $admin_makefile = "./Makefile.admin.PL";
     if (-e $admin_makefile) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Autoscroll.pm,v 1.12 2002/02/04 21:38:41 eserte Exp eserte $
+# $Id: Autoscroll.pm,v 1.13 2003/10/22 21:34:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001,2002 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ use vars qw($VERSION @default_args);
 my $count = 0;
 my $prefix = "Autoscroll";
 
-$VERSION = sprintf "%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/;
+$VERSION = sprintf "%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/;
 
 sub import {
     if (defined $_[1] and $_[1] eq 'as_default') {

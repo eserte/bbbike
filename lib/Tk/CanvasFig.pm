@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CanvasFig.pm,v 1.14 2002/08/08 17:44:54 eserte Exp eserte $
+# $Id: CanvasFig.pm,v 1.15 2003/10/22 21:34:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2002 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use strict;
 use vars qw($VERSION %capstyle %joinstyle %figcolor @figcolor
 	    $usercolorindex);
 
-$VERSION = sprintf("%d.%03d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 %capstyle = ('butt' => 0,
 	     'projecting' => 2,

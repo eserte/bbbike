@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: Enscript.pm,v 1.6 2001/12/15 14:23:00 eserte Exp eserte $
+# $Id: Enscript.pm,v 1.7 2003/10/22 21:33:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://www.sourceforge.net/projects/srezic
 #
 
 package Tk::Enscript;
@@ -24,7 +24,7 @@ use vars qw(%media %postscript_to_x11_font
 @ISA = qw(Exporter);
 @EXPORT = qw(enscript);
 
-$VERSION = sprintf "%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/;
+$VERSION = sprintf "%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/;
 
 parse_cfg();
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.85 2003/11/16 20:54:04 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.86 2004/01/10 22:36:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2003 Slaven Rezic. All rights reserved.
@@ -1437,7 +1437,8 @@ sub penalty_menu {
 
 #XXX do not have the special case coordsys eq 'B'
 ### AutoLoad Sub
-sub _insert_points_and_co {
+#XXX del:
+sub _XXX_insert_points_and_co {
     my $action = shift;
     my $oper_name = shift;
     my $vstr = ($verbose ? " -v" : "");
@@ -1459,11 +1460,38 @@ sub _insert_points_and_co {
     }
 }
 
+### AutoLoad Sub
+sub _insert_points_and_co {
+    my $action = shift;
+    my $oper_name = shift;
+    my $vstr = ($verbose ? " -v" : "");
+    $action = "insert_points";
+    eval {
+	require "$FindBin::RealBin/miscsrc/insert_points";
+	my @args = (-operation => $oper_name,
+		    (!defined $edit_mode || $edit_mode eq '' ? "-noorig" : ()),
+		    (-e "$datadir/.custom_files" ? (-filelist => "$datadir/.custom_files") : ()),
+		    ($coord_system_obj->coordsys eq 'B' ? () : (-coordsys => $coord_system_obj->coordsys)),
+		    "-useint", # XXX but not for polar coordinates
+		    -datadir => $datadir,
+		    "-tk",
+		    ($vstr ne "" ? $vstr : ()),
+		   );
+	warn "@args\n";
+	BBBikeModify::process(@args);
+	# clear the selection
+	delete_route();
+    }
+}
+
 sub insert_points { _insert_points_and_co("insert_points", "insert")     }
 sub change_points { _insert_points_and_co("change_points", "change")     }
 sub change_line   { _insert_points_and_co("change_line",   "changeline") }
 sub grep_point    { _insert_points_and_co("grep_point",    "grep")       }
 sub delete_point  { _insert_points_and_co("delete_point",  "delete")     }
+sub change_poly_points {
+    # XXX NYI
+}
 
 sub find_canvas_item_file {
     my $ev = $_[0]->XEvent;

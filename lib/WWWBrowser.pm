@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: WWWBrowser.pm,v 2.24 2003/04/25 22:24:41 eserte Exp $
+# $Id: WWWBrowser.pm,v 2.24 2003/04/25 22:24:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -477,6 +477,15 @@ sub is_in_path {
     undef;
 }
 # REPO END
+
+# XXX Forward compatibility
+{
+    package Launcher::WWW;
+    sub launch {
+	WWWBrowser::start_browser(@_);
+    }
+    *Launcher::WWW = \&Launcher::WWW::launch;
+}
 
 1;
 

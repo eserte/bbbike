@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CanvasUtil.pm,v 1.14 2002/11/09 10:47:30 eserte Exp eserte $
+# $Id: CanvasUtil.pm,v 1.15 2003/12/27 21:55:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package Tk::CanvasUtil;
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 =head1 NAME
 
