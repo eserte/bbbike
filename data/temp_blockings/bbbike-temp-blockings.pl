@@ -810,12 +810,11 @@ userdel	q4 8493,25378 8370,25539
 userdel	q4 8370,25539 8182,25608
 EOF
      },
-     { from  => 1096149600, # 2004-09-26 00:00
-       until => 1100216074, # was 2005-05-28 00:00
-       text  => 'K 6413; (Wriezener Straße); OL Buckow, zw. Ringstr. u. Weinbergsweg Kanal- u. Straßenbau Vollsperrung 27.09.2004-27.05.2005 ',
+     { from  => 1105830000, # 2005-01-16 00:00
+       until => 1117231200, # 2005-05-28 00:00
+       text  => 'K 6413; (Wriezener Straße); OL Buckow, zw. Weinbergsweg u. Ringstr. Kanal- u. Straßenbau Vollsperrung 17.01.2005-27.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 55429,20127 55558,19957
 userdel	q4 55664,19342 55558,19957
 EOF
      },
@@ -1345,6 +1344,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 22508,-102744 22382,-102254
+EOF
+     },
+     { from  => 1105916400, # 2005-01-17 00:00
+       until => 1107298800, # 2005-02-02 00:00
+       text  => 'L 86; zw. Schmergow und Ketzin Straßenbau Vollsperrung 18.01.2005-01.02.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -27793,4863 -28134,4796
+userdel	2 -27793,4863 -27127,5270
 EOF
      },
     );
