@@ -238,6 +238,11 @@ sub process {
 	%ignore_files = map{("$_-orig"=>1)} @comments_part_files;
 	$ignore_files{"radwege-orig"} = 1;
     }
+
+    # These are listed in BASE, but should not be handled...
+    $ignore_files{"label-orig"} = 1;
+    $ignore_files{"relation_gps-orig"} = 1;
+
     if (!@custom_check_files) {
 	chdir $datadir or die "chdir to $datadir failed: $!";
 
@@ -263,9 +268,10 @@ sub process {
 		   flaechen wasserstrassen wasserumland
 		   wasserumland2 ampeln hoehe
 		   housenumbers green brunnels
-		   deutschland relation_gps
+		   deutschland
 		   fragezeichen
 		  );
+	    # relation_gps herausgenommen (CVS 2004-07-26, RCS ...)
 	    # XXX gehört housenumbers hier rein???
 
 	    # Format von radwege
