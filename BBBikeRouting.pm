@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.33 2004/12/05 21:55:47 eserte Exp eserte $
+# $Id: BBBikeRouting.pm,v 1.34 2004/12/14 01:39:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -536,8 +536,36 @@ sub search {
     }
     $self->get_position("Goal") if !$self->Goal->Coord;
 
-    die "No start coordinate after using get_position" if !$start_coord;
-    die "No goal coordinate after using get_position" if !$self->Goal->Coord;
+    my $die;
+    if (!$start_coord) {
+	if ($self->StartChoices && @{ $self->StartChoices }) {
+	    warn "Multiple start choices found: " .
+		join(", ", map { $_->Street . "/" . $_->Citypart } @{ $self->StartChoices }) .
+		    ", please resolve by using StartChoices\n";
+	} else {
+	    warn "No start coordinate found for " .
+		$self->Start->Street . "/" . $self->Start->Citypart .
+		    " after using get_position\n";
+	}
+	$die++;
+    }
+
+    if (!$self->Goal->Coord) {
+	if ($self->StartChoices && @{ $self->StartChoices }) {
+	    warn "Multiple goal choices found: " .
+		join(", ", map { $_->Street . "/" . $_->Citypart } @{ $self->GoalChoices }) .
+		    ", please resolve by using GoalChoices\n";
+	} else {
+	    warn "No goal coordinate found for " .
+		$self->Goal->Street . "/" . $self->Goal->Citypart .
+		    " after using get_position\n";
+	}
+	$die++;
+    }
+
+    if ($die) {
+	die "No start and/or goal found, aborting";
+    }
 
     my $context = $self->Context;
 
