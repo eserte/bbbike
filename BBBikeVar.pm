@@ -45,7 +45,7 @@ $BBBIKE_UPDATE_WWW = "http://bbbike.sourceforge.net/bbbike";
 $BBBIKE_WAP	   = 'http://bbbike.de/wap';
 $BBBIKE_DIRECT_WAP = 'http://www.radzeit.de/cgi-bin/wapbbbike.cgi';
 # distribution directory for scripts:
-$DISTDIR	   = 'http://prdownloads.sourceforge.net/bbbike';
+$DISTDIR	   = 'ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike';
 # distribution directory for humans (entry to 'show files' at sourceforge)
 $DISPLAY_DISTDIR   = 'http://sourceforge.net/project/showfiles.php?group_id=19142';
 # XXX not used ... should be moved to sourceforge, too
