@@ -1238,4 +1238,12 @@ EOF
 userdel	q4; 7693,18481 7350,18262
 EOF
      },
+     { from  => 1101934006, # 2004-12-01 21:46
+       until => 1117576800, # 2005-06-01 00:00
+       text  => 'Akeleiweg, Tiefbauarbeiten, Straße von Eisenhutweg in Richtung Stubenrauchstraße gesperrt, Dauer: bis 31.05.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 17894,2783 17631,3200 17603,3240 17388,3576
+EOF
+     },
     );
