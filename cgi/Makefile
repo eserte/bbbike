@@ -2,7 +2,7 @@ CGI_SCRIPTS=	bbbike.cgi mapserver_address.cgi mapserver_comment.cgi mapserver_se
 ROOT_URL?=	/bbbike
 # Set this to "cgi" or "Apache::Registry"
 CGI_TYPE?=	cgi
-ROOT_DIR!=	perl -MFindBin=$$RealBin -MCwd=cwd -le 'chdir("$$RealBin/..") or die; print cwd'
+ROOT_DIR!=	perl -MFindBin='$$RealBin' -MCwd=cwd -le 'chdir("$$RealBin/..") or die; print cwd'
 
 all:	httpd.conf rights
 
