@@ -101,8 +101,9 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        file  => 'xrace.bbd',
        text  => 'Straße des 17. Juni ist zwischen Entlastungstraße und Klopstockstraße gesperrt. (X Race-Veranstaltung) Dauer: 24.08.2003, von 14.00 Uhr bis 20.00 Uhr'
      },
-     { from  => 1059190200, # 2003-07-26 05:30
-       until => 1059336000, # 2003-07-27 22:00
+     # wieder zurückgezogen:
+     { from  => 0, #1059190200, # 2003-07-26 05:30
+       until => 0, #1059336000, # 2003-07-27 22:00
        file  => '20030727.bbd',
        text  => 'Kurfürstendamm zwischen Joachimstaler Straße und Fasanenstraße in Fahrtrichtung Westen gesperrt (Kranarbeiten). Dauer: 27.07.2003 zwischen 05.30 Uhr und ca. 22.00 Uhr',
        type  => "handicap",

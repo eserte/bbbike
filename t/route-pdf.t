@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: route-pdf.t,v 1.2 2003/06/23 22:04:48 eserte Exp $
+# $Id: route-pdf.t,v 1.3 2003/07/24 06:25:59 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -87,5 +87,7 @@ $rp->{PDF}->close;
 if ($out_to_gv) {
     close(GV);
 }
+
+ok(1);
 
 __END__
