@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiStrassen.pm,v 1.6 2004/02/22 22:51:23 eserte Exp eserte $
+# $Id: MultiStrassen.pm,v 1.7 2004/03/03 00:09:14 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the

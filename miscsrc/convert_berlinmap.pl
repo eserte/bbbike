@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: convert_berlinmap.pl,v 1.40 2003/06/02 23:02:35 eserte Exp $
+# $Id: convert_berlinmap.pl,v 1.40 2003/06/02 23:02:35 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003 Slaven Rezic. All rights reserved.
@@ -608,49 +608,7 @@ TRY: {
 
 my @map_data;
 if (!$reuse_map_data || !@global_map_data) {
-    require Karte;
-    require Karte::Polar;
-    require Karte::Standard;
-
-    my $linenr = 0;
-
-    foreach (@map_data_lines) {
-	$linenr++;
-	next if /^\#/;
-	next if /^\s*$/;
-	if (/([+-]?\d+),([+-]?\d+)\s*([+-]?[\d\.]+),([+-]?[\d\.]+)/) {
-	    push @map_data, [$3,$1,$4,$2,$linenr];
-	    #XXX combine next three cases...
-	} elsif (/([NS]\d+\s\d+\s[\d\.]+)\s+
-		 ([EW]\d+\s\d+\s[\d\.]+)\s+
-		 ([+-]?[\d\.]+),([+-]?[\d\.]+)/x) {
-	    my($lat,$long,$x1,$y1) = ($1,$2,$3,$4);
-	    my($x2,$y2) = $Karte::Polar::obj->map2standard
-		(Karte::Polar::dms_string2ddd($long),
-		 Karte::Polar::dms_string2ddd($lat));
-	    push @map_data, [$x1,$x2,$y1,$y2,$linenr];
-	} elsif (/([+-]?[\d\.]+),([+-]?[\d\.]+)\s+
-		 ([NS]\d+\s\d+\s[\d\.]+)\s+
-		 ([EW]\d+\s\d+\s[\d\.]+)/x) {
-	    my($x1,$y1,$lat,$long) = ($1,$2,$3,$4);
-	    my($x2,$y2) = $Karte::Polar::obj->map2standard
-		(Karte::Polar::dms_string2ddd($long),
-		 Karte::Polar::dms_string2ddd($lat));
-	    push @map_data, [$x1,$x2,$y1,$y2,$linenr];
-	} elsif (/([EW])\s+(\d+)°(\d+)\'([\d\.]+)\"\s+
-		 ([NS])\s+(\d+)°(\d+)\'([\d\.]+)\"\s+
-		 ([+-]?[\d\.]+),([+-]?[\d\.]+)/x) {
-	    my $long = "$1$2 $3 $4";
-	    my $lat  = "$5$6 $7 $8";
-	    my($x1,$y1) = ($9, $10);
-	    my($x2,$y2) = $Karte::Polar::obj->map2standard
-		(Karte::Polar::dms_string2ddd($long),
-		 Karte::Polar::dms_string2ddd($lat));
-	    push @map_data, [$x1,$x2,$y1,$y2,$linenr];
-	} else {
-	    die "Can't parse $_";
-	}
-    }
+    @map_data = parse_data(@map_data_lines);
 }
 
 if ($reuse_map_data && !@global_map_data) {
@@ -770,6 +728,57 @@ if ($output ne 'bbd') {
 # Quadrat
 sub sqr {
     $_[0] * $_[0];
+}
+
+sub parse_data {
+    my @map_data_lines = @_;
+    my @map_data;
+
+    require Karte;
+    require Karte::Polar;
+    require Karte::Standard;
+
+    my $linenr = 0;
+
+    foreach (@map_data_lines) {
+	$linenr++;
+	next if /^\#/;
+	next if /^\s*$/;
+	if (/([+-]?\d+),([+-]?\d+)\s*([+-]?[\d\.]+),([+-]?[\d\.]+)/) {
+	    push @map_data, [$3,$1,$4,$2,$linenr];
+	    #XXX combine next three cases...
+	} elsif (/([NS]\d+\s\d+\s[\d\.]+)\s+
+		 ([EW]\d+\s\d+\s[\d\.]+)\s+
+		 ([+-]?[\d\.]+),([+-]?[\d\.]+)/x) {
+	    my($lat,$long,$x1,$y1) = ($1,$2,$3,$4);
+	    my($x2,$y2) = $Karte::Polar::obj->map2standard
+		(Karte::Polar::dms_string2ddd($long),
+		 Karte::Polar::dms_string2ddd($lat));
+	    push @map_data, [$x1,$x2,$y1,$y2,$linenr];
+	} elsif (/([+-]?[\d\.]+),([+-]?[\d\.]+)\s+
+		 ([NS]\d+\s\d+\s[\d\.]+)\s+
+		 ([EW]\d+\s\d+\s[\d\.]+)/x) {
+	    my($x1,$y1,$lat,$long) = ($1,$2,$3,$4);
+	    my($x2,$y2) = $Karte::Polar::obj->map2standard
+		(Karte::Polar::dms_string2ddd($long),
+		 Karte::Polar::dms_string2ddd($lat));
+	    push @map_data, [$x1,$x2,$y1,$y2,$linenr];
+	} elsif (/([EW])\s+(\d+)°(\d+)\'([\d\.]+)\"\s+
+		 ([NS])\s+(\d+)°(\d+)\'([\d\.]+)\"\s+
+		 ([+-]?[\d\.]+),([+-]?[\d\.]+)/x) {
+	    my $long = "$1$2 $3 $4";
+	    my $lat  = "$5$6 $7 $8";
+	    my($x1,$y1) = ($9, $10);
+	    my($x2,$y2) = $Karte::Polar::obj->map2standard
+		(Karte::Polar::dms_string2ddd($long),
+		 Karte::Polar::dms_string2ddd($lat));
+	    push @map_data, [$x1,$x2,$y1,$y2,$linenr];
+	} else {
+	    die "Can't parse $_";
+	}
+    }
+
+    @map_data;
 }
 
 return 1 if caller;
