@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: karte_etrs89.t,v 1.2 2003/06/23 22:04:48 eserte Exp $
+# $Id: karte_etrs89.t,v 1.3 2003/09/01 05:51:25 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -34,13 +34,9 @@ ok(join(",", @etrs2), join(",",UTMToETRS89(ETRS89ToUTM(@etrs2))));
 
 #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([GKKToDegrees(3,3565938.060,5519235.636)],[])->Indent(1)->Useqq(1)->Dump; # XXX
 #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([GKKToDegrees(4,4350023.966,5520916.682)],[])->Indent(1)->Useqq(1)->Dump; # XXX
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([GKKToDegrees(2.4,3368499.7,5798499.9)],[])->Indent(1)->Useqq(1)->Dump; # XXX
+#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([GKKToDegrees(2.4,3368499.7,5798499.9)],[])->Indent(1)->Useqq(1)->Dump; # XXX
 
 
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([
-ETRS89ToDegrees(3, 3368499.7,5798499.9, "WGS 84"),
-ETRS89ToDegrees(3, 3373500.5,5803500.7, "WGS 84"),
-
-],[])->Indent(1)->Useqq(1)->Dump; # XXX
+#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([ETRS89ToDegrees(3, 3368499.7,5798499.9, "WGS 84"),ETRS89ToDegrees(3, 3373500.5,5803500.7, "WGS 84"),],[])->Indent(1)->Useqq(1)->Dump; # XXX
 
 __END__

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.30 2003/08/25 23:05:45 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.30 2003/08/25 23:05:45 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -495,6 +495,14 @@ sub build_penalty_code {
 		    }
 ';
 	}
+    }
+
+    if ($penalty_code ne "" &&
+	$] >= 5.006 # has warnings.pm
+       ) {
+	$penalty_code = "    no warnings; # ignore because of \"inwork\" and such
+
+$penalty_code";
     }
 
     $penalty_code;

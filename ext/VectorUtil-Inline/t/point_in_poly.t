@@ -2,11 +2,14 @@
 # -*- perl -*-
 
 #
-# $Id: point_in_poly.t,v 1.4 2002/11/22 18:29:28 eserte Exp $
+# $Id: point_in_poly.t,v 1.5 2003/08/30 20:25:26 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
+
+# To cease warnings (Can't find VectorUtil):
+BEGIN { push @INC, "$FindBin::RealBin/../../../lib" } # at end!!!
 
 use VectorUtil::Inline;
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ImageMagick.pm,v 1.7 2003/06/17 21:30:10 eserte Exp $
+# $Id: ImageMagick.pm,v 1.7 2003/06/17 21:30:10 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -17,6 +17,9 @@ use strict;
 use base qw(BBBikeDraw);
 use Strassen;
 use Image::Magick;
+use VectorUtil;
+eval 'use VectorUtil::InlineDist'; warn $@ if $@;
+
 # Strassen benutzt FindBin benutzt Carp, also brauchen wir hier nicht zu
 # sparen:
 use Carp qw(confess);
@@ -139,6 +142,7 @@ sub draw_map {
     my $transpose = $self->{Transpose};
 
     $self->_get_nets;
+    $self->{FlaechenPass} = 1;
 
     my @netz = @{ $self->{_Net} };
     my @outline_netz = @{ $self->{_OutlineNet} };
@@ -192,15 +196,19 @@ sub draw_map {
 #      }
 
     foreach my $strecke (@netz) {
+	my $flaechen_pass = $self->{FlaechenPass};
 	$strecke->init;
 	while(1) {
 	    my $s = $strecke->next;
 	    last if !@{$s->[1]};
 	    my $cat = $s->[2];
 	    if ($cat =~ /^F:(.*)/) {
-		my $c = defined $color{$1} ? $color{$1} : $white;
-		my $oc = ($self->{Outline} && defined $outline_color{$1} ?
-			  $outline_color{$1} : $c);
+		my $cat = $1;
+		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
+			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
+		my $c = defined $color{$cat} ? $color{$cat} : $white;
+		my $oc = ($self->{Outline} && defined $outline_color{$cat} ?
+			  $outline_color{$cat} : $c);
 		my @poly;
 		for(my $i = 0; $i <= $#{$s->[1]}; $i++) {
 		    push @poly, join(",", &$transpose
@@ -222,6 +230,13 @@ sub draw_map {
 		    # überhaupt im Zeichenbereich.
 		    # Evtl. eine XS-Funktion für diese Schleife
 		    # schreiben?
+#XXX z.Zt. nicht korrekt, weil die bbox nicht anhand der Aspect-Beibehaltung
+# des Bildes nicht korrigiert wird. Siehe auch BBBikeDraw::create_transpose
+		    next if !VectorUtil::vector_in_grid
+			($x1,$y1,$x2,$y2,
+			 $self->{Min_x},$self->{Min_y},
+			 $self->{Max_x},$self->{Max_y},
+			);
 		    my($x1t, $y1t, $x2t, $y2t) = (&$transpose($x1, $y1),
 						  &$transpose($x2, $y2));
 		    $im->Draw(primitive=>'line',
@@ -230,6 +245,9 @@ sub draw_map {
 			      stroke => $color);
 		}
 	    }
+	}
+	if ($strecke->{AfterHook}) {
+	    $strecke->{AfterHook}->();
 	}
     }
 

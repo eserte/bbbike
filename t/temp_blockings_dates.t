@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: temp_blockings_dates.t,v 1.1 2003/07/23 00:25:41 eserte Exp $
+# $Id: temp_blockings_dates.t,v 1.2 2003/08/30 21:45:55 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -25,7 +25,7 @@ BEGIN {
     }
 }
 
-# XXX Delta=1s bei Today_and_Now-tests verwenden
+my @Today_and_Now = Today_and_Now;
 
 for my $test_data
     (
@@ -36,7 +36,7 @@ Fahrstreifenverengung und -verschwenkungen auf dem Spandauer Damm
 Umleitungen sind eingerichtet.
 Dauer: voraussichtlich bis 27.07.2003
 EOF
-      Mktime(Today_and_Now),
+      Mktime(@Today_and_Now),
       Mktime(2003,7,28,0,0,0),
       0,
      ],
@@ -82,7 +82,7 @@ EOF
 zwischen Rummelsburger Straﬂe und Schlichtallee
 Bauarbeiten, gesperrt. Dauer: bis 31.08.2003.
 EOF
-      Mktime(Today_and_Now),
+      Mktime(@Today_and_Now),
       Mktime(2003,9,1,0,0,0),
       0
      ],
@@ -103,7 +103,7 @@ Richtung Am Tierpark
 wegen Straﬂenarbeiten als Einbahnstraﬂe ausgewiesen.
 Dauer: bis 31.12.2003
 EOF
-      Mktime(Today_and_Now),
+      Mktime(@Today_and_Now),
       Mktime(2004,1,1,0,0,0),
       0
      ],
@@ -141,7 +141,7 @@ Schwarzelfenweg
 zwischen Ortnitstraﬂe und Darﬂer Straﬂe,
 Gefahrenstelle, Straﬂe gesperrt bis voraussichtlich Dezember 2003.
 EOF
-      Mktime(Today_and_Now),
+      Mktime(@Today_and_Now),
       Mktime(2004,1,1,0,0,0),
       0
      ],
@@ -162,8 +162,9 @@ EOF
 	eval {
 	    my($start_date, $end_date, $prewarn_days)
 		= BBBikeEdit::temp_blockings_editor_parse_dates($btxt);
-	    is($start_date,   shift @$test_data) or $errors++;
-	    is($end_date,     shift @$test_data) or $errors++;
+	    # Delta 1s for Today_and_Now tests
+	    ok(abs($start_date - shift @$test_data) <= 1) or $errors++;
+	    ok(abs($end_date   - shift @$test_data) <= 1) or $errors++;
 	    is($prewarn_days, shift @$test_data) or $errors++;
 	};
 	if ($@) {

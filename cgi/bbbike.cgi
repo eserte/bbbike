@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.52 2003/08/24 23:10:52 eserte Exp $
+# $Id: bbbike.cgi,v 6.53 2003/08/30 18:47:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -90,7 +90,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $mapserver_init_url $no_berlinmap $max_plz_streets $with_comments
 	    $use_coord_link
 	    @weak_cache @no_cache %proc
-	    $bbbike_script $bbbike_script_cgi $cgi $port
+	    $bbbike_script $cgi $port
 	    $search_algorithm $use_background_image
 	    $use_apache_session $cookiename
 	    @temp_blocking
@@ -574,6 +574,7 @@ eval { local $SIG{'__DIE__'};
 if ($VERBOSE) {
     $StrassenNetz::VERBOSE    = $VERBOSE;
     $Strassen::VERBOSE        = $VERBOSE;
+    $StrassenNetz::CNetFile::VERBOSE  = $VERBOSE;
     $Kreuzungen::VERBOSE      = $VERBOSE;
 }
 
@@ -585,7 +586,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.52 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.53 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -684,7 +685,6 @@ if (!-d $mapdir_fs) {
 }
 
 $bbbike_script = $q->url;
-$bbbike_script_cgi = $bbbike_script;
 
 $header_written = 0;
 
@@ -2338,22 +2338,26 @@ sub search_coord {
 		$strcat_net->make_net_cat(-usecache => 0); # 1 for munich
 	    }
 	    if ($q->param('pref_cat') eq 'N2') {
-		$penalty = { "HH" => 4,
+		$penalty = { "B"  => 4,
+			     "HH" => 4,
 			     "H"  => 4,
 			     "N"  => 1,
 			     "NN" => 1 };
 	    } elsif ($q->param('pref_cat') eq 'N1') {
-		$penalty = { "HH" => 1.5,
+		$penalty = { "B"  => 1.5,
+			     "HH" => 1.5,
 			     "H"  => 1.5,
 			     "N"  => 1,
 			     "NN" => 1 };
 	    } elsif ($q->param('pref_cat') eq 'H1') {
-		$penalty = { "HH" => 1,
+		$penalty = { "B"  => 1,
+			     "HH" => 1,
 			     "H"  => 1,
 			     "N"  => 1.5,
 			     "NN" => 1.5 };
 	    } elsif ($q->param('pref_cat') eq 'H2') {
-		$penalty = { "HH" => 1,
+		$penalty = { "B"  => 1,
+			     "HH" => 1,
 			     "H"  => 1,
 			     "N"  => 4,
 			     "NN" => 4 };
@@ -3086,15 +3090,12 @@ EOF
 				      };
 
 
-# Dafür gibt es zwei Gründe:
-# 1) wird (glaube ich) das Skript für andere Zugriffe blockiert, wenn
-#    gerade die Bilderzeugung läuft, und das ist mittlerweile der einzige
-#    zeitintensive Prozess
-#
-#	print " target=\"BBBikeGrafik\" action=\"$bbbike_script\"";
-	    print " target=\"BBBikeGrafik\" action=\"$bbbike_script_cgi\"";
+	    print " target=\"BBBikeGrafik\" action=\"$bbbike_script\"";
 	    # scheint bei OS/2 nicht zu funktionieren
-  	    if ($bi->{'user_agent_name'} =~ m;(Mozilla|MSIE);i &&
+	    # ... und bei weiteren Browsern, deshalb erst einmal pauschal
+	    # herausgenommen XXX
+  	    if (0 &&
+		$bi->{'user_agent_name'} =~ m;(Mozilla|MSIE);i &&
 		$bi->{'user_agent_version'} =~ m;^[4-9]; &&
 		$bi->{'user_agent_os'} !~ m|OS/2|) {
   		print " onsubmit='return show_map(\"$bbbike_html\");'";

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.112 2003/08/25 23:07:44 eserte Exp $
+# $Id: bbbike,v 3.112 2003/08/25 23:07:44 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -12582,8 +12582,8 @@ sub search_route {
 	}
 
 	if ($green_optimization) {
-	    # XXX check if $N_RW_net is up-to-date with respect to its
-	    # sources, or whether a new $N_RW_net should be build
+	    # XXX check if $green_net is up-to-date with respect to its
+	    # sources, or whether a new $green_net should be build
 	    if (!$green_net) {
 		$green_net = new StrassenNetz(Strassen->new("green"));
 		$green_net->make_net_cat;

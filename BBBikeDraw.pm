@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.33 2003/08/12 07:04:29 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.33 2003/08/12 07:04:29 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -297,8 +297,8 @@ sub create_transpose {
     my($transpose, $anti_transpose);
 
     my($code, $anti_code);
-    if ($self->isa("BBBikeDraw::PDF")) {
-	# Ursprung ist unten, nicht oben
+    if ($self->origin_position eq 'sw') {
+	# Ursprung ist unten, nicht oben (z.B. PDF)
 #XXX Konstanten konstant machen! siehe unten... s// nicht vergessen
 	$code = <<'EOF';
 	sub {
@@ -348,6 +348,12 @@ EOF
 	$self->{TransposeCode}     = $code;
 	$self->{AntiTransposeCode} = $anti_code;
     }
+
+#XXX how?
+#    # Correct bounding box:
+#warn "before: ($self->{Min_x}, $self->{Min_y}, $self->{Max_x}, $self->{Max_y})";
+#    $self->set_bbox($transpose->(0,0),$transpose->($w, $h));
+#warn "after: ($self->{Min_x}, $self->{Min_y}, $self->{Max_x}, $self->{Max_y})";
 
     $self->{Xk} = $xk;
     $self->{Yk} = $yk;
@@ -423,6 +429,7 @@ sub set_category_colors {
 	return;
     }
 
+    local $^W; # $self->{FrontierColor}
     eval "package $pkg;\n" . <<'EOF';
 
     %color = (B  => $red,
@@ -448,6 +455,7 @@ sub set_category_colors {
 	      F  => $white,
 	      Ae => $white,
 	      P  => $middlegreen,
+	      Pabove => $middlegreen,
 	      Z  => $self->{FrontierColor} eq 'red' ? $red : $black,
 	      '?' => $black,
 	      '??' => $black,
@@ -590,20 +598,28 @@ sub _get_nets {
 
     # Reihenfolge (von unten nach oben):
     # Berlin-Grenze, Gewässer, Straßen, U-, S-Bahn
-    foreach (
+    foreach my $def (
 	     ['berlin_area',      'berlin_area'],
 	     ['berlin',           'berlin'],
 	     ['potsdam',          'potsdam'],
 	     ['deutschland',      'deutschland'],
 	     ['flaechen',         'flaechen'],
 	    ) {
-	push @netz, new Strassen $_->[0] if $str_draw{$_->[1]}
+	if ($str_draw{$def->[1]}) {
+	    push @netz, new Strassen $def->[0];
+	    if ($def->[1] eq 'flaechen') {
+		$netz[-1]->{AfterHook} = sub {
+		    $self->{FlaechenPass} = 2;
+		};
+	    }
+	}
     }
     if ($str_draw{'wasser'}) {
 	my $wasser = $self->_get_gewaesser(Strdraw => \%str_draw);
 	push @netz, $wasser;
 #XXX not yet, siehe auch comment bei PDF.pm
 #	push @outline_netz, $wasser;
+	push @netz, new Strassen "flaechen" if $str_draw{"flaechen"};
     }
     my $multistr = $self->_get_strassen(Strdraw => \%str_draw);
     if ($str_draw{'str'}) {
@@ -719,5 +735,7 @@ sub get_images_dir {
 }
 
 sub module_handles_all_cgi { 0 }
+
+sub origin_position { "nw" }
 
 1;

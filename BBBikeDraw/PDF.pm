@@ -149,6 +149,7 @@ sub draw_map {
     my @outline_netz;
     my(%str_draw, $title_draw, %p_draw);
     my $bbox = $self->{PageBBox};
+    my $flaechen_pass = 1;
 
     foreach (@{$self->{Draw}}) {
 	if ($_ eq 'title' &&
@@ -165,17 +166,26 @@ sub draw_map {
     }
     # Reihenfolge (von unten nach oben):
     # Berlin-Grenze, Gewässer, Straßen, U-, S-Bahn
-    foreach (
+    foreach my $def (
 	     ['berlin',           'berlin'],
 	     ['flaechen',         'flaechen'],
 	    ) {
-	push @netz, new Strassen $_->[0] if $str_draw{$_->[1]}
+	if ($str_draw{$def->[1]}) {
+	    push @netz, new Strassen $def->[0];
+	    if ($def->[1] eq 'flaechen') {
+		$netz[-1]->{AfterHook} = sub {
+		    $flaechen_pass = 2;
+		};
+	    }
+	}
     }
     if ($str_draw{'wasser'}) {
 	my $wasser = $self->_get_gewaesser(Strdraw => \%str_draw);
 	push @netz, $wasser;
 #XXX not yet: erst einmal muss das Zeichnen der outlines auch F: verstehen
 #	push @outline_netz, $wasser;
+	# Again to draw F:Pabove
+	push @netz, new Strassen "flaechen" if $str_draw{"flaechen"};
     }
 
     my $multistr = $self->_get_strassen(Strdraw => \%str_draw);
@@ -235,9 +245,12 @@ sub draw_map {
 	    $im->moveto(@{ $ss->[0] });
 
 	    if ($cat =~ /^F:(.*)/) {
+		my $cat = $1;
+		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
+			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
 		$im->set_line_width(1);
-		$im->set_stroke_color(@{ $color{$1} || [0,0,0] });
-		$im->set_fill_color  (@{ $color{$1} || [0,0,0] });
+		$im->set_stroke_color(@{ $color{$cat} || [0,0,0] });
+		$im->set_fill_color  (@{ $color{$cat} || [0,0,0] });
 		for my $xy (@{$ss}[1 .. $#$ss]) {
 		    $im->lineto(@$xy);
 		}
@@ -251,6 +264,9 @@ sub draw_map {
 		}
 		$im->stroke;
 	    }
+	}
+	if ($strecke->{AfterHook}) {
+	    $strecke->{AfterHook}->();
 	}
     }
 
@@ -764,6 +780,8 @@ sub bbox_in_region {
 		 $bbox->[3] < $region->[1]);
     1;
 }
+
+sub origin_position { "sw" }
 
 # Additional PDF::Create methods
 

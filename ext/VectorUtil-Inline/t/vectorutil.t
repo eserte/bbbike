@@ -2,14 +2,14 @@
 # -*- perl -*-
 
 #
-# $Id: vectorutil.t,v 1.5 2002/08/07 22:47:41 eserte Exp $
+# $Id: vectorutil.t,v 1.7 2003/08/30 20:32:36 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
 
 use FindBin;
-use lib "$FindBin::RealBin/../../../lib";
+BEGIN { push @INC, "$FindBin::RealBin/../../../lib" } # at end!!!
 use VectorUtil;
 use VectorUtil::Inline;
 
@@ -25,22 +25,44 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 2+10000 }
+BEGIN { plan tests => 7+10000 }
 
 my @p;
+
+my $ref1 = \&VectorUtil::Inline::distance_point_line;
+my $ref2 = \&VectorUtil::distance_point_line;
+
+# XS loading worked:
+ok("$ref1", "$ref2");
 
 for my $p ([1,2,3,4,5,6],
 	   [100,200,30,4000,52,61]) {
     my @p = @$p;
-    ok(VectorUtil::distance_point_line(@p),
-       VectorUtil::Inline::distance_point_line(@p));
+    ok(VectorUtil::distance_point_line_PP(@p),
+       VectorUtil::distance_point_line_XS(@p));
+    ok(VectorUtil::distance_point_line_PP(@p),
+       VectorUtil::distance_point_line(@p));
 }
-for (1..10000) {
+{
+    my @p = map { rand(40000)-20000 } (1..8);
+    ok(VectorUtil::vector_in_grid_PP(@p),
+       VectorUtil::vector_in_grid_XS(@p));
+    ok(VectorUtil::vector_in_grid_PP(@p),
+       VectorUtil::vector_in_grid(@p));
+}
+for (1..5000) {
     my @p = map { rand(40000)-20000 } (1..6);
-    my $diff = abs(VectorUtil::distance_point_line(@p) -
-		   VectorUtil::Inline::distance_point_line(@p));
+    my $diff = abs(VectorUtil::distance_point_line_PP(@p) -
+		   VectorUtil::distance_point_line_XS(@p));
     ok($diff < 5e12, 1,
        "Failed with the values: @p, difference is $diff");
+}
+
+for (1..5000) {
+    my @p = map { rand(40000)-20000 } (1..8);
+    ok(VectorUtil::vector_in_grid_PP(@p),
+       VectorUtil::vector_in_grid_XS(@p),
+       "Failed for values @p");
 }
 
 if (@ARGV && $ARGV[0] eq '-bench') {

@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Inline.pm,v 1.9 2003/01/08 20:59:20 eserte Exp $
+# $Id: Inline.pm,v 1.12 2003/08/30 21:43:57 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -15,37 +15,20 @@
 package VectorUtil::Inline;
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Inline 0.40; # because of API changes
 use Config;
 use Inline C => Config => CCFLAGS => "-O2";
-use Inline Config => CLEAN_AFTER_BUILD => 0;   #XXX debugging, both needed
-use Inline C => Config => CCFLAGS => "-g -O2"; #XXX debugging
+#use Inline Config => CLEAN_AFTER_BUILD => 0;   #XXX debugging, both needed
+#use Inline C => Config => CCFLAGS => "-g -O2"; #XXX debugging
 use Inline (C => DATA =>
 	    NAME => 'VectorUtil::Inline',
 	    VERSION => $VERSION,
 	   );
 
-# XXX POINT should be a hidden perl/C object...
-# return POINT buffer and number of points
-sub array_to_POINT {
-    my(@a) = @_;
-    my $sizeof = sizeof_POINT();
-    if ($sizeof != length(pack("ii",0,0))) {
-	die "This architecture is not supported (yet)";
-    }
-    if (@a % 2 != 0) {
-	die "Must be even number of points";
-    }
-    my $points = @a / 2;
-    my $buf = "";
-    for (@a) {
-	$buf .= pack("i", $_);
-    }
-    ($buf, $points);
-}
+use VectorUtil::InlinePerl;
 
 1;
 
@@ -58,6 +41,123 @@ typedef struct { int x; int y; } POINT;
 #define MAX(x,y) (x > y ? x : y)
 
 #include <math.h>
+
+int vector_in_grid(double x1, double y1, double x2, double y2,
+		   double gridx1, double gridy1,
+		   double gridx2, double gridy2) {
+    int sgn;
+    double ges_strecke;
+
+    /* wenigstens ein Punkt ist innerhalb des Gitters */
+    if (x1 >= gridx1 && x1 <= gridx2 &&
+	y1 >= gridy1 && y1 <= gridy2)
+	return 7;
+    if (x2 >= gridx1 && x2 <= gridx2 &&
+	y2 >= gridy1 && y2 <= gridy2)
+	return 6;
+
+    /* beide Punkte sind außerhalb des Gitters */
+    if (x1 < gridx1 && x2 < gridx1)
+	return 0;
+    if (x1 > gridx2 && x2 > gridx2)
+	return 0;
+    if (y1 < gridy1 && y2 < gridy1)
+	return 0;
+    if (y1 > gridy2 && y2 > gridy2)
+	return 0;
+
+    ges_strecke = sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2));
+
+    if (x1 != x2) {
+	/* Schnittpunkt-Test am rechten Rand */
+	double d_x1_gridx1 = (gridx1 - x1);
+	double a = d_x1_gridx1*ges_strecke/(x2-x1);
+	double b = sqrt(a*a - d_x1_gridx1*d_x1_gridx1);
+	double schnitt_y_gridx1;
+	double d_x1_gridx2;
+	double schnitt_y_gridx2;
+	sgn = (y1 < y2 ? 1 : -1);
+	if ((x1 < x2 && x1 > gridx1) ||
+	    (x2 < x1 && x1 < gridx1)) {
+	    sgn *= -1;
+	}
+	schnitt_y_gridx1 = y1 + sgn*b;
+
+	if (schnitt_y_gridx1 >= gridy1 &&
+	    schnitt_y_gridx1 <= gridy2) {
+#ifdef VECTOR_UTIL_DEBUG
+	    fprintf(stderr, "Gefunden: %f <= %f <= %f\n", gridy1, schnitt_y_gridx1, gridy2);
+#endif
+	    return 1;
+	}
+
+	/* Schnittpunkt-Test am linken Rand */
+	d_x1_gridx2 = (gridx2 - x1);
+	a = d_x1_gridx2*ges_strecke/(x2-x1);
+	b = sqrt(a*a - d_x1_gridx2*d_x1_gridx2);
+	sgn = (y1 < y2 ? 1 : -1);
+	if ((x1 < x2 && x1 > gridx2) ||
+	    (x2 < x1 && x1 < gridx2)) {
+	    sgn *= -1;
+	}
+	schnitt_y_gridx2 = y1 + sgn*b;
+
+	if (schnitt_y_gridx2 >= gridy1 &&
+	    schnitt_y_gridx2 <= gridy2) {
+#ifdef VECTOR_UTIL_DEBUG
+	    fprintf(stderr, "Gefunden: %f <= %f <= %f\n", gridy1, schnitt_y_gridx2, gridy2);
+#endif
+	    return 2;
+	}
+    }
+
+    if (y2 != y1) {
+	/* Schnittpunkt-Test am oberen Rand (geometrisch unten) */
+	double d_y1_gridy2 = (gridy2 - y1);
+	double a = d_y1_gridy2*ges_strecke/(y2-y1);
+	double b = sqrt(a*a - d_y1_gridy2*d_y1_gridy2);
+	double schnitt_x_gridy2;
+	sgn = (x1 < x2 ? 1 : -1);
+	if ((y1 < y2 && y1 > gridy2) ||
+	    (y2 < y1 && y1 < gridy2)) {
+	    sgn *= -1;
+	}
+	schnitt_x_gridy2 = x1 + sgn*b;
+
+	if (schnitt_x_gridy2 >= gridx1 &&
+	    schnitt_x_gridy2 <= gridx2) {
+#ifdef VECTOR_UTIL_DEBUG
+	    fprintf(stderr, "Gefunden: %f <= %f <= %f\n", gridx1, schnitt_x_gridy2, gridx2);
+#endif
+	    return 4;
+	}
+
+	/* Schnittpunkt-Test am unteren Rand (geometrisch oben) 
+	 * Der letzte Test ist nicht notwendig, weil ein Vektor das Gitter in
+	 * genau zwei Punkten schneiden muss, ansonsten wurde er entweder von
+	 * der ersten Regel erschlagen oder er geht genau durch einen Eckpunkt,
+	 * was für meine Bedürfnisse uninteressant ist.
+	 */
+	return 3;
+
+/*  	# Der Vollständigkeit halber: */
+/*  	my $d_y1_gridy1 = ($gridy1 - $y1); */
+/*  	$a = $d_y1_gridy1*$ges_strecke/($y2-$y1); */
+/*  	$b = sqrt($a*$a - $d_y1_gridy1*$d_y1_gridy1); */
+/*  	$sgn = ($x1 < $x2 ? 1 : -1); */
+/*  	$sgn *= -1 if (($y1 < $y2 && $y1 > $gridy1) || */
+/*  		       ($y2 < $y1 && $y1 < $gridy1)); */
+/*  	my $schnitt_x_gridy1 = $x1 + $sgn*$b; */
+
+/*  	if ($schnitt_x_gridy1 >= $gridx1 && */
+/*  	    $schnitt_x_gridy1 <= $gridx2) { */
+/*  	    warn "Gefunden: $gridx1 <= $schnitt_x_gridy1 <= $gridx2\n" if $VERBOSE; */
+/*  	    return 3; */
+/*  	} */
+    }
+
+    return 0;
+}
 
 double distance_point_line(double px, double py,
 			   double s0x, double s0y,

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.26 2003/08/25 23:09:04 eserte Exp $
+# $Id: Core.pm,v 1.26 2003/08/25 23:09:04 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -750,7 +750,7 @@ sub _make_grid_exact {
     }
     eval {
 	require VectorUtil::InlineDist;
-	*VectorUtil::distance_point_line = \&VectorUtil::Inline::distance_point_line;
+#XXX	*VectorUtil::distance_point_line = \&VectorUtil::Inline::distance_point_line;
     };
 
     my %grid_build;
@@ -864,7 +864,7 @@ sub nearest_point {
 	require VectorUtil;
 	eval {
 	    require VectorUtil::InlineDist;
-	    *VectorUtil::distance_point_line = \&VectorUtil::Inline::distance_point_line;
+#XXX	    *VectorUtil::distance_point_line = \&VectorUtil::Inline::distance_point_line;
 	};
     }
 

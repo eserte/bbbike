@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: VectorUtil.pm,v 1.12 2003/02/18 23:31:11 eserte Exp $
+# $Id: VectorUtil.pm,v 1.13 2003/08/30 20:01:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 require Exporter;
 @ISA = 'Exporter';
@@ -84,8 +84,8 @@ sub vector_in_grid {
     if ($y2 != $y1) {
 	# Schnittpunkt-Test am oberen Rand (geometrisch unten)
 	my $d_y1_gridy2 = ($gridy2 - $y1);
-	$a = $d_y1_gridy2*$ges_strecke/($y2-$y1);
-	$b = sqrt($a*$a - $d_y1_gridy2*$d_y1_gridy2);
+	my $a = $d_y1_gridy2*$ges_strecke/($y2-$y1);
+	my $b = sqrt($a*$a - $d_y1_gridy2*$d_y1_gridy2);
 	$sgn = ($x1 < $x2 ? 1 : -1);
 	$sgn *= -1 if (($y1 < $y2 && $y1 > $gridy2) ||
 		       ($y2 < $y1 && $y1 < $gridy2));

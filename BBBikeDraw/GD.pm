@@ -249,6 +249,7 @@ sub draw_map {
     my $transpose = $self->{Transpose};
 
     $self->_get_nets;
+    $self->{FlaechenPass} = 1;
 
     my @netz = @{ $self->{_Net} };
     my @outline_netz = @{ $self->{_OutlineNet} };
@@ -304,13 +305,17 @@ sub draw_map {
     }
 
     foreach my $strecke (@netz) {
+	my $flaechen_pass = $self->{FlaechenPass};
 	$strecke->init;
 	while(1) {
 	    my $s = $strecke->next;
 	    last if !@{$s->[1]};
 	    my $cat = $s->[2];
 	    if ($cat =~ /^F:(.*)/) {
-		my $c = defined $color{$1} ? $color{$1} : $white;
+		my $cat = $1;
+		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
+			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
+		my $c = defined $color{$cat} ? $color{$cat} : $white;
 		my $poly = GD::Polygon->new();
 		for(my $i = 0; $i <= $#{$s->[1]}; $i++) {
 		    $poly->addPt(&$transpose
@@ -339,6 +344,9 @@ sub draw_map {
 		    $im->line($x1t, $y1t, $x2t, $y2t, $color);
 		}
 	    }
+	}
+	if ($strecke->{AfterHook}) {
+	    $strecke->{AfterHook}->();
 	}
     }
 

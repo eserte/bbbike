@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Imager.pm,v 1.5 2003/06/23 22:08:19 eserte Exp $
+# $Id: Imager.pm,v 1.6 2003/09/01 05:51:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -45,7 +45,7 @@ use vars @colors;
 #      }
 #  }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -160,6 +160,7 @@ sub draw_map {
     my $transpose = $self->{Transpose};
 
     $self->_get_nets;
+    $self->{FlaechenPass} = 1;
 
     my @netz = @{ $self->{_Net} };
     my @outline_netz = @{ $self->{_OutlineNet} };
@@ -212,12 +213,16 @@ sub draw_map {
 
     foreach my $strecke (@netz) {
 	$strecke->init;
+	my $flaechen_pass = $self->{FlaechenPass};
 	while(1) {
 	    my $s = $strecke->next;
 	    last if !@{$s->[1]};
 	    my $cat = $s->[2];
 	    if ($cat =~ /^F:(.*)/) {
-		my $c = defined $color{$1} ? $color{$1} : $white;
+		my $cat = $1;
+		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
+			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
+		my $c = defined $color{$cat} ? $color{$cat} : $white;
 		my $points = [];
 		for(my $i = 0; $i <= $#{$s->[1]}; $i++) {
 		    push @$points,

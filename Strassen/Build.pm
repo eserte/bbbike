@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Build.pm,v 1.13 2003/08/19 23:00:51 eserte Exp $
+# $Id: Build.pm,v 1.13 2003/08/19 23:00:51 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
@@ -137,12 +137,19 @@ sub create_mmap_net_if_needed {
     }
     warn "Dependent files for mmap creation: @depend_files\n" if $VERBOSE;
     my $doit = 0;
-    if (   !-e $self->{Strassen}->{File}
-	|| !Strassen::Util::valid_cache($self->get_cachefile . "_coord2ptr",
-					\@depend_files)
-	|| !-e $self->filename_c_net_mmap($file_prefix)
-	|| !Strassen::Util::valid_cache($self->get_cachefile . "_net2name",
-					\@depend_files)
+    for my $f ($self->{Strassen}->file) {
+	if (! -e $f) {
+	    $doit = 1;
+	    last;
+	}
+    }
+    if (   !$doit &&
+	   (!Strassen::Util::valid_cache($self->get_cachefile . "_coord2ptr",
+					 \@depend_files)
+	    || !-e $self->filename_c_net_mmap($file_prefix)
+	    || !Strassen::Util::valid_cache($self->get_cachefile . "_net2name",
+					    \@depend_files)
+	   )
        ) {
 	$doit = 1;
     } else {
