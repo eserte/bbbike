@@ -2920,6 +2920,7 @@ sub do_iconframe {
     $windrose_button = $misc_frame->$firebutton
 	(image_or_text($windrose_photo, "Wind\nrose"),
 	 -command => \&windrose,
+	 -takefocus => 0,
 	);
     if ($windrose_button->isa('Tk::FireButton')) {
 	$windrose_button->configure(-repeatinterval => 300);
@@ -5910,10 +5911,11 @@ sub set_bindings {
     $top->bind('<Control-s>' => sub { load_save_route(1) });
     $top->bind('<Control-underscore>' => \&get_undo_route);
     $top->bind('<Control-z>' => \&get_undo_route);
-    $top->bind('<Control-Key-f>' => sub {
+    $top->bind($_ => sub {
 		   require BBBikeAdvanced;
 		   search_anything();
-	       });
+	       })
+	for ('<Control-Key-f>', '<Key-slash>');
 
     $top->bind("<Escape>" => sub { $escape = 1 });
     $top->bind('Busy', '<Escape>' => sub { $escape = 1; });

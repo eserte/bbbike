@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Imager.pm,v 1.9 2003/12/31 14:17:28 eserte Exp $
+# $Id: Imager.pm,v 1.10 2004/03/25 07:30:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -45,7 +45,7 @@ use vars @colors;
 #      }
 #  }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -222,8 +222,9 @@ sub draw_map {
 	    my $cat = $s->[2];
 	    if ($cat =~ /^F:(.*)/) {
 		my $cat = $1;
-		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
-			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
+#XXX NYI
+#		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
+#			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
 		my $c = defined $color{$cat} ? $color{$cat} : $white;
 		my $points = [];
 		for(my $i = 0; $i <= $#{$s->[1]}; $i++) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.26 2004/01/17 13:27:10 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.27 2004/03/24 22:48:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -297,7 +297,7 @@ sub BBBikePrint::view_pdf {
     if ($os eq 'win') {
 	Win32Util::start_any_viewer($file);
     } else {
-	for my $prog (qw(xpdf acroread acroread5 acroread4 gv)) {
+	for my $prog (qw(xpdf nautilus acroread acroread5 acroread4 gv ggv)) {
 	    if (is_in_path($prog)) {
 		system("$prog $file &");
 		last;

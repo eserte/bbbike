@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.25 2003/11/28 00:18:51 eserte Exp $
+# $Id: PDF.pm,v 2.25 2003/11/28 00:18:51 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -246,8 +246,9 @@ sub draw_map {
 
 	    if ($cat =~ /^F:(.*)/) {
 		my $cat = $1;
-		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
-			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
+#XXX NYI
+#		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
+#			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
 		$im->set_line_width(1);
 		$im->set_stroke_color(@{ $color{$cat} || [0,0,0] });
 		$im->set_fill_color  (@{ $color{$cat} || [0,0,0] });

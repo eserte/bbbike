@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ImageMagick.pm,v 1.8 2003/09/02 22:34:03 eserte Exp $
+# $Id: ImageMagick.pm,v 1.8 2003/09/02 22:34:03 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -204,8 +204,9 @@ sub draw_map {
 	    my $cat = $s->[2];
 	    if ($cat =~ /^F:(.*)/) {
 		my $cat = $1;
-		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
-			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
+#XXX NYI
+#		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
+#			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
 		my $c = defined $color{$cat} ? $color{$cat} : $white;
 		my $oc = ($self->{Outline} && defined $outline_color{$cat} ?
 			  $outline_color{$cat} : $c);

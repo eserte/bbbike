@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.9 2004/01/04 18:41:49 eserte Exp $
+# $Id: bbbikedraw.t,v 1.10 2004/03/24 23:33:15 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -136,7 +136,7 @@ sub draw_map {
     if ($display) {
 	if ($imagetype eq 'svg') {
 	    if (is_in_path("mozilla")) {
-		system("mozilla $filename &");
+		system("mozilla -noraise -remote 'openURL(file:$filename,new-tab)' &");
 	    } else {
 		warn "Can't display $filename";
 	    }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.36 2004/01/17 13:39:59 eserte Exp $
+# $Id: GD.pm,v 1.36 2004/01/17 13:39:59 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -217,46 +217,6 @@ sub allocate_colors {
 	    }
 	}
     }
-
-# XXX del:
-#  #    my $GREY = 153;
-#      my $GREY = 225;
-
-#      if ($self->imagetype eq 'wbmp') {
-#  	# black-white image for WAP
-#  	$black = $grey_bg = $im->colorAllocate(0, 0, 0);
-#  	$white = $yellow = $red = $green = $darkgreen = $darkblue =
-#  	    $lightblue = $middlegreen = $im->colorAllocate(255,255,255);
-#  	return;
-#      }
-
-#      $self->{'Bg'} = '' if !defined $self->{'Bg'};
-#      if ($self->{'Bg'} =~ /^white/) {
-#  	# Hintergrund weiß: Nebenstraßen werden grau,
-#  	# Hauptstraßen dunkelgelb gezeichnet
-#  	$grey_bg   = $im->colorAllocate(255,255,255);
-#  	$white     = $im->colorAllocate($GREY,$GREY,$GREY);
-#  	$yellow    = $im->colorAllocate(180,180,0);
-#  	$im->transparent($grey_bg) if ($self->{'Bg'} =~ /transparent$/);
-#      } elsif ($self->{'Bg'} =~ /^\#([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})/i) {
-#  	my($r,$g,$b) = (hex($1), hex($2), hex($3));
-#  	$grey_bg   = $im->colorAllocate($r,$g,$b);
-#  	$im->transparent($grey_bg) if ($self->{'Bg'} =~ /transparent$/);
-#      } else {
-#  	$grey_bg   = $im->colorAllocate($GREY,$GREY,$GREY);
-#  	$im->transparent($grey_bg) if ($self->{'Bg'} =~ /transparent$/);
-#      }
-
-#      $white       = $im->colorAllocate(255,255,255) if !defined $white;
-#      $yellow      = $im->colorAllocate(255,255,0)   if !defined $yellow;
-#      $red         = $im->colorAllocate(255,0,0);
-#      $green       = $im->colorAllocate(0,255,0);
-#      $darkgreen   = $im->colorAllocate(0,128,0);
-#      $darkblue    = $im->colorAllocate(0,0,128);
-#      #$lightblue   = $im->colorAllocate(186,213,247);
-#      $lightblue   = $im->colorAllocate(0xa0,0xa0,0xff);
-#      $middlegreen = $im->colorAllocate(0, 200, 0);
-#      $black       = $im->colorAllocate(0, 0, 0);
 }
 
 sub draw_map {
@@ -292,6 +252,7 @@ sub draw_map {
 		my $s = $strecke->next;
 		last if !@{$s->[1]};
 		my $cat = $s->[2];
+# XXX what about outlined areas?
 #  	    if ($cat =~ /^F:(.*)/) {
 #  		if ($1 eq 'I') {
 #  		    next; # Inseln vorerst ignorieren
@@ -327,15 +288,24 @@ sub draw_map {
 
     foreach my $strecke (@netz) {
 	my $flaechen_pass = $self->{FlaechenPass};
-	$strecke->init;
-	while(1) {
-	    my $s = $strecke->next;
-	    last if !@{$s->[1]};
-	    my $cat = $s->[2];
+$strecke->make_grid(UseCache => 1);
+my @grids = $strecke->get_new_grids($self->{Min_x}, $self->{Min_y},
+				    $self->{Max_x}, $self->{Max_y},
+				   );
+#	$strecke->init;
+#	while(1) {
+#	    my $s = $strecke->next;
+#	    last if !@{$s->[1]};
+for my $grid (@grids) {
+if ($strecke->{Grid}{$grid}) {
+for my $strpos (@{ $strecke->{Grid}{$grid}}) {
+my $s = $strecke->get($strpos);
+	    my $cat = $s->[Strassen::CAT];
 	    if ($cat =~ /^F:(.*)/) {
 		my $cat = $1;
-		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
-			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
+#XXX NYI
+#		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
+#			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
 		my $c = defined $color{$cat} ? $color{$cat} : $white;
 		my $poly = $self->{GD_Polygon}->new();
 		for(my $i = 0; $i <= $#{$s->[1]}; $i++) {
@@ -366,6 +336,8 @@ sub draw_map {
 		}
 	    }
 	}
+}
+}
 	if ($strecke->{AfterHook}) {
 	    $strecke->{AfterHook}->();
 	}
@@ -470,7 +442,6 @@ sub draw_map {
 		       ) {
 	# check if it is advisable to draw stations...
 	next if ($points->[0] =~ /bahn$/ && $self->{Xk} < 0.004);
-
 	my $do_bahnhof = grep { $_ eq $points->[0]."name" } @{$self->{Draw}};
 	if ($self->{Xk} < 0.06) {
 	    $do_bahnhof = 0;
@@ -491,13 +462,22 @@ sub draw_map {
 		     ? $self->_get_orte
 		     : new Strassen $points->[1]);
 	    my $type = $points->[2];
-	    $p->init;
-	    while(1) {
-		my $s = $p->next_obj;
-		last if $s->is_empty;
-		my $cat = $s->category;
+
+$p->make_grid(UseCache => 1);
+my @grids = $p->get_new_grids($self->{Min_x}, $self->{Min_y},
+			      $self->{Max_x}, $self->{Max_y},
+			     );
+#	    $p->init;
+#	    while(1) {
+#		my $s = $p->next_obj;
+#		last if $s->is_empty;
+for my $grid (@grids) {
+if ($p->{Grid}{$grid}) {
+for my $strpos (@{ $p->{Grid}{$grid}}) {
+my $s = $p->get($strpos);
+		my $cat = $s->[Strassen::CAT];
 		next if $cat =~ /0$/;
-		my($x0,$y0) = @{$s->coord_as_list(0)};
+		my($x0,$y0) = split /,/, $s->[Strassen::COORDS][0];
 		# Bereichscheck (XXX ist nicht ganz korrekt wenn der Screen breiter ist als die Route)
 #  		next if (!(($x0 >= $self->{Min_x} and $x0 <= $self->{Max_x})
 #  			   and
@@ -516,7 +496,7 @@ sub draw_map {
 		    # XXX Farbe bei small_display && s-bahn
 		    $im->filledRectangle($x1, $y2, $x2, $y1, $darkblue);
 		    if ($do_bahnhof) {
-			my $name = $strip_bhf->($s->name);
+			my $name = $strip_bhf->($s->[Strassen::NAME]);
 			if (!$seen_bahnhof{$name}) {
 			    $self->outline_text($ort_font{'bhf'},
 						$x1+4, $y1,
@@ -529,11 +509,11 @@ sub draw_map {
 		    }
 		} elsif ($type =~ /^[sr]$/) {
 		    # XXX ausgefüllten Kreis zeichnen
-		    my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
+		    my($x, $y) = &$transpose(split /,/, $s->[Strassen::COORDS][0]);
 		    #$im->arc($x, $y, $xw_s, $yw_s, 0, 360, $darkgreen);
 		    $im->line($x,$y,$x,$y,$self->{GD}->gdBrushed());
 		    if ($do_bahnhof) {
-			my $name = $strip_bhf->($s->name);
+			my $name = $strip_bhf->($s->[Strassen::NAME]);
 			if (!$seen_bahnhof{$name}) {
 			    $self->outline_text($ort_font{'bhf'},
 						$x+4, $y,
@@ -547,8 +527,8 @@ sub draw_map {
 		} else {
 		    if ($cat >= $min_ort_category &&
 			(!$restrict_code || $restrict_code->($s, $type))) {
-			my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
-			my $ort = $s->name;
+			my($x, $y) = &$transpose(split /,/, $s->[Strassen::COORDS][0]);
+			my $ort = $s->[Strassen::NAME];
 			# Anhängsel löschen (z.B. "b. Berlin")
 			$ort =~ s/\|.*$//;
 			if ($type eq 'oc') {
@@ -572,6 +552,7 @@ sub draw_map {
 	    }
 	}
     }
+}}
 
     if (ref $self->{StrLabel} &&
 	(defined &GD::Image::stringFT || defined &GD::Image::stringTTF)) {
