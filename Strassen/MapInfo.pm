@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapInfo.pm,v 1.2 2004/02/18 00:05:41 eserte Exp $
+# $Id: MapInfo.pm,v 1.3 2004/02/18 08:28:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
@@ -217,7 +217,7 @@ sub create_mif_mid {
     my($minx,$miny,$maxx,$maxy) = $self->bbox;
 
     my $conv;
-    my $coordsys = qq{NonEarth Units "m"};
+    my $coordsysline;
     if ($args{map} || $args{tomap}) {
 	$args{map}   ||= "standard";
 	$args{tomap} ||= "standard";
@@ -226,11 +226,17 @@ sub create_mif_mid {
 	$conv = sub {
 	    $Karte::map{$args{map}}->map2map($Karte::map{$args{tomap}}, @_);
 	};
-	if ($args{tomap} eq 'polar') {
-	    $coordsys = qq{Earth Projection 0 0 0}; # XXX check for WGS84, DDD
-	}
     }
 
+    ($minx,$miny) = $conv->($minx,$miny) if $conv;
+    ($maxx,$maxy) = $conv->($maxx,$maxy) if $conv;
+
+    if ($args{tomap} eq 'polar') {
+	$coordsysline = "";
+    }
+    if (!defined $coordsysline) {
+	$coordsysline = qq{COORDSYS NonEarth Units "m" Bounds ($minx,$miny) ($maxx,$maxy)\n};
+    }
     my($max_name_length, $max_cat_length) = (1, 1);
     $self->init;
     while(1) {
@@ -241,16 +247,13 @@ sub create_mif_mid {
 	$max_cat_length = length($r->[Strassen::CAT()])
 	    if $max_cat_length < length($r->[Strassen::CAT()]);
     }
-    ($minx,$miny) = $conv->($minx,$miny) if $conv;
-    ($maxx,$maxy) = $conv->($maxx,$maxy) if $conv;
 
     my $mid = "";
     my $mif = <<EOF;
 VERSION $version
 CHARSET "WindowsLatin1"
 DELIMITER ","
-COORDSYS $coordsys Bounds ($minx,$miny) ($maxx,$maxy)
-COLUMNS 2
+${coordsysline}COLUMNS 2
   Name     Char($max_name_length)
   Category Char($max_cat_length)
 DATA

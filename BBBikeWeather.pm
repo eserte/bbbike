@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeWeather.pm,v 1.3 2004/01/17 17:56:27 eserte Exp $
+# $Id: BBBikeWeather.pm,v 1.3 2004/01/17 17:56:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -52,6 +52,14 @@ sub BBBikeWeather::reset_wind {
     $wind = 0;
 }
 
+### AutoLoad Sub
+sub BBBikeWeather::require_wettermeldung {
+    # hack, um wettermeldung2 perl4-kompatibel zu lassen
+    $wettermeldung2::module = 1;
+    $wettermeldung2::tk_widget = $top;
+    require "wettermeldung2";
+}
+
 # Laden der Wetterinformationen. Abhängig von den aktuellen Einstellungen
 # passiert das lokal oder über das WWW.
 ### AutoLoad Sub
@@ -83,10 +91,7 @@ sub BBBikeWeather::update_weather {
 	    die M"Es wurde keine Quelle für den Empfang der Wetterdaten angegeben.\n";
 	}
 
-	# hack, um wettermeldung2 perl4-kompatibel zu lassen
-	$wettermeldung2::module = 1;
-	$wettermeldung2::tk_widget = $top;
-	require "wettermeldung2";
+	BBBikeWeather::require_wettermeldung();
 
 	my($act_line, $act_station);
 	my $station;
@@ -172,6 +177,8 @@ sub BBBikeWeather::show_weather_db {
     }
 
     require Tk::HList;
+    BBBikeWeather::require_wettermeldung();
+
     IncBusy($top);
     eval {
 	my @data;
