@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.10 2003/06/11 22:22:24 eserte Exp eserte $
+# $Id: BBBikeRuler.pm,v 1.11 2003/06/17 21:29:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -15,7 +15,8 @@
 # Description (en): measure distances and angles
 # Description (de): Entfernungen und Winkel messen
 package BBBikeRuler;
-use base qw(BBBikePlugin);
+use BBBikePlugin;
+@BBBikeRuler::ISA = qw(BBBikePlugin);
 
 use strict;
 use vars qw($button_image $ruler_cursor $old_motion
@@ -199,12 +200,12 @@ sub motion {
 	my(@tags) = $c->gettags($c->current_item(-ignorerx => "^ruler\$"));
 	if ($gpsman_tracks && $tags[1] && $tags[1] =~ /dist=([\d\.]+).*?time=([\d:]+).*abstime=([\d:]+)/) {
 	    my($dist2,$time2,$abstime2) = ($1, $2, $3);
-	    my $time2 = _min2sec($time2);
-	    my $abstime2 = _hms2sec($abstime2);
+	    $time2 = _min2sec($time2);
+	    $abstime2 = _hms2sec($abstime2);
 	    $gpsman_track_tag =~ /dist=([\d\.]+).*?time=([\d:]+).*abstime=([\d:]+)/;
 	    my($dist1,$time1,$abstime1) = ($1, $2, $3);
-	    my $time1 = _min2sec($time1);
-	    my $abstime1 = _hms2sec($abstime1);
+	    $time1 = _min2sec($time1);
+	    $abstime1 = _hms2sec($abstime1);
 	    if ($abstime2 < $abstime1) { $abstime2 += 86400 }
 	    $message  = "Zeit: " . _fmt_time($time2-$time1) . "; ";
 	    $message .= sprintf "Dist: %.3fkm; ", $dist2-$dist1;

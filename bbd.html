@@ -26,7 +26,7 @@
 <li><a class="POD_NAVLINK" href="#COMMENTS">COMMENTS</a>
 <li><a class="POD_NAVLINK" href="#AREAS">AREAS</a>
 <li><a class="POD_NAVLINK" href="#MISC">MISC</a>
-<li><a class="POD_NAVLINK" href="#MORE_STANDARD_FILES">MORE STANDARD FILES</a>
+<li><a class="POD_NAVLINK" href="#OTHER_STANDARD_FILES">OTHER STANDARD FILES</a>
 </ul>
 <li><a class="POD_NAVLINK" href="#EXAMPLES">EXAMPLES</a>
 <li><a class="POD_NAVLINK" href="#AUTHOR">AUTHOR</a>
@@ -125,24 +125,24 @@ Bridges.
 Used in files: <code>gesperrt</code>.
 </p>
 <ul class="POD_LIST">
-<li class="POD_ITEM"><a name=1>1</a>
+<li class="POD_ITEM"><a name="1_">1:</a>
 
 One way street. The blocking is in the direction of the polyline.
-<li class="POD_ITEM"><a name=2>2</a>
+<li class="POD_ITEM"><a name="2_">2:</a>
 
 Blocked street (in both directions).
-<li class="POD_ITEM"><a name="_"></a>
+<li class="POD_ITEM"><a name="0_">0:</a>
 
 The bicycle has to be carried. An optional penalty parameter expressed
 in seconds of lost time may be added after the category, with a <code>:</code>
 as separator. Example: <code>0:30</code> for a penalty of 30 seconds. This is
 only for point records.
-<li class="POD_ITEM"><a name=3>3</a>
+<li class="POD_ITEM"><a name="3_">3:</a>
 
 A blocked route (gesperrte Wegf&uuml;hrung). This means that the whole path
 specified by the coordinates of this record are blocked, but parts of
 the path are not.
-<li class="POD_ITEM"><a name="BNP">BNP</a>
+<li class="POD_ITEM"><a name="BNP_">BNP:</a>
 
 A narrow passage (&quot;Dr&auml;ngelgitter&quot; etc.). An optional
 penalty parameter may be added, like for the <code></code> category.
@@ -330,7 +330,7 @@ F&auml;hren.
 <dd>
 The category will not be used in this case.
 </dl>
-<h3 class="POD_HEAD2"><a name="MORE_STANDARD_FILES">MORE STANDARD FILES</a></h3>
+<h3 class="POD_HEAD2"><a name="OTHER_STANDARD_FILES">OTHER STANDARD FILES</a></h3>
 <dl class="POD_LIST">
 <dt class="POD_ITEM"><a name="ampeln">ampeln</a>
 <dd>
@@ -347,13 +347,13 @@ XXX To be continued
 </p>
 <h2 class="POD_HEAD1"><a name="EXAMPLES">EXAMPLES</a></h2>
 <pre class="POD_VERBATIM">
-                      A list of coordinates (x,y pairs)
+                      List of coordinates (x,y pairs)
                       v
     Dudenstr. &lt;TAB&gt; H 9222,8787 8982,8781 8594,8773
     ^               ^
     Street name     Category (H = main street)
 
-                           A list of coordinates for the polygon
+                           List of coordinates for a polygon
                            v
     Viktoriapark &lt;TAB&gt; F:P 8554,8628 8551,8698 8577,8699 8579,8727
     ^                  ^

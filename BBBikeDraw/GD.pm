@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.30 2003/06/02 22:59:38 eserte Exp eserte $
+# $Id: GD.pm,v 1.31 2003/06/17 21:31:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -39,7 +39,7 @@ sub AUTOLOAD {
     }
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.31 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 

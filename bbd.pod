@@ -104,28 +104,28 @@ Used in files: C<gesperrt>.
 
 =over
 
-=item * 1
+=item * 1:
 
 One way street. The blocking is in the direction of the polyline.
 
-=item * 2
+=item * 2:
 
 Blocked street (in both directions).
 
-=item * 0
+=item * 0:
 
 The bicycle has to be carried. An optional penalty parameter expressed
 in seconds of lost time may be added after the category, with a C<:>
 as separator. Example: C<0:30> for a penalty of 30 seconds. This is
 only for point records.
 
-=item * 3
+=item * 3:
 
 A blocked route (gesperrte Wegführung). This means that the whole path
 specified by the coordinates of this record are blocked, but parts of
 the path are not.
 
-=item * BNP
+=item * BNP:
 
 A narrow passage (E<quot>DrE<auml>ngelgitterE<quot> etc.). An optional
 penalty parameter may be added, like for the C<0> category.
@@ -373,7 +373,7 @@ The category will not be used in this case.
 
 =back
 
-=head2 MORE STANDARD FILES
+=head2 OTHER STANDARD FILES
 
 =over
 
@@ -394,13 +394,13 @@ XXX To be continued
 
 =head1 EXAMPLES
 
-                      A list of coordinates (x,y pairs)
+                      List of coordinates (x,y pairs)
                       v
     Dudenstr. <TAB> H 9222,8787 8982,8781 8594,8773
     ^               ^
     Street name     Category (H = main street)
 
-                           A list of coordinates for the polygon
+                           List of coordinates for a polygon
                            v
     Viktoriapark <TAB> F:P 8554,8628 8551,8698 8577,8699 8579,8727
     ^                  ^

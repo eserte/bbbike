@@ -38,4 +38,9 @@ require Time::Local;
        file  => "wiesenfest.bbd",
        text  => "Finsterwalder Straﬂe zwischen Engelroder Weg und Calauer Straﬂe Vollsperrung aufgrund des Wiesenfestes. Dauer:28.06.2003, 10.00 Uhr bis 29.06.2003, 18.00 Uhr",
      },
+     { from  => Time::Local::timelocal(reverse(2003-1900,6-1,20,4,0,0)),
+       until => Time::Local::timelocal(reverse(2003-1900,6-1,22,23,59,59)),
+       file  => "strassenfest-karl-marx-str.bbd",
+       text  => "Karl-Marx-Straﬂe zwischen Flughafenstraﬂe und Werbellinstraﬂe, Erkstraﬂe zwischen Karl-Marx-Straﬂe und Donaustraﬂe: Straﬂenfest, Straﬂen gesperrt. Datum: 21.06.2003, 04.00 Uhr bis 22.06.2003, 24.00 Uhr",
+     },
     );

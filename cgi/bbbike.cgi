@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.29 2003/06/16 12:46:35 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.30 2003/06/17 20:58:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -567,16 +567,6 @@ eval { local $SIG{'__DIE__'};
        #warn "$0.config";
        do "$0.config" };
 
-eval { local $SIG{'__DIE__'};
-       my $teaser_file = "$FindBin::RealBin/bbbike-teaser.pl";
-       if (defined $BBBikeCGI::teaser_file_modtime &&
-	   (stat($teaser_file))[9] > $BBBikeCGI::teaser_file_modtime) {
-	   delete $INC{$teaser_file};
-       }
-       require $teaser_file;
-       $BBBikeCGI::teaser_file_modtime = (stat($teaser_file))[9];
-}; warn $@ if $@;
-
 if ($VERBOSE) {
     $StrassenNetz::VERBOSE    = $VERBOSE;
     $Strassen::VERBOSE        = $VERBOSE;
@@ -646,7 +636,7 @@ use vars qw(@ISA);
 
 } # jetzt beginnt wieder package main
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.29 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.30 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -1399,6 +1389,7 @@ sub choose_form () {
 	$start2 eq '' && $ziel2 eq '' &&
 	$startname eq '' && $zielname eq '' &&
 	!$smallform) {
+	load_teaser();
 	# use "make count-streets" in ../data
  	print <<EOF;
 <table>
@@ -3211,13 +3202,21 @@ function all_checked() {
 // --></script>
 EOF
 
-	    print "<table><tr valign=top><td>$fontstr<b>Bildgr&ouml;&szlig;e:</b>$fontend<br><font size=-1>(nicht für PDF)</font></td>\n";
+            my @not_for;
+	    push @not_for, "PDF" if !$cannot_pdf;
+	    push @not_for, "SVG" if !$cannot_svg;
+	    push @not_for, "Mapserver" if $can_mapserver;
+	    print "<table><tr valign=top><td>$fontstr<b>Bildgr&ouml;&szlig;e:</b>$fontend</td>\n";
 	    foreach my $geom ("400x300", "640x480", "800x600", "1024x768") {
 		print
 		    "<td><input type=radio name=geometry value=\"$geom\"",
 		    ($geom eq $default_geometry ? " checked" : ""),
 		    ">$fontstr $geom  $fontend</td>\n";
 	    }
+	    if (@not_for) {
+		print "<td><small>(nicht für: " . join(", ", @not_for) . ")</small></td>";
+	    }
+	    print "</tr>\n";
 	    print "<tr><td>$fontstr<b>Details:</b>$fontend</td>";
 	    my @draw_details =
 		(['Stra&szlig;en',  'str',      $default_draw{"str"}],
@@ -4414,7 +4413,7 @@ sub draw_route_from_fh {
     if ($res->{RealCoords}) {
 	$q->param('draw', 'all');
 	$q->param('scope', 'wideregion');
-	$q->param('geometry', "800x600");
+	$q->param('geometry', "800x600") if !defined $q->param("geometry");
 	# Separator war mal ";", aber CGI.pm behandelt diesen genau wie "&"
 	$q->param('coords', join("!", map { "$_->[0],$_->[1]" }
 				 @{ $res->{RealCoords} }));
@@ -4448,7 +4447,7 @@ sub upload_button_html {
 				   -action => "$bbbike_url?dummy=@{[ time ]}"),
           "Anzuzeigende Route-Datei (GPSman-Tracks oder .bbr-Dateien):<br>\n",
 	  $q->filefield(-name => 'routefile'),
-	  "<br>\n",
+	  "<p>\n",
 	  # hier könnte noch ein maxdist-Feld stehen, um die maximale
 	  # Entfernung anzugeben, bei der eine Route noch als
 	  # "zusammenhängend" betrachtet wird XXX
@@ -4467,7 +4466,23 @@ sub upload_button_html {
 				     'jpeg' => 'JPEG',
 				     'mapserver' => 'Mapserver'},
 			),
-	  "<br>\n",
+	  "<p>\n",
+	  "Bildgröße: <small>(nicht für PDF, SVG und Mapserver)</small><br>\n",
+	  $q->radio_group(-name => "geometry",
+			  -values => ["400x300", "640x480", "800x600",
+				      "1024x768", "1200x1024", "1600x1200",
+				     ],
+			  -linebreak => "true",
+			  -default => (defined $q->param("geometry")
+				       ? $q->param("geometry")
+				       : "1024x768"),
+			 ),
+	  "<p>\n",
+	  $q->checkbox(-name => "outputtarget",
+		       -value => 'print',
+		       -label => "für Druck optimieren",
+		      ),
+	  "<p>\n",
 	  $q->submit(-name => 'routefile_submit',
 		     -value => 'Anzeigen'),
 	  $q->endform;
@@ -4543,6 +4558,18 @@ sub set_process {
     dbmclose(%proc);
 }
 
+sub load_teaser {
+    eval { local $SIG{'__DIE__'};
+	   my $teaser_file = "$FindBin::RealBin/bbbike-teaser.pl";
+	   if (defined $BBBikeCGI::teaser_file_modtime &&
+	       (stat($teaser_file))[9] > $BBBikeCGI::teaser_file_modtime) {
+	       delete $INC{$teaser_file};
+	   }
+	   require $teaser_file;
+	   $BBBikeCGI::teaser_file_modtime = (stat($teaser_file))[9];
+       }; warn $@ if $@;
+}
+
 ######################################################################
 #
 # Information
@@ -4559,6 +4586,13 @@ sub show_info {
  <li><a href="#tipps">Die Routensuche</a>
  <li><a href="#link">Link auf BBBike setzen</a>
  <li><a href="#resourcen">Weitere Möglichkeiten mit BBBike</a>
+  <ul>
+   <li><a href="#perltk">Perl/Tk-Version</a>
+   <li><a href="#pda">PDA-Version</a>
+   <li><a href="#wap">WAP</a>
+   <li><a href="#gpsupload">GPS-Upload</a>
+@{[ $can_palmdoc ? qq{<li><a href="#palmexport">Palm-Export</a>} : qq{} ]}
+  </ul>
  <li><a href="@{[ $bbbike_html ]}/presse.html">Die Presse über BBBike</a>
  <li><a href="#hardsoftware">Hard- und Softwareinformation</a>
  <li><a href="#disclaimer">Disclaimer</a>
@@ -4631,19 +4665,26 @@ bereits vordefinierten Ziel setzen. Die Vorgehensweise sieht so aus:
      Dabei sollte <tt>zielplz</tt> gelöscht werden. Wenn im Namen Leerzeichen
      vorkommen, müssen sie durch <tt>+</tt> ersetzt werden.
 </ul>
+Für einen vordefinierten Startort geht man genauso vor, lediglich werden alle Vorkommen von <tt>ziel</tt> durch <tt>start</tt> ersetzt.
 <hr>
 <p>
 EOF
 
     print <<EOF;
 <a name="resourcen"><h3>Weitere Möglichkeiten und Tipps</h3></a>
-Es gibt eine wesentlich komplexere Version von BBBike, dass als normales
-Programm (mit Perl/Tk-Interface) unter Unix, Linux und Windows läuft.
+<a name="perltk"><h4>Perl/Tk-Version</h4></a>
+Es gibt eine wesentlich komplexere Version von BBBike mit interaktiver Karte, mehr Kontrollmöglichkeiten über die Routensuche, GPS-Anbindung und den kompletten Daten. Diese Version läuft als normales Programm (mit Perl/Tk-Interface) unter Unix, Linux und Windows.
 <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">Hier</a>
 bekommt man dazu mehr Informationen. Als Beispiel kann man sich einen
 <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}/images/bbbike-screenshot.png">Screenshot</a> der perl/Tk-Version angucken.
+<a name="pda"><h4>PDA-Version für iPAQ/Linux</h4></a>
+Für iPAQ-Handhelds mit Familiar Linux gibt es eine kleine Version von BBBike: <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">tkbabybike</a>.
+<a name="wap"><h4>WAP</h4></a>
+Per WAP-Handy kann man unter <a href="@{[ $BBBike::BBBIKE_WAP ]}">@{[ $BBBike::BBBIKE_WAP ]}</a> BBBike nutzen.
 <p>
+<a name="gpsupload"><h4>GPS-Upload</h4></a>
 Es besteht die experimentelle Möglichkeit, sich <a href="@{[ $bbbike_url ]}?uploadpage=1">GPS-Tracks oder bbr-Dateien</a> anzeigen zu lassen.<p>
+<h4>Diplomarbeit</h4>
 Das Programm wird auch in <a href="@{[ $BBBike::DIPLOM_URL ]}">meiner Diplomarbeit</a> behandelt.<p>
 EOF
     if ($bi->is_browser_version("Mozilla", 5)) {
@@ -4668,6 +4709,7 @@ function addSidebar(frm) {
     return false;
 }
 // --></script>
+<h4>Mozilla-Sidebar</h4>
 <form name="bbbike_add_sidebar">
 <a href="#" onclick="return addSidebar(document.forms.bbbike_add_sidebar)"><img src="http://developer.netscape.com/docs/manuals/browser/sidebar/add-button.gif" alt="Add sidebar" border=0></a>, dabei folgende Adressen als Default verwenden:<br>
 <img src="$bbbike_images/flag2_bl.gif" border=0 alt="Start"> <input size=10 name="start"><br>
@@ -4677,10 +4719,11 @@ EOF
     }
     if ($can_palmdoc) {
 	print <<EOF;
+<a name="palmexport"><h4>Palm-Export</h4></a>
 <p>Für den PalmDoc-Export benötigt man auf dem Palm einen entsprechenden
 Viewer, z.B.
 <a href="http://www.freewarepalm.com/docs/cspotrun.shtml">CSpotRun</a>.
-Für eine komplette Liste siehe auch
+Für eine komplette Liste kompatibler Viewer siehe auch
 <a href="http://www.freewarepalm.com/docs/docs_software.shtml">hier</a>.
 EOF
     }
@@ -4809,8 +4852,7 @@ EOF
 
     print <<EOF;
 <h3><a name="disclaimer">Disclaimer</a></h3>
-Es wird keine Gewähr für die Inhalte dieser Site sowie verlinkter Sites
-übernommen.
+Es wird keine Gewähr für die Inhalte dieser Site sowie verlinkter Sites übernommen.
 <hr>
 
 EOF

@@ -1301,13 +1301,20 @@ $top_dpi  = $top_dpmm*25.4;
 $ps_image_res = int($top_dpi) . "x" . int($top_dpi);
 
 $srtbike_photo = load_photo($top, 'srtbike_solid.' . $default_img_fmt);
-if ($os eq 'win') {
+if ($os eq 'win' || $^O eq 'cygwin') {
     # XXX should I use 16 too?
     $srtbike_icon = load_photo($top, 'srtbike32.' . $default_img_fmt);
+    if ($srtbike_icon) {
+#XXX Produces funny colors --- Tk problem?!
+#	$top->iconmask('@' . $FindBin::RealBin . '/images/srtbike32_mask.xbm');
+    }
 } else {
     # 16x16 is the preferred size for mini-icons in KDE
     # works also for twm (however, a little bit tiny)
     $srtbike_icon = load_photo($top, 'srtbike16.' . $default_img_fmt);
+    if ($srtbike_icon) {
+	$top->iconmask('@' . $FindBin::RealBin . '/images/srtbike16_mask.xbm');
+    }
 }
 
 $top->title("$progname $VERSION");
@@ -7482,9 +7489,7 @@ sub plot_layer {
 	$str_draw{$abk} = 1;
 	$str_file{$abk} = $file;
     }
-warn $str_draw{$abk};
     plot($type, $abk, %args);
-warn $str_draw{$abk};
     $abk;
 }
 
@@ -12973,7 +12978,7 @@ sub show_route_strname {
 	my $font = shift;
 	if (!$show_route_start) { $show_route_start = "???" }
 	if (!$show_route_ziel)  { $show_route_ziel = "???" }
-	if ($^O eq 'MSWin32' && exists &Win32Util::start_txt_print) {
+	if ($^O eq 'MSWin32' && defined &Win32Util::start_txt_print) {
 	    require POSIX;
 	    my $temp = POSIX::tmpnam(); # XXX it never gets deleted
 	    $temp =~ tr{/}{\\};
@@ -14937,7 +14942,7 @@ sub set_fonts {
 	my $font_size_from_user = 0;
 	if (!defined $std_font || $std_font eq '') {
 	    # $font_family, $font_size, $font_weight from cmdline
-	    if (defined $font_family && !$kde) {
+	    if (defined $font_family && $font_family ne "" && !$kde) {
 		if (!defined $font_size) {
 		    my $std_font = $get_std_font->();
 		    $font_size = $top->fontActual($std_font, '-size');
@@ -14945,8 +14950,10 @@ sub set_fonts {
 		    $font_size_from_user = 1;
 		}
 		$font_from_user = 1;
-		my(%a) = (-family => $font_family,
-			  -size   => $font_size);
+		my(%a) = (-family => $font_family);
+		if (defined $font_size && $font_size =~ /^-?\d+$/) {
+		    $a{-size} = $font_size;
+		}
 		if (defined $font_weight && $font_weight ne '') {
 		    $a{-weight} = $font_weight;
 		}

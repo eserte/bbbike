@@ -1036,8 +1036,8 @@ sub advanced_coord_menu {
     {
 	my $c_bpcm = $bpcm->Menu(-title => M"Kommentare zeichnen");
 	$bpcm->entryconfigure("last", -menu => $c_bpcm);
-	foreach my $type (@comments_types) {
-	    my $type = my $label = $type;
+	foreach my $_type (@comments_types) {
+	    my $type = my $label = $_type;
 	    my $def = 'comm-' . $type;
 	    $c_bpcm->checkbutton
 		(-label => $label,
