@@ -122,6 +122,7 @@ use File::Basename;
 #BEGIN{mymstat("before BBBikeUtil");}
 ## DEBUG_END
 use BBBikeUtil;
+use BBBikeUtil qw(min max);
 use BBBikeVar;
 use BBBikeCalc;
 use BBBikeTrans;
