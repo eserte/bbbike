@@ -168,7 +168,7 @@ ask-copy-to-cvs:
 	@read dummy
 
 do-copy-to-cvs:	MANIFEST.withcvs
-	perl "-MExtUtils::Manifest=manicopy,maniread" -e '$$fs=maniread(q{MANIFEST.withcvs}); while($$f=each %$$fs) { if (-M $$f >= -M qq{${CVS_DIR}/$$f}) { delete $$fs->{$$f} } } manicopy($$fs,q{${CVS_DIR}}, q{cp}); utime time,time,map { qq{${CVS_DIR}/$$_} } keys %$$fs'
+	perl "-MExtUtils::Manifest=manicopy,maniread" -e '$$fs=maniread(q{MANIFEST.withcvs}); while($$f=each %$$fs) { if (-e qq{${CVS_DIR}/$$f} && -M $$f >= -M qq{${CVS_DIR}/$$f}) { delete $$fs->{$$f} } } manicopy($$fs,q{${CVS_DIR}}, q{cp}); utime time,time,map { qq{${CVS_DIR}/$$_} } keys %$$fs'
 
 diff-with-cvs:	MANIFEST.withcvs
 	makepatch --verbose \
