@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.15 2004/05/18 21:58:26 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.16 2004/05/23 06:06:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -54,19 +54,19 @@ my $delay = 0;
 
 if (!GetOptions("test" => \$test,
 		"i|inputfile=s" => \$inputfile,
-		"old|oldffile=s" => \$oldfile,
+		"old|oldfile=s" => \$oldfile,
 		"diffcount" => \$do_diffcount,
 		"q" => \$quiet,
 		"f" => \$force,
 		'outputas=s@' => \@output_as,
-		'markirrelevant!' => \$do_irrelevant,
+		'irrelevant|markirrelevant!' => \$do_irrelevant,
 		'delay=i' => \$delay,
 	       )) {
     die <<EOF;
 usage: $0 [-test] [-i|-inputfile file] [-old|-oldfile file]
           [-diffcount] [-irrelevant] [-delay sec] [-q] [-outputas type] ...
 
-Multiple -outputas optione are possible, default is "text". -outputas
+Multiple -outputas options are possible, default is "text". -outputas
 is of the form "type:file". If ":file" is left, then the output goes
 to stdout. file must not exist. type may be text, bbd, dump (perl
 dump) and yaml.
@@ -441,6 +441,8 @@ sub mark_irrelevant_entries {
 	    /( halbseitige\s+Sperrung
 	     | halbseitig\s+gesperrt
 	     | halbseitige\s+Sperrung\/Lichtsignalanl.
+	     | \s+halbseitig\s+
+	     | \s+Einschränkungen\s+
 	     | Einengung
 	     | ger\.Eineng
 	     | Fahrstreifen\s+eingeengt

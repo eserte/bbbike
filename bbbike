@@ -6014,19 +6014,38 @@ sub set_bindings {
 	$top->bind("<${kp}Left>"  => sub { $c->xview(scroll => -1, 'units') });
 	$top->bind("<${kp}Right>" => sub { $c->xview(scroll =>  1, 'units') });
 
-	$top->bind("<${kp}Next>"  => sub { $c->yview(scroll =>  5, 'units') });
-	$top->bind("<${kp}Prior>" => sub { $c->yview(scroll => -5, 'units') });
-	$top->bind("<${kp}Home>"  => sub { $c->xview(scroll => -5, 'units') });
-	$top->bind("<${kp}End>"   => sub { $c->xview(scroll =>  5, 'units') });
-
 	$top->bind("<${kp}Begin>" => sub { center_best() });
         };
     }
+
+    $top->bind("<Next>"  => sub { $c->yview(scroll =>  5, 'units') });
+    $top->bind("<Prior>" => sub { $c->yview(scroll => -5, 'units') });
+    $top->bind("<Home>"  => sub { $c->xview(scroll => -5, 'units') });
+    $top->bind("<End>"   => sub { $c->xview(scroll =>  5, 'units') });
+    eval {
+    $top->bind("<KP_Next>"  => sub { $c->xview(scroll =>  1, 'units');
+				     $c->yview(scroll =>  1, 'units') });
+    $top->bind("<KP_Prior>" => sub { $c->xview(scroll =>  1, 'units');
+				     $c->yview(scroll => -1, 'units') });
+    $top->bind("<KP_Home>"  => sub { $c->xview(scroll => -1, 'units');
+				     $c->yview(scroll => -1, 'units') });
+    $top->bind("<KP_End>"   => sub { $c->xview(scroll => -1, 'units');
+				     $c->yview(scroll =>  1, 'units') });
+    };
 
     $top->bind("<Shift-KP_2>" => sub { $c->yview(scroll =>  5, 'units') });
     $top->bind("<Shift-KP_8>" => sub { $c->yview(scroll => -5, 'units') });
     $top->bind("<Shift-KP_4>" => sub { $c->xview(scroll => -5, 'units') });
     $top->bind("<Shift-KP_6>" => sub { $c->xview(scroll =>  5, 'units') });
+
+    $top->bind("<Shift-KP_3>" => sub { $c->xview(scroll =>  5, 'units');
+				       $c->yview(scroll =>  5, 'units') });
+    $top->bind("<Shift-KP_9>" => sub { $c->xview(scroll =>  5, 'units');
+				       $c->yview(scroll => -5, 'units') });
+    $top->bind("<Shift-KP_7>" => sub { $c->xview(scroll => -5, 'units');
+				       $c->yview(scroll => -5, 'units') });
+    $top->bind("<Shift-KP_1>" => sub { $c->xview(scroll => -5, 'units');
+				       $c->yview(scroll =>  5, 'units') });
 
 }
 

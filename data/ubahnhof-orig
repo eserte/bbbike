@@ -1,5 +1,6 @@
-# $Id: ubahnhof-orig,v 2.1 2004/05/02 17:48:35 eserte Exp eserte $
+# $Id: ubahnhof-orig,v 2.2 2004/05/21 22:26:12 eserte Exp $
 # U1
+#: attrs bg
 Warschauer Str.	UA 13506,11159
 Schlesisches Tor	UA 12986,10636
 Görlitzer Bhf.	UA 12076,10426
@@ -9,12 +10,16 @@ Hallesches Tor	UA 9582,10220
 Möckernbrücke (U1)	UA 8985,10360
 Gleisdreieck	UA 8395,10394
 Kurfürstenstr.	UA 7579,10400
+#: attrs bg
 Nollendorfplatz	UA 7000,10370
+#: attrs bg
 Wittenbergplatz	UA 6301,10601
 Augsburger Str.	UA 5877,10486
 Spichernstr.	UA 5474,9961
 Hohenzollernplatz	UA 5070,9723
+#: attrs bg
 Fehrbelliner Platz	UA 4381,9276
+#: attrs bg
 Heidelberger Platz	UA 4295,8137
 Rüdesheimer Platz	UB 4399,7342
 Breitenbachplatz	UB 3998,6655
@@ -23,11 +28,13 @@ Dahlem-Dorf	UB 2768,5624
 Thielplatz	UB 2265,4892
 Oskar-Helene-Heim	UB 1411,4770
 Onkel Toms Hütte	UB 307,4706
+#: attrs bg
 Krumme Lanke	UB -521,3925
 # U15
 Kurfürstendamm	UA 5512,10786
 Uhlandstr.	UA 5157,10657
 # U2
+#: attrs bg
 Pankow	UB 10843,18001
 Vinetastr.	UB 10934,17049
 Schönhauser Allee	UA 10983,15984
@@ -36,28 +43,35 @@ Senefelderplatz	UA 10936,14074
 Rosa-Luxemburg-Platz	UA 10818,13516
 Alexanderplatz (U2)	UA 11068,12895
 Klosterstr.	UA 10954,12399
+#: attrs bg
 Märkisches Museum	UA 10827,11864
 Spittelmarkt	UA 10337,11730
 Hausvogteiplatz	UA 9829,11957
 Stadtmitte (U2)	UA 9452,11808
 Mohrenstr.	UA 9098,11754
 Potsdamer Platz	UA 8667,11478
+#: attrs bg
 Mendelssohn-Bartholdy-Park	UA 8444,10854
+#: attrs bg
 Bülowstr.	UA 7658,10160
+#: attrs bg
 Zoologischer Garten	UA 5586,11074
 Ernst-Reuter-Platz	UA 4866,11699
 Deutsche Oper	UA 3971,11655
+#: attrs bg
 Bismarckstr.	UA 3683,11621
 Sophie-Charlotte-Platz	UA 3147,11552
 Kaiserdamm	UA 2216,11433
 Theodor-Heuss-Platz	UB 1478,11392
 Neu-Westend	UB 656,12077
 Olympia-Stadion	UB -19,12148
+#: attrs bg
 Ruhleben	UB -649,13096
 # U4
 Viktoria-Luise-Platz	UA 6270,9939
 Bayerischer Platz	UA 6126,9130
 Rathaus Schöneberg	UA 6260,8516
+#: attrs bg
 Innsbrucker Platz	UA 6386,8065
 # U5
 Alexanderplatz (U5/U8)	UA 10967,12812
@@ -73,35 +87,51 @@ Friedrichsfelde	UB 17802,11316
 Tierpark	UB 18481,10468
 Biesdorf-Süd	UB 20172,10636
 Elsterwerdaer Platz	UB 21092,11261
+#: attrs bf
 Wuhletal	UB 22121,12080
+#: attrs bf
 Kaulsdorf-Nord	UB 22933,13159
+#: attrs bf
 Grottkauer Str.	UB 22992,13762
+#: attrs bf
 Cottbusser Platz	UB 23395,14489
+#: attrs bf
 Hellersdorf	UB 24067,14820
+#: attrs bf
 Louis-Lewin-Str.	UB 24946,15113
+#: attrs bf
 Hönow	UB 25965,15030
 # U5 in Bau/geplant
 Unter den Linden	U0 8852,12293
 Reichstag	U0 8272,12685
 Lehrter Bahnhof (Hauptbahnhof)	U0 8030,13294
 # U6
+#: attrs bg
 Alt-Mariendorf	UB 9472,3641
 Westphalweg	UB 9298,4471
 Ullsteinstr.	UB 9180,5376
 Kaiserin-Augusta-Str.	UB 9186,5979
 Alt-Tempelhof	UB 9240,6599
+#: attrs bg
 Tempelhof	UA 9231,7085
+#: attrs bg
 Paradestr.	UA 9264,8033
 Platz der Luftbrücke	UA 9217,8888
 Mehringdamm	UA 9396,9871
+#: attrs bg
 Kochstr.	UA 9491,11089
 Stadtmitte (U6)	UA 9423,11697
 Französische Str.	UA 9383,12049
 Friedrichstr.	UA 9306,12725
+#: attrs bg
 Oranienburger Tor	UA 9239,13286
+#: attrs bg
 Zinnowitzer Str.	UA 8899,13915
+#: attrs bg
 Schwartzkopffstr.	UA 8543,14346
+#: attrs bg
 Reinickendorfer Str.	UA 8030,14905
+#: attrs bg
 Wedding	UA 7739,15167
 Leopoldplatz	UB 7279,15571
 Seestr.	UB 6828,15983
@@ -114,18 +144,23 @@ Holzhauser Str.	UB 2898,18814
 Borsigwerke	UB 2586,19374
 Alt-Tegel	UB 2067,20278
 # U7
+#: attrs bg
 Rudow	UB 16821,1252
 Zwickauer Damm	UB 16013,2050
 Wutzkyallee	UB 15373,2039
+#: attrs bg
 Lipschitzallee	UB 14600,2157
 Johannisthaler Chaussee	UB 13933,2673
 Britz-Süd	UB 13582,3543
 Parchimer Allee	UB 13643,4410
 Blaschkoallee	UB 13592,5253
 Grenzallee	UB 13262,6390
+#: attrs bg
 Neukölln	UA 13049,7140
 Karl-Marx-Str.	UA 12871,7943
+#: attrs bg
 Rathaus Neukölln	UA 12518,8482
+#: attrs bg
 Hermannplatz	UA 11837,8980
 Südstern	UA 10684,9295
 Gneisenaustr.	UA 9883,9494
@@ -133,6 +168,7 @@ Möckernbrücke (U7)	UA 8988,10323
 Yorckstr.	UA 8238,9660
 Kleistpark	UA 7451,9347
 Eisenacher Str.	UA 6805,9248
+#: attrs bg
 Berliner Str.	UA 5505,8963
 Blissestr.	UA 4911,8866
 Konstanzer Str.	UA 4072,9636
@@ -140,6 +176,7 @@ Adenauerplatz	UA 3853,10396
 Wilmersdorfer Str.	UA 3809,11037
 Richard-Wagner-Platz	UA 3770,12208
 Mierendorffplatz	UA 3643,13248
+#: attrs bg
 Jungfernheide	UA 3352,13752
 Jakob-Kaiser-Platz	UB 2823,14355
 Halemweg	UB 2354,14384
@@ -149,8 +186,10 @@ Paulsternstr.	UB -267,14501
 Haselhorst	UB -1288,14532
 Zitadelle	UB -2320,14423
 Altstadt Spandau	UB -3019,14499
+#: attrs bg
 Rathaus Spandau	UB -3560,14235
 # U8
+#: attrs bg
 Hermannstr.	UA 12358,6895
 Leinestr.	UA 12126,7596
 Boddinstr.	UA 11942,8248
@@ -160,17 +199,23 @@ Heinrich-Heine-Str.	UA 11203,11611
 Jannowitzbrücke	UA 11362,12172
 Weinmeisterstr.	UA 10386,13334
 Rosenthaler Platz	UA 10157,13817
+#: attrs bg
 Bernauer Str.	UA 9828,14659
 Voltastr.	UA 9602,15110
 Gesundbrunnen	UA 9226,15911
 Pankstr.	UB 8796,16239
+#: attrs bg
 Osloer Str.	UB 8210,16788
 Franz-Neumann-Platz	UB 7582,17534
 Residenzstr.	UB 7325,18276
+#: attrs bg
 Paracelsus-Bad	UB 6509,18665
+#: attrs bg
 Lindauer Allee	UB 6056,18753
 Karl-Bonhoeffer-Nervenklinik	UB 5448,19169
+#: attrs bg
 Rathaus Reinickendorf	UB 4934,20186
+#: attrs bg
 Wittenau	UB 5501,21018
 # U9
 Nauener Platz	UB 7829,16158
@@ -180,8 +225,10 @@ Birkenstr.	UA 6112,13947
 Turmstr.	UA 6122,13261
 Hansaplatz	UA 6186,12424
 Güntzelstr.	UA 5493,9481
+#: attrs bg
 Bundesplatz	UA 5355,7985
 Friedrich-Wilhelm-Platz	UB 5381,7305
 Walther-Schreiber-Platz	UB 5369,6535
 Schloßstr.	UB 5120,6066
+#: attrs bg
 Rathaus Steglitz	UB 4841,5591

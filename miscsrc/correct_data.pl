@@ -73,9 +73,10 @@ sub process {
     $s = Strassen->new($file);
     iterate {
 	my $new_coords_ref = &convert_record;
-	next if !$new_coords_ref;
-	$_->[Strassen::COORDS] = $new_coords_ref;
-	print Strassen::arr2line2($_), "\n";
+	if ($new_coords_ref) {
+	    $_->[Strassen::COORDS] = $new_coords_ref;
+	    print Strassen::arr2line2($_), "\n";
+	}
     } $s;
 
     untie %conv;
@@ -147,6 +148,7 @@ sub convert_record {
 }
 
 sub _init_ref_dist {
+    $minpoints = 5 if !defined $minpoints;
     @ref_dist = split /,/, $ref_dist;
 }
 

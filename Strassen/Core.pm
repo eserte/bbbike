@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.40 2004/05/16 11:22:51 eserte Exp eserte $
+# $Id: Core.pm,v 1.41 2004/05/21 22:26:37 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -21,12 +21,14 @@ use BBBikeUtil;
 #require Strassen::Util; # AUTOLOAD: activate
 #require Strasse; # AUTOLOAD: activate
 #use AutoLoader 'AUTOLOAD';
-use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
+use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
+	    %directive_aliases
+	   );
 
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.41 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -41,6 +43,8 @@ if (defined $ENV{BBBIKE_DATADIR}) {
 }
 
 $OLD_AGREP = 0 if !defined $OLD_AGREP;
+
+%directive_aliases = (attrs => "attributes");
 
 #eval 'require Strassen::Storable; $can_strassen_storable = 1';warn $@ if $@;
 
@@ -201,6 +205,8 @@ sub read_data {
 	while (<FILE>) {
 	    if (/^\#:\s*([^\s:]+):?\s*(.*)$/) {
 		my($directive, $value_and_marker) = ($1, $2);
+		$directive = $directive_aliases{$directive}
+		    if exists $directive_aliases{$directive};
 		my($value, $is_block_begin, $is_block_end);
 		if ($value_and_marker =~ /^\^+\s*$/) {
 		    $is_block_end = 1;

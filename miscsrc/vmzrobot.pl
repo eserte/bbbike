@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.12 2004/05/18 21:55:03 eserte Exp $
+# $Id: vmzrobot.pl,v 1.13 2004/05/21 20:58:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -41,18 +41,18 @@ my @output_as;
 
 if (!GetOptions("test" => \$test,
 		"i|inputfile=s" => \$inputfile,
-		"old|oldffile=s" => \$oldfile,
+		"old|oldfile=s" => \$oldfile,
 		"diffcount" => \$do_diffcount,
 		"q" => \$quiet,
 		"f" => \$force,
 		'outputas=s@' => \@output_as,
-		'markirrelevant!' => \$do_irrelevant,
+		'irrelevant|markirrelevant!' => \$do_irrelevant,
 	       )) {
     die <<EOF;
 usage: $0 [-test] [-i|-inputfile file] [-old|-oldfile file]
           [-diffcount] [-irrelevant] [-q] [-outputas type] ...
 
-Multiple -outputas optione are possible, default is "text". -outputas
+Multiple -outputas options are possible, default is "text". -outputas
 is of the form "type:file". If ":file" is left, then the output goes
 to stdout. file must not exist. type may be text, bbd, dump (perl
 dump) and yaml.

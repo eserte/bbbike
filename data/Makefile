@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.11 2004/05/09 21:25:40 eserte Exp eserte $
+# $Id: Makefile,v 2.13 2004/05/21 22:25:55 eserte Exp $
 #
 
 BBBIKEDIR=		..
@@ -73,152 +73,152 @@ strassen:	.strassen.tmp plaetze
 	cat $> > $@
 	-@$(READONLY) $@
 
-#XXX vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-# radwege werden leicht anders konvertiert (approx. 1m Abweichung), aber
-# noch tolerierbar
-#
-# XXX Hx,y nach x,y umwandeln!
-#
-# diff sieht zurzeit gut aus, Konvertierung kann erfolgen, wenn Tools
-# wie insert_points etc. funktionieren
-#
-# Call with:
-#   make -k origconvert origconvert-all
-#
-# Quick diff between both directories:
-#
-# diff --exclude="*~" --exclude="*.st" --exclude="*-info" --exclude="*.desc" --exclude=BASE --exclude=".check*" --exclude=".nextrun*" --exclude=".*" --exclude="*-orig" --exclude "GNUmakefile*" --exclude "*.coords.data" --exclude RCS --exclude README --exclude "add_*" --exclude "inaccessible_strassen" --exclude "innerberliner_grenze" --exclude "kinos" --exclude "kneipen" --exclude "restaurants*" --exclude "old" --exclude "oldcoord" --exclude "orig" --exclude "multi_bez_str" --exclude "sehenswuerdigkeit_img" --exclude "str_cont_ausnahme" --exclude "umsteigebhf" -ru /tmp/convert ~/src/bbbike/data | less
-#
-#   and:
-#
-# diff /tmp/convert/ampelschaltung-orig.txt  ~/src/bbbike/misc/ampelschaltung.txt
-#
-# Vorgehensweise zur Konvertierung:
-# - Datei-orig einchecken und wieder auschecken
-# - "make origconvert" (mindestens für diese Datei) aufrufen
-# - zur Sicherheit: "diff /tmp/convert/datei datei" aufrufen
-# - zur Sicherheit: wc -l auf beide -orig-Versionen aufrufen (sollte gleich sein)
-# - Datei-orig nach oldcoord verschieben
-# - mv /tmp/convert/datei-orig hierher
-# - Eintrag in BASE korrigieren
-# - zur Sicherheit "make" aufrufen
-# - datei-orig mit inkrementierten Version einchecken
-#   logeintrag: map transition (B => H)
+# #XXX vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# # radwege werden leicht anders konvertiert (approx. 1m Abweichung), aber
+# # noch tolerierbar
+# #
+# # XXX Hx,y nach x,y umwandeln!
+# #
+# # diff sieht zurzeit gut aus, Konvertierung kann erfolgen, wenn Tools
+# # wie insert_points etc. funktionieren
+# #
+# # Call with:
+# #   make -k origconvert origconvert-all
+# #
+# # Quick diff between both directories:
+# #
+# # diff --exclude="*~" --exclude="*.st" --exclude="*-info" --exclude="*.desc" --exclude=BASE --exclude=".check*" --exclude=".nextrun*" --exclude=".*" --exclude="*-orig" --exclude "GNUmakefile*" --exclude "*.coords.data" --exclude RCS --exclude README --exclude "add_*" --exclude "inaccessible_strassen" --exclude "innerberliner_grenze" --exclude "kinos" --exclude "kneipen" --exclude "restaurants*" --exclude "old" --exclude "oldcoord" --exclude "orig" --exclude "multi_bez_str" --exclude "sehenswuerdigkeit_img" --exclude "str_cont_ausnahme" --exclude "umsteigebhf" -ru /tmp/convert ~/src/bbbike/data | less
+# #
+# #   and:
+# #
+# # diff /tmp/convert/ampelschaltung-orig.txt  ~/src/bbbike/misc/ampelschaltung.txt
+# #
+# # Vorgehensweise zur Konvertierung:
+# # - Datei-orig einchecken und wieder auschecken
+# # - "make origconvert" (mindestens für diese Datei) aufrufen
+# # - zur Sicherheit: "diff /tmp/convert/datei datei" aufrufen
+# # - zur Sicherheit: wc -l auf beide -orig-Versionen aufrufen (sollte gleich sein)
+# # - Datei-orig nach oldcoord verschieben
+# # - mv /tmp/convert/datei-orig hierher
+# # - Eintrag in BASE korrigieren
+# # - zur Sicherheit "make" aufrufen
+# # - datei-orig mit inkrementierten Version einchecken
+# #   logeintrag: map transition (B => H)
 
-ORIGCONVERTDIR=/tmp/convert
-TARGETS2=$(TARGETS:Nampelschaltung:Nrbahn:Nrbahnhof:Nplz:Nradwege_exact:Nmount:Nberlin:S/$/-orig/)
-TARGETS3=$(TARGETS2:S/^/$(ORIGCONVERTDIR)\//)
+# ORIGCONVERTDIR=/tmp/convert
+# TARGETS2=$(TARGETS:Nampelschaltung:Nrbahn:Nrbahnhof:Nplz:Nradwege_exact:Nmount:Nberlin:S/$/-orig/)
+# TARGETS3=$(TARGETS2:S/^/$(ORIGCONVERTDIR)\//)
 
-origconvert:	$(ORIGCONVERTDIR) $(TARGETS3) \
-		$(ORIGCONVERTDIR)/rbahn-orig \
-		$(ORIGCONVERTDIR)/plz-orig \
-		$(ORIGCONVERTDIR)/fragezeichen-orig \
-		$(ORIGCONVERTDIR)/ampelschaltung-orig \
-		$(ORIGCONVERTDIR)/ampelschaltung-orig.txt
+# origconvert:	$(ORIGCONVERTDIR) $(TARGETS3) \
+# 		$(ORIGCONVERTDIR)/rbahn-orig \
+# 		$(ORIGCONVERTDIR)/plz-orig \
+# 		$(ORIGCONVERTDIR)/fragezeichen-orig \
+# 		$(ORIGCONVERTDIR)/ampelschaltung-orig \
+# 		$(ORIGCONVERTDIR)/ampelschaltung-orig.txt
 
-origconvert-all:	origconvert-all1 origconvert-all2
+# origconvert-all:	origconvert-all1 origconvert-all2
 
-origconvert-all1:
-	cd $(ORIGCONVERTDIR) && env BBBIKE_DATADIR=$(ORIGCONVERTDIR) make BBBIKEDIR=${.CURDIR}/..
+# origconvert-all1:
+# 	cd $(ORIGCONVERTDIR) && env BBBIKE_DATADIR=$(ORIGCONVERTDIR) make BBBIKEDIR=${.CURDIR}/..
 
-origconvert-all2:
-	cd $(ORIGCONVERTDIR) && env BBBIKE_DATADIR=$(ORIGCONVERTDIR) make -f ${.CURDIR}/../misc/Makefile BBBIKEDIR=${.CURDIR}/.. DATADIR=$(ORIGCONVERTDIR)
+# origconvert-all2:
+# 	cd $(ORIGCONVERTDIR) && env BBBIKE_DATADIR=$(ORIGCONVERTDIR) make -f ${.CURDIR}/../misc/Makefile BBBIKEDIR=${.CURDIR}/.. DATADIR=$(ORIGCONVERTDIR)
 
 
-.PHONY: $(ORIGCONVERTDIR)
+# .PHONY: $(ORIGCONVERTDIR)
 
-$(ORIGCONVERTDIR):
-	if [ ! -d $(ORIGCONVERTDIR) ] ; then \
-	    mkdir $(ORIGCONVERTDIR); \
-	fi
-	cp -f Makefile $(ORIGCONVERTDIR)
-	cp -f Makefile.mapfiles $(ORIGCONVERTDIR)
-	cat BASE $(MISCDIR)/BASE | perl -pe 's/\t+./\tH/' > $(ORIGCONVERTDIR)/BASE
+# $(ORIGCONVERTDIR):
+# 	if [ ! -d $(ORIGCONVERTDIR) ] ; then \
+# 	    mkdir $(ORIGCONVERTDIR); \
+# 	fi
+# 	cp -f Makefile $(ORIGCONVERTDIR)
+# 	cp -f Makefile.mapfiles $(ORIGCONVERTDIR)
+# 	cat BASE $(MISCDIR)/BASE | perl -pe 's/\t+./\tH/' > $(ORIGCONVERTDIR)/BASE
 
-.for f in $(TARGETS2)
-$(ORIGCONVERTDIR)/$f:	$f
-	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -keepeverything $f > $(ORIGCONVERTDIR)/$f
-.endfor
+# .for f in $(TARGETS2)
+# $(ORIGCONVERTDIR)/$f:	$f
+# 	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -keepeverything $f > $(ORIGCONVERTDIR)/$f
+# .endfor
 
-$(ORIGCONVERTDIR)/rbahn-orig: rbahn-orig
-	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -keepeverything rbahn-orig > $(ORIGCONVERTDIR)/rbahn-orig
+# $(ORIGCONVERTDIR)/rbahn-orig: rbahn-orig
+# 	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -keepeverything rbahn-orig > $(ORIGCONVERTDIR)/rbahn-orig
 
-$(ORIGCONVERTDIR)/plz-orig: plz-orig
-	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -keepeverything plz-orig > $(ORIGCONVERTDIR)/plz-orig
+# $(ORIGCONVERTDIR)/plz-orig: plz-orig
+# 	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -keepeverything plz-orig > $(ORIGCONVERTDIR)/plz-orig
 
-$(ORIGCONVERTDIR)/fragezeichen-orig: ../misc/fragezeichen-orig
-	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -keepeverything ../misc/fragezeichen-orig > $(ORIGCONVERTDIR)/fragezeichen-orig
+# $(ORIGCONVERTDIR)/fragezeichen-orig: ../misc/fragezeichen-orig
+# 	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -keepeverything ../misc/fragezeichen-orig > $(ORIGCONVERTDIR)/fragezeichen-orig
 
-$(ORIGCONVERTDIR)/ampelschaltung-orig: ampelschaltung-orig
-	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -ampelschaltung -keepeverything ampelschaltung-orig > $(ORIGCONVERTDIR)/ampelschaltung-orig
+# $(ORIGCONVERTDIR)/ampelschaltung-orig: ampelschaltung-orig
+# 	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -ampelschaltung -keepeverything ampelschaltung-orig > $(ORIGCONVERTDIR)/ampelschaltung-orig
 
-$(ORIGCONVERTDIR)/ampelschaltung-orig.txt: ../misc/ampelschaltung-orig.txt
-	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -ampelschaltung2 -keepeverything ../misc/ampelschaltung-orig.txt > $(ORIGCONVERTDIR)/ampelschaltung-orig.txt
+# $(ORIGCONVERTDIR)/ampelschaltung-orig.txt: ../misc/ampelschaltung-orig.txt
+# 	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -ampelschaltung2 -keepeverything ../misc/ampelschaltung-orig.txt > $(ORIGCONVERTDIR)/ampelschaltung-orig.txt
 
-#strassen-orig:	oldcoord/strassen-orig
-#	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -frommap B -keepeverything $> > $@
+# #strassen-orig:	oldcoord/strassen-orig
+# #	env BBBIKE_DATADIR=$(ORIGCONVERTDIR) $(CONVERT2HAFAS) -frommap B -keepeverything $> > $@
 
-######################################################################
-# 2. Phase
-# Alle Dateien, die E oder andere Prefixe haben:
-ORIGCONVERT2DIR=/tmp/convert2
-TARGETS4=
-TARGETS4+=ampeln-orig
-TARGETS4+=brunnels-orig
-TARGETS4+=comments_cyclepath-orig
-TARGETS4+=comments_ferry-orig
-TARGETS4+=comments_kfzverkehr-orig
-TARGETS4+=comments_misc-orig
-TARGETS4+=comments_mount-orig
-TARGETS4+=comments_route-orig
-TARGETS4+=deutschland-orig
-TARGETS4+=faehren-orig
-TARGETS4+=flaechen-orig
-TARGETS4+=gesperrt-orig
-TARGETS4+=gesperrt_car-orig
-TARGETS4+=green-orig
-TARGETS4+=handicap_l-orig
-TARGETS4+=hoehe-orig
-TARGETS4+=landstrassen-orig
-TARGETS4+=landstrassen2-orig
-TARGETS4+=obst-orig
-TARGETS4+=orte-orig
-TARGETS4+=orte2-orig
-TARGETS4+=potsdam-orig
-TARGETS4+=qualitaet_l-orig
-TARGETS4+=qualitaet_s-orig
-TARGETS4+=rbahn-orig
-TARGETS4+=relation_gps-orig
-TARGETS4+=sbahn-orig
-TARGETS4+=sbahnhof-orig
-TARGETS4+=sbahnhof_bg-orig
-TARGETS4+=sehenswuerdigkeit-orig
-TARGETS4+=vorfahrt-orig
-TARGETS4+=wasserstrassen-orig
-TARGETS4+=wasserumland-orig
-TARGETS4+=wasserumland2-orig
-TARGETS5=$(TARGETS4:S/^/$(ORIGCONVERT2DIR)\//)
+# ######################################################################
+# # 2. Phase
+# # Alle Dateien, die E oder andere Prefixe haben:
+# ORIGCONVERT2DIR=/tmp/convert2
+# TARGETS4=
+# TARGETS4+=ampeln-orig
+# TARGETS4+=brunnels-orig
+# TARGETS4+=comments_cyclepath-orig
+# TARGETS4+=comments_ferry-orig
+# TARGETS4+=comments_kfzverkehr-orig
+# TARGETS4+=comments_misc-orig
+# TARGETS4+=comments_mount-orig
+# TARGETS4+=comments_route-orig
+# TARGETS4+=deutschland-orig
+# TARGETS4+=faehren-orig
+# TARGETS4+=flaechen-orig
+# TARGETS4+=gesperrt-orig
+# TARGETS4+=gesperrt_car-orig
+# TARGETS4+=green-orig
+# TARGETS4+=handicap_l-orig
+# TARGETS4+=hoehe-orig
+# TARGETS4+=landstrassen-orig
+# TARGETS4+=landstrassen2-orig
+# TARGETS4+=obst-orig
+# TARGETS4+=orte-orig
+# TARGETS4+=orte2-orig
+# TARGETS4+=potsdam-orig
+# TARGETS4+=qualitaet_l-orig
+# TARGETS4+=qualitaet_s-orig
+# TARGETS4+=rbahn-orig
+# TARGETS4+=relation_gps-orig
+# TARGETS4+=sbahn-orig
+# TARGETS4+=sbahnhof-orig
+# TARGETS4+=sbahnhof_bg-orig
+# TARGETS4+=sehenswuerdigkeit-orig
+# TARGETS4+=vorfahrt-orig
+# TARGETS4+=wasserstrassen-orig
+# TARGETS4+=wasserumland-orig
+# TARGETS4+=wasserumland2-orig
+# TARGETS5=$(TARGETS4:S/^/$(ORIGCONVERT2DIR)\//)
 
-.for f in $(TARGETS4)
-$(ORIGCONVERT2DIR)/$f:	$f
-	env BBBIKE_DATADIR=$(ORIGCONVERT2DIR) $(CONVERT2HAFAS) -keepcomment -keeppointattrib -noautodescent $f > $(ORIGCONVERT2DIR)/$f
-.endfor
+# .for f in $(TARGETS4)
+# $(ORIGCONVERT2DIR)/$f:	$f
+# 	env BBBIKE_DATADIR=$(ORIGCONVERT2DIR) $(CONVERT2HAFAS) -keepcomment -keeppointattrib -noautodescent $f > $(ORIGCONVERT2DIR)/$f
+# .endfor
 
-origconvert2:	$(ORIGCONVERT2DIR) $(TARGETS5)
+# origconvert2:	$(ORIGCONVERT2DIR) $(TARGETS5)
 
-$(ORIGCONVERT2DIR):
-	if [ ! -d $(ORIGCONVERT2DIR) ] ; then \
-	    mkdir $(ORIGCONVERT2DIR); \
-	fi
-	cp -f Makefile $(ORIGCONVERT2DIR)
-	cp -f Makefile.mapfiles $(ORIGCONVERT2DIR)
-	if [ ! -e $(ORIGCONVERT2DIR)/strassen ] ; then \
-	    cp strassen $(ORIGCONVERT2DIR); \
-	fi
-	cat BASE $(MISCDIR)/BASE | perl -pe 's/\t+./\tH/' > $(ORIGCONVERT2DIR)/BASE
+# $(ORIGCONVERT2DIR):
+# 	if [ ! -d $(ORIGCONVERT2DIR) ] ; then \
+# 	    mkdir $(ORIGCONVERT2DIR); \
+# 	fi
+# 	cp -f Makefile $(ORIGCONVERT2DIR)
+# 	cp -f Makefile.mapfiles $(ORIGCONVERT2DIR)
+# 	if [ ! -e $(ORIGCONVERT2DIR)/strassen ] ; then \
+# 	    cp strassen $(ORIGCONVERT2DIR); \
+# 	fi
+# 	cat BASE $(MISCDIR)/BASE | perl -pe 's/\t+./\tH/' > $(ORIGCONVERT2DIR)/BASE
 
-origconvert2-all:
-	cd $(ORIGCONVERT2DIR) && env BBBIKE_DATADIR=$(ORIGCONVERT2DIR) make BBBIKEDIR=${.CURDIR}/..
+# origconvert2-all:
+# 	cd $(ORIGCONVERT2DIR) && env BBBIKE_DATADIR=$(ORIGCONVERT2DIR) make BBBIKEDIR=${.CURDIR}/..
 
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -282,10 +282,11 @@ sbahnhof:	sbahnhof-orig
 	$(CONVERT2HAFAS) sbahnhof-orig > sbahnhof
 	-@$(READONLY) $@
 
-sbahnhof_bg:	sbahnhof_bg-orig
-	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) $> > $@
-	-@$(READONLY) $@
+#XXX del:
+# sbahnhof_bg:	sbahnhof_bg-orig
+# 	-@$(WRITEABLE) $@
+# 	$(CONVERT2HAFAS) $> > $@
+# 	-@$(READONLY) $@
 
 rbahn rbahnhof:	rbahn-orig
 	-@$(WRITEABLE) rbahn rbahnhof
@@ -302,10 +303,31 @@ ubahnhof:	ubahnhof-orig
 	$(CONVERT2HAFAS) ubahnhof-orig > ubahnhof
 	-@$(READONLY) $@
 
-ubahnhof_bg:	ubahnhof_bg-orig
+#XXX del:
+# ubahnhof_bg:	ubahnhof_bg-orig
+# 	-@$(WRITEABLE) $@
+# 	$(CONVERT2HAFAS) $> > $@
+# 	-@$(READONLY) $@
+
+.for i in u s
+$(i)bahnhof_bg:	$(i)bahnhof-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) $> > $@
+	perl -I../lib -I.. -MStrassen::Core -MObject::Iterate=iterate -e '\
+	$$s=Strassen->new(shift, UseLocalDirectives => 1);\
+	$$new_s=Strassen->new;\
+	iterate {\
+	    my $$attr = $$s->get_directive($$s->pos)->{attributes};\
+	    if ($$attr) {\
+		if ($$attr =~ s/\s+\((.*)\)//) {\
+	            $$_->[Strassen::NAME] .= ": $$1";\
+		}\
+	        $$_->[Strassen::CAT] = $$attr;\
+	        $$new_s->push($$_);\
+	    }\
+	} $$s;\
+	print $$new_s->as_string' $> > $@
 	-@$(READONLY) $@
+.endfor
 
 faehren: faehren-orig
 	-@$(WRITEABLE) $@

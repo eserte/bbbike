@@ -14,6 +14,10 @@ Legende:
 
 =over
 
+=item * (H5)
+
+The -lazy option seems to cause a big memory leak.
+
 =item * (M5)
 
 relation_gps-orig aus insert_points herausnehmen? Ueberdenken...
@@ -881,6 +885,16 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
 =item Tk::LayerEditor in einer nicht-DND-Version (für Windows, optional
   auch für X11)
 
+=item * (H3)
+
+Entweder nur einen LayerEditor erlauben oder Aenderungen in einem
+LayerEditor in alle anderen propagieren. Ausserdem: jeder Aufruf von
+plot* sollte alle LayerEditoren aktualisieren
+
+LayerEditor koennte weitere Spalten mit Funktionen enthalten, z.B.
+hidden/visible setzen vs. ganz loeschen, Reload, Ausschnitt anpassen,
+Strassenliste zeigen.
+
 =item Preferences:
   - Stellung des Kopfsteinpflaster-/Ampelzeit-Buttons (nicht so wichtig)
   - evtl. die Möglichkeit des Rücksetzens (nicht so wichtig)
@@ -1187,6 +1201,11 @@ Analyse einer Kreuzung:
 =E<gt> nicht unbedingt notwendig, die jetzige LE<ouml>sung reicht erst
 einmal aus...
 
+=item * (H3)
+
+Compressed data: use <long><long> (or <short><short>) for starting x,y
+value and then only the deltas as bytes <byte><byte>. Add additional
+points if delta exceeds 128/128 meters.
 
 =back
 
@@ -1242,6 +1261,10 @@ verwenden, aber die XML-Ausgabe ist als "experimentell" markiert.
 =head2 tkbabybike
 
 =over
+
+=item * (H3)
+
+Convert to be useable with the Tcl::Tk module (beginnings are done...)
 
 =item * (M4)
 

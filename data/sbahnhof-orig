@@ -1,169 +1,280 @@
-# $Id: sbahnhof-orig,v 3.1 2004/05/02 20:28:42 eserte Exp eserte $
+# $Id: sbahnhof-orig,v 3.2 2004/05/21 22:26:06 eserte Exp $
 Yorckstr.	SA 8280,9528
 Yorckstr. (Großgörschenstr.)	SA 7985,9576
+#: attrs bg
 Anhalter Bhf.	SA 8880,10853
 Potsdamer Platz	SA 8540,11480
 Unter den Linden	SA 8838,12259
 Friedrichstr.	SA 9181,12732
+#: attrs bg
 Oranienburger Str.	SA 9610,13258
 Lehrter Bahnhof (Hauptbahnhof)	SA 7996,13271
+#: attrs bg
 Nordbahnhof	SA 9264,14032
 Humboldthain	SA 8658,15442
 Gesundbrunnen	SA 9299,15930
+#: attrs bg
 Bornholmer Str.	SB 9860,16507
 Schönhauser Allee	SA 11064,15971
 Wollankstr.	SB 9472,17700
+#: attrs bg
 Pankow	SB 10796,17924
 Schönholz	SB 8692,18430
 Wilhelmsruh	SB 7452,19487
 Alt-Reinickendorf	SB 6583,19093
+#: attrs bg
 Wittenau	SB 5468,21190
 Waidmannslust	SB 4544,22215
+#: attrs bg
 Hermsdorf	SB 3651,23416
+#: attrs bg
 Frohnau	SB 2412,25061
+#: attrs bg
 Tegel	SB 2471,20090
 Eichborndamm	SB 4365,18997
 Karl-Bonhoeffer-Nervenklinik	SB 5171,19057
 Papestr.	SA 7806,7623
 Papestr. (Ringbahn)	SA 7862,7661
+#: attrs bg
 Schöneberg	SA 6954,8114
 Innsbrucker Platz	SA 6263,7956
+#: attrs bg
 Priesterweg	SB 7275,5975
 Attilastr.	SB 7615,4609
+#: attrs bg
 Südende	SB 7153,4673
 Marienfelde	SB 8614,1994
+#: attrs bf
 Buckower Chaussee	SB 9173,512
+#: attrs bg
 Schichauweg	SB 9660,-833
+#: attrs bf
 Lichtenrade	SB 10151,-2046
+#: attrs bg
 Lichterfelde-Ost	SB 5378,2507
+#: attrs bf
 Lankwitz	SB 6371,3590
 Friedenau	SB 6252,7147
+#: attrs bg
 Bundesplatz	SB 5404,7902
+#: attrs bg
 Feuerbachstr.	SB 5663,6312
+#: attrs bg
 Rathaus Steglitz	SB 5002,5412
+#: attrs bg
 Botanischer Garten	SB 3926,4532
+#: attrs bg
 Lichterfelde-West	SB 2994,3988
+#: attrs bg
 Sundgauer Str.	SB 1763,3213
+#: attrs bg
 Zehlendorf	SB 718,2601
 Mexikoplatz	SB -1079,3232
 Schlachtensee	SB -2275,3548
 Nikolassee (Wannseebahn)	SB -3684,2606
 Nikolassee	SB -3736,2625
+#: attrs bg
 Wannsee	SB -4677,1420
+#: attrs bg
 Griebnitzsee	SC -8060,-1637
 Grunewald	SB 806,9026
+#: attrs bg
 Messe Süd (Eichkamp)	SB 1208,10234
+#: attrs bg
 Heerstr.	SB 523,11223
+#: attrs bg
 Westkreuz	SA 2268,10413
+#: attrs bg
 Messe Nord/ICC (Witzleben)	SA 2189,11092
+#: attrs bg
 Halensee	SA 2706,9927
 Charlottenburg	SA 3468,10839
+#: attrs bg
 Savignyplatz	SA 4670,10930
+#: attrs bg
 Zoologischer Garten	SA 5520,11186
+#: attrs bg
 Tiergarten	SA 5814,11967
+#: attrs bg
 Bellevue	SA 6603,12609
+#: attrs bg
 Hackescher Markt	SA 10337,13012
+#: attrs bg
 Alexanderplatz	SA 10847,12890
 Jannowitzbrücke	SA 11398,12103
+#: attrs bg (auf der Ostseite große Aufzüge, leider häufig kaputt, nur von der Seite Am Ostbahnhof niveaufrei erreichar; auf der Westseite normale Aufzüge, nur von der Seite Erich-Steinfurth-Str. erreichbar)
 Ostbahnhof	SA 12609,11662
 Warschauer Str.	SA 13571,11234
 Ostkreuz	SA 14847,10892
 Rummelsburg	SB 15454,10711
 Nöldnerplatz	SB 15829,10932
 Betriebsbhf. Rummelsburg	SB 16877,9840
+#: attrs bg
 Karlshorst	SB 18801,8501
 Wuhlheide	SB 20705,7189
 Köpenick	SB 22530,6100
 Hirschgarten	SB 23963,6063
+#: attrs bg
 Friedrichshagen	SB 25489,6023
+#: attrs bg
 Rahnsdorf	SB 30020,5477
 Wilhelmshagen	SB 32189,4124
+#: attrs bg
 Erkner	SC 34237,2969
+#: attrs bf
 Ahrensfelde	SB 21199,18617
+#: attrs bf
 Mehrower Allee	SB 20458,17110
+#: attrs bf
 Raoul-Wallenberg-Str.	SB 20069,16334
 Marzahn	SB 19623,15444
+#: attrs bf
 Poelchaustr.	SB 19221,14465
+#: attrs bf
 Springpfuhl	SB 19367,13687
 Biesdorf	SB 20766,12124
 Friedrichsfelde-Ost	SB 18295,12195
+#: attrs bf
 Lichtenberg	SB 16796,11777
+#: attrs bf
 Wuhletal	SB 22121,12080
 Kaulsdorf	SB 23002,12073
+#: attrs bg
 Mahlsdorf	SB 24482,12106
+#: attrs bf
 Birkenstein	SC 27032,12557
 Gehrenseestr.	SB 18518,16904
+#: attrs bf
 Hohenschönhausen	SB 17607,18021
+#: attrs bf
 Wartenberg	SB 16997,18750
 Frankfurter Allee	SA 15205,12156
+#: attrs bg
 Storkower Str.	SA 14557,13168
+#: attrs bg
 Landsberger Allee	SA 13839,13778
+#: attrs bg
 Greifswalder Str.	SA 12732,14995
+#: attrs bg
 Prenzlauer Allee	SA 11818,15492
 Pankow-Heinersdorf	SB 12076,19329
 Blankenburg	SB 12918,20692
 Karow	SB 14608,23364
+#: attrs bf
 Buch	SB 16101,25760
+#: attrs bg
 Röntgental	SC 17626,27274
+#: attrs bg
 Treptower Park	SA 14325,9793
+#: attrs bg
 Plänterwald	SB 15174,8154
+#: attrs bg
 Köllnische Heide	SB 14882,7205
 Baumschulenweg	SB 16400,6864
+#: attrs bg
 Schöneweide	SB 17711,5556
 Betriebsbhf. Schöneweide	SB 18866,4489
+#: attrs bf
 Oberspree	SB 19583,5304
+#: attrs bf
 Spindlersfeld	SB 21258,4787
 Adlershof	SB 19944,3344
+#: attrs bg
 Grünau	SB 22166,986
+#: attrs bf
 Flughafen Berlin-Schönefeld	SC 18091,-1509
+#: attrs bf
 Grünbergallee	SB 20117,-578
+#: attrs bf
 Altglienicke	SB 21110,282
+#: attrs bg
 Heidelberger Platz	SA 4182,8142
+#: attrs bg
 Hohenzollerndamm	SA 3405,9059
+#: attrs bg
 Westend	SA 2256,12334
+#: attrs bg
 Jungfernheide	SA 3352,13752
+#: attrs bg
 Beusselstr.	SA 5299,14185
 Westhafen	SA 6329,14428
+#: attrs bg
 Wedding	SA 7842,15194
+#: attrs bg
 Olympiastadion	SB -612,11484
+#: attrs bg
 Pichelsberg	SB -1638,11411
+#: attrs bg
 Tempelhof	SA 9120,7225
+#: attrs bg
 Hermannstr.	SA 12309,6899
+#: attrs bg
 Neukölln	SA 13130,7132
+#: attrs bg
 Sonnenallee	SA 13999,7541
+#: attrs bg
 Mahlow	SC 11024,-4900
+#: attrs bf
 Blankenfelde	SC 11542,-7436
+#: attrs bg
 Babelsberg	SC -10526,-1959
+#: attrs bg
 Potsdam Hauptbahnhof	SC -12255,-2026
+#: attrs bg
 Hohen Neuendorf	SC 2120,29117
+#: attrs bg
 Birkenwerder	SC 2157,31399
+#: attrs bf
 Borgsdorf	SC 1317,34319
+#: attrs bf
 Lehnitz	SC 242,37345
+#: attrs bg
 Oranienburg	SC -614,38516
+#: attrs bf
 Mühlenbeck-Mönchsmühle	SC 8913,27766
+#: attrs bf
 Schönfließ	SC 5623,28868
+#: attrs bg
 Bergfelde b. Berlin	SC 4319,29271
 Zepernick	SC 18839,28512
+#: attrs bg
 Bernau-Friedenstal	SC 20972,29519
+#: attrs bg
 Bernau	SC 22763,30375
+#: attrs bf (problemlos)
 Strausberg Nord	SC 44329,21335
+#: attrs bf
 Strausberg Stadt	SC 43030,19819
+#: attrs bf
 Hegermühle	SC 41693,16809
+#: attrs bf (anscheinend problemlos)
 Strausberg	SC 39584,14715
+#: attrs bf
 Petershagen Nord	SC 36468,14282
+#: attrs bf
 Fredersdorf (bei Berlin)	SC 34676,13958
+#: attrs bf
 Neuenhagen (bei Berlin)	SC 30429,13224
 Hoppegarten (Mark)	SC 28721,12922
+#: attrs bf
 Königs Wusterhausen	SC 26456,-11862
 Wildau	SC 26578,-9111
+#: attrs bf
 Zeuthen	SC 26100,-6105
 Eichwalde	SC 25240,-3505
+#: attrs bg
 Osdorfer Str.	SB 4502,1316
+#: attrs bg
 Lichterfelde Süd	SB 4146,385
 # wird nicht mehr eröffnet: Teltow	S0 E5841,5733
 Teltow-Stadt	S0 1922,-1163
+#: attrs bf
 Schulzendorf (b. Tegel)	SB -537,22867
+#: attrs bg
 Heiligensee	SB -1623,24049
+#: attrs bg
 Hennigsdorf	SC -3329,25610
+#: attrs bg
 Stresow	SB -2901,13742
+#: attrs bg
 Spandau	SB -3643,14016
