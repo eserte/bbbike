@@ -343,10 +343,8 @@ sub diff_orig {
     require File::Basename;
     require Strassen::Util;
     my $origdir = "$Strassen::Util::tmpdir/orig";
-    # XXX nicht first_file, sondern aus allen Dateinamen (evtl. verkürzt)
-    # konstruieren
     my $first_file = (ref $self->{File} eq 'ARRAY'
-		      ? $self->{File}->[0] . "-multi"
+		      ? join("-", @{$self->{File}}) . "-multi"
 		      : $self->{File});
     if (!defined $self->{OrigFile}) {
 	$self->{OrigFile} =
