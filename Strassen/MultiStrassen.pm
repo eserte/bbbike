@@ -58,7 +58,7 @@ sub id {
 	return $self->{Id};
     }
     require File::Basename;
-    join("_", sort map { File::Basename::basename($_) } $self->file);
+    join("_", sort map { File::Basename::basename($_) } $self->dependent_files);
 }
 
 sub is_current {

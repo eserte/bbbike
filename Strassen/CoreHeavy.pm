@@ -91,7 +91,9 @@ sub new_with_removed_points {
 	    $new_s->push([$r->[NAME], $new_c, $r->[CAT]]);
 	}
     }
-    $new_s->{Id} = $self->id . "_removed_" . $to_remove->id;
+    #$new_s->{Id} = $self->id . "_removed_" . $to_remove->id;
+    $new_s->{DependentFiles} = [$self->dependent_files,
+				$to_remove->dependent_files];
     $new_s;
 }
 

@@ -70,7 +70,6 @@ sub AUTOLOAD {
 #   PreserveLineInfo
 sub new {
     my($class, $filename, %args) = @_;
-
     if (defined $filename &&
 	$filename =~ /\.(dbf|sbn|sbx|shp|shx)$/) {
 	require Strassen::ESRI;
@@ -360,15 +359,25 @@ sub get_hashref_name_to_pos {
 # Ausgabe des Source-Files
 sub file { shift->{File} }
 
+sub dependent_files {
+    my $self = shift;
+    if ($self->{DependentFiles}) {
+	@{ $self->{DependentFiles} };
+    } else {
+	$self->file;
+    }
+}
+
 # ID (für Caching)
 sub id {
     my $self = shift;
     if (defined $self->{Id}) {
 	return $self->{Id};
     }
-    if (defined $self->{File}) {
+    my @depfiles = $self->dependent_files;
+    if (@depfiles) {
 	require File::Basename;
-	File::Basename::basename($self->{File});
+	join("_", map { File::Basename::basename($_) } @depfiles);
     } else {
 	undef;
     }
