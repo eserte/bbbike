@@ -4038,12 +4038,16 @@ sub fix_coords {
 		$$varref = $ret->{Coord};
 	    } else {
 		# Try to enlarge search region
-		$q->param("scope", "region");
-		my $str = get_streets_rebuild_dependents(); # XXX enlarge to wideregion???
-		my $ret = $str->nearest_point($$varref, FullReturn => 1);
-		if ($ret) {
-		    $$varref = $ret->{Coord};
-		} else {
+	    TRY: {
+		    for my $scope ("region", "wideregion") {
+			$q->param("scope", $scope);
+			my $str = get_streets_rebuild_dependents();
+			my $ret = $str->nearest_point($$varref, FullReturn => 1);
+			if ($ret) {
+			    $$varref = $ret->{Coord};
+			    last TRY;
+			}
+		    }
 		    warn "Can't find nearest for $$varref. Maybe try to enlarge search space?";
 		}
 	    }
@@ -4053,13 +4057,17 @@ sub fix_coords {
 		$$varref = $nearest[0]->[0];
 	    } else {
 		# Try to enlarge search region
-		$q->param("scope", "region");
-		get_streets_rebuild_dependents(); # XXX enlarge to wideregion???
-		new_kreuzungen();
-		@nearest = $kr->nearest_loop_coord($$varref);
-		if (@nearest) {
-		    $$varref = $nearest[0];
-		} else {
+	    TRY: {
+		    for my $scope ("region", "wideregion") {
+			$q->param("scope", $scope);
+			get_streets_rebuild_dependents();
+			new_kreuzungen();
+			@nearest = $kr->nearest_loop_coord($$varref);
+			if (@nearest) {
+			    $$varref = $nearest[0];
+			    last TRY;
+			}
+		    }
 		    warn "Can't find nearest for $$varref. Either try to enlarge search space or add some grids for nearest_coord searching";
 		}
 	    }
