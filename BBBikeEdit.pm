@@ -3042,11 +3042,12 @@ sub temp_blockings_editor_parse_dates {
 
     my($new_start_time, $new_end_time, $prewarn_days, $rx_matched);
 
-    my $date_rx      = qr/(\d{1,2})\.(\d{1,2})\.((?:20)?\d{2})/;
-    my $time_rx      = qr/(\d{1,2})[\.:](\d{2})\s*Uhr/;
-    my $full_date_rx = qr/$date_rx\D+$time_rx/;
-    my $ab_rx        = qr/(?:ab[:\s]+|Dauer[:\s]+|vom[:\s]+)/;
-    my $bis_und_rx   = qr/(?:bis|und|\s*-\s*)(?:\s+(?:ca\.|voraussichtlich|zum))?/;
+    my $date_rx       = qr/(\d{1,2})\.(\d{1,2})\.((?:20)?\d{2})/;
+    my $short_date_rx = qr/([0-3]?[0-9])\.([0-1]?[0-9])\./;
+    my $time_rx       = qr/(\d{1,2})[\.:](\d{2})\s*Uhr/;
+    my $full_date_rx  = qr/$date_rx\D+$time_rx/;
+    my $ab_rx         = qr/(?:ab[:\s]+|Dauer[:\s]+|vom[:\s]+)/;
+    my $bis_und_rx    = qr/(?:bis|und|\s*-\s*)(?:\s+(?:ca\.|voraussichtlich|zum))?/;
 
     my($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2);
     # XXX use $full_date_rx etc. (after testing rxes!)
@@ -3073,6 +3074,11 @@ sub temp_blockings_editor_parse_dates {
 #	$new_start_time = time; # now
 #	$prewarn_days = 0;
 #	$new_end_time   = $date_time_to_epoch->(0,0,24,$d2,$m2,$y2);
+    } elsif (($d1,$m1, $d2,$m2) = $btxt =~ /$short_date_rx\s*$bis_und_rx\s*$short_date_rx/) {
+	my $this_year = (localtime)[5] + 1900;
+	$new_start_time = $date_time_to_epoch->(0,0,0,$d1,$m1,$this_year);
+	$new_end_time   = $date_time_to_epoch->(59,59,23,$d2,$m2,$this_year);
+	$rx_matched     = 8;
     } else {
 	if (($d1,$m1,$y1, $H1,$M1) = $btxt =~
 	    /$ab_rx$date_rx(?:\D+$time_rx)?/) {

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.29 2003/12/05 23:27:28 eserte Exp eserte $
+# $Id: Makefile,v 1.30 2004/04/30 06:47:42 eserte Exp $
 #
 
 # Targets:
@@ -34,7 +34,7 @@ DEPLOY_TARGETS=		prepare-bbbike-data \
 DEPLOY_LOCAL_TARGETS=	${DEPLOY_TARGETS:S/prepare-mapserver-dist/prepare-mapserver-local-dist/:S/rsync//:S/test$/test-local/:S/test-on-remote/test-local/}
 
 RSYNC_PROG?=	rsync
-RSYNC_ARGS=	-e ssh -Pvz -r -t --links --exclude-from .rsync.exclude
+RSYNC_ARGS=	-e ssh -Pvz -r -t --links --copy-unsafe-links --exclude-from .rsync.exclude
 RSYNC_DEST?=	${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_HOST}:${BBBIKE_RADZEIT_APACHE_DIR}
 RSYNC_SRCDEST?=	. ${RSYNC_DEST}
 

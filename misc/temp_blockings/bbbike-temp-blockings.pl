@@ -275,4 +275,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Spandauer Straße, zwischen Karl-Liebknecht-Straße und Mühlendamm, in beiden Richtungen Straße gesperrt. Veranstaltung. Dauer: 01.05.2004, 05.00 Uhr bis 24.00 Uhr',
        type  => 'gesperrt',
      },
+     { from  => 1083189600, # 2004-04-29 00:00
+       until => 1083535199, # 2004-05-02 23:59
+       file  => 'muellerstr.bbd',
+       text  => 'NEW: Müllerstr. (Wedding) in beiden Richtungen, zwischen Seestr. und Leopoldplatz Veranstaltung, Straßenfest (vom 30.04. - 02.05.)',
+       type  => 'gesperrt',
+     },
     );
