@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.16 2004/06/02 00:36:30 eserte Exp $
+# $Id: Makefile,v 1.17 2004/06/03 07:42:34 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -95,9 +95,11 @@ IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
 .if ${TARGET} == "local"
 BBBIKE_HTML_RELURL=	/~eserte/bbbike/html				# ***
 BBBIKE_CGI_RELURL=	/~eserte/bbbike/cgi				# ***
+BBBIKE_IMAGES_RELURL=	/~eserte/bbbike/images				# ***
 .elif ${TARGET} == "devpc01"
 BBBIKE_HTML_RELURL=	/bbbike/html					# ***
 BBBIKE_CGI_RELURL=	/bbbike/cgi					# ***
+BBBIKE_IMAGES_RELURL=	/bbbike/images					# ***
 .endif
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 # Which kind of images should be generated:
@@ -119,6 +121,7 @@ MAPSERVER_PROG_URL=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
 IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
 BBBIKE_HTML_RELURL=	/~eserte/bbbike/html
 BBBIKE_CGI_RELURL=	/~eserte/bbbike/cgi
+BBBIKE_IMAGES_RELURL=	/~eserte/bbbike/images
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 IMAGE_SUFFIX=		png
 FONTS_LIST=		fonts-spiff.list
@@ -139,6 +142,7 @@ MAPSERVER_PROG_URL=	$(BBBIKE_MAPSERVER_URL)
 IMAGE_DIR=		$(RADZEIT_APACHE_DIR)/BBBike/images
 BBBIKE_HTML_RELURL=	/BBBike/html
 BBBIKE_CGI_RELURL=	/cgi-bin
+BBBIKE_IMAGES_RELURL=	/BBBike/images
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 IMAGE_SUFFIX=		png
 .if ${TARGET} == "radzeit"
@@ -168,6 +172,7 @@ ALL_TPL_DEFINES=\
 	--define BBBIKE_URL="$(BBBIKE_URL)" \
 	--define BBBIKE_URL_ENC=`perl -MURI::Escape -e 'print uri_escape(shift)' $(BBBIKE_URL)` \
 	--define BBBIKE_CGI_RELURL="$(BBBIKE_CGI_RELURL)" \
+	--define BBBIKE_IMAGES_RELURL="$(BBBIKE_IMAGES_RELURL)" \
 	--define IMAGE_SUFFIX="$(IMAGE_SUFFIX)" \
 	--define FONTS_LIST="$(FONTS_LIST)" \
 	--define WWW_USER="$(WWW_USER)" \
@@ -204,16 +209,12 @@ DISTFILES=\
 	query_header2.html \
 
 
-# STERNFARTEN=	2003 2004
-
-# DISTFILES_STERNFAHRT=\
-# 	sternfahrt@YEAR@.html-tpl \
-# 	sternfahrt@YEAR@.map-tpl \
-# 	sternfahrt@YEAR@_init.html-tpl
-
-# .for year in ${STERNFARTEN}
-# DISTFILES+=	${DISTFILES_STERNFAHRT:S/@YEAR@/${year}/:S/^/sternfahrt${year}\//}
-# .endfor
+#XXX should not hardcode the year
+DISTFILES_STERNFAHRT_2004=\
+	sternfahrt2004/sternfahrt2004.html-tpl \
+	sternfahrt2004/sternfahrt2004_init.html-tpl \
+	sternfahrt2004/after_strassen_annotations.inc \
+	sternfahrt2004/after_marker.inc
 
 RADZEIT_DIST_DIR=/tmp/radzeit_mapserver_dist
 SPIFF_DIST_DIR=/home/e/eserte/src/bbbike/mapserver/brb-spiff
@@ -356,6 +357,23 @@ httpd.conf:	httpd.conf-tpl Makefile
 ######################################################################
 # dists
 
+# this obsoletes dist-radzeit and dist-radzeit.herceg.de
+#XXX remove the sternfahrt2004 productions to own rule
+dist-any:	# build-all
+	[ ! -d $(RADZEIT_DIST_DIR) ] && mkdir $(RADZEIT_DIST_DIR) || true
+	chmod ugo+rx $(RADZEIT_DIST_DIR)
+	cp -pf $(DISTFILES) $(FONTS_LIST) $(RADZEIT_DIST_DIR)
+	-mkdir $(RADZEIT_DIST_DIR)/sternfahrt2004
+	chmod ugo+rx $(RADZEIT_DIST_DIR)/sternfahrt2004
+	cp -pf $(DISTFILES_STERNFAHRT_2004) $(RADZEIT_DIST_DIR)/sternfahrt2004
+	cp -pR data $(RADZEIT_DIST_DIR)
+	cp -pR graphics $(RADZEIT_DIST_DIR)
+	-mkdir $(RADZEIT_DIST_DIR)/tmp
+	chmod ugo+rx $(RADZEIT_DIST_DIR)/tmp
+	cd $(RADZEIT_DIST_DIR) && \
+	    $(MAKE) $(MAKEFLAGS) TARGET=$(TARGET) all sternfahrt2004
+
+#XXX obsolete
 dist-radzeit:	# build-all
 	[ ${TARGET} = "radzeit" ]
 	[ ! -d $(RADZEIT_DIST_DIR) ] && mkdir $(RADZEIT_DIST_DIR) || true
@@ -367,6 +385,7 @@ dist-radzeit:	# build-all
 	chmod ugo+rx $(RADZEIT_DIST_DIR)/tmp
 	cd $(RADZEIT_DIST_DIR) && $(MAKE) $(MAKEFLAGS) TARGET=radzeit
 
+#XXX obsolete
 dist-radzeit.herceg.de:	# build-all
 	[ ${TARGET} = "radzeit.herceg.de" ]
 	[ ! -d $(RADZEIT_DIST_DIR) ] && mkdir $(RADZEIT_DIST_DIR) || true

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.32 2004/05/08 00:55:06 eserte Exp $
+# $Id: Makefile,v 1.33 2004/06/02 22:45:52 eserte Exp eserte $
 #
 
 # Targets:
@@ -144,8 +144,8 @@ test-makefile:
 prepare-bbbike-data:
 	$(BBBIKE_ROOT_DIR)/miscsrc/check_bbbike_temp_blockings
 	cd $(BBBIKE_ROOT_DIR)/data && ${MAKE} all
-	[ "${NO_SLOW_CHECKS}" == "yes" ] && true || (cd $(BBBIKE_ROOT_DIR)/data && ${MAKE} slow-checks)
-	[ "${NO_DATA_CORRECTED}" == "yes" ] && true || (cd $(BBBIKE_ROOT_DIR)/data_corrected && ${MAKE} init all mapfiles)
+	[ "${NO_SLOW_CHECKS}" = "yes" ] && true || (cd $(BBBIKE_ROOT_DIR)/data && ${MAKE} slow-checks)
+	[ "${NO_DATA_CORRECTED}" = "yes" ] && true || (cd $(BBBIKE_ROOT_DIR)/data_corrected && ${MAKE} init all mapfiles)
 #XXX .if "${DATA_DIR}" != "data" && "${DATA_DIR}" != "data_corrected"
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE}
 #XXX .endif
@@ -185,12 +185,13 @@ prepare-bbbike-dist-prog-bbbike:
 	    ${CURDIR}/BBBike/miscsrc/
 	[ -d ${CURDIR}/BBBike/t ] || \
 	    mkdir ${CURDIR}/BBBike/t
-	cp -pf ${BBBIKE_ROOT_DIR}/t/cgihead.t \
-	       ${BBBIKE_ROOT_DIR}/t/cgi.t     \
+	cp -pf ${BBBIKE_ROOT_DIR}/t/cgihead.t 		\
+	       ${BBBIKE_ROOT_DIR}/t/cgi-mechanize.t	\
+	       ${BBBIKE_ROOT_DIR}/t/cgi.t     		\
 	       ${BBBIKE_ROOT_DIR}/t/wapcgi.t  ${CURDIR}/BBBike/t
 
 prepare-bbbike-dist-prog-stadtplan:
-	[ "${NO_BERLINER_STADTPLAN}" == "yes" ] && true || (cp -pf ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com/lib/BBBikeDraw/BerlinerStadtplan.pm ${CURDIR}/BBBike/BBBikeDraw/)
+	[ "${NO_BERLINER_STADTPLAN}" = "yes" ] && true || (cp -pf ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com/lib/BBBikeDraw/BerlinerStadtplan.pm ${CURDIR}/BBBike/BBBikeDraw/)
 
 prepare-bbbike-dist-data:
 	@echo "XXX The following command will fail because 'RCS' cannot be copied"
@@ -224,14 +225,14 @@ prepare-mapserver-dist-pre:
 
 prepare-mapserver-dist-main:
 	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
-	    ${MAKE} dist-radzeit
+	    ${MAKE} dist-any TARGET=radzeit
 	cp -Rpf /tmp/radzeit_mapserver_dist/* ${CURDIR}/htdocs/mapserver/brb/
 	rm -f ${CURDIR}/.not_rsyncable
 
 prepare-mapserver-dist-local-main:
 	touch ${CURDIR}/.not_rsyncable
 	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
-	    ${MAKE} dist-radzeit.herceg.de
+	    ${MAKE} dist-any TARGET=radzeit.herceg.de
 	cp -Rpf /tmp/radzeit_mapserver_dist/* ${CURDIR}/htdocs/mapserver/brb/
 	chmod 777 ${CURDIR}/htdocs/mapserver/brb
 	chmod 777 ${CURDIR}/htdocs/mapserver/brb/tmp
@@ -270,6 +271,7 @@ test-on-remote:
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		cgihead.t \
+		cgi-mechanize.t \
 		cgi.t \
 		wapcgi.t \
 	'
@@ -283,6 +285,7 @@ test-local:
 	BBBIKE_TEST_HTMLDIR=${LOCAL_HTML_URL} \
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
 		cgihead.t \
+		cgi-mechanize.t \
 		cgi.t \
 		wapcgi.t
 

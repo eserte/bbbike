@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: treffpunkte.cgi,v 1.1 2004/06/01 23:13:15 eserte Exp $
+# $Id: treffpunkte.cgi,v 1.2 2004/06/02 22:46:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.

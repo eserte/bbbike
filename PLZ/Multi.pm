@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Multi.pm,v 1.8 2003/12/31 14:17:29 eserte Exp $
+# $Id: Multi.pm,v 1.9 2004/06/03 07:42:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package PLZ::Multi;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 use Getopt::Long qw(GetOptions);
 BEGIN {
@@ -36,6 +36,7 @@ use PLZ;
 use Strassen::Core;
 use Strassen::Util;
 
+#XXX caching funktioniert anscheinend nicht richtig!
 sub new {
     my($class, @files_and_args) = @_;
     local @ARGV = @files_and_args;

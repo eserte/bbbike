@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.24 2004/05/10 07:03:09 eserte Exp $
+# $Id: cgi.t,v 1.25 2004/06/03 07:42:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004 Slaven Rezic. All rights reserved.
@@ -55,7 +55,7 @@ if (!GetOptions("cgiurl=s" => sub {
 		"v!" => \$v,
 		"skip-mapserver!" => \$skip{mapserver},
 	       )) {
-    die "usage: $0 [-cgiurl url] [-fast] [-ortsuche] [-display] [-v] [-skip-mapserver]";
+    die "usage: $0 [-cgiurl url] [-fast] [-ortsuche] [-display] [-v] [-skip-mapserver] [-xxx]";
 }
 
 if (!@urls) {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.4 2003/11/16 21:19:38 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.6 2004/06/02 22:47:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -21,6 +21,10 @@ BEGIN {
     }
 }
 
+my $do_xxx;
+
+use Getopt::Long;
+
 my $cgiurl;
 if (defined $ENV{BBBIKE_TEST_CGIURL}) {
     $cgiurl = $ENV{BBBIKE_TEST_CGIURL};
@@ -30,24 +34,39 @@ if (defined $ENV{BBBIKE_TEST_CGIURL}) {
     $cgiurl = 'http://www/bbbike/cgi/bbbike.cgi';
 }
 
+if (!GetOptions("cgiurl=s" => \$cgiurl,
+		"xxx" => \$do_xxx,
+	       )) {
+    die "usage: $0 [-cgiurl url] [-xxx]";
+}
+
+if ($do_xxx) {
+    goto XXX;
+}
+
+######################################################################
+# general testing
+
+{
+
 my $agent = WWW::Mechanize->new();
-my $formfiller = WWW::Mechanize::FormFiller->new();
+#XXX my $formfiller = WWW::Mechanize::FormFiller->new();
 $agent->env_proxy();
 
 $agent->get($cgiurl);
-like($agent->content, qr/BBBike/);
+like($agent->content, qr/BBBike/, "Startpage $cgiurl is not empty");
 
 $agent->form(1) if $agent->forms and scalar @{$agent->forms};
 { local $^W; $agent->current_form->value('start', 'duden'); };
 { local $^W; $agent->current_form->value('ziel', 'sonntag'); };
 $agent->submit();
 
-like($agent->content, qr/Kreuzung/);
+like($agent->content, qr/Kreuzung/, "On the crossing page");
 { local $^W; $agent->current_form->value('startc', '8982,8781'); };
 { local $^W; $agent->current_form->value('zielc', '14598,11245'); };
 $agent->submit();
 
-like($agent->content, qr/Route/);
+like($agent->content, qr/Route/, "On the route result page");
 $agent->submit();
 
 #like($agent->content_type, qr{^image/}); # XXX how test?
@@ -61,21 +80,21 @@ $agent->submit();
 
 $agent->follow('Start beibehalten');
 
-like($agent->content, qr/BBBike/);
-like($agent->content, qr/Sonntagstr./);
+like($agent->content, qr/BBBike/, "On the startpage again ...");
+like($agent->content, qr/Sonntagstr./, "... with the start street preserved");
 
 { local $^W; $agent->current_form->value('via', 'Heerstr'); };
 { local $^W; $agent->current_form->value('ziel', 'Adlergestell'); };
 $agent->submit();
 
-like($agent->content, qr/genaue/i);
+like($agent->content, qr/genaue/i, "expecting multiple matches");
 $agent->submit();
 
-like($agent->content, qr/Kreuzung/);
+like($agent->content, qr/Kreuzung/, "On the crossing page");
 { local $^W; $agent->current_form->value('zielc', '27342,-3023'); };
 $agent->submit();
 
-like($agent->content, qr/Route/);
+like($agent->content, qr/Route/, "On the route result page");
 {
     my $formnr = (($agent->forms)[0]->attr("name") =~ /Ausweichroute/ ? 3 : 2);
     $agent->form($formnr);
@@ -93,5 +112,128 @@ is($@, "", "setting pref_green ok");
 $agent->submit();
 
 like($agent->content, qr/Route/);
+
+}
+
+######################################################################
+# test for Kaiser-Friedrich-Str. (Potsdam) problem
+
+XXX:
+{
+
+my $agent = WWW::Mechanize->new;
+#XXX my $formfiller = WWW::Mechanize::FormFiller->new();
+$agent->env_proxy;
+
+$agent->get($cgiurl);
+$agent->form("BBBikeForm");
+{ local $^W; $agent->current_form->value('start', 'kaiser-friedrich-str'); };
+{ local $^W; $agent->current_form->value('ziel', 'helmholtzstr'); };
+$agent->submit();
+
+like($agent->content, qr/genaue.*startstr.*ausw/i, "Start is ambigous");
+like($agent->content, qr/genaue.*zielstr.*ausw/i,  "Goal is ambigous");
+
+$agent->form("BBBikeForm");
+
+my $form = $agent->current_form;
+my $input = $form->find_input("start2");
+ok($input, "start2 input exists");
+TRY: {
+    my $testname = "Potsdam among start alternatives";
+    for my $value ($input->possible_values) {
+	if ($value =~ /potsdam/i) {
+	    $input->value($value);
+	    pass($testname);
+	    last TRY;
+	}
+    }
+    fail($testname);
+}
+
+$input = $form->find_input("ziel2");
+ok($input, "ziel2 input exists");
+TRY: {
+    my $testname = "Potsdam among goal alternatives";
+    for my $value ($input->possible_values) {
+	if ($value =~ /potsdam/i) {
+	    $input->value($value);
+	    pass($testname);
+	    last TRY;
+	}
+    }
+    fail($testname);
+}
+
+$agent->submit;
+
+like($agent->content, qr/Kuhfortdamm/);
+like($agent->content, qr/Mangerstr/);
+
+}
+
+######################################################################
+# test for Am Neuen Palais
+
+{
+
+my $agent = WWW::Mechanize->new;
+#XXX my $formfiller = WWW::Mechanize::FormFiller->new();
+$agent->env_proxy;
+
+$agent->get($cgiurl);
+$agent->form("BBBikeForm");
+{ local $^W; $agent->current_form->value('start', 'am neuen palais'); };
+{ local $^W; $agent->current_form->value('ziel', 'dudenstr'); };
+$agent->submit();
+
+like($agent->content, qr/genaue.*kreuzung.*angeben/i, "Crossings page");
+like($agent->content, qr/\QAm Neuen Palais (F2.2) (Potsdam)/i,  "Correct start resolution");
+
+}
+
+######################################################################
+# A street in Potsdam but not in "landstrassen"
+
+{
+
+my $agent = WWW::Mechanize->new;
+#XXX my $formfiller = WWW::Mechanize::FormFiller->new();
+$agent->env_proxy;
+
+$agent->get($cgiurl);
+$agent->form("BBBikeForm");
+{ local $^W; $agent->current_form->value('start', 'Petri Dank'); };
+{ local $^W; $agent->current_form->value('ziel', 'Römische Bäder'); };
+$agent->submit();
+
+like($agent->content, qr{\QFeuerbachstr. (Potsdam)/Sellostr. (Potsdam)}i, "Correct start resolution");
+like($agent->content, qr{\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)}i,  "Correct goal resolution");
+
+}
+
+######################################################################
+# Test custom blockings
+
+# XXX:
+# {
+
+# my $agent = WWW::Mechanize->new;
+# #XXX my $formfiller = WWW::Mechanize::FormFiller->new();
+# $agent->env_proxy;
+
+# $agent->get($cgiurl);
+# $agent->form("BBBikeForm");
+# { local $^W; $agent->current_form->value('start', 'gitschiner str'); };
+# { local $^W; $agent->current_form->value('ziel', 'warschauer str'); };
+# $agent->submit();
+
+# $agent->submit;
+
+# like($agent->content, qr{Oberbaumbr.*cke}, "Route contains Oberbaumbrücke");
+
+# $agent->back;
+# $agent->current_form->value(
+# }
 
 __END__
