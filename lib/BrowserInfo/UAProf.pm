@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: UAProf.pm,v 1.3 2005/01/02 18:16:47 eserte Exp $
+# $Id: UAProf.pm,v 1.4 2005/01/20 21:54:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BrowserInfo::UAProf;
 
 use strict;
 use vars qw($VERSION $DEBUG);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($class, %args) = @_;
@@ -121,16 +121,43 @@ sub cache_and_get {
 
 sub parse_xml {
     my($self, $cap) = @_;
-    use XML::Parser;
-    my $p = XML::Parser->new
-	(Handlers => {Start => sub { $self->p_start_tag(@_) },
-		      End   => sub { $self->p_end_tag(@_) },
-		      Char  => sub { $self->p_char(@_) },
-		     }
-	);
     $self->{p_path} = [];
     $self->{p_look_for} = $cap;
-    $p->parsefile($self->{uaproffile});
+    if (eval { require XML::Parser; 1 }) {
+	my $p = XML::Parser->new
+	    (Handlers => {Start => sub { $self->p_start_tag(@_) },
+			  End   => sub { $self->p_end_tag(@_) },
+			  Char  => sub { $self->p_char(@_) },
+			 }
+	    );
+	$p->parsefile($self->{uaproffile});
+    } else {
+	require XML::SAX::PurePerl;
+	{
+	    package BrowserInfo::UAProf::SAXHandler;
+	    sub new {
+		my $class = shift;
+		bless { @_ }, $class;
+	    }
+	    sub start_element {
+		my($self, $el) = @_;
+		$self->{P}->p_start_tag(undef, $el->{Name}, %{$el->{Attributes}});
+	    }
+	    sub end_element {
+		my($self, $el) = @_;
+		$self->{P}->p_end_tag(undef, $el->{Name});
+	    }
+	    sub characters {
+		my($self, $el) = @_;
+		$self->{P}->p_char(undef, $el->{Data});
+	    }
+	}
+	my $p = XML::SAX::PurePerl->new
+	    (Handler => BrowserInfo::UAProf::SAXHandler->new(P => $self));
+	open(UAPROF, $self->{uaproffile}) or die $!;
+	$p->parse_file(\*UAPROF);
+	close UAPROF;
+    }
 }
 
 sub p_start_tag {
@@ -144,8 +171,9 @@ sub p_start_tag {
 sub p_end_tag {
     my($self, $expat, $elem) = @_;
     my $char = $self->{p_char};
-    warn "$char\n" if $DEBUG;
+    warn "$elem $char\n" if $DEBUG;
     if ($self->{p_path}[-1]{element} eq 'prf:' . $self->{p_look_for}) {
+	warn "got it!\n" if $DEBUG;
 	$self->{cached}{$self->{p_look_for}} = $char;
     }
     pop @{ $self->{p_path} };

@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.105 2004/12/30 01:50:29 eserte Exp $
+# $Id: Makefile.PL,v 1.106 2005/01/20 22:40:45 eserte Exp $
 
 use 5.005;
 
@@ -33,10 +33,10 @@ use constant REQTABLE_LONGDESC=> 5;
 # Table of prerequisites:
 # Name, Version, OS, Req/CoReq, description token, long description
 @req_table =
- ([qw/Tk		402.002	all	1	gui/,
+ ([qw/Tk		800.000	all	1	gui/,
    { de => 'das absolute Muss!',
      en => 'this one is really necessary!'
-   }],
+   }], # für Tk 402 sollte man bbbike 2.xx verwenden
   #in dist: [qw/Tk::Getopt	0.40	all	0	gui/],
   #in dist: [qw/Tk::ContextHelp	0	unix	0	gui/],
   [qw/Tk::FireButton	0	all	0	gui/,
@@ -64,6 +64,8 @@ use constant REQTABLE_LONGDESC=> 5;
    'CPAN.pm kann XML::SAX nicht über XML::Simple automatisch installieren'],
   [qw/XML::Simple	0	all	0	cgi/,
    'optional für XML-Dumps der BBBike-Route'],
+  [qw/XML::Parser	0	all	0	cgi/,
+   'optional für UAProf parsing (alternative wäre XML::SAX::PurePerl)'],
   [qw/YAML	0	all	0	cgi/,
    'optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings'],
 
@@ -116,7 +118,7 @@ use constant REQTABLE_LONGDESC=> 5;
   [qw/File::ReadBackwards 0	all	0	devel/,
    'LogTracker plugin, Edititeren'],
   [qw/Date::Pcalc	0	all	0	devel/,
-   'LogTracker plugin'],
+   'LogTracker plugin (Alternative wäre Date::Calc)'],
   [qw/XBase		0	all	0	devel/,
    'Erzeugen der Mapserver- oder anderer ESRI-Dateien'],
   [qw/IPC::Run		0	all	0	base/,
@@ -129,6 +131,8 @@ use constant REQTABLE_LONGDESC=> 5;
   [qw/Image::Info	0	all	0	test/],
   [qw/Test::More	0	all	0	test/],
   [qw/Test::Differences	0	all	0	test/],
+  [qw/WWW::Mechanize	0	all	0	test/,
+   'Für Testen des CGI-Interfaces'],
  );
 
 # EXE corequisites ####################################################

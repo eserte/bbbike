@@ -1,0 +1,118 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: polizei-faxabruf-diff.pl,v 1.3 2005/01/20 22:36:59 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2004, 2005 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+
+my $old_file = shift || "/home/e/eserte/cache/misc/polizei-faxabruf.php~";
+my $new_file = shift || "/home/e/eserte/cache/misc/polizei-faxabruf.php";
+
+my @events_old = parse_table($old_file);
+my @events_new = parse_table($new_file);
+
+sub parse_table {
+    my $file = shift;
+    use HTML::TableExtract;
+    my $te = new HTML::TableExtract();
+    my $html_string = do { local $/; open(FH, $file) or die "$file: $!"; <FH> }; close FH;
+    $te->parse($html_string);
+
+    my @events;
+    my $state;
+ PARSE_TABLE:
+    foreach my $ts ($te->table_states) {
+	foreach my $row ($ts->rows) {
+	    last PARSE_TABLE
+		if (grep { /Verkehrsbehinderungen aufgelöst/ } @$row);
+	    if (grep { /Kurzfristige Verkehrsbehinderungen/ } @$row) {
+		$state = "kurzfristig";
+		next;
+	    }
+	    if (grep { /Langfristige Verkehrsbehinderungen/ } @$row) {
+		$state = "langfristig";
+		next;
+	    }
+	    for (@$row) { s/^\s+//; s/\s+$//; s/\s+/ /g; }
+	    next
+		if $row->[1] eq "";
+	    next
+		if $row->[1] =~ /^A\d+/; # Autobahnen interessieren nicht
+	    push @events, {
+			   Date => $row->[0],
+			   Description => $row->[1],
+			   State => $state,
+			  };
+	}
+    }
+    @events;
+}
+
+#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@events_old, \@events_new],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+
+use String::Similarity;
+my @similarity;
+my @flat;
+for my $i (0 .. $#events_old) {
+    for my $j (0 .. $#events_new) {
+	$similarity[$i][$j] = similarity $events_old[$i]->{Description}, $events_new[$j]->{Description};
+	push @flat, [$similarity[$i][$j], $i, $j];
+    }
+}
+
+use Text::Wrap;
+@flat = sort { $b->[0] <=> $a->[0] } @flat;
+my %seen_old;
+my %seen_new;
+print "Changed:\n";
+for (@flat) {
+    my($factor, $index_old, $index_new) = @$_;
+    next if $seen_old{$index_old} || $seen_new{$index_new};
+    if ($factor < 1) {
+	print wrap("", "", as_string($index_old, "old")), "\n";
+	print "-"x10, sprintf("Similarity: %.3f", $factor), "\n";
+	print wrap("", "", as_string($index_new, "new")), "\n";
+	print "-"x70, "\n";
+    }
+    $seen_old{$index_old}++;
+    $seen_new{$index_new}++;
+}
+
+print "Removed:\n";
+for my $i (0 .. $#events_old) {
+    next if $seen_old{$i};
+    print wrap("", "", as_string($i, "old")), "\n";
+    print "-"x70, "\n";
+}
+
+print "Added:\n";
+for my $i (0 .. $#events_new) {
+    next if $seen_new{$i};
+    print wrap("", "", as_string($i, "new")), "\n";
+    print "-"x70, "\n";
+}
+
+sub as_string {
+    my($i, $type) = @_;
+    my $event;
+    if ($type eq 'old') {
+	$event = $events_old[$i];
+    } else {
+	$event = $events_new[$i];
+    }
+    $event->{Date} .
+	($event->{State} eq 'kurzfristig' ? " (" . $event->{State} . ")" : "") .
+	    ":\t" . $event->{Description};
+}
+
+__END__
