@@ -1004,7 +1004,7 @@ userdel	1 12442,20805 12030,20490
 EOF
      },
      { from  => 1098309600, # 2004-10-21 00:00
-       until => 1101596400, # 2004-11-28 00:00
+       until => 1099427095, # 1101596400, 2004-11-28 00:00 => undef
        text  => 'B 109; (Templin-Zehdenick); Bahnübergang südwestl.Ortsausg.Hammelspring Gleisbauarbeiten Vollsperrung 22.10.2004-27.11.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,

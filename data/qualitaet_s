@@ -18,7 +18,7 @@ B96a: Radweg Richtung N, OK	Q0 9228,23643 9146,23843 8984,24078 8659,24959 8493,
 Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15586,27150 15231,26587 14859,26029 14183,25020
 Hobrechtsfelder Chaussee (ab Kurve): schlechtes Kopfsteinpflaster, 13 km/h	Q3 15586,27150 15709,27984 15757,28054
 Wisbyer Str.: m‰ﬂiges Kopfsteinpflaster	Q2 11033,16464 11397,16405 11688,16365 11727,16358
-Weserstr.: Kopfsteinpflaster, schmale Radwege	Q1 11888,9203 11993,9211 12074,9217 12148,9209 12180,9193 12322,9124 12480,9037 12590,8977 12740,8862 13029,8632 13217,8493 13384,8354 13566,8212 13724,8090
+Weserstr.: Kopfsteinpflaster, schmale Radwege	Q1 11888,9203 11993,9211 12074,9217 12148,9209 12180,9193 12322,9124 12480,9037 12590,8977 12740,8862 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Stuttgarter Str.: m‰ﬂiger Asphalt	Q1 13663,8011 13510,8138 13331,8283 13166,8423
 Brockenstr.: Kopfsteinpflaster	Q2 13575,8593 13687,8734
 Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz mˆglich	Q2 13687,8734 13778,8846
@@ -46,7 +46,7 @@ Graefestr.: Kopfsteinpflaster, teils OK, teils uneben	Q1 11266,9496 11306,9578 1
 Graefestr.: m‰ﬂiges Kopfsteinpflaster	Q2 11507,10004 11411,9810
 Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11512,10105 11735,10022 11946,9913 12119,9823 12276,9745 12439,9660 12591,9584 12712,9523
 Maybachufer: Kopfsteinpflaster	Q2 11543,10015 11880,9874 12093,9783 12257,9703 12416,9625 12569,9547 12785,9443 12841,9368 12870,9366
-Innstr.: Kopfsteinpflaster (m‰ﬂig bis schlecht)	Q2 13107,8343 13166,8423 13217,8493 13301,8606 13366,8694
+Innstr.: Kopfsteinpflaster (m‰ﬂig bis schlecht)	Q2 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 Elsenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13402,8741 13504,8882 13657,9063
 Herrfurthstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11979,8014 11823,7980 11757,7965
 Herrfurthstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11647,7940 11565,7921 11472,7899
@@ -655,7 +655,7 @@ Malchower Str.: m‰ﬂig geeignet	Q2 12841,18157 13163,18149 13374,18134 13631,1804
 Grumbkowstr.: m‰ﬂig geeignet	Q2 11297,20686 11437,20341 11584,20058 11756,19694
 Schillerstr.: m‰ﬂig geeignet	Q2 10082,20518 10323,20578 10547,20644 10642,20698 10743,20764
 Friesenstr. (Niederschˆnhausen): m‰ﬂig geeignet	Q2 8833,19259 9475,18862
-Beuthstr.: m‰ﬂig geeignet	Q2 10830,20280 10452,20109 10309,20032 10148,19999
+Beuthstr.: m‰ﬂig geeignet	Q2 10830,20280 10653,20200 10452,20109 10309,20032 10148,19999
 Platanenstr.: m‰ﬂig geeignet	Q2 9355,19789 9177,19745 8977,19694 8730,19555 8496,19410
 Feldstr. (Wedding): Kopfsteinpflaster	Q2 9048,14681 9112,14771
 Schererstr.: m‰ﬂig geeignet	Q2 7786,15785 7960,15801
@@ -930,6 +930,11 @@ R¸tlistr.: Kopfsteinpflaster	Q2 12480,9037 12496,9053 12565,9200 12620,9293
 (Am Flutgraben): Verbundsteinpflaster	Q1 13333,9929 13506,10146
 (Am Flutgraben): Kopfsteinpflaster	Q2 13506,10146 13540,10190
 Schleusenufer: Kopfsteinpflaster	Q2 13493,10234 13628,10396
+Schmollerplatz: Beton	Q1 13263,9496 13293,9468
+Wildenbruchplatz: schlechtes bis m‰ﬂiges Kopfsteinpflaster	Q3 13135,8766 13218,8693 13314,8624
+Finowstr. (Neukˆlln): Kopfsteinpflaster	Q2 13218,8693 13171,8621 13124,8562
+Kleine Innstr.: Asphalt	Q0 13171,8621 13262,8554
+Erlanger Str.: Kopfsteinpflaster	Q2 12309,8487 12183,8538
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
 Sch¸tzallee: m‰ﬂiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfl‰che	Q2 2230,3823 1952,3864 1677,3885
 Riemeisterstr.: m‰ﬂiges Kopfsteinpflaster	Q2 373,4816 319,4906 168,5092 103,5123
@@ -1039,3 +1044,6 @@ Wolliner Str.: Asphalt	Q0 10405,14425 10320,14608 10242,14765 10176,14896 10022,
 Am Pichelssee: Kopfsteinpflaster	Q2 -3370,11425 -3528,11100 -3537,10903
 Haderslebener Str.: m‰ﬂiges Kopfsteinpflaster	Q2 3900,6415 3876,6122
 Brentanostr.: schlechtes Kopfsteinpflaster	Q3 4096,6632 4058,6602 4054,6565 4051,6512 4045,6402 4006,5876
+Am Schonungsberg: Asphalt	Q0 30504,3821 30718,4341
+Kˆrnerstr.: schlechtes Kopfsteinpflaster	Q3 10653,20200 10547,20644 10521,20750
+Koserstr.: Kopfsteinpflaster	Q2 3412,6353 3309,6270 3118,6140 3112,6090 2950,6141

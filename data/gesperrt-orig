@@ -169,7 +169,7 @@ Baerwaldstr.	1 10345,9764 10339,9818 10397,9962 10451,10057 10490,10080
 Baerwaldstr.	1 10490,10080 10503,10046 10480,9949 10408,9800 10345,9764
 Bischofsgrüner Weg	1 8017,3355 8039,3242
 Dittersbacher Weg	1 7859,3181 7865,3344
-Anzengruberstr.	1 12852,8366 12689,8289
+Anzengruberstr.	1 13042,8395 12852,8366 12689,8289
 Nalepastr. am Rundfunkgebäude	2 17076,8443 17039,7685
 Kirchstr.	1 22196,4847 22234,4789 22243,4710
 Ontarioseestr.	1 18577,10023 18408,10041 18339,10048
@@ -248,6 +248,8 @@ Wolliner Str.	1 10405,14425 10320,14608
 Splanemannstr.	1 18284,9948 18389,9925 18408,10041 18403,10077
 Burgherrenstr.	1 8969,8640 9050,8783
 Travestr.	1 14825,11844 14903,11809 14977,11754
+Koserstr.	1 2950,6141 3112,6090 3118,6140 3309,6270
+Schmollerplatz/str.	1 13241,9407 13184,9340 13209,9325
 #
 # Potsdam
 #
@@ -482,6 +484,7 @@ tragen (Treppe)	0:30 10583,12206
 tragen (Treppe und Rampe)	0:30 39281,17353
 tragen (Treppe oder sehr steile, sandige Rampe)	0:60 41715,18446
 tragen (Treppe am Körnerpark)	0:30 12734,7384
+tragen (zwei Treppen)	0:30 12115,8556
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
