@@ -4,7 +4,7 @@
 # $Id: PLZ.pm,v 1.50 2004/05/19 23:32:22 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998, 2000, 2001, 2002, 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -288,7 +288,7 @@ sub look {
 		$push_sub->($_);
 	    }
 	} elsif ($grep_type eq 'grep-umlaut') {
-	    $str = '(?i:^' . kill_umlauts($str) . ')';
+	    $str = '(?i:^' . quotemeta(kill_umlauts($str)) . ')';
 	    $str = qr{$str};
 	    while(<PLZ>) {
 		chomp;
@@ -298,7 +298,7 @@ sub look {
 	    }
 	    close PLZ;
 	} elsif ($grep_type eq 'grep-inword') {
-	    $str = '(?i:\b' . kill_umlauts($str) . '\b)';
+	    $str = '(?i:\b' . quotemeta(kill_umlauts($str)) . '\b)';
 	    $str = qr{$str};
 	    while(<PLZ>) {
 		chomp;
@@ -308,8 +308,9 @@ sub look {
 	    }
 	    close PLZ;
 	} else {
+	    $str = quotemeta($str) unless $args{Noquote};
 	    $str = "^$str" unless $args{Noquote};
-	    $str =~ s/\|/\\|/g;
+#XXX del?	    $str =~ s/\|/\\|/g;
 	    $str = '(?i:' . $str . ')';
 	    $str = qr{$str};
 	    my %res;

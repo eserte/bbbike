@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.9 2004/05/21 07:42:24 eserte Exp $
+# $Id: plz.t,v 1.10 2004/06/25 12:31:55 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -23,7 +23,7 @@ package main;
 
 use Test::More;
 BEGIN { eval "use Test::Differences" };
-BEGIN { plan tests => 36 }
+BEGIN { plan tests => 39 }
 
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../data", "$FindBin::RealBin/../lib");
@@ -235,7 +235,26 @@ EOF
        "Rechtschreibfehler")
 	or diag $dump->(\@res);
 
+    @res = $plz->look_loop("Augsburger Str. (Charlottenburg",
+			   @standard_look_loop_args);
+    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Augsburger Str.' } @{$res[0]}), 1,
+       "Quoting regexp")
+	or diag $dump->(\@res);
+
+    @res = $plz->look_loop("Augsburger Str. (Charlottenburg",
+			   @standard_look_loop_args, GrepType => "grep-umlaut");
+    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Augsburger Str.' } @{$res[0]}), 1,
+       "Quoting regexp for grep-umlaut search type")
+	or diag $dump->(\@res);
+
  XXX:
+    @res = $plz->look_loop("Augsburger Str. (Charlottenburg",
+			   @standard_look_loop_args,
+			   GrepType => "grep", Noextern => 1);
+    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Augsburger Str.' } @{$res[0]}), 1,
+       "Quoting regexp for grep search type")
+	or diag $dump->(\@res);
+
     @res = $plz->look_loop("U-Bhf Platz der Luftbr",
 			   @standard_look_loop_args);
     is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'U-Bhf Platz der Luftbrücke' } @{$res[0]}), 1,
