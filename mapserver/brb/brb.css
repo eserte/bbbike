@@ -1,0 +1,8 @@
+.ftr  { text-align:center; background-color: #ffcc66; padding: 3; }
+.pwrdb { background-color: #000000; width:100%; }
+.pwrd  { font-size:small; font-weight:bold; color:#ffffff; }
+.smb  { font-size:x-small; width:100%; }
+.smb1 { font-size:x-small; } /* again for MSIE 5.0 */
+.smb2 { font-size:x-small; } /* does not work with NS6.0: padding-left:5px; padding-right:5px; } */
+.hfb { width:100%; }
+.lyrchk { font-size:small; }

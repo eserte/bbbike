@@ -1,0 +1,210 @@
+/* -*- java -*- */
+/* (c) 2002, 2003 Slaven Rezic */
+[% EDITWARNJS %]
+
+var force_mode = "";
+var orig_action = "";
+
+function redirect_form(frm) {
+    var mode = "browse";
+    if (force_mode != "") {
+	mode = force_mode;
+    } else {
+	for(var i = 0; i < frm.mode.length; i++) {
+	    if (frm.mode[i].checked) {
+		if (frm.mode[i].value == "nquery") {
+		    mode = "nquery";
+		}
+	    }
+	}
+    }
+    if (mode == "nquery") {
+	var w = window.open("","queryresult",'toolbar=no,width=350,height=350,resizable=yes,scrollbars=yes');
+	w.document.open(); w.document.close(); // make window empty before raise
+	if (has_focus(w)) w.focus();
+	frm.target = "queryresult";
+    } else {
+	frm.target = "_self";
+    }
+    return true;
+}
+
+function force_browse_move_mode() {
+    force_mode = "browse";
+    return true;
+}
+
+function set_gui_browse_mode() {
+    var frm = document.forms.map;
+    for(var i = 0; i < frm.mode.length; i++) {
+	if (frm.mode[i].value == "browse") {
+	    frm.mode[i].checked = true;
+	    break;
+	}
+    }
+}
+
+function set_mode(mode,zoomdir) {
+    var frm = document.forms.map;
+    // Set orig fields first
+    for(var i = 0; i < frm.mode.length; i++) {
+	if (frm.mode[i].checked) {
+	    frm.orig_mode.value = frm.mode[i].value;
+	    break;
+	}
+    }
+    for(var i = 0; i < frm.zoomdir.length; i++) {
+	if (frm.zoomdir[i].checked) {
+	    frm.orig_zoomdir.value = frm.zoomdir[i].value;
+	    break;
+	}
+    }
+
+    set_mode_no_orig_change(mode,zoomdir);
+}
+
+function set_mode_no_orig_change(mode,zoomdir) {
+    var frm = document.forms.map;
+    if (mode != null) {
+	for(var i = 0; i < frm.mode.length; i++) {
+	    if (frm.mode[i].value == mode) {
+		frm.mode[i].checked = true;
+	    } else {
+		frm.mode[i].checked = false;
+	    }
+	}
+	if (mode != "searchroute") {
+	    frm.coordset.value = "";
+	}
+    }
+    if (zoomdir != null) {
+	for(var i = 0; i < frm.zoomdir.length; i++) {
+	    if (frm.zoomdir[i].value == zoomdir) {
+		frm.zoomdir[i].checked = true;
+	    } else {
+		frm.zoomdir[i].checked = false;
+	    }
+	}
+    }
+}
+
+function move_map(x,y) {
+    var imgx;
+    var imgy;
+    if (x < 0) {
+	imgx = 0;
+    } else if (x > 0) {
+	imgx = 599;
+    } else {
+	imgx = "299.5";
+    }
+    if (y < 0) {
+	imgy = 0;
+    } else if (y > 0) {
+	imgy = 599;
+    } else {
+	imgy = "299.5";
+    }
+    var frm = document.forms.map;
+    frm.imgxy.value = imgx+" "+imgy;
+    set_mode("browse", 0);
+    frm.target = "_self";
+    frm.submit();
+    return true;
+}
+
+function help(topic) {
+    var url = "[% MAPSERVER_URL %]/help.html";
+    var w = window.open(url + "#" + topic, "mapserver_brb_help",
+			'toolbar=yes,width=500,height=350,resizable=yes,scrollbars=yes');
+    if (has_focus(w)) w.focus();
+    return false;
+}
+
+function help_category(cat) {
+    var topic = cat;
+    if (topic.indexOf("|") >= 0) {
+	topic = topic.substr(0, topic.indexOf("|"));
+    }
+    return help(topic);
+}
+
+
+function has_focus(w) {
+    return typeof( w.focus ) == "function" ||
+	   typeof( w.focus ) == "object" ||
+	   navigator.appName == "Netscape";
+}
+
+function change_map(map) {
+    var frm = document.forms.map;
+    var oldmap = frm.map.value;
+    var rx = new RegExp("brb[^/]*\\.map$");
+    var newmap = oldmap.replace(rx, map);
+    frm.map.value = newmap;
+    set_mode("browse", 0);
+    frm.target = "_self";
+    frm.submit();
+    return true;
+}
+
+function init() {
+    if (document.getElementById) {
+	var bbbikeurl_elem = document.getElementById("bbbikeurl");
+	if (bbbikeurl_elem) {
+	    var frm = document.forms.map;
+	    if (frm.bbbikeurl.value != "" && frm.bbbikeurl.value != "[bbbikeurl]") {
+		bbbikeurl_elem.href = frm.bbbikeurl.value;
+	    }
+	}
+	var bbbikemail_elem = document.getElementById("bbbikemail");
+	if (bbbikemail_elem) {
+	    var frm = document.forms.map;
+	    if (frm.bbbikemail.value != "" && frm.bbbikemail.value != "[bbbikemail]") {
+		bbbikemail_elem.href = "mailto:" + frm.bbbikemail.value;
+	    }
+	}
+    }
+
+    var frm = document.forms.map;
+    var orig_mode = null;
+    var orig_zoomdir = null;
+    if (frm.orig_mode.value != "" && frm.orig_mode.value != "[orig_mode]") {
+	orig_mode = frm.orig_mode.value;
+    }
+    if (frm.orig_zoomdir.value != "" && frm.orig_zoomdir.value != "[orig_zoomdir]") {
+	orig_zoomdir = frm.orig_zoomdir.value;
+    }
+    set_mode_no_orig_change(orig_mode, orig_zoomdir);
+}
+
+// XXX no --- this is not intuitive
+function adjust_for_redraw() {
+    // set_mode("browse", 0);
+}
+
+function toggled_searchroute_mode() {
+    var frm = document.forms["map"];
+    var val = null;
+    for(var i = 0; i < frm.mode.length; i++) {
+	if (frm.mode[i].value == "searchroute") {
+	    val = frm.mode[i].checked;
+	    break;
+	}
+    }
+    if (!val) {
+	if (orig_action != "") {
+	    frm.action = orig_action;
+	}
+	frm.coordset.value = "";
+    } else {
+	orig_action = frm.action;
+	frm.action = '[% BBBIKE_CGI_RELURL %]/mapserver_setcoord.cgi';
+	if (frm.startc.value == "[startc]" || frm.startc.value == "") {
+	    frm.coordset.value = "start";
+	} else {
+	    frm.coordset.value = "ziel";
+	}
+    }
+	    
+}

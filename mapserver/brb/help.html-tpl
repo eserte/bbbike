@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN"> <!-- -*-html-*- -->
+<html><head>
+<title>Hilfe</title>
+<link rel="stylesheet" type="text/css" href="[% BBBIKE_HTML_RELURL %]/bbbike.css">
+<link rev=made href="mailto:slaven@rezic.de">
+</head>
+<body>
+<h1>Hilfe</h1>
+<ul>
+ <li><a href="#layers">Ebenen</a>
+ <li><a href="#browse">Karte bewegen/zoomen</a>
+ <li><a href="#query">Merkmale anzeigen</a>
+ <li><a href="#scale">Maßstab</a>
+ <li><a href="#cat">Kategorien</a>
+ <li><a href="#cat">Routensuche</a>
+ <li><a href="#disclaimer">Disclaimer</a>
+</ul>
+
+<h3><a name="layers">Ebenen</a></h3>
+Bei Veränderungen in der Auswahl muss der Button <i>Neu zeichnen</i> angeklickt werden, um die Karte neu zu zeichnen.
+<dl>
+ <dt>Qualität
+ <dd>Anzeige der Fahrbahnqualität (asphaltierte Straße, Kopfsteinpflaster, Feld- und Waldwege usw.)
+
+ <dt>sonstige Behinderungen
+ <dd>Behinderungen, die nicht den Komfort des Radfahrers beeinträchtigen, aber zur Reduzierung der Geschwindigkeit zwingen, z.B. starker Fußgängerverkehr, enge und kurvige Wege
+
+ <dt>Radwege
+ <dd>Radwege und Busspuren
+
+ <dt>Bahnlinien und Bahnhöfe
+ <dd>Regionalbahnen mit Bahnhöfen in Berlin und Brandenburg
+
+ <dt>Gewässer
+ <dd>Seen, Flüsse und Kanäle
+
+ <dt>Parks, Wälder
+ <dd>Parks, Wälder und sonstige Grünanlagen
+
+ <dt>Grenzen
+ <dd>Stadtgrenzen von Berlin und Potsdam sowie Staatsgrenzen
+
+ <dt>Ampeln
+ <dd>Ampeln und beschrankte Bahnübergänge in Berlin; beschrankte Bahnübergänge in Brandenburg
+
+ <dt>Sehenswürdigkeiten
+ <dd>Sehenswürdigkeiten, Kirchen und wichtige Gebäude
+
+ <dt>Obst
+ <dd>Obstbaumalleen
+
+ <dt>Orte
+ <dd>Städte und Dörfer
+
+ <dt>Fragezeichen
+ <dd>Straßen mit einer unsicheren Datenbasis. Hier benötigt der <a href="mailto:[% EMAIL %]">Autor</a> der Daten Hilfe!
+
+ <dt>Route
+ <dd>Eine Route wird nur angezeigt, wenn der Mapserver aus der Routenliste von BBBike aus gestartet wurde. Eine Markierung wird angezeigt, wenn der Mapserver aus der Adresssuche heraus gestartet wurde.
+
+</dl>
+<h3><a name="browse">Karte bewegen/zoomen</a></h3>
+Beim Klick in die Karte wird eine Aktion, die vom Zustand der Radiobuttons <i>Hineinzoomen</i>, <i>Bewegen</i> und <i>Herauszoomen</i> abhängig ist, durchgeführt.
+<dl>
+ <dt><a name="zoomin">Hineinzoomen</a>
+ <dd>Abhängig von der Zoomstufe wird in die Karte hineingezoomt, d.h. der Maßstab verkleinert und die Detaildichte vergrößert. Eine Zoomstufe von 2 bedeutet beispielsweise, dass der Maßstab um den Faktor zwei verkleinert wird.
+
+ <dt>Bewegen
+ <dd>Beim Klick in die Karte wird der Kartenausschnitt bewegt. Der angeklickte Punkt wird zum neuen Mittelpunkt des Kartenausschnitts. Alternativ können zum Bewegen die Himmelsrichtung-Buttons verwendet werden.
+
+ <dt>Herauszoomen
+ <dd>Abhängig von der Zoomstufe wird aus der Karte herausgezoomt, d.h. der Maßstab vergrößert und die Detaildichte verkleinert. Eine Zoomstufe von 2 bedeutet beispielsweise, dass der Maßstab um den Faktor zwei vergrößert wird.
+
+</dl>
+
+<h3><a name="query">Merkmale anzeigen</a></h3>
+
+Beim Klick in die Karte wird ein Fenster mit den Merkmalen des
+ausgewählten Punktes angezeigt. Merkmale sind genauere Beschreibungen
+zu den Ebenen, z.B. Namen von Straßen, die genauere Beschreibung einer
+Fahrbahnbeschaffenheit oder Fährzeiten.
+
+<h3><a name="scale">Maßstab</a></h3>
+Der Maßstab gilt nur für Monitore mit einer Auflösung von 72dpi (Pixel pro Zoll).
+
+<h3><a name="cat">Kategorien</a></h3>
+<table>
+ <tr><th colspan="2">Straßenkategorie</th></tr>
+ <tr>
+  <td><a name="B">B</a></td>
+  <td>Bundesstraße</td>
+ </tr>
+ <tr>
+  <td><a name="HH">HH</a></td>
+  <td>wichtige Hauptstraße</td>
+ </tr>
+ <tr>
+  <td><a name="H">H</a></td>
+  <td>Hauptstraße</td>
+ </tr>
+ <tr>
+  <td><a name="N">N</a></td>
+  <td>Nebenstraße</td>
+ </tr>
+ <tr>
+  <td><a name="NN">NN</a></td>
+  <td>für Kfz gesperrte Straße</td>
+ </tr>
+ <tr><td></td></tr>
+ <tr><th colspan="2">Straßenqualität</th></tr>
+ <tr>
+  <td><a name="Q0">Q0</a></td>
+  <td>sehr guter Belag (Asphalt)</td>
+ </tr>
+ <tr>
+  <td><a name="Q1">Q1</a></td>
+  <td>guter Belag (Asphalt oder gutes Kopfsteinpflaster)</td>
+ </tr>
+ <tr>
+  <td><a name="Q2">Q2</a></td>
+  <td>mäßiger Belag (schlechter Asphalt oder mäßiges Kopfsteinpflaster)</td>
+ </tr>
+ <tr>
+  <td><a name="Q3">Q3</a></td>
+  <td>schlechter Belag (Katzenkopfsteinpflaster oder unbefestigte Wege)</td>
+ </tr>
+ <tr><td></td></tr>
+ <tr><th colspan="2">Sonstige Behinderungen</th></tr>
+ <tr>
+  <td><a name="q0">q0</a></td>
+  <td>keine sonstigen Behinderungen</td>
+ </tr>
+ <tr>
+  <td><a name="q1">q1</a></td>
+  <td>sonstige Behinderungen auf ca. 25 km/h</td>
+ </tr>
+ <tr>
+  <td><a name="q2">q2</a></td>
+  <td>sonstige Behinderungen auf ca. 18 km/h</td>
+ </tr>
+ <tr>
+  <td><a name="q3">q3</a></td>
+  <td>sonstige Behinderungen auf ca. 13 km/h</td>
+ </tr>
+ <tr>
+  <td><a name="q4">q4</a></td>
+  <td>sonstige Behinderungen auf Schrittgeschwindigkeit</td>
+ </tr>
+ <tr><td></td></tr>
+ <tr><th colspan="2">Radwege, Busspuren</th></tr>
+ <tr>
+  <td><a name="RW0">RW0</a></td>
+  <td>kein Radweg</td>
+ </tr>
+ <tr>
+  <td><a name="RW1">RW1</a></td>
+  <td>Radweg (nicht benutzungspflichtig)</td>
+ </tr>
+ <tr>
+  <td><a name="RW2">RW2</a></td>
+  <td>Radweg (benutzungspflichtig)</td>
+ </tr>
+ <tr>
+  <td><a name="RW3">RW3</a></td>
+  <td>Suggestivstreifen</td>
+ </tr>
+ <tr>
+  <td><a name="RW4">RW4</a></td>
+  <td>Radstreifen</td>
+ </tr>
+ <tr>
+  <td><a name="RW5">RW5</a></td>
+  <td>Busspur</td>
+ </tr>
+ <tr>
+  <td><a name="RW6">RW6</a></td>
+  <td>verkehrsberuhigt</td>
+ </tr>
+ <tr>
+  <td><a name="RW7">RW7</a></td>
+  <td>Fahrradstraße</td>
+ </tr>
+ <tr>
+  <td><a name="RW8">RW8</a></td>
+  <td>Zweirichtungsradweg (Gegenrichtung, benutzungspflichtig)</td>
+ </tr>
+ <tr>
+  <td><a name="RW9">RW9</a></td>
+  <td>Zweirichtungsradweg (Gegenrichtung)</td>
+ </tr>
+ <tr><th colspan="2">U-/S-/Regionalbahn</th></tr>
+ <tr>
+  <td><a name="UA">UA</a></td>
+  <td>U-Bahn, VBB-Zone Berlin A</td>
+ </tr>
+ <tr>
+  <td><a name="UB">UB</a></td>
+  <td>U-Bahn, VBB-Zone Berlin B</td>
+ </tr>
+ <tr>
+  <td><a name="SA">SA</a></td>
+  <td>S-Bahn, VBB-Zone Berlin A</td>
+ </tr>
+ <tr>
+  <td><a name="SB">SB</a></td>
+  <td>S-Bahn, VBB-Zone Berlin B</td>
+ </tr>
+ <tr>
+  <td><a name="SC">SC</a></td>
+  <td>S-Bahn, VBB-Zone Berlin C</td>
+ </tr>
+ <tr>
+  <td><a name="RA">RA</a></td>
+  <td>Regionalbahn, VBB-Zone Berlin A</td>
+ </tr>
+ <tr>
+  <td><a name="RB">RB</a></td>
+  <td>Regionalbahn, VBB-Zone Berlin B</td>
+ </tr>
+ <tr>
+  <td><a name="RC">RC</a></td>
+  <td>Regionalbahn, VBB-Zone Berlin C</td>
+ </tr>
+ <tr>
+  <td><a name="R">R</a></td>
+  <td>Regionalbahn, außerhalb VBB-Zone Berlin</td>
+ </tr>
+ <tr><th colspan="2">Sonstiges</th></tr>
+ <tr>
+  <td><a name="SW">SW</a></td>
+  <td>Sehenswürdigkeit</td>
+ </tr>
+ <tr>
+  <td><a name="Q">Q</a></td>
+  <td>Fähre</td>
+ </tr>
+ <tr>
+  <td><a name="W">W</a></td>
+  <td>Gewässer</td>
+ </tr>
+ <tr>
+  <td><a name="W1">W1</a></td>
+  <td>Gewässer</td>
+ </tr>
+ <tr>
+  <td><a name="W2">W2</a></td>
+  <td>Gewässer</td>
+ </tr>
+ <tr>
+  <td><a name="F:P">F:P</a></td>
+  <td>Park, Wald</td>
+ </tr>
+ <tr>
+  <td><a name="F:Ae">F:Ae</a></td>
+  <td>Flughafen</td>
+ </tr>
+ <tr>
+  <td><a name="Z">Z</a></td>
+  <td>Grenzen</td>
+ </tr>
+ <tr>
+  <td><a name="1_right">1_right</a>, <a name="1_left">1_left</a></td>
+  <td>Einbahnstraße</td>
+ </tr>
+ <tr>
+  <td><a name="2">2</a></td>
+  <td>für Radfahrer gesperrte Straße</td>
+ </tr>
+</table>
+
+<h3><a name="search">Routensuche</a></h3> (experimentell!)
+
+Im Mapserver können Start- und Zielpunkt für die Suche mit <a
+href="http://www.bbbike.de" target="_blank">BBBike</a> definiert
+werden. Dazu muss die Checkbox "Start/Zielpunkt" aktiviert werden und
+dann der Startpunkt auf der Karte markiert werden. Der Startpunkt ist
+fortan mit einer Fahne markiert. Nach nochmaligen Aktivieren der
+Checkbox "Start/Zielpunkt" kann ein Zielpunkt auf der Karte markiert
+werden. Die Punkte werden an die Suchmaschine von BBBike geschickt und
+schließlich wird die Route im Mapserver angezeigt.
+
+<h3><a name="disclaimer">Disclaimer</a></h3>
+
+Es wird keine Gewähr für die Inhalte dieser Site sowie verlinkter
+Sites übernommen.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body></html>

@@ -1,0 +1,37 @@
+
+  </table>
+
+  <p>
+
+[%#
+  <table cellpadding="3" cellspacing="0" border="0">
+    <tr>
+     <td><img border="2" src="[img]"></td>
+    </tr>
+  </table>
+%]
+
+  <p>
+  <form action="[% BBBIKE_CGI_RELURL %]/mapserver_comment.cgi" action="POST">
+   <input type="hidden" name="mapx" value="[mapx]">
+   <input type="hidden" name="mapy" value="[mapy]">
+   Kommentar:<br>
+   <textarea wrap="auto" rows=5 name="comment"></textarea><br>
+   E-Mail (optional, für evtl. Rückfragen benötigt):<br>
+   <input name="email"><br>
+   <input type="submit" value="Absenden">
+  </form>
+
+[%#
+  <script type="text/javascript" language="javascript">
+    var regex = /WMS_SERVER/;
+    var layers = "[layers]";
+    var bbox = "[imgext]";
+
+    if(regex.test("[version]"))
+      document.write("<p><a href=\"[program]?map=[map]&REQUEST=GetFeatureInfo&query_layers=" + layers.replace(/ /g, ',') + "&VERSION=1.1.0&x=[img.x]&y=[img.y]&INFO_FORMAT=gml&bbox=" + bbox.replace(/ /g, ',') +  "\">download GML version</a></p>\n")
+  </script>
+%]
+
+  </body>
+</html>

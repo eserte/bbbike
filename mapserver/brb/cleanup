@@ -1,0 +1,75 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: cleanup,v 1.1 2003/07/01 08:57:32 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+# Suggested crontab entry (cleanup all files approx. an hour old):
+# 27 * * * * /home/e/eserte/src/bbbike/mapserver/brb/cleanup -f -agehours 1
+
+# Or just build crontab in this directory and link it into /etc/cron.d:
+#   cd /etc/cron.d
+#   ln -s ..../mapserver/brb/crontab mapserver-brb
+#
+
+use strict;
+use FindBin;
+use Getopt::Long;
+
+my $force;
+my $age;
+my $agehours;
+
+if (!GetOptions("f|force" => \$force,
+		"age=f" => \$age,
+		"agehours=f" => \$agehours,
+	       )) {
+    die "usage: $0 [-f|-force] [-age age_in_days | -agehours age_in_hours]";
+}
+
+chdir $FindBin::RealBin or die "Can't chdir to $FindBin::RealBin: $!";
+
+my @files = (glob("xxx-*.map"),
+	     glob("tmp/*.png"),
+	     glob("tmp/*.gif"),
+	     glob("tmp/*.qy"),
+	     glob("/tmp/bbbikems-xxx-*.dbf"),
+	     glob("/tmp/bbbikems-xxx-*.shp"),
+	     glob("/tmp/bbbikems-xxx-*.shx"),
+	    );
+
+if (defined $agehours) {
+    $age = $agehours/24;
+}
+if (defined $age) {
+    @files = grep { -M $_ > $age } @files;
+}
+
+if (!@files) {
+    exit 0;
+}
+
+if (!$force) {
+    if (-t STDIN) {
+	print STDERR "Delete @files? (y/N) ";
+	my($yn) = scalar <STDIN>;
+	if (!defined $yn || $yn !~ /^y/i) {
+	    exit 1;
+	}
+    } else {
+	warn "Dry run: delete @files\n";
+	exit 0;
+    }
+}
+unlink @files;
+
+__END__
