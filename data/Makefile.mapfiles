@@ -324,6 +324,12 @@ $(MAPFILES_DATA_DIR)/nolighting.shp:	nolighting
 
 mapfiles-shptree:	${ALL_MAPFILES:S/.shp$/.qix/}
 
+mapfiles-shptree-gmake:
+	for f in $(ALL_MAPFILES); do \
+		echo $$f; \
+		${SHPTREE} $$f; \
+	done
+
 .SUFFIXES: .shp .qix
 
 .shp.qix:
