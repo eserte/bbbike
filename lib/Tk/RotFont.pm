@@ -113,13 +113,15 @@ sub rot_text_old {
 	    } else {
 		$rotsize = $size*10;
 	    }
-	    eval {$c->createText
+	    eval {
+		my $substr = substr($str, $curr_i, 1); # workaround Tk804 problem
+		$c->createText
 		    ($ch_x, $ch_y,
-		     -text => substr($str, $curr_i, 1),
+		     -text => $substr,
 		     -font => $f_sub->($rotsize),
 		     @create_text_args,
 		    );
-	      };
+	    };
 	    if ($@) { warn "Problem at $rotsize: $@\n" }
 	    $curr_i++;
 	    $curr_pos += $len_per_char;
