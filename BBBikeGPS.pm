@@ -172,8 +172,8 @@ sub BBBikeGPS::draw_gpsman_data {
     $draw_gpsman_data_p = 1 if !defined $draw_gpsman_data_p;
     $show_track_graph = 0   if !defined $show_track_graph;
     $show_track_graph_speed = 1 if !defined $show_track_graph_speed;
-    $show_track_graph_alt = 1 if !defined $show_track_graph_alt;
-    $show_track_graph_grade = 1 if !defined $show_track_graph_grade;
+    $show_track_graph_alt = 0 if !defined $show_track_graph_alt;
+    $show_track_graph_grade = 0 if !defined $show_track_graph_grade;
     $show_statistics = 0    if !defined $show_statistics;
 
     my $file = $gpsman_last_dir || Cwd::cwd();
@@ -887,6 +887,7 @@ sub BBBikeGPS::draw_track_graph {
 			if (defined $last_y{$type}) {
 			    $graph_c{$type}->createLine
 				($last_x{$type}, $last_y{$type}, $x, $y,
+				 -activefill => "blue",
 				 -tags => [$type, "$type-$coord"]);
 			}
 			$last_y{$type} = $y;

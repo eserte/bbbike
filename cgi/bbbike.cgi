@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.50 2003/07/25 22:39:06 eserte Exp $
+# $Id: bbbike.cgi,v 6.50 2003/07/25 22:39:06 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -75,7 +75,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $g_str $orte $orte2 $multiorte
 	    $ampeln $qualitaet_net $handicap_net
 	    $strcat_net $radwege_strcat_net $routen_net $comments_net
-	    $green_net
+	    $comments_points $green_net
 	    $inaccess_str $crossings $kr $plz $net $multi_bez_str
 	    $overview_map
 	    $use_umland $use_umland_jwd $use_special_destinations
@@ -2601,6 +2601,26 @@ sub search_coord {
 						-multiple => 1);
 		}
 	    }
+	    if (!$comments_points) {
+		$comments_points = {};
+		eval {
+		    my $s = Strassen->new("gesperrt");
+		    $s->init;
+		    while(1) {
+			my $r = $s->next;
+			last if !@{ $r->[Strassen::COORDS] };
+			if ($r->[Strassen::CAT] =~ /^0(?::(\d+))?/) {
+			    my $name = $r->[Strassen::NAME];
+			    if (defined $1) {
+				$name .= " (ca. $1 Sekunden Zeitverlust)";
+			    }
+			    $comments_points->{$r->[Strassen::COORDS][0]}
+				= $name;
+			}
+		    }
+		};
+		warn $@ if $@;
+	    }
 	    @path = $r->path_list;
 	}
 
@@ -2659,6 +2679,17 @@ sub search_coord {
 			    push @comments, $etappe_comment;
 			    $seen_comments_in_this_etappe{$etappe_comment}++;
 			}
+		    }
+		}
+		for my $i ($strnames[$i]->[4][0] .. $strnames[$i]->[4][1]) {
+		    my $point = join ",", @{ $path[$i] };
+		    if (exists $comments_points->{$point}) {
+			my $etappe_comment = $comments_points->{$point};
+			# XXX not yet: problems with ... Sekunden Zeitverlust
+			#if (!exists $seen_comments_in_this_etappe{$etappe_comment}) {
+			push @comments, $etappe_comment;
+			#} else {
+			#} # XXX better solution for multiple point comments: use (2x), (3x) ...
 		    }
 		}
 		$etappe_comment = join("; ", @comments) if @comments;
@@ -2832,6 +2863,7 @@ EOF
 	if ($printmode) {
 	    print " width=$printwidth";
 	}
+	# XXX evtl. auch onclick=ms verwenden zusammen mit coord_link
 	print "><tr><td>${fontstr}Route von <b>" .
 	    ($use_coord_link
 	     ? coord_link($startname, $startcoord)

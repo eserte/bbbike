@@ -2986,20 +2986,13 @@ sub do_iconframe {
 		  $c);
 	     $bbbike_context->{Profil}->Show($top, $bbbike_context);
 	 });
-    $sbm->checkbutton(-label => M"Startflagge",
-		      -variable => \$do_flag{'start'},
-		      -command => sub {
-			  set_flag('start');
-		      },
-		     );
-    $sbm->checkbutton(-label => M"Zielflagge",
-		      -variable => \$do_flag{'ziel'},
-		      -command => sub {
-			  set_flag("ziel");
-		      },
-		     );
     require BBBikeVia;
-    BBBikeVia::menu_entries($sbm);
+    {
+	$sbm->cascade(-label => M('Start/Via/Ziel').' ...');
+	my $viam = $sbm->Menu(-title => M('Start/Via/Ziel').' ...');
+	$sbm->entryconfigure('last', -menu => $viam);
+	BBBikeVia::menu_entries($viam);
+    }
 
     $sbm->separator;
     $sbm->checkbutton(-label => M"Kalorienverbrauch anzeigen",

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.7 2003/07/17 19:55:57 eserte Exp $
+# $Id: cgi.t,v 1.8 2003/07/28 06:36:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -213,6 +213,15 @@ for my $cgiurl (@urls) {
 	}
 
  XXX:
+
+	# Test comments_points (as part of Bemerkungen)
+	$req = new HTTP::Request
+	    ('GET', "$action?startname=Sonntagstr.&startplz=10245&startc=14798%2C10985&zielname=Markgrafendamm&zielplz=10245&zielc=14794%2C10844&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&scope=");
+	$res = $ua->request($req);
+	ok($res->is_success, "Tragen test") or diag $res->as_string;
+
+	$content = uncompr($res);
+	like($content, qr/Sekunden.*Zeitverlust/);
 
 	# This is only correct with use_exact_streetchooser=true
 	$req = new HTTP::Request

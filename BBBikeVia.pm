@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVia.pm,v 1.8 2003/04/27 17:09:02 eserte Exp $
+# $Id: BBBikeVia.pm,v 1.9 2003/07/27 21:01:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -16,22 +16,38 @@ package BBBikeVia;
 
 use strict;
 use vars qw($VERSION $move_index $add_point);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 package main;
-use vars qw(%cursor %cursor_mask $map_mode $c %do_flag %flag_photo
-	    @search_route_points %set_route_point
-	    $map_mode_deactivate $net @realcoords);
+use BBBikeGlobalVars;
+#XXX
+#  use vars qw(%cursor %cursor_mask $map_mode $c %do_flag %flag_photo
+#  	    @search_route_points %set_route_point
+#  	    $map_mode_deactivate $net @realcoords
+#  	    $advanced);
 use subs qw(M SRP_TYPE SRP_COORD POINT_MANUELL POINT_SEARCH);
 
 BBBikeVia::load_cursors(); # XXX move somewhere...
 
 sub BBBikeVia::menu_entries {
     my $menu = shift;
+    $menu->checkbutton(-label => M"Startflagge",
+		       -variable => \$do_flag{'start'},
+		       -command => sub {
+			   set_flag('start');
+		       },
+		      );
     $menu->checkbutton(-label => M"Vias einblenden",
 		       -variable => \$do_flag{'via'},
 		       -command  => \&BBBikeVia::set_via_flags
 		      );
+    $menu->checkbutton(-label => M"Zielflagge",
+		       -variable => \$do_flag{'ziel'},
+		       -command => sub {
+			   set_flag("ziel");
+		       },
+		      );
+
     $menu->radiobutton(-label => M"Start/Vias/Ziel verschieben",
 		       -variable => \$map_mode,
 		       -value    => "MM_VIA_MOVE",
@@ -48,6 +64,16 @@ sub BBBikeVia::menu_entries {
 			   BBBikeVia::add_via();
 		       },
 		      );
+    if ($advanced) {
+	$menu->radiobutton(-label => M"neue Vias setzen und verschieben",
+			   -variable => \$map_mode,
+			   -value    => "MM_VIA_ADD_THEN_MOVE",
+			   -command  => sub {
+			       set_map_mode();
+			       BBBikeVia::add_via();
+			   },
+			  );
+    }
     $menu->radiobutton(-label => M"Vias löschen",
 		       -variable => \$map_mode,
 		       -value    => "MM_VIA_DEL",
@@ -106,7 +132,7 @@ sub BBBikeVia::delete_via_flag {
 
 sub BBBikeVia::move_via {
     set_cursor("via_move");
-    $set_route_point{"MM_VIA_MOVE"} = sub {
+    $set_route_point{$map_mode} = sub {
 	# do nothing
     };
     $map_mode_deactivate = sub {
@@ -121,13 +147,17 @@ sub BBBikeVia::move_via {
 }
 
 sub BBBikeVia::move_via_2 {
-    my($c, $type) = @_;
+    my($c, $type, $move_index) = @_;
 
-    $BBBikeVia::move_index = BBBikeVia::_find_point_from_tags();
-    return if !defined $BBBikeVia::move_index;
+    if (defined $move_index) {
+	$BBBikeVia::move_index = $move_index;
+    } else {
+	$BBBikeVia::move_index = BBBikeVia::_find_point_from_tags();
+	return if !defined $BBBikeVia::move_index;
+    }
 
     set_cursor("via_move_2");
-    $set_route_point{"MM_VIA_MOVE"} = \&BBBikeVia::move_via_action;
+    $set_route_point{$map_mode} = \&BBBikeVia::move_via_action;
     for (qw(start via ziel)) {
 	$c->bind($_."flag", "<ButtonPress-1>" => "");
     }
@@ -141,7 +171,15 @@ sub BBBikeVia::move_via_action {
     $search_route_points[$BBBikeVia::move_index]->[SRP_COORD] = $coord;
 
     re_search();
-    BBBikeVia::move_via();
+    BBBikeVia::move_via_cont();
+}
+
+sub BBBikeVia::move_via_cont {
+    if ($map_mode =~ /ADD_THEN_MOVE$/) {
+	BBBikeVia::add_via();
+    } else {
+	BBBikeVia::move_via();
+    }
 }
 
 ######################################################################
@@ -149,7 +187,7 @@ sub BBBikeVia::move_via_action {
 
 sub BBBikeVia::add_via {
     set_cursor("via_add");
-    $set_route_point{"MM_VIA_ADD"} = \&BBBikeVia::add_via_2;
+     $set_route_point{$map_mode} = \&BBBikeVia::add_via_2;
     $map_mode_deactivate = sub {
 	for (qw(start via ziel)) {
 	    $c->bind($_."flag", "<ButtonPress-1>", "");
@@ -159,7 +197,7 @@ sub BBBikeVia::add_via {
 }
 
 sub BBBikeVia::add_via_2 {
-    delete $set_route_point{"MM_VIA_ADD"};
+    delete $set_route_point{$map_mode};
     $BBBikeVia::add_point = set_coords($c);
 
     if (@search_route_points == 2) {
@@ -168,7 +206,7 @@ sub BBBikeVia::add_via_2 {
 	    0,
 	    [$BBBikeVia::add_point, POINT_SEARCH];
 	re_search();
-	return BBBikeVia::add_via();
+	return BBBikeVia::add_via_cont(1);
     }
 
     my @tags = $c->gettags("current");
@@ -188,7 +226,7 @@ sub BBBikeVia::add_via_2 {
 			0,
 			[$BBBikeVia::add_point, POINT_SEARCH];
 		    re_search();
-		    return BBBikeVia::add_via();
+		    return BBBikeVia::add_via_cont($srp_to_index{$xy});
 		}
 	    }
 	    warn "Can't find route-$route_nr in realcoords\n";
@@ -215,30 +253,52 @@ sub BBBikeVia::add_via_3 {
     for (qw(start via ziel)) {
 	$c->bind($_."flag", "<ButtonPress-1>" => \&BBBikeVia::add_via_action);
     }
-    status_message(M"Zweiten Nachbarn (Start, Via oder Ziel) wählen", "info");
+    my $common = M"Zweiten Nachbarn (Start, Via oder Ziel) wählen";
+    if ($BBBikeVia::add_nb1_index == 0) {
+	status_message($common . " " . M"bzw. Start für neuen Startpunkt",
+		       "info");
+    } elsif ($BBBikeVia::add_nb1_index == $#search_route_points) {
+	status_message($common . " " . M"bzw. Ziel für neuen Zielpunkt",
+		       "info");
+    } else {
+	status_message($common, "info");
+    }
 }
 
 sub BBBikeVia::add_via_action {
     $BBBikeVia::add_nb2_index = BBBikeVia::_find_point_from_tags();
     return if !defined $BBBikeVia::add_nb2_index;
 
+    my $move_index;
     if (abs($BBBikeVia::add_nb1_index - $BBBikeVia::add_nb2_index) == 1) {
+	$move_index = max($BBBikeVia::add_nb1_index, $BBBikeVia::add_nb2_index);
 	splice @search_route_points,
-	    max($BBBikeVia::add_nb1_index, $BBBikeVia::add_nb2_index),
+	    $move_index,
 	    0,
 	    [$BBBikeVia::add_point, POINT_SEARCH];
     } elsif ($BBBikeVia::add_nb1_index == 0 && $BBBikeVia::add_nb2_index == 0) {
 	unshift @search_route_points, [$BBBikeVia::add_point, POINT_MANUELL];
 	$search_route_points[1]->[SRP_TYPE] = POINT_SEARCH;
+	$move_index = 1;
     } elsif ($BBBikeVia::add_nb1_index == $#search_route_points && $BBBikeVia::add_nb2_index == $#search_route_points) {
 	push @search_route_points, [$BBBikeVia::add_point, POINT_SEARCH];
+	$move_index = $#search_route_points;
     } else {
 	status_message(M"Keine Nachbarn, bitte noch einmal versuchen", "error");
 	return BBBikeVia::add_via_2_2();
     }
 
     re_search();
-    BBBikeVia::add_via();
+    BBBikeVia::add_via_cont($move_index);
+}
+
+sub BBBikeVia::add_via_cont {
+    my $move_index = shift;
+    if ($map_mode =~ /THEN_MOVE$/) {
+	BBBikeVia::move_via_2($main::c, '', $move_index);
+    } else {
+	BBBikeVia::add_via();
+    }
 }
 
 ######################################################################
@@ -246,7 +306,7 @@ sub BBBikeVia::add_via_action {
 
 sub BBBikeVia::delete_via {
     set_cursor("via_del");
-    $set_route_point{"MM_VIA_DEL"} = sub {
+    $set_route_point{$map_mode} = sub {
 	# do nothing
     };
     $map_mode_deactivate = sub {

@@ -126,7 +126,7 @@ Weydemeyerstr.	1 11905,13069 11910,13055 12062,12986 12056,12907
 Gipsstr.	1 10331,13397 10199,13446 10031,13509
 Dorotheenstr.	1 9867,12651 9723,12594 9574,12578 9454,12558 9323,12528
 Georgenstr.	1 9437,12662 9562,12679 9657,12694 9754,12775
-Paul-Junius-Str	1L 15084,12975 15085,13105
+Paul-Junius-Str	1 15084,13276 15082,13369
 Marksburgstr.	1 18319,9218 18809,9133
 Griechische Allee	1 17962,6674 18146,6703 18353,6658 18494,6588
 Griechische Allee	1 18494,6588 18280,6603 18080,6670 17962,6674
@@ -187,6 +187,7 @@ Damaschkestr.	1 3132,10499 3013,10553
 Wundtstr.	1 2386,11183 2352,11041
 Lietzenseeufer	1 2871,11211 2831,11225 2754,11169 2644,11159 2621,11065
 Gervinusstr.	1 3587,10768 3631,10784
+(Friedrich-Ludwig-Jahn-Sportpark)	2 10473,15549 10607,15142
 Hans-Thoma-Str.	1 -12151,-768 -12258,-768 -12323,-555
 Behlertstr.	1 -12237,-427 -12195,-469 -12066,-768
 Potsdamer Damm	2 -5717,-3655 -6229,-4018
@@ -211,6 +212,7 @@ Kirchhofstr.	1s 13177,7644 13188,7590 13032,7334
 Niemannstr.	1s 14252,11368 14211,11229
 Björnsonstr	1s 10229,16653 10215,16527
 Eichhornstr.	1s 8226,11458 8258,11254
+Paul-Junius-Str.	1s 15084,12975 15085,13105
 Lützowufer - Lützowplatz (unbequem passierbarer Mittelstreifen)	3 6626,11178 6873,11011 7002,11034
 Düsseldorfer - Paderborner (Tunneleinfahrt Adenauerplatz)	3 4151,10026 3906,10035 3720,9996
 Paderborner - Düsseldorfer (Tunneleinfahrt Adenauerplatz)	3 3720,9996 3906,10035 4151,10026
@@ -260,6 +262,10 @@ Rauchstr./Köbisstr.	3 7160,11225 6853,11336 6683,11367
 Rauchstr./Köbisstr.	3 6683,11367 6853,11336 7160,11225
 Grunerstr. - Littenstr.	3 11062,12710 10959,12629 11056,12461
 Littenstr. - Grunerstr.	3 11056,12461 10959,12629 10887,12543
+Bornholmer Str. - Kolonnenweg	3 10215,16527 9998,16547 9982,16527
+Bornholmer Str. - Kolonnenweg	3 9883,16557 9998,16547 9983,16561
+Kolonnenweg - Bornholmer Str.	3 9983,16561 9998,16547 10215,16527
+Kolonnenweg - Bornholmer Str.	3 9982,16527 9998,16547 9883,16557
 Dorotheenstr. an der US-Botschaft	3 8907,12472 9112,12499 9323,12528
 Dorotheenstr. an der US-Botschaft	3 9323,12528 9112,12499 8907,12472
 tragen (Eisebahnbrücke Templiner See)	0:60:-231 -15515,-4592
@@ -294,6 +300,8 @@ schieben (Rampe Schmöckwitzwerdersteg)	0:30:17 30546,-3072
 tragen (Treppe Mansfelder Str.)	0:30:90 3620,9330
 tragen (Treppe)	0:30:-263 9557,12992
 tragen (Treppe)	0:30:83 9508,12991
+tragen (Treppe)	0:30:-226 9983,16561
+tragen (Treppe)	0:30:38 9982,16527
 Drängelgitter (Görlitzer Park)	BNP:5:13 12686,10045
 Drängelgitter (Görlitzer Park)	BNP:5:22 12770,10210
 Drängelgitter (Görlitzer Park)	BNP:5:-153 12904,10141
@@ -307,7 +315,7 @@ Drängelgitter (Pankweg)	BNP:5:-96 11995,19759
 Drängelgitter (Brachvogelstr.)	BNP:5:-255 9884,10192
 Barriere (Pflügerstr.)	BNP:5:-231 12318,9482
 Schranke (Griesinger-Krankenhaus)	BNP:5:-169 21581,12182
-Hauptweg: Schranke	BNP:5:-105 9459,21686
+Hauptweg: Schranke	BNP:5:-106 9410,21680
 Drängelgitter (Hoher Bogen)	BNP:5:48 3831,8674
 Entlastungsstr. (Tiergartentunnel)	1:inwork 8172,11679 8129,11735 8056,12061 8063,12182
 Behrenstr. (Bauarbeiten)	1:inwork 9492,12214 9365,12196
@@ -320,7 +328,6 @@ Schottstr. (Bauarbeiten)	1:inwork 16270,12261 16389,12394
 Rüdigerstr. (Bauarbeiten)	1:inwork 16389,12394 16468,12386
 Französische Str. (Bauarbeiten)	1:inwork 9183,12076 9076,12054
 Mauerstr. (Bauarbeiten)	1:inwork 9108,11961 9076,12054 9059,12155
-Fehrbelliner Str.: keine Abbiegemöglichkeit in die Schönhauser Allee	2:inwork 10832,13877 10686,13947
 Mohrenstr. (Bauarbeiten)	1:inwork 9410,11803 9220,11781
 Mohrenstr. (Bauarbeiten)	1:inwork 9878,11857 9672,11833
 Richard-Sorge-Str. (Bauarbeiten, kann auf Gehweg umfahren werden)	1s:inwork 13468,12497 13381,12685
