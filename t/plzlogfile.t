@@ -89,9 +89,12 @@ my $lastdate;
 	exit 1;
     };
 
-    my $nextline = $LOGFILE->can("readline")
-	? sub { $LOGFILE->readline }
-	    : sub { $LOGFILE->getline };
+    my $nextline = $LOGFILE->can("getline")
+	           ? sub { $LOGFILE->getline }
+	           : do {
+		       warn "Fallback to old readline method";
+		       sub { $LOGFILE->readline };
+		   };
 
     while(defined($_ = $nextline->())) {
 	m{GET\s+\S+bbbike\.cgi\?(.*)\s+} or next;
