@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.36 2004/07/02 22:46:11 eserte Exp $
+# $Id: Makefile,v 1.37 2004/08/12 22:46:53 eserte Exp $
 #
 
 # Targets:
@@ -34,7 +34,8 @@ DEPLOY_TARGETS=		prepare-bbbike-data \
 			prepare-mapserver-dist \
 			prepare-touren-dist \
 			rsync \
-			test-on-remote
+			test-on-remote \
+			test-on-remote-and-send-mail
 DEPLOY_LOCAL_TARGETS=	${DEPLOY_TARGETS:S/prepare-mapserver-dist/prepare-mapserver-local-dist/:S/rsync//:S/test$/test-local/:S/test-on-remote/test-local/}
 
 RSYNC_PROG?=	rsync
@@ -278,6 +279,20 @@ test-on-remote:
 		cgi-mechanize.t \
 		cgi.t \
 		wapcgi.t \
+	'
+
+test-on-remote-and-send-mail:
+	ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
+	cd ${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/t && \
+	BBBIKE_TEST_CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin \
+	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/bbbike.cgi \
+	BBBIKE_TEST_WAPURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/wapbbbike.cgi \
+	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
+	    (perl -MTest::Harness -e "runtests(@ARGV)" \
+		cgihead.t \
+		cgi-mechanize.t \
+		cgi.t \
+		wapcgi.t | mail slaven@rezic.de ) & \
 	'
 
 test-local:

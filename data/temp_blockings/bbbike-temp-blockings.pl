@@ -474,4 +474,36 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Dietzgenstr. (Pankow) Richtung stadteinwärts zwischen Schillerstr. und Uhlandstr. Baustelle, Richtungsfahrbahn komplett gesperrt (bis 04.09.2004) ',
        type  => 'gesperrt',
      },
+     { from  => 1092240000, # 2004-08-11 18:00
+       until => 1092600000, # 2004-08-15 22:00
+       file  => 'kudamm_tauentzien.bbd',
+       text  => 'Zwischen Kreuzung Nürnberger Straße und Kreuzung Joachimstaler Straße in beiden Richtungen Veranstaltung (Global-City), gesperrt, Dauer: 12.08.2004 18:00 Uhr bis 15.08.2004 22:00 Uhr ',
+       type  => 'gesperrt',
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Hellersdorfer Straße (Hellersdorf) in beiden Richtungen zwischen Gülzower Straße und Heinrich-Grüber-Straße Straße vollständig gesperrt aufgrund eines Wasserrohrbruches.',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 22998,12453 22956,12669
+userdel	2 22998,12453 23090,12302
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       data => <<EOF,
+userdel	2 9475,18617 9301,18722
+userdel	2 9590,18548 9896,18343
+EOF
+       text  => 'Heinrich-Mann-Straße Berlin-Reinickendorf Richtung Berlin-Pankow Zwischen Heinrich-Mann-Straße und Grabbeallee Störungen durch geplatzte Wasserleitung, Straße gesperrt',
+       type  => 'gesperrt',
+     },
+     { from  => 1092520800, # 2004-08-15 00:00
+       until => 1093298400, # 2004-08-24 00:00
+       text  => 'OD Pritzwalk, zw. F.-Reuter-Str. und A.-Bartels-Weg; Brückenbauarbeiten; Vollsperrung: 16.08.2004-23.08.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -74489,80545 -74038,78181
+EOF
+     },
     );

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.80 2004/07/24 20:35:39 eserte Exp $
+# $Id: bbbike.cgi,v 6.81 2004/08/12 22:44:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -97,7 +97,8 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $bbbike_script $cgi $port
 	    $search_algorithm $use_background_image
 	    $use_apache_session $apache_session_module $cookiename
-	    @temp_blocking $use_cgi_compress_gzip $max_matches
+	    $bbbike_temp_blockings_file @temp_blocking
+	    $use_cgi_compress_gzip $max_matches
 	   );
 
 #XXX in mod_perl/Apache::Registry operation there are a lot of "shared
@@ -553,6 +554,11 @@ Set this to true for debugging purposes.
 
 $VERBOSE = 0;
 
+=item $bbbike_temp_blockings_file
+
+Full path to a bbbike-temp-blockings.pl file. See @temp_blocking for
+more information on the file format.
+
 =item @temp_blocking
 
 Array with temporary blocking elements. Each element is a hash with the
@@ -597,6 +603,13 @@ eval { local $SIG{'__DIE__'};
        #warn "$0.config";
        do "$0.config" };
 
+if (defined $bbbike_temp_blockings_file) {
+    do $bbbike_temp_blockings_file;
+    if (!@temp_blocking) {
+	warn "Could not load $bbbike_temp_blockings_file: $@";
+    }
+}
+
 if ($VERBOSE) {
     $StrassenNetz::VERBOSE    = $VERBOSE;
     $Strassen::VERBOSE        = $VERBOSE;
@@ -612,7 +625,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.80 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.81 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2550,8 +2563,8 @@ sub search_coord {
 	my $t = time;
 	my $index = 0;
 	for my $tb (@temp_blocking) {
-	    if (($t >= $tb->{from} &&
-		 $t <= $tb->{until}) ||
+	    if (((!defined $tb->{from} || $t >= $tb->{from}) &&
+		 (!defined $tb->{until} || $t <= $tb->{until})) ||
 		(defined $q->param("test") && grep { /^(?:custom|temp)[-_]blocking/ } $q->param("test"))) {
 		my $type = $tb->{type} || 'gesperrt';
 		push @current_temp_blocking, $tb;
@@ -2571,7 +2584,17 @@ sub search_coord {
 		my $tb = $current_temp_blocking[$i];
 		my $strobj;
 		if (!eval {
-		    $strobj = Strassen->new($tb->{file});
+		    if ($tb->{file}) {
+			$strobj = Strassen->new($tb->{file});
+		    } elsif ($tb->{data}) {
+			$strobj = Strassen->new_from_data_string($tb->{data});
+## XXX Funktioniert nicht so gut:
+# 			if ($bbbike_temp_blockings_file) {
+# 			    $strobj->{DependentFiles} = [ $bbbike_temp_blockings_file ];
+# 			}
+		    } else {
+			die "Neither file nor data found in entry";
+		    }
 		}) {
 		    warn $@ if $@;
 		    splice @current_temp_blocking, $i, 1;
@@ -5109,7 +5132,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/07/24 20:35:39 $';
+    my $cgi_date = '$Date: 2004/08/12 22:44:03 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

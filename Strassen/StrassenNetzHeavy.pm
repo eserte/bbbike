@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetzHeavy.pm,v 1.16 2004/07/21 23:58:28 eserte Exp $
+# $Id: StrassenNetzHeavy.pm,v 1.17 2004/08/12 22:43:34 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -182,9 +182,10 @@ sub make_net_cat {
 
     my $cachefile;
     if ($cacheable) {
-	my @src = $self->sourcefiles;
+	#XXXmy @src = $self->sourcefiles;
+	my @src = $self->dependent_files;
 	if (!@src || grep { !defined $_ } @src) {
-	    warn "Not cacheable...";
+	    warn "Not cacheable..." if $VERBOSE;
 	    $cacheable = 0;
 	} else {
 	    $cachefile = $self->get_cachefile;
@@ -193,9 +194,7 @@ sub make_net_cat {
 	    if (defined $net2name && defined $net) {
 		$self->{Net2Name} = $net2name;
 		$self->{Net} = $net;
-		if ($VERBOSE) {
-		    warn "Using cache for $cachefile\n";
-		}
+		warn "Using cache for $cachefile\n" if $VERBOSE;
 		return;
 	    }
 	}

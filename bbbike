@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.140 2004/08/09 22:47:36 eserte Exp eserte $
+# $Id: bbbike,v 3.141 2004/08/12 22:46:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -212,7 +212,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.140 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.141 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -8736,11 +8736,18 @@ sub activate_temp_blockings {
 	do $file; # XXX Safe?
 	my @s;
 	for my $o (@temp_blocking) {
-	    if ($o->{from} < $now && $o->{until} > $now) {
-		my $f = "$temp_blockings_dir/$o->{file}";
-		my $s = Strassen->new($f);
+	    if ((!defined $o->{from} || $o->{from} < $now) &&
+		(!defined $o->{until} || $o->{until} > $now)) {
+		my $s;
+		my $f;
+		if ($o->{file}) {
+		    $f = "$temp_blockings_dir/$o->{file}";
+		    $s = Strassen->new($f);
+		} else {
+		    $s = Strassen->new_from_data_string($o->{data});
+		}
 		my $new_s = Strassen->new;
-		push @{$new_s->{DependentFiles}}, $f;
+		push @{$new_s->{DependentFiles}}, $f if $f;
 		$s->init;
 		while(1) {
 		    my $ret = $s->next;

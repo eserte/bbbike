@@ -1,4 +1,4 @@
-# $Id: comments_path-orig,v 4.2 2004/08/01 17:40:30 eserte Exp $
+# $Id: comments_path-orig,v 4.3 2004/08/12 23:58:18 eserte Exp eserte $
 # CP; : Kommentar an Punkt B bei Fahrt von A nach C
 # CP  : wie "CP;", Kommentar gültig für beide Fahrtrichtungen
 # CS; : Kommentar gültig für Strecke in einer Richtung
@@ -86,3 +86,5 @@ Ausschilderung nach Luisenthal (?) folgen	CS; 41134,76881 41143,76365
 dem Schotterweg folgen	CP; 24225,37587 24193,37725 24218,37900
 Ausgeschildert: Campingplatz Warnitz	CP; 40653,83900 40756,84209 40768,84393
 Ausgeschildert: Werneuchen, Wegendorf	CP; * 32325,18434 32343,18775
+Hauptstr.: wegen Straßenbahn so früh wie möglich auf die linke Gehwegseite wechseln	PI; 16374,9760 16262,9925 16046,9746
+Hauptstr.: wegen Straßenbahn zunächst auf der linken Gehwegseite weiterfahren	PI; 16046,9746 16262,9925 16138,10105

@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.4 2004/08/01 17:41:48 eserte Exp $
+# $Id: qualitaet_s-orig,v 4.5 2004/08/12 23:57:42 eserte Exp eserte $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -216,8 +216,8 @@ Wuhlheide: Waldweg	Q2 21378,5843 22012,6219
 Mittelweg: Kopfsteinpflaster	Q2 12923,7611 12781,7691 12644,7688 12516,7718
 Mittelweg: Kopfsteinpflaster	Q3 12182,7824 12335,7770
 Karl-Marx-Platz/Richardplatz: Kopfsteinpflaster	Q2 12980,7597 13177,7644 13297,7654 13429,7689
-Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622 13432,7649 13429,7689
-Richardstr.: Kopfsteinpflaster, OK	Q1 13226,7775 13297,7654 13303,7622 13336,7467 13369,7307
+Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622 13400,7642 13432,7649 13429,7689
+Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 13226,7775 13297,7654 13303,7622 13336,7467 13369,7307
 Heerstr.: Kopfsteinpflaster auf den Parallelstraßen	Q2 467,11221 41,11168 -572,11092 -1269,11008 -1499,10990 -2212,11196
 Alt-Rudow: Kopfsteinpflaster	Q2 16960,1282 16838,1457
 Fichtestr.: Kopfsteinpflaster, mit Teer gefugt	Q2 11108,9194 11064,9543
@@ -347,7 +347,7 @@ Tiergarten: Parkweg	Q1 8214,12205 8220,11844 8223,11700
 Tiergarten: Parkweg	Q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
 Parkweg: teils sehr gutes Kopfsteinpflaster	Q1 14310,9692 14452,9919 14656,10197
 Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q0 14373,10046 14192,10145 13903,10237
-Hasenheide: Parkweg, teilweise etwas holprig	Q1 11308,8317 11128,9100 11131,9189
+Hasenheide: asphaltiert	Q0 11308,8317 11128,9100 11131,9189
 Hasenheide, zur Lilienthalstr.: Parkweg	Q1 10709,9192 11128,9100
 Carl-Herz-Ufer: Kopfsteinpflaster (kann auf Uferweg umgangen werden)	Q2 10601,9922 10490,10080
 Carl-Herz-Ufer: Kopfsteinpflaster (kann auf breitem Uferweg umgangen werden)	Q2 10168,10085 10313,10084 10490,10080
@@ -485,7 +485,7 @@ Uferweg am Schlachtensee: Waldweg OK, manchmal etwas sandig	Q1 -3348,3055 -3384,
 Weg am Teufelssee: Waldweg	Q1 -898,9375 -942,9251 -1047,9123
 Schwarzer Weg (Oberschöneweide): unbefestigter Weg, holprig	Q2 17298,8147 17297,7752 17301,7619
 Möllhausenufer: Kopfsteinpflaster	Q2 23305,1147 23520,1194 23747,1243
-Am Langen See: Waldweg, meist OK, teilweise Wurzeln	Q1 23747,1243 23968,1352 24343,1155 24462,988 24652,915 24949,806 25333,834 25594,921 25881,817 26052,520 26041,228 26385,-195 26423,-140 26628,-313 26687,-316 26751,-460 26944,-639 26952,-744 27141,-785 27329,-1183 27365,-1357 27357,-1545
+Am Langen See: Waldweg, meist OK, teilweise Wurzeln	Q1 23747,1243 23968,1352 24343,1155 24462,988 24652,915 24949,806 25333,834 25559,890 25881,817 26052,520 26041,228 26385,-195 26423,-140 26628,-313 26687,-316 26751,-460 26944,-639 26952,-744 27141,-785 27329,-1183 27365,-1357 27357,-1545
 Zur Fähre: Waldweg	Q2 28973,3296 29067,3369 29064,3401
 Radweg am Müggelsee: Waldweg OK, trotz Schotter	Q1 28829,3295 28723,3283 28695,3245 28485,3206 27984,2995 27732,2671 27528,2469 27314,2282 27218,2300 26802,2374 26460,2428 26026,2532 25948,2474
 Rheinsteinstr.: Kopfsteinpflaster	Q2 18998,8784 19173,8857 19510,9035
@@ -586,7 +586,8 @@ Dircksenstr.: Kopfsteinpflaster	Q2 11283,12278 11209,12430 11156,12581 11062,127
 Ruhwaldweg: Kopfsteinpflaster	Q2 801,13323 830,13353
 Bahnhofvorplatz S-Bhf. Priesterweg: Kopfsteinpflaster	Q2 7217,6065 7251,6071
 Hegemeisterweg: Kopfsteinpflaster	Q2 17217,8377 17520,8219
-Hegemeisterweg: Waldweg, teilweise mit Kopfsteinen	Q2 17803,8079 18387,7742
+Hegemeisterweg: Waldweg, teilweise mit Kopfsteinen	Q2 17803,8079 17987,7973 18387,7742
+(Am Walde - Hegemeisterweg): Waldweg	Q2 17775,7874 17987,7973
 Am Fichtenberg: Kopfsteinpflaster, OK	Q1 4337,5108 4262,5168 4165,5243 4134,5284
 Tietzenweg: mäßiges Kopfsteinpflaster	Q2 3643,4232 3768,4040 3869,3894
 Viktoriastr.: schlechtes Kopfsteinpflaster	Q3 3768,4040 3936,3997
@@ -652,8 +653,7 @@ Werderstr.: Kopfsteinpflaster	Q2 8988,5821 8990,5950
 Wikingerufer: Kopfsteinpflaster	Q2 5369,12529 5391,12626 5376,12781 5372,12818 5388,12885
 (Gemeindewäldchen): Parkweg	Q1 461,3118 82,3166
 Beerenstr.: Kopfsteinpflaster	Q2 82,3166 -765,3253 -1117,3317
-#: unverified_by ADFC-Karte
-Jupiterstr.: mäßig geeignet	Q2 14820,6568 15043,6799
+Jupiterstr.: Kopfsteinpflaster	Q2 14850,6546 15043,6799
 #: unverified_by ADFC-Karte
 Heidekampweg: mäßig geeignet	Q2 15719,6218 15667,6648
 #: unverified_by ADFC-Karte
@@ -935,3 +935,17 @@ Bennigsenstr.: guter Asphalt	Q0 5807,7771 5957,7765 6225,7776
 Lauterstr.: guter Asphalt	Q0 5812,7637 5807,7771 5814,7818
 Friedrich-Wilhelm-Platz: guter Asphalt	Q0 5341,7203 5310,7325 5315,7376 5357,7381
 #: ^^^
+(Kynaststr. - Uferwanderweg): Parkweg	Q2 14828,10628 14887,10584
+(Paul-und-Paula-Ufer): Parkweg	Q2 14856,10459 14887,10584 14990,10581 15100,10637 15209,10581
+Am Rummelsburger See: glatt gepflastert	Q0 15209,10581 15453,10415
+Am Rummelsburger See: Parkweg	Q2 15453,10415 15456,10356 15518,10234 15625,10187 15828,9875 15931,9846
+Am Rummelsburger See: Betonweg	Q0 15931,9846 16046,9746 16262,9925
+Tauchersteig: guter Asphalt	Q0 22074,2666 21770,2535
+Am Kanal: guter Asphalt	Q0 21750,2593 21131,2454
+Am Kanal: Feldweg	Q2 21131,2454 20928,2412
+Am Teltowkanal: Feldweg	Q2 20810,2398 20510,2321 20490,2276 20234,2254
+Am Teltowkanal: Kopfsteinpflaster	Q2 20234,2254 20140,2260
+Akeleiweg: Kopfsteinpflaster	Q2 17631,3200 17603,3240
+Winckelmannstr.: Kopfsteinpflaster Richtung Norden	Q2; 17465,3768 17468,3979
+Winckelmannstr.: Kopfsteinpflaster Richtung Süden	Q2; 17428,4503 17506,4235 17468,3979
+Zwiestädter Str.: Asphalt	Q0 13510,7535 13400,7642

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.44 2004/06/20 22:43:47 eserte Exp $
+# $Id: Core.pm,v 1.45 2004/08/12 22:44:40 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -286,6 +286,12 @@ sub new_from_data_ref {
     $self->{Data} = $data_ref;
     $self->{Pos}  = 0;
     bless $self, $class;
+}
+
+### AutoLoad Sub
+sub new_from_data_string {
+    my($class, $string) = @_;
+    $class->new_from_data(map { "$_\n" } split /\n/, $string);
 }
 
 # Erzeugt ein neues Strassen-Objekt mit Restriktionen

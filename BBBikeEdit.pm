@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.70 2004/07/29 22:11:58 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.71 2004/08/12 22:46:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3068,6 +3068,7 @@ sub temp_blockings_editor {
     my $initialdir = $BBBike::check_bbbike_temp_blockings::temp_blockings_dir . "/"; # XXX del "$FindBin::RealBin/misc/temp_blockings/";
     my $pl_file = $BBBike::check_bbbike_temp_blockings::temp_blockings_pl; # XXX del "$initialdir/bbbike-temp-blockings.pl";
     my $file = $initialdir;
+    my $as_data;
     my $prewarn_days = 1;
     my $blocking_type = "gesperrt";
     my $edit_after = 1;
@@ -3076,6 +3077,8 @@ sub temp_blockings_editor {
     my $pe;
     Tk::grid($t->Label(-text => M("bbd-Datei").":"),
 	     $pe = $t->PathEntry(-textvariable => \$file),
+	     $t->Checkbutton(-text => "as data",
+			     -variable => \$as_data),
 	     -sticky => "w",
 	    );
     $pe->focus;
@@ -3094,13 +3097,18 @@ sub temp_blockings_editor {
 	)->place(-relx => 1, -rely => 1, -anchor => "se");
 
     my($start_w, $end_w);
+    my($start_undef, $end_undef);
     Tk::grid($t->Label(-text => M"Start"),
 	     $start_w = $t->Date,
+	     $t->Checkbutton(-text => "undef",
+			     -variable => \$start_undef),
 	     -sticky => "w",
 	    );
 
     Tk::grid($t->Label(-text => M"Ende"),
 	     $end_w = $t->Date,
+	     $t->Checkbutton(-text => "undef",
+			     -variable => \$end_undef),
 	     -sticky => "w",
 	    );
 
@@ -3186,18 +3194,20 @@ sub temp_blockings_editor {
     Tk::grid($t->Button
 	     (-text => "Ok",
 	      -command => sub {
-		  if (!defined $file || $file =~ /^\s*$/) {
-		      $t->messageBox(-message => "Dateiname fehlt");
-		      return;
-		  }
-		  if (-d $file) {
-		      $t->messageBox(-message => "Bitte neue bbd-Datei auswählen");
-		      return;
-		  }
-		  if (-e $file) {
-		      my $ans = $t->messageBox(-type => "YesNo", -icon => "question", -message => "Soll die existierende Datei `$file' überschrieben werden?");
-		      if ($ans !~ /yes/i) {
+		  if (!$as_data) {
+		      if (!defined $file || $file =~ /^\s*$/) {
+			  $t->messageBox(-message => "Dateiname fehlt");
 			  return;
+		      }
+		      if (-d $file) {
+			  $t->messageBox(-message => "Bitte neue bbd-Datei auswählen");
+			  return;
+		      }
+		      if (-e $file) {
+			  my $ans = $t->messageBox(-type => "YesNo", -icon => "question", -message => "Soll die existierende Datei `$file' überschrieben werden?");
+			  if ($ans !~ /yes/i) {
+			      return;
+			  }
 		      }
 		  }
 		  my $blocking_text = $get_text->();
@@ -3206,13 +3216,22 @@ sub temp_blockings_editor {
 		      $t->messageBox(-message => "Beschreibender Text fehlt");
 		      return;
 		  }
-		  my $start_time = $start_w->get;
-		  my $end_time   = $end_w->get;
-		  if (!defined $start_time || !defined $end_time) {
+		  my $start_time = $start_undef ? undef : $start_w->get;
+		  my $end_time   = $end_undef   ? undef : $end_w->get;
+		  if ((!$start_undef && !defined $start_time) ||
+		      (!$end_undef && !defined $end_time)) {
 		      $t->messageBox(-message => "Start/Endzeit fehlt");
 		      return;
 		  }
-		  $start_time -= $prewarn_days * 86400;
+		  if ($start_time) {
+		      $start_time -= $prewarn_days * 86400;
+		  }
+
+		  if ($as_data) {
+		      require File::Temp;
+		      (my($fh), $file) = File::Temp::tempfile(SUFFIX => ".bbd",
+							      UNLINK => 1);
+		  }
 
 		  main::save_user_dels($file, -type => $blocking_type);
 		  if ($auto_cross_road_blockings) {
@@ -3241,12 +3260,23 @@ sub temp_blockings_editor {
 		  if ($blocking_type =~ /^handicap/) {
 		      $blocking_type = "handicap";
 		  }
+		  $start_time = "undef" if $start_undef;
+		  $end_time = "undef" if $end_undef;
 		  my $pl_entry = <<EOF;
-     { from  => $start_time, # @{[ POSIX::strftime("%Y-%m-%d %H:%M", localtime $start_time) ]}
-       until => $end_time, # @{[ POSIX::strftime("%Y-%m-%d %H:%M", localtime $end_time) ]}
-       file  => '$rel_file',
+     { from  => $start_time, # @{[ $start_undef ? "" : POSIX::strftime("%Y-%m-%d %H:%M", localtime $start_time) ]}
+       until => $end_time, # @{[ $end_undef ? "XXX" : POSIX::strftime("%Y-%m-%d %H:%M", localtime $end_time) ]}
        text  => '$blocking_text',
        type  => '$blocking_type',
+EOF
+		  if ($as_data) {
+		      my $s = Strassen->new($file);
+		      $pl_entry .= "      data  => <<EOF,\n" . $s->as_string . "EOF\n";
+		  } else {
+		      $pl_entry .= <<EOF;
+       file  => '$rel_file',
+EOF
+		  }
+		  $pl_entry .= <<EOF;
      },
 EOF
 
