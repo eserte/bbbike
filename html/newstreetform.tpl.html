@@ -47,6 +47,20 @@
  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
  <link rev="made" href="mailto:slaven@rezic.de" />
  <link rel="stylesheet" type="text/css" href="bbbike.css" />
+ <script>
+function check() {
+  if (!check_strname()) return false;
+  return true;
+}
+function check_strname() {
+  var frm = document.forms.newstreet;
+  if (frm.elements.strname.value == "") {
+    alert("Der Straßenname darf nicht leer sein!");
+    return false;
+  }
+  return true;
+}
+ </script>
 </head>
 <body>
  <h1>Neue Straße für BBBike</h1>
@@ -55,8 +69,8 @@
   <table>
    <tr>
     <td>Straßenname</td>
-    <td><input name="strname" [% INCLUDE text_default inputname="strname" %]/>
-        (ggfs. mit Bezirk)</td>
+    <td><input name="strname" [% INCLUDE text_default inputname="strname" %] size="30"/>
+        (ggfs. mit Bezirk oder Ortsteil)</td>
    </tr>
 
    <tr><td colspan="3"><hr /></td></tr>
@@ -168,16 +182,16 @@
 
    <tr>
     <td>Dein Name</td>
-    <td><input name="author" [% INCLUDE text_default inputname="author" %]></td>
+    <td><input name="author" [% INCLUDE text_default inputname="author" %] size="30"></td>
    </tr>
    <tr>
     <td>Deine E-Mail</td>
-    <td><input name="email" [% INCLUDE text_default inputname="email" %]></td>
+    <td><input name="email" [% INCLUDE text_default inputname="email" %] size="30"></td>
    </tr>
 
    <tr>
     <td></td>
-    <td><input type="submit" value="Abschicken"></td>
+    <td><input type="submit" onclick="return check()" value="Abschicken"></td>
    </tr>
 
    <tr>
