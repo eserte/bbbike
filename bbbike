@@ -1211,25 +1211,6 @@ if ($Tk::VERSION < 803 || $Tk::VERSION >= 804.025) {
 eval { local $SIG{'__DIE__'};
        do "FindBin::RealBin/$progname" . "_1.config" };
 
-#XXXXXX
-#  *rot_text = \&rot_text_old;
-#  if (0) { # XXX rot_text_newer ist wesentlich *langsamer* als rot_text_old
-#      # X11::Protocol scheint Speicherfresser zu sein
-#      use vars qw($use_rotx11font); # XXX
-#      if (!defined $x11) {
-#  	eval '
-#  	    require X11::Protocol;
-#  	    $x11 = X11::Protocol->new;
-#  	    use lib "$ENV{HOME}/devel";
-#  	    require Tk::RotX11Font;
-#  	    if ($use_font_rot) {
-#  		$use_rotx11font = 1;
-#  		*rot_text = \&rot_text_newer;
-#  	    }
-#  	';
-#      }
-#  }
-
 ## DEBUG_BEGIN
 #BEGIN{mymstat("irgendwo in der mitte BEGIN");} mymstat("irgendwo in der mitte");
 ## DEBUG_END
@@ -7984,6 +7965,10 @@ sub plotstr {
 	return;
     }
 
+    if ($str_name_draw{$abk}) {
+	require Tk::RotFont;
+    }
+
     my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
     if ($std && $lazy && $has_filename) {
 	return bbbikeexp_add_data("str", $abk, $str);
@@ -8096,10 +8081,6 @@ sub plotstr {
 	    $use_stippleline = 1;
 	    require Tk::StippleLine;
 	}
-    }
-
-    if ($str_name_draw{$abk}) {
-	require Tk::RotFont;
     }
 
     destroy_delayed_restack();

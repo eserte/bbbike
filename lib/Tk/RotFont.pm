@@ -40,7 +40,7 @@ if (!$Tk::RotFont::NO_X11) { # XXX rot_text_newer ist wesentlich *langsamer* als
 	eval '
 	    require X11::Protocol;
 	    $main::x11 = X11::Protocol->new;
-	    use lib "$ENV{HOME}/devel";
+	    use lib "XXX$ENV{HOME}/devel";
 	    require Tk::RotX11Font;
 	    if ($main::use_font_rot) {
 		$use_rotx11font = 1;

@@ -24,6 +24,7 @@ sub teaser {
     my @teasers_mandatory = (
 			     #teaser_perltk_newrelease(),
 			     teaser_mapserver(),
+			     teaser_dobli(),
 			    );
     my $sub = "teaser_" . $teasers_optional[int(rand(@teasers_optional))];
     my $t = eval $sub . '()';
@@ -78,6 +79,12 @@ sub teaser_mapserver {
     return undef if !$mapserver_url;
     <<EOF;
 <small>Die BBBike-Kartendaten mit <a href="@{[ CGI::escapeHTML($mapserver_url) ]}">Mapserver</a> visualisiert.</small>
+EOF
+}
+
+sub teaser_dobli {
+    <<EOF;
+<div style="text-align:center; width:100%;"><a href="http://www.semlin.de/dobli"><img border="0" src="http://www.tagesspiegel.de/dobli/bilder/kampagne170.gif" alt="Dobli-Spiegel" /></a></div>
 EOF
 }
 

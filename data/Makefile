@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.7 2004/04/27 22:25:47 eserte Exp $
+# $Id: Makefile,v 2.7 2004/04/27 22:25:47 eserte Exp eserte $
 #
 
 BBBIKEDIR=		..
@@ -82,7 +82,7 @@ strassen:	.strassen.tmp plaetze
 #   make -k origconvert origconvert-all
 #
 # Quick diff between both directories:
-# diff --exclude="*~" --exclude="*.st" --exclude="*-info" --exclude="*.desc" --exclude=BASE --exclude=".check*" --exclude=".*" --exclude="*-orig" --exclude "GNUmakefile*" --exclude "*.coords.data" --exclude RCS --exclude README --exclude "add_*" --exclude "inaccessible_strassen" --exclude "innerberliner_grenze" --exclude "kinos" --exclude "kneipen" --exclude "restaurants*" --exclude "old" --exclude "oldcoord" --exclude "orig" --exclude "multi_bez_str" --exclude "sehenswuerdigkeit_img" --exclude "str_cont_ausnahme" --exclude "umsteigebhf" -ru /tmp/convert ~/src/bbbike/data | less
+# diff --exclude="*~" --exclude="*.st" --exclude="*-info" --exclude="*.desc" --exclude=BASE --exclude=".check*" --exclude=".nextrun*" --exclude=".*" --exclude="*-orig" --exclude "GNUmakefile*" --exclude "*.coords.data" --exclude RCS --exclude README --exclude "add_*" --exclude "inaccessible_strassen" --exclude "innerberliner_grenze" --exclude "kinos" --exclude "kneipen" --exclude "restaurants*" --exclude "old" --exclude "oldcoord" --exclude "orig" --exclude "multi_bez_str" --exclude "sehenswuerdigkeit_img" --exclude "str_cont_ausnahme" --exclude "umsteigebhf" -ru /tmp/convert ~/src/bbbike/data | less
 #
 
 ORIGCONVERTDIR=/tmp/convert
@@ -427,6 +427,9 @@ force_check: remove_checks check
 remove_checks:
 	rm -f .check_*
 
+remove_nextruns:
+	rm -f .nextrun_*
+
 # checks
 check:	.check_strassen1 .check_strassen2 \
 	.check_plaetze1 .check_plaetze2 .check_hoehe \
@@ -585,10 +588,9 @@ check:	.check_strassen1 .check_strassen2 \
 	@touch $@
 
 .check_temp_blockings:	${MISCDIR}/temp_blockings/*.bbd strassen
-	for i in ${MISCDIR}/temp_blockings/*.bbd; do \
-	    echo $$i; \
-	    $(CHECK_NEIGHBOUR) -type standard -data $$i -against strassen; \
-	done
+	cat ${MISCDIR}/temp_blockings/*.bbd > /tmp/all_temp_blockings.bbd
+	$(CHECK_NEIGHBOUR) -type standard -data /tmp/all_temp_blockings.bbd -against strassen
+	rm -f /tmp/all_temp_blockings.bbd
 	@touch $@
 
 #.PHONY: .modified

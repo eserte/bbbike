@@ -5,10 +5,10 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.66 2004/03/22 23:48:07 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.67 2004/04/30 22:56:03 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -609,7 +609,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.66 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.67 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -4249,7 +4249,7 @@ sub header {
 	     -BGCOLOR => '#ffffff',
 	     ($use_background_image && !$printmode ? (-BACKGROUND => "$bbbike_images/bg.jpg") : ()),
 	     -meta=>{'keywords'=>'berlin fahrrad route bike karte suche cycling route routing',
-		     'copyright'=>'(c) 1998-2003 Slaven Rezic',
+		     'copyright'=>'(c) 1998-2004 Slaven Rezic',
 		    },
 	     -author => $BBBike::EMAIL,
 	    );
@@ -5020,7 +5020,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
+Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
 This is free software; you can redistribute it and/or modify it under the
 terms of the GNU General Public License, see the file COPYING.
 
