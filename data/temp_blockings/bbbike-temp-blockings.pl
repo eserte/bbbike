@@ -1157,7 +1157,7 @@ userdel	q4 3125,88753 2788,89447
 EOF
      },
      { from  => 1100942003, # 2004-11-20 10:13
-       until => 1103151599, # 2004-12-15 23:59
+       until => 1102713377, # 2004-12-15 23:59 (früher beendet)
        text  => 'Volkradstr. (Friedrichsfelde) in Richtung Rummelsburger Str. ab Sewanstr. Baustelle, Fahrtrichtung gesperrt, Umleitung: Sewanstr. - Rummelsburger Str. (bis Mitte 12.2004)',
        type  => 'handicap',
        data  => <<EOF,
@@ -1258,6 +1258,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 15573,4122 15608,4175
+EOF
+     },
+     { from  => 1102712612, # 2004-12-10 22:03
+       until => 1102910400, # 2004-12-13 05:00
+       text  => 'Schulze-Boysen-Str. (Lichtenberg) in beiden Richtungen zwischen Wiesenweg und Pfarrstr. Kranarbeiten, Straße vollständig gesperrt (bis 13.12.2004 ca. 5:00 Uhr)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 15452,11330 15480,11392
+EOF
+     },
+     { from  => 1105225200, # 2005-01-09 00:00
+       until => 1122760800, # 2005-07-31 00:00
+       text  => 'K 6938; (Görzke-Hohenlobbese); zw. OL Görzke und Abzw. Reppinichen, Brücke Brücken- und Straßenbau Vollsperrung 10.01.2005-30.07.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -59599,-27568 -59265,-27286
 EOF
      },
     );
