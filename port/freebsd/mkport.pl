@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mkport.pl,v 1.23 2004/03/15 21:39:38 eserte Exp $
+# $Id: mkport.pl,v 1.23 2004/03/15 21:39:38 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2004 Slaven Rezic. All rights reserved.
@@ -175,8 +175,9 @@ close DISTINFO;
 
 substitute("pkg-descr",   "$portdir/pkg-descr");
 substitute("pkg-message", "$portdir/pkg-message");
-system("cd $tmpdir/BBBike; portlint -a -b -c");
-system("cd $tmpdir; tar cfvz $tmpdir/bbbike-fbsdport.tar.gz BBBike");
+#system("cd $tmpdir/BBBike && portlint -a -b -c -t");
+system("cd $tmpdir/BBBike && port test");
+system("cd $tmpdir && tar cfvz $tmpdir/bbbike-fbsdport.tar.gz BBBike");
 
 sub dircmp {
     my($a, $b) = @_;
