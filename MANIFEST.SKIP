@@ -88,6 +88,8 @@ cgi/bbbikesoapserver.cgi$
 cgi/global.asa$
 cgi/test.cgi$
 data/\.check_
+data/\.fragezeichen_
+data/.custom_files$
 data/BASE
 data/old/
 data/new/
@@ -96,6 +98,7 @@ data/add_str$
 data/add_plaetze$
 data/str_cont_ausnahme$
 data/inaccessible_strassen$
+data/inaccessible_landstrassen$
 data/Potsdam.coords.data$
 data/\.strassen\.tmp
 # XXX warum geht das hier nicht?

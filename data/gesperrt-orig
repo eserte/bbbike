@@ -5,7 +5,7 @@
 #
 # die Richtung gibt bei Einbahnstraßen die Sperrung an
 #
-Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8525,10626 8430,10710
+Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
 Kanalstraßen Nordufer	1 6880,11110 7160,11225 7251,11202 7333,11179 7595,11086 7873,11142 7993,11137 8241,11024
 # Hier kann ein kurzes Stück auf dem Gehweg überbrückt werden
@@ -613,7 +613,7 @@ B 167; (Herzberg-Neuruppin); OL Alt Ruppin, Rhinbrücke    Brückenneubau    Volls
 #XXX del: L 142; OD Wusterhausen, Brücke über Klempnitz; Brückensanierung; Vollsperrung; 04.05.2004-30.08.2004	2:inwork -55166,53457 -54776,53333
 #XXX del L 55; (Calau-Boblitz); zwischen Bischdorf und Groß Lübbenau; Deckenerneuerung; Vollsperrung; 29.03.2004-14.05.2004	2:inwork 50968,-63078 50909,-65254
 #XXX del L 239; (Kerkow (Angermünde)-Joachimsthal); zwischen Joachimsthal und    Glambeck    Instandsetzung Durchlässe    Vollsperrung    10.05.2004-11.06.2004	2:inwork 34297,66446 34612,66468 35512,66695
-L 592; Brücken über Pulsnitz,Binnengraben und zwei Durchlässe; Ersatzneubau; Vollsperrung; 10.05.2004-19.11.2004	2:inwork 25830,-109886 26164,-109378
+#XXX del L 592; Brücken über Pulsnitz,Binnengraben und zwei Durchlässe; Ersatzneubau; Vollsperrung; 10.05.2004-19.11.2004	2:inwork 25830,-109886 26164,-109378
 #XXX del L 75; (Karl-Marx-Straße); von Dorfstraße bis Friedhofsweg; Straßenbauarbeiten; Vollsperrung; 24.05.2004-20.12.2004	2:inwork 13225,-681 13309,-1268
 #XXX del L 912; (Päwesin-Gortz); zw. OA Päwesin u. Bagow, Brücke über Seeverbindung; Brückenneubau; Vollsperrung; 10.05.2004-24.10.2004	2:inwork -36427,10861 -37026,11176
 #XXX del L 71; (B 96-Drahnsdorf); bei Krossen Brücke über Vorflutkanal; Brückenneubau; Vollsperrung; 25.03.2004-31.07.2004	2:inwork 24195,-54396 24639,-53978

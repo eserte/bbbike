@@ -1132,4 +1132,36 @@ EOF
 userdel	2 -26403,85177 -26316,84900
 EOF
      },
+     { from  => 1100991600, # 2004-11-21 00:00
+       until => 1102719600, # 2004-12-11 00:00
+       text  => 'L 166; (B 5-Friesack-Garz); zw. B 5 u. Friesack u. KG nördl. Zootzen Straßenbauarbeiten Vollsperrung 22.11.2004-10.12.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -45632,38429 -46170,36687
+EOF
+     },
+     { from  => 1101078000, # 2004-11-22 00:00
+       until => 1101596400, # 2004-11-28 00:00
+       text  => 'L 201; (Nauener Chaussee); OD Falkensee, Bahnübergang am Finkenkrug Gleisbauarbeiten Vollsperrung 23.11.2004-27.11.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -13743,20218 -13941,20658
+EOF
+     },
+     { from  => 1100559600, # 2004-11-16 00:00
+       until => 1103583600, # 2004-12-21 00:00
+       text  => 'L 23; (Templin-Lychen); OD Lychen Straßenbau Vollsperrung 17.11.2004-20.12.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 3125,88753 2788,89447
+EOF
+     },
+     { from  => 1100942003, # 2004-11-20 10:13
+       until => 1103151599, # 2004-12-15 23:59
+       text  => 'Volkradstr. (Friedrichsfelde) in Richtung Rummelsburger Str. ab Sewanstr. Baustelle, Fahrtrichtung gesperrt, Umleitung: Sewanstr. - Rummelsburger Str. (bis Mitte 12.2004)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 17427,10259 17621,10994
+EOF
+     },
     );

@@ -3118,7 +3118,7 @@ sub temp_blockings_editor {
     my $as_data;
     my $prewarn_days = 1;
     my $blocking_type = "gesperrt";
-    my $edit_after = 1;
+    my $edit_after = 0;
     my $do_delete_blockings = 1;
     my $auto_cross_road_blockings = 0;
     my $change_pl_file = 1;
