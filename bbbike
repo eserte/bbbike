@@ -6184,7 +6184,7 @@ sub std_p_binding {
 	$c->bind($tag, '<Any-Leave>' => sub {
 		     $layer_pre_leave_command{$tag}->()
 			 if exists $layer_pre_leave_command{$tag};
-		     leavepoint($_[0]);
+		     leavepoint(@_);
 		     $layer_post_leave_command{$tag}->()
 			 if exists $layer_post_leave_command{$tag};
 		 });

@@ -1012,8 +1012,8 @@ userdel	2 10170,73230 8656,71489
 EOF
      },
      { from  => 1098568800, # 2004-10-24 00:00
-       until => 1100818800, # 2004-11-19 00:00
-       text  => 'L 16; (Siedl.Schönwalde-Pausin); Bahnübergang Gleisbauarbeiten Vollsperrung; Umleitung 25.10.2004-18.11.2004 ',
+       until => 1102719600, # 2004-12-11 00:00
+       text  => 'L 16; (Siedl.Schönwalde-Pausin); Bahnübergang Gleisbauarbeiten Vollsperrung; Umleitung 25.10.2004-10.12.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -10559,23255 -10737,23418

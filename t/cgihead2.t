@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.5 2004/11/30 08:26:46 eserte Exp $
+# $Id: cgihead2.t,v 1.6 2004/12/02 23:09:17 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -64,7 +64,11 @@ $ua->agent('BBBike-Test/1.0');
 for my $var (@var) {
     for my $url (@{ $url{$var} }) {
 	ok(defined $url, "$var -> $url");
-	my $req = $ua->head($url);
+	my $method = "head";
+	if ($url =~ m{user.cs.tu-berlin.de}) {
+	    $method = "get"; # HEAD does not work here
+	}
+	my $req = $ua->$method($url);
     SKIP: {
 	    skip("No internet available", 1)
 		if ($req->code == 500 && $req->message =~ /Bad hostname|No route to host/i);
