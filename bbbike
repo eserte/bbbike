@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.135 2004/06/15 22:53:21 eserte Exp $
+# $Id: bbbike,v 3.135 2004/06/15 22:53:21 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -12062,19 +12062,21 @@ sub scale_width {
  	if ($sperre_type =~ /^sperre[12]/) {
  	    my $new_length = get_line_length($sperre_type);
 	    my $old_length = get_line_length($sperre_type, $old_scale) * $scale/$old_scale;
-	    my $f = $new_length / $old_length;
-	    foreach my $item ($c->find("withtag", $sperre_type)) {
-		if ($c->type($item) ne 'image') {
-		    my($x1,$y1,$x2,$y2) = $c->coords($item);
-		    my($xm,$ym) = (($x2+$x1)/2, ($y2+$y1)/2);
-		    my $xd1 = $x1-$xm;
-		    my $xd2 = $x2-$xm;
-		    my $yd1 = $y1-$ym;
-		    my $yd2 = $y2-$ym;
-		    $c->coords($item,
-			       $xm+$xd1*$f, $ym+$yd1*$f,
-			       $xm+$xd2*$f, $ym+$yd2*$f,
-			      );
+	    if ($old_length) { # XXX when may $old_length be 0?
+		my $f = $new_length / $old_length;
+		foreach my $item ($c->find("withtag", $sperre_type)) {
+		    if ($c->type($item) ne 'image') {
+			my($x1,$y1,$x2,$y2) = $c->coords($item);
+			my($xm,$ym) = (($x2+$x1)/2, ($y2+$y1)/2);
+			my $xd1 = $x1-$xm;
+			my $xd2 = $x2-$xm;
+			my $yd1 = $y1-$ym;
+			my $yd2 = $y2-$ym;
+			$c->coords($item,
+				   $xm+$xd1*$f, $ym+$yd1*$f,
+				   $xm+$xd2*$f, $ym+$yd2*$f,
+				  );
+		    }
  		}
  	    }
 	}

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_neighbour,v 1.15 2004/05/08 21:37:41 eserte Exp $
+# $Id: check_neighbour,v 1.16 2004/06/18 23:20:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2004 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use Strassen::MultiStrassen;
 use Strassen::StrassenNetz;
 eval 'use BBBikeXS';
 use Karte;
-use vars qw($net);
+use vars qw(%net);
 
 
 sub doit {
@@ -36,6 +36,8 @@ sub doit {
     my $origmap = "Standard";
     my $keep_net = 0;
     my $q;
+    my $net;
+    my $v;
 
     GetOptions('data=s@'    => \@datafile,
 	       "type=s"     => \$datatype,
@@ -43,17 +45,19 @@ sub doit {
 	       "origmap=s"  => \$origmap,
 	       "keepnet!"   => \$keep_net,
 	       "q|quiet!"   => \$q,
+	       "v|verbose"  => \$v,
 	      )
 	or die <<EOF;
 usage: $0 [-data datafile [-data datafile ...]]
           [-against file [-against file ...]]
-          [-type datatype] [-origmap map] [-[no]keepnet] [-[no]quiet | -q]
+          [-type datatype] [-origmap map] [-[no]keepnet] [-[no]quiet | -q] [-v]
 EOF
 
 
     if (!@against) {
 	@against = "strassen";
     }
+    my $cachename = join "_", sort @against;
 
     local @Strassen::datadirs = @Strassen::datadirs;
     unshift @Strassen::datadirs, "$FindBin::RealBin/../data";
@@ -61,16 +65,21 @@ EOF
     Karte::preload($origmap);
     my $to   = $Karte::map_by_modname{$origmap};
 
-    my $str;
-    if (@against == 1) {
-	$str = new Strassen $against[0];
-    } else {
-	$str = new MultiStrassen @against;
-    }
+    if (!$net{$cachename} || !$keep_net) {
+	my $str;
+	if (@against == 1) {
+	    $str = new Strassen $against[0];
+	} else {
+	    $str = new MultiStrassen @against;
+	}
 
-    if (!$net || !$keep_net) {
 	$net = new StrassenNetz $str;
 	$net->make_net(UseCache => 1);
+
+	$net{$cachename} = $net;
+    } else {
+	warn "Use cached file $cachename...\n" if $v;
+	$net = $net{$cachename};
     }
 
     my $err;
@@ -111,7 +120,7 @@ EOF
 			     $coord[$i+1] !~ /^[-+\d]/); # XXX andere Coord-Systeme NYI
 		    if (!exists $net->{Net}{$coord[$i]}{$coord[$i+1]} and
 			!exists $net->{Net}{$coord[$i+1]}{$coord[$i]}) {
-			print STDERR "Not neighbours in $datafile: $coord[$i];$coord[$i+1] (line @{[ $d->pos+1]})" unless $q;
+			print STDERR "Not neighbours in $datafile: $coord[$i] $coord[$i+1] (line @{[ $d->pos+1]})" unless $q;
 			if ($origmap ne "Standard") {
 			    my $orig0 = join(",", map {int} $to->standard2map(split /,/, $coord[$i]));
 			    my $orig1 = join(",", map {int} $to->standard2map(split /,/, $coord[$i+1]));

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_points,v 1.10 2004/05/08 21:40:07 eserte Exp $
+# $Id: check_points,v 1.11 2004/06/18 23:20:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2004 Slaven Rezic. All rights reserved.
@@ -16,6 +16,8 @@
 # Überprüft, ob alle Punkte aus der ersten Datei in min. einer der folgenden
 # Dateien vorkommt (z.B. alle Ampeln müssen in Straßen vorhanden sein...)
 
+package BBBike::check_points;
+
 use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
@@ -26,90 +28,100 @@ use Getopt::Long;
 
 @Strassen::datadirs = ("$FindBin::RealBin/../data");
 
-my $ampelschaltung_source;
-my $ampelschaltung2_source;
-my $warn; # warn only instead of failing
-my $usecache = 1;
-my $q;
+sub doit {
+    local(@ARGV) = @_;
 
-GetOptions("ampelschaltung!" => \$ampelschaltung_source,
-	   "ampelschaltung2!" => \$ampelschaltung2_source,
-	   "warn!" => \$warn,
-	   "cache!" => \$usecache,
-	   "q|quiet!" => \$q,
-	  );
+    my $ampelschaltung_source;
+    my $ampelschaltung2_source;
+    my $warn; # warn only instead of failing
+    my $usecache = 1;
+    my $q;
 
-my $file = shift || die "file to check missing";
-my(@check) = @ARGV;
-if (!@ARGV) {
-    die "files to check against missing!";
-}
+    GetOptions("ampelschaltung!" => \$ampelschaltung_source,
+	       "ampelschaltung2!" => \$ampelschaltung2_source,
+	       "warn!" => \$warn,
+	       "cache!" => \$usecache,
+	       "q|quiet!" => \$q,
+	      ) or die <<EOF;
+usage: $0 [-ampelschaltung] [-ampelschaltung2] [-[no]warn] [-[no]cache]
+          [-[no]keepnet] [-[no]quiet | -q] checkfile againstfile ...
+EOF
 
-my $s1;
-if ($ampelschaltung_source ||
-    $ampelschaltung2_source) {
-    $s1 = new Strassen;
-    open(D, $file) or die "Can't open $file: $!";
-    while(<D>) {
-	next if /^#/;
-	chomp;
-	my @l;
-	if ($ampelschaltung_source) {
-	    @l = split(/\t/o, $_);
-	} else {
-	    if (/^(\d+,\d+)\s+(\S+)/) {
-		@l = ($1, $2);
+    my $file = shift @ARGV || die "file to check missing";
+    my(@check) = @ARGV;
+    if (!@ARGV) {
+	die "files to check against missing!";
+    }
+
+    my $s1;
+    if ($ampelschaltung_source ||
+	$ampelschaltung2_source) {
+	$s1 = new Strassen;
+	open(D, $file) or die "Can't open $file: $!";
+	while(<D>) {
+	    next if /^#/;
+	    chomp;
+	    my @l;
+	    if ($ampelschaltung_source) {
+		@l = split(/\t/o, $_);
 	    } else {
-		next;
+		if (/^(\d+,\d+)\s+(\S+)/) {
+		    @l = ($1, $2);
+		} else {
+		    next;
+		}
+	    }
+	    push @{ $s1->{Data} }, "$l[1]\tX $l[0]";
+	}
+	close D;
+    } else {
+	$s1 = new Strassen $file;
+    }
+
+    my $s2;
+    if ($usecache) {
+	my $check_str = MultiStrassen->new(@check);
+	my $cr = Kreuzungen->new(Strassen => $check_str,
+				 UseCache => 1,
+				 Kurvenpunkte => 1,
+				 RetType => 'hash',
+				);
+	$s2 = $cr->{Hash};
+    } else {
+	foreach my $checkfile (@check) {
+	    my $str2 = new Strassen $checkfile;
+	    $str2->init;
+	    while(1) {
+		my $ret = $str2->next;
+		last if !@{$ret->[1]};
+		foreach (@{$ret->[1]}) {
+		    $s2->{$_}++;
+		}
 	    }
 	}
-	push @{ $s1->{Data} }, "$l[1]\tX $l[0]";
     }
-    close D;
-} else {
-    $s1 = new Strassen $file;
-}
 
-my $s2;
-
-if ($usecache) {
-    my $check_str = MultiStrassen->new(@check);
-    my $cr = Kreuzungen->new(Strassen => $check_str,
-			     UseCache => 1,
-			     Kurvenpunkte => 1,
-			     RetType => 'hash',
-			    );
-    $s2 = $cr->{Hash};
-} else {
-
-    foreach my $checkfile (@check) {
-	my $str2 = new Strassen $checkfile;
-	$str2->init;
-	while(1) {
-	    my $ret = $str2->next;
-	    last if !@{$ret->[1]};
-	    foreach (@{$ret->[1]}) {
-		$s2->{$_}++;
+    my $fail = 0;
+    $s1->init;
+    while(1) {
+	my $ret = $s1->next;
+	last if !@{$ret->[1]};
+	my @error;
+	foreach (@{$ret->[1]}) {
+	    if (!exists $s2->{$_} && $_ ne '*') {
+		push(@error, $_);
 	    }
 	}
-    }
-}
-
-my $fail = 0;
-$s1->init;
-while(1) {
-    my $ret = $s1->next;
-    last if !@{$ret->[1]};
-    my @error;
-    foreach (@{$ret->[1]}) {
-	if (!exists $s2->{$_} && $_ ne '*') {
-	    push(@error, $_);
+	if (@error) {
+	    print STDERR "Error in $ret->[0]: " . join(" ", @error) . "\n" unless $q;
+	    $fail++ unless $warn;
 	}
     }
-    if (@error) {
-	print STDERR "Error in $ret->[0]: " . join(" ", @error) . "\n" unless $q;
-	$fail++ unless $warn;
-    }
+
+    return ($fail ? 1 : 0);
 }
 
-exit ($fail ? 1 : 0);
+return 1 if caller;
+
+exit doit(@ARGV);
+

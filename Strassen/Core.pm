@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.43 2004/06/10 22:56:35 eserte Exp $
+# $Id: Core.pm,v 1.43 2004/06/10 22:56:35 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -72,6 +72,7 @@ sub AUTOLOAD {
 # Arguments:
 #   NoRead
 #   PreserveLineInfo
+#   CustomPush (only for MapInfo)
 sub new {
     my($class, $filename, %args) = @_;
     if (defined $filename &&
@@ -578,7 +579,9 @@ sub _arr2line {
 
 # Wie _arr2line, aber das COORDS-Argument ist eine Array-Referenz wie
 # beim Rückgabewert von parse().
-# Tabs werden aus dem Namen entfernt
+# Tabs werden aus dem Namen entfernt.
+# Ein Newline fehlt hier und muss manuell angefügt werden, falls der Datensatz
+# in $self->{Data} geschrieben werden soll.
 ### AutoLoad Sub
 sub arr2line2 {
     my $arg = shift;

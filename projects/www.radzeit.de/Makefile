@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.34 2004/06/10 22:25:55 eserte Exp $
+# $Id: Makefile,v 1.35 2004/06/18 23:26:31 eserte Exp eserte $
 #
 
 # Targets:
@@ -120,8 +120,6 @@ rsync-mapserver:
 
 rsync-bbbike-data:
 	${RSYNC} ${RSYNC_ARGS} \
-	    BBBike/misc/temp_blockings/ ${RSYNC_DEST}/BBBike/misc/temp_blockings/
-	${RSYNC} ${RSYNC_ARGS} \
 	    BBBike/data/ ${RSYNC_DEST}/BBBike/data/
 
 # use -t in rsync?
@@ -193,18 +191,24 @@ prepare-bbbike-dist-prog-bbbike:
 prepare-bbbike-dist-prog-stadtplan:
 	[ "${NO_BERLINER_STADTPLAN}" = "yes" ] && true || (cp -pf ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com/lib/BBBikeDraw/BerlinerStadtplan.pm ${CURDIR}/BBBike/BBBikeDraw/)
 
-prepare-bbbike-dist-data:
-	@echo "XXX The following command will fail because 'RCS' cannot be copied"
-	# XXX only copy the stuff which is also specified in MANIFEST
-	# then the "-" can also go
-	-cp -pf ${BBBIKE_ROOT_DIR}/${DATA_DIR}/* \
-	    ${CURDIR}/BBBike/data/
-	-rm -f ${CURDIR}/BBBike/data/conv.db*
+prepare-bbbike-dist-data:	prepare-bbbike-dist-data-datadir \
+				prepare-bbbike-dist-data-temp-blockings-dir \
+				prepare-bbbike-dist-data-teasers
+
+# Usually data/* is already hardlinkes against the originals, so
+# no additional copying for data/* is necessary
+prepare-bbbike-dist-data-datadir:
+
+# temp_blockings is not yet in MANIFEST, so copy is necessary
+prepare-bbbike-dist-data-temp-blockings-dir:
 	[ -d ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR} ] || \
 	    mkdir -p ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}
-	find ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/ -maxdepth 1 -type f ! -name "*~" | ${XARGS_REPL} cp -pf % ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}/
+	find ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/ -maxdepth 1 -type f ! -name "*~" -a ! -name "*.st" -a ! -name "*.core" -a ! -name "#*#" | ${XARGS_REPL} cp -pf % ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}/
 	-cp -pf ${BBBIKE_ROOT_DIR}/${TEMP_BLOCKINGS_DIR}/* \
 	    ${CURDIR}/BBBike/${TEMP_BLOCKINGS_DIR}/
+
+# Teasers for bbbike.cgi
+prepare-bbbike-dist-data-teasers:
 	rm -f ${CURDIR}/cgi-bin/bbbike-teaser.pl
 	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike-teaser.pl
 

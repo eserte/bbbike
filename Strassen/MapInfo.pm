@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapInfo.pm,v 1.14 2004/05/12 13:33:50 eserte Exp $
+# $Id: MapInfo.pm,v 1.15 2004/06/20 09:23:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
@@ -47,12 +47,12 @@ This module handles MapInfo files (usually with extensions .mif and
 =cut
 
 sub new {
-    my($class, $filename, %arg) = @_;
+    my($class, $filename, %args) = @_;
     my $self = {};
     bless $self, $class;
 
     if ($filename) {
-	$self->read_mif($filename);
+	$self->read_mif($filename, %args);
     }
 
     $self;
@@ -66,7 +66,7 @@ Read a MIF file. The filename may be specified with or without the
 =cut
 
 sub read_mif {
-    my($self, $filename) = @_;
+    my($self, $filename, %args) = @_;
 
     $filename =~ s/\.mid$//i;
  TRY: {
@@ -106,6 +106,16 @@ sub read_mif {
 	    $current_record = undef;
 	}
     };
+
+    if ($args{CustomPush}) {
+	$push = sub {
+	    if ($current_record) {
+		$args{CustomPush}->($self, $current_record, $column_data, $rec_i);
+		undef $current_record;
+		$rec_i++;
+	    }
+	};
+    }
 
     # XXX A lot of directives are not handled for now
     while(<MIF>) {
