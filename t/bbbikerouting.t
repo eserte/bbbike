@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.22 2005/03/03 22:43:00 eserte Exp $
+# $Id: bbbikerouting.t,v 1.23 2005/03/06 19:27:29 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -90,9 +90,11 @@ system($^X, "$FindBin::RealBin/../miscsrc/bbbikestrserver", "-restart");
 
 my @runs;
 
+#$StrassenNetz::use_heap = 1;#XXX
+
 if ($common) {
     push @runs,
-	#xs,ns,cache,cachetype,algorithm
+	#xs,ns,cache,cachetype,algorithm,extra options
 	(
 	 [1, 0, 1, "CDB_File", "C-A*"], # standard bbbike with C-A* set
 	 [1, 0, 1, "CDB_File", "C-A*-2"], # radlstadtplan
@@ -457,3 +459,19 @@ sub clone {
 # REPO END
 
 __END__
+
+Benchmark results (2005-03-06, FreeBSD 4.9, perl 5.8.0):
+
+Algorithm=C-A*-2, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 12.734375
+Algorithm=C-A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 21.0625
+Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (Storable): 23.9375
+Algorithm=A*, UseXS=0, UseNetServer=0, UseCache=1 (Storable): 24.2890625
+Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 47.515625
+
+Mit $StrassenNetz::use_heap=1:
+
+Algorithm=C-A*-2, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 12.9140625
+Algorithm=C-A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 21.3125
+Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (Storable): 23.2421875
+Algorithm=A*, UseXS=0, UseNetServer=0, UseCache=1 (Storable): 23.6484375
+Algorithm=A*, UseXS=1, UseNetServer=0, UseCache=1 (CDB_File): 45.875

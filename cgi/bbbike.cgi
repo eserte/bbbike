@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.12 2005/03/02 23:40:56 eserte Exp $
+# $Id: bbbike.cgi,v 7.14 2005/03/05 23:20:20 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -654,7 +654,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.14 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2119,11 +2119,7 @@ sub get_kreuzung {
 	    if (defined $plz and $plz eq '') {
 		print $strname;
 	    } else {
-		if (defined $c && $use_coord_link) {
-		    print coord_link($strname, $c);
-		} else {
-		    print stadtplan_link($strname, $plz, $is_ort{$type});
-		}
+		print coord_or_stadtplan_link($strname, $c || $coords[0], $plz, $is_ort{$type});
 	    }
 	}
 	if (defined $q->param($type."hnr") && $q->param($type."hnr") ne "") {
@@ -3320,38 +3316,32 @@ EOF
 	if ($printmode) {
 	    print " width=$printwidth";
 	}
-	# XXX evtl. auch onclick=ms verwenden zusammen mit coord_link
+	my $can_jslink = $can_mapserver && !$printmode && $bi->{'can_javascript'};
 	print "><tr><td>${fontstr}Route von <b>" .
-	    ($use_coord_link
-	     ? coord_link($startname, $startcoord)
-	     : stadtplan_link($startname,
-			      $q->param('startplz')||"",
-			      $q->param('startisort')?1:0,
-			      (defined $starthnr && $starthnr ne '' ? $starthnr : undef),
-			     )
-	    )
+	    coord_or_stadtplan_link($startname, $startcoord,
+				    $q->param('startplz')||"",
+				    $q->param('startisort')?1:0,
+				    (defined $starthnr && $starthnr ne '' ? $starthnr : undef),
+				    -jslink => $can_jslink,
+				   )
 		. "</b> ";
 	if (defined $vianame && $vianame ne '') {
 	    print "&uuml;ber <b>" .
-		($use_coord_link
-		 ? coord_link($vianame, $viacoord)
-		 : stadtplan_link($vianame,
-				  $q->param('viaplz')||"",
-				  $q->param('viaisort')?1:0,
-				  (defined $viahnr && $viahnr ne '' ? $viahnr : undef),
-				 )
-		)
+		coord_or_stadtplan_link($vianame, $viacoord,
+					$q->param('viaplz')||"",
+					$q->param('viaisort')?1:0,
+					(defined $viahnr && $viahnr ne '' ? $viahnr : undef),
+					-jslink => $can_jslink,
+				       )
 		    . "</b> ";
 	}
 	print "bis <b>" .
-	    ($use_coord_link
-	     ? coord_link($zielname, $zielcoord)
-	     : stadtplan_link($zielname,
-			      $q->param('zielplz')||"",
-			      $q->param('zielisort')?1:0,
-			      (defined $zielhnr && $zielhnr ne '' ? $zielhnr : undef),
-			     )
-	    )
+	    coord_or_stadtplan_link($zielname, $zielcoord,
+				    $q->param('zielplz')||"",
+				    $q->param('zielisort')?1:0,
+				    (defined $zielhnr && $zielhnr ne '' ? $zielhnr : undef),
+				    -jslink => $can_jslink,
+				   )
 		. "</b>$fontend</td></tr></table><br>\n";
 	print "<table";
 	if ($printmode) {
@@ -3455,10 +3445,10 @@ EOF
 	    } else {
 		print "<tr class=" . ($odd ? "odd" : "even") . "><td nowrap>$fontstr$entf$fontend</td><td>$fontstr$richtung$fontend</td><td>$fontstr";
 		print "<a class=ms href='#' onclick='return ms($etappe->{Coord})'>"
-		    if $can_mapserver && !$printmode && $bi->{'can_javascript'};
+		    if $can_jslink;
 		print $strname;
 		print "</a>"
-		    if $can_mapserver && !$printmode && $bi->{'can_javascript'};
+		    if $can_jslink;
 		print "$fontend</td><td nowrap>$fontstr$ges_entf_s$fontend</td>";
 		$odd = 1-$odd;
 		if ($with_comments && $comments_net) {
@@ -3639,10 +3629,12 @@ EOF
 	    push @not_for, "Mapserver" if $can_mapserver;
 	    print "<table><tr valign=top><td>$fontstr<b>Bildgr&ouml;&szlig;e:</b>$fontend</td>\n";
 	    foreach my $geom ("400x300", "640x480", "800x600", "1024x768") {
+		(my $id = $geom) =~ s/x/_/g;
+		$id = "geom_$id";
 		print
-		    "<td><input type=radio name=geometry value=\"$geom\"",
+		    qq{<td><input id="$id" type="radio" name="geometry" value="$geom"},
 		    ($geom eq $default_geometry ? " checked" : ""),
-		    ">$fontstr $geom  $fontend</td>\n";
+		    qq{>$fontstr <label for="$id">$geom</label>  $fontend</td>\n};
 	    }
 	    if (@not_for) {
 		print "<td valign=bottom><small>(nicht für: " . join(", ", @not_for) . ")</small></td>";
@@ -3679,11 +3671,12 @@ EOF
 		} else {
 		    $text = $draw->[0];
 		}
+		my $id = "draw_" . $draw->[1];
 		print
-		    "<td><span class=nobr><input type=checkbox name=draw value=$draw->[1]",
+		    qq{<td><span class=nobr><input id="$id" type="checkbox" name="draw" value="$draw->[1]"},
 		    ($draw->[2] ? " checked" : ""),
-		    ($draw->[1] eq 'all' ? " onclick=\"all_checked()\"" : ""),
-		    ">$fontstr $text $fontend</span></td>\n";
+		    ($draw->[1] eq 'all' ? qq{ onclick="all_checked()"} : ""),
+		    qq{>$fontstr <label for="$id">$text</label> $fontend</span></td>\n};
 	    }
 	    print "</tr>\n";
 ##XXX Fix this without using $str
@@ -3882,12 +3875,29 @@ sub show_user_agent_info {
     print $bi->show_server_info;
 }
 
-sub coord_link {
-    my($strname, $coords) = @_;
-    $coords = CGI::escape($coords);
-    "<a target=\"_blank\" href=\"$mapserver_address_url?coords=$coords\">$strname</a>";
+sub coord_or_stadtplan_link {
+    my($strname, $coords, $plz, $is_ort, $hnr, %args) = @_;
+    if (defined $coords && $use_coord_link) {
+	coord_link($strname, $coords, %args);
+    } else {
+	stadtplan_link($strname, $plz, $is_ort, $hnr);
+    }
 }
 
+sub coord_link {
+    my($strname, $coords, %args) = @_;
+    my $coords_esc = CGI::escape($coords);
+    my $strname_esc = CGI::escapeHTML($strname);
+    my $jslink = $args{-jslink};
+    my $out = qq{<a };
+    if ($jslink) {
+	$out .= qq{ class="ms" onclick="return ms($coords)"};
+    }
+    $out .= qq{ target="_blank" href="$mapserver_address_url?coords=$coords_esc">$strname_esc</a>};
+    $out;
+}
+
+# XXX Is this link still active?
 sub stadtplan_link {
     my($strname, $plz, $is_ort, $hnr) = @_;
     return $strname if $is_ort;
@@ -3896,6 +3906,7 @@ sub stadtplan_link {
     foreach my $s (split(m|/|, $strname)) {
 	# Text in Klammern entfernen:
 	(my $str_plain = $s) =~ s/\s+\(.*\)$//;
+	$s = CGI::escapeHTML($s);
 	$str_plain = CGI::escape($str_plain);
 	push @aref,
 	    "<a target=\"_blank\" href=\"$stadtplan_url?adr_street=$str_plain".
@@ -5536,7 +5547,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/03/02 23:40:56 $';
+    my $cgi_date = '$Date: 2005/03/05 23:20:20 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

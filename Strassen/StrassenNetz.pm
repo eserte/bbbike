@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.47 2005/02/27 23:31:21 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.48 2005/03/06 11:17:37 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -29,7 +29,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.47 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.48 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz;
 use strict;
@@ -329,7 +329,7 @@ sub make_net_steigung {
 
 	    # XXX Better use a heap!
 	    my $new_act_coord;
-	    my $new_act_dist = 99999999;
+	    my $new_act_dist = Strassen::Util::infinity();
 	    while (my($c, $dist) = each %OPEN) {
 		if ($dist < $new_act_dist) {
 		    $new_act_coord = $c;
@@ -823,7 +823,8 @@ sub build_search_code {
     #      $g:    Streckenlänge (oder Penalty) bis Node (DIST),
     #      $f:    abgeschätzte Länge bis Ziel über Node (HEURISTIC_DIST),
     #      weitere Array-Elemente sind optional ...]
-    my $use_heap = 0; # XXX the heap version seems to be faster, but first do some tests and enable it after 3.13 RELEASE. Use also a Array::Heap2-existance text. XXX I changed the heap calls due to use -> require/import change, so check this too!
+    use vars qw($use_heap);
+    $use_heap = 0 if !defined $use_heap; # XXX the heap version seems to be faster, but first do some tests and enable it after 3.13 RELEASE.
     if ($use_heap && !eval q{ require Array::Heap2; import Array::Heap2; 1 }) {
 	$use_heap = 0;
     }
@@ -834,7 +835,7 @@ sub build_search_code {
 '; } else { $code .= '
     my %OPEN = ($from => 1);
 '; } $code .= '
-    my %NODES = ($from => [undef, 0, 0, undef]);
+    my %NODES = ($from => [undef, 0, Strassen::Util::strecke_s($from, $to), undef]);
     my %CLOSED;
     while (1) {
 #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@OPEN],[])->Indent(1)->Useqq(1)->Dump; # XXX
@@ -855,9 +856,9 @@ sub build_search_code {
 '; } $code .= '
 
         my $min_node;
-        my $min_node_f = 999_999_999; # not suitable for extraterrestrial searches
+        my $min_node_f = Strassen::Util::infinity();
 '; if ($use_heap) { $code .= '
-	my($min_node_f, $min_node) = @{ pop_heap(\@OPEN) };
+	my($min_node_f, $min_node) = @{ pop_heap @OPEN };
 '; } else { $code .= '
         foreach (keys %OPEN) {
             if ($NODES{$_}->[HEURISTIC_DIST] < $min_node_f) {
@@ -870,6 +871,7 @@ sub build_search_code {
 '; } $code .= '
         $CLOSED{$min_node} = 1;
         if ($min_node eq $to) {
+	    #$self->dump_search_nodes(\%NODES); # DEBUG_DUMP_NODES
             my @path;
             my $len = 0;
             while (1) {
@@ -897,13 +899,16 @@ sub build_search_code {
             $ret[RES_TRAFFICLIGHTS] = undef;
             return @ret;
         }
+
+        #printf STDERR "- dump minnode ----------------------------\nx,y=%s dist=%d hdist=%d\n", $min_node, $NODES{$min_node}->[DIST], $NODES{$min_node}->[HEURISTIC_DIST]; # DEBUG_MINNODE
+	#printf STDERR "----------\n"; # DEBUG_SUCC
         my @successors = keys %{ $net->{$min_node} };
      CHECK_SUCCESSOR:
         foreach my $successor (@successors) {
 #         while(my($successor, $dist) = each %{ $net->{$min_node} }) {
 
             my $NODES_min_node = $NODES{$min_node};
-            # den unmittelbaren Vorgänger ausschließen
+            # do not check against the predecessor of this node
             next if (defined $NODES_min_node->[PREDECESSOR] &&
                      $NODES_min_node->[PREDECESSOR] eq $successor);
 
@@ -944,6 +949,7 @@ sub build_search_code {
 '; } if ($sc->Statistics) { $code .= '
             $node_touches++; # das gehört in die Stat-Abteilung
 '; } $code .= "
+
             my \$" . $len_pen .' = $net->{$min_node}{$successor};#$dist;
 ';
 	if ($sc->HasPenalty) {
@@ -951,11 +957,12 @@ sub build_search_code {
 	} $code .= '
             my $g = $NODES_min_node->[DIST] + ' . "\$" . $len_pen . ';
             my $f = $g + Strassen::Util::strecke_s($successor, $to);
+	    #printf STDERR "x,y=%s\nthis=%d f=%d g=%d\n", $successor, $' . $len_pen . ', $f, $g; # DEBUG_SUCC
             # !exists in OPEN and !exists in CLOSED:
             if (!exists $NODES{$successor}) {
                 $NODES{$successor} = [$min_node, $g, $f];
 '; if ($use_heap) { $code .= '
-		push_heap(\@OPEN, [$f, $successor]);
+		push_heap @OPEN, [$f, $successor];
 '; } else { $code .= '
                 $OPEN{$successor} = 1;
 '; } $code .= '
@@ -964,7 +971,7 @@ sub build_search_code {
                     $NODES{$successor} = [$min_node, $g, $f];
                     if (exists $CLOSED{$successor}) {
 '; if ($use_heap) { $code .= '
-			push_heap(\@OPEN, [$f, $successor]);
+			push_heap @OPEN, [$f, $successor];
 '; } else { $code .= '
                         $OPEN{$successor} = 1;
 '; } $code .= '
@@ -978,7 +985,7 @@ sub build_search_code {
 				last;
 			    }
 			}
-			make_heap(\@OPEN);
+			make_heap @OPEN;
 		    }
 '; } $code .= '
                 }

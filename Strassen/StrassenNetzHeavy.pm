@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetzHeavy.pm,v 1.18 2004/08/26 23:37:28 eserte Exp $
+# $Id: StrassenNetzHeavy.pm,v 1.19 2005/03/06 11:15:15 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -798,6 +798,15 @@ sub merge {
 		$net->{$k1}{$k2} = $v2;
 	    }
 	}
+    }
+}
+
+# For debugging only
+sub dump_search_nodes {
+    my($self, $nodes) = @_;
+    while(my($coord, $def) = each %$nodes) {
+	printf STDERR "f=%d g=%d\tX; %s %s\n",
+	    $def->[StrassenNetz::DIST()], $def->[StrassenNetz::HEURISTIC_DIST()], $def->[StrassenNetz::PREDECESSOR()], $coord;
     }
 }
 

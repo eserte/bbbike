@@ -1,7 +1,7 @@
 # -*- c -*-
 
 #
-# $Id: Inline.pm,v 2.32 2005/02/14 01:05:48 eserte Exp eserte $
+# $Id: Inline.pm,v 2.33 2005/03/06 17:04:29 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -18,14 +18,15 @@ package Strassen::Inline2;
 require 5.005; # new semantics of hv_iterinit
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 2.32 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 2.33 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Cwd;
 use File::Spec::Functions;
 
 BEGIN {
-    if (1) {
+    my $use_heap = 0; # XXX ist die Heap-Implementation korrekt? Siehe auch doc/misc/ChangeLog
+    if ($use_heap) {
 	$add_ccflags = '-DHAS_HEAP';
 #	$add_libs = '-lisc';  # could be used on FreeBSD
 	$add_libs = '';
@@ -37,6 +38,7 @@ BEGIN {
 	$add_ccflags = '';
 	$add_libs = '';
 	$add_myextlib = '';
+	$add_inc = '';
     }
 }
 
@@ -44,7 +46,7 @@ use Inline 0.40; # because of API changes
 use Config;
 #use Inline Config => CLEAN_AFTER_BUILD => 0;   #XXX debugging, both needed
 #use Inline C => Config => CCFLAGS => "-g -O2"; #XXX debugging
-use Inline C => Config => CCFLAGS => "-g"; #XXX debugging, faster
+#use Inline C => Config => CCFLAGS => "-g"; #XXX debugging, faster
 use Inline (C => DATA =>
 
 	    NAME => 'Strassen::Inline2',
@@ -502,6 +504,10 @@ void search_c(SV* self, char* from, char* to, ...) {
 #endif
 #endif
 
+#ifdef DEBUG_SUCC
+      fprintf(stderr, "----------\n"); /* mark start of next iteration */
+#endif
+
       {
 #ifdef USE_MMAP_IMPL
 	int *mmap_ptr = (int*)(c_net_mmap + min_node);
@@ -525,6 +531,7 @@ void search_c(SV* self, char* from, char* to, ...) {
 	SV** node_sv = hv_fetch(NODES, min_node, min_node_len, 0);
 	search_node* sn = (search_node*)SvIV(*node_sv);
 	hv_iterinit(min_node_net);
+
 	while(succ_he = hv_iternext(min_node_net)) {
 	  int succ_key_len;
 	  char* succ_key = HePV(succ_he, succ_key_len);
@@ -587,7 +594,7 @@ void search_c(SV* self, char* from, char* to, ...) {
 	    }
 	  }
 
-	  /* XXX Statistik etc. missing */
+	  /* XXX statistics, canvas drawing etc. missing */
 
 	  {
 	    dist_t g, f;

@@ -1176,7 +1176,7 @@ EOF
        text  => 'Ebertstr. Richtung Potsdamer Platz zwischen Behrensstr. und Hannah-Ahrendt-Str. Baustelle, Fahrtrichtung gesperrt (bis April 2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 8595,12066 8571,11846
+userdel	q4; 8595,12066 8579,11917 8571,11846
 EOF
      },
      { from  => 1101337200, # 2004-11-25 00:00
@@ -1471,6 +1471,24 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 5636,10626 5479,10719
+EOF
+     },
+     { from  => 1110063600, # 2005-03-06 00:00
+       until => 1122674400, # 2005-07-30 00:00
+       text  => 'K 6738; (L 36 nördl. Steinhöfel-Müncheberg); OD Tempelberg Straßenausbau Vollsperrung 07.03.2005-29.07.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 62529,5578 62084,5754
+userdel	q4 61809,5952 62084,5754
+EOF
+     },
+     { from  => 1110063600, # 2005-03-06 00:00
+       until => 1125525600, # 2005-09-01 00:00
+       text  => 'K 6907; (B 1 Neuseddin-Ferch); OD Neuseddin, Kunersdorfer Str. Straßenbauarbeiten Vollsperrung 07.03.2005-31.08.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -16605,-14239 -17374,-13449
+userdel	q4 -18080,-12637 -17374,-13449
 EOF
      },
     );

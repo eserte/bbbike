@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.49 2004/12/29 23:35:31 eserte Exp $
+# $Id: insert_points,v 1.50 2005/03/05 22:38:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -72,6 +72,7 @@ use File::Basename;
 use Strassen::Dataset;
 use Strassen::Core;
 use List::Util qw(first);
+use File::Copy qw(cp);
 
 use vars qw($datadir);
 
@@ -92,6 +93,7 @@ my $useint; # XXX never used?
 my $orig = 1;
 my $logfile;
 my $ask = 1;
+my @special_post_handling_files;
 
 my $operation;
 
@@ -375,6 +377,11 @@ sub process {
 		    } else {
 			push @{$check_files[T_TEMPBLOCKMAIN]}, $f;
 		    }
+		    cp $f, "$f~";
+		    push @special_post_handling_files, {Original        => $orig_src,
+							BBDFile         => $f,
+							BBDFileOriginal => "$f~",
+						       };
 		}
 	    }
 
@@ -812,6 +819,29 @@ sub process {
 	}
 	if (!$n) {
 	    do_log(@cmd_args, @changed_files);
+	}
+
+	{
+	    my @warn_user;
+	    for my $def (@special_post_handling_files) {
+		my $f_new  = $def->{BBDFile};
+		my $f_orig = $def->{BBDFileOriginal};
+		require File::Compare;
+		if (File::Compare::compare($f_new, $f_orig) != 0) {
+		    push @warn_user, $def;
+		}
+	    }
+	    if (@warn_user) {
+		my $msg = "Bitte die folgenden Änderungen manuell durchführen:\n";
+		for my $def (@warn_user) {
+		    $msg .= "zwischen $def->{BBDFileOriginal} und $def->{BBDFile} -> $def->{Original}\n";
+		}
+		if ($use_tk) {
+		    $top->messageBox(-title => "Warning",
+				     -message => $msg);
+		}
+		warn $msg, "\n";
+	    }
 	}
     }
     return RET_MODIFIED;

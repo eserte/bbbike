@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.6 2004/10/07 20:38:26 eserte Exp $
+# $Id: basic.t,v 1.7 2005/03/06 17:03:28 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -50,7 +50,7 @@ for my $f (@files) {
 	skip "$f needs Inline", $tests_per_file
 	    if $f =~ m{ext/(Strassen-Inline|StrassenNetz-CNetFile).*} && !eval { require Inline::MakeMaker };
 	skip "$f needs 5.8.0 or better", $tests_per_file
-	    if $f eq 'BBBikeDebug.pm';
+	    if $f eq 'BBBikeDebug.pm' && $] < 5.008;;
 	skip "$f needs Imager", $tests_per_file
 	    if $f eq 'BBBikeDraw/Imager.pm' && !eval { require Imager };
 	skip "$f needs Image::Magick", $tests_per_file

@@ -58,7 +58,7 @@
 	(setq truncate-lines nil)
 	(setq tab-width 8))
     (setq truncate-lines t)
-    (setq tab-width 72))
+    (setq tab-width 60))
   (recenter)
   )
 
@@ -88,19 +88,22 @@
 	major-mode 'bbbike-mode)
   (set-syntax-table bbbike-syntax-table)
   (run-hooks 'bbbike-mode-hook)
-  ;;; XXX (setq font-lock-keywords-only t)
+  (make-local-variable 'font-lock-keywords-only)
+  (setq font-lock-keywords-only t)
+  (make-local-variable 'font-lock-keywords)
   (setq font-lock-keywords
 	'(t
-	  ("\t\\([^ ]+\\)" (1 font-lock-keyword-face))
-	  ;("\\(#:\\)"  (1 font-lock-function-name-fact)) ;;; XXX does not work
-	  ;("#.*" (0 font-lock-comment-face)) ;;; XXX does not work
-	  ("^\\([^:\t]+\\)" (1 font-lock-constant-face))
+	  ("\\(#:.*\\)"  (1 font-lock-warning-face))	            ;; directives
+	  ("^\\(#.*\\)" (1 font-lock-comment-face))                 ;; comments
+	  ("^\\([^\t\n]+\\)" (1 font-lock-constant-face))           ;; name
+	  ("^[^#][^\t\n:]+: \\([^\t\n]+\\)" (1 font-lock-string-face t)) ;; colon separated part of name
+	  ("\t\\([^ \n]+\\)" (1 font-lock-keyword-face))            ;; category
 	  ))
   (make-local-variable 'comment-use-syntax)
-  (make-local-variable 'comment-start)
-  (make-local-variable 'comment-padding)
   (setq comment-use-syntax nil)
+  (make-local-variable 'comment-start)
   (setq comment-start "#")
+  (make-local-variable 'comment-padding)
   (setq comment-padding " ")
   )
 

@@ -208,6 +208,24 @@ userdel	2 -12403,-10753 -12459,-12120
          'data' => 'userdel	2 5636,10626 5479,10719
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1122674400,
+         'text' => 'K 6738; (L 36 nördl. Steinhöfel-Müncheberg); OD Tempelberg Straßenausbau Vollsperrung 07.03.2005-29.07.2005 ',
+         'from' => 1110063600,
+         'data' => 'userdel	q4 62529,5578 62084,5754
+userdel	q4 61809,5952 62084,5754
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1125525600,
+         'text' => 'K 6907; (B 1 Neuseddin-Ferch); OD Neuseddin, Kunersdorfer Str. Straßenbauarbeiten Vollsperrung 07.03.2005-31.08.2005 ',
+         'from' => 1110063600,
+         'data' => 'userdel	q4 -16605,-14239 -17374,-13449
+userdel	q4 -18080,-12637 -17374,-13449
+',
+         'type' => 'handicap'
        }
      
 );
