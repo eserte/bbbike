@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.6 2003/10/08 07:33:06 eserte Exp $
+# $Id: plz.t,v 1.7 2004/03/08 11:35:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003 Slaven Rezic. All rights reserved.
@@ -21,7 +21,8 @@
 
 package main;
 
-use Test;
+use Test::More;
+BEGIN { eval "use Test::Differences" };
 BEGIN { plan tests => 30 }
 
 use FindBin;
@@ -152,37 +153,37 @@ EOF
 
 {
     my @res = $plz->look("Hauptstr.", MultiZIP => 1);
-    ok(scalar @res, 8, $dump->(\@res));
+    is(scalar @res, 8) or diag $dump->(\@res);
     @res = map { $plz->combined_elem_to_string_form($_) } $plz->combine(@res);
-    ok(scalar @res, 7, $dump->(\@res));
+    is(scalar @res, 7) or diag $dump->(\@res);
 
     @res = $plz->look("Hauptstr.", MultiCitypart => 1, MultiZIP => 1);
-    ok(scalar @res, 9, $dump->(\@res));
+    is(scalar @res, 9) or diag $dump->(\@res);
     @res = map { $plz->combined_elem_to_string_form($_) } $plz->combine(@res);
-    ok(scalar @res, 7, $dump->(\@res));
+    is(scalar @res, 7) or diag $dump->(\@res);
     my($friedenau_schoeneberg) = grep { $_->[1] =~ /friedenau/i } @res;
-    ok($friedenau_schoeneberg->[PLZ::LOOK_NAME], "Hauptstr.");
-    ok($friedenau_schoeneberg->[PLZ::LOOK_CITYPART], "Friedenau, Sch\366neberg");
-    ok($friedenau_schoeneberg->[PLZ::LOOK_ZIP], "10827, 12159");
+    is($friedenau_schoeneberg->[PLZ::LOOK_NAME], "Hauptstr.");
+    is($friedenau_schoeneberg->[PLZ::LOOK_CITYPART], "Friedenau, Sch\366neberg");
+    is($friedenau_schoeneberg->[PLZ::LOOK_ZIP], "10827, 12159");
 
     @res = $plz->look_loop(PLZ::split_street("Heerstr. 1"),
 			   @standard_look_loop_args);
-    ok(scalar @{$res[0]}, 7, $dump->(\@res));
+    is(scalar @{$res[0]}, 7) or diag $dump->(\@res);
     ok(grep { $_->[PLZ::LOOK_NAME] eq 'Heerstr.' } @{$res[0]});
 
     @res = $plz->look_loop(PLZ::split_street("Straße des 17. Juni"),
 			   @standard_look_loop_args);
-    ok(scalar @{$res[0]}, 2, $dump->(\@res));
+    is(scalar @{$res[0]}, 2) or diag $dump->(\@res);
 
     @res = $plz->look_loop(PLZ::split_street("  Str. des 17. Juni 153  "),
 			   @standard_look_loop_args);
-    ok(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Straße des 17. Juni' } @{$res[0]}), 1,
-       $dump->(\@res));
+    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Straße des 17. Juni' } @{$res[0]}), 1)
+	or diag $dump->(\@res);
 
     @res = $plz->look_loop(PLZ::split_street("gaertnerstrasse 22"),
 			   @standard_look_loop_args);
-    ok(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Gärtnerstr.' } @{$res[0]}), 1,
-       $dump->(\@res));
+    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Gärtnerstr.' } @{$res[0]}), 1)
+	or diag $dump->(\@res);
 
 ## This is too hard: the algorithm can't strip "strasse" because of the missing
 ## "s". Well...
@@ -195,19 +196,19 @@ EOF
 
     @res = $plz->look_loop(PLZ::split_street("Grossbeerenstr. 27a"),
 			   @standard_look_loop_args);
-    ok(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Großbeerenstr.' } @{$res[0]}), 1,
-       $dump->(\@res));
+    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Großbeerenstr.' } @{$res[0]}), 1)
+	or diag $dump->(\@res);
 
     @res = $plz->look_loop(PLZ::split_street("Leibnizstrasse 3-4"),
 			   @standard_look_loop_args);
-    ok(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Leibnizstr.' } @{$res[0]}), 1,
-       $dump->(\@res));
+    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Leibnizstr.' } @{$res[0]}), 1)
+	or diag $dump->(\@res);
 
  XXX:
     @res = $plz->look_loop(PLZ::split_street("Sanderstr. 29/30"),
 			   @standard_look_loop_args);
-    ok(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Sanderstr.' } @{$res[0]}), 1,
-       $dump->(\@res));
+    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Sanderstr.' } @{$res[0]}), 1)
+	or diag $dump->(\@res);
 
 }
 
@@ -224,14 +225,14 @@ sub testplz {
 					  );
 	    my(@str) = @$str_ref;
 	    if ($def->[NOMATCH]) {
-		ok(scalar @str, 0);
+		is(scalar @str, 0);
 		next;
 	    }
 	    if (!@str) {
 		if ($INTERACTIVE) {
 		    die "Keine Straße in der PLZ gefunden"
 		} else {
-		    ok(0, 1, "Keine Straße für $in_str gefunden");
+		    is(0, 1, "Keine Straße für $in_str gefunden");
 		    next;
 		}
 	    }
@@ -292,7 +293,11 @@ sub do_file {
 	    my $buf = join '', <T>;
 	    close T;
 
-	    ok($buf, $res);
+	    if (defined &eq_or_diff) {
+		eq_or_diff($buf, $res);
+	    } else {
+		is($buf, $res);
+	    }
 	} else {
 	    warn "Can't open $tmpdir/$file: $!. Please use the -create option first and check the results in $tmpdir!\n";
 	    ok(0);
