@@ -142,10 +142,10 @@ sub tidy_check {
 	if (!defined $can_tidy) {
 	    $can_tidy = is_in_path("tidy");
 	}
-	skip("tidy is not available", $no_of_tests) if !$can_tidy;
+	Test::More::skip("tidy is not available", $no_of_tests) if !$can_tidy;
 	if (UNIVERSAL::isa($content, "HTTP::Message")) {
-	    skip("No html output", $no_of_tests)
-		if $content->headers->content_type ne "text/html";
+	    Test::More::skip("No html output", $no_of_tests)
+		    if $content->headers->content_type ne "text/html";
 	    $content = $content->content;
 	}
 	require File::Temp;
