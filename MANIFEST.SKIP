@@ -1,10 +1,14 @@
 # common files
 \bRCS\b
+\bCVS/Entries$
+\bCVS/Repository$
+\bCVS/Root$
 \bChangeLog\b
 ^MANIFEST\.
 ^Makefile$
 ^Makefile.PL$
 ~$
+(^|/)\.\#.*\d+\.\d+$
 ^Attic/
 \.gdbinit$
 \.class$
