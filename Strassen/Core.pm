@@ -1096,27 +1096,24 @@ sub nearest_point {
     }
 }
 
+# See also get_anti_conversion
 sub get_conversion {
     my($self, %args) = @_;
     my $convsub;
     my $frommap = $self->{GlobalDirectives}{map} || $args{Map};
     if ($frommap) {
-	my $map = $frommap;
 	require Karte;
 	Karte::preload(":all"); # Can't preload specific maps, because $map is a token, not a map module name
 	my $tomap = $args{-tomap} || "standard";
-	return if $map eq $tomap; # no conversion needed
+	return if $frommap eq $tomap; # no conversion needed
 	if ($tomap ne "standard") {
-	    if ($tomap ne $map) {
-		Karte::preload($tomap);
-		$convsub = sub {
-		    join ",", $Karte::map{$map}->map2map($Karte::map{$tomap},
+	    $convsub = sub {
+		join ",", $Karte::map{$frommap}->map2map($Karte::map{$tomap},
 							 split /,/, $_[0]);
-		};
-	    }
+	    };
 	} else {
 	    $convsub = sub {
-		join ",", $Karte::map{$map}->map2standard(split /,/, $_[0]);
+		join ",", $Karte::map{$frommap}->map2standard(split /,/, $_[0]);
 	    };
 	}
     }
