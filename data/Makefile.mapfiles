@@ -1,0 +1,302 @@
+#
+# $Id: Makefile.mapfiles,v 1.8 2003/07/03 20:56:02 eserte Exp $
+#
+
+# should this be here?
+MAPFILES_ROOT_DIR=	../mapserver/brb
+MAPFILES_DATA_DIR=	$(MAPFILES_ROOT_DIR)/data
+MAPFILES_IMG_DIR=	$(MAPFILES_ROOT_DIR)/graphics
+
+.ifndef MISCDIR
+.error MISCDIR is not defined
+.endif
+.ifndef MISCSRCDIR
+.error MISCSRCDIR is not defined
+.endif
+
+BBBIKEDRAW=		${MISCSRCDIR}/bbbikedraw.pl
+SORTBYCAT=		${MISCSRCDIR}/sortbycat
+BBD2ESRI=		${MISCSRCDIR}/bbd2esri
+CONVERT_RADWEGE=	${MISCSRCDIR}/convert_radwege
+
+mapfiles:	mapfiles-prepare mapfiles-convert mapfiles-permissions \
+		mapfiles-reference
+
+mapfiles-prepare:
+	[ ! -d $(MAPFILES_ROOT_DIR) ] && mkdir $(MAPFILES_ROOT_DIR) || true
+	[ ! -d $(MAPFILES_DATA_DIR) ] && mkdir $(MAPFILES_DATA_DIR) || true
+	[ ! -d $(MAPFILES_IMG_DIR) ] && mkdir $(MAPFILES_IMG_DIR) || true
+	[ -d $(MAPFILES_DATA_DIR) ]
+	[ -d $(MAPFILES_IMG_DIR) ]
+
+mapfiles-permissions:
+	chmod o+rx $(MAPFILES_DATA_DIR)/..
+	chmod o+rx $(MAPFILES_DATA_DIR)
+	chmod o+r $(MAPFILES_DATA_DIR)/*
+
+# These may be added to mapfiles-reference, if needed:
+#			$(MAPFILES_IMG_DIR)/reference.xpm
+#			$(MAPFILES_IMG_DIR)/reference-b.xpm
+#			$(MAPFILES_IMG_DIR)/reference-wide.xpm
+
+mapfiles-reference:	$(MAPFILES_IMG_DIR)/reference.png \
+			$(MAPFILES_IMG_DIR)/reference-b.png \
+			$(MAPFILES_IMG_DIR)/reference-wide.png \
+			$(MAPFILES_IMG_DIR)/reference.gif \
+			$(MAPFILES_IMG_DIR)/reference-b.gif \
+			$(MAPFILES_IMG_DIR)/reference-wide.gif
+$(MAPFILES_IMG_DIR)/reference.png: strassen landstrassen berlin deutschland orte orte2 wasserstrassen wasserumland wasserumland2
+	$(BBBIKEDRAW) -datadirs . \
+	    -outtype png \
+	    -geometry 200x200 -nooutline -fillimage \
+	    -scope wideregion \
+	    -drawtypes str,wasser,berlin -restrict B,W1,W2,Z \
+	    -minplacecat 5 \
+	    -o $@ -dimfile /tmp/reference.dim \
+	    -nodrawscalebar -background \#e0e0e0 \
+	    -bbox -80800,81600,108200,-86200 -fontsizescale 0.8 \
+	    -customplaces "Berlin;Potsdam,-anchor,nw;Brandenburg,-anchor,e;Eberswalde;Frankfurt,-anchor,e;Dessau;Cottbus,-anchor,e;Neuruppin;Jüterbog;Guben,-anchor,e;Nauen,-anchor,e;Schwedt,-anchor,nc;Belzig;Bernau;Rheinsberg;Pritzwalk;Oranienburg,-anchor,e" \
+	    || rm -f $@
+	perl -e '$$draw=do "/tmp/reference.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn join(" ", map { int } $$sub->(0,0), $$sub->(199,199));'
+	chmod ugo+r $@
+
+$(MAPFILES_IMG_DIR)/reference-b.png: strassen landstrassen berlin potsdam orte orte_city wasserstrassen wasserumland
+	$(BBBIKEDRAW) -datadirs . \
+	    -outtype png \
+	    -geometry 200x200 -nooutline -fillimage \
+	    -scope region \
+	    -drawtypes str,wasser,berlin,orte_city -restrict HH,B,W1,W2,Z \
+	    -minplacecat 4 \
+	    -o $@ -dimfile /tmp/reference-b.dim \
+	    -nodrawscalebar -background \#e0e0e0 \
+	    -bbox -15700,31300,37300,-8800 -fontsizescale 0.8 \
+	    -customplaces "Potsdam;Bernau;Oranienburg;Königs Wusterhausen;Zossen" \
+	    || rm -f $@
+	perl -e '$$draw=do "/tmp/reference-b.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn join(" ", map { int } $$sub->(0,0), $$sub->(199,199));'
+	chmod ugo+r $@
+
+$(MAPFILES_IMG_DIR)/reference-wide.png: strassen landstrassen landstrassen2 berlin orte orte2 wasserstrassen wasserumland wasserumland2
+	$(BBBIKEDRAW) -datadirs . \
+	    -outtype png \
+	    -geometry 200x200 -nooutline -fillimage \
+	    -scope wideregion \
+	    -drawtypes str,wasser,berlin,ort -restrict B,W2,Z,6 \
+	    -minplacecat 6 \
+	    -o $@ -dimfile /tmp/reference-wide.dim \
+	    -nodrawscalebar -background \#e0e0e0 \
+	    -fontsizescale 0.8 \
+	    -customplaces "Berlin;Rostock;Szczecin,-anchor,e" \
+	    || rm -f $@
+	perl -e '$$draw=do "/tmp/reference-wide.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn join(" ", map { int } $$sub->(0,0), $$sub->(199,199));'
+	chmod ugo+r $@
+
+$(MAPFILES_IMG_DIR)/reference.gif:	$(MAPFILES_IMG_DIR)/reference.png
+	convert $> $@
+
+$(MAPFILES_IMG_DIR)/reference-b.gif:	$(MAPFILES_IMG_DIR)/reference-b.png
+	convert $> $@
+
+$(MAPFILES_IMG_DIR)/reference-wide.gif:	$(MAPFILES_IMG_DIR)/reference-wide.png
+	convert $> $@
+
+$(MAPFILES_IMG_DIR)/reference.xpm:	$(MAPFILES_IMG_DIR)/reference.png
+	convert $> $@
+
+$(MAPFILES_IMG_DIR)/reference-b.xpm:	$(MAPFILES_IMG_DIR)/reference-b.png
+	convert $> $@
+
+$(MAPFILES_IMG_DIR)/reference-wide.xpm:	$(MAPFILES_IMG_DIR)/reference-wide.png
+	convert $> $@
+
+
+RADWEGE_DELTA=	5 10 20
+
+# XXX comments_.*.shp generieren?
+mapfiles-convert:	$(MAPFILES_DATA_DIR)/strassen.shp \
+			$(MAPFILES_DATA_DIR)/wasserstrassen.shp \
+			$(MAPFILES_DATA_DIR)/orte.shp \
+			$(MAPFILES_DATA_DIR)/orte_city.shp \
+		 	$(MAPFILES_DATA_DIR)/qualitaet.shp \
+			$(MAPFILES_DATA_DIR)/handicap.shp \
+			$(MAPFILES_DATA_DIR)/berlin.shp \
+			$(MAPFILES_DATA_DIR)/potsdam.shp \
+			$(MAPFILES_DATA_DIR)/deutschland.shp \
+			$(MAPFILES_DATA_DIR)/flaechen.shp \
+			$(MAPFILES_DATA_DIR)/ubahn.shp \
+			$(MAPFILES_DATA_DIR)/ubahnhof.shp \
+			$(MAPFILES_DATA_DIR)/sbahn.shp \
+			$(MAPFILES_DATA_DIR)/sbahnhof.shp \
+			$(MAPFILES_DATA_DIR)/rbahn.shp \
+			$(MAPFILES_DATA_DIR)/rbahnhof.shp \
+			${RADWEGE_DELTA:C/[0-9]+/$(MAPFILES_DATA_DIR)\/radwege&.shp/g} \
+			$(MAPFILES_DATA_DIR)/obst.shp \
+			$(MAPFILES_DATA_DIR)/comments.shp \
+			$(MAPFILES_DATA_DIR)/faehren.shp \
+			$(MAPFILES_DATA_DIR)/hoehe.shp \
+			$(MAPFILES_DATA_DIR)/ampeln.shp \
+			$(MAPFILES_DATA_DIR)/gesperrt.shp \
+			$(MAPFILES_DATA_DIR)/gesperrt30.shp \
+			$(MAPFILES_DATA_DIR)/sehenswuerdigkeit.shp \
+			$(MAPFILES_DATA_DIR)/fragezeichen.shp \
+			$(MAPFILES_DATA_DIR)/nolighting.shp
+
+MAPFILES_TEMP_PREFIX=	/tmp/b_de_
+
+# just temporary files
+$(MAPFILES_TEMP_PREFIX)strassen-sorted:	strassen
+	$(SORTBYCAT) < $> > $@
+$(MAPFILES_TEMP_PREFIX)landstrassen-sorted:	landstrassen
+	$(SORTBYCAT) < $> > $@
+$(MAPFILES_TEMP_PREFIX)landstrassen2-sorted:	landstrassen2
+	$(SORTBYCAT) < $> > $@
+
+$(MAPFILES_DATA_DIR)/strassen.shp:	\
+				$(MAPFILES_TEMP_PREFIX)strassen-sorted \
+				$(MAPFILES_TEMP_PREFIX)landstrassen-sorted \
+				$(MAPFILES_TEMP_PREFIX)landstrassen2-sorted
+	$(BBD2ESRI) -type street -o $(MAPFILES_DATA_DIR)/strassen \
+	    $(MAPFILES_TEMP_PREFIX)strassen-sorted \
+	    $(MAPFILES_TEMP_PREFIX)landstrassen-sorted \
+	    $(MAPFILES_TEMP_PREFIX)landstrassen2-sorted
+
+$(MAPFILES_DATA_DIR)/qualitaet.shp:	qualitaet_s qualitaet_l
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/qualitaet \
+	    qualitaet_s qualitaet_l
+
+$(MAPFILES_DATA_DIR)/handicap.shp:	handicap_s handicap_l
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/handicap \
+	    handicap_s handicap_l
+
+$(MAPFILES_DATA_DIR)/wasserstrassen.shp:	wasserstrassen wasserumland wasserumland2
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/wasserstrassen \
+	    -shapetype auto \
+	    wasserstrassen wasserumland wasserumland2
+
+$(MAPFILES_DATA_DIR)/flaechen.shp:	flaechen
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/flaechen \
+	    -shapetype polygon flaechen
+
+$(MAPFILES_DATA_DIR)/ubahn.shp:	ubahn
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/ubahn ubahn
+
+$(MAPFILES_DATA_DIR)/ubahnhof.shp:	ubahnhof
+	$(BBD2ESRI) -shapetype point -o $(MAPFILES_DATA_DIR)/ubahnhof ubahnhof
+
+$(MAPFILES_DATA_DIR)/sbahn.shp:	sbahn
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/sbahn sbahn
+
+$(MAPFILES_DATA_DIR)/sbahnhof.shp:	sbahnhof
+	$(BBD2ESRI) -shapetype point -o $(MAPFILES_DATA_DIR)/sbahnhof sbahnhof
+
+$(MAPFILES_DATA_DIR)/rbahn.shp:	rbahn
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/rbahn rbahn
+
+$(MAPFILES_DATA_DIR)/rbahnhof.shp:	rbahnhof
+	$(BBD2ESRI) -shapetype point -o $(MAPFILES_DATA_DIR)/rbahnhof rbahnhof
+
+# just temporary files
+$(MAPFILES_TEMP_PREFIX)orte-reversed:	orte
+	$(SORTBYCAT) -reverse < $> > $@
+$(MAPFILES_TEMP_PREFIX)orte2-reversed:	orte2
+	$(SORTBYCAT) -reverse < $> > $@
+
+$(MAPFILES_DATA_DIR)/orte.shp:	$(MAPFILES_TEMP_PREFIX)orte-reversed \
+				$(MAPFILES_TEMP_PREFIX)orte2-reversed
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/orte \
+	    -shapetype point \
+	    $(MAPFILES_TEMP_PREFIX)orte-reversed \
+	    $(MAPFILES_TEMP_PREFIX)orte2-reversed
+
+$(MAPFILES_DATA_DIR)/orte_city.shp:	orte_city
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/orte_city \
+	    -shapetype point orte_city
+
+$(MAPFILES_DATA_DIR)/berlin.shp:	berlin
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/berlin berlin
+
+$(MAPFILES_DATA_DIR)/potsdam.shp:	potsdam
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/potsdam potsdam
+
+$(MAPFILES_DATA_DIR)/deutschland.shp:	deutschland
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/deutschland deutschland
+
+.for delta in ${RADWEGE_DELTA}
+$(MAPFILES_DATA_DIR)/radwege${delta}.shp:	radwege_exact
+	${CONVERT_RADWEGE} -inmap Standard -delta ${delta} < $> > /tmp/radwege${delta}
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/radwege${delta} /tmp/radwege${delta}
+.endfor
+
+$(MAPFILES_DATA_DIR)/obst.shp:	obst
+	$(BBD2ESRI) -shapetype point -o $(MAPFILES_DATA_DIR)/obst obst
+
+$(MAPFILES_DATA_DIR)/comments.shp:	comments
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/comments comments
+
+$(MAPFILES_DATA_DIR)/faehren.shp:	faehren
+	$(BBD2ESRI) -type ferry -o $(MAPFILES_DATA_DIR)/faehren faehren
+
+$(MAPFILES_DATA_DIR)/hoehe.shp:	hoehe
+	$(BBD2ESRI) -shapetype point -o $(MAPFILES_DATA_DIR)/hoehe hoehe
+
+$(MAPFILES_DATA_DIR)/ampeln.shp:	ampeln
+	$(BBD2ESRI) -shapetype point -o $(MAPFILES_DATA_DIR)/ampeln ampeln
+
+$(MAPFILES_DATA_DIR)/gesperrt.shp:	gesperrt
+	$(BBD2ESRI) -onewayhack -shapetype auto \
+	     -o $(MAPFILES_DATA_DIR)/gesperrt gesperrt
+
+# Shorten both ends of each "gesperrt" street by 30 meters
+$(MAPFILES_DATA_DIR)/gesperrt30.shp:	gesperrt
+	perl -w -I.. -I../lib -Mstrict -MStrassen -MStrassen::Util -MObject::Iterate=iterate -e \
+'my $$slen=30; \
+ my $$s = Strassen->new("gesperrt"); \
+ my $$news = Strassen->new; \
+ iterate { \
+  my @c = @{ $$_->[Strassen::COORDS] }; \
+  if (@c >= 2) { \
+   splice @c, 0, 1, shorten(@c[0,1]); \
+  } \
+  if (@c >= 2) { \
+   splice @c, -1, 1, shorten(@c[-1,-2]); \
+  } \
+  if (@c >= 2) { \
+   $$_->[Strassen::COORDS] = [@c]; \
+   $$news->push($$_) \
+  } \
+ } $$s; \
+ $$news->write("-"); \
+ sub shorten { \
+  my(@p) = (split(/,/, $$_[0]), split /,/, $$_[1]); \
+  my $$len = Strassen::Util::strecke([@p[0,1]],[@p[2,3]]); \
+  return () if $$len<=$$slen; \
+  my $$f = 1-($$len-$$slen)/$$len; \
+  return (join(",", map { int } ($$p[0]+($$p[2]-$$p[0])*$$f, \
+                                 $$p[1]+($$p[3]-$$p[1])*$$f)) \
+         ); \
+ } \
+' > /tmp/gesperrt30
+	$(BBD2ESRI) -onewayhack -shapetype auto \
+	     -o $(MAPFILES_DATA_DIR)/gesperrt30 /tmp/gesperrt30
+
+
+$(MAPFILES_DATA_DIR)/sehenswuerdigkeit.shp:	sehenswuerdigkeit
+	$(BBD2ESRI) -imagetype png -shapetype auto \
+	     -o $(MAPFILES_DATA_DIR)/sehenswuerdigkeit sehenswuerdigkeit
+
+.if exists(fragezeichen)
+$(MAPFILES_DATA_DIR)/fragezeichen.shp:	fragezeichen
+.else
+$(MAPFILES_DATA_DIR)/fragezeichen.shp:	${MISCDIR}/fragezeichen
+.endif
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/fragezeichen $>
+
+$(MAPFILES_DATA_DIR)/nolighting.shp:	nolighting
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/nolighting nolighting
+
+# XXX more needed
+cleanup-tmp:
+	-rm -f $(MAPFILES_TEMP_PREFIX)strassen-sorted \
+	       $(MAPFILES_TEMP_PREFIX)landstrassen-sorted \
+	       $(MAPFILES_TEMP_PREFIX)landstrassen2-sorted \
+	       $(MAPFILES_TEMP_PREFIX)orte-reversed \
+	       $(MAPFILES_TEMP_PREFIX)orte2-reversed

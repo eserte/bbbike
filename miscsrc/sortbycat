@@ -1,0 +1,76 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: sortbycat,v 2.8 2002/12/30 02:16:18 eserte Exp $
+# Author: Slaven Rezic
+#
+
+# Strassen-Dateien nach Kategorien sortieren
+# Sortierreihenfolge ist eingebaut und kann nachträglich per Option
+# geändert werden
+
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../data",
+	 "$FindBin::RealBin/../lib",
+	);
+use Strassen;
+use strict;
+use Getopt::Long;
+
+my %catval =
+    ('F:W'          => 3, # Gewässer
+     'W'            => 3,
+     'W1'           => 3,
+     'W2'           => 3,
+     'F:I'          => 6, # Insel
+     'F:#c08080'    => 10, # bebaute Flächen
+     'F:violet'     => 20, # Industrie
+     'F:DarkViolet' => 21, # Hafen oder Industrie
+     'F:P'          => 15, # Parks
+     'F:#46b47b'    => 13, # Wald
+
+     'B'            => 20,
+     'HH'           => 15,
+     'H'            => 10,
+     'N'            => 5,
+     'NN'           => 1,
+     );
+
+# für nummerische Kategorien
+for (0 .. 10) {
+    $catval{$_} = 10-$_;
+}
+
+my $reverse = 0;
+my $catref = \%catval;
+
+if (!GetOptions("reverse" => \$reverse,
+		"sort=s" => sub {
+		    $catref = [split /,/, $_[1]]
+		})) {
+    die "usage: $0 [-sort cat1,cat2,cat3...] [-reverse] [datafile]";
+}
+
+my $datafile = shift || '';
+
+my @data;
+
+my $tmpfile;
+
+if ($datafile eq '') {
+    $datafile = "-";
+}
+
+if ($reverse) {
+    while(my($k,$v) = each %$catref) {
+	$catref->{$k} = -$v;
+    }
+}
+
+my $s = new Strassen $datafile;
+$s->sort_by_cat($catref);
+$s->write("-");
+
+__END__

@@ -1,0 +1,242 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: convert_radwege,v 1.20 2003/06/02 23:02:52 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 1998,2002 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven.rezic@berlin.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use File::Basename;
+use FindBin;
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+use Karte;
+use Radwege;
+use Getopt::Long;
+
+use constant PI => 3.141592653;
+
+# mit -exact wird keine Versetzung der Radwege durchgeführt
+# somit kann die erzeugte Datei für ein Optimierungs-Netz (siehe Strassen.pm,
+# Package StrassenNetz) verwendet werden.
+my $exact = 0;
+my $inmap = "Berlinmap1996";
+my $outmap = "Standard";
+my $conv;
+my $conv_code;
+my $oldfmt;
+my $delta = 20;
+
+if (!GetOptions("exact!" => \$exact,
+		"inmap=s" => \$inmap,
+		"outmap=s" => \$outmap,
+		"conv=s" => \$conv_code,
+		"noconv" => sub { $conv = sub { @_ } },
+		"oldfmt!" => \$oldfmt,
+		"delta=f" => \$delta,
+	       )) {
+    die <<EOF;
+Usage: $0 [-[no]exact]
+          [-inmap map] [-outmap map] [-conv convcode]
+          [-noconv] [-oldfmt] < infile > outfile
+
+-exact:      create an exact database (for the routing engine)
+-noexact:    create a database with displaced lines (for the mapping engine)
+-delta:      delta for displaced lines (default: $delta)
+-inmap map:  use this Karte::* map for the source
+-outmap map: use this Karte::* map for the destination
+-conv code:  use the specified source code for the conversion subroutine
+-noconv:     do not convert (by default:
+             convert from $inmap to $outmap)
+-oldfmt:     obsolete
+EOF
+}
+
+if ($oldfmt) {
+    die <<'EOF'
+-oldfmt not supported anymore. Please convert from old format to new
+format with:
+
+cd .../bbbike/data
+perl -I.. -MRadwege -F'\t' -nale 'print "\t$Radwege::category_code{$F[2]};$Radwege::category_code{$F[3]} $F[0] $F[1]"' radwege-orig
+
+EOF
+
+}
+
+if (!$conv) {
+    if (!$conv_code) {
+	Karte::preload($inmap, $outmap);
+	$conv = sub {
+	    $Karte::map_by_modname{$inmap}->map2map
+		($Karte::map_by_modname{$outmap}, @_)
+	    };
+    } else {
+	$conv = eval $conv_code;
+	die $@ if $@;
+    }
+}
+
+my @radweg;
+
+my $s;
+my $getnext;
+my %rev_category_code;
+{
+    require Strassen::Core;
+    $s = Strassen->new("-");
+    $s->init;
+    %rev_category_code = reverse %Radwege::category_code;
+    $getnext = sub {
+	my $r = $s->next;
+	return if !@{ $r->[Strassen::COORDS()] };
+	if (@{ $r->[Strassen::COORDS()] } != 2) {
+	    die "Nicht genau zwei Koordinaten, Position " . $s->pos;
+	}
+	my @l;
+	if ($r->[Strassen::CAT()] =~ /;/) {
+	    my($hin,$rueck) = split /;/, $r->[Strassen::CAT()];
+	    push @l, $rev_category_code{$hin} || "kein";
+	    push @l, $rev_category_code{$rueck} || "kein";
+	} else {
+	    push @l, $rev_category_code{$r->[Strassen::CAT()]};
+	    push @l, "kein";
+	}
+	push @l, @{$r->[Strassen::COORDS()]};
+	@l;
+    };
+}
+
+while(1) {
+    my($hin, $rueck, @l) = $getnext->();
+    last if !defined $l[0];
+    my $do_hin   = exists $Radwege::category_code{$hin} && $Radwege::category_code{$hin} ne "RW0";
+    my $do_rueck = exists $Radwege::category_code{$rueck} && $Radwege::category_code{$rueck} ne "RW0";
+
+    my(@x,@y,@dx,@dy);
+    for my $i (0 .. $#l) {
+	($x[$i], $y[$i]) = split(/,/, $l[$i]);
+	($x[$i], $y[$i]) = $conv->($x[$i], $y[$i]);
+	#XXX $Karte::Berlinmap1996::obj->map2standard($x[$i], $y[$i]);
+    }
+
+    for my $i (1 .. $#l) {
+	my $alpha = atan2($y[$i]-$y[$i-1], $x[$i]-$x[$i-1]);
+	my $beta  = $alpha - PI/2;
+	my($dx, $dy);
+	if ($exact) {
+	    ($dx, $dy) = (0, 0);
+	} else {
+	    #	($dx, $dy) = (int($delta*cos($beta)), int($delta*sin($beta)));
+	    ($dx, $dy) = ($delta*cos($beta), $delta*sin($beta));
+	}
+	$dx[$i] = $dx;
+	$dy[$i] = $dy;
+    }
+    $dx[0] = $dx[1];
+    $dy[0] = $dy[1];
+
+    if ($do_hin) {
+	print "\t" . $Radwege::category_code{$hin};
+	for my $i (0 .. $#l) {
+	    print " " . join(",", map { int } ($x[$i]+$dx[$i], $y[$i]+$dy[$i]));
+	}
+	print "\n";
+    }
+    if ($do_rueck) {
+	print "\t" . $Radwege::category_code{$rueck};
+	for my $i (reverse(0 .. $#l)) {
+	    print " " . join(",", map { int } ($x[$i]-$dx[$i], $y[$i]-$dy[$i]));
+	}
+	print "\n";
+    }
+
+# XXX del:
+#  	join(",", map { int } ($x[0]+$dx, $y[0]+$dy)) . " " .
+#  	    join(",", map { int } ($x[1]+$dx, $y[1]+$dy)) . "\n"
+#  		if exists $Radwege::category_code{$hin} && $Radwege::category_code{$hin} ne "RW0";
+#      print "\t" . $Radwege::category_code{$rueck}. " " .
+#  	join(",", map { int } ($x[1]-$dx, $y[1]-$dy)) . " " .
+#  	    join(",", map { int } ($x[0]-$dx, $y[0]-$dy)) . "\n"
+#  		if exists $Radwege::category_code{$rueck} && $Radwege::category_code{$rueck} ne "RW0";
+
+# XXX $dx => $dx[$i] transition not yet done, see change 1.13 => 1.14
+#      if (0) {
+#  	# XXX siehe unten
+#      if (exists $Radwege::category_code{$hin}) {
+#  	my $cat = $Radwege::category_code{$hin};
+#  	my($p1, $p2) = (int($x[0]+$dx) . "," . int($y[0]+$dy),
+#  			int($x[1]+$dx) . "," . int($y[1]+$dy));
+#  	push @radweg, [$cat, $p1, $p2];
+#      }
+#      if (exists $Radwege::category_code{$rueck}) {
+#  	my $cat = $Radwege::category_code{$rueck};
+#  	my($p1, $p2) = (int($x[1]-$dx) . "," . int($y[1]-$dy),
+#  			int($x[0]-$dx) . "," . int($y[0]-$dy));
+#  	push @radweg, [$cat, $p1, $p2];
+#      }
+#  }
+}
+
+# XXX Dieser Code funktioniert nicht, weil die Richtung nicht
+# richtig berücksichtigt wird. Deshalb erst einmal auskommentiert.
+
+# XXX Hier wird versucht, längere Streckenstücke festzustellen. Leider
+# werden die Stücke durch das Verschieben mit dx/dy versetzt, so dass
+# kaum eine lange Strecke generiert werden kann. Siehe auch die
+# Vergrößerung von Radwegen in bbbike.
+
+if (0) {
+my @res;
+my @res_cat;
+my %res;
+for(my $i=0; $i<=$#radweg; $i++) {
+    my($cat, $p1, $p2) = @{ $radweg[$i] };
+    if (exists $res{$p1} and $cat eq $res_cat[$res{$p1}]) {
+	my $i = $res{$p1};
+	if ($res[$i]->[0] eq $p1) {
+	    delete $res{$p1};
+	    unshift @{ $res[$i] }, $p2;
+	    $res{$p2} = $i;
+	} elsif ($res[$i]->[$#{$res[$i]}] eq $p1) {
+	    push @{ $res[$i] }, $p2;
+	    delete $res{$p1};
+	    $res{$p2} = $i;
+	} else {
+	    die;
+	}
+    } elsif (exists $res{$p2} and $cat eq $res_cat[$res{$p2}]) {
+	my $i = $res{$p2};
+	if ($res[$i]->[0] eq $p2) {
+	    unshift @{ $res[$i] }, $p1;
+	    delete $res{$p2};
+	    $res{$p1} = $i;
+	} elsif ($res[$i]->[$#{$res[$i]}] eq $p2) {
+	    push @{ $res[$i] }, $p1;
+	    delete $res{$p2};
+	    $res{$p1} = $i;
+	} else {
+	    die;
+	}
+    } else {
+	push @res, [$p1, $p2];
+	push @res_cat, $cat;
+	$res{$p1} = $#res;
+	$res{$p2} = $#res;
+    }
+}
+
+for(my $i=0; $i<=$#res; $i++) {
+    print "\t" . $res_cat[$i] . " " . join(" ", @{ $res[$i] }) . "\n";
+}
+}
+
+__END__
+

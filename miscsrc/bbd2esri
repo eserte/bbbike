@@ -1,0 +1,449 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: bbd2esri,v 1.9 2003/06/02 23:02:01 eserte Exp eserte $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+# quick hack
+
+use strict;
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/../data",
+	);
+use Strassen::Core;
+use Strassen::MultiStrassen;
+use Strassen::Strasse;
+use ESRI::Shapefile::Main;
+use Object::Iterate qw(iterate);
+use XBase;
+use List::Util qw(max);
+use Getopt::Long;
+use BBBikeUtil qw(rad2deg);
+
+my $outprefix;
+my $shapetype = "polyline";
+my $type = "";
+my $imagetype;
+my $onewayhack;
+
+# Generated with M-x occur --append in landstrassen-orig
+# and some hand-editing... # XXX automate!
+my @stadt_strassen = (qw(Potsdam Erkner Schönefeld
+Dahlwitz-Hoppegarten Kleinmachnow Stahnsdorf Teltow Gosen Mahlow
+Mahlow-Waldblick Brandenburg Frankfurt Cottbus), 'Hohen Neuendorf',
+qw(Borgsdorf Oranienburg Rheinsberg Woltersdorf Rüdersdorf Schöneiche
+Strausberg Lindenberg Falkensee Dallgow-Döberitz Werder), 'Königs
+Wusterhausen', qw(Eberswalde Bernau Fürstenwalde Lübbenau Luckenwalde
+Neuruppin Mittenwalde));
+my $stadt_strassen_rx0 = "\\((?:" . join("|", map { quotemeta } @stadt_strassen) . ")\\)";
+my $stadt_strassen_rx = qr/$stadt_strassen_rx0/;
+
+if (!GetOptions("o=s" => \$outprefix,
+		"shptype|shapetype=s" => \$shapetype,
+		"type=s" => \$type,
+		"imagetype=s" => \$imagetype,
+		"onewayhack!" => \$onewayhack,
+	       )) {
+    die "usage $0: [-o outprefix] [-shptype shapetype] [-type type] [-imagetype imagetype] [-onewayhack] bbdfile ...
+
+shapetype may be auto, polyline, polygon, or point
+";
+}
+if (!defined $outprefix) {
+    die "-o is missing";
+}
+
+my @files = @ARGV;
+if (!@files) {
+    die "No files specified";
+}
+
+if ($shapetype eq 'auto') {
+    create_shape_file(-shapetype => "polyline",
+		      -filter => 1,
+		      -type => $type,
+		     );
+    create_shape_file(-shapetype => "polygon",
+		      -filter => 1,
+		      -suffix => "_polygon",
+		      -type => $type,
+		     );
+    create_shape_file(-shapetype => "point",
+		      -filter => 1,
+		      -suffix => "_point",
+		      -type => $type,
+		     );
+} else {
+    create_shape_file(-shapetype => $shapetype,
+		      -type => $type);
+}
+
+my($glob_rec_no, $glob_min_x, $glob_min_y, $glob_max_x, $glob_max_y);
+
+sub create_shape_file {
+    my(%args) = @_;
+    my $shapetype = $args{-shapetype};
+    my $suffix    = $args{-suffix};
+    my $filter    = $args{-filter};
+    my $type      = $args{-type};
+
+    my $header = init_shp_header();
+    my $shx_header = $header;
+    my @rec;
+    my @rec_offset;
+    my @rec_length;
+    my $rec_offset = length($header);
+    my @dbf;
+
+    # semi-globals
+    $glob_rec_no = 1;
+    ($glob_min_x, $glob_min_y, $glob_max_x, $glob_max_y)
+	= (undef, undef, undef, undef);
+
+    my $create_record_sub = ($shapetype =~ /^polyline$/
+			     ? \&create_polyline_record
+			     : $shapetype =~ /^polygon$/
+			     ? \&create_polygon_record
+			     : $shapetype =~ /^point$/
+			     ? \&create_point_record
+			     : die "Unhandled shape type $shapetype");
+
+    for my $file (@files) {
+	my $type = $type;
+	my $s = Strassen->new($file);
+	if ($file =~ /landstrassen/) {
+	    $type .= "-l";
+	} elsif ($file =~ /\bstrassen/) {
+	    $type .= "-s";
+	}
+
+	my $create_esri_and_dbf_record = sub {
+	    my $d = shift;
+	    my $rec = $create_record_sub->($d);
+	    push @rec_offset, $rec_offset;
+	    push @rec_length, length($rec);
+	    push @rec, $rec;
+	    $rec_offset += length($rec);
+	    push @dbf, create_dbf_record($d, -type => $type);
+	};
+
+	iterate {
+	    $_->[Strassen::CAT] =~ s/::.*//; # XXX hin/rueck XXX :: will change
+
+	    if ($filter && $shapetype eq 'polygon') {
+		if ($_->[Strassen::CAT] !~ /^F:/) {
+		    return;
+		} else {
+		    $_->[Strassen::CAT] =~ s/^F://;
+		}
+	    }
+	    return if ($filter && $shapetype ne 'polygon' && $_->[Strassen::CAT] =~ /^F:/);
+
+	    if ($filter && $shapetype eq 'point') {
+		if (@{$_->[Strassen::COORDS]} > 1) {
+		    return;
+		}
+	    }
+	    return if ($filter && $shapetype ne 'point' && @{$_->[Strassen::COORDS]} == 1);
+
+	    if (defined $imagetype) {
+		# change extension
+		$_->[Strassen::CAT] =~ s/(IMG:[^|]*\.)[^|]+/$1$imagetype/;
+	    }
+	    # XXX should really find a better solution here:
+	    if ($_->[Strassen::CAT] =~ /(.*);(.*)/) {
+		$_->[Strassen::CAT] = ($1 eq '' ? $2 : $1);
+	    }
+	    if ($onewayhack && $_->[Strassen::CAT] eq '1') {
+		for my $res (oneway_hack($_)) {
+		    $create_esri_and_dbf_record->($res);
+		}
+	    } else {
+		$create_esri_and_dbf_record->($_);
+	    }
+	} $s;
+    }
+
+    if (!@rec) {
+	warn "No data found\n";
+	return;
+    }
+
+    my $outprefix = $outprefix;
+    if (defined $suffix) {
+	$outprefix .= $suffix;
+    }
+
+    $header = set_shp_header($header,
+			     -length => $rec_offset,
+			     -shapetype => $shapetype,
+			     -bbox => [$glob_min_x, $glob_min_y,
+				       $glob_max_x, $glob_max_y,
+				       0, 0, 0, 0],
+			    );
+    open(SHP, ">$outprefix.shp") or die $!;
+    print SHP $header;
+    print SHP $_ for @rec;
+    close SHP;
+
+    $shx_header = set_shp_header($header,
+				 -length => length($shx_header) + (scalar(@rec_offset)+scalar(@rec_length))*4,
+				);
+    open(SHX, ">$outprefix.shx") or die $!;
+    print SHX $shx_header;
+    for my $i (0 .. $#rec_offset) {
+	print SHX pack("N2", $rec_offset[$i]/2, $rec_length[$i]/2);
+    }
+
+    my @max_length;
+    my $fields = 6;
+    {
+	no warnings;
+	for my $i (0 .. $fields-1) {
+	    $max_length[$i] = max map { length($_->[$i]) } @dbf;
+	}
+    }
+
+    unlink "$outprefix.dbf";
+    my $newtable = XBase->create
+	("name" => "$outprefix.dbf",
+	 "field_names" => [ "NAME", "CAT", "FULLNAME", "STRNR", "CAT_IMG", "CAT_ANCHOR" ],
+	 "field_types" => [ ("C") x $fields ],
+	 "field_lengths" => [ @max_length ],
+	 "field_decimals" => [ (undef) x $fields ]);
+    my $rec_no = 0;
+    for (@dbf) {
+	$newtable->set_record($rec_no, @$_);
+	$rec_no++;
+    }
+}
+
+sub create_point_record {
+    my $s_rec = shift;
+    ($glob_min_x, $glob_min_y, $glob_max_x, $glob_max_y) =
+	get_bbox($s_rec->[Strassen::COORDS],
+		 $glob_min_x, $glob_min_y, $glob_max_x, $glob_max_y);
+    my($x,$y) = split /,/, $s_rec->[Strassen::COORDS][0];
+    my $rec = pack("d2", $x, $y);
+    $rec = pack("N", $glob_rec_no)
+	. pack("N", length($rec)/2+4)
+	    . pack("V", ESRI::Shapefile::Main::SHAPE_POINT)
+		. $rec;
+    $glob_rec_no++;
+    $rec;
+}
+
+# XXX handle "*" coordinates as in comments-orig
+sub create_polyline_record {
+    my $s_rec = shift;
+    my $rec = "\0" x 40;
+    substr($rec, 0, 32) = pack("d4", get_bbox($s_rec->[Strassen::COORDS]));
+    ($glob_min_x, $glob_min_y, $glob_max_x, $glob_max_y) =
+	get_bbox($s_rec->[Strassen::COORDS],
+		 $glob_min_x, $glob_min_y, $glob_max_x, $glob_max_y);
+    substr($rec, 32, 4) = pack("V", 1);
+    substr($rec, 36, 4) = pack("V", scalar @{$s_rec->[Strassen::COORDS]});
+    $rec .= pack("V", 0);
+    for (@{$s_rec->[Strassen::COORDS]}) {
+	my($x,$y) = split /,/, $_;
+	$rec .= pack("d2", $x, $y);
+    }
+    $rec = pack("N", $glob_rec_no)
+	. pack("N", length($rec)/2+4)
+	    . pack("V", ESRI::Shapefile::Main::SHAPE_POLYLINE)
+		. $rec;
+    $glob_rec_no++;
+    $rec;
+}
+
+sub create_polygon_record {
+    my $s_rec = shift;
+    my $rec = "\0" x 40;
+    # force a closed polygon
+    if ($s_rec->[Strassen::COORDS][0] ne $s_rec->[Strassen::COORDS][-1]) {
+	push @{ $s_rec->[Strassen::COORDS] }, $s_rec->[Strassen::COORDS][0];
+    }
+    substr($rec, 0, 32) = pack("d4", get_bbox($s_rec->[Strassen::COORDS]));
+    ($glob_min_x, $glob_min_y, $glob_max_x, $glob_max_y) =
+	get_bbox($s_rec->[Strassen::COORDS],
+		 $glob_min_x, $glob_min_y, $glob_max_x, $glob_max_y);
+    substr($rec, 32, 4) = pack("V", 1);
+    substr($rec, 36, 4) = pack("V", scalar @{$s_rec->[Strassen::COORDS]});
+    $rec .= pack("V", 0);
+    for (@{$s_rec->[Strassen::COORDS]}) {
+	my($x,$y) = split /,/, $_;
+	$rec .= pack("d2", $x, $y);
+    }
+    $rec = pack("N", $glob_rec_no)
+	. pack("N", length($rec)/2+4)
+	    . pack("V", ESRI::Shapefile::Main::SHAPE_POLYGON)
+		. $rec;
+    $glob_rec_no++;
+    $rec;
+}
+
+# XXX too much proprietary stuff here (-type, "Stadtstraßen" etc.)
+sub create_dbf_record {
+    my($s_rec, %args) = @_;
+    my $displayname;
+    my $str_nr = "";
+    my $cat_img = "";
+    my $cat_anchor = "";
+    if (exists $args{-type} && $args{-type} =~ /^street/) {
+	($displayname) = $s_rec->[Strassen::NAME] =~ /^([^\(]+)/;
+	if (!defined $displayname) {
+	    $displayname = $s_rec->[Strassen::NAME];
+	}
+    } else {
+	($displayname) = $s_rec->[Strassen::NAME] =~ /^([^|]+)/;
+    }
+    if (exists $args{-type}) {
+	if ($args{-type} eq 'street-l') {
+	    if ($s_rec->[Strassen::NAME] =~ $stadt_strassen_rx) {
+		($displayname = $s_rec->[Strassen::NAME]) =~ s/\s*$stadt_strassen_rx//;
+	    } else {
+		$displayname = "";
+	    }
+	    my($type,$nr) = Strasse::parse_street_type_nr($s_rec->[Strassen::NAME]);
+	    if (defined $type) {
+		$str_nr = "$type$nr"; # XXX flacky...
+	    }
+	} elsif ($args{-type} =~ /^ferry/) {
+	    $str_nr = "\xa0"; # dummy invisible string for mapserver
+	    # a single space seems to be ignored by dbf or Xbase
+	}
+    }
+    if ($s_rec->[Strassen::CAT] =~ /\|/) {
+	my(@t) = split /\|/, $s_rec->[Strassen::CAT];
+	foreach (@t) {
+	    if (/^IMG:(.*)/) {
+		$cat_img = $1;
+	    } elsif (/^ANCHOR:(.*)/) {
+		$cat_anchor = $1;
+	    }
+	}
+    }
+    [$displayname, $s_rec->[Strassen::CAT], $s_rec->[Strassen::NAME],
+     $str_nr, $cat_img, $cat_anchor];
+}
+
+sub get_bbox {
+    my($cref, $min_x, $min_y, $max_x, $max_y) = @_;
+    for (@$cref) {
+	next if $_ eq '*';
+	my($x, $y) = split /,/, $_;
+	if (!defined $min_x || $x < $min_x) {
+	    $min_x = $x;
+	}
+	if (!defined $max_x || $x > $max_x) {
+	    $max_x = $x;
+	}
+	if (!defined $min_y || $y < $min_y) {
+	    $min_y = $y;
+	}
+	if (!defined $max_y || $y > $max_y) {
+	    $max_y = $y;
+	}
+    }
+    ($min_x, $min_y, $max_x, $max_y);
+}
+
+sub init_shp_header {
+    my $buf = "\0"x100;
+    substr($buf, 0, 4)  = pack("N", ESRI::Shapefile::Main::FILECODE);
+    substr($buf, 28, 4) = pack("V", ESRI::Shapefile::Main::VERSION);
+    $buf;
+}
+
+sub set_shp_header {
+    my($buf, %args) = @_;
+    if (exists $args{-length}) {
+	substr($buf, 24, 4) = pack("N", $args{-length}/2);
+    }
+    if (exists $args{-bbox}) {
+	if (@{ $args{-bbox} } != 8) {
+	    die "Bounding box should have 8 values";
+	}
+	my $pos = 36;
+	for (@{ $args{-bbox} }) {
+	    substr($buf, $pos, 8) = pack("d", $_);
+	    $pos+=8;
+	}
+    }
+    if (exists $args{-shapetype}) {
+	my $const = eval "ESRI::Shapefile::Main::SHAPE_" . uc($args{-shapetype});
+	if (!defined $const) {
+	    die "Can't get shape type for $args{-shapetype}";
+	}
+	substr($buf, 32, 4) = pack("V", $const);
+    }
+    $buf;
+}
+
+# Leider zeichnet der Mapserver Linien grundsätzlich von links nach rechts,
+# so dass die Richtung der Einbahnstraßen verloren geht. Hier ist ein
+# Hack, um die Einbahnstraßen nach der Himmelsrichtung (von links nach rechts
+# oder rechts nach links) zu sortieren und mit den Kategorien 1_left und
+# 1_right zu versehen. Der Grenzbereich der senkrechten Straßen ist
+# besonders problematisch und wird ignoriert.
+#
+sub oneway_hack {
+    my $d = shift;
+    my %res;
+    my $c = $d->[Strassen::COORDS];
+    my $last_dir;
+    for my $i (1 .. $#$c) {
+	my($x0,$y0) = split /,/, $c->[$i-1];
+	my($x1,$y1) = split /,/, $c->[$i];
+
+	my $get_direction = sub {
+	    my $dir = ($x1 > $x0 ? 1 : -1);
+	    my $deg = rad2deg(atan2($y1-$y0, $x1-$x0));
+	    if (($deg > 89 && $deg < 91) || ($deg > -89 && $deg < -91)) {
+		0;
+	    } else {
+		$dir;
+	    }
+	};
+
+	if (!defined $last_dir) {
+	    $last_dir = $get_direction->();
+	    $res{$last_dir} = [[$c->[$i-1], $c->[$i]]];
+	} else {
+	    my $now_dir = $get_direction->();
+	    if ($now_dir == $last_dir) {
+		push @{ $res{$now_dir}[-1] }, $c->[$i];
+	    } else {
+		push @{ $res{$now_dir} }, [$c->[$i-1], $c->[$i]];
+		$last_dir = $now_dir;
+	    }
+	}
+    }
+
+    my @res;
+    for my $dir (-1, 0, 1) {
+	next if $dir == 0; # ignore senkrechte
+	my $cat = ($dir < 0 ? "1_right" : "1_left");
+	for (@{ $res{$dir} }) {
+	    my $r = [];
+	    $r->[Strassen::NAME]   = $d->[Strassen::NAME];
+	    $r->[Strassen::CAT]    = $cat;
+	    $r->[Strassen::COORDS] = $_;
+	    push @res, $r;
+	}
+    }
+    @res;
+}
+
+__END__
