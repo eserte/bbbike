@@ -1225,6 +1225,10 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (H1)
+
+On resize, the reddot points for multiple choices become displaced.
+
 =item * (M2)
 
 Dokumentieren (in ?info=1): Beschreibung der Sucheinstellungen
