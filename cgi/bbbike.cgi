@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.88 2004/10/02 16:04:07 eserte Exp $
+# $Id: bbbike.cgi,v 6.88 2004/10/02 16:04:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -4782,6 +4782,9 @@ sub choose_all_form {
     for my $ch ('A' .. 'Z') {
 	print "<a href=\"#$ch\">$ch</a> ";
     }
+#     for my $type (qw(s u)) {
+# 	print qq{<a href="#${type}bhf">} . uc($type) . qq{-Bahnhöfe</a> };
+#     }
     print "</center><div id='list'>";
 
     for(my $i = 0; $i <= $#strlist; $i++) {
@@ -4800,7 +4803,24 @@ sub choose_all_form {
 	}
 	print "$strname<br>";
     }
+
+#     for my $type (qw(s u)) {
+# 	my $s = Strassen->new($type . "bahnhof");
+# 	my @bhf;
+# 	$s->init;
+# 	while(1) {
+# 	    my $r = $s->next;
+# 	    last if !@{ $r->[Strassen::COORDS()] };
+# 	    push @bhf, $r->[Strassen::NAME()] if $r->[Strassen::CAT()] !~ /0$/;
+# 	}
+# 	@bhf = sort @bhf;
+# 	print "<hr>\n";
+# 	print qq{<a name="${type}bhf"><b>} . uc($type) . qq{-Bahnhöfe</b></a><br/>\n};
+# 	print join("<br/>\n", map { uc($type) . " " . $_ } @bhf), "\n";
+#     }
+
     print "</div>";
+
     print $q->end_html;
 
     if ($locale_set && defined $old_locale) {

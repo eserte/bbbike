@@ -667,4 +667,6 @@ XXX Weitere Verbesserungen:
 "bis (Wuhlewanderweg, östliches Ufer): bereits an der Ampel Köpenicker Allee die Straßenseite wechseln (Straßenbahn auf Mittelstreifen); R1 (*); ab (Wuhlewanderweg, östliches Ufer): zunächst linken Gehweg benutzen" => für PI und ähnliches keine Start/Endpunkte verwenden, Sortierung siehe oben
 "bis Schreiberhauer Str.: sehr guter Asphalt; ab Schreiberhauer Str.: mäßiges Kopfsteinpflaster": wie bislang Q0 und q0 ignorieren
 "zwischen Sonnenallee und Weigandufer" (Innstr) => was ist hier passiert? (verbessert!)
-
+"nach 0.1 km bis Tempelhofer Ufer: reger Fußgängerverkehr" (Blücherplatz) => besser wäre es hier, wenn man den Gehwegbereich explizit angeben würde. Oder das Kaufhaus an der Stelle
+"ab Hallesches Ufer für 0.0 km: reger Fußgängerverkehr" => hmmm, hier vielleicht die Meterangaben anzeigen oder "für kurze Strecke"?
+"ab Goethestr.: gutes Kopfsteinpflaster; ab Goethestr.: Mi und Sa Wochenmarkt, Behinderungen möglich" => kann das hier zusammengefasst werden?

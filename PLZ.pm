@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.51 2004/07/08 07:29:28 eserte Exp eserte $
+# $Id: PLZ.pm,v 1.52 2004/10/04 22:24:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use vars qw($PLZ_BASE_FILE @plzfile $OLD_AGREP $VERSION $VERBOSE $sep);
 use locale;
 use BBBikeUtil;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.51 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.52 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)
@@ -457,7 +457,7 @@ sub look_loop {
 	if ($str =~ /^([US])\s+/i) {
 	    $str =~ s/^([US])\s+/uc($1)."-Bhf "/ie;
 	    $replaced++;
-	} elsif ($str =~ /^([US])-Bahnhof\s+/) {
+	} elsif ($str =~ /^([US])-Bahnhof\s+/i) {
 	    $str =~ s/^([US])-Bahnhof\s+/uc($1)."-Bhf "/ie;
 	    $replaced++;
 	}

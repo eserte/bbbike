@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.12 2004/09/09 12:04:02 eserte Exp $
+# $Id: plz.t,v 1.13 2004/10/05 07:06:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ package main;
 
 use Test::More;
 BEGIN { eval "use Test::Differences" };
-BEGIN { plan tests => 40 }
+BEGIN { plan tests => 41 }
 
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../data", "$FindBin::RealBin/../lib");
@@ -247,7 +247,6 @@ EOF
        "Quoting regexp for grep-umlaut search type")
 	or diag $dump->(\@res);
 
- XXX:
     @res = $plz->look_loop("Augsburger Str. (Charlottenburg",
 			   @standard_look_loop_args,
 			   GrepType => "grep", Noextern => 1);
@@ -270,7 +269,14 @@ EOF
     @res = $plz->look_loop("s-bahnhof heerstr",
 			   @standard_look_loop_args);
     is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Heerstr.' } @{$res[0]}), 1,
-       "S-Bahnhof, long form")
+       "S-Bahnhof (Heerstr), long form")
+	or diag $dump->(\@res);
+
+ XXX:
+    @res = $plz->look_loop("s-bahnhof grunewald",
+			   @standard_look_loop_args);
+    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Grunewald' } @{$res[0]}), 1,
+       "S-Bahnhof (Grunewald), long form")
 	or diag $dump->(\@res);
 
     # A complaint by alh:
