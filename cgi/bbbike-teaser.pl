@@ -44,13 +44,13 @@ EOF
 
 sub teaser_perltk_newrelease {
     <<EOF;
-<small><a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">Download</a> der Perl/Tk-Version von BBBike mit interaktiver Karte. Läuft auf Linux, Unix und Windows.</small><br><a class="new" href="@{[ $BBBike::LATEST_RELEASE_DISTDIR ]}">NEU: Version 3.13</a><br>
+<small><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> der Perl/Tk-Version von BBBike mit interaktiver Karte. Läuft auf Linux, Unix und Windows.</small><br><a class="new" href="@{[ $BBBike::LATEST_RELEASE_DISTDIR ]}">NEU: Version 3.13</a><br>
 EOF
 }
 
 sub teaser_perltk {
     <<EOF;
-<small><a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">Download</a> der Perl/Tk-Version von BBBike mit interaktiver Karte. Läuft auf Linux, Unix und Windows.</small><br>
+<small><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> der Perl/Tk-Version von BBBike mit interaktiver Karte. Läuft auf Linux, Unix und Windows.</small><br>
 EOF
 }
 
@@ -58,7 +58,7 @@ sub teaser_none { "" }
 
 sub teaser_routen {
     <<EOF;
-<small>Ich sammele GPS-Routen von Berlin und Brandenburg. Bitte per Mail an <a target="_top" href="mailto:@{[ $BBBike::EMAIL ]}?subject=BBBike-GPS">Slaven Rezic</a> schicken.</small>
+<small>Ich sammele GPS-Routen von Berlin und Brandenburg. Bitte per Mail an <a target="_top" href="mailto:@{[ CGI::escapeHTML($BBBike::EMAIL) ]}?subject=BBBike-GPS">Slaven Rezic</a> schicken.</small>
 EOF
 }
 
@@ -77,7 +77,7 @@ sub teaser_mapserver {
     }
     return undef if !$mapserver_url;
     <<EOF;
-<small>Die BBBike-Kartendaten mit <a href="$mapserver_url">Mapserver</a> visualisiert.</small>
+<small>Die BBBike-Kartendaten mit <a href="@{[ CGI::escapeHTML($mapserver_url) ]}">Mapserver</a> visualisiert.</small>
 EOF
 }
 
