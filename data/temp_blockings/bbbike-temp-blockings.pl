@@ -1164,4 +1164,12 @@ EOF
 userdel	q4; 17427,10259 17621,10994
 EOF
      },
+     { from  => 1100991600, # 2004-11-21 00:00
+       until => 1101855600, # 2004-12-01 00:00
+       text  => 'L 236; (Alberichstr. in OL Börnicke); Alberichstr. zw. E.-Thälmann-Str. und Börnicker Chau Ausbau Straße, Radweg Vollsperrung 22.11.2004-30.11.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 26136,29466 25361,29596
+EOF
+     },
     );

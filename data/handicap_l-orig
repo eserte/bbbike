@@ -1,4 +1,4 @@
-# $Id: handicap_l-orig,v 4.9 2004/09/25 22:56:03 eserte Exp eserte $
+# $Id: handicap_l-orig,v 4.11 2004/11/22 01:17:57 eserte Exp eserte $
 Brandenburger Str.: Fußgängerzone	q4 -12894,-977 -13171,-1042 -13556,-1140
 Neuer Garten: Schiebestrecke	q3 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12115,1331 -12185,1388
 Neuer Garten: Schiebestrecke	q3 -12081,1168 -12181,1196
@@ -12,48 +12,10 @@ Uferpromenade Caputh: Fußgänger	q3 -17643,-7028 -17703,-7228 -18009,-7528
 Uferweg am Straussee: viele Fußgänger, enger Weg	q2 41668,17984 41612,18287 41675,18462 41953,19137 42031,19131 42181,19212 42409,19193 42578,19587
 Am Schafgraben: enger Parkweg	q2 -14500,-2012 -14612,-1809
 # temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-#XXX del L 26; (Menkin-Brüssow); OD Brüssow; grundhafter Straßenausbau; Vollsperrung; 23.02.2004-12.07.2004	q4::inwork 57405,111424 57452,111569 58374,111669
-#XXX del B 1; (Hauptstr.); OD Herzfelde; Kanal- und Straßenbau; Vollsperrung; 07.07.2004-12.09.2004	q4::inwork 40849,8976 41247,8861 41655,8944
-#XXX del B 96A; (Schönfließer Str.); OL Schildow; Straßenbau; Vollsperrung; 28.06.2004-15.08.2004	q4::inwork 8194,25966 8021,26285
-#XXX del K 6949; (Prützke-Rietz); OL Prützke, Altes Dorf; Straßenbau; Vollsperrung; Umleitung; 28.06.2004-06.08.2004	q4::inwork -42050,-6999 -41923,-6892 -42009,-6765
-Potsdam, Friedrich-Engels-Str.: Bauarbeiten an der Nuthe-Brücke und weiter	q3::inwork -11507,-2130 -10995,-2108
-Potsdam, Großbeerenstr.: Richtung Westen gesperrt, Gehweg benutzen	q4::inwork; -9753,-2474 -10348,-2276
-#XXX del B 102; (Hauptstr.,H.-Heine-Str.); OD Premnitz, von E.-Thälmann-Str. bis Bergstr.; Kanal- und Straßenbau; Vollsperrung; 22.09.2003-30.10.2004	q4::inwork -62595,12860 -62505,12565 -62079,12612
+Potsdam, Friedrich-Engels-Str.: Bauarbeiten an der Nuthe-Brücke und weiter (mindestens seit Sommer 2004)	q3::inwork -11507,-2130 -10995,-2108
+Potsdam, Großbeerenstr.: Richtung Westen gesperrt, Gehweg benutzen (mindestens seit Sommer 2004)	q4::inwork; -9753,-2474 -10348,-2276
 B 169; OU Senftenberg; Bau Ortsumfahrung; Vollsperrung; 06.11.2003-30.05.2006	q4::inwork 55158,-95910 54884,-96292 54357,-96691
-#XXX del K 6424; (LG Berlin (Friedrichshagen)-B 1); OD Münchehofe; Straßenausbau; Vollsperrung; 04.08.2003-10.04.2004	q4::inwork E7012,5177 E7015,5155
-#XXX del L 141; (B 5 südl.Segeletz-Neustadt (Dosse)); Bahnübergang zw. B 5 und Dreetz; Bau Straßenüberführung; Vollsperrung; 17.07.2003-01.07.2004	q4::inwork -49516,43006 -49641,42683 -49855,42530
-#XXX del L 16; (Wittstocker Allee); OD Neuruppin; Kanal- u. Straßenbau; Vollsperrung; 29.09.2003-30.06.2004	q4::inwork -30915,58087 -31791,60965
-#XXX del L 171; (zw. Hohen Neuendorf u. Hennigsdorf); Brücke über A111; Neubau Brücke üb. A 111; Vollsperrung; 18.06.2003-07.05.2004	q4::inwork -884,27149 -522,27491
-#XXX del L 30; (Dorfstr.); OL Petershagen; Straßenbauarbeiten; Vollsperrung; 13.04.2004-18.07.2004 	q4::inwork 35427,13624 35234,13541 35359,12542
-#XXX del L 311; (Dorfstr., Ahrensfelder Ch.); OD Eiche; Straßenbauarbeiten; Vollsperrung; 08.09.2003-31.05.2004	q4::inwork 22886,17680 22795,17836 22944,18028
-#XXX del L 40; (Dahlewitz-Potsdam); OD Großbeeren, Bahnhofstr., Straßenbauarb. B101n, Vollsperrung, 16.02.2004-07.06.2004	q4::inwork 3131,-6334 3242,-6330 3653,-6050
-L 792; (Trebbiner Str.); OL Mahlow, zw. Glasower Damm u. Berliner Str.; grundhafter Straßenbau; Vollsperrung; 04.03.2004-19.11.2004	q4::inwork 11186,-5297 11291,-4485
-#XXX del: L 141; (Zernitz-Breddin); OD Stüdenitz; Straßenbauarbeiten; Vollsperrung; 15.03.2004-16.07.2004	q4::inwork -66293,52606 -66831,52431 -67037,52412 -67317,52176
-#XXX del: L 23; (nördl. Eberswalde-Joachimsthal); OD Britz, Joachimsthaler Str.; Fahrbahnerneuerung; Vollsperrung; 22.03.2004-30.04.2004	q4::inwork E7403,3082 E7424,3126
-#XXX del: L 382; (Kopernikusstr.); OL Frankfurt(O.), zw. Leipziger Str. u. Nuhnenstr.; grundh. Straßenausabau; Vollsperrung; 22.03.2004-31.05.2004	q4::inwork 86588,-6662 85945,-5682
-#XXX del B 109; OD Klosterfelde; grundhafter Ausbau; Vollsperrung; 29.03.2004-30.10.2004	q4::inwork 14962,42702 14941,42957 14881,43618 15356,44334
-#XXXL 21; (Zehlendorf-Liebenwalde); OL Liebenwalde, Krz. mit B167; grundh. Straßenbau; Vollsperrung; 29.03.2004-19.05.2004	q4::inwork E6090,3215 E6090,3200
-#XXX del: B 168; (Fürstenwalde-Müncheberg); OD Beerfelde; Kanalarbeiten; Vollsperrung; 05.04.2004-03.05.2004	q4::inwork 54024,3804 54449,4338
-#XXX del: L 622; (Rückersdorf-Doberlug KIrchhain); zw. Abzw. Lindena u. Doberlug-Kirchhain; Straßen- u. Brückenbauarb.; Vollsperrung; 06.04.2004-29.07.2004	q4::inwork 22558,-89699 22495,-89358 22453,-89037
-#XXX nicht mehr (gesehen 2004-07-10): B 2; (LG Berlin-AS Berlin-Weißensee); bei Lindenberg, Brücke über Fließgraben; Brückenneubau; Richtungsverk. (Radfahrer können Umleitung benutzen oder bis zur Baustelle vorfahren); 29.03.2004-29.10.2004	q4::inwork; 17825,21931 18356,22225
-#XXX del L 214; (Marienthal-Blumenow); Brücke ü.Tornowfließ; Brückenersatzbau; Vollsperrung; 13.04.2004-14.09.2004	q4::inwork 1039,72835 1320,72982
-#XXX del L 60; (Friedrich-List-Str.); Krz. H.-Zille-Str./ Uebigauer Str. u. Bahnhofstr.; Straßenbauarbeiten; Vollsperrung; 13.04.2004-31.07.2004	q4::inwork 1142,-91254 2001,-91126
-#XXX del B 109; (Schönwalde-Wandlitz); OD Basdorf; grundhafter Straßenbau; Vollsperrung; 14.04.2004-08.08.2004	q4::inwork 11978,35333 12000,35670 12645,35987
-#XXX del (now in temp-blockings): L 435; (Grunow-Müllrose); OD Mixdorf, Hauptstr.; grundhafter Ausbau; Vollsperrung; 19.04.2004-08.09.2004	q4::inwork; 79281,-22168 79255,-22467
 B 1; (Brandenburger Str.); OD Groß Kreutz, zw. Lehniner Str. u. Bahnhofstr.; Straßenbauarbeiten; Vollsperrung; 14.04.2004-31.12.2004	q4::inwork -31991,-1024 -32417,-963
-# XXX Die angegegebene Koordinate hat nicht mit der Beschreibung übereingestimmt:
-#XXX del L 74; (Kehrigk-Märkisch Buchholz); OL Märkisch Buchholz, Friedrichstr.; Pflasterarbeiten; Vollsperrung; 26.04.2004-15.05.2004	q4::inwork 36286,-32059 36201,-32464
 K 6016; (Angermünde-KG-Althüttendorf); OD Neugrimnitz; Straßenneubau; Vollsperrung; 10.05.2004-31.12.2004	q4::inwork 37844,63430 38581,64181
-#XXX del B 168; (Tiefensee-Eberswalde); OD Heckelberg; Straßenbauarbeiten; Vollsperrung; 13.04.2004-31.07.2004	q4::inwork 39413,37383 39788,38003
-# ???
-#XXX del B 101; zw. Großbeeren u. Heinersdorf; Umbau Knoten; Vollsperrung; 23.11.2003-12.10.2004	q4::inwork 4842,-4182 5394,-3053
-#XXX del L 302; (Torellplatz/ Schöneicher Landstr.); OL Rüdersdorf; Bau Kreisverkehr; Vollsperrung; 07.06.2004-31.08.2004	q4::inwork 35482,8027 35638,8129
-#XXX del L 201; (Nauener Str.); zw. Fr.-Engels-Allee u. Havelländer Weg; Kanal- und Straßenbau; Vollsperrung; 01.03.2004-30.06.2004	q4::inwork -11385,18284 -12139,18985
-#XXX del K 6424; (LG Berlin (Friedrichshagen)-B 1); OD Münchehofe; Straßenausbau; Vollsperrung; 04.08.2003-03.09.2004	q4::inwork 28605,9637 28682,10112
 B 96; (Hauptstr.); OD Baruth; Straßenbauarbeiten; Vollsperrung; 01.06.2004-31.12.2004	q4::inwork 18042,-39923 18307,-38801
-# XXX richtige Richtung?
-#XXX del B 101; OU Elsterwerda von OA in Ri. Bad Liebenwerda; Straßenbauarbeiten; halbseitig gesperrt; Einbahnstraße; 22.03.2004-10.07.2004	q4::inwork 18928,-103699 19074,-103082
-#XXX del L 401; zw. Wildau, Bergstr. und Zeuthen, Forstweg; Grundhafter Ausbau; Vollsperrung; 26.07.2004-30.11.2005	q4::inwork 26381,-9962 26381,-9753 26755,-8553 26790,-7918 26700,-7334 26581,-7087 26146,-6218
-#XXX del L 401; (Goethestr.); OL Zeuthen, zw. Forstweg u. Alte Poststr.; Grundhafter Ausbau; Vollsperrung; 26.07.2004-15.11.2004	q4::inwork 25996,-5921 26146,-6218
-#XXX del K 6505; von OL Bötzow bis OE Wansdorf; grundhafter Ausbau; Vollsperrung; 21.06.2004-30.11.2004	q4::inwork -8447,26643 -8640,26728 -9241,26619 -9563,26640 -9908,26571 -10785,25977 -10887,25700
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

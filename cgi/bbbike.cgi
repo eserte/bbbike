@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.90 2004/11/07 23:03:48 eserte Exp $
+# $Id: bbbike.cgi,v 6.90 2004/11/07 23:03:48 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -2699,8 +2699,10 @@ sub search_coord {
     }
 
     if (defined $output_as && $output_as eq 'mapserver') {
-	$q->param('coords', join("!", map { "$_->[0],$_->[1]" }
-				 @{ $r[0]->path }));
+	if ($r[0]->path) {
+	    $q->param('coords', join("!", map { "$_->[0],$_->[1]" }
+				     @{ $r[0]->path }));
+	}
 	$q->param("imagetype", "mapserver");
 	draw_route();
 	return;

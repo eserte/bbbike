@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.46 2004/11/15 23:24:51 eserte Exp $
+# $Id: insert_points,v 1.46 2004/11/15 23:24:51 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -296,7 +296,7 @@ sub process {
 		   landstrassen landstrassen2
 		   qualitaet_l qualitaet_s
 		   handicap_l handicap_s
-		   strassen faehren
+		   strassen plaetze faehren
 		   rbahn
 		   sbahn sbahnhof
 		   ubahn ubahnhof
@@ -374,19 +374,21 @@ sub process {
 	}
 	close BASE;
 
-	if ($operation eq 'change') {
-#XXX	    @{$check_files[T_NORMAL]} = grep { !$ignore_files{$_} } keys %file2base;
-	    $file2base{'../misc/ampelschaltung-orig.txt'} = 'B'; # XXX aus ../misc/BASE holen
-	    if (!$orig) {
-		$file2base{'radwege_exact-orig'} = $file2base{'radwege-orig'};
-		delete $file2base{'radwege-orig'};
-		push @{$check_files[T_NORMAL]}, "radwege_exact-orig";
-	    }
-	    @{$check_files[T_AMPEL]} = ('../misc/ampelschaltung-orig.txt');
-	}
-
 	# user defined files
 	%noorig_files = ();
+
+	if ($operation =~ /^(change|grep)$/) {
+#XXX	    @{$check_files[T_NORMAL]} = grep { !$ignore_files{$_} } keys %file2base;
+# 	    if (!$orig) {
+# 		$file2base{'radwege_exact-orig'} = $file2base{'radwege-orig'};
+# 		delete $file2base{'radwege-orig'};
+# 		push @{$check_files[T_NORMAL]}, "radwege_exact-orig";
+# 	    }
+	    $file2base{'../misc/ampelschaltung-orig.txt'} = 'B'; # XXX aus ../misc/BASE holen
+	    @{$check_files[T_AMPEL]} = ('../misc/ampelschaltung-orig.txt');
+	    $noorig_files{'../misc/ampelschaltung-orig.txt'} = 1;
+	}
+
 	{
 	    my @f = glob("$ENV{HOME}/.bbbike/data/*.bbd");
 	    push @{$check_files[T_NORMAL]}, @f;
@@ -407,7 +409,7 @@ sub process {
 
     # uhm... how hackish :-(
     if ($orig) {
-	if ($operation ne 'change') {
+#	if ($operation ne 'change') {
 	    for my $cf_i (0 .. $#check_files) {
 		next if $cf_i == T_TEMPBLOCK || $cf_i == T_TEMPBLOCKMAIN;
 		my $cf = $check_files[$cf_i];
@@ -416,9 +418,9 @@ sub process {
 		    $f .= "-orig";
 		}
 	    }
-	}
+#	}
     } else {
-	if ($operation eq 'change') {
+#	if ($operation eq 'change') {
 	    for my $cf_i (0 .. $#check_files) {
 		next if $cf_i == T_TEMPBLOCK || $cf_i == T_TEMPBLOCKMAIN;
 		my $cf = $check_files[$cf_i];
@@ -427,7 +429,7 @@ sub process {
 		    $f =~ s/-orig//;
 		}
 	    }
-	}
+#	}
 	my %new_file2base;
 	while(my($k,$v) = each %file2base) {
 	    next if $ignore_files{$k};
@@ -505,7 +507,7 @@ sub process {
 		my $map_rx = ($current_coordsys eq '' ? 'B?' : $current_coordsys.'?');
 		# XXX verbose fehlt
 		if ($type == T_NORMAL || $type == T_TEMPBLOCK || $type == T_TEMPBLOCKMAIN || $type == T_COMMENTS || $type == T_OLD_RADWEGE || $type == T_RADWEGE || $type == T_VORFAHRT) {
-		    if (grep(/(?:(?<=\s)|^)$map_rx$map_from\b/, @data)) {
+		    if (grep(/(?:(?<=\s)|^)$map_rx$map_from(\b|$)/, @data)) {
 			push @{$change_files[$type]}, $file;
 			if (first { /\t\S+\s$map_rx$map_from$/ } @data) {
 			    push @{$change_special_flags{$file}}, "single-point";

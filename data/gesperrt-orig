@@ -450,6 +450,7 @@ tragen (Eisebahnbrücke Caputh)	0:60 -17978,-7375
 tragen (Eisebahnbrücke Werder)	0:60 -21063,-2021
 tragen (Eisebahnbrücke Werder)	0:60 -21210,-2058
 tragen (Elsenbrücke, ungefähr 15 Stufen auf jeder Seite)	0:60 13383,8716
+tragen (Gerickesteg, ungefähr 20 Stufen auf jeder Seite)	0:60 6753,12640
 tragen (Spreetunnel)	0:60 25647,4606
 tragen (Spreetunnel)	0:60 25565,4549
 tragen (Brücke Tegeler Hafen)	0:60 1250,20284
@@ -458,8 +459,6 @@ tragen (S-Bahn-Zugang, insgesamt drei Treppen)	0:120 7854,7572
 tragen? (Fußgängerbrücke)	0:120 20445,536
 tragen? (Fußgängerbrücke)	0:120 19770,-213
 tragen (Stufen), mit MTB befahrbar	0:30 5725,11644
-#: unverified_by: Wolfram, genaue Stelle ermitteln!
-tragen (Stufen), mit MTB befahrbar	0:30 7684,12543
 tragen (Stufen)	0:60 13145,9920
 unter der S-Bahn-Brücke tragen	0:30 3745,18988
 tragen oder Aufzug (Storkower Str.)	0:60 14528,13241
@@ -488,6 +487,9 @@ tragen (Treppe oder sehr steile, sandige Rampe)	0:60 41715,18446
 tragen (Treppe am Körnerpark)	0:30 12734,7384
 tragen (zwei Treppen)	0:30 12115,8556
 tragen (Treppe mit Kinderwagenrampe)	0:30 13960,9365
+tragen (Treppe)	0:30 8021,12835
+tragen (Treppe)	0:30 8414,12854
+tragen (Treppe)	0:30 7937,12875
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
@@ -526,6 +528,7 @@ Schranke (Rütlistr.)	BNP:5 12496,9053
 Schranke (Rütlistr.)	BNP:5 12565,9200
 #: XXX müsste eigentlich verschoben werden, weil die Barriere nicht für die Briesestr. gilt!
 Barriere (Falkstr.)	BNP:10 12177,7988
+Drängelgitter (Rochstr.)	BNP:5 10535,13006
 #
 ############################################################################
 #
