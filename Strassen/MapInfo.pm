@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapInfo.pm,v 1.12 2004/04/08 06:50:09 eserte Exp $
+# $Id: MapInfo.pm,v 1.13 2004/05/10 20:01:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
@@ -101,7 +101,7 @@ sub read_mif {
 	    # XXX What's a good guess for the category
 	    # XXX Write other column data into an info file --- but for now
 	    # it is not possible to use file-less info data.
-	    push @data, "$name\tX " . join(" ", @$current_record);
+	    push @data, "$name\tX " . join(" ", @$current_record) . "\n";
 	    $rec_i++;
 	    $current_record = undef;
 	}
@@ -896,7 +896,12 @@ if (@ARGV == 0) {
     die "Strassen file missing";
 } elsif (@ARGV == 1) {
     my $f = shift;
-    if (-d $f) { # it is a data directory
+    if ($f =~ /\.(mi[fd])$/) {
+	my $mi = Strassen::MapInfo->new($f);
+	$mi->{GlobalDirectives}{map} = $args{map} if $args{map};
+	$mi->write($o);
+	exit(0);
+    } elsif (-d $f) { # it is a data directory
 	$use_datadir = 1;
 	$s = $f;
     } else {
