@@ -172,14 +172,14 @@ sub add_button {
 	      ],
 	      [Button => "Add points-all.bbd (all GPS trackpoints)",
 	       -command => sub {
-		   my $f = "$ENV{HOME}/src/bbbike/tmp/points-all.bbd";
+		   my $f = "$bbbike_rootdir/tmp/points-all.bbd";
 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
 		   add_new_layer("p", $f);
 	       }
 	      ],
 	      [Button => "Add hm96.bbd (Höhenpunkte)",
 	       -command => sub {
-		   my $f = "$ENV{HOME}/src/bbbike/miscsrc/senat_b/hm96.bbd";
+		   my $f = "$bbbike_rootdir/miscsrc/senat_b/hm96.bbd";
 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
 		   $hm_layer = add_new_layer("p", $f);
 		   $main::top->bind("<F12>"=> \&find_nearest_hoehe);
@@ -208,7 +208,7 @@ sub upload {
     my $rule = shift;
     if (fork == 0) {
 	exec(qw(xterm -e sh -c),
-	     'cd $HOME/src/bbbike/misc/gps_data && make ' . $rule . '; sleep 9999');
+	     'cd $bbbike_rootdir/misc/gps_data && make ' . $rule . '; sleep 9999');
 	die $!;
     }
 }
