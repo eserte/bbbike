@@ -43,6 +43,8 @@ I<backwardcat> applies to the street in backward direction. Either
 I<forwardcat> or I<backwardcat> may be empty; in this case the
 category applies only to the other direction.
 
+The B<X> category should be used if there is no category.
+
 Other predefined categories are listed below. The category should not
 contain any spaces.
 
@@ -462,6 +464,11 @@ Airports.
 
 =back
 
+=head2 CITIES AND PLACES
+
+The category interval span from C<0> to C<6> where C<0> denotes city
+parts, C<1> villages and C<6> metropolises.
+
 =head2 MISC
 
 =over
@@ -487,8 +494,8 @@ The category will not be used in this case.
 =item ampeln
 
 File with point records for traffic lights (Ampeln). The category is
-set to C<B> for railroad crossings and C<F> for pedestrian-only
-traffic lights, otherwise not used.
+set to B<B> for railroad crossings, B<F> for pedestrian-only traffic
+lights and B<Zbr> for drawbridges, otherwise not used.
 
 =item hoehe
 
@@ -533,6 +540,11 @@ C<< <TAB> >> and C<< <SPACE> >> should be inserted)
     ^                  ^
     Name of a park     Category (F = area (polygon, Fläche),
                                  P = park)
+
+=head1 CAVEATS
+
+Some category values may change. It is likely that either the blocking
+and/or city category values will change, as both use digits.
 
 =head1 AUTHOR
 
