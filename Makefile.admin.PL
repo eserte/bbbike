@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.13 2003/12/22 19:38:45 eserte Exp eserte $
+# $Id: Makefile.admin.PL,v 1.14 2004/01/04 22:11:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -495,7 +495,8 @@ alldist: bbbikedoc dist dist_mv makepatch fbsdport fbsdport-distfiles-link \
 	 winbindist ChangeLog
 
 dist_mv:
-	mv -i BBBike-$(VERSION).tar.gz distfiles
+	[ -d distfiles ] && true || mkdir distfiles
+	mv -i BBBike-$(VERSION).tar.gz distfiles/
 
 BACKUP_FILE=	/home5/bak/bbbike-devel.tar.gz
 
