@@ -58,29 +58,19 @@ sub find_all_plugins {
 	}
 	my $lb = $t->Scrolled("Listbox", -scrollbars => "osoe")->pack(-fill => "both", -expand => 1);
 	$lb->insert("end", map { $_->Name } @p);
-	my $prevent_double;
-	my $prevent_double_after;
-	my $prevent_double_index;
-	$lb->bind("<1>" => sub {
-		      my($cur) = $lb->curselection;
-		      if (defined $cur) {
-			  if ($prevent_double && $prevent_double_index eq $cur) {
-			      return;
-			  }
-			  $prevent_double = 1;
-			  $prevent_double_index = $cur;
-			  $lb->afterCancel($prevent_double_after);
-			  $prevent_double_after =
-			      $lb->after(500, sub {
-					     $prevent_double = 0;
-					 });
-			  main::load_plugin($p[$cur]->File);
-		      }
-		  });
+	my $doit = sub {
+	    my($cur) = $lb->curselection;
+	    if (defined $cur) {
+		main::load_plugin($p[$cur]->File);
+	    }
+	};
+	$lb->bind("<Double-1>" => $doit);
 	if ($main::balloon) {
 	    $main::balloon->attach($lb->Subwidget("scrolled"),
 				   -msg => [map { $_->Description } @p]);
 	}
+	$t->Button(-text => "Laden", # XXX Msg.pm
+		   -command => $doit)->pack(-fill => "x");
 	$t->Button(Name => "close",
 		   -command => sub { $t->destroy })->pack(-fill => "x");
     }
@@ -92,7 +82,7 @@ sub _find_all_plugins_perl {
     require File::Find;
     my @p;
     my $wanted = sub {
-	if (/^.*\.pm$/ && $_ ne "BBBikePlugin.pm" && open(PM, $_)) {
+	if (/^.*\.pm$/ && $_ ne "BBBikePlugin.pm" && $File::Find::name !~ m{/CVS/} && open(PM, $_)) {
 	    my $curr_file = $_;
 	    my $descr;
 	    my $is_plugin;
