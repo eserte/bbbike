@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.5 2002/12/30 02:09:55 eserte Exp $
+# $Id: Strasse.pm,v 1.5 2002/12/30 02:09:55 eserte Exp eserte $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -16,9 +16,9 @@ package Strasse;
 use strict;
 #use AutoLoader 'AUTOLOAD';
 
-use constant NAME   => Strassen::NAME;
-use constant COORDS => Strassen::COORDS;
-use constant CAT    => Strassen::CAT;
+use constant NAME   => Strassen::NAME();
+use constant COORDS => Strassen::COORDS();
+use constant CAT    => Strassen::CAT();
 
 sub new {
     my($class, $obj) = @_;
@@ -146,6 +146,17 @@ sub parse_street_type_nr {
 	($type,$nr) = $strname =~ /^(B|L|BAB|F|R)\s*([\d\.]+)(?::|$|\s*\()/;
     }
     ($type, $nr);
+}
+
+# Schneidet den Teil in Klammern weg.
+# Wird für Bezirke, aber auch bei Bahnhöfen (z.B. (U1)) verwendet.
+### AutoLoad Sub
+sub strip_bezirk {
+    my $str = shift;
+    if ($str !~ /^\s*\(/) {
+	$str =~ s/\s*\(.*\)\s*$//;
+    }
+    $str;
 }
 
 1;

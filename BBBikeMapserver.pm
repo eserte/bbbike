@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.14 2003/07/10 22:58:14 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.15 2003/07/22 21:21:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -131,7 +131,7 @@ sub start_mapserver {
     my $url = $self->{MAPSERVER_PROG_URL};
     if (!@mapext) {
 	my($width, $height) = ($args{-width}||6000, $args{-height}||6000); # meters
-	@mapext = $self->get_extents($width, $height);
+	@mapext = $self->get_extents($width, $height, $args{-markerpoint});
     }
 
     my $q2 = CGI->new({});
@@ -235,16 +235,25 @@ sub create_mapfile {
 	}
 
 	my @marker_args;
+	if ($args{-center}) {
+	    $self->{CenterTo} = $args{-center};
+	}
 	if ($args{-start}) {
 	    @marker_args = (-start => $args{-start});
-	    $self->{CenterTo} = $args{-start};
+	    $self->{CenterTo} = $args{-start}
+		unless defined $self->{CenterTo};
 	} elsif (@{$self->{Coords}} > 1) {
 	    @marker_args = (-start => $self->{Coords}[0],
 			    -goal => $self->{Coords}[-1]);
-	    $self->{CenterTo} = $self->{Coords}[0];
+	    $self->{CenterTo} = $self->{Coords}[0]
+		unless defined $self->{CenterTo};
 	} else {
 	    @marker_args = (-markerpoint => $self->{Coords}[-1]);
-	    $self->{CenterTo} = $self->{Coords}[0];
+	    $self->{CenterTo} = $self->{Coords}[0]
+		unless defined $self->{CenterTo};
+	}
+	if ($args{-markerpoint}) {
+	    push @marker_args, -markerpoint => $args{-markerpoint};
 	}
 
 	foreach my $scope (@scopes) {
@@ -289,7 +298,7 @@ sub create_mapfile {
 }
 
 sub get_extents {
-    my($self, $width, $height) = @_;
+    my($self, $width, $height, $do_center) = @_;
     my $center_to = $self->{CenterTo};
     if (!defined $center_to) {
 	if (!$self->{Coords} || !$self->{Coords}[0]) {
@@ -300,7 +309,7 @@ sub get_extents {
 	}
     }
     my($x1,$y1) = split /,/, $center_to;
-    if (!$self->{Coords} || @{$self->{Coords}} <= 1) {
+    if (!$self->{Coords} || @{$self->{Coords}} <= 1 || $do_center) {
 	($x1-$width/2, $y1-$height/2, $x1+$width/2, $y1+$height/2);
     } else {
 	my($x2,$y2) = split /,/, $self->{Coords}[-1];

@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.46 2003/07/15 22:49:35 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.47 2003/07/22 21:24:35 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -585,7 +585,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.46 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.47 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -1837,7 +1837,10 @@ sub get_kreuzung {
     }
 
     http_header(@weak_cache);
-    header();
+    my %header_args;
+    $header_args{-script} = {-src => $bbbike_html . "/bbbike_result.js",
+			    };
+    header(%header_args);
 
     if (!$start_c || !$ziel_c || (@via_coords && !$via_c)) {
 	print "Genaue Kreuzung angeben:<p>\n";
@@ -2066,27 +2069,6 @@ sub settings_html {
 			       ($default_routen eq $val ? "selected" : "")
 			 };
 
-    if ($bi->{'can_javascript'}) {
-	print <<EOF;
-<script type="text/javascript"><!--
-function reset_form() {
-    var frm = document.forms.settings;
-    if (!frm) {
-	frm = document.forms[0];
-    }
-    with (frm) {
-	elements["pref_speed"].value = $default_speed;
-	elements["pref_cat"].options[@{[defined $strcat{$default_cat} ? $strcat{$default_cat} : 0]}].selected = true;
-	elements["pref_quality"].options[@{[defined $strqual{$default_quality} ? $strqual{$default_quality}: 0]}].selected = true;
-//	elements["pref_routen"].options[@{[defined $strrouten{$default_routen} ? $strrouten{$default_routen} : 0]}].selected = true;
-	elements["pref_ampel"].checked = @{[ $default_ampel?"true":"false" ]};
-	elements["pref_green"].checked = @{[ $default_green?"true":"false" ]};
-    }
-    return false;
-}
-//--></script>
-EOF
-    }
     print <<EOF;
 <input type=hidden name="pref_seen" value=1>
 <table>
@@ -2104,24 +2086,26 @@ EOF
 <option @{[ $qual_checked->("Q0") ]}>nur sehr gute Beläge bevorzugen (rennradtauglich)
 <option @{[ $qual_checked->("Q2") ]}>Kopfsteinpflaster vermeiden
 </select></td></tr>
-<!--
-<tr><td>Ausgeschilderte Fahrradrouten bevorzugen:</td><td><select $bi->{hfill} name="pref_routen">
-<option @{[ $routen_checked->("") ]}>egal
-<option @{[ $routen_checked->("RR") ]}>ja
-</select></td></tr>
--->
-<!--XXX implement <tr><td>Radwege:</td><td><select $bi->{hfill} name="pref_rw">
-<option value="">egal
-<option value="R0">nur Radwege verwenden
-<option value="R1">Hauptstraßen mit Radweg bevorzugen
-<option value="R2">benutzungspflichtige Radwege vermeiden
-</select></td></tr>-->
+EOF
+#  <!--
+#  <tr><td>Ausgeschilderte Fahrradrouten bevorzugen:</td><td><select $bi->{hfill} name="pref_routen">
+#  <option @{[ $routen_checked->("") ]}>egal
+#  <option @{[ $routen_checked->("RR") ]}>ja
+#  </select></td></tr>
+#  -->
+#  <!--XXX implement <tr><td>Radwege:</td><td><select $bi->{hfill} name="pref_rw">
+#  <option value="">egal
+#  <option value="R0">nur Radwege verwenden
+#  <option value="R1">Hauptstraßen mit Radweg bevorzugen
+#  <option value="R2">benutzungspflichtige Radwege vermeiden
+#  </select></td></tr>-->
+    print <<EOF;
 <tr><td>Ampeln vermeiden:</td><td><input type=checkbox name="pref_ampel" value=yes @{[ $default_ampel?"checked":"" ]}></td>
 <tr><td>Grüne Wege bevorzugen:</td><td><input type=checkbox name="pref_green" value=yes @{[ $default_green?"checked":"" ]}></td>
 EOF
     if ($bi->{'can_javascript'}) {
 	print <<EOF
-<td><input type=button value="Reset" onclick="return reset_form();"></td>
+<td><input type=button value="Reset" onclick="return reset_form($default_speed, @{[defined $strcat{$default_cat} ? $strcat{$default_cat} : 0]}, @{[defined $strqual{$default_quality} ? $strqual{$default_quality}: 0]}, @{[defined $strrouten{$default_routen} ? $strrouten{$default_routen} : 0]}, @{[ $default_ampel?"true":"false" ]}, @{[ $default_green?"true":"false" ]});"></td>
 EOF
     }
 print <<EOF;
@@ -2428,7 +2412,7 @@ sub search_coord {
 		    }
 		} else {
 		    $tb->{net} = StrassenNetz->new($strobj);
-		    $tb->{net}->make_net;
+		    $tb->{net}->make_net_cat;
 		}
 	    }
 
@@ -2444,6 +2428,8 @@ sub search_coord {
 			} else {
 			    $handicap_net->merge_net_cat($custom_s{$type});
 			}
+		    } else {
+			warn "Unhandled temp blocking type `$type'";
 		    }
 		}
 	    }
@@ -2616,8 +2602,8 @@ sub search_coord {
 	    @path = $r->path_list;
 	}
 
-	my($next_entf, $ges_entf_s, $next_winkel, $next_richtung, $next_route_inx);
-	($next_entf, $ges_entf_s, $next_winkel, $next_richtung, $next_route_inx)
+	my($next_entf, $ges_entf_s, $next_winkel, $next_richtung);
+	($next_entf, $ges_entf_s, $next_winkel, $next_richtung)
 	    = (0, "", undef, "");
 
 	my $ges_entf = 0;
@@ -2626,10 +2612,12 @@ sub search_coord {
 	    my $etappe_comment = '';
 	    my $entf_s;
 	    my $raw_direction;
-	    my($entf, $winkel, $richtung, $route_inx)
-		= ($next_entf, $next_winkel, $next_richtung, $next_route_inx);
-	    ($strname, $next_entf, $next_winkel, $next_richtung, $next_route_inx)
-		= @{$strnames[$i]};
+	    my $route_inx;
+	    my($entf, $winkel, $richtung)
+		= ($next_entf, $next_winkel, $next_richtung);
+	    ($strname, $next_entf, $next_winkel, $next_richtung,
+	     $route_inx) = @{$strnames[$i]};
+	    $strname = Strasse::strip_bezirk($strname);
 	    if ($i > 0) {
 		if (!$winkel) { $winkel = 0 }
 		$winkel = int($winkel/10)*10;
@@ -2833,7 +2821,7 @@ $hidden
 EOF
             }
 	}
-	if (@custom) {
+	if (@custom && !$printmode) {
 	    print "<center>Mögliche Ausweichroute</center>\n";
 	}
 
@@ -2919,8 +2907,8 @@ EOF
 	print "</table>\n";
 	if (defined $r->trafficlights) {
 	    my $nr = $r->trafficlights;
-	    print $nr . " Ampel" . ($nr == 1 ? "" : "n") .
-		" auf der Strecke.<br>\n";
+	    print $fontstr, $nr . " Ampel" . ($nr == 1 ? "" : "n") .
+		" auf der Strecke.$fontend<br>\n";
 	}
 	print "</center>\n" unless $printmode;
 	print "<hr>";
@@ -2967,7 +2955,13 @@ EOF
 		printf $line_fmt,
 		  $entf, $richtung, string_kuerzen($strname, 31), $ges_entf_s;
 	    } else {
-		print "<tr class=" . ($odd ? "odd" : "even") . "><td nowrap>$fontstr$entf$fontend</td><td>$fontstr$richtung$fontend</td><td>$fontstr$strname$fontend</td><td nowrap>$fontstr$ges_entf_s$fontend</td>";
+		print "<tr class=" . ($odd ? "odd" : "even") . "><td nowrap>$fontstr$entf$fontend</td><td>$fontstr$richtung$fontend</td><td>$fontstr";
+		print "<a class=ms href='#' onclick='return ms($etappe->{Coord})'>"
+		    if $can_mapserver && !$printmode && $bi->{'can_javascript'};
+		print $strname;
+		print "</a>"
+		    if $can_mapserver && !$printmode && $bi->{'can_javascript'};
+		print "$fontend</td><td nowrap>$fontstr$ges_entf_s$fontend</td>";
 		$odd = 1-$odd;
 		if ($with_comments && $comments_net) {
 		    print "<td>$fontstr$etappe_comment$fontend</td>";
@@ -3020,47 +3014,6 @@ EOF
 	if (!$bi->{'mobile_device'}) {
 	    my $string_rep = $r->as_cgi_string;
 	    my $kfm_bug = ($q->user_agent =~ m|^Konqueror/1.0|i);
-	    if ($bi->{'can_javascript'}) {
-		print <<EOF;
-<script type="text/javascript"><!--
-function show_map() {
-    // show extra window for PDF && Netscape --- the .pdf is not embedded
-    var frm = document.forms.showmap;
-    if (frm && frm.imagetype.options[frm.imagetype.options.selectedIndex].value.indexOf('pdf') == 0 && !(navigator && navigator.appName && navigator.appName == "MSIE"))
-	return true;
-    var geom = "640x480";
-    for (var i=0; i < document.showmap.geometry.length; i++) {
-	if (document.showmap.geometry[i].checked) {
-	    geom = document.showmap.geometry[i].value;
-	    break;
-	}
-    }
-    var addwindowparam = "";
-    if (frm && (frm.imagetype.options[frm.imagetype.options.selectedIndex].value == 'ascii' || frm.imagetype.options[frm.imagetype.options.selectedIndex].value == 'mapserver'))
-	addwindowparam += ",scrollbars";
-    var x_y = geom.split("x");
-// XXX height/width an aktuelle Werte anpassen
-// XXX bei innerHeight/Width wird bei Netscape4 leider java gestartet?! (check!)
-    var x = Math.floor(x_y[0])+15;
-    var y = Math.floor(x_y[1])+15;
-    // Menubar immer anzeigen ... damit Speichern und Drucken möglich ist
-    y += 27;
-    var menubar = "yes";
-
-    var geometry_string = "";
-    if (frm && frm.imagetype.options[frm.imagetype.options.selectedIndex].value != 'mapserver') {
-        geometry_string = ",height=" + y + ",width=" + x;
-    }
-    var w = window.open("$bbbike_html/pleasewait.html", "BBBikeGrafik",
-			"locationbar=no,menubar=" + menubar +
-			",screenX=20,screenY=20" + addwindowparam +
-                        geometry_string);
-    w.focus();
-    return true;
-}
-// --></script>
-EOF
-	    }
             # XXX Mit GET statt POST gibt es zwar einen häßlichen GET-String
 	    # und vielleicht können lange Routen nicht gezeichnet werden,
 	    # dafür gibt es keine Cache-Probleme mehr.
@@ -3113,9 +3066,10 @@ EOF
   	    if ($bi->{'user_agent_name'} =~ m;(Mozilla|MSIE);i &&
 		$bi->{'user_agent_version'} =~ m;^[4-9]; &&
 		$bi->{'user_agent_os'} !~ m|OS/2|) {
-  		print " onsubmit='return show_map();'";
+  		print " onsubmit='return show_map(\"$bbbike_html\");'";
   	    }
 	    print ">\n";
+	    print "<input type=hidden name=center value=''>\n";
 	    print "<input type=submit name=interactive value=\"Grafik zeichnen\"> <font size=-1>(neues Fenster wird ge&ouml;ffnet)</font>";
 	    print " <input type=checkbox name=outputtarget value='print' " . ($default_print?"checked":"") . "> f&uuml;r Druck optimieren";
 	    print "&nbsp;&nbsp; <span class=nobr>Ausgabe als: <select name=imagetype>\n";
@@ -3156,33 +3110,6 @@ EOF
 			  . "\">";
 		};
 	    }
-
-	    print <<EOF;
-<script type="text/javascript"><!--
-function all_checked() {
-    var all_checked_flag = false;
-    var elems = document.forms["showmap"].elements;
-    for (var e = 0; e < elems.length; e++) {
-	if (elems[e].name == "draw" &&
-	    elems[e].value == "all" &&
-	    elems[e].checked) {
-	    all_checked_flag = true;
-	    break;
-	}
-    }
-    for (var e = 0; e < elems.length; e++) {
-	if (elems[e].name == "draw") {
-	    if (all_checked_flag) {
-		elems[e].checked = true;
-	    } else {
-		elems[e].checked = (elems[e].value == "str" ||
-				    elems[e].value == "title");
-	    }
-	}
-    }
-}
-// --></script>
-EOF
 
             my @not_for;
 	    push @not_for, "PDF" if !$cannot_pdf;
@@ -3567,6 +3494,14 @@ sub draw_route {
 	     -cookie => $cookie,
 	     (defined $q->param("mapext")
 	      ? (-mapext => $q->param("mapext"))
+	      : ()
+	     ),
+	     (defined $q->param("center") && $q->param("center") ne ""
+	      ? (-center => $q->param("center"),
+		 -markerpoint => $q->param("center"),
+		 -width => 1000, #XXX von scope variabel machen?
+		 -height => 1000,
+		)
 	      : ()
 	     ),
 	    );

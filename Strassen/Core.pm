@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.23 2003/07/20 22:13:16 eserte Exp $
+# $Id: Core.pm,v 1.23 2003/07/20 22:13:16 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -655,16 +655,8 @@ sub all_crossings {
     }
 }
 
-# Schneidet den Teil in Klammern weg.
-# Wird für Bezirke, aber auch bei Bahnhöfen (z.B. (U1)) verwendet.
 ### AutoLoad Sub
-sub strip_bezirk {
-    my $str = shift;
-    if ($str !~ /^\s*\(/) {
-	$str =~ s/\s*\(.*\)\s*$//;
-    }
-    $str;
-}
+sub strip_bezirk { Strasse::strip_bezirk(@_) }
 
 # Für Orte: trennt den Namen vom Zusatz (z.B. ("Frankfurt", "Oder")
 ### AutoLoad Sub

@@ -794,7 +794,7 @@ Strassen/Generated.pm: Strassen/Generated_src.pm Strassen.pm
 	echo "1;" > Strassen/Generated.pm
 	cd Strassen && perl5.00503 Generated_src.pm
 	perl5.00503 -c Strassen/Generated_src.pm
-	chmod -w Strassen/Generated.pm
+	chmod ugo+r,-w Strassen/Generated.pm
 
 echoversion:
 	@echo 1>&2 This rule is obsolete ... use BBBikeVar.pm

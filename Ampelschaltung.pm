@@ -504,6 +504,8 @@ sub restrict_entries {
     @res;
 }
 
+# XXX create_points also for Ampelschaltung!
+
 package Ampelschaltung2::Point;
 use vars qw(@ISA);
 @ISA = qw(Ampelschaltung::Point);

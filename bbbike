@@ -3203,6 +3203,11 @@ sub do_iconframe {
     if ($advanced) {
 	$slbm->command(-label => M"Ampeln an der aktuellen Route",
 		       -command => sub { ampeln_on_route(@realcoords) });
+	$slbm->command(-label => M"GPS-Upload mit Ampelschaltungen",
+		       -command => sub {
+			   require "$FindBin::RealBin/GpsmanDataAmpeln.pm";
+			   make_ampel_route();
+		       });
     }
     menuright($strlist_button, $slbm);
     menuarrow($slbmb, $slbm, $col, -menulabel => M"Routen~liste");

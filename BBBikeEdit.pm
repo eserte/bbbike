@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.56 2003/07/20 22:12:00 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.56 2003/07/20 22:12:00 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003 Slaven Rezic. All rights reserved.
@@ -3081,20 +3081,23 @@ sub temp_blockings_editor {
     $act_b->configure
 	(-command => sub {
 	     my $btxt = $get_text->();
+	     $real_txt->delete("1.0","end");
+	     $real_txt->insert("end", $btxt);
 	     my($new_start_time, $new_end_time);
 
 	     my $date_rx      = qr/(\d{1,2})\.(\d{1,2})\.(20\d{2})/;
 	     my $time_rx      = qr/(\d{1,2})[\.:](\d{2})\s*Uhr/;
 	     my $full_date_rx = qr/$date_rx\D+$time_rx/;
+	     my $bis_und_rx   = qr/(?:bis|und)(?:\s+ca\.)?/;
 
 	     my($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2);
 	     # XXX use $full_date_rx etc. (after testing rxes!)
 	     if (($d1,$m1,$y1, $H1,$M1, $H2,$M2) = $btxt =~
-		 /(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*bis\s*(\d{1,2})\.(\d{2})\s*Uhr/) {
+		 /(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*$bis_und_rx\s*(\d{1,2})\.(\d{2})\s*Uhr/) {
 		 $new_start_time =$date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
 		 $new_end_time   =$date_time_to_epoch->(0,$M2,$H2,$d1,$m1,$y1);
 	     } elsif (($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2) = $btxt =~
-		      /(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*bis\s*(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr/) {
+		      /(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*$bis_und_rx\s*(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr/) {
 		 $new_start_time =$date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
 		 $new_end_time   =$date_time_to_epoch->(0,$M2,$H2,$d2,$m2,$y2);
 	     } elsif (($d2,$m2,$y2, $H2,$M2) = $btxt =~ /bis\s+$full_date_rx/) {
@@ -3120,6 +3123,10 @@ sub temp_blockings_editor {
 	      -command => sub {
 		  if (!defined $file || $file =~ /^\s*$/) {
 		      $t->messageBox(-message => "Dateiname fehlt");
+		      return;
+		  }
+		  if (-d $file) {
+		      $t->messageBox(-message => "Bitte neue bbd-Datei auswählen");
 		      return;
 		  }
 		  if (-e $file) {
@@ -3163,11 +3170,16 @@ sub temp_blockings_editor {
 		  @old_contents = <PL_FILE>;
 		  close PL_FILE;
 
+		  my $blocking_type2 = $blocking_type;
+		  if ($blocking_type =~ /^handicap/) {
+		      $blocking_type = "handicap";
+		  }
 		  my $pl_entry = <<EOF;
      { from  => $start_time, # @{[ POSIX::strftime("%Y-%m-%d %H:%M", localtime $start_time) ]}
        until => $end_time, # @{[ POSIX::strftime("%Y-%m-%d %H:%M", localtime $end_time) ]}
        file  => '$rel_file',
-       text  => '$blocking_text'
+       text  => '$blocking_text',
+       type  => '$blocking_type',
      },
 EOF
 
