@@ -56,11 +56,11 @@ sub make_net {
     my $coord2ptr_cache_file = $cachefile . "_coord2ptr";
     $self->{CNetCoord2Ptr} = Strassen::Util::get_from_cache
 	($coord2ptr_cache_file, [$self->{Strassen}->{File}])
-	    or die "Should not happen: Cachefile $coord2ptr_cache_file is not current and/or cannot be created";
+	    or die "Should not happen: Cachefile " . Strassen::Util::get_cachefile($coord2ptr_cache_file) . " is not current and/or cannot be created";
     my $net2name_cache_file = $cachefile . "_net2name";
     $self->{Net2Name} = Strassen::Util::get_from_cache
 	($net2name_cache_file, [$self->{Strassen}->{File}])
-	    or die "Should not happen: Cachefile $net2name_cache_file is not current and/or cannot be created";
+	    or die "Should not happen: Cachefile " . Strassen::Util::get_cachefile($net2name_cache_file) . " is not current and/or cannot be created";
 
     tie %{ $self->{Net} }, 'StrassenNetz::CNetFile::Net', $self;
 
