@@ -276,11 +276,16 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Spandauer Straße, zwischen Karl-Liebknecht-Straße und Mühlendamm, in beiden Richtungen Straße gesperrt. Veranstaltung. Dauer: 01.05.2004, 05.00 Uhr bis 24.00 Uhr',
        type  => 'gesperrt',
      },
-     { from  => 1083189600, # 2004-04-29 00:00
-       until => 1083535199, # 2004-05-02 23:59
-       file  => 'muellerstr.bbd',
-       text  => 'NEW: Müllerstr. (Wedding) in beiden Richtungen, zwischen Seestr. und Leopoldplatz Veranstaltung, Straßenfest (vom 30.04. - 02.05.)',
+     { from  => 1112241600, # 2005-03-31 06:00
+       until => 1112562000, # 2005-04-03 23:00
+       text  => 'Müllerstraße, Zwischen Kreuzung Seestraße und Kreuzung Leopoldplatz in beiden Richtungen Veranstaltung, Straße gesperrt, Dauer: 01.04.2005 06:00 Uhr bis 03.04.2005 23:00 Uhr (Müllerstraßenfest) ',
        type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 7043,15793 7198,15656
+userdel	2 7043,15793 6914,15908
+userdel	2 7198,15656 7288,15579
+userdel	2 6790,16018 6914,15908
+EOF
      },
      { from  => 1083491594, # 2004-05-02 11:53
        until => 1083967200, # 2004-05-08 00:00
@@ -1462,7 +1467,7 @@ EOF
        text  => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 3507,3635 3184,3413 2701,3064 2639,2989 2638,2843
+userdel	q4; 3507,3635 3184,3413 3050,3316 2701,3064 2639,2989 2638,2843
 EOF
      },
      { from  => 1110917391, # 2005-03-15 21:09
@@ -1627,6 +1632,16 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -26784,5756 -26840,5684
+EOF
+     },
+     { from  => 1112339478, # 2005-04-01 09:11
+       until => 1112562000, # 2005-04-03 23:00
+       text  => 'Wilhelmstraße, Straße gesperrt bis 03.04.2005 23:00 Uhr (Frühlingsfest zwischen Pichelsdorfer Straße und Adamstraße). ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -3880,13032 -3796,13312
+userdel	2 -3880,13032 -4025,12801
+userdel	2 -4025,12801 -4137,12651
 EOF
      },
     );

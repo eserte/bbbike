@@ -15975,9 +15975,9 @@ sub show_logo { # und About
 	    (-text =>
 	     "$progname $VERSION\n" .
 	     "(File Rev $PROG_REVISION)\n\n" .
-	     M("Ein Informationssystem für\n" .
-	       "Radfahrer in Berlin\n\n") .
-	     "© 1995-2004 Slaven Rezic",
+	     M("Ein Informationssystem für Radfahrer in Berlin") .
+	     "\n\n© 1995-2004 Slaven Rezic",
+	     -wraplength => 230,
 	     -font => $font{'bold'},
 	     -padx => 5,
 	     -pady => 0,

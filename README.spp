@@ -22,7 +22,7 @@
 ## perlreplace #HTTPCVS#    '"http://sourceforge.net/cvs/?group_id=19142"'
 ## perlreplace #CVSREPO#    '":pserver:anonymous\@cvs.bbbike.sourceforge.net:/cvsroot/bbbike"'
 ## dnl
-## dnl $Id: README.spp,v 2.32 2005/03/28 22:48:05 eserte Exp $
+## dnl $Id: README.spp,v 2.33 2005/04/02 19:44:54 eserte Exp $
 ## dnl strpp source of README
 ## dnl
 =head1 README
@@ -452,43 +452,87 @@ L<http://groups.google.com>).
 
 ## yes
 
-Folgende Anleitung habe ich von Wolfram Kroll erhalten:
 
+## only DE
+Folgende Anleitung habe ich von Wolfram Kroll erhalten:
+## but DE
+The following instructions are from Wolfram Kroll:
+## yes
+
+
+
+## only DE
 L<#BBBIKEVAR_DISTFILE_SOURCE#> und (von
 L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
 besorgt.
+## but DE
+Get L<#BBBIKEVAR_DISTFILE_SOURCE#> and (from
+L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
+## yes
+
 
 =over
 
 =item 1.
 
-perl auf dynamische Libs konfiguriert:
+## only DE
+Perl auf dynamische Libs konfiguriert:
+## but DE
+Perl configured to use dynamic libraries:
+## yes
+
 
  # sh Configure -des -Duseshrplib
  # make
  # make test
  # sudo make install
 
+
+## only DE
 --> /usr/local/ ist der default (das orginale perl bleibt erhalten)
+## but DE
+--> /usr/local/ is the default (the original Perl is preserved)
+## yes
+
 
 =item 2.
 
+## only DE
 Tk: das ist kein Aqua-Tk, sondern für X11, na meinetwegen...
+## but DE
+Tk: that is not a Aqua-Tk, but rather is for X11, but...
+## yes
+
 
  # make
 
+
+## only DE
 in einem X11-Fenster: # make test
+## but DE
+in an X11 window: # make test
+## yes
+
 
  sudo make install
 
 =item 3.
 
+## only DE
 bbbike unter X11
 
 läuft!
+## but DE
+bbbike under X11
+
+runs!
+## yes
+
 
 =back
 
+
+## only DE
 Um compilieren zu können, sind die Entwicklertools notwendig. Diese
 werden "Xcode" genannt und befinden sich entweder auf einer
 gleichnamigen CD (bei älteren Macs) oder im Applications-Ordner unter
@@ -496,10 +540,14 @@ C<Installers/Xcode Tools/Developer.mpkg> (bei neueren Macs).
 
 Es wird auch eine X11- bzw. Darwin-Umgebung benötigt.
 
-## only DE
-
 Mac OS Classic wird nicht unterstützt.
 ## but DE
+To compile bbbike under X11 the "Xcode" development tools are needed.
+These can be found either on a CD-ROM of the same name (for older Macs)
+or in the Applications folder under C<Installers/Xcode Tools/Developer.mpkg>
+(for newer Macs).
+ 
+An X11 environment or Darwin environment is also required.
 
 Mac OS Classic is not supported.
 ## yes

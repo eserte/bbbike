@@ -1,7 +1,89 @@
 @temp_blocking = ();
-$#temp_blocking = 119;
+$#temp_blocking = 47;
 push @temp_blocking,
 (
+       {
+         'until' => 1112562000,
+         'text' => 'Müllerstraße, Zwischen Kreuzung Seestraße und Kreuzung Leopoldplatz in beiden Richtungen Veranstaltung, Straße gesperrt, Dauer: 01.04.2005 06:00 Uhr bis 03.04.2005 23:00 Uhr (Müllerstraßenfest) ',
+         'from' => 1112241600,
+         'data' => 'userdel	2 7043,15793 7198,15656
+userdel	2 7043,15793 6914,15908
+userdel	2 7198,15656 7288,15579
+userdel	2 6790,16018 6914,15908
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'until' => 1117231200,
          'text' => 'K 6413; (Wriezener Straße); OL Buckow, zw. Weinbergsweg u. Ringstr. Kanal- u. Straßenbau Vollsperrung 17.01.2005-27.05.2005 ',
@@ -24,14 +106,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1112306400,
-         'text' => 'K 6904; (Gröben-Nudow); OD Fahlhorst, Dorfstr. Straßenbauarbeiten Vollsperrung 04.10.2004-31.03.2005 ',
-         'from' => 1096754400,
-         'data' => 'userdel	q4 -5452,-11456 -5709,-10987
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -54,23 +129,9 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1112306400,
-         'text' => 'B 101; (Luckenwalder-, Berliner Str.); OD Trebbin Straßenbauarbeiten Vollsperrung 27.10.2004-31.03.2005 ',
-         'from' => 1098741600,
-         'data' => 'userdel	q4 -1623,-21150 -1887,-21501
-',
-         'type' => 'gesperrt'
-       },
        undef,
-       {
-         'until' => 1112306400,
-         'text' => 'L 302; (Schöneicher Str.); OL Schöneiche, zw. Stegeweg u. Dorfaue Gleisbauarbeiten Vollsperrung 25.10.2004-31.03.2005 ',
-         'from' => 1098568800,
-         'data' => 'userdel	q4 31221,8312 30688,8432
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -142,14 +203,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1112306400,
-         'text' => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzend., zw. G.-Hauptmann-Str. u. K.-Liebknecht-Str. Kanal- und Straßenbau Vollsperrung 29.11.2004-31.03.2005 ',
-         'from' => 1101596400,
-         'data' => 'userdel	q4 25185,-3955 23463,-4466
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -186,7 +240,7 @@ push @temp_blocking,
          'until' => 1136069999,
          'text' => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
          'from' => 1109628414,
-         'data' => 'userdel	q4; 3507,3635 3184,3413 2701,3064 2639,2989 2638,2843
+         'data' => 'userdel	q4; 3507,3635 3184,3413 3050,3316 2701,3064 2639,2989 2638,2843
 ',
          'type' => 'handicap'
        },
@@ -302,6 +356,16 @@ userdel	q4 22217,1108 22162,1067
          'text' => 'die Fähre Ketzin ist vom 30.03.05 07.00 Uhr bis 06.04.2005 20.00 Uhr aufgrund Bauarbeiten gesperrt',
          'from' => 1112072400,
          'data' => 'userdel	2 -26784,5756 -26840,5684
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1112562000,
+         'text' => 'Wilhelmstraße, Straße gesperrt bis 03.04.2005 23:00 Uhr (Frühlingsfest zwischen Pichelsdorfer Straße und Adamstraße). ',
+         'from' => 1112339478,
+         'data' => 'userdel	2 -3880,13032 -3796,13312
+userdel	2 -3880,13032 -4025,12801
+userdel	2 -4025,12801 -4137,12651
 ',
          'type' => 'gesperrt'
        }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeWeather.pm,v 1.4 2005/03/17 00:05:59 eserte Exp $
+# $Id: BBBikeWeather.pm,v 1.4 2005/03/17 00:05:59 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -90,7 +90,7 @@ sub BBBikeWeather::update_weather {
 #  	    push @source, 'www' unless $really_no_www;
 #  	}
 	if (!@source) {
-	    die M"Es wurde keine Quelle für den Empfang der Wetterdaten angegeben.\n";
+	    die M("Es wurde keine Quelle für den Empfang der Wetterdaten angegeben.")."\n";
 	}
 
 	BBBikeWeather::require_wettermeldung();

@@ -186,49 +186,45 @@ to get BBBike running. For instructions how to setup Perl/Tk on Mac OS X
 refer to the comp.lang.perl.tk newsgroup (see
 L<http://groups.google.com>).
 
-Folgende Anleitung habe ich von Wolfram Kroll erhalten:
+The following instructions are from Wolfram Kroll:
 
-L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.13.tar.gz> und (von
+Get L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.13.tar.gz> and (from
 L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
-besorgt.
 
 =over
 
 =item 1.
-
-perl auf dynamische Libs konfiguriert:
+Perl configured to use dynamic libraries:
 
  # sh Configure -des -Duseshrplib
  # make
  # make test
  # sudo make install
 
---> /usr/local/ ist der default (das orginale perl bleibt erhalten)
+--> /usr/local/ is the default (the original Perl is preserved)
 
 =item 2.
-
-Tk: das ist kein Aqua-Tk, sondern für X11, na meinetwegen...
+Tk: that is not a Aqua-Tk, but rather is for X11, but...
 
  # make
 
-in einem X11-Fenster: # make test
+in an X11 window: # make test
 
  sudo make install
 
 =item 3.
+bbbike under X11
 
-bbbike unter X11
-
-läuft!
+runs!
 
 =back
 
-Um compilieren zu können, sind die Entwicklertools notwendig. Diese
-werden "Xcode" genannt und befinden sich entweder auf einer
-gleichnamigen CD (bei älteren Macs) oder im Applications-Ordner unter
-C<Installers/Xcode Tools/Developer.mpkg> (bei neueren Macs).
-
-Es wird auch eine X11- bzw. Darwin-Umgebung benötigt.
+To compile bbbike under X11 the "Xcode" development tools are needed.
+These can be found either on a CD-ROM of the same name (for older Macs)
+or in the Applications folder under C<Installers/Xcode Tools/Developer.mpkg>
+(for newer Macs).
+ 
+An X11 environment or Darwin environment is also required.
 
 Mac OS Classic is not supported.
 

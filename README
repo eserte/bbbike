@@ -197,8 +197,7 @@ besorgt.
 =over
 
 =item 1.
-
-perl auf dynamische Libs konfiguriert:
+Perl auf dynamische Libs konfiguriert:
 
  # sh Configure -des -Duseshrplib
  # make
@@ -208,7 +207,6 @@ perl auf dynamische Libs konfiguriert:
 --> /usr/local/ ist der default (das orginale perl bleibt erhalten)
 
 =item 2.
-
 Tk: das ist kein Aqua-Tk, sondern für X11, na meinetwegen...
 
  # make
@@ -218,7 +216,6 @@ in einem X11-Fenster: # make test
  sudo make install
 
 =item 3.
-
 bbbike unter X11
 
 läuft!
