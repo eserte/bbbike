@@ -292,6 +292,14 @@ sub BBBikeHeavy::layer_editor {
 			     Subtype => 'v',
 			    }
 		 },
+##XXX toggling won't work with this definition alone
+# 		 {'Text'  => M"Persönliche Orte",
+# 		  'Visible' => $p_draw{'personal'},
+# 		  'Data' => {Tag => 'personal-fg',
+# 			     Type => 'p',
+# 			     Subtype => 'personal',
+# 			    }
+# 		 },
 		);
 	if ($advanced) {
 	    push @elem, {Image => undef,
