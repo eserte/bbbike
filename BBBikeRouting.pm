@@ -396,7 +396,7 @@ sub resolve_position {
 	}
     }
 
-    if ($street =~ m|/|) { # StreetA/StreetB
+    if (defined $street && $street =~ m|/|) { # StreetA/StreetB
 	my(@streets) = split m|/|, $street;
 	my %coords;
 	$self->init_str; # for $self->Streets
@@ -477,7 +477,7 @@ sub resolve_position {
 	$pos_o->Citypart($from_data->[PLZ::LOOK_CITYPART()]);
 	$pos_o->Coord   ($from_data->[PLZ::LOOK_COORD   ()]);
 	$pos_o->ZIP     ($from_data->[PLZ::LOOK_ZIP     ()]);
-    } else {
+    } elsif (defined $street) {
 	$self->init_str; # for $self->Streets
 	# rx or not?
 	my $r = $self->Streets->get_by_name("^(?i:" . quotemeta($street) . ".*)", 1);
