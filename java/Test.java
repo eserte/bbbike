@@ -1,7 +1,7 @@
-import QSort;
+//import QSort;
 import java.util.Vector;
 import java.util.Enumeration;
-import Strassen;
+//import Strassen;
 
 class Test {
 
