@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.20 2003/06/02 23:24:28 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.21 2003/06/18 22:32:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -28,11 +28,11 @@ BEGIN {
 	eval 'use blib "/home/e/eserte/work/prod.perl-GPS"';
     }
     require Config;
-    if ($Config::Config{archname} eq 'arm-linux') {
-	eval 'use GPS::GarminX'; die $@ if $@;
-    } else {
+#XXX    if ($Config::Config{archname} eq 'arm-linux') {
+#	eval 'use GPS::GarminX'; die $@ if $@;
+#    } else {
 	eval 'use GPS::Garmin'; die $@ if $@; # 0.12 plus
-    }
+#    }
 }
 
 BEGIN {

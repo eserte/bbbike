@@ -8,31 +8,10 @@ require Strassen::Util; # XXX move to subs
 
 sub make_net_slow_1 {
     my($self, %args) = @_;
-    my($cachefile);
 
     my $cacheable = defined $args{UseCache} ? $args{UseCache} : $Strassen::Util::cacheable;
     if ($cacheable) {
-	my @src = $self->sourcefiles;
-	$cachefile = $self->get_cachefile;
-
-	my $net2name = Strassen::Util::get_from_cache("net2name_1_$cachefile", \@src);
-
-	my $net = Strassen::Util::get_from_cache("net_1_$cachefile", \@src);
-	if (
-
-	    defined $net2name &&
-
-	    defined $net
-	   ) {
-
-	    $self->{Net2Name} = $net2name;
-
-	    $self->{Net} = $net;
-	    if ($VERBOSE) {
-		warn "Using cache for $cachefile\n";
-	    }
-	    return;
-	}
+        return if $self->net_read_cache_1;
     }
 
     if ($VERBOSE) {
@@ -75,50 +54,57 @@ sub make_net_slow_1 {
     }
 
     if ($cacheable) {
-
-	Strassen::Util::write_cache($net2name, "net2name_1_$cachefile", -modifiable => 1);
-
-	Strassen::Util::write_cache($net, "net_1_$cachefile", -modifiable => 1);
-	if ($VERBOSE) {
-	    warn "Wrote cache ($cachefile)\n";
-	}
+	$self->net_write_cache_1;
     }
 
     $self->{UseMLDBM} = 0;
 }
+
+sub net_read_cache_1 {
+    my($self) = @_;
+    my @src = $self->sourcefiles;
+    my $cachefile = $self->get_cachefile;
+
+    my $net2name = Strassen::Util::get_from_cache("net2name_1_$cachefile", \@src);
+
+    my $net = Strassen::Util::get_from_cache("net_1_$cachefile", \@src);
+    if (
+
+	defined $net2name &&
+
+	defined $net
+       ) {
+
+	$self->{Net2Name} = $net2name;
+
+	$self->{Net} = $net;
+	if ($VERBOSE) {
+	    warn "Using cache for $cachefile\n";
+	}
+	return 1;
+    } else {
+	return 0;
+    }
+}
+
+sub net_write_cache_1 {
+    my($self) = @_;
+    my $cachefile = $self->get_cachefile;
+
+    Strassen::Util::write_cache($self->{Net2Name}, "net2name_1_$cachefile", -modifiable => 1);
+
+    Strassen::Util::write_cache($self->{Net}, "net_1_$cachefile", -modifiable => 1);
+    if ($VERBOSE) {
+        warn "Wrote cache ($cachefile)\n";
+    }
+}
+
 sub make_net_slow_2 {
     my($self, %args) = @_;
-    my($cachefile);
 
     my $cacheable = defined $args{UseCache} ? $args{UseCache} : $Strassen::Util::cacheable;
     if ($cacheable) {
-	my @src = $self->sourcefiles;
-	$cachefile = $self->get_cachefile;
-
-	my $coord2index = Strassen::Util::get_from_cache("coord2index_2_$cachefile", \@src);
-	my $index2coord = Strassen::Util::get_from_cache("index2coord_2_$cachefile", \@src);
-	my $index2pos   = Strassen::Util::get_from_cache("index2pos_2_$cachefile", \@src);
-
-	my $net = Strassen::Util::get_from_cache("net_2_$cachefile", \@src);
-	if (
-
-	    defined $coord2index &&
-	    defined $index2coord &&
-	    defined $index2pos &&
-
-	    defined $net
-	   ) {
-
-	    $self->{Coord2Index} = $coord2index;
-	    $self->{Index2Coord} = $index2coord;
-	    $self->{Index2Pos}   = $index2pos;
-
-	    $self->{Net} = $net;
-	    if ($VERBOSE) {
-		warn "Using cache for $cachefile\n";
-	    }
-	    return;
-	}
+        return if $self->net_read_cache_2;
     }
 
     if ($VERBOSE) {
@@ -172,19 +158,59 @@ sub make_net_slow_2 {
     }
 
     if ($cacheable) {
-
-	Strassen::Util::write_cache($coord2index, "coord2index_2_$cachefile");
-	Strassen::Util::write_cache($index2coord, "index2coord_2_$cachefile");
-	Strassen::Util::write_cache($index2pos, "index2pos_2_$cachefile");
-
-	Strassen::Util::write_cache($net, "net_2_$cachefile", -modifiable => 1);
-	if ($VERBOSE) {
-	    warn "Wrote cache ($cachefile)\n";
-	}
+	$self->net_write_cache_2;
     }
 
     $self->{UseMLDBM} = 0;
 }
+
+sub net_read_cache_2 {
+    my($self) = @_;
+    my @src = $self->sourcefiles;
+    my $cachefile = $self->get_cachefile;
+
+    my $coord2index = Strassen::Util::get_from_cache("coord2index_2_$cachefile", \@src);
+    my $index2coord = Strassen::Util::get_from_cache("index2coord_2_$cachefile", \@src);
+    my $index2pos   = Strassen::Util::get_from_cache("index2pos_2_$cachefile", \@src);
+
+    my $net = Strassen::Util::get_from_cache("net_2_$cachefile", \@src);
+    if (
+
+	defined $coord2index &&
+	defined $index2coord &&
+	defined $index2pos &&
+
+	defined $net
+       ) {
+
+	$self->{Coord2Index} = $coord2index;
+	$self->{Index2Coord} = $index2coord;
+	$self->{Index2Pos}   = $index2pos;
+
+	$self->{Net} = $net;
+	if ($VERBOSE) {
+	    warn "Using cache for $cachefile\n";
+	}
+	return 1;
+    } else {
+	return 0;
+    }
+}
+
+sub net_write_cache_2 {
+    my($self) = @_;
+    my $cachefile = $self->get_cachefile;
+
+    Strassen::Util::write_cache($self->{Coord2Index}, "coord2index_2_$cachefile");
+    Strassen::Util::write_cache($self->{Index2Coord}, "index2coord_2_$cachefile");
+    Strassen::Util::write_cache($self->{Index2Pos}, "index2pos_2_$cachefile");
+
+    Strassen::Util::write_cache($self->{Net}, "net_2_$cachefile", -modifiable => 1);
+    if ($VERBOSE) {
+        warn "Wrote cache ($cachefile)\n";
+    }
+}
+
 sub route_to_name_1 {
     my($self, $route_ref, %args) = @_;
     my @strname;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.32 2003/06/02 23:40:18 eserte Exp eserte $
+# $Id: BrowserInfo.pm,v 1.34 2003/06/20 18:06:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2001 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, $q) = @_;
@@ -190,6 +190,8 @@ sub set_info {
 	}
     } elsif ($self->{'wap_browser'}) {
 	$self->{'display_size'} = [80,60-20]; # ???
+    } elsif ($q->user_agent("Dillo")) {
+	$self->{'display_size'} = [200,320]; # iPAQ
     } else {
 	$self->{'display_size'} = [800-50,600-10]; # ???
     }
@@ -224,6 +226,7 @@ sub set_info {
 			    !$q->user_agent("nokia7110") &&
 			    !$q->user_agent("libwww-perl") # tkweb
 			   );
+    # Dillo kann Tabellen ab ca. 0.6.x
     $self->{'dom_type'} = "";
     if ($self->{'user_agent_name'} eq 'Mozilla') {
 	if ($self->{'user_agent_version'} >= 4 &&

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.23 2003/06/02 23:24:35 eserte Exp $
+# $Id: GpsmanData.pm,v 1.24 2003/06/20 18:05:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN {
 }
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_WAYPOINT => 0;
 use constant TYPE_TRACK    => 1;
@@ -53,7 +53,7 @@ use GPS::Util; # for eliminate_umlauts
 use Class::Struct;
 struct('GPS::Gpsman::Waypoint' =>
        [map {($_ => "\$")}
-	qw(Ident Comment Latitude Longitude Altitude NewTrack Symbol)
+	qw(Ident Comment Latitude Longitude Altitude NewTrack Symbol Accuracy)
        ]
       );
 {
@@ -333,7 +333,11 @@ sub parse_track {
     $wpt->Comment($f[1]);
     $wpt->Latitude($f[2]);
     $wpt->Longitude($f[3]);
-    $wpt->Altitude($f[4]); # this is the only diff to TYPE_WAYPOINT
+    # This are the only diffs to TYPE_WAYPOINT:
+    # The "~" thingy is a private extension
+    my($acc,$alt) = $f[4] =~ /^(~*)(.*)/;
+    $wpt->Accuracy(length($acc)); # 0=accurate, 2=very inaccurate
+    $wpt->Altitude($alt);
     $wpt;
 }
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.12 2003/06/02 23:07:58 eserte Exp $
+# $Id: Util.pm,v 1.13 2003/06/19 22:33:29 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -234,10 +234,11 @@ sub cache_ext {
 sub try_cache {
     my($filename, $write, $ref, %args) = @_;
     my $cache_type;
-    my $rw_text = ($write ? 'write' : 'read');
+    my $rw_text   = ($write ? 'writing' : 'reading');
+    my $rw_text_2 = ($write ? 'to' : 'from');
     foreach $cache_type (@cacheable) {
 	my $filename = $filename . cache_ext($cache_type);
-	warn "$rw_text $filename: trying cache type $cache_type...\n"
+	warn "Try $rw_text cache type $cache_type $rw_text_2 $filename ...\n"
 	    if $VERBOSE;
 	if ($cache_type eq 'VirtArray') {
 	    # wird überhaupt ein Array gespeichert?
@@ -367,10 +368,10 @@ sub get_from_cache {
 	warn "No read cache function found (tried: @cacheable)\n" if $VERBOSE;
 	return undef;
     }
-    warn "OK\n" if $VERBOSE;
+    warn "Using $cache_func_found for reading.\n" if $VERBOSE;
 
     if (!_valid_cache($cachepath, $srcref)) {
-	warn "Cache file $cachepath is not valid\n" if $VERBOSE;
+	warn "Cache file $cachepath is not valid.\n" if $VERBOSE;
 	return undef;
     }
 
@@ -413,7 +414,7 @@ sub write_cache {
 	warn "No write cache function found (tried: @cacheable)\n" if $VERBOSE;
 	return undef;
     }
-    warn "OK\n" if $VERBOSE;
+    warn "Using $cache_func_found for writing.\n" if $VERBOSE;
 
     if ($cache_func_found eq 'Storable') {
 	eval {

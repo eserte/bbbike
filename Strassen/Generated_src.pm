@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: Generated_src.pm,v 1.13 2003/06/02 23:07:24 eserte Exp $
+# $Id: Generated_src.pm,v 1.14 2003/06/19 20:59:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -56,43 +56,10 @@ EOF
 $tmpl->pack(<<'EOF');
 sub make_net_slow_<%=$type%> {
     my($self, %args) = @_;
-    my($cachefile);
 
     my $cacheable = defined $args{UseCache} ? $args{UseCache} : $Strassen::Util::cacheable;
     if ($cacheable) {
-	my @src = $self->sourcefiles;
-	$cachefile = $self->get_cachefile;
-<% if ($type == $FMT_ARRAY) { %>
-	my $coord2index = Strassen::Util::get_from_cache("coord2index_<%=$type%>_$cachefile", \@src);
-	my $index2coord = Strassen::Util::get_from_cache("index2coord_<%=$type%>_$cachefile", \@src);
-	my $index2pos   = Strassen::Util::get_from_cache("index2pos_<%=$type%>_$cachefile", \@src);
-<% } else { %>
-	my $net2name = Strassen::Util::get_from_cache("net2name_<%=$type%>_$cachefile", \@src);
-<% } %>
-	my $net = Strassen::Util::get_from_cache("net_<%=$type%>_$cachefile", \@src);
-	if (
-<% if ($type == $FMT_ARRAY) { %>
-	    defined $coord2index &&
-	    defined $index2coord &&
-	    defined $index2pos &&
-<% } else { %>
-	    defined $net2name &&
-<% } %>
-	    defined $net
-	   ) {
-<% if ($type == $FMT_ARRAY) { %>
-	    $self->{Coord2Index} = $coord2index;
-	    $self->{Index2Coord} = $index2coord;
-	    $self->{Index2Pos}   = $index2pos;
-<% } else { %>
-	    $self->{Net2Name} = $net2name;
-<% } %>
-	    $self->{Net} = $net;
-	    if ($VERBOSE) {
-		warn "Using cache for $cachefile\n";
-	    }
-	    return;
-	}
+        return if $self->net_read_cache_<%=$type%>;
     }
 
     if ($VERBOSE) {
@@ -167,21 +134,67 @@ sub make_net_slow_<%=$type%> {
     }
 
     if ($cacheable) {
-<% if ($type == $FMT_ARRAY) { %>
-	Strassen::Util::write_cache($coord2index, "coord2index_<%=$type%>_$cachefile");
-	Strassen::Util::write_cache($index2coord, "index2coord_<%=$type%>_$cachefile");
-	Strassen::Util::write_cache($index2pos, "index2pos_<%=$type%>_$cachefile");
-<% } else { %>
-	Strassen::Util::write_cache($net2name, "net2name_<%=$type%>_$cachefile", -modifiable => 1);
-<% } %>
-	Strassen::Util::write_cache($net, "net_<%=$type%>_$cachefile", -modifiable => 1);
-	if ($VERBOSE) {
-	    warn "Wrote cache ($cachefile)\n";
-	}
+	$self->net_write_cache_<%=$type%>;
     }
 
     $self->{UseMLDBM} = 0;
 }
+
+sub net_read_cache_<%=$type%> {
+    my($self) = @_;
+    my @src = $self->sourcefiles;
+    my $cachefile = $self->get_cachefile;
+<% if ($type == $FMT_ARRAY) { %>
+    my $coord2index = Strassen::Util::get_from_cache("coord2index_<%=$type%>_$cachefile", \@src);
+    my $index2coord = Strassen::Util::get_from_cache("index2coord_<%=$type%>_$cachefile", \@src);
+    my $index2pos   = Strassen::Util::get_from_cache("index2pos_<%=$type%>_$cachefile", \@src);
+<% } else { %>
+    my $net2name = Strassen::Util::get_from_cache("net2name_<%=$type%>_$cachefile", \@src);
+<% } %>
+    my $net = Strassen::Util::get_from_cache("net_<%=$type%>_$cachefile", \@src);
+    if (
+<% if ($type == $FMT_ARRAY) { %>
+	defined $coord2index &&
+	defined $index2coord &&
+	defined $index2pos &&
+<% } else { %>
+	defined $net2name &&
+<% } %>
+	defined $net
+       ) {
+<% if ($type == $FMT_ARRAY) { %>
+	$self->{Coord2Index} = $coord2index;
+	$self->{Index2Coord} = $index2coord;
+	$self->{Index2Pos}   = $index2pos;
+<% } else { %>
+	$self->{Net2Name} = $net2name;
+<% } %>
+	$self->{Net} = $net;
+	if ($VERBOSE) {
+	    warn "Using cache for $cachefile\n";
+	}
+	return 1;
+    } else {
+	return 0;
+    }
+}
+
+sub net_write_cache_<%=$type%> {
+    my($self) = @_;
+    my $cachefile = $self->get_cachefile;
+<% if ($type == $FMT_ARRAY) { %>
+    Strassen::Util::write_cache($self->{Coord2Index}, "coord2index_<%=$type%>_$cachefile");
+    Strassen::Util::write_cache($self->{Index2Coord}, "index2coord_<%=$type%>_$cachefile");
+    Strassen::Util::write_cache($self->{Index2Pos}, "index2pos_<%=$type%>_$cachefile");
+<% } else { %>
+    Strassen::Util::write_cache($self->{Net2Name}, "net2name_<%=$type%>_$cachefile", -modifiable => 1);
+<% } %>
+    Strassen::Util::write_cache($self->{Net}, "net_<%=$type%>_$cachefile", -modifiable => 1);
+    if ($VERBOSE) {
+        warn "Wrote cache ($cachefile)\n";
+    }
+}
+
 EOF
 
  for my $type ($FMT_HASH, $FMT_ARRAY) {

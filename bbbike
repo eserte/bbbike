@@ -4369,7 +4369,7 @@ $splash_screen->Destroy if $splash_screen;
 
 choose_streets()                            if $init_choose_street;
 
-MainLoop;
+MainLoop unless $ENV{BBBIKE_TEST_PERFORMANCE};
 
 ##### Subs ### RELOADER_START ############################################
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.22 2003/05/29 20:30:48 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.23 2003/06/19 22:33:13 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -146,6 +146,8 @@ sub sourcefiles {
 
 if (!defined &make_net) {
     *make_net = \&make_net_slow_1;
+    *net_read_cache = \&net_read_cache_1;
+    *net_write_cache = \&net_write_cache_1;
 }
 *make_net_classic = \&make_net_slow_1;
 
@@ -1970,10 +1972,12 @@ sub use_data_format {
 	require Strassen::CDB;
 	use_data_format_cdb();
     } else {
-	*make_net      = ($data_format == $FMT_HASH ? \&make_net_slow_1 : \&make_net_slow_2);
-	*make_sperre   = ($data_format == $FMT_HASH ? \&make_sperre_1 : \&null);
-	*route_to_name = ($data_format == $FMT_HASH ? \&route_to_name_1 : \&route_to_name_2);
-	*reachable     = ($data_format == $FMT_HASH ? \&reachable_1 : \&reachable_2);
+	*make_net        = ($data_format == $FMT_HASH ? \&make_net_slow_1 : \&make_net_slow_2);
+	*net_read_cache  = ($data_format == $FMT_HASH ? \&net_read_cache_1 : \&net_read_cache_2);
+	*net_write_cache = ($data_format == $FMT_HASH ? \&net_write_cache_1 : \&net_write_cache_2);
+	*make_sperre     = ($data_format == $FMT_HASH ? \&make_sperre_1 : \&null);
+	*route_to_name   = ($data_format == $FMT_HASH ? \&route_to_name_1 : \&route_to_name_2);
+	*reachable       = ($data_format == $FMT_HASH ? \&reachable_1 : \&reachable_2);
 	# XXX restliche ...
     }
 }

@@ -68,7 +68,7 @@ extern "C" {
 # define TRANSPOSE_Y_SCALAR(y) (newSVnv(TRANSPOSE_Y(y)))
 #endif
 
-typedef HV* StrassenNetz;
+typedef SV* StrassenNetz;
 
 double canvas_scale = 1;
 
@@ -338,18 +338,46 @@ make_net_XS(self, ...)
 	char *k0_s, *k1_s;
 	STRLEN k0_slen, k1_slen;
 	SV* progress = &PL_sv_undef;
+	int prefer_cache = 0;
 	int count = 0;
+	HV *self_hash;
 
 	CODE:
+	if (sv_derived_from(self, "StrassenNetz"))
+	    self_hash = (HV*)SvRV(self);
+	else
+	    croak("self is not of type StrassenNetz");
+
 	if (items > 2) {
 	  for(item_i = 1; item_i < items; item_i+=2) {
 	    char *tmp = SvPV(ST(item_i), PL_na);
 	    if (strcmp(tmp, "Progress") == 0) {
 	      progress = ST(item_i+1);
+	    } else if (strcmp(tmp, "PreferCache") == 0) {
+	      prefer_cache = SvTRUE(ST(item_i+1));
 	    }
 	  }
 	}
 	SP -= items;
+
+	if (prefer_cache) {
+	  SV* ret;
+	  ENTER;
+	  SAVETMPS;
+	  PUSHMARK(sp);
+	  XPUSHs(self);
+	  PUTBACK;
+	  perl_call_method("net_read_cache", G_SCALAR);
+	  SPAGAIN;
+	  ret = newSVsv(POPs);
+	  PUTBACK;
+	  FREETMPS;
+	  LEAVE;
+	  if (SvTRUE(ret)) {
+	    return;
+	  }
+	}
+
 	net         = newHV();
 	net2name    = newHV();
 	wegfuehrung = newHV();
@@ -357,19 +385,19 @@ make_net_XS(self, ...)
 #ifdef WITH_KOORDXY
 	koordxy  = newHV();
 #endif
-	hv_store(self, "Net",      strlen("Net"),
+	hv_store(self_hash, "Net",      strlen("Net"),
 		       newRV_noinc((SV*) net), 0);
-	hv_store(self, "Net2Name", strlen("Net2Name"),
+	hv_store(self_hash, "Net2Name", strlen("Net2Name"),
 		       newRV_noinc((SV*) net2name), 0);
-	hv_store(self, "Wegfuehrung", strlen("Wegfuehrung"),
+	hv_store(self_hash, "Wegfuehrung", strlen("Wegfuehrung"),
 		       newRV_noinc((SV*) wegfuehrung), 0);
-	hv_store(self, "Penalty", strlen("Penalty"),
+	hv_store(self_hash, "Penalty", strlen("Penalty"),
 		       newRV_noinc((SV*) penalty), 0);
 #ifdef WITH_KOORDXY
-	hv_store(self, "KoordXY",  strlen("KoordXY"),
+	hv_store(self_hash, "KoordXY",  strlen("KoordXY"),
 		       newRV_noinc((SV*) koordxy), 0);
 #endif
-	tmp = hv_fetch(self, "Strassen", strlen("Strassen"), 0);
+	tmp = hv_fetch(self_hash, "Strassen", strlen("Strassen"), 0);
 	if (tmp == NULL)
 	    croak("Missing $self->{Strassen}.\n");
 	if (!SvROK(*tmp) || SvTYPE(SvRV(*tmp)) != SVt_PVHV)
@@ -484,7 +512,15 @@ make_net_XS(self, ...)
 	  }
 	}
 	
-	hv_store(self, "UseMLDBM",      strlen("UseMLDBM"),
+	if (prefer_cache) {
+	  PUSHMARK(sp);
+	  XPUSHs(self);
+	  PUTBACK;
+	  perl_call_method("net_write_cache", G_DISCARD|G_VOID);
+	  SPAGAIN;
+	}
+
+	hv_store(self_hash, "UseMLDBM",      strlen("UseMLDBM"),
 		       newSViv(0), 0);
 
 MODULE = BBBikeXS		PACKAGE = BBBike

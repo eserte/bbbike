@@ -1,14 +1,1 @@
-StrassenNetz	T_StrassenNetz
-
-INPUT
-T_StrassenNetz
-	if (sv_derived_from(ST(0), \"StrassenNetz\"))
-	    $var = (HV*)SvRV(ST(0));
-	else
-	    croak(\"self is not of type StrassenNetz\");
-
-OUTPUT
-T_StrassenNetz
-        $arg = newRV((SV*)$var);
-
-#StrassenNetz	T_HVREF
+StrassenNetz	T_SV

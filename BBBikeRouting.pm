@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.21 2003/06/02 23:16:07 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.22 2003/06/19 22:30:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001 Slaven Rezic. All rights reserved.
@@ -29,6 +29,7 @@ struct('BBBikeRouting::Position' => {Street => "\$", Citypart => "\$",
 struct('BBBikeRouting::Context' => {Vehicle => "\$", Scope => "\$",
 				    Velocity => "\$",
 				    UseXS => "\$", UseCache => "\$",
+				    PreferCache => "\$",
 				    UseNetServer => "\$",
 				    ZIPLookArgs => "\$",
 				    SearchArgs => "\$", Algorithm => "\$",
@@ -88,6 +89,7 @@ sub init_context {
     $context->UseXS(1);
     $context->UseNetServer(1);
     $context->UseCache(1);
+    $context->PreferCache(0);
     $context->Algorithm("C-A*");
     $context->RouteInfoKm(1);
     $context->MultipleChoices(1);
@@ -174,7 +176,8 @@ sub init_net {
 	if ($context->Vehicle eq 'oepnv') {
 	    $self->Net(StrassenNetz->new($self->Streets));
 	    die "NYI XXX" if $context->Algorithm eq 'C-A*-2';
-	    $self->Net->make_net(UseCache => $context->UseCache);
+	    $self->Net->make_net(UseCache => $context->UseCache,
+				 PreferCache => $context->PreferCache);
 	    $self->init_stations;
 	    $self->Net->add_umsteigebahnhoefe($self->Stations,
 					      -addmapfile => 'umsteigebhf');
@@ -191,7 +194,8 @@ sub init_net {
 						  'wegfuehrung']);
 				# XXX make_sperre nyi
 			    } else {
-				$_[0]->make_net(UseCache => $context->UseCache);
+				$_[0]->make_net(UseCache => $context->UseCache,
+						PreferCache => $context->PreferCache);
 				if ($context->Vehicle eq 'bike') {
 				    $_[0]->make_sperre
 					('gesperrt',

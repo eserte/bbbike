@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanConn.pm,v 1.11 2003/05/17 00:37:12 eserte Exp $
+# $Id: GpsmanConn.pm,v 1.12 2003/06/18 22:34:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@
 package GPS::GpsmanConn;
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
 use Config;
 
 # XXX should go away some day...
@@ -43,11 +43,11 @@ BEGIN {
 		last SEARCH_FOR_GARMIN;
 	    }
 	}
-# Use the new perl-GPS repository. If upload/downloads fail, comment this
-# line to get the old prod.perl-GPS
-use blib "/home/e/eserte/work/perl-GPS";
-	# make sure /tmp version is first
-	if (-e "/tmp/prod.perl-GPS") {
+	if (-e "/home/e/eserte/work/perl-GPS/blib") {
+	    # Use the new perl-GPS repository. If upload/downloads fail,
+	    # comment this line to get the old prod.perl-GPS
+	    eval 'use blib "/home/e/eserte/work/perl-GPS"'; warn $@ if $@;
+	} elsif (-e "/tmp/prod.perl-GPS") {
 	    eval 'use blib "/tmp/prod.perl-GPS"'; warn $@ if $@;
 	} elsif (-e "/usr/local/prod.perl-GPS") {
 	    eval 'use blib "/usr/local/prod.perl-GPS"'; warn $@ if $@;
@@ -56,11 +56,11 @@ use blib "/home/e/eserte/work/perl-GPS";
 	}
     }
     require Config;
-    if ($Config::Config{archname} eq 'arm-linux') {
-	eval 'use GPS::GarminX'; die $@ if $@;
-    } else {
+#XXX    if ($Config::Config{archname} eq 'arm-linux') {
+#	eval 'use GPS::GarminX'; die $@ if $@;
+#    } else {
 	eval 'use GPS::Garmin'; die $@ if $@; # 0.12 plus
-    }
+#    }
 }
 use GPS::Garmin::Handler;
 
