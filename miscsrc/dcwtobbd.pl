@@ -16,7 +16,9 @@
 # convert dcw data (ARC2 ?) to bbd
 
 # Get country data from:
-# http://www.maproom.psu.edu/dcw/
+#   http://www.maproom.psu.edu/dcw/
+# More information
+#   http://www.maproom.psu.edu/dcw/dcw_about.shtml
 
 use strict;
 use FindBin;
@@ -28,13 +30,21 @@ my $cat = "X";
 my $polar_map;
 my $gdf_map; # DDD * 1_000_000
 my $descfile;
+my $do_make;
+my $do_exec = 1;
 
 if (!GetOptions("cat=s"  => \$cat,
 		"polar!" => \$polar_map,
 		"gdf!"   => \$gdf_map,
 		"descfile=s" => \$descfile,
+		"make" => \$do_make,
+		"n" => sub { $do_exec = 0 },
 		)) {
     die "usage";
+}
+
+if ($do_make) {
+    exit make();
 }
 
 Karte::preload('Standard','Polar');
@@ -104,53 +114,81 @@ if ($descfile) {
     close DESC;
 }
 
-__END__
+sub make {
 
+    my $makefile = <<EOF;
 # Sample makefile for a dataset:
 
-#
-# $Id: dcwtobbd.pl,v 1.2 2004/03/10 21:53:08 eserte Exp $
-#
+BBBIKEDIR=		$FindBin::RealBin/..
+BBBIKEMISCSRCDIR=	$FindBin::RealBin
+DCWTOBBD=		$FindBin::RealBin/$FindBin::RealScript
 
-#BBBIKEDIR?=/oo/projekte/bbbike/bbbike-devel
-BBBIKEDIR?=$(HOME)/src/bbbike
+EOF
+    $makefile .= <<'EOF';
 
 all:	normal devel
 
-normal: landstrassen rbahn wasserstrassen flaechen orte-label
+normal:	strassen landstrassen rbahn wasserstrassen flaechen orte-label gesperrt
 
-devel: landstrassen-orig rbahn-orig wasserstrassen-orig flaechen-orig orte-label-orig
+devel:	strassen-orig landstrassen-orig rbahn-orig wasserstrassen-orig \
+	flaechen-orig orte-label-orig gesperrt-orig
 
-landstrassen: rdline.e00
-	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -cat HH > $@
+landstrassen:	rdline.e00
+	< $^ $(DCWTOBBD) -descfile $@.desc -cat HH > $@
 
-rbahn: rrline.e00
-	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -cat R > $@
+rbahn:		rrline.e00
+	< $^ $(DCWTOBBD) -descfile $@.desc -cat R > $@
 
-wasserstrassen: dnnet.e00
-	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -cat W > $@
+wasserstrassen:	dnnet.e00
+	< $^ $(DCWTOBBD) -descfile $@.desc -cat W > $@
 
-flaechen: pppoly.e00
-	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -cat 'F:#ffffff' > $@
+flaechen:	pppoly.e00
+	< $^ $(DCWTOBBD) -descfile $@.desc -cat 'F:#ffffff' > $@
 
 #orte: orte.e00
-orte-label: pppoly.e00 pppoint.e00
-	cat $^ | $(BBBIKEDIR)/miscsrc/e00_to_bbd.pl -cat 3 > $@
+orte-label:	pppoly.e00 pppoint.e00
+	cat $^ | $(BBBIKEMISCSRCDIR)/e00_to_bbd.pl -cat 3 > $@
 
 landstrassen-orig: rdline.e00
-	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -gdf -cat HH > $@
+	< $^ $(DCWTOBBD) -descfile $@.desc -gdf -cat HH > $@
 
-rbahn-orig: rrline.e00
-	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -gdf -cat R > $@
+rbahn-orig:	rrline.e00
+	< $^ $(DCWTOBBD) -descfile $@.desc -gdf -cat R > $@
 
 wasserstrassen-orig: dnnet.e00
-	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -gdf -cat W > $@
+	< $^ $(DCWTOBBD) -descfile $@.desc -gdf -cat W > $@
 
-flaechen-orig: pppoly.e00
-	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -gdf -cat 'F:#ffffff' > $@
+flaechen-orig:	pppoly.e00
+	< $^ $(DCWTOBBD) -descfile $@.desc -gdf -cat 'F:#ffffff' > $@
 
-#orte-orig: orte.e00
+#orte-orig:	orte.e00
 orte-label-orig: pppoly.e00 pppoint.e00
-#	< $^ $(BBBIKEDIR)/miscsrc/e00_tx7_to_bbd.pl -map polar > $@
+#	< $^ $(BBBIKEMISCSRCDIR)/e00_tx7_to_bbd.pl -map polar > $@
 # XXX not yet:
-#	cat $^ | $(BBBIKEDIR)/miscsrc/e00_to_bbd.pl -cat 3 -map polar > $@
+#	cat $^ | $(BBBIKEMISCSRCDIR)/e00_to_bbd.pl -cat 3 -map polar > $@
+
+gesperrt:
+	touch $@
+
+gesperrt-orig:
+	touch $@
+
+strassen:
+	touch $@
+
+strassen-orig:
+	touch $@
+
+EOF
+
+    if ($do_exec) {
+	open(MAKE, "|-") or do {
+	    exec "make", "-f", "-";
+	    die $!;
+	};
+	print MAKE $makefile;
+	close MAKE;
+    } else {
+	print $makefile;
+    }
+}
