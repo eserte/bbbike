@@ -235,6 +235,7 @@ test:
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin \
 	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/bbbike.cgi \
 	BBBIKE_TEST_WAPURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/wapbbbike.cgi \
+	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
 		cgihead.t \
 		cgi.t \
@@ -246,6 +247,7 @@ test-on-remote:
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin \
 	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/bbbike.cgi \
 	BBBIKE_TEST_WAPURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/wapbbbike.cgi \
+	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		cgihead.t \
 		cgi.t \
@@ -258,6 +260,7 @@ test-local:
 	BBBIKE_TEST_CGIURL=${LOCAL_URL}/cgi-bin/bbbike.cgi \
 	BBBIKE_TEST_WAPURL=${LOCAL_URL}/cgi-bin/wapbbbike.cgi \
 	BBBIKE_TEST_MAPSERVERURL=http://localhost/~eserte/cgi/mapserv.cgi \
+	BBBIKE_TEST_HTMLDIR=${LOCAL_URL}/BBBike \
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
 		cgihead.t \
 		cgi.t \
