@@ -177,6 +177,7 @@ sub set_info {
 	     Nokia5210 => [84, 48],
 	     Nokia6310 => [96, 65],
 	     Nokia7110 => [96, 65],
+	     Nokia3100 => [124, 128], # space for horiz scrollbar
 	     Nokia6610 => [128, 128],
 	     Nokia6100 => [128, 90], # XXX ca.
 	     Nokia3650 => [170, 144], # visible size
