@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.29 2003/05/30 07:56:19 eserte Exp $
+# $Id: GD.pm,v 1.4 2003/06/01 21:43:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -39,7 +39,7 @@ sub AUTOLOAD {
     }
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -97,7 +97,8 @@ sub init {
 		$image->jpeg(@_);
 	    } elsif ($self->imagetype eq 'wbmp') {
 		if (!$image->can('wbmp')) {
-		    require GD::Wbmp;
+		    require GD::Convert;
+		    GD::Convert->import('wbmp');
 		}
 		$image->wbmp($BBBikeDraw::black);
 	    } else {
@@ -175,7 +176,8 @@ sub init {
 #$self->{StrLabel} = ['str:HH,H'];#XXX
 
     if ($self->imagetype eq 'wbmp' && !defined $self->{RouteWidth}) {
-	$self->{RouteWidth} = 3;
+	$self->{RouteWidth} = $width{HH} + 4;
+        #$self->{RouteDotted} = 3;
     }
 
     $self;
@@ -190,8 +192,8 @@ sub allocate_colors {
 
     if ($self->imagetype eq 'wbmp') {
 	# black-white image for WAP
-	$white = $grey_bg = $im->colorAllocate(0, 0, 0);
-	$black = $yellow = $red = $green = $darkgreen = $darkblue =
+	$black = $grey_bg = $im->colorAllocate(0, 0, 0);
+	$white = $yellow = $red = $green = $darkgreen = $darkblue =
 	    $lightblue = $middlegreen = $im->colorAllocate(255,255,255);
 	return;
     }
@@ -227,6 +229,9 @@ sub allocate_colors {
 
 sub draw_map {
     my $self = shift;
+
+    $self->pre_draw if !$self->{PreDrawCalled};
+
     my $im        = $self->{Image};
     my $transpose = $self->{Transpose};
 
@@ -685,6 +690,9 @@ sub draw_scale {
 
 sub draw_route {
     my $self = shift;
+
+    $self->pre_draw if !$self->{PreDrawCalled};
+
     my $im        = $self->{Image};
     my $transpose = $self->{Transpose};
     my(@c1)       = @{ $self->{C1} };
@@ -701,13 +709,14 @@ sub draw_route {
     my $width;
     if ($self->{RouteDotted}) {
 	# gepunktete Routen für die WAP-Ausgabe (B/W)
-	$im->setStyle($white, $white, $black, $black);
+	$im->setStyle(($white)x$self->{RouteDotted},
+		      ($black)x$self->{RouteDotted});
 	$line_style = GD::gdStyled();
 #	$width = $width{Route};
     } elsif ($self->{RouteWidth}) {
 	# fette Routen für die WAP-Ausgabe (B/W)
 	$brush = GD::Image->new($self->{RouteWidth}, $self->{RouteWidth});
-	$brush->colorAllocate($im->rgb($black));
+	$brush->colorAllocate($im->rgb($white));
 	$im->setBrush($brush);
 	$line_style = GD::gdBrushed();
     } elsif ($brush{Route}) {

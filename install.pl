@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: install.pl,v 4.9 2003/01/08 17:53:50 eserte Exp eserte $
+# $Id: install.pl,v 1.4 2003/06/01 21:43:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2001 Slaven Rezic. All rights reserved.
@@ -150,21 +150,21 @@ if (!defined $program_title) {
 }
 
 my $root_or_user_sub = sub {
-    my($opt, $arg, $var) = @_;
+    my($var, $opt, $arg) = @_;
     die Mfmt('Argument für %s muss root, user oder best sein', $opt)
 	if $arg !~ /^(none|root|user|best)$/;
     $$var = $arg;
 };
 
 my @options =
-  ('kdeinstall=s' => sub { $root_or_user_sub->(\$kde_install) },
+  ('kdeinstall=s' => sub { $root_or_user_sub->(\$kde_install, @_) },
 #     sub { my $arg = $_[1];
 #  	 die "Argument for kdeinstall must be root, user or best"
 #  	     if $arg !~ /^(none|root|user|best)$/;
 #  	 $kde_install = $arg;
 #       },
-   'gnomeinstall=s' => sub { $root_or_user_sub->(\$gnome_install) },
-   'wininstall=s'   => sub { $root_or_user_sub->(\$win_install) },
+   'gnomeinstall=s' => sub { $root_or_user_sub->(\$gnome_install, @_) },
+   'wininstall=s'   => sub { $root_or_user_sub->(\$win_install, @_) },
 
    'desktop!'    => \$desktop_icon,
    'show!'       => \$show,
@@ -546,6 +546,7 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
 	require KDEUtil;
 	1;
     };
+    warn $@ if $@;
     return if !$r;
 
     Print M("KDE-Installation")." ...\n";
@@ -593,12 +594,14 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
     if (exists $kdedirs{-applnk}) {
 	Print M"Installation der KDE-Verknüpfungen ...\n";
 	Print_shift;
-	my $applications_dir  = "$kdedirs{-applnk}/Applications";
+#	my $applications_dir  = "$kdedirs{-applnk}/Applications";
+#XXX do not hardcode Extras/Other
+	my $applications_dir  = "$kdedirs{-applnk}/Extras/Other";
 	if (!-d $applications_dir) {
 	    if ($show) {
 		Print "mkdir $applications_dir, 0755\n";
 	    } else {
-		mkdir $applications_dir, 0755;
+		mkpath([$applications_dir], $debug, 0755);
 	    }
 	    # copy .directory (see GNOME!)
 	}
@@ -623,6 +626,8 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
 	    }
 	}
 
+	my %vars = (BBBIKEDIR => $FindBin::RealBin);
+
 	$bbbike_kdelnk     = "$applications_dir/BBBike.kdelnk";
 	if ($show) {
 	    Print M("BBBike.kdelnk.tmpl nach $applications_dir mit\n" .
@@ -642,6 +647,7 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
 			    print SAVE "DocPath=$html_documentation\n";
 			}
 		    } else {
+			s/\@([^\@]+)\@/$vars{$1}/g;
 			print SAVE $_;
 		    }
 		}
@@ -661,6 +667,7 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
 		    if (/^URL=/i) {
 			print SAVE "URL=file:$FindBin::Bin/$html_documentation\n";
 		    } else {
+			s/\@([^\@]+)\@/$vars{$1}/g;
 			print SAVE $_;
 		    }
 		}
@@ -671,10 +678,19 @@ sub KDEInstall {      # XXX ersetzt makefile für freebsd-port
 
 	$bbbike_www_kdelnk = "$applications_dir/BBBikeWWW.kdelnk";
 	if ($show) {
-	    Print "BBBikeWWW.kdelnk nach $applications_dir kopieren.\n";
+	    Print "BBBikeWWW.kdelnk nach $applications_dir mit\n" .
+		"  Variablensubstitution kopieren.\n";
 	} else {
-	    copy("$FindBin::Bin/kde/BBBikeWWW.kdelnk", $bbbike_www_kdelnk);
-	    chmod 0644, $bbbike_www_kdelnk;
+	    if (open(KDELNK, "$FindBin::Bin/kde/BBBikeWWW.kdelnk.tmpl") &&
+		open(SAVE,   ">$bbbike_www_kdelnk")) {
+		while(<KDELNK>) {
+		    s/\@([^\@]+)\@/$vars{$1}/g;
+		    print SAVE $_;
+		}
+		close SAVE;
+		close KDELNK;
+		chmod 0644, $bbbike_www_kdelnk;
+	    }
 	}
 	Print_unshift;
     }

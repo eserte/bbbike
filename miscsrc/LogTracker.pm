@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.3 2003/05/29 23:36:31 eserte Exp eserte $
+# $Id: LogTracker.pm,v 1.4 2003/06/01 21:46:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ use vars qw($VERSION $lastcoords
             $layer @colors $colors_i @accesslog_data
 	    $do_search_route $ua $safe
             $logfile $tracking $tail_pid $bbbike_cgi);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 use URI::Escape;
 use Strassen::Core;
@@ -286,18 +286,23 @@ sub fileevent_read_line {
     }
     my $line = <FH>;
     my(@d) = parse_line($line);
-    push @accesslog_data, @d if @d;
     if (@d) {
-        push @accesslog_data, @d;
-        my $s = Strassen->new_from_data_ref(\@accesslog_data);
-	$s->write("/tmp/x.bbd");
-        main::plot("str", $layer, -draw => 1, Filename => "/tmp/x.bbd");
-        $main::str_obj{$layer} = $s; # for LayerEditor
-	my $last = $s->get($s->count-1);
-	main::mark_point
-		(-point =>  join(",", main::transpose(split /,/, $last->[Strassen::COORDS()]->[-1])),
-		 -dont_center => 1)
-		    if $last;
+	push @accesslog_data, @d;
+	eval {
+	    my $s = Strassen->new_from_data_ref(\@accesslog_data);
+	    $s->write("/tmp/x.bbd");
+	    main::plot("str", $layer, -draw => 1, Filename => "/tmp/x.bbd");
+	    $main::str_obj{$layer} = $s; # for LayerEditor
+	    my $last = $s->get($s->count-1);
+	    if ($last && $last->[Strassen::COORDS()]->[-1]) {
+		main::mark_point
+			(-point =>  join(",", main::transpose(split /,/, $last->[Strassen::COORDS()]->[-1])),
+			 -dont_center => 1);
+	    }
+	};
+	if ($@) {
+	    main::status_message($@, "warn");
+	}
     }
 }
 
@@ -347,11 +352,11 @@ sub parse_line {
 	    my %has;
 	    for my $type (qw(start via ziel)) {
 		if ($query_string =~ /${type}c=([^&; ]+)/) {
-		    if ($type =~ /(start|ziel)/) {
-			$has{$type}++;
-		    }
 		    my $coords = uri_unescape(uri_unescape($1));
 		    my $name = "$coords";
+		    if ($type =~ /(?:start|ziel)/) {
+			$has{$type}++;
+		    }
 		    if ($line =~ /${type}name=([^&; ]+)/) {
 		        $name = uri_unescape(uri_unescape($1));
 		    }
@@ -383,9 +388,10 @@ sub parse_line {
 		    warn $resp->error_as_HTML;
 		}
 	    }
-            return @bbdlines,
+            return @bbdlines;
         }
     }
+    ();
 }
 
 sub pref_statistics {

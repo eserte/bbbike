@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KDEUtil.pm,v 2.10 2003/02/09 13:04:45 eserte Exp $
+# $Id: KDEUtil.pm,v 1.4 2003/06/01 21:43:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
@@ -215,8 +215,11 @@ sub kde_dirs {
 	require Config;
 	require File::Basename;
 	my $sep = $Config::Config{'path_sep'} || ':';
+
+	my %kdedirs = $self->_find_kde_dirs_with_kde_config($writable);
+	return %kdedirs if %kdedirs;
+
 	my @path = map { File::Basename::dirname($_) } split(/$sep/o, $ENV{PATH});
-	my %kdedirs;
 	foreach my $prefix (qw(/usr/local/kde /usr/local /opt/kde),
 			    @path) {
 #	    warn "Try $prefix...\n";
@@ -225,6 +228,30 @@ sub kde_dirs {
 	}
     }
     return ();
+}
+
+sub _find_kde_dirs_with_kde_config {
+    shift;
+    my $writable = shift;
+    my %ret;
+ TYPE:
+    for my $def ([apps => "applnk"],
+		 [icon => "icons"],
+		 [mime => "mimelnk"],
+		 [exe  => "bin"],
+		 [html => "doc"],
+		 [config => "config"],
+		) {
+	my($new_name, $old_name) = @$def;
+	my(@path) = split /:/, `kde-config --expandvars --path $new_name`;
+	for my $path (@path) {
+	    next if (!-e $path || !-d $path);
+	    next if $writable && !-w $path;
+	    $ret{"-$old_name"} = $path;
+	    next TYPE;
+	}
+    }
+    %ret;
 }
 
 sub _find_kde_dirs {

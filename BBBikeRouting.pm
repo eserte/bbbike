@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.20 2003/01/08 20:00:01 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.4 2003/06/01 21:43:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001 Slaven Rezic. All rights reserved.
@@ -35,11 +35,15 @@ struct('BBBikeRouting::Context' => {Vehicle => "\$", Scope => "\$",
 				    CGI => "\$", BrowserInfo => "\$",
 				    RouteInfoKm => "\$",
 				    Verbose => "\$",
+				    MultipleChoices => "\$",
 				   });
 struct('BBBikeRouting' => {Context => "BBBikeRouting::Context",
 			   Start => "BBBikeRouting::Position",
+			   StartChoices => "\$", # array of BBBikeRouting::Position
 			   Via => "\$", # array of BBBikeRouting::Position
+			   ViaChoices => "\$", # XXX not used yet
 			   Goal => "BBBikeRouting::Position",
+			   GoalChoices => "\$", # array of BBBikeRouting::Position
 			   Dataset => "\$",
   			   Streets => "\$", ZIP => "\$",
   			   ZIPStreets => "\$", Net => "\$",
@@ -73,7 +77,9 @@ sub init_context {
     my $context = BBBikeRouting::Context->new;
     $self->Context($context);
     $self->Start(BBBikeRouting::Position->new);
+    $self->StartChoices([]);
     $self->Goal(BBBikeRouting::Position->new);
+    $self->GoalChoices([]);
     require Strassen::Dataset;
     $self->Dataset(Strassen::Dataset->new); # XXX arguments?
     $context->Vehicle("bike");
@@ -84,6 +90,7 @@ sub init_context {
     $context->UseCache(1);
     $context->Algorithm("C-A*");
     $context->RouteInfoKm(1);
+    $context->MultipleChoices(1);
     $self;
 }
 
@@ -243,9 +250,12 @@ foreach (qw(Start Goal)) {
     eval $c;
 }
 
+# A return value of undef means multiple matches or no match. Please look
+# into $self->...Choices.
 sub resolve_position {
     my $self = shift;
     my $pos_o = shift;
+    my $choices_o = shift;
     my $street = shift || $pos_o->Street;
     my $citypart = shift || $pos_o->Citypart;
     my(%args) = @_;
@@ -316,7 +326,7 @@ sub resolve_position {
 
     if ($context->Scope eq 'city') {
 	$self->init_zip;
-	my $return_multiple = 0; # XXX
+	my $return_multiple = $context->MultipleChoices;
 	my(@from_res) = $self->ZIP->look_loop_best
 	    (PLZ::split_street($street),
 	     MultiZIP => !$return_multiple,
@@ -325,13 +335,30 @@ sub resolve_position {
 	     (defined $citypart ? (Citypart => $citypart) : ()),
 	     ($context->ZIPLookArgs ? @{ $context->ZIPLookArgs } : ()),
 	    );
+
+	if (@{ $from_res[0] }) {
+	    # remove entries without coord
+	    for(my $i = 0; $i <= $#{ $from_res[0] }; $i++) {
+		if (!$from_res[0]->[$i][PLZ::LOOK_COORD()]) {
+		    splice @{ $from_res[0] }, $i, 1;
+		    $i--;
+		}
+	    }
+	}
+
 	return undef if (!@{ $from_res[0] });
 
-	#XXX
-	#      $multi_from = @{ $from_res[0] } > 1;
-	#      if ($return_multiple && $multi_from) {
-	#  	return $from_res[0];
-	#      }
+	if (@{ $from_res[0] } > 1 && $context->MultipleChoices) {
+	    @$choices_o = ();
+	    for (@{ $from_res[0] }) {
+		my $new_pos = BBBikeRouting::Position->new;
+		$new_pos->Street  ($_->[PLZ::LOOK_NAME()]);
+		$new_pos->Citypart($_->[PLZ::LOOK_CITYPART()]);
+		$new_pos->Coord   ($_->[PLZ::LOOK_COORD()]);
+		push @$choices_o, $new_pos;
+	    }
+	    return undef;
+	}
 
 	my $from_data = $from_res[0]->[0];
 	$pos_o->Street  ($from_data->[PLZ::LOOK_NAME()]);
@@ -356,7 +383,9 @@ sub get_position {
     my $self = shift;
     my $type = ucfirst(shift); # start or goal
     my $pos_o = $self->$type();
-    $self->resolve_position($pos_o);
+    my $choices = $type . "Choices";
+    my $choices_o = $self->$choices();
+    $self->resolve_position($pos_o, $choices_o);
 }
 
 sub fix_position {

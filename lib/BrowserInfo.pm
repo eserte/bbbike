@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.31 2003/05/09 04:01:05 eserte Exp $
+# $Id: BrowserInfo.pm,v 1.4 2003/06/01 21:43:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2001 Slaven Rezic. All rights reserved.
@@ -97,10 +97,19 @@ sub set_info {
 			      );
     $self->{'wap_browser'} = ($q->user_agent('sie-c3i') ||
 			      $q->user_agent('sie-s35') ||
+			      $q->user_agent('SIE_S55') ||
                               $q->user_agent('nokia-wap-toolkit') ||
 			      $q->user_agent('Nokia7110') ||
 			      $q->user_agent('Nokia6210') ||
 			      $q->user_agent('Nokia6250') ||
+			      $q->user_agent('Nokia3510i') ||
+			      $q->user_agent('Nokia6100') ||
+			      $q->user_agent('Nokia3650') ||
+			      $q->user_agent('Nokia7650') ||
+			      $q->user_agent('SEC_SGHV200') ||
+			      $q->user_agent('SonyEricssonP800') ||
+			      $q->user_agent('SonyEricssonT68') ||
+			      $q->user_agent('SonyEricssonT300') ||
 			      (defined $ENV{HTTP_ACCEPT} &&
 			       $ENV{HTTP_ACCEPT} =~ /vnd.wap.wml/i &&
 			       $ENV{HTTP_ACCEPT} !~ /text\/html/i)
@@ -114,13 +123,68 @@ sub set_info {
 				$self->{'wap_browser'});
 
     # display size without permanent footers etc.
-    if ($q->user_agent('Nokia7110')) {
-	$self->{'display_size'} = [95,65-20]; # ?
-    } elsif ($q->user_agent('Nokia6210') ||
-	     $q->user_agent('Nokia6250')) {
-	$self->{'display_size'} = [95,60-20]; # ?
-    } elsif ($q->user_agent('nokia-wap-toolkit')) {
+    if ($q->user_agent('nokia-wap-toolkit')) {
 	$self->{'display_size'} = [80,60-20]; # ???
+    } elsif ($q->user_agent('MotorolaT720')) { # XXX
+	$self->{'display_size'} = [120,160];
+    } elsif ($q->user_agent('PanasonicEB-GD87')) { # XXX
+	$self->{'display_size'} = [132,176];
+    } elsif ($q->user_agent('PanasonicGD67')) { # XXX
+	$self->{'display_size'} = [101,80];
+    } elsif ($q->user_agent('PanasonicGD87')) { # XXX
+	$self->{'display_size'} = [132,176];
+    } elsif ($q->user_agent('PhilipsFisio820')) { # XXX
+	$self->{'display_size'} = [112,112];
+    } elsif ($q->user_agent('SagemMyx5')) { # XXX
+	$self->{'display_size'} = [101,80];
+    } elsif ($q->user_agent('SamsungSGH-S200') ||
+	     $q->user_agent('SamsungSGH-T100')) { # XXX
+	$self->{'display_size'} = [128,144];
+    } elsif ($q->user_agent('SHARP-TQ-GX10')) {
+	$self->{'display_size'} = [120,160];
+    } elsif ($q->user_agent('SonyEricssonT300')) {
+	$self->{'display_size'} = [101,101];
+    } elsif ($q->user_agent('SonyEricssonT68i') ||
+	     $q->user_agent('SonyEricssonT68ie')) {
+	$self->{'display_size'} = [101,80];
+    } elsif ($q->user_agent('SonyEricssonP800')) {
+	$self->{'display_size'} = [208,320]; # flip open, with flip closed: 208x144
+    } elsif ($q->user_agent('TriumEclipse')) { # XXX
+	$self->{'display_size'} = [143,120];
+    } elsif ($q->user_agent('Trium320') ||
+	     $q->user_agent('Trium630')) { # XXX
+	$self->{'display_size'} = [128,141];
+    } elsif ($q->user_agent('Nokia')) {
+	my %nokias =
+	    (
+	     Nokia3310 => [84, 84],
+	     Nokia3330 => [84, 84],
+	     Nokia6090 => [84, 84],
+	     Nokia6210 => [96, 60],
+	     Nokia6250 => [96, 60],
+	     Nokia8210 => [84, 48],
+	     Nokia8850 => [84, 48],
+	     Nokia8890 => [84, 48],
+	     Nokia9210 => [84, 48],
+	     Nokia8310 => [84, 48],
+	     Nokia6510 => [96, 65],
+	     Nokia5510 => [84, 48],
+	     Nokia5210 => [84, 48],
+	     Nokia6310 => [96, 65],
+	     Nokia7110 => [96, 65],
+	     Nokia6610 => [128, 128],
+	     Nokia7650 => [176, 208],
+	    );
+    TRY: {
+	    while(my($k,$v) = each %nokias) {
+		if ($q->user_agent($k)) {
+		    $self->{display_size} = $v;
+		    last TRY;
+		}
+	    }
+	    warn "Fallback for unknown Nokia phone " . $q->user_agent;
+	    $self->{display_size} = [84, 49]; # fallback to smallest...
+	}
     } elsif ($self->{'wap_browser'}) {
 	$self->{'display_size'} = [80,60-20]; # ???
     } else {
@@ -300,6 +364,7 @@ EOF
     $out .= " CSS:                " . (!!$self->{'can_css'}) . "\n";
     $out .= " DHTML:              " . (!!$self->{'can_dhtml'}) . "\n";
     $out .= " Tables:             " . (!!$self->{'can_table'}) . "\n";
+    $out .= " Display size        " . join("x", @{$self->{display_size}}) . "\n";
     $out .= "\nBugs:\n";
     $out .= " Window.open:        " . (!!$self->{'window_open_buggy'}) . "\n";
     $out .= " DHTML:              " . (!!$self->{'dhtml_buggy'}) . "\n";
@@ -337,6 +402,7 @@ Javascript:         @{[ (!!$self->{'can_javascript'}) ]}<br/>
 CSS:                @{[ (!!$self->{'can_css'}) ]}<br/>
 DHTML:              @{[ (!!$self->{'can_dhtml'}) ]}<br/>
 Tables:             @{[ (!!$self->{'can_table'}) ]}<br/>
+Display size        @{[ join("x", @{$self->{display_size}}) ]}<br/>
 <br/>Bugs:<br/>
 Window.open:        @{[ (!!$self->{'window_open_buggy'}) ]}<br/>
 DHTML:              @{[ (!!$self->{'dhtml_buggy'}) ]}<br/>

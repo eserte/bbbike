@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.24 2003/05/30 07:56:59 eserte Exp eserte $
+# $Id: bbbike.cgi,v 1.4 2003/06/01 21:43:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -20,6 +20,7 @@ bbbike.cgi - CGI interface to bbbike
 =cut
 
 use vars qw(@extra_libs);
+BEGIN { delete $INC{"FindBin.pm"} }
 use FindBin;
 BEGIN {
     if ($ENV{SERVER_NAME} =~ /(radzeit\.de|radzeit.herceg.de)$/) {
@@ -635,7 +636,7 @@ use vars qw(@ISA);
 
 } # jetzt beginnt wieder package main
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.24 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -803,7 +804,8 @@ while (1) {
     # neu festgestellt werden
     user_agent_info() unless $use_miniserver;
 
-    if ($bi->{'wap_browser'}) {
+    # XXX Do not do it automatically ...
+    if (0 && $bi->{'wap_browser'}) {
         exec("./wapbbbike.cgi", @ARGV);
 	warn "exec failed, try redirect...";
 	print $q->redirect($WAP_URL || $BBBike::BBBIKE_WAP);
