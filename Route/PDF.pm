@@ -44,6 +44,7 @@ sub new_pdf {
 	die "Either -filename or -fh are necessary";
     }
     require PDF::Create;
+    PDF::Create->VERSION(0.06);
     my $pdf = PDF::Create->new
 	((defined $filename ?
 	  ('filename' => $filename) :
@@ -95,6 +96,7 @@ sub output {
     for my $line (@lines) {
 	my $col_i = 0;
 	for my $col (@$line) {
+	    $col = "" if !defined $col;
 	    my $font = ($col_i == 2 ? $bold_font : $font);
 	    my $this_width = $page->string_width($font, $col)*$font_size;
 	    if (!defined $max_width[$col_i] || $max_width[$col_i] < $this_width) {
@@ -111,6 +113,7 @@ sub output {
 	my $x = $start_x;
 	my $col_i = 0;
 	for my $col (@$line) {
+	    $col = "" if !defined $col;
 	    my $font = ($col_i == 2 ? $bold_font : $font);
 	    my $width = $page->string_width($font, $col)*$font_size;
 	    if ($x + $width > $page_width-30) {
