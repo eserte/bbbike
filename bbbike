@@ -381,12 +381,6 @@ $map_default_type = 'berlinmap';
 $use_map_fallback = 1;
 $map_surround = 0;
 $dont_delete_map = 1;
-#XXX del: $str_file = "strassen";
-#XXX del: $landstr_file = "landstrassen";
-#XXX del: $wasser_file = "wasserstrassen";
-#XXX del: $flaechen_file = "flaechen";
-#XXX del: $plz_file = "plz";
-#XXX del: $border_file = "berlin";
 $use_current_coord_prefix = 0;
 $coord_prefix = undef;
 $coordlist_lbox_nl = "";
@@ -2306,6 +2300,7 @@ sub do_iconframe {
 	$fragezeichen_check_index = $strcm->index('last');
     }
     if ($advanced) {
+#XXXXXXXXXXXXXXXXX
 	$strcm->checkbutton(-label => M"Kommentare",
 			    -variable => \$str_draw{'comm'},
 			    -command => sub { plot('str','comm') },
@@ -2313,16 +2308,7 @@ sub do_iconframe {
 	$strcm->checkbutton
 	    (-label => M"Steigungen",
 	     -variable => \$str_draw{'mount'},
-	     -command => sub {
-		 my $mount;
-		 if ($str_draw{'mount'}) {
-		     my $comm = Strassen->new("comments_mount");
-		     my $comm_mount = Strassen->new_copy_restricted($comm, -grep => ["St;"]);
-		     $mount = MultiStrassen->new($str_file{"mount"},
-						 $comm_mount);
-		 }
-		 plot('str','mount', -object => $mount);
-	     },
+	     -command => \&plot_mount,
 	    );
     }
     menu_entry_up_down($strcm, $tag_group{'str_s'});
@@ -7838,10 +7824,10 @@ sub plot_layer {
     fix_stack_order($abk);
     if ($type eq 'p') {
 	$p_draw{$abk} = 1;
-	$p_file{$abk} = $file;
+	$p_file{$abk} = $file if defined $file;
     } else {
 	$str_draw{$abk} = 1;
-	$str_file{$abk} = $file;
+	$str_file{$abk} = $file if defined $file;
     }
     plot($type, $abk, %args);
     $abk;
@@ -7912,7 +7898,8 @@ sub plotstr {
 	}
     } else {
 	$str = delete $args{-object};
-	delete $str_file{$abk}; # XXX -orig?
+#XXX this seems to be wrong!
+#XXX del	delete $str_file{$abk}; # XXX -orig?
     }
 
     if (defined $filename && -e "$filename.desc") {
@@ -8282,6 +8269,18 @@ sub outline_text {
 		   -tags => [@$tags, 'outlmaster', 'outlmaster-'.$outline_i,
 			     "outlmaster-width-$outline_width"],
 		   %args);
+}
+
+### AutoLoad Sub
+sub plot_mount {
+    my $mount;
+    if ($str_draw{'mount'}) {
+	my $comm = Strassen->new("comments_mount");
+	my $comm_mount = Strassen->new_copy_restricted($comm, -grep => ["St;"]);
+	$mount = MultiStrassen->new($str_file{"mount"},
+				    $comm_mount);
+    }
+    plot('str','mount', -object => $mount);
 }
 
 # Zeichnet gesperrte Straßen und Einbahnstraßen.

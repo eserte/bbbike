@@ -1,4 +1,4 @@
-# $Id: comments_path-orig,v 2.1 2004/05/02 17:48:11 eserte Exp eserte $
+# $Id: comments_path-orig,v 2.2 2004/05/11 21:03:24 eserte Exp $
 # CP; : Kommentar an Punkt B bei Fahrt von A nach C
 # CP  : wie "CP;", Kommentar gültig für beide Fahrtrichtungen
 # CS; : Kommentar gültig für Strecke in einer Richtung
@@ -63,8 +63,8 @@ Klingelhöferstr. - Köbisstr.: bereits an der Ampel Stülerstr./Tiergartenstr. die
 Blissestr. - Am Volkspark: bereits an der Ampel Mecklenburgische Str. auf die linke Seite wechseln	PI; 4783,8557 4784,8508 4960,8440
 # Die verlorene Zeit entspricht etwa 150m bei 15 km/h
 # XXX Die verlorene Zeit wird noch nicht in Suche und Zeitberechnung berücksichtigt!
-Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (rechts) benutzen	PI;:35 5320,8456 5444,8406 5669,8207
-Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (links) benutzen	PI;:35 5669,8207 5444,8406 5320,8456
+Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (rechts) benutzen	PI:35; 5320,8456 5444,8406 5669,8207
+Am Volkspark: zum Überqueren der Bundesallee Ampel an der Hildegarstr. (links) benutzen	PI:35; 5669,8207 5444,8406 5320,8456
 Lietzenburger Str. - Rankestr.: bereits an der Ampel Joachimstaler Str. auf den linken Gehweg wechseln	PI; 5468,10442 5529,10453 5636,10626
 nach *links* abbiegen	CP; 3619,14183 3600,14278 4676,14534
 nach *rechts* zur Rampe abbiegen	CP; 4676,14534 3600,14278 3619,14183
