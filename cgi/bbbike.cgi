@@ -1,4 +1,6 @@
 #!/usr/bin/env perl
+## Use this shebang on cs.tu-berlin.de:
+#!/usr/perl5/5.00503/bin/perl
 #!/usr/local/bin/perl
 # -*- perl -*-
 
@@ -4054,9 +4056,10 @@ sub start_weather_proc {
 		if (defined $weather_pid and $weather_pid == 0) {
 		    eval {
 			require File::Spec;
-			open STDIN, File::Spec->devnull;
-			open STDOUT, '>' . File::Spec->devnull;
-			open(STDERR, '>' . File::Spec->devnull);
+			my $devnull = File::Spec->can("devnull") ? File::Spec->devnull : "/dev/null";
+			open STDIN, $devnull;
+			open STDOUT, '>' . $devnull;
+			open(STDERR, '>' . $devnull);
 			require POSIX;
 			# Can't use `exists' (for 5.00503 compat):
 			POSIX::setsid() if defined &POSIX::setsid;
@@ -4190,6 +4193,12 @@ sub header {
     } else {
 	print $q->start_html;
 	print "<h1>BBBike</h1>";
+    }
+
+    if ($ENV{SERVER_NAME} =~ /cs\.tu-berlin\.de/ &&
+	open(U, "$FindBin::RealBin/bbbike-umzug.html")) {
+	while(<U>) { print }
+	close U;
     }
 }
 
