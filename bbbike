@@ -1175,7 +1175,7 @@ eval {
 change_net_type();
 
 if ($do_wwwmap && $devel_host) {
-    $map_default_type = 'b2003';
+    $map_default_type = 'b2004';
 }
 
 if ($all_outline) {
@@ -15305,7 +15305,7 @@ sub show_logo { # und About
 	     "(File Rev $PROG_REVISION)\n\n" .
 	     M("Ein Informationssystem für\n" .
 	       "Radfahrer in Berlin\n\n") .
-	     "© 1995-2003 Slaven Rezic",
+	     "© 1995-2004 Slaven Rezic",
 	     -font => $font{'bold'},
 	     -padx => 5,
 	     -pady => 0,
