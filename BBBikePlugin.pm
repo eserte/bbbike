@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePlugin.pm,v 1.6 2003/07/22 23:25:41 eserte Exp $
+# $Id: BBBikePlugin.pm,v 1.6 2003/07/22 23:25:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -58,9 +58,22 @@ sub find_all_plugins {
 	}
 	my $lb = $t->Scrolled("Listbox", -scrollbars => "osoe")->pack(-fill => "both", -expand => 1);
 	$lb->insert("end", map { $_->Name } @p);
+	my $prevent_double;
+	my $prevent_double_after;
+	my $prevent_double_index;
 	$lb->bind("<1>" => sub {
 		      my $cur = $lb->curselection;
 		      if (defined $cur) {
+			  if ($prevent_double && $prevent_double_index eq $cur) {
+			      return;
+			  }
+			  $prevent_double = 1;
+			  $prevent_double_index = $cur;
+			  $lb->afterCancel($prevent_double_after);
+			  $prevent_double_after =
+			      $lb->after(500, sub {
+					     $prevent_double = 0;
+					 });
 			  main::load_plugin($p[$cur]->File);
 		      }
 		  });
@@ -136,15 +149,36 @@ sub _find_all_plugins_unix {
 }
 
 sub place_menu_button {
-    my($frame, $menuitems, $refwidget) = @_;
+    my($frame, $menuitems, $refwidget, $advertised_name) = @_;
     $refwidget->idletasks;    # XXX idletasks needed?
     my($x,$width) = ($refwidget->x, $refwidget->width);
     # If $refwidget is not yet mapped:
     if ($width <= 1) { $width = $refwidget->reqwidth }
+    my $old_w = $frame->Subwidget($advertised_name);
+    undef $old_w if !Tk::Exists($old_w);
     my $menubutton = $frame->Menubutton;
     my $menu = $menubutton->Menu(-menuitems => $menuitems);
     main::menuarrow_unmanaged($menubutton, $menu);
+    if ($old_w) {
+	$old_w->destroy;
+    }
     $menubutton->place(-x => $x, -y => 0, -width => $width);
+    $frame->Advertise($advertised_name => $menubutton);
+}
+
+sub replace_plugin_widget {
+    my($parent, $widget, $advertised_name) = @_;
+
+    my $old_w = $parent->Subwidget($advertised_name);
+    undef $old_w if !Tk::Exists($old_w);
+
+    if ($old_w) {
+	$widget->pack(-after => $old_w, -side => "left", -anchor => 'sw');
+	$old_w->destroy;
+    } else {
+	$widget->pack(-side => "left", -anchor => 'sw');
+    }
+    $parent->Advertise($advertised_name => $widget);
 }
 
 1;

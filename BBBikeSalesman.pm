@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeSalesman.pm,v 1.7 2003/06/02 23:16:31 eserte Exp $
+# $Id: BBBikeSalesman.pm,v 1.7 2003/06/02 23:16:31 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -82,8 +82,9 @@ sub add_button {
 	 -variable => \$main::map_mode,
 	 -value => __PACKAGE__,
 	 -command => \&main::set_map_mode,
-	)->pack(-side => "left", -anchor => 'sw');
-    $mf->Advertise(__PACKAGE__ . '_on' => $salesman_check);
+	);
+    BBBikePlugin::replace_plugin_widget($mf, $salesman_check,
+					__PACKAGE__ . '_on');
     $main::balloon->attach($salesman_check, -msg => M"Kürzeste Rundreise")
 	if $main::balloon;
     $main::ch->attach($salesman_check, -pod => "^\\s*Salesman-Symbol");

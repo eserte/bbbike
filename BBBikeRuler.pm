@@ -110,7 +110,8 @@ sub add_button {
 	(main::image_or_text($button_image, 'Ruler'),
 	 -variable => \$main::map_mode,
 	 -value => __PACKAGE__,
-	 -command => \&main::set_map_mode)->pack(-side => "left", -anchor => 'sw');
+	 -command => \&main::set_map_mode);
+    BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_on');
     $main::balloon->attach($b, -msg => "Ruler")
 	if $main::balloon;
 
@@ -123,6 +124,7 @@ sub add_button {
 	       -variable => \$gpsman_tracks],
 	     ],
 	     $b,
+	     __PACKAGE__."_menu",
 	    );
 }
 

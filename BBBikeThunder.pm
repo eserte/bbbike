@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeThunder.pm,v 1.9 2003/05/06 06:18:04 eserte Exp $
+# $Id: BBBikeThunder.pm,v 1.9 2003/05/06 06:18:04 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -108,7 +108,8 @@ sub add_button {
 	     $main::map_mode_deactivate->() if $main::map_mode_deactivate;
 	     activate();
 	     $main::map_mode_deactivate = \&deactivate;
-	 })->pack(-side => "left", -anchor => 'sw');
+	 });
+    BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_on');
     $main::balloon->attach($b, -msg => "Lightning/Thunder")
 	if $main::balloon;
 
@@ -117,6 +118,7 @@ sub add_button {
 	     [[Button => "~Reset", -command => sub { thunder_reset() }],
 	     ],
 	     $b,
+	     __PACKAGE__."_menu",
 	    );
 }
 

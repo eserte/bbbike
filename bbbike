@@ -972,7 +972,7 @@ die "Please report to author: use opttable_to_getopt!!!! XXX";
     $opt->process_options;
 }
 
-# XXX generalise and move to Tk::Getopt!
+# Check for -public option --- in this case do not load the config file.
 sub pre_check_arguments {
     foreach my $arg (@ARGV) {
 	if ($arg eq '-public') {
@@ -1069,7 +1069,6 @@ update_weather(1) if $want_wind;
 $wetter_route_update = 1;
 
 if ($bikepwr) {
-    warn M("Versuche, BikePower zu laden...\n") if $verbose;
     eval {
 	require BikePower;
     };
@@ -1824,6 +1823,12 @@ foreach (['uptodate' => M"aktuellste"],
 	 ['dahlem2'],
 	 ['dahlem1'],
 	 #['tempelhof'],
+	 ($advanced
+	  ? map { ["synop_$_" => "$_ (Synop)"] }
+	  qw(potsdam berlin_dahlem berlin_tegel
+	     berlin_tempelhof berlin_schoenefeld berlin_alexanderplatz)
+	  : ()
+	 )
 	) {
     my $name = $_->[1];
     if (!defined $name) {

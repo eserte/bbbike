@@ -149,8 +149,9 @@ sub BBBikeHeavy::load_plugin {
     }
     eval $mod.'::register(@plugin_args)';
     if ($@) {
-	status_message(Mfmt("Das Plugin %s konnte nicht registriert werden. Grund: %s", $mod, $@), "error");
-	warn $@;
+	my $err = $@;
+	status_message(Mfmt("Das Plugin %s konnte nicht registriert werden. Grund: %s", $mod, $err), "error");
+	warn $err;
 	return;
     }
 }

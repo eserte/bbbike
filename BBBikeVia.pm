@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVia.pm,v 1.9 2003/07/27 21:01:19 eserte Exp $
+# $Id: BBBikeVia.pm,v 1.9 2003/07/27 21:01:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -143,7 +143,7 @@ sub BBBikeVia::move_via {
     for (qw(start via ziel)) {
 	$c->bind($_."flag", "<ButtonPress-1>" => [\&BBBikeVia::move_via_2, $_]);
     }
-    status_message(M"Zu verschiebendes Via w‰hlen", "info");
+    status_message(M"Zu verschiebendes Via bzw. Start oder Ziel w‰hlen", "info");
 }
 
 sub BBBikeVia::move_via_2 {
@@ -167,11 +167,14 @@ sub BBBikeVia::move_via_2 {
 
 sub BBBikeVia::move_via_action {
     my $coord = set_coords($c);
-    warn $coord; # XXX
-    $search_route_points[$BBBikeVia::move_index]->[SRP_COORD] = $coord;
-
-    re_search();
-    BBBikeVia::move_via_cont();
+    if (!defined $coord) {
+	status_message(M("Punkt muss auf einer Straﬂe liegen"), "info");
+	# do not change status
+    } else {
+	$search_route_points[$BBBikeVia::move_index]->[SRP_COORD] = $coord;
+	re_search();
+	BBBikeVia::move_via_cont();
+    }
 }
 
 sub BBBikeVia::move_via_cont {
@@ -197,8 +200,14 @@ sub BBBikeVia::add_via {
 }
 
 sub BBBikeVia::add_via_2 {
+    my $coord = set_coords($c);
+    if (!defined $coord) {
+	status_message(M("Punkt muss auf einer Straﬂe liegen"), "info");
+	# do not change status
+	return;
+    }
     delete $set_route_point{$map_mode};
-    $BBBikeVia::add_point = set_coords($c);
+    $BBBikeVia::add_point = $coord;
 
     if (@search_route_points == 2) {
 	splice @search_route_points,

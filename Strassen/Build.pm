@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Build.pm,v 1.12 2003/08/14 22:30:25 eserte Exp $
+# $Id: Build.pm,v 1.13 2003/08/19 23:00:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::Build;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz::CNetFile;
 
@@ -73,6 +73,15 @@ sub create_mmap_net {
     # XXX these values are only for intel platforms valid!
     use constant LENGTH_HEADER => SIZEOF_LONG*3; # three longs for x, y, number of succ
     use constant LENGTH_SUCC   => SIZEOF_LONG*2; # two longs for pointer and distance
+    # XXX this will go away ...
+    require Config;
+    if ($Config::Config{"byteorder"} ne "1234" &&
+	$Config::Config{"byteorder"} ne "12345678") {
+	warn "*"x70,"\n";
+	warn "* This will only work on little endian machines!\n";
+	warn "*"x70,"\n";
+	warn "See";
+    }
 
     warn "First pass: calculate structs and create \$coord2ptr Hash...\n"
 	if $VERBOSE;
@@ -126,6 +135,7 @@ sub create_mmap_net_if_needed {
 	}
 	push @depend_files, $blocked->file;
     }
+    warn "Dependent files for mmap creation: @depend_files\n" if $VERBOSE;
     my $doit = 0;
     if (   !-e $self->{Strassen}->{File}
 	|| !Strassen::Util::valid_cache($self->get_cachefile . "_coord2ptr",

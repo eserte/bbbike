@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeScribblePlugin.pm,v 1.4 2003/01/08 20:00:43 eserte Exp $
+# $Id: BBBikeScribblePlugin.pm,v 1.4 2003/01/08 20:00:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -81,8 +81,8 @@ sub add_button {
 	 -variable => \$main::map_mode,
 	 -value => main::MM_SCRIBBLE(),
 	 -command => \&main::set_map_mode,
-	)->pack(-side => "left", -anchor => 'sw');
-    $mf->Advertise(__PACKAGE__ . '_on' => $b);
+	);
+    BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_on');
     $main::balloon->attach($b, -msg => "Zeichnen")
 	if $main::balloon;
 #    $main::ch->attach($b, -pod => "^\\s*Salesman-Symbol");
@@ -100,6 +100,7 @@ sub add_button {
 	      [Button => "~Save Scribble", -command => \&Tk::Babybike::save_scribble],
 	     ],
 	     $b,
+	     __PACKAGE__."_menu",
 	    );
 
 }

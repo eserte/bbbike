@@ -1,0 +1,206 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: get_and_store_synop,v 1.6 2003/08/19 20:49:19 eserte Exp eserte $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven.rezic@berlin.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+#  für Tempelhof (10384):
+
+#  http://131.54.133.44/cgi-bin/ProductSearch.cgi?current=0&fmt=ll&form=20&frame=_top&prdid=AC&T=l&sub=S&icao=10384
+
+#  SMDL10 KAWN 260000 RRA
+#  AAXX 26001
+#  10384 32983 13401 10121 20102 30171 40231 52002 80001 333 30///
+#        55300 81076
+
+use strict;
+
+# for user.cs.tu-berlin.de:
+$ENV{PATH} = "/usr/perl/bin:/usr/perl/5/bin:$ENV{PATH}";
+
+my $store_dir = "/home/e/eserte/doc/met/synop";
+
+my %stations = (
+		#10378 => 'potsdam_sor', # not available at 131.54.133.44
+		10379 => 'potsdam',
+		10381 => 'berlin_dahlem',
+		10382 => 'berlin_tegel',
+		10384 => 'berlin_tempelhof',
+		10385 => 'berlin_schoenefeld',
+		10389 => 'berlin_alexanderplatz',
+	       );
+
+my $has_getopt_long = 1;
+eval 'require Getopt::Long; 1;';
+if ($@) {
+    $has_getopt_long = 0;
+}
+if (@ARGV) {
+    if (!$has_getopt_long) {
+	die "Getopt::Long is not available";
+    }
+    my $station;
+    my $getlast;
+    Getopt::Long::GetOptions("station=s" => \$station,
+			     "getlast!" => \$getlast,
+			    ) or die "usage!";
+
+    if (!defined $station) {
+	die "-station is missing";
+    }
+
+    if (!exists $stations{$station}) {
+	my %station_to_code = reverse %stations;
+	my $orig_station = $station;
+	$station = $station_to_code{$station};
+	if (!defined $station) {
+	    die "Can't get station code for $orig_station";
+	}
+    }
+
+    if ($getlast) {
+	my $ret = get_last_from_file($station);
+	if (defined $ret) {
+	    print $ret;
+	    exit 0;
+	} else {
+	    exit 1;
+	}
+    } else {
+	my $ret = get_synop($station);
+	if ($ret && defined $ret->{synop} && $ret->{synop} ne "") {
+	    print "# $ret->{real_time}\n";
+	    print $ret->{synop};
+	    exit 0;
+	} else {
+	    exit 1;
+	}
+    }
+}
+
+STATION:
+while(my($station_code, $station_name) = each %stations) {
+    warn "Trying station $station_name...\n";
+    my $store_file = "$store_dir/synop_$station_name";
+
+    my $result = get_synop($station_code);
+
+    my($real_time, $synop, $station_code, $html)
+	= @$result{qw(real_time synop station_code html)};
+
+    if (!defined $synop || $synop eq '') {
+	warn "No synop found for $station_name in $html";
+	next STATION;
+    }
+
+    if (-e $store_file) {
+	my(@last_lines) = split /\n/, `tail -20 $store_file`;
+	foreach (reverse @last_lines) {
+	    my($last_time) = $_ =~ /^\#(.*)/;
+	    if (defined $last_time && $last_time eq $real_time) {
+		warn "No change, last line: $_, this synop: $synop";
+		next STATION;
+	    }
+	}
+    }
+
+    if (!open(STORE, ">>$store_file")) {
+	warn "Can't write to $store_file: $!";
+	next STATION;
+    } else {
+	print STORE "#$real_time\n";
+	print STORE "$synop\n";
+	close STORE;
+    }
+}
+
+sub get_last_from_file {
+    my $station_code = shift;
+    my $station_name = $stations{$station_code};
+    my $store_file = "$store_dir/synop_$station_name";
+    my(@last_lines) = split /\n/, `tail -20 $store_file`;
+    @last_lines = reverse @last_lines;
+    for my $i (0 .. $#last_lines) {
+	if ($last_lines[$i] =~ /^\#(.*)/) {
+	    return join("\n", reverse @last_lines[0..$i]) . "\n";
+	}
+    }
+    undef;
+}
+
+sub get_synop {
+    my $station_code = shift;
+
+    my $ret = {};
+    my $html = `GET "http://131.54.133.44/cgi-bin/ProductSearch.cgi?current=0&fmt=ll&form=20&frame=_top&prdid=AC&T=l&sub=S&icao=$station_code"`;
+    #  my $html = <<EOF;
+    #  <bla>
+    #  <pre>
+    #  SNDL10 KAWN 132300 RRA
+    #  AAXX 13231
+    #  10384 42973 01301 10127 20119 30160 40219 57002 333 55300
+    #  </pre>
+    #  <bla>
+    #  EOF
+
+    my $synop = "";
+    if ($html ne '') {
+	my $pre_seen = 0;
+	foreach (split /\n/, $html) {
+	    if (/<pre>/i) {
+		$pre_seen++;
+	    } elsif ($pre_seen) {
+		if (/<\/pre>/i) {
+		    last;
+		}
+		$synop .= "$_\n";
+	    }
+	}
+    }
+
+    if (!defined $synop || $synop eq '') {
+	return;
+    }
+
+    my($time) = $synop =~ /\S+\s+\S+\s+(\S+)/;
+    my $real_time = synop_time_to_real($time);
+
+    return +{
+	     time      => $time,
+	     real_time => $real_time,
+	     synop     => $synop,
+	     html      => $html,
+	    };
+}
+
+sub synop_time_to_real {
+    my $synop_time = shift;
+    my($day,$h,$m) = $synop_time =~ /^(..)(..)(..)$/;
+    if (!defined $day) {
+	die "Can't parse synop time $synop_time";
+    }
+    my(@l) = localtime;
+    my $ld = $l[3];
+    my $lm = $l[4]+1;
+    if ($ld != $day) {
+	if ($day == 1 && $ld >= 28) {
+	    # really next month:
+	    $lm++;
+	} elsif ($ld == 1 && $day >= 28) {
+	    # really prev month;
+	    $lm--;
+	} # else this month
+    }
+    sprintf "%04d-%02d-%02d %02d:%02d", $l[5]+1900, $lm, $day, $h, $m;
+}
+
+__END__

@@ -93,8 +93,8 @@ sub add_button {
     my $b;
     $b = $mf->Label
         (-text => "Log",
-        )->pack(-side => "left", -anchor => 'sw');
-    $mf->Advertise(__PACKAGE__ . '_on' => $b);
+        );
+    BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_on');
     $main::balloon->attach($b, -msg => "LogTracker")
         if $main::balloon;
 
@@ -198,6 +198,7 @@ sub add_button {
                }],
              ],
              $b,
+	     __PACKAGE__."_menu",
             );
 }
 
