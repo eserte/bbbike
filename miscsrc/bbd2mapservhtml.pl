@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2mapservhtml.pl,v 1.3 2004/02/16 01:05:21 eserte Exp $
+# $Id: bbd2mapservhtml.pl,v 1.5 2004/03/02 23:36:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -29,6 +29,7 @@ use BBBikeVar;
 my $bbbike_url = $BBBike::BBBIKE_DIRECT_WWW;
 my $email = $BBBike::EMAIL;
 my @layers;
+my($width, $height);
 
 if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		"email=s" => \$email,
@@ -36,6 +37,9 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		    $bbbike_url = "http://www/~eserte/bbbike/cgi/bbbike.cgi";
 		},
 		'layer=s@' => \@layers,
+		'initmapext=s' => sub {
+		    ($width, $height) = split /x/, $_[1];
+		},
 	       )) {
     require Pod::Usage;
     Pod::Usage::pod2usage(2);
@@ -58,7 +62,10 @@ my @coords;
 iterate {
     push @coords, @{ $_->[Strassen::COORDS()] };
 } $s;
-my $coords = join "!", @coords; # "!" for older bbbike.cgi
+# XXX instead of int() should something like best_accuracy be used
+my $coords = join "!", map {
+    join ",", map { int } split /,/, $_
+} @coords; # "!" for older bbbike.cgi
 
 my $html = <<EOF;
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <!-- -*-html-*- -->
@@ -94,6 +101,13 @@ for my $layer (@layers) {
 EOF
 }
 
+if (defined $width && defined $height) {
+    $html .= <<EOF;
+ <input type="hidden" name="width" value="$width" />
+ <input type="hidden" name="height" value="$height" />
+EOF
+}
+
 $html .= <<EOF;
  <input id="submitbutton" type="submit" value="Zum Mapserver" />
  <script><!--
@@ -106,3 +120,16 @@ EOF
 print $html;
 
 __END__
+
+=head1 NAME
+
+bbd2mapservhtml.pl - create a mapserver route from a bbd or bbr file
+
+=head1 SYNOPSIS
+
+    bbd2mapservhtml [-bbbikeurl url] [-email email] [-[no]local]
+                    [-layer layername [-layer ...]]
+                    [-initmapext {width}x{height}] file
+
+=cut
+

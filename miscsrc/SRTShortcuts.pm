@@ -143,6 +143,9 @@ sub add_button {
 	      [Button => "Edit in normal mode (landstrassen)",
 	       -command => \&edit_in_normal_mode_landstrassen,
 	      ],
+	      [Button => "Cancel edit in normal mode",
+	       -command => \&cancel_edit_in_normal_mode,
+	      ],
 	      [Button => "Show vmz diff",
 	       -command => \&show_vmz_diff,
 	      ],
@@ -203,6 +206,7 @@ sub edit_in_normal_mode {
     my $map = "berlinmap";
     BBBikeEdit->draw_pp("strassen", -abk => "s");
     main::set_coord_output_sub($map);
+    $SRTShortcuts::force_edit_mode = 1;
 }
 
 sub edit_in_normal_mode_landstrassen {
@@ -210,6 +214,16 @@ sub edit_in_normal_mode_landstrassen {
     my $map = "brbmap";
     BBBikeEdit->draw_pp(["landstrassen", "landstrassen2"], -abk => "l");
     main::set_coord_output_sub($map);
+    $SRTShortcuts::force_edit_mode = 1;
+}
+
+sub cancel_edit_in_normal_mode {
+    require BBBikeEdit;
+    for my $abk (qw(s l)) {
+	BBBikeEdit->draw_pp(Strassen->new, -abk => $abk);
+    }
+    main::set_coord_output_sub("standard");
+    $SRTShortcuts::force_edit_mode = 0;
 }
 
 sub define_subs {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.88 2004/02/17 23:18:00 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.88 2004/02/17 23:18:00 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1438,31 +1438,6 @@ sub penalty_menu {
 
 }
 
-#XXX do not have the special case coordsys eq 'B'
-### AutoLoad Sub
-#XXX del:
-sub _XXX_insert_points_and_co {
-    my $action = shift;
-    my $oper_name = shift;
-    my $vstr = ($verbose ? " -v" : "");
-    $action = "insert_points"; # so symlinks are not necessary anymore
-    # Don't use -x --- NT reports only an executable if it have a known
-    # extension:
-    if (-e "$FindBin::RealBin/miscsrc/$action") {
-	my $cmd = "$^X $FindBin::RealBin/miscsrc/$action"
-	        . " -operation $oper_name"
-		. (!defined $edit_mode || $edit_mode eq '' ? " -noorig" : "")
-		. (-e "$datadir/.custom_files" ? " -filelist $datadir/.custom_files" : "")
-	        . ($coord_system_obj->coordsys eq 'B' ? "" : " -coordsys " . $coord_system_obj->coordsys)
-	        . " -useint" # XXX but not for polar coordinates
-	        . " -datadir $datadir -tk $vstr &";
-	warn "$cmd\n";
-	system $cmd;
-	# clear the selection
-	$top->after(2000, sub { delete_route() });
-    }
-}
-
 ### AutoLoad Sub
 sub _insert_points_and_co {
     my $action = shift;
@@ -1472,19 +1447,24 @@ sub _insert_points_and_co {
     eval {
 	require "$FindBin::RealBin/miscsrc/insert_points";
 	my @args = (-operation => $oper_name,
-		    (!defined $edit_mode || $edit_mode eq '' ? "-noorig" : ()),
 		    (-e "$datadir/.custom_files" ? (-filelist => "$datadir/.custom_files") : ()),
-		    ($coord_system_obj->coordsys eq 'B' ? () : (-coordsys => $coord_system_obj->coordsys)),
 		    "-useint", # XXX but not for polar coordinates
 		    -datadir => $datadir,
 		    "-tk",
 		    ($vstr ne "" ? $vstr : ()),
 		   );
+	if (!$SRTShortcuts::force_edit_mode) {
+	    push @args, (
+			 (!defined $edit_mode || $edit_mode eq '' ? "-noorig" : ()),
+			 ($coord_system_obj->coordsys eq 'B' ? () : (-coordsys => $coord_system_obj->coordsys)),
+			);
+	}
 	warn "@args\n";
 	BBBikeModify::process(@args);
 	# clear the selection
 	delete_route();
-    }
+    };
+    warn $@ if $@;
 }
 
 sub insert_points { _insert_points_and_co("insert_points", "insert")     }

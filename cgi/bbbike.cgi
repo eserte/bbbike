@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.62 2004/02/16 23:07:02 eserte Exp $
+# $Id: bbbike.cgi,v 6.64 2004/03/02 23:37:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -607,7 +607,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.62 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.64 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -2486,7 +2486,10 @@ sub search_coord {
 
     if (defined $output_as && $output_as eq 'palmdoc') {
 	require BBBikePalm;
-	http_header(-type => "application/x-palm-database");
+	http_header
+	    (-type => "application/x-palm-database",
+	     -Content_Disposition => "attachment; filename=route.pdb",
+	    );
 	print BBBikePalm::route2palm(-net => $net, -route => $r[0],
 				     -startname => $startname,
 				     -zielname => $zielname);
@@ -2785,16 +2788,20 @@ sub search_coord {
 		  };
 	if ($output_as eq 'perldump') {
 	    require Data::Dumper;
-	    http_header(-type => "text/plain",
-			@no_cache,
-		       );
+	    http_header
+		(-type => "text/plain",
+		 @no_cache,
+		 -Content_Disposition => "attachment; filename=route.txt",
+		);
 	    print Data::Dumper->new([$res], ['route'])->Dump;
 	} elsif ($output_as =~ /^yaml(.*)/) {
 	    my $is_short = $1 eq "-short";
 	    require YAML;
-	    http_header(-type => "text/plain", # XXX text/yaml ?
-			@no_cache,
-		       );
+	    http_header
+		(-type => "text/plain", # XXX text/yaml ?
+		 @no_cache,
+		 -Content_Disposition => "attachment; filename=route.yml",
+		);
 	    if ($is_short) {
 		my $short_res = {LongLatPath => $res->{LongLatPath}};
 		print YAML::Dump($short_res);
@@ -2803,9 +2810,11 @@ sub search_coord {
 	    }
 	} else { # xml
 	    require XML::Simple;
-	    http_header(-type => "text/xml",
-			@no_cache,
-		       );
+	    http_header
+		(-type => "text/xml",
+		 @no_cache,
+		 -Content_Disposition => "attachment; filename=route.xml",
+		);
 	    my $new_res = {};
 	    while(my($k,$v) = each %$res) {
 		if ($k eq 'Path' || $k eq 'LongLatPath') {
@@ -3062,10 +3071,11 @@ EOF
 		    $qq2->param('output_as', "palmdoc");
 		    print "&nbsp;"x10;
 		    my $href = $bbbike_script;
-		    if ($ENV{SERVER_SOFTWARE} !~ /Roxen/) {
-			# with Roxen there are mysterious overflow redirects...
-			$href .= "/route.pdb";
-		    }
+#XXX not needed anymore:
+#		    if ($ENV{SERVER_SOFTWARE} !~ /Roxen/) {
+#			# with Roxen there are mysterious overflow redirects...
+#			$href .= "/route.pdb";
+#		    }
 		    print "<a href=\"$href?" . $qq2->query_string . "\">PalmDoc</a>";
 		}
 		print "</td></tr>";
@@ -3573,6 +3583,10 @@ sub draw_route {
 		)
 	      : ()
 	     ),
+	     defined $q->param("width") ? (-width => $q->param("width")) : (),
+	     defined $q->param("height") ? (-height => $q->param("height")) : (),
+	     defined $q->param("padx") ? (-padx => $q->param("padx")) : (),
+	     defined $q->param("pady") ? (-pady => $q->param("pady")) : (),
 	    );
 	return;
     }
@@ -3584,9 +3598,11 @@ sub draw_route {
     # output is already written before calling flush
     if (defined $q->param('imagetype') &&
 	$q->param('imagetype') =~ /^pdf/) {
-	http_header(-type => "application/pdf",
-		    @header_args,
-		   );
+	http_header
+	    (-type => "application/pdf",
+	     @header_args,
+	     -Content_Disposition => "inline; filename=bbbike.pdf",
+	    );
 	if ($q->param('imagetype') =~ /^pdf-(.*)/) {
 	    $q->param('geometry', $1);
 	    $q->param('imagetype', 'pdf');
@@ -3620,9 +3636,11 @@ sub draw_route {
     }
 
     if (!$header_written && !$draw->module_handles_all_cgi) {
-	http_header(-type => $draw->mimetype,
-		    @header_args,
-		   );
+	http_header
+	    (-type => $draw->mimetype,
+	     @header_args,
+	     -Content_Disposition => "inline; filename=bbbike.".$draw->suffix,
+	    );
     }
 
     eval { $draw->pre_draw }; return if $@; # XXX use ->can instead?

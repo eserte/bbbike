@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman_split.pl,v 1.3 2004/01/24 17:40:56 eserte Exp $
+# $Id: gpsman_split.pl,v 1.4 2004/03/02 08:37:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -19,10 +19,12 @@ use File::Path;
 
 my $do;
 my $do_mark_as_inexact;
+my $do_mark_with_question;
 my $destdir = "/tmp/gpsmansplit";
 
 if (!GetOptions("bydate" => sub { $do = "by_date" },
 		"markasinexact!" => \$do_mark_as_inexact,
+		"markwithquestion!" => \$do_mark_with_question,
 		"destdir=s" => \$destdir,
 	       )) {
     usage();
@@ -47,6 +49,8 @@ if ($do eq 'by_date') {
 		$stage = "track";
 	    } elsif ($do_mark_as_inexact && /^$/) {
 		$header .= "\n% whole track marked as inexact\n\n";
+	    } elsif ($do_mark_with_question && /^$/) {
+		$header .= "\n% whole track marked with question mark\n\n";
 	    } else {
 		$header .= $_;
 	    }
@@ -66,10 +70,12 @@ if ($do eq 'by_date') {
 		    print OUT $header;
 		    print OUT $track_header;
 		    $_ = mark_as_inexact($_) if $do_mark_as_inexact;
+		    $_ = mark_with_question($_) if $do_mark_with_question;
 		    print OUT $_;
 		    $last_date = $date;
 		} else {
 		    $_ = mark_as_inexact($_) if $do_mark_as_inexact;
+		    $_ = mark_with_question($_) if $do_mark_with_question;
 		    print OUT $_;
 		}
 	    }
@@ -85,6 +91,13 @@ sub mark_as_inexact {
     my $line = shift;
     my(@f) = split /\t/, $line;
     $f[4] = "~$f[4]" unless $f[4] =~ /^~/;
+    join("\t", @f);
+}
+
+sub mark_with_question {
+    my $line = shift;
+    my(@f) = split /\t/, $line;
+    $f[4] = "?$f[4]" unless $f[4] =~ /^\?/;
     join("\t", @f);
 }
 

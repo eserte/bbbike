@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: correct_data.pl,v 1.7 2003/06/02 23:03:25 eserte Exp $
+# $Id: correct_data.pl,v 1.8 2004/03/02 21:21:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -16,6 +16,8 @@
 # TODO: pre-populate %conv (i.e. from "strassen")
 #       also convert .bbd
 #       load_conv/save_conv behaves badly for concurrent processes
+
+package BBBike::CorrectData;
 
 use FindBin;
 use lib ("$FindBin::RealBin",
@@ -34,35 +36,51 @@ use Fcntl;
 use Strassen::Util;
 use BBBikeXS;
 
-$|=1;
 my $corr_data = "$FindBin::RealBin/../misc/gps_correction_all.dat";
 my $ref_dist = "10000,20000,40000";
-my $v_output;
-my $conv_data_file;
-my $minpoints;
-
-if (!GetOptions("refdist=s" => \$ref_dist,
-		"correction=s" => \$corr_data,
-		"verboseoutput!" => \$v_output,
-		"convdata=s" => \$conv_data_file,
-		"minpoints=s" => \$minpoints,
-	       )) {
-    die "usage: $0 [-refdist dist1,dist2,...] [-correction datfile] [-verboseoutput] streetfile";
-}
-my @ref_dist = split /,/, $ref_dist;
-
-my $file = shift || "-";
-
-$SIG{INT} = sub { die "Interrupt" };
-
+use vars qw($v_output $minpoints @ref_dist);
+_init_ref_dist();
+my $file;
 my %conv;
-if ($conv_data_file) {
-    tie %conv, 'DB_File::Lock', $conv_data_file, O_RDWR|O_CREAT, 0644, $DB_HASH, "write"
+my $s;
+
+sub process {
+    local @ARGV = @_;
+    local $| = 1;
+
+    my $conv_data_file;
+
+    if (!GetOptions("refdist=s" => \$ref_dist,
+		    "correction=s" => \$corr_data,
+		    "verboseoutput!" => \$v_output,
+		    "convdata=s" => \$conv_data_file,
+		    "minpoints=s" => \$minpoints,
+		   )) {
+	die "usage: $0 [-refdist dist1,dist2,...] [-correction datfile] [-verboseoutput] streetfile";
+    }
+    _init_ref_dist();
+
+    $file = shift || "-";
+
+    local $SIG{INT} = sub { die "Interrupt" };
+
+    if ($conv_data_file) {
+	tie %conv, 'DB_File::Lock', $conv_data_file, O_RDWR|O_CREAT, 0644, $DB_HASH, "write"
 	or die "Can't tie $conv_data_file: $!";
+    }
+
+    $s = Strassen->new($file);
+    iterate {
+	my $new_coords_ref = &convert_record;
+	next if !$new_coords_ref;
+	$_->[Strassen::COORDS] = $new_coords_ref;
+	print Strassen::arr2line2($_), "\n";
+    } $s;
+
+    untie %conv;
 }
 
-my $s = Strassen->new($file);
-iterate {
+sub convert_record {
     my @new_coords;
     my $comment_printed = 0;
     my $coord_i = -1;
@@ -85,7 +103,7 @@ iterate {
 			my $ret = BBBike::Convert::process(@args);
 			my $count = delete $ret->{Count};
 			print "# $_->[Strassen::NAME], Pos=" . $s->pos . "\n"
-			    if !$comment_printed;
+			    if !$comment_printed && $s;
 			$comment_printed++;
 			print "# coord_i=$coord_i, coord=$c, refdist=$ref_dist: $count sample(s)\n"
 			    if $v_output;
@@ -102,18 +120,25 @@ iterate {
 	    };
 	    if ($@) {
 		die if ($@ =~ /interrupt/i);
-		my $msg = "# $_->[Strassen::NAME], Pos=" . $s->pos . ": cannot convert\n";
+		my $msg = "# $_->[Strassen::NAME]";
+		if ($s) { $msg .= ", Pos=" . $s->pos }
+		$msg .= " ($c): cannot convert\n";
 		print $msg if $v_output;
 		warn $msg;
 		return;
 	    }
 	}
     }
-    $_->[Strassen::COORDS] = \@new_coords;
-    print Strassen::arr2line2($_), "\n";
-} $s;
+    \@new_coords;
+}
 
-untie %conv;
+sub _init_ref_dist {
+    @ref_dist = split /,/, $ref_dist;
+}
+
+return 1 if caller;
+
+process(@ARGV);
 
 __END__
 

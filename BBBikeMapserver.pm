@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.16 2003/09/22 19:59:56 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.17 2004/03/02 23:37:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -135,7 +135,14 @@ sub start_mapserver {
     my $url = $self->{MAPSERVER_PROG_URL};
     if (!@mapext) {
 	my($width, $height) = ($args{-width}||6000, $args{-height}||6000); # meters
-	@mapext = $self->get_extents($width, $height, $args{-markerpoint});
+	my @args;
+	if (defined $args{-padx}) {
+	    push @args, -padx => $args{-padx};
+	}
+	if (defined $args{-pady}) {
+	    push @args, -pady => $args{-pady};
+	}
+	@mapext = $self->get_extents($width, $height, $args{-markerpoint}, @args);
     }
 
     my $q2 = CGI->new({});
@@ -302,7 +309,7 @@ sub create_mapfile {
 }
 
 sub get_extents {
-    my($self, $width, $height, $do_center) = @_;
+    my($self, $width, $height, $do_center, %args) = @_;
     my $center_to = $self->{CenterTo};
     if (!defined $center_to) {
 	if (!$self->{Coords} || !$self->{Coords}[0]) {
@@ -318,13 +325,13 @@ sub get_extents {
     } else {
 	my($x2,$y2) = split /,/, $self->{Coords}[-1];
 
-	my $airx = 100;
-	my $airy = 100;
+	my $padx = defined $args{-padx} ? $args{-padx} : int($width/10);
+	my $pady = defined $args{-pady} ? $args{-pady} : int($height/10);
 	my($xdelta, $ydelta) = (0, 0);
-	if ($x1-$x2 > $width/2) { $xdelta -= $width/2 - $airx }
-	if ($x2-$x1 > $width/2) { $xdelta += $width/2 - $airx }
-	if ($y1-$y2 > $height/2) { $ydelta -= $height/2 - $airy }
-	if ($y2-$y1 > $height/2) { $ydelta += $height/2 - $airy }
+	if ($x1-$x2 > $width/2) { $xdelta -= $width/2 - $padx }
+	if ($x2-$x1 > $width/2) { $xdelta += $width/2 - $padx }
+	if ($y1-$y2 > $height/2) { $ydelta -= $height/2 - $pady }
+	if ($y2-$y1 > $height/2) { $ydelta += $height/2 - $pady }
 
 	($x1 - $width/2 + $xdelta, $y1 - $height/2 + $ydelta,
 	 $x1 + $width/2 + $xdelta, $y1 + $height/2 + $ydelta,
