@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.90 2003/12/02 22:28:17 eserte Exp $
+# $Id: Makefile.PL,v 1.90 2003/12/02 22:28:17 eserte Exp eserte $
 
 BEGIN {
     $^W = 0;
@@ -297,6 +297,7 @@ WriteMakefile
 
    'ABSTRACT'     => $abstract,
    'AUTHOR'       => $author,
+   'LICENSE'	  => 'gpl',
 
    'INSTALLER'    =>
    { CONSOLE_PROGRAM        => "cbbbike",

@@ -130,9 +130,10 @@ sub set_info {
 	$self->{'display_size'} = [120,160];
     } elsif ($q->user_agent('PanasonicEB-GD87')) { # XXX
 	$self->{'display_size'} = [132,176];
-    } elsif ($q->user_agent('PanasonicGD67')) { # XXX
+    } elsif ($q->user_agent('Panasonic-GD67')) { # XXX
 	$self->{'display_size'} = [101,80];
-    } elsif ($q->user_agent('PanasonicGD87')) { # XXX
+    } elsif ($q->user_agent('Panasonic-GD87') ||
+	     $q->user_agent('Panasonic-X70')) { # XXX
 	$self->{'display_size'} = [132,176];
     } elsif ($q->user_agent('PhilipsFisio820')) { # XXX
 	$self->{'display_size'} = [112,112];
@@ -154,11 +155,15 @@ sub set_info {
 	$self->{'display_size'} = [125,95]; # visible screen size
     } elsif ($q->user_agent('TriumEclipse')) { # XXX
 	$self->{'display_size'} = [143,120];
-    } elsif ($q->user_agent('SIE-S55')) {
+    } elsif ($q->user_agent('SIE-')) { # S55, ...
 	$self->{'display_size'} = [101,80];
+    } elsif ($q->user_agent('SAMSUNG-SGH-')) { # X...,E700
+	$self->{'display_size'} = [115,100];
     } elsif ($q->user_agent('Trium320') ||
 	     $q->user_agent('Trium630')) { # XXX
 	$self->{'display_size'} = [128,141];
+    } elsif ($q->user_agent('portalmmm')) {
+	$self->{'display_size'} = [120,120]; # minimum size, newer imode devices have larger displays
     } elsif ($q->user_agent('Nokia')) {
 	my %nokias =
 	    (
@@ -178,6 +183,7 @@ sub set_info {
 	     Nokia6310 => [96, 65],
 	     Nokia7110 => [96, 65],
 	     Nokia3100 => [124, 128], # space for horiz scrollbar
+	     Nokia3200 => [124, 128], # space for horiz scrollbar
 	     Nokia6610 => [128, 128],
 	     Nokia6100 => [128, 90], # XXX ca.
 	     Nokia3650 => [170, 144], # visible size
