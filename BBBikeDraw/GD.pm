@@ -71,6 +71,7 @@ sub init {
 	    $self->{GD_Image}   = 'GD::SVG::Image';
 	    $self->{GD_Polygon} = 'GD::SVG::Polygon';
 	    $self->{GD_Font}    = 'GD::SVG::Font';
+	    $self->{GD}         = 'GD::SVG';
 
 	    package GD::SVG::Image;
             sub imageOut {
@@ -81,6 +82,7 @@ sub init {
 	    $self->{GD_Image}   = 'GD::Image';
 	    $self->{GD_Polygon} = 'GD::Polygon';
 	    $self->{GD_Font}    = 'GD::Font';
+	    $self->{GD}         = 'GD';
 	    $self->{ImageType} = 'gif' if !defined $self->{ImageType};
 #  	    if ($GD::VERSION < 1.27 && $self->{ImageType} eq 'wbmp') {
 #  	        $self->{ImageType} = 'gif';
@@ -306,7 +308,7 @@ sub draw_map {
 	        next if (!$outline_brush{$cat});
 		my $color;
 	        $im->setBrush($outline_brush{$cat});
-		$color = GD::gdBrushed();
+		$color = $self->{GD}->gdBrushed();
 		for(my $i = 0; $i < $#{$s->[1]}; $i++) {
 		    my($x1, $y1, $x2, $y2) =
 		      (@{Strassen::to_koord1($s->[1][$i])},
@@ -346,7 +348,7 @@ sub draw_map {
 		my $color;
 		if ($brush{$cat}) {
 		    $im->setBrush($brush{$cat});
-		    $color = GD::gdBrushed();
+		    $color = $self->{GD}->gdBrushed();
 		} else {
 		    $color = defined $color{$cat} ? $color{$cat} : $white;
 		}
@@ -529,7 +531,7 @@ sub draw_map {
 		    # XXX ausgefüllten Kreis zeichnen
 		    my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
 		    #$im->arc($x, $y, $xw_s, $yw_s, 0, 360, $darkgreen);
-		    $im->line($x,$y,$x,$y,GD::gdBrushed());
+		    $im->line($x,$y,$x,$y,$self->{GD}->gdBrushed());
 		    if ($do_bahnhof) {
 			my $name = $strip_bhf->($s->name);
 			if (!$seen_bahnhof{$name}) {
@@ -751,23 +753,23 @@ sub draw_route {
 	# gepunktete Routen für die WAP-Ausgabe (B/W)
 	$im->setStyle(($white)x$self->{RouteDotted},
 		      ($black)x$self->{RouteDotted});
-	$line_style = GD::gdStyled();
+	$line_style = $self->{GD}->gdStyled();
 #	$width = $width{Route};
     } elsif ($self->{RouteWidth}) {
 	# fette Routen für die WAP-Ausgabe (B/W)
 	$brush = $self->{GD_Image}->new($self->{RouteWidth}, $self->{RouteWidth});
 	$brush->colorAllocate($im->rgb($white));
 	$im->setBrush($brush);
-	$line_style = GD::gdBrushed();
+	$line_style = $self->{GD}->gdBrushed();
     } elsif ($brush{Route}) {
 	$im->setBrush($brush{Route});
-	$line_style = GD::gdBrushed();
+	$line_style = $self->{GD}->gdBrushed();
     } else {
 	# Vorschlag von Rainer Scheunemann: die Route in blau zu zeichnen,
 	# damit Rot-Grün-Blinde sie auch erkennen können. Vielleicht noch
 	# besser: rot-grün-gestrichelt
 	$im->setStyle($darkblue, $darkblue, $darkblue, $red, $red, $red);
-	$line_style = GD::gdStyled();
+	$line_style = $self->{GD}->gdStyled();
 	$width = $width{Route};
     }
 
@@ -1178,7 +1180,7 @@ sub empty_image_error {
     my $im = $self->{Image};
     my $fh = $self->{Fh};
 
-    $im->string(GD->gdLargeFont, 10, 10, "Empty image!", $white);
+    $im->string($self->{GD}->gdLargeFont, 10, 10, "Empty image!", $white);
     binmode $fh if $fh;
     if ($fh) {
 	print $fh $im->imageOut;
