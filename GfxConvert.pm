@@ -4,7 +4,7 @@
 # $Id: GfxConvert.pm,v 1.14 2004/05/16 20:04:37 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -26,7 +26,7 @@ sub init {
     %convsub  = ();
     %checksub = ();
     for my $src (qw(ps xwd)) {
-	for my $dest (qw(ppm gif jpeg png)) {
+	for my $dest (qw(ppm gif jpeg png pdf)) {
 	    my $convsub = $src."2".$dest;
 	    if (defined &{$convsub}) {
 		$convsub{$src}->{$dest} = \&{$convsub};
@@ -255,6 +255,26 @@ sub ps2png {
 	    "Die Konvertierung mit gs fehlgeschlagen (exit: $?)";
     }
     # XXX der ganze andere Wust aus ps2ppm fehlt hier...
+    1;
+}
+
+my $pdf_error_preamble = "Die PDF-Datei kann nicht erstellt werden. Grund: ";
+
+sub ps2pdf_check {
+    my($infile, $outfile, %args) = @_;
+    if (!is_in_path("ps2pdf")) {
+	die $gif_error_preamble .
+	    "ps2pdf aus der Ghostscript-Distribution wird benötigt.\n";
+    }
+}
+
+sub ps2pdf {
+    my($infile, $outfile, %args) = @_;
+    my @cmd = ( "ps2pdf", $infile, $outfile );
+    if (!run_command(@cmd)) {
+	die $pdf_error_preamble .
+	    "Konvertierung mit ps2pdf fehlgeschlagen (exit: $?)";
+    }
     1;
 }
 
