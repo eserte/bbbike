@@ -15,7 +15,7 @@
 package BrowserInfo::UAProf;
 
 use strict;
-use vars qw($VERSION);
+use vars qw($VERSION $DEBUG);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
@@ -138,18 +138,24 @@ sub p_start_tag {
     push @{ $self->{p_path} }, { element => $elem,
 				 attributes => \%attr ,
 			       };
+    $self->{p_char} = "";
 }
 
 sub p_end_tag {
     my($self, $expat, $elem) = @_;
+    my $char = $self->{p_char};
+    warn "$char\n" if $DEBUG;
+    if ($self->{p_path}[-1]{element} eq 'prf:' . $self->{p_look_for}) {
+	$self->{cached}{$self->{p_look_for}} = $char;
+    }
     pop @{ $self->{p_path} };
 }
 
 sub p_char {
     my($self, $expat, $char) = @_;
-    if ($self->{p_path}[-1]{element} eq 'prf:' . $self->{p_look_for}) {
-	$self->{cached}{$self->{p_look_for}} = $char;
-    }
+    $char =~ s/^\s+//;
+    $char =~ s/\s+$//; # XXX?
+    $self->{p_char} .= $char;
 }
 
 sub dump_header {
@@ -165,6 +171,12 @@ return 1 if caller;
 
 require File::Spec;
 require File::Basename;
+require Getopt::Long;
+
+my %OPT;
+Getopt::Long::GetOptions(\%OPT, "d|debug!") or die "usage: $0 [-d] profile-url capability";
+
+if ($OPT{d}) { $DEBUG = 1 }
 
 my $uaprofurl = shift || die "UAProf URL?";
 my $cap = shift || die "Capability?";
