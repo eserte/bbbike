@@ -997,10 +997,10 @@ EOF
      },
      { from  => undef, # 
        until => 1101855600, # 2004-12-01 00:00
-       text  => 'Blankenburger Weg - Blankenburger-Weg-Brücke (Pankow) in beiden Richtungen zwischen Pasewalker Str. und Bahnhofsstraße Baustelle, Straße vollständig gesperrt (bis 12/2004)',
+       text  => 'Blankenburger Weg - Blankenburger-Weg-Brücke (Pankow) in beiden Richtungen zwischen Pasewalker Str. und Bahnhofsstraße Baustelle, Einbahnstraße Richtung Bahnhofstr. (bis 12/2004)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 12030,20490 12442,20805
+userdel	1 12442,20805 12030,20490
 EOF
      },
      { from  => 1098309600, # 2004-10-21 00:00
@@ -1066,6 +1066,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 9917,15613 10122,15647
+EOF
+     },
+     { from  => 1098828000, # 2004-10-27 00:00
+       until => 1103410800, # 2004-12-19 00:00
+       text  => 'L 171; (Hohen Neuendorf-Hennigsdorf); Bereich Anschlußstelle Straßenbau Vollsperrung 28.10.2004-18.12.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -926,27132 -2118,26060
 EOF
      },
     );
