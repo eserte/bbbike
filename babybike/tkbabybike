@@ -1,0 +1,2310 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: tkbabybike,v 2.32 2003/08/24 23:30:02 eserte Exp eserte $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net
+#
+
+package Tk::Babybike;
+
+use strict;
+use vars qw($VERSION $splash_screen $moduledir);
+$VERSION = sprintf("%d.%03d", q$Revision: 2.32 $ =~ /(\d+)\.(\d+)/);
+
+BEGIN {
+    # FindBin and Cwd is not installed in the iPAQ dist
+    if ($0 =~ m|^/|) {
+	($FindBin::RealBin = $0) =~ s|/[^/]+$||;
+    } else {
+	chomp (my $cwd = `pwd`);
+	($FindBin::RealBin = $cwd . "/$0") =~ s|/[^/]+$||;
+    }
+}
+
+BEGIN {
+    if ($^O eq 'freebsd') {
+	if (!eval { require Storable; require CDB_File; 1 }) {
+	    warn "Turning caching off...\n";
+	    @Strassen::Util::cacheable = ();
+	    $Strassen::Util::cacheable_array_set = 1;
+	}
+    }
+}
+
+use lib "$FindBin::RealBin/lib"; # just for the ProgressSplash widget
+
+#  # for memory profiling XXX
+#  sub currmem {
+#      my $pid = shift || $$;
+#      if (open(MAP, "/proc/$pid/map")) { # FreeBSD
+#  	my $mem = 0;
+#  	my $realmem = 0;
+#  	while(<MAP>) {
+#  	    my(@l) = split /\s+/;
+#  	    my $delta = (hex($l[1])-hex($l[0]));
+#  	    $mem += $delta;
+#  	    if ($l[11] ne 'vnode') {
+#  		$realmem += $delta;
+#  	    }
+#  	}
+#  	close MAP;
+#  	($mem, $realmem);
+#      } elsif (open(MAP, "/proc/$pid/maps")) { # Linux
+#  	my $mem = 0;
+#  	my $realmem = 0;
+#  	while(<MAP>) {
+#  	    my(@l) = split /\s+/;
+#  	    my($start,$end) = split /-/, $l[0];
+#  	    my $delta = (hex($end)-hex($start));
+#  	    $mem += $delta;
+#  	    if (!defined $l[5] || $l[5] eq '') {
+#  		$realmem += $delta;
+#  	    }
+#  	}
+#  	close MAP;
+#  	($mem, $realmem);
+#      } else {
+#  	undef;
+#      }
+#  }
+
+sub start_progress_splash {
+    my $type = shift || "slow";
+    if ($] >= 5.005) {
+	# XXX don't know whether this is a Tk400 or an old perl problem
+	eval {
+	    require Tk::ProgressSplash;
+	    $splash_screen = Tk::ProgressSplash->Show
+		(-splashtype => $type,
+                 (defined $moduledir ? $moduledir : $FindBin::RealBin) . "/images/bbbike_splash_tkbabybike.xpm",
+		 196, 67, "BBBike", 1);
+
+#  # for memory profiling
+#  my $orig_Update = \&Tk::ProgressSplash::Update;
+#  *Tk::ProgressSplash::Update = sub {
+#      require Carp;
+#      Carp::cluck("@{[ currmem() ]}");
+#      $orig_Update->(@_);
+#  }
+
+}; warn $@ if $@;
+    }
+}
+
+BEGIN {
+    # show only splash screen if activated explicitely or if started
+    # as a script
+    if (!caller(2)) {
+	start_progress_splash("fast"); # only here use "fast"
+    }
+}
+
+use Tk;
+
+BEGIN {
+    # find myself
+    while(my($k,$v) = each %INC) {
+	if ($k =~ /tkbabybike$/) {
+	    $moduledir = $v;
+	    last;
+	}
+    }
+    if (defined $moduledir) {
+	$moduledir =~ s|/[^/]+$||; # strip basename
+    } else {
+	$moduledir = $FindBin::RealBin; # fallback
+    }
+    require lib;
+    lib::->import("$moduledir",
+		  "$moduledir/lib",
+		  "$moduledir/data",
+		 );
+}
+
+use Tk::CanvasUtil;
+use Tk::PathEntry 2.17;
+
+use BBBikeRouting;
+#use Strassen;
+use Strassen::Core;
+#XXX not needed here: use BBBikeXS;
+use BBBikeUtil;
+use BBBikeScribble; # XXX move away
+
+use constant GEOMETRY_X => 0;
+use constant GEOMETRY_Y => 1;
+use constant GEOMETRY_WIDTH  => 2;
+use constant GEOMETRY_HEIGHT => 3;
+
+use vars qw(%category_color %line_dash %line_width);
+
+$splash_screen->Update(0) if $splash_screen;
+
+Strassen::set_verbose(1);#XXX debug
+## This saves approx. 1 MB RAM memory:
+## but I need a compiled VirtArray for this...
+#StrassenNetz::use_data_format($StrassenNetz::FMT_ARRAY);
+
+use vars qw($routing $context
+	    $average_speed $vehicle $exact_streetchooser $browse_layers
+	    $centerx $centery $can_overview $algorithm
+	    $overview_canvas $overview_transpose $show_overview
+	    $scope $mw $zoom $se $ze $active_entry
+	    $blackbox_title_header $blackbox_x_border
+	    $hand %add_data_file
+	    $start_coord_valid_for $ziel_coord_valid_for $route_drawn
+	    $release_timeout
+	    $map_mode $browse_mode $scribble_mode $freehand
+	    $xviewScroll $yviewScroll $swapydir $lbheight
+	    %zip_firstch $use_pathentry
+	    $transpose $anti_transpose
+	    $c $cframe %streets $qualitaet_s_net $strcat_net
+	    $pref_quality $cat_quality
+	    $continue_search @update_points
+	    @normal_strassen_datadirs $use_tiles @available_scopes
+	   );
+
+@update_points =
+    qw(
+       0.0939710140228271
+       1.72925698757172
+       1.90464496612549
+       1.91102397441864
+       4.44863796234131
+       8.68699991703033
+       9.46454298496246
+       9.6170289516449
+       10.1657239198685
+       10.1696749925613
+       10.1791099309921
+       10.2003890275955
+       14.6866149902344
+       14.7006289958954
+      );
+@update_points = map { $_/$update_points[-1] } @update_points;
+
+$vehicle = 'bike';
+$algorithm = 'C-A*';
+#XXX $algorithm = 'C-A*-2';
+if ($^O eq 'freebsd') { $algorithm = 'A*' }
+routing_construct();
+$average_speed = 15;
+$exact_streetchooser = 1;
+$use_tiles = 1;
+my($tilewidth,$tileheight)=(100,100); # XXX don't hardcode
+my $tiledir = "$moduledir/images/tiles"; # XXX
+my $max_tiles;
+
+($centerx, $centery) = (14598,11245);
+
+$can_overview = 0;
+$use_pathentry = 1;
+
+$scope = "berlin" if !defined $scope;
+@normal_strassen_datadirs = @Strassen::datadirs;
+
+$blackbox_title_header = 18; # height of blackbox title header
+$blackbox_x_border = 2;
+
+$hand = 'right'; # or 'left'
+
+# compatible with MM_ enum in bbbike
+use constant MM_BABYBIKE_SELECT   => 10;
+use constant MM_BABYBIKE_BROWSE   => 11;
+use constant MM_SCRIBBLE => 12;
+
+use vars qw($vbox $hbox_top $vbox_entries $hbox_buttons $transpose_image
+	    $toggle $start_image $start_search $browse_image $browse_b
+	    $center_image $hbox_start $hbox_ziel $sl $zl $list $ov_img
+	    $small_img);
+use vars qw($se_return $ze_return);
+use vars qw($map $draw);
+use vars qw($remember_geometry $kbd $kbd_adjust);
+use vars qw($ov_b);
+
+use vars qw($img_x $img_y $motion_event $lastx $lasty $lastitem);
+use vars qw($main_menu);
+use vars qw($menu_height);
+
+if (opendir(DIR, "$FindBin::RealBin")) {
+    while(defined($_ = readdir(DIR))) {
+	if (-d "$FindBin::RealBin/$_" && $_ =~ /^data_(.*)/) {
+	    push @available_scopes, $1;
+	}
+    }
+    closedir DIR;
+}
+
+#### RELOADER_START ############################################
+sub parse_cmd_line {
+    while (@ARGV && $ARGV[0] =~ /^-/) {
+	if ($ARGV[0] eq '-car') {
+	    $vehicle = 'car';
+	    shift @ARGV;
+	} elsif ($ARGV[0] eq '-oepnv') {
+	    warn "XXX funktioniert noch nicht!";
+	    $vehicle = 'oepnv';
+	    shift @ARGV;
+	} elsif ($ARGV[0] eq '-pedestrian') {
+	    $vehicle = 'pedestrian';
+	    shift @ARGV;
+	} elsif ($ARGV[0] eq '-scope') {
+	    shift @ARGV;
+	    $scope = shift @ARGV;
+	    if ($scope eq 'brb') {
+		$context->Scope('region');
+	    } elsif ($scope eq 'berlin') {
+		# OK
+	    } elsif ($scope ne '') {
+		# $moduledir XXX?
+		@Strassen::datadirs = "$moduledir/data_$scope";
+		routing_construct();
+		$Strassen::Util::cacheprefix = $scope; # XXX not here
+		$context->Scope('region');
+	    } else {
+		die "Unknown scope $scope";
+	    }
+	} elsif ($ARGV[0] eq '-d' || $^O eq 'freebsd') { # XXX do not hardcode $^O condition
+	    shift @ARGV;
+	    eval 'use blib "/tmp"';
+	    eval 'use blib "/home/e/eserte/src/perl/Tk-App"';
+	    eval '
+	    require Tk::App::Reloader;
+	    $Tk::App::Reloader::VERBOSE = 1;
+        '; warn $@ if $@;
+	} else {
+	    warn "Unrecognized switch $ARGV[0]";
+	    shift @ARGV;
+	}
+    }
+}
+
+sub handheld_options {
+    my $mw = shift;
+    $mw->optionAdd("*font", "5x7");
+    $mw->optionAdd("*Scrollbar*width", 9);
+    $mw->optionAdd("*Menu*font", "Helvetica 6");
+    $mw->optionAdd("*Menu*activeBorderWidth", 0);
+    $mw->optionAdd("*Menu*activeBackground", "#ffe5e5");
+    $mw->optionAdd("*Menu*borderWidth", 1);
+    $mw->optionAdd("*Menu*background", "#e5e5e5");
+    foreach (qw/Entry Listbox PathEntry/) {
+	$mw->optionAdd("*$_*background", "white");
+    }
+}
+
+sub main_gui {
+    my $mw0 = shift;
+
+    if (Tk::Exists($mw0) && $mw0->isa("Tk::Toplevel")) {
+	$mw = $mw0->Toplevel;
+	if ($mw0->can('standard_key_bindings')) {
+	    $mw0->standard_key_bindings($mw);
+	}
+    } else {
+	$mw = new MainWindow;
+    }
+    $mw->title("tkbabybike $VERSION");
+    $mw->withdraw;
+    $mw->OnDestroy(\&cleanup);
+
+    {
+	my $bits = pack("b8"x8,
+			".....11.",
+			"....1111",
+			"...11111",
+			"...1111.",
+			"..11111.",
+			"..1111..",
+			"..111...",
+			".1......",
+		       );
+	if (!$mw->MainWindow->{TkBabybike_updown}) {
+	    eval { $mw->DefineBitmap('updown' => 8,8, $bits) };
+	    if ($@ && $@ !~ /already defined/) {
+		die $@;
+	    }
+	    $mw->MainWindow->{TkBabybike_updown}++;
+	}
+    }
+
+    handheld_options($mw);
+
+    $map_mode = MM_BABYBIKE_SELECT;
+
+    # XXX still necessary?
+    $xviewScroll = "xviewScroll";
+    $yviewScroll = "yviewScroll";
+    $swapydir    = 1;
+    if ($mw->server =~ /Keith Packard/ && $mw->screenheight < $mw->screenwidth) {
+	# Landscape on the iPAQ: swap cursor keys
+	$xviewScroll = "yviewScroll";
+	$yviewScroll = "xviewScroll";
+	$swapydir    = -1;
+	$lbheight    = 3;	# smaller initial listbox size
+    } else {
+	$lbheight    = 6;
+    }
+    $max_tiles = ((int($mw->screenwidth/$tilewidth)+1) *
+	          (int($mw->screenheight/$tileheight)+1));
+    $max_tiles = 40 if $^O eq 'freebsd'; # XXX debugging
+    warn "Maximum number of tiles: $max_tiles"; # XXX
+
+    $splash_screen->Update(shift @update_points) if $splash_screen;
+
+    $vbox = $mw->Frame->pack(-fill => 'y', -expand => 1);
+
+    $hbox_top = $vbox->Frame->pack(-fill => 'x');
+
+    $vbox_entries = $hbox_top->Frame->pack(-side => 'left', -fill => 'x', -expand => 1);
+    $hbox_buttons = $hbox_top->Frame->pack(-side => 'left');
+
+    $transpose_image = $mw->Pixmap(-file => "$moduledir/images/transpose.xpm");
+    $toggle       = $hbox_top->Button
+	(-command => \&swap_start_goal,
+	 -pady => 10,
+	 -image => $transpose_image)->pack(-side => 'left');
+
+    $browse_image = $mw->Pixmap(-file => "$moduledir/images/mini.gnome.xpm");
+    $browse_b = $hbox_top->Checkbutton
+	(-variable => \$browse_mode,
+	 -indicatoron => 0,
+	 -command => sub {
+	     if ($browse_mode) {
+		 deselect_current_mode();
+		 $map_mode = MM_BABYBIKE_BROWSE;
+		 create_balloon()
+	     } else {
+		 $map_mode = MM_BABYBIKE_SELECT;
+		 hide_balloon();
+	     }
+	 },
+	 -image => $browse_image)->pack(-side => 'left');
+
+    $center_image = $mw->Pixmap(-file => "$moduledir/images/center.xpm");
+
+    $hbox_start = $vbox_entries->Frame->pack(-fill => 'x', -expand => 1);
+    $hbox_ziel  = $vbox_entries->Frame->pack(-fill => 'x', -expand => 1);
+
+    $se_return = sub {
+	$se->Finish if $se->can('Finish');
+	# XXX => to sub?
+	$routing->Start->Street($se->get);
+	$routing->Start->Citypart(undef);
+	$routing->get_start_position;
+	set_street_coord('start',
+			 $routing->Start->Street .
+			 (defined $routing->Start->Citypart ?
+			  ' (' . $routing->Start->Citypart . ')' : ''),
+			 $routing->Start->Coord);
+	my($x,$y) = $transpose->(split /,/, $routing->Start->Coord);
+	set_mark($x,$y);
+	_set_active_entry($ze) unless $continue_search;
+    };
+
+    $ze_return = sub {
+	$ze->Finish if $ze->can('Finish');
+	# XXX => to sub?
+	$routing->Goal->Street($ze->get);
+	$routing->Goal->Citypart(undef);
+	$routing->get_goal_position;
+	set_street_coord('ziel',
+			 $routing->Goal->Street .
+			 (defined $routing->Goal->Citypart ?
+			  ' (' . $routing->Goal->Citypart . ')' : ''),
+			 $routing->Goal->Coord);
+	my($x,$y) = $transpose->(split /,/, $routing->Goal->Coord);
+	set_mark($x,$y);
+	start_bbbike(-centerpath => 1);
+    };
+
+    $sl = $hbox_start->Label(-text => "Start:")->pack(-side => 'left');
+    if (!$use_pathentry) {
+	$se = $hbox_start->Entry;
+    } else {
+	$se = $hbox_start->PathEntry
+	    (-autocomplete => 1,
+	     -choicescmd => \&get_street_choices,
+	     -isdircmd => sub { 0 },
+	     -selectcmd => $se_return,
+	    );
+    }
+    $se->pack(-side => 'left', -fill => 'x', -expand => 1);
+    _set_active_entry($se);
+    $se->bind('<Return>', $se_return);
+
+    $hbox_start->Button
+	(-text => "x",
+	 -image => $center_image,
+	 -padx => 0, -pady => 0, -bd => 0,
+	 -command => sub {
+	     # XXX
+	     if ($routing->Start->Street eq $start_coord_valid_for) {
+		 my($x,$y) = $transpose->(split /,/, $routing->Start->Coord);
+		 set_mark($x,$y);
+	     }
+	 })->pack(-side => 'left');
+
+    $zl = $hbox_ziel->Label(-text => "Ziel: ")->pack(-side => 'left');
+    if (!$use_pathentry) {
+	$ze = $hbox_ziel->Entry;
+    } else {
+	$ze = $hbox_ziel->PathEntry
+	    (-autocomplete => 1,
+	     -choicescmd => \&get_street_choices,
+	     -isdircmd => sub { 0 },
+	     -selectcmd => $ze_return,
+	    );
+    }
+    $ze->pack(-side => 'left', -fill => 'x', -expand => 1);
+    $ze->bind('<Return>', $ze_return);
+
+    $hbox_ziel->Button
+	(-text => "x",
+	 -image => $center_image,
+	 -padx => 0, -pady => 0, -bd => 0,
+	 -command => sub {
+	     # XXX
+	     if ($routing->Goal->Street eq $ziel_coord_valid_for) {
+		 my($x,$y) = $transpose->(split /,/, $routing->Goal->Coord);
+		 set_mark($x,$y);
+	     }
+	 })->pack(-side => 'left');
+
+    $se->insert(0, shift @ARGV) if @ARGV;
+    $ze->insert(0, shift @ARGV) if @ARGV;
+
+    foreach my $e ($se, $ze) {
+	$e->bindtags([$mw, ref $e, $e, 'all']);
+    }
+
+    $list = $vbox->Scrolled('Listbox', -scrollbars => 'osoe',
+			    ($lbheight ? (-height => $lbheight) : ()),
+			   )->packAdjust(-fill => 'x', -expand => 1);
+
+    set_scope();
+
+    $splash_screen->Update(shift @update_points) if $splash_screen;
+
+    $cframe = $vbox->Frame->pack(-expand => 1, -fill => "both");
+    $cframe->gridColumnconfigure(0, -weight => 1);
+    $cframe->gridRowconfigure(0, -weight => 1);
+    $c = $cframe->Canvas
+	(
+	 -scrollregion => [0,0,$draw->{Width},$draw->{Height}],
+	 -highlightthickness => 0,
+	 -borderwidth => 0,
+	)->grid(-row => 0, -column => 0, -sticky => "eswn");
+    {
+	$c->createPolygon(0,0,
+			  -fill => undef, -outline => "red", -tags => "mark");
+    }
+    $c->OnDestroy(sub { cleanup_canvas() });
+    my $sy = $cframe->Scrollbar(-command => ["yview", $c],
+				-takefocus => 0,
+				-highlightthickness => 0,
+			       );
+    my $sx = $cframe->Scrollbar(-orient => "horiz",
+				-command => ["xview", $c],
+				-takefocus => 0,
+				-highlightthickness => 0,
+			       );
+    $sy->grid(-row => 0, -column => 1, -sticky => 'ns');
+    $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
+
+    $kbd_adjust = $cframe->Button
+	(-padx => 0, -pady => 0, -borderwidth => 0,
+	 -highlightthickness => 0,
+	 -bitmap=>'updown',
+	 #-command => \&adjust_geometry_for_kbd
+	 -command => sub {
+	     if (!$kbd) {
+		 if (eval q{ use Tk::Kbd; 1 }) {
+		     $mw->optionAdd("*KbdButton*HighlightThickness",0);
+		     $mw->optionAdd("*KbdButton*Pad",1);
+		     $mw->Busy(-recurse => 1);
+		     eval {
+			 $kbd = $vbox->Kbd(-configfile => "$moduledir/lib/Tk/XVkbd-german");
+		     };
+		     my $err = $@;
+		     $mw->Unbusy;
+		     die $err if $err;
+		 }
+	     }
+	     if ($kbd) {
+		 if ($kbd->manager) {
+		     $kbd->packForget;
+		 } else {
+		     # a litte bit hacky ... XXX
+		     $kbd->idletasks;
+		     $c->GeometryRequest($c->width, $c->height-$kbd->reqheight);
+		     $kbd->pack(-fill => 'x');
+		 }
+	     }
+	 },
+	)->grid(-row => 1, -column => 1);
+
+    if ($can_overview) {
+	create_overview_button();
+    }
+
+    $splash_screen->Update(shift @update_points) if $splash_screen;
+
+    if (!$use_tiles) {
+	$c->createImage(0,0,-anchor => 'nw',
+			-image => $map,
+			-tags => 'map');
+    }
+
+
+    $c->CanvasBind
+	('<ButtonPress-1>' => sub {
+	     my($w) = @_;
+	     my $e = $w->XEvent;
+	     if ($map_mode == MM_SCRIBBLE) {
+		 handle_button1_scribble($w,$e);
+	     } else {
+		 ($img_x, $img_y) = ($e->X, $e->Y);
+		 $c->scan('mark', $e->x, $e->y);
+		 $motion_event = 0;
+		 if (defined $release_timeout) {
+		     $mw->afterCancel($release_timeout);
+		     undef $release_timeout;
+		 }
+	     }
+	 });
+
+    $c->CanvasBind
+	('<B1-Motion>' => sub {
+	     my($w) = @_;
+	     my $e = $w->XEvent;
+	     # XXX try to combine multiple motion events...
+	     if ($map_mode == MM_SCRIBBLE) {
+		 handle_button1_motion_scribble($w,$e);
+	     } else {
+		 my($x,$y) = ($e->X, $e->Y);
+		 if (!$motion_event &&
+		     Strassen::Util::strecke([$x,$y], [$img_x,$img_y]) >= 10) {
+		     $motion_event = 1;
+		 }
+		 # XXX probably use some stacking/idle mechanism to prevent
+		 # from too much events...
+		 if ($motion_event) {
+		     $c->scan('dragto', $e->x, $e->y, 1);
+		 }
+	     }
+	     1;
+	 }
+	);
+
+    $c->CanvasBind('<ButtonRelease-1>',
+		   sub {
+		       if ($map_mode == MM_BABYBIKE_SELECT) {
+			   set_coord(@_);
+		       } elsif ($map_mode == MM_BABYBIKE_BROWSE) {
+			   browse(@_);
+		       } else { # MM_SCRIBBLE
+			   undef $lastitem;
+		       }
+		   });
+
+    $list->bind("<1>" => sub {
+		    my $ii = $list->curselection;
+		    return unless defined $ii || !$routing->RouteInfo || !@{ $routing->RouteInfo };
+		    if ($routing->RouteInfo && @{ $routing->RouteInfo } && $routing->RouteInfo->[$ii]) {
+			my($x,$y) = split /,/, $routing->RouteInfo->[$ii]->{Coords};
+			# XXX combine these two:
+			set_mark($transpose->($x,$y));
+			if (Tk::Exists($zoom)) {
+			    $zoom->center($x,$y);
+			}
+		    }
+		ADJUST_LISTBOX: {
+			my(@bbox) = $list->bbox($ii+1);
+			if (!@bbox || $bbox[3] > $list->height) {
+			    $list->yview(scroll => 1, "units");
+			    last ADJUST_LISTBOX;
+			}
+			@bbox = $list->bbox($ii-1);
+			if (!@bbox || $bbox[1] < 0) {
+			    $list->yview(scroll => -1, "units");
+			    last ADJUST_LISTBOX;
+			}
+		    }
+		}
+	       );
+
+    $splash_screen->Update(shift @update_points) if $splash_screen;
+
+    $main_menu = $mw->Menu
+	(-menuitems =>
+	 [
+	  [Cascade => "~File", -menuitems =>
+	   [
+	    [Button => "~Exit", -command => sub {
+		 $mw->destroy;
+	     }],
+	   ]
+	  ],
+	  [Cascade => "~Map", -menuitems =>
+	   [
+	    [Button => "~Center", -command => sub {
+		 $c->see($transpose->($centerx, $centery));
+	     }],
+	    '-',
+	    [Radiobutton => 'Scope Cit~y', -variable => \$scope,
+	     -value => 'berlin', -command => sub { set_scope(); after_set_scope() }
+	    ],
+	    [Radiobutton => 'Scope ~Region', -variable => \$scope,
+	     -value => 'region', -command => sub { set_scope(); after_set_scope() }
+	    ],
+	    (map {
+		[Radiobutton => 'Scope ~'.ucfirst($_), -variable => \$scope,
+		 -value => $_, -command => sub { set_scope(); after_set_scope() }
+		],
+	    } @available_scopes),
+	    '-',
+	    [Button => "Load ~bbd File", -command => sub { read_and_draw_bbd() }],
+	    [Button => "Load remote files", -command => sub {
+		 require BBBikeWget;
+		 my $dir = BBBikeWget::_tk_get_data($mw);
+		 if (defined $dir) {
+		     read_and_draw_bbd(-initialdir => $dir);
+		 }
+	     }],
+	    [Button => "Delete bbd Data", -command => \&delete_bbd_data],
+	    '-',
+	    [Checkbutton => "~Scribble", -variable => \$scribble_mode,
+	     -command => \&toggle_scribble_mode],
+	    [Checkbutton => "Sho~w Scribble", -variable => \$show_scribble,
+	     -command => \&set_show_scribble],
+	    [Checkbutton => "Show Scribble Labels", -variable => \$show_scribble_labels,
+	     -command => \&set_show_scribble_labels],
+	    [Button => "~Load Scribble", -command => \&load_scribble],
+	    [Button => "~Save Scribble", -command => \&save_scribble],
+	   ]
+	  ],
+	  [Cascade => "~Search", -menuitems =>
+	   [
+	    [Button => "Search route", -command => \&start_bbbike],
+	    [Checkbutton => "Continue search", -variable => \$continue_search],
+	    [Checkbutton => "Freehand", -variable => \$freehand],
+	    [Button => "Reset", -command => \&reset],
+	    [Button => "Delete to last via", -command => \&delete_to_last_via],
+	    [Button => "Show Vias", -command => \&show_vias],
+	    "-",
+	    [Cascade => "~Vehicle", -menuitems =>
+	     [
+	      [Radiobutton => "Pedestrian",
+	       -variable => \$vehicle, -value => 'pedestrian',
+	       -command => sub { gui_reset() },
+	      ],
+	      [Radiobutton => "Bike",
+	       -variable => \$vehicle, -value => 'bike',
+	       -command => sub { gui_reset() },
+	      ],
+	      [Radiobutton => "Car",
+	       -variable => \$vehicle, -value => 'car',
+	       -command => sub { gui_reset() },
+	      ],
+	      [Radiobutton => "Oepnv",
+	       -variable => \$vehicle, -value => 'oepnv',
+	       -command => sub { gui_reset() },
+	      ],
+	     ],
+	    ],
+	    [Cascade => "~Speed", -menuitems =>
+	     [
+	      [Radiobutton => "5 km/h", -variable => \$average_speed, -value => 5],
+	      [Radiobutton => "15 km/h", -variable => \$average_speed, -value => 15],
+	      [Radiobutton => "20 km/h", -variable => \$average_speed, -value => 20],
+	      [Radiobutton => "25 km/h", -variable => \$average_speed, -value => 25],
+	      [Radiobutton => "30 km/h", -variable => \$average_speed, -value => 30],
+	      [Radiobutton => "50 km/h", -variable => \$average_speed, -value => 50],
+	     ]
+	    ],
+	    [Cascade => "~Quality", -menuitems =>
+	     [
+	      [Radiobutton => "None", -variable => \$pref_quality, -value => ""],
+	      [Radiobutton => "Q1", -variable => \$pref_quality, -value => "Q1"],
+	      [Radiobutton => "Q2", -variable => \$pref_quality, -value => "Q2"],
+	     ]
+	    ],
+	    [Cascade => "~Category", -menuitems =>
+	     [
+	      [Radiobutton => "All", -variable => \$cat_quality, -value => ""],
+	      [Radiobutton => "only H", -variable => \$cat_quality, -value => "H2"],
+	      [Radiobutton => "H > N", -variable => \$cat_quality, -value => "H1"],
+	      [Radiobutton => "H < N", -variable => \$cat_quality, -value => "N1"],
+	      [Radiobutton => "only N", -variable => \$cat_quality, -value => "N2"],
+	     ]
+	    ],
+	   ],
+	  ],
+	  [Cascade => "~Internal", -menuitems =>
+	   [
+	    [Radiobutton => "Exact Streetchooser", -variable => \$exact_streetchooser, -value => 1],
+	    [Radiobutton => "Sloppy Streetchooser", -variable => \$exact_streetchooser, -value => 0],
+	    [Checkbutton => "Browse additional layers", -variable => \$browse_layers],
+	    '-',
+	    [Button => 'Overview button', -command => sub {
+		 create_overview_button();
+		 my $int = $main_menu->index('Internal');
+		 if (defined $int) {
+		     my $int_menu = $main_menu->entrycget($int, '-menu');
+		     my $ovb = $int_menu->index('Overview button');
+		     if (defined $ovb) {
+			 $int_menu->entryconfigure($ovb, -state => 'disabled');
+		     }
+		 }
+	     },
+	     -state => ($can_overview ? 'disabled' : 'normal'),
+	    ],
+	    [Button => 'Zoom window', -command => \&zoom_window],
+	   ]
+	  ],
+	  [Cascade => "~Apps", -menuitems =>
+	   [
+	    [Button => "~GSM Sender", -command => \&gsmsender],
+	    [Button => "~Kino Berlin", -command => \&kino_berlin],
+	    [Button => "~Speak", -command => \&speak],
+	    [Button => "~Lat/Long", -command => \&tk_set_lat_long],
+	    [Button => "Lat/Long of Start", -command => \&get_lat_long],
+	    [Button => "Simulate route to GPS", -command => [\&gps_interface, 1]],
+	    [Button => "Send route to GPS", -command => [\&gps_interface, 0]],
+	    [Button => "Download from GPS", -command => [\&gps_download, 0]],
+	   ]
+	  ],
+	  [Cascade => '~Help', -menuitems =>
+	   [
+	    [Button => '~About', -command => \&about_dialog]
+	   ]
+	  ]
+	 ]);
+    $mw->configure(-menu => $main_menu);
+
+    $mw->bind('<KeyPress>' => \&mw_key_press);
+
+    #$mw->WidgetDump;
+
+    init_big_data();
+
+    if ($exact_streetchooser) {
+	# This is not strictly necessary, but so everything is covered by
+	# the ProgressBar.
+	my $s = $routing->init_str;
+	$splash_screen->Update(shift @update_points) if $splash_screen;
+	$s->make_grid(UseCache => 1, Exact => 1);
+    }
+    $splash_screen->Update(shift @update_points) if $splash_screen;
+
+    $mw->deiconify;
+    $mw->raise;
+    toplevel_checker($mw);
+
+    $splash_screen->Update(shift @update_points) if $splash_screen;
+
+    $mw->afterIdle
+	(sub {
+	     $mw->after(300,sub {
+			    $c->see($transpose->($centerx, $centery));
+			    # set as late as possible
+			    $c->configure(-yscrollcommand =>
+					  sub {
+					      $sy->set(@_);
+					      overview_update();
+					  },
+					  -xscrollcommand =>
+					  sub {
+					      $sx->set(@_);
+					      overview_update();
+					  },
+					 );
+			})
+	 });
+
+    $splash_screen->Update(1) if $splash_screen;
+    $splash_screen->Destroy if $splash_screen;
+    undef $splash_screen;
+
+    if (defined &Tk::App::Reloader::shortcut) {
+	Tk::App::Reloader::shortcut();
+	Tk::App::Reloader::check_loop();
+    }
+
+    $mw;
+}
+
+sub set_mark {
+    my($x,$y) = @_;
+    my $ps = 5; # polygon size
+    my $ip = 1; # inner point
+    $c->coords("mark",
+	       $x+0,$y-$ps, $x+$ip,$y-$ip, $x+$ps,$y+0, $x+$ip,$y+$ip,
+	       $x+0,$y+$ps, $x-$ip,$y+$ip, $x-$ps,$y+0, $x+$ip,$y-$ip);
+    $c->raise("mark");
+    $c->see($x,$y);
+}
+
+sub set_scope {
+    my $imgname = ($scope eq 'region'
+		   ? 'brb'
+		   : ($scope =~ /^(city|berlin)$/ ? 'berlin' : $scope));
+    cleanup_map_photos();
+    if (!$use_tiles) {
+	if (-r "/tmp/$imgname.xpm" &&
+	    -M "/tmp/$imgname.xpm" < -M "$moduledir/images/$imgname.xpm.gz") {
+	    $map = $mw->Pixmap(-file => "/tmp/$imgname.xpm");
+	} elsif (!-r "$moduledir/images/$imgname.xpm" &&
+		 -r "$moduledir/images/$imgname.xpm.gz") {
+	    print STDERR "Decompressing $imgname.xpm.gz... ";
+	    my $tmp = "/tmp/$imgname.xpm";
+	    system("gzip -dc $moduledir/images/$imgname.xpm.gz > $tmp");
+	    print STDERR "OK\n";
+	    $map = $mw->Pixmap(-file => $tmp);
+	    unlink $tmp;
+	} else {
+	    $map = $mw->Pixmap(-file => "$moduledir/images/$imgname.xpm");
+	}
+	if (!$map) {
+	    die "Can't load $moduledir/images/$imgname ...";
+	}
+    } else {
+	$tiledir = "$moduledir/images/${imgname}_tiles";
+	if (!-d $tiledir) {
+	    die "No directory $tiledir";
+	    # XXX fallback to !$use_tiles
+	}
+    }
+    my $dimfile = $use_tiles ? "$moduledir/images/${imgname}_tiles/$imgname.dim" : "$moduledir/images/$imgname.dim";
+    warn "Get dimensions from $dimfile...\n";
+    $draw = do $dimfile;
+    if (!ref $draw eq 'HASH') {
+	die "Can't get dimensions from $dimfile";
+    }
+    $transpose      = eval $draw->{TransposeCode};     die $@ if $@;
+    $anti_transpose = eval $draw->{AntiTransposeCode}; die $@ if $@;
+}
+
+sub after_set_scope {
+    # XXXXXXXXXXXX
+    # warum geht's nicht????
+    #$c->configure(-scrollregion => [$draw->{Width},$draw->{Height}]);
+    $c->delete("all");
+    if (!$use_tiles) {
+	$c->createImage(0,0,-anchor => 'nw',
+			-image => $map,
+			-tags => 'map');
+    }
+    if ($scope !~ /^(city|berlin|region|brb|wideregion)$/) {
+	$Strassen::Util::cacheprefix = $scope; # XXX not here
+	@Strassen::datadirs = "$moduledir/data_$scope";
+	$routing->change_scope('region');
+    } else {
+	$Strassen::Util::cacheprefix = "b_de"; # XXX not here
+	@Strassen::datadirs = @normal_strassen_datadirs;
+	$routing->change_scope($scope eq 'berlin' ? 'city' : $scope eq 'brb' ? 'region' : $scope);
+    }
+    init_big_data();
+    gui_reset();
+}
+
+sub init_big_data {
+    my($splash_screen) = @_;
+    $splash_screen->Update(shift @update_points) if $splash_screen;
+    $routing->init_net;
+    $splash_screen->Update(shift @update_points) if $splash_screen;
+    $routing->init_zip;
+    $splash_screen->Update(shift @update_points) if $splash_screen;
+    $routing->init_crossings;
+    $splash_screen->Update(shift @update_points) if $splash_screen;
+    if ($use_pathentry && $scope =~ /^(city|berlin)$/) {
+	scan_zip_file();
+	$splash_screen->Update(shift @update_points) if $splash_screen;
+    }
+    $splash_screen->Update(shift @update_points) if $splash_screen;
+}
+
+sub routing_construct {
+    undef $routing;
+    undef $context;
+
+    $routing = BBBikeRouting->new->init_context;
+    $context = $routing->Context;
+    $context->Algorithm($algorithm);
+    $context->RouteInfoKm(0);
+    $context->Vehicle($vehicle);
+    $context->UseNetServer(0);
+    # With UseCache=1, UseXS=0: memory consumption: vsz=17540 rss=14976
+    # With UseCache=?, UseXS=1: nearly the same
+    # UseCache=1, UseXS=0 is faster (4s vs. 7s), so use it
+    # But: UseCache needs extra memory on /tmp, so sometimes UseXS may be
+    # better.
+    # Set PreferCache, so initial building is done fast.
+    $context->UseCache(1);
+    $context->UseXS(0); # XXX Set to 1 once the new BBBikeXS is compiled for the ipaq
+    $context->PreferCache(1);
+}
+
+sub gui_reset {
+    routing_construct();
+    $_->delete(0, 'end') for ($se, $ze);
+}
+
+sub about_dialog {
+    common_dialog("babybike $VERSION\nby Slaven Rezic\n\nhttp://bbbike.sf.net",
+		  "About");
+}
+
+sub common_dialog {
+    my $text = shift;
+    my $title = shift;
+
+    $mw->messageBox((defined $title ? (-title => $title) : ()),
+		    -icon => 'info',
+		    -message => $text,
+		    -type => 'Ok');
+}
+
+sub deselect_current_mode {
+    if ($map_mode == MM_BABYBIKE_BROWSE) {
+	hide_balloon();
+	$browse_mode = 0;
+    } elsif ($map_mode == MM_SCRIBBLE) {
+	deselect_scribble_mode();
+	$scribble_mode = 0;
+    }
+}
+
+sub set_coord {
+    my($w) = @_;
+    if ($motion_event) {
+	return;
+    }
+    my $ev = $w->XEvent;
+    my($tx,$ty) = ($w->canvasx($ev->x), $w->canvasy($ev->y));
+
+    # Define a timeout after releasing, because the iPAQ tends to
+    # not recognize continuos motions and generates additional release/press
+    # events.
+    if (defined $release_timeout) {
+	$w->afterCancel($release_timeout);
+	undef $release_timeout;
+    }
+    $release_timeout = $w->after
+	(100,
+	 sub {
+	     $mw->Busy(-recurse => 1);
+	     my($x,$y) = $anti_transpose->($tx,$ty);
+	     _set_coord_by_xy($x,$y);
+	     $mw->Unbusy;
+	     undef $release_timeout;
+	 });
+}
+
+sub _set_coord_by_xy {
+    my($x0,$y0) = @_;
+    eval {
+	my($kr_str,$x,$y);
+	if (!$freehand) {
+	    ($kr_str,$x,$y) = get_current_street($x0,$y0);
+	} else {
+	    ($kr_str,$x,$y) = ("???",$x0,$y0);
+	    my($tx,$ty) = $transpose->($x,$y);
+            if ($mw->focusCurrent eq $se || $mw->focusCurrent eq $ze) {
+		$active_entry = $mw->focusCurrent;
+	    }
+	    if ($active_entry eq $se) {
+		set_street_coord('freehand_start', $kr_str, "$x,$y");
+		$c->createLine($tx, $ty,-dash => [4,2], -width => 3, -fill => 'blue', -tags => 'route');
+		$c->createLine($tx, $ty,-dash => [1,3], -width => 3, -fill => 'red', -tags => 'route');
+		_set_active_entry($ze);
+	    } else {
+		set_street_coord('freehand_goal', $kr_str, "$x,$y");
+		my(@old_coords) = $c->coords("route");
+		$c->coords("route", @old_coords, $tx, $ty);
+	    }
+	    return;
+	}
+	if (!defined $x) {
+	    die "Can't get street for $x0,$y0";
+	}
+	if ($mw->focusCurrent eq $se || $mw->focusCurrent eq $ze) {
+	    $active_entry = $mw->focusCurrent;
+	}
+	if ($continue_search) {
+	    set_street_coord('cont_goal', $kr_str, "$x,$y");
+	    start_bbbike();
+	} else {
+	    if ($active_entry eq $ze) {
+		set_street_coord('ziel', $kr_str, "$x,$y");
+		_set_active_entry($se) unless $map_mode == MM_BABYBIKE_BROWSE || $continue_search;
+		start_bbbike();
+	    } else {
+		set_street_coord('start', $kr_str, "$x,$y");
+		_set_active_entry($ze) unless $map_mode == MM_BABYBIKE_BROWSE || $continue_search;
+	    }
+	}
+    };
+    if ($@) {
+	warn $@;
+	error_dialog($@);
+    }
+}
+
+sub browse {
+    my($w) = @_;
+    return if ($motion_event);
+    my $ev = $w->XEvent;
+    my($tx,$ty) = ($w->canvasx($ev->x), $w->canvasy($ev->y));
+    my($x,$y) = $anti_transpose->($tx,$ty);
+    my $kr_str;
+    if ($browse_layers) {
+	# XXX fast enough to not use busy?
+	my(@tags) = $w->gettags("current");
+	foreach my $tag (@tags) {
+	    if ($tag =~ /^add-(\d+)/) {
+		my $inx = $1;
+		my $file = $add_data_file{$inx};
+		my $s = $streets{$file};
+		if (!$s) {
+		    warn "Cannot find street data for $file";
+		    last;
+		}
+		my($pos) = $tags[1] =~ /add-\d+-(\d+)/;
+		if (!defined $pos) {
+		    warn "Cannot find position in tag";
+		    last;
+		}
+		$kr_str = $s->get($pos)->[Strassen::NAME];
+		last;
+	    }
+	}
+
+    }
+    if (!defined $kr_str) {
+	$mw->Busy(-recurse => 1);
+	eval {
+	    ($kr_str) = get_current_street($x,$y);
+	};
+	$mw->Unbusy;
+    }
+    show_balloon($kr_str,$tx,$ty,$ev->x);
+}
+
+sub get_current_street {
+    my($x,$y) = @_;
+    my $kr = $routing->init_crossings;
+    my $kr_str;
+    if ($exact_streetchooser) {
+	my $s = $routing->init_str;
+	my $ret = $s->nearest_point("$x,$y", FullReturn => 1);
+	($x,$y) = split /,/, $ret->{Coord};
+	if ($kr->get($ret->{Coord})) {
+	    $kr_str = $ret->{StreetObj}[Strassen::NAME];
+	    foreach (@{$kr->get("$x,$y")}) {
+		$kr_str .= "/$_"
+		    unless $_ eq $ret->{StreetObj}[Strassen::NAME];
+	    }
+	} else {
+	    $kr_str = $ret->{StreetObj}[Strassen::NAME];
+	}
+    } else {
+	($x,$y) = split /,/, (($kr->nearest_loop($x,$y))[0]);
+	$kr_str = join("/", @{$kr->get("$x,$y")});
+    }
+    ($kr_str,$x,$y);
+}
+
+
+sub mw_key_press {
+    my($w) = @_;
+    my $e = $w->XEvent;
+
+    # Some tricks for the Left/Right button and the iPAQ. The entries
+    # got only the Left/Right events, if from the Keyboard (B1 pressed).
+    # The canvas get all other Left/Right events. Look also at the
+    # $e->bindtags above.
+
+#    if ($e->k == 133) { # arrow button on iPAQ
+#	start_bbbike();
+#    } elsif ($e->k == 132) { # Q button
+#	$mw->iconify;
+#    } els
+    if ($e->K eq 'Up') {
+	$c->$yviewScroll($swapydir*-1, 'units');
+    } elsif ($e->K eq 'Down') {
+	$c->$yviewScroll($swapydir*+1, 'units');
+    } elsif ($e->K eq 'Left' && $e->s !~ /B1-/) {
+	$c->$xviewScroll(-1, 'units');
+    } elsif ($e->K eq 'Right' && $e->s !~ /B1-/) {
+	$c->$xviewScroll(+1, 'units');
+    }
+
+    if ($e->K =~ /^(Left|Right)$/ && $e->s !~ /B1-/) {
+	Tk->break;
+    }
+}
+
+sub swap_start_goal {
+    my($start, $goal) = ($se->get, $ze->get);
+    $_->delete(0, 'end') for ($se, $ze);
+    $se->insert(0, $goal);
+    $ze->insert(0, $start);
+    ($start_coord_valid_for, $ziel_coord_valid_for) = ($ziel_coord_valid_for, $start_coord_valid_for);
+    my($sc,$gc) = ($routing->Start->Coord, $routing->Goal->Coord);
+    $routing->Start->Coord($gc);
+    $routing->Goal->Coord($sc);
+    if ($mw->focusCurrent eq $se) {
+	$ze->focus;
+    } elsif ($mw->focusCurrent eq $ze) {
+	$se->focus;
+    }
+}
+
+sub start_bbbike {
+    my(%args) = @_;
+
+    $mw->Busy(-recurse => 1);
+
+    if (!$continue_search) {
+	$routing->Start->Street($se->get);
+	$routing->Goal->Street($ze->get);
+	if ($routing->Start->Street ne $start_coord_valid_for) {
+	    $routing->Start->Coord(undef);
+	    $routing->Start->Citypart(undef);
+	}
+	if ($routing->Goal->Street ne $ziel_coord_valid_for) {
+	    $routing->Goal->Coord(undef);
+	    $routing->Goal->Citypart(undef);
+	}
+
+	# trim input
+	$routing->{Start}->{Street} =~ s/^\s+//;
+	$routing->{Start}->{Street} =~ s/\s+$//;
+	$routing->{Goal}->{Street} =~ s/^\s+//;
+	$routing->{Goal}->{Street} =~ s/\s+$//;
+
+	# check for non-empty data
+	if (!defined $routing->Start->Coord && $routing->Start->Street eq '') {
+	    error_dialog("Start not defined");
+	    goto CLEANUP;
+	}
+
+	if (!defined $routing->Goal->Coord && $routing->Goal->Street eq '') {
+	    error_dialog("Goal not defined");
+	    goto CLEANUP;
+	}
+	warn "Search " . $routing->Start->Coord . " => " . $routing->Goal->Coord . "\n";
+    }
+    my $orig_from = $routing->Start->Street;
+    my $orig_to   = $routing->Goal->Street;
+
+    $context->Velocity(kmh2ms($average_speed || 20));
+
+    # Qualitätsoptimierung
+ TRY: {
+	my @search_args;
+	if (defined $pref_quality && $pref_quality ne '') {
+	    if (!$qualitaet_s_net) {
+		my $q = Strassen->new("qualitaet_s");
+		if (!$q) {
+		    warn "qualitaet_s nicht vorhanden";
+		    last TRY;
+		}
+		$qualitaet_s_net = StrassenNetz->new($q);
+		$qualitaet_s_net->make_net_cat;
+	    }
+	    my $penalty;
+	    if ($pref_quality eq 'Q2') {
+		$penalty = { "Q0" => 1,
+			     "Q1" => 1.2,
+			     "Q2" => 1.6,
+			     "Q3" => 2 };
+	    } else {
+		$penalty = { "Q0" => 1,
+			     "Q1" => 1,
+			     "Q2" => 1.5,
+			     "Q3" => 1.8 };
+	    }
+	    push @search_args, 'Qualitaet' => {Net => $qualitaet_s_net,
+					       Penalty => $penalty,
+					      };
+	}
+	if (defined $cat_quality && $cat_quality ne "") {
+	    if (!$strcat_net) {
+		$strcat_net = new StrassenNetz $routing->Streets;
+		$strcat_net->make_net_cat;
+	    }
+	    my $penalty;
+	    if ($cat_quality eq 'N2') {
+		$penalty = { "HH" => 4,
+			     "H"  => 4,
+			     "N"  => 1,
+			     "NN" => 1 };
+	    } elsif ($cat_quality eq 'N1') {
+		$penalty = { "HH" => 1.5,
+			     "H"  => 1.5,
+			     "N"  => 1,
+			     "NN" => 1 };
+	    } elsif ($cat_quality eq 'H1') {
+		$penalty = { "HH" => 1,
+			     "H"  => 1,
+			     "N"  => 1.5,
+			     "NN" => 1.5 };
+	    } elsif ($cat_quality eq 'H2') {
+		$penalty = { "HH" => 1,
+			     "H"  => 1,
+			     "N"  => 4,
+			     "NN" => 4 };
+	    }
+	    push @search_args, 'Qualitaet' => {Net => $strcat_net,
+					       Penalty => $penalty,
+					      };
+	}
+	$context->SearchArgs(\@search_args);
+    }
+
+    my $last_path_i;
+    if (!$continue_search) {
+	$routing->Via([]); # clear
+    } else {
+	$last_path_i = scalar $#{$routing->Path};
+    }
+
+    warn "Begin search\n";
+    eval {
+	$routing->search;
+    };
+    if ($@) {
+	error_dialog($@);
+	goto CLEANUP;
+    }
+    warn "End search with routeinfo=" . scalar(@{ $routing->RouteInfo }) . "\n";
+
+    if ($orig_from ne $routing->Start->Street) {
+	set_street_coord('start',
+			 $routing->Start->Street .
+			 (defined $routing->Start->Citypart ?
+			  ' (' . $routing->Start->Citypart . ')' : ''),
+			 $routing->Start->Coord);
+    }
+    if ($orig_to   ne $routing->Goal->Street) {
+	set_street_coord('ziel',
+			 $routing->Goal->Street .
+			 (defined $routing->Goal->Citypart ?
+			  ' (' . $routing->Goal->Citypart . ')' : ''),
+			 $routing->Goal->Coord);
+    }
+
+    redraw_listbox();
+    redraw_path(-lastpathi => $last_path_i,
+		-centerpath => $args{-centerpath});
+
+ CLEANUP:
+    $mw->Unbusy;
+}
+
+sub redraw_listbox {
+    my $m_s = kmh2ms($average_speed);
+    my $last_listbox_i;
+    if ($continue_search) {
+	$last_listbox_i = $list->index("end");
+    }
+    $list->delete(0, 'end');
+    for my $i (0 .. $#{ $routing->RouteInfo }) {
+  	local $_ = ($routing->RouteInfo)->[$i];
+	my $km = m2km($_->{Whole});
+	my $time = $m_s ? s2hm($_->{Whole}/$m_s) : "";
+	$list->insert("end", sprintf("%-2s %-20s %s %s", ($_->{Way}||""), $_->{Street}, $km, $time));
+    }
+    if ($continue_search) {
+	$list->selectionClear(0,"end");
+	$list->selectionSet($last_listbox_i);
+	$list->see($last_listbox_i);
+    }
+}
+
+sub redraw_path {
+    my(%args) = @_;
+    my $last_path_i = $args{-lastpathi};
+
+    if (@{ $routing->Path }) {
+
+	$c->delete('route');
+
+	my @l;
+	foreach my $i (0 .. $#{ $routing->Path }) {
+	    push @l, $transpose->(@{ $routing->Path->[$i] });
+	}
+	# red/blue route:
+	$c->createLine(@l,-dash => [4,2], -width => 3, -fill => 'blue', -tags => 'route');
+	$c->createLine(@l,-dash => [1,3], -width => 3, -fill => 'red', -tags => 'route');
+
+	if ($args{-centerpath} && (!$continue_search || defined $last_path_i)) {
+	    my($x0,$y0) =  $transpose->(@{ $routing->Path->[$continue_search ? $last_path_i : 0] });
+	    my($xl,$yl) =  $transpose->(@{ $routing->Path->[-1] });
+	    $c->see($x0, $y0, $xl, $yl);
+	}
+
+	if (Tk::Exists($zoom)) {
+	    # redraw
+	    $zoom->configure(-route => _path_to_strassen(\@{ $routing->Path }));
+	    $zoom->draw;
+	}
+
+	$route_drawn = 1;
+    }
+
+}
+
+# XXX missing menu entry
+sub scroll_to_route {
+    my($x0,$y0) =  $transpose->(@{ $routing->Path->[0] }); # XXX ? use $last_path_i ? $continue_search ? $last_path_i : 0] });
+    my($xl,$yl) =  $transpose->(@{ $routing->Path->[-1] });
+    $c->see($x0, $y0, $xl, $yl);
+}
+
+sub error_dialog {
+    my($errstr) = @_;
+
+    warn $errstr; # always send message unwrapped to STDERR for diagnostics
+
+    # poor man's wrap
+    $errstr =~ s/(.{1,20})\s+/$1\n/g;
+
+    $mw->messageBox(-type => 'Ok',
+		    -message => $errstr,
+		    -icon => 'error',
+		    -title => 'Error');
+}
+
+# check if the toplevel is too large and resize, if appropriate
+sub toplevel_checker {
+    my($t) = @_;
+
+    if ($mw->property('exists', '_MB_THEME', 'root')) {
+	# assuming we are running matchbox and toplevel resizing is
+	# not necessary
+	return;
+    }
+
+    $t->update;
+    my $mw = $t->toplevel;
+    $menu_height = ($mw->wrapper)[1];
+    my($sw,$sh) = ($t->screenwidth, $t->screenheight-$menu_height);
+    $sw-=3*2;
+    $sh-=($blackbox_title_header+4);
+    my($x,$y,$w,$h) = ($t->x, $t->y, $t->width, $t->height);
+    $w = $sw if ($w > $sw);
+    $h = $sh if ($h > $sh);
+    $x = 0 if ($x+$w > $sw || $x < 0);
+    $y = 0 if ($y+$h > $sh || $y < 0);
+    $t->geometry($w."x".$h."+".($x+$blackbox_x_border)."+".($y+$blackbox_title_header));
+}
+
+sub gsmsender {
+    require BBBikeGSMSender;
+    gsmsender();
+}
+
+sub set_street_coord {
+    my($for, $street, $coord) = @_;
+    if ($for eq 'start') {
+	$routing->Start->Coord($coord);
+	$se->delete(0, 'end');
+	$se->insert('end', $street);
+	$start_coord_valid_for = $street;
+    } elsif ($for eq 'cont_goal') {
+	my $new_goal = BBBikeRouting::Position->new;
+	$new_goal->Coord($coord);
+	$routing->continue($new_goal);
+    } elsif ($for eq 'freehand_start') {
+	my $new_start = BBBikeRouting::Position->new;
+	$new_start->Street("???");
+	$new_start->Coord($coord);
+	$routing->add_position($new_start);
+    } elsif ($for eq 'freehand_goal') {
+	my $new_goal = BBBikeRouting::Position->new;
+	$new_goal->Street("???");
+	$new_goal->Coord($coord);
+	$routing->add_position($new_goal);
+    } else {
+	$routing->Goal->Coord($coord);
+	$ze->delete(0, 'end');
+	$ze->insert('end', $street);
+	$ziel_coord_valid_for = $street;
+    }
+}
+
+sub overview_update {
+    my @a;
+    if ($use_tiles) {
+	@a = $c->get_corners;
+	my($mapx_from, $mapy_from) = (int($a[0]/$tilewidth), int($a[1]/$tileheight));
+	my($mapx_to,   $mapy_to)   = (int($a[2]/$tilewidth)+1, int($a[3]/$tileheight)+1);
+	my $update_needed = 0;
+	my %used;
+	for my $x ($mapx_from .. $mapx_to) {
+	    for my $y ($mapy_from .. $mapy_to) {
+		$used{"$x-$y"}++;
+		if (!$c->{Tile}{"$x-$y"}) {
+		    my $file = "$tiledir/s-$x-$y.xpm.gz";
+		    if (-r $file) {
+			system("gzip -dc $file > /tmp/tile.xpm");
+			my $p = $c->{Tile}{"$x-$y"} =
+			    $c->Pixmap(-file => "/tmp/tile.xpm");
+			$c->createImage($x*$tilewidth, $y*$tileheight, -anchor => "nw",
+					-image => $p,
+					-tags => ["map", "map-$x-$y"]);
+			$update_needed++;
+		    }
+		}
+	    }
+	}
+
+	# cleanup
+	if (keys %{ $c->{Tile} } > $max_tiles) {
+	    my $todel = keys(%{ $c->{Tile} }) - $max_tiles;
+	    while(my($k,$v) = each %{ $c->{Tile} }) {
+		if (!$used{$k}) {
+		    $v->delete if $v;
+		    delete $c->{Tile}{$k};
+		    $todel--;
+		}
+		last if $todel < 1;
+	    }
+	}
+	#XXX warn "No of active tiles: " . scalar(keys %{ $c->{Tile} }) . "\n";
+
+	if ($update_needed) {
+	    $c->lower("map");
+	}
+    }
+    if ($overview_canvas && Tk::Exists($overview_canvas)) {
+	@a = $c->get_corners if !@a; # reuse @a
+	my @c;
+	my $ts = $overview_transpose;
+	for(my $i = 0; $i < $#a; $i+=2) {
+	    push @c, $ts->($anti_transpose->($a[$i], $a[$i+1]));
+	}
+	$overview_canvas->coords('zoomrect', map { int $_ }  @c[0,1, 2,3]);
+	my($midx, $midy) = (($c[2]-$c[0])/2+$c[0],
+			    ($c[3]-$c[1])/2+$c[1]);
+
+	if (!$overview_canvas->is_visible($midx, $midy)) {
+	    $overview_canvas->center_view($midx, $midy);
+	}
+    }
+}
+
+sub create_overview_button {
+    my @b_args = (-highlightthickness => 0, -padx => 0, -pady => 0,
+		  -borderwidth => 0,
+		  -bg => '#c0c0c0',
+		 );
+    if ($scope eq "berlin") {
+	$ov_img = $mw->Pixmap(-file => "$moduledir/images/berlin_overview_small_border.xpm");
+	if ($ov_img) {
+	    $ov_b = $c->Button
+		(@b_args,
+		 -command => \&toggle_overview,
+		 -image => $ov_img);
+	} else {
+	    $ov_b->destroy;
+	}
+    } else {
+	$ov_b = $c->Button
+	    (@b_args,
+	     -command => \&toggle_overview,
+	     -text => "OV");
+    }
+    place_overview_button();
+}
+
+sub toggle_overview {
+    $show_overview = !$show_overview;
+    if ($show_overview) {
+	if (!$overview_canvas || !Tk::Exists($overview_canvas)) {
+	    my($width,$height);
+	    if ($scope eq 'berlin') {
+		$small_img = $mw->Pixmap(-file => "$moduledir/images/berlin_small.xpm");
+		my $draw = do "$moduledir/images/berlin_small.dim";
+		($width, $height) = ($draw->{Width}, $draw->{Height});
+		$overview_canvas = $c->Canvas
+		    (-width => $width,
+		     -height => $height,
+		     -highlightthickness => 0,
+		     -takefocus => 0,
+		     -scrollregion => [0, 0, $width, $height],
+		    );
+		$overview_canvas->createImage(0,0,-anchor=>'nw',
+					      -image => $small_img);
+		$overview_transpose = eval $draw->{TransposeCode}; die $@ if $@;
+	    } else {
+		$width = $c->Width / 4;
+		my $sc = $draw->{Width} / $width;
+		$height = $draw->{Height} * $width / $draw->{Width};
+		$overview_canvas = $c->Canvas
+		    (-width => $width,
+		     -height => $height,
+		     -highlightthickness => 0,
+		     -takefocus => 0,
+		     -scrollregion => [0, 0, $width, $height],
+		    );
+		$overview_transpose = sub {
+		    my($x, $y) = $transpose->(@_);
+		    ($x/$sc, $y/$sc);
+		};
+		my $o = Strassen->new("orte");
+		$o->init;
+		while(1) {
+		    my $r = $o->next;
+		    last if !@{ $r->[Strassen::COORDS] };
+		    next unless $r->[Strassen::NAME] =~ /^(Eberswalde|Cottbus|Brandeburg|Dessau|Prenzlau|Neuruppin|Belzig|Schwedt|Beeskow)$/;
+		    $overview_canvas->createText
+			($overview_transpose->(split /,/, $r->[Strassen::COORDS][0]),
+			 -text => $r->[Strassen::NAME],
+			 -font => "5x7",
+			);
+		}
+		$overview_canvas->createText
+		    ($overview_transpose->(8593,12243), # XXX Brb Tor
+		     -text => "Berlin",
+		     -font => "5x7",
+		    );
+	    }
+
+	    $overview_canvas->createRectangle(0,0,0,0,-tags => 'zoomrect');
+	    my $cl_b = $overview_canvas->Button
+		(-text => 'x',
+		 -bg => "#c0c0c0",
+		 -padx => 0, -pady => 0,
+		 -borderwidth => 0,
+		 -highlightthickness => 0,
+		 -command => \&toggle_overview);
+	    $overview_canvas->createWindow($width, 0,
+					   -anchor => 'ne',
+					   -window => $cl_b);
+
+	    my $real_canvas = $overview_canvas; #XXX ->Subwidget('canvas');
+	    my $scroll_lock;
+	    my $set_scroll_lock = sub {
+		$scroll_lock = $overview_canvas->after
+		    (100,
+		     sub { undef $scroll_lock });
+	    };
+	    my $button_pressed;
+	    my $refresh_sub;
+	    $refresh_sub =
+		sub {
+		    my $w = shift;
+		    my $e = $w->XEvent;
+		    if (!defined $button_pressed) {
+			$button_pressed = $overview_canvas->repeat
+			    (100, sub { $refresh_sub->($w); });
+		    }
+		    return if $scroll_lock;
+		    my($x, $y) = ($e->x, $e->y);
+		    my($xx, $yy) = ($overview_canvas->canvasx($x),
+				    $overview_canvas->canvasy($y));
+		    my $real_canvas_width  = $real_canvas->width;
+		    my $real_canvas_height = $real_canvas->height;
+		    # XXX ist noch etwas ruckartig ... kleinere units,
+		    # intelligenteres Handling!
+		    my $pad = 10;
+		    if ($x < $pad) {
+			$overview_canvas->xview(scroll => -1, 'units');
+			$set_scroll_lock->();
+		    }
+		    if ($y < $pad) {
+			$overview_canvas->yview(scroll => -1, 'units');
+			$set_scroll_lock->();
+		    }
+		    if ($x > $real_canvas_width-$pad) {
+			$overview_canvas->xview(scroll => +1, 'units');
+			$set_scroll_lock->();
+		    }
+		    if ($y > $real_canvas_height-$pad) {
+			$overview_canvas->yview(scroll => +1, 'units');
+			$set_scroll_lock->();
+		    }
+		    my(@oldx) = $c->xview;
+		    my(@oldy) = $c->yview;
+		    my($xwidth) = $oldx[1]-$oldx[0];
+		    my($ywidth) = $oldy[1]-$oldy[0];
+		    $c->xview(moveto => ($xx/$width  - $xwidth/2)
+			     );
+		    $c->yview(moveto => ($yy/$height - $ywidth/2)
+			     );
+		};
+
+	    $real_canvas->Tk::bind('<ButtonPress-1>'  => sub {
+				       $refresh_sub->(@_)
+				   });
+	    $real_canvas->Tk::bind('<B1-Motion>' => sub {
+				       $refresh_sub->(@_)
+				   });
+	    $real_canvas->Tk::bind
+		('<ButtonRelease-1>'
+		 => sub {
+		     if (defined $button_pressed) {
+			 $button_pressed->cancel();
+			 undef $button_pressed;
+		     }
+		 });
+
+	    $overview_canvas->update;
+	    overview_update();
+	}
+	place_overview_canvas();
+	$ov_b->placeForget;
+    } else {
+	$overview_canvas->placeForget;
+	place_overview_button();
+    }
+}
+
+sub place_overview_button {
+    if ($ov_b) {
+	if ($hand eq 'left') {
+	    # Linkshänder
+	    $ov_b->place('-x' => 0, '-y' => 0);
+	} else {
+	    # Rechtshänder
+	    $ov_b->place('-relx' => 1, '-y' => 0, -anchor => 'ne');
+	}
+    }
+}
+
+sub place_overview_canvas {
+    if ($hand eq 'left') {
+	# Linkshänder
+	$overview_canvas->place('-x' => 0, '-y' => 0);
+    } else {
+	# Rechtshänder
+	$overview_canvas->place('-relx' => 1, '-y' => 0, -anchor => 'ne');
+    }
+}
+
+# search the keyboard window and return its geometry, or undef
+sub get_keyboard_extents {
+    my $clients = `xlsclients -al`;
+    return undef if ($clients !~ /(.*)\/Class:[^\n]+\/XVkbd\b/s);
+    my $pre = $1;
+    my $winid;
+    for (reverse split /\n/, $pre) {
+	if (/Window\s+(0x[0-9a-f]+):\s*$/) {
+	    $winid = $1;
+	    last;
+	}
+    }
+    return undef if (!defined $winid);
+
+    my $get_parent;
+    $get_parent = sub {
+	my $id = shift;
+	my $wininfo = `xwininfo -id $id -children`;
+	$wininfo =~ /Parent window id: (0x[0-9a-f]+)\s+(\(the root window)?/;
+	my($parent, $isroot) = ($1, $2);
+	if (defined $isroot) {
+	    $id;
+	} else {
+	    $get_parent->($parent);
+	}
+    };
+
+warn "winid=$winid";
+    $winid = $get_parent->($winid);
+warn "winid wm parent=$winid";
+
+    my $wininfo = `xwininfo -id $winid`;
+    my($w,$h,$xposneg,$x,$yposneg,$y) = $wininfo =~ /-geometry\s+(\d+)x(\d+)([+-])(-?\d+)([+-])(-?\d+)/;
+    ($w,$h,$xposneg,$x,$yposneg,$y);
+}
+
+sub adjust_geometry_for_kbd {
+    if (defined $remember_geometry) {
+	my @extends = parse_geometry_string($remember_geometry);
+warn "parsed=@extends\n";
+	$extends[GEOMETRY_Y] =~ s/^\+-/-/;
+	$extends[GEOMETRY_X] =~ s/^\+-/-/;
+warn "cooked1=@extends\n";
+	$extends[GEOMETRY_Y] += $blackbox_title_header;
+	$extends[GEOMETRY_X] += $blackbox_x_border;
+warn "cooked2=@extends\n";
+	geometry($mw, @extends);
+	undef $remember_geometry;
+	return;
+    }
+
+    $remember_geometry = $mw->geometry;
+    my($kw,$kh,$kxposneg,$kx,$kyposneg,$ky) = get_keyboard_extents();
+warn "kbd ext=($kw,$kh,$kxposneg,$kx,$kyposneg,$ky)\n";
+    die "Can't get keyboard geometry" if (!defined $kw);
+    my $ky0 = ($kyposneg eq '-' ? $mw->screenheight-$ky-$kh : $ky);
+    my $ky1 = $ky0+$kh;
+warn "$ky0 - $ky1\n";
+    my $new_geometry;
+    if ($mw->screenheight - $ky1 < $ky0) {
+	# above
+	$new_geometry = $mw->width."x".($ky0-$menu_height-$blackbox_title_header-4)."+$blackbox_x_border+".($blackbox_title_header+0);
+    } else {
+	# below
+warn $mw->screenheight;
+warn $ky1;
+	$new_geometry = $mw->width."x".($mw->screenheight - $ky1 - $menu_height)."+$blackbox_x_border-0";
+    }
+    warn "new geometry=$new_geometry, remember=$remember_geometry\n";
+    $mw->geometry($new_geometry);
+}
+
+sub parse_geometry_string {
+    my $geometry = shift;
+    my @extends = (0, 0, 0, 0);
+    if ($geometry =~ /([-+]?\d+)x([-+]?\d+)/) {
+	$extends[GEOMETRY_WIDTH] = $1;
+	$extends[GEOMETRY_HEIGHT] = $2;
+    }
+    if ($geometry =~ /([-+]?[-+]\d+)([-+]?[-+]\d+)/) {
+	$extends[GEOMETRY_X] = $1;
+	$extends[GEOMETRY_Y] = $2;
+    }
+    @extends;
+}
+
+# Alternative way to set geometry.
+sub geometry {
+    my($t, @extends) = @_;
+    $extends[GEOMETRY_X] =~ s/^([^+-])/+$1/;
+    $extends[GEOMETRY_Y] =~ s/^([^+-])/+$1/;
+    $t->geometry("$extends[GEOMETRY_WIDTH]x$extends[GEOMETRY_HEIGHT]" .
+		 "$extends[GEOMETRY_X]$extends[GEOMETRY_Y]");
+}
+
+sub read_and_draw_bbd {
+    my(%args) = @_;
+
+    my $directory = $args{-initialdir};
+
+    my($file) = $mw->getOpenFile
+	(-title => "Load bbd file",
+	 -filetypes => [Strassen->filetypes],
+	 (defined $directory ? (-initialdir => $directory) : ()),
+	);
+    return if !defined $file;
+
+    if (-r "$moduledir/standard.desc") {
+	do "$moduledir/standard.desc"; warn $@ if $@;
+    }
+    if ($file =~ /(.*)\.bbd(\.gz)?$/) {
+	my $desc_file = "$1.desc";
+	if (-r $desc_file && -f $desc_file) {
+	    do $desc_file; warn $@ if $@;
+	}
+    }
+
+    my $s = $streets{$file};
+    if (!$s) {
+	$s = Strassen->new($file);
+	$streets{$file} = $s;
+    }
+
+    my $index = (sort (keys %add_data_file))[-1];
+    $index++;
+    $add_data_file{$index} = $file;
+    $s->init;
+    my $pos = -1;
+    while(1) {
+	my $r = $s->next;
+	$pos++;
+	last if !@{$r->[Strassen::COORDS]};
+	my $color;
+	my $width = 2;
+	my $cat = $r->[Strassen::CAT];
+	if ($cat =~ /^\#.{6}$/) {
+	    $color = $cat;
+	} else {
+	    $color = $category_color{$cat} || 'black';
+	}
+	my @extra_line_args;
+	if (defined $line_dash{$cat}) {
+	    push @extra_line_args, -dash => $line_dash{$cat};
+	}
+	if (defined $line_width{$cat}) {
+	    $width = $line_width{$cat};
+	}
+	my(@coords) = map { $transpose->(split /,/, $_) }
+	              @{$r->[Strassen::COORDS]};
+	my $tags = ["add-$index", "add-$index-$pos"];
+	if (@coords == 2) {
+	    $c->createPolygon($coords[0],$coords[1]-2,
+			      $coords[0]+2,$coords[1],
+			      $coords[0],$coords[1]+2,
+			      $coords[0]-2,$coords[1],
+			      -fill => 'black',
+			      -tags => $tags,
+			     );
+	    $c->createLine($coords[0]-1, $coords[1], $coords[0]+1, $coords[1],
+			   -fill => $color,
+			   -tags => $tags,
+			  );
+	} else {
+	    $c->createLine(@coords, -fill => $color, -width => $width,
+			   @extra_line_args, -tags => $tags,
+			  );
+	}
+    }
+
+    # center to first entry
+    $s->init;
+    my $r = $s->next;
+    $c->see($transpose->(split /,/, $r->[Strassen::COORDS][0]));
+
+}
+
+sub delete_bbd_data {
+    my $t  = $mw->Toplevel(-title => "Add data");
+    $t->transient($mw);
+    my $lb = $t->Scrolled("Listbox")->pack;
+    my $fill = sub {
+	$lb->delete(0, "end");
+	foreach my $index (keys %add_data_file) {
+	    $lb->insert("end", "$index $add_data_file{$index}");
+	}
+    };
+    $fill->();
+    $t->Button(-text => "Delete",
+	       -command => sub {
+		   my $lb_index = $lb->curselection;
+		   return if !defined $lb_index;
+		   my($index) = (split /\s+/, $lb->get($lb_index))[0];
+		   $c->delete("add-$index");
+		   my $file = $add_data_file{$index};
+		   delete $streets{$file};
+		   delete $add_data_file{$index};
+		   $fill->();
+	       })->pack;
+    toplevel_checker($t);
+}
+
+sub create_balloon {
+    return if $c->find("withtag","balloon");
+    $c->createRectangle(0,0,0,0,-fill => 'yellow', -outline => 'black',
+			-state => 'hidden', -tags => 'balloon');
+    $c->createText(0,0,-state => 'hidden', -anchor => 'nw', -font => '5x7',
+		   -tags => 'balloontext');
+}
+
+# Arguments: $x/$y canvas coordinates; $sx screen coordinate
+sub show_balloon {
+    my($text,$x,$y,$sx) = @_;
+    my $pad = 2;
+    my $wraplength;
+    $x+=7;$y+=2;
+    $wraplength = $c->width-$sx-2*$pad
+	if defined $sx;
+    $c->itemconfigure('balloon', -state => 'normal');
+    $c->itemconfigure('balloontext', -state => 'normal',
+		      -text => $text, -width => $wraplength);
+    my(@bbox) = $c->bbox('balloontext');
+    my($w,$h) = ($bbox[2]-$bbox[0], $bbox[3]-$bbox[1]);
+    $c->coords('balloon', $x,$y, $x+$w+$pad*2, $y+$h+$pad*2);
+    $c->coords('balloontext', $x+$pad, $y+$pad);
+    $c->raise($_) for (qw/balloon balloontext/);
+}
+
+sub hide_balloon {
+    $c->itemconfigure('balloon', -state => 'hidden');
+    $c->itemconfigure('balloontext', -state => 'hidden');
+}
+
+sub kino_berlin {
+    push @INC, "$moduledir/miscsrc", "$moduledir/../miscsrc";
+    require "kino-berlin.pl";
+
+    $Kino::Berlin::mldbm_file = "/tmp/kino_data.db.gz";
+#    $Kino::Berlin::www_mldbm_file = "http://10.0.0.1/~eserte/test/kino_data.db.gz";
+    $Kino::Berlin::www_mldbm_file = "http://194.140.111.230/data/kino_data.db.gz";
+    #$Kino::Berlin::datadir = "$FindBin::RealBin/tmp";
+    $Kino::Berlin::target = "handheld";
+    #$Kino::Berlin::program_start = "001214";#XXXXXXXXX
+    $Kino::Berlin::tk_use_lbox = 1;
+    Kino::Berlin::init();
+    Kino::Berlin::tk_result
+	    ($mw, [],
+	     -selsignal => sub {
+		 my $res = shift;
+		 $ze->delete(0,"end");
+		 $ze->insert(0, $res->{CinemaName});
+		 $ziel_coord_valid_for = $res->{CinemaName};
+		 $routing->Goal->Coord($res->{Coords});
+		 start_bbbike(-centerpath => 1);
+	     },
+	     -getstartcoords => sub { $routing->Start->Coord },
+	     -geometry => "220x130+0+0",
+	     -transient => 1,
+	    );
+}
+
+sub zoom_window {
+    my $zoom_top = $mw->Toplevel(-title => "Zoom");
+    $zoom_top->transient($mw);
+    require BBBikeZoom;
+    my @streets = ($routing->init_str, $routing->init_zip_s);
+    push @streets, values %streets;
+    $zoom = $zoom_top->BBBikeZoom
+	(-master => $c,
+	 -width => 200,
+	 -height => 200,
+	 -streets => \@streets,
+	 -route => ($routing->Path && @{ $routing->Path } ? _path_to_strassen(\@{ $routing->Path }) : undef),
+	 -closecmd => sub {$zoom_top->destroy;  },
+	 -background => '#999999', # same color as the image background
+	 -predrawcmd => \&zoom_predrawcmd,
+	 -postdrawcmd => \&zoom_postdrawconfig,
+	 -command => sub {
+	     my($w,$tx,$ty) = @_;
+	     $mw->Busy(-recurse => 1);
+	     my $anti_transpose = $zoom->cget(-antitranspose);
+	     if ($anti_transpose) {
+		 my($x,$y) = $anti_transpose->($tx,$ty);
+		 _set_coord_by_xy($x,$y);
+	     }
+	     $mw->Unbusy;
+	 },
+	 -font => "5x7",
+	)->pack;
+    $zoom_top->OnDestroy(sub{$c->delete('zoomrect')});
+    $zoom->idletasks; # XXX!
+    $active_entry = $mw->focusCurrent
+	if $mw->focusCurrent eq $se || $mw->focusCurrent eq $ze;
+    $zoom->focus;
+    my($sx,$sy) = $anti_transpose->($c->get_center);
+    $c->createRectangle(0,0,0,0,-outline => "red", -tags => "zoomrect");
+    $zoom->draw(-extents => [$sx-500,$sy-500,$sx+500,$sy+500]);
+}
+
+sub zoom_predrawcmd {
+    my $zoom = shift;
+    my $ext = $zoom->{Extents};
+    my $width = $ext->[2]-$ext->[0];
+    if ($width > 4000) {
+	$zoom->configure(-restrict => {qw(H 1 HH 1 B 1)});
+	$zoom->configure(-ignore => undef);
+    } elsif ($width > 2000) {
+	$zoom->configure(-restrict => undef);
+	$zoom->configure(-ignore => {qw(X 1 Pl 1)});
+    } else {
+	$zoom->configure(-restrict => undef);
+	$zoom->configure(-ignore => undef);
+    }
+}
+
+sub zoom_postdrawconfig {
+    my $zoom = shift;
+    my $c = $zoom->Subwidget("Canvas");
+    $c->itemconfigure("s-B", -fill => "red", -width => 5);
+    $c->itemconfigure("s-HH", -fill => "yellow", -width => 5);
+    $c->itemconfigure("s-H", -fill => "yellow", -width => 4);
+    $c->itemconfigure("s-N", -fill => "white", -width => 3);
+    $c->itemconfigure("s-NN", -fill => "green", -width => 2);
+    $c->itemconfigure("s-Route", -fill => "blue", -width => 2);
+    my $master = $zoom->cget(-master);
+    my(@extents) = @{$zoom->{Extents}};
+    my($tx1,$ty1) = $transpose->(@extents[0,1]);
+    my($tx2,$ty2) = $transpose->(@extents[2,3]);
+    $master->coords("zoomrect", $tx1,$ty1,$tx2,$ty2);
+}
+
+sub scan_zip_file {
+    my $plz_file = $routing->init_zip->{File};
+    if (open(ZIP, $plz_file)) {
+	while(<ZIP>) {
+	    my $zip_firstch = lc substr($_, 0, 1);
+	    if (!exists $zip_firstch{$zip_firstch}) {
+		$zip_firstch{$zip_firstch} = tell(ZIP)-length($_);
+	    }
+	}
+	seek(ZIP,0,0);
+    } else {
+	warn "Can't open zip file $plz_file: $!";
+    }
+}
+
+sub get_street_choices {
+    my($w, $pathname) = @_;
+    return if $scope !~ /^(city|berlin)$/;
+    my $zip_firstch = lc substr($pathname, 0, 1);
+    if (exists $zip_firstch{$zip_firstch}) {
+	seek ZIP, $zip_firstch{$zip_firstch}, 0;
+    }
+    my $conv = sub {
+	my(@s) = split(/\|/,$_[0]);
+	if (defined $s[3] && $s[3] ne "") {
+	    "$s[0] ($s[1])";
+	} else {
+	    undef;
+	}
+    };
+    my @f;
+    local $_;
+    while(<ZIP>) {
+	if (/^\Q$pathname/i) {
+	    chomp;
+	    my $s = $conv->($_);
+	    push @f, $s if defined $s;
+	    last;
+	}
+    }
+    while(<ZIP>) {
+	chomp;
+	my $s = $conv->($_);
+	push @f, $s if defined $s && (!@f || $s ne $f[-1]);
+	last if @f >= 10;
+    }
+    \@f;
+}
+
+sub _path_to_strassen {
+    my($path_ref) = @_;
+    Strassen->new_from_data(
+        "Route\tRoute " . join(" ", map { "$_->[0],$_->[1]" } @$path_ref) . "\n"
+    );
+}
+
+sub _set_active_entry {
+    my $e = shift;
+    $active_entry = $e;
+    $e->focus;
+}
+
+sub speak {
+    if ($routing && $routing->RouteInfo && @{ $routing->RouteInfo }) {
+	if (-x "/tmp/flite16k") {
+	    my $text = "";
+	    for my $i (0 .. $#{ $routing->RouteInfo }) {
+		local $_ = ($routing->RouteInfo)->[$i];
+		$text .= ($_->{Way} =~ /r/i
+			  ? "right into"
+			  : $_->{Way} =~ /l/i
+			  ? "left into"
+			  : "then");
+		my $street = $_->{Street};
+		$street =~ s/str\./strasse/gi;
+		$street =~ s/[Ää]/ae/g;
+		$street =~ s/[Öö]/oe/g;
+		$street =~ s/[Üü]/ue/g;
+		$street =~ s/ß/ss/g;
+		$text .= " $street.\n";
+	    }
+	    warn $text;
+	    open(SPEAK, "|/tmp/flite16k");
+	    print SPEAK $text;
+	    close SPEAK;
+	}
+    }
+}
+
+sub set_lat_long {
+    my($lat,$long) = @_;
+    require Karte;
+    Karte::preload(qw(Polar Standard));
+    my($x,$y) = $Karte::map{"polar"}->map2standard($long,$lat);
+    if ($x > $draw->{Max_x} || $x < $draw->{Min_x} ||
+	$y > $draw->{Max_y} || $y < $draw->{Min_y}) {
+	die "Not in scope. Got $x/$y from $lat/$long, bbox is $draw->{Min_x}/$draw->{Min_y} - $draw->{Max_x}/$draw->{Max_y}";
+    }
+    if (!Tk::Exists($c)) {
+	die "The canvas $c does not exist";
+    }
+    # XXX combine these two:
+    set_mark($transpose->($x,$y));
+    if (Tk::Exists($zoom)) {
+	$zoom->center($x,$y);
+    }
+}
+
+sub tk_set_lat_long {
+    push @INC, ("$moduledir/..",
+		"$moduledir/miscsrc",
+		"$moduledir/../miscsrc");
+    require "tkpolarinput.pl";
+    tkpolarinput($mw, \&set_lat_long);
+}
+
+sub get_lat_long {
+    push @INC, ("$moduledir/..",
+		"$moduledir/miscsrc",
+		"$moduledir/../miscsrc");
+    require Karte;
+    Karte::preload(qw(Polar Standard));
+    my $coord = $routing->Start->Coord;
+    if (!defined $coord || $coord eq '') {
+	$mw->messageBox(-message => "Start coord not defined");
+	return;
+    }
+    my($px,$py) = $Karte::Standard::obj->map2map($Karte::Polar::obj,
+						 split /,/, $coord);
+    my($long_deg,$long_min,$long_sec) = Karte::Polar::ddd2dms($px);
+    my($lat_deg,$lat_min,$lat_sec) = Karte::Polar::ddd2dms($py);
+    $mw->messageBox(-message =>
+		    "Long: $long_deg°".$long_min."'".$long_sec.'"'."\n".
+		    "Lat:  $lat_deg°".$lat_min."'".$lat_sec.'"'."\n");
+
+}
+
+# interface to GPS::DirectGarmin
+sub gps_interface {
+    my $simulate = shift;
+
+    if (!$routing->Path || !@{ $routing->Path }) {
+	$mw->messageBox(-message => "No route to send");
+	return;
+    }
+    my @realcoords = @{ $routing->Path };
+
+    my %extra_args;
+    $extra_args{-test} = $simulate;
+
+    require GPS::DirectGarmin;
+    require Strassen::StrassenNetz;
+    require Route;
+    my $modobj = GPS::DirectGarmin->new;
+    my $gps_route_info = {};
+    die if !$modobj->can("tk_interface");
+    return if !$modobj->tk_interface(-top => $mw,
+				     -gpsrouteinfo => $gps_route_info,
+				     -test => $extra_args{-test});
+
+    # simplify auto:
+    my $routetoname;
+    my $export_txt_min_angle = 30;
+    my $step = 5;
+    my $gps_device = $^O eq 'freebsd' ? '/dev/cuaa0' : '/dev/ttySA0';
+    my $net = $routing->init_net;
+    my $str = $routing->init_str;
+    for(my $tryangle = 5; $tryangle <= 90; $tryangle+=$step) {
+	$routetoname = [StrassenNetz::simplify_route_to_name
+			([$net->route_to_name([@realcoords],-startindex=>0,-combinestreet=>0)],
+			 -minangle => $tryangle, -samestreet => 1)];
+	if (@$routetoname <= 50) { # XXX don't hardcode max. waypoints in route
+	    warn "Export simplify mode: auto; using $tryangle° as minimum angle";
+	    last;
+	}
+	if ($tryangle+$step > $export_txt_min_angle) {
+	    $step = 15;
+	}
+    }
+    $extra_args{"-routetoname"} = $routetoname;
+
+    if ($scope =~ /muenchen/i) {
+	warn "Assume GKK";
+	require Karte::UTM;
+	$extra_args{'-convmeth'} = sub {
+	    my($x, $y) = @_;
+	    ($y, $x) = Karte::UTM::GKKToDegrees(4, $x, $y, "Potsdam");
+	    ($y, $x) = Karte::UTM::ConvertDatum($y, $x, "Potsdam", "WGS 84", "DDD");
+	    ($x, $y);
+	};
+    }
+
+    my $res = $modobj->convert_from_route
+	(Route->new_from_realcoords(\@realcoords),
+	 -streetobj   => $str,
+	 -netobj      => $net,
+	 -routename   => $gps_route_info->{Name},
+	 -routenumber => $gps_route_info->{Number},
+	 -wptprefix   => $gps_route_info->{WptPrefix},
+	 -gpsdevice   => $gps_device,
+	 %extra_args,
+	);
+    eval {
+	$modobj->transfer(-res => $res,
+			  -test => $extra_args{-test},
+			  -top => $mw,
+			 );
+    };
+    if ($@) {
+	error_dialog("Error while sending:\n$@");
+    }
+}
+
+sub gps_download {
+    require BBBikeGPSDialog;
+    $mw->BBBikeGPSDialog(-canvas => $c, -transpose => $transpose);
+}
+
+sub reset {
+    $routing->Via([]);
+    $routing->Path([]);
+    $routing->RouteInfo([]);
+    redraw_listbox();
+    $c->delete('route');
+    $continue_search = 0;
+    $se->focus;
+}
+
+sub delete_to_last_via {
+    if (ref $routing->Via ne 'ARRAY' || @{$routing->Via} == 0) {
+	$mw->messageBox(-icon => "info",
+			-message => "No Vias");
+    } else {
+	$routing->delete_to_last_via;
+	redraw_listbox();
+	redraw_path();
+    }
+}
+
+sub show_vias {
+    if (ref $routing->Via ne 'ARRAY' || @{$routing->Via} == 0) {
+	$mw->messageBox(-icon => "info",
+			-message => "No Vias");
+    } else {
+	$mw->messageBox(-icon => "info",
+			-message => join("\n", map { defined $_->Street ? $_->Street . " (" . $_->Citypart . ")" : $_->Coord } @{$routing->Via}));
+    }
+}
+
+sub cleanup {
+    $transpose_image->delete, undef $transpose_image if $transpose_image;
+    $start_image->delete, undef $start_image if $start_image;
+    $browse_image->delete, undef $browse_image if $browse_image;
+    $center_image->delete, undef $center_image if $center_image;
+    $ov_img->delete, undef $ov_img if $ov_img;
+    $small_img->delete, undef $small_img if $small_img;
+
+    cleanup_map_photos();
+}
+
+sub cleanup_canvas {
+    cleanup_map_photos(1);
+}
+
+sub cleanup_map_photos {
+    my $no_canvas_operations = shift;
+    $map->delete, undef $map if $map;
+
+    # cleanup tile photos
+    if (Tk::Exists($c)) {
+	while(my($k1,$v1) = each %{ $c->{Tile} }) {
+	    $v1->delete;
+	    delete $c->{Tile}->{$k1};
+	}
+	$c->delete("map") unless $no_canvas_operations;
+    }
+}
+
+return 1 if caller;
+
+parse_cmd_line();
+main_gui(undef);
+Tk::MainLoop();

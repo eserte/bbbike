@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.10 2003/09/02 21:45:10 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.10 2003/09/02 21:45:10 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -136,7 +136,7 @@ rsync-vran-spiff-hermes:
 ######################################################################
 #
 
-CVS_DIR=/home/e/eserte/work/bbbike
+CVS_DIR=${HOME}/work/bbbike
 
 # XXX create or copy .cvsignore with ext/*/*Dist.pm files
 copy-to-cvs:	MANIFEST.withcvs
@@ -158,10 +158,10 @@ diff-with-cvs:	MANIFEST.withcvs
 cvs-add-missing-disconnected:
 	@echo Do not use this command without doing cvs update -ko
 	@sleep 5
-	cd ${CVS_DIR} && cvsu | grep '^\?' | cut -c2- | xargs cvsdo add
+	cd ${CVS_DIR} && cvsu | grep '^[\?D]' | cut -c2- | xargs cvsdo add
 
 cvs-add-missing:
-	cd ${CVS_DIR} && cvsu | grep '^\?' | cut -c2- | xargs cvs add -ko
+	cd ${CVS_DIR} && cvsu | grep '^[\?D]' | cut -c2- | xargs cvs add -ko
 
 cvs-standard-commit:
 	cd ${CVS_DIR} && cvs -z9 commit -m ""

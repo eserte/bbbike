@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.22 2003/06/28 09:06:28 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.23 2003/09/09 21:43:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -81,8 +81,8 @@ EOF
        # weiß nach hellgrau ummappen (außer, wenn alle Straßen outlined sind)
        ($args{-no_color_map}
 	? ()
-	: (-colormap => {'grey99' => ($is_outline ? '1 1 1 setrgbcolor' : '0.9 0.9 0.9 setrgbcolor'),
-			 'grey85' => '1 1 1 setrgbcolor', # Inseln etc.
+	: (-colormap => {$category_color{"N"} => ($is_outline ? '1 1 1 setrgbcolor' : '0.9 0.9 0.9 setrgbcolor'),
+			 $category_color{"I"} => '1 1 1 setrgbcolor', # Inseln etc.
 			})),
        # XXX rotierte Fonts können nicht umgemapt werden
        # XXX Fontmap für Arial?

@@ -6015,6 +6015,7 @@ sub reset_button_command {
 }
 
 sub change_net_type {
+    undef $handicap_s_net;
     if ($net_type eq "r") {
 	*set_coords = \&set_coords_rbahn;
     } elsif ($net_type eq "us") {
@@ -13494,9 +13495,14 @@ sub make_net {
 		    push @bhf_source, $p_obj{$_};
 		}
 		my $bhf_obj = new MultiStrassen @bhf_source;
-		# XXX -addmap gehört nicht hier rein!!!!
+		$handicap_s_net = StrassenNetz->new(Strassen->new);
+		my $h_net = $handicap_s_net->{Net} = {};
 		$net->add_umsteigebahnhoefe
-		    ($bhf_obj, -addmapfile => 'umsteigebhf');
+		    ($bhf_obj, -addmapfile => 'umsteigebhf',
+		     -cb => sub {
+			 my($self, $p1, $p2, $entf, $name) = @_;
+			 $h_net->{$p1}{$p2} = "q4"; # XXX just a hack to see some results... A best solution is to use the forthcoming penalty solution for the Marathon
+		     });
 	    }
 	};
 
@@ -13740,7 +13746,14 @@ sub user_edit_street {
 #    my(@tags) = $c->gettags('current');
 #    return if !@tags;
 #    if ($tags[0] =~ /^[sSlL]$/) {
-    my($item, @tags) = find_below($c, qw/s l/);
+    my(@click_items) = ($net_type eq 's'
+			? qw(s l)
+			: ($net_type =~ /^(r|us|rus)$/
+			   ? map { $_ eq 's' ? 'b' : $_ } split //, $net_type
+			   : warn "Unhandled net type $net_type"
+			  )
+		       );
+    my($item, @tags) = find_below($c, @click_items);
     if (defined $item) {
 	my($pos, @points) = nearest_line_points_mouse($c, @tags);
 	my($xy1,$xy2) = (join(",",@{$points[1]}), join(",",@{$points[2]}));

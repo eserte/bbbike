@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.54 2003/09/02 21:38:29 eserte Exp $
+# $Id: bbbike.cgi,v 6.55 2003/09/09 20:40:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -607,7 +607,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.54 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.55 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -2055,9 +2055,25 @@ EOF
 #      }
 #  }
 
+sub get_cookie {
+    $q->cookie(-name => $cookiename,
+	       -path => $q->url(-absolute => 1),
+	      );
+}
+
+sub set_cookie {
+    my($href) = @_;
+    $q->cookie
+	(-name => $cookiename,
+	 -value => $href,
+	 -expires => '+1y',
+	 -path => $q->url(-absolute => 1),
+	);
+}
+
 sub settings_html {
     # Einstellungen ########################################
-    my %c = $q->cookie(-name => $cookiename);
+    my %c = get_cookie();
 
     if ($q->param("pref_seen")) {
 	foreach my $key (@pref_keys) {
@@ -2068,13 +2084,18 @@ sub settings_html {
     my(%strcat)    = ("" => 0, "N1" => 1, "N2" => 2, "H1" => 3, "H2" => 4);
     my(%strqual)   = ("" => 0, "Q0" => 1, "Q2" => 2);
     my(%strrouten) = ("" => 0, "RR" => 1);
+    my(%strgreen)  = ("" => 0, "GR1" => 1, "GR2" => 2);
 
     my $default_speed   = (defined $c{"pref_speed"}   ? $c{"pref_speed"}+0 : 20);
     my $default_cat     = (defined $c{"pref_cat"}     ? $c{"pref_cat"}     : "");
     my $default_quality = (defined $c{"pref_quality"} ? $c{"pref_quality"} : "");
     my $default_ampel   = (defined $c{"pref_ampel"} && $c{"pref_ampel"} eq 'yes' ? 1 : 0);
     my $default_routen  = (defined $c{"pref_routen"}  ? $c{"pref_routen"}  : "");
-    my $default_green   = (defined $c{"pref_green"} && $c{"pref_green"} eq 'yes' ? 1 : 0);
+    my $default_green   = (defined $c{"pref_green"}   ? $c{"pref_green"}   : "");
+    # Backward compatibility:
+    if ($default_green eq 'yes') {
+	$default_green = 2;
+    }
 
     my $cat_checked = sub { my $val = shift;
 			    'value="' . $val . '" ' .
@@ -2088,6 +2109,10 @@ sub settings_html {
 			       'value="' . $val . '" ' .
 			       ($default_routen eq $val ? "selected" : "")
 			 };
+    my $green_checked = sub { my $val = shift;
+			      'value="' . $val . '" ' .
+			      ($default_green eq $val ? "selected" : "")
+			};
 
     print <<EOF;
 <input type=hidden name="pref_seen" value=1>
@@ -2121,11 +2146,15 @@ EOF
 #  </select></td></tr>-->
     print <<EOF;
 <tr><td>Ampeln vermeiden:</td><td><input type=checkbox name="pref_ampel" value=yes @{[ $default_ampel?"checked":"" ]}></td>
-<tr><td>Grüne Wege bevorzugen:</td><td><input type=checkbox name="pref_green" value=yes @{[ $default_green?"checked":"" ]}></td>
+<tr><td>Grüne Wege:</td><td><select $bi->{hfill} name="pref_green">
+<option @{[ $green_checked->("") ]}>egal
+<option @{[ $green_checked->("GR1") ]}>bevorzugen
+<option @{[ $green_checked->("GR2") ]}>stark bevorzugen <!-- expr? -->
+</select></td>
 EOF
     if ($bi->{'can_javascript'}) {
 	print <<EOF
-<td><input type=button value="Reset" onclick="return reset_form($default_speed, @{[defined $strcat{$default_cat} ? $strcat{$default_cat} : 0]}, @{[defined $strqual{$default_quality} ? $strqual{$default_quality}: 0]}, @{[defined $strrouten{$default_routen} ? $strrouten{$default_routen} : 0]}, @{[ $default_ampel?"true":"false" ]}, @{[ $default_green?"true":"false" ]});"></td>
+<td><input type=button value="Reset" onclick="return reset_form($default_speed, @{[defined $strcat{$default_cat} ? $strcat{$default_cat} : 0]}, @{[defined $strqual{$default_quality} ? $strqual{$default_quality}: 0]}, @{[defined $strrouten{$default_routen} ? $strrouten{$default_routen} : 0]}, @{[ $default_ampel?"true":"false" ]}, @{[defined $strgreen{$default_green} ? $strgreen{$default_green} : 0]});"></td>
 EOF
     }
 print <<EOF;
@@ -2275,10 +2304,15 @@ sub search_coord {
 	    $green_net = new StrassenNetz(Strassen->new("green"));
 	    $green_net->make_net_cat;
 	}
-	my $penalty = { "green0" => 3,
-			"green1" => 2,
-			"green2" => 1,
-		      };
+	my $penalty = ($q->param('pref_green') eq 'GR1'
+		       ? { "green0" => 2,
+			   "green1" => 1.5,
+			   "green2" => 1,
+			 }
+		       : { "green0" => 3,
+			   "green1" => 2,
+			   "green2" => 1,
+		       });
 	$extra_args{Green} =
 	    {Net => $green_net,
 	     Penalty => $penalty,
@@ -2811,19 +2845,14 @@ sub search_coord {
 	return;
     }
 
-    %persistent = $q->cookie(-name => $cookiename);
+    %persistent = get_cookie();
     foreach my $key (@pref_keys) {
 	$persistent{"pref_$key"} = $q->param("pref_$key");
 	if (!defined $persistent{"pref_$key"}) {
 	    $persistent{"pref_$key"} = "";
 	}
     }
-    my $cookie = $q->cookie
-	(-name => $cookiename,
-	 -value => { %persistent },
-	 -expires => '+1y',
-	 -path => $q->url(-absolute => 1),
-	);
+    my $cookie = set_cookie({ %persistent });
 
     http_header(@weak_cache,
 		-cookie => $cookie,
@@ -3485,7 +3514,7 @@ sub draw_route {
     }
 
     my $cookie;
-    %persistent = $q->cookie(-name => $cookiename);
+    %persistent = get_cookie();
     if (defined $q->param("interactive")) {
 	foreach my $key (qw/outputtarget imagetype geometry/) {
 	    $persistent{$key} = $q->param($key);
@@ -3496,12 +3525,7 @@ sub draw_route {
 	    $persistent{"draw$i"} = $_;
 	    $i++;
 	}
-	$cookie = $q->cookie
-	    (-name => $cookiename,
-	     -value => { %persistent },
-	     -expires => '+1y',
-	     -path => $q->url(-absolute => 1),
-	    );
+	$cookie = set_cookie({ %persistent });
     }
 
     # XXX move to BBBikeDraw::Mapserver!

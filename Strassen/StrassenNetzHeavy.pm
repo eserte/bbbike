@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetzHeavy.pm,v 1.14 2003/09/02 21:45:28 eserte Exp $
+# $Id: StrassenNetzHeavy.pm,v 1.14 2003/09/02 21:45:28 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -521,11 +521,18 @@ sub add_faehre {
 # (Multi)Strassen-Objekt der Bahnhöfe
 # optional: -addmap     (Mapping der Umsteigebahnhöfe)
 #           -addmapfile (Datei mit Mapping)
+#	    -cb         (Callback which will be called for each added line.
+#		         Callback args are: $self, $coords1, $coords2, $entf,
+#			 		    $name_of_link_point
+#                        The callback is called only once (should be repeated
+#                        for both directions) and also for zero-length
+#			 change situations.)
 ### AutoLoad Sub
 sub add_umsteigebahnhoefe {
     my($self, $bhf_obj, %args) = @_;
 
-    # XXX untested
+    my $cb = delete $args{-cb};
+
     if (exists $args{-addmapfile}) {
     TRY: {
 	    foreach my $dir (@Strassen::datadirs) {
@@ -560,11 +567,13 @@ sub add_umsteigebahnhoefe {
 	my $coords = $ret->[Strassen::COORDS()][0];
 	if (exists $bahnhoefe{$name}) {
 	    foreach my $p (@{ $bahnhoefe{$name} }) {
+		my $entf = 0;
 		if ($coords ne $p) {
-		    my $entf = Strassen::Util::strecke_s($coords, $p);
+		    $entf = Strassen::Util::strecke_s($coords, $p);
 		    $self->store_to_hash($self->{Net}, $coords, $p, $entf);
 		    $self->store_to_hash($self->{Net}, $p, $coords, $entf);
 		}
+		if ($cb) { $cb->($self, $coords, $p, $entf, $name) }
 	    }
 	    push @{ $bahnhoefe{$name} }, $coords;
 	} else {
