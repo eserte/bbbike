@@ -22,11 +22,17 @@ use strict;
 use vars qw($VERSION);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
-my $streets_track      = "$ENV{HOME}/src/bbbike/tmp/streets.bbd";
-my $orig_streets_track = "$ENV{HOME}/src/bbbike/tmp/streets.bbd-orig";
-my $acc_streets_track  = "$ENV{HOME}/src/bbbike/tmp/streets-accurate.bbd";
-my $acc_streets_uncorrect_track = "$ENV{HOME}/src/bbbike/tmp/streets-accurate-uncorrected.bbd";
-my $acc_points_uncorrect_track = "$ENV{HOME}/src/bbbike/tmp/points-all-uncorrected.bbd";
+my $bbbike_rootdir;
+if (-e "$FindBin::RealBin/bbbike") {
+    $bbbike_rootdir = $FindBin::RealBin;
+} else {
+    $bbbike_rootdir = "$ENV{HOME}/src/bbbike";
+}
+my $streets_track      = "$bbbike_rootdir/tmp/streets.bbd";
+my $orig_streets_track = "$bbbike_rootdir/tmp/streets.bbd-orig";
+my $acc_streets_track  = "$bbbike_rootdir/tmp/streets-accurate.bbd";
+my $acc_streets_uncorrect_track = "$bbbike_rootdir/tmp/streets-accurate-uncorrected.bbd";
+my $acc_points_uncorrect_track = "$bbbike_rootdir/tmp/points-all-uncorrected.bbd";
 
 use vars qw($hm_layer);
 
@@ -131,16 +137,17 @@ sub add_button {
 		   $t->Button(Name => "close",
 			      -command => sub { $t->destroy })->pack;
 	       }],
-	      [Button => "My edit mode",
-	       -command => sub {
-		   require BBBikeEdit;
-		   require BBBikeExp;
-		   main::plot("str","s", -draw => 0);
-		   main::switch_edit_berlin_mode();
-		   main::bbbikeexp_reload_all();
-		   BBBikeEdit::editmenu($main::top);
-		   main::plot('str','fz', -draw => 1);
-	       }],
+##XXX del obsoleted by EDIT button
+# 	      [Button => "My edit mode",
+# 	       -command => sub {
+# 		   require BBBikeEdit;
+# 		   require BBBikeExp;
+# 		   main::plot("str","s", -draw => 0);
+# 		   main::switch_edit_berlin_mode();
+# 		   main::bbbikeexp_reload_all();
+# 		   BBBikeEdit::editmenu($main::top);
+# 		   main::plot('str','fz', -draw => 1);
+# 	       }],
 	      [Button => "Standard upload all",
 	       -command => sub { upload("upload") },
 	      ],
@@ -160,13 +167,14 @@ sub add_button {
 		   add_new_layer("str", $f);
 	       }
 	      ],
-	      [Button => "Add streets-accurate-uncorrected.bbd (for region editing)",
-	       -command => sub {
-		   my $f = $acc_streets_uncorrect_track;
-		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
-		   add_new_layer("str", $f);
-	       }
-	      ],
+##XXX del obsoleted by great conversion
+# 	      [Button => "Add streets-accurate-uncorrected.bbd (for region editing)",
+# 	       -command => sub {
+# 		   my $f = $acc_streets_uncorrect_track;
+# 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
+# 		   add_new_layer("str", $f);
+# 	       }
+# 	      ],
 	      [Button => "Add streets.bbd (all GPS tracks)",
 	       -command => sub {
 		   my $f = $streets_track;
@@ -181,13 +189,14 @@ sub add_button {
 		   add_new_layer("p", $f);
 	       }
 	      ],
-	      [Button => "Add points-accurate-uncorrected.bbd (for region editing)",
-	       -command => sub {
-		   my $f = $acc_points_uncorrect_track;
-		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
-		   add_new_layer("p", $f);
-	       }
-	      ],
+##XXX del obsoleted by great conversion
+# 	      [Button => "Add points-accurate-uncorrected.bbd (for region editing)",
+# 	       -command => sub {
+# 		   my $f = $acc_points_uncorrect_track;
+# 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
+# 		   add_new_layer("p", $f);
+# 	       }
+# 	      ],
 	      [Button => "Add hm96.bbd (Höhenpunkte)",
 	       -command => sub {
 		   my $f = "$ENV{HOME}/src/bbbike/miscsrc/senat_b/hm96.bbd";
@@ -196,15 +205,16 @@ sub add_button {
 		   $main::top->bind("<F12>"=> \&find_nearest_hoehe);
 	       }
 	      ],
-	      [Button => "Edit in normal mode",
-	       -command => \&edit_in_normal_mode,
-	      ],
-	      [Button => "Edit in normal mode (landstrassen)",
-	       -command => \&edit_in_normal_mode_landstrassen,
-	      ],
-	      [Button => "Cancel edit in normal mode",
-	       -command => \&cancel_edit_in_normal_mode,
-	      ],
+##XXX del obsoleted by great conversion
+# 	      [Button => "Edit in normal mode",
+# 	       -command => \&edit_in_normal_mode,
+# 	      ],
+# 	      [Button => "Edit in normal mode (landstrassen)",
+# 	       -command => \&edit_in_normal_mode_landstrassen,
+# 	      ],
+# 	      [Button => "Cancel edit in normal mode",
+# 	       -command => \&cancel_edit_in_normal_mode,
+# 	      ],
 	      [Button => "Show vmz diff",
 	       -command => \&show_vmz_diff,
 	      ],
@@ -261,62 +271,63 @@ sub show_lbvs_diff {
     main::choose_ort("str", $abk);
 }
 
-sub edit_in_normal_mode {
-    require BBBikeEdit;
-    my $map = "standard";
-    if (0) {
-	BBBikeEdit->draw_pp("strassen", -abk => "s");
-    } else {
-	require BBBikeExp;
-	BBBikeExp::bbbikeexp_add_data_by_subs
-		("p","pp",
-		 init      => sub {
-		     BBBikeEdit->draw_pp_init_code("strassen", -abk => "s")
-		 },
-		 draw      => \&BBBikeEdit::draw_pp_draw_code,
-		 post_draw => \&BBBikeEdit::draw_pp_post_draw_code,
-		);
-    }
-    main::set_coord_output_sub($map);
-    $SRTShortcuts::force_edit_mode = 1;
-    $main::use_current_coord_prefix = 0;
-    $main::coord_prefix = undef;
-    main::set_map_mode(&main::MM_BUTTONPOINT);
-}
+##XXX del obsoleted by great conversion
+# sub edit_in_normal_mode {
+#     require BBBikeEdit;
+#     my $map = "standard";
+#     if (0) {
+# 	BBBikeEdit->draw_pp("strassen", -abk => "s");
+#     } else {
+# 	require BBBikeExp;
+# 	BBBikeExp::bbbikeexp_add_data_by_subs
+# 		("p","pp",
+# 		 init      => sub {
+# 		     BBBikeEdit->draw_pp_init_code("strassen", -abk => "s")
+# 		 },
+# 		 draw      => \&BBBikeEdit::draw_pp_draw_code,
+# 		 post_draw => \&BBBikeEdit::draw_pp_post_draw_code,
+# 		);
+#     }
+#     main::set_coord_output_sub($map);
+#     $SRTShortcuts::force_edit_mode = 1;
+#     $main::use_current_coord_prefix = 0;
+#     $main::coord_prefix = undef;
+#     main::set_map_mode(&main::MM_BUTTONPOINT);
+# }
 
-sub edit_in_normal_mode_landstrassen {
-    require BBBikeEdit;
-    my $map = "standard";
-    if (0) {
-	BBBikeEdit->draw_pp(["landstrassen", "landstrassen2"], -abk => "l");
-    } else {
-	require BBBikeExp;
-	BBBikeExp::bbbikeexp_add_data_by_subs
-		("p","pp",
-		 init      => sub {
-		     BBBikeEdit->draw_pp_init_code(["landstrassen", "landstrassen2"], -abk => "l")
-		 },
-		 draw      => \&BBBikeEdit::draw_pp_draw_code,
-		 post_draw => \&BBBikeEdit::draw_pp_post_draw_code,
-		);
-    }
-    main::set_coord_output_sub($map);
-    $SRTShortcuts::force_edit_mode = 1;
-    $main::use_current_coord_prefix = 0;
-    $main::coord_prefix = undef;
-    main::set_map_mode(&main::MM_BUTTONPOINT);
-}
+# sub edit_in_normal_mode_landstrassen {
+#     require BBBikeEdit;
+#     my $map = "standard";
+#     if (0) {
+# 	BBBikeEdit->draw_pp(["landstrassen", "landstrassen2"], -abk => "l");
+#     } else {
+# 	require BBBikeExp;
+# 	BBBikeExp::bbbikeexp_add_data_by_subs
+# 		("p","pp",
+# 		 init      => sub {
+# 		     BBBikeEdit->draw_pp_init_code(["landstrassen", "landstrassen2"], -abk => "l")
+# 		 },
+# 		 draw      => \&BBBikeEdit::draw_pp_draw_code,
+# 		 post_draw => \&BBBikeEdit::draw_pp_post_draw_code,
+# 		);
+#     }
+#     main::set_coord_output_sub($map);
+#     $SRTShortcuts::force_edit_mode = 1;
+#     $main::use_current_coord_prefix = 0;
+#     $main::coord_prefix = undef;
+#     main::set_map_mode(&main::MM_BUTTONPOINT);
+# }
 
-sub cancel_edit_in_normal_mode {
-    require BBBikeEdit;
-    for my $abk (qw(s l)) {
-	BBBikeEdit->draw_pp([], -abk => $abk);
-    }
-    main::set_coord_output_sub("standard");
-    $SRTShortcuts::force_edit_mode = 0;
-    $main::use_current_coord_prefix = 0;
-    $main::coord_prefix = undef;
-}
+# sub cancel_edit_in_normal_mode {
+#     require BBBikeEdit;
+#     for my $abk (qw(s l)) {
+# 	BBBikeEdit->draw_pp([], -abk => $abk);
+#     }
+#     main::set_coord_output_sub("standard");
+#     $SRTShortcuts::force_edit_mode = 0;
+#     $main::use_current_coord_prefix = 0;
+#     $main::coord_prefix = undef;
+# }
 
 sub define_subs {
     package main;
