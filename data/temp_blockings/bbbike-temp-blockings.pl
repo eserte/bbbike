@@ -60,7 +60,6 @@ require Time::Local;
        file  => "rheinstrassenfest.bbd",
        text  => "Rheinstraßenfest in der Rheinstraße zwischen Breslauer Platz  und Walter-Schreiber-Platz. Beide Richtungsfahrbahnen sind ab dem 05.07.2003, 06.00 Uhr bis zum 06.07.2003, 24.00 Uhr gesperrt.",
      },
-     # XXX
      { from  => Time::Local::timelocal(reverse(2003-1900,7-1,8,6,0,0)),
        until => Time::Local::timelocal(reverse(2003-1900,7-1,12,23,59,59)),
        file  => "loveparade.bbd",
@@ -507,7 +506,7 @@ userdel	q4 -74489,80545 -74038,78181
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1092725846,
        text  => 'Flottwellstr. (Tiergarten) in beiden Richtungen zwischen Lützowstraße und Am Karlsbad Verkehrsbehinderung durch Absenkung der Fahrbahn, Straße vollständig gesperrt',
        type  => 'handicap',
       data  => <<EOF,
@@ -528,6 +527,22 @@ EOF
        type  => 'gesperrt',
       data  => <<EOF,
 userdel	2 -8697,68965 -8826,68471
+EOF
+     },
+     { from  => 1095285600, # 2004-09-16 00:00
+       until => 1095717600, # 2004-09-21 00:00
+       text  => 'L 88; (Beelitz-Lehnin); Bahnübergang zw. Beelitz u. AS Beelitz-Heilstätten Einbau Hilfsbrücke Vollsperrung 17.09.2004-20.09.2004 ',
+       type  => 'gesperrt',
+      data  => <<EOF,
+userdel	2 -21642,-16531 -21341,-17172
+EOF
+     },
+     { from  => 1095717600, # 2004-09-21 00:00
+       until => 1096149600, # 2004-09-26 00:00
+       text  => 'L 88; (Beelitz-Lehnin); Bahnübergang zw. Beelitz u. AS Beelitz-Heilstätten Einbau Hilfsbrücke Vollsperrung 22.09.2004-25.09.2004 ',
+       type  => 'gesperrt',
+      data  => <<EOF,
+userdel	2 -21642,-16531 -21341,-17172
 EOF
      },
     );

@@ -8955,7 +8955,7 @@ sub _get_comments_obj {
     for my $type (@comments_types) {
 	next if $type eq "mount";
 	eval {
-	    my $f = get_strassen_file("comment_$type");
+	    my $f = get_strassen_file("comments_$type");
 	    push @objs, Strassen->new($f);
 	}; warn $@ if $@;
     }

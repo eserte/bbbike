@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiStrassen.pm,v 1.11 2004/07/21 23:57:45 eserte Exp $
+# $Id: MultiStrassen.pm,v 1.11 2004/07/21 23:57:45 eserte Exp eserte $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -108,7 +108,7 @@ sub read_data {
 }
 
 # XXX Hack: autoloader does not work for inherited methods
-for my $method (qw(agrep bbox pos_from_name choose_street new_with_removed_points)) {
+for my $method (qw(agrep bbox bboxes pos_from_name choose_street new_with_removed_points)) {
     my $code = 'sub ' . $method . ' { shift->Strassen::' . $method . '(@_) }';
     #warn $code;
     eval $code;

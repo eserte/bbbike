@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.81 2004/08/12 22:44:03 eserte Exp $
+# $Id: bbbike.cgi,v 6.82 2004/08/16 21:12:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -625,7 +625,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.81 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.82 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -5018,7 +5018,19 @@ EOF
     print <<EOF;
 Für die technisch Interessierten: als Suchalgorithmus wird
 A<sup>*</sup> eingesetzt<sup> <a href="#footnote1">1</a></sup>.<p>
-
+EOF
+    {
+	for my $dir (@Strassen::datadirs) {
+	    my @s = stat("$dir/.modified");
+	    if (@s) {
+		print "Letzte Aktualisierung der Daten: ";
+		my @l = localtime $s[9];
+		printf "%04d-%02d-%02d, %02d:%02d Uhr<p>\n",
+		    $l[5]+1900, $l[4]+1, $l[3], $l[2], $l[1];
+	    }
+	}
+    }
+    print <<EOF;
 <hr>
 <a name="link"><h3>Link auf BBBike setzen</h3></a>
 Man kann einen Link auf BBBike mit einem
@@ -5132,7 +5144,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/08/12 22:44:03 $';
+    my $cgi_date = '$Date: 2004/08/16 21:12:36 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

@@ -867,7 +867,7 @@ ehem. Straße Großbeeren - Güterfelde: Feldweg	Q2 2443,-6309 2356,-6128 2471,-602
 #: XXX nur der westliche Anfang ist bekannt
 Groß-Dölln - Joachimsthal: wahrscheinlich Waldweg, bei Joachimsthal Kopfsteinpflaster	Q2 22068,65681 22262,65687 22687,66025 23087,66087 23962,66462 24450,66575 24550,66987 24825,67112 25250,67187 25275,67412 26100,67825 26200,67787 26362,67300 26350,66737 26400,66325 26487,66100 27037,65962 27412,65812 28525,65800 30625,65012 31437,64500 32137,64362 32406,64340
 #: XXX soweit vom Zug aus zu sehen
-Herzsprung: asphaltiert	Q0 48291,64240 48941,64219
+Herzsprung: asphaltiert	Q0 48291,64240 48562,64225 48941,64219
 #: XXX Richtung Carmzow extrapoliert:
 Carmzow - Wallmow: schlechtes Kopfsteinpflaster	Q3 52483,110031 52635,109881 52745,109690 53828,108677 54199,108464 54414,108083 54371,107225 54824,106415 54848,105998
 Carmzow - Wallmow: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q3 54848,105998 54813,105532
@@ -1044,3 +1044,11 @@ Biesenthal: Kopfsteinpflaster	Q2 28993,38709 28262,39100 26237,40190
 Rüdnitz - Danenwitz: Asphalt	Q0 27303,37099 26687,36525 26372,36360
 #: XXX von der Zugstrecke aus gesehen:
 nach Senftenhütte: Schotterstraße	Q2 43637,57787 43418,57899
+Nechlin - Nieden: überwiegend gute Betonplatten	Q0 41839,115987 42250,115925 42905,115846 43275,115703 43753,115606 44617,115833
+B109 - Damerow: überwiegend gute Betonplatten	Q0 44617,115833 45897,115900 46925,115710 47144,115705
+Damerow - Schönfeld: bis Landesgrenze sehr guter Asphalt, danach nur guter Asphalt	Q0 46925,115710 46843,115217 47781,113409 47953,113309 48060,112975
+Schönfeld: schlechter Asphalt, aber Ausweichen auf Gehweg möglich	Q3 48060,112975 47894,112908
+Schönfeld - Klockow, im Ort: mäßiger Asphalt	Q1 47894,112908 48132,112493
+Schönfeld - Klockow: Asphalt	Q0 48132,112493 48416,112274 48540,112056 48806,112012 49376,111425
+in Klockow: meist Betonplatten	Q1 49376,111425 49501,111172 49504,110961 49375,110881 49445,110399
+Klockow - Kleptow: sehr guter Asphalt	Q0 49445,110399 49487,110056 49605,109981 50293,109046 50419,108545

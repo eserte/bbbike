@@ -2005,16 +2005,16 @@ sub click {
 
     my $e1 = $t->LabEntry(-label => M("Name"),
 			  -labelPack => [-side => "left"],
-			  -textvariable => \$name)->pack;
+			  -textvariable => \$name)->pack(-fill=>"x");
     $e1->focus;
     $t->LabEntry(-label => M("Kategorie"),
 		 -labelPack => [-side => "left"],
-		 -textvariable => \$cat)->pack;
+		 -textvariable => \$cat)->pack(-fill=>"x");
     {
-	my $f = $t->Frame->pack;
+	my $f = $t->Frame->pack(-fill=>"x");
 	$f->LabEntry(-label => M("Koordinaten"),
 		     -labelPack => [-side => "left"],
-		     -textvariable => \$coords)->pack(-side => "left");
+		     -textvariable => \$coords)->pack(-side => "left", -fill=>"x");
 	$f->Button(-text => M"Umdrehen",
 		   -command => sub {
 		       my(@coords) = split /\s+/, $coords;
