@@ -23,6 +23,8 @@
 BBBIKE_ROOT_DIR?=	${.CURDIR}/../..
 CURDIR=			${.CURDIR}
 LOCAL_URL?=		http://radzeit.herceg.de
+LOCAL_CGI_URL?=		${LOCAL_URL}/cgi-bin
+LOCAL_HTML_URL?=	${LOCAL_URL}/BBBike
 DATA_DIR=		data_corrected
 
 DEPLOY_TARGETS=		prepare-bbbike-data \
@@ -47,6 +49,8 @@ XARGS_REPL?=	xargs --replace=%
 XARGS_REPL?=	xargs -J %
 .endif
 
+MAPSERVER_EXE?=	$(HOME)/www/cgi/mapserv.cgi
+
 .ifndef TARGET
 .for t in ${DEPLOY_TARGETS}
 .if make($t)
@@ -58,7 +62,11 @@ TARGET=radzeit
 .ifndef TARGET
 .for t in ${DEPLOY_LOCAL_TARGETS}
 .if make($t)
+.if ${HOST} == "devpc01.iconmobile.de"
+TARGET=devpc01
+.else
 TARGET=radzeit.herceg.de
+.endif
 .endif
 .endfor
 .endif
@@ -66,7 +74,7 @@ TARGET=radzeit.herceg.de
 .ifndef TARGET
 .if make(deploy) || make(tkrsync) || make(backup) || make(test) || make(prepare-bbbike-dist-data) || make(rsync) || make(rsync-bbbike-data)
 TARGET=radzeit
-.elif make(deploy-local) || make(backup-local)
+.elif make(deploy-local) || make(backup-local) || make(test-local)
 .if ${HOST} == "devpc01.iconmobile.de"
 TARGET=devpc01
 .else
@@ -75,6 +83,13 @@ TARGET=radzeit.herceg.de
 .else
 .error "Please set TARGET to radzeit or radzeit.herceg.de"
 .endif
+.endif
+
+.if ${TARGET} == "devpc01"
+MAPSERVER_EXE=	$(HOME)/work2/mapserver/mapserv.cgi
+LOCAL_URL=	http://localhost:8080/bbbike
+LOCAL_CGI_URL=	http://localhost:8080/bbbike/cgi
+LOCAL_HTML_URL=	http://localhost:8080/bbbike
 .endif
 
 .include "${BBBIKE_ROOT_DIR}/mapserver/brb/Makefile.${TARGET}.inc"
@@ -197,7 +212,7 @@ prepare-mapserver-local-dist:	prepare-mapserver-dist-pre \
 
 prepare-mapserver-dist-pre:
 	[ -e ${CURDIR}/cgi-bin/mapserv ] || \
-	    ln -s $(HOME)/www/cgi/mapserv.cgi ${CURDIR}/cgi-bin/mapserv
+	    ln -s ${MAPSERVER_EXE} ${CURDIR}/cgi-bin/mapserv
 	@echo "Compile mapserv manually on ${BBBIKE_RADZEIT_HOST}"
 	[ -d ${CURDIR}/htdocs/mapserver/brb ] || \
 	    mkdir -p ${CURDIR}/htdocs/mapserver/brb
@@ -256,11 +271,11 @@ test-on-remote:
 
 test-local:
 	cd ${.CURDIR}/BBBike/t && \
-	BBBIKE_TEST_CGIDIR=${LOCAL_URL}/cgi-bin \
-	BBBIKE_TEST_CGIURL=${LOCAL_URL}/cgi-bin/bbbike.cgi \
-	BBBIKE_TEST_WAPURL=${LOCAL_URL}/cgi-bin/wapbbbike.cgi \
+	BBBIKE_TEST_CGIDIR=${LOCAL_CGI_URL} \
+	BBBIKE_TEST_CGIURL=${LOCAL_CGI_URL}/bbbike.cgi \
+	BBBIKE_TEST_WAPURL=${LOCAL_CGI_URL}/wapbbbike.cgi \
 	BBBIKE_TEST_MAPSERVERURL=http://localhost/~eserte/cgi/mapserv.cgi \
-	BBBIKE_TEST_HTMLDIR=${LOCAL_URL}/BBBike \
+	BBBIKE_TEST_HTMLDIR=${LOCAL_HTML_URL} \
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
 		cgihead.t \
 		cgi.t \
