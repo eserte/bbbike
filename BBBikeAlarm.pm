@@ -158,7 +158,10 @@ sub enter_alarm {
 	    @l = localtime $end_zeit_epoch;
 	    my $end_zeit = sprintf("%02d%02d", $l[2], $l[1]);
 
-	    $ab_l->configure(-text => sprintf("%02d:%02d", $l[2], $l[1]));
+	    my $diff = $end_zeit_epoch - time;
+	    my $diff_text = sprintf "(in %d:%02d h)", $diff/3600, ($diff%3600)/60;
+
+	    $ab_l->configure(-text => sprintf("%02d:%02d $diff_text", $l[2], $l[1]));
 	    return $end_zeit;
 	};
 
@@ -173,7 +176,8 @@ sub enter_alarm {
 					 $get_end_zeit->(0);
 					 if ($adjust_subset_choice) {
 					     $sunset_choice = "";
-					     $om->setOption("","");
+					     $om->setOption("","")
+						 if $om;
 					 }
 				     });
 			 1;
