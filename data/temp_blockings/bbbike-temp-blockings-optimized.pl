@@ -276,14 +276,7 @@ userdel	q4 22217,1108 22162,1067
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1112810400,
-         'text' => 'die Fähre Ketzin ist vom 30.03.05 07.00 Uhr bis 06.04.2005 20.00 Uhr aufgrund Bauarbeiten gesperrt',
-         'from' => 1112072400,
-         'data' => 'userdel	2 -26784,5756 -26840,5684
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1121896800,
