@@ -14,6 +14,16 @@
 
 package BBBikeImportWizard;
 
+=head1 NAME
+
+BBBikeImportWizard - a colletion of "wizards" for BBBike
+
+=head1 SYNOPSIS
+
+   perl -MTk -MBBBikeImportWizard -e 'BBBikeImportWizard::create_import_wizard(tkinit,"file.csv");'
+
+=cut
+
 use strict;
 use vars qw($VERSION);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
