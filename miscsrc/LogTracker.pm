@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.1.1.1 2003/05/20 17:14:58 eserte Exp $
+# $Id: LogTracker.pm,v 1.2 2003/05/22 16:33:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -24,8 +24,8 @@ push @ISA, 'BBBikePlugin';
 use strict;
 use vars qw($VERSION $lastcoords
             $layer @colors $colors_i @accesslog_data
-            $logfile);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1.1.1 $ =~ /(\d+)\.(\d+)/);
+            $logfile $tracking $tail_pid);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 use URI::Escape;
 use Strassen::Core;
@@ -61,13 +61,14 @@ sub add_button {
     BBBikePlugin::place_menu_button
             ($mmf,
              [
-              [Button => "Start tracker",
+              [Checkbutton => "Tracking",
+	       -variable => \$tracking,
                -command => sub {
-                   parse_tail_log();
-               }],
-              [Button => "Stop tracker",
-               -command => sub {
-                   stop_parse_tail_log();
+		   if ($tracking) {
+		       parse_tail_log();
+		   } else {
+		       stop_parse_tail_log();
+		   }
                }],
               [Button => "Set defaults",
                -command => sub {
@@ -77,16 +78,21 @@ sub add_button {
                    Tk::grid($t->Label(-text => "Logfile"),
                             $e = $t->PathEntry(-textvariable => \$logfile),
                            );
-                   Tk::grid($t->Button(-text => "Close",
+		   my $return = sub {
+		       stop_parse_tail_log();
+		       parse_tail_log();
+		       $t->destroy;
+		   };
+		   $e->bind("<Return>" => $return);
+		   my $f;
+                   Tk::grid($f = $t->Frame, -columnspan => 2);
+		   Tk::grid($f->Button(-text => "Ok",
+				      -command => $return),
+			    $f->Button(-text => "Close",
                                        -command => sub { $t->destroy }),
                            );
 		   $t->Popup(@main::popup_style);
 		   $e->focus;
-		   $e->bind("<Return>" => sub {
-				stop_parse_tail_log();
-				parse_tail_log();
-				$t->destroy;
-			    });
                }],
               "-",
               [Button => "Delete this menu",
@@ -131,23 +137,39 @@ sub parse_accesslog {
     $main::str_obj{$layer} = $s; # for LayerEditor
 }
 
+sub kill_tail {
+    if (defined $tail_pid) {
+	kill 9 => $tail_pid;
+	undef $tail_pid;
+    }
+}
+
 sub parse_tail_log {
-    open FH, "-|" or do {
+    kill_tail();
+    $tail_pid = open FH, "-|";
+    if (!$tail_pid) {
         exec "tail", "-f", $logfile;
         die $!;
     };
     warn "Start parsing file $logfile...\n";
+    $tracking = 1;
     $main::top->fileevent(\*FH, "readable", \&fileevent_read_line);
 }
 
 sub stop_parse_tail_log {
+    $tracking = 0;
+    kill_tail();
     $main::top->fileevent(\*FH, "readable", "");
+    close FH;
     warn "Stopped parsing log...\n";
 }
 
 sub fileevent_read_line {
     if (eof(FH)) {
+	$tracking = 0;
+	kill_tail();
         $main::top->fileevent(\*FH, "readable", "");
+	close FH;
         return;
     }
     my $line = <FH>;
@@ -160,9 +182,10 @@ sub fileevent_read_line {
         main::plot("str", $layer, -draw => 1, Filename => "/tmp/x.bbd");
         $main::str_obj{$layer} = $s; # for LayerEditor
 	my $last = $s->get($s->count-1);
-	main::mark_point(-point => $last->[Strassen::COORDS()]->[-1],
-			 -dont_center => 1)
-		if $last;
+	main::mark_point
+		(-point =>  join(",", main::transpose(split /,/, $last->[Strassen::COORDS()]->[-1])),
+		 -dont_center => 1)
+		    if $last;
     }
 }
 
