@@ -108,6 +108,13 @@ The following directives are defined:
 
 =over
 
+=item C<type: I<bbd_type>>
+
+This global directive sets the type of the bbd file. If given then it
+should be put into the first line to serve as a kind of
+E<quot>magicE<quot>. A possible type would be C<bbr> or C<bbbike
+route>, once I get rid of the .bbr format.
+
 =item C<map: I<maptype>>
 
 This global directive sets the coordinate system of the bbd file. If

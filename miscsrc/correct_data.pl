@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: correct_data.pl,v 1.15 2004/06/08 21:51:27 eserte Exp $
+# $Id: correct_data.pl,v 1.15 2004/06/08 21:51:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -42,6 +42,7 @@ _init_ref_dist();
 $v_output = 0 if !defined $v_output;
 my $file;
 my %conv;
+my $conv_read_only;
 my $s;
 my $keep_everything;
 my $in_place;
@@ -62,6 +63,7 @@ sub process {
 		    "correction=s" => \$corr_data,
 		    "verboseoutput|v+" => \$v_output,
 		    "convdata=s" => \$conv_data_file,
+		    "convreadonly|convro!" => \$conv_read_only,
 		    "minpoints=s" => \$minpoints,
 		    "reverse!" => \$reverse,
 		    "keepeverything!" => \$keep_everything,
@@ -82,8 +84,17 @@ EOF
     local $SIG{INT} = sub { die "Interrupt" };
 
     if ($conv_data_file) {
-	tie %conv, 'DB_File::Lock', $conv_data_file, O_RDWR|O_CREAT, 0644, $DB_HASH, "write"
-	or die "Can't tie $conv_data_file: $!";
+	my $flags = 0;
+	my $lock_flags;
+	if ($conv_read_only) {
+	    $flags = O_RDONLY;
+	    $lock_flags = "read";
+	} else {
+	    $flags = O_RDWR|O_CREAT;
+	    $lock_flags = "write";
+	}
+	tie %conv, 'DB_File::Lock', $conv_data_file, $flags, 0644, $DB_HASH, $lock_flags
+	    or die "Can't tie $conv_data_file: $!";
     }
 
     if ($in_berlin_check) {
@@ -251,7 +262,7 @@ sub convert_record {
 			    $_new_c = join(",", map { int }
 					   $k_obj->map2standard(split /,/, $c));
 			}
-			$conv{$c} = $_new_c;
+			$conv{$c} = $_new_c unless $conv_read_only;
 			$new_c = $_new_c;
 			last TRY;
 		    }

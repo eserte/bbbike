@@ -2888,7 +2888,14 @@ sub active_temp_blockings_for_date_dialog {
 			       -width => 40, -height => 5)->pack(-fill => "both", -expand => 1);
 	BBBike::check_bbbike_temp_blockings::process(-f => "$FindBin::RealBin/misc/temp_blockings/bbbike-temp-blockings.pl");
 	BBBike::check_bbbike_temp_blockings::load_file();
-	$txt->insert("end", scalar Data::Dumper->new([BBBike::check_bbbike_temp_blockings::return_future()], [])->Indent(1)->Dump);
+	my @future = BBBike::check_bbbike_temp_blockings::return_future();
+	for my $rec (@future) {
+	    $rec->{from} = scalar localtime $rec->{from}
+		if $rec->{from};
+	    $rec->{until} = scalar localtime $rec->{until}
+		if $rec->{until};
+	}
+	$txt->insert("end", scalar Data::Dumper->new([@future], [])->Indent(1)->Dump);
     }
 }
 

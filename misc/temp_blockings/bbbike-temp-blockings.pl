@@ -386,7 +386,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
      { from  => 1086818400, # 2004-06-10 00:00
        until => 1087164000, # 2004-06-14 00:00
        file  => 'bergmannstr.bbd',
-       text  => 'Bergmannstrassenfest (Kreuzberg jazzt), Bergmannstr. zwischen Mehringdamm und Zossener Str. gesperrt, 11.06.2004, 7.00 Uhr bis 13.06.2004, 24.00 Uhr',
+       text  => 'Bergmannstraßenfest (Kreuzberg jazzt), Bergmannstr. zwischen Mehringdamm und Zossener Str. gesperrt, 11.06.2004, 7.00 Uhr bis 13.06.2004, 24.00 Uhr',
        type  => 'handicap',
      },
      { from  => 1087975800, # 2004-06-23 09:30

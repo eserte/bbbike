@@ -107,11 +107,13 @@ mapserver/brb/sternfahrt2004/after_marker.inc
 mapserver/brb/sternfahrt2004/sternfahrt2004_init.html
 mapserver/brb/sternfahrt2004/sternfahrt2004.html
 mapserver/brb/sternfahrt2004/after_strassen_annotations.inc
+mapserver/daemon/mapscript_daemon.pl
 misc/ampelschaltung.txt
 misc/ampelschaltung2.txt
 misc/fragezeichen
 misc/temp_blockings/*.bbd
 misc/temp_blockings/*.pl
+misc/data_corrected/Makefile
 miscsrc/ApproxCityparts.pm
 miscsrc/BBBikeLocalizator.pm
 miscsrc/BBBikeSOAP.pm
