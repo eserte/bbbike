@@ -3749,7 +3749,7 @@ sub do_iconframe {
 	   },
 	  );
 
-	if ($Tk::VERSION < 803) {
+	if ($Tk::VERSION < 803 || $Tk::VERSION >= 804.025) {
 	    $rp->cget(-command)->Call if $rp;
 	    $rc->cget(-command)->Call;
 	} else {
