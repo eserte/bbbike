@@ -412,6 +412,15 @@ sub look_loop {
 	    undef;
 	}
     };
+    my $strip_hnr = sub {
+	my $str = shift;
+	if ($str =~ /\s+\d+\s*$/) {
+	    $str =~ s/\s+\d+\s*$//;
+	    $str;
+	} else {
+	    undef;
+	}
+    };
     my $agrep = 0;
     my @matchref;
     @matchref = $self->look($str, %args);
@@ -424,6 +433,9 @@ sub look_loop {
 	    while ($agrep <= $max_agrep) {
 		@matchref = $self->look($str, %args, Agrep => $agrep);
 		if (!@matchref && (my $str = $strip_strasse->($str))) { # XXX check for undef?
+		    @matchref = $self->look($str, %args, Agrep => $agrep);
+		}
+		if (!@matchref && (my $str = $strip_hnr->($str))) { # XXX check for undef?
 		    @matchref = $self->look($str, %args, Agrep => $agrep);
 		}
 		last if @matchref;
@@ -582,6 +594,9 @@ sub zip_to_cityparts_hash {
 sub norm_street {
     my $str = shift;
     $str =~ s/(s)tra(?:ss|ß)e$/$1tr\./i; # XXX more?
+    $str =~ s/^\s+//;
+    $str =~ s/\s+$//;
+    $str =~ s/ +/ /g;
     $str;
 }
 

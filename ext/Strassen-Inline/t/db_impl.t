@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: db_impl.t,v 1.9 2003/01/08 20:58:45 eserte Exp $
+# $Id: db_impl.t,v 1.10 2003/08/07 21:31:54 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001, 2002, 2003 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -41,7 +41,7 @@ BEGIN {
     }
 }
 
-use vars qw($net);
+use vars qw($net $algorithm);
 
 BEGIN {
     if (!eval q{
@@ -54,10 +54,12 @@ BEGIN {
 	exit;
     }
 
-    $tests = 14;
+    $tests = 23;
 }
 
 BEGIN { plan tests => $tests }
+
+$algorithm = "C-A*-2";
 
 my $leaktest = exists &Devel::Leak::NoteSV;
 
@@ -93,6 +95,7 @@ $net->use_data_format($StrassenNetz::FMT_MMAP);
 #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$net->can("make_net")],[])->Deparse(1)->Indent(1)->Useqq(1)->Dump; # XXX
 
 $net->make_net();
+$net->make_sperre("gesperrt", Type => [qw(einbahn sperre wegfuehrung)]);
 
 ok($net->reachable($start_coord));
 ok($net->reachable($goal1_coord));
@@ -124,5 +127,6 @@ eval { Strassen::Inline2::search_c($net, "not", "existing") };
 ok($@ ne "");
 
 do "$FindBin::RealBin/common.pl";
+die $@ if $@;
 
 __END__

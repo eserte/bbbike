@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CNetFilePerl.pm,v 1.9 2003/04/13 15:57:02 eserte Exp $
+# $Id: CNetFilePerl.pm,v 1.11 2003/08/07 21:34:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
@@ -49,6 +49,54 @@ sub reachable {
     exists $self->{CNetCoord2Ptr}->{$coord};
 }
 
+sub make_sperre {
+    my($self, $sperre_file, %args) = @_;
+    if (exists $args{Type}) {
+	if (grep { $_ eq 'wegfuehrung' } @{ $args{Type} }) {
+	    my %args = %args;
+	    $args{Type} = ['wegfuehrung'];
+	    $self->make_sperre_1($sperre_file, %args);
+	    $self->{Wegfuehrung} = $self->convert_wegfuehrung($self->{Wegfuehrung});
+	}
+    }
+}
+
+# XXX This only works on little-endian architectures!
+sub convert_coord {
+    my($self, $coord) = @_;
+    pack("V", $self->{CNetCoord2Ptr}{$coord});
+}
+
+sub convert_net {
+    my($self, $net) = @_;
+    my $new_net = {};
+    while(my($k1,$v) = each %$net) {
+	my $new_node = {};
+	while(my($k2,$v2) = each %$v) {
+	    $new_node->{$self->convert_coord($k2)} = $v;
+	}
+	$new_net->{$self->convert_coord($k1)} = $new_node;
+    }
+    $new_net;
+}
+
+sub convert_wegfuehrung {
+    my($self, $wegfuehrung) = @_;
+    my $new_wegf = {};
+    while(my($k1,$v) = each %$wegfuehrung) {
+	my $new_node = [];
+	for my $elem (@$v) {
+	    my $new_node2 = [];
+	    for my $coord (@$elem) {
+		push @$new_node2, $self->convert_coord($coord);
+	    }
+	    push @$new_node, $new_node2;
+	}
+	$new_wegf->{$self->convert_coord($k1)} = $new_node;
+    }
+    $new_wegf;
+}
+
 ######################################################################
 # These two classes are for $self->{Net}{$xy1}{$xy2} emulation. The
 # first tie class returns the $self->{Net}{$xy1} part, while the second
@@ -71,6 +119,12 @@ sub FETCH {
 
 sub STORE {
     die "A STORE is not allowed in " . __PACKAGE__ . ". Args: @_";
+}
+
+sub EXISTS {
+    my($self, $key) = @_;
+    my $str_net = $self->{StrassenNetz};
+    exists $str_net->{CNetCoord2Ptr}->{$key};
 }
 
 ######################################################################

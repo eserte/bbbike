@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.27 2003/07/22 19:55:50 eserte Exp eserte $
+# $Id: StrassenNetz.pm,v 1.28 2003/08/07 21:32:41 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -2029,7 +2029,7 @@ sub use_data_format {
     local($^W) = 0;
 
     if ($data_format == $FMT_MMAP) {
-	*make_sperre = sub { }; # XXX do nothing \&make_sperre_1; # XXX
+	# nothing to do
     } elsif ($data_format == $FMT_CDB) {
 	require Strassen::CDB;
 	use_data_format_cdb();

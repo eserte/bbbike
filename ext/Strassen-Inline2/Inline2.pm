@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Inline.pm,v 2.19 2002/11/23 23:18:51 eserte Exp eserte $
+# $Id: Inline.pm,v 2.21 2003/05/17 19:38:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -18,7 +18,7 @@ package Strassen::Inline2;
 require 5.005; # new semantics of hv_iterinit
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 2.19 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 2.21 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Cwd;
@@ -44,7 +44,8 @@ use Inline 0.40; # because of API changes
 use Config;
 #use Inline C => Config => CCFLAGS => "-O2";
 use Inline Config => CLEAN_AFTER_BUILD => 0;   #XXX debugging, both needed
-use Inline C => Config => CCFLAGS => "-g -O2"; #XXX debugging
+#use Inline C => Config => CCFLAGS => "-g -O2"; #XXX debugging
+use Inline C => Config => CCFLAGS => "-g"; #XXX debugging, faster
 use Inline (C => DATA =>
 
 	    NAME => 'Strassen::Inline2',
@@ -456,9 +457,6 @@ void search_c(SV* self, char* from, char* to, ...) {
 	  if (wegfuehrung) {
 	    SV** tmp = hv_fetch(wegfuehrung, COORD_HV_VAL(succ_key), succ_key_len, 0);
 	    if (tmp) {
-#ifdef USE_MMAP_IMPL
-	      char this_node_char[20]; /* should be enough to hold "x,y\0" */
-#endif
 	      int do_continue = 0;
 	      AV* wegfuehrungen = (AV*)SvRV(*tmp);
 	      int j;
@@ -475,10 +473,8 @@ void search_c(SV* self, char* from, char* to, ...) {
 		for(i=av_len(wegf)-1; i>=0; i--) {
 		  tmp = av_fetch(wegf, i, 0);
 #ifdef USE_MMAP_IMPL
-		  sprintf(this_node_char, "%d,%d",
-			  *((int*)(c_net_mmap + min_node)),
-			  *(((int*)(c_net_mmap + min_node))+1));
-		  if (strcmp(SvPV(*tmp, PL_na), this_node_char) != 0) {
+		  if (memcmp(SvPV(*tmp, PL_na), COORD_HV_VAL(this_node),
+			     sizeof(int)) != 0) {
 #else
 		  if (strcmp(SvPV(*tmp, PL_na), this_node) != 0) {
 #endif
@@ -515,13 +511,11 @@ void search_c(SV* self, char* from, char* to, ...) {
 
 	    if (penaltysub != NULL) {
 	      /* call penaltysub with
-	       * * min_node
-	       * * last_node
+	       * * succ_key = next_node
+	       * * min_node = last_node
 	       * * len_pen
 	       * returned value is new len_pen
 	       */
-
-	      SV* last_node = &PL_sv_undef;
 
 	      /* Using Inline_Stack_Reset et al. as advertised in
 		 Inline::C-Cookbook does not work! */

@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: hv_impl.t,v 1.13 2003/01/08 20:58:50 eserte Exp $
+# $Id: hv_impl.t,v 1.14 2003/08/07 21:31:57 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,7 +19,7 @@ BEGIN {
 # ***FILTER=2***
 #    print "1..1\nok 1\n"; exit;
 # ***FILTER=1***
-     plan tests => 8
+     plan tests => 17
 # ***FILTER=all***
 }
 
@@ -44,6 +44,9 @@ BEGIN {
 
 my $v = shift;
 
+use vars qw($algorithm);
+$algorithm = "C-A*";
+
 my $leaktest = exists &Devel::Leak::NoteSV;
 
 ok(1);
@@ -66,8 +69,10 @@ for my $coordref (\$start_coord, \$goal1_coord, \$goal2_coord) {
 my $fixed_start = $s->get(0)->[Strassen::COORDS][0];
 my $fixed_goal  = $s->get($#{$s->{Data}})->[Strassen::COORDS][-1];
 
-my $net = StrassenNetz->new($s);
+use vars qw($net);
+$net = StrassenNetz->new($s);
 $net->make_net;
+$net->make_sperre("gesperrt", Type => [qw(einbahn sperre wegfuehrung)]);
 
 @arr = Strassen::Inline::search_c($net, $start_coord, $goal1_coord);
 ok(!(!@arr || ref $arr[0] ne 'ARRAY'));
@@ -96,5 +101,6 @@ eval {
 ok(!($@ !~ /not reachable/));
 
 do "$FindBin::RealBin/common.pl";
+die $@ if $@;
 
 __END__

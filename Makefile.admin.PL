@@ -168,6 +168,8 @@ MANIFEST.withcvs:	MANIFEST MANIFEST.addtocvs
 	cat MANIFEST >> MANIFEST.withcvs
 	perl -nle 'print join("\n", glob("$$_"))' MANIFEST.addtocvs >> MANIFEST.withcvs
 
+# Manifest.addtocvs is *not* constant, so arrange that MANIFEST.withcvs
+# is always fired.
 .PHONY: MANIFEST.withcvs
 
 EOF

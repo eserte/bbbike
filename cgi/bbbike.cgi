@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.51 2003/08/05 22:40:55 eserte Exp $
+# $Id: bbbike.cgi,v 6.51 2003/08/05 22:40:55 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -1134,6 +1134,7 @@ sub choose_form {
 		push @extra, Citypart => $$zipref;
 	    }
 	    next if $$oneref =~ /^\s*$/;
+	    $$oneref = PLZ::norm_street($$oneref);
 	    my($retref, $matcherr) =
 		$plz->look_loop(PLZ::split_street($$oneref),
 				@extra,
@@ -2146,17 +2147,14 @@ sub make_netz {
 	my $str = get_streets();
 	$net = new StrassenNetz $str;
 	if (defined $search_algorithm && $search_algorithm eq 'C-A*-2') {
-	    $net->use_data_format($StrassenNetz::FMT_MMAP)
-	} else {
-	    # XXX überprüfen, ob sich der Cache lohnt...
-	    # evtl. mit IPC::Shareable arbeiten (Server etc.)
-	    $net->make_net(UseCache => 1);
+	    $net->use_data_format($StrassenNetz::FMT_MMAP);
 	}
+	# XXX überprüfen, ob sich der Cache lohnt...
+	# evtl. mit IPC::Shareable arbeiten (Server etc.)
+	$net->make_net(UseCache => 1);
 	if (!$lite) {
 	    $net->make_sperre('gesperrt',
-			      Type => ['einbahn', 'sperre',
-				       #'tragen',
-				       'wegfuehrung']);
+			      Type => [qw(einbahn sperre wegfuehrung)]);
 	}
     }
     $net;
