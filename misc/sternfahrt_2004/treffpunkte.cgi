@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 # -*- perl -*-
 
 #
@@ -24,11 +24,17 @@ if (param("center")) {
 
 sub show_list {
     print header, start_html(-title => "Treffpunkte der Sternfahrt 2004",
-			     -style=>{-src=> '../html/bbbike.css'},
+			     -style=>{-src=> 'http://www.radzeit.de/BBBike/html/bbbike.css'},
 			    ), h1("Treffpunkte der Sternfahrt 2004"), "<ul>";
     push_INC();
     require Strassen::Core;
-    my $s = Strassen->new("$FindBin::RealBin/treffpunkte2004-corrected.bbd");
+    my $s;
+    eval {
+	$s = Strassen->new("$FindBin::RealBin/treffpunkte2004-corrected.bbd");
+    };
+    if (!$s) {
+	$s = Strassen->new("$FindBin::RealBin/treffpunkte2004.bbd");
+    }
     $s->init;
     my @list;
     while(1) {
