@@ -727,7 +727,7 @@ LAYER
     [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_N_OUTL size=5 minscale=20000 maxscale=undef -%]
+[% PROCESS CLASS_N_OUTL size=5 minscale=20000 maxscale=1000000 -%]
 [% PROCESS CLASS_N_OUTL size=6 minscale=10000 maxscale=20000 -%]
 [% PROCESS CLASS_N_OUTL size=7 minscale=undef maxscale=10000 -%]
 
@@ -749,6 +749,12 @@ LAYER
     [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
     [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
+[% END -%]
+[% PROCESS CLASS_H_OUTL size=6 minscale=20000 maxscale=1000000 -%]
+[% PROCESS CLASS_H_OUTL size=7 minscale=10000 maxscale=20000 -%]
+[% PROCESS CLASS_H_OUTL size=8 minscale=undef maxscale=10000 -%]
+
+[% BLOCK CLASS_B_OUTL -%]
   CLASS
     EXPRESSION 'B'
     COLOR 180 180 180
@@ -758,9 +764,10 @@ LAYER
     [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_H_OUTL size=6 minscale=20000 maxscale=undef -%]
-[% PROCESS CLASS_H_OUTL size=7 minscale=10000 maxscale=20000 -%]
-[% PROCESS CLASS_H_OUTL size=8 minscale=undef maxscale=10000 -%]
+[% PROCESS CLASS_B_OUTL size=3 minscale=1000000 maxscale=undef -%]
+[% PROCESS CLASS_B_OUTL size=6 minscale=20000 maxscale=1000000 -%]
+[% PROCESS CLASS_B_OUTL size=7 minscale=10000 maxscale=20000 -%]
+[% PROCESS CLASS_B_OUTL size=8 minscale=undef maxscale=10000 -%]
 
   METADATA
     WMS_TITLE "Straﬂen (Outline)"
@@ -938,7 +945,7 @@ LAYER
     [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_N size=3 minscale=20000 maxscale=undef -%]
+[% PROCESS CLASS_N size=3 minscale=20000 maxscale=1000000 -%]
 [% PROCESS CLASS_N size=4 minscale=10000 maxscale=20000 -%]
 [% PROCESS CLASS_N size=5 minscale=undef maxscale=10000 -%]
 
@@ -984,6 +991,12 @@ LAYER
     [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
     [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
+[% END -%]
+[% PROCESS CLASS_H size=4 minscale=20000 maxscale=1000000 -%]
+[% PROCESS CLASS_H size=5 minscale=10000 maxscale=20000 -%]
+[% PROCESS CLASS_H size=6 minscale=undef maxscale=10000 -%]
+
+[% BLOCK CLASS_B -%]
   CLASS
     EXPRESSION 'B'
     NAME "Bundesstraﬂe"
@@ -1005,9 +1018,11 @@ LAYER
     [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_H size=4 minscale=20000 maxscale=undef -%]
-[% PROCESS CLASS_H size=5 minscale=10000 maxscale=20000 -%]
-[% PROCESS CLASS_H size=6 minscale=undef maxscale=10000 -%]
+[% PROCESS CLASS_B size=2 minscale=1000000 maxscale=undef   -%]
+[% PROCESS CLASS_B size=3 minscale=500000  maxscale=1000000 -%]
+[% PROCESS CLASS_B size=4 minscale=20000   maxscale=500000  -%]
+[% PROCESS CLASS_B size=5 minscale=10000   maxscale=20000   -%]
+[% PROCESS CLASS_B size=6 minscale=undef   maxscale=10000   -%]
 
   CLASS # should not happen
     EXPRESSION /./ 
@@ -1660,20 +1675,22 @@ LAYER
 [% PROCESS CLASS_ORT cat=2 size=8 lblsize=10 minscale=10000 maxscale=35000 -%]
 [% PROCESS CLASS_ORT cat=2 size=10 lblsize=12 minscale=undef maxscale=10000 -%]
 
-[% PROCESS CLASS_ORT cat=3 size=8 lblsize=9 minscale=35000 maxscale=undef -%]
+[% PROCESS CLASS_ORT cat=3 size=8 lblsize=9 minscale=35000 maxscale=1000000 -%]
 [% PROCESS CLASS_ORT cat=3 size=10 lblsize=11 minscale=10000 maxscale=35000 -%]
 [% PROCESS CLASS_ORT cat=3 size=12 lblsize=13 minscale=undef maxscale=10000 -%]
 
-[% PROCESS CLASS_ORT cat=4 size=10 lblsize=10 minscale=35000 maxscale=undef -%]
+[% PROCESS CLASS_ORT cat=4 size=10 lblsize=10 minscale=35000 maxscale=1000000 -%]
 [% PROCESS CLASS_ORT cat=4 size=12 lblsize=12 minscale=10000 maxscale=35000 -%]
 [% PROCESS CLASS_ORT cat=4 size=14 lblsize=14 minscale=undef maxscale=10000 -%]
 
 [% SET force="true" -%]
-[% PROCESS CLASS_ORT cat=5 size=12 lblsize=11 minscale=35000 maxscale=undef -%]
+[% PROCESS CLASS_ORT cat=5 size=2 lblsize=1 minscale=1000000 maxscale=undef -%]
+[% PROCESS CLASS_ORT cat=5 size=12 lblsize=11 minscale=35000 maxscale=1000000 -%]
 [% PROCESS CLASS_ORT cat=5 size=14 lblsize=13 minscale=10000 maxscale=35000 -%]
 [% PROCESS CLASS_ORT cat=5 size=16 lblsize=15 minscale=undef maxscale=10000 -%]
 
-[% PROCESS CLASS_ORT cat=6 size=15 lblsize=12 minscale=35000 maxscale=undef -%]
+[% PROCESS CLASS_ORT cat=6 size=3 lblsize=2 minscale=1000000 maxscale=undef -%]
+[% PROCESS CLASS_ORT cat=6 size=15 lblsize=12 minscale=35000 maxscale=1000000 -%]
 [% PROCESS CLASS_ORT cat=6 size=17 lblsize=14 minscale=10000 maxscale=35000 -%]
 [% PROCESS CLASS_ORT cat=6 size=19 lblsize=16 minscale=undef maxscale=10000 -%]
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.105 2004/07/29 22:12:15 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.106 2004/08/09 22:48:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1089,6 +1089,12 @@ sub add_search_net_menu_entries {
 		       -variable => \$add_net{fz},
 		       -command => \&change_net_type,
 		      );
+    if ($devel_host) {
+	$nsbm->checkbutton(-label => M"Add IS data",
+			   -variable => \$add_net{is},
+			   -command => \&change_net_type,
+			  );
+    }
 }
 
 sub advanced_coord_menu {

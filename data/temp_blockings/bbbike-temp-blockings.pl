@@ -463,7 +463,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'gesperrt',
      },
      { from  => 1090913211, # 2004-07-27 09:26
-       until => 1092088800, # 2004-08-10 00:00 # neue Meldung: bis Ende 08.2004 XXX
+       until => 1093989540, # bis Ende 08.2004
        file  => 'rathenower.bbd',
        text  => 'Berlin-Moabit, Kreuzung Rathenower Straße / Stephanstraße, Baustelle, Kreuzung vollständig gesperrt, Dauer: voraussichtlich bis 09.08.2004',
        type  => 'handicap',

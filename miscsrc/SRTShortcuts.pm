@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.15 2004/07/03 22:44:47 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.16 2004/08/09 20:51:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -234,15 +234,53 @@ sub _vmz_lbvs_splitter {
 }
 
 sub show_vmz_diff {
-    require BBBikeAdvanced;
-    my $abk = main::plot_additional_layer("str", "$ENV{HOME}/cache/misc/diffvmz.bbd");
-    main::choose_ort("str", $abk, -splitter => \&_vmz_lbvs_splitter);
+    show_any_diff("$ENV{HOME}/cache/misc/diffvmz.bbd");
 }
 
 sub show_lbvs_diff {
+    show_any_diff("$ENV{HOME}/cache/misc/difflbvs.bbd");
+}
+
+sub show_any_diff {
+    my $file = shift;
     require BBBikeAdvanced;
-    my $abk = main::plot_additional_layer("str", "$ENV{HOME}/cache/misc/difflbvs.bbd");
-    main::choose_ort("str", $abk, -splitter => \&_vmz_lbvs_splitter);
+    require File::Basename;
+    my $abk = main::plot_additional_layer("str", $file);
+    my $token = "chooseort-" . File::Basename::basename($file) . "-str";
+    my $t = main::redisplay_top($main::top, $token, -title => $file);
+    if (!$t) {
+	$t = $main::toplevel{$token};
+	$_->destroy for ($t->children);
+    } else {
+	$t->geometry($t->screenwidth-20 . "x" . 260 . "+0-20");
+    }
+    $t->Label(-text => "Modtime: " . scalar(localtime((stat($file))[9])) .
+	      sprintf " (%.1f days ago)", (-M $file)
+	     )->pack(-anchor => "w");
+    my $f;
+    my $hide_ignored;
+    $t->Checkbutton(-text => "Hide ignored and unchanged",
+		    -variable => \$hide_ignored,
+		    -command => sub {
+			my $hl = $f->Subwidget("Listbox");
+			if ($hide_ignored) {
+			    for ($hl->info("children")) {
+				if ($hl->entrycget($_, "-text") =~ /(ignore|unchanged)/i) {
+				    $hl->hide("entry", $_);
+				}
+			    }
+			} else {
+			    for ($hl->info("children")) {
+				$hl->show("entry", $_);
+			    }
+			}
+		    })->pack(-anchor => "w");
+    $f = $t->Frame->pack(-fill => "both", -expand => 1);
+    main::choose_ort("str", $abk,
+		     -splitter => \&_vmz_lbvs_splitter,
+		     -container => $f,
+		     -ondestroy => sub { $t->destroy },
+		    );
 }
 
 ##XXX del obsoleted by great conversion

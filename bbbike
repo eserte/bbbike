@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.139 2004/08/01 17:38:13 eserte Exp eserte $
+# $Id: bbbike,v 3.140 2004/08/09 22:47:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -212,7 +212,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.139 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.140 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4998,6 +4998,9 @@ sub define_item_attribs {
     foreach my $type (@comments_types) {
 	$str_file{"comm-$type"} = "comments_$type";
     }
+    if ($devel_host) {
+	$str_file{"is"} = "$FindBin::RealBin/projects/infrasystem/data/landstrassen-corrected";
+    }
     %p_file =
 	('lsa'    => 'ampeln',
 	 'u'      => 'ubahnhof',
@@ -9210,6 +9213,7 @@ sub choose_ort {
     my $additionalframe = $args{-additionalframe};
     my $sorted = exists $args{-unsorted} ? !$args{-unsorted} : 1;
     my $splitter = $args{-splitter};
+    my $container = $args{-container};
 
     unless ($nodraw) {
 	if ($linetype =~ /^s/) {
@@ -9248,7 +9252,8 @@ sub choose_ort {
 
     if (!$toplevel{"chooseort-$type-$linetype"} or
 	!Tk::Exists($toplevel{"chooseort-$type-$linetype"}) or
-	$args{'-rebuild'}) {
+	$args{'-rebuild'} or
+	$container) {
 	if (defined $toplevel{"chooseort-$type-$linetype"} and
 	    Tk::Exists($toplevel{"chooseort-$type-$linetype"})) {
 	    $toplevel{"chooseort-$type-$linetype"}->destroy;
@@ -9282,19 +9287,20 @@ sub choose_ort {
 	IncBusy($top);
 	my $t;
 	eval {
-	    $t = $top->Toplevel(-title => $attrib->[ATTRIB_PLURAL],
-				-class => "Bbbike Chooser");
-	    $t->transient($top) if $transient;
-#XXXdel:	    my $origext = '';
-	    if ($coord_system eq 'standard') {
-		if ($ondestroy) {
-		    $t->protocol('WM_DELETE_WINDOW', [$ondestroy, $t]);
-		} else {
-		    $t->protocol('WM_DELETE_WINDOW', sub { $t->withdraw });
-		}
-		$toplevel{"chooseort-$type-$linetype"} = $t;
+	    if ($container) {
+		$t = $container;
 	    } else {
-#XXXdel:		$origext = '-orig';
+		$t = $top->Toplevel(-title => $attrib->[ATTRIB_PLURAL],
+				    -class => "Bbbike Chooser");
+		$t->transient($top) if $transient;
+		if ($coord_system eq 'standard') {
+		    if ($ondestroy) {
+			$t->protocol('WM_DELETE_WINDOW', [$ondestroy, $t]);
+		    } else {
+			$t->protocol('WM_DELETE_WINDOW', sub { $t->withdraw });
+		    }
+		    $toplevel{"chooseort-$type-$linetype"} = $t;
+		}
 	    }
 	    my($showb, $closeb);
 
@@ -9578,7 +9584,11 @@ sub choose_ort {
 				     if ($ondestroy) {
 					 $ondestroy->($t);
 				     } else {
-					 $t->withdraw;
+					 if ($t->can("withdraw")) {
+					     $t->withdraw;
+					 } else {
+					     $t->destroy;
+					 }
 				     }
 				 },
 				)->pack(-side => 'left');
@@ -9611,18 +9621,20 @@ sub choose_ort {
 
 	$choose_ort_cache{"$linetype-$type"} =
 	    get_cache_identifier($linetype, $type);
-	if (@popup_style == 0) {
-	    if (eval {require Tk::Placement; 1; }) {
-		# XXX use placer also for other toplevels --- replace
-		# all Popup(@popup_style) calls?
-		Tk::Placement::placer($t, -screen => $c,
-				      -addx => 20, -addy => 25, # XXX for fvwm
-				     );
+	if ($t->isa("Tk::Wm")) {
+	    if (@popup_style == 0) {
+		if (eval {require Tk::Placement; 1; }) {
+		    # XXX use placer also for other toplevels --- replace
+		    # all Popup(@popup_style) calls?
+		    Tk::Placement::placer($t, -screen => $c,
+					  -addx => 20, -addy => 25, # XXX for fvwm
+					 );
+		} else {
+		    $t->Popup(-overanchor => "nw", -popanchor => "nw", -popover => $c);
+		}
 	    } else {
-		$t->Popup(-overanchor => "nw", -popanchor => "nw", -popover => $c);
+		my_popup($t);
 	    }
-	} else {
-	    my_popup($t);
 	}
     } else {
 	$toplevel{"chooseort-$type-$linetype"}->deiconify;
