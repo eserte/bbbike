@@ -94,8 +94,7 @@ Sybelstr. Ost - Lewishamstr.: existiert eine Verbindung? Müssen Bordsteine überw
 Existieren Treppen zwischen Kolonnenweg und Bornholmer Str.?	? 9961,16576 9998,16547 9967,16514
 Grüner Weg in Marienfelde: Qualität? laut ADFC-Karte gut befahrbar	? 7781,-230 7633,-20 7491,61 7235,205 7032,533 7040,686 7058,844
 Am Königsgraben: Qualität?	? 8883,-1115 8869,-1090 8737,-1115 8688,-781 8582,-640 8604,-259 8626,107 8584,327
-Freizeitpark Marienfelde: befahrbar? Qualität?	? 8604,-259 7781,-230
-Stephanstr.: lohnende Umfahrung? Qualität?	? 7037,14274 6695,14194 6505,14128 6242,13928
+Freizeitpark Marienfelde zwischen Diedersdorfer Weg und Königsgraben: befahrbar? Qualität?	? 8604,-259 7781,-230
 Breisgauer Str.: Qualität?	? -2306,3547 -2259,3363 -2193,3092 -2119,2923 -2050,2750
 Stadion Wilmersdorf: Beleuchtung?	? 3667,8142 3676,8394 3618,8447 3500,8474 3429,8460 3357,8506 3295,8519
 Märchenweg/Rübezahlweg: Qualität?	? 14288,19459 14248,19370 14044,19502 13297,19987
@@ -436,7 +435,7 @@ Eldenaer etc.: Vorfahrtsregelung?	? 14661,12798 14336,12758 14096,12827 13844,12
 Prenzlauer Allee -> Hiddenseer Str.: Abbiegen für Radfahrer möglich?	? 11822,15193 11655,15253
 Gaudystr.: Qualität? Fortsetzung Richtung Mauerpark für Radfahrer befahrbar (ohne Einschränkung wegen der Halle)?	? 10473,15549 10759,15622 10949,15674
 Borsigstr.: Qualität?	? 9517,13571 9334,13843
-Groß-Berliner Damm: benutzungspflichtiger Radweg?	? 18058,4627 18850,3783 19334,3268
+Groß-Berliner Damm: ein kurzes Stück (50m) ist noch Baustelle, voraussichtlich 2005-12-31 fertig	? 18058,4627 18850,3783 19334,3268
 Luckenwalder Str.: Qualität (wahrscheinlich Asphalt...)?	? 8634,10426 8393,10505
 Überqueren der Danziger Str. hier (Schliemannstr.) möglich?	? 11187,14763 11154,14985 11334,15248
 Englische/Gutenbergstr. - Spreeufer: Qualität?	? 5518,12159 5719,12253
@@ -495,10 +494,13 @@ Zechliner Str.: Qualität?	? 16310,14378 16284,14601 16537,14635 16534,14740
 Malteserstr.: Busspur eingerichtet? (siehe auch http://www.berlin.de/landespressestelle/archiv/2005/03/08/24355/index.html)	? 7744,1008 7539,1529 7390,2021 7238,2534 7120,2990
 Fußgängerweg zwischen Wartenberger Str. und Margaretenhöhe: Qualität? Gibt es an der Bahnbrücke Treppen?	? 16284,19198 16392,19760
 Wohngebiet Schulze-Boysen-Str.: Einbahnstraßen, auch für Radfahrer?	? 15722,11857 15582,11886 15581,11956 15482,11973 15378,11992 15288,11968
-Stephanstr.: Einbahnstraße auch für Radfahrer?	?; 6526,4475 6377,4490
 Gabelung der R1 (zwischen Fähre und Zeppelinstr.): Wegführung und Qualität?	? -14265,-2221 -14378,-2115 -14734,-2471
 Clara-Zetkin-Str. (Potsdam): Qualität?	? -14251,-1365 -14246,-1506 -14234,-1646
 Goethestr.: Qualität? laut ADFC-Karte schlecht geeignet	? 9701,-351 9961,-363 10273,-301 10403,-266 10586,-220 10788,-172
+Egestorffstr.: Qualität?	? 9147,-1022 9093,-1712
+Blohmstr.: Qualität?	? 10004,-1919 9531,-1931 9093,-1712
+Blohmstr. - Kolonie Birkholz/Diedersdorfer Str.: Qualität? Nachts beleuchtet?	? 9093,-1712 8506,-1418 8073,-1137
+Poleigrund: Qualität? (Laut ADFC-Karte gut geeignet)	? 9557,-779 9155,-902
 wirklich?	? 9215,3599
 Wirklich?	? -3755,17090
 geplante Ampel in der Johannisthaler	? 14196,2876
@@ -539,7 +541,7 @@ Alter Bernauer Heerweg: mäßig geeignet (laut ADFC-Karte (wenigstens der östliche
 Cyclopstr.: nicht geeignet (laut ADFC-Karte)	? 4825,21718 5138,21358
 Friedhofstr.: gut geeignet (laut ADFC-Karte)	? 15534,15675 15598,15793
 (Orankestr. - Orankesee): gut geeignet (laut ADFC-Karte)	? 15598,15793 15581,15846
-Rathenower Str.: mäßig geeignet (laut ADFC-Karte)	? 6743,14008 6670,14302
+Rathenower Str.: mäßig geeignet (laut ADFC-Karte)	? 6743,14008 6696,14197 6670,14302
 (Spreeufer): mäßig geeignet (laut ADFC-Karte)	? -288,13279 -193,13318 303,13287 700,13371 984,13475 1193,13485
 (Am Schinkelplatz) (Ist dieser Name offiziell?)	? 9987,12421 10084,12228
 (Spreepromenade am Aquadom) ("Aquadom" richtige Bezeichnung?)	? 10300,12587 10171,12769
@@ -564,6 +566,8 @@ Margueritenring: Kopfsteinpflaster (Hier widerspricht die ADFC-Karte und meint "
 Heegermühler Weg: schlechtes Kopfsteinpflaster (Hier wurde als Range "5-15" angegegeben. Hausnummern?)	? 7966,19968 8043,19725 8231,19806 8415,19910
 Rykestr.: Kopfsteinpflaster (aber ich erinnere mich ganz schwach, dass der südliche Abschnitt asphaltiert war... Außerdem: ist das Linksabbiegen in die Danziger möglich?)	? 11358,14331 11446,14508 11526,14693 11610,14886
 Zermatter Str.: Kopfsteinpflaster, schlechte Straße (die ADFC-Karte sagt hier aber "gut geeignet")	? 6512,17696 6653,17696 6761,17741 6859,17753
+(Unter dem S-Bhf. Schichauweg): Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9693,-621 9518,-668
+Miethepfad: Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9518,-668 9557,-779 9585,-859
 Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser (Richtung Süden sah es teilweise besser aus, wo genau?)	? 9772,-12194 9345,-11425 9472,-11297 9578,-10891 9598,-10356 9854,-9480 10023,-8859
 F XXX: fester Sandweg mit einigen Schlaglöchern (welche Nummer des F-Wegs?)	? -21063,-2021 -20721,-1935 -20486,-1956 -20295,-1870 -20176,-525
 Seelübbe - Prenzlau: Kopfsteinplaster (aus der Bahn heraus gesehen)	? 40864,100741 40754,100635 40954,100113

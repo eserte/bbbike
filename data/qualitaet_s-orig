@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.18 2005/03/28 22:47:17 eserte Exp $
+# $Id: qualitaet_s-orig,v 4.18 2005/03/28 22:47:17 eserte Exp eserte $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -795,7 +795,7 @@ Rolandufer: Kopfsteinpflaster	Q2 11278,12185 11155,12184 10945,12150
 Rolandufer/Spreeufer: gutes Kopfsteinpflaster	Q1 10945,12150 10837,12158 10660,12176
 Spreeufer: Verbundsteine	Q1 10583,12206 10502,12280 10423,12353 10422,12395
 #: unverified_by ADFC-Karte:
-Rathenower Str.: mäßig geeignet	Q2 6743,14008 6670,14302
+Rathenower Str.: mäßig geeignet	Q2 6743,14008 6696,14197 6670,14302
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
 Treptower Park: Schotterweg	Q2 14242,9448 14304,9538
 Am Köllnischen Park: Kopfsteinpflaster	Q2 11197,11882 11155,11750
@@ -1197,6 +1197,7 @@ Hattinger Weg: guter Asphalt	Q0 1536,18423 1566,18532 1595,18528 1623,18523 1625
 #: by: Jessica Mai: vvv
 Wiclefstr.: Kopfsteinpflaster	Q2 5239,13824 5441,13796 5748,13748 5895,13725 6115,13684
 Buchstr.: Asphalt	Q0 6599,14735 6459,14876
+Stephanstr. (Tiergarten): Kopfsteinpflaster	Q2 6275,13969 6496,14118 6696,14197 7037,14274
 #: by: ^^^
 #: by: Susanne Jäger:
 Lottumstr.: mäßiges Kopfsteinpflaster	Q2 10479,13931 10639,13865 10703,13832 10793,13785
@@ -1449,9 +1450,14 @@ Bornemannstr.: Asphalt	Q0 8206,15953 8003,16098
 #: by: Peter Radeck:
 Holsteinische Str.: Asphalt	Q0 5070,9720 5065,9407 5046,8978
 #: by: Winfried Gravenstein: vvv
-Eisnerstr.: Asphalt	Q0 9500,-115 9691,-577
+Eisnerstr.: Asphalt	Q0 9500,-115 9693,-621
 # Korrektur eines anonymen Eintrags:
 Dörfelweg	Q0 9716,-55 9500,-115
+Eisnerstr. - S.Bhf Buckower Chaussee: asphaltiert, allerdings an einigen Stellen Beschädigungen durch Baumwurzeln	Q0 9500,-115 9178,556
+#: add_fragezeichen: tatsächlich Verbundsteinpflaster? vvv
+(Unter dem S-Bhf. Schichauweg): Verbundsteinpflaster	Q1 9693,-621 9518,-668
+Miethepfad: Verbundsteinpflaster	Q1 9518,-668 9557,-779 9585,-859
+#: add_fragezeichen: ^^^
 #: by: ^^^
 #: by: Gabriele K.:
 Schulzendorfer Str.: schlechtes Kopfsteinpflaster	Q3 -596,23009 -862,22946 -1484,22799 -1972,22899 -2107,22790 -2207,22741 -2437,22625

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeProfil.pm,v 1.10 2003/11/16 21:15:08 eserte Exp $
+# $Id: BBBikeProfil.pm,v 1.11 2005/03/29 21:46:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2002 Slaven Rezic. All rights reserved.
@@ -79,6 +79,10 @@ sub Redraw {
     $c->delete('all');
     my $hoehe   =    $context->{Hoehe};
     my(@coords) = @{ $context->{Coords} };
+    if (!@coords) {
+	$self->MessageText($context, M"Keine Route");
+	return;
+    }
     my($w, $h) = ($c->cget(-width), $c->cget(-height));
     my(@dist) = (0);
     for(my $i=0; $i<$#coords; $i++) {
@@ -104,7 +108,7 @@ sub Redraw {
     }
 
     if (!defined $max_h) {
-	print STDERR "Es gibt keine Höheninformationen für diese Route\n";
+	$self->MessageText($context, M"Es gibt keine Höheninformationen für diese Route");
 	return;
     }
 
@@ -169,6 +173,15 @@ sub Redraw {
 		 main::mark_street(-clever_center => 1,
 				   -coords => [[@newcoords]]);
 	     });
+}
+
+sub MessageText {
+    my($self, $context, $text) = @_;
+    my $c = $context->{ProfilCanvas};
+    $c->createText($c->cget(-width)/2,
+		   $c->cget(-height)/2,
+		   -anchor => "c",
+		   -text => $text);
 }
 
 1;

@@ -1605,4 +1605,28 @@ EOF
 userdel	q4 38035,49183 37875,48253
 EOF
      },
+     { from  => 1111960800, # 2005-03-28 00:00
+       until => 1115071200, # 2005-05-03 00:00
+       text  => 'L 23; (Templin-Lychen); OD Lychen, Kreuzungsber. Straßenbau Vollsperrung 29.03.2005-02.05.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 3125,88753 2788,89447
+EOF
+     },
+     { from  => 1113084000, # 2005-04-10 00:00
+       until => 1113602400, # 2005-04-16 00:00
+       text  => 'L 622; (Rückersdorf-Doberlug Kirchhain); südl. Doberlug-Kirchhain, Höhe Hammerteich Baumfällarbeiten Vollsperrung 11.04.2005-15.04.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 22495,-89358 22558,-89699
+EOF
+     },
+     { from  => 1112072400, # 2005-03-29 07:00
+       until => 1112810400, # 2005-04-06 20:00
+       text  => 'die Fähre Ketzin ist vom 30.03.05 07.00 Uhr bis 06.04.2005 20.00 Uhr aufgrund Bauarbeiten gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -26784,5756 -26840,5684
+EOF
+     },
     );

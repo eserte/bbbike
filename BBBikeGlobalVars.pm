@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.22 2005/03/27 22:43:24 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.22 2005/03/27 22:43:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -236,7 +236,7 @@ use enum qw(:MM_
 	    BABYBIKE_SELECT BABYBIKE_BROWSE SCRIBBLE
 	   );
 
-# Button2 modes
+# Button2 modes, order is important because of option saving!
 use enum qw(:B2M_
 	    NONE DELLAST AUTOSCROLL SCAN FASTSCAN CUSTOM);
 

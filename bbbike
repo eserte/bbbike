@@ -383,7 +383,6 @@ $zoom_new_route = 0;
 $zoom_new_route_chooseort = 1;
 $special_edit = '';
 $map_mode = MM_SEARCH;
-$b2_mode = B2M_FASTSCAN;
 %b2_mode_desc = (B2M_NONE,	 M"Nichts",
 		 B2M_SCAN,	 M"Scanning",
 		 B2M_FASTSCAN,	 M"Fast Scanning",
@@ -756,6 +755,8 @@ eval { local $SIG{'__DIE__'};
     ] : ()), # do not change dialog on Windows
    ['askquit','!',1,
     label => M"vor Beenden fragen", var => \$ask_quit],
+   ['b2mode','=i',B2M_FASTSCAN, nogui => 1,
+    var => \$b2_mode],
    ['autoscroll','!',undef, # XXX make nogui => 0, choices!
     label => M"Autoscrolling", nogui => 1, var => sub { $b2_mode = B2M_AUTOSCROLL }],
    ['autoscrollspeed','=s','normal',
@@ -3340,7 +3341,7 @@ sub do_iconframe {
     my $reset_photo = load_photo($misc_frame2, 'cross.' . $default_img_fmt);
     my $reset_button = $misc_frame2->Button
 	(image_or_text($reset_photo, 'X'),
-	 -command => \&reset_button_command,
+	 -command => \&delete_route,
 	 )->grid(-row => $curr_row, -column => $col++, -sticky => 's');
     $balloon->attach($reset_button, -msg => M"Route zurücksetzen");
     $ch->attach($reset_button, -pod => "^\\s*Route zurücksetzen");
@@ -6117,7 +6118,7 @@ sub set_bindings {
     }
 
     $top->bind("<BackSpace>" => \&mouse_dellast);
-    $top->bind("<Shift-BackSpace>" => \&reset_button_command);
+    $top->bind("<Shift-BackSpace>" => \&delete_route);
     $top->bind("<Delete>" => \&deltovia);
 
     if ($advanced) {
@@ -6305,6 +6306,8 @@ sub mouse_dellast {
     }
 }
 
+# delete_route light. Allerdings nicht ganz klar, wo das hier warum
+# verwendet wird.
 sub reset_button_command {
     reset_undo_route();
     undef $search_route_flag;
@@ -11964,6 +11967,15 @@ sub delete_route {
 	reset_selection();
     }
     update_route_strname(); # XXX => hook
+    if ($map_mode =~ m{^(MM_VIA_MOVE
+		       |MM_GOAL_MOVE
+		       |MM_VIA_ADD
+		       |MM_VIA_ADD_THEN_MOVE
+		       |MM_VIA_DEL
+		      )$}x) {
+	set_map_mode(MM_SEARCH);
+    }
+
     Hooks::get_hooks("del_route")->execute;
 }
 
@@ -14300,18 +14312,21 @@ sub show_route_strname {
 		  -data => route_info_to_text());
 	   }
        })->pack(-side => 'left');
-    $bf->Button
-      (-text => M"Fax",
-       -command => sub {
-	   if (@route_info) {
-	       $show_route_start = "???" unless $show_route_start;
-	       $show_route_ziel  = "???" unless $show_route_ziel;
-	       enter_send_fax
-		 (Mfmt("BBBike-Route von %s bis %s",
-		       $show_route_start, $show_route_ziel),
-		  -data => route_info_to_text());
-	   }
-       })->pack(-side => 'left');
+    if ($advanced && $devel_host) {
+	# Fax::Send is only a private unsupported module...
+	$bf->Button
+	    (-text => M"Fax",
+	     -command => sub {
+		 if (@route_info) {
+		     $show_route_start = "???" unless $show_route_start;
+		     $show_route_ziel  = "???" unless $show_route_ziel;
+		     enter_send_fax
+			 (Mfmt("BBBike-Route von %s bis %s",
+			       $show_route_start, $show_route_ziel),
+			  -data => route_info_to_text());
+		 }
+	     })->pack(-side => 'left');
+    }
     $t->bind('<Up>'   => sub { $route_strname_lbox->yview(scroll => -1,
 							  'units') });
     $t->bind("<Down>" => sub { $route_strname_lbox->yview(scroll => 1,
@@ -14385,6 +14400,10 @@ sub route_info_to_latex {
 \usepackage{german}
 \usepackage{supertabular}
 \pagestyle{empty}
+% Tip from http://www.mackichan.com/index.html?techtalk/579.htm~mainFrame
+% and http://www.faqs.org/faqs/de-tex-faq/part10/ (10.2.2)
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 \sloppy
 \begin{document}
 EOF
@@ -14862,14 +14881,10 @@ sub set_coords_custom {
 
 ### AutoLoad Sub
 sub user_edit_street {
-    # XXX zur Zeit nur Löschen möglich XXX häh?
     if (!$net) {
 	make_net();
     }
     status_message("Can't make net", "die") if !$net;
-#    my(@tags) = $c->gettags('current');
-#    return if !@tags;
-#    if ($tags[0] =~ /^[sSlL]$/) {
     my(@click_items) = ($net_type eq 's'
 			? qw(s l)
 			: ($net_type =~ /^(r|us|rus)$/

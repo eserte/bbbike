@@ -280,6 +280,30 @@ userdel	q4 22217,1108 22162,1067
          'data' => 'userdel	q4 38035,49183 37875,48253
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1115071200,
+         'text' => 'L 23; (Templin-Lychen); OD Lychen, Kreuzungsber. Straßenbau Vollsperrung 29.03.2005-02.05.2005 ',
+         'from' => 1111960800,
+         'data' => 'userdel	q4 3125,88753 2788,89447
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1113602400,
+         'text' => 'L 622; (Rückersdorf-Doberlug Kirchhain); südl. Doberlug-Kirchhain, Höhe Hammerteich Baumfällarbeiten Vollsperrung 11.04.2005-15.04.2005 ',
+         'from' => 1113084000,
+         'data' => 'userdel	2 22495,-89358 22558,-89699
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1112810400,
+         'text' => 'die Fähre Ketzin ist vom 30.03.05 07.00 Uhr bis 06.04.2005 20.00 Uhr aufgrund Bauarbeiten gesperrt',
+         'from' => 1112072400,
+         'data' => 'userdel	2 -26784,5756 -26840,5684
+',
+         'type' => 'gesperrt'
        }
      
 );
