@@ -13,11 +13,6 @@
 # WWW:  http://user.cs.tu-berlin.de/~eserte/
 #
 
-# Überprüft, ob nahe beianderliegende Punkte existieren, die nicht miteinander
-# direkt verbunden sind (mögliche Fehlerquelle)
-# Bislang wird nur eine Liste ausgegeben, die manuell kontrolliert werden
-# muß.
-
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 use Strassen;
@@ -118,3 +113,68 @@ foreach my $c (sort { $a->[2] <=> $b->[2] } @nearest_glob) {
     $seen{$c->[1]}++;
 }
 __END__
+
+=head1 NAME
+
+check_nearest - return list of nearest non-connected neighbors
+
+=head1 SYNOPSIS
+
+    perl check_nearest [-useorigmap] [-map mapname] [-maxdist distance]
+                       [-datadir directory] [-strfile bbdfile] [-v] 
+
+=head1 DESCRIPTION
+
+Return for a given bbd file (or "strassen" by default) a list of near
+non-connected neighbors. This script is used for detecting potential
+errors in the data file.
+
+The output is a list which is sorted by distance. The output format of
+the list ist: coordinates of the first point, coordinates of the
+second point, distance between these points in meters.
+
+=head2 OPTIONS
+
+=over
+
+=item -v
+
+Be verbose
+
+=item -datadir directory
+
+The directory where to look for the given bbd file.
+
+=item -strfile bbdfile
+
+The bbd file to work on. If not given, use "strassen" (optionally in a
+directory given by -datadir). You can also use absolute paths.
+
+=item -maxdist distance
+
+Maximum distance for the output list. Otherwise the maximum distance
+is approximately the standard width of the grid (1000 m).
+
+=item -map mapname
+
+Set the coordinate system of the bbd file.
+
+=item -useorigmap
+
+If set, then output the coordinates in the original format of the bbd
+file, otherwise use standard coordinates.
+
+=back
+
+=head1 EXAMPLES
+
+Show a list of nearest neighbors for a MapInfo file which is using
+WGS84 coordinates:
+
+    perl check_nearest -useorigmap -map polar -maxdist 50 -strfile /tmp/BRB_strassen_IS.mif
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=cut
