@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.9 2003/12/02 20:38:41 eserte Exp $
+# $Id: bbbikerouting.t,v 1.10 2003/12/09 19:04:46 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -29,7 +29,7 @@ BEGIN {
     }
 }
 
-my $num_tests = 52; # basic number of tests
+my $num_tests = 54; # basic number of tests
 
 use vars qw($single $all $bench $v);
 
@@ -197,6 +197,18 @@ sub do_tests {
 	local $^W = 0;
 	like($routing->RouteInfo->[-1]->{Whole}, qr/km/);
 	ok($routing->RouteInfo->[-1]->{Whole} > $routing->RouteInfo->[-2]->{Whole}, "Distance Ok");
+    }
+
+    {
+	my $routing2 = BBBikeRouting->new;
+	$routing2->init_context;
+	_my_init_context($routing2->Context);
+	$routing2->Start->Street("Kolonnenstr/Naumannstr");
+	$routing2->Goal->Street("Hauptstr/Eisenacher");
+	$routing2->search;
+	ok(scalar @{ $routing2->RouteInfo } > 1, "Non-empty route info");
+	is((grep { $_->{Street} =~ /kaiser.*wilhelm/i } @{$routing2->RouteInfo}),
+	   0, "Obeying one-way streets");
     }
 
     {

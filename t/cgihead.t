@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead.t,v 1.6 2003/11/17 07:21:05 eserte Exp $
+# $Id: cgihead.t,v 1.7 2003/12/09 19:04:46 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -34,7 +34,9 @@ my @prog = qw(bbbike.cgi
 	     );
 
 use vars qw($mapserver_prog_url);
-do "$FindBin::RealBin/../cgi/bbbike.cgi.config";
+$mapserver_prog_url = $ENV{BBBIKE_TEST_MAPSERVERURL} || do {
+    do "$FindBin::RealBin/../cgi/bbbike.cgi.config";
+};
 if (defined $mapserver_prog_url) {
     push @prog, $mapserver_prog_url;
 } else {

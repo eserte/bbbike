@@ -204,4 +204,16 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Rixdorfer Weihnachtsmarkt',
        type  => 'gesperrt',
      },
+     { from  => 1069620183, # 2003-11-23 21:43
+       until => 1072212183, # 2003-12-23 21:43
+       file  => 'spandauer_weihnachtsmarkt.bbd',
+       text  => 'Spandauer Weihnachtsmarkt',
+       type  => 'gesperrt',
+     },
+     { from  => 1070600400, # 2003-12-05 06:00
+       until => 1070838000, # 2003-12-08 00:00
+       file  => 'sophienstr.bbd',
+       text  => 'Sophienstraße zwischen Rosenthaler Straße und Große Hamburger Straße wegen 8. Umwelt - und Weihnachtsmarkt für den Fahrzeugverkehr gesperrt (keine Wendemöglichkeit für Lkw). Dauer : 6.12.2003 / 06.00 Uhr bis 7.12.2003 / 24.00 Uhr ',
+       type  => 'gesperrt',
+     },
     );

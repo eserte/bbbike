@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.57 2003/12/02 23:29:02 eserte Exp $
+# $Id: bbbike.cgi,v 6.58 2003/12/04 00:37:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -607,7 +607,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.57 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.58 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -4265,7 +4265,7 @@ sub footer_as_string {
 <td align=center>$fontstr<a target="_top" href="$bbbike_script?begin=1$smallformstr">Neue Anfrage</a>${fontend}</td>
 EOF
     $s .= <<EOF;
-<td align=center>$fontstr<a target="_top" href="$bbbike_script?info=1$smallformstr">Info &amp; Disclaimer</a>${fontend}</td>
+<td align=center>$fontstr<a target="_top" href="$bbbike_script?info=1$smallformstr">Kontakt, Info &amp; Disclaimer</a>${fontend}</td>
 EOF
     $s .= "<td align=center>$fontstr";
     $s .= complete_link_to_einstellungen();
@@ -4956,6 +4956,7 @@ Autor: Slaven Rezic<br>
 <a href="mailto:@{[ $BBBike::EMAIL ]}">E-Mail:</a> <a href="mailto:@{[ $BBBike::EMAIL ]}">@{[ $BBBike::EMAIL ]}</a><br>
 <a href="@{[ $BBBike::HOMEPAGE ]}">Homepage:</a> <a href="@{[ $BBBike::HOMEPAGE ]}">@{[ $BBBike::HOMEPAGE ]}</a></a><br>
 Telefon: @{[ CGI::escapeHTML("+49-0172-1661969") ]}<br>
+Donji Crna&#x10d; 81, BiH-88220 &#x160;iroki Brijeg<br>
 </center>
 <p>
 EOF
