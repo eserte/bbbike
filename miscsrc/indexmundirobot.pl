@@ -1,5 +1,7 @@
 #!/usr/bin/perl
 
+# Krass ungenau, diese Koordinaten!
+
 use strict;
 
 use HTML::LinkExtor;
