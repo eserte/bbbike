@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.110 2003/08/04 21:02:15 eserte Exp $
+# $Id: bbbike,v 3.110 2003/08/04 21:02:15 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -11376,19 +11376,26 @@ sub scale_width {
 			 w-W w-W1 w-W2 w-W-out w-W1-out w-W2-out
 			 l l-out u b r pp p z g gP gD fz
 			 sperre0 sperre1 sperre1s sperre2)) {
-	my $new_width = get_line_width($type, $scale);
-	if (defined $old_scale) {
-	    my $old_width = get_line_width($type, $old_scale);
-	    next if ($new_width == $old_width);
-	}
-	if ($type =~ /^sperre/) {
-	    # special handling to filter out images:
-	    foreach my $item ($c->find("withtag", $type)) {
-		$c->itemconfigure($item, -width => $new_width)
-		    unless $c->type($item) eq 'image';
+	eval {
+	CHANGE: {
+		my $new_width = get_line_width($type, $scale);
+		if (defined $old_scale) {
+		    my $old_width = get_line_width($type, $old_scale);
+		    last CHANGE if ($new_width == $old_width);
+		}
+		if ($type =~ /^(sperre|fz)/) {
+		    # special handling to filter out images:
+		    foreach my $item ($c->find("withtag", $type)) {
+			$c->itemconfigure($item, -width => $new_width)
+			    unless $c->type($item) eq 'image';
+		    }
+		} else {
+		    $c->itemconfigure($type, -width => $new_width);
+		}
 	    }
-	} else {
-	    $c->itemconfigure($type, -width => $new_width);
+	};
+	if ($@) {
+	    warn "Error while configuring $type in scale_width: $@";
 	}
     }
     foreach my $sperre_type (qw(sperre1 sperre1s sperre2)) {

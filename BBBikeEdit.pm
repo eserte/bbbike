@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.57 2003/07/23 00:26:04 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.57 2003/07/23 00:26:04 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003 Slaven Rezic. All rights reserved.
@@ -3072,6 +3072,7 @@ sub temp_blockings_editor {
     $t->gridRowconfigure   ($_, -weight => 1) for (1..8);
 
     my $initialdir = "$FindBin::RealBin/misc/temp_blockings/";
+    my $pl_file = "$initialdir/bbbike-temp-blockings.pl";
     my $file = $initialdir;
     my $prewarn_days = 1;
     my $blocking_type = "gesperrt";
@@ -3223,10 +3224,10 @@ sub temp_blockings_editor {
 		  if (index($rel_file, $initialdir) != 0) {
 		      $rel_file = File::Spec->abs2rel($rel_file); # XXX base needed?
 		  } else {
+
 		      $rel_file = File::Basename::basename($rel_file); # XXX handle deeper hiearchies?
 		  }
 
-		  my $pl_file = "$FindBin::RealBin/cgi/bbbike-temp-blockings.pl"; # XXX this will change
 		  File::Copy::copy($pl_file, "$pl_file~");
 		  my @old_contents;
 		  open(PL_FILE, $pl_file)

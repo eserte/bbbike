@@ -114,4 +114,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'John-Foster-Dulles-Allee zwischen Spreeweg und Entlastungsstraße, Sportveranstaltung, Straße in beiden Richtungen gesperrt. Dauer: 23.08.2003, 10.00 Uhr bis 20.00 Uhr',
        type  => 'gesperrt',
      },
+     { from  => 1062136800, # 2003-08-29 08:00
+       until => 1062280800, # 2003-08-31 00:00
+       file  => 'maybachufer.bbd',
+       text  => 'Maybachufer zwischen Kottbusser Tor und Hobrechtbrücke wegen Straßenfest für den Fahrzeugverkehr gesperrt. Dauer: 30.08.2003 zwischen 08.00 Uhr und 24.00 Uhr',
+       type  => 'gesperrt',
+     },
     );
