@@ -20,10 +20,20 @@
   (interactive)
   (let ((sel (x-selection)))
     (if sel
-	(progn
-	  (goto-char (point-min))
-	  (search-forward-regexp (concat "\\(\t\\| \\)" sel "\\( \\|$\\)"))
-	  (goto-char (1- (- (point) (length sel)))))
+	(let ((search-state 'begin)
+	      (end-length))
+	  (while (not (eq search-state 'found))
+	    (if (eq search-state 'again)
+		(goto-char (point-min)))
+	    (if (not (search-forward-regexp (concat "\\(\t\\| \\)" sel "\\( \\|$\\)")
+					    nil
+					    (eq search-state 'begin)))
+		(setq search-state 'again)
+	      (setq search-state 'found)
+	      (goto-char (- (point) (length sel)
+			    (- (match-end 2) (match-beginning 2))
+			    )))
+	    ))
       (error "No X selection"))))
 
 (defvar bbbike-mode-map nil "Keymap for BBBike bbd mode.")

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_dates,v 1.7 2004/06/10 23:02:26 eserte Exp $
+# $Id: check_dates,v 1.8 2004/10/10 22:59:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -28,15 +28,26 @@ my @l = localtime;
 my $today = sprintf "%04d-%02d-%02d", $l[5]+1900, $l[4]+1, $l[3];
 my $nextrunfile;
 my $oldparser;
+my $reldays;
 
 if (!GetOptions("filter!" => \$do_filter,
 		"today=s" => \$today,
 		"nextrunfile=s" => \$nextrunfile,
 		"oldparser" => \$oldparser,
+		"reldays=i" => \$reldays,
 	       )) {
     die <<EOF;
-usage: $0 [-filter] [-today YYYY-MM-SS] [-nextrunfile file] files
+usage: $0 [-filter] [-today YYYY-MM-SS] [-nextrunfile file] [-reldays days] files
+
+-nextrunfile is not implented (and what's it anyway?)
 EOF
+}
+
+if ($reldays) {
+    require Date::Calc;
+    my($y,$m,$d) = split /-/, $today;
+    ($y,$m,$d) = Date::Calc::Add_Delta_Days($y,$m,$d, $reldays);
+    $today = sprintf "%04d-%02d-%02d", $y, $m, $d;
 }
 
 my $isodaterx = qr/\b\d{4}-\d{2}-\d{2}\b/;

@@ -1,4 +1,4 @@
-# $Id: ampeln-orig,v 4.4 2004/08/12 23:57:55 eserte Exp eserte $
+# $Id: ampeln-orig,v 4.5 2004/10/10 22:39:12 eserte Exp eserte $
 	X 9222,8787
 	X 8982,8781
 	X 8594,8773
@@ -756,7 +756,7 @@
 	X 20512,17101
 	X 20339,16752
 	X 20111,16316
-	X 17149,17656
+	X 17159,17631
 	X 17418,16014
 	X 15880,13535
 	X 16843,14420
@@ -1209,9 +1209,9 @@ geplante Ampel in der Johannisthaler	? 14196,2876
 	X 23155,16075
 	X 23893,15893
 	X 24999,15634
-	X 17836,18100
-	X 17415,17824
-	X 16828,17456
+	X 17843,18078
+	X 17412,17800
+	X 16837,17440
 	X 15662,16656
 	X 15432,16500
 	X 14067,16127
@@ -1694,6 +1694,7 @@ nur Richtung Westen	X 5831,10978
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?)	B 40248,14503
 Bahn kommt ca. halbstündlich	B 43106,77287
 Bahn kommt ca. halbstündlich	B 41387,91306
+Bahn kommt ca. halbstündlich oder öfter	B 27137,37337
 Bahn kommt ca. halbstündlich, mit Aufforderungsknopf zum Öffnen der Schranke	B 42128,79453
 Bahn kommt ca. halbstündlich	B 41840,89712
 	B 45768,72675
@@ -1715,3 +1716,6 @@ UBB, halbstündlich	B 56592,174173
 	B 46696,60855
 	B 48562,64225
 	B 42250,115925
+	B 48125,71018
+	B 48437,74675
+	B 40525,105399

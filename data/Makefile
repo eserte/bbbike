@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.27 2004/09/06 22:58:33 eserte Exp $
+# $Id: Makefile,v 2.28 2004/10/10 22:59:47 eserte Exp $
 #
 
 BBBIKEDIR=		..
@@ -729,8 +729,11 @@ count-streets:
 
 check-dates:	.check_dates
 
-.check_dates:	*-orig
-	${MISCSRCDIR}/check_dates $>
+.check_dates:	*-orig ${MISCSRCDIR}/check_dates
+	@echo Expired today:
+	@${MISCSRCDIR}/check_dates *-orig
+	@echo Expired in two weeks:
+	@${MISCSRCDIR}/check_dates -reldays 14 *-orig
 	@touch $@
 
 check-crossings:	.check_crossings

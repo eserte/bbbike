@@ -10540,6 +10540,11 @@ sub set_coord_system {
     if (!defined $o) {
 	$o = $Karte::map{'standard'};
     }
+    my $old_coord_system = $coord_system_obj ? $coord_system_obj->token : "";
+    if ($old_coord_system eq $o->token) {
+	# No change
+	return;
+    }
     if ($o->token eq 'standard') {
 	set_landscape(); # XXX set scrollregion
 	$coord_system = 'standard';

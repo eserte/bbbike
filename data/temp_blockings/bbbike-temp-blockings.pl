@@ -469,7 +469,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'handicap',
      },
      { from  => 1091055057, # 2004-07-29 00:50
-       until => 1095112740, # 2004-09-13 23:59 XXX removed?
+       until => 1095112740, # 2004-09-13 23:59 removed
        file  => 'dietzgenstr.bbd',
        text  => 'Dietzgenstr. (Pankow) Richtung stadteinwärts zwischen Schillerstr. und Uhlandstr. Baustelle, Richtungsfahrbahn komplett gesperrt (bis 13.09.2004) ',
        type  => 'gesperrt',
@@ -946,12 +946,29 @@ userdel	q4 -1809,24343 -1912,24442
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1097271072, # aufgehoben
        text  => 'Werner-Voß-Damm (Tempelhof) in beidenRichtungen zwischen Boelckestraße und Bäumerplan Verkehrsbehinderung durch geplatzte Wasserleitung, Straße ind beiden Richtungen gesperrt.',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 8553,7795 8637,7871
 userdel	q4 8553,7795 8512,7757
+EOF
+     },
+     { from  => 1097359200, # 2004-10-10 00:00
+       until => 1097877600, # 2004-10-16 00:00
+       text  => 'L 30; (Schönower Chaussee); OD Bernau Baumfällungen Vollsperrung 11.10.2004-15.10.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 21637,30946 20794,30899
+userdel	q4 21637,30946 21955,30976
+EOF
+     },
+     { from  => 1097208000, # 2004-10-08 06:00
+       until => 1097442000, # 2004-10-10 23:00
+       text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Kürbisfest, Straße gesperrt, Dauer: 09.10.2004 06:00 Uhr bis 10.10.2004 23:00 Uhr ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 6698,8385 6990,8685 7009,8705 7201,8870 7275,8960
 EOF
      },
     );

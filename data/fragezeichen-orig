@@ -53,7 +53,7 @@ Verbindung zwischen Michelangelostr. und Hohenschönhausener Str. vorhanden? (im 
 Promenade am Teltowkanal: Qualität? durchgängig befahrbar?	? 6645,4254 6224,4307 6013,4327
 Rungiusstr: Kopfsteinpflaster?	? 13027,6168 13116,5689 13158,5490
 Neubau der Späthstr.: ist die neue Verkehrsführung am Autobahnknoten schon aktiv?	?? 14025,5319 14340,5393 14720,5490 14861,5449 14994,5193
-Jägerndorfer Zeile: Qualität?	? 2746,3699 2640,3391 2207,2917 2119,2790
+Jägerndorfer Zeile: Qualität?	? 2746,3699 2684,3520 2640,3391 2207,2917 2119,2790
 Weißwasserweg: Qualität? Als Abkürzung für Finckensteinallee/Ringstr. benutzbar?	? 2639,2989 2229,2898 2119,2790
 Europarc Dreilingen: Qualität? durchgängig befahrbar?	? -1525,1453 -3174,556 -3104,391
 Europarc Dreilingen: Qualität? durchgängig befahrbar?	? -3985,115 -4459,-157 -6147,-1125 -6395,-887
@@ -189,7 +189,7 @@ Oderberg - Brodowin: hier auch schlechtes Kopfsteinpflaster?	? 49286,55260 48690
 Oderberg - Brodowin: hier auch schlechtes Kopfsteinpflaster?	? 49981,54421 50245,54138 50630,53972 50854,53582 51068,53458 51454,53442 51947,53342 52074,53026 52545,52757 52908,52583 53150,52706
 Neuendorf - Sandkrug: Qualität?	? 47100,53337 46649,53269 46521,53312 46084,53267 45373,53443 45019,53618 44728,53639 44504,53792 43991,53805 43522,54001 43307,53854 42983,53817 42554,53801 42125,53934 41654,53939
 Sandkrug - Neuendorf: Qualität?	? 49981,54421 51183,55005 51506,55009 51873,55078 52067,55167 52177,55296 52348,55277 52693,55282 53013,55094 53292,55124 53634,55048 53851,54857 53937,54875
-Gramzow: Anna-Ka...-Str., asphaltierte Alternative zur Bahnhofstr.?	? 49841,90479 50201,90483 50570,90751
+Gramzow: Anna-Ka...-Str., asphaltierte Alternative zur Bahnhofstr. (östliche Seite sah gut aus!)?	? 49841,90479 50201,90483 50570,90751
 Elisenau - Börnicke: Privatgelände, Durchfahrt immer möglich?	? 24360,26503 24427,26841
 Potzlow - Fergitz: noch immer? schlechtes Kopfsteinpflaster, breite Sandbanketten (von Potzlow aus sah es letztens gut aus!)	? 38409,90770 37937,90365 37674,90025
 Gotlindestr.: OK? [wenn ja, dann Atzpodienstr. verlaengern]	? 15934,12670 16409,12612 16848,12614 17113,12623 17357,12566
@@ -338,15 +338,14 @@ Passow - Briest: laut "Regio-Cart" gut geeignet	? 55879,83412 55000,83062 54462,
 Briest - Fredersdorf: laut "Regio-Cart" gut geeignet	? 53393,83852 52325,83675 51755,83877 51687,84625 51500,85425 51546,85950
 Fredersdorf - Zichow: laut "Regio-Cart" gut geeignet	? 51546,85950 51950,86712 51950,87244
 Fredersdorf - Polßen: laut "Regio-Cart" gut geeignet	? 51500,85425 51112,85637 50450,85550 49675,85762 49037,85737 48512,85287 48116,85298
-Zichow - Lützlow: Qualität (wahrscheinlich schlecht)?	? 52049,88323 52387,90362 52461,90659 51925,91912 52012,92300 51762,92675
 Gramzow (Ost): Durchfahrt möglich? Qualität?	? 50210,89678 50201,90483 50183,90669
 Angermünde - Mürow: laut "Regio-Cart" gut geeignet	? 49725,69331 50600,70525 50600,71150 52003,72761
 Mürow - Henriettenhof: Qualität?	? 52003,72761 53612,69769 54031,69280
 Mürow - Grünow: laut "Regio-Cart" gut geeignet	? 52003,72761 52112,73687 51887,73912 52087,74725 52637,75412 54887,78437 54930,78757 54332,80590
-Biesenbrow - Passow: laut "Regio-Cart" gut geeignet	? 50477,80139 50650,79712 51975,78362 52712,79112 54332,80590 55200,80962 56977,82763
+Biesenbrow - Passow: laut "Regio-Cart" gut geeignet	? 50477,80139 50650,79712
+Biesenbrow - Passow: laut "Regio-Cart" gut geeignet	? 51975,78362 52712,79112 54332,80590 55200,80962 56977,82763
 Pinnow - Frauenhagen: laut "Regio-Cart" gut geeignet	? 55594,73546 55625,73837 55287,73875 55300,74112 55075,74062 53687,74900 52637,75412 52331,75777
-Frauenhagen - Biesenbrow: laut "Regio-Cart" gut geeignet	? 52331,75777 51525,76487 51450,77787 51975,78362
-Passow - Lützlow: laut "Regio-Cart" gut geeignet	? 56235,83453 56525,84075 56237,84737 56387,84825 56362,84987 56825,85187 55712,87500 55612,88612 55062,91575 54387,91750 53787,91712 53769,92338
+Frauenhagen - Biesenbrow: laut "Regio-Cart" gut geeignet	? 52331,75777 51525,76487
 Altkünkendorf - Wolletz: laut "Regio-Cart" gut geeignet	? 41260,67587 41437,68012 40775,68125 40750,69175 41050,69362 43095,69473
 Wolletz Richtung Norden: laut "Regio-Cart" gut geeignet	? 43095,69473 43250,71500 42941,72180
 Wilmersdorf - Schmiedeberg: laut "Regio-Cart" gut geeignet	? 43151,79054 45600,81525 46075,81712 46197,82609 46425,82825 46677,82770
@@ -426,7 +425,7 @@ Zepernicker Landweg: Qualität (vermutlich mäßig bis schlecht?)?	? 22195,32466 22
 Crossiw - Gellmersdorf: Qualität?	? 55045,66286 54925,64862 54700,64125 54787,63762 54700,63500
 Gellmersdorf - Lüderitz: Qualität?	? 54874,63371 54975,63187 54712,63012 54662,62850 55100,61175 55462,60387 55443,60071
 Pinnow - Schönermark: Qualität?	? 55300,74112 54837,75112 54975,75812 54875,76587 54887,78437
-Nach Lützlow: Qualität (voraussichtliche Betonweg?)?	? 54005,92771 53275,93087 52900,93012 52103,93487
+Nach Lützlow: Qualität (voraussichtliche Betonweg? letztes Stück in Lützlow definitiv schlechtes Kopfsteinpflaster)?	? 54005,92771 53275,93087 52900,93012 52103,93487
 Grillenweg: Qualität? Stimmt der Straßen/Wegname? Ausschilderung vorhanden? nachts beleuchtet?	? 24206,5583 24025,5884 23956,5931 23967,6011
 Str. 125a in "Kleine Usedomstr." umbenannt? Siehe auch http://www.pds-fraktion-treptow-koepenick.de/drucksache-5-908.html. Jupiterstr./Altglienicke aus der Datenbank herausnehmen.	? 19550,996 19618,1206
 Umbenenunng zu "Zu den Gosener Bergen"? Siehe http://www.pds-fraktion-treptow-koepenick.de/drucksache-5-871.html	? 30640,-2803 30721,-2321
@@ -438,16 +437,15 @@ Luckow - Sommersdorf: Qualität?	? 63938,93631 63800,94250 62800,96175 62912,9680
 Bei Penkun: Qualität? Ausgeschildert?	? 68961,100161 67712,99425 65237,99575 64837,99262 64362,99087 63575,98375 62425,97375
 Laut "Berliner Umland" verläuft R1 hier entlang, aber es gibt (noch) keine Ausschilderung	? 17527,7812 17678,7850 17775,7874 17987,7973 18387,7742
 Eberswalde - Spechthausen: Qualität? Genaue Wegführung, Straßennamen? Bahnübergang! Nördlich des Bahnübergangs asphaltiert!	? 35362,48503 35312,48225 35400,48175 35375,48000 35462,47962 35287,47687 35275,47387 35225,47187 35336,46970 35262,46737 35262,46475 35337,46325 35262,46125 35103,45496
-Wohin geht es hier weiter? Nach Falkenwalde? In welcher Qualität?	? 46693,98168 48800,97137 49480,96389 49834,96903
+Wohin geht es hier weiter? Nach Falkenwalde? In welcher Qualität?	? 46693,98168 48800,97137 49480,96389
 Dreesch - Damme: Qualität?	? 47043,99437 49983,99567
-Existiert eine Verbindung zur B2?	? 46696,60855 46277,60997
 Baumgarten - Cremzow: Qualität?	? 45984,105569 46887,105387 48400,104975 48650,105087 49762,105625 50600,106275 51178,106442
 Ludwigsburg: Qualität?	? 47516,106682 48650,105087
 Schönfeld - Neuenfeld: im Ort Schönfeld noch Betonplatten mit Spur (Q1), danach den Anschein nach Asphalt (Q0)	? 48060,112975 48800,113000 49137,113325 49537,113375 49887,113837
 Klockow - Züsedom: ab Klockow Asphalt, danach ungewiss	? 49376,111425 49887,113837 50187,114312 50025,115750 50148,115972
 Klockow - Kleptow (Feldweg): auf der Nordseite sandiger Feldweg (Q2?)	? 49487,110056 49370,107975
 Wallenbergstr - Rudolstädter Str.: Verbindung vorhanden?	? 4139,8498 4046,8487 3964,8559
-Rüdickenstr. und Verlängerung: Qualität? Verbindung existent?	? 17149,17656 17425,17281 17891,17097
+Rüdickenstr. und Verlängerung: Qualität? Verbindung existent?	? 17159,17631 17425,17281 17891,17097
 Arnimstr.: Qualität? Wo ist die Verbindung zur Gehrenseestr.?	? 17891,17097 18500,16831 18313,16643
 Falkstr.: ist hier für Autofahrer gesperrt? Durchgängig Asphalt?	? 12162,8055 12211,7830
 Unterbaumstr.: bereits befahrbar oder noch Bauarbeiten?	? 8581,13013 8503,12885
@@ -503,3 +501,4 @@ Grünstr.: Qualität? für Autofahrer gesperrt?	? 22111,4562 22162,4546 22312,4593
 Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut	?::inwork 31000,61437 30784,60950 30778,60221 30671,59984 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
 Lennestr. (Potsdam): hier auch Kopfsteinpflaster?	? -14381,-1368 -14152,-1321 -13727,-1300
 Togostr./Antwerpener Str.: Qualität der Fahrbahn? Ist eine Verbindung zwischen Antwerpener und Tegeler Str. für Radfahrer vorhanden?	? 5325,16915 5602,16718 6119,16203 6575,15831 7020,15314
+Zichow-Lindenwegsiedlung: Qualität?	? 54500,87934 51992,88068

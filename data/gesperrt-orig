@@ -417,6 +417,8 @@ Märkische Allee - Wuhletalstr.: Linksabbiegen wahrscheinlich verboten	3 20834,17
 Wuhletalstr. - Märkische Allee: Linksabbiegen wahrscheinlich verboten	3 20853,17528 20717,17516 20691,17463
 Wuhletalstr. - Märkische Allee: Linksabbiegen wahrscheinlich verboten	3 20675,17515 20691,17463 20717,17516
 Märkische Allee - Wuhletalstr.: Linksabbiegen wahrscheinlich verboten	3 20834,17752 20878,17842 20832,17824
+Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3 17412,17800 17703,17990 17678,18171
+Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3 17678,18171 17703,17990 17843,18078
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Dorotheenstr. an der US-Botschaft	3 8907,12472 9112,12499 9323,12528
 Dorotheenstr. an der US-Botschaft	3 9323,12528 9112,12499 8907,12472
@@ -570,7 +572,7 @@ L 39; (ASFriedersdorf-Neu Zittau); keine Brücke ü. Oder-Spree-Kanal; kein Bw ü. 
 #XXX del L 40; zw. Großbeeren und Güterfelde; Bau der L 40n; Vollsperrung; 16.06.2003-28.06.2004	2:inwork 1663,-5427 2031,-5468 2471,-6025 2356,-6128 2443,-6309
 L 70 (Doberlug Kirchhain-Dahme); zw. B87 Hohenbuckow u. Hillmersdorf; Fahrbahnschäden; Vollsperrung; 22.05.97-unbekannt	2:inwork 17023,-71738 17783,-72721 17979,-73530 17960,-73915 17961,-74364 18228,-75553 18187,-76301 18061,-76878
 #XXX del L 75; (B 96a Mahlow-Berlin); zwischen B 96a und Klein Ziethen; Neubau B 96; Vollsperrung; 04.08.2003-30.09.2004	2:inwork 13348,-3283 13289,-4660
-#XXX del L 76; (Mahlow-Teltow); zw. B101 nördl. Großbeeren und B101n; Straßenbauarb. B101n; Vollsperrung; 29.11.2003-06.10.2004	2:inwork 5394,-3053 4260,-2373
+L 76; (Mahlow-Teltow); zw. B101 nördl. Großbeeren und B101n; Straßenbauarb. B101n; Vollsperrung; 29.11.2003-12.10.2004	2:inwork 5394,-3053 4260,-2373
 #XXX del L 24; (Greiffenberg-Gerswalde); bei Pfingstberg, Brücke über DB; Brückenneubau; Vollsperrung; 19.01.2004-31.08.2004	2:inwork 41593,80703 41292,81052
 #: XXX ist REMOVEd?:
 B 179; (Spreewaldstr., Karl-Liebknecht-Str.); zw. Bahnübergang und nördl. A.-Bebel-Str.; grundh. Straßenbau; Vollsperrung; 01.04.2004-31.12.2005	2:inwork 26612,-15094 26583,-15677
@@ -598,6 +600,7 @@ L 912; (Päwesin-Gortz); zw. OA Päwesin u. Bagow, Brücke über Seeverbindung; Brüc
 #XXX del L 34; (Reichenberg-B168 (Bollersdorfer Kreisel)); zw. Reichenberg u. Abzw. Buckow; Instandsetzung Durchlaß; Vollsperrung; 05.07.2004-06.08.2004	2:inwork 58405,23616 58340,23341 58151,22324 57358,21972 56330,21643 55558,21417 55194,21167
 L 237; (Britzer Str.); OD Eberswalde, Brücke über Oder-Havel-Kanal; Brückenneubau; Vollsperrung; 02.08.2004-28.10.2004	2:inwork 36312,50126 36289,50743
 #XXX del K 6302; zwischen Pausin und Alt Brieselang; Kanal- und Straßenbau; Vollsperrung; 02.08.2004-01.10.2004	2:inwork -14680,25643 -14763,25345 -15254,24958 -15322,24572 -15621,24357 -15705,24101 -15767,23889 -15966,23802 -16135,23503 -16319,22950 -16595,22693 -16873,22649
+L 19; (Zechlinerhütte-Wesenberg (MVP)); zw. Abzw. Klein Zerlang u. LG; (nö. Prebelowbrücke); Brückenneubau; Vollsperrung; 11.10.2004-30.04.2005	2:inwork -26403,85177 -26316,84900
 #
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
