@@ -5789,7 +5789,8 @@ sub set_bindings {
 			 }
 		     });
     }
-    $top->Advertise(PopupMenu => $popup_menu);
+    $top->Advertise(PopupMenu => $popup_menu)
+	if $popup_menu;
 
     my $alt_mouse1 = sub {
 	if ($alt_set_route_point{$map_mode}) {
@@ -15685,6 +15686,7 @@ sub set_fonts {
 	};
 
 	$top->fontConfigure($font{'bold'},
+			    -size => sprintf("%.f", $minfs->($pt)),
 			    -weight => 'bold');
 	$top->fontConfigure($font{'fix15'},
 			    -size => ($small_icons ? -8 : -15));
@@ -15736,7 +15738,7 @@ sub set_fonts {
 	}
     }
 
-    undef @font;
+    @font = ();
     foreach (qw(tiny small reduced normal large verylarge huge veryhuge)) {
 	push @font, $_;
     }

@@ -509,6 +509,13 @@ dafE<uuml>r gibt es aber ein neues Tk::MDI-Widget
 
 Andreas' Labeling-Algorithmus verwenden
 
+=item * (E2)
+
+-font/-fontfamily/-fontheight handling verbessern. -font in der
+Kommandozeile sollte Einstellungen in der Config-Dateo überschreiben.
+Das Verwenden von -fontfamily lucida -fontheight 7 führt nicht zum
+gewünschten Ergebnis.
+
 =back
 
 =over
