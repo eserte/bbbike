@@ -112,6 +112,11 @@ sub BBBikeHeavy::string_eval_die {
 ### AutoLoad Sub
 sub BBBikeHeavy::load_plugin {
     my $file = shift;
+    my @plugin_args;
+    if ($file =~ /^(.*)=(.*)$/) {
+	$file = $1;
+	@plugin_args = split / /, $2;
+    }
     $file .= ".pm" if ($file !~ /\.pm$/);
     my($mod) = fileparse($file, '\..*');
     if (-r $file) {
@@ -142,7 +147,7 @@ sub BBBikeHeavy::load_plugin {
 	    }
 	}
     }
-    eval $mod.'::register()';
+    eval $mod.'::register(@plugin_args)';
     if ($@) {
 	status_message(Mfmt("Das Plugin %s konnte nicht registriert werden. Grund: %s", $mod, $@), "error");
 	warn $@;

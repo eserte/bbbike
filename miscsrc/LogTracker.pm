@@ -34,8 +34,20 @@ use CGI ();
 
 $bbbike_cgi = "http://localhost/bbbike/cgi/bbbike.cgi"
     if !defined $bbbike_cgi;
+$logfile = "/tmp/AccessLog"
+    if !defined $logfile;
 
 sub register {
+    my(@plugin_args) = @_;
+    for(my $i=0; $i<$#plugin_args; $i+=2) {
+	my($k,$v) = @plugin_args[$i..$i+2];
+	if    ($k eq 'logfile') { $logfile = $v }
+	elsif ($k eq 'bbbike_cgi') { $bbbike_cgi = $v }
+	elsif ($k eq 'tracking') { $tracking = $v; parse_tail_log() if $v } # XXX
+	else {
+	    warn "Ignore unknown plugin parameter $k";
+	}
+    }
     my $pkg = __PACKAGE__;
     $BBBikePlugin::plugins{$pkg} = $pkg;
     add_button();
@@ -158,8 +170,6 @@ sub init {
               );
     $layer = main::next_free_layer();
     @accesslog_data = ();
-#    $logfile = "/home/e/eserte/www/AccessLog";
-    $logfile = "/tmp/AccessLog" if !defined $logfile;
 }
 
 sub parse_accesslog {
