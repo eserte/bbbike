@@ -210,7 +210,7 @@ sub BBBikeGPS::draw_gpsman_data {
 	{
 	    my $columnspan;
 	    my $can_dateentry = 0;
-	    if (eval { require Tk::DateEntry; 1 }) {
+	    if (eval { require Tk::DateEntry; Tk::DateEntry->VERSION("1.38"); }) {
 		$can_dateentry = 1;
 	    } else {
 		$columnspan = 2;
@@ -221,6 +221,10 @@ sub BBBikeGPS::draw_gpsman_data {
 			       (defined $columnspan ? (-columnspan => $columnspan) : ()),
 			      );
 	    if ($can_dateentry) {
+		my $dmy2file = sub {
+		    my($day,$month,$year) = @_;
+		    "$gpsman_data_dir/" . sprintf("%04d%02d%02d", $year, $month, $day) . ".trk";
+		};
 		my $date;
 		my $de = $ff->DateEntry
 		    (-dateformat => 2,
@@ -229,8 +233,18 @@ sub BBBikeGPS::draw_gpsman_data {
 		     -textvariable => \$date,
 		     -formatcmd => sub {
 			 my($year,$month,$day) = @_;
-			 $file = "$gpsman_data_dir/" . sprintf("%04d%02d%02d", $year, $month, $day) . ".trk";
+			 $file = $dmy2file->($day,$month,$year);
 			 "$year/$month/$day";
+		     },
+		     -configcmd => sub {
+			 my(%args) = @_;
+			 if (defined $args{-date}) {
+			     my($d,$m,$y) = @{ $args{-date} };
+			     my $file = $dmy2file->($d,$m,$y);
+			     if (-r $file) {
+				 $args{-datewidget}->configure(-bg => "red");
+			     }
+			 }
 		     },
 		    )->grid(-row => $row, -column => 1, -sticky => "ew");
 		my $dee = $de->Subwidget("entry"); # XXX hackery
