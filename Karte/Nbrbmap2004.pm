@@ -34,10 +34,6 @@ sub new {
 
        Fs_base   => "neubrandenburgmap2004",
        Cache_dir => "$Karte::cache_root/neubrandenburgmap2004",
-       Root_URL  => "http://www.stadtpl" .
-                    "andienst.de/cities/neubrandenburg/grid1",
-       Users    => ['Stadtpla' .
-		    'ndienst 2004'],
 
        X0 => -13047.6421433902,
        X1 => 2.71803024996842,
