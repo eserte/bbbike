@@ -419,4 +419,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Finsterwalder Straße zwischen Engelroder Weg und Calauer Straße Wiesenfest, Verkehrsbehinderung erwartet, Dauer: 26.06.2004, 10.00 UHr bis 27.06.2004, 18.00 Uhr.',
        type  => 'handicap',
      },
+     { from  => 1087459757, # 2004-06-17 10:09
+       until => 1089237600, # 2004-07-08 00:00
+       file  => 'gleimstr.bbd',
+       text  => 'Gleimstraße zwischen Schönhauser Allee und Ystarder Straße in beiden Richtungen gesperrt, Bauarbeiten. Dauer: bis voraussichtlich 07.07.2004',
+       type  => 'handicap',
+     },
     );
