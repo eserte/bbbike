@@ -146,7 +146,8 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 	    require Sys::Hostname;
 	    if (Sys::Hostname::hostname() =~ /herceg\.de$/) {
 		$conf = BBBikeDraw::MapServer::Conf->vran_default;
-	    } elsif ($ENV{SERVER_NAME} =~ /radzeit\.de$/) {
+	    } elsif (defined $ENV{SERVER_NAME} &&
+		     $ENV{SERVER_NAME} =~ /radzeit\.de$/) {
 		$conf = BBBikeDraw::MapServer::Conf->radzeit_default;
 	    } else {
 		$conf = BBBikeDraw::MapServer::Conf->bbbike_cgi_conf;

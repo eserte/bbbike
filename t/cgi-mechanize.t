@@ -21,7 +21,14 @@ BEGIN {
     }
 }
 
-my $cgiurl = 'http://www/bbbike/cgi/bbbike.cgi';
+my $cgiurl;
+if (defined $ENV{BBBIKE_TEST_CGIURL}) {
+    $cgiurl = $ENV{BBBIKE_TEST_CGIURL};
+} elsif (defined $ENV{BBBIKE_TEST_CGIDIR}) {
+    $cgiurl = $ENV{BBBIKE_TEST_CGIDIR} . "/bbbike.cgi";
+} else {
+    $cgiurl = 'http://www/bbbike/cgi/bbbike.cgi';
+}
 
 my $agent = WWW::Mechanize->new();
 my $formfiller = WWW::Mechanize::FormFiller->new();

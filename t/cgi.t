@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.13 2003/09/01 05:51:25 eserte Exp $
+# $Id: cgi.t,v 1.14 2003/09/03 16:06:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -28,6 +28,8 @@ my @urls;
 
 if (defined $ENV{BBBIKE_TEST_CGIURL}) {
     push @urls, $ENV{BBBIKE_TEST_CGIURL};
+} elsif (defined $ENV{BBBIKE_TEST_CGIDIR}) {
+    push @urls, $ENV{BBBIKE_TEST_CGIDIR} . "/bbbike.cgi";
 }
 
 my $cpt = Safe->new;

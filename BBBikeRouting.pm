@@ -443,7 +443,7 @@ sub search {
 
     my $context = $self->Context;
 
-    if ($context->Verbose > 1) {
+    if (defined $context->Verbose && $context->Verbose > 1) {
 	Strassen::set_verbose(1);
     }
     my($res) = $self->Net->search

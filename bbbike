@@ -24,11 +24,6 @@ use lib ("$FindBin::RealBin",
 	);
 BEGIN { eval 'use BBBikeDebug' if $ENV{BBBIKE_DEBUG} }
 
-##XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-## This is for perl-5.8.0 and Tk804.023-preview and Tk804.0_24
-#use if $] >= 5.008, encoding => 'iso-8859-1';
-##XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
 BEGIN {
     my $nosplash = grep { $_ eq '-nosplash' } @ARGV;
     if ($] >= 5.005 && !$^C && !$^P && !$nosplash) {
@@ -1159,7 +1154,7 @@ if (defined $Plugin::brinfo{'xwindow_id'}) {
     push(@extra_args, "-use" => $Plugin::brinfo{'xwindow_id'});
 }
 
-if ($Tk::VERSION < 803) {
+if ($Tk::VERSION < 803 || $Tk::VERSION >= 804.025) {
     eval { require Tk::UnderlineAll };
     warn __LINE__ . ": $@" if $@ && $verbose;
 }

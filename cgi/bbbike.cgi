@@ -663,7 +663,7 @@ $max_plz_streets = 25;
 # die originale URL (für den Kaltstart)
 $bbbike_url = $q->url;
 # $mapdir_url absolut machen
-$mapdir_url = "http://" . $q->server_name . $mapdir_url;
+$mapdir_url = "http://" . $q->server_name . ($q->server_port != 80 ? ":" . $q->server_port : "") . $mapdir_url;
 # Root-Verzeichnis und Bilder-Verzeichnis von bbbike
 ($bbbike_root = $bbbike_url) =~ s|[^/]*/[^/]*$|| if !defined $bbbike_root;
 $bbbike_root =~ s|/$||; # letzten Slash abschneiden
@@ -4368,12 +4368,14 @@ EOF
 
 sub choose_all_form {
 
+    my $locale_set =0;
     use locale;
     eval {
 	local $SIG{'__DIE__'};
 	require POSIX;
 	foreach my $locale (qw(de de_DE de_DE.ISO8859-1 de_DE.ISO_8859-1)) {
-	    last if (&POSIX::setlocale( &POSIX::LC_ALL, $locale));
+	    $locale_set=1, last
+		if (&POSIX::setlocale( &POSIX::LC_ALL, $locale));
 	}
     };
 
@@ -4391,10 +4393,26 @@ sub choose_all_form {
 	last if !@{$ret->[1]};
 	push(@strlist, $ret->[0]);
     }
-    @strlist = sort @strlist;
-    my %initial = ('Ä' => 'A',
-		   'Ö' => 'O',
-		   'Ü' => 'U');
+    my %trans = ('Ä' => 'A',
+		 'Ö' => 'O',
+		 'Ü' => 'U',
+		 'ä' => 'a',
+		 'ö' => 'o',
+		 'ü' => 'u',
+		 'ß' => 'ss',
+		 'é' => 'e',
+		);
+    my $trans_rx = "[".join("",keys %trans)."]";
+    if ($locale_set) {
+	@strlist = sort @strlist;
+    } else {
+	@strlist = map  { $_->[1] }
+	           sort { $a->[0] cmp $b->[0] }
+		   map  { (my $s = $_) =~ s/($trans_rx)/$trans{$1}/ge;
+			  [ $s, $_]
+		      }
+		       @strlist;
+    }
     my $last = "";
     my $last_initial = "A";
 
@@ -4412,10 +4430,10 @@ sub choose_all_form {
 	my $initial = substr($strname, 0, 1);
 	if (defined $last_initial and
 	    $last_initial ne $initial and
-	    (!defined $initial{$initial} or
-	     $last_initial ne $initial{$initial})) {
+	    (!defined $trans{$initial} or
+	     $last_initial ne $trans{$initial})) {
 	    print "<hr>";
-	    $last_initial = ($initial{$initial} ? $initial{$initial} : $initial);
+	    $last_initial = ($trans{$initial} ? $trans{$initial} : $initial);
 	    print "<a name=\"$last_initial\"><b>$last_initial</b></a><br>";
 	}
 	print "$strname<br>";

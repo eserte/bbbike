@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.4 2003/08/09 07:20:44 eserte Exp $
+# $Id: plz.t,v 1.5 2003/09/03 16:06:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003 Slaven Rezic. All rights reserved.
@@ -75,8 +75,12 @@ if (defined $in_str) {
        ['fwefwfiiojfewfew', undef, 1],
        ['mollstrasse',0],
       );
-    print "# Test files are written to $tmpdir.\n";
-    print "# If there are non-fatal errors, try to re-run this script with -create\n";
+    if ($create) {
+	print "# Test files are written to $tmpdir.\n";
+    } else {
+	print "# Test files read from $tmpdir.\n";
+	print "# If there are non-fatal errors, try to re-run this script with -create\n";
+    }
 }
 
 my $plz = new PLZ;
@@ -275,6 +279,10 @@ sub do_file {
     my $file = ++$test_file;
 
     if ($create) {
+	if (!-d $tmpdir) {
+	    require File::Path;
+	    File::Path::mkpath([$tmpdir]);
+	}
 	open(T, ">$tmpdir/$file") or die "Can't create $tmpdir/$file: $!";
 	print T $res;
 	close T;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.6 2003/08/11 07:33:00 eserte Exp $
+# $Id: wapcgi.t,v 1.7 2003/09/03 16:06:46 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -30,6 +30,8 @@ my @wap_url;
 
 if (defined $ENV{BBBIKE_TEST_WAPURL}) {
     push @wap_url, $ENV{BBBIKE_TEST_WAPURL};
+} elsif (defined $ENV{BBBIKE_TEST_CGIDIR}) {
+    push @wap_url, $ENV{BBBIKE_TEST_CGIDIR} . "/wapbbbike.cgi";
 }
 
 if (!GetOptions("wapurl=s" => sub { @wap_url = $_[1] })) {
