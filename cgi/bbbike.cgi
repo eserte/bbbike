@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.73 2004/05/18 22:02:38 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.76 2004/06/02 00:29:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -612,7 +612,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.73 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.76 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -983,6 +983,35 @@ EOF
     }
 }
 
+sub _potsdam_hack {
+    my $street = shift;
+    my $potsdam_file = "$tmp_dir/potsdam_strassen_$<";
+    my $potsdam_str = eval { Strassen->new($potsdam_file) };
+    if (!$potsdam_str) {
+	$potsdam_str = Strassen->new;
+	my $landstr = Strassen->new("landstrassen");
+	$landstr->init;
+	while(1) {
+	    my $r = $landstr->next;
+	    last if !@{ $r->[Strassen::COORDS] };
+	    if ($r->[Strassen::NAME] =~ /\s+\(Potsdam\)/) {
+		$potsdam_str->push($r);
+	    }
+	}
+	$potsdam_str->write($potsdam_file);
+    }
+    my $pos = $potsdam_str->choose_street($street, "Potsdam");
+    my $name;
+    if (defined $pos) {
+	$name = $potsdam_str->get($pos)->[Strassen::NAME];
+	my $scope = $q->param("scope");
+	if (!$scope || $scope eq "city") {
+	    $q->param("scope", "region");
+	}
+    }
+    $name;
+}
+
 sub choose_form {
     my $startname = $q->param('startname') || '';
     my $start2    = $q->param('start2')    || '';
@@ -1053,20 +1082,28 @@ sub choose_form {
 		$$ortcref = $xy;
 	    } else {
 		my($strasse, $bezirk, $plz) = @s;
-		warn "Wähle $type-Straße für $strasse/$bezirk\n" if $debug;
-		my $str = get_streets();
-		my $pos = $str->choose_street($strasse, $bezirk);
-		if (!defined $pos) {
-		    if ($str->{Scope} eq 'city') {
-			warn "Enlarge streets for umland\n" if $debug;
-			$q->param("scope", "region");
-			$str = get_streets_rebuild_dependents(); # XXX maybe wideregion too?
+		warn "Wähle $type-Straße für $strasse/$bezirk (1st)\n" if $debug;
+		if ($bezirk eq "Potsdam") {
+		    my $name = _potsdam_hack($strasse);
+		    if ($name) {
+			$$nameref = $name;
+			$q->param($type . 'plz', $plz);
 		    }
-		    $pos = $str->choose_street($strasse, $bezirk);
-		}
-		if (defined $pos) {
-		    $$nameref = $str->get($pos)->[0];
-		    $q->param($type . 'plz', $plz);
+		} else {
+		    my $str = get_streets();
+		    my $pos = $str->choose_street($strasse, $bezirk);
+		    if (!defined $pos) {
+			if ($str->{Scope} eq 'city') {
+			    warn "Enlarge streets for umland\n" if $debug;
+			    $q->param("scope", "region");
+			    $str = get_streets_rebuild_dependents(); # XXX maybe wideregion too?
+			}
+			$pos = $str->choose_street($strasse, $bezirk);
+		    }
+		    if (defined $pos) {
+			$$nameref = $str->get($pos)->[0];
+			$q->param($type . 'plz', $plz);
+		    }
 		}
 	    }
 	}
@@ -1284,23 +1321,33 @@ sub choose_form {
 	    if (@$matchref == 1) {
 		my($strasse, $bezirk) = ($matchref->[0][0],
 					 $matchref->[0][1]);
-		warn "Wähle $type-Straße für $strasse/$bezirk.\n"
+		warn "Wähle $type-Straße für $strasse/$bezirk (2nd)\n"
 		    if $debug;
-		my $str = get_streets();
-		my $pos = $str->choose_street($strasse, $bezirk);
-		if (!defined $pos) {
-		    if ($str->{Scope} eq 'city') {
-			warn "Enlarge streets for umland\n" if $debug;
-			$q->param("scope", "region");
-			$str = get_streets_rebuild_dependents(); # XXX maybe wideregion too?
+		if ($bezirk eq "Potsdam") {
+		    my $name = _potsdam_hack($strasse);
+		    if ($name) {
+			$$nameref = $name;
+			$q->param($type . 'plz', $matchref->[0][2]);
+		    } else {
+			$$tworef = join($delim, @{ $matchref->[0] });
 		    }
-		    $pos = $str->choose_street($strasse, $bezirk);
-		}
-		if (defined $pos) {
-		    $$nameref = $str->get($pos)->[0];
-		    $q->param($type . 'plz', $matchref->[0][2]);
 		} else {
-		    $$tworef = join($delim, @{ $matchref->[0] });
+		    my $str = get_streets();
+		    my $pos = $str->choose_street($strasse, $bezirk);
+		    if (!defined $pos) {
+			if ($str->{Scope} eq 'city') {
+			    warn "Enlarge streets for umland\n" if $debug;
+			    $q->param("scope", "region");
+			    $str = get_streets_rebuild_dependents(); # XXX maybe wideregion too?
+			}
+			$pos = $str->choose_street($strasse, $bezirk);
+		    }
+		    if (defined $pos) {
+			$$nameref = $str->get($pos)->[0];
+			$q->param($type . 'plz', $matchref->[0][2]);
+		    } else {
+			$$tworef = join($delim, @{ $matchref->[0] });
+		    }
 		}
 	    }
 	}
@@ -1862,7 +1909,7 @@ sub get_kreuzung {
 
     if ((!defined $start and !defined $start_c) ||
 	(!defined $ziel  and !defined $ziel_c)) {
-	confess "Fehler: Start $start und/oder Ziel $ziel können nicht zugeordnet werden.<br>\n";
+	confess "Fehler: Start <$start> und/oder Ziel <$ziel> können nicht zugeordnet werden.<br>\n";
     }
 
     if (@start_coords == 1 and @ziel_coords == 1 and
@@ -3598,6 +3645,9 @@ sub draw_route {
 			} $q->param('draw')
 		      ];
 	}
+	$layers = [ grep { $_ ne "route" } @$layers ]
+	    if !$ms->has_coords;
+
 	my $scope = $q->param('scope');
 	if (!defined $scope || $scope eq "") {
 	    $scope = 'all,city' # "all", so switching between reference maps is possible
@@ -3605,6 +3655,19 @@ sub draw_route {
 	if ($scope !~ /^all/) {
 	    $scope = "all,$scope";
 	}
+	my $has_center = (defined $q->param("center") && $q->param("center") ne "");
+	if ($has_center) {
+	    my $width  = $q->param("width");
+	    my $height = $q->param("height");
+	    if ($scope =~ /city/) {
+		$q->param("width",  1000) if !defined $q->param("width");
+		$q->param("height", 1000) if !defined $q->param("height");
+	    } else {
+		$q->param("width",  5000) if !defined $q->param("width");
+		$q->param("height", 5000) if !defined $q->param("height");
+	    }
+	}
+
 	$ms->start_mapserver
 	    (-bbbikeurl => $bbbike_url,
 	     -bbbikemail => $BBBike::EMAIL,
@@ -3616,11 +3679,9 @@ sub draw_route {
 	      ? (-mapext => $q->param("mapext"))
 	      : ()
 	     ),
-	     (defined $q->param("center") && $q->param("center") ne ""
+	     ($has_center
 	      ? (-center => $q->param("center"),
 		 -markerpoint => $q->param("center"),
-		 -width => 1000, #XXX von scope variabel machen?
-		 -height => 1000,
 		)
 	      : ()
 	     ),
@@ -4084,21 +4145,21 @@ sub make_time {
     sprintf "%d:%02d", $h, $m;
 }
 
+sub get_next_scopes {
+    my $scope = shift;
+    if (!defined $scope || $scope eq "" || $scope =~  /\bcity\b/) {
+	return (qw(region wideregion));
+    } elsif ($scope =~ /\bregion\b/) {
+	return (qw(wideregion));
+    } else {
+	return ();
+    }
+}
+
 # falls die Koordinaten nicht exakt existieren, wird der nächste Punkt
 # gesucht und gesetzt
 sub fix_coords {
     my($startcoord, $viacoord, $zielcoord) = @_;
-
-    my $get_next_scopes = sub {
-	my $scope = shift;
-	if (!defined $scope || $scope eq "" || $scope =~  /\bcity\b/) {
-	    return (qw(region wideregion));
-	} elsif ($scope =~ /\bregion\b/) {
-	    return (qw(wideregion));
-	} else {
-	    return ();
-	}
-    };
 
     foreach my $varref (\$startcoord, \$viacoord, \$zielcoord) {
 	next if (!defined $$varref or
@@ -4117,7 +4178,7 @@ sub fix_coords {
 		    last TRY;
 		} else {
 		    # Try to enlarge search region
-		    my @scopes = $get_next_scopes->($q->param("scope"));
+		    my @scopes = get_next_scopes($q->param("scope"));
 		    for my $scope (@scopes) {
 			$q->param("scope", $scope); # XXX "all," gets lost
 			my $str = get_streets_rebuild_dependents();
@@ -4141,7 +4202,7 @@ sub fix_coords {
 	    } else {
 		# Try to enlarge search region
 		$q->param("scope", "city") if !$q->param("scope");
-		my @scopes = $get_next_scopes->($q->param("scope"));
+		my @scopes = get_next_scopes($q->param("scope"));
 		if (@scopes) {
 		    for my $scope (@scopes) {
 			$q->param("scope", $scope); # XXX "all," gets lost
@@ -4965,7 +5026,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/05/18 22:02:38 $';
+    my $cgi_date = '$Date: 2004/06/02 00:29:31 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

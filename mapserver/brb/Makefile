@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.15 2004/05/17 07:06:09 eserte Exp $
+# $Id: Makefile,v 1.16 2004/06/02 00:36:30 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -311,8 +311,20 @@ STERNFARTEN= 2003 2004
 #.for year in 2004 2003 # ${STERNFAHRTEN}
 sternfahrt2004:	sternfahrt2004/sternfahrt2004.html sternfahrt2004/sternfahrt2004_init.html sternfahrt2004/sternfahrt2004-b.map
 
+STERNFAHRT_2004_DEFINES=\
+	--define MAPNAME="sternfahrt2004" \
+	--define EXTENT="4658 7874 13542 16766" \
+	--define TEMPLATE="sternfahrt2004" \
+	--define INCLUDE_AFTER_STRASSEN_ANNOTATIONS="sternfahrt2004/after_strassen_annotations.inc" \
+	--define INCLUDE_AFTER_MARKER="sternfahrt2004/after_marker.inc" \
+	--define REFMAP_REGION_EXTENT="-15700 -14985 37034 37749" \
+
+sternfahrt2004/sternfahrt2004.map:	brb.map-tpl Makefile Makefile.${TARGET}.inc
+	tpage $(ALL_TPL_DEFINES) $(STERNFAHRT_2004_DEFINES) brb.map-tpl > $@
+	chmod ugo+r $@
+
 sternfahrt2004/sternfahrt2004-b.map:	sternfahrt2004/sternfahrt2004.map mkroutemap
-	${BRBDIR}/mkroutemap -force -scope city sternfahrt2004/sternfahrt2004.map sternfahrt2004/sternfahrt2004-b.map
+	${BRBDIR}/mkroutemap -force -scope city sternfahrt2004/sternfahrt2004.map sternfahrt2004/sternfahrt2004-b.map || rm -f $@
 	chmod ugo+r $@
 
 #.endfor

@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: mkroutemap,v 1.1 2003/07/01 08:57:32 eserte Exp $
+# $Id: mkroutemap,v 1.2 2004/06/02 00:36:30 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -26,9 +26,11 @@ my $marker_point;
 my $scope;
 my $addlayer_string;
 my $addlayer_file;
+my(@addlayer_def, %addlayer_def);
 if (!GetOptions("routeshpfile|routeshapefile=s" => \$routeshapefile,
 		"addlayer=s" => \$addlayer_string,
 		"addlayerfile=s" => \$addlayer_file,
+		"addlayerdef=s\@" => \@addlayer_def,
 		"routecoords=s" => \$routecoords,
 		"start=s" => \$start,
 		"goal=s" => \$goal,
@@ -53,6 +55,14 @@ if (defined $marker_point) {
 }
 if (defined $routecoords) {
     $routecoords =~ s/,/ /g;
+}
+
+for (@addlayer_def) {
+    my($after, $file) = split /,/, $_, 2;
+    if (exists $addlayer_def{$after}) {
+	warn "Overwriting layer definition $addlayer_def{$after} after $after with $file\n";
+    }
+    $addlayer_def{$after} = $file;
 }
 
 my $in_section = '';
@@ -125,6 +135,17 @@ while(<OLD>) {
 	}
 	# END ADDITIONAL LAYERS is only a dummy
 	$in_section = '';
+    } elsif ($in_section =~ /^addlayerdef\s+(.*)/) {
+	$_ = "";
+	my $after = $1;
+	my $file = $addlayer_def{$after};
+	if (defined $file) {
+	    open(my $fh, $file) or die "Can't open $file: $!";
+	    local $/ = undef;
+	    $_ .= <$fh>;
+	}
+	# END AFTER ... is only a dummy
+	$in_section = '';
     } elsif (/\#\#\#\s+BEGIN\s+ROUTE/) {
 	$in_section = 'route';
     } elsif (/\#\#\#\s+BEGIN\s+((?:START|GOAL)FLAG)/) {
@@ -143,6 +164,9 @@ while(<OLD>) {
 	$in_section = 'refmap_' . lc($1);
     } elsif (/\#\#\#\s+BEGIN\s+ADDITIONAL\s+LAYERS/) {
 	$in_section = "addlayers";
+    } elsif (/\#\#\#\s+BEGIN\s+AFTER\s+(.*)/) {
+	$in_section = "addlayerdef " . lc($1);
+	next; # XXX oben auch nexts einfuegen?
     }
     print NEW $_;
 }

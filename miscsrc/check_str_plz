@@ -2,15 +2,15 @@
 # -*- perl -*-
 
 #
-# $Id: check_str_plz,v 1.19 2003/02/04 18:59:01 eserte Exp $
+# $Id: check_str_plz,v 1.20 2004/06/02 00:30:34 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
 # überprüft Straßennamen gegen die PLZ-Datei
@@ -27,6 +27,7 @@ unshift(@Strassen::datadirs, "$FindBin::RealBin/../data");
 $do_multi_bez = 1;
 $datafile = "strassen";
 $ignore_in_parens = 1;
+$plzfield = PLZ::FILE_ZIP();
 
 GetOptions("plzdata=s"  => \$plzdata,
 	   "plzfield=i" => \$plzfield,
@@ -37,18 +38,9 @@ GetOptions("plzdata=s"  => \$plzdata,
 	   "checkcoords!" => \$do_check_coords,
 	  );
 
-if (!defined $plzdata or !defined $plzfield) {
-    if (0) {
-	$plzdata = "/usr/www/soc/plz/Berlin.data";
-	$plzfield = 4;
-    } elsif (0) {
-	$plzdata = "$FindBin::RealBin/../data/Berlin.coords.data";
-	$plzfield = 2;
-    } else {
-	my $plz = PLZ->new();
-	$plzdata = $plz->{File};
-	$plzfield = PLZ::FILE_ZIP();
-    }
+if (!defined $plzdata) {
+    my $plz = PLZ->new();
+    $plzdata = $plz->{File};
 }
 
 my $fh = gensym;

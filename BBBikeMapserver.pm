@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.17 2004/03/02 23:37:25 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.19 2004/06/01 23:14:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -39,11 +39,17 @@ sub new {
 sub new_from_cgi {
     my($class, $q, %args) = @_;
     my $self = $class->new(%args);
-    my(@c) = split /[!; ]/, $q->param("coords") if defined $q->param("coords");
+    my @c;
+    @c = split /[!; ]/, $q->param("coords") if defined $q->param("coords");
     $self->{Coords} = \@c;
     $self->{CGI}    = $q;
     $self->{DEBUG}  = $q->param("debug");
     $self;
+}
+
+sub has_coords {
+    my $self = shift;
+    $self->{Coords} && @{ $self->{Coords} };
 }
 
 sub all_layers {
@@ -106,6 +112,12 @@ sub scope_by_map {
 #                      override params
 # -layers => arrayref: layers to draw, otherwise draw passed layers (if any),
 #		       otherwise draw a default set (all layers)
+# -mapname => name: name of map, by default "brb"
+# -mapext => "x y x y": map extents, otherwise use width and height around
+#                       center or start point
+# -width => int
+# -height => int: set width and height of map extents in meters (by default
+#                 6000m)
 sub start_mapserver {
     my($self, %args) = @_;
     my $externshape = $args{'-externshape'} =
@@ -196,16 +208,17 @@ sub create_mapfile {
     my $do_route    = $args{-route};
     my $scope       = $args{-scope};
     my $externshape = $args{-externshape};
+    my $mapname     = $args{-mapname} || "brb";
 
     my $orig_map_dir = $self->{MAPSERVER_DIR};
     my $path_for_scope = sub {
 	my $scope = shift;
 	my $prefix = shift || "";
 	my $orig_map_path = ($scope eq 'wideregion'
-			     ? "$orig_map_dir/${prefix}brb-wide.map"
+			     ? "$orig_map_dir/${prefix}${mapname}-wide.map"
 			     : $scope eq 'city'
-			     ? "$orig_map_dir/${prefix}brb-b.map"
-			     : "$orig_map_dir/${prefix}brb.map"
+			     ? "$orig_map_dir/${prefix}${mapname}-b.map"
+			     : "$orig_map_dir/${prefix}${mapname}.map"
 			    );
 	$orig_map_path;
     };
@@ -219,11 +232,15 @@ sub create_mapfile {
 	my $tmpfile1 = $self->{TmpDir} . "/bbbikems-$$.bbd";
 	open(TMP1, ">$tmpfile1") or die "Can't write to $tmpfile1: $!";
 	my $dist = 0;
-	for my $i (1 .. $#{$self->{Coords}}) {
-	    my $old_dist = $dist;
-	    $dist += Strassen::Util::strecke_s(@{$self->{Coords}}[$i-1,$i]);
-	    # XXX add maybe output of $comments_net->get_point_comment
-	    print TMP1 BBBikeUtil::m2km($old_dist) . " - " . BBBikeUtil::m2km($dist) . "\tRoute " . join(" ", @{$self->{Coords}}[$i-1,$i]) . "\n";
+	if ($self->{Coords} && @{ $self->{Coords} } == 1) {
+	    print TMP1 "\tRoute " . $self->{Coords}[0] . "\n";
+	} else {
+	    for my $i (1 .. $#{$self->{Coords}}) {
+		my $old_dist = $dist;
+		$dist += Strassen::Util::strecke_s(@{$self->{Coords}}[$i-1,$i]);
+		# XXX add maybe output of $comments_net->get_point_comment
+		print TMP1 BBBikeUtil::m2km($old_dist) . " - " . BBBikeUtil::m2km($dist) . "\tRoute " . join(" ", @{$self->{Coords}}[$i-1,$i]) . "\n";
+	    }
 	}
 	close TMP1;
 
@@ -258,7 +275,7 @@ sub create_mapfile {
 			    -goal => $self->{Coords}[-1]);
 	    $self->{CenterTo} = $self->{Coords}[0]
 		unless defined $self->{CenterTo};
-	} else {
+	} elsif (@{$self->{Coords}}) {
 	    @marker_args = (-markerpoint => $self->{Coords}[-1]);
 	    $self->{CenterTo} = $self->{Coords}[0]
 		unless defined $self->{CenterTo};
@@ -291,7 +308,7 @@ sub create_mapfile {
 		  : (-routecoords => join(",",@{$self->{Coords}}))
 		 ),
 		 @marker_args,
-		 -scope => $scope,
+		 (defined $scope && $scope ne "" ? (-scope => $scope) : ()),
 		 $orig_map_path,
 		 $map_path);
 	    warn "Cmd: @cmd" if $self->{DEBUG};
