@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.12 2005/03/01 23:35:46 eserte Exp $
+# $Id: Strasse.pm,v 1.13 2005/03/03 00:14:10 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -242,7 +242,7 @@ sub strip_bezirk_perfect {
 	my @bezirke = grep { !exists $city2subparts{$city}->{$_} }
 	              split /,\s*/, $bezirke;
 	@bezirke ? "(" . join(", ", @bezirke) . ")" : "";
-    }e;
+    }eg;
     $str =~ s/\s+$//;
     $str =~ s/\s+/ /g;
     $str;

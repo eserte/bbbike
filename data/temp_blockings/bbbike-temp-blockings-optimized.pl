@@ -200,6 +200,14 @@ userdel	2 -12403,-10753 -12459,-12120
          'data' => 'userdel	q4; 3507,3635 3184,3413 2701,3064 2639,2989 2638,2843
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1110063600,
+         'text' => 'Augsburger Str. (Charlottenburg) in beiden Richtungen zwischen Rankestr. und Joachimstaler Str. Kranarbeiten, Straße vollständig gesperrt (bis 05.03.2005)',
+         'from' => 1109889471,
+         'data' => 'userdel	2 5636,10626 5479,10719
+',
+         'type' => 'gesperrt'
        }
      
 );

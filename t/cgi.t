@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.28 2004/12/30 11:44:11 eserte Exp $
+# $Id: cgi.t,v 1.29 2005/03/03 22:43:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004 Slaven Rezic. All rights reserved.
@@ -136,6 +136,7 @@ for my $cgiurl (@urls) {
     }
 
     # search_coord
+ XXX:
     for my $output_as ("", qw(xml print perldump yaml yaml-short palmdoc mapserver)) {
     SKIP: {
 	    skip "No mapserver tests", 1 if $skip{mapserver};
@@ -147,17 +148,21 @@ for my $cgiurl (@urls) {
 	    my $content = uncompr($res);
 	    if ($output_as eq '' || $output_as eq 'print') {
 		is($res->content_type, 'text/html');
-		ok($content =~ /L.*nge:.*(\d[\d.,]+).*km/ && $1 > 0);
-		ok($content =~ /angekommen/);
+		ok($content =~ /L.*nge:.*(\d[\d.,]+).*km/ && $1 > 0, "Length text found");
+		like($content, qr/nach\s+Osten/, "Direction is correct");
+		like($content, qr/angekommen/, "End of route list found");
 	    } elsif ($output_as eq 'palmdoc') {
-		is($res->content_type, 'application/x-palm-database');
-		ok($content =~ /Dudenstr/);
+		is($res->content_type, 'application/x-palm-database', "Correct mime type for palmdoc");
+		like($content, qr/Dudenstr/, "Expected palmdoc content");
 	    } elsif ($output_as eq 'perldump') {
-		is($res->content_type, 'text/plain');
+		is($res->content_type, 'text/plain', "Correct mime type for perl dump");
 		my $route = $cpt->reval($content);
-		is(ref $route, 'HASH');
+		is(ref $route, 'HASH', "perldump is a hash");
+		is(ref $route->{Route}, 'ARRAY', "Route member found");
+		like($route->{Route}[0]{DirectionString}, qr/nach\s+Osten/, "Direction is correct");
+		is($route->{Route}[0]{Direction}, "E", "Raw direction is correct");
 	    } elsif ($output_as eq 'mapserver') {
-		#warn $res->content_type;
+		is($res->content_type, "text/html");
 	    } elsif ($output_as eq 'xml' && is_in_path('xmllint')) {
 		open(XMLLINT, "| xmllint - 2>&1 >/dev/null");
 		print XMLLINT $content;
@@ -271,7 +276,6 @@ for my $cgiurl (@urls) {
 	    ok(0);
 	}
 
-    XXX:
 	# This created degenerated routes because of missing handling of "B"
 	# (Bundesstraﬂen) category
 	$req = new HTTP::Request

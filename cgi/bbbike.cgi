@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.11 2005/03/02 00:25:44 eserte Exp $
+# $Id: bbbike.cgi,v 7.12 2005/03/02 23:40:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -654,7 +654,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.12 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3094,8 +3094,8 @@ sub search_coord {
 		my($x1,$y1) = @{ $r->path->[0] };
 		my($x2,$y2) = @{ $r->path->[1] };
 		$raw_direction =
-		       (main::line_to_canvas_direction
-			($x1,$y1,$x2,$y2));
+		    uc(main::line_to_canvas_direction
+		       ($x1,$y1,$x2,$y2));
 		$richtung = "nach " . localize_direction($raw_direction, "de");
 	    }
 
@@ -5318,14 +5318,14 @@ sub load_teaser {
 sub localize_direction {
     my($dir, $lang) = @_;
     if ($lang eq 'de') {
-	$dir = { "n" => "Norden",
-		 "ne" => "Nordosten",
-		 "nw" => "Nordwesten",
-		 "e" => "Osten",
-		 "s" => "Süden",
-		 "se" => "Südosten",
-		 "sw" => "Südwesten",
-		 "w" => "Westen",
+	$dir = { "N" => "Norden",
+		 "NE" => "Nordosten",
+		 "NW" => "Nordwesten",
+		 "E" => "Osten",
+		 "S" => "Süden",
+		 "SE" => "Südosten",
+		 "SW" => "Südwesten",
+		 "W" => "Westen",
 	       }->{$dir};
     }
     $dir;
@@ -5536,7 +5536,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/03/02 00:25:44 $';
+    my $cgi_date = '$Date: 2005/03/02 23:40:56 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

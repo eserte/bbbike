@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.19 2004/09/29 22:07:14 eserte Exp eserte $
+# $Id: mapserver_comment.cgi,v 1.20 2005/03/02 23:31:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -115,7 +115,7 @@ eval {
     my $fh = $msg->open(@Mail_Send_open);
     die "Kann open mit @Mail_Send_open nicht durchführen" if !$fh;
 
-    if (param("formtype") && param("formtype") eq "newstreetform") {
+    if (param("formtype") && param("formtype") =~ /^(newstreetform|fragezeichenform)$/) {
 	open(BACKUP, ">>/tmp/newstreetform-backup")
 	    or warn "Cannot write backup data for newstreetform: $!";
 	print BACKUP "-" x 70, "\n";
@@ -151,11 +151,9 @@ eval {
 			-path => "/",
 			-expires => "+1y",
 		       );
-    if (param("formtype") && param("formtype") eq "newstreetform") {
-	my $url = defined $bbbike_html
-	          ? "$bbbike_html/newstreetform.html"
-		  : "../html/newstreetform.html"
-		  ;
+    if (param("formtype") && param("formtype") =~ /^(newstreetform|fragezeichenform)$/) {
+	my $dir = defined $bbbike_html ? $bbbike_html : "..";
+	my $url = "$dir/newstreetform.html";
 	print header(-cookie => $cookie),
 	    start_html(-title=>"Neue Straße für BBBike",
 		       -style=>{'src'=>"$bbbike_html/bbbike.css"}),

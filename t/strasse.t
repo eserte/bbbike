@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strasse.t,v 1.4 2005/03/01 23:45:11 eserte Exp $
+# $Id: strasse.t,v 1.5 2005/03/03 00:14:00 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -68,7 +68,8 @@ my @beautify_landstrasse =
       "((Möllendorffstr. -) Karl-Lade-Str.)", "(Karl-Lade-Str. -) Möllendorffstr.)", "XXX"],
     );
 
-plan tests => scalar(@split_street_citypart) + scalar(@beautify_landstrasse)*2;
+my $strip_bezirk_tests = 6;
+plan tests => scalar(@split_street_citypart) + scalar(@beautify_landstrasse)*2 + $strip_bezirk_tests;
 
 for my $s (@split_street_citypart) {
     my($str, @expected) = ($s->[0], @{ $s->[1] });
@@ -85,5 +86,24 @@ for my $s (@beautify_landstrasse) {
     is(Strasse::beautify_landstrasse($str), $expected_forward, "$str forward");
     is(Strasse::beautify_landstrasse($str, 1), $expected_backward, "$str backward");
 }
+
+my $city = "Berlin_DE";
+is(Strasse::strip_bezirk("Dudenstr. (Kreuzberg, Tempelhof)"),
+   "Dudenstr.",
+   "strip_bezirk simple");
+is(Strasse::strip_bezirk_perfect("Dudenstr. (Kreuzberg, Tempelhof)", $city),
+   "Dudenstr.",
+   "strip_bezirk_perfect simple");
+is(Strasse::strip_bezirk("Dudenstr. (foobar) (Kreuzberg, Tempelhof)"),
+   "Dudenstr. (foobar)",
+   "only last component is stripped");
+is(Strasse::strip_bezirk_perfect("Dudenstr. (foobar) (Kreuzberg, Tempelhof)", $city),
+   "Dudenstr. (foobar)",
+   "only bezirke are stripped");
+is(Strasse::strip_bezirk("Dudenstr. (foobar)"), "Dudenstr.",
+   "non-bezirk incorrectly stripped");
+is(Strasse::strip_bezirk_perfect("Dudenstr. (foobar)", $city),
+   "Dudenstr. (foobar)",
+   "non-bezirk not stripped");
 
 __END__

@@ -40,14 +40,18 @@ function init() {
   }
 
   if (document.cookie) {
-    if (document.cookie.match(/^mapserver_comment=(.*)/)) {
-      var arr = RegExp.$1.split("&");
-      for(var i=0; i<arr.length/2; i++) {
-        var key = arr[i*2];
-	var val = arr[i*2+1];
-	if (key == "email" || key == "author") {
-	  frm.elements[key].value = val;
-	}
+    var cookies = document.cookie.split(/;\s*/);
+    for (var i=0; i<cookies.length; i++) {
+      if (cookies[i].match(/^mapserver_comment=(.*)/)) {
+        var arr = RegExp.$1.split("&");
+        for(var i=0; i<arr.length/2; i++) {
+          var key = arr[i*2];
+	  var val = arr[i*2+1];
+  	  if (key == "email" || key == "author") {
+	    frm.elements[key].value = val;
+	  }
+  	}
+	break;
       }
     }
   }
@@ -469,7 +473,7 @@ function init() {
        
        | <a id="bbbikeurl" href="../cgi/bbbike.cgi">BBBike</a>
        
-       | <a href="javascript:history.back()">Zurück</a>
+<!--       | <a href="javascript:history.back()">Zurück</a>-->
       </p>
    </td>
   </tr>
