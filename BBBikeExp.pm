@@ -90,6 +90,7 @@ sub BBBikeExp::bbbikeexp_setup {
     } elsif ($coord_system eq 'berlinmap') {
 	@defs_str = (['s', 'strassen-orig'],
 		     ['w', 'wasserstrassen-orig'],
+		     ['l', 'landstrassen-orig'],
 		     ['f', 'flaechen-orig'],
 		     ['u', 'ubahn-orig'],
 		     ['b', 'sbahn-orig'],
@@ -220,7 +221,30 @@ sub BBBikeExp::bbbikeexp_remove_data {
 sub BBBikeExp::draw_streets {
     my $def = shift;
     if (!$exp_str{$def->[0]}) {
-	$exp_str{$def->[0]} = new Strassen $def->[1];
+	# XXX make better test
+	if ($def->[1] eq 'landstrassen-orig') {
+	    my $new_s = Strassen->new;
+	    $new_s->{RebuildCode} = sub {
+		$new_s->{Data} = [];
+		my $s = Strassen->new($def->[1]);
+		$new_s->{Modtime} = $s->{Modtime};
+		$s->init;
+		while(1) {
+		    my $r = $s->next;
+		    last if !@{ $r->[Strassen::COORDS()] };
+		    for my $c (@{ $r->[Strassen::COORDS()] }) {
+			$c =~ s/^B//;
+		    }
+		    $new_s->push($r);
+		}
+		$new_s;
+	    };
+	    $new_s->{DependentFiles} = [$def->[1]];
+	    $new_s->{RebuildCode}->();
+	    $exp_str{$def->[0]} = $new_s;
+	} else {
+	    $exp_str{$def->[0]} = new Strassen $def->[1];
+	}
 	$exp_str{$def->[0]}->make_grid(UseCache => 1);
     } else {
 	$exp_str{$def->[0]}->reload;

@@ -67,10 +67,31 @@ If the category matches <i>forwardcat</i><code>;</code><i>backwardcat</i>, then
 <i>forwardcat</i> or <i>backwardcat</i> may be empty; in this case the
 category applies only to the other direction.
 </p>
-<p class="POD_TEXT">
+<pre class="POD_TEXT">
 Other predefined categories are listed below. The category should not
 contain any spaces.
-</p>
+
+   DRAFT: Change the category format to:
+
+       &lt;cat&gt; = &lt;onewaycat&gt; : &lt;onewaycat&gt; |
+               &lt;onewaycat&gt;
+
+       &lt;onewaycat&gt; = F=? &lt;basiccat&gt; (: &lt;attrkey&gt; (= &lt;attrval&gt;)?)*
+
+       &lt;basiccat&gt;  = [^:]+
+       &lt;attrkey&gt;   = [^:=]+
+       &lt;attrval&gt;   = [^:=]+
+
+   Changes for data files:
+     F:cat becomes F=cat
+     ?::inwork becomes ?:inwork
+     F:SW|IMG:church.gif|ANCHOR:s becomes F=SW:IMG=church.gif:ANCHOR=s
+   Maybe:
+     #rrggbb becomes X:COLOR=#rrggbb
+
+   cat is now really attr. Reflect in description, maybe also in
+   variable names.
+</pre>
 <dt class="POD_ITEM"><a name="x_y">x,y</a>
 <dd>
 A coordinate. x and y should be integer or float values. The datum and

@@ -610,9 +610,15 @@ sub sort_by_cat {
 
 sub is_current {
     my($self) = @_;
-    return 1 if !defined $self->file;
+    my @dependent_files;
+    if ($self->{DependentFiles}) {
+	@dependent_files = @{ $self->{DependentFiles} };
+    } elsif (defined $self->file) {
+	@dependent_files = $self->file;
+    }
+    return 1 if !@dependent_files;
     return 0 if !defined $self->{Modtime};
-    for my $f ($self->file) {
+    for my $f (@dependent_files) {
 	my $now_modtime = (stat($f))[STAT_MODTIME];
 	return 0 if $self->{Modtime} < $now_modtime;
     }
@@ -622,10 +628,14 @@ sub is_current {
 sub reload {
     my($self) = @_;
     return if $self->is_current;
-    warn "Reload " . $self->file . "...\n";
-    $self->read_data;
+    if ($self->{RebuildCode}) {
+	$self->{RebuildCode};
+    } else {
+	warn "Reload " . $self->file . "...\n";
+	$self->read_data;
+    }
     if ($self->{Grid}) {
-	warn "Rebuild grid for " . $self->file . "...\n";
+	warn "Rebuild grid ...\n";
 	$self->make_grid(-rebuild => 1);
     }
 }

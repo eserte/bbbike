@@ -68,6 +68,13 @@ Damit werden wesentlich mehr Module installiert, die teilweise nur für
 die Entwicklung verwendet werden, teilweise aber auch die Arbeit mit
 BBBike erleichtern.
 
+Wenn "perl install.pl" nicht verwendet wird, aber trotzdem die
+XS-Module für bessere Performance installiert werden sollen, muss
+
+	make ext
+
+ausgeführt werden. Dazu ist das Perl-Modul L<Inline::C> notwendig.
+
 =head2 Windows 95/98/2000/NT
 
 BBBike und Perl benötigen ca. 32 MB an Festplattenspeicher.

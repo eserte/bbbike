@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.24 2003/07/22 23:28:11 eserte Exp $
+# $Id: Core.pm,v 1.24 2003/07/22 23:28:11 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -275,8 +275,12 @@ sub id {
     if (defined $self->{Id}) {
 	return $self->{Id};
     }
-    require File::Basename;
-    File::Basename::basename($self->{File});
+    if (defined $self->{File}) {
+	require File::Basename;
+	File::Basename::basename($self->{File});
+    } else {
+	undef;
+    }
 }
 
 ### AutoLoad Sub

@@ -286,6 +286,7 @@ my $pod2html = is_in_path("mpod2html");
 if (defined $pod2html) {
     $pod2html = "$^X -Mblib=/usr/local/src/CPAN/new.build/new.MarekPodHtml-0.43/ $pod2html";
 }
+#XXX check new pod2html: undef $pod2html;
 #XXX $pod2html = 'perl -Mblib=/usr/local/src/CPAN/new.build/new.MarekPodHtml-0.43 /usr/local/src/CPAN/new.build/new.MarekPodHtml-0.43/blib/script/mpod2html -css html/bbbikepod.css';
 my $htmlroot = "--htmlroot http://www.perldoc.com/cpan";
 
@@ -311,7 +312,9 @@ $all_html:	$all_pods
 EOF
 } else {
     my $pod2html;
-    if (-x "/usr/perl5.7.2/bin/pod2html") {
+    if (-e "/usr/perl5.8.1/bin/pod2html") {
+	$pod2html = "perl5.8.1 /usr/perl5.8.1/bin/pod2html";
+    } elsif (-x "/usr/perl5.7.2/bin/pod2html") {
 	# XXX --htmlroot with bugs: one level module names are not linked
 	$pod2html = "/usr/perl5.7.2/bin/pod2html $htmlroot -css html/bbbikepod.css --header";
     } elsif (-x "/usr/perl5.6.0/bin/pod2html") {

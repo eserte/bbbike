@@ -65,6 +65,14 @@ You can also use Bundle::BBBike instead of Bundle::BBBike_small. This
 will install more Perl modules, some of them only useable for the
 development, but some of them enabling more features of BBBike.
 
+If you choose to not use "perl install.pl", but you want to compile
+and install the XS modules for better performance, then you have to
+execute
+
+	make ext
+
+This requires the perl module L<Inline::C>.
+
 =head2 Windows 95/98/2000/NT
 BBBike and Perl need approx. 32 MB hard disk space.
 
