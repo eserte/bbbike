@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.17 2004/09/06 22:59:27 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.18 2004/09/07 23:05:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -67,7 +67,9 @@ eval {
 	}
     }
 
-    my $by = param("author") || param("email");
+    my $email  = param('email');
+    my $author = param('author');
+    my $by     = $author || $email;
 
     my $subject = param("subject") || "BBBike/Mapserver comment";
     if ($by) {
@@ -106,8 +108,8 @@ eval {
 	}
     }
 
-    if (param("email")) {
-	$msg->add("Reply-To", param("email"));
+    if ($email) {
+	$msg->add("Reply-To", $email);
     }
 
     my $fh = $msg->open(@Mail_Send_open);
@@ -122,7 +124,7 @@ eval {
 	print $fh Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
     } else {
 	$comment =
-	    "Von: " . (param("author") || param("email") || "anonymous\@bbbike.de") . "\n" .
+	    "Von: " . ($by || "anonymous\@bbbike.de") . "\n" .
 	    "An:  $to\n\n" .
 	    (defined $mapx ? "Kartenkoordinaten: " . $mapx . "/" . $mapy . "\n\n" : "") .
 	    "Kommentar:\n" .
@@ -133,19 +135,26 @@ eval {
     }
     $fh->close or die "Can't close mail filehandle";
 
+    my $cookie = cookie(-name => 'mapserver_comment',
+			-value => { email => $email,
+				    author => $author,
+				  },
+			-path => "/",
+			-expires => "+1y",
+		       );
     if (param("formtype") && param("formtype") eq "newstreetform") {
 	my $url = defined $bbbike_html
 	          ? "$bbbike_html/newstreetform.html"
 		  : "../html/newstreetform.html"
 		  ;
-	print header,
+	print header(-cookie => $cookie),
 	    start_html(-title=>"Neue Straße für BBBike",
 		       -style=>{'src'=>"$bbbike_html/bbbike.css"}),
 	    "Danke, die Angaben wurden an $to gesendet:",br(),br(),
 	    a({-href => $url}, "Weitere Straße"),
 	    end_html;
     } else {
-	print header,
+	print header(-cookie => $cookie),
 	    start_html(-title=>"Kommentar abgesandt",
 		       -style=>{'src'=>"$bbbike_html/bbbike.css"}),
 	    "Danke, der folgende Kommentar wurde an $to gesendet:",br(),br(),

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_bbbike_temp_blockings,v 1.17 2004/09/06 21:53:16 eserte Exp $
+# $Id: check_bbbike_temp_blockings,v 1.18 2004/09/07 23:05:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003, 2004 Slaven Rezic. All rights reserved.
@@ -194,6 +194,11 @@ sub output_future {
 
 sub return_future {
     my @res;
+    for my $i (0 .. $#temp_blocking) {
+	if ($temp_blocking[$i]) {
+	    $temp_blocking[$i]->{"index"} = $i;
+	}
+    }
     for my $o (sort { $a->{from} <=> $b->{from} } grep { $_ } @temp_blocking) {
 	if (!defined $o->{until} || $o->{until} > time) {
 	    push @res, $o;

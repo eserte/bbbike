@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanConn.pm,v 1.12 2003/06/18 22:34:52 eserte Exp $
+# $Id: GpsmanConn.pm,v 1.12 2003/06/18 22:34:52 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ use Config;
 BEGIN {
  SEARCH_FOR_BBBIKE_DIRS: {
 	foreach my $dir (@INC) {
-	    if (-r "$dir/GPS/SerialStty.pm") {
+	    if (-r "$dir/Karte/Polar.pm") {
 		last SEARCH_FOR_BBBIKE_DIRS;
 	    }
 	}

@@ -754,4 +754,20 @@ EOF
 userdel	1 16655,10622 16460,10699 16153,10818 16032,10842
 EOF
      },
+     { from  => 1094627730, # 2004-09-08 09:15
+       until => 1096063200, # 2004-09-25 00:00
+       text  => 'Gleim-Tunnel: Baustelle, Straße vollständig gesperrt (bis 24.09.2004)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 9917,15613 10122,15647
+EOF
+     },
+     { from  => 1094421600, # 2004-09-06 00:00
+       until => 1103151600, # 2004-12-16 00:00
+       text  => 'K 7318; (Pinnow-L 24-Haßleben); OD Buchholz Kanal- und Straßenbau Vollsperrung 07.09.2004-15.12.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 32334,89385 31796,89304
+EOF
+     },
     );

@@ -20,12 +20,27 @@ function check_strname() {
 }
 function init() {
   var frm = document.forms.newstreet;
+
   if (location.search) {
     var search = unescape(location.search);
     if (search.match(/strname=(.*)/)) {
       frm.supplied_strname.value = RegExp.$1;
     }
   }
+
+  if (document.cookie) {
+    if (document.cookie.match(/^mapserver_comment=(.*)/)) {
+      var arr = RegExp.$1.split("&");
+      for(var i=0; i<arr.length/2; i++) {
+        var key = arr[i*2];
+	var val = arr[i*2+1];
+	if (key == "email" || key == "author") {
+	  frm.elements[key].value = val;
+	}
+      }
+    }
+  }
+
 }
  </script>
 </head>

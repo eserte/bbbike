@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.18 2004/09/07 07:01:04 eserte Exp $
+# $Id: Makefile,v 1.19 2004/09/09 06:51:19 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -285,7 +285,7 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile ${ABS_LOCAL_BBBIKE_DIR}
 ######################################################################
 # maps
 
-.brb.map:	brb.map-tpl
+.brb.map:	brb.map-tpl Makefile Makefile.${TARGET}.inc
 	tpage $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 

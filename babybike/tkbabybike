@@ -233,9 +233,9 @@ if ($^O eq 'freebsd') { $algorithm = 'A*' }
 routing_construct();
 $average_speed = 15;
 $exact_streetchooser = 1;
-$use_tiles = 1;
 my($tilewidth,$tileheight)=(100,100); # XXX don't hardcode
 my $tiledir = "$moduledir/images/tiles"; # XXX
+$use_tiles = (-e $tiledir) if !defined $use_tiles;
 
 ($centerx, $centery) = (14598,11245);
 
