@@ -112,7 +112,7 @@ mapserver/brb/sternfahrt2004/after_strassen_annotations.inc
 mapserver/daemon/mapscript_daemon.pl
 misc/ampelschaltung.txt
 misc/ampelschaltung2.txt
-misc/fragezeichen
+data/fragezeichen
 misc/data_corrected/Makefile
 miscsrc/ApproxCityparts.pm
 miscsrc/BBBikeLocalizator.pm
@@ -243,7 +243,7 @@ projects/www.radzeit.de/Makefile
 README.spp
 MANIFEST.SKIP
 miscsrc/create_modified
-misc/fragezeichen-orig
+data/fragezeichen-orig
 misc/ampelschaltung-orig.txt
 misc/sternfahrt_2004/Makefile
 misc/sternfahrt_2004/sternfahrt2004.bbd
@@ -256,3 +256,4 @@ misc/Makefile
 misc/BASE
 miscsrc/temporary_streets.pl
 miscsrc/diffbbd
+miscsrc/merge_overlapping_streets.pl
