@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.7 2005/01/20 00:30:23 eserte Exp $
+# $Id: bbbike.cgi,v 7.7 2005/01/20 00:30:23 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -5093,7 +5093,7 @@ sub get_nearest_crossing_coords {
 sub draw_route_from_fh {
     my $fh = shift;
 
-    my $file = "$tmp_dir/bbbike.cgi.upload.$$";
+    my $file = "$tmp_dir/bbbike.cgi.upload.$$." . time;
     open(OUT, ">$file") or die "Can't write to $file: $!";
     while(<$fh>) {
 	print OUT $_;
@@ -5108,7 +5108,8 @@ sub draw_route_from_fh {
 	$res = Route::load($file, { }, -fuzzy => 1);
     };
     my $err = $@;
-    unlink $file;
+    ## XXX unlink later...
+    #unlink $file;
 
     if ($res->{RealCoords}) {
 	$q->param('draw', 'all');

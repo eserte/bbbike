@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi2.pl,v 1.2 2003/06/23 22:04:48 eserte Exp $
+# $Id: cgi2.pl,v 1.3 2005/01/22 00:20:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -30,8 +30,11 @@ my $sgml_catalog = "/usr/www/informatik/hypermedia/html/html4.0/sgml/CATALOG";
 my $sgml_check = is_in_path("nsgmls") && -r $sgml_catalog;
 $sgml_check = 0; # XXX don't turn on on default --- there are too many errors...
 my $errorfile = "/tmp/errors";
-my $cgiurl = "http://www/~eserte/bbbike/cgi/bbbike.cgi";
-my $logfile = "$ENV{HOME}/www/AccessLog";
+#my $cgiurl = "http://www/~eserte/bbbike/cgi/bbbike.cgi";
+my $cgiurl = "http://www/bbbike/cgi/bbbike.cgi";
+#my $logfile = "$ENV{HOME}/www/AccessLog";
+my $logfile = "$ENV{HOME}/www/log/radzeit.combined_log";
+my $filter;
 
 GetOptions('seek=i'       => \$seek,
 	   'v|verbose!'   => \$verbose,
@@ -47,6 +50,7 @@ GetOptions('seek=i'       => \$seek,
 	   'sgml!'        => \$sgml_check,
 	   'url=s'        => \$cgiurl,
 	   "logfile=s"    => \$logfile,
+	   "filter=s"     => \$filter,
 	  );
 
 if ($sgml_check) {
@@ -99,7 +103,9 @@ if ($firstdate) {
 }
 while(<LOG>) {
     if (m{GET (?:/~eserte/bbbike/cgi/bbbike.cgi|/cgi-bin/bbbike.cgi)\?(\S+)}) {
-	push @requests, $1; #XXX? uri_unescape($1);
+	my $qs = $1;
+	next if (defined $filter && !/$filter/o);
+	push @requests, $qs; #XXX? uri_unescape($1);
 	push @req_lines, $_ if $netscape;
     }
 }
