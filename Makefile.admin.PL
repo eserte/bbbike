@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.11 2003/11/28 00:59:01 eserte Exp eserte $
+# $Id: Makefile.admin.PL,v 1.12 2003/12/02 22:28:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -196,9 +196,13 @@ rsync-vran-spiff-hermes:
 CVS_DIR=${HOME}/work/bbbike
 
 # XXX create or copy .cvsignore with ext/*/*Dist.pm files
-copy-to-cvs:	MANIFEST.withcvs
+copy-to-cvs:	ask-copy-to-cvs do-copy-to-cvs
+
+ask-copy-to-cvs:
 	@echo "Really copy to ${CVS_DIR}? (Hit Ctrl-C otherwise) "
 	@read dummy
+
+do-copy-to-cvs:	MANIFEST.withcvs
 	perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread('MANIFEST.withcvs'),'${CVS_DIR}', 'cp');"
 
 diff-with-cvs:	MANIFEST.withcvs
@@ -221,7 +225,7 @@ cvs-add-missing:
 	cd ${CVS_DIR} && cvsu | grep '^[\?D]' | cut -c2- | xargs cvs add -ko
 
 cvs-standard-commit:
-	cd ${CVS_DIR} && cvs -z9 commit -m ""
+	cd ${CVS_DIR} && cvs -q -z9 commit -m ""
 
 cvs-everything:	copy-to-cvs cvs-add-missing cvs-standard-commit
 

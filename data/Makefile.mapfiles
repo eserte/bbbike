@@ -322,7 +322,7 @@ $(MAPFILES_DATA_DIR)/fragezeichen.shp:	${MISCDIR}/fragezeichen
 $(MAPFILES_DATA_DIR)/nolighting.shp:	nolighting
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/nolighting nolighting
 
-mapfiles-shptree:	${ALL_MAPFILES:M/.shp/.qix/}
+mapfiles-shptree:	${ALL_MAPFILES:S/.shp$/.qix/}
 
 .SUFFIXES: .shp .qix
 

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.56 2003/09/22 20:01:28 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.57 2003/12/02 23:29:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -607,7 +607,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.56 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.57 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -4489,10 +4489,9 @@ sub choose_all_form {
     if ($locale_set && defined $old_locale) {
 	eval {
 	    local $SIG{'__DIE__'};
-warn "restore old locale $old_locale";
 	    &POSIX::setlocale( &POSIX::LC_COLLATE, $old_locale);
 	};
-warn $@ if $@;
+	warn $@ if $@; #XXX remove?
     }
 }
 
@@ -4956,7 +4955,7 @@ EOF
 Autor: Slaven Rezic<br>
 <a href="mailto:@{[ $BBBike::EMAIL ]}">E-Mail:</a> <a href="mailto:@{[ $BBBike::EMAIL ]}">@{[ $BBBike::EMAIL ]}</a><br>
 <a href="@{[ $BBBike::HOMEPAGE ]}">Homepage:</a> <a href="@{[ $BBBike::HOMEPAGE ]}">@{[ $BBBike::HOMEPAGE ]}</a></a><br>
-Telefon: @{[ CGI::escapeHTML("+49-0178-3737831") ]}<br>
+Telefon: @{[ CGI::escapeHTML("+49-0172-1661969") ]}<br>
 </center>
 <p>
 EOF
