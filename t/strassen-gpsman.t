@@ -30,7 +30,7 @@ BEGIN {
     eval 'use Test::NoWarnings';
     if ($@) {
 	$have_nowarnings = 0;
-	warn $@;
+	#warn $@;
     }
 }
 
