@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.134 2004/06/15 00:04:32 eserte Exp eserte $
+# $Id: bbbike,v 3.135 2004/06/15 22:53:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -223,7 +223,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.134 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.135 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -2322,7 +2322,7 @@ sub do_iconframe {
 		    (-label => $label,
 		     -variable => \$str_draw{$def},
 		     -command => sub {
-			 my $file  = "comments_" . $type . ($edit_mode ? "-orig" : "");
+			 my $file  = get_strassen_file("comments_" . $type);
 			 plot('str', $def, Filename => $file);
 		     },
 		    );
@@ -4408,7 +4408,8 @@ $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
 	     -variable => \$edit_mode_flag,
 	     -command => sub {
 		 if ($edit_mode_flag) {
-		     switch_edit_berlin_mode();
+		     #XXX del switch_edit_berlin_mode();
+		     switch_edit_standard_mode();
 		 } else {
 		     switch_standard_mode();
 		 }
@@ -5193,11 +5194,15 @@ sub generate_plot_functions {
 	    foreach (@kreuzungen) {
 	      TRY: {
 		    my($xx, $yy);
-		    if (!$edit_mode) {
+		    if (!$edit_mode && !$edit_mode_flag) {
 			($xx, $yy) = split /,/, $_;
 			if (!defined $yy) { # ignore invalid coords like "*"
 			    next CROSSINGS_LOOP;
 			}
+                    } elsif ($edit_mode_flag) {
+                        /^(?::.*:)?(-?[\d\.]+),(-?[\d\.]+)$/;
+                        ($xx, $yy) = ($1, $2);
+                        next CROSSINGS_LOOP if !defined $yy;
 		    } elsif ($edit_mode &&
 			     /([A-Za-z]+)?(-?[\d\.]+),(-?[\d\.]+)$/) {
 			# XXX Verwendung von data/BASE (hier und überall)
@@ -7975,10 +7980,7 @@ sub plotstr {
 	if (defined $filename) {
 	    $str_file{$abk} = $filename;
 	} else {
-	    $filename = ($coord_system eq 'standard'
-			 ? $str_file{$abk}
-			 : "$str_file{$abk}-orig"
-			);
+	    $filename = get_strassen_file($str_file{$abk});
 	}
 	$has_filename = 1;
 	delete $pending{"replot-str-$abk"};
@@ -7989,8 +7991,6 @@ sub plotstr {
 	}
     } else {
 	$str = delete $args{-object};
-#XXX this seems to be wrong!
-#XXX del	delete $str_file{$abk}; # XXX -orig?
     }
 
     if (defined $filename && -e "$filename.desc") {
@@ -8396,10 +8396,7 @@ sub plot_sperre {
 	} else {
 	    $gesperrt = new Strassen (defined $file_or_object
 				      ? $file_or_object
-				      : ($coord_system eq 'standard'
-					 ? $sperre_file
-					 : "$sperre_file-orig"
-					)
+				      : get_strassen_file($sperre_file)
 				     );
 	}
 
@@ -8709,8 +8706,7 @@ sub read_sperre_tragen {
     return if (!$force && keys %sperre_tragen != 0);
     %sperre_tragen = ();
     if (!eval {
-	my $s = new Strassen $sperre_file . ($coord_system eq 'standard'
-					       ? "" : "-orig");
+	my $s = new Strassen get_strassen_file($sperre_file);
 	$s->init;
 	while(1) {
 	    my $r = $s->next;
@@ -8736,9 +8732,7 @@ sub read_ampeln {
     my($force) = @_;
     return if (!$force && keys %ampeln != 0);
     if (!eval {
-	$p_obj{'lsa'} = new Strassen
-	    $p_file{'lsa'} . ($coord_system eq 'standard'
-			      ? "" : "-orig");
+	$p_obj{'lsa'} = new Strassen get_strassen_file($p_file{'lsa'});
 	%ampeln = %{ $p_obj{'lsa'}->get_hashref_by_cat };
 	1;
     }) {
@@ -8756,10 +8750,7 @@ sub read_hoehe {
     if (!eval {
 	my $h = new Strassen ($args{-file}
 			      ? $args{-file}
-			      : ($coord_system eq 'standard'
-				 ? "hoehe"
-				 : "hoehe-orig"
-				)
+			      : get_strassen_file("hoehe")
 			     );
 	%hoehe = %{ $h->get_hashref };
 	$p_obj{"hoehe"} = $h;
@@ -8820,14 +8811,10 @@ sub _get_wasser_obj {
 	push @obj, Strassen->new($filename);
     }
     if ($wasserumland) {
-	push @obj, Strassen->new("wasserumland" .
-				 ($coord_system eq 'standard'
-				  ? '' : '-orig'));
+	push @obj, Strassen->new(get_strassen_file("wasserumland"));
     }
     if ($str_far_away{'w'}) {
-	push @obj, Strassen->new(($sfn ? "wasseru2" : "wasserumland2") .
-				 ($coord_system eq 'standard'
-				  ? '' : '-orig'));
+	push @obj, Strassen->new(get_strassen_file($sfn ? "wasseru2" : "wasserumland2"));
     }
     return if !@obj;
     return $obj[0] if (@obj == 1);
@@ -8839,11 +8826,10 @@ sub _get_wasser_obj {
 sub _get_orte_obj {
     my $type = shift || "o";
     my $fname  = ($type eq 'oo' ? 'orte_city' : 'orte');
-    my $suffix = ($coord_system eq 'standard' ? '' : '-orig');
     my @obj;
-    push @obj, new Strassen "$fname$suffix";
+    push @obj, new Strassen get_strassen_file($fname);
     if ($p_far_away{$type}) {
-	push @obj, new Strassen $fname . "2" . $suffix;
+	push @obj, new Strassen get_strassen_file($fname . "2");
     }
     return $obj[0] if (@obj == 1);
     new MultiStrassen @obj;
@@ -8853,20 +8839,14 @@ sub _get_orte_obj {
 ### AutoLoad Sub
 sub _get_landstr_obj {
     my @obj;
-    push @obj, new Strassen ($coord_system eq 'standard'
-			     ? $str_file{'l'}
-			     : $str_file{'l'} . "-orig");
+    push @obj, new Strassen get_strassen_file($str_file{'l'});
     if ($str_far_away{'l'}) {
 	my $file = ($sfn ? "landstr2" : "landstrassen2");
-	push @obj, new Strassen ($coord_system eq 'standard'
-				 ? $file
-				 : "$file-orig"); # XXX allgemeiner
+	push @obj, new Strassen get_strassen_file($file);
     }
     if ($str_regions{'l'}) {
 	foreach my $file (@{ $str_regions{'l'} }) {
-	    push @obj, new Strassen ($coord_system eq 'standard'
-				     ? $file
-				     : "$file-orig"); # XXX allgemeiner
+	    push @obj, new Strassen get_strassen_file($file);
 	}
     }
     return $obj[0] if (@obj == 1);
@@ -8876,14 +8856,15 @@ sub _get_landstr_obj {
 # Gibt ein Kommentar-Objekt zurück.
 ### AutoLoad Sub
 sub _get_comments_obj {
-    MultiStrassen->new(map {
-	"comments_$_" . ($coord_system eq 'standard'
-			 ? ""
-			 : "-orig"
-			)
-    } grep {
-	$_ ne "mount"
-    } @comments_types);
+    my @objs;
+    for my $type (@comments_types) {
+	next if $type eq "mount";
+	eval {
+	    my $f = get_strassen_file("comment_$type");
+	    push @objs, Strassen->new($f);
+	}; warn $@ if $@;
+    }
+    MultiStrassen->new(@objs);
 }
 
 # Zeichnet Punkte auf dem Canvas.
@@ -8990,10 +8971,7 @@ sub plot_point {
 
     my $filename = $args{-filename} || $args{Filename};
     if (!defined $filename) {
-	$filename = ($coord_system eq 'standard'
-		     ? $p_file{$abk}
-		     : "$p_file{$abk}-orig"
-		    );
+	$filename = get_strassen_file($p_file{$abk});
     }
     if (!defined $filename) {
 	status_message("Filename is not defined", 'err');
@@ -9240,7 +9218,7 @@ sub choose_ort {
 	    $t = $top->Toplevel(-title => $attrib->[ATTRIB_PLURAL],
 				-class => "Bbbike Chooser");
 	    $t->transient($top) if $transient;
-	    my $origext = '';
+#XXXdel:	    my $origext = '';
 	    if ($coord_system eq 'standard') {
 		if ($ondestroy) {
 		    $t->protocol('WM_DELETE_WINDOW', [$ondestroy, $t]);
@@ -9249,7 +9227,7 @@ sub choose_ort {
 		}
 		$toplevel{"chooseort-$type-$linetype"} = $t;
 	    } else {
-		$origext = '-orig';
+#XXXdel:		$origext = '-orig';
 	    }
 	    my($showb, $closeb);
 
@@ -9339,7 +9317,7 @@ sub choose_ort {
 		    if ($type eq 'o') {
 			$object = _get_orte_obj("o");
 		    } else {
-			$object = new Strassen $p_file{$type} . $origext;
+			$object = new Strassen get_strassen_file($p_file{$type});
 		    }
 		    if ($coord_system eq 'standard' && cache_decider()) {
 			$p_obj{$type} = $object;
@@ -9363,13 +9341,13 @@ sub choose_ort {
 		} else {
 		    cache_decider_init();
 		    if ($type eq 'w') {
-			$object = _get_wasser_obj($str_file{$type} . $origext);
+			$object = _get_wasser_obj(get_strassen_file($str_file{$type}));
 		    } elsif ($type eq 'l') {
 			$object = _get_landstr_obj();
 		    } elsif ($type eq 'comm') {
 			$object = _get_comments_obj();
 		    } else {
-			$object = new Strassen $str_file{$type} . $origext;
+			$object = new Strassen get_strassen_file($str_file{$type});
 		    }
 		    if ($coord_system eq 'standard' && cache_decider()) {
 			$str_obj{$type} = $object;
@@ -9710,6 +9688,8 @@ sub mark_street {
 sub choose_from_plz {
     my(%args) = @_;
 
+    return if defined $city && $city ne "b";
+
     my $batch = (defined $args{'-str'} || defined $args{'-coord'});
     if (!$batch) {
 	if ($toplevel{"chooseplz"} && Tk::Exists($toplevel{"chooseplz"})) {
@@ -9723,11 +9703,16 @@ sub choose_from_plz {
     my $plz;
     if (1) { # XXX
 	require PLZ::Multi;
-	$plz = PLZ::Multi->new("Berlin.coords.data",
-			       "Potsdam.coords.data",
-			       Strassen->new("plaetze"), # XXX why?
-			       -cache => 1,
-			      );
+	my @objs = ("Berlin.coords.data",
+		    "Potsdam.coords.data",
+		   );
+	eval {
+	    # XXX why?
+	    my $plaetze = Strassen->new("plaetze");
+	    push @objs, $plaetze if $plaetze;
+	}; warn $@ if $@;
+
+	$plz = PLZ::Multi->new(@objs, -cache => 1);
     } else {
 	$plz = new PLZ;
     }
@@ -10243,14 +10228,7 @@ sub plotobst {
 		    -label => $p_file{'obst'});
     eval {
 	my $i = 0;
- 	my $obst = new Strassen ($coord_system eq 'standard'
-				 ? $p_file{'obst'}
-				 : $p_file{'obst'} . "-orig");
-#XXX del:
-#  	foreach ($obst->file) {
-#  	    $old_mtime{$_} = (stat($_))[STAT_MODTIME];
-#  	    $mtime_file_type{$_} = [qw(p obst)];
-#  	}
+ 	my $obst = new Strassen get_strassen_file($p_file{'obst'});
 	$obst->init;
 	my $anzahl_eindeutig = $obst->count;
 	while(1) {
@@ -15151,10 +15129,7 @@ sub nearest_line_points {
 	if (!defined $s) {
 	    if (exists $str_file{$type}) {
 		# XXX better: create a function type_to_filename
-		my $filename = ($coord_system eq 'standard'
-				? $str_file{$type}
-				: "$str_file{$type}-orig"
-			       );
+		my $filename = get_strassen_file($str_file{$type});
 		$str_obj{$type} = new Strassen $filename;
 		$s = $str_obj{$type};
 	    }
@@ -16453,7 +16428,6 @@ sub geometry {
     $extends[GEOMETRY_X] = "+$extends[GEOMETRY_X]" if $extends[GEOMETRY_X] !~ /^[+-]/;
     $extends[GEOMETRY_Y] = "+$extends[GEOMETRY_Y]" if $extends[GEOMETRY_Y] !~ /^[+-]/;
     $geometry .= $extends[GEOMETRY_X] . $extends[GEOMETRY_Y];
-    warn $geometry;
     $t->geometry($geometry);
 }
 
@@ -16659,6 +16633,11 @@ warn "do action";
 			$action_command->($result)
 			    if $action_command;
 		    });
+}
+
+sub get_strassen_file {
+    my $file = shift;
+    $file . ($edit_mode_flag ? "-orig" : "");
 }
 
 ## DEBUG_BEGIN

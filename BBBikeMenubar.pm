@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMenubar.pm,v 1.14 2004/01/17 13:26:45 eserte Exp $
+# $Id: BBBikeMenubar.pm,v 1.15 2004/06/15 22:55:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2002,2003 Slaven Rezic. All rights reserved.

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: hv_impl.t,v 1.16 2003/12/22 19:51:36 eserte Exp $
+# $Id: hv_impl.t,v 1.17 2004/05/19 20:02:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -44,7 +44,7 @@ BEGIN {
 if (!GetOptions("v+" => \$v)) {
     die "usage: $0 [-v]";
 }
-if ($v > 0) {
+if (defined $v && $v > 0) {
     Strassen::set_verbose(1);
 }
 
