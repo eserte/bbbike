@@ -254,8 +254,9 @@ $(MAPFILES_DATA_DIR)/radwege20.shp:	radwege_exact
 $(MAPFILES_DATA_DIR)/obst.shp:	obst
 	$(BBD2ESRI) -shapetype point -o $(MAPFILES_DATA_DIR)/obst obst
 
-$(MAPFILES_DATA_DIR)/comments.shp:	comments
-	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/comments comments
+$(MAPFILES_DATA_DIR)/comments.shp:	$(COMMENTS_PARTIAL)
+	cat $(COMMENTS_PARTIAL) > /tmp/comments
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/comments /tmp/comments
 
 $(MAPFILES_DATA_DIR)/faehren.shp:	faehren
 	$(BBD2ESRI) -type ferry -o $(MAPFILES_DATA_DIR)/faehren faehren
