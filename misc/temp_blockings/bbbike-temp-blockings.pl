@@ -377,4 +377,16 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Liesenstr. (Mitte) Richtung Süden zwischen Gartenstr. und Chausseestr. Baustelle, Fahrtrichtung gesperrt (bis 11.06.2004)',
        type  => 'handicap',
      },
+     { from  => 1088157600, # 2004-06-25 12:00
+       until => 1088287200, # 2004-06-27 00:00
+       file  => 'oberbaumbruecke.bbd',
+       text  => 'Oberbaum-Brückenfest, 26.06.2004 von 12.00 Uhr bis 24.00 Uhr',
+       type  => 'handicap',
+     },
+     { from  => 1086818400, # 2004-06-10 00:00
+       until => 1087164000, # 2004-06-14 00:00
+       file  => 'bergmannstr.bbd',
+       text  => 'Bergmannstrassenfest, 11.06.2004, 0.00 Uhr bis 13.06.2004, 24.00 Uhr',
+       type  => 'handicap',
+     },
     );
