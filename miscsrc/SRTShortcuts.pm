@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.21 2005/02/25 01:53:36 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.21 2005/02/25 01:53:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -259,6 +259,8 @@ sub show_lbvs_diff {
 
 sub show_any_diff {
     my $file = shift;
+    # To pre-generate cache:
+    system("$bbbike_rootdir/miscsrc/check_bbbike_temp_blockings >/dev/null 2>1 &");
     require BBBikeAdvanced;
     require File::Basename;
     my $abk = main::plot_additional_layer("str", $file);

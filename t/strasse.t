@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strasse.t,v 1.5 2005/03/03 00:14:00 eserte Exp $
+# $Id: strasse.t,v 1.6 2005/03/07 23:15:13 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -43,7 +43,7 @@ my @beautify_landstrasse =
       "F2.2: (Geltow -) Wildpark West", "F2.2: (Wildpark West -) Geltow"],
      ["F2.2: Werderscher Damm (Wildpark West - Kuhfort)" => 
       "F2.2: Werderscher Damm ((Wildpark West -) Kuhfort)",
-      "F2.2: Werderscher Damm ((Kuhfort -) Wildpark West)", "XXX"],
+      "F2.2: Werderscher Damm ((Kuhfort -) Wildpark West)"],
      ["B179: Berlin - Märkisch-Buchholz" =>
       "B179: (Berlin -) Märkisch-Buchholz", "B179: (Märkisch-Buchholz -) Berlin"],
      ["Müncheberg - Prötzel (B168)" =>
@@ -53,7 +53,7 @@ my @beautify_landstrasse =
      ["Geltow - Fähre (Caputher Chaussee) (F1)" =>
       "(Geltow -) Fähre (Caputher Chaussee) (F1)", "(Fähre -) Geltow (Caputher Chaussee) (F1)"],
      ["Werderscher Damm (Wildpark West - Kuhfort)" =>
-      "Werderscher Damm ((Wildpark West -) Kuhfort)", "Werderscher Damm ((Kuhfort -) Wildpark West)", "XXX"],
+      "Werderscher Damm ((Wildpark West -) Kuhfort)", "Werderscher Damm ((Kuhfort -) Wildpark West)"],
      ["Sybelstr. Ost - Lewishamstr.: Verbindung?" =>
       "(Sybelstr. Ost -) Lewishamstr.: Verbindung?", "(Lewishamstr. -) Sybelstr. Ost: Verbindung?"],
      ["Berlin - Altlandsberg - Strausberg" =>
@@ -65,7 +65,7 @@ my @beautify_landstrasse =
      ["Alt-Golm - Saarow" =>
       "(Alt-Golm -) Saarow", "(Saarow -) Alt-Golm"],
      ["(Möllendorffstr. - Karl-Lade-Str.)" =>
-      "((Möllendorffstr. -) Karl-Lade-Str.)", "(Karl-Lade-Str. -) Möllendorffstr.)", "XXX"],
+      "((Möllendorffstr. -) Karl-Lade-Str.)", "((Karl-Lade-Str. -) Möllendorffstr.)"],
     );
 
 my $strip_bezirk_tests = 6;

@@ -147,18 +147,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1114898400,
-         'text' => 'Im Zeitraum vom 14.02.2005 bis 30.04.2005 besteht für die L 73 zwischen Langerwisch und Wildenbruch Vollsperrung auf Grund von Bauarbeiten. ',
-         'from' => 1108249200,
-         'data' => 'userdel	2 -12156,-13509 -12221,-13124
-userdel	2 -12156,-13509 -12177,-13787
-userdel	2 -12372,-12676 -12221,-13124
-userdel	2 -12372,-12676 -12459,-12120
-userdel	2 -12403,-10753 -12459,-12120
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1122847199,
          'text' => 'Fürstenwalder Damm zwischen Bölschestr. und Stillerzeile Baustelle, Straße stadteinwärts gesperrt (bis Ende 07.2005)',
@@ -201,14 +190,7 @@ userdel	2 -12403,-10753 -12459,-12120
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1110063600,
-         'text' => 'Augsburger Str. (Charlottenburg) in beiden Richtungen zwischen Rankestr. und Joachimstaler Str. Kranarbeiten, Straße vollständig gesperrt (bis 05.03.2005)',
-         'from' => 1109889471,
-         'data' => 'userdel	2 5636,10626 5479,10719
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1122674400,
          'text' => 'K 6738; (L 36 nördl. Steinhöfel-Müncheberg); OD Tempelberg Straßenausbau Vollsperrung 07.03.2005-29.07.2005 ',
@@ -226,6 +208,14 @@ userdel	q4 61809,5952 62084,5754
 userdel	q4 -18080,-12637 -17374,-13449
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1111705200,
+         'text' => 'Sterndamm (Treptow) in Richtung Rudow zwischen Königsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt (bis 24.03.2005)',
+         'from' => 1110232931,
+         'data' => 'userdel	1 17518,4644 17428,4503
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -50,6 +50,7 @@ Autotunnel wird im Frühjahr 2005 zugeschüttet	?::inwork 5652,11004 5716,10978 58
 #: section ignorieren vvv
 # Hier kommen die Strecken herein, die nicht bei einer
 # erweiterten Suche aufgenommen werden sollen.
+Sella-Hasse-Str.: eigentlich in diese Fahrtrichtung gesperrt, aber noch keine Anknüpfung an das Restnetz vorhanden	?; 20948,16612 20771,16690 20843,16829
 Naumannstr. -> Sachsendamm: Überquerung möglich, aber hohe Penalty einplanen	? 7718,7641 7717,7564 7859,7486
 Viktoriapark, Katzbachstr. über das Denkmal zur Methfesselstr.: Weg wird aufgenommen, wenn bbbike.cgi Steigungen kann	? 8598,9061 8884,9078 8901,9104 8943,9098 8962,9048 9106,9038
 Viktoriapark, Kreuzbergstr. zur Methfesselstr.: Weg wird aufgenommen, wenn bbbike.cgi Steigungen kann	? 9141,9142 8973,9171 9007,9264 8955,9318
@@ -106,7 +107,7 @@ Achardstr. und Lassaner Str.: Qualität OK?	? 22325,10707 22826,10614 22857,11009
 Schwanebeck: Kleist/Goethestr.: gute Umfahrunsgmöglichkeit für Zepernicker Str./Karower Chausee?	?? 17459,24340 17796,24584 17921,24943 17976,25276
 Röntgental, Buchenallee: Qualität?	?? 17689,27853 18418,29246
 Gamengrund: genauere Wegführung, Qualität, teilweise war es sehr sandig!. Geht es von der B 158 aus noch weiter in Richtung Norden?	?? 39307,22734 39106,24096 38867,24914 40048,28763 40331,30763 40508,30935 39783,31398
-Nikolassee, Schopenhauerstr./Normannenstr.: Qualität?	?? -1873,3315 -2193,3092 -2481,2900 -2593,2764 -3213,2422 -3309,2400 -3395,2403 -3579,2532 -3692,2549
+Nikolassee, Schopenhauerstr./Normannenstr.: Qualität?	?? -1873,3315 -2193,3092 -2481,2900 -2593,2764 -2918,2581 -3213,2422 -3309,2400 -3395,2403 -3579,2532 -3692,2549
 Wasgenstr./Am Rohrgarten: Qualität?	? -2614,3124 -2481,2900 -2280,2164 -2127,1760 -1474,2073
 Kleinziethen - Pechsteinstr. (Lichtenrade): befahrbare Verbindung, Qualität?	? 13506,-2809 12232,-2281
 Mauerweg Lichtenrade - Lichterfelde: befahrbar, Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 10448,-3214 10291,-3193 9560,-3155 9471,-2138 8334,-2101 8384,-1581 7110,-596 6634,-137 6172,306 5831,71 4400,-913
@@ -210,7 +211,7 @@ Sandkrug - Neuendorf: Qualität?	? 49981,54421 51183,55005 51506,55009 51873,5507
 Gramzow: Anna-Ka...-Str., asphaltierte Alternative zur Bahnhofstr. (östliche Seite sah gut aus!)? Wie heißt die Straße genau?	? 49841,90479 50201,90483 50570,90751
 Elisenau - Börnicke: Privatgelände, ist die Durchfahrt uneingeschränkt möglich?	? 24360,26503 24427,26841
 Potzlow - Fergitz: Gilt das hier noch immer: schlechtes Kopfsteinpflaster, breite Sandbanketten (von Potzlow aus sah es letztens gut aus!)	? 38409,90770 37937,90365 37674,90025
-Gotlindestr.: Qualität OK? [außerdem Atzpodienstr. verlängern]	? 15934,12670 16409,12612 16848,12614 17113,12623 17357,12566
+Gotlindestr.: Qualität OK? [außerdem Atzpodienstr. verlängern]	? 15928,12625 16409,12612 16848,12614 17113,12623 17357,12566
 Segelfliegerdamm: noch immer Kopfsteinpflaster (es waren Straßenbauarbeiten in der Gegend?)	?? 17628,4148 17797,4441 18058,4627
 Bohnsdorfer Str.: Waldweg?	?? 21999,2171 21996,1683 22162,1183 22217,1108
 Am Kanal - Adlergestell: Verbindung scheint zu existieren, Qualität?	? 20928,2412 21242,2048
@@ -246,7 +247,6 @@ O-Grüneberg-Weg/Seelingstr.: existiert eine Verbindung?	? 3278,12021 3177,12100 
 Schwäbische Str: durchgaengig zwischen Grunewaldstr. und Martin-Luther-Str. befahrbar?	? 6923,9266 6837,9389 6743,9523 6514,9775
 Karl-Schrader-Str: Qualität?	? 6837,9389 6859,9521
 (Naturlehrpfad): unbekannte Qualität	? 5692,23948 5609,23986 5535,24016 5216,24157
-Nordufer des Teltowkanals zwischen Ringstr. und Wulfila-Ufer befahrbar?	? 8249,4769 8162,4725 7921,4451
 Falkenwalde - Neu-Kleinow: nach den Bauarbeiten wahrscheinlich bessere Qualität	? 49480,96389 49576,95796 49681,95541 49872,95222
 Fahrenwalde - Brüssow: Bauarbeiten, Straße wahrscheinlich gesperrt. Nach den Bauarbeiten kann Q3 wahrscheinlich entfernt werden	? 54570,114006 53900,114432 53445,115324 53340,115664
 Sind die Radwege in Turm- und Gotzkowskystr. dauerhaft gesperrt?	? 5256,13420 5388,13398 5328,13019
@@ -490,7 +490,7 @@ Alt-Köpenick: laut Message-ID: <41614486$0$3640$9b4e6d93@newsread2.arcor-online.
 Alter Markt: laut Message-ID: <2scvijF1io77eU1@uni-berlin.de> soll hier asphaltiert werden	?::inwork 22502,4528 22472,4572 22449,4605 22383,4703
 Grünstr.: Qualität? für Autofahrer gesperrt?	? 22111,4562 22162,4546 22312,4593
 Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut	?::inwork 31000,61437 30784,60950 30778,60221 30671,59984 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
-Togostr./Antwerpener Str.: Qualität der Fahrbahn (wahrscheinlich teilweise Kopfsteinpflaster)? Ist eine Verbindung zwischen Antwerpener und Tegeler Str. für Radfahrer vorhanden?	? 5325,16915 5602,16718 6119,16203 6575,15831 6695,15692 7020,15314
+Togostr./Antwerpener Str.: Qualität der Fahrbahn (wahrscheinlich teilweise Kopfsteinpflaster)?	? 5325,16915 5602,16718 6119,16203 6575,15831
 Zichow-Lindenwegsiedlung: Qualität?	? 54500,87934 51992,88068
 Greifenhagener Str.: Brücke tatsächlich nur für Fußgänger/Radfahrer offen?	? 11162,15903 11190,15950
 Laubenheimer Str.: Qualität laut ADFC-Karte gut	? 4317,7069 4439,6958 4503,6822 4528,6711
@@ -504,7 +504,6 @@ Flämingstr.: Qualität laut ADFC-Karte gut	? 21451,18415 21131,17784
 entlang der neuen Wuhle: Qualität laut ADFC-Karte gut, wie ist die Verbindung zur Märkischen Allee und Wuhletalstr.?	? 22002,17492 21579,17559 21131,17784 20965,17862
 Eichhorster Str.: Qualität laut ADFC-Karte gut	? 21451,18415 21543,18571 21853,18700
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
-Cottbusser Str.: laut ADFC-Karte gute Qualität	? 23097,14855 23279,14785 23736,14844
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23279,14785 23378,14528
 Marchwitzastr. - Langhoffstr.: laut ADFC-Karte gut geeignet, wo führt der Weg genau entlang, Einschränkung wegen Fußgängern?	? 19897,13535 19826,14070 19813,14479
 Beilsteiner Str.: laut ADFC-Karte im südlichen Abschnitt gut geeignet, Einbahnstraße!	? 18749,12413 18875,13473 18859,14048 18998,14089 19025,14037
@@ -528,7 +527,6 @@ Eldenaer etc.: Vorfahrtsregelung?	? 14661,12798 14336,12758 14096,12827 13844,12
 Prenzlauer Allee -> Hiddenseer Str.: Abbiegen für Radfahrer möglich?	? 11822,15193 11655,15253
 #: XXX Was bedeutet "sehr eng" in der Straßeneintragung? 
 Gaudystr.: Qualität? Fortsetzung Richtung Mauerpark für Radfahrer befahrbar (ohne Einschränkung wegen der Halle)?	? 10473,15549 10759,15622 10949,15674
-Winfriedstr.: Qualität?	? 1415,3362 1201,3445 971,3534
 Borsigstr.: Qualität?	? 9517,13571 9334,13843
 Groß-Berliner Damm: benutzungspflichtiger Radweg?	? 18058,4627 18850,3783 19334,3268
 Luckenwalder Str.: Qualität (wahrscheinlich Asphalt...)?	? 8634,10426 8393,10505
@@ -571,7 +569,6 @@ Straßen in der Kolonie Margaretenhöhe fehlen, früher Str. 1 bis 7, wie heißen si
 Gustav-Müller-Str.: asphaltiert? Linksabbiegen in die Kolonnenstr. möglich?	? 7637,8159 7650,8765
 Bornholmer Str.: Überqueren der Straßenbahntrasse möglich?	? 10215,16527 10300,16521 10635,16497
 nördlicher Radweg auf der Bulgarischen Str.: siehe Message-ID: <1kl0p5nkwlmb1.dlg@tebe.my-fqdn.de>	? 15166,8489 15383,8662 15580,8839
-Uranusweg, Meteorstr., Str. 442: Qualität? laut ADFC-Karte für Radfahrer gut geeignet	? 4386,17760 4335,17642 4279,17537 4918,17308 4904,17262 5009,17235
 Kleine Hamburger Str.: Qualität?	? 9668,13629 9752,13575
 Kleine Hamburger Str.: Qualität?	? 9850,13509 9885,13480
 Kleine Auguststr.: Qualität?	? 10020,13669 10049,13528
@@ -589,4 +586,9 @@ Schadowstr.: Qualität?	? 9028,12307 9018,12400 9008,12485
 Verlängerte Französische Str. zwischen Mauerstr. und Wilhelmstr.: laut Tagesspiegel für Fußgänger passierbar	? 8892,12006 9076,12054
 Französische Str. zwischen Glinkastr. und Mauerstr.: noch immer Bauarbeiten?	?; 9183,12076 9076,12054
 Fresdorf - Kähnsdorf: Qualität?	? -11617,-15497 -12187,-15175 -12887,-15425 -13654,-15506
+Kähnsdorf - Seddin: Qualität	? -13384,-15520 -13887,-15575 -14637,-16112 -15863,-15363 -16336,-15236
 Kesselsdorfstr./Geßlerstr./Brunhildstr.: Qualität der Straßen?	? 8008,8767 8003,8842 7792,8838 7706,8875 7603,8911
+Freienwalder Str.: Qualität?	? 16849,15263 16651,15345 16600,15371 16331,15486
+Simon-Bolivar-Str.: Qualität?	? 15763,15003 16025,14753 16128,14685 16284,14601
+Zechliner Str.: Qualität?	? 16310,14378 16284,14601 16537,14635 16534,14740
+Malteserstr.: Busspur eingerichtet? (siehe auch http://www.berlin.de/landespressestelle/archiv/2005/03/08/24355/index.html)	? 7744,1008 7539,1529 7390,2021 7238,2534 7120,2990

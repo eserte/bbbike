@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi2.pl,v 1.6 2005/03/02 08:09:26 eserte Exp $
+# $Id: cgi2.pl,v 1.7 2005/03/09 23:49:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -115,7 +115,7 @@ while(<LOG>) {
 	my $qs = $1;
 	next if (defined $filter && !/$filter/o);
 	next if m{\"BBBike-Test/\d+\.\d+\"}; # ignore my tests
-	next if $only_result && !has_params_for_search($qs);
+	next if $only_result && (!has_params_for_search($qs) || $qs =~ /output_as=print/);
 	push @requests, $qs; #XXX? uri_unescape($1);
 	push @req_lines, $_ if $netscape;
     }

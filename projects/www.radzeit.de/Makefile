@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.49 2005/02/27 23:31:04 eserte Exp $
+# $Id: Makefile,v 1.49 2005/02/27 23:31:04 eserte Exp eserte $
 #
 
 # Targets:
@@ -361,7 +361,7 @@ prepare-mapserver-dist-pre:
 
 prepare-mapserver-dist-main:
 	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
-	    ${MAKE} dist-any TARGET=radzeit
+	    ${MAKE} dist-any TARGET=${TARGET}
 	cp -Rpf /tmp/radzeit_mapserver_dist/* ${CURDIR}/$(HTDOCS)/mapserver/brb/
 	rm -f ${CURDIR}/.not_rsyncable
 
@@ -443,6 +443,7 @@ test-on-radzeit-new:
 		${TESTS} \
 	'
 
+# XXX missing: chown ${WWW_USER} /var/www/domains/radzeit.de/www/public/mapserver/brb
 server-permissions:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
 		chown ${WWW_USER} "${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/BBBike/tmp/berlin_map*"; \

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.149 2005/03/02 00:25:03 eserte Exp $
+# $Id: bbbike,v 3.151 2005/03/08 23:45:38 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -213,7 +213,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.149 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.151 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -8093,6 +8093,7 @@ sub plotstr {
 	$c->delete("i");
 	$c->delete("i-out");
     }
+
     if ($std && !$str_draw{$abk}) {
 	if ($lazy_str{$abk}) {
 	    bbbikelazy_remove_data("str", $abk);
@@ -11019,13 +11020,14 @@ sub show_info {
     }
 
     my $show_info_sub = sub {
-	my $txt = shift;
+	my(@txt_and_tag) = @_;
 	#my $tl_tag = "info-$base_tag"; # one window per canvas type
 	my $tl_tag = "info"; # one window for all
 	my $info_top = redisplay_top($top, $tl_tag,
 				     -title => M"Information",
 				     -class => "BbbikePassive",
 				    );
+	my $max_links = 7;
 	if (defined $info_top) {
 	    require Tk::ROText;
 	    $info_text = $info_top->Scrolled('ROText',
@@ -11036,7 +11038,10 @@ sub show_info {
 					     -width => 40,
 					     -height => 10,
 					     )->pack(-expand => 1, -fill => "both");
-	    for (1 .. 4) {
+	    $info_text->tagConfigure("bold", -font => $font{'bold'});
+	    $info_text->tagConfigure("fixed", -font => $font{'fixed'});
+	    # XXX Das könnte doch eigentlich am Ende stehen, wenn $max_links bekannt ist?
+	    for (1 .. $max_links) {
 		$info_text->tagConfigure("link$_", -underline => 1,
 					 -foreground => "blue3");
 		$info_text->tagBind("link$_", "<Enter>" => sub {
@@ -11055,6 +11060,9 @@ sub show_info {
 	my $show_url = sub {
 	    my($linkcount, $url) = @_;
 	    $info_text->tagBind("link$linkcount", "<ButtonRelease-1>" => sub {
+				    if (ref $url eq 'CODE') {
+					$url = $url->();
+				    }
 				    require WWWBrowser;
 				    WWWBrowser::start_browser($url);
 				}
@@ -11067,15 +11075,18 @@ sub show_info {
 	$info_text->delete("1.0", "end");
 	my $linkcount = 1;
 
-	for my $txtline (split /\n/, $txt) {
-	    if ($txtline =~ m{^http://}) {
-		$info_text->insert("end", $txtline, "link$linkcount");
-		$show_url->($linkcount, $txtline);
-		$linkcount++
-	    } else {
-		$info_text->insert("end", $txtline);
+	for(my $i=0; $i<=$#txt_and_tag; $i+=2) {
+	    my($txt, $tag) = @txt_and_tag[$i, $i+1];
+	    for my $txtline (split /\n/, $txt) {
+		if ($txtline =~ m{^http://}) {
+		    $info_text->insert("end", $txtline, "link$linkcount");
+		    $show_url->($linkcount, $txtline);
+		    $linkcount++
+		} else {
+		    $info_text->insert("end", $txtline, $tag);
+		}
+		$info_text->insert("end", "\n");
 	    }
-	    $info_text->insert("end", "\n");
 	}
 
 	my $comment_label_end_index;
@@ -11088,13 +11099,18 @@ sub show_info {
 #	    $info_text->insert("end", "\n\n" . join("\n", @comments));
 	}
 	if (defined $area) {
-	    $info_text->insert("end", sprintf "\n\n" . M("Fläche") . ":\t%.2f km²", $area); # XXX Msg
+	    $info_text->insert("end",
+			       "\n\n" . M("Fläche") . ":", "bold",
+			       sprintf("\t%.2f km²", $area), undef); # XXX Msg
 	}
 	if (defined $total_len) {
-	    $info_text->insert("end", sprintf "\n\n" . M("Länge") . ":\t%.2f km", $total_len); # XXX Msg
+	    $info_text->insert("end",
+			       "\n\n" . M("Länge") . ":", "bold",
+			       sprintf("\t%.2f km", $total_len), undef); # XXX Msg
 	}
 	if (@polarcoord) {
-	    $info_text->insert("end", "\n\n" . M("Koordinaten") . "\n" . M("Polar") . ":\t$polarcoord[0]\n\t$polarcoord[1]");
+	    $info_text->insert("end", "\n\n" . M("Koordinaten") . "\n", "bold");
+	    $info_text->insert("end", M("Polar") . ":\t$polarcoord[0]\n\t$polarcoord[1]");
 	}
 
 	if (defined $gkk_zone_potsdam) {
@@ -11112,6 +11128,7 @@ sub show_info {
 	$info_text->insert("end", "\nBBBike:\t$sx,$sy");
 	$info_text->insert("end", "\n\n");
 
+	$info_text->insert("end", "Links\n", "bold");
 	# Mapserver XXX move to function for creating URL
 	my @mapserver_def = ([$BBBike::BBBIKE_MAPSERVER_ADDRESS_URL,
 			      "Mapserver"]);
@@ -11163,9 +11180,12 @@ sub show_info {
 	    }
 	}
 
+	# XXX maybe use Karte::trim_accuracy instead of int?
+	my $real_coords = join(",", map { int } anti_transpose($coords[0], $coords[1]));
+
 	for my $def (@mapserver_def) {
 	    my $mapserver_url = $def->[0];
-	    my $url = "$mapserver_url?coords=" . join(",", anti_transpose($coords[0], $coords[1]));
+	    my $url = "$mapserver_url?coords=" . $real_coords;
 	    $url .= ";mapext=" . join("+",@mapext);
 	    $url .= ";" . join(";", map { "layer=$_" } @layers);
 	    $info_text->insert("end", $def->[1], "link$linkcount");
@@ -11174,11 +11194,45 @@ sub show_info {
 	    $linkcount++;
 	}
 
+	my @bbbike_cgi_def = ([$BBBike::BBBIKE_DIRECT_WWW,
+			       "BBBike im WWW"]);
+	if ($devel_host) {
+	    push @bbbike_cgi_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/bbbike.cgi" : "http://www/~eserte/bbbike/cgi/bbbike.cgi", "BBBike im WWW, lokal"];
+	}
+
+	{
+	    my $zielname = "";
+	    my $is_first = 1;
+	    for my $def (@bbbike_cgi_def) {
+		my $bbbike_cgi_url = $def->[0];
+		$info_text->insert("end", $def->[1]." ", "link$linkcount");
+		if ($is_first) {
+		    my $zielname_e = $info_text->Entry(-textvariable => \$zielname,
+						       -width => 10);
+		    $info_text->insert("end", " Zielname:");
+		    $info_text->windowCreate("end", -window => $zielname_e);
+		    $is_first = 0;
+		}
+		$show_url->($linkcount, sub {
+				require CGI;
+				# sigh, ";" still makes problems...
+				CGI->import('-oldstyle_urls');
+				my $q = CGI->new({zielc    => $real_coords,
+						  zielname => $zielname,
+						 });
+				my $url = "$bbbike_cgi_url?" . $q->query_string;
+				$url;
+			    });
+		$info_text->insert("end", "\n");
+		$linkcount++;
+	    }
+	}
+
 	{
 	    my $y_wgs = (Karte::Polar::ddd2dmm($py))[1];
 	    my $x_wgs = (Karte::Polar::ddd2dmm($px))[1];
 	    my $url = "http://www.berliner-stadtplan.com/?y_wgs=${y_wgs}%27&x_wgs=${x_wgs}%27&zoom=100&size=500x400&sub.x=15&sub.y=7";
-	    $info_text->insert("end", "www.berliner-stadtplan.com\n",
+	    $info_text->insert("end", "www.berliner-stadtplan.com",
 			       "link$linkcount");
 	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");
@@ -11219,19 +11273,19 @@ sub show_info {
 	    my $sunset_nautical  = $get_sun_set->(-12);
 	    my $sunset_astro     = $get_sun_set->(-15);
 
-	    # XXX use fixed font or tabs
-	    $info_text->insert("end", <<EOF);
-Sonnenaufgang:	$sunrise_real
+	    $info_text->insert("end", "Sonnenaufgang/-untergang\n", "bold");
+	    $info_text->insert("end", <<EOF, "fixed");
+Sonnenaufgang:   $sunrise_real
 Dämmerung ab:
-  bürgerliche:	$sunrise_civil
-  nautische:	$sunrise_nautical
-  astronomische:	$sunrise_astro
+  bürgerliche:   $sunrise_civil
+  nautische:     $sunrise_nautical
+  astronomische: $sunrise_astro
 
-Sonnenuntergang:	$sunset_real
+Sonnenuntergang: $sunset_real
 Dämmerung bis:
-  bürgerliche:	$sunset_civil
-  nautische:	$sunset_nautical
-  astronomische:	$sunset_astro
+  bürgerliche:   $sunset_civil
+  nautische:     $sunset_nautical
+  astronomische: $sunset_astro
 
 EOF
 	};
@@ -11257,6 +11311,7 @@ EOF
 	}
     };
 
+    # XXX zu viel Code dupliziert!
     my(%info, $info_file);
     if ($str_file{$base_tag} =~ /\.shp$/) {
 	(my $dbf_file = $str_file{$base_tag}) =~ s/\.shp$/.dbf/;
@@ -11275,9 +11330,9 @@ EOF
 		    my $text = splice @tags, 2, 1;
 		    unshift @tags, $text, "";
 		}
-		$show_info_sub->(join("\n", $dbf_info,
-				      "\nInterne Canvas-Tags:",
-				      grep { !/^current$/ } @tags));
+		$show_info_sub->("$dbf_info\n", undef,
+				 "\nInterne Canvas-Tags:\n", "bold",
+				 join("\n", grep { !/^current$/ } @tags), undef);
 		return;
 	    }
 	}
@@ -11297,7 +11352,7 @@ EOF
 	    }
 	    $info_file = $p_file{$base_tag} . "-info";
 	}
-    };
+    };warn $@ if $@;
 
     if ($info_file && tie %info, 'DB_File', $info_file, &Fcntl::O_RDONLY) {
 	warn "Use $info_file ...\n";
@@ -11306,23 +11361,24 @@ EOF
 	    foreach my $i (1 .. 4) {
 		if (defined $tags[$i]) {
 		    if (defined $info{$tags[$i]}) {
-			$show_info_sub->($info{$tags[$i]});
+			$show_info_sub->("Info:\n", "bold",
+					 $info{$tags[$i]});
 			last TRY;
 		    }
 		    if ($tags[$i] =~ /^L\d+-(\d+)/) {
 			my $id = $1;
 			foreach my $type (qw(s p)) {
 			    if (defined $info{"$type-$id"}) {
-				$show_info_sub->($info{"$type-$id"});
+				$show_info_sub->("Info:\n", "bold",
+						 $info{"$type-$id"});
 				last TRY;
 			    }
 			}
 		    }
 		}
 	    }
-	    $show_info_sub->(join("\n",
-				  "Interne Canvas-Tags:",
-				  grep { !/^current$/ } @tags));
+	    $show_info_sub->("Interne Canvas-Tags:\n", "bold",
+			     join("\n", grep { !/^current$/ } @tags), undef);
 	}
 	untie %info;
     } else {
@@ -11331,9 +11387,8 @@ EOF
 		my $text = splice @tags, 2, 1;
 		unshift @tags, $text, "";
 	    }
-	    $show_info_sub->(join("\n",
-				  "Interne Canvas-Tags:",
-				  grep { !/^current$/ } @tags));
+	    $show_info_sub->("Interne Canvas-Tags:\n", "bold",
+			     join("\n", grep { !/^current$/ } @tags), undef);
 	} else {
 	    if ($tags[0] =~ /^L\d+-(fg|img)$/) {
 		$show_info_sub->($tags[2]); # show name

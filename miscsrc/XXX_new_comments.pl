@@ -666,6 +666,19 @@ __END__
 
 XXX Weitere Verbesserungen:
 
+Kombinieren:
+nach 0.34 km links (100°) in die     Promenade, am Teltowkanal|0.3 km|bis Königsberger Str.: Route H; bis Königsberger Str.:
+                                                              |      |Parkweg, OK                                           
+
+
+Falsch: Kreutzigerstr. interessiert hier nicht:
+nach 0.35 km links (90°) in die  Warschauer Str.   |10.7 km|                                                      
+nach 0.38 km rechts (80°) in die Frankfurter Allee |11.1 km|bis Proskauer Str.: RR8; zwischen Proskauer Str. und  
+                                                   |       |Kreutzigerstr. - Frankfurter Allee: Einfahrt in       
+                                                   |       |Hausdurchgang                                         
+nach 0.70 km links (80°) in die  Samariterstr.     |11.8 km|Kopfsteinpflaster (*)                                 
+
+
 "ab Treskowallee für 2.2 km: Parkweg, OK; R1 (*); ab (Wuhlheide/FEZ):
 Fußgänger " => sortieren, und zwar: Gesamtstrecken zuerst, und dann
 nach Startpunkt sortiert
@@ -727,6 +740,10 @@ Klemkestr. | zwischen (An der Nordbahn) und (An der Nordbahn):
 Berliner Mauer-Radweg => obskur, aber so ist meine Benamung der
 Querstraßen...
 
+Kurios, aber schwer lösbar:
+nach 0.41 km rechts (90°) in die Leipziger Str.|5.4km|zwischen Jerusalemer Str. und Jerusalemer Str.:      
+                                               |     |zunächst linken Gehweg benutzen (schlecht
+					       |     |passierbarer Mittelstreifen)
 
 DONE:
 

@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.13 2005/02/27 23:29:44 eserte Exp eserte $
+# $Id: qualitaet_s-orig,v 4.14 2005/03/06 23:51:38 eserte Exp eserte $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -38,7 +38,7 @@ Golßener Str.: mäßiges Kopfsteinpflaster	Q2; 10293,8800 10213,8665
 Golßener Str.: mäßiges Kopfsteinpflaster	Q2 10293,8800 10287,8951
 Jüterboger Str.: mäßiges Kopfsteinpflaster	Q2 10287,8951 9958,8966 9799,8962
 Methfesselstr.: sehr gutes Kopfsteinpflaster, 40 km/h	Q0 9211,9354 9163,9209 9141,9142 9106,9038
-Methfesselstr.: Kopfsteinpflaster OK, 25 km/h (wenn bergab)	Q1 9106,9038 9057,8936 8982,8781
+Methfesselstr.: Kopfsteinpflaster	Q2 9106,9038 9057,8936 8982,8781
 Priesterweg: mäßiges Kopfsteinpflaster	Q2 7231,7349 7222,6458 7217,6065 7216,5888 7175,5843
 Großgörschenstr.: mäßiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8035,9437 7960,9466
 Waldemarstr.: Kopfsteinpflaster, OK	Q1 11556,10869 11328,10957
@@ -531,7 +531,7 @@ Orankeweg: holpriger Feldweg	Q2 14934,15860 15305,15858 15439,15859
 Orankestr.: Kopfsteinpflaster	Q2 16331,15486 15665,15765
 Orankestrand: guter Parkweg	Q1 15871,16399 15664,16115 15599,16077 15479,16072
 Dehnerstr.: mäßiger Belag	Q1 16801,16501 17009,16718
-Genslerstr.: Kopfsteinpflaster	Q2 16888,15462 16799,15007 16783,14927 16765,14842
+Genslerstr.: Kopfsteinpflaster	Q2 16888,15462 16849,15263 16799,15007 16783,14927 16765,14842
 Bahnhofstr.: Richtung Osten Kopfsteinpflaster	Q2; 16756,15555 16819,15495 16888,15462 17014,15442
 Pankeweg: enger Feldweg, teilweise Schotter	Q2 14869,24391 14625,24215 14356,23862 14265,23759 13953,23497
 #: unverified_by ADFC-Karte
@@ -949,10 +949,8 @@ Schönburgstr.: Kopfsteinpflaster	Q2 8995,6473 9029,6360
 Parkstr.: schlechtes Kopfsteinpflaster	Q3 8943,6292 9029,6360
 #: add_fragezeichen: stimmt das?
 Parkstr.: Kopfsteinpflaster	Q2 9029,6360 9143,6415
-#: add_fragezeichen: stimmt die Feinkategorisierung? vvv
 Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 8943,6292 8961,6126
 Blumenthalstr.: Kopfsteinpflaster	Q2 8961,6126 8990,5950
-#: add_fragezeichen ^^^
 Kaiserin-Augusta-Str.: Kopfsteinpflaster	Q2 8990,5950 9177,5922
 (Teltowkanal, Nordufer): Parkweg	Q2 8750,5173 9118,5328 9145,5323 9182,5332
 #: add_fragezeichen: stimmt das?
@@ -1073,6 +1071,7 @@ Voltastr.: Kopfsteinpflaster	Q2 9041,14896 9361,15066 9571,15178
 Buschiner Str.: Asphalt	Q0 20160,13287 20743,13197
 Stangeweg: Beton	Q0 21414,16284 21542,16209 21610,16079
 Anemonenstr.: asphaltiert	Q0 23447,4425 23809,4533 23934,4661
+Sella-Hasse-Str.: Asphalt	Q0 20896,16937 20843,16829 20771,16690 20948,16612
 #: by: ^^^
 #: by: David Greve vvv
 Stolbergstr.: Asphalt	Q0 8831,6780 8834,6639
@@ -1115,6 +1114,9 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 #: by: kalkreuth
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 #: by: anonymous vvv
+Carl-Scheele-Str.: Asphalt	Q0 19193,2821 19009,2857 18904,2865 18693,2748
+#: XXX In der ADFC-Karte auch als "gut geeignet" ausgewiesen:
+Cottbusser Str.: guter Asphalt	Q0 23097,14855 23279,14785 23736,14844
 Andersenstr.: Kopfsteinpflaster	Q2 10300,16521 10315,16651
 Schönbaumer Weg: Verbundsteinpflaster	Q1 -2364,22996 -2123,22937
 #: add_fragezeichen: Hier widerspricht die ADFC-Karte und meint "gut geeignet"
@@ -1375,7 +1377,23 @@ Wilseder Str.: Asphalt	Q0 6295,5132 6288,4906
 Immenweg: Asphalt	Q0 6751,4985 6415,5028 6383,4890
 Hünensteig: Verbundsteinpflaster	Q1 6415,5028 6393,5028 6396,5125 6406,5223 6108,5253
 #: by: ^^^
-#: by: Jan Voigt:
+#: by: Jan Voigt: vvv
 Charlottenburger Str.: Asphalt	Q0 1122,3153 1201,3445
-#: by: Rolf Schramek:
+Winfriedstr.: sehr guter Asphalt	Q0 1415,3362 1201,3445 971,3534
+#: by: ^^^
+#: by: Rolf Schramek: vvv
 Brüsseler Str.: Kopfsteinpflaster	Q2 6381,15401 6695,15692 6809,15798 6914,15908
+Antwerpener Str.: asphaltiert, Parkstreifen mit Kopfsteinpflaster	Q0 6575,15831 6695,15692 6900,15454
+#: by: ^^^
+#: by: Heiko Astalosch:
+Goeckestr.: mäßiges Kopfsteinpflaster	Q2 16128,14685 16256,14828 16502,15091 16651,15345
+#: by: Christoph Sachsenmaier:
+Ortlerweg: schlechtes Kopfsteinpflaster	Q3 3500,1587 3740,1918 3700,2045
+#: by: W.Oertel:
+Kögelstr.: mäßiges Kopfsteinpflaster	Q2 5221,17921 5367,17876
+#: by: Christian:
+Wielandstr. (Friedenau): sehr guter Asphalt	Q0 6083,7582 6081,7215 6082,6965
+#: by: Thomas (dobr@...) vvv
+(Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Asphalt	Q0 7921,4451 8162,4725
+(Gersdorfstr. - Wulfilaufer): fester sandiger Parkweg	Q1 8162,4725 8249,4769
+#: by: ^^^

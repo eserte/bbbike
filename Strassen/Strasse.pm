@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.13 2005/03/03 00:14:10 eserte Exp $
+# $Id: Strasse.pm,v 1.14 2005/03/07 23:15:08 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -123,6 +123,10 @@ sub short {
 # Street numbers like "B1" or "F2.2" are recognized.
 sub beautify_landstrasse {
     my($str, $backwards) = @_;
+    if ($str =~ m/^(.*\()([^\)]+\s-\s[^\)]+)(\).*)$/) {
+	my($begin, $middle, $end) = ($1, $2, $3);
+	return $begin . beautify_landstrasse($middle, $backwards) . $end;
+    }
     if ($str =~ m/^ (.*:\s*)?
 		    (.*\s-\s.*?)
 		    (\s*:.*|\s*\(.*\)\s*)?

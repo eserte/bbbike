@@ -15,6 +15,12 @@ table.desc {
 table.routelist td {
   vertical-align:top;
 }
+table.print {
+  border: 1px solid black;
+}
+table.print td {
+  border: 1px solid black;
+}
 table.detailmap td {
   vertical-align:middle;
 }

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.14 2005/03/05 23:20:20 eserte Exp eserte $
+# $Id: bbbike.cgi,v 7.15 2005/03/09 21:58:45 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -654,7 +654,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.15 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1457,7 +1457,7 @@ EOF
 <td valign="top">@{[ blind_image(420,1) ]}<br>
 EOF
  	print <<EOF;
-Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 3600 von 10000 Berliner Stra&szlig;en sowie ca. 150 Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
+Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 3700 von 10000 Berliner Stra&szlig;en sowie ca. 150 Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
 Nebenstra&szlig;en). Bei nicht erfassten Straßen wird automatisch die
 nächste bekannte verwendet. Hausnummern k&ouml;nnen nicht angegeben werden.<br><br>
 EOF
@@ -1667,7 +1667,7 @@ EOF
 		last if ++$out_i > $max_matches;
 		my $strasse2val;
 		my $is_ort = $s->[MATCHREF_ISORT_INDEX];
-		print "<input type=radio name=" . $type . "2";
+		print "<label><input type=radio name=" . $type . "2";
 		if ($is_ort && $multiorte) {
 		    my($ret) = $multiorte->get_by_name($s->[0]);
 		    my $xy;
@@ -1688,6 +1688,7 @@ EOF
 		if (defined $s->[1] && defined $s->[2]) {
 		    print " (<font size=-1>$s->[1]" . ($s->[2] ne "" ? ", $s->[2]" : "") . "</font>)";
 		}
+		print "</label>";
 		print "<br>\n";
 	    }
 
@@ -1926,11 +1927,11 @@ sub choose_ch_form {
     @strlist = sort @strlist;
 
     print
-      "<input type=radio name=" . $search_type . "name value=\"\"" ,
+      "<label><input type=radio name=" . $search_type . "name value=\"\"" ,
       ($use_javascript ? " onclick=\"document.Charform.submit()\"" : ""),
       "> ",
       ($use_javascript ? "(Zurück zum Eingabeformular)" : "(nicht gesetzt)"),
-      "<br>\n";
+      "</label><br>\n";
 
     my $last_name;
     for(my $i = 0; $i <= $#strlist; $i++) {
@@ -1941,11 +1942,11 @@ sub choose_ch_form {
 	    $last_name = $name;
 	}
 	print
-	  "<input type=radio name=" . $search_type . "name value=\"$name\"",
+	  "<label><input type=radio name=" . $search_type . "name value=\"$name\"",
 	  ($use_javascript ? " onclick=\"document.Charform.submit()\"" : ""),
 	  "> ",
 	  $name,
-	  "<br>\n";
+	  "</label><br>\n";
     }
 
     print "<br>";
@@ -3312,7 +3313,7 @@ EOF
 
     ROUTE_TABLE:
 	print "<center>" unless $printmode;
-	print "<table bgcolor=\"#ffcc66\"";
+	print qq{<table id="routehead" bgcolor="#ffcc66"};
 	if ($printmode) {
 	    print " width=$printwidth";
 	}
@@ -3412,10 +3413,14 @@ EOF
 	    # ignoriert font-family.
 	    #   width=\"90%\"
 	    print "<center>" unless $printmode;
-	    print "<table class='routelist' ";
+	    print "<table class='routelist";
 	    if ($printmode) {
-		print ' style="border-style:solid; border-width:1px"';
-		print " border=1";
+		print " print";
+	    }
+	    print "' id='routelist' ";
+	    if ($printmode) {
+		print ' style="border: 1px solid black;"';
+		print " border=1"; # XXX ohne geht's leider nicht
 		print " width=$printwidth";
 	    } else {
 		print " align=center";
@@ -3459,7 +3464,7 @@ EOF
 			my $qs = CGI->new({strname => $fragezeichen_comment,
 					   strname_html => CGI::escapeHTML($fragezeichen_comment),
 					  })->query_string;
-			print qq{<td>$fontstr<a target="newstreetform" href="$bbbike_html/fragezeichenform.html?$qs">Kommentar eintragen</a>$fontend</td>};
+			print qq{<td>$fontstr<a target="newstreetform" href="$bbbike_html/fragezeichenform.html?$qs">Unbekannte Straße, Kommentar eintragen</a>$fontend</td>};
 		    } else {
 			print qq{<td>&nbsp;</td>};
 		    }
@@ -3582,7 +3587,7 @@ EOF
 	    print "<input type=hidden name=center value=''>\n";
 #XXX not yet	    print "<input type=hidden name='as_attachment' value=''>\n";
 	    print "<input type=submit name=interactive value=\"Grafik zeichnen\"> <font size=-1>(neues Fenster wird ge&ouml;ffnet)</font>";
-	    print " <input type=checkbox name=outputtarget value='print' " . ($default_print?"checked":"") . "> f&uuml;r Druck optimieren";
+	    print " <label><input type=checkbox name=outputtarget value='print' " . ($default_print?"checked":"") . "> f&uuml;r Druck optimieren</label>";
 #XXX not yet	    print " <input type=checkbox name='cb_attachment'> als Download";
 	    print "&nbsp;&nbsp; <span class=nobr>Ausgabe als: <select name=imagetype " . ($bi->{'can_javascript'} ? "onchange='enable_size_details_buttons()'" : "") . ">\n";
 	    print " <option " . $imagetype_checked->("png") . ">PNG\n" if $graphic_format eq 'png';
@@ -3629,12 +3634,10 @@ EOF
 	    push @not_for, "Mapserver" if $can_mapserver;
 	    print "<table><tr valign=top><td>$fontstr<b>Bildgr&ouml;&szlig;e:</b>$fontend</td>\n";
 	    foreach my $geom ("400x300", "640x480", "800x600", "1024x768") {
-		(my $id = $geom) =~ s/x/_/g;
-		$id = "geom_$id";
 		print
-		    qq{<td><input id="$id" type="radio" name="geometry" value="$geom"},
+		    qq{<td><label><input type="radio" name="geometry" value="$geom"},
 		    ($geom eq $default_geometry ? " checked" : ""),
-		    qq{>$fontstr <label for="$id">$geom</label>  $fontend</td>\n};
+		    qq{>$fontstr $geom $fontend</label></td>\n};
 	    }
 	    if (@not_for) {
 		print "<td valign=bottom><small>(nicht für: " . join(", ", @not_for) . ")</small></td>";
@@ -4935,6 +4938,7 @@ sub call_bikepower {
     http_header(@no_cache);
     eval q{
 	require BikePower::HTML;
+	# XXX no support for css in BikePower::HTML
 	print BikePower::HTML::code();
     };
     if ($@) {
@@ -5547,7 +5551,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/03/05 23:20:20 $';
+    my $cgi_date = '$Date: 2005/03/09 21:58:45 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

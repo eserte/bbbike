@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.22 2005/02/28 08:25:58 eserte Exp $
+# $Id: Makefile,v 1.23 2005/03/09 23:49:52 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -128,10 +128,15 @@ FONTS_LIST=		fonts-spiff.list
 WWW_USER=		eserte
 TARGET_DIR=		${.CURDIR:H}/brb-spiff
 
-.elif ${TARGET} == "radzeit" || ${TARGET} == "radzeit.herceg.de"
+.elif ${TARGET} == "radzeit" || ${TARGET} == "radzeit.herceg.de" || ${TARGET} == "radzeit-new"
 
 HOST=			$(RADZEIT_HOST)
-MAPSERVER_DIR=		$(RADZEIT_APACHE_DIR)/htdocs/mapserver/brb
+.if ${TARGET} == "radzeit-new"
+HTDOCS=			public
+.else
+HTDOCS=			htdocs
+.endif
+MAPSERVER_DIR=		$(RADZEIT_APACHE_DIR)/$(HTDOCS)/mapserver/brb
 MAPSERVER_RELURL=	/mapserver/brb
 MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 #MAPSERVER_PROG_RELURL=	/cgi-bin/mapserv
@@ -145,7 +150,7 @@ BBBIKE_CGI_RELURL=	/cgi-bin
 BBBIKE_IMAGES_RELURL=	/BBBike/images
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 IMAGE_SUFFIX=		png
-.if ${TARGET} == "radzeit"
+.if ${TARGET} == "radzeit" || ${TARGET} == "radzeit-new"
 FONTS_LIST=		fonts-radzeit.list
 WWW_USER=		www
 TARGET_DIR=		${.CURDIR:H}/brb-radzeit
@@ -445,7 +450,7 @@ dist-radzeit.herceg.de:	# build-all
 
 rsync-radzeit:
 	[ ! -d $(RADZEIT_DIST_DIR) ] && ( echo Please execute ${MAKE} dist-radzeit first; false ) || true
-	cd $(RADZEIT_DIST_DIR) && rsync -Pvzrt . $(BBBIKE_RADZEIT_USER)@$(BBBIKE_RADZEIT_HOST):$(RADZEIT_APACHE_DIR)/htdocs/mapserver/brb/
+	cd $(RADZEIT_DIST_DIR) && rsync -Pvzrt . $(BBBIKE_RADZEIT_USER)@$(BBBIKE_RADZEIT_HOST):$(RADZEIT_APACHE_DIR)/$(HTDOCS)/mapserver/brb/
 
 dist-spiff:
 	[ ! -d $(SPIFF_DIST_DIR) ] && mkdir $(SPIFF_DIST_DIR) || true

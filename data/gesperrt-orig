@@ -269,7 +269,8 @@ Straße 462	1 4953,17412 5068,17384
 Havensteinstr.	1 6304,2569 6603,2803
 Worpsweder Str.	1 6191,4923 6203,5138
 Wilseder Str.	1 6295,5132 6288,4906
-Brüsseler Str.	1 6914,15908 6809,15798
+#: XXX laut Rolf S. keine Einbahnstraße für Radfahrer
+#Brüsseler Str.	1 6914,15908 6809,15798
 #
 # Potsdam
 #
@@ -394,6 +395,7 @@ Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10621,12207 10567,12135
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5229,10716 5351,10760 5484,10810
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15392,12135 15437,12225 15502,12367
+Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6790,16018 6914,15908 7043,15793
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Neustädtische Kirchstr.: An der US-Botschaft	3nocross 9100,12627 9112,12499 9126,12413 9141,12320
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

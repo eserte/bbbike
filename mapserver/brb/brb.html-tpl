@@ -86,21 +86,21 @@
 
       <b>Darzustellende Ebenen: </b><small><a href="help.html#layers" onclick="return help('layers')">(Hilfe)</a></small><br>
       <div class="lyrchk">
-      <input type="checkbox" name="layer" value="qualitaet" [qualitaet_check]> Qualität<br>
-      <input type="checkbox" name="layer" value="handicap" [handicap_check]> sonstige Behinderungen<br>
-      <input type="checkbox" name="layer" value="radwege" [radwege_check]> Radwege<br>
-      <input type="checkbox" name="layer" value="blocked" [blocked_check]> gesperrte Straßen<br>
-      <input type="checkbox" name="layer" value="bahn" [bahn_check]> Bahnlinien und Bahnhöfe<br>
-      <input type="checkbox" name="layer" value="gewaesser" [gewaesser_check]> Gewässer<br>
-      <input type="checkbox" name="layer" value="faehren" [faehren_check]> Fähren<br>
-      <input type="checkbox" name="layer" value="flaechen" [flaechen_check]> Parks, Wälder<br>
-      <input type="checkbox" name="layer" value="grenzen" [grenzen_check]> Grenzen<br>
-      <input type="checkbox" name="layer" value="ampeln" [ampeln_check]> Ampeln<br>
-      <input type="checkbox" name="layer" value="sehenswuerdigkeit" [sehenswuerdigkeit_check]> Sehenswürdigkeiten<br>
-      <input type="checkbox" name="layer" value="obst" [obst_check]> Obst<br>
-      <input type="checkbox" name="layer" value="orte" [orte_check]> Orte<br>
-      <input type="checkbox" name="layer" value="fragezeichen" [fragezeichen_check]> Fragezeichen<br>
-      <input type="checkbox" name="layer" value="route" [route_check]> Route/Markierung<br>
+      <label><input type="checkbox" name="layer" value="qualitaet" [qualitaet_check]> Qualität</label><br>
+      <label><input type="checkbox" name="layer" value="handicap" [handicap_check]> sonstige Behinderungen</label><br>
+      <label><input type="checkbox" name="layer" value="radwege" [radwege_check]> Radwege</label><br>
+      <label><input type="checkbox" name="layer" value="blocked" [blocked_check]> gesperrte Straßen</label><br>
+      <label><input type="checkbox" name="layer" value="bahn" [bahn_check]> Bahnlinien und Bahnhöfe</label><br>
+      <label><input type="checkbox" name="layer" value="gewaesser" [gewaesser_check]> Gewässer</label><br>
+      <label><input type="checkbox" name="layer" value="faehren" [faehren_check]> Fähren</label><br>
+      <label><input type="checkbox" name="layer" value="flaechen" [flaechen_check]> Parks, Wälder</label><br>
+      <label><input type="checkbox" name="layer" value="grenzen" [grenzen_check]> Grenzen</label><br>
+      <label><input type="checkbox" name="layer" value="ampeln" [ampeln_check]> Ampeln</label><br>
+      <label><input type="checkbox" name="layer" value="sehenswuerdigkeit" [sehenswuerdigkeit_check]> Sehenswürdigkeiten</label><br>
+      <label><input type="checkbox" name="layer" value="obst" [obst_check]> Obst</label><br>
+      <label><input type="checkbox" name="layer" value="orte" [orte_check]> Orte</label><br>
+      <label><input type="checkbox" name="layer" value="fragezeichen" [fragezeichen_check]> Fragezeichen</label><br>
+      <label><input type="checkbox" name="layer" value="route" [route_check]> Route/Markierung</label><br>
       </div>
 
       <p>
@@ -108,28 +108,31 @@
 [% IF style == "new" %]
       <input type="hidden" name="mode" />
       <input type="hidden" name="zoomdir" />
-      <input type="radio" name="mode_or_zoomdir" value="0" [zoomdir_0_check] onclick="change_mode_or_zoomdir()">&nbsp;Karte bewegen
+      <label><input type="radio" name="mode_or_zoomdir" value="0" [zoomdir_0_check] onclick="change_mode_or_zoomdir()">&nbsp;Karte bewegen</label>
         <small><a href="help.html#query" onclick="return help('move')">(Hilfe)</a></small>
 	<br>
-      <input type="radio" name="mode_or_zoomdir" value="1" [zoomdir_1_check] onclick="change_mode_or_zoomdir()">&nbsp;Hineinzoomen
+      <label><input type="radio" name="mode_or_zoomdir" value="1" [zoomdir_1_check] onclick="change_mode_or_zoomdir()">&nbsp;Hineinzoomen</label>
         <small><a href="help.html#query" onclick="return help('zoomin')">(Hilfe)</a></small>
 	<br>
-      <input type="radio" name="mode_or_zoomdir" value="-1" [zoomdir_-1_check] onclick="change_mode_or_zoomdir()">&nbsp;Herauszoomen
+      <label><input type="radio" name="mode_or_zoomdir" value="-1" [zoomdir_-1_check] onclick="change_mode_or_zoomdir()">&nbsp;Herauszoomen</label>
         <small><a href="help.html#query" onclick="return help('zoomout')">(Hilfe)</a></small>
 	<br>
-      <input type="radio" name="mode_or_zoomdir" value="nquery" onclick="change_mode_or_zoomdir()">&nbsp;Details anzeigen
+      <label><input type="radio" name="mode_or_zoomdir" value="nquery" onclick="change_mode_or_zoomdir()">&nbsp;Details anzeigen</label>
         <small><a href="help.html#query" onclick="return help('query')">(Hilfe)</a></small>
 	<br>
-      <input type="radio" name="mode_or_zoomdir" value="searchroute" onclick="change_mode_or_zoomdir()"> Start/Zielpunkt setzen <small>(experimentell! - <a href="help.html#search" onclick="return help('query')">Hilfe</a>)</small>
+      <label><input type="radio" name="mode_or_zoomdir" value="searchroute" onclick="change_mode_or_zoomdir()"> Start/Zielpunkt setzen</label>
+	<small>(experimentell! - <a href="help.html#search" onclick="return help('query')">Hilfe</a>)</small>
       <p>
 
 [% ELSE %]
-      <input type="radio" name="mode" value="browse" onclick="toggled_searchroute_mode();" checked> <b>Karte zoomen/bewegen</b> <small><a href="help.html#browse" onclick="return help('browse')">(Hilfe)</a></small><br>
-     <input type="radio" name="mode" value="nquery" onclick="toggled_searchroute_mode();"> <b>Merkmale anzeigen</b> <small><a href="help.html#query" onclick="return help('query')">(Hilfe)</a></small>
+      <label><input type="radio" name="mode" value="browse" onclick="toggled_searchroute_mode();" checked> <b>Karte zoomen/bewegen</b></label>
+        <small><a href="help.html#browse" onclick="return help('browse')">(Hilfe)</a></small><br>
+      <label><input type="radio" name="mode" value="nquery" onclick="toggled_searchroute_mode();"> <b>Merkmale anzeigen</b></label>
+        <small><a href="help.html#query" onclick="return help('query')">(Hilfe)</a></small>
       <p>
-      <input type=radio name=zoomdir value=1 [zoomdir_1_check] onclick="set_gui_browse_mode()">&nbsp;Hineinzoomen<br>
-      <input type=radio name=zoomdir value=0 [zoomdir_0_check] onclick="set_gui_browse_mode()">&nbsp;Bewegen<br> 
-      <input type=radio name=zoomdir value=-1 [zoomdir_-1_check] onclick="set_gui_browse_mode()">&nbsp;Herauszoomen
+      <label><input type=radio name=zoomdir value=1 [zoomdir_1_check] onclick="set_gui_browse_mode()">&nbsp;Hineinzoomen</label><br>
+      <label><input type=radio name=zoomdir value=0 [zoomdir_0_check] onclick="set_gui_browse_mode()">&nbsp;Bewegen</label><br> 
+      <label><input type=radio name=zoomdir value=-1 [zoomdir_-1_check] onclick="set_gui_browse_mode()">&nbsp;Herauszoomen</label>
 [% END %]
 
       <p>

@@ -1395,7 +1395,7 @@ userdel	2 22508,-102744 22382,-102254
 EOF
      },
      { from  => 1108249200, # 2005-02-13 00:00
-       until => 1114898400, # 2005-05-01 00:00
+       until => 1110145553, # XXX not anymore, was 1114898400 2005-05-01 00:00
        text  => 'Im Zeitraum vom 14.02.2005 bis 30.04.2005 besteht für die L 73 zwischen Langerwisch und Wildenbruch Vollsperrung auf Grund von Bauarbeiten. ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -1489,6 +1489,22 @@ EOF
        data  => <<EOF,
 userdel	q4 -16605,-14239 -17374,-13449
 userdel	q4 -18080,-12637 -17374,-13449
+EOF
+     },
+     { from  => 1110232931, # 2005-03-07 23:02
+       until => 1111705200, # 2005-03-25 00:00
+       text  => 'Sterndamm (Treptow) in Richtung Rudow zwischen Königsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt (bis 24.03.2005)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 17518,4644 17428,4503
+EOF
+     },
+     { from  => 1110235074, # 2005-03-07 23:37
+       until => 1110317384, # XXX handicap now, was: 1125525600 2005-09-01 00:00
+       text  => 'Unter den Linden (Mitte) Richtung Westen zwischen Schadowstr. und Wilhelmstr. Baustelle, Straße vollständig gesperrt (bis August 2005)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 9028,12307 8804,12280
 EOF
      },
     );

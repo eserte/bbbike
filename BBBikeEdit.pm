@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.82 2005/02/27 23:37:47 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.82 2005/02/27 23:37:47 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -425,12 +425,11 @@ local $scale = 1;#XXX remove $scale
 	    my($x1, $y1, $x2, $y2) = (split(/,/, $l->[0]),
 				      split(/,/, $l->[1]),
 				     );
-	    ($x1,$y1) = transpose($x1,$y1);
-	    ($x2,$y2) = transpose($x2,$y2);
+	    ($x1,$y1) = main::transpose($x1,$y1);
+	    ($x2,$y2) = main::transpose($x2,$y2);
 	    my $alpha = atan2($y2-$y1, $x2-$x1);
 	    my $beta  = $alpha-3.141592653/2;
 	    my($dx, $dy) = (3*cos($beta), 3*sin($beta));
-
 	    if ($l->[2] ne 'kein') {
 		$c->createLine($scale*($x1-$dx), $scale*($y1-$dy),
 			       $scale*($x2-$dx), $scale*($y2-$dy),
