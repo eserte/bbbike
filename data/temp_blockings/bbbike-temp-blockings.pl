@@ -1035,8 +1035,8 @@ userdel	q4 90062,-33160 90271,-33398
 EOF
      },
      { from  => 1098568800, # 2004-10-24 00:00
-       until => 1104534000, # 2005-01-01 00:00
-       text  => 'L 302; (Schöneicher Straße in Schöneiche); zwischen Stegeweg bis Dorfaue Gleisbau Vollsperrung 25.10.2004-31.12.2004 ',
+       until => 1112306400, # 2005-04-01 00:00
+       text  => 'L 302; (Schöneicher Str.); OL Schöneiche, zw. Stegeweg u. Dorfaue Gleisbauarbeiten Vollsperrung 25.10.2004-31.03.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 31221,8312 30688,8432

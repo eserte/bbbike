@@ -114,6 +114,7 @@ TARGET=radzeit.herceg.de
       make(prepare-bbbike-dist-data) || \
       make(rsync)		     || \
       make(rsync-bbbike-data)	     || \
+      make(rsync-routopedia)	     || \
       make(clean-cache-files-on-remote)
 TARGET=radzeit
 .elif make(deploy-local)      || \
@@ -170,6 +171,11 @@ rsync-bbbike:
 rsync-mapserver:
 	@echo NYI
 	false
+
+rsync-routopedia:
+	${RSYNC} ${RSYNC_ARGS} \
+	    --exclude data/ \
+	    routopedia/ ${RSYNC_DEST}/routopedia/
 
 rsync-bbbike-data:	clean-cache-files-on-remote \
 			do-rsync-bbbike-data \

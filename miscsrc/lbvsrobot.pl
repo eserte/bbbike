@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.19 2005/01/06 21:17:52 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.20 2005/01/30 23:37:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -451,10 +451,13 @@ sub mark_irrelevant_entries {
 	     | \s+halbseitig\s+
 	     | \s+Einschränkungen\s+
 	     | Einengung
-	     | ger\.Eineng
+	     | ger\.\s*Eineng
 	     | Fahrstreifen\s+eingeengt
-	     | Höhenbeschränk.
+	     | Höhenbeschränk\.
+	     | Höhenbegr\.
+	     | Höhenbegrenz\.
 	     | Tragfähigk\.
+	     | Tragfähigkeit
 	     | Traglastbeschränkung
 	     | Randsicherung
 	     | Fahrbahn\s+nicht\s+betroffen

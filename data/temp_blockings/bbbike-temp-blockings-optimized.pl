@@ -63,7 +63,14 @@ push @temp_blocking,
          'type' => 'gesperrt'
        },
        undef,
-       undef,
+       {
+         'until' => 1112306400,
+         'text' => 'L 302; (Schöneicher Str.); OL Schöneiche, zw. Stegeweg u. Dorfaue Gleisbauarbeiten Vollsperrung 25.10.2004-31.03.2005 ',
+         'from' => 1098568800,
+         'data' => 'userdel	q4 31221,8312 30688,8432
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
