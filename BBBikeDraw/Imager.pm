@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Imager.pm,v 1.14 2005/03/19 12:02:14 eserte Exp $
+# $Id: Imager.pm,v 1.15 2005/03/29 09:56:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -45,7 +45,7 @@ use vars @colors;
 #      }
 #  }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -198,6 +198,7 @@ sub draw_map {
 #	    } elsif ($cat !~ /^[SRU]0$/) { # Ausnahmen: in Bau
 		next if $restrict && !$restrict->{$cat};
 		my $color = $outline_color{$cat};
+		next if !defined $color;
 		my $width = $width{$cat} || 1; $width += 2;
 		my $points_x = [];
 		my $points_y = [];
