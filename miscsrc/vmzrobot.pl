@@ -283,11 +283,13 @@ sub mark_irrelevant_entries {
 	    $ignore = 1;
 	} else {
 	    my(@comp) = split /,\s+/, $detail->{text};
-	    if ($comp[-1] =~ /( Fahrbahn\s+auf\s+\S+\s+Fahrstreifen\s+verengt
-			      | Fahrstreifen\s+gesperrt
+	    my $Fahrstreifen = qr{(?:Fahrstreifen|Fahrspuren)};
+	    my $reduziert    = qr{(?:reduziert|verengt)};
+	    if ($comp[-1] =~ /( Fahrbahn\s+(teilweise\s+)?auf\s+\S+\s+$Fahrstreifen\s+verengt
+			      | $Fahrstreifen\s+gesperrt
 			      | Fahrbahnverengung
 			      | Ampeln\s+ausgefallen
-			      | auf\s+\d\s+Fahrstreifen\s+reduziert
+			      | auf\s+\d\s+$Fahrstreifen\s+$reduziert
 			      )/xs) {
 		$ignore = 1;
 	    }

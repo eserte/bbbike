@@ -145,9 +145,11 @@ prepare-bbbike-dist-prog-bbbike:
 	rm -f ${CURDIR}/cgi-bin/$(i)
 	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/$(i)
 .endfor
-	cd ${CURDIR}/cgi-bin && \
-	    ln -s ../BBBike/cgi/bbbike-radzeit.cgi.config bbbike.cgi.config
-	chmod ugo+r ${CURDIR}/BBBike/cgi/bbbike-radzeit.cgi.config
+	cp -pf ${BBBIKE_ROOT_DIR}/cgi/bbbike-radzeit.cgi.config \
+	       ${CURDIR}/BBBike/cgi/bbbike.cgi.config
+	rm -f ${CURDIR}/cgi-bin/bbbike.cgi.config
+	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike.cgi.config
+	chmod ugo+r ${CURDIR}/BBBike/cgi/bbbike.cgi.config
 	@echo "Maybe create bbbike2.cgi and bbbike2.cgi.config"
 	[ -e ${CURDIR}/htdocs/BBBike ] || \
 	    ln -s ../BBBike ${CURDIR}/htdocs/BBBike

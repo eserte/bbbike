@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.4 2004/01/23 00:11:24 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.4 2004/01/23 00:11:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
 ######################################################################
@@ -17,8 +17,14 @@
 # Teaser for bbbike.cgi
 #
 sub teaser {
-    my @teasers_optional = ('routen', 'link');
-    my @teasers_mandatory = (teaser_perltk_newrelease(), teaser_mapserver());
+    my @teasers_optional  = (
+			     'routen',
+			     'link',
+			    );
+    my @teasers_mandatory = (
+			     #teaser_perltk_newrelease(),
+			     teaser_mapserver(),
+			    );
     my $sub = "teaser_" . $teasers_optional[int(rand(@teasers_optional))];
     my $t = eval $sub . '()';
     join(blind_image(1,8),

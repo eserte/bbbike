@@ -31,20 +31,21 @@ use vars qw(@extra_libs);
 BEGIN { delete $INC{"FindBin.pm"} }
 use FindBin;
 BEGIN {
-    if ($ENV{SERVER_NAME} =~ /(radzeit\.de|radzeit.herceg.de)$/) {
-	# Make it easy to switch between versions:
-	if ($FindBin::Script =~ /bbbike2/) {
-	    @extra_libs =
-		("$FindBin::RealBin/../BBBike2",
-		 "$FindBin::RealBin/../BBBike2/lib",
-		);
-	} else {
-	    @extra_libs =
-		("$FindBin::RealBin/../BBBike",
-		 "$FindBin::RealBin/../BBBike/lib",
-		);
-	}
-    } else {
+#     if ($ENV{SERVER_NAME} =~ /(radzeit\.de|radzeit.herceg.de)$/) {
+# 	# Make it easy to switch between versions:
+# 	if ($FindBin::Script =~ /bbbike2/) {
+# 	    @extra_libs =
+# 		("$FindBin::RealBin/../BBBike2",
+# 		 "$FindBin::RealBin/../BBBike2/lib",
+# 		);
+# 	} else {
+# 	    @extra_libs =
+# 		("$FindBin::RealBin/../BBBike",
+# 		 "$FindBin::RealBin/../BBBike/lib",
+# 		);
+# 	}
+#     } else
+    {
 	# Achtung: evtl. ist auch ~/lib/ für GD.pm notwendig (z.B. CS)
 	@extra_libs =
 	    (#"/home/e/eserte/src/bbbike",
