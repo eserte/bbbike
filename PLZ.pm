@@ -426,6 +426,7 @@ sub look_loop {
     my $max_agrep;
     if (defined $args{Agrep} && $args{Agrep} eq 'default') {
 	$max_agrep = 3;
+	# Allow more errors for longer strings:
 	if    (length($str) > 15) { $max_agrep = 4 }
 	elsif (length($str) > 25) { $max_agrep = 5 }
 	delete $args{Agrep};
@@ -453,7 +454,6 @@ sub look_loop {
     my $expand_strasse = sub {
 	my $str = shift;
 	my $replaced = 0;
-if(0){#XXX activate this code if all U/S-Bhf. in Berlin.coords.data have coords
 	if ($str =~ /^([US])\s+/i) {
 	    $str =~ s/^([US])\s+/uc($1)."-Bhf "/ie;
 	    $replaced++;
@@ -461,7 +461,6 @@ if(0){#XXX activate this code if all U/S-Bhf. in Berlin.coords.data have coords
 	    $str =~ s/^([US])-Bahnhof\s+/uc($1)."-Bhf "/ie;
 	    $replaced++;
 	}
-}
 	if ($str =~ /^\s*str\./i) {
 	    $str =~ s/^\s*(s)tr\./$1traﬂe/i;
 	    $str;
