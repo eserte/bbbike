@@ -1,0 +1,6 @@
+# Configuration for mapserver/brb
+# Add as
+#  Include [% MAPSERVER_DIR %]/httpd.conf
+# to httpd.conf
+ScriptAlias	[% MAPSERVER_PROG_RELURL %] [% MAPSERVER_PROG_FSPATH %]
+Alias		[% MAPSERVER_RELURL %] [% MAPSERVER_DIR %]
