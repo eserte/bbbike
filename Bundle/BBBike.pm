@@ -14,7 +14,7 @@ Bundle::BBBike - A bundle to install all dependencies of BBBike
 
 =head1 SYNOPSIS
 
- perl -MCPAN -e 'install Bundle::BBBike'
+ perl -I`pwd` -MCPAN -e 'install Bundle::BBBike'
 
 =head1 CONTENTS
 
@@ -84,7 +84,7 @@ Astro::Sunrise	- Anzeige des Sonnenuntergangs/-aufgangs im Info-Fenster
 
 File::ReadBackwards	- LogTracker plugin
 
-Date::Calc	- LogTracker plugin
+Date::Pcalc	- LogTracker plugin
 
 XBase	- Erzeugen der Mapserver- oder anderer ESRI-Dateien
 

@@ -14,7 +14,7 @@ Bundle::BBBike - A bundle to install all dependencies of BBBike
 
 =head1 SYNOPSIS
 
- perl -MCPAN -e 'install Bundle::BBBike'
+ perl -I`pwd` -MCPAN -e 'install Bundle::BBBike'
 
 =head1 CONTENTS
 
