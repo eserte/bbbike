@@ -23,7 +23,7 @@ Neue Bahnhof - NE	3 14811,11067 14912,11252 14988,11130
 Markt - Neue Bahnhof	3 14988,11130 14912,11252 14811,11067
 Boxhagener - Neue Bahnhof	3 14793,11323 14912,11252 15008,11436
 Goeben - Kulmer	3 7721,9744 7829,9723 7862,9893
-Hermannstr. - Flughafen	3 11882,8527 11884,8492 11892,8372
+Hermannstr. - Flughafen	3 11884,8492 11892,8372 12068,8409
 Karlshorster - Nöldner	3 15267,10865 15266,10791 15396,10767
 Nöldner - Karlshorster (?)	3 15396,10767 15266,10791 15255,10751
 Weydemeyerstr. - Mollstr.	3 11910,13055 11905,13069 11839,13083
@@ -31,17 +31,17 @@ Neue Schönhauser	1 10528,13243 10441,13195 10305,13211
 #: XXX das stimmt nicht --- hier ist nur eine Barriere!
 Hagelberger Str.	1 8648,9526 8773,9524
 Warschauer - Marchlewskistr. 	3 13476,11174 13546,11352 13496,11384
-Ebertstr. Richtung Potsdamer Platz	1:inwork 8571,11846 8567,11799 8553,11638 8546,11537 8542,11502
 #XXX del: Gontard - Rathaus	3 9454,7139 9527,7214 9443,7280 9391,7317
 #XXX del: Gontard - Rathaus	3 9391,7317 9443,7280 9527,7214 9454,7139
-Holtei von S - Boxhagener	3 14575,11407 14639,11512 14576,11582 14548,11616 14513,11657
-Boxhagener von W - Holtei	3 14513,11657 14548,11616 14576,11582 14639,11512 14705,11629
+Holtei von S - Boxhagener	3 14575,11407 14639,11512 14576,11582
+Boxhagener von W - Holtei	3 14576,11582 14639,11512 14705,11629
 Holtei von N - Boxhagener	3 14705,11629 14639,11512 14773,11342
 Boxhagener von E - Holtei	3 14773,11342 14639,11512 14575,11407
 Bachstr. - 17. Juni (?)	3 5798,12021 5787,11966 5771,11887 5901,11902
 Fasanen - Hertzallee (nur für BVG frei)	3 5456,11742 5356,11500 5666,11362
 Fasanenstr.	1 5198,10234 5207,10399
 Naumannstr. - Kolonnenstr.	3 7716,8356 7713,8600 7709,8770 7570,8863
+Naumannstr. N - H	3 7706,8875 7709,8770 7713,8600
 Naumannstr. - Sachsendamm (?)	3 7717,7759 7718,7641 7717,7564 7859,7486
 zum Mariannenplatz	2 11956,11166 11921,11185
 # ... kompliziert ... mit vorgeschriebenen Fahrtrichtungen hätte man
@@ -122,3 +122,7 @@ Karl-Liebknecht-Str. - Hirtenstr.	3 10920,13139 11015,13264 10923,13317
 Parochialstr.	1 10954,12394 11040,12415
 Waisenstr.	1 11040,12415 11094,12243
 Grimmstr.	1 11163,9903 11200,9889
+#: XXX letztes Stück im Osten in beide Richtungen befahrbar
+Jacobystr.	1 11191,12700 11260,12809 11594,12662
+Sonnenallee - Tellstr.	3 12242,8972 12320,8927 12402,9080
+Tellstr. - Sonnenallee	3 12402,9080 12320,8927 12438,8859

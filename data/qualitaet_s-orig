@@ -144,7 +144,7 @@ Wiesenweg (Lichtenberg): Kopfsteinpflaster	Q2 15452,11330 15227,11429 15043,1151
 Revaler Str.: Kopfsteinpflaster	Q2 14139,11269 14211,11229 14286,11186 14357,11148 14442,11101 14509,11060
 Revaler Str.: Kopfsteinpflaster, Straßenbahn	Q2 13594,11489 13473,11456
 Prenzlauer Berg: Kopfsteinpflaster (teilweise schlecht)	Q2 11723,13630 11538,13683 11257,13647
-Bernauer Str.: Kopfsteinpflaster	Q2 9805,14717 10094,14847 10176,14896 10333,14983
+Bernauer Str.: Kopfsteinpflaster	Q2 9805,14717 10011,14810 10094,14847 10176,14896 10333,14983
 Alte Jakobstr.: Kopfsteinpflaster	Q2 10244,11160 10436,11344
 Ackerstr.: Kopfsteinpflaster	Q2 9400,14400 9375,14419 9048,14681 8953,14758 8741,14928
 Ackerstr.: Kopfsteinpflaster	Q2 9737,14126 9628,14215
@@ -1059,7 +1059,7 @@ Friedrich-Wilhelm-Platz: guter Asphalt	Q0 5341,7203 5310,7325 5315,7376 5357,738
 #: by ^^^
 #: by: Henry Könner vvv
 Honnefer Str.: Asphalt	Q0 19316,8933 19209,9125
-Voltastr.: Kopfsteinpflaster	Q2 9041,14896 9571,15178
+Voltastr.: Kopfsteinpflaster	Q2 9041,14896 9361,15066 9571,15178
 #: by: ^^^
 #: by: André Käding vvv
 Buschiner Str.: Asphalt	Q0 20160,13287 20743,13197
@@ -1246,7 +1246,7 @@ Ringenwalder Str.: Asphalt	Q0 22478,16195 22406,16309 22215,16343 22090,16365 21
 #: by: "sportwart":
 Schönholzer Str.: Asphalt	Q0 9838,14640 10043,14735
 #: by: martin: vvv
-Rheinsberger Str.: Asphalt	Q0 10402,14835 10242,14765 10155,14719 9864,14578 9685,14495
+Rheinsberger Str.: Asphalt	Q0 10402,14835 10242,14765 10155,14719 10070,14678 9864,14578 9685,14495
 Wolliner Str.: Asphalt	Q0 10405,14425 10320,14608 10242,14765 10176,14896 10022,15203
 #: by: ^^^
 #: by: Floris Akkerman:
@@ -1270,7 +1270,7 @@ Nordendstr.: Asphalt	Q0 10026,20576 9174,20316 8409,19956 8415,19910
 #: by: Sascha M. Krause:
 Oldenburger Str.: schlechtes Kopfsteinpflaster, "Moabiter Kissen"	Q3 5723,13346 5748,13748 5778,14078
 #: by: Sebastian Kröger
-Anton-Saefkow-Str.: Asphalt	Q0 12536,14827 12885,14616 13202,14388
+Anton-Saefkow-Str.: Asphalt	Q0 12536,14827 12723,14714 12885,14616 13202,14388
 #: by: Katha vvv
 Julierstr.: Beton	Q1 6376,17687 6268,17709
 Septimerstr.: Beton	Q0 5854,17530 5931,17609 6243,17603 6274,17403
@@ -1284,3 +1284,7 @@ Am Iderfenngraben: schlechtes Kopfsteinpflaster	Q3 8623,19353 8653,19431 9015,19
 Brehmstr.: Beton	Q1 19410,9844 19432,10061 19692,10044
 #: by: Andre Gebel
 Zinzendorfstr.: schlechtes Kopfsteinpflaster	Q3 5442,12852 5472,13056
+#: by: Chris Hellwig
+Reichnerweg: Beton	Q1 11074,783 10775,765 10524,655
+#: by: Ina Bartrow
+Eugen-Schönhaar-Str.: Beton	Q0 12723,14714 12573,14581 12429,14462

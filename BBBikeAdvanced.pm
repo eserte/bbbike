@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.111 2005/01/01 19:04:53 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.111 2005/01/01 19:04:53 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -473,7 +473,7 @@ sub plot_additional_layer {
     {
 	# "sperre" linetype should be "p" for drawing, but still "sperre"
 	# for the last loaded menu
-	my $linetype = $linetype;
+	my $linetype_for_menu = $linetype;
 	if ($linetype eq 'sperre') {
 	    $linetype = 'p';
 	}
@@ -484,7 +484,7 @@ sub plot_additional_layer {
 	    $file = custom_draw_dialog($linetype, $abk, undef, %args);
 	}
 	@args = %{ $args{-retargs} };
-	push @args, -linetype => $linetype;
+	push @args, -linetype => $linetype_for_menu;
     }
 
     if (defined $file) {

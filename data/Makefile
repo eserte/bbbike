@@ -432,14 +432,15 @@ fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 	cat fragezeichen-orig |\
 	        ${GREPSTRASSEN} -v -sectionrx "projektierte Radstreifen" |\
 	        ${GREPSTRASSEN} -v -sectionrx "Straßen in Planung" |\
-	    ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
+	    ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@~
 	grep '?' ${DATADIR}/ampeln-orig | \
-	    ${CONVERT2HAFAS} -basefile ${DATADIR}/ampeln-orig -- - >> $@
+	    ${CONVERT2HAFAS} -basefile ${DATADIR}/ampeln-orig -- - >> $@~
 	${MISCSRCDIR}/temporary_streets.pl \
 	    ${DATADIR}/handicap_s-orig ${DATADIR}/gesperrt-orig | \
 	    perl -nle '/(.*\t)(\S+)(.*)/ && !/\b(\d{4}-\d{2}-\d{2}|[0123]?\d\.[01]?\d\.\d{4})\b/ && print "Noch immer? $$1?::inwork$$3"' | \
-	    ${CONVERT2HAFAS} -basefile ${DATADIR}/handicap_s-orig -- - >> $@
-	cat .fragezeichen-other-source ${SOURCE_TARGETS:S|^|.fragezeichen-|} >> $@
+	    ${CONVERT2HAFAS} -basefile ${DATADIR}/handicap_s-orig -- - >> $@~
+	cat .fragezeichen-other-source ${SOURCE_TARGETS:S|^|.fragezeichen-|} >> $@~
+	cmp -s $@~ $@ && rm $@~ || mv $@~ $@
 	-@$(READONLY) $@
 
 .for i in ${SOURCE_TARGETS}
