@@ -297,6 +297,14 @@ sub tk_plot_additional_layer {
     plot_additional_layer($linetype);
 }
 
+#XXX
+#  sub plot_additional_sperre_layer {
+#      my $abk = next_free_layer();
+#      $abk = "sperre$abk";
+#      fix_stack_order($abk);
+#      plot_additional_layer
+#  }
+
 sub plot_additional_layer_s {
     my $layer_def = shift;
     my($layer_type, $layer_filename) = split /:/, $layer_def, 2;

@@ -3778,6 +3778,10 @@ sub do_iconframe {
 		       -command => sub {
 			   require BBBikeAdvanced;
 			   tk_plot_additional_layer('str') });
+	$cusm->command(-label => M"Sperrungen-Layer zeichnen", # XXX label?
+		       -command => sub {
+			   require BBBikeAdvanced;
+			   plot_additional_sperre_layer() });
 	$cusm->command(-label => M"Punkte-Layer zeichnen",
 		       -command => sub {
 			   require BBBikeAdvanced;
@@ -7458,8 +7462,8 @@ sub plot {
     if ($type eq 'str') {
 	plotstr($abk, %args);
     } elsif ($type eq 'p') {
-	if ($abk eq 'sperre') {
-	    plot_sperre($args{-filename});
+	if ($abk =~ /^sperre/) {
+	    plot_sperre($args{-filename}, -abk => $abk);
 	} else {
 	    plotp($abk, %args);
 	}
@@ -7909,9 +7913,11 @@ sub outline_text {
 ### AutoLoad Sub
 sub plot_sperre {
     my $file = shift;
+    my %args = @_;
+    my $abk = $args{-abk} || 'sperre';
     Hooks::get_hooks("before_plot")->execute;
-    $c->delete('sperre');
-    if (!$p_draw{'sperre'}) {
+    $c->delete($abk);
+    if (!$p_draw{$abk}) {
 	Hooks::get_hooks("after_plot")->execute; # XXX should not be here
 	return;
     }

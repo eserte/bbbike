@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.31 2003/06/17 21:31:32 eserte Exp $
+# $Id: GD.pm,v 1.32 2003/06/25 05:36:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -39,7 +39,7 @@ sub AUTOLOAD {
     }
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.31 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -353,7 +353,7 @@ sub draw_map {
 	my($kl_ampel, $w_lsa, $h_lsa);
 	my($kl_andreas, $w_and, $h_and);
 	my $imgfile;
-	$imgfile = "$images_dir/ampel_klein$suf." . $self->imagetype;
+	$imgfile = "$images_dir/ampel_klein$suf." . $self->suffix;
 	if (open(GIF, $imgfile)) {
 	    binmode GIF;
 	    $kl_ampel = newFromImage GD::Image \*GIF;
@@ -365,7 +365,7 @@ sub draw_map {
 	    close GIF;
 	}
 
-	$imgfile = "$images_dir/andreaskr_klein$suf." . $self->imagetype;
+	$imgfile = "$images_dir/andreaskr_klein$suf." . $self->suffix;
 	if (open(GIF, $imgfile)) {
 	    binmode GIF;
 	    $kl_andreas = newFromImage GD::Image \*GIF;
@@ -769,7 +769,8 @@ sub draw_route {
 	    $self->imagetype ne 'wbmp') {
 	    my $images_dir = $self->get_images_dir;
 	    my $imgfile;
-	    $imgfile = "$images_dir/flag2_bl." . $self->imagetype;
+	    $imgfile = "$images_dir/flag2_bl." . $self->suffix;
+warn $imgfile;
 	    if (open(GIF, $imgfile)) {
 		binmode GIF;
 		my $start_flag = newFromImage GD::Image \*GIF;
@@ -785,8 +786,9 @@ sub draw_route {
 		    warn "$imgfile exists, but can't be read by GD";
 		}
 	    }
+else { warn $! }
 
-	    $imgfile = "$images_dir/flag_ziel." . $self->imagetype;
+	    $imgfile = "$images_dir/flag_ziel." . $self->suffix;
 	    if (open(GIF, $imgfile)) {
 		binmode GIF;
 		my $end_flag = newFromImage GD::Image \*GIF;

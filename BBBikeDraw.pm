@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.30 2003/06/17 21:30:32 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.31 2003/06/25 05:36:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.31 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, %args) = @_;
@@ -667,7 +667,8 @@ sub _get_orte {
 }
 
 sub suffix {
-    shift->{ImageType};
+    my $self = shift;
+    $self->{ImageType} eq 'jpeg' ? 'jpg' : $self->{ImageType};
 }
 
 sub imagetype {

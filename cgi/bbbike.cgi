@@ -66,7 +66,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $debug $tmp_dir $mapdir_fs $mapdir_url $local_route_dir
 	    $bbbike_root $bbbike_images $bbbike_url $bbbike_html
 	    $max_proc $use_miniserver $auto_switch_slow  $use_fcgi
-	    $modperl_lowmem $use_imagemap $create_imagemap $q %persistent
+	    $modperl_lowmem $use_imagemap $create_imagemap $q $cgic %persistent
 	    $str $lstr $lstr2 $multistr $orte $orte2 $multiorte
 	    $ampeln $qualitaet_s_net $handicap_s_net
 	    $strcat_net $radwege_strcat_net $routen_net $comments_net
@@ -664,6 +664,7 @@ my $delim = '!'; # wegen Mac nicht ¦ verwenden!
              '-pragma' => 'no-cache',
 	     '-cache-control' => 'no-cache',
             );
+my $header_written;
 
 if (defined %Apache::) {
     # workaround for "use lib" problem with Apache::Registry
@@ -768,6 +769,7 @@ if ($use_miniserver) {
 
 # Request-Loop
 while (1) {
+    $header_written = 0;
     if ($use_miniserver) {
 	$q = new CGI::Request::BBBike or $cgi->exit;
 	$q->delete("~SequenceNumber ");    # stört nur...
@@ -941,10 +943,9 @@ while (1) {
 	# ungefähr fünf Karten mit "Profiling timer expired" sterben.
 	# Mit thttpd gibt es zwar auch mysteriöse kills, aber es geht im
 	# Großen und Ganzen.
-	print $q->header(-type => 'text/plain',
-			 @no_cache,
-			 etag(),
-			);
+	http_header(-type => 'text/plain',
+		    @no_cache,
+		   );
 	$| = 1;
 	$check_map_time = 1;
 	for my $x (0 .. 9) {
@@ -1364,7 +1365,7 @@ sub choose_form () {
 
     my %header_args = @weak_cache;
     $header_args{-expires} = ($use_miniserver ? 'now' : '+1d');
-    print $q->header(%header_args, etag());
+    http_header(%header_args);
     my @extra_headers;
     if ($bi->{'text_browser'} && !$bi->{'mobile_device'}) {
 	push @extra_headers, -up => $BBBike::HOMEPAGE;
@@ -1720,7 +1721,7 @@ sub choose_ch_form {
 	    last if POSIX::setlocale( POSIX::LC_ALL(), $locale);
 	}
     };
-    print $q->header(@weak_cache, etag());
+    http_header(@weak_cache);
     header();
     print "<b>" . ucfirst($search_type) . "</b>";
     print " (Anfangsbuchstabe <b>$search_char</b>)<br>\n";
@@ -1904,7 +1905,7 @@ sub get_kreuzung {
 	# exit(0);
     }
 
-    print $q->header(@weak_cache, etag());
+    http_header(@weak_cache);
     header();
 
     if (!$start_c || !$ziel_c || (@via_coords && !$via_c)) {
@@ -2273,7 +2274,7 @@ sub search_coord {
 	if (exists $inaccess_str->{$startcoord} ||
 	    (defined $viacoord && exists $inaccess_str->{$viacoord}) ||
 	    exists $inaccess_str->{$zielcoord}) {
-	    print $q->header;
+	    http_header();
 	    print "Die angegebenen Punkte <$startcoord>, <$viacoord>, <$zielcoord> können nicht erreicht werden.<br>\n";
 	    print "<a href=\"$bbbike_url\">Zurück zu BBBike</a><br>";
 	    exit(0);
@@ -2511,7 +2512,7 @@ sub search_coord {
 
     if (defined $output_as && $output_as eq 'palmdoc') {
 	require BBBikePalm;
-	print $q->header("application/x-palm-database");
+	http_header(-type => "application/x-palm-database");
 	print BBBikePalm::route2palm(-net => $net, -route => $r[0],
 				     -startname => $startname,
 				     -zielname => $zielname);
@@ -2754,10 +2755,9 @@ sub search_coord {
 
     if ($output_as eq 'perldump') {
 	require Data::Dumper;
-	print $q->header(-type => "text/plain",
-			 @no_cache,
-			 etag(),
-			);
+	http_header(-type => "text/plain",
+		    @no_cache,
+		   );
 	print Data::Dumper->new
 	    ([{
 	       Route => \@out_route,
@@ -2782,9 +2782,9 @@ sub search_coord {
 	 -expires => '+1y',
 	);
 
-    print $q->header(@weak_cache,
-		     -cookie => $cookie,
-		     etag());
+    http_header(@weak_cache,
+		-cookie => $cookie,
+	       );
     my %header_args;
 ##XXX die Idee hierbei war: table.background ist bei Netscape der Hintergrund
 ## ohne cellspacing, während es beim IE mit cellspacing ist. Also für
@@ -3505,7 +3505,6 @@ sub draw_route {
     }
 
     my $draw;
-    my $header_written;
 
     if (defined $q->param('coordssession') &&
 	(my $sess = tie_session($q->param('coordssession')))) {
@@ -3576,16 +3575,15 @@ sub draw_route {
 
     my @header_args = @cache;
     if ($cookie) { push @header_args, "-cookie", $cookie }
-    push @header_args, etag();
+    push @header_args;
 
     # write content header for pdf as early as possible, because
     # output is already written before calling flush
     if (defined $q->param('imagetype') &&
 	$q->param('imagetype') =~ /^pdf/) {
-	print $q->header(-type => "application/pdf",
-			 @header_args,
-			);
-	++$header_written;
+	http_header(-type => "application/pdf",
+		    @header_args,
+		   );
 	if ($q->param('imagetype') =~ /^pdf-(.*)/) {
 	    $q->param('geometry', $1);
 	    $q->param('imagetype', 'pdf');
@@ -3606,19 +3604,17 @@ sub draw_route {
     };
     if ($@) {
 	my $err = $@;
-	print
-	    $q->header(-type => 'text/html',
-		       @no_cache,
-		       etag(),
-		      ),
-	    "<body>Fehler in BBBikeDraw: $err</body>";
+	http_header(-type => 'text/html',
+		    @no_cache,
+		   );
+	print "<body>Fehler in BBBikeDraw: $err</body>";
 	exit 0;
     }
 
     unless ($header_written) {
-	print $q->header(-type => $draw->mimetype,
-			 @header_args,
-			);
+	http_header(-type => $draw->mimetype,
+		    @header_args,
+		   );
     }
 
     eval { $draw->pre_draw }; return if $@;
@@ -3650,7 +3646,7 @@ sub draw_map {
 	die "No x/y set";
     }
 
-    print $q->header(@weak_cache, etag()) unless $args{-quiet};
+    http_header(@weak_cache) unless $args{-quiet};
 
     if (!@dim) { die "No dim set" }
 
@@ -4065,6 +4061,19 @@ sub etag {
     (-ETag => $etag);
 }
 
+# Write a HTTP header (always with etag) and maybe enabled compression
+sub http_header {
+    my(@args) = @_;
+    if (!$ENV{MOD_PERL} && eval { require CGI::Compress::Gzip; 1 }) {
+	$CGI::Compress::Gzip::global_give_reason = $debug;
+	$cgic = CGI::Compress::Gzip->new;
+	print $cgic->header(@args, etag());
+    } else {
+	print $q->header(@args, etag());
+    }
+    $header_written = 1;
+}
+
 sub header {
     my(%args) = @_;
     delete $args{-from}; # XXX
@@ -4221,7 +4230,7 @@ sub window_open {
 }
 
 sub call_bikepower {
-    print $q->header(@no_cache, etag());
+    http_header(@no_cache);
     eval q{
 	require BikePower::HTML;
 	print BikePower::HTML::code();
@@ -4330,7 +4339,7 @@ sub choose_all_form {
 	}
     };
 
-    print $q->header(@weak_cache, etag());
+    http_header(@weak_cache);
     header(#too slow XXX -onload => "list_all_streets_onload()",
 	   -script => {-src => $bbbike_html . "/bbbike_start.js",
 		      },
@@ -4380,7 +4389,7 @@ sub nahbereich {
     my($startc, $zielc, $startname, $zielname) =
       ($q->param('startc'), $q->param('zielc'),
        $q->param('startname'),$q->param('zielname'));
-    print $q->header(@weak_cache, etag());
+    http_header(@weak_cache);
     header();
     print "Kreuzung im Nahbereich angeben:<p>\n";
     new_kreuzungen();
@@ -4462,7 +4471,7 @@ sub draw_route_from_fh {
 	$q->delete('routefile_submit');
 	draw_route();
     } else {
-	print $q->header(@no_cache, etag());
+	http_header(@no_cache);
 	header();
 	print "Dateiformat nicht erkannt: $err";
 	upload_button_html();
@@ -4472,7 +4481,7 @@ sub draw_route_from_fh {
 }
 
 sub upload_button {
-    print $q->header(@no_cache, etag()); # wegen dummy
+    http_header(@no_cache); # wegen dummy
     header();
     upload_button_html();
     footer();
@@ -4568,7 +4577,7 @@ sub limit_processes {
 	    exit;
 	}
 
-	print $q->header(@no_cache, etag());
+	http_header(@no_cache);
 	header();
 	print <<EOF;
 Der Server ist überlastet. Bitte ein paar Minuten später versuchen
@@ -4613,7 +4622,7 @@ sub load_teaser {
 # Information
 #
 sub show_info {
-    print $q->header(@weak_cache, etag());
+    http_header(@weak_cache);
     header();
     my $perl_url = "http://www.perl.com/";
     my $cpan = "http://www.perl.com/CPAN";

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.2 2003/06/23 22:04:48 eserte Exp $
+# $Id: wapcgi.t,v 1.3 2003/06/25 07:06:47 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -26,6 +26,10 @@ my $ua = new LWP::UserAgent;
 $ua->agent("BBBike-Test/1.0");
 
 my @wap_url;
+
+if (defined $ENV{BBBIKE_TEST_WAPURL}) {
+    push @wap_url, $ENV{BBBIKE_TEST_WAPURL};
+}
 
 if (!GetOptions("wapurl=s" => sub { @wap_url = $_[1] })) {
     die "usage: $0 [-wapurl url]";

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead.t,v 1.2 2003/06/23 22:04:48 eserte Exp $
+# $Id: cgihead.t,v 1.3 2003/06/25 07:06:47 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -21,7 +21,7 @@ BEGIN {
 }
 
 use Getopt::Long;
-my $cgi_dir = "http://localhost/~eserte/bbbike/cgi";
+my $cgi_dir = $ENV{BBBIKE_TEST_CGIDIR} || "http://localhost/~eserte/bbbike/cgi";
 
 if (!GetOptions("cgidir=s" => \$cgi_dir,
 	       )) {
