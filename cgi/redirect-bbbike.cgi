@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: redirect-bbbike.cgi,v 1.3 2003/06/21 14:34:36 eserte Exp $
+# $Id: redirect-bbbike.cgi,v 1.4 2003/06/23 22:04:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
