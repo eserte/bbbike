@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mkport.pl,v 1.24 2004/03/17 23:24:59 eserte Exp $
+# $Id: mkport.pl,v 1.25 2005/04/05 22:51:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2004 Slaven Rezic. All rights reserved.

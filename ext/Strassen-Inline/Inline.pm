@@ -1,7 +1,7 @@
 # -*- c -*-
 
 #
-# $Id: Inline.pm,v 2.33 2005/03/06 17:04:29 eserte Exp eserte $
+# $Id: Inline.pm,v 2.34 2005/04/05 22:47:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ package Strassen::Inline;
 require 5.005; # new semantics of hv_iterinit
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 2.33 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 2.34 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Cwd;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Globe.pm,v 1.9 2001/11/26 09:39:48 eserte Exp eserte $
+# $Id: Globe.pm,v 1.10 2005/04/05 22:36:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Telefonbuch.pm,v 1.32 2003/01/06 02:46:19 eserte Exp $
+# $Id: Telefonbuch.pm,v 1.33 2005/04/05 22:34:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,1999 Slaven Rezic. All rights reserved.

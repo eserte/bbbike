@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeStats.pm,v 1.10 2004/07/16 23:19:01 eserte Exp eserte $
+# $Id: BBBikeStats.pm,v 1.11 2005/04/05 22:29:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ package BBBikeStats;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Util;
 use BBBikeUtil;

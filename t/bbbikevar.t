@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikevar.t,v 1.1 2004/11/29 22:08:58 eserte Exp eserte $
+# $Id: bbbikevar.t,v 1.1 2004/11/29 22:08:58 eserte Exp $
 # Author: Slaven Rezic
 #
 

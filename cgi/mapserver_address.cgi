@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.17 2005/01/20 00:31:48 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.18 2005/04/05 22:46:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Potsdammap2002.pm,v 1.2 2003/01/21 01:02:59 eserte Exp eserte $
+# $Id: Potsdammap2002.pm,v 1.3 2005/04/05 22:39:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.

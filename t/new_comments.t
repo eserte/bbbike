@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: new_comments.t,v 1.2 2005/03/19 11:14:05 eserte Exp $
+# $Id: new_comments.t,v 1.3 2005/04/05 22:53:45 eserte Exp $
 # Author: Slaven Rezic
 #
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.7 2004/08/19 22:06:07 eserte Exp eserte $
+# $Id: bbbike-teaser.pl,v 1.8 2005/04/05 22:41:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.

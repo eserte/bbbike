@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeImportWizard.pm,v 1.1 2004/03/23 23:52:52 eserte Exp eserte $
+# $Id: BBBikeImportWizard.pm,v 1.2 2005/04/05 22:28:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ BBBikeImportWizard - a colletion of "wizards" for BBBike
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 use File::Basename qw(basename);
 use List::Util qw(min);

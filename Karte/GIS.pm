@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GIS.pm,v 1.1 1998/06/24 00:28:08 eserte Exp eserte $
+# $Id: GIS.pm,v 1.2 2005/04/05 22:38:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.

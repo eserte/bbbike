@@ -189,9 +189,9 @@ wird z.Zt. nicht gedreht (evtl. auf @coords verzichten und nur
 VernE<uuml>nftige Options-Eingabe in der GUI. Zwischen
 Startup-Optionen (Zeichnen der StraE<szlig>en/Punkte) und aktuellen
 Optionen unterscheiden. Damit zusammen hängt eine Neubearbeitung von
-Tk::Getopt (Tk::NoNotebook, Reduzierung der Buttons, Klick auf
+Tk::Getopt (Tk::NoNotebook, Klick auf
 Checkboxen etc. resultieren *NICHT* in einer sofortigen Aenderungen
---- erst E<quot>ApplyE<quot>, besseren Msgcat-Support (eigene Module
+--- erst nach E<quot>OkE<quot>, besseren Msgcat-Support (eigene Module
 dafür?)).
 
 =item * (M1)

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Imager.pm,v 1.15 2005/03/29 09:56:00 eserte Exp $
+# $Id: Imager.pm,v 1.16 2005/04/06 21:02:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -45,7 +45,7 @@ use vars @colors;
 #      }
 #  }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 

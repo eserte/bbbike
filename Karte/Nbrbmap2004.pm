@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Nbrbmap2004.pm,v 1.1 2004/06/10 07:17:15 eserte Exp eserte $
+# $Id: Nbrbmap2004.pm,v 1.2 2005/04/05 22:38:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.

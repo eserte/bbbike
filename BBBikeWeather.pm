@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeWeather.pm,v 1.4 2005/03/17 00:05:59 eserte Exp eserte $
+# $Id: BBBikeWeather.pm,v 1.5 2005/04/05 22:30:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeWeather;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.4 2005/02/13 10:27:12 eserte Exp $
+# $Id: strassennetz.t,v 1.5 2005/04/05 22:55:20 eserte Exp $
 # Author: Slaven Rezic
 #
 

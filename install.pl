@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: install.pl,v 4.10 2003/06/02 23:23:40 eserte Exp $
+# $Id: install.pl,v 4.11 2005/04/05 22:35:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2001 Slaven Rezic. All rights reserved.

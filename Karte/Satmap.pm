@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Satmap.pm,v 1.7 2001/11/07 23:16:24 eserte Exp eserte $
+# $Id: Satmap.pm,v 1.8 2005/04/05 22:39:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.

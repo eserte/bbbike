@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Salesman.pm,v 1.12 2003/07/03 00:10:10 eserte Exp eserte $
+# $Id: Salesman.pm,v 1.13 2005/04/05 22:33:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2003 Slaven Rezic. All rights reserved.

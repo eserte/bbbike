@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Heavy.pm,v 1.3 2005/01/15 22:39:30 eserte Exp eserte $
+# $Id: Heavy.pm,v 1.4 2005/04/05 22:39:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ package Route;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 # XXX Msg.pm
 

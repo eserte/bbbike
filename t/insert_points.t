@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points.t,v 1.8 2004/11/27 12:08:00 eserte Exp $
+# $Id: insert_points.t,v 1.9 2005/04/05 22:53:34 eserte Exp $
 # Author: Slaven Rezic
 #
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.14 2005/03/01 23:26:03 eserte Exp $
+# $Id: Berlin_DE.pm,v 1.15 2005/04/05 22:37:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GfxConvert.pm,v 1.14 2004/05/16 20:04:37 eserte Exp $
+# $Id: GfxConvert.pm,v 1.15 2005/04/05 22:32:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.

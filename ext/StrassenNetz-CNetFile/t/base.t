@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: base.t,v 1.3 2002/11/22 18:27:48 eserte Exp $
+# $Id: base.t,v 1.4 2005/04/05 22:48:03 eserte Exp $
 # Author: Slaven Rezic
 #
 

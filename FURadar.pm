@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: FURadar.pm,v 1.6 2001/11/26 09:30:34 eserte Exp $
+# $Id: FURadar.pm,v 1.7 2005/04/05 22:31:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999, 2000 Slaven Rezic. All rights reserved.

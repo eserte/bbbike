@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpsman.t,v 1.3 2005/02/13 10:40:48 eserte Exp $
+# $Id: strassen-gpsman.t,v 1.4 2005/04/05 22:54:32 eserte Exp $
 # Author: Slaven Rezic
 #
 

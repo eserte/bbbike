@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MasterStrassen.pm,v 1.2 1999/04/13 13:39:04 eserte Exp eserte $
+# $Id: MasterStrassen.pm,v 1.3 2005/04/05 22:32:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Cityinfo.pm,v 1.3 2002/07/13 20:55:17 eserte Exp eserte $
+# $Id: Cityinfo.pm,v 1.4 2005/04/05 22:38:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
