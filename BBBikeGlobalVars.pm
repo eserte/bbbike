@@ -34,6 +34,7 @@ use vars
      $dataset %str_obj %str_cache_attr %p_obj $net $no_make_net
      %str_file %p_file $koord %ampeln %hoehe
      %sperre %sperre_tragen %sperre_narrowpassage $sperre_file $use_faehre
+     $do_activate_temp_blockings $show_active_temp_blockings
      $coord_system $coord_system_obj $scale_coeff $scale %scalecommand
      $default_img_fmt $register_window_adjust
      $ampel_count $kopfstein_count $ampel_count_button $kopfstein_count_button
