@@ -18,7 +18,7 @@ B96a: Radweg Richtung N, OK	Q0 9228,23643 9146,23843 8984,24078 8659,24959 8493,
 Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15586,27150 15231,26587 14859,26029 14183,25020
 Hobrechtsfelder Chaussee (ab Kurve): schlechtes Kopfsteinpflaster, 13 km/h	Q3 15586,27150 15709,27984 15757,28054
 Wisbyer Str.: m‰ﬂiges Kopfsteinpflaster	Q2 11033,16464 11397,16405 11688,16365 11727,16358
-Weserstr.: Kopfsteinpflaster, schmale Radwege	Q1 11888,9203 11993,9211 12074,9217 12148,9209 12180,9193 12322,9124 12480,9037 12590,8977 12740,8862 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
+Weserstr.: Kopfsteinpflaster, schmale Radwege	Q1 11888,9203 11993,9211 12074,9217 12148,9209 12180,9193 12322,9124 12402,9080 12480,9037 12590,8977 12740,8862 12881,8750 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Stuttgarter Str.: m‰ﬂiger Asphalt	Q1 13663,8011 13510,8138 13331,8283 13166,8423
 Brockenstr.: Kopfsteinpflaster	Q2 13575,8593 13687,8734
 Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz mˆglich	Q2 13687,8734 13778,8846
@@ -47,7 +47,7 @@ Graefestr.: m‰ﬂiges Kopfsteinpflaster	Q2 11507,10004 11411,9810
 Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11512,10105 11735,10022 11946,9913 12119,9823 12276,9745 12439,9660 12591,9584 12712,9523
 Maybachufer: Kopfsteinpflaster	Q2 11543,10015 11880,9874 12093,9783 12257,9703 12416,9625 12569,9547 12785,9443 12841,9368 12870,9366
 Innstr.: Kopfsteinpflaster (m‰ﬂig bis schlecht)	Q2 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
-Elsenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13402,8741 13504,8882 13657,9063
+Elsenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13504,8882 13657,9063
 Herrfurthstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11979,8014 11823,7980 11757,7965
 Herrfurthstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11647,7940 11565,7921 11472,7899
 Herrfurthplatz: m‰ﬂiges Kopfsteinpflaster	Q2 11647,7940 11670,7911 11717,7895 11753,7930 11757,7965 11732,8001 11695,8005 11659,7982 11647,7940
@@ -86,7 +86,7 @@ Helmstr.: gutes Kopfsteinpflaster	Q1 7535,9087 7490,9116 7441,9139 7381,9165
 Belziger Str.: m‰ﬂiges Kopfsteinpflaster	Q2 7381,9165 7315,9156 7115,9013
 Suadicanistr.: Asphalt	Q0 7859,7486 7854,7572
 Lilienthalstr.: teilweise keine befestigte Straﬂe	Q2 10675,8940 10598,8563
-Weichselstr.: m‰ﬂiges Kopfsteinpflaster, 15-17 km/h	Q2 12330,8636 12394,8729 12483,8834 12590,8977 12769,9186 12849,9319 12841,9368
+Weichselstr.: m‰ﬂiges Kopfsteinpflaster, 15-17 km/h	Q2 12330,8636 12394,8729 12483,8834 12590,8977 12681,9083 12769,9186 12849,9319 12841,9368
 Treptower Str.: m‰ﬂiges Kopfsteinpflaster, 17 km/h	Q2 13857,8601 13982,8764 14002,8787 14140,8977
 Pfarrstr.: m‰ﬂiges Kopfsteinpflaster	Q2 15267,10865 15339,11123 15438,11305
 Pfarrstr.: sehr guter Asphalt	Q0 15438,11305 15452,11330
@@ -173,7 +173,7 @@ Pfl¸gerstr.: m‰ﬂiges, teilweise auch schlechtes Kopfsteinpflaster (max. 16 km/h)
 Pfl¸gerstr.: Kopfsteinpflaster	Q2 12150,9545 12066,9558 11934,9538 11766,9512
 Liberdastr.: Kopfsteinpflaster	Q2 12150,9545 12207,9632 12257,9703
 Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
-Fuldastr.: Kopfsteinpflaster	Q2 12907,9073 12740,8862
+Fuldastr.: Kopfsteinpflaster	Q2 12907,9073 12829,8971 12740,8862
 Reuterstr.: Kopfsteinpflaster	Q2 12195,8436 12217,8320
 Torfstr.: Kopfsteinpflaster	Q2 6647,15094 6756,14962 6859,14837
 Ostpreuﬂendamm.: gutes Kopfsteinpflaster	Q1 3450,543 3579,627 3626,699 3647,739 3849,1116 3879,1211
@@ -935,6 +935,13 @@ Wildenbruchplatz: schlechtes bis m‰ﬂiges Kopfsteinpflaster	Q3 13135,8766 13218,8
 Finowstr. (Neukˆlln): Kopfsteinpflaster	Q2 13218,8693 13171,8621 13124,8562
 Kleine Innstr.: Asphalt	Q0 13171,8621 13262,8554
 Erlanger Str.: Kopfsteinpflaster	Q2 12309,8487 12183,8538
+Tellstr.: Kopfsteinpflaster	Q2 12320,8927 12402,9080
+Ossastr.: Kopfsteinpflaster	Q2 12615,9132 12681,9083
+Ossastr.: gutes Kopfsteinpflaster	Q1 12829,8971 12881,8926
+H¸ttenroder Weg: gutes Kopfsteinpflaster	Q1 13274,8945 13453,8812
+Beermannstr.: Kopfsteinpflaster	Q2 13977,9462 14157,9345
+Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14179,9515
+Elbestr.: Kopfsteinpflaster	Q2 12772,8612 12881,8750 13048,8956
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
 Sch¸tzallee: m‰ﬂiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfl‰che	Q2 2230,3823 1952,3864 1677,3885
 Riemeisterstr.: m‰ﬂiges Kopfsteinpflaster	Q2 373,4816 319,4906 168,5092 103,5123

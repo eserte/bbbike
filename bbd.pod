@@ -176,6 +176,10 @@ Here's a list of special categories:
 =head2 STREETS
 
 Used in files: F<strassen>, F<landstrassen>, F<landstrassen2>.
+Usually F<strassen> is used for city streets, F<landstrassen> for
+streets in the region around the city, and F<landstrassen2> for
+streets in the wider region. But it is also possible to work only with
+one file F<strassen>.
 
 =over
 
@@ -216,7 +220,9 @@ Bridges.
 
 =head2 BLOCKINGS
 
-Used in files: F<gesperrt>.
+Used in files: F<gesperrt>, F<gesperrt_car>. F<gesperrt> is usually
+used for blocked streets relevant for cyclists, while F<gesperrt_car>
+is for blocked streets for motorized vehicles.
 
 =over
 
@@ -384,7 +390,9 @@ U-Bahnen auﬂer Betrieb oder in Bau.
 
 Qualit‰t der Wege (Fahrbahnbeschaffenheit).
 
-Used in files: F<quality_s>, F<quality_l>.
+Used in files: F<quality_s>, F<quality_l>. F<quality_s> is usually
+used for city streets, while F<quality_l> is for streets in the region
+around the city.
 
 =over
 
@@ -410,8 +418,9 @@ Hˆchstgeschwindigkeit.
 =back
 
 Andere, nicht fahrbahnbezogene Handicaps, zum Beispiel Behinderungen
-durch Fuﬂg‰nger oder enge Kurven. Used in files: F<handicap_s>,
-F<handicap_l>.
+durch Fuﬂg‰nger oder enge Kurven. Used in files: F<handicap_s> (used
+for city streets), F<handicap_l> (used for streets in the region
+around the city).
 
 =over
 
@@ -439,7 +448,13 @@ Auf Schrittgeschwidigkeit (z.B. in FuE<szlig>gE<auml>ngerzonen).
 
 =head2 COMMENTS
 
-Used in files: F<comments>.
+Used in files: F<comments_cyclepath> (alternative way to attribute
+cyclepaths), F<comments_ferry> (e.g. time-tables or fares of ferries),
+F<comments_kfzverkehr> (categorized amount of motorized traffic -
+Absch‰tzung des Kfz-Verkehrs), F<comments_misc> (other comments),
+F<comments_mount> (mounts with grades - Steigungen), F<comments_path>
+(path instructions), F<comments_route> (numbered cycle routes -
+ausgeschilderte Fahrradrouten), F<comments_tram> (tramway on street).
 
 =over
 

@@ -632,7 +632,7 @@ userdel	q4 33089,-85779 33047,-85458
 EOF
      },
      { from  => 1096840800, # 2004-10-04 00:00
-       until => undef, # XXX
+       until => 1099520857, # XXX siehe unten
        text  => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 04.10.2004-unbekannt ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -1084,5 +1084,11 @@ EOF
 userdel	q4 38264,50086 38035,49183
 userdel	q4 38264,50086 38864,51295
 EOF
+     },
+     { from  => 1101942000, # 2004-12-03 06:00
+       until => 1102287540, # 2004-12-05 23:59
+       file  => 'rixdorfer_weihnachtsmarkt.bbd',
+       text  => 'Rixdorfer Weihnachtsmarkt, 03.12.2004-05.12.2004',
+       type  => 'gesperrt',
      },
     );
