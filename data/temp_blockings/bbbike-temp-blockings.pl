@@ -1045,7 +1045,7 @@ EOF
      },
      { from  => 1098655200, # 2004-10-25 00:00
        until => 1103842800, # 2004-12-24 00:00
-       text  => 'L 30; (Schönower Chaussee); zwischen Weinbergstraße und Edelweißstraße: Straßen- u. Radwegebau, Vollsperrung, 26.10.2004-23.12.2004 ',
+       text  => 'L 30; (Schönower Chaussee); OL Bernau,zw. Weinbergstraße und Edelweißstraße Straßen- u. Radwegebau Vollsperrung 26.10.2004-23.12.2004 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 21637,30946 20794,30899
@@ -1242,6 +1242,22 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 17894,2783 17631,3200 17603,3240 17388,3576
+EOF
+     },
+     { from  => 1102538190, # 2004-12-08 21:36
+       until => 1103929200, # 2004-12-25 00:00
+       text  => 'Düsseldorfer Str. in beiden Richtungen zwischen Brandenburgische Str. und Konstanzer Str. Baustelle, Straße vollständig gesperrt (bis 24.12.2004)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 4151,10026 3906,10035
+EOF
+     },
+     { from  => 1102540046, # 2004-12-08 22:07
+       until => 1104533999, # 2004-12-31 23:59
+       text  => 'Johannisthaler Chaussee (Neukölln) in Höhe der Ernst-Keller-Brücke Baustelle, Straße vollständig gesperrt wegen Brückenneubau (bis Ende 2004)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 15573,4122 15608,4175
 EOF
      },
     );

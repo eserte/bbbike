@@ -42,15 +42,7 @@ userdel	q4 8370,25539 8182,25608
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1102460400,
-         'text' => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 04.10.2004-07.12.2004 ',
-         'from' => 1096754400,
-         'data' => 'userdel	q4 49039,44131 48583,44366
-userdel	q4 49039,44131 49691,43812
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1112306400,
@@ -108,7 +100,7 @@ userdel	q4 49039,44131 49691,43812
        },
        {
          'until' => 1103842800,
-         'text' => 'L 30; (Schönower Chaussee); zwischen Weinbergstraße und Edelweißstraße: Straßen- u. Radwegebau, Vollsperrung, 26.10.2004-23.12.2004 ',
+         'text' => 'L 30; (Schönower Chaussee); OL Bernau,zw. Weinbergstraße und Edelweißstraße Straßen- u. Radwegebau Vollsperrung 26.10.2004-23.12.2004 ',
          'from' => 1098655200,
          'data' => 'userdel	q4 21637,30946 20794,30899
 userdel	q4 21637,30946 21955,30976
@@ -126,13 +118,7 @@ userdel	q4 21637,30946 21955,30976
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1102287540,
-         'text' => 'Rixdorfer Weihnachtsmarkt, 03.12.2004-05.12.2004',
-         'from' => 1101942000,
-         'file' => 'rixdorfer_weihnachtsmarkt.bbd',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1104620400,
@@ -200,14 +186,7 @@ userdel	q4 21637,30946 21955,30976
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1102374000,
-         'text' => 'B 167; (Zerpenschleuse-Liebenwalde); zw. OA Liebenwalde und Abzw. Hammer Erneuerung Durchlass Vollsperrung 26.11.2004-06.12.2004 ',
-         'from' => 1101337200,
-         'data' => 'userdel	2 11228,52175 9686,52037
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1103583600,
          'text' => 'L 75; (Karl-Marx-Straße); OD Großziethen, von Dorfstraße bis Friedhofsweg Straßenbauarbeiten Vollsperrung 24.05.2004-20.12.2004 ',
@@ -216,14 +195,7 @@ userdel	q4 21637,30946 21955,30976
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1102287600,
-         'text' => 'Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße Umwelt- und Weihnachtsmarkt, für den Fahrzeugverkehr gesperrt. Dauer 04.12.2004, 06.00 Uhr bis 05.12.2004, 24.00 Uhr ',
-         'from' => 1102050000,
-         'data' => 'userdel	2 9982,13411 10312,13231
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -249,6 +221,22 @@ userdel	q4 21637,30946 21955,30976
          'data' => 'userdel	q4; 17894,2783 17631,3200 17603,3240 17388,3576
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1103929200,
+         'text' => 'Düsseldorfer Str. in beiden Richtungen zwischen Brandenburgische Str. und Konstanzer Str. Baustelle, Straße vollständig gesperrt (bis 24.12.2004)',
+         'from' => 1102538190,
+         'data' => 'userdel	2 4151,10026 3906,10035
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1104533999,
+         'text' => 'Johannisthaler Chaussee (Neukölln) in Höhe der Ernst-Keller-Brücke Baustelle, Straße vollständig gesperrt wegen Brückenneubau (bis Ende 2004)',
+         'from' => 1102540046,
+         'data' => 'userdel	2 15573,4122 15608,4175
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: temp_blockings_dates.t,v 1.6 2004/09/30 22:23:54 eserte Exp eserte $
+# $Id: temp_blockings_dates.t,v 1.7 2004/12/08 21:07:08 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -29,6 +29,14 @@ my @Today_and_Now = Today_and_Now;
 
 for my $test_data
     (
+     [<<EOF,
+NEW	Johannisthaler Chaussee (Neukölln) in Höhe der Ernst-Keller-Brücke Baustelle, Straße vollständig gesperrt wegen Brückenneubau (bis Ende 2004) (10:01) 
+EOF
+      Mktime(@Today_and_Now),
+      Mktime(2004,12,31,23,59,59),
+      0
+     ],
+
      [<<EOF,
 L 37; (Petershagen-Seelow); südl. Seelow Kno. Diedersdorf/    Friedersdorf    Bau OU B 1n/B167n    halbseitige Sperrung/Lichtsignalanl.    17.08.2004-unbekannt 
 EOF
@@ -234,21 +242,21 @@ EOF
      ],
 
     ) {
-	my $btxt = shift @$test_data;
+	my($btxt, $start_date_expected, $end_date_expected, $prewarn_days_expected) = @$test_data;
 	my $errors = 0;
 	my($start_date, $end_date, $prewarn_days, $rx_matched);
 	eval {
 	    ($start_date, $end_date, $prewarn_days, $rx_matched)
 		= BBBikeEditUtil::parse_dates($btxt);
 	    # Delta 1s for Today_and_Now tests
-	    ok(abs($start_date - shift @$test_data) <= 1) or $errors++;
-	    my $test_end_date = shift @$test_data;
+	    ok(abs($start_date - $start_date_expected) <= 1) or $errors++;
+	    my $test_end_date = $end_date_expected;
 	    if (!defined $test_end_date) {
 		is($end_date, undef) or $errors++;
 	    } else {
 		ok(abs($end_date   - $test_end_date) <= 1) or $errors++;
 	    }
-	    is($prewarn_days, shift @$test_data) or $errors++;
+	    is($prewarn_days, $prewarn_days_expected) or $errors++;
 	};
 	if ($@) {
 	    diag $@;

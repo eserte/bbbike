@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.79 2004/12/05 00:17:06 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.80 2004/12/08 22:24:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3386,9 +3386,12 @@ EOF
 			  print PL_OUT join "", @old_contents;
 			  close PL_OUT;
 		      } elsif ($meta_data_handling eq 'replace') {
-			  temp_blockings_editor_replace(-string => $pl_entry,
-							-text   => $blocking_text,
-						       );
+			  my $ret = temp_blockings_editor_replace(-string => $pl_entry,
+								  -text   => $blocking_text,
+								 );
+			  if (!$ret) {
+			      return;
+			  }
 		      } else {
 			  print STDERR join "", @old_contents;
 		      }
@@ -3438,6 +3441,7 @@ EOF
 
 sub temp_blockings_editor_replace {
     my(%args) = @_;
+    my $ret = 0;
     my $new_string = $args{-string};
     my $new_text   = $args{-text};
     if (!eval { require String::Similarity; 1 }) {
@@ -3461,7 +3465,7 @@ sub temp_blockings_editor_replace {
     }
     if ($max_similarity == 0) {
 	main::status_message("Keinen ähnlichen Eintrag gefunden", "info");
-	return;
+	return $ret;
     }
 
     open(PL_IN, "< $pl_file")
@@ -3486,22 +3490,129 @@ sub temp_blockings_editor_replace {
     }
     close PL_IN;
 
-    my $yesno = $main::top->messageBox(-type => "YesNo",
-				       -message => <<EOF);
-Replace the following record:
-$s{"inner"}
-with
-$new_string
-? (index = $max_index, similarity factor = $max_similarity)
-EOF
-    if ($yesno !~ /yes/i) {
-	return;
+    my $yesno;
+    {
+	require Tk::DialogBox;
+	my $d = $main::top->DialogBox
+	    (-title => M"Ersetzen",
+	     -buttons => [M"Ja", M"Manuell wählen", M"Nein"],
+	    );
+	$d->add("Label", -text => "Replace the following record:")->pack;
+	my $t1 = $d->add("Scrolled", "ROText", -width => 50, -height => 10,
+			 -scrollbars => "osoe")->pack;
+	$t1->insert("end", $s{"inner"});
+	$d->add("Label", -text => "with:")->pack;
+	my $t2 = $d->add("Scrolled", "ROText", -width => 50, -height => 10,
+			 -scrollbars => "osoe")->pack;
+	$t2->insert("end", $new_string);
+	$d->add("Label", -text => "? (index = $max_index, similarity factor = $max_similarity)")->pack;
+	$yesno = $d->Show;
     }
 
-    open PL_OUT, "> $pl_file" or die $!;
-    print PL_OUT $s{pre} . $new_string . $s{post};
-    close PL_OUT;
+#     my $yesno = $main::top->messageBox(-type => "YesNo",
+# 				       -message => <<EOF);
+# Replace the following record:
+# $s{"inner"}
+# with
+# $new_string
+# ? (index = $max_index, similarity factor = $max_similarity)
+# EOF
+#     if ($yesno !~ /yes/i) {
+# 	return;
+#     }
 
+    if ($yesno eq M"Ja") {
+	open PL_OUT, "> $pl_file" or die $!;
+	print PL_OUT $s{pre} . $new_string . $s{post};
+	close PL_OUT;
+	$ret = 1;
+    } elsif ($yesno eq M"Manuell wählen") {
+	my $t = $main::top->Toplevel(-title => M"Manuell wählen");
+	$t->transient($main::top) if $main::transient;
+	require Tk::HList;
+	my $hl = $t->Scrolled("HList",
+			      -width => 50,
+			      -height => 10,
+			      -selectmode => "single",
+			     )->pack(-fill => "both",
+				     -expand => 1);
+	    open(PL_IN, "< $pl_file")
+	or main::status_message("Kann $pl_file nicht lesen: $!", "die");
+
+	my $stage = "pre";
+	my %s;
+	my @records;
+	while(<PL_IN>) {
+	    if (/^\s*\{/) {
+		push @records, "";
+		$stage = "inner";
+	    } elsif (/^\s*\);/) {
+		$stage = "post";
+	    }
+	    if ($stage eq 'inner') {
+		$records[-1] .= $_;
+	    } else {
+		$s{$stage} .= $_;
+	    }
+	}
+	close PL_IN;
+
+	my $rec_i = 0;
+	for my $rec (@records) {
+	    $hl->add($rec_i, -text => $rec);
+	    $rec_i++;
+	}
+
+	my $weiter;
+	{
+	    my $f = $t->Frame->pack(-fill => "x");
+	    Tk::grid($f->Button(Name => "ok",
+				-command => sub {
+				    $weiter = +1;
+				},
+			       ),
+		     $f->Button(Name => "cancel",
+				-command => sub {
+				    $weiter = -1;
+				}
+			       ),
+		    );
+	}
+
+    TRYAGAIN:
+	$t->OnDestroy(sub { $weiter = -1 });
+	$t->waitVariable(\$weiter);
+
+	if ($weiter == 1) {
+	    my($sel) = $hl->selectionGet;
+	    if (!defined $sel) {
+		goto TRYAGAIN;
+	    }
+
+	    open PL_OUT, "> $pl_file" or die $!;
+	    print PL_OUT $s{pre};
+	    if ($sel > 0) {
+		print PL_OUT join("", @records[0 .. $sel-1]);
+	    }
+	    print PL_OUT $new_string;
+	    if ($sel+1 <= $#records) {
+		print PL_OUT join("", @records[$sel+1 .. $#records]);
+	    }
+	    print PL_OUT $s{post};
+	    close PL_OUT;
+
+	    $ret = 1;
+	} else {
+	    # do nothing
+	}
+
+	$t->destroy if Tk::Exists($t);
+
+    } else {
+	# do nothing
+    }
+
+    $ret;
 }
 
 sub add_cross_road_blockings {

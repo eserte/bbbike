@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEditUtil.pm,v 1.12 2004/09/30 22:24:25 eserte Exp eserte $
+# $Id: BBBikeEditUtil.pm,v 1.14 2004/12/08 22:33:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -166,6 +166,7 @@ sub parse_dates {
     my $eudaterx  = qr/\b([0123]?\d)\.([01]?\d)\.(\d{4})\b/;
     # XXX add ? after Anfang... group?
     my $nat_de_rx = qr{(Anfang|Mitte|Ende)?\s+($month_rx|\d|0\d|1[012])[./ ](20\d{2})}i;
+    my $nat_de_year_rx = qr{(Anfang|Ende)\s+(20\d{2})\b};
 
     my $this_year = (localtime)[5] + 1900;
     my($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2, @to_matches, $rest);
@@ -245,6 +246,15 @@ TRY_MATCHES: {
 	} elsif ((@to_matches) = $btxt =~ /$bis_und_rx\s*$nat_de_rx/i) {
 	    $new_end_time = $nat_de_to_epoch->(@to_matches, +1);
 	    $rx_matched     = 17;
+	} elsif (($d1, $y1) = $btxt =~ /$bis_und_rx\s*$nat_de_year_rx/i) {
+	    my $S1;
+	    if ($d1 =~ /anfang/i) {
+		($d1,$m1, $H1,$M1,$S1) = ( 1, 1,  0, 0, 0);
+	    } else {
+		($d1,$m1, $H1,$M1,$S1) = (31,12, 23,59,59);
+	    }
+	    $new_end_time = $date_time_to_epoch->($S1,$M1,$H1, $d1,$m1,$y1);
+	    $rx_matched     = 19;
 	} elsif (my($months) = $btxt =~
 		 /für\s+(?:ca\.|voraussichtlich)\s+(\d+)\s+Monat/i) {
 	    my @l = localtime $new_start_time;
