@@ -90,6 +90,34 @@ sub fetch {
 #      ($maxfile, $maxtime);
 #  }
 
+sub latest_dwd {
+    require Date::Calc;
+    require LWP::UserAgent;
+    require File::Temp;
+    my $ua = LWP::UserAgent->new;
+    my $url = "http://www.wetteronline.de/daten/radar/dber";
+    my @l = gmtime;
+    $l[1] = int($l[1]/15)*15;
+    my @date = ($l[5]+1900, $l[4]+1, @l[3,2,1,0]);
+    my $try = 15;
+    while(1) {
+	my $date_url = sprintf "$url/%04d/%02d/%02d%02d%02d.gif",
+	    @date[0, 1, 2, 3, 4];
+	my $resp = $ua->get($date_url);
+	if ($resp->is_success && $resp->header('Content-Type') =~ m{^image/}) {
+	    $use_map = "custom:dwd";
+	    my($tmpfh,$tmpfile) = File::Temp::tempfile(#UNLINK => 1,
+						       SUFFIX => ".gif");
+	    print $tmpfh $resp->content;
+	    close $tmpfh;
+	    return $tmpfile;
+	} else {
+	    @date = Date::Calc::Add_Delta_DHMS(@date, 0, 0, -15, 0);
+	    last if (--$try < 0);
+	}
+    }
+}
+
 sub interesting_parts {
     my $infile = shift;
     my(%args) = @_;
@@ -103,9 +131,28 @@ sub interesting_parts {
 	} elsif ($use_map eq 'FURadar2') {
 	    require Karte::FURadar2;
 	    $obj = $Karte::FURadar2::obj;
-	} else {
+	} elsif ($use_map eq 'FURadar3') {
 	    require Karte::FURadar3;
 	    $obj = $Karte::FURadar3::obj;
+	} elsif ($use_map eq 'custom:dwd') {
+	    require Strassen;
+	    require Strassen::MultiStrassen;
+	    my $orte = MultiStrassen->new("orte", "orte2");
+	    my $hash = $orte->get_hashref_name_to_pos;
+	    my $get_coord = sub {
+		my $ort = shift;
+		$orte->get($hash->{$ort}->[0])->[Strassen::COORDS][0];
+	    };
+	    require Karte;
+	    $obj = Karte::object_from_data
+		([[$get_coord->("Lindenberg"), "260,177"],
+		  [$get_coord->("Cottbus"), "277,233"],
+		  [$get_coord->("Neubrandenburg"), "186,1"],
+		  [$get_coord->("Stendal"), "57,124"],
+		  [$get_coord->("Halle"), "64,264"],
+		  [$get_coord->("Magdeburg"), "38,178"],
+		 ]
+		);
 	}
 	my $this_pixel =
 	  ($obj->standard2map(100000,0))[0] -
@@ -115,12 +162,15 @@ sub interesting_parts {
     }
 
     my $tmp = make_temp("processed");
-    my(@cropdim) = (13, 13, 512, 512);
-    $cropdim[2]-=$cropdim[0]*2;
-    $cropdim[3]-=$cropdim[1]*2;
+    my @cropdim;
+    if ($use_map ne "custom:dwd") {
+	(@cropdim) = (13, 13, 512, 512);
+	$cropdim[2]-=$cropdim[0]*2;
+	$cropdim[3]-=$cropdim[1]*2;
+    }
 
     eval {
-	require Image::Magick;
+	require XXXImage::Magick;
     };
     if (!$@) {
 	my(@coltable) =  # Farben, die übrig bleiben sollen
@@ -137,8 +187,10 @@ sub interesting_parts {
 	$image->Read($infile);
 	$progress->Update(0.1) if $progress;
 
-	print STDERR "chop... ";
-	$image->Crop(geometry => "$cropdim[2]x$cropdim[3]+$cropdim[0]+$cropdim[1]");
+	if (@cropdim) {
+	    print STDERR "chop... ";
+	    $image->Crop(geometry => "$cropdim[2]x$cropdim[3]+$cropdim[0]+$cropdim[1]");
+	}
 	$progress->Update(0.2) if $progress;
 
 	# Sample sollte vor Farbtransformationen durchgeführt werden
@@ -207,13 +259,15 @@ sub interesting_parts {
 #	  "/usr/ports/graphics/netpbm/work/netpbm/ppm/ppmchange " .
 #	    "ppmchange " .
 #	    join(" ", map { "rgb:" . join("/", map { sprintf "%02x", $_ } @$_) . " rgb:ff/ff/ff"} @anti_coltable) . " | " .
-	$cmd .= " | " .
-	    "pnmcut " . join(" ", @cropdim) . " | ";
-	if ($ratio != 1 && $ratio != 0) {
-	    $cmd .= "pnmscale $ratio | ppmquant 8 | ";
+	if (@cropdim) {
+	    $cmd .= " | " .
+		"pnmcut " . join(" ", @cropdim);
 	}
-#	$cmd .= "ppmtogif | giftrans -b \\#ffffff -T > $tmp";
-	$cmd .= "ppmtogif -transparent \\#ffffff > $tmp";
+	if ($ratio != 1 && $ratio != 0) {
+	    $cmd .= " | pnmscale $ratio | ppmquant 8";
+	}
+#	$cmd .= " | ppmtogif | giftrans -b \\#ffffff -T > $tmp";
+	$cmd .= " | ppmtogif -transparent \\#ffffff > $tmp";
 	print STDERR "Executing $cmd\n" if $VERBOSE;
 	system($cmd);
     }

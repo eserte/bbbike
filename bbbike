@@ -12606,6 +12606,7 @@ sub show_overview_populate {
 	    $FURadar::use_map = 'FURadar2'; # the only left...
 	    # XXXX use fetch and cache routine
 	    my $origimgfile = FURadar::fetch();
+#XXX	    my $origimgfile = FURadar::latest_dwd();
 	    if ($origimgfile) {
 		my $time = (stat($origimgfile))[STAT_MODTIME];
 		my $imgfile = FURadar::interesting_parts
