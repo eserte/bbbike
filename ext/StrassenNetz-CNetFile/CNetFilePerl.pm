@@ -121,7 +121,7 @@ sub make_sperre {
 # XXX This only works on little-endian architectures!
 sub convert_coord {
     my($self, $coord) = @_;
-    pack("V", $self->{CNetCoord2Ptr}{$coord};
+    pack("V", $self->{CNetCoord2Ptr}{$coord});
 }
 
 sub convert_net {
