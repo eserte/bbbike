@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.11 2004/07/23 06:52:35 eserte Exp $
+# $Id: plz.t,v 1.12 2004/09/09 12:04:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -261,15 +261,11 @@ EOF
        "U-Bahnhof")
 	or diag $dump->(\@res);
 
- TODO:
-    {
-	local $TODO = "abbreviations do not work yet";
-	@res = $plz->look_loop("u weberwiese",
-			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'U-Bhf Weberwiese' } @{$res[0]}), 1,
-	   "U-Bahnhof, abbreviated")
-	    or diag $dump->(\@res);
-    }
+    @res = $plz->look_loop("u weberwiese",
+			   @standard_look_loop_args);
+    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'U-Bhf Weberwiese' } @{$res[0]}), 1,
+       "U-Bahnhof, abbreviated")
+	or diag $dump->(\@res);
 
     @res = $plz->look_loop("s-bahnhof heerstr",
 			   @standard_look_loop_args);
