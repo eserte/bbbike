@@ -2195,6 +2195,8 @@ sub switch_mode {
     my $mode = shift;
     if ($mode eq 'std') {
 	switch_standard_mode(@_);
+    } elsif ($mode eq 'std-no-orig') {
+	switch_edit_standard_mode(@_);
     } elsif ($mode eq 'b') {
 	switch_edit_berlin_mode(@_);
     } elsif ($mode eq 'brb') {
