@@ -169,15 +169,8 @@ old version of BBBike, at least older than version 3.00.
 
 =head2 Windows 3.1
 
-Users of Windows 3.1 have to alternatives: using the command line
-interface with a version of perl5 for Windows 3.1 (e.g.
-L<http://www.perl.com/CPAN/ports/win16/LMOLNAR/perl5.00402-bindist01-dos-djgpp.zip>).
-
-If you want to use the Tk interface, you have to install Win32s (the
-file is called PW1118.EXE) and then install the perl5 distribution for
-Windows95 (see above).
-
-For more information please send a mail to the author.
+Windows 3.1 is not supported anymore. Older BBBike versions (for
+example 2.x) have instructions on how to use BBBike under Windows 3.1.
 
 
 =head2 Mac OS X

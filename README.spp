@@ -20,7 +20,7 @@
 ## perlreplace #HTTPCVS#    '"http://sourceforge.net/cvs/?group_id=19142"'
 ## perlreplace #CVSREPO#    '":pserver:anonymous\@cvs.bbbike.sourceforge.net:/cvsroot/bbbike"'
 ## dnl
-## dnl $Id: README.spp,v 2.26 2004/03/08 00:07:31 eserte Exp eserte $
+## dnl $Id: README.spp,v 2.27 2004/07/27 23:16:34 eserte Exp $
 ## dnl strpp source of README
 ## dnl
 =head1 README
@@ -180,8 +180,8 @@ werden sowie Einträge für KDE erzeugt werden.
 
 Statt Bundle::BBBike_small kann auch Bundle::BBBike verwendet werden.
 Damit werden wesentlich mehr Module installiert, die teilweise nur für
-die Entwicklung verwendet werden, teilweise aber auch die Arbeit mit
-BBBike erleichtern.
+die Entwicklung verwendet werden, teilweise aber zusätzliche
+BBBike-Features ermöglichen.
 
 Wenn "perl install.pl" nicht verwendet wird, aber trotzdem die
 XS-Module für bessere Performance installiert werden sollen, muss
@@ -416,30 +416,12 @@ old version of BBBike, at least older than version 3.00.
 
 
 ## only DE
-Windows-3.1-Benutzer haben zwei Alternativen: Verwenden des
-Kommandozeilen-Interfaces mit einer perl5-Version für Windows 3.1
-(z.B.
+Windows 3.1 wird nicht mehr unterstützt. Ältere Versionen von BBBike
+(z.B. 2.x) haben noch eine Anleitung, wie man BBBike unter Windows 3.1
+nutzen kann.
 ## but DE
-Users of Windows 3.1 have to alternatives: using the command line
-interface with a version of perl5 for Windows 3.1 (e.g.
-## yes
-
-L<http://www.perl.com/CPAN/ports/win16/LMOLNAR/perl5.00402-bindist01-dos-djgpp.zip>).
-
-
-## only DE
-Wenn das Tk-Interface verwendet werden soll, muss zuerst Win32s
-installiert sein (die Datei heißt PW1118.EXE, mit ftpsearch danach
-suchen) und danach die
-perl5-Distribution für Windows95 (siehe oben) installiert werden.
-
-Für weitere Hinweise bitte an den Autor wenden.
-## but DE
-If you want to use the Tk interface, you have to install Win32s (the
-file is called PW1118.EXE) and then install the perl5 distribution for
-Windows95 (see above).
-
-For more information please send a mail to the author.
+Windows 3.1 is not supported anymore. Older BBBike versions (for
+example 2.x) have instructions on how to use BBBike under Windows 3.1.
 ## yes
 
 

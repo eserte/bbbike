@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.137 2004/07/22 00:30:45 eserte Exp eserte $
+# $Id: bbbike,v 3.138 2004/07/27 23:11:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -104,7 +104,7 @@ use autouse 'BBBikeHeavy'
 	  show_register save_register_routes load_register_routes
 	  show_calories check_available_memory
 	  reload_all);
-#XXX problems with autouse!
+#XXX problems with autouse! -> what problems?
 use autouse 'BBBikeEdit'
     => qw(insert_point_from_canvas create_relation_from_canvas
 	  ampeln_on_route radweg_open radweg_draw_canvas
@@ -125,7 +125,7 @@ use autouse 'BBBikePrint'
 ## DEBUG_END
 
 use Tk;
-#XXX for now disabled ... still too many bugs floating around
+#XXX for now disabled ... still too many bugs floating around -> what bugs?
 #use Tk::ErrorDialog; # XXX is this OK?
 use Tk::CanvasUtil;
 use File::Basename;
@@ -156,9 +156,6 @@ use VectorUtil qw(get_polygon_center);
 #BEGIN{mymstat("before locale");}
 ## DEBUG_END
 
-BEGIN {
-}
-
 use strict;
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before use vars");}
@@ -177,25 +174,6 @@ use Msg; # This call has to be in bbbike!
 }
 
 use BBBikeGlobalVars 1.012;
-
-# XXX move to BBBikeGlobalVars?
-# Map modes
-# Please don't change order to stay compatible with tkbabybike
-use enum qw(:MM_
-	    SEARCH INFO BUTTONPOINT USEREDIT DRAG EDITPOINT
-	    SPECIALEDIT INSERTPOINT CREATERELATION
-	    CUSTOMCHOOSE CUSTOMCHOOSE_TAG
-	    BABYBIKE_SELECT BABYBIKE_BROWSE SCRIBBLE
-	   );
-
-# Button2 modes
-use enum qw(:B2M_
-	    NONE DELLAST AUTOSCROLL SCAN FASTSCAN CUSTOM);
-
-# Attribute description field indexes
-use enum qw(:ATTRIB_ SINGULAR PLURAL LINES LONG);
-
-@comments_types = @Strassen::Dataset::comments_types;
 
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before use your");}
@@ -234,22 +212,18 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.137 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.138 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
 $progname = basename($0);
 $devel_host = ($ENV{HOST} && $ENV{HOST} =~ /^(vran|cabulja|cvrsnica|spiff|devpc01.iconmobile.de)/i);
-$os = (($^O eq 'MSWin32' || $^O eq 'os2' || $^O eq 'dos')
-       ? 'win'
-       : ($^O eq 'MacOS'
-	  ? 'mac'
-	  : 'unix'));
+$os =   $^O eq 'MSWin32' || $^O eq 'os2' || $^O eq 'dos' ? 'win'
+      : $^O eq 'MacOS'				    	 ? 'mac'
+      : 						   'unix';
 if (!defined $is_handheld) {
     $is_handheld = $Config{"archname"} =~ /^arm-linux$/i;
 }
-$sfn    = 0; # short filenames (8.3)
-$win32s = 0; # Win32S
 $use_clipboard = 1 if $os eq 'win';
 
 # include after setting $os!
@@ -270,9 +244,6 @@ if ($os eq 'win') {
     require WinCompat;
 }
 
-## I don't think this is necessary anymore...
-#check_available_memory();
-
 # enable DnD
 use Tk::DropSite;
 
@@ -284,12 +255,13 @@ if (! -d $tmpdir) {
 	warn Mfmt("Verwende Unterverzeichnis 'tmp' des Programmverzeichnisses (%s) als temporäres Verzeichnis", $tmpdir);
     }
 }
+
 # Var section: map scales and orientation
 set_landscape();
 $scale_coeff = 1;
 $small_scale  = 0.0625;    # map scale for overview window (region mode)
 $medium_scale = 0.13;      # map scale for overview window (city/Berlin mode)
-$small_scale_edit  = 0.01;         # dasselbe für den Edit-Mode XXX not yet
+$small_scale_edit  = 0.01;         # dasselbe für den Edit-Mode XXX remove?
 $medium_scale_edit = 0.02;
 set_canvas_scale(DEFAULT_SCALE);
 Karte::preload('Standard');
@@ -301,6 +273,7 @@ $bbbike_route_ext = 'bbr';
 $map_bg = 'grey85';
 
 # Var section: street and point attributes
+@comments_types = @Strassen::Dataset::comments_types;
 $str_draw{'s'} = 1;      # draw streets by default
 $p_draw{'pp'}  = 0;      # do not draw crossings by default
 $p_draw{"pp-all"} = 0;   # pp drawing only for the tag types below:
@@ -408,11 +381,11 @@ $zoom_new_route_chooseort = 1;
 $special_edit = '';
 $map_mode = MM_SEARCH;
 $b2_mode = B2M_FASTSCAN;
-%b2_mode_desc = (B2M_NONE, M"Nichts",
-		 B2M_SCAN, M"Scanning",
-		 B2M_FASTSCAN, M"Fast Scanning",
+%b2_mode_desc = (B2M_NONE,	 M"Nichts",
+		 B2M_SCAN,	 M"Scanning",
+		 B2M_FASTSCAN,	 M"Fast Scanning",
 		 B2M_AUTOSCROLL, M"Autoscrolling",
-		 B2M_DELLAST, M"Letzten Punkt löschen",
+		 B2M_DELLAST,	 M"Letzten Punkt löschen",
 		);
 # Default ist rot, weil das Orange von power oder wind schlecht zu erkennen ist
 $mark_color    = 'red'; # Farbe der Markierung in mark_street et al.
@@ -423,16 +396,15 @@ define_item_attribs();
 generate_plot_functions();
 
 ###################################################################
-#$really_no_www = $win32s; # Trumpet hängt zu lange
 $really_no_www = $os eq 'win'; # Trumpet und Win32Sock hängen zu lange, wenn es keine Verbindung gibt
 $no_map = !$devel_host && (!defined $ENV{USER} || $ENV{USER} !~ /^(eserte|rezic|srezic)$/);
 $abbiege_optimierung = 0;
 # Verlust in Metern beim Linksabbiegen ohne Ampel
 # XXXXX und beim Geradeausfahren??????
-$abbiege_penalty = { 'H'  => 70, # entspricht ca. 10s bei 25km/h
-		     'HH' => 140, # entspricht ca. 20s bei 25km/h
+$abbiege_penalty = { 'H'   => 70, # entspricht ca. 10s bei 25km/h
+		     'HH'  => 140, # entspricht ca. 20s bei 25km/h
 		     'BAB' => 140, # häh? für Radfahrer?
-		     'B'  => 140,
+		     'B'   => 140,
 		   };
 $lost_strecke_per_ampel = 50; # verlorene Strecke pro Ampel in m
 $lost_time_per_ampel = 15; # verlorene Zeit pro Ampel in s
@@ -446,15 +418,18 @@ $radwege_speed{"RW"} = 100;
 
 %strcat_bez =
   (
-   #BAB => M"Autobahnen",
    B  => M"Bundesstraßen",
    HH => M"wichtige Hauptstraßen",
    H  => M"Hauptstraßen",
    N  => M"Nebenstraßen",
    NN => M"für Kfz gesperrte Straßen",
   );
-@strcat_order = (#"BAB",
-		 qw(B HH H N NN));
+@strcat_order = qw(B HH H N NN);
+
+if (0) { # not enabled by default
+    unshift @strcat_order, "BAB";
+    $strcat_bez{BAB} = M"Autobahnen";
+}
 
 $steigung_penalty = {};
 $strecke = 0;
@@ -467,9 +442,9 @@ $next_is_undo = 0;
 
 use enum qw(:SRP_ COORD TYPE);
 
-$aufschlag = 1;
+$aufschlag = 1; # XXX ???
 
-# Wetter-Variablen
+# Weather variables section
 $wetter_force_update = 1 if !defined $wetter_force_update;
 $wetter_route_update = 0 if !defined $wetter_route_update;
 $wetter_station = 'uptodate' if !defined $wetter_station;
@@ -485,7 +460,7 @@ $wetter_station = 'uptodate' if !defined $wetter_station;
    #'tempelhof' => M"Tempelhof (DWD)",
   );
 %wetter_full = ('dahlem1' => 1);
-$temperature = 20; # Grad Celsius
+$temperature = 20; # degrees Celsius
 init_wind();
 
 use enum qw(:WIND_COLOR_ RED GREEN BLUE NAME);
@@ -509,7 +484,7 @@ $ps_rotate   = 1;
 $ps_scale_a4 = 1;
 $ps_fixed_font = "Courier7";
 
-$nr = -1;
+$nr = -1; # number of points in route (XXX correct???)
 {
     my $cachedir = catfile($FindBin::RealBin, "cache");
     $cache_root = (-d $cachedir && -w $cachedir
@@ -536,9 +511,8 @@ if ($os eq 'win') {
     }
 }
 if (!defined $bbbike_configdir) {
-    $bbbike_configdir = (defined $ENV{HOME}
-    		         ? catfile($ENV{HOME}, ".bbbike")
-    		         : "/bbbike.cfg");
+    $bbbike_configdir = defined $ENV{HOME} ? catfile($ENV{HOME}, ".bbbike")
+    		        		   : "/bbbike.cfg";
 }
 if (!-d $bbbike_configdir) {
     mkdir $bbbike_configdir, 0700;
@@ -1200,15 +1174,15 @@ if ($do_wwwmap && $devel_host) {
 
 if ($all_outline) {
     $str_outline{'s'} =
-      $str_outline{'l'} =
-	$str_outline{'w'} =
-	  $str_outline{'i'} = 1;
+    $str_outline{'l'} =
+    $str_outline{'w'} =
+    $str_outline{'i'} = 1;
 }
 
 if (defined $init_scope) {
-    if    ($init_scope eq 'city')   { city_settings() }
+    if    ($init_scope eq 'city')   { city_settings()   }
     elsif ($init_scope eq 'region') { region_settings() }
-    elsif ($init_scope eq 'jwd')    { jwd_settings() }
+    elsif ($init_scope eq 'jwd')    { jwd_settings()    }
 }
 
 if ($visual) {
@@ -1255,7 +1229,7 @@ if (!defined $top) {
 	if ($top->optionGet("highlightBackground", "HighlightBackground") ne $bg) {
 	    $top->optionAdd("*highlightBackground", $bg, 'interactive');
 	}
-	# Unter Windows sind Balloons eigentlich -bg => white
+	# Unter Windows sollten Balloons eigentlich -bg => white sein XXX
 	for (qw(Balloon CanvasBalloon)) {
 	    $top->optionAdd("*$_.background", '#C0C080', 'startupFile');
 	}
@@ -1280,7 +1254,7 @@ if (!defined $top) {
 	$top->optionAdd("*$_.cursor", "hand2", "startupFile");
     }
 
-    if (0) { # ... naja, müsste ein Designer ran ...
+    if (0) { # ... naja, müsste ein Designer ran ... außerdem with -tile nicht mehr unterstützt (?)
 	my $bg = $top->Photo(-file => Tk::findINC("images/bg.gif"));
 	for (qw(Toplevel Label Button Checkbutton Radiobutton FlatBut
 		FlatCheckbox FlatRadiobutton FireButton Menubutton Frame Pane),
@@ -1291,8 +1265,6 @@ if (!defined $top) {
 	}
 	$top->optionAdd("*highlightBackground" => "white");
     }
-
-
 }
 
 # KDE initialisation
@@ -1311,7 +1283,6 @@ if ($run_under_kde) {
     };
     warn __LINE__ . ": $@" if $@; # XXX and $verbose
 }
-
 
 # Are we running exceed?
 $exceed = ($top->server =~ /Hummingbird/);
@@ -1359,10 +1330,6 @@ set_fonts();
 
 ## DEBUG_BEGIN
 #BEGIN{mymstat("after setfonts BEGIN");} mymstat("after setfonts");
-## DEBUG_END
-
-## DEBUG_BEGIN
-#BEGIN{mymstat("after mk_power_txt BEGIN");} mymstat("after mk_power_txt");
 ## DEBUG_END
 
 if ($Tk::VERSION < 800) {
@@ -1426,21 +1393,12 @@ if ($os eq 'win' || $^O eq 'cygwin') {
 $top->title("$progname $VERSION");
 
 # In ->Icon wird auch ein ->update durchgeführt:
+# XXX Unter Unix vielleicht darauf verzichten und iconimage stattdessen verwenden?
 $top->Icon(-image => $srtbike_icon) if defined $srtbike_icon;
 if ($splash_screen) {
     $splash_screen->Raise; # raise after the first ->update on $top, otherwise on Windows the splash screen will stay obscured by the main window
     $splash_screen->Update(0.0);
 }
-
-# XXX Folgendes ist obsolet:
-# XXX überprüfen, ob idletasks width bei win32 setzt... wine macht es
-# jedenfalls nicht
-#$top->idletasks; # um width und height festzulegen
-#$top->update; # besser als idletasks, damit splash_screen neu gezeichnet wird
-
-# Mit strictMotif kann man zwar Extra-Space um Buttons herum verhindern,
-# allerdings hat man dann auch keine Key bindings wie C-a.
-#$Tk::strictMotif = 1;
 
 # Exceed-Bug
 $capstyle_round = ($exceed ? "projecting" : "round");
@@ -1455,6 +1413,10 @@ for(my $i=0; $i <= $#power; $i++) {
     $bikepwr_cal[$i] = 0;
 }
 mk_power_txt();
+
+## DEBUG_BEGIN
+#BEGIN{mymstat("after mk_power_txt BEGIN");} mymstat("after mk_power_txt");
+## DEBUG_END
 
 # Zeichensätze für Straßennamen
 if (defined $font_family && $font_family =~ /nimbus/) {
@@ -1577,14 +1539,14 @@ TRY: {
     $ch = $top->ContextHelp('-podfile' => "$FindBin::RealBin/$FindBin::Script" . ".pod");
 }
 if (!defined $ch) {
-    eval '
+    eval q{
 	package Tk::ContextHelp; # AUTOLOAD: ignore
 	sub attach {}
 	sub activate {}
 	sub HelpButton { shift; shift->Label(-padx => 0, -pady => 0) }
 	package main;
 	$ch = bless {}, "Tk::ContextHelp";
-    '; # '
+    };
 }
 
 ## DEBUG_BEGIN
@@ -1664,25 +1626,6 @@ my $kmcb = $km_frame->Button
      -class => 'FlatBut',
      -command => \&change_unit,
     )->pack;
-#  my $kmcbm = $km_frame->Menu(-title => "Meter");
-#  $kmcbm->radiobutton(-label => 'km',
-#  		    -variable => \$unit_km,
-#  		    -value => 'km',
-#  		    -command => sub { &updatekm;
-#  				      $kmcb->configure(-text => 'km');
-#  				  }
-#  		   );
-#  $kmcbm->radiobutton(-label => 'm',
-#  		    -variable => \$unit_km,
-#  		    -value => 'm',
-#  		    -command => sub { &updatekm;
-#  				      $kmcb->configure(-text => 'm');
-#  				  }
-#  		   );
-#  menuright($kmcb, $kmcbm);
-#  $balloon->attach($kmcbm, -msg => ['',
-#  				  'Streckenangabe in Kilometer',
-#  				  'Streckenangabe in Meter']);
 if ($km_frame->can('UnderlineAll')) { $km_frame->UnderlineAll }
 
 $km_frame->Label(-width => 5,
@@ -2145,40 +2088,15 @@ sub do_iconframe {
 	$plzmcmd = $ausm->command
 	    (-label => M"Komplette Straßenliste",
 	     -command => sub { choose_from_plz(-interactive => 1) });
-	# XXX zusammenfassen
 	$ausm->command
 	  (-label => M"Telefonbuch-Datenbank (Straße)",
 	   -command => sub {
-	       require Telefonbuch;
-	       my $get_coord = sub {
-		   my($x, $y) = @_;
-		   transpose($x, $y);
-	       };
-	       my $mark = sub {
-		   my($x, $y, %args) = @_;
-		   my $tcoords = [[]];
-		   $tcoords->[0][0] = [ transpose($x, $y) ];
-		   mark_point(-coords => $tcoords, %args,
-			      -clever_center => 1);
-	       };
-	       Telefonbuch::tk_str_dialog($top, $mark, $get_coord);
+	       telefonbuch_dialog("str");
 	   });
 	$ausm->command
 	  (-label => M"Telefonbuch-Datenbank (Name)",
 	   -command => sub {
-	       require Telefonbuch;
-	       my $get_coord = sub {
-		   my($x, $y) = @_;
-		   transpose($x, $y);
-	       };
-	       my $mark = sub {
-		   my($x, $y, %args) = @_;
-		   my $tcoords = [[]];
-		   $tcoords->[0][0] = [ transpose($x, $y) ];
-		   mark_point(-coords => $tcoords, %args,
-			      -clever_center => 1);
-	       };
-	       Telefonbuch::tk_tel_dialog($top, $mark, $get_coord);
+	       telefonbuch_dialog("tel");
 	   });
 	if ($advanced) {
 	    $ausm->command(-label => M"MySQL-DB",
@@ -2920,8 +2838,7 @@ sub do_iconframe {
 
 ###### Vergrößern #####
     my $mapscale_plus_photo = load_photo($misc_frame,
-					 ($sfn ? 'viewmagp.' : 'viewmag+.')
-					 . $default_img_fmt);
+					 'viewmag+.' . $default_img_fmt);
     my $mapscale_plus_button = $misc_frame->Button
       (image_or_text($mapscale_plus_photo, '+'),
        -command => sub { scalecanvas($c, 2) },
@@ -4222,6 +4139,27 @@ sub do_iconframe {
 
 } # do_iconframe
 
+sub telefonbuch_dialog {
+    my $type = shift;
+    require Telefonbuch;
+    my $get_coord = sub {
+	my($x, $y) = @_;
+	transpose($x, $y);
+    };
+    my $mark = sub {
+	my($x, $y, %args) = @_;
+	my $tcoords = [[]];
+	$tcoords->[0][0] = [ transpose($x, $y) ];
+	mark_point(-coords => $tcoords, %args,
+		   -clever_center => 1);
+    };
+    if ($type eq 'str') {
+	Telefonbuch::tk_str_dialog($top, $mark, $get_coord);
+    } else {
+	Telefonbuch::tk_tel_dialog($top, $mark, $get_coord);
+    }
+}
+
 # Berechnet das Layout des obersten Frames neu (z.B. bei einem Resize)
 sub arrange_topframe {
     my(@order) = ($hslabel_frame, $km_frame, $speed_frame[0],
@@ -4654,7 +4592,7 @@ sub bind_nomod {
 	     my $w = shift;
 	     my $e = $w->XEvent;
 	     # auf Alt, Control und CapsLock checken
-	     # bei Win32s und Win95/NT ist 8 nicht CapsLock, sondern NumLock
+	     # bei Win95/NT ist 8 nicht CapsLock, sondern NumLock
 	     if ($Tk::VERSION < 800) {
 		 return if $e->s & (1+($os eq 'win' ? 0 : 8)); # XXX control is missing ... 4? 2 ist Shift?
 	     } else {
@@ -5057,13 +4995,8 @@ sub define_item_attribs {
 	 'fz' => "fragezeichen",
 	);
     foreach my $type (@comments_types) {
-	$str_file{"comm-$type"} = "comments-$type";
+	$str_file{"comm-$type"} = "comments_$type";
     }
-#XXX del:
-#     # XXX fragezeichen should really be in "data"
-#     if (defined $datadir && $datadir =~ /data_corrected/) {
-# 	$str_file{'fz'} = "fragezeichen";
-#     }
     %p_file =
 	('lsa'    => 'ampeln',
 	 'u'      => 'ubahnhof',
@@ -6332,7 +6265,7 @@ sub change_net_type {
 sub set_route_point {
     my $e = $_[0]->XEvent;
     # auf Alt, Shift und CapsLock checken
-    # bei Win32s und Win95/NT ist 8 nicht CapsLock, sondern NumLock
+    # bei Win95/NT ist 8 nicht CapsLock, sondern NumLock
     if ($Tk::VERSION < 800) {
 	return if $e->s & (1+2+($os eq 'win' ? 0 : 8));
     } else {
@@ -8909,7 +8842,7 @@ sub _get_wasser_obj {
 	push @obj, Strassen->new(get_strassen_file("wasserumland"));
     }
     if ($str_far_away{'w'}) {
-	push @obj, Strassen->new(get_strassen_file($sfn ? "wasseru2" : "wasserumland2"));
+	push @obj, Strassen->new(get_strassen_file("wasserumland2"));
     }
     return if !@obj;
     return $obj[0] if (@obj == 1);
@@ -8936,7 +8869,7 @@ sub _get_landstr_obj {
     my @obj;
     push @obj, new Strassen get_strassen_file($str_file{'l'});
     if ($str_far_away{'l'}) {
-	my $file = ($sfn ? "landstr2" : "landstrassen2");
+	my $file = "landstrassen2";
 	push @obj, new Strassen get_strassen_file($file);
     }
     if ($str_regions{'l'}) {
@@ -15688,9 +15621,6 @@ sub show_logo { # und About
 	    )->pack(-fill => "x");
     if ($as_about) {
 	my $os_info = "OS: $^O";
-	if ($win32s) {
-	    $os_info .= " (Win32S-Modus)";
-	}
 	if ($os eq 'win') {
 	    $os_info .= " (" . ($Config{'cc'} =~ /^gcc/
 				? 'gcc' :

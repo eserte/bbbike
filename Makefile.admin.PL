@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.22 2004/06/10 22:23:01 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.22 2004/06/10 22:23:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -361,9 +361,6 @@ develdist:
 	    -x \*.gdbinit \
 	    -x \*.bak \
 	    -x \*~
-
-win32sdist:
-	./miscsrc/win32sdist
 
 predist:
 	cd data && ${MAKE}

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.18 2004/07/04 22:15:28 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.19 2004/07/27 23:12:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -25,7 +25,7 @@ use vars
   qw($bbbike_context $splash_screen
      $coords_ref $realcoords_ref $search_route_points_ref @realcoords
      $VERSION $PROG_REVISION $tmpdir %tmpfiles $progname
-     $os $win32s $sfn $use_clipboard $verbose $advanced $devel_host
+     $os $use_clipboard $verbose $advanced $devel_host
      $datadir $no_original_datadir $city $citypkg $country
      $top %toplevel %processes $transient $c $sx $sy $top_dpi $top_dpmm @want_extends
      $small_icons $is_handheld
@@ -222,6 +222,22 @@ use enum qw/:EXPORT_TXT_ FULL SIMPLIFY_NAME SIMPLIFY_ANGLE SIMPLIFY_NAME_OR_ANGL
 use constant DEFAULT_SCALE => 4;
 use constant DEFAULT_SMALL_SCALE => 1;
 use constant MINMEM        => 28000;
+
+# Map modes
+# Please don't change order to stay compatible with tkbabybike
+use enum qw(:MM_
+	    SEARCH INFO BUTTONPOINT USEREDIT DRAG EDITPOINT
+	    SPECIALEDIT INSERTPOINT CREATERELATION
+	    CUSTOMCHOOSE CUSTOMCHOOSE_TAG
+	    BABYBIKE_SELECT BABYBIKE_BROWSE SCRIBBLE
+	   );
+
+# Button2 modes
+use enum qw(:B2M_
+	    NONE DELLAST AUTOSCROLL SCAN FASTSCAN CUSTOM);
+
+# Attribute description field indexes
+use enum qw(:ATTRIB_ SINGULAR PLURAL LINES LONG);
 
 1;
 
