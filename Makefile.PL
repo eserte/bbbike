@@ -453,7 +453,9 @@ sub MY::postamble {
 	} elsif (-e "$EXTMODPERLTOP/$module_dist") {
 	    push @EXTMODPERL, $module_dist;
 	} else {
-	    warn "Can't find $module_dist neither in $EXTMODCPANTOP nor in $EXTMODPERLTOP\n";
+	    if (defined $ENV{USER} && $ENV{USER} eq 'eserte') {
+		warn "Can't find $module_dist neither in $EXTMODCPANTOP nor in $EXTMODPERLTOP\n";
+	    }
 	}
     }
     my $EXTMODCPAN = join(" ", @EXTMODCPAN);
