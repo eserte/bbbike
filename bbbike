@@ -1976,17 +1976,19 @@ $check_sub{'l'} = sub {
     plot("str",'l');
 };
 $check_sub{'u'} = sub {
-    $p_draw{'u'} = $str_draw{'u'};
+    $p_draw{'u'} = $p_draw{'sperre_u'} = $str_draw{'u'};
     $progress->InitGroup;
     plot("str",'u');
     plot("p",'u');
+    plot_sperre($p_file{"sperre_u"}, -abk => "sperre_u");
     $progress->FinishGroup;
 };
 $check_sub{'b'} = sub {
-    $p_draw{'b'} = $str_draw{'b'};
+    $p_draw{'b'} = $p_draw{'sperre_b'} = $str_draw{'b'};
     $progress->InitGroup;
     plot('str','b');
     plot('p','b');
+    plot_sperre($p_file{"sperre_b"}, -abk => "sperre_b");
     $progress->FinishGroup;
 };
 $check_sub{'r'} = sub {

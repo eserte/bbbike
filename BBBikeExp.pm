@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeExp.pm,v 1.20 2004/03/22 23:38:55 eserte Exp eserte $
+# $Id: BBBikeExp.pm,v 1.21 2004/04/21 22:29:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -28,17 +28,17 @@ use vars qw(%exp_str_drawn %exp_str
 use vars qw($xadd_anchor $yadd_anchor @extra_tags $ignore);
 use BBBikeGlobalVars;
 
-use vars qw(@defs_str @defs_p @defs_p_o
+# @defs_p_o @defs_p_o_abk
+use vars qw(@defs_str @defs_p
 	    @defs_str_abk
 	    @defs_p_abk
-	    @defs_p_o_abk
 	    @defs_p_subs_abk
 	   );
 
 sub BBBikeExp::bbbikeexp_setup {
     @defs_str = ();
     @defs_p = ();
-    @defs_p_o = ();
+#    @defs_p_o = ();
     if ($coord_system eq 'standard') {
 	if ($lowmem) {
 	    @defs_str = (['s', 'strassen'],
@@ -74,7 +74,7 @@ sub BBBikeExp::bbbikeexp_setup {
 			   ['r', 'rbahnhof'],
 			   ['lsa', 'ampeln'],
 			  );
-		@defs_p_o = (['o', 'orte']); # Extra-Wurst wegen plotorte()
+#XXX		@defs_p_o = (['o', 'orte']); # Extra-Wurst wegen plotorte()
 	    }
 
 	}
@@ -103,13 +103,14 @@ sub BBBikeExp::bbbikeexp_setup {
 		     ['ql', 'qualitaet_l-orig'],
 		     ['hl', 'handicap_l-orig'],
 		    );
-	@defs_p_o = (['o', 'orte-orig']); # Extra-Wurst wegen plotorte()
+#	@defs_p_o = (['o', 'orte-orig']); # Extra-Wurst wegen plotorte()
+	@defs_p = (['o', 'orte-orig']);
     } else {
 	die "Nothing to do for coord_system $coord_system";
     }
     @defs_str_abk = map { $_->[0] } @defs_str;
     @defs_p_abk   = map { $_->[0] } @defs_p;
-    @defs_p_o_abk = map { $_->[0] } @defs_p_o;
+#    @defs_p_o_abk = map { $_->[0] } @defs_p_o;
 
     $BBBikeExp::setup_done = 1;
 }
@@ -117,10 +118,10 @@ sub BBBikeExp::bbbikeexp_setup {
 sub BBBikeExp::bbbikeexp_empty_setup {
     @defs_str = ();
     @defs_p = ();
-    @defs_p_o = ();
+#    @defs_p_o = ();
     @defs_str_abk = map { $_->[0] } @defs_str;
     @defs_p_abk   = map { $_->[0] } @defs_p;
-    @defs_p_o_abk = map { $_->[0] } @defs_p_o;
+#    @defs_p_o_abk = map { $_->[0] } @defs_p_o;
 
     $BBBikeExp::setup_done = 1;
 }
@@ -327,7 +328,7 @@ sub BBBikeExp::bbbikeexp_init {
     foreach my $def (@defs_str) {
 	BBBikeExp::draw_streets($def);
     }
-    foreach my $def (@defs_p, @defs_p_o) {
+    foreach my $def (@defs_p) { #, @defs_p_o) {
 	BBBikeExp::draw_points($def);
     }
 #XXX needed here???    make_net(-l_add => 1) if !defined $net and !$no_make_net;
@@ -354,7 +355,7 @@ sub BBBikeExp::bbbikeexp_clear {
 	$c->delete($def->[0]);
 	$str_draw{$def->[0]} = 0;
     }
-    foreach my $def (@defs_p, @defs_p_o) {
+    foreach my $def (@defs_p) { #, @defs_p_o) {
 	delete $exp_p{$def->[0]};
 	$c->delete($def->[0]);
 	$p_draw{$def->[0]} = 0;
@@ -460,6 +461,7 @@ sub BBBikeExp::plotstr_on_demand {
 	}
 
 	foreach my $abk (@defs_p_abk) {
+	    next if $abk eq 'o';
 # 	    my %category_width;
 # 	    my $default_width = get_line_width($abk) || 4;
 # 	    #XXX skalieren...
@@ -511,8 +513,11 @@ sub BBBikeExp::plotstr_on_demand {
 	    plot_symbol($c, $abk);
 	}
 
+	if (0) {
 	my $municipality = 0;
-	foreach my $abk (@defs_p_o_abk) {
+#	foreach my $abk (@defs_p_o_abk) {
+	foreach my $abk (@defs_p_abk) {
+	    next if $abk ne 'o';
 	    my $type = $abk;
 	    my $label_tag = uc($type);
 	    my $name_o = $p_name_draw{$abk};
@@ -544,6 +549,32 @@ sub BBBikeExp::plotstr_on_demand {
 		}
 	    }
 	}
+    } else {
+#	foreach my $abk (@defs_p_o_abk) {
+	foreach my $abk (@defs_p_abk) {
+	    next if $abk ne 'o';
+	    plotplaces_pre_a(-type => $abk,
+			     -strdata => $exp_p{$abk},
+			    );
+	    plotplaces_pre2();
+	    my $i = 0;
+
+	    foreach my $grid (@grids) {
+		if ($exp_p{$abk}->{Grid}{$grid}) {
+		    warn "Drawing new grid: $grid\n" if $verbose;
+		    $something_new++;
+		    foreach my $strpos (@{ $exp_p{$abk}->{Grid}{$grid} }) {
+			if (!$exp_p_drawn{$abk}->{$strpos}) {
+			    my $r = $exp_p{$abk}->get($strpos);
+			    $i = $strpos+1; # XXX warum +1?
+			    plotplaces_draw($r);
+			    $exp_p_drawn{$abk}->{$strpos}++;
+			}
+		    }
+		}
+	    }
+	}
+    }
 
 	foreach my $abk (@defs_p_subs_abk) {
 	    my $draw_sub = $exp_p_subs{$abk}->{draw};
@@ -579,6 +610,7 @@ sub BBBikeExp::plotstr_on_demand {
 					  -width => 5,
 					  -fill => $pp_color,
 					 );
+			if(0) {
 			# die nächsten beiden sind Duplikate
 			# auf plotorte()
 			# Hier wird nur 'o' behandelt...
@@ -597,12 +629,323 @@ sub BBBikeExp::plotstr_on_demand {
 			    : ()
 			   ),
 			  );
+		    } else {
+			plotplaces_post();
+}
 		    },
 		    -name => 'itemconfigurepp',
 		   );
     }
 }
 
+# Zeichnet Orte --- next generation
+{
+    my $c = $c;
+    my($std, $transpose, $municipality, $type, $label_tag, $orte, $lazy,
+       $coordsys, %args);
+    my $i;
+    my($place_category, $name_o, $progress_hack, $diffed_orte,
+       @orte_coords_labeling, $next_meth, $anzahl_eindeutig, $do_outline_text,
+       $conv);
+
+    sub plotplaces_pre {
+	(%args) = @_;
+
+	$type         = $args{-type} || 'o';
+	$label_tag    = uc($type);
+	if (exists $args{Canvas}) {
+	    $c = $args{Canvas};
+	    $std = 0;
+	} else {
+	    $std = 1;
+	}
+
+	# evtl. alte Koordinaten löschen
+	if (!$args{FastUpdate}) {
+	    $c->delete($type);
+	    $c->delete($label_tag);
+	}
+
+	delete $pending{"replot-p-$type"};
+
+	if ($std && !$p_draw{$type}) {
+	    undef $p_obj{$type};
+	    if ($main::exp_p{$type}) {
+		bbbikeexp_remove_data("p", $type);
+	    }
+	    return 0;
+	}
+
+	$orte = _get_orte_obj($type);
+
+	$lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
+	if ($std && $lazy) {
+	    bbbikeexp_add_data("p", $type, $orte);
+	    return 0;
+	}
+
+	1;
+    }
+
+    sub plotplaces_pre_a {
+	my(%args) = @_;
+	$type = $args{-type} || 'o';
+	$label_tag = uc($type);
+	$orte = $args{-strdata};
+    }
+
+    sub plotplaces_pre2 {
+	if (exists $args{Canvas}) {
+	    $transpose = ($show_overview_mode eq 'brb'
+			  ? \&transpose_small
+			  : \&transpose_medium);
+	} else {
+	    $transpose = \&transpose;
+	}
+
+	$municipality = $args{-municipality};
+
+	$coordsys = $coord_system_obj->coordsys;
+
+	$place_category = (exists $args{PlaceCategory}
+			   ? $args{PlaceCategory} : $place_category);
+	$name_o        = (exists $args{NameDraw}
+			  ? $args{NameDraw}     : $p_name_draw{$type});
+	$progress_hack = ($name_o && $no_overlap_label{$type});
+
+	$diffed_orte = 0;
+	if (($edit_mode || $edit_normal_mode) && $args{FastUpdate}) {
+	    my($new_orte, $todelref) = $orte->diff_orig(-clonefile => 1);
+	    if (!defined $new_orte) {
+		warn "Not using diff output" if $verbose;
+		$c->delete($type); # evtl. alte Koordinaten löschen
+		$c->delete($label_tag);
+	    } else {
+		warn "Using diff output" if $verbose;
+		# XXX not used due to lack of tag $type-$i
+		#foreach (@$todelref) {
+		#    $c->delete("$type-$_");
+		#}
+		$orte = $new_orte;
+		$diffed_orte = 1;
+	    }
+	}
+
+	if ($no_overlap_label{$type}) {
+	    $orte->init;
+	    $next_meth = 'next';
+	} else {
+	    # in diesem Fall sollten die größeren Orte _später_ d.h. über
+	    # den kleineren gezeichnet werden
+	    $orte->set_last;
+	    $next_meth = 'prev';
+	}
+	$anzahl_eindeutig = $orte->count;
+	$do_outline_text = $do_outline_text{$type};
+
+	$conv = $orte->get_conversion;
+
+	$i = 0; # counter
+    }
+
+    sub plotplaces_draw {
+	my $ret = shift;
+	my $cat = $ret->[Strassen::CAT];
+	my($name, $add) = split(/\|/, $ret->[Strassen::NAME]);
+	my($xx,$yy);
+	$_ = $ret->[Strassen::COORDS][0];
+	$_ = $conv->($_) if $conv;
+
+	# XXX duplicated from $parse_coords_code
+	if (!$edit_mode) {
+	    ($xx, $yy) = split /,/, $_;
+	} elsif ($edit_mode &&
+		 /([A-Za-z]+)?(-?[\d\.]+),(-?[\d\.]+)$/) {
+	    # XXX Verwendung von data/BASE (hier und überall)
+	    my $this_coordsys = (defined $1 ? $1 : '');
+	    if ($this_coordsys eq $coordsys ||
+		(!($this_coordsys ne '' || $coordsys ne 'B'))) {
+		($xx, $yy) = ($2, $3);
+	    } else {
+		# the hard way: convert it
+		$this_coordsys = 'B' if $this_coordsys eq '';
+		($xx,$yy) = $Karte::map_by_coordsys{$this_coordsys}->map2map($coord_system_obj, $2, $3);
+	    }
+	} else {
+	    return;
+	}
+	# ^^^
+
+	if (defined $xx) {
+	    my($tx, $ty) = $transpose->($xx, $yy);
+	    my $fullname = ($add ? $name . " " . $add : $name);
+	    return if ($place_category && $place_category ne "auto" && $cat < $place_category);
+	    my $point_item;
+	    if (!$municipality) {
+		$point_item = $c->createLine
+		    ($tx, $ty, $tx, $ty,
+		     -tags => [$type, $fullname, $label_tag."P$cat"],
+		    );
+	    }
+	    if ($name_o) {
+		my $text = ($args{Shortname}
+			    ? $name
+			    : $fullname);
+		my(@tags) = ($label_tag, "$label_tag$cat");
+		if ($orientation eq 'portrait' && $Tk::VERSION >= 800) {
+		    require Tk::RotFont;
+		    # XXX geht nicht...
+		    Tk::RotFont::createRotText
+			    ($c, $tx, $ty-4,
+			     -text => $text,
+			     -rot => 3.141592653/2,
+			     #-font => get_orte_label_font($cat),
+			     -font => $rot_font_sub->(100+$cat*12),
+			     -tags => \@tags,
+			    );
+		} elsif ($no_overlap_label{$type} && !$municipality) {
+		    push(@orte_coords_labeling,
+			 [$text, $tx, $ty, $cat, $point_item]);
+		} else {
+		    if ($do_outline_text) {
+			outline_text
+			    ($c,
+			     $tx+4,
+			     $ty,
+			     -text => $text,
+			     -tags => \@tags,
+			     -anchor => 'w',
+			     -justify => 'left',
+			     -fill => '#000080',
+			     -font => get_orte_label_font($cat),
+			    );
+		    } else {
+			$c->createText($tx, $ty,
+				       -text => $label_spaceadd{'o'} . $text,
+				       -tags => \@tags,
+				      );
+		    }
+		}
+	    }
+	}
+    }
+
+    sub plotplaces_post {
+	$c->itemconfigure($type,
+			  -capstyle => $capstyle_round,
+			  -width => 5,
+			  -fill => '#000080',
+			 );
+	if ($name_o) {
+	    if ($no_overlap_label{$type}) {
+		# nach Kategorie sortieren
+		@orte_coords_labeling
+		  = sort { $b->[3] <=> $a->[3] } @orte_coords_labeling;
+		my $i = 0;
+		foreach my $ort_def (@orte_coords_labeling) {
+		    $progress->Update($i/$anzahl_eindeutig*.5+0.5)
+		      if $i % 80 == 0;
+		    $i++;
+		    my($text, $tx, $ty, $cat, $point_item) = @$ort_def;
+		    my $font = get_orte_label_font($cat);
+		    my(@tags) = ($label_tag, "$label_tag$cat");
+		    if (!draw_text_intelligent($c, $tx, $ty,
+					       -text => $text,
+					       -font => $font,
+					       -tags => \@tags,
+					       -abk  => $label_tag,
+					      )) {
+			if ($cat <= $place_category+1) {
+			    $c->delete($point_item);
+			} else {
+			    my $anchor = 'w';
+			    $c->createText
+			      ($tx+$xadd_anchor_type->{'o'}{$anchor},
+			       $ty+$yadd_anchor_type->{'o'}{$anchor},
+			       -text => $text,
+			       -font => $font,
+			       -tags => \@tags,
+			       -anchor => $anchor,
+			       -justify => 'left',
+			      );
+			}
+		    }
+		}
+	    }
+	    if (!$no_overlap_label{$type} && !$municipality &&
+		!$do_outline_text) {
+		$c->itemconfigure($label_tag,
+				  -anchor => 'w', -justify => 'left');
+	    }
+	    if ($orientation eq 'landscape' &&
+		!$do_outline_text) {
+		$c->itemconfigure($label_tag,
+				  -font => get_orte_label_font(2));
+	    }
+	    if ($municipality) {
+		$c->itemconfigure($label_tag, -fill => '#7e7e7e');
+	    } elsif (!$do_outline_text) {
+		$c->itemconfigure($label_tag, -fill => '#000080');
+	    }
+	    if ($orientation eq 'landscape' &&
+		!$do_outline_text) {
+		unless ($args{'AllSmall'}) {
+		    # wichtigere Orte bekommen eine größere Schrift
+		    foreach my $category (3, 4, 5, 6) {
+			$c->itemconfigure
+			  ("$label_tag$category",
+			   -font => get_orte_label_font($category));
+		    }
+		}
+	    }
+	}
+
+	if (!($edit_mode || $edit_normal_mode) && !$municipality) {
+	    change_place_visibility($c);
+	}
+
+	if (($edit_mode || $edit_normal_mode) and !$diffed_orte) {
+	    warn "Try to copy original data" if $verbose;
+	    my $r = $orte->copy_orig;
+	    warn "Returned $r" if $verbose;
+	}
+    }
+
+    sub plotplaces {
+	my(%args) = @_;
+
+	my $ret = plotplaces_pre(%args);
+	return if !$ret;
+
+	destroy_delayed_restack();
+	IncBusy($top);
+	$progress->Init(-dependents => $c,
+			-label => 'orte');
+	eval {
+	    plotplaces_pre2();
+
+	    while(1) {
+		my $ret = $orte->$next_meth();
+		last if !@{$ret->[Strassen::COORDS]};
+		$progress->Update($i/$anzahl_eindeutig*($progress_hack ? 0.5 : 1))
+		    if $i % 80 == 0;
+		$i++;
+		plotplaces_draw($ret);
+	    }
+
+	    plotplaces_post();
+
+	    if ($std) {
+		restack_delayed();
+	    }
+	};
+	if ($@) {
+	    status_message($@, 'err');
+	}
+	$progress->Finish;
+	DecBusy($top);
+    }
+}
 warn "Load of BBBikeExp done!";
 
 1;

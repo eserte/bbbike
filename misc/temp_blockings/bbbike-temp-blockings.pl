@@ -246,4 +246,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Potsdamer Straße zwischen Schöneberger Ufer und Pohlstraße in beiden Richtungen gesperrt, Veranstaltung (Boulevard des Artistes). Dauer: 10.04.2004, 04:00 Uhr bis 12.04.2004, 24:00 Uhr',
        type  => 'gesperrt',
      },
+     { from  => 1082869200, # 2004-04-25 07:00
+       until => 1083362400, # 2004-05-01 00:00
+       file  => 'lueckstr.bbd',
+       text  => 'Lückstraße zwischen Giselastraße und Schlichtallee in Fahrtrichtung Schlichtallee Bauarbeiten, Straße gesperrt. Dauer: 26.04.2004, 07:00 Uhr bis voraussichtlich 30.04.2004 ',
+       type  => 'handicap',
+     },
     );
