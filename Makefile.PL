@@ -110,7 +110,7 @@ use constant REQTABLE_LONGDESC=> 5;
    'Anzeige des Sonnenuntergangs/-aufgangs im Info-Fenster'],
   [qw/File::ReadBackwards 0	all	0	devel/,
    'LogTracker plugin'],
-  [qw/Date::Calc	0	all	0	devel/,
+  [qw/Date::Pcalc	0	all	0	devel/,
    'LogTracker plugin'],
   [qw/XBase		0	all	0	devel/,
    'Erzeugen der Mapserver- oder anderer ESRI-Dateien'],
