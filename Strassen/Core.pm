@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.36 2004/04/07 21:36:27 eserte Exp eserte $
+# $Id: Core.pm,v 1.38 2004/05/09 20:51:05 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.36 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -734,7 +734,7 @@ sub all_crossings {
     }
     if ($use_cache && $rettype =~ /^hash/) {
 	require Strassen::Util;
-	my $hashref = Strassen::Util::get_from_cache($cachefile, [$self->file]);
+	my $hashref = Strassen::Util::get_from_cache($cachefile, [$self->dependent_files]);
 	if (defined $hashref) {
 	    warn "Using cache for $cachefile\n" if $VERBOSE;
 	    return $hashref;
@@ -838,7 +838,7 @@ sub make_grid {
 	            "_" . $self->{GridWidth}."x".$self->{GridHeight};
     if ($use_cache) {
 	require Strassen::Util;
-	my $hashref = Strassen::Util::get_from_cache($cachefile, [$self->file]);
+	my $hashref = Strassen::Util::get_from_cache($cachefile, [$self->dependent_files]);
 	if (defined $hashref) {
 	    warn "Using grid cache for $cachefile\n" if $VERBOSE;
 	    $self->{Grid} = $hashref;

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.67 2004/04/30 22:56:03 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.70 2004/05/09 20:52:03 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -609,10 +609,11 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.67 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.70 $ =~ /(\d+)\.(\d+)/);
 
-my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
-my $delim = '!'; # wegen Mac nicht ¦ verwenden!
+use vars qw($font $delim);
+$font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
+$delim = '!'; # wegen Mac nicht ¦ verwenden!
 
 @weak_cache = ('-expires' => '+1d',
                # XXX ein bißchen soll Netscape3 auch cachen können:
@@ -631,35 +632,38 @@ if (defined %Apache::) {
     'lib'->import(@extra_libs);
 }
 
+use vars qw($xgridwidth $ygridwidth $xgridnr $ygridnr $xm $ym $x0 $y0
+	    $detailwidth $detailheight $nice_berlinmap $nice_abcmap
+	    $start_bgcolor $via_bgcolor $ziel_bgcolor @pref_keys);
 # Konstanten für die Imagemaps
 # Die nächsten beiden Variablen müssen auch in bbbike_start.js geändert werden.
-my $xgridwidth = 20; # 20 * 10 = 200: Breite und Höhe von berlin_small.gif
-my $ygridwidth = 20;
-my $xgridnr = 10;
-my $ygridnr = 10;
+$xgridwidth = 20; # 20 * 10 = 200: Breite und Höhe von berlin_small.gif
+$ygridwidth = 20;
+$xgridnr = 10;
+$ygridnr = 10;
 # Diese Werte (bis auf $ym) werden mit small_berlinmap.pl ausgegeben.
-my $xm = 228.58;
-my $ym = $xm;
-my $x0 = -10849;
-my $y0 = 34867;
+$xm = 228.58;
+$ym = $xm;
+$x0 = -10849;
+$y0 = 34867;
 ## schön groß, aber passt nicht auf Seite
-#my $detailwidth  = 600; # muß quadratisch sein!
-#my $detailheight = 600;
-my $detailwidth  = 500; # muß quadratisch sein!
-my $detailheight = 500;
-my $nice_berlinmap = 0;
-my $nice_abcmap    = 0;
+#$detailwidth  = 600; # muß quadratisch sein!
+#$detailheight = 600;
+$detailwidth  = 500; # muß quadratisch sein!
+$detailheight = 500;
+$nice_berlinmap = 0;
+$nice_abcmap    = 0;
 
-my $start_bgcolor = '';
-my $via_bgcolor   = '';
-my $ziel_bgcolor  = '';
+$start_bgcolor = '';
+$via_bgcolor   = '';
+$ziel_bgcolor  = '';
 if (!$use_background_image) {
     $start_bgcolor = '#f0f8ff';
     $via_bgcolor   = '#ecf4ff';
     $ziel_bgcolor  = '#e8f0ff';
 }
 
-my @pref_keys = qw/speed cat quality ampel green/;
+@pref_keys = qw/speed cat quality ampel green/;
 
 $q = new CGI;
 undef $g_str; # XXX because it may already contain landstrassen etc.
@@ -3699,18 +3703,21 @@ sub draw_map {
 		    my(@map_file_stat)   = stat($img_file);
 		    if (defined $map_file_stat[9]) {
 			my(@bbbike_cgi_stat) = stat($0);
-			my(@strassen_stat)   = stat($str->{File});
-			my $to_create_time =
-			  min($img_file_stat[9], $map_file_stat[9]);
-			my $check_time =
-			  ($check_map_time == 0 ? 0 :
-			   ($check_map_time == 1 ? $strassen_stat[9] :
-			    max($bbbike_cgi_stat[9], $strassen_stat[9])
-			   ));
-			$create = ($to_create_time < $check_time);
-			if ($debug) {
-			    warn __LINE__ . ": time_exist=$to_create_time, " .
-			      "check_time=$check_time, create=$create\n";
+			for my $str_file ($str->dependent_files) {
+			    my(@strassen_stat)   = stat($str_file);
+			    my $to_create_time =
+				min($img_file_stat[9], $map_file_stat[9]);
+			    my $check_time =
+				($check_map_time == 0 ? 0 :
+				 ($check_map_time == 1 ? $strassen_stat[9] :
+				  max($bbbike_cgi_stat[9], $strassen_stat[9])
+				 ));
+			    $create = ($to_create_time < $check_time);
+			    if ($debug) {
+				warn __LINE__ . ": time_exist=$to_create_time, " .
+				    "check_time=$check_time, create=$create\n";
+			    }
+			    last if $create;
 			}
 		    } elsif ($debug) {
 			warn __LINE__ . ": Can't stat $map_file: $!\n";
@@ -4053,7 +4060,7 @@ sub fix_coords {
 
     my $get_next_scopes = sub {
 	my $scope = shift;
-	if ($scope =~  /\bcity\b/) {
+	if (!defined $scope || $scope eq "" || $scope =~  /\bcity\b/) {
 	    return (qw(region wideregion));
 	} elsif ($scope =~ /\bregion\b/) {
 	    return (qw(wideregion));
@@ -4093,6 +4100,10 @@ sub fix_coords {
 	    }
 
 	    # Fallback to old, non-exact chooser
+	    #
+	    # This is for now buggy, because we should really use
+	    # AllPoints in Kreuzungen->new and all_crossings.
+	    #
 	    my(@nearest) = $kr->nearest_coord($$varref, IncludeDistance => 1);
 	    if (@nearest && $nearest[0]->[1] < 50) {
 		$$varref = $nearest[0]->[0];

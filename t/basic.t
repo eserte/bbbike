@@ -50,9 +50,18 @@ for my $f (@files) {
 		push @add_opt, "-M$non_heavy";
 	    }
 	}
+	open(OLDERR, ">&STDERR") or die;
+	my $diag_file = "/tmp/bbbike-basic.text";
+	open(STDERR, ">$diag_file") or die $!;
 	system($^X, "-c", "-Ilib", @add_opt, "./$f");
+	close STDERR;
+	open(STDERR, ">&OLDERR") or die;
 	die "Signal caught" if $? & 0xff;
-	is($?, 0, "Check $f");
+	is($?, 0, "Check $f")
+	    or do {
+		system("cat $diag_file");
+	    };
+	unlink $diag_file;
     }
 }
 

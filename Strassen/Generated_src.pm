@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: Generated_src.pm,v 1.16 2004/03/26 22:05:00 eserte Exp $
+# $Id: Generated_src.pm,v 1.17 2004/05/09 20:51:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -144,7 +144,8 @@ sub make_net_slow_<%=$type%> {
 
 sub net_read_cache_<%=$type%> {
     my($self) = @_;
-    my @src = $self->sourcefiles;
+#XXX    my @src = $self->sourcefiles;
+    my @src = $self->dependent_files;
     if (!@src || grep { !defined $_ } @src) {
 	return 0;
     }
@@ -186,7 +187,8 @@ sub net_read_cache_<%=$type%> {
 
 sub net_write_cache_<%=$type%> {
     my($self) = @_;
-    my @src = $self->sourcefiles;
+#XXX    my @src = $self->sourcefiles;
+    my @src = $self->dependent_files;
     if (!@src || grep { !defined $_ } @src) {
 	return;
     }

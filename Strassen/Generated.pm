@@ -64,7 +64,8 @@ sub make_net_slow_1 {
 
 sub net_read_cache_1 {
     my($self) = @_;
-    my @src = $self->sourcefiles;
+#XXX    my @src = $self->sourcefiles;
+    my @src = $self->dependent_files;
     if (!@src || grep { !defined $_ } @src) {
 	return 0;
     }
@@ -94,7 +95,8 @@ sub net_read_cache_1 {
 
 sub net_write_cache_1 {
     my($self) = @_;
-    my @src = $self->sourcefiles;
+#XXX    my @src = $self->sourcefiles;
+    my @src = $self->dependent_files;
     if (!@src || grep { !defined $_ } @src) {
 	return;
     }
@@ -176,7 +178,8 @@ sub make_net_slow_2 {
 
 sub net_read_cache_2 {
     my($self) = @_;
-    my @src = $self->sourcefiles;
+#XXX    my @src = $self->sourcefiles;
+    my @src = $self->dependent_files;
     if (!@src || grep { !defined $_ } @src) {
 	return 0;
     }
@@ -212,7 +215,8 @@ sub net_read_cache_2 {
 
 sub net_write_cache_2 {
     my($self) = @_;
-    my @src = $self->sourcefiles;
+#XXX    my @src = $self->sourcefiles;
+    my @src = $self->dependent_files;
     if (!@src || grep { !defined $_ } @src) {
 	return;
     }
@@ -228,7 +232,7 @@ sub net_write_cache_2 {
     }
 }
 
-# line 225 Generated_src.pm
+# line 227 Generated_src.pm
 sub route_to_name_1 {
     my($self, $route_ref, %args) = @_;
     my @strname;
@@ -336,7 +340,7 @@ sub route_to_name_1 {
 
     @strname;
 }
-# line 225 Generated_src.pm
+# line 227 Generated_src.pm
 sub route_to_name_2 {
     my($self, $route_ref, %args) = @_;
     my @strname;
@@ -466,7 +470,7 @@ sub route_to_name_2 {
 
     @strname;
 }
-# line 371 Generated_src.pm
+# line 373 Generated_src.pm
 sub reachable_1 {
     my($self, $coord) = @_;
     if (!exists $self->{Net}{$coord}) {
@@ -477,7 +481,7 @@ sub reachable_1 {
 	1;
     }
 }
-# line 371 Generated_src.pm
+# line 373 Generated_src.pm
 sub reachable_2 {
     my($self, $coord) = @_;
     if (!defined $self->{Net}[$self->{Coord2Index}{$coord}]) {

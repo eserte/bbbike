@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.11 2003/07/11 06:28:38 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.12 2004/05/09 13:58:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -64,7 +64,9 @@ eval {
 	}
     }
 
-    my $msg = Mail::Send->new(Subject => "BBBike/Mapserver comment",
+    my $subject = param("subject") || "BBBike/Mapserver comment";
+    $subject = substr($subject, 0, 70) . "..." if length $subject > 70;
+    my $msg = Mail::Send->new(Subject => $subject,
 			      To      => $to,
 			     );
     die "Kann kein Mail::Send-Objekt erstellen" if !$msg;

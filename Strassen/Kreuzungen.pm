@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Kreuzungen.pm,v 1.11 2004/01/17 13:40:18 eserte Exp $
+# $Id: Kreuzungen.pm,v 1.13 2004/05/09 20:50:44 eserte Exp eserte $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -43,6 +43,8 @@ sub new {
     $self->{Array} = $args{Array};
     $self->{IsPos} = $args{WantPos};
     $self->{Strassen} = $args{Strassen};
+    $self->{Config} = [ ($all_points ? "kurvenp" : ()) ];
+
     bless $self, $class;
 }
 
@@ -55,6 +57,7 @@ sub new_from_strassen {
     my $want_pos = $args{WantPos};
     my $self = {};
     $self->{Hash} = {};
+    $self->{Config} = [ ];
     my $str = $args{Strassen};
     if (!$str) {
 	die "Missing arg for new_from_strassen: Strassen";
@@ -93,6 +96,16 @@ sub file {
 	$self->{Strassen}->file;
     } else {
 	undef;
+    }
+}
+
+### Autoload Sub
+sub dependent_files {
+    my $self = shift;
+    if ($self->{Strassen}) {
+	$self->{Strassen}->dependent_files;
+    } else {
+	return; # undef or ()
     }
 }
 
@@ -144,8 +157,11 @@ sub make_grid {
 		last TRY_CACHE;
 	    }
 	    $cachefile = "kreuzungen_grid_" . $id . "_" . $self->{GridWidth} . "x" . $self->{GridHeight};
+	    if ($self->{Config} && @{ $self->{Config} }) {
+		$cachefile .= "_" . join("_", @{ $self->{Config} });
+	    }
 	    require Strassen::Util;
-	    my $hashref = Strassen::Util::get_from_cache($cachefile, [$self->file]);
+	    my $hashref = Strassen::Util::get_from_cache($cachefile, [$self->dependent_files]);
 	    if (defined $hashref) {
 		warn "Using cache for $cachefile\n" if $VERBOSE;
 		$self->{Grid} = $hashref;
@@ -213,7 +229,7 @@ sub nearest {
 		}
 	    }
 	}
-	last if $best_only && @res;
+	last if $best_only && @res && $grids_i > 0;
     }
 
     if ($args{IncludeDistance}) {

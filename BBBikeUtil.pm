@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeUtil.pm,v 1.18 2003/11/16 22:16:13 eserte Exp eserte $
+# $Id: BBBikeUtil.pm,v 1.19 2004/05/09 20:35:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -184,7 +184,7 @@ sub rcs_co {
     require Cwd;
     my $cwd = Cwd::cwd();
     my($f, $dir) = File::Basename::fileparse($file);
-    chdir $dir or die "Kann kein chdir zum Verzeichnis $dir durchf\x{fc}hren: $!";
+    chdir $dir or die "Kann kein chdir zum Verzeichnis $dir durchführen: $!";
     system("co -l $f");
     my $ok = 1;
     if ($? != 0) {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.23 2004/03/30 19:57:59 eserte Exp $
+# $Id: cgi.t,v 1.24 2004/05/10 07:03:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004 Slaven Rezic. All rights reserved.
@@ -245,6 +245,7 @@ for my $cgiurl (@urls) {
 	$content = uncompr($res);
 	like($content, qr/Sekunden.*Zeitverlust/);
 
+    XXX:
 	# This is only correct with use_exact_streetchooser=true
 	$req = new HTTP::Request
 	    ('GET', "$action?startc=13332%2C15765&zielc=-10825,-62&startname=Berliner+Allee&zielname=Babelsberg+%28Potsdam%29&pref_seen=1&pref_speed=21&pref_cat=&pref_quality=&output_as=perldump&scope=");
@@ -441,7 +442,6 @@ for my $cgiurl (@urls) {
 	ok($content =~ /^GIF8/) or diag $url;
     }
 
-    XXX:
     for my $imagetype (
 		       "gif", "png", "jpeg",
 		       "svg", "mapserver",

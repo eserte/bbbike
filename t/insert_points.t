@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points.t,v 1.2 2003/11/16 22:34:59 eserte Exp $
+# $Id: insert_points.t,v 1.5 2004/05/09 22:12:44 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -27,10 +27,14 @@ if (!-x $insert_points[-1]) {
     exit 0;
 }
 
-plan tests => 4;
+plan tests => 5;
 
 my $dudenstr      = "9222,8787";
-my $dudenstr_orig = "8796,8817";
+my $dudenstr_orig = $dudenstr; # "8796,8817";
+
+BEGIN { $^W = 0 }
+my @methfesselstr = qw(8982,8781 9057,8936);
+BEGIN { $^W = 1 }
 
 SKIP: {
     skip "relation_gps-orig missing", 4
@@ -113,6 +117,19 @@ SKIP: {
 		       )),
 	   "generated and change");
     }
+
+    {
+	my @res = IO::Pipe->new->reader(@insert_points,
+					"-operation", "changeline",
+					"-report", "-useint",
+					"-datadir", $datadir, "-n",
+					@methfesselstr, "0,0")->getlines;
+	chomp @res;
+	is(join(" ", sort @res),
+	   join(" ", qw(qualitaet_s-orig strassen-orig)),
+	   "orig and changeline");
+    }
+
 }
 
 __END__

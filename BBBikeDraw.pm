@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.35 2003/11/29 21:21:55 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.35 2003/11/29 21:21:55 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -352,10 +352,9 @@ EOF
 	$self->{AntiTransposeCode} = $anti_code;
     }
 
-#XXX how?
-#    # Correct bounding box:
+    # Correct bounding box:
 #warn "before: ($self->{Min_x}, $self->{Min_y}, $self->{Max_x}, $self->{Max_y})";
-#    $self->set_bbox($transpose->(0,0),$transpose->($w, $h));
+    $self->set_bbox($anti_transpose->(0,0),$anti_transpose->($w, $h));
 #warn "after: ($self->{Min_x}, $self->{Min_y}, $self->{Max_x}, $self->{Max_y})";
 
     $self->{Xk} = $xk;

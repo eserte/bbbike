@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: temp_blockings_dates.t,v 1.3 2003/09/02 19:28:50 eserte Exp $
+# $Id: temp_blockings_dates.t,v 1.4 2004/05/09 22:26:19 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -169,7 +169,7 @@ EOF
 	my($start_date, $end_date, $prewarn_days, $rx_matched);
 	eval {
 	    ($start_date, $end_date, $prewarn_days, $rx_matched)
-		= BBBikeEdit::temp_blockings_editor_parse_dates($btxt);
+		= BBBikeEditUtil::parse_dates($btxt);
 	    # Delta 1s for Today_and_Now tests
 	    ok(abs($start_date - shift @$test_data) <= 1) or $errors++;
 	    ok(abs($end_date   - shift @$test_data) <= 1) or $errors++;

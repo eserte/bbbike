@@ -2,14 +2,14 @@
 # -*- perl -*-
 
 #
-# $Id: VectorUtil.pm,v 1.14 2003/10/01 22:31:36 eserte Exp $
+# $Id: VectorUtil.pm,v 1.16 2004/05/09 11:56:50 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
+# Mail: eserte@users.sourceforge.net
 # WWW:  http://bbbike.sourceforge.net
 #
 
@@ -17,13 +17,13 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 require Exporter;
 @ISA = 'Exporter';
 
 @EXPORT_OK = qw(vector_in_grid distance_point_line get_polygon_center
-		point_in_grid);
+		point_in_grid point_in_polygon);
 
 # Diese Funktion testet, ob sich ein Vektor innerhalb eines Gitters
 # befindet. Für Vektoren, bei denen mindestens einer der Punkte innerhalb
@@ -276,6 +276,29 @@ sub point_in_grid {
     my($x1,$y1,$gridx1,$gridy1,$gridx2,$gridy2) = @_;
     return ($x1 >= $gridx1 && $x1 <= $gridx2 &&
 	    $y1 >= $gridy1 && $y1 <= $gridy2);
+}
+
+# This is translated from msPointInPolygon from mapsearch.c from
+# mapserver 3.6.4:
+sub point_in_polygon {
+    my($p,$poly) = @_;
+    my $status = 0;
+    my($px,$py) = @$p;
+
+    for(my $i = 0, my $j = $#$poly;
+	$i <= $#$poly;
+	$j = $i++
+       ) {
+	if (((($poly->[$i][1] <= $py) &&
+	      ($py < $poly->[$j][1])) ||
+	     (($poly->[$j][1] <= $py) &&
+	      ($py < $poly->[$i][1]))) &&
+	    ($px < ($poly->[$j][0] - $poly->[$i][0]) * ($py - $poly->[$i][1]) / ($poly->[$j][1] - $poly->[$i][1]) + $poly->[$i][0])) {
+	    $status = !$status;
+	}
+    }
+
+    return $status;
 }
 
 # REPO BEGIN

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.10 2004/05/08 08:08:26 eserte Exp $
+# $Id: Makefile,v 2.11 2004/05/09 21:25:40 eserte Exp $
 #
 
 BBBIKEDIR=		..
@@ -514,7 +514,8 @@ remove_nextruns:
 
 # checks
 check:	.check_strassen1 .check_strassen2 \
-	.check_plaetze1 .check_plaetze2 .check_hoehe \
+	.check_plaetze1 .check_plaetze2 .check_strassen_plaetze_unique \
+	.check_hoehe \
 	.check_ampeln .check_gesperrt1 .check_gesperrt2 \
 	.check_gesperrt_u2 .check_gesperrt_s2 .check_gesperrt_r2 \
 	.check_gesperrt_car1 .check_gesperrt_car2 \
@@ -544,6 +545,17 @@ check-disabled:	.check_label
 
 .check_plaetze2: plaetze add_plaetze
 	$(CHECK_STR_PLZ) -addstr add_plaetze -data plaetze -nomultibez
+	@touch $@
+
+.check_strassen_plaetze_unique:	strassen-orig plaetze-orig
+	cut -d"	" -f1 strassen-orig | sort -u > /tmp/strassen-names
+	cut -d"	" -f1 plaetze-orig  | sort -u > /tmp/plaetze-names
+	duplicates=`sort /tmp/strassen-names /tmp/plaetze-names | uniq -d`; \
+	if [ "$$duplicates" != "" ]; then \
+	    echo "Found duplicates:"; \
+	    echo "$$duplicates"; \
+	    false; \
+	fi
 	@touch $@
 
 .check_hoehe:	hoehe .strassen.tmp landstrassen landstrassen2 

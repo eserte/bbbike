@@ -4281,6 +4281,20 @@ $c->configure(-yscrollcommand =>
 		},
 	     );
 
+## XXX Enable after some rethaught...
+## XXX and remove the scrollregion code from scalecanvas
+# for my $hook (qw(after_plot after_resize)) {
+#     Hooks::get_hooks($hook)->add
+# 	    (sub {
+# 		 # XXX Is this fast enough?
+# 		 $c->configure(-scrollregion => [ $c->bbox("all") ]);
+# 	     }, "bbbike-scrollregion");
+#     $c->OnDestroy
+# 	(sub {
+# 	     Hooks::get_hooks($hook)->del("bbbike-scrollregion");
+# 	 });
+# }
+
 # Additional MouseWheel bindings
 $c->Tk::bind("<4>" => [sub { return if $_[1] ne "" && $_[1] ne "B4-";
 			     $c->yviewScroll(-1,"units") },

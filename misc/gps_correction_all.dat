@@ -342,3 +342,7 @@ N53 23 36.8	E13 35 04.5	20214,110213	# L259/L25, Fuerstenwerder
 #N51 21 59.7	E12 44 38.9	Wurzen: B6/S11 (hmmm, wo ist das?)
 #N52 16 52.3	E11 25 22.9	Haldensleben:B245/L24 nach Hundisburg (hmmm, es gibt zwei Stränge der B245?)
 N52 31 42.2	E11 26 02.5	-126837,12362	# B71/B188
+######################################################################
+# Plot this data:
+# ../miscsrc/convert_berlinmap.pl -datafromany gps_correction_all.dat -bbdoutput > /tmp/a.bbd
+#
