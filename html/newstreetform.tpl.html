@@ -55,15 +55,18 @@ function check() {
 }
 function check_strname() {
   var frm = document.forms.newstreet;
+[% IF !is_fragezeichen_form -%]
   if (frm.elements.strname.value == "") {
     alert("Der Straﬂenname darf nicht leer sein!");
     return false;
   }
+[% END -%]
   return true;
 }
 function init() {
   var frm = document.forms.newstreet;
 
+  var strname_html;
   if (location.search) {
     var search = unescape(location.search);
     if (search.match(/strname=([^;&]*)/)) {
@@ -74,6 +77,9 @@ function init() {
     }
     if (search.match(/plz=([^;&]*)/)) {
       frm.supplied_plz.value = RegExp.$1;
+    }
+    if (search.match(/strname_html=([^;&]*)/)) {
+      strname_html = RegExp.$1;
     }
   }
 
@@ -90,18 +96,61 @@ function init() {
       }
     }
   }
-[% END %]
+[% END -%]
+
+[% IF is_fragezeichen_form -%]
+  if (strname_html != "" && typeof document.getElementById == "function") {
+    var node = document.getElementById("fragezeichen_text");
+    if (node) {
+      node.innerHTML = strname_html;
+    }
+  }
+[% END -%]
 }
  </script>
 </head>
 <body onload="init()">
+[% IF is_fragezeichen_form -%]
+ <h1>Kommentar zur Straﬂe</h1>
+[% ELSE -%]
  <h1>Neue Straﬂe f¸r BBBike</h1>
+[% END -%]
  <form name="newstreet" method="post" action="[% cgidir | html %]/mapserver_comment.cgi">
   <input type="hidden" name="formtype" value="newstreetform" />
   <input type="hidden" name="supplied_strname" value="" />
   <input type="hidden" name="supplied_bezirk" value="" />
   <input type="hidden" name="supplied_plz" value="" />
   <table>
+
+[% IF is_fragezeichen_form -%]
+   <tr><td colspan="3"><hr /></td></tr>
+   <tr>
+    <td style="vertical-align:top;">
+     Kommentar zu:
+    </td>
+    <td>
+     <span id="fragezeichen_text" style="font-style:italic;"></span>
+    </td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>
+     <textarea cols="40" rows="5" name="comments">[% IF data.comments.defined %][% data.comments | html %][% END %]</textarea>
+    </td>
+   </tr>
+
+   <tr><td colspan="3"><hr /></td></tr>
+[% END -%]
+
+[% IF is_fragezeichen_form -%]
+   <tr>
+    <td colspan="2">
+     Weitere Angaben sind optional.
+    </td>
+   </tr>
+   <tr><td colspan="3"><hr /></td></tr>
+[% END -%]
+
    <tr>
     <td>Straﬂenname</td>
     <td><input name="strname" [% INCLUDE text_default inputname="strname" %] size="30"/>
@@ -208,11 +257,13 @@ function init() {
     </td>
    </tr>
 
+[% IF !is_fragezeichen_form -%]
    <tr><td colspan="3"><hr /></td></tr>
    <tr>
     <td>Sonstige<br/>Anmerkungen</td>
     <td><textarea cols="40" rows="5" name="comments">[% IF data.comments.defined %][% data.comments | html %][% END %]</textarea></td>
    </tr>
+[% END -%]
 
    <tr><td colspan="3"><hr /></td></tr>
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi2.pl,v 1.4 2005/01/24 08:13:34 eserte Exp $
+# $Id: cgi2.pl,v 1.5 2005/02/28 08:25:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -19,6 +19,7 @@ use IO::Tee;
 use Getopt::Long;
 use strict;
 use lib "$ENV{HOME}/lib/perl";
+use CGI;
 
 my $seek = 0;
 my $verbose = 1;
@@ -35,6 +36,7 @@ my $cgiurl = "http://www/bbbike/cgi/bbbike.cgi";
 #my $logfile = "$ENV{HOME}/www/AccessLog";
 my $logfile = "$ENV{HOME}/www/log/radzeit.combined_log";
 my $filter;
+my %add_param;
 
 GetOptions('seek=i'       => \$seek,
 	   'v|verbose!'   => \$verbose,
@@ -51,7 +53,11 @@ GetOptions('seek=i'       => \$seek,
 	   'url=s'        => \$cgiurl,
 	   "logfile=s"    => \$logfile,
 	   "filter=s"     => \$filter,
-	  );
+	   "addparam=s"   => \%add_param,
+	  ) or die <<EOF;
+usage: $0 [many options]
+-addparam key=value: add a key-value CGI parameter to all requests, e.g. pref_fragezeichen=yes
+EOF
 
 if ($sgml_check) {
     open(ERR, "+>$errorfile"); close ERR;
@@ -105,6 +111,7 @@ while(<LOG>) {
     if (m{GET (?:/~eserte/bbbike/cgi/bbbike.cgi|/cgi-bin/bbbike.cgi)\?(\S+)}) {
 	my $qs = $1;
 	next if (defined $filter && !/$filter/o);
+	next if m{\"BBBike-Test/\d+\.\d+\"}; # ignore my tests
 	push @requests, $qs; #XXX? uri_unescape($1);
 	push @req_lines, $_ if $netscape;
     }
@@ -118,7 +125,6 @@ my $tee = IO::Tee->new(\*STDERR, \*ERRLOG);
 my $ua = new LWP::UserAgent;
 
 if ($netscape) {
-    require CGI;
     if (!-l "$ENV{HOME}/.netscape/lock") {
 	system("netscape -no-install&");
 	warn "Waiting for netscape to settle ... \n";
@@ -143,6 +149,13 @@ if ($netscape) {
 
 for my $i (0 .. $#requests) {
     my $req_url_part = $requests[$i];
+    if (keys %add_param) {
+	my $q = CGI->new($req_url_part);
+	while(my($k,$v) = each %add_param) {
+	    $q->param($k, $v);
+	}
+	$req_url_part = $q->query_string;
+    }
     my $full_url = ($req_url_part =~ /coords=/ ? $cgigfxurl : $cgiurl)
       . "?$req_url_part";
     my $check_text = "Check $full_url $req_url_part...\n";

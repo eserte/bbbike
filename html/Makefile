@@ -1,14 +1,15 @@
 #
-# $Id: Makefile,v 1.7 2004/08/26 23:53:17 eserte Exp $
+# $Id: Makefile,v 1.8 2005/02/27 21:06:37 eserte Exp $
 #
 
 # XXX don't duplicate, see ../Makefile.PL
 STRPP=	strpp
+# XXX replace with tpage from Template 2.14?
 TPAGE=	mytpage
 # XXX get from elsewhere
 CGIDIR?=../cgi
 
-all: newstreetform.html bbbike_small
+all: newstreetform.html fragezeichenform.html bbbike_small
 
 bbbike_small:	bbbike_small.html bbbike_small.en.html \
 		bbbike_sidebar.html bbbike_sidebar.en.html
@@ -25,3 +26,6 @@ newstreetform.html: newstreetform.tpl.html
 	${TPAGE} --define cgidir=${CGIDIR} $> > $@
 	chmod ugo+r $@
 
+fragezeichenform.html: newstreetform.tpl.html
+	${TPAGE} --define cgidir=${CGIDIR} --define is_fragezeichen_form=1 $> > $@
+	chmod ugo+r $@

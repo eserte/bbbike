@@ -1449,4 +1449,12 @@ EOF
 userdel	q4; 25859,-11559 25640,-11357
 EOF
      },
+     { from  => 1109365909, # 2005-02-25 22:11
+       until => 1125525599, # 2005-08-31 23:59
+       text  => 'Hussitenstr. (Mitte) in Richtung Bernauer Str. zwischen Bernauer Str. und Usedomer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2005)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 9112,14771 9472,14478
+EOF
+     },
     );

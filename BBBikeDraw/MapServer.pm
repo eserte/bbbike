@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.16 2005/01/16 22:02:04 eserte Exp $
+# $Id: MapServer.pm,v 1.17 2005/02/27 12:48:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -255,7 +255,9 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 #  	    close IMG;
 #  	} else {
 	    open(SHP2IMG, "-|") or do {
-		exec @cmd;
+		{
+		    exec @cmd;
+		}
 		die "Can't exec @cmd: $!";
 	    };
 	    local $/ = undef;

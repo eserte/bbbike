@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.16 2005/01/08 22:52:50 eserte Exp eserte $
+# $Id: gesperrt-orig,v 4.17 2005/02/27 23:32:51 eserte Exp eserte $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraßen etc.)
@@ -281,6 +281,7 @@ Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12063,-784 -11875,-925 -1
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
 Geschwister-Scholl-Str.	1 -14366,-1728 -14193,-1621 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13884,-1243
+Platz der Einheit	1 -12768,-1069 -12718,-1327
 # 
 # elsewhere in Brandenburg
 Altlandsberger Chaussee	1 40487,16703 40712,16743
@@ -546,8 +547,8 @@ B 167; (Herzberg-Neuruppin); OL Alt Ruppin, Rhinbrücke    Brückenneubau    Volls
 #Volkspark - Bundesallee: Absperrung	3 5417,8519 5481,8506 5513,8588
 #Wörther Str. - Schönhauser Allee: U-Bahnrampe	3 11163,14548 10924,14491 10947,14114
 #Schönhauser Allee - Wörther Str.: U-Bahnrampe	3 10909,14710 10924,14491 11163,14548
-#Kopenhagener Str. - Schönhauser Allee: U-Bahnviadukt	3 10581,15936 10972,15895 10977,15944 10987,16008 10994,16120
-#Schönhauser Allee - Kopenhagener Str.: U-Bahnviadukt	3 10963,15789 10972,15895 10581,15936
+#Kopenhagener Str. - Schönhauser Allee: U-Bahnviadukt	3 10581,15936 10722,15921 10972,15895 10977,15944 10987,16008 10994,16120
+#Schönhauser Allee - Kopenhagener Str.: U-Bahnviadukt	3 10963,15789 10972,15895 10722,15921 10581,15936
 #Berliner Str. - Thulestr.: U-Bahnrampe	3 10986,16897 11042,16605 11645,16616
 #Thulestr. - Berliner Str.: U-Bahnrampe	3 11645,16616 11042,16605 11033,16464
 #Dunckerstr. - Wisbyer Str.: Straßenbahn	3 11939,16084 12026,16247 11905,16318

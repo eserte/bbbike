@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.40 2005/01/20 00:45:21 eserte Exp eserte $
+# $Id: Makefile,v 2.41 2005/02/27 23:36:54 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -442,7 +442,7 @@ exits:	exits-orig
 
 fragezeichen:	.create_fragezeichen
 	-@$(WRITEABLE) $@
-	cmp .create_fragezeichen $@ && true || cp .create_fragezeichen $@
+	cmp -s .create_fragezeichen $@ && true || cp .create_fragezeichen $@
 	-@$(READONLY) $@
 
 # ::inwork => will maybe change to :inwork
@@ -454,6 +454,7 @@ fragezeichen:	.create_fragezeichen
 	cat fragezeichen-orig |\
 	        ${GREPSTRASSEN} -v -sectionrx "projektierte Radstreifen" |\
 	        ${GREPSTRASSEN} -v -sectionrx "Straßen in Planung" |\
+	        ${GREPSTRASSEN} -v -sectionrx "ignorieren" |\
 	    ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@~
 	grep '?' ${DATADIR}/ampeln-orig | \
 	    ${CONVERT2HAFAS} -basefile ${DATADIR}/ampeln-orig -- - >> $@~

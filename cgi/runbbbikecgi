@@ -1,8 +1,8 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 # -*- perl -*-
 
 #
-# $Id: runbbbikecgi,v 1.10 2002/08/30 07:40:33 eserte Exp $
+# $Id: runbbbikecgi,v 1.12 2005/02/25 09:07:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -34,13 +34,15 @@ use WWWBrowser 2.14;
 my $http_server = "tinyhttpd";
 my $v = 0;
 my $httpi_port;
+my $start_browser = 1;
 
 if (eval "require Getopt::Long; 1") {
     if (!Getopt::Long::GetOptions("servertype=s" => \$http_server,
 				  "v+" => \$v,
 				  "p|port=i" => \$httpi_port,
+				  "browser!" => \$start_browser,
 				 )) {
-	die "usage: $0 [-servertype httpi|tinyhttpd|HTTP::Daemon] [-port port] [-v]";
+	die "usage: $0 [-servertype httpi|tinyhttpd|HTTP::Daemon] [-port port] [-v] [-nobrowser]";
     }
 }
 
@@ -144,10 +146,13 @@ if ($http_server eq 'httpi') {
 sleep 1;
 
 my $url = "http://localhost:$httpi_port/bbbike/cgi/bbbike.cgi";
-#my $url = "http://localhost:$httpi_port/bbbike/html/legende.html";#XXXtest
-warn "About to load $url in browser...\n" if $v;
+if ($start_browser) {
+    warn "About to load $url in browser...\n" if $v;
 			  
-WWWBrowser::start_browser($url, -oldwindow => 1);
+    WWWBrowser::start_browser($url, -oldwindow => 1);
+} else {
+    print STDERR "Point your browser to $url\n";
+}
 
 
 # XXX does not work XXX
@@ -173,22 +178,39 @@ sub start_http_daemon {
     open STDIN, "< ". File::Spec->devnull or die $!;
     open STDOUT, "> ". File::Spec->devnull or die $!;
 
-    if (fork == 0) {
+    $ENV{SERVER_NAME} = "localhost";
+    $ENV{SERVER_PORT} = $httpi_port;
+
+#    if (fork == 0) {
 	POSIX::setsid();
 	my $d = HTTP::Daemon->new(LocalPort => $httpi_port)|| die;
 	while (my $c = $d->accept) {
-	    if (fork == 0) {
+	    warn "accepted $c";
+#	    if (fork == 0) {
+#		warn "forked";
 		while (my $r = $c->get_request) {
 		    my $path = $r->url->path;
 		    if ($v >= 2) {
-			warn $r->method . " " . $r->url->path . "\n";
+			warn $r->method . " " . $path . "\n";
 		    }
-		    if ($r->method =~ m{GET|POST}) {
+		    if ($r->method =~ m{GET|POST}) { # XXX no HEAD support
 			if ($path =~ m{(^|/)..(/|$)}) {
+			    print STDERR ".. in path is forbidden\n";
 			    $c->send_error(HTTP::Status::RC_FORBIDDEN());
 			}
 			if ($path =~ m{^/bbbike/cgi/(.*\.cgi)$}) {
 			    my $prog = $1;
+			    $ENV{SCRIPT_FILENAME} = "$FindBin::RealBin/$prog";
+			    $ENV{SCRIPT_NAME} = $path;
+			    my @args;
+			    if ($r->method =~ /^(HEAD|GET)$/) {
+				$ENV{QUERY_STRING} = $r->uri->query;
+				@args = $r->uri->query_form;
+			    } elsif ($r->method eq 'POST') {
+				warn "POST not yet implemented";
+			    }
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@args],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+
 # 			    open(FH, "-|") or do {
 # 				$c->close; # XXX???
 # 				$d->close;
@@ -196,36 +218,54 @@ sub start_http_daemon {
 # 				die $!;
 # 			    };
 #			    binmode FH;
-			    open(OUT, ">/tmp/bla.html") or die $!;
+			    #open(OUT, ">/tmp/bla.html") or die $!;
 #			    print OUT <FH>;
-			    print OUT `$FindBin::RealBin/$prog`;
-			    close OUT;
-			    $c->send_file_response("/tmp/bla.html");
-
+			    #print OUT
+			    my $out = "200 OK\015\012";
+			    open(FH, "-|") or do {
+				exec $ENV{SCRIPT_FILENAME}, @args;
+				die "Cannot execute $ENV{SCRIPT_FILENAME}: $!";
+			    };
+			    local $/ = undef;
+			    $out .= <FH>;
+			    close FH;
+			    if ($!) {
+				warn "Cannot execute $ENV{SCRIPT_FILENAME}: $!";
+				$c->send_error(500);
+			    } else {
+				
+				#close OUT;
+				#$c->send_file_response("/tmp/bla.html");
+				my $res = HTTP::Response->parse($out);
+				$c->send_response($res);
+			    
 # 			    $c->send_basic_header(200, "OK", "HTTP/1.0");
 # 			    $c->send_file(\*FH);
-			    warn 4;
+				warn 4;
 #			    close FH;
+			    }
 			} elsif ($path =~ m{^/bbbike/(.*)}) {
 			    $c->send_file_response("$FindBin::RealBin/../$1");
 			} else {
+			    print STDERR "Path $path is forbidden\n";
 			    $c->send_error(HTTP::Status::RC_FORBIDDEN())
 			}
 		    } else {
+			print STDERR "Method " . $r->method . " is forbidden\n";
 			$c->send_error(HTTP::Status::RC_FORBIDDEN())
 		    }
 		}
 		warn 6;
+#		$c->close;
+#		exit;
+#	    } else {
 		$c->close;
-		exit;
-	    } else {
-		$c->close;
-	    }
+#	    }
 	    warn 7;
 	    undef($c);
 	}
 	exit 0;
-    }
+#    }
 }
 
 # REPO BEGIN

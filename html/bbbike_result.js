@@ -1,4 +1,4 @@
-// $Id: bbbike_result.js,v 1.16 2005/01/17 08:16:23 eserte Exp $
+// $Id: bbbike_result.js,v 1.17 2005/02/28 08:25:58 eserte Exp $
 // (c) 2003 Slaven Rezic. All rights reserved.
 
 function test_temp_blockings_set() {
@@ -118,11 +118,11 @@ function enable_size_details_buttons() {
     var imgtype = imgtypeelem.value;
     var can_size = true;
     var can_details = true;
-    if (imgtype.match(/^(mapserver|berlinerstadtplan)/)) {
+    if (imgtype && imgtype.match(/^(mapserver|berlinerstadtplan)/)) {
 	can_size = false;
 	can_details = false;
     }
-    if (imgtype.match(/^(pdf|svg)/)) {
+    if (imgtype && imgtype.match(/^(pdf|svg)/)) {
 	can_size = false;
     }
     var elems = frm.elements;
@@ -184,6 +184,8 @@ function reset_form(default_speed, default_cat, default_quality,
 function show_help(what) {
     if (what == "winteroptimization") {
 	alert("Erfahrungsgemäß werden bei Schnee und Eis Hauptstraßen am ehesten geräumt. Deshalb wird bei dieser Einstellung verstärkt auf Hauptstraßen optimiert und Nebenstraßen gemieden. Weitere Eigenschaften fließen in eine schlechtere Bewertung einer Straße ein: benutzungspflichtige Radwege, Kopfsteinpflasterstraßen, Straßenbahnen auf der Fahrbahn und Brücken.");
+    } else if (what == "fragezeichen") {
+	alert("Bei Wahl dieser Einstellungen werden auch Straßen und Wege, deren Eignung für Radfahrer unbekannt ist, in die Suche mit einbezogen.");
     } else if (what == "") {
 	alert("Es wurde kein Hilfethema angegeben");
     } else {

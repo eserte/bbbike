@@ -174,15 +174,7 @@ userdel	2 -12403,-10753 -12459,-12120
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1109372400,
-         'text' => 'L 791; (Luckenwalder Str.); Bahnübergang in Zossen, Havarie, Vollsperrung, 19.02.2005-25.02.2005 ',
-         'from' => 1108681200,
-         'data' => 'userdel	2 13525,-21873 13014,-22300
-userdel	2 13525,-21873 13988,-21217
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1109631600,
          'text' => 'Späthstraße (Treptow) In beiden Richtungen zwischen A113 und Königsheideweg Störungen durch geplatzte Wasserleitung, Straße gesperrt (bis 28.02.2005) ',
@@ -206,6 +198,14 @@ userdel	2 15174,5463 15373,5675
          'text' => 'B 179; (Berliner Str.); OL Königs Wusterhausen, zw. Schloßplatz u. Funkerberg Kanalarbeiten halbseitig gesperrt (XXX welche Richtung?); Einbahnstraße 01.03.2005-30.09.2005 ',
          'from' => 1109545200,
          'data' => 'userdel	q4; 25859,-11559 25640,-11357
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1125525599,
+         'text' => 'Hussitenstr. (Mitte) in Richtung Bernauer Str. zwischen Bernauer Str. und Usedomer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2005)',
+         'from' => 1109365909,
+         'data' => 'userdel	q4; 9112,14771 9472,14478
 ',
          'type' => 'handicap'
        }

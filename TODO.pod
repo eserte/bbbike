@@ -1343,6 +1343,14 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (H1)
+
+Bei pref_fragezeichen=yes: Straßenbezeichnungen aus fragezeichen
+vertragen sich mit Strasse::strip_bezirk nicht so gut. Es wird oft zu
+viel abgeschnitten. Könnte strip_bezirk intelligenter programmiert
+werden und tatsächlich nur die in Geography:: vorkommenden Bezirke
+abschneiden? Wo wird strip_bezirk überall eingesetzt?
+
 =item * (M1)
 
 Evtl. Link auf Detailmap, um eine bessere Straße auszuwählen? Bei

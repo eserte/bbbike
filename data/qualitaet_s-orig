@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.12 2004/12/23 00:35:21 eserte Exp eserte $
+# $Id: qualitaet_s-orig,v 4.13 2005/02/27 23:29:44 eserte Exp $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -720,9 +720,9 @@ Wuhlewanderweg (Ahrensfelder Berg): glatter Parkweg	Q1 22631,16215 22690,16383 2
 Wuhlewanderweg (Ahrensfelder Berg): Bettonweg, OK	Q1 22722,16906 22611,17126 22432,17245
 Wuhlewanderweg (Ahrensfelder Berg): Feldweg	Q2 22432,17245 22240,17379 22103,17475 22002,17492
 (Feldweg nach Eiche): Feldweg	Q2 22314,17916 22365,17912 22474,17858 22537,17878
-Merseburger Str.: Kopfsteinpflaster	Q2 6977,8934 6965,9025 6948,9126
+Merseburger Str.: Kopfsteinpflaster	Q2 6977,8934 6965,9025 6945,9142
 Kopenhagener Str.: Kopfsteinpflaster	Q2 10080,15858 10374,15894
-Kopenhagener Str.: Kopfsteinpflaster	Q2 10581,15936 10972,15895
+Kopenhagener Str.: Kopfsteinpflaster	Q2 10581,15936 10722,15921 10972,15895
 Ystader Str.: Kopfsteinpflaster	Q2 10374,15894 10363,15933
 Esplanade: schlechtes Kopfsteinpflaster	Q3 10986,16897 10905,16893 10655,16904
 Glinkastr.: mäßiger Asphalt, besonders in südlicher Richtung	Q1 9183,12076 9201,11968 9208,11872 9220,11781
@@ -1365,3 +1365,7 @@ Straße 462	Q0 5068,17384 4953,17412
 #: by: ^^^
 #: by: stefan g:
 Duisburger Str.: Asphalt	Q0 3874,10153 4183,10144
+#: by: ute s:
+Rhinower Str.: Kopfsteinpflaster	Q2 10722,15921 10713,15746
+#: by: Clemens Bley:
+Am Springebruch: Verbundsteinpflaster	Q1 6164,23062 6281,22917

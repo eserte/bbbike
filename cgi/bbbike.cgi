@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.8 2005/02/25 01:37:19 eserte Exp $
+# $Id: bbbike.cgi,v 7.9 2005/02/27 23:28:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -83,7 +83,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $comments_points $green_net
 	    $crossings $kr $plz $net $multi_bez_str
 	    $overview_map
-	    $use_umland $use_umland_jwd $use_special_destinations
+	    $use_umland $use_umland_jwd $use_special_destinations $use_fragezeichen
 	    $check_map_time $use_cgi_bin_layout
 	    $show_weather $show_start_ziel_url @weather_cmdline
 	    $bp_obj $bi $use_select
@@ -518,6 +518,14 @@ may be used.
 
 $use_special_destinations = 0;
 
+=item $use_fragezeichen
+
+Set to true to allow the user to search unknown streets.
+
+=cut
+
+$use_fragezeichen = 0;
+
 =back
 
 =head2 Misc
@@ -637,7 +645,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.9 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -691,7 +699,7 @@ if (!$use_background_image) {
     $ziel_bgcolor  = '#e8f0ff';
 }
 
-@pref_keys = qw/speed cat quality ampel green winter/;
+@pref_keys = qw/speed cat quality ampel green winter fragezeichen/;
 
 CGI->import('-no_xhtml');
 
@@ -2277,7 +2285,8 @@ sub set_cookie {
 }
 
 use vars qw($default_speed $default_cat $default_quality
-	    $default_ampel $default_routen $default_green $default_winter);
+	    $default_ampel $default_routen $default_green $default_winter
+	    $default_fragezeichen);
 
 sub get_settings_defaults {
     get_global_cookie();
@@ -2293,6 +2302,7 @@ sub get_settings_defaults {
 	$default_green = 2;
     }
     $default_winter   = (defined $c{"pref_winter"}   ? $c{"pref_winter"}   : "");
+    $default_fragezeichen = (defined $c{"pref_fragezeichen"} ? $c{"pref_fragezeichen"} : "");
 }
 
 sub reset_html {
@@ -2390,6 +2400,15 @@ EOF
 <option @{[ $winter_checked->("WI2") ]}>stark
 </select></td>
  <td style="vertical-align:bottom"><span class="experimental">Experimentell</span><small><a target="BBBikeHelp" href="$bbbike_html/help.html#winteroptimization" onclick="show_help('winteroptimization'); return false;">Was ist das?</a></small></td>
+</tr>
+EOF
+    }
+    if ($use_fragezeichen) {
+	print <<EOF;
+<tr>
+ <td>Unbekannte Straﬂen mit einbeziehen:</td>
+ <td><input type=checkbox name="pref_fragezeichen" value=yes @{[ $default_fragezeichen?"checked":"" ]}></td>
+ <td style="vertical-align:bottom"><span class="experimental">Experimentell</span><small><a target="BBBikeHelp" href="$bbbike_html/help.html#fragezeichen" onclick="show_help('fragezeichen'); return false;">Was ist das?</a></small></td>
 </tr>
 EOF
     }
@@ -2841,6 +2860,18 @@ sub search_coord {
 
     my $sess = tie_session(undef);
 
+    my $has_fragezeichen = defined $q->param("pref_fragezeichen") && $q->param("pref_fragezeichen") eq 'yes';
+    my $fragezeichen_net;
+    if ($has_fragezeichen) {
+	eval {
+	    my $s = Strassen->new("fragezeichen");
+	    $fragezeichen_net = StrassenNetz->new($s);
+	    $fragezeichen_net->make_net;
+	};
+	warn $@ if $@;
+	$has_fragezeichen = 0 if !$fragezeichen_net;
+    }
+
     my $r;
     my @out_route;
     my %speed_map;
@@ -3022,6 +3053,7 @@ sub search_coord {
 	for(my $i = 0; $i <= $#strnames; $i++) {
 	    my $strname;
 	    my $etappe_comment = '';
+	    my $fragezeichen_comment = '';
 	    my $entf_s;
 	    my $raw_direction;
 	    my $route_inx;
@@ -3085,6 +3117,23 @@ sub search_coord {
 		$etappe_comment = join("; ", @comments) if @comments;
 	    }
 
+	    if ($has_fragezeichen) {
+		my @comments;
+		my %seen_comments_in_this_etappe;
+		for my $i ($strnames[$i]->[4][0] .. $strnames[$i]->[4][1]) {
+		    my($from, $to) = (join(",", @{$path[$i]}),
+				      join(",", @{$path[$i+1]}));
+		    if (exists $fragezeichen_net->{Net}{$from}{$to}) {
+			my($etappe_comment) = $fragezeichen_net->get_street_record($from, $to)->[Strassen::NAME()];
+			if (!exists $seen_comments_in_this_etappe{$etappe_comment}) {
+			    push @comments, $etappe_comment;
+			    $seen_comments_in_this_etappe{$etappe_comment} = 1;
+			}
+		    }
+		}
+		$fragezeichen_comment = join("; ", @comments) if @comments;
+	    }
+
 	    push @out_route, {
 			      Dist => $entf,
 			      DistString => $entf_s,
@@ -3096,6 +3145,9 @@ sub search_coord {
 			      Strname => $strname,
 			      ($with_comments && $comments_net ?
 			       (Comment => $etappe_comment) : ()
+			      ),
+			      ($has_fragezeichen ?
+			       (FragezeichenComment => $fragezeichen_comment) : () # XXX key label may change!
 			      ),
 			      Coord => join(",", @{$r->path->[$route_inx->[0]]}),
 			     };
@@ -3349,7 +3401,11 @@ EOF
 	    if ($bi->{'mobile_device'}) {
 		$line_fmt = "%s %s %s (ges.:%s)\n";
 	    } else {
-		$line_fmt = "%-13s %-24s %-31s %-8s\n";
+		$line_fmt = "%-13s %-24s %-31s %-8s";
+		if ($has_fragezeichen) {
+		    $line_fmt .= " %s";
+		}
+		$line_fmt .= "\n";
 	    }
 	    print "<pre>";
 	} else {
@@ -3373,14 +3429,17 @@ EOF
 	    if ($with_comments) {
 		print "<th>${fontstr}Bemerkungen$fontend</th>";
 	    }
+	    if ($has_fragezeichen) {
+		print "<th></th>"; # no header for Fragezeichen
+	    }
 	    print "</tr>\n";
 	}
 
   	my $odd = 0;
 	for my $etappe (@out_route) {
 	    my($entf, $richtung, $strname, $ges_entf_s,
-	       $etappe_comment) =
-		   @{$etappe}{qw(DistString DirectionString Strname TotalDistString Comment)};
+	       $etappe_comment, $fragezeichen_comment) =
+		   @{$etappe}{qw(DistString DirectionString Strname TotalDistString Comment FragezeichenComment)};
 	    if (!$bi->{'can_table'}) {
 		printf $line_fmt,
 		  $entf, $richtung, string_kuerzen($strname, 31), $ges_entf_s;
@@ -3396,6 +3455,12 @@ EOF
 		if ($with_comments && $comments_net) {
 		    print "<td>$fontstr$etappe_comment$fontend</td>";
 		}
+		if ($has_fragezeichen && $fragezeichen_comment ne "") {
+		    my $qs = CGI->new({strname => $fragezeichen_comment,
+				       strname_html => CGI::escapeHTML($fragezeichen_comment),
+				      })->query_string;
+		    print qq{<td>$fontstr<a target="newstreetform" href="$bbbike_html/fragezeichenform.html?$qs">Kommentar eintragen</a>$fontend</td>};
+		}
 		print "</tr>\n";
 	    }
 	}
@@ -3407,6 +3472,9 @@ EOF
 		print
 		    "<tr bgcolor=white><td></td><td></td><td></td>";
 		if ($with_comments && $comments_net) {
+		    print "<td></td>";
+		}
+		if ($has_fragezeichen) {
 		    print "<td></td>";
 		}
 		print "<td align=center bgcolor=white>",
@@ -3654,7 +3722,7 @@ EOF
 	    print "<input type=hidden name=viac value=\"$viacoord\">";
 	    print "<input type=hidden name=vianame value=\"$vianame\">";
 	}
-	foreach my $param ($q->param) {
+	for my $param ($q->param) {
 	    if ($param =~ /^pref_/) {
 		print "<input type=hidden name='$param' value=\"".
 		    $q->param($param) ."\">";
@@ -4119,7 +4187,7 @@ sub draw_map {
 	    open(MAP, ">$map_file") or confess "Fehler: Die Map $map_file konnte nicht erstellt werden.<br>\n";
 	    chmod 0644, $map_file;
 	    $q->param('geometry', $detailwidth."x".$detailheight);
-	    $q->param('draw', 'str', 'ubahn', 'sbahn', 'wasser', 'orte');
+	    $q->param('draw', 'str', 'ubahn', 'sbahn', 'wasser', 'flaechen', 'orte');
 	    $q->param('drawwidth', 1);
 	    # XXX Argument sollte ¸bergeben werden (wird sowieso noch nicht
 	    # verwendet, bis auf ‹berpr¸fung des boolschen Wertes)
@@ -4297,9 +4365,13 @@ sub get_streets {
 	     ($scope eq 'wideregion' ? "landstrassen2" : ()),
 	    );
 
+    if (defined $q->param("pref_fragezeichen") && $q->param("pref_fragezeichen") eq 'yes') {
+	push @f, "fragezeichen";
+    }
+
     if ($q->param("addnet")) {
 	for my $addnet ($q->param("addnet")) {
-	    if ($addnet =~ /^(?: fragezeichen )$/x) {
+	    if ($addnet =~ /^(?:  )$/x) { # no addnet support for now
 		push @f, $addnet;
 	    }
 	}
@@ -5434,7 +5506,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/02/25 01:37:19 $';
+    my $cgi_date = '$Date: 2005/02/27 23:28:31 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

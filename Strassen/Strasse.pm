@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.10 2005/01/08 23:27:59 eserte Exp $
+# $Id: Strasse.pm,v 1.11 2005/02/27 23:29:32 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -123,6 +123,27 @@ sub short {
 # Street numbers like "B1" or "F2.2" are recognized.
 sub beautify_landstrasse {
     my($str, $backwards) = @_;
+    if ($str =~ m/^ (.*:\s*)?
+		    (.*\s-\s.*?)
+		    (\s*:.*|\s*\(.*\)\s*)?
+		  $/x) {
+	(my($pre), $str, my($post)) = ($1, $2, $3);
+	$pre  = "" if !defined $pre;
+	$post = "" if !defined $post;
+
+	my(@comp) = split /\s-\s/, $str;
+	if ($backwards) {
+	    @comp = reverse @comp;
+	}
+	$str = $pre .
+	       "(" . join(" - ", @comp[0 .. $#comp-1]) . " -) " . $comp[-1] .
+	       $post;
+    }
+    $str;
+}
+
+sub XXX_Old_and_obsolete_beautify_landstrasse {
+    my($str, $backwards) = @_;
     if ($str =~ /^([\w\.]+:\s+)?(.*\s-\s.*)$/) {
 	my $str_nummer = "";
 	if (defined $1 and $1 ne "") {
@@ -198,7 +219,7 @@ sub parse_street_type_nr {
 sub strip_bezirk {
     my $str = shift;
     if ($str !~ /^\s*\(/) {
-	$str =~ s/\s*\(.*?\)\s*$//;
+	$str =~ s/\s*\([^\)]+\)\s*$//;
     }
     $str;
 }

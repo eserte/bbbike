@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.24 2004/12/30 13:33:25 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.25 2005/02/27 23:34:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -450,6 +450,8 @@ winbindist-pre:
 	mv $(WINBINDISTDIR)/`basename $(WINPERLBIN)` $(WINBINDISTDIR)/windows
 	umask 022; if [ -r distfiles/BBBike-$(VERSION).tar.gz ] ; then \
 	    cat distfiles/BBBike-$(VERSION).tar.gz | (cd $(WINBINDISTDIR) && tar xfvz - ); \
+	elif [ -r BBBike-$(VERSION).tar.gz ]; then \
+	    cat BBBike-$(VERSION).tar.gz | (cd $(WINBINDISTDIR) && tar xfvz - ); \
 	else \
 	    cp -Rp BBBike-$(VERSION) $(WINBINDISTDIR); \
 	    chmod ugo+rx $(WINBINDISTDIR)/BBBike-$(VERSION); \

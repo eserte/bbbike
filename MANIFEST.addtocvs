@@ -243,6 +243,7 @@ Bundle/BBBike.pm.tmpl
 #make_small_bundle->../Makefile.PL
 #make_small_pi_osd->../Makefile.PL
 projects/www.radzeit.de/Makefile
+projects/www.radzeit.de/etc/httpd.conf
 README.spp
 MANIFEST.SKIP
 miscsrc/create_modified

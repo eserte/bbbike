@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Multi.pm,v 1.14 2004/09/28 21:49:26 eserte Exp $
+# $Id: Multi.pm,v 1.15 2005/02/28 08:25:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package PLZ::Multi;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 use Getopt::Long qw(GetOptions);
 BEGIN {
@@ -129,7 +129,8 @@ sub new {
 
     if (!defined $combined) {
 	my($fh, $temp) = tempfile(UNLINK => 1);
-	system("cat @in | sort -u > $temp"); # XXX what on non-Unix?
+	#system("cat @in | sort -u > $temp"); # XXX what on non-Unix?
+	merge_and_sort(-src => \@in, -dest => $temp);
 	if ($args{cache}) {
 	    $combined = $cachefile;
 	    move($temp, $combined);
@@ -140,6 +141,29 @@ sub new {
 
  FINISH:
     PLZ->new($combined);
+}
+
+sub merge_and_sort {
+    my(%args) = @_;
+    my @in_files = @{ $args{-src} };
+    my $out_file =    $args{-dest};
+    my @lines;
+    for my $in_file (@in_files) {
+	open(IN, $in_file) or die "Can't open $in_file: $!";
+	while (<IN>) {
+	    push @lines, $_;
+	}
+	close IN;
+    }
+    my %seen;
+    for my $line (@lines) {
+	$seen{$line} = 1;
+    }
+    open(OUT, "> $out_file") or die "Can't write to $out_file: $!";
+    for my $line (sort keys %seen) {
+	print OUT $line;
+    }
+    close OUT;
 }
 
 1;

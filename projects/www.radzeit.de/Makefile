@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.48 2005/02/19 13:17:51 eserte Exp $
+# $Id: Makefile,v 1.49 2005/02/27 23:31:04 eserte Exp $
 #
 
 # Targets:
@@ -40,6 +40,7 @@ TESTS=			basic.t \
 			cgi.t \
 			wapcgi.t
 TESTS_ADD=		BBBikeTest.pm
+HTDOCS=			htdocs
 
 
 # XXX maybe use test-on-remote-and-send-mail (after tests)
@@ -69,8 +70,9 @@ DEPLOY_LOCAL_DATA_TARGETS=	prepare-bbbike-data \
 				prepare-bbbike-dist \
 				test-local
 
+SSH_PROG_AND_ARGS?=	ssh
 RSYNC_PROG?=	rsync
-RSYNC_ARGS=	-e ssh -Pvz -r -t --links --copy-unsafe-links --exclude-from .rsync.exclude
+RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --exclude-from .rsync.exclude
 RSYNC_DEST?=	${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_HOST}:${BBBIKE_RADZEIT_APACHE_DIR}
 RSYNC_SRCDEST?=	. ${RSYNC_DEST}
 
@@ -84,6 +86,12 @@ XARGS_REPL?=	xargs -J %
 .endif
 
 MAPSERVER_EXE?=	$(HOME)/www/cgi/mapserv.cgi
+
+.ifndef TARGET
+.if ${CURDIR:T} == "www.radzeit-new.de"
+TARGET=radzeit-new
+.endif
+.endif
 
 .ifndef TARGET
 .for t in ${DEPLOY_TARGETS}
@@ -139,6 +147,13 @@ LOCAL_HTML_URL=	http://localhost:8080/bbbike
 DATA_DIR=	data
 .endif
 
+RADZEIT_NEW_URL=	http://130.149.231.46
+.if ${TARGET} == "radzeit-new"
+SSH_PROG_AND_ARGS=	ssh -2 -p 534
+HTDOCS=			public
+LOCAL_URL=		http://radzeit-new.herceg.de
+.endif
+
 .include "${BBBIKE_ROOT_DIR}/mapserver/brb/Makefile.${TARGET}.inc"
 
 all:
@@ -149,7 +164,7 @@ check:
 	${RSYNC} --dry-run ${RSYNC_ARGS} ${RSYNC_SRCDEST}
 
 clean-cache-files-on-remote:
-	-ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
+	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
 	    rm /tmp/b_de_\*
 
 rsync:			check-rsync-ok \
@@ -191,7 +206,7 @@ do-rsync-bbbike-data:
 	    BBBike/data/ ${RSYNC_DEST}/BBBike/data/
 
 post-rsync-bbbike-data:
-	-ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
+	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
 	   "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/miscsrc/winter_optimization.pl &"
 
 show-rsync-message:
@@ -260,11 +275,11 @@ prepare-bbbike-dist-prog-bbbike-cgi:
 	@echo "Maybe create bbbike2.cgi and bbbike2.cgi.config"
 
 prepare-bbbike-dist-prog-bbbike-htdocs:
-	[ -d ${CURDIR}/htdocs  ] || mkdir ${CURDIR}/htdocs
-	chmod 755 ${CURDIR}/htdocs
-	[ -e ${CURDIR}/htdocs/BBBike ] || \
-	    ln -s ../BBBike ${CURDIR}/htdocs/BBBike
-	@echo "Do 'ln -s ../BBBike ${BBBIKE_RADZEIT_APACHE_DIR}/htdocs/BBBike' manually on server"
+	[ -d ${CURDIR}/$(HTDOCS)  ] || mkdir ${CURDIR}/$(HTDOCS)
+	chmod 755 ${CURDIR}/$(HTDOCS)
+	[ -e ${CURDIR}/$(HTDOCS)/BBBike ] || \
+	    ln -s ../BBBike ${CURDIR}/$(HTDOCS)/BBBike
+	@echo "Do 'ln -s ../BBBike ${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/BBBike' manually on server"
 
 prepare-bbbike-dist-prog-bbbike-tmp:
 	chmod 777 ${CURDIR}/BBBike/tmp
@@ -295,7 +310,8 @@ prepare-bbbike-dist-prog-bbbike-html:
 	fi
 .endfor
 	cd ${CURDIR}/BBBike/html && \
-	    ${MAKE} newstreetform.html CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin
+	    ${MAKE} newstreetform.html fragezeichenform.html \
+		CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin
 
 prepare-bbbike-dist-prog-stadtplan:
 	[ ! -e ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com ] && \
@@ -340,36 +356,36 @@ prepare-mapserver-dist-pre:
 	[ -e ${CURDIR}/cgi-bin/mapserv ] || \
 	    ln -s ${MAPSERVER_EXE} ${CURDIR}/cgi-bin/mapserv
 	@echo "Compile mapserv manually on ${BBBIKE_RADZEIT_HOST}"
-	[ -d ${CURDIR}/htdocs/mapserver/brb ] || \
-	    mkdir -p ${CURDIR}/htdocs/mapserver/brb
+	[ -d ${CURDIR}/$(HTDOCS)/mapserver/brb ] || \
+	    mkdir -p ${CURDIR}/$(HTDOCS)/mapserver/brb
 
 prepare-mapserver-dist-main:
 	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
 	    ${MAKE} dist-any TARGET=radzeit
-	cp -Rpf /tmp/radzeit_mapserver_dist/* ${CURDIR}/htdocs/mapserver/brb/
+	cp -Rpf /tmp/radzeit_mapserver_dist/* ${CURDIR}/$(HTDOCS)/mapserver/brb/
 	rm -f ${CURDIR}/.not_rsyncable
 
 prepare-mapserver-dist-local-main:
 	touch ${CURDIR}/.not_rsyncable
 	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
 	    ${MAKE} dist-any TARGET=radzeit.herceg.de
-	cp -Rpf /tmp/radzeit_mapserver_dist/* ${CURDIR}/htdocs/mapserver/brb/
-	chmod 777 ${CURDIR}/htdocs/mapserver/brb
-	chmod 777 ${CURDIR}/htdocs/mapserver/brb/tmp
+	cp -Rpf /tmp/radzeit_mapserver_dist/* ${CURDIR}/$(HTDOCS)/mapserver/brb/
+	chmod 777 ${CURDIR}/$(HTDOCS)/mapserver/brb
+	chmod 777 ${CURDIR}/$(HTDOCS)/mapserver/brb/tmp
 
 prepare-mapserver-dist-post:
-	@echo "XXX Check permissions of htdocs/mapserver/brb and maybe WWWUSER in bbbike/mapserver/brb/Makefile"
-	[ -d ${CURDIR}/htdocs/mapserver/brb/fonts ] || \
-	    mkdir ${CURDIR}/htdocs/mapserver/brb/fonts
+	@echo "XXX Check permissions of $(HTDOCS)/mapserver/brb and maybe WWWUSER in bbbike/mapserver/brb/Makefile"
+	[ -d ${CURDIR}/$(HTDOCS)/mapserver/brb/fonts ] || \
+	    mkdir ${CURDIR}/$(HTDOCS)/mapserver/brb/fonts
 	cp -pf /usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf \
-	    ${CURDIR}/htdocs/mapserver/brb/fonts
+	    ${CURDIR}/$(HTDOCS)/mapserver/brb/fonts
 
 prepare-touren-dist:
-	[ -d ${CURDIR}/htdocs/mapserver/touren ] || \
-	    mkdir -p ${CURDIR}/htdocs/mapserver/touren
-	chmod 755 ${CURDIR}/htdocs/mapserver/touren
+	[ -d ${CURDIR}/$(HTDOCS)/mapserver/touren ] || \
+	    mkdir -p ${CURDIR}/$(HTDOCS)/mapserver/touren
+	chmod 755 ${CURDIR}/$(HTDOCS)/mapserver/touren
 	cp -pf ${BBBIKE_ROOT_DIR}/mapserver/touren/*.trk \
-	    ${CURDIR}/htdocs/mapserver/touren
+	    ${CURDIR}/$(HTDOCS)/mapserver/touren
 
 prepare-routopedia-dist:
 	cd ${BBBIKE_ROOT_DIR}/routopedia && ${MAKE} distcheck
@@ -385,7 +401,7 @@ test:
 		${TESTS}
 
 test-on-remote:
-	ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
 	cd ${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin \
 	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/bbbike.cgi \
@@ -396,7 +412,7 @@ test-on-remote:
 	'
 
 test-on-remote-and-send-mail:
-	ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
 	cd ${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin \
 	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/bbbike.cgi \
@@ -416,33 +432,44 @@ test-local:
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
 		${TESTS}
 
+test-on-radzeit-new:
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
+	cd ${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/t && \
+	BBBIKE_TEST_CGIDIR=${RADZEIT_NEW_URL}/cgi-bin \
+	BBBIKE_TEST_CGIURL=${RADZEIT_NEW_URL}/cgi-bin/bbbike.cgi \
+	BBBIKE_TEST_WAPURL=${RADZEIT_NEW_URL}/cgi-bin/wapbbbike.cgi \
+	BBBIKE_TEST_HTMLDIR=${RADZEIT_NEW_URL}/BBBike \
+	    perl -MTest::Harness -e "runtests(@ARGV)" \
+		${TESTS} \
+	'
+
 server-permissions:
-	ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
-		chown ${WWW_USER} "${BBBIKE_RADZEIT_APACHE_DIR}/htdocs/BBBike/tmp/berlin_map*"; \
-		chown 644 "${BBBIKE_RADZEIT_APACHE_DIR}/htdocs/BBBike/tmp/berlin_map*"; \
-		chmod 777 "${BBBIKE_RADZEIT_APACHE_DIR}/htdocs/BBBike/tmp"; \
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
+		chown ${WWW_USER} "${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/BBBike/tmp/berlin_map*"; \
+		chown 644 "${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/BBBike/tmp/berlin_map*"; \
+		chmod 777 "${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/BBBike/tmp"; \
 	'
 
 backup:
-	ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
 	    cd ${BBBIKE_RADZEIT_APACHE_DIR} && \
 	    tar cfpz /tmp/BBBike-`date +%Y%m%d`-backup.tar.gz \
 	    BBBike \
 	    cgi-bin/bbbike.cgi cgi-bin/bbbike.cgi.config cgi-bin/wapbbbike.cgi \
-	    htdocs/mapserver \
+	    $(HTDOCS)/mapserver \
 	'
 
 backup-local:
-	ssh -l eserte localhost '\
+	${SSH_PROG_AND_ARGS} -l eserte localhost '\
 	    cd $(.CURDIR) && \
 	    tar cfpz /tmp/BBBike-`date +%Y%m%d`-backup.tar.gz \
 	    BBBike \
 	    cgi-bin/bbbike.cgi cgi-bin/bbbike.cgi.config cgi-bin/wapbbbike.cgi \
-	    htdocs/mapserver \
+	    $(HTDOCS)/mapserver \
 	'
 
 remote-cleanup:
-	ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
-	    cd ${BBBIKE_RADZEIT_APACHE_DIR}/htdocs/mapserver/brb && \
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
+	    cd ${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/mapserver/brb && \
 	    ./cleanup -f -agehours 24 \
 	'

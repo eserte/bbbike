@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.21 2004/12/30 11:44:10 eserte Exp $
+# $Id: Makefile,v 1.22 2005/02/28 08:25:58 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -274,13 +274,20 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile ${ABS_LOCAL_BBBIKE_DIR}
 	rm $@
 	touch $@
 	chmod ugo+r $@
-	echo "### DO NOT EDIT. Automatically created" >> $@
+	echo "### DO NOT EDIT. Automatically created by Makefile" >> $@
+.if ${TARGET} == "radzeit-new"
+	echo "RSYNC=	rsync" >> $@
+	echo "BBBIKE_RADZEIT_USER=	root" >> $@
+	echo "BBBIKE_RADZEIT_HOST=	130.149.231.37" >> $@
+	echo "BBBIKE_RADZEIT_APACHE_DIR=	/var/www/domains/radzeit.de/www/" >> $@
+.else
 .for makefile_var in $(ADD_MAKEFILE_VARS)
-	@echo -n "$(makefile_var)=	" >> $@
-	@${MAKE} -f ${ABS_LOCAL_BBBIKE_DIR}/Makefile -V $(makefile_var) >> $@
+	echo -n "$(makefile_var)=	" >> $@
+	${MAKE} -f ${ABS_LOCAL_BBBIKE_DIR}/Makefile -V $(makefile_var) >> $@
 .endfor
+.endif
 .for bbbikevar_var in $(ADD_BBBIKEVAR_VARS)
-	@echo -n "$(bbbikevar_var)=	" >> $@
+	echo -n "$(bbbikevar_var)=	" >> $@
 	perl -I${ABS_LOCAL_BBBIKE_DIR} -MBBBikeVar -e 'print $$BBBike::$(bbbikevar_var), "\n"' >> $@
 .endfor
 	@echo -n "ALL_LAYERS=	" >> $@
