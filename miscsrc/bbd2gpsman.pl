@@ -16,7 +16,7 @@
 # Convert from bbd to gpsman data
 
 # Sample cmdline:
-# ./bbd2gpsman.pl -filter nearby=200 -prefix XXX -symbol danger < ~/src/bbbike/misc/fragezeichen > /tmp/test.wpt
+# ./bbd2gpsman.pl -filter nearby=200 -prefix XXX -symbol danger < ~/src/bbbike/data/fragezeichen > /tmp/test.wpt
 # or look at the Makefile in ..../src/bbbike/misc
 
 use strict;

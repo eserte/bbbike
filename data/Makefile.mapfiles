@@ -316,6 +316,7 @@ $(MAPFILES_DATA_DIR)/sehenswuerdigkeit.shp:	sehenswuerdigkeit
 .if exists(fragezeichen)
 $(MAPFILES_DATA_DIR)/fragezeichen.shp:	fragezeichen
 .else
+# XXX obsolete:
 $(MAPFILES_DATA_DIR)/fragezeichen.shp:	${MISCDIR}/fragezeichen
 .endif
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/fragezeichen $>
