@@ -357,7 +357,7 @@ sub default_penalty {
     require BBBikeEdit;
     $main::bbd_penalty = 1;
     $BBBikeEdit::bbd_penalty_invert = 0;
-    $BBBikeEdit::bbd_penalty_file = "$ENV{HOME}/src/bbbike/tmp/unique-matches.bbd";
+    $BBBikeEdit::bbd_penalty_file = "$bbbike_rootdir/tmp/unique-matches.bbd";
     BBBikeEdit::build_bbd_penalty_for_search();
 }
 
@@ -368,7 +368,7 @@ sub default_penalty_fragezeichen {
     require BBBikeEdit;
     $main::bbd_penalty = 1;
     $BBBikeEdit::bbd_penalty_invert = 1;
-    $BBBikeEdit::bbd_penalty_file = "$ENV{HOME}/src/bbbike/data/fragezeichen";
+    $BBBikeEdit::bbd_penalty_file = "$bbbike_rootdir/data/fragezeichen";
 
     BBBikeEdit::build_bbd_penalty_for_search();
 }
