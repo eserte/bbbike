@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: K2Listbox.pm,v 1.9 2003/06/09 10:55:19 eserte Exp $
+# $Id: K2Listbox.pm,v 1.10 2004/01/11 14:45:21 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999, 2000, 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999, 2000, 2002, 2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -137,6 +137,7 @@ sub change_val {
 	for my $ent (@entries) {
 	    if ($ent =~ /^\Q$newval\E/i) {
 		$found_i = $i;
+		last;
 	    }
 	    $i++;
 	}

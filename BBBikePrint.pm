@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.24 2003/11/28 00:58:14 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.25 2004/01/11 13:50:16 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -145,16 +145,24 @@ sub fix_ps_file {
 }
 
 sub do_print_cmd {
-    my $file = shift;
+    my($file, %args) = @_;
+    my $check_availability = delete $args{-checkavailability};
     my $t = $top->Toplevel(-title => 'Drucken');
     require Tk::LabEntry;
     if (!defined $print_cmd or $print_cmd eq '') {
 	if ($os eq 'win') {
-	    status_messagea("Drucken unter Windows nicht möglich, da kein Ghostscript installiert ist.", "err");
+	    return 0 if $check_availability;
+	    status_message("Drucken unter Windows nicht möglich, da kein Ghostscript installiert ist.", "err");
 	    return;
 	} else {
+	    if ($check_availability) {
+		return is_in_path("lpr");
+	    }
 	    $print_cmd = "lpr";
 	}
+    }
+    if ($check_availability) {
+	return 0;
     }
     my $print_cmd_file = "$print_cmd $file";
     $t->LabEntry(-label => "Druckkommando:",
@@ -170,13 +178,16 @@ sub do_print_cmd {
 		-command => sub { $t->destroy })->pack(-side => 'left');
 }
 
-sub print_postscript {
+sub BBBikePrint::print_postscript {
     my($file, %args) = @_;
-    return if !defined $file;
+    my $check_availability = delete $args{-checkavailability};
+    return if !defined $file && !$check_availability;
     my $quiet = $args{-quiet};
     if (defined $print_cmd and $print_cmd ne '') {
+	return 1 if $check_availability;
 	do_print_cmd($file);
     } elsif (is_in_path("gv") && $os eq 'unix') {
+	return 1 if $check_availability;
 	my @print_args;
 	if ($args{'-media'}) {
 	    push @print_args, -media => $args{'-media'};
@@ -195,28 +206,41 @@ sub print_postscript {
 	    CORE::exit(0);
 	}
     } elsif (is_in_path("ghostview")) {
+	return 1 if $check_availability;
 	system("ghostview $file&");
     } elsif (is_in_path("ggv")) {
+	return 1 if $check_availability;
 	system("ggv $file&");
     } elsif ($os eq 'unix') {
 	# XXX Tk::Ghostscript funktioniert noch nicht so
 	# toll... besser mit gs-5.10 als mit gs-3.53
 	# Tk::Ghostview ist in 800.004 nicht mehr vorhanden
-	eval {
-	    require Tk::Ghostview;
-	    my $t = $top->Toplevel;
-	    $t->Ghostview(-file => $file)->pack;
-	    last TRY;
-	};
-	if ($@) {
+	my $errmsg = sub {
 	    if ($quiet) {
 		warn $@;
 	    } else {
 		status_message($@, "err");
 	    }
+	};
+	eval {
+	    require Tk::Ghostview;
+	};
+	if ($@) {
+	    return 0 if $check_availability;
+	    $errmsg->();
+	    return;
+	} else {
+	    return 1 if $check_availability;
 	}
+
+	my $t = $top->Toplevel;
+	$t->Ghostview(-file => $file)->pack;
+	last TRY;
     } elsif ($os eq 'win') {
         require Win32Util;
+	if ($check_availability) {
+	    return Win32Util::ps_viewer_available();
+	}
         if (!Win32Util::start_ps_viewer($file)) {
 	    my $msg = "Es wurde kein Postscript-Viewer gefunden.";
 	    if ($quiet) {
@@ -228,7 +252,7 @@ sub print_postscript {
         }
 	return 1;
     } else {
-	do_print_cmd($file);
+	do_print_cmd($file, -checkavailability => $check_availability);
     }
 }
 
@@ -245,7 +269,7 @@ sub BBBikePrint::print_text_postscript {
        -output => $tmpfile,
        -text => $text,
        -verbose => $verbose);
-    print_postscript($out, -quiet => $args{-quiet});
+    BBBikePrint::print_postscript($out, -quiet => $args{-quiet});
 }
 
 sub BBBikePrint::print_text_pdflatex {
@@ -262,10 +286,24 @@ sub BBBikePrint::print_text_pdflatex {
     warn "$cmd\n" if $verbose;
     system($cmd);
     if (-r $pdffile) {
-	system("acroread $pdffile &");
+	BBBikePrint::view_pdf($pdffile);
     }
     unlink $tmpfile;
     $main::tmpfiles{$pdffile}++;
+}
+
+sub BBBikePrint::view_pdf {
+    my($file, %args) = @_;
+    if ($os eq 'win') {
+	Win32Util::start_any_viewer($file);
+    } else {
+	for my $prog (qw(xpdf acroread acroread5 acroread4 gv)) {
+	    if (is_in_path($prog)) {
+		system("$prog $file &");
+		last;
+	    }
+	}
+    }
 }
 
 ######################################################################

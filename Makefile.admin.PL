@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.15 2004/01/10 23:18:32 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.16 2004/01/11 12:02:49 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -489,6 +489,7 @@ WINPERLBIN=$(HOME)/src/binperl/sieperl-5.6.1
 WINBINDIST=$(WINBINDISTDIR).zip
 
 winbindist-pre:
+	@echo "Make sure that the distfile is uptodate"
 	rm -rf $(WINBINDISTDIR)
 	umask 022; mkdir $(WINBINDISTDIR)
 	umask 022; cp -Rp $(WINPERLBIN) $(WINBINDISTDIR)

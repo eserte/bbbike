@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.96 2004/01/10 23:18:46 eserte Exp $
+# $Id: Makefile.PL,v 1.97 2004/01/11 12:02:25 eserte Exp eserte $
 
 use 5.005;
 
@@ -143,6 +143,8 @@ if ($^O eq 'MSWin32') {
 } else {
     $os = "unix";
 }
+
+my $admin_makefile = "./Makefile.admin.PL";
 
 my(%prereq, @prereq);
 {
@@ -398,9 +400,26 @@ install:
 EOF
 }
 
+sub MY::dist_dir {
+    <<'EOF'; 
+distdir : distdir_main distdir_post
+
+distdir_main:
+	$(RM_RF) $(DISTVNAME)
+	$(PERLRUN) "-MExtUtils::Manifest=manicopy,maniread" \
+		-e "manicopy(maniread(),'$(DISTVNAME)', '$(DIST_CP)');"
+
+distdir_post:
+	find $(DISTVNAME) -type d -exec chmod ugo+rx {} \;
+	find $(DISTVNAME) -type f -exec chmod ugo+r {} \;
+
+
+EOF
+}
+
+
 sub MY::postamble {
     $bbbike_makefile_admin = "";
-    my $admin_makefile = "./Makefile.admin.PL";
     if (-e $admin_makefile) {
 	if (!do $admin_makefile) {
 	    die "Can't load $admin_makefile: $@";

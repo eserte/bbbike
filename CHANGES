@@ -9,6 +9,7 @@ bbbike (ptk)
 - -autosave is now on by default
 - info: link to local/global mapserver
 - mousewheel support
+- -printbackend option may be ps or pdf, fallback on Windows to pdf
 - internal reorganization (more autouse'd functions, BBBikeGlobalVars ...)
 - numerous bugfixes and little improvements
 

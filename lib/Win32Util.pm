@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Win32Util.pm,v 1.30 2003/01/30 14:34:52 eserte Exp eserte $
+# $Id: Win32Util.pm,v 1.32 2004/01/11 12:37:44 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -35,7 +35,7 @@ these modules are already bundled with the popular ActivePerl package.
 use strict;
 use vars qw($DEBUG $browser_ole_obj $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
 $DEBUG=0 unless defined $DEBUG;
 
 # XXX Win-Registry-Funktionen mit Hilfe von Win32::API und
@@ -193,6 +193,13 @@ sub start_ps_viewer_cmd {
     my $file = shift;
     my $ps_viewer = get_ps_viewer();
     start_cmd($ps_viewer, $file);
+}
+
+sub ps_viewer_available {
+    my $ps_viewer = get_ps_viewer();
+    return 1 if defined $ps_viewer && $ps_viewer ne "";
+    return 1 if is_in_path("gsview32");
+    return 0;
 }
 
 =head2 start_ps_print($file)
@@ -1624,6 +1631,51 @@ sub sort_cmp_hack_transform {
     $s =~ tr/äöüß/aous/;
     $s;
 }
+
+# REPO BEGIN
+# REPO NAME is_in_path /home/e/eserte/src/repository 
+# REPO MD5 81c0124cc2f424c6acc9713c27b9a484
+sub is_in_path {
+    my($prog) = @_;
+    return $prog if (file_name_is_absolute($prog) and -f $prog and -x $prog);
+    require Config;
+    my $sep = $Config::Config{'path_sep'} || ':';
+    foreach (split(/$sep/o, $ENV{PATH})) {
+	if ($^O eq 'MSWin32') {
+	    # maybe use $ENV{PATHEXT} like maybe_command in ExtUtils/MM_Win32.pm?
+	    return "$_\\$prog"
+		if (-x "$_\\$prog.bat" ||
+		    -x "$_\\$prog.com" ||
+		    -x "$_\\$prog.exe" ||
+		    -x "$_\\$prog.cmd");
+	} else {
+	    return "$_/$prog" if (-x "$_/$prog" && !-d "$_/$prog");
+	}
+    }
+    undef;
+}
+# REPO END
+
+# REPO BEGIN
+# REPO NAME file_name_is_absolute /home/e/eserte/src/repository 
+# REPO MD5 89d0fdf16d11771f0f6e82c7d0ebf3a8
+BEGIN {
+    if (eval { require File::Spec; defined &File::Spec::file_name_is_absolute }) {
+	*file_name_is_absolute = \&File::Spec::file_name_is_absolute;
+    } else {
+	*file_name_is_absolute = sub {
+	    my $file = shift;
+	    my $r;
+	    if ($^O eq 'MSWin32') {
+		$r = ($file =~ m;^([a-z]:(/|\\)|\\\\|//);i);
+	    } else {
+		$r = ($file =~ m|^/|);
+	    }
+	    $r;
+	};
+    }
+}
+# REPO END
 
 =head1 SEE ALSO
 

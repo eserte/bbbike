@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.10 2003/12/22 19:20:18 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.11 2004/01/11 13:49:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -186,7 +186,7 @@ use vars qw(%wetter_full $temperature %wind_colors $stderr
 use vars qw(%font @font $font_family $fixed_font_family $font_size $font_weight
 	    $standard_height $use_font_rot);
 ### Postscript
-use vars qw($ps_rotate $print_cmd $gv_reuse $ps_color $ps_scale_a4 $ps_fixed_font);
+use vars qw($ps_rotate $print_cmd $gv_reuse $ps_color $ps_scale_a4 $ps_fixed_font $print_backend);
 
 use vars qw($nr $cache_root $use_wwwcache);
 use vars qw($map_img @map_surround_img $do_wwwmap);

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.7 2003/12/22 19:20:54 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.8 2004/01/11 13:47:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -18,6 +18,12 @@ package main;
 use strict;
 use BBBikeGlobalVars;
 use BBBikeUtil qw(STAT_MODTIME);
+
+BEGIN {
+    if (!defined &M) {
+	eval 'sub M ($) { @_ }'; warn $@ if $@;
+    }
+}
 
 # Automatisches Scrolling, wenn der Benutzer die Maus zum Rand des Canvases
 # bewegt.
@@ -985,7 +991,10 @@ sub BBBikeHeavy::perlmod_install_advice {
 # PDF-Export
 ### AutoLoad Sub
 sub BBBikeHeavy::pdf_export {
-    my $file = $top->getSaveFile(-defaultextension => '.pdf');
+    my(%args) = @_;
+    my $use_visible_map = $args{-visiblemap} || !@realcoords;
+    my $file = $args{-file} || $top->getSaveFile(-defaultextension => '.pdf');
+    my $geometry = $args{-geometry} || "auto";
     return unless defined $file;
     require BBBikeDraw;
     open(OUT, ">$file") or
@@ -1016,7 +1025,9 @@ sub BBBikeHeavy::pdf_export {
     push @draw, 'str' if ($str_draw{'s'});
     push @draw, 'ort' if ($p_draw{'o'});
     push @draw, 'wind';
-    push @draw, 'strname' if ($str_draw{'s'});
+    push @draw, 'strname' if ($str_name_draw{'s'});
+    push @draw, 'ubahnname' if ($str_name_draw{'u'});
+    push @draw, 'sbahnname' if ($str_name_draw{'s'});
 
     IncBusy($top);
     eval {
@@ -1025,11 +1036,11 @@ sub BBBikeHeavy::pdf_export {
 	     Coords => [map { join ",", @$_ } @realcoords],
 	     Fh => \*OUT,
 	     Scope => $scope,
-	     Geometry => 'auto', # landscape or portrait
+	     Geometry => $geometry, # landscape or portrait
 	     Draw => [@draw],
 	     NoInit => 1,
 	    );
-	if (!@realcoords) {
+	if ($use_visible_map) {
 	    # use visible map for bounding box
 	    my($minx,$miny,$maxx,$maxy) = $c->get_corners;
 	    ($minx,$miny) = anti_transpose($minx,$miny);

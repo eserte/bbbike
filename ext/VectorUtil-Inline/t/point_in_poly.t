@@ -2,13 +2,14 @@
 # -*- perl -*-
 
 #
-# $Id: point_in_poly.t,v 1.5 2003/08/30 20:25:26 eserte Exp $
+# $Id: point_in_poly.t,v 1.6 2004/01/11 19:37:38 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
 
 # To cease warnings (Can't find VectorUtil):
+use FindBin;
 BEGIN { push @INC, "$FindBin::RealBin/../../../lib" } # at end!!!
 
 use VectorUtil::Inline;
@@ -106,6 +107,12 @@ while(1) {
     $c->configure(-scrollregion => [$c->bbox("all")]);
 
     $c->update;
+
+    if ($ENV{BATCH}) {
+	select(undef,undef,undef,0.5);
+	last;
+    }
+
     $c->waitVariable(\$weiter);
     last if $weiter < 1;
 }

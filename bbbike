@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.117 2004/01/04 11:06:22 eserte Exp eserte $
+# $Id: bbbike,v 3.119 2004/01/11 15:08:47 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -101,7 +101,8 @@ use autouse 'BBBikeExp'
 	  bbbikeexp_reload bbbikeexp_reload_all bbbikeexp_redraw_current_view
 	  bbbikeexp_add_data bbbikeexp_remove_data plotstr_on_demand);
 use autouse 'BBBikePrint'
-    => qw(create_postscript toggle_legend print_text_postscript print_text_pdflatex);
+    => qw(create_postscript print_postscript toggle_legend
+	  print_text_postscript print_text_pdflatex view_pdf);
 
 ## This is only for the Autoloader-Hack (see "make autoload")
 #use AutoLoader 'AUTOLOAD';
@@ -218,7 +219,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.117 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.119 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -880,6 +881,10 @@ Tk::CmdLine::SetArguments();
     label => M"Koordinatenausgabe", var => \$coord_output],
    ['printcmd','=s',undef,
     label => M"Druckerkommando", var => \$print_cmd],
+   ['printbackend','=s',undef,
+    label => M"Druck-Backend", var => \$print_backend,
+    choices => ["", qw(ps pdf)],
+   ],
    ['ps_fixed_font','=s',"Courier7",
     label => M"Druckerzeichensatz (fixed)", var => \$ps_fixed_font],
    ['mapcolor','=s','color',
@@ -7535,6 +7540,34 @@ sub save_route_as_esri {
 # weiter zur Druckfunktion...
 ### AutoLoad Sub
 sub print_function {
+    my $print_backend = $print_backend;
+    if (!defined $print_backend || $print_backend eq "") {
+	if ($os eq 'win') {
+	    my $available = print_postscript(undef, -checkavailability => 1);
+	    if (!$available) {
+		# a PDF viewer should be available everywhere nowadays on Win32
+		$print_backend = "pdf";
+	    } else {
+		$print_backend = "ps";
+	    }
+	} else {
+	    $print_backend = "ps";
+	}
+    }
+
+    if ($print_backend eq 'pdf') {
+	require File::Temp;
+	my($fh, $tmpfile) = File::Temp::tempfile(UNLINK => 1,
+						 SUFFIX => ".pdf");
+	$tmpfiles{$tmpfile}++;
+	pdf_export(-visiblemap => 1, -file => $tmpfile);
+	close($fh);
+	if (-e $tmpfile) {
+	    view_pdf($tmpfile);
+	}
+	return;
+    }
+
     my $tmpfile = create_postscript
 	($c,
 	 -legend => ($use_legend ?
@@ -8965,11 +8998,11 @@ sub choose_ort {
 			$args{'-type'} = "$type-bg";
 		    }
 		}
-		$action->(-coords       => $tcoords,
-			  '-index'      => $index,
-			  -showbutton   => $showb,
-			  -cancelbutton => $closeb,
-			  -clever_center => 1,#XXX experimental...
+		$action->(-coords        => $tcoords,
+			  '-index'       => $index,
+			  -showbutton    => $showb,
+			  -cancelbutton  => $closeb,
+			  -clever_center => 1,
 			  %args,
 			 );
 	    };
@@ -9006,6 +9039,7 @@ sub choose_ort {
 	    $showb  = $f->Button(Name => 'show',
 				 -command => sub { $show_sub->() },
 				)->pack(-side => 'left');
+	    $showb->bind("<2>" => sub { $show_sub->(-zoom_view => 1) });
 	    $showb->bind("<3>" => sub { $show_sub->(-dont_center => 1) });
 	    $closeb = $f->Button(Name => 'close',
 				 -command => sub {
@@ -9021,13 +9055,21 @@ sub choose_ort {
 	    for (qw(Return Double-1 2)) {
 		$lb->bind("<$_>", sub { $showb->invoke });
 	    }
+	    my $find_and_select_nearest = sub {
+		my($w, $y) = @_;
+		my $inx = $w->nearest($y);
+		$w->selectionClear(0, "end");
+		$w->selectionSet($inx);
+		$w->activate($inx);
+	    };
+	    $lb->bind("<2>" =>
+		      [sub {
+			   $find_and_select_nearest->(@_);
+			   $show_sub->(-zoom_view => 1);
+		       }, Ev('y')]);
 	    $lb->bind("<3>" =>
 		      [sub {
-			   my($w, $y) = @_;
-			   my $inx = $w->nearest($y);
-			   $w->selectionClear(0, "end");
-			   $w->selectionSet($inx);
-			   $w->activate($inx);
+			   $find_and_select_nearest->(@_);
 			   $show_sub->(-dont_center => 1);
 		       }, Ev('y')]);
 	    $lb->focus;
@@ -9156,10 +9198,15 @@ sub mark_street {
     my $line_width = $args{'-linewidth'} || get_line_width("s-H")+6; # outline takes 2 pixels...
     my $point_width = $args{'-pointwidth'} || $line_width+6;
     my @labels = $args{'-labels'} ? @{ $args{'-labels'} } : ();
+    my($minx, $miny, $maxx, $maxy);
     foreach (@{$args{'-coords'}}) {
 	my @coords = @$_;
 	@res_coords = ();
 	foreach (@coords) {
+	    if (!defined $minx || $_->[0] < $minx) { $minx = $_->[0] }
+	    if (!defined $maxx || $_->[0] > $maxx) { $maxx = $_->[0] }
+	    if (!defined $miny || $_->[1] < $miny) { $miny = $_->[1] }
+	    if (!defined $maxy || $_->[1] > $maxy) { $maxy = $_->[1] }
 	    push @res_coords, (ref $_ eq 'ARRAY'
 			       ? ($_->[0], $_->[1])
 			       : $_);
@@ -9191,7 +9238,9 @@ sub mark_street {
  	}
     }
     show_mark() unless $args{'-dont_mark'};
-    if (!$args{'-dont_center'}) {
+    if ($args{'-zoom_view'}) {
+	zoom_view($minx, $miny, $maxx, $maxy);
+    } elsif (!$args{'-dont_center'}) {
 	if ($args{'-clever_center'} && clever_center(@res_coords[0,1, $#res_coords-1,$#res_coords])) {
 	    # NOP
 	} else {
