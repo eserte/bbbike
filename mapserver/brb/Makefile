@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.19 2004/09/09 06:51:19 eserte Exp $
+# $Id: Makefile,v 1.20 2004/10/13 07:09:59 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -159,6 +159,12 @@ TARGET_DIR=		${.CURDIR:H}/brb-radzeit.herceg.de
 
 ######################################################################
 
+.if ${TARGET} != "devpc01"
+TPAGE?=			tpage --compile_ext=.ttc --compile_dir=/tmp
+.else
+TPAGE?=			tpage
+.endif
+
 # All Template-Toolkit variables
 ALL_TPL_DEFINES=\
 	--define MAPSERVER_DIR="$(MAPSERVER_DIR)" \
@@ -267,26 +273,26 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile ${ABS_LOCAL_BBBIKE_DIR}
 .SUFFIXES:	.html-tpl .html .map-tpl .map .js-tpl .js .conf-tpl
 
 .html-tpl.html:	Makefile Makefile.${TARGET}.inc
-	tpage $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
+	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 
 .js-tpl.js:	Makefile Makefile.${TARGET}.inc
-	tpage $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
+	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 
 .map-tpl.map:	Makefile Makefile.${TARGET}.inc
-	tpage $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
+	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 
 .conf-tpl.conf:	Makefile Makefile.${TARGET}.inc
-	tpage $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
+	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 
 ######################################################################
 # maps
 
 .brb.map:	brb.map-tpl Makefile Makefile.${TARGET}.inc
-	tpage $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
+	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 
 brb.map:	.brb.map mkroutemap
@@ -337,7 +343,7 @@ STERNFAHRT_2004_DEFINES=\
 	--define REFMAP_REGION_EXTENT="-15700 -14985 37034 37749" \
 
 sternfahrt2004/sternfahrt2004.map:	brb.map-tpl Makefile Makefile.${TARGET}.inc
-	tpage $(ALL_TPL_DEFINES) $(STERNFAHRT_2004_DEFINES) brb.map-tpl > $@
+	$(TPAGE) $(ALL_TPL_DEFINES) $(STERNFAHRT_2004_DEFINES) brb.map-tpl > $@
 	chmod ugo+r $@
 
 sternfahrt2004/sternfahrt2004-b.map:	sternfahrt2004/sternfahrt2004.map mkroutemap
@@ -363,11 +369,11 @@ check-html:	brb.html brb_init.html help.html empty.html
 # misc
 
 crontab:	crontab.tpl Makefile
-	tpage $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
+	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 
 httpd.conf:	httpd.conf-tpl Makefile
-	tpage $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
+	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 
 ######################################################################
@@ -455,3 +461,6 @@ dist-spiff:
 
 # On www.radzeit.de, use the mapserv-3.6.6 binary instead of the
 # mapserv-3.6.4 binary. The latter seems to segfault more often.
+# But the 3.6.6 version has other problems: no transparency with pngs (see
+# the S-Bahn symbol), wrong rendering of oneway symbols (lines instead of
+# arrows)
