@@ -178,8 +178,11 @@ if (!defined $md5 || $md5 !~ $md5_qr) {
     $md5 = "$1 $2 $3 $4"; # reformat md5 value
 }
 
+my $distsize = (stat("$bbbike_archiv_dir/$bbbike_archiv"))[7];
+
 open(DISTINFO, ">$portdir/distinfo") or die "Can't write distinfo file: $!";
 print DISTINFO $md5, "\n";
+print DISTINFO "SIZE ($bbbike_archiv) = $distsize\n";
 close DISTINFO;
 
 substitute("pkg-descr",   "$portdir/pkg-descr");
