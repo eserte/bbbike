@@ -56,6 +56,14 @@ sub BBBikeVia::menu_entries {
 			   BBBikeVia::move_via();
 		       },
 		      );
+    $menu->radiobutton(-label => M"Ziel verschieben",
+		       -variable => \$map_mode,
+		       -value    => "MM_GOAL_MOVE",
+		       -command  => sub {
+			   set_map_mode();
+			   BBBikeVia::move_via();
+		       },
+		      );
     $menu->radiobutton(-label => M"neue Vias setzen",
 		       -variable => \$map_mode,
 		       -value    => "MM_VIA_ADD",
@@ -123,6 +131,9 @@ sub BBBikeVia::delete_via_flags {
 # move
 
 sub BBBikeVia::move_via {
+    if ($map_mode eq "MM_GOAL_MOVE") {
+	return BBBikeVia::move_via_2($c, "ziel", -1);
+    }
     set_cursor("via_move");
     $set_route_point{$map_mode} = sub {
 	# do nothing
@@ -164,6 +175,9 @@ sub BBBikeVia::move_via_action {
 	status_message(M("Punkt muss auf einer Straße liegen"), "info");
 	# do not change status
     } else {
+	if (!$search_route_points[$BBBikeVia::move_index]) {
+	    status_message(M"Kein Punkt zu verschieben", "die");
+	}
 	$search_route_points[$BBBikeVia::move_index]->[SRP_COORD] = $coord;
 	re_search();
 	BBBikeVia::move_via_cont();
