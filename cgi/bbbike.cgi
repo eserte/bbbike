@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.76 2004/06/02 00:29:31 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.77 2004/06/03 22:04:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -612,7 +612,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.76 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.77 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -667,6 +667,8 @@ if (!$use_background_image) {
 }
 
 @pref_keys = qw/speed cat quality ampel green/;
+
+CGI->import('-no_xhtml');
 
 $q = new CGI;
 undef $g_str; # XXX because it may already contain landstrassen etc.
@@ -1153,6 +1155,7 @@ sub choose_form {
     }
 
     # Activate only for tested platforms
+    # XXX what about Opera?
     if ($bi->{'can_dhtml'} && !$bi->{'dhtml_buggy'} &&
 	$bi->{'can_javascript'} && !$bi->{'text_browser'}) {
 	if (($bi->is_browser_version("Mozilla", 4.5, 4.9999) &&
@@ -1388,6 +1391,7 @@ EOF
     if ($start eq ''  && $ziel eq '' &&
 	$start2 eq '' && $ziel2 eq '' &&
 	$startname eq '' && $zielname eq '' &&
+	$startc eq '' && $zielc eq '' &&
 	!$smallform) {
 	load_teaser();
 	# use "make count-streets" in ../data
@@ -1396,7 +1400,7 @@ EOF
 Nebenstra&szlig;en). Bei nicht erfassten Straﬂen wird automatisch die
 n‰chste bekannte verwendet. Hausnummern k&ouml;nnen nicht angegeben werden.<br><br>
 </td>
-<td rowspan="3" valign="top" @{[ $start_bgcolor ? "bgcolor=$start_bgcolor" : "" ]}>@{[ defined &teaser ? teaser() : "" ]}</td>
+<td rowspan="3" valign="top" @{[ $start_bgcolor ? "bgcolor=$start_bgcolor" : "" ]}>@{[ defined &teaser && !$bi->{'css_buggy'} ? teaser() : "" ]}</td>
 </tr>
 <p>
 EOF
@@ -1455,7 +1459,7 @@ EOF
 	my $no_td     = 0;
 
 	if ($bi->{'can_table'}) {
-	    print qq{<tr id=${type}tr $bgcolor_s><td align=center valign=middle width=40><a name="$type"><img style="padding-bottom:8px;" src="$imagetype" border=0 alt="$printtype"></a></td>};
+	    print qq{<tr id=${type}tr $bgcolor_s><td align=center valign=middle width=40><a name="$type"><img } . (!$bi->{'css_buggy'} ? qq{style="padding-bottom:8px;" } : "") . qq{src="$imagetype" border=0 alt="$printtype"></a></td>};
 	    my $color = {'start' => '#e0e0e0',
 			 'via'   => '#c0c0c0',
 			 'ziel'  => '#a0a0a0',
@@ -4420,6 +4424,7 @@ sub header {
     if (!$smallform) {
 	print $q->start_html
 	    (%args,
+	     -lang => 'de-DE',
 	     -BGCOLOR => '#ffffff',
 	     ($use_background_image && !$printmode ? (-BACKGROUND => "$bbbike_images/bg.jpg") : ()),
 	     -meta=>{'keywords'=>'berlin fahrrad route bike karte suche cycling route routing',
@@ -4427,7 +4432,7 @@ sub header {
 		    },
 	     -author => $BBBike::EMAIL,
 	    );
-	if ($bi->{'buggy_css'}) {
+	if ($bi->{'css_buggy'}) {
 	    print "<font face=\"$font\">";
 	}
 	print "<h1>\n";
@@ -4435,7 +4440,7 @@ sub header {
 	    print "$args{-title}";
 	    print "<img alt=\"\" src=\"$bbbike_images/srtbike.gif\" hspace=10>";
 	} else {
-	    my $use_css = !$bi->{'buggy_css'};
+	    my $use_css = !$bi->{'css_buggy'};
 	    print "<a href='$bbbike_url?begin=1' title='Zur¸ck zur Hauptseite' style='text-decoration:none; color:black;'>$args{-title}";
 	    print "<img";
 	    if ($use_css) {
@@ -4465,7 +4470,7 @@ sub footer_as_string {
     my $smallformstr = ($q->param('smallform')
 			? '&smallform=' . $q->param('smallform')
 			: '');
-    $s .= qq{<center style="padding-top:5px;"><table };
+    $s .= qq{<center } . (!$bi->{'css_buggy'} ? qq{style="padding-top:5px;" } : "") . qq{><table };
     if (1 || !$bi->{'can_css'}) { # XXX siehe oben Kommentar am Anfang von "sub search_*" bzgl. css
 	$s .= "bgcolor=\"#ffcc66\" ";
     }
@@ -5080,7 +5085,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/06/02 00:29:31 $';
+    my $cgi_date = '$Date: 2004/06/03 22:04:58 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

@@ -623,6 +623,8 @@ permission:
 	perl -MExtUtils::Manifest=maniread -le 'print join "\n", sort keys %{ maniread("MANIFEST") }' | xargs chmod ugo+r
 	chmod ugo+rx bbbike cgi/*.cgi
 	chmod ugo+r cgi/*.config
+	chmod ugo+rx misc/temp_blockings
+	chmod ugo+r  misc/temp_blockings/*
 
 EOF
 ;
