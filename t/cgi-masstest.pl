@@ -17,19 +17,30 @@ my $city = "b";
 my $fork = 4;
 if (!GetOptions("city=s" => \$city,
 		"fork=i" => \$fork,
+		"cgi=s"  => \$cgi,
 	       )) {
     die "usage: $0 [-city b|m] [-fork number_of_processes]";
 }
 
 if ($city eq 'm') { # München
-    $datadir = "/home/e/eserte/src/bbbike/projects/radlstadtplan_muenchen/data_Muenchen_DE";
+    $datadir = "$FindBin::RealBin/../projects/radlstadtplan_muenchen/data_Muenchen_DE";
     $streetlist = "$datadir/strassenliste";
-    $cgi = 'http://www/%7Eeserte/radlstadtplan/cgi-bin/radlstadtplan.cgi';
+    if (!defined $cgi) {
+	$cgi = 'http://www/%7Eeserte/radlstadtplan/cgi-bin/radlstadtplan.cgi';
+    }
     $imagetype = "ascii";
 } else { # $city eq 'b'
-    $datadir = "/home/e/eserte/src/bbbike/data";
+    $datadir = "$FindBin::RealBin/../data";
     $streetlist = "$datadir/Berlin.coords.data";
-    $cgi = 'http://www/bbbike/cgi/bbbike.cgi';
+    if (!defined $cgi) {
+	if (defined $ENV{BBBIKE_TEST_CGIURL}) {
+	    $cgi = $ENV{BBBIKE_TEST_CGIURL};
+	} elsif (defined $ENV{BBBIKE_TEST_CGIDIR}) {
+	    $cgi = $ENV{BBBIKE_TEST_CGIDIR} . "/bbbike.cgi";
+	} else {
+	    $cgi = 'http://www/bbbike/cgi/bbbike.cgi';
+	}
+    }
     require PLZ;
     $plz = PLZ->new($streetlist);
     $imagetype = "png";
