@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_points,v 1.9 2003/07/25 23:10:21 eserte Exp eserte $
+# $Id: check_points,v 1.10 2004/05/08 21:40:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2004 Slaven Rezic. All rights reserved.
@@ -30,11 +30,13 @@ my $ampelschaltung_source;
 my $ampelschaltung2_source;
 my $warn; # warn only instead of failing
 my $usecache = 1;
+my $q;
 
 GetOptions("ampelschaltung!" => \$ampelschaltung_source,
 	   "ampelschaltung2!" => \$ampelschaltung2_source,
 	   "warn!" => \$warn,
 	   "cache!" => \$usecache,
+	   "q|quiet!" => \$q,
 	  );
 
 my $file = shift || die "file to check missing";
@@ -105,7 +107,7 @@ while(1) {
 	}
     }
     if (@error) {
-	print STDERR "Error in $ret->[0]: " . join(" ", @error) . "\n";
+	print STDERR "Error in $ret->[0]: " . join(" ", @error) . "\n" unless $q;
 	$fail++ unless $warn;
     }
 }

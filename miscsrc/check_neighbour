@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_neighbour,v 1.13 2004/04/27 22:26:49 eserte Exp $
+# $Id: check_neighbour,v 1.15 2004/05/08 21:37:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2004 Slaven Rezic. All rights reserved.
@@ -31,19 +31,25 @@ sub doit {
     local(@ARGV) = @_;
 
     my $datatype = "standard";
-    my $datafile = "radwege_exact";
+    my @datafile;
     my @against = ();
-    my $origmap = "Berlinmap1996";
+    my $origmap = "Standard";
     my $keep_net = 0;
+    my $q;
 
-    GetOptions("data=s"     => \$datafile,
+    GetOptions('data=s@'    => \@datafile,
 	       "type=s"     => \$datatype,
 	       "against=s@" => \@against,
 	       "origmap=s"  => \$origmap,
 	       "keepnet!"   => \$keep_net,
+	       "q|quiet!"   => \$q,
 	      )
-	or die "usage. $0 [-data datafile] [-type datatype] [-against file ...] [-origmap map] [-[no]keepnet]
-";
+	or die <<EOF;
+usage: $0 [-data datafile [-data datafile ...]]
+          [-against file [-against file ...]]
+          [-type datatype] [-origmap map] [-[no]keepnet] [-[no]quiet | -q]
+EOF
+
 
     if (!@against) {
 	@against = "strassen";
@@ -69,39 +75,51 @@ sub doit {
 
     my $err;
 
-    if ($datatype =~ /radweg/i) { # this type is obsolete...
-	open(D, $datafile) or die $!;
-	while(<D>) {
-	    next if /^\s*\#/;
-	    chomp;
-	    my(@l) = split(/\s+/);
-	    if (!exists $net->{Net}{$l[0]}{$l[1]} and
-		!exists $net->{Net}{$l[1]}{$l[0]}) {
-		my $orig0 = join(",", map {int} $to->standard2map(split /,/, $l[0]));
-		my $orig1 = join(",", map {int} $to->standard2map(split /,/, $l[1]));
-		warn "Not neighbours in $datafile: $l[0] and $l[1] (orig coords: $orig0 and $orig1)";
-		$err++;
-	    }
-	}
-	close D;
-    } else {
-	my $d = new Strassen $datafile;
-	die if !$d;
-	$d->init;
-	while(1) {
-	    my $ret = $d->next;
-	    my @coord = @{$ret->[1]};
-	    last if !@coord;
-	    next if @coord < 2;
-	    for(my $i = 0; $i < $#coord; $i++) {
-		next if ($coord[$i]   !~ /^[-+\d]/ ||
-			 $coord[$i+1] !~ /^[-+\d]/); # XXX andere Coord-Systeme NYI
-		if (!exists $net->{Net}{$coord[$i]}{$coord[$i+1]} and
-		    !exists $net->{Net}{$coord[$i+1]}{$coord[$i]}) {
-		    my $orig0 = join(",", map {int} $to->standard2map(split /,/, $coord[$i]));
-		    my $orig1 = join(",", map {int} $to->standard2map(split /,/, $coord[$i+1]));
-		    warn "Neighbours? $coord[$i];$coord[$i+1] (line @{[ $d->pos+1]}, orig: $orig0;$orig1)\n";
+    for my $datafile (@datafile) {
+	if ($datatype =~ /radweg/i) { # this type is obsolete...
+	    open(D, $datafile) or die $!;
+	    while(<D>) {
+		next if /^\s*\#/;
+		chomp;
+		my(@l) = split(/\s+/);
+		if (!exists $net->{Net}{$l[0]}{$l[1]} and
+		    !exists $net->{Net}{$l[1]}{$l[0]}) {
+		    print STDERR "Not neighbours in $datafile: $l[0] and $l[1]"
+			unless $q;
+		    if ($origmap ne "Standard") {
+			my $orig0 = join(",", map {int} $to->standard2map(split /,/, $l[0]));
+			my $orig1 = join(",", map {int} $to->standard2map(split /,/, $l[1]));
+			print STDERR " (orig coords: $orig0 and $orig1)"
+			    unless $q;
+		    }
+		    print STDERR "\n" unless $q;
 		    $err++;
+		}
+	    }
+	    close D;
+	} else {
+	    my $d = new Strassen $datafile;
+	    die if !$d;
+	    $d->init;
+	    while(1) {
+		my $ret = $d->next;
+		my @coord = @{$ret->[1]};
+		last if !@coord;
+		next if @coord < 2;
+		for(my $i = 0; $i < $#coord; $i++) {
+		    next if ($coord[$i]   !~ /^[-+\d]/ ||
+			     $coord[$i+1] !~ /^[-+\d]/); # XXX andere Coord-Systeme NYI
+		    if (!exists $net->{Net}{$coord[$i]}{$coord[$i+1]} and
+			!exists $net->{Net}{$coord[$i+1]}{$coord[$i]}) {
+			print STDERR "Not neighbours in $datafile: $coord[$i];$coord[$i+1] (line @{[ $d->pos+1]})" unless $q;
+			if ($origmap ne "Standard") {
+			    my $orig0 = join(",", map {int} $to->standard2map(split /,/, $coord[$i]));
+			    my $orig1 = join(",", map {int} $to->standard2map(split /,/, $coord[$i+1]));
+			    print STDERR " (orig: $orig0;$orig1)" unless $q;
+			}
+			print STDERR "\n" unless $q;
+			$err++;
+		    }
 		}
 	    }
 	}

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.12 2004/05/07 06:12:37 eserte Exp $
+# $Id: Makefile,v 1.13 2004/05/08 21:41:46 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -202,6 +202,17 @@ DISTFILES=\
 	query_header2.html \
 
 
+# STERNFARTEN=	2003 2004
+
+# DISTFILES_STERNFAHRT=\
+# 	sternfahrt@YEAR@.html-tpl \
+# 	sternfahrt@YEAR@.map-tpl \
+# 	sternfahrt@YEAR@_init.html-tpl
+
+# .for year in ${STERNFARTEN}
+# DISTFILES+=	${DISTFILES_STERNFAHRT:S/@YEAR@/${year}/:S/^/sternfahrt${year}\//}
+# .endfor
+
 RADZEIT_DIST_DIR=/tmp/radzeit_mapserver_dist
 SPIFF_DIST_DIR=/home/e/eserte/src/bbbike/mapserver/brb-spiff
 
@@ -283,18 +294,26 @@ brb-ipaq.map:
 
 ######################################################################
 # Temporaries
-STERNFAHRTEN=	2003 2004
 
-.PHONY: ${STERNFAHRTEN:S/^/sternfahrt/g}
+# Für 2003 sollten Symlinks im mapserver-Rootverzeichnis auf die Dateien
+# in sternfahrt2003 zeigen (backward compatibility)
 
-.for year in ${STERNFAHRTEN}
-sternfahrt${year}:	sternfahrt${year}/sternfahrt${year}.html sternfahrt${year}/sternfahrt${year}_init.html sternfahrt${year}/sternfahrt${year}-b.map
+STERNFARTEN= 2003 2004
 
-sternfahrt${year}/sternfahrt${year}-b.map:	sternfahrt${year}/sternfahrt${year}.map mkroutemap
-	${BRBDIR}/mkroutemap -force -scope city sternfahrt${year}/sternfahrt${year}.map sternfahrt${year}/sternfahrt${year}-b.map
+#.PHONY: ${STERNFAHRTEN:S/^/sternfahrt/g}
+
+.PHONY: sternfahrt2003 sternfahrt2004
+
+# XXX Makefile problems?!
+
+#.for year in 2004 2003 # ${STERNFAHRTEN}
+sternfahrt2004:	sternfahrt2004/sternfahrt2004.html sternfahrt2004/sternfahrt2004_init.html sternfahrt2004/sternfahrt2004-b.map
+
+sternfahrt2004/sternfahrt2004-b.map:	sternfahrt2004/sternfahrt2004.map mkroutemap
+	${BRBDIR}/mkroutemap -force -scope city sternfahrt2004/sternfahrt2004.map sternfahrt2004/sternfahrt2004-b.map
 	chmod ugo+r $@
 
-.endfor
+#.endfor
 
 ######################################################################
 # html

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.9 2004/05/02 21:08:12 eserte Exp $
+# $Id: Makefile,v 2.10 2004/05/08 08:08:26 eserte Exp $
 #
 
 BBBIKEDIR=		..
@@ -604,7 +604,7 @@ check-disabled:	.check_label
 	@touch $@
 
 .check_qualitaet_l:	qualitaet_l landstrassen landstrassen2
-	$(CHECK_NEIGHBOUR) -type standard -origmap GISmap -data qualitaet_l \
+	$(CHECK_NEIGHBOUR) -type standard -data qualitaet_l \
 		-against landstrassen -against landstrassen2
 	@touch $@
 
@@ -613,7 +613,7 @@ check-disabled:	.check_label
 	@touch $@
 
 .check_handicap_l:	handicap_l landstrassen landstrassen2
-	$(CHECK_NEIGHBOUR) -type standard -origmap GISmap -data handicap_l \
+	$(CHECK_NEIGHBOUR) -type standard -data handicap_l \
 		-against landstrassen -against landstrassen2
 	@touch $@
 
@@ -634,14 +634,13 @@ check-disabled:	.check_label
 	$(CHECK_POINTS) $i .strassen.tmp landstrassen landstrassen2 faehren
 	@touch $@
 
-.check_comments2:	.check_${i}_2
+.endfor
 
-.check_${i}_2:	$i strassen landstrassen landstrassen2 faehren
+.check_comments2:	$(COMMENTS_PARTIAL) strassen landstrassen landstrassen2 faehren
 	$(CHECK_NEIGHBOUR) -type standard \
 	    -against strassen -against landstrassen -against landstrassen2 \
-	    -against faehren -data $i
+	    -against faehren ${COMMENTS_PARTIAL:S/^/-data /g}
 	@touch $@
-.endfor
 
 .check_comments_ferry:	comments_ferry faehren
 	$(CHECK_NEIGHBOUR) -type standard -against faehren -data comments_ferry
@@ -673,7 +672,7 @@ check-disabled:	.check_label
 
 .check_temp_blockings:	${MISCDIR}/temp_blockings/*.bbd strassen
 	cat ${MISCDIR}/temp_blockings/*.bbd > /tmp/all_temp_blockings.bbd
-	$(CHECK_NEIGHBOUR) -type standard -data /tmp/all_temp_blockings.bbd -against strassen
+	$(CHECK_NEIGHBOUR) -type standard -data /tmp/all_temp_blockings.bbd -against strassen -against landstrassen -against landstrassen2
 	rm -f /tmp/all_temp_blockings.bbd
 	@touch $@
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_bbbike_temp_blockings,v 1.10 2004/04/27 22:58:28 eserte Exp $
+# $Id: check_bbbike_temp_blockings,v 1.11 2004/05/08 21:40:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003, 2004 Slaven Rezic. All rights reserved.
@@ -78,27 +78,36 @@ sub run_checks {
 		if !defined $longest_file_length || length $o->{file} > $longest_file_length;
 
 	    # Checks for now restricted to Berlin
-	    system("$FindBin::RealBin/check_points",
+	    system("$FindBin::RealBin/check_points", "-q",
 		   $full_path, "strassen");
 	    if ($? != 0) {
-		die "File $full_path failed check_points test";
+		# Otherwise do a full region check
+		system("$FindBin::RealBin/check_points",
+		       $full_path, "strassen", "landstrassen", "landstrassen2");
+		if ($? != 0) {
+		    die "File $full_path failed check_points test";
+		}
 	    }
 
 	    require "$FindBin::RealBin/check_neighbour";
 	    if (!eval {
 		BBBike::check_neighbour::doit
 			("-type", "standard", "-data", $full_path,
-			 "-against", "strassen", "-keepnet");
+			 "-against", "strassen", "-keepnet", "-q");
 		1;
 	    }) {
-		die "File $full_path failes check_neighbour test: $@";
+		# Here use the system variant because -keepnet causes
+		# the old net based on "strassen" to be used again
+		system("$FindBin::RealBin/check_neighbour",
+		       "-type", "standard", "-data", $full_path,
+		       "-against", "strassen",
+		       "-against", "landstrassen",
+		       "-against", "landstrassen2",
+		      );
+		if ($? != 0) {
+		    die "File $full_path failed check_neighbour test";
+		}
 	    }
-	    #  	system("$FindBin::RealBin/check_neighbour",
-	    #  	       "-type", "standard", "-data", $full_path,
-	    #  	       "-against", "strassen");
-	    #  	if ($? != 0) {
-	    #  	    die "File $full_path failes check_neighbour test";
-	    #  	}
 	}
     }
 }

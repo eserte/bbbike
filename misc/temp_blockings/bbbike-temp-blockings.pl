@@ -287,4 +287,22 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Lückstraße Berlin-Friedrichsfelde Richtung Berlin-Friedrichshain; zwischen Rummelsburger Straße und Schlichtallee wegen Bauarbeiten gesperrt bis 7.05.2004. ',
        type  => 'handicap',
      },
+     { from  => 1083708000, # 2004-05-05 00:00
+       until => 1085004000, # 2004-05-20 00:00
+       file  => 'karstaedt.bbd',
+       text  => 'B 5; OD Karstädt, Bahnübergang; Gleisbauarbeiten; Vollsperrung; 06.05.2004-19.05.2004 ',
+       type  => 'handicap',
+     },
+     { from  => 1083880800, # 2004-05-07 00:00
+       until => 1084140000, # 2004-05-10 00:00
+       file  => 'boelschefest.bbd',
+       text  => 'Bölschestr. (Köpenick) in beiden Richtungen, zwischen Fürstenwalder Damm und Müggelseedamm Veranstaltung, Straßenfest (bis 09.05. 24 Uhr) 14. Bölschefest (11:39) ',
+       type  => 'gesperrt',
+     },
+     { from  => 1083880800, # 2004-05-07 00:00
+       until => 1084125600, # 2004-05-09 20:00
+       file  => 'florastr.bbd',
+       text  => 'Florastr. (Pankow) in beiden Richtungen zwischen Florapromenade und Heystr. Straßenfest, Straße vollständig gesperrt (bis 09.05.2004 20:00 Uhr) (16:47) ',
+       type  => 'gesperrt',
+     },
     );

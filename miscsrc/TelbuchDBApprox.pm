@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: TelbuchDBApprox.pm,v 1.24 2003/06/01 21:56:44 eserte Exp $
+# $Id: TelbuchDBApprox.pm,v 1.25 2004/05/08 09:33:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -753,6 +753,8 @@ sub tk_choose {
 	$t->OnDestroy(sub { delete $main::toplevel{"choosedb"} });
 	my $close_window = sub { $t->destroy; };
 	my $search_window = sub {
+	    $str =~ s/^\s+//;
+	    $str =~ s/\s+$//;
 	    if ($e->can('historyAdd') &&
 		$e->can('historySave')) {
 		$e->historyAdd;
@@ -763,22 +765,39 @@ sub tk_choose {
 	    eval {
 
 		@match = ();
-
-		(my $str = $str) =~ s/(str)\.$/$1/i;
-		$str .= "%";
-		undef $hnr if defined $hnr && $hnr =~ /^\s*$/;
-		my $sth = (defined $hnr
-			   ? $tdb->{Sth_exact}
-			   : $tdb->{Sth_nohnr}
-			  );
-		$sth->execute($str, (defined $hnr ? $hnr : ()))
-		    or die $DBI::error;
 		my %res;
-		while(my @row = $sth->fetchrow_array) {
-		    # street.name => citypart.name => list of [hnr, long, lat]
-		    push @{ $res{$row[0]}{$row[1]} }, [@row[2 .. 5]];
+
+	    TRY: {
+		    for my $try ("separated", "combined") {
+			my $str = $str;
+			my $hnr = $hnr;
+			if ($try eq 'combined') {
+			    if (!defined $hnr || $hnr eq "") {
+				($str,$hnr) = TelbuchApprox::split_street($str);
+			    } else {
+				last TRY;
+			    }
+			}
+			$str =~ s/(str)\.$/$1/i;
+			$str .= "%";
+			undef $hnr if defined $hnr && $hnr =~ /^\s*$/;
+			my $sth = (defined $hnr
+				   ? $tdb->{Sth_exact}
+				   : $tdb->{Sth_nohnr}
+				  );
+			$sth->execute($str, (defined $hnr ? $hnr : ()))
+			    or die $DBI::error;
+			while(my @row = $sth->fetchrow_array) {
+			    # street.name => citypart.name => list of [hnr, long, lat]
+			    push @{ $res{$row[0]}{$row[1]} }, [@row[2 .. 5]];
+			}
+			$sth->finish;
+
+			if (keys %res) {
+			    last TRY;
+			}
+		    }
 		}
-		$sth->finish;
 
 		if (!keys %res) {
 		    $showb->configure(-state => 'disabled');
