@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.pl,v 1.20 2004/12/29 17:42:05 eserte Exp $
+# $Id: bbbikedraw.pl,v 1.21 2005/01/16 22:02:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -41,6 +41,7 @@ my $fill_image; # fill image with data from outer scope
 my $use_imagemagick;
 my $use_mapserver;
 my $use_imager;
+my $use_module;
 my $bbox;
 my $minplacecat;
 my $draw_scale_bar = 1;
@@ -67,6 +68,7 @@ if (!GetOptions("w=i" => \$w,
 		"imagemagick!" => \$use_imagemagick,
 		"mapserver!" => \$use_mapserver,
 		"imager!" => \$use_imager,
+		"module=s" => \$use_module,
 		"minplacecat=i" => \$minplacecat,
 		"fontsizescale=f" => \$fontsizescale,
 		"bg|background=s" => \$background,
@@ -114,21 +116,26 @@ if (defined $scope) {
 if (defined $outtype) {
     push @extra_args, ImageType => $outtype;
 }
-if ($use_imagemagick) {
-    push @extra_args, Module => "ImageMagick";
-}
-if ($use_imager) {
-    push @extra_args, Module => "Imager";
-}
-if ($use_mapserver) {
-    push @extra_args, Module => "MapServer";
-    require BBBikeDraw::MapServer;
-    # XXX what about other configurations?
-    my $conf = ($ipaq
-		? BBBikeDraw::MapServer::Conf->ipaq_vran_default
-		: BBBikeDraw::MapServer::Conf->vran_default
-	       );
-    push @extra_args, Conf => $conf;
+
+if (defined $use_module) {
+    push @extra_args, Module => $use_module;
+} else {
+    if ($use_imagemagick) {
+	push @extra_args, Module => "ImageMagick";
+    }
+    if ($use_imager) {
+	push @extra_args, Module => "Imager";
+    }
+    if ($use_mapserver) {
+	push @extra_args, Module => "MapServer";
+	require BBBikeDraw::MapServer;
+	# XXX what about other configurations?
+	my $conf = ($ipaq
+		    ? BBBikeDraw::MapServer::Conf->ipaq_vran_default
+		    : BBBikeDraw::MapServer::Conf->vran_default
+		   );
+	push @extra_args, Conf => $conf;
+    }
 }
 if (defined $minplacecat) {
     push @extra_args, MinPlaceCat => $minplacecat;
@@ -214,10 +221,14 @@ usage: $0 [options]
 -scope scope               Use the specified scope. By default "city" is used.
 -datadirs directory,...    Use another data directory for map data.
 -[no]fillimage             ?
--[no]imagemagick           Use the ImageMagick backend instead of GD. This
+-imagemagick               Use the ImageMagick backend instead of GD. This
                            will result in higher quality images, but the
                            creation time will be *much* longer.
--[no]mapserver		   Use MapServer backend instead of GD.
+-mapserver  		   Use MapServer backend instead of GD.
+-imager  		   Use Imager backend instead of GD.
+-module ModuleName	   Use any backend instead of GD. Note that it's
+			   recommended to use -mapserver instead of
+			   -module MapServer.
 -minplacecat cat           Draw places with at least the specified category.
 -[no]drawscalebar          Draw scale bar. Default is true.
 -fontsizescale float       Scale default font sizes for place labels.

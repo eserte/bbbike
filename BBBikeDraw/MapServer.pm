@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.15 2005/01/14 00:55:31 eserte Exp $
+# $Id: MapServer.pm,v 1.16 2005/01/16 22:02:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -146,6 +146,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 		    OnFlaechen OnGewaesser OnStrassen OnUBahn OnSBahn OnRBahn
 		    OnAmpeln OnOrte OnFaehren OnGrenzen OnFragezeichen OnObst
 		    OnRoute OnStartFlag OnGoalFlag OnMarkerPoint OnTitle
+		    OnRadwege OnQualitaet OnHandicap OnBlocked OnMount
 		    StartFlagPoints GoalFlagPoints MarkerPoint TitleText RouteCoords
 		    MapserverDir MapserverRelurl MapserverUrl
 		    BbbikeDir ImageDir ImageSuffix FontsList
@@ -370,6 +371,16 @@ sub draw_map {
 	    $im->OnFragezeichen(1);
 	} elsif ($_ eq 'obst') {
 	    $im->OnObst(1);
+	} elsif ($_ eq 'radwege') {
+	    $im->OnRadwege(1);
+	} elsif ($_ eq 'qualitaet') {
+	    $im->OnQualitaet(1);
+	} elsif ($_ eq 'handicap') {
+	    $im->OnHandicap(1);
+	} elsif ($_ eq 'blocked') {
+	    $im->OnBlocked(1);
+	} elsif ($_ eq 'mount') {
+	    $im->OnMount(1);
 	} else {
 	    warn "Ignored: $_";
 	}

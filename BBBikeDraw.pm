@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.39 2004/12/29 23:33:06 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.40 2005/01/16 22:02:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.39 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.40 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, %args) = @_;
@@ -565,7 +565,9 @@ sub set_draw_elements {
 			     'faehren',
 			     'flaechen', 'ubahn', 'sbahn', 'rbahn', 'str',
 			     'ort', 'wind',
-			     'strname', 'ubahnname', 'sbahnname'];
+			     'strname', 'ubahnname', 'sbahnname',
+			     'radwege', 'qualitaet', 'handicap', 'blocked',
+			     'mount'];
 	    if ($self->{Scope} =~ /^(wide)?region$/) {
 		push @{ $self->{Draw} }, 'landstr';
 	    }
@@ -772,6 +774,7 @@ sub make_default_title {
     $start = $self->patch_string($start) if $self->can("patch_string");
     my $ziel  = $self->{Zielname};
     $ziel = $self->patch_string($ziel) if $self->can("patch_string");
+    local $^W; # ignore warnings if $start or $ziel undef
     foreach my $s (\$start, \$ziel) {
 	# Text in Klammern entfernen, damit der Titel kürzer wird
 	my(@s) = split(m|/|, $$s);

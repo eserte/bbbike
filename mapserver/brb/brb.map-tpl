@@ -1,34 +1,45 @@
 [% EDITWARNMAP %]
-[% UNLESS MAPNAME.defined;  MAPNAME = "brb"; END -%]
-[% UNLESS EXTENT.defined;   EXTENT = "7446 10397 9667 12620"; END -%]
-[% UNLESS TEMPLATE.defined; TEMPLATE = "brb"; END -%]
-[% UNLESS REFMAPOUTLINE.defined; REFMAPOUTLINE = "0 0 0"; END -%]
-[% UNLESS REFMAPCOLOR.defined; REFMAPCOLOR = "-1 -1 -1"; END -%]
-[% UNLESS ON_FLAECHEN.defined %][% ON_FLAECHEN = "ON" %][% END -%]
-[% UNLESS ON_GEWAESSER.defined %][% ON_GEWAESSER = "ON" %][% END -%]
-[% UNLESS ON_FAEHREN.defined %][% ON_FAEHREN = "ON" %][% END -%]
-[% UNLESS ON_GRENZEN.defined %][% ON_GRENZEN = "ON" %][% END -%]
-[% UNLESS ON_STRASSEN.defined %][% ON_STRASSEN = "DEFAULT" %][% END -%]
-[% UNLESS ON_U_BAHN.defined %][% ON_U_BAHN = "ON" %][% END -%]
-[% UNLESS ON_S_BAHN.defined %][% ON_S_BAHN = "ON" %][% END -%]
-[% UNLESS ON_R_BAHN.defined %][% ON_R_BAHN = "ON" %][% END -%]
-[% UNLESS ON_FRAGEZEICHEN.defined %][% ON_FRAGEZEICHEN = "OFF" %][% END -%]
-[% UNLESS ON_ORTE.defined %][% ON_ORTE = "ON" %][% END -%]
-[% UNLESS ON_OBST.defined %][% ON_OBST = "ON" %][% END -%]
-[% UNLESS ON_AMPELN.defined %][% ON_AMPELN = "ON" %][% END -%]
-[% UNLESS ON_ROUTE == "ON" %][% ROUTE_COMMENT = "#" %][% END -%]
-[% UNLESS ON_START_POINT == "ON" %][% START_FLAG_COMMENT = "#" %][% END -%]
-[% UNLESS ON_GOAL_POINT == "ON" %][% GOAL_FLAG_COMMENT = "#" %][% END -%]
-[% UNLESS ON_MARKER_POINT == "ON" %][% MARKER_COMMENT = "#" %][% END -%]
-[% UNLESS COLOR_MIDDLE_GREEN.defined %][% COLOR_MIDDLE_GREEN = "0 225 0" %][% END -%]
-[% UNLESS COLOR_GREEN.defined %][% COLOR_GREEN = "128 255 128" %][% END -%]
-[% UNLESS COLOR_DARK_GREEN.defined %][% COLOR_DARK_GREEN = "0 128 0" %][% END -%]
-[% UNLESS COLOR_YELLOW.defined %][% COLOR_YELLOW = "255 255 0" %][% END -%]
-[% UNLESS COLOR_RED.defined %][% COLOR_RED = "200 0 0" %][% END -%]
-[% UNLESS COLOR_DARK_BLUE.defined %][% COLOR_DARK_BLUE = "0 0 128" %][% END -%]
-[% UNLESS COLOR_WHITE.defined %][% COLOR_WHITE = "255 255 255" %][% END -%]
-[% UNLESS COLOR_LIGHT_BLUE.defined %][% COLOR_LIGHT_BLUE = "200 200 255" %][% END -%]
-[% UNLESS COLOR_GREY_BG.defined %][% COLOR_GREY_BG = "200 200 200" %][% END -%]
+[%
+   UNLESS MAPNAME.defined;	MAPNAME = "brb";			END;
+   UNLESS EXTENT.defined;	EXTENT = "7446 10397 9667 12620";	END;
+   UNLESS TEMPLATE.defined;	TEMPLATE = "brb";			END;
+   UNLESS REFMAPOUTLINE.defined;REFMAPOUTLINE = "0 0 0";		END;
+   UNLESS REFMAPCOLOR.defined;	REFMAPCOLOR = "-1 -1 -1";		END;
+
+   UNLESS ON_FLAECHEN.defined;	ON_FLAECHEN = "ON";			END;
+   UNLESS ON_GEWAESSER.defined;	ON_GEWAESSER = "ON";			END;
+   UNLESS ON_FAEHREN.defined;	ON_FAEHREN = "ON";			END;
+   UNLESS ON_GRENZEN.defined;	ON_GRENZEN = "ON";			END;
+   UNLESS ON_STRASSEN.defined;	ON_STRASSEN = "DEFAULT";		END;
+   UNLESS ON_RADWEGE.defined;	ON_RADWEGE = "ON";			END;
+   UNLESS ON_QUALITAET.defined;	ON_QUALITAET = "ON";			END;
+   UNLESS ON_HANDICAP.defined;	ON_HANDICAP = "ON";			END;
+   UNLESS ON_BLOCKED.defined;	ON_BLOCKED = "ON";			END;
+   UNLESS ON_MOUNT.defined;	ON_MOUNT = "ON";			END;
+   UNLESS ON_U_BAHN.defined;	ON_U_BAHN = "ON";			END;
+   UNLESS ON_S_BAHN.defined;	ON_S_BAHN = "ON";			END;
+   UNLESS ON_R_BAHN.defined;	ON_R_BAHN = "ON";			END;
+   UNLESS ON_FRAGEZEICHEN.defined;	ON_FRAGEZEICHEN = "OFF";	END;
+   UNLESS ON_ORTE.defined;	ON_ORTE = "ON";				END;
+   UNLESS ON_OBST.defined;	ON_OBST = "ON";				END;
+   UNLESS ON_AMPELN.defined;	ON_AMPELN = "ON";			END;
+   UNLESS ON_SEHENSWUERDIGKEIT.defined; ON_SEHENSWUERDIGKEIT = "ON";	END;
+
+   UNLESS ON_ROUTE == "ON";		ROUTE_COMMENT = "#";		END;
+   UNLESS ON_START_POINT == "ON";	START_FLAG_COMMENT = "#";	END;
+   UNLESS ON_GOAL_POINT == "ON";	GOAL_FLAG_COMMENT = "#";	END;
+   UNLESS ON_MARKER_POINT == "ON";	MARKER_COMMENT = "#";		END;
+
+   UNLESS COLOR_MIDDLE_GREEN.defined;	COLOR_MIDDLE_GREEN = "0 225 0";	END;
+   UNLESS COLOR_GREEN.defined;		COLOR_GREEN = "128 255 128";	END;
+   UNLESS COLOR_DARK_GREEN.defined;	COLOR_DARK_GREEN = "0 128 0";	END;
+   UNLESS COLOR_YELLOW.defined;		COLOR_YELLOW = "255 255 0";	END;
+   UNLESS COLOR_RED.defined;		COLOR_RED = "200 0 0";		END;
+   UNLESS COLOR_DARK_BLUE.defined;	COLOR_DARK_BLUE = "0 0 128";	END;
+   UNLESS COLOR_WHITE.defined;		COLOR_WHITE = "255 255 255";	END;
+   UNLESS COLOR_LIGHT_BLUE.defined;	COLOR_LIGHT_BLUE = "200 200 255";END;
+   UNLESS COLOR_GREY_BG.defined;	COLOR_GREY_BG = "200 200 200";	END;
+-%]
 #
 # Start of map file
 #
@@ -584,7 +595,7 @@ END
 LAYER
   NAME "Fl‰chen (above)"
   TYPE POLYGON
-  STATUS ON
+  STATUS [% ON_FLAECHEN %]
   GROUP flaechen
   DATA flaechen
 
@@ -656,7 +667,9 @@ LAYER
   LABELITEM "STRNR" # dummy ... should be invisible i.e. one space
 [% BLOCK CLASS_FERRY -%]
   CLASS
+[% IF legend -%]
     NAME "F‰hren"
+[% END -%]
     COLOR 0 255 0
     SYMBOL '[% IMAGE_DIR %]/ferry[% imgsuffix %].[% IMAGE_SUFFIX %]'
     LABEL
@@ -670,8 +683,8 @@ LAYER
     [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_FERRY imgsuffix="_klein" minscale=75000 maxscale=150000 -%]
-[% PROCESS CLASS_FERRY imgsuffix="" minscale=undef maxscale=75000 -%]
+[% PROCESS CLASS_FERRY imgsuffix="_klein" minscale=75000 maxscale=150000 legend=0 -%]
+[% PROCESS CLASS_FERRY imgsuffix="" minscale=undef maxscale=75000 legend=1 -%]
 END
 
 ### BEGIN AFTER FAEHREN_ANNOTATIONS
@@ -734,7 +747,7 @@ END
 LAYER
   NAME sehenswuerdigkeit_polygon
   TYPE POLYGON
-  STATUS ON
+  STATUS [% ON_SEHENSWUERDIGKEIT %]
   GROUP sehenswuerdigkeit
   DATA sehenswuerdigkeit_polygon
   
@@ -761,10 +774,49 @@ END
 ### BEGIN AFTER SEHENSWUERDIGKEIT_POLYGON
 ### END AFTER SEHENSWUERDIGKEIT_POLYGON
 
+[%
+   SET SIZES_N = [
+	{size=>1,  minscale=>100000, maxscale=>1000000, legend=>0, outline=>0},
+	{size=>2,  minscale=>40000,  maxscale=>100000,  legend=>0, outline=>0},
+	{size=>3,  minscale=>20000,  maxscale=>40000,   legend=>0, outline=>0},
+	{size=>4,  minscale=>10000,  maxscale=>20000,   legend=>0, outline=>1},
+	{size=>5,  minscale=>8000,   maxscale=>10000,   legend=>1, outline=>1},
+	{size=>6,  minscale=>6000,   maxscale=>8000,    legend=>0, outline=>1},
+	{size=>8,  minscale=>4000,   maxscale=>6000,    legend=>0, outline=>1},
+	{size=>10, minscale=>2000,   maxscale=>4000,    legend=>0, outline=>1},
+	{size=>12, minscale=>1000,   maxscale=>2000,    legend=>0, outline=>1},
+	{size=>15, minscale=>undef,  maxscale=>1000,    legend=>0, outline=>1},
+   ];
+   SET SIZES_H = [
+	{size=>2   minscale=>500000, maxscale=>1000000, legend=>0, outline=>0},
+	{size=>3,  minscale=>200000, maxscale=>500000,  legend=>0, outline=>0},
+	{size=>4,  minscale=>20000,  maxscale=>200000,  legend=>0, outline=>0},
+	{size=>5,  minscale=>10000,  maxscale=>20000,   legend=>0, outline=>1},
+	{size=>6,  minscale=>8000,   maxscale=>10000,   legend=>1, outline=>1},
+	{size=>8,  minscale=>6000,   maxscale=>8000,    legend=>0, outline=>1},
+	{size=>10, minscale=>4000,   maxscale=>6000,    legend=>0, outline=>1},
+	{size=>13, minscale=>2000,   maxscale=>4000,    legend=>0, outline=>1},
+	{size=>16, minscale=>1000,   maxscale=>2000,    legend=>0, outline=>1},
+	{size=>20, minscale=>undef,  maxscale=>1000,    legend=>0, outline=>1},
+   ];
+   SET SIZES_B = [
+	{size=>2,  minscale=>1000000,maxscale=>undef,   legend=>0, outline=>0},
+	{size=>3,  minscale=>500000, maxscale=>1000000, legend=>0, outline=>1},
+	{size=>4,  minscale=>20000,  maxscale=>500000,  legend=>0, outline=>1},
+	{size=>5,  minscale=>10000,  maxscale=>20000,   legend=>0, outline=>1},
+	{size=>6,  minscale=>8000,   maxscale=>10000,   legend=>1, outline=>1},
+	{size=>8,  minscale=>6000,   maxscale=>8000,    legend=>0, outline=>1},
+	{size=>10, minscale=>4000,   maxscale=>6000,    legend=>0, outline=>1},
+	{size=>13, minscale=>2000,   maxscale=>4000,    legend=>0, outline=>1},
+	{size=>16, minscale=>1000,   maxscale=>2000,    legend=>0, outline=>1},
+	{size=>20, minscale=>undef,  maxscale=>1000,    legend=>0, outline=>1},
+   ];
+-%]
+
 LAYER
   NAME "Straﬂen (Outline)"
   TYPE LINE
-  STATUS DEFAULT
+  STATUS [% ON_STRASSEN %]
   DATA strassen
   GROUP strassen
   
@@ -772,64 +824,72 @@ LAYER
 
   CLASSITEM 'CAT'
 [% BLOCK CLASS_N_OUTL -%]
+[% IF p.outline -%]
   CLASS
     EXPRESSION 'NN'
     COLOR 210 210 210
     SYMBOL 'width'
-    SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    SIZE [% p.size + 2 %]
+    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
   CLASS
     EXPRESSION 'N'
     COLOR 210 210 210
     SYMBOL 'width'
-    SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    SIZE [% p.size + 2 %]
+    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_N_OUTL size=5 minscale=20000 maxscale=1000000 -%]
-[% PROCESS CLASS_N_OUTL size=6 minscale=10000 maxscale=20000 -%]
-[% PROCESS CLASS_N_OUTL size=7 minscale=undef maxscale=10000 -%]
+[% END -%]
+[% FOR i = SIZES_N;
+      PROCESS CLASS_N_OUTL p=i;
+   END
+-%]
 
 [% BLOCK CLASS_H_OUTL -%]
+[% IF p.outline -%]
   CLASS
     EXPRESSION 'H'
     COLOR 210 210 210
     SYMBOL 'width'
-    SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    SIZE [% p.size + 2 %]
+    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
   # sligtly darker outline
   CLASS
     EXPRESSION 'HH'
     COLOR 180 180 180
     SYMBOL 'width'
-    SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    SIZE [% p.size + 2 %]
+    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_H_OUTL size=6 minscale=20000 maxscale=1000000 -%]
-[% PROCESS CLASS_H_OUTL size=7 minscale=10000 maxscale=20000 -%]
-[% PROCESS CLASS_H_OUTL size=8 minscale=undef maxscale=10000 -%]
+[% END -%]
+[% FOR i = SIZES_H;
+      PROCESS CLASS_H_OUTL p=i;
+   END
+-%]
 
 [% BLOCK CLASS_B_OUTL -%]
+[% IF p.outline -%]
   CLASS
     EXPRESSION 'B'
     COLOR 180 180 180
     SYMBOL 'width'
-    SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    SIZE [% p.size + 2 %]
+    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_B_OUTL size=3 minscale=1000000 maxscale=undef -%]
-[% PROCESS CLASS_B_OUTL size=6 minscale=20000 maxscale=1000000 -%]
-[% PROCESS CLASS_B_OUTL size=7 minscale=10000 maxscale=20000 -%]
-[% PROCESS CLASS_B_OUTL size=8 minscale=undef maxscale=10000 -%]
+[% END -%]
+[% FOR i = SIZES_B;
+      PROCESS CLASS_B_OUTL p=i;
+   END
+-%]
 
   METADATA
     WMS_TITLE "Straﬂen (Outline)"
@@ -842,10 +902,10 @@ LAYER
   NAME Radwege
   GROUP radwege
   TYPE LINE
-  STATUS ON
+  STATUS [% ON_RADWEGE %]
   DATA radwege20
 
-  MINSCALE 10000
+  MINSCALE 5000
   TOLERANCE 3
 
   TEMPLATE "query.html"
@@ -878,46 +938,10 @@ LAYER
   NAME "Radwege"
   GROUP radwege
   TYPE LINE
-  STATUS ON
+  STATUS [% ON_RADWEGE %]
   DATA radwege10
 
-  MINSCALE 5000
-  MAXSCALE 10000
-  TOLERANCE 3
-
-  TEMPLATE "query.html"
-  HEADER "query_header2.html"
-  FOOTER "query_footer2.html"
-
-  CLASSITEM 'CAT'
-  CLASS
-    EXPRESSION /^RW[1234789]$/
-    NAME "Radweg"
-    COLOR 100 100 200
-    SYMBOL 'width'
-    SIZE 4
-  END
-  CLASS
-    EXPRESSION "RW5"
-    NAME "Busspur"
-    COLOR 128 128 255
-    SYMBOL 'dashed1'
-    SIZE 4
-  END
-  METADATA
-    WMS_TITLE "Radwege"
-    WMS_ABSTRACT "Radwege, verkehrsberuhigte Bereiche und Busspuren (Version f¸r kleine Maﬂst‰be)"
-    WMS_SRS "EPSG:4326"
-  END
-END
-
-LAYER
-  NAME Radwege
-  GROUP radwege
-  TYPE LINE
-  STATUS ON
-  DATA radwege5
-
+  MINSCALE 2000
   MAXSCALE 5000
   TOLERANCE 3
 
@@ -931,14 +955,50 @@ LAYER
     NAME "Radweg"
     COLOR 100 100 200
     SYMBOL 'width'
-    SIZE 4
+    SIZE 6
   END
   CLASS
     EXPRESSION "RW5"
     NAME "Busspur"
     COLOR 128 128 255
     SYMBOL 'dashed1'
-    SIZE 4
+    SIZE 6
+  END
+  METADATA
+    WMS_TITLE "Radwege"
+    WMS_ABSTRACT "Radwege, verkehrsberuhigte Bereiche und Busspuren (Version f¸r kleine Maﬂst‰be)"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME Radwege
+  GROUP radwege
+  TYPE LINE
+  STATUS [% ON_RADWEGE %]
+  DATA radwege5
+
+  MAXSCALE 2000
+  TOLERANCE 3
+
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /^RW[1234789]$/
+    NAME "Radweg"
+    COLOR 100 100 200
+    SYMBOL 'width'
+    SIZE 8
+  END
+  CLASS
+    EXPRESSION "RW5"
+    NAME "Busspur"
+    COLOR 128 128 255
+    SYMBOL 'dashed1'
+    SIZE 8
   END
   METADATA
     WMS_TITLE "Radwege"
@@ -966,7 +1026,7 @@ LAYER
 [% BLOCK CLASS_N -%]
   CLASS
     EXPRESSION 'NN'
-[% IF legend -%]
+[% IF p.legend -%]
     NAME "Nebenstraﬂe, f¸r Kfz gesperrt"
 [% END -%]
     LABEL
@@ -983,13 +1043,13 @@ LAYER
     END
     COLOR 200 255 200
     SYMBOL 'width'
-    SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    SIZE [% p.size %]
+    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
   CLASS
     EXPRESSION 'N'
-[% IF legend -%]
+[% IF p.legend -%]
     NAME "Nebenstraﬂe"
 [% END -%]
     LABEL
@@ -1006,19 +1066,20 @@ LAYER
     END
     COLOR [% COLOR_WHITE %]
     SYMBOL 'width'
-    SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    SIZE [% p.size %]
+    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_N size=3 minscale=20000 maxscale=1000000 legend=0 -%]
-[% PROCESS CLASS_N size=4 minscale=10000 maxscale=20000   legend=0 -%]
-[% PROCESS CLASS_N size=5 minscale=undef maxscale=10000   legend=1 -%]
+[% FOR i = SIZES_N;
+      PROCESS CLASS_N p=i;
+   END
+-%]
 
 [% BLOCK CLASS_H -%]
   CLASS
     EXPRESSION 'H'
-[% IF legend -%]
+[% IF p.legend -%]
     NAME "Hauptstraﬂe"
 [% END -%]
     LABEL
@@ -1035,13 +1096,13 @@ LAYER
     END
     COLOR 255 255 200
     SYMBOL 'width'
-    SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    SIZE [% p.size %]
+    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
   CLASS
     EXPRESSION 'HH'
-[% IF legend -%]
+[% IF p.legend -%]
     NAME "Wichtige Hauptstraﬂe"
 [% END -%]
     LABEL
@@ -1057,19 +1118,20 @@ LAYER
     END
     COLOR 255 255 0
     SYMBOL 'width'
-    SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    SIZE [% p.size %]
+    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_H size=4 minscale=20000 maxscale=1000000 legend=0 -%]
-[% PROCESS CLASS_H size=5 minscale=10000 maxscale=20000   legend=0 -%]
-[% PROCESS CLASS_H size=6 minscale=undef maxscale=10000   legend=1 -%]
+[% FOR i = SIZES_H;
+      PROCESS CLASS_H p=i;
+   END
+-%]
 
 [% BLOCK CLASS_B -%]
   CLASS
     EXPRESSION 'B'
-[% IF legend -%]
+[% IF p.legend -%]
     NAME "Bundesstraﬂe"
 [% END -%]
     LABEL
@@ -1085,16 +1147,15 @@ LAYER
     END
     COLOR 255 130 130
     SYMBOL 'width'
-    SIZE [% size %]
-    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
-    [% IF minscale %]MINSCALE [% minscale %][% END %]
+    SIZE [% p.size %]
+    [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
+    [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
 [% END -%]
-[% PROCESS CLASS_B size=2 minscale=1000000 maxscale=undef   legend=0 -%]
-[% PROCESS CLASS_B size=3 minscale=500000  maxscale=1000000 legend=0 -%]
-[% PROCESS CLASS_B size=4 minscale=20000   maxscale=500000  legend=0 -%]
-[% PROCESS CLASS_B size=5 minscale=10000   maxscale=20000   legend=0 -%]
-[% PROCESS CLASS_B size=6 minscale=undef   maxscale=10000   legend=1 -%]
+[% FOR i = SIZES_B;
+      PROCESS CLASS_B p=i;
+   END
+-%]
 
   CLASS # should not happen
     EXPRESSION /./ 
@@ -1124,7 +1185,7 @@ LAYER
   CLASSITEM "CAT"
   CLASS
     EXPRESSION /^B/
-    COLOR [% COLOR_GREEN %]
+    COLOR [% COLOR_YELLOW %]
     SYMBOL 'strnrbox'
     SIZE 10
     LABEL
@@ -1140,7 +1201,7 @@ LAYER
   CLASS
 # XXX warum geht /^F/ nicht???
     EXPRESSION /^.+/
-    COLOR [% COLOR_YELLOW %]
+    COLOR [% COLOR_GREEN %]
     SYMBOL 'strnrbox'
     SIZE 10
     LABEL
@@ -1268,7 +1329,7 @@ END
 LAYER
   NAME "Straﬂenqualit‰t"
   TYPE LINE
-  STATUS ON
+  STATUS [% ON_QUALITAET %]
   GROUP qualitaet
   DATA qualitaet
   MAXSCALE 550000
@@ -1321,7 +1382,7 @@ END
 LAYER
   NAME "Sonstige Behinderungen"
   TYPE LINE
-  STATUS ON
+  STATUS [% ON_HANDICAP %]
   GROUP handicap
   DATA handicap
   MAXSCALE 550000
@@ -1381,7 +1442,7 @@ END
 LAYER
   NAME "Gesperrte Straﬂen"
   TYPE LINE
-  STATUS ON
+  STATUS [% ON_BLOCKED %]
   DATA gesperrt30
   GROUP blocked
 
@@ -1406,7 +1467,7 @@ END
 LAYER
   NAME "Einbahnstraﬂen"
   TYPE LINE
-  STATUS ON
+  STATUS [% ON_BLOCKED %]
   DATA gesperrt
   GROUP blocked
 
@@ -1460,7 +1521,7 @@ END
 LAYER
   NAME "Steigungen"
   TYPE LINE
-  STATUS ON
+  STATUS [% ON_MOUNT %]
   GROUP mount
   DATA mount
 
@@ -1486,7 +1547,7 @@ LAYER
   NAME "Steigungen (Annotations)"
   GROUP mount
   MAXSCALE 75000
-  STATUS ON
+  STATUS [% ON_MOUNT %]
   DATA mount
   TYPE ANNOTATION
 
@@ -1855,7 +1916,7 @@ END
 LAYER
   NAME sehenswuerdigkeit_point
   TYPE POINT
-  STATUS ON
+  STATUS [% ON_SEHENSWUERDIGKEIT %]
   GROUP sehenswuerdigkeit
   DATA sehenswuerdigkeit_point
   MAXSCALE 30000
@@ -1889,7 +1950,7 @@ END
 LAYER
   NAME Ampeln
   TYPE POINT
-  STATUS ON
+  STATUS [% ON_AMPELN %]
   GROUP ampeln
   DATA ampeln
  

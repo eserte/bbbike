@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Route.pm,v 1.20 2004/06/10 22:28:01 eserte Exp $
+# $Id: Route.pm,v 1.21 2005/01/16 22:03:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2001 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ use strict;
 use vars qw($coords_ref $realcoords_ref $search_route_points_ref
 	    @EXPORT @ISA $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
 
 require Exporter;
 @ISA    = qw(Exporter);
@@ -348,6 +348,8 @@ sub load {
 
     my $ret;
 
+    my $matching_type;
+
     TRY: {
 	my %gps_args = (-fuzzy => $args{-fuzzy});
 	require GPS;
@@ -362,7 +364,10 @@ sub load {
 		    $check = 1;
 		}
 	    }; warn $@ if $@;
-	    if ($check) { last TRY }
+	    if ($check) {
+		$matching_type = $gps;
+		last TRY;
+	    }
 	}
 
 	open(F, $file)
@@ -374,7 +379,10 @@ sub load {
 
 	    if ($line =~ /^[^\t]*\t\S+ .*\d,[-+]?\d/) { # prefixe werden nicht erkannt
 		# eine Strassen-Datei
-		$ret = { IsStrFile => 1 };
+		$ret = {
+			IsStrFile => 1,
+			Type => "bbd",
+		       };
 		return;
 	    } elsif (!$no_do) {
 		undef $coords_ref;
@@ -405,6 +413,8 @@ sub load {
 			([join(",",@{ $realcoords[0] }), POINT_MANUELL],
 			 [join(",",@{ $realcoords[-1] }), POINT_MANUELL]);
 		}
+
+		$matching_type = "bbr";
 	    } elsif ($no_do) {
 		die;
 	    }
@@ -437,6 +447,7 @@ sub load {
     +{
       RealCoords        => \@realcoords,
       SearchRoutePoints => \@search_route_points,
+      Type              => $matching_type,
      };
 }
 
