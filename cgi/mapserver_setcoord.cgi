@@ -95,5 +95,6 @@ sub push_INC {
     push @INC, ("$FindBin::RealBin/..",
 		"/home/e/eserte/src/bbbike",
 		"/usr/local/apache/radzeit/BBBike",
+		"/var/www/domains/radzeit.de/www/BBBike",
 	       );
 }

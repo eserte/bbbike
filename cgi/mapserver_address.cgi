@@ -26,7 +26,11 @@ BEGIN { # XXX do not hardcode
     } elsif ($ENV{SERVER_NAME} eq 'vran.herceg.de') {
 	$BBBIKE_URL = "/~eserte/bbbike";
     } elsif ($ENV{SERVER_NAME} =~ /radzeit/i) {
-	$BBBIKE_ROOT = "/usr/local/apache/radzeit/BBBike";
+	if (-d "/var/www/domains/radzeit.de/www/BBBike") {
+	    $BBBIKE_ROOT = "/var/www/domains/radzeit.de/www/BBBike";
+	} else {
+	    $BBBIKE_ROOT = "/usr/local/apache/radzeit/BBBike";
+	}
 	$BBBIKE_URL = "/BBBike";
 	#$BBBIKE_ROOT = "/usr/local/apache/radzeit/BBBike2";
     } else {
