@@ -15,6 +15,8 @@
 
 # Startet httpi, Netscape und bbbike.cgi
 
+use strict;
+
 BEGIN {
     eval <<'EOF';
 use FindBin;
@@ -30,21 +32,28 @@ EOF
 use WWWBrowser 2.14;
 
 my $http_server = "tinyhttpd";
+my $v = 0;
+my $httpi_port;
 
 if (eval "require Getopt::Long; 1") {
-    if (!Getopt::Long::GetOptions("servertype=s" => \$http_server)) {
-	die "usage";
+    if (!Getopt::Long::GetOptions("servertype=s" => \$http_server,
+				  "v+" => \$v,
+				  "p|port=i" => \$httpi_port,
+				 )) {
+	die "usage: $0 [-servertype httpi|tinyhttpd|HTTP::Daemon] [-port port] [-v]";
     }
 }
 
-my($httpi_port);
-
 if ($http_server eq 'httpi') {
-    $httpi_port = "22295"; # "BBBI(K)E"
+    $httpi_port = "22295" # "BBBI(K)E"
+	unless defined $httpi_port;
 } elsif ($http_server eq 'minisvr') {
     # no port
+    # XXX not supported anymore...
+} elsif ($http_server eq 'HTTP::Daemon') {
+    $httpi_port = "22297" unless defined $httpi_port;
 } else {
-    $httpi_port = "22296";
+    $httpi_port = "22296" unless defined $httpi_port;
     $http_server = 'tinyhttpd';
 }
 
@@ -84,10 +93,14 @@ if ($http_server eq 'httpi') {
     close START;
     die "Can't get port ..." if !defined $httpi_port;
 
+} elsif ($http_server eq 'HTTP::Daemon') {
+    start_http_daemon();
+
 } else { # tinyhttpd
     # XXX alten Prozess killen?
     # XXX ist noch zu betriebssystemabhängig
     my $pid_file = tmpdir() . "/.runbbbikecgi.pid";
+    warn "Pid file is $pid_file.\n" if $v;
     if ($^O ne 'MSWin32') {
 	if (open(PID, $pid_file)) {
 	    chomp(my $pid = <PID>);
@@ -119,6 +132,7 @@ if ($http_server eq 'httpi') {
 	    close PID;
 	}
     }
+    warn "Started @httpi_cmd\n" if $v;
 }
 
 # XXX pid des Server merken und für kill verwenden
@@ -129,8 +143,90 @@ if ($http_server eq 'httpi') {
 
 sleep 1;
 
-WWWBrowser::start_browser("http://localhost:$httpi_port/bbbike/cgi/bbbike.cgi",
-			  -oldwindow => 1);
+my $url = "http://localhost:$httpi_port/bbbike/cgi/bbbike.cgi";
+#my $url = "http://localhost:$httpi_port/bbbike/html/legende.html";#XXXtest
+warn "About to load $url in browser...\n" if $v;
+			  
+WWWBrowser::start_browser($url, -oldwindow => 1);
+
+
+# XXX does not work XXX
+sub start_http_daemon {
+    require File::Spec;
+    $HTTP::Daemon::DEBUG = 10;
+    require HTTP::Daemon;
+    require HTTP::Status;
+    require HTTP::Response;
+    require IPC::Open2;
+    require POSIX;
+
+    if ($^O ne 'MSWin32') {
+	my @pid = `ps uagxww | grep "runbbbikecgi.*HTTP::Daemon" | grep -v grep | perl -nale 'print \$F[1]'`;
+	for my $pid (@pid) {
+	    next if $pid == $$;
+	    warn "Killing old HTTP::Daemon server with pid $pid...\n";
+	    kill 9 => $pid;
+	}
+    }
+
+    chdir "/" or die $!;
+    open STDIN, "< ". File::Spec->devnull or die $!;
+    open STDOUT, "> ". File::Spec->devnull or die $!;
+
+    if (fork == 0) {
+	POSIX::setsid();
+	my $d = HTTP::Daemon->new(LocalPort => $httpi_port)|| die;
+	while (my $c = $d->accept) {
+	    if (fork == 0) {
+		while (my $r = $c->get_request) {
+		    my $path = $r->url->path;
+		    if ($v >= 2) {
+			warn $r->method . " " . $r->url->path . "\n";
+		    }
+		    if ($r->method =~ m{GET|POST}) {
+			if ($path =~ m{(^|/)..(/|$)}) {
+			    $c->send_error(HTTP::Status::RC_FORBIDDEN());
+			}
+			if ($path =~ m{^/bbbike/cgi/(.*\.cgi)$}) {
+			    my $prog = $1;
+# 			    open(FH, "-|") or do {
+# 				$c->close; # XXX???
+# 				$d->close;
+# 				exec "$FindBin::RealBin/$prog";
+# 				die $!;
+# 			    };
+#			    binmode FH;
+			    open(OUT, ">/tmp/bla.html") or die $!;
+#			    print OUT <FH>;
+			    print OUT `$FindBin::RealBin/$prog`;
+			    close OUT;
+			    $c->send_file_response("/tmp/bla.html");
+
+# 			    $c->send_basic_header(200, "OK", "HTTP/1.0");
+# 			    $c->send_file(\*FH);
+			    warn 4;
+#			    close FH;
+			} elsif ($path =~ m{^/bbbike/(.*)}) {
+			    $c->send_file_response("$FindBin::RealBin/../$1");
+			} else {
+			    $c->send_error(HTTP::Status::RC_FORBIDDEN())
+			}
+		    } else {
+			$c->send_error(HTTP::Status::RC_FORBIDDEN())
+		    }
+		}
+		warn 6;
+		$c->close;
+		exit;
+	    } else {
+		$c->close;
+	    }
+	    warn 7;
+	    undef($c);
+	}
+	exit 0;
+    }
+}
 
 # REPO BEGIN
 # REPO NAME tmpdir /home/e/eserte/src/repository 
