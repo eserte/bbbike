@@ -65,56 +65,71 @@ sub init {
 
     eval q{
 	local $SIG{'__DIE__'};
-	require GD;
-	$self->{ImageType} = 'gif' if !defined $self->{ImageType};
-#  	if ($GD::VERSION < 1.27 && $self->{ImageType} eq 'wbmp') {
-#  	    $self->{ImageType} = 'gif';
-#  	}
-	if ($self->{ImageType} eq 'gif' && $GD::VERSION >= 1.20) {
-	    # XXX automatic detection does not seem to work with GD 1.41 ?
-#XXX	    if ($GD::VERSION < 1.37 || !GD::Image->can("gif")) {
-		if (!eval { require GD::Convert; GD::Convert->import("gif=any", "newFromGif=any"); 1}) {
-		    warn "Can't create gif files, fallback to png: $@";
-		    $self->{ImageType} = 'png';
-		} else {
-		    warn "OK, using GD::Convert for gif conversion";
-		}
-#XXX	    }
-	}
-	if ($self->{ImageType} eq 'png' && $GD::VERSION < 1.20) {
-	    $self->{ImageType} = 'gif';
-	}
+	if (defined $self->{ImageType} && $self->{ImageType} eq 'svg') {
+	    require GD::SVG;
+	    $self->{GD_Image}   = 'GD::SVG::Image';
+	    $self->{GD_Polygon} = 'GD::SVG::Polygon';
+	    $self->{GD_Font}    = 'GD::SVG::Font';
 
-	package GD::Image;
-        sub imageOut {
-	    my $image = shift;
-
-	    if ($self->imagetype eq 'gif' && $image->can('gif')) {
-		$image->gif(@_);
-	    } elsif ($self->imagetype eq 'png' && $image->can('png')) {
-		$image->png(@_);
-	    } elsif ($self->imagetype eq 'jpeg' && $image->can('jpeg')) {
-		$image->jpeg(@_);
-	    } elsif ($self->imagetype eq 'wbmp') {
-		if (!$image->can('wbmp')) {
-		    require GD::Convert;
-		    GD::Convert->import('wbmp');
-		}
-		$image->wbmp($BBBikeDraw::black);
-	    } else {
-		die "Fatal error: no gif or png methods";
+	    package GD::SVG::Image;
+            sub imageOut {
+		shift->svg(@_);
 	    }
-	}
-        sub newFromImage {
-	    my $image = shift;
-	    if ($self->imagetype eq 'gif' && $image->can('newFromGif')) {
-		$image->newFromGif(@_);
-	    } elsif ($self->imagetype eq 'png' && $image->can('newFromPng')) {
-		$image->newFromPng(@_);
-	    } elsif ($self->imagetype eq 'jpeg' && $image->can('newFromJpeg')) {
-		$image->newFromJpeg(@_);
-	    } else {
-		die "Fatal error: no newFrom" . ucfirst($self->imagetype) . " method available";
+	} else {
+	    require GD;
+	    $self->{GD_Image}   = 'GD::Image';
+	    $self->{GD_Polygon} = 'GD::Polygon';
+	    $self->{GD_Font}    = 'GD::Font';
+	    $self->{ImageType} = 'gif' if !defined $self->{ImageType};
+#  	    if ($GD::VERSION < 1.27 && $self->{ImageType} eq 'wbmp') {
+#  	        $self->{ImageType} = 'gif';
+#  	    }
+	    if ($self->{ImageType} eq 'gif' && $GD::VERSION >= 1.20) {
+	        # XXX automatic detection does not seem to work with GD 1.41 ?
+#XXX	        if ($GD::VERSION < 1.37 || !GD::Image->can("gif")) {
+	    	    if (!eval { require GD::Convert; GD::Convert->import("gif=any", "newFromGif=any"); 1}) {
+		        warn "Can't create gif files, fallback to png: $@";
+		        $self->{ImageType} = 'png';
+		    } else {
+		        warn "OK, using GD::Convert for gif conversion";
+		    }
+#XXX	        }
+	    }
+	    if ($self->{ImageType} eq 'png' && $GD::VERSION < 1.20) {
+	        $self->{ImageType} = 'gif';
+	    }
+
+	    package GD::Image;
+            sub imageOut {
+	        my $image = shift;
+
+		if ($self->imagetype eq 'gif' && $image->can('gif')) {
+		    $image->gif(@_);
+		} elsif ($self->imagetype eq 'png' && $image->can('png')) {
+		    $image->png(@_);
+		} elsif ($self->imagetype eq 'jpeg' && $image->can('jpeg')) {
+		    $image->jpeg(@_);
+		} elsif ($self->imagetype eq 'wbmp') {
+		    if (!$image->can('wbmp')) {
+			require GD::Convert;
+			GD::Convert->import('wbmp');
+		    }
+		    $image->wbmp($BBBikeDraw::black);
+		} else {
+		    die "Fatal error: no gif or png methods";
+		}
+	    }
+	    sub newFromImage {
+		my $image = shift;
+		if ($self->imagetype eq 'gif' && $image->can('newFromGif')) {
+		    $image->newFromGif(@_);
+		} elsif ($self->imagetype eq 'png' && $image->can('newFromPng')) {
+		    $image->newFromPng(@_);
+		} elsif ($self->imagetype eq 'jpeg' && $image->can('newFromJpeg')) {
+		    $image->newFromJpeg(@_);
+		} else {
+		    die "Fatal error: no newFrom" . ucfirst($self->imagetype) . " method available";
+		}
 	    }
 	}
     };
@@ -131,7 +146,7 @@ sub init {
     if ($self->{OldImage}) {
 	$im = $self->{OldImage};
     } else {
-	$im = GD::Image->new($self->{Width},$self->{Height});
+	$im = $self->{GD_Image}->new($self->{Width},$self->{Height});
     }
 
     $self->{Image}  = $im;
@@ -155,14 +170,14 @@ sub init {
 	# create brushes
 	foreach my $cat (keys %width) {
 	    next if $cat eq 'Route';
-	    my $brush = GD::Image->new($width{$cat}, $width{$cat});
+	    my $brush = $self->{GD_Image}->new($width{$cat}, $width{$cat});
 	    $brush->colorAllocate($im->rgb($color{$cat}));
 	    $brush{$cat} = $brush;
 	}
 	# create outline brushes
 	foreach my $cat (keys %width) {
 	    next unless $outline_color{$cat};
-	    my $brush = GD::Image->new($width{$cat}+2, $width{$cat}+2);
+	    my $brush = $self->{GD_Image}->new($width{$cat}+2, $width{$cat}+2);
 	    $brush->colorAllocate($im->rgb($outline_color{$cat}));
 	    $outline_brush{$cat} = $brush;
 	}
@@ -318,7 +333,7 @@ sub draw_map {
 		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
 			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
 		my $c = defined $color{$cat} ? $color{$cat} : $white;
-		my $poly = GD::Polygon->new();
+		my $poly = $self->{GD_Polygon}->new();
 		for(my $i = 0; $i <= $#{$s->[1]}; $i++) {
 		    $poly->addPt(&$transpose
 				 (@{Strassen::to_koord1($s->[1][$i])}));
@@ -366,7 +381,7 @@ sub draw_map {
 	$imgfile = "$images_dir/ampel_klein$suf." . $self->suffix;
 	if (open(GIF, $imgfile)) {
 	    binmode GIF;
-	    $kl_ampel = newFromImage GD::Image \*GIF;
+	    $kl_ampel = $self->{GD_Image}->newFromImage(\*GIF);
 	    if ($kl_ampel) {
 		($w_lsa, $h_lsa) = $kl_ampel->getBounds;
 	    } else {
@@ -378,7 +393,7 @@ sub draw_map {
 	$imgfile = "$images_dir/andreaskr_klein$suf." . $self->suffix;
 	if (open(GIF, $imgfile)) {
 	    binmode GIF;
-	    $kl_andreas = newFromImage GD::Image \*GIF;
+	    $kl_andreas = $self->{GD_Image}->newFromImage(\*GIF);
 	    if ($kl_andreas) {
 		# workaround: newFromPNG vergisst die Transparency-Information
 		$kl_andreas->transparent($kl_andreas->colorClosest(192,192,192));
@@ -459,7 +474,7 @@ sub draw_map {
 
 	my $brush;
 	if ($points->[2] =~ /^[sr]$/) {
-	    $brush = GD::Image->new($xw_s,$yw_s);
+	    $brush = $self->{GD_Image}->new($xw_s,$yw_s);
 	    $brush->transparent($brush->colorAllocate(255,255,255));
 	    my $col = $brush->colorAllocate($im->rgb($color{'SA'}));
 	    $brush->arc($xw_s/2,$yw_s/2,$xw_s,$yw_s,0,360,$col);
@@ -534,7 +549,7 @@ sub draw_map {
 			$ort =~ s/\|.*$//;
 			if ($type eq 'oc') {
 			    $self->outline_text
-				($ort_font{$cat} || &GD::Font::Small,
+				($ort_font{$cat} || $self->{GD_Font}->Small,
 				 $x, $y,
 				 patch_string($ort), $black, $grey_bg,
 				 -anchor => "c",
@@ -542,7 +557,7 @@ sub draw_map {
 			} else {
 			    $im->arc($x, $y, 3, 3, 0, 360, $black);
 			    $self->outline_text
-				($ort_font{$cat} || &GD::Font::Small,
+				($ort_font{$cat} || $self->{GD_Font}->Small,
 				 $x, $y,
 				 patch_string($ort), $black, $grey_bg,
 				 -padx => 4, -pady => 4,
@@ -582,9 +597,9 @@ sub draw_map {
 		$im->$ft_method($black, $ttf, $fontsize, $rad, $x, $y, $_[2]);
 	    };
 	    my $extent_sub = sub {
-		my(@b) = GD::Image->$ft_method($black, $ttf, $fontsize, -$_[3],
-					       &$transpose($_[0], $_[1]),
-					       $_[2]);
+		my(@b) = $self->{GD_Image}->$ft_method
+		    ($black, $ttf, $fontsize, -$_[3],
+		     &$transpose($_[0], $_[1]), $_[2]);
 		($b[2]-$b[0], $b[3]-$b[1]);
 	    };
 
@@ -636,15 +651,15 @@ sub get_ort_font_mapping {
 		     strname => [$ttf, 9*$sc],
 		    );
     } else {
-	%ort_font = (0 => &GD::Font::Tiny,
-		     1 => &GD::Font::Small,
-		     2 => &GD::Font::Small,
-		     3 => &GD::Font::Large, # MediumBold sieht fetter aus
-		     4 => &GD::Font::Large,
-		     5 => &GD::Font::Giant,
-		     6 => &GD::Font::Giant,
-		     bhf => &GD::Font::Small,
-		     strname => &GD::Font::Small,
+	%ort_font = (0 => $self->{GD_Font}->Tiny,
+		     1 => $self->{GD_Font}->Small,
+		     2 => $self->{GD_Font}->Small,
+		     3 => $self->{GD_Font}->Large, # MediumBold sieht fetter aus
+		     4 => $self->{GD_Font}->Large,
+		     5 => $self->{GD_Font}->Giant,
+		     6 => $self->{GD_Font}->Giant,
+		     bhf => $self->{GD_Font}->Small,
+		     strname => $self->{GD_Font}->Small,
 		    );
     }
     \%ort_font;
@@ -701,11 +716,11 @@ sub draw_scale {
 	      $self->{Width}-$x_margin,
 	      $self->{Height}-$y_margin-$bar_width-2,
 	      $color);
-    $im->string(&GD::Font::Small,
+    $im->string($self->{GD_Font}->Small,
 		$self->{Width}-($x1-$x0)-$x_margin-3,
 		$self->{Height}-$y_margin-$bar_width-2-12,
 		"0", $color);
-    $im->string(&GD::Font::Small,
+    $im->string($self->{GD_Font}->Small,
 		$self->{Width}-$x_margin+8-6*length($strecke_label),
 		$self->{Height}-$y_margin-$bar_width-2-12,
 		$strecke_label, $color);
@@ -738,7 +753,7 @@ sub draw_route {
 #	$width = $width{Route};
     } elsif ($self->{RouteWidth}) {
 	# fette Routen für die WAP-Ausgabe (B/W)
-	$brush = GD::Image->new($self->{RouteWidth}, $self->{RouteWidth});
+	$brush = $self->{GD_Image}->new($self->{RouteWidth}, $self->{RouteWidth});
 	$brush->colorAllocate($im->rgb($white));
 	$im->setBrush($brush);
 	$line_style = GD::gdBrushed();
@@ -775,14 +790,14 @@ sub draw_route {
     # Flags
     if (@c1 > 1) {
 	if ($self->{UseFlags} &&
-	    defined &GD::Image::copyMerge &&
+	    $self->{GD_Image}->can("copyMerge") &&
 	    $self->imagetype ne 'wbmp') {
 	    my $images_dir = $self->get_images_dir;
 	    my $imgfile;
 	    $imgfile = "$images_dir/flag2_bl." . $self->suffix;
 	    if (open(GIF, $imgfile)) {
 		binmode GIF;
-		my $start_flag = newFromImage GD::Image \*GIF;
+		my $start_flag = $self->{GD_Image}->newFromImage(\*GIF);
 		close GIF;
 		if ($start_flag) {
 		    my($w, $h) = $start_flag->getBounds;
@@ -800,7 +815,7 @@ else { warn $! }
 	    $imgfile = "$images_dir/flag_ziel." . $self->suffix;
 	    if (open(GIF, $imgfile)) {
 		binmode GIF;
-		my $end_flag = newFromImage GD::Image \*GIF;
+		my $end_flag = $self->{GD_Image}->newFromImage(\*GIF);
 		close GIF;
 		if ($end_flag) {
 		    my($w, $h) = $end_flag->getBounds;
@@ -876,11 +891,11 @@ else { warn $! }
 
 	my $gdfont;
 	if (7*length($s) <= $self->{Width}) {
-	    $gdfont = \&GD::Font::MediumBold;
+	    $gdfont = $self->{GD_Font}->MediumBold;
 	} elsif (6*length($s) <= $self->{Width}) {
-	    $gdfont = \&GD::Font::Small;
+	    $gdfont = $self->{GD_Font}->Small;
 	} else {
-	    $gdfont = \&GD::Font::Tiny;
+	    $gdfont = $self->{GD_Font}->Tiny;
 	}
 #  	my $inner = $white;
 #  	my $outer = $darkblue;
@@ -888,7 +903,7 @@ else { warn $! }
 #  	    ($inner, $outer) = ($outer, $inner);
 #  	}
 	my($inner, $outer) = ($darkblue, $grey_bg);
-	$self->outline_text(&$gdfont, 1, 1, $s, $inner, $outer);
+	$self->outline_text($gdfont, 1, 1, $s, $inner, $outer);
     }
 }
 
@@ -916,7 +931,7 @@ sub outline_ft_text {
 	($x, $y) = _adjust_anchor
 	    ($x, $y, $args{-anchor}, $args{-padx}||0, $args{-pady}||0,
 	     sub {
-		 my @bounds = GD::Image->stringFT($inner, @$fontspec, 0, 0, 0, $s);
+		 my @bounds = $self->{GD_Image}->stringFT($inner, @$fontspec, 0, 0, 0, $s);
 		 ($bounds[2]-$bounds[0], $bounds[5]-$bounds[3]);
 	     }
 	    );
@@ -940,7 +955,7 @@ sub check_outline_text {
 # return bounds
 sub check_outline_ft_text {
     my($self, $fontspec, $x, $y, $s, $inner, $outer, %args) = @_;
-    GD::Image->stringFT($inner, @$fontspec, 0, $x, $y, $s);
+    $self->{GD_Image}->stringFT($inner, @$fontspec, 0, $x, $y, $s);
 }
 
 sub _adjust_anchor {
