@@ -8174,15 +8174,20 @@ sub plotstr {
 	return bbbikelazy_add_data("str", $abk, $str);
     }
 
+    my $complete_str = $str;
     my $diffed_str = 0;
     if ($args{FastUpdate}) {
 	my($new_str, $todelref) = $str->diff_orig(-clonefile => 1);
 	if (!defined $new_str) {
-	    warn M("Diff-Ausgabe wird nicht verwendet") if $verbose;
+	    warn M("Diff-Ausgabe wird nicht verwendet"), "\n" if $verbose;
 	    $c->delete($abk);		# evtl. alte Koordinaten löschen
 	    $c->delete("pp-$abk");
 	} else {
-	    warn M("Diff-Ausgabe wird verwendet") if $verbose;
+	    if ($verbose) {
+		warn M("Diff-Ausgabe wird verwendet"), "\n";
+		warn Mfmt("Anzahl der neu zu zeichnenden Straßen: %d", scalar @{$new_str->data}), "\n";
+		warn Mfmt("Anzahl der zu löschenden Straßen: %d", scalar @$todelref), "\n";
+	    }
 	    foreach (@$todelref) {
 		$c->delete("$abk-$_");
 	    }
@@ -8408,7 +8413,7 @@ if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->po
 
 	if (($edit_mode || $edit_normal_mode || $abk eq 'relgps' || $args{FastUpdate})) { # XXX? and !$diffed_str) {
 	    warn "Try to copy original data" if $verbose;
-	    my $r = $str->copy_orig;
+	    my $r = $complete_str->copy_orig;
 	    warn "Returned $r" if $verbose;
 	}
 
@@ -8526,6 +8531,7 @@ sub plot_sperre {
 
 	# XXX don't duplicate code from plotstr!
 	my $diffed_str = 0;
+	my $complete_str = $str;
 	my $str = $gesperrt;
 	#XXX Abfrage auf $edit_mode notwendig?
 	if (#XXX del: ($edit_mode || $edit_normal_mode) &&
@@ -8698,8 +8704,7 @@ sub plot_sperre {
 
 	if (($edit_mode || $edit_normal_mode || $args{FastUpdate}) and !$diffed_str) {
 	    warn "Try to copy original data" if $verbose;
-	    my $str = $gesperrt;
-	    my $r = $str->copy_orig;
+	    my $r = $complete_str->copy_orig;
 	    warn "Returned $r" if $verbose;
 	}
 
@@ -9154,6 +9159,7 @@ sub plot_point {
 	    }
 	}
 
+	my $complete_str = $bhf;
 	my $diffed_str = 0;
 	if ($args{FastUpdate}) {
 	    my($new_str, $todelref) = $bhf->diff_orig(-clonefile => 1);
@@ -9233,7 +9239,7 @@ sub plot_point {
 
 	if (($edit_mode || $edit_normal_mode || $abk eq 'relgps' || $args{FastUpdate}) and !$diffed_str) {
 	    warn "Try to copy original data" if $verbose;
-	    my $r = $bhf->copy_orig;
+	    my $r = $complete_str->copy_orig;
 	    warn "Returned $r" if $verbose;
 	}
 
@@ -10195,6 +10201,7 @@ sub plotorte {
 			     ? $args{NameDraw}     : $p_name_draw{$type});
 	my $progress_hack = ($name_o && $no_overlap_label{$type});
 
+	my $complete_str = $orte;
 	my $diffed_orte = 0;
 	if (#XXX del? ($edit_mode || $edit_normal_mode) &&
 	    $args{FastUpdate}) {
@@ -10327,7 +10334,7 @@ sub plotorte {
 
 	if (($edit_mode || $edit_normal_mode) and !$diffed_orte) {
 	    warn "Try to copy original data" if $verbose;
-	    my $r = $orte->copy_orig;
+	    my $r = $complete_str->copy_orig;
 	    warn "Returned $r" if $verbose;
 	}
 
