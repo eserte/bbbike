@@ -106,6 +106,10 @@ function init() {
     }
   }
 [% END -%]
+
+  if (typeof window.focus == "function") {
+    window.focus();
+  }
 }
  </script>
 </head>
@@ -116,7 +120,7 @@ function init() {
  <h1>Neue Straße für BBBike</h1>
 [% END -%]
  <form name="newstreet" method="post" action="[% cgidir | html %]/mapserver_comment.cgi">
-  <input type="hidden" name="formtype" value="newstreetform" />
+  <input type="hidden" name="formtype" value="[% IF is_fragezeichen_form %]fragezeichenform[% ELSE %]newstreetform[% END %]" />
   <input type="hidden" name="supplied_strname" value="" />
   <input type="hidden" name="supplied_bezirk" value="" />
   <input type="hidden" name="supplied_plz" value="" />
