@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.7 2003/07/09 22:55:31 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.7 2003/07/09 22:55:31 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -48,9 +48,11 @@ use vars
 
 # Photos
 use vars qw(
-     $ampel_photo $ampel_klein_photo $ampel_klein_grey_photo
+     $ampel_photo $ampel_klein_photo $ampel_klein2_photo
+     $ampel_klein_grey_photo
      $kopfstein_klein_photo $kopfstein_klein_grey_photo $vorfahrt_photo
-     $andreaskr_photo $andreaskr_klein_photo %obst_photo
+     $andreaskr_photo $andreaskr_klein_photo $andreaskr_klein2_photo
+     %obst_photo
      $windrose2_photo $usercross_photo
      $strasse_photo $landstrasse_photo $ort_photo $hs_photo
      $ubahn_photo $sbahn_photo $rbahn_photo $wasser_photo $flaechen_photo

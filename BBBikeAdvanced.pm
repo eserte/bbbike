@@ -772,7 +772,7 @@ sub set_coord_interactive {
 	# Stadtplandienst, obsolete
 
 	my $f = $t->Frame->pack(-anchor => "w");
-	$f->Label(-text => M"Stadtplandienst-URL")->pack(-side => "left");
+	$f->Label(-text => M"Alte Stadtplandienst-URL")->pack(-side => "left");
 	my $stadtplandiensturl;
 	$f->Entry(-textvariable => \$stadtplandiensturl)->pack(-side => "left");
 	$f->Button

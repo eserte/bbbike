@@ -357,10 +357,12 @@ sub parse_route {
 }
 
 sub parse {
-    my($self, $buf) = @_;
+    my($self, $buf, %args) = @_;
+    my $multiple = delete $args{-multiple};
+    my $beginref = delete $args{-beginref};
     my $type;
     my @lines = split /\n/, $buf;
-    my $i = 0;
+    my $i = $beginref ? $$beginref : 0;
 
     my %parse =
 	(TYPE_WAYPOINT() => \&parse_waypoint,
@@ -384,22 +386,31 @@ sub parse {
 	} elsif (/^!Format:\s+(\S+)\s+(\S+)\s+(.*)$/) {
 	    $self->PositionFormat($1);
 	    $self->DatumFormat($3);
-	} elsif (/^!W:/) {
-	    $self->Type(TYPE_WAYPOINT);
-	    $type = TYPE_WAYPOINT; # performance
-	} elsif (/^!(T:.*)/) {
-	    my @l = split /\t/, $1;
-	    $self->Name($l[1]);
-	    $self->Type(TYPE_TRACK);
-	    $type = TYPE_TRACK;
-	} elsif (/^!(R:.*)/) {
-	    my @l = split /\t/, $1;
-	    $self->Name($l[1]);
-	    # XXX safe more attribs
-	    $self->Type(TYPE_ROUTE);
-	    $type = TYPE_ROUTE;
 	} elsif (/^!/) {
-	    # ignore
+	    if ($multiple && @data) {
+		# we already have data for one track/route/...
+		if ($beginref) {
+		    $$beginref = $i;
+		}
+		last;
+	    }
+	    if (/^!W:/) {
+		$self->Type(TYPE_WAYPOINT);
+		$type = TYPE_WAYPOINT; # performance
+	    } elsif (/^!(T:.*)/) {
+		my @l = split /\t/, $1;
+		$self->Name($l[1]);
+		$self->Type(TYPE_TRACK);
+		$type = TYPE_TRACK;
+	    } elsif (/^!(R:.*)/) {
+		my @l = split /\t/, $1;
+		$self->Name($l[1]);
+		# XXX safe more attribs
+		$self->Type(TYPE_ROUTE);
+		$type = TYPE_ROUTE;
+	    } else {
+		# ignore
+	    }
 	} else {
 	    die "Unrecognized $_";
 	}
@@ -677,6 +688,37 @@ sub _eliminate_illegal_characters {
     $s =~ s/[^-A-Z0-9 ]/ /g;
     $s;
 }
+
+package GPS::GpsmanMultiData;
+# holds multiple GPS tracks/routes
+
+sub new {
+    my $self = { Chunks => [] };
+    bless $self, shift;
+    $self;
+}
+
+sub load {
+    my($self, $file) = @_;
+    open(F, $file) or die "Can't open $file: $!";
+    local $/ = undef;
+    my $buf = <F>;
+    close F;
+
+    my $begin = 0;
+    while(1) {
+	my $gps_o = GPS::GpsmanData->new;
+	my $old_begin = $begin;
+	$gps_o->parse($buf, -multiple => 1, -begin => \$begin);
+	push @{ $self->{Chunks} }, $gps_o;
+	if ($old_begin == $begin) {
+	    # last track/route/... read
+	    last;
+	}
+    }
+}
+
+sub Chunks { shift->{Chunks} }
 
 1;
 

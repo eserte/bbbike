@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeProfil.pm,v 1.8 2003/01/08 19:59:56 eserte Exp $
+# $Id: BBBikeProfil.pm,v 1.9 2003/07/31 22:45:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2002 Slaven Rezic. All rights reserved.
@@ -112,16 +112,24 @@ sub Redraw {
     my $y_sub = sub { $h - int($_[0]/($max_h+10)*$h) };
 
     my($lastx, $lasty);
+    my @etappe_coords;
     for(my $i=0; $i<=$#dist; $i++) {
 	my($d) = $dist[$i];
 	my($x,$y) = @{ $coords[$i] };
+	push @etappe_coords, $x, $y;
 	if (exists $hoehe->{"$x,$y"}) {
 	    my($thisx, $thisy);
 	    $thisx = $x_sub->($d);
 	    $thisy = $y_sub->($hoehe->{"$x,$y"});
 	    if (defined $lastx) {
-		$c->createLine($lastx, $lasty, $thisx, $thisy,
-			       -tags => ["alt", "alt-$x,$y"]);
+		$c->createLine
+		    ($lastx, $lasty, $thisx, $thisy,
+		     -activefill => 'blue',
+		     -tags => ["alt",
+			       "alt-" . join(",",@etappe_coords),
+			      ]
+		    );
+		@etappe_coords = ($x, $y);
 	    }
 	    ($lastx, $lasty) = ($thisx, $thisy);
 	}
@@ -152,9 +160,14 @@ sub Redraw {
     # bind <1> to mark point
     $c->bind("alt", "<1>" => sub {
 		 my(@tags) = $c->gettags("current");
-		 (my $coord = $tags[1]) =~ s/alt-//;
-		 my($x,$y) = main::transpose(split /,/, $coord);
-		 main::mark_point(-x => $x, -y => $y);
+		 (my $coords = $tags[1]) =~ s/alt-//;
+		 my @coords = split /,/, $coords;
+		 my @newcoords;
+		 for(my $i=0; $i<$#coords;$i+=2) {
+		     push @newcoords, [ main::transpose(@coords[$i,$i+1]) ];
+		 }
+		 main::mark_street(-clever_center => 1,
+				   -coords => [[@newcoords]]);
 	     });
 }
 

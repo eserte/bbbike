@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.107 2003/07/09 22:55:24 eserte Exp eserte $
+# $Id: bbbike,v 3.110 2003/08/04 21:02:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -209,7 +209,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.107 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.110 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -1056,7 +1056,7 @@ if (!grep($_, values %wetter_source) and $do_www and !$really_no_www) {
 }
 
 if ($net_type ne 's' && $coloring eq 'wind') {
-    $coloring = 'red';
+    $coloring = 'black';
 }
 reset_wind();
 ## DEBUG_BEGIN
@@ -2954,6 +2954,7 @@ sub do_iconframe {
 	$sbm->entryconfigure('last', -menu => $fbm);
 	foreach my $d ([M"Wind", 'wind'],
 		       [M"Leistung", 'power'],
+		       [M"schwarz", 'black'],
 		       [M"rot", 'red'],
 		       [M"blau", 'blue'],
 		      ) {
@@ -4141,25 +4142,7 @@ $splash_screen->Update(0.3) if $splash_screen;
 ## DEBUG_BEGIN
 #mymstat("load photos");
 ## DEBUG_END
-$flag_photo{'start'}   = load_photo($top, 'flag2_bl.' . $default_img_fmt);
-$flag_photo{'via'}     = load_photo($top, 'flag_via.' . $default_img_fmt);
-$flag_photo{'ziel'}    = load_photo($top, 'flag_ziel.' . $default_img_fmt);
-$ampel_photo           = load_photo($top, 'ampel.' . $default_img_fmt);
-$andreaskr_klein_photo = load_photo($top,
-				    'andreaskr_klein.' . $default_img_fmt);
-$andreaskr_photo       = load_photo($top, 'andreaskr.' . $default_img_fmt);
-$vorfahrt_photo        = load_photo($top, 'vorfahrt.' . $default_img_fmt);
-$windrose2_photo       = load_photo($top, 'windrose2.' . $default_img_fmt);
-$kneipen_photo         = load_photo($top, 'glas.' . $default_img_fmt);
-$kneipen_klein_photo   = load_photo($top, 'glas_klein.' . $default_img_fmt);
-$essen_photo           = load_photo($top, 'essen.' . $default_img_fmt);
-$essen_klein_photo     = load_photo($top, 'essen_klein.' . $default_img_fmt);
-$kino_klein_photo      = load_photo($top, 'kino_klein.' . $default_img_fmt);
-$steigung_photo        = load_photo($top, 'steigung.' . $default_img_fmt);
-$gefaelle_photo        = load_photo($top, 'gefaelle.' . $default_img_fmt);
-$inwork_photo          = load_photo($top, 'inwork.' . $default_img_fmt);
-$ferry_photo           = load_photo($top, 'ferry.' . $default_img_fmt);
-$ferry_klein_photo     = load_photo($top, 'ferry_klein.' . $default_img_fmt);
+load_photos();
 
 my $linestip = eval { Tk::findINC('images/stip.xbm') };
 
@@ -4444,6 +4427,31 @@ choose_streets()                            if $init_choose_street;
 MainLoop unless $ENV{BBBIKE_TEST_PERFORMANCE};
 
 ##### Subs ### RELOADER_START ############################################
+
+sub load_photos {
+    $flag_photo{'start'} = load_photo($top, 'flag2_bl.' . $default_img_fmt);
+    $flag_photo{'via'}   = load_photo($top, 'flag_via.' . $default_img_fmt);
+    $flag_photo{'ziel'}  = load_photo($top, 'flag_ziel.' . $default_img_fmt);
+    $ampel_photo         = load_photo($top, 'ampel.' . $default_img_fmt);
+    $ampel_klein2_photo  = load_photo($top, 'ampel_klein2.' . $default_img_fmt);
+    $andreaskr_klein_photo = load_photo($top,
+					'andreaskr_klein.' . $default_img_fmt);
+    $andreaskr_klein2_photo= load_photo($top,
+					'andreaskr_klein2.' . $default_img_fmt);
+    $andreaskr_photo     = load_photo($top, 'andreaskr.' . $default_img_fmt);
+    $vorfahrt_photo      = load_photo($top, 'vorfahrt.' . $default_img_fmt);
+    $windrose2_photo     = load_photo($top, 'windrose2.' . $default_img_fmt);
+    $kneipen_photo       = load_photo($top, 'glas.' . $default_img_fmt);
+    $kneipen_klein_photo = load_photo($top, 'glas_klein.' . $default_img_fmt);
+    $essen_photo         = load_photo($top, 'essen.' . $default_img_fmt);
+    $essen_klein_photo   = load_photo($top, 'essen_klein.' . $default_img_fmt);
+    $kino_klein_photo    = load_photo($top, 'kino_klein.' . $default_img_fmt);
+    $steigung_photo      = load_photo($top, 'steigung.' . $default_img_fmt);
+    $gefaelle_photo      = load_photo($top, 'gefaelle.' . $default_img_fmt);
+    $inwork_photo        = load_photo($top, 'inwork.' . $default_img_fmt);
+    $ferry_photo         = load_photo($top, 'ferry.' . $default_img_fmt);
+    $ferry_klein_photo   = load_photo($top, 'ferry_klein.' . $default_img_fmt);
+}
 
 sub set_default_geometry {
     if (defined $Plugin::brinfo{x_len} and
@@ -5166,11 +5174,12 @@ sub generate_plot_functions {
 		    my $p = $c->Photo(-file => $img);
 		    # XXX this is leaking (photo never deleted...)
 		    # XXX $abk-XXX => $abk-fg or $abk-img ?
+		    # XXX use $abk-fg for now (scaling works!)
 		    if ($p) {
 			$c->createImage(@coordlist[0..1], -image => $p,
 					-anchor => $anchor,
 					-tags => [$abk, $strname,
-						  "$abk-XXX", "$abk-" . ($i-1)],
+						  "$abk-fg", "$abk-" . ($i-1)],
 				       );
 		    } else {
 			warn "Can't find photo $img (2)";
@@ -7376,6 +7385,7 @@ sub load_save_route {
 	      (-defaultextension => ".$ext") :
 	      (-filetypes => [[M"Route-Dateien", '.' . $bbbike_route_ext],
 			      [M"GPS-Tracks", ['.tracks','.trk']],
+			      [M"MPS-Tracks", '.mps'],
 			      [M"Alle Dateien",  '*']]),
 	     ));
 	return if !defined $file;
@@ -9093,6 +9103,10 @@ sub clever_center {
 }
 
 # Markiert und/oder zentriert auf die Linie
+# Important arguments:
+#   -coords => [[[x,y],[x2,y2]], # first line
+#               [[x3,y3],[x4,y4]], # second line
+#              ]
 ### AutoLoad Sub
 sub mark_street {
     my(%args) = @_;
@@ -9941,13 +9955,13 @@ sub enterroute {
     $item = 'current' unless defined $item;
     my(@tags) = $c->gettags($item);
     my $routenr;
-    if ($tags[2] eq 'viaflag') {
+    if (defined $tags[2] && $tags[2] eq 'viaflag') {
 	my($item2,@tags2) = find_below_rx($c, ['^route-'],[1]);
 	if (defined $item2) {
 	    ($item, @tags) = ($item2, @tags2);
 	}
     }
-    if ($tags[1] =~ /^route-(.*)/) {
+    if (defined $tags[1] && $tags[1] =~ /^route-(.*)/) {
 	$routenr = $1;
 	if ($routenr eq "") { warn "@tags" } # XXXXX
     } else {
@@ -10074,7 +10088,7 @@ sub show_info {
 	#warn $index;
     }
 
-    my $polarcoord;
+    my @polarcoord;
     # XXX replace with "http://www.berlin.de/stadtplan/explorer"?
     # XXX is there a LL interface?
     my $stadtplan_url = "http://www.stadtplandienst.de/query"; # XXX not here
@@ -10090,7 +10104,8 @@ sub show_info {
     require Karte::UTM;
     require Karte::ETRS89;
     my($px,$py) = $coord_system_obj->map2map($Karte::Polar::obj, anti_transpose($coords[0], $coords[1]));
-    $polarcoord = Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($py)) . "\n" . Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($px));
+    @polarcoord = (Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($py)),
+		   Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($px)));
     $url = "$stadtplan_url?ORT=b&LL=+${py}+${px}";
     my($gkk_zone_potsdam, $gkk_easting_potsdam, $gkk_northing_potsdam) = Karte::UTM::DegreesToGKK($py, $px, "Potsdam");
     my($gkk_zone_wgs84, $gkk_easting_wgs84, $gkk_northing_wgs84) = Karte::UTM::DegreesToGKK($py, $px, "WGS 84");
@@ -10171,14 +10186,15 @@ sub show_info {
 				     -class => "BbbikePassive",
 				    );
 	if (defined $info_top) {
-	    toplevel_checker($info_top);
 	    require Tk::ROText;
 	    $info_text = $info_top->Scrolled('ROText',
 					     -wrap => 'word',
 					     -scrollbars => 'osoe',
 					     -highlightthickness => 0,
 					     -borderwidth => 0,
-					     )->pack;
+					     -width => 40,
+					     -height => 10,
+					     )->pack(-expand => 1, -fill => "both");
 	    for (1 .. 2) {
 		$info_text->tagConfigure("link$_", -underline => 1,
 					 -foreground => "blue3");
@@ -10192,51 +10208,40 @@ sub show_info {
 	    $info_top->Button(Name => 'close',
 			      -command => sub { $info_top->destroy },
 			     )->pack(-fill => "x");
+	    toplevel_checker($info_top);
 	}
+
+	# Longest text for first column:
+	$info_text->configure(-tabs => [$info_text->fontMeasure($font{normal}, "Sonnenuntergang: ")]);
+
 	$info_text->delete("1.0", "end");
 	$info_text->insert("1.0", $txt);
 	if (@comments) {
+	    $comments[0] = "Kommentare:\t$comments[0]";
+	    @comments[1..$#comments] = map { "\t$_" } @comments[1..$#comments];
 	    $info_text->insert("end", "\n\n" . join("\n", @comments));
 	}
 	if (defined $area) {
-	    $info_text->insert("end", sprintf "\n\nFläche: %.2f km²", $area); # XXX Msg
+	    $info_text->insert("end", sprintf "\n\nFläche:\t%.2f km²", $area); # XXX Msg
 	}
 	if (defined $total_len) {
-	    $info_text->insert("end", sprintf "\n\nLänge: %.2f km", $total_len); # XXX Msg
+	    $info_text->insert("end", sprintf "\n\nLänge:\t%.2f km", $total_len); # XXX Msg
 	}
-	if ($polarcoord) {
-	    $info_text->insert("end", "\n\n$polarcoord");
-	    if (0) { # XXX Stadtplandienst-URL has changed :-(
-		$info_text->insert("end", "Stadtplandienst", "link2");
-		$info_text->tagBind("link2", "<ButtonRelease-1>" => sub {
-					require WWWBrowser;
-					WWWBrowser::start_browser($url);
-				    }
-				   );
-	    }
-	    if ($devel_host) {
-		# t0p s3cr37!
-		my $url = sprintf "http://www.stadtplandienst.de/tpl/vm005/map.asp?ll=%.5fx%.5f", $px, $py;
-		$info_text->insert("end", "\n");
-		$info_text->insert("end", "Stadtplandienst\n", "link2");
-		$info_text->tagBind("link2", "<ButtonRelease-1>" => sub {
-					require WWWBrowser;
-					WWWBrowser::start_browser($url);
-				    }
-				   );
-	    }
+	if (@polarcoord) {
+	    $info_text->insert("end", "\n\nPolar:\t$polarcoord[0]\n\t$polarcoord[1]");
 	}
+
 	if (defined $gkk_zone_potsdam) {
-	    $info_text->insert("end", "\nGKK (Potsdam): [$gkk_zone_potsdam] $gkk_easting_potsdam/$gkk_northing_potsdam");
+	    $info_text->insert("end", "\nGKK (Potsdam):\t[$gkk_zone_potsdam] $gkk_easting_potsdam/$gkk_northing_potsdam");
 	}
 	if (defined $gkk_zone_wgs84) {
-	    $info_text->insert("end", "\nGKK (WGS 84): [$gkk_zone_wgs84] $gkk_easting_wgs84/$gkk_northing_wgs84");
+	    $info_text->insert("end", "\nGKK (WGS 84):\t[$gkk_zone_wgs84] $gkk_easting_wgs84/$gkk_northing_wgs84");
 	}
 	if (defined $utm_ze) {
-	    $info_text->insert("end", "\nUTM (WGS 84): [$utm_ze/$utm_zn] $utm_x/$utm_y");
+	    $info_text->insert("end", "\nUTM (WGS 84):\t[$utm_ze/$utm_zn] $utm_x/$utm_y");
 	}
 	if (defined $etrs_east) {
-	    $info_text->insert("end", "\nETRS 89: $etrs_east/$etrs_north");
+	    $info_text->insert("end", "\nETRS 89:\t$etrs_east/$etrs_north");
 	}
 	$info_text->insert("end", "\n\n");
 
@@ -10250,6 +10255,20 @@ sub show_info {
 	    my $url = "$mapserver_url?coords=" . join(",", anti_transpose($coords[0], $coords[1]));
 	    $info_text->insert("end", $def->[1], "link1");
 	    $info_text->tagBind("link1", "<ButtonRelease-1>" => sub {
+				    require WWWBrowser;
+				    WWWBrowser::start_browser($url);
+				}
+			       );
+	    $info_text->insert("end", "\n");
+	}
+	if ($devel_host) {
+	    # t0p s3cr37!
+	    my $url = sprintf "http://www.stadt".
+		"plan".
+		    "dienst.de/tpl/vm005/map.asp?ll=%.5fx%.5f", $px, $py;
+	    $info_text->insert("end", "Stadt".
+			       "plandienst\n", "link2");
+	    $info_text->tagBind("link2", "<ButtonRelease-1>" => sub {
 				    require WWWBrowser;
 				    WWWBrowser::start_browser($url);
 				}
@@ -10279,18 +10298,17 @@ sub show_info {
 
 	    # XXX use fixed font or tabs
 	    $info_text->insert("end", <<EOF);
+Sonnenaufgang:	$sunrise_real
+Dämmerung ab:
+  bürgerliche:	$sunrise_civil
+  nautische:	$sunrise_nautical
+  astronomische:	$sunrise_astro
 
-Sonnenaufgang: $sunrise_real
-Dämmerung        ab:
-  bürgerliche:   $sunrise_civil
-  nautische:     $sunrise_nautical
-  astronomische: $sunrise_astro
-
-Sonnenuntergang: $sunset_real
-Dämmerung        bis:
-  bürgerliche:   $sunset_civil
-  nautische:     $sunset_nautical
-  astronomische: $sunset_astro
+Sonnenuntergang:	$sunset_real
+Dämmerung bis:
+  bürgerliche:	$sunset_civil
+  nautische:	$sunset_nautical
+  astronomische:	$sunset_astro
 
 EOF
 	}
@@ -11602,16 +11620,20 @@ sub get_symbol_scale {
     if ($tag eq 'lsa-X') {
 	if ($myscale > 4*$mod) {
 	    return $ampel_photo;
-	} elsif ($scale >= 1*$mod) {
+	} elsif ($scale >= 2*$mod) {
 	    return $ampel_klein_photo;
+	} elsif ($scale >= 0.5*$mod) {
+	    return $ampel_klein2_photo;
 	} else {
 	    return undef;
 	}
     } elsif ($tag eq 'lsa-B') {
 	if ($myscale > 4*$mod) {
 	    return $andreaskr_photo;
-	} elsif ($scale >= 1*$mod) {
+	} elsif ($scale >= 2*$mod) {
 	    return $andreaskr_klein_photo;
+	} elsif ($scale >= 0.5*$mod) {
+	    return $andreaskr_klein2_photo;
 	} else {
 	    return undef;
 	}
@@ -13496,14 +13518,6 @@ sub set_coords_str {
     return if !@tags;
     if ($tags[0] eq 'p' or $tags[0] eq 'pp' or $tags[0] =~ /^lsa/) {
 	$tags[1];
-##XXX geht nicht?
-#      } elsif ($tags[0] eq 'o') {
-#  	foreach (_get_orte_obj()->{Data}) {
-#  	    if ($tags[1] eq $_->[Strassen::NAME]) {
-#  		return Route::_coord_as_string([split /,/, $_->[Strassen::COORDS]->[0]]);
-#  	    }
-#  	}
-#  	die "Sollte nicht vorkommen: $tags[1] kommt nicht in orte_coords vor!";
     } elsif ($tags[0] =~ /^[sSlL]$/) {
 	my($pos, @points) = nearest_line_points_mouse($c, @tags);
 	make_net() if !$net;
@@ -13511,10 +13525,10 @@ sub set_coords_str {
 	my($x, $y) = @{$points[0]};
 	Route::_coord_as_string([$x,$y]);
     } else {
-	my($item, @tags) = find_below($c, qw/s l o p pp lsa/);
+	my($item, @tags) = find_below($c, qw/s l p pp lsa/);
 	return if !defined $item;
 	set_coords($c, @tags); # hoffentlich keine Endlosrekursion...
-	#die "Tag [@tags] ist weder p, pp, o, s noch l sollte nicht vorkommen!";
+	#die "Tag [@tags] ist weder p, pp, s noch l sollte nicht vorkommen!";
     }
 }
 

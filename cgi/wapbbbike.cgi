@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.5 2003/07/10 00:05:08 eserte Exp $
+# $Id: wapbbbike.cgi,v 2.6 2003/07/31 21:50:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -42,12 +42,12 @@ sub wap_input {
 
     print <<EOF;
 @{[ $self->wap_header ]}
- <card id="input">
+ <card id="input" title="BBBike">
   <do type="options" label="Info" name="info">
    <go href="@{[ $self->Context->CGI->script_name ]}?info=1"/>
   </do>
   <do type="reset" label="Neu" name="reset"><refresh /></do>
-  <p align="center"><big>BBBike</big></p>
+<!--  <p align="center"><big>BBBike</big></p> -->
   <p><b>Start</b><br/>
      Straße: <input type="text" name="startname" emptyok="false"/><br/>
      Bezirk: <input type="text" name="startbezirk" emptyok="true"/><br/>
@@ -73,12 +73,12 @@ sub wap_resolve_street {
 
     print <<EOF;
 @{[ $self->wap_header ]}
- <card id="input">
+ <card id="input" title="BBBike">
   <do type="options" label="Info" name="info">
    <go href="@{[ $self->Context->CGI->script_name ]}?info=1"/>
   </do>
   <do type="prev" label="Zurück" name="prev"><prev /></do>
-  <p align="center"><big>BBBike</big></p>
+<!--  <p align="center"><big>BBBike</big></p> -->
 EOF
     my %has_postfields;
     my %has_known_postfields;
@@ -143,7 +143,7 @@ sub wap_output {
 
     print <<EOF;
 @{[ $self->wap_header ]}
- <card id="output">
+ <card id="output" title="BBBike Resultat">
   <do type="options" label="Rückweg" name="back">
    <go href="@{[ $self->Context->CGI->script_name ]}">
     <postfield name="startname"   value="@{[$self->Goal->Street]}" />
@@ -214,7 +214,7 @@ sub wap_image_page {
 
     print <<EOF;
 @{[ $self->wap_header ]}
- <card id="output">
+ <card id="output" title="BBBike Karte">
   <do type="options" label="Info" name="info">
    <go href="@{[ $self->Context->CGI->script_name ]}">
     <postfield name="info" value="1" />
@@ -270,7 +270,7 @@ sub wap_info {
 
     print <<EOF;
 @{[ $self->wap_header ]}
- <card id="info">
+ <card id="info"  title="BBBike Info">
   <do type="prev" label="Zurück" name="prev"><prev /></do>
   <p><b>BBBike</b><br/>
   Routensuche für Radfahrer in Berlin<br/>

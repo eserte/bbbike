@@ -463,7 +463,13 @@ sub BBBikeGPS::do_draw_gpsman_data {
 				$name .= int($speed) . " km/h ";
 			    }
 			    $name .= "[dist=" . BBBikeUtil::m2km($whole_dist,2) . ",time=" . BBBikeUtil::s2ms($whole_time) . "min" . sprintf(", abstime=%02d:%02d:%02d", @l[2,1,0]) . (defined $grade ? ", grade=" . sprintf("%.1f%%", $grade) : "") . "]";
-			    $s_speed->push([$name, ["$last_x,$last_y", "$x,$y"], $color]);
+			    my $c1 = "$last_x,$last_y";
+			    my $c2 = "$x,$y";
+			    if ($main::coord_prefix) {
+				$c1 =  $main::coord_system_obj->coordsys . $c1;
+				$c2 =  $main::coord_system_obj->coordsys . $c2;
+			    }
+			    $s_speed->push([$name, [$c1, $c2], $color]);
 			}
 		    }
 		}
