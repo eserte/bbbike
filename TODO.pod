@@ -1670,9 +1670,14 @@ LANG gesetzt) lösen.
 
 =back
 
-=head1 Distribution/Installation
+=head1 Distribution/Installation/other development
 
 =over
+
+=item * (M3)
+
+bbbike/html: add bbbike_small.html.spp to CVS, but maybe first convert
+to use TT?
 
 =item * (M2)
 
