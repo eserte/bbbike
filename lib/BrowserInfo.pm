@@ -20,6 +20,8 @@ use vars qw($VERSION);
 
 $VERSION = sprintf("%d.%02d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
 
+my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
+
 sub new {
     my($pkg, $q) = @_;
     if (!defined $q) {
@@ -177,15 +179,13 @@ sub set_info {
 	$self->{'display_size'} = [170,144];
     } elsif ($q->user_agent('SIE-CX65')) {
 	$self->{'display_size'} = [132,140]; # useable
-    } elsif ($q->user_agent('SIE-')) { # S55, ...
+    } elsif ($q->user_agent('SIE-S55')) { # S55, ...
 	$self->{'display_size'} = [101,80];
     } elsif ($q->user_agent('SAMSUNG-SGH-')) { # X...,E700
 	$self->{'display_size'} = [115,100];
     } elsif ($q->user_agent('Trium320') ||
 	     $q->user_agent('Trium630')) { # XXX
 	$self->{'display_size'} = [128,141];
-    } elsif ($q->user_agent('portalmmm')) {
-	$self->{'display_size'} = [120,120]; # minimum size, newer imode devices have larger displays
     } elsif ($q->user_agent('MOT-A835')) {
 	$self->{'display_size'} = [165,162]; # XXX roughly...
     } elsif ($q->user_agent('Nokia')) {
@@ -232,8 +232,6 @@ sub set_info {
 	}
     } elsif ($q->user_agent("Dillo")) {
 	$self->{'display_size'} = [200,320]; # iPAQ
-    } elsif ($self->{'mobile_device'}) {
-	$self->{'display_size'} = [80,60-20]; # ???
     }
 
     my $uaprof;
@@ -255,19 +253,31 @@ sub set_info {
 	    my $screensize = $uaprof->get_cap("ScreenSize");
 	    if (defined $screensize) {
 		my($w,$h) = split /x/, $screensize;
-		$w -= 6; # most browsers need space for a vertical scrollbar
+		$w -= $vert_scrollbar_space;
 		$self->{'display_size'} = [$w, $h];
 	    }
 	}
     }
 
     if (!defined $self->{'display_size'}) {
-	$self->{'display_size'} = [800-50,600-10]; # last fallback
+	if (defined $ENV{HTTP_DEVICE_WIDTH} && defined $ENV{HTTP_DEVICE_HEIGHT}) {
+	    my($w, $h) = ($ENV{HTTP_DEVICE_WIDTH}, $ENV{HTTP_DEVICE_HEIGHT});
+	    $w -= $vert_scrollbar_space;
+	    $self->{'display_size'} = [$w, $h];
+	} elsif ($q->user_agent('portalmmm')) {
+	    $self->{'display_size'} = [120,120]; # minimum size, newer imode devices have larger displays
+	} elsif ($self->{'mobile_device'}) {
+	    $self->{'display_size'} = [80,60-20]; # ugly fallback
+	} else {
+	    $self->{'display_size'} = [800-50,600-10]; # last fallback
+	}
     }
 
     # XXX neues User-Agent-Scheme anwenden...
     $self->{'can_javascript'} =
-      ($q->user_agent =~ m#(Mozilla/[4-9])#i
+      ($q->user_agent =~ m#(?: Mozilla/[4-9]
+                            |  Opera
+                            )#ix
        ? 1.2
        : ($q->user_agent =~ m#(Mozilla/3)#i
 	  ? 1.1
@@ -283,7 +293,9 @@ sub set_info {
     $self->{'can_png'} = ($q->user_agent =~ m|(Mozilla/[4-9])|i ? 1 : 0);
     # accept("image/png") heißt leider nicht, dass PNG auch Inline dargestellt
     # wird... und Netscape/3 macht es eh' falsch
-    $self->{'can_css'} = ($q->user_agent =~ m|(Mozilla/[4-9])|i ? 1 : 0);
+    $self->{'can_css'} = ($q->user_agent =~ m#(?: Mozilla/[4-9]
+                                               |  Opera
+                                               )#ix ? 1 : 0);
     $self->{'can_dhtml'} = (($self->{'user_agent_name'} eq 'Mozilla' &&
 			     $self->{'user_agent_version'} >= 4.0) ||
 			    ($self->{'user_agent_name'} eq 'MSIE' &&
