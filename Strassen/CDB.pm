@@ -21,6 +21,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 package StrassenNetz;
 use CDB_File;
 
+use Strassen::StrassenNetz;
 use vars @StrassenNetz::EXPORT_OK;
 
 sub create_cdb_file {
