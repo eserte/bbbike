@@ -802,8 +802,8 @@ userdel	2 -53139,50022 -54295,49682
 EOF
      },
      { from  => 1095544800, # 2004-09-19 00:00
-       until => 1103842800, # 2004-12-24 00:00
-       text  => 'B 96; (Hauptstr.); OD Schildow, zw. Bahnhofstr. und OA Ri. Berlin Kanal- und Straßenbau Vollsperrung 20.09.2004-23.12.2004 ',
+       until => 1104620400, # 2005-01-02 00:00
+       text  => 'B 96a; (Bahnhofstr., Hauptstr.); OD Schildow Kanal- und Straßenbau Vollsperrung 20.09.2004-01.01.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 8493,25378 8370,25539
@@ -1020,9 +1020,9 @@ userdel	2 -10559,23255 -10737,23418
 EOF
      },
      { from  => 1098741600, # 2004-10-26 00:00
-       until => 1104534000, # 2005-01-01 00:00
-       text  => 'B 101; (B101 in Trebbin); in der Ortslage Trebbin Straßenbau Vollsperrung 27.10.2004-31.12.2004 ',
-       type  => 'handicap',
+       until => 1112306400, # 2005-04-01 00:00
+       text  => 'B 101; (Luckenwalder-, Berliner Str.); OD Trebbin Straßenbauarbeiten Vollsperrung 27.10.2004-31.03.2005 ',
+       type  => 'gesperrt',
        data  => <<EOF,
 userdel	q4 -1623,-21150 -1887,-21501
 EOF
@@ -1090,5 +1090,30 @@ EOF
        file  => 'rixdorfer_weihnachtsmarkt.bbd',
        text  => 'Rixdorfer Weihnachtsmarkt, 03.12.2004-05.12.2004',
        type  => 'gesperrt',
+     },
+     { from  => 1100038749, # 2004-11-09 23:19
+       until => 1100559600, # 2004-11-16 00:00
+       text  => 'Lennéstr. zwischen Bellvuestr. und Eberstr. Baustelle, Straße gesperrt Richtung Ebertstr. (bis 15.11.2004) ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 8489,11782 8326,11732
+userdel	2 8326,11732 8223,11700
+EOF
+     },
+     { from  => 1092520800, # 2004-08-15 00:00
+       until => 1104620400, # 2005-01-02 00:00
+       text  => 'L 21; (Mühlenbecker Str.); OL Schildow grundh. Straßenbau Vollsperrung 16.08.2004-01.01.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 8231,26584 8194,25966
+EOF
+     },
+     { from  => 1099177200, # 2004-10-31 01:00
+       until => 1114898400, # 2005-05-01 00:00
+       text  => 'L 401; (Lindenallee); OL Zeuthen, zw. Platanenallee und Ahornallee grundhafter Straßenbau Vollsperrung 01.11.2004-30.04.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 26581,-7087 26146,-6218
+EOF
      },
     );
