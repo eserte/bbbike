@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-dbfile.t,v 1.4 2004/08/27 07:23:52 eserte Exp $
+# $Id: strassen-dbfile.t,v 1.5 2004/08/30 17:55:30 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -37,7 +37,7 @@ SKIP: {
     my(@s1) = currmem();
     my $s2;
     eval { $s2 = Strassen::DB_File->new("strassen"); };
-    skip "strassen.db not available here", 3 if $@;
+    skip "strassen not available or you have a buggy Berkeley DB", 3 if $@;
 
     my(@s2) = currmem();
     print "# Memory consumption\nStrassen:          @{[ $s1[1]-$s[1] ]} bytes\nStrassen::DB_File: @{[ $s2[1]-$s1[1] ]} bytes\n";
