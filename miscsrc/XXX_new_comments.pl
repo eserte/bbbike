@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: XXX_new_comments.pl,v 1.2 2005/03/13 21:43:08 eserte Exp $
+# $Id: XXX_new_comments.pl,v 1.2 2005/03/13 21:43:08 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -1040,12 +1040,23 @@ genau bin)
 
 Klemkestr. | zwischen (An der Nordbahn) und (An der Nordbahn):
 Berliner Mauer-Radweg => obskur, aber so ist meine Benamung der
-Querstraßen...
+Querstraßen... -> evtl. durch zusätzliche
+Himmelsrichtungsbezeichnungen auflösen
 
 Kurios, aber schwer lösbar:
 nach 0.41 km rechts (90°) in die Leipziger Str.|5.4km|zwischen Jerusalemer Str. und Jerusalemer Str.:      
                                                |     |zunächst linken Gehweg benutzen (schlecht
 					       |     |passierbarer Mittelstreifen)
+-> auch hier könnte man Himmelsrichtungen verwenden:
+"zwischen Jerusalemer Str. (nördlicher Abschnitt) und Jerusalemer Str. (südlicher Abschnitt) ..."
+
+Viele Einträge in bbbike_temp_blockings.pl enthalten schon die Angabe
+"zwischen ... und ... ". Das sollte gematcht werden und in diesem Fall
+beibehalten werden.
+
+Manchmal sollte bei Punkt-Kommentaren die Kreuzung am Punkt
+gekennzeichnet werden, manchmal aber nicht. Mögliches Beispiel:
+Frankfurter Allee - Kreutzigerstr.
 
 DONE:
 

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.49 2005/02/27 23:31:04 eserte Exp eserte $
+# $Id: Makefile,v 1.50 2005/03/15 20:56:29 eserte Exp $
 #
 
 # Targets:
@@ -207,7 +207,7 @@ do-rsync-bbbike-data:
 
 post-rsync-bbbike-data:
 	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
-	   "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/miscsrc/winter_optimization.pl &"
+	   "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/miscsrc/winter_optimization.pl -one-instance &"
 
 show-rsync-message:
 	-[ ! -e ${CURDIR}/.rsync_message ] && true || cat ${CURDIR}/.rsync_message

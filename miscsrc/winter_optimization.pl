@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: winter_optimization.pl,v 1.3 2005/01/20 00:45:02 eserte Exp $
+# $Id: winter_optimization.pl,v 1.4 2005/03/15 20:49:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -31,11 +31,31 @@ eval 'use BBBikeXS';
 #use Hash::Util qw(lock_keys);
 use Getopt::Long;
 use Storable qw(store);
+use Fcntl qw(LOCK_EX LOCK_NB);
 
 my $do_display = 0;
+my $one_instance = 0;
 
-if (!GetOptions("display" => \$do_display)) {
-    die "usage: $0 [-display]\n";
+if (!GetOptions("display" => \$do_display,
+		"one-instance" => \$one_instance,
+	       )) {
+    die "usage: $0 [-display] [-one-instance]\n";
+}
+
+my $outfile = "$FindBin::RealBin/../tmp/winter_optimization.st";
+
+my $lock_file = "/tmp/winter_optimization.lck";
+if ($one_instance) {
+    open(LCK, "> $lock_file");
+    if (!flock LCK, LOCK_EX|LOCK_NB) {
+	warn "winter_optimization process running, waiting for lock...\n";
+	flock LCK, LOCK_EX;
+	if (!-e $outfile) {
+	    die "$outfile was not built?";
+	}
+	warn "release lock, assume $outfile is built\n";
+	exit 0;
+    }
 }
 
 my %str;
@@ -189,7 +209,6 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
     }
 }
 
-my $outfile = "$FindBin::RealBin/../tmp/winter_optimization.st";
 store($net, "$outfile~");
 chmod 0644, "$outfile~";
 rename "$outfile~", $outfile

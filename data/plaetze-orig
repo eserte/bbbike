@@ -1,4 +1,4 @@
-# $Id: plaetze-orig,v 4.7 2005/01/09 23:20:57 eserte Exp eserte $
+# $Id: plaetze-orig,v 4.8 2005/03/15 23:07:42 eserte Exp $
 Hackescher Markt	Pl 10264,13097
 Rosenthaler Platz	Pl 10177,13766
 Potsdamer Platz	Pl 8542,11502
@@ -196,5 +196,8 @@ Reichstag	Pl 8400,12417
 Mettmannplatz	Pl 7467,14633
 # In den Daten gibt es nur "Gendarmenmarkt [Jägerstr.]" und "... [Mauerstr.]",
 # das wird aber nicht von bbbike.cgi gefunden.
-Gendarmenmarkt	Pl 9516,12010 9651,12020 9663,11927 9526,11911
+# XXX Problematisch, wieder herausgenommen. Plaetze sollten keine
+# Straßenzüge darstellen, da diese in der Straßenbeschreibung
+# vorkommen könnte.
+#Gendarmenmarkt	Pl 9516,12010 9651,12020 9663,11927 9526,11911
 Funkturm	Pl 2016,11034

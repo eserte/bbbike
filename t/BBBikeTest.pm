@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.6 2005/02/12 19:20:27 eserte Exp eserte $
+# $Id: BBBikeTest.pm,v 1.7 2005/03/15 22:10:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -134,7 +134,7 @@ sub do_display {
     }
 }
 
-# only usable with Test::More
+# only usable with Test::More, generates one test
 sub tidy_check {
     my($content, $test_name, %args) = @_;
  SKIP: {

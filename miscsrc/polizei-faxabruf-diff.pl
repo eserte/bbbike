@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: polizei-faxabruf-diff.pl,v 1.5 2005/03/13 20:11:05 eserte Exp $
+# $Id: polizei-faxabruf-diff.pl,v 1.5 2005/03/13 20:11:05 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004, 2005 Slaven Rezic. All rights reserved.
@@ -50,6 +50,8 @@ sub parse_table {
 		if $row->[1] eq "";
 	    next
 		if $row->[1] =~ /^A\d+/; # Autobahnen interessieren nicht
+	    next
+		if $row->[1] =~ /Ampeln ausgefallen/;
 	    push @events, {
 			   Date => $row->[0],
 			   Description => $row->[1],

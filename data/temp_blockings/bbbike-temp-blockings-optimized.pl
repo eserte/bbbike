@@ -190,7 +190,14 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'until' => 1111100400,
+         'text' => 'Augsburger Str. (Charlottenburg) in beiden Richtungen zwischen Joachimstaler Str. und Rankestr. Baustelle, Straße vollständig gesperrt (Kranarbeiten) (bis 17.03.2005)',
+         'from' => 1110917391,
+         'data' => 'userdel	2 5636,10626 5479,10719
+',
+         'type' => 'gesperrt'
+       },
        {
          'until' => 1122674400,
          'text' => 'K 6738; (L 36 nördl. Steinhöfel-Müncheberg); OD Tempelberg Straßenausbau Vollsperrung 07.03.2005-29.07.2005 ',

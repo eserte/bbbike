@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.20 2005/02/03 22:12:37 eserte Exp eserte $
+# $Id: cgi-mechanize.t,v 1.21 2005/03/15 22:10:06 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -397,7 +397,7 @@ for my $winter_optimization ("", "WI1", "WI2") {
     $form = $agent->current_form;
     $input = $form->find_input("pref_winter");
  SKIP: {
-	skip("winter_optimization not available", 1) if !defined $input;
+	skip("winter_optimization not available", 2) if !defined $input;
 	$input->value($winter_optimization);
 	$agent->submit;
 	my_tidy_check($agent);

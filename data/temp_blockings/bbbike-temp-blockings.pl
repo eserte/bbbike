@@ -1465,9 +1465,9 @@ EOF
 userdel	q4; 3507,3635 3184,3413 2701,3064 2639,2989 2638,2843
 EOF
      },
-     { from  => 1109889471, # 2005-03-03 23:37
-       until => 1110063600, # 2005-03-06 00:00
-       text  => 'Augsburger Str. (Charlottenburg) in beiden Richtungen zwischen Rankestr. und Joachimstaler Str. Kranarbeiten, Straße vollständig gesperrt (bis 05.03.2005)',
+     { from  => 1110917391, # 2005-03-15 21:09
+       until => 1111100400, # 2005-03-18 00:00
+       text  => 'Augsburger Str. (Charlottenburg) in beiden Richtungen zwischen Joachimstaler Str. und Rankestr. Baustelle, Straße vollständig gesperrt (Kranarbeiten) (bis 17.03.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 5636,10626 5479,10719

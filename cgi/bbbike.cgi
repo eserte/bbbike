@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.16 2005/03/14 22:00:36 eserte Exp $
+# $Id: bbbike.cgi,v 7.18 2005/03/15 23:08:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -93,6 +93,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $can_wbmp $can_palmdoc $can_berliner_stadtplan_post
 	    $can_mapserver $mapserver_address_url
 	    $mapserver_init_url $no_berlinmap $max_plz_streets $with_comments
+	    $with_cat_display
 	    $use_coord_link
 	    @weak_cache @no_cache %proc
 	    $bbbike_script $cgi $port
@@ -478,6 +479,15 @@ is able to display tables.
 
 $with_comments = 1;
 
+=item $with_cat_display
+
+Include column for graphical category display. Only activated if
+browser is able to display tables. Default is false.
+
+=cut
+
+$with_cat_display = 0;
+
 =item $use_coord_link
 
 Use an own exact coordinate link (i.e. to Mapserver) instead of a
@@ -654,7 +664,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.18 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2529,44 +2539,50 @@ sub search_coord {
 
     # Winteroptimierung
     if (defined $q->param('pref_winter') && $q->param('pref_winter') ne '') {
-	require Storable;
-	my $penalty;
-	for my $try (1 .. 2) {
-	    for my $dir ("$FindBin::RealBin/../tmp", @Strassen::datadirs) {
-		my $f = "$dir/winter_optimization.st";
-		if (-r $f && -s $f) {
-		    $penalty = Storable::retrieve($f);
+	if ($use_winter_optimization) {
+	    require Storable;
+	    my $penalty;
+	    for my $try (1 .. 2) {
+		for my $dir ("$FindBin::RealBin/../tmp", @Strassen::datadirs) {
+		    my $f = "$dir/winter_optimization.st";
+		    if (-r $f && -s $f) {
+			$penalty = Storable::retrieve($f);
+			last;
+		    }
+		}
+		if (!$penalty) {
+		    if ($try == 2) {
+			die "Can't find winter_optimization.st in @Strassen::datadirs and cannot build...";
+		    } else {
+			system("$FindBin::RealBin/../miscsrc/winter_optimization.pl", "-one-instance");
+		    }
+		} else {
 		    last;
 		}
 	    }
-	    if (!$penalty) {
-		if ($try == 2) {
-		    die "Can't find winter_optimization.st in @Strassen::datadirs and cannot build...";
-		} else {
-		    system("$FindBin::RealBin/../miscsrc/winter_optimization.pl");
+
+	    my $koeff = 1;
+	    if ($q->param('pref_winter') eq 'WI1') {
+		$koeff = 0.5;
+	    }
+
+	    push @penalty_subs, sub {
+		my($pen, $next_node, $last_node) = @_;
+		if (exists $penalty->{$last_node.",".$next_node}) {
+		    my $this_penalty = $penalty->{$last_node.",".$next_node};
+		    $this_penalty = $koeff * $this_penalty + (100-$koeff*100)
+			if $koeff != 1;
+		    if ($this_penalty < 1) {
+			$this_penalty = 1;
+		    }		# avoid div by zero or negative values
+		    $pen *= (100 / $this_penalty);
 		}
-	    } else {
-		last;
-	    }
+		$pen;
+	    };
+	    $disable_other_optimizations = 1;
+	} else {
+	    # ignore pref_winter
 	}
-
-	my $koeff = 1;
-	if ($q->param('pref_winter') eq 'WI1') {
-	    $koeff = 0.5;
-	}
-
-	push @penalty_subs, sub {
-	    my($pen, $next_node, $last_node) = @_;
-	    if (exists $penalty->{$last_node.",".$next_node}) {
-		my $this_penalty = $penalty->{$last_node.",".$next_node};
-		$this_penalty = $koeff * $this_penalty + (100-$koeff*100)
-		    if $koeff != 1;
-		if ($this_penalty < 1) { $this_penalty = 1 } # avoid div by zero or negative values
-		$pen *= (100 / $this_penalty);
-	    }
-	    $pen;
-	};
-	$disable_other_optimizations = 1;
     }
 
     # Ampeloptimierung
@@ -3433,7 +3449,8 @@ EOF
 	    }
 	    print "><tr><th>${fontstr}Etappe$fontend</th><th>${fontstr}Richtung$fontend</th><th>${fontstr}Stra&szlig;e$fontend</th><th>${fontstr}Gesamt$fontend</th>";
 	    if ($with_comments) {
-		print "<th>${fontstr}Bemerkungen$fontend</th>";
+		print "<th" . ($with_cat_display ? " colspan=4" : "") .
+	              ">${fontstr}Bemerkungen$fontend</th>";
 	    }
 	    if ($has_fragezeichen) {
 		print "<th></th>"; # no header for Fragezeichen
@@ -3442,10 +3459,12 @@ EOF
 	}
 
   	my $odd = 0;
+	my $etappe_i = -1;
 	for my $etappe (@out_route) {
+	    $etappe_i++;
 	    my($entf, $richtung, $strname, $ges_entf_s,
-	       $etappe_comment, $fragezeichen_comment) =
-		   @{$etappe}{qw(DistString DirectionString Strname TotalDistString Comment FragezeichenComment)};
+	       $etappe_comment, $fragezeichen_comment, $path_index) =
+		   @{$etappe}{qw(DistString DirectionString Strname TotalDistString Comment FragezeichenComment PathIndex)};
 	    if (!$bi->{'can_table'}) {
 		printf $line_fmt,
 		  $entf, $richtung, string_kuerzen($strname, 31), $ges_entf_s;
@@ -3459,6 +3478,28 @@ EOF
 		print "$fontend</td><td nowrap>$fontstr$ges_entf_s$fontend</td>";
 		$odd = 1-$odd;
 		if ($with_comments && $comments_net) {
+		    if ($with_cat_display) {
+			# XXX ungenau, sollte alle teilstücke zwischen diesem und dem nächsten pathindex
+			# berückstichtigen und dann entweder die schlechteste und die längste kategorie
+			# verwenden
+			my $rec;
+			if ($path_index < $#{ $r->path }) {
+			    $rec = $net->get_street_record(join(",", @{$r->path->[$path_index]}),
+							   join(",", @{$r->path->[$path_index+1]}));
+			}
+			if ($rec) {
+			    my $cat = $rec ? $rec->[Strassen::CAT] : '';
+			    my $title = { NN => "Nebenstraße ohne Kfz",
+					  N  => "Nebenstraße",
+					  H  => "Hauptstraße",
+					  HH => "wichtige Hauptstraße",
+					  B  => "Bundesstraße",
+					}->{$cat};
+			    print "<td></td><td title='$title' class='cat$cat catcell'></td><td></td>";
+			} else {
+			    print "<td></td><td></td><td></td>";
+			}
+		    }
 		    print "<td>$fontstr$etappe_comment$fontend</td>";
 		}
 		if ($has_fragezeichen) {
@@ -3483,6 +3524,9 @@ EOF
 		my $cols = 4;
 		if ($with_comments && $comments_net) {
 		    $cols++;
+		}
+		if ($with_cat_display) {
+		    $cols += 3;
 		}
 		if ($has_fragezeichen) {
 		    $cols++;
@@ -5559,7 +5603,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/03/14 22:00:36 $';
+    my $cgi_date = '$Date: 2005/03/15 23:08:23 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

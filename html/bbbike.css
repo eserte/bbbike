@@ -97,3 +97,27 @@ a.ms:visited { color:#333333; }
   margin-top:8px;
 }
 
+/* colors taken from bbbike.cgi, %category_color */
+.catB {
+  background-color:#cd0000; /* red3 */
+}
+.catHH {
+  background-color:#fff800;
+}
+.catH {
+  background-color:#ffffa0;
+}
+.catN {
+  background-color:#ffffff; /* slightly different */
+}
+.catNN {
+  background-color:#bdffbd;
+}
+
+.catcell {
+  width:10px;
+  border-width: 0px 2px 0px 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 0px 2px 0px 2px;
+}
