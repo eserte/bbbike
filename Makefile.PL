@@ -270,7 +270,7 @@ sub make_general_pi_osd {
 <AUTHOR>$author</AUTHOR>
 <LICENSE HREF="LICENSE" />
 <IMPLEMENTATION>
- <CODEBASE HREF="http://prdownloads.sourceforge.net/bbbike/BBBike-$BBBike::VERSION.tar.gz" />
+ <CODEBASE HREF="http://prdownloads.sourceforge.net/bbbike/BBBike-$BBBike::STABLE_VERSION.tar.gz" />
  <INSTALL EXEC="perl">BBBike-$BBBike::VERSION/install.pl</INSTALL>
 </IMPLEMENTATION>
 EOF
