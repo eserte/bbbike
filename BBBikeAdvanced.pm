@@ -193,6 +193,11 @@ sub custom_draw {
 	    if ($linetype eq "p") {
 		Tk::grid($f->Checkbutton(-text => M"Namen zeichnen",
 					 -variable => \$args{-namedraw}),
+			 -sticky => "w",
+			);
+		Tk::grid($f->Checkbutton(-text => M"Überlappungen vermeiden",
+					 -variable => \$args{-nooverlaplabel}),
+			 -sticky => "w",
 			);
 	    }
 
@@ -273,6 +278,10 @@ sub custom_draw {
 	$retargs->{NameDraw} = $args{-namedraw};
 	delete $args{-namedraw};
 	$name_draw->{$abk} = 1;
+    }
+    if ($args{-nooverlaplabel}) {
+	delete $args{-nooverlaplabel};
+	$no_overlap_label{$abk} = 1;
     }
 
     my $do_close = 1;

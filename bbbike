@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.146 2004/12/06 20:37:32 eserte Exp $
+# $Id: bbbike,v 3.146 2004/12/06 20:37:32 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -5362,6 +5362,7 @@ sub generate_plot_functions {
 			if ($add) {
 			    $name .= " $add";
 			}
+			$name =~ s/\cK/\n/g; # vert tab -> newline
 			($mx,$my) = get_polygon_center(@coordlist);
 			if (!defined $mx) {
 			    ($mx,$my) = @coordlist[0,1];
@@ -11371,7 +11372,16 @@ sub next_free_layer {
 	    }
 	}
     }
-    "L$max_i";
+    my $abk = "L$max_i";
+    reset_free_layer($abk);
+    $abk;
+}
+
+### AutoLoad Sub
+sub reset_free_layer {
+    my $abk = shift;
+    delete $no_overlap_label{$abk};
+    remove_from_stack($abk);
 }
 
 ### AutoLoad Sub
@@ -15760,6 +15770,12 @@ sub add_to_stack {
 	$i++;
     }
     push @normal_stack_order, $abk, "$abk-fg";
+}
+
+### AutoLoad Sub
+sub remove_from_stack {
+    my($abk) = @_;
+    @normal_stack_order = grep { $_ ne $abk } @normal_stack_order;
 }
 
 sub restack_delayed {
