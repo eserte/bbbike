@@ -5,17 +5,24 @@
 # $Id: Waitproc.pm,v 1.5 2000/11/30 15:10:03 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net
 #
 
 =head1 NAME
 
 Waitproc - a wait process
+
+=head1 SYNOPSIS
+
+    use Waitproc;
+    waitproc();      # start rotor
+    sleep 10;        # do something ...
+    stop_waitproc(); # stop rotor
 
 =cut
 
