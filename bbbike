@@ -15787,6 +15787,52 @@ sub get_polar_location_of_route_end {
     "$px,$py";
 }
 
+sub start_process {
+    my($token, $gather_command, $action_command) = @_;
+    if (defined $processes{$token}) {
+	status_message(M("Der Prozess $token laeuft noch (PID $processes{$token}) XXX"), "die");
+	# XXX Abschiessen blabla
+    }
+    if (!$Config{d_fork}) {
+	status_message(M("fork ist nicht verfuegbar XXX"), "die");
+    }
+    require Symbol;
+    my $rdr = Symbol::gensym();
+    my $wtr = Symbol::gensym();
+    pipe($rdr, $wtr);
+    my $pid = fork;
+    if (!defined $pid) {
+	status_message(M("Der Process konnte nicht gestartet werden."), "die");
+    }
+    if ($pid == 0) {
+	# child
+	close $rdr;
+warn "gather command";
+	my $result = $gather_command->();
+warn "print result $result to $wtr";
+#	select $wtr; $| = 1;
+	print $wtr $result;
+warn "printed";
+	close $wtr;
+warn "closed";
+	sleep 99999;
+	CORE::exit(0);
+    }
+    close $wtr;
+    $processes{$token} = $pid;
+    $top->fileevent($rdr, "readable", sub {
+warn "readable";
+			local $/ = undef;
+			my $result = <$rdr>;
+warn "got $result";
+			close $rdr;
+			$processes{$token} = undef;
+warn "do action";
+			$action_command->($result)
+			    if $action_command;
+		    });
+}
+
 ## DEBUG_BEGIN
 #BEGIN{mymstat("100% BEGIN");}
 ## DEBUG_END

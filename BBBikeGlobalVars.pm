@@ -24,7 +24,7 @@ use vars
      $VERSION $PROG_REVISION $tmpdir %tmpfiles $progname
      $os $win32s $sfn $use_clipboard $verbose $advanced $devel_host
      $datadir $no_original_datadir $city $citypkg $country
-     $top %toplevel $transient $c $top_dpi $top_dpmm @want_extends
+     $top %toplevel %processes $transient $c $top_dpi $top_dpmm @want_extends
      $small_icons $is_handheld
      @scrollregion $init_scrollregion $normal_scrollregion $scrollre
      $K2Listbox
