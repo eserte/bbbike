@@ -40,9 +40,11 @@ TARGETS+=	plz berlin potsdam deutschland
 TARGETS+=	sehenswuerdigkeit obst radwege radwege_exact
 TARGETS+=	qualitaet_s qualitaet_l
 TARGETS+=	handicap_s handicap_l
-TARGETS+=	label vorfahrt relation_gps nolighting
+TARGETS+=	vorfahrt nolighting
 TARGETS+=	housenumbers green brunnels mount
 TARGETS+=	${COMMENTS_PARTIAL}
+
+TARGETS_DISABLED=	label relation_gps 
 
 WRITEABLE=	chmod u+w,ugo+r
 READONLY=	chmod ugo+r,ugo-w
@@ -520,11 +522,13 @@ check:	.check_strassen1 .check_strassen2 \
 	.check_radwege .check_ampelschaltung \
 	.check_qualitaet_s .check_qualitaet_l \
 	.check_handicap_s .check_handicap_l \
-	.check_label .check_vorfahrt \
+	.check_vorfahrt \
 	.check_comments1 .check_comments2 .check_nolighting \
 	.check_housenumbers .check_sehenswuerdigkeit .check_green \
 	.check_brunnels .check_comments_ferry \
 	.check_temp_blockings \
+
+check-disabled:	.check_label
 
 .check_strassen1:	.strassen.tmp add_str multi_bez_str
 	$(CHECK_STR_PLZ) -data .strassen.tmp
