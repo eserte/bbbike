@@ -478,7 +478,7 @@ GNUmakefile: Makefile ../miscsrc/b2gmake
 	../miscsrc/b2gmake < Makefile > GNUmakefile
 	chmod ugo+r GNUmakefile
 
-GNUmakefile.mapfiles: Makefile ../miscsrc/b2gmake
+GNUmakefile.mapfiles: Makefile.mapfiles ../miscsrc/b2gmake
 	../miscsrc/b2gmake < Makefile.mapfiles > GNUmakefile.mapfiles
 	chmod ugo+r GNUmakefile.mapfiles
 

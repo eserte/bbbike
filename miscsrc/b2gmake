@@ -32,6 +32,7 @@ while(<STDIN>) {
     s/^\.endfor//;#XXX
     s/\$\{\.?MAKEFLAGS\}/-\${MAKEFLAGS}/g;
     s/\$\(\.?MAKEFLAGS\)/-\${MAKEFLAGS}/g;
+    s/\$>/\$^/g;
     print;
 }
 

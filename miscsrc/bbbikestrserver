@@ -1,0 +1,357 @@
+#!/usr/bin/env perl
+# -*- perl -*-
+
+#
+# $Id: bbbikestrserver,v 3.5 2002/07/13 21:08:00 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 1999,2002 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven.rezic@berlin.de
+# WWW:  http://bbbike.sf.net/
+#
+
+# XXX
+# geht nicht !?
+# $net->{Strassen} existiert, aber nicht $net->{Net2Name}
+#
+
+use FindBin;
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+use Strassen;
+use File::Basename;
+
+use strict;
+
+# don't use lexical variables (problems with Shareable)
+use vars qw($net);
+
+use Getopt::Long;
+
+my $server = 1;
+my $module = 'sharelite';
+my $debug  = 0;
+my $stop;
+my $restart;
+my $status;
+my $verbose;
+my $program = basename($0);
+
+my $hangup;
+my $pidfile;
+my $want_syslog = 1;
+my $use_syslog = 0;
+my $datadir;
+
+if (!GetOptions("client"   => sub { $server = 0 },
+		"module=s" => \$module,
+		"d" => \$debug,
+		"start" => sub { $server = 1 },
+		"stop" => \$stop,
+		"restart" => \$restart,
+		"status" => \$status,
+		"datadir=s" => \$datadir,
+		"syslog!" => \$want_syslog,
+		"v" => \$verbose,
+	       )) {
+    die "usage: $0 [-client] [-module mod] [-d] [-v] [-datadir dir] [-[no]syslog]
+                   [-stop] [-restart] [-status]
+-client:     use client mode (default: use server mode)
+-module mod: use an alternative IPC::Share* implementation
+-d:          do not daemonize (debug mode)
+-v:          verbose
+-stop:       stop daemon (or send INT or TERM signal to process)
+-restart:    restart daemon (or send HUP signal to process)
+-status:     get status line for /etc/rc.d
+-datadir:    use another data directory than @Strassen::datadirs
+-[no]syslog: (do not) use syslog
+";
+}
+
+if (defined $datadir) {
+    @Strassen::datadirs = $datadir;
+}
+
+restart() if ($restart);
+stop()    if ($stop);
+status()  if ($status);
+
+my $bbbike_key = 1211;
+
+$SIG{TERM} = $SIG{INT} = sub {
+    cleanup();
+    exit;
+};
+
+$SIG{HUP} = sub {
+    $hangup = 1;
+    alarm(0);
+};
+
+if ($want_syslog) {
+    require Sys::Syslog;
+    Sys::Syslog::setlogsock('unix');
+    Sys::Syslog::openlog($program, 'pid,nowait', 'user');
+    $use_syslog = 1;
+}
+
+daemonize() if !$debug;
+while(1) {
+    start_server();
+}
+
+sub start_server {
+    if ($module eq 'sharelite') {
+	if ($server) {
+	    Sys::Syslog::syslog('info', 'start IPC::ShareLite server') if $use_syslog;
+	    ipc_sharelite_server();
+	} else {
+	    ipc_sharelite_client();
+	}
+    } else {
+	if ($server) {
+	    Sys::Syslog::syslog('info', 'start IPC::Shareable server') if $use_syslog;
+	    ipc_shareable_server();
+	} else {
+	    ipc_shareable_client();
+	}
+    }
+}
+
+sub cleanup {
+    if ($^O =~ /bsd/i) {
+	system("ipcrm -M $bbbike_key -S $bbbike_key");
+    } else { # Linux...
+	system("ipcrm shm $bbbike_key");
+	system("ipcrm sem $bbbike_key");
+    }
+    if (defined $pidfile) {
+	unlink $pidfile;
+    }
+    if ($use_syslog) {
+	Sys::Syslog::syslog('info', 'shutdown bbbikestrserver');
+	Sys::Syslog::closelog();
+	$use_syslog = 0;
+    }
+}
+
+sub daemonize {
+    return if !$server;
+    return if $^O eq 'MSWin32';
+
+    require POSIX;
+    POSIX::setsid();
+
+    chdir "/" or die "Can't chdir to /: $!";
+
+    open(STDOUT, ">/dev/null") or die $!;
+    open(STDERR, ">/dev/null") or die $!;
+    open(STDIN, ">/dev/null") or die $!;
+
+    fork && exit;
+
+    write_pid();
+}
+
+sub ipc_shareable_server {
+    require IPC::Shareable;
+    IPC::Shareable->VERSION(0.60);
+
+    my %options = (
+		   'create' => 1,
+		   'exclusive' => 0,
+		   'mode' => 0644,
+		   'destroy' => 0,
+		  );
+
+    tie $net, 'IPC::Shareable', 'bbb', \%options;
+
+    _get_net();
+
+    if ($use_syslog) {
+	Sys::Syslog::syslog('info', "server ready");
+    } else {
+	warn "Server ready, pid=$$ ...\n";
+    }
+
+    _forever();
+
+    undef $net;
+}
+
+sub ipc_shareable_client {
+    require IPC::Shareable;
+    IPC::Shareable->VERSION(0.60);
+
+    my %options = (
+		   'key' => 'paint',
+		   'create' => 0,
+		   'exclusive' => 0,
+		   'mode' => 0644,
+		   'destroy' => 0,
+		  );
+
+    tie $net, 'IPC::Shareable', 'bbb', \%options;
+
+    warn "Statistics: " . $net->statistics . "\n";
+    warn "Sourcefiles: " . $net->sourcefiles . "\n";
+
+    my $str = $net->{Strassen};
+}
+
+sub ipc_sharelite_server {
+    require IPC::ShareLite;
+    require Storable;
+
+    my $share = new IPC::ShareLite( -key     => $bbbike_key,
+				    -create  => 'yes',
+				    -destroy => 'yes' ) or die $!;
+    _get_net();
+
+    $share->store(Storable::freeze($net));
+
+    if ($use_syslog) {
+	Sys::Syslog::syslog('info', "server with key $bbbike_key ready");
+    } else {
+	warn "Server ready, pid=$$, key=$bbbike_key ...\n";
+    }
+
+    _forever();
+
+    undef $net;
+}
+
+sub ipc_sharelite_client {
+    require IPC::ShareLite;
+    require Storable;
+
+    my $share = new IPC::ShareLite( -key     => $bbbike_key,
+				    -create  => 'no',
+				    -destroy => 'no' ) or die $!;
+
+    $net = Storable::thaw($share->fetch);
+    warn "Statistics: " . $net->statistics . "\n";
+    warn "Sourcefiles: " . $net->sourcefiles . "\n";
+
+    warn $net->{Net};
+    warn $net->{Net2Name};
+    warn $net->{Wegfuehrung};
+    warn $net->{Strassen};
+}
+
+sub _get_net {
+    Sys::Syslog::syslog('info', 'reading data') if $use_syslog;
+    eval {
+	my $str = new Strassen "strassen";
+	$net = new StrassenNetz $str;
+	$net->make_net;
+	$net->make_sperre('gesperrt', Type => ['einbahn', 'sperre', 'tragen']);
+    };
+    if ($@) {
+	if ($use_syslog) {
+	    Sys::Syslog::syslog('err', "while making net: $@");
+	} else {
+	    die $@;
+	}
+    }
+    if ($debug) {
+	warn $net->{Net};
+	warn $net->{Net2Name};
+	warn $net->{Wegfuehrung};
+	warn $net->{Strassen};
+    }
+}
+
+sub _forever {
+    $hangup = 0;
+    while(!$hangup) {
+	sleep 1000;
+    }
+}
+
+sub possible_pid_files {
+    my $base = basename($0);
+
+    my $varrun = eval {
+	require "paths.ph";
+	&_PATH_VARRUN;
+    };
+
+    ((defined $varrun ? $varrun : "/var/run/") . "$base.pid",
+     "$ENV{HOME}/.$base.pid");
+}
+
+sub write_pid {
+    undef $pidfile;
+    foreach my $try_pidfile (possible_pid_files()) {
+	if (open(PID, ">$try_pidfile")) {
+	    $pidfile = $try_pidfile;
+	    last;
+	}
+    }
+    if (!defined $pidfile) {
+	warn "Can't write pid file ... \n";
+	Sys::Syslog::syslog('warning', "Can't write pid file") if $use_syslog;
+	return;
+    }
+    print PID $$, "\n";
+    close PID;
+}
+
+sub get_pid {
+    my $pid;
+    foreach my $try_pidfile (possible_pid_files()) {
+	if (open(PID, "<$try_pidfile")) {
+	    chomp($pid = scalar <PID>);
+	    close PID;
+	    last;
+	}
+    }
+    if (!defined $pid) {
+	my $msg = "No pid file found in " . join(", ", possible_pid_files());
+	warn  $msg . "\n" if $verbose;
+	Sys::Syslog::syslog('warning', $msg) if $use_syslog;
+    }
+    $pid;
+}
+
+sub stop {
+    my $pid = get_pid();
+    if (defined $pid) {
+	kill TERM => $pid if defined $pid;
+	exit 0;
+    }
+    exit 1;
+}
+
+sub restart {
+    my $pid = get_pid();
+    if (defined $pid) {
+	kill HUP => $pid if defined $pid;
+	exit 0;
+    }
+    exit 1;
+}
+
+sub status {
+    my $pid = get_pid();
+    print STDERR "Checking for service $program: ";
+    if (!defined $pid) {
+	print STDERR "No process started\n";
+    } elsif (!kill 0 => $pid) {
+	print STDERR "Process $pid is not running\n";
+    } else {
+	print STDERR "OK\n";
+    }
+    exit 0;
+}
+
+__END__
+
+# Installation:
+
+cd /etc/rc.d/rc3.d
+sudo ln -s /oo/projekte/bbbike/bbbike-devel/miscsrc/bbbikestrserver.sh S99bbbikestrserver
+sudo ln -s /oo/projekte/bbbike/bbbike-devel/miscsrc/bbbikestrserver.sh K99bbbikestrserver

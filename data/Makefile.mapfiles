@@ -7,12 +7,8 @@ MAPFILES_ROOT_DIR?=	../mapserver/brb
 MAPFILES_DATA_DIR=	$(MAPFILES_ROOT_DIR)/data
 MAPFILES_IMG_DIR=	$(MAPFILES_ROOT_DIR)/graphics
 
-.ifndef MISCDIR
-.error MISCDIR is not defined
-.endif
-.ifndef MISCSRCDIR
-.error MISCSRCDIR is not defined
-.endif
+MISCDIR?=		../misc
+MISCSRCDIR?=		../miscsrc
 
 BBBIKEDRAW=		${MISCSRCDIR}/bbbikedraw.pl
 SORTBYCAT=		${MISCSRCDIR}/sortbycat
@@ -309,15 +305,25 @@ $(MAPFILES_DATA_DIR)/nolighting.shp:	nolighting
 
 mapfiles-shptree:	${ALL_MAPFILES:S/.shp$/.qix/}
 
-.for qix in ${ALL_MAPFILES:S/.shp$/.qix/}
-${qix}:	${qix:S/.qix$/.shp/}
+.SUFFIXES: .shp .qix
+
+.shp.qix:
 	@[ -x ${SHPTREE} ] && ( \
 		echo $@; \
 		${SHPTREE} $@ \
 	) || ( \
 		echo "Warning: no shptree program found for converting $@" \
 	)
-.endfor
+
+# .for qix in ${ALL_MAPFILES:S/.shp$/.qix/}
+# ${qix}:	${qix:S/.qix$/.shp/}
+# 	@[ -x ${SHPTREE} ] && ( \
+# 		echo $@; \
+# 		${SHPTREE} $@ \
+# 	) || ( \
+# 		echo "Warning: no shptree program found for converting $@" \
+# 	)
+# .endfor
 
 # XXX more needed
 cleanup-tmp:
