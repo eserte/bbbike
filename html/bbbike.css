@@ -1,0 +1,19 @@
+body {
+  background-color:#ffffff;
+  font-family:sans-serif,helvetica,verdana,arial;
+}
+td,th,p,h2,li,input {
+  font-family:sans-serif,helvetica,verdana,arial;
+}
+table.desc,td {
+  vertical-align:top;
+}
+tt,pre {
+  font-family:courier,fixed;
+}
+dt {
+  font-weight:bold;
+}
+.hfill { width:100%; }
+/* not interpreted by Gecko, wrong interpretation by IE 5.0 */
+/* table.routelist > td { background-color:#ffcc66; } */

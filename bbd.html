@@ -1,0 +1,331 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<meta content="Pod::HTML 0.43" name="GENERATOR">
+<title>bbd</title>
+</head>
+<body>
+<a class="POD_NAVLINK" name="Pod_TOP_OF_PAGE"></a>
+<table width="100%">
+<tr><td align="left" width="1%"><a class="POD_NAVLINK" href="README.html">Next:<br>README</a></td><td align="left" width="1%"><a class="POD_NAVLINK" href="bbbike.html">Previous:<br>bbbike</a></td><td width="90%">&nbsp;</td><td align="right" width="1%"><a class="POD_NAVLINK" href="podindex.html">[Index]</a></td></tr>
+</table>
+<h1 class="POD_TITLE">bbd</h1>
+<hr>
+<ul>
+<li><a class="POD_NAVLINK" href="#NAME">NAME</a>
+<li><a class="POD_NAVLINK" href="#DESCRIPTION">DESCRIPTION</a>
+<li><a class="POD_NAVLINK" href="#CATEGORIES">CATEGORIES</a>
+<ul>
+<li><a class="POD_NAVLINK" href="#STREETS">STREETS</a>
+<li><a class="POD_NAVLINK" href="#BLOCKINGS">BLOCKINGS</a>
+<li><a class="POD_NAVLINK" href="#CYCLE_PATHS_RADWEGE_">CYCLE PATHS (RADWEGE)</a>
+<li><a class="POD_NAVLINK" href="#RAILROADS">RAILROADS</a>
+<li><a class="POD_NAVLINK" href="#QUALITY">QUALITY</a>
+<li><a class="POD_NAVLINK" href="#COMMENTS">COMMENTS</a>
+<li><a class="POD_NAVLINK" href="#AREAS">AREAS</a>
+<li><a class="POD_NAVLINK" href="#MISC">MISC</a>
+<li><a class="POD_NAVLINK" href="#MORE_STANDARD_FILES">MORE STANDARD FILES</a>
+</ul>
+<li><a class="POD_NAVLINK" href="#AUTHOR">AUTHOR</a>
+<li><a class="POD_NAVLINK" href="#SEE_ALSO">SEE ALSO</a>
+</ul>
+<hr>
+<h2 class="POD_HEAD1"><a name="NAME">NAME</a></h2>
+<p class="POD_TEXT">
+bbd - bbbike data format description
+</p>
+<h2 class="POD_HEAD1"><a name="DESCRIPTION">DESCRIPTION</a></h2>
+<p class="POD_TEXT">
+<code>bbd</code> is a simple format for describing points and polylines for
+geographics information systems.
+</p>
+<pre class="POD_TEXT">
+Bbd files consist of newline-terminated records in the format:
+
+    Name TAB Category SPACE x,y SPACE x,y ...
+</pre>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Name">Name</a>
+<dd>
+A descriptive name, for example the street name. This field should not
+contain any TAB characters.
+<dt class="POD_ITEM"><a name="Category">Category</a>
+<dd>
+The category of this point or polyline. If the category matches
+<code>#rrggbb</code> (where <code>rr</code>, <code>gg</code> and <code>bb</code> are hexadecimal values), then
+this denotes a color for the representation in the Perl/Tk interface.
+A prefix of <code>F:</code> denotes that the polyline should be treated as a
+polygon and this filled with a solid color. Other predefined
+categories are listed below. The category should not contain any
+spaces.
+<dt class="POD_ITEM"><a name="x_y">x,y</a>
+<dd>
+A coordinate. x and y should be integer or float values. The datum and
+grid of the coordinates should be handled by the software. It is
+recommended that x and y should denote the easting and northing in
+meters (as in GKK or UTM). A record may contain an unlimited number of
+coordinates.
+</dl>
+<p class="POD_TEXT">
+If a line begins with a hash sign (<code>#</code>), then it is treated as a
+comment. Empty lines are ignored.
+</p>
+<h2 class="POD_HEAD1"><a name="CATEGORIES">CATEGORIES</a></h2>
+<p class="POD_TEXT">
+Here's a list of special categories:
+</p>
+<h3 class="POD_HEAD2"><a name="STREETS">STREETS</a></h3>
+<p class="POD_TEXT">
+Used in files: <code>strassen</code>, <code>landstrassen</code>, <code>landstrassen2</code>.
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="BAB">BAB</a>
+<dd>
+Freeways (Bundesautobahn)
+<dt class="POD_ITEM"><a name="B">B</a>
+<dd>
+Bundesstra&szlig;en
+<dt class="POD_ITEM"><a name="HH">HH</a>
+<dd>
+Important main streets (wichtige Hauptstra&szlig;en)
+<dt class="POD_ITEM"><a name="H">H</a>
+<dd>
+Main streets (Hauptstra&szlig;en)
+<dt class="POD_ITEM"><a name="N">N</a>
+<dd>
+Nebenstra&szlig;en
+<dt class="POD_ITEM"><a name="NN">NN</a>
+<dd>
+F&uuml;r Kfz gesperrte Stra&szlig;en.
+<dt class="POD_ITEM"><a name="Pl">Pl</a>
+<dd>
+Places (Pl&auml;tze). Only for point records.
+</dl>
+<h3 class="POD_HEAD2"><a name="BLOCKINGS">BLOCKINGS</a></h3>
+<p class="POD_TEXT">
+Used in files: <code>gesperrt</code>.
+</p>
+<ol class="POD_LIST">
+<li class="POD_ITEM"><a name="_"></a>
+
+One way street. The blocking is in the direction of the polyline.
+<li class="POD_ITEM"><a name="_1"></a>
+
+Blocked street (in both directions).
+<li class="POD_ITEM"><a name="_2"></a>
+
+The bicycle has to be carried. An optional penalty parameter expressed
+in seconds of lost time may be added after the category, with a <code>:</code>
+as separator. Example: <code>0:30</code> for a penalty of 30 seconds. This is
+only for point records.
+<li class="POD_ITEM"><a name="_3"></a>
+
+A blocked route (gesperrte Wegf&uuml;hrung).
+<li class="POD_ITEM"><a name="BNP">BNP</a>
+
+A narrow passage. An optional penalty parameter may be added, like for
+the <code></code> category.
+</ol>
+<h3 class="POD_HEAD2"><a name="CYCLE_PATHS_RADWEGE_">CYCLE PATHS (RADWEGE)</a></h3>
+<p class="POD_TEXT">
+Used in files: <code>radwege_exact</code>.
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="RW0">RW0</a>
+<dd>
+Normaler nicht benutzungspflichtiger Radweg.
+<dt class="POD_ITEM"><a name="RW1">RW1</a>
+<dd>
+Benutzungspflichtiger Radweg.
+<dt class="POD_ITEM"><a name="RW2">RW2</a>
+<dd>
+Suggestivstreifen f&uuml;r Radfahrer.
+<dt class="POD_ITEM"><a name="RW3">RW3</a>
+<dd>
+Radstreifen.
+<dt class="POD_ITEM"><a name="RW4">RW4</a>
+<dd>
+Busspur (eventuell nur tempor&auml;r), auch f&uuml;r Radfahrer frei.
+<dt class="POD_ITEM"><a name="RW5">RW5</a>
+<dd>
+Verkehrsberuhigte Stra&szlig;e.
+<dt class="POD_ITEM"><a name="RW6">RW6</a>
+<dd>
+Fahrradstra&szlig;e.
+<dt class="POD_ITEM"><a name="RW7">RW7</a>
+<dd>
+Zweirichtungsradweg, Gegenrichtung.
+</dl>
+<h3 class="POD_HEAD2"><a name="RAILROADS">RAILROADS</a></h3>
+<p class="POD_TEXT">
+Used in files: <code>ubahn</code>, <code>sbahn</code>, <code>rbahn</code>, <code>ubahnhof</code>, <code>sbahnhof</code>,
+<code>rbahnhof</code>.
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="R">R</a>
+<dd>
+Regionalbahnen au&szlig;erhalb des Stadtgebiets.
+<dt class="POD_ITEM"><a name="RA">RA</a>
+<dd>
+Regionalbahnen Zone A.
+<dt class="POD_ITEM"><a name="RB">RB</a>
+<dd>
+Regionalbahnen Zone B.
+<dt class="POD_ITEM"><a name="RC">RC</a>
+<dd>
+Regionalbahnen Zone C.
+<dt class="POD_ITEM"><a name="R0">R0</a>
+<dd>
+Regionalbahnen au&szlig;er Betrieb oder in Bau.
+<dt class="POD_ITEM"><a name="S">S</a>
+<dd>
+S-Bahnen au&szlig;erhalb des Stadtgebiets.
+<dt class="POD_ITEM"><a name="SA">SA</a>
+<dd>
+S-Bahnen Zone A.
+<dt class="POD_ITEM"><a name="SB">SB</a>
+<dd>
+S-Bahnen Zone B.
+<dt class="POD_ITEM"><a name="SC">SC</a>
+<dd>
+S-Bahnen Zone C.
+<dt class="POD_ITEM"><a name="S0">S0</a>
+<dd>
+S-Bahnen au&szlig;er Betrieb oder in Bau.
+<dt class="POD_ITEM"><a name="U">U</a>
+<dd>
+U-Bahnen au&szlig;erhalb des Stadtgebiets.
+<dt class="POD_ITEM"><a name="UA">UA</a>
+<dd>
+U-Bahnen Zone A.
+<dt class="POD_ITEM"><a name="UB">UB</a>
+<dd>
+U-Bahnen Zone B.
+<dt class="POD_ITEM"><a name="UC">UC</a>
+<dd>
+U-Bahnen Zone C.
+<dt class="POD_ITEM"><a name="U0">U0</a>
+<dd>
+U-Bahnen au&szlig;er Betrieb oder in Bau.
+</dl>
+<h3 class="POD_HEAD2"><a name="QUALITY">QUALITY</a></h3>
+<p class="POD_TEXT">
+Qualit&auml;t der Wege (Fahrbahnbeschaffenheit).
+</p>
+<p class="POD_TEXT">
+Used in files: <code>quality_s</code>, <code>quality_l</code>.
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Q0">Q0</a>
+<dd>
+Beste Qualit&auml;t, keine Einschr&auml;nkungen.
+<dt class="POD_ITEM"><a name="Q1">Q1</a>
+<dd>
+Gute Kopfsteinpflasterstrecken, m&auml;&szlig;iger Asphalt, etwa 25 km/h
+H&ouml;chstgeschwindigkeit.
+<dt class="POD_ITEM"><a name="Q2">Q2</a>
+<dd>
+Gew&ouml;hnliche Kopfsteinpflasterstrecken, schlechter Asphalt, Waldwege,
+etwa 18 km/h H&ouml;chstgeschwindigkeit.
+<dt class="POD_ITEM"><a name="Q3">Q3</a>
+<dd>
+Schlechte Kopfsteinpflasterstrecken, sandige Strecken, etwa 13 km/h
+H&ouml;chstgeschwindigkeit.
+</dl>
+<p class="POD_TEXT">
+Andere, nicht fahrbahnbezogene Handicaps. Used in files: <code>handicap_s</code>,
+<code>handicap_l</code>.
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="q0">q0</a>
+<dd>
+Keine.
+<dt class="POD_ITEM"><a name="q1">q1</a>
+<dd>
+Auf 25 km/h.
+<dt class="POD_ITEM"><a name="q2">q2</a>
+<dd>
+Auf 18 km/h.
+<dt class="POD_ITEM"><a name="q3">q3</a>
+<dd>
+Auf 13 km/h.
+</dl>
+<h3 class="POD_HEAD2"><a name="COMMENTS">COMMENTS</a></h3>
+<p class="POD_TEXT">
+Used in files: <code>comments</code>.
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="P1">P1</a>
+<dd>
+Only for records with three points. Comment is valid for point B if
+driving from A to C.
+<dt class="POD_ITEM"><a name="P2">P2</a>
+<dd>
+Same as P1, but valid for both directions.
+<dt class="POD_ITEM"><a name="S1">S1</a>
+<dd>
+Comment is valid for the whole route in this direction.
+<dt class="POD_ITEM"><a name="S2">S2</a>
+<dd>
+Comment is valid for the whole route in both directions.
+<dt class="POD_ITEM"><a name="PI">PI</a>
+<dd>
+Path instruction (genauere Wegbeschreibung).
+<dt class="POD_ITEM"><a name="P0">P0</a>
+<dd>
+Dieser Weg ist gesperrt (z.B. Abbiegen nicht m&ouml;glich), aber eine
+Umfahrung ist m&ouml;glich ... siehe auch Kategorie &quot;3&quot; in <code>Blocking</code>.
+</dl>
+<h3 class="POD_HEAD2"><a name="AREAS">AREAS</a></h3>
+<p class="POD_TEXT">
+Used in files: <code>flaechen</code>. Mostly prefixed with &quot;F:&quot;, see above.
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="P">P</a>
+<dd>
+Parks and forests.
+<dt class="POD_ITEM"><a name="Ae">Ae</a>
+<dd>
+Airports.
+</dl>
+<h3 class="POD_HEAD2"><a name="MISC">MISC</a></h3>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="radroute">radroute</a>
+<dd>
+Haupt- oder Freizeitrouten.
+<dt class="POD_ITEM"><a name="Q">Q</a>
+<dd>
+F&auml;hren.
+<dt class="POD_ITEM"><a name="X">X</a>
+<dd>
+The category will not be used in this case.
+</dl>
+<h3 class="POD_HEAD2"><a name="MORE_STANDARD_FILES">MORE STANDARD FILES</a></h3>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="ampeln">ampeln</a>
+<dd>
+File with point records for traffic lights (Ampeln). The category is
+set to <code>B</code> for railroad crossings and <code>F</code> for pedestrian-only
+traffic lights, otherwise not used.
+<dt class="POD_ITEM"><a name="hoehe">hoehe</a>
+<dd>
+File with elevation points. The <code>Name</code> fields denotes the elevation
+in meters, the category is not used.
+</dl>
+<p class="POD_TEXT">
+XXX To be continued
+</p>
+<h2 class="POD_HEAD1"><a name="AUTHOR">AUTHOR</a></h2>
+<p class="POD_TEXT">
+Slaven Rezic &lt;slaven@rezic.de&gt;
+</p>
+<h2 class="POD_HEAD1"><a name="SEE_ALSO">SEE ALSO</a></h2>
+<p class="POD_TEXT">
+bbbike(1), Strassen(3).
+</p>
+<hr>
+<a class="POD_NAVLINK" href="#Pod_TOP_OF_PAGE">[Top]</a></body>
+</html>
+

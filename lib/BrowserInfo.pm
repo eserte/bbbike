@@ -1,0 +1,421 @@
+#!/usr/bin/env perl
+# -*- perl -*-
+
+#
+# $Id: BrowserInfo.pm,v 1.28 2003/01/08 21:00:59 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 1999-2001 Slaven Rezic. All rights reserved.
+# This package is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: eserte@cs.tu-berlin.de
+# WWW:  http://user.cs.tu-berlin.de/~eserte/
+#
+
+package BrowserInfo;
+use CGI;
+use strict;
+use vars qw($VERSION);
+
+$VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
+
+sub new {
+    my($pkg, $q) = @_;
+    if (!defined $q) {
+	$q = new CGI;
+    }
+    my $self = {'CGI' => $q};
+    bless $self, $pkg;
+    $self->set_info;
+    $self;
+}
+
+sub emulate {
+    my($self, $browser) = @_;
+    if ($browser =~ /^palmscape$/i) {
+	$ENV{HTTP_USER_AGENT} = "Palmscape/PR5 (PalmPilot Pro; I)";
+    } elsif ($browser =~ /^lynx$/i) {
+	$ENV{HTTP_USER_AGENT} = "Lynx/2.8rel.2 libwww-FM/2.14";
+    } elsif ($browser =~ /^wap$/i) {
+	$ENV{HTTP_USER_AGENT} = "SIE-C3I/1.0 UP/4.1.8c UP.Browser/4.1.8c-XXXX UP.Link/4.1.0.6";
+    } else {
+	die "Unknown emulation: $browser";
+    }
+    $self->set_info;
+}
+
+sub set_info {
+    my $self = shift;
+    my $q = $self->{CGI};
+    # User-Agent-Information normieren
+    $self->{'user_agent_name'} = "";
+    $self->{'user_agent_version'} = 0;
+    $self->{'user_agent_os'} = "";
+    $self->{'user_agent_compatible'} = "";
+
+    ($self->{'user_agent_name'}, $self->{'user_agent_version'}) =
+	_get_browser_version($q->user_agent);
+
+    if ($q->user_agent =~ /\((.*)\)/) {
+	my(@infos) = split(/;\s*/, $1);
+	my $ignore_next = 0;
+	my $i; # be compatible with 5.003
+	for($i=0; $i<=$#infos; $i++) {
+	    my $info = $infos[$i];
+	    if ($ignore_next) {
+		$ignore_next = 0;
+		next;
+	    }
+	    next if $info =~ /^(I|U|N|X11|AK|AOL\s\d\.\d|MSN\s\d\.\d|Update\s.|1und1|R3SSL1.1|SK|pdQbrowser|\d+bit|\d+-bit|\d\.\d+)$/;
+	    if ($info =~ /^compatible$/i) {
+		$i++;
+		$info = $infos[$i];
+		$self->{'user_agent_compatible'} =
+		    $self->{'user_agent_name'} . "/" .
+		    $self->{'user_agent_version'};
+
+		if ($info =~ /^Konqueror/) {
+		    ($self->{'user_agent_name'}, $self->{'user_agent_version'}) =
+			_get_browser_version($info);
+		} elsif ($self->{'user_agent_name'} ne 'Opera') {
+		    ($self->{'user_agent_name'}, $self->{'user_agent_version'}) =
+			_get_browser_version($info, " ");
+		}
+		next;
+	    }
+	    $self->{'user_agent_os'} = $info;
+	    last;
+	}
+    }
+
+    $self->{'text_browser'} = ($q->user_agent('lynx') ||
+			       $q->user_agent('w3m')  ||
+			       $q->user_agent('palmscape') ||
+			       $q->user_agent('sie-c3i') ||
+			       $q->user_agent('sie-s35')
+			      );
+    $self->{'wap_browser'} = ($q->user_agent('sie-c3i') ||
+			      $q->user_agent('sie-s35') ||
+                              $q->user_agent('nokia-wap-toolkit') ||
+			      $q->user_agent('Nokia7110') ||
+			      $q->user_agent('Nokia6210') ||
+			      $q->user_agent('Nokia6250') ||
+			      (defined $ENV{HTTP_ACCEPT} &&
+			       $ENV{HTTP_ACCEPT} =~ /vnd.wap.wml/i &&
+			       $ENV{HTTP_ACCEPT} !~ /text\/html/i)
+			      # XXX check:
+			      #|| $q->user_agent('Ericsson/R1A') ||
+			      #$q->user_agent('EudoraWeb')
+			     );
+    # usually text browser with even limited screen dimensions
+    $self->{'mobile_device'} = ($q->user_agent('palmscape') ||
+				$self->{'user_agent_os'} =~ /PalmOS/ ||
+				$self->{'wap_browser'});
+
+    # display size without permanent footers etc.
+    if ($q->user_agent('Nokia7110')) {
+	$self->{'display_size'} = [95,65-20]; # ?
+    } elsif ($q->user_agent('Nokia6210') ||
+	     $q->user_agent('Nokia6250')) {
+	$self->{'display_size'} = [95,60-20]; # ?
+    } elsif ($q->user_agent('nokia-wap-toolkit')) {
+	$self->{'display_size'} = [80,60-20]; # ???
+    } elsif ($self->{'wap_browser'}) {
+	$self->{'display_size'} = [80,60-20]; # ???
+    } else {
+	$self->{'display_size'} = [800-50,600-10]; # ???
+    }
+
+    # XXX neues User-Agent-Scheme anwenden...
+    $self->{'can_javascript'} =
+      ($q->user_agent =~ m#(Mozilla/[4-9])#i
+       ? 1.2
+       : ($q->user_agent =~ m#(Mozilla/3)#i
+	  ? 1.1
+	  : ($q->user_agent =~ m#(Mozilla/2|Konqueror)#i
+	     ? 1.0
+	     : 0)));
+    if ($self->{'can_javascript'}) {
+	$self->{'window_open_buggy'} = ($q->user_agent =~ m|^Konqueror/1.0|i ||
+					$q->user_agent =~ m|^Mozilla/2|i);
+	$self->{'javascript_incomplete'} =
+	  ($q->user_agent =~ m|^Konqueror/1\.[01]|i);
+    }
+    $self->{'can_png'} = ($q->user_agent =~ m|(Mozilla/[4-9])|i ? 1 : 0);
+    # accept("image/png") heißt leider nicht, dass PNG auch Inline dargestellt
+    # wird... und Netscape/3 macht es eh' falsch
+    $self->{'can_css'} = ($q->user_agent =~ m|(Mozilla/[4-9])|i ? 1 : 0);
+    $self->{'can_dhtml'} = (($self->{'user_agent_name'} eq 'Mozilla' &&
+			     $self->{'user_agent_version'} >= 4.0) ||
+			    ($self->{'user_agent_name'} eq 'MSIE' &&
+			     $self->{'user_agent_version'} >= 4.0) ||
+			    ($self->{'user_agent_name'} eq 'Konqueror' &&
+			     $self->{'user_agent_version'} >= 2.0));
+    $self->{'can_table'} = ((!$self->{'text_browser'} ||
+			     $q->user_agent("w3m")) &&
+			    !$q->user_agent("nokia7110") &&
+			    !$q->user_agent("libwww-perl") # tkweb
+			   );
+    $self->{'dom_type'} = "";
+    if ($self->{'user_agent_name'} eq 'Mozilla') {
+	if ($self->{'user_agent_version'} >= 4 &&
+	    $self->{'user_agent_version'} < 5) {
+	    $self->{'dom_type'} = 'layers';
+	} elsif ($self->{'user_agent_version'} >=5) {
+	    $self->{'dom_type'} = '2';
+	}
+    } elsif ($self->{'user_agent_name'} eq 'MSIE' &&
+	     $self->{'user_agent_version'} >= 4.0) {
+	$self->{'dom_type'} = '1';
+    }
+
+    # bei Mozilla funktionieren meine DHTML-Sachen mit 4.04 build 97329, aber
+    # nicht mit 4.04 build 97308 ... also 4.04 generell ausschließen
+    # beim alten Explorer gibt es offenbar Probleme mit offsetTop
+    # Explorer 5.5 hat ebenfalls Probleme mit offsetTop
+    if ($self->{'can_dhtml'}) {
+	$self->{'dhtml_buggy'} = (($self->{'user_agent_name'} eq 'Mozilla' &&
+				   $self->{'user_agent_version'} < 4.05) ||
+				  ($self->{'user_agent_name'} eq 'MSIE' &&
+				   ($self->{'user_agent_version'} < 5.0 ||
+				    $self->{'user_agent_version'} == 5.5)));
+    }
+
+    # CSS beim alten Netscape ist oft Glückssache
+    if ($self->{'user_agent_name'} eq 'Mozilla' &&
+	$self->{'user_agent_version'} < 5.0) {
+	$self->{'css_buggy'} = 1;
+    }
+
+    if ($q->user_agent =~ /Gecko\/(\d+)/) {
+	$self->{gecko_version} = $1;
+    }
+}
+
+sub is_browser_version {
+    my $self = shift;
+    while(@_) {
+	my $browser = shift;
+	my $min_version;
+	my $max_version;
+	if (@_) {
+	    $min_version = shift;
+	    if (@_) {
+		$max_version = shift;
+	    }
+	}
+	next if ($self->{user_agent_name} ne $browser);
+	next if (defined $min_version &&
+		 $self->{user_agent_version} < $min_version);
+	next if (defined $max_version &&
+		 $self->{user_agent_version} > $max_version);
+	return 1;
+    }
+    0;
+}
+
+sub show_info {
+    my $self = shift;
+    if ($self->{'wap_browser'}) {
+	$self->show_info_wml(@_);
+    } else {
+	$self->show_info_html(@_);
+	print "<hr>\n";
+    }
+}
+
+sub show_info_html {
+    my $self = shift;
+    my $complete = shift;
+    my $q = $self->{CGI};
+    if ($complete) {
+	if ($self->{'can_javascript'}) {
+	    print <<EOF;
+<script language=javascript><!--
+function get_navigator() {
+    var s = "";
+    for(var i in navigator) {
+	s = s + i + " = " + navigator[i] + "\\n";
+    }
+    alert(s);
+}
+
+// for buggy browsers like MSIE 4.5 for Mac, which do not support
+// examining objects over "var i in ..."
+function get_navigator2() {
+    var attr = new Array("appCodeName", "appMinorVersion", "appName",
+                         "appVersion", "cookieEnabled", "cpuClass",
+                         "mimeTypes", "onLine", "opsProfile",
+                         "platform", "plugins", "systemLanguage",
+                         "userAgent", "userLanguage", "userProfile");
+    var s = "";
+    for(var i = 0; i < attr.length; i++) {
+        s = s + attr[i] + " = " + navigator[attr[i]] + "\\n";
+//	if ((attr[i] == "mimeTypes" || attr[i] == "plugins") &&
+//	    typeof navigator[attr[i]] == "object" &&
+//	    navigator[attr[i]].length
+//	   ) {
+//	    for(var ii = 0; ii < navigator[attr[i]].length; ii++) {
+//		s = s + "[" + ii + "]: " + navigator[attr[i]][ii] + "\\n";
+//	    }
+//	}
+    }
+    alert(s);
+}
+
+// what DHTML elements or functions are supported
+function get_dhtml_info() {
+   var s = "";
+   if (document.layers) s+="NS 4.x layers\\n";
+   if (document.all)    s+="IE document.all\\n";
+   if (document.body)   s+="DOM compliant\\n";
+   if (!document.layers && !document.all && document.body)
+       s+="No DHTML implementation\\n";
+   s+="\\n";
+   s+="Functions/members supported:\\n";
+   if (window.open)     s+="* window.open()\\n";
+   if (window.focus)    s+="* window.focus()\\n";
+   if (window.event)    s+="* window.event()\\n";
+   if (document.getElementById) s+="* document.getElementById()\\n";
+   if (Event && typeof Event.MOUSEMOVE != "undefined") s+="* Event.MOUSEMOVE\\n";
+
+   alert(s);
+}
+// -->
+</script>
+EOF
+	}
+	print "</head><body><pre>";
+    }
+    print "Browser: ", $q->user_agent, "\n";
+    print " User-Agent-Name:    " . $self->{'user_agent_name'} . "\n";
+    print " User-Agent-Version: " . $self->{'user_agent_version'} . "\n";
+    print " User-Agent-OS:      " . $self->{'user_agent_os'} . "\n";
+    print "\nCapabilities:\n";
+    print " Text Browser:       " . (!!$self->{'text_browser'}) . "\n";
+    print " WAP Browser:        " . (!!$self->{'wap_browser'}) . "\n";
+    print " Mobile device:      " . (!!$self->{'mobile_device'}) . "\n";
+    print " Javascript:         " . (!!$self->{'can_javascript'}) . "\n";
+    print " CSS:                " . (!!$self->{'can_css'}) . "\n";
+    print " DHTML:              " . (!!$self->{'can_dhtml'}) . "\n";
+    print " Tables:             " . (!!$self->{'can_table'}) . "\n";
+    print "\nBugs:\n";
+    print " Window.open:        " . (!!$self->{'window_open_buggy'}) . "\n";
+    print " DHTML:              " . (!!$self->{'dhtml_buggy'}) . "\n";
+    print " CSS:                " . (!!$self->{'css_buggy'}) . "\n";
+    if ($complete) {
+	print <<EOF;
+</pre>
+<br>
+<a href="javascript:get_navigator()">Information via Javascript</a><br>
+<a href="javascript:get_navigator2()">Same in an alternative manner (less error-prone way)</a><br>
+<a href="javascript:get_dhtml_info()">DHTML information</a>
+<br>
+EOF
+    }
+}
+
+sub show_info_wml {
+    my $self = shift;
+    my $complete = shift;
+    my $q = $self->{CGI};
+    if ($complete) {
+	print <<EOF;
+  <p>
+Browser: @{[ $q->user_agent ]}<br/>
+User-Agent-Name: @{[ $self->{'user_agent_name'} ]}<br/>
+User-Agent-Version: @{[ $self->{'user_agent_version'} ]}<br/>
+User-Agent-OS:      @{[ $self->{'user_agent_os'} ]}<br/>
+<br/>Capabilities:<br/>
+Text Browser:       @{[ (!!$self->{'text_browser'}) ]}<br/>
+WAP Browser:        @{[ (!!$self->{'wap_browser'}) ]}<br/>
+Mobile device:      @{[ (!!$self->{'mobile_device'}) ]}<br/>
+Javascript:         @{[ (!!$self->{'can_javascript'}) ]}<br/>
+CSS:                @{[ (!!$self->{'can_css'}) ]}<br/>
+DHTML:              @{[ (!!$self->{'can_dhtml'}) ]}<br/>
+Tables:             @{[ (!!$self->{'can_table'}) ]}<br/>
+<br/>Bugs:<br/>
+Window.open:        @{[ (!!$self->{'window_open_buggy'}) ]}<br/>
+DHTML:              @{[ (!!$self->{'dhtml_buggy'}) ]}<br/>
+CSS:                @{[ (!!$self->{'css_buggy'}) ]}<br/>
+   <br/>
+  </p>
+EOF
+    }
+}
+
+sub show_server_info {
+    my $bi = shift;
+    if ($bi->{'wap_browser'}) {
+	require HTML::Entities;
+	print "<p>Server Info (environment):<br/>\n";
+	foreach my $env (sort keys %ENV) {
+	    print "$env: " . HTML::Entities::encode_entities_numeric($ENV{$env}) . "<br/>\n";
+	}
+	print "</p>\n";
+    } else {
+	print "Server Info (environment):<ul>\n";
+	foreach my $env (sort keys %ENV) {
+	    print "<li>$env: $ENV{$env}\n";
+	}
+	print "</ul>";
+    }
+}
+
+sub _get_browser_version {
+    my($s, $sep) = @_;
+    $sep = "/" unless defined $sep;
+    if ($s =~ m|\b(Opera)\s+(\d+\.\d+)|) {
+	($1, $2);
+    } elsif ($s =~ m!^([^$sep]+)$sep(\d+\.\d+(\.\d+)?|beta-.*|PR\d+)!i) {
+	($1, $2);
+    } else {
+	($s, 0);
+    }
+}
+
+if (caller()) {
+    if (!($ENV{GATEWAY_INTERFACE} =~ /^CGI-Perl/ &&
+	  (caller())[0] eq 'Apache::Registry')) {
+	return 1;
+    }
+}
+
+sub header {
+    my $self = shift;
+    my $q = $self->{CGI};
+    if ($self->{'wap_browser'}) {
+	print $q->header(-type => 'text/vnd.wap.wml');
+	print <<EOF;
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+<wml>
+ <card title="Browserinfo">
+EOF
+    } else {
+	print $q->header(-type => 'text/html');
+	print "<html><head><title>Browserinfo</title>";
+    }
+}
+
+sub footer {
+    my $self = shift;
+    if ($self->{'wap_browser'}) {
+	print "<p>by BrowserInfo.pm $BrowserInfo::VERSION</p></card>";
+	print "</wml>\n";
+    } else {
+	print "<hr><small>by BrowserInfo.pm $BrowserInfo::VERSION</small>\n";
+	print "</body>\n";
+    }
+}
+
+package main;
+my $bi = new BrowserInfo CGI->new;
+#$bi->emulate("wap");
+$bi->header;
+$bi->show_info('complete');
+$bi->show_server_info;
+$bi->footer;
+exit;
+

@@ -1,0 +1,484 @@
+# -*- perl -*-
+
+#
+# $Id: Http.pm,v 3.8 2003/01/03 21:31:09 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 1995,1996,1998,2000,2001 Slaven Rezic. All rights reserved.
+# This package is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: eserte@cs.tu-berlin.de
+# WWW:  http://user.cs.tu-berlin.de/~eserte/
+#
+
+package Http;
+require 5.000;
+require Exporter;
+use Carp;
+use Socket;
+use Symbol qw(gensym);
+use strict;
+use vars qw(@ISA @EXPORT_OK $VERSION $tk_widget $user_agent $http_defaultheader
+	    $BACKEND $waitVariable);
+
+@ISA = qw(Exporter);
+@EXPORT_OK = qw(get $user_agent $http_defaultheader
+		rfc850_date uuencode);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.8 $ =~ /(\d+)\.(\d+)/);
+
+$tk_widget = 0 unless defined $tk_widget;
+$user_agent = "Http.pm/$VERSION (perl)";
+$http_defaultheader = <<EOF;
+Accept: */*;
+EOF
+
+if (is_in_path("zcat")) {
+    $http_defaultheader .= "Accept-encoding: x-compress; x-gzip\015\012";
+}
+
+# Holt das durch urlstring spezifizierte WWW-Dokument. Falls rfc850 oder ctime
+# angegeben wurde, wird das Dokument nur geholt, falls seitdem
+# modifiziert wurde.
+# Zurückgegeben wird ein Hash mit dem Inhalt (content) und Error-Code (error),
+# sowie der Uhrzeit der letzten Änderung.
+# Format des proxy-Arguments: http://server[:port]
+sub get {
+    my(@args) = @_;
+    if (!defined $BACKEND) {
+	$BACKEND = "plain";
+    }
+    if ($BACKEND eq 'ghttp') {
+	get_ghttp(@args);
+    } elsif ($BACKEND eq 'best') {
+	if (eval { require HTTP::GHTTP; 1; }) {
+	    $BACKEND = 'ghttp';
+	} else {
+	    $BACKEND = 'plain';
+	}
+	get(@args);
+    } else {
+	get_plain(@args);
+    }
+}
+
+sub get_ghttp {
+    # Argument is hash or string
+    my %a = ($#_ == 0 ? ('url' => $_[0]) : @_);
+    my %saveargs = %a;
+
+    my $urlstring     = delete $a{'url'}  || croak "URL not defined";
+    my $modtime       = delete $a{'rfc850'} || delete $a{'ctime'};
+    my $debug         = delete $a{'debug'} || $Http::debug || 0;
+    my $extra_header  = delete $a{'header'} || '';
+    my $no_retry      = delete $a{'no-retry'};
+    my $proxy         = delete $a{'proxy'};
+
+    if (exists $a{'time'}) {
+	$modtime = time2str(delete $a{'time'});
+    }
+
+    require HTTP::GHTTP;
+
+    # Complain about extra arguments
+    (keys %a > 0) &&
+	croak 'Wrong arguments specified: "' . join('", "', keys %a) . '"';
+
+    my $http = HTTP::GHTTP->new;
+    $http->set_uri($urlstring);
+    if ($modtime) {
+	$http->set_header("If-modified-since" => $modtime);
+    }
+    foreach my $h (split(/\n/, $http_defaultheader . $extra_header)) {
+	my($header, $value) = split(/\s*:\s*/, $h, 2);
+	$http->set_header($header => $value);
+    }
+    $http->set_header("User-Agent" => $user_agent);
+    $http->set_proxy($proxy) if defined $proxy;
+    $http->process_request;
+
+    my %ret;
+    $ret{'error'}         = ($http->get_status)[0];
+    my $last_modified     = $http->get_header("last-modified");
+    $ret{'last-modified'} = $last_modified if defined $last_modified;
+    $ret{'content'}       = $http->get_body;
+
+    %ret;
+}
+
+sub get_plain {
+    # Argument is hash or string
+    my %a = ($#_ == 0 ? ('url' => $_[0]) : @_);
+    my %saveargs = %a;
+
+    # Process arguments from hash
+    my $urlstring     = delete $a{'url'}  || croak "URL not defined";
+    my $modtime       = delete $a{'rfc850'} || delete $a{'ctime'};
+    my $debug         = delete $a{'debug'} || $Http::debug || 0;
+    my $extra_header  = delete $a{'header'} || '';
+    my $no_retry      = delete $a{'no-retry'};
+    my $proxy         = delete $a{'proxy'};
+    my $waitref       = delete $a{'waitVariable'} || \$waitVariable;
+
+    if ($a{'__ignore__'} && $a{'__ignore__'}->{$urlstring}) {
+	# loop detected
+	return ('content'      => "Loop detected",
+		'error'        => 500,
+	       );
+    }
+    delete $a{'__ignore__'};
+
+    if (exists $a{'time'}) {
+	$modtime = time2str(delete $a{'time'});
+    }
+
+    # Complain about extra arguments
+    (keys %a > 0) &&
+	croak 'Wrong arguments specified: "' . join('", "', keys %a) . '"';
+
+    if (defined $ENV{"http_proxy"} and $ENV{"http_proxy"} ne '') {
+        $proxy = $ENV{"http_proxy"};
+	if ($proxy !~ m|/$|) {
+	    $proxy .= "/";
+	}
+    }
+    if (defined $proxy and $proxy ne '') {
+	$proxy =~ s|/$||; # strip trailing slash
+	$urlstring = "$proxy/$urlstring";
+    }
+
+    my($host, $path, $port, $user, $pw) = parse_url($urlstring);
+
+    # führendes '/' bei proxy server-Adressen entfernen:
+    $path = substr($path, 1) if ($path =~ /^\/(http|ftp|gopher):\/\//);
+
+    if ($debug) {
+	print STDERR "--- Http::get\n";
+	print STDERR "host: $host\n";
+	print STDERR "path: $path\n";
+	print STDERR "port: $port\n";
+	print STDERR "user: $user\n" if defined $user;
+	print STDERR "pw:   $pw\n"   if defined $pw;
+    }
+
+    my(%header, %error, $content);
+    local($/) = $/;
+
+    my $sock = gensym;
+    my $r = &socket($sock, $host, $port);
+    binmode($sock);
+    if (!defined $r) {
+        return ('content'       => undef,
+                'error'         => 500,
+               );
+    }
+
+    my $cmd = "GET $path HTTP/1.0\015\012"
+      . (defined($modtime) ? "If-modified-since: $modtime\015\012" : "")
+	. "$http_defaultheader"
+	  . "User-Agent: $user_agent\015\012"
+	    . ($extra_header ne "" ? "$extra_header\015\012" : "")
+	      . "\015\012";
+
+    if ($tk_widget) {
+	$$waitref = 0;
+	# XXX unter Win32 austesten!
+	print STDERR "\nWait for writable socket ..." if $debug;
+	$tk_widget->fileevent($sock, 'writable', sub { $$waitref = 1 });
+	$tk_widget->waitVariable($waitref);
+	$tk_widget->fileevent($sock, 'writable', '');
+	print STDERR " socket is writable\n" if $debug;
+    }
+
+    syswrite $sock, $cmd;
+    print STDERR "\nSend>>>\n" . $cmd . "<<<Send\n" if $debug;
+
+    my $stage = 0; # 0=header, 1=body
+    my $buffer = "";
+
+    print STDERR "\nReceive>>>\n" if $debug;
+    my $parse_header_line = sub {
+	s/\015?\012/\n/;
+	if (/^\s*$/) {
+	    print STDERR "<<<End of header detected>>>\n" if $debug;
+	    return 0;
+	}
+	print STDERR $_ if $debug;
+	if (m|HTTP/\d+\.\d+\s+(\d+)\s+(.*)|) {
+	    $error{'code'} = $1;
+	    $error{'text'} = $2;
+	} elsif (/^(\S*):\s*([^\015\012]*)/) { # MIME-Header line
+	    $header{"\L$1\E"} = $2;
+	}			# XXX process multiline header lines
+	1;
+    };
+
+    my $content_follows = sub {
+	if (!exists $error{'code'}) {
+	    $error{'code'} = 500;
+	    $error{'text'} = "Can't connect server";
+	}
+	if ($error{'code'} == 301 || $error{'code'} == 302) { # Redirect
+	    !defined($header{'location'}) && do {
+		print STDERR "Location not defined\n" if $debug;
+		return 0;
+	    };
+
+	    # XXX evtl. loops verhindern
+	    $saveargs{'url'} = $header{'location'};
+	    $saveargs{'__ignore__'}->{$urlstring} = 1;
+	    my(%res) = &get(%saveargs);
+	    $content = $res{'content'};
+	    $error{'code'} = $res{'error'};
+	    $header{'last-modified'} = $res{'last-modified'};
+	    return 0;
+	}
+	elsif ($error{'code'} == 401) { # Unauthorized
+	    $no_retry && do {
+		print STDERR "No 2nd retry\n" if $debug;
+		return 0;
+	    };
+	    $header{'www-authenticate'} =~ /^(\S+)\s+(.*)$/ || do {
+		print STDERR "Wrong header www-authenticate\n" if $debug;
+		return 0;
+	    };
+	    my %auth;
+	    $auth{'type'} = $1;
+	    $auth{'args'} = $2;
+	    $auth{'type'} ne 'Basic' && do {
+		print STDERR "Unsupported auth type $auth{type}\n" if $debug;
+		return 0;
+	    };
+	    (!defined($user) || !defined($pw)) && do {
+		print STDERR "User and/or password not defined\n" if $debug;
+		return 0;
+	    };
+	    $saveargs{'header'} =
+		"Authorization: $auth{type} " . &uuencode("$user:$pw");
+	    $saveargs{'no-retry'} = 1;
+	    my(%res) = &get(%saveargs);
+	    $content = $res{'content'};
+	    $error{'code'} = $res{'error'};
+	    $header{'last-modified'} = $res{'last-modified'};
+	    return 0;
+	}
+	elsif ($error{code} != 200) { # not OK
+	    return 0;
+	}
+	1;
+    };
+
+    if ($tk_widget) {
+	eval q{ alarm 0 };
+	my $timeout = 10;
+	my $can_alarm = $@ eq '';
+	$$waitref = 0;
+	$tk_widget->fileevent
+	    ($sock, 'readable', sub {
+		 if ($can_alarm) {
+		     local $SIG{ALRM} = sub { die "Timeout" };
+		     alarm($timeout);
+		 }
+		 if (sysread($sock, $buffer, 1024, length($buffer)) == 0) {
+		     alarm(0) if ($can_alarm);
+		     $$waitref = 1;
+		     return;
+		 }
+		 alarm(0) if ($can_alarm);
+		 if ($stage == 0) {
+		     while ($buffer =~ s/(.*?\012)(.*)/$2/) {
+			 $_ = $1;
+			 if (!$parse_header_line->()) {
+			     $stage = 1;
+			     if (!$content_follows->()) {
+				 $$waitref = 1;
+				 return;
+			     }
+			     $content .= $buffer;
+			     $buffer = "";
+			     last;
+			 }
+		     }
+		 } else {
+		     $content .= $buffer;
+		     $buffer = "";
+		 }
+	     });
+	$tk_widget->waitVariable($waitref);
+	$tk_widget->fileevent($sock, 'readable', '');
+    } else {
+	local($/) = "\012";
+	while (<$sock>) {
+	    last if !$parse_header_line->();
+	}
+	if ($content_follows->()) {
+	    undef $/;		# Rest der Datei in einem Schwung lesen
+	    $content = <$sock>;
+	}
+    }
+
+    print "<<<Receive\n" if $debug;
+    print STDERR "read ", length($content), " bytes\n" if $debug;
+
+    close($sock);
+
+    if (defined $header{'content-encoding'} and
+	$header{'content-encoding'} =~ /^x-(gzip|compress)/) {
+	# gzip und compress dekomprimieren --- Holzhammermethode
+	open(OUT, ">/tmp/zcat.$$") || croak "Can't open temp file";
+	print OUT $content;
+	close(OUT);
+
+	local($/) = undef;
+	open(IN, "zcat /tmp/zcat.$$ |") || croak "Can't uncompress";
+	$content = <IN>;
+	close(IN);
+
+	unlink "/tmp/zcat.$$";
+    }
+
+    ('content'       => $content,
+     'error'         => $error{code},
+     'last-modified' => $header{'last-modified'});
+}
+
+
+# Öffnet einen Socket
+# Argumente sind Filedescriptor, Hostname und Port
+# gibt undef zurück, wenn kein Socket geöffnet werden konnte
+sub socket {
+    my($conn, $host, $port) = @_;
+    my($sockaddr, $name, $aliases, $proto, $type, $len,
+       $thataddr, $this, $that, $dummy, $old);
+
+    my $AF_INET = &AF_INET;
+    my $SOCK_STREAM = &SOCK_STREAM;
+
+    $sockaddr = 'S n a4 x8';
+    ($name, $aliases, $proto) = getprotobyname('tcp');
+    if (int($port) ne $port) {
+	($name, $aliases, $port, $proto) = getservbyname($port, $dummy);
+    }
+    ($name, $aliases, $type, $len, $thataddr) = gethostbyname($host);
+    croak("Can't get host by name: $host") if (!defined $thataddr);
+    $this = pack($sockaddr, $AF_INET, 0);
+    $that = pack($sockaddr, $AF_INET, $port, $thataddr);
+    # Make the socket filehandle.
+    socket($conn, $AF_INET, $SOCK_STREAM, $proto) ||
+	croak "socket: $!";
+    # Give the socket an address.
+    bind($conn, $this) || croak "bind: $!";
+    # Call up the server.
+    connect($conn, $that) || croak "Couldn't connect to $name $port\n$!\n";
+    # Set socket to be command buffered.
+    $old = select; select($conn); $| = 1; select($old);
+    1;
+}
+
+
+# konvertiert das angegebene Datum (ctime oder RFC822) zu RFC850
+sub rfc850_date {
+    my($date) = @_;
+
+    if ($date =~
+	/(\S+)\s+(\S+)\s+(\d+)\s+(\d+):(\d+):(\d+)\s+([^\d]+)?\s*(\d+)/) {
+	# ctime: wkday mon day hour:min:sec (tz) year
+	"$1, $3 $2 $8 $4:$5:$6 $7";
+    }
+    elsif ($date =~
+	   /(\S+)\s+(\d\d)-(\S\S\S)-(\d\d)\s+(\d+):(\d+):(\d+)\s+(\S+)/) {
+	# RFC 850: wkday day-mon-year hour:min:sec tz
+	my($year) = ($4 < 70 ? $4 + 2000 : $4 + 1900);
+	"$1, $2 $3 $year $5:$6:$7 $8";
+    }
+    else {
+	$date;
+    }
+}
+
+# aus HTTP::Date
+sub time2str
+{
+   my $time = shift;
+   $time = time unless defined $time;
+   my ($sec, $min, $hour, $mday, $mon, $year, $wday) = gmtime($time);
+   my @DoW = qw(Sun Mon Tue Wed Thu Fri Sat);
+   my @MoY = qw(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec);
+   sprintf("%s, %02d %s %04d %02d:%02d:%02d GMT",
+           $DoW[$wday],
+           $mday, $MoY[$mon], $year+1900,
+           $hour, $min, $sec);
+}
+
+# Kodierung der Authentifications-Daten
+sub uuencode {
+    my($in) = @_;
+    my(@out4, @in3, $out);
+    while($in ne '') {
+	@in3 = map(ord, split(//, substr($in, 0, 3)));
+	$in    = substr($in, 3);
+	$out4[0] =  $in3[0] >> 2;
+	$out4[1] = ($in3[0] & 3) << 4 |  ($in3[1] >> 4);
+	$out4[2] = ($in3[1] & 15) << 2 | ($in3[2] >> 6);
+	$out4[3] = ($in3[2] & 63);
+	$out .= join('', map {&six2pr($_)} @out4);
+    }
+    $out;
+}
+
+sub six2pr {
+    my($six) = @_;
+    return chr(ord('A') + $six)      if $six <= 25;
+    return chr(ord('a') - 26 + $six) if $six <= 51;
+    return chr(ord('0') - 52 + $six) if $six <= 61;
+    return '+'                       if $six == 62;
+    return '/'                       if $six == 63;
+    return chr(64);			# XXX ???
+}
+
+# partial URL parser
+# argument: URL, result: (hostname, path, port)
+sub parse_url {
+    my($urlstring) = @_;
+
+    my($host, $path, $port, $user, $pw);
+
+    if (eval {
+	local $SIG{'__DIE__'};
+	require URI::URL;
+	my($url) = new URI::URL $urlstring;
+	$host = $url->host;
+	$path = $url->full_path;
+	$port = $url->port;
+	eval {
+	    $user = $url->user;
+	    $pw   = $url->password;
+  	};
+  	if ($@ && $url->userinfo) {
+  	    ($user, $pw) = split(/:/, $url->userinfo);
+  	}
+	1;
+    }) {
+	return ($host, $path, $port, $user, $pw);
+    }
+
+    # ansonsten: kein URI::URL installiert
+    if ($urlstring !~ /(http):\/\/([^:\/]+):?(\d+)?(\/.*)/) {
+        die "Bad URL. Must be http://hostname(:port)?/path. Error occured at";
+    }
+    my $protocol;
+    ($protocol, $host, $port, $path) = ($1, $2, $3, $4);
+    $port = 80 if (!defined $port or $port eq ''); # standard www port
+
+    ($host, $path, $port, undef, undef);
+}
+
+sub is_in_path {
+    my($prog) = @_;
+    foreach (split(/:/, $ENV{PATH})) {
+	return $_ if -x "$_/$prog";
+    }
+    undef;
+}
+
+1;

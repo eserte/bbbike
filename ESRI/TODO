@@ -1,0 +1,15 @@
+TODO
+----
+
+* README is missing
+
+* documentation is missing
+
+* tests are missing
+
+* there are probably issues on big-endian machines (unpack("d", ...)
+  only handles native doubles, but it should handle little-endian IEEE (?)
+  doubles)
+
+* only Point, PolyLine, Polygon, and Null shapes are handled
+

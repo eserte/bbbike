@@ -1,0 +1,22 @@
+README zu VirtArray
+
+Dieses Modul implementiert in Dateien befindliche Arrays.
+
+Leider ist VirtArray nicht so schnell wie normale Array-Aufrufe. Der
+Overhead eines Funktionsaufrufs ist anscheinend größer als ein
+normaler Array-Fetch-Aufruf. Aber in puncto Speicherverbrauch ist
+VirtArray dank mmap unschlagbar. Dieses Modul dürfte also für Rechner
+mit wenig physikalischen RAM einen Geschwindigkeitsvorteil bringen.
+
+INSTALLATION
+
+        perl Makefile.PL
+        make install
+
+Die Dateien werden in einem Unterverzeichnis des BBBike-Verzeichnisses
+installiert.
+
+TODO
+
+- reine perl-Version
+- andere Architekturen (mmap abfragen)

@@ -1,0 +1,2198 @@
+=head1 NAME
+
+bbbike - Informationssystem fE<uuml>r Radfahrer in Berlin und Brandenburg
+
+=head1 SYNOPSIS
+
+  bbbike [options]
+
+=head1 BESCHREIBUNG
+
+B<BBBike> ist ein Informationssystem fE<uuml>r Radfahrer in Berlin und
+Brandenburg. Mit dem Programm kE<ouml>nnen Routen, optimiert fE<uuml>r
+Radfahrer, automatisch gesucht oder manuell erstellt werden. Bei der
+automatischen Suche wird die kE<uuml>rzeste Strecke zwischen zwei
+angegebenen Punkten gesucht. Bei der manuellen Routenerstellung
+kE<ouml>nnen abschnittsweise Zwischenpunkte eingegeben werden und zum
+Schluss die GesamtlE<auml>nge abgelesen werden.
+
+Eine einfache WWW-Version kann man unter der Adresse
+L<http://www.bbbike.de> finden.
+
+Wenn eine Verbindung zum Internet existiert, kann B<BBBike> die
+aktuellen Wetterdaten von der FU Berlin (Dahlem) bzw. vom DWD Berlin
+(Tempelhof) fE<uuml>r die WindstE<auml>rke und -richtung auswerten.
+Diese Daten können bei der Berechnung der Fahrzeit und Leistung
+verwendet werden.
+
+Ein Teil von B<BBBike> ist das perl-Modul L<BikePower|BikePower>. Mit
+diesem Modul kann (wie beim ursprE<uuml>nglichen
+B<bike_power>-Programm von Ken Roberts - roberts@cs.columbia.edu )
+anhand von Daten wie GefE<auml>lle, Wind, Rollwiderstand der Reifen,
+Luftwiderstand, Masse von Rad und Fahrer die Leistung ermittelt
+werden.
+
+B<BBBike> liefert unter anderem die Antwort auf folgende Fragen:
+
+=over 4
+
+=item *
+
+Wie lang ist die Strecke von A nach B?
+
+=item *
+
+Wie schnell komme ich von A nach B, wenn ich durchschnittlich 15 km/h 
+schnell fahre?
+
+=item *
+
+Wie lange brauche ich von A nach B, wenn ich mit 100 Watt Leistung
+fahre, mit BerE<uuml>cksichtigung des aktuellen Windes und von Steigungen
+auf der Strecke?
+
+=item *
+
+Auf welchen StraE<szlig>en fahre ich, wenn ich von A nach B kommen will?
+
+=item *
+
+Wo habe ich Gegenwind- und RE<uuml>ckenwindstrecken?
+
+=item *
+
+Wo gibt es Steigungen und GefE<auml>lle?
+
+=item *
+
+Kann ich HauptstraE<szlig>en und/oder Kopfsteinpflasterstrecken auf
+meiner Strecke vermeiden?
+
+=back
+
+=head2 AUTOMATISCHE SUCHE
+
+Start- und Zielpunkt einer Route setzt man, indem man mit der linken
+Maustaste auf eine StraE<szlig>e klickt. Nach dem Setzen des
+Zielpunktes berechnet das Programm die kE<uuml>rzeste Route und zeigt
+sie an. Danach kann die Route verlE<auml>ngert werden. Soll eine neue
+Route (mit neuem Start- und Zielpunkt) berechnet werden, kann die alte
+mit der rechten Maustaste oder mit Klick auf das Icon B<Route
+zurE<uuml>cksetzen> gelE<ouml>scht werden. Mit der mittleren Maustaste
+oder mit der Backspace-Taste kann jeweils der letzte Punkt der Route
+gelE<ouml>scht werden. Mit der Delete-Taste (Entf) kann die Route bis
+zum letzten Via-Punkt gelE<ouml>scht werden.
+
+Wenn Winddaten existieren (automatisch aus dem WWW geholt oder manuell
+eingegeben), werden die RE<uuml>ckenwindstrecken grE<uuml>n und die
+Gegenwindstrecken rot dargestellt.
+
+=head2 MANUELLE ROUTENERSTELLUNG
+
+Die manuelle Routenerstellung wird zum Beispiel bei der Erstellung
+einer Tourplanung verwendet, bei der nicht das Suchen einer
+kE<uuml>rzesten Strecke im Vordergrund steht. Sie funktioniert
+prinzipiell wie die B<automatische Suche>, nur wird der Benutzer mehr
+Punkte eingeben, um die Route festzulegen. Mit Klick auf Alt-Button1
+oder Shift-Button1 (Klick auf die linke Maustaste und gleichzeitiges
+DrE<uuml>cken der Alt- oder Shift-Taste) kann ein beliebiger Punkt
+gekennzeichnet werden (also ein Punkt, der nicht auf einer
+StraE<szlig>e liegt).
+
+=head1 INFORMATIONSLEISTE
+
+Im oberen Bereich des Fensters befindet sich die Informationsleiste
+von BBBike.
+
+=over 4
+
+=item Ort/Bahnhof
+
+Anzeige des Ortes bzw. der Haltestelle unter dem Mauscursor. Die
+Angabe ist nur gE<uuml>ltig, wenn sie in schwarzer Schrift (und nicht
+in grauer) erscheint. Mit einem Klick wird die Ort-Auswahl angezeigt.
+
+=item StraE<szlig>e/Strecke
+
+Anzeige der StraE<szlig>e bzw. Bahnlinie unter dem Mauscursor. Auch
+hier ist die Angabe nur bei schwarzer Schrift gE<uuml>ltig. Mit einem
+Klick wird die StraE<szlig>en-Auswahl angezeigt.
+
+=item km
+
+LE<auml>nge der aktuellen Route in Kilometern. Mit der rechten Taste
+kann zwischen der Angabe in Kilometern und Metern umgeschaltet werden.
+
+=item %
+
+Angabe, wieviel % E<uuml>ber der Ideallinie (Luftlinie) die aktuelle
+Route liegt. Bei offensichtlichen Rundfahrten bleibt die Angabe leer.
+
+=item km/h
+
+Fahrzeit bei dieser durchschnittlichen Geschwindigkeit. Mit Klick auf
+das km/h-Feld kann eine andere Geschwindigkeit eingegeben werden. Mit
+Klick auf die Fahrzeit wird das Alarm-Fenster geE<ouml>ffnet. Mit der
+rechten Maustaste kann die jeweilige Geschwindigkeit als
+E<quot>ReferenzgeschwindigkeitE<quot> ausgewE<auml>hlt werden. Mit dem
+Ampel-Icon kann das Einbeziehen von Ampeln in die Fahrzeit
+ein-/ausgeschaltet werden.
+
+=item W
+
+Fahrzeit bei dieser durchschnittlichen Leistung, abhE<auml>ngig von
+der Windgeschwindigkeit und von Steigungen. Die Berechnung wird mit
+dem Modul L<BikePower|BikePower> durchgefE<uuml>hrt. Mit Klick auf das
+W-Feld kann eine andere Leistung (in Watt) eingegeben werden. Mit
+Klick auf die Fahrzeit wird das Alarm-Fenster geE<ouml>ffnet. Mit der
+rechten Maustaste kann die jeweilige Leistung als
+E<quot>ReferenzleistungE<quot> (intern wird diese auf eine
+Geschwindigkeit umberechnet) ausgewE<auml>hlt werden. Mit dem
+Ampel-Icon kann das Einbeziehen von Ampeln in die Fahrzeit
+ein-/ausgeschaltet werden.
+
+=item Datum der Winddaten
+
+Falls aktuelle Winddaten vorhanden sind, stehen in diesem Feld das
+jeweilige Datum und die Uhrzeit. Bei einem Mausklick wird versucht,
+die aktuellen Daten E<uuml>ber das WWW oder E<uuml>ber eine lokale
+Datenbank zu holen. Mit der rechten Maustaste erscheint ein MenE<uuml>
+mit folgenden Punkten:
+
+=over 4
+
+=item Wetterstation
+
+Hier kann ausgewE<auml>hlt werden, welche der Quellen im Internet
+(Meteorologisches Institut der FU oder Deutscher Wetterdienst)
+verwendet werden soll. Mit "aktuellste" werden alle Quellen nach den
+aktuellsten Angaben E<uuml>berprE<uuml>ft.
+
+=item Quelle
+
+Hier kann angegeben werden, ob die Wetterdaten E<uuml>ber das Internet
+direkt gezogen werden oder ob ein evtl. vorhandener lokaler Cache bzw
+eine lokale Datenbank vorgezogen wird.
+
+=item Auswahl aus Datenbank
+
+Falls eine lokale Datenbank vorhanden ist, kE<ouml>nnen hiermit
+Wetterdaten zu einem bestimmten Tag ausgewE<auml>hlt werden.
+
+=item Wind ignorieren
+
+Normalerweise wird - falls Winddaten vorhanden sind - die Route anhand
+der Windrichtung gefE<auml>rbt: RE<uuml>ckenwindabschnitte sind
+grE<uuml>n, Gegenwindabschnitte rot und Seitenwindabschnitte von
+hellgrE<uuml>n bis orange.
+
+Falls der MenE<uuml>punkt "Wind ignorieren" angeklickt ist, wird die
+Windgeschwindigkeit und -richtung bei der Route und bei der
+Zeitberechnung ignoriert. Die Route wird dann in einer einzelnen Farbe
+(blau) gezeichnet.
+
+=item Aktualisierung
+
+Hiermit kann das Zeichnen der Gegenwind- und RE<uuml>ckenwindstrecken
+der Route aktualisiert werden.
+
+=item automatische Aktualisierung
+
+Beim E<Auml>ndern der Wetterstation bzw. der Quelle werden automatisch
+die neuen Wetterdaten geholt.
+
+=item automatische Routenaktualisierung
+
+Beim E<Auml>ndern von Wetterdaten werden automatisch die Gegenwind-
+und RE<uuml>ckenwindstrecken der Route aktualisiert.
+
+=back
+
+=item Winddaten
+
+Hier wird, falls vorhanden, die aktuelle Windrichtung und die aktuelle
+Windgeschwindigkeit in m/s angezeigt. Mit einem Klick wird ein Fenster
+zur manuellen Eingabe der Windrichtung und -geschwindigkeit
+geE<ouml>ffnet. I<Anmerkung>: Zwar kann die maximale Windgeschwindigkeit
+eingegeben werden, das Programm verwendet aber nur die mittlere
+Windgeschwindigkeit fE<uuml>r die Zeitberechnungen.
+
+=item Temp
+
+Anzeige der aktuellen Temperatur. Die Temperatur wird sogar in die
+Leistungsberechnung einbezogen, die Auswirkungen darauf sind aber nur
+minimal.
+
+=back
+
+=head1 ICONS
+
+Unter manchen Icons befindet sich ein kleiner Pfeil, mit dem ein
+zugehE<ouml>riges Popup-MenE<uuml> aufgeklappt werden kann. Das
+MenE<uuml> kann auch mit Klick auf die rechte Maus-Taste,
+wE<auml>hrend sich der Maus-Cursor E<uuml>ber dem Icon befindet,
+aufgerufen werden.
+
+Hier folgt die Beschreibung der Icons von links nach rechts.
+
+=head2 KARTENELEMENTE
+
+Die erste Gruppe kontrolliert, welche Elemente auf der
+KartenflE<auml>che dargestellt werden sollen. In allen MenE<uuml>s
+dieser Icons kann mit B<oben>, B<normal> und B<unten> angegeben
+werden, ob die Elemente E<uuml>ber oder unter allen anderen Elementen
+gezeichnet werden sollen oder ob die normale Reihenfolge
+wiederhergestellt werden soll (die normale Reihenfolge lautet von
+unten nach oben: FlE<auml>chen, GewE<auml>sser, Inseln, Grenzen,
+U-Bahnen, Regionalbahnen, S-Bahnen, StraE<szlig>en,
+LandstraE<szlig>en, Orte). Daneben besitzt jedes MenE<uuml> einen
+Schalter zum Ein- und Ausschalten des Elements und einen Eintrag zum
+AuswE<auml>hlen einer bestimmten StraE<szlig>e oder eines bestimmten
+Ortes E<uuml>ber eine Listbox.
+
+=over 4
+
+=item StraE<szlig>en-Symbol
+
+=for html <img src="images/strasse.gif">
+
+Schaltet das Zeichnen von StraE<szlig>en in Berlin ein oder aus
+(Tastatur: C<s>).
+
+MenE<uuml>: Neben den StandardeintrE<auml>gen sind noch folgende
+EintrE<auml>ge vorhanden:
+
+=over 4
+
+=item Auswahl aus ...
+
+In diesem UntermenE<uuml> kann eine StraE<szlig>e aus alternativen
+Verzeichnissen ausgewE<auml>hlt werden:
+
+=over 4
+
+=item Komplette StraE<szlig>enliste
+
+In der StraE<szlig>en-Datenbank von B<BBBike> sind nur ca. 2300
+StraE<szlig>en erfasst. StraE<szlig>en, die hier nicht vorhanden sind,
+kE<ouml>nnen in der umfangreicheren PLZ-Datenbank ausgewE<auml>hlt
+werden. Allerdings wird bei der Auswahl einer nicht vorhandenen
+StraE<szlig>e nur der Postleitzahlbereich angezeigt.
+
+=item Telefonbuch-Datenbank (StraE<szlig>e)
+
+Wenn eine Telefonbuch-CD-ROM 1998/99 oder 1999/2000 fE<uuml>r Berlin
+vorhanden ist, kann diese Datenbank verwendet werden. Hier kann jede
+StraE<szlig>e mit Hausnummer angegeben werden; die Position wird recht
+exakt angzeigt.
+
+=item Telefonbuch-Datenbank (Name)
+
+Mit diesem Formular kann nach Namen im Telefonbuch-Verzeichnis gesucht
+werden. Es muss mindestens der Nachname angegeben werden. Mit dem
+Schalter B<Exakt> kann eingestellt werden, ob der Nachname exakt
+passen muss (ansonsten wird bei der Suche von "Wall" auch "Wallburg"
+etc. angezeigt). Nachdem mit B<Suchen> die Ergebnisliste erstellt
+wurde, kE<ouml>nnen mit B<E<lt>E<lt>> und B<E<gt>E<gt>> weitere
+passende DatensE<auml>tze eingesehen werden. Mit B<Alle> werden alle
+passenden DatensE<auml>tze auf der Karte markiert. Wenn ein
+C<dial>-Programm vorhanden ist, erscheint noch ein Button
+B<WE<auml>hlen> zum WE<auml>hlen der Telefonnummer.
+
+=back
+
+=item UntermenE<uuml> StraE<szlig>enkategorien
+
+In diesem UntermenE<uuml> kann das Zeichnen von HauptstraE<szlig>en,
+NebenstraE<szlig>en und fE<uuml>r Kfz gesperrte StraE<szlig>en ein-
+und ausgeschaltet werden.
+
+=item HE<ouml>henpunkte
+
+HE<ouml>henpunkte werden in die Karte eingezeichnet.
+
+=item Radwege
+
+Radwege werden gezeichnet. Benutzungspflichtige Radwege sind
+dunkelblau, freiwillig zu nutzende Radwege blau, Radstreifen
+grE<uuml>n und Busspuren orange. FE<uuml>r jede Richtung, in die ein
+Radweg existiert, wird auf der jeweiligen StraE<szlig>enseite ein
+Radweg gezeichnet, auch wenn es sich eigentlich um einen
+Zwei-Richtungs-Radweg auf der falschen StraE<szlig>enseite handelt.
+
+=item UntermenE<uuml> Radwegekategorien
+
+In diesem UntermenE<uuml> kann das Zeichnen von einigen
+Radwegekategorien ein- und ausgeschaltet werden.
+
+=item Einbahn-/gesperrte StraE<szlig>en
+
+Kennzeichnung von EinbahnstraE<szlig>en (blaue Pfeile, die in die
+StraE<szlig>enrichtung zeigen), gesperrten StraE<szlig>en (rote
+Kreuze) sowie Punkten, an denen das Fahrrad getragen werden muss (drei
+waagerechte Striche). TemporE<auml>re Sperrungen wegen Bauarbeiten
+werden mit einem Baustellen-Symbol gekennzeichnet.
+
+=item FE<auml>hren
+
+Zeichnen von FE<auml>hren. Um die FE<auml>hren auch in der Suche mit
+einzubeziehen, muss im MenE<uuml> von B<Route suchen> der Eintrag
+B<FE<auml>hren verwenden> aktiviert sein.
+
+=item Ampeln
+
+Ampeln werden in die Karte eingezeichnet. Bei der Auswahl einer Route
+wird die Anzahl der durchgefahrenen Ampeln mit einer ungefE<auml>hren
+VerzE<ouml>gerungszeit (15 Sekunden pro Ampel) im Feld rechts von den
+Icons angezeigt.
+
+Reine FuE<szlig>gE<auml>ngerampeln sind in der Datenbasis nur erfasst,
+wenn sie die Fahrt wesentlich verzE<ouml>gern wE<uuml>rden (hohe
+FuE<szlig>gE<auml>ngerfrequenz oder stark befahrene QuerstraE<szlig>e
+direkt vor oder hinter der Ampeln). Beschrankte
+BahnE<uuml>bergE<auml>nge sind ebenfalls unter den Ampeln zu finden.
+
+=item Outline zeichnen
+
+Die StraE<szlig>en werden mit Umrandung gezeichnet.
+
+=item StraE<szlig>ennamen
+
+Die StraE<szlig>en werden mit StraE<szlig>ennamen gezeichnet. Ist
+wesentlich langsamer, besonders wenn B<Font rotation> eingeschaltet
+ist.
+
+=item StraE<szlig>enqualitE<auml>t
+
+Die QualitE<auml>t des StraE<szlig>enbelags wird gezeichnet. Die
+Kategorisierung siegt wie folgt aus:
+
+=over 8
+
+=item dunkelgrE<uuml>n
+
+Sehr guter Belag (meist Asphalt). Da die meisten StraE<szlig>en einen
+guten Belag haben, wurde auf eine Erfassung dieser Kategorie meist
+verzichtet.
+
+=item hellgrE<uuml>n
+
+Guter Belag, z.B. gutes Kopfsteinpflaster oder etwas schlechterer
+Asphalt.
+
+=item orange
+
+ME<auml>E<szlig>iger Belag, z.B. die meisten
+KopfsteinpflasterstraE<szlig>en.
+
+=item rot
+
+Schlechter Belag (schlechtes Kopfsteinpflaster, unbefestigte Wege).
+
+=back
+
+=item QualitE<auml>tskategorien
+
+Hiermit kann das Zeichnen der QualitE<auml>tskategorien
+eingeschrE<auml>nkt werden.
+
+=item Sonstige Behinderungen
+
+Zeichnen von sonstigen Behinderungen (z.B.
+FuE<szlig>gE<auml>ngerverkehr).
+
+=back
+
+=item LandstraE<szlig>en-Symbol
+
+=for html <img src="images/landstrasse.gif">
+
+Schaltet das Zeichnen von LandstraE<szlig>en in Berlins Umgebung ein
+oder aus (Tastatur: C<l>).
+
+MenE<uuml>: Neben den StandardeintrE<auml>gen sind noch folgende
+EintrE<auml>ge vorhanden:
+
+=over 4
+
+=item Outline zeichnen
+
+Gleiche Funktion wie beim StraE<szlig>en-Symbol.
+
+=item LandstraE<szlig>en jwd zeichnen
+
+Zeichnet auch LandstraE<szlig>en auE<szlig>erhalb Brandenburgs.
+
+=item StraE<szlig>enqualitE<auml>t
+
+Gleiche Funktion wie beim StraE<szlig>en-Symbol.
+
+=item Sonstige Behinderungen
+
+Gleiche Funktion wie beim StraE<szlig>en-Symbol.
+
+=back
+
+=item Ort-Symbol
+
+=for html <img src="images/ort.gif">
+
+Schaltet das Zeichnen von Orten in Brandenburg ein oder aus (Tastatur:
+C<o>).
+
+MenE<uuml>: Neben den StandardeintrE<auml>gen sind noch folgende
+EintrE<auml>ge vorhanden:
+
+=over 4
+
+=item Ortsnamen
+
+Anzeige von B<Ortsnamen> ermE<ouml>glichen oder unterbinden.
+
+=item Kategorie
+
+In diesem UntermenE<uuml> kann das Zeichnen von kleineren Orten
+unterdrE<uuml>ckt werden. Beispielorte fE<uuml>r die Kategorisierung:
+
+	6	Berlin
+	5	Potsdam, Brandenburg
+	4	Werder, Kyritz
+	3	Ketzin, Lindow
+	2	Caputh, Göttin
+	1	Krummensee
+	0	Ortsteile wie Wilhelmsdorf, Döthen,
+		Petzow
+
+Mit E<quot>AlleE<quot> werden alle Orte gezeichnet. Mit
+E<quot>AutoE<quot> werden die Orte abhE<auml>ngig von der Zoom-Stufe
+gezeichnet.
+
+=item SchriftgrE<ouml>E<szlig>e
+
+UntermenE<uuml> zum Einstellen einer anderen SchriftgrE<ouml>E<szlig>e
+fE<uuml>r die Anzeige der Ortsnamen. Der Bereich geht von "klein" bis
+"sehr groE<szlig>".
+
+=item E<Uuml>berlappungen vermeiden
+
+Hier wird mit einem sehr einfachen Algorithmus versucht, die
+Ortsbeschriftungen so zu setzen, dass sie sich nicht einander
+E<uuml>berlappen. Per Voreinstellung ist diese Option ausgeschaltet,
+weil das Zeichnen der Orte dadurch erheblich verlangsamt wird.
+Sinnvoll ist diese Option, wenn z.B. die Karte als Bilddatei
+abgespeichert werden soll.
+
+=back
+
+=item U-Bahn-Symbol
+
+=for html <img src="images/ubahn.gif">
+
+Schaltet das Zeichnen von U-Bahnlinien ein oder aus (Tastatur: C<u>).
+
+MenE<uuml>: ZusE<auml>tzlich zum Ein-/Ausschalten und AuswE<auml>hlen
+der U-Bahnlinien kE<ouml>nnen auch U-BahnhE<ouml>fe ein-/ausgeschaltet
+und ausgewE<auml>hlt werden.
+
+Wenn der Punkt B<U-Bhf-Namen> angeklickt wird, werden die jeweiligen
+Namen zum U-Bahnhof auf der Karte eingezeichnet. Mit
+B<E<Uuml>berlappungen vermeiden> wird versucht, die Namen so zu
+setzen, dass sie sich nicht einander E<uuml>berlappen. Siehe auch die
+Bemerkung zu B<E<Uuml>berlappungen vermeiden> im MenE<uuml>punkt
+B<Ort-Symbol>.
+
+Mit B<VBB-Zone A>, B<VBB-Zone B> und B<in Bau> kann das U-Bahn-Netz
+zusE<auml>tzlich auf die jeweilige Zone eingeschrE<auml>nkt werden.
+
+=item S-Bahn-Symbol
+
+=for html <img src="images/sbahn.gif">
+
+Schaltet das Zeichnen von S-Bahnlinien ein oder aus (Tastatur: C<b>).
+
+MenE<uuml>: Wie beim U-Bahn-Symbol.
+
+=item RB-Symbol
+
+=for html <img src="images/rbahn.gif">
+
+Schaltet das Zeichnen von Regionalbahnlinien ein oder aus (Tastatur: C<r>).
+
+MenE<uuml>: Wie beim U-Bahn-Symbol.
+
+=item GewE<auml>sser-Symbol
+
+=for html <img src="images/wasser.gif">
+
+Schaltet das Zeichnen von FlE<uuml>ssen, KanE<auml>len und Seen ein
+oder aus (Tastatur: C<w>).
+
+MenE<uuml>: Neben den StandardeintrE<auml>gen sind noch folgende
+EintrE<auml>ge vorhanden:
+
+=over 4
+
+=item Outline zeichnen
+
+Wie beim gleichnamigen Eintrag beim StraE<szlig>en-Symbol.
+
+=item Namen der GewE<auml>sser
+
+Schaltet das Zeichnen der GewE<auml>ssernamen ein oder aus.
+
+=item GewE<auml>sser im Umland zeichnen
+
+Schaltet das Zeichnen der GewE<auml>sser im Umland von Berlin ein oder aus.
+
+=item GewE<auml>sser in der Stadt zeichnen
+
+Schaltet das Zeichnen der GewE<auml>sser in Berlin ein oder aus.
+
+=back
+
+=item FlE<auml>chen-Symbol
+
+=for html <img src="images/flaechen.gif">
+
+Schaltet das Zeichnen von sonstigen FlE<auml>chen (Parks,
+WE<auml>lder, FlughE<auml>fen) ein oder aus (Tastatur: C<f>).
+
+MenE<uuml>: Neben den StandardeintrE<auml>gen sind noch folgende
+EintrE<auml>ge vorhanden:
+
+=over 4
+
+=item PLZ-Gebiete
+
+Schaltet das Zeichnen der Berliner Postleitzahlgrenzen ein oder aus.
+Die PLZ-Datenbank ist noch im Aufbau.
+
+=item PLZ-Gebiet auswE<auml>hlen
+
+Zeigt eine Listbox zum AuswE<auml>hlen einer Berliner Postleitzahl an.
+
+=item Grenzen von Berlin
+
+Schaltet das Zeichnen der Berliner Stadtgrenze ein oder aus.
+
+=back
+
+=item Kneipen-Symbol
+
+=for html <img src="images/glas.gif">
+
+Schaltet das Zeichnen von Kneipen ein oder aus. Im MenE<uuml> gibt es
+die weiteren Punkte:
+
+=over 4
+
+=item Kneipen
+
+Zeichnet genau wie die SchaltflE<auml>che Kneipen in Berlin.
+
+=item Kneipe auswE<auml>hlen
+
+Zeigt eine Listbox zum AuswE<auml>hlen einer Kneipe an.
+
+=item Restaturants
+
+Zeichnet Restaurants in Berlin.
+
+=item Restaurant auswE<auml>hlen
+
+Zeigt eine Listbox zum AuswE<auml>hlen eines Restaurants an.
+
+=item Kinos
+
+Zeichnet Kinos in Berlin.
+
+=item Kino auswE<auml>hlen
+
+Zeigt eine Listbox zum AuswE<auml>hlen eines Kinos an.
+
+=item PersE<ouml>nliche Orte
+
+Zeigt eine Listbox mit persE<ouml>nlich eingetragenen Orten ein. Die
+Punkte mE<uuml>ssen im C<bbd>-Format in der Datei
+C<$HOME/.bbbike/personal.bbd> vorhanden sein.
+
+=item SehenswE<uuml>rdigkeiten
+
+Schaltet das Zeichnen von SehenswE<uuml>rdigkeiten und anderen
+markanten GebE<auml>uden in Berlin und Brandenburg ein oder aus.
+
+=item SehenswE<uuml>rdigkeit auswE<auml>hlen
+
+Zeigt eine Listbox zum AuswE<auml>hlen einer SehenswE<uuml>rdigkeit
+an.
+
+=item Obst
+
+Zeichnet Stellen mit E<ouml>ffentlich zugE<auml>nglichen
+ObstbE<auml>umen.
+
+=back
+
+=back
+
+=head2 NAVIGATION
+
+In der nE<auml>chsten Gruppe sind die Navigations-Icons:
+
+=over 4
+
+=item VergrE<ouml>E<szlig>ern-Symbol (+)
+
+Es wird ein kleinerer Ausschnitt angezeigt (mehr Details). Tastatur:
+C<+>. 
+
+=item Verkleinern-Symbol (-)
+
+Es wird ein grE<ouml>E<szlig>erer Ausschnitt angezeigt (weniger
+Details). Tastatur: C<->.
+
+=item MaE<szlig>stab-Feld
+
+Dieses Feld zeigt den aktuellen MaE<szlig>stab, bezogen auf den
+Bildschirm, an. Die Zahl stimmt nur, wenn die DPI-Zahl des X-Servers
+korrekt eingetragen wurde (beim X-Server von XFree86 kann die DPI-Zahl
+mit der Option I<-dpi> verE<auml>ndert werden). Mit Klick auf das Feld
+kann ein anderer MaE<szlig>stab angegeben werden und so der
+Kartenausschnit vergrE<ouml>E<szlig>ert oder verkleinert werden.
+
+=item E<Uuml>bersichtskarten-Symbol
+
+=for html <img src="images/berlin_overview_small.gif">
+
+Mit diesem Symbol kann die E<Uuml>bersichtskarte von Berlin und
+Brandenburg ein- und ausgeschaltet werden. In der
+E<Uuml>bersichtskarte wird der aktuelle Ausschnitt durch ein schwarzes
+Rechteck gekennzeichnet. Durch Verschieben dieses Rechtecks wird auch
+der aktuelle Ausschnitt verschoben.
+
+=item Windrosen-Symbol
+
+=for html <img src="images/windrose.gif">
+
+Mit dem Windrosen-Symbol kann man die Karte in die vier
+Himmelsrichtungen scrollen. Mit der linken Maustaste sind dabei die
+Schritte kleiner, mit der mittleren grE<ouml>E<szlig>er. Wenn man
+lE<auml>nger auf die Mitte der Windrose klickt (ca. 2 Sekunden), wird
+wieder zurE<uuml>ck auf die Mitte zentriert. Scrollen kann man auch
+mit den Scrollbars oder mit den Tasten I<Pos1> (links), I<Ende>
+(rechts), I<Bild nach oben> und I<Bild nach unten> (jeweils immer
+seitenweise) bzw. mit den Cursortasten (feinere Abstufung).
+
+=back
+
+=head2 ROUTEN
+
+Die folgenden Icons kontrollieren die Suche von Routen:
+
+=over 4
+
+=item Route suchen
+
+=for html <img src="images/search.gif">
+
+Mit diesem Schalter kann man den Suchmodus ein- oder ausschalten.
+Normalerweise ist dieser Schalter nicht aktiviert und es ist immer der
+Suchmodus eingeschaltet (kann mit der Kommandozeilen-Option
+I<-advanced> geE<auml>ndert werden).
+
+MenE<uuml>:
+
+=over 4
+
+=item Route lE<ouml>schen
+
+Die aktuelle Route wird gelE<ouml>scht. Gleiche Funktion wie ein Klick auf
+die rechte Maustaste oder DrE<uuml>cken auf C<Shift-Backspace>.
+
+Der letzte Punkt der Route wird mit der Backspace-Taste gelE<ouml>scht.
+
+=item Route wiederherstellen (Undo)
+
+Die zuletzt gelE<ouml>schte Route wird wiederhergestellt.
+
+=item Route aktualisieren
+
+Die Route wird in Bezug auf Wind und Leistung aktualisiert (sollte nicht
+notwendig sein).
+
+=item gesperrte StraE<szlig>en beachten
+
+Wenn dieser Schalter eingeschaltet ist, werden gesperrte
+StraE<szlig>en und EinbahnstraE<szlig>en nicht in die Suche
+einbezogen.
+
+=item Tragen vermeiden
+
+Stellen, an denen das Rad getragen werden muss, werden nicht in die
+Suche einbezogen.
+
+=item FE<auml>hren verwenden
+
+FE<auml>hren werden bei der Suche berE<uuml>cksichtigt.
+
+=item Steigungen berechnen
+
+HE<ouml>henangaben werden eingelesen und bei der Berechnung der
+Leistung werden die HE<ouml>henangaben fE<uuml>r Steigungen und
+GefE<auml>lle verwendet.
+
+=item Ampel-Optimierung
+
+Bei der Suche einer Route wird fE<uuml>r jede Ampel 25m, 50m oder 100m
+auf die entsprechende Strecke aufgeschlagen (nur fE<uuml>r den
+Suchalgorithmus). AbhE<auml>ngig von der Geschwindigkeit bekommt man
+fE<uuml>r die VerzE<ouml>gerungszeit pro Ampel folgende Tabelle:
+
+=for text
+		15km/h	20km/h	25km/h
+	25m	6s	5s	4s
+	50m	12s	9s	7s
+	100m	24s	18s	14s
+
+=for html
+<table border=1>
+<th><th>15km/h	<th>20km/h	<th>25km/h
+<tr><td>25m	<td>6s		<td>5s		<td>4s
+<tr><td>50m	<td>12s		<td>9s		<td>7s
+<tr><td>100m	<td>24s		<td>18s		<td>14s
+</table>
+
+Zu lesen ist die Tabelle wie folgt: wenn man mit 25km/h unterwegs ist
+und als Aufschlag 100m gewE<auml>hlt hat, wE<uuml>rde dies einer
+VerzE<ouml>gerung von durchschnittlich 14s pro Ampel entsprechen.
+
+=item Steigungen/GefE<auml>lle zeigen
+
+Auf der Route liegende GefE<auml>lle oder Steigungen E<uuml>ber 1%
+werden angezeigt.
+
+=item Startflagge
+
+Schaltet das Zeichnen einer Startflagge am Routenanfangspunkt ein oder
+aus.
+
+=item Zielflagge
+
+Schaltet das Zeichnen einer Zielflagge am Routenendpunkt ein oder aus.
+
+=back
+
+=item Beschreibung der aktuellen Route
+
+=for html <img src="images/strlist.gif">
+
+Es wird eine Routenbeschreibung in der folgenden Form angezeigt:
+
+=for text
+ LE<auml>nge        Gesamt   Richtung                StraE<szlig>e
+ ----------------------------------------------------------------
+ nach 0.15 km (0.2 km)                         Franklinstr.
+ nach 0.03 km (0.2 km)                         Marchstr.
+ nach 0.48 km (0.7 km) rechts (80°) auf den    Ernst-Reuter-Platz
+ nach 0.28 km (0.9 km) halbrechts (30°) in die Hardenbergstr.
+ nach 0.09 km (1.0 km) angekommen!
+
+=for html
+<table border=1>
+<th>L&auml;nge<th>Gesamt	<th>Richtung	<th>Stra&szlig;e
+<tr><td>nach 0.15 km	<td>(0.2 km) <td> &nbsp;  	          <td>Franklinstr.
+<tr><td>nach 0.03 km	<td>(0.2 km) <td> &nbsp;                  <td> Marchstr.
+<tr><td>nach 0.48 km	<td>(0.7 km) <td> rechts (80°) auf den    <td> Ernst-Reuter-Platz
+<tr><td>nach 0.28 km	<td>(0.9 km) <td> halbrechts (30°) in die <td> Hardenbergstr.
+<tr><td>nach 0.09 km	<td>(1.0 km) <td> angekommen!             <td> &nbsp;
+</table>
+<p>
+
+
+Diese Beschreibung kann in eine Datei geschrieben, ausgedruckt oder
+als Mail verschickt werden.
+
+B<Routenbeschreibung in den Palm laden>
+
+Folgendes gilt nur fE<uuml>r Unix-E<auml>hnliche Betriebssysteme.
+
+In C<$PATH> muss sich mindestens eins der folgenden Programme
+befinden: C<iSiloBSD>, C<iSiloLinux> oder C<pilot_makedoc>.
+
+Die Sourcen zu C<pilot_makedoc> bekommt man z.B. bei
+
+=over 4
+
+=item *
+
+L<ftp://ftp.forth.org/pub/PalmOS/>
+
+=item *
+
+L<ftp://ftp.cs.tu-berlin.de/pub/palmtops/pilot/>
+
+=item *
+
+L<ftp://ftp.cso.uiuc.edu/pub/systems/PalmOS/>
+
+=back
+
+C<iSilo> ist ein anderes Format, das einen speziellen Palm-Viewer
+braucht, der allerdings HypertextfE<auml>hig ist. Die Binaries für die
+Umwandlung findet man unter L<ftp://ftp.iSilo.com/pub/>. Hinweise zum
+PalmViewer befinden sich auf der L<Homepage von iSilo|http://www.iSilo.com/>.
+
+Die E<Uuml>bertragung erfolgt automatisch, wenn C<pilot-xfer> installiert
+ist, welches man auf folgenden FTP-Servern bekommt:
+
+=over 4
+
+=item *
+
+L<ftp://ryeham.ee.ryerson.ca/pub/PalmOS>
+
+=item *
+
+L<ftp://ftp.forth.org/pub/PalmOS/ryerson/>
+
+=back
+
+=item Route zurE<uuml>cksetzen
+
+=for html <img src="images/cross.gif">
+
+Mit Klick auf dieses Icon wird die aktuelle Route gelE<ouml>scht.
+
+=item RE<uuml>ckweg-Symbol
+
+=for html <img src="images/rueckweg.gif">
+
+Start- und Zielpunkt der aktuellen Route werden vertauscht.
+
+=item Koordinaten-Symbol
+
+=for html <img src="images/koord.gif">
+
+Dieses MenE<uuml> ist normalerweise nicht aktiviert und wird nur zum
+Editieren der Koordinatendateien benE<ouml>tigt.
+
+=item Info-Symbol
+
+=for html <img src="images/info.gif">
+
+Hiermit kann im Informationsmodus umgeschaltet werden. Beim Klick auf
+Kartenelemente wird jeweils ein Informationsfenster geE<ouml>ffnet.
+Diese Funktion kann nur intern verwendet werden.
+
+=item Salesman-Symbol
+
+=for html <img src="images/salesman.gif">
+
+In diesem Modus kann die kE<uuml>rzeste Rundreise berechnet werden.
+Dazu klickt man erst einmal in diesen Modus und wE<auml>hlt alle
+gewE<uuml>nschten Stationen der Rundreise an. Der erste und letzte
+Punkt werden fest als Start- und Zielpunkt markiert; alle anderen
+Punkte werden in ihrer Reihenfolge frei gewE<auml>hlt. Wenn man alle
+Stationen ausgewE<auml>hlt hat, muss man noch einmal auf das
+Salesman-Symbol klicken, um die Berechnung zu starten. Es wird darauf
+hingewiesen, dass bei einer groE<szlig>en Anzahl von Stationen (mehr
+als acht) die Berechnung B<sehr> lange dauert (der geneigte Leser kann
+sich die Problematik in der Literatur zum Thema "Problem des
+Handlungsreisenden" bzw. "Traveling salesman problem" aneignen). Wenn
+die Berechnung zu lange dauern wE<uuml>rde, kann sie mit der Esc-Taste
+abgebrochen werden (wenn die Berechnung bereits mehr als zu 50%
+durchgefE<uuml>hrt wurde, bekommt man dann noch ein Ergebnis, auch
+wenn es nicht das optimalste ist).
+
+=back
+
+=head2 DATEIOPERATIONEN
+
+=over 4
+
+=item E<Ouml>ffnen-Symbol
+
+=for html <img src="images/open.gif">
+
+Hiermit kann eine bereits gespeicherte Route wiedergeladen werden.
+Eine Liste der zuletzt geladenen Routen kann man mit Klick auf die
+rechte Maustaste erhalten.
+
+ZusE<auml>tzlich zum bbbike-Format kann auch eine Track-Datei von
+GPS-NavigationsgerE<auml>ten eingeladen werden. Die Datei muss aus
+Zeilen im folgenden Format bestehen:
+
+
+  TRK N52 29.072278 E13 15.879650 1998/06/21-08:47:20 1
+
+=item Speichern-Symbol
+
+=for html <img src="images/save.gif">
+
+Hiermit kann die aktuelle Route gespeichert werden.
+
+MenE<uuml>:
+
+Mit den MenE<uuml>punkten kann man den aktuellen Ausschnitt der Karte
+als Bilddatei im B<Postscript>-, B<GIF>-, B<JPEG>- oder B<PPM>-Format
+speichern speichern. GIF-Dateien sind in der Regel am kleinsten.
+Postscript-Dateien sind vektororientiert und kE<ouml>nnen somit
+beliebig ohne QualitE<auml>tsverluste vergrE<ouml>E<szlig>ert werden.
+Das Erzeugen von JPEG- und PPM-Dateien ist normalerweise nicht
+empfehlenswert.
+
+Folgende Programme mE<uuml>ssen fE<uuml>r die verschiedenen Formate
+installiert sein:
+
+
+             |Postscript|  GIF  |  JPEG  |  PPM  |
+  -----------+----------+-------+--------+-------+
+  Ghostscript|    -     |   x   |    x   |   x   |
+  pnmrotate  |    -     |   o   |    o   |   o   |
+  ppmtogif   |    -     |   x   |    -   |   -   |
+  cjpeg      |    -     |   -   |    x   |   -   |
+
+(x = erforderlich, o = optional, - = nicht erforderlich)
+
+Da der Postscript-Treiber, der fE<uuml>r jede Konvertierung aufgerufen
+wird, die Schriften sehr klein darstellt, sollte im Orte-MenE<uuml>
+der Punkt B<Sehr groE<szlig>e Schrift> gesetzt sein. Bessere
+Ergebnisse erhE<auml>lt man, wenn man die Option -usexwd (xwd als
+Screengrabber im Sonstiges-Teil des Optionseditors) einschaltet oder
+direkt mit einem Screengrabber (z.B. B<xwd> oder B<xv>) arbeitet.
+
+=item Drucken-Symbol
+
+=for html <img src="images/printer.gif">
+
+Ausdruck des angezeigten Kartenausschnitts. Der Ausdruck wird nicht
+direkt vorgenommen, sondern es wird eine Postscript-Datei erstellt und
+ein Postscript-Viewer (z.B. B<gv> oder B<ghostview>) aufgerufen, aus
+dem heraus gedruckt werden kann. Ist kein Postscript-Viewer vorhanden,
+wird in eine temporE<auml>re Datei geschrieben.
+
+MenE<uuml>:
+
+=over 4
+
+=item Farbe, Graustufen, Schwarz-WeiE<szlig>
+
+Diese Schalter kontrollieren die Farbausgabe des Drucks.
+
+=item Landscape, Portrait
+
+Diese Schalter geben an, ob im Landscape- oder im Portrait-Modus
+gedruckt werden soll. Im Portait-Modus erscheint die Karte verzerrt.
+
+=item auf A4 skalieren
+
+Wenn dieser Schalter aktiviert ist, wird die Karte so
+vergrE<ouml>E<szlig>ert, dass ein A4-Blatt vollkommen
+ausgefE<uuml>llt ist.
+
+=item Legende
+
+Eine Legende mit Nordpfeil wird mit ausgedruckt.
+
+=item Legende rechts statt links
+
+Die Position der Legende wird geE<auml>ndert.
+
+=back
+
+=back
+
+=head2 WEITERE ICONS
+
+=over 4
+
+=item Fahrrad-Symbol (Bikepower)
+
+=for html <img src="images/bicycle.gif">
+
+Aufruf des Bikepower-Moduls, z.B. zum Eintragen der persE<ouml>nlichen und
+Fahrrad-Daten. Siehe L<BikePower|BikePower>.
+
+=item Options-Symbol (O)
+
+Falls L<Tk::Getopt|Tk::Getopt> installiert ist, kann hiermit der
+Options-Editor aufgerufen werden.
+
+MenE<uuml>:
+
+=over 4
+
+=item Ausgabe sofort aktualisieren
+
+Einige Kommandos wie B<Outline zeichnen> oder B<StraE<szlig>ennamen>
+werden nicht sofort ausgefE<uuml>hrt, sondern beim nochmaligen
+AnwE<auml>hlen des jeweiligen Icons. Um die sofortige Aktualisierung
+zu erzwingen, kann dieser Schalter gesetzt werden.
+
+=item Netz sofort aktualisieren
+
+Hiermit wird die interne Darstellung des StraE<szlig>ennetzes
+aktualisiert.
+
+=item Alles aktualisieren
+
+Alle ausstehenden Kommandos werden ausgefE<uuml>hrt.
+
+=item gedrehte ZeichensE<auml>tze
+
+Beim Zeichnen von StraE<szlig>en- und GewE<auml>ssernamen werden
+gedrehte ZeichensE<auml>tze verwendet. Das Zeichnen wird dadurch
+verlangsamt, auE<szlig>erdem wird der X-Server zusE<auml>tzlich
+belastet.
+
+Gedrehte ZeichensE<auml>tze kE<ouml>nnen nicht gedruckt werden.
+
+=item Landscape
+
+Die Karte wird im "Landscape"-Modus angezeigt.
+
+=item Portrait
+
+Die Karte wird im "Portrait"-Modus angezeigt.
+
+=item Canvas balloon
+
+Einschalten eines Balloons (Tooltip-Hilfe) fE<uuml>r den
+Kartenbereich. Im UntermenE<uuml> kann zwischen B<kein> (kein
+Balloon), B<nur Route> (Balloon wird nur E<uuml>ber einer Route
+angezeigt) und B<E<uuml>berall> (Balloon wird E<uuml>ber allen
+Kartenelementen angezeigt) ausgewE<auml>hlt werden.
+
+=item Farben E<auml>ndern
+
+Mit diesem MenE<uuml>punkt kE<ouml>nnen die Farben von B<bbbike>
+geE<auml>ndert werden. Die E<Auml>nderungen sind nicht permanent.
+
+=item Schriftart E<auml>ndern
+
+Mit diesem MenE<uuml>punkt kann die Schriftart geE<auml>ndert werden.
+Die E<Auml>nderung ist nicht permanent.
+
+=item StE<auml>ndige Markierung
+
+Wenn dieser Punkt eingeschaltet ist, bleibt die Markierung nach einer
+Auswahl stehen, ansonsten blinkt die Markierung einige Male und wird
+dann gelE<ouml>scht.
+
+=item Markierung lE<ouml>schen
+
+Falls B<StE<auml>ndige Markierung> eingeschaltet ist, kann eine
+Markierung mit diesem MenE<uuml>punkt gelE<ouml>scht werden.
+
+=item Status nach STDERR
+
+Statusmeldungen werden nicht in der Statuszeile angezeigt, sondern
+nach stderr umgelenkt.
+
+=item Wortreich (verbose)
+
+Es werden zusE<auml>tzliche Meldungen nach stderr ausgegeben.
+
+=back
+
+=item Lautsprecher-Symbol
+
+=for html <img src="images/click.gif">
+
+Ein-/Ausschalten des zusE<auml>tzlichen Mausklicks.
+
+=item Hilfe-Symbol (?)
+
+Anzeige der Online-Dokumentation (E<uuml>ber L<Tk::Pod|Tk::Pod> oder
+einen WWW-Browser).
+
+MenE<uuml>:
+
+=over 4
+
+=item Legende
+
+Hiermit wird die Legende ein- und ausgeschaltet. In der Legende werden
+nur die gerade angezeigten Kartenelemente erklärt. Tastatur: C<F1>.
+
+=item Maushilfe
+
+Ein Fenster mit den wichtigsten Mausbefehlen wird angezeigt.
+
+=item Kontexthilfe
+
+Schaltet die Kontexthilfe ein.
+
+=item Netscape bbbike.html
+
+Zeigt die BBBike-Dokumentation in Netscape an.
+
+=item E<Uuml>ber...
+
+Zeigt die Version von BBBike, perl und Tk an.
+
+=item Busy-Zeiger zurE<uuml>cksetzen
+
+Es kann vorkommen, dass nach einem Fehler der Busy-Zeiger (Uhr
+oder Sandglas) nicht zurE<uuml>ckgesetzt wurde. Dies kann hiermit
+nachgeholt werden.
+
+=back
+
+=item Kontexthilfe-Symbol
+
+Mit der Kontexthilfe kann die Hilfe fE<uuml>r einen Button direkt
+angefordert werden.
+
+=item Ende-Symbol
+
+Hiermit wird B<BBBike> beendet. TemporE<auml>re Dateien werden
+gelE<ouml>scht und die Liste der zuletzt geE<ouml>ffnet Routen-Dateien
+in C<~/.bbbike/last> gespeichert. Tastatur: C<q> oder C<Ctrl-C>.
+
+=back
+
+=head1 OPTIONEN
+
+Folgende Kommandozeilenoptionen sind definiert:
+
+
+    Usage: ./bbbike [options] --[no]str --[no]landstr --[no]sbahn
+	--[no]sbahnhof --[no]ubahn --[no]ubahnhof --[no]rbahn --[no]rbahnhof
+	--[no]wasser --[no]wasserumland --[no]wasserstadt --[no]faehre
+	--[no]flaeche --[no]ort --[no]hs --[no]pp --outline --[no]ampel
+	--lsamaybe --[no]plothoehe --[no]showgrade --[no]strname --[no]ortname
+	--ortkategorie --[no]wassername --rbahnnetz --usbahnnetz
+	--faraway --fast --turbo --lowmem --[no]diplom --[no]mldbm --center
+	--centerc --edit --[no]qualitaetoptimierung --[no]qualitaetwerte
+	--[no]kategorieoptimierung --[no]kategoriewerte --[no]sperre
+	--[no]nichttragen --[no]ampeloptimierung --beschleunigung --[no]wind
+	--[no]bikepwr --resetpower --power --resetspeed --speed --[no]www
+	--[no]wwwmap --[no]wwwcache --cachedir --[no]wwwslow --proxy
+	--[no]fontrot --fontfamily --fixedfontfamily --fontheight --fontweight
+	--[no]balloon --[no]cballoon --cballoonwait --[no]contexthelp
+	--[no]smoothscroll --[no]followmouse --[no]dialog --mapcolor
+	--geometry --visual --scale --[no]overviewwasser --[no]flat
+	--[no]transient --[no]autoscroll --autoscrollspeed --[no]audio
+	--audiotype --coordout --printcmd --[no]gvreuse --[no]server
+	--[no]autosave --[no]stderr --[no]advanced --[no]public -v --version
+	-h
+
+(Auswahl aus den Optionen:)
+
+=over 4
+
+=item --center strasse
+
+Beim Starten wird auf die angegebene StraE<szlig>e zentriert.
+Beispiel: C<--center Dudenstr>
+
+=item --centerc koord
+
+Beim Starten wird auf die angegebenen Koordinaten (Format "x,y")
+zentriert.
+
+=item --proxy httpproxy
+
+Angabe eines Proxies fE<uuml>r WWW-Verbindungen im Format
+"http://hostname:port/". Beispiel: C<http://www.cs.tu-berlin.de:80/>
+
+=item routefile
+
+Beim Starten wird die Routendatei geladen und angezeigt.
+
+=back
+
+=head1 ANFORDERUNGEN
+
+FE<uuml>r das Zeichnen der realen Karten sind folgende Programme aus
+dem pbmplus- bzw. netpbm-Paket notwendig:
+
+=over 4
+
+=item *
+
+giftoppm
+
+=item *
+
+pnmscale
+
+=item *
+
+djpeg (aus libjpeg)
+
+=back
+
+Eine komplette Liste der optionalen perl-Module findet man in
+L<Bundle::BBBike|Bundle::BBBike>.
+
+=head1 INSTALLATION
+
+=head2 Allgemein
+
+Die Installationsbeschreibung befindet sich in der Datei
+L<README|README> bzw. README.html. 
+
+=head2 fvwm2
+
+Um Icons mit dem fvwm2 darstellen zu können, sollte in .fvwm2rc oder
+.fvwmrc folgende Zeile eingefügt werden:
+
+
+ Style "Bbbike*"        MiniIcon srtbike_mini.xpm
+
+Die Datei srtbike_mini.xpm sollte in ein Verzeichnis eingefügt werden,
+wo sich die sonstigen fvwm-Icons befindet (siehe Direktive PixmapPath).
+
+=head1 INTERNA
+
+Verwendete Tags:
+
+=over 4
+
+=item Kreuzungen:
+
+'pp', Koordinate (x,y), undef, pp-$abk
+
+=item Strecken:
+
+$abk, Name, $abk-$category, $abk-$index
+
+=item Strecken (Outline):
+
+$abk-out, $abk-$category-out
+
+=item FlE<auml>chen:
+
+$abk, Name
+
+=item FlE<auml>chen (Outline):
+
+$abk-out
+
+=item Haltestellen:
+
+'p', Hafas-Index
+
+=item besondere Punkte (BahnhE<ouml>fe etc.)
+
+$abk-[fb]g, Name
+
+$abk-[fb]g, Koordinate (x,y)
+
+=item Ampeln
+
+$abk-fg, Koordinate (x,y), Kategorie
+
+=item Markierung Punkt:
+
+'show', 'showp'
+
+=item Markierung Strecke:
+
+'show', 'shows'
+
+=item Ort
+
+'o', Name
+
+=item Ort (Bezeichnung)
+
+'O'
+
+=item Route, Routenstartpunkt
+
+'route', route-$nr
+
+=item Karte
+
+'map'
+
+=back
+
+=head1 BUGS
+
+Zu viele...
+
+=over 4
+
+=item *
+
+Entfernungen von manuell erzeugten Strecken werden bei der
+Wegbeschreibung nicht berE<uuml>cksichtigt, wenn eine Neuberechnung
+oder RE<uuml>ckweg angewE<auml>hlt wurde. Bei einer Neuberechnung
+bleibt die Routenbeschreibung immer leer.
+
+=item *
+
+Suche: Das AnwE<auml>hlen eines Punktes innerhalb einer gesperrten
+StraE<szlig>e ist fE<auml>lschlicherweise erlaubt.
+
+=item *
+
+Falsche StreckenfE<uuml>hrung, wenn fE<uuml>r das gleiche
+StreckenstE<uuml>ck zweimal der Punkt mit nearest_line_points
+ausgewE<auml>hlt wurde. Problematisch, wenn ich irgendwann bei den
+LandstraE<szlig>en auf lange StreckenstE<uuml>cke (Kilometer werden
+nur zwischen Kreuzungen und nicht mehr zwischen Kurvenpunkten
+vorberechnet) umsteigen werde.
+
+=item *
+
+optionadd...*search hat auch Auswirkungen auf den MenE<uuml>punkt in
+Tk::Pod ... wie kann das begrenzt werden? Vielleicht MainWindow statt
+Toplevel benutzen?
+
+=item *
+
+Kontextsensitive Hilfe auf "km/h" findet beim Tk-POD-Ersatz nicht den
+richtigen Abschnitt.
+
+=item *
+
+Beim Anzeigen einer Routenbeschreibung, die LandstraE<szlig>en
+enthE<auml>lt, wird nichts ausgegeben, wenn LandstraE<szlig>en nicht
+gezeichnet sind. => in nearest_points evtl. LandstraE<szlig>en bei
+Bedarf nachladen (wie feststellen???).
+
+=item *
+
+Vias verschieben etc.: wenn eine Via-Flagge sich unterhalb eines
+anderen Symbol befindet, kann es nicht angeklickt werden
+
+=item *
+
+Vias verschieben etc.: Start- und Zielflagge koennen (entgegen den
+Behauptungen im Menue) noch nicht verschoben etc. werden
+
+=item *
+
+Ab und zu, besonders beim Wechseln zwischen Kartenmodi, reagiert bbbike
+beim Setzen eines Startpunktes nicht. Aushilfe: einmal "Route löschen"
+auswählen, danach geht es wieder.
+
+=back
+
+=head1 LIMITATIONS
+
+=over 4
+
+=item *
+
+Beim Reinzoomen werden die Strecken und Punkte sehr ungenau
+gezeichnet. Dies kE<ouml>nnte behoben werden, wenn alle Punkte beim Zoomen
+neu gezeichnet werden, aber das wE<uuml>rde das Zoomen *sehr* verlangsamen. 
+
+=item *
+
+Der Canvas-Postscript-Treiber kann mit rotierten Fonts nichts anfangen.
+
+=back
+
+=head1 TODO
+
+=over 4
+
+=item *
+
+BikePower: Profile laden/speichern, evtl. auch direkt aus bbbike
+sichtbar. Erst einmal das Problem mit dem Komma (Linux, Solaris mit
+LANG gesetzt) lösen.
+
+=item *
+
+Dynamisches Zeichnen (weniger/mehr) von Kartenelementen anhand der
+VergrE<ouml>E<szlig>erung (wird teilweise schon gemacht, z.B. bei
+get_symbol oder Orte/Kategorien=Auto).
+
+=item *
+
+In Routenbeschreibungen Zeilen wie "StraE<szlig>e A", "...",
+"StraE<szlig>e A" zu einer Zeile zusammenfassen.
+
+=item *
+
+Bessere Routenbeschreibung fE<uuml>r LandstraE<szlig>en. In der
+Datenbank "X - Y" nach "(A) - X - V - Y - (B)" E<auml>ndern, wobei X
+und Y Start- und Zielort der Strecke ist, (A) und (B) die globale
+Richtung (grE<ouml>E<szlig>ere StE<auml>dte vor und nachher) und V ein
+Via-Ort ist. Die geklammerten Orte und V sind optional.
+
+ME<ouml>glichst Orte in die Routenbeschreibung aufnehmen. Vielleicht
+mit nearest_... arbeiten.
+
+=item *
+
+Update E<uuml>ber das Internet: gzip/zip-UnterstE<uuml>tzung, oder,
+noch besser, rsync-UnterstE<uuml>tzung. Wie richtet man einen
+rsync-Server ein?
+
+=item *
+
+Telefonbuch-Datenbank (Name): Die Suche ist suboptimal. Bei der
+Suche von hE<auml>ufigen Nachnamen (ME<uuml>ller, Schulze)
+wird das Ergebnis begrenzt (200 Namen) und kann mit "Weiter"
+fortgesetzt werden.
+
+=item *
+
+B2/B3 auf Speed/Power-Labels dokumentieren --- generelles Widget wie
+Mouse-Info bei xfig?
+
+=item *
+
+evtl. ein Composite-Item fuer canvas erstellen und zwar fuer punkte
+mit zugehoerigem label. so bleiben die labels im korrekten
+abstand neben dem punkt
+
+=item *
+
+CGI: Grafik zeichnen: Option (StraE<szlig>ennamen) einfE<uuml>hren,
+mit der eine Imagemap fE<uuml>r die Route erstellt wird. WE<uuml>rde
+Sinn machen, wenn alle Browser onmouseover E<uuml>ber Imagemaps
+handhaben wE<uuml>rden.
+
+=item *
+
+Optimierung: bei LandstraE<szlig>en reine Kurvenpunkte bei der
+Netzberechnung ignorieren =E<gt> ist mit make_wide_net bereits
+implementiert, wird aber nicht verwendet...
+
+=item *
+
+oben/normal/unten: Reihenfolge: RB oder S, dann RB-Bhf oder S-Bhf, und
+nicht RB, RB-Bhf, S, S-Bhf wie bislang
+
+=item *
+
+Vias werden gesondert dargestellt.
+
+=item *
+
+unlimited Undo?
+
+=item *
+
+Optionen -auchumland und -nurberlin: setzen einige Variablen wie
+wasserumland, landstr, orte etc.
+
+=item *
+
+search_route: multiple Start/Ziel (Checkbutton)
+
+=item *
+
+Mehr benutzerfreundliche Optionen fE<uuml>r die Suche: kE<uuml>rzeste
+Strecke, schnellste Strecke (in AbhE<auml>ngigkeit von Wind,
+Steigung/GefE<auml>lle, StraE<szlig>enoberflE<auml>che etc.),
+
+=item *
+
+Weiterer Suchmodus: Start- und Ziel bleiben fest, Via kann beliebig
+verE<auml>ndert werden. Und: Ausgabe von alternativen Routen.
+
+=item *
+
+GUI-build aus package main in eigene Funktionen verlagern
+
+=item *
+
+einheitliche Schalter fE<uuml>r das interne Caching von Daten (z.B. ob
+beim Anklicken von "Ort" die Datei immer neu eingelesen werden soll)
+
+=item *
+
+Portrait/Landscape-Umschaltung: alle Canvas-Daten aktualisieren. 
+Route wird z.Zt. nicht gedreht (evtl.
+auf @coords verzichten und nur @realcoords verwenden).
+
+=item *
+
+VernE<uuml>nftige Options-Eingabe in der GUI. Zwischen
+Startup-Optionen (Zeichnen der StraE<szlig>en/Punkte) und aktuellen
+Optionen unterscheiden.
+
+=item *
+
+Kategorisierung der LandstraE<szlig>en? Gibt es Untersuchungen zur
+Verkehrsdichte? Vielleicht zweigleisig fahren: StraE<szlig>enbelag,
+Verkehrsdichte, offizielle Einstufung (BundesstraE<szlig>e ...) (ups,
+ist dreigleisig geworden...)
+
+=item *
+
+choose_ort, S- und U-Bahnen: neben dem Bahnhof die zugehE<ouml>rige(n)
+Linien anzeigen
+
+=item *
+
+Option: alle Ortschaften entlang einer Route zeigen (evtl. auch die
+NE<auml>he einstellbar, default 100m)
+
+=item *
+
+Im Umland ist es wahrscheinlich sinnvoller, eine Routenbeschreibung
+anhand von Punkten (Ortschaften) anstatt Strecken (StraE<szlig>en) zu
+machen. Optional eins oder beides zusammen.
+
+=item *
+
+Ab und zu Pfeile zeichnen, damit die RoutenfE<uuml>hrung eindeutig wird
+(wenn eine Strecke zweimal durchfahren wird).
+
+=item *
+
+Option -centerc auch interaktiv zugE<auml>nglich machen (ist schon,
+aber nur mit grauenvollem Interface).
+
+=item *
+
+Das Erzeugen von GIF-Bildern benE<ouml>tigt netpbm, von JPEG-Bildern
+die JPEG-Distribution und alle brauchen ghostscript. Eine bessere
+Methode wE<auml>re WinPhoto (wenn es korrekt funktionieren
+wE<uuml>rde).
+
+=item *
+
+Suchen nach Alternativen. Es ist schwierig zu entscheiden, wann eine
+Alternative wirklich eine Alternative darstellt (z.B. ist es kein
+groE<szlig>er Unterschied, ob man nur rechts oder links um einen Block
+herum fE<auml>hrt).
+
+=item *
+
+Bei Tix sind Eingabe-Widgets und Listboxen in einem helleren Farbton.
+Auch hier umsetzen. Wie wendet Tix die Schemes auf die alten Widgets
+an?
+
+=item *
+
+Evtl: Canvas und E<Uuml>bersichtskarte: Maus ziehen zum Einstellen
+eines Ausschnitts
+
+=item *
+
+RE<uuml>ckkehr aus dem edit-Modus in den Suchmodus: Cursor wieder
+umstellen, Start/Zielflagge aktivieren.
+
+=item *
+
+StraE<szlig>ennamen: Labels wie in richtigen StadtplE<auml>nen
+anordnen, also z.B. "Yorckstr.": am Anfang der StraE<szlig>e "Yorck-",
+am Ende der StraE<szlig>e "str.". Dadurch werden die Namen hoffentlich
+lesbarer sein. =E<gt> Ist schon implementiert, aber langsam...
+
+=item *
+
+Da das Zeichnen von StraE<szlig>ennamen so lange dauert: mit Hints
+arbeiten (z.B. fE<uuml>r einige oft verwendete Zoomstufen Koordinaten
+vorberechnen).
+
+=item *
+
+Beim VergrE<ouml>E<szlig>ern kE<ouml>nnte man ab einer bestimmten
+Stufe auch die GrE<ouml>E<szlig>e der StraE<szlig>en/Ortslabel auch
+mitvergrE<ouml>E<szlig>ern.
+
+=item *
+
+Optional mehr Informationen in der Routenbeschreibung, z.B.
+Steigungen, SehenswE<uuml>rdigkeiten in der NE<auml>he,
+U/S-Bahnstationen ... Kommentare sind schon drinnen.
+
+=item *
+
+Alle in "strassen" vorkommende StraE<szlig>en sollten auch in
+"Berlin.coords.data" stehen. Ansonsten gibt es derart PE<Uuml>robleme,
+daE<szlig> zwar beim CGI in der Liste "Alle StraE<szlig>en anzeigen"
+z.B. "Hallesches Tor" angezeigt wird, diese StraE<szlig>e als Eingabe
+aber nicht akzeptiert wird. Sprich: die Datei data/add_str sollte auf
+AktualitE<auml>t E<uuml>berprE<uuml>ft werden und dann mE<ouml>glichst
+alle fehlende StraE<szlig>en nach Berlin.coords.data E<uuml>bertragen
+werden.
+
+Hatte ich schonmal:
+[in add_str sollten möglichst KEINE "richtigen" Straßen stehen --- nur
+Sachen wie Brücken, Tunnel, "Alexanderplatz [zur Grunerstr.]" etc.
+ansonsten werden sie in bbbike.cgi nicht erkannt, obwohl sie
+existieren!]
+
+
+=item *
+
+Server-Mode und Client-Programm: austesten, insbesondere mit KDE, und
+dann alle Starts auf bbbikeclient umschreiben. Gucken, wie man sowas
+mit Win32 machen kE<ouml>nnte. Server-Beispielcode aus
+E<quot>Mastering Perl/TkE<quot> verwenden.
+
+=item *
+
+CGI-Bilder antialiased erstellen. Ich habe schon was gemacht, ist aber
+noch nicht optimal. (Was habe ich gemacht? Wie kann man das mit GD
+machen???)
+
+=item *
+
+In BBBikeDraw.pm nach AREA suchen: Probleme mit den verschiedenen
+Netscape-Versionen.
+
+=item *
+
+Implementierung der interaktiven Eingabe fE<uuml>r einige
+StraE<szlig>enlabels, die dann bei "StraE<szlig>ennamen" in bbbike und
+immer in den vorgefertigten bbbike.cgi-Bildern und konditional in den
+dynamischen gesetzt werden.
+
+=item *
+
+install.pl: Falls Tk nicht installiert ist und PPM vorhanden ist, mit
+PPM nachinstallieren. Bei Bedarf eine Reihe weiterer Module
+nachinstallieren (siehe Bundle::BBBike). Das Installieren mittels
+Bundle::BBBike funktioniert ab CPAN 1.60 nicht mehr.
+
+=item *
+
+FreeBSD-Port anpassen, so daE<szlig> install.pl verwendet wird. PLIST
+von install.pl abhE<auml>ngig machen. -kdeinstall in
+AbhE<auml>ngigkeit von HAVE_KDE angeben.
+
+=item *
+
+Rotierte Fonts: vielleicht ein Freetype-Modul schreiben, dafE<uuml>r
+eine Tk::Canvas-Erweiterung und diese in BBBike verwenden? ---
+Es gibt bereits libgdtf. Dieses zu einem Perl-Modul machen und
+wenigstens fE<uuml>r die statischen CGI-Karten verwenden.
+
+=item *
+
+Neuimplementation der Streckensuche. Dabei soll zwischen
+StreckenaufwE<auml>nden und KnotenpunktaufwE<auml>nden unterschieden
+werden. AufwE<auml>nde werden entweder in LE<auml>ngen, in Zeit oder
+in einem Punktesystem (Kombination aus Zeit, Komfort, Sicherheit etc.)
+angegeben. StreckenaufwE<auml>nde berechnen sich aus: LE<auml>nge der
+Strecke, Gegenwind, Steigungen, Dynamowiderstand,
+StraE<szlig>enqualite<auml>t der Strecke, sonstige Hindernisse auf der
+Strecke, Verkehrsdichte (Staus, Berufsverkehr), Radwege,
+Maximalgeschwindigkeiten. KnotenpunktaufwE<auml>nden berechnen sich
+aus: durchschnittliche oder wahre Ampelwartezeit mit Zeit fE<uuml>r
+die Beschleunigung, durchschnittlicher Zeitverlust an
+Rechts-vor-links-Kreuzungen und an vorfahrtsgewE<auml>hrenden
+Kreuzungen (abknickende VorfahrtsstraE<szlig>en beachten), Zeitverlust
+fE<uuml>r AbbiegevorgE<auml>nge (rechts, links), erschwertes Abbiegen
+(Bordsteinkanten E<uuml>berwinden). QualitE<auml>tsbewertungen:
+StraE<szlig>enqualitE<auml>t, niedrige LeistungsaufwE<auml>nde (Wind,
+Steigungen), NebenstraE<szlig>en, Parks. Sicherheitsbewertungen:
+NebenstraE<szlig>en vor HauptstraE<szlig>en bevorzugen, Radwege
+ja/nein. In (C) und Perl implementieren.
+
+Analyse eines Streckenabschnitts:
+
+ * Feststellen der LE<auml>nge
+
+ * Feststellen der Windrichtung und -geschwindigkeit
+
+ * Feststellen der Steigung
+
+ * Verluste durch StraE<szlig>enqualitE<auml>t
+
+ * Korrigieren auf Maximalgeschwindigkeit (max. Trittfrequenz)
+
+ * anhand der aktuellen Leistungswert Zeit berechnen
+
+Analyse einer Kreuzung:
+
+ * Feststellen, ob es um einen Abbiegevorgang handelt und ggfs. Zeit
+   fE<uuml>r den Abbiegevorgang abziegen
+
+ * Feststellen, ob eine Ampel vorhanden ist, und eine
+   durchschnittliche Zeit abziehen.
+
+ * Feststellen, ob die Vorfahrt beachtet werden muE<szlig>
+
+=E<gt> nicht unbedingt notwendig, die jetzige LE<ouml>sung reicht erst
+einmal aus...
+
+=item *
+
+cgi-Version: Linux+Netscape: Probleme mit Cookies (Einstellungen)
+=E<gt> noch immer?
+
+=item *
+
+wenn GD nicht installiert ist, sollte die gif-Datei gelE<ouml>scht werden und
+   eine Fehlermeldung ausgegeben werden (?)
+
+=item *
+
+VergrE<ouml>E<szlig>erung der Schrift beim Zoomen
+
+=item *
+
+Speichern von Grafiken: Extension erzwingen (?), E<Uuml>berschreiben testen
+und verhindern
+
+=item *
+
+evtl. mit fork eine Warteschleife implementieren. Wenn es nicht mit
+Tk (threads!) geht, dann vielleicht mit X11::Protocol oder mit xterm?
+
+=item *
+
+Kurzhilfe: kann man feststellen, ob man eine 2/3-Tastenmaus hat?
+
+=item *
+
+Vielleicht Windchill-Temperatur zusE<auml>tzlich anzeigen.
+
+=item *
+
+Optimierung: Beim Ausschalten von Outline oder StraE<szlig>ennamen
+muE<szlig> nicht alles neu gezeichnet werden.
+
+=item *
+
+Meta-Choose-Dialog, das alle Choose-Dialoge vereinigt. Vielleicht
+Tk::SmartListbox verwenden?
+
+=item *
+
+wettermeldung2 mit fork/spawn/threads aufrufen
+
+=item *
+
+Neue Version von wettermeldung2 schreiben, die SYNOP-Information
+verwendet.
+
+=item *
+
+Wenn wE<auml>hrend eines WWW-Fetches die Verbindung gekappt wird,
+hE<auml>ngt BBBike vollkommen. Gesehen bei Win32. Vielleicht mit
+Timeouts arbeiten (kann das LWP?) und hE<auml>ppchenweise holen. Oder
+noch besser: fileevent verwenden! ... LWPng kann Event-Handling.
+Leider ist das Event-Handling noch inkompatibel mit Tk. Auch fE<uuml>r
+wettermeldung2 mit LWPng arbeiten. =E<gt> Vielleicht das hochgelobte
+POE verwenden.
+
+=item *
+
+FE<uuml>r das Drucken von Text: evtl. auch Netscape und print-Methode
+verwenden (?). FE<uuml>r Unix kE<ouml>nnte man eine start netscape,
+netscape remote openFile/print-Kombination verwenden. Bei Windows?
+Netscape kE<ouml>nnte man auch zum Mailabschicken verwenden,
+E<uuml>ber mailto. Evtl. ein Modul fE<uuml>r Netscape schreiben,
+daE<szlig> die ganzen remote-Kommandos verwendet. Hier eine Liste:
+
+%s: usage: OpenURL(url [ , new-window|window-name ] )
+%s: usage: OpenFile(file)
+%s: usage: print([filename])
+%s: usage: SaveAS(file, output-data-type)
+%s: usage: SaveAS(file, [output-data-type])
+%s: usage: mailto(address ...)
+%s: usage: find(string)
+%s: usage: addBookmark(url, title)
+%s: usage: htmlHelp(map-file, id, search-text)
+
+Mit Xprt fE<uuml>r X11 experimentieren (doc lesen).
+
+=item *
+
+Ein LightWeight-Modul (CanvasMap) schreiben. Vielleicht irgendwann
+alles auf dieses Modul umschreiben.
+
+=item *
+
+PerlPlusPlugin ausprobieren und BBBike dafE<uuml>r portieren. Sachen,
+die mir dafE<uuml>r einfallen: Ich brauche ein open(), das E<uuml>ber
+LWP funktioniert (vielleicht mit LWPng?). Ich brauche ein hyperuse und
+hyperrequire. Z.B.
+
+    @HYPERINC = qw("http://user.cs.tu-berlin.de/~eserte",
+                   "file://tmp");
+    hyperuse BBBikeEdit;
+    hyperrequire Strassen;
+
+Irgendwo habe ich so etwas schon implementiert gesehen ... suchen!
+
+=item *
+
+Bei einem Resize muE<szlig> auch das Progress-Canvas angepasst werden.
+
+=item *
+
+BBBikeContext.pm schreiben: gibt alles aus, was ich so brauche: $os,
+Strassen-Objekte, Crossings, Netze etc. Caching bei Belieben
+einstellen, evtl. mit Ties arbeiten, die sich selbst umwandeln oder
+durchgE<auml>ngig mit Methoden. AutoLoading verwenden.
+
+=E<gt> Teilweise erledigt BBBikeRouting.pm einige dieser Sachen...
+
+=item *
+
+Folgende Radwege in der Landsberger Chaussee kE<ouml>nnen nicht
+dargestellt werden, weil sich die StraE<szlig>e in landstrassen-orig
+und nicht in strassen-orig befindet.
+
+14389,5916	14348,5906	radweg	radweg
+14545,5953	14389,5916	radweg	radweg
+14844,6029	14545,5953	radweg	pflicht
+15283,6150	14844,6029	radweg	pflicht
+
+=E<gt> radwege_l anlegen?
+
+=item *
+
+Speicheroptimierung.
+
+Folgende Symbole kommen im Dump von Devel::Symdump vor und
+bedE<uuml>rfen KlE<auml>rung (warum, woher, benE<ouml>tigt?):
+
+    * English::*
+    * DB::args
+    * Tk::Pretty::*
+    * re::*
+    * DirHandle::*
+
+Ein minimales System kann auf Folgendes verzichten:
+
+    * Fahrinfo::*
+    * BikePower::*
+    * Devel::Peek::*
+    * EasySound::*
+    * Karte::Berlinmap1997::*
+    * Karte::Berlinmap1999::*
+    * wettermeldung2::*
+    * BSD::Resource::*
+    * Hyper::*
+    * Plugin::*
+
+Evtl. auch:
+
+    * Tk::DragDrop::*
+    * Tk::CanvasBalloon::*
+    * Tk::ContextHelp::*
+    * Tk::Dialog::* (nach STDERR umlenken, wenn nur OK-Button erscheint)
+    * Tk::ErrorDialog::* (Default: nach STDERR umlenken)
+    * Tk::FireButton::*
+    * Tk::SRTProgress::*
+    * Tk::UnderlineAll::*
+
+=item *
+
+3D-Darstellung von Berlin (z.B. vier versetzte FlE<auml>chen, die
+oberste in der Hintergrundfarbe und die anderen in der Schattenfarbe).
+
+=item *
+
+bbbike.cgi: Eine "Neu"-Subroutine, die jeweils die neuen Features der
+Version anzeigt. Vielleicht auch eine "Neu"-History, die automatisch
+aus den alten EintrE<auml>gen oder aus dem RCS-Log aufgebaut wird?
+
+=item *
+
+Cgiinfo in cgi2.t funktioniert leider nicht, weil openURL als zweiten
+Parameter nur true oder false zulE<auml>E<szlig>t. Workaround:
+Schreiben eines Multiplexers, der per Javascript neue Fenster
+E<ouml>ffnet.
+
+=item *
+
+Soll ich mit Scopes arbeiten? Scopes wE<auml>ren: Berlin, Brandenburg,
+jwd und wE<uuml>rden sich auf StraE<szlig>en, Orte und GewE<auml>sser
+beziehen. 
+
+=item *
+
+Kann ich mapserv irgendwie einsetzen?
+
+=item *
+
+Bike+Ride integrieren. Das wE<uuml>rde in eine unterbrochene Route
+resultieren, deren Fahrzeiten addiert wE<uuml>rden. ZusE<auml>tzlich kE<auml>me noch
+eine abgeschE<auml>tzte Zeit fE<uuml>r die Benutzung des Verkehrsmittels (Fahrzeit
++ Zusteigzeit + Umsteigezeiten). Eine Verbindung zu Fahrinfo wE<auml>re
+genial.
+
+=item *
+
+Aufteilung des Routen-MenE<uuml>s. In das zweite MenE<uuml> kommen
+alle Punkte, die die Ausgabe beeinflussen: Ausschnitt anpassen,
+Steigungen zeigen, Streckenprofil, Start/Zielflagge, Routenfarbe (+
+EinfE<auml>rbung Wind/Leistung/QualitE<auml>t/etc.), Kalorienverbrauch
+
+=item *
+
+Berechnen des StraE<szlig>ennetzes: Ausblenden des Canvas nicht
+notwendig
+
+=item *
+
+GfxConvert evtl. mit Tk-Photo-Funktionen definieren, wenn die externen
+Programme nicht verfE<uuml>gbar sind. Am besten wE<auml>re
+natE<uuml>rlich noch immer ein NetPBM-Modul.
+
+Photo-Zooming: -zoom x -subsample y == -zoom x/y oder umgekehrt
+
+=item *
+
+Radwegekategorien erweitern: RW(kategorie)(qualitaetskategorie). Also
+heiE<szlig>t dann z.B. RW00: Radweg mit sehr guter QualitE<auml>t und
+RW13: benutzungspflichtiger Radweg mit sehr schlechter
+QualitE<auml>t. Bei den restlichen Kategorien kann man sich die
+Erweiterung sparen, da dort die QualitE<auml>tskategorie der
+StraE<szlig>e gilt. Default-QualitE<auml>tskategorie fE<uuml>r Radwege
+sei 1 (gute QualitE<auml>t).
+
+=item *
+
+ShAddRecentDoc geht unter Win98 nicht?
+
+=item *
+
+Drag'n'drop und open's sollten vielleicht etwas mit .lnk-Dateien unter
+Win* anfangen kE<ouml>nnen...
+
+=item *
+
+outline_text bei draw_text_intelligent verwenden
+
+=item *
+
+Beim intelligenten Zeichen von Ortsnamen bietet sich ein
+Scanline-Vorgang von rechts nach links an. Somit vermeidet man Sachen
+wie
+        Slubice *
+	      * Frankfurt
+
+Schwierig, wenn gleichzeitig das Ergebnis aus sortbycat beachtet
+werden soll (Multipass? Langsam!)
+
+=item *
+
+Bei der Ausgabe der StraE<szlig>ennamen an der Route sollte ein aehnlich
+intelligentes Verfahren angewendet werden. Vielleicht kann bei Routen,
+die von W nach O verlaufen, die Strassennamen erstmal links vom Punkt
+eingezeichnet werden und umgekehrt.
+
+=item *
+
+Bei -usbahnnetz sollte folgendes gehen: Routenbeschreibung mit BahnhE<ouml>fen
+statt Strecken (davon kann auch die Routenbeschreibung auf dem flachen
+Land profitieren!) ... Und noch schE<ouml>ner: eine Kombination von U/S-Bahn
+und StraE<szlig>ennetz (fE<uuml>r FuE<szlig>wege bzw. Bike+Ride).
+
+=item *
+
+Optional eine kE<uuml>rzere Beschreibung. Diese wE<uuml>rde nur
+folgendes enthalten: StraE<szlig>en und AbbiegevorgE<auml>nge. Wenn
+man auf einer StraE<szlig>e nicht abbiegen muss, dann werden
+verschiedene StraE<szlig>ennamen in einer Liste zusammengefasst.
+
+ZusE<auml>tzlich noch eine Druckausgabe. Auch beim CGI. Wann wird die
+Ausgabe endlich vereinheitlicht?
+
+=item *
+
+bei Windows (oder allgemein: bei ClickToFocus) ist es
+unangenehm, dass neue Fenster den Focus klauen. Allerdings ist es ohne
+Maus eher angenehm, dass neue Fenster den Focus bekommen. Wie soll man
+also verfahren?
+
+=item *
+
+Pilot.pm installieren, BBBikePalm dafE<uuml>r erweitern
+
+=item *
+
+user editing: negative/positive prE<auml>ferenzen mit b2/b3 lange druecken
+setzen
+
+=item *
+
+bugfix: optmenu in optimierungseinstellungen korrigieren (Fehler beim
+Tk Widget)
+
+=item *
+
+lange hE<auml>nger bei vielen Canvas-Elementen ueberpruefen
+
+=item *
+
+MDI-Interface entwickeln mit:
+ * map-widget
+ * start/zieleingabe
+ * einfaches opt-einstellungs-fenster
+ * routenbeschreibung
+Siehe Tk::WindowManager =E<gt> entwickle ich nicht mehr weiter,
+dafE<uuml>r gibt es aber ein neues Tk::MDI-Widget
+
+=item *
+
+Andreas' Labeling-Algorithmus verwenden
+
+=item CDROM-Probleme:
+
+ - tk:underlineall.pm warnings in 111,114,157,178
+ - win, print: fehlermeldung nicht auf stdout zeigen. start_cmd wird ohne progexe gestartet, wenn der ps-viewer gestartet weden soll. dito beim browser
+ - tk::getopt: pane verwenden. ab 800.015 eh standard
+ - optionen besser gruppieren. z.b. audio irgendwo unterbringen
+ zwei Reihen mit Notebook?
+ - "outline" -> umrandungen
+ sonstige anglizismen herausnehmen
+ - Bei Win98 geht anscheinend perlglob nicht-> Probleme mit Ncopy
+ - unix/kde-installation: statt symlink von /usr/local/bin besser shell-skript mit richtigem perl-path erstellen. wenn /usr/local/bin nicht im PATH, dann evtl. /usr/bin nehmen. wie macht es autoconf bei KDE? kann ich was von autoconf verwenden?
+ Env-loesung ist auch OK
+ - menuepunkt fuer taste x
+ - layereditor hat bei win95 einen absturz verursacht, und zwar beim local drag (NT mit 800.015 selbst compiliert auch? nur bei followmouse?)
+ - winddaten eingeben als menuepunkt
+ - eigenes popup mit popover nicht fuer win32 verwenden - da ist eh clicktofocus aktiv. Bei KDE auch? Gibt's ne property, die die wm -einstellung anzeigt?
+ - set ziel vom str-dialog setzt anscheinend das via-array nicht
+ - shift-click vom start aus geht nicht
+ - besseres cdrom.pl schreiben. Sowas wie cons, nur fuer das kopieren. Oder mkisofs beibringen, das er die richtigen sachen ohne kopieren erzeugt
+
+=item BBBike - Externalization, towards to v3.0
+ 
+ Allgemein: Aenderungen nur durchfuehren, wenn sie entweder trivial und unaufwendig sind oder zwingend fuer die anstehenden Portierungen sind.
+ 
+ - data: neue Verzeichnishierarchie
+ Vorschlag: city "_" iso-country-abbrev. Beispiel: berlin_de, muenchen_de, san_francisco_us
+ - oder: derzeitige datadir-praxis beibehalten: z.b. data_berlin_de
+ - in den Geography-Modulen: Iconleiste (welche Buttons sind ueberhaupt definiert? Welche zugehoerigen Menues?)
+ - Iconleiste wird stadtspezifisch erzeugt (e.g. Gibt es U-/S-Bahnen?)
+ - Iconbilder werden stadt/landtpezifisch benannt. Beispiel: ubahn.gif => ubahn_de.gif
+ - Umland ja/nein. 3-stufig (mit jwd?), "Haltestelle" oder "Haltestelle/Ort"?
+ - Aufgeben des manuellen LandstraE<szlig>enzeichnens (und jwd etc.)
+ - generell: vielleicht ein gesondertes sub symbolframe fE<uuml>r jeden Ort?
+ - oder: XML-Beschreibungsdatei fE<uuml>r die Properties?
+ - automatisches Erstellen der Properties in Geography.pm anhand der existierenden data-Dateien
+ - Ampeln sind vielleicht nicht E<uuml>berall erfasst
+ - winddaten kE<ouml>nnen vielleicht nicht E<uuml>berall E<uuml>ber das web geholt werden
+ - StraE<szlig>en: nicht alle Daten sind E<uuml>berall erfasst (Kategorien, Radwege, QualitE<auml>t, ...)
+ - StraE<szlig>enauswahl: PLZ-Liste, CDROM?
+ - etc. So gut wie alle daten kE<ouml>nnen vorhanden sein oder nicht
+ - transpose-Funktion ist ortabhE<auml>ngig, BBBikeTranspose als Verteiler
+ - map-button sollte berlin-spezialitE<auml>t bleiben
+ - check-skript: sind alle benE<ouml>tigten Variablen definiert (in den Geography-Modulen)
+ - einige devel-skripte sind auch ortabhE<auml>ngig
+ - vielleicht Erstellung eines devel-Verzeichnisses mit nE<ouml>tigen skripten aus miscsrc und vielleicht misc. Insbesondere kritische Sachen wie den eplus-Roboter herausnehmen
+ - verkleinerung fE<uuml>r overview-mode sollte einstellbar sein
+ - anhand von $0 erkennen, welcher Ort verwendet eerden soll. Gut fE<uuml>r CDROM-Installationen
+ - edit vs. normal mode: bei anderen stE<auml>dten keinen unterschied machen (transpose entsprechend setzen) oder gps-koordinaten im edit-mode verwenden
+ - CGI: imagedir ortsunabhE<auml>ngig machen
+ - caches ortsunabhE<auml>ngig machen
+
+ * evtl. Programm zum Suchen von Überschneidungen schreiben (mit
+   Ausnahmedatei für Brücken)
+
+=item *
+
+Bookmarks in choose_ort und möglichkeit, per dnd neue bookmarks zu definieren, um als straßenauswahl dienen zu können
+
+=item weiter:
+
+ - bei Http.pm vielleicht IO::Select::can_read/write verwenden
+ - bbbike.cgi: Installation auf rapidsite testen => automatisierten Test a la wap_test schreiben, gleiche Features erkennen und verallgemeinern
+ - BBBike: feinere Aufteilung der Gegenwind- etc. Strecken (fließend von rot bis grün)
+ - BBBike: "Window intelligent positionieren" implementieren
+
+ - BrowserInfo.pm: von Roxen's SUPPORT lernen:
+ SUPPORTS: font tables cookies javascript backgrounds backgrounds autogunzip netscape_javascript tablecolor ssl frames mailto forms images pull push java imagealign gifinline pjpeginline fontcolor some_html3 jpeginline 
+ 
+ - bbbike/c: neues pmake funktioniert unter Suse nicht =>
+ gmake benutzen? grrr...
+ 
+ - Verwendung von Tk::App::Reloader. Scheint allgemein zu funktionieren.
+
+=item *
+
+  Aus der Radzeit 3/2001, Seite 8-9:
+  Radwege: Verbundsteine kontra Asphalt
+  [...]
+  Der Energieverbrauch beim Rad fahren (durchschnittliche
+  Geschwindigkeit 15 km/h) auf Asphalt in StraE<szlig>enqualitE<auml>t
+  betrE<auml>gt ca. 1000 Joule und auf Kopfsteinpflaster ca. 2200
+  Joule jeweils pro 100 Meter. Bei asphaltierten Radwegen mit
+  schlechter LE<auml>ngsebenheit liegt dieser Wert zwischen 1200 bis
+  1400 Joule, bei neu gebauten Radwegen mit gefasten Verbundsteinen
+  bei ca. 1400 Joule und bei wassergebundenen Decken zwischen 1600 und
+  2000 Joule pro 100 Meter. Da der Einsatzbereich des Fahhrades als
+  Verkehrsmittel umgekehrt proportional zum Quadrat des
+  Energieverbrauchs ist, ist dieser bei Radverkehrsanlagen in guter
+  StraE<szlig>enqualitE<auml>t rund doppelt so groE<szlig> wie bei
+  Radwegen mit Betonverbundsteinen und etwa viermal so groE<szlig> wie
+  bei wassergebundenen Radwegen. Quelle: UPI-bericht Nr. 41, 3. erw.
+  Auflage August 1999 E<quot>Entwicklung und potentiale des
+  Fahrrad-VerkehrsE<quot> Seiten 18 bis 20
+
+=item *
+
+  Verkehrs-/Umweltverwaltung wegen Emissionen:
+  ReulenbE<auml>cker
+  IX D2
+  Tel: 9025 2391
+  Raum 8.020
+  BrE<uuml>ckenstr. Mitte
+
+=item *
+
+ - Farbeditor: background setzen sollte vielleicht Canvas-bg ignorieren bzw. eigener Auswahlpunkt für Canvas-bg. Vielleicht *alle* Farben änderbar machen --- aber dann muss man die Änderungen auch abspeichern können (schwer, unwichtig)
+ 
+ - Straßennamen: zeichnen on demand? besserer Algorithmus? TIP mit -angle ausprobieren? (schwer)
+ 
+ - intelligenterer Markieralgorithmus: nicht Zentrieren, sondern nur verschieben, falls: durch andere Fenster verdeckt (nur eigene Toplevels beachten) oder weniger als 10% (5%) oder .... Pixel vom Rand oder einem anderen Toplevel entfernt. In diesem Fall den Ausschnitt auch nur minimal verschieben, bis sichtbar (schwer)
+ 
+ - Idee von effizienten Loop/Callback-Mechanismus: ein callback kann entweder alleine aufgerufen werden (mit nötiger Initialisation + Cleanup) oder in eine beliebige Loop eingebettet werden (Inline, Initialisation + Cleanup außerhalb der Loop). Beliebig viele Callbacks können kombiniert werden (Stacking). Verwendung von B::Deparse? (sehr schwer, API und Ausführung erst einmal ausdenken)
+ 
+ - Bug: beim Umschalten von einem anderen Mode in den Suchmode muss zuerst einmal ein Reset ausgeführt werden, bevor Start gesetzt werden kann (mittel)
+ 
+ - Start/Ziel verschiebbar machen (mittel)
+ 
+ - Start/Ziel löschbar machen (mittel)
+ 
+ - Optimierung bei vias löschen/verschieben/einfügen: nur geändertes Stück berechnen (delete=strecke vor-nach; move=beide strecken vor/nach; insert: neue zwei strecken) (mittel-schwer, nur, wenn ich das via-feature häufiger nutze)
+ 
+ - bbbike.cgi: kommentar-spalte: bei münchen schiebestrecken ausweisen, evtl. auch radwege. in berlin vielleicht alles mögliche ausgeben --- ausprobieren
+
+=back
+
+=head1 KOMPATIBILITE<Auml>T
+
+BBBike wird zur Zeit unter FreeBSD 4.6 mit perl 5.00503/5.6.1/5.8.0
+und der neuesten Perl/Tk-Version (z.Zt. 800.024) entwickelt.
+
+TestlE<auml>ufe wurden und werden von Zeit zu Zeit auf Windows 95/98,
+Windows NT 4.0, Solaris/Sparc 7 und Linux gefahren. Dabei werden
+meistens auch die aktuellen Stable-Versionen von Perl und Tk
+verwendet.
+
+Es wird versucht, auch zu den E<auml>lteren Versionen perl 5.00404 und Tk
+402.004 kompatibel zu bleiben. Dabei bleiben aber einige Features
+(z.B. der Splash-Screen, vernE<uuml>nftiges Zeichensatzhandling und einige
+Keybindings) auf der Strecke. Die GrundfunktionalitE<auml>t ist aber
+vorhanden.
+
+Freiwillige zur Portierung von Perl/Tk auf die Macintosh-Plattform
+werden gesucht :-)
+
+=head1 ANERKENNUNG
+
+TBD
+
+=head1 AUTOR
+
+Slaven Rezic - L<slaven@rezic.de|mailto:slaven@rezic.de>
+
+=head1 PREREQUISITES
+
+L<Tk|Tk>.
+
+=head1 COREQUISITES
+
+L<Tk::FireButton|Tk::FireButton>, L<Tk::Pod|Tk::Pod>,
+L<LWP::UserAgent|LWP::UserAgent>, L<Mail::Send|Mail::Send> and others.
+
+=head1 SEE ALSO
+
+L<BikePower(3)|BikePower>, L<Tk(3)|Tk>, L<perl(1)|perl>.
+
+=cut

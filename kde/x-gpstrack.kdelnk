@@ -1,0 +1,8 @@
+# KDE Config File
+[KDE Desktop Entry]
+Type=MimeType
+MimeType=application/x-gpstrack
+Icon=srtbike.xpm
+Patterns=*.trk;*.gps
+DefaultApp=BBBike
+Comment=GPS track file

@@ -1,0 +1,538 @@
+# -*- perl -*-
+
+#
+# $Id: CoreHeavy.pm,v 1.6 2003/01/08 20:14:04 eserte Exp $
+#
+# Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
+# This is free software; you can redistribute it and/or modify it under the
+# terms of the GNU General Public License, see the file COPYING.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net
+#
+
+package Strassen::CoreHeavy;
+
+package Strassen;
+use strict;
+
+# Gibt die Positionsnummern aller Straßen aus $str_ref als Liste aus.
+# $str_ref ist eine Liste von [Straßenname, Bezirk]-Elementen
+# Falls eine Straße durch mehrere Bezirke führt, wird nur _eine_ Position
+# zurückgegeben.
+### AutoLoad Sub
+sub union {
+    my($self, $str_ref, %args) = @_;
+
+    my $uniq = !$args{Nouniq};
+
+    my %str;
+    foreach (@$str_ref) {
+	$str{$_->[0]}->{$_->[1]}++;
+    }
+
+    my %res;
+    $self->init;
+    my $last;
+    while(1) {
+	my $ret = $self->next;
+	last if !@{$ret->[COORDS]};
+	my $name = $ret->[NAME];
+	if ($uniq) {
+	    if (defined $last && $last eq $name) {
+		next;
+	    } else {
+		$last = $name;
+	    }
+	}
+	my @bez;
+	if ($name =~ /^(.*)\s+\((.*)\)$/) {
+	    $name = $1;
+	    @bez = split(/,\s*/, $2);
+	}
+	if (exists $str{$name}) {
+	    if (@bez) {
+		foreach my $bez (@bez) {
+		    if (exists $str{$name}->{$bez}) {
+			$res{$self->pos}++;
+			last;
+		    }
+		}
+	    } else {
+		$res{$self->pos}++;
+	    }
+	}
+    }
+    keys %res;
+}
+
+### AutoLoad Sub
+sub agrep {
+    my($self, $pattern, %arg) = @_;
+    agrep_file($pattern, $self->{File}, %arg);
+}
+
+# XXX make gzip-aware
+# XXX does not work for MultiStrassen
+# %arg:
+# NoDot: keine Ausgabe von "...", wenn zu viele Matches existieren
+# ErrorDef: Angabe der Reihenfolge (match begin, match errors)
+# Agrep: maximale Anzahl von erlaubten Fehlern
+# Return value: Array with matched street names
+### AutoLoad Sub
+sub agrep_file {
+    my($pattern, $file, %arg) = @_;
+
+    my @paths;
+    my @files;
+    if (ref $file eq 'ARRAY') {
+	@files = @$file;
+    } else {
+	CORE::push(@files, $file);
+    }
+
+    foreach my $file (@files) {
+	my $path;
+	if (-r $file) {
+	    $path = $file;
+	} else {
+	    foreach (@datadirs) {
+		if (-r "$_/$file") {
+		    $path = "$_/$file";
+		    last;
+		}
+	    }
+	}
+	if (!defined $path) {
+	    warn "File $file not found in @datadirs.\n";
+	    return undef;
+	}
+	CORE::push(@paths, $path);
+    }
+
+    my $grep_type;
+    my @data;
+    if (!$OLD_AGREP && is_in_path('agrep')) {
+	$grep_type = 'agrep';
+	$pattern =~ s/(.)/\\$1/g;
+    } else {
+	foreach my $path (@paths) {
+	    open(F, $path) or die "Can't open $path: $!";
+	    my @file_data;
+	    chomp(@file_data = <F>);
+	    CORE::push(@data, @file_data);
+	    close F;
+	}
+	eval { local $SIG{'__DIE__'};
+	       require String::Approx;
+	       String::Approx->VERSION(2.7);
+	   };
+	if (!$@) {
+	    $grep_type = 'approx';
+	} else {
+	    $grep_type = 'perl';
+	}
+    }
+    my @def;
+    if ($arg{ErrorDef}) {
+	@def = @{$arg{ErrorDef}};
+    } else {
+	@def = ([1, 0],
+		[1, 1],
+		[1, 2],
+		[0, 0],
+		[0, 1],
+		[0, 2],
+		[0, 3],
+	       );
+    }
+    for my $def (@def) {
+	my($begin, $err, @extra) = @$def;
+	next if (exists $arg{Agrep} && $err > $arg{Agrep});
+	my @this_res;
+	my $grep_pattern = $pattern;
+	if (grep($_ eq 'strasse', @extra)) {
+            next if ($grep_pattern !~ s/(s)traße$/$1tr./i);
+	}
+	if ($grep_type eq 'agrep') {
+	    my @args = '-i';
+	    $grep_pattern = ($begin ? "^$grep_pattern" : $grep_pattern);
+	    if ($err > 0) { CORE::push(@args, "-$err") }
+	    open(AGREP, "-|") or
+	      exec 'agrep', @args, $grep_pattern, @paths or
+		die "Can't exec program: $!";
+	    chomp(@this_res = <AGREP>);
+	    close AGREP;
+	} elsif ($grep_type eq 'approx' && $err) {
+	    next if $begin || $err > 2; # Bug bei $err == 3
+	    $grep_pattern =~ s/[()]/./g; # String::Approx-Bug?
+	    @this_res = String::Approx::amatch
+	      ($grep_pattern, ['i', $err], @data);
+	} else { # weder agrep noch String::Approx
+	    $grep_pattern = ($begin ? "^$grep_pattern" : $grep_pattern);
+	    if ($err == 0) {
+		@this_res = grep(/\Q$grep_pattern\E/i, @data);
+	    } elsif ($err == 1) { # metacharacter erlauben
+		@this_res = grep(/$grep_pattern/i, @data);
+	    } else {
+		next;
+	    }
+	}
+	if (@this_res == 1) {
+	    return parse($this_res[0])->[NAME];
+	} elsif (@this_res) {
+	    my(@res1, @res2, @res3);
+	    my $i = 0;
+	    my $last_name;
+	    foreach (@this_res) {
+		$i++;
+		my $name = parse($_)->[NAME];
+		if (defined $last_name && $last_name eq $name) {
+		    next;
+		} else {
+		    $last_name = $name;
+		}
+		if ($name eq $pattern) {
+		    return $name;
+		} elsif ($name =~ /^\Q$pattern\E/i) {
+		    CORE::push(@res1, $name);
+		} elsif ($i < 20) {
+		    CORE::push(@res2, $name);
+		} elsif ($i == 20) {
+		    CORE::push(@res3, "...") unless $arg{NoDot};
+		}
+	    }
+	    @res1 = sort @res1;
+	    @res2 = sort @res2;
+	    return @res1, @res2, @res3;
+	}
+    }
+    ();
+}
+
+# Sucht Straße anhand des Bezirkes.
+### AutoLoad Sub
+sub choose_street {
+    my($str, $strasse, $bezirk, %args) = @_;
+    my @pos;
+    $str->init;
+    while(1) {
+	my $ret = $str->next;
+	last if !@{$ret->[COORDS]};
+	my $check_strasse = $ret->[NAME];
+	if ($check_strasse =~ /^$strasse/) {
+	    my %bez;
+	    if ($check_strasse =~ /(.*)\s+\((.*)\)/) {
+		$check_strasse = $1;
+		foreach (split(/\s*,\s*/, $2)) {
+		    $bez{$_}++;
+		}
+		if (exists $bez{$bezirk}) {
+		    if (wantarray) {
+			CORE::push(@pos, $str->pos);
+		    } else {
+			return $str->pos;
+		    }
+		}
+	    } elsif ($check_strasse eq $strasse) {
+		if (wantarray) {
+		    CORE::push(@pos, $str->pos);
+		} else {
+		    return $str->pos;
+		}
+	    }
+	}
+    }
+    if (wantarray) {
+	@pos;
+    } else {
+	undef;
+    }
+}
+
+sub copy_orig {
+    my $self = shift;
+    require Strassen::Util;
+    if (! -d $Strassen::Util::tmpdir) {
+	warn "$Strassen::Util::tmpdir does not exist" if $VERBOSE;
+	return;
+    }
+    my $origdir = "$Strassen::Util::tmpdir/orig";
+    if (! -d $origdir) {
+	mkdir $origdir, 0700;
+	if (! -d $origdir) {
+	    warn "Can't create $origdir: $!" if $VERBOSE;
+	    return;
+	}
+    }
+    if (!defined $self->{File}) {
+	warn "File not defined" if $VERBOSE;
+	return;
+    }
+    if (ref $self->{File} ne 'ARRAY') {
+	if (!-f $self->{File}) {
+	    warn "<$self->{File}> does not exist" if $VERBOSE;
+	    return;
+	}
+    } else {
+	foreach (@{$self->{File}}) {
+	    if (!-f $_) {
+		warn "<$_> does not exist" if $VERBOSE;
+		return;
+	    }
+	}
+    }
+    require File::Basename;
+    my $dest;
+    if (ref $self->{File} ne 'ARRAY') {
+	$dest = "$origdir/" . File::Basename::basename($self->{File});
+    } else {
+	$dest = "$origdir/" . File::Basename::basename($self->{File}->[0] . "-multi");
+    }
+    if ($self->write($dest)) {
+	$self->{OrigFile} = $dest;
+	1;
+    } else {
+	delete $self->{OrigFile};
+	0;
+    }
+}
+
+# Erzeugt die Differenz aus dem aktuellen Strassen-Objekt und der
+# letzten Version, die (evtl.) in $origdir abgelegt ist.
+# Rückgabe: (Strassen-Objekt mit neuen Straßen, zu löschenden Indices)
+# Argumente: -clonefile => 1: das File-Argument wird in das neue Objekt
+#            kopiert
+### AutoLoad Sub
+sub diff_orig {
+    my($self, %args) = @_;
+    require File::Basename;
+    require Strassen::Util;
+    my $origdir = "$Strassen::Util::tmpdir/orig";
+    # XXX nicht first_file, sondern aus allen Dateinamen (evtl. verkürzt)
+    # konstruieren
+    my $first_file = (ref $self->{File} eq 'ARRAY'
+		      ? $self->{File}->[0] . "-multi"
+		      : $self->{File});
+    if (!defined $self->{OrigFile}) {
+	$self->{OrigFile} =
+	  "$origdir/" . File::Basename::basename($first_file);
+    }
+    if (! -f $self->{OrigFile}) {
+	warn "<$self->{OrigFile}> does not exist" if $VERBOSE;
+	delete $self->{OrigFile};
+	return;
+    }
+    if (!is_in_path("diff")) {
+	warn "diff not found in path" if $VERBOSE;
+	return;
+    }
+
+    my $dest = "$origdir/" . File::Basename::basename($first_file) . ".new";
+    return unless $self->write($dest);
+
+    my $curr_line = 1;
+    my(@del, @add);
+    open(DIFF, "diff -u $self->{OrigFile} $dest |");
+    scalar <DIFF>; scalar <DIFF>; # overread header
+    while(<DIFF>) {
+	chomp;
+	if (/^\@\@\s*-(\d+)/) {
+	    $curr_line = $1;
+	} elsif (/^\+(.*)/) {
+	    CORE::push(@add, "$1\n");
+	} elsif (/^-/) {
+	    CORE::push(@del, $curr_line-1); # warum -1?
+	    $curr_line++;
+	} elsif (!/^[ \\]/) {
+	    warn "Unknown diff line: $_";
+	} else {
+	    $curr_line++;
+	}
+    }
+    close DIFF;
+
+    unlink $dest;
+    my $new_s = new_from_data Strassen @add;
+    if ($args{-clonefile}) {
+	$new_s->{File} = $self->{File};
+    }
+    ($new_s, \@del);
+}
+
+# Create array reference from Data property:
+# [[$name, $category, ["$x1,$y1", "$x2,$y2" ...]],
+#  [$name2, ...]
+# ]
+# Warning: this method resets any init/next loop!
+### AutoLoad Sub
+sub as_array {
+    my $self = shift;
+    my $ret = [];
+    $self->init;
+    while(1) {
+	my $r = $self->next;
+	last if !@{$r->[COORDS]};
+	my $new_item = [$r->[NAME], $r->[CAT], $r->[COORDS]];
+	CORE::push(@$ret, $new_item);
+    }
+    $ret;
+}
+
+# Create a reverse hash pointing from a point to a list of streets
+# containing this point:
+# { "$x1,$y1" => [$streetname1, $streetname2 ...], ... }
+# Warning: this method resets any init/next loop!
+### AutoLoad Sub
+sub as_reverse_hash {
+    my $self = shift;
+    my $rev_hash = {};
+    $self->init;
+    while(1) {
+	my $r = $self->next;
+	last if !@{$r->[COORDS]};
+	foreach my $c (@{$r->[COORDS]}) {
+	    if (exists $rev_hash->{$c}) {
+		CORE::push(@{ $rev_hash->{$c} }, $r->[NAME]);
+	    } else {
+		$rev_hash->{$c} = [$r->[NAME]];
+	    }
+	}
+    }
+    $rev_hash;
+}
+
+# Given a Strassen file and a position, return the linenumber (starting
+# at 1). This function will skip all comment lines.
+### AutoLoad Sub
+sub get_linenumber {
+    my($strfile, $pos) = @_;
+    my $linenumber = 0;
+    open(STR, $strfile) or die "Can't open $strfile: $!";
+    while(<STR>) {
+	$linenumber++;
+	next if /^( \# | \s*$ )/x;
+	if ($pos == 0) {
+            close STR;
+	    return $linenumber;
+	}
+	$pos--;
+    }
+    close STR;
+    warn "Can't find position $pos in file $strfile";
+    undef;
+}
+
+# Resets iterator
+### AutoLoad Sub
+sub filter_region {
+    my($s, $type, $x1,$y1, $x2,$y2) = @_;
+    my $new_s = Strassen->new;
+    $s->init;
+    while(1) {
+	my $r = $s->next;
+	last if !@{ $r->[COORDS] };
+	my $ret;
+	if ($type eq 'enclosed') {
+	    # XXX works only for one point
+	    my($x,$y) = split /,/, $r->[COORDS][0];
+	    $ret = ($x1 <= $x && $x2 >= $x &&
+		    $y1 <= $y && $y2 >= $y);
+	} else {
+	    die "XXX type $type NYI";
+	}
+	if ($ret) {
+	    $new_s->push($r);
+	}
+    }
+    $new_s;
+}
+
+# XXX german/multilingual labels?
+# use as: $mw->getOpenFile(-filetypes => [Strassen->filetypes])
+sub filetypes {
+    (['bbd Files' => '.bbd'],
+     ['Compressed bbd Files' => '.bbd.gz'],
+     ['All Files' => '*']);
+}
+
+# Create a hash reference "x1,y1_x2,y2" => [position,...] in data array.
+# Optional $restrict should hold a callback returning 0 if the record
+# should be ignored, 1 for normal processing and 2 for using both
+# directions.
+# Warning: this method resets any init/next loop!
+sub make_coord_to_pos {
+    my($s, $restrict) = @_;
+    my $hash = {};
+    $s->init;
+    while(1) {
+	my $r = $s->next;
+	last if !@{$r->[COORDS]};
+	my $restrict = $restrict->($r);
+	next if !$restrict;
+	for my $i (1 .. $#{$r->[COORDS]}) {
+	    CORE::push @{$hash->{$r->[COORDS]->[$i-1]."_".$r->[COORDS]->[$i]}}, $s->{Pos};
+	    if ($restrict == 2) {
+		CORE::push @{$hash->{$r->[COORDS]->[$i]."_".$r->[COORDS]->[$i-1]}}, $s->{Pos};
+	    }
+	}
+    }
+    $hash;
+}
+
+# Read/write bounding box file
+# Ack: resets the iterator if writing!
+### AutoLoad Sub
+sub bboxes {
+    my($self) = @_;
+
+    return $self->{BBoxes} if $self->{BBoxes};
+
+    my @bboxes;
+    $self->init;
+    while(1) {
+	my $r = $self->next;
+	last if !@{ $r->[Strassen::COORDS] };
+
+	my @p;
+	foreach (@{ $r->[Strassen::COORDS] }) {
+	    CORE::push(@p, split /,/, $_);
+	}
+
+	my(@bbox) = ($p[0], $p[1], $p[0], $p[1]);
+	for(my $i=2; $i<$#p-1; $i+=2) {
+	    $bbox[0] = $p[$i] if ($p[$i] < $bbox[0]);
+	    $bbox[2] = $p[$i] if ($p[$i] > $bbox[2]);
+	    $bbox[1] = $p[$i+1] if ($p[$i+1] < $bbox[1]);
+	    $bbox[3] = $p[$i+1] if ($p[$i+1] > $bbox[3]);
+	}
+
+	CORE::push @bboxes, \@bbox;
+    }
+
+    $self->{BBoxes} = \@bboxes;
+    \@bboxes;
+}
+
+# $catref is either a hash reference of category => level mapping or a
+# an array reference of categories. Lower categories should be first.
+sub sort_by_cat {
+    my($self, $catref) = @_;
+    my %catval;
+    if (ref $catref eq 'HASH') {
+	%catval = %$catref;
+    } else {
+	my $i = 0;
+	$catval{$_} = $i++ foreach (@$catref);
+    }
+    @{ $self->{Data} } =
+	map  { $_->[1] }
+	sort { $a->[0] <=> $b->[0] }
+        map  { my $l = parse($_);
+	       [exists $catval{$l->[CAT]} ?
+		$catval{$l->[CAT]} : 9999, $_] } @{ $self->{Data} };
+}
+
+1;
+
+__END__

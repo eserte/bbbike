@@ -1,0 +1,155 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: runbbbikecgi,v 1.10 2002/08/30 07:40:33 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2000 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: eserte@cs.tu-berlin.de
+# WWW:  http://user.cs.tu-berlin.de/~eserte/
+#
+
+# Startet httpi, Netscape und bbbike.cgi
+
+BEGIN {
+    eval <<'EOF';
+use FindBin;
+use lib "$FindBin::RealBin/../lib";
+EOF
+    if ($@) {
+	eval <<'EOF';
+	use lib "../lib";
+	$FindBin::RealBin = ".";
+EOF
+    }
+}
+use WWWBrowser 2.14;
+
+my $http_server = "tinyhttpd";
+
+if (eval "require Getopt::Long; 1") {
+    if (!Getopt::Long::GetOptions("servertype=s" => \$http_server)) {
+	die "usage";
+    }
+}
+
+my($httpi_port);
+
+if ($http_server eq 'httpi') {
+    $httpi_port = "22295"; # "BBBI(K)E"
+} elsif ($http_server eq 'minisvr') {
+    # no port
+} else {
+    $httpi_port = "22296";
+    $http_server = 'tinyhttpd';
+}
+
+# XXX mit pid_files arbeiten...
+#  my $pid_file;
+#  my $tmpdir = tmpdir();
+#  if ($tmpdir) {
+#      $pid_file = "$tmpdir/runbbbikecgi.pid";
+#  }
+
+# XXX erlaubte Ports testen...
+
+if ($http_server eq 'httpi') {
+    # alten httpi-Prozess killen
+    # XXX ist noch zu betriebssystemabhängig
+    if ($^O ne 'MSWin32') {
+	my $pid = `ps uagxww | grep "dhttpi.*$httpi_port" | grep -v grep | perl -nale 'print \$F[1]'`;
+	if (defined $pid and $pid ne "") {
+	    warn "Killing old httpi server...\n";
+	    kill 9 => $pid;
+	}
+    }
+
+    # neuen Server starten
+    my @httpi_cmd = "$FindBin::RealBin/httpi";
+    unshift @httpi_cmd, (1, $^X) if $^O eq 'MSWin32';
+    system(@httpi_cmd);
+
+} elsif ($http_server eq 'minisvr') {
+    open(START, "env SERVER_NAME=localhost QUERY_STRING= REQUEST_METHOD=GET SCRIPT_NAME=/~eserte/bbbike/cgi/bbbike-fast.cgi ./bbbike-fast.cgi |");
+    while(<START>) {
+	if (m|http://localhost:(\d+)/~eserte/bbbike/cgi/bbbike-fast.cgi|) {
+	    $httpi_port = $1;
+	    last;
+	}
+    }
+    close START;
+    die "Can't get port ..." if !defined $httpi_port;
+
+} else { # tinyhttpd
+    # XXX alten Prozess killen?
+    # XXX ist noch zu betriebssystemabhängig
+    my $pid_file = tmpdir() . "/.runbbbikecgi.pid";
+    if ($^O ne 'MSWin32') {
+	if (open(PID, $pid_file)) {
+	    chomp(my $pid = <PID>);
+	    close PID;
+	    if (defined $pid) {
+		warn "Kill process id $pid...\n";
+		kill 9 => $pid;
+	    }
+	    unlink $pid_file;
+	}
+	my $pid = `ps uagxww | grep "perl.*tinyhttpd" | grep -v grep | $^X -nale 'print \$F[1]'`;
+	if (defined $pid and $pid ne "") {
+	    warn "There is still an old tinyhttpd server (pid $pid)...\n";
+	}
+    }
+
+    # neuen Server starten
+    my @httpi_cmd = ($^X, "$FindBin::RealBin/tinyhttpd");
+    unshift @httpi_cmd, (1) if $^O eq 'MSWin32';
+    if ($^O eq 'MSWin32') {
+	system(@httpi_cmd);
+    } else {
+	my $pid = fork;
+	if ($pid == 0) {
+	    exec @httpi_cmd or die "Can't start @httpi_cmd: $!";
+	}
+	if (open(PID, ">" . $pid_file)) {
+	    print PID $pid, "\n";
+	    close PID;
+	}
+    }
+}
+
+# XXX pid des Server merken und für kill verwenden
+
+# kleine Verzögerung, da httpi/tinyhttpdi vielleicht noch nicht
+# geladen wurde... (XXX vielleicht besser überprüfen, ob error_log
+# geschrieben wurde)
+
+sleep 1;
+
+WWWBrowser::start_browser("http://localhost:$httpi_port/bbbike/cgi/bbbike.cgi",
+			  -oldwindow => 1);
+
+# REPO BEGIN
+# REPO NAME tmpdir /home/e/eserte/src/repository 
+# REPO MD5 66f13045a8970a4545d814cccd9be848
+=head2 tmpdir()
+
+Return temporary directory for this system.
+
+=cut
+
+sub tmpdir {
+    foreach my $d ($ENV{TMPDIR}, $ENV{TEMP},
+		   "/tmp", "/var/tmp", "/usr/tmp", "/temp") {
+	next if !defined $d;
+	next if !-d $d || !-w $d;
+	return $d;
+    }
+    undef;
+}
+# REPO END
+
+__END__

@@ -1,0 +1,1876 @@
+#!/usr/local/bin/perl
+
+# Program: TinyHTTPD.pl 2.0u alpha - expires March 1, 1999
+# Purpose: A fully-functional HTTP/1.0 server that is -*-one Perl-*- script (except optional SSL support)
+# Disclaimer: Intended for R & D use, not safe for commercial use or public networks - try Apache instead. Don't do e-commerce with this.
+# Design : Based on a literal interpretation of RFC1945 (HTTP/1.0).
+#          Please notify me of any standards compliance problems.
+
+## How you can help:
+# - use with actual documents and record detailed bug reports
+# - compare behavior against RFCs and record detailed bug reports
+# - examine process code and suggest improvements
+# - look at To Do's and contribute patches
+# - add or propose new and useful features
+
+## Old Features from Version 1.4 1994/08/15 (Mr. Titz):
+# - Supported: HTTP/1.0 GET and POST queries
+# - Understands: .html and .gif file extensions
+# - ACLs for remote hosts
+
+## New Features in Version 2.0alpha 1998/08/15 (J. Briggs):
+# - supports WinNT and Win95
+# - Basic Authentication and experimental realm logout feature
+# - understands If-Modified-Since GET
+# - understands HEAD query
+# - understands .html (and .htm), .shtml (and .stm) .gif, .jpg, .bmp, .png file extensions, configurable with %addtypes
+# - index pages can be enabled/disabled and default index filename set
+# - directory browsing can be enabled/disabled
+# - security option $I_AM_PARANOID
+# - $UPSIZE option to seek and assimilate files of other web servers
+# - manually configured list of cached files
+# - virtual CGI directory name is configurable
+# - should still work in perl4 (except for SSI pos() and $^O), although currently tested with perl5
+# - more complete support for CGI environment settings, esp. client request
+# - complies with intent of RFC robustness principle: "permissive on input, restrictive on output."
+# - hook functions before and after request, uri translation, response routines
+# - supports Netscape cookies (not tested with RFC2109)
+# - file upload is handled by a CGI, using HTTP POST
+# - SSL works with openSSL 0.9.1c and Net::SSLeay 1.03 (comment out the /proc crap in Net::SSLeay::ssl_read_all for Solaris) - for legal reasons, US users should ensure they have an RSAREF licence. Tested on Solaris. Error on linux is 'missing tmp rsa key'
+
+# Here's a shell script to create the server cert and key needed with SSL
+
+### PATH=$PATH:/usr/local/ssl/bin
+### 
+### # SSLeay 0.5.0b+ (21-Dec-95) supports a quick mechanism for generating
+### #                            "dummy" certificates
+### cd /usr/local/ssl/certs
+### req -new -x509 -nodes -out server.pem -keyout server.pem
+### ln -s server.pem `x509 -noout -hash < server.pem
+### 
+### #Then *test* that verify likes the setup
+### 
+### verify /usr/local/ssl/certs/telnetd.pem
+
+## Restrictions:
+# - CGI programs run as evil shell of some kind, excuse is Win95
+# - Win95 cannot do server-push because of backticks presently
+# - realm auto-logout feature is experimental
+
+## To Do:
+# - more robust exec of CGI processes (cross-platform is a challenge)
+# - improve server-parsed HTML (SSI's) week number feature
+# - add MD5 authentication like Apache?
+# - detailed and systematic testing
+
+## Author's Notes:
+# - This program was updated by JB to find a purpose for my obsolete notebook.
+# - The program style is perl4, in a likely misguided attempt to maintain
+#   backward compatibility. Personally, I prefer perl5 style with my().
+#   Upgrading to perl5 will be easy. LWP could drastically shorten this program,
+#   but then this program wouldn't consist of one source file.
+# - Note that pos() does not get localized automatically across subroutines.
+# - The goals of a server are to be fast and handle multiple connections,
+#   yet the process model in this code can only handle a single connection;
+#   but there are many features that make personal use worthwhile,
+#   especially as other servers get more bloated.
+
+## Credits:
+# - Thanks to Larry for creating Perl, the universal scripting language.
+# - Thanks to my maid for freeing up the personal time needed to write this.
+# - Thanks to Aaron for finding the socket problem with GS NT Perl5.004 98/10/10
+
+## Start Configuration section
+
+BEGIN {
+    $THE_OS = $^O;
+    $USE_SOCKET = eval 'require Socket; Socket->import(qw(SO_REUSEADDR SOCK_STREAM AF_INET PF_INET SOL_SOCKET SOL_SOCKET $CRLF)); 1';
+}
+
+$THE_OS = $^O;
+$USE_SOCKET = 1; # enable/disable socket constants from Socket.pm
+
+if ($USE_SOCKET) {
+
+   $AF_INET		= &AF_INET;
+   $PF_INET		= &PF_INET;
+   $SOCK_STREAM		= &SOCK_STREAM;
+   $SO_REUSEADDR	= &SO_REUSEADDR;
+   $SOL_SOCKET		= &SOL_SOCKET;
+}
+else {
+# This is the manual configuration way - not recommended
+# Check if the definitions are correct with /usr/include/sys/socket.h
+   $AF_INET = 2;
+   $PF_INET = $AF_INET;
+
+   $SOCK_STREAM = 1;
+   $SOCK_STREAM = 2 if $^O eq 'solaris';
+
+   if ($THE_OS eq 'MSWin32') {
+      $SO_REUSEADDR = 4;
+      $SOL_SOCKET = 65535;
+   }
+   else {
+      $SO_REUSEADDR = 2;
+      $SOL_SOCKET = 1;
+   }
+
+   $CRLF = "\015\012";
+
+}
+
+$IPPROTO_TCP = getprotobyname('tcp');
+
+# GS Perl5.004 needs socket call here, not later
+socket(S, $PF_INET, $SOCK_STREAM, $IPPROTO_TCP) || die "socket: $!";
+
+if ($THE_OS eq 'MSWin32') {
+   if ($ENV{'OS'} eq 'Windows_NT') {
+      $THE_OS = 'WINNT';
+   }
+   else {
+      $THE_OS = 'WIN95';
+   }
+}
+
+if ($THE_OS eq 'WINNT') {
+   $HOSTNAME = $ENV{'COMPUTERNAME'}; # or hostname ?
+}
+elsif ($THE_OS eq 'WIN95') {
+   $HOSTNAME = `net config`;
+   ($HOSTNAME) = $HOSTNAME =~ s/\\\\(\w+)/$1/;
+}
+else {
+   $HOSTNAME = `/bin/hostname`; # or uname -n ?
+   chop $HOSTNAME;
+}
+$HOSTNAME =~ tr/A-Z/a-z/;
+
+# enable or disable auto-configuration of document and CGI directories
+# this works with Netscape Enterprise, IIS, and OmniHTTPD directories
+$UPSIZE = 0;
+
+# SSL
+$ssl_config = 0;		# 1=SSL on, 0=SSL off
+$cert_pem = 'server.pem';	# server certificate file name
+$key_pem = 'server.pem';	# server key file name
+
+# physical stuff
+$port = 8000;			# Port to listen on 
+$htmldir = '/netscape/server/docs';	# Base directory for HTML files
+$cgidir  = '/netscape/server/cgi-bin';	# Base dir. for CGI
+
+# virtual stuff - for Windoze users, make lowercase
+$htmlprefix = ''; # virtual doc path, no trailing /
+$cgiprefix = '/scripts'; # virtual script path, no leading /
+
+$perlpath  = $^X || '/perl/bin/perl.exe'; # no shebang on Windoze
+
+$accesslogfile = 'access_log';
+$errorlogfile  = 'error_log';
+$debuglogfile  = 'debug_log';
+
+# email for server administrator
+$server_admin = 'root@localhost';
+
+# enable or disable Security Paranoia Option
+$I_AM_PARANOID = 0;
+
+# expire browser login seconds
+$AUTO_LOGOUT_INTERVAL = 60;
+
+# enable or disable directory listing if no index page
+$OK_LIST_DIRECTORIES = 1;
+
+# enable or disable pathinfo processing
+$OK_PATHINFO = 1;
+
+# enable or disable SSIs (works on static content, could do it on cgi, too!)
+$OK_SSI = 1;
+$SSI_MAX_NESTING_LEVEL=4;
+
+# enable or disable CGIs
+$OK_CGI = 1;
+$OK_QUERY = 1;
+$QUERY_MAX_LEN = 1024;
+
+# enable or disable index page if url is a directory name
+$OK_INDEX_PAGES = 1;
+$index_page = 'index.html'; # or sometimes 'index.htm' or 'home.html'
+
+# enable or disable HTTP/1.0 Server: response (not necessary to send)
+$OK_SERVER_RESPONSE = 1;
+
+# enable or disable HTTP/1.0 Last-Modified: response (not necessary to send)
+$OK_LAST_MODIFIED_RESPONSE = 1;
+
+# Access control
+%acl=
+    # 'host-pattern', 'url-pattern'. Prefix ! to url means deny
+    (
+#      'localhost', '.',
+    );
+
+    %login_cache = ();
+
+# Basic Authentication Table
+%auth_tbl_basic =
+    # 'url', 'realm,userid:password,', # do not deviate from this syntax
+    (
+#      '/',  'J,admin:admin,',
+    );
+
+# Cache most-commonly-used pages, specify virtual path to static pages
+
+%page_cache = ( # '/myimage.gif', undef,
+                # '/index.htm', undef,
+);
+
+# hash of urls to redirect
+%url_redirect_list = ( # '/myimage.gif', 'http://www.nowhere.com/myimage.gif',
+);
+
+# hash of urls to move permanently - 301
+%url_move_permanently_list = ( # '/myimage.gif', 'http://www.nowhere.com/myimage.gif',
+);
+
+# hash of urls to move temporarily - 302
+%url_move_temporarily_list = ( # '/myimage.gif', 'http://www.nowhere.com/myimage.gif',
+);
+
+# tell server which file extensions need special content type response headers
+%addtypes = (
+             'htm',  'text/html',
+             'html', 'text/html',
+             'shtml','text/html',
+             'sht',  'text/html',
+             'stm',  'text/html',
+             'text', 'text/plain',
+             'txt',  'text/plain',
+             'xml',  'text/xml',
+             'zip',  'application/zip',
+             'gz',   'application/x-gzip',
+             'tar',  'application/x-tar',
+             'sit',  'application/x-stuffit',
+             'wav',  'audio/x-wav',
+             'bmp',  'image/bmp',
+             'gif',  'image/gif',
+             'jpeg', 'image/jpeg',
+             'jpg',  'image/jpeg',
+             'png',  'image/png',
+             'xbm',  'image/x-xbitmap',
+);
+
+# administrator-modified hook functions into web server
+sub hook_request_pre {
+   # Your code starts here
+   # Your code ends here
+}
+
+sub hook_request_post {
+   # Your code starts here
+   # Your code ends here
+}
+
+sub hook_uri_translate_pre {
+   local($url)=@_;
+   # Your code starts here
+   # Your code ends here
+   $url;
+}
+
+sub hook_uri_translate_post {
+   local($file,$query,$pathinfo,$isascript)=@_;
+   # Your code starts here
+   # Your code ends here
+   ($file,$query,$pathinfo,$isascript);
+}
+
+sub hook_response_pre {
+   local($response);
+   # Your code starts here
+   # Your code ends here
+   $response;
+}
+
+sub hook_response_post {
+   local($response)=@_;
+   # Your code starts here
+   # Your code ends here
+   $response;
+}
+
+do "$0.config";
+
+## End configuration section
+
+# sometimes we don't want headers, like with SSI which nests
+#$PRINT_HEADERS = 1;
+$NO_PRINT_HEADERS = 0;
+
+local($sigs)=0;
+local($mysize)=0;
+
+sub catch_zap {
+   local($signame) = shift;
+
+   $sigs++;
+   print ERRORLOG "[@{[scalar localtime]}] ${service}d: SIG: $signame, total sigs=$sigs\n";
+   if ($signame eq 'INT') {
+      close S;
+      print ERRORLOG "[@{[scalar localtime]}] ${service}d: caught SIGTERM, shutting down\n";
+      exit;
+   }
+}
+
+$SIG{'INT'} = \&catch_zap;
+#$SIG{'PIPE'} = \&catch_zap;
+$SIG{'PIPE'} = 'IGNORE'; # use this for production, please
+
+$VERSION = 'TinyHTTPD/2.0';
+
+local($nesting_level)=0; # Note: this makes parse_SSI non-reentrant, ok for now
+
+if ($UPSIZE) {
+   if (-d '/netscape/server/docs' && -d '/netscape/server/scripts') {
+      $infestation = 'Netscape';
+      $htmldir = "/netscape/server/docs";	# Base directory for HTML files
+      $cgidir  = "/netscape/server/scripts";	# Base dir. for CGI
+      $htmlprefix = '';                         # virtual doc path, no trailing /
+      $cgiprefix = '/scripts';                  # virtual script path, no leading /
+   }
+   elsif (-d '/inetpub/wwwroot' && -d '/inetpub/scripts') {
+      $infestation = 'IIS';
+      $htmldir = "/inetpub/wwwroot";		# Base directory for HTML files
+      $cgidir  = "/inetpub/wwwroot/scripts";	# Base dir. for CGI
+      $htmlprefix = '';                         # virtual doc path, no trailing /
+      $cgiprefix = '/scripts';                  # virtual script path, no leading /
+   }
+   elsif (-d '/home/httpd/html' && -d '/home/httpd/cgi-bin') {
+      $infestation = 'Apache';
+      $htmldir = "/home/httpd/html";	# Base directory for HTML files
+      $cgidir  = "/home/httpd/cgi-bin";	# Base dir. for CGI
+      $htmlprefix = '';                 # virtual doc path, no trailing /
+      $cgiprefix = '/cgi-bin';          # virtual script path, no leading /
+   }
+   elsif (-d '/httpd/htdocs' && -d '/httpd/cgi-bin') {
+      $infestation = 'OmniHTTPD';
+      $htmldir = "/httpd/htdocs";	# Base directory for HTML files
+      $cgidir  = "/httpd/cgi-bin";	# Base dir. for CGI
+      $htmlprefix = '';                 # virtual doc path, no trailing /
+      $cgiprefix = '/cgi-bin';          # virtual script path, no leading /
+   }
+   else {
+      $infestation = '';
+   }
+
+   print "Upsizing... I am 7-of-9 of Borg. $infestation, you will be assimilated.\n" if $infestation;
+}
+
+foreach (keys %ENV) {
+   delete $ENV{$_} unless $_ eq 'PATH';
+}
+
+if ($I_AM_PARANOID) {
+   $OK_PATHINFO        = 0;
+   $OK_SERVER_RESPONSE = 0;
+   $OK_INDEX_PAGES     = 0;
+   $OK_SSI             = 0;
+   $OK_CGI             = 0;
+   $OK_QUERY           = 0;
+
+   print <<EOD;
+Since you have selected TinyHTTPD's more-secure mode, I will take
+a minute to inform you of additional actions you can take
+that will further enhance security.
+
+1) Decide if you really want anonymous public network users
+   accessing your computer files (which is what a webserver like this does).
+2) Install a recent version of Perl. I recommend 5.004, which you can
+   download from www.perl.com for free. The command perl -v will
+   tell you which version of perl is installed. (But I have detected $].)
+3) Run this program as follows: perl -T tinyhttpd.pl
+   This will enable taint-checking mode, making it difficult for
+   malicious users to subvert this perl script with user input.
+4) Check www.perl.com/CPAN for the most recent version of this program.
+5) Check periodically for CERT computer security warnings concerning
+   Perl or this program.
+6) Monitor the TinyHTTPD access and error logs for suspicious activity.
+7) Read Lincoln Stein's WWW Security FAQ.
+8) Do not copy script interpreters like perl into your CGI directory.
+9) Although the authors will expend much effort to audit the security
+   of this program, there will exist bugs in Perl, underlying C libraries,
+   or operating system that will compromise security. TinyHTTPD bugs will
+   take a year or so.
+EOD
+}
+else {
+   $ENV{'SERVER_SOFTWARE'}   = $VERSION;
+   $ENV{'SERVER_ADMIN'}      = $server_admin;
+   $ENV{'GATEWAY_INTERFACE'} = 'CGI/1.1';
+   $ENV{'SERVER_PORT'}       = $port;
+   $ENV{'SERVER_NAME'}       = $HOSTNAME;
+   $ENV{'DOCUMENT_ROOT'}     = $htmldir;
+   $ENV{'HTTPS'}             = 'ON' if $ssl_config;
+}
+
+   &b64init;
+   &uri_init;
+   &dtinit;
+   &page_cache_init;
+
+# Messages
+%errors = (
+   '200', 'OK',
+   '201', 'Created',
+   '202', 'Accepted',
+   '204', 'No Content',
+   '301', 'Moved Permanently',
+   '302', 'Moved Temporarily',
+   '304', 'Not Modified',
+   '400', 'Bad Request',
+   '401', 'Unauthorized',
+   '403', 'Forbidden',
+   '404', 'Not Found',
+   '500', 'Internal Server Error',
+   '501', 'Not Implemented',
+   '502', 'Bad Gateway',
+   '503', 'Service Unavailable',
+);
+
+%verrors = (
+   '200', 'OK',
+   '201', 'Created',
+   '202', 'Accepted',
+   '204', 'No Content',
+   '301', 'Moved Permanently',
+   '302', 'Moved Temporarily',
+   '304', 'Not Modified',
+   '400', 'Bad Request',
+   '401', 'Unauthorized',
+   '403', 'Your client is not allowed to request this item',
+   '404', 'The requested item was not found on this server',
+   '500', 'An error occurred while trying to retrieve item',
+   '501', 'This server does not support the given request type',
+   '502', 'Bad Gateway',
+   '503', 'Service Unavailable',
+);
+
+   if ($THE_OS !~ /^WIN/) {
+#      (($>) && ($< == $>) && ($( == $))) || die "Don't run this program with privileges!\n";
+   }
+
+   # set up a server socket, redirect stderr to logfile
+   $sockaddr = 'S n a4 x8';
+   $this = pack($sockaddr, $AF_INET, $port, "\0\0\0\0");
+#  socket(S, $PF_INET, $SOCK_STREAM, $IPPROTO_TCP) || die "socket: $!";
+   setsockopt(S, $SOL_SOCKET, $SO_REUSEADDR, 1); # see Perl Cookbook p. 606
+   bind(S, $this) || die "bind: $!";
+   listen(S, 5) || die "listen: $!";
+
+   print "Listening to $HOSTNAME on port $port...\n";
+
+   open(ACCESSLOG,'>>'.$accesslogfile) || die "$0: cannot open logfile $accesslogfile: $!";
+   select(ACCESSLOG); $|=1;
+   open(DEBUGLOG,'>>'.$debuglogfile) || die "$0: cannot open logfile $debuglogfile: $!";
+   select(DEBUGLOG); $|=1;
+   open(ERRORLOG,'>>'.$errorlogfile) || die "$0: cannot open logfile $errorlogfile: $!";
+   select(ERRORLOG); $|=1;
+
+   open(STDERR, ">&DEBUGLOG") || die "dup2 log->stderr";
+
+   print ERRORLOG "[@{[scalar localtime]}] info: successful server startup\n";
+
+   if ($ssl_config) {
+      $service = 'https';
+      $trace = 3;
+      $ssl = 0;
+      &ssl_start();
+   }
+   else {
+      $service = 'http';
+   }
+
+    local($junk1_undef,$junk2_undef);
+# accept incoming calls
+for (;;) {
+    $got = '';
+    @got = ();
+
+    local($response) = '';
+
+    ($addr = accept(NS,S)) || die "accept: $!";
+
+    if ($ssl_config) {
+       &ssl_session_start();
+    }
+
+#   ($a,$p,$inetaddr) = unpack($sockaddr, $addr);
+    ($junk1_undef,$junk2_undef,$inetaddr) = unpack($sockaddr, $addr);
+    @inetaddr = unpack('C4', $inetaddr);
+    ($host,$aliases) = gethostbyaddr($inetaddr, $AF_INET);
+    $inetaddr = join(".", @inetaddr);
+    @host = split(' ', "$host $aliases");
+    $host || do { $host = $inetaddr; };
+
+    if ($THE_OS eq 'WIN95') {
+       *STDIN = *NS; # force dup
+       *STDOUT = *NS;
+    }
+    else {
+       open(STDIN, "+<&NS") || die "dup2 ns->stdin: $!";
+       open(STDOUT, "+>&NS") || die "dup2 ns->stdout: $!";
+    }
+
+    if (! $ssl_config) {
+       while (<STDIN>) {
+          last if length($_) < 3;
+          push @got, $_;
+       }
+       print DEBUGLOG "\n", @got, "\n";
+    }
+
+    select(STDOUT); $|=1;
+    &setenv;
+    $response .= &serve_request;
+
+    if ($ssl_config) {
+       &ssl_session_end($response);
+    }
+    else {
+       print STDOUT $response;
+    }
+
+    close(STDIN); close(STDOUT);
+}
+
+if ($ssl_config) {
+   &ssl_end;
+}
+
+# Read request from STDIN and produce output
+sub serve_request {
+   local($content_length) = 0;
+   local($content_type)   = '';
+   local($body)           = '';
+
+   local($dt_modified_since);
+
+   local(%logins) = ();
+
+#   $ENV{'CONTENT-TYPE'}         = '';
+#   $ENV{'CONTENT-LENGTH'}       = '';
+#       
+#   $ENV{'HTTP_HOST'}            = '';
+#   $ENV{'HTTP_USER_AGENT'}      = '';
+#   $ENV{'HTTP_CONNECTION'}      = '';
+    $ENV{'HTTP_ACCEPT'}          = '';
+    $ENV{'HTTP_ACCEPT_CHARSET'}  = '';
+    $ENV{'HTTP_ACCEPT_LANGUAGE'} = '';
+    $ENV{'HTTP_COOKIE'}          = '';
+#   $ENV{'HTTP_FROM'}            = '';
+#   $ENV{'HTTP_REFERER'}         = '';
+#
+#   $ENV{'QUERY_STRING'}         = '';
+#   $ENV{'DOCUMENT_ROOT'}        = '';
+#   $ENV{'PATH_INFO'}            = '';
+#   $ENV{'PATH_TRANSLATED'}      = '';
+
+#   HTTPS                   [if SET]        HTTPS is being used.
+#   HTTPS_CIPHER            <string>        SSL/TLS cipherspec
+#   SSL_CIPHER              <string>        The same as HTTPS_CIPHER
+#   SSL_PROTOCOL_VERSION    <string>        Self explanatory
+#   SSL_SSLEAY_VERSION      <string>        Self explanatory
+#   HTTPS_KEYSIZE           <number>        Number of bits in the session key
+#   HTTPS_SECRETKEYSIZE     <number>        Number of bits in the secret key
+#   SSL_CLIENT_DN           <string>        DN in client's certificate
+#   SSL_CLIENT_<x509>       <string>        Component of client's DN
+#   SSL_CLIENT_I_DN         <string>        DN of issuer of client's certificate
+#   SSL_CLIENT_I_<x509>     <string>        Component of client's issuer's DN
+#   SSL_SERVER_DN           <string>        DN in server's certificate
+#   SSL_SERVER_<x509>       <string>        Component of server's DN
+#   SSL_SERVER_I_DN         <string>        DN of issuer of server's certificate
+#   SSL_SERVER_I_<x509>     <string>        Component of server's issuer's DN
+#   SSL_CLIENT_CERT         <string>        Base64 encoding of client cert
+#   SSL_CLIENT_CERT_CHAIN_n <string>        Base64 encoding of client cert chain
+
+   # Analyze HTTP input.
+   $_ = shift @got;
+   chop;
+   ($method, $url, $proto, $garbage) = split; # very touchy, this split
+
+   if ($garbage ne '') {
+      print DEBUGLOG "Request2: malformed request $_";
+      return;
+   }
+
+   $proto = 'HTTP/0.9' if $proto =~ /^\s*$/;
+
+   print DEBUGLOG "Request3: method=$method, url=$url, proto=$proto\n";
+   $url = &uri_unescape($url); # obligatory unescape
+   print DEBUGLOG "Request4: unescape url=$url\n";
+
+   $ENV{'REQUEST_URI'}       = $url;
+   $ENV{'SERVER_PROTOCOL'}   = $proto;
+   $ENV{'REQUEST_METHOD'}    = $method;
+   $ENV{'REMOTE_ADDR'}       = $inetaddr;
+   $ENV{'REMOTE_USER'}       = '';
+
+   $ENV{'REMOTE_HOST'}       = $ENV{'REMOTE_ADDR'};
+
+   $ENV{'SERVER_URL'}        = "$service://".$HOSTNAME;
+   $ENV{'SERVER_URL'}        .= ':'.$port if $port != 80;
+
+   print DEBUGLOG "$$ Request5: $method $url\n";
+
+   local($headers) = 0; # turn off for HTTP/0.9
+
+   if ($proto ne 'HTTP/0.9') {
+      $headers = 1;
+      while ($_ = shift @got) {
+            &parse_request;
+	    length || last; # empty line - end of header
+      }
+
+      if ($content_length) {
+         while ($_ = shift @got) {
+            $body .= $_;
+            last if length($body) >= $content_length;
+         }
+      }
+
+      foreach ('ACCEPT', 'ACCEPT_CHARSET', 'ACCEPT_LANGUAGE', 'COOKIE') {
+         if ($ENV{'HTTP_'.$_} ne '') {
+            chop $ENV{'HTTP_'.$_}; # chop off ', '
+            chop $ENV{'HTTP_'.$_}; 
+         }
+      }
+   }
+
+    ($proto =~ m:^HTTP/1\.\d+: || $proto eq 'HTTP/0.9') || do { &print_response(501,$proto); return; };
+
+    if ($proto eq 'HTTP/0.9') {
+       ($method eq 'GET') || do { &print_response(501,$method); return; };
+    }
+    else {
+       ($method=~/^(GET|POST|HEAD)$/) || do { &print_response(501,$method); return; };
+    }
+
+    local($file,$query,$pathinfo,$isascript,$status) = &parse_URI($url);
+
+    if ($status > 0) {
+       print DEBUGLOG "Parse Bad url $url\n";
+       &print_response($status,$url);
+       return;
+    }
+
+    &check_ACL($url) || return 0;
+
+    &check_auth_basic($url) || return 0;
+
+    if ($method eq 'HEAD') {
+       (-r $file) || do { &print_response(404,$url); return; };
+       do { &print_response(200,$url); return; };
+    }
+
+    if ($OK_LIST_DIRECTORIES && ($file =~ m:/$: || -d $file)) {
+       if ($isascript) {
+          &print_response(404, $url);
+       }
+       else {
+          -d $file || do { &print_response(404, $url); return 0; };
+          &dirlist($file, $url);
+       }
+       return;
+    }
+
+    &fetch($file,$query,$pathinfo,$isascript,$headers);
+}
+
+sub parse_request {
+# We are not complying with the following:
+# RFC 1945 2.2: HTTP/1.0 headers may be folded onto multiple lines if each
+# continuation line begins with a space or horizontal tab.
+
+# sample code from perlfunc for split, almost works.
+# $header =~ s/\n\s+/ /g;  # fix continuation lines
+# %hdrs   =  (UNIX_FROM => split(/^(\S*?):\s*/m, $header));
+
+   print DEBUGLOG "Request1: $_";
+#   $_ = &hook_request_pre($_);
+
+   s/\n|\r//g; # kill CR and NL chars
+   return '' if length == 0;
+
+   if (/^Content-Length:[ \t]+(\S*)/i) {
+      $content_length=$1;
+      $ENV{'CONTENT_LENGTH'}=$content_length;
+   }
+
+   /^Content-Type:[ \t]+(\S*)/i && ($content_type=$1);
+
+   local($fld_name, $fld_value) = split(/:[ \t]+/);
+   # field names are case-insensitive
+   $fld_name =~ tr/a-z/A-Z/;
+
+   if ($fld_name eq 'HOST') {
+      $ENV{'HTTP_HOST'} = $fld_value;
+   }
+   elsif ($fld_name eq 'USER-AGENT') {
+      $ENV{'HTTP_USER_AGENT'} = $fld_value;
+   }
+   elsif ($fld_name eq 'PRAGMA') {
+      $ENV{'HTTP_PRAGMA'} = $fld_value;
+   }
+   elsif ($fld_name eq 'CONNECTION') {
+      $ENV{'HTTP_CONNECTION'} = $fld_value;
+   }
+   elsif ($fld_name eq 'ACCEPT') {
+      $ENV{'HTTP_ACCEPT'}     .= $fld_value.', ';
+   }
+   elsif ($fld_name eq 'COOKIE') {
+      $ENV{'HTTP_COOKIE'}     .= $fld_value.', ';
+   }
+   elsif ($fld_name eq 'ACCEPT-CHARSET') {
+      $ENV{'HTTP_ACCEPT_CHARSET'} .= $fld_value.', ';
+   }
+   elsif ($fld_name eq 'ACCEPT-LANGUAGE') {
+      $ENV{'HTTP_ACCEPT_LANGUAGE'} .= $fld_value.', ';
+   }
+   elsif ($fld_name eq 'FROM') {
+      $ENV{'HTTP_FROM'}       = $fld_value;
+   }
+   elsif ($fld_name eq 'REFERER') {
+      $ENV{'HTTP_REFERER'}    = $fld_value;
+   }
+   elsif ($fld_name eq 'IF-MODIFIED-SINCE') {
+      $dt_modified_since = &date_parse($fld_value);
+   }
+   elsif ($fld_name eq 'AUTHORIZATION') {
+      # Note that stronger auth schemes appear before BASIC.
+      # if ($fld_value =~ /MD5 (.*?) BASIC/i) { # could do this
+      if ($fld_value =~ /MD5 (.*) BASIC/i) { # could do this
+          # sanity checking on request
+          &print_response(401, 'Authorization');
+          return;
+      }
+      elsif ($fld_value =~ /BASIC (.*)/i) {
+         local($client_login_string)=$1;
+         $ENV{'AUTH_TYPE'} = 'BASIC';
+
+         # ready to receive multiple comma-separated logins
+         # build password hash for this request
+         foreach (split(/,[ \t]+/,$client_login_string)) {
+            ($userid,$pwd) = split(/:/, &b64decode($_));
+            $logins{$userid} = $pwd;
+            print DEBUGLOG "Req: userid=$userid, pwd=$pwd\n";
+         }
+      }
+      else {
+         print DEBUGLOG "Req: unknown AUTH_TYPE $fld_name\n";
+      }
+   }
+   else {
+      # unknown request
+      print DEBUGLOG "Bad request type?: $fld_name, $fld_value\n" unless $_ eq '';
+   }
+
+#  &hook_request_post();
+}
+
+sub inlined_pages {
+# intended for SSI includes, execs, etc. not directly from browser request
+    local($url) = @_;
+
+    local($file,$query,$pathinfo,$isascript,$status) = &parse_URI($url);
+    &check_ACL($url) || return 0;
+    &check_auth_basic($url) || return 0;
+#   print DEBUGLOG "\n\nParse inlined: calling fetch with $url\n";
+    local($ret)=&fetch($file,$query,$pathinfo,$isascript,$NO_PRINT_HEADERS);
+#   print DEBUGLOG "Parse: returning fetch with $url\n";
+    $ret;
+}
+
+sub fetch {
+    local($file,$query,$pathinfo,$isascript,$headers) = @_;
+    local($out) = '';
+    local($type) = '';
+    local($mtime) = time;
+
+    $mysize=0;
+
+    if ($isascript) {
+# Execute CGI scripts
+
+       if ($THE_OS =~ /^WIN/) {
+          (-x $file || -r _ ) || do { &print_response(404,$url) if $headers; return 0; };
+       }
+       else {
+          (-x $file) || do { &print_response(404,$url) if $headers; return 0; };
+       }
+
+       print DEBUGLOG "Executing: $url\n";
+
+       # Parsing of sent-back headers is not implemented. 
+       # Script effectively talks back to client.
+
+       local($thiscmd, @thiscmd);
+
+       if ($THE_OS =~ /^WIN/) {
+          $thiscmd = $perlpath if $file !~ /(\.exe|\.com|\.cmd|\.bat)$/;
+          $thiscmd .= " $file";
+          $thiscmd =~ s:/:\\:g;
+
+          $thiscmd .=" $query" if $OK_QUERY && $query ne '';
+	  @thiscmd = ($perlpath, $file);
+	  $thiscmd[1] =~ s:/:\\:g;
+       }
+       else {
+          $thiscmd = $file;
+          $thiscmd .= " $query" if $OK_QUERY && $query ne '';
+	  @thiscmd = ($file);
+       }
+       push @thiscmd, $query if $OK_QUERY && $query ne '';
+
+       if ($THE_OS eq 'WIN95') {
+	   # print $thiscmd, "\n";
+	   $out = `$thiscmd`;
+       } elsif ($method eq 'GET') {
+	   if ($THE_OS !~ /^WIN/) {
+	       my @ok = ();
+	       if (open(GET, "-|")) {
+		   while (<GET>) {
+		       #chomp;
+		       push(@ok, $_);
+		   }
+		   close GREP;
+	       } else {
+		   print DEBUGLOG "safe exec: @thiscmd\n";
+		   exec @thiscmd;
+	       }
+	       $out = join("", @ok);
+	   } else {
+	       print DEBUGLOG "unsafe exec: @thiscmd\n";
+	       $out = `$thiscmd`;
+	   }
+       }
+       else {
+	   $| = 1;
+	   print $out;
+	   if ($THE_OS !~ /^WIN/) {
+	       print DEBUGLOG "system exec: safe pipe @thiscmd\n";
+	       open(PIP, "|-") || exec @thiscmd;
+	   } else {
+	       print DEBUGLOG "system exec: |$thiscmd\n";
+	       open(PIP, "|$thiscmd") || do {
+		   &print_response(500,$url,"pipe: $!"); return; };
+	   }
+
+           local($x) = select(PIP); $|=1;
+
+           print DEBUGLOG $body;
+           print $body;
+
+           close(PIP);
+           select($x);
+       }
+    } else {
+# Get and return file
+
+       (-r $file) || do { &print_response(404,$url) if $headers; return 0; };
+
+       ($type) = $file =~ /\.(\w+)$/;
+       $type = 'txt' if $type eq '' || ! defined $addtypes{$type};
+
+       $mtime = (stat(_))[9];
+       local($x) = scalar gmtime($mtime);
+
+       if ($headers) {
+          if ($dt_modified_since) {
+             (!&modified_since(&date_parse($x),$dt_modified_since)) &&
+                do { &print_response(304,$url); return 0; };
+          }
+
+       }
+
+# could cache files needing Location: response header in array
+
+       if (defined $page_cache{$url}) {
+          print DEBUGLOG "Req: loading $url from cache!\n";
+	  $out = $page_cache{$url};
+       }
+       else {
+          open(FILE, $file) || do { &print_response(404,$url) if $headers; return 0; };
+          binmode FILE; # ignored on real OS
+
+          local($/) = undef;
+          local($_) = <FILE>;
+
+          print DEBUGLOG "SSI: checking file extension for $file of $type\n";
+          if ($OK_SSI && $type =~ /^(shtml|stm|sht)$/) {
+             print DEBUGLOG "SSI: found $file for SSI\n";
+             $out = &parse_SSI($_);
+          }
+          else {
+             $out = $_;
+          }
+
+          close FILE;
+       }
+   }
+
+   $mysize = length $out;
+   &print_response(200,'','',$addtypes{$type},'',$mtime);
+
+   return $out;
+}
+
+sub old_check_auth_basic {
+    local($url) = @_;
+
+    # Check authentication
+    $allow = 1; # by default, no authentication unless configured
+
+    local($realm);
+
+    #must iterate over auth_table and see if url is like protected ones
+
+    local($alldone) = 0;
+    foreach (keys %auth_tbl_basic) {
+       last if $alldone;
+       print DEBUGLOG "Auth: trying $_\n";
+
+       # if input url and auth entry doesn't exactly match and doesn't match beginning.'/', skip auth. This covers file items and directory prefixes together.
+       next if ($url !~ m:^$_$:) && ($url !~ m:^$_/:);
+
+       local($tmp) = $auth_tbl_basic{$_};
+
+       print DEBUGLOG "Auth: attempt url = $url, auth=$_\n";
+       $realm = substr($tmp,0,index($tmp,','));
+       $tmp = substr($tmp,index($tmp,','));
+       $allow = 0;
+
+       foreach (keys %logins) {
+          print DEBUGLOG "Auth: trying combo $_\n";
+
+          if ($login_cache{"$_:$url"} || $tmp =~ /,($_:$logins{$_}),/) {
+             print DEBUGLOG "Auth: Success url = $url, login = $_\n";
+             $allow = 1;
+	     $login_cache{$_.':'.$url}++;
+	     $ENV{REMOTE_USER} = $_;
+             $alldone = 1;
+          }
+       }
+    }
+
+    $allow || do {&print_response(401,$url,"Unauthorized",'',$realm) if $headers;return 0};
+}
+
+sub check_auth_basic {
+###### Experimental auto-logout features, maybe bad idea
+    local($url) = @_;
+
+    return 1 if ! keys %auth_tbl_basic;
+
+    # Check authentication
+    $allow = 1; # by default, no authentication unless configured
+
+    local($realm);
+
+    #must iterate over auth_table and see if url is like protected ones
+
+    local($tnow) = time;
+
+# find the realm
+    local($alldone) = 0;
+    foreach (keys %auth_tbl_basic) {
+       last if $alldone;
+       print DEBUGLOG "Auth: trying :$_: for :$url:\n";
+
+       # if input url and auth entry doesn't exactly match and doesn't match beginning.'/', skip auth. This covers file items and directory prefixes together.
+      if (($url =~ m:^$_$:) || ($url =~ m:^$_/:) || ($_ eq '/')) {
+
+       local($tmp) = $auth_tbl_basic{$_};
+
+       print DEBUGLOG "Auth: attempt url = $url, auth=$_\n";
+       $realm = substr($tmp,0,index($tmp,','));
+       $tmp = substr($tmp,index($tmp,',')); # password list for realm
+       $allow = 0;
+
+       local($ick) = $_; # protected file or directory
+
+       foreach (keys %logins) {
+          print DEBUGLOG "Auth: trying combo $_\n";
+
+print DEBUGLOG "Auth:  $tnow -". $login_cache{"$_:$ick"}."\n";
+
+          if (exists $login_cache{"$_:$ick"}) {
+             local($myrealm, $mytime) = split(/:/, $login_cache{"$_:$ick"});
+print DEBUGLOG "Auth: found a cache time\n";
+             local($myrealm, $mytime) = split(/:/, $login_cache{"$_:$ick"});
+             if ($mytime eq "0") {
+print DEBUGLOG "Auth: 0 for $_ dir $ick realm is $myrealm, time is $mytime at $tnow\n";
+print DEBUGLOG "Auth: examining $auth_tbl_basic{$ick} for ($_:$logins{$_})\n";
+pos($auth_tbl_basic{$ick})=0;
+                while ($auth_tbl_basic{$ick} =~ /,$_:(.*?),/g) {
+print DEBUGLOG "Auth: searching auth_tbl_basic, found $1, ",pos($auth_tbl_basic{$ick}),"\n";
+                      if ($1.$myrealm eq $logins{$_}) {
+print DEBUGLOG "Auth: found a pwd $1\n";
+                         print DEBUGLOG "Auth: ExtRealm Success url = $ick, login = $1\n";
+                         $allow = 1;
+	                 $login_cache{"$_:$ick"}="$realm:$tnow";
+	                 $ENV{'REMOTE_USER'} = $_;
+                         $alldone = 1;
+                         last;
+                      }
+                }
+                $realm = $myrealm;
+                last;
+             }
+             elsif ($tnow - $mytime >= $AUTO_LOGOUT_INTERVAL) {
+print DEBUGLOG "Auth: LOGOUT for $_ dir $ick realm is $myrealm, time is $mytime at $tnow\n";
+                $myrealm = $realm.sprintf('%04d',int(rand(10000)));
+                $login_cache{"$_:$ick"} = "$myrealm:0";
+print DEBUGLOG "Auth: making realm for $_ : ".$login_cache{"$_:$ick"}."\n";
+                $realm = $myrealm;
+                last;
+             }
+             else {
+print DEBUGLOG "Auth: BEFORE LOGOUT for $_ dir $ick realm is $myrealm, time is $mytime at $tnow\n";
+                pos($auth_tbl_basic{$ick})=0;
+                while ($auth_tbl_basic{$ick} =~ /,$_:(.*?),/g) {
+print DEBUGLOG "Auth: searching auth_tbl_basic, found $1, ",pos($auth_tbl_basic{$ick}),"\n";
+                      if (($realm eq $myrealm && $1 eq $logins{$_}) || $1.$myrealm eq $logins{$_}) {
+print DEBUGLOG "Auth: found a pwd $1\n";
+                         print DEBUGLOG "Auth: ExtRealm Success url = $ick, login = $1\n";
+                         $allow = 1;
+	                 $login_cache{"$_:$ick"}="$myrealm:$tnow";
+	                 $ENV{'REMOTE_USER'} = $_;
+                         last;
+                      }
+                }
+                $realm = $myrealm;
+                last;
+             }
+          }
+          elsif ($tmp =~ /,($_:$logins{$_}),/) {
+
+print DEBUGLOG "Auth: fell through on $_:$ick\n";
+
+             print DEBUGLOG "Auth: Success url = $ick, login = $_\n";
+             $allow = 1;
+	     $login_cache{"$_:$ick"}="$realm:$tnow";
+	     $ENV{'REMOTE_USER'} = $_;
+             last;
+          }
+       }
+      }
+    }
+
+    $allow || do {&print_response(401,$url,"Unauthorized",'',$realm) if $headers;return 0};
+}
+
+sub check_ACL {
+   local($url) = @_;
+
+   return 1 if ! keys %acl;
+
+    # Check access control
+    local($allow) = 0;
+
+    foreach $k (keys %acl) {
+       local($host);
+       foreach $host (@host) {
+          local($acurl, $deny);
+
+          if ($host =~ /$k/i) {
+             $acurl = $acl{$k};
+             $deny = ($acurl =~ s/^!//);
+
+             if ($url =~ /$acurl/) {
+	        if ($deny) { 
+                   do {&print_response(403,$url,'on deny list') if $headers; return 0;};
+                }
+	        else {
+                   $allow = 1;
+                }
+            }
+         }
+      }
+   }
+
+   $allow || do { &print_response(403,$url,'not on allow list') if $headers; return 0 };
+}
+
+sub parse_URI {
+# parsing $url is interesting because ...
+#
+# - may have query_string
+# - may have pathinfo
+# - must be translated from virtual to physical path in a secure manner
+# - may be a filename
+# - may be a directory name, translating to index page or dir listing, or not allowed
+# - may end in slash
+# - consideration for . and .. and ...
+#
+# - MS-DOG considerations?
+#
+# - devices: LPTn:{0,2} COMn:?, CON:?, NUL:?, ad nauseum
+# - case-sensitivity in MS-DOG file systems
+# - special characters in filenames
+
+   local($url) = @_;
+
+#  $url = &hook_uri_translate_pre($url);
+
+   ($THE_OS =~ /^WIN/) && ($url =~ m;/(LPT\d|COM\d|CON|NUL)[:]{0,2}/*$;i) && return (undef,undef,undef,undef,404);
+
+   print DEBUGLOG "Parse_URI: url=$url\n";
+
+   local($file)      = $url;
+   local($query)     = '';
+   local($pathinfo)  = '';
+   local($isascript) = 0;
+   local($tmp);
+
+   ($file, $query) = split(/\?/, $url, 2) if index($url, '?') >= 0;
+   # prevent directory go-back
+   $file =~ /(\.\.|\.$)/ && return (undef,undef,undef,undef,404);
+
+   local($junk) = $file;
+
+   $junk =~ tr/A-Z/a-z/ if $THE_OS =~ /^WIN/;
+
+   if ($junk =~ /^$cgiprefix/o ||
+       (defined $cgisuffix && $junk =~ /$cgisuffix(\?|$)/o)) {
+      $isascript = 1;
+
+      if ($junk =~ /^$cgiprefix/o) {
+	  $file =~ s/^$cgiprefix/$cgidir/io;
+      } else {
+	  $file = "$htmldir/$file";
+      }
+
+# zz      
+      $query = substr($query, 0, $QUERY_MAX_LEN) if length($query) > $QUERY_MAX_LEN; # safe side
+
+      print DEBUGLOG "Parse_URI: file=$file\n";
+      print DEBUGLOG "Parse_URI: query=$query\n";
+
+      # pathinfo
+      # keep an eye on this loop for runaway conditions
+      $tmp = $file;
+
+      while ($tmp && ! -r $tmp) {
+         $pathinfo = substr($tmp, rindex($tmp, '/')) . $pathinfo;
+         $tmp = substr($tmp, 0, rindex($tmp, '/'));
+      }
+
+      $file = $tmp;
+      # $file = substr($file,0,rindex($file,$pathinfo)) if $pathinfo;
+      ($script_name = $url) =~ s/\?.*$//;
+
+      print DEBUGLOG "Parse: file2=$file\n";
+      print DEBUGLOG "Parse: pathinfo=$pathinfo\n";
+
+      $ENV{'SCRIPT_NAME'}     = $script_name;
+      $ENV{'QUERY_STRING'}    = $query if $query;
+      $ENV{'PATH_INFO'}       = $pathinfo if $pathinfo;
+      $ENV{'PATH_TRANSLATED'} = $htmldir.$pathinfo if $pathinfo;
+      $ENV{'SCRIPT_FILENAME'} = $file;
+   }
+   elsif ($junk =~ /^$htmlprefix/o) {
+      $file =~ s/^$htmlprefix/$htmldir/io;
+
+      $file =~ m://: && return (undef,undef,undef,undef,404);
+
+      if ($OK_INDEX_PAGES &&
+         ( (($file =~ m:/$:) && (-r $file.$index_page)) ||
+         (-d $file && -r $file.'/'.$index_page)) ) {
+
+         $file .= $index_page;
+      }
+   }
+   else {
+      print DEBUGLOG "Parse: Invalid url prefix for $file\n";
+   }
+
+#  ($file,$query,$pathinfo,$isascript) = &hook_uri_translate_post($file,$query,$pathinfo,$isascript);
+   ($file,$query,$pathinfo,$isascript,0);
+}
+
+sub parse_SSI {
+    local($s)      = @_; # input buffer
+    local($out)    = ''; # output buffer
+    local($oldpos) = 0;  # regex prematch position
+
+    print DEBUGLOG "Parse_SSI: nesting_level= $nesting_level\n";
+
+    if ($nesting_level++ >= $SSI_MAX_NESTING_LEVEL) {
+       print DEBUGLOG "Parse: SSI_MAX_NESTING_LEVEL reached.\n";
+       $nesting_level--;
+       return '';
+    }
+
+    # SSI Configuration Directive states
+    local($errmsg)  = '[an error occurred while processing this directive]';
+    local($sizefmt) = 'bytes'; # domain is (bytes,K)
+    local($timefmt) = '%D %r'; # default is "mm/dd/yyyy hh:mm:ss AM|PM"
+
+    # times should be formatted according to $timefmt as needed
+    local($localtime) = scalar localtime;
+    local($gmtime) = scalar gmtime;
+
+    # SSI template like this: <!--#$command $parameter="$value"-->
+    # ... but we should also allow parse a list of parameter and values
+
+    while ($s =~ /<!--#(\w+) (\w+)="([^"]*)"-->/g) {
+       local($command, $parameter, $value) = ($1, $2, $3);
+
+#      print DEBUGLOG pos(), " $command:$parameter:$value\n";
+       $out .= substr($s, $oldpos, pos($s)-$oldpos-length $&);
+#      $out .= $`; # doesn't seem to work?
+       $oldpos = pos($s);
+
+       if ($command eq 'config') { # SSI directives
+          if ($parameter eq 'errmsg') {
+             $errmsg = $value;
+          }
+          elsif ($parameter eq 'sizefmt') {
+             $sizefmt = $value if $value eq 'bytes' || $value eq 'abbrev';
+          }
+          elsif ($parameter eq 'timefmt') {
+             $timefmt = $value;
+          }
+       }
+       elsif ($command eq 'echo') {
+          if ($parameter eq 'var') {
+	     if ($value eq 'DOCUMENT_NAME') {
+	        $out .= $file;
+	     }
+	     elsif ($value eq 'DOCUMENT_URI') {
+	        $out .= $url;
+	     }
+	     elsif ($value eq 'QUERY_STRING_UNESCAPED') {
+	        $out .= $query; 
+	     }
+	     elsif ($value eq 'DATE_LOCAL') {
+	        $out .= fmt_time($localtime, $timefmt);
+	     }
+	     elsif ($value eq 'DATE_GMT') {
+	        $out .= fmt_time($gmtime, $timefmt);
+	     }
+	     elsif ($value eq 'LAST_MODIFIED') {
+	        $out .= fmt_time(scalar localtime((stat $file)[9]), $timefmt);
+	     }
+	     else {
+	        $out .= $ENV{$value} if defined $ENV{$value};
+	     }
+          }
+       }
+       elsif ($command eq 'fsize') {
+          local($parm) = $value;
+	  print DEBUGLOG "SSI: fsize file=$value\n";
+          if ($parameter eq 'file') { # from current directory
+             local($size) = -s $parm;
+	     print DEBUGLOG "SSI: fsize size=$size\n";
+
+	     $size = int($size/1024) if $sizefmt eq 'abbrev';
+	     $out .= $size . ' ' . ($sizefmt eq 'bytes' ? 'bytes' : 'K');
+          }
+	  elsif ($parameter eq 'virtual') {
+	     #to do
+	  print DEBUGLOG "SSI: fsize file=$value\n";
+             local($file,$query,$pathinfo,$isascript) = parse_URI($parm);
+	     local($size) = -s $file;
+	     print DEBUGLOG "SSI: fsize size=$size\n";
+
+	     $size = int($size/1024) if $sizefmt eq 'abbrev';
+	     $out .= $size . ' ' . ($sizefmt eq 'bytes' ? 'bytes' : 'K');
+          }
+       }
+       elsif ($command eq 'flastmod') {
+	  local($parm)=$value;
+	  if ($parameter eq 'file') { # from current directory
+	     $out .= fmt_time(scalar localtime((stat $parm)[9]), $timefmt) if -e $parm;
+          }
+	  elsif ($parameter eq 'virtual') {
+             local($file,$query,$pathinfo,$isascript) = parse_URI($parm);
+	     $out .= fmt_time(scalar localtime((stat $file)[9]), $timefmt) if -r $file;
+	  }
+       }
+       elsif ($command eq 'exec') {
+          if ($parameter eq 'cmd') { # physical path
+             $out .= `$value`;
+          }
+          elsif ($parameter eq 'cgi') { # virtual path
+	     local($current_pos) = pos($s); # recursion destroys pos()
+             $out .= inlined_pages($value);
+	     pos($s) = $current_pos;
+          }
+       }
+       elsif ($command eq 'include') {
+          if ($parameter eq 'file') { # from current directory
+             if (open(INC, $value)) {
+	        local($/)=undef;
+     	        local($sinc) = <INC>;
+	        $out .= $sinc;
+	        close INC;
+	     }
+             else {
+		$out .= "Error: cannot read file $value";
+             }
+          }
+          elsif ($parameter eq 'virtual') { # relative to server root
+	     local($current_pos) = pos($s); # recursion destroys pos()
+	     $out .= inlined_pages($value);
+	     pos($s) = $current_pos;
+          }
+      }
+      else {
+         $out .= $errmsg;
+      }
+   }
+
+   $nesting_level--;
+   $out .= substr($s, $oldpos);
+}
+
+sub print_response {
+    # generate error response
+    local($errno, $errgeneral, $errmsg1, $content_type, $realm, $mtime) = @_;
+    local($errmsg) = $errno. ' '.$errors{$errno};
+    $content_type = 'text/html' if ! defined $content_type || $content_type eq '';
+
+print DEBUGLOG "headers = $headers\n";
+
+# $response = &hook_response_pre();
+
+    if ($proto =~ m:^HTTP/1\.\d+:) {
+       $response .= <<EOD;
+HTTP/1.0 $errmsg
+Date: @{[ rfc_date(scalar gmtime) ]}
+EOD
+       if (!$isascript && $headers) {
+          $response .= "Content-type: $content_type\n";
+       }
+    }
+
+    $response .= "Server: $VERSION\n" if $OK_SERVER_RESPONSE && $headers;
+    if ($errno lt '203' && $headers) {
+       $response .= "Last-Modified: @{[ rfc_date(scalar gmtime($mtime)) ]}\n" if $OK_LAST_MODIFIED_RESPONSE;
+    }
+
+    if ($errno == 401) {
+       $response .= <<EOD;
+WWW-Authenticate: Basic realm="$realm"
+EOD
+    }
+
+   $response =~ s/\n/$CRLF/g;
+
+# $response .= &hook_response_post($response);
+
+   $response .= $CRLF if !$isascript || $errno > 200;
+
+   $authuser = '-';
+   $authuser = $ENV{'REMOTE_USER'} if $ENV{'REMOTE_USER'} ne '';
+
+   local($l) = 0;
+   $l = $mysize if $mysize > 0;
+
+   print ACCESSLOG <<EOD;
+$host - $authuser [@{[&logdate]}] "$method $url $proto" $errno $l "$ENV{'HTTP_REFERER'}" "$ENV{'HTTP_USER_AGENT'}"
+EOD
+
+   return if $errno == 200;
+
+   print ERRORLOG <<EOD;
+[@{[scalar localtime]}] access to $url failed for $host, reason: $verrors{$errno}
+EOD
+
+   $response .= <<EOD;
+<HTML>
+<HEAD><TITLE>$errmsg</TITLE></HEAD>
+<BODY><H1>$errmsg</H1>
+$verrors{$errno}: <PRE>$errgeneral</PRE>
+<HR>
+<ADDRESS><A HREF="http://www.perl.com/CPAN-local/authors/id/J/JB/JBRIGGS">
+$VERSION</A></ADDRESS>
+</BODY>
+</HTML>
+EOD
+}
+
+sub dirlist {
+   local($dir, $url) = @_;
+   opendir(DH, $dir) || do { &print_response(404,$url); return 0; };
+   local($d)         = '';
+   local($count)     = 0;
+
+   local($url2) = $url;
+
+   $url = $ENV{SERVER_URL} . $url;
+   $url .= '/' unless substr($url,-1) eq '/';
+
+# Adapted from Plexus dir.pl by Tony Sanders, April 1993
+
+   local($url_parent) = $url;
+   ($url_parent) = $url =~ m|($service://.*?/.*?/)[^/]+/$|; # trim off subd
+
+   $response .= <<EOD;
+<title>Index of $url2</title>
+<h1>Index of $url2</h1>
+<pre>
+EOD
+
+   $response .= sprintf("%-25s%9s %s\n\n", 'Modified', 'Size', 'Description');
+
+   $response .= sprintf("%35s<A NAME=%d HREF=\"%s%s\">Parent Directory</A>\n",
+           '', $count++, $url_parent, (length($url_parent)?'':'/'));
+
+   # Get directory listing
+   local(@dirs) = sort(readdir(DH));
+
+   while ($_ = shift @dirs) {
+	next if /^\.+$/;
+
+	local($dev, $ino, $mode, $nlink, $uid, $gid, $rdev, $size,
+	    $atime, $mtime, $ctime, $blksize, $blocks);
+
+	($dev, $ino, $mode, $nlink, $uid, $gid, $rdev, $size,
+	    $atime, $mtime, $ctime, $blksize, $blocks) = stat("$dir/$_");
+
+	$response .= scalar gmtime($mtime);
+
+	if (-d _) {
+	   $response .= '     [DIR] ';
+           $response .= "<A NAME=$count HREF=\"$url$_\/\">$_</A>\n";
+	}
+	else {
+	   $response .= sprintf(" %9d ", $size);
+           $response .= "<A NAME=$count HREF=\"$url$_\">$_</A>\n";
+	}
+       
+	$count++;
+   }
+
+   closedir(DH);
+   1
+}
+
+sub uri_init {
+   %subst = ();  # compiled patterns
+
+   # Build a char->hex map
+   for (0..255) {
+       $escapes{chr($_)} = sprintf("%%%02X", $_);
+   }
+}
+
+sub uri_escape {
+# from CPAN
+    local($text, $patn) = @_;
+    return undef unless defined $text;
+
+    if (defined $patn) {
+       unless (exists  $subst{$patn}) {
+	  # Because we can't compile regex we fake it with a cached sub
+	  $subst{$patn} =
+	      eval "sub {\$_[0] =~ s/([$patn])/\$escapes{\$1}/g; }";
+	  print DEBUGLOG "uri_escape: $@" if $@;
+       }
+       &{$subst{$patn}}($text);
+    }
+    else {
+       # Default unsafe characters. (RFC1738 section 2.2)
+       $text =~ s/([\x00-\x20\"#%;<>?{}|\\^~`\[\]\x7F-\xFF])/$escapes{$1}/g;
+    }
+
+    $text
+}
+
+sub uri_unescape {
+# from CPAN
+    # Note from RFC1630:  "Sequences which start with a percent sign
+    # but are not followed by two hexadecimal characters are reserved
+    # for future extension"
+    local(@copy) = @_;
+    for (@copy) { s/%([\dA-Fa-f]{2})/chr(hex($1))/eg; }
+    wantarray ? @copy : $copy[0];
+}
+
+sub b64init {
+# Mark Mielke <markm@nortel.ca>
+   INITIALIZE: {
+      @Table = (('A' .. 'Z'), ('a' .. 'z'), ('0' .. '9'), '+', '/');
+      for ($_ = 0; $_ <= $#Table; $_++) {
+          $DecodeTable[ord($Table[$_])] = $_;
+      }
+   }
+}
+
+sub b64encode {
+# Mark Mielke <markm@nortel.ca>
+
+   local($_) = unpack('B*', $_[0]);
+   $_ .= '0' x (6 - (length($_) % 6)) if (length($_) % 6) != 0;
+   s/.{6}/$Table[ord(pack('B6', $&)) >> 2]/eg;
+   $_
+}
+
+sub b64decode {
+# Mark Mielke <markm@nortel.ca>
+
+   local($_) = $_[0];
+   s/./unpack('B6', chr($DecodeTable[ord($&)] << 2))/eg;
+   $_ = pack('B' . (int(length($_) / 8) * 8), $_);
+
+   s/\000//g; # sometimes extra nulls
+   $_
+}
+
+sub dtinit {
+
+   %months = ('Jan' , 0, 'Feb' , 1, 'Mar' , 2, 'Apr' , 3, 'May' , 4, 'Jun' , 5,
+              'Jul' , 6, 'Aug' , 7, 'Sep' , 8, 'Oct' , 9, 'Nov' , 10, 'Dec' , 11);
+
+   %month_abbrev_from_num = ('0', 'Jan' , 1, 'Feb' , 2, 'Mar' , 3, 'Apr' , 4, 'May' , 5, 'Jun' , 6, 'Jul' , 7, 'Aug' , 8, 'Sep' , 9, 'Oct' , 10, 'Nov' , 11, 'Dec');
+
+   %day_num_from_abbrev = ('Sun' , 0, 'Mon' , 1, 'Tue' , 2, 'Wed' , 3, 'Thu' , 4, 'Fri' , 5, 'Sat', 6 );
+
+   %day_name_from_abbrev = ( 'Sun', 'Sunday',
+                             'Mon', 'Monday',
+     	                     'Tue', 'Tuesday',
+     	                     'Wed', 'Wednesday',
+	                     'Thu', 'Thursday',
+	                     'Fri', 'Friday',
+	                     'Sat', 'Saturday' );
+
+   %month_name_from_abbrev = ( 'Jan', 'January',
+                    'Feb', 'February',
+                    'Mar', 'March',
+                    'Apr', 'April',
+                    'May', 'May',
+                    'Jun', 'June',
+                    'Jul', 'July',
+                    'Aug', 'August',
+                    'Sep', 'September',
+                    'Oct', 'October',
+                    'Nov', 'November',
+                    'Dec', 'December' );
+}
+
+## Various date formats commonly used in internet software
+## Sun, 06 Nov 1994 08:49:37 GMT    ; RFC 822, updated by RFC 1123
+## Sunday, 06-Nov-94 08:49:37 GMT   ; RFC 850, obsoleted by RFC 1036
+## Sun Nov  6 08:49:37 1994         ; ANSI C's asctime() format
+
+sub date_parse {
+   local($d) = @_;
+
+   return '' if $d eq '';
+
+   local($year, $month, $day, $hour, $min, $sec);
+
+# RFC 822, updated by RFC 1123
+   if ($d =~ /^[a-zA-Z]{3}, (\d{2}) ([a-zA-Z]{3}) (\d{4}) (\d{2}):(\d{2}):(\d{2}) GMT$/) {
+      $day  = $1;
+      $month = $months{$2}+1;
+      $year = $3;
+
+      $hour = $4; $min  = $5; $sec  = $6;
+   }
+# RFC 850, obsoleted by RFC 1036
+   elsif ($d =~ /^[a-zA-Z]{6,}, (\d{2})-([a-zA-Z]{3})-(\d{2}) (\d{2}):(\d{2}):(\d{2}) GMT$/) {
+      $day  = $1;
+      $month = $months{$2}+1;
+      $year = 1900+$3;
+
+      $hour = $4; $min = $5; $sec = $6;
+   }
+# ANSI C's asctime() format
+   elsif ($d =~ /^[a-zA-Z]{3} ([a-zA-Z]{3}) +(\d{1,2}) (\d{2}):(\d{2}):(\d{2}) (\d{4})$/) {
+      $day  = $2;
+      $month = $months{$1}+1;
+      $year = $6;
+
+      $hour = $3; $min = $4; $sec = $5;
+   }
+   else {
+      return '';
+   }
+
+   # generate datestamp like Date::Manip uses for comparisons
+
+    if ($year  >= 1970 && $year  <= 9999 &&
+       $month >=    1 && $month <=   12 &&
+       $day   >=    1 && $day   <=   31 &&
+       $hour  >=    0 && $hour  <=   24 &&
+       $min   >=    0 && $min   <=   59 &&
+       $sec   >=    0 && $sec   <=   59 ) {
+
+       sprintf("%4d%02d%02d:%02d%02d%02d",$year,$month,$day,$hour,$min,$sec);
+    }
+    else {
+       '';
+    }
+}
+
+sub modified_since {
+# perform date comparison for If-Modified-Since client request
+   local($date_modified_since, $date_file) = @_;
+
+   return 1 if $date_modified_since lt $date_file;
+
+   0
+}
+
+## Sun, 06 Nov 1994 08:49:37 GMT    ; RFC 822, updated by RFC 1123
+sub rfc_date {
+   local($date) = @_;
+
+   if (local($wday, $month, $day, $time, $year) = $date =~ 
+      /(\w+) (\w+) +(\d+) (\d{2}:\d{2}:\d{2}) (\d{4})/) {
+      sprintf("%s, %02d %s %d %s GMT",$wday,$day,$month,$year,$time);
+   }
+   else {
+      ''
+   }
+}
+
+sub fmt_time {
+   local($date, $fmt) = @_;
+
+   ##### Note: consider accepting numeric time instead of string
+   ##### for easier calculation of weeknumber and daynumber
+
+   local($wday, $month, $day, $hour, $min, $sec, $year) = $date =~ 
+         /(\w+) (\w+) +(\d+) (\d{2}):(\d{2}):(\d{2}) (\d{4})/;
+
+   local($out)    = '';
+   local($oldpos) = 0;
+
+   while ($fmt =~ /(%[a-zA-Z])/g) {
+      local($f) = $1;
+      $out .= substr($fmt, $oldpos, pos($fmt)-$oldpos-length $f);
+      $oldpos = pos($fmt);
+#      print DEBUGLOG 'fmt_time: ',pos($fmt), " $f\n";
+
+      # Date as "%m/%d/%y"
+      if ($f eq '%D') { $out .= "@{[sprintf('%02d',$months{$month}+1)]}/$day/$year"}
+      # time as "%I:%M:%S %p"
+      elsif ($f eq '%r') { $out .= "$hour:$min:$sec ".($hour >= 12 ? 'PM' : 'AM')}
+      # Day of the week abbreviation
+      elsif ($f eq '%a') { $out .= $wday}
+      # Day of the week
+      elsif ($f eq '%A') { $out .= $day_name_from_abbrev{$wday}}
+      # Month name abbreviation
+      elsif ($f eq '%b') { $out .= $month}
+      # Month name
+      elsif ($f eq '%B') { $out .= $month_name_from_abbrev{$month}}
+      # Date like '01'
+      elsif ($f eq '%d') { $out .= sprintf("%02d",$day)}
+      # Date like '1'
+      elsif ($f eq '%e') { $out .= sprintf("%d",$day)}
+      # 24-hour clock hour
+      elsif ($f eq '%H') { $out .= sprintf("%02d",$hour)}
+      # 12-hour clock hour
+      elsif ($f eq '%I') { $out .= sprintf("%02d", $hour > 12 ? $hour - 12 : $hour)}
+      # Decimal day of the year
+      elsif ($f eq '%j') {
+# To Do
+         $out .= '';
+      }
+      # Month number
+      elsif ($f eq '%m') { $out .= sprintf("%02d",$months{$month})}
+      # Minutes
+      elsif ($f eq '%M') { $out .= sprintf("%02d",$min)}
+      # AM | PM
+      elsif ($f eq '%p') { $out .= $hour >= 12 ? 'PM' : 'AM'}
+      # Seconds
+      elsif ($f eq '%S') { $out .= $sec}
+      # 24-hour time as "%H:%M:%S"
+      elsif ($f eq '%T') { $out .= "$hour:$min:$sec"}
+      # Week of the year 
+      elsif ($f eq '%U' || $f eq '%W') {
+# To Do
+         $out .= ''
+      }
+      # Day of the week number
+      elsif ($f eq '%w') { $out .= $day_num_from_abbrev{$wday}}
+      # Year of the century
+      elsif ($f eq '%y') { $out .= sprintf("%02d",substr($year, -2))}
+      # Year
+      elsif ($f eq '%Y') { $out .= $year}
+      # Time Zone
+      elsif ($f eq '%Z') { $out .= $ENV{'TZ'}}
+      else { $out .= $f}
+   }
+
+   $out .= substr($fmt, $oldpos);
+}
+
+sub page_cache_init {
+    local($/) = undef;
+
+    foreach (keys %page_cache) {
+       local($file,$query,$pathinfo,$isascript) = parse_URI($_);
+
+       open(X, $file) || die "$0: cannot open cache file $_: $!";
+       binmode X;
+       $page_cache{$_} = <X>;
+       close X;
+    }
+    1
+}
+
+sub setenv {
+   foreach (keys %ENV) {
+      delete $ENV{$_} unless $_ =~ /^(PATH|SERVER_SOFTWARE|SERVER_ADMIN|GATEWAY_INTERFACE|SERVER_PORT|SERVERNAME_DOCUMENT_ROOT|HTTPS)$/;
+   }
+}
+
+sub check_redirect {
+   local($url) = @_;
+
+   if (defined $url_redirect_list{$url}) {
+      print_response(301, '', '', '', '', '', $url);
+      1;
+   }
+   else {
+      0;
+   }
+}
+
+sub check_move_permanently {
+   local($url) = @_;
+
+   if (defined $url_move_permanently_list{$url}) {
+      print_response(301, '', '', '', '', '', $url);
+      1;
+   }
+   else {
+      0;
+   }
+}
+
+sub check_move_temporarily {
+   local($url) = @_;
+
+   if (defined $url_move_temporarily_list{$url}) {
+      print_response(302, '', '', '', '', '', $url);
+      1;
+   }
+   else {
+      0;
+   }
+}
+
+sub logdate {
+# according to Stefan Stapelberg:
+#
+# Common Logfile Format (CLF):  dns RFC931-inetd authuserid [date] "clf-uri" resp-code req-size
+# Combined Logfile Format:      CLF + "referrer" + "user-agent"
+# Extended Logfile Format:      CLF + user-agent + referrer
+
+    local ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst);
+    ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime;
+    local($month) = $month_abbrev_from_num{$mon};
+    $year+=1900;$mday++;
+
+    sprintf("%02d/%s/%4d:%02d:%02d:%02d %s",$mday,$month,$year,$hour,$min,$sec,&tz);
+}
+
+sub tz {
+# Larry Rosler, Usenet posting
+   local($l_min, $l_hour, $l_year, $l_yday) = (localtime $^T)[1, 2, 5, 7];
+   local($g_min, $g_hour, $g_year, $g_yday) = (   gmtime $^T)[1, 2, 5, 7];
+   local($tzval) = ($l_min - $g_min)/60 + $l_hour - $g_hour +
+                   24 * ($l_year - $g_year || $l_yday - $g_yday);
+
+   sprintf("%+05d",$tzval);
+}
+#end
+
+sub ssl_start {
+# from sslecho.pl - Echo server using SSL
+#
+# Copyright (c) 1996,1998 Sampo Kellomaki <sampo@iki.fi>, All Rights Reserved.
+# Date:   27.6.1996, 8.6.1998
+#
+
+require Net::SSLeay; import Net::SSLeay qw(die_now die_if_ssl_error);
+
+# use Net::SSLeay qw(die_now die_if_ssl_error);
+
+#  $Net::SSLeay::trace = 3; # Super verbose debugging
+
+#
+# Prepare SSLeay
+#
+
+   Net::SSLeay::load_error_strings();
+   Net::SSLeay::ERR_load_crypto_strings();
+   Net::SSLeay::SSLeay_add_ssl_algorithms();
+   Net::SSLeay::randomize();
+
+   print DEBUGLOG "ssl: Creating SSL context...\n" if $trace > 1;
+   $ctx = Net::SSLeay::CTX_new() || die_now("CTX_new ($ctx): $!\n");
+   print DEBUGLOG "ssl: Setting cert and RSA key...\n" if $trace > 1;
+   Net::SSLeay::set_server_cert_and_key($ctx, $cert_pem, $key_pem) || die "key";
+
+   $ENV{'SSL_SSLEAY_VERSION'} = '';
+}
+
+sub ssl_session_start {
+    $old_out = select (NS); $| = 1; select ($old_out);  # Piping hot!
+    
+    if ($trace) {
+	($af,$client_port,$client_ip) = unpack('S n a4 x8',$addr);
+	@inetaddr = unpack('C4',$client_ip);
+	print DEBUGLOG "$af connection from " . join ('.', @inetaddr)
+	    . ":$client_port\n" if $trace;;
+    }
+    
+    #
+    # Do SSL negotiation stuff
+    #
+
+    print DEBUGLOG "ssl: Creating SSL session (cxt=`$ctx')...\n" if $trace>1;
+    $ssl = Net::SSLeay::new($ctx) || die_now("ssl new ($ssl): $!");
+
+    print DEBUGLOG "ssl: Setting fd (ctx $ctx, con $ssl)...\n" if $trace>1;
+    Net::SSLeay::set_fd($ssl, fileno(NS));
+
+    print DEBUGLOG "ssl: Entering SSL negotiation phase...\n" if $trace>1;
+    
+    Net::SSLeay::accept($ssl);
+    die_if_ssl_error("ssl_echo: ssl accept: ($!)");
+    
+    print DEBUGLOG "ssl: Cipher `" . Net::SSLeay::get_cipher($ssl) . "'\n" if $trace;
+    
+    #
+    # Connected. Exchange some data.
+    #
+    
+    $got = Net::SSLeay::ssl_read_all($ssl); # || die "ssl read failed";
+
+    print DEBUGLOG "ssl: got " . length($got) . " bytes\n" if $trace > 2;
+    print DEBUGLOG "ssl: Got `$got' (" . length ($got) . " chars)\n" if $trace > 2;
+
+    @got = split /\n/, $got;
+}
+
+sub ssl_session_end {
+    Net::SSLeay::ssl_write_all($ssl, $response); # ||  die "ssl write failed";
+    print DEBUGLOG "ssl: Tearing down the connection.\n\n" if $trace > 1;
+    Net::SSLeay::free($ssl);
+}
+
+sub ssl_end {
+   Net::SSLeay::CTX_free($ctx);
+}
+
+__END__

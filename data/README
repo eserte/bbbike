@@ -1,0 +1,13 @@
+README for the data directory
+------
+
+Format of the files:
+
+    Name TAB Category SPACE X1,Y1 SPACE X2,Y2 SPACE ...
+
+You can use the methods in Strassen.pm (new, init, next) to read the
+data files.
+
+The data files are released under the GPL license. Please refer to the
+COPYING file in the parent directory.
+

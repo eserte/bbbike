@@ -1,0 +1,61 @@
+WWW-Servereinrichtung:
+
+Mindestinstallation:
+
+Unterverzeichnis im htdocs-Verzeichnis einrichten, dorthin wechseln
+und dann ~/src/bbbike/cgi/mksymlinks aufrufen. Das sollte folgende
+Aktionen durchführen
+
+    * Symlinks für html und images setzen, siehe unten
+    * cgi-Verzeichnis erzeugen und in das Verzeichnis entweder ein
+      mini-CGI (siehe unten) schreiben oder direkt einen Link auf
+      bbbike.cgi setzen
+
+* ~/www/bbbike-tmp für die Quadranten-Kartenbilder erzeugen
+* Rechte überprüfen! Rechte überprüfen! Rechte überprüfen!
+
+----------------------------------------------------------------------
+
+Ausführlich:
+
+Symlinks setzen; Beispiel für ~/www/bbbike:
+
+-rwxr-xr-x  1 eserte  eserte   65  4 Apr  1998 ./cgi/bbbike-fast.cgi*
+lrwxrwxrwx  1 eserte  eserte   52  4 Apr  1998 ./cgi/bbbike-fast.cgi.config@ -> /home/e/eserte/src/bbbike/cgi/bbbike-fast.cgi.config
+-rwxr-xr-x  1 eserte  eserte  117 17 Feb 22:12 ./cgi/bbbike.cgi*
+lrwxrwxrwx  1 eserte  eserte   47 28 Mär  1998 ./cgi/bbbike.cgi.config@ -> /home/e/eserte/src/bbbike/cgi/bbbike.cgi.config
+lrwxrwxrwx  1 eserte  eserte   40  7 Feb 02:14 ./cgi/bbbike.fcgi@ -> /home/e/eserte/src/bbbike/cgi/bbbike.cgi
+-rwxr-xr-x  1 eserte  eserte  120 18 Feb 21:24 ./cgi/berlinmap.cgi*
+lrwxrwxrwx  1 eserte  eserte   30 20 Nov 10:18 ./html@ -> /home/e/eserte/src/bbbike/html
+lrwxrwxrwx  1 eserte  eserte   32 10 Mär  1998 ./images@ -> /home/e/eserte/src/bbbike/images
+lrwxrwxrwx  1 eserte  eserte   30 10 Mär  1998 ./java@ -> /home/e/eserte/src/bbbike/java
+-rwxr-xr-x  1 eserte  eserte   59 15 Feb 23:35 ./t/cgiinfo.cgi*
+
+Die cgi's rufen einfach das jeweilige "echte" CGI auf, also z.B.:
+
+	#!/bin/sh
+	perl /home/e/eserte/src/bbbike/cgi/bbbike.cgi $*
+
+
+Zustzlich sollte noch ein Verzeichnis ~/www/bbbike-tmp eingerichtet
+werden. Dieses Verzeichnis muß für User, der das CGI ausführt,
+schreibbar sein.
+
+Es muß darauf geachtet werden, daß alle Verzeichnisse bis zum
+cgi-Verzeichnis im BBBike-Source das x-Bit gesetzt haben, damit
+FindBin funktioniert.
+
+Für den apache muß das Homeverzeichnis anpaßt werden: s/www/public_html/g
+
+----------------------------------------------------------------------
+BBBike mit modperl einsetzen:
+
+modperl muss bereits installiert sein (bei FreeBSD: port p5-Apache
+verwenden!). Dann folgende Zeilen (Directory ggfs. ändern) in
+apache.conf eintragen:
+
+<Directory "/home/e/eserte/src/bbbike/cgi">
+SetHandler perl-script
+PerlHandler Apache::Registry
+Options +ExecCGI
+</Directory> 

@@ -1,0 +1,79 @@
+#!/usr/bin/env perl
+# -*- perl -*-
+
+#
+# $Id: bbbikeclient,v 1.9 2001/03/25 17:13:39 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 1999,2001 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: eserte@cs.tu-berlin.de
+# WWW:  http://user.cs.tu-berlin.de/~eserte/
+#
+
+use FindBin;
+use lib "$FindBin::RealBin";
+use BBBikeServer;
+use Getopt::Long;
+use strict;
+
+$^W = 1;
+
+if (BBBikeServer::running()) {
+    # adjust filenames (from relative to absolute)
+    my($center, $centerc, $from, $to);
+    if (!GetOptions("center=s" => \$center,
+  			          "centerc=s" => \$centerc,
+				  "from=s"    => \$from,
+				  "to=s"      => \$to,
+			         )) {
+	warn "Some arguments will be ignored...\n";
+    }
+    my @argv;
+    if (defined $center) {
+	push @argv, "-center", $center;
+    }
+    if (defined $centerc) {
+	push @argv, "-centeric", $centerc;
+    }
+    if (defined $from) {
+	push @argv, "-from", $from;
+    }
+    if (defined $to) {
+	push @argv, "-to", $to;
+    }
+    for(my $i=0; $i<=$#ARGV; $i++) {
+	$_ = $ARGV[$i];
+	if (/^-/) {
+	    eval q{
+		   require File::Spec;
+		  };
+	    if (!$@) {
+		if (!File::Spec->file_name_is_absolute($_)) {
+		    require Cwd;
+		    $_ = File::Spec->catfile(Cwd::getcwd(), $_);
+		}
+	    }
+	}
+	push @argv, "-routefile", $_;
+    }
+    warn "Send to bbbike server: @argv";
+    exit 0 if !@argv;
+    exit 0 if (BBBikeServer::send_to_server(-argv => \@argv));
+}
+
+my @saveargs = @ARGV;
+my $startserver= 1;
+# XXX be quiet...
+GetOptions("startserver!" => \$startserver);
+if ($startserver) {
+# remove -startserver option, if necessary XXX
+    warn "No server process found, restarting bbbike...\n";
+    @ARGV = @saveargs;
+    unshift @ARGV, "-server";
+    system($^X, "$FindBin::RealBin/bbbike", @ARGV);
+}
+
+__END__

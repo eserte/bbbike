@@ -1,0 +1,934 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
+#include "EXTERN.h"
+#include "perl.h"
+#include "XSUB.h"
+#ifdef __cplusplus
+}
+#endif
+
+/* berechnet StrassenNetz mit KoordXY-Komponente, wenn definiert */
+#undef WITH_KOORDXY
+
+/* XXX andere Compiler ? */
+#ifndef __inline__
+#ifndef __GNUC__
+#define __inline__
+#endif /* __GNUC__ */
+#endif /* __inline__ */
+
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#if PERL_REVISION > 5 || (PERL_REVISION == 5 && (PERL_VERSION > 5 || (PERL_VERSION == 5 && (PERL_SUBVERSION > 57))))
+# define MODERN_PERL
+#endif
+
+#if !defined(PL_na) && !defined(MODERN_PERL)
+# define PL_na na
+#endif
+#if !defined(PL_sv_undef) && !defined(MODERN_PERL)
+# define PL_sv_undef sv_undef
+#endif
+
+#undef MYDEBUG
+
+/* Check whether the longest line in the database files does not
+ * overflow the buffer. Current longest:
+ * wasserumland2 with 8821 bytes.
+ * See rule "check-line-lengths" in data/Makefile
+ */
+#define MAXBUF 12288
+
+/* should be the same as in BBBikeTrans.pm */
+#define X_DELTA -200.0
+#define X_MOUNT 1
+#define Y_DELTA 600.0
+#define Y_MOUNT -1
+
+#define TRANSPOSE_X(x) (X_DELTA+X_MOUNT*x/25.0)*canvas_scale+0.5
+#define TRANSPOSE_Y(y) (Y_DELTA+Y_MOUNT*y/25.0)*canvas_scale+0.5
+
+typedef HV* StrassenNetz;
+
+double canvas_scale = 1;
+
+__inline__ static void
+to_koord1(s, x, y)
+char *s;
+SV **x, **y;
+{
+    char *p;
+
+    p = s;
+    while(*p != ',' && *p != 0) p++;
+    if (*p == 0) {
+      warn("%s is expected to be of the format x,y\n", s);
+      *x = 0;
+      *y = 0;
+      return;
+    }
+	
+    p++;
+
+    *x = newSViv(atoi(s));
+    *y = newSViv(atoi(p));
+}
+
+__inline__ static AV*
+to_koord(raw_coords)
+AV* raw_coords;
+{
+    int i = 0;
+    int len = av_len(raw_coords);
+    AV *res = newAV();
+
+    for(; i<=len; i++) {
+      SV **tmp;
+      SV *x, *y;
+      AV *elem;
+      char *s;
+
+      tmp = av_fetch(raw_coords, i, 0);
+      s = SvPV(*tmp, PL_na);
+
+      to_koord1(s, &x, &y);
+      elem = newAV();
+      av_extend(elem, 2);
+      av_store(elem, 0, x);
+      av_store(elem, 1, y);
+      av_push(res, newRV_noinc((SV*)elem));
+    }
+    return res;
+}
+
+static int
+strecke(kreuz_coord, i)
+AV* kreuz_coord;
+int i;
+{
+#ifdef INT_SQRT
+    long a1, a2;
+#else
+    float a1, a2;
+#endif
+    SV *tmp1, *tmp2;
+
+    tmp1 = SvRV(*av_fetch(kreuz_coord, i, 0));
+    tmp2 = SvRV(*av_fetch(kreuz_coord, i+1, 0));
+
+    a1 = SvIV(*(av_fetch((AV*)tmp1, 0, 0))) -
+         SvIV(*(av_fetch((AV*)tmp2, 0, 0)));
+    a2 = SvIV(*(av_fetch((AV*)tmp1, 1, 0))) -
+         SvIV(*(av_fetch((AV*)tmp2, 1, 0)));
+#ifdef INT_SQRT
+    return eyal(a1*a1 + a2*a2);
+#else
+    /* what's faster/better: hypot or sqrt(sqr ...) ? */
+    return hypotf(a1,a2);
+    /*    return sqrtf(a1*a1 + a2*a2); */
+#endif
+}
+
+void get_restrict_ignore_array(SV* ref, char*** array, char** array_strings) {
+  AV* ref_a;
+  int i, len = 0;
+  char *p;
+  if (!SvROK(ref) || SvTYPE(SvRV(ref)) != SVt_PVAV)
+    croak("usage: argument must be an array reference");
+  ref_a = (AV*)SvRV(ref);
+  /* get length for malloc'ed memory */
+  for (i=0; i<=av_len(ref_a); i++) {
+    SV** tmp = av_fetch(ref_a, i, 1);
+    int thislen;
+    SvPV(*tmp, thislen);
+    len += thislen + 1;
+  }
+  New(12, *array_strings, len, char);
+  /* size for the pointers */
+  New(13, *array, av_len(ref_a)+2, char*);
+  /* set the restrict array */
+  p = *array_strings;
+  for (i=0; i<=av_len(ref_a); i++) {
+    SV** tmp = av_fetch(ref_a, i, 1);
+    char *s;
+    int thislen;
+    s = SvPV(*tmp, thislen);
+    strncpy(p, s, thislen);
+    *(p+thislen) = 0;
+    (*array)[i] = p;
+    p += (thislen + 1);
+  }
+  (*array)[av_len(ref_a)+1] = NULL;
+}
+
+MODULE = BBBikeXS		PACKAGE = main
+
+PROTOTYPES: DISABLE
+
+
+void
+set_canvas_scale_XS(scale)
+	double scale;
+
+	PPCODE:
+	canvas_scale = scale;
+
+
+void
+transpose_ls_XS(x, y)
+	int x;
+	int y;
+
+	PPCODE:
+	EXTEND(sp, 2);
+	PUSHs(sv_2mortal(newSViv(TRANSPOSE_X(x))));
+	PUSHs(sv_2mortal(newSViv(TRANSPOSE_Y(y))));
+
+
+
+MODULE = BBBikeXS		PACKAGE = Strassen
+
+PROTOTYPES: DISABLE
+
+
+SV*
+to_koord1_XS(s)
+	char *s;
+
+	PREINIT:
+	AV *elem;
+	SV *x, *y;
+
+	CODE:
+	to_koord1(s, &x, &y);
+	elem = newAV();
+	av_extend(elem, 2);
+	av_store(elem, 0, x);
+	av_store(elem, 1, y);
+	RETVAL = newRV_noinc((SV*)elem);
+
+	OUTPUT:
+	RETVAL
+
+SV*
+to_koord_XS(raw)
+	SV *raw;
+
+	CODE:
+	if (!SvROK(raw) || SvTYPE(SvRV(raw)) != SVt_PVAV)
+            croak("argument to to_koord_XS should be a ref to an array.\n");
+	RETVAL = newRV_noinc((SV*)to_koord(SvRV(raw)));
+
+        OUTPUT:
+	RETVAL
+
+
+MODULE = BBBikeXS		PACKAGE = StrassenNetz
+
+PROTOTYPES: DISABLE
+
+void
+make_net_XS(self, ...)
+	StrassenNetz self;
+
+	PREINIT:
+	HV *net, *net2name, *wegfuehrung;
+#ifdef WITH_KOORDXY
+	HV *koordxy;
+#endif
+	int item_i;
+	SV *strassen, *ret;
+	SV** tmp;
+        /* int dbg_i = 0; */
+	char *k0_s, *k1_s;
+	STRLEN k0_slen, k1_slen;
+	SV* progress = &PL_sv_undef;
+	int count = 0;
+
+	CODE:
+	if (items > 2) {
+	  for(item_i = 1; item_i < items; item_i+=2) {
+	    char *tmp = SvPV(ST(item_i), PL_na);
+	    if (strcmp(tmp, "Progress") == 0) {
+	      progress = ST(item_i+1);
+	    }
+	  }
+	}
+	SP -= items;
+#ifdef INT_SQRT
+	set_eyal();
+#endif
+	net         = newHV();
+	net2name    = newHV();
+	wegfuehrung = newHV();
+#ifdef WITH_KOORDXY
+	koordxy  = newHV();
+#endif
+	hv_store(self, "Net",      strlen("Net"),
+		       newRV_noinc((SV*) net), 0);
+	hv_store(self, "Net2Name", strlen("Net2Name"),
+		       newRV_noinc((SV*) net2name), 0);
+	hv_store(self, "Wegfuehrung", strlen("Wegfuehrung"),
+		       newRV_noinc((SV*) wegfuehrung), 0);
+#ifdef WITH_KOORDXY
+	hv_store(self, "KoordXY",  strlen("KoordXY"),
+		       newRV_noinc((SV*) koordxy), 0);
+#endif
+	tmp = hv_fetch(self, "Strassen", strlen("Strassen"), 0);
+	if (tmp == NULL)
+	    croak("Missing $self->{Strassen}.\n");
+	if (!SvROK(*tmp) || SvTYPE(SvRV(*tmp)) != SVt_PVHV)
+	    croak("$self->{Strassen} is not a valid reference.\n");
+	strassen = *tmp;
+
+	PUSHMARK(sp);
+	XPUSHs(strassen);
+	PUTBACK;
+	perl_call_method("init", G_DISCARD|G_VOID);
+	SPAGAIN;
+
+	while(1) {
+	  AV *kreuzungen, *kreuz_coord;
+	  int i, kreuzungen_len;
+	
+	  ENTER;
+	  SAVETMPS;
+	  PUSHMARK(sp);
+	  XPUSHs(strassen);
+	  PUTBACK;
+	  perl_call_method("next", G_SCALAR);
+	  SPAGAIN;
+	  ret = newSVsv(POPs);
+	  PUTBACK;
+	  FREETMPS;
+	  LEAVE;
+
+	  tmp = av_fetch((AV*)SvRV(ret), 1, 0);
+	  
+	  if (tmp == NULL) break; /* XXX error? */
+	  kreuzungen = (AV*)SvRV(*tmp);
+	  if (kreuzungen == NULL || av_len(kreuzungen) == -1) break;
+	  kreuz_coord = to_koord(kreuzungen);
+
+	  kreuzungen_len = av_len(kreuzungen);
+	  for(i = 0; i < kreuzungen_len; i++) {
+	    SV **tmp, *k0, *k1;
+	    HV *hashtmp;
+	    int entf = strecke(kreuz_coord, i);
+	    k0 = *av_fetch(kreuzungen, i, 0);
+	    k1 = *av_fetch(kreuzungen, i+1, 0);
+	    k0_s = SvPV(k0, k0_slen);
+	    k1_s = SvPV(k1, k1_slen);
+
+	    tmp = hv_fetch(net, k0_s, k0_slen, 0);
+	    if (tmp == NULL) {
+	      hashtmp = newHV();
+	      hv_store(net, k0_s, k0_slen, newRV_noinc((SV*)hashtmp), 0);
+	    } else
+	      hashtmp = (HV*)SvRV(*tmp);
+	    hv_store(hashtmp, k1_s, k1_slen, newSViv(entf), 0);
+
+	    tmp = hv_fetch(net, k1_s, k1_slen, 0);
+	    if (tmp == NULL) {
+	      hashtmp = newHV();
+	      hv_store(net, k1_s, k1_slen, newRV_noinc((SV*)hashtmp), 0);
+	    } else
+	      hashtmp = (HV*)SvRV(*tmp);
+	    hv_store(hashtmp, k0_s, k0_slen, newSViv(entf), 0);
+#ifdef WITH_KOORDXY
+	    if (!hv_exists(koordxy, k0_s, k0_slen)) {
+	      tmp = av_fetch(kreuz_coord, i, 0);
+	      hv_store(koordxy, k0_s, k0_slen, newSVsv(*tmp), 0);
+	    }
+#endif
+	    tmp = hv_fetch(net2name, k0_s, k0_slen, 0);
+	    if (tmp == NULL) {
+	      hashtmp = newHV();
+	      hv_store(net2name, k0_s, k0_slen, newRV_noinc((SV*)hashtmp), 0);
+	    } else
+	      hashtmp = (HV*)SvRV(*tmp);
+	    tmp = hv_fetch((HV*)SvRV(strassen),
+			   "Pos", strlen("Pos"), 0);
+	    hv_store(hashtmp, k1_s, k1_slen, newSVsv(*tmp), 0);
+	  }
+#ifdef WITH_KOORDXY
+	  /* letztes $i */
+	  if (!hv_exists(koordxy, k1_s, k1_slen)) {
+	    tmp = av_fetch(kreuz_coord, i, 0);
+	    hv_store(koordxy, k1_s, k1_slen, newSVsv(*tmp), 0);
+	  }
+#endif
+
+	  SvREFCNT_dec((SV*)kreuz_coord);
+	  /* memleak: XXX	  av_undef(kreuz_coord); */
+	  SvREFCNT_dec(ret); /* XXX ja? */
+	  if (++count % 150 == 0 && SvTRUE(progress)) {
+	    PUSHMARK(sp);
+	    XPUSHs(progress);
+	    PUTBACK;
+	    perl_call_method("UpdateFloat", G_DISCARD);
+	    SPAGAIN;
+	  }
+	}
+	
+	hv_store(self, "UseMLDBM",      strlen("UseMLDBM"),
+		       newSViv(0), 0);
+
+MODULE = BBBikeXS		PACKAGE = BBBike
+
+PROTOTYPES: DISABLE
+
+void
+fast_plot_str(canvas, abk, fileref, ...)
+	SV *canvas;
+	char *abk;
+	SV *fileref;
+
+	PREINIT:
+	SV *progress = &PL_sv_undef;
+	FILE *f;
+	char buf0[MAXBUF];
+	char *buf;
+	char abkcat[24];
+	struct {
+	  int x, y;
+	} point[256];
+	AV *tags, *outline_tags;
+	int count;
+	SV* file_or_object;
+	char *file;
+	int file_count = 0;
+	AV* fileref_array = NULL;
+	AV* data_array = NULL;
+	int data_pos = 0;
+
+	int outline;
+	SV** sv_outline;
+	HV* str_outline;
+
+	SV** sv_sv_outline_color;
+	SV* sv_outline_color;
+	HV* outline_color;
+
+	HV* category_width = NULL;
+	HV* category_color = NULL;
+
+	SV *tags_sv, *fill_sv, *joinstyle_sv, *bevel_sv, *width_sv;
+
+	char** restr_array = NULL;
+	char* restr_array_strings = NULL;
+	char** ignore_array = NULL;
+	char* ignore_array_strings = NULL;
+
+	CODE:
+	if (items > 3)
+	  progress = ST(3);
+	if (items > 4 && SvTRUE(ST(4))) {
+	  /* get the restrict array and convert it to a C array */
+	  get_restrict_ignore_array(ST(4), &restr_array, &restr_array_strings);
+#if 0
+	  SV* restr = ST(4);
+	  AV* restr_a;
+	  int i, len = 0;
+	  char *p;
+	  if (!SvROK(restr) || SvTYPE(SvRV(restr)) != SVt_PVAV)
+	    croak("usage: argument must be an array reference");
+	  restr_a = (AV*)SvRV(restr);
+	  /* get length for malloc'ed memory */
+	  for (i=0; i<=av_len(restr_a); i++) {
+	    SV** tmp = av_fetch(restr_a, i, 1);
+	    int thislen;
+	    SvPV(*tmp, thislen);
+	    len += thislen + 1;
+	  }
+	  New(12, restr_array_strings, len, char);
+	  /* size for the pointers */
+	  New(13, restr_array, av_len(restr_a)+2, char*);
+	  /* set the restrict array */
+	  p = restr_array_strings;
+	  for (i=0; i<=av_len(restr_a); i++) {
+	    SV** tmp = av_fetch(restr_a, i, 1);
+	    char *s;
+	    int thislen;
+	    s = SvPV(*tmp, thislen);
+	    strncpy(p, s, thislen);
+	    *(p+thislen) = 0;
+	    restr_array[i] = p;
+	    p += (thislen + 1);
+	  }
+	  restr_array[av_len(restr_a)+1] = NULL;
+#endif
+        }
+	if (items > 5 && SvTRUE(ST(5))) {
+	  // category_width
+	  SV* cw = ST(5);
+	  if (!SvROK(cw) || SvTYPE(SvRV(cw)) != SVt_PVHV)
+	    croak("usage: argument must be an hash reference");
+	  category_width = (HV*)SvRV(cw);
+	}
+	if (items > 6 && SvTRUE(ST(6))) {
+	  /* get the restrict array and convert it to a C array */
+	  get_restrict_ignore_array(ST(6), &ignore_array, &ignore_array_strings);
+	}
+	SP -= items;
+
+ /* muﬂ noch zur Serienreife verfeinert werden ... scheint aber *wesentlich*
+    schneller als der perl-Part zu sein?! */
+
+	tags = newAV();
+	av_push(tags, newSVpv(abk, 0));
+	outline_tags = newAV();
+	strcpy(abkcat, abk);
+	strcat(abkcat, "-out");
+	av_push(outline_tags, newSVpv(abkcat, 0));
+
+	if (SvROK(fileref) && SvTYPE(SvRV(fileref)) == SVt_PVAV) {
+	  fileref_array = (AV*)SvRV(fileref);
+	}
+
+	str_outline = perl_get_hv("main::str_outline", TRUE);
+	sv_outline = hv_fetch(str_outline, abk, strlen(abk), 0);
+	if (sv_outline)
+	  outline = SvTRUE(*sv_outline);
+	else
+	  outline = 0;
+
+	outline_color = perl_get_hv("main::outline_color", TRUE);
+	sv_sv_outline_color = hv_fetch(outline_color, abk, strlen(abk), 0);
+	if (sv_sv_outline_color)
+	  sv_outline_color = *sv_sv_outline_color;
+	else
+	  sv_outline_color = newSVpv("grey50", 0); /* wird unten freigegeben */
+
+	category_color = perl_get_hv("main::category_color", TRUE);
+
+	tags_sv = newSVpv("-tags", 0);
+	fill_sv = newSVpv("-fill", 0);
+	joinstyle_sv = newSVpv("-joinstyle", 0);
+	bevel_sv = newSVpv("bevel", 0);
+	width_sv = newSVpv("-width", 0);
+
+	count = 0;
+	while(1) {
+	  if (fileref_array) {
+	    SV **s = av_fetch(fileref_array, file_count, 0);
+	    file_or_object = *s;
+	  } else
+	    file_or_object = fileref;
+
+	  if (sv_derived_from(file_or_object, "Strassen")) {
+	    SV **tmp;
+	    tmp = hv_fetch((HV*)SvRV(file_or_object), "Data", strlen("Data"), 0);
+	    if (tmp == NULL)
+	      croak("No Data member in Strassen object.\n");
+	    if (!SvROK(*tmp) || SvTYPE(SvRV(*tmp)) != SVt_PVAV)
+	      croak("{Data} member is not a valid array reference.\n");
+	    data_array = (AV*)SvRV(*tmp);
+	    data_pos = 0;
+	    f = NULL;
+	    buf = NULL;
+	  } else {
+	    file = SvPV(file_or_object, PL_na);
+	    f = fopen(file, "r");
+	    if (!f) croak("Can't open %s: %s\n", file, strerror(errno));
+	    buf = buf0;
+	  }
+
+	  /*count = 0;*/
+	  while((f && !feof(f)) ||
+		(data_array && data_pos <= av_len(data_array))) {
+	    char *p, *cat;
+	    int i, point_i;
+
+	    /* get line from file or data array */
+	    if (f) {
+	      fgets(buf, MAXBUF, f);
+	    } else {
+	      SV **tmp = av_fetch(data_array, data_pos, 0);
+	      if (tmp == NULL)
+		croak("Error while fetching %d-nth element from {Data}.\n", data_pos);
+	      buf = SvPV(*tmp, PL_na);
+	      data_pos++;
+	    }
+
+	    p = strchr(buf, '\t');
+	    if (p) {
+	      *p = 0;
+#ifdef MYDEBUG
+	      fprintf(stderr, "%d: %s\n", count, buf);
+#endif
+	      cat = p+1;
+	      p = strchr(p+1, ' ');
+	      if (p) {
+		*p = 0;
+		if (!*(++p)) break;
+
+		/* check ignore, if needed */
+		if (ignore_array) {
+		  char **p = ignore_array;
+		  int found = 0;
+		  while(*p) {
+		    if (strcmp(cat, *p) == 0) {
+		      found++;
+		      break;
+		    }
+		    p++;
+		  }
+		  if (found) {
+		    count++; // so the tags are correctly created
+		    continue;
+		  }
+		}
+
+		/* check restriction, if needed */
+		if (restr_array) {
+		  char **p = restr_array;
+		  int found = 0;
+		  while(*p) {
+		    if (strcmp(cat, *p) == 0) {
+		      found++;
+		      break;
+		    }
+		    p++;
+		  }
+		  if (!found) {
+		    count++; // so the tags are correctly created
+		    continue;
+		  }
+		}
+
+		point_i = 0;
+		while(*p) {
+		  char *new_p = strchr(p, ',');
+		  if (new_p) {
+		    point[point_i].x = atoi(p);
+		    p = new_p + 1;
+		    new_p = strchr(p, ' ');
+		    point[point_i].y = atoi(p);
+		    point_i++;
+		    if (new_p)
+		      p = new_p + 1;
+		    else
+		      break;
+		  }
+		}
+
+		if (point_i > 1) {
+		  int width = 1;
+		  char *fill = "white";
+
+		  if (category_width) {
+		    SV** sv_sv_category_width = hv_fetch(category_width,
+							 cat, strlen(cat), 0);
+		    if (sv_sv_category_width) {
+		      width = SvIV(*sv_sv_category_width);
+		    }
+		  }
+		  if (category_color) {
+		    SV** sv_sv_category_color = hv_fetch(category_color,
+							 cat, strlen(cat), 0);
+		    if (sv_sv_category_color)
+		      fill = SvPV(*sv_sv_category_color, PL_na);
+		  }
+
+		  if (!category_width || !category_color) {
+		    // fallbacks ...
+		    switch (*cat) {
+		    case 'H':
+		      if (*(cat+1) == 0)
+			fill = "yellow";
+		      else
+			fill = "yellow2";
+		      width = 3;
+		      break;
+
+		    case 'N':
+		      if (*(cat+1) == 0)
+			fill = "grey99";
+		      else
+			fill = "#bdffbd";
+		      width = 2;
+		      break;
+
+		    case 'B':
+		      fill = "red3";
+		      width = 3;
+		      break;
+
+		    default:
+		      fill = "white";
+		      width = 2;
+		    }
+		  }
+
+		  if (outline) {
+		    strcpy(abkcat, abk);
+		    strcat(abkcat, "-");
+		    strcat(abkcat, cat);
+		    strcat(abkcat, "-out");
+		    av_store(outline_tags, 1, newSVpv(abkcat, 0));
+
+		    PUSHMARK(sp);
+		    XPUSHs(canvas);
+		    for(i = 0; i < point_i; i++) {
+		      XPUSHs(sv_2mortal(newSViv(TRANSPOSE_X(point[i].x))));
+		      XPUSHs(sv_2mortal(newSViv(TRANSPOSE_Y(point[i].y))));
+		    }
+		    XPUSHs(tags_sv);
+		    XPUSHs(sv_2mortal(newRV_inc((SV*)outline_tags)));
+		    XPUSHs(fill_sv);
+		    XPUSHs(sv_outline_color);
+		    XPUSHs(joinstyle_sv);
+		    XPUSHs(bevel_sv);
+	            XPUSHs(width_sv);
+		    XPUSHs(sv_2mortal(newSViv(width+2)));
+
+		    PUTBACK;
+		    perl_call_method("createLine", G_DISCARD|G_VOID);
+		    SPAGAIN;
+		  }
+
+		  av_store(tags, 1, newSVpv(buf, 0)); /* Straﬂenname */
+		  strcpy(abkcat, abk);
+		  strcat(abkcat, "-");
+		  strcat(abkcat, cat);
+		  av_store(tags, 2, newSVpv(abkcat, 0));
+		  sprintf(abkcat, "%s-%d", abk, count);
+		  av_store(tags, 3, newSVpv(abkcat, 0));
+
+		  PUSHMARK(sp);
+		  XPUSHs(canvas);
+		  for(i = 0; i < point_i; i++) {
+		    XPUSHs(sv_2mortal(newSViv(TRANSPOSE_X(point[i].x))));
+		    XPUSHs(sv_2mortal(newSViv(TRANSPOSE_Y(point[i].y))));
+		  }
+		  XPUSHs(tags_sv);
+		  XPUSHs(sv_2mortal(newRV_inc((SV*)tags)));
+		  XPUSHs(fill_sv);
+		  XPUSHs(sv_2mortal(newSVpv(fill,0)));
+	          XPUSHs(width_sv);
+		  XPUSHs(sv_2mortal(newSViv(width)));
+
+		  PUTBACK;
+		  perl_call_method("createLine", G_DISCARD|G_VOID);
+		  SPAGAIN;
+		}
+		count++;
+	      }
+	    }
+
+	    if (count % 150 == 0 && SvTRUE(progress)) {
+	      PUSHMARK(sp) ;
+	      XPUSHs(progress);
+	      PUTBACK;
+	      perl_call_method("UpdateFloat", G_DISCARD);
+	      SPAGAIN; /* XXX benˆtigt? */
+	    }
+	  }
+
+	  if (f) 
+	    fclose(f);
+
+	  file_count++;
+	  if (!fileref_array) break;
+	  if (av_len(fileref_array) < file_count) break;
+
+	}
+
+	SvREFCNT_dec(tags_sv);
+	SvREFCNT_dec(fill_sv);
+	SvREFCNT_dec(joinstyle_sv);
+	SvREFCNT_dec(bevel_sv);
+	SvREFCNT_dec(width_sv);
+
+	av_undef(tags);
+	av_undef(outline_tags);
+	if (!sv_sv_outline_color)
+	  SvREFCNT_dec(sv_outline_color);
+	if (restr_array) safefree(restr_array);
+	if (restr_array_strings) safefree(restr_array_strings);
+	if (ignore_array) safefree(ignore_array);
+	if (ignore_array_strings) safefree(ignore_array_strings);
+	/* Stacking der Canvas-Items muﬂ mit restack() korrigiert werden */
+
+
+void
+fast_plot_point(canvas, abk, fileref, progress)
+	SV *canvas;
+	char *abk;
+	SV *fileref;
+	SV *progress;
+
+	PREINIT:
+	FILE *f;
+	char buf[MAXBUF];
+	char abkcat[24];
+	struct {
+	  int x, y;
+	} point;
+	AV* tags;
+	SV *andreaskreuz, *ampel;
+	char *file;
+	int file_count = 0;
+	AV* fileref_array = NULL;
+	int count = 0;
+	SV *tags_sv, *image_sv;
+
+	PPCODE:
+ /* muﬂ noch zur Serienreife verfeinert werden ... scheint aber *wesentlich*
+   schneller als der perl-Part zu sein?! */
+
+	tags = newAV();
+	strcpy(abkcat, abk);
+	strcat(abkcat, "-fg");
+	av_push(tags, newSVpv(abkcat, 0));
+
+	andreaskreuz = perl_get_sv("main::andreaskr_klein_photo", 0);
+	if (!andreaskreuz) croak("Can't get andreaskr_klein_photo\n");
+	ampel        = perl_get_sv("main::ampel_klein_photo", 0);
+	if (!ampel) croak("Can't get ampel_klein_photo\n");
+
+	if (SvROK(fileref) && SvTYPE(SvRV(fileref)) == SVt_PVAV) {
+	  fileref_array = (AV*)SvRV(fileref);
+	}
+
+	tags_sv = newSVpv("-tags", 0);
+	image_sv = newSVpv("-image", 0);
+
+	while(1) {
+	  if (fileref_array) {
+	    SV **s = av_fetch(fileref_array, file_count, 0);
+	    file = SvPV(*s, PL_na);
+	  } else
+	    file = SvPV(fileref, PL_na);
+
+	  f = fopen(file, "r");
+	  if (!f) croak("Can't open %s: %s\n", file, strerror(errno));
+
+	  while(!feof(f)) {
+	    char *p, *cat;
+
+	    fgets(buf, MAXBUF, f);
+	    p = strchr(buf, '\t');
+	    if (p) {
+	      *p = 0;
+	      cat = p+1;
+	      if (*cat != 'B' && *cat != 'X') *cat = 'X';
+	      p = strchr(p+1, ' ');
+	      if (p) {
+	        char *new_p;
+	        *p = 0;
+	        if (!*(++p)) break;
+	        new_p = strchr(p, ',');
+	        if (new_p) {
+	  	  point.x = atoi(p);
+	  	  p = new_p + 1;
+	  	  point.y = atoi(p);
+#ifdef MYDEBUG
+	          fprintf(stderr, "%d: %d/%d\n", count, point.x, point.y);
+#endif
+	        }
+
+	        sprintf(abkcat, "%d,%d", point.x, point.y);
+	        av_store(tags, 1, newSVpv(abkcat, 0));
+	        strcpy(abkcat, abk);
+	        strcat(abkcat, "-");
+	        strcat(abkcat, cat);
+	        strcat(abkcat, "-fg");
+	        av_store(tags, 2, newSVpv(abkcat, 0));
+
+	        PUSHMARK(sp);
+	        XPUSHs(canvas);
+	        XPUSHs(sv_2mortal(newSViv(TRANSPOSE_X(point.x))));
+	        XPUSHs(sv_2mortal(newSViv(TRANSPOSE_Y(point.y))));
+	        XPUSHs(tags_sv);
+	        XPUSHs(sv_2mortal(newRV_inc((SV*)tags)));
+	        XPUSHs(image_sv);
+	        switch (*cat) {
+	        case 'B':
+		  XPUSHs(andreaskreuz);
+		  break;
+
+		default:
+		  XPUSHs(ampel);
+		}
+
+		PUTBACK;
+		perl_call_method("createImage", G_DISCARD|G_VOID);
+		SPAGAIN;
+
+		count++;
+	      }
+	    }
+
+	    if (count % 150 == 0 && SvTRUE(progress)) {
+	      PUSHMARK(sp) ;
+	      XPUSHs(progress);
+	      PUTBACK;
+	      perl_call_method("UpdateFloat", G_DISCARD);
+	      SPAGAIN;
+	    }
+
+	  }
+
+	  fclose(f);
+
+	  file_count++;
+	  if (!fileref_array) break;
+	  if (av_len(fileref_array) < file_count) break;
+	}
+	
+	SvREFCNT_dec(tags_sv);
+	SvREFCNT_dec(image_sv);
+
+	av_undef(tags);
+
+BOOT:
+#ifdef MYDEBUG
+	{
+	  /* XXX
+	   * This piece of code is to check the consistency of the
+	   * values for macros X_DELTA etc. and the
+	   * perl variables in the main code. This is disabled for
+	   * now, because
+	   * 1) there are no $x_delta ... vars in the
+	   *    main bbbike program (yet, maybe when expanding to
+	   *    other cities)
+	   * 2) bbbike.cgi uses BBBikeXS too, but makes no
+	   *    use of the transpose function, so the
+	   *    warning would be redundant (maybe it's better to
+	   *    seperate the transpose and drawing functions
+	   *    and the Strassen/StrassenNetz methods)
+	   */
+	  SV *x_delta, *y_delta, *x_mount, *y_mount;
+
+	  x_delta = perl_get_sv("main::x_delta", FALSE);
+	  if (!x_delta)
+	    warn("x_delta not defined");
+	  else if (SvNV(x_delta) != X_DELTA)
+	    warn("x_delta value does not match");
+
+	  y_delta = perl_get_sv("main::y_delta", FALSE);
+	  if (!y_delta)
+	    warn("y_delta not defined");
+	  else if (SvNV(y_delta) != Y_DELTA)
+	    warn("y_delta value does not match");
+
+	  x_mount = perl_get_sv("main::x_mount", FALSE);
+	  if (!x_mount)
+	    warn("x_mount not defined");
+	  else if (SvNV(x_mount) != X_MOUNT)
+	    warn("x_mount value does not match");
+
+	  y_mount = perl_get_sv("main::y_mount", FALSE);
+	  if (!y_mount)
+	    warn("y_mount not defined");
+	  else if (SvNV(y_mount) != Y_MOUNT)
+	    warn("y_mount value does not match");
+
+	}
+#endif

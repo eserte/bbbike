@@ -1,0 +1,10 @@
+BBBikeXS.xs
+-----------
+
+Some time-critical functions for bbbike coded in C/XS.
+
+strecke() in BBBikeXS.xs now uses an integer variant of sqrt()
+(implementation is in sqrt.c). The times for making the net dropped on
+the iPAQ from 8.32s to 7.12s.
+
+Send comments to Slaven Rezic <slaven@rezic.de>.

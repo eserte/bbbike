@@ -1,0 +1,373 @@
+=head1 NAME
+
+bbd - bbbike data format description
+
+=for category bbbike
+
+=head1 DESCRIPTION
+
+C<bbd> is a simple format for describing points and polylines for
+geographics information systems.
+
+Bbd files consist of newline-terminated records in the format:
+
+    Name TAB Category SPACE x,y SPACE x,y ...
+
+=over
+
+=item Name
+
+A descriptive name, for example the street name. This field should not
+contain any TAB characters.
+
+=item Category
+
+The category of this point or polyline. If the category matches
+C<#rrggbb> (where C<rr>, C<gg> and C<bb> are hexadecimal values), then
+this denotes a color for the representation in the Perl/Tk interface.
+A prefix of C<F:> denotes that the polyline should be treated as a
+polygon and this filled with a solid color. Other predefined
+categories are listed below. The category should not contain any
+spaces.
+
+=item x,y
+
+A coordinate. x and y should be integer or float values. The datum and
+grid of the coordinates should be handled by the software. It is
+recommended that x and y should denote the easting and northing in
+meters (as in GKK or UTM). A record may contain an unlimited number of
+coordinates.
+
+=back
+
+If a line begins with a hash sign (C<#>), then it is treated as a
+comment. Empty lines are ignored.
+
+=head1 CATEGORIES
+
+Here's a list of special categories:
+
+=head2 STREETS
+
+Used in files: C<strassen>, C<landstrassen>, C<landstrassen2>.
+
+=over
+
+=item BAB
+
+Freeways (Bundesautobahn)
+
+=item B
+
+Bundesstraßen
+
+=item HH
+
+Important main streets (wichtige Hauptstraßen)
+
+=item H
+
+Main streets (Hauptstraßen)
+
+=item N
+
+Nebenstraßen
+
+=item NN
+
+Für Kfz gesperrte Straßen.
+
+=item Pl
+
+Places (Plätze). Only for point records.
+
+=back
+
+=head2 BLOCKINGS
+
+Used in files: C<gesperrt>.
+
+=over
+
+=item 1
+
+One way street. The blocking is in the direction of the polyline.
+
+=item 2
+
+Blocked street (in both directions).
+
+=item 0
+
+The bicycle has to be carried. An optional penalty parameter expressed
+in seconds of lost time may be added after the category, with a C<:>
+as separator. Example: C<0:30> for a penalty of 30 seconds. This is
+only for point records.
+
+=item 3
+
+A blocked route (gesperrte Wegführung).
+
+=item BNP
+
+A narrow passage. An optional penalty parameter may be added, like for
+the C<0> category.
+
+=back
+
+=head2 CYCLE PATHS (RADWEGE)
+
+Used in files: C<radwege_exact>.
+
+=over
+
+=item RW0
+
+Normaler nicht benutzungspflichtiger Radweg.
+
+=item RW1
+
+Benutzungspflichtiger Radweg.
+
+=item RW2
+
+Suggestivstreifen für Radfahrer.
+
+=item RW3
+
+Radstreifen.
+
+=item RW4
+
+Busspur (eventuell nur temporär), auch für Radfahrer frei.
+
+=item RW5
+
+Verkehrsberuhigte Straße.
+
+=item RW6
+
+Fahrradstraße.
+
+=item RW7
+
+Zweirichtungsradweg, Gegenrichtung.
+
+=back
+
+=head2 RAILROADS
+
+Used in files: C<ubahn>, C<sbahn>, C<rbahn>, C<ubahnhof>, C<sbahnhof>,
+C<rbahnhof>.
+
+=over
+
+=item R
+
+Regionalbahnen außerhalb des Stadtgebiets.
+
+=item RA
+
+Regionalbahnen Zone A.
+
+=item RB
+
+Regionalbahnen Zone B.
+
+=item RC
+
+Regionalbahnen Zone C.
+
+=item R0
+
+Regionalbahnen außer Betrieb oder in Bau.
+
+=item S
+
+S-Bahnen außerhalb des Stadtgebiets.
+
+=item SA
+
+S-Bahnen Zone A.
+
+=item SB
+
+S-Bahnen Zone B.
+
+=item SC
+
+S-Bahnen Zone C.
+
+=item S0
+
+S-Bahnen außer Betrieb oder in Bau.
+
+=item U
+
+U-Bahnen außerhalb des Stadtgebiets.
+
+=item UA
+
+U-Bahnen Zone A.
+
+=item UB
+
+U-Bahnen Zone B.
+
+=item UC
+
+U-Bahnen Zone C.
+
+=item U0
+
+U-Bahnen außer Betrieb oder in Bau.
+
+=back
+
+=head2 QUALITY
+
+Qualität der Wege (Fahrbahnbeschaffenheit).
+
+Used in files: C<quality_s>, C<quality_l>.
+
+=over
+
+=item Q0
+
+Beste Qualität, keine Einschränkungen.
+
+=item Q1
+
+Gute Kopfsteinpflasterstrecken, mäßiger Asphalt, etwa 25 km/h
+Höchstgeschwindigkeit.
+
+=item Q2
+
+Gewöhnliche Kopfsteinpflasterstrecken, schlechter Asphalt, Waldwege,
+etwa 18 km/h Höchstgeschwindigkeit.
+
+=item Q3
+
+Schlechte Kopfsteinpflasterstrecken, sandige Strecken, etwa 13 km/h
+Höchstgeschwindigkeit.
+
+=back
+
+Andere, nicht fahrbahnbezogene Handicaps. Used in files: C<handicap_s>,
+C<handicap_l>.
+
+=over
+
+=item q0
+
+Keine.
+
+=item q1
+
+Auf 25 km/h.
+
+=item q2
+
+Auf 18 km/h.
+
+=item q3
+
+Auf 13 km/h.
+
+=back
+
+=head2 COMMENTS
+
+Used in files: C<comments>.
+
+=over
+
+=item P1
+
+Only for records with three points. Comment is valid for point B if
+driving from A to C.
+
+=item P2
+
+Same as P1, but valid for both directions.
+
+=item S1
+
+Comment is valid for the whole route in this direction.
+
+=item S2
+
+Comment is valid for the whole route in both directions.
+
+=item PI
+
+Path instruction (genauere Wegbeschreibung).
+
+=item P0
+
+Dieser Weg ist gesperrt (z.B. Abbiegen nicht möglich), aber eine
+Umfahrung ist möglich ... siehe auch Kategorie "3" in C<Blocking>.
+
+=back
+
+=head2 AREAS
+
+Used in files: C<flaechen>. Mostly prefixed with "F:", see above.
+
+=over
+
+=item P
+
+Parks and forests.
+
+=item Ae
+
+Airports.
+
+=back
+
+=head2 MISC
+
+=over
+
+=item radroute
+
+Haupt- oder Freizeitrouten.
+
+=item Q
+
+Fähren.
+
+=item X
+
+The category will not be used in this case.
+
+=back
+
+=head2 MORE STANDARD FILES
+
+=over
+
+=item ampeln
+
+File with point records for traffic lights (Ampeln). The category is
+set to C<B> for railroad crossings and C<F> for pedestrian-only
+traffic lights, otherwise not used.
+
+=item hoehe
+
+File with elevation points. The C<Name> fields denotes the elevation
+in meters, the category is not used.
+
+=back
+
+XXX To be continued
+
+=head1 AUTHOR
+
+Slaven Rezic <slaven@rezic.de>
+
+=head1 SEE ALSO
+
+bbbike(1), Strassen(3).
+

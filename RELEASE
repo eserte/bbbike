@@ -1,0 +1,78 @@
+BBBike RELEASE 3.12
+
+bbbike (ptk)
+- new menu for search preferences
+- "sights" now main icon instead of "kneipen"
+- appearance approvements (ferry icon, outlines for U- and S-Bhf.
+  labels, labels for areas, improved stacking order)
+- binding fixes
+- new menu entries (e.g. alarm list, delete user deletions,
+  statistics, obey oneway strictly)
+- support for PNG images
+- new options (-focuspolicy, -algorithm, -layers)
+- improved additional layer support (menu is now publicly available)
+- show/set reference power/speed from enter_speed/power window
+- position is preserved while zooming
+- automatic hiding of U-/S-Bahn labels
+- via support (add, del, move vias, see also BBBikeVia.pm)
+- another english translation update
+- internal: transition to full Tk::Getopt support
+- bug fixes
+
+Modules
+- Strassen::Inline: faster search (now using heaps)
+                    use hypot function
+- compatibility fixes for 5.8.0
+- BBBikeRouting.pm is getting more mature, support for Strassen::Dataset
+- Strassen::Util: removed old and slow FreezeThaw code
+- experimental integer sqrt code in BBBikeXS.xs (may be faster on
+  machines without a FPU)
+- changed return value in Strassen::all_crossings
+- Strassen::*: more cache support. CDB caches use now
+  Storable::nfreeze (shorter files).
+- new module BBBikeStats: make statistics and pie charts for routes
+- BBBikeAdvanced: new penalty type "bbd file"
+  penalties are now moved to the "Search settings" menu
+- new module: Strassen::Stat (used in bbbike's info command)
+- new module: Strassen::DB_File_Btree (btree version of Strassen::CORE)
+- new module: Strassen::Lazy (load Strassen::Core module lazily)
+- new draw types in BBBikeDraw: R-Bahn, U-Bhf. labels, S-Bhf. labels
+- PDF output: new automatic mode (either landscape or portrait)
+- GD.pm: some methods now in GDHeavy.pm
+- Karte::UTM improvements
+- BBBikeESRI is now more efficient
+- new: BBBikeVia.pm
+- TelbuchDBApprox.pm improvements
+- Berlin_DE.pm: new function get_all_subparts
+- new widget Tk::Ruler
+- Strassen::Core: Object::Iterate support
+- new: HouseNumbers.pm
+- Update.pm: now also rsync possible (but not yet tested)
+- beginning MapServer support (for the cgi and a standalone mapserver)
+- bug fixes
+
+Plugins
+- Salesman: new cancel button
+- new plugin: Scribble
+- BBBikeRuler: show more: height and grade, manhatten distance, time
+  etc.
+  new circle menu
+- improvements in GelbeSeitenPlugin.pm (still not public yet)
+- bug fixes
+
+Data
+- various updates and fixes, new data
+- first thoughts on a "housenumbers" file
+
+Install
+- no changes
+
+CGI
+- using inaccessible_strassen database
+- favicon.ico for Mozilla
+- support for pdf-auto
+- info page with browserinfo
+- no more links to www.stadtplandienst.de (blame them :-( )
+
+Misc
+- more tests (t/bbbikerouting.t, ext/Strassen-Inline/t/*, t/dataset.t, ...)

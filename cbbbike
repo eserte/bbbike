@@ -1,0 +1,544 @@
+#!/usr/bin/env perl
+# -*- perl -*-
+
+#
+# $Id: cbbbike,v 1.32 2003/01/08 20:10:28 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
+# This is free software; you can redistribute it and/or modify it under the
+# terms of the GNU General Public License, see the file COPYING.
+#
+# Mail: eserte@cs.tu-berlin.de
+# WWW:  http://user.cs.tu-berlin.de/~eserte/
+#
+
+use FindBin;
+use lib ("$FindBin::RealBin",
+	 "$FindBin::RealBin/lib");
+use Strassen::Core;
+use Strassen::StrassenNetz;
+use Waitproc;
+use BBBikeUtil;
+use Getopt::Long;
+use Term::ReadLine;
+use strict;
+use vars qw($draw_draw $gif_viewer $png_viewer
+	    $tmpdir $configdir $clsscreen $max_hist $hist_file);
+
+$^W = 1;
+
+# Standard-CONFIG ##################################################
+$draw_draw = ['str', 'ubahn', 'sbahn', 'wasser'];
+$png_viewer = $gif_viewer = sub { tk_viewer($_[0]) || sys_viewer($_[0]) };
+$tmpdir = $ENV{TMPDIR} || $ENV{TEMP} || "/tmp";
+$configdir = (defined $ENV{HOME} ? "$ENV{HOME}/.bbbike" : "/bbbike.cfg");
+StrassenNetz::use_data_format($StrassenNetz::FMT_ARRAY);
+$clsscreen = 1; # Bildschirm vor Augabe der Route lˆschen
+$max_hist = 20;
+$hist_file = "$configdir/bbbike_street_hist";
+####################################################################
+# evtl. Konfiguration laden
+eval { local $SIG{'__DIE__'};
+       do "$0.config";
+   };
+
+my $os2;
+if ($^O eq 'os2' || $^O eq 'MSWin32' || $^O eq 'dos') {
+    *input = \&cp850_iso;
+    *output = \&iso_cp850;
+    $os2 = 1;
+} else {
+    *input = \&nil;
+    *output = \&nil;
+}
+
+my $verbose = 0;
+my $bench = 0;
+my $scope = 'city';
+
+if (!GetOptions('v+' => \$verbose,
+		'bench!' => \$bench,
+		'datafmt=i' => sub { StrassenNetz::use_data_format($_[1]) },
+		'scope=s' => \$scope,
+	       )) {
+    die usage();
+}
+
+eval 'use BBBikeXS 0.02';
+
+if ($verbose) {
+    $Strassen::Util::VERBOSE = $Strassen::VERBOSE = $StrassenNetz::VERBOSE = 1;
+}
+if ($bench) {
+    require Benchmark;
+    $clsscreen = 0; # sonst sieht man die Suchzeit nicht
+}
+
+# @point enth‰lt Start- und Endpunkt
+my(@point) = @ARGV;
+my(@desc) = ('Start', 'Ziel');
+
+Waitproc::set('.oOo', 0.15);
+
+my($str, $net, %crossings);
+waitproc();
+eval {
+    $net = new_from_server StrassenNetz;
+    if ($net) {
+	$str = $net->{Strassen};
+	warn "Kreuzungen berechnen...\n" if $verbose;
+	%crossings = %{ $str->all_crossings(RetType => 'hashpos',
+					    UseCache => 1) };
+    } else {
+	my $code = sub {
+	    if ($scope eq 'city') {
+		$str = new Strassen "strassen";
+	    } elsif ($scope eq 'region') {
+		$str = new MultiStrassen Strassen->new("strassen"),
+                                         Strassen->new("landstrassen");
+	    } elsif ($scope eq 'jwd') {
+		$str = new MultiStrassen Strassen->new("strassen"),
+                                         Strassen->new("landstrassen"),
+                                         Strassen->new("landstrassen2");
+	    } else {
+		die "Unknown scope $scope";
+	    }
+	    warn "StrassenNetz berechnen...\n" if $verbose;
+	    $net = new StrassenNetz $str;
+	    $net->make_net(UseCache => 1);
+	    $net->make_sperre('gesperrt',
+			      Type => ['einbahn', 'sperre', 'tragen', 'wegfuehrung']);
+	    warn "Kreuzungen berechnen...\n" if $verbose;
+	    %crossings = %{ $str->all_crossings(RetType => 'hashpos',
+						UseCache => 1) };
+	};
+	if ($bench) {
+	    print
+	      "Initialisierung: " .
+		&Benchmark::timestr(&Benchmark::timeit(1, $code)) .
+		  "\n";
+	} else {
+	    &$code;
+	}
+    }
+};
+my $err = $@;
+stop_waitproc();
+die $err if $err;
+
+if ($verbose) {
+    print $net->statistics;
+}
+
+my $term = new Term::ReadLine 'BBBike';
+$term->Attribs->{'completer_word_break_characters'} = "";
+my $OUT  = $term->OUT || \*STDOUT;
+if ($os2) { $OUT = \*STDOUT } # OS/2-Bug
+my $IN   = $term->IN  || \*STDIN;
+my $line;
+my $paged;
+
+my $terminal;
+if ($clsscreen) {
+    eval {
+	require Term::Cap;
+	$terminal = Term::Cap->Tgetent({TERM => undef, OSPEED => 9600});
+	$terminal->Trequire(qw/cl/);
+    };
+    undef $clsscreen if ($@);
+}
+
+readhist();
+
+QUERY: while(1) {
+    # @point_verified enth‰lt ¸berpr¸ften Start- und Endpunkt
+    my @point_verified;
+
+    while(!defined $point_verified[0] || !defined $point_verified[1]) {
+
+	my $i;
+	for $i (0 .. 1) {
+	    if (!defined $point[$i] && !defined $point_verified[$i]) {
+		$term->Attribs->{'completion_function'} = \&complete_street;
+		$point[$i] = input($term->readline("$desc[$i]: "));
+		$term->Attribs->{'completion_function'} = \&nop;
+		exit_app() if !defined $point[$i];
+	    }
+	}
+
+	for (0 .. 1) {
+	    next if defined $point_verified[$_];
+	    warn "$point[$_] suchen ...\n" if $verbose;
+	    my @matches = $str->agrep($point[$_], NoDot => 1);
+	    if (@matches == 1) {
+		$point_verified[$_] = $matches[0];
+		$term->addhistory(output($point_verified[$_]));
+	    } elsif (!@matches) {
+		print $OUT
+		  &output("Es wurde keine Straﬂe <$point[$_]> gefunden.\n");
+		undef $point[$_];
+	    } else {
+		print $OUT &output("$desc[$_]: Genaue Straﬂe angeben:\n");
+		my $i;
+		for($i = 0; $i <= $#matches; $i++) {
+		    printf $OUT "%3d %s\n", $i, &output($matches[$i]);
+		}
+		my $number = $term->readline("Nummer: ");
+		exit_app() if !defined $number;
+		if ($number ne '' && $number =~ /^\d+/
+		    && $number >= 0 && $number <= $#matches) {
+		    $point_verified[$_] = $matches[$number];
+		    $term->addhistory($point_verified[$_]);
+		} else {
+		    print $OUT &output("Ung¸ltige Nummer.\n");
+		    undef $point[$_];
+		}
+	    }
+	}
+	
+    }
+    undef @point;
+
+    my @pos;
+    my($start_coord, $ziel_coord);
+    for (0 .. 1) {
+	@{$pos[$_]} = $str->pos_from_name($point_verified[$_]);
+	if (!@{$pos[$_]}) {
+	    die "pos_from_name f¸r $point_verified[$_] fehlgeschlagen!";
+	}
+	my @coords;
+	foreach my $pos (@{$pos[$_]}) {
+	    push @coords, @{ $str->get($pos)->[1] };
+	}
+
+	print $OUT
+	  &output("$desc[$_]: Kreuzung: $point_verified[$_] Ecke ...\n");
+	my %used;
+	my $coord;
+	my $i;
+	for($i = 0; $i <= $#coords; $i++) {
+	    my $coord = $coords[$i];
+	    if ($used{$coord}) {
+		next;
+	    } else {
+		$used{$coord}++;
+	    }
+	    if (exists $crossings{$coord}) {
+		printf $OUT "%3d: ", $i;
+		my @kreuzung;
+		my $other_pos;
+		foreach $other_pos (@{$crossings{$coord}}) {
+		    my $other_str = $str->get($other_pos)->[0];
+		    if ($other_str ne $point_verified[$_]) {
+			push @kreuzung, $other_str;
+		    }
+		}
+		if (@kreuzung == 0) {
+		    print $OUT "..."; # XXX bessere Loesung?
+		} else {
+		    print $OUT &output(join("/", @kreuzung));
+		}
+		print $OUT "\n";
+	    }
+	}
+	my $number = $term->readline("Nummer: ");
+	exit_app() if !defined $number;
+	if ($number ne '' && $number =~ /^\d+/
+	    && $number >= 0 && $number <= $#coords) {
+	    if ($_ == 0) {
+		$start_coord = $coords[$number];
+	    } else {
+		$ziel_coord = $coords[$number];
+	    }
+	} else {
+	    print $OUT &output("Ung¸ltige Nummer.\n");
+	    if ($_ == 0) {
+		$start_coord = $coords[0];
+	    } else {
+		$ziel_coord  = $coords[0];
+	    }
+	}
+    }
+
+  SEARCH_AGAIN:
+    my @path;
+    my $code = sub { my($res) = $net->search($start_coord, $ziel_coord);
+		     if (defined $res) {
+			 @path = @$res;
+		     }
+		 };
+    waitproc();
+    eval {
+	if ($bench) {
+	    print $OUT
+	      "Suchdauer: " .
+		&Benchmark::timestr(&Benchmark::timeit(1, $code)) .
+		  "\n";
+	} else {
+	    &$code;
+	}
+    };
+    my $err = $@;
+    stop_waitproc();
+    die $err if $err;
+
+    if (!@path) {
+	print $OUT "Keine Route gefunden.\n";
+	next QUERY;
+    }
+    my @strnames = $net->route_to_name(\@path);
+
+  OUTLOOP: while(1) {
+	my $i;
+	my $ges_entf = 0;
+	$terminal->Tputs('cl', 1, $OUT) if ($clsscreen);
+	print $OUT
+	  &output("Route von $point_verified[0] nach $point_verified[1]\n");
+	print $OUT "-"x79,"\n";
+	$line = 2; # schon 2 Zeilen ausgedruckt
+	$paged = 0;
+	for($i = 0; $i <= $#strnames; $i++) {
+	    my ($str, $entf, $winkel, $richtung) = @{$strnames[$i]};
+	    if (!$winkel) { $winkel = 0 }
+	    $winkel = int($winkel/10)*10;
+	    if ($winkel < 30) {
+		$richtung = '';
+	    } else {
+		$richtung = ", dann " .
+		  ($winkel <= 45 ? 'halb' : '') .
+		    ($richtung eq 'l' ? 'links ' : 'rechts ') .
+		      &output("($winkel∞) "); # . Strasse::de_artikel($str);
+	    }
+
+	    printf $OUT
+	      "%-45s %6.2f km%s\n", &output($str), $entf/1000, $richtung;
+	    next_line();
+	    $ges_entf += $entf;
+	}
+	print $OUT "-"x79,"\n";
+	next_line();
+	printf $OUT "%-45s %6.2f km\n", "Gesamtentfernung:", $ges_entf/1000;
+	next_line();
+	printf $OUT
+	  "Fahrzeit: %d:%02dh (10km/h), %d:%02dh (15km/h), " .
+	    "%d:%02dh (20km/h), " .
+	      "%d:%02dh (25km/h)\n\n",
+	      h_m($ges_entf, 10), h_m($ges_entf, 15),
+	      h_m($ges_entf, 20), h_m($ges_entf, 25);
+	print $OUT
+	  &output("==== (G)rafik/Nochmal (z)eigen/(R)¸ckweg/(N)eue Anfrage/Be(e)nden ==== ");
+	my($jn);
+	eval q{ die "Not for OS/2" if $os2; use Term::ReadKey; };
+	# Es scheint so, dass $@ nicht korrekt gesetzt wird, wenn
+	# das Laden von Term::ReadKey wegen ELF/a.out-Problemen
+	# fehlschl‰gt.
+	if ($@) {
+	    $jn = <$IN>;
+	} else {
+	    Term::ReadKey::ReadMode(4, $IN);
+	    $jn = Term::ReadKey::ReadKey(0, $IN);
+	    Term::ReadKey::ReadMode(0, $IN);
+	    print $OUT "\n";
+	}
+	if ($jn =~ /^g/i) {
+	    show_graphics
+	      (Coords    => [ map { Route::_coord_as_string($_) } @path ],
+	       Startname => $point_verified[0],
+	       Zielname  => $point_verified[1],
+	       Strassen  => $str,
+	      );
+	} elsif ($jn =~ /^e/i) {
+	    exit_app(0);
+	} elsif ($jn =~ /^r/i) {
+	    ($start_coord, $ziel_coord) = ($ziel_coord, $start_coord);
+	    @point_verified[0, 1] = @point_verified[1, 0];
+	    goto SEARCH_AGAIN;
+	} elsif ($jn =~ /^n/i) {
+	    $terminal->Tputs('cl', 1, $OUT) if ($clsscreen);
+	    last OUTLOOP;
+	}
+    }
+}
+
+sub exit_app {
+    my $code = shift || 0;
+    writehist();
+    exit $code;
+}
+
+sub next_line {
+    if (++$line > 23) {
+	wait_return();
+	$line = 0;
+	$paged++;
+    }
+}
+
+sub wait_return {
+    print $OUT "==== Weiter mit RETURN ==== ";
+    <$IN>;
+}
+
+sub h_m {
+    my($m, $v) = @_; # Eingabe m und km/h
+    my $h = $m/1000/$v;
+    my $int_h = int($h);
+    my $min = int(($h - $int_h) * 60);
+    ($int_h, $min);
+}
+
+sub show_graphics {
+    my(%args) = @_;
+
+    require BBBikeDraw;
+    my $draw = new BBBikeDraw
+      Fh        => \*F,
+      Draw      => $draw_draw,
+      #Bg        => "white",
+      %args,
+      ;
+    if (!defined $draw) {
+	warn "BBBikeDraw konnte nicht ausgef¸hrt werden: $@";
+	wait_return();
+	return;
+    }
+
+    waitproc();
+
+    eval { $draw->dimension_from_route() };
+    if ($@) {
+	stop_waitproc();
+	warn $@;
+	wait_return();
+	return;
+    }
+    $draw->create_transpose();
+    $draw->draw_map();
+    $draw->draw_route();
+
+    my $tmpfile = "$tmpdir/cbbbike_draw_$$." . $draw->suffix;
+    open(F, ">$tmpfile") or do {
+        warn "Can't write to $tmpfile: $!";
+        wait_return();
+	die $!;
+    };
+    binmode F;
+    $draw->flush();
+    close F;
+
+    stop_waitproc();
+
+    if ($draw->imagetype eq 'gif' && defined $gif_viewer) {
+	&$gif_viewer($tmpfile);
+    } elsif ($draw->imagetype eq 'png' && defined $png_viewer) {
+	&$png_viewer($tmpfile);
+    }
+}
+
+sub writehist {
+    return if !$term->Features->{'getHistory'};
+    my(@newhist) = $term->GetHistory;
+    my(@hist) = _readhist();
+    if (! -d $configdir) {
+	mkdir $configdir, 0700;
+    }
+    if (open(HIST, ">$hist_file")) {
+	push @hist, @newhist;
+
+	# remove duplicates
+	my @hist2;
+	my %seen;
+	foreach (reverse @hist) {
+	    next if (/^\d*$/); # don't save numbers...
+	    if (!$seen{$_}) {
+		push @hist2, $_;
+		$seen{$_}++;
+	    }
+	}
+	@hist = reverse @hist2;
+
+	if (@hist > $max_hist) {
+	    splice @hist, 0, @hist - $max_hist;
+	}
+	print HIST join("\n", @hist), "\n";
+	close HIST;
+    }
+}
+
+sub _readhist {
+    if (open(HIST, "$hist_file")) {
+	my @hist;
+	while(<HIST>) {
+	    chomp;
+	    s/\r//g;
+	    push @hist, $_;
+	}
+	close HIST;
+	@hist;
+    } else {
+	undef;
+    }
+}
+
+sub readhist {
+    return if !$term->Features->{'setHistory'};
+    my(@hist) = _readhist();
+    $term->SetHistory(@hist) if @hist;
+}
+
+sub tk_viewer {
+    my $file = shift;
+    eval {
+	require Tk;
+	if ($file =~ /\.png$/) {
+	    require Tk::PNG;
+	} elsif ($file =~ /\.jpe?g$/) {
+	    require Tk::JPEG;
+	}
+	my $top = Tk::MainWindow->new;
+	$top->Busy;
+	my $l = $top->Label->pack;
+	my $p = $top->Photo(-file => $file);
+	$l->configure(-image => $p);
+	$top->Unbusy;
+	$top->Button(-text => "Schlieﬂen",
+		     -command => sub { $top->destroy })->pack;
+	$top->bind("<q>"         => sub { $top->destroy });
+	$top->bind("<Control-c>" => sub { $top->destroy });
+	Tk::MainLoop();
+    };
+    return ($@ ? undef : 1);
+}
+
+sub sys_viewer {
+    foreach my $viewer (qw(xv ElectricEyes xloadimage xi gimp)) {
+	if (is_in_path($viewer)) {
+	    system("$viewer $_[0]&");
+	    return 1;
+	}
+    }
+    if ($^O eq 'MSWin32') {
+	require Win32Util;
+        return Win32Util::start_any_viewer($_[0]);
+    }
+    0;
+}
+
+sub complete_street {
+    my($pat, $inx) = @_;
+    my @matches = $str->agrep($pat, NoDot => 1, Agrep => 0);
+    @matches;
+}
+
+sub nop { }
+
+sub usage {
+    <<EOF;
+usage: $0 [-v] [-bench] [-datafmt fmt] [-scope]
+-v            be verbose
+-bench        print some benachmark statistics
+-datafmt fmt  use another internal data format (default $StrassenNetz::data_format)
+-scope scope  use another scope (default $scope)
+EOF
+}

@@ -1,0 +1,166 @@
+# -*- perl -*-
+
+#
+# $Id: BBBikeMenubar.pm,v 1.12 2003/01/08 18:48:02 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2000,2002 Slaven Rezic. All rights reserved.
+# This package is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://user.cs.tu-berlin.de/~eserte/
+#
+
+package BBBike::Menubar;
+
+=head1 NAME
+
+BBBike::Menubar - optional conventional menubar for bbbike
+
+=cut
+
+# keine echte OO_Klasse!
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#use blib qw(/home/e/eserte/src/perl/legacy);
+#use legacy qw(encoding);
+#use encoding 'iso-8859-1';
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+BEGIN {
+    if (!eval '
+use Msg qw(frommain);
+1;
+') {
+	warn $@ if $@;
+	eval 'sub M ($) { $_[0] }';
+	eval 'sub Mfmt { sprintf(shift, @_) }';
+    }
+}
+
+use vars qw($file_menu $additional_layer_menu);
+
+sub new {
+    my($class, $context) = @_;
+    my $self = {};
+    while(my($k,$v) = each %$context) {
+	$self->{$k} = $v;
+    }
+    bless $self, $class;
+}
+
+sub bbbike_context {
+    +{Top        => $main::top,
+      MiscFrame  => $main::misc_frame,
+      MiscFrame2 => $main::misc_frame2,
+
+      OpenCommand  => sub { main::load_save_route(0) },
+      SaveCommand  => sub { main::load_save_route(1) },
+      PrintCommand => \&main::print_function,
+      OptionsCommand => sub { $main::opt->option_editor($main::top, -transient => $top) # XXX make configurable like in bbbike main
+			  },
+      ExitCommand  => \&main::exit_app,
+     };
+}
+
+sub menubar {
+    my $self = shift;
+    my $top = $self->{Top} || die "Top missing in context";
+    my $mb = $top->cget(-menu);
+    # existiert bereits:    my $file_menu = $mb->cascade(-label => 'Datei');
+    $file_menu->command(-label => M("Ö~ffnen")." ...",
+			-command => $self->{OpenCommand});
+    my $open_menu = $file_menu->cascade(-label => M"~zuletzt geöffnete Dateien");
+    $file_menu->command(-label => M("~Speichern")." ...",
+			-command => $self->{SaveCommand});
+    my $save_menu = $file_menu->cascade(-label => M"~Exportieren");
+    $file_menu->command(-label => M("~Drucken")." ...",
+			-command => $self->{PrintCommand});
+    my $print_menu = $file_menu->cascade(-label => M"D~ruckeinstellungen");
+    $file_menu->command(-label => M"~Beenden",
+			-command => $self->{ExitCommand});
+
+    my $layer_menu = $mb->cascade(-label => M"~Kartenebenen");
+    $layer_menu->cget(-menu)->configure(-title => M"Kartenebenen");
+
+    foreach my $c ($self->{MiscFrame}->children,
+		   $self->{MiscFrame2}->children
+		  ) {
+	if ($c->isa('Tk::Menubutton')) {
+	    my $menu = $c->cget(-menu);
+	    my $menulabel =
+		$menu->{BBBike_Menulabel} ||
+		eval q{$menu->entrycget(1, -label)};
+	    my $special = $menu->{BBBike_Special};
+	    if (defined $special) {
+		if ($special eq 'OPEN') {
+		    $open_menu->configure(-menu => $menu);
+		} elsif ($special eq 'SAVE') {
+		    $save_menu->configure(-menu => $menu);
+		} elsif ($special eq 'PRINT') {
+		    $print_menu->configure(-menu => $menu);
+		} elsif ($special eq 'LAYER') {
+		    $layer_menu->cascade(-menu => $menu,
+					 -label => $menulabel);
+		} elsif ($special eq 'OPTIONS') {
+		    # Plugin-Menu vor Einstellungen
+		    plugin_menu($mb);
+		    $mb->cascade(-menu => $menu,
+				 -label => $menulabel);
+		    # XXX unfortunately, this affects also the menuarrow
+		    # menu
+		    $menu->insert(1, 'command',
+				  -label => M"Optionseditor",
+				  -command => $self->{OptionsCommand});
+		} else {
+		    die "Unknown -special: $special";
+		}
+	    } elsif (defined $menulabel) {
+		$mb->cascade(-menu => $menu,
+			     -label => $menulabel);
+	    } else {
+		warn "no menulabel defined for $c";
+	    }
+	}
+    }
+
+    if ($additional_layer_menu) {
+	$layer_menu->cascade
+	    (-menu  => $additional_layer_menu,
+	     -label => $additional_layer_menu->{BBBike_Menulabel},
+	    );
+    }
+
+#XXX nicht nötig??? DEL:    $top->configure(-menu => $mb);
+}
+
+sub Set {
+    my $bmb = new BBBike::Menubar bbbike_context();
+    $bmb->menubar;
+}
+
+# erstellt Menubar und reserviert Platz...
+# XXX evtl. set_temporary_state aus dem repository verwenden
+sub EmptyMenubar {
+    my $top = bbbike_context()->{Top};
+    my $menu = $top->Menu(-title => "BBBike-Menu");
+    $file_menu = $menu->cascade(-label => M"~Datei");
+    $file_menu->cget(-menu)->configure(-title => M"Datei");
+    $top->configure(-menu => $menu);
+}
+
+sub plugin_menu {
+    my($mb) = @_;
+    my $menulabel = M("Plugins");
+    my $menu = $mb->Menu;
+    main::plugin_menu($menu);
+    $menu->separator;
+    # XXX more to follow... (what?)
+    $mb->cascade(-menu => $menu,
+		 -label => $menulabel);
+}
+
+1;
+
+__END__

@@ -1,0 +1,1126 @@
+#!/usr/bin/env perl
+# -*- perl -*-
+
+#
+# $Id: wettermeldung2,v 1.59 2002/05/14 09:49:35 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 1997, 1998, 1999, 2000, 2002 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: eserte@cs.tu-berlin.de
+# WWW:  http://user.cs.tu-berlin.de/~eserte/
+#
+
+package wettermeldung2;
+{
+local(%ENV) = %ENV;
+
+### CONFIG VARS #########################################################
+# PATH for executables and the "socket" program				#
+$ENV{PATH} = "/usr/bin:/bin:/usr/ucb:/usr/local/bin:/sbin:/usr/sbin:/usr/etc:/usr/local/etc:/usr/gnu/bin:/home/e/eserte/bin/sh:$ENV{HOME}/bin:$ENV{HOME}/bin/sh:$ENV{PATH}:/home/pub/bin";					      #
+									#
+# logfile for error messages (may be undefined)				#
+$logfile               = "$ENV{HOME}/Mail/wetter-errorlog";		#
+									#
+# destination directory for weather data				#
+$destdir_met            = "$ENV{HOME}/doc/met";				#
+$destfile{'dahlem1'}    = "$destdir_met/wetter-full";			#
+$destfile{'dahlem2'}    = "$destdir_met/wetter";			#
+$destfile{'tempelhof'}  = "$destdir_met/wetter-tempelhof";		#
+$cksumdir               = "$ENV{HOME}/Mail";                            #
+$cksumfile{'dahlem1'}   = "$cksumdir/wetter-cksum-dahlem1"; 		#
+$cksumfile{'dahlem2'}   = "$cksumdir/wetter-cksum-dahlem2"; 		#
+$cksumfile{'tempelhof'} = "$cksumdir/wetter-cksum-tempelhof"; 		#
+#########################################################################
+
+# synop files:
+@synop_stations = ('berlin_alexanderplatz', 'berlin_dahlem',
+		   'berlin_schoenefeld',
+		   'berlin_tegel', 'berlin_tempelhof', 'potsdam');
+foreach $synop_station (@synop_stations) {
+    $destfile{"synop_$synop_station"} = "$destdir_met/synop/data/synop_$synop_station.data";
+}
+
+$www_site{'dahlem1'} = $www_site{'dahlem2'} = 'www.met.fu-berlin.de';
+$www_port{'dahlem1'} = $www_port{'dahlem2'} = 80;
+$loc{'dahlem1'}  = '/deutsch/Wetter/beobachtung.html';
+$loc{'dahlem2'}  = '/deutsch/Wetter/meldungen.html';
+
+$www_site{'tempelhof'} = 'www.hundert6.de';
+$www_port{'tempelhof'} = 80;
+$loc{'tempelhof'} = '/b_wett.htm';
+
+### CONFIG VARS #########################################################
+# path for test file (option -test and -testfile)			#
+$localfile{'dahlem1'}   = "/usr/cache/http/www.met.fu-berlin.de/deutsch/Wetter/beobachtung.html";
+$localfile{'dahlem2'}   = "/usr/cache/http/www.met.fu-berlin.de/deutsch/Wetter/meldungen.html";
+$localfile{'tempelhof'} = "/usr/apache-cache/http:/www.bbtt.com/hundert6/lhwett0.htm";
+#########################################################################
+
+# peacify -w
+$VERSION   = $VERSION;
+$proxy     = $proxy;
+$module    = $module;
+$tk_widget = $tk_widget;
+
+# The indexes of the fields
+# This should be better a constant, but we want still perl4 compatibility
+$FIELD_DATE          = 0;
+$FIELD_TIME          = 1;
+$FIELD_TEMP          = 2;
+$FIELD_PRESSURE      = 3;
+$FIELD_WIND_DIR      = 4;
+$FIELD_WIND_MAX      = 5;
+$FIELD_HUMIDITY      = 6;
+$FIELD_WIND_AVG      = 7;
+$FIELD_PRECIPITATION = 8;
+$FIELD_WEATHER       = 9;
+
+$VERSION = sprintf("%d.%02d", q$Revision: 1.59 $ =~ /(\d+)\.(\d+)/);
+
+$mailto = 'eserte@cs.tu-berlin.de';
+$user_agent = "wettermeldung2/$VERSION";
+eval '
+    local $SIG{__DIE__};
+    if ((getpwuid($<))[0] eq "eserte" ||
+	(getpwuid($<))[0] eq "jimibcii") {
+	$user_agent .= " $mailto";
+    }
+';
+warn $@ if $@;
+
+$nomail = 0; # verhindert das Abschicken von Mails
+
+@mail_problem = (); # Probleme, die per Mail gechickt werden
+@errorlog_problem = (); # Probleme, die ins $logfile eingetragen werden
+
+if (!defined $ENV{OSTYPE}) {
+    if (defined $^O) {
+	$ENV{OSTYPE} = $^O;
+    } else {
+	$ENV{OSTYPE} = `uname`;
+	chop $ENV{OSTYPE};
+    }
+}
+
+if ($ENV{OSTYPE} =~ /(bsd|linux|MSWin32)/i) { # XXX win32 too?
+    @pingopt = ('-c', '1');
+    @pingpost = ();
+}
+else { # solaris2, sunos4
+    @pingopt = ();
+    @pingpost = ('1', '1');
+}
+
+sub cmdline_call {
+    for ($i = 0; $i <= $#ARGV; ++$i) {
+	$_ = $ARGV[$i];
+      ARGL: {
+	    /^-d(ebug)?$/ && do {
+		$www_site{'dahlem1'} = $www_site{'dahlem2'} = 'www';
+		$www_port{'dahlem1'} = $www_port{'dahlem2'} = 80;
+		$loc{'dahlem1'} =
+		  '/cache/http/www.met.fu-berlin.de/deutsch/Wetter/beobachtung.html';
+		$loc{'dahlem2'} =
+		  '/cache/http/www.met.fu-berlin.de/deutsch/Wetter/meldungen.html';
+		$mailto = 'eserte@www';
+		$destfile{'dahlem1'} = "/tmp/wetter-full";
+		$destfile{'dahlem2'} = "/tmp/wetter";
+		last ARGL;
+	    };
+	    /^-store$/ && do { $store = 1; last ARGL; };
+	    /^-verbose$/ && do { $VERBOSE = 1; last ARGL; };
+	    /^-shortverbose$/ && do { $SHORTVERBOSE = 1; last ARGL; };
+	    /^-dahlem1$/ && do { $get_file = 'dahlem1'; last ARGL; };
+	    /^-dahlem2$/ && do { $get_file = 'dahlem2'; last ARGL; };
+	    /^-tempelhof$/ && do { $get_file = 'tempelhof'; last ARGL; };
+	    /^-synop_(.*)$/ && do { $get_file = "synop_$1"; last ARGL; };
+	    /^-newest$/ && do { $newest = 1; last ARGL; };
+	    /^-local$/ && do { $local = 1; last ARGL; };
+	    /^-lastinfile$/ && do { $last_in_file = 1; last ARGL; };
+	    /^-o$/ && do {
+		# $outfile darf nicht existieren, weil keine Überschreibung
+		# vorgenommen wird.
+		$outfile = &get_arg(*i, *ARGV, "-o", $_);
+		last ARGL;
+	    };
+	    /^-testfile$/i && do {
+		$testfile = &get_arg(*i, *ARGV, "-testfile", $_);
+		last ARGL;
+	    };
+	    /^-test$/ && do {
+		$loc{'dahlem1'} = "/cache/http/$www_site{'dahlem1'}$loc{'dahlem1'}";
+		$loc{'dahlem2'} = "/cache/http/$www_site{'dahlem2'}$loc{'dahlem2'}";
+		$www_site{'dahlem1'} = $www_site{'dahlem2'} = 'www';
+#		$www_port{'dahlem1'} = $www_port{'dahlem2'} = 1211;
+		last ARGL;
+	    };
+	    /^-proxy$/i && do { $proxy = &get_arg(*i, *ARGV, "-proxy", $_);
+				last ARGL; };
+	    /^-nomail$/ && do { $nomail = 1; last ARGL; };
+	    /^-checkexe$/ && do {
+		local($e, $p);
+		foreach $e ("mail", "ping", "socket",
+			    "echo", "cat", "tail", 'cksum') {
+		    print STDERR $e, "\t";
+		  CHECKEXE: {
+			foreach $p (split(/:/, $ENV{PATH})) {
+			    if (-x "$p/$e") {
+				print STDERR "=> $p";
+				last CHECKEXE;
+			    }
+			}
+			print STDERR "missing";
+		    }
+		    print STDERR "\n";
+		}
+		exit;
+	    };
+	    /^-/ && do { &usage("bad argument: $_"); last ARGL; };
+	}
+    }
+
+    if ($last_in_file) {
+	if (defined $get_file) {
+	    $line = tail_1($destfile{$get_file});
+	    chop $line;
+	} else {
+	    die "No \$get_file defined";
+	}
+    } elsif ($newest) {
+	($line, $source) = &get_newest;
+    } elsif (defined $get_file) {
+	if (!$testfile && !$local && !&site_reachable($www_site{$get_file})) {
+	    &add_errorlog("$www_site{$get_file} not reachable");
+	} else {
+	    $line = &parse($get_file);
+	}
+    }
+
+    if (defined $line) {
+	if ($store)  {
+	    if (-e $destfile{$get_file}) {
+		$old = `tail -1 $destfile{$get_file}`;
+		chop $old;
+		if ($old eq '') {
+		    &add_problem("Working tail -1?");
+		    $old = &tail_1($destfile{$get_file});
+		    chop $old;
+		    if ($old eq '') {
+			&add_problem("sub tail_1 failed");
+		    }
+		}
+	    } else {
+		$old = '';
+	    }
+	    if ($old ne $line) {
+		local($old_umask) = umask;
+		umask 022;
+		if (!open(DEST, ">>$destfile{$get_file}")) {
+		    &add_problem("Can't write to $destfile{$get_file}: $!");
+		} else {
+		    print DEST "$line\n";
+		    close(DEST);
+		}
+		umask $old_umask;
+	    }
+	} elsif ($outfile) {
+	    if (!-e $outfile && open(OUT, ">$outfile")) {
+		print OUT "$line\n";
+		close OUT;
+	    }
+	} elsif ($VERBOSE || $SHORTVERBOSE) {
+	    # nichts mehr ausgeben...
+	} else {
+	    print "$line\n";
+	}
+    }
+
+  MAILPROBLEM: {
+	last MAILPROBLEM if !@mail_problem;
+	if ($store && !$nomail) {
+	    if (@in_file && $cksumfile{$get_file}) {
+	      CKSUMTEST: {
+		    eval 'require "open2.pl"';
+		    last CKSUMTEST if $@;
+		    local($child) = &main'open2(RDR, WTR, 'cksum'); #'
+		    last CKSUMTEST if !$child;
+		    print WTR @in_file;
+		    close WTR;
+		    local($cksum) = <RDR>;
+		    close RDR;
+		    last CKSUMTEST if $cksum eq '';
+		    local($old);
+		    if (open(CKSUMFILE, $cksumfile{$get_file})) {
+			$old = <CKSUMFILE>;
+			close CKSUMFILE;
+		    }
+		    last MAILPROBLEM if $old eq $cksum;
+		    if (open(CKSUMFILE, ">$cksumfile{$get_file}")) {
+			print CKSUMFILE $cksum;
+			close CKSUMFILE;
+		    }
+		}
+	    }
+	    local($mailprg) = &get_exe('sendmail',
+				       '/usr/lib/sendmail',
+				       '/usr/sbin/sendmail');
+	    local($pid) = open(MAIL, "|-");
+	    if ($pid == 0) {
+		if (defined $mailprg) {
+		    exec $mailprg, '-oi', '-odb', '-oem', '-t';
+		} else {
+		    exec 'mail', '-s', 'wettermeldung2 errors', $mailto;
+		}
+		die "Fehler beim Versenden der Mail: $!";
+	    }
+	    if (defined $mailprg) {
+		print MAIL
+		  "From: $mailto\n",
+		  "Subject: wettermeldung2 errors\n",
+		  "To: $mailto\n",
+		  "Precedence: junk\n",
+		  "\n";
+	    }
+	    print MAIL "Fetch command: $fetch_cmd\n";
+	    print MAIL "Problems:\n", join("\n", @mail_problem), "\n";
+	    if (@in_file != ()) {
+		print MAIL "File:", "-" x 60, "\n", @in_file;
+	    }
+	    close(MAIL);
+	} else {
+	    print STDERR "Problems:\n", join("\n", @mail_problem), "\n";
+	}
+    }
+
+    if (@errorlog_problem) {
+	if ($store && $logfile) {
+	    if (open(ERRORLOG, ">>$logfile")) {
+		local(@t) = localtime;
+		$t[4]++;
+		$t[5]+=1900;
+		printf ERRORLOG
+		  "%02d.%02d.%04d %02d:%02d:%02d: %s\n", @t[3..5, 2, 1, 0],
+		  join("\n", @errorlog_problem);
+		close(ERRORLOG);
+	    }
+	} else {
+	    print STDERR "(Following problems would be logged)\n",
+	    join("\n", @errorlog_problem), "\n";
+	}
+    }
+}
+
+sub parse {
+    local($type) = @_;
+    if ($type eq 'dahlem1') {
+	&parse_dahlem1;
+    } elsif ($type eq 'dahlem2') {
+	&parse_dahlem2;
+    } elsif ($type eq 'tempelhof') {
+	&parse_tempelhof;
+    } else {
+	&add_problem("Undefined type: $type");
+    }
+}
+
+# ausführliche Wettermeldung aus Dahlem
+sub parse_dahlem1 {
+    local($line);
+    local($datum, $uhrzeit, $wetterzustand, $niederschlag,
+	  $luftdruck, $temperatur, $luftfeuchtigkeit,
+	  $windrichtung, $mitt_geschwindigkeit, $spitzen_geschwindigkeit);
+    $fetch_cmd =
+      ($testfile 
+       ? $testfile
+       : ($local
+	  ? $localfile{'dahlem1'}
+	  : &fetch_cmd($www_site{'dahlem1'},
+		       $www_port{'dahlem1'},
+		       $loc{'dahlem1'})
+	 )
+      );
+    open(IN, $fetch_cmd) || return;
+    while(<IN>) {
+	push(@in_file, $_); # für Fehlermeldungen
+	chop;
+
+	# Datum
+	if (/^\s*datum.*\D(\d+)\s*\.\s*(\d+)\s*\.\s*(\d+)/i) {
+	    if (!defined $datum) {
+		$datum = "$1.$2.$3";
+	    } else {
+		&add_problem("Datum doppelt");
+	    }
+	}
+	
+	# Uhrzeit
+	elsif (/beobachtung.*\D(\d+)\s*\.\s*(\d+)\s*uhr/i) {
+	    if (!defined $uhrzeit) {
+		$uhrzeit = sprintf("%d.%02d", $1, $2);
+	    } else {
+		&add_problem("Uhrzeit doppelt");
+	    }
+	}
+	
+	# Wetterzustand (aka Wetterlage)
+	elsif (/es\s+ist\s+zur\s+zeit\s+(.+)$/i) {
+	    $wetterzustand = $1;
+	    $wetterzustand =~ s/-999//; # remove bogus value
+	    $wetterzustand =~ s/&\#(\d+);/&_chr($1)/eg; # Umlaute
+	    $wetterzustand =~ s/\s+$//g;
+	}
+	
+	# Luftdruck
+	elsif (/luftdruck.*\D(\d+\.\d+)/i) {
+	    if (!defined $luftdruck) {
+		$luftdruck = $1;
+		&check_luftdruck;
+	    } else {
+		&add_problem("Luftdruck doppelt");
+	    }
+	}
+	
+	# Windrichtung und mittlere Geschwindigkeit
+	elsif (m|es\s+weht\s+(\S+)\s+wind.*mittlere.*geschwindigkeit.*\D(\d+)\s*m/s|i) {
+	    if (!defined $windrichtung) {
+		$windrichtung = $1;
+		if ($windrichtung !~ /^(n|e|s|w|ne|nw|se|sw)$/i) {
+		    &add_problem("Unbekannte Windrichtung");
+		}
+	    } else {
+		&add_problem("Windrichtung doppelt");
+	    }
+	    if (!defined $mitt_geschwindigkeit) {
+		$mitt_geschwindigkeit = $2;
+	    } else {
+		&add_problem("Mittlere Geschwindigkeit doppelt");
+	    }
+	}
+	
+	# Spitzengeschwindigkeit
+	elsif (m|spitzen.*\D(\d+)\s*m/s|i || 
+	       m|(\d+)\s*m/s.*windst.*rke|i) {
+	    if (!defined $spitzen_geschwindigkeit) {
+		$spitzen_geschwindigkeit = $1;
+	    } else {
+		&add_problem("Spitzengeschwindigkeit doppelt");
+	    }
+	}
+	
+	# Temperatur
+	elsif (/temperatur.*betr.*gt.*\s([+-]?\d+\.\d*)\s+/i) {
+	    if (!defined $temperatur) {
+		$temperatur = $1;
+	    } else {
+		&add_problem("Temperatur doppelt");
+	    }
+	}
+	
+	# Luftfeuchtigkeit
+	elsif (/luftfeuchtigkeit.*\D(\d+).*%/i) {
+	    if (!defined $luftfeuchtigkeit) {
+		$luftfeuchtigkeit = $1;
+	    } else {
+		&add_problem("Luftfeuchtigkeit doppelt");
+	    }
+	}
+	
+	# Niederschlag seit 0 Uhr
+	elsif (/(zwischen|seit).*\D(\d+\.\d+).*mm.*niederschlag/i ||
+	       /(zwischen|seit).*\D(\d+).*mm.*niederschlag/i) {
+	    if (!defined $niederschlag) {
+		$niederschlag = $2;
+	    } else {
+		&add_problem("Niederschlag doppelt");
+	    }
+	}
+
+	# kein Niederschlag
+	elsif (/seit.*kein\D+niederschlag/i) {
+	    if (!defined $niederschlag) {
+		$niederschlag = 0;
+	    } else {
+		&add_problem("Probleme bei Niederschlag");
+	    }
+	}
+
+	# ein einzelnes Fragezeichen -> möglicherweise keine Werte!
+	elsif (m|^\?(/extra4/AKTUELL/wetter_txt/ypage)?$|) {
+	    $lonely_question_mark = 1;
+	}
+    }
+    close(IN);
+
+    if ($lonely_question_mark &&
+	!defined $datum && !defined $uhrzeit &&
+	!defined $luftdruck && !defined $windrichtung &&
+	!defined $mitt_geschwindigkeit &&
+	!defined $spitzen_geschwindigkeit &&
+	!defined $temperatur && !defined $luftfeuchtigkeit &&
+	!defined $niederschlag &&
+	!defined $wetterzustand) {
+	&problem2errorlog;
+	&add_errorlog("Lonely question mark found");
+	return undef;
+    }
+
+    if ((defined $niederschlag && $niederschlag == 34) &&
+	(defined $luftfeuchtigkeit && $luftfeuchtigkeit == 17) &&
+	(defined $spitzen_geschwindigkeit && $spitzen_geschwindigkeit == 11)) {
+	&problem2errorlog;
+	&add_errorlog("Falsch ausgefüllte Felder (11m/s, 17%, 34mm)");
+	return undef;
+    }
+
+    if (!defined $datum) { &add_problem("Datum fehlt"); }
+    if (!defined $uhrzeit) { &add_problem("Uhrzeit fehlt"); }
+    if (!defined $wetterzustand) { &add_problem("Wetterzustand fehlt"); }
+    if (!defined $luftdruck) { &add_problem("Luftdruck fehlt"); }
+    if (!defined $windrichtung) { &add_problem("Windrichtung fehlt"); }
+    if (!defined $mitt_geschwindigkeit)
+      { &add_problem("Mitt. Geschwindigkeit fehlt"); }
+    if (!defined $spitzen_geschwindigkeit)
+      { &add_problem("Spitzengeschwindigkeit fehlt"); }
+    if (!defined $temperatur) { &add_problem("Temperatur fehlt"); }
+    if (!defined $luftfeuchtigkeit)
+      { &add_problem("Luftfeuchtigkeit fehlt"); }
+#    if (!defined $niederschlag) { &add_problem("Niederschlag fehlt"); }
+    
+    if (defined $datum && defined $uhrzeit &&
+	(defined $luftdruck || defined $windrichtung ||
+	 defined $mitt_geschwindigkeit ||
+	 defined $spitzen_geschwindigkeit ||
+	 defined $temperatur || defined $luftfeuchtigkeit ||
+	 defined $niederschlag ||
+	 defined $wetterzustand)) {
+	$line = "$datum|$uhrzeit|$temperatur|$luftdruck|$windrichtung|$spitzen_geschwindigkeit|$luftfeuchtigkeit|$mitt_geschwindigkeit|$niederschlag|$wetterzustand";
+    }
+
+    &cleanup;
+
+    &print_verbose if $VERBOSE;
+    &print_shortverbose if $SHORTVERBOSE;
+
+    $line;
+}
+
+# kurze Wetterbeobachtung aus Dahlem
+sub parse_dahlem2 {
+    local($line);
+    local($datum, $uhrzeit, $wetterzustand,
+	  $luftdruck, $temperatur, $luftfeuchtigkeit,
+	  $windrichtung, $windstaerke);
+    $fetch_cmd =
+      ($testfile
+       ? $testfile
+       : ($local
+	  ? $localfile{'dahlem2'}
+	  : &fetch_cmd($www_site{'dahlem2'},
+		       $www_port{'dahlem2'},
+		       $loc{'dahlem2'})
+	 )
+      );
+    open(IN, $fetch_cmd) || return;
+    while(<IN>) {
+	push(@in_file, $_); # für Fehlermeldungen
+	chop;
+
+	# Datum
+	if (/([0-3]?\d)\s*\.\s*([0-1]?\d)\s*\.\s*(\d{2,4})/i) {
+	    if (!defined $datum) {
+		$datum = "$1.$2.$3";
+	    } else {
+		&add_problem("Datum doppelt");
+	    }
+	}
+	
+	# Uhrzeit
+	elsif (/([0-2]?\d)\s*uhr\s*(\d{0,2})/i) {
+	    if (!defined $uhrzeit) {
+		$uhrzeit = sprintf("%d.%02d", $1, $2);
+	    } else {
+# zweites Mal fuer Schadstoffbelastung
+#		&add_problem("Uhrzeit doppelt");
+	    }
+	}
+	
+	# Luftdruck
+	elsif (/druck.*\D(\d+).*(hektopascal|hpa)/i) {
+	    if (!defined $luftdruck) {
+		$luftdruck = $1;
+		&check_luftdruck;
+	    } else {
+		&add_problem("Luftdruck doppelt");
+	    }
+	}
+	
+	# Temperatur
+	elsif (/(temp|grad|celsius)/i) {
+	    if (/([+-]?\d+(\.\d+)?)/) {
+		if (!defined $temperatur) {
+		    $temperatur = $1;
+		} else {
+		    &add_problem("Temperatur doppelt");
+		}
+	    } 
+	}
+
+	# Luftfeuchtigkeit
+	elsif (/rel.*feuchte.*\D(\d+)/i) {
+	    if (!defined $luftfeuchtigkeit) {
+		$luftfeuchtigkeit = $1;
+	    } else {
+		&add_problem("Luftfeuchtigkeit doppelt");
+	    }
+	} 
+	
+	# Wind
+	elsif (/wind\s*:\s*(\S+).*st.*rke\s*(\d+)/i) {
+	    if (!defined $windrichtung) {
+		%richtungen = ('west', 'W',
+			       'sued', 'S',
+			       'ost' , 'E',
+			       'nord', 'N',
+			       'nordwest', 'NW',
+			       'nordost' , 'NE',
+			       'suedwest', 'SW',
+			       'suedost' , 'SE',
+			       'stille'  , '');
+		$windrichtung = $richtungen{"\L$1"};
+		if (!defined $windrichtung) {
+		    &add_problem("Windrichtung nicht erkannt!");
+		}
+	    } else {
+		&add_problem("Windrichtung doppelt");
+	    }
+	    if (!defined $windstaerke) {
+		$windstaerke = $2;
+	    } else {
+		&add_problem("Windstaerke doppelt");
+	    }
+	}
+
+	# Wetterzustand
+	elsif (/wetterzustand\s*:\s*(.*)/i) {
+	    $wetterzustand = $1;
+	    $wetterzustand =~ s/&\#(\d+);/&_chr($1)/eg; # Umlaute
+	    $wetterzustand =~ s/\s+$//g;
+	}
+
+	# ein einzelnes Fragezeichen -> möglicherweise keine Werte!
+	elsif (/^\?$/) {
+	    $lonely_question_mark = 1;
+	}
+    }
+
+    close(IN);
+
+    if ($lonely_question_mark &&
+	!defined $datum && !defined $uhrzeit &&
+	!defined $luftdruck && !defined $windrichtung &&
+	!defined $windstaerke &&
+	!defined $temperatur && !defined $luftfeuchtigkeit &&
+        !defined $wetterzustand) {
+	&problem2errorlog;
+	&add_errorlog("Lonely question mark found");
+	return undef;
+    }
+
+    if (!defined $datum) { &add_problem("Datum fehlt"); }
+    if (!defined $uhrzeit) { &add_problem("Uhrzeit fehlt"); }
+## since 2002-03-01 no more Wetterzustand
+#    if (!defined $wetterzustand) { &add_problem("Wetterzustand fehlt"); }
+    if (!defined $luftdruck) { &add_problem("Luftdruck fehlt"); }
+    if (!defined $temperatur) { &add_problem("Temperatur fehlt"); }
+    if (!defined $luftfeuchtigkeit) { &add_problem("Luftfeuchtigkeit fehlt"); }
+    if (!defined $windrichtung) { &add_problem("Windrichtung fehlt"); }
+    if (!defined $windstaerke) { &add_problem("Windstaerke fehlt"); }
+
+    if (defined $datum && defined $uhrzeit &&
+	(defined $luftdruck || defined $temperatur)) {
+	$line = "$datum|$uhrzeit|$temperatur|$luftdruck|$windrichtung|$windstaerke|$luftfeuchtigkeit|||$wetterzustand";
+    }
+
+    &cleanup;
+
+    &print_verbose if $VERBOSE;
+    &print_shortverbose if $SHORTVERBOSE;
+
+    $line;
+}
+
+sub parse_tempelhof {
+    local($line);
+    local($noparse);
+    local($datum, $uhrzeit, $luftdruck, $temperatur, $luftfeuchtigkeit,
+	  $windrichtung, $windstaerke);
+    $fetch_cmd =
+      ($testfile
+       ? $testfile
+       : ($local
+	  ? $localfile{'tempelhof'}
+	  : &fetch_cmd($www_site{'tempelhof'},
+		       $www_port{'tempelhof'},
+		       $loc{'tempelhof'})
+	 )
+      );
+    open(IN, $fetch_cmd) || return;
+    while(<IN>) {
+	push(@in_file, $_); # für Fehlermeldungen
+	chop;
+
+	if ($noparse) {
+	    # do nothing
+	}
+
+	# Datum und Uhrzeit
+	elsif (/Stand:.*[^\d](\d+)\.(\d+)\.(\d+)\s+(\d+):(\d+)/) {
+	    if (!defined $datum) {
+		$datum = "$1.$2.$3";
+	    } else {
+		&add_problem("Datum doppelt");
+	    }
+	    if (!defined $uhrzeit) {
+		$uhrzeit = sprintf("%d.%02d", $4, $5);
+	    } else {
+		&add_problem("Uhrzeit doppelt");
+	    }
+	    if ($datum eq '01.01.1970') {
+		# das haben sie noch immer nicht hingekriegt :-(
+		return undef;
+	    }
+	}
+	
+	# Luftdruck
+	elsif (/^\s*(\d+)\s+hPa/) {
+	    if (!defined $luftdruck) {
+		$luftdruck = $1;
+		&check_luftdruck;
+	    } else {
+		&add_problem("Luftdruck doppelt");
+	    }
+	}
+	
+	# Temperatur
+	elsif (/^\s*([+\-]?\d+)\s*(&\#176;|°)\s*C/) {
+	    if (!defined $temperatur) {
+		$temperatur = $1;
+	    } else {
+		&add_problem("Temperatur doppelt");
+	    }
+	}
+
+	# Luftfeuchtigkeit
+	elsif (/relative.*Luftfeuchte.*[^\d](\d+)\s*%/) {
+	    if (!defined $luftfeuchtigkeit) {
+		$luftfeuchtigkeit = $1;
+	    } else {
+		&add_problem("Luftfeuchtigkeit doppelt");
+	    }
+	} 
+	
+	# Wind
+	elsif (/weht\s+([a-zA-Z&;\-]+)/) {
+	    if (!defined $windrichtung) {
+		%windrichtungen = 
+		    ('sued', 'S',
+		     'suedwest', 'SW',
+		     'west', 'W',
+		     'nordwest', 'NW',
+		     'nord', 'N',
+		     'nordost', 'NE',
+		     'ost', 'E',
+		     'suedost', 'SE',
+		     'still', '', # windstill (wind wird entfernt)
+		     );
+		local($w) = "\L$1";
+		$w =~ s/&uuml;/ue/i; # ü-Umlaut umwandeln
+		$w =~ s/-//g; # Bindestrich entfernen
+		# süd-west-(wind) oder (wind)still-(wind) entfernen
+		$w =~ s/wind//ig;
+		$windrichtung = $windrichtungen{$w};
+		if (!defined $windrichtung) {
+		    &add_problem("Windrichtung nicht erkannt!");
+		}
+	    } else {
+		&add_problem("Windrichtung doppelt");
+	    }
+	}
+	elsif (/St(&auml;|ä)rke\s+(\d+)/) {
+	    if (!defined $windstaerke) {
+		$windstaerke = $2;
+	    } else {
+		&add_problem("Windstaerke doppelt");
+	    }
+	}
+        elsif (/Die\s+Wettervorhersage/) {
+	    # In der Wettervorhersage können Termperatur- und Windangaben
+	    # nochmal vorkommen. Deshalb Abbruch.
+	    $noparse = 1;
+	}
+    }
+
+    close(IN);
+
+    if (!defined $datum) { &add_problem("Datum fehlt"); }
+    if (!defined $uhrzeit) { &add_problem("Uhrzeit fehlt"); }
+    if (!defined $luftdruck) { &add_problem("Luftdruck fehlt"); }
+    if (!defined $temperatur) { &add_problem("Temperatur fehlt"); }
+    if (!defined $luftfeuchtigkeit) { &add_problem("Luftfeuchtigkeit fehlt"); }
+    if (!defined $windrichtung) { &add_problem("Windrichtung fehlt"); }
+    if (!defined $windstaerke) { &add_problem("Windstaerke fehlt"); }
+
+    if (defined $datum && defined $uhrzeit &&
+	(defined $luftdruck || defined $temperatur)) {
+	$line = "$datum|$uhrzeit|$temperatur|$luftdruck|$windrichtung|$windstaerke|$luftfeuchtigkeit";
+    }
+
+    &cleanup;
+
+    &print_verbose if $VERBOSE;
+    &print_shortverbose if $SHORTVERBOSE;
+
+    $line;
+}
+
+sub add_problem {
+    local($problem) = @_;
+    push(@mail_problem, $problem);
+}
+
+sub clear_problem {
+    @mail_problem  = ();
+}
+
+sub problem2errorlog {
+    push(@errorlog_problem, @mail_problem);
+    &clear_problem;
+}
+
+sub add_errorlog {
+    local($problem) = @_;
+    push(@errorlog_problem, $problem);
+}
+
+sub print_verbose {
+    print &string_verbose;
+}
+
+sub print_shortverbose {
+    print ucfirst($get_file) . ":\n";
+    print &string_shortverbose;
+}
+
+sub string_verbose {
+    local($res) = '';
+    $res .= <<EOF;
+Datum:                   $datum
+Uhrzeit:                 $uhrzeit
+EOF
+    $res .= "Temperatur:              $temperatur°C\n"
+      if defined $temperatur;
+    $res .= "Luftdruck:               $luftdruck hPa\n"
+      if defined $luftdruck;
+    $res .= "Windrichtung:            $windrichtung\n"
+      if defined $windrichtung;
+    $res .= "Mittl. Geschwindigkeit:  $mitt_geschwindigkeit m/s\n"
+      if defined $mitt_geschwindigkeit;
+    $res .= "Spitzengeschwindigkeit:  $spitzen_geschwindigkeit m/s\n"
+      if defined $spitzen_geschwindigkeit;
+    $res .= "Windstaerke              $windstaerke (in Beaufort)\n"
+      if defined $windstaerke;
+    $res .= "Luftfeuchtigkeit:        $luftfeuchtigkeit %\n"
+      if defined $luftfeuchtigkeit;
+    $res .= "Niederschlag seit 0 Uhr: $niederschlag mm\n" 
+      if defined $niederschlag;
+    $res .= "Wetterzustand:           $wetterzustand\n"
+      if defined $wetterzustand;
+    $res;
+}
+
+sub string_shortverbose {
+    local($res) = '';
+    $res .= "$datum, $uhrzeit.\n";
+    $res .= "$temperatur°C.\n"
+      if defined $temperatur;
+    $res .= "$luftdruckhPa.\n"
+      if defined $luftdruck;
+    $res .= "Wind $windrichtung.\n"
+      if defined $windrichtung;
+    $res .= "${mitt_geschwindigkeit}m/s (mitt).\n"
+      if defined $mitt_geschwindigkeit;
+    $res .= "${spitzen_geschwindigkeit}m/s (max).\n"
+      if defined $spitzen_geschwindigkeit;
+    $res .= "${windstaerke}Bf.\n"
+      if defined $windstaerke;
+    $res .= "Feuchte $luftfeuchtigkeit%.\n"
+      if defined $luftfeuchtigkeit;
+    $res .= "N'schlag ${niederschlag}mm.\n"
+      if defined $niederschlag;
+    $res .= "$wetterzustand.\n"
+      if defined $wetterzustand;
+    $res;
+}
+
+sub check_luftdruck {
+    if ($luftdruck < 800) {
+	&add_problem("Luftdruck zu klein ($luftdruck)");
+	undef $luftdruck;
+    } elsif ($luftdruck < 970) {
+	&add_problem("Luftdruck bitte überprüfen ($luftdruck)");
+	# wird trotzdem in der Tabelle gelassen
+    }
+}
+
+# perl4 kennt kein chr
+sub _chr {
+    local($ord) = @_;
+    sprintf("%c", $ord);
+}
+
+sub site_reachable {
+    local($site) = @_;
+    if (!gethostbyname($site)) {
+	# probably connected over http proxy...
+	return 1;
+    }
+    if ($] >= 5 && $^O !~ /(sunos|solaris)/i && 0) {
+	# don't use Net::Ping in any case... there are too many
+	# problems with it
+	local($r);
+	local($cmd) = 
+             'use Net::Ping;
+              my $ping = Net::Ping->new("tcp");
+              $r = $ping->ping("' . $site . '");
+              $ping->close;
+             ';
+	eval $cmd;
+	if (!$@) {
+	    return $r;
+	}
+        warn $@; # ... and fallback to system ping
+    }
+    if (&is_in_path("ping")) {
+	system("ping " . join(" ", @pingopt) . " $site " . join(" ", @pingpost)
+	       . " > /dev/null")/256 == 0 ? 1 : 0;
+    } else {
+	warn "No ping program found ... assuming site is reachable.\n";
+	1;
+    }
+}
+
+# print out how to use this program.
+# the string argument passed to it is printed at the end, with a nl.
+sub usage {
+    local($problem) = @_;
+    die "usage: $0 [-d] [-dahlem1|-dahlem2|-tempelhof] [-lastinfile]
+          [-store] [-verbose|-shortverbose] [-local] [-testfile file]
+-dahlem1       holt umfangreiche Wettermeldung (Berlin-Dahlem)
+-dahlem2       holt einfache Wettermeldung (Berlin-Dahlem)
+-tempelhof     Wettermeldung des DWD für den Flughafen Tempelhof
+-newest        gibt die neueste Meldung aus
+-store         speichert die Daten in der vorgesehenen Datei in
+                $destdir_met ab
+-verbose       formatierte Ausgabe der Wetterdaten
+-shortverbose  formatierte kurze Ausgabe der Wetterdaten (z.B. für SMS)
+-local         verwendet im Cache vorhandene Dateien
+-testfile file verwendet die Datei file zum Parsen
+-lastinfile    gibt die letzte Zeile in der jeweiligen Datei aus
+-d             schaltet Debugmodus ein
+\n"
+    . "$problem\n";
+}
+
+sub tail_1 {
+    local($file) = @_;
+    local($seek) = 256; # maximale Zeilenlänge XXX Bug(?)
+    local($pos, $res, $tail);
+    open(F, $file) || die "Can't open $file";
+    seek(F, -$seek, 2);
+    local($/) = undef;
+    while (1) {
+	if (tell(F) < 0) {
+	    seek(F, 0, 0);
+	}
+	$pos = tell(F);
+	$tail = <F>;
+	if ($tail =~ /(.*)$/) {
+	    $res = $1;
+	    $res .= substr($tail, length($tail)-1, 1)
+	      if substr($tail, length($tail)-1, 1) eq "\n";
+	    last;
+	}
+	if ($pos <= 0) {
+	    last;
+	} else {
+	    seek(F, $pos-$seek, 0);
+	}
+    }
+    close(F);
+    $res;
+}
+
+# Get the argument, which may be directly after this switch, or the
+# next word entirely.  This works like getopts, in a way.
+sub get_arg {
+    local(*index, *array, $prefix, $arg) = @_;
+    if ($arg =~ m/^$prefix$/) {
+	++$index;
+	die "Too few args - last arg was $arg\n" if ($index > $#array);
+	return "$array[$index]";
+    } else {
+	$arg =~ s/^$prefix//; return "$arg";
+    }
+}
+
+sub make_temp {
+    eval 'use POSIX;
+          $tmp = POSIX::tmpnam();
+          push(@tmpfiles, $tmp);
+          $tmp;
+         ';
+}
+
+sub fetch_cmd {
+    local($host, $port, $path) = @_;
+
+    # 1. Versuch: Http
+    if ($] >= 5) {
+	local($r, $tmp);
+	eval 'require Http;
+              if (defined $tk_widget) {
+                  $Http::tk_widget = $tk_widget;
+              }
+              $tmp = &make_temp();
+              open(WWW, ">$tmp") or die "Cannot write to $tmp: $!";
+              my $url = "http://$host:$port/$path";
+              print STDERR "Getting $url => $tmp...\n"
+                  if ($VERBOSE);
+              my(%res) = &Http\'get("url", "http://$host:$port" . $path,
+                                    ($proxy ? ("proxy" => $proxy) : ()),
+                                   );
+              if ($res{"error"} == 200) {
+                  $r = 1;
+                  print WWW $res{"content"};
+              } else {
+                  print STDERR "Error detected while fetching $url. Error code: $res{error}\n";
+              }
+              close WWW;
+             ';
+	if ($r) { return $tmp }
+	warn $@ if $@ && $VERBOSE;
+    }
+
+    # 2. Versuch: LWP::UserAgent
+    if ($] >= 5 && $^O ne 'sunos') {
+	local($r, $tmp);
+	eval 'use LWP::UserAgent;
+              $tmp = make_temp();
+              my $ua = new LWP::UserAgent;
+              $ua->env_proxy; # XXX check this...
+              if ($^O eq q|MSWin32| && eval { require Win32Util; 1 }) {
+	         Win32Util::lwp_auto_proxy($ua);
+              }
+              $ua->proxy($proxy) if $proxy;
+              $ua->agent($user_agent);
+              $ua->timeout(45);
+              my $req = new HTTP::Request("GET", "http://'
+	           . $host . ':' . $port . $path . '");
+              my $res = $ua->request($req, $tmp);
+              if ($res->is_success) {
+                  $r = 1;
+                  return;
+              }
+              warn $res->as_string;
+              ';
+	if ($r) { return $tmp }
+	warn $@ if $@ && $VERBOSE;
+    }
+
+    # 3. Versuch: socket
+    if (!$proxy && &is_in_path('socket')) {
+	return "echo GET $path | socket $host $port | ";
+    }
+
+    # 4. Versuch: Fehlermeldung
+    "echo ERROR |";
+}
+
+sub cleanup {
+    if (@tmpfiles) {
+	unlink @tmpfiles;
+    }
+    undef @tmpfiles;
+}
+
+sub date_cmp {
+    local($l1, $l2) = @_;
+
+    local(@f1) = split(/\|/, $l1);
+    local(@f2) = split(/\|/, $l2);
+
+    local(@date1) = split(/\./, $f1[0]);
+    local(@date2) = split(/\./, $f2[0]);
+
+    local($r) = $date1[0]+$date1[1]*31+($date1[2]-1970)*366
+      <=> $date2[0]+$date2[1]*31+($date2[2]-1970)*366;
+    if ($r != 0) {
+	$r;
+    } else {
+	local(@time1) = split(/[.:]/, $f1[1]);
+	local(@time2) = split(/[.:]/, $f2[1]);
+	$time1[1] + $time1[0]*60 <=> $time2[1] + $time2[0]*60;
+    }
+}
+
+sub get_newest {
+    local(@sources) = @_;
+    local($act_line, $act_source);
+    local($source);
+    if (@sources == 0) {
+	@sources = ('dahlem1', 'dahlem2', 'tempelhof');
+    }
+    foreach $source (@sources) {
+	local($line) = &parse($source);
+	next if !defined $line || $line eq '';
+	if (!defined $act_line || &date_cmp($act_line, $line) < 0) {
+	    $act_line   = $line;
+	    $act_source = $source;
+	}
+    }
+    ($act_line, $act_source);
+}
+
+sub get_exe {
+    local($exe, @exe) = @_;
+    foreach (@exe) {
+	return $_ if (-f $_ && -x $_);
+    }
+    foreach (split(/:/, $ENV{PATH})) {
+	local($path) = "$_/$exe";
+	return $path if (-f $_ && -x $_);
+    }
+    $exe;
+}
+
+sub is_in_path {
+    local($prog) = @_;
+    foreach (split(/:/, $ENV{PATH})) {
+	return $_ if -x "$_/$prog";
+    }
+    undef;
+}
+
+}
+package main;
+
+unless ($wettermeldung2'module) {
+
+    $ENV{PATH} = "/usr/bin:/bin:/usr/ucb:/usr/local/bin:/sbin:/usr/sbin:/usr/etc:/usr/local/etc:/usr/gnu/bin:/home/e/eserte/bin/sh:$ENV{HOME}/bin:$ENV{HOME}/bin/sh:$ENV{PATH}:/home/pub/bin";
+    &wettermeldung2'cmdline_call;
+}
+
+1;

@@ -1,0 +1,82 @@
+#!/usr/perl5.8.0/bin/perl5.8.0
+
+eval 'exec /usr/perl5.8.0/bin/perl5.8.0  -S $0 ${1+"$@"}'
+    if 0; # not running under some shell
+# -*- perl -*-
+
+#
+# $Id: tkbikepwr,v 1.7 2001/10/13 14:30:11 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright: see at bottom of file
+#
+# Mail: slaven.rezic@berlin.de
+# WWW:  http://user.cs.tu-berlin.de/~eserte/
+#
+
+use Tk;
+use Tk::CmdLine;
+use BikePower;
+
+my $top = new MainWindow;#$top->WidgetDump;
+
+$top->withdraw;
+my $bp = new BikePower;
+my %args;
+if (defined $ENV{LANG} and $ENV{LANG} =~ /^de/) {
+    $args{-lang} = 'de';
+}
+my $bp_w = $bp->tk_interface($top, %args);
+bp_destroy($bp_w, $top);
+MainLoop;
+
+#@BikePower::Tk::interfaces = @BikePower::Tk::interfaces; # peacify -w
+
+sub bp_destroy {
+    my($w, $top) = @_;
+    $w->OnDestroy(sub {
+ 		      foreach (@BikePower::Tk::interfaces) {
+			  # Falls noch ein aktives Widget existiert,
+			  # wird das Programm noch nicht beendet.
+ 			  if (Tk::Exists($_) && $w ne $_) {
+ 			      bp_destroy($_, $top);
+ 			      return;
+ 			  }
+ 		      }
+		      $top->destroy;
+		  });
+}
+
+__END__
+
+=head1 NAME
+
+tkbikepwr - Tk interface for bicycle power-output calculator
+
+=head1 SYNOPSIS
+
+    tkbikepwr
+
+=head1 DESCRIPTION
+
+C<tkbikepwr> is a Perl/Tk interface for the L<BikePower|BikePower> module.
+
+Varoius parameters like temperature, wind, grade of hill, weights and
+bicycle related values can be entered and solved by velocity, power or
+consumption. The output is done in a table. Move the cursor to the
+title columns of the table to get the column descriptions.
+
+Settings can be stored permanently with the "Save as default" menu
+entry in the "Settings" menu. The configure file is usually named
+$HOME/.bikepowerrc.
+
+=head1 AUTHOR
+
+Slaven Rezic (slaven.rezic@berlin.de)
+
+Copyright (c) 1997,2000 Slaven Rezic. All rights reserved.
+This package is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.
+
+=cut
+

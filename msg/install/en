@@ -1,0 +1,50 @@
+$lang_messages = {
+'Installation für %s' => 'Installation for %s',
+'Argument für %s muss root, user oder best sein' => "Argument for %s must be root, user or best",
+'Installieren' => 'Install',
+'Abbrechen' => 'Cancel',
+'%s-Installation' => '%s installation',
+"Die Installation ist beendet." => 'The installation has finished.',
+"%s kann aus dem Startmenü heraus gestartet werden." => 'You can start %s from the Start menu.',
+"%s kann aus dem Startmenü von KDE oder GNOME heraus gestartet werden." => 'You can start %s from the Start menu of KDE or GNOME.',
+"OK" => "OK",
+"Fenster schließen" => "Close window",
+"Programm starten" => "Start program",
+"Kann %s nicht starten: %s" => "Can't execute %s: %s",
+"Die folgenden perl-Module werden benötigt:" => "These perl modules are missing:",
+"Sollen sie aus dem Internet geholt und installiert werden? (j/n) " => "Fetch and install these modules from internet? (y/n) ",
+"^j" => "^y",
+"Windows-Installation " => 'Windows installation ',
+"(rechnerweit) " => '(for all users) ',
+"(privat) " => '(private) ',
+"%s in die Registry eintragen ..." => 'Add %s to the registry ...',
+"Programmgruppe für %s erstellen ..." => 'Create program group for %s ...',
+"%s im WWW" => '%s in the WWW',
+"%s Dokumentation" => '%s Documentation',
+"Konsolenversion von %s" => 'Console program %s',
+"Version von %s, die ohne Tk " . "in der MSDOS-Eingabeaufforderung läuft"
+	=> 'This version of %s works without Tk in the MS DOS box',
+"Desktop-Verknüpfung (Shortcut) für %s erstellen ..." => 'Create shortcut on desktop for %s ...',
+"%s wird nach dem Booten automatisch gestartet ..." => 'Put %s into Autostart folder ...',
+"KDE-Installation" => "KDE Installation",
+"Keine Verzeichnisse für die KDE-Installation gefunden.\n" => "Can't find a directory for KDE installation.\n",
+"Installation der KDE-Verknüpfungen ...\n" => "Installing KDE links ...\n",
+"Dokumentation für DocPath\n" => "Documentation for DocPath\n",
+"\n" .
+	"Es wird jetzt versucht, einige Erweiterungen zu installieren,\n" .
+	"die die Ausführungsgeschwindigkeit von %s verbessern, aber\n" .
+	"nicht unbedingt notwendig sind. Deshalb können Fehler hier\n" .
+	 "ignoriert werden.\n\n"
+		  => "\n" .
+		  "Now trying to install some extensions, which are\n" .
+		  "optional and only cause a better performance of\n" .
+		  "%s. You can ignore any errors.\n\n",
+"Desktop-Icon erstellen" => "Create desktop icon",
+"Schritte zeigen und nicht ausführen" => "Only show installation steps",
+"Debugging-Version erzeugen" => "Create debug version",
+"Erweiterungen compilieren" => "Compile extensions",
+"Netzwerkfähige-Installation für Win32" => "Network installation for Win32",
+"Eintrag im Startmenü erstellen" => "Create start menu entry",
+"Autostart" => "Autostart",
+"Server-Client-Modus verwenden" => "Use server-client mode",
+};

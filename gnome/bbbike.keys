@@ -1,0 +1,17 @@
+application/x-bbbike-route:
+	open=bbbike %f
+	view=bbbike %f
+	edit=bbbike %f
+	icon-filename=%%ICONDIR%%/srtbike.png
+
+application/x-bbbike-data:
+	open=bbbike %f
+	view=bbbike %f
+	edit=bbbike %f
+	icon-filename=%%ICONDIR%%/srtbike.png
+
+application/x-gistrack:
+	open=bbbike %f
+	view=bbbike %f
+	edit=bbbike %f
+	icon-filename=%%ICONDIR%%/srtbike.png

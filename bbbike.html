@@ -1,0 +1,1925 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<meta content="Pod::HTML 0.43" name="GENERATOR">
+<title>bbbike</title>
+</head>
+<body>
+<a class="POD_NAVLINK" name="Pod_TOP_OF_PAGE"></a>
+<table width="100%">
+<tr><td align="left" width="1%"><a class="POD_NAVLINK" href="bbd.html">Next:<br>bbd</a></td><td align="left" width="1%"><a class="POD_NAVLINK" href="http://bbbike.sourceforge.net/index.html">Previous:<br>http://bbbike.sourceforge.net/index</a></td><td width="90%">&nbsp;</td><td align="right" width="1%"><a class="POD_NAVLINK" href="podindex.html">[Index]</a></td></tr>
+</table>
+<h1 class="POD_TITLE">bbbike</h1>
+<hr>
+<ul>
+<li><a class="POD_NAVLINK" href="#NAME">NAME</a>
+<li><a class="POD_NAVLINK" href="#SYNOPSIS">SYNOPSIS</a>
+<li><a class="POD_NAVLINK" href="#BESCHREIBUNG">BESCHREIBUNG</a>
+<ul>
+<li><a class="POD_NAVLINK" href="#AUTOMATISCHE_SUCHE">AUTOMATISCHE SUCHE</a>
+<li><a class="POD_NAVLINK" href="#MANUELLE_ROUTENERSTE">MANUELLE ROUTENERSTELLUNG</a>
+</ul>
+<li><a class="POD_NAVLINK" href="#INFORMATIONSLEISTE">INFORMATIONSLEISTE</a>
+<li><a class="POD_NAVLINK" href="#ICONS">ICONS</a>
+<ul>
+<li><a class="POD_NAVLINK" href="#KARTENELEMENTE">KARTENELEMENTE</a>
+<li><a class="POD_NAVLINK" href="#NAVIGATION">NAVIGATION</a>
+<li><a class="POD_NAVLINK" href="#ROUTEN">ROUTEN</a>
+<li><a class="POD_NAVLINK" href="#DATEIOPERATIONEN">DATEIOPERATIONEN</a>
+<li><a class="POD_NAVLINK" href="#WEITERE_ICONS">WEITERE ICONS</a>
+</ul>
+<li><a class="POD_NAVLINK" href="#OPTIONEN">OPTIONEN</a>
+<li><a class="POD_NAVLINK" href="#ANFORDERUNGEN">ANFORDERUNGEN</a>
+<li><a class="POD_NAVLINK" href="#INSTALLATION">INSTALLATION</a>
+<ul>
+<li><a class="POD_NAVLINK" href="#Allgemein">Allgemein</a>
+<li><a class="POD_NAVLINK" href="#fvwm2">fvwm2</a>
+</ul>
+<li><a class="POD_NAVLINK" href="#INTERNA">INTERNA</a>
+<li><a class="POD_NAVLINK" href="#BUGS">BUGS</a>
+<li><a class="POD_NAVLINK" href="#LIMITATIONS">LIMITATIONS</a>
+<li><a class="POD_NAVLINK" href="#TODO">TODO</a>
+<li><a class="POD_NAVLINK" href="#KOMPATIBILIT_T">KOMPATIBILIT&Auml;T</a>
+<li><a class="POD_NAVLINK" href="#ANERKENNUNG">ANERKENNUNG</a>
+<li><a class="POD_NAVLINK" href="#AUTOR">AUTOR</a>
+<li><a class="POD_NAVLINK" href="#PREREQUISITES">PREREQUISITES</a>
+<li><a class="POD_NAVLINK" href="#COREQUISITES">COREQUISITES</a>
+<li><a class="POD_NAVLINK" href="#SEE_ALSO">SEE ALSO</a>
+</ul>
+<hr>
+<h2 class="POD_HEAD1"><a name="NAME">NAME</a></h2>
+<p class="POD_TEXT">
+bbbike - Informationssystem f&uuml;r Radfahrer in Berlin und Brandenburg
+</p>
+<h2 class="POD_HEAD1"><a name="SYNOPSIS">SYNOPSIS</a></h2>
+<pre class="POD_VERBATIM">
+  bbbike [options]
+</pre>
+<h2 class="POD_HEAD1"><a name="BESCHREIBUNG">BESCHREIBUNG</a></h2>
+<p class="POD_TEXT">
+<b>BBBike</b> ist ein Informationssystem f&uuml;r Radfahrer in Berlin und
+Brandenburg. Mit dem Programm k&ouml;nnen Routen, optimiert f&uuml;r
+Radfahrer, automatisch gesucht oder manuell erstellt werden. Bei der
+automatischen Suche wird die k&uuml;rzeste Strecke zwischen zwei
+angegebenen Punkten gesucht. Bei der manuellen Routenerstellung
+k&ouml;nnen abschnittsweise Zwischenpunkte eingegeben werden und zum
+Schluss die Gesamtl&auml;nge abgelesen werden.
+</p>
+<p class="POD_TEXT">
+Eine einfache WWW-Version kann man unter der Adresse
+<a class="POD_LINK" href="http://www.bbbike.de">http://www.bbbike.de</a> finden.
+</p>
+<p class="POD_TEXT">
+Wenn eine Verbindung zum Internet existiert, kann <b>BBBike</b> die
+aktuellen Wetterdaten von der FU Berlin (Dahlem) bzw. vom DWD Berlin
+(Tempelhof) f&uuml;r die Windst&auml;rke und -richtung auswerten.
+Diese Daten k&ouml;nnen bei der Berechnung der Fahrzeit und Leistung
+verwendet werden.
+</p>
+<p class="POD_TEXT">
+Ein Teil von <b>BBBike</b> ist das perl-Modul <u>BikePower</u>. Mit
+diesem Modul kann (wie beim urspr&uuml;nglichen
+<b>bike_power</b>-Programm von Ken Roberts - roberts@cs.columbia.edu )
+anhand von Daten wie Gef&auml;lle, Wind, Rollwiderstand der Reifen,
+Luftwiderstand, Masse von Rad und Fahrer die Leistung ermittelt
+werden.
+</p>
+<p class="POD_TEXT">
+<b>BBBike</b> liefert unter anderem die Antwort auf folgende Fragen:
+</p>
+<ul class="POD_LIST">
+<li class="POD_ITEM"><a name="_"></a>
+
+Wie lang ist die Strecke von A nach B?
+<li class="POD_ITEM"><a name="_1"></a>
+
+Wie schnell komme ich von A nach B, wenn ich durchschnittlich 15 km/h 
+schnell fahre?
+<li class="POD_ITEM"><a name="_2"></a>
+
+Wie lange brauche ich von A nach B, wenn ich mit 100 Watt Leistung
+fahre, mit Ber&uuml;cksichtigung des aktuellen Windes und von Steigungen
+auf der Strecke?
+<li class="POD_ITEM"><a name="_3"></a>
+
+Auf welchen Stra&szlig;en fahre ich, wenn ich von A nach B kommen will?
+<li class="POD_ITEM"><a name="_4"></a>
+
+Wo habe ich Gegenwind- und R&uuml;ckenwindstrecken?
+<li class="POD_ITEM"><a name="_5"></a>
+
+Wo gibt es Steigungen und Gef&auml;lle?
+<li class="POD_ITEM"><a name="_6"></a>
+
+Kann ich Hauptstra&szlig;en und/oder Kopfsteinpflasterstrecken auf
+meiner Strecke vermeiden?
+</ul>
+<h3 class="POD_HEAD2"><a name="AUTOMATISCHE_SUCHE">AUTOMATISCHE SUCHE</a></h3>
+<p class="POD_TEXT">
+Start- und Zielpunkt einer Route setzt man, indem man mit der linken
+Maustaste auf eine Stra&szlig;e klickt. Nach dem Setzen des
+Zielpunktes berechnet das Programm die k&uuml;rzeste Route und zeigt
+sie an. Danach kann die Route verl&auml;ngert werden. Soll eine neue
+Route (mit neuem Start- und Zielpunkt) berechnet werden, kann die alte
+mit der rechten Maustaste oder mit Klick auf das Icon <b>Route
+zur&uuml;cksetzen</b> gel&ouml;scht werden. Mit der mittleren Maustaste
+oder mit der Backspace-Taste kann jeweils der letzte Punkt der Route
+gel&ouml;scht werden. Mit der Delete-Taste (Entf) kann die Route bis
+zum letzten Via-Punkt gel&ouml;scht werden.
+</p>
+<p class="POD_TEXT">
+Wenn Winddaten existieren (automatisch aus dem WWW geholt oder manuell
+eingegeben), werden die R&uuml;ckenwindstrecken gr&uuml;n und die
+Gegenwindstrecken rot dargestellt.
+</p>
+<h3 class="POD_HEAD2"><a name="MANUELLE_ROUTENERSTE">MANUELLE ROUTENERSTELLUNG</a></h3>
+<p class="POD_TEXT">
+Die manuelle Routenerstellung wird zum Beispiel bei der Erstellung
+einer Tourplanung verwendet, bei der nicht das Suchen einer
+k&uuml;rzesten Strecke im Vordergrund steht. Sie funktioniert
+prinzipiell wie die <b>automatische Suche</b>, nur wird der Benutzer mehr
+Punkte eingeben, um die Route festzulegen. Mit Klick auf Alt-Button1
+oder Shift-Button1 (Klick auf die linke Maustaste und gleichzeitiges
+Dr&uuml;cken der Alt- oder Shift-Taste) kann ein beliebiger Punkt
+gekennzeichnet werden (also ein Punkt, der nicht auf einer
+Stra&szlig;e liegt).
+</p>
+<h2 class="POD_HEAD1"><a name="INFORMATIONSLEISTE">INFORMATIONSLEISTE</a></h2>
+<p class="POD_TEXT">
+Im oberen Bereich des Fensters befindet sich die Informationsleiste
+von BBBike.
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Ort_Bahnhof">Ort/Bahnhof</a>
+<dd>
+Anzeige des Ortes bzw. der Haltestelle unter dem Mauscursor. Die
+Angabe ist nur g&uuml;ltig, wenn sie in schwarzer Schrift (und nicht
+in grauer) erscheint. Mit einem Klick wird die Ort-Auswahl angezeigt.
+<dt class="POD_ITEM"><a name="Stra_e_Strecke">Stra&szlig;e/Strecke</a>
+<dd>
+Anzeige der Stra&szlig;e bzw. Bahnlinie unter dem Mauscursor. Auch
+hier ist die Angabe nur bei schwarzer Schrift g&uuml;ltig. Mit einem
+Klick wird die Stra&szlig;en-Auswahl angezeigt.
+<dt class="POD_ITEM"><a name="km">km</a>
+<dd>
+L&auml;nge der aktuellen Route in Kilometern. Mit der rechten Taste
+kann zwischen der Angabe in Kilometern und Metern umgeschaltet werden.
+<dt class="POD_ITEM"><a name="_7">%</a>
+<dd>
+Angabe, wieviel % &uuml;ber der Ideallinie (Luftlinie) die aktuelle
+Route liegt. Bei offensichtlichen Rundfahrten bleibt die Angabe leer.
+<dt class="POD_ITEM"><a name="km_h">km/h</a>
+<dd>
+Fahrzeit bei dieser durchschnittlichen Geschwindigkeit. Mit Klick auf
+das km/h-Feld kann eine andere Geschwindigkeit eingegeben werden. Mit
+Klick auf die Fahrzeit wird das Alarm-Fenster ge&ouml;ffnet. Mit der
+rechten Maustaste kann die jeweilige Geschwindigkeit als
+&quot;Referenzgeschwindigkeit&quot; ausgew&auml;hlt werden. Mit dem
+Ampel-Icon kann das Einbeziehen von Ampeln in die Fahrzeit
+ein-/ausgeschaltet werden.
+<dt class="POD_ITEM"><a name="W">W</a>
+<dd>
+Fahrzeit bei dieser durchschnittlichen Leistung, abh&auml;ngig von
+der Windgeschwindigkeit und von Steigungen. Die Berechnung wird mit
+dem Modul <u>BikePower</u> durchgef&uuml;hrt. Mit Klick auf das
+W-Feld kann eine andere Leistung (in Watt) eingegeben werden. Mit
+Klick auf die Fahrzeit wird das Alarm-Fenster ge&ouml;ffnet. Mit der
+rechten Maustaste kann die jeweilige Leistung als
+&quot;Referenzleistung&quot; (intern wird diese auf eine
+Geschwindigkeit umberechnet) ausgew&auml;hlt werden. Mit dem
+Ampel-Icon kann das Einbeziehen von Ampeln in die Fahrzeit
+ein-/ausgeschaltet werden.
+<dt class="POD_ITEM"><a name="Datum_der_Winddaten">Datum der Winddaten</a>
+<dd>
+Falls aktuelle Winddaten vorhanden sind, stehen in diesem Feld das
+jeweilige Datum und die Uhrzeit. Bei einem Mausklick wird versucht,
+die aktuellen Daten &uuml;ber das WWW oder &uuml;ber eine lokale
+Datenbank zu holen. Mit der rechten Maustaste erscheint ein Men&uuml;
+mit folgenden Punkten:
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Wetterstation">Wetterstation</a>
+<dd>
+Hier kann ausgew&auml;hlt werden, welche der Quellen im Internet
+(Meteorologisches Institut der FU oder Deutscher Wetterdienst)
+verwendet werden soll. Mit &quot;aktuellste&quot; werden alle Quellen nach den
+aktuellsten Angaben &uuml;berpr&uuml;ft.
+<dt class="POD_ITEM"><a name="Quelle">Quelle</a>
+<dd>
+Hier kann angegeben werden, ob die Wetterdaten &uuml;ber das Internet
+direkt gezogen werden oder ob ein evtl. vorhandener lokaler Cache bzw
+eine lokale Datenbank vorgezogen wird.
+<dt class="POD_ITEM"><a name="Auswahl_aus_Datenban">Auswahl aus Datenbank</a>
+<dd>
+Falls eine lokale Datenbank vorhanden ist, k&ouml;nnen hiermit
+Wetterdaten zu einem bestimmten Tag ausgew&auml;hlt werden.
+<dt class="POD_ITEM"><a name="Wind_ignorieren">Wind ignorieren</a>
+<dd>
+Normalerweise wird - falls Winddaten vorhanden sind - die Route anhand
+der Windrichtung gef&auml;rbt: R&uuml;ckenwindabschnitte sind
+gr&uuml;n, Gegenwindabschnitte rot und Seitenwindabschnitte von
+hellgr&uuml;n bis orange.
+<p class="POD_TEXT">
+Falls der Men&uuml;punkt &quot;Wind ignorieren&quot; angeklickt ist, wird die
+Windgeschwindigkeit und -richtung bei der Route und bei der
+Zeitberechnung ignoriert. Die Route wird dann in einer einzelnen Farbe
+(blau) gezeichnet.
+</p>
+<dt class="POD_ITEM"><a name="Aktualisierung">Aktualisierung</a>
+<dd>
+Hiermit kann das Zeichnen der Gegenwind- und R&uuml;ckenwindstrecken
+der Route aktualisiert werden.
+<dt class="POD_ITEM"><a name="automatische_Aktuali">automatische Aktualisierung</a>
+<dd>
+Beim &Auml;ndern der Wetterstation bzw. der Quelle werden automatisch
+die neuen Wetterdaten geholt.
+<dt class="POD_ITEM"><a name="automatische_Routena">automatische Routenaktualisierung</a>
+<dd>
+Beim &Auml;ndern von Wetterdaten werden automatisch die Gegenwind-
+und R&uuml;ckenwindstrecken der Route aktualisiert.
+</dl>
+<dt class="POD_ITEM"><a name="Winddaten">Winddaten</a>
+<dd>
+Hier wird, falls vorhanden, die aktuelle Windrichtung und die aktuelle
+Windgeschwindigkeit in m/s angezeigt. Mit einem Klick wird ein Fenster
+zur manuellen Eingabe der Windrichtung und -geschwindigkeit
+ge&ouml;ffnet. <i>Anmerkung</i>: Zwar kann die maximale Windgeschwindigkeit
+eingegeben werden, das Programm verwendet aber nur die mittlere
+Windgeschwindigkeit f&uuml;r die Zeitberechnungen.
+<dt class="POD_ITEM"><a name="Temp">Temp</a>
+<dd>
+Anzeige der aktuellen Temperatur. Die Temperatur wird sogar in die
+Leistungsberechnung einbezogen, die Auswirkungen darauf sind aber nur
+minimal.
+</dl>
+<h2 class="POD_HEAD1"><a name="ICONS">ICONS</a></h2>
+<p class="POD_TEXT">
+Unter manchen Icons befindet sich ein kleiner Pfeil, mit dem ein
+zugeh&ouml;riges Popup-Men&uuml; aufgeklappt werden kann. Das
+Men&uuml; kann auch mit Klick auf die rechte Maus-Taste,
+w&auml;hrend sich der Maus-Cursor &uuml;ber dem Icon befindet,
+aufgerufen werden.
+</p>
+<p class="POD_TEXT">
+Hier folgt die Beschreibung der Icons von links nach rechts.
+</p>
+<h3 class="POD_HEAD2"><a name="KARTENELEMENTE">KARTENELEMENTE</a></h3>
+<p class="POD_TEXT">
+Die erste Gruppe kontrolliert, welche Elemente auf der
+Kartenfl&auml;che dargestellt werden sollen. In allen Men&uuml;s
+dieser Icons kann mit <b>oben</b>, <b>normal</b> und <b>unten</b> angegeben
+werden, ob die Elemente &uuml;ber oder unter allen anderen Elementen
+gezeichnet werden sollen oder ob die normale Reihenfolge
+wiederhergestellt werden soll (die normale Reihenfolge lautet von
+unten nach oben: Fl&auml;chen, Gew&auml;sser, Inseln, Grenzen,
+U-Bahnen, Regionalbahnen, S-Bahnen, Stra&szlig;en,
+Landstra&szlig;en, Orte). Daneben besitzt jedes Men&uuml; einen
+Schalter zum Ein- und Ausschalten des Elements und einen Eintrag zum
+Ausw&auml;hlen einer bestimmten Stra&szlig;e oder eines bestimmten
+Ortes &uuml;ber eine Listbox.
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Stra_en_Symbol">Stra&szlig;en-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/strasse.gif">
+Schaltet das Zeichnen von Stra&szlig;en in Berlin ein oder aus
+(Tastatur: <code>s</code>).
+</p>
+<p class="POD_TEXT">
+Men&uuml;: Neben den Standardeintr&auml;gen sind noch folgende
+Eintr&auml;ge vorhanden:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Auswahl_aus_">Auswahl aus ...</a>
+<dd>
+In diesem Untermen&uuml; kann eine Stra&szlig;e aus alternativen
+Verzeichnissen ausgew&auml;hlt werden:
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Komplette_Stra_enlis">Komplette Stra&szlig;enliste</a>
+<dd>
+In der Stra&szlig;en-Datenbank von <b>BBBike</b> sind nur ca. 2300
+Stra&szlig;en erfasst. Stra&szlig;en, die hier nicht vorhanden sind,
+k&ouml;nnen in der umfangreicheren PLZ-Datenbank ausgew&auml;hlt
+werden. Allerdings wird bei der Auswahl einer nicht vorhandenen
+Stra&szlig;e nur der Postleitzahlbereich angezeigt.
+<dt class="POD_ITEM"><a name="Telefonbuch_Datenban">Telefonbuch-Datenbank (Stra&szlig;e)</a>
+<dd>
+Wenn eine Telefonbuch-CD-ROM 1998/99 oder 1999/2000 f&uuml;r Berlin
+vorhanden ist, kann diese Datenbank verwendet werden. Hier kann jede
+Stra&szlig;e mit Hausnummer angegeben werden; die Position wird recht
+exakt angzeigt.
+<dt class="POD_ITEM"><a name="Telefonbuch_Datenban1">Telefonbuch-Datenbank (Name)</a>
+<dd>
+Mit diesem Formular kann nach Namen im Telefonbuch-Verzeichnis gesucht
+werden. Es muss mindestens der Nachname angegeben werden. Mit dem
+Schalter <b>Exakt</b> kann eingestellt werden, ob der Nachname exakt
+passen muss (ansonsten wird bei der Suche von &quot;Wall&quot; auch &quot;Wallburg&quot;
+etc. angezeigt). Nachdem mit <b>Suchen</b> die Ergebnisliste erstellt
+wurde, k&ouml;nnen mit <b>&lt;&lt;</b> und <b>&gt;&gt;</b> weitere
+passende Datens&auml;tze eingesehen werden. Mit <b>Alle</b> werden alle
+passenden Datens&auml;tze auf der Karte markiert. Wenn ein
+<code>dial</code>-Programm vorhanden ist, erscheint noch ein Button
+<b>W&auml;hlen</b> zum W&auml;hlen der Telefonnummer.
+</dl>
+<dt class="POD_ITEM"><a name="Untermen_Stra_enkate">Untermen&uuml; Stra&szlig;enkategorien</a>
+<dd>
+In diesem Untermen&uuml; kann das Zeichnen von Hauptstra&szlig;en,
+Nebenstra&szlig;en und f&uuml;r Kfz gesperrte Stra&szlig;en ein-
+und ausgeschaltet werden.
+<dt class="POD_ITEM"><a name="H_henpunkte">H&ouml;henpunkte</a>
+<dd>
+H&ouml;henpunkte werden in die Karte eingezeichnet.
+<dt class="POD_ITEM"><a name="Radwege">Radwege</a>
+<dd>
+Radwege werden gezeichnet. Benutzungspflichtige Radwege sind
+dunkelblau, freiwillig zu nutzende Radwege blau, Radstreifen
+gr&uuml;n und Busspuren orange. F&uuml;r jede Richtung, in die ein
+Radweg existiert, wird auf der jeweiligen Stra&szlig;enseite ein
+Radweg gezeichnet, auch wenn es sich eigentlich um einen
+Zwei-Richtungs-Radweg auf der falschen Stra&szlig;enseite handelt.
+<dt class="POD_ITEM"><a name="Untermen_Radwegekate">Untermen&uuml; Radwegekategorien</a>
+<dd>
+In diesem Untermen&uuml; kann das Zeichnen von einigen
+Radwegekategorien ein- und ausgeschaltet werden.
+<dt class="POD_ITEM"><a name="Einbahn_gesperrte_St">Einbahn-/gesperrte Stra&szlig;en</a>
+<dd>
+Kennzeichnung von Einbahnstra&szlig;en (blaue Pfeile, die in die
+Stra&szlig;enrichtung zeigen), gesperrten Stra&szlig;en (rote
+Kreuze) sowie Punkten, an denen das Fahrrad getragen werden muss (drei
+waagerechte Striche). Tempor&auml;re Sperrungen wegen Bauarbeiten
+werden mit einem Baustellen-Symbol gekennzeichnet.
+<dt class="POD_ITEM"><a name="F_hren">F&auml;hren</a>
+<dd>
+Zeichnen von F&auml;hren. Um die F&auml;hren auch in der Suche mit
+einzubeziehen, muss im Men&uuml; von <b>Route suchen</b> der Eintrag
+<b>F&auml;hren verwenden</b> aktiviert sein.
+<dt class="POD_ITEM"><a name="Ampeln">Ampeln</a>
+<dd>
+Ampeln werden in die Karte eingezeichnet. Bei der Auswahl einer Route
+wird die Anzahl der durchgefahrenen Ampeln mit einer ungef&auml;hren
+Verz&ouml;gerungszeit (15 Sekunden pro Ampel) im Feld rechts von den
+Icons angezeigt.
+<p class="POD_TEXT">
+Reine Fu&szlig;g&auml;ngerampeln sind in der Datenbasis nur erfasst,
+wenn sie die Fahrt wesentlich verz&ouml;gern w&uuml;rden (hohe
+Fu&szlig;g&auml;ngerfrequenz oder stark befahrene Querstra&szlig;e
+direkt vor oder hinter der Ampeln). Beschrankte
+Bahn&uuml;berg&auml;nge sind ebenfalls unter den Ampeln zu finden.
+</p>
+<dt class="POD_ITEM"><a name="Outline_zeichnen">Outline zeichnen</a>
+<dd>
+Die Stra&szlig;en werden mit Umrandung gezeichnet.
+<dt class="POD_ITEM"><a name="Stra_ennamen">Stra&szlig;ennamen</a>
+<dd>
+Die Stra&szlig;en werden mit Stra&szlig;ennamen gezeichnet. Ist
+wesentlich langsamer, besonders wenn <b>Font rotation</b> eingeschaltet
+ist.
+<dt class="POD_ITEM"><a name="Stra_enqualit_t">Stra&szlig;enqualit&auml;t</a>
+<dd>
+Die Qualit&auml;t des Stra&szlig;enbelags wird gezeichnet. Die
+Kategorisierung siegt wie folgt aus:
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="dunkelgr_n">dunkelgr&uuml;n</a>
+<dd>
+Sehr guter Belag (meist Asphalt). Da die meisten Stra&szlig;en einen
+guten Belag haben, wurde auf eine Erfassung dieser Kategorie meist
+verzichtet.
+<dt class="POD_ITEM"><a name="hellgr_n">hellgr&uuml;n</a>
+<dd>
+Guter Belag, z.B. gutes Kopfsteinpflaster oder etwas schlechterer
+Asphalt.
+<dt class="POD_ITEM"><a name="orange">orange</a>
+<dd>
+M&auml;&szlig;iger Belag, z.B. die meisten
+Kopfsteinpflasterstra&szlig;en.
+<dt class="POD_ITEM"><a name="rot">rot</a>
+<dd>
+Schlechter Belag (schlechtes Kopfsteinpflaster, unbefestigte Wege).
+</dl>
+<dt class="POD_ITEM"><a name="Qualit_tskategorien">Qualit&auml;tskategorien</a>
+<dd>
+Hiermit kann das Zeichnen der Qualit&auml;tskategorien
+eingeschr&auml;nkt werden.
+<dt class="POD_ITEM"><a name="Sonstige_Behinderung">Sonstige Behinderungen</a>
+<dd>
+Zeichnen von sonstigen Behinderungen (z.B.
+Fu&szlig;g&auml;ngerverkehr).
+</dl>
+<dt class="POD_ITEM"><a name="Landstra_en_Symbol">Landstra&szlig;en-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/landstrasse.gif">
+Schaltet das Zeichnen von Landstra&szlig;en in Berlins Umgebung ein
+oder aus (Tastatur: <code>l</code>).
+</p>
+<p class="POD_TEXT">
+Men&uuml;: Neben den Standardeintr&auml;gen sind noch folgende
+Eintr&auml;ge vorhanden:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Outline_zeichnen1">Outline zeichnen</a>
+<dd>
+Gleiche Funktion wie beim Stra&szlig;en-Symbol.
+<dt class="POD_ITEM"><a name="Landstra_en_jwd_zeic">Landstra&szlig;en jwd zeichnen</a>
+<dd>
+Zeichnet auch Landstra&szlig;en au&szlig;erhalb Brandenburgs.
+<dt class="POD_ITEM"><a name="Stra_enqualit_t1">Stra&szlig;enqualit&auml;t</a>
+<dd>
+Gleiche Funktion wie beim Stra&szlig;en-Symbol.
+<dt class="POD_ITEM"><a name="Sonstige_Behinderung1">Sonstige Behinderungen</a>
+<dd>
+Gleiche Funktion wie beim Stra&szlig;en-Symbol.
+</dl>
+<dt class="POD_ITEM"><a name="Ort_Symbol">Ort-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/ort.gif">
+Schaltet das Zeichnen von Orten in Brandenburg ein oder aus (Tastatur:
+<code>o</code>).
+</p>
+<p class="POD_TEXT">
+Men&uuml;: Neben den Standardeintr&auml;gen sind noch folgende
+Eintr&auml;ge vorhanden:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Ortsnamen">Ortsnamen</a>
+<dd>
+Anzeige von <b>Ortsnamen</b> erm&ouml;glichen oder unterbinden.
+<dt class="POD_ITEM"><a name="Kategorie">Kategorie</a>
+<dd>
+In diesem Untermen&uuml; kann das Zeichnen von kleineren Orten
+unterdr&uuml;ckt werden. Beispielorte f&uuml;r die Kategorisierung:
+<pre class="POD_VERBATIM">
+	6	Berlin
+	5	Potsdam, Brandenburg
+	4	Werder, Kyritz
+	3	Ketzin, Lindow
+	2	Caputh, G&ouml;ttin
+	1	Krummensee
+	0	Ortsteile wie Wilhelmsdorf, D&ouml;then,
+		Petzow
+</pre>
+<p class="POD_TEXT">
+Mit &quot;Alle&quot; werden alle Orte gezeichnet. Mit
+&quot;Auto&quot; werden die Orte abh&auml;ngig von der Zoom-Stufe
+gezeichnet.
+</p>
+<dt class="POD_ITEM"><a name="Schriftgr_e">Schriftgr&ouml;&szlig;e</a>
+<dd>
+Untermen&uuml; zum Einstellen einer anderen Schriftgr&ouml;&szlig;e
+f&uuml;r die Anzeige der Ortsnamen. Der Bereich geht von &quot;klein&quot; bis
+&quot;sehr gro&szlig;&quot;.
+<dt class="POD_ITEM"><a name="_berlappungen_vermei">&Uuml;berlappungen vermeiden</a>
+<dd>
+Hier wird mit einem sehr einfachen Algorithmus versucht, die
+Ortsbeschriftungen so zu setzen, dass sie sich nicht einander
+&uuml;berlappen. Per Voreinstellung ist diese Option ausgeschaltet,
+weil das Zeichnen der Orte dadurch erheblich verlangsamt wird.
+Sinnvoll ist diese Option, wenn z.B. die Karte als Bilddatei
+abgespeichert werden soll.
+</dl>
+<dt class="POD_ITEM"><a name="U_Bahn_Symbol">U-Bahn-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/ubahn.gif">
+Schaltet das Zeichnen von U-Bahnlinien ein oder aus (Tastatur: <code>u</code>).
+</p>
+<p class="POD_TEXT">
+Men&uuml;: Zus&auml;tzlich zum Ein-/Ausschalten und Ausw&auml;hlen
+der U-Bahnlinien k&ouml;nnen auch U-Bahnh&ouml;fe ein-/ausgeschaltet
+und ausgew&auml;hlt werden.
+</p>
+<p class="POD_TEXT">
+Wenn der Punkt <b>U-Bhf-Namen</b> angeklickt wird, werden die jeweiligen
+Namen zum U-Bahnhof auf der Karte eingezeichnet. Mit
+<b>&Uuml;berlappungen vermeiden</b> wird versucht, die Namen so zu
+setzen, dass sie sich nicht einander &uuml;berlappen. Siehe auch die
+Bemerkung zu <b>&Uuml;berlappungen vermeiden</b> im Men&uuml;punkt
+<b>Ort-Symbol</b>.
+</p>
+<p class="POD_TEXT">
+Mit <b>VBB-Zone A</b>, <b>VBB-Zone B</b> und <b>in Bau</b> kann das U-Bahn-Netz
+zus&auml;tzlich auf die jeweilige Zone eingeschr&auml;nkt werden.
+</p>
+<dt class="POD_ITEM"><a name="S_Bahn_Symbol">S-Bahn-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/sbahn.gif">
+Schaltet das Zeichnen von S-Bahnlinien ein oder aus (Tastatur: <code>b</code>).
+</p>
+<p class="POD_TEXT">
+Men&uuml;: Wie beim U-Bahn-Symbol.
+</p>
+<dt class="POD_ITEM"><a name="RB_Symbol">RB-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/rbahn.gif">
+Schaltet das Zeichnen von Regionalbahnlinien ein oder aus (Tastatur: <code>r</code>).
+</p>
+<p class="POD_TEXT">
+Men&uuml;: Wie beim U-Bahn-Symbol.
+</p>
+<dt class="POD_ITEM"><a name="Gew_sser_Symbol">Gew&auml;sser-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/wasser.gif">
+Schaltet das Zeichnen von Fl&uuml;ssen, Kan&auml;len und Seen ein
+oder aus (Tastatur: <code>w</code>).
+</p>
+<p class="POD_TEXT">
+Men&uuml;: Neben den Standardeintr&auml;gen sind noch folgende
+Eintr&auml;ge vorhanden:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Outline_zeichnen2">Outline zeichnen</a>
+<dd>
+Wie beim gleichnamigen Eintrag beim Stra&szlig;en-Symbol.
+<dt class="POD_ITEM"><a name="Namen_der_Gew_sser">Namen der Gew&auml;sser</a>
+<dd>
+Schaltet das Zeichnen der Gew&auml;ssernamen ein oder aus.
+<dt class="POD_ITEM"><a name="Gew_sser_im_Umland_z">Gew&auml;sser im Umland zeichnen</a>
+<dd>
+Schaltet das Zeichnen der Gew&auml;sser im Umland von Berlin ein oder aus.
+<dt class="POD_ITEM"><a name="Gew_sser_in_der_Stad">Gew&auml;sser in der Stadt zeichnen</a>
+<dd>
+Schaltet das Zeichnen der Gew&auml;sser in Berlin ein oder aus.
+</dl>
+<dt class="POD_ITEM"><a name="Fl_chen_Symbol">Fl&auml;chen-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/flaechen.gif">
+Schaltet das Zeichnen von sonstigen Fl&auml;chen (Parks,
+W&auml;lder, Flugh&auml;fen) ein oder aus (Tastatur: <code>f</code>).
+</p>
+<p class="POD_TEXT">
+Men&uuml;: Neben den Standardeintr&auml;gen sind noch folgende
+Eintr&auml;ge vorhanden:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="PLZ_Gebiete">PLZ-Gebiete</a>
+<dd>
+Schaltet das Zeichnen der Berliner Postleitzahlgrenzen ein oder aus.
+Die PLZ-Datenbank ist noch im Aufbau.
+<dt class="POD_ITEM"><a name="PLZ_Gebiet_ausw_hlen">PLZ-Gebiet ausw&auml;hlen</a>
+<dd>
+Zeigt eine Listbox zum Ausw&auml;hlen einer Berliner Postleitzahl an.
+<dt class="POD_ITEM"><a name="Grenzen_von_Berlin">Grenzen von Berlin</a>
+<dd>
+Schaltet das Zeichnen der Berliner Stadtgrenze ein oder aus.
+</dl>
+<dt class="POD_ITEM"><a name="Kneipen_Symbol">Kneipen-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/glas.gif">
+Schaltet das Zeichnen von Kneipen ein oder aus. Im Men&uuml; gibt es
+die weiteren Punkte:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Kneipen">Kneipen</a>
+<dd>
+Zeichnet genau wie die Schaltfl&auml;che Kneipen in Berlin.
+<dt class="POD_ITEM"><a name="Kneipe_ausw_hlen">Kneipe ausw&auml;hlen</a>
+<dd>
+Zeigt eine Listbox zum Ausw&auml;hlen einer Kneipe an.
+<dt class="POD_ITEM"><a name="Restaturants">Restaturants</a>
+<dd>
+Zeichnet Restaurants in Berlin.
+<dt class="POD_ITEM"><a name="Restaurant_ausw_hlen">Restaurant ausw&auml;hlen</a>
+<dd>
+Zeigt eine Listbox zum Ausw&auml;hlen eines Restaurants an.
+<dt class="POD_ITEM"><a name="Kinos">Kinos</a>
+<dd>
+Zeichnet Kinos in Berlin.
+<dt class="POD_ITEM"><a name="Kino_ausw_hlen">Kino ausw&auml;hlen</a>
+<dd>
+Zeigt eine Listbox zum Ausw&auml;hlen eines Kinos an.
+<dt class="POD_ITEM"><a name="Pers_nliche_Orte">Pers&ouml;nliche Orte</a>
+<dd>
+Zeigt eine Listbox mit pers&ouml;nlich eingetragenen Orten ein. Die
+Punkte m&uuml;ssen im <code>bbd</code>-Format in der Datei
+<code>$HOME/.bbbike/personal.bbd</code> vorhanden sein.
+<dt class="POD_ITEM"><a name="Sehensw_rdigkeiten">Sehensw&uuml;rdigkeiten</a>
+<dd>
+Schaltet das Zeichnen von Sehensw&uuml;rdigkeiten und anderen
+markanten Geb&auml;uden in Berlin und Brandenburg ein oder aus.
+<dt class="POD_ITEM"><a name="Sehensw_rdigkeit_aus">Sehensw&uuml;rdigkeit ausw&auml;hlen</a>
+<dd>
+Zeigt eine Listbox zum Ausw&auml;hlen einer Sehensw&uuml;rdigkeit
+an.
+<dt class="POD_ITEM"><a name="Obst">Obst</a>
+<dd>
+Zeichnet Stellen mit &ouml;ffentlich zug&auml;nglichen
+Obstb&auml;umen.
+</dl>
+</dl>
+<h3 class="POD_HEAD2"><a name="NAVIGATION">NAVIGATION</a></h3>
+<p class="POD_TEXT">
+In der n&auml;chsten Gruppe sind die Navigations-Icons:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Vergr_ern_Symbol_">Vergr&ouml;&szlig;ern-Symbol (+)</a>
+<dd>
+Es wird ein kleinerer Ausschnitt angezeigt (mehr Details). Tastatur:
+<code>+</code>.
+<dt class="POD_ITEM"><a name="Verkleinern_Symbol_">Verkleinern-Symbol (-)</a>
+<dd>
+Es wird ein gr&ouml;&szlig;erer Ausschnitt angezeigt (weniger
+Details). Tastatur: <code>-</code>.
+<dt class="POD_ITEM"><a name="Ma_stab_Feld">Ma&szlig;stab-Feld</a>
+<dd>
+Dieses Feld zeigt den aktuellen Ma&szlig;stab, bezogen auf den
+Bildschirm, an. Die Zahl stimmt nur, wenn die DPI-Zahl des X-Servers
+korrekt eingetragen wurde (beim X-Server von XFree86 kann die DPI-Zahl
+mit der Option <i>-dpi</i> ver&auml;ndert werden). Mit Klick auf das Feld
+kann ein anderer Ma&szlig;stab angegeben werden und so der
+Kartenausschnit vergr&ouml;&szlig;ert oder verkleinert werden.
+<dt class="POD_ITEM"><a name="_bersichtskarten_Sym">&Uuml;bersichtskarten-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/berlin_overview_small.gif">
+Mit diesem Symbol kann die &Uuml;bersichtskarte von Berlin und
+Brandenburg ein- und ausgeschaltet werden. In der
+&Uuml;bersichtskarte wird der aktuelle Ausschnitt durch ein schwarzes
+Rechteck gekennzeichnet. Durch Verschieben dieses Rechtecks wird auch
+der aktuelle Ausschnitt verschoben.
+</p>
+<dt class="POD_ITEM"><a name="Windrosen_Symbol">Windrosen-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/windrose.gif">
+Mit dem Windrosen-Symbol kann man die Karte in die vier
+Himmelsrichtungen scrollen. Mit der linken Maustaste sind dabei die
+Schritte kleiner, mit der mittleren gr&ouml;&szlig;er. Wenn man
+l&auml;nger auf die Mitte der Windrose klickt (ca. 2 Sekunden), wird
+wieder zur&uuml;ck auf die Mitte zentriert. Scrollen kann man auch
+mit den Scrollbars oder mit den Tasten <i>Pos1</i> (links), <i>Ende</i>
+(rechts), <i>Bild nach oben</i> und <i>Bild nach unten</i> (jeweils immer
+seitenweise) bzw. mit den Cursortasten (feinere Abstufung).
+</p>
+</dl>
+<h3 class="POD_HEAD2"><a name="ROUTEN">ROUTEN</a></h3>
+<p class="POD_TEXT">
+Die folgenden Icons kontrollieren die Suche von Routen:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Route_suchen">Route suchen</a>
+<dd><p class="POD_RAW"><img src="images/search.gif">
+Mit diesem Schalter kann man den Suchmodus ein- oder ausschalten.
+Normalerweise ist dieser Schalter nicht aktiviert und es ist immer der
+Suchmodus eingeschaltet (kann mit der Kommandozeilen-Option
+<i>-advanced</i> ge&auml;ndert werden).
+</p>
+<p class="POD_TEXT">
+Men&uuml;:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Route_l_schen">Route l&ouml;schen</a>
+<dd>
+Die aktuelle Route wird gel&ouml;scht. Gleiche Funktion wie ein Klick auf
+die rechte Maustaste oder Dr&uuml;cken auf <code>Shift-Backspace</code>.
+<p class="POD_TEXT">
+Der letzte Punkt der Route wird mit der Backspace-Taste gel&ouml;scht.
+</p>
+<dt class="POD_ITEM"><a name="Route_wiederherstell">Route wiederherstellen (Undo)</a>
+<dd>
+Die zuletzt gel&ouml;schte Route wird wiederhergestellt.
+<dt class="POD_ITEM"><a name="Route_aktualisieren">Route aktualisieren</a>
+<dd>
+Die Route wird in Bezug auf Wind und Leistung aktualisiert (sollte nicht
+notwendig sein).
+<dt class="POD_ITEM"><a name="gesperrte_Stra_en_be">gesperrte Stra&szlig;en beachten</a>
+<dd>
+Wenn dieser Schalter eingeschaltet ist, werden gesperrte
+Stra&szlig;en und Einbahnstra&szlig;en nicht in die Suche
+einbezogen.
+<dt class="POD_ITEM"><a name="Tragen_vermeiden">Tragen vermeiden</a>
+<dd>
+Stellen, an denen das Rad getragen werden muss, werden nicht in die
+Suche einbezogen.
+<dt class="POD_ITEM"><a name="F_hren_verwenden">F&auml;hren verwenden</a>
+<dd>
+F&auml;hren werden bei der Suche ber&uuml;cksichtigt.
+<dt class="POD_ITEM"><a name="Steigungen_berechnen">Steigungen berechnen</a>
+<dd>
+H&ouml;henangaben werden eingelesen und bei der Berechnung der
+Leistung werden die H&ouml;henangaben f&uuml;r Steigungen und
+Gef&auml;lle verwendet.
+<dt class="POD_ITEM"><a name="Ampel_Optimierung">Ampel-Optimierung</a>
+<dd>
+Bei der Suche einer Route wird f&uuml;r jede Ampel 25m, 50m oder 100m
+auf die entsprechende Strecke aufgeschlagen (nur f&uuml;r den
+Suchalgorithmus). Abh&auml;ngig von der Geschwindigkeit bekommt man
+f&uuml;r die Verz&ouml;gerungszeit pro Ampel folgende Tabelle:
+<p class="POD_RAW"><table border=1><tr><th></th><th>15km/h </th><th>20km/h </th><th>25km/h </th></tr><tr><td>25m </td><td>6s </td><td>5s </td><td>4s </td></tr><tr><td>50m </td><td>12s </td><td>9s </td><td>7s </td></tr><tr><td>100m </td><td>24s </td><td>18s </td><td>14s </td></tr></table>
+Zu lesen ist die Tabelle wie folgt: wenn man mit 25km/h unterwegs ist
+und als Aufschlag 100m gew&auml;hlt hat, w&uuml;rde dies einer
+Verz&ouml;gerung von durchschnittlich 14s pro Ampel entsprechen.
+</p>
+<dt class="POD_ITEM"><a name="Steigungen_Gef_lle_z">Steigungen/Gef&auml;lle zeigen</a>
+<dd>
+Auf der Route liegende Gef&auml;lle oder Steigungen &uuml;ber 1%
+werden angezeigt.
+<dt class="POD_ITEM"><a name="Startflagge">Startflagge</a>
+<dd>
+Schaltet das Zeichnen einer Startflagge am Routenanfangspunkt ein oder
+aus.
+<dt class="POD_ITEM"><a name="Zielflagge">Zielflagge</a>
+<dd>
+Schaltet das Zeichnen einer Zielflagge am Routenendpunkt ein oder aus.
+</dl>
+<dt class="POD_ITEM"><a name="Beschreibung_der_akt">Beschreibung der aktuellen Route</a>
+<dd><p class="POD_RAW"><img src="images/strlist.gif">
+Es wird eine Routenbeschreibung in der folgenden Form angezeigt:
+<table border=1><tr><th>L&auml;nge</th><th>Gesamt </th><th>Richtung </th><th>Stra&szlig;e </th></tr><tr><td>nach 0.15 km </td><td>(0.2 km) </td><td> &nbsp; </td><td>Franklinstr. </td></tr><tr><td>nach 0.03 km </td><td>(0.2 km) </td><td> &nbsp; </td><td> Marchstr. </td></tr><tr><td>nach 0.48 km </td><td>(0.7 km) </td><td> rechts (80&deg;) auf den </td><td> Ernst-Reuter-Platz </td></tr><tr><td>nach 0.28 km </td><td>(0.9 km) </td><td> halbrechts (30&deg;) in die </td><td> Hardenbergstr. </td></tr><tr><td>nach 0.09 km </td><td>(1.0 km) </td><td> angekommen! </td><td> &nbsp; </td></tr></table></p>
+<p></p>
+<p></p>
+<p class="POD_TEXT">
+Diese Beschreibung kann in eine Datei geschrieben, ausgedruckt oder
+als Mail verschickt werden.
+</p>
+<p class="POD_TEXT">
+<b>Routenbeschreibung in den Palm laden</b>
+</p>
+<p class="POD_TEXT">
+Folgendes gilt nur f&uuml;r Unix-&auml;hnliche Betriebssysteme.
+</p>
+<p class="POD_TEXT">
+In <code>$PATH</code> muss sich mindestens eins der folgenden Programme
+befinden: <code>iSiloBSD</code>, <code>iSiloLinux</code> oder <code>pilot_makedoc</code>.
+</p>
+<p class="POD_TEXT">
+Die Sourcen zu <code>pilot_makedoc</code> bekommt man z.B. bei
+</p>
+<ul class="POD_LIST">
+<li class="POD_ITEM"><a name="_8"></a>
+
+<a class="POD_LINK" href="ftp://ftp.forth.org/pub/PalmOS/">ftp://ftp.forth.org/pub/PalmOS/</a>
+<li class="POD_ITEM"><a name="_9"></a>
+
+<a class="POD_LINK" href="ftp://ftp.cs.tu-berlin.de/pub/palmtops/pilot/">ftp://ftp.cs.tu-berlin.de/pub/palmtops/pilot/</a>
+<li class="POD_ITEM"><a name="_10"></a>
+
+<a class="POD_LINK" href="ftp://ftp.cso.uiuc.edu/pub/systems/PalmOS/">ftp://ftp.cso.uiuc.edu/pub/systems/PalmOS/</a>
+</ul>
+<p class="POD_TEXT">
+<code>iSilo</code> ist ein anderes Format, das einen speziellen Palm-Viewer
+braucht, der allerdings Hypertextf&auml;hig ist. Die Binaries f&uuml;r die
+Umwandlung findet man unter <a class="POD_LINK" href="ftp://ftp.iSilo.com/pub/">ftp://ftp.iSilo.com/pub/</a>. Hinweise zum
+PalmViewer befinden sich auf der <a class="POD_LINK" href="http://www.iSilo.com/">Homepage von iSilo</a>.
+</p>
+<p class="POD_TEXT">
+Die &Uuml;bertragung erfolgt automatisch, wenn <code>pilot-xfer</code> installiert
+ist, welches man auf folgenden FTP-Servern bekommt:
+</p>
+<ul class="POD_LIST">
+<li class="POD_ITEM"><a name="_11"></a>
+
+<a class="POD_LINK" href="ftp://ryeham.ee.ryerson.ca/pub/PalmOS">ftp://ryeham.ee.ryerson.ca/pub/PalmOS</a>
+<li class="POD_ITEM"><a name="_12"></a>
+
+<a class="POD_LINK" href="ftp://ftp.forth.org/pub/PalmOS/ryerson/">ftp://ftp.forth.org/pub/PalmOS/ryerson/</a>
+</ul>
+<dt class="POD_ITEM"><a name="Route_zur_cksetzen">Route zur&uuml;cksetzen</a>
+<dd><p class="POD_RAW"><img src="images/cross.gif">
+Mit Klick auf dieses Icon wird die aktuelle Route gel&ouml;scht.
+</p>
+<dt class="POD_ITEM"><a name="R_ckweg_Symbol">R&uuml;ckweg-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/rueckweg.gif">
+Start- und Zielpunkt der aktuellen Route werden vertauscht.
+</p>
+<dt class="POD_ITEM"><a name="Koordinaten_Symbol">Koordinaten-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/koord.gif">
+Dieses Men&uuml; ist normalerweise nicht aktiviert und wird nur zum
+Editieren der Koordinatendateien ben&ouml;tigt.
+</p>
+<dt class="POD_ITEM"><a name="Info_Symbol">Info-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/info.gif">
+Hiermit kann im Informationsmodus umgeschaltet werden. Beim Klick auf
+Kartenelemente wird jeweils ein Informationsfenster ge&ouml;ffnet.
+Diese Funktion kann nur intern verwendet werden.
+</p>
+<dt class="POD_ITEM"><a name="Salesman_Symbol">Salesman-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/salesman.gif">
+In diesem Modus kann die k&uuml;rzeste Rundreise berechnet werden.
+Dazu klickt man erst einmal in diesen Modus und w&auml;hlt alle
+gew&uuml;nschten Stationen der Rundreise an. Der erste und letzte
+Punkt werden fest als Start- und Zielpunkt markiert; alle anderen
+Punkte werden in ihrer Reihenfolge frei gew&auml;hlt. Wenn man alle
+Stationen ausgew&auml;hlt hat, muss man noch einmal auf das
+Salesman-Symbol klicken, um die Berechnung zu starten. Es wird darauf
+hingewiesen, dass bei einer gro&szlig;en Anzahl von Stationen (mehr
+als acht) die Berechnung <b>sehr</b> lange dauert (der geneigte Leser kann
+sich die Problematik in der Literatur zum Thema &quot;Problem des
+Handlungsreisenden&quot; bzw. &quot;Traveling salesman problem&quot; aneignen). Wenn
+die Berechnung zu lange dauern w&uuml;rde, kann sie mit der Esc-Taste
+abgebrochen werden (wenn die Berechnung bereits mehr als zu 50%
+durchgef&uuml;hrt wurde, bekommt man dann noch ein Ergebnis, auch
+wenn es nicht das optimalste ist).
+</p>
+</dl>
+<h3 class="POD_HEAD2"><a name="DATEIOPERATIONEN">DATEIOPERATIONEN</a></h3>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="_ffnen_Symbol">&Ouml;ffnen-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/open.gif">
+Hiermit kann eine bereits gespeicherte Route wiedergeladen werden.
+Eine Liste der zuletzt geladenen Routen kann man mit Klick auf die
+rechte Maustaste erhalten.
+</p>
+<p class="POD_TEXT">
+Zus&auml;tzlich zum bbbike-Format kann auch eine Track-Datei von
+GPS-Navigationsger&auml;ten eingeladen werden. Die Datei muss aus
+Zeilen im folgenden Format bestehen:
+</p>
+<pre>
+  TRK N52 29.072278 E13 15.879650 1998/06/21-08:47:20 1
+</pre>
+<dt class="POD_ITEM"><a name="Speichern_Symbol">Speichern-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/save.gif">
+Hiermit kann die aktuelle Route gespeichert werden.
+</p>
+<p class="POD_TEXT">
+Men&uuml;:
+</p>
+<p class="POD_TEXT">
+Mit den Men&uuml;punkten kann man den aktuellen Ausschnitt der Karte
+als Bilddatei im <b>Postscript</b>-, <b>GIF</b>-, <b>JPEG</b>- oder <b>PPM</b>-Format
+speichern speichern. GIF-Dateien sind in der Regel am kleinsten.
+Postscript-Dateien sind vektororientiert und k&ouml;nnen somit
+beliebig ohne Qualit&auml;tsverluste vergr&ouml;&szlig;ert werden.
+Das Erzeugen von JPEG- und PPM-Dateien ist normalerweise nicht
+empfehlenswert.
+</p>
+<p class="POD_TEXT">
+Folgende Programme m&uuml;ssen f&uuml;r die verschiedenen Formate
+installiert sein:
+</p>
+<pre>
+             |Postscript|  GIF  |  JPEG  |  PPM  |
+  -----------+----------+-------+--------+-------+
+  Ghostscript|    -     |   x   |    x   |   x   |
+  pnmrotate  |    -     |   o   |    o   |   o   |
+  ppmtogif   |    -     |   x   |    -   |   -   |
+  cjpeg      |    -     |   -   |    x   |   -   |
+</pre>
+<p class="POD_TEXT">
+(x = erforderlich, o = optional, - = nicht erforderlich)
+</p>
+<p class="POD_TEXT">
+Da der Postscript-Treiber, der f&uuml;r jede Konvertierung aufgerufen
+wird, die Schriften sehr klein darstellt, sollte im Orte-Men&uuml;
+der Punkt <b>Sehr gro&szlig;e Schrift</b> gesetzt sein. Bessere
+Ergebnisse erh&auml;lt man, wenn man die Option -usexwd (xwd als
+Screengrabber im Sonstiges-Teil des Optionseditors) einschaltet oder
+direkt mit einem Screengrabber (z.B. <b>xwd</b> oder <b>xv</b>) arbeitet.
+</p>
+<dt class="POD_ITEM"><a name="Drucken_Symbol">Drucken-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/printer.gif">
+Ausdruck des angezeigten Kartenausschnitts. Der Ausdruck wird nicht
+direkt vorgenommen, sondern es wird eine Postscript-Datei erstellt und
+ein Postscript-Viewer (z.B. <b>gv</b> oder <b>ghostview</b>) aufgerufen, aus
+dem heraus gedruckt werden kann. Ist kein Postscript-Viewer vorhanden,
+wird in eine tempor&auml;re Datei geschrieben.
+</p>
+<p class="POD_TEXT">
+Men&uuml;:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Farbe_Graustufen_Sch">Farbe, Graustufen, Schwarz-Wei&szlig;</a>
+<dd>
+Diese Schalter kontrollieren die Farbausgabe des Drucks.
+<dt class="POD_ITEM"><a name="Landscape_Portrait">Landscape, Portrait</a>
+<dd>
+Diese Schalter geben an, ob im Landscape- oder im Portrait-Modus
+gedruckt werden soll. Im Portait-Modus erscheint die Karte verzerrt.
+<dt class="POD_ITEM"><a name="auf_A4_skalieren">auf A4 skalieren</a>
+<dd>
+Wenn dieser Schalter aktiviert ist, wird die Karte so
+vergr&ouml;&szlig;ert, dass ein A4-Blatt vollkommen
+ausgef&uuml;llt ist.
+<dt class="POD_ITEM"><a name="Legende">Legende</a>
+<dd>
+Eine Legende mit Nordpfeil wird mit ausgedruckt.
+<dt class="POD_ITEM"><a name="Legende_rechts_statt">Legende rechts statt links</a>
+<dd>
+Die Position der Legende wird ge&auml;ndert.
+</dl>
+</dl>
+<h3 class="POD_HEAD2"><a name="WEITERE_ICONS">WEITERE ICONS</a></h3>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Fahrrad_Symbol_Bikep">Fahrrad-Symbol (Bikepower)</a>
+<dd><p class="POD_RAW"><img src="images/bicycle.gif">
+Aufruf des Bikepower-Moduls, z.B. zum Eintragen der pers&ouml;nlichen und
+Fahrrad-Daten. Siehe <u>BikePower</u>.
+</p>
+<dt class="POD_ITEM"><a name="Options_Symbol_O_">Options-Symbol (O)</a>
+<dd>
+Falls <u>Tk::Getopt</u> installiert ist, kann hiermit der
+Options-Editor aufgerufen werden.
+<p class="POD_TEXT">
+Men&uuml;:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Ausgabe_sofort_aktua">Ausgabe sofort aktualisieren</a>
+<dd>
+Einige Kommandos wie <b>Outline zeichnen</b> oder <b>Stra&szlig;ennamen</b>
+werden nicht sofort ausgef&uuml;hrt, sondern beim nochmaligen
+Anw&auml;hlen des jeweiligen Icons. Um die sofortige Aktualisierung
+zu erzwingen, kann dieser Schalter gesetzt werden.
+<dt class="POD_ITEM"><a name="Netz_sofort_aktualis">Netz sofort aktualisieren</a>
+<dd>
+Hiermit wird die interne Darstellung des Stra&szlig;ennetzes
+aktualisiert.
+<dt class="POD_ITEM"><a name="Alles_aktualisieren">Alles aktualisieren</a>
+<dd>
+Alle ausstehenden Kommandos werden ausgef&uuml;hrt.
+<dt class="POD_ITEM"><a name="gedrehte_Zeichens_tz">gedrehte Zeichens&auml;tze</a>
+<dd>
+Beim Zeichnen von Stra&szlig;en- und Gew&auml;ssernamen werden
+gedrehte Zeichens&auml;tze verwendet. Das Zeichnen wird dadurch
+verlangsamt, au&szlig;erdem wird der X-Server zus&auml;tzlich
+belastet.
+<p class="POD_TEXT">
+Gedrehte Zeichens&auml;tze k&ouml;nnen nicht gedruckt werden.
+</p>
+<dt class="POD_ITEM"><a name="Landscape">Landscape</a>
+<dd>
+Die Karte wird im &quot;Landscape&quot;-Modus angezeigt.
+<dt class="POD_ITEM"><a name="Portrait">Portrait</a>
+<dd>
+Die Karte wird im &quot;Portrait&quot;-Modus angezeigt.
+<dt class="POD_ITEM"><a name="Canvas_balloon">Canvas balloon</a>
+<dd>
+Einschalten eines Balloons (Tooltip-Hilfe) f&uuml;r den
+Kartenbereich. Im Untermen&uuml; kann zwischen <b>kein</b> (kein
+Balloon), <b>nur Route</b> (Balloon wird nur &uuml;ber einer Route
+angezeigt) und <b>&uuml;berall</b> (Balloon wird &uuml;ber allen
+Kartenelementen angezeigt) ausgew&auml;hlt werden.
+<dt class="POD_ITEM"><a name="Farben_ndern">Farben &auml;ndern</a>
+<dd>
+Mit diesem Men&uuml;punkt k&ouml;nnen die Farben von <b>bbbike</b>
+ge&auml;ndert werden. Die &Auml;nderungen sind nicht permanent.
+<dt class="POD_ITEM"><a name="Schriftart_ndern">Schriftart &auml;ndern</a>
+<dd>
+Mit diesem Men&uuml;punkt kann die Schriftart ge&auml;ndert werden.
+Die &Auml;nderung ist nicht permanent.
+<dt class="POD_ITEM"><a name="St_ndige_Markierung">St&auml;ndige Markierung</a>
+<dd>
+Wenn dieser Punkt eingeschaltet ist, bleibt die Markierung nach einer
+Auswahl stehen, ansonsten blinkt die Markierung einige Male und wird
+dann gel&ouml;scht.
+<dt class="POD_ITEM"><a name="Markierung_l_schen">Markierung l&ouml;schen</a>
+<dd>
+Falls <b>St&auml;ndige Markierung</b> eingeschaltet ist, kann eine
+Markierung mit diesem Men&uuml;punkt gel&ouml;scht werden.
+<dt class="POD_ITEM"><a name="Status_nach_STDERR">Status nach STDERR</a>
+<dd>
+Statusmeldungen werden nicht in der Statuszeile angezeigt, sondern
+nach stderr umgelenkt.
+<dt class="POD_ITEM"><a name="Wortreich_verbose_">Wortreich (verbose)</a>
+<dd>
+Es werden zus&auml;tzliche Meldungen nach stderr ausgegeben.
+</dl>
+<dt class="POD_ITEM"><a name="Lautsprecher_Symbol">Lautsprecher-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/click.gif">
+Ein-/Ausschalten des zus&auml;tzlichen Mausklicks.
+</p>
+<dt class="POD_ITEM"><a name="Hilfe_Symbol_">Hilfe-Symbol (?)</a>
+<dd>
+Anzeige der Online-Dokumentation (&uuml;ber <u>Tk::Pod</u> oder
+einen WWW-Browser).
+<p class="POD_TEXT">
+Men&uuml;:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Legende1">Legende</a>
+<dd>
+Hiermit wird die Legende ein- und ausgeschaltet. In der Legende werden
+nur die gerade angezeigten Kartenelemente erkl&auml;rt. Tastatur: <code>F1</code>.
+<dt class="POD_ITEM"><a name="Maushilfe">Maushilfe</a>
+<dd>
+Ein Fenster mit den wichtigsten Mausbefehlen wird angezeigt.
+<dt class="POD_ITEM"><a name="Kontexthilfe">Kontexthilfe</a>
+<dd>
+Schaltet die Kontexthilfe ein.
+<dt class="POD_ITEM"><a name="Netscape_bbbike_html">Netscape bbbike.html</a>
+<dd>
+Zeigt die BBBike-Dokumentation in Netscape an.
+<dt class="POD_ITEM"><a name="_ber_">&Uuml;ber...</a>
+<dd>
+Zeigt die Version von BBBike, perl und Tk an.
+<dt class="POD_ITEM"><a name="Busy_Zeiger_zur_ckse">Busy-Zeiger zur&uuml;cksetzen</a>
+<dd>
+Es kann vorkommen, dass nach einem Fehler der Busy-Zeiger (Uhr
+oder Sandglas) nicht zur&uuml;ckgesetzt wurde. Dies kann hiermit
+nachgeholt werden.
+</dl>
+<dt class="POD_ITEM"><a name="Kontexthilfe_Symbol">Kontexthilfe-Symbol</a>
+<dd>
+Mit der Kontexthilfe kann die Hilfe f&uuml;r einen Button direkt
+angefordert werden.
+<dt class="POD_ITEM"><a name="Ende_Symbol">Ende-Symbol</a>
+<dd>
+Hiermit wird <b>BBBike</b> beendet. Tempor&auml;re Dateien werden
+gel&ouml;scht und die Liste der zuletzt ge&ouml;ffnet Routen-Dateien
+in <code>~/.bbbike/last</code> gespeichert. Tastatur: <code>q</code> oder <code>Ctrl-C</code>.
+</dl>
+<h2 class="POD_HEAD1"><a name="OPTIONEN">OPTIONEN</a></h2>
+<p class="POD_TEXT">
+Folgende Kommandozeilenoptionen sind definiert:
+</p>
+<pre>
+    Usage: ./bbbike [options] --[no]str --[no]landstr --[no]sbahn
+	--[no]sbahnhof --[no]ubahn --[no]ubahnhof --[no]rbahn --[no]rbahnhof
+	--[no]wasser --[no]wasserumland --[no]wasserstadt --[no]faehre
+	--[no]flaeche --[no]ort --[no]hs --[no]pp --outline --[no]ampel
+	--lsamaybe --[no]plothoehe --[no]showgrade --[no]strname --[no]ortname
+	--ortkategorie --[no]wassername --rbahnnetz --usbahnnetz
+	--faraway --fast --turbo --lowmem --[no]diplom --[no]mldbm --center
+	--centerc --edit --[no]qualitaetoptimierung --[no]qualitaetwerte
+	--[no]kategorieoptimierung --[no]kategoriewerte --[no]sperre
+	--[no]nichttragen --[no]ampeloptimierung --beschleunigung --[no]wind
+	--[no]bikepwr --resetpower --power --resetspeed --speed --[no]www
+	--[no]wwwmap --[no]wwwcache --cachedir --[no]wwwslow --proxy
+	--[no]fontrot --fontfamily --fixedfontfamily --fontheight --fontweight
+	--[no]balloon --[no]cballoon --cballoonwait --[no]contexthelp
+	--[no]smoothscroll --[no]followmouse --[no]dialog --mapcolor
+	--geometry --visual --scale --[no]overviewwasser --[no]flat
+	--[no]transient --[no]autoscroll --autoscrollspeed --[no]audio
+	--audiotype --coordout --printcmd --[no]gvreuse --[no]server
+	--[no]autosave --[no]stderr --[no]advanced --[no]public -v --version
+	-h
+</pre>
+<p class="POD_TEXT">
+(Auswahl aus den Optionen:)
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="_center_strasse">--center strasse</a>
+<dd>
+Beim Starten wird auf die angegebene Stra&szlig;e zentriert.
+Beispiel: <code>--center Dudenstr</code>
+<dt class="POD_ITEM"><a name="_centerc_koord">--centerc koord</a>
+<dd>
+Beim Starten wird auf die angegebenen Koordinaten (Format &quot;x,y&quot;)
+zentriert.
+<dt class="POD_ITEM"><a name="_proxy_httpproxy">--proxy httpproxy</a>
+<dd>
+Angabe eines Proxies f&uuml;r WWW-Verbindungen im Format
+&quot;http://hostname:port/&quot;. Beispiel: <code>http://www.cs.tu-berlin.de:80/</code>
+<dt class="POD_ITEM"><a name="routefile">routefile</a>
+<dd>
+Beim Starten wird die Routendatei geladen und angezeigt.
+</dl>
+<h2 class="POD_HEAD1"><a name="ANFORDERUNGEN">ANFORDERUNGEN</a></h2>
+<p class="POD_TEXT">
+F&uuml;r das Zeichnen der realen Karten sind folgende Programme aus
+dem pbmplus- bzw. netpbm-Paket notwendig:
+</p>
+<ul class="POD_LIST">
+<li class="POD_ITEM"><a name="_13"></a>
+
+giftoppm
+<li class="POD_ITEM"><a name="_14"></a>
+
+pnmscale
+<li class="POD_ITEM"><a name="_15"></a>
+
+djpeg (aus libjpeg)
+</ul>
+<p class="POD_TEXT">
+Eine komplette Liste der optionalen perl-Module findet man in
+<u>Bundle::BBBike</u>.
+</p>
+<h2 class="POD_HEAD1"><a name="INSTALLATION">INSTALLATION</a></h2>
+<h3 class="POD_HEAD2"><a name="Allgemein">Allgemein</a></h3>
+<p class="POD_TEXT">
+Die Installationsbeschreibung befindet sich in der Datei
+<a class="POD_LINK" href="README.html">README</a> bzw. README.html.
+</p>
+<h3 class="POD_HEAD2"><a name="fvwm2">fvwm2</a></h3>
+<p class="POD_TEXT">
+Um Icons mit dem fvwm2 darstellen zu k&ouml;nnen, sollte in .fvwm2rc oder
+.fvwmrc folgende Zeile eingef&uuml;gt werden:
+</p>
+<pre>
+ Style &quot;Bbbike*&quot;        MiniIcon srtbike_mini.xpm
+</pre>
+<p class="POD_TEXT">
+Die Datei srtbike_mini.xpm sollte in ein Verzeichnis eingef&uuml;gt werden,
+wo sich die sonstigen fvwm-Icons befindet (siehe Direktive PixmapPath).
+</p>
+<h2 class="POD_HEAD1"><a name="INTERNA">INTERNA</a></h2>
+<p class="POD_TEXT">
+Verwendete Tags:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Kreuzungen_">Kreuzungen:</a>
+<dd>
+'pp', Koordinate (x,y), undef, pp-$abk
+<dt class="POD_ITEM"><a name="Strecken_">Strecken:</a>
+<dd>
+$abk, Name, $abk-$category, $abk-$index
+<dt class="POD_ITEM"><a name="Strecken_Outline_">Strecken (Outline):</a>
+<dd>
+$abk-out, $abk-$category-out
+<dt class="POD_ITEM"><a name="Fl_chen_">Fl&auml;chen:</a>
+<dd>
+$abk, Name
+<dt class="POD_ITEM"><a name="Fl_chen_Outline_">Fl&auml;chen (Outline):</a>
+<dd>
+$abk-out
+<dt class="POD_ITEM"><a name="Haltestellen_">Haltestellen:</a>
+<dd>
+'p', Hafas-Index
+<dt class="POD_ITEM"><a name="besondere_Punkte_Bah">besondere Punkte (Bahnh&ouml;fe etc.)</a>
+<dd>
+$abk-[fb]g, Name
+<p class="POD_TEXT">
+$abk-[fb]g, Koordinate (x,y)
+</p>
+<dt class="POD_ITEM"><a name="Ampeln1">Ampeln</a>
+<dd>
+$abk-fg, Koordinate (x,y), Kategorie
+<dt class="POD_ITEM"><a name="Markierung_Punkt_">Markierung Punkt:</a>
+<dd>
+'show', 'showp'
+<dt class="POD_ITEM"><a name="Markierung_Strecke_">Markierung Strecke:</a>
+<dd>
+'show', 'shows'
+<dt class="POD_ITEM"><a name="Ort">Ort</a>
+<dd>
+'o', Name
+<dt class="POD_ITEM"><a name="Ort_Bezeichnung_">Ort (Bezeichnung)</a>
+<dd>
+'O'
+<dt class="POD_ITEM"><a name="Route_Routenstartpun">Route, Routenstartpunkt</a>
+<dd>
+'route', route-$nr
+<dt class="POD_ITEM"><a name="Karte">Karte</a>
+<dd>
+'map'
+</dl>
+<h2 class="POD_HEAD1"><a name="BUGS">BUGS</a></h2>
+<p class="POD_TEXT">
+Zu viele...
+</p>
+<ul class="POD_LIST">
+<li class="POD_ITEM"><a name="_16"></a>
+
+Entfernungen von manuell erzeugten Strecken werden bei der
+Wegbeschreibung nicht ber&uuml;cksichtigt, wenn eine Neuberechnung
+oder R&uuml;ckweg angew&auml;hlt wurde. Bei einer Neuberechnung
+bleibt die Routenbeschreibung immer leer.
+<li class="POD_ITEM"><a name="_17"></a>
+
+Suche: Das Anw&auml;hlen eines Punktes innerhalb einer gesperrten
+Stra&szlig;e ist f&auml;lschlicherweise erlaubt.
+<li class="POD_ITEM"><a name="_18"></a>
+
+Falsche Streckenf&uuml;hrung, wenn f&uuml;r das gleiche
+Streckenst&uuml;ck zweimal der Punkt mit nearest_line_points
+ausgew&auml;hlt wurde. Problematisch, wenn ich irgendwann bei den
+Landstra&szlig;en auf lange Streckenst&uuml;cke (Kilometer werden
+nur zwischen Kreuzungen und nicht mehr zwischen Kurvenpunkten
+vorberechnet) umsteigen werde.
+<li class="POD_ITEM"><a name="_19"></a>
+
+optionadd...*search hat auch Auswirkungen auf den Men&uuml;punkt in
+Tk::Pod ... wie kann das begrenzt werden? Vielleicht MainWindow statt
+Toplevel benutzen?
+<li class="POD_ITEM"><a name="_20"></a>
+
+Kontextsensitive Hilfe auf &quot;km/h&quot; findet beim Tk-POD-Ersatz nicht den
+richtigen Abschnitt.
+<li class="POD_ITEM"><a name="_21"></a>
+
+Beim Anzeigen einer Routenbeschreibung, die Landstra&szlig;en
+enth&auml;lt, wird nichts ausgegeben, wenn Landstra&szlig;en nicht
+gezeichnet sind. =&gt; in nearest_points evtl. Landstra&szlig;en bei
+Bedarf nachladen (wie feststellen???).
+<li class="POD_ITEM"><a name="_22"></a>
+
+Vias verschieben etc.: wenn eine Via-Flagge sich unterhalb eines
+anderen Symbol befindet, kann es nicht angeklickt werden
+<li class="POD_ITEM"><a name="_23"></a>
+
+Vias verschieben etc.: Start- und Zielflagge koennen (entgegen den
+Behauptungen im Menue) noch nicht verschoben etc. werden
+<li class="POD_ITEM"><a name="_24"></a>
+
+Ab und zu, besonders beim Wechseln zwischen Kartenmodi, reagiert bbbike
+beim Setzen eines Startpunktes nicht. Aushilfe: einmal &quot;Route l&ouml;schen&quot;
+ausw&auml;hlen, danach geht es wieder.
+</ul>
+<h2 class="POD_HEAD1"><a name="LIMITATIONS">LIMITATIONS</a></h2>
+<ul class="POD_LIST">
+<li class="POD_ITEM"><a name="_25"></a>
+
+Beim Reinzoomen werden die Strecken und Punkte sehr ungenau
+gezeichnet. Dies k&ouml;nnte behoben werden, wenn alle Punkte beim Zoomen
+neu gezeichnet werden, aber das w&uuml;rde das Zoomen *sehr* verlangsamen.
+<li class="POD_ITEM"><a name="_26"></a>
+
+Der Canvas-Postscript-Treiber kann mit rotierten Fonts nichts anfangen.
+</ul>
+<h2 class="POD_HEAD1"><a name="TODO">TODO</a></h2>
+<ul class="POD_LIST">
+<li class="POD_ITEM"><a name="_27"></a>
+
+BikePower: Profile laden/speichern, evtl. auch direkt aus bbbike
+sichtbar. Erst einmal das Problem mit dem Komma (Linux, Solaris mit
+LANG gesetzt) l&ouml;sen.
+<li class="POD_ITEM"><a name="_28"></a>
+
+Dynamisches Zeichnen (weniger/mehr) von Kartenelementen anhand der
+Vergr&ouml;&szlig;erung (wird teilweise schon gemacht, z.B. bei
+get_symbol oder Orte/Kategorien=Auto).
+<li class="POD_ITEM"><a name="_29"></a>
+
+In Routenbeschreibungen Zeilen wie &quot;Stra&szlig;e A&quot;, &quot;...&quot;,
+&quot;Stra&szlig;e A&quot; zu einer Zeile zusammenfassen.
+<li class="POD_ITEM"><a name="_30"></a>
+
+Bessere Routenbeschreibung f&uuml;r Landstra&szlig;en. In der
+Datenbank &quot;X - Y&quot; nach &quot;(A) - X - V - Y - (B)&quot; &auml;ndern, wobei X
+und Y Start- und Zielort der Strecke ist, (A) und (B) die globale
+Richtung (gr&ouml;&szlig;ere St&auml;dte vor und nachher) und V ein
+Via-Ort ist. Die geklammerten Orte und V sind optional.
+<p class="POD_TEXT">
+M&ouml;glichst Orte in die Routenbeschreibung aufnehmen. Vielleicht
+mit nearest_... arbeiten.
+</p>
+<li class="POD_ITEM"><a name="_31"></a>
+
+Update &uuml;ber das Internet: gzip/zip-Unterst&uuml;tzung, oder,
+noch besser, rsync-Unterst&uuml;tzung. Wie richtet man einen
+rsync-Server ein?
+<li class="POD_ITEM"><a name="_32"></a>
+
+Telefonbuch-Datenbank (Name): Die Suche ist suboptimal. Bei der
+Suche von h&auml;ufigen Nachnamen (M&uuml;ller, Schulze)
+wird das Ergebnis begrenzt (200 Namen) und kann mit &quot;Weiter&quot;
+fortgesetzt werden.
+<li class="POD_ITEM"><a name="_33"></a>
+
+B2/B3 auf Speed/Power-Labels dokumentieren --- generelles Widget wie
+Mouse-Info bei xfig?
+<li class="POD_ITEM"><a name="_34"></a>
+
+evtl. ein Composite-Item fuer canvas erstellen und zwar fuer punkte
+mit zugehoerigem label. so bleiben die labels im korrekten
+abstand neben dem punkt
+<li class="POD_ITEM"><a name="_35"></a>
+
+CGI: Grafik zeichnen: Option (Stra&szlig;ennamen) einf&uuml;hren,
+mit der eine Imagemap f&uuml;r die Route erstellt wird. W&uuml;rde
+Sinn machen, wenn alle Browser onmouseover &uuml;ber Imagemaps
+handhaben w&uuml;rden.
+<li class="POD_ITEM"><a name="_36"></a>
+
+Optimierung: bei Landstra&szlig;en reine Kurvenpunkte bei der
+Netzberechnung ignorieren =&gt; ist mit make_wide_net bereits
+implementiert, wird aber nicht verwendet...
+<li class="POD_ITEM"><a name="_37"></a>
+
+oben/normal/unten: Reihenfolge: RB oder S, dann RB-Bhf oder S-Bhf, und
+nicht RB, RB-Bhf, S, S-Bhf wie bislang
+<li class="POD_ITEM"><a name="_38"></a>
+
+Vias werden gesondert dargestellt.
+<li class="POD_ITEM"><a name="_39"></a>
+
+unlimited Undo?
+<li class="POD_ITEM"><a name="_40"></a>
+
+Optionen -auchumland und -nurberlin: setzen einige Variablen wie
+wasserumland, landstr, orte etc.
+<li class="POD_ITEM"><a name="_41"></a>
+
+search_route: multiple Start/Ziel (Checkbutton)
+<li class="POD_ITEM"><a name="_42"></a>
+
+Mehr benutzerfreundliche Optionen f&uuml;r die Suche: k&uuml;rzeste
+Strecke, schnellste Strecke (in Abh&auml;ngigkeit von Wind,
+Steigung/Gef&auml;lle, Stra&szlig;enoberfl&auml;che etc.),
+<li class="POD_ITEM"><a name="_43"></a>
+
+Weiterer Suchmodus: Start- und Ziel bleiben fest, Via kann beliebig
+ver&auml;ndert werden. Und: Ausgabe von alternativen Routen.
+<li class="POD_ITEM"><a name="_44"></a>
+
+GUI-build aus package main in eigene Funktionen verlagern
+<li class="POD_ITEM"><a name="_45"></a>
+
+einheitliche Schalter f&uuml;r das interne Caching von Daten (z.B. ob
+beim Anklicken von &quot;Ort&quot; die Datei immer neu eingelesen werden soll)
+<li class="POD_ITEM"><a name="_46"></a>
+
+Portrait/Landscape-Umschaltung: alle Canvas-Daten aktualisieren. 
+Route wird z.Zt. nicht gedreht (evtl.
+auf @coords verzichten und nur @realcoords verwenden).
+<li class="POD_ITEM"><a name="_47"></a>
+
+Vern&uuml;nftige Options-Eingabe in der GUI. Zwischen
+Startup-Optionen (Zeichnen der Stra&szlig;en/Punkte) und aktuellen
+Optionen unterscheiden.
+<li class="POD_ITEM"><a name="_48"></a>
+
+Kategorisierung der Landstra&szlig;en? Gibt es Untersuchungen zur
+Verkehrsdichte? Vielleicht zweigleisig fahren: Stra&szlig;enbelag,
+Verkehrsdichte, offizielle Einstufung (Bundesstra&szlig;e ...) (ups,
+ist dreigleisig geworden...)
+<li class="POD_ITEM"><a name="_49"></a>
+
+choose_ort, S- und U-Bahnen: neben dem Bahnhof die zugeh&ouml;rige(n)
+Linien anzeigen
+<li class="POD_ITEM"><a name="_50"></a>
+
+Option: alle Ortschaften entlang einer Route zeigen (evtl. auch die
+N&auml;he einstellbar, default 100m)
+<li class="POD_ITEM"><a name="_51"></a>
+
+Im Umland ist es wahrscheinlich sinnvoller, eine Routenbeschreibung
+anhand von Punkten (Ortschaften) anstatt Strecken (Stra&szlig;en) zu
+machen. Optional eins oder beides zusammen.
+<li class="POD_ITEM"><a name="_52"></a>
+
+Ab und zu Pfeile zeichnen, damit die Routenf&uuml;hrung eindeutig wird
+(wenn eine Strecke zweimal durchfahren wird).
+<li class="POD_ITEM"><a name="_53"></a>
+
+Option -centerc auch interaktiv zug&auml;nglich machen (ist schon,
+aber nur mit grauenvollem Interface).
+<li class="POD_ITEM"><a name="_54"></a>
+
+Das Erzeugen von GIF-Bildern ben&ouml;tigt netpbm, von JPEG-Bildern
+die JPEG-Distribution und alle brauchen ghostscript. Eine bessere
+Methode w&auml;re WinPhoto (wenn es korrekt funktionieren
+w&uuml;rde).
+<li class="POD_ITEM"><a name="_55"></a>
+
+Suchen nach Alternativen. Es ist schwierig zu entscheiden, wann eine
+Alternative wirklich eine Alternative darstellt (z.B. ist es kein
+gro&szlig;er Unterschied, ob man nur rechts oder links um einen Block
+herum f&auml;hrt).
+<li class="POD_ITEM"><a name="_56"></a>
+
+Bei Tix sind Eingabe-Widgets und Listboxen in einem helleren Farbton.
+Auch hier umsetzen. Wie wendet Tix die Schemes auf die alten Widgets
+an?
+<li class="POD_ITEM"><a name="_57"></a>
+
+Evtl: Canvas und &Uuml;bersichtskarte: Maus ziehen zum Einstellen
+eines Ausschnitts
+<li class="POD_ITEM"><a name="_58"></a>
+
+R&uuml;ckkehr aus dem edit-Modus in den Suchmodus: Cursor wieder
+umstellen, Start/Zielflagge aktivieren.
+<li class="POD_ITEM"><a name="_59"></a>
+
+Stra&szlig;ennamen: Labels wie in richtigen Stadtpl&auml;nen
+anordnen, also z.B. &quot;Yorckstr.&quot;: am Anfang der Stra&szlig;e &quot;Yorck-&quot;,
+am Ende der Stra&szlig;e &quot;str.&quot;. Dadurch werden die Namen hoffentlich
+lesbarer sein. =&gt; Ist schon implementiert, aber langsam...
+<li class="POD_ITEM"><a name="_60"></a>
+
+Da das Zeichnen von Stra&szlig;ennamen so lange dauert: mit Hints
+arbeiten (z.B. f&uuml;r einige oft verwendete Zoomstufen Koordinaten
+vorberechnen).
+<li class="POD_ITEM"><a name="_61"></a>
+
+Beim Vergr&ouml;&szlig;ern k&ouml;nnte man ab einer bestimmten
+Stufe auch die Gr&ouml;&szlig;e der Stra&szlig;en/Ortslabel auch
+mitvergr&ouml;&szlig;ern.
+<li class="POD_ITEM"><a name="_62"></a>
+
+Optional mehr Informationen in der Routenbeschreibung, z.B.
+Steigungen, Sehensw&uuml;rdigkeiten in der N&auml;he,
+U/S-Bahnstationen ... Kommentare sind schon drinnen.
+<li class="POD_ITEM"><a name="_63"></a>
+
+Alle in &quot;strassen&quot; vorkommende Stra&szlig;en sollten auch in
+&quot;Berlin.coords.data&quot; stehen. Ansonsten gibt es derart P&Uuml;robleme,
+da&szlig; zwar beim CGI in der Liste &quot;Alle Stra&szlig;en anzeigen&quot;
+z.B. &quot;Hallesches Tor&quot; angezeigt wird, diese Stra&szlig;e als Eingabe
+aber nicht akzeptiert wird. Sprich: die Datei data/add_str sollte auf
+Aktualit&auml;t &uuml;berpr&uuml;ft werden und dann m&ouml;glichst
+alle fehlende Stra&szlig;en nach Berlin.coords.data &uuml;bertragen
+werden.
+<p class="POD_TEXT">
+Hatte ich schonmal:
+[in add_str sollten m&ouml;glichst KEINE &quot;richtigen&quot; Stra&szlig;en stehen --- nur
+Sachen wie Br&uuml;cken, Tunnel, &quot;Alexanderplatz [zur Grunerstr.]&quot; etc.
+ansonsten werden sie in bbbike.cgi nicht erkannt, obwohl sie
+existieren!]
+</p>
+<p></p>
+<li class="POD_ITEM"><a name="_64"></a>
+
+Server-Mode und Client-Programm: austesten, insbesondere mit KDE, und
+dann alle Starts auf bbbikeclient umschreiben. Gucken, wie man sowas
+mit Win32 machen k&ouml;nnte. Server-Beispielcode aus
+&quot;Mastering Perl/Tk&quot; verwenden.
+<li class="POD_ITEM"><a name="_65"></a>
+
+CGI-Bilder antialiased erstellen. Ich habe schon was gemacht, ist aber
+noch nicht optimal. (Was habe ich gemacht? Wie kann man das mit GD
+machen???)
+<li class="POD_ITEM"><a name="_66"></a>
+
+In BBBikeDraw.pm nach AREA suchen: Probleme mit den verschiedenen
+Netscape-Versionen.
+<li class="POD_ITEM"><a name="_67"></a>
+
+Implementierung der interaktiven Eingabe f&uuml;r einige
+Stra&szlig;enlabels, die dann bei &quot;Stra&szlig;ennamen&quot; in bbbike und
+immer in den vorgefertigten bbbike.cgi-Bildern und konditional in den
+dynamischen gesetzt werden.
+<li class="POD_ITEM"><a name="_68"></a>
+
+install.pl: Falls Tk nicht installiert ist und PPM vorhanden ist, mit
+PPM nachinstallieren. Bei Bedarf eine Reihe weiterer Module
+nachinstallieren (siehe Bundle::BBBike). Das Installieren mittels
+Bundle::BBBike funktioniert ab CPAN 1.60 nicht mehr.
+<li class="POD_ITEM"><a name="_69"></a>
+
+FreeBSD-Port anpassen, so da&szlig; install.pl verwendet wird. PLIST
+von install.pl abh&auml;ngig machen. -kdeinstall in
+Abh&auml;ngigkeit von HAVE_KDE angeben.
+<li class="POD_ITEM"><a name="_70"></a>
+
+Rotierte Fonts: vielleicht ein Freetype-Modul schreiben, daf&uuml;r
+eine Tk::Canvas-Erweiterung und diese in BBBike verwenden? ---
+Es gibt bereits libgdtf. Dieses zu einem Perl-Modul machen und
+wenigstens f&uuml;r die statischen CGI-Karten verwenden.
+<li class="POD_ITEM"><a name="_71"></a>
+
+Neuimplementation der Streckensuche. Dabei soll zwischen
+Streckenaufw&auml;nden und Knotenpunktaufw&auml;nden unterschieden
+werden. Aufw&auml;nde werden entweder in L&auml;ngen, in Zeit oder
+in einem Punktesystem (Kombination aus Zeit, Komfort, Sicherheit etc.)
+angegeben. Streckenaufw&auml;nde berechnen sich aus: L&auml;nge der
+Strecke, Gegenwind, Steigungen, Dynamowiderstand,
+Stra&szlig;enqualite&lt;auml&gt;t der Strecke, sonstige Hindernisse auf der
+Strecke, Verkehrsdichte (Staus, Berufsverkehr), Radwege,
+Maximalgeschwindigkeiten. Knotenpunktaufw&auml;nden berechnen sich
+aus: durchschnittliche oder wahre Ampelwartezeit mit Zeit f&uuml;r
+die Beschleunigung, durchschnittlicher Zeitverlust an
+Rechts-vor-links-Kreuzungen und an vorfahrtsgew&auml;hrenden
+Kreuzungen (abknickende Vorfahrtsstra&szlig;en beachten), Zeitverlust
+f&uuml;r Abbiegevorg&auml;nge (rechts, links), erschwertes Abbiegen
+(Bordsteinkanten &uuml;berwinden). Qualit&auml;tsbewertungen:
+Stra&szlig;enqualit&auml;t, niedrige Leistungsaufw&auml;nde (Wind,
+Steigungen), Nebenstra&szlig;en, Parks. Sicherheitsbewertungen:
+Nebenstra&szlig;en vor Hauptstra&szlig;en bevorzugen, Radwege
+ja/nein. In (C) und Perl implementieren.
+<pre class="POD_TEXT">
+Analyse eines Streckenabschnitts:
+
+ * Feststellen der LE&lt;auml&gt;nge
+
+ * Feststellen der Windrichtung und -geschwindigkeit
+
+ * Feststellen der Steigung
+
+ * Verluste durch StraE&lt;szlig&gt;enqualitE&lt;auml&gt;t
+
+ * Korrigieren auf Maximalgeschwindigkeit (max. Trittfrequenz)
+
+ * anhand der aktuellen Leistungswert Zeit berechnen
+</pre>
+<pre class="POD_TEXT">
+Analyse einer Kreuzung:
+
+ * Feststellen, ob es um einen Abbiegevorgang handelt und ggfs. Zeit
+   fE&lt;uuml&gt;r den Abbiegevorgang abziegen
+
+ * Feststellen, ob eine Ampel vorhanden ist, und eine
+   durchschnittliche Zeit abziehen.
+
+ * Feststellen, ob die Vorfahrt beachtet werden muE&lt;szlig&gt;
+</pre>
+<li class="POD_ITEM"><a name="_72"></a>
+
+cgi-Version: Linux+Netscape: Probleme mit Cookies (Einstellungen)
+=&gt; noch immer?
+<li class="POD_ITEM"><a name="_73"></a>
+
+wenn GD nicht installiert ist, sollte die gif-Datei gel&ouml;scht werden und<br>&nbsp;&nbsp;&nbsp;eine Fehlermeldung ausgegeben werden (?)
+<li class="POD_ITEM"><a name="_74"></a>
+
+Vergr&ouml;&szlig;erung der Schrift beim Zoomen
+<li class="POD_ITEM"><a name="_75"></a>
+
+Speichern von Grafiken: Extension erzwingen (?), &Uuml;berschreiben testen
+und verhindern
+<li class="POD_ITEM"><a name="_76"></a>
+
+evtl. mit fork eine Warteschleife implementieren. Wenn es nicht mit
+Tk (threads!) geht, dann vielleicht mit X11::Protocol oder mit xterm?
+<li class="POD_ITEM"><a name="_77"></a>
+
+Kurzhilfe: kann man feststellen, ob man eine 2/3-Tastenmaus hat?
+<li class="POD_ITEM"><a name="_78"></a>
+
+Vielleicht Windchill-Temperatur zus&auml;tzlich anzeigen.
+<li class="POD_ITEM"><a name="_79"></a>
+
+Optimierung: Beim Ausschalten von Outline oder Stra&szlig;ennamen
+mu&szlig; nicht alles neu gezeichnet werden.
+<li class="POD_ITEM"><a name="_80"></a>
+
+Meta-Choose-Dialog, das alle Choose-Dialoge vereinigt. Vielleicht
+Tk::SmartListbox verwenden?
+<li class="POD_ITEM"><a name="_81"></a>
+
+wettermeldung2 mit fork/spawn/threads aufrufen
+<li class="POD_ITEM"><a name="_82"></a>
+
+Neue Version von wettermeldung2 schreiben, die SYNOP-Information
+verwendet.
+<li class="POD_ITEM"><a name="_83"></a>
+
+Wenn w&auml;hrend eines WWW-Fetches die Verbindung gekappt wird,
+h&auml;ngt BBBike vollkommen. Gesehen bei Win32. Vielleicht mit
+Timeouts arbeiten (kann das LWP?) und h&auml;ppchenweise holen. Oder
+noch besser: fileevent verwenden! ... LWPng kann Event-Handling.
+Leider ist das Event-Handling noch inkompatibel mit Tk. Auch f&uuml;r
+wettermeldung2 mit LWPng arbeiten. =&gt; Vielleicht das hochgelobte
+POE verwenden.
+<li class="POD_ITEM"><a name="_84"></a>
+
+F&uuml;r das Drucken von Text: evtl. auch Netscape und print-Methode
+verwenden (?). F&uuml;r Unix k&ouml;nnte man eine start netscape,
+netscape remote openFile/print-Kombination verwenden. Bei Windows?
+Netscape k&ouml;nnte man auch zum Mailabschicken verwenden,
+&uuml;ber mailto. Evtl. ein Modul f&uuml;r Netscape schreiben,
+da&szlig; die ganzen remote-Kommandos verwendet. Hier eine Liste:
+<p class="POD_TEXT">
+%s: usage: OpenURL(url [ , new-window|window-name ] )
+%s: usage: OpenFile(file)
+%s: usage: print([filename])
+%s: usage: SaveAS(file, output-data-type)
+%s: usage: SaveAS(file, [output-data-type])
+%s: usage: mailto(address ...)
+%s: usage: find(string)
+%s: usage: addBookmark(url, title)
+%s: usage: htmlHelp(map-file, id, search-text)
+</p>
+<p class="POD_TEXT">
+Mit Xprt f&uuml;r X11 experimentieren (doc lesen).
+</p>
+<li class="POD_ITEM"><a name="_85"></a>
+
+Ein LightWeight-Modul (CanvasMap) schreiben. Vielleicht irgendwann
+alles auf dieses Modul umschreiben.
+<li class="POD_ITEM"><a name="_86"></a>
+
+PerlPlusPlugin ausprobieren und BBBike daf&uuml;r portieren. Sachen,
+die mir daf&uuml;r einfallen: Ich brauche ein open(), das &uuml;ber
+LWP funktioniert (vielleicht mit LWPng?). Ich brauche ein hyperuse und
+hyperrequire. Z.B.
+<pre class="POD_VERBATIM">
+    @HYPERINC = qw(&quot;http://user.cs.tu-berlin.de/~eserte&quot;,
+                   &quot;file://tmp&quot;);
+    hyperuse BBBikeEdit;
+    hyperrequire Strassen;
+</pre>
+<p class="POD_TEXT">
+Irgendwo habe ich so etwas schon implementiert gesehen ... suchen!
+</p>
+<li class="POD_ITEM"><a name="_87"></a>
+
+Bei einem Resize mu&szlig; auch das Progress-Canvas angepasst werden.
+<li class="POD_ITEM"><a name="_88"></a>
+
+BBBikeContext.pm schreiben: gibt alles aus, was ich so brauche: $os,
+Strassen-Objekte, Crossings, Netze etc. Caching bei Belieben
+einstellen, evtl. mit Ties arbeiten, die sich selbst umwandeln oder
+durchg&auml;ngig mit Methoden. AutoLoading verwenden.
+<li class="POD_ITEM"><a name="_89"></a>
+
+Folgende Radwege in der Landsberger Chaussee k&ouml;nnen nicht
+dargestellt werden, weil sich die Stra&szlig;e in landstrassen-orig
+und nicht in strassen-orig befindet.
+<p class="POD_TEXT">
+14389,5916	14348,5906	radweg	radweg
+14545,5953	14389,5916	radweg	radweg
+14844,6029	14545,5953	radweg	pflicht
+15283,6150	14844,6029	radweg	pflicht
+</p>
+<li class="POD_ITEM"><a name="_90"></a>
+
+Speicheroptimierung.
+<pre class="POD_TEXT">
+Folgende Symbole kommen im Dump von Devel::Symdump vor und
+bed&uuml;rfen Kl&auml;rung (warum, woher, ben&ouml;tigt?):
+
+    * English::*
+    * DB::args
+    * Tk::Pretty::*
+    * re::*
+    * DirHandle::*
+</pre>
+<pre class="POD_TEXT">
+Ein minimales System kann auf Folgendes verzichten:
+
+    * Fahrinfo::*
+    * BikePower::*
+    * Devel::Peek::*
+    * EasySound::*
+    * Karte::Berlinmap1997::*
+    * Karte::Berlinmap1999::*
+    * wettermeldung2::*
+    * BSD::Resource::*
+    * Hyper::*
+    * Plugin::*
+</pre>
+<pre class="POD_TEXT">
+Evtl. auch:
+
+    * Tk::DragDrop::*
+    * Tk::CanvasBalloon::*
+    * Tk::ContextHelp::*
+    * Tk::Dialog::* (nach STDERR umlenken, wenn nur OK-Button erscheint)
+    * Tk::ErrorDialog::* (Default: nach STDERR umlenken)
+    * Tk::FireButton::*
+    * Tk::SRTProgress::*
+    * Tk::UnderlineAll::*
+</pre>
+<li class="POD_ITEM"><a name="_91"></a>
+
+3D-Darstellung von Berlin (z.B. vier versetzte Fl&auml;chen, die
+oberste in der Hintergrundfarbe und die anderen in der Schattenfarbe).
+<li class="POD_ITEM"><a name="_92"></a>
+
+bbbike.cgi: Eine &quot;Neu&quot;-Subroutine, die jeweils die neuen Features der
+Version anzeigt. Vielleicht auch eine &quot;Neu&quot;-History, die automatisch
+aus den alten Eintr&auml;gen oder aus dem RCS-Log aufgebaut wird?
+<li class="POD_ITEM"><a name="_93"></a>
+
+Cgiinfo in cgi2.t funktioniert leider nicht, weil openURL als zweiten
+Parameter nur true oder false zul&auml;&szlig;t. Workaround:
+Schreiben eines Multiplexers, der per Javascript neue Fenster
+&ouml;ffnet.
+<li class="POD_ITEM"><a name="_94"></a>
+
+Soll ich mit Scopes arbeiten? Scopes w&auml;ren: Berlin, Brandenburg,
+jwd und w&uuml;rden sich auf Stra&szlig;en, Orte und Gew&auml;sser
+beziehen.
+<li class="POD_ITEM"><a name="_95"></a>
+
+Kann ich mapserv irgendwie einsetzen?
+<li class="POD_ITEM"><a name="_96"></a>
+
+Bike+Ride integrieren. Das w&uuml;rde in eine unterbrochene Route
+resultieren, deren Fahrzeiten addiert w&uuml;rden. Zus&auml;tzlich k&auml;me noch
+eine abgesch&auml;tzte Zeit f&uuml;r die Benutzung des Verkehrsmittels (Fahrzeit
++ Zusteigzeit + Umsteigezeiten). Eine Verbindung zu Fahrinfo w&auml;re
+genial.
+<li class="POD_ITEM"><a name="_97"></a>
+
+Aufteilung des Routen-Men&uuml;s. In das zweite Men&uuml; kommen
+alle Punkte, die die Ausgabe beeinflussen: Ausschnitt anpassen,
+Steigungen zeigen, Streckenprofil, Start/Zielflagge, Routenfarbe (+
+Einf&auml;rbung Wind/Leistung/Qualit&auml;t/etc.), Kalorienverbrauch
+<li class="POD_ITEM"><a name="_98"></a>
+
+Berechnen des Stra&szlig;ennetzes: Ausblenden des Canvas nicht
+notwendig
+<li class="POD_ITEM"><a name="_99"></a>
+
+GfxConvert evtl. mit Tk-Photo-Funktionen definieren, wenn die externen
+Programme nicht verf&uuml;gbar sind. Am besten w&auml;re
+nat&uuml;rlich noch immer ein NetPBM-Modul.
+<p class="POD_TEXT">
+Photo-Zooming: -zoom x -subsample y == -zoom x/y oder umgekehrt
+</p>
+<li class="POD_ITEM"><a name="_100"></a>
+
+Radwegekategorien erweitern: RW(kategorie)(qualitaetskategorie). Also
+hei&szlig;t dann z.B. RW00: Radweg mit sehr guter Qualit&auml;t und
+RW13: benutzungspflichtiger Radweg mit sehr schlechter
+Qualit&auml;t. Bei den restlichen Kategorien kann man sich die
+Erweiterung sparen, da dort die Qualit&auml;tskategorie der
+Stra&szlig;e gilt. Default-Qualit&auml;tskategorie f&uuml;r Radwege
+sei 1 (gute Qualit&auml;t).
+<li class="POD_ITEM"><a name="_101"></a>
+
+ShAddRecentDoc geht unter Win98 nicht?
+<li class="POD_ITEM"><a name="_102"></a>
+
+Drag'n'drop und open's sollten vielleicht etwas mit .lnk-Dateien unter
+Win* anfangen k&ouml;nnen...
+<li class="POD_ITEM"><a name="_103"></a>
+
+outline_text bei draw_text_intelligent verwenden
+<li class="POD_ITEM"><a name="_104"></a>
+
+Beim intelligenten Zeichen von Ortsnamen bietet sich ein
+Scanline-Vorgang von rechts nach links an. Somit vermeidet man Sachen
+wie
+        Slubice *
+	      * Frankfurt
+<p class="POD_TEXT">
+Schwierig, wenn gleichzeitig das Ergebnis aus sortbycat beachtet
+werden soll (Multipass? Langsam!)
+</p>
+<li class="POD_ITEM"><a name="_105"></a>
+
+Bei der Ausgabe der Stra&szlig;ennamen an der Route sollte ein aehnlich
+intelligentes Verfahren angewendet werden. Vielleicht kann bei Routen,
+die von W nach O verlaufen, die Strassennamen erstmal links vom Punkt
+eingezeichnet werden und umgekehrt.
+<li class="POD_ITEM"><a name="_106"></a>
+
+Bei -usbahnnetz sollte folgendes gehen: Routenbeschreibung mit Bahnh&ouml;fen
+statt Strecken (davon kann auch die Routenbeschreibung auf dem flachen
+Land profitieren!) ... Und noch sch&ouml;ner: eine Kombination von U/S-Bahn
+und Stra&szlig;ennetz (f&uuml;r Fu&szlig;wege bzw. Bike+Ride).
+<li class="POD_ITEM"><a name="_107"></a>
+
+Optional eine k&uuml;rzere Beschreibung. Diese w&uuml;rde nur
+folgendes enthalten: Stra&szlig;en und Abbiegevorg&auml;nge. Wenn
+man auf einer Stra&szlig;e nicht abbiegen muss, dann werden
+verschiedene Stra&szlig;ennamen in einer Liste zusammengefasst.
+<p class="POD_TEXT">
+Zus&auml;tzlich noch eine Druckausgabe. Auch beim CGI. Wann wird die
+Ausgabe endlich vereinheitlicht?
+</p>
+<li class="POD_ITEM"><a name="_108"></a>
+
+bei Windows (oder allgemein: bei ClickToFocus) ist es
+unangenehm, dass neue Fenster den Focus klauen. Allerdings ist es ohne
+Maus eher angenehm, dass neue Fenster den Focus bekommen. Wie soll man
+also verfahren?
+<li class="POD_ITEM"><a name="_109"></a>
+
+Pilot.pm installieren, BBBikePalm daf&uuml;r erweitern
+<li class="POD_ITEM"><a name="_110"></a>
+
+user editing: negative/positive pr&auml;ferenzen mit b2/b3 lange druecken
+setzen
+<li class="POD_ITEM"><a name="_111"></a>
+
+bugfix: optmenu in optimierungseinstellungen korrigieren (Fehler beim
+Tk Widget)
+<li class="POD_ITEM"><a name="_112"></a>
+
+lange h&auml;nger bei vielen Canvas-Elementen ueberpruefen
+<li class="POD_ITEM"><a name="_113"></a>
+
+MDI-Interface entwickeln mit:<br>&nbsp;* map-widget<br>&nbsp;* start/zieleingabe<br>&nbsp;* einfaches opt-einstellungs-fenster<br>&nbsp;* routenbeschreibung
+Siehe Tk::WindowManager =&gt; entwickle ich nicht mehr weiter,
+daf&uuml;r gibt es aber ein neues Tk::MDI-Widget
+<li class="POD_ITEM"><a name="_114"></a>
+
+Andreas' Labeling-Algorithmus verwenden
+<li class="POD_ITEM"><a name="CDROM_Probleme_">CDROM-Probleme:</a>
+<pre class="POD_VERBATIM">
+ - tk:underlineall.pm warnings in 111,114,157,178
+ - win, print: fehlermeldung nicht auf stdout zeigen. start_cmd wird ohne progexe gestartet, wenn der ps-viewer gestartet weden soll. dito beim browser
+ - tk::getopt: pane verwenden. ab 800.015 eh standard
+ - optionen besser gruppieren. z.b. audio irgendwo unterbringen
+ zwei Reihen mit Notebook?
+ - &quot;outline&quot; -&gt; umrandungen
+ sonstige anglizismen herausnehmen
+ - Bei Win98 geht anscheinend perlglob nicht-&gt; Probleme mit Ncopy
+ - unix/kde-installation: statt symlink von /usr/local/bin besser shell-skript mit richtigem perl-path erstellen. wenn /usr/local/bin nicht im PATH, dann evtl. /usr/bin nehmen. wie macht es autoconf bei KDE? kann ich was von autoconf verwenden?
+ Env-loesung ist auch OK
+ - menuepunkt fuer taste x
+ - layereditor hat bei win95 einen absturz verursacht, und zwar beim local drag (NT mit 800.015 selbst compiliert auch? nur bei followmouse?)
+ - winddaten eingeben als menuepunkt
+ - eigenes popup mit popover nicht fuer win32 verwenden - da ist eh clicktofocus aktiv. Bei KDE auch? Gibt's ne property, die die wm -einstellung anzeigt?
+ - set ziel vom str-dialog setzt anscheinend das via-array nicht
+ - shift-click vom start aus geht nicht
+ - besseres cdrom.pl schreiben. Sowas wie cons, nur fuer das kopieren. Oder mkisofs beibringen, das er die richtigen sachen ohne kopieren erzeugt
+</pre>
+<li class="POD_ITEM"><a name="BBBike_Externalizati">BBBike - Externalization, towards to v3.0</a>
+<pre class="POD_VERBATIM">
+ Allgemein: Aenderungen nur durchfuehren, wenn sie entweder trivial und unaufwendig sind oder zwingend fuer die anstehenden Portierungen sind.
+
+ - data: neue Verzeichnishierarchie
+ Vorschlag: city &quot;_&quot; iso-country-abbrev. Beispiel: berlin_de, muenchen_de, san_francisco_us
+ - oder: derzeitige datadir-praxis beibehalten: z.b. data_berlin_de
+ - in den Geography-Modulen: Iconleiste (welche Buttons sind ueberhaupt definiert? Welche zugehoerigen Menues?)
+ - Iconleiste wird stadtspezifisch erzeugt (e.g. Gibt es U-/S-Bahnen?)
+ - Iconbilder werden stadt/landtpezifisch benannt. Beispiel: ubahn.gif =&gt; ubahn_de.gif
+ - Umland ja/nein. 3-stufig (mit jwd?), &quot;Haltestelle&quot; oder &quot;Haltestelle/Ort&quot;?
+ - Aufgeben des manuellen LandstraE&lt;szlig&gt;enzeichnens (und jwd etc.)
+ - generell: vielleicht ein gesondertes sub symbolframe fE&lt;uuml&gt;r jeden Ort?
+ - oder: XML-Beschreibungsdatei fE&lt;uuml&gt;r die Properties?
+ - automatisches Erstellen der Properties in Geography.pm anhand der existierenden data-Dateien
+ - Ampeln sind vielleicht nicht E&lt;uuml&gt;berall erfasst
+ - winddaten kE&lt;ouml&gt;nnen vielleicht nicht E&lt;uuml&gt;berall E&lt;uuml&gt;ber das web geholt werden
+ - StraE&lt;szlig&gt;en: nicht alle Daten sind E&lt;uuml&gt;berall erfasst (Kategorien, Radwege, QualitE&lt;auml&gt;t, ...)
+ - StraE&lt;szlig&gt;enauswahl: PLZ-Liste, CDROM?
+ - etc. So gut wie alle daten kE&lt;ouml&gt;nnen vorhanden sein oder nicht
+ - transpose-Funktion ist ortabhE&lt;auml&gt;ngig, BBBikeTranspose als Verteiler
+ - map-button sollte berlin-spezialitE&lt;auml&gt;t bleiben
+ - check-skript: sind alle benE&lt;ouml&gt;tigten Variablen definiert (in den Geography-Modulen)
+ - einige devel-skripte sind auch ortabhE&lt;auml&gt;ngig
+ - vielleicht Erstellung eines devel-Verzeichnisses mit nE&lt;ouml&gt;tigen skripten aus miscsrc und vielleicht misc. Insbesondere kritische Sachen wie den eplus-Roboter herausnehmen
+ - verkleinerung fE&lt;uuml&gt;r overview-mode sollte einstellbar sein
+ - anhand von $0 erkennen, welcher Ort verwendet eerden soll. Gut fE&lt;uuml&gt;r CDROM-Installationen
+ - edit vs. normal mode: bei anderen stE&lt;auml&gt;dten keinen unterschied machen (transpose entsprechend setzen) oder gps-koordinaten im edit-mode verwenden
+ - CGI: imagedir ortsunabhE&lt;auml&gt;ngig machen
+ - caches ortsunabhE&lt;auml&gt;ngig machen
+
+ * evtl. Programm zum Suchen von &Uuml;berschneidungen schreiben (mit
+   Ausnahmedatei f&uuml;r Br&uuml;cken)
+</pre>
+<li class="POD_ITEM"><a name="_115"></a>
+
+Bookmarks in choose_ort und m&ouml;glichkeit, per dnd neue bookmarks zu definieren, um als stra&szlig;enauswahl dienen zu k&ouml;nnen
+<li class="POD_ITEM"><a name="weiter_">weiter:</a>
+<pre class="POD_VERBATIM">
+ - bei Http.pm vielleicht IO::Select::can_read/write verwenden
+ - bbbike.cgi: Installation auf rapidsite testen =&gt; automatisierten Test a la wap_test schreiben, gleiche Features erkennen und verallgemeinern
+ - BBBike: feinere Aufteilung der Gegenwind- etc. Strecken (flie&szlig;end von rot bis gr&uuml;n)
+ - BBBike: &quot;Window intelligent positionieren&quot; implementieren
+
+ - BrowserInfo.pm: von Roxen's SUPPORT lernen:
+ SUPPORTS: font tables cookies javascript backgrounds backgrounds autogunzip netscape_javascript tablecolor ssl frames mailto forms images pull push java imagealign gifinline pjpeginline fontcolor some_html3 jpeginline
+
+ - bbbike/c: neues pmake funktioniert unter Suse nicht =&gt;
+ gmake benutzen? grrr...
+
+ - Verwendung von Tk::App::Reloader. Scheint allgemein zu funktionieren.
+</pre>
+<li class="POD_ITEM"><a name="_116"></a>
+<pre class="POD_VERBATIM">
+  Aus der Radzeit 3/2001, Seite 8-9:
+  Radwege: Verbundsteine kontra Asphalt
+  [...]
+  Der Energieverbrauch beim Rad fahren (durchschnittliche
+  Geschwindigkeit 15 km/h) auf Asphalt in StraE&lt;szlig&gt;enqualitE&lt;auml&gt;t
+  betrE&lt;auml&gt;gt ca. 1000 Joule und auf Kopfsteinpflaster ca. 2200
+  Joule jeweils pro 100 Meter. Bei asphaltierten Radwegen mit
+  schlechter LE&lt;auml&gt;ngsebenheit liegt dieser Wert zwischen 1200 bis
+  1400 Joule, bei neu gebauten Radwegen mit gefasten Verbundsteinen
+  bei ca. 1400 Joule und bei wassergebundenen Decken zwischen 1600 und
+  2000 Joule pro 100 Meter. Da der Einsatzbereich des Fahhrades als
+  Verkehrsmittel umgekehrt proportional zum Quadrat des
+  Energieverbrauchs ist, ist dieser bei Radverkehrsanlagen in guter
+  StraE&lt;szlig&gt;enqualitE&lt;auml&gt;t rund doppelt so groE&lt;szlig&gt; wie bei
+  Radwegen mit Betonverbundsteinen und etwa viermal so groE&lt;szlig&gt; wie
+  bei wassergebundenen Radwegen. Quelle: UPI-bericht Nr. 41, 3. erw.
+  Auflage August 1999 E&lt;quot&gt;Entwicklung und potentiale des
+  Fahrrad-VerkehrsE&lt;quot&gt; Seiten 18 bis 20
+</pre>
+<li class="POD_ITEM"><a name="_117"></a>
+<pre class="POD_VERBATIM">
+  Verkehrs-/Umweltverwaltung wegen Emissionen:
+  ReulenbE&lt;auml&gt;cker
+  IX D2
+  Tel: 9025 2391
+  Raum 8.020
+  BrE&lt;uuml&gt;ckenstr. Mitte
+</pre>
+<li class="POD_ITEM"><a name="_118"></a>
+<pre class="POD_VERBATIM">
+ - Farbeditor: background setzen sollte vielleicht Canvas-bg ignorieren bzw. eigener Auswahlpunkt f&uuml;r Canvas-bg. Vielleicht *alle* Farben &auml;nderbar machen --- aber dann muss man die &Auml;nderungen auch abspeichern k&ouml;nnen (schwer, unwichtig)
+
+ - Stra&szlig;ennamen: zeichnen on demand? besserer Algorithmus? TIP mit -angle ausprobieren? (schwer)
+
+ - intelligenterer Markieralgorithmus: nicht Zentrieren, sondern nur verschieben, falls: durch andere Fenster verdeckt (nur eigene Toplevels beachten) oder weniger als 10% (5%) oder .... Pixel vom Rand oder einem anderen Toplevel entfernt. In diesem Fall den Ausschnitt auch nur minimal verschieben, bis sichtbar (schwer)
+
+ - Idee von effizienten Loop/Callback-Mechanismus: ein callback kann entweder alleine aufgerufen werden (mit n&ouml;tiger Initialisation + Cleanup) oder in eine beliebige Loop eingebettet werden (Inline, Initialisation + Cleanup au&szlig;erhalb der Loop). Beliebig viele Callbacks k&ouml;nnen kombiniert werden (Stacking). Verwendung von B::Deparse? (sehr schwer, API und Ausf&uuml;hrung erst einmal ausdenken)
+
+ - Bug: beim Umschalten von einem anderen Mode in den Suchmode muss zuerst einmal ein Reset ausgef&uuml;hrt werden, bevor Start gesetzt werden kann (mittel)
+
+ - Start/Ziel verschiebbar machen (mittel)
+
+ - Start/Ziel l&ouml;schbar machen (mittel)
+
+ - Optimierung bei vias l&ouml;schen/verschieben/einf&uuml;gen: nur ge&auml;ndertes St&uuml;ck berechnen (delete=strecke vor-nach; move=beide strecken vor/nach; insert: neue zwei strecken) (mittel-schwer, nur, wenn ich das via-feature h&auml;ufiger nutze)
+
+ - bbbike.cgi: kommentar-spalte: bei m&uuml;nchen schiebestrecken ausweisen, evtl. auch radwege. in berlin vielleicht alles m&ouml;gliche ausgeben --- ausprobieren
+</pre>
+</ul>
+<h2 class="POD_HEAD1"><a name="KOMPATIBILIT_T">KOMPATIBILIT&Auml;T</a></h2>
+
+BBBike wird zur Zeit unter FreeBSD 4.6 mit perl 5.00503/5.6.1/5.8.0
+und der neuesten Perl/Tk-Version (z.Zt. 800.024) entwickelt.
+<p class="POD_TEXT">
+Testl&auml;ufe wurden und werden von Zeit zu Zeit auf Windows 95/98,
+Windows NT 4.0, Solaris/Sparc 7 und Linux gefahren. Dabei werden
+meistens auch die aktuellen Stable-Versionen von Perl und Tk
+verwendet.
+</p>
+<p class="POD_TEXT">
+Es wird versucht, auch zu den &auml;lteren Versionen perl 5.00404 und Tk
+402.004 kompatibel zu bleiben. Dabei bleiben aber einige Features
+(z.B. der Splash-Screen, vern&uuml;nftiges Zeichensatzhandling und einige
+Keybindings) auf der Strecke. Die Grundfunktionalit&auml;t ist aber
+vorhanden.
+</p>
+<p class="POD_TEXT">
+Freiwillige zur Portierung von Perl/Tk auf die Macintosh-Plattform
+werden gesucht :-)
+</p>
+<h2 class="POD_HEAD1"><a name="ANERKENNUNG">ANERKENNUNG</a></h2>
+<p class="POD_TEXT">
+TBD
+</p>
+<h2 class="POD_HEAD1"><a name="AUTOR">AUTOR</a></h2>
+<p class="POD_TEXT">
+Slaven Rezic - <a class="POD_LINK" href="mailto:slaven@rezic.de">slaven@rezic.de</a>
+</p>
+<h2 class="POD_HEAD1"><a name="PREREQUISITES">PREREQUISITES</a></h2>
+<p class="POD_TEXT">
+<u>Tk</u>.
+</p>
+<h2 class="POD_HEAD1"><a name="COREQUISITES">COREQUISITES</a></h2>
+<p class="POD_TEXT">
+<u>Tk::FireButton</u>, <u>Tk::Pod</u>,
+<u>LWP::UserAgent</u>, <u>Mail::Send</u> and others.
+</p>
+<h2 class="POD_HEAD1"><a name="SEE_ALSO">SEE ALSO</a></h2>
+<p class="POD_TEXT">
+<u>BikePower(3)</u>, <u>Tk(3)</u>, <u>perl(1)</u>.
+</p>
+<hr>
+<a class="POD_NAVLINK" href="#Pod_TOP_OF_PAGE">[Top]</a></body>
+</html>
+

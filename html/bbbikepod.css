@@ -1,0 +1,16 @@
+body {
+  background-color:#ffffff;
+  background-image:url(images/bg.jpg);
+  background-attachment:fixed;
+  font-family:sans-serif;
+}
+.POD_TITLE,.POD_HEAD1,.POD_HEAD2,.POD_TEXT,.POD_NAVLINK,.POD_LINK,.POD_LIST,th,td,.POD_RAW,p,h1,h2,li,ul,dd,dt {
+  font-family:sans-serif;
+}
+.POD_ITEM,strong {
+  font-weight:bold;
+  font-family:sans-serif;
+}
+.POD_VERBATIM,code,pre {
+  font-family:courier,fixed;
+}

@@ -1,0 +1,9 @@
+# KDE Config File
+[KDE Desktop Entry]
+Type=MimeType
+MimeType=application/x-bbbike-data
+Icon=srtbike.xpm
+Patterns=*.bbd;*.BBD;
+DefaultApp=BBBike
+Comment=BBBike data
+Comment[de]=BBBike-Daten

@@ -1,0 +1,9 @@
+# KDE Config File
+[KDE Desktop Entry]
+Type=MimeType
+MimeType=application/x-bbbike-route
+Icon=srtbike.xpm
+Patterns=*.bbr;*.BBR;
+DefaultApp=BBBike
+Comment=BBBike route
+Comment[de]=BBBike-Route

@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>BBBike-Routensuche</title>
+<link rev="made" href="mailto:slaven@rezic.de" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#bbbikeroutensuche">BBBike-Routensuche</a></li>
+	<ul>
+
+		<li><a href="#optimierung_fr_ausgeschilderte_radrouten">Optimierung f&uuml;r ausgeschilderte Radrouten</a></li>
+		<li><a href="#optimierung_anhand_der_straenkategorie">Optimierung anhand der Stra&szlig;enkategorie</a></li>
+		<li><a href="#fugngerzonen">Fu&szlig;g&auml;ngerzonen</a></li>
+	</ul>
+
+	<li><a href="#autor">AUTOR</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="bbbikeroutensuche">BBBike-Routensuche</a></h1>
+<p>In der unten stehenden Auflistung stehen die bei der Routensuche
+verwendeten Koeffizienten f&uuml;r die Gewichtung von Stra&szlig;en.
+Ein Koeffizient von 2 bedeutet beispielsweise, dass der jeweilige
+Stra&szlig;enabschnitt genau wie ein Stra&szlig;enabschnitt mit dem
+Koeffizieten von 1 und der doppelten L&auml;nge gewichtet wird.</p>
+<p>
+</p>
+<h2><a name="optimierung_fr_ausgeschilderte_radrouten">Optimierung f&uuml;r ausgeschilderte Radrouten</a></h2>
+<ul>
+<li></li>
+Haupt-/Freizeitrouten: 1
+<p></p>
+<li></li>
+sonstige Stra&szlig;en: 2
+<p></p></ul>
+<p>
+</p>
+<h2><a name="optimierung_anhand_der_straenkategorie">Optimierung anhand der Stra&szlig;enkategorie</a></h2>
+<dl>
+<dt><strong><a name="item_hauptstraen_ohne_radwege_meiden%3a">Hauptstra&szlig;en ohne Radwege meiden:</a></strong><br />
+</dt>
+<ul>
+<li></li>
+Hauptstra&szlig;en ohne Radweg: 4
+<p></p>
+<li></li>
+Hauptstra&szlig;en mit Radweg: 1
+<p></p>
+<li></li>
+Nebenstra&szlig;en: 1
+<p></p></ul>
+<dt><strong><a name="item_nur_nebenstraen_benutzen">Nur Nebenstra&szlig;en benutzen</a></strong><br />
+</dt>
+<ul>
+<li></li>
+Hauptstra&szlig;en: 4
+<p></p>
+<li></li>
+Nebenstra&szlig;en: 1
+<p></p></ul>
+<dt><strong><a name="item_nebenstraen_bevorzugen">Nebenstra&szlig;en bevorzugen</a></strong><br />
+</dt>
+<ul>
+<li></li>
+Hauptstra&szlig;en: 1,5
+<p></p>
+<li></li>
+Nebenstra&szlig;en: 1
+<p></p></ul>
+<dt><strong><a name="item_hauptstraen_bevorzugen">Hauptstra&szlig;en bevorzugen</a></strong><br />
+</dt>
+<ul>
+<li></li>
+Hauptstra&szlig;en: 1
+<p></p>
+<li></li>
+Nebenstra&szlig;en: 1,5
+<p></p></ul>
+<dt><strong><a name="item_nur_hauptstraen_benutzen">Nur Hauptstra&szlig;en benutzen</a></strong><br />
+</dt>
+<ul>
+<li></li>
+Hauptstra&szlig;en: 1
+<p></p>
+<li></li>
+Nebenstra&szlig;en: 4
+<p></p></ul>
+</dl>
+<p>
+</p>
+<h2><a name="fugngerzonen">Fu&szlig;g&auml;ngerzonen</a></h2>
+<p>Als Koeffizient wird der Quotient aus bevorzugter Geschwindigkeit und
+Schrittgeschwindigkeit (5 km/h) verwendet.</p>
+<p>
+</p>
+<hr />
+<h1><a name="autor">AUTOR</a></h1>
+<p>Slaven Rezic &lt;<a href="mailto:slaven@rezic.de">slaven@rezic.de</a>&gt;</p>
+
+</body>
+
+</html>

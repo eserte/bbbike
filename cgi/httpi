@@ -1,0 +1,380 @@
+#!/usr/bin/perl
+$VERSION = "1.2.2 (patched by SRT)";
+
+# HTTPi Hypertext Tiny Truncated Process Implementation
+# Copyright 1999 Cameron Kaiser # All rights reserved # Please read LICENSE
+# Do not strip this copyright message.
+
+use Cwd;
+use File::Spec;
+
+if ($^O eq 'MSWin32') {
+    require File::Basename;
+    $logfile = "nul:";
+    # cwd() geht nicht mit UNC-Pfaden
+    $path = File::Spec->catdir(File::Basename::dirname($0),
+			       File::Spec->updir,
+			       File::Spec->updir);
+} else {
+    $logfile = "/dev/null";
+    $path = File::Spec->catdir(cwd(),
+			       File::Spec->updir,
+			       File::Spec->updir);
+}
+$sockaddr = 'S n a4 x8';
+
+if ($^O ne 'MSWin32') {
+    # use as few forks as possible on Windows...
+    if ($pid = fork()) { exit; }
+}
+$0 = "dhttpi: binding port ...";
+$bindthis = pack($sockaddr, 2, 22295, pack('l', chr(0).chr(0).chr(0).chr(0)));
+socket(S, 2, 1, 6);
+setsockopt(S, 65535, 4, 1);
+bind(S, $bindthis) || die("$0: while binding port 22295:\n\"$!\"\n");
+listen(S, 128);
+$0 = "dhttpi: connected and waiting ANY:22295";
+
+$statiosuptime = time();
+
+
+%content_types =
+	("html" => "text/html",
+	 "xbm" => "image/x-xbitmap",
+	 "pdf" => "application/pdf",
+	 "fdf" => "application/vnd.fdf",
+	 "htm" => "text/html",
+	 "bin" => "application/octet-stream",
+	 "class" => "application/octet-stream",
+	 "wav" => "audio/x-wav",
+	 "txt" => "text/plain",
+	 "gif" => "image/gif",
+	 "zip" => "application/x-zip-compressed",
+	 "lzh" => "application/octet-stream",
+	 "lha" => "application/octet-stream",
+	 "gz"  => "application/x-gzip",
+	 "jpeg" => "image/jpeg",
+	 "jpg" => "image/jpeg");
+
+$headers = <<"EOF";
+Server: HTTPi/$VERSION
+MIME-Version: 1.0
+EOF
+
+
+###############################################################
+# WHITE HATS ONLY BELOW THIS POINT -- SEE DOCUMENTATION FIRST #
+###############################################################
+
+sub sock_to_host {
+	local($sock) = getpeername(STDIN);
+
+	return (undef, undef, undef) if (!$sock);
+	local($AFC, $port, $thataddr, $zero) = unpack($sockaddr, $sock);
+	local($ip) = join('.', unpack("C4", $thataddr));
+	return ($ip, $port, $ip);
+}
+
+sub htsponse {
+	($currentcode, $currentstring) = (@_);
+	return if (0+$httpver < 1);
+	local($what) = <<"EOF";
+HTTP/$httpver $currentcode $currentstring
+${headers}Date: $rfcdate
+EOF
+	$what =~ s/\n/\r\n/g;
+	print stdout $what;
+	&hthead("Connection: close") if (0+$httpver > 1);
+}
+
+sub hthead {
+	local($header, $term) = (@_);
+	return if (0+$httpver < 1);
+	print stdout "$header\r\n" , ($term) ? "\r\n" : "";
+}
+
+sub htcontent {
+	local($what, $ctype, $mode) = (@_);
+	($contentlength) = $mode || length($what);
+	&hthead("Content-Length: $contentlength");
+	&hthead("Content-Type: $ctype", 1);
+	return if ($method eq 'HEAD' || $mode);
+	print stdout $what;
+}
+
+sub log {
+ 	if (open(J, ">>$logfile")) {
+		local $q = $address . (($variables) ? "?$variables" : "");
+		$contentlength += 0;
+		$contentlength = 0 if ($method eq 'HEAD');
+		local ($hostname, $port, $ip) = &sock_to_host();
+		$hostname = $hostname || "-";
+		$httpuser = $httpuser || "-";
+		print J <<"EOF";
+$hostname - $httpuser [$date] "$method $q HTTP/$httpver" $currentcode $contentlength "$httpref" "$httpua"
+EOF
+		close(J); }
+	}
+
+
+sub bye { exit; }
+
+sub dead {
+	&htsponse(500, "Server Error");
+	&hterror("Server Error", <<"EOF");
+While handling a request for resource $address, the server crashed. Please
+attempt to notify the administrators.
+<p>Useful(?) debugging information:
+<pre>
+@_
+</pre>
+EOF
+	&log; exit;
+}
+
+$SIG{'__DIE__'} = \&dead;
+$SIG{'ALRM'} = \&bye;
+
+sub master {
+	$0 = "dhttpi: handling request";
+# $sock = getpeername(STDIN);
+$rfcdate = scalar gmtime;
+($dow, $mon, $dt, $tm, $yr) = ($rfcdate =~
+	m/(...) (...) (..) (..:..:..) (....)/);
+$dt += 0; $yr += 0;
+$rfcdate = "$dow, $dt $mon $yr $tm GMT";
+$date = scalar localtime;
+($dow, $mon, $dt, $tm, $yr) = ($date =~
+	m/(...) (...) (..) (..:..:..) (....)/);
+$dt += 0;
+$dt = substr("0$dt", length("0$dt") - 2, 2);
+$date = "$dt/$mon/$yr:$tm +0000"; 
+
+select(STDOUT); $|=1; $address = 0; 
+alarm 10 unless $^O eq 'MSWin32';
+while (<STDIN>) {
+	if(/^([A-Z]+)\s+([^\s]+)\s+([^\s\r\l\n]*)/) {
+		$method = $1;
+		$address = $2; 
+		$httpver = $3;
+		$httpref = '';
+		$httpua = '';
+		$httpver = ($httpver =~ m#HTTP/([0-9]\.[0-9]+)#) ?
+			($1) : (0.9);
+		$address =~ s#^http://[^/]+/#/#;
+		next unless ($httpver < 1);
+	} else {
+		s/[\r\l\n\s]+$//;
+		(/^Host: (.+)/i) && ($httphost = $1) && ($httphost =~
+			s/:\d+$//);
+		(/^Referer: (.+)/i) && ($httpref = $1);
+		(/^User-agent: (.+)/i) && ($httpua = $1);
+		(/^Content-length: (\d+)/i) && ($ENV{'CONTENT_LENGTH'} =
+			$httpcl = $1);
+		(/^Content-type: (.+)/i) && ($ENV{'CONTENT_TYPE'} =
+			$httpct = $1);
+		(/^Expect: /) && ($expect = 1);
+		next unless (/^$/);
+	}
+	if ($expect) {
+		&htsponse(417, "Expectation Failed");
+		&hterror("Expectation Failed",
+			"The server does not support this method.");
+		&log; exit;
+	}
+	if (!$address || (0+$httpver > 1 && !$httphost)) {
+		&htsponse(400, "Bad Request");
+		&hterror("Bad Request",
+			"The server cannot understand your request.");
+		&log; exit;
+	}
+	if ($method !~ /^(GET|HEAD|POST)$/) {
+		&htsponse(501, "Illegal Method");
+		&hterror("Illegal Method",
+			"Only GET, HEAD and POST are supported.");
+		&log; exit;
+	}
+	($address, $variables) = split(/\?/, $address);
+	$address=~ s#^/?#/#;
+	1 while $address =~ s#/\.(/|$)#\1#;
+        1 while $address =~ s#/[^/]*/\.\.(/|$)#\1#;
+	1 while $address =~ s#^/\.\.(/|$)#\1#;
+
+
+	if ($address eq '/status') {
+		&htsponse(200, "OK");
+		$contentlength = 0; # kludge
+		&log;
+		if(open(S, $logfile)) {
+			seek(S, -3000, 2);
+			undef $/;
+			$logsnap = <S>;
+			$logsnap =~ s/^[^\n]+\n//s if
+				(length($logsnap) > 2999);
+			close(S);
+		}
+		$p = (time() - $statiosuptime);
+		$rps = $p/$statiosreq;
+		$d = int($p / 86400); $p -= $d * 86400;
+		$h = int($p / 3600); $p -= $h * 3600;
+		$m = int($p / 60); $s = $p - ($m * 60);
+		("0$s" =~ /(\d{2})$/) && ($s = $1);
+		("0$m" =~ /(\d{2})$/) && ($m = $1);
+		$h +=0; $d += 0;
+		$suptime = scalar localtime $statiosuptime;
+		&htcontent(<<"EOF", "text/html");
+<html>
+<head>
+<title>
+HTTPi Status for Server localhost
+</title>
+</head>
+<body bgcolor = "#ffffff" text = "#000000" vlink = "#0000ff" link = "#0000ff">
+<h1>HTTPi Server Status (<code>$VERSION</code>)</h1>
+<h3><code>localhost</code> on ANY:22295</h3>
+<b>Started at:</b> $suptime<br>
+<b>Uptime:</b> $d days, $h:$m:$s<br>
+<b>Last request time:</b> $statiosltr<p>
+<b>Requests received:</b> $statiosreq<br>
+<b>Average time between requests:</b> ${rps}s
+<p>
+<b>Most recent requests:</b>
+<form action = "/status" method = "post">
+<textarea name = "bletch" rows = "8" cols = "70">
+$logsnap
+</textarea>
+</form>
+<hr>
+<address>maintained by <a href =
+"http://httpi.ptloma.edu/">httpi/$VERSION</a></address>
+</body>
+</html>
+EOF
+		exit;
+	}
+	$address =~ s/%([0-9a-fA-F]{2})/pack("H2", $1)/eg;
+	$raddress = "$path$address"
+	;
+	&hterror301("http://localhost:22295$address/")
+		if ($address !~ m#/$# && -d $raddress);
+	$raddress = "${raddress}index.html" if (-d $raddress);
+	alarm 0 unless $^O eq 'MSWin32';
+	if(!open(S, $raddress)) { &hterror404; } else {
+		if (-x $raddress ||
+		    ($^O eq 'MSWin32' && $raddress =~ /\.(pl|cgi)$/)
+		   ) {
+			$currentcode = 100;
+			&log;
+			if ($^O ne 'MSWin32' && !$<) {
+				($x,$x,$x,$x,$uid,$gid) = stat(S);
+				(!$uid || !$gid) &&
+					die "executable is root-owned";
+				$> = $uid || die "can't set effuid";
+				$) = $gid || die "can't set effgid";
+			}
+			($hostname, $port, $ip) = &sock_to_host() if (!$port);
+			$ENV{'REQUEST_METHOD'} = $method;
+			$ENV{'SERVER_NAME'} = "localhost";
+			$ENV{'SERVER_PROTOCOL'} = "HTTP/$httpver";
+			$ENV{'SERVER_SOFTWARE'} = "HTTPi/$VERSION";
+			$ENV{'SERVER_PORT'} = "22295";
+			$ENV{'SERVER_URL'} = "http://localhost:22295/";
+			$ENV{'SCRIPT_FILENAME'} = $raddress;
+			$ENV{'SCRIPT_NAME'} = $address;
+			$ENV{'REMOTE_HOST'} = $hostname;
+			$ENV{'REMOTE_ADDR'} = $ip;
+			$ENV{'REMOTE_PORT'} = $port;
+			$ENV{'QUERY_STRING'} = $variables;
+			$ENV{'HTTP_USER_AGENT'} = $httpua;
+			$ENV{'HTTP_REFERER'} = $httpref;
+			if ($pid = fork()) { exit; } else {
+                                &htsponse(200, "OK");
+				if ($method eq 'POST') { # needs stdin
+					open(W, "|$raddress") || die
+						"can't POST to $raddress";
+					read(STDIN, $buf, $httpcl);
+					print W $buf;
+					exit;
+				}
+				exec "$raddress", "$variables";
+				die "exec() returned -1";
+			}
+		}
+		($x,$x,$x,$x,$x,$x,$x,$length,$x,$mtime) = stat(S);
+		$mtime = scalar gmtime $mtime;
+		($dow, $mon, $dt, $tm, $yr) =
+			($mtime =~ m/(...) (...) (..) (..:..:..) (....)/);
+		$dt += 0; $yr += 0;
+		$ctype = 0;
+		foreach(keys %content_types) {
+			if ($raddress =~ /\.$_$/i) {
+				$ctype = $content_types{$_};
+			}
+		}
+		$ctype ||= 'text/plain';
+		&htsponse(200, "OK");
+		&hthead("Last-Modified: $dow, $dt $mon $yr $tm GMT");
+		if ($pid = fork()) { exit; }
+			&htcontent("", $ctype, $length);
+			unless ($method eq 'HEAD') {
+				while(!eof(S)) {
+					read(S, $q, 16384);
+					print stdout $q;
+				}
+			}
+		alarm 0 unless $^O eq 'MSWin32';
+	}
+	&log;
+	exit;
+}
+
+exit;
+}
+
+
+sub hterror {
+	local($errstr, $expl) = (@_);
+	&htcontent(<<"EOF", "text/html");
+<html>
+<body>
+<h1>$errstr</h1>
+$expl
+<hr>
+<address><a href = "http://httpi.ptloma.edu/">httpi/$VERSION</a>
+by Cameron Kaiser</address>
+</body>
+</html>
+EOF
+	}
+
+sub hterror404 {
+	&htsponse(404, "File Not Found");
+	&hterror("File Not Found",
+		"The resource $address was not found on this system.");
+}
+
+sub hterror301 {
+	&htsponse(301, "Moved Permanently");
+	&hthead("Location: @_");
+	&hterror("Resource Moved Permanently",
+		"This resource has moved <a href = \"@_\">here</a>.");
+	$keep = 0; &log; exit;
+}
+
+for (;;) {
+	$addr=accept(NS,S);
+	$statiosltr = scalar localtime;
+	$statiosreq++;
+  	if ($pid = fork()) {
+  		$0 = "dhttpi: waiting for child process";
+  		waitpid($pid, 0);
+  		$0 = "dhttpi: on ANY:22295, last request " .
+  			scalar localtime;
+  	} else {
+		$0 = "dhttpi: child switching to socket";
+		open(STDIN, "<&NS");
+		open(STDOUT, ">&NS");
+		&master;
+		exit;
+	}
+}

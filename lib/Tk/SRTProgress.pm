@@ -1,0 +1,250 @@
+# -*- perl -*-
+
+#
+# $Id: SRTProgress.pm,v 1.6 2003/01/06 01:55:02 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
+# This package is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+package Tk::SRTProgress;
+use Tk::Canvas;
+use vars qw(@ISA $VERSION $VERBOSE);
+use strict;
+
+@ISA = qw(Tk::Derived Tk::Canvas);
+$VERSION = '0.06';
+
+Construct Tk::Widget 'SRTProgress';
+
+sub ClassInit {
+    my ($class,$mw) = @_;
+    $class->SUPER::ClassInit($mw);
+    $mw->Tk::bind($class, "<Configure>", "Recenter");
+    $class;
+}
+
+sub Populate {
+    my($w, $args) = @_;
+    $args->{'height'} = 16 unless exists $args->{'height'};
+    $w->SUPER::Populate($args);
+    $w->{InProgress} = 0;
+    $w->createRectangle(0,0,0,0,
+			-outline => undef,
+			-fill => 'blue',
+			-tags => 'bar');
+    $w->createText(0,0,
+		   -fill => 'black', -justify => 'center',
+		   -tags => 'label');
+    $w->ConfigSpecs
+      (-labelfont  => ['METHOD', 'labelFont', 'LabelFont', undef],
+       -dependents => ['PASSIVE', 'dependents', 'Dependents', undef],
+       -visible    => ['PASSIVE', 'visible', 'Visible', 1],
+       # Warning: dont't change the -grab option during an
+       # InitGroup/FinishGroup pair!
+       -grab       => ['PASSIVE', 'grab', 'Grab', 0],
+      );
+    $w->Recenter;
+}
+
+sub labelfont { # XXX no cget variant yet
+    my($w, $val) = @_;
+    $w->itemconfigure('label', -font => $val);
+    $val;
+}
+
+sub Recenter {
+    my $w = shift;
+    $w->{Width}  = $w->Width;
+    $w->{Height} = $w->Height;
+    $w->coords('label', $w->{'Width'}/2, $w->{'Height'}/2);
+}
+
+sub InitGroup {
+    my $w = shift;
+    warn "InitGroup\n" if $VERBOSE;
+    if ($w->{Group}) {
+	warn "InitGroup already active!\n";
+    } else {
+	if ($w->cget(-grab)) {
+	    $w->{OldBindtags} = [$w->toplevel->bindtags];
+	    $w->grab;
+	}
+	$w->{Group}{Start} = 1;
+    }
+    $w->{Group}{Count}++;
+}
+
+sub Init {
+    my($w, %args) = @_;
+    warn "Init\n" if $VERBOSE;
+    my $dep = (exists $args{'-dependents'}
+	       ? $args{'-dependents'}
+	       : $w->{'dependents'});
+    push @{$w->{'CurrentDependents'}}, (ref $dep eq 'ARRAY'
+					? $dep
+					: (defined $dep ? [$dep] : undef));
+
+    push @{$w->{'CurrentLabel'}}, $args{'-label'} || '';
+
+    push @{$w->{'CurrentVisible'}}, (exists $args{'-visible'}
+				     ? $args{'-visible'}
+				     : $w->cget(-visible)||0);
+
+    $w->{'Xpos'}    = 0 if !defined $w->{'Xpos'};
+    $w->{'Forward'} = 1 if !defined $w->{'Forward'};
+
+    $w->itemconfigure('label', -text => $w->{'CurrentLabel'}[-1]);
+
+    $w->{InProgress}++;
+
+    my @hidden_widgets;
+  TRY: {
+	if ($w->{'CurrentDependents'}[-1]) {
+#  	    if (exists $w->{'Group'}) {
+#  		if ($w->{'Group'}{'Start'}) {
+#  		    $w->{'Group'}{'Start'} = 0;
+#  		} else {
+#  		    last TRY;
+#  		}
+#  	    }
+	    warn "inprogress=$w->{InProgress}\n" if $VERBOSE;
+	    last TRY if ($w->{InProgress} != 1);
+	    if (!$w->{'CurrentVisible'}[-1]) {
+		foreach (@{ $w->{'CurrentDependents'}[-1] }) {
+		    push @hidden_widgets, $_
+			if $w->HideWidget($_);
+		}
+	    }
+	}
+    }
+    push @{$w->{'HiddenWidgets'}}, \@hidden_widgets;
+
+    $w->Update(0);
+}
+
+sub Update {
+    my($w, $frac, %args) = @_;
+    $frac = 0 unless defined $frac;
+    $w->coords('bar', 0, 0, int($w->{Width}*$frac), $w->{Height});
+    $w->{'CurrentLabel'}[-1] = $args{'-label'} if exists $args{'-label'};
+    my $text = $w->{'CurrentLabel'}[-1] .
+      ($frac > 0 ? " " . int($frac*100) . "%" : "");
+    $w->itemconfigure('label', -text => $text);
+    $w->idletasks;
+}
+
+sub UpdateFloat {
+    my $w = shift;
+    if ($w->{'Forward'}) {
+	if ($w->{'Xpos'}+2*$w->{'Height'} < $w->{'Width'}) {
+	    $w->{'Xpos'} += $w->{'Height'};
+	} else {
+	    $w->{'Forward'} = 0;
+	    $w->{'Xpos'} -= $w->{'Height'};
+	}
+    } else {
+	if ($w->{'Xpos'} - $w->{'Height'} >= 0) {
+	    $w->{'Xpos'} -= $w->{'Height'};
+	} else {
+	    $w->{'Forward'} = 1;
+	    $w->{'Xpos'} += $w->{'Height'};
+	}
+    }
+    $w->coords('bar', $w->{'Xpos'}, 0,
+	       $w->{'Xpos'} + $w->{'Height'},
+	       $w->{'Height'});
+    $w->itemconfigure('label', -text => $w->{CurrentLabel}[-1])
+      if defined $w->{CurrentLabel}[-1];
+    $w->idletasks;
+}
+
+sub _restore_dependents {
+    my $w = shift;
+    if ($w->{'HiddenWidgets'} && @{$w->{'HiddenWidgets'}}) {
+	foreach my $dep (@{ $w->{'HiddenWidgets'}[-1] }) {
+	    $w->ShowWidget($dep);
+	}
+	pop @{$w->{'HiddenWidgets'}};
+    }
+}
+
+sub Finish {
+    my $w = shift;
+    warn "Finish\n" if $VERBOSE;
+    $w->itemconfigure('label', -text => '');
+    $w->coords('bar', 0, 0, 0, 0);
+    pop @{$w->{'CurrentDependents'}};
+    pop @{$w->{'CurrentLabel'}};
+    pop @{$w->{'CurrentVisible'}};
+    if (!$w->{Group} || @{$w->{'HiddenWidgets'}} > 1) {
+	$w->_restore_dependents;
+    }
+    $w->{InProgress}--;
+}
+
+sub FinishGroup {
+    my $w = shift;
+    warn "FinishGroup\n" if $VERBOSE;
+    $w->{Group}{Count}--;
+    if (!$w->{Group}{Count}) {
+	$w->_restore_dependents;
+	# if-Abfrage, um autovivify zu verhindern (??? häh?)
+	delete $w->{Group};
+	if ($w->cget(-grab)) {
+	    $w->grabRelease;
+	    $w->toplevel->bindtags($w->{OldBindtags});
+	}
+    }
+}
+
+sub HideWidget {
+    my($w, $wid) = @_;
+    my @res;
+    my $mgr = $wid->manager;
+    return 0 if !defined $mgr; # already hidden
+    my $infosub   = $mgr . "Info";
+    if ($wid->can($infosub)) {
+	@res = $wid->$infosub();
+	warn "found @res\n" if $VERBOSE;
+	# Fix corrupted gridInfo for -sticky
+	if ($Tk::VERSION <= 800.015 and $mgr eq 'grid') {
+	    for(my $i=0; $i<$#res; $i+=2) {
+		if ($res[$i] eq '-sticky' and
+		    $res[$i+1] eq '{}') {
+		    $res[$i+1] = '';
+		}
+	    }
+	}
+	$w->{Mgr}{$wid}{Type}   = $mgr;
+	$w->{Mgr}{$wid}{Info}   = [@res];
+	$w->{Mgr}{$wid}{Widget} = $wid;
+	warn "forget $wid\n" if $VERBOSE;
+	$wid->$mgr('forget');
+	return 1;
+    }
+    0;
+}
+
+sub ShowWidget {
+    my($w, $wid) = @_;
+    my $mgr = $w->{Mgr}{$wid}{Type};
+    if ($mgr) {
+	warn "$w->{Mgr}{$wid}{Widget}->$mgr(@{ $w->{Mgr}{$wid}{Info} })\n"
+	  if $VERBOSE;
+	$w->{Mgr}{$wid}{Widget}->$mgr(@{ $w->{Mgr}{$wid}{Info} });
+	delete $w->{Mgr}{$wid};
+    }
+}
+
+# dummy sub to prevent error in Tk::Frame (why?)
+sub labelPack { }
+
+1;
+
+__END__

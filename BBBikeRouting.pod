@@ -1,0 +1,212 @@
+=head1 NAME
+
+BBBikeRouting - frontend for using BBBike routing
+
+=for category BBBike
+
+=head1 SYNOPSIS
+
+    use BBBikeRouting;
+    my $routing = BBBikeRouting->new;
+    $routing->init_context;
+    $routing->Start->Street("from street");
+    $routing->Goal->Street("from street");
+    $routing->search;
+    print @{ $routing->RouteInfo };
+
+=head1 DESCRIPTION
+
+This is a wrapper around L<Strassen.pm|Strassen.pm> to make simple
+routing scripts easier. The basic approach is described as code in
+L</SYNOPSIS> and looks as following:
+
+=over 4
+
+=item *
+
+construct the C<BBBikeRouting> object
+
+=item *
+
+initialize the C<Context> member with C<init_context> and maybe change
+some C<Context> parameters
+
+=item *
+
+set C<Start> and C<Goal> members
+
+=item *
+
+perform the route search
+
+=item *
+
+output the route information
+
+=back
+
+=head2 METHODS
+
+=over 4
+
+=item new
+
+The constructor of C<BBBikeRouting> takes no arguments.
+
+=item init_context
+
+This method sets the C<Context> member to initial values (bike routing
+in city scope. For the routing, maximum caching and speed (by using
+the C variant of the A* algorithm) will be used. See L<MEMBERS> for a
+list of C<Context> members.
+
+=item search
+
+Perform a search from the start to the goal position.
+
+=item continue($position)
+
+After a performed search, prepare the module to continue the existing
+route using the $position (a C<BBBikeRouting::Position> object) as new
+goal. The old goal is pushed to the C<Via> array. The actual search is
+performed by calling search() again.
+
+=item delete_to_last_via
+
+The opposite of continue(). This method will delete the path and
+routeinfo added by the last continue()/search() calls.
+
+=back
+
+=head2 MEMBERS
+
+=over 4
+
+=item C<Context>
+
+Hold a C<BBBikeRouting::Context> object. The members of this object are:
+
+=over 4
+
+=item Vehicle
+
+Can be C<pedestrian>, C<bike>, C<car> or C<oepnv> (public transport).
+
+=item Velocity
+
+The average speed in km/h. Default is 20 km/h.
+
+=item Scope
+
+Can be C<city> (only Berlin) or C<region> (Berlin and Brandenburg).
+
+=item UseXS
+
+Use the XS extension, if possible. This will speed up the net
+creation.
+
+=item UseCache
+
+Use caches, if possible. This will speed up the creation of some
+internal data structures.
+
+=item UseNetServer
+
+Use the net server started by the C<bbbikestrserver> script.
+This can be used instead of the XS and Cache speedups.
+
+=item SearchArgs
+
+An array reference with more search arguments. See the
+L<Strassen|Strassen> documentation for the method
+C<StrassenNetz::search>.
+
+=item Algorithm
+
+The algorihm which should be used. Possible values are: C<srt> (an
+ancient slower own search algorithm), C<A*> (a pure-perl
+implementation of A*), or C<C-A*> (a C/perl combination of A*, only
+available if the L<Inline::C|Inline::C> module is installed and a C
+compiler is available).
+
+=item CGI
+
+Only for CGI scripts: the CGI query object.
+
+=item BrowserInfo
+
+Only for CGI scripts: the BrowserInfo object.
+
+=item Verbose
+
+Be verbose (output statistics to stderr etc.).
+
+=back
+
+=item C<Start>, C<Goal>
+
+Hold C<BBBikeRouting::Position> objects for the start and goal
+position. The members of this object are:
+
+=over 4
+
+=item Street
+
+The street of the position (without house numbers).
+
+=item Citypart
+
+The citypart of the position.
+
+=item Coord
+
+The coordinate (standard coordinate system) of the position.
+
+=item Multi
+
+Not used now.
+
+=back
+
+=item RouteInfo
+
+After finding a route, this member will contain an array reference of
+the route "elements". Please refer to the
+L<Strassen::StrassenNetz|Strassen::StrassenNetz> documentation for the
+format of a route element.
+
+=back
+
+Other members of C<BBBikeRouting> are not meant for public use.
+
+=head2 DATA FILES
+
+It is assumed that data is available in a C<data> subdirectory of the
+current script. The C<data/strassen> file is mandatory if routing on
+streets is used (this is true for the vehicles C<pedestrian>, C<bike>
+and C<car>), otherwise, for public transport, the files C<data/ubahn>
+(for undergrounds) and C<data/sbahn> (for light railway) are used.
+
+For public transport, also a file C<data/umsteigebhf> is needed for
+railway junctions with different station names (e.g. in Berlin you can
+change between "Rathaus Spandau" (U-Bahn) and "Spandau" (S-Bahn)).
+
+For bike and car street routing, the file C<data/gesperrt> should
+contain one-way streets, blocked streets, and blocked paths. Extra
+blocked streets for cars only should be put into the file
+C<data/gesperrt_car>. It is assumed that there are no blocked streets
+for pedestrians at all.
+
+=head1 AUTHOR
+
+Slaven Rezic <slaven@rezic.de>
+
+=head1 COPYRIGHT
+
+Copyright (c) 2001 Slaven Rezic. All rights reserved.
+This module is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=head1 SEE ALSO
+
+L<bbbike>(1), L<Strassen>(3)

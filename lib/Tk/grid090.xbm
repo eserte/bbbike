@@ -1,0 +1,4 @@
+#define grid000_width 1
+#define grid000_height 4
+static unsigned char grid000_bits[] = {
+   0x01, 0x01, 0x00, 0x00};
