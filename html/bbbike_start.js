@@ -1,4 +1,4 @@
-// $Id: bbbike_start.js,v 1.9 2003/05/31 20:58:04 eserte Exp eserte $
+// $Id: bbbike_start.js,v 1.9 2003/05/31 20:58:04 eserte Exp $
 // (c) 2001-2002 Slaven Rezic. All rights reserved.
 // See comment in bbbike.cgi regarding x/ygridwidth
 

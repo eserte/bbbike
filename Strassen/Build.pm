@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Build.pm,v 1.16 2003/11/15 14:26:36 eserte Exp eserte $
+# $Id: Build.pm,v 1.17 2003/12/22 19:46:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::Build;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz::CNetFile;
 

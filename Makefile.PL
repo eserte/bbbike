@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.90 2003/12/02 22:28:17 eserte Exp eserte $
+# $Id: Makefile.PL,v 1.92 2003/12/22 19:38:35 eserte Exp $
 
 BEGIN {
     $^W = 0;
@@ -428,69 +428,4 @@ sub MY::postamble {
     }
     $bbbike_makefile_admin;
 }
-
-# REPO BEGIN
-# REPO NAME is_in_path /home/e/eserte/src/repository 
-# REPO MD5 1b42243230d92021e6c361e37c9771d1
-
-=head2 is_in_path($prog)
-
-=for category File
-
-Return the pathname of $prog, if the program is in the PATH, or undef
-otherwise.
-
-DEPENDENCY: file_name_is_absolute
-
-=cut
-
-sub is_in_path {
-    my($prog) = @_;
-    return $prog if (file_name_is_absolute($prog) and -f $prog and -x $prog);
-    require Config;
-    my $sep = $Config::Config{'path_sep'} || ':';
-    foreach (split(/$sep/o, $ENV{PATH})) {
-	if ($^O eq 'MSWin32') {
-	    return "$_\\$prog"
-		if (-x "$_\\$prog.bat" ||
-		    -x "$_\\$prog.com" ||
-		    -x "$_\\$prog.exe");
-	} else {
-	    return "$_/$prog" if (-x "$_/$prog");
-	}
-    }
-    undef;
-}
-# REPO END
-
-# REPO BEGIN
-# REPO NAME file_name_is_absolute /home/e/eserte/src/repository 
-# REPO MD5 a77759517bc00f13c52bb91d861d07d0
-
-=head2 file_name_is_absolute($file)
-
-=for category File
-
-Return true, if supplied file name is absolute. This is only necessary
-for older perls where File::Spec is not part of the system.
-
-=cut
-
-sub file_name_is_absolute {
-    my $file = shift;
-    my $r;
-    eval {
-        require File::Spec;
-        $r = File::Spec->file_name_is_absolute($file);
-    };
-    if ($@) {
-	if ($^O eq 'MSWin32') {
-	    $r = ($file =~ m;^([a-z]:(/|\\)|\\\\|//);i);
-	} else {
-	    $r = ($file =~ m|^/|);
-	}
-    }
-    $r;
-}
-# REPO END
 

@@ -2244,6 +2244,18 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
 * SpielplE<auml>ze aufnehmen? Z.B.
   L<http://www.stadtentwicklung.berlin.de/umwelt/stadtgruen/kinderspielplaetze/de/spielplaetze/>
 
+* Splines verwenden? Z.B. in den Daten so markieren: x,y S x,y ...
+  Falls ein Spline auftritt, wird der gesamte Linienzug mitsamt
+  Outline als -smooth => 1 markiert und für nicht spline-Abschnitte
+  werden die Koordinaten gemaess der Tk::Canvas-Doku dupliziert.
+  Kreuzungen müssen exakt sein (also darf ein Kreuzungspunkt nicht
+  zwei S-Nachbarn haben! => Konsistenzcheck möglich).
+  Mögliches Problem: können alle Tools mit Extra-Daten zwischen den
+  Koordinaten umgehen? Und: wie sieht die API dazu aus (z.B.
+  $street->getattr($data_pos, $coord_pos) und
+  $street->getallattr($data_pos)). Splines auch bei der Routensuche
+  (strecke()) beachten?
+
 =back
 
 =head1 KOMPATIBILITE<Auml>T

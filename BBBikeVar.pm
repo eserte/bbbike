@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.26 2003/11/16 22:16:46 eserte Exp eserte $
+# $Id: BBBikeVar.pm,v 1.27 2003/12/22 19:24:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@
 
 package BBBike;
 
-$VERSION	   = '3.12'; # remove "-DEVEL" for releases
+$VERSION	   = '3.13'; # remove "-DEVEL" for releases
 
 $EMAIL_OLD	   = 'eserte@cs.tu-berlin.de';
 $EMAIL		   = 'slaven@rezic.de';

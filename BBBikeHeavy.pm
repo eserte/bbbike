@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.6 2003/08/24 23:31:58 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.7 2003/12/22 19:20:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.

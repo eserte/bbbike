@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Getopt.pm,v 1.47 2003/06/29 20:09:19 eserte Exp eserte $
+# $Id: Getopt.pm,v 1.48 2003/09/16 11:57:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1997,1998,1999,2000,2003 Slaven Rezic. All rights reserved.
@@ -1189,6 +1189,7 @@ sub option_editor {
     }
 
     if ($opt_editor->can('Popup')) {
+	$opt_editor->withdraw;
 	$opt_editor->Popup;
     }
     if ($wait) {

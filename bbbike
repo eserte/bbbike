@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.114 2003/11/18 23:39:54 eserte Exp eserte $
+# $Id: bbbike,v 3.115 2003/12/22 19:41:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -218,7 +218,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.114 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.115 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -3539,7 +3539,6 @@ sub do_iconframe {
 		);
 	}
     }
-    $svm->separator;
 
     menuright($save_button, $svm);
     menuarrow($svmb, $svm, $col++, -menulabel => M"Speichern",
@@ -3619,24 +3618,7 @@ sub do_iconframe {
     my $opt_photo = load_photo($misc_frame2, 'opt.' . $default_img_fmt);
     my $opt_button = $misc_frame2->Button
       (image_or_text($opt_photo, 'Opt'),
-       -command => sub {
-	   $opt->option_editor
-	       ($top,
-		($transient ? (-transient => $top) : ()),
-		(!defined $ENV{LANG} || $ENV{LANG} =~ /^de/ ?
-		 (-string => {optedit => "Options-Editor",
-			      undo => "Undo",
-			      lastsaved => "Zuletzt gespeichert",
-			      save => "Speichern",
-			      defaults => "Voreinstellungen",
-			      ok => "Ok",
-			      apply => "Anwenden",
-			      cancel => "Abbrechen",
-			      helpfor => "Hilfe für",
-			     }
-		 ) : ()),
-	       )
-	   },
+       -command => \&optedit,
       )->grid(-row => $curr_row, -column => $col, -sticky => 's');
     if (!$opt) {
 	$opt_button->configure(-state => 'disabled');
@@ -3648,7 +3630,7 @@ sub do_iconframe {
     my $opbm = $BBBike::Menubar::option_menu = $opbmb->Menu(-title => M"Einstellungen");
     $BBBike::Menubar::option_menu = $BBBike::Menubar::option_menu; # peacify -w
     # XXX wenn die Save-Funktion funktioniert, folgendes immer ausführen:
-    if ($advanced) {
+    if ($advanced && $devel_host) {
 	$opbm->command(-label => M("Konfigurations-Wizard"),
 		       -command => sub { require Wizards;
 					 config_wizard($top);
@@ -5137,7 +5119,7 @@ sub generate_plot_functions {
 		    }
 		};
 
-		if ($cat_hin =~ /^F:(.*)$/) { # Fläche, no $cat_rueck handlin here
+		if ($cat_hin =~ /^F:(.*)$/) { # Fläche, no $cat_rueck handling here
 		    my $item;
 		    my $category = $1;
 		    my($color, $rest) = split(/\|/, $category);
@@ -5715,6 +5697,8 @@ sub set_bindings {
     $c->bind("delnet", "<Any-Leave>" => \&_restore_cursor);
 
     foreach (qw(all)) {
+	# XXX TODO should be ButtonRelease-1 some day, if using
+	# B1-Motion for rubberbanding a zoom region
 	$c->bind($_, "<ButtonPress-1>" => \&set_route_point);
     }
 
@@ -5740,6 +5724,7 @@ sub set_bindings {
 		   });
     $c->CanvasBind('<B1-Motion>' => sub {
 		       if ($map_mode eq MM_SCRIBBLE) {
+			   # XXX not Tk::Babybike!
 			   return Tk::Babybike::handle_button1_motion_scribble($c,$c->XEvent);
 		       }
 		       return unless $map_mode eq MM_DRAG;
@@ -6453,7 +6438,7 @@ sub enter_power {
     $t->bind('<Return>' => sub { $okb->invoke });
     $t->bind('<<CloseWin>>' => sub { $cb->invoke });
 
-    $t->Popup(@popup_style);
+    my_popup($t);
 }
 
 # Erzeugt den String für den Label der Geschwindigkeit
@@ -6544,7 +6529,7 @@ sub enter_speed {
     $t->bind('<Return>' => sub { $okb->invoke });
     $t->bind('<<CloseWin>>' => sub { $cb->invoke });
 
-    $t->Popup(@popup_style);
+    my_popup($t);
 }
 
 # Dialog zum Eingeben der Windgeschwindigkeit und -richtung
@@ -6686,8 +6671,8 @@ sub enter_wind {
 
     $e[-1]->bind('<Return>' => sub { $okb->invoke });
     $t->bind('<<CloseWin>>' => sub { $cb->invoke });
-    $t->idletasks; # XXX help popup to display on the right location
-    $t->Popup(@popup_style);
+    #XXX del: $t->idletasks; # XXX help popup to display on the right location
+    my_popup($t);
 }
 
 # Dialog zum Eingeben des Mapscales
@@ -6779,7 +6764,7 @@ sub enter_scale {
     $t->bind('<Return>' => sub { $okb->invoke });
     $t->bind('<<CloseWin>>' => sub { $cb->invoke });
 
-    $t->Popup(@popup_style);
+    my_popup($t);
 }
 
 # Ändert den -state einer gesamten Widgethierarchie unter $frame
@@ -7346,15 +7331,15 @@ sub enter_opt_preferences2 {
 			   my $wid = $bar->containing($X+5,$Y);
 			   if (defined $wid && $wid->isa('Tk::Scale')) {
 			       $wid->eventGenerate("<$evt2>",
-						   -x => $X-$wid->rootx,
-						   -y => $Y-$wid->rooty,
+						   '-x' => $X-$wid->rootx,
+						   '-y' => $Y-$wid->rooty,
 						  );
 			   }
 		       });
 	}
     }
 
-    $t->Popup(@popup_style);
+    my_popup($t);
 
 }
 
@@ -9117,7 +9102,7 @@ sub choose_ort {
 		$t->Popup(-overanchor => "nw", -popanchor => "nw", -popover => $c);
 	    }
 	} else {
-	    $t->Popup(@popup_style);
+	    my_popup($t);
 	}
     } else {
 	$toplevel{"chooseort-$type-$linetype"}->deiconify;
@@ -11485,15 +11470,7 @@ sub scalecanvas {
 	    $_->[2] *= $scalefactor;
 	}
 
-	if (defined $map_img) {
-	    my @map_coords = $c->coords('map');
-	    my($width, $height) = ($map_img->width,
-				   $map_img->height);
-	    @map_coords = ($map_coords[0]+$width*$scalefactor/2,
-			   $map_coords[1]+$height*$scalefactor/2);
-	    # @map_coords zeigt jetzt auf die Mitte der Karte ...
-	    getmap(@map_coords); # Karte neu zeichnen (richtig skaliert)
-	}
+	scale_maps($scalefactor);
 
 	if (defined $x && defined $y) {
 	    # preserve position under cursor
@@ -11537,6 +11514,11 @@ sub scale_width {
 		    foreach my $item ($c->find("withtag", $type)) {
 			$c->itemconfigure($item, -width => $new_width)
 			    unless $c->type($item) eq 'image';
+		    }
+		} elsif ($type =~ /^w-.*-out$/) {
+		    foreach my $item ($c->find("withtag", $type)) {
+			$c->itemconfigure($item, -width => $new_width)
+			    unless $c->type($item) eq 'polygon';
 		    }
 		} else {
 		    $c->itemconfigure($type, -width => $new_width);
@@ -11840,6 +11822,39 @@ sub get_symbol_scale {
 	    return (-width => 6, -font => undef);
 	} else {
 	    return (-width => 3, -font => undef);
+	}
+    }
+}
+
+sub scale_maps {
+    my $scalefactor = shift;
+    if (defined $map_img || @map_surround_img) {
+	my($width, $height);
+	for my $img ($map_img, @map_surround_img) {
+	    if (defined $img) {
+		($width, $height) = ($img->width, $img->height);
+		last;
+	    }
+	}
+	if (defined $width) {
+	    my @maps = $c->find(withtag => 'map');
+	    for my $map_i (@maps) {
+		my @map_coords = $c->coords($map_i);
+		if ($c->type($map_i) eq 'image') {
+		    eval {
+			my $p = $c->itemcget($map_i, "-image");
+			$p->delete;
+		    }; warn $@ if $@;
+		}
+		$c->delete($map_i);
+		@map_coords = ($map_coords[0]+$width*$scalefactor/2,
+			       $map_coords[1]+$height*$scalefactor/2);
+		# @map_coords zeigt jetzt auf die Mitte der Karte ...
+		eval {
+		    local $map_surround = 0;
+		    getmap(@map_coords); # Karte neu zeichnen (richtig skaliert)
+		}; warn $@ if $@;
+	    }
 	}
     }
 }
@@ -15008,6 +15023,7 @@ sub show_logo { # und About
     } else {
 	$logotop->transient($top);
     }
+    $logotop->withdraw;
     $logotop->Popup(-popover => ($as_about ? 'cursor' : $top));
     $logotop->update; # damit der Inhalt sofort erscheint
 }
@@ -15831,6 +15847,37 @@ sub get_polar_location_of_route_end {
     require Karte::Polar;
     my($px,$py) = $Karte::Polar::obj->standard2map(@{ $realcoords[-1] });
     "$px,$py";
+}
+
+sub my_popup {
+    my $t = shift;
+    $t->withdraw;
+    $t->Popup(@popup_style);
+}
+
+sub optedit {
+    my $opt_edit = $top->{GetoptEditor};
+    if (Tk::Exists($opt_edit)) {
+	$opt_edit->raise;
+	return;
+    }
+    $opt_edit =	$opt->option_editor
+	($top,
+	 ($transient ? (-transient => $top) : ()),
+	 (!defined $ENV{LANG} || $ENV{LANG} =~ /^de/ ?
+	  (-string => {optedit => "Optionseditor",
+		       undo => "Undo",
+		       lastsaved => "Zuletzt gespeichert",
+		       save => "Speichern",
+		       defaults => "Voreinstellungen",
+		       ok => "Ok",
+		       apply => "Anwenden",
+		       cancel => "Abbrechen",
+		       helpfor => "Hilfe für",
+		      }
+	  ) : ()),
+	);
+    $top->{GetoptEditor} = $opt_edit;
 }
 
 sub start_process {

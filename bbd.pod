@@ -38,16 +38,16 @@ category applies only to the other direction.
 Other predefined categories are listed below. The category should not
 contain any spaces.
 
-   DRAFT: Change the category format to:
+   DRAFT (not yet in use!): Change the category format to:
 
-       <cat> = <onewaycat> : <onewaycat> |
+       <cat> = <onewaycat> ; <onewaycat> |
                <onewaycat>
 
        <onewaycat> = F=? <basiccat> (: <attrkey> (= <attrval>)?)*
 
-       <basiccat>  = [^:]+
-       <attrkey>   = [^:=]+
-       <attrval>   = [^:=]+
+       <basiccat>  = [^:;]+
+       <attrkey>   = [^:;=]+
+       <attrval>   = [^:;=]+
 
    Changes for data files:
      F:cat becomes F=cat

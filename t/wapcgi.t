@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.13 2003/12/02 21:04:38 eserte Exp $
+# $Id: wapcgi.t,v 1.14 2003/12/31 14:19:40 eserte Exp $
 # Author: Slaven Rezic
 #
 

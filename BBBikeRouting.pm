@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.29 2003/11/29 21:22:07 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.30 2003/12/22 19:23:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.

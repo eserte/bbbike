@@ -313,7 +313,7 @@ sub current_item {
 	    if ($safe_loop++ > 100); # XXX
 	my $find;
 	if ($stage eq 'closest') {
-	    $find = $c->find('closest', $x, $y, 0, $start);
+	    ($find) = $c->find('closest', $x, $y, 0, $start);
 	    if (defined $find and $find ne '') {
 		if (exists $seen{$find}) {
 		    $stage = 'overlapping';

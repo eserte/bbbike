@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.12 2002/11/01 17:10:14 eserte Exp $
+# $Id: Berlin_DE.pm,v 1.13 2003/12/22 19:45:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -22,7 +22,7 @@ use vars qw(%subcityparts %cityparts %subcitypart_to_citypart %properties);
 %subcityparts =
     (
      'Charlottenburg'	 => [qw/Charlottenburg-Nord Pichelsberg Westend
-			        Witzleben/],
+			        Witzleben Halensee/],
      'Friedrichshain'	 => [],
      'Hellersdorf'	 => [qw/Kaulsdorf Mahlsdorf/],
      'Hohenschönhausen'	 => [qw/Falkenberg Margaretenhöhe Wartenberg Malchow/],

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Wind.pm,v 1.6 1999/12/20 21:24:36 eserte Exp $
+# $Id: Wind.pm,v 1.7 2003/12/20 22:46:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 1999 Slaven Rezic. All rights reserved.
@@ -296,7 +296,8 @@ sub beaufort_table {
 	    @popup_style = ();
 	}
     }
-	    
+
+    $tl->withdraw;
     $tl->Popup(@popup_style);
     $tl;
 }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Karte.pm,v 1.36 2003/05/03 23:08:17 eserte Exp $
+# $Id: Karte.pm,v 1.38 2003/12/31 13:44:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2002 Slaven Rezic. All rights reserved.
@@ -263,9 +263,49 @@ my($tomap) = "standard";
 if (!Getopt::Long::GetOptions("from=s" => \$frommap,
 			      "to=s" => \$tomap,
 			     )) {
-    die "usage: $^X $0 [-from map] [-to map] -- x,y";
+    usage();
 }
-my($c) = @ARGV;
-print join(",", $Karte::map{$frommap}->map2map($Karte::map{$tomap},
-					       split/,/, $c)), "\n";
+while(<>) {
+    chomp;
+    my $c = $_;
+    print join(",", $Karte::map{$frommap}->map2map($Karte::map{$tomap},
+						   split/,/, $c)), "\n";
+}
+
+sub usage {
+    Karte::preload(":all");
+    my $valid_maps = join("\n", map { "- $_ (" . $Karte::map{$_}->name . ")" } sort keys %Karte::map);
+    die <<EOF;
+Usage: $^X $0 [-from map] [-to map] -- x,y
+Where map is any of:
+$valid_maps
+EOF
+}
+
+__END__
+
+=head1 NAME
+
+Karte - conversions between map sets
+
+=head1 SYNOPSIS
+
+In a script:
+
+    use Karte;
+    Karte::preload(":all");
+
+    my $frommap = $Karte::map{"standard"};
+    my $tomap   = $Karte::map{"polar"};
+    ($x_polar, $y_polar) = $frommap->map2map($tomap, $x_standard, $y_standard);
+
+From command line:
+
+    perl Karte.pm -from standard -to polar -- x,y
+
+For a list of all possible maps use
+
+    keys(%Karte::map)
+
+=cut
 

@@ -7,8 +7,8 @@
 =head2 General
 
 You can find the newest distribution file of BBBike in the directory
-L<http://prdownloads.sourceforge.net/bbbike> . The current source version is
-L<http://prdownloads.sourceforge.net/bbbike/BBBike-3.12.tar.gz> .
+L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike> . The current source version is
+L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13.tar.gz> .
 
 =head2 FreeBSD
 
@@ -31,11 +31,11 @@ perl5 at L<http://www.perl.com>. You need at least version 5.005.
 Next step is to extract the BBBike distribution:
 
 
-	zcat BBBike-3.12.tar.gz | tar xfv -
+	zcat BBBike-3.13.tar.gz | tar xfv -
 
-If perl/Tk (the recommended version is 800.024) is not installed:
+If perl/Tk (the recommended version is 800.025) is not installed:
 change to the directory
-C<BBBike-3.12> and type as super user:
+C<BBBike-3.13> and type as super user:
 
 
 	perl -I`pwd` -MCPAN -e "install Bundle::BBBike_small"
@@ -73,12 +73,12 @@ execute
 
 This requires the perl module L<Inline::C>.
 
-=head2 Windows 95/98/2000/NT
+=head2 Windows 95/98/2000/NT/XP
 BBBike and Perl need approx. 32 MB hard disk space.
 
 
 Download the file
-L<http://prdownloads.sourceforge.net/bbbike/BBBike-3.12-Windows.zip> and 
+L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.12-Windows.zip> and 
 extract this file
 with WinZip. To start BBBike just click on the icon C<bbbike.bat> in
 the directory BBBike-3.12-Windows.
@@ -91,7 +91,7 @@ directory.
 =head2 Alternative Windows Installation (1)
 
 As an alternative, you can install BBBike just with the sources. Steps
-for Windows 95/98/2000/NT users:
+for Windows 95/98/2000/NT/XP users:
 
 =over 4
 
@@ -130,14 +130,14 @@ to download and install perl/Tk. To leave the ppm program, type
 =item *
 
 Download
-C<BBBike-3.12.tar.gz|http://prdownloads.sourceforge.net/bbbike/BBBike-3.12.tar.gz>
+C<BBBike-3.13.tar.gz|ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13.tar.gz>
 and extract this file with 
 WinZip. The unpacked directory will not move in the later
 installation.
 
 =item *
 
-Open the explorer, change to the BBBike-3.12 directory and call
+Open the explorer, change to the BBBike-3.13 directory and call
 
 
 	install.pl.
@@ -205,16 +205,16 @@ BBBike.
 
 To switch the English language support, please set the LC_ALL,
 LC_MESSAGES, or LANG environment variables to "en" or something
-similar (for FreeBSD and Linux, this is "en_GB.ISO8859-1"). For Unix,
+similar (for FreeBSD and Linux, this is "en-GB.ISO8859-1"). For Unix,
 this can be done with
 
 
-	env LC_ALL=en_GB.ISO8859-1 perl bbbike
+	env LC_ALL=en-GB.ISO8859-1 perl bbbike
 
 
 BBBike is a memory and cpu hog. You need at least 16 MB RAM on i386
 platforms (Solaris needs at least 32 MB), but with 32/64 MB it will
-work better. Some versions of BBBike are tested with: Solaris-2.5, Solaris 8, FreeBSD-3.5, FreeBSD-4.6, Linux Suse 6.4, Linux Suse 7.0, Linux Debian 3.0, Windows 95, Windows 98, Windows NT 4.0, Windows 2000. The
+work better. Some versions of BBBike are tested with: Solaris-2.5, Solaris 8, FreeBSD-3.5, FreeBSD-4.6, FreeBSD-4.9, Linux Suse 6.4, Linux Suse 7.0, Linux Debian 3.0, Red Hat Linux 8.0, Windows 95, Windows 98, Windows NT 4.0, Windows 2000. The
 development machine runs with FreeBSD.
 
 =head2 WWW version
@@ -230,7 +230,7 @@ L<http://www.radzeit.de/cgi-bin/bbbike.cgi/info=1>
 
 =head2 Command line version
 
-C<cbbbike> is a simple command line version of the program.
+C<cbbbike> and C<cmdbbbike> are simpler command line versions of the program.
 
 =head1 DOCUMENTATION
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MPS.pm,v 1.1 2003/08/04 18:14:23 eserte Exp $
+# $Id: MPS.pm,v 1.2 2003/12/22 19:44:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::MPS;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 use Fcntl qw(:seek);
 

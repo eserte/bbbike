@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CNetFilePerl.pm,v 1.15 2003/09/02 22:29:43 eserte Exp $
+# $Id: CNetFilePerl.pm,v 1.16 2003/12/22 19:53:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
