@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.7 2003/11/17 07:21:05 eserte Exp $
+# $Id: bbbikerouting.t,v 1.8 2003/11/17 21:35:06 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -69,7 +69,7 @@ if (!$all) {
     goto EXIT;
 }
 
-plan tests => $num_tests * 5 * 2 * 2 * 2;
+plan tests => $num_tests * 5 * 2 * 2 * 3;
 
 # run twice to get the cache effect!
 my @cachetypes;
@@ -86,7 +86,7 @@ for $usexs (0, 1) {
 	for $usecache (0, 1) {
 	    my @trycache = $usecache ? @cachetypes : undef;
 	    for $cachetype (@trycache) {
-		for $algorithm ("C-A*", "A*") {
+		for $algorithm ("C-A*-2", "C-A*", "A*") {
 		    if ($bench) {
 			my $t = timeit(1, 'do_tests()');
 			$times{$token} += $t->[$_] for (1..4);
@@ -239,7 +239,10 @@ sub do_tests {
 	ok(1, "No errors while continuing search");
     }
 
-    {
+    SKIP: {
+	skip("No oepnv search with algorithm=$algorithm", 8)
+	    if defined $algorithm && $algorithm eq 'C-A*-2';
+
 	my $routing2 = BBBikeRouting->new();
 	is(ref $routing2, "BBBikeRouting");
 	$routing2->init_context;
