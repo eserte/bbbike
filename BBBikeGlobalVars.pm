@@ -80,7 +80,7 @@ use vars qw(
      $route_strname_lbox $show_strlist $show_enter_opt_preferences
      %module_time %module_check $aufschlag
      $plotstr_draw_sub $plotpoint_draw_sub $plotorte_draw_sub $progress
-     @remember_plot_str @remember_plot_p
+     $lazy_plot @remember_plot_str @remember_plot_p
      @standard_mode_cmd @edit_mode_cmd @edit_mode_b_cmd @edit_mode_brb_cmd
      @edit_mode_standard_cmd
      $map_mode %map_mode_callback $map_mode_deactivate $b2_mode %b2_mode_desc

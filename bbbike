@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.128 2004/03/22 23:45:50 eserte Exp $
+# $Id: bbbike,v 3.128 2004/03/22 23:45:50 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -637,6 +637,15 @@ Tk::CmdLine::SetArguments();
 						 $turbo = 1;
 					     },
    ],
+   ['lazy','!',undef,   nogui => 1, var => sub {
+       $lazy_plot = 1;
+       $p_far_away{'o'}   = 1;
+       $str_far_away{'w'} = 1;
+       $str_far_away{'l'} = 1;
+       $wasserumland      = 1;
+       $str_draw{'l'}     = $str_draw{'s'};
+       $p_draw{'o'}       = 1;
+   }],
    ['lowmem','!',undef, nogui => 1, var => sub {
 	fast_settings();
 	$lowmem = 1;
@@ -4225,6 +4234,7 @@ $c = $canvas_frame->Canvas
    -scrollregion => \@scrollregion,
    #-xscrollincrement => 4, -yscrollincrement => 4,
   )->grid(-row => 0, -column => 0, -sticky => 'eswn');
+$top->Advertise(Map => $c);
 $c->{Configure}{-seeview} = \&Tk::Canvas::smooth_scroll;
 #XXX$c->BindMouseWheel if defined &Tk::Widget::BindMouseWheel;
 
@@ -7872,10 +7882,6 @@ sub plotstr {
 	read_desc_file("$filename.desc");
     }
 
-    if ($args{-lazy}) {
-	return bbbikeexp_add_data("str", $abk, $filename);
-    }
-
     # Radwege werden im Edit-Modus besser mit radweg_draw_canvas() gezeichnet
     if ($abk eq 'rw' and $coord_system ne 'standard') {
 	radweg_open();
@@ -7942,6 +7948,11 @@ sub plotstr {
     if (!defined $str) {
 	status_message(M"Kein Objekt definiert!", "err");
 	return;
+    }
+
+    my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
+    if ($std && $lazy) {
+	return bbbikeexp_add_data("str", $abk, $str);
     }
 
     my $diffed_str = 0;
@@ -8725,7 +8736,7 @@ sub plotp {
 	require BBBikeAdvanced;
 	ploths();
     } elsif ($abk eq 'o') {
-	plotorte(Shortname => 1);
+	plotorte(Shortname => 1, %args);
     } elsif ($abk eq 'obst') {
 	plotobst();
     } elsif ($abk eq 'hoehe') {
@@ -8833,7 +8844,8 @@ sub plot_point {
 	read_desc_file("$filename.desc");
     }
 
-    if ($args{-lazy}) {
+    my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
+    if ($lazy) {
 	return bbbikeexp_add_data("p", $abk, $filename);
     }
 
@@ -9793,7 +9805,17 @@ sub plotorte {
 
     if ($std && !$p_draw{$type}) {
 	undef $p_obj{$type};
+	if ($main::exp_p{$type}) {
+	    bbbikeexp_remove_data("p", $type);
+	}
 	return;
+    }
+
+    my $orte = _get_orte_obj($type);
+
+    my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
+    if ($std && $lazy) {
+	return bbbikeexp_add_data("p", $type, $orte);
     }
 
     my $coordsys = $coord_system_obj->coordsys;
@@ -9804,7 +9826,6 @@ sub plotorte {
 		    -label => 'orte');
     eval {
 	my $i = 0;
-	my $orte = _get_orte_obj($type);
 
 	my $place_category = (exists $args{PlaceCategory}
 			      ? $args{PlaceCategory} : $place_category);
@@ -15032,7 +15053,7 @@ sub city_settings {
 }
 
 sub region_settings {
-    $str_draw{'l'}     = 1;
+    $str_draw{'l'}     = 1; # XXX set to str_draw{'s'}?
     $p_draw{'o'}       = 1;
     $p_far_away{'o'}   = 0;
     $str_far_away{'w'} = 0;
@@ -15043,7 +15064,7 @@ sub region_settings {
 }
 
 sub jwd_settings {
-    $str_draw{'l'}     = 1;
+    $str_draw{'l'}     = 1; # XXX set to str_draw{'s'}?
     $p_draw{'o'}       = 1;
     $p_far_away{'o'}   = 1;
     $str_far_away{'w'} = 1;

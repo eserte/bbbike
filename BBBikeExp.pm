@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeExp.pm,v 1.20 2004/03/22 23:38:55 eserte Exp $
+# $Id: BBBikeExp.pm,v 1.20 2004/03/22 23:38:55 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -128,22 +128,34 @@ sub BBBikeExp::bbbikeexp_empty_setup {
 # XXX for now "-orig" has to be specified unlike in other functions
 # like main::plotstr
 sub BBBikeExp::bbbikeexp_add_data {
-    my($type, $abk, $file) = @_;
-    if (!defined $file) {
-	if ($type eq 'str' && $str_file{$abk}) {
-	    $file = $str_file{$abk};
-	} elsif ($type eq 'p' && $p_file{$abk}) {
-	    $file = $p_file{$abk};
+    my($type, $abk, $file_or_object) = @_;
+    my $file;
+    if (!UNIVERSAL::isa($file_or_object, "Strassen")) {
+	$file = $file_or_object;
+	if (!defined $file) {
+	    if ($type eq 'str' && $str_file{$abk}) {
+		$file = $str_file{$abk};
+	    } elsif ($type eq 'p' && $p_file{$abk}) {
+		$file = $p_file{$abk};
+	    } else {
+		die "No file for $type/$abk defined";
+	    }
 	} else {
-	    die "No file for $type/$abk defined";
+	    if ($type eq 'str') {
+		$str_file{$abk} = $file;
+	    } else {
+		$p_file{$abk} = $file;
+	    }
 	}
     } else {
+	($file) = $file_or_object->file; # XX what about multiple files
 	if ($type eq 'str') {
-	    $str_file{$abk} = $file;
+	    $exp_str{$abk} = $file_or_object;
 	} else {
-	    $p_file{$abk} = $file;
+	    $exp_p{$abk} = $file_or_object;
 	}
     }
+
     if ($type eq 'str') {
 	my $def = [$abk, $file];
 	push @defs_str, $def;
@@ -279,10 +291,10 @@ sub BBBikeExp::draw_streets {
 	} else {
 	    $exp_str{$def->[0]} = new Strassen $def->[1];
 	}
-	$exp_str{$def->[0]}->make_grid(UseCache => 1);
     } else {
 	$exp_str{$def->[0]}->reload;
     }
+    $exp_str{$def->[0]}->make_grid(UseCache => 1);
     $str_draw{$def->[0]} = 1;
     $str_outline{$def->[0]} = 0;
     if ($def->[0] =~ /^L\d+/) {
@@ -294,10 +306,10 @@ sub BBBikeExp::draw_points {
     my $def = shift;
     if (!$exp_p{$def->[0]}) {
 	$exp_p{$def->[0]} = new Strassen $def->[1];
-	$exp_p{$def->[0]}->make_grid(UseCache => 1);
     } else {
 	$exp_p{$def->[0]}->reload;
     }
+    $exp_p{$def->[0]}->make_grid(UseCache => 1);
     $p_draw{$def->[0]} = 1;
     if ($def->[0] =~ /^L\d+/) {
 	std_p_binding($def->[0]);
