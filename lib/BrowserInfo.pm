@@ -2,15 +2,15 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.37 2003/12/22 19:56:52 eserte Exp $
+# $Id: BrowserInfo.pm,v 1.38 2004/01/04 10:49:16 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net/
 #
 
 package BrowserInfo;
@@ -18,7 +18,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.37 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, $q) = @_;
@@ -112,8 +112,8 @@ sub set_info {
 			      $q->user_agent('SonyEricssonT300') ||
 			      $q->user_agent('SonyEricssonT610') ||
 			      (defined $ENV{HTTP_ACCEPT} &&
-			       $ENV{HTTP_ACCEPT} =~ /vnd.wap.wml/i &&
-			       $ENV{HTTP_ACCEPT} !~ /text\/html/i)
+			       $ENV{HTTP_ACCEPT} =~ /vnd.wap.wml/i
+			      )
 			      # XXX check:
 			      #|| $q->user_agent('Ericsson/R1A') ||
 			      #$q->user_agent('EudoraWeb')
@@ -121,7 +121,12 @@ sub set_info {
     # usually text browser with even limited screen dimensions
     $self->{'mobile_device'} = ($q->user_agent('palmscape') ||
 				$self->{'user_agent_os'} =~ /PalmOS/ ||
-				$self->{'wap_browser'});
+				($self->{'wap_browser'} &&
+				 # Take out "big" browsers which may or may not
+				 # understand wml
+				 $self->{'user_agent_name'} !~ /^(?:Opera|Mozilla|MSIE|Konqueror)$/
+				)
+			       );
 
     # display size without permanent footers etc.
     if ($q->user_agent('nokia-wap-toolkit')) {
@@ -188,7 +193,7 @@ sub set_info {
 	     Nokia6100 => [128, 90], # XXX ca.
 	     Nokia3650 => [170, 144], # visible size
 	     Nokia3660 => [170, 144],
-	     Nokia7650 => [170, 144],
+	     Nokia7650 => [170, 144], # max image width is smaller? check wapbbbike.cgi output
 	     "NokiaN-Gage" => [170, 144],
 	    );
     TRY: {
@@ -201,10 +206,10 @@ sub set_info {
 	    warn "Fallback for unknown Nokia phone " . $q->user_agent;
 	    $self->{display_size} = [84, 49]; # fallback to smallest...
 	}
-    } elsif ($self->{'wap_browser'}) {
-	$self->{'display_size'} = [80,60-20]; # ???
     } elsif ($q->user_agent("Dillo")) {
 	$self->{'display_size'} = [200,320]; # iPAQ
+    } elsif ($self->{'mobile_device'}) {
+	$self->{'display_size'} = [80,60-20]; # ???
     } else {
 	$self->{'display_size'} = [800-50,600-10]; # ???
     }

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.58 2003/12/04 00:37:14 eserte Exp $
+# $Id: bbbike.cgi,v 6.59 2004/01/03 21:19:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -607,7 +607,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.58 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.59 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -4139,20 +4139,33 @@ sub etag {
     (-ETag => $etag);
 }
 
-# Write a HTTP header (always with etag) and maybe enabled compression
+# Write a HTTP header (always with Etag and Vary) and maybe enabled compression
 sub http_header {
-    my(@args) = @_;
+    my(@header_args) = @_;
+    push @header_args, etag(), (-Vary => "User-Agent");
     if (#!$ENV{MOD_PERL} &&
-	0 && # XXX CGI::Compress::Gzip 0.11 not ready for prime time!!!
+	#0 && # XXX CGI::Compress::Gzip 0.11 not ready for prime time!!!
 	#XXX
 	$ENV{SERVER_NAME}=~/herceg.de/ &&
-	eval { require CGI::Compress::Gzip; 1 }) {
+	eval { require CGI::Compress::Gzip;
+	       CGI::Compress::Gzip->VERSION(0.15); # XXX bug in 0.15, 0.16 does not exist...
+	       package MyCGICompressGzip;
+	       @MyCGICompressGzip::ISA = 'CGI::Compress::Gzip';
+	       sub isCompressibleType {
+		   my($self, $type) = @_;
+		   # XXX removed application/pdf| because BBBikeDraw::PDF
+		   # and CGI::Compress::Gzip does not work well together
+		   # (the latter does not handle "print $fh" calls)
+		   return $type =~ m{^(text/.*|image/svg\+xml)$};
+	       }
+	       1;
+	   }) {
 	$CGI::Compress::Gzip::global_give_reason =
 	    $CGI::Compress::Gzip::global_give_reason = $debug;
-	$cgic = CGI::Compress::Gzip->new;
-	print $cgic->header(@args, etag());
+	$cgic = MyCGICompressGzip->new;
+	print $cgic->header(@header_args);
     } else {
-	print $q->header(@args, etag());
+	print $q->header(@header_args);
     }
     $header_written = 1;
 }

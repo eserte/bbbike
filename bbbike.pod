@@ -2222,7 +2222,7 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
 
   * Was ist mit dem Koordinatensystem ETRS 89?
 
-* Niederschlagsprognosen:
+=item Niederschlagsprognosen:
 
   http://puma.dkrz.de/theomet/prognosen/
   http://puma.dkrz.de/theomet/prognosen/bilder/colorpop6.jpg
@@ -2230,21 +2230,21 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
 
   Kommerzielles Programm: http://www.einfalt.de/x_rad_vorher.html
 
-* Volltextsuchfunktion in bbbike erweitern: agrep mit fester
+=item Volltextsuchfunktion in bbbike erweitern: agrep mit fester
   Fehleranzahl, automatische Operation mit schrittweiser
   ErhE<ouml>hung der Fehleranzahl
 
-* Eine Kreuzung:
+=item Eine Kreuzung:
 
   Verzögerung durch Vorfahrtsberechtigungen: Ampel, Bahnübergang,
   Vorfahrt, Vorfahrt gewähren, rechts-vor-links; Abbiegevorgänge
 
   Verzögerung durch Richtungsänderungen: geradeaus, rechts/links
 
-* SpielplE<auml>ze aufnehmen? Z.B.
+=item SpielplE<auml>ze aufnehmen? Z.B.
   L<http://www.stadtentwicklung.berlin.de/umwelt/stadtgruen/kinderspielplaetze/de/spielplaetze/>
 
-* Splines verwenden? Z.B. in den Daten so markieren: x,y S x,y ...
+=item Splines verwenden? Z.B. in den Daten so markieren: x,y S x,y ...
   Falls ein Spline auftritt, wird der gesamte Linienzug mitsamt
   Outline als -smooth => 1 markiert und für nicht spline-Abschnitte
   werden die Koordinaten gemaess der Tk::Canvas-Doku dupliziert.
@@ -2256,23 +2256,95 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
   $street->getallattr($data_pos)). Splines auch bei der Routensuche
   (strecke()) beachten?
 
+=item H1: Ausblenden von Strassentypen/Radwegtypen: sollte besser -state
+  => "hidden"
+  verwenden, wenn moeglich (d.h. recent Tk). Waere aber eine Semantikaenderung,
+  da zurzeit nicht eingeblendete strassen auch nicht in der routensuche
+  verwendet werden. Was eigentlich Quatsch ist.
+
+=item ??? make some data controlled persistent:
+  * mapping full path => data structure
+  * check modtime
+  list: strassen, landstrassen, Berlin.coords.data,
+        Potsdam.coords.data ???
+
+=item Ampelschaltung.pm und BBBikeEdit.pm so erweitern, dass die alte Form
+  (misc/ampelschaltung-orig.txt) auch per GUI editierbar ist. Alternativ
+  herauskriegen, wie ich mir die Punkt-Kreuzung-Liste zusammenklicken
+  kann (wahrscheinlich einfacher).
+
+=item secure deployment to radzeit.de:
+  * cp on server: bbbike => bbbike~ etc.
+  * rsync to ~ version
+  * test ~ version (maybe name the test scripts bbbike~.cgi etc.)
+  * exch ~ and "" version
+  * test "" version
+
+=item Ideensammlung für schrittweise landstrassen-orig-Auflösung in Brandenburg
+
+  0. Änderungen für Variante 1 und 2
+    - Es wird in ein neues landstrassen-orig mit Hafas-Koordinatensystem
+      gewandelt
+    - BASE: landstrassen-orig => H
+    - alle Punkte aus landstrassen-orig, die sich in anderen bbd-Dateien
+      befinden, müssen auch umgewandelt werden
+    - alle anderen Datentypen (insbesondere .bbr in ~/.bbbike) müssen auch
+      umgewandelt werden
+    - für vergessene Dateien muss es ein Skript geben, das die
+      Umwandlung durchführt
+
+  1. Teile der Datei umwandeln
+    -
+ 
+  2. Gesamte Datei umwandeln
+    -
+
+  ODER!
+
+  genaue Daten werden mit H gekennzeichnet => keine Probleme bei der
+  Unterscheidung! Nur für neue Daten verwenden. Bei CONV in
+  data_converted ausklammern.
+
+=item dillo 0.7.x ist schon richtig gut --- kann imagemaps und tabellen
+  für ipaq besorgen und dann endlich die alternative zu bbbike impl.!
+  => auf skiffcluster compilieren
+
+=item gpsman2bbd Parameteruebergabe ueberarbeiten
+
+=item Tk::LayerEditor in einer nicht-DND-Version (für Windows, optional
+  auch für X11)
+
+=item Preferences:
+  - Stellung des Kopfsteinpflaster-/Ampelzeit-Buttons (nicht so wichtig)
+  - evtl. die Möglichkeit des Rücksetzens (nicht so wichtig)
+
+=item temp blockings:
+  * beim Start von bbbike (options-gesteuert) die aktuellen Sperrungen
+    laden (load_user_dels mit $del_token gesetzt, <I>nfo sollte auf den 
+    Sperrungen funktionieren)
+  * Listbox mit Liste der Sperrungen (Name, Datum) zum Ein-/Ausschalten
+  * Evtl. eine weitere Zeit einführen: von-bis der Sperrung, von der
+    Warnzeit
+
 =back
 
 =head1 KOMPATIBILITE<Auml>T
 
-BBBike wird zur Zeit unter FreeBSD 4.6 mit perl 5.00503/5.6.1/5.8.0
-und der neuesten Perl/Tk-Version (z.Zt. 800.024) entwickelt.
+BBBike wird zur Zeit unter FreeBSD 4.9 mit perl 5.8.0
+und den neuesten Perl/Tk-Versionen (z.Zt. 800.025 und 804.025) entwickelt.
 
-TestlE<auml>ufe wurden und werden von Zeit zu Zeit auf Windows 95/98,
-Windows NT 4.0, Solaris/Sparc 7 und Linux (Debian 3.0, SuSE) gefahren.
-Dabei werden meistens auch die aktuellen Stable-Versionen von Perl und
-Tk verwendet.
+TestlE<auml>ufe wurden und werden von Zeit zu Zeit auf Windows
+95/98/NT/2000 und Linux (Debian 3.0, RedHat 8.0) gefahren. Dabei
+werden meistens auch die aktuellen Stable-Versionen von Perl und Tk
+verwendet.
 
-Es wird versucht, auch zu den E<auml>lteren Versionen perl 5.00404 und Tk
-402.004 kompatibel zu bleiben. Dabei bleiben aber einige Features
-(z.B. der Splash-Screen, vernE<uuml>nftiges Zeichensatzhandling und einige
-Keybindings) auf der Strecke. Die GrundfunktionalitE<auml>t ist aber
-vorhanden.
+Es wird versucht, auch zu der E<auml>lteren perl-Version 5.00503
+kompatibel zu bleiben. Dabei könnten aber einige Features auf der
+Strecke bleiben. Die GrundfunktionalitE<auml>t ist aber vorhanden.
+
+perl 5.004 und älter sowie Tk 400 und älter wird nicht mehr
+unterstützt. Für diese Versionen sollte ein älteres BBBike (Version
+2.xx) verwendet werden.
 
 Freiwillige zur Portierung von Perl/Tk auf die Macintosh-Plattform
 werden gesucht :-)

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SVG.pm,v 1.8 2003/12/22 19:44:11 eserte Exp $
+# $Id: SVG.pm,v 1.9 2004/01/04 11:16:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -28,7 +28,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -768,7 +768,11 @@ sub flush {
     my %args = @_;
     my $fh = $args{Fh} || $self->{Fh};
     my $im = $self->{Image};
-    print $fh $im->xmlify;
+    if ($fh == \*STDOUT) { # This is to help CGI::Compress:Gzip
+	print $im->xmlify;
+    } else {
+	print $fh $im->xmlify;
+    }
 #      my %args = @_;
 #      if (!defined $self->{Filename}) {
 #  	my $fh = $args{Fh} || $self->{Fh};

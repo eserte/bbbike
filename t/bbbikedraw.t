@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.8 2003/11/29 23:26:16 eserte Exp $
+# $Id: bbbikedraw.t,v 1.9 2004/01/04 18:41:49 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -23,7 +23,7 @@ my @modules;
 
 BEGIN {
     if (!eval q{
-	use Test;
+	use Test::More;
 	use Time::HiRes qw(gettimeofday tv_interval);
 	use Image::Info qw(image_info);
 	1;
@@ -73,7 +73,7 @@ for my $module (@modules) {
     eval {
 	draw_map($module);
     };
-    ok($@, "");
+    is($@, "", "Draw with $module");
 }
 
 if ($display) {
@@ -160,16 +160,14 @@ sub draw_map {
  SKIP: {
 	my $image_info = image_info($filename);
 	if ($imagetype =~ /^(png|gif|jpeg)$/) {
-	    ok($image_info->{file_media_type}, "image/$imagetype");
+	    is($image_info->{file_media_type}, "image/$imagetype", "Correct mime type for $imagetype");
 	} elsif ($imagetype eq 'svg') {
-	    ok($image_info->{file_media_type}, "image/svg-xml");
+	    is($image_info->{file_media_type}, "image/svg-xml", "Correct mime type for $imagetype");
 	} else {
-	    skip "image_info does not work for $imagetype", 1
-		for 1..3;
-	    last SKIP;
+	    skip "image_info does not work for $imagetype", 3;
 	}
-	ok($image_info->{width}, $width);
-	ok($image_info->{height}, $height);
+	is($image_info->{width}, $width);
+	is($image_info->{height}, $height);
     }
 }
 

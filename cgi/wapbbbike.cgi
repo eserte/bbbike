@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.14 2003/12/22 19:50:25 eserte Exp $
+# $Id: wapbbbike.cgi,v 2.16 2004/01/03 23:53:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -257,9 +257,9 @@ sub _any_image {
 
     my $convert_to = undef;
     my %extra_args;
-    if ($ENV{SERVER_NAME} =~ /herceg.de/ ||
-	$ENV{SERVER_NAME} =~ /devpc01/) {
-	require BBBikeDraw::MapServer;
+    if ($BBBikeConf::wapbbbike_use_mapserver &&
+	eval { require BBBikeDraw::MapServer; 1 }
+       ) {
 	# XXX Usually can't use gif with gd:
 	if ($imagetype ne 'png') {
 	    if (!$cgi->Accept("image/png")) {
@@ -344,11 +344,24 @@ sub wap_image_page {
 	$q2->param("sess", $self->{Session}{_session_id});
     }
 
+    my $start;
+    if ($self->Start && $self->Start->Street) {
+	$start = $self->Start->Street . " " . _def_citypart($self->Start);
+    } else {
+	$start = $q2->param("startname") || "???";
+    }
+    my $goal;
+    if ($self->Goal && $self->Goal->Street) {
+	$goal = $self->Goal->Street . " " . _def_citypart($self->Goal);
+    } else {
+	$goal = $q2->param("zielname") || "???";
+    }
+
     print <<EOF;
 @{[ $self->wap_header ]}
  <card id="output" title="BBBike Karte">
   <p>
-   <img src="@{[ $q2->script_name ]}?@{[ $q2->query_string ]}" alt="Route von @{[$self->Start->Street]} @{[_def_citypart($self->Start)]} nach @{[$self->Goal->Street]} @{[_def_citypart($self->Goal)]}" /><br/>
+   <img src="@{[ $q2->script_name ]}?@{[ $q2->query_string ]}" alt="Route von $start nach $goal" /><br/>
    <anchor>Routenliste<prev /></anchor><br/>
 EOF
     $self->_wap_new_search;
@@ -689,7 +702,9 @@ use vars qw($routing $q $do_image $sess @member);
 sub get_session {
     my $routing = shift;
     for my $member (@member) {
-	$routing->$member($sess->{$member});
+	eval {
+	    $routing->$member($sess->{$member});
+	}; # catch errors if assigning "undef" to a object-expecting member
     }
 }
 
@@ -704,6 +719,8 @@ $routing = BBBikeRouting->new->init_context;
 $routing->Context->MultipleChoicesLimit(7);
 bless $routing, 'BBBikeRouting::WAP'; # 5.005 compat
 $routing->read_conf("$FindBin::RealBin/bbbike.cgi.config");
+
+$BBBikeConf::wapbbbike_use_mapserver = $BBBikeConf::wapbbbike_use_mapserver; # cease -w
 
 $q = $routing->wap_init;
 $do_image = defined $q->param("output_as") &&
@@ -725,8 +742,10 @@ $routing->{Session} = $sess;
 if ($q->param("info")) {
     $routing->wap_info();
 } elsif (defined $q->param("output_as") && $q->param("output_as") eq 'imagepage') {
+    $routing->get_session;
     $routing->wap_image_page;
 } elsif (defined $q->param("output_as") && $q->param("output_as") eq 'surroundingimagepage') {
+    $routing->get_session;
     $routing->wap_surrounding_image_page;
 } elsif (defined $q->param("output_as") && $q->param("output_as") eq 'image' && $sess && $sess->{Path}) {
     $routing->get_session;

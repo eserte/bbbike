@@ -1,21 +1,51 @@
 BBBike RELEASE 3.13
 
 bbbike (ptk)
+- support for Tk804.025
+- new "green routes", "secondary road/cycle path" (N-RW) and
+  "unbeleuchtete Straﬂen meiden" optimizations
+- synop weather stations
+- using Astro::Sunrise for sunset calculations
+- -autosave is now on by default
+- info: link to local/global mapserver
+- mousewheel support
+- internal reorganization (more autouse'd functions, BBBikeGlobalVars ...)
+- numerous bugfixes and little improvements
 
 Modules
+- Mature MapServer support. May be used standalone, from the CGI, or for
+  various map generating tasks
+- BBBikeDraw: support for SVG::GD
+- new: GPS::MPS, GPS::WaypointPlus
+- BBBikeGPS: renovation (better graph and route output)
 
 Plugins
+- fix: prevent multiple plugin buttons for the same plugin
 
 Data
+- various updates and fixes, new data
+- beginning "brunnels" support (not used in any code for now)
+- using forwardcat;backwardcat syntax in category nearly everywhere
+  (see bbd.pod)
 
 Install
 
 CGI
+- www.bbbike.de now points to the CGI at www.radzeit.de
+- MapServer support
+- show route on maps from www.berliner-stadtplan.com
+- optional support for faster C-A*-2 algorithm
+- optional and partial support for CGI::Compress::Gzip
 
 Misc
+- major wapbbbike overhaul
+- wapbbbike now uses MapServer output for map generation if possible, maps
+  for each hop available
+- documented CVS repository access
+- more tests (only available through the CVS repository)
 
 ----------------------------------------------------------------------
-BBBike RELEASE 3.12
+BBBike RELEASE 3.12 (2003-01-08)
 
 bbbike (ptk)
 - new menu for search preferences

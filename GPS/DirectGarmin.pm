@@ -1,38 +1,27 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.22 2003/08/24 23:27:20 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.23 2004/01/03 01:09:15 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net/
 #
 
 package GPS::DirectGarmin;
 require GPS;
 push @ISA, 'GPS';
 
-# XXX should go away some day...
 BEGIN {
+    # XXX This should go away some day...
     if (-e "/home/e/eserte/work/perl-GPS") {
 	eval 'use blib "/home/e/eserte/work/perl-GPS"'; warn $@ if $@;
-    } elsif (-e "/tmp/prod.perl-GPS") {
-	eval 'use blib "/tmp/prod.perl-GPS"'; warn $@ if $@;
-    } elsif (-e "/usr/local/prod.perl-GPS") {
-	eval 'use blib "/usr/local/prod.perl-GPS"'; warn $@ if $@;
-    } else {
-	eval 'use blib "/home/e/eserte/work/prod.perl-GPS"';
     }
-    require Config;
-#XXX    if ($Config::Config{archname} eq 'arm-linux') {
-#	eval 'use GPS::GarminX'; die $@ if $@;
-#    } else {
-	eval 'use GPS::Garmin'; die $@ if $@; # 0.12 plus
-#    }
+    eval 'use GPS::Garmin 0.13'; die $@ if $@;
 }
 
 BEGIN {

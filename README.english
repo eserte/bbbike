@@ -200,7 +200,7 @@ To execute BBBike on Unix, change to the bbbike directory and type
 
 in the shell. With a full KDE installation, there is an icon in the
 application menu item
-of the start menu. On Windows, there is also an start menu entry for
+of the start menu. On Windows, there is a start menu entry for
 BBBike.
 
 To switch the English language support, please set the LC_ALL,
@@ -231,6 +231,12 @@ L<http://www.radzeit.de/cgi-bin/bbbike.cgi/info=1>
 =head2 Command line version
 
 C<cbbbike> and C<cmdbbbike> are simpler command line versions of the program.
+
+=head1 DEVELOPMENT
+
+The current BBBike development may be tracked via CVS. Look at
+L<http://sourceforge.net/cvs/?group_id=19142> for instructions on how to use CVS. For direct access use
+the repository on C<:pserver:anonymous@cvs.bbbike.sourceforge.net:/cvsroot/bbbike> with user=anonymous and no password.
 
 =head1 DOCUMENTATION
 

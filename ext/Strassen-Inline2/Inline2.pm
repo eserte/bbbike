@@ -1,7 +1,7 @@
 # -*- c -*-
 
 #
-# $Id: Inline.pm,v 2.25 2003/11/16 21:12:03 eserte Exp $
+# $Id: Inline.pm,v 2.25 2003/11/16 21:12:03 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -485,7 +485,7 @@ void search_c(SV* self, char* from, char* to, ...) {
 		    same = 0;
 		    break;
 		  }
-		  {
+		  if (i > 0) {
 		    search_node *this_sn;
 		    tmp3 = hv_fetch(NODES, COORD_HV_VAL(this_node), COORD_HV_LEN(this_node), 0);
 		    this_sn = (search_node*)SvIV(*tmp3);

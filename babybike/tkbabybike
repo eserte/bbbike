@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: tkbabybike,v 2.33 2003/12/22 19:48:00 eserte Exp $
+# $Id: tkbabybike,v 2.35 2004/01/04 11:03:46 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package Tk::Babybike;
 
 use strict;
 use vars qw($VERSION $splash_screen $moduledir);
-$VERSION = sprintf("%d.%03d", q$Revision: 2.33 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 2.35 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     # FindBin and Cwd is not installed in the iPAQ dist
@@ -127,6 +127,12 @@ BEGIN {
 		  "$moduledir/lib",
 		  "$moduledir/data",
 		 );
+
+    # XXX for GPS...
+    if (-e "/tmp/prod.perl-GPS") {
+	eval 'use blib "/tmp/prod.perl-GPS"'; warn $@ if $@;
+    }
+
 }
 
 use Tk::CanvasUtil;
@@ -170,6 +176,7 @@ use vars qw($routing $context
 	    $pref_quality $cat_quality
 	    $continue_search @update_points
 	    @normal_strassen_datadirs $use_tiles @available_scopes
+	    %quality_item $max_tiles
 	   );
 
 @update_points =
@@ -201,7 +208,6 @@ $exact_streetchooser = 1;
 $use_tiles = 1;
 my($tilewidth,$tileheight)=(100,100); # XXX don't hardcode
 my $tiledir = "$moduledir/images/tiles"; # XXX
-my $max_tiles;
 
 ($centerx, $centery) = (14598,11245);
 
@@ -844,14 +850,17 @@ sub main_gui {
 }
 
 sub set_mark {
-    my($x,$y) = @_;
+    my($x,$y,$_c) = @_;
+    $_c = $c if !$_c;
     my $ps = 5; # polygon size
     my $ip = 1; # inner point
-    $c->coords("mark",
-	       $x+0,$y-$ps, $x+$ip,$y-$ip, $x+$ps,$y+0, $x+$ip,$y+$ip,
-	       $x+0,$y+$ps, $x-$ip,$y+$ip, $x-$ps,$y+0, $x+$ip,$y-$ip);
-    $c->raise("mark");
-    $c->see($x,$y);
+    $_c->coords("mark",
+		$x+0,$y-$ps, $x+$ip,$y-$ip, $x+$ps,$y+0, $x+$ip,$y+$ip,
+		$x+0,$y+$ps, $x-$ip,$y+$ip, $x-$ps,$y+0, $x+$ip,$y-$ip);
+    $_c->raise("mark");
+    if ($c eq $_c) { # XXX hack!!!
+	$_c->see($x,$y);
+    }
 }
 
 sub set_scope {
@@ -2115,7 +2124,7 @@ sub speak {
 }
 
 sub set_lat_long {
-    my($lat,$long) = @_;
+    my($lat,$long,%args) = @_;
     require Karte;
     Karte::preload(qw(Polar Standard));
     my($x,$y) = $Karte::map{"polar"}->map2standard($long,$lat);
@@ -2127,9 +2136,49 @@ sub set_lat_long {
 	die "The canvas $c does not exist";
     }
     # XXX combine these two:
-    set_mark($transpose->($x,$y));
+    my($tx,$ty) = $transpose->($x,$y);
+    set_mark($tx,$ty);
+    if ($args{-trail}) {
+	my $color = exists $args{-quality} && !$args{-quality} ? "#ffc0c0" : "red";
+	$c->createLine($tx,$ty,$tx+1,$ty,-fill => $color, -tags => ["trail"]);
+    }
+    if (exists $args{-quality}) {
+	set_quality_mark($args{-quality});
+    }
     if (Tk::Exists($zoom)) {
 	$zoom->center($x,$y);
+
+	# XXX draw trail (ack! ->delete in sub draw of BBBikeZoom!)
+	my $c = $zoom->Subwidget("Canvas");
+	my $transpose = $zoom->cget(-transpose);
+	set_mark($transpose->($x,$y),$c);
+    }
+}
+
+sub set_quality_mark {
+    my $quality = shift;
+    _set_quality_mark($quality);
+    if (Tk::Exists($zoom)) {
+	_set_quality_mark($quality, $zoom->Subwidget("Canvas"));
+    }
+}
+
+sub _set_quality_mark {
+    my($quality, $_c) = @_;
+    $_c = $c if !$_c;
+    my @bbox = $_c->bbox("mark");
+    return if !@bbox;
+    my $quality_item = $quality_item{$_c};
+    if (!defined $quality_item) {
+	$quality_item{$_c} = $quality_item
+	    = $_c->createText(0,0, -text => "?",
+			      -fill => "red", -anchor => "s");
+    }
+    if ($quality == 0) {
+	$_c->coords($quality_item, ($bbox[2]+$bbox[0])/2, $bbox[1]);
+	$_c->itemconfigure($quality_item, -state => "normal");
+    } else {
+	$_c->itemconfigure($quality_item, -state => "hidden");
     }
 }
 

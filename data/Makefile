@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.84 2003/09/02 22:31:19 eserte Exp $
+# $Id: Makefile,v 1.85 2004/01/04 00:31:33 eserte Exp $
 #
 
 MISCDIR=		../misc
@@ -41,6 +41,7 @@ all:	targets check .modified .rsync_include make_misc
 targets:	${TARGETS}
 
 # Useful checks, but normally too slow for a quick build
+# XXX merge with sort-Berlin.coords.data rule below?
 slow-checks:	inaccessible_strassen check-line-lengths check-dates
 	env LC_ALL=de_DE.ISO_8859-1 sort -c Berlin.coords.data || \
 	    ( env LC_ALL=de_DE.ISO_8859-1 sort Berlin.coords.data | diff -u - Berlin.coords.data; false )
@@ -449,13 +450,16 @@ check:	.check_strassen1 .check_strassen2 \
 .modified:	${TARGETS}
 	${MISCSRCDIR}/create_modified
 
+# XXX maybe create also a ".check_" rule
 sort-Berlin.coords.data:
 	mv Berlin.coords.data Berlin.coords.data~
 	env LC_ALL=de_DE.ISO_8859-1 sort < Berlin.coords.data~ > Berlin.coords.data
 
 # For adjusting the buffer in BBBikeXS.xs.
 # Please adjust the number according to MAXBUF and MAXPOINTS in BBBikeXS.xs.
-check-line-lengths:
+check-line-lengths:	.check_line_lengths
+
+.check_line_lengths:	$(TARGETS)
 	MAXLEN=`for i in $(TARGETS); do \
 	    perl -nle '$$max = length($$_) if length($$_) > $$max; END { print $$max }' < $$i; \
 	done | sort -nr | head -1`; \
@@ -464,15 +468,22 @@ check-line-lengths:
 	    perl -nle '$$points = scalar split / /; $$max = $$points if $$points > $$max; END { print $$max }' < $$i; \
 	done | sort -nr | head -1`; \
 	[ $$MAXPOINTS -lt 1024 ] || ( echo $$MAXPOINTS; exit 1 )
+	@touch $@
 
 count-streets:
 	cut -f1 -d"	" strassen | sort -u | wc -l
 
-check-dates:
-	${MISCSRCDIR}/check_dates *-orig
+check-dates:	.check_dates
 
-check-crossings:
-	${MISCSRCDIR}/check_crossings strassen brunnels
+.check_dates:	*-orig
+	${MISCSRCDIR}/check_dates $>
+	@touch $@
+
+check-crossings:	.check_crossings
+
+.check_crossings:	strassen brunnels
+	${MISCSRCDIR}/check_crossings $>
+	@touch $@
 
 GNUmakefile: Makefile ../miscsrc/b2gmake
 	../miscsrc/b2gmake < Makefile > GNUmakefile

@@ -1,5 +1,7 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.92 2003/12/22 19:38:35 eserte Exp $
+# $Id: Makefile.PL,v 1.95 2004/01/04 21:48:14 eserte Exp $
+
+use 5.005;
 
 BEGIN {
     $^W = 0;
@@ -306,7 +308,10 @@ WriteMakefile
      USE_AUTOSTART          => undef,
      HTML_DOCUMENTATION     => "bbbike.html",
      HOMEPAGE               => $BBBike::BBBIKE_WWW,
-     MODULE_EXT             => ['BBBikeXS', ($^O eq 'MSWin32' ? () : ('VirtArray')), 'Strassen-Inline'],
+     MODULE_EXT             => ['BBBikeXS', ($^O eq 'MSWin32' ? () : ('VirtArray')), 'Strassen-Inline', 'VectorUtil-Inline'],
+     # Not included in MODULE_EXT because of build problems (how to specify
+     # the needed PERL5LIB env variable?):
+     # 'Strassen-Inline2', 'StrassenNetz-CNetFile'
      EXTENSIONS             => ($0 eq '/usr/local/BBBike/install.pl' &&
 				$^O =~ /((free|net|open)bsd|bsdi)$/ ? 0 : 1),
      DESKTOP_ICON           => 1,

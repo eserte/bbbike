@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.14 2003/12/31 14:19:40 eserte Exp $
+# $Id: wapcgi.t,v 1.15 2004/01/04 21:54:41 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -13,22 +13,26 @@ use Getopt::Long;
 use File::Temp qw(tempfile);
 use URI;
 
+use vars qw($VERSION);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+
 BEGIN {
     if (!eval q{
-	use Test;
+	use Test::More;
 	1;
     }) {
 	print "1..0 # skip: no Test module\n";
 	exit;
     }
-    # XXX Image::Info does not recognize wbmp (really?)
-    #eval { use Image::Info qw(image_info) };
+
+    eval q{ use Image::Info qw(image_info) };
 }
 
 my $ua = new LWP::UserAgent;
-$ua->agent("BBBike-Test/1.0");
+$ua->agent("BBBike-Test/1.0 (wapcgi.t/$VERSION)");
 
 my @wap_url;
+my @hdrs;
 
 if (defined $ENV{BBBIKE_TEST_WAPURL}) {
     push @wap_url, $ENV{BBBIKE_TEST_WAPURL};
@@ -36,104 +40,136 @@ if (defined $ENV{BBBIKE_TEST_WAPURL}) {
     push @wap_url, $ENV{BBBIKE_TEST_CGIDIR} . "/wapbbbike.cgi";
 }
 
-if (!GetOptions("wapurl=s" => sub { @wap_url = $_[1] })) {
+if (!GetOptions("wapurl=s" => sub { @wap_url = $_[1] },
+	       )) {
     die "usage: $0 [-wapurl url]";
 }
 
 if (!@wap_url) {
     @wap_url = "http://www/bbbike/cgi/wapbbbike.cgi";
 }
+if (!@hdrs) {
+    @hdrs = (["wbmp", Accept => "text/vnd.wap.wml"],
+	     ["gif",  Accept => "text/vnd.wap.wml, image/gif"],
+	    );
+}
 
-plan tests => (24 + (defined &image_info ? 2 : 0)) * scalar @wap_url;
+plan tests => 26 * scalar @wap_url * scalar @hdrs;
 
 for my $wapurl (@wap_url) {
-    my $resp;
-    my $url;
+    for my $hdr (@hdrs) {
+	my @hdr = @$hdr;
+	my $desc = shift @hdr;
+	print "# $desc\n";
+	my $resp;
+	my $url;
 
-    my $absolute = sub {
-	my $relurl = shift;
-	URI->new_abs($relurl, $wapurl)->as_string;
-    };
+	my $absolute = sub {
+	    my $relurl = shift;
+	    URI->new_abs($relurl, $wapurl)->as_string;
+	};
 
-    $url = $wapurl;
-    $resp = $ua->get($url);
-    ok($resp->is_success, 1, $resp->as_string);
-    ok($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $url);
-    ok(!!validate_wml($resp->content), 1, $url);
-    for (qw(Start Ziel Bezirk)) {
-	ok($resp->content, qr/$_/, $url);
-    }
+	$url = $wapurl;
+	$resp = $ua->get($url, @hdr);
+	is($resp->is_success, 1, $url) or diag $resp->as_string;
+	like($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $url);
+	validate_wml($resp->content, $url);
+	for (qw(Start Ziel Bezirk)) {
+	    like($resp->content, qr/$_/, "$_ in $url?");
+	}
 
-    $url = "$wapurl?startname=duden&startbezirk=&zielname=sonntag&zielbezirk=";
-    $resp = $ua->get($url);
-    ok($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $url);
-    ok(!!validate_wml($resp->content), 1, $url);
-    ok($resp->content, qr/Dudenstr/, $url);
-    ok($resp->content, qr/Sonntagstr/, $url);
+	$url = "$wapurl?startname=duden&startbezirk=&zielname=sonntag&zielbezirk=";
+	$resp = $ua->get($url, @hdr);
+	like($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $url);
+	validate_wml($resp->content, $url);
+	like($resp->content, qr/Dudenstr/, "Dudenstr. in $url");
+	like($resp->content, qr/Sonntagstr/, "Sonntagstr. in $url");
 
-    my($surr_url) = $resp->content =~ /href=\"([^\"]+sess=[^\"]+)\"/;
-    ok(defined $surr_url && $surr_url ne "");
-    $surr_url = $absolute->($surr_url);
+	my($surr_url) = $resp->content =~ /href=\"([^\"]+sess=[^\"]+)\"/;
+	ok(defined $surr_url);
+	isnt($surr_url, "");
+	$surr_url = $absolute->($surr_url);
 
-    $url = "$wapurl?startname=Dudenstr.&startbezirk=Kreuzberg&zielname=Sonntagstr.&zielbezirk=Friedrichshain&output_as=imagepage";
-    $resp = $ua->get($url);
-    ok($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $url);
-    ok(!!validate_wml($resp->content), 1, $url);
+	$url = "$wapurl?startname=Dudenstr.&startbezirk=Kreuzberg&zielname=Sonntagstr.&zielbezirk=Friedrichshain&output_as=imagepage";
+	$resp = $ua->get($url, @hdr);
+	like($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $url);
+	validate_wml($resp->content, $url);
 
-    $url = "$wapurl?startname=Dudenstr.&startbezirk=Kreuzberg&zielname=Sonntagstr.&zielbezirk=Friedrichshain&output_as=image";
-    $resp = $ua->get($url);
-    ok(!!$resp->is_success, 1, $url)
-	or warn $resp->content;
-    ok($resp->header('Content_Type'), qr|^image/|, $url);
-    ok(length $resp->content > 0, 1, "No content: $url");
-    if (defined &image_info) {
-	ok(image_info($resp->content)->{file_media_type},
-	   $resp->header('Content_Type'));
-    } else {
-	skip("image_info not defined", 1);
-    }
+	$url = "$wapurl?startname=Dudenstr.&startbezirk=Kreuzberg&zielname=Sonntagstr.&zielbezirk=Friedrichshain&output_as=image";
+	$resp = $ua->get($url, @hdr);
+	is(!!$resp->is_success, 1, $url)
+	    or diag $resp->content;
+	like($resp->header('Content_Type'), qr|^image/|, $url);
+	is(length $resp->content > 0, 1, "Check for content in $url");
+	check_image($resp, $url);
 
-    $resp = $ua->get($surr_url);
-    ok($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $surr_url);
-    ok(!!validate_wml($resp->content), 1, $surr_url);
+	$resp = $ua->get($surr_url, @hdr);
+	like($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $surr_url);
+	validate_wml($resp->content, $surr_url);
+	my($surr_image_url) = $resp->content =~ /img.*src=\"([^\"]+sess[^\"]+)\"/;
+	ok(defined $surr_image_url);
+	isnt($surr_image_url, "");
+	$surr_image_url = $absolute->($surr_image_url);
 
-    my($surr_image_url) = $resp->content =~ /img.*src=\"([^\"]+sess[^\"]+)\"/;
-    ok(defined $surr_image_url && $surr_image_url ne "");
-    $surr_image_url = $absolute->($surr_image_url);
-
-    $resp = $ua->get($surr_image_url);
-    ok(!!$resp->is_success, 1, $surr_image_url);
-    ok($resp->header('Content_Type'), qr|^image/|, $surr_image_url);
-    ok(length $resp->content > 0, 1, "No content: $surr_image_url");
-    if (defined &image_info) {
-	ok(image_info($resp->content)->{file_media_type},
-	   $resp->header('Content_Type'));
-    } else {
-	skip("image_info not defined", 1);
+	$resp = $ua->get($surr_image_url, @hdr);
+	is(!!$resp->is_success, 1, $surr_image_url);
+	like($resp->header('Content_Type'), qr|^image/|, $surr_image_url);
+	is(length $resp->content > 0, 1, "Check for content in $surr_image_url");
+	check_image($resp, $surr_image_url);
     }
 }
 
 sub validate_wml {
-    my $wml = shift;
-    if (!is_in_path("xmllint")) {
-	warn "xmllint is not installed, skipping test...\n";
-	return 1;
+    my($wml, $url) = @_;
+ SKIP: {
+	skip("xmllint is not installed", 1) unless is_in_path("xmllint");
+
+	my $xml_catalog = "/home/e/eserte/src/bbbike/misc/xml-catalog";
+	my @xmllint_args;
+	if (!-e $xml_catalog) {
+	    ##XXX validate over the 'net
+	    #	warn "Cannot find $xml_catalog, skipping test...\n";
+	    #	return 1;
+	} else {
+	    push @xmllint_args, "--catalogs", "file://$xml_catalog";
+	}
+	$ENV{SGML_CATALOG_FILES} = "";
+	my($fh,$filename) = tempfile(UNLINK => 1);
+	print $fh $wml;
+	close $fh; # to avoid problems (flush?) with 5.00503
+	system("xmllint @xmllint_args $filename 2>&1 >/dev/null");
+	is($?, 0, "Validate correct wml in $url");
     }
-    my $xml_catalog = "/home/e/eserte/src/bbbike/misc/xml-catalog";
-    my @xmllint_args;
-    if (!-e $xml_catalog) {
-##XXX validate over the 'net
-#	warn "Cannot find $xml_catalog, skipping test...\n";
-#	return 1;
+}
+
+sub check_image {
+    my($resp, $url) = @_;
+    if ($resp->header('Content_Type') eq 'image/vnd.wap.wbmp') {
+	check_wbmp($resp->content, $url);
     } else {
-	push @xmllint_args, "--catalogs", "file://$xml_catalog";
+    SKIP: {
+	    skip("image_info not defined", 1) unless defined &image_info;
+	    is(image_info(\$resp->content)->{file_media_type},
+	       $resp->header('Content_Type'), "Validate image in $url");
+	}
     }
-    $ENV{SGML_CATALOG_FILES} = "";
-    my($fh,$filename) = tempfile(UNLINK => 1);
-    print $fh $wml;
-    close $fh; # to avoid problems (flush?) with 5.00503
-    system("xmllint @xmllint_args $filename 2>&1 >/dev/null");
-    $? == 0;
+}
+
+# Image::Info does not recognize wbmp (probably because of lack of
+# magic), so utilize ImageMagick to check for valid wbmp
+sub check_wbmp {
+    my($wbmp_content, $url) = @_;
+ SKIP: {
+	skip("ImageMagick is not installed", 1) unless is_in_path("convert");
+	my($wbmp_fh, $wbmp_file) = tempfile(UNLINK => 1,
+					    SUFFIX => ".wbmp");
+	my($png_fh, $png_file)   = tempfile(UNLINK => 1,
+					    SUFFIX => ".png");
+	print $wbmp_fh $wbmp_content;
+	close $wbmp_fh;
+	system("convert $wbmp_file $png_file");
+	is($?, 0, "Validate wbmp in $url");
+    }
 }
 
 # REPO BEGIN

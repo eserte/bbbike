@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMail.pm,v 1.11 2003/06/02 23:14:48 eserte Exp $
+# $Id: BBBikeMail.pm,v 1.12 2004/01/01 15:59:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -149,7 +149,7 @@ sub send_mail {
 	Mail::Mailer->VERSION(1.53);
 	my $msg = new Mail::Send Subject => $subject, To => $to;
 	$msg->add("MIME-Version", "1.0");
-	$msg->add("Content-Type", "text/plan; charset=ISO-8859-1");
+	$msg->add("Content-Type", "text/plain; charset=ISO-8859-1");
 	$msg->add("Content-Transfer-Enconding", "8bit");
 	my $fh = $msg->open;
 	print $fh $data;

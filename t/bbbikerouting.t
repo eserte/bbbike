@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.12 2003/12/31 14:19:40 eserte Exp $
+# $Id: bbbikerouting.t,v 1.13 2004/01/04 21:54:41 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -29,23 +29,25 @@ BEGIN {
     }
 }
 
-my $num_tests = 54; # basic number of tests
+my $num_tests = 60; # basic number of tests
 
-use vars qw($single $all $bench $v $do_xxx);
+use vars qw($single $all $common $bench $v $do_xxx);
 
 use vars qw($token %times $cmp_path
 	    $usexs $algorithm $usenetserver $usecache $cachetype);
 
+$common = 1;
 if (!GetOptions("full|slow|all" => sub { $all = 1 },
+		"single" => sub { $common = 0 },
 		"bench" => \$bench,
 		"v+" => \$v,
-
-		"usexs!" => \$usexs,
-		"algorithm=s" => \$algorithm,
-		"usenetserver!" => \$usenetserver,
-		"usecache!" => \$usecache,
-		"cachetype=s" => \$cachetype,
 		"xxx" => \$do_xxx,
+
+		"usexs!"        => sub { $common = 0; $usexs = $_[1] },
+		"algorithm=s"   => sub { $common = 0; $algorithm = $_[1] },
+		"usenetserver!" => sub { $common = 0; $usenetserver = $_[1] },
+		"usecache!"     => sub { $common = 0; $usecache = $_[1] },
+		"cachetype=s"   => sub { $common = 0; $cachetype = $_[1] },
 	       )) {
     die "usage!";
 }
@@ -59,40 +61,47 @@ if (defined $v && $v > 1) {
 
 system($^X, "$FindBin::RealBin/../miscsrc/bbbikestrserver", "-restart");
 
-if (!$all) {
-    plan tests => $num_tests;
-    if ($bench) {
-	my $t = timeit(1, 'do_tests()');
-	$times{$token} += $t->[$_] for (1..4);
-    } else {
-	do_tests();
+my @runs;
+
+if ($common) {
+    push @runs,
+	([1, 0, 1, "CDB_File", "A*"], # standard bbbike with compilation
+	 [1, 0, 1, "Storable", "A*"], # as above, without CDB_File
+	 [1, 0, 1, "CDB_File", "C-A*"], # standard bbbike with C-A* set
+	 [0, 0, 1, "Storable", "A*"], # standard bbbike without anything
+
+	 [1, 0, 1, "CDB_File", "A*"], # cgi on radzeit (?)
+
+	 [1, 0, 1, "CDB_File", "C-A*-2"], # radlstadtplan
+	);
+} elsif (!$all) {
+    push @runs, [$usexs, $usenetserver, $usecache,
+		 $cachetype, $algorithm];
+} else {
+    # run twice to get the cache effect!
+    my @cachetypes;
+    for (qw(CDB_File VirtArray Storable Data::Dumper)) {
+	if (eval "require $_; 1") {
+	    push @cachetypes, $_;
+	} else {
+	    warn "$_ is not available, not using as cache type\n";
+	}
     }
-    goto EXIT;
-}
 
-plan tests => $num_tests * 5 * 2 * 2 * 3;
-
-# run twice to get the cache effect!
-my @cachetypes;
-for (qw(CDB_File VirtArray Storable Data::Dumper)) {
-    if (eval "require $_; 1") {
-	push @cachetypes, $_;
-    } else {
-	warn "$_ is not available, not using as cache type\n";
-    }
-}
-
-for $usexs (0, 1) {
-    for $usenetserver (0, 1) {
-	for $usecache (0, 1) {
-	    my @trycache = $usecache ? @cachetypes : undef;
-	    for $cachetype (@trycache) {
-		for $algorithm ("C-A*-2", "C-A*", "A*") {
-		    if ($bench) {
-			my $t = timeit(1, 'do_tests()');
-			$times{$token} += $t->[$_] for (1..4);
-		    } else {
-			do_tests();
+    for $usexs (0, 1) {
+	for $usenetserver (0, 1) {
+	    for $usecache (0, 1) {
+		my @trycache = $usecache ? @cachetypes : undef;
+		for $cachetype (@trycache) {
+		    for $algorithm ("C-A*-2", "C-A*", "A*") {
+			# remove meaningless combinations:
+			if ($algorithm =~ /^C-A*/) {
+			    next if $usenetserver;
+			    # $usexs is probably meaningful, because of some
+			    # helper functions like strecke_XS
+			}
+			push @runs, [$usexs, $usenetserver, $usecache,
+				     $cachetype, $algorithm];
 		    }
 		}
 	    }
@@ -100,9 +109,25 @@ for $usexs (0, 1) {
     }
 }
 
+plan tests => $num_tests * @runs;
+
+for my $rundef (@runs) {
+    ($usexs, $usenetserver, $usecache, $cachetype, $algorithm)
+	= @$rundef;
+    if ($bench) {
+	my $t = timeit(1, 'do_tests()');
+	$times{$token} += $t->[$_] for (1..4);
+    } else {
+	if (@runs > 1) {
+	    print "# xs=$usexs netserver=$usenetserver cache=$usecache cachetype=$cachetype algorithm=$algorithm\n";
+	}
+	do_tests();
+    }
+}
+
+
 system($^X, "$FindBin::RealBin/../miscsrc/bbbikestrserver", "-stop");
 
-EXIT:
 if ($bench) {
     print STDERR join("\n",
 		      map { "$_: $times{$_}" }
@@ -128,7 +153,7 @@ sub do_tests {
     my $context = $routing->Context;
     _my_init_context($context);
 
-    if (!$all) {
+    if (!$all && $v) {
 	diag Dumper($context);
     }
     if ($do_xxx) { goto XXX }
@@ -207,6 +232,7 @@ sub do_tests {
 	ok($routing->RouteInfo->[-1]->{Whole} > $routing->RouteInfo->[-2]->{Whole}, "Distance Ok");
     }
 
+ XXX:
     {
 	my $routing2 = BBBikeRouting->new;
 	$routing2->init_context;
@@ -217,6 +243,36 @@ sub do_tests {
 	ok(scalar @{ $routing2->RouteInfo } > 1, "Non-empty route info");
 	is((grep { $_->{Street} =~ /kaiser.*wilhelm/i } @{$routing2->RouteInfo}),
 	   0, "Obeying one-way streets");
+
+	# Swapping start and goal:
+	$routing2->Start->reset;
+	$routing2->Goal->reset;
+	$routing2->Start->Street("Hauptstr/Eisenacher");
+	$routing2->Goal->Street("Kolonnenstr/Naumannstr");
+	$routing2->search;
+	ok(scalar @{ $routing2->RouteInfo } > 1, "Non-empty route info");
+	is((grep { $_->{Street} =~ /kaiser.*wilhelm/i } @{$routing2->RouteInfo}),
+	   1, "One-way in the right direction");
+
+	# completely blocked streets
+	$routing2->Start->reset;
+	$routing2->Goal->reset;
+	$routing2->Start->Street("Wexstr/Prinzregenten");
+	$routing2->Goal->Street("Hauptstr/Wexstr");
+	$routing2->search;
+	ok(scalar @{ $routing2->RouteInfo } > 1, "Non-empty route info");
+	is((grep { $_->{Street} =~ /wexstr/i } @{$routing2->RouteInfo}),
+	   0, "Obeying completely blocked streets");
+
+	# Wegfuehrung
+	$routing2->Start->reset;
+	$routing2->Goal->reset;
+	$routing2->Start->Street("Paderborner/Eisenzahn");
+	$routing2->Goal->Street("Düsseldorfer/Konstanzer");
+	$routing2->search;
+	ok(scalar @{ $routing2->RouteInfo } > 1, "Non-empty route info");
+	is((grep { $_->{Street} =~ /düsseldorfer/i } @{$routing2->RouteInfo}),
+	   0, "Obeying Wegfuehrung");
     }
 
     {
@@ -306,7 +362,6 @@ sub do_tests {
     ok(scalar @{ $routing->Path } > 0, "scope=wideregion test");
     ok(scalar @{ $routing->RouteInfo } > 0);
 
- XXX:
     {
 	my $routing2 = BBBikeRouting->new;
 	$routing2->init_context;

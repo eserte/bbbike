@@ -71,16 +71,16 @@ category applies only to the other direction.
 Other predefined categories are listed below. The category should not
 contain any spaces.
 
-   DRAFT: Change the category format to:
+   DRAFT (not yet in use!): Change the category format to:
 
-       &lt;cat&gt; = &lt;onewaycat&gt; : &lt;onewaycat&gt; |
+       &lt;cat&gt; = &lt;onewaycat&gt; ; &lt;onewaycat&gt; |
                &lt;onewaycat&gt;
 
        &lt;onewaycat&gt; = F=? &lt;basiccat&gt; (: &lt;attrkey&gt; (= &lt;attrval&gt;)?)*
 
-       &lt;basiccat&gt;  = [^:]+
-       &lt;attrkey&gt;   = [^:=]+
-       &lt;attrval&gt;   = [^:=]+
+       &lt;basiccat&gt;  = [^:;]+
+       &lt;attrkey&gt;   = [^:;=]+
+       &lt;attrval&gt;   = [^:;=]+
 
    Changes for data files:
      F:cat becomes F=cat

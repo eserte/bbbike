@@ -38,11 +38,13 @@ LWP::UserAgent	- für die WWW-Verbindungen (Stadtplan und Wetterbericht)
 
 Image::Magick	- für Bildmanipulationen beim Radar-Bild der FU
 
-CGI::MiniSvr	- für das persistente CGI-Programm XXX ist nicht mehr auf dem CPAN vorhanden!
-
-FCGI
-
 Apache::Session::DB_File	- optionale Session-Verwaltung für das CGI-Programm
+
+XML::SAX	- CPAN.pm kann XML::SAX nicht über XML::Simple automatisch installieren
+
+XML::Simple	- optional für XML-Dumps der BBBike-Route
+
+YAML	- optional für YAML-Dumps der BBBike-Route
 
 Mail::Send	- falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will
 
@@ -79,6 +81,22 @@ Pod::Usage	- für das Ausgeben der 'Usage' in einigen Entwicklungs-Tools
 Palm::PalmDoc	- für das Erzeugen von palmdoc-Dateien mit der Routenbeschreibung
 
 Astro::Sunrise	- Anzeige des Sonnenuntergangs/-aufgangs im Info-Fenster
+
+File::ReadBackwards	- LogTracker plugin
+
+Date::Calc	- LogTracker plugin
+
+XBase	- Erzeugen der Mapserver- oder anderer ESRI-Dateien
+
+IPC::Run	- hilft bei der sicheren Ausführung von externen Kommandos (insbesondere für Win32)
+
+Imager	- additional optional BBBikeDraw backend for PNG graphics
+
+SVG	- additional optional BBBikeDraw backend for SVG graphics
+
+Image::Info
+
+Test::More
 
 
 

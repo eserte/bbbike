@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.30 2003/12/22 19:23:08 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.32 2004/01/03 23:37:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -69,6 +69,13 @@ sub BBBikeRouting_Position_Class { 'BBBikeRouting::Position' }
 sub BBBikeRouting_Context_Class  { 'BBBikeRouting::Context'  }
 sub Strassen_Dataset_Class       { 'Strassen::Dataset'       }
 
+sub BBBikeRouting::Position::reset {
+    my $self = shift;
+    for my $member (keys %$BBBikeRouting::Position::Members) {
+	$self->$member(undef);
+    }
+}
+
 sub BBBikeRouting::LastVia {
     my $self = shift;
     if (ref $self->Via eq 'ARRAY') {
@@ -105,7 +112,7 @@ sub init_context {
     $context->Velocity(kmh2ms(20));
     $context->Scope("city");
     $context->UseXS(1);
-    $context->UseNetServer(1);
+    $context->UseNetServer(0);
     $context->UseCache(1);
     $context->PreferCache(0);
     $context->Algorithm("C-A*");
@@ -422,7 +429,7 @@ sub resolve_position {
 		}
 	    }
 	}
-	warn "Fallback to PLZ method with $streets[0]\n";
+	warn "Cannot find anything for @streets,\nfallback to PLZ method with $streets[0] only\n";
 	$street = $streets[0];
     }
 

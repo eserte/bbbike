@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.13 2003/12/22 19:38:45 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.13 2003/12/22 19:38:45 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -441,6 +441,22 @@ fbsdport-distfiles-link:
 
 fbsdportdiff: fbsdport
 	-cd $(TMPDIR); diff --new-file -u /usr/ports/german/BBBike BBBike > $(TMPDIR)/bbbike-freebsdport.diff
+
+VARPORTDIR=/var/tmp/BBBike
+TMPPORTDIR=$(TMPDIR)/BBBike
+
+# Taken form porters handbook, Automated package list creation
+fbsdport-pkg-plist-check: fbsdport
+	perl -le 'exit !(shift =~ m{^/var/tmp/})' ${VARPORTDIR}
+	rm -rf ${VARPORTDIR}
+	mkdir ${VARPORTDIR}
+	mtree -U -f /etc/mtree/BSD.local.dist -d -e -p ${VARPORTDIR}
+	cd ${TMPPORTDIR} && make clean depends PREFIX=${VARPORTDIR}
+	(cd ${VARPORTDIR} && find -d * -type d) > ${TMPDIR}/OLD-DIRS
+	cd ${TMPPORTDIR} && make install PREFIX=${VARPORTDIR}
+	(cd ${VARPORTDIR} && find -d * \! -type d) | sort > ${TMPDIR}/pkg-plist
+	(cd ${VARPORTDIR} && find -d * -type d) | comm -13 ${TMPDIR}/OLD-DIRS - | sed -e 's#^#@dirrm #' | perl -le 'print join "", sort { (length($$b) <=> length($$a)) || ($$b cmp $$a) } <>' >> ${TMPDIR}/pkg-plist
+	diff -u ${TMPPORTDIR}/pkg-plist ${TMPDIR}/pkg-plist
 
 WINBINDISTDIR=$(TMPDIR)/BBBike-$(VERSION)-Windows
 # XXX use another bbbike.bat/setup.bat if activeperl-613 would be used...

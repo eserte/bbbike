@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.15 2003/12/22 19:51:16 eserte Exp $
+# $Id: Makefile,v 1.17 2004/01/04 21:48:47 eserte Exp $
 #
 
 # XXX Installieren immer über *dieses* Makefile (wegen INLINE2DIST)!!!
@@ -11,24 +11,19 @@
 PERL?=perl
 INLINE2DIST=$(PERL) ../inline2dist.pl
 
-all:
+all:	clean build
 
-ext:	ext-bbbikexs \
-	ext-virtarray \
-	ext-strassennetz-cnetfile \
-	ext-strassen-inline \
-	ext-strassen-inline2 \
-	ext-vectorutil-inline
+ext:	clean build install
 
-ext-bbbikexs: ext-bbbikexs-clean ext-bbbikexs-build ext-bbbikexs-install
-ext-virtarray: ext-virtarray-clean ext-virtarray-build  ext-virtarray-install
+ext-bbbikexs:		ext-bbbikexs-clean ext-bbbikexs-build ext-bbbikexs-install
+ext-virtarray:		ext-virtarray-clean ext-virtarray-build  ext-virtarray-install
 ext-strassennetz-cnetfile: ext-strassennetz-cnetfile-clean ext-strassennetz-cnetfile-build  ext-strassennetz-cnetfile-install
-ext-strassen-inline: ext-strassen-inline-clean ext-strassen-inline-build  ext-strassen-inline-install
-ext-strassen-inline2: ext-strassen-inline2-clean ext-strassen-inline2-build  ext-strassen-inline2-install
-ext-vectorutil-inline: ext-vectorutil-inline-clean ext-vectorutil-inline-build  ext-vectorutil-inline-install
+ext-strassen-inline:	ext-strassen-inline-clean ext-strassen-inline-build  ext-strassen-inline-install
+ext-strassen-inline2:	ext-strassen-inline2-clean ext-strassen-inline2-build  ext-strassen-inline2-install
+ext-vectorutil-inline:	ext-vectorutil-inline-clean ext-vectorutil-inline-build  ext-vectorutil-inline-install
 
 ext-bbbikexs-clean:
-	-cd BBBikeXS && $(PERL) Makefile.PL && ${MAKE} clean
+	-cd BBBikeXS && $(PERL) Makefile.PL && ${MAKE} clean && rm -f Makefile.old
 
 ext-bbbikexs-build:
 	cd BBBikeXS && $(PERL) Makefile.PL && ${MAKE} ${.MAKEFLAGS}
@@ -41,7 +36,7 @@ ext-bbbikexs-install:
 
 
 ext-virtarray-clean:
-	-cd VirtArray && $(PERL) Makefile.PL && ${MAKE} clean
+	-cd VirtArray && $(PERL) Makefile.PL && ${MAKE} clean && rm -f Makefile.old
 
 ext-virtarray-build:
 	cd VirtArray && $(PERL) Makefile.PL && ${MAKE} ${.MAKEFLAGS}
@@ -54,7 +49,7 @@ ext-virtarray-install:
 
 
 ext-strassennetz-cnetfile-clean:
-	-cd StrassenNetz-CNetFile && $(PERL) Makefile.PL && ${MAKE} clean
+	-cd StrassenNetz-CNetFile && $(PERL) Makefile.PL && ${MAKE} clean && rm -f Makefile.old
 
 ext-strassennetz-cnetfile-build:
 	cd StrassenNetz-CNetFile && $(INLINE2DIST) StrassenNetz::CNetFile && $(PERL) Makefile.PL && rm -f Inline.inl && env PERL5LIB=../..:../../lib:$$PERL5LIB ${MAKE} ${.MAKEFLAGS}
@@ -67,7 +62,7 @@ ext-strassennetz-cnetfile-install:
 
 
 ext-strassen-inline-clean:
-	-cd Strassen-Inline && $(PERL) Makefile.PL && ${MAKE} clean
+	-cd Strassen-Inline && $(PERL) Makefile.PL && ${MAKE} clean && rm -f Makefile.old
 
 ext-strassen-inline-build:
 	cd Strassen-Inline && $(INLINE2DIST) Strassen::Inline && $(PERL) Makefile.PL && rm -f Inline.inl && ${MAKE} ${.MAKEFLAGS}
@@ -80,7 +75,7 @@ ext-strassen-inline-install:
 
 
 ext-strassen-inline2-clean:
-	-cd Strassen-Inline2 && $(PERL) Makefile.PL && ${MAKE} clean
+	-cd Strassen-Inline2 && $(PERL) Makefile.PL && ${MAKE} clean && rm -f Makefile.old
 
 ext-strassen-inline2-build:
 	cd Strassen-Inline2 && $(INLINE2DIST) Strassen::Inline2 && $(PERL) Makefile.PL && rm -f Inline.inl && ${MAKE} ${.MAKEFLAGS}
@@ -93,7 +88,7 @@ ext-strassen-inline2-install:
 
 
 ext-vectorutil-inline-clean:
-	-cd VectorUtil-Inline && $(PERL) Makefile.PL && ${MAKE} clean
+	-cd VectorUtil-Inline && $(PERL) Makefile.PL && ${MAKE} clean && rm -f Makefile.old
 
 ext-vectorutil-inline-build:
 	cd VectorUtil-Inline && $(INLINE2DIST) VectorUtil::Inline && $(PERL) Makefile.PL && rm -f Inline.inl && ${MAKE} ${.MAKEFLAGS}

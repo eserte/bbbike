@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.115 2003/12/22 19:41:26 eserte Exp eserte $
+# $Id: bbbike,v 3.117 2004/01/04 11:06:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -218,7 +218,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.115 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.117 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -287,7 +287,7 @@ $bbbike_route_ext = 'bbr';
 $str_draw{'s'} = 1;      # draw streets by default
 $p_draw{'pp'}  = 0;      # do not draw crossings by default
 $p_draw{"pp-all"} = 0;   # pp drawing only for the tag types below:
-$p_draw{"pp-$_"} = 1 for qw(s l r b u w f v e z fz); # this list should cover most keys of %str_file (but not the dependent ones like "comm" or "qs")
+for (qw(s l r b u w f v e z fz)) { $p_draw{"pp-$_"} = 1} # this list should cover most keys of %str_file (but not the dependent ones like "comm" or "qs")
 $p_draw{'lsa'} = 1;
 $p_far_away{'o'} = 0;
 $str_restrict{'s'}  = {qw(BAB 0 B 1 HH 1 H 1 N 1 NN 1 Pl 0 Br 0)}; # Pl = places, Br = bridges
@@ -2214,12 +2214,15 @@ sub do_iconframe {
 			    pending(1, 'replot-str-s');
 			},
 		       );
-    $strcm->checkbutton(-label => M"Straßennamen",
-			-variable => \$str_name_draw{'s'},
-			-command => sub {
-			    pending(1, 'replot-str-s');
-			},
-		       );
+    if ($os ne 'win' || $advanced) {
+	# No rotation on win possible.
+	$strcm->checkbutton(-label => M"Straßennamen",
+			    -variable => \$str_name_draw{'s'},
+			    -command => sub {
+				pending(1, 'replot-str-s');
+			    },
+			   );
+    }
     $strcm->checkbutton(-label => M"Straßenqualität",
 			-variable => \$str_draw{'qs'},
 			-command => sub { plot('str','qs') },
@@ -3007,6 +3010,13 @@ sub do_iconframe {
 			  -variable => \$route_arrowed,
 			  -command => \&redraw_path,
 			 );
+	if ($advanced && $devel_host) {
+	    $fbm->command(-label => "spezial gestrichelt",
+			  -command => sub {
+			      # XXX this functionality should probably go into addpoint_xy
+			      for ($c->find("withtag"=>"route"))  { $c->createLine($c->coords($_),-fill=>"black",-dash=>[1,3],-tags=>["route"],-width=>$c->itemcget($_,-width)) if $c->type($_) eq "line"}
+			  });
+	}
     }
 
     $sbm->command
@@ -3219,7 +3229,7 @@ sub do_iconframe {
 	penalty_menu($sb2m);
     }
 
-    menuright($search_button, $sb2m);
+    menuright($search_pref_button, $sb2m);
     menuarrow($sb2mb, $sb2m, $col++, -menulabel => M"Sucheinstellungen");
 
     #####
@@ -3374,74 +3384,6 @@ sub do_iconframe {
     my $svmb = $misc_frame2->Menubutton;
     my $svm = $svmb->Menu(-title => M"Exportieren",
 			  -disabledforeground => $save_button->cget(-foreground));
-    my $conv_sub = sub {
-	my($fmt) = @_;
-	my $outfile = $top->getSaveFile
-	    (-defaultextension => ".$fmt",
-	     -title => Mfmt('%s-Datei sichern', uc($fmt)),
-	     -initialdir => $save2_path);
-	return if !defined $outfile;
-	$save2_path = dirname $outfile;
-
-	$top->raise;
-	$top->update;
-
-	$top->Busy;
-	eval {
-	    my $in_fmt;
-	    my $tmpfile;
-	    my %args;
-
-	    if ($use_xwd_if_possible and
-		$fmt ne 'ps' and
-		is_in_path("xwd")) {
-		$tmpfile = "/tmp/bbbike.$$.xwd";
-		$tmpfiles{$tmpfile}++;
-		system("xwd", "-out", "$tmpfile", "-id", $c->id);
-		$top->bell;
-		$in_fmt = "xwd";
-		$args{-rotate} = -90 if $orientation eq 'portrait';
-
-	    } else {
-		$tmpfile = create_postscript($c,
-					     -colormode => 'color',
-					     -rotate => 1,
-					     -scale_a4 => 0,
-					    );
-		if (!defined $tmpfile) {
-		    die M"Temporäre Postscript-Datei kann nicht erstellt werden.";
-		}
-		$in_fmt = "ps";
-		$args{-rotate} = -90 if $orientation eq 'landscape';
-	    }
-
-	    if ($fmt eq 'ps') {
-		mv($tmpfile, $outfile);
-	    } else {
-		require GfxConvert;
-		# -mapcolor wandelt die Farbe der Nebenstraßen
-		# (tk: grey99/ps: 0.9 0.9 0.9) nach weiß um und setzt die
-		# Hintergrundfarbe von weiß auf die Hintergrundfarbe des
-		# Canvases
-		GfxConvert::convert
-		  ($in_fmt, $fmt, $tmpfile, $outfile,
-		   %args,
-		   -mapcolor => {'#e5e5e5' => '#ffffff',
-				 '#ffffff' => sprintf('#%04x%04x%04x',
-						      $c->rgb($c->cget(-background))),
-				},
-		   -res => $ps_image_res,
-		   -autocrop => 1,
-		  );
-		$tmpfiles{$tmpfile}++;
-	    }
-	};
-	if ($@) {
-	    status_message($@, 'err');
-	}
-	$top->Unbusy;
-    };
-
     $svm->command(-label => M('Karte speichern als').' ...',
 		  -state => "disabled",
 		  -font => $font{"bold"});
@@ -3454,7 +3396,7 @@ sub do_iconframe {
 		    ) {
 	$svm->command(-label => "$fmt->[0]",
 		      -command => sub {
-			  $svm->after(50, sub { $conv_sub->($fmt->[1]) });
+			  $svm->after(50, sub { export_visible_map($fmt->[1]) });
 		      });
     }
     $svm->separator;
@@ -4698,9 +4640,9 @@ sub define_item_attribs {
 	 'R'  => '#006000', 	# altes Farbschema
 	 #   'R'  => '#a00000',# neues Farbschema
 	);
-    $category_font_color{$_} = $category_font_color{"U"} for qw(UA UB U0);
-    $category_font_color{$_} = $category_font_color{"S"} for qw(SA SB SC S0);
-    $category_font_color{$_} = $category_font_color{"R"} for qw(RA RB RC R0);
+    for (qw(UA UB U0)) { $category_font_color{$_} = $category_font_color{"U"} }
+    for (qw(SA SB SC S0)) { $category_font_color{$_} = $category_font_color{"S"} }
+    for (qw(RA RB RC R0)) { $category_font_color{$_} = $category_font_color{"R"} }
     %category_font =
 	(
 	 'W'  => 'helvetica %d italic',
@@ -7857,10 +7799,12 @@ sub plotstr {
 	    $ignore = '^(' . join('|', map { quotemeta $_ } @ignore) . ")\$";
 	}
 	if ($] >= 5.005) {
+	    eval q{
 	    $restrict = qr/$restrict/
 		if defined $restrict;
 	    $ignore = qr/$ignore/
 		if defined $ignore;
+            }; die $@ if $@;
 	}
     }
 
@@ -10221,7 +10165,8 @@ sub show_info {
     }
     if ($comments_pos_net && $str_obj{"comm"}) {
 	eval {
-	    my(undef,undef,$first,$second) = nearest_line_points_mouse($c);
+	    my($first, $second);
+	    (undef,undef,$first,$second) = nearest_line_points_mouse($c);
 	    $first = join(",",@$first);
 	    $second = join(",",@$second);
 	    if (defined $first && defined $second &&
@@ -11676,10 +11621,10 @@ sub change_label_visibility {
     my @tags = qw(b-label u-label v-fg);
     if ($old_scale >= 1.5 && $new_scale <= 1.5) {
 	# make hidden
-	$c->itemconfigure($_, -state => "hidden") for @tags;
+	for (@tags) { $c->itemconfigure($_, -state => "hidden") }
     } elsif ($old_scale < 1.5 && $new_scale >= 1.5) {
 	# make visible
-	$c->itemconfigure($_, -state => "normal") for @tags;
+	for (@tags) { $c->itemconfigure($_, -state => "normal") }
     }
 }
 
@@ -15878,6 +15823,95 @@ sub optedit {
 	  ) : ()),
 	);
     $top->{GetoptEditor} = $opt_edit;
+}
+
+sub export_visible_map {
+    my($fmt, $outfile) = @_;
+
+    if (!defined $outfile) {
+	$outfile = $top->getSaveFile
+	    (-defaultextension => ".$fmt",
+	     -title => Mfmt('%s-Datei sichern', uc($fmt)),
+	     -initialdir => $save2_path);
+    }
+    return if !defined $outfile;
+    $save2_path = dirname $outfile;
+
+    $top->raise;
+    $top->update;
+
+    $top->Busy;
+    eval {
+	my $in_fmt;
+	my $tmpfile;
+	my $bgcolor = sprintf('#%02x%02x%02x', map { $_/256 } $c->rgb($c->cget(-background)));
+	my $NNcolor = sprintf('#%02x%02x%02x', map { $_/256 } $c->rgb($category_color{N}));
+	my %args =
+	    (-mapcolor =>
+	     {# Swap colors to avoid non-white background
+	      $bgcolor => '#ffffff',
+	      $NNcolor => $bgcolor,
+	     },
+	     -res => $ps_image_res,
+	     -autocrop => 1,
+	    );
+
+	if ($use_xwd_if_possible and
+	    $fmt ne 'ps' and
+	    is_in_path("xwd")) {
+
+	    $args{-rotate} = -90 if $orientation eq 'portrait';
+
+	    if ($fmt ne 'xwd') {
+		require GfxConvert;
+		GfxConvert::check($in_fmt, $fmt, $tmpfile, $outfile, %args);
+	    }
+
+	    $tmpfile = "/tmp/bbbike.$$.xwd";
+	    $tmpfiles{$tmpfile}++;
+	    system("xwd", "-out", "$tmpfile", "-id", $c->id);
+	    $top->bell;
+	    $in_fmt = "xwd";
+
+	} else {
+
+	    $args{-rotate} = -90 if $orientation eq 'landscape';
+
+	    if ($fmt ne 'ps') {
+		require GfxConvert;
+		GfxConvert::check($in_fmt, $fmt, $tmpfile, $outfile, %args);
+	    }
+
+	    $tmpfile = create_postscript($c,
+					 -colormode => 'color',
+					 -rotate => 1,
+					 -scale_a4 => 0,
+					);
+	    if (!defined $tmpfile) {
+		die M"Temporäre Postscript-Datei kann nicht erstellt werden.";
+	    }
+	    $in_fmt = "ps";
+	}
+
+	if ($fmt eq 'ps' || $fmt eq 'xwd') {
+	    mv($tmpfile, $outfile);
+	} else {
+	    require GfxConvert;
+	    # -mapcolor wandelt die Farbe der Nebenstraßen
+	    # (tk: grey99/ps: 0.9 0.9 0.9) nach weiß um und setzt die
+	    # Hintergrundfarbe von weiß auf die Hintergrundfarbe des
+	    # Canvases
+	    GfxConvert::convert
+		    ($in_fmt, $fmt, $tmpfile, $outfile,
+		     %args,
+		    );
+	    $tmpfiles{$tmpfile}++;
+	}
+    };
+    if ($@) {
+	status_message($@, 'err');
+    }
+    $top->Unbusy;
 }
 
 sub start_process {

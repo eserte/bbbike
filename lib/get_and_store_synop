@@ -22,6 +22,9 @@
 #  10384 32983 13401 10121 20102 30171 40231 52002 80001 333 30///
 #        55300 81076
 
+# XXX Zum Jahreswechsel ist das Datum am 31.12. um 23:00 falsch und
+# muss manuell geändert werden!
+
 use strict;
 
 # for user.cs.tu-berlin.de:

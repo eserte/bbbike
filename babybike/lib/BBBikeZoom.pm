@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeZoom.pm,v 1.14 2003/08/24 23:30:21 eserte Exp $
+# $Id: BBBikeZoom.pm,v 1.15 2004/01/02 00:29:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -155,6 +155,11 @@ sub draw {
     my($w,%args) = @_;
     my $c = $w->Subwidget("Canvas");
     $c->delete("all");
+
+    $c->createPolygon(0,0,
+		      -fill => undef, -outline => "red", -tags => "mark",
+		     );
+
     if ($args{-extents}) {
 	$w->{Extents} = [@{ $args{-extents} }];
     }

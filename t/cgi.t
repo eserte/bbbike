@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.20 2003/11/16 20:42:39 eserte Exp $
+# $Id: cgi.t,v 1.21 2004/01/04 21:54:41 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2003,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -39,6 +39,7 @@ my $fast = 0;
 my $ortsuche = 0; # XXX funktioniert nicht mehr
 my $do_display = 0;
 my $do_xxx;
+my $v = 0;
 
 my $ua = new LWP::UserAgent;
 $ua->agent("BBBike-Test/1.0");
@@ -50,8 +51,9 @@ if (!GetOptions("cgiurl=s" => sub {
 		"ortsuche!" => \$ortsuche,
 		"display!" => \$do_display,
 		"xxx" => \$do_xxx,
+		"v!" => \$v,
 	       )) {
-    die "usage: $0 [-cgiurl url] [-fast] [-ortsuche] [-display]";
+    die "usage: $0 [-cgiurl url] [-fast] [-ortsuche] [-display] [-v]";
 }
 
 if (!@urls) {
@@ -66,10 +68,13 @@ if (!@urls) {
 
 #plan tests => (108 + ($ortsuche ? 11 : 0)) * scalar @urls;
 
-my $hdrs = (defined &Compress::Zlib::memGunzip
-	    ? HTTP::Headers->new(Accept_Encoding => "gzip")
-	    : HTTP::Headers->new()
-	   );
+my $hdrs;
+if (defined &Compress::Zlib::memGunzip) {
+    $hdrs = HTTP::Headers->new(Accept_Encoding => "gzip");
+    warn "Accept gzip encoding\n" if $v;
+} else {
+    $hdrs = HTTP::Headers->new();
+}
 
 for my $cgiurl (@urls) {
     my $content;
@@ -339,7 +344,6 @@ for my $cgiurl (@urls) {
     }
 
     # Info page through pathinfo
-    XXX:
     {
 	my $req = new HTTP::Request
 	    (GET => "$action/info=1", $hdrs);
@@ -429,6 +433,7 @@ for my $cgiurl (@urls) {
 	ok($content =~ /^GIF8/) or diag $url;
     }
 
+    XXX:
     for my $imagetype (
 		       "gif", "png", "jpeg",
 		       "svg", "mapserver",

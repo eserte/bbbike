@@ -232,6 +232,13 @@ L<http://www.radzeit.de/cgi-bin/bbbike.cgi/info=1>
 Mit C<cbbbike> und C<cmdbbbike> existieren einfache Kommandozeilen-Versionen des
 Programms.
 
+=head1 ENTWICKLUNG
+
+Der aktuelle Entwicklungsstand von BBBike kann über CVS
+verfolgt werden. Eine Anleitung dazu befindet sich unter L<http://sourceforge.net/cvs/?group_id=19142>,
+direkt erreichbar ist das Repository über anonymous login (ohne
+Passwort) auf C<:pserver:anonymous@cvs.bbbike.sourceforge.net:/cvsroot/bbbike>.
+
 =head1 DOKUMENTATION
 
 Die L<Dokumentation|bbbike> liegt im POD-Format (plain old

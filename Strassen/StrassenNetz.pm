@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.33 2003/11/29 21:21:34 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.34 2004/01/03 21:17:05 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -184,10 +184,11 @@ sub make_sperre_1 {
 	    } elsif ($_ eq 'narrowpassage') {
 		$sperre_type{&BLOCKED_NARROWPASSAGE} = 1;
 	    } elsif ($_ eq 'all') {
-		$sperre_type{$_} = 1
-		    for (BLOCKED_ONEWAY, BLOCKED_ONEWAY_STRICT,
-			 BLOCKED_COMPLETE, BLOCKED_CARRY, BLOCKED_ROUTE,
-			 BLOCKED_NARROWPASSAGE);
+		for (BLOCKED_ONEWAY, BLOCKED_ONEWAY_STRICT,
+		     BLOCKED_COMPLETE, BLOCKED_CARRY, BLOCKED_ROUTE,
+		     BLOCKED_NARROWPASSAGE) {
+		    $sperre_type{$_} = 1;
+		}
 	    } else {
 		$sperre_type{$_} = 1;
 	    }
@@ -388,9 +389,9 @@ sub build_penalty_code {
                     if (defined $last_node) {
                         if (exists $blocked_net->{$last_node}{$next_node}) {
 			    my $cat = $blocked_net->{$last_node}{$next_node};
-			    if ($cat =~ /^' . BLOCKED_COMPLETE . '/) {
+			    if ($cat =~ /^(?:' . BLOCKED_COMPLETE . '|' . BLOCKED_ONEWAY . ')$/) {
 			        return 40_000_000; # nearly infinity
-			    } # XXX support for other categories missing
+			    } # XXX strict oneway?
 			} elsif (exists $blocked_net->{$next_node}{$last_node} &&
 				 $blocked_net->{$next_node}{$last_node} =~ /^' . BLOCKED_COMPLETE . '/) {
 			    return 40_000_000;
@@ -760,10 +761,12 @@ sub build_search_code {
                             $same = 0;
                             last;
                         }
-                        $this_node = $NODES{$this_node}->[PREDECESSOR];
-                        if (!defined $this_node) {
-                            $same = 0;
-                            last;
+			if ($i > 0) {
+                            $this_node = $NODES{$this_node}->[PREDECESSOR];
+                            if (!defined $this_node) {
+                                $same = 0;
+                                last;
+			    }
                         }
                     }
                     next CHECK_SUCCESSOR if $same;

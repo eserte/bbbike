@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GfxConvert.pm,v 1.11 2003/11/13 00:06:42 eserte Exp $
+# $Id: GfxConvert.pm,v 1.13 2004/01/03 01:07:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003 Slaven Rezic. All rights reserved.
@@ -16,20 +16,38 @@ package GfxConvert;
 
 use BBBikeUtil;
 use strict;
-use vars qw(%tmpfiles $VERBOSE %devices $pscap_called %convsub);
+use vars qw(%tmpfiles $VERBOSE %devices $pscap_called %convsub %checksub);
 
-%convsub =
-  ('ps' => { 'ppm'  => \&ps2ppm,
-	     'gif'  => \&ps2gif,
-	     'jpeg' => \&ps2jpeg,
-	     'png'  => \&ps2png,
-	   },
-   'xwd' => { 'ppm'  => \&xwd2ppm,
-	      'gif'  => \&xwd2gif,
-	      'jpeg' => \&xwd2jpeg,
-	      'png'  => \&xwd2png,
-	   },
-  );
+init();
+
+sub init {
+    no strict 'refs';
+
+    %convsub  = ();
+    %checksub = ();
+    for my $src (qw(ps xwd)) {
+	for my $dest (qw(ppm gif jpeg png)) {
+	    my $convsub = $src."2".$dest;
+	    if (defined &{$convsub}) {
+		$convsub{$src}->{$dest} = \&{$convsub};
+	    }
+	    my $checksub = $convsub . "_check";
+	    if (defined &{$checksub}) {
+		$checksub{$src}->{$dest} = \&{$checksub};
+	    }
+	}
+    }
+}
+
+sub check {
+    my($infmt, $outfmt, $infile, $outfile, %args) = @_;
+    my $checksub = $checksub{$infmt}->{$outfmt};
+    if (defined $checksub) {
+	$checksub->($infile, $outfile, %args);
+    } else {
+	1;
+    }
+}
 
 sub convert {
     my($infmt, $outfmt, $infile, $outfile, %args) = @_;
@@ -44,12 +62,16 @@ sub convert {
 ######################################################################
 # Postscript to anything
 #
+
+my $ppm_error_preamble = "Die PPM-Datei kann nicht erstellt werden. Grund: ";
+sub ps2ppm_check {
+    if (!is_in_path("gs")) {
+	die $ppm_error_preamble . "Ghostscript wird benötigt.";
+    }
+}
+
 sub ps2ppm {
     my($infile, $outfile, %args) = @_;
-    my $error_preamble = "Die PPM-Datei kann nicht erstellt werden. Grund: ";
-    if (!is_in_path("gs")) {
-	die $error_preamble . "Ghostscript wird benötigt.";
-    }
     my(@cmd) = (qw(gs -q -sDEVICE=ppmraw -DNOPAUSE));
     if ($args{-res}) {
 	push @cmd, "-r$args{-res}";
@@ -59,7 +81,7 @@ sub ps2ppm {
 		$infile);
     warn "Executing @cmd ..." if $VERBOSE;
     if (system(@cmd) != 0) {
-	die $error_preamble .
+	die $ppm_error_preamble .
 	    "Die Konvertierung mit gs fehlgeschlagen (exit: $?)";
     }
 
@@ -129,56 +151,75 @@ sub _ppm_post_transform {
     1;
 }
 
+my $gif_error_preamble = "Die GIF-Datei kann nicht erstellt werden. Grund: ";
+
+sub ps2gif_check {
+    my($infile, $outfile, %args) = @_;
+    if (!is_in_path("ppmtogif") || !is_in_path("ppmquant")) {
+	die $gif_error_preamble .
+	    "ppmtogif und ppmquant aus der netpbm-Distribution wird benötigt.\n";
+    }
+}
+
 sub ps2gif {
     my($infile, $outfile, %args) = @_;
-    my $error_preamble = "Die GIF-Datei kann nicht erstellt werden. Grund: ";
-    if (!is_in_path("ppmtogif")) {
-	die $error_preamble .
-	    "ppmtogif aus der netpbm-Distribution wird benötigt.\n";
-    }
     my $ppmfile = "/tmp/GfxConvert.$$.ppm";
     $tmpfiles{$ppmfile}++;
     ps2ppm($infile, $ppmfile, %args);
-    my @cmd = ( ["ppmtogif", $ppmfile], ">", $outfile );
+    my @cmd = ( ["ppmquant", 256, $ppmfile], "|", ["ppmtogif"], ">", $outfile );
     if (!run_command(@cmd)) {
-	die $error_preamble .
+	die $gif_error_preamble .
 	    "Konvertierung mit ppmtogif fehlgeschlagen (exit: $?)";
     }
     1;
 }
 
+my $jpeg_error_preamble = "Die JPEG-Datei kann nicht erstellt werden. Grund: ";
+
+sub ps2jpeg_check {
+    my($infile, $outfile, %args) = @_;
+    if (!is_in_path("cjpeg")) {
+	die $jpeg_error_preamble . "cjpeg aus der JPEG-Distribution wird benötigt.";
+    }
+}
+
 sub ps2jpeg {
     my($infile, $outfile, %args) = @_;
     my $quality = $args{-quality} || 70;
-    my $error_preamble = "Die JPEG-Datei kann nicht erstellt werden. Grund: ";
-    if (!is_in_path("cjpeg")) {
-	die $error_preamble . "cjpeg aus der JPEG-Distribution wird benötigt.";
-    }
     my $ppmfile = "/tmp/GfxConvert.$$.ppm";
     $tmpfiles{$ppmfile}++;
     ps2ppm($infile, $ppmfile, %args);
     my @cmd = (["cjpeg", "-quality", $quality, "$ppmfile"], ">", $outfile);
     if (!run_command(@cmd)) {
-	die $error_preamble .
+	die $jpeg_error_preamble .
 	    "Konvertierung mit cjpeg fehlgeschlagen (exit: $?)";
     }
     1;
+}
+
+my $png_error_preamble = "Die PNG-Datei kann nicht erstellt werden. Grund: ";
+
+sub ps2png_check {
+    my($infile, $outfile, %args) = @_;
+    if (!is_in_path("pnmtopng") && # XXX pnmtopng ist buggy????
+	!is_in_path("gs")) {
+	die $png_error_preamble . "Ghostscript oder pnmtopng wird benötigt.";
+    }
 }
 
 sub ps2png {
     my($infile, $outfile, %args) = @_;
     my $colormode = $args{-colormode} || 'color';
     my $depth     = $args{-depth} || 24;
-    my $error_preamble = "Die PNG-Datei kann nicht erstellt werden. Grund: ";
 
-    if (0 && is_in_path("pnmtopng")) { # XXX pnmtopng ist buggy????
+    if (is_in_path("pnmtopng")) { # XXX pnmtopng ist buggy????
 	my $ppmfile = "/tmp/GfxConvert.$$.ppm";
 	$tmpfiles{$ppmfile}++;
 	ps2ppm($infile, $ppmfile, %args);
 	my $cmd = "pnmtopng $ppmfile > $outfile";
 	warn "Executing $cmd ..." if $VERBOSE;
 	if (system($cmd) != 0) {
-	    die $error_preamble . 
+	    die $png_error_preamble .
 	      "Konvertierung mit pnmtopng fehlgeschlagen (exit: $?)";
 	}
 	return 1;
@@ -187,9 +228,6 @@ sub ps2png {
     # Wenn nicht, dann mit ghostscript versuchen. Allerdings werden hier
     # nicht die ganzen schönen Features wie crop etc. verwendet.
     # XXX überprüfen, ob gs png kann. und welches png.
-    if (!is_in_path("gs")) {
-	die $error_preamble . "Ghostscript wird benötigt.";
-    }
     my $dev;
     if ($colormode eq 'mono') {
 	$dev = 'pngmono';
@@ -213,7 +251,7 @@ sub ps2png {
 		$infile);
     warn "Executing @cmd ..." if $VERBOSE;
     if (system(@cmd) != 0) {
-	die $error_preamble .
+	die $png_error_preamble .
 	    "Die Konvertierung mit gs fehlgeschlagen (exit: $?)";
     }
     # XXX der ganze andere Wust aus ps2ppm fehlt hier...
@@ -223,6 +261,7 @@ sub ps2png {
 # Füllt das Hash %devices mit den eingebauten Devices von Ghostscript zurück.
 # Die Device-Namen sind in den Keys des Hashs enthalten.
 # XXX Wird noch nicht verwendet.
+# XXX Wie sieht die entsprechende check-Funktion aus?
 sub pscap {
     return if $pscap_called;
     $pscap_called++;
@@ -289,57 +328,76 @@ sub transform_image {
 ######################################################################
 # XWD to anything
 #
+
+sub xwd2ppm_check {
+    my($infile, $outfile, %args) = @_;
+    if (!is_in_path("xwdtopnm")) {
+	die $ppm_error_preamble . "xwdtopnm wird benötigt.";
+    }
+}
+
 sub xwd2ppm {
     my($infile, $outfile, %args) = @_;
-    my $error_preamble = "Die PPM-Datei kann nicht erstellt werden. Grund: ";
-    if (!is_in_path("xwdtopnm")) {
-	die $error_preamble . "xwdtopnm wird benötigt.";
-    }
     my $cmd = "xwdtopnm < $infile > $outfile";
     warn "Executing $cmd ..." if $VERBOSE;
     if (system($cmd) != 0) {
-	die $error_preamble .
+	die $ppm_error_preamble .
 	    "Die Konvertierung mit xwdtopnm fehlgeschlagen (exit: $?)";
     }
 
     return _ppm_post_transform($outfile, $outfile, %args);
 }
 
+sub xwd2gif_check {
+    my($infile, $outfile, %args) = @_;
+    if (!is_in_path("ppmtogif") || !is_in_path("ppmquant")) {
+	die $gif_error_preamble .
+	  "ppmtogif und ppmquant aus der netpbm-Distribution wird benötigt.\n";
+    }
+}
+
 sub xwd2gif {
     my($infile, $outfile, %args) = @_;
-    my $error_preamble = "Die GIF-Datei kann nicht erstellt werden. Grund: ";
-    if (!is_in_path("ppmtogif")) {
-	die $error_preamble .
-	  "ppmtogif aus der netpbm-Distribution wird benötigt.\n";
-    }
     my $ppmfile = "/tmp/GfxConvert.$$.ppm";
     $tmpfiles{$ppmfile}++;
     xwd2ppm($infile, $ppmfile, %args);
-    my @cmd = (["ppmtogif", $ppmfile], ">", $outfile);
+    my @cmd = (["ppmquant", 256, $ppmfile], "|", ["ppmtogif"], ">", $outfile);
     if (!run_command(@cmd)) {
-	die $error_preamble .
+	die $gif_error_preamble .
 	    "Konvertierung mit ppmtogif fehlgeschlagen (exit: $?)";
     }
     1;
+}
+
+sub xwd2jpeg_check {
+    my($infile, $outfile, %args) = @_;
+    if (!is_in_path("cjpeg")) {
+	die $jpeg_error_preamble . "cjpeg aus der JPEG-Distribution wird benötigt.";
+    }
 }
 
 sub xwd2jpeg {
     my($infile, $outfile, %args) = @_;
     my $quality = $args{-quality} || 70;
     my $error_preamble = "Die JPEG-Datei kann nicht erstellt werden. Grund: ";
-    if (!is_in_path("cjpeg")) {
-	die $error_preamble . "cjpeg aus der JPEG-Distribution wird benötigt.";
-    }
     my $ppmfile = "/tmp/GfxConvert.$$.ppm";
     $tmpfiles{$ppmfile}++;
     xwd2ppm($infile, $ppmfile, %args);
     my @cmd = (["cjpeg", "-quality", $quality, "$ppmfile"],
 	       ">", $outfile);
     if (!run_command(@cmd)) {
-	die $error_preamble .
+	die $jpeg_error_preamble .
 	    "Konvertierung mit cjpeg fehlgeschlagen (exit: $?)";
     }
     1;
+}
+
+sub xwd2png_check {
+    my($infile, $outfile, %args) = @_;
+    if (!is_in_path("pnmtopng") && # XXX pnmtopng ist buggy????
+	!is_in_path("gs")) {
+	die $png_error_preamble . "Ghostscript oder pnmtopng wird benötigt.";
+    }
 }
 
 sub xwd2png {
@@ -355,7 +413,7 @@ sub xwd2png {
 	my $cmd = "pnmtopng $ppmfile > $outfile";
 	warn "Executing $cmd ..." if $VERBOSE;
 	if (system($cmd) != 0) {
-	    die $error_preamble . 
+	    die $png_error_preamble . 
 	      "Konvertierung mit pnmtopng fehlgeschlagen (exit: $?)";
 	}
 	return 1;
@@ -366,9 +424,6 @@ sub xwd2png {
     # Wenn nicht, dann mit ghostscript versuchen. Allerdings werden hier
     # nicht die ganzen schönen Features wie crop etc. verwendet.
     # XXX überprüfen, ob gs png kann. und welches png.
-    if (!is_in_path("gs")) {
-	die $error_preamble . "Ghostscript wird benötigt.";
-    }
     my $dev;
     if ($colormode eq 'mono') {
 	$dev = 'pngmono';
@@ -392,7 +447,7 @@ sub xwd2png {
 		$infile);
     warn "Executing @cmd ..." if $VERBOSE;
     if (system(@cmd) != 0) {
-	die $error_preamble . 
+	die $png_error_preamble .
 	  "Die Konvertierung mit gs fehlgeschlagen (exit: $?)";
     }
     # XXX der ganze andere Wust aus ps2ppm fehlt hier...
