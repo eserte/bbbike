@@ -1,16 +1,16 @@
 =head1 BBBike: TODO
 
-Legende:
+Legend:
 
-  Schwierigkeit:
+  Challenge level:
 
     E: easy/fast to implement
     M: middle
     H: hard/time consuming to implement
 
-  Priorität von 1 (unwichtig) bis 5 (wichtig).
+  Priority from 1 (unimportant) to 5 (very important).
 
-=head2 Perl/Tk-Version von bbbike
+=head2 Perl/Tk version of bbbike
 
 =over
 
@@ -46,7 +46,7 @@ Ersteres könnte man machen, indem man einen Link bereitstellt, der das
 gleiche wie der submit-Button macht, nur mit Content-Disposition:
 attachment oder ähnlichem. Vielleicht nicht allzu schwer.
 
-=item * (E4)
+=item * (M4)
 
 Use the :by and :temporary directives in the data files (ampeln
 already done). Change some files which are using this information
@@ -855,10 +855,10 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
 
   0. Änderungen für Variante 1 und 2
     - Es wird in ein neues landstrassen-orig mit Hafas-Koordinatensystem
-      gewandelt
-    - BASE: landstrassen-orig => H
+      gewandelt: DONE!
+    - BASE: landstrassen-orig => H: DONE!
     - alle Punkte aus landstrassen-orig, die sich in anderen bbd-Dateien
-      befinden, müssen auch umgewandelt werden
+      befinden, müssen auch umgewandelt werden: DONE!
     - alle anderen Datentypen (insbesondere .bbr in ~/.bbbike) müssen auch
       umgewandelt werden
     - für vergessene Dateien muss es ein Skript geben, das die
@@ -869,12 +869,6 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
  
   2. Gesamte Datei umwandeln
     -
-
-  ODER!
-
-  genaue Daten werden mit H gekennzeichnet => keine Probleme bei der
-  Unterscheidung! Nur für neue Daten verwenden. Bei CONV in
-  data_converted ausklammern.
 
 =item dillo 0.7.x ist schon richtig gut --- kann imagemaps und tabellen
   für ipaq besorgen und dann endlich die alternative zu bbbike impl.!
@@ -898,14 +892,6 @@ Strassenliste zeigen.
 =item Preferences:
   - Stellung des Kopfsteinpflaster-/Ampelzeit-Buttons (nicht so wichtig)
   - evtl. die Möglichkeit des Rücksetzens (nicht so wichtig)
-
-=item temp blockings:
-  * beim Start von bbbike (options-gesteuert) die aktuellen Sperrungen
-    laden (load_user_dels mit $del_token gesetzt, <I>nfo sollte auf den 
-    Sperrungen funktionieren)
-  * Listbox mit Liste der Sperrungen (Name, Datum) zum Ein-/Ausschalten
-  * Evtl. eine weitere Zeit einführen: von-bis der Sperrung, von der
-    Warnzeit
 
 =item Inline modules => XS modules (less hassle with dependencies,
 faster compilation)
@@ -1089,7 +1075,7 @@ existieren!]
 =item * (M2)
 
 LandstraE<szlig>en: Gibt es Untersuchungen zur Verkehrsdichte?
-Recherchieren!
+Recherchieren! => Jan hat etwas gefunden (Aldi-Karten...)
 
 =back
 
@@ -1281,6 +1267,17 @@ mapserver/brb/brb-ipaq.map?
 Completion failure for E<quot>StrausbE<quot>. It should be
 Strausberger Platz (the first in list), but it is not completed when
 leaving the entry.
+
+=back
+
+=head2 Modules (Strassen/ESRI/...)
+
+=over
+
+=item * (M1)
+
+Sometime take a look at L<http://search.cpan.org/dist/Geo-Shapelib/>
+Only needed if my functions would be too slow one day.
 
 =back
 
