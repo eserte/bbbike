@@ -2,12 +2,13 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead.t,v 1.8 2003/12/19 08:28:10 eserte Exp $
+# $Id: cgihead.t,v 1.9 2004/04/20 14:41:49 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
 use FindBin;
+use File::Basename;
 
 BEGIN {
     if (!eval q{
@@ -21,10 +22,15 @@ BEGIN {
 
 use Getopt::Long;
 my $cgi_dir = $ENV{BBBIKE_TEST_CGIDIR} || "http://localhost/~eserte/bbbike/cgi";
+my $html_dir = $ENV{BBBIKE_TEST_HTMLDIR};
 
 if (!GetOptions("cgidir=s" => \$cgi_dir,
 	       )) {
     die "usage: $0 [-cgidir url]";
+}
+
+if (!defined $html_dir) {
+    $html_dir = dirname $cgi_dir;
 }
 
 my @prog = qw(bbbike.cgi
@@ -32,6 +38,18 @@ my @prog = qw(bbbike.cgi
 	      mapserver_comment.cgi
 	      wapbbbike.cgi
 	     );
+
+my @static = qw(html/bbbike.css
+		html/bbbikepod.css
+		html/bbbikeprint.css
+		html/bbbike_start.js
+		html/bbbike_result.js
+		html/pleasewait.html
+		html/presse.html
+		images/bg.jpg
+		images/abc.gif
+		images/ubahn.gif
+	       );
 
 use vars qw($mapserver_prog_url);
 $mapserver_prog_url = $ENV{BBBIKE_TEST_MAPSERVERURL};
@@ -44,7 +62,7 @@ if (defined $mapserver_prog_url) {
     diag("No URL for mapserv defined");
 }
 
-plan tests => scalar @prog;
+plan tests => scalar @prog + scalar @static;
 
 delete $ENV{PERL5LIB}; # override Test::Harness setting
 for my $prog (@prog) {
@@ -53,10 +71,22 @@ for my $prog (@prog) {
 	$qs = "?comment=cgihead+test";
     }
     my $absurl = ($prog =~ /^http:/ ? $prog : "$cgi_dir/$prog");
-    (my $safefile = $prog) =~ s/[^A-Za-z0-9._-]/_/g;
-    system("HEAD -H 'User-Agent: BBBike-Test/1.0' $absurl$qs > /tmp/head.$safefile.log");
-    is($?, 0, $absurl);
+    check_url("$absurl$qs", $prog);
 }
 
+for my $static (@static) {
+    my $url = "$html_dir/$static";
+    check_url($url);
+}
+
+sub check_url {
+    my($url, $prog) = @_;
+    if (!defined $prog) {
+	$prog = basename $url;
+    }
+    (my $safefile = $prog) =~ s/[^A-Za-z0-9._-]/_/g;
+    system("HEAD -H 'User-Agent: BBBike-Test/1.0' $url > /tmp/head.$safefile.log");
+    is($?, 0, $url);
+}
 
 __END__
