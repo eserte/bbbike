@@ -1,6 +1,6 @@
 .CURDIR?=	${CURDIR}
 #
-# $Id: Makefile,v 1.17 2004/01/04 21:48:47 eserte Exp $
+# $Id: Makefile,v 1.19 2004/01/13 18:40:02 eserte Exp $
 #
 
 # XXX Installieren immer über *dieses* Makefile (wegen INLINE2DIST)!!!
@@ -56,7 +56,7 @@ ext-strassennetz-cnetfile-build:
 	cd StrassenNetz-CNetFile && $(INLINE2DIST) StrassenNetz::CNetFile && $(PERL) Makefile.PL && rm -f Inline.inl && env PERL5LIB=../..:../../lib:$$PERL5LIB ${MAKE} -${MAKEFLAGS}
 
 ext-strassennetz-cnetfile-test:
-	cd StrassenNetz-CNetFile && env PER5LLIB=../..:../../lib:$$PERL5LIB ${MAKE} -${MAKEFLAGS} test
+	cd StrassenNetz-CNetFile && env PERL5LIB=../..:../../lib:$$PERL5LIB ${MAKE} -${MAKEFLAGS} test
 
 ext-strassennetz-cnetfile-install:
 	cd StrassenNetz-CNetFile && ${MAKE} -${MAKEFLAGS} install
@@ -95,7 +95,7 @@ ext-vectorutil-inline-build:
 	cd VectorUtil-Inline && $(INLINE2DIST) VectorUtil::Inline && $(PERL) Makefile.PL && rm -f Inline.inl && ${MAKE} -${MAKEFLAGS}
 
 ext-vectorutil-inline-test:
-	cd VectorUtil-Inline && ${MAKE} -${MAKEFLAGS} test
+	cd VectorUtil-Inline && env BATCH=yes ${MAKE} -${MAKEFLAGS} test
 
 ext-vectorutil-inline-install:
 	cd VectorUtil-Inline && ${MAKE} -${MAKEFLAGS} install
