@@ -25,6 +25,7 @@ use lib ("$FindBin::RealBin",
 	);
 use BBBikeTest;
 
+# See also: https://rt.cpan.org/NoAuth/Bug.html?id=9268
 sub WWW::Mechanize::_image_from_token {
     my $self = shift;
     my $token = shift;
@@ -172,7 +173,8 @@ if (!GetOptions(get_std_opts("cgiurl", "xxx", "display", "debug"),
 			last;
 		    }
 		}
-		ok($img_href, "Image URL found");
+		ok($img_href, "Image URL found") or
+		    diag "No image among " . scalar(@images) . " image objects";
 		
 		$agent->get($img_href);
 		like($agent->ct, qr{^image/}, "It's an image (png or gif)");
