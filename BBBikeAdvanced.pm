@@ -977,7 +977,7 @@ sub advanced_coord_menu {
 	    $ausm->radiobutton(-label => $name,
 			       -variable => \$coord_output,
 			       -value => $_,
-			       -command => \&set_coord_output_sub,
+			       -command => sub { set_coord_output_sub() },
 			       );
 	    if ($_ eq 'canvas') {
 		my $index = $ausm->index('last');

@@ -4,7 +4,7 @@
 # $Id: BBBikeGlobalVars.pm,v 1.12 2004/01/13 18:30:38 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,6 +13,9 @@
 #
 
 package BBBikeGlobalVars;
+
+use vars qw($VERSION);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.012 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -24,7 +27,7 @@ use vars
      $VERSION $PROG_REVISION $tmpdir %tmpfiles $progname
      $os $win32s $sfn $use_clipboard $verbose $advanced $devel_host
      $datadir $no_original_datadir $city $citypkg $country
-     $top %toplevel %processes $transient $c $top_dpi $top_dpmm @want_extends
+     $top %toplevel %processes $transient $c $sx $sy $top_dpi $top_dpmm @want_extends
      $small_icons $is_handheld
      @scrollregion $init_scrollregion $normal_scrollregion $scrollre
      $K2Listbox
@@ -143,7 +146,7 @@ use vars qw($hs_check $plzmcmd $ampelstatus_label
 	    $cache_decider_time $min_cache_decider_time $use_smooth_scroll
 	    $use_balloon $use_c_balloon $c_balloon_wait
 	    $balloon $c_balloon $leave_after $ch
-	    $map_color $steady_mark $lowmem $slowcpu
+	    $map_bg $map_color $steady_mark $lowmem $slowcpu
 	    $use_contexthelp $use_logo $use_dialog
 	    $center_on_str $center_on_coord
 	    $center_loaded_route $zoom_loaded_route

@@ -5,7 +5,7 @@
 # $Id: bbbike,v 3.123 2004/01/21 23:42:29 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -161,7 +161,7 @@ use Msg; # This call has to be in bbbike!
     }
 }
 
-use BBBikeGlobalVars;
+use BBBikeGlobalVars 1.012;
 
 # XXX move to BBBikeGlobalVars?
 # Map modes
@@ -283,6 +283,7 @@ $normal_scrollregion = $init_scrollregion*$scale;
 @scrollregion = ((-$normal_scrollregion) x 2,
 		 ($normal_scrollregion)  x 2);
 $bbbike_route_ext = 'bbr';
+$map_bg = 'grey85';
 
 # Var section: street and point attributes
 $str_draw{'s'} = 1;      # draw streets by default
@@ -1225,21 +1226,28 @@ if (!defined $top) {
     if ($os eq 'win') { # vorerst, Windows kann keine tearoffs
 	$top->optionAdd("*tearOff", "false", "startupFile");
     }
-    for (qw(background highlightBackground)) {
-	$top->optionAdd("*$_", 'grey80', 'startupFile');
-    }
-    for (qw(Balloon CanvasBalloon)) {
-	$top->optionAdd("*$_.background", '#C0C080', 'startupFile');
+    if ($os ne 'win') { # use standard bg color on Windows
+	for (qw(background highlightBackground)) {
+	    $top->optionAdd("*$_", 'grey80', 'startupFile');
+	}
+	# Unter Windows sind Balloons eigentlich -bg => white
+	for (qw(Balloon CanvasBalloon)) {
+	    $top->optionAdd("*$_.background", '#C0C080', 'startupFile');
+	}
+	for (qw(Scale Scrollbar)) {
+	    $top->optionAdd("*$_.troughcolor", "grey95", "startupFile");
+	}
     }
     # Browse is for Tk::HistEntry::Browse
     for (qw(Browse Entry NumEntry Date*NumEntryPlain PathEntry
 	    Listbox KListbox K2Listbox
 	    TixHList HList Text ROText BrowseEntry.Entry SimpleHistEntry
 	   )) {
-	$top->optionAdd("*$_.background", "grey95", "startupFile");
-    }
-    for (qw(Scale Scrollbar)) {
-	$top->optionAdd("*$_.troughcolor", "grey95", "startupFile");
+	if ($os eq 'win') {
+	    $top->optionAdd("*$_.background", "SystemWindow", "startupFile");
+	} else {
+	    $top->optionAdd("*$_.background", "grey95", "startupFile");
+	}
     }
     for (qw(Button Checkbutton Radiobutton Menubutton
 	    FlatCheckbox FlatRadiobutton FireButton)) {
@@ -1286,6 +1294,7 @@ $focus_policy = 'click' if $exceed;
 if (!defined $focus_policy) {
     if ($os eq 'unix') {
 	## XXX Problem: Fenster erscheinen manchmal abgeschnitten wegen
+	## XXX still in 804?
 	## -popover => 'cursor'
 	#XXX $focus_policy = 'follow';
 	$focus_policy = 'click';
@@ -1991,16 +2000,18 @@ if ($flat_relief) {
     eval { require Tk::FlatCheckbox };
     if (!$@) {
 	$Checkbutton = 'FlatCheckbox';
-	$top->optionAdd('*FlatCheckbox*background' => 'grey80',
-			"startupFile");
-	#$top->optionAdd('*FlatCheckbox*raiseOnEnter' => 1,#XXX???
-	#		"startupFile"); # ist noch nicht so schön...
+	if ($os ne 'win') {
+	    $top->optionAdd('*FlatCheckbox*background' => 'grey80',
+			    "startupFile");
+	}
     }
     eval { require Tk::FlatRadiobutton };
     if (!$@) {
 	$Radiobutton = 'FlatRadiobutton';
-	$top->optionAdd('*FlatRadiobutton*background' => 'grey80',
-			"startupFile");
+	if ($os ne 'win') {
+	    $top->optionAdd('*FlatRadiobutton*background' => 'grey80',
+			    "startupFile");
+	}
     }
 }
 
@@ -2073,6 +2084,7 @@ sub do_iconframe {
 			  -column => 0,
 			  -sticky => 'nsew');
     }
+    $misc_frame->gridColumnconfigure(999, -weight => 1); # force buttons to the left
     $col = 0;
 ##### Straßen #####
     $strasse_photo = load_photo($misc_frame, 'strasse.' . $default_img_fmt);
@@ -4107,7 +4119,8 @@ sub arrange_topframe {
 sub arrange_symframe {
     my($old_row, $new_row);
     return unless $misc_frame2 || $DockFrame eq 'DockFrame';
-    if (grep($_ eq $misc_frame2, $misc_frame2->parent->gridSlaves)) {
+    my $p = $misc_frame2->parent;
+    if (grep($_ eq $misc_frame2, $p->gridSlaves)) {
 	# already gridded
 	my %a = $misc_frame2->gridInfo;
 	$old_row = $a{-row};
@@ -4116,13 +4129,16 @@ sub arrange_symframe {
 	$misc_frame2->idletasks;
     }
     my $new_col;
+    my $is_two_row;
     if ($misc_frame->reqwidth + $misc_frame2->reqwidth + 10
 	> $top->width) {
 	$new_row = 1;
 	$new_col = 0;
+	$is_two_row = 1;
     } else {
 	$new_row = 0;
 	$new_col = 1;
+	$is_two_row = 0;
     }
     if (!defined $old_row || $old_row != $new_row) {
 	if (defined $old_row) {
@@ -4131,6 +4147,38 @@ sub arrange_symframe {
 	$misc_frame2->grid(-row => $new_row,
 			   -column => $new_col,
 			   -sticky => 'nsw');
+    }
+
+    # Maybe remove borders between two frames
+    if ($os eq 'unix' && $devel_host) { # not tested yet on Windows XXX
+	my $lf = $p->Subwidget("HideLeftBorder");
+	my $lc = $p->Subwidget("HideLeftCorner");
+	my $rf = $p->Subwidget("HideRightBorder");
+	if (!$is_two_row) {
+	    if (!Tk::Exists($rf)) {
+		$rf = $misc_frame->Frame(-bg => $misc_frame->cget(-bg));
+		$p->Advertise("HideRightBorder" => $rf);
+	    }
+	    if (!Tk::Exists($lf)) {
+		$lf = $misc_frame2->Frame(-bg => $misc_frame->cget(-bg));
+		$p->Advertise("HideLeftBorder" => $lf);
+	    }
+	    if (!Tk::Exists($lc)) {
+		$lc = $misc_frame2->Frame
+		    (-bd => 0, -bg => $misc_frame->Darken($misc_frame->cget(-bg), 60));
+		$p->Advertise("HideLeftCorner" => $lc);
+	    }
+	    $lf->place(-rely => 0, -relx => 0, -x => -1,
+		       -width => 1, -relheight => 1);
+	    $lc->place(-rely => 1, -relx => 0, -x => -1,
+		       -width => 1, -height => 1);
+	    $rf->place(-rely => 0, -relx => 1,
+		       -width => 1, -relheight => 1);
+	} else {
+	    for my $w ($rf, $lf, $lc) {
+		$w->placeForget if Tk::Exists($w) && $w->manager eq 'place';
+	    }
+	}
     }
 }
 
@@ -4154,7 +4202,7 @@ $canvas_frame->gridRowconfigure(0, -weight => 1);
 
 $c = $canvas_frame->Canvas
   (Name => 'karte',
-   -bg => 'grey85',   # XXX siehe oben bei der $top-Farbe
+   -bg => $map_bg,
    -closeenough => 3, # XXX hmmm ... manchmal gut, manchmal schlect
    -scrollregion => \@scrollregion,
    #-xscrollincrement => 4, -yscrollincrement => 4,
@@ -4162,15 +4210,15 @@ $c = $canvas_frame->Canvas
 $c->{Configure}{-seeview} = \&Tk::Canvas::smooth_scroll;
 #XXX$c->BindMouseWheel if defined &Tk::Widget::BindMouseWheel;
 
-my $sy = $canvas_frame->Scrollbar(-command => ["yview", $c],
-				  -takefocus => 0,
-				  -highlightthickness => 0,
-				 );
-my $sx = $canvas_frame->Scrollbar(-orient => "horiz",
-				  -command => ["xview", $c],
-				  -takefocus => 0,
-				  -highlightthickness => 0,
-				 );
+$sy = $canvas_frame->Scrollbar(-command => ["yview", $c],
+			       -takefocus => 0,
+			       -highlightthickness => 0,
+			      );
+$sx = $canvas_frame->Scrollbar(-orient => "horiz",
+			       -command => ["xview", $c],
+			       -takefocus => 0,
+			       -highlightthickness => 0,
+			      );
 
 $c->configure(-yscrollcommand =>
 	      sub { $sy->set(@_);
@@ -5781,16 +5829,23 @@ sub set_bindings {
 
     $top->protocol('WM_DELETE_WINDOW', \&exit_app_noninteractive);
     my($old_width, $old_height);
+    my $in_configure_event;
     $top->bind('<Configure>' => sub {
 		   my $e = $top->XEvent;
-		   return if !$e;
-		   if (!defined $old_width || $old_width != $e->w ||
-		       !defined $old_height || $old_height != $e->h) {
-		       arrange_symframe();
-		       arrange_topframe();
-		       $old_width = $e->w;
-		       $old_height = $e->h;
-		   }
+		   return if !$e || $in_configure_event;
+		   $in_configure_event++;
+		   eval {
+		       if (!defined $old_width || $old_width != $e->w ||
+			   !defined $old_height || $old_height != $e->h) {
+			   arrange_symframe();
+			   arrange_topframe();
+			   $old_width = $e->w;
+			   $old_height = $e->h;
+		       }
+		   };
+		   my $err = $@;
+		   $in_configure_event--;
+		   die $err if $err;
 	       });
 
     $top->bind("<<CloseMainWin>>" => \&exit_app);
@@ -6083,30 +6138,40 @@ sub draw_street_numbers {
     my($type,$nr) = Strasse::parse_street_type_nr($strname);
     if (defined $type) {
 	my $dist = 0;
+	my $drawn = 0;
+	my $draw_sub = sub {
+	    my $coord_i = shift;
+	    my($midx,$midy) = Strassen::Util::middle(@{$coordlist_ref}[$coord_i..$coord_i+3]);
+	    my $item = $c->createText
+		($midx,$midy,-text => ($type =~ /^(B|BAB)$/ ? "" : $type) . $nr,
+		 -fill => ($type eq 'BAB' ? 'white' :
+			   ($type =~ /^(F|R)$/ ? 'green4' :
+			    'black')),
+		 -tags => "$abk-label");
+	    my(@bbox) = $c->bbox($item);
+	    my $r_item = $c->createRectangle
+		($bbox[0]-2,$bbox[1]-2,$bbox[2]+2,$bbox[3]+2,
+		 -fill => ($type eq 'B' ? 'yellow' :
+			   ($type eq 'BAB' ? 'blue' :
+			    'white')),
+		 -outline => ($type eq 'BAB' ? 'white' :
+			      ($type =~ /^(F|R)$/ ? 'green4' : 'black')),
+		 -width => 2,
+		 -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
+		);
+	    $c->raise($item,$r_item);
+	    $dist = 0;
+	    $drawn++;
+	};
+
 	for(my $ci=2; $ci<$#$coordlist_ref; $ci+=2) {
 	    $dist += Strassen::Util::strecke([@{$coordlist_ref}[$ci-2,$ci-1]], [@{$coordlist_ref}[$ci,$ci+1]]);
 	    if ($dist >= 400) { # should be in the magnitude of canvas height
-		my($midx,$midy) = Strassen::Util::middle(@{$coordlist_ref}[$ci-2..$ci+1]);
-		my $item = $c->createText
-		    ($midx,$midy,-text => ($type =~ /^(B|BAB)$/ ? "" : $type) . $nr,
-		     -fill => ($type eq 'BAB' ? 'white' :
-			       ($type =~ /^(F|R)$/ ? 'green4' :
-				'black')),
-		     -tags => "$abk-label");
-		my(@bbox) = $c->bbox($item);
-		my $r_item = $c->createRectangle
-		    ($bbox[0]-2,$bbox[1]-2,$bbox[2]+2,$bbox[3]+2,
-		     -fill => ($type eq 'B' ? 'yellow' :
-			       ($type eq 'BAB' ? 'blue' :
-				'white')),
-		     -outline => ($type eq 'BAB' ? 'white' :
-				  ($type =~ /^(F|R)$/ ? 'green4' : 'black')),
-		     -width => 2,
-		     -tags => "$abk-label-bg",
-		    );
-		$c->raise($item,$r_item);
-		$dist = 0;
+		$draw_sub->($ci-2);
 	    }
+	}
+	if (!$drawn) {
+	    $draw_sub->(int($#$coordlist_ref/4)*2); # XXX ueberdenken
 	}
     }
 }
@@ -7596,6 +7661,8 @@ sub print_function {
 	}
 	return;
     }
+
+    return if slow_postscript_generation();
 
     my $tmpfile = create_postscript
 	($c,
@@ -10370,10 +10437,14 @@ sub show_info {
 
 	$info_text->delete("1.0", "end");
 	$info_text->insert("1.0", $txt);
+	my $comment_label_end_index;
 	if (@comments) {
-	    $comments[0] = "Kommentare:\t$comments[0]";
-	    @comments[1..$#comments] = map { "\t$_" } @comments[1..$#comments];
-	    $info_text->insert("end", "\n\n" . join("\n", @comments));
+	    $info_text->insert("end", "\n\n" . M("Kommentare").": ");
+	    $comment_label_end_index = $info_text->index("end - 1c");
+	    $info_text->insert("end", join("\n", @comments), "comments_text");
+#XXXdel:	    $comments[0] = "Kommentare:\t$comments[0]";
+#	    @comments[1..$#comments] = map { "\t$_" } @comments[1..$#comments];
+#	    $info_text->insert("end", "\n\n" . join("\n", @comments));
 	}
 	if (defined $area) {
 	    $info_text->insert("end", sprintf "\n\nFläche:\t%.2f km²", $area); # XXX Msg
@@ -10434,7 +10505,10 @@ sub show_info {
 	    $linkcount++;
 	}
 
-	if (eval { require Astro::Sunrise; Astro::Sunrise->VERSION(0.85) }) {
+	eval {
+	    require Astro::Sunrise;
+	    Astro::Sunrise->VERSION(0.85);
+
 	    my $get_sun_rise = sub {
 		my $alt = shift;
 		Astro::Sunrise::sun_rise($px,$py, $alt);
@@ -10469,7 +10543,8 @@ Dämmerung bis:
   astronomische:	$sunset_astro
 
 EOF
-	}
+	};
+	warn $@ if $@;
 
 	if (defined &show_info_ext) {
 	    eval {
@@ -10479,6 +10554,15 @@ EOF
 		}
 	    };
 	    warn $@ if $@;
+	}
+
+	if (defined $comment_label_end_index) {
+	    $info_text->update;
+	    my @bbox = $info_text->bbox($comment_label_end_index);
+	    $info_text->tagConfigure
+		("comments_text",
+		 -lmargin2 => $bbox[0]-1-$info_text->cget(-bd)-$info_text->cget(-highlightthickness),
+		);
 	}
     };
 
@@ -10621,6 +10705,10 @@ sub next_free_layer {
 
 ### AutoLoad Sub
 sub set_coord_output_sub {
+    my $_coord_output = shift;
+    if (defined $_coord_output) {
+	$coord_output = $_coord_output;
+    }
     # XXX warum geht es mit keys, aber nicht mit each!!?!?!?!
     foreach my $k (keys %Karte::map) {
 	#while(my($k,$v) = each %Karte::map) {
@@ -11684,6 +11772,13 @@ sub scale_width {
     warn sprintf "Repositioning labels took %.3fs\n", (Tk::timeofday()-$t)
 	if $devel_host;
 
+    foreach my $item ($c->find(withtag => 'strnr')) {
+	my $master = ($c->gettags($item))[2];
+	$master =~ s/^strnr-//;
+	my(@bbox) = $c->bbox($master);
+	$c->coords($item, $bbox[0]-2,$bbox[1]-2,$bbox[2]+2,$bbox[3]+2);
+    }
+
     while(my($name,$scalecommand) = each %scalecommand) {
 	warn "Scale for $name...\n";
 	$scalecommand->($name, $c, $scale, $old_scale);
@@ -12108,6 +12203,10 @@ sub show_overview {
     # Try to set the overview to the right bottom corner of the main
     # window:
     my($w,$h) = (int($top->width/3), int($top->height/3));
+    if (1) {
+	my($x,$y) = ($sy->rootx - $w - 4*2, $sx->rooty - $h - 20 - 4);
+	geometry($overview_top,$x,$y,$w,$h);
+    } else { # XXX del
     if (!@max_extends) {
 	warn "Should not happen: no defined max_extends";
 	$overview_top->geometry("${w}x$h-0-0");
@@ -12131,6 +12230,7 @@ sub show_overview {
 	my $geom = "$want_extends[GEOMETRY_WIDTH]x$want_extends[GEOMETRY_HEIGHT]" . "$want_extends[GEOMETRY_X]$want_extends[GEOMETRY_Y]";
 	$overview_top->geometry($geom);
     }
+    } ##XXX <--- delete until here
 
     show_overview_populate($overview_top);
 }
@@ -12152,7 +12252,9 @@ sub show_overview_populate {
     # Canvas. Create scrollbars manually, so arrow_update can be called
     $overview_canvas = $overview_top->Canvas
 	(-xscrollincrement => 15, # XXX check values
-	 -yscrollincrement => 15);
+	 -yscrollincrement => 15,
+	 -bg => $map_bg,
+	);
 
     my($overview_width, $overview_height);
     if ($coord_system eq 'standard') {
@@ -12269,7 +12371,7 @@ sub show_overview_populate {
       (-font => $font{'small'},
        -indicatoron => 0,
        -padx => 0,
-       -pady => 1, # for Checkbuttons 1, for Buttons 0 (why?)
+       -pady => ($os eq 'win' ? 0 : 1), # for Checkbuttons 1, for Buttons 0 (why?)
        -highlightthickness => 0,
        -takefocus => 0,
        -text => 'Radar',
@@ -15980,6 +16082,7 @@ sub export_visible_map {
 
 	    $args{-rotate} = -90 if $orientation eq 'portrait';
 
+	    $in_fmt = "xwd";
 	    if ($fmt ne 'xwd') {
 		require GfxConvert;
 		GfxConvert::check($in_fmt, $fmt, $tmpfile, $outfile, %args);
@@ -15989,16 +16092,19 @@ sub export_visible_map {
 	    $tmpfiles{$tmpfile}++;
 	    system("xwd", "-out", "$tmpfile", "-id", $c->id);
 	    $top->bell;
-	    $in_fmt = "xwd";
 
 	} else {
 
 	    $args{-rotate} = -90 if $orientation eq 'landscape';
+	    $in_fmt = "ps";
 
 	    if ($fmt ne 'ps') {
 		require GfxConvert;
 		GfxConvert::check($in_fmt, $fmt, $tmpfile, $outfile, %args);
 	    }
+
+	    die M"Der Export wurde unterbrochen."
+		if slow_postscript_generation();
 
 	    $tmpfile = create_postscript($c,
 					 -colormode => 'color',
@@ -16008,7 +16114,6 @@ sub export_visible_map {
 	    if (!defined $tmpfile) {
 		die M"Temporäre Postscript-Datei kann nicht erstellt werden.";
 	    }
-	    $in_fmt = "ps";
 	}
 
 	if ($fmt eq 'ps' || $fmt eq 'xwd') {
@@ -16030,6 +16135,13 @@ sub export_visible_map {
 	status_message($@, 'err');
     }
     $top->Unbusy;
+}
+
+sub slow_postscript_generation {
+    return $os eq 'win' &&
+	$top->messageBox(-icon => "question",
+			 -message => M"Die PostScript-Erzeugung ist unter Windows langsam. Soll trotzdem fortgesetzt werden?",
+			 -type => "YesNo") !~ /yes/i;
 }
 
 sub start_process {
