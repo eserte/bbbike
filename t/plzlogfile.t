@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plzlogfile.t,v 1.1 2003/08/07 22:21:30 eserte Exp eserte $
+# $Id: plzlogfile.t,v 1.2 2003/08/07 23:24:43 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -49,6 +49,7 @@ if (!$doit) {
 
 my $plz = ($potsdam
 	   ? PLZ::Multi->new("Berlin.coords.data", "Potsdam.coords.data",
+			     Strassen->new("strassen"), # XXX <-- experminetell!
 			     -cache => 1,
 			    )
 	   : PLZ->new

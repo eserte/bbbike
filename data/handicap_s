@@ -1,4 +1,3 @@
-Georgenstr.: Bauarbeiten, Fuﬂg‰nger	q3::inwork 9437,12662 9308,12649
 Voﬂstr. in Richtung Osten: gesperrt, Gehweg benutzen	q3::inwork; 8553,11638 8837,11676
 L¸ckstr.: Bauarbeiten in Richtung Westen, Gehweg benutzen. Dauer: bis 31.08.2003	q4::inwork; 16460,10699 16153,10818 16032,10842
 Pfarrstr.: Bauarbeiten, nur enger Gehweg oder noch nicht gepflasterte Straﬂe befahrbar	q3::inwork 15339,11123 15438,11305
@@ -12,8 +11,9 @@ Kˆpenicker Straﬂe, Richtung Lichtenberg zwischen S-Bhf Wuhlheide und Zufahrt Inn
 Segelfliegerdamm: Fahrbahnneubau, Straﬂe gesperrt bis 31.12.2003	q4::inwork 17628,4148 17797,4441 18058,4627
 Oranienburger Str: Straﬂenbahnarbeiten, nur der Gehweg ist benutzbar, bis ca. 13.9.2003	q4::inwork 10264,13097 10077,13100 9932,13109
 Oranienburger Str: Behinderungen wegen Straﬂenbahnarbeiten, bis ca. 13.9.2003	q2::inwork 9932,13109 9786,13178 9771,13182 9605,13248 9415,13315 9281,13374 9215,13392
-Richard-Sorge-Str.: Bauarbeiten in einer Richtung, kann auf Gehweg umfahren werden	q4::inwork; 13468,12497 13381,12685
 Mˆllendorffstr.: Einbahnstraﬂe Richtung Norden, Ausweichen auf Gehweg	q2::inwork; 15536,12486 15531,12622 15527,12689 15513,12856
+Tempelhofer Weg zwischen Gradestraﬂe und Britzer Damm gesperrt aufgrund einer Fahrbahnerneuerung. Dauer: 10.08.2003 bis ca. 14.09.2003	q3::inwork 12731,4841 12499,5226
+Georgenstr.: Fuﬂg‰nger	q1 9437,12662 9308,12649
 Neue Promenade: Fuﬂg‰nger	q2 10294,13070 10132,12941
 Pariser Platz/Brandenburger Tor: Fuﬂg‰nger	q2 8804,12280 8610,12254 8515,12242
 Potsdamer Platz: Fuﬂg‰nger	q3 8542,11502 8490,11526
@@ -117,7 +117,11 @@ Herthastr.: Gehweg, Bordsteine	q4 1935,9239 1932,9263
 Fuggerstr.: Gehweg	q2 6128,10319 6020,10351
 Pfalzburger Str.: Gehweg	q2 4905,10069 4909,10119
 (Tilla-Durieux-Park): Fuﬂg‰nger	q2 8467,11125 8410,11141
-(Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3288,12700 3385,12734 3582,12704 3763,12624 4094,12639 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3288,12700 3385,12734 3582,12704 3763,12624 3910,12630 4094,12639 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
 Spreeufer: Fuﬂg‰nger	q1 10171,12769 10100,12876 9895,12936 9784,12953 9707,12974 9557,12992 9533,12994 9508,12991 9271,12952
 F¸rther Str.: Gehweg	q2 5773,10318 5808,10284
 (Zossener Br¸cke - Mehringplatz): Gehweg	q1 9865,10286 9646,10301
+(Richard-Wagner-Platz - Schustehrusstr.): Gehweg	q2 3763,12279 3700,12265
+Goerdelersteg: enge scheckenfˆrmige Rampen	q3 3619,14183 3600,14278
+Goerdelerdamm: enger Zweirichtungsradweg	q1 3600,14278 4676,14534
+Radweg eng und bewachsen	q1 5071,14614 5264,14671 5451,14833

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CNetFilePerl.pm,v 1.11 2003/08/07 21:34:14 eserte Exp $
+# $Id: CNetFilePerl.pm,v 1.11 2003/08/07 21:34:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
@@ -49,9 +49,14 @@ sub reachable {
     exists $self->{CNetCoord2Ptr}->{$coord};
 }
 
+# XXX Still problems: because all other types are ignored it is not
+# XXX possible to build another sperre net on top of an existing.
+# XXX Solution: provide another hash-based sperre net which will be used in
+# XXX Strassen::Inline.
 sub make_sperre {
     my($self, $sperre_file, %args) = @_;
     if (exists $args{Type}) {
+	$args{Type} = [$args{Type}] unless ref $args{Type} eq 'ARRAY';
 	if (grep { $_ eq 'wegfuehrung' } @{ $args{Type} }) {
 	    my %args = %args;
 	    $args{Type} = ['wegfuehrung'];

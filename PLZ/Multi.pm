@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Multi.pm,v 1.4 2003/08/07 23:17:38 eserte Exp $
+# $Id: Multi.pm,v 1.5 2003/08/08 19:17:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package PLZ::Multi;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 use Getopt::Long qw(GetOptions);
 BEGIN {
@@ -45,7 +45,29 @@ sub new {
     }
 
     for (@files) {
-	if (!File::Spec->file_name_is_absolute($_)) {
+	if (ref $_ && UNIVERSAL::isa($_, "Strassen")) {
+	    # convert into PLZ file
+	    require Strassen::Strasse;
+	    require File::Temp;
+	    my($fh, $filename) = File::Temp::tempfile(UNLINK => 1);
+	    my $s = $_;
+	    $s->init;
+	    while(1) {
+		my $r = $s->next;
+		last if !@{ $r->[Strassen::COORDS()] };
+		my $middle = $r->[Strassen::COORDS()]->[$#{ $r->[Strassen::COORDS()] }/2];
+		my($str, @cityparts) = Strasse::split_street_citypart($r->[Strassen::NAME()]);
+		if (!@cityparts) {
+		    print $fh "$str|||$middle\n";
+		} else {
+		    for my $citypart (@cityparts) {
+			print $fh "$str|$citypart||$middle\n";
+		    }
+		}
+	    }
+	    close $fh;
+	    $_ = $filename;
+	} elsif (!File::Spec->file_name_is_absolute($_)) {
 	    for my $dir (@Strassen::datadirs) {
 		my $f = File::Spec->catfile($dir, $_);
 		if (-r $f) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeScribble.pm,v 1.4 2003/01/08 20:00:36 eserte Exp $
+# $Id: BBBikeScribble.pm,v 1.4 2003/01/08 20:00:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -46,7 +46,7 @@ $scribble_bbd  = "/tmp/scribble.bbd"
     if !defined $scribble_bbd;
 $scribble_desc  = "/tmp/scribble.desc"
     if !defined $scribble_desc;
-$show_scribble_labels = 0
+$show_scribble_labels = 1
     if !defined $show_scribble_labels;
 
 sub toggle_scribble_mode {
@@ -156,6 +156,7 @@ sub save_scribble {
     eval {
 	$anti_transpose = \&main::anti_transpose if !$anti_transpose;
 	# XXX does not work with bbbike, only with tkbabybike
+	# XXX is this still true???
 	if (open(BBD, ">$scribble_bbd")) {
 	    foreach my $item (@items) {
 		my $color = $c->itemcget($item, -fill);
