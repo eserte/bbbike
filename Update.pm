@@ -269,6 +269,8 @@ sub bbbike_data_update {
  TRY_RSYNC: {
 	if ($protocol eq 'rsync' || $protocol eq 'best') {
 	    eval {
+		local $SIG{__DIE__};
+		local $SIG{__WARN__};
 		$BBBike::BBBIKE_UPDATE_DATA_RSYNC = $BBBike::BBBIKE_UPDATE_DATA_RSYNC; # peacify -w
 		update_rsync(-dest => $rootdir,
 			     -src  => $BBBike::BBBIKE_UPDATE_DATA_RSYNC,
