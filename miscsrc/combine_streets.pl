@@ -13,7 +13,7 @@
 # WWW:  http://bbbike.sourceforge.net/
 #
 
-# XXX it would be nice to move this to Strassen::Ext, but maybe the
+# XXX  maybe the
 # implementation should be better...
 
 =head1 NAME

@@ -480,9 +480,6 @@ the start of BBBike.',
 'aktuellste' => 'current',
 'angekommen!' => 'arrived!',
 'auf A4 skalieren' => 'scale to A4',
-'aus dem Internet geholt und installiert werden.
-' => 'fetched and installed from internet.
-',
 'automatische Aktualisierung' => 'automatic update',
 'automatische Routenaktualisierung' => 'automatic route update',
 'außerhalb Berlin ABC' => 'outside Berlin ABC',
@@ -624,8 +621,11 @@ Warning:
 "Einstellungen: verlorene Strecke pro Ampel: %d m" => "Settings: lost distance per traffic light: %d m",
 "Einstellungen für %s km/h: verlorene Zeit pro Ampel: %s s, verlorene Strecke pro Ampel: %d m" => "Settings for %s km/h: lost time per traffic light %s s, lost distance per traffic light: %d m",
 "%s ist keine gültige Datei, kein Backup." => "%s is not a valid file, no backup.",
-"Die fehlenden Perl-Module können aus der %s mit dem Kommando\n" => "Missing perl modules may be installed from %s with the command\n",
+"Die fehlenden Perl-Module können aus der %s mit dem Kommando\n" => "Missing perl modules may be installed and fetch in the %s with the command\n",
 "Das fehlende Perl-Modul kann aus der %s mit dem Kommando\n" => "The missing perl module may be installed from %s with the command\n",
+'aus dem Internet geholt und installiert werden.
+' => '.
+',
 
 "Perl-Skripte" => "Perl scripts",
 "Perl-Module" => "Perl modules",
@@ -826,6 +826,7 @@ Warning:
 "Druckerkommando" => "Printer command",
 "Druck-Backend" => "Print backend",
 "Druckerzeichensatz (fixed)" => "Printer fixed font",
+"Die %s-Datei konnte nicht erstellt werden. Grund: %s" => "Can't create the %s file. Reason: %s",
 # BBBikeAlarm.pm
 "Rechner" => "Host",
 "Pid" => "Pid",
