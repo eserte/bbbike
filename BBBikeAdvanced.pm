@@ -1324,32 +1324,34 @@ sub advanced_coord_menu {
 
 sub stderr_menu {
     my $opbm = shift;
-    my $stderr_window;
     $opbm->checkbutton(-label => M"Status nach STDERR",
 		       -variable => \$stderr);
     $opbm->checkbutton
 	(-label => M"STDERR in ein Fenster",
 	 -variable => \$stderr_window,
-	 -command => sub {
-	     if ($stderr_window) {
-		 if (!eval { require Tk::Stderr; Tk::Stderr->VERSION(1.2); }) {
-		     if (!perlmod_install_advice("Tk::Stderr")) {
-			 $stderr_window = 0;
-			 return;
-		     }
-		 }
-		 my $errwin = $top->StderrWindow;
-		 if (!$errwin || !Tk::Exists($errwin)) {
-		     $top->InitStderr;
-		     $errwin = $top->StderrWindow;
-		     $errwin->title("BBBike - " . M("STDERR-Fenster"));
-		 } else {
-		     $errwin = $top->RedirectStderr(1);
-		 }
-	     } elsif ($top->can("RedirectStderr")) {
-		 $top->RedirectStderr(0);
-	     }
-	 });
+	 -command => \&stderr_window_command,
+	);
+}
+
+sub stderr_window_command {
+    if ($stderr_window) {
+	if (!eval { require Tk::Stderr; Tk::Stderr->VERSION(1.2); }) {
+	    if (!perlmod_install_advice("Tk::Stderr")) {
+		$stderr_window = 0;
+		return;
+	    }
+	}
+	my $errwin = $top->StderrWindow;
+	if (!$errwin || !Tk::Exists($errwin)) {
+	    $top->InitStderr;
+	    $errwin = $top->StderrWindow;
+	    $errwin->title("BBBike - " . M("STDERR-Fenster"));
+	} else {
+	    $errwin = $top->RedirectStderr(1);
+	}
+    } elsif ($top->can("RedirectStderr")) {
+	$top->RedirectStderr(0);
+    }
 }
 
 sub penalty_menu {
