@@ -332,6 +332,3 @@ E 13°41'15.0"	N 52°39'46.8"	29154,29127	# Wilmersdorf/Barnim
 -1651,2415	-1651,2415	#
 15873,14046	15873,14046	#
 21847,794	21847,794	#
-######################################################################
-# To make this file visible in bbbike:
-# env LANG=C ../miscsrc/convert_berlinmap.pl -bbdoutput -datafromfile gps_correction_all.dat > /tmp/gps_correction_all.bbd

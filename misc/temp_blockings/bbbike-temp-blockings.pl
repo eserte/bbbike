@@ -258,4 +258,21 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Turmstraße zwischen Stromstraße und Oldenburger Straße/Ottostraße Frühlingsfest, Straße gesperrt, Dauer: 30.04.2004, 04.00 Uhr bis 02.05.2004, 24.00 Uhr',
        type  => 'gesperrt',
      },
+     { from  => Time::Local::timelocal(reverse(2004-1900,4-1,30,12,0,0)),
+       until => Time::Local::timelocal(reverse(2004-1900,5-1,2,6,0,0)),
+       file  => "kreuzberg-20020501.bbd",
+       text  => "mögliche Behinderungen zum 1. Mai in Kreuzberg",
+     },
+     { from  => 1083232800, # 2004-04-29 12:00
+       until => 1083448800, # 2004-05-02 00:00
+       file  => 'reinhardtstr.bbd',
+       text  => 'Reinhardtstraße zwischen Friedrichstraße und Albrechtstraße in beiden Richtungen gesperrt, Veranstaltung. Dauer: 30.04.2004, 12:00 Uhr bis 01.05.2004, 24:00 Uhr',
+       type  => 'gesperrt',
+     },
+     { from  => 1083294000, # 2004-04-30 05:00
+       until => 1083448800, # 2004-05-02 00:00
+       file  => 'spandauer.bbd',
+       text  => 'Spandauer Straße, zwischen Karl-Liebknecht-Straße und Mühlendamm, in beiden Richtungen Straße gesperrt. Veranstaltung. Dauer: 01.05.2004, 05.00 Uhr bis 24.00 Uhr',
+       type  => 'gesperrt',
+     },
     );
