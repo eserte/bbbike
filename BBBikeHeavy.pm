@@ -348,7 +348,7 @@ sub BBBikeHeavy::layer_editor {
 		    {Image => undef,
 		     Text => $layer_name,
 		     Visible => $val,
-		     Data => {Tags => ["$abk-fg", "$abk-img"],
+		     Data => {Tags => ["$abk-fg", "$abk-img", "$abk-label"],
 			      Type => 'p',
 			      Subtype => $abk,
 			     }
