@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: route-pdf.t,v 1.8 2005/02/14 01:09:56 eserte Exp $
+# $Id: route-pdf.t,v 1.9 2005/03/23 17:26:49 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -19,7 +19,7 @@ use Strassen::Core;
 use Strassen::MultiStrassen;
 use Strassen::StrassenNetz;
 use Strassen::Dataset;
-use BBBikeXS;
+eval q{ use BBBikeXS; };
 use Getopt::Long;
 
 use BBBikeTest;
