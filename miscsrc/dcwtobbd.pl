@@ -122,35 +122,35 @@ normal: landstrassen rbahn wasserstrassen flaechen orte-label
 devel: landstrassen-orig rbahn-orig wasserstrassen-orig flaechen-orig orte-label-orig
 
 landstrassen: rdline.e00
-	< $> $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -cat HH > $@
+	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -cat HH > $@
 
 rbahn: rrline.e00
-	< $> $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -cat R > $@
+	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -cat R > $@
 
 wasserstrassen: dnnet.e00
-	< $> $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -cat W > $@
+	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -cat W > $@
 
 flaechen: pppoly.e00
-	< $> $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -cat 'F:#ffffff' > $@
+	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -cat 'F:#ffffff' > $@
 
 #orte: orte.e00
 orte-label: pppoly.e00 pppoint.e00
-	cat $> | $(BBBIKEDIR)/miscsrc/e00_to_bbd.pl -cat 3 > $@
+	cat $^ | $(BBBIKEDIR)/miscsrc/e00_to_bbd.pl -cat 3 > $@
 
 landstrassen-orig: rdline.e00
-	< $> $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -gdf -cat HH > $@
+	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -gdf -cat HH > $@
 
 rbahn-orig: rrline.e00
-	< $> $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -gdf -cat R > $@
+	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -gdf -cat R > $@
 
 wasserstrassen-orig: dnnet.e00
-	< $> $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -gdf -cat W > $@
+	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -gdf -cat W > $@
 
 flaechen-orig: pppoly.e00
-	< $> $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -gdf -cat 'F:#ffffff' > $@
+	< $^ $(BBBIKEDIR)/miscsrc/dcwtobbd.pl -descfile $@.desc -gdf -cat 'F:#ffffff' > $@
 
 #orte-orig: orte.e00
 orte-label-orig: pppoly.e00 pppoint.e00
-#	< $> $(BBBIKEDIR)/miscsrc/e00_tx7_to_bbd.pl -map polar > $@
+#	< $^ $(BBBIKEDIR)/miscsrc/e00_tx7_to_bbd.pl -map polar > $@
 # XXX not yet:
-#	cat $> | $(BBBIKEDIR)/miscsrc/e00_to_bbd.pl -cat 3 -map polar > $@
+#	cat $^ | $(BBBIKEDIR)/miscsrc/e00_to_bbd.pl -cat 3 -map polar > $@
