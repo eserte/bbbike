@@ -13,6 +13,9 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
+use strict;
+BEGIN { delete $INC{"FindBin.pm"} }
+use FindBin;
 use vars qw($BBBIKE_ROOT $BBBIKE_URL);
 BEGIN { # XXX do not hardcode
     if ($ENV{SERVER_NAME} eq 'radzeit.herceg.de') {
@@ -21,14 +24,15 @@ BEGIN { # XXX do not hardcode
 	@Strassen::datadirs = "$BBBIKE_ROOT/data";
     } elsif ($ENV{SERVER_NAME} eq 'vran.herceg.de') {
 	$BBBIKE_URL = "/~eserte/bbbike";
-    } else { # www.radzeit.de
+    } elsif ($ENV{SERVER_NAME} =~ /radzeit/i) {
 	$BBBIKE_ROOT = "/usr/local/apache/radzeit/BBBike";
 	$BBBIKE_URL = "/BBBike";
 	#$BBBIKE_ROOT = "/usr/local/apache/radzeit/BBBike2";
+    } else {
+	$BBBIKE_ROOT = "$FindBin::RealBin/..";
+	$BBBIKE_URL = "/bbbike";
     }
 }
-use strict;
-use FindBin;
 use CGI qw(:standard *table);
 use lib (defined $BBBIKE_ROOT ? ("$BBBIKE_ROOT",
 				 "$BBBIKE_ROOT/lib",
@@ -49,8 +53,11 @@ if (defined param("mapserver")) {
     resolve_city();
 } elsif (defined param("searchterm") && param("searchterm") !~ /^\s*$/) {
     resolve_fulltext();
-} elsif (defined param("latD") && defined param("latM") &&
-	 defined param("longD") && defined param("longM")) {
+} elsif (defined param("latD") && param("latD") !~ /^\s*$/ &&
+	 defined param("latM") && param("latM") !~ /^\s*$/ &&
+	 defined param("longD") && param("longD") !~ /^\s*$/ &&
+	 defined param("longM") && param("longM") !~ /^\s*$/
+	) {
     my $lat  = param("latD")  + param("latM")/60  + param("latS")/3600;
     my $long = param("longD") + param("longM")/60 + param("longS")/3600;
     resolve_latlong($lat, $long);
