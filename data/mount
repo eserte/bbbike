@@ -82,6 +82,7 @@ Steigung 3.1% (Am Fichtenberg)	St; 4262,5168 4165,5243
 Steigung 3.0% (Bornholmer Str.)	St; 9455,16609 9514,16603
 Steigung 3.0% (Lepsiusstr.)	St; 4259,5390 4338,5513
 Steigung 3.0% (Bornholmer Str.)	St; 9514,16603 9883,16557
+Steigung 3.0% (Mainzer Str. (Neukölln))	St; 12063,8826 12057,8529
 Steigung 3.0% (Röblingstr.)	St; 7497,5610 7483,5442
 Steigung 2.9% (Brunnenstr.)	St; 10003,14088 9938,14345
 Steigung 2.9% (Hochstr. (Wedding))	St; 8456,15235 8607,15426
@@ -105,6 +106,7 @@ Steigung 2.8% (Pfaueninselchaussee)	St; -6492,1204 -6577,1395
 Steigung 2.8% (Pfaueninselchaussee)	St; -6441,1139 -6492,1204
 Steigung 2.8% (Böttgerstr.)	St; 8582,16052 8720,15914
 Steigung 2.8% (Pfaueninselchaussee)	St; -6648,1613 -6802,1802
+Steigung 2.8% (Flughafenstr.)	St; 12068,8409 11892,8372
 Steigung 2.8% (Grunewaldstr. (Steglitz))	St; 4520,5793 4411,5830
 Steigung 2.7% (Gatower Str.)	St; -4758,9689 -4770,9894
 Steigung 2.7% (Knobelsdorffstr.)	St; 2081,11741 1758,11702
@@ -119,7 +121,7 @@ Steigung 2.7% (Knobelsdorffstr.)	St; 2219,11729 2154,11750
 Steigung 2.7% (Knobelsdorffstr.)	St; 2326,11739 2219,11729
 Steigung 2.7% (Nostitzstr.)	St; 9492,9311 9477,9214
 Steigung 2.7% (Spandauer Damm)	St; 1984,12343 1940,12337
-Steigung 2.7% (Flughafenstr.)	St; 12195,8436 11892,8372
+Steigung 2.7% (Wissmannstr.)	St; 11767,9026 11769,8515
 Steigung 2.7% (Knobelsdorffstr.)	St; 2154,11750 2081,11741
 Steigung 2.7% (Kienitzer Str.)	St; 12830,8031 12578,7973
 Steigung 2.6% (Neue Kantstr.)	St; 2352,11041 2252,11037
@@ -136,6 +138,7 @@ Steigung 2.6% (Inselstr. (Nikolassee))	St; -5243,4212 -5310,4216
 Steigung 2.6% (Königstr. (Wannsee))	St; -10269,445 -10052,521
 Steigung 2.6% (Inselstr. (Nikolassee))	St; -5310,4216 -5393,4211
 Steigung 2.6% (Sickingenstr.)	St; 5105,13996 5224,14031
+Steigung 2.5% (Mainzer Str. (Neukölln))	St; 12096,8300 12139,8128
 Steigung 2.5% (Str. am Schildhorn)	St; -3597,9446 -3456,9479
 Steigung 2.5% (Lepsiusstr.)	St; 4134,5284 4259,5390
 Steigung 2.5% (Koenigsallee)	St; 1623,8923 1541,8857
@@ -147,7 +150,10 @@ Steigung 2.5% (Inselstr. (Nikolassee))	St; -5067,4120 -5243,4212
 Steigung 2.5% (Inselstr. (Nikolassee))	St; -4964,4100 -5067,4120
 Steigung 2.5% (Königstr. (Wannsee))	St; -9730,498 -9439,537
 Steigung 2.5% (Bautzener Str.)	St; 8186,9380 8180,9099
+Steigung 2.5% (Flughafenstr.)	St; 12195,8436 12068,8409
+Steigung 2.5% (Reuterstr. (Neukölln))	St; 12195,8436 12217,8320
 Steigung 2.5% (Str. am Schildhorn)	St; -3456,9479 -3423,9642
+Steigung 2.5% (Mainzer Str. (Neukölln))	St; 12068,8409 12096,8300
 Steigung 2.5% (Königstr. (Wannsee))	St; -10052,521 -9730,498
 Steigung 2.5% (Reichpietschufer)	St; 7873,11142 7993,11137
 Steigung 2.5% (Havelchaussee)	St; -3361,9535 -3304,9470
@@ -168,9 +174,11 @@ Steigung 2.4% (Schottstr.)	St; 16261,12224 16270,12261
 Steigung 2.4% (Grunewaldstr. (Steglitz))	St; 4667,5688 4520,5793
 Steigung 2.4% (Spandauer Damm)	St; -395,13040 -257,12979
 Steigung 2.4% (Gatower Str.)	St; -4773,11199 -4828,11047
+Steigung 2.3% (Biebricher Str.)	St; 12057,8529 11884,8492
 Steigung 2.3% (Platanenallee)	St; 1758,11702 1645,11731
 Steigung 2.3% (Koenigsallee)	St; 761,7922 864,8110
 Steigung 2.3% (Grabensprung)	St; 20532,11505 20575,11698
+Steigung 2.3% (Hermannstr. (Neukölln))	St; 11884,8492 11882,8527
 Steigung 2.3% (Prenzlauer Allee)	St; 11257,13647 11389,13887
 Steigung 2.3% (Anklamer Str.)	St; 9938,14345 10041,14370
 Steigung 2.3% (Tempelhofer Ufer)	St; 8720,10342 8804,10314
@@ -244,14 +252,16 @@ Steigung 1.9% (Silbersteinstr.)	St; 12983,6904 12702,6846
 Steigung 1.9% (Böttgerstr.)	St; 8720,15914 8923,15850
 Steigung 1.9% (Am Postfenn)	St; -1537,10627 -1490,10709
 Steigung 1.9% (Möllendorffstr.)	St; 15518,12412 15536,12486
-Steigung 1.9% (Reuterstr. (Neukölln))	St; 12156,8760 12195,8436
+Steigung 1.9% (Reuterstr. (Neukölln))	St; 12156,8760 12183,8538
 Steigung 1.9% (Beckerstr.)	St; 6445,6769 6301,6748
 Steigung 1.9% (Neue Kantstr.)	St; 2252,11037 2016,11034
 Steigung 1.9% (Straßmannstr.)	St; 13283,12895 13467,12978
 Steigung 1.9% (Mittelweg (Neukölln))	St; 12644,7688 12516,7718
 Steigung 1.9% (Bismarckstr. (Steglitz))	St; 6018,4850 6053,4942
 Steigung 1.9% (Heerstr. (Spandau, Charlottenburg))	St; 41,11168 467,11221
+Steigung 1.9% (Hermannstr. (Neukölln))	St; 11884,8492 11892,8372
 Steigung 1.9% (Schierker Str.)	St; 13032,7334 13013,7329
+Steigung 1.9% (Reuterstr. (Neukölln))	St; 12183,8538 12195,8436
 Steigung 1.9% (Joachim-Friedrich-Str.)	St; 3069,9622 3067,9592
 Steigung 1.9% (Immanuelkirchstr.)	St; 11958,13986 11727,14111
 Steigung 1.9% (Möllendorffstr.)	St; 15536,12486 15531,12622

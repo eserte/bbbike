@@ -1549,12 +1549,13 @@ sub _insert_points_and_co {
 		    "-tk",
 		    ($vstr ne "" ? $vstr : ()),
 		   );
-	if (!$SRTShortcuts::force_edit_mode) {
-	    push @args, (
-			 (!defined $edit_mode || $edit_mode eq '' ? "-noorig" : ()),
-			 ($coord_system_obj->coordsys eq 'B' || !defined $edit_mode || $edit_mode eq '' ? () : (-coordsys => $coord_system_obj->coordsys)),
-			);
-	}
+#XXX:
+# 	if (!$SRTShortcuts::force_edit_mode) {
+# 	    push @args, (
+# 			 (!defined $edit_mode || $edit_mode eq '' ? "-noorig" : ()),
+# 			 ($coord_system_obj->coordsys eq 'B' || !defined $edit_mode || $edit_mode eq '' ? () : (-coordsys => $coord_system_obj->coordsys)),
+# 			);
+# 	}
 	warn "@args\n";
 	BBBikeModify::process(@args);
 	# clear the selection

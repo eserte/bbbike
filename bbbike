@@ -2314,10 +2314,13 @@ sub do_iconframe {
 	    (-label => M"Steigungen",
 	     -variable => \$str_draw{'mount'},
 	     -command => sub {
-		 my $comm = Strassen->new("comments_mount");
-		 my $comm_mount = Strassen->new_copy_restricted($comm, -grep => ["St;"]);
-		 my $mount = MultiStrassen->new($str_file{"mount"},
-						$comm_mount);
+		 my $mount;
+		 if ($str_draw{'mount'}) {
+		     my $comm = Strassen->new("comments_mount");
+		     my $comm_mount = Strassen->new_copy_restricted($comm, -grep => ["St;"]);
+		     $mount = MultiStrassen->new($str_file{"mount"},
+						 $comm_mount);
+		 }
 		 plot('str','mount', -object => $mount);
 	     },
 	    );
@@ -15311,7 +15314,7 @@ sub restack_delayed {
     # Use the delaying only on slow systems. For fast systems,
     # delaying is disturbing for the interactivity.
     delayed_sub(\&restack, -busy => $slowcpu ? !$edit_mode && !$edit_normal_mode : 0,
-		           -delay => $slowcpu ? 1000 : 100,
+		           -delay => $slowcpu ? 1000 : 300,
 		           -name => 'restack');
 }
 

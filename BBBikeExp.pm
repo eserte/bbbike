@@ -201,8 +201,8 @@ sub BBBikeExp::bbbikeexp_add_data_by_subs {
 	my $def = [$abk, undef];
 	push @defs_p, $def;
 	push @defs_p_subs_abk, $abk;
-	BBBikeExp::draw_points($def);
 	$exp_p{$abk} = $nonorig_s;
+	BBBikeExp::draw_points($def);
 	$exp_p{$abk}->make_grid(UseCache => 1);
 	if (!defined $exp_master) {
 	    $exp_master = $exp_p{$abk};
@@ -411,6 +411,7 @@ sub BBBikeExp::plotstr_on_demand {
       ($x1, $y1, $x2, $y2,
        KnownGrids => \%exp_known_grids);
     my $something_new = 0;
+    my $places_new = 0;
     if (@grids) {
 	foreach my $abk (@defs_str_abk) {
 	    my %category_width;
@@ -562,13 +563,14 @@ sub BBBikeExp::plotstr_on_demand {
 	    foreach my $grid (@grids) {
 		if ($exp_p{$abk}->{Grid}{$grid}) {
 		    warn "Drawing new grid: $grid\n" if $verbose;
-		    $something_new++;
+		    #XXX del: $something_new++;
 		    foreach my $strpos (@{ $exp_p{$abk}->{Grid}{$grid} }) {
 			if (!$exp_p_drawn{$abk}->{$strpos}) {
 			    my $r = $exp_p{$abk}->get($strpos);
 			    $i = $strpos+1; # XXX warum +1?
 			    plotplaces_draw($r);
 			    $exp_p_drawn{$abk}->{$strpos}++;
+			    $places_new++;
 			}
 		    }
 		}
@@ -602,7 +604,7 @@ sub BBBikeExp::plotstr_on_demand {
 	}
     }
 
-    if ($something_new) {
+    if ($something_new || $places_new) {
 	restack_delayed();
 	delayed_sub(sub {
 			$c->itemconfigure('pp',
@@ -629,7 +631,7 @@ sub BBBikeExp::plotstr_on_demand {
 			    : ()
 			   ),
 			  );
-		    } else {
+		    } elsif ($places_new) {
 			plotplaces_post();
 }
 		    },

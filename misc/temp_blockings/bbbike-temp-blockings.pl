@@ -282,9 +282,9 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'gesperrt',
      },
      { from  => 1083491594, # 2004-05-02 11:53
-       until => 1086645600, # 2004-06-08 00:00
+       until => 1083967200, # 2004-05-08 00:00
        file  => 'lueckstr.bbd',
-       text  => 'Lückstraße Berlin-Friedrichsfelde Richtung Berlin-Friedrichshain; zwischen Rummelsburger Straße und Schlichtallee wegen Bauarbeiten gesperrt bis 7.06.2004. ',
+       text  => 'Lückstraße Berlin-Friedrichsfelde Richtung Berlin-Friedrichshain; zwischen Rummelsburger Straße und Schlichtallee wegen Bauarbeiten gesperrt bis 7.05.2004. ',
        type  => 'handicap',
      },
     );

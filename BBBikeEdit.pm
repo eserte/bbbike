@@ -2287,6 +2287,8 @@ sub find_corresponding_orig_point {
 		}
 	    }
 	}
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([map { $c->gettags($_) } @items2],[])->Indent(1)->Useqq(1)->Dump; # XXX
+
 	if (@items2 == 1) {
 	    my $orig = ($c->gettags($items2[0]))[2];
 	    if ($orig =~ /^ORIG:(.*)/) {

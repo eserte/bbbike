@@ -248,10 +248,19 @@ sub show_lbvs_diff {
 sub edit_in_normal_mode {
     require BBBikeEdit;
     my $map = "standard";
-    BBBikeEdit->draw_pp("strassen", -abk => "s");
-#XXX does not work :-(
-#    require BBBikeExp;
-#    BBBikeExp::bbbikeexp_add_data_by_subs("p","pp",init => sub { BBBikeEdit->draw_pp_init_code("strassen", -abk => "s")}, draw => \&BBBikeEdit::draw_pp_draw_code, post_draw => \&BBBikeEdit::draw_pp_post_draw_code);
+    if (0) {
+	BBBikeEdit->draw_pp("strassen", -abk => "s");
+    } else {
+	require BBBikeExp;
+	BBBikeExp::bbbikeexp_add_data_by_subs
+		("p","pp",
+		 init      => sub {
+		     BBBikeEdit->draw_pp_init_code("strassen", -abk => "s")
+		 },
+		 draw      => \&BBBikeEdit::draw_pp_draw_code,
+		 post_draw => \&BBBikeEdit::draw_pp_post_draw_code,
+		);
+    }
     main::set_coord_output_sub($map);
     $SRTShortcuts::force_edit_mode = 1;
     $main::use_current_coord_prefix = 0;
@@ -262,10 +271,19 @@ sub edit_in_normal_mode {
 sub edit_in_normal_mode_landstrassen {
     require BBBikeEdit;
     my $map = "standard";
-    BBBikeEdit->draw_pp(["landstrassen", "landstrassen2"], -abk => "l");
-#XXX does not work :-(
-#    require BBBikeExp;
-#    BBBikeExp::bbbikeexp_add_data_by_subs("p","pp",init => sub { BBBikeEdit->draw_pp_init_code(["landstrassen", "landstrassen2"], -abk => "l")}, draw => \&BBBikeEdit::draw_pp_draw_code, post_draw => \&BBBikeEdit::draw_pp_post_draw_code);
+    if (0) {
+	BBBikeEdit->draw_pp(["landstrassen", "landstrassen2"], -abk => "l");
+    } else {
+	require BBBikeExp;
+	BBBikeExp::bbbikeexp_add_data_by_subs
+		("p","pp",
+		 init      => sub {
+		     BBBikeEdit->draw_pp_init_code(["landstrassen", "landstrassen2"], -abk => "l")
+		 },
+		 draw      => \&BBBikeEdit::draw_pp_draw_code,
+		 post_draw => \&BBBikeEdit::draw_pp_post_draw_code,
+		);
+    }
     main::set_coord_output_sub($map);
     $SRTShortcuts::force_edit_mode = 1;
     $main::use_current_coord_prefix = 0;
