@@ -14,6 +14,56 @@ Legende:
 
 =over
 
+=item * (H4)
+
+Acrobat Reader often shows an error message for
+BBBikeDraw/PDF.pm-created files. No problems with xpdf and other
+viewers.
+
+=item * (M2)
+
+Request:
+
+ > Wäre es auch möglich, daß man die Acrobat -datei erst speichern
+ > könnte, bevor man sie sich anzeigen läßt? Oder, daß man diese
+ > vielleicht per autom. Email zugeschickt bekommt?
+
+Ersteres könnte man machen, indem man einen Link bereitstellt, der das
+gleiche wie der submit-Button macht, nur mit Content-Disposition:
+attachment oder ähnlichem. Vielleicht nicht allzu schwer.
+
+=item * (E4)
+
+Use the :by and :temporary directives in the data files. Change some
+files which are using this information (e.g. misc/Makefile).
+
+=item * (M3)
+
+Extend Strassen/Core.pm to recognize global, block and line
+directives. Block and line directives should be added as a new forth
+argument (an array ref). Change convert_* to not ignore directives
+(and optionally not ignore comments). Maybe rewrite the misc/Makefile
+rule to use standard Strassen methods.
+
+=item * (E2)
+
+Mapinfo.pm converter: add new attributes Author, AcquireAuthor,
+CreationDate, AcquireDate (maybe better names for AcquireDate?) (from
+by directive), FromDate, ToDate (from temporary directive). Implement
+first the directive stuff above.
+
+=item * (M3)
+
+All references to E<quot>commentsE<quot> should use the partial
+comments files instead. Maybe define a method with a list of the
+partial files in Strassen/Dataset. Add the partial comments files to
+the MANIFEST, remove the monolith comments from CVS and MANIFEST.
+
+=item * (M1)
+
+Convert the data/Makefile to data/Makefile.PL or similar (to solve
+problems like loops etc.).
+
 =item * (H2)
 
 Dynamisches Zeichnen (weniger/mehr) von Kartenelementen anhand der

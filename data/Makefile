@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.89 2004/02/22 23:14:23 eserte Exp $
+# $Id: Makefile,v 1.91 2004/03/08 00:08:50 eserte Exp $
 #
 
 MISCDIR=		../misc
@@ -21,6 +21,10 @@ SORTBYCAT=		${MISCSRCDIR}/sortbycat
 SEARCH_INACCESSIBLE=	${MISCSRCDIR}/search_inaccessible_points
 STEIGUNG_STAT=		${MISCSRCDIR}/steigung_stat
 
+COMMENTS_PARTIAL=	comments_cyclepath comments_ferry comments_misc \
+			comments_mount comments_path comments_route \
+			comments_tram comments_kfzverkehr
+
 TARGETS=	strassen plaetze landstrassen landstrassen2 flaechen
 TARGETS+=	wasserstrassen wasserumland wasserumland2
 TARGETS+=	sbahn sbahnhof sbahnhof_bg rbahn rbahnhof
@@ -30,8 +34,9 @@ TARGETS+=	gesperrt gesperrt_car plz berlin potsdam deutschland
 TARGETS+=	sehenswuerdigkeit obst radwege radwege_exact
 TARGETS+=	qualitaet_s qualitaet_l
 TARGETS+=	handicap_s handicap_l
-TARGETS+=	label vorfahrt comments relation_gps nolighting
+TARGETS+=	label vorfahrt relation_gps nolighting
 TARGETS+=	housenumbers green brunnels mount
+TARGETS+=	comments ${COMMENTS_PARTIAL}
 
 WRITEABLE=	chmod u+w,ugo+r
 READONLY=	chmod ugo+r,ugo-w
@@ -255,18 +260,63 @@ vorfahrt:	vorfahrt-orig
 	$(CONVERT2HAFAS) vorfahrt-orig > vorfahrt
 	-@$(READONLY) $@
 
-# really should check against strassen etc. too
-comments:	comments_cyclepath-orig \
-		comments_ferry-orig \
-		comments_misc-orig \
-		comments_mount-orig \
-		comments_path-orig \
-		comments_route-orig \
-		comments_tram-orig \
-		comments_kfzverkehr-orig
+# the comments* rules really should check against strassen etc. too
+# this should be better done in a loop, but unfortunately there's no way
+# to define a loop in a compatible way
+comments_cyclepath: comments_cyclepath-orig
 	-@$(WRITEABLE) $@
 	cat $> | $(CONVERT2HAFAS) -map B - | \
 	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
+	-@$(READONLY) $@
+
+comments_ferry: comments_ferry-orig
+	-@$(WRITEABLE) $@
+	cat $> | $(CONVERT2HAFAS) -map B - | \
+	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
+	-@$(READONLY) $@
+
+comments_misc: comments_misc-orig
+	-@$(WRITEABLE) $@
+	cat $> | $(CONVERT2HAFAS) -map B - | \
+	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
+	-@$(READONLY) $@
+
+comments_mount: comments_mount-orig
+	-@$(WRITEABLE) $@
+	cat $> | $(CONVERT2HAFAS) -map B - | \
+	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
+	-@$(READONLY) $@
+
+comments_path: comments_path-orig
+	-@$(WRITEABLE) $@
+	cat $> | $(CONVERT2HAFAS) -map B - | \
+	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
+	-@$(READONLY) $@
+
+comments_route: comments_route-orig
+	-@$(WRITEABLE) $@
+	cat $> | $(CONVERT2HAFAS) -map B - | \
+	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
+	-@$(READONLY) $@
+
+comments_tram: comments_tram-orig
+	-@$(WRITEABLE) $@
+	cat $> | $(CONVERT2HAFAS) -map B - | \
+	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
+	-@$(READONLY) $@
+
+comments_kfzverkehr: comments_kfzverkehr-orig
+	-@$(WRITEABLE) $@
+	cat $> | $(CONVERT2HAFAS) -map B - | \
+	    $(RESOLVE_STARS) strassen landstrassen landstrassen2 - > $@
+	-@$(READONLY) $@
+
+comments:	${COMMENTS_PARTIAL}
+	-@$(WRITEABLE) $@
+	for i in $>; do \
+	    echo "# BEGIN $$i" >> $@; \
+	    cat $$i >> $@; \
+	done
 	-@$(READONLY) $@
 
 relation_gps:	relation_gps-orig

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Polar.pm,v 1.11 2002/07/11 17:03:29 eserte Exp $
+# $Id: Polar.pm,v 1.12 2004/03/08 00:07:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -151,6 +151,11 @@ sub dms_string2ddd {
     } else {
 	die "Can't parse $s";
     }
+}
+
+sub trim_accuracy {
+    my(undef, $x, $y) = @_;
+    (sprintf("%.6f", $x), sprintf("%.6f", $y));
 }
 
 $obj = new Karte::Polar;

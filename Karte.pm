@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Karte.pm,v 1.39 2004/02/13 22:12:52 eserte Exp $
+# $Id: Karte.pm,v 1.40 2004/03/08 00:08:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2002 Slaven Rezic. All rights reserved.
@@ -151,6 +151,7 @@ sub map2standard {
 
 sub map2standard_s {
     my($self, $old) = @_;
+    # do not use trim_accuracy here ... standard is always int
     join(",", map { int } $self->map2standard(split /,/, $old));
 }
 
@@ -165,7 +166,7 @@ sub standard2map {
 
 sub standard2map_s {
     my($self, $new) = @_;
-    join(",", map { int } $self->standard2map(split /,/, $new));
+    join(",", $self->trim_accuracy($self->standard2map(split /,/, $new)));
 }
 
 # Transformation zwischen beliebigen Koordinatensystemen
@@ -176,7 +177,12 @@ sub map2map {
 
 sub map2map_s {
     my($from, $to, $old) = @_;
-    join(",", map { int } $from->map2map($to, split /,/, $old));
+    join(",", $to->trim_accuracy($from->map2map($to, split /,/, $old)));
+}
+
+sub trim_accuracy {
+    my(undef, $x, $y) = @_;
+    (int($x), int($y));
 }
 
 # Return the rotating angle between maps

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapInfo.pm,v 1.6 2004/03/02 08:05:41 eserte Exp $
+# $Id: MapInfo.pm,v 1.7 2004/03/08 07:05:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
@@ -16,6 +16,9 @@ package Strassen::MapInfo;
 
 use strict;
 use vars qw(@ISA);
+
+require Strassen::Core;
+require Strassen::MultiStrassen;
 
 @ISA = 'Strassen';
 
@@ -221,6 +224,7 @@ sub create_mif_mid {
     my($minx,$miny,$maxx,$maxy) = $self->bbox;
 
     my $conv;
+    my $trim_accuracy;
     my $coordsysline;
     if ($args{map} || $args{tomap}) {
 	$args{map}   ||= "standard";
@@ -230,10 +234,13 @@ sub create_mif_mid {
 	$conv = sub {
 	    $Karte::map{$args{map}}->map2map($Karte::map{$args{tomap}}, @_);
 	};
+	$trim_accuracy = sub {
+	    $Karte::map{$args{tomap}}->trim_accuracy(@_);
+	};
     }
 
-    ($minx,$miny) = $conv->($minx,$miny) if $conv;
-    ($maxx,$maxy) = $conv->($maxx,$maxy) if $conv;
+    ($minx,$miny) = $trim_accuracy->($conv->($minx,$miny)) if $conv;
+    ($maxx,$maxy) = $trim_accuracy->($conv->($maxx,$maxy)) if $conv;
 
     if ($args{tomap} eq 'polar') {
 	$coordsysline = "";
@@ -272,13 +279,13 @@ EOF
 
 	if ($no_coords == 1) {
 	    my($x, $y) = split /,/, $r->[Strassen::COORDS()]->[0];
-	    ($x,$y) = $conv->($x,$y) if $conv;
+	    ($x,$y) = $trim_accuracy->($conv->($x,$y)) if $conv;
 	    $mif .= "Point $x $y\n";
 	} else {
 	    $mif .= "Pline $no_coords\n";
 	    for my $p (@{ $r->[Strassen::COORDS()] }) {
 		my($x, $y) = split /,/, $p;
-		($x,$y) = $conv->($x,$y) if $conv;
+		($x,$y) = $trim_accuracy->($conv->($x,$y)) if $conv;
 		$mif .= "$x $y\n";
 	    }
 	    $mif .= "    Pen (1,2,1)\n";
@@ -311,16 +318,235 @@ sub export {
     close MID;
 }
 
+=item create_mif_mid_from_data_directory($data_directory, %args)
+
+Static method. Take a data directory and return two strings
+containing MIF and MID data.
+
+Additional arguments may be: map => I<maptoken> and tomap =>
+I<maptoken>.
+
+=cut
+
+# XXX Partially same code in create_mif_mid
+sub create_mif_mid_from_data_directory {
+    my($datadir, %args) = @_;
+    local @Strassen::datadirs = $datadir;
+    my $version = "300";
+
+    require Template;
+
+    my $conv;
+    my $trim_accuracy;
+    my $coordsysline;
+    if ($args{map} || $args{tomap}) {
+	$args{map}   ||= "standard";
+	$args{tomap} ||= "standard";
+	require Karte;
+	Karte::preload(":all");
+	$conv = sub {
+	    $Karte::map{$args{map}}->map2map($Karte::map{$args{tomap}}, @_);
+	};
+	$trim_accuracy = sub {
+	    $Karte::map{$args{tomap}}->trim_accuracy(@_);
+	};
+    }
+
+    if ($args{tomap} eq 'polar') {
+	$coordsysline = "";
+    }
+    if (!defined $coordsysline) {
+	$coordsysline = qq{COORDSYS NonEarth Units "m" Bounds ([% minx %],[% miny %]) ([% maxx %],[% maxy %])\n};
+    }
+
+    my @column_names = qw(Name Category
+			  Elevation
+			  Trafficlight_Comment Trafficlight_Category
+			  Blocking_Comment Blocking_Category
+			  Cyclepath_Comment Cyclepath_Category
+			  Quality_Comment Quality_Category
+			  Handicap_Comment Handicap_Category
+			  Mount_Comment Mount_Category
+			  Path_Comment Path_Category
+			  Route_Comment Route_Category
+			  Tram_Comment Tram_Category
+			  Traffic_Comment Traffic_Category
+			  Ferry_Comment Ferry_Category
+			  Brunnel_Comment Brunnel_Category
+			  Green_Comment Green_Category
+			  Nolighting_Comment Nolighting_Category
+			  Comment Comment_Category
+			 );
+    # XXX missing columns: Author, AcquireAuthor,CreationDate, AcquireDate
+    my %column_to_index;
+    {
+	my $i = 0;
+	for (@column_names) {
+	    $column_to_index{$_} = $i;
+	    $i++;
+	}
+    }
+
+    my $mid = "";
+    my $mif = <<EOF;
+VERSION $version
+CHARSET "WindowsLatin1"
+DELIMITER ","
+${coordsysline}COLUMNS @{[ scalar @column_names ]}
+EOF
+    for my $column (@column_names) {
+	$mif .= <<EOF;
+  $column [% TYPE_${column} %]
+EOF
+    }
+    $mif .= <<EOF;
+DATA
+
+EOF
+
+    my($minx,$miny,$maxx,$maxy);
+    my @max_len;
+
+ FILELOOP:
+    for my $def ([["strassen", "landstrassen", "landstrassen2", "plaetze", "faehren"], NAME => "Name", CAT => "Category"],
+		 ["ampeln", NAME => "Trafficlight_Comment", CAT => "Traffic_Category"],
+		 ["brunnels", NAME => "Brunnel_Comment", CAT => "Brunnel_Category"],
+		 [["comments_cyclepath", "radwege_exact"], NAME => "Cyclepath_Comment", CAT => "Cyclepath_Category"],
+		 ["comments_ferry", NAME => "Ferry_Comment", CAT => "Ferry_Category"],
+		 ["comments_kfzverkehr", NAME => "Traffic_Comment", CAT => "Traffic_Category"],
+		 ["comments_misc", NAME => "Comment", CAT => "Comment_Category"],
+		 ["comments_mount", NAME => "Mount_Comment", CAT => "Mount_Category"],
+		 ["comments_path", NAME => "Path_Comment", CAT => "Path_Category"],
+		 ["comments_route", NAME => "Route_Comment", CAT => "Route_Category"],
+		 ["comments_tram", NAME => "Tram_Comment", CAT => "Tram_Category"],
+		 ["gesperrt", NAME => "Blocking_Comment", CAT => "Blocking_Category"],
+		 ["green", NAME => "Green_Comment", CAT => "Green_Category"],
+		 [["handicap_s", "handicap_l"], NAME => "Handicap_Comment", CAT => "Handicap_Category"],
+		 ["hoehe", NAME => "Elevation"],
+		 ["nolighting", NAME => "Nolighting_Comment", CAT => "Nolighting_Category"],
+		 [["qualitaet_s", "qualitaet_l"], NAME => "Quality_Comment", CAT => "Quality_Category"],
+		 # missing: vorfahrt
+		) {
+	my $file = shift @$def;
+	my %field_map = @$def;
+	while(my($k,$v) = each %field_map) {
+	    my $inx = $column_to_index{$v};
+	    if (!defined $inx) {
+		warn "Cannot find index for $v, skipping"; # XXX should die some day
+		next FILELOOP;
+	    }
+	    $field_map{$k} = $inx;
+	}
+
+	my $str;
+	if (ref $file eq 'ARRAY') {
+	    $str = MultiStrassen->new(@$file);
+	    if ($args{v}) { print STDERR "@$file...\n" }
+	} else {
+	    $str = Strassen->new($file);
+	    if ($args{v}) { print STDERR "$file...\n" }
+	};
+
+	my($this_minx, $this_miny, $this_maxx, $this_maxy) = $str->bbox;
+	$minx = $this_minx if !defined $minx || $this_minx < $minx;
+	$miny = $this_miny if !defined $miny || $this_miny < $miny;
+	$maxx = $this_maxx if !defined $maxx || $this_maxx > $maxx;
+	$maxy = $this_maxy if !defined $maxy || $this_maxy > $maxy;
+
+	$str->init;
+	while(1) {
+	    my $r = $str->next;
+	    my $no_coords = @{ $r->[Strassen::COORDS()] };
+	    last if !$no_coords;
+
+	    if ($no_coords == 1) {
+		my($x, $y) = split /,/, $r->[Strassen::COORDS()]->[0];
+		($x,$y) = $trim_accuracy->($conv->($x,$y)) if $conv;
+		$mif .= "Point $x $y\n";
+	    } else {
+		$mif .= "Pline $no_coords\n";
+		for my $p (@{ $r->[Strassen::COORDS()] }) {
+		    my($x, $y) = split /,/, $p;
+		    ($x,$y) = $trim_accuracy->($conv->($x,$y)) if $conv;
+		    $mif .= "$x $y\n";
+		}
+		$mif .= "    Pen (1,2,1)\n";
+	    }
+
+	    my @data_row = ("") x @column_names;
+	    if (exists $field_map{"NAME"}) {
+		my $data_row_inx = $field_map{"NAME"};
+		$data_row[$data_row_inx] = $r->[Strassen::NAME()];
+		$max_len[$data_row_inx] = length $r->[Strassen::NAME()]
+		    if (!defined $max_len[$data_row_inx] ||
+			$max_len[$data_row_inx] < length $r->[Strassen::NAME()]
+		       );
+	    }
+	    if (exists $field_map{"CAT"}) {
+		my $data_row_inx = $field_map{"CAT"};
+		$data_row[$data_row_inx] = $r->[Strassen::CAT()];
+		$max_len[$data_row_inx] = length $r->[Strassen::CAT()]
+		    if (!defined $max_len[$data_row_inx] ||
+			$max_len[$data_row_inx] < length $r->[Strassen::CAT()]
+		       );
+	    }
+	    $_ =~ s/\"//g for @data_row; # XXX better solution
+	    $mid .= join(",", map { qq{"$_"} } @data_row) . "\n";
+	}
+    }
+
+    ($minx,$miny) = $trim_accuracy->($conv->($minx,$miny)) if $conv;
+    ($maxx,$maxy) = $trim_accuracy->($conv->($maxx,$maxy)) if $conv;
+
+    my %t_args;
+    {
+	my $i = 0;
+	for (@column_names) {
+	    $t_args{"TYPE_$_"} = "Char(" . ($max_len[$i]+1) . ")";
+	    $i++;
+	}
+    }
+    my $t = Template->new(DEBUG => 'undef');
+    my $new_mif;
+    $t->process(\$mif,
+		{
+		 minx => $minx,
+		 miny => $miny,
+		 maxx => $maxx,
+		 maxy => $maxy,
+		 %t_args,
+		}, \$new_mif);
+
+    ($new_mif, $mid);
+}
+
+=item export_datadir($data_directory, $filename, %args)
+
+Like export(), but use a data directory instead.
+
+=cut
+
+sub export_datadir {
+    my($data_directory, $filename, %args) = @_;
+    my($mif, $mid) = create_mif_mid_from_data_directory($data_directory, %args);
+    open(MIF, ">$filename.MIF") or die "Can't create $filename.MIF: $!";
+    print MIF $mif;
+    close MIF;
+    open(MID, ">$filename.MID") or die "Can't create $filename.MID: $!";
+    print MID $mid;
+    close MID;
+}
+
 =back
 
 =cut
 
 return 1 if caller;
 
-require Strassen;
 require Getopt::Long;
+my $use_datadir;
 my %args;
-if (!Getopt::Long::GetOptions(\%args, "o=s", "map=s", "tomap=s")) {
+if (!Getopt::Long::GetOptions(\%args, "o=s", "map=s", "tomap=s", "v!")) {
     die "usage!";
 }
 my $o = delete $args{o};
@@ -330,11 +556,20 @@ if (@ARGV == 0) {
     die "Strassen file missing";
 } elsif (@ARGV == 1) {
     my $f = shift;
-    $s = Strassen->new($f);
+    if (-d $f) { # it is a data directory
+	$use_datadir = 1;
+	$s = $f;
+    } else {
+	$s = Strassen->new($f);
+    }
 } else {
     $s = MultiStrassen->new(@ARGV);
 }
-export($s, $o, %args);
+if ($use_datadir) {
+    export_datadir($s, $o, %args);
+} else {
+    export($s, $o, %args);
+}
 
 =head1 AUTHOR
 
