@@ -1436,10 +1436,15 @@ EOF
     if ($show_introduction) {
 	load_teaser();
 	# use "make count-streets" in ../data
+	print <<EOF if ($bi->{'can_table'});
+<td valign="top">@{[ blind_image(420,1) ]}<br>
+EOF
  	print <<EOF;
-<td valign="top">@{[ blind_image(420,1) ]}<br>Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 3600 von 10000 Berliner Stra&szlig;en sowie ca. 150 Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
+Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 3600 von 10000 Berliner Stra&szlig;en sowie ca. 150 Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
 Nebenstra&szlig;en). Bei nicht erfassten Straﬂen wird automatisch die
 n‰chste bekannte verwendet. Hausnummern k&ouml;nnen nicht angegeben werden.<br><br>
+EOF
+	print <<EOF if ($bi->{'can_table'});
 </td>
 <td rowspan="3" valign="top" @{[ $start_bgcolor ? "bgcolor=$start_bgcolor" : "" ]}>@{[ defined &teaser && !$bi->{'css_buggy'} ? teaser() : "" ]}</td>
 </tr>
