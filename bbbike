@@ -4836,6 +4836,7 @@ sub define_item_attribs {
 	 'GPSp?'  => "#303030",  # unsure
 
 	 'CP' => '#a000a0',
+	 'CP2'=> '#a000a0',
 	 'CS' => '#a000a0',
 	 'St' => '#b00080',
 	 'Gf' => '#c00080',
@@ -4975,9 +4976,10 @@ sub define_item_attribs {
 	 'P0' => 'last',
 	);
     %line_shorten =
-	('CP' => 1,
-	 'P0' => 1,
-	 'PI' => 1,
+	('CP'  => 1,
+	 'CP2' => 1,
+	 'P0'  => 1,
+	 'PI'  => 1,
 	);
     # Label size per category
     %category_size =

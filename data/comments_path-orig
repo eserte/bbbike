@@ -1,11 +1,13 @@
 # $Id: comments_path-orig,v 4.8 2005/03/19 11:12:06 eserte Exp eserte $
-# CP; : Kommentar an Punkt B bei Fahrt von A nach C
-# CP  : wie "CP;", Kommentar gültig für beide Fahrtrichtungen
-# CS; : Kommentar gültig für Strecke in einer Richtung
-# CS  : Kommentar gültig für beide Fahrtrichtungen
-# PI; : path instruction (genauere Wegbeschreibung)
-# P0; : dieser Weg ist gesperrt (z.B. Abbiegen nicht möglich), aber eine
-#       Umfahrung ist möglich ... siehe auch Kategorie "3" in gesperrt-orig
+# CP;  : Kommentar an Punkt B bei Fahrt von A nach C
+# CP   : wie "CP;", Kommentar gültig für beide Fahrtrichtungen
+# CP2; : Kommentar an Punkt A bei Fahrt von A nach B
+# CP2  : Kommentar an Punkt A bei Fahrt von A nach B und an Punkt B bei Fahrt von B nach A
+# CS;  : Kommentar gültig für Strecke in einer Richtung
+# CS   : Kommentar gültig für beide Fahrtrichtungen
+# PI;  : path instruction (genauere Wegbeschreibung)
+# P0;  : dieser Weg ist gesperrt (z.B. Abbiegen nicht möglich), aber eine
+#        Umfahrung ist möglich ... siehe auch Kategorie "3" in gesperrt-orig
 #
 #
 # Path instructions etc.

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.21 2005/03/19 11:11:22 eserte Exp $
+# $Id: bbbike.cgi,v 7.21 2005/03/19 11:11:22 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -3117,22 +3117,27 @@ sub search_coord {
 		my @comment_objs;
 		my %seen_comments_in_this_etappe;
 		my %comments_in_whole_etappe;
+		my %comments_at_beginning;
 		my $is_first = 1;
 		for my $i ($strnames[$i]->[4][0] .. $strnames[$i]->[4][1]) {
 		    my @etappe_comment_objs = $comments_net->get_point_comment(\@path, $i, undef, AsObj => 1);
-		    for (@etappe_comment_objs) {
-			(my $name = $_->[Strassen::NAME()]) =~ s/^.+?:\s+//; # strip street;
-			$_ = [$name, $_];
-		    }
-		    my %etappe_comments = map {($_->[0],1)} @etappe_comment_objs;
-		    foreach my $etappe_comment_obj (@etappe_comment_objs) {
-			if (!exists $seen_comments_in_this_etappe{$etappe_comment_obj->[0]}) {
-			    push @comment_objs, $etappe_comment_obj;
-			    $seen_comments_in_this_etappe{$etappe_comment_obj->[0]}++;
+		    my %etappe_comments;
+		    if (@etappe_comment_objs) {
+			for (@etappe_comment_objs) {
+			    (my $name = $_->[Strassen::NAME()]) =~ s/^.+?:\s+//; # strip street;
+			    $_ = [$name, $_];
+			}
+			%etappe_comments = map {($_->[0],1)} @etappe_comment_objs;
+			foreach my $etappe_comment_obj (@etappe_comment_objs) {
+			    if (!exists $seen_comments_in_this_etappe{$etappe_comment_obj->[0]}) {
+				push @comment_objs, $etappe_comment_obj;
+				$seen_comments_in_this_etappe{$etappe_comment_obj->[0]}++;
+			    }
 			}
 		    }
 		    if ($is_first) {
 			%comments_in_whole_etappe = %etappe_comments;
+			%comments_at_beginning = %etappe_comments;
 			$is_first = 0;
 		    } else {
 			while(my($k,$v) = each %comments_in_whole_etappe) {
@@ -3142,6 +3147,9 @@ sub search_coord {
 			}
 		    }
 		}
+
+#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@comment_objs, \%comments_in_whole_etappe, \%comments_at_beginning],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+
 		for (@comment_objs) {
 		    # Alle Kommentare, die sich nur auf Teilstrecken
 		    # beziehen, bekommen ein Anhängsel. Ausnahme:
@@ -3149,9 +3157,12 @@ sub search_coord {
 		    # sich in comments_path befindet, ausgenommen
 		    # werden, aber ich bekomme zurzeit die Info nicht
 		    # heraus.
-		    if (!exists $comments_in_whole_etappe{$_->[0]} &&
-			$_->[1]->[Strassen::CAT()] !~ /^PI/) {
-			$_->[0] .= " (Teilstrecke)";
+		    if (!exists $comments_in_whole_etappe{$_->[0]}) {
+			my $cat = $_->[1]->[Strassen::CAT()];
+			if (($cat =~ /^CP2/ && !exists $comments_at_beginning{$_->[0]}) ||
+			    $cat !~ /^(CP2|PI)/) {
+			    $_->[0] .= " (Teilstrecke)";
+			}
 		    }
 		}
 
@@ -3452,7 +3463,7 @@ EOF
 		$line_fmt = "%s %s %s (ges.:%s)\n";
 	    } else {
 		$line_fmt = "%-13s %-24s %-31s %-8s";
-		if ($has_fragezeichen) {
+		if ($has_fragezeichen && !$printmode) {
 		    $line_fmt .= " %s";
 		}
 		$line_fmt .= "\n";
@@ -3481,10 +3492,10 @@ EOF
 	    }
 	    print "><tr><th>${fontstr}Etappe$fontend</th><th>${fontstr}Richtung$fontend</th><th>${fontstr}Stra&szlig;e$fontend</th><th>${fontstr}Gesamt$fontend</th>";
 	    if ($with_comments) {
-		print "<th" . ($with_cat_display ? " colspan=4" : "") .
+		print "<th" . ($with_cat_display && !$printmode ? " colspan=4" : "") .
 	              ">${fontstr}Bemerkungen$fontend</th>";
 	    }
-	    if ($has_fragezeichen) {
+	    if ($has_fragezeichen && !$printmode) {
 		print "<th></th>"; # no header for Fragezeichen
 	    }
 	    print "</tr>\n";
@@ -3512,7 +3523,7 @@ EOF
 		print "$fontend</td><td nowrap>$fontstr$ges_entf_s$fontend</td>";
 		$odd = 1-$odd;
 		if ($with_comments && $comments_net) {
-		    if ($with_cat_display) {
+		    if ($with_cat_display && !$printmode) {
 			# XXX ungenau, sollte alle teilstücke zwischen diesem und dem nächsten pathindex
 			# berückstichtigen und dann entweder die schlechteste und die längste kategorie
 			# verwenden
@@ -3540,7 +3551,7 @@ EOF
 		    }
 		    print "<td>$fontstr$etappe_comment$fontend</td>";
 		}
-		if ($has_fragezeichen) {
+		if ($has_fragezeichen && !$printmode) {
 		    if ($fragezeichen_comment ne "") {
 			my $qs = CGI->new({strname => $fragezeichen_comment,
 					   strname_html => CGI::escapeHTML($fragezeichen_comment),
@@ -3563,10 +3574,10 @@ EOF
 		if ($with_comments && $comments_net) {
 		    $cols++;
 		}
-		if ($with_cat_display) {
+		if ($with_cat_display && !$printmode) {
 		    $cols += 3;
 		}
-		if ($has_fragezeichen) {
+		if ($has_fragezeichen && !$printmode) {
 		    $cols++;
 		}
 		print qq{$cols" style="background-color:white; text-align:right;">};
