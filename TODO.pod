@@ -22,7 +22,8 @@ reproduce this one anymore...)
 =item * (M2)
 
 BBBikeXS, fast_plot_point: use main::get_symbol_scale() to get name of
-ampel/andreaskr/etc. images.
+ampel/andreaskr/etc. images. => done, but I get strange warnings, see
+TODOs in BBBikeXS/t/base.t...
 
 =item * (H2)
 
@@ -74,8 +75,8 @@ Optional eins oder beides zusammen.
 
 =item * (M2)
 
-Update E<uuml>ber das Internet: rsync-UnterstE<uuml>tzung austesten.
-Oder alternativ auf CVS setzen?
+Update E<uuml>ber das Internet: rsync-UnterstE<uuml>tzung und die
+Alternative CVS testen.
 
 =item * (M1)
 
@@ -117,10 +118,9 @@ unklar.
 
 =item * (M3)
 
-Mehr benutzerfreundliche Optionen (E<quot>ShortcutsE<quot>) fE<uuml>r
-die Suche: kE<uuml>rzeste Strecke, schnellste Strecke (in
-AbhE<auml>ngigkeit von Wind, Steigung/GefE<auml>lle,
-StraE<szlig>enoberflE<auml>che etc.),
+Mehr einfache Optionen (E<quot>ShortcutsE<quot>) fE<uuml>r die Suche:
+kE<uuml>rzeste Strecke, schnellste Strecke (in AbhE<auml>ngigkeit von
+Wind, Steigung/GefE<auml>lle, StraE<szlig>enoberflE<auml>che etc.),
 
 =item * (M1)
 
@@ -131,8 +131,7 @@ beim Anklicken von "Ort" die Datei immer neu eingelesen werden soll).
 
 Portrait/Landscape-Umschaltung: alle Canvas-Daten aktualisieren. Route
 wird z.Zt. nicht gedreht (evtl. auf @coords verzichten und nur
-@realcoords verwenden). Sollte der Portrait-Mode vielleicht nur bei
-$advanced anwaehlbar sein?
+@realcoords verwenden).
 
 =item * (M4)
 
@@ -152,10 +151,10 @@ Linien anzeigen
 =item * (M2)
 
 Option -centerc auch schöner zugE<auml>nglich machen. Eine Möglichkeit
-wäre, einen Button neben der Option anzubieten, der in den
-set-coord-mode geht, cursor aendert, das tk-getopt-fenster withdraw-t,
-und darauf wartet, dass der benutzer auf die karte klickt oder
-E<quot>cancelE<quot> drückt.
+wäre, im Optionseditor einen Button neben der Option anzubieten, der
+in den set-coord-mode geht, cursor aendert, das tk-getopt-fenster
+withdraw-t, und darauf wartet, dass der benutzer auf die karte klickt
+oder E<quot>cancelE<quot> drückt.
 
 =item * (M1)
 
@@ -188,7 +187,7 @@ bei bbbike.cgi verwendet.
 
 Da das Zeichnen von StraE<szlig>ennamen so lange dauert: mit Hints
 arbeiten (z.B. fE<uuml>r einige oft verwendete Zoomstufen Koordinaten
- und Transformationsmatrizen vorberechnen).
+und Transformationsmatrizen vorberechnen).
 
 =item * (H2)
 
@@ -212,21 +211,11 @@ eine Tk::Canvas-Erweiterung und diese in BBBike verwenden?
 
 VergrE<ouml>E<szlig>erung der Schrift beim Zoomen
 
-=item * (E1)
-
-Speichern von Grafiken: Extension erzwingen (oder wird das bereits
-gemacht?), E<Uuml>berschreiben testen und verhindern (oder wird das
-bereits gemacht?)
-
-=item * (??)
-
-evtl. mit fork eine Warteschleife implementieren. Wenn es nicht mit Tk
-(threads!) geht, dann vielleicht mit X11::Protocol oder mit xterm? XXX
-Warteschleife?
-
 =item * (H1)
 
-Kurzhilfe: kann man feststellen, ob man eine 2/3-Tastenmaus hat?
+Kurzhilfe: kann man feststellen, ob man eine 2/3-Tastenmaus hat? Und
+wenn es nur eine 2-Tasten-Maus ist, dann existiert vielleicht eine
+Emulation fuer die mittlere Taste?
 
 =item * (E2)
 
@@ -264,7 +253,8 @@ Leider ist das Event-Handling noch inkompatibel mit Tk. Auch fE<uuml>r
 wettermeldung2 mit LWPng arbeiten. =E<gt> Vielleicht das hochgelobte
 POE verwenden.
 
-Stimmt das noch immer, auch mit Http.pm?
+XXX Stimmt das noch immer, auch mit Http.pm? Unter Unix scheint es gut
+zu laufen.
 
 =item * (M2)
 
@@ -483,7 +473,7 @@ MDI-Interface entwickeln mit:
  * einfaches opt-einstellungs-fenster
  * routenbeschreibung
 Siehe Tk::WindowManager =E<gt> entwickle ich nicht mehr weiter,
-dafE<uuml>r gibt es aber ein neues Tk::MDI-Widget
+dafE<uuml>r gibt es aber ein neues Tk::MDI-Widget. Aber: MDI is evil!
 
 =item *
 
@@ -492,7 +482,7 @@ Andreas' Labeling-Algorithmus verwenden
 =item * (E2)
 
 -font/-fontfamily/-fontheight handling verbessern. -font in der
-Kommandozeile sollte Einstellungen in der Config-Dateo überschreiben.
+Kommandozeile sollte Einstellungen in der Config-Datei überschreiben.
 Das Verwenden von -fontfamily lucida -fontheight 7 führt nicht zum
 gewünschten Ergebnis.
 
@@ -525,7 +515,7 @@ optionally display the bbbike icon (avoid transparency problem!).
  - shift-click vom start aus geht nicht
  - besseres cdrom.pl schreiben. Sowas wie cons, nur fuer das kopieren. Oder mkisofs beibringen, das er die richtigen sachen ohne kopieren erzeugt
 
-=item BBBike - Externalization, towards to v3.0
+=item BBBike - Externalization, towards to v4.0
  
  Allgemein: Aenderungen nur durchfuehren, wenn sie entweder trivial und unaufwendig sind oder zwingend fuer die anstehenden Portierungen sind.
  
@@ -724,9 +714,6 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
 
   Verzögerung durch Richtungsänderungen: geradeaus, rechts/links
 
-=item SpielplE<auml>ze aufnehmen? Z.B.
-  L<http://www.stadtentwicklung.berlin.de/umwelt/stadtgruen/kinderspielplaetze/de/spielplaetze/>
-
 =item Splines verwenden? Z.B. in den Daten so markieren: x,y S x,y ...
   Falls ein Spline auftritt, wird der gesamte Linienzug mitsamt
   Outline als -smooth => 1 markiert und für nicht spline-Abschnitte
@@ -763,33 +750,14 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
   * exch ~ and "" version
   * test "" version
 
-=item Ideensammlung für schrittweise landstrassen-orig-Auflösung in Brandenburg
-
-  0. Änderungen für Variante 1 und 2
-    - Es wird in ein neues landstrassen-orig mit Hafas-Koordinatensystem
-      gewandelt: DONE!
-    - BASE: landstrassen-orig => H: DONE!
-    - alle Punkte aus landstrassen-orig, die sich in anderen bbd-Dateien
-      befinden, müssen auch umgewandelt werden: DONE!
-    - alle anderen Datentypen (insbesondere .bbr in ~/.bbbike) müssen auch
-      umgewandelt werden
-    - für vergessene Dateien muss es ein Skript geben, das die
-      Umwandlung durchführt
-
-  1. Teile der Datei umwandeln
-    -
- 
-  2. Gesamte Datei umwandeln
-    -
-
 =item dillo 0.7.x ist schon richtig gut --- kann imagemaps und tabellen
   für ipaq besorgen und dann endlich die alternative zu bbbike impl.!
   => auf skiffcluster compilieren
 
 =item gpsman2bbd Parameteruebergabe ueberarbeiten
 
-=item Tk::LayerEditor in einer nicht-DND-Version (für Windows, optional
-  auch für X11)
+=item Tk::LayerEditor in einer nicht-DND-Version (für Windows,
+optional auch für X11, notwendig fuer Tk804)
 
 =item * (H3)
 
@@ -874,6 +842,25 @@ geht ein import?
 
 =over
 
+=item * (H2)
+
+Cycle paths are displaced when zooming. Correct this.
+
+=item * (M1)
+
+Remove SRT Algo (bbbike menu, StrassenNetz.pm ...)
+
+=item * (M2)
+
+enter_opt_preferences, Straßenqualität: additional select box like in
+bbbike.cgi (Kopfsteinpflaster vermeiden, rennradtauglich, Custom).
+
+=back
+
+=head2 Windows specific
+
+=over
+
 =item * (M1)
 
 Maybe under Windows or for all click-to-focus systems: make bbbike
@@ -891,26 +878,6 @@ Windows: An activating click should only activate the window but not
 doing an action. This should be like in Excel (but unlink Windows
 Commander). This sounds like a generell Tk problem (is it maybe solved
 with Tk804?).
-
-=item * (H2)
-
-Cycle paths are displaced when zooming. Correct this.
-
-=item * (M1)
-
-Remove SRT Algo (bbbike menu, StrassenNetz.pm ...)
-
-=item * (M2)
-
-enter_opt_preferences, Straßenqualität: additional select box like in
-bbbike.cgi (Kopfsteinpflaster vermeiden, rennraudtauglich, Custom).
-
-=item * (E1)
-
-Show all plugins: Change the dialog to select first the plugin and
-then on a button E<quot>Load pluginE<quot> (multiple selection
-possible). Add a cancel button. Double-1 is a shortcut for loading the
-plugin.
 
 =item * (E3)
 
@@ -966,6 +933,22 @@ L<http://www.wirtschaft.brandenburg.de/sixcms/media.php/1312/broschurrad.pdf>
 
 =over
 
+=item * (E1)
+
+Look at it:
+
+aus zwei Artikeln in der aktuellen Bahnzeitung punkt3 habe
+ich herausgelesen, dass es ab dem 14. Juni eine neue S-Bahnlinie
+S85 gibt, die von Grünau über den Ostring nach Waidmannslust
+fahren soll. Sehe ich das richtig, dass diese Linie die erste
+Linie nach der Wiedervereinigung ist, die eine bis dahin nicht
+gefahrene Trasse nutzt? Die Artikel sind Online unter
+
+<http://www.punkt3.de/p3/Punkt3.nsf/f89cda9362f1398c80256a380044fd3c/e35bb9a0c9febd3cc1256ea0003a35c3?OpenDocument>
+<http://www.punkt3.de/p3/Punkt3.nsf/f89cda9362f1398c80256a380044fd3c/110ed361d2a59f1dc1256ea0003790b4?OpenDocument>
+
+nachzulesen.
+
 =item Vosskanal => Voßkanal?
 
  neue stuetzpunkte fuer gps_correction_map (entsprechungen in standard-koordinaten suchen)
@@ -999,29 +982,42 @@ L<http://www.wirtschaft.brandenburg.de/sixcms/media.php/1312/broschurrad.pdf>
 =item * Funktionieren die Aufzüge bei der S-Bahn? Das erfährt man
 E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.
 
+=item SpielplE<auml>ze aufnehmen? Z.B.
+  L<http://www.stadtentwicklung.berlin.de/umwelt/stadtgruen/kinderspielplaetze/de/spielplaetze/>
+
 =back
 
 =head2 Datenhandling (make, conversion ...)
 
 =over
 
+=item * (M4)
+
+Siehe miscsrc/merge_overlapping_streets.pl 
+
 =item * (H3)
 
 misc/fragezeichen nach data migrieren. Alle Skripte/Module anpassen
-(MANIFEST, CVS, RCS-rename, in insert_points aufnehmen,
-data_corrected/fragezeichen aus bbbike.pl entfernen ...)
+(MANIFEST, CVS, RCS-rename, 
+data_corrected/fragezeichen aus bbbike.pl entfernen ...) DONE,
+checkin, change CVS/RCS etc.
+
+=item * (M2)
+
+misc/fragezeichen in insert_points aufnehmen
 
 =item * (M1)
 
 Convert the data/Makefile to data/Makefile.PL or similar (to solve
-problems like for loops etc.).
+problems like for loops etc. only availabkle in BSD make).
 
 =item * (M3)
 
 All references to E<quot>commentsE<quot> should use the partial
 comments files instead. Maybe define a method with a list of the
 partial files in Strassen/Dataset. Create new menu cascade Comments
-all and comment types (partially done in bbbike).
+all and comment types (partially done in bbbike, check for other
+apps).
 
 =item * (M5)
 
@@ -1044,22 +1040,6 @@ Rewrite the misc/Makefile rule to use standard Strassen methods.
 =head2 Verschiedenes
 
 =over
-
-=item * (E1)
-
-Look at it:
-
-aus zwei Artikeln in der aktuellen Bahnzeitung punkt3 habe
-ich herausgelesen, dass es ab dem 14. Juni eine neue S-Bahnlinie
-S85 gibt, die von Grünau über den Ostring nach Waidmannslust
-fahren soll. Sehe ich das richtig, dass diese Linie die erste
-Linie nach der Wiedervereinigung ist, die eine bis dahin nicht
-gefahrene Trasse nutzt? Die Artikel sind Online unter
-
-<http://www.punkt3.de/p3/Punkt3.nsf/f89cda9362f1398c80256a380044fd3c/e35bb9a0c9febd3cc1256ea0003a35c3?OpenDocument>
-<http://www.punkt3.de/p3/Punkt3.nsf/f89cda9362f1398c80256a380044fd3c/110ed361d2a59f1dc1256ea0003790b4?OpenDocument>
-
-nachzulesen.
 
 =item * (E1)
 
@@ -1350,6 +1330,29 @@ LANG gesetzt) lösen.
 =head1 Distribution/Installation
 
 =over
+
+=item * (M2)
+
+GNOME-Desktop-Icon in ~/.gnome-desktop/BBBike.desktop mit folgendem
+Inhalt ungefaehr erstellen:
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Version=1.0
+    Type=Application
+    Exec=/mnt/suse/usr/bin/perl -e 'for (@INC) { push @_INC, "/mnt/suse$_" } @INC = @_INC; $0= "/mnt/suse/home/slavenr/work2/bbbike/bbbike"; do $0 '
+    TryExec=
+    X-GNOME-DocPath=
+    Terminal=false
+    Name[en_US]=BBBike
+    GenericName[en_US]=
+    Comment[en_US]=
+
+und in
+~/.nautilus/metafiles/file:%2F%2F%2Fhome%2Fslavenr%2F.gnome-desktop.xml
+
+    <?xml version="1.0"?>
+    <directory><file name="starthere.desktop" icon_position="30,91"/><file name="slavenr's%20Home" icon_position="30,10"/><file name="Trash" icon_position="30,172"/><file name="BBBike.desktop" icon_position="30,260" custom_icon="file:///mnt/suse/home/slavenr/work2/bbbike/images/srtbike32.xpm"/></directory>
 
 =item * (M1)
 
