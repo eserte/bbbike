@@ -120,7 +120,8 @@ sub menubar {
 				 -label => $menulabel);
 		    # XXX unfortunately, this affects also the menuarrow
 		    # menu
-		    $menu->insert(1, 'command',
+		    my $inx = $menu->type(0) eq 'tearoff' ? 1 : 0;
+		    $menu->insert($inx, 'command',
 				  -label => M"Optionseditor",
 				  -command => $self->{OptionsCommand});
 		} else {
@@ -132,6 +133,13 @@ sub menubar {
 	    } else {
 		warn "no menulabel defined for $c";
 	    }
+	}
+    }
+
+    for $mb ($open_menu, $save_menu, $print_menu, $layer_menu) {
+	my $m = $mb->cget(-menu);
+	if ($m->can('UnderlineAll')) {
+	    $m->UnderlineAll;
 	}
     }
 
