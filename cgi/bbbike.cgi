@@ -5065,7 +5065,7 @@ Berlin für einen Einzelnen eine schwere Aufgabe. Deshalb freue ich
 mich über Feedback: neue Straßen, veränderte Gegebenheiten, sowohl in
 Berlin als auch im Brandenburger Umland. Anregungen bitte als <a
 href="mailto:$BBBike::EMAIL">Mail</a> schicken oder <a
-href="$bbbike_html/newstreetform.html">dieses Formular</a> benutzen.
+href="$bbbike_html/newstreetform.html?frompage=info">dieses Formular</a> benutzen.
 
 <hr>
 <a name="link"><h3>Link auf BBBike setzen</h3></a>
