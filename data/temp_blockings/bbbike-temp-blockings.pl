@@ -980,8 +980,8 @@ userdel	q4 32100,18012 31887,17453
 EOF
      },
      { from  => 1102981474, # 2004-12-14 00:44
-       until => 1107212399, # 2005-01-31 23:59, andere Quelle: 2005-02-28
-       text  => 'Naumannstr. (Schöneberg) in beiden Richtungen zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt (bis Ende 01.2005)',
+       until => 1109631600, # 2005-03-01 00:00
+       text  => 'Naumannstr. (Schöneberg) in beiden Richtungen zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt (bis 28.02.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 7716,8048 7717,7759
@@ -1337,6 +1337,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -19149,11495 -18916,11666
+EOF
+     },
+     { from  => 1106434800, # 2005-01-23 00:00
+       until => 1106780400, # 2005-01-27 00:00
+       text  => 'L 62; (Elsterwerda-Hohenleipisch); Bahnübergang bei Dreska Gleisbauarbeiten Vollsperrung 24.01.2005-26.01.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 22508,-102744 22382,-102254
 EOF
      },
     );

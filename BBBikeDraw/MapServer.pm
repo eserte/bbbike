@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.14 2004/12/06 20:38:00 eserte Exp eserte $
+# $Id: MapServer.pm,v 1.15 2005/01/14 00:55:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -22,8 +22,8 @@ use Carp qw(confess);
 
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
-$DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$DEBUG = 0 if !defined $DEBUG;
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -36,7 +36,8 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
     # XXX How to code the preferences better?
     sub vran_default {
 	my $self = shift->new;
-	$self->BbbikeDir("$ENV{HOME}/src/bbbike");
+	my $HOME = "/home/e/eserte";
+	$self->BbbikeDir("$HOME/src/bbbike");
 	$self->MapserverMapDir($self->BbbikeDir . "/mapserver/brb");
 	$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
 	$self->MapserverRelurl("/~eserte/mapserver/brb");
@@ -50,7 +51,8 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
     sub ipaq_vran_default {
 	my $self = shift->new;
 	my(%args) = @_;
-	$self->BbbikeDir("$ENV{HOME}/src/bbbike");
+	my $HOME = "/home/e/eserte";
+	$self->BbbikeDir("$HOME/src/bbbike");
 	$self->MapserverMapDir($self->BbbikeDir . "/mapserver/brb");
 	$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
 	$self->MapserverRelurl("/~eserte/mapserver/brb");

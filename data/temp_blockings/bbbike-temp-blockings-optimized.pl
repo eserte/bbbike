@@ -33,8 +33,8 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1107212399,
-         'text' => 'Naumannstr. (Schöneberg) in beiden Richtungen zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt (bis Ende 01.2005)',
+         'until' => 1109631600,
+         'text' => 'Naumannstr. (Schöneberg) in beiden Richtungen zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt (bis 28.02.2005)',
          'from' => 1102981474,
          'data' => 'userdel	2 7716,8048 7717,7759
 ',

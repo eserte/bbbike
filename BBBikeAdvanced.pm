@@ -2355,6 +2355,11 @@ sub switch_standard_mode {
 		(anti_transpose($c->get_center));
 	remove_plot() unless $init;
 	foreach (@standard_mode_cmd) { $_->() }
+
+	# Special handling for hoehe (here also needed?)
+	delete $p_obj{hoehe};
+	%hoehe = ();
+
 	$map_mode = MM_SEARCH();
 	set_edit_mode(0);
 	$do_flag{'start'} = $do_flag{'ziel'} = 1; # XXX better solution
@@ -2381,6 +2386,11 @@ sub switch_edit_standard_mode {
 	remove_plot() unless $init;
 	foreach (@edit_mode_cmd) { $_->() }
 	foreach (@edit_mode_standard_cmd) { $_->() }
+
+	# Special handling for hoehe, because it's preloaded
+	delete $p_obj{hoehe};
+	%hoehe = ();
+
 	$map_mode = MM_BUTTONPOINT();
 	$use_current_coord_prefix = 0;
 	$coord_prefix = "";

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.13 2004/12/30 20:48:44 eserte Exp $
+# $Id: bbbikedraw.t,v 1.14 2005/01/14 00:50:37 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -35,7 +35,8 @@ BEGIN {
     }
 
     @modules = qw(GD/png GD/gif GD/jpeg GD::SVG SVG PDF PDF2
-		  Imager/png Imager/jpeg MapServer
+		  Imager/png Imager/jpeg
+		  MapServer MapServer;noroute
 		  ImageMagick/png ImageMagick/jpeg);
 }
 
@@ -95,6 +96,9 @@ sub draw_map {
 
     my $t0 = [gettimeofday];
 
+    ($module, my @attributes) = split /;/, $module;
+    my %attributes = map {($_,1)} @attributes;
+
     my $imagetype = "png";
     if ($module eq 'GD::SVG') {
 	$module = "GD";
@@ -111,6 +115,12 @@ sub draw_map {
     my($fh, $filename) = tempfile(UNLINK => !$debug,
 				  SUFFIX => "-$module.$imagetype",
 				 );
+
+    if ($debug) {
+	$BBBikeDraw::DEBUG = $BBBikeDraw::DEBUG = $debug;
+	$BBBikeDraw::MapServer::DEBUG = $BBBikeDraw::MapServer::DEBUG = $debug;
+	# XXX more to come...
+    }
 
     my $draw = new BBBikeDraw
 	NoInit     => 1,
@@ -133,7 +143,9 @@ sub draw_map {
     $draw->init;
     $draw->create_transpose(-asstring => 1);
     $draw->draw_map if $draw->can("draw_map");
-    $draw->draw_route if $draw->can("draw_route");
+    if (!$attributes{noroute}) {
+	$draw->draw_route if $draw->can("draw_route");
+    }
     $draw->flush;
     close $fh;
 

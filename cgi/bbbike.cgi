@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.5 2005/01/02 22:48:46 eserte Exp eserte $
+# $Id: bbbike.cgi,v 7.6 2005/01/14 00:56:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -637,7 +637,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.6 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -4291,11 +4291,19 @@ sub get_streets {
 	     ($scope eq 'wideregion' ? "landstrassen2" : ()),
 	    );
 
+    if ($q->param("addnet")) {
+	for my $addnet ($q->param("addnet")) {
+	    if ($addnet =~ /^(?: fragezeichen )$/x) {
+		push @f, $addnet;
+	    }
+	}
+    }
+
     my $use_cooked_street_data = $use_cooked_street_data;
     while(1) {
 	my @f = @f;
 	if ($use_cooked_street_data) {
-	    @f = map { "$_-cooked" } @f;
+	    @f = map { $_ eq "fragezeichen" ? $_ : "$_-cooked" } @f;
 	}
 	eval {
 	    if (@f == 1) {
@@ -5418,7 +5426,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/01/02 22:48:46 $';
+    my $cgi_date = '$Date: 2005/01/14 00:56:49 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

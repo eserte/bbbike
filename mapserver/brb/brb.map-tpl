@@ -16,6 +16,10 @@
 [% UNLESS ON_ORTE.defined %][% ON_ORTE = "ON" %][% END -%]
 [% UNLESS ON_OBST.defined %][% ON_OBST = "ON" %][% END -%]
 [% UNLESS ON_AMPELN.defined %][% ON_AMPELN = "ON" %][% END -%]
+[% UNLESS ON_ROUTE == "ON" %][% ROUTE_COMMENT = "#" %][% END -%]
+[% UNLESS ON_START_POINT == "ON" %][% START_FLAG_COMMENT = "#" %][% END -%]
+[% UNLESS ON_GOAL_POINT == "ON" %][% GOAL_FLAG_COMMENT = "#" %][% END -%]
+[% UNLESS ON_MARKER_POINT == "ON" %][% MARKER_COMMENT = "#" %][% END -%]
 [% UNLESS COLOR_MIDDLE_GREEN.defined %][% COLOR_MIDDLE_GREEN = "0 225 0" %][% END -%]
 [% UNLESS COLOR_GREEN.defined %][% COLOR_GREEN = "128 255 128" %][% END -%]
 [% UNLESS COLOR_DARK_GREEN.defined %][% COLOR_DARK_GREEN = "0 128 0" %][% END -%]
@@ -1946,134 +1950,158 @@ END
 ### END ADDITIONAL LAYERS
 
 ### BEGIN ROUTE
-#LAYER
-#  NAME Route
-#  GROUP route
-#  TYPE LINE
-#  STATUS ON
-#  DATA "### ROUTESHAPEFILE ###"
-#  FEATURE POINTS ### ROUTECOORDS ### END END
-#
-#  TOLERANCE 3
-#
-##  TEMPLATE "query.html"
-##  HEADER "query_header2.html"
-##  FOOTER "query_footer2.html"
-#TRANSPARENCY 50 ##XXX Wie am geschicktesten verwenden?
-#
-#  CLASS
-#    NAME "Route"
-##    COLOR 255 0 255
-##    COLOR 180 80 130
-#     COLOR 150 0 0
-##    SYMBOL 'width'
-#    SYMBOL 'dotted'
-#    SIZE 11
-##    OVERLAYCOLOR 130 80 180
-#    OVERLAYCOLOR 0 0 150
-#    OVERLAYSYMBOL dottedtransposed
-#    OVERLAYSIZE 11
-#  END
-#  METADATA
-#    WMS_TITLE "Route"
-#    WMS_ABSTRACT "Berechnete Route"
-#    WMS_SRS "EPSG:4326"
-#  END
-#END
+[% FILTER replace('(?m:^)', ROUTE_COMMENT) -%]
+LAYER
+  NAME Route
+  GROUP route
+  TYPE LINE
+  STATUS ON
+[% IF ROUTE_COORDS.defined -%]
+  FEATURE POINTS [% ROUTE_COORDS %] END END
+[% ELSE -%]
+  DATA "### ROUTESHAPEFILE ###"
+  FEATURE POINTS ### ROUTECOORDS ### END END
+[% END -%]
+
+  TOLERANCE 3
+
+#  TEMPLATE "query.html"
+#  HEADER "query_header2.html"
+#  FOOTER "query_footer2.html"
+TRANSPARENCY 50 ##XXX Wie am geschicktesten verwenden?
+
+  CLASS
+    NAME "Route"
+#    COLOR 255 0 255
+#    COLOR 180 80 130
+     COLOR 150 0 0
+#    SYMBOL 'width'
+    SYMBOL 'dotted'
+    SIZE 11
+#    OVERLAYCOLOR 130 80 180
+    OVERLAYCOLOR 0 0 150
+    OVERLAYSYMBOL dottedtransposed
+    OVERLAYSIZE 11
+  END
+  METADATA
+    WMS_TITLE "Route"
+    WMS_ABSTRACT "Berechnete Route"
+    WMS_SRS "EPSG:4326"
+  END
+END
+[% END -%]
 ### END ROUTE
 
 ### BEGIN AFTER ROUTE
 ### END AFTER ROUTE
 
 ### BEGIN STARTFLAG
-#LAYER
-#  NAME startflag
-#  GROUP route
-#  TYPE POINT
-#  STATUS ON
-#  FEATURE
-#    POINTS ### STARTFLAGPOINTS ### END
-#  END
-#
-#  TOLERANCE 3
-#
-#  TEMPLATE "query.html"
-#  HEADER "query_header2.html"
-#  FOOTER "query_footer2.html"
-#
-#  CLASS
-#    NAME "Beginn der Route"
-#    COLOR 255 0 255
-#    SYMBOL 'startflag'
-#  END
-#  METADATA
-#    WMS_TITLE "Startflagge"
-#    WMS_ABSTRACT "Beginn der Route"
-#    WMS_SRS "EPSG:4326"
-#  END
-#END
+[% FILTER replace('(?m:^)', START_FLAG_COMMENT) -%]
+LAYER
+  NAME startflag
+  GROUP route
+  TYPE POINT
+  STATUS ON
+  FEATURE
+[% IF START_FLAG_POINTS.defined -%]
+    POINTS [% START_FLAG_POINTS %] END
+[% ELSE -%]
+    POINTS ### STARTFLAGPOINTS ### END
+[% END -%]
+  END
+
+  TOLERANCE 3
+
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+
+  CLASS
+    NAME "Beginn der Route"
+    COLOR 255 0 255
+    SYMBOL 'startflag'
+  END
+  METADATA
+    WMS_TITLE "Startflagge"
+    WMS_ABSTRACT "Beginn der Route"
+    WMS_SRS "EPSG:4326"
+  END
+END
+[% END -%]
 ### END STARTFLAG
 
 ### BEGIN GOALFLAG
-#LAYER
-#  NAME goalflag
-#  GROUP route
-#  TYPE POINT
-#  STATUS ON
-#  FEATURE
-#    POINTS ### GOALFLAGPOINTS ### END
-#  END
-#
-#  TOLERANCE 3
-#
-#  TEMPLATE "query.html"
-#  HEADER "query_header2.html"
-#  FOOTER "query_footer2.html"
-#
-#  CLASS
-#    NAME "Ende der Route"
-#    COLOR 255 0 255
-#    SYMBOL 'goalflag'
-#  END
-#  METADATA
-#    WMS_TITLE "Zielflagge"
-#    WMS_ABSTRACT "Ende der Route"
-#    WMS_SRS "EPSG:4326"
-#  END
-#END
+[% FILTER replace('(?m:^)', GOAL_FLAG_COMMENT) -%]
+LAYER
+  NAME goalflag
+  GROUP route
+  TYPE POINT
+  STATUS ON
+  FEATURE
+[% IF GOAL_FLAG_POINTS.defined -%]
+    POINTS [% GOAL_FLAG_POINTS %] END
+[% ELSE -%]
+    POINTS ### GOALFLAGPOINTS ### END
+[% END -%]
+  END
+
+  TOLERANCE 3
+
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+
+  CLASS
+    NAME "Ende der Route"
+    COLOR 255 0 255
+    SYMBOL 'goalflag'
+  END
+  METADATA
+    WMS_TITLE "Zielflagge"
+    WMS_ABSTRACT "Ende der Route"
+    WMS_SRS "EPSG:4326"
+  END
+END
+[% END -%]
 ### END GOALFLAG
 
 ### BEGIN AFTER FLAGS
 ### END AFTER FLAGS
 
 ### BEGIN MARKER
-#LAYER
-#  NAME markerlayer
-#  GROUP route
-#  TYPE POINT
-#  STATUS ON
-#  FEATURE
-#    POINTS ### MARKERPOINT ### END
-#  END
-#
-#  TOLERANCE 3
-#
-#  TEMPLATE "query.html"
-#  HEADER "query_header2.html"
-#  FOOTER "query_footer2.html"
-#
-#  CLASS
-#    NAME "Markierung"
-#    COLOR 255 180 200
-#    SYMBOL 'ring'
-#    SIZE 20
-#  END
-#  METADATA
-#    WMS_TITLE "Markierung"
-#    WMS_ABSTRACT "Markierung"
-#    WMS_SRS "EPSG:4326"
-#  END
-#END
+[% FILTER replace('(?m:^)', MARKER_COMMENT) -%]
+LAYER
+  NAME markerlayer
+  GROUP route
+  TYPE POINT
+  STATUS ON
+  FEATURE
+[% IF MARKER_POINT.defined -%]
+    POINTS [% MARKER_POINT %] END
+[% ELSE -%]
+    POINTS ### MARKERPOINT ### END
+[% END -%]
+  END
+
+  TOLERANCE 3
+
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+
+  CLASS
+    NAME "Markierung"
+    COLOR 255 180 200
+    SYMBOL 'ring'
+    SIZE 20
+  END
+  METADATA
+    WMS_TITLE "Markierung"
+    WMS_ABSTRACT "Markierung"
+    WMS_SRS "EPSG:4326"
+  END
+END
+[% END -%]
 ### END MARKER
 
 ### BEGIN AFTER MARKER
