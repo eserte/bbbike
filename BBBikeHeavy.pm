@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.10 2004/01/17 20:11:02 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.12 2004/03/04 23:16:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -479,6 +479,12 @@ sub BBBikeHeavy::getmap {
 	$type = $map_default_type;
     }
 
+    if (!$args{-fallback} && $use_map_fallback) {
+	$args{-fallback} = [ grep { $_ ne $type }
+			     "b2002", "b2003", "brbmap", "de2002"
+			   ];
+    }
+
     my $o = $Karte::map{$type};
     if (!defined $o) {
 	$map_draw = 0;
@@ -576,6 +582,7 @@ sub BBBikeHeavy::getmap {
     my $tmpfile;
     if (! -r $filename || ! -f $filename) {
 	warn "Map $filename non-existent!\n";
+
 	if ($devel_host) {
 	    if ($type eq 'brbmap' && -d "$FindBin::RealBin/misc") {
 		eval q{
@@ -589,6 +596,15 @@ sub BBBikeHeavy::getmap {
 		      };
 	    }
 	    warn __LINE__ . ": $@" if $@;
+	}
+
+	if ($args{-fallback} && @{ $args{-fallback} }) {
+	    my $new_type = shift @{ $args{-fallback} };
+	    warn "Try fallback type $new_type...\n";
+	    return getmap($x, $y, $new_type, %args);
+	}
+
+	if ($devel_host) {
 	    $c->createRectangle($x-$deltax, $y-$deltay,
 				$x+$newwidth-$deltax, $y+$newheight-$deltay,
 				-fill => 'white',

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.63 2004/03/03 00:12:16 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.64 2004/03/04 23:19:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2253,12 +2253,49 @@ sub insert_point_from_canvas {
 				   @main::ext_selection = ();
 			       });
 	my($middle, $first, $last) = map { join(",", @$_) } @neighbors;
+	if ($SRTShortcuts::force_edit_mode) {
+	    for ($first, $last) {
+		$_ = find_corresponding_orig_point($c, $_);
+	    }
+	    $middle = $main::coord_prefix . join(",", $main::coord_output_sub->(split /,/, $middle));
+	}
 	@main::inslauf_selection = ($first, $middle, $last);
 	warn "insert coords=@main::inslauf_selection\n";
 	main::insert_points();
     }
 }
 
+sub find_corresponding_orig_point {
+    my($c, $point) = @_;
+    my($cx,$cy) = main::transpose(split /,/, $point);
+    for my $delta (1 .. 3) {
+	my(@items) = $c->find("overlapping",
+			      $cx-$delta, $cy-$delta,
+			      $cx+$delta, $cy+$delta);
+	my @items2;
+	my %seen;
+	for my $item (@items) {
+	    my @tags = $c->gettags($item);
+	    if (grep { $_ eq 'pp' } @tags) {
+		if (!$seen{$tags[2]}) {
+		    push @items2, $item;
+		    $seen{$tags[2]} = 1;
+		}
+	    }
+	}
+	if (@items2 == 1) {
+	    my $orig = ($c->gettags($items2[0]))[2];
+	    if ($orig =~ /^ORIG:(.*)/) {
+		return $1;
+	    }
+	} elsif (@items2 > 1) {
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([map { [$_, $c->gettags($_)] } @items2],[])->Indent(1)->Useqq(1)->Dump; # XXX
+
+	    main::status_message("XXX multiple item conflict, please write code for this!", "die");
+	}
+    }
+    main::status_message("Could not found orig point for $point", "die");
+}
 
 use vars qw(@points $point_nr $auto_create);
 
@@ -3403,7 +3440,7 @@ sub draw_pp {
 
     my @orig_files;
     my $s;
-    if (UNIVERSAL::isa($file, "ARRAY")) {
+    if (ref $file eq "ARRAY") {
 	@orig_files = map { "$_-orig" } @$file;
 	$s = MultiStrassen->new(@orig_files);
     } else {

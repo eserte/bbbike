@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.12 2004/01/13 18:30:38 eserte Exp eserte $
+# $Id: BBBikeGlobalVars.pm,v 1.13 2004/03/04 23:18:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.012 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -83,7 +83,7 @@ use vars qw(
      @standard_mode_cmd @edit_mode_cmd @edit_mode_b_cmd @edit_mode_brb_cmd
      $map_mode %map_mode_callback $map_mode_deactivate $b2_mode %b2_mode_desc
      %set_route_point %alt_set_route_point $search_stat $search_visual
-     $coord_prefix %delayed_sub_timer
+     $coord_prefix $use_current_coord_prefix %delayed_sub_timer
      %global_search_args %penalty_subs %optprefs $autosave_opts
      $autoscroll_speed $autoscroll_middle
      $do_iconframe %check_sub $right_is_popup
@@ -127,7 +127,7 @@ use vars qw(%tag_invisible $auto_visible %tag_visibility);
 use vars qw(@popup_style $focus_policy
 	    $escape $abortWWW
 	    $followmouse $followmouse_repeat
-	    $map_default_type
+	    $map_default_type $use_map_fallback
 	    $map_surround $dont_delete_map
 	    @special_lower %special_lower @special_raise %special_raise
 	    $str_file $landstr_file $wasser_file $flaechen_file

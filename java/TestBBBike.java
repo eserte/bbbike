@@ -1,4 +1,4 @@
-/* $Id: TestBBBike.java,v 1.1 2001/05/20 11:06:55 eserte Exp $ */
+/* $Id: TestBBBike.java,v 1.2 2004/03/04 23:21:28 eserte Exp $ */
 
 import java.util.Enumeration;
 import java.util.Hashtable;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: convert_berlinmap.pl,v 1.40 2003/06/02 23:02:35 eserte Exp eserte $
+# $Id: convert_berlinmap.pl,v 1.41 2004/03/03 23:15:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003 Slaven Rezic. All rights reserved.

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.8 2003/11/16 21:14:22 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.9 2004/03/04 23:20:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -509,7 +509,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 			    $name .= "[dist=" . BBBikeUtil::m2km($whole_dist,2) . ",time=" . BBBikeUtil::s2ms($whole_time) . "min" . sprintf(", abstime=%02d:%02d:%02d", @l[2,1,0]) . (defined $grade ? ", grade=" . sprintf("%.1f%%", $grade) : "") . "]";
 			    my $c1 = "$last_x,$last_y";
 			    my $c2 = "$x,$y";
-			    if ($main::coord_prefix) {
+			    if ($main::use_current_coord_prefix) {
 				$c1 =  $main::coord_system_obj->coordsys . $c1;
 				$c2 =  $main::coord_system_obj->coordsys . $c2;
 			    }

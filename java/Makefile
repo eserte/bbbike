@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.5 1999/09/07 08:22:54 eserte Exp $
+# $Id: Makefile,v 1.6 2004/03/04 23:21:27 eserte Exp $
 #
 
 JAVAROOT?=/usr/lib/java

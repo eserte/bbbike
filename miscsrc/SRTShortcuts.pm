@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.10 2004/03/03 00:09:41 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.11 2004/03/04 23:18:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -207,6 +207,9 @@ sub edit_in_normal_mode {
     BBBikeEdit->draw_pp("strassen", -abk => "s");
     main::set_coord_output_sub($map);
     $SRTShortcuts::force_edit_mode = 1;
+    $main::use_current_coord_prefix = 0;
+    $main::coord_prefix = undef;
+    main::set_map_mode(&main::MM_BUTTONPOINT);
 }
 
 sub edit_in_normal_mode_landstrassen {
@@ -215,15 +218,20 @@ sub edit_in_normal_mode_landstrassen {
     BBBikeEdit->draw_pp(["landstrassen", "landstrassen2"], -abk => "l");
     main::set_coord_output_sub($map);
     $SRTShortcuts::force_edit_mode = 1;
+    $main::use_current_coord_prefix = 0;
+    $main::coord_prefix = "E";
+    main::set_map_mode(&main::MM_BUTTONPOINT);
 }
 
 sub cancel_edit_in_normal_mode {
     require BBBikeEdit;
     for my $abk (qw(s l)) {
-	BBBikeEdit->draw_pp(Strassen->new, -abk => $abk);
+	BBBikeEdit->draw_pp([], -abk => $abk);
     }
     main::set_coord_output_sub("standard");
     $SRTShortcuts::force_edit_mode = 0;
+    $main::use_current_coord_prefix = 0;
+    $main::coord_prefix = undef;
 }
 
 sub define_subs {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.88 2004/02/17 23:18:00 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.89 2004/03/04 23:20:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1055,7 +1055,7 @@ sub advanced_coord_menu {
 			);
     }
     $bpcm->checkbutton(-label => M"Präfix-Ausgabe",
-		       -variable => \$coord_prefix,
+		       -variable => \$use_current_coord_prefix,
 		      );
     $bpcm->checkbutton(-label => M"Plätze zeichnen",
 		       -variable => \$p_draw{'pl'},
@@ -1690,7 +1690,13 @@ sub buttonpoint {
 			 # auf $coordlist_lbox die Selection verschwindet
 			 @ext_selection = ();
 		     });
-    my $prefix = ($coord_prefix ? $coord_system_obj->coordsys : '');
+    my $prefix = (defined $coord_prefix
+		  ? $coord_prefix
+		  : ($use_current_coord_prefix
+		     ? $coord_system_obj->coordsys
+		     : ''
+		    )
+		 );
     if (defined $x) {
 	my $coord = sprintf "$prefix%s,%s", $coord_output_sub->($x, $y);
 	push(@inslauf_selection, $coord);
@@ -1728,6 +1734,7 @@ sub buttonpoint {
 		push_ext_selection($s);
 	    } elsif ($tags[0] eq 'pp' || $tags[0] =~ /^lsa/ ||
 		     $tags[0] =~ /^L\d+/) {
+		my $use_prefix = 1;
 		my($x, $y) = $coord_output_sub->
 		  (@{Strassen::to_koord1($tags[1])});
 		if ($tags[2] =~ m|^(.*\.wpt)/(\d+)/|) {
@@ -1735,6 +1742,7 @@ sub buttonpoint {
 		    system q{gnuclient -batch -eval '(find-file "~/src/bbbike/misc/gps_data/}.$wpt_file.q{") (goto-char (point-min)) (search-forward-regexp "^}.$wpt_nr.q{\t")'};
 		} elsif ($tags[2] =~ /^ORIG:(.*),(.*)$/) {
 		    ($x, $y) = ($1, $2);
+		    $use_prefix = 0;
 		}
 		# XXX verallgemeinern!!!
 		my $crossing = "?";
@@ -1749,7 +1757,7 @@ sub buttonpoint {
 		    (-name => $crossing,
 		     -coord1 => $tags[1],
 		     -coord2 => Route::_coord_as_string([$x,$y]));
-		my $str = $prefix . Route::_coord_as_string([$x,$y]);
+		my $str = ($use_prefix ? $prefix : "") . Route::_coord_as_string([$x,$y]);
 		push(@inslauf_selection, $str);
 		$c->clipboardAppend(" $str") if $use_clipboard;
 		push_ext_selection($s);
@@ -2019,7 +2027,8 @@ sub switch_edit_berlin_mode {
     foreach (@edit_mode_cmd) { $_->() }
     foreach (@edit_mode_b_cmd) { $_->() }
     $map_mode = MM_BUTTONPOINT();
-    $coord_prefix = 0;
+    $use_current_coord_prefix = 0;
+    $coord_prefix = undef;
     $wasserstadt = 1;
     $wasserumland = 0;
     $str_far_away{'w'} = 0;
@@ -2042,7 +2051,8 @@ sub switch_edit_brb_mode {
     foreach (@edit_mode_cmd) { $_->() }
     foreach (@edit_mode_brb_cmd) { $_->() }
     $map_mode = MM_BUTTONPOINT();
-    $coord_prefix = 1;
+    $use_current_coord_prefix = 1;
+    $coord_prefix = undef;
     $wasserstadt = 0;
     $wasserumland = 1;
     $place_category = 0;
@@ -2066,7 +2076,8 @@ sub switch_edit_any_mode {
     foreach (@edit_mode_any_cmd) { $_->() }
     $map_mode = MM_BUTTONPOINT();
     $map_default_type = $coord_system;
-    $coord_prefix = 1;
+    $use_current_coord_prefix = 1;
+    $coord_prefix = undef;
     set_edit_mode($map);
     $do_flag{'start'} = $do_flag{'ziel'} = 0;
     set_remember_plot() unless $init;

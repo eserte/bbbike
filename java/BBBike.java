@@ -1,4 +1,4 @@
-/* $Id: BBBike.java,v 1.4 1999/02/20 16:36:04 eserte Exp $ */
+/* $Id: BBBike.java,v 1.5 2004/03/04 23:21:27 eserte Exp $ */
 
 import java.util.Enumeration;
 import java.util.Hashtable;
@@ -33,7 +33,7 @@ class BBBike {
   }
 
   private void init() {
-    top = new Frame("BBBike $Revision: 1.4 $");
+    top = new Frame("BBBike $Revision: 1.5 $");
     top.setLayout(new BorderLayout());
     c = new MyCanvas();
     try {
