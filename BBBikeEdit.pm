@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.76 2004/09/25 22:58:46 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.78 2004/09/30 22:38:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3140,9 +3140,22 @@ sub temp_blockings_editor {
 	     -columnspan => 2);
     my $real_txt = $txt->Subwidget("scrolled");
 
-    my $act_b = $real_txt->Button
-	(-text => "Act", -bd => 1, -padx => 0, -pady => 0
-	)->place(-relx => 1, -rely => 1, -anchor => "se");
+    my $btn_f;
+    {
+	my %info = $txt->gridInfo;
+	my $txt_row = $info{-row};
+	$btn_f = $t->Frame->grid(-row => $txt_row, -column => 2, -sticky => "nw");
+    }
+
+    my $paste_b = $btn_f->Button
+	(-text => "Paste", -bd => 1, -padx => 0, -pady => 0
+	)->pack(-anchor => "w");
+    my $act_b = $btn_f->Button
+	(-text => "Date", -bd => 1, -padx => 0, -pady => 0
+	)->pack(-anchor => "w");
+    my $fmt_b = $btn_f->Button
+	(-text => "Fmt", -bd => 1, -padx => 0, -pady => 0
+	)->pack(-anchor => "w");
 
     my($start_w, $end_w);
     my($start_undef, $end_undef);
@@ -3222,6 +3235,12 @@ sub temp_blockings_editor {
 	$btxt;
     };
 
+    $paste_b->configure
+	(-command => sub {
+	     $real_txt->delete("1.0","end");
+	     $real_txt->insert("end", $real_txt->SelectionGet);
+	 });
+
     $act_b->configure
 	(-command => sub {
 	     require BBBikeEditUtil;
@@ -3250,6 +3269,14 @@ sub temp_blockings_editor {
 	     }
 	 });
 
+    $fmt_b->configure
+	(-command => sub {
+	     my $btxt = $real_txt->get("1.0", "end");
+	     $btxt =~ s/^(?:NEW|CHANGED|UNCHANGED|REMOVED)(,\s+\((coords|text)\))?\s*//;
+	     $btxt =~ s/\s*\(\d{1,2}:\d{2}\)\s*$//; # seen in vmz records
+	     $real_txt->delete("1.0","end");
+	     $real_txt->insert("end", $btxt);
+	 });
 
     Tk::grid($t->Button
 	     (-text => "Ok",

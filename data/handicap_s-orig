@@ -8,7 +8,7 @@ Wassersportallee (Grünau), Richtung Regattastraße zwischen Ammerseestraße und Re
 ##: XXX andere Quelle sagt bis Ende 08.2004
 #XXX del? Mohrenstraße (Mitte) in beiden Richtungen zwischen Charlottenstraße und Friedrichstraße Baustelle, Straße vollständig gesperrt	q4::inwork 9410,11803 9538,11818
 #XXX del Rapsweg (Marzahn) in beiden Richtungen zwischen Oberfeldstraße und Blumberger Damm Baustelle, Straße vollständig gesperrt	q4::inwork 21242,12769 20953,12866 20711,12905
-Straßensperrungen der Straße vor Schönholz zwischen Klemkestr. und Provinzstr. sowie der Klemkestraße zwischen Sommerstr. und Straße vor Schönholz, in Fahrtrichtung Niederschönhausen, aufgrund Tiefbauarbeiten. Dauer: 14.06.04 bis ca. 30.09.04	q4::inwork; 8182,18761 8260,18765 8361,18778 8476,18773 8650,18796 8687,18755
+#XXX del Straßensperrungen der Straße vor Schönholz zwischen Klemkestr. und Provinzstr. sowie der Klemkestraße zwischen Sommerstr. und Straße vor Schönholz, in Fahrtrichtung Niederschönhausen, aufgrund Tiefbauarbeiten. Dauer: 14.06.04 bis ca. 30.09.04	q4::inwork; 8182,18761 8260,18765 8361,18778 8476,18773 8650,18796 8687,18755
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
 #XXX nicht mehr lange?
 Voßstr.: Bauarbeiten an der Ebertstr.	q3::inwork 8553,11638 8837,11676
@@ -21,12 +21,12 @@ Tucholskystr.: Einbahnstr., Richtung Süden gesperrt	q4; 9654,13397 9605,13248
 Prenzlauer Promenade, zw. Am Steinberg und Ostseestr. Baustelle, Sperrung stadteinwärts an Elsa-Brandström-Straße. Umleitung: Elsa-Brandström -Straße - Neumannstraße - Wisbyer Straße bis 15.06.2005	q4::inwork; 12012,16752 12046,16568 12054,16517 12097,16263 12091,16209
 #XXX del (nach Ortstermin): Wichertstr. Prenzlauer Berg, Richtung Schönhauser Allee nach Prenzlauer Allee Baustelle, 2 Fahrstreifen gesperrt, eine Umleitung ist eingerichtet bis 30.06.	q4::inwork; 9889,6029 9968,6085
 #XXX del? Köpenicker Str. (Köpenick) in beiden Richtungen am S-Bahnhof Wulheide Baustelle, Straße gesperrt, Umleitung: eine Umleitung ist eingerichtet (bis 25.06.2004)	q4::inwork 13443,9527 13424,9563
-Bitterfelder Straße (Marzahn) Richtung Märkische Allee, Höhe S-Bahn-Brücke Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 2004-09-30)	q4::inwork; 19903,16632 20230,16560
+Bitterfelder Straße (Marzahn) Richtung Märkische Allee, Höhe S-Bahn-Brücke Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 2004-10-31)	q4::inwork; 19903,16632 20230,16560
 #XXX del? Gartenstraße zwischen Torstraße und Schröderstraße in beiden Richtungen gesperrt. Asphaltarbeiten. Ab 29.03.2004, 07.00 Uhr bis ?	q4::inwork 9668,13629 9383,13978
 #XXX del Rathausstr./Alarichstr. (Schöneberg) in beiden Richtungen zwischen Kreuzung Ringstr. und Attilaplatz Baustelle, Straße vollständig gesperrt (bis 16.05.2004) (14:36)	q4::inwork 8606,5496 8707,5289 8750,5173 8772,5081 8801,4993 8838,4668 8862,4462 8877,4356 8967,4082 9021,3878
-Jerusalemer Str. (Mitte) Richtung Norden zwischen Leipziger Str. und Hausvogteiplatz Baustelle, Richtungsfahrbahn Richtung Süden gesperrt, Einbahnstraßenregelung (bis Ende September 2004)	q4::inwork; 9878,11857 9892,11752 9899,11670
+#XXX del Jerusalemer Str. (Mitte) Richtung Norden zwischen Leipziger Str. und Hausvogteiplatz Baustelle, Richtungsfahrbahn Richtung Süden gesperrt, Einbahnstraßenregelung (bis Ende September 2004)	q4::inwork; 9878,11857 9892,11752 9899,11670
 #: XXX Diese Meldung kommt und geht ... mal bis Ende 08.2004 ..., mal bis Ende des Jahres
-Saatwinkler Damm (Spandau) in beiden Richtungen zwischen Rohrdamm und Gartenfelder Str. Baustelle, Straße vollständig gesperrt (bis 30.09.2004)	q4::inwork -303,15526 468,15640
+#XXX del Saatwinkler Damm (Spandau) in beiden Richtungen zwischen Rohrdamm und Gartenfelder Str. Baustelle, Straße vollständig gesperrt (bis 30.09.2004)	q4::inwork -303,15526 468,15640
 #XXX del Lückstraße Berlin-Friedrichsfelde Richtung Berlin-Friedrichshain Zwischen Rummelsburger Straße und Schlichtallee wegen Bauarbeiten gesperrt bis 14.05.	q4::inwork 16032,10842 16153,10818 16460,10699 16655,10622
 Mohrenstr.: Bauarbeiten	q4::inwork; 9173,11770 9220,11781
 #XXX wahrscheinlich bis Fertigstellung der S-Bahnhof-Verschiebung?
@@ -198,3 +198,4 @@ Lehmbruckstr.: Bordsteine	q3 13678,10685 13690,10715
 Lünette: Fußgänger	q1 -1055,15588 -1442,15459
 Stadtpark Steglitz: Fußgänger	q1 5838,4454 5931,4659 6018,4850
 Stadtpark Steglitz: Fußgänger	q1 5344,4672 5476,4626 5747,4697 5931,4659 6114,4709
+Spreeufer: Fußgänger	q1 7477,12374 7684,12543 7934,12734 8033,12813 8084,12914 8228,12964 8496,12750 8554,12593

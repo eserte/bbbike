@@ -440,6 +440,8 @@ tragen (S-Bahn-Zugang, insgesamt drei Treppen)	0:120 7854,7572
 tragen? (Fußgängerbrücke)	0:120 20445,536
 tragen? (Fußgängerbrücke)	0:120 19770,-213
 tragen (Stufen), mit MTB befahrbar	0:30 5725,11644
+#: unverified_by: Wolfram, genaue Stelle ermitteln!
+tragen (Stufen), mit MTB befahrbar	0:30 7684,12543
 tragen (Stufen)	0:60 13145,9920
 unter der S-Bahn-Brücke tragen	0:30 3745,18988
 tragen oder Aufzug (Storkower Str.)	0:60 14528,13241
@@ -536,7 +538,7 @@ Markgrafenstraße  Richtung Französische Straße zwischen Behrenstraße und Französ
 #XXX del Blankenburger Weg: Baustelle, Straße gesperrt bis 29.02.2004	2:inwork 10050,4098 10221,3974
 #XXX del Crailsheimer Str., von Steglitzer Damm bis Ellwanger Str. Baustelle, Straße gesperrt, Einbahnstraßenregelung, Umleitung über Attilastr. bis 31.03.2004	1:inwork 7943,10446 7901,10524
 #: XXX tatsächlich für Radfahrer gesperrt? andere Quelle nennt 31.8.2004 als Enddatum:
-Johannisthaler Chaussee, Ernst-Keller Brücke; Bauarbeiten; Brücke gesperrt bis 30.10.2004	2:inwork 15573,4122 15608,4175 15779,4430
+#XXX del ja? Johannisthaler Chaussee, Ernst-Keller Brücke; Bauarbeiten; Brücke gesperrt bis 30.10.2004	2:inwork 15573,4122 15608,4175 15779,4430
 #XXX Haeh? Da ist nichts! XXX Die Brückenstraße, Richtung Heinrich-Heine-Straße ist zwischen Märkisches Ufer und Köpenicker Straße wegen Bauarbeiten als Einbahnstraße eingerichtet. Die nördliche Einmündung Rungestraße/Brückenstraße wird gesperrt. Zufahrt zu den Grundstücken 6 - 11 und 28 - 30 ist nur über den Köllnischen Park möglich. Dauer: 23.04.2003, 04.00 Uhr bis ca. 29.08.2004	1:inwork 9647,7646 9665,7583 9685,7517
 #XXX del am Beisheim-Center	2:inwork 8399,11630 8326,11732
 # XXX ja? NEW:       L19 Saatwinkler Damm Berlin-Haselhorst - Berlin-Tiergarten in beiden Richtungen Zwischen Gartenfelder Straße und Flughafen Tegel beidseitig wegen Bauarbeiten gesperrt 
@@ -566,7 +568,7 @@ L 39; (ASFriedersdorf-Neu Zittau); keine Brücke ü. Oder-Spree-Kanal; kein Bw ü. 
 #XXX del L 40; zw. Großbeeren und Güterfelde; Bau der L 40n; Vollsperrung; 16.06.2003-28.06.2004	2:inwork 1663,-5427 2031,-5468 2471,-6025 2356,-6128 2443,-6309
 L 70 (Doberlug Kirchhain-Dahme); zw. B87 Hohenbuckow u. Hillmersdorf; Fahrbahnschäden; Vollsperrung; 22.05.97-unbekannt	2:inwork 17023,-71738 17783,-72721 17979,-73530 17960,-73915 17961,-74364 18228,-75553 18187,-76301 18061,-76878
 #XXX del L 75; (B 96a Mahlow-Berlin); zwischen B 96a und Klein Ziethen; Neubau B 96; Vollsperrung; 04.08.2003-30.09.2004	2:inwork 13348,-3283 13289,-4660
-L 76; (Mahlow-Teltow); zw. B101 nördl. Großbeeren und B101n; Straßenbauarb. B101n; Vollsperrung; 29.11.2003-30.09.2004	2:inwork 5394,-3053 4260,-2373
+L 76; (Mahlow-Teltow); zw. B101 nördl. Großbeeren und B101n; Straßenbauarb. B101n; Vollsperrung; 29.11.2003-06.10.2004	2:inwork 5394,-3053 4260,-2373
 #XXX del L 24; (Greiffenberg-Gerswalde); bei Pfingstberg, Brücke über DB; Brückenneubau; Vollsperrung; 19.01.2004-31.08.2004	2:inwork 41593,80703 41292,81052
 #: XXX ist REMOVEd?:
 B 179; (Spreewaldstr., Karl-Liebknecht-Str.); zw. Bahnübergang und nördl. A.-Bebel-Str.; grundh. Straßenbau; Vollsperrung; 01.04.2004-31.12.2005	2:inwork 26612,-15094 26583,-15677

@@ -77,7 +77,7 @@ sub filename {
     sprintf("%s/${x}_$y.png", $self->fs_dir);
 }
 
-sub url {
+sub url { return undef;
     my($self, $x, $y) = @_;
     sprintf("%s/${x}_$y.png", $self->root_url);
 }

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.87 2004/09/10 00:24:26 eserte Exp $
+# $Id: bbbike.cgi,v 6.87 2004/09/10 00:24:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -1551,7 +1551,10 @@ EOF
 		new_kreuzungen();
 		my($best) = get_nearest_crossing_coords(split(/,/, $xy));
 		my $cr = crossing_text(defined $best ? $best : $xy);
-		my $qs = CGI->new({strname => $strasse})->query_string;
+		my $qs = CGI->new({strname => $strasse,
+				   bezirk => $bezirk,
+				   plz => $plz,
+				  })->query_string;
 		my $report_nearest = $strasse !~ /^[su]-bhf/i;
 		if ($report_nearest) {
 		    print qq{<i>$strasse</i> ist nicht bekannt (<a target="newstreetform" href="$bbbike_html/newstreetform.html?$qs">Straße eintragen</a>).<br>\n};

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEditUtil.pm,v 1.11 2004/08/21 22:29:16 eserte Exp $
+# $Id: BBBikeEditUtil.pm,v 1.12 2004/09/30 22:24:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -125,6 +125,33 @@ sub parse_dates {
 	$time;
     };
 
+    my $nat_de_to_epoch = sub {
+	my($day_nat, $month_nat, $year, $dir) = @_;
+
+	my $month;
+	if ($month_nat =~ /^\d+$/) {
+	    $month = int $month_nat;
+	} else {
+	    $month = $month_to_num{$month_nat};
+	}
+	return undef if !defined $month;
+
+	my $day;
+	if ($day_nat =~ /anfang/i) {
+	    $day = 1;
+	} elsif ($day_nat =~ /mitte/i) {
+	    $day = 15;
+	} else {
+	    $day = month_days($month, $year);
+	}
+
+	my($H,$M,$S) = (0, 0, 0);
+	if ($dir == 1) {
+	    ($H,$M,$S) = (23, 59, 59);
+	}
+	$date_time_to_epoch->($S,$M,$H, $day,$month,$year);
+    };
+
     my($new_start_time, $new_end_time, $prewarn_days, $rx_matched);
 
     my $date_rx       = qr/(\d{1,2})\.(\d{1,2})\.((?:20)?\d{2})/;
@@ -132,12 +159,15 @@ sub parse_dates {
     my $time_rx       = qr/(\d{1,2})[\.:](\d{2})\s*Uhr/;
     my $full_date_rx  = qr/$date_rx\D+$time_rx/;
     my $ab_rx         = qr/(?:ab[:\s]+|Dauer[:\s]+|vom[:\s]+)/;
-    my $bis_und_rx    = qr/(?:bis|und|\s*-\s*)(?:\s+(?:ca\.|voraussichtlich|zum))?/;
+    my $bis_und_rx    = qr/(?:[Bb]is|und|\s*-\s*)(?:\s+(?:ca\.|voraussichtlich|zum))?/;
     my $isodaterx = qr/\b(20\d{2})-(\d{2})-(\d{2})\b/;
     my $eudaterx  = qr/\b([0123]?\d)\.([01]?\d)\.(\d{4})\b/;
+    my $nat_de_rx = qr{(Anfang|Mitte|Ende)\s+($month_rx|\d|0\d|1[012])[./ ](20\d{2})}i;
 
-    my($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2);
+    my $this_year = (localtime)[5] + 1900;
+    my($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2, @to_matches, $rest);
     # XXX use $full_date_rx etc. (after testing rxes!)
+TRY_MATCHES: {
     if (($d1,$m1,$y1, $H1,$M1, $H2,$M2) = $btxt =~
 	/(\d{1,2})\.(\d{1,2})\.((?:20)?\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*$bis_und_rx\s*(\d{1,2})\.(\d{2})\s*Uhr/) {
 	$new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
@@ -153,6 +183,11 @@ sub parse_dates {
 	$new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
 	$new_end_time   = $date_time_to_epoch->(0,  0, 24,$d2,$m2,$y2);
 	$rx_matched     = 2;
+    } elsif (($d1,$m1,$y1, $H1,$M1, @to_matches) = $btxt =~
+	     /$full_date_rx\s*$bis_und_rx\s*$nat_de_rx/) {
+	$new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
+	$new_end_time   = $nat_de_to_epoch->(@to_matches, +1);
+	$rx_matched     = 16;
     } elsif (($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2) = $btxt =~
 	     /(\d{1,2})\.(\d{1,2})\.((?:20)?\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*$bis_und_rx\s*(\d{1,2})\.(\d{1,2})\.((?:20)?\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr/) {
 	$new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
@@ -167,21 +202,28 @@ sub parse_dates {
 #	$prewarn_days = 0;
 #	$new_end_time   = $date_time_to_epoch->(0,0,24,$d2,$m2,$y2);
     } elsif (($d1,$m1, $d2,$m2) = $btxt =~ /$short_date_rx\s*$bis_und_rx\s*$short_date_rx/) {
-	my $this_year = (localtime)[5] + 1900;
 	$new_start_time = $date_time_to_epoch->(0,0,0,$d1,$m1,$this_year);
 	$new_end_time   = $date_time_to_epoch->(59,59,23,$d2,$m2,$this_year);
 	$rx_matched     = 8;
+    } elsif (($d1,$m1, @to_matches) = $btxt =~ /$short_date_rx\s*$bis_und_rx\s*$nat_de_rx/) {
+	$new_start_time = $date_time_to_epoch->(0,0,0,$d1,$m1,$this_year);
+	$new_end_time   = $nat_de_to_epoch->(@to_matches, +1);
+	$rx_matched     = 16;
     } else {
 	if (($d1,$m1,$y1, $H1,$M1) = $btxt =~
 	    /$ab_rx$date_rx(?:\D+$time_rx)?/) {
 	    $H1 = 0 if !defined $H1;
 	    $M1 ||= 0;
 	    $new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
-	} elsif (($d1,$m1,$y1, $H1,$M1) = $btxt =~
-	    /$date_rx(?:\D+$time_rx)?\s*-/) {
+	} elsif (($d1,$m1,$y1, $H1,$M1, $rest) = $btxt =~
+	    /$date_rx(?:\D+$time_rx)?\s*-(unbekannt)?/) {
 	    $H1 = 0 if !defined $H1;
 	    $M1 ||= 0;
 	    $new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
+	    if ($rest) {
+		$rx_matched = 18;
+		last TRY_MATCHES;
+	    }
 	}
 	if (($d1,$m1,$y1, $H1,$M1) = $btxt =~
 	    /$bis_und_rx\s*$date_rx(?:\D+$time_rx)?/) {
@@ -197,6 +239,9 @@ sub parse_dates {
 	    $d1 = month_days($m1, $y1);
 	    $new_end_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
 	    $rx_matched     = 5;
+	} elsif ((@to_matches) = $btxt =~ /$bis_und_rx\s*$nat_de_rx/i) {
+	    $new_end_time = $nat_de_to_epoch->(@to_matches, +1);
+	    $rx_matched     = 17;
 	} elsif (my($months) = $btxt =~
 		 /für\s+(?:ca\.|voraussichtlich)\s+(\d+)\s+Monat/i) {
 	    my @l = localtime $new_start_time;
@@ -248,6 +293,7 @@ sub parse_dates {
 	} else {
 	    $rx_matched     = 7;
 	}
+    }
     }
 
     if (defined $new_end_time && !defined $new_start_time) {

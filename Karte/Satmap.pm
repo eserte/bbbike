@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Satmap.pm,v 1.7 2001/11/07 23:16:24 eserte Exp $
+# $Id: Satmap.pm,v 1.7 2001/11/07 23:16:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -57,7 +57,7 @@ sub filename {
     sprintf("%s/s-$x/$y.%s", $self->fs_dir, $self->ext);
 }
 
-sub url {
+sub url { return undef;
     my($self, $x, $y) = @_;
     sprintf("%s/s-$x/$y.%s", $self->root_url, $self->ext);
 }

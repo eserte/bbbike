@@ -23,8 +23,14 @@ function init() {
 
   if (location.search) {
     var search = unescape(location.search);
-    if (search.match(/strname=(.*)/)) {
+    if (search.match(/strname=([^;&]*)/)) {
       frm.supplied_strname.value = RegExp.$1;
+    }
+    if (search.match(/bezirk=([^;&]*)/)) {
+      frm.supplied_bezirk.value = RegExp.$1;
+    }
+    if (search.match(/plz=([^;&]*)/)) {
+      frm.supplied_plz.value = RegExp.$1;
     }
   }
 
@@ -49,6 +55,8 @@ function init() {
  <form name="newstreet" method="post" action="../cgi/mapserver_comment.cgi">
   <input type="hidden" name="formtype" value="newstreetform" />
   <input type="hidden" name="supplied_strname" value="" />
+  <input type="hidden" name="supplied_bezirk" value="" />
+  <input type="hidden" name="supplied_plz" value="" />
   <table>
    <tr>
     <td>Straﬂenname</td>

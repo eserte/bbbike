@@ -871,4 +871,39 @@ userdel	q4 49039,44131 48583,44366
 userdel	q4 49039,44131 49691,43812
 EOF
      },
+     { from  => 1096578452, # 2004-09-30 23:07
+       until => 1096862400, # 2004-10-04 06:00
+       text  => 'Str. des 17. Juni / Ebertstr. (Tiergarten) in beiden Richtungen zwischen Entlastungsstr. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (Vorbereitung Tag der Deutschen Einheit) (bis 04.10.2004, 6 Uhr) ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 8063,12182 8214,12205
+userdel	q4 8214,12205 8515,12242
+userdel	q4 8539,12286 8515,12242
+userdel	q4 8600,12165 8515,12242
+EOF
+     },
+     { from  => 1096754400, # 2004-10-03 00:00
+       until => 1112306400, # 2005-04-01 00:00
+       text  => 'K 6904; (Gröben-Nudow); OD Fahlhorst, Dorfstr. Straßenbauarbeiten Vollsperrung 04.10.2004-31.03.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -5452,-11456 -5709,-10987
+EOF
+     },
+     { from  => 1096754400, # 2004-10-03 00:00
+       until => 1100905200, # 2004-11-20 00:00
+       text  => 'L 743; (Motzener Str.); OL Bestensee, zw. Eichhornstr. u. Fasanenstr. SW-Leitung Vollsperrung 04.10.2004-19.11.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 26650,-18150 26343,-18775
+EOF
+     },
+     { from  => 1096754400, # 2004-10-03 00:00
+       until => 1097877600, # 2004-10-16 00:00
+       text  => 'L 78; (Potsdamer Str.); OD Saarmund, Eisenbahnbrücke Brückensanierung Vollsperrung 04.10.2004-15.10.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -9626,-6603 -8401,-9872
+EOF
+     },
     );

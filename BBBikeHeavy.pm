@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.18 2004/08/26 23:54:26 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.19 2004/09/30 22:25:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -814,6 +814,7 @@ sub BBBikeHeavy::get_file_or_url {
 		      $content .= $chunk;
 		  };
 		  my $req_url = $o->url($mapx, $mapy);
+		  return 0 if !defined $req_url;
 
 		  IncBusy($top);
 		  eval {
@@ -879,7 +880,9 @@ sub BBBikeHeavy::get_file_or_url {
 					    ]->[rand(3)];
 		  my %res;
 		  my $tmpurlfile;
-		  my $requrl;
+
+		  my $requrl = $o->url($mapx, $mapy);
+		  return 0 if !defined $requrl;
 
 		  # Popping up transient toplevels are bugging ---
 		  # therefore a place()d frame is used.
@@ -894,7 +897,6 @@ sub BBBikeHeavy::get_file_or_url {
 
 		      $abort_w->raise if $abort_w; # over InputO widget
 
-		      $requrl = $o->url($mapx, $mapy);
 		      $tmpurlfile = "$tmpdir/bbbike_url.$$";
 		      open(WWW, ">$tmpurlfile") or
 			  die Mfmt("Kann auf die Datei %s nicht schreiben: %s", $tmpurlfile, $!);

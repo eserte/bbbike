@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Nbrbmap2004.pm,v 1.1 2004/06/10 07:17:15 eserte Exp $
+# $Id: Nbrbmap2004.pm,v 1.1 2004/06/10 07:17:15 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -70,7 +70,7 @@ sub filename {
     sprintf("%s/${x}_$y.png", $self->fs_dir);
 }
 
-sub url {
+sub url { return undef;
     my($self, $x, $y) = @_;
     sprintf("%s/${x}_$y.png", $self->root_url);
 }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Demap2002.pm,v 1.2 2004/06/10 23:04:00 eserte Exp $
+# $Id: Demap2002.pm,v 1.2 2004/06/10 23:04:00 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -77,7 +77,7 @@ sub filename {
     sprintf("%s/${x}_$y.png", $self->fs_dir);
 }
 
-sub url {
+sub url { return undef;
     my($self, $x, $y) = @_;
     sprintf("%s/${x}_$y.png", $self->root_url);
 }

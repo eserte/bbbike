@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: temp_blockings_dates.t,v 1.5 2004/06/14 21:02:14 eserte Exp $
+# $Id: temp_blockings_dates.t,v 1.6 2004/09/30 22:23:54 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -29,6 +29,60 @@ my @Today_and_Now = Today_and_Now;
 
 for my $test_data
     (
+     [<<EOF,
+L 37; (Petershagen-Seelow); südl. Seelow Kno. Diedersdorf/    Friedersdorf    Bau OU B 1n/B167n    halbseitige Sperrung/Lichtsignalanl.    17.08.2004-unbekannt 
+EOF
+      Mktime(2004,8,17,0,0,0),
+      undef,
+     ],
+
+     [<<EOF,
+L 86; (Groß Kreutz-Ketzin); OD Deetz/Havel    Kanalarbeiten    halbseitige Sperrung/Lichtsignalanl.    09.06.2004-30.10.2004 
+EOF
+      Mktime(2004,6,9,0,0,0),
+      Mktime(2004,10,30,23,59,59),
+     ],
+
+     [<<EOF,
+L90 Johannisthaler Chaussee In beiden Richtungen zwischen Rudower Str. und Königsheideweg Brückenarbeiten, gesperrt eine Umleitung ist eingerichtet (bis 30.09.04.) (05:53) 
+EOF
+      Mktime(@Today_and_Now),
+      Mktime(2004,9,30,23,59,59),
+      0
+     ],
+
+     [<<EOF,
+Brunnenstr. (Mitte) in beiden Richtungen, zwischen Bernauer Str. und Anklamer Str. in Höhe Rheinsberger Str. Baustelle, Fahrbahn auf einen Fahrstreifen verengt (Bis Ende 09/2005) (08:34) 
+EOF
+      Mktime(@Today_and_Now),
+      Mktime(2005,9,30,23,59,59),
+      0
+     ],
+
+     [<<EOF,
+Wilhelmstr. (Mitte) in beiden Richtungen zwischen Mohrenstr. und Leipziger Str. Baustelle, Fahrbahnverengung (bis Ende Juli 2005) (09:29) 
+EOF
+      Mktime(@Today_and_Now),
+      Mktime(2005,7,31,23,59,59),
+      0
+     ],
+
+     [<<EOF,
+Einbecker Str. (Lichtenberg) in Richtung Bhf Lichtenberg, zwischen Robert-Uhrig-Str. und Rosenfelder Str. Einbahnstraße in Richtung Bhf Lichtenberg (bis Ende 12/2004) (10:21) 
+EOF
+      Mktime(@Today_and_Now),
+      Mktime(2004,12,31,23,59,59),
+      0
+     ],
+
+     [<<EOF,
+Malchower Chaussee (Pankow) Richtung stadteinwärts zwischen Ortnitstr. und Nachtalbenweg Baustelle, veränderte Verkehrsführung. Für die Arbeiten im Abschnitt von Darßer str. bis Nachtalbenweg wird der Verkehr über Darßer Str. - Nachtalbenw. umgeleitet (bis Mitte 12.2004) (03:09) 
+EOF
+      Mktime(@Today_and_Now),
+      Mktime(2004,12,15,23,59,59),
+      0
+     ],
+
      [<<EOF,
 Global City (05.09.03 - 07.09.03): Kurfürstendamm/Tauentzienstr. von Uhlandstr. bis Passauer Str. gesperrt
 EOF
@@ -170,6 +224,7 @@ EOF
       Mktime(2004,06,19,10,00,00),
       Mktime(2004,06,20,02,00,00),
      ],
+
     ) {
 	my $btxt = shift @$test_data;
 	my $errors = 0;
@@ -179,7 +234,12 @@ EOF
 		= BBBikeEditUtil::parse_dates($btxt);
 	    # Delta 1s for Today_and_Now tests
 	    ok(abs($start_date - shift @$test_data) <= 1) or $errors++;
-	    ok(abs($end_date   - shift @$test_data) <= 1) or $errors++;
+	    my $test_end_date = shift @$test_data;
+	    if (!defined $test_end_date) {
+		is($end_date, undef) or $errors++;
+	    } else {
+		ok(abs($end_date   - $test_end_date) <= 1) or $errors++;
+	    }
 	    is($prewarn_days, shift @$test_data) or $errors++;
 	};
 	if ($@) {

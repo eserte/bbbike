@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlinmap1998.pm,v 1.10 2004/06/10 22:29:40 eserte Exp $
+# $Id: Berlinmap1998.pm,v 1.10 2004/06/10 22:29:40 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -57,7 +57,7 @@ sub filename {
     sprintf("%s/s-$x/$y.spng", $self->fs_dir);
 }
 
-sub url {
+sub url { return undef;
     my($self, $x, $y) = @_;
     sprintf("%s/s-$x/$y.spng", $self->root_url);
 }
