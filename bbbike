@@ -5029,7 +5029,7 @@ sub define_item_attribs {
 	 qw(qs hs ql hl mount nl delnet
 	    O o p pl-fg lsas lsas-t lsa-bg lsa-fg
 	    vf-fg pp kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
-	    fz L pp-L L-img L-fg ovl
+	    fz L pp-L L-img L-fg personal-fg personal-label ovl
 	    gpsanimrect zoomrect),
 	);
 }
@@ -8686,25 +8686,13 @@ sub plot_symbol {
 sub plot_point {
     my($abk, %args) = @_;
 
-    my $filename = $args{-filename} || $args{Filename};
-    if (!defined $filename) {
-	$filename = ($coord_system eq 'standard'
-		     ? $p_file{$abk}
-		     : "$p_file{$abk}-orig"
-		    );
-    }
-    if (!defined $filename) {
-	status_message("Filename is not defined", 'err');
-	return;
-    }
-
     status_message("");
 
     # Tags löschen
     $c->delete("$abk-bg");
     $c->delete("$abk-img");
     $c->delete("$abk-fg");
-    $c->delete(uc($abk));#XXX obsolete
+#XXXdel?    $c->delete(uc($abk));#XXX obsolete
     $c->delete("$abk-label");
 
     my($ampel_photo, $andreaskr_photo);
@@ -8717,6 +8705,18 @@ sub plot_point {
 	$c->delete('lsas-t'); # Ampelschaltung-Symbole löschen
     }
     if (!$p_draw{$abk}) {
+	return;
+    }
+
+    my $filename = $args{-filename} || $args{Filename};
+    if (!defined $filename) {
+	$filename = ($coord_system eq 'standard'
+		     ? $p_file{$abk}
+		     : "$p_file{$abk}-orig"
+		    );
+    }
+    if (!defined $filename) {
+	status_message("Filename is not defined", 'err');
 	return;
     }
 
