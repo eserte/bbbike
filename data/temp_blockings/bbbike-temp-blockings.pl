@@ -562,11 +562,11 @@ EOF
 userdel	q4 10023,-8859 10115,-8276
 EOF
      },
-     { from  => 1092693600, # 2004-08-17 00:00
-       until => 1099260000, # 2004-10-31 23:00
-       text  => 'L 142; (Kyritzer Str.); OD Wusterhausen, Klempnitzbrücke bis Winkelweg Sanierungsarbeiten Vollsperrung 18.08.2004-31.10.2004',
+     { from  => 1099177200, # 2004-10-31 01:00
+       until => 1099522800, # 2004-11-04 00:00
+       text  => 'L 142; (Kyritzer Straße); Klempnitzbrücke in Wusterhausen Brückensanierung Vollsperrung 01.11.2004-03.11.2004 ',
        type  => 'gesperrt',
-      data  => <<EOF,
+       data  => <<EOF,
 userdel	2 -54776,53333 -55166,53457
 EOF
      },

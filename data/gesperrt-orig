@@ -247,6 +247,8 @@ Neue Schönholzer Str.	1 10089,18180 10140,18080 10179,17772
 Wolliner Str.	1 10405,14425 10320,14608
 Splanemannstr.	1 18284,9948 18389,9925 18408,10041 18403,10077
 Burgherrenstr.	1 8969,8640 9050,8783
+Travestr.	1 14825,11844 14903,11809 14977,11754
+Hiddenseer Str.	1 11655,15253 11822,15193
 #
 # Potsdam
 #
@@ -424,6 +426,8 @@ Wuhletalstr. - Märkische Allee: Linksabbiegen wahrscheinlich verboten	3 20675,17
 Märkische Allee - Wuhletalstr.: Linksabbiegen wahrscheinlich verboten	3 20834,17752 20878,17842 20832,17824
 Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3 17412,17800 17703,17990 17678,18171
 Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3 17678,18171 17703,17990 17843,18078
+Stralauer - Naglerstr.: unbequemes Abbiegen	3 13389,10808 13483,10769 13575,10963
+Naglerstr. - Stralauer: unbequemes Abbiegen	3 13575,10963 13483,10769 13605,10719
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Dorotheenstr. an der US-Botschaft	3 8907,12472 9112,12499 9323,12528
 Dorotheenstr. an der US-Botschaft	3 9323,12528 9112,12499 8907,12472
@@ -605,7 +609,7 @@ L 592; Brücken über Pulsnitz,Binnengraben und zwei Durchlässe; Ersatzneubau; Vol
 #XXX del L 71; (B 96-Drahnsdorf); bei Krossen Brücke über Vorflutkanal; Brückenneubau; Vollsperrung; 25.03.2004-31.07.2004	2:inwork 24195,-54396 24639,-53978
 #XXX del B 5; zw. OU Müncheberg und Friedrichshof; Deckenerneurung; Vollsperrung; 06.07.2004-09.07.2004	2:inwork 61195,11119 65071,7242
 #XXX del L 34; (Reichenberg-B168 (Bollersdorfer Kreisel)); zw. Reichenberg u. Abzw. Buckow; Instandsetzung Durchlaß; Vollsperrung; 05.07.2004-06.08.2004	2:inwork 58405,23616 58340,23341 58151,22324 57358,21972 56330,21643 55558,21417 55194,21167
-L 237; (Britzer Str.); OD Eberswalde, Brücke über Oder-Havel-Kanal; Brückenneubau; Vollsperrung; 02.08.2004-28.10.2004	2:inwork 36312,50126 36289,50743
+#XXX del L 237; (Britzer Str.); OD Eberswalde, Brücke über Oder-Havel-Kanal; Brückenneubau; Vollsperrung; 02.08.2004-28.10.2004	2:inwork 36312,50126 36289,50743
 #XXX del K 6302; zwischen Pausin und Alt Brieselang; Kanal- und Straßenbau; Vollsperrung; 02.08.2004-01.10.2004	2:inwork -14680,25643 -14763,25345 -15254,24958 -15322,24572 -15621,24357 -15705,24101 -15767,23889 -15966,23802 -16135,23503 -16319,22950 -16595,22693 -16873,22649
 #XXX del? L 19; (Zechlinerhütte-Wesenberg (MVP)); zw. Abzw. Klein Zerlang u. LG; (nö. Prebelowbrücke); Brückenneubau; Vollsperrung; 11.10.2004-30.04.2005	2:inwork -26403,85177 -26316,84900
 K 7234; (Glienick-Dabendorf); zwischen den Ortschaften Dabendorf-Glienick Straßenbau, Vollsperrung, 25.10.2004-10.12.2004	2:inwork 10156,-17681 11304,-17936 11623,-17809 11793,-17851 12091,-17766
