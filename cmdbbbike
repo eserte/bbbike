@@ -34,12 +34,13 @@ sub cmdline_input {
 			  $self->Context->Verbose(1),
 		      },
 	    )) {
-	    die "Usage: $0 [-vehicle vehicle] [-[no]cache] [-[no]xs]
+	    die <<EOF;
+Usage: $0 [-vehicle vehicle] [-[no]cache] [-[no]xs]
         [-algorithm ...] [-scope ...] [-v] start goal
 
 start and goal may be prefixed with \"city:\" to force cities instead of
-streets.
-";
+streets. start and goal may also be "standard" coordinates instead.
+EOF
 	}
     } else {
 	warn "No Getopt::Long installed...\n";
@@ -50,22 +51,22 @@ streets.
 	exit 1;
     }
     if (@ARGV == 2) {
-	set_city_or_street($self->Start, $ARGV[0]);
-	set_city_or_street($self->Goal,  $ARGV[1]);
+	$self->set_city_or_street($self->Start, $ARGV[0]);
+	$self->set_city_or_street($self->Goal,  $ARGV[1]);
     } elsif (@ARGV == 4) {
 	$self->Start->Street  ($ARGV[0]);
 	$self->Start->Citypart($ARGV[1]);
 	$self->Goal->Street   ($ARGV[2]);
 	$self->Goal->Citypart ($ARGV[3]);
     } elsif (@ARGV == 3) {
-	set_city_or_street($self->Start, shift @ARGV);
+	$self->set_city_or_street($self->Start, shift @ARGV);
 	if ($ARGV[0] =~ /^\d+$/) {
 	    $self->Start->Citypart(shift @ARGV);
 	} elsif ($ARGV[1] =~ /^\d+$/) {
 	    $self->Goal->Citypart(pop @ARGV);
 	}
 	if (@ARGV == 1) {
-	    set_city_or_street($self->Goal, shift @ARGV);
+	    $self->set_city_or_street($self->Goal, shift @ARGV);
 	} else {
 	    require Geography;
 	    my $geo = Geography->new('Berlin', 'DE');
@@ -74,16 +75,16 @@ streets.
 	    foreach (@cityparts) {
 		if ($_ =~ /^\Q$ARGV[0]\E/i) {
 		    $self->Start->Citypart ($ARGV[0]);
-		    set_city_or_street($self->Goal, $ARGV[1]);
+		    $self->set_city_or_street($self->Goal, $ARGV[1]);
 		    last;
 		} elsif ($_ =~ /^\Q$ARGV[1]\E/i) {
-		    set_city_or_street($self->Goal, $ARGV[0]);
+		    $self->set_city_or_street($self->Goal, $ARGV[0]);
 		    $self->Goal->Citypart($ARGV[1]);
 		    last;
 		}
 	    }
 	    if (!$self->Goal->Street && !$self->Goal->City) {
-		set_city_or_street($self->Goal, $ARGV[0]);
+		$self->set_city_or_street($self->Goal, $ARGV[0]);
 		$self->Goal->Citypart($ARGV[1]);
 	    }
 	}
@@ -111,10 +112,19 @@ sub cmdline_output {
 }
 
 sub set_city_or_street {
-    my($o, $s) = @_;
+    my($self, $o, $s) = @_;
     if ($s =~ /^(?:city|ort):(.*)$/) {
 	$o->City($1);
 	$o->Street(undef);
+    } elsif ($s =~ /^-?\d+,-?\d+$/) {
+	$o->Coord($s);
+	require Karte;
+	Karte::preload(qw(Standard Polar));
+	$Karte::Polar::obj = $Karte::Polar::obj; # -w
+	my($long,$lat) = map { [ Karte::Polar::ddd2dms($_) ] } $Karte::Polar::obj->standard2map(split /,/, $s);
+	$o->Street(Karte::Polar::dms_human_readable("lat", @$lat) . ", " .
+		   Karte::Polar::dms_human_readable("long", @$long));
+	$self->fix_position($o);
     } else {
 	$o->Street($s);
     }
