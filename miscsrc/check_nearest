@@ -28,7 +28,7 @@ use File::Basename;
 eval 'use BBBikeXS 0.02';
 
 my $verbose = 0;
-my $mindist;
+my $maxdist;
 my $strfile = "strassen";
 GetOptions("v!" => \$verbose,
 	   "datadir=s" => sub {
@@ -38,7 +38,7 @@ GetOptions("v!" => \$verbose,
 	       ($Strassen::Util::cacheprefix = basename($dir)) =~ s/\W/_/g;
 	   },
 	   "strfile=s" => \$strfile,
-	   "mindist=i" => \$mindist,
+	   "maxdist=i" => \$maxdist,
 	  );
 
 warn "new Strassen...\n" if $verbose;
@@ -77,7 +77,7 @@ while(my($k,$v) = each %$crossings) {
     my(@nearest) = $kr->nearest($x, $y, IncludeDistance => 1);
 #warn join(", ", @{ $nearest[1] }), "\n";
     if (!exists $net->{Net}{$k}{$nearest[1]->[0]} &&
-	(!defined $mindist || $mindist >= $nearest[1]->[1])
+	(!defined $maxdist || $maxdist >= $nearest[1]->[1])
        ) {
 	push @nearest_glob, [$nearest[1]->[0], $k, $nearest[1]->[1]];
     }
