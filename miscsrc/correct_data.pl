@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: correct_data.pl,v 1.8 2004/03/02 21:21:39 eserte Exp $
+# $Id: correct_data.pl,v 1.8 2004/03/02 21:21:39 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -43,6 +43,7 @@ _init_ref_dist();
 my $file;
 my %conv;
 my $s;
+my $reverse;
 
 sub process {
     local @ARGV = @_;
@@ -55,12 +56,13 @@ sub process {
 		    "verboseoutput!" => \$v_output,
 		    "convdata=s" => \$conv_data_file,
 		    "minpoints=s" => \$minpoints,
+		    "reverse!" => \$reverse,
 		   )) {
-	die "usage: $0 [-refdist dist1,dist2,...] [-correction datfile] [-verboseoutput] streetfile";
+	die "usage: $0 [-refdist dist1,dist2,...] [-correction datfile] [-verboseoutput] [-minpoints ...] [-convdata ...] [-reverse] streetfile";
     }
     _init_ref_dist();
 
-    $file = shift || "-";
+    $file = shift(@ARGV) || "-";
 
     local $SIG{INT} = sub { die "Interrupt" };
 
@@ -109,8 +111,14 @@ sub convert_record {
 			    if $v_output;
 			next if ($count < $minpoints);
 			my $k_obj = Karte::create_obj("Karte::Custom", %$ret);
-			my $new_c = join(",", map { int }
-					 $k_obj->map2standard(split /,/, $c));
+			my $new_c;
+			if ($reverse) {
+			    $new_c = join(",", map { int }
+					  $k_obj->standard2map(split /,/, $c));
+			} else {
+			    $new_c = join(",", map { int }
+					  $k_obj->map2standard(split /,/, $c));
+			}
 			$conv{$c} = $new_c;
 			push @new_coords, $new_c;
 			last TRY;

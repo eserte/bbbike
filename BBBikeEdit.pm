@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.64 2004/03/04 23:19:26 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.64 2004/03/04 23:19:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3473,6 +3473,7 @@ sub draw_pp {
 	    for my $p (@{ $r->[Strassen::COORDS()] }) {
 		my($ox,$oy) = split /,/, $p;
 		my($prefix) = $ox =~ m/^([^0-9+-]+)/; # stores prefix
+		$prefix = "" if !defined $prefix;
 		$ox =~ s/^([^0-9+-]+)//; # removes prefix
 		my $map = $prefix ? $Karte::map_by_coordsys{$prefix} : $map;
 		#if (!defined $map) { warn "@$r $p $prefix" }

@@ -18,7 +18,7 @@ Winterfeldtplatz	1 7080,10098 7126,9825
 Moritzplatz	1 10847,10853 10824,10909 10885,10928 10906,10874 10847,10853
 Segitzdamm etc.	1 10910,10131 10974,10266 10962,10340
 Segitzdamm etc.	1 10971,10367 11009,10442 11062,10458 11090,10538 11134,10642 11157,10699 11133,10714 11151,10781 11186,10843 11220,10839 11283,10981
-Erkelenzdamm etc.	1 11328,10957 11270,10820 11269,10731
+Erkelenzdamm etc.	1 11328,10957 11270,10820 11302,10804 11269,10731
 Erkelenzdamm etc.	1 11258,10682 11200,10678 11135,10519 11102,10442 11114,10338
 Erkelenzdamm etc.	1 11089,10276 11021,10242 10955,10105
 Überführung Daimlerstr.	1 8651,2197 8588,2176 8537,2286 8606,2376
@@ -237,6 +237,7 @@ Gramzow (Dorfstr.?)	1s 48937,90611 49001,90867
 Billerbecker Weg	1s 1307,18658 1244,18738
 Alt-Tegel	1s 1551,20106 1691,20129 1778,20178 1923,20255
 Am Treptower Park	1s 14529,9141 14390,9291 14242,9448 14089,9610
+Groebenufer	1s 13206,10651 13077,10747
 Lützowufer - Lützowplatz (unbequem passierbarer Mittelstreifen)	3 6626,11178 6873,11011 7002,11034
 Düsseldorfer - Paderborner (Tunneleinfahrt Adenauerplatz)	3 4151,10026 3906,10035 3720,9996
 Paderborner - Düsseldorfer (Tunneleinfahrt Adenauerplatz)	3 3720,9996 3906,10035 4151,10026
@@ -292,6 +293,9 @@ Kolonnenweg - Bornholmer Str.	3 9983,16561 9998,16547 10215,16527
 Kolonnenweg - Bornholmer Str.	3 9982,16527 9998,16547 9883,16557
 Kreutzigerstr - Frankfurter Allee: schwer passierbarer Mittelstreifen (?)	3 14285,12190 14291,12220 14208,12235
 Frankfurter Allee - Kreutzigerstr: schwer passierbarer Mittelstreifen (?)	3 14434,12196 14291,12220 14285,12190
+Kopenhagener Str. - Schönhauser Allee: U-Bahnviadukt	3 10581,15936 10972,15895 10994,16120
+Schönhauser Allee - Kopenhagener Str.: U-Bahnviadukt	3 10963,15789 10972,15895 10581,15936
+Leipziger - Jerusalemer: schlecht passierbarer Mittelstreifen	3 9701,11649 9899,11670 9892,11752
 Dorotheenstr. an der US-Botschaft	3 8907,12472 9112,12499 9323,12528
 Dorotheenstr. an der US-Botschaft	3 9323,12528 9112,12499 8907,12472
 tragen (Eisebahnbrücke Templiner See)	0:60:-231 -15515,-4592
@@ -383,3 +387,7 @@ L 75; (B 96a Mahlow-Berlin); zwischen B 96a und Klein Ziethen; Neubau B 96; Voll
 L 76; (Mahlow-Teltow); zw. B101 nördl. Großbeeren und B101n; Straßenbauarb. B101n; Vollsperrung; 29.11.2003-30.04.2004	2:inwork 5404,-3035 4270,-2354
 L 24; (Greiffenberg-Gerswalde); bei Pfingstberg, Brücke über DB; Brückenneubau; Vollsperrung; 19.01.2004-31.08.2004	2:inwork 41019,81126 40655,81360
 B 179; (Spreewaldstr., Karl-Liebknecht-Str.); zw. Bahnübergang und nördl. A.-Bebel-Str.; grundh. Straßenbau; Vollsperrung; 01.04.2004-31.12.2005	2:inwork 26656,-14847 26615,-15551
+B 168; (Lieberose-Beeskow); zw. L434 (Schadow-Trebitz) u. Abzw. Karras; Straßenbauarbeiten; Vollsperrung; 08.03.2004-15.06.2004 	2:inwork 70775,-35271 71311,-36230 71741,-37316 72385,-38723
+L 23; (B 1 (bei Tasdorf)-Hennickendorf); bei Hennickendorf, Brücke über Werkgleis; Brückenneubau; Vollsperrung; 15.03.2004-30.06.2004 	2:inwork 39934,11495 40318,11773
+L 34; (Reichenberg-B168 (Bollersdorfer Kreisel)); bei Bollersdorf, Brücke über Sophienfließ; Brückenneubau; Vollsperrung; 15.03.2004-27.08.2004 	2:inwork 54983,21507 54833,21379
+B 5; zwischen Treplin und Petershagen Sofortmaßn.Gefahrenabwehr; Vollsperrung; 26.02.2004-30.04.2004	2:inwork 74270,1287 74869,1139 75764,1610 76982,1293 77474,1017 78114,997

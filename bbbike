@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.126 2004/03/04 23:17:23 eserte Exp $
+# $Id: bbbike,v 3.126 2004/03/04 23:17:23 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -8845,7 +8845,7 @@ sub get_cache_identifier {
     if ($linetype eq 'p') {
 	my $fa = $p_far_away{$type} || '';
 	$fa;
-    } elsif ($linetype eq 's') {
+    } elsif ($linetype eq 's' || $linetype eq 'str') { # XXX 'str' is probably wrong...
 	my $fa = $str_far_away{$type} || '';
 	# XXX str_regions?
 	my $ret = $fa;

@@ -271,7 +271,7 @@ sub make_general_pi_osd {
 <LICENSE HREF="LICENSE" />
 <IMPLEMENTATION>
  <CODEBASE HREF="http://prdownloads.sourceforge.net/bbbike/BBBike-$BBBike::STABLE_VERSION.tar.gz" />
- <INSTALL EXEC="perl">BBBike-$BBBike::VERSION/install.pl</INSTALL>
+ <INSTALL EXEC="perl">BBBike-$BBBike::STABLE_VERSION/install.pl</INSTALL>
 </IMPLEMENTATION>
 EOF
     foreach my $prereq (@prereq) {
