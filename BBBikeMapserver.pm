@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.13 2003/07/08 20:53:45 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.14 2003/07/10 22:58:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -77,6 +77,19 @@ sub read_config {
     }
 }
 
+sub scope_by_map {
+    my $map = shift;
+    my $base = basename($map);
+    if      ($base =~ /brb-wide.map$/) {
+	return 'all,wideregion';
+    } elsif ($base =~ /brb-b\.map$/) {
+	return 'all,city';
+    } elsif ($base =~ /brb\.map$/) {
+	return 'all,region';
+    }
+    undef;
+}
+
 # -scope => city, region, wideregion, or all,...
 #   all,... means all scopes, but starting with the "..." scope
 # -externshape => bool: use external shape files. Internal features cannot
@@ -91,8 +104,6 @@ sub read_config {
 #		       otherwise draw a default set (all layers)
 sub start_mapserver {
     my($self, %args) = @_;
-    my $scope       = $args{'-scope'} =
-	exists $args{-scope} ? $args{-scope} : 'city';
     my $externshape = $args{'-externshape'} =
 	exists $args{-externshape} ? $args{-externshape} : 0;
     my $do_route    = $args{'-route'} =
@@ -102,6 +113,16 @@ sub start_mapserver {
     if ($args{'-mapext'}) {
 	@mapext = split /\s+/, $args{'-mapext'};
     }
+    my $q = $self->{CGI}; # original CGI object
+    if (!exists $args{-scope}) {
+	if ($pass && defined $q->param("map")) {
+	    $args{-scope} = scope_by_map($q->param("map"));
+	}
+	if (!exists $args{-scope}) {
+	    $args{-scope} = 'city';
+	}
+    }
+    my $scope       = $args{'-scope'};
 
     my $map_path = $self->create_mapfile(%args);
 
@@ -113,7 +134,6 @@ sub start_mapserver {
 	@mapext = $self->get_extents($width, $height);
     }
 
-    my $q = $self->{CGI}; # original CGI object
     my $q2 = CGI->new({});
     if ($pass) {
 	for my $param (qw(zoomsize program bbbikeurl bbbikemail)) {

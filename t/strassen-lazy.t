@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-lazy.t,v 1.2 2003/06/23 22:04:48 eserte Exp $
+# $Id: strassen-lazy.t,v 1.3 2003/07/14 06:36:42 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -24,14 +24,28 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 4 }
+BEGIN { plan tests => 10, todo => [5..10] }
 
-my $s = Strassen::Lazy->new("strassen");
-ok(UNIVERSAL::isa($s, "Strassen::Lazy"));
-$s->get(0); # trigger realization
-ok($s->isa("Strassen"));
-my $r = $s->get_by_name("Dudenstr.");
-ok($r);
-ok($r->[Strassen::NAME], "Dudenstr.");
+{
+    my $s = Strassen::Lazy->new("strassen");
+    ok(UNIVERSAL::isa($s, "Strassen::Lazy"));
+    $s->get(0) # trigger realization # XXX why is this triggering a warning
+    ok($s->isa("Strassen"));
+    my $r = $s->get_by_name("Dudenstr.");
+    ok($r);
+    ok($r->[Strassen::NAME], "Dudenstr.");
+}
 
+if (0) {
+    my $s = MultiStrassen::Lazy->new(qw(strassen landstrassen landstrassen2));
+    ok(UNIVERSAL::isa($s, "MultiStrassen::Lazy"));
+    $s->get(0); # trigger realization
+    ok($s->isa("MultiStrassen"));
+    my $r = $s->get_by_name("Dudenstr.");
+    ok($r);
+    ok($r->[Strassen::NAME], "Dudenstr.");
+    $r = $s->get_by_name("B96");
+    ok($r);
+    ok($r->[Strassen::NAME], "B96");
+}
 __END__

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiStrassen.pm,v 1.3 2003/05/09 22:50:14 eserte Exp $
+# $Id: MultiStrassen.pm,v 1.3 2003/05/09 22:50:14 eserte Exp eserte $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -82,7 +82,7 @@ sub read_data {
 }
 
 # XXX Hack: autoloader does not work for inherited methods
-for my $method (qw(agrep pos_from_name)) {
+for my $method (qw(agrep pos_from_name choose_street)) {
     my $code = 'sub ' . $method . ' { shift->Strassen::' . $method . '(@_) }';
     #warn $code;
     eval $code;

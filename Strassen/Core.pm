@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.22 2003/07/09 21:07:59 eserte Exp $
+# $Id: Core.pm,v 1.22 2003/07/09 21:07:59 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -51,6 +51,8 @@ sub set_geography {
     @datadirs = $geo->datadir;
 }
 
+# XXX The Autoloader does not work for inherited methods... see
+# MultiStrassen.pm for a non-comprehensive list of problematic methods.
 use vars qw($AUTOLOAD);
 sub AUTOLOAD {
     warn "Loading Strassen::CoreHeavy for $AUTOLOAD ...\n"

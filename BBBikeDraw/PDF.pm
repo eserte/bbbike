@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.24 2003/01/08 20:11:20 eserte Exp $
+# $Id: PDF.pm,v 2.24 2003/01/08 20:11:20 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -678,6 +678,22 @@ sub draw_wind {
 	    }
 	}
     }
+}
+
+sub add_route_descr {
+    my $self = shift;
+    my(%args) = @_;
+    my $net = $args{-net} || die "-net is missing";
+    my(@c) = map { [split /,/ ] } @{ $self->{Coords} };
+
+    require Route::PDF;
+    require Route;
+
+    Route::PDF::add_page_to_bbbikedraw
+	    (-bbbikedraw => $self,
+	     -net => $net,
+	     -route => Route->new_from_realcoords(\@c),
+	    );
 }
 
 sub flush {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.55 2003/06/20 18:05:50 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.55 2003/06/20 18:05:50 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003 Slaven Rezic. All rights reserved.
@@ -34,7 +34,8 @@ my $radweg_last_b2_mode;
 my(@radweg_data, %radweg);
 my(@ampel_data, %ampel_schaltung, $ampelschaltung_obj);
 my @lastampeldate;
-my($ampel_hlist, $ampel2_hlist, $ampel_balloon,
+my $rel_time_begin = "";
+my($ampel_hlist, $ampel2_hlist,
    $ampel_current_crossing, $ampel_current_coord,
    $ampel_red_itemstyle, $ampel_green_itemstyle, $ampel_blue_itemstyle,
    @ampel_entry, $ampel_add, $ampel_extra,
@@ -466,33 +467,6 @@ sub ampel_edit_modus {
     require Ampelschaltung;
     $special_edit = 'ampel';
     switch_edit_berlin_mode() if (!defined $edit_mode or $edit_mode ne 'b');
-    ampel_open();
-
-    unless ($ampelschaltung2) {
-	$ampelschaltung2 = new Ampelschaltung2;
-	if (!$ampelschaltung2->open) {
-	    warn "Ampelschaltung2 konnte nicht geladen werden.";
-	    undef $ampelschaltung2;
-	}
-    }
-
-    unless ($p_draw{'lsa'}) {
-	plot('p','lsa', -draw => 1);
-    }
-#XXX
-#     if (!defined $ampel_time_photo) {
-# 	$ampel_time_photo = $top->Photo
-# XXX gif => xpm
-# 	  (-file => Tk::findINC("ampel_time.gif"));
-#     }
-#     if (defined $ampel_time_photo) {
-# 	foreach (@ampel_data) {
-	    
-# 	}
-#     }
-
-    $ampel_draw_restrict = "";
-    ampel_meta_draw_canvas();
 
     IncBusy($top);
     $progress->Init(-dependents => $c,
@@ -515,6 +489,35 @@ sub ampel_edit_modus {
     $progress->Finish;
     DecBusy($top);
 
+    ampel_open();
+
+    unless ($ampelschaltung2) {
+	$ampelschaltung2 = new Ampelschaltung2;
+	if (!$ampelschaltung2->open) {
+	    warn "Ampelschaltung2 konnte nicht geladen werden.";
+	    undef $ampelschaltung2;
+	}
+    }
+
+    unless ($p_draw{'lsa'}) {
+	plot('p','lsa', -draw => 1);
+    }
+    special_raise("lsa-fg");
+#XXX
+#     if (!defined $ampel_time_photo) {
+# 	$ampel_time_photo = $top->Photo
+# XXX gif => xpm
+# 	  (-file => Tk::findINC("ampel_time.gif"));
+#     }
+#     if (defined $ampel_time_photo) {
+# 	foreach (@ampel_data) {
+	    
+# 	}
+#     }
+
+    $ampel_draw_restrict = "";
+    ampel_meta_draw_canvas();
+
     set_mouse_desc();
 
     $progress->FinishGroup;
@@ -532,7 +535,10 @@ sub ampel_undef_all {
 }
 
 sub ampel_edit_mouse1 {
-    return unless grep($_ =~ /^lsa/, $c->gettags('current'));
+    unless (grep($_ =~ /^lsa/, $c->gettags('current'))) {
+	warn "lsa tag not found at current point";
+	return;
+    }
     my $p1 = ($c->gettags('current'))[1]; # XXX oder 2
     if (!exists $ampel_schaltung{$p1}) {
 	ampel_new_point($p1);
@@ -583,6 +589,7 @@ sub sort_hlist {
     }
 }
 
+# XXX Statt Indices Konstanten verwenden!
 sub ampel_display {
     my($p1) = @_;
     if (exists $crossing{$p1}) {
@@ -596,13 +603,18 @@ sub ampel_display {
     my $t = redisplay_top($top, "ampelschaltung",
 			  -title => 'Ampelschaltung',
 			 );
-    my $hlist_cols = 8;
-    my $hlist_out_cols = 9;
+    my(@header_list) =
+	qw(Wochentag Zeit von nach grün rot Zyklus Comment Date lost);
+    my(@entry_desc) =
+	(qw(Wochentag Zeit), "von (Himmelsrichtung)",
+	 "nach (Himmelsrichtung)", "Grünphase", "Rotphase",
+	 "Zyklus", "Kommentar", "Datum");
+    my $hlist_cols = scalar @entry_desc;
+    my $hlist_out_cols = scalar @header_list;
     if (defined $t) {
 	require Tk::HList;
 	require Tk::Adjuster;
 	require Tk::Balloon;
-	$ampel_balloon = $t->Balloon;
 	my $mainf = $t->Frame->pack(-fill => 'both', -expand => 1);
 	my $lf = $mainf->Frame->pack;
 	$lf->Label(-textvariable => \$ampel_current_crossing,
@@ -629,8 +641,6 @@ sub ampel_display {
 	   -width => 50,
 	   -height => 6,
 	  )->pack(-expand => 1, -fill => 'both');
-	my(@header_list) =
-	  qw(Wochentag Zeit von nach grün rot Zyklus Comment lost);
 	eval {
 	    require Tk::ItemStyle;
 	    require Tk::resizeButton;
@@ -684,44 +694,86 @@ sub ampel_display {
 	eval {
 	    require Tk::ItemStyle;
 	    $ampel_red_itemstyle =
-	      $mainf->ItemStyle('text', -foreground => 'red');
+	      $mainf->ItemStyle('text', -foreground => 'red',
+				-background => $mainf->cget(-background));
 	    $ampel_green_itemstyle =
-	      $mainf->ItemStyle('text', -foreground => 'DarkGreen');
+	      $mainf->ItemStyle('text', -foreground => 'DarkGreen',
+				-background => $mainf->cget(-background));
 	    $ampel_blue_itemstyle =
-	      $mainf->ItemStyle('text', -foreground => 'blue');
+	      $mainf->ItemStyle('text', -foreground => 'blue',
+				-background => $mainf->cget(-background));
 	};
 
-	my @entry_width = (3,5,2,2,3,3,3,10);
-	my $entry_f = $mainf->Frame->pack;
+	my @entry_width = (3,5,2,2,3,3,3,10,8);
+
+	my $entry_f = $mainf->Frame->pack(-fill => "x");
+
+	my $current_field = "";
+	{
+	    my $status_f = $mainf->Frame->pack(-fill => "x");
+	    $status_f->Label(-relief => "sunken",
+			     -width => 20,
+			     -bd => 2,
+			     -anchor => "w",
+			     -textvariable => \$current_field,
+			    )->pack(-side => "left");
+	    my $rel_time_begin_e = $status_f->Entry
+		(-textvariable => \$rel_time_begin,
+		 -width => 8,
+		)->pack(-side => "left");
+	    $rel_time_begin_e->bind
+		("<FocusIn>" => sub {
+		     $current_field = "Anfangszeit für relative Zeiteingabe";
+		 });
+	}
+
 	for my $j (0 .. $hlist_cols-1) {
-	    $ampel_entry[$j] = $mainf->Entry(-width => $entry_width[$j]
-					    )->pack(-side => 'left');
-	    $mainf->Label(-text => '->')->pack(-side => 'left')
-	      if ($j == 2); # zwischen "von" und "nach"
+	    my $j = $j;
+	    $ampel_entry[$j] = $entry_f->Entry(-width => $entry_width[$j]
+					      )->pack(-side => 'left');
+	    $ampel_entry[$j]->bind("<FocusIn>" => sub {
+				       $current_field = $entry_desc[$j];
+				   });
+	    $entry_f->Label(-text => '->')->pack(-side => 'left')
+		if ($j == 2); # zwischen "von" und "nach"
 	}
 	for my $j (0 .. $hlist_cols-2) {
 	    $ampel_entry[$j]->bind('<Return>' => sub {
 				       $ampel_entry[$j+1]->tabFocus;
 				   });
 	}
+	$ampel_entry[1]->bind
+	    ("<FocusOut>" => sub {
+		 my $time = $ampel_entry[1]->get;
+		 if ($rel_time_begin !~ /^\s*$/ && $time !~ /^\s*$/) {
+		     if (my($h0,$m0,$s0) = $rel_time_begin =~ /^(\d{1,2}):(\d{2}):(\d{2})$/) {
+			 if (my($m,$s) = $time =~ /^(\d{1,2}):(\d{2})$/) {
+			     my $h = 0;
+			     $s += $s0;
+			     if ($s >= 60) { $m++; $s %= 60 }
+			     $m += $m0;
+			     if ($m >= 60) { $h++; $s %= 60 }
+			     $h += $h0;
+			     if ($h >= 24) {
+				 status_message("Wrap date!", "warn");
+			     }
+			     $ampel_entry[1]->delete("0", "end");
+			     $ampel_entry[1]->insert
+				 ("end", sprintf "%d:%02d:%02d", $h, $m, $s);
+			 }
+		     } else {
+			 status_message("Falsches Format für Startwert der relativen Zeitangabe", "error");
+		     }
+		 }
+	     });
+
 	$ampel_entry[4]->configure(-fg => 'DarkGreen');
 	$ampel_entry[5]->configure(-fg => 'red');
 	$ampel_entry[6]->configure(-fg => 'blue');
-	$ampel_add = $mainf->Button(-text => 'Add')->pack;
+	$ampel_add = $entry_f->Button(-text => 'Add')->pack;
 	$ampel_entry[$hlist_cols-1]->bind('<Return>' => sub {
 					      $ampel_add->invoke
 					  });
-
-	$ampel_balloon->attach($ampel_entry[0], -msg => 'Wochentag');
-	$ampel_balloon->attach($ampel_entry[1], -msg => 'Zeit');
-	$ampel_balloon->attach($ampel_entry[2],
-			       -msg => 'von (Himmelsrichtung)');
-	$ampel_balloon->attach($ampel_entry[3],
-			       -msg => 'nach (Himmelsrichtung)');
-	$ampel_balloon->attach($ampel_entry[4], -msg => 'Grünphase');
-	$ampel_balloon->attach($ampel_entry[5], -msg => 'Rotphase');
-	$ampel_balloon->attach($ampel_entry[6], -msg => 'Zyklus');
-	$ampel_balloon->attach($ampel_entry[7], -msg => 'Kommentar');
 
 	my $close_sub = sub {
 	    $t->destroy;
@@ -745,10 +797,10 @@ sub ampel_display {
 	   -command => $close_sub)->pack(-side => 'left');
 
 	my $butf2 = $t->Frame->pack(-fill => 'x');
-	$butf2->Button(-text => 'Redraw Canvas',
+	$butf2->Button(-text => 'Canvas neu zeichnen',
 		       -command => \&ampel_meta_draw_canvas
 		       )->pack(-side => 'left');
-	$butf2->Radiobutton(-text => 'All',
+	$butf2->Radiobutton(-text => 'Alle',
 			    -variable => \$ampel_draw_restrict,
 			    -value => '',
 			    -command => \&ampel_meta_draw_canvas
@@ -790,7 +842,7 @@ sub ampel_display {
 	    my %res = Ampelschaltung::lost(-rot   => $data[5],
 					   -gruen => $data[4],
 					  );
-	    $data[8] = sprintf "%.1f", $res{-zeit};
+	    $data[9] = sprintf "%.1f", $res{-zeit};
 	}
 	$ampel_hlist->add($i, -text => $data[0], -data => $i);
 	for my $j (1 .. $hlist_out_cols-1) {
@@ -825,7 +877,7 @@ sub ampel_display {
 	}
 	$ampel2_hlist->add($i, -text => $e->{Day}, -data => $i);
 	my $j = 1;
-	foreach (qw(Time DirFrom DirTo Green Red Cycle Comment Lost)) {
+	foreach (qw(Time DirFrom DirTo Green Red Cycle Comment Date Lost)) {
 	    $ampel2_hlist->itemCreate($i, $j, -text => $e->{$_});
 	    $j++;
 	}
@@ -861,8 +913,11 @@ sub ampel_display {
     for my $j (0 .. $hlist_cols-1) {
 	$ampel_entry[$j]->delete(0, 'end');
     }
-    $ampel_entry[0]->insert(0, $lastampeldate[0]);
-    $ampel_entry[1]->insert(0, $lastampeldate[1]);
+    for my $lastampeldate_i (0, 1, 8) { # wo-tag, zeit, datum
+	next if ($lastampeldate_i == 1 && $rel_time_begin !~ /^\s*$/);
+	$ampel_entry[$_]->insert(0, $lastampeldate[$_])
+	    if defined $lastampeldate[$_];
+    }
     $ampel_entry[0]->tabFocus;
 
     my @neighbors = keys %{$net->{Net}{$p1}};
@@ -955,8 +1010,7 @@ sub ampel_display {
 	   $draw_arrow->($last);
 	   ampel_save() if $autosave;
 	   my(@data) = split(/,/, $ampel_data[$index]->[$last]);
-	   $lastampeldate[0] = $data[0];
-	   $lastampeldate[1] = $data[1];
+	   @lastampeldate = @data;
        });
 
     $ampel_hlist->bind('<Delete>' => sub {
@@ -1042,6 +1096,10 @@ sub ampel_save_as {
 
 sub ampel_new_point {
     my($p1, $kreuzung, @schaltung) = @_;
+    if (!$crossing{$p1}) {
+	warn "*** No crossing for point $p1 [$kreuzung @schaltung] found ***";
+	return;
+    }
     $kreuzung = join("/", @{ $crossing{$p1} })
       if !defined $kreuzung || $kreuzung eq '';
     push @ampel_data, [$p1, $kreuzung, @schaltung];

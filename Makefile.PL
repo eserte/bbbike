@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.86 2003/07/06 20:20:36 eserte Exp $
+# $Id: Makefile.PL,v 1.86 2003/07/06 20:20:36 eserte Exp eserte $
 
 BEGIN {
     $^W = 0;
@@ -55,15 +55,14 @@ use constant REQTABLE_LONGDESC=> 5;
   [qw/Image::Magick	0	all	0	www/,
    'für Bildmanipulationen beim Radar-Bild der FU'],
 
-  [qw/CGI::MiniSvr	0	all	0	cgi/,
-   'für das persistente CGI-Programm XXX ist nicht mehr auf dem CPAN vorhanden!'],
-  [qw/FCGI		0	all	0	cgi/],
   [qw/Apache::Session::DB_File	0	all	0	cgi/,
    'optionale Session-Verwaltung für das CGI-Programm'],
   [qw/XML::SAX	0	all	0	cgi/,
    'CPAN.pm kann XML::SAX nicht über XML::Simple automatisch installieren'],
   [qw/XML::Simple	0	all	0	cgi/,
    'optional für XML-Dumps der BBBike-Route'],
+  [qw/YAML	0	all	0	cgi/,
+   'optional für YAML-Dumps der BBBike-Route'],
 
   [qw/Mail::Send	0	unix	0	mail/,
    'falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will'],

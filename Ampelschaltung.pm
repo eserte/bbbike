@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Ampelschaltung.pm,v 1.7 2003/07/10 00:04:20 eserte Exp $
+# $Id: Ampelschaltung.pm,v 1.7 2003/07/10 00:04:20 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -66,6 +66,7 @@ sub create {
 	    Red     => $l[5],
 	    Cycle   => $l[6],
 	    Comment => $l[7],
+	    Date    => $l[8],
 	   ));
     }
     $ap;
@@ -119,7 +120,7 @@ sub new {
 sub as_string {
     my $self = shift;
     local $^W = undef;
-    join(",", @{$self}{qw(Day Time DirFrom DirTo Green Red Cycle Comment)});
+    join(",", @{$self}{qw(Day Time DirFrom DirTo Green Red Cycle Comment Date)});
 }
 
 sub get_cycle {
@@ -548,7 +549,7 @@ sub lost { Ampelschaltung::Entry::lost(@_) }
 sub as_string {
     my $self = shift;
     local $^W = undef;
-    join(",", @{$self}{qw(Day Time DirFrom DirTo Green Red Cycle Comment)});
+    join(",", @{$self}{qw(Day Time DirFrom DirTo Green Red Cycle Comment Date)});
 }
 
 package Ampelschaltung2;

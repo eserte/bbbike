@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.23 2003/07/10 00:06:10 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.23 2003/07/10 00:06:10 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -104,8 +104,9 @@ sub read_conf {
 	do $file;
     }
     my $context = $self->Context;
-    $context->Algorithm($BBBikeConf::search_algorithm)
-	if defined $BBBikeConf::search_algorithm;
+    $BBBikeConf::search_algorithm = "A*"
+	if !defined $BBBikeConf::search_algorithm;
+    $context->Algorithm($BBBikeConf::search_algorithm);
 }
 
 sub change_scope {

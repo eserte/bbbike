@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.44 2003/06/02 23:21:13 eserte Exp $
+# $Id: PLZ.pm,v 1.44 2003/06/02 23:21:13 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002 Slaven Rezic. All rights reserved.
@@ -31,8 +31,6 @@ $PLZ_BASE_FILE = "Berlin.coords.data" if !defined $PLZ_BASE_FILE;
    (map { ("$_/$PLZ_BASE_FILE", "$_/data/$PLZ_BASE_FILE") } @INC),
    (map { ("$_/berlinco.dat",
 	   "$_/Berlin.data",        "$_/data/Berlin.data") } @INC),
-   "/usr/www/soc/plz/Berlin.data",
-   "/home/pub/lib/plz/Berlin.data",
   ) if !@plzfile;
 $OLD_AGREP = 0 unless defined $OLD_AGREP;
 # on FreeBSD is
@@ -80,27 +78,30 @@ sub new {
 		}
 	    }
 	    next if !defined $file;
+	}
+    } elsif (defined $file) {
+	open(DATA, $file) or return undef;
+    } else {
+	return undef;
+    }
 
-	    my($line) = <DATA>;
-	    $line =~ s/[\015\012]//g;
+    my($line) = <DATA>;
+    $line =~ s/[\015\012]//g;
 # Automatic detection of format. Caution: this means that the first line
 # in Berlin.coords.data must be complete i.e. having the coords field defined!
-	    my(@l) = split(/\|/, $line);
-	    if (@l == 3) {
-		$self->{DataFmt}  = FMT_REDUCED;
-		$self->{FieldPLZ} = FILE_ZIP;
-	    } elsif (@l == 4) {
-		$self->{DataFmt}  = FMT_COORDS;
-		$self->{FieldPLZ} = FILE_ZIP;
-	    } else {
-		$self->{DataFmt} = FMT_NORMAL;
-		$self->{FieldPLZ} = FILE_ZIP_FMT_NORMAL;
-	    }
-	    close DATA;
-	    last;
-	}
+    my(@l) = split(/\|/, $line);
+    if (@l == 3) {
+	$self->{DataFmt}  = FMT_REDUCED;
+	$self->{FieldPLZ} = FILE_ZIP;
+    } elsif (@l == 4) {
+	$self->{DataFmt}  = FMT_COORDS;
+	$self->{FieldPLZ} = FILE_ZIP;
+    } else {
+	$self->{DataFmt} = FMT_NORMAL;
+	$self->{FieldPLZ} = FILE_ZIP_FMT_NORMAL;
     }
-    return undef if !defined $file || !-r $file;
+    close DATA;
+
     $self->{File} = $file;
     $self->{Sep} = '|'; # XXX not yet used
     bless $self, $class;

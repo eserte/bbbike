@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.pl,v 1.17 2003/06/17 21:30:44 eserte Exp $
+# $Id: bbbikedraw.pl,v 1.17 2003/06/17 21:30:44 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -166,7 +166,7 @@ if (defined $bbox) {
 }
 $draw->init;
 $draw->create_transpose(-asstring => 1);
-$draw->draw_map;
+$draw->draw_map if $draw->can("draw_map");
 if (defined $custom_places) {
     if ($use_mapserver) {
 	warn "-customplaces not available for -mapserver";

@@ -89,6 +89,7 @@ MANIFEST
 MasterPunkte.pm
 MasterStrassen.pm
 PLZ.pm
+PLZ/Multi.pm
 PointEdit.pm
 Radwege.pm
 README
@@ -167,6 +168,7 @@ cgi/redirect-bbbike.cgi
 data/README
 data/.modified			for updating over the internet
 data/Berlin.coords.data
+data/Potsdam.coords.data
 data/ampeln
 data/ampelschaltung
 data/berlin

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.107 2003/07/09 22:55:24 eserte Exp $
+# $Id: bbbike,v 3.107 2003/07/09 22:55:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -5410,6 +5410,7 @@ EOF
 			       -tags => ["$abk-fg", $pointname, $xx, $yy]);
 	    } elsif ($abk eq 'lsa') {
 		# keine Verwendung von _coord_as_string
+		# XXX 'F' sollte mal ein leicht anderes Bild bekommen
 		$c->createImage
 		  ($x, $y,
 		   -image => ($category eq 'B'

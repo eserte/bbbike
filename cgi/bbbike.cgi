@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.37 2003/07/08 21:00:19 eserte Exp $
+# $Id: bbbike.cgi,v 6.43 2003/07/13 21:19:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ bbbike.cgi - CGI interface to bbbike
 
 =cut
 
-#BEGIN { $^W = 1 }
+BEGIN { $^W = 1 if $ENV{SERVER_NAME} =~ /herceg\.de/i }
 use vars qw(@extra_libs);
 BEGIN { delete $INC{"FindBin.pm"} }
 use FindBin;
@@ -66,10 +66,9 @@ use strict;
 use vars qw($VERSION $VERBOSE $WAP_URL
 	    $debug $tmp_dir $mapdir_fs $mapdir_url $local_route_dir
 	    $bbbike_root $bbbike_images $bbbike_url $bbbike_html
-	    $max_proc $use_miniserver $auto_switch_slow  $use_fcgi
 	    $modperl_lowmem $use_imagemap $create_imagemap $detailmap_module
 	    $q %persistent
-	    $str $lstr $lstr2 $multistr $orte $orte2 $multiorte
+	    $str $orte $orte2 $multiorte
 	    $ampeln $qualitaet_s_net $handicap_s_net
 	    $strcat_net $radwege_strcat_net $routen_net $comments_net
 	    $green_net
@@ -82,7 +81,8 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $graphic_format $use_mysql_db $use_exact_streetchooser
 	    $use_module
 	    $cannot_gif_png $cannot_jpeg $cannot_pdf $cannot_svg $can_gif
-	    $can_wbmp $can_palmdoc $can_mapserver $mapserver_address_url
+	    $can_wbmp $can_palmdoc $can_berliner_stadtplan_post
+	    $can_mapserver $mapserver_address_url
 	    $mapserver_init_url $no_berlinmap $max_plz_streets $with_comments
 	    $use_coord_link
 	    @weak_cache @no_cache %proc
@@ -192,40 +192,15 @@ $PLZ::OLD_AGREP      = $PLZ::OLD_AGREP; # peacify -w
 
 =over
 
-=item $use_miniserver
-
-Set to a true value, if C<CGI::MiniSvr> should be used. Default: false.
-
-=cut
-
-$use_miniserver = 0;
-
-=item $max_proc
-
-The maximal count of concurrent miniserver processes. Default: 2.
-
-=cut
-
-$max_proc = 2;
-
-=item $auto_switch_slow
-
-Set to true, if the slower CGI interface should be used if there are
-two many miniserver processes. Default: true.
-
-=cut
-
-$auto_switch_slow = 1;
-
 =item $modperl_lowmem
 
 In the case of using the script in a  modperl environment: set this to
 true, if global variables should be deleted after the end of a request.
-This may help if there are memory leaks. Default: false.
+This may help if there are memory leaks. Default: true if MOD_PERL.
 
 =cut
 
-$modperl_lowmem = 0;
+$modperl_lowmem = $ENV{MOD_PERL};
 
 =back
 
@@ -593,88 +568,19 @@ if ($VERBOSE) {
     $Kreuzungen::VERBOSE      = $VERBOSE;
 }
 
-if ($use_miniserver) {
-    eval q{
-	local $SIG{'__DIE__'};
-	#local $^W = 0; # XXX noch notwendig?
-	require CGI::Base;
-	require CGI::Request;
-	require CGI::MiniSvr;
-
-	package CGI::MiniSvr::BBBike;
-	@CGI::MiniSvr::BBBike::ISA = qw(CGI::MiniSvr);
-	# validate_peer ist eher störend ...
-	# Probleme lokal beim Apache 1.3.4
-	# (wahrscheinlich ein Konfigurationsproblem)
-	sub validate_peer { return 1 }
-    };
-
-    warn __LINE__ .  ": Warnung: $@<br>\n" if $@;
-}
-
 use vars qw($cgic); # Can't use my here!
 sub my_exit {
     # Seems to be necessary for CGI::Compress::Gzip to flush the
     # output buffer.
-    #warn "call my exit with @_";#XXX remove
     undef $cgic;
     exit @_;
 }
 
-if ($0 =~ /\.fcgi$/) {
-    require FCGI;
-    $use_fcgi = 1;
-    my_exit if FCGI::accept() < 0;
-}
-
-# beim ersten Mal *darf* kein HTTP-Response-Header übermittelt werden,
-# danach *muss* es geschehen
-use vars qw($first_time);
-$first_time = 1;
-
-{
-# header() patchen
-package CGI::BBBike;
-@CGI::BBBike::ISA = qw(CGI);
-sub new {
-    my($class, @args) = @_;
-    my $caller_pkg = caller();
-    my $code = "";
-    if ($] >= 5.006) {
-	$code .= "no warnings 'redefine';\n";
-    }
-    $code .= '
-sub header
- {
-    if (!$ ' . $caller_pkg . '::first_time && $ ' . $caller_pkg . '::use_miniserver) {
-	print "HTTP/1.0 200 OK\n";
-    }
-    $ ' . $caller_pkg . '::first_time = 0;
-    shift->SUPER::header(@_);
-}
-';
-    #warn $code;
-    eval $code;
-    $class->SUPER::new(@args);
-}
-
-# damit ich weiterhin mit $q->... arbeiten kann
-package CGI::Request::BBBike;
-use vars qw(@ISA);
-@ISA = qw(CGI::Request CGI::BBBike);
-
-} # jetzt beginnt wieder package main
-
-$VERSION = sprintf("%d.%02d", q$Revision: 6.37 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.43 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
 
-# XXX del:
-#  my $std_css = <<EOF;
-#  body,td,th,p,input { font-family:$font; }
-#  tt,pre { font-family:fixed,courier;}
-#  EOF
 @weak_cache = ('-expires' => '+1d',
                # XXX ein bißchen soll Netscape3 auch cachen können:
 	       #'-pragma' => 'no-cache',
@@ -684,7 +590,8 @@ my $delim = '!'; # wegen Mac nicht ¦ verwenden!
              '-pragma' => 'no-cache',
 	     '-cache-control' => 'no-cache',
             );
-my $header_written;
+#XXX shared variable ! my $header_written;
+use vars qw($header_written);
 
 if (defined %Apache::) {
     # workaround for "use lib" problem with Apache::Registry
@@ -721,8 +628,11 @@ if (!$use_background_image) {
 
 my @pref_keys = qw/speed cat quality ampel green/;
 
-$q = new CGI::BBBike;
-$str = new Strassen "strassen" unless defined $str;
+$q = new CGI;
+undef $str; # XXX because it may already contain landstrassen etc.
+undef $net; # dito
+
+#$str = new Strassen "strassen" unless defined $str;
 #$str = new Strassen::Lazy "strassen" unless defined $str;
 $cookiename = "bbbike";
 if (!defined $inaccess_str) {
@@ -732,7 +642,7 @@ if (!defined $inaccess_str) {
 	$inaccess_str = $i_s->get_hashref;
     }
 }
-get_streets($use_umland);
+get_streets($use_umland_jwd ? "wideregion" : $use_umland ? "region" : "city");
 
 # Maximale Anzahl der angezeigten Straßen, wenn eine Auswahl im PLZ-Gebiet
 # gezeigt wird.
@@ -754,8 +664,10 @@ if (!defined $bbbike_html) {
 	"html";
 }
 
-my($fontstr, $fontend);
-my $smallform = 0;
+#XXX ! stay shared: my($fontstr, $fontend);
+#XXX ! stay shared: my $smallform = 0;
+use vars qw($smallform $fontstr $fontend);
+$smallform = 0;
 
 if (!-d $mapdir_fs) {
     # unter der Voraussetzung, dass das Parent-Verzeichnis schon existiert
@@ -764,275 +676,229 @@ if (!-d $mapdir_fs) {
 
 $bbbike_script = $q->url;
 $bbbike_script_cgi = $bbbike_script;
-if ($use_fcgi) { # die normale CGI-Skript-Version (ohne FCGI)
-    $bbbike_script_cgi =~ s/\.fcgi\b/.cgi/;
+
+$header_written = 0;
+
+if ($q->path_info ne "") {
+    my $q2 = CGI->new(substr($q->path_info, 1));
+    foreach my $k ($q2->param) {
+	$q->param($k, $q2->param($k));
+    }
 }
 
-# den MiniSvr starten
-if ($use_miniserver) {
-    my $proc_slot = limit_processes();
-    CGI::Base::LogFile("$tmp_dir/bbbike.log");
-    chmod 0600, "$tmp_dir/bbbike.log";
-    $cgi = new CGI::MiniSvr::BBBike;
-    $port = $cgi->port;
-    $bbbike_script_cgi = $bbbike_script
-      = "http://$ENV{SERVER_NAME}$port$ENV{SCRIPT_NAME}";
-    user_agent_info();
-    choose_form();
-    $cgi->done(0);
-    $cgi->spawn and my_exit 0;
-#    $cgi->sigpipe_catch;#XXX needed? minisvr is unstable...
-    # Prozessnummer korrigieren
-    set_process($proc_slot);
-    CGI::Request::Interface($cgi);
+# Bei Verwendung von Apache muß die User-Info immer neu
+# festgestellt werden
+user_agent_info();
+
+# XXX Do not do it automatically ...
+if (0 && $bi->{'wap_browser'}) {
+    exec("./wapbbbike.cgi", @ARGV);
+    warn "exec failed, try redirect...";
+    print $q->redirect($WAP_URL || $BBBike::BBBIKE_WAP);
+    my_exit(0);
 }
 
-# Request-Loop
-while (1) {
-    $header_written = 0;
-    if ($use_miniserver) {
-	$q = new CGI::Request::BBBike or $cgi->exit; # my_exit?
-	$q->delete("~SequenceNumber ");    # stört nur...
-    } elsif ($use_fcgi) {
-	# XXX workaround mit QUERY_STRING
-	# scheint aber zu funktionieren
-	$q = new CGI $ENV{QUERY_STRING};
+undef $bp_obj;
+init_bikepower($q);
+
+# Wettermeldungen so früh wie möglich versuchen zu holen
+if ($show_weather || $bp_obj) {
+    start_weather_proc();
+}
+
+$q->delete('Dummy');
+$smallform = $q->param('smallform') || $bi->{'mobile_device'};
+
+foreach my $type (qw(start via ziel)) {
+    if (defined $q->param($type . "charimg.x") and
+	$q->param($type . "charimg.x") ne ""   and
+	defined $q->param($type . "charimg.y") and
+	$q->param($type . "charimg.y") ne "") {
+	my($x, $y) = (int(($q->param($type . "charimg.x")-2)/30),
+		      int(($q->param($type . "charimg.y")-2)/30));
+	my $ch = $x + $y*9 + ord("A");
+	$ch = ($ch > ord("Z") ? 'Z' : ($ch < ord("A") ? 'A' : chr($ch)));
+	$q->param($type . "char", $ch);
+	$q->delete($type . "charimg.x");
+	$q->delete($type . "charimg.y");
     }
+}
 
-    if ($q->path_info ne "") {
-	my $q2 = CGI->new(substr($q->path_info, 1));
-	foreach my $k ($q2->param) {
-	    $q->param($k, $q2->param($k));
-	}
-    }
+if (defined $q->param('movemap')) {
+    my $move = $q->param('movemap');
+    my($x, $y) = ($q->param('detailmapx'),
+		  $q->param('detailmapy'));
+    if    ($move =~ /^nord/i) { $y-- }
+    elsif ($move =~ /^süd/i)  { $y++ }
+    if    ($move =~ /west$/i) { $x-- }
+    elsif ($move =~ /ost$/i)  { $x++ }
+    $q->delete('detailmapx');
+    $q->delete('detailmapy');
+    $q->delete('movemap');
+    draw_map('-x' => $x,
+	     '-y' => $y);
+    goto REQUEST_DONE;
+}
 
-    # Bei Verwendung von FCGI oder Apache muß die User-Info immer
-    # neu festgestellt werden
-    user_agent_info() unless $use_miniserver;
-
-    # XXX Do not do it automatically ...
-    if (0 && $bi->{'wap_browser'}) {
-        exec("./wapbbbike.cgi", @ARGV);
-	warn "exec failed, try redirect...";
-	print $q->redirect($WAP_URL || $BBBike::BBBIKE_WAP);
-	my_exit(0);
-    }
-
-    undef $bp_obj unless $use_miniserver;
-    init_bikepower($q) if !($use_miniserver && defined $bp_obj);
-
-    # Wettermeldungen so früh wie möglich versuchen zu holen
-    if ($show_weather || $bp_obj) {
-	start_weather_proc();
-    }
-
-    $q->delete('Dummy');
-    $smallform = $q->param('smallform') || $bi->{'mobile_device'};
-
-    foreach my $type (qw(start via ziel)) {
-	if (defined $q->param($type . "charimg.x") and
-	    $q->param($type . "charimg.x") ne ""   and
-	    defined $q->param($type . "charimg.y") and
-	    $q->param($type . "charimg.y") ne "") {
-	    my($x, $y) = (int(($q->param($type . "charimg.x")-2)/30),
-			  int(($q->param($type . "charimg.y")-2)/30));
-	    my $ch = $x + $y*9 + ord("A");
-	    $ch = ($ch > ord("Z") ? 'Z' : ($ch < ord("A") ? 'A' : chr($ch)));
-	    $q->param($type . "char", $ch);
-	    $q->delete($type . "charimg.x");
-	    $q->delete($type . "charimg.y");
-	}
-    }
-
-    if (defined $q->param('movemap')) {
-	my $move = $q->param('movemap');
-	my($x, $y) = ($q->param('detailmapx'),
-		      $q->param('detailmapy'));
-	if    ($move =~ /^nord/i) { $y-- }
-	elsif ($move =~ /^süd/i)  { $y++ }
-	if    ($move =~ /west$/i) { $x-- }
-	elsif ($move =~ /ost$/i)  { $x++ }
-	$q->delete('detailmapx');
-	$q->delete('detailmapy');
-	$q->delete('movemap');
+foreach my $type (qw(start via ziel)) {
+    if (defined $q->param($type . "mapimg.x") and
+	$q->param($type . "mapimg.x") ne ""   and
+	defined $q->param($type . "mapimg.y") and
+	$q->param($type . "mapimg.y") ne "") {
+	my($x, $y) = (int($q->param($type . 'mapimg.x')/$xgridwidth),
+		      int($q->param($type . 'mapimg.y')/$ygridwidth));
+	$q->param('type', $type);
+	$q->delete($type . "mapimg.x");
+	$q->delete($type . "mapimg.y");
 	draw_map('-x' => $x,
 		 '-y' => $y);
-	goto LOOP_CONT;
-    }
-
-    foreach my $type (qw(start via ziel)) {
-	if (defined $q->param($type . "mapimg.x") and
-	    $q->param($type . "mapimg.x") ne ""   and
-	    defined $q->param($type . "mapimg.y") and
-	    $q->param($type . "mapimg.y") ne "") {
-	    my($x, $y) = (int($q->param($type . 'mapimg.x')/$xgridwidth),
-			  int($q->param($type . 'mapimg.y')/$ygridwidth));
-	    $q->param('type', $type);
-	    $q->delete($type . "mapimg.x");
-	    $q->delete($type . "mapimg.y");
-	    draw_map('-x' => $x,
-		     '-y' => $y);
-	    goto LOOP_CONT;
-	}
-    }
-
-    if (defined $q->param('detailmapx') and
-	defined $q->param('detailmapy') and
-	defined $q->param('detailmap.x') and
-	defined $q->param('detailmap.y')
-       ) {
-	my $c = detailmap_to_coord($q->param('detailmapx'),
-				   $q->param('detailmapy'),
-				   $q->param('detailmap.x'),
-				   $q->param('detailmap.y'));
-	if (defined $c) {
-	    $q->param($q->param('type') . 'c', $c);
-	}
-	$q->delete('detailmapx');
-	$q->delete('detailmapy');
-	$q->delete('detailmap.x');
-	$q->delete('detailmap.y');
-	$q->delete('type');
-    }
-
-    # Ziel für stadtplandienst-kompatible Koordinaten setzen
-    my $set_zielc = sub {
-	my $ll = shift;
-	require Karte;
-	Karte::preload("Standard", "Polar");
-	# Ob die alte ...x...-Syntax noch unterstützt wird, ist fraglich...
-	my($long,$lat) = $ll =~ /^[\+\ ]/
-			  ? $ll =~ /^[\+\-\ ]([0-9.]+)[\+\-\ ]([0-9.]+)/
-			  : split(/x/, $ll)
-			 ;
-	if (defined $long && defined $lat) {
-	    local $^W;
-	    my($x, $y) = $Karte::Polar::obj->map2standard($lat, $long);
-	    new_kreuzungen(); # XXX needed in munich, here too?
-	    $q->param("zielc", get_nearest_crossing_coords($x,$y));
-	}
-    };
-
-    # schwache stadtplandienst-Kompatibilität
-    # Note: ";" und "&" werden von CGI.pm gleichberechtigt behandelt
-    if (defined $q->param('STR')) {
-	$q->param('ziel', $q->param('STR'));
-    }
-    if (defined $q->param('PLZ')) {
-	$q->param('zielplz', $q->param('PLZ'));
-    }
-    if (defined $q->param('LL')) {
-	$set_zielc->($q->param('LL'));
-    }
-
-    if (defined $q->param('begin')) {
-	$q->delete('begin');
-	choose_form();
-    } elsif (defined $q->param('info') || $q->path_info eq '/_info') {
-	$q->delete('info');
-	show_info();
-    } elsif (defined $q->param('uploadpage') ||
-	     defined $q->param('gps')) {
-	$q->delete('uploadpage');
-	$q->delete('gps');
-	upload_button();
-    } elsif (defined $q->param('all')) {
-	$q->delete('all');
-	choose_all_form();
-    } elsif (defined $q->param('bikepower')) {
-	$q->delete('bikepower');
-	call_bikepower();
-    } elsif (defined $q->param('nahbereich')) {
-	nahbereich();
-    } elsif (defined $q->param('mapserver')) {
-	start_mapserver();
-    } elsif (defined $q->param('routefile') and
-	     $q->param('routefile') ne "") {
-	draw_route_from_fh($q->param('routefile'));
-    } elsif (defined $q->param('localroutefile') &&
-	     defined $local_route_dir) {
-	(my $local_route_file = $q->param('localroutefile')) =~ s/[^A-Za-z0-9._-]//g;
-	$local_route_file = "$local_route_dir/$local_route_file";
-	open(FH, $local_route_file)
-	    or die "Can't open $local_route_file: $!";
-	draw_route_from_fh(\*FH);
-    } elsif (defined $q->param('coords') || defined $q->param('coordssession')) {
-	draw_route(-cache => []);
-    } elsif (defined $q->param('create_all_maps')) {
-	# XXX Der Apache 1.3.9/FreeBSD 3.3 lässt den Prozess nach
-	# ungefähr fünf Karten mit "Profiling timer expired" sterben.
-	# Mit thttpd gibt es zwar auch mysteriöse kills, aber es geht im
-	# Großen und Ganzen.
-	http_header(-type => 'text/plain',
-		    @no_cache,
-		   );
-	$| = 1;
-	$check_map_time = 1;
-	for my $x (0 .. 9) {
-	    for my $y (0 .. 9) {
-		print "x=$x y=$y ...\n";
-		draw_map('-x' => $x,
-			 '-y' => $y,
-			 '-quiet'    => 1,
-			 '-logging'  => 1,
-			 '-strlabel' => 1,
-			 '-force'    => 0,
-			);
-	    }
-	}
-	my_exit(0);
-    } elsif (defined $q->param('startchar')) {
-	choose_ch_form($q->param('startchar'), 'start');
-    } elsif (defined $q->param('viachar')) {
-	choose_ch_form($q->param('viachar'), 'via');
-    } elsif (defined $q->param('zielchar')) {
-	choose_ch_form($q->param('zielchar'), 'ziel');
-    } elsif (defined $q->param('startc') and
-	     defined $q->param('zielc')) {
-	if (!$q->param('pref_seen')) {
-	    # zuerst die Einstellungen für die Suche eingeben lassen
-	    get_kreuzung();
-	} else {
-	    # und erst dann suchen
-	    search_coord();
-	}
-    } elsif (((defined $q->param('startname') and $q->param('startname') ne '')
-	      or
-	      (defined $q->param('startc') and $q->param('startc') ne ''))
-	     and
-	     ((defined $q->param('zielname')  and $q->param('zielname')  ne '')
-	      or
-	      (defined $q->param('zielc') and $q->param('zielc') ne ''))
-	     and
-	     via_not_needed()
-	    ) {
-	get_kreuzung();
-    } elsif (defined $q->param('browser')) {
-	show_user_agent_info();
-    } else {
-	choose_form();
-    }
-
-    undef $cgic;
-
-  LOOP_CONT:
-    if ($use_miniserver) {
-	$cgi->done(0);
-    } elsif ($use_fcgi) {
-	FCGI::flush();
-	my_exit 1 if FCGI::accept() < 0;
-    } else {
-	last;
+	goto REQUEST_DONE;
     }
 }
 
+if (defined $q->param('detailmapx') and
+    defined $q->param('detailmapy') and
+    defined $q->param('detailmap.x') and
+    defined $q->param('detailmap.y')
+   ) {
+    my $c = detailmap_to_coord($q->param('detailmapx'),
+			       $q->param('detailmapy'),
+			       $q->param('detailmap.x'),
+			       $q->param('detailmap.y'));
+    if (defined $c) {
+	$q->param($q->param('type') . 'c', $c);
+    }
+    $q->delete('detailmapx');
+    $q->delete('detailmapy');
+    $q->delete('detailmap.x');
+    $q->delete('detailmap.y');
+    $q->delete('type');
+}
+
+# Ziel für stadtplandienst-kompatible Koordinaten setzen
+my $set_zielc = sub {
+    my $ll = shift;
+    require Karte;
+    Karte::preload("Standard", "Polar");
+    # Ob die alte ...x...-Syntax noch unterstützt wird, ist fraglich...
+    my($long,$lat) = ($ll =~ /^[\+\ ]/
+		      ? $ll =~ /^[\+\-\ ]([0-9.]+)[\+\-\ ]([0-9.]+)/
+		      : split(/x/, $ll)
+		     );
+    if (defined $long && defined $lat) {
+	local $^W;
+	my($x, $y) = $Karte::Polar::obj->map2standard($lat, $long);
+	new_kreuzungen(); # XXX needed in munich, here too?
+	$q->param("zielc", get_nearest_crossing_coords($x,$y));
+    }
+};
+
+# schwache stadtplandienst-Kompatibilität
+# Note: ";" und "&" werden von CGI.pm gleichberechtigt behandelt
+if (defined $q->param('STR')) {
+    $q->param('ziel', $q->param('STR'));
+}
+if (defined $q->param('PLZ')) {
+    $q->param('zielplz', $q->param('PLZ'));
+}
+if (defined $q->param('LL')) {
+    $set_zielc->($q->param('LL'));
+}
+
+if (defined $q->param('begin')) {
+    $q->delete('begin');
+    choose_form();
+} elsif (defined $q->param('info') || $q->path_info eq '/_info') {
+    $q->delete('info');
+    show_info();
+} elsif (defined $q->param('uploadpage') ||
+	 defined $q->param('gps')) {
+    $q->delete('uploadpage');
+    $q->delete('gps');
+    upload_button();
+} elsif (defined $q->param('all')) {
+    $q->delete('all');
+    choose_all_form();
+} elsif (defined $q->param('bikepower')) {
+    $q->delete('bikepower');
+    call_bikepower();
+} elsif (defined $q->param('nahbereich')) {
+    nahbereich();
+} elsif (defined $q->param('mapserver')) {
+    start_mapserver();
+} elsif (defined $q->param('routefile') and
+	 $q->param('routefile') ne "") {
+    draw_route_from_fh($q->param('routefile'));
+} elsif (defined $q->param('localroutefile') &&
+	 defined $local_route_dir) {
+    (my $local_route_file = $q->param('localroutefile')) =~ s/[^A-Za-z0-9._-]//g;
+    $local_route_file = "$local_route_dir/$local_route_file";
+    open(FH, $local_route_file)
+	or die "Can't open $local_route_file: $!";
+    draw_route_from_fh(\*FH);
+} elsif (defined $q->param('coords') || defined $q->param('coordssession')) {
+    draw_route(-cache => []);
+} elsif (defined $q->param('create_all_maps')) {
+    # XXX Der Apache 1.3.9/FreeBSD 3.3 lässt den Prozess nach
+    # ungefähr fünf Karten mit "Profiling timer expired" sterben.
+    # Mit thttpd gibt es zwar auch mysteriöse kills, aber es geht im
+    # Großen und Ganzen.
+    http_header(-type => 'text/plain',
+		@no_cache,
+	       );
+    $| = 1;
+    $check_map_time = 1;
+    for my $x (0 .. 9) {
+	for my $y (0 .. 9) {
+	    print "x=$x y=$y ...\n";
+	    draw_map('-x' => $x,
+		     '-y' => $y,
+		     '-quiet'    => 1,
+		     '-logging'  => 1,
+		     '-strlabel' => 1,
+		     '-force'    => 0,
+		    );
+	}
+    }
+    my_exit(0);
+} elsif (defined $q->param('startchar')) {
+    choose_ch_form($q->param('startchar'), 'start');
+} elsif (defined $q->param('viachar')) {
+    choose_ch_form($q->param('viachar'), 'via');
+} elsif (defined $q->param('zielchar')) {
+    choose_ch_form($q->param('zielchar'), 'ziel');
+} elsif (defined $q->param('startc') and
+	 defined $q->param('zielc')) {
+    if (!$q->param('pref_seen')) {
+	# zuerst die Einstellungen für die Suche eingeben lassen
+	get_kreuzung();
+    } else {
+	# und erst dann suchen
+	search_coord();
+    }
+} elsif (((defined $q->param('startname') and $q->param('startname') ne '')
+	  or
+	  (defined $q->param('startc') and $q->param('startc') ne ''))
+	 and
+	 ((defined $q->param('zielname')  and $q->param('zielname')  ne '')
+	  or
+	  (defined $q->param('zielc') and $q->param('zielc') ne ''))
+	 and
+	 via_not_needed()
+	) {
+    get_kreuzung();
+} elsif (defined $q->param('browser')) {
+    show_user_agent_info();
+} else {
+    choose_form();
+}
+
+undef $cgic;
+
+REQUEST_DONE:
 if ($modperl_lowmem) {
-    # Nutzen für den Speicherverbrauch ist eher begrenzt...
     undef $q;
     undef $str;
-    undef $lstr;
-    undef $lstr2;
-    undef $multistr;
     undef $orte;
     undef $orte2;
     undef $multiorte;
@@ -1080,7 +946,7 @@ EOF
     }
 }
 
-sub choose_form () {
+sub choose_form {
     my $startname = $q->param('startname') || '';
     my $start2    = $q->param('start2')    || '';
     my $start     = $q->param('start')     || '';
@@ -1142,7 +1008,17 @@ sub choose_form () {
 	    } else {
 		my($strasse, $bezirk, $plz) = @s;
 		warn "Wähle $type-Straße für $strasse/$bezirk\n" if $debug;
+		my $str = get_streets();
 		my $pos = $str->choose_street($strasse, $bezirk);
+		if (!defined $pos) {
+		    my @files = $str->file;
+		    if (@files == 1) {
+			warn "Enlarge streets for umland\n" if $debug;
+			$q->param("scope", "region");
+			$str = get_streets(); # XXX maybe wideregion too?
+		    }
+		    $pos = $str->choose_street($strasse, $bezirk);
+		}
 		if (defined $pos) {
 		    $$nameref = $str->get($pos)->[0];
 		    $q->param($type . 'plz', $plz);
@@ -1224,17 +1100,16 @@ sub choose_form () {
 	# Überprüfen, ob eine Straße in PLZ vorhanden ist.
 	if ($$nameref eq '' && $$oneref ne '') {
 	    if (!$plz) {
-		require PLZ;
-		PLZ->VERSION(1.26);
-		$plz = new PLZ;
-		if (!$plz) {
-		    # Notbehelf. PLZ sollte möglichst installiert sein.
-		    my @res = $str->agrep($$oneref);
-		    if (@res) {
-			$$nameref = $res[0];
-		    }
-		    next;
+		$plz = init_plz();
+	    }
+	    if (!$plz) {
+		# Notbehelf. PLZ sollte möglichst installiert sein.
+		my $str = get_streets();
+		my @res = $str->agrep($$oneref);
+		if (@res) {
+		    $$nameref = $res[0];
 		}
+		next;
 	    }
 
 	    warn "Suche $$oneref in der PLZ-DB.\n" if $debug;
@@ -1275,12 +1150,14 @@ sub choose_form () {
 		    }
 #XXX		    next;
 		}
-		if (!defined $$nameref) {
+
+		if (@$matchref == 0 && !defined $$nameref) {
 #XXX Überprüfen ...
 		    # Noch immer ohne Erfolg. In der Strassen-Datei
 		    # nachschauen, weil einige Straßen nicht in der PLZ-Datei
 		    # stehen.
 		    warn "Suche $$oneref in der Straßen-Datei.\n" if $debug;
+		    my $str = get_streets();
 		    my @res = $str->agrep($$oneref);
 		    if (@res) {
 			my $ret = $str->get_by_name($res[0]);
@@ -1290,13 +1167,19 @@ sub choose_form () {
 			}
 		    }
 		}
-		next;
+
+		next; # XXX delete?
+		# XXX enable???
+		#if (@$matchref == 0 && !defined $$nameref) {
+		#    next;
+		#}
 	    }
 
 	    # If this is a crossing, then get the exact point, but don't fail
 	    if (defined $crossing_street) {
 		# first: get all matching Strasse objects (first part)
 		my $rx = "^" . join("|", map { quotemeta($_->[&PLZ::LOOK_NAME]) } @$matchref);
+		my $str = get_streets();
 		my @matches = grep {
 		    $_->[Strassen::NAME] =~ /$rx/i
 		} $str->get_all;
@@ -1361,8 +1244,18 @@ sub choose_form () {
 		my($strasse, $bezirk) = ($matchref->[0][0],
 					 $matchref->[0][1]);
 		warn "Wähle $type-Straße für $strasse/$bezirk.\n"
-		  if $debug;
+		    if $debug;
+		my $str = get_streets();
 		my $pos = $str->choose_street($strasse, $bezirk);
+		if (!defined $pos) {
+		    my @files = $str->file;
+		    if (@files == 1) {
+			warn "Enlarge streets for umland\n" if $debug;
+			$q->param("scope", "region");
+			$str = get_streets(); # XXX maybe wideregion too?
+		    }
+		    $pos = $str->choose_street($strasse, $bezirk);
+		}
 		if (defined $pos) {
 		    $$nameref = $str->get($pos)->[0];
 		    $q->param($type . 'plz', $matchref->[0][2]);
@@ -1387,7 +1280,7 @@ sub choose_form () {
     }
 
     my %header_args = @weak_cache;
-    $header_args{-expires} = ($use_miniserver ? 'now' : '+1d');
+    $header_args{-expires} = '+1d';
     http_header(%header_args);
     my @extra_headers;
     if ($bi->{'text_browser'} && !$bi->{'mobile_device'}) {
@@ -1412,7 +1305,9 @@ sub choose_form () {
 <td valign="top">@{[ blind_image(420,1) ]}<br>Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 2800 von 10000 Berliner Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
 Nebenstra&szlig;en). Bei nicht erfassten Straßen wird automatisch die
 nächste bekannte verwendet.<br>
-<i>Neu</i>: In der Datenbank sind jetzt auch ca. 120 Potsdamer Stra&szlig;en.</td>
+<!-- XXXX <i>Neu</i>: In der Datenbank sind jetzt auch ca. 120 Potsdamer Stra&szlig;en.-->
+<i>Achtung</i>: Die Potsdamer Stra&szlig;en sind wegen technischer Probleme zur Zeit nicht mehr anw&auml;hlbar!
+</td>
 <td valign="top" @{[ $start_bgcolor ? "bgcolor=$start_bgcolor" : "" ]}>@{[ defined &teaser ? teaser() : "" ]}</td>
 </tr>
 </table>
@@ -1724,6 +1619,8 @@ function " . $type . "char_init() {}
     }
 
     print footer_as_string();
+    print "<input type=hidden name=scope value='" .
+	(defined $q->param("scope") ? $q->param("scope") : "") . "'>";
     print "</form>\n";
 
     print $q->end_html;
@@ -1741,7 +1638,7 @@ sub choose_ch_form {
 	foreach my $locale (qw(de de_DE de_DE.ISO8859-1 de_DE.ISO_8859-1)) {
 	    # Aha. Bei &POSIX::LC_ALL gibt es eine Warnung, ohne & und mit ()
 	    # funktioniert es reibungslos.
-	    last if POSIX::setlocale( POSIX::LC_ALL(), $locale);
+	    last if POSIX::setlocale( POSIX::LC_COLLATE(), $locale);
 	}
     };
     http_header(@weak_cache);
@@ -1775,6 +1672,7 @@ sub choose_ch_form {
 				  ? '[UÜ]'
 				  : $search_char)));
     my @strlist;
+    my $str = get_streets();
     $str->init;
     eval q{ # eval wegen /o
 	while(1) {
@@ -1816,6 +1714,8 @@ sub choose_ch_form {
     print "andere " . ucfirst($search_type) . "stra&szlig;e:<br>\n";
     abc_link($search_type);
     footer();
+    print "<input type=hidden name=scope value='" .
+	(defined $q->param("scope") ? $q->param("scope") : "") . "'>";
     print "</form>\n";
     print $q->end_html;
 }
@@ -1882,6 +1782,7 @@ sub get_kreuzung {
 	}
     }
 
+    my $str = get_streets();
     $str->init;
     # Abbruch kann hier nicht früher erfolgen, da Straßen unterbrochen
     # sein können
@@ -1903,11 +1804,9 @@ sub get_kreuzung {
 	}
     }
 
-    if (!defined $start and !defined $start_c) {
-	confess "Fehler: Start $start kann nicht zugeordnet werden.<br>\n";
-    }
-    if (!defined $ziel  and !defined $ziel_c) {
-	confess "Fehler: Ziel $ziel kann nicht zugeordnet werden.<br>\n";
+    if ((!defined $start and !defined $start_c) ||
+	(!defined $ziel  and !defined $ziel_c)) {
+	confess "Fehler: Start $start und/oder Ziel $ziel können nicht zugeordnet werden.<br>\n";
     }
 
     if (@start_coords == 1 and @ziel_coords == 1 and
@@ -1938,7 +1837,6 @@ sub get_kreuzung {
     all_crossings();
 
     print "<form action=\"$bbbike_script\">";
-
 
     print "<table>\n" if ($bi->{'can_table'});
 
@@ -2084,6 +1982,8 @@ EOF
 #  	print " <font size=\"-1\"><input type=submit name=nahbereich value=\"Nahbereich\"></font>\n";
 #      }
     footer();
+    print "<input type=hidden name=scope value='" .
+	(defined $q->param("scope") ? $q->param("scope") : "") . "'>";
     print "</form>";
     print $q->end_html;
 }
@@ -2127,9 +2027,10 @@ sub settings_html {
     # Einstellungen ########################################
     my %c = $q->cookie(-name => $cookiename);
 
-    foreach my $key (@pref_keys) {
-	$c{"pref_$key"} = $q->param("pref_$key")
-	    if defined $q->param("pref_$key");
+    if ($q->param("pref_seen")) {
+	foreach my $key (@pref_keys) {
+	    $c{"pref_$key"} = $q->param("pref_$key");
+	}
     }
 
     my(%strcat)    = ("" => 0, "N1" => 1, "N2" => 2, "H1" => 3, "H2" => 4);
@@ -2249,8 +2150,8 @@ sub via_not_needed {
 sub make_netz {
     my $lite = shift;
     if (!$net) {
-	$net = new StrassenNetz $multistr;
-	if ($search_algorithm eq 'C-A*-2') {
+	$net = new StrassenNetz $str;
+	if (defined $search_algorithm && $search_algorithm eq 'C-A*-2') {
 	    $net->use_data_format($StrassenNetz::FMT_MMAP)
 	} else {
 	    # XXX überprüfen, ob sich der Cache lohnt...
@@ -2414,7 +2315,7 @@ sub search_coord {
 	my $penalty;
 	if ($q->param('pref_cat') eq 'N_RW') {
 	    if (!$radwege_strcat_net) {
-		$radwege_strcat_net = new StrassenNetz $multistr;
+		$radwege_strcat_net = new StrassenNetz $str;
 		$radwege_strcat_net->make_net_cyclepath(Strassen->new("radwege_exact"), 'N_RW', UseCache => 0); # UseCache => 1 for munich
 	    }
 	    $penalty = { "H"    => 4,
@@ -2427,7 +2328,7 @@ sub search_coord {
 		};
 	} else {
 	    if (!$strcat_net) {
-		$strcat_net = new StrassenNetz $multistr;
+		$strcat_net = new StrassenNetz $str;
 		$strcat_net->make_net_cat(-usecache => 0); # 1 for munich
 	    }
 	    if ($q->param('pref_cat') eq 'N2') {
@@ -2509,10 +2410,6 @@ sub search_coord {
 		    $custom_s{$type} = MultiStrassen->new(@$list);
 
 		    if ($type eq 'gesperrt' && $custom_s{$type}) {
-#			$net->load_user_deletions
-#			    ($custom_s{$type},
-#			     -merge => 1,
-#			    );
 			$net->make_sperre($custom_s{$type}, Type => 'all');
 		    } elsif ($type eq 'handicap' && $custom_s{$type}) {
 			if (!$handicap_s_net) {
@@ -2773,7 +2670,7 @@ sub search_coord {
 			 };
     }
 
-    if ($output_as =~ /^(xml|perldump)$/) {
+    if ($output_as =~ /^(xml|yaml|yaml-short|perldump)$/) {
 	require Karte;
 	Karte::preload(qw(Polar Standard));
 	my $res = {
@@ -2794,6 +2691,18 @@ sub search_coord {
 			@no_cache,
 		       );
 	    print Data::Dumper->new([$res], ['route'])->Dump;
+	} elsif ($output_as =~ /^yaml(.*)/) {
+	    my $is_short = $1 eq "-short";
+	    require YAML;
+	    http_header(-type => "text/plain", # XXX text/yaml ?
+			@no_cache,
+		       );
+	    if ($is_short) {
+		my $short_res = {LongLatPath => $res->{LongLatPath}};
+		print YAML::Dump($short_res);
+	    } else {
+		print YAML::Dump($res);
+	    }
 	} else { # xml
 	    require XML::Simple;
 	    http_header(-type => "text/xml",
@@ -2812,7 +2721,7 @@ sub search_coord {
 	    print XML::Simple->new
 		(NoAttr => 1,
 		 RootName => "BBBikeRoute",
-		 XMLDecl => "<?xml version='1.0' standalone='yes' encoding='iso-8859-1'?>",
+		 XMLDecl => "<?xml version='1.0' encoding='iso-8859-1' standalone='yes'?>",
 		)->XMLout($new_res);
 	}
 	return;
@@ -2821,6 +2730,9 @@ sub search_coord {
     %persistent = $q->cookie(-name => $cookiename);
     foreach my $key (@pref_keys) {
 	$persistent{"pref_$key"} = $q->param("pref_$key");
+	if (!defined $persistent{"pref_$key"}) {
+	    $persistent{"pref_$key"} = "";
+	}
     }
     my $cookie = $q->cookie
 	(-name => $cookiename,
@@ -3157,14 +3069,10 @@ EOF
 				      };
 
 
-#XXX bei FCGI Grafik mit .cgi statt .fcgi zeichnen
 # Dafür gibt es zwei Gründe:
 # 1) wird (glaube ich) das Skript für andere Zugriffe blockiert, wenn
 #    gerade die Bilderzeugung läuft, und das ist mittlerweile der einzige
 #    zeitintensive Prozess
-# 2) Gibt es einen Bug entweder in mod_fcgi oder in FCGI.pm, so dass
-#    0-Bytes aus dem Stream entfernt werden. Ein GIF kann somit nicht
-#    ausgegeben werden.
 #
 #	print " target=\"BBBikeGrafik\" action=\"$bbbike_script\"";
 	    print " target=\"BBBikeGrafik\" action=\"$bbbike_script_cgi\"";
@@ -3187,6 +3095,7 @@ EOF
 	    print " <option " . $imagetype_checked->("pdf-landscape") . ">PDF (Querformat)\n" unless $cannot_pdf;
 	    print " <option " . $imagetype_checked->("svg") . ">SVG\n" unless $cannot_svg;
 	    print " <option " . $imagetype_checked->("mapserver") . ">MapServer\n" if $can_mapserver;
+	    print " <option " . $imagetype_checked->("berlinerstadtplan") . ">www.berliner-stadtplan.com\n" if $can_berliner_stadtplan_post;
 	    print " </select></span>\n";
 	    print "<br>\n";
 
@@ -3295,7 +3204,8 @@ EOF
 		    ">$fontstr $text $fontend</span></td>\n";
 	    }
 	    print "</tr>\n";
-	    if ($lstr || $multiorte) {
+	    if (scalar $str->file > 1 || $multiorte) {
+		# XXX scope instead???
 		print "<input type=hidden name=draw value=umland>\n";
 	    }
 	    print "</table>\n";
@@ -3310,6 +3220,8 @@ EOF
 		. "Legende.</a></font>\n";
 	}
 
+	print "<input type=hidden name=scope value='" .
+	    (defined $q->param("scope") ? $q->param("scope") : "") . "'>";
 	print "</form>\n";
 
 	print "<hr><form name=settings action=\"" . $q->self_url . "\">\n";
@@ -3542,12 +3454,6 @@ sub draw_route {
     my(%args) = @_;
     my @cache = (exists $args{-cache} ? @{ $args{-cache} } : @no_cache);
 
-    if (!defined $q->param("scope")) {
-	$q->param("scope", ($use_umland_jwd ? 'wideregion' :
-			    ($use_umland    ? 'region'     :
-			     'city')));
-    }
-
     my $draw;
 
     if (defined $q->param('coordssession') &&
@@ -3574,6 +3480,9 @@ sub draw_route {
 	    );
     }
 
+    # XXX move to BBBikeDraw::Mapserver!
+    # XXX init() does first part, flush() does start_mapserver
+    # XXX and set: sub module_handles_all_cgi { 1 }
     if (defined $q->param('imagetype') &&
 	$q->param('imagetype') =~ /^mapserver/) {
 	require BBBikeMapserver;
@@ -3608,10 +3517,17 @@ sub draw_route {
 			} $q->param('draw')
 		      ];
 	}
+	my $scope = (defined $q->param('scope')
+		     ? $q->param('scope')
+		     : 'all,city' # "all", so switching between reference maps is possible
+		    );
+	if ($scope !~ /^all/) {
+	    $scope = "all,$scope";
+	}
 	$ms->start_mapserver
 	    (-bbbikeurl => $bbbike_url,
 	     -bbbikemail => $BBBike::EMAIL,
-	     -scope => "all,city", # so switching between reference maps is possible
+	     -scope => $scope,
 	     -externshape => 1,
 	     -layers => $layers,
 	     -cookie => $cookie,
@@ -3625,7 +3541,6 @@ sub draw_route {
 
     my @header_args = @cache;
     if ($cookie) { push @header_args, "-cookie", $cookie }
-    push @header_args;
 
     # write content header for pdf as early as possible, because
     # output is already written before calling flush
@@ -3638,6 +3553,11 @@ sub draw_route {
 	    $q->param('geometry', $1);
 	    $q->param('imagetype', 'pdf');
 	}
+    }
+
+    if (defined $q->param('imagetype') &&
+	$q->param('imagetype') eq 'berlinerstadtplan') {
+	$q->param("module", "BerlinerStadtplan");
     }
 
     if (defined $use_module) {
@@ -3661,26 +3581,18 @@ sub draw_route {
 	my_exit 0;
     }
 
-    unless ($header_written) {
+    if (!$header_written && !$draw->module_handles_all_cgi) {
 	http_header(-type => $draw->mimetype,
 		    @header_args,
 		   );
     }
 
-    eval { $draw->pre_draw }; return if $@;
-    $draw->draw_wind; # see comment in BBBikeDraw
-    $draw->draw_map;
-    $draw->draw_route;
-    if ($q->param('imagetype') eq 'pdf') {
-	require Route::PDF;
-	require Route;
-	my(@c) = map { [split /,/ ] } split /[!; ]/, $q->param("coords");
-	Route::PDF::add_page_to_bbbikedraw
-		(-bbbikedraw => $draw,
-		 -net => make_netz(),
-		 -route => Route->new_from_realcoords(\@c),
-		);
-    }
+    eval { $draw->pre_draw }; return if $@; # XXX use ->can instead?
+    $draw->draw_wind   if $draw->can("draw_wind"); # see comment in BBBikeDraw
+    $draw->draw_map    if $draw->can("draw_map");
+    $draw->draw_route  if $draw->can("draw_route");
+    $draw->add_route_descr(-net => make_netz())
+	if $draw->can("add_route_descr");
     $draw->flush;
 }
 
@@ -3919,45 +3831,55 @@ sub detailmap_to_coord {
 }
 
 sub get_streets {
-    my($use_umland) = @_;
-    if ($use_umland) {
-
-	# Strassen
-	# XXX there should also be a lazy version of Multistrassen
-	my @s = $str;
-	$lstr  = new Strassen "landstrassen"  unless defined $lstr;
-	push @s, $lstr;
-	if ($use_umland_jwd) {
-	    $lstr2 = new Strassen "landstrassen2" unless defined $lstr2;
-	    push @s, $lstr2;
-	}
-	$multistr = new MultiStrassen @s;
-
-	# Orte
-	my @o;
-	$orte = new Strassen "orte" unless defined $orte;
-	push @o, $orte;
-	if ($use_umland_jwd) {
-	    $orte2 = new Strassen "orte2" unless defined $orte2;
-	    push @o, $orte2;
-	}
-	$multiorte = new MultiStrassen @o;
-
-	undef $crossings;
-	undef $kr;
-	if ($net) {
-	    undef $net;
-	    make_netz();
-	}
-    } else {
-	$multistr = $str;
+    my($scope) = shift || $q->param("scope") || "city";
+    if ($str) {
+	return $str
+	    if (($scope eq 'city' && scalar @{[ $str->file ]} == 1) ||
+		($scope eq 'region' && scalar @{[ $str->file ]} == 2) ||
+		($scope eq 'wideregion' && scalar @{[ $str->file ]} == 3)
+	       );
     }
+    my @f = ("strassen",
+	     ($scope =~ /region/ ? "landstrassen" : ()),
+	     ($scope eq 'wideregion' ? "landstrassen2" : ()),
+	    );
+    if (@f == 1) {
+	$str = new Strassen $f[0];
+    } else {
+	$str = new MultiStrassen @f;
+    }
+
+    if ($crossings) {
+	undef $crossings;
+	all_crossings();
+    }
+    if ($kr) {
+	undef $kr;
+	new_kreuzungen();
+    }
+    if ($net) {
+	undef $net;
+	make_netz();
+    }
+
+    $str;
 }
+
+###XXX do not delete this ---
+#  	# Orte
+#  	my @o;
+#  	$orte = new Strassen "orte" unless defined $orte;
+#  	push @o, $orte;
+#  	if ($use_umland_jwd) {
+#  	    $orte2 = new Strassen "orte2" unless defined $orte2;
+#  	    push @o, $orte2;
+#  	}
+#  	$multiorte = new MultiStrassen @o;
 
 sub all_crossings {
     if (scalar keys %$crossings == 0) {
-	$crossings = $multistr->all_crossings(RetType => 'hash',
-					      UseCache => 1);
+	$crossings = $str->all_crossings(RetType => 'hash',
+					 UseCache => 1);
     }
 }
 
@@ -3965,7 +3887,7 @@ sub new_kreuzungen {
     if (!$kr) {
 	all_crossings();
 	$kr = new Kreuzungen(Hash => $crossings,
-			     Strassen => $multistr);
+			     Strassen => $str);
 	$kr->make_grid(UseCache => 1);
     }
     $kr;
@@ -3986,6 +3908,20 @@ sub new_trafficlights {
 	warn $@ if $@;
     }
     $ampeln;
+}
+
+sub init_plz {
+    if (1) { # XXX introduce flag? (i.e. for other cities!!!)
+	require PLZ::Multi;
+	$plz = PLZ::Multi->new("Berlin.coords.data", "Potsdam.coords.data",
+			       -cache => 1,
+			      );
+    } else {
+	require PLZ;
+	PLZ->VERSION(1.26);
+	$plz = new PLZ;
+    }
+    $plz;
 }
 
 sub crossing_text {
@@ -4041,10 +3977,10 @@ sub fix_coords {
 	    $$varref = $nearest[0];
 	} else {
 	    # Try to enlarge search region
-	    local $use_umland_jwd = 1;
-	    get_streets("use_umland");
+	    $q->param("scope", "region");
+	    get_streets(); # XXX enlarge to wideregion???
 	    new_kreuzungen();
-	    @nearest = $kr->nearest_coord($$varref);
+	    @nearest = $kr->nearest_loop_coord($$varref);
 	    if (@nearest) {
 		$$varref = $nearest[0];
 	    } else {
@@ -4086,8 +4022,7 @@ sub start_weather_proc {
 			POSIX::setsid() if defined &POSIX::setsid;
 		    }; warn $@ if $@;
 		    unlink "$tmp_dir/wettermeldung";
-		    exec @weather_cmdline;
-		    my_exit 1;
+		    exec @weather_cmdline or my_exit 1;
 		}
 	    };
 	}
@@ -4122,11 +4057,12 @@ sub etag {
 sub http_header {
     my(@args) = @_;
     if (#!$ENV{MOD_PERL} &&
-	#0 && # XXX CGI::Compress::Gzip 0.11 not ready for prime time!!!
+	0 && # XXX CGI::Compress::Gzip 0.11 not ready for prime time!!!
 	#XXX
 	$ENV{SERVER_NAME}=~/herceg.de/ &&
 	eval { require CGI::Compress::Gzip; 1 }) {
-	$CGI::Compress::Gzip::global_give_reason = $debug;
+	$CGI::Compress::Gzip::global_give_reason =
+	    $CGI::Compress::Gzip::global_give_reason = $debug;
 	$cgic = CGI::Compress::Gzip->new;
 	print $cgic->header(@args, etag());
     } else {
@@ -4236,11 +4172,6 @@ sub footer_as_string {
 <td align=center>${fontstr} <a target="_top" href="mailto:@{[ $BBBike::EMAIL ]}?subject=BBBike">E-Mail</a>${fontend}</td>
 <td align=center>$fontstr<a target="_top" href="$bbbike_script?begin=1$smallformstr">Neue Anfrage</a>${fontend}</td>
 EOF
-    if ($use_miniserver) {
-        $s .= <<EOF;
-<td align=center>$fontstr<a target="_top" href="$bbbike_url">Kaltstart</a>${fontend}</td>
-EOF
-    }
     $s .= <<EOF;
 <td align=center>$fontstr<a target="_top" href="$bbbike_script?info=1$smallformstr">Info &amp; Disclaimer</a>${fontend}</td>
 EOF
@@ -4334,11 +4265,7 @@ sub bikepwr_get_v { # Resultat in m/s
 
 sub choose_street_html {
     my($strasse, $plz_number, $type) = @_;
-    if (!$plz) {
-	require PLZ;
-	PLZ->VERSION(1.26);
-	$plz = new PLZ;
-    }
+    $plz = init_plz();
     my $plz_re = $plz->make_plz_re($plz_number);
     my @res = $plz->look($plz_re, Noquote => 1);
     my @strres = $str->union(\@res);
@@ -4490,7 +4417,7 @@ sub get_nearest_crossing_coords {
     new_kreuzungen();
     my $xy;
     if ($use_exact_streetchooser) {
-	my $ret = $multistr->nearest_point("$x,$y", FullReturn => 1);
+	my $ret = $str->nearest_point("$x,$y", FullReturn => 1);
 	$xy = $ret->{Coord};
     } else {
 	$xy = (($kr->nearest_loop($x,$y))[0]);
@@ -4618,54 +4545,6 @@ sub tie_session {
     return \%sess;
 }
 
-sub limit_processes {
-    dbmopen(%proc, "$tmp_dir/bbbike-limit", 0640);
-    my $i;
-  TRY: while(1) {
-	for ($i = 0; $i < $max_proc; $i++) {
-	    if (defined $proc{$i} && $proc{$i} ne '') {
-		next if kill 0, $proc{$i};
-	    }
-	    $proc{$i} = $$;
-	    last TRY;
-	}
-
-	(my $slow_cgi = $bbbike_url) =~ s/-fast//;
-	undef $slow_cgi if ($slow_cgi eq $bbbike_url);
-
-	if ($auto_switch_slow && $slow_cgi) {
-	    print $q->redirect(-uri => $slow_cgi, @no_cache);
-	    my_exit;
-	}
-
-	http_header(@no_cache);
-	header();
-	print <<EOF;
-Der Server ist überlastet. Bitte ein paar Minuten später versuchen
-EOF
-        if ($slow_cgi) {
-	    print "oder das <a href=\"$slow_cgi\">langsamere Interface</a> benutzen";
-        }
-        print <<EOF;
-!<p>
-<small>Anzahl der erlaubten Prozesse: $max_proc</small>
-<p>
-EOF
-        footer();
-	print $q->end_html;
-	my_exit;
-    }
-    dbmclose(%proc);
-    $i;
-}
-
-sub set_process {
-    my $slot = shift;
-    dbmopen(%proc, "$tmp_dir/bbbike-limit", 0640);
-    $proc{$slot} = $$;
-    dbmclose(%proc);
-}
-
 sub load_teaser {
     eval { local $SIG{'__DIE__'};
 	   my $teaser_file = "$FindBin::RealBin/bbbike-teaser.pl";
@@ -4743,16 +4622,6 @@ EOF
       "kann mit der " . link_to_met() . "aktuellen Windgeschwindigkeit</a> die ",
       "Fahrzeit anhand von drei Leistungsstufen (50&nbsp;W, 100&nbsp;W und 200&nbsp;W) ",
       "berechnet werden.<p>\n";
-    if ($use_miniserver) {
-        print <<EOF;
-Es gibt einen Timeout von $cgi->{'timeout'} Minuten pro Seite. Wenn
-die Zeit abgelaufen ist, kann das Programm per "Kaltstart" neu
-gestartet werden. Evtl. funktioniert das Programm nicht über einen
-Proxy; sollte es Probleme geben, eine <a
-href="mailto:@{[ $BBBike::EMAIL ]}?subject=BBBike problems">E-Mail an mich</a>
-schicken.<p>
-EOF
-    }
     print <<EOF;
 Für die technisch Interessierten: als Suchalgorithmus wird
 A<sup>*</sup> eingesetzt<sup> <a href="#footnote1">1</a></sup>.<p>
@@ -4918,14 +4787,6 @@ EOF
     if (defined $Apache::VERSION) {
 	print <<EOF;
 <li><a href="${scpan}Apache">Apache $Apache::VERSION</a> (auch bekannt als "mod_perl")
-EOF
-    } elsif ($use_fcgi) {
-        print <<EOF;
-<li><a href="${scpan}FCGI">FCGI</a> bei der FastCGI-Version
-EOF
-    } else {
-        print <<EOF;
-<li><a href="${scpan}CGI::Base">CGI::Base, CGI::Request, CGI::MiniSvr</a> bei der MiniServer-Version
 EOF
     }
     if ($can_palmdoc) {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_setcoord.cgi,v 1.5 2003/07/05 17:26:41 eserte Exp $
+# $Id: mapserver_setcoord.cgi,v 1.6 2003/07/10 22:58:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -48,6 +48,15 @@ if ($set eq 'ziel') {
 	$q2->append(-name => "layer", -values => ["route"]);
     }
     $q2->param("mapext", param("imgext")) if defined param("imgext");
+    push_INC();
+    require BBBikeMapserver;
+    my $scope = BBBikeMapserver::scope_by_map(param("map"))
+	if defined param("map");
+    $q2->param("scope", $scope)
+	if defined $scope;
+    # XXX Delete more params... or use -pass mode?
+    $q2->delete($_) for (qw(img.x img.y map zoomdir zoomsize mode
+			    orig_mode orig_zoomdir imgxy imgext));
     print redirect("http://www/~eserte/bbbike/cgi/bbbike.cgi?"
 		   . $q2->query_string);
 } elsif ($set eq 'start') {
@@ -62,10 +71,8 @@ if ($set eq 'ziel') {
     if (!grep { $_ eq 'route' } $q2->param("layer")) {
 	@layers = ($q2->param("layer"), "route");
     }
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@layers],[])->Indent(1)->Useqq(1)->Dump; # XXX
 
     $ms->start_mapserver(-passparams => 1,
-			 -scope => "all,city", # XXX do not use "city" here, maybe "best" to get the scope according to -start?
 			 -start => param("startc"),
 			 (@layers ? (-layers => \@layers) : ()),
 			);

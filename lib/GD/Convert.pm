@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Convert.pm,v 2.5 2003/06/09 10:16:25 eserte Exp $
+# $Id: Convert.pm,v 2.6 2003/07/13 13:15:48 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -15,8 +15,8 @@
 package GD::Convert;
 
 use strict;
-use vars qw($VERSION $DEBUG);
-$VERSION = sprintf("%d.%02d", q$Revision: 2.5 $ =~ /(\d+)\.(\d+)/);
+use vars qw($VERSION $DEBUG %installed);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.6 $ =~ /(\d+)\.(\d+)/);
 
 $DEBUG = 0 if !defined $DEBUG;
 
@@ -30,7 +30,7 @@ sub import {
 		if ($GD::VERSION <= 1.19 ||
 		    ($GD::VERSION >= 1.37 && $GD::VERSION < 1.40 && GD::Image->can($f))) {
 		    undef $as;
-		} elsif ($GD::VERSION >= 1.40 && GD::Image->can($f)) {
+		} elsif ($GD::VERSION >= 1.40 && !$installed{$f} && GD::Image->can($f)) {
 		    $@ = "";
 		    GD::Image->new->$f();
 		    if ($@ !~ /libgd was not built with gif support/) {
@@ -76,6 +76,7 @@ sub import {
 	    #warn $code;
 	    eval $code;
 	    die "$code\n\nfailed with: $@" if $@;
+	    $installed{$f}++;
 	}
     }
 }
@@ -488,15 +489,23 @@ sub _3_pipe {
 sub _3_pipe_file_temp {
     my($in_ref, $cmd_ref) = @_;
 
-    warn "Cmd: @$cmd_ref\n" if $GD::Convert::DEBUG;
-
     require File::Temp;
-    my($fh, $filename) = File::Temp::tempfile(UNLINK => 1);
+    my($fh, $filename) = File::Temp::tempfile
+	(UNLINK => $GD::Convert::DEBUG < 10);
     print $fh $$in_ref;
+    close $fh;
 
-    my $out = `cat $filename | @$cmd_ref`;
+    my $cmd = "cat $filename | @$cmd_ref";
+    warn "Cmd (for File::Temp): $cmd, length of data: ".length($$in_ref)."\n"
+	if $GD::Convert::DEBUG;
+    my $out = `$cmd`;
 
-    unlink $filename;
+    if ($GD::Convert::DEBUG < 10) {
+	unlink $filename;
+    } else {
+	Carp::cluck();
+	warn "Keep temporary file $filename";
+    }
 
     $out;
 }

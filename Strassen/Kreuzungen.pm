@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Kreuzungen.pm,v 1.6 2002/11/22 18:27:18 eserte Exp $
+# $Id: Kreuzungen.pm,v 1.7 2003/07/10 22:59:01 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -230,12 +230,19 @@ sub nearest_loop {
 }
 
 # wie nearest, nur wird hier "x,y" als ein Argument übergeben
-# XXX nearest_loop_coord fehlt
 ### AutoLoad Sub
 sub nearest_coord {
     my($self, $xy, %args) = @_;
     my($x, $y) = split(/,/, $xy);
     $self->nearest($x, $y, %args);
+}
+
+# wie nearest_loop, nur wird hier "x,y" als ein Argument übergeben
+### AutoLoad Sub
+sub nearest_loop_coord {
+    my($self, $xy, %args) = @_;
+    my($x, $y) = split(/,/, $xy);
+    $self->nearest_loop($x, $y, %args);
 }
 
 # Zeichnet die Kreuzungen, z.B. zum Debuggen.

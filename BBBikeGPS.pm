@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.6 2003/07/03 00:07:35 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.6 2003/07/03 00:07:35 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -847,6 +847,7 @@ sub BBBikeGPS::draw_track_graph {
 	my(%last_x, %last_y);
 	my $type = "speed";
 	foreach (@$add_wpt_prop_ref) {
+	    next if !defined $_->$type(); # below accuracy level
 	    my $time = $_->wholetime;
 	    if ($time) {
 		my $whole = $_->wholedist;

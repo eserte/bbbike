@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.82 2003/07/09 21:26:23 eserte Exp $
+# $Id: Makefile,v 1.82 2003/07/09 21:26:23 eserte Exp eserte $
 #
 
 MISCDIR=		../misc
@@ -45,6 +45,7 @@ slow-checks:	inaccessible_strassen check-line-lengths check-dates
 	env LC_ALL=de_DE.ISO_8859-1 sort -c Berlin.coords.data || \
 	    ( env LC_ALL=de_DE.ISO_8859-1 sort Berlin.coords.data | diff -u - Berlin.coords.data; false )
 
+# XXX do also landstrassen (at least Potsdam):
 inaccessible_strassen: strassen gesperrt
 	-@$(WRITEABLE) $@
 	${SEARCH_INACCESSIBLE} -street strassen -blocked gesperrt \

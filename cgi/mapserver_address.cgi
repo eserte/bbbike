@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.14 2003/07/10 00:02:24 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.14 2003/07/10 00:02:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ BEGIN { # XXX do not hardcode
 	@Strassen::datadirs = "$BBBIKE_ROOT/data";
     } elsif ($ENV{SERVER_NAME} eq 'vran.herceg.de') {
 	$BBBIKE_URL = "/~eserte/bbbike";
-    } else {
+    } else { # www.radzeit.de
 	$BBBIKE_ROOT = "/usr/local/apache/radzeit/BBBike";
 	$BBBIKE_URL = "/BBBike";
 	#$BBBIKE_ROOT = "/usr/local/apache/radzeit/BBBike2";

@@ -60,6 +60,7 @@ sub new {
     $self->{MinPlaceCat} = delete $args{MinPlaceCat}; # force minimum place (ort) category
     $self->{FontSizeScale} = delete $args{FontSizeScale} || 1;
     $self->{Conf}      = delete $args{Conf};
+    $self->{CGI}       = delete $args{CGI};
 
     if (defined $self->{Return} &&
 	$self->{Return} eq 'string') {
@@ -137,6 +138,7 @@ sub new_from_cgi {
 	if defined $q->param('imagetype');
     $args{Module} = $q->param('module')
 	if defined $q->param('module');
+    $args{CGI} = $q;
     $pkg->new(%args);
 }
 
@@ -698,5 +700,7 @@ sub get_images_dir {
     }
     $images_dir;
 }
+
+sub module_handles_all_cgi { 0 }
 
 1;

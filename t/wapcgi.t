@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.4 2003/07/01 08:58:00 eserte Exp $
+# $Id: wapcgi.t,v 1.5 2003/07/14 06:36:42 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -39,16 +39,37 @@ if (!@wap_url) {
     @wap_url = "http://www/bbbike/cgi/wapbbbike.cgi";
 }
 
-plan tests => 6 * scalar @wap_url;
+plan tests => 14 * scalar @wap_url;
 
 for my $wapurl (@wap_url) {
-    my $resp = $ua->get($wapurl);
+    my $resp;
+    my $url;
+
+    $url = $wapurl;
+    $resp = $ua->get($url);
     ok($resp->is_success, 1, $resp->as_string);
-    ok($resp->header('Content_Type'), qr|^text/vnd.wap.wml|);
-    ok(validate_wml($resp->content));
+    ok($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $url);
+    ok(!!validate_wml($resp->content), 1, $url);
     for (qw(Start Ziel Bezirk)) {
-	ok($resp->content, qr/$_/);
+	ok($resp->content, qr/$_/, $url);
     }
+
+    $url = "$wapurl?startname=duden&startbezirk=&zielname=sonntag&zielbezirk=";
+    $resp = $ua->get($url);
+    ok($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $url);
+    ok(!!validate_wml($resp->content), 1, $url);
+    ok($resp->content, qr/Dudenstr/, $url);
+    ok($resp->content, qr/Sonntagstr/, $url);
+
+    $url = "$wapurl?startname=Dudenstr.&startbezirk=Kreuzberg&zielname=Sonntagstr.&zielbezirk=Friedrichshain&output_as=imagepage";
+    $resp = $ua->get($url);
+    ok($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $url);
+    ok(!!validate_wml($resp->content), 1, $url);
+
+    $url = "$wapurl?startname=Dudenstr.&startbezirk=Kreuzberg&zielname=Sonntagstr.&zielbezirk=Friedrichshain&output_as=image";
+    $resp = $ua->get($url);
+    ok(!!$resp->is_success, 1, $url);
+    ok($resp->header('Content_Type'), qr|^image/|, $url);
 }
 
 sub validate_wml {
