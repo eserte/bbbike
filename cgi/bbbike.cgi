@@ -1552,9 +1552,18 @@ EOF
 		my($best) = get_nearest_crossing_coords(split(/,/, $xy));
 		my $cr = crossing_text(defined $best ? $best : $xy);
 		my $qs = CGI->new({strname => $strasse})->query_string;
-		print qq{<i>$strasse</i> ist nicht bekannt (<a target="newstreetform" href="$bbbike_html/newstreetform.html?$qs">Straße eintragen</a>).<br>\nDie nächste bekannte Kreuzung ist:<br>\n};
+		my $report_nearest = $strasse !~ /^[su]-bhf/i;
+		if ($report_nearest) {
+		    print qq{<i>$strasse</i> ist nicht bekannt (<a target="newstreetform" href="$bbbike_html/newstreetform.html?$qs">Straße eintragen</a>).<br>\n};
+		} else {
+		    print qq{<i>$strasse</i><br>\n};
+		}
+		print qq{Die nächste } . ($report_nearest ? "bekannte " : "") . qq{ Kreuzung ist:<br>\n};
 		print "<i>$cr</i>";
-		print qq{<br>\nund wird für die Suche verwendet.<br>\n};
+		if ($report_nearest) {
+		    print qq{<br>\nund wird für die Suche verwendet.};
+		}
+		print qq{<br>\n};
 		print "<input type=hidden name=" . $type .
 		    "c value=\"$best\">";
 		print "<input type=hidden name=" . $type .
