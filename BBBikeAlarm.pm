@@ -1030,4 +1030,8 @@ if ($interactive) {
     die "Can't set alarm: type e.g. -tk missing";
 }
 
+# peacify -w
+$main::tmpdir = $main::tmpdir if 0;
+$main::top = $main::top if 0;
+
 __END__

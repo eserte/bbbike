@@ -58,7 +58,7 @@ my %res;
 my($map_toplevel, $map_canvas, $map_map, $map_mapx, $map_mapy);
 
 
-$cgi_host = ($main::cabulja ? "localhost" : "user.cs.tu-berlin.de")
+$cgi_host = ($main::devel_host ? "localhost" : "user.cs.tu-berlin.de")
     unless defined $cgi_host;
 $cgi_port = 80 unless defined $cgi_port;
 $cgi_path = "/~eserte/bbbike/cgi/berlinmap.cgi" unless defined $cgi_path;
@@ -1133,5 +1133,8 @@ $tel_t->OnDestroy(sub {
 });
 
 MainLoop;
+
+%main::str_file = %$main::str_file if 0; # peacify -w
+$main::devel_host = $main::devel_host if 0; # peacify -w
 
 1;

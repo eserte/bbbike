@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.17 2004/01/16 00:32:08 eserte Exp $
+# $Id: wapbbbike.cgi,v 2.17 2004/01/16 00:32:08 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003,2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,10 @@
 package BBBikeRouting::WAP;
 
 BEGIN {
-    if ($ENV{SERVER_SOFTWARE} =~ /roxen/i) {
+    # see also webeditor/cgi-bin/we_redisys.cgi
+    if (defined $ENV{SERVER_SOFTWARE} &&
+	$ENV{SERVER_SOFTWARE} =~ m{(netscape|roxen|apache/2\.0)}i
+       ) {
 	open(STDERR, ">/tmp/wapbbbike.log");
     }
 }

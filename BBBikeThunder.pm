@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeThunder.pm,v 1.10 2003/08/24 23:33:50 eserte Exp $
+# $Id: BBBikeThunder.pm,v 1.10 2003/08/24 23:33:50 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -228,6 +228,8 @@ sub thunder_reset {
     deactivate();
     $main::c->delete("thunder");
 }
+
+$main::Radiobutton = $main::Radiobutton if 0; # peacify -w
 
 1;
 

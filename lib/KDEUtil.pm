@@ -552,6 +552,10 @@ Slaven Rezic
 
 =cut
 
+# peacify -w
+$Tk::platform = $Tk::platform if 0;
+*KDEUtil::stays_on_top = *KDEUtil::stays_on_top if 0;
+
 1;
 
 __END__

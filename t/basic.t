@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.2 2004/05/10 22:17:02 eserte Exp $
+# $Id: basic.t,v 1.2 2004/05/10 22:17:02 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -30,12 +30,12 @@ my @files = (qw(bbbike cmdbbbike cbbbike smsbbbike),
 	     grep { /(\.PL|\.pl|\.cgi|\.pm)$/ }
 	     keys %$manifest);
 
-plan tests => scalar @files;
+my $tests_per_file = 2;
+plan tests => $tests_per_file * scalar @files;
 
 for my $f (@files) {
-    my $tests = 1;
  SKIP: {
-	skip "$f not ready for stand-alone test", $tests
+	skip "$f not ready for stand-alone test", $tests_per_file
 	    if $f =~ m{^ (BBBikeWeather.pm | BBBikePrint.pm) $}x;
 	my @add_opt;
 	if ($f =~ m{Tk/.*\.pm}) {
@@ -54,7 +54,14 @@ for my $f (@files) {
 	open(OLDERR, ">&STDERR") or die;
 	my $diag_file = "/tmp/bbbike-basic.text";
 	open(STDERR, ">$diag_file") or die $!;
-	system($^X, "-c", "-Ilib", @add_opt, "./$f");
+
+	my $can_w = 1;
+	if ($f =~ m{^( lib/Tk/FastSplash.pm # keep it small without peacifiers
+		   )$}x) {
+	    $can_w = 0;
+	}
+
+	system($^X, ($can_w ? "-w" : ()), "-c", "-Ilib", @add_opt, "./$f");
 	close STDERR;
 	open(STDERR, ">&OLDERR") or die;
 	die "Signal caught" if $? & 0xff;
@@ -62,6 +69,18 @@ for my $f (@files) {
 	    or do {
 		system("cat $diag_file");
 	    };
+
+	{
+	    my $warn = "";
+	    open(DIAG, $diag_file) or die $!;
+	    while(<DIAG>) {
+		next if / syntax OK/;
+		$warn .= $_;
+	    }
+	    close DIAG;
+	    is($warn, "", "Warnings in $f");
+	}
+
 	unlink $diag_file;
     }
 }

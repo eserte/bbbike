@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMail.pm,v 1.12 2004/01/01 15:59:12 eserte Exp $
+# $Id: BBBikeMail.pm,v 1.12 2004/01/01 15:59:12 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -194,5 +194,8 @@ sub capabilities {
 	$cannot_send_fax_reason = $@;
     }
 }
+
+# peacify -w
+$main::top = $main::top if 0;
 
 1;

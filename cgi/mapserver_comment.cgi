@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.18 2004/09/07 23:05:10 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.19 2004/09/29 22:07:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -116,12 +116,21 @@ eval {
     die "Kann open mit @Mail_Send_open nicht durchführen" if !$fh;
 
     if (param("formtype") && param("formtype") eq "newstreetform") {
+	open(BACKUP, ">>/tmp/newstreetform-backup")
+	    or warn "Cannot write backup data for newstreetform: $!";
+	print BACKUP "-" x 70, "\n";
+	print BACKUP scalar localtime;
+	print BACKUP "\n";
 	require Data::Dumper;
 	for my $param (param) {
 	    my $dump = Data::Dumper->new([param($param)],[$param])->Indent(1)->Useqq(1)->Dump;
+	    print BACKUP $dump;
 	    print $fh $dump;
 	}
-	print $fh Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
+	my $dump = Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
+	print BACKUP $dump;
+	print $fh $dump;
+	close BACKUP;
     } else {
 	$comment =
 	    "Von: " . ($by || "anonymous\@bbbike.de") . "\n" .

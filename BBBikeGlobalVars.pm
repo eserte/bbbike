@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.20 2004/08/21 23:09:27 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.20 2004/08/21 23:09:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -82,7 +82,7 @@ use vars qw(
      $route_strname_lbox $show_strlist $show_enter_opt_preferences
      %module_time %module_check $aufschlag
      $plotstr_draw_sub $plotpoint_draw_sub $plotorte_draw_sub $progress
-     $lazy_plot @remember_plot_str @remember_plot_p
+     %lazy_str $lazy_plot @remember_plot_str @remember_plot_p
      @standard_mode_cmd @edit_mode_cmd @edit_mode_b_cmd @edit_mode_brb_cmd
      @edit_mode_standard_cmd
      $map_mode %map_mode_callback $map_mode_deactivate $b2_mode %b2_mode_desc

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Unknown2.pm,v 1.3 2002/02/10 21:26:50 eserte Exp $
+# $Id: Unknown2.pm,v 1.3 2002/02/10 21:26:50 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -28,6 +28,7 @@ sub convert_to_route {
 
     require Karte::GPS;
     my $obj = $Karte::GPS::obj;
+    $Karte::GPS::obj = $Karte::GPS::obj if 0; # peacify -w
 
 # XXX noch nicht zufriedenstellend... ist es überhaupt richtig? außerdem
 # zu ungenau....

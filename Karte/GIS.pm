@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GIS.pm,v 1.1 1998/06/24 00:28:08 eserte Exp $
+# $Id: GIS.pm,v 1.1 1998/06/24 00:28:08 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -61,7 +61,7 @@ sub save_as_route {
     my $file = shift;
     require Data::Dumper;
     my @res = convert_to_route($file);
-    $Data::Dumper::Indent = 0;
+    local $Data::Dumper::Indent = 0;
     print Data::Dumper->Dumpxs([\@res], ['realcoords_ref']);
 }
 

@@ -802,8 +802,8 @@ userdel	2 -53139,50022 -54295,49682
 EOF
      },
      { from  => 1095544800, # 2004-09-19 00:00
-       until => 1101855600, # 2004-12-01 00:00
-       text  => 'B 96; (Hauptstr.); OD Schildow, zw. Bahnhofstr. und OA Ri. Berlin Kanal- und Straßenbau Vollsperrung 20.09.2004-30.11.2004 ',
+       until => 1103842800, # 2004-12-24 00:00
+       text  => 'B 96; (Hauptstr.); OD Schildow, zw. Bahnhofstr. und OA Ri. Berlin Kanal- und Straßenbau Vollsperrung 20.09.2004-23.12.2004 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 8493,25378 8370,25539
@@ -860,6 +860,15 @@ EOF
        data  => <<EOF,
 userdel	q4 -21137,-4034 -21003,-4494
 userdel	q4 -21003,-4494 -20851,-4878
+EOF
+     },
+     { from  => 1096754400, # 2004-10-03 00:00
+       until => 1104534000, # 2005-01-01 00:00
+       text  => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 04.10.2004-31.12.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 49039,44131 48583,44366
+userdel	q4 49039,44131 49691,43812
 EOF
      },
     );

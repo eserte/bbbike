@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeScribble.pm,v 1.5 2003/11/16 22:15:54 eserte Exp $
+# $Id: BBBikeScribble.pm,v 1.5 2003/11/16 22:15:54 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ use vars qw($VERSION);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 package Tk::Babybike; # XXX
-no strict;
+no strict; # XXX make strict!!!
 
 use vars qw(
 	    $scribble_mode
@@ -32,6 +32,8 @@ use vars qw($IDX_SCRIBBLE $IDX_TIME $IDX_LABEL);
 $IDX_SCRIBBLE = 0;
 $IDX_TIME     = 1;
 $IDX_LABEL    = 2;
+
+use vars qw($lastitem);
 
 # init
 $scribble_color = 'blue'

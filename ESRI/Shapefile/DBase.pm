@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: DBase.pm,v 1.11 2003/01/08 20:11:54 eserte Exp $
+# $Id: DBase.pm,v 1.11 2003/01/08 20:11:54 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2002,2004 Slaven Rezic. All rights reserved.
 #
 # Mail: slaven@rezic.de
 # WWW:  http://bbbike.sourceforge.net
@@ -185,5 +185,7 @@ if ($0 =~ /merge_with_bbd/) {
     $esri->set_file($shapefile);
     $esri->DBase->merge_with_bbd($bbdfile, $outfile);
 }
+
+$DBI::errstr = $DBI::errstr if 0; # peacify -w
 
 __END__

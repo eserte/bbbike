@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: WinCompat.pm,v 1.4 1999/02/20 16:39:21 eserte Exp $
+# $Id: WinCompat.pm,v 1.4 1999/02/20 16:39:21 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -14,25 +14,26 @@
 
 package main;
 
-eval {
-    $win32s = (!Win32::IsWinNT() and !Win32::IsWin95());
-};
-if ($win32s) {
-    # STDERR landet ansonsten im Nirvana
-    if (defined $ENV{TEMP} and -d $ENV{TEMP}) {
-	open(W, ">$ENV{TEMP}/error.txt"); # truncate
-	close W;
-	my $warn_sub = sub {
-	    open(W, ">>$ENV{TEMP}/error.txt");
-	    print W join("\n", @_);
-	    close W;
-	};
-	$SIG{__WARN__} = $SIG{__DIE__} = $warn_sub;
-    }
-    $do_www    = 0; # Internet-Zugriffe unterdrücken
-    $want_wind = 0;
-    $sfn       = 1;
-}      
+#XXX del:
+# eval {
+#     $win32s = (!Win32::IsWinNT() and !Win32::IsWin95());
+# };
+# if ($win32s) {
+#     # STDERR landet ansonsten im Nirvana
+#     if (defined $ENV{TEMP} and -d $ENV{TEMP}) {
+# 	open(W, ">$ENV{TEMP}/error.txt"); # truncate
+# 	close W;
+# 	my $warn_sub = sub {
+# 	    open(W, ">>$ENV{TEMP}/error.txt");
+# 	    print W join("\n", @_);
+# 	    close W;
+# 	};
+# 	$SIG{__WARN__} = $SIG{__DIE__} = $warn_sub;
+#     }
+#     $do_www    = 0; # Internet-Zugriffe unterdrücken
+#     $want_wind = 0;
+#     $sfn       = 1;
+# }      
 
 if ($Tk::VERSION < 800) {
     eval q{

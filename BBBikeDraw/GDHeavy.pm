@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: GDHeavy.pm,v 1.4 2003/06/02 22:57:34 eserte Exp $
+# $Id: GDHeavy.pm,v 1.4 2003/06/02 22:57:34 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,6 +13,7 @@
 #
 
 package BBBikeDraw::GDHeavy;
+# needs BBBikeDraw::GD preloaded
 
 use strict;
 use vars qw($VERSION);
@@ -25,10 +26,11 @@ use VectorUtil qw(get_polygon_center);
 
 use vars qw(%color_to_index);
 
+#XXX remove; already defined in BBBikeDraw::GD
 # REPO BEGIN
 # REPO NAME pi /home/e/eserte/src/repository 
 # REPO MD5 bb2103b1f2f6d4c047c4f6f5b3fa77cd
-sub pi ()   { 4 * atan2(1, 1) } # 3.141592653
+#sub pi ()   { 4 * atan2(1, 1) } # 3.141592653
 # REPO END
 
 # recognizes:
@@ -195,7 +197,7 @@ sub draw_arctext_layer {
 	my(undef, $type, undef, undef, $text, $height, $angle, undef, $justify, $fonttype, $slant) = split /:/, $r->[Strassen::NAME];
 	my($x, $y) = $transpose->(@{Strassen::to_koord1($coords->[0])});
 	if ($type == 3 || $type == 16) { # Hauptstraßen, Bahnhöfe
-	    $im->stringFT($typefill{$type}, $TTF_STREET, $height/4, -$angle/180*pi, $x, $y, $text);
+	    $im->stringFT($typefill{$type}, $TTF_STREET, $height/4, -$angle/180 * pi, $x, $y, $text);
 	}
     }
 }

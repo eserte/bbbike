@@ -15,7 +15,7 @@
 package Update;
 
 use strict;
-use vars qw($verbose $tmpdir $proxy $progname $VERSION);
+use vars qw($verbose $tmpdir $proxy $VERSION);
 
 use File::Basename;
 use BBBikeVar;
@@ -77,6 +77,7 @@ sub update_http {
 	require LWP::UserAgent;
 	$ua = new LWP::UserAgent;
 	$ua->agent("$main::progname/$main::VERSION");
+	$main::progname = $main::progname if 0; # peacify -w
 	if ($main::proxy) {
 	    $ua->proxy(['http', 'ftp'], $main::proxy);
 	}
@@ -86,6 +87,7 @@ sub update_http {
 	require Http;
 	Http->VERSION(0.22);
     }
+    $main::c = $main::c; # peacify -w
     $main::progress->Init(-dependents => $main::c,
 			  -label => "Updating via Internet");
     my $i = 0;
@@ -267,6 +269,7 @@ sub bbbike_data_update {
  TRY_RSYNC: {
 	if ($protocol eq 'rsync' || $protocol eq 'best') {
 	    eval {
+		$BBBike::BBBIKE_UPDATE_DATA_RSYNC = $BBBike::BBBIKE_UPDATE_DATA_RSYNC; # peacify -w
 		update_rsync(-dest => $rootdir,
 			     -src  => $BBBike::BBBIKE_UPDATE_DATA_RSYNC,
 			    );

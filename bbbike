@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.145 2004/09/05 11:19:15 eserte Exp $
+# $Id: bbbike,v 3.145 2004/09/05 11:19:15 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -190,6 +190,7 @@ use your qw($Karte::Standard::obj $Karte::Standard::init_scrollregion
 	    $Radwege::bez @Radwege::bbbike_category_order
 	    %Radwege::category_plural
 	    $FURadar::use_map $FURadar::progress
+	    $PLZ::VERBOSE $Devel::Trace::TRACE
 	   );
 
 *transpose_ls          = \&transpose_ls_slow;
@@ -8063,7 +8064,7 @@ sub plotstr {
 	$c->delete("i-out");
     }
     if ($std && !$str_draw{$abk}) {
-	if ($main::lazy_str{$abk}) {
+	if ($lazy_str{$abk}) {
 	    bbbikelazy_remove_data("str", $abk);
 	}
 	return;
@@ -10868,7 +10869,6 @@ sub show_info {
 	#warn $index;
     }
 
-    my @polarcoord;
     my(@coords) = $c->coords('current');
     if (!@coords || @coords > 2) {
 	my($px,$py) = $c->pointerxy;
