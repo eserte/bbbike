@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: RotFont.pm,v 1.12 2002/07/13 21:04:18 eserte Exp $
+# $Id: RotFont.pm,v 1.13 2004/10/18 20:49:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001 Slaven Rezic. All rights reserved.
@@ -15,6 +15,7 @@
 package Tk::RotFont;
 
 use strict;
+use vars qw($DEBUG);
 use constant PI => 3.141592653;
 
 BEGIN {
@@ -275,10 +276,10 @@ return draw_text_exact($str, $coordref, %args);
 					  $strtype, $r[1]);
 
 	my $ges_strecke_len = len_of_coordrefs($coordref, \%args);
-warn "$strbase wall=$w_all ges=$ges_strecke_len\n";
+	warn "$strbase wall=$w_all ges=$ges_strecke_len\n" if $DEBUG;
 	return if ($ges_strecke_len == 0 || $ges_strecke_len < $w_all);
 
-warn "r0=" . ($r[0]*180/PI) . " r1=" . ($r[1]*180/PI) . "\n";
+	warn "r0=" . ($r[0]*180/PI) . " r1=" . ($r[1]*180/PI) . "\n" if $DEBUG;
 	$args{-drawsub}->($coordref->[0], $coordref->[1],
 			  $strbase, $r[0]);
 	$args{-drawsub}->($coordref->[-2], $coordref->[-1],
@@ -299,7 +300,7 @@ warn "r0=" . ($r[0]*180/PI) . " r1=" . ($r[1]*180/PI) . "\n";
 		&&
 		abs($yext1+$yext2) > abs($coordref->[1]-$coordref->[$#$coordref])
 	       ) {
-		warn "$strbase $strtype too large...";
+		warn "$strbase $strtype too large..." if $DEBUG;
 		return;
 	    }
 	    $rotfont1->writeCanvas
@@ -319,15 +320,15 @@ sub draw_text_exact {
 				     $str, 0);
     my $ges_strecke_len = len_of_coordrefs($coordref, \%args);
     my $margin = 5;
-warn "$str wall=$w_all ges=$ges_strecke_len\n";
+    warn "$str wall=$w_all ges=$ges_strecke_len\n" if $DEBUG;
     return if ($ges_strecke_len == 0 || $ges_strecke_len < $w_all+2*$margin);
 
-warn "coords=@$coordref\n";
+    warn "coords=@$coordref\n" if $DEBUG;
 
     my($last_x, $last_y, $section) =
 	advance($coordref, \%args, $coordref->[0], $coordref->[1],
 		0, $margin);
-warn "advance $margin from $coordref->[0]/$coordref->[1] => $last_x/$last_y\n";
+    warn "advance $margin from $coordref->[0]/$coordref->[1] => $last_x/$last_y\n" if $DEBUG;
     my $last_section = $section;
 
     my $next_len = 0;
@@ -345,7 +346,7 @@ warn "advance $margin from $coordref->[0]/$coordref->[1] => $last_x/$last_y\n";
 my($tx1,$ty1) = $args{-transpose}->($last_x,$last_y);
 my($tx2,$ty2) = $args{-transpose}->($coordref->[$next_i],$coordref->[$next_i+1]);
 my $tr = -atan2($ty2-$ty1, $tx2-$tx1);
-warn "t1=$tx1/$ty1 t2=$tx2/$ty2 tr=$tr\n";
+warn "t1=$tx1/$ty1 t2=$tx2/$ty2 tr=$tr\n" if $DEBUG;
 }
 
     my $len_so_far = 0;
@@ -356,7 +357,7 @@ warn "t1=$tx1/$ty1 t2=$tx2/$ty2 tr=$tr\n";
 	my $j = shift;
 	my($draw_len) = $args{-extentsub}->($last_x, $last_y,
 					    substr($str, 0, $j), 0);
-warn "draw x/y=$last_x/$last_y, str=($str,0,$j), r0=$last_r0 thisr=$this_r\n";
+	warn "draw x/y=$last_x/$last_y, str=($str,0,$j), r0=$last_r0 thisr=$this_r\n" if $DEBUG;
 	$args{-drawsub}->($last_x, $last_y,
 			  substr($str, 0, $j),
 			  (defined $r ? in_between($last_r0, $r) : $last_r0)
@@ -369,7 +370,8 @@ warn "draw x/y=$last_x/$last_y, str=($str,0,$j), r0=$last_r0 thisr=$this_r\n";
 		    $section, $draw_len);
 	$last_r0 = $r;
 	$len_so_far = $draw_len;
-warn "after ($draw_len): (x/y=$last_x/$last_y, $section) r=$last_r0 len=$len_so_far\n";
+	warn "after ($draw_len): (x/y=$last_x/$last_y, $section) r=$last_r0 len=$len_so_far\n"
+	    if $DEBUG;
     };
 
  LOOP:
@@ -459,7 +461,7 @@ sub advance {
 
 sub in_between {
     my($a, $b) = @_;
-#warn "a=$a b=$b middle=" . (($a-$b)/2+$a) . "\n";
+    #warn "a=$a b=$b middle=" . (($a-$b)/2+$a) . "\n";
     ($a-$b)/2+$b;
 }
 

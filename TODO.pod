@@ -14,13 +14,7 @@ Legend:
 
 =over
 
-=item * (H3)
-
-Gespeicherte Routen machen beim Wiederladen Probleme: ein Verlängern
-ist nicht möglich, Vias einfügen ist nicht möglich (es sei denn,
-Start- und Zielpunkt fallen auf einen existierenden Punkt im Netz).
-
-=item * (H3)
+=item * (H2)
 
 Optimize SRTProgress: only hide canvas if first progress drawing is
 necessary. Adjust progress drawing to be specified in time intervals

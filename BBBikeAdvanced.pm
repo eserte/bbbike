@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.108 2004/08/21 23:08:02 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.108 2004/08/21 23:08:02 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -3072,6 +3072,7 @@ sub active_temp_blockings_for_date_dialog {
 
     if (@future) {
 	my $txt = $t->Scrolled("ROText", -scrollbars => "osoe",
+			       -font => "Courier 9",
 			       -width => 40, -height => 5)->pack(-fill => "both", -expand => 1);
 	for my $rec (@future) {
 	    $rec->{fromdate} = scalar localtime $rec->{from}
@@ -3079,7 +3080,13 @@ sub active_temp_blockings_for_date_dialog {
 	    $rec->{untildate} = scalar localtime $rec->{until}
 		if $rec->{until};
 	}
-	$txt->insert("end", scalar Data::Dumper->new([@future], [])->Indent(1)->Dump);
+	my $dump;
+	if (eval { require YAML; 1 }) {
+	    $dump = YAML::Dump(\@future);
+	} else {
+	    $dump = Data::Dumper->new([@future], [])->Indent(1)->Dump;
+	}
+	$txt->insert("end", $dump);
     }
 }
 

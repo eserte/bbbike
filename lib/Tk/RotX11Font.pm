@@ -75,7 +75,7 @@ sub writeRot {
     my($c, $x, $y, $f_sub, $size, $rad, $text, $tags) = @_;
     my($f, $xadd_ref, $yadd_ref) = get_font_attrib($text, $f_sub, $size, $rad);
     for(split(//, $text)) {
-warn "font=$f\n";
+#warn "font=$f\n";
 	my $item = $c->createText($x, $y, -text => $_, -font => $f,
 				  -anchor => 'w',
 				  (defined $tags ? (-tags => $tags) : ()));

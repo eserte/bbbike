@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.37 2004/09/06 22:57:33 eserte Exp $
+# $Id: GD.pm,v 1.38 2004/10/18 20:49:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.37 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -582,7 +582,7 @@ my $s = $p->get($strpos);
 		my $cy = cos($rad)*$fontsize/2;
 		$x += $cx;
 		$y += $cy;
-		warn "correct $cx/$cy\n";
+		warn "correct $cx/$cy\n" if $DEBUG;
 		$im->$ft_method($black, $ttf, $fontsize, $rad, $x, $y, $_[2]);
 	    };
 	    my $extent_sub = sub {

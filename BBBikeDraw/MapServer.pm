@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.11 2003/11/29 21:18:39 eserte Exp $
+# $Id: MapServer.pm,v 1.13 2004/10/18 20:49:03 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -75,6 +75,22 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 	$self;
     }
 
+    sub radzeit_herceg_de_default {
+	my $self = shift->new;
+	my $apache_root = "/home/e/eserte/src/bbbike/projects/www.radzeit.de";
+	$self->BbbikeDir("$apache_root/BBBike");
+	$self->MapserverMapDir("$apache_root/htdocs/mapserver/brb");
+	#$self->MapserverBinDir("$apache_root/cgi-bin");
+	$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
+	$self->MapserverRelurl("/mapserver/brb");
+	$self->MapserverUrl("http://radzeit.herceg.de/mapserver/brb");
+	$self->TemplateMap("brb.map-tpl");
+	$self->ImageSuffix("png");
+	#$self->FontsList("fonts-radzeit.list");
+	$self->FontsList("fonts-vran.list");
+	$self;
+    }
+
     sub bbbike_cgi_conf {
 	my $self = shift->new;
 	# guess position of bbbike.cgi.config
@@ -120,8 +136,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 
     use base qw(Class::Accessor);
     use vars qw(@accessors @computed_accessors);
-    @accessors = qw(Conf
-		    Width Height Imagecolor Transparent BBox
+    @accessors = qw(Width Height Imagecolor Transparent BBox
 		    ColorGreyBg ColorWhite ColorYellow ColorRed ColorGreen
 		    ColorMiddleGreen ColorDarkGreen ColorDarkBlue
 		    ColorLightBlue ColorBlack
@@ -132,13 +147,37 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 		    MapserverDir MapserverRelurl MapserverUrl
 		    BbbikeDir ImageDir ImageSuffix FontsList
 		   );
-    @computed_accessors = qw(ImageType);
+    @computed_accessors = qw(Conf ImageType);
 
     __PACKAGE__->mk_accessors(@accessors);
 
     sub ImageType {
 	my $suffix = shift->ImageSuffix;
 	uc($suffix);
+    }
+
+    sub Conf {
+	my $self = shift;
+	if (@_) {
+	    $self->set("Conf", @_);
+	} else {
+	    my $conf = $self->get("Conf");
+	    if (!$conf) {
+		require Sys::Hostname;
+		if (defined $ENV{SERVER_NAME} &&
+		    $ENV{SERVER_NAME} =~ /radzeit\.de$/) {
+		    $conf = BBBikeDraw::MapServer::Conf->radzeit_default;
+		} elsif (defined $ENV{SERVER_NAME} &&
+			 $ENV{SERVER_NAME} =~ /radzeit\.herceg\.de$/) {
+		    $conf = BBBikeDraw::MapServer::Conf->radzeit_herceg_de_default;
+		} elsif (Sys::Hostname::hostname() =~ /herceg\.de$/) {
+		    $conf = BBBikeDraw::MapServer::Conf->vran_default;
+		} else {
+		    $conf = BBBikeDraw::MapServer::Conf->bbbike_cgi_conf;
+		}
+	    }
+	    $conf;
+	}
     }
 
     use Template;
@@ -155,17 +194,6 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
     sub imageOut {
 	my $self = shift;
 	my $conf = $self->Conf;
-	if (!$conf) {
-	    require Sys::Hostname;
-	    if (Sys::Hostname::hostname() =~ /herceg\.de$/) {
-		$conf = BBBikeDraw::MapServer::Conf->vran_default;
-	    } elsif (defined $ENV{SERVER_NAME} &&
-		     $ENV{SERVER_NAME} =~ /radzeit\.de$/) {
-		$conf = BBBikeDraw::MapServer::Conf->radzeit_default;
-	    } else {
-		$conf = BBBikeDraw::MapServer::Conf->bbbike_cgi_conf;
-	    }
-	}
 	my($mapfh, $mapfile) = tempfile
 	    (UNLINK => !$BBBikeDraw::MapServer::DEBUG,
 	     SUFFIX => ".map");

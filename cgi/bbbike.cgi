@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.88 2004/10/02 16:04:07 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.89 2004/10/18 20:16:34 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -627,7 +627,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.88 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.89 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1080,9 +1080,15 @@ sub choose_form {
 
     # Leerzeichen am Anfang und Ende löschen
     # überflüssige Leerzeichen in der Mitte löschen
-    $start =~ s/^\s+//; $start =~ s/\s+$//; $start =~ s/\s{2,}/ /g;
-    $via   =~ s/^\s+//; $via   =~ s/\s+$//; $via   =~ s/\s{2,}/ /g;
-    $ziel  =~ s/^\s+//; $ziel  =~ s/\s+$//; $ziel  =~ s/\s{2,}/ /g;
+    if (defined $start) {
+	$start =~ s/^\s+//; $start =~ s/\s+$//; $start =~ s/\s{2,}/ /g;
+    }	
+    if (defined $via) {
+	$via   =~ s/^\s+//; $via   =~ s/\s+$//; $via   =~ s/\s{2,}/ /g;
+    }
+    if (defined $ziel) {
+	$ziel  =~ s/^\s+//; $ziel  =~ s/\s+$//; $ziel  =~ s/\s{2,}/ /g;
+    }
 
     foreach ([\$startname, \$start2, \$startort, \$startortc, 'start'],
 	     [\$vianame,   \$via2,   \$viaort,   \$viaortc,   'via'],
@@ -1403,11 +1409,16 @@ sub choose_form {
 <tr>
 EOF
 
-    if ($start eq ''  && $ziel eq '' &&
-	$start2 eq '' && $ziel2 eq '' &&
-	$startname eq '' && $zielname eq '' &&
-	$startc eq '' && $zielc eq '' &&
-	!$smallform) {
+    my $show_introduction;
+    {
+	local $^W = 0;
+	$show_introduction = ($start eq ''  && $ziel eq '' &&
+			      $start2 eq '' && $ziel2 eq '' &&
+			      $startname eq '' && $zielname eq '' &&
+			      $startc eq '' && $zielc eq '' &&
+			      !$smallform);
+    }
+    if ($show_introduction) {
 	load_teaser();
 	# use "make count-streets" in ../data
  	print <<EOF;
@@ -4125,6 +4136,7 @@ sub get_cyclepath_streets {
 
 sub get_streets {
     my($scope) = shift || $q->param("scope") || "city";
+    $scope =~ s/^all,//;
     if ($g_str) {
 	return $g_str
 	    if (($scope eq 'city'       && $g_str->{Scope} eq 'city') ||
@@ -4325,13 +4337,15 @@ sub fix_coords {
 		} else {
 		    # Try to enlarge search region
 		    my @scopes = get_next_scopes($q->param("scope"));
-		    for my $scope (@scopes) {
-			$q->param("scope", $scope); # XXX "all," gets lost
-			my $str = get_streets_rebuild_dependents();
-			my $ret = $str->nearest_point($$varref, FullReturn => 1);
-			if ($ret) {
-			    $$varref = $ret->{Coord};
-			    last TRY;
+		    if (@scopes) {
+			for my $scope (@scopes) {
+			    $q->param("scope", $scope); # XXX "all," gets lost
+			    my $str = get_streets_rebuild_dependents();
+			    my $ret = $str->nearest_point($$varref, FullReturn => 1);
+			    if ($ret) {
+				$$varref = $ret->{Coord};
+				last TRY;
+			    }
 			}
 		    }
 		}
@@ -5228,7 +5242,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/10/02 16:04:07 $';
+    my $cgi_date = '$Date: 2004/10/18 20:16:34 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

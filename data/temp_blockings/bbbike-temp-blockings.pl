@@ -979,4 +979,20 @@ EOF
 userdel	q4 32100,18012 31887,17453
 EOF
      },
+     { from  => 1098132674, # 2004-10-18 22:51
+       until => 1104534000, # 2005-01-01 00:00
+       text  => 'Naumannstr. (Schöneberg) in beiden Richtungen zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt (bis 31.12.2004)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 7716,8048 7717,7759
+EOF
+     },
+     { from  => 1097964000, # 2004-10-17 00:00
+       until => 1099000800, # 2004-10-29 00:00
+       text  => 'L 171; (Hohen Neuendorf-Hennigsdorf); Bereich Anschlußstelle; Ausbau AS Stolpe; Vollsperrung; 18.10.2004-28.10.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 375,28109 938,28349
+EOF
+     },
     );

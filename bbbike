@@ -7844,6 +7844,12 @@ sub load_save_route {
 		$c->center_view2($coords[0]->[0], $coords[0]->[1], $x2, $y2);
 	    }
 
+	    if ($net) {
+		for (@search_route_points) {
+		    add_new_point($net, $_->[SRP_COORD], -quiet => 1);
+		}
+	    }
+
 	    redraw_path();
 	    updatekm();
 	    update_route_strname();
@@ -15351,7 +15357,7 @@ sub add_new_point {
     }
     unless ($args{'-quiet'}) {
 	if (!$net->reachable($point)) {
-	    status_message(Mfmt("Der Punkt <%s> existiert im Netz nicht und kann auch nicht erzeugt werden", $pos), "die");
+	    status_message(Mfmt("Der Punkt <%s> existiert im Netz nicht und kann auch nicht erzeugt werden", $point), "die");
 	}
     }
     join(",", @{ $points[1] });
