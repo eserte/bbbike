@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.8 2003/06/21 15:24:43 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.10 2003/06/30 22:12:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -89,9 +89,11 @@ eval {
 	$link1 = "$mscgi_remote?$link_query";
 	$link2 = "$mscgi_local?$link_query";
     } else {
-	my $coords_esc = CGI::escape(join(",", map { int } ($mapx, $mapy)));
-	$link1 = "$msadrcgi_remote?coords=$coords_esc";
-	$link2 = "$msadrcgi_local?coords=$coords_esc";
+	if (defined $mapx && defined $mapy) {
+	    my $coords_esc = CGI::escape(join(",", map { int } ($mapx, $mapy)));
+	    $link1 = "$msadrcgi_remote?coords=$coords_esc";
+	    $link2 = "$msadrcgi_local?coords=$coords_esc";
+	}
     }
 
     if (param("email")) {
@@ -104,12 +106,12 @@ eval {
     $comment =
 	"Von: " . (param("email")||"anonymous\@bbbike.de") . "\n" .
 	"An:  $to\n\n" .
-        "Kartenkoordinaten: " . $mapx . "/" . $mapy . "\n\n" .
+	(defined $mapx ? "Kartenkoordinaten: " . $mapx . "/" . $mapy . "\n\n" : "") .
         "Kommentar:\n" .
 	param("comment") . "\n";
     print $fh $comment . "\n";
-    print $fh "Remote: ", $link1, "\n";
-    print $fh "Lokal:  ", $link2, "\n";
+    print $fh "Remote: ", $link1, "\n" if defined $link1;
+    print $fh "Lokal:  ", $link2, "\n" if defined $link2;
     $fh->close or die "Can't close mail filehandle";
 
     print header,

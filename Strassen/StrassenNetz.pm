@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.23 2003/06/19 22:33:13 eserte Exp eserte $
+# $Id: StrassenNetz.pm,v 1.24 2003/06/30 22:05:55 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -1710,6 +1710,7 @@ sub get_point_comment {
 	} elsif ($r->[Strassen::CAT()] =~ /^PI(:|$)/) {
 	CHECK: {
 		for my $i (0 .. $#{$r->[Strassen::COORDS()]}) {
+		    last CHECK if !defined $routeref->[$routeinx+$i];
 		    my $xy = join ",", @{ $routeref->[$routeinx+$i] };
 		    last CHECK if ($r->[Strassen::COORDS()][$i] ne $xy);
 		}

@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.9 2003/06/28 14:28:32 eserte Exp $
+# $Id: LogTracker.pm,v 1.10 2003/07/01 00:15:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -24,9 +24,9 @@ push @ISA, 'BBBikePlugin';
 use strict;
 use vars qw($VERSION $lastcoords
             $layer @colors $colors_i @accesslog_data
-	    $do_search_route $ua $safe
+	    $do_search_route $error_checks $ua $safe
             $remoteuser $remotehost $logfile $tracking $tail_pid $bbbike_cgi);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 use URI::Escape;
 use Strassen::Core;
@@ -47,6 +47,7 @@ sub register {
 	elsif ($k eq 'bbbike_cgi') { $bbbike_cgi = $v }
 	elsif ($k eq 'tracking') { $tracking = $v; parse_tail_log() if $v } # XXX
 	elsif ($k eq 'replay_route_search') { $do_search_route = $v }
+	elsif ($k eq 'error_checks') { $error_checks = $v }
 	else {
 	    warn "Ignore unknown plugin parameter $k";
 	}
@@ -131,6 +132,9 @@ sub add_button {
 		       stop_parse_tail_log();
 		   }
                }],
+              [Checkbutton => "Error checks",
+	       -variable => \$error_checks,
+	      ],
 	      [Button => 'AccessLog today',
 	       -command => sub {
 		   parse_accesslog_today();
@@ -189,13 +193,21 @@ sub parse_accesslog {
     if (!$fh) {
 	$fh = _open_log();
     }
+    my $error_txt = "";
     while(<$fh>) {
 	chomp;
-	my @d = parse_line($_);
+	my @d;
+	eval {
+	    @d = parse_line($_);
+	};
+	if ($@) {
+	    $error_txt .= $@;
+	}
 	push @accesslog_data, @d if @d;
     }
     close $fh;
     draw_accesslog_data();
+    show_errors($error_txt);
 }
 
 sub draw_accesslog_data {
@@ -261,6 +273,7 @@ sub parse_accesslog_any_day {
 	$is_tied++;
     }
     my $gather = 0;
+    my $error_txt = "";
     while(<$bw>) {
 	if (!$gather) {
 	    if (index($_, $rx) != -1) {
@@ -271,11 +284,18 @@ sub parse_accesslog_any_day {
 	}
 	last if index($_, $rx) == -1;
 	chomp;
-	my(@d) = parse_line($_);
+	my @d;
+	eval {
+	    @d = parse_line($_);
+	};
+	if ($@) {
+	    $error_txt .= $@;
+	}
 	push @accesslog_data, @d if @d;
     }
     untie *BW if $is_tied;
     draw_accesslog_data();
+    show_errors($error_txt);
 }
 
 sub kill_tail {
@@ -339,7 +359,13 @@ sub fileevent_read_line {
         return;
     }
     my $line = <FH>;
-    my(@d) = parse_line($line);
+    my @d;
+    eval {
+	@d = parse_line($line);
+    };
+    if ($@) {
+	show_errors($@);
+    }
     if (@d) {
 	push @accesslog_data, @d;
 	eval {
@@ -363,8 +389,18 @@ sub fileevent_read_line {
 sub parse_line {
     my $line = shift;
     my $lastcoords;
-    if ($line =~ m{GET\s+(?:/~eserte/bbbike/cgi/bbbike.cgi|/cgi-bin/bbbike\.cgi)\?(.*)\s+HTTP}) {
+    if ($line =~ m{GET\s+
+		   (?:
+		    /~eserte/bbbike/cgi/bbbike\.cgi |
+		    /cgi-bin/bbbike\.cgi            |
+		    /bbbike/cgi/bbbike\.cgi
+		   )\?(.*)\s+HTTP[^"]+"\s(\d+)}x
+       ) {
 	my $query_string = $1;
+	my $status_code = $2;
+	if ($error_checks && $status_code =~ /^[45]/) {
+	    die "Status $status_code $line\n";
+	}
 	if ($query_string =~ m{coords=([^&; ]+)}) {
 	    my $coords = uri_unescape(uri_unescape($1));
 	    my $date = "???";
@@ -449,6 +485,43 @@ sub parse_line {
             return @bbdlines;
         }
     }
+
+    elsif ($line =~ m{GET\s+
+		      (?:
+		       /~eserte/cgi/mapserv\.cgi |
+		       /cgi-bin/mapserv
+		      )\?(.*)\s+HTTP[^"]+"\s(\d+)}x
+		     ) {
+	my $query_string = $1;
+	my $status_code = $2;
+	if ($error_checks && $status_code =~ /^[45]/) {
+	    die "Status $status_code $line\n";
+	}
+#XXX zZt wird immer der *letzte* Quadrant dargestellt. Der *nächste* berechnet sich aus imgext, zoomdir, usw.
+	if ($query_string =~ /imgext=([\d\.\+\- ]+)/) {
+	    my $imgext = $1;
+	    $imgext =~ s/\+/ /g;
+	    my @imgext = map { int } split /\s+/, uri_unescape($imgext);
+	    my $coords;
+	    {
+		local $" = ",";
+		$coords = "@imgext[0,1] @imgext[2,1] @imgext[2,3] @imgext[0,3] @imgext[0,1]";
+	    }
+
+	    my $date = "???";
+	    if ($line =~ m{(\d+/[a-z]+/\d+:\d+:\d+:\d+)}i) {
+		$date = $1;
+	    }
+
+	    my $bbdline = "Mapserver [$date] " .
+		_prepare_ms_qs_dump(\$query_string) .
+		    "\t" . $colors[$colors_i] . " $coords\n";
+	    $colors_i++; $colors_i %= scalar @colors;
+	    return ($bbdline);
+	}
+    }
+
+    # else { warn "Can't match <$line>\n" }
     ();
 }
 
@@ -516,6 +589,21 @@ sub _prepare_qs_dump {
     join(" ", @p);
 }
 
+sub _prepare_ms_qs_dump {
+    my $query_string_ref = shift;
+    my $q = CGI->new($$query_string_ref);
+    for (qw(map mode zoomdir zoomsize orig_mode orig_zoomdir imgxy
+	    imgext savequery program bbbikeurl bbbikeemail startc coordset
+	    img.x img.y)) {
+	$q->delete($_);
+    }
+    my @p;
+    for my $p ($q->param) {
+	push @p, "$p=" . $q->param($p);
+    }
+    join(" ", @p);
+}
+
 sub _maybe_gunzip {
     my $fh = shift;
     if (eval { require PerlIO::gzip }) {
@@ -532,6 +620,23 @@ sub init_search_route {
 	$ua = LWP::UserAgent->new;
 	$safe = Safe->new;
     }
+}
+
+sub show_errors {
+    my $errors = shift;
+    return if !defined $errors || $errors eq '';
+    my $winname = "LogTracker-errors";
+    my $t = main::redisplay_top($main::top, $winname, -title => "Errors");
+    my $txt;
+    if (!defined $t) {
+	$txt = $main::toplevel{$winname}->Subwidget("Log");
+	$txt->insert("end", ("-"x70) . "\n");
+    } else {
+	$txt = $t->Scrolled("ROText", -scrollbars => "eos"
+			   )->pack(-fill => "both", -expand => 1);
+	$t->Advertise(Log => $txt);
+    }
+    $txt->insert("end", $errors);
 }
 
 return 1 if caller;

@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.34 2003/06/29 10:17:59 eserte Exp $
+# $Id: bbbike.cgi,v 6.35 2003/06/30 22:05:29 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -645,7 +645,7 @@ use vars qw(@ISA);
 
 } # jetzt beginnt wieder package main
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.34 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.35 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -3423,8 +3423,8 @@ EOF
 sub user_agent_info {
     $bi = new BrowserInfo $q;
 #    $bi->emulate("wap"); # XXX put your favourite emulation
-    $fontstr = ($bi->{'can_css'} ? '' : "<font face=\"$font\">");
-    $fontend = ($bi->{'can_css'} ? '' : "</font>");
+    $fontstr = ($bi->{'can_css'} || $bi->{'text_browser'} ? '' : "<font face=\"$font\">");
+    $fontend = ($bi->{'can_css'} || $bi->{'text_browser'} ? '' : "</font>");
     $bi->{'hfill'} = ($bi->is_browser_version("Mozilla", 5, 5.0999) ?
 		      "class='hfill'" : "");
 }
@@ -4071,6 +4071,7 @@ sub etag {
 sub http_header {
     my(@args) = @_;
     if (!$ENV{MOD_PERL} &&
+	0 && # XXX CGI::Compress::Gzip 0.11 not ready for prime time!!!
 	eval { require CGI::Compress::Gzip; 1 }) {
 	$CGI::Compress::Gzip::global_give_reason = $debug;
 	$cgic = CGI::Compress::Gzip->new;

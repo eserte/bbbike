@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.3 2003/06/25 07:06:47 eserte Exp $
+# $Id: wapcgi.t,v 1.4 2003/07/01 08:58:00 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -53,11 +53,65 @@ for my $wapurl (@wap_url) {
 
 sub validate_wml {
     my $wml = shift;
+    if (!is_in_path("xmllint")) {
+	warn "xmllint is not installed, skipping test...\n";
+	return 1;
+    }
+    my $xml_catalog = "/home/e/eserte/src/bbbike/misc/xml-catalog";
+    if (!-e $xml_catalog) {
+	warn "Cannot find $xml_catalog, skipping test...\n";
+	return 1;
+    }
     $ENV{SGML_CATALOG_FILES} = "";
     my($fh,$filename) = tempfile(UNLINK => 1);
     print $fh $wml;
-    system("xmllint --catalogs file:///home/e/eserte/src/bbbike/misc/xml-catalog $filename 2>&1 >/dev/null");
+    system("xmllint --catalogs file://$xml_catalog $filename 2>&1 >/dev/null");
     $? == 0;
 }
+
+# REPO BEGIN
+# REPO NAME is_in_path /home/e/eserte/src/repository 
+# REPO MD5 81c0124cc2f424c6acc9713c27b9a484
+sub is_in_path {
+    my($prog) = @_;
+    return $prog if (file_name_is_absolute($prog) and -f $prog and -x $prog);
+    require Config;
+    my $sep = $Config::Config{'path_sep'} || ':';
+    foreach (split(/$sep/o, $ENV{PATH})) {
+	if ($^O eq 'MSWin32') {
+	    # maybe use $ENV{PATHEXT} like maybe_command in ExtUtils/MM_Win32.pm?
+	    return "$_\\$prog"
+		if (-x "$_\\$prog.bat" ||
+		    -x "$_\\$prog.com" ||
+		    -x "$_\\$prog.exe" ||
+		    -x "$_\\$prog.cmd");
+	} else {
+	    return "$_/$prog" if (-x "$_/$prog" && !-d "$_/$prog");
+	}
+    }
+    undef;
+}
+# REPO END
+
+# REPO BEGIN
+# REPO NAME file_name_is_absolute /home/e/eserte/src/repository 
+# REPO MD5 89d0fdf16d11771f0f6e82c7d0ebf3a8
+BEGIN {
+    if (eval { require File::Spec; defined &File::Spec::file_name_is_absolute }) {
+	*file_name_is_absolute = \&File::Spec::file_name_is_absolute;
+    } else {
+	*file_name_is_absolute = sub {
+	    my $file = shift;
+	    my $r;
+	    if ($^O eq 'MSWin32') {
+		$r = ($file =~ m;^([a-z]:(/|\\)|\\\\|//);i);
+	    } else {
+		$r = ($file =~ m|^/|);
+	    }
+	    $r;
+	};
+    }
+}
+# REPO END
 
 __END__
