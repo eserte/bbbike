@@ -456,4 +456,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Londoner Str. und Barfußstr. Veranstaltung, Straße vollständig gesperrt (bis 04.07. abends)',
        type  => 'handicap',
      },
+     { from  => 1090533600, # 2004-07-23 00:00
+       until => 1091224800, # 2004-07-31 00:00
+       file  => 'goerlsdorf.bbd',
+       text  => 'L 239; (B198 nö.Angermünde-Joachimsthal); Bahnübergang Görlsdorf Gleis- u. Straßenbau Vollsperrung 24.07.2004-30.07.2004 ',
+       type  => 'gesperrt',
+     },
     );

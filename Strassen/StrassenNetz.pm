@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.41 2004/04/12 20:52:55 eserte Exp eserte $
+# $Id: StrassenNetz.pm,v 1.42 2004/07/21 23:58:13 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -29,7 +29,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.41 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz;
 use strict;
@@ -137,11 +137,11 @@ sub is_source {
 sub sourcefiles {
     my $self = shift;
     if (exists $self->{Source} && @{$self->{Source}}) {
-	my @src;
+	my %src;
 	foreach (@{$self->{Source}}) {
-	    push @src, $_->{File};
+	    $src{$_}++ for ($_->file);
 	}
-	@src;
+	sort keys %src;
     } else {
 	$self->{Strassen}->file;
     }

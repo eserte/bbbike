@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.15 2004/07/08 07:07:20 eserte Exp eserte $
+# $Id: BBBikeHeavy.pm,v 1.16 2004/07/21 23:59:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -509,7 +509,7 @@ sub BBBikeHeavy::getmap {
     my($mapx, $mapy, $mapxx, $mapyy);
     if ($coord_system eq 'standard') {
 	my($tx,$ty);
-	if ($datadir =~ /data_corrected/ && ($type eq 'brbmap' || $type eq 'de2002')) { # XXX Check for available resources??? Also valid for other map types???
+	if ($type eq 'brbmap' || $type eq 'de2002') { # XXX Check for available resources??? Also valid for other map types???
 	    my $c = join(",", anti_transpose($x, $y));
 	    local @INC = (@INC, "$FindBin::RealBin/miscsrc");
 	    require "convert_berlinmap.pl";
@@ -518,6 +518,7 @@ sub BBBikeHeavy::getmap {
 		$ret = BBBike::Convert::process
 		    (-datafromany => "$FindBin::RealBin/misc/gps_correction_all.dat",
 		     -refpoint => "$c,$ref_dist",
+		     '-reverse',
 		     '-nooutput', '-reusemapdata',
 		    );
 		last if ($ret && $ret->{Count} >= 5);

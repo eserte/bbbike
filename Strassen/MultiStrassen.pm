@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiStrassen.pm,v 1.10 2004/07/08 07:07:06 eserte Exp $
+# $Id: MultiStrassen.pm,v 1.11 2004/07/21 23:57:45 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::MultiStrassen;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 
 package MultiStrassen;
 use strict;
@@ -88,10 +88,16 @@ sub reload {
     $self->read_data;
 }
 
-sub read_data {
+sub reset_data {
     my $self = shift;
     $self->{Data} = [];
     $self->{FirstIndex} = [];
+    $self->{File} = [];
+}
+
+sub read_data {
+    my $self = shift;
+    $self->reset_data;
     for (@{ $self->{SubObj} }) {
 	if (defined $_->{File}) {
 	    push @{$self->{File}}, $_->file;

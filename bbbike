@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.136 2004/07/04 22:15:14 eserte Exp eserte $
+# $Id: bbbike,v 3.137 2004/07/22 00:30:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -24,6 +24,8 @@ use lib ("$FindBin::RealBin",
 	 "$FindBin::RealBin/images",
 	 "$FindBin::RealBin/lib",
 	);
+# To create the Devel::Size output, start bbbike with:
+#     env BBBIKE_DEBUG=Devel::Size ./bbbike | & grep size
 BEGIN { eval 'use BBBikeDebug' if $ENV{BBBIKE_DEBUG} }
 
 BEGIN {
@@ -57,7 +59,16 @@ use Config;
 #  		Devel::Peek::mstat();
 #  	    }
 #  	}
-#      } else {
+#      } elsif ($ENV{BBBIKE_DEBUG} =~ /devel::size/i &&
+#		eval 'require Devel::Size; 1') {
+#  	eval q{
+#	    sub mymstat {
+#		my $time = defined &Tk::timeofday ? Tk::timeofday() : time;
+#  		printf STDERR "%-30s: %.2f\n", "@_", $time-$BBBikeDebug::start;
+#		print "size=".Devel::Size::total_size(\%main::) . " (@_)\n";
+#	    }
+#       }
+#      } else { 
 #  	eval q{
 #  	    sub mymstat {
 #  		my $time = defined &Tk::timeofday ? Tk::timeofday() : time;
@@ -223,7 +234,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.136 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.137 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
