@@ -477,7 +477,12 @@ remove_nextruns:
 	rm -f .nextrun_*
 
 # checks
-check:	.check_strassen1 .check_strassen2 \
+check:	report-checks do-checks
+
+report-checks:
+	@echo Now doing checks...
+
+do-checks:	.check_strassen1 .check_strassen2 \
 	.check_plaetze1 .check_plaetze2 .check_strassen_plaetze_unique \
 	.check_hoehe \
 	.check_ampeln .check_gesperrt1 .check_gesperrt2 \
@@ -642,9 +647,10 @@ check-disabled:	.check_label
 		-against strassen -against landstrassen
 	@touch $@
 
-.check_brunnels:	brunnels strassen landstrassen landstrassen2
+.check_brunnels:	brunnels strassen landstrassen landstrassen2 wasserstrassen wasserumland wasserumland2
 	$(CHECK_NEIGHBOUR) -type standard -data brunnels \
-	    -against strassen -against landstrassen -against landstrassen2
+	    -against strassen -against landstrassen -against landstrassen2 \
+	    -against wasserstrassen -against wasserumland -against wasserumland2
 	@touch $@
 
 .check_exits:	exits \
