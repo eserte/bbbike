@@ -265,11 +265,21 @@ if (!Getopt::Long::GetOptions("from=s" => \$frommap,
 			     )) {
     usage();
 }
-while(<>) {
-    chomp;
-    my $c = $_;
+
+my $conv = sub {
+    my $coord = shift;
     print join(",", $Karte::map{$frommap}->map2map($Karte::map{$tomap},
-						   split/,/, $c)), "\n";
+						   split/,/, $coord)), "\n";
+};
+
+if (@ARGV) {
+    $conv->(shift);
+} else {
+    while(<>) {
+	chomp;
+	my $c = $_;
+	$conv->($c);
+    }
 }
 
 sub usage {
