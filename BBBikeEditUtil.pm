@@ -40,10 +40,10 @@ sub get_orig_files {
 	}
     }
     closedir DIR;
-    my $fr_file = "$FindBin::RealBin/misc/fragezeichen-orig";
-    if (-e $fr_file) {
- 	push @files, $fr_file;
-    }
+#XXXdel:    my $fr_file = "$FindBin::RealBin/misc/fragezeichen-orig";
+#     if (-e $fr_file) {
+#  	push @files, $fr_file;
+#     }
     sort @files;
 }
 
@@ -61,7 +61,7 @@ sub get_generated_files {
 	}
     }
     closedir DIR;
-    for my $misc_file (qw(fragezeichen zebrastreifen)) {
+    for my $misc_file (qw(zebrastreifen)) {
 	my $file = "$FindBin::RealBin/misc/$misc_file";
 	if (-e $file) {
 	    push @files, $file;

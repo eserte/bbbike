@@ -630,9 +630,10 @@ sub _get_nets {
     }
     if ($str_draw{'fragezeichen'}) {
 	eval {
+	    push @netz, "fragezeichen";
+#XXX del:
 	    # XXX don't hardcode path
-	    push @netz,
-		new Strassen "/home/e/eserte/src/bbbike/misc/fragezeichen";
+#		new Strassen "/home/e/eserte/src/bbbike/misc/fragezeichen";
 	};
 	warn $@ if $@;
     }
