@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.86 2003/07/06 20:20:36 eserte Exp eserte $
+# $Id: Makefile.PL,v 1.87 2003/09/02 21:44:48 eserte Exp eserte $
 
 BEGIN {
     $^W = 0;
@@ -390,6 +390,11 @@ EOF
     if (-r "t/Makefile") {
 	$out .= <<'EOF';
 	cd t && $(MAKE) test
+EOF
+    }
+    if (-r "ext/Makefile") {
+	$out .= <<'EOF';
+	cd ext && $(MAKE) test
 EOF
     }
     if (-r "projects/www.radzeit.de/Makefile") {

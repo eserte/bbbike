@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.53 2003/08/30 18:47:58 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.54 2003/09/02 21:38:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -586,7 +586,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.53 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.54 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -2144,15 +2144,24 @@ sub make_netz {
     if (!$net) {
 	my $str = get_streets();
 	$net = new StrassenNetz $str;
+	# XXX This change should also go into radlstadtplan.cgi!!!
 	if (defined $search_algorithm && $search_algorithm eq 'C-A*-2') {
 	    $net->use_data_format($StrassenNetz::FMT_MMAP);
-	}
-	# XXX überprüfen, ob sich der Cache lohnt...
-	# evtl. mit IPC::Shareable arbeiten (Server etc.)
-	$net->make_net(UseCache => 1);
-	if (!$lite) {
+	    # make_net with initial -blocked is more performant
+	    $net->make_net(-blocked => "gesperrt",
+			   -blockedtype => [qw(einbahn sperre)],
+			  );
 	    $net->make_sperre('gesperrt',
-			      Type => [qw(einbahn sperre wegfuehrung)]);
+			      Type => [qw(wegfuehrung)],
+			     );
+	} else {
+	    # XXX überprüfen, ob sich der Cache lohnt...
+	    # evtl. mit IPC::Shareable arbeiten (Server etc.)
+	    $net->make_net(UseCache => 1);
+	    if (!$lite) {
+		$net->make_sperre('gesperrt',
+				  Type => [qw(einbahn sperre wegfuehrung)]);
+	    }
 	}
     }
     $net;

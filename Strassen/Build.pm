@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Build.pm,v 1.13 2003/08/19 23:00:51 eserte Exp eserte $
+# $Id: Build.pm,v 1.14 2003/09/02 21:42:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::Build;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz::CNetFile;
 
@@ -59,7 +59,9 @@ sub create_mmap_net {
 
     if ($args{-blocked}) {
 	warn "Remove blocked streets...\n" if $VERBOSE;
-	$self->StrassenNetz::make_sperre($args{-blocked}, Type => [qw(einbahn sperre)]);
+	my $blocked_type = $args{-blockedtype} || [qw(einbahn sperre)];
+	$self->StrassenNetz::make_sperre($args{-blocked},
+					 Type => $blocked_type);
     }
 
     use constant SIZEOF_LONG => 4; # XXX only for intel

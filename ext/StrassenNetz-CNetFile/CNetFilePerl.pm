@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CNetFilePerl.pm,v 1.13 2003/08/24 23:16:49 eserte Exp eserte $
+# $Id: CNetFilePerl.pm,v 1.14 2003/09/02 21:41:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
@@ -20,7 +20,8 @@ use Strassen::StrassenNetzHeavy; # XXX hack
 use strict;
 
 sub make_net {
-    my($self) = @_;
+    my($self, %args) = @_;
+    # XXX $self->get_cachefile should take file in -blocked into account!
     my $cache_prefix = Strassen::Util::get_cachefile($self->get_cachefile);
 
     require Strassen::Build;
@@ -28,8 +29,13 @@ sub make_net {
     require Storable;
 
     my $try = 0;
-# XXX do not hardcode "gesperrt"
-    $self->create_mmap_net_if_needed($cache_prefix, -blocked => "gesperrt");
+    my %args2;
+    while(my($k,$v) = each %args) {
+	if ($k =~ /^-(blocked|blockedtype)$/) {
+	    $args2{$k} = $v;
+	}
+    }
+    $self->create_mmap_net_if_needed($cache_prefix, %args2);
     $self->mmap_net_file($self->filename_c_net_mmap($cache_prefix));
 
     my $coord2ptr_cache_file = $self->get_cachefile . "_coord2ptr";
@@ -63,15 +69,33 @@ sub adjust_to_nearest {
 # XXX possible to build another sperre net on top of an existing.
 # XXX Solution: provide another hash-based sperre net which will be used in
 # XXX Strassen::Inline.
+# Preserve old Wegfuehrung.
 sub make_sperre {
     my($self, $sperre_file, %args) = @_;
     if (exists $args{Type}) {
+	if ($args{Type} eq 'all') {
+	    $args{Type} = ['wegfuehrung', 'sperre', 'einbahn'];
+	}
 	$args{Type} = [$args{Type}] unless ref $args{Type} eq 'ARRAY';
 	if (grep { $_ eq 'wegfuehrung' } @{ $args{Type} }) {
 	    my %args = %args;
 	    $args{Type} = ['wegfuehrung'];
+	    my $old_wegfuehrung = $self->{Wegfuehrung};
 	    $self->make_sperre_1($sperre_file, %args);
-	    $self->{Wegfuehrung} = $self->convert_wegfuehrung($self->{Wegfuehrung});
+	    $self->{Wegfuehrung} = $self->convert_wegfuehrung($self->{Wegfuehrung}, $old_wegfuehrung);
+	}
+	if (grep { $_ =~ /^(sperre|einbahn)$/ } @{ $args{Type} }) {
+	    my $str_obj = (UNIVERSAL::isa($sperre_file, "Strassen")
+			   ? $sperre_file
+			   : Strassen->new($sperre_file)
+			  );
+	    my $net = StrassenNetz->new($str_obj);
+	    $net->make_net_cat(-obeydir => 1); # Caching?
+	    if ($self->{BlockingNet}) {
+		$self->{BlockingNet}->merge($net);
+	    } else {
+		$self->{BlockingNet} = $net;
+	    }
 	}
     }
 }
@@ -96,8 +120,8 @@ sub convert_net {
 }
 
 sub convert_wegfuehrung {
-    my($self, $wegfuehrung) = @_;
-    my $new_wegf = {};
+    my($self, $wegfuehrung, $old_wegfuehrung) = @_;
+    my $new_wegf = $old_wegfuehrung || {};
     while(my($k1,$v) = each %$wegfuehrung) {
 	my $new_node = [];
 	for my $elem (@$v) {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: db_impl.t,v 1.9 2003/01/08 20:58:45 eserte Exp eserte $
+# $Id: db_impl.t,v 1.10 2003/08/07 21:31:54 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002, 2003 Slaven Rezic. All rights reserved.
@@ -26,6 +26,7 @@ use Strassen::Build;
 use StrassenNetz::CNetFile;
 use Storable;
 use FindBin;
+use Getopt::Long;
 require Strassen::Inline2;
 Inline->init;
 
@@ -56,6 +57,13 @@ BEGIN {
 }
 
 BEGIN { plan tests => $tests }
+
+if (!GetOptions("v+" => \$v)) {
+    die "usage: $0 [-v]";
+}
+if ($v > 0) {
+    Strassen::set_verbose(1);
+}
 
 $algorithm = "C-A*-2";
 
@@ -92,8 +100,13 @@ $net = StrassenNetz->new($s);
 $net->use_data_format($StrassenNetz::FMT_MMAP);
 #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$net->can("make_net")],[])->Deparse(1)->Indent(1)->Useqq(1)->Dump; # XXX
 
-$net->make_net();
-$net->make_sperre("gesperrt", Type => [qw(einbahn sperre wegfuehrung)]);
+if (0) {
+    $net->make_net;
+    $net->make_sperre("gesperrt", Type => [qw(einbahn sperre wegfuehrung)]);
+} else {
+    $net->make_net(-blocked => "gesperrt");
+    $net->make_sperre("gesperrt", Type => [qw(wegfuehrung)]);
+}
 
 ok($net->reachable($start_coord));
 ok($net->reachable($goal1_coord));

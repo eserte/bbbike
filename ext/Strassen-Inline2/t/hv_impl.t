@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: hv_impl.t,v 1.13 2003/01/08 20:58:50 eserte Exp eserte $
+# $Id: hv_impl.t,v 1.14 2003/08/07 21:31:57 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -27,6 +27,7 @@ use lib ($root, "$root/lib", "$root/data");
 use lib @lib::ORIG_INC;
 use Strassen;
 use FindBin;
+use Getopt::Long;
 require Strassen::Inline;
 Inline->init;
 
@@ -40,7 +41,12 @@ BEGIN {
     }
 }
 
-my $v = shift;
+if (!GetOptions("v+" => \$v)) {
+    die "usage: $0 [-v]";
+}
+if ($v > 0) {
+    Strassen::set_verbose(1);
+}
 
 use vars qw($algorithm);
 $algorithm = "C-A*";
@@ -83,7 +89,7 @@ ok(!(!@arr || ref $arr[0] ne 'ARRAY'));
 	ok(@arr);
 	ok(ref $arr[0] eq 'ARRAY');
 	#XXX use Devel::Peek;Dump($arr[0]);
-	if ($v) {
+	if ($v > 2) {
 	    require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$fixed_start, $fixed_goal, \@arr, scalar @{ $arr[0] }],[])->Indent(1)->Useqq(1)->Dump; # XXX
 	}
 

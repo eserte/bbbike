@@ -1,4 +1,4 @@
-// $Id: bbbike_result.js,v 1.9 2003/07/23 05:59:52 eserte Exp $
+// $Id: bbbike_result.js,v 1.10 2003/09/02 22:02:05 eserte Exp $
 // (c) 2003 Slaven Rezic. All rights reserved.
 
 function test_temp_blockings_set() {
@@ -57,7 +57,7 @@ function show_map(bbbike_html_dir) {
     if (imagetype_value == 'ascii' ||
 	imagetype_value == 'mapserver' ||
 	imagetype_value == 'berlinerstadtplan')
-	addwindowparam += ",scrollbars";
+	addwindowparam += ",scrollbars,resizable"; // XXX sp?
     var x_y = geom.split("x");
 // XXX height/width an aktuelle Werte anpassen
 // XXX bei innerHeight/Width wird bei Netscape4 leider java gestartet?! (check!)

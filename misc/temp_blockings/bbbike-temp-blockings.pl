@@ -162,4 +162,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Rixdorfer Straße, Alt-Mariendorf, Mariendorfer Damm, Ullsteinstraße wegen Rundkurs Sportveranstaltung gesperrt. Dauer: 07.09.2003 zwischen 08.30 Uhr und 16.00 Uhr',
        type  => 'gesperrt',
      },
+     { from  => 1062540000, # 2003-09-03 00:00
+       until => 1062972000, # 2003-09-08 00:00
+       file  => 'globalcity.bbd',
+       text  => 'Global City (05.09.03 - 07.09.03): Kurfürstendamm/Tauentzienstr. von Uhlandstr. bis Passauer Str. gesperrt',
+       type  => 'gesperrt',
+     },
     );

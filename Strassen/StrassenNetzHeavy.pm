@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetzHeavy.pm,v 1.13 2003/07/22 19:55:39 eserte Exp $
+# $Id: StrassenNetzHeavy.pm,v 1.14 2003/09/02 21:45:28 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -766,6 +766,21 @@ sub merge_net_cat {
 	    my($c1,$c2) = ($c->[$i-1], $c->[$i]);
 	    $net->{$c1}{$c2} = $cat_hin   if $cat_hin   ne "";
 	    $net->{$c2}{$c1} = $cat_rueck if $cat_rueck ne "";
+	}
+    }
+}
+
+# Merge a net from another StrassenNetz object to $self.
+sub merge {
+    my($self, $another_self, %args) = @_;
+    my $overwrite   = $args{-overwrite};
+    my $net         = $self->{Net};
+    my $another_net = $another_self->{Net};
+    while(my($k1,$v1) = each %{ $another_net }) {
+	while(my($k2,$v2) = each %$v1) {
+	    if (!exists $net->{$k1}{$k2} || $overwrite) {
+		$net->{$k1}{$k2} = $v2;
+	    }
 	}
     }
 }

@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: shapefile.t,v 1.9 2003/05/17 00:39:13 eserte Exp $
+# $Id: shapefile.t,v 1.10 2003/09/02 21:56:44 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
 #
 # Mail: slaven@rezic.de
 # WWW:  http://bbbike.sourceforge.net
@@ -13,11 +13,12 @@
 
 use Test;
 
-BEGIN { plan tests => 3 }
+BEGIN { plan tests => 4 }
 
 use ESRI::Shapefile;
 use lib ("..", "../..");
 use BBBikeESRI;
+use File::Basename;
 
 if (-r "/cdrom2/arcview/shapes/buf_grue.dbf") {
     my $shapefile = new ESRI::Shapefile;
@@ -45,6 +46,20 @@ if (-d $testdir) {
     ok(1);
 } else {
     skip(1,1);
+}
+
+$mapserverdir = "$ENV{HOME}/src/bbbike/mapserver/brb/data";
+if (-d $mapserverdir) {
+    for my $f (glob("$mapserverdir/*.shp")) {
+	warn "Check $f...\n";
+	$f =~ s/\.shp$//;
+	my $shapefile = new ESRI::Shapefile;
+	$shapefile->set_file($f);
+	$shapefile->dump_bbd("/tmp/" . basename($f));
+    }
+    ok(1);
+} else {
+    skip(1,);
 }
 
 __END__

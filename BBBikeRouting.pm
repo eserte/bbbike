@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.24 2003/08/25 23:09:28 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.25 2003/09/02 21:42:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -443,6 +443,9 @@ sub search {
 
     my $context = $self->Context;
 
+    if ($context->Verbose > 1) {
+	Strassen::set_verbose(1);
+    }
     my($res) = $self->Net->search
 	($start_coord, $self->Goal->Coord,
 	 Tragen => ($context->Vehicle eq 'bike'),

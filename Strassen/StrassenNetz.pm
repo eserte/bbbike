@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.30 2003/08/25 23:05:45 eserte Exp eserte $
+# $Id: StrassenNetz.pm,v 1.31 2003/09/02 21:37:17 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -367,6 +367,7 @@ struct('StrassenNetz::SearchContext' =>
 	HasAbbiegen => "\$",
 	Statistics => "\$",
 	UserDefPenaltySub => "\$",
+	HasBlocked => "\$",
        }
       );
 
@@ -380,6 +381,21 @@ sub build_penalty_code {
 	$penalty_code .= '
                     my $next_node = $successor;
                     my $last_node = $min_node;
+';
+    }
+    if ($sc->HasBlocked) {
+	$penalty_code .= '
+                    if (defined $last_node) {
+                        if (exists $blocked_net->{$last_node}{$next_node}) {
+			    my $cat = $blocked_net->{$last_node}{$next_node};
+			    if ($cat =~ /^' . BLOCKED_COMPLETE . '/) {
+			        return 40_000_000; # nearly infinity
+			    } # XXX support for other categories missing
+			} elsif (exists $blocked_net->{$next_node}{$last_node} &&
+				 $blocked_net->{$next_node}{$last_node} =~ /^' . BLOCKED_COMPLETE . '/) {
+			    return 40_000_000;
+			}
+		    }
 ';
     }
     if ($sc->HasAmpeln && $sc->Algorithm ne 'srt') {
@@ -1196,8 +1212,10 @@ sub search {
 		    exists $args{UnlitStreets} ||
 		    exists $args{Steigung}  ||
 		    exists $args{Abbiegen}  ||
-		    exists $args{Tragen}
+		    exists $args{Tragen}    ||
+		    exists $self->{BlockingNet}
 		   );
+    $sc->HasBlocked(exists $self->{BlockingNet});
     $sc->HasAmpeln(exists $args{Ampeln});
     if ($sc->HasAmpeln) {
 	$sc->AmpelPenalty((exists $args{Ampeln}->{Penalty}
@@ -1276,6 +1294,11 @@ sub search {
     if (exists $args{Abbiegen}) {
 	$category_order = $args{Abbiegen}->{Order} || die "No order";
 	$abbiegen_penalty = $args{Abbiegen}->{Penalty} || die "No penalty";
+    }
+
+    my($blocked_net);
+    if (exists $self->{BlockingNet}) {
+	$blocked_net = $self->{BlockingNet}->{Net};
     }
     my $user_def_penalty_sub = $args{UserDefPenaltySub};
 

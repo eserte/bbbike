@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: temp_blockings_dates.t,v 1.2 2003/08/30 21:45:55 eserte Exp $
+# $Id: temp_blockings_dates.t,v 1.3 2003/09/02 19:28:50 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -29,6 +29,13 @@ my @Today_and_Now = Today_and_Now;
 
 for my $test_data
     (
+     [<<EOF,
+Global City (05.09.03 - 07.09.03): Kurfürstendamm/Tauentzienstr. von Uhlandstr. bis Passauer Str. gesperrt
+EOF
+      Mktime(2003,9,5,0,0,0),
+      Mktime(2003,9,8,0,0,0),
+     ],
+
      [<<EOF,
 Umfangreiche Bauarbeiten imBereich der AS Spandauer Damm
 Sperrung der Einfahrt zur BAB in Richtung Süd sowie der Ausfahrt in Richtung Nord
@@ -159,8 +166,9 @@ EOF
     ) {
 	my $btxt = shift @$test_data;
 	my $errors = 0;
+	my($start_date, $end_date, $prewarn_days, $rx_matched);
 	eval {
-	    my($start_date, $end_date, $prewarn_days)
+	    ($start_date, $end_date, $prewarn_days, $rx_matched)
 		= BBBikeEdit::temp_blockings_editor_parse_dates($btxt);
 	    # Delta 1s for Today_and_Now tests
 	    ok(abs($start_date - shift @$test_data) <= 1) or $errors++;
@@ -171,7 +179,10 @@ EOF
 	    diag $@;
 	    $errors++;
 	}
-	diag $btxt if $errors;
+	diag "$btxt\nParsed: " . scalar(localtime($start_date)) . " - " .
+	    scalar(localtime($end_date)) . ", $prewarn_days prewarn days\n" .
+	    "Regular expression match $rx_matched"
+	    if $errors;
     }
 
 __END__

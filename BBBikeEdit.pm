@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.57 2003/07/23 00:26:04 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.58 2003/09/02 19:28:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003 Slaven Rezic. All rights reserved.
@@ -2947,6 +2947,7 @@ sub temp_blockings_editor_parse_dates {
     my $date_time_to_epoch = sub {
 	my($S,$M,$H,$d,$m,$y) = @_;
 	$m--;
+	if ($y < 100) { $y += 2000 }
 	$y-=1900;
 	my $day_inc = 0;
 	if ($H == 24) {
@@ -2970,28 +2971,31 @@ sub temp_blockings_editor_parse_dates {
 	$time;
     };
 
-    my($new_start_time, $new_end_time, $prewarn_days);
+    my($new_start_time, $new_end_time, $prewarn_days, $rx_matched);
 
-    my $date_rx      = qr/(\d{1,2})\.(\d{1,2})\.(20\d{2})/;
+    my $date_rx      = qr/(\d{1,2})\.(\d{1,2})\.((?:20)?\d{2})/;
     my $time_rx      = qr/(\d{1,2})[\.:](\d{2})\s*Uhr/;
     my $full_date_rx = qr/$date_rx\D+$time_rx/;
     my $ab_rx        = qr/(?:ab[:\s]+|Dauer[:\s]+|vom[:\s]+)/;
-    my $bis_und_rx   = qr/(?:bis|und)(?:\s+(?:ca\.|voraussichtlich|zum))?/;
+    my $bis_und_rx   = qr/(?:bis|und|\s*-\s*)(?:\s+(?:ca\.|voraussichtlich|zum))?/;
 
     my($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2);
     # XXX use $full_date_rx etc. (after testing rxes!)
     if (($d1,$m1,$y1, $H1,$M1, $H2,$M2) = $btxt =~
-	/(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*$bis_und_rx\s*(\d{1,2})\.(\d{2})\s*Uhr/) {
+	/(\d{1,2})\.(\d{1,2})\.((?:20)?\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*$bis_und_rx\s*(\d{1,2})\.(\d{2})\s*Uhr/) {
 	$new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
 	$new_end_time   = $date_time_to_epoch->(0,$M2,$H2,$d1,$m1,$y1);
+	$rx_matched     = 1;
     } elsif (($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2) = $btxt =~
 	     /$full_date_rx\s*$bis_und_rx\s*$date_rx/) {
 	$new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
 	$new_end_time   = $date_time_to_epoch->(0,  0, 24,$d2,$m2,$y2);
+	$rx_matched     = 2;
     } elsif (($d1,$m1,$y1, $H1,$M1, $d2,$m2,$y2, $H2,$M2) = $btxt =~
-	     /(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*$bis_und_rx\s*(\d{1,2})\.(\d{1,2})\.(20\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr/) {
+	     /(\d{1,2})\.(\d{1,2})\.((?:20)?\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr\s*$bis_und_rx\s*(\d{1,2})\.(\d{1,2})\.((?:20)?\d{2})\D+(\d{1,2})\.(\d{2})\s*Uhr/) {
 	$new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
 	$new_end_time   = $date_time_to_epoch->(0,$M2,$H2,$d2,$m2,$y2);
+	$rx_matched     = 3;
 #      } elsif (($d2,$m2,$y2, $H2,$M2) = $btxt =~ /bis\s+$full_date_rx/) {
 #  	$new_start_time = time; # now
 #  	$prewarn_days = 0;
@@ -3006,12 +3010,18 @@ sub temp_blockings_editor_parse_dates {
 	    $H1 = 0 if !defined $H1;
 	    $M1 ||= 0;
 	    $new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
+	} elsif (($d1,$m1,$y1, $H1,$M1) = $btxt =~
+	    /$date_rx(?:\D+$time_rx)?\s*-/) {
+	    $H1 = 0 if !defined $H1;
+	    $M1 ||= 0;
+	    $new_start_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
 	}
 	if (($d1,$m1,$y1, $H1,$M1) = $btxt =~
 	    /$bis_und_rx\s*$date_rx(?:\D+$time_rx)?/) {
 	    $H1 = 24 if !defined $H1;
 	    $M1 ||= 0;
 	    $new_end_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
+	    $rx_matched     = 4;
 	} elsif ((my $month, $y1) = $btxt =~
 		 /$bis_und_rx\s*($month_rx)\s+(\d+)/i) {
 	    $H1 = 24;
@@ -3019,6 +3029,7 @@ sub temp_blockings_editor_parse_dates {
 	    $m1 = $month_to_num{$month};
 	    $d1 = month_days($m1, $y1);
 	    $new_end_time = $date_time_to_epoch->(0,$M1,$H1,$d1,$m1,$y1);
+	    $rx_matched     = 5;
 	} elsif (my($months) = $btxt =~
 		 /für\s+(?:ca\.|voraussichtlich)\s+(\d+)\s+Monat/i) {
 	    my @l = localtime $new_start_time;
@@ -3028,6 +3039,9 @@ sub temp_blockings_editor_parse_dates {
 		$l[5]++;
 	    }
 	    $new_end_time = Time::Local::timelocal(@l);
+	    $rx_matched     = 6;
+	} else {
+	    $rx_matched     = 7;
 	}
     }
 
@@ -3035,7 +3049,7 @@ sub temp_blockings_editor_parse_dates {
 	$new_start_time = time;
 	$prewarn_days = 0;
     }
-    ($new_start_time, $new_end_time, $prewarn_days);
+    ($new_start_time, $new_end_time, $prewarn_days, $rx_matched);
 }
 
 # XXX further implementation needed:
