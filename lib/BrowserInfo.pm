@@ -112,6 +112,8 @@ sub set_info {
 			      $q->user_agent('Nokia3100') ||
 			      $q->user_agent('Nokia3200') ||
 			      $q->user_agent('Nokia6620') ||
+			      $q->user_agent('Nokia7250') ||
+			      $q->user_agent('Nokia7250I') ||
 			      $q->user_agent('NokiaN-Gage') ||
 			      $q->user_agent('SEC_SGHV200') ||
 			      $q->user_agent('SonyEricssonP800') ||
@@ -166,7 +168,7 @@ sub set_info {
     } elsif ($q->user_agent('SonyEricssonP800') ||
 	     $q->user_agent('SonyEricssonP900')) { # XXX sizes for P900 guessed
 	$self->{'display_size'} = [208,320]; # flip open, with flip closed: 208x144
-    } elsif ($q->user_agent('SonyEricssonP610')) {
+    } elsif ($q->user_agent('SonyEricssonT610')) {
 	$self->{'display_size'} = [125,95]; # visible screen size
     } elsif ($q->user_agent('TriumEclipse')) { # XXX
 	$self->{'display_size'} = [143,120];
@@ -201,9 +203,11 @@ sub set_info {
 	     Nokia5210 => [84, 48],
 	     Nokia6310 => [96, 65],
 	     Nokia7110 => [96, 65],
-	     Nokia3100 => [124, 128], # space for horiz scrollbar
-	     Nokia3200 => [124, 128], # space for horiz scrollbar
-	     Nokia6620 => [124, 128], # space for horiz scrollbar
+	     Nokia3100 => [124, 128], # space for vert scrollbar
+	     Nokia3200 => [124, 128], # space for vert scrollbar
+	     Nokia6620 => [124, 128], # space for vert scrollbar
+	     Nokia7250 => [124, 128], # space for vert scrollbar ?
+	     Nokia7250I=> [124, 128], # space for vert scrollbar ?
 	     Nokia6610 => [128, 128],
 	     Nokia6100 => [128, 90], # XXX ca.
 	     Nokia3650 => [170, 144], # visible size
