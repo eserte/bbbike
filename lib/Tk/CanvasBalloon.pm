@@ -1,14 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: CanvasBalloon.pm,v 1.9 2001/12/11 17:28:22 eserte Exp $
+# $Id: CanvasBalloon.pm,v 1.10 2004/03/28 18:23:38 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998, 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998, 2001, 2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
+# Mail: slaven@rezic.de
 # WWW:  http://user.cs.tu-berlin.de/~eserte/
 #
 
@@ -21,7 +21,7 @@ use vars qw($VERSION @ISA $latency $MEMORY_LEAK_WORKAROUND);
 use constant XDELTA => 7;
 use constant YDELTA => 7;
 
-$VERSION = '0.07';
+$VERSION = '0.08';
 
 Construct Tk::Widget 'CanvasBalloon';
 @ISA = qw(Tk::Toplevel);
@@ -33,6 +33,9 @@ sub Populate {
     my ($w, $args) = @_;
 
     $w->SUPER::Populate($args);
+
+    $w->{'screenwidth'} = $w->screenwidth;
+    $w->{'screenheight'} = $w->screenheight;
 
     $w->overrideredirect(1);
     $w->withdraw;
@@ -55,7 +58,9 @@ sub Populate {
     my $ml = $m->Label(-bd => 0,
 		       -padx => 0,
 		       -pady => 0,
-		       -text => $args->{-message});
+		       -text => $args->{-message},
+		       -wraplength => $w->{screenwidth} - 20,
+		       -justify => "left");
     $w->Advertise("message" => $ml);
     $ml->pack(-side => "left",
 	      -anchor => "w",
@@ -65,9 +70,6 @@ sub Populate {
 	      -pady => 3);
     $a->pack(-fill => "both", -side => "left");
     $m->pack(-fill => "both", -side => "left");
-
-    $w->{'screenwidth'} = $w->screenwidth;
-    $w->{'screenheight'} = $w->screenheight;
 
     $w->bind('<Any-Enter>' => sub {
 		 $w->Pos(1);

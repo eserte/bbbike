@@ -1,11 +1,12 @@
 #
-# $Id: Makefile,v 1.95 2004/03/22 23:37:33 eserte Exp $
+# $Id: Makefile,v 1.96 2004/03/28 18:04:13 eserte Exp eserte $
 #
 
 MISCDIR=		../misc
 MISCSRCDIR=		../miscsrc
 
-BERLINMAP2HAFAS=	${MISCSRCDIR}/berlinmap2hafas -strict
+#XXX del:
+#BERLINMAP2HAFAS=	${MISCSRCDIR}/berlinmap2hafas -strict
 HAFAS2HAFAS=		${MISCSRCDIR}/hafas2hafas -strict
 CONVERT2HAFAS=		${MISCSRCDIR}/convert2hafas -strict
 CHECK_POINTS=		${MISCSRCDIR}/check_points
@@ -64,6 +65,9 @@ strassen:	.strassen.tmp plaetze
 	-@$(WRITEABLE) $@
 	cat $> > $@
 	-@$(READONLY) $@
+
+#strassen-orig:	oldcoord/strassen-orig
+#	$(CONVERT2HAFAS) -frommap B -keepcomment $> > $@
 
 .strassen.tmp: strassen-orig
 	$(CONVERT2HAFAS) strassen-orig > .strassen.tmp
@@ -516,7 +520,8 @@ check-line-lengths:	.check_line_lengths
 	@touch $@
 
 count-streets:
-	cut -f1 -d"	" strassen | sort -u | wc -l
+	@echo -n "Berlin:  "; cut -f1 -d"(" strassen | sort -u | wc -l
+	@echo -n "Potsdam: "; fgrep "(Potsdam)" landstrassen | cut -f1 -d"(" | sort -u | wc -l
 
 check-dates:	.check_dates
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Globe.pm,v 1.9 2001/11/26 09:39:48 eserte Exp $
+# $Id: Globe.pm,v 1.9 2001/11/26 09:39:48 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -81,7 +81,7 @@ sub read_binary_file {
     open(F, $self->{BinaryFile})
 	or die "Can't open $self->{BinaryFile}: $!";
     for my $y (0 .. $num_rows-1) {
-	read F, my $buf, $num_cols*2;
+	read F, my($buf), $num_cols*2;
 	my $row = [];
 	for my $x (0 .. $num_cols-1) {
 	    my $h = unpack("s", substr($buf, $x*2, 2));

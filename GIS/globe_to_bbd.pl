@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: globe_to_bbd.pl,v 1.3 2000/07/26 00:18:36 eserte Exp $
+# $Id: globe_to_bbd.pl,v 1.3 2000/07/26 00:18:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.

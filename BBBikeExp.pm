@@ -234,7 +234,7 @@ sub BBBikeExp::bbbikeexp_remove_data {
 	}
 	delete $exp_str{$abk};
 	# XXX no! main::plot("str", $abk, -draw => 0);
-    } elsif ($abk eq 'p') {
+    } elsif ($type eq 'p') {
 	my $i = 0;
 	for (@defs_p) {
 	    if ($_->[0] eq $abk) {

@@ -97,6 +97,8 @@ specified block. Block directives are markes as such:
  ... data lines
  #: directive_name ^^^
 
+XXX make directive_name before ^^^ optional? XXX
+
 The C<v> and C<^> markers could be repeated an indefinite number of
 times, but at least three times.
 
@@ -141,6 +143,11 @@ specifies an additional comment. An alias for C<unsure:> is C<XXX>.
 =item C<section: I<section name>>
 
 The next block is part of a named section. Sections may be nested.
+
+=item C<append_comment: I<comment>>
+
+Useful for preprocessing bbd data files to add a comment to each
+record in the block.
 
 =back
 

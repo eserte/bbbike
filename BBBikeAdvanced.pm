@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.90 2004/03/22 23:40:14 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.91 2004/03/26 22:08:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1686,6 +1686,9 @@ sub reload_new_modules {
 		    }
 		}
 		close SAVEMAIN;
+		if (!$found) {
+		    print STDERR "WARNING: RELOADER_START tag not found!\n";
+		}
 		print STDERR "Reloading main...\n";
 		eval { do $tmpfile };
 		if (!$@) {
@@ -1829,7 +1832,7 @@ sub buttonpoint {
 		}
 		# XXX verallgemeinern!!!
 		my $crossing = "?";
-		if ($edit_mode) {
+		if ($edit_mode) { # XXX $edit_normal_mode too?
 		    all_crossings();
 		}
 		if (exists $crossings->{$tags[1]}) {
@@ -2112,7 +2115,7 @@ sub switch_edit_standard_mode {
     $map_mode = MM_BUTTONPOINT();
     $use_current_coord_prefix = 0;
     $coord_prefix = "";
-#XXX    set_edit_mode(0);
+    set_edit_mode('std-no-orig');
     $do_flag{'start'} = $do_flag{'ziel'} = 1; # XXX better solution
     set_remember_plot() unless $init;
 #    $ampelstatus_label->configure(-text => '') if $ampelstatus_label;

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.66 2004/03/22 23:48:07 eserte Exp $
+# $Id: bbbike.cgi,v 6.66 2004/03/22 23:48:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -1325,7 +1325,7 @@ sub choose_form {
  	print <<EOF;
 <table>
 <tr>
-<td valign="top">@{[ blind_image(420,1) ]}<br>Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 3100 von 10000 Berliner Stra&szlig;en sowie ca. 120 Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
+<td valign="top">@{[ blind_image(420,1) ]}<br>Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 3200 von 10000 Berliner Stra&szlig;en sowie ca. 120 Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
 Nebenstra&szlig;en). Bei nicht erfassten Straﬂen wird automatisch die
 n‰chste bekannte verwendet. Hausnummern k&ouml;nnen nicht angegeben werden.<br>
 </td>

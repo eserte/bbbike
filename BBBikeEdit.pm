@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.66 2004/03/22 23:38:28 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.67 2004/03/26 22:09:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ package BBBikeEdit;
 package main;
 use strict;
 use vars qw($top $c $scale %font
-	    $special_edit $edit_mode 
+	    $special_edit $edit_mode $edit_normal_mode
 	    %str_draw %str_obj %str_file %p_file %p_draw %p_obj %ampeln
 	    $os $verbose %category_color @realcoords $progress
 	    $tmpdir $progname %tmpfiles);
@@ -117,6 +117,7 @@ sub radweg_edit_activate {
 sub radweg_edit_modus {
     require Radwege;
     $special_edit = 'radweg';
+#XXX utilize $edit_normal_mode?
     switch_edit_berlin_mode() if (!defined $edit_mode or $edit_mode ne 'b');
     radweg_open();
     unless ($str_draw{'s'}) {
@@ -466,6 +467,7 @@ sub ampel_edit_modus {
     $progress->InitGroup;
     require Ampelschaltung;
     $special_edit = 'ampel';
+#XXX utilize $edit_normal_mode?
     switch_edit_berlin_mode() if (!defined $edit_mode or $edit_mode ne 'b');
 
     IncBusy($top);
@@ -1608,6 +1610,7 @@ sub label_edit_toggle {
 
 sub label_edit_modus {
     $special_edit = 'label';
+#XXX utilize $edit_normal_mode?
     switch_edit_berlin_mode() if (!defined $edit_mode or $edit_mode ne 'b');
     unless ($str_draw{'s'}) {
 	plot('str','s', -draw => 1);
@@ -1719,6 +1722,7 @@ sub vorfahrt_edit_toggle {
 use vars qw($p_obj_vf);
 sub vorfahrt_edit_modus {
     $special_edit = 'vorfahrt';
+#XXX utilize $edit_normal_mode?
     switch_edit_berlin_mode() if (!defined $edit_mode or $edit_mode ne 'b');
     unless ($str_draw{'s'}) {
 	plot('str','s', -draw => 1);

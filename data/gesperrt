@@ -49,7 +49,7 @@ Knoten Märkische Allee	1 20115,11730 20014,11651
 Knoten Märkische Allee	1 20014,11651 20018,11698 19985,11739
 Gensinger Str./Alt-Friedrichsfelde	1 19005,11796 19144,11859 19283,11785
 Altstadt Köpenick	1 22196,4847 22377,4836 22383,4703 22472,4572 22502,4528 22396,4464
-Altstadt Köpenick	1 22093,4499 22196,4847
+Altstadt Köpenick	1 22093,4499 22138,4661 22196,4847
 Wuhletalstr.	1 20691,17463 20675,17515 20754,17672 20832,17824 20878,17842
 Knoten Märkische/Landsberger Allee	1 19175,14968 19496,15113 19567,15134 19694,15149 19735,15155
 Knoten Märkische/Landsberger Allee	1 19735,15155 19605,15073 19408,15007 19175,14968
@@ -110,6 +110,7 @@ Pannierstr.	1 12202,8895 12242,8972
 Stolzenfelsstr.	1 19468,8168 19425,8140 19333,8165 18957,8431 18738,8584
 Dönhoffstr.	1 18744,8638 18124,9056
 Bersarinplatz	1 13742,12538 13698,12544 13678,12571 13686,12611 13710,12633 13747,12642 13770,12617 13776,12571 13742,12538
+Petersburger Platz	1 13467,12978 13558,12766
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
 Burgstr.	1 10171,12769 10132,12941
 Schuckertdamm	1 777,14795 1348,14958 1488,14952
@@ -154,7 +155,6 @@ Kirchstr.	1 22196,4847 22234,4789 22243,4710
 Ontarioseestr.	1 18577,10023 18339,10048
 Degnerstr. (außer Tram)	1 16434,15580 16464,15665
 Bornitzstr. (trotz Radroute?)	1 15645,12864 15513,12856
-Wrangelstr. (Rollheimer)	2 11961,11055 11852,11102
 Landjägerstr.	1 22502,4528 22542,4485 22740,4415
 Henriette-Herz-Platz	1 10371,13006 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
@@ -203,6 +203,7 @@ Sybel/Waltzstr.	1 3883,10577 3800,10580 3744,10668 3734,10756
 Aßmannstr.	1 25039,5766 25030,5307
 Schönblicker Str.	1 31695,3635 31684,3701 31720,3734 31786,3723 31798,3659 31749,3629 31695,3635
 Bayerische Str.	1 4296,10004 4349,10247
+Knorrpromenade	1 14417,11640 14362,11493
 Hans-Thoma-Str.	1 -12151,-768 -12258,-768 -12323,-555
 Behlertstr.	1 -12237,-427 -12195,-469 -12066,-768
 Potsdamer Damm	2 -5717,-3655 -6229,-4018
@@ -254,8 +255,8 @@ Grunerstr. - Alexanderplatz (Straßentunnel)	3 10959,12629 11062,12710 11030,1274
 Dircksenstr. - Alexanderplatz (Straßentunnel)	3 11156,12581 11062,12710 11030,12741
 Alexanderplatz - Grunerstr. (Straßentunnel)	3 11030,12741 11062,12710 11134,12793
 Alexanderplatz - Dircksenstr. (Straßentunnel)	3 11030,12741 11062,12710 11156,12581
-Wilhelmsaue - Bundesallee (Straßentunnel)	3 5181,8731 5510,8709 5505,8832
-Bundesallee - Wilhelmsaue (Straßentunnel)	3 5513,8588 5510,8709 5181,8731
+Wilhelmsaue - Bundesallee (Straßentunnel)	3 5346,8720 5510,8709 5505,8832
+Bundesallee - Wilhelmsaue (Straßentunnel)	3 5513,8588 5510,8709 5346,8720 5181,8731
 Volkspark - Bundesallee (Absperrung)	3 5533,8478 5481,8506 5417,8519
 Volkspark - Bundesallee (Absperrung)	3 5533,8478 5481,8506 5444,8406
 Volkspark - Bundesallee (Absperrung)	3 5417,8519 5481,8506 5533,8478
@@ -274,6 +275,8 @@ Robert-Uhrig-Str. - Alt-Friedrichsfelde (nicht passierbarer Mittelstreifen)	3 17
 Alt-Friedrichsfelde - Robert-Uhrig-Str. (nicht passierbarer Mittelstreifen)	3 18220,11710 17750,11771 17734,11408
 Alt-Friedrichsfelde - Gensinger Str. (nicht passierbarer Mittelstreifen)	3 19005,11796 19283,11785 19144,11859
 Alt-Friedrichsfelde - Gensinger Str. (nicht passierbarer Mittelstreifen)	3 19144,11859 19005,11796 19283,11785
+Alt-Friedrichsfelde - Gensinger Str. (nicht passierbarer Mittelstreifen)	3 19283,11785 19005,11796 19005,11705
+Alt-Friedrichsfelde - Gensinger Str. (nicht passierbarer Mittelstreifen)	3 19005,11705 19005,11796 18853,11798
 Märkische Allee - Weißenhöher Weg (nicht passierbarer Mittelstreifen)	3 19802,11794 19693,11762 19827,11686
 Gervinusstr./Lewishamstr.	3 3839,10904 3631,10784 3587,10768
 Sybelstr./Lewishamstr.	3 3712,10566 3739,10576 3644,10759
@@ -375,7 +378,7 @@ Crailsheimer Str., von Steglitzer Damm bis Ellwanger Str. Baustelle, Straße gesp
 Johannisthaler Chaussee, Ernst-Keller Brücke; Bauarbeiten; Brücke gesperrt bis 30.06.	2:inwork 15573,4122 15608,4175 15779,4430
 am Beisheim-Center	2:inwork 8399,11630 8326,11732
 Wielandstr., S-Bahn-Sanierung (bis ca. 2004-04-30)	2:inwork 4415,11050 4399,10860
-Alt-Köpenick Treptow - Köpenick, zwischen Rosenstr. und Müggelheimer Str. Baustelle, Straße gesperrt bis 31.05.	2:inwork 22196,4847 22093,4499
+Alt-Köpenick Treptow - Köpenick, zwischen Rosenstr. und Müggelheimer Str. Baustelle, Straße gesperrt bis 31.05.	2:inwork 22196,4847 22138,4661 22093,4499
 Die Prenzlauer  Allee ist zwischen Grellstraße und Ostseestraße stadtauswärts gesperrt. Grund: Bauarbeiten. Dauer: 29.03.2004, 07:00 Uhr bis voraussichtlich 2004-08-00	1:inwork 11941,15586 11997,15834 12030,15968 12076,16129 12091,16209
 Zimmerstraße, Richtung Axel-Springer-Straße, zwischen Markgrafenstraße und Jerusalemer Straße, als Einbahnstraße  eingerichtet. Dauer: bis 15.05.2004, 18.00 Uhr	1:inwork 9945,11371 9737,11349
 B 101; (Bad Liebenwerda-Herzberg); Brücken Mühlengraben b.Langennau. u. Ziehtgraben b.Wied; Brückenneubau; Vollsperrung; 27.10.2003-30.04.2004	2:inwork 7881,-88140 7946,-88652

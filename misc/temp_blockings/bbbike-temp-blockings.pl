@@ -234,4 +234,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Residenzstraße zwischen Lindauer Allee und Emmentaler Straße, Emmentaler Straße zwischen Residenzstraße und Aroser Allee, Aroser Allee zwischen Emmentaler Straße und Lindauer Allee sowie Lindauer Allee zwischen Aroser Allee und Residenzstraße. Straßen gesperrt. Radrennen. Umleitung ist ausgeschildert. Dauer: 21.03.2004, 08.00 Uhr bis 18.00 Uhr',
        type  => 'gesperrt',
      },
+     { from  => 1079701200, # 2004-03-19 14:00
+       until => 1080856800, # 2004-04-02 00:00
+       file  => 'budapester.bbd',
+       text  => 'Budapester Straße, Stülerstraße, zwischen Klingelhöferstraße und Kurfürstenstrsße in beiden Richtungen für den Durchgangsverkehrgesperrt. Konferenz. Dauer: 20.03.2004, 14.00 Uhr bis 01.04.2004, 18.00 Uhr',
+       type  => 'gesperrt',
+     },
     );

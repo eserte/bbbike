@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.128 2004/03/22 23:45:50 eserte Exp eserte $
+# $Id: bbbike,v 3.129 2004/03/26 22:08:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package main;
 
 #perl2exe_include Tk/Checkbutton.pm
 
-#XXX does not work: BEGIN { $Devel::Trace::TRACE = 0 }
+BEGIN { $Devel::Trace::TRACE = 0 }
 
 use FindBin;
 use lib ("$FindBin::RealBin",
@@ -222,7 +222,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.128 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.129 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -6080,7 +6080,7 @@ sub freedraw_sub {
 	$search_route_flag = 'ziel_cont';
     }
     updatekm();
-    if (!$edit_mode) {
+    if (!$edit_mode && !$edit_normal_mode) {
 	update_route_strname();
     }
 }
@@ -7923,7 +7923,7 @@ sub plotstr {
 	} else {
 	    eval { $str = new Strassen $filename };
 	    if ($@) {
-		if ($edit_mode) {
+		if ($edit_mode || $edit_normal_mode) {
 		    status_message(Mfmt("Beim Laden der Datei %s: %s", $filename, $@), "info");
 		    return;
 		}
@@ -8082,6 +8082,7 @@ sub plotstr {
 	# XXX Experiment
 	if ($orientation eq 'landscape' &&
 	    !$edit_mode &&
+#XXX?	    !$edit_normal_mode &&
 	    !$str_name_draw{$abk} &&
 	    !$str_nr_draw{$abk} &&
 	    !exists $args{Canvas} &&
@@ -8181,17 +8182,15 @@ if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->po
 	    $c->itemconfigure('e-Q', -stipple => '@' . $linestip);
 	}
 
-	if (!exists $args{Canvas} && !$no_make_net) {
-	    if (defined $net && !$net->is_source($str)
-		&& $abk =~ /^[sl]$/ && !$edit_mode) {
+	if (!exists $args{Canvas} && !$no_make_net && !$edit_mode && !$edit_normal_mode) {
+	    if (defined $net && !$net->is_source($str) && $abk =~ /^[sl]$/) {
 		make_net();
-	    } elsif (!defined $net
-		     && $abk =~ /^[sl]$/ && !$edit_mode) {
+	    } elsif (!defined $net && $abk =~ /^[sl]$/) {
 		make_net();
 	    }
 	}
 
-	if (($edit_mode || $abk eq 'relgps') and !$diffed_str) {
+	if (($edit_mode || $edit_normal_mode || $abk eq 'relgps') and !$diffed_str) {
 	    warn "Try to copy original data" if $verbose;
 	    my $r = $str->copy_orig;
 	    warn "Returned $r" if $verbose;
@@ -8304,7 +8303,7 @@ sub plot_sperre {
 	my $diffed_str = 0;
 	my $str = $gesperrt;
 	#XXX Abfrage auf $edit_mode notwendig?
-	if ($edit_mode && $args{FastUpdate}) {
+	if (($edit_mode || $edit_normal_mode) && $args{FastUpdate}) {
 	    my($new_str, $todelref) = $str->diff_orig(-clonefile => 1);
 	    if (!defined $new_str) {
 		warn M("Diff-Ausgabe wird nicht verwendet") if $verbose;
@@ -8466,7 +8465,7 @@ sub plot_sperre {
 	    }
 	}
 
-	if ($edit_mode and !$diffed_str) {
+	if (($edit_mode || $edit_normal_mode) and !$diffed_str) {
 	    warn "Try to copy original data" if $verbose;
 	    my $str = $gesperrt;
 	    my $r = $str->copy_orig;
@@ -8908,6 +8907,7 @@ sub plot_point {
 	# XXX Experiment!!!
 	if ($orientation eq 'landscape' &&
 	    !$edit_mode &&
+#XXX?       !$edit_normal_mode &&
 	    $abk eq 'lsa' &&
 	    defined &BBBike::fast_plot_point) {
 	    eval {
@@ -8966,7 +8966,7 @@ sub plot_point {
 	if ($@ =~ /^no-original-datadir/) {
 	    # silently ignore
 	} elsif ($@ !~ /^OK/) {
-	    status_message($@, ($edit_mode ? 'info-stack-trace' : 'err'));
+	    status_message($@, ($edit_mode || $edit_normal_mode ? 'info-stack-trace' : 'err'));
 	}
     }
     $progress->Finish;
@@ -9837,7 +9837,7 @@ sub plotorte {
 	my $progress_hack = ($name_o && $no_overlap_label{$type});
 
 	my $diffed_orte = 0;
-	if ($edit_mode && $args{FastUpdate}) {
+	if (($edit_mode || $edit_normal_mode) && $args{FastUpdate}) {
 	    my($new_orte, $todelref) = $orte->diff_orig(-clonefile => 1);
 	    if (!defined $new_orte) {
 		warn "Not using diff output" if $verbose;
@@ -9957,11 +9957,11 @@ sub plotorte {
 	    }
 	}
 
-	if (!$edit_mode && !$municipality) {
+	if (!($edit_mode || $edit_normal_mode) && !$municipality) {
 	    change_place_visibility($c);
 	}
 
-	if ($edit_mode and !$diffed_orte) {
+	if (($edit_mode || $edit_normal_mode) and !$diffed_orte) {
 	    warn "Try to copy original data" if $verbose;
 	    my $r = $orte->copy_orig;
 	    warn "Returned $r" if $verbose;
@@ -10199,12 +10199,18 @@ sub set_edit_mode {
     if ($onoff) {
 	$edit_mode_indicator->configure(-fg => 'black'); # XXX don't hardcode
 	$edit_mode_type->configure(-text => uc($onoff));
-	$edit_mode = $onoff;
+	if ($onoff eq 'std-no-orig') {
+	    undef $edit_mode;
+	    $edit_normal_mode = 1;
+	} else {
+	    $edit_mode = $onoff;
+	}
 	$edit_mode_flag = 1;
     } else {
 	$edit_mode_indicator->configure(-fg => $dim_color);
 	$edit_mode_type->configure(-text => '');
 	undef $edit_mode;
+	undef $edit_normal_mode;
 	$edit_mode_flag = 0;
     }
 }
@@ -10319,7 +10325,7 @@ sub enterstr {
     my(@tags) = $c->gettags('current');
     $act_value{Strasse} = $tags[1];
     $act_value{Strasse} =~ s/\|.*$//; # Teil hinter "|" abschneiden
-    if ($edit_mode and defined $tags[3] and $tags[3] =~ /-(\d+)$/) {
+    if (($edit_mode || $edit_normal_mode) and defined $tags[3] and $tags[3] =~ /-(\d+)$/) {
 	$act_value{Strasse} .= " [" . ($1+1) . "]"; # Zeilennummer
     }
     $str_label->configure(-fg => 'black');
@@ -11642,7 +11648,7 @@ sub updatekm {
 	       ? $lost_time_s : 0);
 	    $time += ($lost_time_tragen_s+$lost_time_narrowpassage_s)/3600;
 	    $act_value{PowerTime}->[$i] = s2hm($time) . " h";
-	    if (!$edit_mode) {
+	    if (!$edit_mode && !$edit_normal_mode) {
 		$calories_power[$i] = float_prec($bikepwr_cal[$i], 1);
 	    } else {
 		$calories_power[$i] = undef;
@@ -11650,7 +11656,7 @@ sub updatekm {
 	}
 #XXX
 # 	for(my $i = 0; $i <= $#speed; $i++) {
-# 	    if (!$edit_mode) {
+# 	    if (!$edit_mode && !$edit_normal_mode) {
 # 		$calories_speed[$i] = float_prec($bikepwr_cal_spd[$i], 1);
 # 	    } else {
 # 		$calories_speed[$i] = undef;
@@ -15232,7 +15238,7 @@ sub add_to_stack {
 sub restack_delayed {
     # Use the delaying only on slow systems. For fast systems,
     # delaying is disturbing for the interactivity.
-    delayed_sub(\&restack, -busy => $slowcpu ? !$edit_mode : 0,
+    delayed_sub(\&restack, -busy => $slowcpu ? !$edit_mode && !$edit_normal_mode : 0,
 		           -delay => $slowcpu ? 1000 : 100,
 		           -name => 'restack');
 }
