@@ -1,5 +1,8 @@
 Hannover	6 -238807,-2284
 Hamburg	6 -218636,127524
+Leipzig	6 -58399,-118945
+Dresden	6 36945,-150010
+Magdeburg	6 -109456,-30762
 Rostock	5 -76160,185933
 Schwerin	5 -123837,135078
 Wismar	5 -120451,164366
@@ -8,6 +11,13 @@ Greifswald	5 5372,187894
 Stralsund	5 -14714,211779
 Salzgitter	5 -197009,-33610
 Hildesheim	5 -224397,-27056
+Lübeck	5 -171879,162041
+Kiel	5 -206639,213406
+Riesa	5 6260,-123033
+Halle	5 -86640,-104267
+Görlitz	5 124578,-136606
+Dessau	5 -67993,-64946
+Szczecin	5 84422,116148
 Bad Doberan	4 -91687,187756
 Anklam	4 26063,161834
 Prenzlau	4 38896,101722
@@ -28,6 +38,51 @@ Vienenburg	4 -183493,-50664
 Salzgitter-Bad	4 -195818,-40133
 Bad Harzburg	4 -183688,-58277
 Demmin	4 -17248,166627
+Neustadt|i. Holstein	4 -162872,188717
+Burg|a. Fehmarn	4 -137536,225428
+Heiligenhafen	4 -151865,217999
+Eckernförde	4 -225683,229745
+Schkeuditz	4 -69216,-113550
+Aschersleben	4 -122054,-73035
+Köthen	4 -86503,-73942
+Weißenfels	4 -86926,-134806
+Grimma	4 -34050,-131178
+Torgau	4 -15801,-94843
+Radebeul	4 32682,-144303
+Meißen	4 18596,-137935
+Forst	4 97577,-71746
+Elsterwerda	4 21161,-105003
+Lauchhammer	4 37739,-100703
+Finsterwalde	4 33453,-85784
+Lutherstadt Wittenberg	4 -40974,-60689
+Spremberg	4 79584,-91190
+Senftenberg	4 54577,-97384
+Coswig	4 -53126,-59094
+Roßlau	4 -68222,-58613
+Großenhain	4 22488,-123319
+Hoyerswerda	4 72553,-105664
+Bautzen	4 84838,-134321
+Heidenau	4 46254,-158414
+Weißwasser	4 98539,-97804
+Pirna	4 51147,-160067
+Merseburg	4 -84963,-117251
+Delitzsch	4 -61246,-99139
+Wolfen	4 -65598,-83516
+Bitterfeld	4 -62107,-87710
+Wurzen	4 -33361,-116248
+Kamenz	4 62074,-124260
+Halberstadt	4 -150211,-58016
+Stassfurt	4 -113498,-62119
+Zerbst	4 -78920,-49764
+Schönebeck	4 -102826,-43928
+Burg|bei Magdeburg	4 -95125,-15996
+Genthin	4 -74345,-1025
+Tangermünde	4 -86575,14474
+Stendal	4 -94920,21366
+Wernigerode	4 -168663,-64367
+Calbe	4 -100254,-56526
+Celle	4 -214664,25254
+Swinoujscie	4 62384,168798
 Ostseebad Rerik	3 -110604,188058
 Kühlungsborn	3 -103143,192722
 Woldegk	3 20345,117742
@@ -82,6 +137,115 @@ Dömitz	3 -135315,80994
 Ahrensburg	3 -201527,141528
 Richtenberg	3 -27492,199171
 Franzburg	3 -28044,197634
+Teterow	3 -47741,151508
+Gnoien	3 -38828,173215
+Bad Sülze	3 -42241,188840
+Tribsees	3 -35811,187232
+Dassow	3 -152356,167072
+Landkirchen|a. Fehmarn	3 -140785,226978
+Großenbrode	3 -144863,218226
+Oldenburg|i. Holstein	3 -157927,209008
+Lütjenburg	3 -177655,209031
+Tessin	3 -55029,179728
+Marlow	3 -48189,193860
+Prettin	3 -20762,-83231
+Strehla	3 758,-117137
+Nienburg	3 -100725,-64225
+Bernburg	3 -102123,-68792
+Ermsleben	3 -130160,-75930
+Gerbstedt	3 -110446,-87149
+Dommitzsch	3 -23552,-85881
+Schlieben	3 11010,-75978
+Mühlberg	3 330,-108160
+Pretzsch	3 -28932,-77661
+Dahme	3 13467,-59552
+Döbern	3 95241,-85421
+Luckau	3 32580,-61219
+Calau	3 49817,-72400
+Schweinitz	3 -13859,-68673
+Drebkau	3 69270,-81914
+Annaburg	3 -12434,-75302
+Falkenberg|(Elster)	3 1078,-91183
+Uebigau	3 5367,-90427
+Herzberg|(Elster)	3 685,-79518
+Bad Liebenwerda	3 12093,-98965
+Gröditz	3 15986,-110580
+Doberlug-Kirchhain	3 23590,-86060
+Welzow	3 65983,-90835
+Großräschen	3 54686,-89813
+Lauta	3 61852,-103639
+Zahna	3 -30653,-55528
+Schwarzheide	3 42545,-101397
+Ruhland	3 45051,-104441
+Kemberg	3 -40947,-71160
+Bad Düben	3 -44313,-91277
+Jessen	3 -18876,-68960
+Bernsdorf	3 59591,-113219
+Schönewalde	3 54,-66021
+Bad Muskau	3 104142,-92994
+Königsbrück	3 48116,-126144
+Radeburg	3 35981,-131821
+Schirgiswalde	3 85785,-145686
+Wittichenau	3 71565,-111594
+Bad Schandau	3 67128,-164150
+Königstein	3 61300,-164311
+Wettin	3 -98135,-92349
+Leuna	3 -82861,-121405
+Bad Dürrenberg	3 -80057,-124001
+Lützen	3 -74707,-128916
+Taucha	3 -49784,-114683
+Könnern	3 -100507,-83098
+Alsleben	3 -106623,-79464
+Jeßnitz	3 -64023,-81274
+Raguhn	3 -65184,-78035
+Eilenburg	3 -41670,-106264
+Brehna	3 -69924,-95276
+Gräfenhainichen	3 -53212,-76090
+Oranienbaum	3 -56796,-68506
+Wörlitz	3 -55954,-63621
+Landsberg	3 -73651,-98887
+Brandis	3 -42042,-119892
+Zgorzelec	3 125857,-136113
+Ostritz	3 121071,-151456
+Blankenburg|/Harz	3 -156887,-69013
+Egeln	3 -123941,-52587
+Wegeleben	3 -141668,-58851
+Derenburg	3 -159792,-60104
+Quedlinburg	3 -143499,-69347
+Hoym	3 -132288,-70348
+Güsten	3 -111858,-69111
+Hecklingen	3 -116890,-63321
+Osterburg	3 -101738,41526
+Gommern	3 -96457,-38135
+Möckern	3 -88127,-30654
+Ziesar	3 -65104,-16403
+Wolmirstedt	3 -110085,-18373
+Haldensleben	3 -125064,-13734
+Barby	3 -92712,-50048
+Aken	3 -81684,-62949
+Loburg	3 -79751,-33260
+Niegripp	3 -101293,-16585
+Grabow|b. Burg	3 -87389,-18561
+Oschersleben	3 -137865,-42998
+Schwanebeck|b. Halberstadt	3 -145086,-49603
+Hadmersleben	3 -132879,-47296
+Wanzleben	3 -123270,-39577
+Gröningen	3 -138332,-52702
+Kroppenstedt	3 -132247,-52647
+Tangerhütte	3 -98095,2059
+Jerichow	3 -83382,9469
+Arneburg	3 -84456,29043
+Elbingerode|(Harz)	3 -167236,-71316
+Ilsenburg|(Harz)	3 -175675,-60713
+Eggesin	3 52072,143335
+Cedinya|(Polen)	3 63078,54045
+Police	3 85415,129052
+Wolin	3 86568,162706
+Miedzyzdroje	3 75593,171491
+Kamien Pomorski	3 96483,176738
+Leknica	3 105382,-93696
+Usti|nad Labem	3 59812,-192720
+Decin	3 71884,-179111
 Dorf Mecklenburg	2 -120096,158779
 Boitzenburg	2 22065,95929
 Fürstenwerder	2 20214,110213
@@ -144,6 +308,98 @@ Ostseebad Wustrow	2 -59622,214927
 Steinhagen	2 -20924,202106
 Neu Darchau	2 -159616,90796
 Großensee	2 -195040,134461
+Damp	2 -217343,241513
+Sanitz	2 -59974,185177
+Gresenhorst	2 -57817,193435
+Quellendorf	2 -75805,-74261
+Prosigk	2 -80746,-79410
+Osternienburg	2 -82757,-69136
+Lebendorf	2 -99389,-77807
+Wulfen	2 -89404,-66270
+Wörbzig	2 -91981,-77600
+Hohenleipisch	2 23648,-100754
+Schönborn	2 19628,-89971
+Elster	2 -27661,-64991
+Seyda	2 -22616,-58945
+Kropstädt	2 -33549,-49819
+Wahrenbrück	2 10012,-95088
+Horstdorf	2 -54667,-66198
+Kakau	2 -54770,-67606
+Schleesen	2 -51134,-70008
+Bergwitz	2 -45162,-67778
+Reinsdorf	2 -43073,-57921
+Klieken	2 -58913,-58700
+Blönsdorf	2 -23897,-50460
+Sonnewalde	2 29293,-78521
+Söllichau	2 -40226,-86470
+Niebendorf-Heinsdorf	2 7173,-53040
+Drahnsdorf	2 23702,-54221
+Lebusa	2 13210,-67785
+Hohenseefeld	2 5156,-57458
+Oehna	2 -13556,-53339
+Plessa	2 28268,-104242
+Wormlage	2 47316,-88485
+Tröbitz	2 14291,-90004
+Seegrehna	2 -46601,-64497
+Löbnitz|(Sachsen)	2 -52618,-91316
+Cochstedt	2 -125889,-59202
+Schierke	2 -176907,-71826
+Lindau	2 -77658,-42212
+Tucheim	2 -72648,-13774
+Görzke	2 -59228,-26904
+Leitzkau	2 -88190,-39803
+Möser	2 -98781,-22231
+Parey	2 -85803,-3885
+Wiesenburg	2 -53682,-33333
+Gerwisch	2 -102079,-26887
+Glindenberg	2 -106495,-19731
+Hohenwarthe	2 -104933,-21092
+Schermen	2 -97483,-20394
+Parchau	2 -93089,-10490
+Ihleburg	2 -90529,-9610
+Hohenseeden	2 -84333,-11133
+Gladau	2 -78630,-12209
+Karow|b. Genthin	2 -66919,-8026
+Bergzow	2 -81388,-2277
+Zitz	2 -62985,-9980
+Rogäsen	2 -60593,-10337
+Stresow	2 -83762,-17572
+Krüssau	2 -80649,-15732
+Hohenziatz	2 -81307,-25991
+Wollin	2 -52938,-14821
+Gräben	2 -55594,-20094
+Lübars|b. Möckern	2 -76307,-27494
+Theeßen	2 -81516,-19316
+Küsel	2 -79847,-20806
+Glienecke|b. Ziesar	2 -59322,-15048
+Lostau	2 -102729,-23028
+Wusterwitz	2 -58728,-5045
+Harsleben	2 -146745,-60653
+Klietz	2 -80631,27985
+Schönhausen	2 -82337,18705
+Benzigerode	2 -162792,-64163
+Heimburg	2 -159843,-65415
+Viereck	2 50059,128402
+Liepgarten	2 48709,147571
+Mönkebude	2 44234,152488
+Leopoldshagen	2 39685,153225
+Bugewitz	2 35433,154368
+Ferdinandshof	2 39481,140963
+Trassenheide	2 36416,187851
+Karlshagen	2 34423,190790
+Zemnin	2 42826,185924
+Koserow	2 45821,183713
+Loddin	2 46276,180962
+Kloster Zinna	2 -8907,-42730
+Werbig|b. Jüterbog	2 -2626,-52783
+Welsickendorf	2 -6226,-56160
+Altes Lager	2 -16634,-43663
+Casekow	2 62344,91129
+Wartin	2 58832,95451
+Luckow-Petershagen	2 62657,94307
+Hohenselchow	2 67235,90585
+Groß Pinnow	2 67134,88367
+Stepnica	2 88736,141300
 Jakobshagen	1 19242,89270
 Hardenbeck	1 18522,95282
 Morgenitz	1 44169,169997
@@ -205,6 +461,8 @@ Peenemünde	1 30765,193598
 Reinberg	1 -3734,201011
 Rambin	1 -7104,216657
 Haßleben	1 28077,90759
+Petznick	1 23374,84544
+Klosterwalde	1 19401,85410
 Gollmitz	1 29955,99848
 Güstow	1 33919,102671
 Klinkow	1 35281,104466
@@ -252,6 +510,149 @@ Kolrep	1 -66129,68534
 Blandikow	1 -59214,78102
 Ostseebad Boltenhagen	1 -137751,175206
 Löbnitz|(Mecklenburg)	1 -38578,209576
+Libbesdorf	1 -77178,-71598
+Reupzig	1 -80222,-75549
+Scheuder	1 -79462,-72093
+Frassdorf	1 -76824,-76502
+Elsnigk	1 -80750,-69323
+Reppichau	1 -79154,-67188
+Grossbadegast	1 -82825,-76067
+Chorau	1 -76593,-66756
+Dohndorf	1 -93477,-76920
+Biendorf	1 -94894,-73767
+Preußlitz	1 -97621,-75991
+Kleinzerbst	1 -80798,-67106
+Baasdorf	1 -86213,-78675
+Vockerode	1 -60397,-63033
+Trebbus	1 19837,-79607
+Hohenbucko	1 16677,-70998
+Schilda	1 11533,-88815
+Marzahna	1 -31510,-45741
+Uckro	1 26581,-61316
+Rehsen	1 -50506,-65123
+Gohrau	1 -51185,-66937
+Riesigk	1 -52277,-65767
+Griesen	1 -55078,-63981
+Selbitz	1 -48026,-66547
+Griebo	1 -49304,-59256
+Euper	1 -38527,-57357
+Dabrun	1 -35883,-64496
+Zieko	1 -56465,-55688
+Eutzsch	1 -40725,-66105
+Niedergörsdorf	1 -17221,-48058
+Buckow|(Niederer Fläming)	1 11204,-51048
+Petkus	1 8544,-46213
+Groß Ziescht	1 17554,-46301
+Wahlsdorf	1 6504,-50162
+Liepe|(b. Dahme)	1 8960,-50370
+Jetsch	1 28140,-53167
+Oelsig	1 10316,-80309
+Nexdorf	1 10244,-85491
+Langennaundorf	1 8396,-89120
+Brandis|(b. Schönewalde)	1 -3292,-68096
+Illmersdorf	1 8062,-58412
+Meinsdorf	1 2670,-62262
+Hohennahlsdorf	1 -7536,-53113
+Markendorf	1 -4285,-47050
+Jänickendorf|b. Luckenwalde	1 -547,-39237
+Stülpe	1 6009,-40119
+Kummersdorf Gut	1 8322,-34335
+Woltersdorf|b. Luckenwalde	1 -2314,-32779
+Gentha	1 -22842,-62464
+Weixdorf	1 41422,-138869
+Radis	1 -49161,-73715
+Pratau	1 -40326,-63332
+Schköna	1 -47284,-81409
+Pouch	1 -56469,-88146
+Reibitz	1 -52822,-95176
+Brinnis	1 -54092,-99700
+Hohenroda	1 -54919,-101898
+Kletzen	1 -55696,-106805
+Elend	1 -175343,-74041
+Reetz	1 -59360,-33814
+Viesen	1 -58438,-10013
+Wenzlow	1 -53925,-12882
+Drewitz|b. Ziesar	1 -73502,-22413
+Mageburgerforth	1 -71392,-20596
+Groß Briesen	1 -51776,-18444
+Hohenlobesse	1 -65973,-27580
+Bücknitz	1 -62483,-14628
+Kade	1 -66609,-3909
+Osterweddingen	1 -113784,-41797
+Frankenfelde|b. Luckenwalde	1 -8845,-33453
+Frankenförde	1 -11320,-34013
+Felgentreu	1 -14883,-35193
+Zülichendorf	1 -14719,-32442
+Ruhlsdorf|b. Luckenwalde	1 -4793,-31483
+Niebelhorst	1 -19012,-31726
+Niebel	1 -21662,-30814
+Weichensdorf	1 76728,-33531
+Möbiskruge	1 92650,-31216
+Schernsdorf	1 83787,-21937
+Fahrenwalde	1 52076,116187
+Damerow	1 45991,116196
+Schönfeld|(Uckermark)	1 46703,113275
+Schenkenberg|(bei Prenzlau)	1 44453,107726
+Milow|(bei Pasewalk)	1 36011,119758
+Züsedom	1 48936,116479
+Nieden	1 42426,116039
+Torgelow-Holländerei	1 49531,143137
+Neuendorf A	1 35876,148121
+Meiersberg	1 42907,145363
+Hammer|bei Torgelow	1 45626,133917
+Heinrichsruh	1 41706,138835
+Jatznick	1 43497,131310
+Kremmin	1 35637,183649
+Mölschow	1 34647,186824
+Pudagla	1 50604,175128
+Stolpe|Usedom	1 45444,163794
+Dargen	1 50393,165510
+Korswandt	1 56809,169618
+Grüna	1 -10468,-42051
+Neuhof|b. Zinna	1 -6606,-40998
+Neuheim	1 -12194,-43419
+Werder|b. Jüterbog	1 -7174,-44347
+Kolzenburg	1 -4818,-38798
+Gottow	1 1898,-35457
+Scharfenbrück	1 416,-32027
+Schöneweide|b. Luckenwalde	1 2405,-33345
+Schönefeld|bei Luckenwalde	1 6042,-36301
+Dümde	1 5360,-36793
+Holbeck	1 3020,-39976
+Lynow	1 10684,-39810
+Horstwalde	1 11336,-35821
+Schöbendorf	1 13288,-39187
+Merzdorf	1 12235,-45011
+Ließen	1 7453,-45170
+Schlenzer	1 1186,-49448
+Riesdorf	1 121,-50559
+Sernow	1 -236,-52351
+Hohengörsdorf	1 -6347,-50466
+Borgisdorf	1 -6447,-53303
+Reinsdorf|b. Jüterbog	1 -611,-55978
+Nonnendorf	1 1822,-55930
+Wiepersdorf	1 803,-58363
+Gräfendorf	1 -2877,-55108
+Dennewitz	1 -15318,-48907
+Rohrbeck|b. Jüterbog	1 -13012,-49243
+Bochow|b. Jüterbog	1 -10081,-51242
+Zellendorf	1 -11112,-57322
+Langenlipsdorf	1 -9902,-54525
+Friedrichshof|Rietzenneuendorf-Friedrichshof	1 28178,-42845
+Rietzenneuendorf	1 29738,-43418
+Klasdorf	1 21878,-42112
+Radeland	1 21699,-38743
+Dornswalde	1 25010,-39610
+Mückendorf	1 17188,-36470
+Hohenfelde	1 67746,82674
+Kunow	1 65951,83204
+Woltersorf|bei Casekow	1 63186,87698
+Blumberg|bei Casekow	1 58652,90460
+Sommersdorf	1 60232,99186
+Grünz	1 57371,99052
+Groß Riwtz	1 66061,-19905
+Bornow	1 65283,-24577
+Görzig	1 65818,-16920
 Warnemünde	0 -79879,195905
 Ostseebad Heiligendamm	0 -95818,192055
 Pinnow|bei Anklam	0 31964,167092
@@ -271,6 +672,8 @@ Böckenberg	0 32541,81727
 Suckow|am Oberückersee	0 38384,84660
 Klein Friedenwalde	0 33247,81067
 Neudorf|Friedenfelde	0 29849,82276
+Netzow	0 15221,83695
+Metzelthin	0 15363,86447
 Briesen|Uckermark	0 27139,81758
 Berkenlatten	0 32497,82409
 Neu Temmen	0 33792,76526
@@ -336,3 +739,67 @@ Harburg	0 -219038,117479
 Blankenese	0 -230128,129547
 Altona	0 -221904,128093
 Speck	0 -29415,114439
+Travemünde	0 -159246,172858
+Puttgarden	0 -136378,231892
+Warenthin	0 -27594,78211
+Pelzkuhl	0 -18905,86802
+Strasen	0 -18739,88721
+Kochstedt (Dessau)	0 -71891,-68729
+Mosigkau (Dessau)	0 -74113,-67902
+Lausigk	0 -78882,-73158
+Elsdorf (Köthen)	0 -86084,-70635
+Porst (Köthen)	0 -84651,-71720
+Goltewitz	0 -55620,-69186
+Klitzschena	0 -45187,-66285
+Kienberge	0 -41544,-62993
+Piesteritz|(Wittenberg)	0 -43303,-59990
+Melzwig	0 -34940,-65560
+Buro	0 -56819,-59251
+Waldersee|(Dessau)	0 -65797,-63726
+Damsdorf|(Niederer Fläming)	0 13932,-49166
+Altgolßen	0 22470,-48124
+Zagelsdorf	0 15747,-57905
+Klotzsche	0 40045,-143094
+Mocherwitz	0 -55811,-103585
+Torfhaus	0 -185565,-67643
+Mahlenzien	0 -54916,-9664
+Dahlen	0 -56249,-22697
+Klein Lübars	0 -77888,-27029
+Plaue	0 -56817,-754
+Kirchmöser Dorf	0 -55762,-4377
+Blumenberg	0 -122024,-42283
+Gottsdorf	0 -11263,-31283
+Tornow|(bei Schönfeld, Uckermark)	0 44765,111011
+Wittenhof	0 42302,105760
+Werbelow	0 39006,117525
+Trebenow	0 37685,116242
+Bandelow	0 37800,113022
+Klockow	0 48458,111338
+Bröllin	0 50618,118594
+Kamp	0 36379,160448
+Binenwalde	0 -31527,71293
+Neeberg	0 33804,182344
+Bannemin	0 35952,185590
+Neuendorf	0 38374,181884
+Kölpinsee	0 47446,182820
+Welzin	0 43548,162105
+Gummlin	0 47577,164502
+Görke	0 52377,166132
+Kachlin	0 50880,167238
+Reetzow	0 52471,171165
+Gothen	0 55008,172642
+Ulrichshorst	0 55680,168933
+Fröhden|b. Markendorf	0 -4218,-48244
+Moldenhütten	0 -962,-35527
+Lindenberg|Kolzenburg	0 -5480,-38522
+Charlottenfelde|Petkus	0 4852,-46881
+Lichterfelde|Werbig	0 -1772,-52760
+Höfgen	0 -5717,-54901
+Neues Lager|Jüterbog	0 -14367,-45301
+Körbitz	0 -8082,-56867
+Gölsdorf|b. Jüterbog	0 -17386,-50318
+Wölmsdorf	0 -18329,-48636
+Glashütte|Baruth	0 23649,-41724
+Kemlitz	0 16096,-43894
+Birkholz|bei Beeskow	0 65383,-21954
+Dabie	0 92459,112688

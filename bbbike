@@ -333,6 +333,7 @@ $show_overview = $show_strlist = 0;
 $show_calories = 0;
 $use_hoehe = 1; # XXX kann im Programm nicht gesetzt werden
 $steigung_optimierung = 0;
+$green_optimization = 0;
 $grade_minimum_short_length = 100; # 100m gilt als kurz für grademinimumshort
 $use_legend = $use_legend_right = 0;
 $use_faehre = 0;
@@ -764,8 +765,12 @@ Tk::CmdLine::SetArguments();
    ['radwegeoptimierung','!',0, var => \$radwege_optimierung,
     label => M"Radwege-Optimierung"],
    ['N_RW_optimization', '!', 0, var => \$N_RW_optimization, nogui => 1],
-   ['greenoptimierung', '!', 0, var => \$green_optimization,
-    label => M"Grüne Wege bevorzugen"],
+   ['greenoptimierung', '=i', choices => [0,1,2],
+    longhelp => "0: ".M("egal")."\n".
+                "1: ".M("bevorzugen")."\n".
+                "2: ".M("stark bevorzugen")."\n",
+    label => M"Grüne Wege bevorzugen", var => \$green_optimization,
+   ],
    ['unbeleuchtetoptimierung', '!', 0, var => \$unlit_streets_optimization,
     label => M"Unbeleuchtete Straßen meiden"],
    ['steigungoptimierung', '!', 0, var => \$steigung_optimierung,
@@ -3150,9 +3155,23 @@ sub do_iconframe {
 			   }
 		       }
 		      );
-    $sb2m->checkbutton(-label => M"Grüne Wege bevorzugen",
-		       -variable => \$green_optimization,
-		      );
+    {
+	$sb2m->cascade(-label => M("Grüne Wege")."...");
+	my $gwm = $sb2m->Menu(-title => M"Grüne Wege");
+	$sb2m->entryconfigure('last', -menu => $gwm);
+	$gwm->radiobutton(-label => M"egal",
+			  -variable => \$green_optimization,
+			  -value => 0,
+			 );
+	$gwm->radiobutton(-label => M"bevorzugen",
+			  -variable => \$green_optimization,
+			  -value => 1,
+			 );
+	$gwm->radiobutton(-label => M"stark bevorzugen",
+			  -variable => \$green_optimization,
+			  -value => 2,
+			 );
+    }
     $sb2m->checkbutton(-label => M"Unbeleuchtete Straßen meiden",
 		       -variable => \$unlit_streets_optimization,
 		      );
@@ -12583,10 +12602,16 @@ sub search_route {
 		$green_net = new StrassenNetz(Strassen->new("green"));
 		$green_net->make_net_cat;
 	    }
-	    my $penalty = { "green0" => 3,
-			    "green1" => 2,
-			    "green2" => 1,
-			  };
+	    my $penalty = ($green_optimization == 2
+			   ? { "green0" => 3,
+			       "green1" => 2,
+			       "green2" => 1,
+			     }
+			   : { "green0" => 2,
+			       "green1" => 1.5,
+			       "green2" => 1,
+			     }
+			  );
 	    $extra_args{Green} =
 		{Net => $green_net,
 		 Penalty => $penalty,

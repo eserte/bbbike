@@ -1,0 +1,26 @@
+README for tkbabybike
+
+A route-finder for cyclists in Berlin and Brandenburg - the handheld
+version.
+
+This application should run with familiar 0.4 (see
+http://www.handhelds.org). You also need perl and Perl/Tk.
+Pre-compiled versions of perl and Perl/Tk can be found in:
+
+	ftp://ftp.cpan.org/pub/CPAN/authors/id/S/SR/SREZIC
+
+You need three perl distributions in this directory:
+
+* perl-5.005-minimal-bin-0-arm-linux.tar.gz
+* perl-5.005-basicmods-bin-0-arm-linux.tar.gz
+* perl-Tk-800.023-bin-0-arm-linux.tar.gz
+
+These should be untarred in /. To make room on the flash, you can
+remove the python binary and libraries :-)
+
+The application can be installed with the ipkg manager program:
+
+	ipkg install tkbabybike.ipk
+
+If you encounter problems, feel free to send a mail to
+slaven@rezic.de.

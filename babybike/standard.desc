@@ -1,0 +1,89 @@
+#XXX from bbbike:
+%category_color =
+  ('N'  => 'grey98',
+   'NN' => '#bdffbd',
+   'H'  => 'yellow',
+   'HH' => 'yellow2',
+   'BAB' => 'DarkBlue',
+   'B'  => 'red3',
+   'Q0' => 'DarkSeaGreen4',
+   'Q1' => 'YellowGreen',
+   'Q2' => 'gold',
+   'Q3' => 'red',
+   'q0' => 'DarkSeaGreen4',
+   'q1' => 'YellowGreen',
+   'q2' => 'gold',
+   'q3' => 'red',
+   'SA' => 'green3',  # S-Bahn, Zone A
+   'SB' => 'green3',  # S-Bahn, Zone B
+   'SC' => '#008000', # S-Bahn, Zone C
+   'S0' => '#a0b0a0', # stillgelegte S-Bahn bzw. in Bau
+   'RA' => 'green3',  # R-Bahn, Zone A
+   'RB' => 'green3',  # R-Bahn, Zone B
+   'RC' => '#008000', # R-Bahn, Zone C
+   'R'  => '#006400', # R-Bahn, außerhalb
+   'R0' => '#a0b0a0', # stillgelegte R-Bahn bzw. in Bau
+   'U'  => '#000080', # U-Bahn
+   'UA' => '#000080', # U-Bahn, Zone A
+   'UB' => '#000080', # U-Bahn, Zone B
+   'U0' => '#a0a0b0', # U-Bahn in Bau
+   'W'  => '#bad5f7', # Gewässer
+   'P'  => '#76c48b', # Parks, Wälder
+   'Ae' => 'white',   # Flughäfen
+   'F'  => 'grey99',  # sonstige Flächen
+   'SW' => 'red',     # Sehenswürdigkeit
+   'Q'  => 'grey99',  # Fähre (mit stipple)
+   'I'  => 'grey85',  # Inseln (wird später überschrieben)
+   'Z'  => 'black',   # PLZ-Grenzen
+
+   'RW0' => 'SlateBlue', # siehe Radwege.pm
+   'RW1' => '#00008b',   # DarkBlue ist in der Win-Version undefiniert
+   'RW2' => 'LightBlue',
+   'RW3' => 'green',
+   'RW4' => 'orange',
+   'RW5' => 'yellow3',
+   'RW6' => 'green',
+   'RW7' => '#000060',
+
+   'sperre0' => 'red',  # Tragen
+   'sperre1' => 'blue', # Einbahnstraßen
+   'sperre2' => 'red',  # voll gesperrt
+   'sperre3' => 'red',  # Wegführung gesperrt
+
+   'IN' => 'violet',     # Industrieanlagen
+   'HB' => 'DarkViolet', # Hafenanlagen
+   'BU' => '#c08080',    # Built-up areas
+   'FO' => '#46b47b',    # Wälder
+   'MO' => '#008080',    # Moor
+
+   '?'  => '#9f0000',
+   '??' => '#8b0000', # DarkRed, bei Win undefiniert
+   'GPS' => 'red',       # GPS Relation
+   'GPSs'   => "#c000c0", # GPS street
+   'GPSs~'  => "#f4c0f4", # inaccurate
+   'GPSs~~' => "#e4c8e4", # even more inaccurate
+   'GPSp'   => "#0000a0", # GPS point
+   'GPSp~'  => "#c0c0b0", # GPS point
+   'GPSp~~' => "#c8c8c0", # GPS point
+
+   'P1' => '#a000a0',
+   'P2' => '#a000a0',
+   'S1' => '#a000a0',
+   'S2' => '#a000a0',
+   'PI' => '#a000a0',
+   'P0' => '#a000a0',
+  );
+
+%line_dash =
+  ('Q0'   => [5,2],
+   'Q1'   => [5,2],
+   'Q2'   => [5,2],
+   'Q3'   => [5,2],
+  );
+
+%line_width =
+  ('Q0'   => 4,
+   'Q1'   => 4,
+   'Q2'   => 4,
+   'Q3'   => 4,
+  );

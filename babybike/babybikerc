@@ -1,0 +1,5 @@
+style "fixedfont"
+{
+	font = "5x7"
+}
+widget "*" style "fixedfont"

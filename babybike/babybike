@@ -1,0 +1,623 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: babybike,v 2.3 2003/01/08 20:16:00 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net
+#
+
+use strict;
+use vars qw($VERSION);
+$VERSION = sprintf("%d.%03d", q$Revision: 2.3 $ =~ /(\d+)\.(\d+)/);
+
+BEGIN {
+    # FindBin and Cwd is not installed on the iPAQ dist
+    if ($0 =~ m|^/|) {
+	($FindBin::RealBin = $0) =~ s|/[^/]+$||;
+    } else {
+	chomp (my $cwd = `pwd`);
+	($FindBin::RealBin = $cwd . "/$0") =~ s|/[^/]+$||;
+    }
+}
+
+use lib ("$FindBin::RealBin",
+	 "$FindBin::RealBin/lib",
+	 "$FindBin::RealBin/data",
+	 "/tmp/site_perl");
+use Gtk;
+use Gtk::Gdk::ImlibImage;
+use BBBikeRouting;
+use Strassen;
+use BBBikeUtil;
+
+
+Strassen::set_verbose(1);#XXX debug
+## This saves approx. 1 MB RAM memory:
+#StrassenNetz::use_data_format($StrassenNetz::FMT_ARRAY);
+
+my $routing = BBBikeRouting->new->init_context;
+my $context = $routing->Context;
+$context->Algorithm('A*'); # XXX no C-A* available yet
+$context->RouteInfoKm(0);
+my $average_speed = 15;
+my $exact_streetchooser = 0;
+
+my($centerx, $centery) = (14598,11245);
+
+parse Gtk::Rc "$FindBin::RealBin/babybikerc";
+
+my $scope = "berlin";
+
+while (@ARGV && $ARGV[0] =~ /^-/) {
+    if ($ARGV[0] eq '-car') {
+	$context->Vehicle('car');
+	shift @ARGV;
+    } elsif ($ARGV[0] eq '-oepnv') {
+	warn "XXX funktioniert noch nicht!";
+	$context->Vehicle('oepnv');
+	shift @ARGV;
+    } elsif ($ARGV[0] eq '-scope') {
+	shift @ARGV;
+	$scope = shift @ARGV;
+	if ($scope eq 'brb') {
+	    $context->Scope('region');
+	} elsif ($scope eq 'berlin') {
+	    # OK
+	} else {
+	    die "Unknown scope $scope";
+	}
+    } else {
+	warn "Unrecognized switch $ARGV[0]";
+	shift @ARGV;
+    }
+}
+
+init Gtk;
+init Gtk::Gdk::ImlibImage;
+
+my($start_coord_valid_for, $ziel_coord_valid_for, $route_drawn);
+my $release_timeout;
+
+my $mw = Gtk::Window->new(-toplevel);
+
+# prevent cursors from moving focus
+$mw->signal_connect("focus" => sub {
+			my($w,$e) = @_;
+			$w->signal_emit_stop_by_name("focus");
+			0;
+		    });
+
+$mw->set_title("babybike $VERSION");
+$mw->realize;
+
+my $busy_cursor   = new Gtk::Gdk::Cursor 150;
+my $normal_cursor = new Gtk::Gdk::Cursor 132;
+
+my $vbox = new Gtk::VBox(0,0);
+$mw->add($vbox);
+
+my $hbox_top = new Gtk::HBox(0,0);
+$vbox->pack_start($hbox_top, 0, 0, 0);
+
+my $vbox_entries = new Gtk::VBox(0,0);
+$hbox_top->pack_start($vbox_entries, 0, 0, 0);
+
+my $toggle = new Gtk::Button;
+{
+    $hbox_top->pack_start($toggle, 0, 0, 0);
+    $toggle->signal_connect('clicked', \&swap_start_goal);
+    my $style = $toggle->get_style;
+    my($pixmap,$mask) = Gtk::Gdk::Pixmap->create_from_xpm
+	($mw->window, $style->bg('normal'), "$FindBin::RealBin/images/transpose.xpm");
+    my $pixmapwid = new Gtk::Pixmap $pixmap, $mask;
+    my $box3 = new Gtk::HBox(0,0);
+    $toggle->add($box3);
+    $box3->add($pixmapwid);
+}
+my $start_search = new Gtk::Button;
+{
+    $hbox_top->pack_start($start_search, 0, 0, 0);
+    $start_search->signal_connect('clicked', \&start_bbbike);
+    my $style = $start_search->get_style;
+    my($pixmap,$mask) = Gtk::Gdk::Pixmap->create_from_xpm
+	($mw->window, $style->bg('normal'), "$FindBin::RealBin/images/mini-exclam.xpm");
+    my $pixmapwid = new Gtk::Pixmap $pixmap, $mask;
+    my $box3 = new Gtk::HBox(0,0);
+    $start_search->add($box3);
+    $box3->add($pixmapwid);
+}
+
+my $hbox_start = new Gtk::HBox(0,0);
+$vbox_entries->pack_start($hbox_start, 0, 0, 0);
+my $hbox_ziel  = new Gtk::HBox(0,0);
+$vbox_entries->pack_start($hbox_ziel, 0, 0, 0);
+my $hbox_buttons = new Gtk::HBox(0,0);
+$vbox->pack_start($hbox_buttons, 0, 0, 0);
+
+my $sl = new Gtk::RadioButton("Start:");
+$hbox_start->pack_start($sl, 1, 1, 0);
+my $se = new Gtk::Entry;
+$hbox_start->pack_start($se, 1, 1, 0);
+
+my $zl = new Gtk::RadioButton("Ziel: ", $sl);
+$hbox_ziel->pack_start($zl, 1, 1, 0);
+my $ze = new Gtk::Entry;
+$hbox_ziel->pack_start($ze, 1, 1, 0);
+
+$se->set_text(shift @ARGV) if @ARGV;
+$ze->set_text(shift @ARGV) if @ARGV;
+
+my $btm_pane = new Gtk::VPaned;
+$vbox->pack_start($btm_pane, 1, 1, 0);
+
+my $scrolled_win = new Gtk::ScrolledWindow(undef, undef);
+$scrolled_win->set_policy(-automatic, -automatic);
+$btm_pane->add1($scrolled_win);
+$scrolled_win->show;
+
+my $list = new Gtk::List;
+$list->set_name("resultlist");
+$list->set_selection_mode(-multiple);
+$list->set_selection_mode(-browse);
+$scrolled_win->add_with_viewport($list);
+$list->show;
+
+my $map = load_image Gtk::Gdk::ImlibImage("$FindBin::RealBin/images/$scope.png");
+if (!$map) {
+    die "Can't load $FindBin::RealBin/images/$scope.png";
+}
+my $draw = do "$FindBin::RealBin/images/$scope.dim";
+if (!ref $draw eq 'HASH') {
+    die "Can't get $FindBin::RealBin/images/$scope.png dimensions";
+}
+my $transpose      = eval $draw->{TransposeCode};     die $@ if $@;
+my $anti_transpose = eval $draw->{AntiTransposeCode}; die $@ if $@;
+
+my $scrolled_img_win = new Gtk::ScrolledWindow(undef, undef);
+$scrolled_img_win->set_policy(-automatic, -automatic);
+$btm_pane->add2($scrolled_img_win);
+$scrolled_img_win->show;
+
+my $h_adj = $scrolled_img_win->get_hadjustment;
+my $v_adj = $scrolled_img_win->get_vadjustment;
+
+$map->render($draw->{Width}, $draw->{Height});
+my $bp = $map->move_image();
+my $mask = $map->move_mask;
+
+my $bp2 = new Gtk::Pixmap $bp, $mask;
+
+my $eb = new Gtk::EventBox;
+$eb->add($bp2);
+
+$scrolled_img_win->add_with_viewport($eb);
+
+my($img_x, $img_y, $motion_event);
+$eb->signal_connect('button_press_event' => sub {
+			my($w,$e) = @_;
+#warn "press " . join(",", times) . "\n";
+			($img_x, $img_y) = ($e->{'x_root'}, $e->{'y_root'});
+			$motion_event = 0;
+			if (defined $release_timeout) {
+			    Gtk->timeout_remove($release_timeout);
+			    undef $release_timeout;
+			}
+		    });
+
+$eb->signal_connect
+    ('motion_notify_event' => sub {
+	 my($w,$e) = @_;
+	 # try to combine multiple motion events...
+	 while (Gtk::Gdk->events_pending) {
+	     my $new_e = Gtk::Gdk->event_get;
+	     if ($new_e->{'type'} ne 'motion_notify') {
+		 Gtk::Gdk->event_put($new_e);
+		 last;
+	     }
+	 }
+#warn "motion " . join(",", times) . "\n";
+	 my($x,$y) = ($e->{'x_root'}, $e->{'y_root'});
+	 if (!$motion_event &&
+	     Strassen::Util::strecke([$x,$y], [$img_x,$img_y]) >= 10) {
+	     $motion_event = 1;
+	 }
+	 # XXX probably use some stacking/idle mechanism to prevent
+	 # from too much events...
+	 if ($motion_event) {
+	     my($delta_x, $delta_y) = ($img_x-$x, $img_y-$y);
+	     $h_adj->set_value($h_adj->get_value+$delta_x);
+	     $v_adj->set_value($v_adj->get_value+$delta_y);
+	     ($img_x,$img_y) = ($x,$y);
+	 }
+	 1;
+     }
+    );
+
+$eb->signal_connect('button_release_event', \&set_coord);
+
+my $red_gc = new Gtk::Gdk::GC $mw->window;
+my $red_color = $mw->window->get_colormap->color_alloc({ red => 65000, green => 0, blue => 0 });
+my $blue_color = $mw->window->get_colormap->color_alloc({ red => 0, green => 0, blue => 30000 });
+$red_gc->set_foreground($red_color);
+$red_gc->set_background($blue_color);
+$red_gc->set_line_attributes(2, 'double-dash', 'projecting', 'bevel');
+
+$ze->signal_connect('activate', \&start_bbbike);
+
+use enum qw(MAP_CENTER=1 ROUTEINFO_15 ROUTEINFO_20 ROUTEINFO_25
+	    VEHICLE_BIKE VEHICLE_CAR
+	    EXACT_STREETCHOOSER SLOPPY_STREETCHOOSER HELP_ABOUT
+	    RELOAD_MAP);
+
+my @item_factory_entries =
+    (
+     ["/Map",        undef, 0,  "<Branch>"],
+     ["/Map/Center", undef, MAP_CENTER],
+     ["/Speed",  undef, 0,  "<Branch>"],
+     ["/Speed/15 kmh", undef, ROUTEINFO_15, "<RadioItem>"],
+     ["/Speed/20 kmh", undef, ROUTEINFO_20, "<RadioItem>"],
+     ["/Speed/25 kmh", undef, ROUTEINFO_25, "<RadioItem>"],
+     ["/Vehicle", undef, 0, "<Branch>"],
+     ["/Vehicle/Bike", undef, VEHICLE_BIKE, "<RadioItem>"],
+     ["/Vehicle/Car", undef, VEHICLE_CAR, "<RadioItem>"],
+     ["/Internal", undef, 0, "<Branch>"],
+     ["/Internal/Exact Streetchooser", undef, EXACT_STREETCHOOSER, "<RadioItem>"],
+     ["/Internal/Sloppy Streetchooser", undef, SLOPPY_STREETCHOOSER, "<RadioItem>"],
+     ["/Internal/Reload Map", undef, RELOAD_MAP],
+     ["/Help",       undef, 0,  "<LastBranch>"],
+     ["/Help/About", undef, HELP_ABOUT]
+);
+
+my $item_factory = new Gtk::ItemFactory('Gtk::Menu', "<main>", new Gtk::AccelGroup);
+foreach (@item_factory_entries) {
+    $item_factory->create_item($_, \&item_factory_cb);
+}
+
+$mw->show_all;
+$mw->signal_connect('delete_event', sub {Gtk->exit(0)});
+
+
+img_see($scrolled_img_win, $transpose->($centerx, $centery));
+
+%Gtk::Keysyms =
+    ('Left'  => 0xFF51,
+     'Up'    => 0xFF52,
+     'Right' => 0xFF53,
+     'Down'  => 0xFF54,
+     'KP_Enter' => 0xff8d,
+    );
+
+my $scroll = sub {
+    my($adj, $pages) = @_;
+    my $inc = $adj->step_increment;
+    my $curr = $adj->get_value;
+    if ($pages > 0) {
+	my $upper = $adj->upper;
+	if ($curr+$inc*$pages <= $upper) {
+	    $adj->set_value($curr+$inc*$pages);
+	}
+    } elsif ($pages < 0) {
+	my $lower = $adj->lower;
+	if ($curr+$inc*$pages >= $lower) {
+	    $adj->set_value($curr+$inc*$pages);
+	}
+    }
+};
+
+$mw->signal_connect('key_press_event', \&mw_key_press);
+
+$mw->signal_connect
+    ('event' => sub {
+	 my($w,$e) = @_;
+	 if ($e->{'type'} eq 'key_press' &&
+	     $e->{'keyval'} == $Gtk::Keysyms{'KP_Enter'}) {
+	     my(@alloc) = $mw->window->get_position;
+	     $item_factory->popup($alloc[0], $alloc[1], 1, $e->{'time'});
+	     1;
+	 } else {
+	     0;
+	 }
+     });
+
+Gtk->main;
+
+sub item_factory_cb {
+    my($widget, $action) = @_;
+    if ($action == MAP_CENTER) {
+	img_see($scrolled_img_win, $transpose->($centerx, $centery));
+    } elsif ($action == ROUTEINFO_15) {
+	$average_speed = 15;
+    } elsif ($action == ROUTEINFO_20) {
+	$average_speed = 20;
+    } elsif ($action == ROUTEINFO_25) {
+	$average_speed = 25;
+    } elsif ($action == HELP_ABOUT) {
+	about_dialog();
+    } elsif ($action == EXACT_STREETCHOOSER) {
+	$exact_streetchooser = 1;
+    } elsif ($action == SLOPPY_STREETCHOOSER) {
+	$exact_streetchooser = 0;
+    } elsif ($action == RELOAD_MAP) {
+	reload_map();
+    } else {
+	common_dialog("The action nr. $action\nis not implemented yet");
+    }
+}
+
+sub about_dialog {
+    common_dialog("babybike $VERSION\nby Slaven Rezic");
+}
+
+sub common_dialog {
+    my $text = shift;
+
+    my $common_d = new Gtk::Dialog;
+    $common_d->signal_connect("destroy", sub { $common_d->destroy });
+    $common_d->signal_connect("delete_event", sub { $common_d->destroy });
+    $common_d->set_title("Common");
+    $common_d->border_width(0);
+
+    my $common_l = new Gtk::Label($text);
+    $common_d->vbox->pack_start($common_l, 1, 1, 0);
+    $common_l->show;
+
+    my $common_ok = new Gtk::Button "OK";
+    $common_ok->can_default(1);
+    $common_d->action_area->pack_start($common_ok, 1, 1, 0);
+    $common_ok->grab_default;
+    $common_ok->signal_connect('clicked' => sub { $common_d->destroy });
+    $common_ok->show;
+
+    $common_d->show;
+}
+
+sub set_coord {
+    my($w,$ev) = @_;
+    my($tx,$ty) = ($ev->{'x'}, $ev->{'y'});
+    if ($motion_event) {
+	return;
+    }
+
+    # Define a timeout after releasing, because the iPAQ tends to
+    # not recognize continuos motions and generates additional release/press
+    # events.
+    if (defined $release_timeout) {
+	Gtk->timeout_remove($release_timeout);
+    }
+    $release_timeout = Gtk->timeout_add
+	(100,
+	 sub {
+
+	     my($x,$y) = $anti_transpose->($tx,$ty);
+
+	     $mw->window->set_cursor($busy_cursor);
+	     Gtk::Gdk->flush;
+	     eval {
+		 my $kr = $routing->init_crossings;
+		 my $kr_str;
+		 if ($exact_streetchooser) {
+		     my $s = $routing->init_str;
+		     my $ret = $s->nearest_point("$x,$y", FullReturn => 1);
+		     ($x,$y) = split /,/, $ret->{Coord};
+		     if ($kr->get($ret->{Coord})) {
+			 $kr_str = $ret->{StreetObj}[Strassen::NAME];
+			 foreach (@{$kr->get("$x,$y")}) {
+			     $kr_str .= "/$_"
+				 unless $_ eq $ret->{StreetObj}[Strassen::NAME];
+			 }
+		     } else {
+			 $kr_str = $ret->{StreetObj}[Strassen::NAME];
+		     }
+		 } else {
+		     ($x,$y) = split /,/, (($kr->nearest_loop($x,$y))[0]);
+		     $kr_str = join("/", @{$kr->get("$x,$y")});
+		 }
+
+		 if ($sl->active) {
+		     $routing->Start->Coord("$x,$y");
+		     $se->set_text($kr_str);
+		     $start_coord_valid_for = $kr_str;
+		     $zl->set_active(1);
+		 } else {
+		     $routing->Goal->Coord("$x,$y");
+		     $ze->set_text($kr_str);
+		     $ziel_coord_valid_for = $kr_str;
+		     $sl->set_active(1);
+		 }
+	     };
+	     warn $@ if $@;
+	     $mw->window->set_cursor($normal_cursor);
+	     undef $release_timeout;
+	 });
+}
+
+sub mw_key_press {
+    my($w, $e) = @_;
+    if ($e->{'string'} eq 'C' ||
+	$e->{'keyval'} == 133 # arrow button on iPAQ
+       ) {
+	return; # XXX do nothing...
+	$map->destroy_image;
+	$map = load_image Gtk::Gdk::ImlibImage("$FindBin::RealBin/images/berlin.png");
+	$map->render($draw->{Width}, $draw->{Height});
+	$bp = $map->move_image;
+    } elsif ($e->{'keyval'} == $Gtk::Keysyms{'Up'}) {
+	$scroll->($v_adj, -1);
+    } elsif ($e->{'keyval'} == $Gtk::Keysyms{'Down'}) {
+	$scroll->($v_adj, +1);
+    } elsif ($e->{'keyval'} == $Gtk::Keysyms{'Left'}) {
+	$scroll->($h_adj, -1);
+    } elsif ($e->{'keyval'} == $Gtk::Keysyms{'Right'}) {
+	$scroll->($h_adj, +1);
+    }
+}
+
+sub swap_start_goal {
+    my($start, $goal) = ($se->get_text, $ze->get_text);
+    $se->set_text($goal);
+    $ze->set_text($start);
+    ($start_coord_valid_for, $ziel_coord_valid_for) = ($ziel_coord_valid_for, $start_coord_valid_for);
+    my($sc,$gc) = ($routing->Start->Coord, $routing->Goal->Coord);
+    $routing->Start->Coord($gc);
+    $routing->Goal->Coord($sc);
+}
+
+sub start_bbbike {
+
+    $mw->window->set_cursor($busy_cursor);
+    Gtk::Gdk->flush;
+
+    $routing->Start->Street($se->get_text);
+    $routing->Goal->Street($ze->get_text);
+    if ($routing->Start->Street ne $start_coord_valid_for) {
+	$routing->Start->Coord(undef);
+	$routing->Start->Citypart(undef);
+    }
+    if ($routing->Goal->Street ne $ziel_coord_valid_for) {
+	$routing->Goal->Coord(undef);
+	$routing->Goal->Citypart(undef);
+    }
+
+    warn "Begin search";
+    eval {
+	$routing->search;
+    };
+    if ($@) {
+	error_dialog($@);
+	goto CLEANUP;
+    }
+    warn "End search with routeinfo=" . scalar @{ $routing->RouteInfo };
+
+    my $m_s = $average_speed/3.6;
+    $list->remove_items($list->children);
+    for my $i (0 .. $#{ $routing->RouteInfo }) {
+  	local $_ = ($routing->RouteInfo)->[$i];
+	my $km = m2km($_->{Whole});
+	my $time = $m_s ? s2hm($_->{Whole}/$m_s) : "";
+	my $list_item = new Gtk::ListItem
+	    (sprintf("%-2s %-20s %s %s", $_->{Way}, $_->{Street}, $km, $time));
+	$list->add($list_item);
+	my $ii = $i;
+	if (0) { # XXX not yet... need a way to disable normal events
+	$list_item->signal_connect
+	    ('select', sub {
+		 my($w,$e) = @_;
+  		 if (@{ $routing->RouteInfo } && $routing->RouteInfo->[$ii]) {
+  		     my($x,$y) = split /,/, $routing->RouteInfo->[$ii]->{Coords};
+		     img_see($scrolled_img_win, $transpose->($x, $y));
+		 }
+	     }
+	    );
+        }
+	$list_item->show;
+    }
+
+    if (@{ $routing->Path }) {
+
+	if ($route_drawn) {
+	    # reload_map() #XXX bad memory leaks!!!
+	}
+
+	foreach my $i (0 .. $#{ $routing->Path }-1) {
+	    my($x0,$y0) = @{ $routing->Path->[$i] };
+	    my($x1,$y1) = @{ $routing->Path->[$i+1] };
+	    $bp->draw_line($red_gc,
+			   $transpose->($x0, $y0), $transpose->($x1, $y1));
+	}
+	$bp2->set($bp, $mask);
+	$bp2->show;
+
+	my($x0,$y0) =  $transpose->(@{ $routing->Path->[0] });
+	my($xl,$yl) =  $transpose->(@{ $routing->Path->[-1] });
+	img_see($scrolled_img_win, $x0, $y0, $xl, $yl);
+
+	$route_drawn = 1;
+    }
+
+ CLEANUP:
+    $mw->window->set_cursor($normal_cursor);
+
+}
+
+# XXX leaks!!!
+sub reload_map {
+    common_dialog("This is not implemented\ndue to memory leaks");
+    return; # too dangerous on the ipaq!
+    # XXX more efficient solution???
+    $bp2->destroy;
+    $bp->imlib_free;
+    $mask->imlib_free if $mask;
+#    $bp->destroy;
+#    $mask->destroy if $mask;
+#    $map->kill_image;
+    #$eb->show_all;return;#XXX
+#    $map = load_image Gtk::Gdk::ImlibImage("$FindBin::RealBin/images/$scope.png");
+    warn $map;
+    $map->render($draw->{Width}, $draw->{Height});
+    $bp = $map->move_image;
+warn $bp;
+    $mask = $map->move_mask;
+warn $mask;
+    $bp2 = new Gtk::Pixmap $bp, $mask;
+warn $bp2;
+    $eb->add($bp2);
+    $eb->show_all;
+#	     Gtk::Gdk->flush;
+    $route_drawn = 0;
+}
+
+sub img_see {
+    my($scrolled, $x, $y, $x2, $y2) = @_;
+
+    my $h_adj = $scrolled->get_hadjustment;
+    my $v_adj = $scrolled->get_vadjustment;
+
+    my($img_w, $img_h) = @{$scrolled->allocation}[2,3];
+    $img_w -= $scrolled->vscrollbar->allocation->[2];
+    $img_h -= $scrolled->hscrollbar->allocation->[3];
+
+    my($airx, $airy) = (20, 20);
+    if (defined $x2 && defined $y2) {
+	if ($x-$x2 > $img_w/2) { $x -= ($img_w/2 - $airx) }
+  	if ($x2-$x > $img_w/2) { $x += ($img_w/2 - $airx) }
+  	if ($y-$y2 > $img_h/2) { $y -= ($img_h/2 - $airy) }
+  	if ($y2-$y > $img_h/2) { $y += ($img_h/2 - $airy) }
+    }
+
+    $h_adj->set_value($x-$img_w/2);
+    $v_adj->set_value($y-$img_h/2);
+}
+
+sub error_dialog {
+    my($errstr) = @_;
+
+    my $err_d = new Gtk::Dialog;
+    $err_d->signal_connect($_, sub { $err_d->destroy })
+	for qw/destroy delete_event/;
+    $err_d->set_title("Error");
+
+    # poor man's wrap
+    $errstr =~ s/(.{1,20})\s+/$1\n/g;
+
+    my $v = $err_d->vbox;
+    my $l = new Gtk::Label($errstr);
+    $l->show;
+    $v->pack_start($l,1,1,0);
+
+    my $ok_b = new Gtk::Button("OK");
+    $ok_b->signal_connect('clicked', sub { $err_d->destroy });
+    $ok_b->show;
+    $v->pack_start($ok_b, 1, 1, 0);
+
+    $v->show;
+
+    show $err_d;
+}
+
