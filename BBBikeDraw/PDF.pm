@@ -742,8 +742,8 @@ sub empty_image_error {
     my $im = $self->{Image};
     my $fh = $self->{Fh};
 
-    $im->stringc($sansserif, 24, 300, 400, "Empty image!");
-    $self->{PDF}->close;
+    $im->stringc($sansserif, 24, 300, 400, "Empty image!") if $im;
+    $self->{PDF}->close if $self->{PDF};
     confess "Empty image";
 }
 
