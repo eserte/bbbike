@@ -240,9 +240,26 @@ sub object_from_any_file {
     _object_from_file(-datafromany => $bbd_file);
 }
 
+# In argument: [["x,y", "x,y"], ...] where first element is the standard coord
+# and the second element the custom map coord
+sub object_from_data {
+    my $array = shift;
+    require File::Temp;
+    my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1);
+    print $tmpfh join("\n", map { join " ", @$_ } @$array), "\n";
+    close $tmpfh;
+    my $k_obj = _object_from_file(-datafromfile => $tmpfile);
+    unlink $tmpfile;
+    $k_obj;
+}
+
 sub _object_from_file {
     my(@args) = @_;
-    my $res = `$^X $FindBin::RealBin/convert_berlinmap.pl @args -bbbike`;
+    my $cmd = "$FindBin::RealBin/convert_berlinmap.pl";
+    if (!-r $cmd) {
+	$cmd = "$FindBin::RealBin/miscsrc/convert_berlinmap.pl";
+    }
+    my $res = `$^X $cmd @args -bbbike`;
     if (!$res) {
 	die "Error while running convert_berlinmap?";
     }
