@@ -378,11 +378,24 @@ sub MY::top_targets {
 }
 
 sub MY::test {
-    'test ::
-	-@cd ESRI && $(TEST_F) Makefile && $(MAKE) test $(PASTHRU)
-	-@cd t && $(MAKE) test
-
-';
+    my $out = "test ::\n";
+    if (-d "ESRI") {
+	$out .= <<'EOF';
+	cd ESRI && $(TEST_F) Makefile && $(MAKE) test $(PASTHRU)
+EOF
+    }
+    if (-r "t/Makefile") {
+	$out .= <<'EOF';
+	cd t && $(MAKE) test
+EOF
+    }
+    if (-r "projects/www.radzeit.de/Makefile") {
+	$out .= <<'EOF';
+	cd projects/www.radzeit.de && $(MAKE) deploy-local
+EOF
+    }
+    $out .= "\n";
+    $out;
 }
 
 sub MY::install {

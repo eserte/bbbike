@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.5 2003/07/14 06:36:42 eserte Exp $
+# $Id: wapcgi.t,v 1.6 2003/08/11 07:33:00 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -11,6 +11,7 @@ use strict;
 use LWP::UserAgent;
 use Getopt::Long;
 use File::Temp qw(tempfile);
+use URI;
 
 BEGIN {
     if (!eval q{
@@ -39,11 +40,16 @@ if (!@wap_url) {
     @wap_url = "http://www/bbbike/cgi/wapbbbike.cgi";
 }
 
-plan tests => 14 * scalar @wap_url;
+plan tests => 20 * scalar @wap_url;
 
 for my $wapurl (@wap_url) {
     my $resp;
     my $url;
+
+    my $absolute = sub {
+	my $relurl = shift;
+	URI->new_abs($relurl, $wapurl)->as_string;
+    };
 
     $url = $wapurl;
     $resp = $ua->get($url);
@@ -61,6 +67,10 @@ for my $wapurl (@wap_url) {
     ok($resp->content, qr/Dudenstr/, $url);
     ok($resp->content, qr/Sonntagstr/, $url);
 
+    my($surr_url) = $resp->content =~ /href=\"([^\"]+sess=[^\"]+)\"/;
+    ok(defined $surr_url && $surr_url ne "");
+    $surr_url = $absolute->($surr_url);
+
     $url = "$wapurl?startname=Dudenstr.&startbezirk=Kreuzberg&zielname=Sonntagstr.&zielbezirk=Friedrichshain&output_as=imagepage";
     $resp = $ua->get($url);
     ok($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $url);
@@ -70,6 +80,18 @@ for my $wapurl (@wap_url) {
     $resp = $ua->get($url);
     ok(!!$resp->is_success, 1, $url);
     ok($resp->header('Content_Type'), qr|^image/|, $url);
+
+    $resp = $ua->get($surr_url);
+    ok($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $surr_url);
+    ok(!!validate_wml($resp->content), 1, $surr_url);
+
+    my($surr_image_url) = $resp->content =~ /img.*src=\"([^\"]+sess[^\"]+)\"/;
+    ok(defined $surr_image_url && $surr_image_url ne "");
+    $surr_image_url = $absolute->($surr_image_url);
+
+    $resp = $ua->get($surr_image_url);
+    ok(!!$resp->is_success, 1, $surr_image_url);
+    ok($resp->header('Content_Type'), qr|^image/|, $surr_image_url);
 }
 
 sub validate_wml {

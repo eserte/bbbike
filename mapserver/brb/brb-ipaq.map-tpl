@@ -32,7 +32,7 @@ SHAPEPATH "[% MAPSERVER_DIR %]/data"
 IMAGECOLOR [% IMAGECOLOR %]
 FONTSET "[% MAPSERVER_DIR %]/[% FONTS_LIST %]"
 
-IMAGETYPE PNG
+IMAGETYPE [% IMAGE_TYPE %]
 
 WEB
   HEADER query_header.html
@@ -561,25 +561,25 @@ LAYER
   END
 END
 
-### BEGIN ROUTE
-#LAYER
-#  NAME Route
-#  GROUP route
-#  TYPE LINE
-#  STATUS ON
+[% IF ON_ROUTE %]
+LAYER
+  NAME Route
+  GROUP route
+  TYPE LINE
+  STATUS ON
 #  DATA "### ROUTESHAPEFILE ###"
-#  FEATURE POINTS ### ROUTECOORDS ### END END
-#
-##TRANSPARENCY 50##XXX Wie am geschicktesten verwenden?
-#
-#  CLASS
-#    NAME "Route"
-#    COLOR 255 0 255
-#    SYMBOL 'width'
-#    SIZE 4
-#  END
-#END
-### END ROUTE
+  FEATURE POINTS [% ROUTE_COORDS %] END END
+
+#TRANSPARENCY 50##XXX Wie am geschicktesten verwenden?
+
+  CLASS
+    NAME "Route"
+    COLOR 255 0 255
+    SYMBOL 'width'
+    SIZE 4
+  END
+END
+[% END %]
 
 LAYER
   NAME "U-Bahn"
@@ -1109,41 +1109,41 @@ END
 ### BEGIN ADDITIONAL LAYERS
 ### END ADDITIONAL LAYERS
 
-### BEGIN STARTFLAG
-#LAYER
-#  NAME startflag
-#  GROUP route
-#  TYPE POINT
-#  STATUS ON
-#  FEATURE
-#    POINTS ### STARTFLAGPOINTS ### END
-#  END
-#
-#  CLASS
-#    NAME "Beginn der Route"
-#    COLOR 255 0 255
-#    SYMBOL 'startflag'
-#  END
-#END
-### END STARTFLAG
+[% IF ON_START_FLAG %]
+LAYER
+  NAME startflag
+  GROUP route
+  TYPE POINT
+  STATUS ON
+  FEATURE
+    POINTS [% START_FLAG_POINTS %] END
+  END
 
-### BEGIN GOALFLAG
-#LAYER
-#  NAME goalflag
-#  GROUP route
-#  TYPE POINT
-#  STATUS ON
-#  FEATURE
-#    POINTS ### GOALFLAGPOINTS ### END
-#  END
-#
-#  CLASS
-#    NAME "Ende der Route"
-#    COLOR 255 0 255
-#    SYMBOL 'goalflag'
-#  END
-#END
-### END GOALFLAG
+  CLASS
+    NAME "Beginn der Route"
+    COLOR 255 0 255
+    SYMBOL 'startflag'
+  END
+END
+[% END %]
+
+[% IF ON_GOAL_FLAG %]
+LAYER
+  NAME goalflag
+  GROUP route
+  TYPE POINT
+  STATUS ON
+  FEATURE
+    POINTS [% GOAL_FLAG_POINTS %] END
+  END
+
+  CLASS
+    NAME "Ende der Route"
+    COLOR 255 0 255
+    SYMBOL 'goalflag'
+  END
+END
+[% END %]
 
 # Staatsgrenzen sind "undurchdringlich", deshalb ganz oben gezeichnet
 LAYER

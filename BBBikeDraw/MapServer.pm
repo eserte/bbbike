@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.8 2003/07/06 21:55:54 eserte Exp $
+# $Id: MapServer.pm,v 1.9 2003/08/09 23:14:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -22,7 +22,7 @@ use Carp qw(confess);
 
 use vars qw($VERSION %color %outline_color %width);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -40,9 +40,22 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 	$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
 	$self->MapserverRelurl("/~eserte/mapserver/brb");
 	$self->MapserverUrl("http://www/~eserte/mapserver/brb");
-	#$self->TemplateMap("brb-ipaq.map-tpl");
 	$self->TemplateMap("brb.map-tpl");
 	$self->ImageSuffix("png");
+	$self->FontsList("fonts-vran.list");
+	$self;
+    }
+
+    sub ipaq_default { # XXX still hosts-dependent :-(
+	my $self = shift->new;
+	my(%args) = @_;
+	$self->BbbikeDir("$ENV{HOME}/src/bbbike");
+	$self->MapserverMapDir($self->BbbikeDir . "/mapserver/brb");
+	$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
+	$self->MapserverRelurl("/~eserte/mapserver/brb");
+	$self->MapserverUrl("http://www/~eserte/mapserver/brb");
+	$self->TemplateMap("brb-ipaq.map-tpl");
+	$self->ImageSuffix($args{ImageType} || "png");
 	$self->FontsList("fonts-vran.list");
 	$self;
     }
@@ -66,7 +79,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
     package BBBikeDraw::MapServer::Image;
 
     use base qw(Class::Accessor);
-    use vars qw(@accessors);
+    use vars qw(@accessors @computed_accessors);
     @accessors = qw(Conf
 		    Width Height Imagecolor Transparent BBox
 		    ColorGreyBg ColorWhite ColorYellow ColorRed ColorGreen
@@ -74,13 +87,22 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 		    ColorLightBlue ColorBlack
 		    OnFlaechen OnGewaesser OnStrassen OnUBahn OnSBahn OnRBahn
 		    OnAmpeln OnOrte OnFaehren OnGrenzen OnFragezeichen OnObst
+		    OnRoute OnStartFlag OnGoalFlag
+		    StartFlagPoints GoalFlagPoints RouteCoords
 		    MapserverDir MapserverRelurl MapserverUrl
 		    BbbikeDir ImageDir ImageSuffix FontsList
 		   );
+    @computed_accessors = qw(ImageType);
+
     __PACKAGE__->mk_accessors(@accessors);
 
+    sub ImageType {
+	my $suffix = shift->ImageSuffix;
+	uc($suffix);
+    }
+
     use Template;
-    use File::Temp qw(tempdir);
+    use File::Temp qw(tempfile);
 
     sub new {
 	my($package, $w, $h) = @_;
@@ -103,8 +125,8 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 		die "No configuration supplied --- set self->{Image}->Conf";
 	    }
 	}
-	my $tmpdir = tempdir(CLEANUP => 1);
-	my $mapfile = "$tmpdir/brb-ipaq.$$.map";
+	my($mapfh, $mapfile) = tempfile(UNLINK => 1,
+					SUFFIX => ".map");
 	$self->BbbikeDir($conf->BbbikeDir);
 	$self->ImageDir($self->BbbikeDir . "/images");
 	my $mapserver_dir = $conf->MapserverMapDir;
@@ -119,7 +141,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 			      ABSOLUTE => 1,
 			     );
 	my $vars = {};
-	foreach my $k (@accessors) {
+	foreach my $k (@accessors, @computed_accessors) {
 	    my $v = $self->$k();
 	    (my $k2 = $k) =~ s/(?<=.)([A-Z])/_$1/g;
 	    $k2 = uc($k2);
@@ -134,10 +156,9 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 	    $vars->{$k2} = $v;
 	}
 
-	open(MAP, ">$mapfile") or die "Can't write to $mapfile: $!";
 	$t->process("$mapserver_dir/" . $conf->TemplateMap,
-		    $vars, \*MAP) || die $t->error;
-	close MAP;
+		    $vars, $mapfh) || die $t->error;
+	close $mapfh;
 
 	open(SHP2IMG, "-|") or do {
 	    exec("$mapserver_bin_dir/shp2img",
@@ -321,11 +342,19 @@ sub draw_scale {
 }
 
 sub draw_route {
-    die "draw_route: NYI";
-#      my $self = shift;
-#      my $im        = $self->{Image};
-#      my $transpose = $self->{Transpose};
-#      my(@c1)       = @{ $self->{C1} };
+    my $self = shift;
+
+    $self->pre_draw if !$self->{PreDrawCalled};
+
+    my $im = $self->{Image};
+    $im->OnRoute(1);
+    $im->OnStartFlag(1);
+    $im->OnGoalFlag(1);
+    my(@c1) = @{ $self->{C1} };
+    $im->RouteCoords(join " ", map { @$_ } @c1);
+    $im->StartFlagPoints(join " ", @{ $c1[0] });
+    $im->GoalFlagPoints(join " ", @{ $c1[-1] });
+
 #      my $strnet; # StrassenNetz-Objekt
 
 #      foreach (@{$self->{Draw}}) {

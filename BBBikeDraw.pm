@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.31 2003/06/25 05:36:40 eserte Exp eserte $
+# $Id: BBBikeDraw.pm,v 3.32 2003/08/09 23:13:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.31 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.32 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, %args) = @_;
@@ -169,8 +169,21 @@ sub pre_draw {
     $self->{PreDrawCalled}++;
     if (!defined $self->{Min_x}) { # XXX condition may be dangerous
 	$self->dimension_from_route;
+    } else {
+	$self->_set_c1;
     }
     $self->create_transpose;
+}
+
+sub _set_c1 {
+    my $self = shift;
+    my(@coords) = @{ $self->{Coords} };
+    my @c1;
+    foreach (@coords) {
+	my($x, $y) = split(/,/, $_);
+	push @c1, [$x,$y];
+    }
+    $self->{C1}    = \@c1;
 }
 
 sub dimension_from_route {
@@ -681,6 +694,8 @@ sub mimetype {
     my $self = shift;
     if ($self->{ImageType} =~ /^svg$/) {
 	"image/svg+xml";
+    } elsif ($self->{ImageType} =~ /^wbmp$/) {
+	"image/vnd.wap.wbmp";
     } else {
 	($self->{ImageType} =~ /^pdf$/ ? "application" : "image") . "/"
 	    . $self->{ImageType};

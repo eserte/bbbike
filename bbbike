@@ -10312,6 +10312,16 @@ Dämmerung bis:
 
 EOF
 	}
+
+	if (defined &show_info_ext) {
+	    eval {
+		my $txt = show_info_ext($c, @tags);
+		if (defined $txt) {
+		    $info_text->insert("end", "$txt\n");
+		}
+	    };
+	    warn $@ if $@;
+	}
     };
 
     my(%info, $info_file);

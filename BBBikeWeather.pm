@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeWeather.pm,v 1.1 2003/05/04 19:56:12 eserte Exp $
+# $Id: BBBikeWeather.pm,v 1.1 2003/05/04 19:56:12 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -146,6 +146,7 @@ sub BBBikeWeather::update_weather {
 # Eine lokal vorhandene Wetterdatenbank, falls vorhanden, wird angezeigt.
 # Der Benutzer kann einen Eintrag auswählen, der dann diese Daten für
 # die aktuellen Wetterdaten nimmt.
+# Return reference to newly created Toplevel
 ### AutoLoad Sub
 sub BBBikeWeather::show_weather_db {
     my($type, $filename) = @_;
@@ -199,6 +200,7 @@ sub BBBikeWeather::show_weather_db {
 			      -width => 50,
 			      -command => $select_sub,
 			     )->pack(-expand => 1, -fill => 'both');
+	$top->Advertise(List => $lb);
 	eval {
 	    require Tk::ItemStyle;
 	    require Tk::resizeButton;
@@ -274,6 +276,7 @@ EOF
 	$t->bind('<<CloseWin>>' => sub { $cb->invoke });
     };
     DecBusy($top);
+    $top;
 }
 
 # Parset eine Zeile mit Wetterdaten, die entweder aus dem Web oder aus der

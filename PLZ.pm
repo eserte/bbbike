@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.46 2003/08/07 23:25:39 eserte Exp $
+# $Id: PLZ.pm,v 1.46 2003/08/07 23:25:39 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998, 2000, 2001, 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998, 2000, 2001, 2002, 2003 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,6 +14,8 @@
 
 package PLZ;
 use strict;
+# Setting $OLD_AGREP to a true value really means: use String::Approx
+# instead or no agrep at all.
 use vars qw($PLZ_BASE_FILE @plzfile $OLD_AGREP $VERSION $VERBOSE $sep);
 use locale;
 use BBBikeUtil;
