@@ -216,7 +216,7 @@ $PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.111 $ =~ /(\d+)\.(\d+)/);
 
 # OS related
 $progname = basename($0);
-$devel_host = ($ENV{HOST} && $ENV{HOST} =~ /^(vran|cabulja|cvrsnica|spiff)/i);
+$devel_host = ($ENV{HOST} && $ENV{HOST} =~ /^(vran|cabulja|cvrsnica|spiff|devpc01.iconmobile.de)/i);
 $os = (($^O eq 'MSWin32' || $^O eq 'os2' || $^O eq 'dos')
        ? 'win'
        : ($^O eq 'MacOS'
@@ -10746,12 +10746,14 @@ sub addpoint_xy {
 			    if ($r && $r->[Strassen::NAME] =~ /(\d+)%/) {
 				$grade = $1 * $grade_direction;
 			    }
+			    $grade_length = Strassen::Util::strecke
+				([$prev_x,$prev_y],[$x,$y]);
 			}
 		    }
 		}
 		if ((defined $grade &&
-		     ($grade_length >= $grade_minimum_short_length && abs($grade) >= $grade_minimum) ||
-		     ($grade_length < $grade_minimum_short_length && abs($grade) >= $grade_minimum_short)) ||
+		     (($grade_length >= $grade_minimum_short_length && abs($grade) >= $grade_minimum) ||
+		      ($grade_length < $grade_minimum_short_length && abs($grade) >= $grade_minimum_short))) ||
 		    (!defined $grade && defined $grade_direction)) {
 		    $c->createImage
 			(@grade_symbol_pos,
@@ -12680,8 +12682,8 @@ sub search_route {
 # 	    my $res_ref = $res_list[$i];
 # 	    next if (!ref $res_ref or !@$res_ref);
 # 	    @res = @$res_ref;
- 	    foreach (@path) {
- 		my($x, $y) = @$_;
+ 	    foreach my $p (@path) {
+ 		my($x, $y) = @$p;
  		addpoint_xy($x, $y, transpose($x, $y));
  	    }
  	    undef $power_cache;
