@@ -31,6 +31,7 @@ use Storable qw(dclone);
 my $test;
 my $inputfile;
 my $oldfile;
+my $do_diffcount;
 my $quiet;
 my $force;
 my $listing_url = "http://www.vmz-berlin.de/vmz/trafficspotmap.do";
@@ -40,19 +41,21 @@ my @output_as;
 if (!GetOptions("test" => \$test,
 		"i|inputfile=s" => \$inputfile,
 		"old|oldffile=s" => \$oldfile,
+		"diffcount" => \$do_diffcount,
 		"q" => \$quiet,
 		"f" => \$force,
 		'outputas=s@' => \@output_as,
 	       )) {
     die <<EOF;
-usage: $0 [-test] [-i|-inputfile file] [-old|-oldfile file] [-q] [-outputas type] ...
+usage: $0 [-test] [-i|-inputfile file] [-old|-oldfile file]
+          [-diffcount] [-q] [-outputas type] ...
 
 Multiple -outputas optione are possible, default is "text". -outputas
 is of the form "type:file". If ":file" is left, then the output goes
 to stdout. file must not exist. type may be text, bbd, dump (perl
 dump) and yaml.
 
--inputfile has to be a YAML file for now.
+-inputfile and -oldfile have to be YAML files.
 EOF
 }
 
@@ -102,6 +105,16 @@ if ($inputfile) {
 
 if ($oldfile) {
     @detail_links = diff();
+    if ($do_diffcount) {
+	my $diffcount = grep { $_->{text} !~ /^UNCHANGED/ } @detail_links;
+	if (!$diffcount) {
+	    warn "No changes.\n" if !$quiet;
+	    exit 0;
+	} else {
+	    warn "There are $diffcount changes.\n" if !$quiet;
+	    exit $diffcount;
+	}
+    }
 }
 
 if (exists $output_as{'text'}) {
