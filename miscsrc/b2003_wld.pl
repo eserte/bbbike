@@ -1,0 +1,59 @@
+#!/usr/bin/perl
+
+# create worldfiles for mapserver from b2003 files
+
+use strict;
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+use Karte;
+use File::Basename;
+
+Karte::preload(qw(Standard Berlinmap2003));
+
+my $map_dir = "/usr/www/berlin/map2003";
+my $mapserver_data_dir = "$FindBin::RealBin/../mapserver/brb/data";
+
+chdir $mapserver_data_dir or die "Can't chdir to $mapserver_data_dir: $!";
+
+my $o = $Karte::Berlinmap2003::obj;
+
+open(MAP_INC, ">/tmp/mapinc") or die $!;
+
+for my $f (glob("$map_dir/*.png")) {
+    my $base = basename $f;
+    warn "$base...\n";
+    my($mx, $my) = $base =~ /(\d+)_(\d+)/;
+    $my = 100 - $my;
+    if (!-e $base) {
+	symlink $f, $base;
+    }
+    (my $wld_file = $base) =~ s/\.png/.wld/;
+    if (!-e $wld_file) {
+	my($dx, $dy) = $o->map2standard($mx * $o->{Width},
+					$my * $o->{Height});
+	open(WLD, ">$wld_file") or die "Can't write to $wld_file: $!";
+	print WLD <<EOF;
+$o->{X1}
+$o->{X2}
+$o->{Y1}
+$o->{Y2}
+$dx
+$dy
+EOF
+	close WLD;
+    }
+
+    print MAP_INC <<EOF;
+LAYER
+  NAME "Map_${mx}_${my}"
+  DATA "$base"
+  TYPE RASTER
+  STATUS DEFAULT
+END
+
+EOF
+}
+
+close MAP_INC;
