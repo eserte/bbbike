@@ -13,16 +13,16 @@ use lib ("$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/../data",
 	);
 use Strassen;
-use Strassen::StrassenNetzNew;
 
 BEGIN {
     if (!eval q{
 	use Test::More;
         use YAML;
+	use Strassen::StrassenNetzNew;
 	require "$FindBin::RealBin/../miscsrc/XXX_new_comments.pl";
 	1;
     }) {
-	print "1..0 # skip: no Test::More, YAML modules or new_comments script\n";
+	print "1..0 # skip: no Test::More, YAML, Strassen::StrassenNetzNew modules or new_comments script\n";
 	exit;
     }
 }
