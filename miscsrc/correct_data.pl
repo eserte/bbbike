@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: correct_data.pl,v 1.10 2004/03/13 13:37:05 eserte Exp $
+# $Id: correct_data.pl,v 1.14 2004/06/07 23:04:54 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -40,9 +40,17 @@ my $corr_data = "$FindBin::RealBin/../misc/gps_correction_all.dat";
 my $ref_dist = "10000,20000,40000";
 use vars qw($v_output $minpoints @ref_dist $reverse);
 _init_ref_dist();
+$v_output = 0 if !defined $v_output;
 my $file;
 my %conv;
 my $s;
+my $keep_everything;
+my $in_place;
+my $force;
+my $in_berlin_check;
+my $in_berlin_sub;
+# See also data_corrected/Makefile
+my @INNER_BERLIN_COORDS = qw(-5400 19500 20800 1950);
 
 sub process {
     local @ARGV = @_;
@@ -52,12 +60,19 @@ sub process {
 
     if (!GetOptions("refdist=s" => \$ref_dist,
 		    "correction=s" => \$corr_data,
-		    "verboseoutput!" => \$v_output,
+		    "verboseoutput|v+" => \$v_output,
 		    "convdata=s" => \$conv_data_file,
 		    "minpoints=s" => \$minpoints,
 		    "reverse!" => \$reverse,
+		    "keepeverything!" => \$keep_everything,
+		    "inplace!" => \$in_place,
+		    "f|force!" => \$force,
+		    "inberlincheck!" => \$in_berlin_check,
 		   )) {
-	die "usage: $0 [-refdist dist1,dist2,...] [-correction datfile] [-verboseoutput] [-minpoints ...] [-convdata ...] [-reverse] streetfile";
+	die <<EOF;
+usage: $0 [-refdist dist1,dist2,...] [-correction datfile] [-verboseoutput ...] [-minpoints ...] [-convdata ...] [-reverse] [-keepeverything]
+[-inplace] [-force] [-inberlincheck] streetfile
+EOF
     }
     _init_ref_dist();
 
@@ -70,14 +85,86 @@ sub process {
 	or die "Can't tie $conv_data_file: $!";
     }
 
-    $s = Strassen->new($file);
-    iterate {
-	my $new_coords_ref = &convert_record;
-	if ($new_coords_ref) {
-	    $_->[Strassen::COORDS] = $new_coords_ref;
-	    print Strassen::arr2line2($_), "\n";
+    if ($in_berlin_check) {
+	require List::Util;
+	require VectorUtil;
+
+	system("$FindBin::RealBin/combine_streets.pl -closedpolygon $FindBin::RealBin/../data/berlin > /tmp/berlin_polygon.bbd") == 0 or
+	    die "Creating berlin_polygon.bbd";
+
+	my $berlin = Strassen->new("/tmp/berlin_polygon.bbd");
+	my @polygon = map { [ split /,/, $_ ] } @{ $berlin->get(0)->[Strassen::COORDS] };
+
+	my $minx = List::Util::min(map { $_->[0] } @polygon);
+	my $miny = List::Util::min(map { $_->[1] } @polygon);
+	my $maxx = List::Util::max(map { $_->[0] } @polygon);
+	my $maxy = List::Util::max(map { $_->[1] } @polygon);
+
+ 	my $in_berlin_sub = sub {
+ 	    my $c = shift;
+	    my($px,$py) = split /,/, $c;
+	    return 1 if (VectorUtil::point_in_grid($px,$py,@INNER_BERLIN_COORDS));
+	    return 0 if (!VectorUtil::point_in_grid($px,$py,$minx,$miny,$maxx,$maxy));
+	    return 1 if (VectorUtil::point_in_polygon([$px,$py],\@polygon));
+	    return 0;
+	};
+    }
+
+    my $in_place_file;
+    if ($in_place) {
+	require File::Temp;
+	(my($fh),$in_place_file) = File::Temp::tempfile();#XXXUNLINK => 1);
+	select $fh;
+    }
+
+    if ($keep_everything) {
+	$s = Strassen->new($file, NoRead => 1);
+	my $fh = $s->open_file;
+	while(<$fh>) {
+	    my $l = $_;
+	    my $r = Strassen::parse($l);
+	    if ($l =~ /^\s*#/ ||
+		!$r->[Strassen::COORDS] || !@{ $r->[Strassen::COORDS] }) {
+		print $l;
+	    } else {
+		local $_ = $r;
+		my $new_coords_ref = &convert_record;
+		if ($new_coords_ref) {
+		    $r->[Strassen::COORDS] = $new_coords_ref;
+		    print Strassen::arr2line2($r), "\n";
+		}
+	    }
 	}
-    } $s;
+    } else {
+	$s = Strassen->new($file);
+	iterate {
+	    my $new_coords_ref = &convert_record;
+	    if ($new_coords_ref) {
+		$_->[Strassen::COORDS] = $new_coords_ref;
+		print Strassen::arr2line2($_), "\n";
+	    }
+	} $s;
+    }
+
+    if ($in_place_file) {
+	select STDOUT;
+
+	require File::Compare;
+	require File::Copy;
+	if (File::Compare::compare($file, $in_place_file) != 0) {
+	    if (!$force) {
+		print STDERR "Overwrite $file? (Y/n) ";
+		my $ans = <STDIN>;
+		if ($ans =~ /^n/i) {
+		    die "Do not overwrite $file\n";
+		}
+	    }
+	    File::Copy::copy($in_place_file, $file) or
+		    die "Can't copy $in_place_file to $file: $!";
+	} else {
+	    warn "No change in $file\n";
+	}
+    }
 
     untie %conv;
 }
@@ -95,9 +182,28 @@ sub convert_record {
     my $coord_i = -1;
     for my $c (@{ $_->[Strassen::COORDS] }) {
 	$coord_i++;
-	if (exists $conv{$c}) {
-	    push @new_coords, $conv{$c};
+
+	(my $real_c = $c) =~ s/^(:.*:)//;
+	my $pre_label = $1 || "";
+
+	my $new_c;
+	if ($real_c !~ /^[-+]?\d+,[-+]?\d+$/) {
+	    $new_c = $real_c;
+	    goto PUSH;
+	}
+
+	if (exists $conv{$real_c}) {
+	    $new_c = $conv{$real_c};
 	} else {
+
+	    if ($in_berlin_sub) {
+		if ($in_berlin_sub->($real_c)) {
+		    $new_c = $real_c;
+		    # but do not add to %conv
+		    goto PUSH;
+		}
+	    }
+
 	    eval {
 	    TRY: {
 		    my $loop_i = -1;
@@ -112,22 +218,22 @@ sub convert_record {
 			my $ret = BBBike::Convert::process(@args);
 			my $count = delete $ret->{Count};
 			print "# $_->[Strassen::NAME], Pos=" . $s->pos . "\n"
-			    if !$comment_printed && $s;
+			    if $v_output && !$comment_printed && $s;
 			$comment_printed++;
 			print "# coord_i=$coord_i, coord=$c, refdist=$ref_dist: $count sample(s)\n"
-			    if $v_output;
+			    if $v_output >= 2;
 			next if ($count < $minpoints);
 			my $k_obj = Karte::create_obj("Karte::Custom", %$ret);
-			my $new_c;
+			my $_new_c;
 			if ($reverse) {
-			    $new_c = join(",", map { int }
-					  $k_obj->standard2map(split /,/, $c));
+			    $_new_c = join(",", map { int }
+					   $k_obj->standard2map(split /,/, $c));
 			} else {
-			    $new_c = join(",", map { int }
-					  $k_obj->map2standard(split /,/, $c));
+			    $_new_c = join(",", map { int }
+					   $k_obj->map2standard(split /,/, $c));
 			}
-			$conv{$c} = $new_c;
-			push @new_coords, $new_c;
+			$conv{$c} = $_new_c;
+			$new_c = $_new_c;
 			last TRY;
 		    }
 		    die;
@@ -138,10 +244,16 @@ sub convert_record {
 		my $msg = "# $_->[Strassen::NAME]";
 		if ($s) { $msg .= ", Pos=" . $s->pos }
 		$msg .= " ($c): cannot convert\n";
-		print $msg if $v_output;
+		print $msg if $v_output >= 2;
 		warn $msg;
 		return;
 	    }
+	}
+
+    PUSH:
+	if (defined $new_c) {
+	    $new_c = "$pre_label$new_c";
+	    push @new_coords, $new_c;
 	}
     }
     \@new_coords;

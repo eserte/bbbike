@@ -118,7 +118,7 @@ sub radweg_edit_modus {
     require Radwege;
     $special_edit = 'radweg';
 #XXX utilize $edit_normal_mode?
-    switch_edit_berlin_mode() if (!defined $edit_mode or $edit_mode ne 'b');
+#XXX    switch_edit_berlin_mode() if (!defined $edit_mode or $edit_mode ne 'b');
     radweg_open();
     unless ($str_draw{'s'}) {
 	plot('str','s', -draw => 1);
@@ -423,6 +423,8 @@ sub BBBikeEdit::radweg_draw_canvas {
 	    my($x1, $y1, $x2, $y2) = (split(/,/, $l->[0]),
 				      split(/,/, $l->[1]),
 				     );
+	    ($x1,$y1) = transpose($x1,$y1);
+	    ($x2,$y2) = transpose($x2,$y2);
 	    my $alpha = atan2($y2-$y1, $x2-$x1);
 	    my $beta  = $alpha-3.141592653/2;
 	    my($dx, $dy) = (3*cos($beta), 3*sin($beta));

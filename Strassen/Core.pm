@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.41 2004/05/21 22:26:37 eserte Exp $
+# $Id: Core.pm,v 1.42 2004/06/07 21:58:01 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.41 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -175,8 +175,9 @@ sub new {
     $self;
 }
 
-sub read_data {
+sub open_file {
     my($self, %args) = @_;
+
     my $file = $self->{File};
     if ($self->{IsGzipped}) {
 	die "Can't execute zcat $file" if !open(FILE, "gzip -dc $file |");
@@ -187,6 +188,13 @@ sub read_data {
     $self->{Modtime} = (stat($file))[STAT_MODTIME];
     binmode FILE;
 
+    \*FILE;
+}
+
+sub read_data {
+    my($self, %args) = @_;
+    my $file = $self->open_file(%args);
+
     my @data;
     my @directives;
     my %global_directives;
@@ -196,13 +204,13 @@ sub read_data {
     my @line_directive;
     my @block_directives;
     if ($args{PreserveLineInfo}) {
-	while (<FILE>) {
+	while (<$file>) {
 	    next if m{^(\#|\s*$)};
 	    push @data, $_;
 	    $self->{LineInfo}[$#data] = $.;
 	}
     } else {
-	while (<FILE>) {
+	while (<$file>) {
 	    if (/^\#:\s*([^\s:]+):?\s*(.*)$/) {
 		my($directive, $value_and_marker) = ($1, $2);
 		$directive = $directive_aliases{$directive}
@@ -253,7 +261,7 @@ sub read_data {
 	die "Stray line directive `@line_directive' at end of file";
     }
     warn "... done\n" if ($VERBOSE && $VERBOSE > 1);
-    close FILE;
+    close $file;
 
     $self->{Data} = \@data;
     $self->{Directives} = \@directives;
@@ -578,12 +586,13 @@ sub arr2line2 {
     "$name\t$arg->[CAT] " . join(" ", @{ $arg->[COORDS] });
 }
 
+# This is a static method
 sub parse {
     my $line = shift;
     return [undef, [], undef] if !$line;
     my $tab_inx = index($line, "\t");
     if ($tab_inx < 0) {
-	warn "Probably tab character is missing\n";
+	warn "Probably tab character is missing\n" if $VERBOSE;
 	[$line];
     } else {
 	my @s = split /\s+/, substr($line, $tab_inx+1);

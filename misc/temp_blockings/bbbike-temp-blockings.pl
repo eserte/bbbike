@@ -395,4 +395,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'CSD am 26.06.2004 von 9.30 Uhr bis 24.00 Uhr',
        type  => 'gesperrt',
      },
+     { from  => 1088892000, # 2004-07-04 00:00
+       until => 1093903200, # 2004-08-31 00:00
+       file  => 'herzfelde.bbd',
+       text  => 'B 1; (Hauptstr.); OD Herzfelde Kanal- und Straßenbau Vollsperrung 05.07.2004-30.08.2004 ',
+       type  => 'handicap',
+     },
     );
