@@ -257,6 +257,7 @@ $OK_LAST_MODIFIED_RESPONSE = 1;
              'jpg',  'image/jpeg',
              'png',  'image/png',
              'xbm',  'image/x-xbitmap',
+	     'css',  'text/css',
 );
 
 # administrator-modified hook functions into web server
