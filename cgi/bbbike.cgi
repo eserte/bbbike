@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.20 2005/03/17 00:08:07 eserte Exp eserte $
+# $Id: bbbike.cgi,v 7.21 2005/03/19 11:11:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -664,7 +664,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.20 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.21 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3114,18 +3114,49 @@ sub search_coord {
 	    }
 
 	    if ($with_comments && $comments_net) {
-		my @comments;
+		my @comment_objs;
 		my %seen_comments_in_this_etappe;
+		my %comments_in_whole_etappe;
+		my $is_first = 1;
 		for my $i ($strnames[$i]->[4][0] .. $strnames[$i]->[4][1]) {
-		    my @etappe_comments = $comments_net->get_point_comment(\@path, $i, undef);
-		    foreach my $etappe_comment (@etappe_comments) {
-			$etappe_comment =~ s/^.+?:\s+//; # strip street
-			if (!exists $seen_comments_in_this_etappe{$etappe_comment}) {
-			    push @comments, $etappe_comment;
-			    $seen_comments_in_this_etappe{$etappe_comment}++;
+		    my @etappe_comment_objs = $comments_net->get_point_comment(\@path, $i, undef, AsObj => 1);
+		    for (@etappe_comment_objs) {
+			(my $name = $_->[Strassen::NAME()]) =~ s/^.+?:\s+//; # strip street;
+			$_ = [$name, $_];
+		    }
+		    my %etappe_comments = map {($_->[0],1)} @etappe_comment_objs;
+		    foreach my $etappe_comment_obj (@etappe_comment_objs) {
+			if (!exists $seen_comments_in_this_etappe{$etappe_comment_obj->[0]}) {
+			    push @comment_objs, $etappe_comment_obj;
+			    $seen_comments_in_this_etappe{$etappe_comment_obj->[0]}++;
+			}
+		    }
+		    if ($is_first) {
+			%comments_in_whole_etappe = %etappe_comments;
+			$is_first = 0;
+		    } else {
+			while(my($k,$v) = each %comments_in_whole_etappe) {
+			    if (!exists $etappe_comments{$k}) {
+				delete $comments_in_whole_etappe{$k};
+			    }
 			}
 		    }
 		}
+		for (@comment_objs) {
+		    # Alle Kommentare, die sich nur auf Teilstrecken
+		    # beziehen, bekommen ein Anhängsel. Ausnahme:
+		    # PI-Anweisungen. Eigentlich müsste alles, was
+		    # sich in comments_path befindet, ausgenommen
+		    # werden, aber ich bekomme zurzeit die Info nicht
+		    # heraus.
+		    if (!exists $comments_in_whole_etappe{$_->[0]} &&
+			$_->[1]->[Strassen::CAT()] !~ /^PI/) {
+			$_->[0] .= " (Teilstrecke)";
+		    }
+		}
+
+		my @comments = map { $_->[0] } @comment_objs;
+
 		for my $i ($strnames[$i]->[4][0] .. $strnames[$i]->[4][1]) {
 		    my $point = join ",", @{ $path[$i] };
 		    if (exists $comments_points->{$point}) {
@@ -5562,7 +5593,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/03/17 00:08:07 $';
+    my $cgi_date = '$Date: 2005/03/19 11:11:22 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

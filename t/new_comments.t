@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: new_comments.t,v 1.1 2005/03/17 22:50:24 eserte Exp eserte $
+# $Id: new_comments.t,v 1.2 2005/03/19 11:14:05 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -18,27 +18,48 @@ use Strassen::StrassenNetzNew;
 BEGIN {
     if (!eval q{
 	use Test::More;
-	die if ! -r "$FindBin::RealBin/../miscsrc/XXX_new_comments.pl";
+        use YAML;
+	require "$FindBin::RealBin/../miscsrc/XXX_new_comments.pl";
 	1;
     }) {
-	print "1..0 # skip: no Test::More module or new_comments script\n";
+	print "1..0 # skip: no Test::More, YAML modules or new_comments script\n";
 	exit;
     }
 }
 
-BEGIN { plan tests => 1 }
 
-require "$FindBin::RealBin/../miscsrc/XXX_new_comments.pl";
+my @tests = (
+	     ["700,1000", "1000,1600", <<EOF, "Kombination von gleichen Abschnitten"],
+- ''
+- 'bis Königsberger Str.: Route H, Parkweg, OK'
+- ~
+EOF
+
+	     ["2000,1000", "1700,1300", <<EOF, "Punktkommentare"],
+- ''
+- Einfahrt in Hausdurchgang
+- ~
+EOF
+	     ["2000,1000", "2000,1600", <<EOF, "Kein Punktkommentar"],
+- ''
+- ~
+EOF
+	    );
+
+plan tests => scalar @tests;
 
 my $str_data = <<EOF;
 Foobar	N 700,1000 1000,1000
 Promenade, am Teltowkanal	N 1000,1000 1000,1300 1000,1600
 Königsberger Str.	N 700,1300 1000,1300
+Frankfurter Allee	H 2000,1000 2000,1200 2000,1300 2000,1600
+(Kreutziger Str. - Frankfurter Allee)	NN 1700,1300 2000,1300
 EOF
 
 my $qs_data = <<EOF;
 Promenade: Route H	CS 1000,1000 1000,1300
 Promenade: Parkweg, OK	Q1 1000,1000 1000,1300
+Frankfurter Allee - Kreutzigerstr.: Einfahrt in Hausdurchgang	CP; 2000,1200 2000,1300 1700,1300
 EOF
 
 my $str = Strassen->new_from_data_string($str_data);
@@ -63,22 +84,25 @@ NewComments::set_data($net, $qs_net);
 
 ## Setup end
 
-my($route) = $net->search("700,1000", "1000,1600",
-			  AsObj => 1,
-			 );
+for my $test (@tests) {
+    my($from, $to, $expected, $desc) = @$test;
+    my($route) = $net->search($from, $to,
+			      AsObj => 1,
+			     );
 
-my $res = $net->extended_route_info(Route => $route,
-				    City => "Berlin_DE",
-				    GoalName => "Ziel!",
-				    HandicapNet => $handicap_net,
-				    CommentsNet => $comments_net,
-				    CommentsPoints => $comments_points,
-				    FragezeichenNet => $fragezeichen_net,
-				   );
-NewComments::process_data($res);
+    my $res = $net->extended_route_info(Route => $route,
+					City => "Berlin_DE",
+					GoalName => "Ziel!",
+					HandicapNet => $handicap_net,
+					CommentsNet => $comments_net,
+					CommentsPoints => $comments_points,
+					FragezeichenNet => $fragezeichen_net,
+				       );
+    NewComments::process_data($res);
 
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([
- map { $_->{Comment} } @{$res->{Route}}
-],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+    my $comments = [ map { $_->{Comment} } @{$res->{Route}} ];
+    is(YAML::Dump($comments), "--- #YAML:1.0\n$expected", $desc)
+	or diag NewComments::output_data($res);
+}
 
 __END__

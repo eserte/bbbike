@@ -190,14 +190,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1111100400,
-         'text' => 'Augsburger Str. (Charlottenburg) in beiden Richtungen zwischen Joachimstaler Str. und Rankestr. Baustelle, Straﬂe vollst‰ndig gesperrt (Kranarbeiten) (bis 17.03.2005)',
-         'from' => 1110917391,
-         'data' => 'userdel	2 5636,10626 5479,10719
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1122674400,
          'text' => 'K 6738; (L 36 nˆrdl. Steinhˆfel-M¸ncheberg); OD Tempelberg Straﬂenausbau Vollsperrung 07.03.2005-29.07.2005 ',
@@ -217,8 +210,8 @@ userdel	q4 -18080,-12637 -17374,-13449
          'type' => 'handicap'
        },
        {
-         'until' => 1114380000,
-         'text' => 'Sterndamm (Treptow) in Richtung Rudow zwischen Kˆnigsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt (bis 24.04.2005)',
+         'until' => 1111791600,
+         'text' => 'Sterndamm (Treptow) in Richtung Rudow zwischen Kˆnigsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt (bis 25.03.2005)',
          'from' => 1110232931,
          'data' => 'userdel	1 17518,4644 17428,4503
 ',
@@ -244,22 +237,8 @@ userdel	q4 22217,1108 22162,1067
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1111013999,
-         'text' => 'Kantstraﬂe Richtung Spandau: Zwischen Kreuzung Hardenbergstraﬂe und Kreuzung Joachimstaler Straﬂe gesperrt, Dauer: 16.03.2005 06:00 Uhr bis 16:00 Uhr (Filmarbeiten) ',
-         'from' => 1110862800,
-         'data' => 'userdel	1 5652,11004 5613,10963 5505,10971
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1111168800,
-         'text' => 'Die Stadthausstraﬂe ist zwischen T¸rschmidtstraﬂe und Archibaldweg gesperrt. Grund Bauarbeiten. Dauer: 14.03.05, 09.00 Uhr bis 18.03.05, 19.00 Uhr. ',
-         'from' => 1110700800,
-         'data' => 'userdel	2 15657,10846 15628,10915
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1114034400,
          'text' => 'B 246; (Gerichtsstr.); OL Zossen, zw. Friedhofsweg u. Luchweg Straﬂenbauarbeiten Vollsperrung 29.03.2005-20.04.2005 ',

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.49 2005/03/15 23:09:23 eserte Exp eserte $
+# $Id: StrassenNetz.pm,v 1.50 2005/03/19 11:11:44 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -29,7 +29,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.49 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.50 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz;
 use strict;
@@ -1586,9 +1586,10 @@ sub route_info {
 # $seen: optional hash reference of seen comments XXX Rundfahrten?
 # XXX flaky.
 # XXX support for ":" in categories missing (except for PI)
-# XXX %args unused
+# $args{AsObj} = 1: return a full Strasse object instead of the name
 sub get_point_comment {
     my($self, $routeref, $routeinx, $seen, %args) = @_;
+    my $as_obj = $args{AsObj};
     return if $routeinx == $#$routeref;
     my $xy1 = join ",", @{ $routeref->[$routeinx] };
     my $xy2 = join ",", @{ $routeref->[$routeinx+1] };
@@ -1635,7 +1636,7 @@ sub get_point_comment {
 		if (($r->[Strassen::COORDS()][0] eq $xy0 || $r->[Strassen::COORDS()][0] eq '*') &&
 		    ($r->[Strassen::COORDS()][1] eq $xy1 || $r->[Strassen::COORDS()][1] eq '*') &&
 		    ($r->[Strassen::COORDS()][2] eq $xy2 || $r->[Strassen::COORDS()][2] eq '*')) {
-		    push @res, $r->[Strassen::NAME()];
+		    push @res, $r;
 		    next POS;
 		}
 	    }
@@ -1648,7 +1649,7 @@ sub get_point_comment {
 		    (($r->[Strassen::COORDS()][0] eq $xy2 || $r->[Strassen::COORDS()][2] eq '*') &&
 		     ($r->[Strassen::COORDS()][1] eq $xy1 || $r->[Strassen::COORDS()][1] eq '*') &&
 		     ($r->[Strassen::COORDS()][2] eq $xy0 || $r->[Strassen::COORDS()][0] eq '*'))) {
-		    push @res, $r->[Strassen::NAME()];
+		    push @res, $r;
 		    next POS;
 		}
 	    }
@@ -1657,7 +1658,7 @@ sub get_point_comment {
 		if ($r->[Strassen::COORDS()][$i] eq $xy1 &&
 		    $r->[Strassen::COORDS()][$i+1] eq $xy2) {
 		    $seen->{$pos1}++ if $seen;
-		    push @res, $r->[Strassen::NAME()];
+		    push @res, $r;
 		    next POS;
 		}
 	    }
@@ -1668,7 +1669,7 @@ sub get_point_comment {
 		    ($r->[Strassen::COORDS()][$i+1] eq $xy1 &&
 		     $r->[Strassen::COORDS()][$i] eq $xy2)) {
 		    $seen->{$pos1}++ if $seen;
-		    push @res, $r->[Strassen::NAME()];
+		    push @res, $r;
 		    next POS;
 		}
 	    }
@@ -1680,7 +1681,7 @@ sub get_point_comment {
 		    last CHECK if ($r->[Strassen::COORDS()][$i] ne $xy);
 		}
 		$seen->{$pos1}++ if $seen;
-		push @res, $r->[Strassen::NAME()];
+		push @res, $r;
 		next POS;
 	    }
 	} elsif ($r->[Strassen::CAT()] =~ /^P0;?$/) {
@@ -1708,12 +1709,17 @@ sub get_point_comment {
 		}
 		if ($yes) {
 		    $seen->{$pos1}++ if $seen;
-		    push @res, $r->[Strassen::NAME()];
+		    push @res, $r;
 		    next POS;
 		}
 	    }
 	}
     }
+
+    if (!$as_obj) {
+	@res = map { $_->[Strassen::NAME()] } @res;
+    }
+
     if (UNIVERSAL::isa($pos, "ARRAY")) {
 	@res;
     } else {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.152 2005/03/17 00:05:38 eserte Exp $
+# $Id: bbbike,v 3.152 2005/03/17 00:05:38 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -11091,9 +11091,9 @@ sub show_info {
 
 	my $comment_label_end_index;
 	if (@comments) {
-	    $info_text->insert("end", "\n\n" . M("Kommentare").": ");
+	    $info_text->insert("end", "\n\n" . M("Kommentare").": ", "bold");
 	    $comment_label_end_index = $info_text->index("end - 1c");
-	    $info_text->insert("end", join("\n", @comments), "comments_text");
+	    $info_text->insert("end", "\t" . join("\n\t", @comments), "comments_text");
 #XXXdel:	    $comments[0] = "Kommentare:\t$comments[0]";
 #	    @comments[1..$#comments] = map { "\t$_" } @comments[1..$#comments];
 #	    $info_text->insert("end", "\n\n" . join("\n", @comments));

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.14 2005/03/07 23:15:08 eserte Exp $
+# $Id: Strasse.pm,v 1.15 2005/03/19 11:12:47 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -66,7 +66,7 @@ sub de_artikel {
 	"in den";
     } elsif ($strasse =~ /(damm\b|weg\b|steig\b)/i) {
 	"in den";
-    } elsif ($strasse =~ /(platz\b)/i) {
+    } elsif ($strasse =~ /(platz\b|steg\b)/i) {
 	"auf den";
     } elsif ($strasse =~ /(ufer\b|gestell\b)/i) {
 	"in das";

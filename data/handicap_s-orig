@@ -1,4 +1,4 @@
-# $Id: handicap_s-orig,v 4.12 2005/03/16 22:13:49 eserte Exp eserte $
+# $Id: handicap_s-orig,v 4.13 2005/03/19 11:12:22 eserte Exp eserte $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Unter den Linden (Mitte) Richtung Westen zwischen Schadowstr. und Wilhelmstr. Baustelle, Straﬂe f¸r Autos gesperrt, Radfahrer kˆnnen weiterhin passieren (bis August 2005)	q1::inwork; 9028,12307 8804,12280
 Ebertstr.: bis 2005-04-30 f¸r Autofahrer gesperrt, Radfahrer kˆnnen weiterhin passieren	q1::inwork 8595,12066 8579,11917 8571,11846
@@ -19,6 +19,8 @@ Neue Promenade: Fuﬂg‰nger	q2 10294,13070 10132,12941
 Pariser Platz/Brandenburger Tor: Fuﬂg‰nger	q2 8804,12280 8610,12254 8515,12242
 Potsdamer Platz: Fuﬂg‰nger	q3 8542,11502 8490,11526
 Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3 9590,10262 9593,10238 9592,10174 9579,10122
+Mehringplatz: Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9590,10262 9508,10320 9509,10391 9569,10427 9644,10404 9662,10345 9646,10301 9590,10262
+Friedrichstr. (am Mehringplatz): Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9569,10427 9556,10565
 Gorkistr.: reger Fuﬂg‰ngerverkehr	q3 2055,20280 2116,20314 2311,20348
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5657,10868 5652,11004
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5797,10881 5831,10978
@@ -191,6 +193,7 @@ Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13468,12497 13484,12436 13472,12337
 (Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger	q1 17281,10598 17241,10865
 Verl. P¸cklerstr.: Fuﬂg‰nger, Hundeauslaufgebiet	q1 1558,6729 1170,6654 967,6620 905,6631 880,6645 832,6607 778,6603 698,6567 546,6583 369,6594 218,6571
 Weimarer Str.: Fuﬂg‰nger	q1 4092,11338 4077,11226
+Norwegerstr. - Behmstr.: Rampe	q2 10033,16232 10068,16093 10078,16164
 ######################### User Contributions #################################
 #: by: AndrÈ K‰ding
 Neustrelitzer Str.: kurvenreich	q1 16739,14733 16668,14765 16534,14740 16443,14825 16346,14750 16256,14828

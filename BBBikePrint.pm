@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.28 2004/05/17 23:37:07 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.29 2005/03/18 08:23:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -167,11 +167,11 @@ sub do_print_cmd {
     my $print_cmd_file = "$print_cmd $file";
     $t->LabEntry(-label => "Druckkommando:",
 		 -labelPack => [ -side => 'left' ],
-		 -textvariable => \$print_cmd,
+		 -textvariable => \$print_cmd_file,
 		)->pack;
     my $bf = $t->Frame->pack;
     $bf->Button(Name => 'ok',
-		-command => sub { system("$print_cmd&");
+		-command => sub { system("$print_cmd_file&");
 				  $t->destroy;
 			      })->pack(-side => 'left');
     $bf->Button(Name => 'cancel',
@@ -211,6 +211,9 @@ sub BBBikePrint::print_postscript {
     } elsif (is_in_path("ggv")) {
 	return 1 if $check_availability;
 	system("ggv $file&");
+    } elsif (is_in_path("kghostview")) {
+	return 1 if $check_availability;
+	system("kghostview $file&");
     } elsif ($os eq 'unix') {
 	# XXX Tk::Ghostscript funktioniert noch nicht so
 	# toll... besser mit gs-5.10 als mit gs-3.53

@@ -1492,8 +1492,8 @@ userdel	q4 -18080,-12637 -17374,-13449
 EOF
      },
      { from  => 1110232931, # 2005-03-07 23:02
-       until => 1114380000, # 2005-04-25 00:00
-       text  => 'Sterndamm (Treptow) in Richtung Rudow zwischen Königsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt (bis 24.04.2005)',
+       until => 1111791600, # 2005-03-26 00:00
+       text  => 'Sterndamm (Treptow) in Richtung Rudow zwischen Königsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt (bis 25.03.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1 17518,4644 17428,4503
