@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.10 2004/06/25 12:31:55 eserte Exp $
+# $Id: plz.t,v 1.11 2004/07/23 06:52:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ package main;
 
 use Test::More;
 BEGIN { eval "use Test::Differences" };
-BEGIN { plan tests => 39 }
+BEGIN { plan tests => 40 }
 
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../data", "$FindBin::RealBin/../lib");
@@ -261,19 +261,29 @@ EOF
        "U-Bahnhof")
 	or diag $dump->(\@res);
 
- TODO: { $TODO = "activate code in PLZ.pm if all U/S-Bhf. in Berlin.coords.data have coords";
-    @res = $plz->look_loop("u weberwiese",
-			   @standard_look_loop_args);
-    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'U-Bhf Weberwiese' } @{$res[0]}), 1,
-       "U-Bahnhof, abbreviated")
-	or diag $dump->(\@res);
-   }
+ TODO:
+    {
+	local $TODO = "abbreviations do not work yet";
+	@res = $plz->look_loop("u weberwiese",
+			       @standard_look_loop_args);
+	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'U-Bhf Weberwiese' } @{$res[0]}), 1,
+	   "U-Bahnhof, abbreviated")
+	    or diag $dump->(\@res);
+    }
 
     @res = $plz->look_loop("s-bahnhof heerstr",
 			   @standard_look_loop_args);
     is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Heerstr.' } @{$res[0]}), 1,
        "S-Bahnhof, long form")
 	or diag $dump->(\@res);
+
+    # A complaint by alh:
+    @res = $plz->look_loop("lehrter bahnhof",
+			   @standard_look_loop_args);
+    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Lehrter Bahnhof (Hauptbahnhof)' } @{$res[0]}), 1,
+       "U-Bahnhof")
+	or diag $dump->(\@res);
+
 }
 
 

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.22 2004/07/20 20:46:32 eserte Exp $
+# $Id: Makefile,v 2.23 2004/07/22 21:26:46 eserte Exp $
 #
 
 BBBIKEDIR=		..
@@ -139,11 +139,6 @@ landstrassen2: landstrassen2-orig
 # perl -nle '/\t(\S+)/ && print $1' sbahn | sort -u
 SBAHN_CATEGORIES=	SA SB SC S0
 
-# sbahn:	sbahn-orig
-# 	-@$(WRITEABLE) $@
-# 	$(CONVERT2HAFAS) sbahn-orig > sbahn
-# 	-@$(READONLY) $@
-
 sbahn: sbahn-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) sbahn-orig > /tmp/sbahn
@@ -158,10 +153,9 @@ sbahnhof:	sbahnhof-orig
 	$(CONVERT2HAFAS) sbahnhof-orig > sbahnhof
 	-@$(READONLY) $@
 
-# rbahn rbahnhof:	rbahn-orig
-# 	-@$(WRITEABLE) rbahn rbahnhof
-# 	$(CONVERT2HAFAS) -bahnhof=rbahnhof rbahn-orig > rbahn
-# 	-@$(READONLY) rbahn rbahnhof
+## Execute from bbbike root directory (evtl. mehrmals):
+# cp -f data/Berlin.coords.data /tmp
+# perl -Ilib -MObject::Iterate=iterate -MStrassen::Core -MTie::File -e '$s = Strassen->new("sbahnhof"); iterate { $p{$_->[Strassen::NAME]} = $_->[Strassen::COORDS][0] } $s; tie @f, "Tie::File", "/tmp/Berlin.coords.data" or die ; for (@f) { if (/^S-Bhf (.*?)\|.*\|$/ && $p{$1}) { $_ .= $p{$1}; warn "$1 $p{$1}" } }'
 
 # See SBAHN_CATEGORIES comment
 RBAHN_CATEGORIES=	RA RB RC R R0
@@ -184,6 +178,10 @@ ubahnhof:	ubahnhof-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) ubahnhof-orig > ubahnhof
 	-@$(READONLY) $@
+
+## Execute from bbbike root directory (evtl. mehrmals):
+# cp -f data/Berlin.coords.data /tmp
+# perl -Ilib -MObject::Iterate=iterate -MStrassen::Core -MTie::File -e '$s = Strassen->new("ubahnhof"); iterate { $p{$_->[Strassen::NAME]} = $_->[Strassen::COORDS][0] } $s; tie @f, "Tie::File", "/tmp/Berlin.coords.data" or die $!; for (@f) { if (/^U-Bhf (.*?)\|.*\|$/ && $p{$1}) { $_ .= $p{$1}; warn "$1 $p{$1}" } }'
 
 .for i in u s
 $(i)bahnhof_bg:	$(i)bahnhof-orig

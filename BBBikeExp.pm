@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeExp.pm,v 1.22 2004/06/10 23:01:48 eserte Exp eserte $
+# $Id: BBBikeExp.pm,v 1.23 2004/07/22 20:35:42 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -370,6 +370,7 @@ sub BBBikeExp::bbbikeexp_reload {
 
     foreach my $def (@defs_str) {
 	my $abk = $def->[0];
+	next if !$exp_str{$abk}; # XXX should not happen, but it happens
 	if (!$exp_str{$abk}->is_current) {
 	    warn "Reload str-$abk...\n";
 	    $exp_str{$abk}->reload;
@@ -380,6 +381,7 @@ sub BBBikeExp::bbbikeexp_reload {
     }
     foreach my $def (@defs_p) {
 	my $abk = $def->[0];
+	next if !$exp_p{$abk}; # XXX should not happen, but it happens
 	if (!$exp_p{$abk}->is_current) {
 	    warn "Reload p-$abk...\n";
 	    $exp_p{$abk}->reload;
@@ -414,6 +416,7 @@ sub BBBikeExp::plotstr_on_demand {
     my $places_new = 0;
     if (@grids) {
 	foreach my $abk (@defs_str_abk) {
+	    next if !$exp_str{$abk}; # XXX should not happen, but it happens
 	    my %category_width;
 	    my $default_width = get_line_width($abk) || 4;
 	    #XXX skalieren...
@@ -463,6 +466,7 @@ sub BBBikeExp::plotstr_on_demand {
 
 	foreach my $abk (@defs_p_abk) {
 	    next if $abk eq 'o';
+	    next if !$exp_p{$abk}; # XXX should not happen, but it happens
 # 	    my %category_width;
 # 	    my $default_width = get_line_width($abk) || 4;
 # 	    #XXX skalieren...
@@ -554,6 +558,7 @@ sub BBBikeExp::plotstr_on_demand {
 #	foreach my $abk (@defs_p_o_abk) {
 	foreach my $abk (@defs_p_abk) {
 	    next if $abk ne 'o';
+	    next if !$exp_p{$abk}; # should not happen, but it happens
 	    plotplaces_pre_a(-type => $abk,
 			     -strdata => $exp_p{$abk},
 			    );
