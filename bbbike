@@ -7956,7 +7956,7 @@ sub plotstr {
 	} elsif ($abk eq 'comm') {
 	    $str = _get_comments_obj();
 	} else {
-	    eval { $str = new Strassen $filename };
+	    eval { $str = Strassen->new($filename); };
 	    if ($@) {
 		if ($edit_mode || $edit_normal_mode) {
 		    status_message(Mfmt("Beim Laden der Datei %s: %s", $filename, $@), "info");
@@ -8170,7 +8170,11 @@ sub plotstr {
 	$escape = 0;
 	my @extra_tags = ($abk =~ /^L\d+/ ? ("$abk-s") : ());
 
-	my $conv = $str->get_conversion;
+	my %conv_args;
+	if ($args{-map}) {
+	    $conv_args{Map} = $args{-map};
+	}
+	my $conv = $str->get_conversion(%conv_args);
 
 	my $draw_sub = eval $plotstr_draw_sub;
 	string_eval_die($@, $plotstr_draw_sub) if $@; #die $@ if $@;
@@ -9010,7 +9014,11 @@ sub plot_point {
 	my $yadd_anchor = $yadd_anchor_type->{'u'};
 	my $label_spaceadd = $label_spaceadd{'u'};
 
-	my $conv = $bhf->get_conversion;
+	my %conv_args;
+	if ($args{-map}) {
+	    $conv_args{Map} = $args{-map};
+	}
+	my $conv = $bhf->get_conversion(%conv_args);
 
 	my $draw_sub = eval $plotpoint_draw_sub;
 	string_eval_die($@, $plotpoint_draw_sub) if $@; #die $@ if $@;
@@ -9938,7 +9946,11 @@ sub plotorte {
 	my $anzahl_eindeutig = $orte->count;
 	my $do_outline_text = $do_outline_text{$type};
 
-	my $conv = $orte->get_conversion;
+	my %conv_args;
+	if ($args{-map}) {
+	    $conv_args{Map} = $args{-map};
+	}
+	my $conv = $orte->get_conversion(%conv_args);
 
 	my $draw_sub = eval $plotorte_draw_sub;
 	die $@ if $@;
