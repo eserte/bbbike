@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: EmptyCanvasMap.pm,v 1.18 2004/10/18 06:50:59 eserte Exp $
+# $Id: EmptyCanvasMap.pm,v 1.19 2004/10/18 07:42:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package EmptyCanvasMap;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Tk::Frame);
 

@@ -861,7 +861,7 @@ Behlertstr. (Potsdam)	N -12362,-370 -12578,-426 -12868,-493
 Am Neuen Garten (Potsdam)	B -12362,-370 -12557,11
 Am Neuen Garten (Potsdam)	N -12557,11 -12462,221 -12378,284 -12184,803 -12181,1196 -12185,1388
 Alleestr. (Potsdam)	B -12557,11 -12855,-72
-Am Kanal  (Potsdam)	B -12834,-1362 -12553,-1278 -12317,-1212
+Am Kanal  (Potsdam)	B -12834,-1362 -12718,-1327 -12553,-1278 -12317,-1212
 Am Kanal (Potsdam)	N -12317,-1212 -12082,-1147 -12040,-1169
 Große Fischerstr. (Potsdam)	N -12040,-1169 -11981,-1390
 zur Hl.-Geist-Str. (Potsdam)	NN -12100,-962 -12104,-1062
@@ -884,12 +884,13 @@ Bornstedter Str. (B273) (Potsdam)	B -14737,300 -14650,201 -14587,80 -14546,-121 
 Schopenhauer Str. (Potsdam)	N -13531,-1534 -13554,-1235
 Schopenhauer Str. (Potsdam)	NN -13554,-1235 -13556,-1182
 Schopenhauer Str. (B273) (Potsdam)	B -13556,-1182 -13556,-1140 -13568,-1062 -13631,-915 -13815,-749 -14034,-571
-Brandenburger Str. (Broadway) (Potsdam)	NN -12894,-977 -13171,-1042 -13556,-1140
+Brandenburger Str. (Broadway) (Potsdam)	NN -12784,-956 -12894,-977 -13171,-1042 -13556,-1140
 Hegelallee (Potsdam)	H -13631,-915 -13237,-796 -13146,-759 -12878,-665
-Kurfürstenstr. (Potsdam)	H -12878,-665 -12576,-617 -12322,-576
+Kurfürstenstr. (Potsdam)	H -12878,-665 -12727,-640 -12576,-617 -12322,-576
 Kurfürstenstr. (Potsdam)	B -12322,-576 -12265,-418
 Hans-Thoma-Str. (Potsdam)	B -12063,-784 -12148,-784 -12255,-784 -12304,-628 -12322,-576
-Charlottenstr. (Potsdam)	N -13554,-1235 -13192,-1150 -12881,-1092 -12575,-1031 -12553,-1025 -12488,-999 -12296,-1190
+Charlottenstr. (Potsdam)	N -13554,-1235 -13192,-1150 -12881,-1092 -12768,-1069 -12575,-1031 -12553,-1025 -12488,-999 -12296,-1190
+Dortustr. (Potsdam)	N -13356,-1878 -13275,-1576
 Dortustr. (Potsdam)	H -13192,-1150 -13234,-1320 -13275,-1576
 Dortustr. (Potsdam)	N -13192,-1150 -13171,-1042 -13172,-957 -13146,-759
 Maulbeerallee (Potsdam)	N -14355,-606 -14391,-665 -14669,-686 -15243,-656 -15703,-400 -15859,-456
@@ -900,8 +901,7 @@ Kirschallee (Potsdam)	N -14650,201 -14659,412 -14416,839 -14016,1563 -13854,2025
 Am Vogelherd (Potsdam)	N -13854,2025 -13856,2472
 Am Golfplatz (Potsdam)	N -14490,3081 -13918,2534 -13856,2472 -13140,1900
 (entlang der Buga) (Potsdam)	N -13820,1095 -13907,1223 -13801,1414 -14016,1563
-Georg-Hermann-Allee (Potsdam)	N -13431,1034 -13418,1668 -13125,1700
-Georg-Hermann-Allee (Potsdam)	N -13561,117 -13456,500
+Georg-Hermann-Allee (Potsdam)	N -13561,117 -13456,500 -13431,1034 -13418,1668 -13125,1700
 Kiepenheuer Allee (Potsdam)	N -13157,394 -13456,500 -14046,684
 Erwin-Barth-Str, (Potsdam)	N -14046,684 -14416,839
 Erich-Mendelssohn-Allee (Potsdam)	N -14223,286 -14046,684 -13820,1095
@@ -919,7 +919,7 @@ Auf dem Kiewitt (Potsdam)	N -14061,-2261 -13999,-1856 -14115,-1678
 (Hermannswerder, zur Fähre) (Potsdam)	N -13737,-3009 -13867,-2667 -14017,-2518
 Breite Str. (B1) (Potsdam)	B -13879,-1445 -13531,-1534 -13275,-1576 -12719,-1661
 Lange Brücke (Potsdam)	B -12493,-1896 -12567,-1817 -12719,-1661
-Gutenbergstr. (Potsdam)	N -12255,-784 -12575,-849 -12895,-913 -13172,-957 -13568,-1062
+Gutenbergstr. (Potsdam)	N -12255,-784 -12575,-849 -12685,-870 -12797,-893 -12895,-913 -13172,-957 -13568,-1062
 Hebbelstr. (Potsdam)	N -12578,-426 -12576,-617 -12575,-707 -12575,-849 -12575,-1031
 Friedrich-Ebert-Str. (B1) (Potsdam)	B -12719,-1661 -12834,-1362
 Friedrich-Ebert-Str. (Potsdam)	N -12834,-1362 -12881,-1092 -12894,-977 -12895,-913 -12884,-769 -12878,-665 -12868,-493 -12855,-72
@@ -927,7 +927,7 @@ Am Schragen (Potsdam)	N -13157,394 -13050,337
 Am Schragen (B2) (Potsdam)	B -13050,337 -13091,-8
 Jägerallee (B2) (Potsdam)	B -13091,-8 -13111,-136
 Jägerallee (Potsdam)	H -13111,-136 -13237,-796
-Berliner Str. (B1) (Potsdam)	B -12317,-1212 -12296,-1190 -12148,-934 -12063,-784 -11870,-495 -11723,-220 -11665,-143 -10825,465
+Berliner Str. (B1) (Potsdam)	B -12317,-1212 -12296,-1190 -12148,-934 -12063,-784 -11926,-580 -11870,-495 -11723,-220 -11665,-143 -10825,465
 Werderscher Damm (Potsdam)	H -17929,-1654 -17482,-1546 -17268,-1631 -17035,-1417 -16608,-1395 -16008,-1753
 Forststr. (Potsdam)	H -15722,-3398 -15766,-3141 -16070,-2159 -16008,-1753
 Stahnsdorfer Str. (Potsdam)	N -7821,-1890 -8415,-1928 -9225,-1950 -9734,-1896
@@ -1023,7 +1023,7 @@ Schlaatzweg (Potsdam)	NN -11506,-2368 -11425,-2384 -11431,-2425 -11240,-2525 -10
 Horstweg - Stern (An der Nuthe) (Potsdam)	NN -10553,-2859 -10071,-3321 -9425,-3990 -9375,-4159 -9306,-4259 -9234,-4190 -9009,-3837
 Wetzlarer Str. (Potsdam)	N -9009,-3837 -8943,-3646 -8493,-2870
 Leiblstr. (Potsdam)	N -12575,-707 -12304,-628
-Mittelstr. (Potsdam)	N -12575,-707 -12884,-769
+Mittelstr. (Potsdam)	N -12575,-707 -12712,-734 -12884,-769
 Allee nach Sanssouci (Potsdam)	N -13646,-1115 -13857,-1040
 Luisenplatz (Potsdam)	N -13643,-1220 -13646,-1168 -13646,-1115 -13556,-1107
 Zimmerstr. (Potsdam)	N -14150,-1290 -13884,-1243 -13646,-1168
@@ -1035,9 +1035,10 @@ Pestalozzistr. (Potsdam)	N -9648,-2112 -9753,-2474
 Lessingstr. (Potsdam)	N -9837,-1612 -9219,-1590
 Hans-Sachs-Str. (Potsdam)	N -14575,-1809 -14600,-1537 -14612,-1415
 Carl-von-Ossietzky-Str. (Potsdam)	N -14453,-1784 -14471,-1534 -14500,-1356
-Nansenstr. (Potsdam)	N -14366,-1728 -14356,-1509 -14362,-1340 -14279,-1820
+Nansenstr. (Potsdam)	N -14279,-1820 -14366,-1728 -14356,-1509 -14362,-1340
 Lennéstr. (Potsdam)	N -14634,-1343 -14362,-1340 -14150,-1290 -13886,-1295 -13727,-1300
 Meistersingerstr. (Potsdam)	N -14600,-1537 -14471,-1534 -14356,-1509 -14246,-1506
+Schiffbauergasse (Potsdam)	N -11926,-580 -11703,-768
 Geiselbergstr. (Golm)	N -18678,1168 -18964,793 -19232,34 -19324,-225 -19578,-674 -19044,-737
 Reiherbergstr. (Golm)	N -19324,-225 -18981,-566 -18725,-673 -18631,-778 -18125,-843
 Weinmeisterstr. (Golm)	N -18981,-566 -19044,-737
