@@ -4044,6 +4044,15 @@ sub do_iconframe {
        });
     $hpbm->command(-label => M('Über').' ...',
 		   -command => sub { show_logo('as_about') });
+    $hpbm->command(-label => M"Copyright",
+		   -command => sub { copying_viewer($top) });
+    $hpbm->command(-label => M"Changes",
+		   -command => sub { simple_file_viewer
+					 ($top,	"$FindBin::RealBin/CHANGES", 
+					  -title => M"Changes",
+					  -class => "BBBike Changes",
+					 );
+				 });
     $hpbm->command(-label => M"Busy-Zeiger zurücksetzen",
 		   -command => sub { ResetBusy($top) });
     menuright($help_button, $hpbm);
@@ -15530,24 +15539,7 @@ sub show_logo { # und About
 	     -relief => "flat",
 	     -borderwidth => 0,
 	     ($as_about ?
-	      (-command => sub {
-		   if (open(C, "$FindBin::RealBin/COPYING")) {
-		       binmode C;
-		       my $t = $top->Toplevel
-			   (-title => M"COPYING",
-			    -class => "Bbbike Copyright",
-			   );
-		       my $txt = $t->Scrolled("ROText", -scrollbars => "osoe")->pack(-fill => "both", -expand => 1);
-		       while(<C>) {
-			   $txt->insert("end", $_);
-		       }
-		       close C;
-		       $t->Button(Name => 'close',
-				  -command => sub { $t->destroy },
-				 )->pack(-fill => "x", -expand => 1);
-		   }
-	       }
-	      ) : ()),
+	      (-command => sub { copying_viewer($logotop) }) : ()),
 	    )->pack(-fill => "x");
     if ($as_about) {
 	my $os_info = "OS: $^O";
@@ -15619,6 +15611,40 @@ sub hide_logo {
     if (defined $t && Tk::Exists($t)) {
 	$t->destroy;
 	undef $toplevel{"about-$as_about"};
+    }
+}
+
+### AutoLoad Sub
+sub copying_viewer {
+    my $top = shift;
+    simple_file_viewer($top, "$FindBin::RealBin/COPYING",
+		       -title => M"COPYING",
+		       -class => "Bbbike Copyright",
+		      );
+}
+
+### AutoLoad Sub
+sub simple_file_viewer {
+    my($top, $file, %args) = @_;
+    my $title = $args{-title};
+    my $class = $args{-class};
+    if (open(C, $file)) {
+	binmode C;
+	my $t = $top->Toplevel
+	    ((defined $title ? (-title => $title) : ()),
+	     (defined $class ? (-class => $class) : ()),
+	    );
+	my $txt = $t->Scrolled("ROText", -scrollbars => "osoe")->pack(-fill => "both", -expand => 1);
+	while(<C>) {
+	    $txt->insert("end", $_);
+	}
+	close C;
+	$t->Button(Name => 'close',
+		   -command => sub { $t->destroy },
+		  )->pack(-fill => "x", -expand => 1);
+    } else {
+	status_message(Mfmt("Die Datei %s kann nicht geöffnet werden: %s",
+			    $file, $!), "error");
     }
 }
 
