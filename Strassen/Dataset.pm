@@ -202,13 +202,14 @@ sub get_crossings {
     if ($crossings{$key} && !(defined $args{-cache} && !$args{-cache})) {
 	return $crossings{$key};
     }
-    my @args = $args{-makecrossingsargs} ? @{$args{-makecrossingsargs}} : ();
     my $s = $self->get($linetype, $type, $scoperef);
+    my @args = (UseCache => 1, # XXX
+		Strassen => $s,
+		# XXX WantPos
+	       );
+    push @args, $args{-makecrossingsargs} ? @{$args{-makecrossingsargs}} : ();
     require Strassen::Kreuzungen;
-    my $crossings = Kreuzungen->new(UseCache => 1, # XXX
-				    Strassen => $s,
-				    # XXX WantPos
-				   );
+    my $crossings = Kreuzungen->new(@args);
     $crossings{$key} = $crossings;
     $crossings;
 }

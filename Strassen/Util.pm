@@ -358,6 +358,7 @@ sub get_cachefile {
     }
 }
 
+# XXX %args is unused
 ### AutoLoad Sub
 sub get_from_cache {
     my($cachefile, $srcref, %args) = @_;

@@ -80,6 +80,7 @@ sub new {
 # verwendet entweder new_from_server (wenn nicht NoNewFromServer spezifiziert
 # wurde) oder new
 # XXX einheitliches Mapping strassen/multistrassen => shareable object
+# XXX $class vs. __PACKAGE__?
 ### AutoLoad Sub
 sub new_from_best {
     my($class, %args) = @_;
@@ -371,6 +372,7 @@ sub get_street_record {
 }
 
 use Class::Struct;
+#BEGIN { Class::Struct::printem() }
 struct('StrassenNetz::SearchContext' =>
        {Algorithm => "\$",
 	HasPenalty => "\$",
@@ -597,6 +599,7 @@ sub build_search_code {
 	$use_2 = 1;
     }
 
+    # XXX use_3 nicht implementiert?
     my $use_3 = $data_format == $FMT_CDB;
 
     # XXX use_2 ist für A* noch nicht implementiert XXXXXXXXXXXXXXXXXX
@@ -611,6 +614,8 @@ sub build_search_code {
     if ($args{Aufschlag}) {
 	$aufschlag_code = '*' . $args{Aufschlag};
     }
+    # XXX Die $skip_path_code*-Variablen sind nur fuer SRT-Algo.
+    #
     # Code für die Abfrage, ob der aktuelle Path das Ziel nicht mehr in einer
     # kürzeren Länge erreichen kann.
     my $skip_path_code = '
@@ -1455,6 +1460,7 @@ sub route_info {
 # $seen: optional hash reference of seen comments XXX Rundfahrten?
 # XXX flaky.
 # XXX support for ":" in categories missing (except for PI)
+# XXX %args unused
 sub get_point_comment {
     my($self, $routeref, $routeinx, $seen, %args) = @_;
     return if $routeinx == $#$routeref;

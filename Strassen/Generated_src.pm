@@ -322,14 +322,7 @@ sub route_to_name_<%=$type%> {
 	}
 	my($winkel, $richtung);
 	if ($i+1 < $#{$route_ref}) {
-	    my $a_len = Strassen::Util::strecke($route_ref->[$i],
-						$route_ref->[$i+1]);
-	    my $b_len = Strassen::Util::strecke($route_ref->[$i+1],
-						$route_ref->[$i+2]);
-	    ($richtung, $winkel) = Strassen::Util::abbiegen($route_ref->[$i],
-							    $route_ref->[$i+1],
-							    $route_ref->[$i+2],
-							   );
+	    ($richtung, $winkel) = Strassen::Util::abbiegen(@{$route_ref}[$i .. $i+2]);
 	}
 	if (@strname &&
 	    ($combinestreet && $str eq $strname[$#strname]->[ROUTE_NAME])) {

@@ -130,12 +130,12 @@ sub ext {
 
 # Erhöhen/Erniedrigen der Kartenkoordinaten
 sub incx {
-    my($self, $c, $inc) = @_;
+    my(undef, $c, $inc) = @_;
     $c + $inc;
 }
 
 sub incy {
-    my($self, $c, $inc) = @_;
+    my(undef, $c, $inc) = @_;
     $c + $inc;
 }
 
@@ -185,11 +185,11 @@ sub trim_accuracy {
     (int($x), int($y));
 }
 
-# Return the rotating angle between maps
+# Return the rotating angle between maps XXX NYI
 sub rotate_angle {
-    my($self, $map) = @_;
-    my($tx1,$ty1) = $self->map2map($map, 0, 0);
-    my($tx2,$ty2) = $self->map2map($map, 1000, 0);
+#    my($self, $map) = @_;
+#    my($tx1,$ty1) = $self->map2map($map, 0, 0);
+#    my($tx2,$ty2) = $self->map2map($map, 1000, 0);
     # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 }
 

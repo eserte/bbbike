@@ -265,7 +265,7 @@ sub nearest_loop_coord {
 sub draw {
     my($self, $canvas, $transpose_sub) = @_;
     $canvas->delete("crossings");
-    while(my($crossing,$info) = each %{ $self->{Hash} }) {
+    while(my $crossing = each %{ $self->{Hash} }) {
 	my($x,$y) = $transpose_sub->(split /,/, $crossing);
 	$canvas->createLine($x, $y, $x, $y,
 			    -tags => 'crossings',
