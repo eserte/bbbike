@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.16 2004/08/19 22:08:34 eserte Exp $
+# $Id: LogTracker.pm,v 1.17 2004/08/24 21:12:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -32,7 +32,7 @@ use vars qw($VERSION $lastcoords
 	    $error_checks $ua $safe
             $remoteuser $remotehost $logfile $tracking $tail_pid $bbbike_cgi
 	    $last_parselog_call);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
 
 # XXX replace all %layer, %show etc. with @layer, @show...
 use constant ROUTES => 0;
@@ -210,12 +210,19 @@ sub add_button {
 ######################################################################
 
 init();
+init_gui() if caller;
 
 sub init {
     $colors_i = 0;
     @colors = ('#000080', '#0000a0', '#0000c0', '#0000f0',
                '#0080f0', '#8000f0', '#6000c0', '#4000a0',
               );
+    for my $l (@types) {
+	$accesslog_data{$l} = [];
+    }
+}
+
+sub init_gui {
     for my $l (@types) {
 	$layer{$l} = main::next_free_layer();
 	$main::layer_active_color{$layer{$l}} = 'red';
@@ -224,7 +231,6 @@ sub init {
 	};
 	$main::occupied_layer{$layer{$l}} = 1;
 	main::fix_stack_order($layer{$l});
-	$accesslog_data{$l} = [];
     }
 }
 
@@ -263,10 +269,18 @@ sub draw_accesslog_data {
 	    $s->write("/tmp/LogTracker-$l.bbd");
 	    main::plot("str", $layer{$l},
 		       -lazy => 0,
-		       -draw => 1, Filename => "/tmp/LogTracker-$l.bbd");
+		       -draw => 1,
+		       FastUpdate => 1,
+		       Filename => "/tmp/LogTracker-$l.bbd");
 	    $main::str_obj{$layer{$l}} = $s; # for LayerEditor
 	}
     }
+}
+
+sub date_to_apachedate {
+    my($y,$m,$d) = @_;
+    $m = _number_monthabbrev($m);
+    sprintf "%02d/%s/%04d", $d, $m, $y;
 }
 
 sub _today {
@@ -278,9 +292,7 @@ sub _today {
 	require Date::Calc;
 	Date::Calc->import(qw(Today));
     };
-    my($y,$m,$d) = Today();
-    $m = _number_monthabbrev($m);
-    sprintf "%02d/%s/%04d", $d, $m, $y;
+    date_to_apachedate(Today());
 }
 
 sub _yesterday {
@@ -292,9 +304,7 @@ sub _yesterday {
 	require Date::Calc;
 	Date::Calc->import(qw(Today Add_Delta_Days));
     }
-    my($y,$m,$d) = Add_Delta_Days(Today(), -1);
-    $m = _number_monthabbrev($m);
-    sprintf "%02d/%s/%04d", $d, $m, $y;
+    date_to_apachedate(Add_Delta_Days(Today(), -1));
 }
 
 sub parse_accesslog_today {
@@ -327,22 +337,10 @@ sub parse_accesslog_for_date {
 sub parse_accesslog_any_day {
     my $rx = shift;
     $last_parselog_call = ['parse_accesslog_any_day', $rx];
-    my $is_tied = 0;
     for my $l (@types) {
 	$accesslog_data{$l} = [];
     }
-    my $bw;
-    if ($logfile =~ /\.gz$/ || (defined $remotehost && $remotehost ne "")) {
-	# Can't read backwards
-	$bw = _open_log();
-    } else {
-	require File::ReadBackwards;
-	tie *BW, 'File::ReadBackwards', $logfile
-	    or main::status_message(Mfmt("Kann die Datei %s nicht öffnen: %s",
-					 $logfile, $!), "die");
-	$bw = \*BW;
-	$is_tied++;
-    }
+    my($bw, $is_tied) = _open_any_log();
     my $gather = 0;
     my $error_txt = "";
     while(<$bw>) {
@@ -412,6 +410,23 @@ sub _tail_log {
     }
 }
 
+sub _open_any_log {
+    my $bw;
+    my $is_tied = 0;
+    if ($logfile =~ /\.gz$/ || (defined $remotehost && $remotehost ne "")) {
+	# Can't read backwards
+	$bw = _open_log();
+    } else {
+	require File::ReadBackwards;
+	tie *BW, 'File::ReadBackwards', $logfile
+	    or main::status_message(Mfmt("Kann die Datei %s nicht öffnen: %s",
+					 $logfile, $!), "die");
+	$bw = \*BW;
+	$is_tied++;
+    }
+    ($bw, $is_tied);
+}
+
 sub _open_log {
     my $fh;
     if (!defined $remotehost || $remotehost eq '') {
@@ -451,6 +466,7 @@ sub fileevent_read_line {
 		$s->write("/tmp/LogTracker-$l.bbd");
 		main::plot("str", $layer{$l}, -draw => 1,
 			   -lazy => 0,
+			   FastUpdate => 1,
 			   Filename => "/tmp/LogTracker-$l.bbd");
 		$main::str_obj{$layer{$l}} = $s; # for LayerEditor
 		my $last = $s->get($s->count-1);
@@ -834,11 +850,81 @@ warn "update $l";
     }
 }
 
+sub percent_over_airdist {
+    my $r = shift;
+    require Strassen::Util;
+    my $c = $r->[Strassen::COORDS()];
+    return undef if @$c < 2;
+    my $dist = 0;
+    for my $i (1 .. $#$c) {
+	$dist += Strassen::Util::strecke_s($c->[$i-1], $c->[$i]);
+    }
+    my $air_dist = Strassen::Util::strecke_s($c->[0], $c->[-1]);
+    return undef if !$air_dist;
+    my $perc = $dist/$air_dist*100;
+    return $perc;
+}
+
+# Can be called from command line:
+sub worst_routes_of_the_day {
+    my @worstof;
+    my %seen;
+    require Strassen::Core;
+    require Strassen::Util;
+    require Term::Cap;
+    my $terminal = Tgetent Term::Cap { TERM => undef, OSPEED => 9600 };
+    my $clear = $terminal->Tputs("cl");
+    my $rows = 23;
+    $logfile = "$ENV{HOME}/www/log/radzeit.de-access_log";
+    my($bw, $is_tied) = _open_any_log();
+    my $today = _today();
+    my $today_rx = qr{\Q$today};
+ LOOP: while(<$bw>) {
+	my($routes, undef) = parse_line($_);
+	next unless @$routes;
+	for my $route (@$routes) {
+	    my($r) = Strassen::parse($route);
+	    next if $r->[Strassen::NAME()] =~ /^\s*$/;
+	    last LOOP if $r->[Strassen::NAME()] !~ $today_rx;
+	    my $perc = percent_over_airdist($r);
+	    next if !defined $perc;
+	    my $c = $r->[Strassen::COORDS()];
+	    my $ident = "$perc $c->[0] $c->[-1]";
+	    if (!$seen{$ident} && (!@worstof || $perc > $worstof[-1]->[0])) {
+	    TRY: {
+		    $seen{$ident} = 1;
+		    for my $inx (0 .. $#worstof) {
+			if ($perc > $worstof[$inx]->[0]) {
+			    splice @worstof, $inx, 0, [$perc, $r];
+			    last TRY;
+			}
+		    }
+		    push @worstof, [$perc, $r];
+		}
+		splice @worstof, $rows;
+		print $clear;
+		for (@worstof) {
+		    (my $name = $_->[1][Strassen::NAME()]) =~ s/\[.*//;
+		    my $c = $_->[1][Strassen::COORDS()];
+		    $name = "$c->[0] $c->[-1] $name";
+		    $name = substr($name,0,70) if length $name > 70;
+		    printf "%3d%% %s\n", $_->[0], $name;
+		}
+	    }
+	}
+    }
+    untie *BW if $is_tied;
+}
+
+
 END {
     kill_tail();
 }
 
 return 1 if caller;
+
+require Getopt::Long;
+Getopt::Long::GetOptions("worstroutes" => sub { worst_routes_of_the_day() }) or die;
 
 __END__
 

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.82 2004/08/16 21:12:36 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.83 2004/08/24 21:51:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -626,7 +626,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.82 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.83 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1549,6 +1549,7 @@ EOF
 		new_kreuzungen();
 		my($best) = get_nearest_crossing_coords(split(/,/, $xy));
 		my $cr = crossing_text(defined $best ? $best : $xy);
+		print qq{<i>$$oneref</i> ist nicht bekannt (<a target="newstreetform" href="$bbbike_html/newstreetform.html">Straße eintragen</a>).<br>\nDie nächste bekannte Kreuzung ist:<br>\n};
 		print "$cr";
 		print "<input type=hidden name=" . $type .
 		    "c value=\"$best\">";
@@ -4966,6 +4967,7 @@ sub show_info {
 <center><h2>Information</h2></center>
 <ul>
  <li><a href="#tipps">Die Routensuche</a>
+ <li><a href="#data">Daten</a>
  <li><a href="#link">Link auf BBBike setzen</a>
  <li><a href="#resourcen">Weitere Möglichkeiten mit BBBike</a>
   <ul>
@@ -5033,6 +5035,16 @@ EOF
 	}
     }
     print <<EOF;
+<hr>
+<a name="data"><h3>Daten</h3></a>
+
+Die Daten auf dem aktuellen Stand zu halten ist in einer Stadt wie
+Berlin für einen Einzelnen eine schwere Aufgabe. Deshalb freue ich
+mich über Feedback: neue Straßen, veränderte Gegebenheiten, sowohl in
+Berlin als auch im Brandenburger Umland. Anregungen bitte als <a
+href="mailto:$BBBike::EMAIL">Mail</a> schicken oder <a
+href="$bbbike_html/newstreetform.html">dieses Formular</a> benutzen.
+
 <hr>
 <a name="link"><h3>Link auf BBBike setzen</h3></a>
 Man kann einen Link auf BBBike mit einem
@@ -5146,7 +5158,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/08/16 21:12:36 $';
+    my $cgi_date = '$Date: 2004/08/24 21:51:52 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

@@ -1,6 +1,6 @@
 # temp-blocking
 # XXX undef old entries
-# iso2epoch: date -j YYYYMMDDhhmm +%s
+# iso2epoch: date +%s -j YYYYMMDDhhmm
 require Time::Local;
 @temp_blocking =
     (
@@ -586,7 +586,7 @@ userdel	q4 -12325,-13958 -12177,-13787
 EOF
      },
      { from  => undef, # 
-       until => 1093514400, # 2004-08-26 12:00
+       until => 1093376850, # 2004-08-26 12:00 XXX früher
        text  => 'Bachstraße: In beiden Richtungen Störungen durch Rohrbruch, gesperrt bis Do 12:00 ',
        type  => 'handicap',
       data  => <<EOF,
