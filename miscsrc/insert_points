@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.40 2004/08/12 22:43:06 eserte Exp eserte $
+# $Id: insert_points,v 1.41 2004/08/18 22:44:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -59,6 +59,10 @@ use constant T_RADWEGE => 4;
 use constant T_TEMPBLOCK => 5;
 use constant T_TEMPBLOCKMAIN => 6;
 use constant T_MAX => 6;
+
+use constant RET_ERROR    => 0;
+use constant RET_NOMOD    => 1;
+use constant RET_MODIFIED => 2;
 
 use strict;
 use Getopt::Long;
@@ -187,7 +191,7 @@ sub process {
 	    $top->destroy;
 	}
 	warn "Too many points ($extra)";
-	return 1;
+	return RET_ERROR;
     }
 
     if ($operation eq 'change' && $from eq $to) {
@@ -199,7 +203,7 @@ sub process {
 	    $top->destroy;
 	}
 	warn "Same point $from eq $to";
-	return 0;
+	return RET_NOMOD;
     }
 
     my $coord_rx = qr/\d+,.*\d+$/;
@@ -231,7 +235,7 @@ sub process {
 			 -buttons => ['OK'])->Show;
 	    warn "Found operation=$operation from=$from middle=@middle to=$to";
 	    $top->destroy;
-	    return 1;
+	    return RET_ERROR;
 	} else {
 	    if ($operation eq 'insert') {
 		die "Usage: $0 from middle to";
@@ -486,12 +490,12 @@ sub process {
 	} else {
 	    print STDERR "$dialog_text.\n";
 	}
-	return 0;
+	return RET_NOMOD;
     }
 
     if ($report) {
 	print join("\n", _interpolate(@change_files)), "\n";
-	return 0;
+	return RET_NOMOD;
     }
 
     $dialog_text = "Betroffene Dateien:\n";
@@ -563,7 +567,7 @@ sub process {
     }
 
     if ($operation eq 'grep') {
-	return 0;
+	return RET_NOMOD;
     }
 
     if ($ans =~ /^j/) {
@@ -712,7 +716,7 @@ sub process {
 	    do_log(@cmd_args, @changed_files);
 	}
     }
-    0;
+    return RET_MODIFIED;
 }
 
 sub _interpolate {
@@ -729,21 +733,61 @@ sub do_log {
     my $logfile = $logfile;
     $logfile = "$datadir/datachange.log" if !$logfile;
     warn "Log to $logfile...\n" if $verbose;
+
+    # LAST EDIT line
+    my $last_date_line;
+    my @l = localtime;
+    my $this_date_line = sprintf "%04d-%02d-%02d", $l[5]+1900, $l[4]+1, $l[3];
+    my $user = eval { (getpwuid($<))[0] } || $ENV{USER};
+    if ($user) {
+	$this_date_line .= " by=$user";
+    }
+    if (eval { require Sys::Hostname }) {
+	$this_date_line .= " on=" . Sys::Hostname::hostname();
+    }
+
+    # Do we need a current LAST EDIT line?
+    my $date_line_needed = 1;
+    if (eval { require File::ReadBackwards; 1 }) {
+	if (tie *BW, "File::ReadBackwards", $logfile) {
+	    while(<BW>) {
+		chomp;
+		if (/^\#\s+LAST\s+EDIT:\s*(.*)/) {
+		    if ($1 eq $this_date_line) {
+			$date_line_needed = 0;
+			last;
+		    }
+		}
+	    }
+	    close BW;
+	}
+    } else {
+	warn "Installation of File::ReadBackwards module advised!\n";
+    }
+
     if (open(LOG, ">>$logfile")) {
+	if ($date_line_needed) {
+	    print LOG "# LAST EDIT: $this_date_line\n";
+	}
 	print LOG "@args\n";
 	close LOG;
     } else {
 	my $msg = "Can't write to $logfile: $!";
-	warn $msg;
-	if (defined &main::status_message) {
-	    main::status_message($msg, "warn");
-	} elsif ($use_tk) {
-	    require Tk;
-	    my $top = MainWindow->new;
-	    $top->withdraw;
-	    $top->messageBox(-message => $msg);
-	    $top->destroy;
-	}
+	common_message($msg, "warn");
+    }
+}
+
+sub common_message {
+    my($msg, $type) = @_;
+    warn $msg;
+    if (defined &main::status_message) {
+	main::status_message($msg, $type);
+    } elsif ($use_tk) {
+	require Tk;
+	my $top = MainWindow->new;
+	$top->withdraw;
+	$top->messageBox(-message => $msg);
+	$top->destroy;
     }
 }
 
@@ -757,6 +801,7 @@ $operation = ($0 =~ /       insert_points$ /x ? 'insert'      :
 	      					'change'
 	     );
 
-exit process(@ARGV);
+my $ret = process(@ARGV);
+exit ($ret == RET_ERROR ? 1 : 0);
 
 __END__

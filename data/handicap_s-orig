@@ -1,4 +1,4 @@
-# $Id: handicap_s-orig,v 4.5 2004/08/12 23:57:48 eserte Exp eserte $
+# $Id: handicap_s-orig,v 4.6 2004/08/18 22:40:27 eserte Exp eserte $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Müggelseedamm Erkner Richtung Köpenick zwischen Fürstenwalder Damm (Ost) und Bölschestraße wegen Bauarbeiten gesperrt (bis 15.09.2004)	q4::inwork; 28195,5141 27427,5188 27215,5200 26964,5039 26625,4958 26277,4957 25960,4839 25801,4831 25742,4835 25541,4845
 Alt-Biesdorf, Berlin-Mitte Richtung Berlin-Biesdorf, Zwischen Märkische Allee und Köpenicker Straße wegen Bauarbeiten gesperrt bis 15.08.	q4::inwork; 20115,11730 20368,11711 20575,11698 21106,11651
@@ -18,7 +18,7 @@ Wilhelmstr.: Fahrbahn vor der britischen Botschaft gesperrt	q4 8851,12123 8804,1
 Tucholskystr.: Einbahnstr., Richtung Süden gesperrt	q4; 9654,13397 9605,13248
 # früher wurde 2005-03-00 als Ende genannt, und dann 19.9.2004, dann 19.9.2005, dann 15.9.2004, dann wieder Mitte 2005 (noch nicht geändert)...
 Regattastraße, zwischen Wassersportallee und Grünauer Straße/Bohnsdorfer Straße, Einrichtung als Einbahnstraße Richtung Grünauer Straße. Baumaßnahmen. Dauer: 12.01.2004 bis vorraussichtlich 15.09.2004	q4; 22074,2666 22421,1872 22663,1441
-Prenzlauer Promenade, zw. Am Steinberg und Ostseestr. Baustelle, Sperrung stadteinwärts an Elsa-Brandström-Straße. Umleitung: Elsa-Brandström -Straße - Neumannstraße - Wisbyer Straße bis 31.08.2005	q4::inwork; 12012,16752 12046,16568 12097,16263 12091,16209
+Prenzlauer Promenade, zw. Am Steinberg und Ostseestr. Baustelle, Sperrung stadteinwärts an Elsa-Brandström-Straße. Umleitung: Elsa-Brandström -Straße - Neumannstraße - Wisbyer Straße bis 15.06.2005	q4::inwork; 12012,16752 12046,16568 12097,16263 12091,16209
 #XXX del (nach Ortstermin): Wichertstr. Prenzlauer Berg, Richtung Schönhauser Allee nach Prenzlauer Allee Baustelle, 2 Fahrstreifen gesperrt, eine Umleitung ist eingerichtet bis 30.06.	q4::inwork; 9889,6029 9968,6085
 #XXX del? Köpenicker Str. (Köpenick) in beiden Richtungen am S-Bahnhof Wulheide Baustelle, Straße gesperrt, Umleitung: eine Umleitung ist eingerichtet (bis 25.06.2004)	q4::inwork 13443,9527 13424,9563
 Bitterfelder Straße (Marzahn) Richtung Märkische Allee, Höhe S-Bahn-Brücke Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 2004-09-30)	q4::inwork; 19903,16632 20230,16560
@@ -103,8 +103,10 @@ Uferweg am Schlachtensee: Fußgänger	q2 -3348,3055 -3384,3212 -3324,3382 -3087,36
 südlicher Uferweg an der Krummen Lanke: Fußgänger	q2 -1274,4367 -1245,4414 -1185,4450 -1139,4575 -1134,4706 -971,4971 -724,5080 -604,5228
 Pankeweg, Bürgerpark: Fußgänger	q2 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9414,18278 9304,18165 9310,18108
 Breite Str.: Fußgängerzone	q3 -3012,14546 -3155,14340 -3227,14260
-Markt: Fußgängerzone	q3 -3155,14340 -3244,14380
-Moritzstr.: Fußgängerzone	q3 -3244,14380 -3440,14484
+Markt: Fußgängerzone	q3 -3155,14340 -3271,14400
+Carl-Schurz-Str.: Fußgängerzone	q3 -3495,14190 -3340,14315 -3271,14400 -3132,14607
+Charlottenstr.: Fußgängerzone	q3 -3227,14260 -3340,14315 -3371,14340
+Moritzstr.: Fußgängerzone	q3 -3271,14400 -3456,14506
 Wuhlheide/R1: Fußgänger	q2 20440,6221 20293,6278
 (am Schloß Schönhausen): Fußgänger	q2 10308,19297 10350,19182 10390,19069
 Blockdammweg (Brücke): eng, Fußgänger	q2 17976,8964 18087,9035 18124,9056

@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.7 2004/08/12 23:58:10 eserte Exp eserte $
+# $Id: gesperrt-orig,v 4.8 2004/08/18 22:40:20 eserte Exp eserte $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraßen etc.)
@@ -174,7 +174,7 @@ Nalepastr. am Rundfunkgebäude	2 17076,8443 17039,7685
 Kirchstr.	1 22196,4847 22234,4789 22243,4710
 Ontarioseestr.	1 18577,10023 18339,10048
 Degnerstr. (außer Tram)	1 16434,15580 16464,15665
-Bornitzstr. (trotz Radroute?)	1 15645,12864 15513,12856
+Bornitzstr. (trotz Radroute?)	1 15645,12864 15543,12856
 Henriette-Herz-Platz	1 10371,13006 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
 Dresdener Str./Oranienplatz	1 11258,10682 11232,10745
@@ -374,7 +374,7 @@ Frankfurter Allee - Kreutzigerstr: unbequem passierbarer Mittelstreifen	3 14434,
 Kopenhagener Str. - Schönhauser Allee: U-Bahnviadukt	3 10581,15936 10972,15895 10994,16120
 Schönhauser Allee - Kopenhagener Str.: U-Bahnviadukt	3 10963,15789 10972,15895 10581,15936
 Leipziger - Jerusalemer: unbequem passierbarer Mittelstreifen	3 9701,11649 9899,11670 9892,11752
-Langenbeckstr - Landsberger: Mittelstreifen	3 13081,13457 13161,13360 13353,13459
+Langenbeckstr - Landsberger: Mittelstreifen	3 13081,13457 13161,13360 13334,13459
 Landsberger - Langenbeckstr: Mittelstreifen	3 13089,13323 13161,13360 13081,13457
 Greifswalder - Chodowieckistr: Mittelstreifen mit Straßenbahn	3 12188,14321 12285,14458 11992,14599
 Chodowieckistr - Greifswalder: Mittelstreifen mit Straßenbahn	3 11992,14599 12285,14458 12338,14532
@@ -511,7 +511,7 @@ Markgrafenstraße  Richtung Französische  Straße zwischen Behrenstraße und Franzö
 #XXX del Blankenburger Weg: Baustelle, Straße gesperrt bis 29.02.2004	2:inwork 10050,4098 10221,3974
 #XXX del Crailsheimer Str., von Steglitzer Damm bis Ellwanger Str. Baustelle, Straße gesperrt, Einbahnstraßenregelung, Umleitung über Attilastr. bis 31.03.2004	1:inwork 7943,10446 7901,10524
 # tatsächlich für Radfahrer gesperrt?
-#XXX del Johannisthaler Chaussee, Ernst-Keller Brücke; Bauarbeiten; Brücke gesperrt bis 31.08.2004	2:inwork 15573,4122 15608,4175 15779,4430
+Johannisthaler Chaussee, Ernst-Keller Brücke; Bauarbeiten; Brücke gesperrt bis 31.08.2004	2:inwork 15573,4122 15608,4175 15779,4430
 #XXX Haeh? Da ist nichts! XXX Die Brückenstraße, Richtung Heinrich-Heine-Straße ist zwischen Märkisches Ufer und Köpenicker Straße wegen Bauarbeiten als Einbahnstraße eingerichtet. Die nördliche Einmündung Rungestraße/Brückenstraße wird gesperrt. Zufahrt zu den Grundstücken 6 - 11 und 28 - 30 ist nur über den Köllnischen Park möglich. Dauer: 23.04.2003, 04.00 Uhr bis ca. 29.08.2004	1:inwork 9647,7646 9665,7583 9685,7517
 #XXX del am Beisheim-Center	2:inwork 8399,11630 8326,11732
 # XXX ja? NEW:       L19 Saatwinkler Damm Berlin-Haselhorst - Berlin-Tiergarten in beiden Richtungen Zwischen Gartenfelder Straße und Flughafen Tegel beidseitig wegen Bauarbeiten gesperrt 

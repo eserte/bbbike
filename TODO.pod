@@ -14,6 +14,17 @@ Legend:
 
 =over
 
+=item * (H3)
+
+Optimize SRTProgress: only hide canvas if first progress drawing is
+necessary. Adjust progress drawing to be specified in time intervals
+(alternatively). This would reduce the need of hiding/displaying the
+canvas in short or empty redraws.
+
+Research for alternative SRTProgress implementation: pre-forked
+stand-alone MainWindow, or submit a TIP with a per-widget update (in
+Perl/Tk: updateWidget) method.
+
 =item * (H5)
 
 The -lazy option seems to cause a big memory leak. (Hmmm, I cannot
@@ -172,6 +183,41 @@ wird, muss natuerlich den Aspect des Hauptfensters beibehalten.
 
 Edit-Modus: Cursor aendern. Die Checkbox E<quot>Vias einblendenE<quot>
 ausschalten (und spaeter wieder restaurieren).
+
+=item * (H4)
+
+Edit-Menu: Weiteren Punkt E<quot>bulk editE<quot> einführen. Damit
+kann ein Straße mit allen wichtigen Attributen gesetzt werden.
+Zusätzlich für E<quot>Add new toE<quot>-Dialog: Beschränkung der
+Kategorien auf die aktuell verwendbaren (also bei
+strassen auf HH .. NN, bei landstrassen zusätzlich B, bei qualitaet-*
+Q... etc.)
+
+=item * (M3)
+
+search net custom: statt automatisch alle Layer zu verwenden sollte
+man lieber:
+
+* entweder einen Filedialog erhalten und damit eine bbd-Datei
+auswählen
+
+* oder einen Dialog mit allen vorhandenen Layern anzeigen und daraus
+beliebig viele (für multistrassen) auswählen
+
+* oder beides
+
+=item * (M3)
+
+Additional layers sollten auch in der Kommandozeile und im config-File
+spezifizierbar sein.
+
+=item * (H3)
+
+Replay datachange.log: alle Änderungen (am/bis einem bestimmten Datum)
+werden automatisch aufgenommen. Am besten mit einem Testmodus, der
+zuerst alle Dateien aus data/* nach /tmp kopiert und nur dort ändert.
+Dann könnte man bbbike mit -datadir aufrufen und testen, oder ein diff
+-r machen.
 
 =item * (H3)
 
@@ -881,6 +927,11 @@ Remove SRT Algo (bbbike menu, StrassenNetz.pm ...)
 enter_opt_preferences, Straßenqualität: additional select box like in
 bbbike.cgi (Kopfsteinpflaster vermeiden, rennradtauglich, Custom).
 
+=item * (M1)
+
+Rename BBBikeExp to something like BBBikeLazy. Check module references
+in other files, RCS, CVS, MANIFEST.
+
 =back
 
 =head2 Windows specific
@@ -1061,6 +1112,31 @@ relation_gps-orig aus insert_points herausnehmen? Ueberdenken...
 
 =item * (M4)
 
+insert_points changes:
+
+* warn if changing/deleting an endpoint
+
+* warn if deleting a point causes a street to have only one point
+
+* special handling for vorfahrt:
+
+  given A B C
+  insert between A and B: A changes to last inserted point
+  insert between B and C: C changes to first inserted point
+
+=item * (H3)
+
+insert_points optimizations:
+
+* Use a MLDBM or similar database for a point -> [file, pos] mapping.
+  This can be used for fast searching. Check database file <-> orig
+  file for recentness.
+
+* Further optimization: the insert/add/change/move operations should
+  update the MLDBM database themselves to avoid a complete rebuild.
+
+=item * (M4)
+
 Use the :by and :temporary directives in the data files (ampeln
 already done). Change some files which are using this information
 (e.g. misc/Makefile). Write some tests for all kinds of directives
@@ -1076,6 +1152,10 @@ Rewrite the misc/Makefile rule to use standard Strassen methods.
 =head2 Verschiedenes
 
 =over
+
+=item * (E1)
+
+weblinks E<quot>offiziellE<quot> machen.
 
 =item * (E1)
 
@@ -1328,6 +1408,13 @@ viewers.
 
 =over
 
+=item * (M3)
+
+Alternative implementation of nearest_point with Strassen::QuadTree
+(which must be made official!). Use in match_bbd_data.
+
+Strassen::QuadTree could also be used in BBBikeExp.
+
 =item * (E2)
 
 Mapinfo.pm converter: add new attributes Author, AcquireAuthor,
@@ -1337,6 +1424,11 @@ first the directive stuff above.
 
 New output scheme: create one mapinfo file per layer. Use real
 pen/symbol for lines.
+
+=item * (H1)
+
+AI implementation for detecting street parts (from crossing to
+crossing, or just a crossing) from normal text.
 
 =back
 
@@ -1437,9 +1529,18 @@ E<ouml>ffnet.
 
 =back
 
-=head1 Sonstiges
+=head1 Dokumentation
 
-=over
+=over 
+
+=item * (E2)
+
+README für MacOSX erneuern.
+
+=item * (M2)
+
+HOWTO zum eigenen Editieren der Daten, zum Erzeugen von neuen Layern
+etc.
 
 =item * (M4)
 
@@ -1448,5 +1549,13 @@ Diese TODO-Liste aktualisieren.
 =item * (E4)
 
 Alle Anregungen von anderen Leuten (z.B. per Mail) hier eintragen.
+
+=back
+
+=head1 Sonstiges
+
+=over
+
+=item * Nichts ...
 
 =back

@@ -464,7 +464,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
      { from  => 1090913211, # 2004-07-27 09:26
        until => 1093989540, # bis Ende 08.2004
        file  => 'rathenower.bbd',
-       text  => 'Berlin-Moabit, Kreuzung Rathenower Straße / Stephanstraße, Baustelle, Kreuzung vollständig gesperrt, Dauer: voraussichtlich bis 09.08.2004',
+       text  => 'Berlin-Moabit, Kreuzung Rathenower Straße / Stephanstraße, Baustelle, Kreuzung vollständig gesperrt, Dauer: voraussichtlich bis Ende 08.2004',
        type  => 'handicap',
      },
      { from  => 1091055057, # 2004-07-29 00:50
@@ -543,6 +543,14 @@ EOF
        type  => 'gesperrt',
       data  => <<EOF,
 userdel	2 -21642,-16531 -21341,-17172
+EOF
+     },
+     { from  => 1092866435, # 2004-08-19 00:00
+       until => 1093989600, # 2004-09-01 00:00
+       text  => 'B96A Berlin-Pankow, Schönholzer Straße - Mühlenstraße, Oranienburg Richtung Berlin-Mitte, Zwischen Kreuzung Grabbeallee und Kreuzung Breite Straße Baustelle, großer Zeitverlust, lange Staus bis 31.08.2004 , eine Umleitung ist eingerichtet (Sperrung nur zwischen Wollankstraße und Kreuzstraße)',
+       type  => 'handicap',
+      data  => <<EOF,
+userdel	q4 9909,18333 10089,18180
 EOF
      },
     );

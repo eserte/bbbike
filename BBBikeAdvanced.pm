@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.106 2004/08/09 22:48:17 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.107 2004/08/18 22:43:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1617,12 +1617,14 @@ sub penalty_menu {
 
 }
 
+# Return true if there was a modification.
 ### AutoLoad Sub
 sub _insert_points_and_co {
     my $action = shift;
     my $oper_name = shift;
     my $vstr = ($verbose ? " -v" : "");
     $action = "insert_points";
+    my $ret = 0;
     eval {
 	require "$FindBin::RealBin/miscsrc/insert_points";
 	my @args = (-operation => $oper_name,
@@ -1641,11 +1643,12 @@ sub _insert_points_and_co {
 # 			);
 # 	}
 	warn "@args\n";
-	BBBikeModify::process(@args);
+	$ret = BBBikeModify::process(@args) == BBBikeModify::RET_MODIFIED();
 	# clear the selection
 	delete_route();
     };
     warn $@ if $@;
+    $ret;
 }
 
 sub insert_points { _insert_points_and_co("insert_points", "insert")     }

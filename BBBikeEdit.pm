@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.71 2004/08/12 22:46:33 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.72 2004/08/18 22:42:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2113,15 +2113,30 @@ use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n"
 
 }
 
+use vars qw($auto_reload);
+$auto_reload = 0;
+
 sub editmenu {
     my($top) = @_;
-    my $t = $top->Toplevel(-title => "Edit menu");
-    $t->transient($top) unless defined $main::transient && !$main::transient;
+#XXXdel    my $t = $top->Toplevel(-title => "Edit menu");
+#XXX    $t->transient($top) unless defined $main::transient && !$main::transient;
+    my $t = main::redisplay_top($main::top, "edit_menu",
+				-title => M"Editier-Menü");
+    return if !defined $t;
+
     require BBBikeAdvanced;
-    my $b0 = $t->Button(-text => "Reload",
-			-command => \&main::reload_all,
-			-anchor => "w",
-		       )->pack(-fill => 'x');
+    my $f0;
+    {
+	$f0 = $t->Frame->pack(-fill => 'x');
+	$f0->Button(-text => "Reload",
+		    -command => \&main::reload_all,
+		    -anchor => "w",
+		   )->pack(-side => "left", -fill => "x", -expand => 1);
+	$f0->Checkbutton(-text => "Auto",
+			 -variable => \$auto_reload,
+			 -anchor => "w",
+			)->pack(-side => "left");
+    }
     my $insert_point_mode = 0;
     my $old_mode;
     my $cb = $t->Checkbutton
@@ -2145,25 +2160,38 @@ sub editmenu {
 	 -padx => 14, # XXX X11 only?
 	 -anchor => "w", 
 	)->pack(-fill => "x");
-    $cb->configure(-pady => ($b0->reqheight-$cb->reqheight)/2);
+    $cb->configure(-pady => ($f0->reqheight-$cb->reqheight)/2);
     $t->Button(-text => "Insert multiple points",
-	       -command => \&main::insert_multi_points,
+	       -command => sub {
+		   if (main::insert_multi_points() && $auto_reload) {
+		       main::reload_all();
+		   }
+	       },
 	       -anchor => "w", 
 	      )->pack(-fill => "x");
     $t->Button(-text => "Move point (F3)",
-	       -command => \&main::change_points,
+	       -command => sub {
+		   if (main::change_points() && $auto_reload) {
+		       main::reload_all();
+		   }
+	       },
 	       -anchor => "w",
 	      )->pack(-fill => "x");
     $t->Button(-text => "Move line",
-	       -command => \&main::change_line,
+	       -command => sub {
+		   if (main::change_line() && $auto_reload) {
+		       main::reload_all();
+		   }
+	       },
 	       -anchor => "w",
 	      )->pack(-fill => "x");
     $t->Button(-text => "Grep point",
-	       -command => \&main::grep_point,
+	       -command => \&main::grep_point, # never reload necessary
 	       -anchor => "w",
 	      )->pack(-fill => "x");
     {
-	my @files = (!defined $main::edit_mode || $main::edit_mode eq ''
+	my @files = ((!defined $main::edit_mode || $main::edit_mode eq '')
+		     && !$main::edit_normal_mode
 		     ? BBBikeEditUtil::get_generated_files()
 		     : BBBikeEditUtil::get_orig_files()
 		    );
@@ -2183,6 +2211,7 @@ sub editmenu {
 		  )->pack(-side => "left");
 	my $be = $f->BrowseEntry(#-state => "readonly",
 				 -textvariable => \$sel_file)->pack(-side => "left");
+	$be->Subwidget("slistbox")->configure(-exportselection => 0);
 	$be->insert("end", @files);
     }
     $t->Button(-text => "Delete point",
@@ -2254,6 +2283,16 @@ sub addnew {
 		       print ADD $line;
 		       close ADD;
 
+		       if (eval { require "$FindBin::RealBin/miscsrc/insert_points" }) {
+			   BBBikeModify::do_log("add", "$name\t $cat $coords", $file);
+		       } else {
+			   warn $@ if $@;
+		       }
+
+		       if ($auto_reload) {
+			   main::reload_all();
+		       }
+
 		       # XXX delete_route light
 		       main::reset_button_command();
 		       main::reset_selection();
@@ -2286,7 +2325,9 @@ sub insert_point_from_canvas {
 	}
 	@main::inslauf_selection = ($first, $middle, $last);
 	warn "insert coords=@main::inslauf_selection\n";
-	main::insert_points();
+	if (main::insert_points() && $auto_reload) {
+	    main::reload_all();
+	}
     }
 }
 

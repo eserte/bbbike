@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.103 2004/07/27 23:16:50 eserte Exp $
+# $Id: Makefile.PL,v 1.103 2004/07/27 23:16:50 eserte Exp eserte $
 
 use 5.005;
 
@@ -110,7 +110,7 @@ use constant REQTABLE_LONGDESC=> 5;
   [qw/Astro::Sunrise	0	all	0	base/,
    'Anzeige des Sonnenuntergangs/-aufgangs im Info-Fenster'],
   [qw/File::ReadBackwards 0	all	0	devel/,
-   'LogTracker plugin'],
+   'LogTracker plugin, Edititeren'],
   [qw/Date::Pcalc	0	all	0	devel/,
    'LogTracker plugin'],
   [qw/XBase		0	all	0	devel/,
@@ -129,7 +129,7 @@ use constant REQTABLE_LONGDESC=> 5;
 
 # EXE corequisites ####################################################
 # standard Unix: uname, who, tee, at, diff, zcat, ping
-# BSD Unix:      leave
+# BSD Unix:      leave (very optional)
 # extra:         enscript, gv, ghostview, gs, netpbm-utils, cjpeg, agrep,
 #                netscape, socket, mapserver
 # local extra:   cdmount, dial
