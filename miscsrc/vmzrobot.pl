@@ -29,6 +29,7 @@ use Text::Balanced qw(extract_delimited);
 my $test;
 my $inputfile;
 my $quiet;
+my $force;
 my $listing_url = "http://www.vmz-berlin.de/vmz/trafficspotmap.do";
 my $detail_url  = "http://www.vmz-berlin.de/vmz/trafficmap.do";
 my @output_as;
@@ -36,6 +37,7 @@ my @output_as;
 if (!GetOptions("test" => \$test,
 		"i|inputfile=s" => \$inputfile,
 		"q" => \$quiet,
+		"f" => \$force,
 		'outputas=s@' => \@output_as,
 	       )) {
     die <<EOF;
@@ -56,8 +58,8 @@ my %output_as = map { my($type, $file) = split /:/, $_, 2;
 		    } @output_as;
 
 while(my($k,$v) = each %output_as) {
-    if (defined $v && -e $v) {
-	die "Won't overwrite existing file $v";
+    if (defined $v && -e $v && !$force) {
+	die "Won't overwrite existing file $v without -f\n";
     }
 }
 
@@ -75,12 +77,12 @@ if ($inputfile) {
 } else {
     $ua = LWP::UserAgent->new;
     print STDERR "Get listing..." if !$quiet;
-    my @detail_links = get_listing();
+    @detail_links = get_listing();
     print STDERR " OK\n" if !$quiet;
     {
 	my $i = 0;
 	for my $detail_link (@detail_links) {
-	    printf STDERR "%d%%   \r", $i/@detail_links*100 if !$quiet;
+	    printf STDERR "%d/%d (%d%%)   \r", $i, scalar(@detail_links), $i/@detail_links*100 if !$quiet;
 	    $detail_link->{text} = get_detail($detail_link->{querystring});
 	    $i++;
 	}
@@ -157,6 +159,9 @@ sub get_listing {
 	     }
 	 }, $listing_url);
     $p->parse($resp->content);
+    if (!@detail_links) {
+	warn "No detail links in listing page found!\n";
+    }
     @detail_links;
 }
 
@@ -184,8 +189,8 @@ sub file_or_stdout {
     my $fh;
     if (defined $output_as) {
 	my $f = $output_as;
-	if (-e $f) {
-	    die "Won't overwrite existing file $f";
+	if (-e $f && !$force) {
+	    die "Won't overwrite existing file $f without -f\n";
 	}
 	open($fh, ">$f") or die "Can't write to $f: $!";
     } else {
