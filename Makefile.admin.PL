@@ -401,10 +401,11 @@ clean_cache:
 # PORTS, BINDISTS...####################################################
 
 fbsdport:
-	cd port/freebsd && env TMPDIR=$(TMPDIR) ./mkport.pl -useversion last
-
-fbsdport-devel:
 	cd port/freebsd && env TMPDIR=$(TMPDIR) ./mkport.pl
+
+#XXX -useversion devel NYI
+#fbsdport-devel:
+#	cd port/freebsd && env TMPDIR=$(TMPDIR) ./mkport.pl -useversion devel
 
 fbsdport-distfiles-link:
 	[ -d /usr/ports/distfiles ] && \

@@ -2,15 +2,15 @@
 # -*- perl -*-
 
 #
-# $Id: mkport.pl,v 1.22 2004/01/04 21:39:30 eserte Exp eserte $
+# $Id: mkport.pl,v 1.23 2004/03/15 21:39:38 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net/
 #
 
 use FindBin;

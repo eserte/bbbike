@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MetaPort.pm,v 1.6 2001/07/29 21:18:31 eserte Exp eserte $
+# $Id: MetaPort.pm,v 1.7 2004/03/15 21:41:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2000 Slaven Rezic. All rights reserved.

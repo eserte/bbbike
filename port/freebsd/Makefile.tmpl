@@ -26,14 +26,6 @@ MAN1=		bbbike.1
 
 MYDESTDIR=	${PREFIX}/BBBike
 
-.if !defined(PERL_VER) || ${PERL_VER} == 5.005
-PLIST=		${PKGDIR}/pkg-plist.5005
-LOCAL_PERL_ARCH!=perl -MConfig -e 'print qq{$$Config{archname}}'
-.else
-LOCAL_PERL_ARCH!=perl -MConfig -e 'print qq{$$Config{version}/$$Config{archname}}'
-.endif
-PLIST_SUB=	LOCAL_PERL_ARCH=${LOCAL_PERL_ARCH}
-
 do-build:
 	cd ${WRKSRC}/ext && ${MAKE} PERL=${PERL5} all install
 	cd ${WRKSRC}/ext && ${MAKE} PERL=${PERL5} clean
@@ -49,13 +41,21 @@ BBBIKEEXE=	bbbike cbbbike bbbikeclient cmdbbbike smsbbbike
 do-install:
 	-${RM} -rf ${MYDESTDIR}
 	${INSTALL_MAN} ${WRKSRC}/bbbike.1 ${PREFIX}/man/man1
-	${RM} -f ${WRKSRC}/bbbike.1
-	${CP} -r  ${WRKSRC} ${MYDESTDIR}
-	${FIND} ${MYDESTDIR} -exec ${CHMOD} ugo+r {} \;
-	${FIND} ${MYDESTDIR} -perm -u=x -exec ${CHMOD} go+x {} \;
+	${CP} -r ${WRKSRC} ${MYDESTDIR}
+	${RM} -f ${MYDESTDIR}/bbbike.1
+	${FIND} ${MYDESTDIR} | ${XARGS} ${CHMOD} ugo+r
+	${FIND} ${MYDESTDIR} -perm -u=x | ${XARGS} ${CHMOD} go+x
 .for f in ${BBBIKEEXE}
 	-${RM} -f ${PREFIX}/bin/$f
 	${LN} -s  ${MYDESTDIR}/$f ${PREFIX}/bin/$f
 .endfor
 
 .include <bsd.port.mk>
+
+.if !defined(PERL_VER) || ${PERL_VER} == 5.005
+PLIST=		${PKGDIR}/pkg-plist.5005
+LOCAL_PERL_ARCH!=${PERL5} -MConfig -e 'print qq{$$Config{archname}}'
+.else
+LOCAL_PERL_ARCH!=${PERL5} -MConfig -e 'print qq{$$Config{version}/$$Config{archname}}'
+.endif
+PLIST_SUB=	LOCAL_PERL_ARCH=${LOCAL_PERL_ARCH}
