@@ -31,16 +31,17 @@ sub new {
 
 sub load {
     my $self = shift;
-    Strassen->new(@{ $self->{args} });
+    my $s = Strassen->new(@{ $self->{args} });
+    bless $self, ref $s;
+    %$self = %$s;
+    $self;
 }
 
-## Does not work yet, because becomes is both the realized class and the
-## required package XXX
 package MultiStrassen::Lazy;
 
 use Object::Realize::Later
     becomes => 'MultiStrassen',
-    included_in => 'Strassen::MultiStrassen',
+    source_module => 'Strassen::MultiStrassen',
     realize => 'load',
     warn_realization => $Strassen::VERBOSE,
     ;
@@ -52,7 +53,10 @@ sub new {
 
 sub load {
     my $self = shift;
-    MultiStrassen->new(@{ $self->{args} });
+    my $s = MultiStrassen->new(@{ $self->{args} });
+    bless $self, ref $s;
+    %$self = %$s;
+    $self;
 }
 
 1;
