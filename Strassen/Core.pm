@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.28 2003/09/22 20:03:11 eserte Exp eserte $
+# $Id: Core.pm,v 1.29 2003/10/07 22:34:25 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -613,6 +613,17 @@ sub all_crossings {
 	    return $hashref;
 	}
     }
+
+    my $inacc;
+    if ($self->{Inaccessible}) {
+	require Strassen::Kreuzungen;
+	my $cr = Kreuzungen->new_from_strassen
+	    (WantPos => 1,
+	     Strassen => $self->{Inaccessible},
+	    );
+	$inacc = $cr->{Hash};
+    }
+
     # RetType ...pos: Positionen statt Straßennamen speichern
     my $store_pos = ($rettype =~ /pos$/);
     my %crossings;
@@ -624,6 +635,7 @@ sub all_crossings {
 	last if @kreuzungen == 0;
 	my $store = ($store_pos ? $self->pos : $ret->[NAME]);
 	for my $xy (@kreuzungen) {
+	    next if $inacc && exists $inacc->{$xy};
 	    $crossings{$xy}++;
 	  TEST: {
 		for my $test (@{$crossing_name{$xy}}) {

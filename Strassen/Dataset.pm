@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Dataset.pm,v 1.5 2003/01/08 20:14:26 eserte Exp $
+# $Id: Dataset.pm,v 1.6 2003/10/07 22:34:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::Dataset;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%file %net %crossings %obj);
 
@@ -110,6 +110,17 @@ sub get {
 	}
 	$obj = MultiStrassen->new(@filenames);
     }
+
+    # Add Inaccessible member to strassen only
+    # XXX Shouldn't be hardcoded
+    if ($linetype eq 'str' && $type eq 's') {
+	my $inacc_str;
+	eval {
+	    $inacc_str = Strassen->new("inaccessible_strassen");
+	    $obj->{Inaccessible} = $inacc_str;
+	};
+    }
+
     if ($obj) {
 	$obj{$key} = $obj;
     }

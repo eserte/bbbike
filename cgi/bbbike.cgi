@@ -3889,6 +3889,7 @@ sub get_streets {
 
     {
 	# XXX cache?
+	# XXX Maybe better use Strassen::Dataset implementation?
 	my $i_s;
 	eval { $i_s = new Strassen "inaccessible_strassen" };
 	if ($i_s) {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.16 2003/10/02 06:31:38 eserte Exp $
+# $Id: cgi.t,v 1.17 2003/10/08 07:33:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -18,6 +18,7 @@ use strict;
 use Test::More qw(no_plan);
 use LWP::UserAgent;
 use URI::WithBase;
+use URI::Escape qw(uri_escape);
 use Getopt::Long;
 use Data::Dumper;
 use Safe;
@@ -257,7 +258,8 @@ for my $cgiurl (@urls) {
 	$req = new HTTP::Request
 	    ('GET', "$action?startname=Otto-Nagel-Str.+%28Potsdam%29&startplz=&startc=-11978%2C-348&zielname=Sonntagstr.&zielplz=10245&zielc=14598%2C11245&scope=region&pref_seen=1&pref_speed=20&pref_cat=N2&pref_quality=&output_as=perldump");
 	$res = $ua->request($req);
-	ok($res->is_success) or diag $res->as_string;
+	ok($res->is_success, "Bundesstraßen handled OK")
+	    or diag $res->as_string;
 	$content = uncompr($res);
 	$route = $cpt->reval($content);
 	if (is(ref $route, "HASH")) {
@@ -272,13 +274,28 @@ for my $cgiurl (@urls) {
 	# XXX Maybe utilize WWW::Mechanize(::Shell) for more tests
     }
 
+    XXX:
+    {
+	# Test "inaccessible" feature
+	my $inacc_xy = "21306,381"; # B96a
+	$req = new HTTP::Request
+	    ('GET', "$action?startname=Somewhere&startc=" . uri_escape($inacc_xy) . "&zielname=Sonntagstr.&zielplz=10245&zielc=14598%2C11245&scope=region&pref_seen=1&pref_speed=20&pref_cat=N2&pref_quality=&output_as=perldump");
+	$res = $ua->request($req);
+	ok($res->is_success, 'test "inaccessible" feature')
+	    or diag $res->as_string;
+	$content = uncompr($res);
+	my $route = $cpt->reval($content);
+	is(ref $route, "HASH", 'route with "inaccessible" feature is valid');
+    }
+
     $req = new HTTP::Request
       ('GET', "$action?start=duden&via=&ziel=guben", $hdrs);
     $res = $ua->request($req);
-    ok($res->is_success) or diag $res->as_string;
+    ok($res->is_success, "Guben vs. Gubener Str.")
+	or diag $res->as_string;
     $content = uncompr($res);
     if (!$ortsuche) {
-	ok($content =~ /Gubener Str./);
+	like($content, qr/Gubener Str./);
     } else {
 	like($content, qr/Gubener Str.!Friedrichshain/) or diag "Can't find Gubener Str. in " . $content;
 	like($content, qr/Guben!\#ort!/) or diag("Can't find Guben in " . $content);
@@ -288,7 +305,8 @@ for my $cgiurl (@urls) {
     $req = new HTTP::Request
 	(GET => "$action?start=&startcharimg.x=107&startcharimg.y=15&startmapimg.x=&startmapimg.y=&via=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=", $hdrs);
     $res = $ua->request($req);
-    ok($res->is_success) or diag $res->as_string;
+    ok($res->is_success, "Click on D in A..Z")
+	or diag $res->as_string;
     $content = uncompr($res);
     like($content, qr/Anfangsbuchstabe.*D/);
     like($content, qr/Dudenstr/);
@@ -297,7 +315,8 @@ for my $cgiurl (@urls) {
     $req = new HTTP::Request
 	(GET => "$action?start=&startcharimg.x=107&startcharimg.y=15&startmapimg.x=90&startmapimg.y=107&via=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=", $hdrs);
     $res = $ua->request($req);
-    ok($res->is_success) or diag $res->as_string;
+    ok($res->is_success, "Click on overview map")
+	or diag $res->as_string;
     $content = uncompr($res);
     if ($content !~ qr|(http://.*/bbbike.*tmp/berlin_map_04-05.png)|i) {
 	ok(0) for 1..4; # really skip
@@ -317,7 +336,8 @@ for my $cgiurl (@urls) {
     $req = new HTTP::Request
 	(GET => "$action?info=1", $hdrs);
     $res = $ua->request($req);
-    ok($res->is_success) or diag $res->as_string;
+    ok($res->is_success, "Click on info link")
+	or diag $res->as_string;
 
     # Klick on Mapserver link
     SKIP: {
@@ -329,7 +349,8 @@ for my $cgiurl (@urls) {
 	$req = new HTTP::Request
 	    (GET => "$action?mapserver=1", $hdrs);
 	$res = $ua->request($req);
-	ok($res->is_success) or diag $res->as_string;
+	ok($res->is_success, "Click on mapserver link")
+	    or diag $res->as_string;
 	my $content = uncompr($res);
 	like($content, qr/Darzustellende Ebenen/);
 	if ($content !~ qr|SRC="(.*/mapserver/brb/tmp/brb.*.png)"|) {
@@ -353,7 +374,8 @@ for my $cgiurl (@urls) {
 	$req = new HTTP::Request
 	    (GET => "$action?all=1", $hdrs);
 	$res = $ua->request($req);
-	ok($res->is_success) or diag $res->as_string;
+	ok($res->is_success, "Click on all streets link")
+	    or diag $res->as_string;
 	my $content = uncompr($res);
 	like($content, qr/B(?:ö|&ouml;)lschestr.*Brachvogelstr.*(?:Ö|&Ouml;)schelbronner.Weg.*Pallasstr/s, "Correct sort order");
     }
@@ -363,7 +385,8 @@ for my $cgiurl (@urls) {
 	$req = new HTTP::Request
 	    ('GET', "$action?startname=Dudenstr.&startplz=10965&via=&ziel2=Guben%21%23ort%21100909%2C-46980", $hdrs);
 	$res = $ua->request($req);
-	ok($res->is_success) or diag $res->as_string;
+	ok($res->is_success, "Ortsuche")
+	    or diag $res->as_string;
 	$content = uncompr($res);
 	ok($content =~ /Mehringdamm.*Platz.*Tempelhofer/);
 	ok($content =~ /Guben.*zielisort/);
@@ -431,8 +454,6 @@ for my $cgiurl (@urls) {
 	}
     }
 
-    XXX:
-
     # Semantik ein bisschen testen:
     {
 	$req = new HTTP::Request
@@ -443,10 +464,10 @@ for my $cgiurl (@urls) {
 	my $route = $cpt->reval($content);
 	is(ref $route, "HASH");
 	for my $h_member (qw(Speed Power)) {
-	    is(ref $route->{$h_member}, "HASH");
+	    is(ref $route->{$h_member}, "HASH", "$h_member existant");
 	}
 	for my $a_member (qw(Route LongLatPath Path)) {
-	    is(ref $route->{$a_member}, "ARRAY");
+	    is(ref $route->{$a_member}, "ARRAY", "$a_member existant");
 	    ok(@{$route->{$a_member}} > 0);
 	}
 	is(scalar @{$route->{LongLatPath}},
@@ -471,7 +492,7 @@ for my $cgiurl (@urls) {
 		    last TRY;
 		}
 	    }
-	    ok(1);
+	    ok(1, "Directions and Coords OK");
 	}
 
 	TRY: {
@@ -486,7 +507,8 @@ for my $cgiurl (@urls) {
 	}
 
 	for my $s (qw(Methfesselstr Skalitzer Sonntagstr)) {
-	    ok(grep { $_->{Strname} =~ /$s/ } @{$route->{Route}});
+	    ok(grep { $_->{Strname} =~ /$s/ } @{$route->{Route}},
+	       "Street $s expected in route");
 	}
 	ok($route->{Len} > 7000 && $route->{Len} < 8000, "check route length")
 	    or diag "Route length: $route->{Len}";

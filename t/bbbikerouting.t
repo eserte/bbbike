@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.5 2003/10/01 07:01:00 eserte Exp $
+# $Id: bbbikerouting.t,v 1.6 2003/10/08 07:33:06 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -29,7 +29,7 @@ BEGIN {
     }
 }
 
-my $num_tests = 48; # basic number of tests
+my $num_tests = 52; # basic number of tests
 
 use vars qw($single $all $bench $v);
 
@@ -269,6 +269,33 @@ sub do_tests {
     like($routing->Goal->Street, qr/^B96/); # normalized
     ok(scalar @{ $routing->Path } > 0, "scope=wideregion test");
     ok(scalar @{ $routing->RouteInfo } > 0);
+
+    {
+	my $routing2 = BBBikeRouting->new;
+	$routing2->init_context;
+	my $context = $routing->Context;
+	_my_init_context($context);
+
+	# Start position which is in the net, but really unreachable
+	my $start_pos = BBBikeRouting::Position->new;
+	$start_pos->Street("???");
+	my $inacc_xy = "21306,381"; # B96a
+	$start_pos->Coord($inacc_xy);
+	$routing2->fix_position($start_pos);
+	ok($start_pos->Coord ne $inacc_xy, "fixed start position");
+	ok(Strassen::Util::strecke_s($inacc_xy, $start_pos->Coord) < 600,
+	   "new fixed position is reasonably near");
+	$routing2->Start($start_pos);
+	$routing2->Goal->Street("Dudenstr");
+
+	eval {
+	    $routing2->search;
+	};
+	is($@, "", "successful search");
+	ok($routing2->Path && scalar @{ $routing2->Path } > 0,
+	   "Non-empty path");
+    }
+
 }
 
 # REPO BEGIN
