@@ -177,8 +177,9 @@ use vars qw($radwege_optimierung $radwege_net $N_RW_optimization $N_RW_net
 	    %radwege_speed $green_optimization $green_net);
 use vars qw($strcat_optimierung $strcat_net %strcat_speed
 	    %strcat_bez @strcat_order);
+# XXX use curr_selection instead of inslauf_selection some day
 use vars qw($steigung_net %steigung_penalty_env $steigung_penalty
-	    @inslauf_selection @ext_selection
+	    $curr_selection @inslauf_selection @ext_selection
 	    $strecke $dim_color $unit_km
 	    $bikepwr @bikepwr_all_time @bikepwr_time @bikepwr_cal
 	    $power_cache $next_is_undo

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.32 2003/06/25 05:36:26 eserte Exp $
+# $Id: GD.pm,v 1.32 2003/06/25 05:36:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -770,7 +770,6 @@ sub draw_route {
 	    my $images_dir = $self->get_images_dir;
 	    my $imgfile;
 	    $imgfile = "$images_dir/flag2_bl." . $self->suffix;
-warn $imgfile;
 	    if (open(GIF, $imgfile)) {
 		binmode GIF;
 		my $start_flag = newFromImage GD::Image \*GIF;

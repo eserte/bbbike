@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.105 2003/06/09 21:45:24 eserte Exp eserte $
+# $Id: bbbike,v 3.106 2003/06/28 14:27:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -209,7 +209,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.105 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.106 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -3022,6 +3022,16 @@ sub do_iconframe {
 		      });
 	$bdm->command(-label => M"Alle löschen",
 		      -command => sub { delete_user_dels() });
+	if ($advanced) {
+	    $bdm->command(-label => M"In die Zwischenablage kopieren",
+			  -command => sub {
+			      my $s = $net->create_user_deletions_object;
+			      # XXX usage of @inslauf_selection is a hack!
+			      $c->SelectionOwn;
+			      @inslauf_selection = $s->as_string;
+			  },
+			 );
+	}
     }
 
     $sb2m->checkbutton(-label => M"Tragen strikt vermeiden",
@@ -3824,21 +3834,6 @@ sub do_iconframe {
 			      );
 	}
 	$cusm->separator;
-	if ($advanced) {
-	    # XXX the "xxx" functions are (nearly) obsolete --- there
-	    # are some issues with drawing bbd files with .desc files
-	    $cusm->checkbutton(-label => M"Strecken zeichnen",
-			       -variable => \$str_draw{'xxx'},
-			       -command => sub { custom_draw_dialog('str','xxx') });
-	    $cusm->command(-label => M"Strecken auswählen",
-			   -command => sub { choose_ort('s', 'xxx', -rebuild => 1) });
-	    $cusm->checkbutton(-label => M"Punkte zeichnen",
-			       -variable => \$p_draw{'xxx'},
-			       -command => sub { custom_draw_dialog('p','xxx') });
-	    $cusm->command(-label => M"Punkte auswählen",
-			   -command => sub { choose_ort('p', 'xxx', -rebuild => 1) });
-	    $cusm->separator;
-	}
 	$cusm->command(-label => M"Gpsman-Daten zeichnen",
 		       -command => sub {
 			   draw_gpsman_data($top);
@@ -4578,7 +4573,6 @@ sub define_item_attribs {
     # fallback, falls kein %category_color definiert ist
     %str_color =
 	('s'   => 'yellow',
-	 'xxx' => 'red',
 	 'L'   => 'red',
 	 'qs'  => 'red',
 	 'ql'  => 'red',
@@ -4865,7 +4859,7 @@ sub define_item_attribs {
 	 qw(qs hs ql hl nl delnet
 	    O o p pl-fg lsas lsas-t lsa-bg lsa-fg
 	    vf-fg pp kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
-	    fz L pp-L L-img L-fg xxx pp-xxx xxx-img xxx-fg ovl
+	    fz L pp-L L-img L-fg ovl
 	    gpsanimrect zoomrect),
 	);
 }
@@ -4878,14 +4872,17 @@ sub generate_plot_functions {
 	    my @kreuzungen = @{$ret->[Strassen::COORDS]};
 	    my $cat_hin = $ret->[Strassen::CAT];
 	    my $cat_rueck;
+	    my(@addinfo_hin, @addinfo_rueck);
 	    if ($cat_hin =~ /^(.*);(.*)$/) {
 		($cat_hin, $cat_rueck) = ($1, $2);
 	    }
-	    if ($cat_hin =~ /^([^:]+):\d+$/) {
+	    if ($cat_hin =~ /^(.+?)::(.*)$/) { # XXX will change
 		$cat_hin = $1;
+		@addinfo_hin = split ':', $2;
 	    }
-	    if (defined $cat_rueck && $cat_rueck =~ /^([^:]+):\d+/) {
+	    if (defined $cat_rueck && $cat_rueck =~ /^(.+?)::(.*)$/) { # XXX this will change!
 		$cat_rueck = $1;
+		@addinfo_rueck = split ':', $2;
 	    }
 # XXX Problems with cat = ";anything": $cat_hin is empty and thus always
 # restricted. Workaround: always use "anything;" with the reversed
@@ -5233,16 +5230,25 @@ sub generate_plot_functions {
 			if ($str_nr_draw{$abk}) {
 			    draw_street_numbers($c,$strname,$abk,\@coordlist);
 			}
+
+			my $street_photo;
 			if ($abk eq 'e') {
 			    my $p = get_symbol_scale($abk);
-			    if ($p) {
-				my($mx,$my) = get_polyline_center(@coordlist);
-				$c->createImage($mx,$my,
-						-anchor => "nw",
-						-image => $p,
-						# $abk-img or $abk-fg ?
-						-tags => [$abk,$strname,"$abk-img", "$abk-" . ($i-1)]);
+			    $street_photo = $p if $p;
+			} elsif (@addinfo_hin # ignore @addinfo_rueck for now
+				) {
+			    if ($addinfo_hin[0] =~ /\binwork\b/ && $inwork_photo) {
+				$street_photo = $inwork_photo;
 			    }
+			}
+			if ($street_photo) {
+			    my($mx,$my) = get_polyline_center(@coordlist);
+			    $c->createImage($mx,$my,
+					    -anchor => "nw",
+					    -image => $street_photo,
+					    # $abk-img or $abk-fg ?
+					    -tags => [$abk,$strname,"$abk-img",
+						      "$abk-" . ($i-1)]);
 			}
 		    }
 		}
@@ -5301,7 +5307,9 @@ EOF
 		    };
 		    if (!$p) {
 			eval {
-			    $p = $c->Photo(-file => Tk::findINC($photo));
+			    my $photo = Tk::findINC($photo);
+			    $p = $c->Photo(-file => $photo)
+				if defined $photo;
 			};
 			if (!$p) {
 			    eval {
@@ -5364,13 +5372,7 @@ EOF
 		    );
 		$c->createLine($cx1,$cy1,$cx2,$cy2,$cx3,$cy3,
 			       -tags => "$abk-bg");
-	    } elsif ($abk eq 'xxx') {
-		my $color = $category =~ /^\#/ ? $category : exists $category_color{$category} ? $category_color{$category} : undef;
-		$c->createLine($x, $y, $x, $y,
-			       (defined $color ? (-fill => $color) : ()),
-			       -width => 3,
-			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "p-" . ($i-1)]);
-	    } elsif ($abk =~ /^L(\d+)$/) {
+	    } elsif ($abk =~ /^L(\d+)/) {
 		my $color = $category =~ /^\#/ ? $category : exists $category_color{$category} ? $category_color{$category} : undef;
 		$c->createLine($x, $y, $x, $y,
 			       (defined $color ? (-fill => $color) : ()),
@@ -5501,13 +5503,13 @@ EOF
 sub set_bindings {
     foreach (qw(p pp o u-bg u-fg b-bg b-fg r-bg r-fg
 		sperre lsa-fg lsa-bg show pl-fg
-		L-img L-fg xxx-img xxx-fg kn-fg ki-fg rest-fg)) {
+		L-img L-fg kn-fg ki-fg rest-fg)) {
 	std_p_binding($_);
     }
 
     foreach (qw(s S l L u b r f v v-fg w W i e comm),
 	     (map { "comm-$_" } @comments_types),
-	     qw(gr qs hs ql hl fz xxx nl ovl)) {
+	     qw(gr qs hs ql hl fz nl ovl)) {
 	std_str_binding($_);
     }
 
@@ -7307,7 +7309,7 @@ sub load_save_route {
 
 	    if ($res->{IsStrFile}) {
 		# eine Strassen-Datei
-		plot_layer('str', $file, -fallbackxxx => 1);
+		plot_layer('str', $file);
 		return;
 	    }
 
@@ -7462,7 +7464,7 @@ sub plot {
     if ($type eq 'str') {
 	plotstr($abk, %args);
     } elsif ($type eq 'p') {
-	if ($abk =~ /^sperre/) {
+	if ($abk =~ /sperre$/) {
 	    plot_sperre($args{-filename}, -abk => $abk);
 	} else {
 	    plotp($abk, %args);
@@ -7481,13 +7483,8 @@ sub plot_layer {
     my($type, $file, %args) = @_;
     my $abk = next_free_layer();
     if (!defined $abk) {
-	if ($args{-fallbackxxx}) {
-	    $abk = 'xxx';
-	} else {
-	    status_message("Kein freier Layer mehr vorhanden", "err");
-	    return;
-	}
-	delete $args{-fallbackxxx};
+	status_message("Kein freier Layer mehr vorhanden", "err");
+	return;
     }
     fix_stack_order($abk);
     if ($type eq 'p') {
@@ -7578,9 +7575,9 @@ sub plotstr {
     if (!$str) {
 	$dont_use_cache = ($coord_system ne 'standard' ||
 			   $args{FastUpdate} ||
-			   $abk =~ /^(xxx|L\d+)$/);
+			   $abk =~ /^L\d+/);
 	$dont_set_cache = ($coord_system ne 'standard' ||
-			   $abk =~ /^(xxx|L\d+)$/);
+			   $abk =~ /^L\d+/);
     TRYCACHE: {
 	    if (defined $str_obj{$abk} && !$dont_use_cache) {
 		last TRYCACHE if ($abk eq 'l' and
@@ -7797,7 +7794,7 @@ sub plotstr {
 	my $anzahl_eindeutig = $str->count;
 	$str->init;
 	$escape = 0;
-	my @extra_tags = ($abk =~ /^(xxx|L\d+)$/ ? ("$abk-s") : ());
+	my @extra_tags = ($abk =~ /^L\d+/ ? ("$abk-s") : ());
 
 	my $draw_sub = eval $plotstr_draw_sub;
 	string_eval_die($@, $plotstr_draw_sub) if $@; #die $@ if $@;
@@ -7931,12 +7928,6 @@ sub plot_sperre {
 				       )
 				    );
 
-# XXX del:
-#  	foreach ($gesperrt->file) {
-#  	    $old_mtime{$_} = (stat($_))[STAT_MODTIME];
-#  	    $mtime_file_type{$_} = ['p', 'sperre'];
-#  	}
-
 	my $width0  = get_line_width('sperre0');
 	my $width1  = get_line_width('sperre1');
 	my $width2  = get_line_width('sperre2');
@@ -7963,6 +7954,27 @@ sub plot_sperre {
 	$length1 = ($length1 ? $length1 : 1);
 	$length2 = ($length2 ? $length2 : 1);
 
+	# XXX don't duplicate code from plotstr!
+	my $diffed_str = 0;
+	my $str = $gesperrt;
+	#XXX Abfrage auf $edit_mode notwendig?
+	if ($edit_mode && $args{FastUpdate}) {
+	    my($new_str, $todelref) = $str->diff_orig(-clonefile => 1);
+	    if (!defined $new_str) {
+		warn M("Diff-Ausgabe wird nicht verwendet") if $verbose;
+		$c->delete($abk);		# evtl. alte Koordinaten löschen
+		$c->delete("pp-$abk");
+	    } else {
+		warn M("Diff-Ausgabe wird verwendet") if $verbose;
+		foreach (@$todelref) {
+		    $c->delete("$abk-$_");
+		}
+		$str = $new_str;
+		$diffed_str = 1;
+		$gesperrt = $str;
+	    }
+	}
+
 	$gesperrt->init;
 	my $pos = -1;
 	while (1) {
@@ -7985,8 +7997,8 @@ sub plot_sperre {
 			$c->createLine
 			    ($x-$cos4+$xadd, ($y+$yadd)-$sin4, $x+$cos4+$xadd, ($y+$yadd)+$sin4,
 			     -width => $width0, # XXX $width0 verwenden und in get_line_width anpassen
-			     -tags => ['sperre', 'sperre0',
-				       $ret->[Strassen::NAME], 'sperre-'.$pos],
+			     -tags => [$abk, 'sperre0',
+				       $ret->[Strassen::NAME], $abk.'-'.$pos],
 			    );
 		    }
 		}
@@ -8007,8 +8019,8 @@ sub plot_sperre {
 		    $c->createLine
 			($x-$cos1+$xadd, ($y+$yadd)-$sin1, $x+$cos4+$xadd, ($y+$yadd)+$sin4,
 			 -width => $width0, # XXX $widthBNP verwenden und in get_line_width anpassen
-			 -tags => ['sperre', 'sperreBNP',
-				   $ret->[Strassen::NAME], 'sperre-'.$pos],
+			 -tags => [$abk, 'sperreBNP',
+				   $ret->[Strassen::NAME], $abk.'-'.$pos],
 			);
 		}
 		for my $add ([$cos1,-$sin1]) {
@@ -8016,8 +8028,8 @@ sub plot_sperre {
 		    $c->createLine
 			($x-$cos4+$xadd, ($y+$yadd)-$sin4, $x+$cos1+$xadd, ($y+$yadd)+$sin1,
 			 -width => $width0, # XXX $widthBNP verwenden und in get_line_width anpassen
-			 -tags => ['sperre', 'sperreBNP',
-				   $ret->[Strassen::NAME], 'sperre-'.$pos],
+			 -tags => [$abk, 'sperreBNP',
+				   $ret->[Strassen::NAME], $abk.'-'.$pos],
 			);
 		}
 		next;
@@ -8053,8 +8065,8 @@ sub plot_sperre {
 		     -arrow => 'last',
 		     -arrowshape => [4,6,3],
 		     ($Tk::VERSION >= 800.016 ? (-dash => $line_dash{sperre3}) : ()),
-		     -tags => ['sperre', 'sperre3',
-			       $ret->[Strassen::NAME], 'sperre-'.$pos],
+		     -tags => [$abk, 'sperre3',
+			       $ret->[Strassen::NAME], $abk.'-'.$pos],
 		    );
 		next;
 	    }
@@ -8081,32 +8093,40 @@ sub plot_sperre {
 				   -width => $width1,
 				   -arrow => 'last',
 				   -arrowshape => [4,6,3],
-				   -tags => ['sperre', $type2cat{$cat}, undef, 'sperre-'.$pos],
+				   -tags => [$abk, $type2cat{$cat}, undef, $abk.'-'.$pos],
 				  );
 		} elsif ($cat eq StrassenNetz::BLOCKED_COMPLETE) {
 		    $c->createLine($xm-$length2, $ym-$length2,
 				   $xm+$length2, $ym+$length2,
 				   -fill => $fill2,
 				   -width => $width2,
-				   -tags => ['sperre', 'sperre2',
-					     $ret->[Strassen::NAME], 'sperre-'.$pos]);
+				   -tags => [$abk, 'sperre2',
+					     $ret->[Strassen::NAME], $abk.'-'.$pos]);
 		    $c->createLine($xm-$length2, $ym+$length2,
 				   $xm+$length2, $ym-$length2,
 				   -fill => $fill2,
 				   -width => $width2,
-				   -tags => ['sperre', 'sperre2',
-					     $ret->[Strassen::NAME], 'sperre-'.$pos]);
+				   -tags => [$abk, 'sperre2',
+					     $ret->[Strassen::NAME], $abk.'-'.$pos]);
 		}
 
 		if (defined $addinfo[0] && $addinfo[0] =~ /\binwork\b/ && $inwork_photo) {
 		    $c->createImage($xm,$ym,
 				    -anchor => "nw",
 				    -image => $inwork_photo,
-				    -tags => ['sperre','sperre'.$cat,$ret->[Strassen::NAME], 'sperre-'.$pos]);
+				    -tags => [$abk,'sperre'.$cat,$ret->[Strassen::NAME], $abk.'-'.$pos]);
 		}
 
 	    }
 	}
+
+	if ($edit_mode and !$diffed_str) {
+	    warn "Try to copy original data" if $verbose;
+	    my $str = $gesperrt;
+	    my $r = $str->copy_orig;
+	    warn "Returned $r" if $verbose;
+	}
+
     };
     DecBusy($top);
     Hooks::get_hooks("after_plot")->execute;
@@ -8342,7 +8362,7 @@ sub plot_symbol {
 	   -text => (defined $arg{-font} ? 'U' : ''),
 	   (defined $arg{-font} ? (-font => $arg{-font}) : ()),
 	  );
-    } elsif ($abk =~ /^(xxx|L\d+)$/) {
+    } elsif ($abk =~ /^L\d+/) {
   	eval {
   	    $c->itemconfigure($tag_fg,
   			      -capstyle => $capstyle_round,
@@ -8434,7 +8454,7 @@ sub plot_point {
     eval {
 	my $bhf;
 	if (defined $p_obj{$abk} && $coord_system eq 'standard' &&
-	    $abk !~ /^(xxx|L\d+)$/) {
+	    $abk !~ /^L\d+/) {
 	    $bhf = $p_obj{$abk};
 	} else {
 	    cache_decider_init();
@@ -8446,17 +8466,11 @@ sub plot_point {
 		die $@;
 	    }
 	    if ($coord_system eq 'standard' &&
-		(cache_decider() || $abk =~ /^(xxx|L\d+)$/ || $abk eq 'kn') # 'xxx' und 'kn' wegen Info
+		(cache_decider() || $abk =~ /^L\d+/ || $abk eq 'kn') # 'L...' und 'kn' wegen Info
 	       ) {
 		$p_obj{$abk} = $bhf;
 	    }
 	}
-
-# XXX del:
-#  	foreach ($bhf->file) {
-#  	    $old_mtime{$_} = (stat($_))[STAT_MODTIME];
-#  	    $mtime_file_type{$_} = ['p', $abk];
-#  	}
 
 	# XXX Experiment!!!
 	if ($orientation eq 'landscape' &&
@@ -8491,7 +8505,6 @@ sub plot_point {
 			    : 0);
 	my $name_draw = (exists $args{NameDraw}
 			 ? $args{NameDraw} : $p_name_draw{$abk});
-	#XXXmy $name_draw_tag = uc($abk);
 	my $name_draw_tag = "$abk-label";
 	my $name_draw_other = ($name_draw_tag =~ /^[ubr]-label$/
 			       ? [qw(u-label b-label r-label)]
@@ -9720,7 +9733,7 @@ sub enterpoint {
 	}
 	$act_value{Haltestelle} = $prefix . $tags[1];
 	$hs_label->configure(-fg => 'black');
-    } elsif ($tags[0] eq 'pp' || $tags[0] =~ /^(xxx|L\d+|kn|ki|rest)/) {
+    } elsif ($tags[0] eq 'pp' || $tags[0] =~ /^(L\d+|kn|ki|rest)/) {
 	if (defined $tags[2] && $tags[2] ne 'current') {
 	    $act_value{Haltestelle} = $tags[2];
 	} else {
@@ -10241,7 +10254,7 @@ EOF
 			$show_info_sub->($info{$tags[$i]});
 			last TRY;
 		    }
-		    if ($tags[$i] =~ /^(?:xxx|L\d+)-(\d+)/) {
+		    if ($tags[$i] =~ /^L\d+-(\d+)/) {
 			my $id = $1;
 			foreach my $type (qw(s p)) {
 			    if (defined $info{"$type-$id"}) {
@@ -10311,13 +10324,15 @@ sub show_statistics {
 
 ### AutoLoad Sub
 sub next_free_layer {
-    for my $i (1..1000) {
-	my $abk = "L$i";
-	if (!$str_draw{$abk} && !$p_draw{$abk}) {
-	    return $abk;
+    my $max_i = 1;
+    for my $type (\%str_draw, \%p_draw) {
+	while(my($abk, $val) = each %$type) {
+	    if ($val && $abk =~ /^L(\d+)/ && $1 >= $max_i) {
+		$max_i = $1+1;
+	    }
 	}
     }
-    undef;
+    "L$max_i";
 }
 
 ### AutoLoad Sub
@@ -14274,7 +14289,7 @@ sub jwd_settings {
 # Weitere Regeln: Labels von Orten sind unter anderen Ortspunkten (damit
 # die Ortspunkte anwählbar bleiben), dagegen sind Labels von Bahnhöfen
 # über den Bahnhofspunkten und Bahnstrecken (müssen nicht anwählbar sein).
-# Development-Hilfen (fz, xxx) ganz oben anzeigen.
+# Development-Hilfen (fz) ganz oben anzeigen.
 sub restack {
     my @real_order;
     @real_order = real_stack_order();
@@ -15230,7 +15245,7 @@ sub accept_drop {
     }
     if (defined $filename) {
 	if ($filename =~ /\.bbd/i) {
-	    plot_layer('str', $filename, -fallbackxxx => 1);
+	    plot_layer('str', $filename);
 	} else {
 	    load_save_route(0, $filename);
 	}

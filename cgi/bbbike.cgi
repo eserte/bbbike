@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.32 2003/06/21 20:21:43 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.33 2003/06/27 21:42:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -645,7 +645,7 @@ use vars qw(@ISA);
 
 } # jetzt beginnt wieder package main
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.32 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.33 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -2439,47 +2439,52 @@ sub search_coord {
 	$extra_args{Algorithm} = $search_algorithm;
     }
 
-    my(%custom_s, $custom_net, %current_temp_blocking, $custom_no);
+    my(%custom_s, @current_temp_blocking);
     {
 	my $t = time;
 	my $index = 0;
-	for my $temp_blocking (@temp_blocking) {
-	    if ($t >= $temp_blocking->{from} &&
-		$t <= $temp_blocking->{until}) {
-		my $type = $temp_blocking->{type} || 'gesperrt';
-		push @{ $current_temp_blocking{$type} }, $temp_blocking;
-		$temp_blocking->{'index'} = $index;
-		$custom_no++;
+	for my $tb (@temp_blocking) {
+	    if ($t >= $tb->{from} &&
+		$t <= $tb->{until}) {
+		my $type = $tb->{type} || 'gesperrt';
+		push @current_temp_blocking, $tb;
+		$tb->{'index'} = $index;
 	    }
 	    $index++;
 	}
-	if (keys %current_temp_blocking) {
+	if (@current_temp_blocking) {
 	    push @Strassen::datadirs,
 		"$FindBin::RealBin/../BBBike/misc/temp_blockings",
 		"$FindBin::RealBin/../misc/temp_blockings"
 		;
-	}
-	while(my($type, $list) = each %current_temp_blocking) {
-	    if (@$list) {
-		my @s;
-		if (@custom) {
-		    for (@$list) {
-			if (exists $custom{'temp-blocking-' . $_->{'index'}}) {
-			    push @s, $_->{file};
-			}
-		    }
-		} else {
-		    @s = @$list;
-		}
-		if (@s) {
-		    eval {
-			$custom_s{$type} = MultiStrassen->new
-			    (map { $_->{file} } @$list);
-		    };
+	    for(my $i = 0; $i <= $#current_temp_blocking; $i++) {
+		my $tb = $current_temp_blocking[$i];
+		my $strobj;
+		if (!eval {
+		    $strobj = Strassen->new($tb->{file});
+		}) {
 		    warn $@ if $@;
+		    splice @current_temp_blocking, $i, 1;
+		    $i--;
+		    next;
 		}
 
-		if (@custom && $custom_s{$type}) {
+		$tb->{strobj} = $strobj;
+		if (@custom) {
+		    if (exists $custom{'temp-blocking-' . $tb->{'index'}}) {
+			my $type = $tb->{type} || 'gesperrt';
+			push @{ $custom_s{$type} }, $strobj;
+		    }
+		} else {
+		    $tb->{net} = StrassenNetz->new($strobj);
+		    $tb->{net}->make_net;
+		}
+	    }
+
+	    if (@custom) {
+		while(my($type, $list) = each %custom_s) {
+		    $custom_s{$type} = MultiStrassen->new(@$list);
+
 		    if ($type eq 'gesperrt' && $custom_s{$type}) {
 #			$net->load_user_deletions
 #			    ($custom_s{$type},
@@ -2495,14 +2500,6 @@ sub search_coord {
 		    }
 		}
 	    }
-	}
-	if (keys %custom_s) {
-	    eval {
-		my $custom_multi = MultiStrassen->new(values %custom_s);
-		$custom_net = StrassenNetz->new($custom_multi);
-		$custom_net->make_net;
-	    };
-	    warn $@ if @;
 	}
     }
 
@@ -2806,43 +2803,41 @@ sub search_coord {
     if (!@out_route) {
 	print "Keine Route gefunden.\n";
     } else {
-	if ($custom_net && !$printmode) {
-	    my(@path) = $r->path_list;
-	    for(my $i = 0; $i < $#path; $i++) {
-		my($x1, $y1) = @{$path[$i]};
-		my($x2, $y2) = @{$path[$i+1]};
-		if ($custom_net->{Net}{"$x1,$y1"}{"$x2,$y2"}) {
-		    if (!@custom) {
-			my $hidden = "";
-			foreach my $key ($q->param) {
-			    $hidden .= $q->hidden(-name => $key,
-						  -default => [$q->param($key)]);
-			}
-			print qq{<center><form name="Ausweichroute" action="} . $q->self_url . qq{" } . ($custom_no != 1 ? qq{onSubmit="return test_temp_blockings_set()"} : "") . qq{>};
-			print "Ereignisse, die die Route betreffen k&ouml;nnen:<br>";
-			my $is_first = 1;
-                        while(my($k,$v) = each %current_temp_blocking) {
-			    for my $tb_obj (@$v) {
-				if ($is_first) {
-				    $is_first = 0;
-				} else {
-				    print "<br>\n";
-				}
-				print "<input type=\"" .
-				    ($custom_no > 1 ? "checkbox" : "hidden") .
-					"\" name=\"custom\" value=\"temp-blocking-$tb_obj->{'index'}\"> ";
-				print "$tb_obj->{text}";
-			    }
-			}
-			print <<EOF;
-$hidden
-<br><input type=submit value="Ausweichroute suchen"><hr>
-</form></center><p>
-EOF
-                    }
-		    last;
+	if (@current_temp_blocking && !@custom && !$printmode) {
+	    my @affecting_blockings;
+	TEMP_BLOCKING:
+	    for my $tb (@current_temp_blocking) {
+		my(@path) = $r->path_list;
+		for(my $i = 0; $i < $#path; $i++) {
+		    my($x1, $y1) = @{$path[$i]};
+		    my($x2, $y2) = @{$path[$i+1]};
+		    if ($tb->{net}{Net}{"$x1,$y1"}{"$x2,$y2"}) {
+			push @affecting_blockings, $tb;
+			next TEMP_BLOCKING;
+		    }
 		}
 	    }
+	    if (@affecting_blockings) {
+		my $hidden = "";
+		foreach my $key ($q->param) {
+		    $hidden .= $q->hidden(-name => $key,
+					  -default => [$q->param($key)]);
+		}
+		print qq{<center><form name="Ausweichroute" action="} . $q->self_url . qq{" } . (@affecting_blockings > 1 ? qq{onSubmit="return test_temp_blockings_set()"} : "") . qq{>};
+		print $hidden;
+		print "Ereignisse, die die Route betreffen k&ouml;nnen:<br>";
+		for my $tb (@affecting_blockings) {
+		    print "<input type=\"" .
+			(@affecting_blockings > 1 ? "checkbox" : "hidden") .
+			    "\" name=\"custom\" value=\"temp-blocking-$tb->{'index'}\"> ";
+		    print "$tb->{text}<br>";
+		}
+		print <<EOF;
+$hidden
+<input type=submit value="Ausweichroute suchen"><hr>
+</form></center><p>
+EOF
+            }
 	}
 	if (@custom) {
 	    print "<center>Mögliche Ausweichroute</center>\n";

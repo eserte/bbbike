@@ -653,8 +653,8 @@ sub load_user_deletions {
 }
 
 ### AutoLoad Sub
-sub save_user_deletions {
-    my($net, $filename) = @_;
+sub create_user_deletions_object {
+    my $net = shift;
     my $s = Strassen->new;
     my %set;
     while(my($k1,$v1) = each %{ $net->{_Deleted} }) {
@@ -666,6 +666,13 @@ sub save_user_deletions {
 	    }
 	}
     }
+    $s;
+}
+
+### AutoLoad Sub
+sub save_user_deletions {
+    my($net, $filename) = @_;
+    my $s = $net->create_user_deletions_object;
     $s->write($filename);
 }
 

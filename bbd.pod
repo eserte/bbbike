@@ -38,6 +38,27 @@ category applies only to the other direction.
 Other predefined categories are listed below. The category should not
 contain any spaces.
 
+   DRAFT: Change the category format to:
+
+       <cat> = <onewaycat> : <onewaycat> |
+               <onewaycat>
+
+       <onewaycat> = F=? <basiccat> (: <attrkey> (= <attrval>)?)*
+
+       <basiccat>  = [^:]+
+       <attrkey>   = [^:=]+
+       <attrval>   = [^:=]+
+
+   Changes for data files:
+     F:cat becomes F=cat
+     ?::inwork becomes ?:inwork
+     F:SW|IMG:church.gif|ANCHOR:s becomes F=SW:IMG=church.gif:ANCHOR=s
+   Maybe:
+     #rrggbb becomes X:COLOR=#rrggbb
+
+   cat is now really attr. Reflect in description, maybe also in
+   variable names.
+
 =item x,y
 
 A coordinate. x and y should be integer or float values. The datum and

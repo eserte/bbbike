@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.8 2003/06/23 22:15:24 eserte Exp $
+# $Id: LogTracker.pm,v 1.9 2003/06/28 14:28:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ use vars qw($VERSION $lastcoords
             $layer @colors $colors_i @accesslog_data
 	    $do_search_route $ua $safe
             $remoteuser $remotehost $logfile $tracking $tail_pid $bbbike_cgi);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 use URI::Escape;
 use Strassen::Core;
@@ -118,12 +118,7 @@ sub add_button {
 	       -variable => \$do_search_route,
 	       -command => sub {
 		   if ($do_search_route) {
-		       if (!$ua) {
-			   require LWP::UserAgent;
-			   require Safe;
-			   $ua = LWP::UserAgent->new;
-			   $safe = Safe->new;
-		       }
+		       init_search_route();
 		   }
 	       },
 	      ],
@@ -149,6 +144,11 @@ sub add_button {
 	      [Button => 'AccessLog for date',
 	       -command => sub {
 		   parse_accesslog_for_date();
+	       },
+	      ],
+	      [Button => 'Complete AccessLog',
+	       -command => sub {
+		   parse_accesslog();
 	       },
 	      ],
 	      [Button => 'Preference statistics',
@@ -522,6 +522,15 @@ sub _maybe_gunzip {
 	binmode $fh, ":gzip(autopop)";
     } else {
 	warn "Harmless for normal files: $@";
+    }
+}
+
+sub init_search_route {
+    if (!$ua) {
+	require LWP::UserAgent;
+	require Safe;
+	$ua = LWP::UserAgent->new;
+	$safe = Safe->new;
     }
 }
 

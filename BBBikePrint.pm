@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.21 2003/06/02 23:15:26 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.22 2003/06/28 09:06:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -560,8 +560,9 @@ sub draw_legend {
 	} elsif ($abk =~ /^pp-/) {
 	    next;
 	} else {
-	    my $color = (defined $category_color{$p_category{$abk}}
-			 ? $category_color{$p_category{$abk}}
+	    my $p_cat = $p_category{$abk} || '';
+	    my $color = (defined $category_color{$p_cat}
+			 ? $category_color{$p_cat}
 			 : $p_color{$abk});
 	    ($x, $y) = ($left+$start_symbol, $top+$height);
 	    my $item = $c->createLine($x+4, $y+3,

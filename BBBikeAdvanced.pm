@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.80 2003/06/01 21:54:48 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.82 2003/06/28 11:01:05 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2003 Slaven Rezic. All rights reserved.
@@ -125,105 +125,117 @@ sub custom_draw_dialog {
 
 sub custom_draw {
     my $linetype = shift;
-    my $abk      = shift || 'xxx';
+    my $abk      = shift or die "Missing abk";
     my $f        = shift;
     my $draw = eval '\%' . $linetype . "_draw";
     my $file = eval '\%' . $linetype . "_file";
-    if (!$draw->{$abk}) {
-	plot($linetype, $abk); # nur löschen
-    } else {
+    if (!defined $f) {
+	die "Tk 800 needed"
+	    unless $Tk::VERSION >= 800;
+	$f = $top->getOpenFile
+	    (-filetypes =>
+	     [
+	      # XXX use Strassen->filetypes?
+	      [M"BBD-Dateien", '.bbd'],
+	      [M"BBBike-Route-Dateien", '.bbr'],
+	      [M"ESRI-Shape-Dateien", '.shp'],
+	      [M"Alle Dateien", '*'],
+	     ]
+	    );
 	if (!defined $f) {
-	    die "Tk 800 needed"
-		unless $Tk::VERSION >= 800;
-	    $f = $top->getOpenFile
-		(-filetypes =>
-		 [
-		  # XXX use Strassen->filetypes?
-		  [M"BBD-Dateien", '.bbd'],
-		  [M"BBBike-Route-Dateien", '.bbr'],
-		  [M"ESRI-Shape-Dateien", '.shp'],
-		  [M"Alle Dateien", '*'],
-		 ]
-		);
-	    if (!defined $f) {
-		$draw->{$abk} = 0;
-		return;
-	    }
+	    $draw->{$abk} = 0;
+	    return;
 	}
-
-	# XXX not nice, but it works...
-	if ($f =~ /\.bbr$/) {
-	    require File::Basename;
-	    my $tmpfile = "$tmpdir/" . basename($f);
-	    require Route::Heavy;
-	    my $s = Route::as_strassen($f);
-	    $s->write($tmpfile);
-	    $f = $tmpfile;
-	}
-
-	@BBBike::ExtFile::scrollregion = ();
-	undef $BBBike::ExtFile::center_on_coord;
-
-	$file->{$abk} = $f;
-	# zusätzliches desc-File einlesen:
-	if ($f =~ /(.*)\.bbd(\.gz)?$/) {
-	    my $desc_file = "$1.desc";
-	    warn "Try to load description file $desc_file"
-		if $verbose;
-	    read_desc_file($desc_file);
-	}
-
-	# XXX the condition should be defined $default_line_width,
-	# but can't use it because of the Checkbutton/Menu bug
-	plot($linetype, $abk, ($default_line_width ? (Width => $default_line_width) : ()));
-
-	for (($linetype eq 'p' ? ("$abk-img", "$abk-fg") : ($abk))) {
-	    $c->bind($_, "<ButtonPress-1>" => \&set_route_point);
-	}
-
-	if (@BBBike::ExtFile::scrollregion) {
-	    set_scrollregion(@BBBike::ExtFile::scrollregion);
-	}
-	if ($BBBike::ExtFile::p_attrib && $linetype eq 'p') {
-	    $p_attrib{$abk} = $BBBike::ExtFile::p_attrib;
-	} else {
-	    delete $p_attrib{$abk};
-	}
-	if ($BBBike::ExtFile::str_attrib && $linetype eq 'str') {
-	    $str_attrib{$abk} = $BBBike::ExtFile::str_attrib;
-	} else {
-	    delete $str_attrib{$abk};
-	}
-
-	if (defined $BBBike::ExtFile::center_on_coord) {
-	    choose_from_plz(-coord => $BBBike::ExtFile::center_on_coord);
-	}
-
-	$toplevel{"chooseort-$abk-$linetype"}->destroy
-	    if $toplevel{"chooseort-$abk-$linetype"};
-
-	$f; # return filename
     }
+
+    # XXX not nice, but it works...
+    if ($f =~ /\.bbr$/) {
+	require File::Basename;
+	my $tmpfile = "$tmpdir/" . basename($f);
+	require Route::Heavy;
+	my $s = Route::as_strassen($f);
+	$s->write($tmpfile);
+	$f = $tmpfile;
+    }
+
+    @BBBike::ExtFile::scrollregion = ();
+    undef $BBBike::ExtFile::center_on_coord;
+
+    $file->{$abk} = $f;
+    # zusätzliches desc-File einlesen:
+    if ($f =~ /(.*)\.bbd(\.gz)?$/) {
+	my $desc_file = "$1.desc";
+	warn "Try to load description file $desc_file"
+	    if $verbose;
+	read_desc_file($desc_file, $abk);
+    }
+
+    # XXX the condition should be defined $default_line_width,
+    # but can't use it because of the Checkbutton/Menu bug
+    plot($linetype, $abk, ($default_line_width
+			   ? (Width => $default_line_width)
+			   : ()),
+	 -draw => 1,
+	 -filename => $f,
+	);
+
+    for (($linetype eq 'p' ? ("$abk-img", "$abk-fg") : ($abk))) {
+	$c->bind($_, "<ButtonPress-1>" => \&set_route_point);
+    }
+
+    if (@BBBike::ExtFile::scrollregion) {
+	set_scrollregion(@BBBike::ExtFile::scrollregion);
+    }
+    if ($BBBike::ExtFile::p_attrib && $linetype eq 'p') {
+	$p_attrib{$abk} = $BBBike::ExtFile::p_attrib;
+    } else {
+	delete $p_attrib{$abk};
+    }
+    if ($BBBike::ExtFile::str_attrib && $linetype eq 'str') {
+	$str_attrib{$abk} = $BBBike::ExtFile::str_attrib;
+    } else {
+	delete $str_attrib{$abk};
+    }
+
+    if (defined $BBBike::ExtFile::center_on_coord) {
+	choose_from_plz(-coord => $BBBike::ExtFile::center_on_coord);
+    }
+
+    $toplevel{"chooseort-$abk-$linetype"}->destroy
+	if $toplevel{"chooseort-$abk-$linetype"};
+
+    $f; # return filename
 }
 
 sub read_desc_file {
     my $desc_file = shift;
+    my $abk = shift;
     @BBBike::ExtFile::scrollregion = ();
     if (-r $desc_file && -f $desc_file) {
 	require Safe;
-	require Symbol;
-	Symbol::delete_package("BBBike::ExtFile");
+	#XXX problems!
+	#require Symbol;
+	#Symbol::delete_package("BBBike::ExtFile");
 	my $compartment = new Safe("BBBike::ExtFile");
+	if (defined $abk) {
+	    $BBBike::ExtFile::abk = $BBBike::ExtFile::abk = $abk;
+	}
 	# $str_attrib and $p_attrib should be used in favour of
 	# %str_attrin and %p_attrib
-	$compartment->share
-	    (qw(%line_width %str_color %line_width
-		%line_length %category_size %outline_color
-		%str_attrib %p_attrib %category_color
-		$str_attrib $p_attrib
-	       ));
+	my @shared_symbols =
+	    qw(%line_width %str_color
+	       %line_length %category_size %outline_color
+	       %str_attrib %p_attrib %category_color
+	       $str_attrib $p_attrib
+	      );
+	$compartment->share(@shared_symbols);
 	$compartment->rdo($desc_file);
 	warn $@ if $@;
+	no strict 'refs';
+	for my $symbol (@shared_symbols) {
+	    $symbol =~ s/^.//;
+	    undef *{"BBBike::ExtFile::$symbol"};
+	}
     }
 }
 
@@ -297,14 +309,11 @@ sub tk_plot_additional_layer {
     plot_additional_layer($linetype);
 }
 
-#XXX
-#  sub plot_additional_sperre_layer {
-#      my $abk = next_free_layer();
-#      $abk = "sperre$abk";
-#      fix_stack_order($abk);
-#      plot_additional_layer
-#  }
+sub plot_additional_sperre_layer {
+    plot_additional_layer("sperre");
+}
 
+# Called from last loaded menu
 sub plot_additional_layer_s {
     my $layer_def = shift;
     my($layer_type, $layer_filename) = split /:/, $layer_def, 2;
@@ -317,26 +326,42 @@ sub plot_additional_layer_s {
 sub plot_additional_layer {
     my($linetype, $file) = @_;
     my $abk = next_free_layer();
-    warn "Use new Layer $abk\n";
     if (!defined $abk) {
 	status_message(M"Keine Layer frei!", 'error');
 	return;
     }
-    fix_stack_order($abk);
-    if ($linetype eq 'str') {
-	$str_draw{$abk} = 1;
-    } elsif ($linetype eq 'p') {
-	$p_draw{$abk} = 1;
-    } else {
-	die "Unknown linetype $linetype, should be str or p";
+    if ($linetype eq 'sperre') {
+  	$abk = "$abk-sperre";
     }
-    if (defined $file) {
-	custom_draw($linetype, $abk, $file);
-    } else {
-	$file = custom_draw_dialog($linetype, $abk);
+    warn "Use new Layer $abk\n";
+    fix_stack_order($abk);
+    if ($linetype !~ /^(str|p|sperre)$/) {
+#XXXdel	$str_draw{$abk} = 1;
+#    } elsif ($linetype eq 'p') {
+#XXXdel	$p_draw{$abk} = 1;
+#    } else {
+	die "Unknown linetype $linetype, should be str, sperre or p";
+    }
+
+    {
+	# "sperre" linetype should be "p" for drawing, but still "sperre"
+	# for the last loaded menu
+	my $linetype = $linetype;
+	if ($linetype eq 'sperre') {
+	    $linetype = 'p';
+	}
+	if (defined $file) {
+	    custom_draw($linetype, $abk, $file);
+	} else {
+	    $file = custom_draw_dialog($linetype, $abk);
+	}
     }
 
     if (defined $file) {
+	if ($linetype eq 'sperre' && $net) {
+	    my $s = $p_obj{$abk} || Strassen->new($file);
+	    $net->make_sperre($s, Type => "all");
+	}
 	add_last_loaded("$linetype:$file", $last_loaded_layers_obj);
     }
 
@@ -1644,7 +1669,7 @@ sub buttonpoint {
 	    $tags[0] eq 'o'    ||
 	    $tags[0] eq 'pp'   ||
 	    $tags[0] =~ /^lsa/ ||
-	    $tags[0] =~ /^(xxx|L\d+)/ ||
+	    $tags[0] =~ /^L\d+/||
 	    $tags[0] eq 'fz'   ||
 	    $tags[0] =~ /^kn/
 	   ) {
@@ -1663,7 +1688,7 @@ sub buttonpoint {
 		$c->clipboardAppend(" $tag") if $use_clipboard;
 		push_ext_selection($s);
 	    } elsif ($tags[0] eq 'pp' || $tags[0] =~ /^lsa/ ||
-		     $tags[0] =~ /^(xxx|L\d+)/) {
+		     $tags[0] =~ /^L\d+/) {
 		my($x, $y) = $coord_output_sub->
 		  (@{Strassen::to_koord1($tags[1])});
 		if ($tags[2] =~ m|^(.*\.wpt)/(\d+)/|) {

@@ -278,22 +278,6 @@ sub BBBikeHeavy::layer_editor {
 		);
 	if ($advanced) {
 	    push @elem, {Image => undef,
-			 Text => 'XXX-s',
-			 Visible => $str_draw{'xxx'},
-			 Data => {Tag => 'xxx-s',
-				  Type => 's',
-				  Subtype => 'xxx',
-				 }
-			};
-	    push @elem, {Image => undef,
-			 Text => 'XXX-p',
-			 Visible => $p_draw{'xxx'},
-			 Data => {Tag => 'xxx-fg',
-				  Type => 'p',
-				  Subtype => 'xxx',
-				 }
-			};
-	    push @elem, {Image => undef,
 			 Text => 'pp',
 			 Visible => $p_draw{'pp'},
 			 Data => {Tag => 'pp',
@@ -310,9 +294,9 @@ sub BBBikeHeavy::layer_editor {
 				 }
 			};
 	}
-	for my $i (1..100) {
-	    my $abk = "L$i";
-	    if ($str_draw{$abk} && (defined $str_file{$abk} || $str_obj{$abk})) {
+	while(my($abk, $val) = each %str_draw) {
+	    next if $abk !~ /^L\d/;
+	    if ($val && (defined $str_file{$abk} || $str_obj{$abk})) {
 		my $layer_name = "Layer $abk";
 		if (defined $str_file{$abk}) {
 		    $layer_name .= " (" .basename($str_file{$abk}).")";
@@ -320,14 +304,17 @@ sub BBBikeHeavy::layer_editor {
 		push @elem,
 		    {Image => undef,
 		     Text => $layer_name,
-		     Visible => $str_draw{$abk},
+		     Visible => $val,
 		     Data => {Tag => "$abk", # XXX apparently without "-s"
 			      Type => 's',
 			      Subtype => $abk,
 			     }
 		    };
 	    }
-	    if ($p_draw{$abk} && (defined $p_file{$abk} || $p_obj{$abk})) {
+	}
+	while(my($abk, $val) = each %p_draw) {
+	    next if $abk !~ /^L\d/;
+	    if ($val && (defined $p_file{$abk} || $p_obj{$abk})) {
 		my $layer_name = "Layer $abk";
 		if (defined $p_file{$abk}) {
 		    $layer_name .= " (" .basename($p_file{$abk}).")";
@@ -335,7 +322,7 @@ sub BBBikeHeavy::layer_editor {
 		push @elem,
 		    {Image => undef,
 		     Text => $layer_name,
-		     Visible => $p_draw{$abk},
+		     Visible => $val,
 		     Data => {Tags => ["$abk-fg", "$abk-img"],
 			      Type => 'p',
 			      Subtype => $abk,
