@@ -229,6 +229,7 @@ Bayerische Str.	1 4296,10004 4349,10247
 Knorrpromenade	1 14417,11640 14362,11493
 Hoppestr.	1 8617,18310 8482,18284
 Herbststr.	1 8465,18365 8634,18401
+Ruhwaldweg: Schranke gesperrt	2 830,13353 801,13323
 #
 # Potsdam
 #
@@ -518,10 +519,10 @@ B 167; (B167 Liebenwalde); Bereich Voßkanal-Thürenweg; Straßen- u.Brückenbau; Vo
 K 6801; (Karwesee-Brunne); östl. Ortseingang bis Kreuzung; Tiefbauarbeiten; Vollsperrung; 24.06.2004-05.08.2004	2:inwork -33115,38516 -33911,38631
 #XXX del B 101; (Bad Liebenwerda-Herzberg); Brücken Mühlengraben b.Langennau. u. Ziehtgraben b.Wied; Brückenneubau; Vollsperrung; 27.10.2003-30.04.2004	2:inwork 7881,-88140 7946,-88652
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen; schlechte Straße; Vollsperrung; 01.11.96-unbekannt	2:inwork -50149,24689 -50016,24414 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
-L 11; (Bad Wilsnack-Wittenberge); Bahnübergang zw. Klein Lüben u. Kuhblank; Brückenbauarbeiten; Vollsperrung; 16.10.2003-30.06.2004	2:inwork -94968,62636 -94965,61610
+#XXX del L 11; (Bad Wilsnack-Wittenberge); Bahnübergang zw. Klein Lüben u. Kuhblank; Brückenbauarbeiten; Vollsperrung; 16.10.2003-30.06.2004	2:inwork -94968,62636 -94965,61610
 #XXX del L 238; (Eberswalde-Joachimsthal); OD Eberswalde, Lichterfelder Wassertorbrücke; Brückenbauarbeiten; Vollsperrung; 03.11.2003-30.05.2004	2:inwork 33931,49587 33645,50380 33323,51062
 L 39; (ASFriedersdorf-Neu Zittau); keine Brücke ü. Oder-Spree-Kanal; kein Bw ü. Oder-Spree-Kanal; Vollsperrung; 00:00:00-unbekannt	2:inwork 35335,-6272 35143,-5650
-L 40; zw. Großbeeren und Güterfelde; Bau der L 40n; Vollsperrung; 16.06.2003-28.06.2004	2:inwork 1663,-5427 2031,-5468 2471,-6025 2356,-6128 2443,-6309
+#XXX del L 40; zw. Großbeeren und Güterfelde; Bau der L 40n; Vollsperrung; 16.06.2003-28.06.2004	2:inwork 1663,-5427 2031,-5468 2471,-6025 2356,-6128 2443,-6309
 L 70 (Doberlug Kirchhain-Dahme); zw. B87 Hohenbuckow u. Hillmersdorf; Fahrbahnschäden; Vollsperrung; 22.05.97-unbekannt	2:inwork 17023,-71738 17783,-72721 17979,-73530 17960,-73915 17961,-74364 18228,-75553 18187,-76301 18061,-76878
 L 75; (B 96a Mahlow-Berlin); zwischen B 96a und Klein Ziethen; Neubau B 96; Vollsperrung; 04.08.2003-28.07.2004	2:inwork 13348,-3283 13289,-4660
 L 76; (Mahlow-Teltow); zw. B101 nördl. Großbeeren und B101n; Straßenbauarb. B101n; Vollsperrung; 29.11.2003-31.08.2004	2:inwork 5394,-3053 4260,-2373
@@ -530,7 +531,7 @@ L 24; (Greiffenberg-Gerswalde); bei Pfingstberg, Brücke über DB; Brückenneubau; 
 B 179; (Spreewaldstr., Karl-Liebknecht-Str.); zw. Bahnübergang und nördl. A.-Bebel-Str.; grundh. Straßenbau; Vollsperrung; 01.04.2004-31.12.2005	2:inwork 26612,-15094 26583,-15677
 #XXX del B 168; (Lieberose-Beeskow); zw. L434 (Schadow-Trebitz) u. Abzw. Karras; Straßenbauarbeiten; Vollsperrung; 08.03.2004-15.06.2004 	2:inwork 70237,-35915 70757,-36882 71170,-37973 71792,-39389
 #XXX del: B 168; (Lieberose-Beeskow); zw. L434 (Schadow-Trebitz) u. Abzw. Karras    Deckenschluß    Vollsperrung    11.05.2004-18.05.2004  	2:inwork 70775,-35271 71311,-36230 71741,-37316 72385,-38723
-L 23; (B 1 (bei Tasdorf)-Hennickendorf); bei Hennickendorf, Brücke über Werkgleis; Brückenneubau; Vollsperrung; 15.03.2004-30.06.2004 	2:inwork 39970,11328 40399,11613
+#XXX del L 23; (B 1 (bei Tasdorf)-Hennickendorf); bei Hennickendorf, Brücke über Werkgleis; Brückenneubau; Vollsperrung; 15.03.2004-30.06.2004 	2:inwork 39970,11328 40399,11613
 L 34; (Reichenberg-B168 (Bollersdorfer Kreisel)); bei Bollersdorf, Brücke über Sophienfließ; Brückenneubau; Vollsperrung; 15.03.2004-27.08.2004 	2:inwork 55194,21167 55043,21042
 #XXX del B 5; zwischen Treplin und Petershagen Sofortmaßn.Gefahrenabwehr; Vollsperrung; 26.02.2004-30.04.2004	2:inwork E9150,5578 E9178,5585 E9220,5563 E9277,5578 E9300,5591 E9330,5592
 #XXX del L 15; (Pritzwalker Str.); OL Wittstock, Bahnübergang    Erneuerung BÜ    Vollsperrung    15.03.2004-08.04.2004	2:inwork E3197,1718 E3172,1724
@@ -541,13 +542,15 @@ L 22; (Zehdenick-Gransee); OD Gransee, Krz. Berliner Damm/Strelitzer    Str.    
 K 6422; (Petershagener Str.); OL Fredersdorf, zw. E.-Thälmann-Str. u. Dorfstr.; Bau Kreisverkehr; Vollsperrung; 13.04.2004-15.07.2004	2:inwork 34139,13113 34896,13562 35234,13541
 #XXX nodel L 912; (Päwesin-Gortz); zw. OA Päwesin u. Bagow, Brücke über Seeverbindung; Brückenneubau; Vollsperrung; 10.05.2004-06.11.2004	2:inwork E3967,5113 E3939,5098
 #XXX del L 37; (Eisenhüttenstadt-Politz); Abzweig Pohlitz; Restarbeiten; Vollsperrung; 23.04.2004-21.05.2004	2:inwork 92436,-22729 92714,-22814
-L 142; OD Wusterhausen, Brücke über Klempnitz; Brückensanierung; Vollsperrung; 04.05.2004-16.07.2004	2:inwork -55166,53457 -54776,53333
+L 142; OD Wusterhausen, Brücke über Klempnitz; Brückensanierung; Vollsperrung; 04.05.2004-30.08.2004	2:inwork -55166,53457 -54776,53333
 #XXX del L 55; (Calau-Boblitz); zwischen Bischdorf und Groß Lübbenau; Deckenerneuerung; Vollsperrung; 29.03.2004-14.05.2004	2:inwork 50968,-63078 50909,-65254
 #XXX del L 239; (Kerkow (Angermünde)-Joachimsthal); zwischen Joachimsthal und    Glambeck    Instandsetzung Durchlässe    Vollsperrung    10.05.2004-11.06.2004	2:inwork 34297,66446 35512,66695
 L 592; Brücken über Pulsnitz,Binnengraben und zwei Durchlässe; Ersatzneubau; Vollsperrung; 10.05.2004-19.11.2004	2:inwork 25830,-109886 26164,-109378
 L 75; (Karl-Marx-Straße); von Dorfstraße bis Friedhofsweg; Straßenbauarbeiten; Vollsperrung; 24.05.2004-20.12.2004	2:inwork 13225,-681 13309,-1268
 L 912; (Päwesin-Gortz); zw. OA Päwesin u. Bagow, Brücke über Seeverbindung; Brückenneubau; Vollsperrung; 10.05.2004-06.11.2004	2:inwork -36427,10861 -37026,11176
 L 71; (B 96-Drahnsdorf); bei Krossen Brücke über Vorflutkanal; Brückenneubau; Vollsperrung; 25.03.2004-31.07.2004	2:inwork 24195,-54396 24639,-53978
+B 5; zw. OU Müncheberg und Friedrichshof; Deckenerneurung; Vollsperrung; 06.07.2004-09.07.2004	2:inwork 61195,11119 65071,7242
+L 34; (Reichenberg-B168 (Bollersdorfer Kreisel)); zw. Reichenberg u. Abzw. Buckow; Instandsetzung Durchlaß; Vollsperrung; 05.07.2004-06.08.2004	2:inwork 58405,23616 58340,23341 58151,22324 57358,21972 56330,21643 55558,21417 55194,21167
 #
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

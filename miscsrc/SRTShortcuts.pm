@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.14 2004/06/05 01:25:21 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.15 2004/07/03 22:44:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -259,16 +259,22 @@ sub add_new_layer {
     $free_layer;
 }
 
+sub _vmz_lbvs_splitter {
+    my($line) = @_;
+    my($type, $rest) = split /:\s+/, $line, 2;
+    ($type, $rest);
+}
+
 sub show_vmz_diff {
     require BBBikeAdvanced;
     my $abk = main::plot_additional_layer("str", "$ENV{HOME}/cache/misc/diffvmz.bbd");
-    main::choose_ort("str", $abk);
+    main::choose_ort("str", $abk, -splitter => \&_vmz_lbvs_splitter);
 }
 
 sub show_lbvs_diff {
     require BBBikeAdvanced;
     my $abk = main::plot_additional_layer("str", "$ENV{HOME}/cache/misc/difflbvs.bbd");
-    main::choose_ort("str", $abk);
+    main::choose_ort("str", $abk, -splitter => \&_vmz_lbvs_splitter);
 }
 
 ##XXX del obsoleted by great conversion

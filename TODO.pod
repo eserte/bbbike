@@ -995,17 +995,6 @@ E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.
 
 Siehe miscsrc/merge_overlapping_streets.pl 
 
-=item * (H3)
-
-misc/fragezeichen nach data migrieren. Alle Skripte/Module anpassen
-(MANIFEST, CVS, RCS-rename, 
-data_corrected/fragezeichen aus bbbike.pl entfernen ...) DONE,
-checkin, change CVS/RCS etc.
-
-=item * (M2)
-
-misc/fragezeichen in insert_points aufnehmen
-
 =item * (M1)
 
 Convert the data/Makefile to data/Makefile.PL or similar (to solve

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.98 2004/06/20 22:42:58 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.99 2004/07/03 22:47:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -104,6 +104,10 @@ sub advanced_option_menu {
 		   );
     $opbm->command(-label => 'Reload modules',
 		   -command => \&reload_new_modules);
+    if ($devel_host) {
+	$opbm->command(-label => 'Destroy all toplevels',
+		       -command => \&destroy_all_toplevels);
+    }
     $opbm->command(-label => M"Datenverzeichnis ändern ...",
 		   -command => \&change_datadir);
 
@@ -1761,6 +1765,14 @@ sub advanced_bindings {
     $top->bind("<F9>" => sub { find_canvas_item_file(@_) });
 }
 
+sub destroy_all_toplevels {
+    while(my($token, $w) = each %toplevel) {
+	warn "Trying to destroy toplevel $token...\n";
+	$w->destroy if $w;
+	delete $toplevel{$token};
+    }
+}
+
 use vars qw(%module_time %module_check $main_check_time);
 
 $main_check_time = -M $0;
@@ -2452,6 +2464,16 @@ use vars qw(@search_anything_history);
 sub search_anything {
     my($s) = @_;
 
+    my $token = "search-anything";
+    my $t = redisplay_top($top, $token,
+			  -title => M"Suchen",
+			 );
+    if (!defined $t) {
+	my $t = $toplevel{$token};
+	$t->Subwidget("Entry")->tabFocus;
+	return;
+    }
+
     require File::Basename;
     require PLZ;
     my $plz = new PLZ;
@@ -2481,7 +2503,6 @@ sub search_anything {
     my $lb;
     my $e;
     my @inx2match;
-    my $t;
 
     my $do_search = sub {
 ### fork in eval is evil ??? (check it, it seems to work for 5.8.0 + FreeBSD)
@@ -2492,7 +2513,7 @@ sub search_anything {
 	    foreach my $search_file (@search_files) {
 		my @matches;
 		my $pid;
-		if (is_in_path("XXXgrep")) {
+		if (0 && is_in_path("grep")) { # XXX do not fork
 		    $pid = open(GREP, "-|");
 		    if (!$pid) {
 			exec("grep", "-i", $s, $search_file) || warn "Can't exec program grep with $search_file: $!";
@@ -2591,6 +2612,8 @@ sub search_anything {
 		    }
 		}
 	    }
+	    $lb->activate(1); # first entry is a headline, so use 2nd one
+	    $lb->selectionSet(1);
 	};
 	my $err = $@;
 	DecBusy($t);
@@ -2599,7 +2622,6 @@ sub search_anything {
 	}
     };
 
-    $t = $top->Toplevel(-title => M"Suchen");
     $t->transient($top) if $transient;
     my $f1 = $t->Frame->pack(-fill => 'x');
     $f1->Button(-text => "Suchen:", -padx => 0, -pady => 0,
@@ -2617,13 +2639,32 @@ sub search_anything {
     if ($e->can('history')) {
 	$e->history(\@search_anything_history);
     }
+    $t->Advertise(Entry => $e);
     $e->focus;
     $e->bind("<Return>" => $do_search);
 
-    $lb = $t->Scrolled("Listbox", -scrollbars => "osoe"
+    {
+	package Tk::ListboxSearchAnything;
+	use base qw(Tk::Listbox);
+	Construct Tk::Widget 'ListboxSearchAnything';
+	sub UpDown {
+	    my($w, $amount) = @_;
+	    my $new_inx = $w->index('active')+$amount;
+	    if ($w->get($new_inx) =~ /^\S/) { # is a headline?
+		$amount *= 2;
+	    }
+	    $w->SUPER::UpDown($amount);
+	}
+    }
+
+    $lb = $t->Scrolled("ListboxSearchAnything", -scrollbars => "osoe"
 		      )->pack(-fill => "both", -expand => 1);
     my $cb = $t->Button(Name => 'close',
-			-command => sub { $t->destroy })->pack(-fill => "x");
+			-command => sub {
+			    $t->withdraw;
+			    #$t->destroy;
+			})->pack(-fill => "x");
+    $t->protocol(WM_DELETE_WINDOW => sub { $cb->invoke });
 
     my $select = sub {
 	my($inx) = ($lb->curselection)[0];

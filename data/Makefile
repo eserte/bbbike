@@ -1,10 +1,11 @@
 #
-# $Id: Makefile,v 2.16 2004/06/10 22:03:05 eserte Exp eserte $
+# $Id: Makefile,v 2.20 2004/07/04 20:59:15 eserte Exp $
 #
 
 BBBIKEDIR=		..
 MISCDIR=		$(BBBIKEDIR)/misc
 MISCSRCDIR=		$(BBBIKEDIR)/miscsrc
+DATADIR=		.
 
 #XXX del:
 #BERLINMAP2HAFAS=	${MISCSRCDIR}/berlinmap2hafas -strict
@@ -22,6 +23,7 @@ RESOLVE_STARS=		${MISCSRCDIR}/resolve_stars
 SORTBYCAT=		${MISCSRCDIR}/sortbycat
 SEARCH_INACCESSIBLE=	${MISCSRCDIR}/search_inaccessible_points
 STEIGUNG_STAT=		${MISCSRCDIR}/steigung_stat
+GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
 
 COMMENTS_PARTIAL=	comments_cyclepath comments_ferry comments_misc \
 			comments_mount comments_path comments_route \
@@ -130,9 +132,22 @@ landstrassen2: landstrassen2-orig
 	$(CONVERT2HAFAS) landstrassen2-orig > landstrassen2
 	-@$(READONLY) $@
 
-sbahn:	sbahn-orig
+# Get categories with:
+# perl -nle '/\t(\S+)/ && print $1' sbahn | sort -u
+SBAHN_CATEGORIES=	SA SB SC S0
+
+# sbahn:	sbahn-orig
+# 	-@$(WRITEABLE) $@
+# 	$(CONVERT2HAFAS) sbahn-orig > sbahn
+# 	-@$(READONLY) $@
+
+sbahn: sbahn-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) sbahn-orig > sbahn
+	$(CONVERT2HAFAS) sbahn-orig > /tmp/sbahn
+.for cat in $(SBAHN_CATEGORIES)
+	$(GREPSTRASSEN) -cat $(cat) /tmp/sbahn | ../miscsrc/merge_overlapping_streets.pl -sep "," - | ../miscsrc/combine_streets.pl - | sort > /tmp/sbahn-$(cat)
+.endfor
+	cat $(SBAHN_CATEGORIES:S/^/\/tmp\/sbahn-/) > sbahn
 	-@$(READONLY) $@
 
 sbahnhof:	sbahnhof-orig
@@ -140,15 +155,21 @@ sbahnhof:	sbahnhof-orig
 	$(CONVERT2HAFAS) sbahnhof-orig > sbahnhof
 	-@$(READONLY) $@
 
-#XXX del:
-# sbahnhof_bg:	sbahnhof_bg-orig
-# 	-@$(WRITEABLE) $@
-# 	$(CONVERT2HAFAS) $> > $@
-# 	-@$(READONLY) $@
+# rbahn rbahnhof:	rbahn-orig
+# 	-@$(WRITEABLE) rbahn rbahnhof
+# 	$(CONVERT2HAFAS) -bahnhof=rbahnhof rbahn-orig > rbahn
+# 	-@$(READONLY) rbahn rbahnhof
 
-rbahn rbahnhof:	rbahn-orig
+# See SBAHN_CATEGORIES comment
+RBAHN_CATEGORIES=	RA RB RC R R0
+
+rbahn rbahnhof: rbahn-orig
 	-@$(WRITEABLE) rbahn rbahnhof
-	$(CONVERT2HAFAS) -bahnhof=rbahnhof rbahn-orig > rbahn
+	$(CONVERT2HAFAS) -bahnhof=rbahnhof rbahn-orig > /tmp/rbahn
+.for cat in $(RBAHN_CATEGORIES)
+	$(GREPSTRASSEN) -cat $(cat) /tmp/rbahn | ../miscsrc/merge_overlapping_streets.pl -sep "," - | ../miscsrc/combine_streets.pl - | sort > /tmp/rbahn-$(cat)
+.endfor
+	cat $(RBAHN_CATEGORIES:S/^/\/tmp\/rbahn-/) > rbahn
 	-@$(READONLY) rbahn rbahnhof
 
 ubahn: ubahn-orig
@@ -160,12 +181,6 @@ ubahnhof:	ubahnhof-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) ubahnhof-orig > ubahnhof
 	-@$(READONLY) $@
-
-#XXX del:
-# ubahnhof_bg:	ubahnhof_bg-orig
-# 	-@$(WRITEABLE) $@
-# 	$(CONVERT2HAFAS) $> > $@
-# 	-@$(READONLY) $@
 
 .for i in u s
 $(i)bahnhof_bg:	$(i)bahnhof-orig
@@ -418,6 +433,18 @@ PREFIXMAP=sperr=SP,kopfstein=KP,qualität=QU,mäßig.geeignet=QU,radweg=RW,bau=BA,v
 	    -prefixmap ${PREFIXMAP} \
 	    -symbol danger > $@
 	@echo gpsman with file $@
+
+# It is legal for fragezeichen points to not be on strassen, so this is
+# only informative...
+check-fragezeichen:	/tmp/check-fragezeichen.bbd \
+			/tmp/inaccessible-fragezeichen.bbd
+
+/tmp/check-fragezeichen.bbd: fragezeichen strassen landstrassen landstrassen2
+	${CHECK_POINTS} -warn -report fragezeichen strassen landstrassen landstrassen2 > $@
+
+# This collects *all* inaccessible points, not only for fragezeichen
+/tmp/inaccessible-fragezeichen.bbd: fragezeichen strassen landstrassen landstrassen2
+	${SEARCH_INACCESSIBLE} -street strassen,landstrassen,landstrassen2,fragezeichen > $@
 
 # Makefile in ../misc ausführen
 # drat ... ich möchte nicht gmake verwenden :-(

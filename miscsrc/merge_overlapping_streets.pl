@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: merge_overlapping_streets.pl,v 1.1 2004/07/01 11:16:45 eserte Exp $
+# $Id: merge_overlapping_streets.pl,v 1.2 2004/07/04 21:23:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -21,12 +21,9 @@ merge_overlapping_streets.pl - merge overlapping streets
 
 XXX
 
-XXX move to CVS and RCS! XXX
-
 Beste Vorgehensweise fuer rbahn und sbahn:
 
-- filter by cat R0, RA ... (habe ich schon ein Filterprogramm, in
-  MANIFEST.addtocvs ist es nicht?)
+- filter by cat R0, RA ... with grepstrassen
 
 - for every filtered bit: merge_overlapping_streets.pl and
   combine_streets.pl
@@ -55,6 +52,13 @@ use Strassen::MultiStrassen;
 use strict;
 use Getopt::Long;
 
+my $sep = ", ";
+if (!GetOptions("sep=s" => \$sep)) {
+    die <<EOF
+usage: $0 [-sep sepchar] file ...
+EOF
+}
+
 my @s = @ARGV;
 if (!@s) {
     die "Please specify street file(s)";
@@ -73,7 +77,7 @@ while(1) {
 	my $c2 = $cs->[$c_i+1];
 	my $old_p = $points{$c1}{$c2} || $points{$c2}{$c1};
 	if ($old_p) {
-	    $old_p->[Strassen::NAME] .= ", $r->[Strassen::NAME]";
+	    $old_p->[Strassen::NAME] .= "$sep$r->[Strassen::NAME]";
 	} else {
 	    $points{$c1}{$c2} = [$r->[Strassen::NAME],
 				   [$c1,$c2],

@@ -1254,6 +1254,7 @@ if (!defined $top) {
     for (qw(Browse Entry NumEntry Date*NumEntryPlain PathEntry
 	    Listbox KListbox K2Listbox
 	    TixHList HList Text ROText BrowseEntry.Entry SimpleHistEntry
+	    ListboxSearchAnything
 	   )) {
 	if ($os eq 'win') {
 	    $top->optionAdd("*$_.background", "SystemWindow", "startupFile");
@@ -9216,6 +9217,7 @@ sub choose_ort {
     my $ondestroy = $args{-ondestroy};
     my $additionalframe = $args{-additionalframe};
     my $sorted = exists $args{-unsorted} ? !$args{-unsorted} : 1;
+    my $splitter = $args{-splitter};
 
     unless ($nodraw) {
 	if ($linetype =~ /^s/) {
@@ -9262,20 +9264,24 @@ sub choose_ort {
 	}
 
 	my $Listbox = "Listbox";
-	if ($sorted) {
-	    if (!defined $K2Listbox) {
-	    TRYLISTBOX: {
-		    foreach my $try (qw(K2Listbox KListbox WListbox)) {
-			if (eval q{ require Tk::} . $try . q{; 1;} && !$@) {
-			    $K2Listbox = $Listbox = $try;
-			    last TRYLISTBOX;
-			} else {
-			    warn "Can't use module Tk::$try: $@";
+	if ($splitter) {
+	    $Listbox = "HList";
+	} else {
+	    if ($sorted) {
+		if (!defined $K2Listbox) {
+		TRYLISTBOX: {
+			foreach my $try (qw(K2Listbox KListbox WListbox)) {
+			    if (eval q{ require Tk::} . $try . q{; 1;} && !$@) {
+				$K2Listbox = $Listbox = $try;
+				last TRYLISTBOX;
+			    } else {
+				warn "Can't use module Tk::$try: $@";
+			    }
 			}
 		    }
+		} else {
+		    $Listbox = $K2Listbox;
 		}
-	    } else {
-		$Listbox = $K2Listbox;
 	    }
 	}
 	my $attrib = ($linetype eq 's'
@@ -9333,6 +9339,7 @@ sub choose_ort {
 	    }
 
 	    my $lb;
+	    my $max_cols;
 	    if ($Listbox =~ /K.*Listbox/ && $Tk::VERSION >= 800) {
 	        my $c = $t->Canvas(-takefocus => 0)->pack;
 		my $x = 1;
@@ -9360,11 +9367,6 @@ sub choose_ort {
 			     $c->itemconfigure('current', -fill => 'black');
 			 });
 	    }
-	    $lb = $t->Scrolled($Listbox,
-			       -scrollbars => 'osoe',
-			       -selectmode => 'single',
-			      )->pack(-expand => 1, -fill => 'both');
-	    $t->Advertise(Listbox => $lb->Subwidget("scrolled"));
 
 	    my %orte;
 	    my @orte;
@@ -9447,23 +9449,57 @@ sub choose_ort {
 		}
 	    }
 
-	    if (!$sorted) {
-		$lb->insert('end',
-			    map { $_->[1] }
-			    sort { $a->[0] <=> $b->[0] }
-			    map { [$orte{$_}, $_] }
-			    keys %orte);
+	    if ($splitter) {
+		my(@cols) = $splitter->((keys %orte)[0]);
+		$max_cols = scalar @cols;
+	    }
+
+	    $lb = $t->Scrolled($Listbox,
+			       -scrollbars => 'osoe',
+			       -selectmode => 'single',
+			       ($splitter
+				? (-columns => $max_cols,
+				   -exportselection => 1,
+				  )
+				: ()
+			       ),
+			      )->pack(-expand => 1, -fill => 'both');
+	    $t->Advertise(Listbox => $lb->Subwidget("scrolled"));
+
+	    if ($splitter) {
+		my $wraplength = $max_cols > 1 ? int(800/($max_cols-1)) : 800; # XXX don't hardcode 800px
+		my $text_style = $lb->ItemStyle('text', -wraplength => $wraplength);
+		my $inx = 0;
+		for my $ort (sort keys %orte) {
+		    my(@cols) = $splitter->($ort);
+		    $lb->add($inx, -text => shift @cols, -data => $ort);
+		    for my $col (1 .. @cols) {
+			next if $col >= $max_cols; # XXX off by one?
+			$lb->itemCreate($inx, $col, -text => $cols[$col-1],
+					-style => $text_style,
+				       );
+		    }
+		    $inx++;
+		}
 	    } else {
-		# XXX maybe use Sort::Naturally? speed issues?
-		my $tf_sub = (defined &Win32Util::sort_cmp_hack_transform &&
-			      $os eq 'win'
-			      ? sub { Win32Util::sort_cmp_hack_transform($_[0]) }
-			      : sub { $_[0] });
-		$lb->insert('end',
-			    map { $_->[1] }
-			    sort { $a->[0] cmp $b->[0] }
-			    map { [ do { /^\(?(.*)/; $tf_sub->($1) }, $_] }
-			    keys %orte);
+		if (!$sorted) {
+		    $lb->insert('end',
+				map { $_->[1] }
+				sort { $a->[0] <=> $b->[0] }
+				map { [$orte{$_}, $_] }
+				keys %orte);
+		} else {
+		    # XXX maybe use Sort::Naturally? speed issues?
+		    my $tf_sub = (defined &Win32Util::sort_cmp_hack_transform &&
+				  $os eq 'win'
+				  ? sub { Win32Util::sort_cmp_hack_transform($_[0]) }
+				  : sub { $_[0] });
+		    $lb->insert('end',
+				map { $_->[1] }
+				sort { $a->[0] cmp $b->[0] }
+				map { [ do { /^\(?(.*)/; $tf_sub->($1) }, $_] }
+				keys %orte);
+		}
 	    }
 
 	    eval {
@@ -9472,9 +9508,16 @@ sub choose_ort {
 
 	    my $show_sub =  sub {
 		my %args = @_;
-		my $lb_index = $lb->index('active');
+		my $lb_index = ($splitter
+				? $lb->info('anchor')
+				: $lb->index('active')
+			       );
 		return if !defined $lb_index;
-		my $index = $orte{$lb->get($lb_index)};
+		my $ort = ($splitter
+			   ? $lb->info("data", $lb_index)
+			   : $lb->get($lb_index)
+			  );
+		my $index = $orte{$ort};
 		my $tcoords = [];
 		$args{'-type'} = $type;
 		if ($type eq 'o') {
@@ -14422,7 +14465,7 @@ sub set_coords_rbahn {
     @tags = $c->gettags('current') if !@tags;
     return if !@tags;
     if ($tags[0] =~ /^r-[bf]g/) {
-	Route::_coord_as_string([$tags[2], $tags[3]]);
+	$tags[1];
     } else {
 	my($item, @tags) = find_below($c, qw/r-bg r-fg/);
 	return if !defined $item;
@@ -14437,7 +14480,7 @@ sub set_coords_usbahn {
     @tags = $c->gettags('current') if !@tags;
     return if !@tags;
     if ($tags[0] =~ /^[ub]-[bf]g/) {
-	Route::_coord_as_string([$tags[2], $tags[3]]);
+	$tags[1];
     } else {
 	my($item, @tags) = find_below($c, qw/u-bg b-bg u-fg u-bg/);
 	return if !defined $item;
@@ -14452,7 +14495,7 @@ sub set_coords_bahn {
     @tags = $c->gettags('current') if !@tags;
     return if !@tags;
     if ($tags[0] =~ /^[ubr]-[bf]g/) {
-	Route::_coord_as_string([$tags[2], $tags[3]]);
+	$tags[1];
     } else {
 	my($item, @tags) = find_below($c, qw/u-bg b-bg u-fg u-bg r-bg r-fg/);
 	return if !defined $item;

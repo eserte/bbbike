@@ -434,7 +434,25 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
      { from  => 1087462800, # 2004-06-17 11:00
        until => 1087765200, # 2004-06-20 23:00
        file  => 'motzstr.bbd',
-       text  => 'NEW: Nollendorfplatz (Schöneberg) Bereich Nollendorfplatz Veranstaltung (bis 20.06. 23 Uhr), Aufbau ab 18.06. 11 Uhr; 12. Lesbisch-schwules Stadtfest (12:46) ',
+       text  => 'NEW: Nollendorfplatz (Schöneberg) Bereich Nollendorfplatz Veranstaltung (bis 20.06. 23 Uhr), Aufbau ab 18.06. 11 Uhr; 12. Lesbisch-schwules Stadtfest',
        type  => 'gesperrt',
+     },
+     { from  => 1088807415, # 2004-07-03 00:30
+       until => 1089147600, # 2004-07-06 23:00
+       file  => 'gendarmenmarkt.bbd',
+       text  => 'Gendarmenmarkt (Mitte) in allen Richtungen im Bereich Mohrenstr. Veranstaltung, Verkehrsbehinderung erwartet (bis 06.07.2004 23:00 Uhr) Classic Open Air am Gendarmenmarkt',
+       type  => 'gesperrt',
+     },
+     { from  => 1088719200, # 2004-07-02 00:00
+       until => 1089885600, # 2004-07-15 12:00
+       file  => 'koenigsheideweg.bbd',
+       text  => 'Königsheideweg (Treptow) Richtung Baumschulenstr. nach Sterndamm Baustelle, Fahrtrichtung gesperrt (bis Mitte 07.2004)',
+       type  => 'handicap',
+     },
+     { from  => 1088719200, # 2004-07-02 00:00
+       until => 1088964000, # 2004-07-04 20:00
+       file  => 'muellerstr.bbd',
+       text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Londoner Str. und Barfußstr. Veranstaltung, Straße vollständig gesperrt (bis 04.07. abends)',
+       type  => 'handicap',
      },
     );

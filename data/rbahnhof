@@ -257,13 +257,13 @@ Schwante	R -11222,36087
 Kremmen	R -14754,38167
 Beetz-Sommerfeld	R -16228,43906
 Wustrau-Altfriesack	R -25033,49754
-Sieversdorf	R -58610,44799
-Großderschau	R -59903,43873
-Rhinow	R -61615,37516
-Spaatz	R -63988,32086
-Hohennauen	R -62868,28400
-Rathenow Nord	R -61414,21999
-Rathenow	R -61015,20262
+Sieversdorf	R0 -58610,44799
+Großderschau	R0 -59903,43873
+Rhinow	R0 -61615,37516
+Spaatz	R0 -63988,32086
+Hohennauen	R0 -62868,28400
+Rathenow Nord	R0 -61414,21999
+Rathenow	R0 -61015,20262
 Kirchmöser	R -56013,-4570
 Wusterwitz	R -59292,-3572
 Reckahn	R0 -47115,-8565
@@ -285,8 +285,8 @@ Dallgow-Döberitz	RC -13102,14840
 Wustermark	RC -21187,15667
 Buschow (Rathenow)	R -42628,19726
 Nennhausen	R -50618,20357
-Cottbus-Willmersdorf	R 78147,-65382
-Peitz	R 79946,-59208
+Cottbus-Willmersdorf	R0 78147,-65382
+Peitz	R0 79946,-59208
 Klinge	R 88003,-72262
 Forst (Lausitz)	R 95993,-72638
 Cottbus/Merzdorf	R 78711,-69388
@@ -310,12 +310,12 @@ Pritzwalk	R -73845,80916
 Heiligengrabe	R -63304,81411
 Liebenthal	R -59912,81663
 Wittstock (Dosse)	R -53938,82823
-Dossow	R -50966,78459
-Fretzdorf	R -49502,72720
-Rossow	R -48095,70060
-Netzeband	R -43454,64697
-Walsleben	R -39990,59534
-Neuruppin	R -31771,57647
+Dossow	R0 -50966,78459
+Fretzdorf	R0 -49502,72720
+Rossow	R0 -48095,70060
+Netzeband	R0 -43454,64697
+Walsleben	R0 -39990,59534
+Neuruppin West	R0 -31771,57647
 Pinnow	R 56003,74276
 Schwedt Mitte	R 67254,75297
 Schwedt (Oder)	R 69564,74218
@@ -323,22 +323,25 @@ Wusterhausen (Dosse)	R -54833,52477
 Kyritz	R -59441,58518
 Blumenthal (Mark)	R -63553,73356
 Sarnow	R -70587,77643
-Wilmersdorf	R 42240,79081
-Warnitz	R 40863,87002
+Wilmersdorf (bei Angermünde)	R 42240,79081
+Warnitz (Uckermark)	R 40863,87002
 Seehausen (Uckermark)	R 41100,91717
 Passow (Uckermark)	R 56459,83565
 Schönow (Uckermark)	R 59910,87650
 Casekow	R 63508,90863
 Petershagen (Uckermark)	R 66420,93845
 Tantow	R 72783,97221
+Szczecin	R 85606,114191
 Nechlin	R 42119,115606
 Pasewalk	R 47800,124112
-Jungfernheide	RB 3352,13752
+Hosena	R 49344,-99923
+Hoyerswerda	R 69470,-107134
+Jungfernheide	R0 3352,13752
 Leuenberg	R0 42871,31955
 Sternebeck	R0 50247,30933
 Schulzendorf	R0 55569,30484
 Wriezen	R0 59972,35483
-Schmachtenhagen	R 4418,41082
+Schmachtenhagen	RC 4418,41082
 Waldsieversdorf	R0 56750,15927
 Buckow (Märk. Schweiz)	R0 56094,18067
 Blöhnsdorf	R -23068,-50864

@@ -203,6 +203,7 @@ Bayerische Str.	1 4296,10004 4349,10247
 Knorrpromenade	1 14417,11640 14362,11493
 Hoppestr.	1 8617,18310 8482,18284
 Herbststr.	1 8465,18365 8634,18401
+Ruhwaldweg: Schranke gesperrt	2 830,13353 801,13323
 Hans-Thoma-Str.	1 -12148,-784 -12255,-784 -12322,-576
 Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
 Potsdamer Damm	2 -5736,-3629 -6439,-3969
@@ -408,21 +409,20 @@ Fußgängerbrücke über den Sachesendamm gesperrt, südliche Rampe ist aber befahrba
 B 167; (B167 Liebenwalde); Bereich Voßkanal-Thürenweg; Straßen- u.Brückenbau; Vollsperrung; 24.06.2004-07.08.2004	2:inwork 8161,51420 8509,51740
 K 6801; (Karwesee-Brunne); östl. Ortseingang bis Kreuzung; Tiefbauarbeiten; Vollsperrung; 24.06.2004-05.08.2004	2:inwork -33115,38516 -33911,38631
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen; schlechte Straße; Vollsperrung; 01.11.96-unbekannt	2:inwork -50149,24689 -50016,24414 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
-L 11; (Bad Wilsnack-Wittenberge); Bahnübergang zw. Klein Lüben u. Kuhblank; Brückenbauarbeiten; Vollsperrung; 16.10.2003-30.06.2004	2:inwork -94968,62636 -94965,61610
 L 39; (ASFriedersdorf-Neu Zittau); keine Brücke ü. Oder-Spree-Kanal; kein Bw ü. Oder-Spree-Kanal; Vollsperrung; 00:00:00-unbekannt	2:inwork 35335,-6272 35143,-5650
-L 40; zw. Großbeeren und Güterfelde; Bau der L 40n; Vollsperrung; 16.06.2003-28.06.2004	2:inwork 1663,-5427 2031,-5468 2471,-6025 2356,-6128 2443,-6309
 L 70 (Doberlug Kirchhain-Dahme); zw. B87 Hohenbuckow u. Hillmersdorf; Fahrbahnschäden; Vollsperrung; 22.05.97-unbekannt	2:inwork 17023,-71738 17783,-72721 17979,-73530 17960,-73915 17961,-74364 18228,-75553 18187,-76301 18061,-76878
 L 75; (B 96a Mahlow-Berlin); zwischen B 96a und Klein Ziethen; Neubau B 96; Vollsperrung; 04.08.2003-28.07.2004	2:inwork 13348,-3283 13289,-4660
 L 76; (Mahlow-Teltow); zw. B101 nördl. Großbeeren und B101n; Straßenbauarb. B101n; Vollsperrung; 29.11.2003-31.08.2004	2:inwork 5394,-3053 4260,-2373
 L 24; (Greiffenberg-Gerswalde); bei Pfingstberg, Brücke über DB; Brückenneubau; Vollsperrung; 19.01.2004-31.08.2004	2:inwork 41666,80812 41292,81052
 B 179; (Spreewaldstr., Karl-Liebknecht-Str.); zw. Bahnübergang und nördl. A.-Bebel-Str.; grundh. Straßenbau; Vollsperrung; 01.04.2004-31.12.2005	2:inwork 26612,-15094 26583,-15677
-L 23; (B 1 (bei Tasdorf)-Hennickendorf); bei Hennickendorf, Brücke über Werkgleis; Brückenneubau; Vollsperrung; 15.03.2004-30.06.2004 	2:inwork 39970,11328 40399,11613
 L 34; (Reichenberg-B168 (Bollersdorfer Kreisel)); bei Bollersdorf, Brücke über Sophienfließ; Brückenneubau; Vollsperrung; 15.03.2004-27.08.2004 	2:inwork 55194,21167 55043,21042
 B 167; (Herzberg-Neuruppin); OL Alt Ruppin, Rhinbrücke    Brückenneubau    Vollsperrung    02.03.2004-31.12.2005	2:inwork -28477,59467 -28692,59635 -28866,59954
 L 22; (Zehdenick-Gransee); OD Gransee, Krz. Berliner Damm/Strelitzer    Str.    Bau Kreisverkehrsplatz    Vollsperrung    22.03.2004-30.08.2004	BNP:60 -7071,66471
 K 6422; (Petershagener Str.); OL Fredersdorf, zw. E.-Thälmann-Str. u. Dorfstr.; Bau Kreisverkehr; Vollsperrung; 13.04.2004-15.07.2004	2:inwork 34139,13113 34896,13562 35234,13541
-L 142; OD Wusterhausen, Brücke über Klempnitz; Brückensanierung; Vollsperrung; 04.05.2004-16.07.2004	2:inwork -55166,53457 -54776,53333
+L 142; OD Wusterhausen, Brücke über Klempnitz; Brückensanierung; Vollsperrung; 04.05.2004-30.08.2004	2:inwork -55166,53457 -54776,53333
 L 592; Brücken über Pulsnitz,Binnengraben und zwei Durchlässe; Ersatzneubau; Vollsperrung; 10.05.2004-19.11.2004	2:inwork 25830,-109886 26164,-109378
 L 75; (Karl-Marx-Straße); von Dorfstraße bis Friedhofsweg; Straßenbauarbeiten; Vollsperrung; 24.05.2004-20.12.2004	2:inwork 13225,-681 13309,-1268
 L 912; (Päwesin-Gortz); zw. OA Päwesin u. Bagow, Brücke über Seeverbindung; Brückenneubau; Vollsperrung; 10.05.2004-06.11.2004	2:inwork -36427,10861 -37026,11176
 L 71; (B 96-Drahnsdorf); bei Krossen Brücke über Vorflutkanal; Brückenneubau; Vollsperrung; 25.03.2004-31.07.2004	2:inwork 24195,-54396 24639,-53978
+B 5; zw. OU Müncheberg und Friedrichshof; Deckenerneurung; Vollsperrung; 06.07.2004-09.07.2004	2:inwork 61195,11119 65071,7242
+L 34; (Reichenberg-B168 (Bollersdorfer Kreisel)); zw. Reichenberg u. Abzw. Buckow; Instandsetzung Durchlaß; Vollsperrung; 05.07.2004-06.08.2004	2:inwork 58405,23616 58340,23341 58151,22324 57358,21972 56330,21643 55558,21417 55194,21167

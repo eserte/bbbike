@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.17 2004/03/30 18:41:06 eserte Exp $
+# $Id: bbbikerouting.t,v 1.18 2004/07/04 21:23:48 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -323,6 +323,7 @@ sub do_tests {
     }
 
     SKIP: {
+	my $s_or_r_rx = qr/^[SR]\d+(?:,[SR]\d+)*$/;
 	skip("No oepnv search with algorithm=$algorithm", 8)
 	    if defined $algorithm && $algorithm eq 'C-A*-2';
 
@@ -337,7 +338,7 @@ sub do_tests {
 	is($routing2->Goal->Street, "Wannsee", "Station as goal");
 	$routing2->search;
 	# nach Wannsee kommt man nur mit der S- oder R-Bahn
-	like($routing2->RouteInfo->[-1]->{Street}, qr/^[SR]\d+$/,
+	like($routing2->RouteInfo->[-1]->{Street}, $s_or_r_rx,
 	     "Vehicle=oepnv test");
 
 	# clear the positions and check it with street names
@@ -351,7 +352,7 @@ sub do_tests {
 	is($@, "") or diag("Error while searching: $@, Routing start object is: " . Dumper($routing2->Start) . " and goal object is: " . Dumper($routing2->Goal));
 	is($routing2->Start->Street, "Platz der Luftbrücke", "Correct start");
 	is($routing2->Goal->Street, "Wannsee", "Correct goal");
-	like($routing2->RouteInfo->[-1]->{Street}, qr/^[SR]\d+$/,
+	like($routing2->RouteInfo->[-1]->{Street}, $s_or_r_rx,
 	     "Route info contains S-Bahn/R-Bahn");
     }
 

@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: search_inaccessible_points,v 1.6 2003/10/07 22:53:30 eserte Exp $
+# $Id: search_inaccessible_points,v 1.7 2004/07/04 09:54:02 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -37,13 +37,21 @@ my @s_files;
 my @blocked_files;
 my @blocked_type;
 
-if (!GetOptions("street=s@" => \@s_files,
-		"blocked=s@" => \@blocked_files,
+my @allowed_blocked_type = qw(einbahn sperre tragen wegfuehrung);
+
+if (!GetOptions("street=s@"  => sub { push @s_files, split /,/, $_[1] },
+		"blocked=s@" => sub { push @blocked_files, split /,/, $_[1] },
 		"blockedtype=s@" => \@blocked_type,
 		"refpoint=s" => \$refpoint,
 		"q" => \$quiet,
 	       )) {
-    die "usage";
+    die <<EOF;
+usage: $0 [-street file] [-blocked file]
+       [-blockedtype type] [-refpoint x,y] [-q]
+-street and -blocked may be given multiple times or separated with commas
+-blockedtype may be given multiple times and should be one of
+             @allowed_blocked_type
+EOF
 }
 
 if (!@s_files) { push @s_files, "strassen" }
@@ -52,7 +60,6 @@ if (!@blocked_files) { push @blocked_files, "gesperrt" }
 # blocked types
 if (!@blocked_type) { push @blocked_type, qw/einbahn sperre tragen/ }
 my %blocked_type;
-my @allowed_blocked_type = qw(einbahn sperre tragen wegfuehrung);
 my $allowed_blocked_rx = join("|", @allowed_blocked_type);
 foreach (@blocked_type) {
     if (/^($allowed_blocked_rx)$/) {

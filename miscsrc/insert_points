@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.36 2004/06/10 22:19:01 eserte Exp eserte $
+# $Id: insert_points,v 1.38 2004/07/03 22:43:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -171,6 +171,7 @@ sub process {
 	}
     }
     warn "from=$from middle=$middle to=$to new_to=$new_to\n" if $verbose;
+
     if (defined $extra) {
 	if ($use_tk) {
 	    $top->Dialog(-title => $0,
@@ -179,7 +180,19 @@ sub process {
 			 -buttons => ['OK'])->Show;
 	    $top->destroy;
 	}
-	warn "Too many points";
+	warn "Too many points ($extra)";
+	return;
+    }
+
+    if ($operation eq 'change' && $from eq $to) {
+	if ($use_tk) {
+	    $top->Dialog(-title => $0,
+			 -text => 'Gleicher Punkt, keine Aktion notwendig!',
+			 -bitmap => 'info',
+			 -buttons => ['OK'])->Show;
+	    $top->destroy;
+	}
+	warn "Same point $from eq $to";
 	return;
     }
 
@@ -251,6 +264,7 @@ sub process {
 		   wasserumland2 ampeln hoehe
 		   housenumbers green brunnels
 		   deutschland relation_gps
+		   fragezeichen
 		  );
 	    # XXX gehört housenumbers hier rein???
 
