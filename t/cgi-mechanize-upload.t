@@ -10,11 +10,11 @@ use strict;
 
 BEGIN {
     if (!eval q{
-	use WWW::Mechanize;
+	use WWW::Mechanize 1.10; # images method
 	use Test::More;
 	1;
     }) {
-	print "1..0 # skip: no Test::More and/or WWW::Mechanize modules\n";
+	print "1..0 # skip: no Test::More and/or WWW::Mechanize modules or outdated versions\n";
 	exit;
     }
 }
