@@ -265,15 +265,15 @@ sub draw_accesslog_data {
 }
 
 sub _today {
-    require Date::Calc;
-    my($y,$m,$d) = Date::Calc::Today();
+    require Date::Pcalc;
+    my($y,$m,$d) = Date::Pcalc::Today();
     $m = _number_monthabbrev($m);
     sprintf "%02d/%s/%04d", $d, $m, $y;
 }
 
 sub _yesterday {
-    require Date::Calc;
-    my($y,$m,$d) = Date::Calc::Add_Delta_Days(Date::Calc::Today(), -1);
+    require Date::Pcalc;
+    my($y,$m,$d) = Date::Pcalc::Add_Delta_Days(Date::Pcalc::Today(), -1);
     $m = _number_monthabbrev($m);
     sprintf "%02d/%s/%04d", $d, $m, $y;
 }
