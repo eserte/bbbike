@@ -6402,7 +6402,7 @@ sub enter_power {
     $row++;
     my $ref_row = $row;
     my $create_reference_label = sub {
-	$t->Label(-text => "Referenzleistung",
+	$t->Label(-text => M"Referenzleistung",
 		 )->grid(-row => $ref_row, -column => 0, -columnspan => 2);
     };
     my $is_reference = ($active_speed_power{Type} eq 'power' &&
@@ -6410,7 +6410,7 @@ sub enter_power {
     if (!$is_reference) {
 	my $rb;
 	$rb = $t->Button
-	    (-text => "Als Referenzleistung verwenden",
+	    (-text => M"Als Referenzleistung verwenden",
 	     -command => sub {
 		 change_active_speed_power("power", $i);
 		 $create_reference_label->();
@@ -6495,7 +6495,7 @@ sub enter_speed {
     $row++;
     my $ref_row = $row;
     my $create_reference_label = sub {
-	$t->Label(-text => "Referenzgeschwindigkeit",
+	$t->Label(-text => M"Referenzgeschwindigkeit",
 		 )->grid(-row => $ref_row, -column => 0, -columnspan => 2);
     };
     my $is_reference = ($active_speed_power{Type} eq 'speed' &&
@@ -6503,7 +6503,7 @@ sub enter_speed {
     if (!$is_reference) {
 	my $rb;
 	$rb = $t->Button
-	    (-text => "Als Referenzgeschwidigkeit verwenden",
+	    (-text => M"Als Referenzgeschwindigkeit verwenden",
 	     -command => sub {
 		 change_active_speed_power("speed", $i);
 		 $create_reference_label->();
