@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.27 2003/12/22 19:44:29 eserte Exp $
+# $Id: GpsmanData.pm,v 1.28 2004/09/25 22:24:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_WAYPOINT => 0;
 use constant TYPE_TRACK    => 1;
@@ -57,7 +57,7 @@ use GPS::Util; # for eliminate_umlauts
 use Class::Struct;
 struct('GPS::Gpsman::Waypoint' =>
        [map {($_ => "\$")}
-	qw(Ident Comment Latitude Longitude Altitude NewTrack Symbol Accuracy)
+	qw(Ident Comment Latitude Longitude Altitude NewTrack Symbol Accuracy DisplayOpt)
        ]
       );
 {
@@ -321,6 +321,8 @@ sub parse_waypoint {
 		$wpt->Altitude($1);
 	    } elsif (/^symbol=(.*)/) {
 		$wpt->Symbol($1);
+	    } elsif (/^dispopt=(.*)/) {
+		$wpt->DisplayOpt($1);
 	    } else {
 		warn "Ignore $_" if $^W;
 	    }
@@ -582,6 +584,7 @@ sub as_string {
 		       $wpt->Latitude, $wpt->Longitude,
 		       (defined $wpt->Altitude ? "alt=".$wpt->Altitude : ()),
 		       (defined $wpt->Symbol ? "symbol=".$wpt->Symbol : ()),
+		       (defined $wpt->DisplayOpt ? "dispopt=".$wpt->DisplayOpt : ()),
 		      )
 		. "\n";
 	}

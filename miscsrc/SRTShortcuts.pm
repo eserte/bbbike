@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.18 2004/08/19 22:08:14 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.18 2004/08/19 22:08:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -267,7 +267,7 @@ sub show_any_diff {
 	$t->geometry($t->screenwidth-20 . "x" . 260 . "+0-20");
     }
     $t->Label(-text => "Modtime: " . scalar(localtime((stat($file))[9])) .
-	      sprintf " (%.1f days ago)", (-M $file)
+	      sprintf " (%.1f days ago)", -(-M $file)
 	     )->pack(-anchor => "w");
     my $f;
     my $hide_ignored;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanConn.pm,v 1.12 2003/06/18 22:34:52 eserte Exp eserte $
+# $Id: GpsmanConn.pm,v 1.13 2004/09/25 22:25:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@
 package GPS::GpsmanConn;
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 use Config;
 
 # XXX should go away some day...
@@ -38,16 +38,23 @@ BEGIN {
                          /usr/local/bbbike/data)';
     }
  SEARCH_FOR_GARMIN: {
+	# Debugging only:
+	if (-e "/home/e/eserte/work/perl-GPS/blib") {
+	    # Use the new perl-GPS repository. If upload/downloads fail,
+	    # comment this line to get the old prod.perl-GPS
+	    eval 'use blib "/home/e/eserte/work/perl-GPS"';
+	    if ($@) {
+		warn $@;
+	    } else {
+		last SEARCH_FOR_GARMIN;
+	    }
+	}
 	foreach my $dir (@INC) {
 	    if (-r "$dir/GPS/Garmin.pm") {
 		last SEARCH_FOR_GARMIN;
 	    }
 	}
-	if (-e "/home/e/eserte/work/perl-GPS/blib") {
-	    # Use the new perl-GPS repository. If upload/downloads fail,
-	    # comment this line to get the old prod.perl-GPS
-	    eval 'use blib "/home/e/eserte/work/perl-GPS"'; warn $@ if $@;
-	} elsif (-e "/tmp/prod.perl-GPS") {
+	if (-e "/tmp/prod.perl-GPS") {
 	    eval 'use blib "/tmp/prod.perl-GPS"'; warn $@ if $@;
 	} elsif (-e "/usr/local/prod.perl-GPS") {
 	    eval 'use blib "/usr/local/prod.perl-GPS"'; warn $@ if $@;
@@ -65,6 +72,169 @@ BEGIN {
 use GPS::Garmin::Handler;
 
 use constant MIN_TIME => 633826800; # 1990-01-01, see also GPS::Garmin::Constant::GRMN_UTC_DIFF
+
+use vars qw(%garminsymbol_to_id %id_to_garminsymbol $default_garminsymbol
+	    %id_to_garmindisplay);
+
+$default_garminsymbol = 'WP_dot';
+
+# List taken from gpsman's garmin_symbols.tcl
+%garminsymbol_to_id = qw(
+	anchor             0
+	bell               1
+	diamond_green      2
+	diamond_red        3
+	diver_down_1       4
+	diver_down_2       5
+	dollar             6
+	fish               7
+	fuel               8
+	horn               9
+	house             10
+	knife_fork        11
+	light             12
+	mug               13
+	skull             14
+	square_green      15
+	square_red        16
+	WP_buoy_white     17
+	WP_dot            18
+	wreck             19
+	null              20
+	MOB               21
+	buoy_amber        22
+	buoy_black        23
+	buoy_blue         24
+	buoy_green        25
+	buoy_green_red    26
+	buoy_green_white  27
+	buoy_orange       28
+	buoy_red          29
+	buoy_red_green    30
+	buoy_red_white    31
+	buoy_violet       32
+	buoy_white        33
+	buoy_white_green  34
+	buoy_white_red    35
+	dot               36
+	radio_beacon      37
+	boat_ramp        150
+	camping          151
+	restrooms        152
+	showers          153
+	drinking_water   154
+	phone            155
+	1st_aid          156
+	info             157
+	parking          158
+	park             159
+	picnic           160
+	scenic           161
+	skiing           162
+	swimming         163
+	dam              164
+	controlled       165
+	danger           166
+	restricted       167
+	null_2           168
+	ball             169
+	car              170
+	deer             171
+	shopping_cart    172
+	lodging          173
+	mine             174
+	trail_head       175
+	truck_stop       176
+	exit             177
+	flag             178
+	circle_x         179
+	is_highway      8192
+	us_highway      8193
+	st_highway      8194
+	mile_marker     8195
+	traceback       8196
+	golf            8197
+	small_city      8198
+	medium_city     8199
+	large_city      8200
+	freeway         8201
+	ntl_highway     8202
+	capitol_city    8203
+	amusement_park  8204
+	bowling         8205
+	car_rental      8206
+	car_repair      8207
+	fastfood        8208
+	fitness         8209
+	movie           8210
+	museum          8211
+	pharmacy        8212
+	pizza           8213
+	post_office     8214
+	RV_park         8215
+	school          8216
+	stadium         8217
+	store           8218
+	zoo             8219
+	fuel_store      8220
+	theater         8221
+	ramp_int        8222
+	street_int      8223
+	weight_station  8226
+	toll            8227
+	elevation       8228
+	exit_no_serv    8229
+	geo_name_man    8230
+	geo_name_water  8231
+	geo_name_land   8232
+	bridge          8233
+	building        8234
+	cemetery        8235
+	church          8236
+	civil           8237
+	crossing        8238
+	monument        8239
+	levee           8240
+	military        8241
+	oil_field       8242
+	tunnel          8243
+	beach           8244
+	tree            8245
+	summit          8246
+	large_ramp_int  8247
+	large_exit_ns   8248
+	police          8249
+	casino          8250
+	snow_skiing     8251
+	ice_skating     8252
+	tow_truck       8253
+	border          8254
+	geocache        8255
+	geocache_fnd    8256
+	airport         16384
+	intersection    16385
+	avn_ndb         16386
+	avn_vor         16387
+	heliport        16388
+	private         16389
+	soft_field      16390
+	tall_tower      16391
+	short_tower     16392
+	glider          16393
+	ultralight      16394
+	parachute       16395
+	avn_vortac      16396
+	avn_vordme      16397
+	avn_faf         16398
+	avn_lom         16399
+	avn_map         16400
+	avn_tacan       16401
+	seaplane        16402
+);
+
+%id_to_garmindisplay = qw(0 s_name
+			  1 symbol
+			  2 s_comment);
 
 use Karte::Polar;
 
@@ -114,7 +284,7 @@ sub new {
     $self->{GPS} = $args{GPS};
     if (!$self->{GPS}) {
 	#XXX require GPS::Garmin;
-	GPS::Garmin->VERSION(0.12); # 0.12 plus
+	GPS::Garmin->VERSION(0.14); # extended return
 	# XXX Windows? HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\SERIALCOMM
 	# XXX Linux: /dev/ttyS0 or ttyS1
 	my $port = $args{Port} || ($Config::Config{archname} eq 'arm-linux' ? '/dev/ttySA0' : '/dev/cuaa0'); # more distinctions
@@ -122,6 +292,7 @@ sub new {
 	$self->{GPS} = new GPS::Garmin('Port' => $port,
 				       'Baud' => $baud,
 				       verbose => $args{Verbose} > 1,
+				       Return => 'hash',
 				      );
 	die "Can't create GPS object" if !$self->{GPS};
     }
@@ -206,7 +377,9 @@ EOF
     $gps->get_reply; # overread header --- XXX valuable info here! (name etc?)
     my $r_i = 0;
     while ($gps->records) {
-	my($lat,$lon,$time,$alt,$depth,$isfirst) = $gps->grab;
+	my(%res) = $gps->grab;
+	#XXX use Hash::Util qw(lock_keys); lock_keys %res; # XXX
+	my($lat,$lon,$time,$alt,$depth,$isfirst) = @res{qw{lat lon time alt depth new_trk}};
 	if (0 && $isfirst) { # XXX ignore isfirst
 	    if ($r ne "") {
 		push @r, $r;
@@ -302,12 +475,38 @@ EOF
     warn "records to read: $numr\n" if $self->{Verbose};
     my $r_i = 0;
     while ($gps->records) {
-	my($title,$lat,$lon,$desc) = $gps->grab;
+	my(%res) = $gps->grab;
+	#XXX use Hash::Util qw(lock_keys); lock_keys %res; # XXX
+	#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\%res],[])->Indent(1)->Useqq(1)->Dump; # XXX
+	my($title,$lat,$lon,$desc) = @res{qw{ident lat lon comment}};
+
+	my @extra;
+	if (defined $res{alt}) {
+	    push @extra, "alt=$res{alt}";
+	}
+	if (defined $res{dspl}) {
+	    my $displayname = $id_to_garmindisplay{$res{dspl}};
+	    if (defined $displayname) {
+		push @extra, "dispopt=$displayname";
+	    }
+	}
+	if (defined $res{smbl}) {
+	    my $symbolname = id_to_garminsymbol($res{smbl});
+	    if (defined $symbolname) {
+		if ($symbolname ne $default_garminsymbol) {
+		    push @extra, "symbol=$symbolname";
+		}
+	    } else {
+		push @extra, "symbol=$res{smbl}"; # use id instead
+	    }
+	}
+
 	$r .= join("\t",
 		   ($title||""),
 		   ($desc||""),
 		   _ddd_to_dms($lat, 1),
 		   _ddd_to_dms($lon, 0),
+		   @extra,
 		   ) . "\n";
 	$r_i++;
 	printf STDERR "Records read: %d%% (%d/%d)    \r", $r_i/$numr*100, $r_i, $numr
@@ -508,6 +707,16 @@ where action is one of:
 gettrk getwpt
 
 EOF
+}
+
+sub id_to_garminsymbol {
+    my($id) = @_;
+    if (!keys %id_to_garminsymbol) {
+	while(my($symbol,$id) = each %garminsymbol_to_id) {
+	    $id_to_garminsymbol{$id} = $symbol;
+	}
+    }
+    $id_to_garminsymbol{$id};
 }
 
 __END__

@@ -507,7 +507,7 @@ userdel	q4 -74489,80545 -74038,78181
 EOF
      },
      { from  => undef, # 
-       until => 1097791200, # Mitte 10/2004
+       until => 1096151876, # removed (seen 2004-09-25)
        text  => 'Flottwellstr. (Tiergarten) in beiden Richtungen zwischen Lützowstraße und Am Karlsbad Verkehrsbehinderung durch Absenkung der Fahrbahn, Straße vollständig gesperrt',
        type  => 'handicap',
       data  => <<EOF,
@@ -631,9 +631,9 @@ userdel	q4 33559,-85384 33488,-85803
 userdel	q4 33089,-85779 33047,-85458
 EOF
      },
-     { from  => 1095544800, # 2004-09-19 00:00
+     { from  => 1096840800, # 2004-10-04 00:00
        until => undef, # XXX
-       text  => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 20.09.2004-unbekannt ',
+       text  => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 04.10.2004-unbekannt ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 49039,44131 48583,44366
@@ -777,6 +777,72 @@ EOF
        data  => <<EOF,
 userdel	2 -62793,-10268 -63668,-10212
 userdel	2 -63668,-10212 -64600,-9931
+EOF
+     },
+     { from  => 1094800133, # 2004-09-10 09:08
+       until => 1095026400, # 2004-09-13 00:00
+       text  => 'Straße des 17. Juni - Ebertstr. (Mitte) in beiden Richtungen zwischen Platz des 18. März und Entlastungsstr. sowie zwischen Behrenstr. und Dorotheenstr. Veranstaltung, Straße gesperrt (bis 12.09.2004) Jesustag 2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 8214,12205 8063,12182
+userdel	2 8214,12205 8515,12242
+userdel	2 8539,12286 8560,12326
+userdel	2 8539,12286 8515,12242
+userdel	2 8595,12066 8600,12165
+userdel	2 8540,12420 8560,12326
+userdel	2 8515,12242 8600,12165
+EOF
+     },
+     { from  => 1094940000, # 2004-09-12 00:00
+       until => 1097272800, # 2004-10-09 00:00
+       text  => 'B 102; zw. Krz. Kampehl und Bückwitz Straßenbauarbeiten Vollsperrung 13.09.2004-08.10.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -53139,50022 -54295,49682
+EOF
+     },
+     { from  => 1095544800, # 2004-09-19 00:00
+       until => 1101855600, # 2004-12-01 00:00
+       text  => 'B 96; (Hauptstr.); OD Schildow, zw. Bahnhofstr. und OA Ri. Berlin Kanal- und Straßenbau Vollsperrung 20.09.2004-30.11.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 8493,25378 8370,25539
+userdel	q4 8370,25539 8182,25608
+EOF
+     },
+     { from  => 1096149600, # 2004-09-26 00:00
+       until => 1117231200, # 2005-05-28 00:00
+       text  => 'K 6413; (Wriezener Straße); OL Buckow, zw. Ringstr. u. Weinbergsweg Kanal- u. Straßenbau Vollsperrung 27.09.2004-27.05.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 55429,20127 55558,19957
+userdel	q4 55664,19342 55558,19957
+EOF
+     },
+     { from  => 1096322400, # 2004-09-28 00:00
+       until => 1097100000, # 2004-10-07 00:00
+       text  => 'K 6422; (Petershagener Str.); OL Fredersdorf, Nr. 5 u. 6; SW-Hausanschluß; Vollsperrung; 29.09.2004-06.10.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 34139,13113 34896,13562
+EOF
+     },
+     { from  => 1095717600, # 2004-09-21 00:00
+       until => 1101855600, # 2004-12-01 00:00
+       text  => 'L 17; (Königshorst-Warsow); zw. Jahnberge und Warsow Straßenbauarbeiten Vollsperrung 22.09.2004-30.11.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -40025,34118 -41261,33257
+userdel	2 -40025,34118 -39143,34187
+userdel	2 -38293,34081 -39143,34187
+EOF
+     },
+     { from  => 1095890400, # 2004-09-23 00:00
+       until => 1114898400, # 2005-05-01 00:00
+       text  => 'L 40; (Großbeeren-Güterfelde); zw. Großbeeren u. Neubeeren Neubau Bauwerk; Vollsperrung; 24.09.2004-30.04.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 2715,-6365 2443,-6309
 EOF
      },
     );

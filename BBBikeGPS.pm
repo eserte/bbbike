@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.11 2004/08/02 20:48:20 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.12 2004/09/25 22:58:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -184,7 +184,8 @@ sub BBBikeGPS::draw_gpsman_data {
 		$show_track_graph_alt
 		$show_track_graph_grade
 		$show_statistics
-		$do_center_begin);
+		$do_center_begin
+		$draw_point_names);
     $draw_gpsman_data_s = 1 if !defined $draw_gpsman_data_s;
     $draw_gpsman_data_p = 1 if !defined $draw_gpsman_data_p;
     $show_track_graph = 0   if !defined $show_track_graph;
@@ -193,6 +194,7 @@ sub BBBikeGPS::draw_gpsman_data {
     $show_track_graph_grade = 0 if !defined $show_track_graph_grade;
     $show_statistics = 0    if !defined $show_statistics;
     $do_center_begin = 0    if !defined $do_center_begin;
+    $draw_point_names = 0   if !defined $draw_point_names;
 
     my $file = $gpsman_last_dir || Cwd::cwd();
     my $weiter = 0;
@@ -343,6 +345,8 @@ EOF
 		 -sticky => "w");
 	$update_dep->();
     }
+    $f2->Checkbutton(-text => M"Punktnamen zeichnen",
+		     -variable => \$draw_point_names)->pack(-anchor => "w");
     $f2->Checkbutton(-text => M"Statistik zeigen",
 		     -variable => \$show_statistics)->pack(-anchor => "w");
     $f2->Checkbutton(-text => M"Auf Anfang zentrieren",
@@ -453,11 +457,20 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	my($x0,$y0) = ($main::coord_system eq 'standard' ? ($x,$y) : map { int } $Karte::map{"polar"}->map2standard($wpt->Longitude, $wpt->Latitude));
 	my $alt = $wpt->Altitude;
 	my $acc = $wpt->Accuracy;
-	my $l = [$base . "/" . $wpt->Ident . "/" . $wpt->Comment .
-		 (defined $alt ? " alt=".sprintf("%.1fm",$alt) : "") .
-		 " long=" . Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($wpt->Longitude)) .
-		 " lat=" . Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($wpt->Latitude)),
-		 ["$x,$y"], "#0000a0"];
+	my $pointname;
+	if ($draw_point_names) {
+	    $pointname = $wpt->Ident;
+	    if (defined $wpt->Comment && $wpt->Comment ne "") {
+		$pointname .= "/" . $wpt->Comment;
+	    }
+	} else {
+	    $pointname =
+		$base . "/" . $wpt->Ident . "/" . $wpt->Comment .
+		    (defined $alt ? " alt=".sprintf("%.1fm",$alt) : "") .
+			" long=" . Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($wpt->Longitude)) .
+			    " lat=" . Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($wpt->Latitude));
+	}
+	my $l = [$pointname, ["$x,$y"], "#0000a0"];
 	$s->push($l);
 	if ($s_speed) {
 	    my $time = $wpt->Comment_to_unixtime;
@@ -613,7 +626,11 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	    $real_outfile = $outfile . "-orig";
 	}
 	$s->write($real_outfile);
-	main::plot_layer('p',$outfile);
+	my %args;
+	if ($draw_point_names) {
+	    $args{NameDraw} = 1;
+	}
+	main::plot_layer('p',$outfile, %args);
     }
 }
 

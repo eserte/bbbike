@@ -1,6 +1,6 @@
-# $Id: handicap_s-orig,v 4.8 2004/08/28 23:25:47 eserte Exp eserte $
+# $Id: handicap_s-orig,v 4.9 2004/09/25 22:55:59 eserte Exp eserte $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-Müggelseedamm Erkner Richtung Köpenick zwischen Fürstenwalder Damm (Ost) und Bölschestraße wegen Bauarbeiten gesperrt (bis 15.09.2004)	q4::inwork; 28195,5141 27427,5188 27215,5200 26964,5039 26625,4958 26277,4957 25960,4839 25801,4831 25742,4835 25541,4845
+#XXX del? Müggelseedamm Erkner Richtung Köpenick zwischen Fürstenwalder Damm (Ost) und Bölschestraße wegen Bauarbeiten gesperrt (bis 15.09.2004)	q4::inwork; 28195,5141 27427,5188 27215,5200 26964,5039 26625,4958 26277,4957 25960,4839 25801,4831 25742,4835 25541,4845
 #XXX del Alt-Biesdorf, Berlin-Mitte Richtung Berlin-Biesdorf, Zwischen Märkische Allee und Köpenicker Straße wegen Bauarbeiten gesperrt bis 15.08.	q4::inwork; 20115,11730 20368,11711 20575,11698 21106,11651
 Wassersportallee (Grünau), Richtung Regattastraße zwischen Ammerseestraße und Regattastraße Baustelle Straße vollständig gesperrt (bis 2005-01-31)	q4::inwork; 22449,1281 22663,1441
 #XXX Meldung aufgehoben? Mauerstraße, zwischen Jägerstraße und Mohrenstraße, Baustelle, Straße gesperrt. Dauer: 17.05.2004 08.00 Uhr bis 30.09.2004 18:00 Uhr	q4::inwork 9108,11961 9144,11866 9173,11770
@@ -13,18 +13,18 @@ Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
 #XXX nicht mehr lange?
 Voßstr.: Bauarbeiten an der Ebertstr.	q3::inwork 8553,11638 8837,11676
 Gärtnerstraße, Richtung Rhinstraße, zwischen Konrad-Wolf-Straße und Rhinstraße: Straßenarbeiten, gesperrt (bis 15.12.2004)	q4::inwork; 16872,15827 17080,15779 17379,15781 17489,15781
-Naumannstr.: Bauarbeiten, eine Richtung gesperrt. Dauer: 27.10.2003, 14.00 Uhr bis 30.11.2004	q4::inwork; 7717,7759 7716,8048
+#XXX del Naumannstr.: Bauarbeiten, eine Richtung gesperrt. Dauer: 27.10.2003, 14.00 Uhr bis 30.11.2004	q4::inwork; 7717,7759 7716,8048
 Wilhelmstr.: Fahrbahn vor der britischen Botschaft gesperrt	q4 8851,12123 8804,12280
 Tucholskystr.: Einbahnstr., Richtung Süden gesperrt	q4; 9654,13397 9605,13248
 # früher wurde 2005-03-00 als Ende genannt, und dann 19.9.2004, dann 19.9.2005, dann 15.9.2004, dann wieder Mitte 2005 (noch nicht geändert)...
-Regattastraße, zwischen Wassersportallee und Grünauer Straße/Bohnsdorfer Straße, Einrichtung als Einbahnstraße Richtung Grünauer Straße. Baumaßnahmen. Dauer: 12.01.2004 bis vorraussichtlich 15.09.2005	q4; 22074,2666 22421,1872 22663,1441
+#XXX del Regattastraße, zwischen Wassersportallee und Grünauer Straße/Bohnsdorfer Straße, Einrichtung als Einbahnstraße Richtung Grünauer Straße. Baumaßnahmen. Dauer: 12.01.2004 bis vorraussichtlich 15.09.2005	q4; 22074,2666 22421,1872 22663,1441
 Prenzlauer Promenade, zw. Am Steinberg und Ostseestr. Baustelle, Sperrung stadteinwärts an Elsa-Brandström-Straße. Umleitung: Elsa-Brandström -Straße - Neumannstraße - Wisbyer Straße bis 15.06.2005	q4::inwork; 12012,16752 12046,16568 12054,16517 12097,16263 12091,16209
 #XXX del (nach Ortstermin): Wichertstr. Prenzlauer Berg, Richtung Schönhauser Allee nach Prenzlauer Allee Baustelle, 2 Fahrstreifen gesperrt, eine Umleitung ist eingerichtet bis 30.06.	q4::inwork; 9889,6029 9968,6085
 #XXX del? Köpenicker Str. (Köpenick) in beiden Richtungen am S-Bahnhof Wulheide Baustelle, Straße gesperrt, Umleitung: eine Umleitung ist eingerichtet (bis 25.06.2004)	q4::inwork 13443,9527 13424,9563
 Bitterfelder Straße (Marzahn) Richtung Märkische Allee, Höhe S-Bahn-Brücke Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 2004-09-30)	q4::inwork; 19903,16632 20230,16560
 #XXX del? Gartenstraße zwischen Torstraße und Schröderstraße in beiden Richtungen gesperrt. Asphaltarbeiten. Ab 29.03.2004, 07.00 Uhr bis ?	q4::inwork 9668,13629 9383,13978
 #XXX del Rathausstr./Alarichstr. (Schöneberg) in beiden Richtungen zwischen Kreuzung Ringstr. und Attilaplatz Baustelle, Straße vollständig gesperrt (bis 16.05.2004) (14:36)	q4::inwork 8606,5496 8707,5289 8750,5173 8772,5081 8801,4993 8838,4668 8862,4462 8877,4356 8967,4082 9021,3878
-Jerusalemer Str. (Mitte) Richtung Norden zwischen Leipziger Str. und Hausvogteiplatz Baustelle, Richtungsfahrbahn Richtung Süden gesperrt, Einbahnstraßenregelung (bis Juni 2005)	q4::inwork; 9878,11857 9892,11752 9899,11670
+Jerusalemer Str. (Mitte) Richtung Norden zwischen Leipziger Str. und Hausvogteiplatz Baustelle, Richtungsfahrbahn Richtung Süden gesperrt, Einbahnstraßenregelung (bis Ende September 2004)	q4::inwork; 9878,11857 9892,11752 9899,11670
 #: XXX Diese Meldung kommt und geht ... mal bis Ende 08.2004 ..., mal bis Ende des Jahres
 Saatwinkler Damm (Spandau) in beiden Richtungen zwischen Rohrdamm und Gartenfelder Str. Baustelle, Straße vollständig gesperrt (bis 30.09.2004)	q4::inwork -303,15526 468,15640
 #XXX del Lückstraße Berlin-Friedrichsfelde Richtung Berlin-Friedrichshain Zwischen Rummelsburger Straße und Schlichtallee wegen Bauarbeiten gesperrt bis 14.05.	q4::inwork 16032,10842 16153,10818 16460,10699 16655,10622

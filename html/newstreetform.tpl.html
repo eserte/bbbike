@@ -34,8 +34,8 @@
        [%- inputname = "${cat}${type}_1" -%]
        <td><input style="margin-right:1em;" type="radio" name="[% inputname %]" value="[% val | html %]"
         [%- INCLUDE radio_checked %] /></td>
-       <td>[% IF text %][% text | html %][% ELSE %][% val | html %][% END %]
-[% IF entryname %]<input name="[% entryname %]_1" [% INCLUDE text_default inputname=entryname %] />[% END %]
+       <td>[% IF text %][% text | html_line_break %][% ELSE %][% val | html_line_break %][% END %]
+[% IF entryname %]<input name="[% entryname %]_1" [% INCLUDE text_default inputname=entryname _ "_1" %] />[% END %]
        </td>
       </tr>
 [% END -%]
@@ -139,7 +139,7 @@ function init() {
     <td>
      <table cellpadding="0" cellspacing="0">
 [% INCLUDE colhead text="Eingeschränkte Geschwindigkeit:" %]
-[% INCLUDE radiocell cat="q" type="cat" val="q0" text="keine" %]
+[% INCLUDE radiocell cat="q" type="cat" val="q0" text="keine für Radfahrer relevante Einschränkung;\n30 km/h oder mehr möglich" %]
 [% INCLUDE radiocell cat="q" type="cat" val="q1" text="bis 25 km/h" %]
 [% INCLUDE radiocell cat="q" type="cat" val="q2" text="bis 18 km/h" %]
 [% INCLUDE radiocell cat="q" type="cat" val="q3" text="bis 13 km/h" %]
