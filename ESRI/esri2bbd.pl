@@ -23,14 +23,26 @@ my $dbfinfo;
 my $dbfcol;
 my $forcelines;
 my $do_int;
-GetOptions("dbfinfo=s"	 => \$dbfinfo,
-	   "dbfcol=i"    => \$dbfcol,
-	   "forcelines!" => \$forcelines,
-	   "int|integer!"=> \$do_int,
-	  );
+if (!GetOptions("dbfinfo=s"	 => \$dbfinfo,
+		"dbfcol=i"    => \$dbfcol,
+		"forcelines!" => \$forcelines,
+		"int|integer!"=> \$do_int,
+	       )) {
+    usage();
+}
 
-my $from = shift or die "ESRI file?";
-my $to   = shift or die "Output file?";
+sub usage {
+    my $msg = shift;
+    if (eval q{ require Pod::Usage; 1; }) {
+	Pod::Usage::pod2usage(2);
+    } else {
+	$msg = "usage?" if !$msg;
+	die $msg;
+    }
+}
+
+my $from = shift or usage("ESRI file missing");
+my $to   = shift or usage("Output file missing");
 
 my $shapefile = new ESRI::Shapefile;
 $shapefile->set_file($from);
@@ -48,3 +60,49 @@ sub do_int {
 }
 
 __END__
+
+=head1 NAME
+
+esri2bbd.pl - convert ESRI shapefiles to bbd data
+
+=head1 SYNOPSIS
+
+    esri2bbd.pl [-dbfinfo string] [-dbfcol columnindex] [-forcelines] [-int]
+                esrifile bbdfile
+
+=head1 DESCRIPTION
+
+B<esri2bbd.pl> converts an ESRI shapefile into a bbbike data file
+(bbd). The options are:
+
+=over
+
+=item -dbfinfo string
+
+Use an optional dbase database to get attribute information. I<string>
+has to be C<NAME>.
+
+=item -dbfcol columnindex
+
+Use the specified column from the dbase database to set the "name"
+attribute of the generated bbd file.
+
+=item -forcelines
+
+Force all polygons into lines.
+
+=item -int
+
+Convert coordinates from float into integers.
+
+=back
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<ESRI::Shapefile>, L<BBBikeESRI>, L<bbbike>.
+
+=cut
