@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi2.pl,v 1.5 2005/02/28 08:25:58 eserte Exp $
+# $Id: cgi2.pl,v 1.6 2005/03/02 08:09:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -36,6 +36,7 @@ my $cgiurl = "http://www/bbbike/cgi/bbbike.cgi";
 #my $logfile = "$ENV{HOME}/www/AccessLog";
 my $logfile = "$ENV{HOME}/www/log/radzeit.combined_log";
 my $filter;
+my $only_result;
 my %add_param;
 
 GetOptions('seek=i'       => \$seek,
@@ -54,9 +55,11 @@ GetOptions('seek=i'       => \$seek,
 	   "logfile=s"    => \$logfile,
 	   "filter=s"     => \$filter,
 	   "addparam=s"   => \%add_param,
+	   "onlyresult!"  => \$only_result,
 	  ) or die <<EOF;
 usage: $0 [many options]
 -addparam key=value: add a key-value CGI parameter to all requests, e.g. pref_fragezeichen=yes
+-onlyresult: show only pages with the search result
 EOF
 
 if ($sgml_check) {
@@ -112,6 +115,7 @@ while(<LOG>) {
 	my $qs = $1;
 	next if (defined $filter && !/$filter/o);
 	next if m{\"BBBike-Test/\d+\.\d+\"}; # ignore my tests
+	next if $only_result && !has_params_for_search($qs);
 	push @requests, $qs; #XXX? uri_unescape($1);
 	push @req_lines, $_ if $netscape;
     }
@@ -224,6 +228,21 @@ for my $i (0 .. $#requests) {
 	    }
 	}
     }
+}
+
+sub has_params_for_search {
+    my($query_string) = @_;
+    my %has;
+    for my $type (qw(start via ziel)) {
+	if ($query_string =~ /${type}c=([^&; ]+)/) {
+	    my $coords = uri_unescape(uri_unescape($1));
+	    next if $coords =~ /^\s*$/;
+	    if ($type =~ /(?:start|ziel)/) {
+		$has{$type}++;
+	    }
+	}
+    }
+    $has{start} && $has{ziel};
 }
 
 # REPO BEGIN

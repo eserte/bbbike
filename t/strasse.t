@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strasse.t,v 1.3 2005/02/27 23:31:36 eserte Exp $
+# $Id: strasse.t,v 1.4 2005/03/01 23:45:11 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -64,6 +64,8 @@ my @beautify_landstrasse =
       "(B104 - Milow - Schönwerder -) B198", "(B198 - Schönwerder - Milow -) B104"],
      ["Alt-Golm - Saarow" =>
       "(Alt-Golm -) Saarow", "(Saarow -) Alt-Golm"],
+     ["(Möllendorffstr. - Karl-Lade-Str.)" =>
+      "((Möllendorffstr. -) Karl-Lade-Str.)", "(Karl-Lade-Str. -) Möllendorffstr.)", "XXX"],
     );
 
 plan tests => scalar(@split_street_citypart) + scalar(@beautify_landstrasse)*2;

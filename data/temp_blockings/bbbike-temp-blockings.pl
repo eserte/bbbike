@@ -1433,9 +1433,9 @@ userdel	2 14994,5193 15174,5463
 userdel	2 15174,5463 15373,5675
 EOF
      },
-     { from  => 1110409200, # 2005-03-10 00:00
-       until => 1110754800, # 2005-03-14 00:00
-       text  => 'L 24; (AS Pfingstberg-Gerswalde); Bereich AS Pfingstberg, Brücke A 11 Brückenabruch Vollsperrung 11.03.2005-13.03.2005 ',
+     { from  => 1111014000, # 2005-03-17 00:00
+       until => 1111359600, # 2005-03-21 00:00
+       text  => 'L 24; (AS Pfingstberg-Gerswalde); Bereich AS Pfingstberg, Brücke A 11 Brückenabruch Vollsperrung 18.03.2005-20.03.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 41292,81052 41593,80703

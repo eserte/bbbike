@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.9 2005/02/27 23:28:31 eserte Exp $
+# $Id: bbbike.cgi,v 7.11 2005/03/02 00:25:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -82,7 +82,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $strcat_net $radwege_strcat_net $routen_net $comments_net
 	    $comments_points $green_net
 	    $crossings $kr $plz $net $multi_bez_str
-	    $overview_map
+	    $overview_map $city
 	    $use_umland $use_umland_jwd $use_special_destinations $use_fragezeichen
 	    $check_map_time $use_cgi_bin_layout
 	    $show_weather $show_start_ziel_url @weather_cmdline
@@ -493,6 +493,15 @@ $use_coord_link = 1;
 
 =over
 
+=item $city
+
+The city/country key. Default is Berlin_DE. A same named module as
+Geography::I<$city> should exist.
+
+=cut
+
+$city = "Berlin_DE";
+
 =item $use_umland
 
 Experimental: search in the region. Default: false.
@@ -645,7 +654,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.11 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3061,7 +3070,7 @@ sub search_coord {
 		= ($next_entf, $next_winkel, $next_richtung);
 	    ($strname, $next_entf, $next_winkel, $next_richtung,
 	     $route_inx) = @{$strnames[$i]};
-	    $strname = Strasse::strip_bezirk($strname);
+	    $strname = Strasse::strip_bezirk_perfect($strname, $city);
 	    if ($i > 0) {
 		if (!$winkel) { $winkel = 0 }
 		$winkel = int($winkel/10)*10;
@@ -3082,12 +3091,12 @@ sub search_coord {
 		$entf_s = sprintf "nach %.2f km", $entf/1000;
 	    } elsif ($#{ $r->path } > 1) {
 		# XXX main:: ist haesslich
+		my($x1,$y1) = @{ $r->path->[0] };
+		my($x2,$y2) = @{ $r->path->[1] };
 		$raw_direction =
-		    uc(#main::opposite_direction #XXX why???
 		       (main::line_to_canvas_direction
-			(@{ $r->path->[0] },
-			 @{ $r->path->[1] })));
-		$richtung = "nach " . $raw_direction;
+			($x1,$y1,$x2,$y2));
+		$richtung = "nach " . localize_direction($raw_direction, "de");
 	    }
 
 	    if ($with_comments && $comments_net) {
@@ -5305,6 +5314,23 @@ sub load_teaser {
        }; warn $@ if $@;
 }
 
+# move to another module?
+sub localize_direction {
+    my($dir, $lang) = @_;
+    if ($lang eq 'de') {
+	$dir = { "n" => "Norden",
+		 "ne" => "Nordosten",
+		 "nw" => "Nordwesten",
+		 "e" => "Osten",
+		 "s" => "Süden",
+		 "se" => "Südosten",
+		 "sw" => "Südwesten",
+		 "w" => "Westen",
+	       }->{$dir};
+    }
+    $dir;
+}
+
 ######################################################################
 #
 # Information
@@ -5510,7 +5536,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/02/27 23:28:31 $';
+    my $cgi_date = '$Date: 2005/03/02 00:25:44 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.11 2005/02/27 23:29:32 eserte Exp $
+# $Id: Strasse.pm,v 1.12 2005/03/01 23:35:46 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -221,6 +221,30 @@ sub strip_bezirk {
     if ($str !~ /^\s*\(/) {
 	$str =~ s/\s*\([^\)]+\)\s*$//;
     }
+    $str;
+}
+
+my %city2subparts;
+sub strip_bezirk_perfect {
+    my($str, $city) = @_;
+    if (!exists $city2subparts{$city}) {
+	my $mod = qq{Geography::} . $city;
+	eval qq{ require $mod };
+	if ($@) {
+	    $Strassen::DEBUG = $Strassen::DEBUG; # peacify -w
+	    warn $@ if $Strassen::DEBUG;
+	    return strip_bezirk($str);
+	}
+	$city2subparts{$city} = { map {($_,1)} $mod->get_all_subparts };
+    }
+    $str =~ s{\((.*?)\)}{
+	my $bezirke = $1;
+	my @bezirke = grep { !exists $city2subparts{$city}->{$_} }
+	              split /,\s*/, $bezirke;
+	@bezirke ? "(" . join(", ", @bezirke) . ")" : "";
+    }e;
+    $str =~ s/\s+$//;
+    $str =~ s/\s+/ /g;
     $str;
 }
 

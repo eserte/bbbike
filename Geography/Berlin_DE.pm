@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.13 2003/12/22 19:45:28 eserte Exp $
+# $Id: Berlin_DE.pm,v 1.14 2005/03/01 23:26:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -114,6 +114,9 @@ sub get_cityparts_for_supercitypart {
 
 sub get_all_subparts { # ... recursive
     my($class, $name) = @_;
+    if (!defined $name) {
+	return map { $class->get_all_subparts($_) } $class->cityparts;
+    }
     my %res = ($name => undef);
     if (exists $cityparts{$name}) {
 	foreach my $cp (@{ $cityparts{$name} }) {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.148 2005/01/08 12:02:09 eserte Exp eserte $
+# $Id: bbbike,v 3.149 2005/03/02 00:25:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -213,7 +213,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.148 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.149 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -14013,7 +14013,7 @@ sub show_route_strname {
 		      = m2km($ges_entf);
 		}
 	    } elsif (@coords > 1) {
-		my $compass = uc(opposite_direction(line_to_canvas_direction
+		my $compass = uc(canvas_translation(line_to_canvas_direction
 						    (@{ $coords[0] }, @{ $coords[1] })));
 		if (defined $Msg::lang && $Msg::lang =~ /^en/) {
 		    $compass =~ s/([NESW])/{N => 'north',

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCalc.pm,v 1.9 2003/01/08 18:45:40 eserte Exp $
+# $Id: BBBikeCalc.pm,v 1.10 2005/03/02 00:25:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
@@ -18,7 +18,8 @@ package main; # warum notwendig? irgendwann konnte bbbike.cgi nicht mehr ohne..
 use BBBikeUtil;
 use strict;
 use vars qw(@INC @EXPORT_OK
-	    %opposite %wind_dir $winddir $wind_dir_from $wind_dir_to $wind);
+	    %opposite %canvas_translation
+	    %wind_dir $winddir $wind_dir_from $wind_dir_to $wind);
 
 #XXX irgendwann:
 #  require Exporter;
@@ -42,6 +43,18 @@ use constant CAKE => atan2(1,1)/2;
 
 %opposite =
     ('n' => 's',
+     'e' => 'e',
+     'w' => 'w',
+     's' => 'n',
+     'ne' => 'se',
+     'sw' => 'nw',
+     'nw' => 'sw',
+     'se' => 'ne');
+sub opposite_direction { $opposite{$_[0]} }
+
+# to translate between y-up and y-down coordinate systems
+%canvas_translation =
+    ('n' => 's',
      'e' => 'w',
      'w' => 'e',
      's' => 'n',
@@ -49,7 +62,7 @@ use constant CAKE => atan2(1,1)/2;
      'sw' => 'ne',
      'nw' => 'se',
      'se' => 'nw');
-sub opposite_direction { $opposite{$_[0]} }
+sub canvas_translation { $canvas_translation{$_[0]} }
 
 sub init_wind {
     #        Windrichtung  y   x
@@ -114,30 +127,29 @@ sub head_wind { # returns +2 for back wind and -2 for head wind
     +2;
 }
 
-# XXX ist es richtigrum?
 sub line_to_canvas_direction {
     my($x1,$y1, $x2,$y2) = @_;
     my $arc = norm_arc(atan2($y2-$y1, $x2-$x1));
     if ($arc >= - CAKE && $arc <= CAKE) {
-	'w';
+	'e';
     } elsif ($arc <= CAKE*3) {
-	'nw';
+	'ne';
     } elsif ($arc <= CAKE*5) {
 	'n';
     } elsif ($arc <= CAKE*7) {
-	'ne';
+	'nw';
     } elsif ($arc <= CAKE*9) {
-	'e';
+	'w';
     } elsif ($arc <= CAKE*11) {
-	'se';
+	'sw';
     } elsif ($arc <= CAKE*13) {
 	's';
     } elsif ($arc <= CAKE*15) {
-	'sw';
+	'se';
     } elsif ($arc <= CAKE*17) {
-	'w';
+	'e';
     } elsif ($arc <= CAKE*19) {
-	'nw';
+	'ne';
     } elsif ($arc <= CAKE*21) {
 	'n';
     } else {

@@ -50,6 +50,7 @@ Autotunnel wird im Frühjahr 2005 zugeschüttet	?::inwork 5652,11004 5716,10978 58
 #: section ignorieren vvv
 # Hier kommen die Strecken herein, die nicht bei einer
 # erweiterten Suche aufgenommen werden sollen.
+Naumannstr. -> Sachsendamm: Überquerung möglich, aber hohe Penalty einplanen	? 7718,7641 7717,7564 7859,7486
 Viktoriapark, Katzbachstr. über das Denkmal zur Methfesselstr.: Weg wird aufgenommen, wenn bbbike.cgi Steigungen kann	? 8598,9061 8884,9078 8901,9104 8943,9098 8962,9048 9106,9038
 Viktoriapark, Kreuzbergstr. zur Methfesselstr.: Weg wird aufgenommen, wenn bbbike.cgi Steigungen kann	? 9141,9142 8973,9171 9007,9264 8955,9318
 # http://www.agenda21berlin.de/vonwegen/map_tmpvelo.htm
@@ -92,7 +93,7 @@ Waldweg über den Beyschlagtunnel: befahrbar, Qualität?	? 506,22266 742,22666
 Soldiner Str.: laut ADFC mäßig geeignet	? 9096,16976 9317,16882 9604,16760
 Pankeweg durch Wedding: Durchfahrt möglich? Qualität?	?? 8153,14769 8235,14835 8270,15233 8348,15474 8155,15648 8158,15850 8359,16271 8675,16518 8983,17195 9165,17910 9310,18108
 Weg am Tegeler Fließ: Durchfahrt möglich? Qualität, wahrscheinlich Waldweg Q2?	?? 7639,24383 6966,24090 6329,23969 6083,24107 5678,24021 5402,23949 5117,23654 5126,23484 5059,23186 4774,22987 4416,22891 4208,22866 4144,22756 3898,22581 3804,22391 3636,22368 3443,22201 3372,22088 3139,22201 2653,21993 2504,21768 2321,21532 2072,21339 1914,21508
-Ist die alte Verbindung Hermsdorfer Damm - Heiligenseestr. noch vorhanden?	?? 1835,21427 1470,21205
+Ist die alte Verbindung Hermsdorfer Damm zur Heiligenseestr. noch vorhanden?	?? 1835,21427 1470,21205
 Landsberger Allee/Dahmeweg/Wiesenburger Weg: Sind die Zugänge vorhanden, Einbahnstraßen?	? 19329,14897 19283,14982 19280,15014 19472,15184
 Dorfstr./Seenpromenade Groß Glienicke: Durchfahrt möglich? Kopfsteinpflaster?	? -9449,7005 -9741,6106 -9797,5374 -9686,5268 -9678,4913
 Verbindung zwischen Siegfriedstr. und Frankfurter Allee: Durchfahrt möglich? Oder nur für Fußgänger? Treppe?	? 16746,11921 16738,11878
@@ -232,7 +233,7 @@ Basdorf - Bernauer Heide: passierbar (Bahnstrecke), Qualität, Kfz-los?	? 12887,3
 Schwedter Steg - Norwegerstr.: flachere Rampe ist in Bau, bereits fertig?	? 10078,16164 10033,16232
 Zugbrücke/Schleuse?	? 35066,4548
 Zugbrücke?	? 32737,183789
-Holsteiner Ufer abfahren, Verbindung zur Lessingstr. für Radfahrer? Am S-Bhf. Bellevue mit Kopfsteinpflaster (Q1)	? 6690,12637 6597,12764 6354,12870 6169,12867
+Holsteiner Ufer: Verbindung zur Lessingstr. für Radfahrer? Am S-Bhf. Bellevue mit Kopfsteinpflaster (Q1)	? 6690,12637 6597,12764 6354,12870 6169,12867
 Uferweg an der Kongreßhalle noch in Bau	?::inwork 7775,12631 7670,12576
 Verlängerung der Paul-Löbe-Str. Richtung Kongreßhalle/Spree noch in Bau	?::inwork 7851,12590 7670,12576
 Alexanderufer: Existiert diese Verbindung bereits?	? 8259,13009 8312,13296 8378,13425 8337,13541
@@ -462,7 +463,6 @@ Wuhlewanderweg - Alte/Hellerdorfer Str.: Durchfahrt für Radfahrer möglich? Quali
 Bäkepromenade: Qualität? Existiert eine Verbindung?	? -2618,-1473 -2800,-1484 -2802,-1636
 Krausnick - Brand: Durchfahrt möglich? (Laut lbvs Vollsperrung)	? 40398,-40989 35175,-41012 33108,-41767
 B1 bei Seelow: hier entsteht B1neu, wo genau?	? 74350,14100 74787,13362
-Naumannstr. -> Sachsendamm: Überquerung möglich, aber hohe Penalty einplanen	? 7718,7641 7717,7564 7859,7486
 Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2034,55227 -285,58256
 Rallenweg: Qualität?	? -2307,20958 -1978,20928
 Fregestr.: Qualität?	? 5897,6799 5957,6889 5958,7220 5955,7406
