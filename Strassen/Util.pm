@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.11 2003/05/16 22:16:13 eserte Exp eserte $
+# $Id: Util.pm,v 1.12 2003/06/02 23:07:58 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the

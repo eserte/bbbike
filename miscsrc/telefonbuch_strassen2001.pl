@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: telefonbuch_strassen2001.pl,v 1.6 2002/03/14 21:57:30 eserte Exp $
+# $Id: telefonbuch_strassen2001.pl,v 1.8 2003/06/02 23:04:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.

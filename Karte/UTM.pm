@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: UTM.pm,v 1.8 2003/02/06 21:53:01 eserte Exp eserte $
+# $Id: UTM.pm,v 1.8 2003/02/06 21:53:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.20 2003/05/09 03:58:03 eserte Exp eserte $
+# $Id: BBBikePrint.pm,v 1.21 2003/06/02 23:15:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -297,7 +297,7 @@ sub draw_legend {
 			'b' => [qw(SA SB SC)],
 			'l' => [qw(B HH H N NN)], # XXX BAB
 			'w' => 'W',
-			'f' => [qw(P Ae)], # XXX geht nicht fürs Anklicken
+			'f' => [qw(P Ae)], # Pabove not needed # XXX geht nicht fürs Anklicken
 			'v' => 'F', # XXX ???
 			'qs' => [qw(Q0 Q1 Q2 Q3)],
 			'ql' => [qw(Q0 Q1 Q2 Q3)],

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Salesman.pm,v 1.10 2003/01/17 19:33:42 eserte Exp eserte $
+# $Id: Salesman.pm,v 1.11 2003/06/02 23:22:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2003 Slaven Rezic. All rights reserved.
@@ -22,7 +22,7 @@
 
 package Salesman;
 BEGIN {
-    eval 'use Algorithm::Permute 0.05; 1'; # XXX 0.06
+    eval 'use Algorithm::Permute 0.05; die "Problems with A::P!"; 1';
     if ($@) {
 	warn "$@, fallback to List::Permutor";
 	eval 'use List::Permutor;';

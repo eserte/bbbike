@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Tk50.pm,v 1.3 2003/04/17 19:38:03 eserte Exp eserte $
+# $Id: Tk50.pm,v 1.4 2003/06/02 23:07:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.

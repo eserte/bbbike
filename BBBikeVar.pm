@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.23 2003/05/19 05:50:23 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.23 2003/05/19 05:50:23 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2001 Slaven Rezic. All rights reserved.
@@ -39,7 +39,7 @@ $BBBIKE_SF_WWW	   = 'http://bbbike.sourceforge.net';
 # URLs for data update
 $BBBIKE_UPDATE_WWW = "http://bbbike.sourceforge.net/bbbike";
 #$BBBIKE_UPDATE_RSYNC = 'rsync://www.radzeit.de/bbbike/'; # not yet XXX
-$BBBIKE_UPDATE_DATA_RSYNC = 'rsync://www.radzeit.de/bbbike_data/';
+#$BBBIKE_UPDATE_DATA_RSYNC = 'rsync://www.radzeit.de/bbbike_data/'; # XXX not yet
 
 # WAP version
 $BBBIKE_WAP	   = 'http://www.radzeit.de/cgi-bin/wapbbbike.cgi';
@@ -56,7 +56,7 @@ $DIPLOM_URL        = 'http://user.cs.tu-berlin.de/~eserte/diplom/';
 
 $BBBIKE_MAPSERVER_URL  = 'http://www.radzeit.de/cgi-bin/mapserv';
 $BBBIKE_MAPSERVER_ADDRESS_URL = 'http://www.radzeit.de/cgi-bin/mapserver_address.cgi';
-#XXX zurzeit nicht ansprechbar
+#XXX evtl. link unter www.bbbike.de einrichten
 $BBBIKE_MAPSERVER_INIT = 'http://www.radzeit.de/mapserver/brb/';
 
 1;

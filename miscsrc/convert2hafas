@@ -91,6 +91,7 @@ my $infile = 0;
 my($do_ampelschaltung, $do_ampelschaltung2);
 my $data_from_file;
 my $data_from_bbd_file;
+my $strict;
 if (!GetOptions("bahnhof=s"        => \$bahnhof,
 		"specborder=s"     => \$specborder,
 		"specsperre=s"     => \$specsperre,
@@ -103,6 +104,7 @@ if (!GetOptions("bahnhof=s"        => \$bahnhof,
 		'infile!'          => \$infile,
 		"datafromfile=s"   => \$data_from_file,
 		"datafrombbd|datafrombbdfile=s"   => \$data_from_bbd_file,
+		"strict!"          => \$strict,
 	       )) {
     usage("Wrong option");
 }
@@ -225,12 +227,21 @@ LINES: while(defined($_ = nextline())) {
     my @specborder_list;
     my $specborder_flag = 0;
     my($name, $rest) = split(/\t/, $_);
+    if ($strict && (!defined $rest || $rest eq '')) {
+	die "Uncomplete line $_";
+    }
     if (defined $append) {
 	$name .= " ($append)";
+    }
+    if ($strict && $rest =~ /(^\s|\s$)/) {
+	die "Leading or trailing space in coordinates, line $_";
     }
     my(@coord) = split(/ /, $rest); # nur nach Space trennen (160 kein Trennzeichen)
     if (!@coord) {
 	$no_coords++;
+	if ($strict) {
+	    die "No coords in line $_";
+	}
     }
     my $cat = shift @coord;
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 1.4 2003/06/01 21:43:45 eserte Exp $
+# $Id: bbbike.cgi,v 6.25 2003/06/02 22:53:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -636,7 +636,7 @@ use vars qw(@ISA);
 
 } # jetzt beginnt wieder package main
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.25 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!

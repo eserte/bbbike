@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.4 2003/06/01 21:46:06 eserte Exp $
+# $Id: LogTracker.pm,v 1.5 2003/06/02 23:01:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ use vars qw($VERSION $lastcoords
             $layer @colors $colors_i @accesslog_data
 	    $do_search_route $ua $safe
             $logfile $tracking $tail_pid $bbbike_cgi);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 use URI::Escape;
 use Strassen::Core;

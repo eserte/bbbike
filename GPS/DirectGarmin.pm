@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.19 2003/01/08 15:49:12 eserte Exp eserte $
+# $Id: DirectGarmin.pm,v 1.20 2003/06/02 23:24:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.

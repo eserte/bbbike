@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.43 2003/01/08 20:05:09 eserte Exp eserte $
+# $Id: PLZ.pm,v 1.44 2003/06/02 23:21:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ use vars qw($PLZ_BASE_FILE @plzfile $OLD_AGREP $VERSION $VERBOSE $sep);
 use locale;
 use BBBikeUtil;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.43 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)

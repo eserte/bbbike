@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.22 2003/02/16 14:34:52 eserte Exp eserte $
+# $Id: GpsmanData.pm,v 1.23 2003/06/02 23:24:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN {
 }
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_WAYPOINT => 0;
 use constant TYPE_TRACK    => 1;

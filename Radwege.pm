@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Radwege.pm,v 1.13 2003/05/10 19:30:50 eserte Exp eserte $
+# $Id: Radwege.pm,v 1.14 2003/06/02 23:21:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
