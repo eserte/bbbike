@@ -141,7 +141,7 @@ sub interesting_parts {
 	    my $hash = $orte->get_hashref_name_to_pos;
 	    my $get_coord = sub {
 		my $ort = shift;
-		$orte->get($hash->{$ort}->[0])->[Strassen::COORDS][0];
+		$orte->get($hash->{$ort}->[0])->[Strassen::COORDS()][0];
 	    };
 	    require Karte;
 	    $obj = Karte::object_from_data
