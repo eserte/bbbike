@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.6 2003/07/22 23:28:24 eserte Exp $
+# $Id: Strasse.pm,v 1.6 2003/07/22 23:28:24 eserte Exp eserte $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -123,11 +123,21 @@ sub beautify_landstrasse {
 	    $str_nummer = $1;
 	    $str = $2;
 	}
-	my(@comp) = ($backwards ?
-		     reverse split(/\s-\s/, $str) :
-		     split(/\s-\s/, $str));
+	my(@comp) = split /\s-\s/, $str;
+	my $add_parens = 0;
+	if ($backwards) {
+	    if ($comp[0] =~ /^\(/ && $comp[-1] =~ /\)$/) {
+		$comp[0] =~ s/^\(//;
+		$comp[-1] =~ s/\)$//;
+		$add_parens = 1;
+	    }
+	    @comp = reverse @comp;
+	}
 	$str = $str_nummer . "(" . join(" - ", @comp[0..$#comp-1])
 	    . " -) " . $comp[$#comp];
+	if ($add_parens) {
+	    $str = "($str)";
+	}
     }
     $str;
 }

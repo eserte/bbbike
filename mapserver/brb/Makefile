@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.6 2003/07/10 07:50:59 eserte Exp $
+# $Id: Makefile,v 1.7 2003/07/26 22:46:56 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -80,8 +80,8 @@ MAPSERVER_DIR=		$(LOCAL_BBBIKE_DIR)/mapserver/brb
 MAPSERVER_RELURL=	/~eserte/mapserver/brb				# ***
 MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 # Relative URL to the mapserv binary:
-MAPSERVER_PROG_RELURL=	/~eserte/cgi/mapserv.cgi			# ***
-MAPSERVER_PROG_URL=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
+MAPSERVER_PROG_RELURL?=	/~eserte/cgi/mapserv.cgi			# ***
+MAPSERVER_PROG_URL?=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
 # Filesystem path of the mapserv binary:
 MAPSERVER_PROG_FSPATH?=	/home/e/eserte/www/cgi/mapserv.cgi		# ***
 IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
@@ -268,11 +268,6 @@ brb-b.map:	brb.map mkroutemap
 brb-wide.map:	brb.map mkroutemap
 	${BRBDIR}/mkroutemap -force -scope wideregion brb.map brb-wide.map
 	chmod ugo+r $@
-
-# XXX temporary:
-# zur Zeit auch kein Unterschied...
-brb-devel.map:	brb.map
-	sed -e 's/\.gif/\.png/g' < $> > $@
 
 brb-ipaq.map:
 

@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.48 2003/07/22 23:26:06 eserte Exp $
+# $Id: bbbike.cgi,v 6.50 2003/07/25 22:39:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -585,7 +585,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.48 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.50 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -1024,7 +1024,7 @@ sub choose_form {
 		    if (@files == 1) {
 			warn "Enlarge streets for umland\n" if $debug;
 			$q->param("scope", "region");
-			$str = get_streets(); # XXX maybe wideregion too?
+			$str = get_streets_rebuild_dependents(); # XXX maybe wideregion too?
 		    }
 		    $pos = $str->choose_street($strasse, $bezirk);
 		}
@@ -1261,7 +1261,7 @@ sub choose_form {
 		    if (@files == 1) {
 			warn "Enlarge streets for umland\n" if $debug;
 			$q->param("scope", "region");
-			$str = get_streets(); # XXX maybe wideregion too?
+			$str = get_streets_rebuild_dependents(); # XXX maybe wideregion too?
 		    }
 		    $pos = $str->choose_street($strasse, $bezirk);
 		}
@@ -2596,7 +2596,9 @@ sub search_coord {
 		}
 		if (@s) {
 		    $comments_net = StrassenNetz->new(MultiStrassen->new(@s));
-		    $comments_net->make_net_cat(-net2name => 1, -multiple => 1);
+		    $comments_net->make_net_cat(-obeydir => 1,
+						-net2name => 1,
+						-multiple => 1);
 		}
 	    }
 	    @path = $r->path_list;
@@ -3819,6 +3821,12 @@ sub get_streets {
 	$g_str = new MultiStrassen @f;
     }
 
+    $g_str;
+}
+
+sub get_streets_rebuild_dependents {
+    $g_str = get_streets();
+
     if ($crossings) {
 	undef $crossings;
 	all_crossings();
@@ -3952,7 +3960,7 @@ sub fix_coords {
 	    } else {
 		# Try to enlarge search region
 		$q->param("scope", "region");
-		my $str = get_streets(); # XXX enlarge to wideregion???
+		my $str = get_streets_rebuild_dependents(); # XXX enlarge to wideregion???
 		my $ret = $str->nearest_point($$varref, FullReturn => 1);
 		if ($ret) {
 		    $$varref = $ret->{Coord};
@@ -3967,7 +3975,7 @@ sub fix_coords {
 	    } else {
 		# Try to enlarge search region
 		$q->param("scope", "region");
-		get_streets(); # XXX enlarge to wideregion???
+		get_streets_rebuild_dependents(); # XXX enlarge to wideregion???
 		new_kreuzungen();
 		@nearest = $kr->nearest_loop_coord($$varref);
 		if (@nearest) {

@@ -337,7 +337,13 @@ sub convert_from_route {
 			      ) or
 				  die Mfmt("Verbindung zum GPS-Gerät <%s> fehlgeschlagen", $gps_device);
     } else {
-	$gps = bless {}, 'GPS::Garmin';
+	$gps = bless {}, 'GPS::Garmin::Dummy';
+	{
+	    package GPS::Garmin::Dummy;
+	    *handler      = sub { bless {}, 'GPS::Garmin::Dummy' };
+	    sub dummy { 0 }
+	    sub AUTOLOAD { goto &dummy }
+	}
     }
 
     my @d;

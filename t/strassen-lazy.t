@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-lazy.t,v 1.4 2003/07/24 06:25:59 eserte Exp $
+# $Id: strassen-lazy.t,v 1.5 2003/07/26 22:46:56 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -24,7 +24,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 10, todo => [5..10] }
+BEGIN { plan tests => 10 }
 
 {
     my $s = Strassen::Lazy->new("strassen");
@@ -36,7 +36,7 @@ BEGIN { plan tests => 10, todo => [5..10] }
     ok($r->[Strassen::NAME], "Dudenstr.");
 }
 
-if (0) {
+{
     my $s = MultiStrassen::Lazy->new(qw(strassen landstrassen landstrassen2));
     ok(UNIVERSAL::isa($s, "MultiStrassen::Lazy"));
     $s->get(0); # trigger realization

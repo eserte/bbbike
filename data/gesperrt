@@ -186,6 +186,7 @@ Johann-Georg-Str.	1 3108,10069 3170,10041 3347,9793
 Damaschkestr.	1 3132,10499 3013,10553
 Wundtstr.	1 2386,11183 2352,11041
 Lietzenseeufer	1 2871,11211 2831,11225 2754,11169 2644,11159 2621,11065
+Gervinusstr.	1 3587,10768 3631,10784
 Hans-Thoma-Str.	1 -12151,-768 -12258,-768 -12323,-555
 Behlertstr.	1 -12237,-427 -12195,-469 -12066,-768
 Potsdamer Damm	2 -5717,-3655 -6229,-4018
@@ -247,7 +248,6 @@ Alt-Friedrichsfelde - Robert-Uhrig-Str. (nicht passierbarer Mittelstreifen)	3 18
 Alt-Friedrichsfelde - Gensinger Str. (nicht passierbarer Mittelstreifen)	3 19005,11796 19283,11785 19144,11859
 Alt-Friedrichsfelde - Gensinger Str. (nicht passierbarer Mittelstreifen)	3 19144,11859 19005,11796 19283,11785
 Märkische Allee - Weißenhöher Weg (nicht passierbarer Mittelstreifen)	3 19802,11794 19693,11762 19827,11686
-Gervinusstr./Lewishamstr.	3 3587,10768 3631,10784 3839,10904
 Gervinusstr./Lewishamstr.	3 3839,10904 3631,10784 3587,10768
 Sybelstr./Lewishamstr.	3 3712,10566 3739,10576 3644,10759
 Sybelstr./Lewishamstr.	3 3813,10435 3739,10576 3712,10566
@@ -292,6 +292,8 @@ tragen (Bahnübergang Bhf. Satzkorn)	0:60:71 -19196,7320
 schieben (Rampe Schmöckwitzwerdersteg)	0:30:14 30533,-3124
 schieben (Rampe Schmöckwitzwerdersteg)	0:30:17 30546,-3072
 tragen (Treppe Mansfelder Str.)	0:30:90 3620,9330
+tragen (Treppe)	0:30:-263 9557,12992
+tragen (Treppe)	0:30:83 9508,12991
 Drängelgitter (Görlitzer Park)	BNP:5:13 12686,10045
 Drängelgitter (Görlitzer Park)	BNP:5:22 12770,10210
 Drängelgitter (Görlitzer Park)	BNP:5:-153 12904,10141

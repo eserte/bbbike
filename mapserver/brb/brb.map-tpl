@@ -147,7 +147,15 @@ SYMBOL
   TYPE ELLIPSE
   POINTS 1 1 END
   FILLED TRUE
-  STYLE 1 8 END
+  STYLE 1 25 END
+END
+
+SYMBOL
+  NAME 'dottedtransposed'
+  TYPE ELLIPSE
+  POINTS 1 1 END
+  FILLED TRUE
+  STYLE 0 12 1 13 0 END
 END
 
 [% IF 0 && IMAGE_SUFFIX == "png" %]
@@ -937,38 +945,6 @@ LAYER
   END
 END
 
-### BEGIN ROUTE
-#LAYER
-#  NAME Route
-#  GROUP route
-#  TYPE LINE
-#  STATUS ON
-#  DATA "### ROUTESHAPEFILE ###"
-#  FEATURE POINTS ### ROUTECOORDS ### END END
-#
-#  TOLERANCE 3
-#
-##  TEMPLATE "query.html"
-##  HEADER "query_header2.html"
-##  FOOTER "query_footer2.html"
-##TRANSPARENCY 50##XXX Wie am geschicktesten verwenden?
-#
-#  CLASS
-#    NAME "Route"
-##    COLOR 255 0 255
-#    COLOR 0 80 180
-##    SYMBOL 'width'
-#    SYMBOL 'dotted'
-#    SIZE 7
-#  END
-#  METADATA
-#    WMS_TITLE "Route"
-#    WMS_ABSTRACT "Berechnete Route"
-#    WMS_SRS "EPSG:4326"
-#  END
-#END
-### END ROUTE
-
 LAYER
   NAME "U-Bahn"
   GROUP bahn
@@ -1682,6 +1658,43 @@ END
 
 ### BEGIN ADDITIONAL LAYERS
 ### END ADDITIONAL LAYERS
+
+### BEGIN ROUTE
+#LAYER
+#  NAME Route
+#  GROUP route
+#  TYPE LINE
+#  STATUS ON
+#  DATA "### ROUTESHAPEFILE ###"
+#  FEATURE POINTS ### ROUTECOORDS ### END END
+#
+#  TOLERANCE 3
+#
+##  TEMPLATE "query.html"
+##  HEADER "query_header2.html"
+##  FOOTER "query_footer2.html"
+#TRANSPARENCY 50 ##XXX Wie am geschicktesten verwenden?
+#
+#  CLASS
+#    NAME "Route"
+##    COLOR 255 0 255
+##    COLOR 180 80 130
+#     COLOR 150 0 0
+##    SYMBOL 'width'
+#    SYMBOL 'dotted'
+#    SIZE 11
+##    OVERLAYCOLOR 130 80 180
+#    OVERLAYCOLOR 0 0 150
+#    OVERLAYSYMBOL dottedtransposed
+#    OVERLAYSIZE 11
+#  END
+#  METADATA
+#    WMS_TITLE "Route"
+#    WMS_ABSTRACT "Berechnete Route"
+#    WMS_SRS "EPSG:4326"
+#  END
+#END
+### END ROUTE
 
 ### BEGIN STARTFLAG
 #LAYER
