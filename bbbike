@@ -553,8 +553,6 @@ eval { local $SIG{'__DIE__'};
 #BEGIN{mymstat("before getopt BEGIN");} mymstat("before getopt");
 ## DEBUG_END
 
-Tk::CmdLine::SetArguments();
-
 @opttable =
   (M"Strecken/Punkte",
    ['','',M"Strecken und Punkte, die beim Start von BBBike\ngezeichnet werden sollen."],
@@ -1009,6 +1007,7 @@ die "Please report to author: use opttable_to_getopt!!!! XXX";
     }
     $opt->process_options;
 }
+Tk::CmdLine::SetArguments(); # XXX here correct position?
 
 # Check for -public option --- in this case do not load the config file.
 sub pre_check_arguments {
@@ -1352,16 +1351,20 @@ if ($standard_menubar && !$top->cget(-menu)) {
 	# wrapper[1] is not implemented on Windows ... guess menu height
 	$menu_height = 20;
     }
-    $want_extends[GEOMETRY_HEIGHT] -= $menu_height;
+    if ($want_extends[GEOMETRY_HEIGHT] =~ /^-/) {
+	$want_extends[GEOMETRY_HEIGHT] += $menu_height;
+    } else {
+	$want_extends[GEOMETRY_HEIGHT] -= $menu_height;
+    }
 }
 
 if (@want_extends) {
-    if ($want_extends[GEOMETRY_WIDTH]  < 30 ||
-	$want_extends[GEOMETRY_HEIGHT] < 20 ||
+    if (($want_extends[GEOMETRY_WIDTH]  < 30 && $want_extends[GEOMETRY_WIDTH] !~ /^-/) ||
+	($want_extends[GEOMETRY_HEIGHT] < 20 && $want_extends[GEOMETRY_HEIGHT] !~ /^-/) ||
 	$want_extends[GEOMETRY_X] < 0 ||
 	$want_extends[GEOMETRY_Y] < 0) {
 	warn M("Die Fenstergröße wird wegen ungültiger Werte nicht gesetzt: ")
-	     . join(", ", @want_extends), "\n";
+	    . join(", ", @want_extends), "\n";
     } else {
 	geometry($top, @want_extends);
 	@want_extends = ();
@@ -16347,20 +16350,26 @@ sub crop_geometry {
     my($want_extends, $extends) = @_;
 
     # right/bottom limits
-    my($maxx) = $extends->[GEOMETRY_WIDTH] + $extends->[GEOMETRY_X];
-    my($maxy) = $extends->[GEOMETRY_HEIGHT] + $extends->[GEOMETRY_Y];
+    my $x = $want_extends->[GEOMETRY_X] =~ /^-/ ?
+	$top->screenwidth - $want_extends->[GEOMETRY_WIDTH] + $want_extends->[GEOMETRY_X] :
+	    $want_extends->[GEOMETRY_X];
+    my $y = $want_extends->[GEOMETRY_Y] =~ /^-/ ?
+	$top->screenheight - $want_extends->[GEOMETRY_HEIGHT] + $want_extends->[GEOMETRY_Y] :
+	    $want_extends->[GEOMETRY_Y];
+    my($maxx) = $want_extends->[GEOMETRY_WIDTH] + $x;
+    my($maxy) = $want_extends->[GEOMETRY_HEIGHT] + $y;
 
-    if ($want_extends->[GEOMETRY_X] < $extends->[GEOMETRY_X]) {
+    if ($x < $extends->[GEOMETRY_X]) {
 	$want_extends->[GEOMETRY_X] = $extends->[GEOMETRY_X];
     }
-    if ($want_extends->[GEOMETRY_Y] < $extends->[GEOMETRY_Y]) {
+    if ($y < $extends->[GEOMETRY_Y]) {
 	$want_extends->[GEOMETRY_Y] = $extends->[GEOMETRY_Y];
     }
-    if ($want_extends->[GEOMETRY_X] + $want_extends->[GEOMETRY_WIDTH] > $maxx) {
-	$want_extends->[GEOMETRY_WIDTH] = $maxx - $want_extends->[GEOMETRY_X];
+    if ($x + $want_extends->[GEOMETRY_WIDTH] > $extends->[GEOMETRY_WIDTH]) {
+	$want_extends->[GEOMETRY_WIDTH] = $extends->[GEOMETRY_WIDTH] - $x;
     }
-    if ($want_extends->[GEOMETRY_Y] + $want_extends->[GEOMETRY_HEIGHT] > $maxy) {
-	$want_extends->[GEOMETRY_HEIGHT] = $maxy - $want_extends->[GEOMETRY_Y];
+    if ($y + $want_extends->[GEOMETRY_HEIGHT] > $extends->[GEOMETRY_HEIGHT]) {
+	$want_extends->[GEOMETRY_HEIGHT] = $extends->[GEOMETRY_HEIGHT] - $y;
     }
 }
 
@@ -16371,7 +16380,7 @@ sub parse_geometry_string {
 	$extends[GEOMETRY_WIDTH] = $1;
 	$extends[GEOMETRY_HEIGHT] = $2;
     }
-    if ($geometry =~ /[-+]([-+]?\d+)[-+]([-+]?\d+)/) {
+    if ($geometry =~ /([-+]\d+)([-+]\d+)/) {
 	$extends[GEOMETRY_X] = $1;
 	$extends[GEOMETRY_Y] = $2;
     }
@@ -16381,8 +16390,12 @@ sub parse_geometry_string {
 # Alternative way to set geometry.
 sub geometry {
     my($t, @extends) = @_;
-    $t->geometry("$extends[GEOMETRY_WIDTH]x$extends[GEOMETRY_HEIGHT]" .
-		 "+$extends[GEOMETRY_X]+$extends[GEOMETRY_Y]");
+    my $geometry = "$extends[GEOMETRY_WIDTH]x$extends[GEOMETRY_HEIGHT]";
+    $extends[GEOMETRY_X] = "+$extends[GEOMETRY_X]" if $extends[GEOMETRY_X] !~ /^[+-]/;
+    $extends[GEOMETRY_Y] = "+$extends[GEOMETRY_Y]" if $extends[GEOMETRY_Y] !~ /^[+-]/;
+    $geometry .= $extends[GEOMETRY_X] . $extends[GEOMETRY_Y];
+    warn $geometry;
+    $t->geometry($geometry);
 }
 
 sub fix_geometry {
