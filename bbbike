@@ -4709,6 +4709,8 @@ sub define_item_attribs {
 
 	 'green1' => '#7fbb7f',
 	 'green2' => '#008b00',
+
+	 'X' => "red", # fallback color
 	);
     %category_font_color =
 	(
