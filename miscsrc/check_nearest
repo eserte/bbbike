@@ -30,6 +30,8 @@ eval 'use BBBikeXS 0.02';
 my $verbose = 0;
 my $maxdist;
 my $strfile = "strassen";
+my $map;
+my $use_orig_map;
 GetOptions("v!" => \$verbose,
 	   "datadir=s" => sub {
 	       my $dir = $_[1];
@@ -39,11 +41,21 @@ GetOptions("v!" => \$verbose,
 	   },
 	   "strfile=s" => \$strfile,
 	   "maxdist=i" => \$maxdist,
+	   "map=s" => \$map,
+	   "useorigmap!" => \$use_orig_map,
 	  );
 
 warn "new Strassen...\n" if $verbose;
 my $str = new Strassen $strfile;
+
+if (defined $map) {
+    $str->{GlobalDirectives}{map} = $map;
+}
 my $conv = $str->get_conversion;
+my $anti_conv;
+if ($use_orig_map) {
+    $anti_conv = $str->get_anti_conversion;
+}
 if ($conv) {
     warn "Conversion needed...\n" if $verbose;
     my $new_str = Strassen->new;
@@ -59,6 +71,7 @@ if ($conv) {
     }
     $str = $new_str;
 }
+
 warn "make_net...\n" if $verbose;
 my $net = new StrassenNetz $str;
 $net->make_net;
@@ -94,10 +107,14 @@ while(my($k,$v) = each %$crossings) {
 
 warn "sorting...\n" if $verbose;
 my %seen;
-foreach (sort { $a->[2] <=> $b->[2] } @nearest_glob) {
-    next if ($seen{$_->[0]} || $seen{$_->[1]});
-    printf "%s %s (%dm)\n", @$_;
-    $seen{$_->[0]}++;
-    $seen{$_->[1]}++;
+foreach my $c (sort { $a->[2] <=> $b->[2] } @nearest_glob) {
+    next if ($seen{$c->[0]} || $seen{$c->[1]});
+    if ($anti_conv) {
+	printf "%s %s (%dm)\n", (map { $anti_conv->($_) } @{$c}[0, 1]), $c->[2];
+    } else {
+	printf "%s %s (%dm)\n", @$c;
+    }
+    $seen{$c->[0]}++;
+    $seen{$c->[1]}++;
 }
 __END__
