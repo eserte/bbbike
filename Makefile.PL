@@ -110,6 +110,8 @@ use constant REQTABLE_LONGDESC=> 5;
    'LogTracker plugin'],
   [qw/Date::Calc	0	all	0	devel/,
    'LogTracker plugin'],
+  [qw/XBase		0	all	0	devel/,
+   'Erzeugen der Mapserver- oder anderer ESRI-Dateien'],
  );
 
 # EXE prerequisites ####################################################
