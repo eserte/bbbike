@@ -152,14 +152,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1108681200,
-         'text' => 'K 6148; (Brand-Halbe); Bahnübergang in OL Teurow Arbeiten an Signaltechnik Vollsperrung 08.02.2005-17.02.2005 ',
-         'from' => 1107730800,
-         'data' => 'userdel	2 32937,-34794 32747,-34772
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1109199600,
          'text' => 'L 62; (Elsterwerda-Hohenleipisch); Bahnübergang bei Dreska Gleisbauarbeiten Vollsperrung 21.02.2005-23.02.2005 ',
@@ -179,6 +172,14 @@ userdel	2 -12372,-12676 -12459,-12120
 userdel	2 -12403,-10753 -12459,-12120
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1122847199,
+         'text' => 'Fürstenwalder Damm zwischen Bölschestr. und Stillerzeile Baustelle, Straße stadteinwärts gesperrt (bis Ende 07.2005)',
+         'from' => 1108684644,
+         'data' => 'userdel	q3; 25579,5980 25121,5799
+',
+         'type' => 'handicap'
        }
      
 );

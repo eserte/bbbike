@@ -1406,4 +1406,12 @@ userdel	2 -12372,-12676 -12459,-12120
 userdel	2 -12403,-10753 -12459,-12120
 EOF
      },
+     { from  => 1108684644, # 2005-02-18 00:57
+       until => 1122847199, # 2005-07-31 23:59
+       text  => 'Fürstenwalder Damm zwischen Bölschestr. und Stillerzeile Baustelle, Straße stadteinwärts gesperrt (bis Ende 07.2005)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q3; 25579,5980 25121,5799
+EOF
+     },
     );
