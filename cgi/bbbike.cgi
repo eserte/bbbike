@@ -1955,7 +1955,8 @@ sub get_kreuzung {
 
     if ((!defined $start and !defined $start_c) ||
 	(!defined $ziel  and !defined $ziel_c)) {
-	confess "Fehler: Start <$start> und/oder Ziel <$ziel> können nicht zugeordnet werden.<br>\n";
+	local $^W = 0;
+	confess "Fehler: Start <$start_str/position $start> und/oder Ziel <$ziel_str/position $ziel> können nicht zugeordnet werden.<br>\n";
     }
 
     if (@start_coords == 1 and @ziel_coords == 1 and
