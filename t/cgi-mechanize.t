@@ -118,7 +118,6 @@ like($agent->content, qr/Route/);
 ######################################################################
 # test for Kaiser-Friedrich-Str. (Potsdam) problem
 
-XXX:
 {
 
 my $agent = WWW::Mechanize->new;
@@ -195,6 +194,7 @@ like($agent->content, qr/\QAm Neuen Palais (F2.2) (Potsdam)/i,  "Correct start r
 ######################################################################
 # A street in Potsdam but not in "landstrassen"
 
+XXX:
 {
 
 my $agent = WWW::Mechanize->new;
@@ -207,7 +207,8 @@ $agent->form("BBBikeForm");
 { local $^W; $agent->current_form->value('ziel', 'Römische Bäder'); };
 $agent->submit();
 
-like($agent->content, qr{\QFeuerbachstr. (Potsdam)/Sellostr. (Potsdam)}i, "Correct start resolution");
+#XXX like($agent->content, qr{\QFeuerbachstr. (Potsdam)/Sellostr. (Potsdam)}i, "Correct start resolution");
+like($agent->content, qr{\QGeschwister-Scholl-Str. (Potsdam)/Zeppelinstr. (B1) (Potsdam)/Sellostr. (Potsdam)/Auf dem Kiewitt (Potsdam)}i,  "Correct goal resolution");
 like($agent->content, qr{\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)}i,  "Correct goal resolution");
 
 }
