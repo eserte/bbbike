@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.11 2003/12/02 09:59:17 eserte Exp $
+# $Id: wapcgi.t,v 1.12 2003/12/02 20:45:46 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -89,6 +89,8 @@ for my $wapurl (@wap_url) {
     if (defined &image_info) {
 	ok(image_info($resp->content)->{file_media_type},
 	   $resp->header('Content_Type'));
+    } else {
+	ok(0, "image_info not defined");
     }
 
     $resp = $ua->get($surr_url);
@@ -106,6 +108,8 @@ for my $wapurl (@wap_url) {
     if (defined &image_info) {
 	ok(image_info($resp->content)->{file_media_type},
 	   $resp->header('Content_Type'));
+    } else {
+	ok(0, "image_info not defined");
     }
 }
 
