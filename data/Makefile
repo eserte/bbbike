@@ -427,8 +427,9 @@ check:	.check_strassen1 .check_strassen2 \
 	$(CHECK_IMAGES) sehenswuerdigkeit
 	@touch .check_sehenswuerdigkeit
 
-.check_green:	green strassen
-	$(CHECK_NEIGHBOUR) -type standard -data green
+.check_green:	green strassen landstrassen
+	$(CHECK_NEIGHBOUR) -type standard -data green \
+		-against strassen -against landstrassen
 	@touch .check_green
 
 # XXX against landstrassen, too?

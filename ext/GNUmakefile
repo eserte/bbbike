@@ -31,78 +31,78 @@ ext-bbbikexs-clean:
 	-cd BBBikeXS && $(PERL) Makefile.PL && ${MAKE} clean
 
 ext-bbbikexs-build:
-	cd BBBikeXS && $(PERL) Makefile.PL && ${MAKE} ${.MAKEFLAGS}
+	cd BBBikeXS && $(PERL) Makefile.PL && ${MAKE} -${MAKEFLAGS}
 
 ext-bbbikexs-test:
-	cd BBBikeXS && ${MAKE} ${.MAKEFLAGS} test
+	cd BBBikeXS && ${MAKE} -${MAKEFLAGS} test
 
 ext-bbbikexs-install:
-	cd BBBikeXS && ${MAKE} ${.MAKEFLAGS} install
+	cd BBBikeXS && ${MAKE} -${MAKEFLAGS} install
 
 
 ext-virtarray-clean:
 	-cd VirtArray && $(PERL) Makefile.PL && ${MAKE} clean
 
 ext-virtarray-build:
-	cd VirtArray && $(PERL) Makefile.PL && ${MAKE} ${.MAKEFLAGS}
+	cd VirtArray && $(PERL) Makefile.PL && ${MAKE} -${MAKEFLAGS}
 
 ext-virtarray-test:
-	cd VirtArray && ${MAKE} ${.MAKEFLAGS} test
+	cd VirtArray && ${MAKE} -${MAKEFLAGS} test
 
 ext-virtarray-install:
-	cd VirtArray && ${MAKE} ${.MAKEFLAGS} install
+	cd VirtArray && ${MAKE} -${MAKEFLAGS} install
 
 
 ext-strassennetz-cnetfile-clean:
 	-cd StrassenNetz-CNetFile && $(PERL) Makefile.PL && ${MAKE} clean
 
 ext-strassennetz-cnetfile-build:
-	cd StrassenNetz-CNetFile && $(INLINE2DIST) StrassenNetz::CNetFile && $(PERL) Makefile.PL && env PERL5LIB=../..:../../lib:$$PERL5LIB ${MAKE} ${.MAKEFLAGS}
+	cd StrassenNetz-CNetFile && $(INLINE2DIST) StrassenNetz::CNetFile && $(PERL) Makefile.PL && env PERL5LIB=../..:../../lib:$$PERL5LIB ${MAKE} -${MAKEFLAGS}
 
 ext-strassennetz-cnetfile-test:
-	cd StrassenNetz-CNetFile && env PER5LLIB=../..:../../lib:$$PERL5LIB ${MAKE} ${.MAKEFLAGS} test
+	cd StrassenNetz-CNetFile && env PER5LLIB=../..:../../lib:$$PERL5LIB ${MAKE} -${MAKEFLAGS} test
 
 ext-strassennetz-cnetfile-install:
-	cd StrassenNetz-CNetFile && ${MAKE} ${.MAKEFLAGS} install
+	cd StrassenNetz-CNetFile && ${MAKE} -${MAKEFLAGS} install
 
 
 ext-strassen-inline-clean:
 	-cd Strassen-Inline && $(PERL) Makefile.PL && ${MAKE} clean
 
 ext-strassen-inline-build:
-	cd Strassen-Inline && $(INLINE2DIST) Strassen::Inline && $(PERL) Makefile.PL && ${MAKE} ${.MAKEFLAGS}
+	cd Strassen-Inline && $(INLINE2DIST) Strassen::Inline && $(PERL) Makefile.PL && ${MAKE} -${MAKEFLAGS}
 
 ext-strassen-inline-test:
-	cd Strassen-Inline && ${MAKE} ${.MAKEFLAGS} test
+	cd Strassen-Inline && ${MAKE} -${MAKEFLAGS} test
 
 ext-strassen-inline-install:
-	cd Strassen-Inline && ${MAKE} ${.MAKEFLAGS} install
+	cd Strassen-Inline && ${MAKE} -${MAKEFLAGS} install
 
 
 ext-strassen-inline2-clean:
 	-cd Strassen-Inline2 && $(PERL) Makefile.PL && ${MAKE} clean
 
 ext-strassen-inline2-build:
-	cd Strassen-Inline2 && $(INLINE2DIST) Strassen::Inline2 && $(PERL) Makefile.PL && ${MAKE} ${.MAKEFLAGS}
+	cd Strassen-Inline2 && $(INLINE2DIST) Strassen::Inline2 && $(PERL) Makefile.PL && ${MAKE} -${MAKEFLAGS}
 
 ext-strassen-inline2-test:
-	cd Strassen-Inline2 && env PERL5OPT=-Mblib=../StrassenNetz-CNetFile ${MAKE} ${.MAKEFLAGS} test
+	cd Strassen-Inline2 && env PERL5OPT=-Mblib=../StrassenNetz-CNetFile ${MAKE} -${MAKEFLAGS} test
 
 ext-strassen-inline2-install:
-	cd Strassen-Inline2 && ${MAKE} ${.MAKEFLAGS} install
+	cd Strassen-Inline2 && ${MAKE} -${MAKEFLAGS} install
 
 
 ext-vectorutil-inline-clean:
 	-cd VectorUtil-Inline && $(PERL) Makefile.PL && ${MAKE} clean
 
 ext-vectorutil-inline-build:
-	cd VectorUtil-Inline && $(INLINE2DIST) VectorUtil::Inline && $(PERL) Makefile.PL && ${MAKE} ${.MAKEFLAGS}
+	cd VectorUtil-Inline && $(INLINE2DIST) VectorUtil::Inline && $(PERL) Makefile.PL && ${MAKE} -${MAKEFLAGS}
 
 ext-vectorutil-inline-test:
-	cd VectorUtil-Inline && ${MAKE} ${.MAKEFLAGS} test
+	cd VectorUtil-Inline && ${MAKE} -${MAKEFLAGS} test
 
 ext-vectorutil-inline-install:
-	cd VectorUtil-Inline && ${MAKE} ${.MAKEFLAGS} install
+	cd VectorUtil-Inline && ${MAKE} -${MAKEFLAGS} install
 
 
 strassen-inline2:
