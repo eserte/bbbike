@@ -13,7 +13,7 @@ BEGIN {
 	use WWW::Mechanize;
 	use WWW::Mechanize::FormFiller;
 	use URI::URL;
-	use Test::More qw(no_plan);
+	use Test::More;
 	1;
     }) {
 	print "1..0 # skip: no Test::More and/or WWW::Mechanize modules\n";
@@ -29,9 +29,24 @@ use BBBikeTest;
 
 use Getopt::Long;
 
-if (!GetOptions(get_std_opts("cgiurl", "xxx"))) {
-    die "usage: $0 [-cgiurl url] [-xxx]";
+my @browsers;
+		
+if (!GetOptions(get_std_opts("cgiurl", "xxx"),
+		'browser=s@' => \@browsers)) {
+    die "usage: $0 [-cgiurl url] [-xxx] [-browser ...]";
 }
+
+if (!@browsers) {
+    @browsers
+	= ("Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.3) Gecko/20040913",
+	   "Lynx/2.8.3rel.1 libwww-FM/2.14 SSL-MM/1.4.1 OpenSSL/0.9.5a",
+	   "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; [eburo v1.3]; Wanadoo 7.0 ; NaviWoo1.1)"
+	  );
+}
+@browsers = map { "$_ BBBikeTest/1.0" } @browsers;
+
+my $tests = 67; # XXX
+plan tests => $tests * @browsers;
 
 if ($do_xxx) {
     goto XXX;
@@ -40,14 +55,16 @@ if ($do_xxx) {
 ######################################################################
 # general testing
 
-{
+for my $browser (@browsers) {
 
+{
 my $agent = WWW::Mechanize->new();
+$agent->agent($browser);
 #XXX my $formfiller = WWW::Mechanize::FormFiller->new();
 $agent->env_proxy();
 
 $agent->get($cgiurl);
-like($agent->content, qr/BBBike/, "Startpage $cgiurl is not empty");
+like($agent->content, qr/BBBike/, "Emulating $browser, Startpage $cgiurl is not empty");
 my_tidy_check($agent);
 
 $agent->form(1) if $agent->forms and scalar @{$agent->forms};
@@ -373,6 +390,8 @@ SKIP: {
 }
 
 }
+
+} # for
 
 sub my_tidy_check {
     my($agent) = @_;
