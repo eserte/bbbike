@@ -284,7 +284,6 @@ sub mark_irrelevant_entries {
 	} else {
 	    my(@comp) = split /,\s+/, $detail->{text};
 	    if ($comp[-1] =~ /( Fahrbahn\s+auf\s+\S+\s+Fahrstreifen\s+verengt
-			      | Verkehrsbehinderung\s+erwartet
 			      | Fahrstreifen\s+gesperrt
 			      | Fahrbahnverengung
 			      | Ampeln ausgefallen
