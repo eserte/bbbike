@@ -165,9 +165,11 @@ if (!defined $md5 || $md5 !~ $md5_qr) {
 	if ($md5 !~ $md5_qr) {
 	    die "$md5 does not match the proper MD5 pattern";
 	}
+	$md5 = "$1 $2 $3 $4"; # reformat md5 value
     }
+} else {
+    $md5 = "$1 $2 $3 $4"; # reformat md5 value
 }
-$md5 = "$1 $2 $3 $4"; # reformat md5 value
 
 open(DISTINFO, ">$portdir/distinfo") or die "Can't write distinfo file: $!";
 print DISTINFO $md5, "\n";
