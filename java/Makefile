@@ -2,8 +2,7 @@
 # $Id: Makefile,v 1.5 1999/09/07 08:22:54 eserte Exp $
 #
 
-#JAVAROOT=/usr/java
-JAVAROOT=/usr/lib/java
+JAVAROOT?=/usr/lib/java
 
 DEBUG=	-g
 
