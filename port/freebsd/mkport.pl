@@ -33,18 +33,20 @@ my %dir;
 
 my $v = 0;
 my $use_version;
+my $portsdir = "/usr/ports";
 
 if (!GetOptions("v" => \$v,
-		"useversion=s" => \$use_version)) {
-    die "usage: $0 [-v] [-useversion x.yy]";
+		"useversion=s" => \$use_version,
+		"portsdir=s" => \$portsdir)) {
+    die "usage: $0 [-v] [-useversion x.yy] [-portsdir /usr/ports]";
 }
 
 if (defined $use_version) {
-    if ($use_version eq 'last' && $BBBike::VERSION =~ m{^(\d+)\.(\d+)}) {
+    if ($use_version eq 'last' && $BBBike::STABLE_VERSION =~ m{^(\d+)\.(\d+)}) {
 	my($major, $minor) = ($1, $2);
 	$use_version = $major.".".sprintf("%02d", $minor-1);
     }
-    $bbbike_version = $BBBike::VERSION = $use_version;
+    $bbbike_version = $BBBike::STABLE_VERSION = $use_version;
 }
 
 my $bbbike_base        = "BBBike-$bbbike_version";
@@ -59,7 +61,7 @@ if (!-f $bbbike_archiv_path) {
 	die "Can't find $bbbike_archiv in $bbbike_archiv_dir";
     }
 }
-my $old_ports_makefile = "/usr/ports/german/BBBike/Makefile";
+my $old_ports_makefile = "$portsdir/german/BBBike/Makefile";
 
 my $freebsd_ident = <<'EOF';
 # $FreeBSD: ports/german/BBBike/Makefile,v 1.11 2002/07/15 10:55:17 ijliao Exp $
@@ -124,10 +126,10 @@ if (open(PLISTADD, "pkg-plist.add")) {
 	chomp;
 	plist_line($_, \*PLIST_5005);
 	my $l = $_;
-	if ($l =~ m|^lib/|) {
-	    $l =~ s|^lib|lib/%%PERL_VER%%|;
+# 	if ($l =~ m|^lib/|) {
+# 	    $l =~ s|^lib|lib/%%PERL_VER%%|;
 	    plist_line($l);
-	}
+#	}
     }
     close PLISTADD;
 }
@@ -151,8 +153,19 @@ close PLIST;
 
 warn "Get MD5 of $bbbike_archiv_dir/$bbbike_archiv:\n";
 my $md5 = `cd $bbbike_archiv_dir; md5 $bbbike_archiv`;
-if (!defined $md5 || $md5 !~ /^(MD5)\s*(\(.*\))\s*(=)\s*(.*)$/) {
-    die "Couldn't get MD5 of $bbbike_archiv";
+my $md5_qr = qr/^(MD5)\s*(\(.*\))\s*(=)\s*(.*)$/;
+if (!defined $md5 || $md5 !~ $md5_qr) {
+    # try md5sum:
+    $md5 = `cd $bbbike_archiv_dir; md5sum $bbbike_archiv`;
+    if (!$md5) {
+	die "Couldn't get MD5 of $bbbike_archiv, tried md5 and md5sum";
+    } else {
+	$md5 = (split /\s+/, $md5)[0];
+	$md5 = "MD5 ($bbbike_archiv) = $md5";
+	if ($md5 !~ $md5_qr) {
+	    die "$md5 does not match the proper MD5 pattern";
+	}
+    }
 }
 $md5 = "$1 $2 $3 $4"; # reformat md5 value
 
@@ -207,14 +220,14 @@ sub substitute {
     open(SRC, $src) or die "Can't open $src: $!";
     open(DEST, ">$dest") or die "Can't write to $dest: $!";
     while(<SRC>) {
-	s/ \@VERSION\@    /$BBBike::VERSION/gx;
-	s/ \@DISTDIR\@    /$distdir/gx;
+	s/ \@VERSION\@    	  /$BBBike::STABLE_VERSION/gx;
+	s/ \@DISTDIR\@    	  /$distdir/gx;
 	s/ \@MASTER_SITE_SUBDIR\@ /$master_site_subdir/gx;
-	s/ \@EMAIL\@      /$BBBike::EMAIL/gx;
-	s/ \@BBBIKE_WWW\@ /$BBBike::BBBIKE_WWW/gx;
-	s/ \@BBBIKE_SF_WWW\@ /$BBBike::BBBIKE_SF_WWW/gx;
-	s/ \@BBBIKE_WAP\@ /$BBBike::BBBIKE_WAP/gx;
-	s/ \@FREEBSD_IDENT\@ /$freebsd_ident/gx;
+	s/ \@EMAIL\@      	  /$BBBike::EMAIL/gx;
+	s/ \@BBBIKE_WWW\@ 	  /$BBBike::BBBIKE_WWW/gx;
+	s/ \@BBBIKE_SF_WWW\@ 	  /$BBBike::BBBIKE_SF_WWW/gx;
+	s/ \@BBBIKE_WAP\@ 	  /$BBBike::BBBIKE_WAP/gx;
+	s/ \@FREEBSD_IDENT\@ 	  /$freebsd_ident/gx;
 	print DEST $_;
     }
     close DEST;
