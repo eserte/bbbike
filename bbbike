@@ -1148,7 +1148,7 @@ eval {
 change_net_type();
 
 if ($do_wwwmap && $devel_host) {
-    $map_default_type = 'b2002';
+    $map_default_type = 'b2003';
 }
 
 if ($all_outline) {
