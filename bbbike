@@ -30,7 +30,8 @@ BEGIN { eval 'use BBBikeDebug' if $ENV{BBBIKE_DEBUG} }
 ##XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 BEGIN {
-    if ($] >= 5.005 && !$^C && !$^P && !grep { $_ eq '-nosplash' } @ARGV) {
+    my $nosplash = grep { $_ eq '-nosplash' } @ARGV;
+    if ($] >= 5.005 && !$^C && !$^P && !$nosplash) {
 	# XXX don't know whether this is a Tk400 or an old perl problem
 	eval {
 	    require Tk::ProgressSplash;
@@ -40,6 +41,7 @@ BEGIN {
 		 240, 90, "BBBike", 1);
 	}; warn $@ if $@;
     }
+    if ($nosplash) { $use_logo = 0 }
 
     eval 'use sigtrap qw(stack-trace USR1)'; warn $@ if $@;
 }
@@ -374,7 +376,7 @@ $coordlist_lbox_nl = "";
 $min_cache_decider_time = 0.500; # 500ms, dann wird gecached
 $steady_mark = 0;
 $lowmem = 0;
-$use_logo = 1;
+$use_logo = 1 if !defined $use_logo;
 $center_loaded_route = 0;
 $zoom_loaded_route = 1;
 $zoom_new_route = 0;
@@ -968,11 +970,6 @@ die "Please report to author: use opttable_to_getopt!!!! XXX";
 	exit 1;
     }
     $opt->process_options;
-}
-
-if (!$public) {
-    #XXX:MyBrowseEntry testen...
-    eval 'use blib "/home/e/eserte/src/perl/Tk-MyBrowseEntry"; use Tk::BrowseEntry;';warn $@ if $@;
 }
 
 # XXX generalise and move to Tk::Getopt!
@@ -4173,11 +4170,13 @@ $c->{Configure}{-seeview} = \&Tk::Canvas::smooth_scroll;
 my $sy = $canvas_frame->Scrollbar(-command => ["yview", $c],
 				  -takefocus => 0,
 				  -highlightthickness => 0,
+-repeatinterval => 1000,
 				 );
 my $sx = $canvas_frame->Scrollbar(-orient => "horiz",
 				  -command => ["xview", $c],
 				  -takefocus => 0,
 				  -highlightthickness => 0,
+-repeatinterval => 1000,
 				 );
 
 $c->configure(-yscrollcommand =>
