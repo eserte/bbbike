@@ -35,6 +35,7 @@ my $gefaelle = 0;
 my $orig = 0;
 my $min_mount;
 
+# -orig is obsolete!
 if (!GetOptions("i=s" => \$i,
 		"str=s" => \$strfile,
 		"o=s" => \$o,
