@@ -180,4 +180,16 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Bahnhofstraße, zwischen Goltzstraße und Steinstraße Vollsperrung, vom 13.09.2003, 06.00 Uhr bis 14.09.2003, 24.00 Uhr ',
        type  => 'gesperrt',
      },
+     { from  => 1065060000, # 2003-10-02 04:00
+       until => 1065391200, # 2003-10-06 00:00
+       file  => 'karlmarx.bbd',
+       text  => 'Karl-Marx-Straße, zwischen Flughafenstraße und Uthmannstraße gesperrt. Grund: Straßenfest. Dauer: 03.10.2003, 04.00 Uhr bis 05.10.2003, 24.00 Uhr ',
+       type  => 'handicap',
+     },
+     { from  => 1065758400, # 2003-10-10 06:00
+       until => 1065996000, # 2003-10-13 00:00
+       file  => 'hermannstr.bbd',
+       text  => 'Hermannstraße, zwischen Emserstraße und Thomasstraße gesperrt. Grund: Straßenfest. Dauer: 11.10.2003, 06.00 Uhr bis 12.10.2003, 24.00 Uhr',
+       type  => 'handicap',
+     },
     );
