@@ -17,6 +17,7 @@
 package BBBike;
 
 $VERSION	   = '3.14-DEVEL'; # remove "-DEVEL" for releases
+$STABLE_VERSION	   = '3.13';
 
 $EMAIL_OLD	   = 'eserte@cs.tu-berlin.de';
 $EMAIL		   = 'slaven@rezic.de';
