@@ -1363,8 +1363,8 @@ Achtung:
 
 ### AutoLoad Sub
 sub BBBikeHeavy::reload_all {
-    if ($BBBikeExp::mode) {
-	bbbikeexp_reload();
+    if ($BBBikeLazy::mode) {
+	bbbikelazy_reload();
     }
 
     my %change;
@@ -1386,7 +1386,7 @@ sub BBBikeHeavy::reload_all {
     }
 
     #XXX del: seems to be wrong (as seen for fragezeichen)
-    #return if ($BBBikeExp::mode);
+    #return if ($BBBikeLazy::mode);
 
     $progress->InitGroup;
     while(my($linetype, $v) = each %change) {

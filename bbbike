@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.142 2004/08/18 22:44:40 eserte Exp eserte $
+# $Id: bbbike,v 3.143 2004/08/19 19:35:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -109,10 +109,10 @@ use autouse 'BBBikeEdit'
     => qw(insert_point_from_canvas create_relation_from_canvas
 	  ampeln_on_route radweg_open radweg_draw_canvas
 	 );
-use autouse 'BBBikeExp'
-    => qw(bbbikeexp_setup bbbikeexp_init bbbikeexp_clear
-	  bbbikeexp_reload bbbikeexp_reload_all bbbikeexp_redraw_current_view
-	  bbbikeexp_add_data bbbikeexp_remove_data plotstr_on_demand);
+use autouse 'BBBikeLazy'
+    => qw(bbbikelazy_setup bbbikelazy_init bbbikelazy_clear
+	  bbbikelazy_reload bbbikelazy_reload_all bbbikelazy_redraw_current_view
+	  bbbikelazy_add_data bbbikelazy_remove_data plotstr_on_demand);
 use autouse 'BBBikePrint'
     => qw(create_postscript print_postscript toggle_legend
 	  print_text_postscript print_text_pdflatex view_pdf);
@@ -212,7 +212,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.142 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.143 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4307,7 +4307,7 @@ $c->configure(-yscrollcommand =>
 	      sub { $sy->set(@_);
 		    overview_update();
 		    if (defined &plotstr_on_demand
-			and $BBBikeExp::mode) {
+			and $BBBikeLazy::mode) {
 			my($x1,$y1,$x2,$y2) = $c->get_corners;
 			plotstr_on_demand(anti_transpose($x1,$y1),
 					  anti_transpose($x2,$y2));
@@ -4318,7 +4318,7 @@ $c->configure(-yscrollcommand =>
               sub { $sx->set(@_);
 		    overview_update();
 		    if (defined &plotstr_on_demand
-			and $BBBikeExp::mode) {
+			and $BBBikeLazy::mode) {
 			my($x1,$y1,$x2,$y2) = $c->get_corners;
 			plotstr_on_demand(anti_transpose($x1,$y1),
 					  anti_transpose($x2,$y2));
@@ -4559,7 +4559,7 @@ if ($use_server and $os ne 'win') { # Win32 unterstützt kein fork etc.
 }
 
 if ($turbo) {
-    bbbikeexp_init();
+    bbbikelazy_init();
 }
 
 if (defined $initial_plugins && $initial_plugins ne "") {
@@ -6062,10 +6062,10 @@ sub set_bindings {
 	       });
     bind_nomod($top, "<S>" => sub {
 #XXX del?
-# 		   if ($BBBikeExp::mode) {
-# 		       bbbikeexp_clear();
+# 		   if ($BBBikeLazy::mode) {
+# 		       bbbikelazy_clear();
 # 		   } else {
-# 		       bbbikeexp_init();
+# 		       bbbikelazy_init();
 # 		   }
 		   set_map_mode(MM_SEARCH);
 	       });
@@ -7987,8 +7987,8 @@ sub plot {
 	die "Unknown type $type";
     }
 ###XXX Häh?
-#    if ($BBBikeExp::mode && defined &bbbikeexp_remove_data) {
-#	bbbikeexp_remove_data($type, $abk);
+#    if ($BBBikeLazy::mode && defined &bbbikelazy_remove_data) {
+#	bbbikelazy_remove_data($type, $abk);
 #    }
     Hooks::get_hooks("after_plot")->execute;
 }
@@ -8050,8 +8050,8 @@ sub plotstr {
 	$c->delete("i-out");
     }
     if ($std && !$str_draw{$abk}) {
-	if ($main::exp_str{$abk}) {
-	    bbbikeexp_remove_data("str", $abk);
+	if ($main::lazy_str{$abk}) {
+	    bbbikelazy_remove_data("str", $abk);
 	}
 	return;
     }
@@ -8158,7 +8158,7 @@ sub plotstr {
 
     my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
     if ($std && $lazy && $has_filename) {
-	return bbbikeexp_add_data("str", $abk, $str);
+	return bbbikelazy_add_data("str", $abk, $str);
     }
 
     my $diffed_str = 0;
@@ -8259,7 +8259,7 @@ sub plotstr {
 
     my $coordsys = $coord_system_obj->coordsys;
 
-    my $use_stippleline = 0; # XXX Duplikat in BBBikeExp
+    my $use_stippleline = 0; # XXX Duplikat in BBBikeLazy
     if (exists $line_dash{$abk}) {
 	if ($Tk::VERSION >= 800.016) {
 	    $use_stippleline = 2; # new dash code
@@ -9058,8 +9058,8 @@ sub plot_point {
 	$c->delete('lsas-t'); # Ampelschaltung-Symbole löschen
     }
     if (!$p_draw{$abk}) {
-	if ($main::exp_p{$abk}) {
-	    bbbikeexp_remove_data("p", $abk);
+	if ($main::lazy_p{$abk}) {
+	    bbbikelazy_remove_data("p", $abk);
 	}
 	return;
     }
@@ -9080,7 +9080,7 @@ sub plot_point {
 
     my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
     if ($lazy) {
-	return bbbikeexp_add_data("p", $abk, $filename);
+	return bbbikelazy_add_data("p", $abk, $filename);
     }
 
     # XXX $ignore code fehlt noch...
@@ -9165,7 +9165,7 @@ sub plot_point {
 	my $i = 0;
 	my $anzahl_eindeutig = $bhf->count;
 	$bhf->init;
-	# XXX Duplikat in BBBikeExp:
+	# XXX Duplikat in BBBikeLazy:
 	my $ubahn_length = ($abk eq 'u'
 			    ? do { my(%a) = get_symbol_scale('u');
 				   $a{-width}/2 }
@@ -10128,8 +10128,8 @@ sub plotorte {
 
     if ($std && !$p_draw{$type}) {
 	undef $p_obj{$type};
-	if ($main::exp_p{$type}) {
-	    bbbikeexp_remove_data("p", $type);
+	if ($main::lazy_p{$type}) {
+	    bbbikelazy_remove_data("p", $type);
 	}
 	return;
     }
@@ -10138,7 +10138,7 @@ sub plotorte {
 
     my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
     if ($std && $lazy) {
-	return bbbikeexp_add_data("p", $type, $orte);
+	return bbbikelazy_add_data("p", $type, $orte);
     }
 
     my $coordsys = $coord_system_obj->coordsys;

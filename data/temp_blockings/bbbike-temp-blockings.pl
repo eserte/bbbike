@@ -553,4 +553,12 @@ EOF
 userdel	q4 9909,18333 10089,18180
 EOF
      },
+     { from  => 1093125600, # 2004-08-22 00:00
+       until => 1093644000, # 2004-08-28 00:00
+       text  => 'L 792; (Groß Schulzendorf-Blankenfelde); OD Blankenfelde, Dorfstr. Straßenbauarbeiten Vollsperrung 23.08.2004-27.08.2004 ',
+       type  => 'handicap',
+      data  => <<EOF,
+userdel	q4 10023,-8859 10115,-8276
+EOF
+     },
     );

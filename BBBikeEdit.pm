@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.72 2004/08/18 22:42:45 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.72 2004/08/18 22:42:45 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -152,6 +152,7 @@ sub radweg_edit_off {
 ## efficiency:
 #    $c->delete("rw");
     if (defined $radweg_last_b2_mode) {
+	$main::c->configure(-cursor => undef);
 	$main::b2_mode = $radweg_last_b2_mode;
 	undef $radweg_last_b2_mode;
 	undef $main::b2m_customcmd;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.16 2004/08/09 20:51:51 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.17 2004/08/19 19:35:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -76,14 +76,14 @@ sub add_button {
 	       -command => sub {
 		   require BBBikeEdit;
 		   require BBBikeAdvanced;
-		   require BBBikeExp;
+		   require BBBikeLazy;
 		   require File::Basename;
 		   main::plot("str","s", -draw => 0);
 		   main::switch_edit_berlin_mode();
-		   main::bbbikeexp_clear();
-		   main::bbbikeexp_setup();
+		   main::bbbikelazy_clear();
+		   main::bbbikelazy_setup();
 
-		   main::bbbikeexp_init();
+		   main::bbbikelazy_init();
 		   add_new_layer("str", $orig_streets_track);
 
 		   my $file = main::draw_gpsman_data($main::top);
@@ -135,10 +135,10 @@ sub add_button {
 # 	      [Button => "My edit mode",
 # 	       -command => sub {
 # 		   require BBBikeEdit;
-# 		   require BBBikeExp;
+# 		   require BBBikeLazy;
 # 		   main::plot("str","s", -draw => 0);
 # 		   main::switch_edit_berlin_mode();
-# 		   main::bbbikeexp_reload_all();
+# 		   main::bbbikelazy_reload_all();
 # 		   BBBikeEdit::editmenu($main::top);
 # 		   main::plot('str','fz', -draw => 1);
 # 	       }],
@@ -215,13 +215,13 @@ sub add_new_layer {
     my($type, $file) = @_;
     my $free_layer = main::next_free_layer($type);
     $main::line_width{$free_layer} = [(1)x6];
-    if (!$BBBikeExp::mode) {
-	require BBBikeExp;
-	BBBikeExp::bbbikeexp_empty_setup();
-	main::bbbikeexp_add_data($type, $free_layer, $file);
-	main::bbbikeexp_init();
+    if (!$BBBikeLazy::mode) {
+	require BBBikeLazy;
+	BBBikeLazy::bbbikelazy_empty_setup();
+	main::bbbikelazy_add_data($type, $free_layer, $file);
+	main::bbbikelazy_init();
     } else {
-	main::bbbikeexp_add_data($type, $free_layer, $file);
+	main::bbbikelazy_add_data($type, $free_layer, $file);
     }
     Hooks::get_hooks("after_new_layer")->execute;
     $free_layer;
@@ -290,8 +290,8 @@ sub show_any_diff {
 #     if (0) {
 # 	BBBikeEdit->draw_pp("strassen", -abk => "s");
 #     } else {
-# 	require BBBikeExp;
-# 	BBBikeExp::bbbikeexp_add_data_by_subs
+# 	require BBBikeLazy;
+# 	BBBikeLazy::bbbikelazy_add_data_by_subs
 # 		("p","pp",
 # 		 init      => sub {
 # 		     BBBikeEdit->draw_pp_init_code("strassen", -abk => "s")
@@ -313,8 +313,8 @@ sub show_any_diff {
 #     if (0) {
 # 	BBBikeEdit->draw_pp(["landstrassen", "landstrassen2"], -abk => "l");
 #     } else {
-# 	require BBBikeExp;
-# 	BBBikeExp::bbbikeexp_add_data_by_subs
+# 	require BBBikeLazy;
+# 	BBBikeLazy::bbbikelazy_add_data_by_subs
 # 		("p","pp",
 # 		 init      => sub {
 # 		     BBBikeEdit->draw_pp_init_code(["landstrassen", "landstrassen2"], -abk => "l")
@@ -375,7 +375,7 @@ sub find_nearest_hoehe {
 	return;
     }
     my $xy = $Karte::Berlinmap1996::obj->map2standard_s($inslauf_selection[0]);
-    my $nearest = $main::exp_p{$hm_layer}->nearest_point($xy, FullReturn => 1);
+    my $nearest = $main::lazy_p{$hm_layer}->nearest_point($xy, FullReturn => 1);
     if (!$nearest) {
 	main::status_message("No nearest point found", "warn");
 	return;
