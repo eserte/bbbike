@@ -18,10 +18,18 @@
 
 while(<STDIN>) {
     s/^\.if\s+defined\(([^\)]+)\)/ifdef $1/;
+    s/^\.ifdef ([^\)]+)/ifdef $1/;
+    s/^\.ifndef ([^\)]+)/ifndef $1/;
+    s/^\.if\s+exists\((.+)\)/ifeq (\$(shell test -e $1 && echo 1 || echo 0),1)/;
     s/^\.if(.+)eq(.+)/ifeq $1 $2/;
     s/^\.if(.+)ne(.+)/ifneq $1 $2/;
     s/^\.else(\s+)/else$1/;
     s/^\.endif(\s+)/endif$1/;
+    s/^\.error (.+)/\$(error $1)/;
+    s/^\.include "Makefile(.+)"/include GNUmakefile$1/; # Hack --- all Makefiles should be translated into GNUmakefiles
+    s/^\.include "(.+)"/include $1/;
+    s/^\.for\s+(\S+)\s+in\s+(\S+)//;#XXX how to translate this???
+    s/^\.endfor//;#XXX
     s/\$\{\.?MAKEFLAGS\}/-\${MAKEFLAGS}/g;
     s/\$\(\.?MAKEFLAGS\)/-\${MAKEFLAGS}/g;
     print;
