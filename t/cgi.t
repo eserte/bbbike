@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.17 2003/10/08 07:33:06 eserte Exp $
+# $Id: cgi.t,v 1.18 2003/10/09 07:26:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -274,7 +274,6 @@ for my $cgiurl (@urls) {
 	# XXX Maybe utilize WWW::Mechanize(::Shell) for more tests
     }
 
-    XXX:
     {
 	# Test "inaccessible" feature
 	my $inacc_xy = "21306,381"; # B96a
@@ -333,11 +332,25 @@ for my $cgiurl (@urls) {
     }
 
     # Klick on Info link
-    $req = new HTTP::Request
-	(GET => "$action?info=1", $hdrs);
-    $res = $ua->request($req);
-    ok($res->is_success, "Click on info link")
-	or diag $res->as_string;
+    {
+	my $req = new HTTP::Request
+	    (GET => "$action?info=1", $hdrs);
+	my $res = $ua->request($req);
+	ok($res->is_success, "Click on info link")
+	    or diag $res->as_string;
+    }
+
+    # Info page through pathinfo
+    XXX:
+    {
+	my $req = new HTTP::Request
+	    (GET => "$action/info=1", $hdrs);
+	my $res = $ua->request($req);
+	ok($res->is_success, "Info page through pathinfo")
+	    or diag $res->as_string;
+	my $content = uncompr($res);
+	like($content, qr/Link auf BBBike setzen/, "Is it really the info page?");
+    }
 
     # Klick on Mapserver link
     SKIP: {

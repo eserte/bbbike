@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: $
+# $Id: makenet-bench.pl,v 1.1 2003/10/08 23:11:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.

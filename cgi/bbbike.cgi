@@ -1326,7 +1326,7 @@ sub choose_form {
 <tr>
 <td valign="top">@{[ blind_image(420,1) ]}<br>Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 3100 von 10000 Berliner Stra&szlig;en sowie ca. 120 Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
 Nebenstra&szlig;en). Bei nicht erfassten Straßen wird automatisch die
-nächste bekannte verwendet.<br>
+nächste bekannte verwendet. Hausnummern k&ouml;nnen nicht angegeben werden.<br>
 </td>
 <td valign="top" @{[ $start_bgcolor ? "bgcolor=$start_bgcolor" : "" ]}>@{[ defined &teaser ? teaser() : "" ]}</td>
 </tr>

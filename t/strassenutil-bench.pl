@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassenutil-bench.pl,v 1.3 2003/10/08 11:54:27 eserte Exp $
+# $Id: strassenutil-bench.pl,v 1.4 2003/10/09 07:26:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.

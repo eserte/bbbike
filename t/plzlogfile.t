@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plzlogfile.t,v 1.2 2003/08/07 23:24:43 eserte Exp $
+# $Id: plzlogfile.t,v 1.3 2003/10/08 23:28:37 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -15,6 +15,7 @@ use PLZ::Multi;
 use Getopt::Long;
 use CGI;
 use Fcntl qw(:seek);
+use File::ReadBackwards 1.00; # tell method
 
 BEGIN {
     if (!eval q{
@@ -64,33 +65,42 @@ my @standard_look_loop_args =
      Noextern => !$extern,
     );
 
-open(LOGFILE, $logfile) or die "Can't open $logfile: $!";
-select LOGFILE; $| = 1; select STDOUT;
+my $LOGFILE;
+#open(LOGFILE, $logfile)
+$LOGFILE = File::ReadBackwards->new($logfile)
+    or die "Can't open $logfile: $!";
 
 if ($seek) {
-    seek LOGFILE, $seek, SEEK_SET;
+    $LOGFILE->{seek_pos} = $seek; # XXX Hack!
+    #$LOGFILE->seek($seek, SEEK_SET);
 }
 
+my $lastdate;
 {
     local $SIG{INT} = sub {
-	warn "Seek: " . tell(LOGFILE);
+	warn "Seek: " . $LOGFILE->tell;
 	exit 1;
     };
 
-    while(<LOGFILE>) {
+    while(defined($_ = $LOGFILE->readline)) {
 	m{GET\s+\S+bbbike\.cgi\?(.*)\s+} or next;
 	chomp;
 	my $q = CGI->new($1);
+	my($thisdate) = $_ =~ m{\[(\d{2}/.{3}/\d{4}):};
 	my $s = $q->param("start");
 	if (defined $s && ((!$hnr && $s ne "") ||
 			   ( $hnr && $s =~ /\s+\d+\s*$/))) {
 	    my @res = lookup($s);
+	    if (!defined $lastdate || $lastdate ne $thisdate) {
+		print "# $thisdate " . ("#"x60) . "\n";
+		$lastdate = $thisdate;
+	    }
 	    printf "# %-35s => %2d %-35s\n",
 		$s, scalar @{$res[0]},
 		    (!@{$res[0]} ? "-"x30 : $res[0]->[0]->[PLZ::LOOK_NAME]);
 	}
     }
-    close LOGFILE;
+    $LOGFILE->close;
 }
 
 ok(1);
