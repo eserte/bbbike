@@ -1094,12 +1094,14 @@ sub nearest_point {
 sub get_conversion {
     my($self, %args) = @_;
     my $convsub;
-    if ($self->{GlobalDirectives}{map}) {
-	my $map = $self->{GlobalDirectives}{map};
+    my $frommap = $self->{GlobalDirectives}{map} || $args{Map};
+    if ($frommap) {
+	my $map = $frommap;
 	require Karte;
 	Karte::preload($map);
-	my $tomap = $args{-tomap};
-	if ($tomap) {
+	my $tomap = $args{-tomap} || "Standard";
+	return if $map eq $tomap; # no conversion needed
+	if ($tomap ne "Standard") {
 	    if ($tomap ne $map) {
 		Karte::preload($tomap);
 		$convsub = sub {
