@@ -57,7 +57,7 @@ all:	targets check .modified .rsync_include make_misc
 
 targets:	${TARGETS}
 
-clean:
+targets-clean:
 	mv -f ${TARGETS} /tmp
 
 # Useful checks, but normally too slow for a quick build
