@@ -62,8 +62,8 @@ Knoten Märkische Allee	1 19918,11891 19988,11821 20115,11730
 Knoten Märkische Allee	1 20115,11730 20014,11651
 Knoten Märkische Allee	1 20014,11651 20018,11698 19985,11739
 Gensinger Str./Alt-Friedrichsfelde	1 19005,11796 19144,11859 19283,11785
-Altstadt Köpenick	1 22196,4847 22377,4836 22383,4703 22472,4572 22502,4528 22396,4464
-Altstadt Köpenick	1 22093,4499 22138,4661 22196,4847
+#XXX laut bln.verkehr aufgehoben: Altstadt Köpenick	1 22196,4847 22377,4836 22383,4703 22472,4572 22502,4528 22396,4464
+#XXX Altstadt Köpenick	1 22093,4499 22138,4661 22196,4847
 Wuhletalstr.	1 20691,17463 20675,17515 20754,17672 20832,17824 20878,17842
 Knoten Märkische/Landsberger Allee	1 19175,14968 19496,15113 19567,15134 19694,15149 19735,15155
 Knoten Märkische/Landsberger Allee	1 19735,15155 19605,15073 19408,15007 19175,14968
@@ -176,7 +176,6 @@ Kirchstr.	1 22196,4847 22234,4789 22243,4710
 Ontarioseestr.	1 18577,10023 18339,10048
 Degnerstr. (außer Tram)	1 16434,15580 16464,15665
 Bornitzstr. (trotz Radroute?)	1 15645,12864 15513,12856
-Landjägerstr.	1 22502,4528 22542,4485 22740,4415
 Henriette-Herz-Platz	1 10371,13006 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
 Dresdener Str./Oranienplatz	1 11258,10682 11232,10745
@@ -499,6 +498,7 @@ Johannisthaler Chaussee, Ernst-Keller Brücke; Bauarbeiten; Brücke gesperrt bis 3
 # XXX ja? NEW:       L19 Saatwinkler Damm Berlin-Haselhorst - Berlin-Tiergarten in beiden Richtungen Zwischen Gartenfelder Straße und Flughafen Tegel beidseitig wegen Bauarbeiten gesperrt 
 #XXX del Wielandstr., S-Bahn-Sanierung (bis ca. 2004-04-30)	2:inwork 6857,7856 6849,7933
 #XXX del Alt-Köpenick Treptow - Köpenick, zwischen Rosenstr. und Müggelheimer Str. Baustelle, Straße gesperrt bis 31.05.	2:inwork 22196,4847 22138,4661 22093,4499
+#XXX del? Landjägerstr.	1 22502,4528 22542,4485 22740,4415
 Die Prenzlauer  Allee ist zwischen Grellstraße und Ostseestraße stadtauswärts gesperrt. Grund: Bauarbeiten. Dauer: 29.03.2004, 07:00 Uhr bis voraussichtlich 2004-08-00	1:inwork 11941,15586 11997,15834 12030,15968 12076,16129 12091,16209
 #XXX del Zimmerstraße, Richtung Axel-Springer-Straße, zwischen Markgrafenstraße und Jerusalemer Straße, als Einbahnstraße  eingerichtet. Dauer: bis 15.05.2004, 18.00 Uhr	1:inwork 9945,11371 9737,11349
 #XXX del L103 Alarichstraße Berlin-Mariendorf Richtung Berlin-Schöneberg zwischen Ringstr. und Kaiserstr. wegen Bauarbeiten gesperrt, eine Umleitung ist eingerichtet (bis 16.05.2004)	1:inwork 9003,3878 8954,4084 8877,4356
