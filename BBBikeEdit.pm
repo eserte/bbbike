@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.71 2004/08/12 22:46:33 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.71 2004/08/12 22:46:33 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3037,10 +3037,6 @@ sub clone {
 #     * beim Laden ebenfalls nicht. Im cgi und in bbbike wird statt pauschal
 #       "make_sperre" nach Kategorien differenziert und je Strassen-Objekte
 #       für make_sperre und merge_handicap_net on-the-fly generiert
-#     * bbbike-temp-blockings.pl => misc/temp_blockings verschieben, cgi
-#       und temp_blockings_editor() entsprechend anpassen
-#     * Option, damit alle (aktuellen?) temp_blockings automatisch
-#       geladen werden
 #     * Teile von miscsrc/bbbike-check-temp-blockings modularisieren
 #       und nach bbbike/BBBikeTempBlockings.pm verschieben: Laden der
 #       temp-blockings.pl-Datei, Checken, was davon aktuell ist
@@ -3072,6 +3068,7 @@ sub temp_blockings_editor {
     my $prewarn_days = 1;
     my $blocking_type = "gesperrt";
     my $edit_after = 1;
+    my $do_delete_blockings = 1;
     my $auto_cross_road_blockings = 0;
     my $change_pl_file = 1;
     my $pe;
@@ -3134,25 +3131,37 @@ sub temp_blockings_editor {
 		       )->pack(-anchor => "w");
     }
 
+    my $cs = 3;
     Tk::grid($t->Checkbutton(-text => M"Überqueren der gesperrten Straßen nicht möglich",
 			     -variable => \$auto_cross_road_blockings,
 			    ),
 	     -sticky => "w",
-	     -columnspan => 2,
+	     -columnspan => $cs,
 	    );
 
     Tk::grid($t->Checkbutton(-text => M"Dateien an zentrale pl-Datei anhängen",
 			     -variable => \$change_pl_file,
 			    ),
 	     -sticky => "w",
-	     -columnspan => 2,
+	     -columnspan => $cs,
 	    );
 
-    Tk::grid($t->Checkbutton(-text => M"Dateien im Anschluss editieren",
+    Tk::grid($t->Label(-text => M"Im Anschluss..."),
+	     -sticky => "w",
+	     -columnspan => $cs,
+	    );
+
+    Tk::grid($t->Checkbutton(-text => M"Dateien editieren",
 			     -variable => \$edit_after,
 			    ),
 	     -sticky => "w",
-	     -columnspan => 2,
+	     -columnspan => $cs,
+	    );
+    Tk::grid($t->Checkbutton(-text => M"Sperrungen in BBBike löschen",
+			     -variable => \$do_delete_blockings,
+			    ),
+	     -sticky => "w",
+	     -columnspan => $cs,
 	    );
 
     my $get_text = sub {
@@ -3303,15 +3312,21 @@ EOF
 		      $txt->insert("end", $err);
 		  }
 
+		  # Im Anschluss...
 		  if ($edit_after) {
 		      if (fork == 0) {
 			  exec("emacsclient", "-n", $pl_file);
 			  CORE::exit(1);
 		      }
-		      if (fork == 0) {
-			  exec("emacsclient", "-n", $file);
-			  CORE::exit(1);
+		      if (!$as_data) {
+			  if (fork == 0) {
+			      exec("emacsclient", "-n", $file);
+			      CORE::exit(1);
+			  }
 		      }
+		  }
+		  if ($do_delete_blockings) {
+		      main::delete_user_dels(-force => 1);
 		  }
 
 		  $t->destroy;

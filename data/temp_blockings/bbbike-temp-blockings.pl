@@ -481,7 +481,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'gesperrt',
      },
      { from  => undef,
-       until => undef,
+       until => 1092439940,
        text  => 'Hellersdorfer Straße (Hellersdorf) in beiden Richtungen zwischen Gülzower Straße und Heinrich-Grüber-Straße Straße vollständig gesperrt aufgrund eines Wasserrohrbruches.',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -490,7 +490,7 @@ userdel	2 22998,12453 23090,12302
 EOF
      },
      { from  => undef,
-       until => undef,
+       until => 1092439940,
        data => <<EOF,
 userdel	2 9475,18617 9301,18722
 userdel	2 9590,18548 9896,18343
@@ -504,6 +504,30 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -74489,80545 -74038,78181
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Flottwellstr. (Tiergarten) in beiden Richtungen zwischen Lützowstraße und Am Karlsbad Verkehrsbehinderung durch Absenkung der Fahrbahn, Straße vollständig gesperrt',
+       type  => 'handicap',
+      data  => <<EOF,
+userdel	q4 8199,10634 8281,10791
+EOF
+     },
+     { from  => 1092520800, # 2004-08-15 00:00
+       until => 1094940000, # 2004-09-12 00:00
+       text  => 'B 96A; (Schönfließer Str.); OL Schildow; grundh. Straßenbau Vollsperrung; 16.08.2004-11.09.2004 ',
+       type  => 'handicap',
+      data  => <<EOF,
+userdel	q4 8194,25966 8182,25608
+EOF
+     },
+     { from  => 1092520800, # 2004-08-15 00:00
+       until => 1093644000, # 2004-08-28 00:00
+       text  => 'L 222; (Gransee-Großwoltersdorf); zw. Gransee und Abzw. Neulögow Deckenerneuerung; Vollsperrung; 16.08.2004-27.08.2004 ',
+       type  => 'gesperrt',
+      data  => <<EOF,
+userdel	2 -8697,68965 -8826,68471
 EOF
      },
     );

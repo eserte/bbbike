@@ -417,6 +417,7 @@ fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 # XXX Very strange: with db4 on RedHat 8.0 I have to use O_RDWR instead of
 # O_RDONLY, otherwise the oneliner will die without an error message.
 # But O_RDWR does not work if the file is read-only, so still use O_RDONLY
+# Now using Tie::File, which works everywhere
 /tmp/other-source-fragezeichen:	${DATADIR}/qualitaet_s-orig ${DATADIR}/qualitaet_l-orig
 	cd ${DATADIR} && perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib -MStrassen::Core -MTie::File -e 'for my $$file (qw(qualitaet_s-orig qualitaet_l-orig)) { tie @l, "Tie::File", $$file or die qq{Cannot open $$file: $$!}; for my $$i (1 .. $$#l) { if ($$l[$$i-1] =~ /\#:\s+unverified_by\s+(.*?):?\s*$$/i) { my $$comment = "laut $$1"; my $$x = Strassen::parse($$l[$$i]); $$x->[Strassen::NAME()] .= " ($$comment)"; $$x->[Strassen::CAT()] = "?"; print Strassen::arr2line2($$x),"\n" } } }' > /tmp/other-source-fragezeichen-orig
 	${CONVERT2HAFAS} -basefile ${DATADIR}/qualitaet_s-orig /tmp/other-source-fragezeichen-orig > /tmp/other-source-fragezeichen

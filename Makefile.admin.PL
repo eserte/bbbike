@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.23 2004/08/01 17:46:18 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.23 2004/08/01 17:46:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -622,6 +622,11 @@ permission:
 	chmod ugo+r cgi/*.config
 	chmod ugo+rx data/temp_blockings
 	chmod ugo+r  data/temp_blockings/*
+
+.PHONY: data
+
+data:
+	cd data && ${MAKE}
 
 EOF
 ;

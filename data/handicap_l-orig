@@ -1,4 +1,4 @@
-# $Id: handicap_l-orig,v 4.7 2004/08/09 23:48:30 eserte Exp $
+# $Id: handicap_l-orig,v 4.7 2004/08/09 23:48:30 eserte Exp eserte $
 Brandenburger Str.: Fußgängerzone	q3 -12894,-977 -13171,-1042 -13556,-1140
 Neuer Garten: Schiebestrecke	q3 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12115,1331 -12185,1388
 Neuer Garten: Schiebestrecke	q3 -12081,1168 -12181,1196
@@ -13,7 +13,7 @@ Uferweg am Straussee: viele Fußgänger, enger Weg	q2 41668,17984 41612,18287 4167
 # temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #XXX del L 26; (Menkin-Brüssow); OD Brüssow; grundhafter Straßenausbau; Vollsperrung; 23.02.2004-12.07.2004	q4::inwork 57405,111424 57452,111569 58374,111669
 B 1; (Hauptstr.); OD Herzfelde; Kanal- und Straßenbau; Vollsperrung; 07.07.2004-03.09.2004	q4::inwork 40849,8976 41247,8861 41655,8944
-B 96A; (Schönfließer Str.); OL Schildow; Straßenbau; Vollsperrung; 28.06.2004-13.08.2004	q4::inwork 8194,25966 8021,26285
+#XXX del B 96A; (Schönfließer Str.); OL Schildow; Straßenbau; Vollsperrung; 28.06.2004-15.08.2004	q4::inwork 8194,25966 8021,26285
 #XXX del K 6949; (Prützke-Rietz); OL Prützke, Altes Dorf; Straßenbau; Vollsperrung; Umleitung; 28.06.2004-06.08.2004	q4::inwork -42050,-6999 -41923,-6892 -42009,-6765
 Potsdam, Friedrich-Engels-Str.: Bauarbeiten an der Nuthe-Brücke und weiter	q3::inwork -11507,-2130 -10995,-2108
 Potsdam, Großbeerenstr.: Richtung Westen gesperrt, Gehweg benutzen	q4::inwork; -9753,-2474 -10348,-2276

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.141 2004/08/12 22:46:05 eserte Exp $
+# $Id: bbbike,v 3.141 2004/08/12 22:46:05 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -14485,7 +14485,10 @@ sub restore_user_dels {
 }
 
 sub delete_user_dels {
-    if ($top->messageBox(-message => M"Alle benutzerdefinierten Sperrungen löschen?",
+    my(%args) = @_;
+
+    if ($args{-force} ||
+	$top->messageBox(-message => M"Alle benutzerdefinierten Sperrungen löschen?",
 			 -type => "YesNo",
 			 -icon => "question") =~ /^yes/i) {
 	$net->remove_all_from_deleted(sub {
