@@ -147,6 +147,46 @@ sub show_form {
 }
 
 sub resolve_street {
+    require BBBikeRouting;
+    my $br = BBBikeRouting->new;
+    $br->init_context;
+    my $start = $br->Start;
+    $start->Street(param("street"));
+    $start->Citypart(param("citypart"));
+    my $coord = $br->get_start_position;
+
+    if (!defined $coord) {
+	if (!$br->StartChoices && !@{$br->StartChoices}) {
+	    print header, start_html("Auswahl nach Straﬂen und Orten"), h1("Auswahl nach Straﬂen und Orten");
+	    print "Nichs gefunden!<br>";
+	    show_form();
+	    print end_html;
+	    return;
+	}
+
+	splice @{$br->StartChoices}, 20 if @{$br->StartChoices} > 20;
+	print header, start_html("Auswahl nach Straﬂen und Orten"), h1("Auswahl nach Straﬂen und Orten");
+	print start_form;
+	print h2("Mehrere Straﬂen gefunden");
+	print radio_group
+	    (-name=>"coords",
+	     -values => [map { $_->Coord } @{$br->StartChoices}],
+	     -labels => {map { ($_->Coord =>
+				$_->Street . " (" . $_->Citypart . ", " . $_->ZIP . ")" ) } @{$br->StartChoices}},
+	     -linebreak => "true",
+	    ), br;
+	print submit(-value => "Zeigen");
+	print end_form, hr;
+	show_form();
+	print end_html;
+	return;
+    }
+
+    my $xy = $start->Coord;
+    redirect_to_ms($xy);
+}
+
+sub old_resolve_street {
     my $plz = PLZ->new;
     my @args;
     if (defined param("citypart") && param("citypart") !~ /^\s*$/) {
