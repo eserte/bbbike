@@ -49,6 +49,10 @@ TARGETS_DISABLED=	label relation_gps
 WRITEABLE=	chmod u+w,ugo+r
 READONLY=	chmod ugo+r,ugo-w
 
+## XXX what is write, what is wrong?
+#COORDS_DATA_SORT_OPTS=	-f -t "|" -k 1,3
+COORDS_DATA_SORT_OPTS=
+
 all:	targets check .modified .rsync_include make_misc
 
 targets:	${TARGETS}
@@ -567,10 +571,10 @@ check-disabled:	.check_label
 .modified:	${TARGETS}
 	${MISCSRCDIR}/create_modified
 
-# XXX maybe create also a ".check_" rule
 sort-Berlin.coords.data:
 	mv Berlin.coords.data Berlin.coords.data~
-	env LC_ALL=de_DE.ISO_8859-1 sort < Berlin.coords.data~ > Berlin.coords.data
+	env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} < Berlin.coords.data~ > Berlin.coords.data
+	touch .check_Berlin_coords_data
 
 # For adjusting the buffer in BBBikeXS.xs.
 # Please adjust the number according to MAXBUF and MAXPOINTS in BBBikeXS.xs.
@@ -607,8 +611,8 @@ check-crossings:	.check_crossings
 check-Berlin.coords.data:	.check_Berlin_coords_data
 
 .check_Berlin_coords_data: Berlin.coords.data
-	env LC_ALL=de_DE.ISO_8859-1 sort -c Berlin.coords.data || \
-	    ( env LC_ALL=de_DE.ISO_8859-1 sort Berlin.coords.data | diff -u - Berlin.coords.data; false )
+	env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} -c Berlin.coords.data || \
+	    ( env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} Berlin.coords.data | diff -u - Berlin.coords.data; false )
 	@touch $@
 
 check-nearest:
