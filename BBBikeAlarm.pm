@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAlarm.pm,v 1.26 2003/11/16 21:13:13 eserte Exp $
+# $Id: BBBikeAlarm.pm,v 1.28 2004/04/27 21:06:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -30,7 +30,7 @@ BEGIN {
 use Msg qw(frommain);
 1;
 ') {
-	warn $@ if $@;
+	#warn $@ if $@;
 	eval 'sub M ($) { $_[0] }';
 	eval 'sub Mfmt { sprintf(shift, @_) }';
     }
@@ -41,7 +41,7 @@ my $install_datebook_additions = 1;
 
 use Time::Local;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.26 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
@@ -289,6 +289,7 @@ sub enter_alarm {
 		       $t->destroy;
 		   })->pack(-side => "left", -fill => "x", -expand => 1);
 	$f->Button(Name => "close",
+		   -text => M"Schließen",
 		   -command => sub {
 		       $do_close = 1;
 		       $t->destroy;
@@ -298,6 +299,43 @@ sub enter_alarm {
 	    $t->waitVariable(\$do_close);
 	}
     }
+}
+
+sub enter_alarm_small_dialog {
+    my($top, %args) = @_;
+    my $t = $top->Toplevel(-title => "Alarm");
+    $t->transient($top) if $main::transient;
+    my $time;
+    my $e = $t->Entry(-textvariable => \$time,
+		      -width => 6,
+		     )->grid(-row => 0, -column => 0,
+			     -columnspan => 2,
+			     -sticky => "we");
+    $e->focus;
+
+    my $weiter;
+    my $okb =
+	$t->Button(-text => "OK",
+		   -command => sub {
+		       my($h_a, $m_a) = $time =~ /(\d{1,2})[:.](\d{2})/;
+		       if (!defined $h_a || !defined $m_a) {
+			   $top->messageBox(-message => "Wrong time format (ankunft)",
+					    -icon => "error",
+					    -type => "OK");
+			   return undef;
+		       }
+		       tk_leave(sprintf "%02d%02d", $h_a, $m_a, -text => "Leave");
+		       $weiter = 1;
+		   })->grid(-row => 1, -column => 0);
+    $e->bind("<Return>" => sub { $okb->invoke });
+    $t->Button(-text => "Cancel",
+	       -command => sub {
+		   $weiter = 1;
+	       })->grid(-row => 1, -column => 1);
+    $t->Popup(-popover => "cursor");
+    $t->OnDestroy(sub { $weiter = 1 });
+    $t->waitVariable(\$weiter);
+    $t->destroy if Tk::Exists($t);
 }
 
 sub get_all_terms {
@@ -341,7 +379,7 @@ sub tk_leave {
     my($time, %args) = @_;
     my $end_time = end_time($time);
     my $text = $args{-text};
-    $text = "Leave" if $text eq "";
+    $text = "Leave" if !defined $text || $text eq "";
     $text =~ s/[\"\\]//g; # XXX quote properly
     bg_system("$^X $FindBin::RealBin/BBBikeAlarm.pm -tk -time $end_time -text \"$text\"");
 }
@@ -625,65 +663,85 @@ sub get_alarms_file {
     $alarms_file;
 }
 
-use enum qw(:LIST_ HOST PID TIME RELTIME DESC STATE);
+use constant LIST_HOST    => 0;
+use constant LIST_PID     => 1;
+use constant LIST_TIME    => 2;
+use constant LIST_RELTIME => 3;
+use constant LIST_DESC    => 4;
+use constant LIST_STATE   => 5;
 
 sub _get_host {
     eval 'require Sys::Hostname; Sys::Hostname::hostname();';
 }
 
-sub tk_show_all {
-    my $w = shift;
-    my @result = show_all();
-    require Tk;
-    require Tk::HList;
-    my $this_host = _get_host();
-    my $top;
-    if ($w) {
-	$top = $w->Toplevel;
-    } else {
-	$top = MainWindow->new;
-    }
-    $top->title(M("Alarmprozesse"));
-    my $hl;
-    $hl = $top->Scrolled("HList", -header => 1,
-			 -columns => 6, -scrollbars => "osoe",
-			 -width => 50,
-			 -command => sub {
-			     my $entry = shift;
-			     my $data = $hl->entrycget($entry, -data);
-			     if ($data->[LIST_HOST] eq $this_host &&
-				 $hl->messageBox(-message => Mfmt("Prozess %s abbrechen?", $data->[LIST_PID]),
-						 -type => "YesNo",
-						) =~ /yes/i) {
-				 kill 9 => $data->[LIST_PID];
-				 del_tk_alarm($data->[LIST_PID]);
-				 $top->destroy;
-				 tk_show_all();
-			     }
-			 },
-			)->pack(-fill => "both", -expand => 1);
-    $hl->headerCreate(LIST_HOST,    -text => M"Rechner");
-    $hl->headerCreate(LIST_PID,     -text => M"Pid");
-    $hl->headerCreate(LIST_TIME,    -text => M"Zeit");
-    $hl->headerCreate(LIST_RELTIME, -text => M"Verbl. Zeit");
-    $hl->headerCreate(LIST_DESC,    -text => M"Beschr.");
-    $hl->headerCreate(LIST_STATE,   -text => M"Status");
-    my $i=0;
-    foreach my $result (@result) {
-	$hl->add($i, -text => $result->[LIST_HOST], -data => $result);
-	$hl->itemCreate($i, LIST_PID, -text => $result->[LIST_PID]);
-	$hl->itemCreate($i, LIST_TIME, -text => scalar localtime $result->[LIST_TIME]);
-	my $min = ($result->[LIST_TIME]-time)/60;
-	if ($min < 0) {
-	    $hl->itemCreate($i, LIST_RELTIME, -text => M"überfällig");
+{
+    my($w, $this_host, $top);
+
+    sub tk_show_all_init {
+	$w = shift;
+	require Tk;
+	require Tk::HList;
+	$this_host = _get_host();
+	if ($w) {
+	    $top = $w->Toplevel;
 	} else {
-	    $hl->itemCreate($i, LIST_RELTIME, -text => sprintf "%d:%02d h", $min/60, abs($min)%60);
+	    $top = MainWindow->new;
 	}
-	$hl->itemCreate($i, LIST_DESC, -text => $result->[LIST_DESC]);
-	$hl->itemCreate($i, LIST_STATE, -text => $result->[LIST_STATE]);
-	$i++;
+	$top->title(M("Alarmprozesse"));
     }
-    Tk::MainLoop();
+
+    sub tk_show_all_do {
+	my @result = show_all();
+	my $hl;
+	$this_host = $this_host; # hmmm ... needed so the hlist command closure may see this lexical...
+	$hl = $top->Scrolled("HList", -header => 1,
+			     -columns => 6, -scrollbars => "osoe",
+			     -width => 50,
+			     -command => sub {
+				 my $entry = shift;
+				 my $data = $hl->entrycget($entry, -data);
+				 if ($data->[LIST_HOST] eq $this_host &&
+				     $hl->messageBox(-message => Mfmt("Prozess %s abbrechen?", $data->[LIST_PID]),
+						     -type => "YesNo",
+						    ) =~ /yes/i) {
+				     kill 9 => $data->[LIST_PID];
+				     del_tk_alarm($data->[LIST_PID]);
+				     $hl->destroy;
+				     tk_show_all_do();
+				 }
+			     },
+			    )->pack(-fill => "both", -expand => 1);
+	$hl->headerCreate(LIST_HOST,    -text => M"Rechner");
+	$hl->headerCreate(LIST_PID,     -text => M"Pid");
+	$hl->headerCreate(LIST_TIME,    -text => M"Zeit");
+	$hl->headerCreate(LIST_RELTIME, -text => M"Verbl. Zeit");
+	$hl->headerCreate(LIST_DESC,    -text => M"Beschr.");
+	$hl->headerCreate(LIST_STATE,   -text => M"Status");
+
+	my $i=0;
+	foreach my $result (@result) {
+	    $hl->add($i, -text => $result->[LIST_HOST], -data => $result);
+	    $hl->itemCreate($i, LIST_PID, -text => $result->[LIST_PID]);
+	    $hl->itemCreate($i, LIST_TIME, -text => scalar localtime $result->[LIST_TIME]);
+	    my $min = ($result->[LIST_TIME]-time)/60;
+	    if ($min < 0) {
+		$hl->itemCreate($i, LIST_RELTIME, -text => M"überfällig");
+	    } else {
+		$hl->itemCreate($i, LIST_RELTIME, -text => sprintf "%d:%02d h", $min/60, abs($min)%60);
+	    }
+	    $hl->itemCreate($i, LIST_DESC, -text => $result->[LIST_DESC]);
+	    $hl->itemCreate($i, LIST_STATE, -text => $result->[LIST_STATE]);
+	    $i++;
+	}
+    }
+
+    sub tk_show_all {
+	my $w = shift;
+	tk_show_all_init($w);
+	tk_show_all_do();
+	Tk::MainLoop();
+    }
+
 }
 
 sub show_all {

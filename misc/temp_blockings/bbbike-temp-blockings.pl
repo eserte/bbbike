@@ -252,4 +252,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Lückstraße zwischen Giselastraße und Schlichtallee in Fahrtrichtung Schlichtallee Bauarbeiten, Straße gesperrt. Dauer: 26.04.2004, 07:00 Uhr bis voraussichtlich 30.04.2004 ',
        type  => 'handicap',
      },
+     { from  => 1083204000, # 2004-04-29 04:00
+       until => 1083535200, # 2004-05-03 00:00
+       file  => 'turmstr.bbd',
+       text  => 'Turmstraße zwischen Stromstraße und Oldenburger Straße/Ottostraße Frühlingsfest, Straße gesperrt, Dauer: 30.04.2004, 04.00 Uhr bis 02.05.2004, 24.00 Uhr',
+       type  => 'gesperrt',
+     },
     );
