@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeStats.pm,v 1.10 2004/07/16 23:19:01 eserte Exp $
+# $Id: BBBikeStats.pm,v 1.10 2004/07/16 23:19:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -46,10 +46,11 @@ sub calculate {
 
     my(%net, %len, %coords);
 
-    $net{Quality}    = $dataset->get_net("str","q","all",-nettype => "cat");
-    $net{Handicap}   = $dataset->get_net("str","h","all",-nettype => "cat");
-    $net{Cyclepaths} = $dataset->get_net("str","rw","all",-nettype => "cat");
-    $net{Category}   = $dataset->get_net("str","s","all",-nettype => "cat");
+    $net{Quality}      = $dataset->get_net("str","q","all",-nettype => "cat");
+    $net{Handicap}     = $dataset->get_net("str","h","all",-nettype => "cat");
+    $net{Cyclepaths}   = $dataset->get_net("str","rw","all",-nettype => "cat");
+    $net{Category}     = $dataset->get_net("str","s","all",-nettype => "cat");
+    #XXX to be continued.... $net{Fragezeichen} = $dataset->get_net("str","fz","all",-nettype => "cat");
 
     for my $i (0 .. $#path-1) {
 	my $hop_len = Strassen::Util::strecke_s($path[$i], $path[$i+1]);
