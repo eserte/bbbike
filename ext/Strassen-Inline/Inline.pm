@@ -1,7 +1,7 @@
 # -*- c -*-
 
 #
-# $Id: Inline.pm,v 2.28 2004/12/12 19:53:28 eserte Exp eserte $
+# $Id: Inline.pm,v 2.29 2004/12/18 12:36:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ package Strassen::Inline;
 require 5.005; # new semantics of hv_iterinit
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 2.28 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 2.29 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Cwd;
@@ -268,7 +268,9 @@ void search_c(SV* self, char* from, char* to, ...) {
   {
     /* check for validity and record <from> and <to> */
     SV** tmp2 = hv_fetch(c_net_coord2ptr, from, strlen(from), 0);
-    if (!tmp2)
+    if (tmp2 && SvGMAGICAL(*tmp2))
+	mg_get(*tmp2);
+    if (!tmp2 || !SvOK(*tmp2))
       croak("Cannot find start coordinate `%s' in net", from);
     from_ptr = SvIV(*tmp2);
 
@@ -276,7 +278,9 @@ void search_c(SV* self, char* from, char* to, ...) {
     from_y = PTR_TO_Y_COORD(from_ptr);
 
     tmp2 = hv_fetch(c_net_coord2ptr, to, strlen(to), 0);
-    if (!tmp2)
+    if (tmp2 && SvGMAGICAL(*tmp2))
+	mg_get(*tmp2);
+    if (!tmp2 || !SvOK(*tmp2))
       croak("Cannot find goal coordinate `%s' in net", to);
     to_ptr = SvIV(*tmp2);
 

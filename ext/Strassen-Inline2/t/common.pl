@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: common.pl,v 1.4 2004/05/19 20:02:58 eserte Exp eserte $
+# $Id: common.pl,v 1.5 2004/12/18 10:44:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -34,10 +34,10 @@ TEST5:
     my $routing = BBBikeRouting->new->init_context;
     $routing->Start->Street("Yitzhak-Rabin/Scheidemann");
     $routing->resolve_position($routing->Start);
-    ok(defined $routing->Start->Coord);
+    ok(defined $routing->Start->Coord, "Start coord defined");
     $routing->Goal->Street("Unter den Linden/Glinka");
     $routing->resolve_position($routing->Goal);
-    ok(defined $routing->Goal->Coord);
+    ok(defined $routing->Goal->Coord, "Goal coord defined");
 
     my(@arr) = search_c(
         $net, $routing->Start->Coord, $routing->Goal->Coord,
@@ -51,7 +51,7 @@ TEST5:
         },
     );
 
-    ok(scalar @arr);
+    ok(scalar @arr, "Path result");
 }
 
 # Lützowufer => Schöneberger Ufer
@@ -62,10 +62,10 @@ TEST6:
     my $routing = BBBikeRouting->new->init_context;
     $routing->Start->Street("Lützowufer/Budapester");
     $routing->resolve_position($routing->Start);
-    ok(defined $routing->Start->Coord);
+    ok(defined $routing->Start->Coord, "Start coord defined");
     $routing->Goal->Street("Schöneberger Ufer/Kluckstr.");
     $routing->resolve_position($routing->Goal);
-    ok(defined $routing->Goal->Coord);
+    ok(defined $routing->Goal->Coord, "Goal coord defined");
 
     my(@arr) = search_c(
         $net, $routing->Start->Coord, $routing->Goal->Coord,
@@ -73,8 +73,8 @@ TEST6:
 
     my $path = $arr[0];
     my @route = $net->route_to_name($path);
-    ok($route[0]->[0], qr/Lützowufer/);
-    ok($route[1]->[0], qr/Schillstr\./);
+    like($route[0]->[0], qr/Lützowufer/, "Expected street");
+    like($route[1]->[0], qr/Schillstr\./, "Expected street");
 }
 
 # Potsdamer Str. => Heidestr.
@@ -85,10 +85,10 @@ TEST7:
     my $routing = BBBikeRouting->new->init_context;
     $routing->Start->Street("Entlastungsstr./Potsdamer");
     $routing->resolve_position($routing->Start);
-    ok(defined $routing->Start->Coord);
+    ok(defined $routing->Start->Coord, "Start coord defined");
     $routing->Goal->Street("Invalidenstr./Heidestr.");
     $routing->resolve_position($routing->Goal);
-    ok(defined $routing->Goal->Coord);
+    ok(defined $routing->Goal->Coord, "Goal coord defined");
 
     my(@arr) = search_c(
         $net, $routing->Start->Coord, $routing->Goal->Coord,
@@ -96,8 +96,8 @@ TEST7:
 
     my $path = $arr[0];
     my @route = $net->route_to_name($path);
-    ok($route[0]->[0], qr/Entlastungsstr/);
-    ok($route[1]->[0], qr/Bellevueallee/);
+    like($route[0]->[0], qr/Entlastungsstr/, "Expected street");
+    like($route[1]->[0], qr/Bellevueallee/, "Expected street");
 }
 
 $algorithm = $algorithm if 0; # peacify -w

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: hv_impl.t,v 1.17 2004/05/19 20:02:45 eserte Exp $
+# $Id: hv_impl.t,v 1.18 2004/12/18 10:44:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -13,7 +13,16 @@
 # WWW:  http://bbbike.sourceforge.net
 #
 
-use Test;
+BEGIN {
+    if (!eval q{
+	use Test::More;
+	1;
+    }) {
+	print "1..1\n";
+	print "ok 1 # skip tests only work with installed Test::More module\n";
+	exit;
+    }
+}
 
 BEGIN {
 # ***FILTER=2***
@@ -55,9 +64,9 @@ $algorithm = "C-A*";
 
 my $leaktest = defined &Devel::Leak::NoteSV;
 
-ok(1);
+pass("Initialization");
 
-ok(defined &Strassen::Inline::search_c);
+ok(defined &Strassen::Inline::search_c, "Search sub defined");
 
 my($start_coord, $goal1_coord, $goal2_coord);
 # pick up some random coords
@@ -81,15 +90,15 @@ $net->make_net;
 $net->make_sperre("gesperrt", Type => [qw(einbahn sperre wegfuehrung)]);
 
 @arr = Strassen::Inline::search_c($net, $start_coord, $goal1_coord);
-ok(!(!@arr || ref $arr[0] ne 'ARRAY'));
+ok(!(!@arr || ref $arr[0] ne 'ARRAY'), "Path result");
 
 {
     my $handle;
     Devel::Leak::NoteSV($handle) if $leaktest;
     {
 	my @arr = Strassen::Inline::search_c($net, $fixed_start, $fixed_goal);
-	ok(@arr);
-	ok(ref $arr[0] eq 'ARRAY');
+	ok(@arr, "Path between $fixed_start and $fixed_goal");
+	is(ref $arr[0], 'ARRAY', "Path elements correct");
 	#XXX use Devel::Peek;Dump($arr[0]);
 	if ($v > 2) {
 	    require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$fixed_start, $fixed_goal, \@arr, scalar @{ $arr[0] }],[])->Indent(1)->Useqq(1)->Dump; # XXX
@@ -104,7 +113,7 @@ eval {
     # should not segv:
     Strassen::Inline::search_c($net, "not", "existing");
 };
-ok(!($@ !~ /not reachable/));
+ok(!($@ !~ /not reachable/), "Reachable error message");
 
 do "$FindBin::RealBin/common.pl";
 die $@ if $@;

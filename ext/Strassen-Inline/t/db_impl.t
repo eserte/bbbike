@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: db_impl.t,v 1.11 2003/09/02 21:40:16 eserte Exp $
+# $Id: db_impl.t,v 1.13 2004/12/18 12:36:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002, 2003 Slaven Rezic. All rights reserved.
@@ -46,16 +46,15 @@ use vars qw($net $algorithm);
 
 BEGIN {
     if (!eval q{
-	use Test;
+	use Test::More;
 	1;
     }) {
-	print "# tests only work with installed Test module\n";
 	print "1..1\n";
-	print "ok 1\n";
+	print "ok 1 # skip tests only work with installed Test::More module\n";
 	exit;
     }
 
-    $tests = 23;
+    $tests = 24;
 }
 
 BEGIN { plan tests => $tests }
@@ -86,8 +85,8 @@ for my $coordref (\$start_coord, \$goal1_coord, \$goal2_coord) {
 my $fixed_start = $s->get(0)->[Strassen::COORDS][0];
 my $fixed_goal  = $s->get($#{$s->{Data}})->[Strassen::COORDS][-1];
 
-ok(1);
-ok(defined &Strassen::Inline2::search_c);
+pass("Initialization");
+ok(defined &Strassen::Inline2::search_c, "Search sub defined");
 
 $net = StrassenNetz->new($s);
 #  my $prefix = "/tmp/test_strassen";
@@ -111,25 +110,25 @@ if (0) { # This does not work because search_c does not use
     $net->make_sperre("gesperrt", Type => [qw(wegfuehrung)]);
 }
 
-ok($net->reachable($start_coord));
-ok($net->reachable($goal1_coord));
-ok($net->reachable($goal2_coord));
+ok($net->reachable($start_coord), "$start_coord reachable");
+ok($net->reachable($goal1_coord), "$goal1_coord reachable");
+ok($net->reachable($goal2_coord), "$goal2_coord reachable");
 
 @arr = Strassen::Inline2::search_c($net, $start_coord, $goal1_coord);
-ok(@arr);
-ok(ref $arr[0] eq 'ARRAY');
+ok(@arr, "Path between $start_coord and $goal1_coord");
+is(ref $arr[0], 'ARRAY', "Path elements correct");
 
 @arr = Strassen::Inline2::search_c($net, $start_coord, $goal2_coord);
-ok(@arr);
-ok(ref $arr[0] eq 'ARRAY');
+ok(@arr, "Path between $start_coord and $goal2_coord");
+is(ref $arr[0], 'ARRAY', "Path elements correct");
 
 {
     my $handle;
     Devel::Leak::NoteSV($handle) if $leaktest;
     {
 	my @arr = Strassen::Inline2::search_c($net, $fixed_start, $fixed_goal);
-	ok(@arr);
-	ok(ref $arr[0] eq 'ARRAY');
+	ok(@arr, "Path between $fixed_start and $fixed_goal");
+	is(ref $arr[0], 'ARRAY', "Path elements correct");
     }
     Devel::Leak::CheckSV($handle) if $leaktest;
 }
@@ -137,8 +136,9 @@ ok(ref $arr[0] eq 'ARRAY');
 #use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->Dumpxs([@arr],[]); # XXX
 
 # should not segv:
-eval { Strassen::Inline2::search_c($net, "not", "existing") };
-ok($@ ne "");
+@arr = eval { Strassen::Inline2::search_c($net, "not", "existing") };
+isnt($@, "", "Expected error message");
+is(scalar @arr, 0, "Expected no result");
 
 do "$FindBin::RealBin/common.pl";
 die $@ if $@;

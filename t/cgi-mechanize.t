@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.12 2004/12/04 22:50:51 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.12 2004/12/04 22:50:51 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -118,7 +118,7 @@ like($agent->content, qr/Route/);
 ######################################################################
 # test for Kaiser-Friedrich-Str. (Potsdam) problem
 
-{
+XXX: {
 
 my $agent = WWW::Mechanize->new;
 #XXX my $formfiller = WWW::Mechanize::FormFiller->new();
@@ -259,7 +259,7 @@ like($agent->content, qr{Invalidenstr./Heidestr.}i,  "S-Bhf., next crossing");
 ######################################################################
 # Brandenburger Tor: in Berlin and Potsdam
 
-XXX: {
+{
 my $agent = WWW::Mechanize->new;
 $agent->env_proxy;
 

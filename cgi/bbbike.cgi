@@ -1011,7 +1011,7 @@ EOF
 
 sub _potsdam_hack {
     my $street = shift;
-    my $potsdam_file = "$tmp_dir/potsdam_strassen_$<";
+    my $potsdam_file = "$tmp_dir/" . $Strassen::Util::cacheprefix . "_" . $< . "_potsdam_strassen";
     my $potsdam_str = eval { Strassen->new($potsdam_file) };
     if (!$potsdam_str) {
 	$potsdam_str = Strassen->new;
@@ -4167,27 +4167,29 @@ sub get_streets {
 	     ($scope eq 'wideregion' ? "landstrassen2" : ()),
 	    );
 
-    local $use_cooked_street_data = $use_cooked_street_data;
- LOAD_STREETS:
-    if ($use_cooked_street_data) {
-	@f = map { "$_-cooked" } @f;
-    }
-    eval {
-	if (@f == 1) {
-	    $g_str = new Strassen $f[0];
-	} else {
-	    $g_str = new MultiStrassen @f;
-	}
-    };
-    if ($@) {
+    do {
+	my $use_cooked_street_data = $use_cooked_street_data;
+	my @f = @f;
 	if ($use_cooked_street_data) {
-	    warn 'Maybe the "cooked" version is missing? Try again the normal version...';
-	    $use_cooked_street_data = 0;
-	    goto LOAD_STREETS;
-	} else {
-	    die $@;
+	    @f = map { "$_-cooked" } @f;
 	}
-    }
+	eval {
+	    if (@f == 1) {
+		$g_str = new Strassen $f[0];
+	    } else {
+		$g_str = new MultiStrassen @f;
+	    }
+	};
+	if ($@) {
+	    if ($use_cooked_street_data) {
+		warn 'Maybe the "cooked" version is missing? Try again the normal version...';
+		$use_cooked_street_data = 0;
+		redo;
+	    } else {
+		die $@;
+	    }
+	}
+    } while(0);
     $g_str->{Scope} = $scope;
 
     if (!$use_cooked_street_data) {
