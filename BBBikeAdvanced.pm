@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.107 2004/08/18 22:43:18 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.108 2004/08/21 23:08:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -25,6 +25,8 @@ BEGIN {
 	eval 'sub M ($) { @_ }'; warn $@ if $@;
     }
 }
+
+use constant MAX_LAYERS => 100;
 
 sub start_ptksh {
     my $perldir = $Config{'scriptdir'};
@@ -521,7 +523,7 @@ sub additional_layer_dialog {
 		 });
     };
     $fill_pane = sub {
-	for my $i (1..100) {
+	for my $i (1..MAX_LAYERS) {
 	    my $abk = "L$i";
 	    if ($str_draw{$abk}) {
 		$f->Button(-text => "Straßen $abk ($str_file{$abk})",
@@ -556,6 +558,52 @@ sub additional_layer_dialog {
 	     }
 	 });
 }
+
+sub select_layers_for_net_dialog {
+    my $t = $top->Toplevel;
+    $t->title(M("Layer auswählen"));
+    $t->transient($top) if $transient;
+    $t->geometry("300x400");
+    require Tk::Pane;
+    my $f = $t->Scrolled("Pane", -scrollbars => "osoe",
+			 -sticky => 'nw',
+			)->pack(-fill => "both", -expand => 1);
+
+    my %_custom_net_str = %custom_net_str;
+    for my $i (1..MAX_LAYERS) {
+	my $abk = "L$i";
+	if ($str_draw{$abk}) {
+	    $f->Checkbutton(-text => "Straßen $abk ($str_file{$abk})",
+			    -variable => \$_custom_net_str{$abk},
+			   )->pack(-anchor => "w");
+	}
+    }
+
+    my $wait = 0;
+    {
+	my $f = $t->Frame->pack(-fill => "x");
+	$f->Button(Name => "ok",
+		   -command => sub {
+		       $wait = +1;
+		   })->pack(-side => "left");
+	$f->Button(Name => "close",
+		   -command => sub {
+		       $wait = -1;
+		   })->pack(-side => "left");
+    }
+    $t->OnDestroy(sub { $wait = -1 });
+    $t->waitVariable(\$wait);
+    if ($wait > 0) {
+	my $changed = 0;
+	while(my($k,$v) = each %_custom_net_str) {
+	    $changed++ if $custom_net_str{$k} != $v;
+	    $custom_net_str{$k} = $v;
+	}
+	make_net() if $changed;
+    }
+    $t->destroy if Tk::Exists($t);
+}
+
 
 sub choose_from_additional_layer {
     additional_layer_dialog
@@ -593,7 +641,7 @@ sub delete_additional_layer {
     };
     $fill_pane = sub {
 	my $seen = 0;
-	for my $i (1..100) {
+	for my $i (1..MAX_LAYERS) {
 	    my $abk = "L$i";
 	    if ($str_draw{$abk} || $p_draw{$abk}) {
 		my(@files);
@@ -1085,6 +1133,10 @@ sub add_search_net_menu_entries {
 			   -command => \&change_net_type,
 			  );
     }
+    $nsbm->command(-label => M"Layer für Custom auswählen",
+		   -command => sub {
+		       select_layers_for_net_dialog();
+		   });
     $nsbm->checkbutton(-label => M"Add fragezeichen",
 		       -variable => \$add_net{fz},
 		       -command => \&change_net_type,
@@ -2720,7 +2772,7 @@ sub gps_animation_update_optionmenu {
     if (defined $gps_animation_om && Tk::Exists($gps_animation_om)) {
 	my $om = $gps_animation_om;
 	$om->configure(-options => []); # empty old
-	for my $i (0 .. 100) {
+	for my $i (0 .. MAX_LAYERS) {
 	    my $abk = "L$i";
 	    if ($str_draw{$abk} && $str_file{$abk} =~ /gpsspeed/) {
 		$om->addOptions([$str_file{$abk} => $i]);

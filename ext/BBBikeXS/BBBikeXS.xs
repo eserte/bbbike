@@ -1026,6 +1026,8 @@ fast_plot_point(canvas, abk, fileref, progress)
 	        strcat(abkcat, cat);
 	        strcat(abkcat, "-fg");
 	        av_store(tags, 3, newSVpv(abkcat, 0));
+		sprintf(abkcat, "%s-%d", abk, count);
+		av_store(tags, 4, newSVpv(abkcat, 0));
 
 	        PUSHMARK(sp);
 	        XPUSHs(canvas);

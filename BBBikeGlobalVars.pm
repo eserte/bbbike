@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.19 2004/07/27 23:12:04 eserte Exp eserte $
+# $Id: BBBikeGlobalVars.pm,v 1.20 2004/08/21 23:09:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -32,7 +32,7 @@ use vars
      @scrollregion $init_scrollregion $normal_scrollregion $scrollre
      $K2Listbox
      $dataset %str_obj %str_cache_attr %p_obj $net $no_make_net
-     %str_file %p_file $koord %ampeln %hoehe
+     %str_file %p_file $koord %ampeln %hoehe %custom_net_str
      %sperre %sperre_tragen %sperre_narrowpassage $sperre_file $use_faehre
      $do_activate_temp_blockings $show_active_temp_blockings
      $coord_system $coord_system_obj $scale_coeff $scale %scalecommand

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTProgress.pm,v 1.6 2003/01/06 01:55:02 eserte Exp eserte $
+# $Id: SRTProgress.pm,v 1.8 2004/08/21 20:21:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -166,7 +166,9 @@ sub Finish {
     pop @{$w->{'CurrentLabel'}};
     pop @{$w->{'CurrentVisible'}};
     pop @{$w->{'HideDone'}};
-    if (!$w->{Group} || @{$w->{'HiddenWidgets'}} > 1) {
+    if (!$w->{Group} ||
+	($w->{'HiddenWidgets'} && @{$w->{'HiddenWidgets'}} > 1)
+       ) {
 	$w->RestoreDependents;
     }
     $w->{InProgress}--;

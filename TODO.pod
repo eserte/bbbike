@@ -929,8 +929,8 @@ bbbike.cgi (Kopfsteinpflaster vermeiden, rennradtauglich, Custom).
 
 =item * (M1)
 
-Rename BBBikeExp to something like BBBikeLazy. Check module references
-in other files, RCS, CVS, MANIFEST.
+Überprüfen, ob der Menüpunkt E<quot>GPS-Track bearbeitenE<quot> im
+Edit-Modus funktioniert.
 
 =back
 
@@ -1113,8 +1113,6 @@ relation_gps-orig aus insert_points herausnehmen? Ueberdenken...
 =item * (M4)
 
 insert_points changes:
-
-* warn if changing/deleting an endpoint
 
 * warn if deleting a point causes a street to have only one point
 

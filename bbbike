@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.143 2004/08/19 19:35:21 eserte Exp eserte $
+# $Id: bbbike,v 3.144 2004/08/21 23:09:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -212,7 +212,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.143 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.144 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -923,8 +923,15 @@ speicherplatzsparender.",
     label => M"xwd als Screengrabber", var => \$use_xwd_if_possible],
 
    M"Advanced",
-   ['edit','=s',undef,	alias => [qw(mode)],
-    label => M"Editmodus", var => \$set_mode],
+## XXX rethink...
+#    ['edit','!',undef,
+#     label => M"Editmodus beim Starten (experimentell!!!)", # XXX
+#     var => sub {
+# 	$set_mode = "std-no-orig";
+# 	$lazy_plot = 1;
+# 	$advanced = 1;
+#     }
+#    ],
    ['stderr','!',0,
     label => M"Fehlerausgabe auf stderr", var => \$stderr],
    ['stderrwindow','!',undef,
@@ -5697,7 +5704,8 @@ EOF
 			        : $ampel_photo
 			     ),
 		   -tags => ["$abk-fg", "$xx,$yy", $pointname,
-			     "$abk-" . ($category eq 'B' ? 'B' : 'X') . "-fg"],
+			     "$abk-" . ($category eq 'B' ? 'B' : 'X') . "-fg",
+			     $abk."-".($i-1)],
 		  );
 		$ampeln{"$xx,$yy"} = $category;
 	    } elsif ($abk eq 'pl') {
@@ -6276,6 +6284,10 @@ sub change_net_type {
     } elsif ($net_type eq "rus") {
 	*set_coords = \&set_coords_bahn;
     } elsif ($net_type eq 'custom') {
+	if (!keys %custom_net_str) {
+	    require BBBikeAdvanced;
+	    select_layers_for_net_dialog();
+	}
 	*set_coords = \&set_coords_custom;
     } else {
 	*set_coords = \&set_coords_str;
@@ -8162,9 +8174,7 @@ sub plotstr {
     }
 
     my $diffed_str = 0;
-    #XXX Abfrage auf $edit_mode notwendig?
-    if (#XXX del? ($edit_mode || $abk eq 'relgps') &&
-	$args{FastUpdate}) {
+    if ($args{FastUpdate}) {
 	my($new_str, $todelref) = $str->diff_orig(-clonefile => 1);
 	if (!defined $new_str) {
 	    warn M("Diff-Ausgabe wird nicht verwendet") if $verbose;
@@ -9042,11 +9052,11 @@ sub plot_point {
     status_message("");
 
     # Tags löschen
-    $c->delete("$abk-bg");
-    $c->delete("$abk-img");
-    $c->delete("$abk-fg");
-#XXXdel?    $c->delete(uc($abk));#XXX obsolete
-    $c->delete("$abk-label");
+    my @del_tags = ("$abk-bg", "$abk-img", "$abk-fg", "$abk-label");
+
+    if (!$args{FastUpdate}) {
+	$c->delete($_) for (@del_tags);
+    }
 
     my($ampel_photo, $andreaskr_photo);
     if ($abk eq 'lsa') {
@@ -9079,7 +9089,7 @@ sub plot_point {
     }
 
     my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
-    if ($lazy) {
+    if ($lazy && !$args{FastUpdate}) {
 	return bbbikelazy_add_data("p", $abk, $filename);
     }
 
@@ -9115,10 +9125,12 @@ sub plot_point {
 
     eval {
 	my $bhf;
-	if (defined $p_obj{$abk} &&
-	    $p_obj{$abk}->is_current &&
-	    $coord_system eq 'standard' &&
-	    $abk !~ /^L\d+/) {
+	if ($args{FastUpdate} ||
+	    (defined $p_obj{$abk} &&
+	     $p_obj{$abk}->is_current &&
+	     $coord_system eq 'standard' &&
+	     $abk !~ /^L\d+/)
+	   ) {
 	    $bhf = $p_obj{$abk};
 	} else {
 	    cache_decider_init();
@@ -9135,6 +9147,22 @@ sub plot_point {
 		(cache_decider() || $abk =~ /^L\d+/ || $abk eq 'kn') # 'L...' und 'kn' wegen Info
 	       ) {
 		$p_obj{$abk} = $bhf;
+	    }
+	}
+
+	my $diffed_str = 0;
+	if ($args{FastUpdate}) {
+	    my($new_str, $todelref) = $bhf->diff_orig(-clonefile => 1);
+	    if (!defined $new_str) {
+		warn M("Diff-Ausgabe wird nicht verwendet") if $verbose;
+		$c->delete($_) for (@del_tags);
+	    } else {
+		warn M("Diff-Ausgabe wird verwendet") if $verbose;
+		foreach (@$todelref) {
+		    $c->delete("$abk-$_");
+		}
+		$bhf = $new_str;
+		$diffed_str = 1;
 	    }
 	}
 
@@ -9198,6 +9226,13 @@ sub plot_point {
 	}
 	plot_symbol($c, $abk);
       PLOTPOINT_CONT:
+
+	if (($edit_mode || $edit_normal_mode || $abk eq 'relgps' || $args{FastUpdate}) and !$diffed_str) {
+	    warn "Try to copy original data" if $verbose;
+	    my $r = $p_obj{$abk}->copy_orig;
+	    warn "Returned $r" if $verbose;
+	}
+
 	restack_delayed(); # XXX check!
     };
     if ($@) {
@@ -14196,8 +14231,8 @@ sub make_net {
 		push @net_source_abk, $_;
 	    }
 	} elsif ($net_type eq 'custom') {
-	    while(my($abk,$val) = each %str_draw) {
-		if ($val && $abk =~ /^L\d/) {
+	    while(my($abk,$val) = each %custom_net_str) {
+		if ($val) { # XXX del? && $abk =~ /^L\d/) {
 		    eval {
 			if (!$str_obj{$abk}) {
 			    $str_obj{$abk} = new Strassen $str_file{$abk};

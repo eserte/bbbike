@@ -118,7 +118,7 @@ SKIP: {
 
  TODO: {
 	local $TODO;
-	$TODO = "Strange behaviour ... perl or Tk problem?"; # only seen with SuSE's perl 5.8.1 and a self-compiled Tk 800.025, but not with Tk 804.027
+	$TODO = "Strange behaviour ... perl or Tk problem?" # only seen with SuSE's perl 5.8.1 and a self-compiled Tk 800.025, but not with Tk 804.027
 	    if $Tk::VERSION < 804;
 	for my $abk (qw(B X Zbr)) {
 	    my(@tags) = $c->find(withtag => "lsa-$abk-fg");

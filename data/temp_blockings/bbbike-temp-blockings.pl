@@ -561,4 +561,20 @@ EOF
 userdel	q4 10023,-8859 10115,-8276
 EOF
      },
+     { from  => 1092693600, # 2004-08-17 00:00
+       until => 1099260000, # 2004-10-31 23:00
+       text  => 'L 142; (Kyritzer Str.); OD Wusterhausen, Klempnitzbrücke bis Winkelweg Sanierungsarbeiten Vollsperrung 18.08.2004-31.10.2004',
+       type  => 'gesperrt',
+      data  => <<EOF,
+userdel	2 -54776,53333 -55166,53457
+EOF
+     },
+     { from  => 1093384800, # 2004-08-25 00:00
+       until => 1097272800, # 2004-10-09 00:00
+       text  => 'L 30; (Tasdorfer Str.); OL Vogelsdorf, zw. Heinestr. u. Seestr. Kanalarbeiten Vollsperrung 26.08.2004-08.10.2004 ',
+       type  => 'handicap',
+      data  => <<EOF,
+userdel	q4 35359,12542 35656,11817
+EOF
+     },
     );

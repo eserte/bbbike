@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.73 2004/08/19 22:09:42 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.74 2004/08/21 23:07:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2230,7 +2230,7 @@ sub editmenu {
 	       -anchor => "w",
 	      )->pack(-fill => "x");
     $t->Label(-justify => "left",
-	      -text => "Use F8 to edit element under cursor.\nAlternatively use F2 for insert point.",
+	      -text => "Use F8 to edit element under mouse cursor.\nAlternatively use F2 for insert point.",
 	     )->pack(-anchor => "w");
     $t->update;
     $t->Popup(-popover => $top,
@@ -2907,7 +2907,6 @@ sub get_nearest_crossing_obj {
 
     my $ret2;
     if ($gpspoints{$edit_mode} && !$args{-onlybbbikedata}) {
-warn "ok";
 	push @ret, map { my $cr_name = $gpspoints_hash{$edit_mode}->{$_->[0]};
 			 $cr_name = (split '/', $cr_name)[2];
 			 +{Coord => $_->[0],

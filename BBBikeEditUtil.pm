@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEditUtil.pm,v 1.10 2004/08/18 22:45:04 eserte Exp $
+# $Id: BBBikeEditUtil.pm,v 1.11 2004/08/21 22:29:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -63,8 +63,13 @@ sub get_generated_files {
     closedir DIR;
     for my $misc_file (qw(zebrastreifen)) {
 	my $file = "$FindBin::RealBin/misc/$misc_file";
-	if (-e $file) {
+	if (-r $file) {
 	    push @files, $file;
+	}
+    }
+    for my $misc_file (glob("$ENV{HOME}/.bbbike/data/*.bbd")) {
+	if (-r $misc_file) {
+	    push @files, $misc_file;
 	}
     }
     sort @files;
