@@ -41,7 +41,6 @@ use lib (defined $BBBIKE_ROOT ? ("$BBBIKE_ROOT",
 	 "/home/e/eserte/src/bbbike/lib",
 	 "/home/e/eserte/src/bbbike/data",
 	); # XXX do not hardcode
-use PLZ;
 
 if (defined param("mapserver")) {
     redirect_to_ms();
@@ -184,41 +183,6 @@ sub resolve_street {
 
     my $xy = $start->Coord;
     redirect_to_ms($xy);
-}
-
-sub old_resolve_street {
-    my $plz = PLZ->new;
-    my @args;
-    if (defined param("citypart") && param("citypart") !~ /^\s*$/) {
-	push @args, Citypart => param("citypart");
-    }
-    push @args, Agrep => "default";
-    my($res_ref, $errors) = $plz->look_loop(PLZ::split_street(param("street")), @args);
-    if (!@$res_ref) {
-	print header, start_html("Auswahl nach Straﬂen und Orten"), h1("Auswahl nach Straﬂen und Orten");
-	print "Nichs gefunden!<br>";
-	show_form();
-	print end_html;
-    } elsif (@$res_ref > 1) {
-	splice @$res_ref, 20 if @$res_ref > 20;
-	print header, start_html("Auswahl nach Straﬂen und Orten"), h1("Auswahl nach Straﬂen und Orten");
-	_form;
-	print h2("Mehrere Straﬂen gefunden");
-	print radio_group
-	    (-name=>"coords",
-	     -values => [map { $_->[PLZ::LOOK_COORD] } @$res_ref],
-	     -labels => {map { ($_->[PLZ::LOOK_COORD] =>
-				$_->[PLZ::LOOK_NAME] . " (" . $_->[PLZ::LOOK_CITYPART] . ", " . $_->[PLZ::LOOK_ZIP] . ")" ) } @$res_ref},
-	     -linebreak => "true",
-	    ), br;
-	print submit(-value => "Zeigen");
-	print end_form, hr;
-	show_form();
-	print end_html;
-    } else {
-	my $xy = $res_ref->[0][PLZ::LOOK_COORD];
-	redirect_to_ms($xy);
-    }
 }
 
 sub resolve_city {
