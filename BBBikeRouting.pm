@@ -21,39 +21,47 @@ use strict;
 use Class::Struct;
 use BBBikeUtil;
 
-struct('BBBikeRouting::Position' => {Street => "\$", Citypart => "\$",
-				     City => "\$",
-				     Coord => "\$", Multi => "\$",
-				     Attribs => "\$",
-				    });
-struct('BBBikeRouting::Context' => {Vehicle => "\$", Scope => "\$",
-				    Velocity => "\$",
-				    UseXS => "\$", UseCache => "\$",
-				    PreferCache => "\$",
-				    UseNetServer => "\$",
-				    ZIPLookArgs => "\$",
-				    SearchArgs => "\$", Algorithm => "\$",
-				    CGI => "\$", BrowserInfo => "\$",
-				    RouteInfoKm => "\$",
-				    Verbose => "\$",
-				    MultipleChoices => "\$",
-				    MultipleChoicesLimit => "\$",
-				   });
-struct('BBBikeRouting' => {Context => "BBBikeRouting::Context",
-			   Start => "BBBikeRouting::Position",
-			   StartChoices => "\$", # array of BBBikeRouting::Position
-			   Via => "\$", # array of BBBikeRouting::Position
-			   ViaChoices => "\$", # XXX not used yet
-			   Goal => "BBBikeRouting::Position",
-			   GoalChoices => "\$", # array of BBBikeRouting::Position
-			   Dataset => "\$",
-  			   Streets => "\$", ZIP => "\$",
-  			   ZIPStreets => "\$", Net => "\$",
-  			   Stations => "\$", Cities => "\$",
-  			   Crossings => "\$",
-			   Path => "\$", RouteInfo => "\$",
-			   #PenaltyNets => "\$",
-			  });
+$BBBikeRouting::Position::Members =
+    {Street => "\$", Citypart => "\$",
+     City => "\$",
+     Coord => "\$", Multi => "\$",
+     Attribs => "\$",
+    };
+struct('BBBikeRouting::Position' => $BBBikeRouting::Position::Members);
+
+$BBBikeRouting::Context::Members =
+    {Vehicle => "\$", Scope => "\$",
+     Velocity => "\$",
+     UseXS => "\$", UseCache => "\$",
+     PreferCache => "\$",
+     UseNetServer => "\$",
+     ZIPLookArgs => "\$",
+     SearchArgs => "\$", Algorithm => "\$",
+     CGI => "\$", BrowserInfo => "\$",
+     RouteInfoKm => "\$",
+     Verbose => "\$",
+     MultipleChoices => "\$",
+     MultipleChoicesLimit => "\$",
+    };
+struct('BBBikeRouting::Context' => $BBBikeRouting::Context::Members);
+
+$BBBikeRouting::Members =
+    {Context => "BBBikeRouting::Context",
+     Start => "BBBikeRouting::Position",
+     StartChoices => "\$", # array of BBBikeRouting::Position
+     Via => "\$", # array of BBBikeRouting::Position
+     ViaChoices => "\$", # XXX not used yet
+     Goal => "BBBikeRouting::Position",
+     GoalChoices => "\$", # array of BBBikeRouting::Position
+     Dataset => "\$",
+     Streets => "\$", ZIP => "\$",
+     ZIPStreets => "\$", Net => "\$",
+     Stations => "\$", Cities => "\$",
+     Crossings => "\$",
+     Path => "\$", RouteInfo => "\$",
+     #PenaltyNets => "\$",
+    };
+struct('BBBikeRouting' => $BBBikeRouting::Members);
 
 sub BBBikeRouting_Position_Class { 'BBBikeRouting::Position' }
 sub BBBikeRouting_Context_Class  { 'BBBikeRouting::Context'  }
@@ -129,6 +137,14 @@ sub reset {
     $self->ViaChoices([]);
     $self->Goal($self->BBBikeRouting_Position_Class->new);
     $self->GoalChoices([]);
+}
+
+sub dump {
+    my $self = shift;
+    require Data::Dumper;
+    my @keys = grep { !/^(Dataset|Streets|ZIP|ZIPStreets|Net|Stations|Cities|Crossings)$/ } keys %$BBBikeRouting::Members;
+    my @values = map { $self->$_() } @keys;
+    Data::Dumper->new([@values], [@keys])->Indent(1)->Dump;
 }
 
 # Remove all data references and routing information, and change the scope
@@ -308,7 +324,7 @@ sub resolve_position {
 	    $pos_o->Street($ret->[Strassen::NAME()]);
 	    $pos_o->Citypart(undef);
 	    $pos_o->Coord($ret->[Strassen::COORDS()]->[0]);
-	    return;
+	    return $pos_o->Coord;
 	} # else fallback to streets
     }
 
@@ -324,7 +340,7 @@ sub resolve_position {
 	    $pos_o->Street(undef);
 	    $pos_o->Citypart(undef);
 	    $pos_o->Coord($ret->[Strassen::COORDS()]->[0]);
-	    return;
+	    return $pos_o->Coord;
 	} # else fallback
 	warn "Can't find city $city in @{[ $cities->file ]}, fallback to streets";
     }
@@ -333,6 +349,7 @@ sub resolve_position {
 	my(@streets) = split m|/|, $street;
 	my %coords;
 	$self->init_str; # for $self->Streets
+	my @full_name;
 	for my $s (@streets) {
 	    my(@r) = $self->Streets->get_all_by_name("^(?i:" . quotemeta($s) . ".*)", 1);
 	    if (!@r) {
@@ -342,17 +359,20 @@ sub resolve_position {
 	    if (!keys %coords) {
 		for my $r (@r) {
 		    for my $c (@{ $r->[Strassen::COORDS()] }) {
-			$coords{$c} = 1;
+			$coords{$c} = $r->[Strassen::NAME()];
 		    }
 		}
 	    } else {
 		for my $r (@r) {
 		    for my $c (@{ $r->[Strassen::COORDS()] }) {
 			if (exists $coords{$c}) {
-			    $pos_o->Street($street);
-			    $pos_o->Citypart(undef);
+			    require Strassen::Strasse;
+			    my($street1, @cityparts1) = Strasse::split_street_citypart($coords{$c});
+			    my($street2, @cityparts2) = Strasse::split_street_citypart($r->[Strassen::NAME()]);
+			    $pos_o->Street($street1 . "/" . $street2);
+			    $pos_o->Citypart(join(", ", @cityparts1, @cityparts2) || undef);
 			    $pos_o->Coord($c);
-			    return;
+			    return $c;
 			}
 		    }
 		}
