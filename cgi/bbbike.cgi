@@ -2639,7 +2639,7 @@ sub search_coord {
 		for my $s (@comment_files) {
 		    eval {
 			if ($s eq 'comments') {
-			    push @s, MultiStrassen->new(map { "comments_$_" } @Strassen::Dataset::comments_types);
+			    push @s, MultiStrassen->new(map { "comments_$_" } grep { $_ ne "kfzverkehr" } @Strassen::Dataset::comments_types);
 			} else {
 			    push @s, Strassen->new($s);
 			}
