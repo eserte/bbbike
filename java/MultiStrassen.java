@@ -5,7 +5,7 @@ import java.lang.Error;
 import java.util.Vector;
 import java.util.Enumeration;
 import java.io.FileNotFoundException;
-import Strassen;
+//import Strassen;
 
 class MultiStrassen extends Strassen {
   public MultiStrassen (Vector obj) throws Error, FileNotFoundException {

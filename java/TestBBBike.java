@@ -4,8 +4,8 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
 import java.io.*;
-import Strassen;
-import StrassenNetz;
+//import Strassen;
+//import StrassenNetz;
 
 class TestBBBike {
 

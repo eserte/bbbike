@@ -8,9 +8,9 @@ import java.util.StringTokenizer;
 import java.util.Vector;
 import java.io.File;
 import java.io.FileNotFoundException;
-import GeneralStrassen;
-import Strassen;
-import QSort;
+//import GeneralStrassen;
+//import Strassen;
+//import QSort;
 
 class StrassenNetz {
   GeneralStrassen strassen;

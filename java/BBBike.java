@@ -12,8 +12,8 @@ import java.awt.BorderLayout;
 import java.awt.Panel;
 import java.awt.Scrollbar;
 import java.io.*;
-import MyCanvas;
-import Strassen;
+//import MyCanvas;
+//import Strassen;
 
 class BBBike {
 

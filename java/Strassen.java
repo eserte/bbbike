@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.RandomAccessFile;
 import java.io.EOFException;
 import java.io.FileNotFoundException;
-import GeneralStrassen;
+//import GeneralStrassen;
 //import java.lang.System;
 //import java.util.Properties;
 
@@ -23,7 +23,9 @@ class Strassen implements GeneralStrassen {
   void initObject (File filename) throws FileNotFoundException {
     // XXX eigentlich static
     datadirs.addElement(new File("/home/e/eserte/src/bbbike/data"));
+    datadirs.addElement(new File("../data"));
     datadirs.addElement(new File("./data"));
+    datadirs.addElement(new File("/usr/local/BBBike/data"));
 
     Vector filenames = new Vector();
     for (Enumeration e = datadirs.elements() ; e.hasMoreElements() ;) {
