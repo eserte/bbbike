@@ -3049,16 +3049,23 @@ sub do_iconframe {
     my $sb2mb = $misc_frame2->Menubutton;
     my $sb2m = $sb2mb->Menu(-title => M"Sucheinstellungen");
 
+    # Note interplay between these two checkbuttons: 
     $sb2m->checkbutton(-label => M"Einbahn-/gesperrte Straßen beachten",
 		       -variable => \$sperre{'sperre'},
 		       -command => sub {
-			   $sperre{'einbahn'} = $sperre{'sperre'};
+			   $sperre{'einbahn'} = $sperre{'wegfuehrung'} = $sperre{'sperre'};
+			   if (!$sperre{'sperre'}) {
+			       $sperre{'einbahn-strict'} = 0;
+			   }
 			   pending(1, 'recalc-net');
 		       },
 		      );
     $sb2m->checkbutton(-label => M"Einbahn-/gesperrte Straßen *strikt* beachten",
 		       -variable => \$sperre{'einbahn-strict'},
 		       -command => sub {
+			   if ($sperre{'einbahn-strict'}) {
+			       $sperre{'einbahn'} = $sperre{'wegfuehrung'} = $sperre{'sperre'} = 1;
+			   }
 			   pending(1, 'recalc-net');
 		       },
 		      );

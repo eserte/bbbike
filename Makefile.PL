@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.87 2003/09/02 21:44:48 eserte Exp eserte $
+# $Id: Makefile.PL,v 1.88 2003/11/13 00:11:00 eserte Exp $
 
 BEGIN {
     $^W = 0;
@@ -112,9 +112,11 @@ use constant REQTABLE_LONGDESC=> 5;
    'LogTracker plugin'],
   [qw/XBase		0	all	0	devel/,
    'Erzeugen der Mapserver- oder anderer ESRI-Dateien'],
+  [qw/IPC::Run		0	all	0	base/,
+   'hilft bei der sicheren Ausführung von externen Kommandos (insbesondere für Win32)'],
  );
 
-# EXE prerequisites ####################################################
+# EXE corequisites ####################################################
 # standard Unix: uname, who, tee, at, diff, zcat, ping
 # BSD Unix:      leave
 # extra:         enscript, gv, ghostview, gs, netpbm-utils, cjpeg, agrep,

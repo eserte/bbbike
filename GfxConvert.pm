@@ -1,24 +1,24 @@
 # -*- perl -*-
 
 #
-# $Id: GfxConvert.pm,v 1.10 2003/01/08 20:01:33 eserte Exp $
+# $Id: GfxConvert.pm,v 1.11 2003/11/13 00:06:42 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2003 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net
 #
 
 package GfxConvert;
 
 use BBBikeUtil;
 use strict;
-use vars qw(%tmpfiles $VERBOSE %devices $pscap_called);
+use vars qw(%tmpfiles $VERBOSE %devices $pscap_called %convsub);
 
-my %convsub =
+%convsub =
   ('ps' => { 'ppm'  => \&ps2ppm,
 	     'gif'  => \&ps2gif,
 	     'jpeg' => \&ps2jpeg,
@@ -59,9 +59,15 @@ sub ps2ppm {
 		$infile);
     warn "Executing @cmd ..." if $VERBOSE;
     if (system(@cmd) != 0) {
-	die $error_preamble . 
-	  "Die Konvertierung mit gs fehlgeschlagen (exit: $?)";
+	die $error_preamble .
+	    "Die Konvertierung mit gs fehlgeschlagen (exit: $?)";
     }
+
+    return _ppm_post_transform($outfile, $outfile, %args);
+}
+
+sub _ppm_post_transform {
+    my($infile, $outfile, %args) = @_;
 
     if (defined $args{'-autocrop'}) {
 	if (!is_in_path("pnmcrop")) {
@@ -72,9 +78,9 @@ sub ps2ppm {
 	    # Zweimal pnmcrop aufrufen... beim ersten Mal wird der
 	    # schwarze Streifen am linken Rand entfernt (Bug in gs?),
 	    # beim zweiten Mal wird der eigentliche Schnitt durchgeführt.
-	    my $cmd = "pnmcrop -left $outfile | pnmcrop > $tmpfile";
-	    warn "Executing $cmd ..." if $VERBOSE;
-	    if (system($cmd) != 0) {
+	    my @cmd = (["pnmcrop", "-left", $outfile], "|",
+		       ["pnmcrop"], ">", $tmpfile);
+	    if (!run_command(@cmd)) {
 		warn "Warnung: Fehler beim Aufruf von pnmrotate.";
 	    } else {
 		warn "Mv from $tmpfile to $outfile ..." if $VERBOSE;
@@ -90,9 +96,9 @@ sub ps2ppm {
 	} else {
 	    my $tmpfile = "/tmp/GfxConvert-ps2ppm.$$.ppm";
 	    $tmpfiles{$tmpfile}++;
-	    my $cmd = "pnmrotate $args{'-rotate'} $outfile > $tmpfile";
-	    warn "Executing $cmd ..." if $VERBOSE;
-	    if (system($cmd) != 0) {
+	    my @cmd = (["pnmrotate", $args{'-rotate'}, $outfile],
+		       ">", $tmpfile);
+	    if (!run_command(@cmd)) {
 		warn "Warnung: Fehler beim Aufruf von pnmrotate.";
 	    } else {
 		warn "Mv from $tmpfile to $outfile ..." if $VERBOSE;
@@ -108,12 +114,9 @@ sub ps2ppm {
 	} else {
 	    my $tmpfile = "/tmp/GfxConvert-ps2ppm.$$.ppm";
 	    $tmpfiles{$tmpfile}++;
-	    # XXX escaping mit \ sollte nicht nötig sein!
-	    my $arg = join(" ", map { "\\$_ \\$args{'-mapcolor'}->{$_}" }
-			   keys %{ $args{'-mapcolor'} });
-	    my $cmd = "ppmchange $arg $outfile > $tmpfile";
-	    warn "Executing $cmd ..." if $VERBOSE;
-	    if (system($cmd) != 0) {
+	    my @arg = %{ $args{'-mapcolor'} };
+	    my @cmd = (["ppmchange", @arg, $outfile], ">", $tmpfile);
+	    if (!run_command(@cmd)) {
 		warn "Warnung: Fehler beim Aufruf von ppmchange.";
 	    } else {
 		warn "Mv from $tmpfile to $outfile ..." if $VERBOSE;
@@ -122,6 +125,7 @@ sub ps2ppm {
 	    }
 	}
     }
+
     1;
 }
 
@@ -130,16 +134,15 @@ sub ps2gif {
     my $error_preamble = "Die GIF-Datei kann nicht erstellt werden. Grund: ";
     if (!is_in_path("ppmtogif")) {
 	die $error_preamble .
-	  "ppmtogif aus der netpbm-Distribution wird benötigt.\n";
+	    "ppmtogif aus der netpbm-Distribution wird benötigt.\n";
     }
     my $ppmfile = "/tmp/GfxConvert.$$.ppm";
     $tmpfiles{$ppmfile}++;
     ps2ppm($infile, $ppmfile, %args);
-    my $cmd = "ppmtogif $ppmfile > $outfile";
-    warn "Executing $cmd ..." if $VERBOSE;
-    if (system($cmd) != 0) {
-	die $error_preamble . 
-	  "Konvertierung mit ppmtogif fehlgeschlagen (exit: $?)";
+    my @cmd = ( ["ppmtogif", $ppmfile], ">", $outfile );
+    if (!run_command(@cmd)) {
+	die $error_preamble .
+	    "Konvertierung mit ppmtogif fehlgeschlagen (exit: $?)";
     }
     1;
 }
@@ -154,11 +157,10 @@ sub ps2jpeg {
     my $ppmfile = "/tmp/GfxConvert.$$.ppm";
     $tmpfiles{$ppmfile}++;
     ps2ppm($infile, $ppmfile, %args);
-    my $cmd = "cjpeg -quality $quality $ppmfile > $outfile";
-    warn "Executing $cmd ..." if $VERBOSE;
-    if (system($cmd) != 0) {
+    my @cmd = (["cjpeg", "-quality", $quality, "$ppmfile"], ">", $outfile);
+    if (!run_command(@cmd)) {
 	die $error_preamble .
-	  "Konvertierung mit cjpeg fehlgeschlagen (exit: $?)";
+	    "Konvertierung mit cjpeg fehlgeschlagen (exit: $?)";
     }
     1;
 }
@@ -211,8 +213,8 @@ sub ps2png {
 		$infile);
     warn "Executing @cmd ..." if $VERBOSE;
     if (system(@cmd) != 0) {
-	die $error_preamble . 
-	  "Die Konvertierung mit gs fehlgeschlagen (exit: $?)";
+	die $error_preamble .
+	    "Die Konvertierung mit gs fehlgeschlagen (exit: $?)";
     }
     # XXX der ganze andere Wust aus ps2ppm fehlt hier...
     1;
@@ -296,67 +298,11 @@ sub xwd2ppm {
     my $cmd = "xwdtopnm < $infile > $outfile";
     warn "Executing $cmd ..." if $VERBOSE;
     if (system($cmd) != 0) {
-	die $error_preamble . 
+	die $error_preamble .
 	    "Die Konvertierung mit xwdtopnm fehlgeschlagen (exit: $?)";
     }
 
-    if (defined $args{'-autocrop'}) {
-	if (!is_in_path("pnmcrop")) {
-	    warn "Warnung: pnmcrop ist nicht vorhanden, kein Autocrop möglich.";
-	} else {
-	    my $tmpfile = "/tmp/GfxConvert-xwd2ppm.$$.ppm";
-	    $tmpfiles{$tmpfile}++;
-	    my $cmd = "pnmcrop -left $outfile | pnmcrop > $tmpfile";
-	    warn "Executing $cmd ..." if $VERBOSE;
-	    if (system($cmd) != 0) {
-		warn "Warnung: Fehler beim Aufruf von pnmrotate.";
-	    } else {
-		warn "Mv from $tmpfile to $outfile ..." if $VERBOSE;
-		require File::Copy;
-		File::Copy::mv($tmpfile, $outfile);
-	    }
-	}
-    }
-
-    if (defined $args{'-rotate'}) {
-	if (!is_in_path("pnmrotate")) {
-	    warn "Warnung: pnmrotate ist nicht vorhanden, keine Umwandlung nach Landscape.";
-	} else {
-	    my $tmpfile = "/tmp/GfxConvert-xwd2ppm.$$.ppm";
-	    $tmpfiles{$tmpfile}++;
-	    my $cmd = "pnmrotate $args{'-rotate'} $outfile > $tmpfile";
-	    warn "Executing $cmd ..." if $VERBOSE;
-	    if (system($cmd) != 0) {
-		warn "Warnung: Fehler beim Aufruf von pnmrotate.";
-	    } else {
-		warn "Mv from $tmpfile to $outfile ..." if $VERBOSE;
-		require File::Copy;
-		File::Copy::mv($tmpfile, $outfile);
-	    }
-	}
-    }
-
-    if (defined $args{'-mapcolor'}) {
-	if (!is_in_path("ppmchange")) {
-	    warn "Warnung: ppmchange ist nicht vorhanden, keine Anpassung der Farben.";
-	} else {
-	    my $tmpfile = "/tmp/GfxConvert-xwd2ppm.$$.ppm";
-	    $tmpfiles{$tmpfile}++;
-	    # XXX escaping mit \ sollte nicht nötig sein!
-	    my $arg = join(" ", map { "\\$_ \\$args{'-mapcolor'}->{$_}" }
-			   keys %{ $args{'-mapcolor'} });
-	    my $cmd = "ppmchange $arg $outfile > $tmpfile";
-	    warn "Executing $cmd ..." if $VERBOSE;
-	    if (system($cmd) != 0) {
-		warn "Warnung: Fehler beim Aufruf von ppmchange.";
-	    } else {
-		warn "Mv from $tmpfile to $outfile ..." if $VERBOSE;
-		require File::Copy;
-		File::Copy::mv($tmpfile, $outfile);
-	    }
-	}
-    }
-    1;
+    return _ppm_post_transform($outfile, $outfile, %args);
 }
 
 sub xwd2gif {
@@ -369,11 +315,10 @@ sub xwd2gif {
     my $ppmfile = "/tmp/GfxConvert.$$.ppm";
     $tmpfiles{$ppmfile}++;
     xwd2ppm($infile, $ppmfile, %args);
-    my $cmd = "ppmtogif $ppmfile > $outfile";
-    warn "Executing $cmd ..." if $VERBOSE;
-    if (system($cmd) != 0) {
-	die $error_preamble . 
-	  "Konvertierung mit ppmtogif fehlgeschlagen (exit: $?)";
+    my @cmd = (["ppmtogif", $ppmfile], ">", $outfile);
+    if (!run_command(@cmd)) {
+	die $error_preamble .
+	    "Konvertierung mit ppmtogif fehlgeschlagen (exit: $?)";
     }
     1;
 }
@@ -388,11 +333,11 @@ sub xwd2jpeg {
     my $ppmfile = "/tmp/GfxConvert.$$.ppm";
     $tmpfiles{$ppmfile}++;
     xwd2ppm($infile, $ppmfile, %args);
-    my $cmd = "cjpeg -quality $quality $ppmfile > $outfile";
-    warn "Executing $cmd ..." if $VERBOSE;
-    if (system($cmd) != 0) {
+    my @cmd = (["cjpeg", "-quality", $quality, "$ppmfile"],
+	       ">", $outfile);
+    if (!run_command(@cmd)) {
 	die $error_preamble .
-	  "Konvertierung mit cjpeg fehlgeschlagen (exit: $?)";
+	    "Konvertierung mit cjpeg fehlgeschlagen (exit: $?)";
     }
     1;
 }
@@ -415,6 +360,8 @@ sub xwd2png {
 	}
 	return 1;
     }
+
+    # XXX do not duplicate, see ppm2png
 
     # Wenn nicht, dann mit ghostscript versuchen. Allerdings werden hier
     # nicht die ganzen schönen Features wie crop etc. verwendet.
@@ -450,6 +397,28 @@ sub xwd2png {
     }
     # XXX der ganze andere Wust aus ps2ppm fehlt hier...
     1;
+}
+
+# Maybe move to BBBikeUtil
+sub run_command {
+    my @cmd = @_;
+    my $cmd = join(" ",
+		   map { s/\#/\\\#/g; $_ } # escape comments
+		   map { (ref $_ eq 'ARRAY' ?
+			  @$_ :
+			  $_
+			 ) }
+		   @cmd
+		  );
+    print STDERR "Executing $cmd " if $VERBOSE;
+    if (eval { require IPC::Run; 1 }) {
+	print STDERR " using IPC::Run...\n" if $VERBOSE;
+	IPC::Run::run(@cmd);
+    } else {
+	print STDERR " using system()...\n" if $VERBOSE;
+	my $ret = system $cmd;
+	!$ret;
+    }
 }
 
 1;
