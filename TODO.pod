@@ -513,6 +513,11 @@ Kommandozeile sollte Einstellungen in der Config-Dateo überschreiben.
 Das Verwenden von -fontfamily lucida -fontheight 7 führt nicht zum
 gewünschten Ergebnis.
 
+=item * (M2)
+
+You Tk::Icon (see L<http://www.schmuker.de/perl/modules/>) to
+optionally display the bbbike icon (avoid transparency problem!).
+
 =back
 
 =over
