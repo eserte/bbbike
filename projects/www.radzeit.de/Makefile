@@ -75,7 +75,7 @@ TARGET=radzeit.herceg.de
 .endif
 
 .ifndef TARGET
-.if make(deploy) || make(tkrsync) || make(backup) || make(test) || make(prepare-bbbike-dist-data) || make(rsync) || make(rsync-bbbike-data)
+.if make(deploy) || make(tkrsync) || make(backup) || make(test) || make(prepare-bbbike-dist-data) || make(rsync) || make(rsync-bbbike-data) || make(clean-cache-files-on-remote)
 TARGET=radzeit
 .elif make(deploy-local) || make(backup-local) || make(test-local)
 .if ${HOST} == "devpc01.iconmobile.de"
@@ -119,9 +119,13 @@ rsync-mapserver:
 	@echo NYI
 	false
 
-rsync-bbbike-data:
+rsync-bbbike-data:	clean-cache-files-on-remote
 	${RSYNC} ${RSYNC_ARGS} \
 	    BBBike/data/ ${RSYNC_DEST}/BBBike/data/
+
+clean-cache-files-on-remote:
+	ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
+	    rm /tmp/b_de_\*
 
 # use -t in rsync?
 tkrsync:

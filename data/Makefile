@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.26 2004/08/26 23:52:01 eserte Exp $
+# $Id: Makefile,v 2.26 2004/08/26 23:52:01 eserte Exp eserte $
 #
 
 BBBIKEDIR=		..
@@ -405,7 +405,11 @@ exits:	exits-orig
 #XXX in "-orig" transition: handicap_s-orig and gesperrt-orig always need to have the same base map!
 fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 		/tmp/other-source-fragezeichen Makefile \
-		${DATADIR}/handicap_s-orig ${DATADIR}/gesperrt-orig
+		${DATADIR}/handicap_s-orig \
+		${DATADIR}/gesperrt-orig \
+		${DATADIR}/qualitaet_s-orig \
+		${DATADIR}/qualitaet_l-orig \
+		${DATADIR}/brunnels-orig
 	-@$(WRITEABLE) $@
 	cat fragezeichen-orig |\
 	        ${GREPSTRASSEN} -v -sectionrx "projektierte Radstreifen" |\
@@ -418,6 +422,10 @@ fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 	    perl -nle '/(.*\t)(\S+)(.*)/ && !/\b(\d{4}-\d{2}-\d{2}|[0123]?\d\.[01]?\d\.\d{4})\b/ && print "Noch immer? $$1?::inwork$$3"' | \
 	    ${CONVERT2HAFAS} -basefile ${DATADIR}/handicap_s-orig -- - >> $@
 	cat /tmp/other-source-fragezeichen >> $@
+	for f in qualitaet_s-orig qualitaet_l-orig brunnels-orig; do \
+	    ${GREPSTRASSEN} -special fragezeichen ${DATADIR}/$$f > /dev/null; \
+	    cat /tmp/fragezeichen_$$f.bbd >> $@; \
+	done
 	-@$(READONLY) $@
 
 /tmp/projektierte_radstreifen.bbd:	fragezeichen-orig
@@ -433,7 +441,7 @@ fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 # But O_RDWR does not work if the file is read-only, so still use O_RDONLY
 # Now using Tie::File, which works everywhere
 /tmp/other-source-fragezeichen:	${DATADIR}/qualitaet_s-orig ${DATADIR}/qualitaet_l-orig
-	cd ${DATADIR} && perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib -MStrassen::Core -MTie::File -e 'for my $$file (qw(qualitaet_s-orig qualitaet_l-orig)) { tie @l, "Tie::File", $$file or die qq{Cannot open $$file: $$!}; for my $$i (1 .. $$#l) { if ($$l[$$i-1] =~ /\#:\s+unverified_by\s+(.*?):?\s*$$/i) { my $$comment = "laut $$1"; my $$x = Strassen::parse($$l[$$i]); $$x->[Strassen::NAME()] .= " ($$comment)"; $$x->[Strassen::CAT()] = "?"; print Strassen::arr2line2($$x),"\n" } } }' > /tmp/other-source-fragezeichen-orig
+	cd ${DATADIR} && perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib -MStrassen::Core -MTie::File -MFcntl=O_RDONLY -e 'for my $$file (qw(qualitaet_s-orig qualitaet_l-orig)) { tie @l, "Tie::File", $$file, mode => O_RDONLY or die qq{Cannot open $$file: $$!}; for my $$i (1 .. $$#l) { if ($$l[$$i-1] =~ /\#:\s+unverified_by\s+(.*?):?\s*$$/i) { my $$comment = "laut $$1"; my $$x = Strassen::parse($$l[$$i]); $$x->[Strassen::NAME()] .= " ($$comment)"; $$x->[Strassen::CAT()] = "?"; print Strassen::arr2line2($$x),"\n" } } }' > /tmp/other-source-fragezeichen-orig
 	${CONVERT2HAFAS} -basefile ${DATADIR}/qualitaet_s-orig /tmp/other-source-fragezeichen-orig > /tmp/other-source-fragezeichen
 
 PREFIXMAP=sperr=SP,kopfstein=KP,qualit‰t=QU,m‰ﬂig.geeignet=QU,radweg=RW,bau=BA,vorfahrt=VF

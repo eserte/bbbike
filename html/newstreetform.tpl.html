@@ -1,0 +1,204 @@
+[% BLOCK text_default %]
+ [%- IF data.${inputname}.defined %]value="[% data.${inputname} | html %]"[% END -%]
+[% END -%]
+[% BLOCK radio_checked %]
+ [%- IF data.${inputname} == val %]checked[% END %]
+[% END -%]
+[% BLOCK range %]
+    <td>
+      [%- inputname = "${cat}range_1" -%]
+     <input type="radio" name="[% inputname %]" value="whole"
+      [%- IF !data.${inputname}.defined || data.${inputname} == "whole" %]checked[% END %] />
+     gesamte Straße<br />
+     <input type="radio" name="[% inputname %]" value="part" [% INCLUDE radio_checked val="part" %] />
+     Teilabschnitt<br />
+     <table cellpadding="0" cellspacing="0">
+      <tr>
+       [%- inputname = "${cat}rangefrom_1" -%]
+       <td style="padding-right:1ex;">von</td>
+       <td><input name="[% inputname %]" [% text_default %]/></td>
+      </tr>
+      <tr>
+       [%- inputname = "${cat}rangeto_1" -%]
+       <td style="padding-right:1ex;">bis </td>
+       <td><input name="[% inputname %]" [% text_default %]/></td>
+      </tr>
+     </table>
+    </td>
+[% END -%]
+[% BLOCK colhead %]
+      <tr><td colspan="2"><b>[% text | html %]</b></td></tr>
+[% END -%]
+[% BLOCK radiocell %]
+      <tr>
+       [%- inputname = "${cat}${type}_1" -%]
+       <td><input style="margin-right:1em;" type="radio" name="[% inputname %]" value="[% val | html %]"
+        [%- INCLUDE radio_checked %] /></td>
+       <td>[% IF text %][% text | html %][% ELSE %][% val | html %][% END %]
+[% IF entryname %]<input name="[% entryname %]_1" [% INCLUDE text_default inputname=entryname %] />[% END %]
+       </td>
+      </tr>
+[% END -%]
+[% IF !cgidir %][% cgidir = "../cgi" %][% END -%]
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <!-- -*-html-*- -->
+<html>
+ <head>
+ <title>Neue Straße für BBBike</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ <link rev="made" href="mailto:slaven@rezic.de" />
+ <link rel="stylesheet" type="text/css" href="bbbike.css" />
+</head>
+<body>
+ <h1>Neue Straße für BBBike</h1>
+ <form name="newstreet" method="post" action="[% cgidir | html %]/mapserver_comment.cgi">
+  <input type="hidden" name="formtype" value="newstreetform" />
+  <table>
+   <tr>
+    <td>Straßenname</td>
+    <td><input name="strname" [% INCLUDE text_default inputname="strname" %]/>
+        (ggfs. mit Bezirk)</td>
+   </tr>
+
+   <tr><td colspan="3"><hr /></td></tr>
+
+   <tr>
+    <td>Qualität</td>
+    <td>
+     <table cellpadding="0" cellspacing="0">
+[% INCLUDE colhead text="Bewertung:" %]
+[% INCLUDE radiocell cat="Q" type="cat" val="Q0" text="sehr gut" %]
+[% INCLUDE radiocell cat="Q" type="cat" val="Q1" text="gut" %]
+[% INCLUDE radiocell cat="Q" type="cat" val="Q2" text="mäßig" %]
+[% INCLUDE radiocell cat="Q" type="cat" val="Q3" text="schlecht" %]
+
+[% INCLUDE colhead text="Beschreibung:" %]
+[% INCLUDE radiocell cat="Q" type="desc" val="Asphalt" %]
+[% INCLUDE radiocell cat="Q" type="desc" val="Beton" %]
+[% INCLUDE radiocell cat="Q" type="desc" val="Kopfsteinpflaster" %]
+[% INCLUDE radiocell cat="Q" type="desc" val="fester Sandweg" %]
+[% INCLUDE radiocell cat="Q" type="desc" val="loser Sandweg" %]
+[% INCLUDE radiocell cat="Q" type="desc" val="Verbundsteinpflaster" %]
+      <tr>
+       <td>
+        <input type="radio" name="Qdesc_1" value="userdefined"
+         [%- INCLUDE radio_checked inputname="Qdesc_1" val="userdefined" %] />
+       </td>
+       <td>
+        <input name="Qdescuserdef_1" [% INCLUDE text_default inputname="Qdescuserdef_1" %]/>
+       </td>
+      </tr>
+     </table>
+    </td>
+    [% PROCESS range cat="Q" %]
+   </tr>
+
+   <tr><td colspan="3"><hr /></td></tr>
+
+   <tr>
+    <td>Sonstige<br/>Behinderungen</td>
+    <td>
+     <table cellpadding="0" cellspacing="0">
+[% INCLUDE colhead text="Eingeschränkte Geschwindigkeit:" %]
+[% INCLUDE radiocell cat="q" type="cat" val="q0" text="keine" %]
+[% INCLUDE radiocell cat="q" type="cat" val="q1" text="bis 25 km/h" %]
+[% INCLUDE radiocell cat="q" type="cat" val="q2" text="bis 18 km/h" %]
+[% INCLUDE radiocell cat="q" type="cat" val="q3" text="bis 13 km/h" %]
+[% INCLUDE radiocell cat="q" type="cat" val="q4" text="Schrittgeschwindigkeit" %]
+[% INCLUDE colhead text="Grund:" %]
+[% INCLUDE radiocell cat="q" type="desc" val="viele Fußgänger" %]
+[% INCLUDE radiocell cat="q" type="desc" val="Fußgängerzone" %]
+[% INCLUDE radiocell cat="q" type="desc" val="kurvenreich" %]
+      <tr>
+       <td>
+        <input type="radio" name="qdesc_1" value="userdefined"
+         [%- INCLUDE radio_checked inputname="qdesc_1" val="userdefined" %] />
+       </td>
+       <td>
+        <input name="qdescuserdef_1" [% INCLUDE text_default inputname="qdescuserdef_1" %]/>
+       </td>
+      </tr>
+     </table>
+    </td>
+    [% PROCESS range cat="q" %]
+   </tr>
+
+   <tr><td colspan="3"><hr /></td></tr>
+
+   <tr>
+    <td>Besondere Anlangen<br/>für Radfahrer</td>
+    <td>
+     <table cellpadding="0" cellspacing="0">
+[% INCLUDE radiocell cat="RW" type="cat" val="RW0" text="keine" %]
+[% INCLUDE radiocell cat="RW" type="cat" val="RW1" text="Radweg" %]
+[% INCLUDE radiocell cat="RW" type="cat" val="RW4" text="Radstreifen" %]
+[% INCLUDE radiocell cat="RW" type="cat" val="RW7" text="Fahrradstraße" %]
+[% INCLUDE radiocell cat="RW" type="cat" val="RW5" text="Busspur" %]
+[% INCLUDE radiocell cat="RW" type="cat" val="RW6" text="verkehrsberuhigt" %]
+      <tr>
+       <td><input type="radio" name="RWcat_1" value="userdefined"
+         [%- INCLUDE radio_checked inputname="RWcat_1" val="userdefined" %] /></td>
+       <td><input name="RWdescuserdef_1" [% INCLUDE text_default inputname="RWdescuserdef_1" %] /></td>
+      </tr>
+     </table>
+    </td>
+    [% PROCESS range cat="RW" %]
+   </tr>
+
+   <tr><td colspan="3"><hr /></td></tr>
+   <tr>
+    <td>Gesperrt</td>
+    <td>
+     <table cellpadding="0" cellspacing="0">
+[% INCLUDE radiocell cat="sperre" type="cat" val="" text="offen für Radfahrer" %]
+[% INCLUDE radiocell cat="sperre" type="cat" val="1" text="Einbahnstraße in Richtung" entryname="sperre_oneway" %]
+[% INCLUDE radiocell cat="sperre" type="cat" val="BNP" text="Drängelgitter/Schranke an der Kreuzung" entryname="sperre_BNP" %]
+[% INCLUDE radiocell cat="sperre" type="cat" val="0" text="Treppe, Rad muss getragen werden" entryname="sperre_carry" %]
+[% INCLUDE radiocell cat="sperre" type="cat" val="2" text="Straße vollkommen gesperrt für Radfahrer" %]
+     </table>
+    </td>
+   </tr>
+
+   <tr><td colspan="3"><hr /></td></tr>
+   <tr>
+    <td>Sonstige<br/>Anmerkungen</td>
+    <td><textarea cols="40" rows="5" name="comments">[% IF data.comments.defined %][% data.comments | html %][% END %]</textarea></td>
+   </tr>
+
+   <tr><td colspan="3"><hr /></td></tr>
+
+   <tr>
+    <td>Dein Name</td>
+    <td><input name="author" [% INCLUDE text_default inputname="author" %]></td>
+   </tr>
+   <tr>
+    <td>Deine E-Mail</td>
+    <td><input name="email" [% INCLUDE text_default inputname="email" %]></td>
+   </tr>
+
+   <tr>
+    <td></td>
+    <td><input type="submit" value="Abschicken"></td>
+   </tr>
+
+   <tr>
+    <td colspan="3">Die Daten werden manuell in die BBBike-Datenbank eingetragen.</td>
+   </tr>
+  </table>
+ </form>
+
+ <table width="100%">
+  <tr><td style="padding-top:3px"></td></tr>
+  <tr>
+   <td colspan="3">
+      <p class="ftr">
+       <a id="bbbikemail" href="mailto:slaven@rezic.de">E-Mail</a>
+       [%# | <a href="help.html">Info</a> %]
+       | <a id="bbbikeurl" href="[% cgidir %]/bbbike.cgi">BBBike</a>
+       [%# | <a href="% BBBIKE_CGI_RELURL %/mapserver_address.cgi?[get_layers]&mapext=[mapext_esc]">Adresssuche</a> %]
+       | <a href="javascript:history.back()">Zurück</a>
+      </p>
+   </td>
+  </tr>
+ </table>
+
+</body></html>

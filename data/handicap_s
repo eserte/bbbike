@@ -1,6 +1,6 @@
 Müggelseedamm Erkner Richtung Köpenick zwischen Fürstenwalder Damm (Ost) und Bölschestraße wegen Bauarbeiten gesperrt (bis 15.09.2004)	q4::inwork; 28195,5141 27427,5188 27215,5200 26964,5039 26625,4958 26277,4957 25960,4839 25801,4831 25742,4835 25541,4845
 Wassersportallee (Grünau), Richtung Regattastraße zwischen Ammerseestraße und Regattastraße Baustelle Straße vollständig gesperrt (bis 2005-01-31)	q4::inwork; 22449,1281 22663,1441
-Mauerstraße, zwischen Jägerstraße und Mohrenstraße, Baustelle, Straße gesperrt. Dauer: 17.05.2004 08.00 Uhr bis 27.08.2004 18:00 Uhr	q4::inwork 9108,11961 9144,11866 9173,11770
+Mauerstraße, zwischen Jägerstraße und Mohrenstraße, Baustelle, Straße gesperrt. Dauer: 17.05.2004 08.00 Uhr bis 30.09.2004 18:00 Uhr	q4::inwork 9108,11961 9144,11866 9173,11770
 Taubenstraße, zwischen Glinkastraße und Mauerstraße, veränderte Verkehrsführung (Sackgasse). Dauer: 17.05.2004 08.00 Uhr bis 30.09.2004 18:00 Uhr	q4::inwork 9144,11866 9208,11872
 Straßensperrungen der Straße vor Schönholz zwischen Klemkestr. und Provinzstr. sowie der Klemkestraße zwischen Sommerstr. und Straße vor Schönholz, in Fahrtrichtung Niederschönhausen, aufgrund Tiefbauarbeiten. Dauer: 14.06.04 bis ca. 30.09.04	q4::inwork; 8182,18761 8260,18765 8361,18778 8476,18773 8650,18796 8687,18755
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
@@ -10,7 +10,7 @@ Naumannstr.: Bauarbeiten, eine Richtung gesperrt. Dauer: 27.10.2003, 14.00 Uhr b
 Wilhelmstr.: Fahrbahn vor der britischen Botschaft gesperrt	q4 8851,12123 8804,12280
 Tucholskystr.: Einbahnstr., Richtung Süden gesperrt	q4; 9654,13397 9605,13248
 Regattastraße, zwischen Wassersportallee und Grünauer Straße/Bohnsdorfer Straße, Einrichtung als Einbahnstraße Richtung Grünauer Straße. Baumaßnahmen. Dauer: 12.01.2004 bis vorraussichtlich 15.09.2004	q4; 22074,2666 22421,1872 22663,1441
-Prenzlauer Promenade, zw. Am Steinberg und Ostseestr. Baustelle, Sperrung stadteinwärts an Elsa-Brandström-Straße. Umleitung: Elsa-Brandström -Straße - Neumannstraße - Wisbyer Straße bis 15.06.2005	q4::inwork; 12012,16752 12046,16568 12097,16263 12091,16209
+Prenzlauer Promenade, zw. Am Steinberg und Ostseestr. Baustelle, Sperrung stadteinwärts an Elsa-Brandström-Straße. Umleitung: Elsa-Brandström -Straße - Neumannstraße - Wisbyer Straße bis 15.06.2005	q4::inwork; 12012,16752 12046,16568 12054,16517 12097,16263 12091,16209
 Bitterfelder Straße (Marzahn) Richtung Märkische Allee, Höhe S-Bahn-Brücke Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 2004-09-30)	q4::inwork; 19903,16632 20230,16560
 Jerusalemer Str. (Mitte) Richtung Norden zwischen Leipziger Str. und Hausvogteiplatz Baustelle, Richtungsfahrbahn Richtung Süden gesperrt, Einbahnstraßenregelung (bis Juni 2005)	q4::inwork; 9878,11857 9892,11752 9899,11670
 Saatwinkler Damm (Spandau) in beiden Richtungen zwischen Rohrdamm und Gartenfelder Str. Baustelle, Straße vollständig gesperrt (bis 31.12.2004)	q4::inwork -303,15526 468,15640
@@ -160,8 +160,10 @@ Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8556 8756,8453 8711,8
 (Fritz-Bräuning-Promenade): Bordsteine, Fußgänger	q3 8724,8021 8616,8018
 (Teltowkanal, Nordufer): Fußgänger (eigentlich für Radfahrer verboten)	q2 8750,5173 9118,5328 9145,5323 9182,5332
 (Kynaststr. - Uferwanderweg): Fußgänger	q1 14828,10628 14887,10584
-(Paul-und-Paula-Ufer): Fußgänger	q1 14856,10459 14887,10584 14937,10598 14990,10581 15100,10637 15209,10581
+Paul-und-Paula-Ufer: Fußgänger, kurvenreich	q1 15321,10099 15261,10167 14905,10424 14856,10459 14887,10584 14937,10598 14990,10581 15100,10637 15209,10581
 Am Rummelsburger See: teilweise enge Kurven	q2 15453,10415 15456,10356 15518,10234 15625,10187 15828,9875 15931,9846
 Unterführung unter Adlergestell und S-Bahn: sehr eng, nicht für Anhänger geeigner	q3 20928,2412 20810,2398
 Vorfahrt Reichstagsgebäude: Fußgänger	q3 8400,12417 8400,12605
 Neustrelitzer Str.: kurvenreich	q1 16739,14733 16668,14765 16534,14740 16443,14825 16346,14750 16256,14828
+Am Teltowkanal: kurverreich und recht eng	q1 3743,1385 3695,1308 3619,1207 3458,1063 3366,1007
+Körnerpark: Fußgänger, Bordsteine	q3 12703,7370 12722,7261

@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.8 2004/08/18 22:40:20 eserte Exp eserte $
+# $Id: gesperrt-orig,v 4.9 2004/08/28 23:27:36 eserte Exp eserte $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraßen etc.)
@@ -234,19 +234,23 @@ Lauterstr.	1 5817,7223 5810,7337
 Friedrich-Wilhelm-Platz	1 5357,7381 5315,7376 5310,7325 5341,7203
 Stolbergstr.	1 8850,6421 8834,6639
 Richnowstr.	1 8946,6501 8850,6421
+Menzelstr.	1 6185,6469 6154,6734
+Cranachstr.	1 6301,6748 6324,6480 6338,6312
 #
 # Potsdam
 #
-Hans-Thoma-Str.	1 -12148,-784 -12255,-784 -12322,-576
+Hans-Thoma-Str.	1 -12148,-784 -12255,-784 -12304,-628 -12322,-576
 Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
 Potsdamer Damm	2 -5736,-3629 -6439,-3969
 Nuthestr.	2 -6439,-3969 -8128,-4073 -9063,-3934 -11144,-2193 -11140,-1702 -11226,-1445 -11356,-1317
 #: XXX ja?
-Nuthestr.	1 -11356,-1317 -11463,-1232 -11613,-1125
+Nuthestr.	1 -11356,-1317 -11463,-1232 -11549,-1169
 Nuthestr. - Uferweg	3 -12063,-784 -11613,-1125 -11657,-1018
-Nuthestr. - Uferweg	3 -11463,-1232 -11613,-1125 -11698,-1104
-Uferweg - Nuthestr.	3 -11657,-1018 -11613,-1125 -11463,-1232
+Nuthestr. - Uferweg	3 -11463,-1232 -11549,-1169 -11613,-1125 -11698,-1104
+Uferweg - Nuthestr.	3 -11657,-1018 -11613,-1125 -11549,-1169 -11463,-1232
 Uferweg - Nuthestr.	3 -11698,-1104 -11613,-1125 -12063,-784
+Nuthestr.	3 -11613,-1125 -11549,-1169 -11460,-1098
+Nuthestr.	3 -11460,-1098 -11549,-1169 -11463,-1232
 Rudolf-Breitscheid-Str.	2 -11061,-1744 -11140,-1702
 #: XXX Umgehen auf Gehweg möglich?
 Rudolf-Breitscheid-Str.	1s -11061,-1744 -10997,-1787
@@ -298,6 +302,7 @@ Groebenufer	1s 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26243,-12300 26028,-12312
 Seestr. (Potsdam)	1s -11581,559 -11609,400
 Spitzmühlenweg	1s 41728,17918 41668,17984 41556,18146
+Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -12265,-418
 #
 ####################################################################
 #
@@ -414,7 +419,7 @@ tragen (Spreetunnel)	0:60 25647,4606
 tragen (Spreetunnel)	0:60 25565,4549
 tragen (Brücke Tegeler Hafen)	0:60 1250,20284
 tragen (Brücke Tegeler Hafen)	0:60 1195,20342
-tragen (S-Bahn-Zugang)	0:15 7854,7572
+tragen (S-Bahn-Zugang, insgesamt drei Treppen)	0:120 7854,7572
 tragen? (Fußgängerbrücke)	0:120 20445,536
 tragen? (Fußgängerbrücke)	0:120 19770,-213
 tragen (Stufen), mit MTB befahrbar	0:30 5725,11644
@@ -526,7 +531,7 @@ Die Prenzlauer  Allee ist zwischen Grellstraße und Ostseestraße stadtauswärts ge
 #XXX del? L54 Bitterfelder Straße Berlin-Hohenschönhausen Richtung Berlin-Marzahn Zwischen Hohenschönhauser Straße und Märkische Allee wegen Bauarbeiten gesperrt eine Umleitung ist eingerichtet bis 30.09.	1:inwork 18730,16973 18866,16905 19484,16704 19573,16674 19903,16632 20230,16560
 Einbecker Straße Richtung Robert-Uhrig-Straße, zwischen Rosenfelder Straße und Robert-Uhrig-Straße, Bauarbeiten. Einbahnstr. Richtung Bhf. Lichtenberg. (Tunnelsanierung U5) Dauer: 03.05.2004, 14.00 Uhr bis 31.12.2004	1:inwork 17161,11681 17208,11658 17734,11408
 #XXX del: Rathenower Straße (Tiergarten) in beiden Richtungen zwischen Quitzowstr. und Stephanstr. Baustelle, Straße vollständig gesperrt 	2:inwork 6670,14302 6743,14008
-#: unverified_by: <cas51k$37r$1@rzsun03.rrz.uni-hamburg.de>
+#: by: <cas51k$37r$1@rzsun03.rrz.uni-hamburg.de>
 Fußgängerbrücke über den Sachesendamm gesperrt, südliche Rampe ist aber befahrbar	2:inwork 7718,7641 7772,7610
 Berlin - Treptow Segelfliegerdamm Einbahnstraße von Stubenrauchstraße in Richtung Groß-Berliner-Damm, Straßenarbeiten, Dauer bis 31.12.2004 (ca.)	1:inwork 18058,4627 17797,4441 17628,4148 17586,3728 17490,3637
 #

@@ -246,6 +246,8 @@ README.spp
 MANIFEST.SKIP
 miscsrc/create_modified
 data/fragezeichen-orig
+data/exits-orig
+data/exits
 misc/ampelschaltung-orig.txt
 misc/sternfahrt_2004/Makefile
 misc/sternfahrt_2004/sternfahrt2004.bbd
@@ -259,3 +261,5 @@ misc/BASE
 miscsrc/temporary_streets.pl
 miscsrc/diffbbd
 miscsrc/merge_overlapping_streets.pl
+html/newstreetform.tpl.html
+Strassen/QuadTree.pm

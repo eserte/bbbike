@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.84 2004/08/26 23:36:54 eserte Exp $
+# $Id: bbbike.cgi,v 6.85 2004/08/28 23:13:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -626,7 +626,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.84 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.85 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1540,6 +1540,7 @@ EOF
 	} elsif ($$oneref ne '' && @$matchref == 0) {
 	    print "<td align=center>$fontstr" if $bi->{'can_table'};
 	    print "<b>$$oneref</b> ist nicht bekannt.<br>\n";
+	    print qq{<a target="newstreetform" href="$bbbike_html/newstreetform.html">Straﬂe eintragen</a><br>\n};
 	    $no_td = 1;
 	    $tryempty = 1;
 	} elsif ($$tworef ne '') {
@@ -2445,7 +2446,7 @@ sub search_coord {
     # Handicap-Optimierung ... zurzeit nur Fuﬂg‰ngerzonenoptimierung automatisch
     if (1) {
 	if (!$handicap_net) {
-	    if ($scope eq 'region') {
+	    if ($scope eq 'region' || $scope eq 'wideregion') {
 		$handicap_net =
 		    new StrassenNetz(MultiStrassen->new("handicap_s",
 							"handicap_l"));
@@ -2472,7 +2473,7 @@ sub search_coord {
     if (defined $q->param('pref_quality') && $q->param('pref_quality') ne '') {
 	# XXX landstraﬂen?
 	if (!$qualitaet_net) {
-	    if ($scope eq 'region') {
+	    if ($scope eq 'region' || $scope eq 'wideregion') {
 		$qualitaet_net =
 		    new StrassenNetz(MultiStrassen->new("qualitaet_s",
 							"qualitaet_l"));
@@ -2508,7 +2509,10 @@ sub search_coord {
 	    if (!$radwege_strcat_net) {
 		my $str = get_streets();
 		$radwege_strcat_net = new StrassenNetz $str;
-		$radwege_strcat_net->make_net_cyclepath(Strassen->new("radwege_exact"), 'N_RW', UseCache => 0); # UseCache => 1 for munich
+		$radwege_strcat_net->make_net_cyclepath
+		    (get_cyclepath_streets(),
+		     'N_RW', UseCache => 0, # UseCache => 1 for munich
+		    );
 	    }
 	    $penalty = { "H"    => 4,
 			 "H_RW" => 1,
@@ -2780,7 +2784,7 @@ sub search_coord {
 	    if (!$comments_net) {
 		my @s;
 		my @comment_files = qw(comments qualitaet_s);
-		if ($scope eq 'region') {
+		if ($scope eq 'region' || $scope eq 'wideregion') {
 		    push @comment_files, "qualitaet_l";
 		}
 		if (@custom && grep { $_ =~ /^temp-blocking-/ } @custom &&
@@ -2788,7 +2792,7 @@ sub search_coord {
 		    push @s, $custom_s{"handicap"};
 		} else {
 		    push @comment_files, "handicap_s";
-		    if ($scope eq 'region') {
+		    if ($scope eq 'region' || $scope eq 'wideregion') {
 			push @comment_files, "handicap_l";
 		    }
 		}
@@ -4082,6 +4086,15 @@ sub detailmap_to_coord {
     get_nearest_crossing_coords($x,$y);
 }
 
+sub get_cyclepath_streets {
+    my($scope) = shift || $q->param("scope") || "city";
+    if ($scope eq 'city') {
+	Strassen->new("radwege_exact");
+    } else {
+	MultiStrassen->new("radwege_exact", "comments_cyclepath");
+    }
+}
+
 sub get_streets {
     my($scope) = shift || $q->param("scope") || "city";
     if ($g_str) {
@@ -5167,7 +5180,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/08/26 23:36:54 $';
+    my $cgi_date = '$Date: 2004/08/28 23:13:20 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

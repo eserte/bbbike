@@ -462,7 +462,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'gesperrt',
      },
      { from  => 1090913211, # 2004-07-27 09:26
-       until => 1093989540, # bis Ende 08.2004
+       until => 1093736367, # bis Ende 08.2004
        file  => 'rathenower.bbd',
        text  => 'Berlin-Moabit, Kreuzung Rathenower Straße / Stephanstraße, Baustelle, Kreuzung vollständig gesperrt, Dauer: voraussichtlich bis Ende 08.2004',
        type  => 'handicap',
@@ -636,6 +636,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 49039,44131 48583,44366
+EOF
+     },
+     { from  => 1093496400, # 2004-08-26 07:00
+       until => 1093716000, # 2004-08-28 20:00
+       text  => 'Die Naumannstraße ist zwischen Torgauer Straße und Tempelhofer Weg von 27.08.04, 07.00 Uhr bis 28.08.04, 20.00 Uhr gesperrt. Grund Bauarbeiten.',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 7716,8048 7717,7759
 EOF
      },
     );

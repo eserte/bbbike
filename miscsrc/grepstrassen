@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: grepstrassen,v 1.6 2004/08/27 07:00:48 eserte Exp $
+# $Id: grepstrassen,v 1.7 2004/08/29 09:14:03 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -19,6 +19,8 @@ use strict;
 
 use Getopt::Long;
 my($v, $cat, $catrx, $name, $namerx, $section, $sectionrx);
+my %special;
+my %special_end;
 GetOptions("v" => \$v,
 	   "cat=s" => \$cat,
 	   "catrx=s" => \$catrx,
@@ -26,10 +28,15 @@ GetOptions("v" => \$v,
 	   "namerx=s" => \$namerx,
 	   "section=s" => \$section,
 	   "sectionrx=s" => \$sectionrx,
+	   "special=s" => sub {
+	       no strict 'refs';
+	       &{"init_" . $_[1]}($_[1]);
+	   },
 	  ) or die <<EOF;
 usage: $0 [-v] [-cat category] [-catrx regexp]
        [-name name] [-namerx regexp]
        [-section section] [-sectionrx regexp]
+       [-special name]
 
 section is a region marked with the "section" directive in a bbd file.
 
@@ -54,11 +61,47 @@ while(1) {
     my $dir = $s->get_directive;
     if (defined $section) { if (defined $dir->{section} && $dir->{section} eq $section) { next if $v } else { next unless $v } }
     if (defined $sectionrx) { if (defined $dir->{section} && $dir->{section} =~ $sectionrx) { next if $v } else { next unless $v } }
+    while(my($k,$v) = each %special) {
+	next if !$v->($r, $dir);
+    }
     $new_s->push_ext($r, $dir);
+}
+
+while(my($k,$v) = each %special_end) {
+    $v->();
 }
 
 # XXX The "# filtered" is a hack to prevent the first line being interpreted
 # as a global directive.
 print "# filtered\n" . $new_s->as_string;
+
+sub init_fragezeichen {
+    my $val = shift;
+    no strict 'refs';
+    $special{$val} = \&{"special_" . $val};
+    require Storable;
+    use vars qw($fragezeichen_s);
+    $fragezeichen_s = Strassen->new;
+    $special_end{$val} = \&{"end_" . $val};
+}
+
+sub special_fragezeichen {
+    my($r, $dir) = @_;
+    my $fragezeichen_r = Storable::dclone($r);
+    if (exists $dir->{add_fragezeichen}) {
+	my $name = $r->[Strassen::NAME] . " (";
+	$name .= $dir->{add_fragezeichen} !~ /^\s*$/ ? $dir->{add_fragezeichen} : "unsicher";
+	$name .= ")";
+	$fragezeichen_r->[Strassen::NAME] = $name;
+	$fragezeichen_r->[Strassen::CAT] = "?";
+	$fragezeichen_s->push($fragezeichen_r);
+    }
+    1;
+}
+
+sub end_fragezeichen {
+    require File::Basename;
+    $fragezeichen_s->write("/tmp/fragezeichen_" . File::Basename::basename($datafile) . ".bbd");
+}
 
 __END__

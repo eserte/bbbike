@@ -277,7 +277,7 @@ muE<szlig> nicht alles neu gezeichnet werden.
 
 =item * (H2)
 
-Meta-Choose-Dialog, das alle Choose-Dialoge vereinigt. Vielleicht
+Meta-Choose-Dialog, der alle Choose-Dialoge vereinigt. Vielleicht
 Tk::SmartListbox verwenden?
 
 =item * (M3)
@@ -463,6 +463,9 @@ QualitE<auml>t. Bei den restlichen Kategorien kann man sich die
 Erweiterung sparen, da dort die QualitE<auml>tskategorie der
 StraE<szlig>e gilt. Default-QualitE<auml>tskategorie fE<uuml>r Radwege
 sei 1 (gute QualitE<auml>t).
+
+Problem => ich bin schon bei RW10 angelangt, also brauche ich eine
+andere Kodierung.
 
 =item *
 
@@ -678,8 +681,6 @@ Bookmarks in choose_ort und möglichkeit, per dnd neue bookmarks zu definieren, u
  - Idee von effizienten Loop/Callback-Mechanismus: ein callback kann entweder alleine aufgerufen werden (mit nötiger Initialisation + Cleanup) oder in eine beliebige Loop eingebettet werden (Inline, Initialisation + Cleanup außerhalb der Loop). Beliebig viele Callbacks können kombiniert werden (Stacking). Verwendung von B::Deparse? (sehr schwer, API und Ausführung erst einmal ausdenken)
  
  - Bug: beim Umschalten von einem anderen Mode in den Suchmode muss zuerst einmal ein Reset ausgeführt werden, bevor Start gesetzt werden kann (mittel)
- 
- - Start/Ziel verschiebbar machen (mittel)
  
  - Start/Ziel löschbar machen (mittel)
  
@@ -944,6 +945,12 @@ S-Bahn-Symbole sind suboptimal, evtl. GIFs stattdessen verwenden. Wenn
 Platz ist, könnten auch die Bahnhöfe mit Labels versehen werden. Wenn
 ich rotierte Fonts zeichnen kann, dann auch wichtige Straßen.
 
+=item * (M3)
+
+SehenswE<uuml>rdigkeiten: eine neue Kategorie für
+E<quot>flächigeE<quot> Sehenswürdigkeiten (z.B. Holländisches Viertel)
+einführen, um besseres Stacking zu machen (unterhalb von Straßen).
+
 =back
 
 =head2 Windows specific
@@ -1100,6 +1107,11 @@ E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.
 =head2 Datenhandling (make, conversion ...)
 
 =over
+
+=item * (M3)
+
+Introduce new bbd file E<quot>xxxE<quot> which contains all non-public
+XXX comments. ? on devel-host would also draw xxx.
 
 =item * (M4)
 

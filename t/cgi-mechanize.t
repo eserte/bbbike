@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.7 2004/06/10 23:00:56 eserte Exp eserte $
+# $Id: cgi-mechanize.t,v 1.8 2004/08/28 23:24:47 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -188,7 +188,7 @@ $agent->form("BBBikeForm");
 $agent->submit();
 
 like($agent->content, qr/genaue.*kreuzung.*angeben/i, "Crossings page");
-like($agent->content, qr/\QAm Neuen Palais (F2.2) (Potsdam)/i,  "Correct start resolution");
+like($agent->content, qr/\QAm Neuen Palais (F2.2) (Potsdam)/i,  "Correct start resolution (Neues Palais ...)");
 
 }
 
@@ -207,10 +207,9 @@ $agent->form("BBBikeForm");
 { local $^W; $agent->current_form->value('ziel', 'Römische Bäder'); };
 $agent->submit();
 
-#XXX like($agent->content, qr{\QFeuerbachstr. (Potsdam)/Sellostr. (Potsdam)}i, "Correct start resolution");
-like($agent->content, qr{\QGeschwister-Scholl-Str. (Potsdam)/Zeppelinstr. (B1) (Potsdam)/Sellostr. (Potsdam)/Auf dem Kiewitt (Potsdam)}i,  "Correct goal resolution");
-like($agent->content, qr{\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)}i,  "Correct goal resolution");
-
+like($agent->content, qr{\QGeschwister-Scholl-Str. (Potsdam)/(Am Schafgraben) (Potsdam)}i,  "Correct goal resolution (Geschwister-Scholl ...)");
+like($agent->content, qr{\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)}i,  "Correct goal resolution (Marquardt ...)");
+                           
 }
 
 ######################################################################

@@ -8405,7 +8405,7 @@ if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->po
 	    }
 	}
 
-	if (($edit_mode || $edit_normal_mode || $abk eq 'relgps' || $args{FastUpdate}) and !$diffed_str) {
+	if (($edit_mode || $edit_normal_mode || $abk eq 'relgps' || $args{FastUpdate})) { # XXX? and !$diffed_str) {
 	    warn "Try to copy original data" if $verbose;
 	    my $r = $str->copy_orig;
 	    warn "Returned $r" if $verbose;
@@ -9231,7 +9231,7 @@ sub plot_point {
 
 	if (($edit_mode || $edit_normal_mode || $abk eq 'relgps' || $args{FastUpdate}) and !$diffed_str) {
 	    warn "Try to copy original data" if $verbose;
-	    my $r = $p_obj{$abk}->copy_orig;
+	    my $r = $bhf->copy_orig;
 	    warn "Returned $r" if $verbose;
 	}
 
