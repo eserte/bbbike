@@ -646,4 +646,12 @@ EOF
 userdel	2 7716,8048 7717,7759
 EOF
      },
+     { from  => 1093730400, # 2004-08-29 00:00
+       until => 1095397200, # 2004-09-17 07:00
+       text  => 'Die Mohrenstraße ist von der Charlottenstraße in Richtung Friedrichstraße wegen Kranarbeiten vom 30.08.2004 bis 17.09.2004 montags bis freitags jeweils in der Zeit von 07:00 Uhr bis 17:00 Uhr als Einbahnstraße ausgewiesen.',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 9410,11803 9538,11818
+EOF
+     },
     );

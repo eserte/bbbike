@@ -1,4 +1,4 @@
-# Sample plot: call ptksh, then plot_sperre("gesperrt_car")
+# Sample plot: plot Einbahnstraßen, call ptksh, then plot_sperre("gesperrt_car")
 Mittelweg	1 12335,7770 12182,7824
 # Die Verlängerung der Kronenstr. ist ein Privatweg, der anscheinend per
 # Schranke gesperrt werden kann.
@@ -28,9 +28,9 @@ Karlshorster - Nöldner	3 15267,10865 15266,10791 15396,10767
 Nöldner - Karlshorster (?)	3 15396,10767 15266,10791 15255,10751
 Weydemeyerstr. - Mollstr.	3 11910,13055 11905,13069 11839,13083
 Neue Schönhauser	1 10528,13243 10441,13195 10305,13211
+#: XXX das stimmt nicht --- hier ist nur eine Barriere!
 Hagelberger Str.	1 8648,9526 8773,9524
 Marchlewskistr. - Warschauer (?)	3 13409,11004 13546,11352 13496,11384 13473,11456
-Flughafenstr.	1:inwork 12195,8436 12068,8409 11892,8372
 Ebertstr. Richtung Potsdamer Platz	1:inwork 8571,11846 8567,11799 8553,11638 8546,11537 8542,11502
 #XXX del: Gontard - Rathaus	3 9454,7139 9527,7214 9443,7280 9391,7317
 #XXX del: Gontard - Rathaus	3 9391,7317 9443,7280 9527,7214 9454,7139
@@ -96,3 +96,4 @@ Oberbaum - Falckensteinstr.	3 13206,10651 13178,10623 13135,10551
 Hobrechtstr.	1 12003,9105 11998,8872
 Lützowplatz	1 7002,11034 6873,11011
 Romain-Rolland-Str. - Berliner Str.	3 12856,17825 12746,17981 12479,17811
+Mahlower Str.	1 11773,8231 11920,8252

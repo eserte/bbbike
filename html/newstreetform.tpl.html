@@ -16,12 +16,12 @@
       <tr>
        [%- inputname = "${cat}rangefrom_1" -%]
        <td style="padding-right:1ex;">von</td>
-       <td><input name="[% inputname %]" [% text_default %]/></td>
+       <td><input name="[% inputname %]" [% INCLUDE text_default %]/></td>
       </tr>
       <tr>
        [%- inputname = "${cat}rangeto_1" -%]
        <td style="padding-right:1ex;">bis </td>
-       <td><input name="[% inputname %]" [% text_default %]/></td>
+       <td><input name="[% inputname %]" [% INCLUDE text_default %]/></td>
       </tr>
      </table>
     </td>
