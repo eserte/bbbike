@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: configure-bbbike.cgi,v 1.3 2003/01/04 15:24:05 eserte Exp $
+# $Id: configure-bbbike.cgi,v 1.4 2003/08/24 23:18:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.

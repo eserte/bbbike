@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: G7toWin_ASCII.pm,v 1.15 2002/08/01 13:56:40 eserte Exp eserte $
+# $Id: G7toWin_ASCII.pm,v 1.16 2003/08/24 23:27:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.

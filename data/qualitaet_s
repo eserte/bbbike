@@ -271,8 +271,18 @@ Simplonstr.: Kopfsteinpflaster	Q2 13954,11647 14049,11553 14180,11428 14252,1136
 Matkowskystr.: Kopfsteinpflaster	Q2 14530,11137 14509,11060
 Neue Bahnhofstr.: Kopfsteinpflaster	Q2 14752,11041 14811,11067 14912,11252
 (Klein-Glienicke - Hahn-Meitner-Institut): Waldweg	Q2 -9313,54 -8629,175 -8387,190
-Schildhornweg: Waldweg, OK	Q1 677,9092 197,9069 30,9105 -97,9196 -346,9173 -851,9155 -1047,9123 -1188,9090 -1279,9093 -1415,9144 -1553,9161 -1638,9152 -1877,9092 -2090,9075 -2297,9103 -2672,9220 -2956,9307 -3140,9294
-Verbindungschaussee: Waldweg, OK	Q1 -325,8892 -1103,7859
+Schildhornweg: Waldweg, OK	Q1 701,9122 197,9069 30,9105 -97,9196 -346,9173 -851,9155 -1047,9123 -1188,9090 -1279,9093 -1415,9144 -1553,9161 -1638,9152 -1877,9092 -2090,9075 -2297,9103 -2672,9220 -2956,9307
+Schildhornweg: Waldweg	Q2 -2967,9320 -3304,9470
+Havelweg: Waldweg, OK	Q1 -2956,9307 -3140,9294 -3235,9267 -3250,9081 -3451,8840
+Havelweg: Waldweg, Schotter	Q2 -3451,8840 -3809,8847 -4001,8880
+Straße am Schildhorn: Kopfsteinpflaster	Q2 -3423,9642 -3456,9479 -3597,9446
+Straße am Schildhorn: Waldweg, OK	Q1 -3597,9446 -3796,9439
+Neuer Schildhornweg: Waldweg, OK	Q1 -404,9456 -743,9364 -942,9251
+Neuer Schildhornweg (durch Kolonie Grunewald): Verbundsteine, einige Bodenwellen	Q0 -404,9456 -252,9466
+Neuer Schildhornweg (durch Kolonie Grunewald): fester Sandweg	Q1 -252,9466 71,9429
+Neuer Schildhornweg: Waldweg, OK, 22 km/h möglich	Q1 71,9429 316,9338 383,9305 701,9122
+Verbindungschaussee: Waldweg, OK, 22 km/h möglich	Q1 -404,9456 -346,9173 -310,8989 -345,8899 -1112,7891
+Verbindungschaussee: asphaltiert	Q0 -404,9456 -445,9627
 Lenbachstr.: Kopfsteinpflaster	Q2 14793,11323 14669,11152 14597,11069
 Henriette-Herz-Platz: Straßenbahn	Q3 10132,12941 10255,12959 10371,13006
 Garnisonkirchplatz: Straßenbahn	Q3 10309,12854 10255,12959
@@ -496,7 +506,8 @@ Krontaler Str.: Kopfsteinpflaster	Q2 13890,22889 14125,22732
 Grüntaler Str.: Kopfsteinpflaster	Q2 9757,16912 9604,16760 9455,16609
 Zur Hagelberger Str.: Kopfsteinpflaster	Q2 8773,9524 8648,9526
 Saubuchtweg: guter Waldweg	Q1 -3073,9061 -2983,8841 -2965,8705 -2962,8493 -2981,8350 -2975,8172 -2890,7994 -2859,7946 -2804,7915 -2677,7696 -2675,7622 -2639,7452 -2563,7353 -2546,7240 -2524,7141 -2547,7055 -2549,6948 -2634,6907 -2668,6862
-Schwarzer Weg: Waldweg, OK (teilweise sandig)	Q1 -2668,6862 -2632,6789 -2638,6641 -2686,6489 -2705,6355 -2986,5996 -3156,5926 -3226,5870
+Schwarzer Weg: Waldweg, OK (teilweise sandig)	Q1 -2668,6862 -2632,6789 -2638,6641 -2686,6489 -2705,6355 -2986,5996 -3156,5926 -3226,5870 -3275,5847 -3603,5748 -3794,5604 -3845,5575 -3877,5570
+Schwarzer Weg: Schotter, abschüssige Strecke	Q2 -3877,5570 -4003,5621
 Fischerhüttenweg: Waldweg, mäßig (Wurzeln, eng) bis OK	Q2 -2235,5128 -3226,5870
 Curtiusstr.: Kopfsteinpflaster	Q2 3024,3863 3201,3968 3259,4002
 Rominter Allee: Kopfsteinpflaster (Q2, vielleicht aber Q1?)	Q2 -67,11989 -95,12038 -163,12303 -287,12460 -328,12654 -396,12749 -452,12935 -416,12970 -395,13040
@@ -727,4 +738,15 @@ Mohrenstr.: mäßiger Asphalt	Q1; 8990,11719 9076,11743 9173,11770 9220,11781
 Mohrenstr.: mäßiger Asphalt	Q1 9220,11781 9410,11803
 südlicher Uferweg an der Krummen Lanke: Waldweg, überwiegend OK, einige sandige Stellen	Q1 -1274,4367 -1245,4414 -1185,4450 -1139,4575 -1134,4706 -971,4971 -724,5080 -604,5228
 Weg am Riemeisterfenn: Waldweg, überwiegend OK	Q1 -604,5228 45,5307 86,5337
+Friedrichsgracht: Parkweg	Q1 10207,12055 10109,12238
+Friedrichsgracht: holprig	Q2 10296,11896 10314,11865
+Hüttenweg: relativer guter Waldweg	Q1 -927,6888 -1006,6911 -1241,7017 -1493,6984 -1851,6887
+Grunewald: teilweise sandig	Q2 -2981,6941 -2805,6884 -2668,6862
+Grunewald: teilweise sehr sandig, steile Strecken	Q3 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897
+Grunewald: teilweise sandig	Q2 -2080,6897 -1925,6790
+verlängerte Verbindungschaussee: teilweise sandige Stellen, sonst 20km/h möglich	Q2 -1925,6790 -1851,6887 -1328,7597 -1112,7891
+Teltower Weg: Waldweg?	Q1 -903,6923 -1008,7427 -1112,7891 -1317,8836 -1336,9001 -1415,9144
+Teltower Weg: Waldweg?	Q1 -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -174,5941 -107,5880
+Parforceweg: Waldweg?	Q1 -643,7252 -728,7310 -1008,7427 -1142,7493 -1308,7558 -1328,7597 -1787,7932 -1843,8128 -2028,8270 -2078,8217 -2117,8204 -2156,8208 -2294,8232 -2386,8282
+Alte Spandauer Poststr.: Waldweg?	Q1 -1415,9144 -1482,9276 -1512,9438 -1495,9518 -1448,9644 -1453,9748 -1491,9801 -1602,9915 -1846,10292
 Voigtstr.: Kopfsteinpflaster	Q2 14702,12157 14748,12314 14798,12502 14842,12826

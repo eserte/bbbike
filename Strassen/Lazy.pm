@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Lazy.pm,v 1.5 2003/07/24 22:10:13 eserte Exp $
+# $Id: Lazy.pm,v 1.6 2003/08/23 21:45:03 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -12,11 +12,14 @@
 # WWW:  http://bbbike.sourceforge.net
 #
 
+require Object::Realize::Later;
+Object::Realize::Later->VERSION(0.14);
+
 package Strassen::Lazy;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 use Object::Realize::Later
     becomes => 'Strassen',

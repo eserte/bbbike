@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeScribblePlugin.pm,v 1.4 2003/01/08 20:00:43 eserte Exp eserte $
+# $Id: BBBikeScribblePlugin.pm,v 1.5 2003/08/24 23:33:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.

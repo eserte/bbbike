@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.pl,v 1.17 2003/06/17 21:30:44 eserte Exp eserte $
+# $Id: bbbikedraw.pl,v 1.18 2003/08/24 23:26:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.

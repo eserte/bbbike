@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeThunder.pm,v 1.9 2003/05/06 06:18:04 eserte Exp eserte $
+# $Id: BBBikeThunder.pm,v 1.10 2003/08/24 23:33:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.

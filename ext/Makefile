@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.12 2003/01/08 20:58:01 eserte Exp eserte $
+# $Id: Makefile,v 1.13 2003/08/24 23:16:20 eserte Exp $
 #
 
 # XXX Installieren immer über *dieses* Makefile (wegen INLINE2DIST)!!!

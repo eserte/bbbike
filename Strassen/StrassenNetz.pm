@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.28 2003/08/07 21:32:41 eserte Exp eserte $
+# $Id: StrassenNetz.pm,v 1.29 2003/08/24 23:02:02 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -305,6 +305,16 @@ sub net2name {
 	      if $VERBOSE;
 	    undef;
 	}
+    }
+}
+
+sub get_street_record {
+    my($net, $from, $to) = @_;
+    my($pos) = $net->net2name($from, $to);
+    if (defined $pos) {
+	$net->{Strassen}->get($pos);
+    } else {
+	undef;
     }
 }
 
@@ -1701,7 +1711,7 @@ sub get_point_comment {
     for my $pos1 (@pos) {
 	next if $seen && $seen->{$pos1};
 	my $r = $self->{Strassen}->get($pos1);
-	if ($r->[Strassen::CAT()] eq 'P1' && $routeinx > 0) {
+	if ($r->[Strassen::CAT()] =~ /^(P1|PC;)$/ && $routeinx > 0) {
 	    my $xy0 = join ",", @{ $routeref->[$routeinx-1] };
 	    if (($r->[Strassen::COORDS()][0] eq $xy0 || $r->[Strassen::COORDS()][0] eq '*') &&
 		($r->[Strassen::COORDS()][1] eq $xy1 || $r->[Strassen::COORDS()][1] eq '*') &&
@@ -1709,7 +1719,7 @@ sub get_point_comment {
 		push @res, $r->[Strassen::NAME()];
 		next POS;
 	    }
-	} elsif ($r->[Strassen::CAT()] eq 'P2' && $routeinx > 0) {
+	} elsif ($r->[Strassen::CAT()] =~ /^(P2|PC)$/ && $routeinx > 0) {
 	    my $xy0 = join ",", @{ $routeref->[$routeinx-1] };
 	    if ((($r->[Strassen::COORDS()][0] eq $xy0 || $r->[Strassen::COORDS()][0] eq '*') &&
 		 ($r->[Strassen::COORDS()][1] eq $xy1 || $r->[Strassen::COORDS()][1] eq '*') &&
@@ -1720,7 +1730,7 @@ sub get_point_comment {
 		push @res, $r->[Strassen::NAME()];
 		next POS;
 	    }
-	} elsif ($r->[Strassen::CAT()] eq 'S1') {
+	} elsif ($r->[Strassen::CAT()] =~ /^(S1|SC;)$/) {
 	    for my $i (0 .. $#{$r->[Strassen::COORDS()]}-1) {
 		if ($r->[Strassen::COORDS()][$i] eq $xy1 &&
 		    $r->[Strassen::COORDS()][$i+1] eq $xy2) {
@@ -1729,7 +1739,7 @@ sub get_point_comment {
 		    next POS;
 		}
 	    }
-	} elsif ($r->[Strassen::CAT()] eq 'S2') {
+	} elsif ($r->[Strassen::CAT()] =~ /^(S2|SC)$/) {
 	    for my $i (0 .. $#{$r->[Strassen::COORDS()]}-1) {
 		if (($r->[Strassen::COORDS()][$i] eq $xy1 &&
 		     $r->[Strassen::COORDS()][$i+1] eq $xy2) ||
@@ -1740,7 +1750,7 @@ sub get_point_comment {
 		    next POS;
 		}
 	    }
-	} elsif ($r->[Strassen::CAT()] =~ /^PI(:|$)/) {
+	} elsif ($r->[Strassen::CAT()] =~ /^PI;?(:|$)/) {
 	CHECK: {
 		for my $i (0 .. $#{$r->[Strassen::COORDS()]}) {
 		    last CHECK if !defined $routeref->[$routeinx+$i];
@@ -1751,7 +1761,7 @@ sub get_point_comment {
 		push @res, $r->[Strassen::NAME()];
 		next POS;
 	    }
-	} elsif ($r->[Strassen::CAT()] eq 'P0') {
+	} elsif ($r->[Strassen::CAT()] =~ /^P0;?$/) {
 	    # not yet
 	    next POS;
 	} else { # arbitrary categories

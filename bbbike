@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.110 2003/08/04 21:02:15 eserte Exp eserte $
+# $Id: bbbike,v 3.111 2003/08/24 23:09:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -211,7 +211,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.110 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.111 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -292,7 +292,7 @@ $str_restrict{'ql'} = {qw(Q0 0 Q1 1 Q2 1 Q3 1)};
 $str_restrict{'hs'} = {qw(q0 0 q1 1 q2 1 q3 1 q4 1)};
 $str_restrict{'hl'} = {qw(q0 0 q1 1 q2 1 q3 1 q4 1)};
 # do not draw Steigung and Gefälle at the same time:
-$str_ignore{'comm'} = {'S1,Gf' => 1};
+$str_ignore{'comm'} = {'Gf' => 1}; # XXX with ";"???
 require Radwege;
 foreach (@Radwege::category_order) {
     $str_restrict{'rw'}->{$Radwege::category_code{$_}} = 1
@@ -4643,11 +4643,10 @@ sub define_item_attribs {
 	 'GPSp~'  => "#c0c0b0",  # GPS point
 	 'GPSp~~' => "#c8c8c0",  # GPS point
 
-	 'P1' => '#a000a0',
-	 'P2' => '#a000a0',
-	 'S1' => '#a000a0',
-	 'S1,St' => '#b00080',
-	 'S2' => '#a000a0',
+	 'CP' => '#a000a0',
+	 'CS' => '#a000a0',
+	 'St' => '#b00080',
+	 'Gf' => '#c00080',
 	 'PI' => '#a000a0',
 	 'P0' => '#a000a0',
 
@@ -4759,18 +4758,13 @@ sub define_item_attribs {
     }
 
     %line_arrow =
-	('P1' => 'last',
-#	 'P2' => 'both',#XXX ohne Doppelpfeil besser?
-	 'S1' => 'last',
-#	 'S2' => 'both',#XXX dito
-	 'S1,St' => 'last',
-	 'PI' => 'last',
+	('PI' => 'last',
 	 'P0' => 'last',
 	);
     %line_shorten =
-	('P1' => 1,
-	 'P2' => 1,
+	('CP' => 1,
 	 'P0' => 1,
+	 'PI' => 1,
 	);
     %category_size =
 	('N'  => 8,
@@ -5339,9 +5333,12 @@ sub generate_plot_functions {
 			}
 
 			my $street_photo;
+			# XXX Generalize
 			if ($abk eq 'e') {
 			    my $p = get_symbol_scale($abk);
 			    $street_photo = $p if $p;
+			} elsif ($cat_hin eq 'St') {
+			    $street_photo = $steigung_photo if $steigung_photo;
 			} elsif (@addinfo_hin # ignore @addinfo_rueck for now
 				) {
 			    if ($addinfo_hin[0] =~ /\binwork\b/ && $inwork_photo) {
@@ -10160,7 +10157,8 @@ sub show_info {
 	    $comments_pos_net = $str_obj{"comm"}->make_coord_to_pos
 		(sub {
 		     my $cat = $_[0]->[Strassen::CAT];
-		     $cat =~ /^(S1|S2)$/ ? 2 : 0;
+		     #$cat =~ /^(S1|S2)$/ ? 2 : 0;
+		     $cat =~ /^CS/ ? 2 : 0;
 		 });
 	}; warn $@ if $@;
     }
@@ -10729,24 +10727,49 @@ sub addpoint_xy {
 		}
 	    }
 
-	    if (defined $grade && $i == 0 &&
-		$show_grade &&
-		(($grade_length >= $grade_minimum_short_length && abs($grade) >= $grade_minimum) ||
-		 ($grade_length < $grade_minimum_short_length && abs($grade) >= $grade_minimum_short))) {
-		$c->createImage
-		    (@grade_symbol_pos,
-		     -image => ($grade > 0 ? $steigung_photo : $gefaelle_photo),
-		     -anchor => 's',
-		     -tags => ['route', "route-$nr"],
-		    );
+	    my $grade_direction;
+	    if ($show_grade && $i == 0) {
+		if (!defined $grade) {
+		    make_comments_net() if !$comments_net;
 
-		outline_text($c,
-			     @grade_symbol_pos,
-			     -font => $font{'small'},
-			     -text => float_prec($grade*100, 1) . '%',
-			     -tags => ['route', "route-$nr"],
-			     -outlinewidth => 1,
-			     -anchor => 'nw');
+		    if ($comments_net) {
+			for my $cat (@{ $comments_net->{Net}{"$prev_x,$prev_y"}{"$x,$y"} }) {
+			    if ($cat =~ /^(St|Gf)/) {
+				$grade_direction = $1 eq 'St' ? +1 : -1;
+				last;
+			    }
+			}
+			if ($grade_direction) {
+			    @grade_symbol_pos = get_polyline_center($prex, $prey, $xx, $yy);
+			    my $r = $comments_net->get_street_record("$prev_x,$prev_y",
+								     "$x,$y");
+			    if ($r && $r->[Strassen::NAME] =~ /(\d+)%/) {
+				$grade = $1 * $grade_direction;
+			    }
+			}
+		    }
+		}
+		if ((defined $grade &&
+		     ($grade_length >= $grade_minimum_short_length && abs($grade) >= $grade_minimum) ||
+		     ($grade_length < $grade_minimum_short_length && abs($grade) >= $grade_minimum_short)) ||
+		    (!defined $grade && defined $grade_direction)) {
+		    $c->createImage
+			(@grade_symbol_pos,
+			 -image => ((defined $grade_direction && $grade_direction > 0) || (defined $grade && $grade > 0) ? $steigung_photo : $gefaelle_photo),
+			 -anchor => 's',
+			 -tags => ['route', "route-$nr"],
+			);
+
+		    if (defined $grade) {
+			outline_text($c,
+				     @grade_symbol_pos,
+				     -font => $font{'small'},
+				     -text => float_prec($grade*100, 1) . '%',
+				     -tags => ['route', "route-$nr"],
+				     -outlinewidth => 1,
+				     -anchor => 'nw');
+		    }
+		}
 	    }
 
 	    # Format einer Etappe von @bikepower_all_time
@@ -12898,14 +12921,7 @@ sub show_route_strname {
 
 	if ($do_route_strnames_comments) {
 	    if (!$comments_net) {
-		if (!$str_obj{"comm"}) {
-		    $str_obj{"comm"} = Strassen->new("comments");
-		}
-		if ($str_obj{"comm"}) {
-		    $comments_net = new StrassenNetz $str_obj{"comm"};
-		    $comments_net->make_net_cat(-net2name => 1,
-						-multiple => 1);
-		}
+		make_comments_net();
 	    }
 	}
 
@@ -13494,6 +13510,18 @@ sub make_handicap_net {
 	}
     }
     $handicap_s_net;
+}
+
+sub make_comments_net {
+    if (!$str_obj{"comm"}) {
+	$str_obj{"comm"} = Strassen->new("comments");
+    }
+    if ($str_obj{"comm"}) {
+	$comments_net = new StrassenNetz $str_obj{"comm"};
+	$comments_net->make_net_cat(-net2name => 1,
+				    -multiple => 1,
+				    -obeydir => 1);
+    }
 }
 
 # User definable blockings

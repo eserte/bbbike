@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.12 2003/07/03 00:09:01 eserte Exp eserte $
+# $Id: LogTracker.pm,v 1.13 2003/08/24 23:21:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -32,7 +32,7 @@ use vars qw($VERSION $lastcoords
 	    $error_checks $ua $safe
             $remoteuser $remotehost $logfile $tracking $tail_pid $bbbike_cgi
 	    $last_parselog_call);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 # XXX replace all %layer, %show etc. with @layer, @show...
 use constant ROUTES => 0;
@@ -588,32 +588,93 @@ sub pref_statistics {
     if (fork == 0) {
 	close RDR;
 	open(AL, $logfile)
-	    or main::status_message(Mfmt("Kann die Datei %s nicht öffnen: %s",
-					 $logfile, $!), "die");
+	    or do {
+		print WTR Mfmt("Kann die Datei %s nicht öffnen: %s",
+			       $logfile, $!);
+		close WTR;
+		CORE::exit(1);
+	    };
+
 	my %pref;
+	my $pref_count = 0;
+	my %image;
+	my $image_count = 0;
+	my %first_appearance;
+
 	while(<AL>) {
 	    print STDERR "$. \r" if $.%1000 == 0;
 	    if (/GET.*bbbike.cgi\?(.*) HTTP\//) {
 		my $qs = $1;
-		next if ($qs !~ /pref_/);
-		my $q = CGI->new($qs);
-		for my $key ($q->param) {
-		    if ($key =~ /^pref_(.*)/) {
-			$pref{$1}{$q->param($key)}++;
+		if ($qs =~ /pref_/) {
+		    $pref_count++;
+		    my $q = CGI->new($qs);
+		    for my $key ($q->param) {
+			if ($key =~ /^pref_(.*)/) {
+			    my $key_stripped = $1;
+			    my $val = $q->param($key);
+			    $pref{$key_stripped}{$val}++;
+			    if (!exists $first_appearance{$key_stripped}) {
+				$first_appearance{$key_stripped}{$val} = $pref_count;
+			    }
+			}
+		    }
+		} elsif ($qs =~ /imagetype/) {
+		    $image_count++;
+		    my $q = CGI->new($qs);
+		    for my $key ($q->param) {
+			if ($key =~ /^(imagetype|scope|geometry|outputtarget)$/) {
+			    my $val = $q->param($key);
+			    $image{$key}{$val}++;
+			    $first_appearance{$key}{$val} = $image_count
+				if !exists $first_appearance{$key}{$val};
+			} elsif ($key eq 'draw') {
+			    for my $val ($q->param($key)) {
+				$image{$key}{$val}++;
+				$first_appearance{$key}{$val} = $image_count
+				    if !exists $first_appearance{$key}{$val};
+			    }
+			}
 		    }
 		}
 	    }
 	}
-	while(my($pref,$v) = each %pref) {
-	    while(my($val,$count) = each %$v) {
-		$v->{$val} = [$count, sprintf("%.1f%%", 100*$count/$pref{seen}{1})];
+	close AL;
+
+	if ($pref_count) {
+	    while(my($k,$v) = each %pref) {
+		while(my($val,$count) = each %$v) {
+		    my $since_first_appearance = $pref_count-$first_appearance{$k}{$val}+1;
+		    $v->{$val} = [$count,
+				  sprintf("%.1f%%", 100*$count/$pref_count),
+				  sprintf("%.1f%% ($since_first_appearance)", 100*$count/($since_first_appearance)),
+				 ];
+		}
 	    }
 	}
-	close AL;
-	require Data::Dumper;
-	my $res = Data::Dumper->new([\%pref],[])
-	    ->Sortkeys(sub { [ sort { $a <=> $b } keys %{$_[0]} ] } )
-	    ->Indent(1)->Useqq(1)->Dump;
+	if ($image_count) {
+	    while(my($k,$v) = each %image) {
+		while(my($val,$count) = each %$v) {
+		    my $since_first_appearance = $image_count-$first_appearance{$k}{$val}+1;
+		    $v->{$val} = [$count,
+				  sprintf("%.1f%%", 100*$count/$image_count),
+				  sprintf("%.1f%% ($since_first_appearance)", 100*$count/($since_first_appearance)),
+				 ];
+		}
+	    }
+	}
+
+	my $res;
+	if (eval { require YAML; 1 }) {
+	    local $YAML::UseHeader = 0;
+	    local $YAML::Indent = 8;
+	    $res = "Preferences:\n" . YAML::Dump(\%pref) .
+		"\nImage:\n" . YAML::Dump(\%image);
+	} else {
+	    require Data::Dumper;
+	    $res = Data::Dumper->new([\%pref],[])
+		->Sortkeys(sub { [ sort { $a <=> $b } keys %{$_[0]} ] } )
+		    ->Indent(1)->Useqq(1)->Dump;
+	}
 	warn $res;
 	print WTR $res, "\n";
 	close WTR;

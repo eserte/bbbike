@@ -144,4 +144,16 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Kurfürstendamm (südl. Richtungsfahrbahn) zwischen Uhlandstraße und Leibnizstraße gesperrt. Grund: Radsportveranstaltung Dauer: 30.08.2003 zwischen 08.00 Uhr und 24.00 Uhr Uhr ',
        type  => 'gesperrt',
      },
+     { from  => 1061503200, # 2003-08-22 00:00
+       until => 1061762400, # 2003-08-25 00:00
+       file  => 'muellerstr.bbd',
+       text  => 'Straßenfest in der Müllerstraße bis 24.8.2003',
+       type  => 'gesperrt',
+     },
+     { from  => 1061517600, # 2003-08-22 04:00
+       until => 1061762400, # 2003-08-25 00:00
+       file  => 'reichsstr.bbd',
+       text  => 'Wegen eines Festes kann die Reichsstraße am Sonnabend ab 4 Uhr bis Sonntag (24 Uhr) vom Steubenplatz bis zum Theodor-Heuss-Platz nicht passiert werden',
+       type  => 'gesperrt',
+     },
     );

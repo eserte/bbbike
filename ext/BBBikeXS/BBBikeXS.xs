@@ -217,6 +217,8 @@ double strecke_XS(p1, p2)
 	SV *p1;
 	SV *p2;
 	PREINIT:
+	SV **sv1;
+	SV **sv2;
 #ifdef INT_SQRT
 #  define MySvGET(x) SvIV((x))
 	long a1, a2;
@@ -225,10 +227,14 @@ double strecke_XS(p1, p2)
 	double a1,a2;
 #endif
 	CODE:
-	a1 = MySvGET(*(av_fetch((AV*)SvRV(p1), 0, 0))) -
-	     MySvGET(*(av_fetch((AV*)SvRV(p2), 0, 0)));
-	a2 = MySvGET(*(av_fetch((AV*)SvRV(p1), 1, 0))) -
-	     MySvGET(*(av_fetch((AV*)SvRV(p2), 1, 0)));
+	sv1 = av_fetch((AV*)SvRV(p1), 0, 0);
+	sv2 = av_fetch((AV*)SvRV(p2), 0, 0);
+	if (!sv1 || !sv2) croak("Invalid arguments in strecke_XS");
+	a1 = MySvGET(*sv1) - MySvGET(*sv2);
+	sv1 = av_fetch((AV*)SvRV(p1), 1, 0);
+	sv2 = av_fetch((AV*)SvRV(p2), 1, 0);
+	if (!sv1 || !sv2) croak("Invalid arguments in strecke_XS");
+	a2 = MySvGET(*sv1) - MySvGET(*sv2);
 #ifdef INT_SQRT
 	RETVAL = eyal(a1*a1 + a2*a2);
 #else

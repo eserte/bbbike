@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: berlinmap2hafas,v 1.38 2003/02/16 17:55:21 eserte Exp eserte $
+# $Id: berlinmap2hafas,v 1.39 2003/08/24 23:20:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001 Slaven Rezic. All rights reserved.
@@ -245,16 +245,15 @@ LINES: while(defined($_ = nextline())) {
     }
     my $cat = shift @coord;
 
-    if ($cat eq 'St') {
+    if ($cat eq 'St;') {
 	# Steigungen: automatische Erzeugung der Gegenrichtung
 	# "Steigung" durch "Gefälle" ersetzen
 	require Strassen::Core;
 	my $r = Strassen::parse($_);
 	$r->[Strassen::NAME()] =~ s/Steigung/Gefälle/;
-	$r->[Strassen::CAT()] = 'S1,Gf';
+	$r->[Strassen::CAT()] = 'Gf;';
 	@{ $r->[Strassen::COORDS()] } = reverse @{ $r->[Strassen::COORDS()] };
 	push @str_buffer, Strassen::arr2line2($r);
-	$cat = "S1,St"; # category für _this_ line
     }
 
     my(@res);
