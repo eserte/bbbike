@@ -572,6 +572,12 @@ bundles:
 	if [ ! -h Bundle/make_small_bundle ] ; then \
 	    ln -s ../Makefile.PL Bundle/make_small_bundle; \
 	fi
+	if [ ! -h Bundle/make_pi_osd ] ; then \
+	    ln -s ../Makefile.PL Bundle/make_pi_osd; \
+	fi
+	if [ ! -h Bundle/make_small_pi_osd ] ; then \
+	    ln -s ../Makefile.PL Bundle/make_small_pi_osd; \
+	fi
 EOF
 .
 "	cd Bundle; $^X make_bundle; $^X make_small_bundle; \\
