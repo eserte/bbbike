@@ -4645,6 +4645,7 @@ sub load_photos {
 					'andreaskr_klein2.' . $default_img_fmt);
     $andreaskr_photo     = load_photo($top, 'andreaskr.' . $default_img_fmt);
     $vorfahrt_photo      = load_photo($top, 'vorfahrt.' . $default_img_fmt);
+    $vorfahrt_klein_photo= load_photo($top, 'vorfahrt_klein.' . $default_img_fmt);
     $windrose2_photo     = load_photo($top, 'windrose2.' . $default_img_fmt);
     $kneipen_photo       = load_photo($top, 'glas.' . $default_img_fmt);
     $kneipen_klein_photo = load_photo($top, 'glas_klein.' . $default_img_fmt);
@@ -9066,7 +9067,7 @@ sub plot_symbol {
 	$c->itemconfigure($tag_fg, -fill => 'red', -capstyle => 'projecting',
 			  -width => 8);
     } elsif ($abk eq 'vf') {
-	$c->itemconfigure($tag_fg, -image => $vorfahrt_photo);
+	$c->itemconfigure($tag_fg, -image => get_symbol_scale($abk));
 	$c->itemconfigure($tag_bg, -fill => 'black',
 			  -width => 3); # XXX width skalierbar machen
     } elsif ($abk =~ /^(kn|rest)$/) {
@@ -12408,7 +12409,7 @@ sub scale_width {
 	}
     }
 
-    foreach (qw(lsa-X lsa-B lsa-Zbr rest kn)) {
+    foreach (qw(lsa-X lsa-B lsa-Zbr rest kn vf)) {
 	$c->itemconfigure($_ . '-fg', -image => get_symbol_scale($_, $scale));
     }
     foreach (qw(e)) {
@@ -12687,6 +12688,14 @@ sub get_symbol_scale {
 	    return (-width => 6, -font => undef);
 	} else {
 	    return (-width => 3, -font => undef);
+	}
+    } elsif ($tag eq 'vf') {
+	if ($myscale > 2*$mod) {
+	    return $vorfahrt_photo;
+	} elsif ($scale >= 0.5*$mod) {
+	    return $vorfahrt_klein_photo;
+	} else {
+	    return undef;
 	}
     }
 }

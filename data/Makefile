@@ -87,7 +87,7 @@ slow-checks:	inaccessible_strassen inaccessible_landstrassen \
 		check-line-lengths check-dates check-Berlin.coords.data
 
 # even slower (about four minutes)
-really-slow-checks:	check-crossings
+really-slow-checks:	check-crossings check-nearest
 
 inaccessible_strassen: strassen gesperrt
 	-@$(WRITEABLE) $@
@@ -748,7 +748,8 @@ check-dates:	.check_dates
 check-crossings:	.check_crossings
 
 .check_crossings:	strassen landstrassen landstrassen2 brunnels
-	${MISCSRCDIR}/check_crossings -o /tmp/crossings.bbd -against brunnels \
+	${MISCSRCDIR}/check_crossings -v \
+	    -o /tmp/crossings.bbd -against brunnels \
 	    strassen landstrassen landstrassen2
 	@touch $@
 

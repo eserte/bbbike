@@ -262,8 +262,9 @@ Pestalozzistr.: Kopfsteinpflaster	Q2 4173,11225 4077,11226 3981,11226
 Goethestr.: teilweise Kopfsteinpflaster, teilweise Verbundsteine	Q2 4312,11341 4092,11338 3986,11337
 Knesebeckstr.: Kopfsteinpflaster	Q2 4868,10934 4847,10677 4847,10589 4828,10356
 Mommsenstr.: Kopfsteinpflaster	Q2 4685,10689 4847,10677
-Linienstr.: mäßiger Asphalt	Q1 10432,13678 10718,13625
+Linienstr.: mäßiger Asphalt	Q1 10432,13678 10597,13647 10718,13625
 Linienstr.: mäßiger Asphalt	Q1 9903,13646 9607,13507 9281,13374
+Rückerstr.: mäßiger Asphalt	Q1 10597,13647 10535,13509
 Knaackstr.: mäßiger Asphalt	Q1 11237,14414 11358,14331 11418,14290 11506,14230
 Immanuelkirchstr.: Kopfsteinpflaster	Q2 11506,14230 11727,14111 11958,13986
 Bersarinplatz: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q2 13710,12633 13686,12611 13678,12571 13698,12544 13742,12538 13776,12571 13770,12617 13747,12642 13710,12633
@@ -793,7 +794,7 @@ Alte Spandauer Poststr.: Waldweg?	Q1 -1415,9144 -1482,9276 -1512,9438 -1495,9518
 (Pappelplatz): Asphalt	Q0 425,8766 297,8894 197,8973 30,9105
 (Weg am Müggelsee): Waldweg, teilweise sandig, teilweise OK	Q2 27427,5188 27470,5093 27852,5017 28286,4943 28361,5068
 (Waldweg): OK, 22 km/h möglich	Q1 29075,4753 29092,4761 29704,5009
-(Waldweg parallel zur Straßenbahn): Waldweg, Schotter, teilweise sandig	Q2 30318,5396 32192,5915
+(Waldweg parallel zur Straßenbahn): Waldweg, Schotter, teilweise sandig	Q2 30400,5409 32192,5915
 Wanderweg Erkner - Hessenwinkel: guter Parkweg	Q1 33533,2761 33293,2768 33086,2790 32972,2832
 (Zu den Müggelheimer Wiesen): asphaltiert	Q0 29899,2399 29549,2267 29414,2373
 Südendstr.: Kopfsteinpflaster	Q2 5687,5486 6002,5424
@@ -805,7 +806,8 @@ Spreetalallee: abschüssig, schlechtes Kopfsteinpflaster	Q3 715,13126 693,13215
 Um den Flughafen: mäßiger bis akzeptabler Belag (Schotter, fester Sand, mäßiger Asphalt)	Q1 1053,16254 1018,16321 878,16365 762,16318 306,16250 259,16628 318,16740 1450,17366 1464,17373
 Klemkestr.: Kopfsteinpflaster	Q2 7217,18681 7320,18688
 Arnimplatz: gutes Kopfsteinpflaster	Q1 10753,16144 10619,16319
-Bergstr. (Mitte): Kopfsteinpflaster	Q2 9792,13681 9663,14036
+Bergstr. (Mitte): Kopfsteinpflaster	Q2 9792,13681 9718,13885 9663,14036
+Schröderstr.: Kopfsteinpflaster	Q2 9531,13797 9718,13885
 Lepsiusstr.: Kopfsteinpflaster	Q2 4981,6642 4948,6582 4922,6537
 Artemisstr.: kleinteiliges Kopfsteinpflaster	Q1 4387,22222 4293,22365 4140,22623
 Bohnsdorfer Str.: Waldweg??	Q2 21999,2171 21996,1683 22162,1183 22217,1108
@@ -871,6 +873,7 @@ Liselotte-Herrmann-Str.: Kopfsteinpflaster	Q2 12703,13859 12438,14054 12262,1417
 Esmarchstr.: Kopfsteinpflaster	Q2 12307,14246 12262,14176 12199,14102 12110,13965
 Chodowieckistr.: Kopfsteinpflaster	Q2 12285,14458 11992,14599 11681,14759
 Christinenstr.: Kopfsteinpflaster, teilweise OK	Q1 10569,13719 10639,13865 10686,13947 10762,14050 10830,14183
+Angermünder Str.: Kopfsteinpflaster	Q2 10640,13700 10703,13832
 (Am Schinkelplatz): teilweise schlechtes Kopfsteinpflaster, Baustelle	Q3 9987,12421 10084,12228
 Sorauer Str.: teilweise Kopfsteinpflaster	Q1 12829,10504 12689,10273
 am Beisheim-Center: sehr gutes Kopfsteinpflaster	Q0 8326,11732 8399,11630 8490,11526
@@ -1053,7 +1056,7 @@ Babelsberger Str.: Asphalt	Q0 5820,8346 5800,8592 5801,8815 5785,9043
 Hansastr. (Wedding): Asphalt	Q0 8079,16953 7884,16940 7852,16963
 Wiclefstr.: Kopfsteinpflaster	Q2 5239,13824 5441,13796 5748,13748 5895,13725 6115,13684
 Buchstr.: Asphalt	Q0 6599,14735 6459,14876
-Lottumstr.: mäßiges Kopfsteinpflaster	Q2 10479,13931 10639,13865 10793,13785
+Lottumstr.: mäßiges Kopfsteinpflaster	Q2 10479,13931 10639,13865 10703,13832 10793,13785
 Stieglitzweg: Asphalt	Q0 14318,3259 14493,3143 14530,3044 14637,2868 14746,2781
 Waldschluchtpfad: mäßiges Kopfsteinpflaster	Q2 -5215,6722 -5062,6921 -4790,6881
 Marchwitzastr.: gute Qualität	Q0 20143,13082 20059,13068 19940,13128 19934,13318 20163,13318

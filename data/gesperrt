@@ -272,6 +272,7 @@ Lohmeyerstr.	1s 3348,12314 3409,12451
 Waldweg	1s 25496,2429 24972,2583
 Schulenburgring	1s 9019,8434 9013,8594
 Neue Schönhauser Str.	1s 10528,13243 10441,13195 10305,13211
+Alte Schönhauser Str.	1s 10718,13625 10746,13673
 Kirchhofstr.	1s 13188,7590 13032,7334
 Niemannstr.	1s 14252,11368 14211,11229
 Björnsonstr	1s 10229,16653 10215,16527
@@ -282,7 +283,7 @@ Lindenallee	1s 1407,11516 1391,11434
 Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
 Billerbecker Weg	1s 1231,18690 1231,18731
 Alt-Tegel	1s 1551,20106 1691,20129 1778,20178 1923,20255
-Am Treptower Park	1s 14529,9141 14390,9291 14242,9448 14089,9610
+Am Treptower Park	1s 14529,9141 14390,9291 14242,9448 14179,9515 14089,9610
 Groebenufer	1s 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26243,-12300 26028,-12312
 Seestr. (Potsdam)	1s -11581,559 -11609,400
@@ -357,8 +358,10 @@ Langenbeckstr - Landsberger: Mittelstreifen	3 13081,13457 13161,13360 13334,1345
 Landsberger - Langenbeckstr: Mittelstreifen	3 13089,13323 13161,13360 13081,13457
 Greifswalder - Chodowieckistr: Mittelstreifen mit Straßenbahn	3 12188,14321 12285,14458 11992,14599
 Chodowieckistr - Greifswalder: Mittelstreifen mit Straßenbahn	3 11992,14599 12285,14458 12338,14532
-Christinenstr. - Torstr.: Mittelstreifen mit Straßenbahn	3 10639,13865 10569,13719 10746,13673
+Christinenstr. - Torstr.: Mittelstreifen mit Straßenbahn	3 10639,13865 10569,13719 10640,13700
 Torstr. - Christinenstr.: Mittelstreifen mit Straßenbahn	3 10445,13752 10569,13719 10639,13865
+Angermünder Str. - Torstr.: Mittelstreifen mit Straßenbahn	3 10703,13832 10640,13700 10746,13673
+Torstr. - Angermünder Str.: Mittelstreifen mit Straßenbahn	3 10569,13719 10640,13700 10703,13832
 Katzlerstr. - Yorckstr.: Linksabbiegen verboten (und unbequem)	3 8035,9437 8095,9639 7941,9686
 Yorckstr. - Katzlerstr.: Linksabbiegen verboten (und unbequem)	3 8188,9610 8095,9639 8035,9437
 Neue Blumenstr.: Mittelstreifen	3 11709,12601 12006,12464 12118,12462
@@ -476,7 +479,7 @@ Barriere (Seydelstr.)	BNP:5:-100 10370,11593
 Elsenstr.	1:inwork 13760,9188 13657,9063 13504,8882
 Pfarrstr.	1:inwork 15339,11123 15267,10865
 Ernst-Ruska-Ufer: noch in Bau	2:inwork 19103,2442 18927,2431
-Malchower Chaussee (Pankow) Richtung stadteinwärts zwischen Ortnitstr. und Nachtalbenweg Baustelle, veränderte Verkehrsführung. Für die Arbeiten im Abschnitt von Darßer str. bis Nachtalbenweg wird der Verkehr über Darßer Str. - Nachtalbenw. umgeleitet (bis 30.04.2004)	1:inwork 15181,18137 14828,17856
+Malchower Chaussee (Pankow) Richtung stadteinwärts zwischen Ortnitstr. und Nachtalbenweg Baustelle, veränderte Verkehrsführung. Für die Arbeiten im Abschnitt von Darßer str. bis Nachtalbenweg wird der Verkehr über Darßer Str. - Nachtalbenw. umgeleitet (bis 30.04.2005)	1:inwork 15181,18137 14828,17856
 Entlastungsstr. (Tiergartentunnel, längerfristig)	1:inwork 8172,11679 8129,11735 8056,12061 8063,12182
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10177,12493
 Sperrung vor der amerikanischen Botschaft	2 9141,12320 9112,12499 9100,12627
@@ -493,4 +496,3 @@ L 39; (ASFriedersdorf-Neu Zittau); keine Brücke ü. Oder-Spree-Kanal; kein Bw ü. 
 L 70 (Doberlug Kirchhain-Dahme); zw. B87 Hohenbuckow u. Hillmersdorf; Fahrbahnschäden; Vollsperrung; 22.05.97-unbekannt	2:inwork 17023,-71738 17783,-72721 17979,-73530 17960,-73915 17961,-74364 18228,-75553 18187,-76301 18061,-76878
 B 179; (Spreewaldstr., Karl-Liebknecht-Str.); zw. Bahnübergang und nördl. A.-Bebel-Str.; grundh. Straßenbau; Vollsperrung; 01.04.2004-31.12.2005	2:inwork 26612,-15094 26583,-15677
 B 167; (Herzberg-Neuruppin); OL Alt Ruppin, Rhinbrücke    Brückenneubau    Vollsperrung    02.03.2004-31.12.2005	2:inwork -28477,59467 -28692,59635 -28866,59954
-K 7234; (Glienick-Dabendorf); zwischen den Ortschaften Dabendorf-Glienick Straßenbau, Vollsperrung, 25.10.2004-10.12.2004	2:inwork 10156,-17681 11304,-17936 11623,-17809 11793,-17851 12091,-17766

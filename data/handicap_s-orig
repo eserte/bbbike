@@ -1,34 +1,11 @@
-# $Id: handicap_s-orig,v 4.9 2004/09/25 22:55:59 eserte Exp eserte $
+# $Id: handicap_s-orig,v 4.11 2004/12/19 12:45:01 eserte Exp eserte $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Behrenstr./Bebelplatz: Einbahnstraße	q3::inwork; 9626,12227 9803,12243
-#XXX del? Müggelseedamm Erkner Richtung Köpenick zwischen Fürstenwalder Damm (Ost) und Bölschestraße wegen Bauarbeiten gesperrt (bis 15.09.2004)	q4::inwork; 28195,5141 27427,5188 27215,5200 26964,5039 26625,4958 26277,4957 25960,4839 25801,4831 25742,4835 25541,4845
-#XXX del Alt-Biesdorf, Berlin-Mitte Richtung Berlin-Biesdorf, Zwischen Märkische Allee und Köpenicker Straße wegen Bauarbeiten gesperrt bis 15.08.	q4::inwork; 20115,11730 20368,11711 20575,11698 21106,11651
 Wassersportallee (Grünau), Richtung Regattastraße zwischen Ammerseestraße und Regattastraße Baustelle Straße vollständig gesperrt (bis 2005-01-31)	q4::inwork; 22449,1281 22663,1441
-#XXX Meldung aufgehoben? Mauerstraße, zwischen Jägerstraße und Mohrenstraße, Baustelle, Straße gesperrt. Dauer: 17.05.2004 08.00 Uhr bis 30.09.2004 18:00 Uhr	q4::inwork 9108,11961 9144,11866 9173,11770
-#XXX Meldung aufgehoben? Taubenstraße, zwischen Glinkastraße und Mauerstraße, veränderte Verkehrsführung (Sackgasse). Dauer: 17.05.2004 08.00 Uhr bis 30.09.2004 18:00 Uhr	q4::inwork 9144,11866 9208,11872
-##: XXX andere Quelle sagt bis Ende 08.2004
-#XXX del? Mohrenstraße (Mitte) in beiden Richtungen zwischen Charlottenstraße und Friedrichstraße Baustelle, Straße vollständig gesperrt	q4::inwork 9410,11803 9538,11818
-#XXX del Rapsweg (Marzahn) in beiden Richtungen zwischen Oberfeldstraße und Blumberger Damm Baustelle, Straße vollständig gesperrt	q4::inwork 21242,12769 20953,12866 20711,12905
-#XXX del Straßensperrungen der Straße vor Schönholz zwischen Klemkestr. und Provinzstr. sowie der Klemkestraße zwischen Sommerstr. und Straße vor Schönholz, in Fahrtrichtung Niederschönhausen, aufgrund Tiefbauarbeiten. Dauer: 14.06.04 bis ca. 30.09.04	q4::inwork; 8182,18761 8260,18765 8361,18778 8476,18773 8650,18796 8687,18755
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
-#XXX nicht mehr lange?
-#XXX del? Voßstr.: Bauarbeiten an der Ebertstr.	q3::inwork 8553,11638 8837,11676
-Gärtnerstraße, Richtung Rhinstraße, zwischen Konrad-Wolf-Straße und Rhinstraße: Straßenarbeiten, gesperrt (bis 15.12.2004)	q4::inwork; 16872,15827 17080,15779 17379,15781 17489,15781
-#XXX del Naumannstr.: Bauarbeiten, eine Richtung gesperrt. Dauer: 27.10.2003, 14.00 Uhr bis 30.11.2004	q4::inwork; 7717,7759 7716,8048
 Wilhelmstr.: Fahrbahn vor der britischen Botschaft gesperrt, passierbar für Radfahrer	q3 8851,12123 8804,12280
-Tucholskystr.: Einbahnstr., Richtung Süden gesperrt	q4; 9654,13397 9605,13248
-# früher wurde 2005-03-00 als Ende genannt, und dann 19.9.2004, dann 19.9.2005, dann 15.9.2004, dann wieder Mitte 2005 (noch nicht geändert)...
-#XXX del Regattastraße, zwischen Wassersportallee und Grünauer Straße/Bohnsdorfer Straße, Einrichtung als Einbahnstraße Richtung Grünauer Straße. Baumaßnahmen. Dauer: 12.01.2004 bis vorraussichtlich 15.09.2005	q4; 22074,2666 22421,1872 22663,1441
+Tucholskystr.: Einbahnstr., Richtung Süden gesperrt	q4::inwork; 9654,13397 9605,13248
 Prenzlauer Promenade, zw. Am Steinberg und Ostseestr. Baustelle, Sperrung stadteinwärts an Elsa-Brandström-Straße. Umleitung: Elsa-Brandström -Straße - Neumannstraße - Wisbyer Straße bis 15.06.2005	q4::inwork; 12012,16752 12046,16568 12054,16517 12097,16263 12091,16209
-#XXX del (nach Ortstermin): Wichertstr. Prenzlauer Berg, Richtung Schönhauser Allee nach Prenzlauer Allee Baustelle, 2 Fahrstreifen gesperrt, eine Umleitung ist eingerichtet bis 30.06.	q4::inwork; 9889,6029 9968,6085
-#XXX del? Köpenicker Str. (Köpenick) in beiden Richtungen am S-Bahnhof Wulheide Baustelle, Straße gesperrt, Umleitung: eine Umleitung ist eingerichtet (bis 25.06.2004)	q4::inwork 13443,9527 13424,9563
-#XXX del? Bitterfelder Straße (Marzahn) Richtung Märkische Allee, Höhe S-Bahn-Brücke Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 2004-10-31)	q4::inwork; 19903,16632 20230,16560
-#XXX del? Gartenstraße zwischen Torstraße und Schröderstraße in beiden Richtungen gesperrt. Asphaltarbeiten. Ab 29.03.2004, 07.00 Uhr bis ?	q4::inwork 9668,13629 9383,13978
-#XXX del Rathausstr./Alarichstr. (Schöneberg) in beiden Richtungen zwischen Kreuzung Ringstr. und Attilaplatz Baustelle, Straße vollständig gesperrt (bis 16.05.2004) (14:36)	q4::inwork 8606,5496 8707,5289 8750,5173 8772,5081 8801,4993 8838,4668 8862,4462 8877,4356 8967,4082 9021,3878
-#XXX del Jerusalemer Str. (Mitte) Richtung Norden zwischen Leipziger Str. und Hausvogteiplatz Baustelle, Richtungsfahrbahn Richtung Süden gesperrt, Einbahnstraßenregelung (bis Ende September 2004)	q4::inwork; 9878,11857 9892,11752 9899,11670
-#: XXX Diese Meldung kommt und geht ... mal bis Ende 08.2004 ..., mal bis Ende des Jahres
-#XXX del Saatwinkler Damm (Spandau) in beiden Richtungen zwischen Rohrdamm und Gartenfelder Str. Baustelle, Straße vollständig gesperrt (bis 30.09.2004)	q4::inwork -303,15526 468,15640
-#XXX del Lückstraße Berlin-Friedrichsfelde Richtung Berlin-Friedrichshain Zwischen Rummelsburger Straße und Schlichtallee wegen Bauarbeiten gesperrt bis 14.05.	q4::inwork 16032,10842 16153,10818 16460,10699 16655,10622
 Mohrenstr.: Bauarbeiten	q4::inwork; 9173,11770 9220,11781
 #XXX wahrscheinlich bis Fertigstellung der S-Bahnhof-Verschiebung?
 Krumme Str.: Bauarbeiten	q4::inwork; 3942,11010 3827,10980
@@ -94,8 +71,6 @@ Schwedter Str. (Mauerpark): Park, Fußgänger	q2 10333,14983 10238,15316 10122,156
 (Fußweg am Griesinger-Krankenhaus): Fußgänger	q1 21930,12185 21615,12326 21367,12437 21211,12507
 (Fußgängerbrücke Ostkreuz): Fußgänger	q3 14798,10985 14761,10982 14739,10892 14794,10844
 Marheinekeplatz: Fußgänger, Brunnen	q3 9882,9287 9881,9238
-# * weitere Besonderheiten, noch nicht in strassen:
-# Spreeufer (am Nikolaiviertel): q3 (viele Fußgänger und Straßencafes)
 (Uferweg am Urbanhafen): Fußgänger	q1 11177,9935 11052,9935 10923,9925 10522,10056 10490,10080
 S-Bahn-Unterführung	q3 7854,7572 7934,7621 7959,7609
 Marx-Engels-Forum: Fußgänger, eigentlich Schiebestrecke	q2 10300,12587 10355,12551 10411,12471 10422,12395
@@ -128,9 +103,9 @@ zum Volksparksteg: kombinierter Rad- und Fußweg, enge Kurven	q3 5533,8478 5531,8
 Volksparksteg: kombinierter Rad- und Fußweg	q1 5531,8458 5417,8519
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5481,8506 5417,8519 5347,8562
 (zur Thomas-Dehler-Str.): Fußgänger, Bordsteine	q4 6654,11460 6716,11439
-#: by ADFC-Karte
+#: by: ADFC-Karte
 Ernststr.: Fußgänger	q2 2497,19503 2700,19527
-#: unsure guess
+#: add_fragezeichen: Stimmt das?
 (S-Bahnbrücke Wartenberg): Fußgänger?	q2 16923,18650 16990,18694 17114,18775
 Am Kupfergraben: am Wochenende Flohmarkt	q3 9867,12651 9754,12775 9661,12876 9614,12893 9529,12925
 Bernburger Treppe: Rampe	q3 8542,11061 8458,11081
@@ -190,7 +165,6 @@ Am Rummelsburger See: teilweise enge Kurven	q2 15453,10415 15456,10356 15518,102
 Unterführung unter Adlergestell und S-Bahn: sehr eng, nicht für Anhänger geeigner	q3 20928,2412 20810,2398
 Vorfahrt Reichstagsgebäude: Fußgänger	q3 8400,12417 8400,12605
 Am Teltowkanal: kurverreich und recht eng	q1 3743,1385 3695,1308 3619,1207 3458,1063 3366,1007
-#: add_fragezeichen: stimmt das mit den Bordsteinen?
 Körnerpark: Fußgänger, Bordsteine	q3 12703,7370 12722,7261
 Fregestr. zur Feuerbachstr.: Gehweg, Fußgänger	q2 5629,6421 5588,6370
 Weisestr.: Bordsteine	q3 11763,8337 11770,8292

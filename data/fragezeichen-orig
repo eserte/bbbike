@@ -34,7 +34,7 @@ Reichsstr.	? 1391,11434 1239,11567 1053,11735 836,11935 653,12109 504,12293 448,
 #: by Berliner Kurier: vvv
 Norwegerstr.: Fahrradstraße geplant (noch 2004)	? 10033,16232 9987,16414 9967,16514
 Max-Beer-Str.: Fahrradstraße geplant (2005)	? 10632,13199 10696,13457 10740,13621
-Linienstr.: Fahrradstraße geplant (nach der Sanierung)	? 9281,13374 9607,13507 9903,13646 9944,13665 9964,13665 10081,13673 10214,13680 10432,13678 10718,13625 10740,13621 10777,13614 11059,13480 11104,13456
+Linienstr.: Fahrradstraße geplant (nach der Sanierung)	? 9281,13374 9607,13507 9903,13646 9944,13665 9964,13665 10081,13673 10214,13680 10432,13678 10597,13647 10718,13625 10740,13621 10777,13614 11059,13480 11104,13456
 #: by ^^^
 #: section ^^^
 #
@@ -223,7 +223,7 @@ Alexanderufer: Existiert diese Verbindung?	? 8259,13009 8312,13296 8378,13425 83
 # B96 ab Ende Schnellstraße bis mindestens Fürstenberg als "stark befahren" markieren!
 Liebigstr. - Frankfurter Allee: Verbindung?	? 13905,12374 13885,12279
 Schloßstr (Charlottenburg): hier auch Radstreifen?	? 3038,12482 3076,12192 3103,11968
-Straßburger Str. aufnehmen?	? 10902,13604 11262,14136
+Straßburger Str. aufnehmen?	? 10902,13604 11060,13865 11160,14002 11262,14136
 Belforter Str. aufnehmen?	? 11116,14231 11262,14136 11435,14023
 Schillingstr. - Volkspark Friedrichshain: existiert eine direkte Verbindung?	? 11635,12745 11839,13083 12085,13377
 O-Grüneberg-Weg/Seelingstr. befahrbar, Verbindung existent?	? 3278,12021 3177,12100 3087,12084 2496,12023
@@ -476,7 +476,8 @@ von Marzahner Promenade bis Mehrower Allee über Mühlenbecker Weg: laut ADFC-Kart
 #: by: Thomas Heise:
 Allee der Kosmonauten: Radweg in Bau	?::inwork 19628,13517 19897,13535 20182,13554
 Prenzlauer Allee: tatsächlich ein Radstreifen, wie bei der MoPo behauptet?	?; 11941,15586 11997,15834 12030,15968 12076,16129 12091,16209
-Corinth/Rochowstr.: Ampelanlage in Bau	?::inwork 14170,10675
+Corinth/Rochowstr.: Ampelanlage noch nicht eingeschaltet	?::inwork 14170,10675
+Frieden/Friedrichsberger Str.: Ampelanlage noch nicht eingeschaltet	?::inwork 12531,12933
 Onkel-Bräsig-Str.: Qualität laut ADFC-Karte gut, Einbahnstraße auch für Radfahrer?	? 13305,4504 13345,5087 13323,5222
 Alt-Köpenick: laut Message-ID: <41614486$0$3640$9b4e6d93@newsread2.arcor-online.net> wieder gepflastert	? 22196,4847 22138,4661 22111,4562 22093,4499
 Alter Markt: laut Message-ID: <2scvijF1io77eU1@uni-berlin.de> soll hier asphaltiert werden	?::inwork 22502,4528 22472,4572 22383,4703
@@ -543,4 +544,4 @@ Laut <41b75ea5$0$23129$9b622d9e@news.freenet.de> wird hier (Berliner Str./Floras
 Parkstr. (Potsdam): Fortsetzung zur Schopenhauerstr.?	? -13803,-462 -13965,-590 -14034,-571
 Voltaireweg in diese Fahrtrichtung gesperrt?	?; -14034,-571 -13795,-407 -13636,-331
 Rübelandstr.: Qualität?	? 12787,7546 12818,7403
-Straßenzug Hirtenstr./Mulackstr. ausprobieren	? 11015,13264 10846,13362 10696,13457 10646,13480 10385,13548 10262,13583
+Straßenzug Hirtenstr./Mulackstr. ausprobieren	? 11015,13264 10846,13362 10696,13457 10646,13480 10535,13509 10385,13548 10262,13583

@@ -164,7 +164,7 @@ Verlängerung der Paul-Löbe-Str. Richtung Kongreßhalle/Spree noch in Bau	?::inwor
 Alexanderufer: Existiert diese Verbindung?	? 8259,13009 8312,13296 8378,13425 8337,13541
 Liebigstr. - Frankfurter Allee: Verbindung?	? 13905,12374 13885,12279
 Schloßstr (Charlottenburg): hier auch Radstreifen?	? 3038,12482 3076,12192 3103,11968
-Straßburger Str. aufnehmen?	? 10902,13604 11262,14136
+Straßburger Str. aufnehmen?	? 10902,13604 11060,13865 11160,14002 11262,14136
 Belforter Str. aufnehmen?	? 11116,14231 11262,14136 11435,14023
 Schillingstr. - Volkspark Friedrichshain: existiert eine direkte Verbindung?	? 11635,12745 11839,13083 12085,13377
 O-Grüneberg-Weg/Seelingstr. befahrbar, Verbindung existent?	? 3278,12021 3177,12100 3087,12084 2496,12023
@@ -412,7 +412,8 @@ Stubenrauchstr. ist an der Autobahn nicht durchgängig. Existiert dennoch ein Stu
 von Marzahner Promenade bis Mehrower Allee über Mühlenbecker Weg: laut ADFC-Karte geeignet für Radfahrer	? 20222,15519 20150,15678 20401,16189 20543,16488 20775,16977
 Allee der Kosmonauten: Radweg in Bau	?::inwork 19628,13517 19897,13535 20182,13554
 Prenzlauer Allee: tatsächlich ein Radstreifen, wie bei der MoPo behauptet?	?; 11941,15586 11997,15834 12030,15968 12076,16129 12091,16209
-Corinth/Rochowstr.: Ampelanlage in Bau	?::inwork 14170,10675
+Corinth/Rochowstr.: Ampelanlage noch nicht eingeschaltet	?::inwork 14170,10675
+Frieden/Friedrichsberger Str.: Ampelanlage noch nicht eingeschaltet	?::inwork 12531,12933
 Onkel-Bräsig-Str.: Qualität laut ADFC-Karte gut, Einbahnstraße auch für Radfahrer?	? 13305,4504 13345,5087 13323,5222
 Alt-Köpenick: laut Message-ID: <41614486$0$3640$9b4e6d93@newsread2.arcor-online.net> wieder gepflastert	? 22196,4847 22138,4661 22111,4562 22093,4499
 Alter Markt: laut Message-ID: <2scvijF1io77eU1@uni-berlin.de> soll hier asphaltiert werden	?::inwork 22502,4528 22472,4572 22383,4703
@@ -479,7 +480,7 @@ Laut <41b75ea5$0$23129$9b622d9e@news.freenet.de> wird hier (Berliner Str./Floras
 Parkstr. (Potsdam): Fortsetzung zur Schopenhauerstr.?	? -13803,-462 -13965,-590 -14034,-571
 Voltaireweg in diese Fahrtrichtung gesperrt?	?; -14034,-571 -13795,-407 -13636,-331
 Rübelandstr.: Qualität?	? 12787,7546 12818,7403
-Straßenzug Hirtenstr./Mulackstr. ausprobieren	? 11015,13264 10846,13362 10696,13457 10646,13480 10385,13548 10262,13583
+Straßenzug Hirtenstr./Mulackstr. ausprobieren	? 11015,13264 10846,13362 10696,13457 10646,13480 10535,13509 10385,13548 10262,13583
 wirklich?	? 9215,3599
 Wirklich?	? -3755,17090
 geplante Ampel in der Johannisthaler	? 14196,2876
@@ -561,8 +562,7 @@ Biesenthal: Kopfsteinpflaster (von der Zugstrecke aus gesehen:)	? 28993,38709 28
 Rüdnitz - Danenwitz: Asphalt (von der Zugstrecke aus gesehen, "Berliner Umland" attestiert der gesamten Strecke eine gute Qualität:)	? 27303,37099 26687,36525 26372,36360
 Lessingstr. (Potsdam): Kopfsteinpflaster (wenigstens auf der Seite Plantagenstr:)	? -9837,-1612 -9219,-1590
 Kastanienallee (Potsdam): Kopfsteinpflaster (eventuell Q1?)	? -14909,-1818 -14859,-2384
-Körnerpark: Fußgänger, Bordsteine (stimmt das mit den Bordsteinen?)	? 12703,7370 12722,7261
-X (aufgehoben?)	? 12360,12505 12384,12718 12531,12933
+(S-Bahnbrücke Wartenberg): Fußgänger? (Stimmt das?)	? 16923,18650 16990,18694 17114,18775
 Stadtpark Steglitz (unbeleuchtet?)	? 5838,4454 5931,4659 6018,4850
 Stadtpark Steglitz (unbeleuchtet?)	? 5344,4672 5476,4626 5747,4697 5931,4659 6114,4709
 Kurt-Schumacher-Damm (genaue Koordinaten der Schleife?)	? 3612,16232 3336,15644 3332,15587

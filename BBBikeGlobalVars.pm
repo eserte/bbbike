@@ -44,7 +44,8 @@ use vars
 use vars qw(
      $ampel_photo $ampel_klein_photo $ampel_klein2_photo
      $ampel_klein_grey_photo $zugbruecke_photo $zugbruecke_klein_photo
-     $kopfstein_klein_photo $kopfstein_klein_grey_photo $vorfahrt_photo
+     $kopfstein_klein_photo $kopfstein_klein_grey_photo
+     $vorfahrt_photo $vorfahrt_klein_photo
      $andreaskr_photo $andreaskr_klein_photo $andreaskr_klein2_photo
      %obst_photo
      $windrose2_photo $usercross_photo

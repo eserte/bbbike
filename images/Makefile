@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.14 2003/12/22 19:56:20 eserte Exp eserte $
+# $Id: Makefile,v 1.15 2004/12/20 00:28:04 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -37,27 +37,27 @@ bbbike_splash_tkbabybike.xpm: srtbike.xpm
 .SUFFIXES: .gif .xpm .png .wbmp
 
 # .xpm.gif:
-# 	convert $^ $@
+# 	convert $< $@
 # 	chmod ugo+r $@
 
 # .xpm.png:
-# 	convert $^ $@
+# 	convert $< $@
 # 	chmod ugo+r $@
 
 .png.xpm:
-	convert $^ $@
+	convert $< $@
 	chmod ugo+r $@
 
 .png.gif:
-	convert $^ $@
+	convert $< $@
 	chmod ugo+r $@
 
 # .xpm.wbmp:
-# 	convert $^ $@
+# 	convert $< $@
 # 	chmod ugo+r $@
 
 .png.wbmp:
-	convert $^ $@
+	convert $< $@
 	chmod ugo+r $@
 
 png-to-gif:	\
@@ -96,6 +96,7 @@ png-to-gif:	\
 		flag_ziel_centered.gif \
 		usercross.gif \
 		redcross.gif \
+		vorfahrt_klein.gif \
 
 png-to-xpm:	\
 		ampel.xpm \
@@ -126,6 +127,7 @@ png-to-xpm:	\
 		flag_ziel_centered.xpm \
 		usercross.xpm \
 		redcross.xpm \
+		vorfahrt_klein.xpm \
 
 png-to-wbmp:	\
 		flag2_bl.wbmp \

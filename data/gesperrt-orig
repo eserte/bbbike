@@ -53,8 +53,6 @@ Am Großen Wannsee	1 -5868,1255 -5848,1379 -6017,1987 -6021,2068 -5945,2381 -5749
 Wilhelplatz	1 -7232,445 -7059,578
 Wilhelplatz	1 -7059,578 -7088,463 -7095,436 -7186,363
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
-# keine Sperrung, Radweg
-#Alt-Mariendorf (Nord)	1 8673,10883 8695,10878 8826,10843 8958,10807 9040,10844
 Alt-Mariendorf (Nord)	1 9731,3889 9934,3802
 Alt-Mariendorf (Süd)	1 9934,3802 9751,3769 9440,3665 9215,3599 9131,3571 8955,3521
 Knoten Märkische Allee	1 19693,11762 19802,11794 19882,11860 19918,11891
@@ -311,6 +309,7 @@ Lohmeyerstr.	1s 3348,12314 3409,12451
 Waldweg	1s 25496,2429 24972,2583
 Schulenburgring	1s 9019,8434 9013,8594
 Neue Schönhauser Str.	1s 10528,13243 10441,13195 10305,13211
+Alte Schönhauser Str.	1s 10718,13625 10746,13673
 Kirchhofstr.	1s 13188,7590 13032,7334
 Niemannstr.	1s 14252,11368 14211,11229
 Björnsonstr	1s 10229,16653 10215,16527
@@ -321,7 +320,7 @@ Lindenallee	1s 1407,11516 1391,11434
 Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
 Billerbecker Weg	1s 1231,18690 1231,18731
 Alt-Tegel	1s 1551,20106 1691,20129 1778,20178 1923,20255
-Am Treptower Park	1s 14529,9141 14390,9291 14242,9448 14089,9610
+Am Treptower Park	1s 14529,9141 14390,9291 14242,9448 14179,9515 14089,9610
 Groebenufer	1s 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26243,-12300 26028,-12312
 Seestr. (Potsdam)	1s -11581,559 -11609,400
@@ -411,8 +410,10 @@ Langenbeckstr - Landsberger: Mittelstreifen	3 13081,13457 13161,13360 13334,1345
 Landsberger - Langenbeckstr: Mittelstreifen	3 13089,13323 13161,13360 13081,13457
 Greifswalder - Chodowieckistr: Mittelstreifen mit Straßenbahn	3 12188,14321 12285,14458 11992,14599
 Chodowieckistr - Greifswalder: Mittelstreifen mit Straßenbahn	3 11992,14599 12285,14458 12338,14532
-Christinenstr. - Torstr.: Mittelstreifen mit Straßenbahn	3 10639,13865 10569,13719 10746,13673
+Christinenstr. - Torstr.: Mittelstreifen mit Straßenbahn	3 10639,13865 10569,13719 10640,13700
 Torstr. - Christinenstr.: Mittelstreifen mit Straßenbahn	3 10445,13752 10569,13719 10639,13865
+Angermünder Str. - Torstr.: Mittelstreifen mit Straßenbahn	3 10703,13832 10640,13700 10746,13673
+Torstr. - Angermünder Str.: Mittelstreifen mit Straßenbahn	3 10569,13719 10640,13700 10703,13832
 Katzlerstr. - Yorckstr.: Linksabbiegen verboten (und unbequem)	3 8035,9437 8095,9639 7941,9686
 Yorckstr. - Katzlerstr.: Linksabbiegen verboten (und unbequem)	3 8188,9610 8095,9639 8035,9437
 Neue Blumenstr.: Mittelstreifen	3 11709,12601 12006,12464 12118,12462
@@ -556,7 +557,7 @@ Barriere (Seydelstr.)	BNP:5 10370,11593
 Elsenstr.	1:inwork 13760,9188 13657,9063 13504,8882
 Pfarrstr.	1:inwork 15339,11123 15267,10865
 Ernst-Ruska-Ufer: noch in Bau	2:inwork 19103,2442 18927,2431
-Malchower Chaussee (Pankow) Richtung stadteinwärts zwischen Ortnitstr. und Nachtalbenweg Baustelle, veränderte Verkehrsführung. Für die Arbeiten im Abschnitt von Darßer str. bis Nachtalbenweg wird der Verkehr über Darßer Str. - Nachtalbenw. umgeleitet (bis 30.04.2004)	1:inwork 15181,18137 14828,17856
+Malchower Chaussee (Pankow) Richtung stadteinwärts zwischen Ortnitstr. und Nachtalbenweg Baustelle, veränderte Verkehrsführung. Für die Arbeiten im Abschnitt von Darßer str. bis Nachtalbenweg wird der Verkehr über Darßer Str. - Nachtalbenw. umgeleitet (bis 30.04.2005)	1:inwork 15181,18137 14828,17856
 Entlastungsstr. (Tiergartentunnel, längerfristig)	1:inwork 8172,11679 8129,11735 8056,12061 8063,12182
 #XXX del: Behrenstr. (Bauarbeiten)	1:inwork 8938,7430 8886,7436
 #see below: Charlottenstr. (Bauarbeiten)	1:inwork 8933,7371 8938,7430
@@ -642,7 +643,7 @@ B 167; (Herzberg-Neuruppin); OL Alt Ruppin, Rhinbrücke    Brückenneubau    Volls
 #XXX del L 237; (Britzer Str.); OD Eberswalde, Brücke über Oder-Havel-Kanal; Brückenneubau; Vollsperrung; 02.08.2004-28.10.2004	2:inwork 36312,50126 36289,50743
 #XXX del K 6302; zwischen Pausin und Alt Brieselang; Kanal- und Straßenbau; Vollsperrung; 02.08.2004-01.10.2004	2:inwork -14680,25643 -14763,25345 -15254,24958 -15322,24572 -15621,24357 -15705,24101 -15767,23889 -15966,23802 -16135,23503 -16319,22950 -16595,22693 -16873,22649
 #XXX del? L 19; (Zechlinerhütte-Wesenberg (MVP)); zw. Abzw. Klein Zerlang u. LG; (nö. Prebelowbrücke); Brückenneubau; Vollsperrung; 11.10.2004-30.04.2005	2:inwork -26403,85177 -26316,84900
-K 7234; (Glienick-Dabendorf); zwischen den Ortschaften Dabendorf-Glienick Straßenbau, Vollsperrung, 25.10.2004-10.12.2004	2:inwork 10156,-17681 11304,-17936 11623,-17809 11793,-17851 12091,-17766
+#XXX del K 7234; (Glienick-Dabendorf); zwischen den Ortschaften Dabendorf-Glienick Straßenbau, Vollsperrung, 25.10.2004-10.12.2004	2:inwork 10156,-17681 11304,-17936 11623,-17809 11793,-17851 12091,-17766
 #
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
