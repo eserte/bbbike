@@ -139,6 +139,6 @@ install:ext-bbbikexs-install \
 	ext-strassen-inline2-install \
 	ext-vectorutil-inline-install
 
-GNUmakefile: Makefile
-	../miscsrc/b2gmake < Makefile > GNUmakefile
-	chmod ugo+r GNUmakefile
+#GNUmakefile: Makefile
+#	../miscsrc/b2gmake < Makefile > GNUmakefile
+#	chmod ugo+r GNUmakefile
