@@ -101,7 +101,7 @@ sub add_button {
     BBBikePlugin::place_menu_button
             ($mmf,
              [
-              [Button => "Set defaults",
+              [Button => "Set preferences",
                -command => sub {
                    my $t = $main::top->Toplevel(-title => "LogTracker");
                    require Tk::PathEntry;
