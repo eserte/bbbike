@@ -865,7 +865,22 @@ geht ein import?
     jahre und dann merkt man, dass es doch nicht geht
   
   * E3 Print OK? (ps vs. pdf backend and automatic recognition)
-  
+
+  low prio: Research Tk::Balloon: kann ich Tk::CanvasBalloon durch
+  Tk::Balloon *effizient* ersetzen?
+
+  TelbuchDBApprox: wenn eine genaue hausnummer nicht gefunden wurde,
+  dann in der naehe suchen!
+
+  inaccessible_strassen, look at:
+     fix_coords in bbbike.cgi
+     all_crossings and similar functions
+     introduce also in perl/tk version
+  [???]
+
+  data_corrected: cp or symlink or convert missing files: kneipen,
+  restaurants etc.
+  2. use data_corrected for CVS and all distributions!
 
 =head2 BikePower
 
@@ -879,7 +894,7 @@ LANG gesetzt) lösen.
 
 =back
 
-=head2 Daten
+=head2 Daten allgemein
 
 =over
 
@@ -904,6 +919,24 @@ existieren!]
 
 Weitere Kategorisierung der LandstraE<szlig>en? Gibt es Untersuchungen
 zur Verkehrsdichte? Recherchieren!
+
+=back
+
+=head2 Daten Fehler, Ergänzungen, ...
+
+=over
+
+ stolpe => stolpe/oder
+ hohensaatener wasserstr. eintragen
+ H-str. B2 => Stolpe/oder => neukuenkendorf eintragen
+ deichstr. ab stolpe richtung sueden
+ wo ist raedikow? hier 52950,38887 oder hier 50450,35600?
+ siehe auch: http://www.grass-net.de/modules.php?name=Content&pa=showpage&pid=16
+ Mittenwalde: http://www.netbecom.de/kunden/mittenwalde/unsereSt/show_karte.swf
+
+ Bestensee: http://www.bestensee.de/html/strassenkarte.html
+
+ Fahrplanaenderungen Dezember 2003 bei RE/RB beachten!
 
 =back
 
@@ -1012,6 +1045,19 @@ cgi-Version: Linux+Netscape: Probleme mit Cookies (Einstellungen)
 
 =back
 
+=head2 WAP version of bbbike
+
+=over
+
+ - Nokia Series 40: lange Straßennamen werden im Select abgeschnitten
+ - <b>bla</b> als <b> bla </b> umbauen
+ - keine Tabelle für Nokia40/60 für das Ergebnis verwenden
+ - XHTML-Lösung?
+ - Nokia 6650 in Browserinfo.pm aufnehmen (ca. 120x160, nachmessen!)
+ - width=/height= in BBBike Karte angeben, damit Platz reserviert wird
+
+=back
+
 =head2 Distribution/Installation
 
 =over
@@ -1035,6 +1081,22 @@ nachinstallieren (siehe Bundle::BBBike).
 FreeBSD-Port anpassen, so daE<szlig> install.pl verwendet wird. PLIST
 von install.pl abhE<auml>ngig machen. -kdeinstall in
 AbhE<auml>ngigkeit von HAVE_KDE angeben.
+
+=back
+
+=head2 Tests
+
+=over
+
+ ... reveals problems if started first time without any cache files ---
+ many warnings, sometimes even coredumps on RedHat (?). The 2nd pass is
+ usually OK.
+
+ => maybe the cache build should be done in a separate process. This
+ would save memory which probably can't be given back to the process.
+
+ add another full-test rule which calls some tests with their
+ -slow/-all/-full/-doit options
 
 =back
 
