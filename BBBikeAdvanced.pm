@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.100 2004/07/04 22:10:41 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.101 2004/07/06 20:44:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -749,7 +749,6 @@ sub change_datadir {
 
 use vars qw($standard_command_index $editstandard_command_index
 	    @edit_mode_any_cmd);
-#XXX del:	    $editberlin_command_index $editbrb_command_index
 
 $without_zoom_factor = 1 if !defined $without_zoom_factor;
 
@@ -903,81 +902,11 @@ sub set_coord_interactive {
     }
 
     {
-	# Stadtplandienst, obsolete
+	# combined:
+	# www.berliner-stadtplan.com, www.berlinonline.de, old Stadtplandienst
 
 	my $f = $t->Frame->pack(-anchor => "w", -fill => "x");
-	$f->Label(-text => M"Alte Stadtplandienst-URL")->pack(-side => "left");
-	my $stadtplandiensturl;
-	$f->Entry(-textvariable => \$stadtplandiensturl)->pack(-side => "left", -fill => "x", -expand => 1);
-	$f->Button
-	    (-text => M"Selection",
-	     -command => sub {
-		 Tk::catch {
-		     $stadtplandiensturl
-			 = $f1->SelectionGet('-selection' => ($os eq 'win'
-							      ? "CLIPBOARD"
-							      : "PRIMARY"));
-		 };
-	     })->pack(-side => "left");
-	$f->Button
-	    (-text => M"Setzen",
-	     -command => sub {
-		 if ($stadtplandiensturl =~ /LL=%2B([0-9.]+)%2B([0-9.]+)/) {
-		     $valx = $2;
-		     $valy = $1;
-		     $coord_output = 'polar';
-		     $coord_menu->setOption('polar'); # XXX $Karte::map{'polar'}->name); #XXX should be better in Tk
-		     $set_sub->(1);
-		 } else {
-		     die "Can't parse <$stadtplandiensturl>";
-		 }
-	     })->pack(-side => "left");
-    }
-
-    {
-	# www.berlinonline.de
-
-	my $f = $t->Frame->pack(-anchor => "w", -fill => "x");
-	$f->Label(-text => M"BerlinOnline-Stadtplan-URL")->pack(-side => "left");
-	my $stadtplandiensturl;
-	$f->Entry(-textvariable => \$stadtplandiensturl)->pack(-side => "left", -fill => "x", -expand => 1);
-	$f->Button
-	    (-text => M"Selection",
-	     -command => sub {
-		 Tk::catch {
-		     $stadtplandiensturl
-			 = $f1->SelectionGet('-selection' => ($os eq 'win'
-							      ? "CLIPBOARD"
-							      : "PRIMARY"));
-		 };
-	     })->pack(-side => "left");
-	$f->Button
-	    (-text => M"Setzen",
-	     -command => sub {
-		 if ($stadtplandiensturl =~ /ADR_ZIP=(\d+)&ADR_STREET=(.+?)&ADR_HOUSE=(.*)/) {
-		     my($zip, $street, $hnr) = ($1, $2, $3);
-		     local @INC = @INC;
-		     push @INC, "$FindBin::RealBin/miscsrc";
-		     require TelbuchDBApprox;
-		     my $tb = TelbuchDBApprox->new(-approxhnr => 1);
-		     my(@res) = $tb->search("$street $hnr", $zip);
-		     if (!@res) {
-			 status_message(M("Kein Ergebnis gefunden"), "die");
-		     }
-		     my($x,$y) = transpose(split /,/, $res[0]->{Coord});
-		     mark_point('-x' => $x, '-y' => $y,
-				-clever_center => 1);
-		 } else {
-		     die "Can't parse <$stadtplandiensturl>";
-		 }
-	     })->pack(-side => "left");
-    }
-
-    {
-	# www.berliner-stadtplan.com
-
-	my $f = $t->Frame->pack(-anchor => "w", -fill => "x");
-	$f->Label(-text => M"berliner-stadtplan.com-URL")->pack(-side => "left");
+	$f->Label(-text => M"Stadtplan-URL")->pack(-side => "left");
 	my $stadtplandiensturl;
 	$f->Entry(-textvariable => \$stadtplandiensturl)->pack(-side => "left", -fill => "x", -expand => 1);
 	$f->Button
@@ -1001,8 +930,28 @@ sub set_coord_interactive {
 		     my($tx,$ty) = transpose($Karte::Polar::obj->map2standard($x_ddd, $y_ddd));
 		     mark_point('-x' => $tx, '-y' => $ty,
 				-clever_center => 1);
+		 } elsif ($stadtplandiensturl =~ /ADR_ZIP=(\d+)&ADR_STREET=(.+?)&ADR_HOUSE=(.*)/) {
+		     my($zip, $street, $hnr) = ($1, $2, $3);
+		     local @INC = @INC;
+		     push @INC, "$FindBin::RealBin/miscsrc";
+		     require TelbuchDBApprox;
+		     my $tb = TelbuchDBApprox->new(-approxhnr => 1);
+		     my(@res) = $tb->search("$street $hnr", $zip);
+		     if (!@res) {
+			 status_message(M("Kein Ergebnis gefunden"), "die");
+		     }
+		     my($x,$y) = transpose(split /,/, $res[0]->{Coord});
+		     mark_point('-x' => $x, '-y' => $y,
+				-clever_center => 1);
+		 } elsif ($stadtplandiensturl =~ /LL=%2B([0-9.]+)%2B([0-9.]+)/) {
+ 		     $valx = $2;
+ 		     $valy = $1;
+ 		     $coord_output = 'polar';
+ 		     $coord_menu->setOption('polar'); # XXX $Karte::map{'polar'}->name); #XXX should be better in Tk
+ 		     $set_sub->(1);
+
 		 } else {
-		     die "Can't parse <$stadtplandiensturl>";
+		     status_message("Can't parse <$stadtplandiensturl>", "die");
 		 }
 	     })->pack(-side => "left");
     }
@@ -1494,6 +1443,7 @@ sub penalty_menu {
 				 -value => $koeff);
 	}
     }
+    $pen_m->separator;
 
     my $penalty_tram = 0;
     my $penalty_tram_koeff = 2;
@@ -1530,6 +1480,7 @@ sub penalty_menu {
 				 -value => $koeff);
 	}
     }
+    $pen_m->separator;
 
     my $penalty_on_current_route = 0;
     my $penalty_on_current_route_koeff = 2;
@@ -1564,6 +1515,7 @@ sub penalty_menu {
 				 -value => $koeff);
 	}
     }
+    $pen_m->separator;
 
     use vars qw($bbd_penalty);
     $bbd_penalty = 0;
@@ -1629,6 +1581,7 @@ sub penalty_menu {
 	     $t->protocol("WM_DELETE_WINDOW" => sub { $t->withdraw });
 	 }
 	);
+    $pen_m->separator;
 
     my $gps_search_penalty = 0;
     $pen_m->checkbutton

@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.2 2004/06/12 23:36:23 eserte Exp eserte $
+# $Id: gesperrt-orig,v 4.3 2004/07/06 20:31:43 eserte Exp eserte $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraßen etc.)
@@ -484,7 +484,7 @@ Französische Str. (Bauarbeiten)	1:inwork 9183,12076 9076,12054
 #Mauerstr. (Bauarbeiten, Dauer: 19.01.2004 bis voraussichtlich 15.07.2004)	1:inwork 9173,11770 9144,11866
 ## XXX voraussichtlich aufgehoben
 #XXX del Mauerstr. (Bauarbeiten, Dauer: 19.01.2004 bis voraussichtlich 15.07.2004)	2:inwork 9144,11866 9108,11961
-Mohrenstr. (Bauarbeiten)	1:inwork 9410,11803 9220,11781
+Mohrenstr. (Bauarbeiten bis ca. 2004-07-15)	1:inwork 9410,11803 9220,11781
 #Mohrenstr. (Bauarbeiten)	1:inwork 9092,7578 9008,7586
 Gertrud-Kolmar-Str. (Bauarbeiten am Holocaust-Denkmal)	2:inwork 8804,11838 8769,11971
 Goethestr. (Bauarbeiten)	1:inwork 4896,11345 5053,11343
@@ -496,14 +496,14 @@ Markgrafenstraße  Richtung Französische  Straße zwischen Behrenstraße und Franzö
 #XXX del Blankenburger Weg: Baustelle, Straße gesperrt bis 29.02.2004	2:inwork 10050,4098 10221,3974
 #XXX del Crailsheimer Str., von Steglitzer Damm bis Ellwanger Str. Baustelle, Straße gesperrt, Einbahnstraßenregelung, Umleitung über Attilastr. bis 31.03.2004	1:inwork 7943,10446 7901,10524
 # tatsächlich für Radfahrer gesperrt?
-Johannisthaler Chaussee, Ernst-Keller Brücke; Bauarbeiten; Brücke gesperrt bis 30.06.	2:inwork 15573,4122 15608,4175 15779,4430
+Johannisthaler Chaussee, Ernst-Keller Brücke; Bauarbeiten; Brücke gesperrt bis 31.08.2004	2:inwork 15573,4122 15608,4175 15779,4430
 #XXX Haeh? Da ist nichts! XXX Die Brückenstraße, Richtung Heinrich-Heine-Straße ist zwischen Märkisches Ufer und Köpenicker Straße wegen Bauarbeiten als Einbahnstraße eingerichtet. Die nördliche Einmündung Rungestraße/Brückenstraße wird gesperrt. Zufahrt zu den Grundstücken 6 - 11 und 28 - 30 ist nur über den Köllnischen Park möglich. Dauer: 23.04.2003, 04.00 Uhr bis ca. 29.08.2004	1:inwork 9647,7646 9665,7583 9685,7517
 #XXX del am Beisheim-Center	2:inwork 8399,11630 8326,11732
 # XXX ja? NEW:       L19 Saatwinkler Damm Berlin-Haselhorst - Berlin-Tiergarten in beiden Richtungen Zwischen Gartenfelder Straße und Flughafen Tegel beidseitig wegen Bauarbeiten gesperrt 
 #XXX del Wielandstr., S-Bahn-Sanierung (bis ca. 2004-04-30)	2:inwork 6857,7856 6849,7933
 #XXX del Alt-Köpenick Treptow - Köpenick, zwischen Rosenstr. und Müggelheimer Str. Baustelle, Straße gesperrt bis 31.05.	2:inwork 22196,4847 22138,4661 22093,4499
 #XXX del? Landjägerstr.	1 22502,4528 22542,4485 22740,4415
-Die Prenzlauer  Allee ist zwischen Grellstraße und Ostseestraße stadtauswärts gesperrt. Grund: Bauarbeiten. Dauer: 29.03.2004, 07:00 Uhr bis voraussichtlich 2004-10-00	1:inwork 11941,15586 11997,15834 12030,15968 12076,16129 12091,16209
+Die Prenzlauer  Allee ist zwischen Grellstraße und Ostseestraße stadtauswärts gesperrt. Grund: Bauarbeiten. Dauer: 29.03.2004, 07:00 Uhr bis 2004-08-15	1:inwork 11941,15586 11997,15834 12030,15968 12076,16129 12091,16209
 #XXX del Zimmerstraße, Richtung Axel-Springer-Straße, zwischen Markgrafenstraße und Jerusalemer Straße, als Einbahnstraße  eingerichtet. Dauer: bis 15.05.2004, 18.00 Uhr	1:inwork 9945,11371 9737,11349
 #XXX del L103 Alarichstraße Berlin-Mariendorf Richtung Berlin-Schöneberg zwischen Ringstr. und Kaiserstr. wegen Bauarbeiten gesperrt, eine Umleitung ist eingerichtet (bis 16.05.2004)	1:inwork 9003,3878 8954,4084 8877,4356
 #XXX del? L54 Bitterfelder Straße Berlin-Hohenschönhausen Richtung Berlin-Marzahn Zwischen Hohenschönhauser Straße und Märkische Allee wegen Bauarbeiten gesperrt eine Umleitung ist eingerichtet bis 30.09.	1:inwork 18730,16973 18866,16905 19484,16704 19573,16674 19903,16632 20230,16560
@@ -511,6 +511,7 @@ Einbecker Straße Richtung Robert-Uhrig-Straße, zwischen Rosenfelder Straße und R
 #XXX del: Rathenower Straße (Tiergarten) in beiden Richtungen zwischen Quitzowstr. und Stephanstr. Baustelle, Straße vollständig gesperrt 	2:inwork 6670,14302 6743,14008
 #: unverified_by: <cas51k$37r$1@rzsun03.rrz.uni-hamburg.de>
 Fußgängerbrücke über den Sachesendamm gesperrt, südliche Rampe ist aber befahrbar	2:inwork 7718,7641 7772,7610
+Berlin - Treptow Segelfliegerdamm Einbahnstraße von Stubenrauchstraße in Richtung Groß-Berliner-Damm, Straßenarbeiten, Dauer bis 31.12.2004 (ca.)	1:inwork 18058,4627 17797,4441 17628,4148 17586,3728 17490,3637
 #
 # section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 # section: in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv

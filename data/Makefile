@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.20 2004/07/04 20:59:15 eserte Exp $
+# $Id: Makefile,v 2.21 2004/07/06 21:18:12 eserte Exp $
 #
 
 BBBIKEDIR=		..
@@ -24,6 +24,7 @@ SORTBYCAT=		${MISCSRCDIR}/sortbycat
 SEARCH_INACCESSIBLE=	${MISCSRCDIR}/search_inaccessible_points
 STEIGUNG_STAT=		${MISCSRCDIR}/steigung_stat
 GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
+COMBINE_STREETS=	${MISCSRCDIR}/combine_streets.pl
 
 COMMENTS_PARTIAL=	comments_cyclepath comments_ferry comments_misc \
 			comments_mount comments_path comments_route \
@@ -145,7 +146,7 @@ sbahn: sbahn-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) sbahn-orig > /tmp/sbahn
 .for cat in $(SBAHN_CATEGORIES)
-	$(GREPSTRASSEN) -cat $(cat) /tmp/sbahn | ../miscsrc/merge_overlapping_streets.pl -sep "," - | ../miscsrc/combine_streets.pl - | sort > /tmp/sbahn-$(cat)
+	$(GREPSTRASSEN) -cat $(cat) /tmp/sbahn | ../miscsrc/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/sbahn-$(cat)
 .endfor
 	cat $(SBAHN_CATEGORIES:S/^/\/tmp\/sbahn-/) > sbahn
 	-@$(READONLY) $@
@@ -167,7 +168,7 @@ rbahn rbahnhof: rbahn-orig
 	-@$(WRITEABLE) rbahn rbahnhof
 	$(CONVERT2HAFAS) -bahnhof=rbahnhof rbahn-orig > /tmp/rbahn
 .for cat in $(RBAHN_CATEGORIES)
-	$(GREPSTRASSEN) -cat $(cat) /tmp/rbahn | ../miscsrc/merge_overlapping_streets.pl -sep "," - | ../miscsrc/combine_streets.pl - | sort > /tmp/rbahn-$(cat)
+	$(GREPSTRASSEN) -cat $(cat) /tmp/rbahn | ../miscsrc/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/rbahn-$(cat)
 .endfor
 	cat $(RBAHN_CATEGORIES:S/^/\/tmp\/rbahn-/) > rbahn
 	-@$(READONLY) rbahn rbahnhof
@@ -281,7 +282,7 @@ obst:	obst-orig
 
 radwege:	radwege-orig
 	-@$(WRITEABLE) $@
-	${MISCSRCDIR}/convert_radwege < radwege-orig > radwege
+	${MISCSRCDIR}/convert_radwege < radwege-orig | $(COMBINE_STREETS) - > radwege
 	-@$(READONLY) $@
 
 radwege_exact:	radwege-orig

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.68 2004/06/10 22:27:07 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.68 2004/06/10 22:27:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2489,7 +2489,8 @@ sub choose_bbd_file_for_penalty {
 	  # XXX use Strassen->filetypes?
 	  [M"BBD-Dateien", '.bbd'],
 	  [M"Alle Dateien", '*'],
-	 ]
+	 ],
+	 -initialdir => $main::datadir,
 	);
     return if !defined $f;
     $bbd_penalty_file = $f;

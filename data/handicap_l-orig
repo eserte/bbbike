@@ -1,4 +1,4 @@
-# $Id: handicap_l-orig,v 4.3 2004/06/14 20:54:03 eserte Exp eserte $
+# $Id: handicap_l-orig,v 4.4 2004/07/06 20:31:32 eserte Exp eserte $
 Brandenburger Str.: Fußgängerzone	q3 -12894,-977 -13171,-1042 -13556,-1140
 Neuer Garten: Schiebestrecke	q3 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12115,1331 -12185,1388
 Heiliger See, Ostufer: Schiebestrecke	q3 -11903,-71 -11893,53 -11796,240 -11609,400 -11581,559 -11650,590 -11603,721 -11615,853
@@ -19,7 +19,6 @@ B 169; OU Senftenberg; Bau Ortsumfahrung; Vollsperrung; 06.11.2003-30.05.2006	q4
 L 30; (Dorfstr.); OL Petershagen; Straßenbauarbeiten; Vollsperrung; 13.04.2004-18.07.2004 	q4::inwork 35427,13624 35234,13541 35359,12542
 #XXX del L 311; (Dorfstr., Ahrensfelder Ch.); OD Eiche; Straßenbauarbeiten; Vollsperrung; 08.09.2003-31.05.2004	q4::inwork 22886,17680 22795,17836 22944,18028
 #XXX del L 40; (Dahlewitz-Potsdam); OD Großbeeren, Bahnhofstr., Straßenbauarb. B101n, Vollsperrung, 16.02.2004-07.06.2004	q4::inwork 3131,-6334 3242,-6330 3653,-6050
-L 26; (Menkin-Brüssow); OD Brüssow, grundhafter Straßenausbau, Vollsperrung, 23.02.2004-30.06.2004	q4::inwork 57405,111424 57452,111569 58374,111669
 L 792; (Trebbiner Str.); OL Mahlow, zw. Glasower Damm u. Berliner Str.; grundhafter Straßenbau; Vollsperrung; 04.03.2004-19.11.2004	q4::inwork 11186,-5297 11291,-4485
 L 141; (Zernitz-Breddin); OD Stüdenitz; Straßenbauarbeiten; Vollsperrung; 15.03.2004-16.07.2004	q4::inwork -66293,52606 -66831,52431 -67037,52412 -67317,52176
 #XXX del: L 23; (nördl. Eberswalde-Joachimsthal); OD Britz, Joachimsthaler Str.; Fahrbahnerneuerung; Vollsperrung; 22.03.2004-30.04.2004	q4::inwork E7403,3082 E7424,3126

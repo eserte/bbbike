@@ -1,5 +1,6 @@
 # temp-blocking
-# undef old entries
+# XXX undef old entries
+# iso2epoch: date -j YYYYMMDDhhmm +%s
 require Time::Local;
 @temp_blocking =
     (
@@ -444,7 +445,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'gesperrt',
      },
      { from  => 1088719200, # 2004-07-02 00:00
-       until => 1089885600, # 2004-07-15 12:00
+       until => 1089453600, # 2004-07-10 12:00
        file  => 'koenigsheideweg.bbd',
        text  => 'Königsheideweg (Treptow) Richtung Baumschulenstr. nach Sterndamm Baustelle, Fahrtrichtung gesperrt (bis Mitte 07.2004)',
        type  => 'handicap',
