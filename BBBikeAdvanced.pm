@@ -127,8 +127,10 @@ sub custom_draw {
     my $linetype = shift;
     my $abk      = shift or die "Missing abk";
     my $f        = shift;
+    my(%args)    = @_;
     my $draw = eval '\%' . $linetype . "_draw";
     my $file = eval '\%' . $linetype . "_file";
+    my $name_draw = eval '\%' . $linetype . "_name_draw";
     if (!defined $f) {
 	die "Tk 800 needed"
 	    unless $Tk::VERSION >= 800;
@@ -175,14 +177,22 @@ sub custom_draw {
 	read_desc_file($desc_file, $abk);
     }
 
+    if ($args{-namedraw}) {
+	delete $args{-namedraw};
+	$name_draw->{$abk} = 1;
+    }
+
+    my $do_close = 1;
+    $do_close = delete $args{-close} if exists $args{-close};
+
     # XXX the condition should be defined $default_line_width,
     # but can't use it because of the Checkbutton/Menu bug
-    plot($linetype, $abk, ($default_line_width
-			   ? (Width => $default_line_width)
-			   : ()),
-	 -draw => 1,
-	 -filename => $f,
-	);
+    if ($default_line_width) {
+	$args{Width} = $default_line_width;
+    }
+    $args{-draw} = 1;
+    $args{-filename} = $f;
+    plot($linetype, $abk, %args);
 
     for (($linetype eq 'p' ? ("$abk-img", "$abk-fg") : ($abk))) {
 	$c->bind($_, "<ButtonPress-1>" => \&set_route_point);
@@ -207,7 +217,7 @@ sub custom_draw {
     }
 
     $toplevel{"chooseort-$abk-$linetype"}->destroy
-	if $toplevel{"chooseort-$abk-$linetype"};
+	if $toplevel{"chooseort-$abk-$linetype"} && $do_close;
 
     $f; # return filename
 }
@@ -322,16 +332,16 @@ sub plot_additional_sperre_layer {
 
 # Called from last loaded menu
 sub plot_additional_layer_s {
-    my $layer_def = shift;
+    my($layer_def, %args) = @_;
     my($layer_type, $layer_filename) = split /:/, $layer_def, 2;
     if (!defined $layer_type) {
 	($layer_type, $layer_filename) = ('str', $layer_def);
     }
-    plot_additional_layer($layer_type, $layer_filename);
+    plot_additional_layer($layer_type, $layer_filename, %args);
 }
 
 sub plot_additional_layer {
-    my($linetype, $file) = @_;
+    my($linetype, $file, %args) = @_;
     my $abk = next_free_layer();
     if (!defined $abk) {
 	status_message(M"Keine Layer frei!", 'error');
@@ -358,9 +368,9 @@ sub plot_additional_layer {
 	    $linetype = 'p';
 	}
 	if (defined $file) {
-	    custom_draw($linetype, $abk, $file);
+	    custom_draw($linetype, $abk, $file, %args);
 	} else {
-	    $file = custom_draw_dialog($linetype, $abk);
+	    $file = custom_draw_dialog($linetype, $abk, %args);
 	}
     }
 
