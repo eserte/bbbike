@@ -507,7 +507,7 @@ userdel	q4 -74489,80545 -74038,78181
 EOF
      },
      { from  => undef, # 
-       until => 1092725846,
+       until => 1097791200, # Mitte 10/2004
        text  => 'Flottwellstr. (Tiergarten) in beiden Richtungen zwischen Lützowstraße und Am Karlsbad Verkehrsbehinderung durch Absenkung der Fahrbahn, Straße vollständig gesperrt',
        type  => 'handicap',
       data  => <<EOF,
@@ -744,6 +744,14 @@ EOF
        data  => <<EOF,
 userdel	2 16596,1730 16838,1457
 userdel	2 16960,1282 16838,1457
+EOF
+     },
+     { from  => undef, # 
+       until => 1097791200, # 2004-10-15 00:00
+       text  => 'Lückstr. Richtung stadteinwärts zwischen Schlichtallee und Wönnichstr. Baustelle, Straße gesperrt (bis Mitte 10.2004) ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 16655,10622 16460,10699 16153,10818 16032,10842
 EOF
      },
     );
