@@ -240,7 +240,7 @@ sub adjust_x_y {
     if (defined $l_found{$type}->curselection &&
 	ref $res{$type} eq 'ARRAY'
        ) {
-	my $i = $l_found{$type}->curselection;
+	my($i) = $l_found{$type}->curselection;
 	($found_x{$type}, $found_y{$type}) = ($res{$type}->[$i][4],
 					      $res{$type}->[$i][5]);
     }

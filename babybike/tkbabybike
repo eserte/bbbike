@@ -623,7 +623,7 @@ sub main_gui {
 		   });
 
     $list->bind("<1>" => sub {
-		    my $ii = $list->curselection;
+		    my($ii) = $list->curselection;
 		    return unless defined $ii || !$routing->RouteInfo || !@{ $routing->RouteInfo };
 		    if ($routing->RouteInfo && @{ $routing->RouteInfo } && $routing->RouteInfo->[$ii]) {
 			my($x,$y) = split /,/, $routing->RouteInfo->[$ii]->{Coords};
@@ -1893,7 +1893,7 @@ sub delete_bbd_data {
     $fill->();
     $t->Button(-text => "Delete",
 	       -command => sub {
-		   my $lb_index = $lb->curselection;
+		   my($lb_index) = $lb->curselection;
 		   return if !defined $lb_index;
 		   my($index) = (split /\s+/, $lb->get($lb_index))[0];
 		   $c->delete("add-$index");

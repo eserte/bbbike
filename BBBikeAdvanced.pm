@@ -2385,7 +2385,7 @@ sub search_anything {
 			-command => sub { $t->destroy })->pack(-fill => "x");
 
     my $select = sub {
-	my $inx = ($lb->curselection)[0];
+	my($inx) = ($lb->curselection)[0];
 	return unless defined $inx;
 	my $match = $inx2match[$inx];
 

@@ -124,7 +124,7 @@ sub _lb { shift->Subwidget("Listbox") }
 sub get_current_name {
     my $t = shift;
     my $lb = _lb($t);
-    my $sel = $lb->curselection;
+    my($sel) = $lb->curselection;
     if (!defined $sel) {
 	main::status_message(M("Keine Auswahl"),"err");
 	return;

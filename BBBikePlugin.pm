@@ -62,7 +62,7 @@ sub find_all_plugins {
 	my $prevent_double_after;
 	my $prevent_double_index;
 	$lb->bind("<1>" => sub {
-		      my $cur = $lb->curselection;
+		      my($cur) = $lb->curselection;
 		      if (defined $cur) {
 			  if ($prevent_double && $prevent_double_index eq $cur) {
 			      return;
