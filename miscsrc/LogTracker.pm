@@ -258,6 +258,7 @@ sub draw_accesslog_data {
 	    my $s = Strassen->new_from_data_ref($accesslog_data{$l});
 	    $s->write("/tmp/LogTracker-$l.bbd");
 	    main::plot("str", $layer{$l},
+		       -lazy => 0,
 		       -draw => 1, Filename => "/tmp/LogTracker-$l.bbd");
 	    $main::str_obj{$layer{$l}} = $s; # for LayerEditor
 	}
@@ -431,6 +432,7 @@ sub fileevent_read_line {
 		my $s = Strassen->new_from_data_ref($accesslog_data{$l});
 		$s->write("/tmp/LogTracker-$l.bbd");
 		main::plot("str", $layer{$l}, -draw => 1,
+			   -lazy => 0,
 			   Filename => "/tmp/LogTracker-$l.bbd");
 		$main::str_obj{$layer{$l}} = $s; # for LayerEditor
 		my $last = $s->get($s->count-1);
