@@ -82,7 +82,7 @@ MISCSRCDIR=		../miscsrc
 
 DATADIR=		../data
 CONV=			${MISCSRCDIR}/correct_data.pl
-TARGETS!=		make -f ../data/Makefile -V TARGETS
+TARGETS!=		${MAKE} -f ../data/Makefile -V TARGETS
 TARGETS+=		inaccessible_strassen
 CONVDB=			conv.db
 CONVDB_MODTIME=		.conv.db.modtime
@@ -150,7 +150,7 @@ conv:	build-orig \
 	permissions
 
 build-orig:
-	cd ${DATADIR} && make
+	cd ${DATADIR} && ${MAKE}
 
 ampelschaltung:	${DATADIR}/ampelschaltung
 	cp -fp ${DATADIR}/ampelschaltung .
