@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.56 2005/01/18 22:31:43 eserte Exp $
+# $Id: PLZ.pm,v 1.56 2005/01/18 22:31:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -869,7 +869,7 @@ if ($multi_zip) {
 
 my($res_ref, $errors) = $plz->look_loop(PLZ::split_street($street), @args);
 foreach my $res (@$res_ref) {
-    printf "%-40s %-20s %-10s\n", @$res;
+    printf "%-40s %-20s %-10s (%s)\n", @$res;
 }
 print "*** Errors: $errors\n";
 
