@@ -4935,7 +4935,7 @@ sub define_item_attribs {
 	$str_file{"comm-$type"} = "comments-$type";
     }
     # XXX fragezeichen should really be in "data"
-    if ($datadir =~ /data_corrected/) {
+    if (defined $datadir && $datadir =~ /data_corrected/) {
 	$str_file{'fz'} = "fragezeichen";
     }
     %p_file =
