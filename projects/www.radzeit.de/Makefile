@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.37 2004/08/12 22:46:53 eserte Exp $
+# $Id: Makefile,v 1.37 2004/08/12 22:46:53 eserte Exp eserte $
 #
 
 # Targets:
@@ -34,8 +34,8 @@ DEPLOY_TARGETS=		prepare-bbbike-data \
 			prepare-mapserver-dist \
 			prepare-touren-dist \
 			rsync \
-			test-on-remote \
-			test-on-remote-and-send-mail
+			test-on-remote
+# XXX test-on-remote-and-send-mail
 DEPLOY_LOCAL_TARGETS=	${DEPLOY_TARGETS:S/prepare-mapserver-dist/prepare-mapserver-local-dist/:S/rsync//:S/test$/test-local/:S/test-on-remote/test-local/}
 
 RSYNC_PROG?=	rsync

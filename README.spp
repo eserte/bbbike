@@ -20,7 +20,7 @@
 ## perlreplace #HTTPCVS#    '"http://sourceforge.net/cvs/?group_id=19142"'
 ## perlreplace #CVSREPO#    '":pserver:anonymous\@cvs.bbbike.sourceforge.net:/cvsroot/bbbike"'
 ## dnl
-## dnl $Id: README.spp,v 2.27 2004/07/27 23:16:34 eserte Exp $
+## dnl $Id: README.spp,v 2.29 2004/08/19 21:43:38 eserte Exp $
 ## dnl strpp source of README
 ## dnl
 =head1 README
@@ -435,11 +435,55 @@ werden noch XDarwin und Perl/Tk benötigt. Eine Anleitung zum Aufsetzen
 von Perl/Tk auf Mac OS X bekommt man in der comp.lang.perl.tk Newsgroup
 (siehe L<http://groups.google.com>).
 
-Mac OS Classic wird nicht unterstützt.
 ## but DE
 Mac OS X comes already with perl 5.6.0 oder 5.8.x. Now you just need XDarwin and Perl/Tk
 to get BBBike running. For instructions how to setup Perl/Tk on Mac OS X
-refer to the comp.lang.perl.tk newsgroup (see L<http://groups.google.com>).
+refer to the comp.lang.perl.tk newsgroup (see
+L<http://groups.google.com>).
+
+## yes
+
+Folgende Anleitung habe ich von Wolfram Kroll erhalten:
+
+L<#DISTDIRURL#/BBBike-#BBBIKEVER#.tar.gz> und (von
+L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
+besorgt.
+
+=over
+
+=item 1.
+
+perl auf dynamische Libs konfiguriert:
+
+ # sh Configure -des -Duseshrplib
+ # make
+ # make test
+ # sudo make install
+
+--> /usr/local/ ist der default (das orginale perl bleibt erhalten)
+
+=item 2.
+
+Tk: das ist kein Aqua-Tk, sondern für X11, na meinetwegen...
+
+ # make
+
+in einem X11-Fenster: # make test
+
+ sudo make install
+
+=item 3.
+
+bbbike unter X11
+
+läuft!
+
+=back
+
+## only DE
+
+Mac OS Classic wird nicht unterstützt.
+## but DE
 
 Mac OS Classic is not supported.
 ## yes
@@ -557,16 +601,47 @@ DEVELOPMENT
 
 ## only DE
 Der aktuelle Entwicklungsstand von BBBike kann über CVS
-verfolgt werden. Eine Anleitung dazu befindet sich unter L<#HTTPCVS#>,
-direkt erreichbar ist das Repository über anonymous login (ohne
-Passwort) auf C<#CVSREPO#>. Das CVS enthält auch die aktuellen Daten.
+verfolgt werden. Eine ausführliche Anleitung dazu befindet sich unter
+L<#HTTPCVS#>.
+
+Von der Kommandozeile muss folgendes eingegeben werden:
+
 ## only EN
 The current BBBike development may be tracked via CVS. Look at
-L<#HTTPCVS#> for instructions on how to use CVS. For direct access use
-the repository on C<#CVSREPO#> with user=anonymous and no password.
-The CVS repository also contains the current data.
+L<#HTTPCVS#> for instructions on how to use CVS.
+
+To use the CVS repository from command line type the following:
+
 ## yes
 
+
+## only DE
+    # login ist nur das erste Mal notwendig, Passwort leer lassen
+## only EN
+    # login is necessary only once, leave the password empty
+## yes
+
+    cvs -d #CVSREPO# login
+    cvs -d #CVSREPO# co bbbike
+
+
+## only DE
+    # Alle weiteren Male nur folgendes verwenden:
+## only EN
+    # to update the next time
+## yes
+
+    cd bbbike
+    cvs update
+
+
+## only DE
+Das CVS wird fast täglich aktualisiert und enthält auch die aktuellen Daten.
+
+## only EN
+The CVS repository is always up-to-date and also contains the current data.
+
+## yes
 
 =head1 
 ## only DE

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.17 2004/08/19 19:35:12 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.18 2004/08/19 22:08:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -158,14 +158,16 @@ sub add_button {
 	       -command => sub {
 		   my $f = $acc_streets_track;
 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
-		   add_new_layer("str", $f);
+		   my $layer = add_new_layer("str", $f);
+		   set_layer_highlightning($layer);
 	       }
 	      ],
 	      [Button => "Add streets.bbd (all GPS tracks)",
 	       -command => sub {
 		   my $f = $streets_track;
 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
-		   add_new_layer("str", $f);
+		   my $layer = add_new_layer("str", $f);
+		   set_layer_highlightning($layer);
 	       }
 	      ],
 	      [Button => "Add points-all.bbd (all GPS trackpoints)",
@@ -225,6 +227,16 @@ sub add_new_layer {
     }
     Hooks::get_hooks("after_new_layer")->execute;
     $free_layer;
+}
+
+sub set_layer_highlightning {
+    my $layer = shift;
+    $main::layer_active_color{$layer} = 'red';
+#     $main::layer_post_enter_command{$layer} = sub {
+# 	#$main::c->raise("current")
+# 	$name_tag = ($main::c->gettags("current"))[1];
+# 	$main::c->
+#     };
 }
 
 sub _vmz_lbvs_splitter {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.1 2004/08/19 19:38:36 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.2 2004/08/20 06:27:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -176,6 +176,15 @@ sub BBBikeLazy::bbbikelazy_add_data {
     } else {
 	die "type has to be either str or p, not $type";
     }
+
+    if ($abk =~ /^L\d+/) {
+	if ($type eq 'str') {
+	    std_str_binding($abk);
+	} elsif ($type eq 'p') {
+	    std_p_binding($abk);
+	}
+    }
+
     %lazy_known_grids = (); # to force redraw
     BBBikeLazy::bbbikelazy_redraw_current_view();
     $BBBikeLazy::mode = 1;
@@ -461,6 +470,10 @@ sub BBBikeLazy::plotstr_on_demand {
 			}
 		    }
 		}
+	    }
+
+	    if ($something_new && $layer_active_color{$abk}) {
+		$c->itemconfigure($abk, -activefill => $layer_active_color{$abk});
 	    }
 	}
 

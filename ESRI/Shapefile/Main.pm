@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Main.pm,v 1.11 2003/11/11 22:34:28 eserte Exp $
+# $Id: Main.pm,v 1.12 2004/08/19 21:02:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2002 Slaven Rezic. All rights reserved.
@@ -267,7 +267,7 @@ sub new_from_file {
     # 8 is length of a double
     read $root->FH, $header, $num_points*8*2;
     # XXX big endian?
-    my(@points) = map { [ unpack("d".2,$_) ] } unpack("A16"x($num_points), $header);
+    my(@points) = map { [ unpack("d".2,$_) ] } unpack("a16"x($num_points), $header);
     my @lines;
     for my $part_i (0 .. $#parts) {
 	my $end_index = ($part_i < $#parts ? $parts[$part_i+1]-1 : $#points);
@@ -314,7 +314,7 @@ sub new_from_file {
     # 8 is length of a double
     read $root->FH, $header, $num_points*8*2;
     # XXX big endian?
-    my(@points) = map { [ unpack("d".2,$_) ] } unpack("A16"x($num_points), $header);
+    my(@points) = map { [ unpack("d".2,$_) ] } unpack("a16"x($num_points), $header);
     my @lines;
     for my $part_i (0 .. $#parts) {
 	my $end_index = ($part_i < $#parts ? $parts[$part_i+1]-1 : $#points);

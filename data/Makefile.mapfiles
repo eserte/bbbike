@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.13 2004/08/09 23:52:58 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.14 2004/08/19 22:10:08 eserte Exp $
 #
 
 # should this be here?
@@ -51,11 +51,11 @@ $(MAPFILES_IMG_DIR)/reference.png: strassen landstrassen berlin deutschland orte
 	    -scope wideregion \
 	    -drawtypes str,wasser,berlin -restrict B,W1,W2,Z \
 	    -minplacecat 5 \
-	    -o $@ -dimfile /tmp/reference.dim \
+	    -o $@~ -dimfile /tmp/reference.dim \
 	    -nodrawscalebar -background \#e0e0e0 \
 	    -bbox -80800,81600,108200,-86200 -fontsizescale 0.8 \
-	    -customplaces "Berlin;Potsdam,-anchor,nw;Brandenburg,-anchor,e;Eberswalde;Frankfurt,-anchor,e;Dessau;Cottbus,-anchor,e;Neuruppin;Jüterbog;Guben,-anchor,e;Nauen,-anchor,e;Schwedt,-anchor,nc;Belzig;Bernau;Rheinsberg;Pritzwalk;Oranienburg,-anchor,e" \
-	    || rm -f $@
+	    -customplaces "Berlin;Potsdam,-anchor,nw;Brandenburg,-anchor,e;Eberswalde;Frankfurt,-anchor,e;Dessau;Cottbus,-anchor,e;Neuruppin;Jüterbog;Guben,-anchor,e;Nauen,-anchor,e;Schwedt,-anchor,nc;Belzig;Bernau;Rheinsberg;Pritzwalk;Oranienburg,-anchor,e"
+	mv $@~ $@
 	perl -e '$$draw=do "/tmp/reference.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn join(" ", map { int } $$sub->(0,0), $$sub->(199,199));'
 	chmod ugo+r $@
 
@@ -66,11 +66,11 @@ $(MAPFILES_IMG_DIR)/reference-b.png: strassen landstrassen berlin potsdam orte o
 	    -scope region \
 	    -drawtypes str,wasser,berlin,orte_city -restrict HH,B,W1,W2,Z \
 	    -minplacecat 4 \
-	    -o $@ -dimfile /tmp/reference-b.dim \
+	    -o $@~ -dimfile /tmp/reference-b.dim \
 	    -nodrawscalebar -background \#e0e0e0 \
 	    -bbox -15700,31300,37300,-8800 -fontsizescale 0.8 \
-	    -customplaces "Potsdam;Bernau;Oranienburg;Königs Wusterhausen;Zossen" \
-	    || rm -f $@
+	    -customplaces "Potsdam;Bernau;Oranienburg;Königs Wusterhausen;Zossen"
+	mv $@~ $@
 	perl -e '$$draw=do "/tmp/reference-b.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn join(" ", map { int } $$sub->(0,0), $$sub->(199,199));'
 	chmod ugo+r $@
 
@@ -81,11 +81,11 @@ $(MAPFILES_IMG_DIR)/reference-wide.png: strassen landstrassen landstrassen2 berl
 	    -scope wideregion \
 	    -drawtypes str,wasser,berlin,ort -restrict B,W2,Z,6 \
 	    -minplacecat 6 \
-	    -o $@ -dimfile /tmp/reference-wide.dim \
+	    -o $@~ -dimfile /tmp/reference-wide.dim \
 	    -nodrawscalebar -background \#e0e0e0 \
 	    -fontsizescale 0.8 \
-	    -customplaces "Berlin;Rostock;Szczecin,-anchor,e" \
-	    || rm -f $@
+	    -customplaces "Berlin;Rostock;Szczecin,-anchor,e"
+	mv $@~ $@
 	perl -e '$$draw=do "/tmp/reference-wide.dim"; $$sub = eval $$draw->{AntiTransposeCode}; warn join(" ", map { int } $$sub->(0,0), $$sub->(199,199));'
 	chmod ugo+r $@
 

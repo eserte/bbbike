@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: shapefile.t,v 1.12 2004/03/21 13:42:47 eserte Exp $
+# $Id: shapefile.t,v 1.13 2004/08/19 20:41:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003,2004 Slaven Rezic. All rights reserved.
@@ -23,6 +23,10 @@ use BBBikeESRI;
 use File::Basename;
 use Strassen::Core;
 use File::Spec::Functions qw(abs2rel);
+use Getopt::Long;
+
+my $v;
+GetOptions("v" => \$v) or die "usage!";
 
 my @files =
     ("/cdrom2/arcview/shapes/buf_grue.dbf",
@@ -43,6 +47,7 @@ if (!@files) {
 plan tests => 5 * scalar @files;
 
 for my $f (@files) {
+    print STDERR "$f...\n" if $v;
     my $shapefile = new ESRI::Shapefile;
     $shapefile->set_file($f);
     ok(UNIVERSAL::isa($shapefile->Main, "ESRI::Shapefile::Main"),

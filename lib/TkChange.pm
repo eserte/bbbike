@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: TkChange.pm,v 1.10 2003/01/08 21:01:16 eserte Exp eserte $
+# $Id: TkChange.pm,v 1.11 2004/08/19 22:07:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
@@ -289,6 +289,7 @@ BEGIN {
     if ($Tk::VERSION < 800.025 && Tk::Widget->can("MouseWheelBind")) { # or < 804?
 	package Tk::HList;
 	my $old_class_init = \&Tk::HList::ClassInit;
+	local $^W = 0;
 	*ClassInit = sub {
 	    my($class,$mw) = @_;
 	    $mw->MouseWheelBind($class);

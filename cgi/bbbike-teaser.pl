@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.6 2004/06/25 22:25:34 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.7 2004/08/19 22:06:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -18,15 +18,17 @@
 #
 sub teaser {
     my @teasers_optional  = (
-			     'routen',
 			     'link',
 			     'wap',
+			     'dobli',
 			    );
     my @teasers_mandatory = (
 			     #teaser_perltk_newrelease(),
+			     teaser_perltk(),
 			     teaser_mapserver(),
+			     teaser_routen(),
 			     #teaser_sternfahrt(),
-			     teaser_dobli(),
+			     #teaser_dobli(),
 			    );
     my $sub = "teaser_" . $teasers_optional[int(rand(@teasers_optional))];
     my $t = eval $sub . '()';
@@ -49,13 +51,13 @@ EOF
 
 sub teaser_perltk_newrelease {
     <<EOF;
-<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> der Perl/Tk-Version von BBBike mit interaktiver Karte. Läuft auf Linux, Unix und Windows.<br /><a class="new" href="@{[ $BBBike::LATEST_RELEASE_DISTDIR ]}"><span style="font-weight:bold;">NEU: Version 3.13</a></span></div>
+<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> der Perl/Tk-Version von BBBike mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.<br /><a class="new" href="@{[ $BBBike::LATEST_RELEASE_DISTDIR ]}"><span style="font-weight:bold;">NEU: Version 3.13</a></span></div>
 EOF
 }
 
 sub teaser_perltk {
     <<EOF;
-<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> der Perl/Tk-Version von BBBike mit interaktiver Karte. Läuft auf Linux, Unix und Windows.</div>
+<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> der Perl/Tk-Version von BBBike mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.</div>
 EOF
 }
 

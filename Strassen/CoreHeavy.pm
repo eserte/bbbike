@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.16 2004/07/20 20:51:18 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.17 2004/08/19 22:08:53 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -293,6 +293,32 @@ sub copy_orig {
 	warn "$Strassen::Util::tmpdir does not exist" if $VERBOSE;
 	return;
     }
+    my $origdir = $self->get_diff_orig_dir;
+    return if !$origdir;
+
+    my @file = $self->file;
+    if (!@file) {
+	warn "File not defined" if $VERBOSE;
+	return;
+    }
+    foreach (@file) {
+	if (!-f $_) {
+	    warn "<$_> does not exist" if $VERBOSE;
+	    return;
+	}
+    }
+    my $dest = $self->get_diff_file_name;
+    if ($self->write($dest)) {
+	$self->{OrigFile} = $dest;
+	1;
+    } else {
+	delete $self->{OrigFile};
+	0;
+    }
+}
+
+sub get_diff_orig_dir {
+    # ignore $self
     my $origdir = "$Strassen::Util::tmpdir/orig";
     if (! -d $origdir) {
 	mkdir $origdir, 0700;
@@ -301,37 +327,16 @@ sub copy_orig {
 	    return;
 	}
     }
-    if (!defined $self->{File}) {
-	warn "File not defined" if $VERBOSE;
-	return;
-    }
-    if (ref $self->{File} ne 'ARRAY') {
-	if (!-f $self->{File}) {
-	    warn "<$self->{File}> does not exist" if $VERBOSE;
-	    return;
-	}
-    } else {
-	foreach (@{$self->{File}}) {
-	    if (!-f $_) {
-		warn "<$_> does not exist" if $VERBOSE;
-		return;
-	    }
-	}
-    }
+    $origdir;
+}
+
+sub get_diff_file_name {
+    my($self) = @_;
+    my @file = $self->file;
+    my $origdir = get_diff_orig_dir;
     require File::Basename;
-    my $dest;
-    if (ref $self->{File} ne 'ARRAY') {
-	$dest = "$origdir/" . File::Basename::basename($self->{File});
-    } else {
-	$dest = "$origdir/" . File::Basename::basename($self->{File}->[0] . "-multi");
-    }
-    if ($self->write($dest)) {
-	$self->{OrigFile} = $dest;
-	1;
-    } else {
-	delete $self->{OrigFile};
-	0;
-    }
+    my $dest = "$origdir/" . join("_", map { File::Basename::basename($_) } @file);
+    $dest;
 }
 
 # Erzeugt die Differenz aus dem aktuellen Strassen-Objekt und der
@@ -344,10 +349,8 @@ sub diff_orig {
     my($self, %args) = @_;
     require File::Basename;
     require Strassen::Util;
-    my $origdir = "$Strassen::Util::tmpdir/orig";
-    my $first_file = (ref $self->{File} eq 'ARRAY'
-		      ? join("-", @{$self->{File}}) . "-multi"
-		      : $self->{File});
+    my $origdir = $self->get_diff_orig_dir;
+    my $first_file = $self->get_diff_file_name;
     if (!defined $self->{OrigFile}) {
 	$self->{OrigFile} =
 	  "$origdir/" . File::Basename::basename($first_file);

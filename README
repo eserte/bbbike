@@ -65,8 +65,8 @@ werden sowie Einträge für KDE erzeugt werden.
 
 Statt Bundle::BBBike_small kann auch Bundle::BBBike verwendet werden.
 Damit werden wesentlich mehr Module installiert, die teilweise nur für
-die Entwicklung verwendet werden, teilweise aber auch die Arbeit mit
-BBBike erleichtern.
+die Entwicklung verwendet werden, teilweise aber zusätzliche
+BBBike-Features ermöglichen.
 
 Wenn "perl install.pl" nicht verwendet wird, aber trotzdem die
 XS-Module für bessere Performance installiert werden sollen, muss
@@ -183,6 +183,43 @@ werden noch XDarwin und Perl/Tk benötigt. Eine Anleitung zum Aufsetzen
 von Perl/Tk auf Mac OS X bekommt man in der comp.lang.perl.tk Newsgroup
 (siehe L<http://groups.google.com>).
 
+Folgende Anleitung habe ich von Wolfram Kroll erhalten:
+
+L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13.tar.gz> und (von
+L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
+besorgt.
+
+=over
+
+=item 1.
+
+perl auf dynamische Libs konfiguriert:
+
+ # sh Configure -des -Duseshrplib
+ # make
+ # make test
+ # sudo make install
+
+--> /usr/local/ ist der default (das orginale perl bleibt erhalten)
+
+=item 2.
+
+Tk: das ist kein Aqua-Tk, sondern für X11, na meinetwegen...
+
+ # make
+
+in einem X11-Fenster: # make test
+
+ sudo make install
+
+=item 3.
+
+bbbike unter X11
+
+läuft!
+
+=back
+
 Mac OS Classic wird nicht unterstützt.
 
 
@@ -225,9 +262,20 @@ Programms.
 =head1 ENTWICKLUNG
 
 Der aktuelle Entwicklungsstand von BBBike kann über CVS
-verfolgt werden. Eine Anleitung dazu befindet sich unter L<http://sourceforge.net/cvs/?group_id=19142>,
-direkt erreichbar ist das Repository über anonymous login (ohne
-Passwort) auf C<:pserver:anonymous@cvs.bbbike.sourceforge.net:/cvsroot/bbbike>. Das CVS enthält auch die aktuellen Daten.
+verfolgt werden. Eine ausführliche Anleitung dazu befindet sich unter
+L<http://sourceforge.net/cvs/?group_id=19142>.
+
+Von der Kommandozeile muss folgendes eingegeben werden:
+
+    # login ist nur das erste Mal notwendig, Passwort leer lassen
+    cvs -d :pserver:anonymous@cvs.bbbike.sourceforge.net:/cvsroot/bbbike login
+    cvs -d :pserver:anonymous@cvs.bbbike.sourceforge.net:/cvsroot/bbbike co bbbike
+
+    # Alle weiteren Male nur folgendes verwenden:
+    cd bbbike
+    cvs update
+
+Das CVS wird fast täglich aktualisiert und enthält auch die aktuellen Daten.
 
 =head1 DOKUMENTATION
 
