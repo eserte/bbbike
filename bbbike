@@ -4971,6 +4971,8 @@ sub generate_plot_functions {
 	    my $ret = shift;
 	    my $strname = $ret->[Strassen::NAME];
 	    my @kreuzungen = @{$ret->[Strassen::COORDS]};
+my $xxx = ($kreuzungen[0] eq '12012,16752');
+warn $xxx;
 	    my $cat_hin = $ret->[Strassen::CAT];
 	    my $cat_rueck;
 	    my(@addinfo_hin, @addinfo_rueck);
@@ -5415,6 +5417,9 @@ EOF
     . $parse_coords_code . <<'EOF';
 	    my($x, $y) = transpose($xx, $yy);
 
+	    if (defined $category_image{$category}) {
+		$category = "IMG:$category_image{$category}";
+	    }
 	    if ($category =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) {
 		my $photo = $1;
 		my $anchor = ($2 ? $2 : "c");

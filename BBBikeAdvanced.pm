@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.87 2004/01/13 18:32:14 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.87 2004/01/13 18:32:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2003 Slaven Rezic. All rights reserved.
@@ -228,7 +228,7 @@ sub read_desc_file {
 	       %str_color  %outline_color
 	       %str_attrib %p_attrib
 	       $str_attrib $p_attrib
-	       %category_size %category_color %category_width
+	       %category_size %category_color %category_width %category_image
 	      );
 	$compartment->share(@shared_symbols);
 	$compartment->rdo($desc_file);

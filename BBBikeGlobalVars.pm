@@ -59,7 +59,7 @@ use vars qw(
      %line_width %line_length %line_dash %line_arrow $default_line_width
      %line_shorten
      %category_size %outline_color %category_color %str_color %p_color
-     %category_font_color %category_font %category_width
+     %category_font_color %category_font %category_width %category_image
      $crossings $all_outline %str_attrib %p_attrib %category_attrib
      $init_choose_street %init_str_draw %str_draw %occupied_layer
      %init_p_draw %p_draw %str_outline $auto_show_list

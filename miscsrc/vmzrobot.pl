@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.4 2004/01/13 09:46:51 eserte Exp $
+# $Id: vmzrobot.pl,v 1.5 2004/01/18 10:25:56 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
-use HTML::LinkExtor;
+#use HTML::LinkExtor;
 use HTML::TreeBuilder;
 use HTML::FormatText 2; # can deal with tables
 use LWP::UserAgent;
@@ -34,8 +34,8 @@ my $oldfile;
 my $do_diffcount;
 my $quiet;
 my $force;
-my $listing_url = "http://www.vmz-berlin.de/vmz/trafficspotmap.do";
-my $detail_url  = "http://www.vmz-berlin.de/vmz/trafficmap.do";
+my $listing_url = "http://www.vmz-berlin.de/vmz/rdstmc.do";
+my $detail_url  = "http://www.vmz-berlin.de/vmz/trafficmap.do"; # XXX not used anymore
 my @output_as;
 
 if (!GetOptions("test" => \$test,
@@ -77,8 +77,8 @@ while(my($type,$file) = each %output_as) {
 }
 
 if ($test) {
-    $listing_url = "file:///home/www/download/www.vmz-berlin.de/vmz/trafficspotmap.do";
-    $detail_url  = "file:///home/www/download/www.vmz-berlin.de/vmz/trafficmap.do";
+    $listing_url = "file:///home/www/download/www.vmz-berlin.de/vmz/rdstmc.do";
+#    $detail_url  = "file:///home/www/download/www.vmz-berlin.de/vmz/trafficmap.do";#XXX
 }
 
 my $ua;
@@ -93,14 +93,15 @@ if ($inputfile) {
     print STDERR "Get listing..." if !$quiet;
     @detail_links = get_listing();
     print STDERR " OK\n" if !$quiet;
-    {
-	my $i = 0;
-	for my $detail_link (@detail_links) {
-	    printf STDERR "%d/%d (%d%%)   \r", ($i+1), scalar(@detail_links), $i/$#detail_links*100 if !$quiet;
-	    $detail_link->{text} = get_detail($detail_link->{querystring});
-	    $i++;
-	}
-    }
+#XXX del:
+#     {
+# 	my $i = 0;
+# 	for my $detail_link (@detail_links) {
+# 	    printf STDERR "%d/%d (%d%%)   \r", ($i+1), scalar(@detail_links), $i/$#detail_links*100 if !$quiet;
+# 	    $detail_link->{text} = get_detail($detail_link->{querystring});
+# 	    $i++;
+# 	}
+#     }
 }
 
 if ($oldfile) {
@@ -158,40 +159,51 @@ sub get_listing {
 	die "Can't fetch $listing_url: " . $resp->content;
     }
     my @detail_links;
-    my $p = HTML::LinkExtor->new
-	(sub {
-	     my($tag, %attr) = @_;
-	     if ($tag =~ /^area$/i) {
-		 my $href = uri_unescape($attr{href});
-		 if ($href =~ /javascript:trafficmap\((.*)\)/) {
-		     my $remainder = $1;
-		     my @arg;
-		     my %info;
-		     while(1) {
-			 (my $extracted, $remainder) = extract_delimited
-			     ($remainder, '"');
-			 $remainder =~ s/^[^\"]*//;
-			 my $arg = substr($extracted, 1, -1);
-			 push @arg, $arg;
-			 if ($arg =~ /^(id|x1|y1|x2|y2)=(.*)/) {
-			     $info{$1} = $2;
-			 } else {
-			     warn "Unhandled $1 => $2";
-			 }
-			 last if $remainder eq '';
-		     }
-		     $info{querystring} = join("&", @arg);
-		     push @detail_links, \%info;
-		 }
-	     }
-	 }, $listing_url);
+
+    my $p = HTML::TreeBuilder->new;
     $p->parse($resp->content);
+    $p->eof;
+
+    () = $p->look_down(
+	'_tag', 'a',
+	sub {
+	    my $elem = shift;
+	    my $href = $elem->attr('href');
+	    return unless defined $href;
+	    my $href = uri_unescape($href);
+	    return unless $href =~ /javascript:trafficmap\((.*)\)/;
+	    my $remainder = $1;
+	    my @arg;
+	    my %info;
+	    while(1) {
+		(my $extracted, $remainder) = extract_delimited
+		    ($remainder, '"');
+		$remainder =~ s/^[^\"]*//;
+		my $arg = substr($extracted, 1, -1);
+		push @arg, $arg;
+		if ($arg =~ /^(id|x1|y1|x2|y2)=(.*)/) {
+		    $info{$1} = $2;
+		} else {
+		    warn "Unhandled $1 => $2";
+		}
+		last if $remainder eq '';
+	    }
+	    $info{querystring} = join("&", @arg);
+
+	    my $tr = $elem->parent->parent;
+	    my $tree = HTML::TreeBuilder->new->parse($tr->as_HTML);
+	    my $formatter = HTML::FormatText->new(leftmargin => 0, rightmargin => 50);
+	    $info{text} = $formatter->format($tree);
+	    push @detail_links, \%info;
+	}
+		      );
     if (!@detail_links) {
 	warn "No detail links in listing page found!\n";
     }
     @detail_links;
 }
 
+# XXX not used anymore
 sub get_detail {
     my($qs) = @_;
     if ($test) {
@@ -227,6 +239,7 @@ sub file_or_stdout {
 }
 
 sub diff {
+    require YAML;
     my $ref = YAML::LoadFile($oldfile);
     my @old_detail_links = @$ref;
     my %detail_links     = map {($_->{id} => $_)} @detail_links;
