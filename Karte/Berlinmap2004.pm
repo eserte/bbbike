@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlinmap2004.pm,v 1.6 2004/04/15 07:47:29 eserte Exp $
+# $Id: Berlinmap2004.pm,v 1.7 2004/04/19 06:59:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
