@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.74 2004/08/21 23:07:39 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.75 2004/08/23 21:58:00 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -421,7 +421,7 @@ local $scale = 1;#XXX remove $scale
     eval {
 	my $i = 0;
 	foreach my $l (@data) {
-	    $progress->Update($i/($#data+1)) if $i++ % 80 == 0;
+	    $progress->Update($i/($#data+1)) if @data > 1 && $i++ % 80 == 0;
 	    my($x1, $y1, $x2, $y2) = (split(/,/, $l->[0]),
 				      split(/,/, $l->[1]),
 				     );
@@ -3256,11 +3256,11 @@ sub temp_blockings_editor {
 	      -command => sub {
 		  if (!$as_data) {
 		      if (!defined $file || $file =~ /^\s*$/) {
-			  $t->messageBox(-message => "Dateiname fehlt");
+			  $t->messageBox(-message => "Dateiname fehlt oder `as data' wählen");
 			  return;
 		      }
 		      if (-d $file) {
-			  $t->messageBox(-message => "Bitte neue bbd-Datei auswählen");
+			  $t->messageBox(-message => "Bitte neue bbd-Datei auswählen oder `as data' wählen");
 			  return;
 		      }
 		      if (-e $file) {
@@ -3280,7 +3280,7 @@ sub temp_blockings_editor {
 		  my $end_time   = $end_undef   ? undef : $end_w->get;
 		  if ((!$start_undef && !defined $start_time) ||
 		      (!$end_undef && !defined $end_time)) {
-		      $t->messageBox(-message => "Start/Endzeit fehlt");
+		      $t->messageBox(-message => "Bitte Start/Endzeit eintragen oder `undef' wählen");
 		      return;
 		  }
 		  if ($start_time) {
@@ -3330,7 +3330,7 @@ sub temp_blockings_editor {
 EOF
 		  if ($as_data) {
 		      my $s = Strassen->new($file);
-		      $pl_entry .= "      data  => <<EOF,\n" . $s->as_string . "EOF\n";
+		      $pl_entry .= "       data  => <<EOF,\n" . $s->as_string . "EOF\n";
 		  } else {
 		      $pl_entry .= <<EOF;
        file  => '$rel_file',

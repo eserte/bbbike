@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.82 2004/08/16 21:12:36 eserte Exp $
+# $Id: bbbike.cgi,v 6.82 2004/08/16 21:12:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -604,9 +604,10 @@ eval { local $SIG{'__DIE__'};
        do "$0.config" };
 
 if (defined $bbbike_temp_blockings_file) {
+    @temp_blocking = ();
     do $bbbike_temp_blockings_file;
     if (!@temp_blocking) {
-	warn "Could not load $bbbike_temp_blockings_file: $@";
+	warn "Could not load $bbbike_temp_blockings_file or file is empty: $@";
     }
 }
 
@@ -2563,6 +2564,7 @@ sub search_coord {
 	my $t = time;
 	my $index = 0;
 	for my $tb (@temp_blocking) {
+	    next if !$tb; # undefined entry
 	    if (((!defined $tb->{from} || $t >= $tb->{from}) &&
 		 (!defined $tb->{until} || $t <= $tb->{until})) ||
 		(defined $q->param("test") && grep { /^(?:custom|temp)[-_]blocking/ } $q->param("test"))) {

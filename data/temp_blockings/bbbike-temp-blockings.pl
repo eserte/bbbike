@@ -554,7 +554,7 @@ userdel	q4 9909,18333 10089,18180
 EOF
      },
      { from  => 1093125600, # 2004-08-22 00:00
-       until => 1093644000, # 2004-08-28 00:00
+       until => 1093125600, # XXX removed! 2004-08-28 00:00
        text  => 'L 792; (Groß Schulzendorf-Blankenfelde); OD Blankenfelde, Dorfstr. Straßenbauarbeiten Vollsperrung 23.08.2004-27.08.2004 ',
        type  => 'handicap',
       data  => <<EOF,
@@ -575,6 +575,39 @@ EOF
        type  => 'handicap',
       data  => <<EOF,
 userdel	q4 35359,12542 35656,11817
+EOF
+     },
+     { from  => 1093297474, # 2004-08-23 23:44
+       until => 1093816800, # 2004-08-30 00:00
+       text  => 'L 73; (B246-Fresdorf-Wildenbruch-B2); OD Wildenbruch, zw. Potsdamer Str. u. Dorfstr.; Straßenbauarbeiten; Vollsperrung; 23.08.2004-29.08.2004',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -12325,-13958 -12177,-13787
+EOF
+     },
+     { from  => undef, # 
+       until => 1093514400, # 2004-08-26 12:00
+       text  => 'Bachstraße: In beiden Richtungen Störungen durch Rohrbruch, gesperrt bis Do 12:00 ',
+       type  => 'handicap',
+      data  => <<EOF,
+userdel	q4 6040,12480 5798,12021
+userdel	q4 5771,11887 5798,12021
+EOF
+     },
+     { from  => 1093125600, # 2004-08-22 00:00
+       until => 1099260000, # 2004-10-31 23:00
+       text  => 'L 435; (Grunow-Müllrose); OD Mixdorf, Hauptstr. grundhafter Ausbau Vollsperrung 23.08.2004-31.10.2004 ',
+       type  => 'handicap',
+      data  => <<EOF,
+userdel	q4 79281,-22168 79255,-22467
+EOF
+     },
+     { from  => 1093730400, # 2004-08-29 00:00
+       until => 1094248800, # 2004-09-04 00:00
+       text  => 'L 792; (Groß Schulzendorf-Blankenfelde); OD Blankenfelde, Dorfstr. Straßenbauarbeiten Vollsperrung 30.08.2004-03.09.2004 ',
+       type  => 'handicap',
+      data  => <<EOF,
+userdel	q4 10023,-8859 10115,-8276
 EOF
      },
     );

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.144 2004/08/21 23:09:15 eserte Exp $
+# $Id: bbbike,v 3.144 2004/08/21 23:09:15 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -8749,9 +8749,11 @@ sub activate_temp_blockings {
 
     eval {
 	use vars qw(@temp_blocking); # XXX do not use a global such as this
+	@temp_blocking = ();
 	do $file; # XXX Safe?
 	my @s;
 	for my $o (@temp_blocking) {
+	    next if !$o; # undefined entry
 	    if ((!defined $o->{from} || $o->{from} < $now) &&
 		(!defined $o->{until} || $o->{until} > $now)) {
 		my $s;
@@ -14640,8 +14642,11 @@ sub set_coords_custom {
 
 ### AutoLoad Sub
 sub user_edit_street {
-    # XXX zur Zeit nur Löschen möglich
-    return unless $net;
+    # XXX zur Zeit nur Löschen möglich XXX häh?
+    if (!$net) {
+	make_net();
+    }
+    status_message("Can't make net", "die") if !$net;
 #    my(@tags) = $c->gettags('current');
 #    return if !@tags;
 #    if ($tags[0] =~ /^[sSlL]$/) {

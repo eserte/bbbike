@@ -1151,6 +1151,12 @@ Rewrite the misc/Makefile rule to use standard Strassen methods.
 
 =over
 
+=item * (M4)
+
+Nicht benötigte Einträge aus bbbike-temp-blockings.pl nach
+old-bbbike-temp-blockings.pl verschieben. old-bbbike-temp-blockings.pl
+kommt ins MANIFEST.addtocvs, aber nicht ins MANIFEST.
+
 =item * (E1)
 
 weblinks E<quot>offiziellE<quot> machen.
