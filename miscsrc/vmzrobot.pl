@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.11 2004/04/14 19:47:29 eserte Exp $
+# $Id: vmzrobot.pl,v 1.12 2004/05/18 21:55:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -142,7 +142,8 @@ if (exists $output_as{'bbd'}) {
 	    ($info->{x1}, $info->{y1});
 	my($x2, $y2) = map { int } $Karte::Polar::obj->map2standard
 	    ($info->{x2}, $info->{y2});
-	print $fh "$text\tX ";
+	my $cat = get_bbd_category($info);
+	print $fh "$text\t$cat ";
 	if ($x1 == $x2 && $y1 == $y2) {
 	    print $fh "$x1,$y1";
 	} else {
@@ -294,11 +295,12 @@ sub mark_irrelevant_entries {
 	    my(@comp) = split /,\s+/, $detail->{text};
 	    my $Fahrstreifen = qr{(?:Fahrstreifen|Fahrspuren)};
 	    my $reduziert    = qr{(?:reduziert|verengt)};
+	    my $zahl         = qr{(?:\d|ein|einen|zwei|drei|vier)};
 	    if ($comp[-1] =~ /( Fahrbahn\s+(teilweise\s+)?auf\s+\S+\s+$Fahrstreifen\s+verengt
 			      | $Fahrstreifen\s+gesperrt
 			      | Fahrbahnverengung
 			      | Ampeln\s+ausgefallen
-			      | auf\s+\d\s+$Fahrstreifen\s+$reduziert
+			      | auf\s+$zahl\s+$Fahrstreifen\s+$reduziert
 			      )/xs) {
 		$ignore = 1;
 	    }
@@ -316,6 +318,24 @@ sub state_out {
 	$text = join(", ", @{ $detail->{_state} }) . ": ";
     }
     sprintf "%-20s", $text;
+}
+
+sub get_bbd_category {
+    my($info) = @_;
+    my $cat = "X";
+    if ($info->{_state}) {
+	my $state = join " ", @{ $info->{_state} };
+	if ($state =~ /^IGNORE/) {
+	    $cat = "#d9c9c9"; # rötliches grau
+	} elsif ($state =~ /^UNCHANGED/) {
+	    $cat = "#e9c0c0"; # etwas deutlicher
+	} elsif ($state =~ /^(CHANGED|NEW)/) {
+	    $cat = "#008000";
+	} elsif ($state =~ /^REMOVED/) {
+	    $cat = "#800000";
+	}
+    }
+    $cat;
 }
 
 __END__

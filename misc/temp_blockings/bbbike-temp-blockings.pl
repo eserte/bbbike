@@ -288,9 +288,9 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'handicap',
      },
      { from  => 1083708000, # 2004-05-05 00:00
-       until => 1085004000, # 2004-05-20 00:00
+       until => Time::Local::timelocal(reverse(2004-1900,5-1,24,23,59,59)),
        file  => 'karstaedt.bbd',
-       text  => 'B 5; OD Karstädt, Bahnübergang; Gleisbauarbeiten; Vollsperrung; 06.05.2004-19.05.2004 ',
+       text  => 'B 5; OD Karstädt, Bahnübergang; Gleisbauarbeiten; Vollsperrung; 06.05.2004-24.05.2004 ',
        type  => 'handicap',
      },
      { from  => 1083880800, # 2004-05-07 00:00
@@ -327,6 +327,12 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        until => 1084741200, # 2004-05-16 23:00
        file  => 'siegfriedstr.bbd',
        text  => 'Siegfriedstr. (Lichtenberg) in beiden Richtungen, zwischen Landsberger Allee und Herzbergstr. Veranstaltung, Straße vollständig gesperrt (bis 16.05. 23 Uhr) Siegfriedstraßenfest',
+       type  => 'gesperrt',
+     },
+     { from  => 1085090400, # 2004-05-21 00:00
+       until => 1085436000, # 2004-05-25 00:00
+       file  => 'pillgram.bbd',
+       text  => 'K 6733; Bahnübergang zw. Pillgram u. Jacobsdorf Gleisbauarbeiten Vollsperrung 22.05.2004-24.05.2004 ',
        type  => 'gesperrt',
      },
     );

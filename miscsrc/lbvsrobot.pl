@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.14 2004/05/17 07:06:12 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.15 2004/05/18 21:58:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -177,7 +177,8 @@ if (exists $output_as{'bbd'}) {
 	my($x1, $y1) = map { int } $Karte::Polar::obj->map2standard
 	    ($info->{"x"}, $info->{"y"});
 	($x1, $y1) = BBBike::CorrectData::convert_record_for_x_y($x1, $y1);
-	print $fh "$text\tX $x1,$y1\n";
+	my $cat = get_bbd_category($info);
+	print $fh "$text\t$cat $x1,$y1\n";
     }
 }
 
@@ -466,6 +467,24 @@ sub state_out {
 	$text = join(", ", @{ $detail->{_state} }) . ": ";
     }
     sprintf "%-20s", $text;
+}
+
+sub get_bbd_category {
+    my($info) = @_;
+    my $cat = "X";
+    if ($info->{_state}) {
+	my $state = join " ", @{ $info->{_state} };
+	if ($state =~ /^IGNORE/) {
+	    $cat = "#d9c9c9"; # rötliches grau
+	} elsif ($state =~ /^UNCHANGED/) {
+	    $cat = "#e9c0c0"; # etwas deutlicher
+	} elsif ($state =~ /^(CHANGED|NEW)/) {
+	    $cat = "#008000";
+	} elsif ($state =~ /^REMOVED/) {
+	    $cat = "#800000";
+	}
+    }
+    $cat;
 }
 
 __END__
