@@ -113,6 +113,12 @@ a.ms:visited { color:#333333; }
 .catNN {
   background-color:#bdffbd;
 }
+.catfz {
+  background-color:#cccccc;
+  content:"?";
+  vertical-align:middle;
+  text-align:center;
+}
 
 .catcell {
   width:10px;

@@ -2059,7 +2059,14 @@ sub get_kreuzung {
     if ((!defined $start and !defined $start_c) ||
 	(!defined $ziel  and !defined $ziel_c)) {
 	local $^W = 0;
-	confess "Fehler: Start <$start_str/position $start> und/oder Ziel <$ziel_str/position $ziel> können nicht zugeordnet werden.<br>\n";
+	warn "Fehler: Start <$start_str/position $start> und/oder Ziel <$ziel_str/position $ziel> können nicht zugeordnet werden.<br>\n";
+	# Mostly this error comes from mistyped user input, so try to do
+	# the best and redirect to the start page:
+	$q->param('start', $start_str);
+	$q->param('via', $via_str);
+	$q->param('ziel', $ziel_str);
+	$q->delete($_) for (qw(startname vianame zielname));
+	return choose_form();
     }
 
     if (@start_coords == 1 and @ziel_coords == 1 and
@@ -3103,7 +3110,7 @@ sub search_coord {
 		$raw_direction =
 		    uc(BBBikeCalc::line_to_canvas_direction
 		       ($x1,$y1,$x2,$y2));
-		$richtung = "nach " . localize_direction($raw_direction, "de");
+		$richtung = "nach " . BBBikeCalc::localize_direction($raw_direction, "de");
 	    }
 
 	    if ($with_comments && $comments_net) {
@@ -5348,23 +5355,6 @@ sub load_teaser {
 	   require $teaser_file;
 	   $BBBikeCGI::teaser_file_modtime = (stat($teaser_file))[9];
        }; warn $@ if $@;
-}
-
-# move to another module?
-sub localize_direction {
-    my($dir, $lang) = @_;
-    if ($lang eq 'de') {
-	$dir = { "N" => "Norden",
-		 "NE" => "Nordosten",
-		 "NW" => "Nordwesten",
-		 "E" => "Osten",
-		 "S" => "Süden",
-		 "SE" => "Südosten",
-		 "SW" => "Südwesten",
-		 "W" => "Westen",
-	       }->{$dir};
-    }
-    $dir;
 }
 
 ######################################################################

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ImageMagick.pm,v 1.9 2004/12/29 23:34:23 eserte Exp $
+# $Id: ImageMagick.pm,v 1.9 2004/12/29 23:34:23 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -683,7 +683,7 @@ sub draw_scale {
 #      my $self = shift;
 #      return unless $self->{Wind};
 #      require BBBikeCalc;
-#      main::init_wind();
+#      BBBikeCalc::init_wind();
 #      my $richtung = lc($self->{Wind}{Windrichtung});
 #      if ($richtung =~ /o$/) { $richtung =~ s/o$/e/; }
 #      my $staerke  = $self->{Wind}{Windstaerke};
@@ -703,7 +703,7 @@ sub draw_scale {
 #  	      '1,-1' => [-1,-1],
 #  	      '0,-1' => [-1, 0],
 #  	    );
-#  	my($ydir, $xdir) = @{$main::wind_dir{$richtung}};
+#  	my($ydir, $xdir) = @{$BBBikeCalc::wind_dir{$richtung}};
 #  	if (exists $senkrecht{"$xdir,$ydir"}) {
 #  	    my($x2dir, $y2dir) = @{ $senkrecht{"$xdir,$ydir"} };
 #  	    my($yadd, $xadd) = map { -$_*15 } ($ydir, $xdir);

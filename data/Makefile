@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.41 2005/02/27 23:36:54 eserte Exp $
+# $Id: Makefile,v 2.42 2005/03/17 21:01:41 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -96,7 +96,9 @@ slow-checks:	inaccessible_strassen inaccessible_landstrassen \
 persistent-tmp:	${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
 		${PERSISTENTTMPDIR}/strassen_in_planung.bbd \
 		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
-		${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt
+		${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt \
+		${PERSISTENTTMPDIR}/Berlin.coords.bbd \
+		${PERSISTENTTMPDIR}/Potsdam.coords.bbd
 
 # even slower (about four minutes)
 really-slow-checks:	check-crossings check-nearest
@@ -478,6 +480,12 @@ ${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd:	fragezeichen-orig
 
 ${PERSISTENTTMPDIR}/strassen_in_planung.bbd:	fragezeichen-orig
 	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "Straßen in Planung" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
+
+${PERSISTENTTMPDIR}/Berlin.coords.bbd: Berlin.coords.data
+	perl -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Berlin.coords.data > $@
+
+${PERSISTENTTMPDIR}/Potsdam.coords.bbd: Potsdam.coords.data
+	perl -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Potsdam.coords.data > $@
 
 # Die mit "laut adfc-karte" u.ä. gekennzeichneten Straßen extrahieren und
 # nach .fragezeichen-other-source schreiben.

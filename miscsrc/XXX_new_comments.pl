@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: XXX_new_comments.pl,v 1.2 2005/03/13 21:43:08 eserte Exp eserte $
+# $Id: XXX_new_comments.pl,v 1.3 2005/03/17 22:50:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -12,6 +12,8 @@
 # Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
 #
+
+package NewComments;
 
 use strict;
 use lib ("/home/e/eserte/src/bbbike/lib",
@@ -27,54 +29,84 @@ use Getopt::Long;
 
 my $skip_lines;
 my $use_internal_test_data;
-GetOptions("skiplines=i" => \$skip_lines,
-	   "internaltestdata!" => \$use_internal_test_data,
-	  ) or die "usage!";
 
-# base net
-my $s = Strassen->new("strassen");
-my $net = StrassenNetz->new($s);
-$net->make_net(UseCache => 1);
+my $s;
+my $net;
+my $qs;
+my $qs_net;
+my $kr;
 
-my $kr = Kreuzungen->new(Strassen => $s, UseCache => 1);
+sub len_fmt ($;$) {
+    my $len = shift;
+    my $prefix = shift;
+    if ($len >= 100) {
+	(defined $prefix ? "$prefix " : "") . m2km($len);
+    } else {
+	$len = int($len/10)*10;
+	if ($len == 0) {
+	    "";
+	} else {
+	    (defined $prefix ? "$prefix " : "") . "$len m";
+	}
+    }
+}
 
-# attrib net
-my $qs = MultiStrassen->new
-    ("qualitaet_s", "handicap_s", map { "comments_$_" } grep { $_ ne "kfzverkehr" } @Strassen::Dataset::comments_types);
-my $qs_net = StrassenNetz->new($qs);
-$qs_net->make_net_cat(-usecache => 1, -net2name => 1, -multiple => 1);
+my $cgi;
 
-my $cgi = "/home/e/eserte/src/bbbike/cgi/bbbike.cgi";
-my @logfiles = ("/home/e/eserte/www/log/radzeit.combined_log",
+sub set_data {
+    my($_net, $_qs_net) = @_;
+    $net = $_net;
+    $s = $_net->{Strassen};
+    $qs_net = $_qs_net;
+    $qs = $_qs_net->{Strassen};
+    $kr = Kreuzungen->new(Strassen => $s, UseCache => 1);
+}
+
+sub process {
+    GetOptions("skiplines=i" => \$skip_lines,
+	       "internaltestdata!" => \$use_internal_test_data,
+	      ) or die "usage!";
+
+    # base net
+    $s = Strassen->new("strassen");
+    $net = StrassenNetz->new($s);
+    $net->make_net(UseCache => 1);
+
+    $kr = Kreuzungen->new(Strassen => $s, UseCache => 1);
+
+    # attrib net
+    $qs = MultiStrassen->new
+	("qualitaet_s", "handicap_s", map { "comments_$_" } grep { $_ ne "kfzverkehr" } @Strassen::Dataset::comments_types);
+    $qs_net = StrassenNetz->new($qs);
+    $qs_net->make_net_cat(-usecache => 1, -net2name => 1, -multiple => 1);
+
+    $cgi = "/home/e/eserte/src/bbbike/cgi/bbbike.cgi";
+    my @logfiles = ("/home/e/eserte/www/log/radzeit.combined_log",
 		"/home/e/eserte/www/log/radzeit.combined_log.0",
 	       );
 
-sub len_fmt ($) {
-    my $len = shift;
-    m2km($len);
-}
+    use CGI;
+    use URI::Escape;
 
-use CGI;
-use URI::Escape;
-
-if ($use_internal_test_data) {
-    for my $inx (0 .. 2) { # 0 .. 2
-	my $d = get_internal_test_data($inx);
-	process_data($d);
-	output_data($d);
-    }
-} else {
-    for my $logfile (@logfiles) {
-	open(LOG, "tail -r $logfile | ") or die $!;
-	while(<LOG>) {
-	    if ($skip_lines > 0) {
-		$skip_lines--;
-		next;
-	    }
-	    my $d = parse_line($_);
-	    next if !$d;
+    if ($use_internal_test_data) {
+	for my $inx (0 .. 2) { # 0 .. 2
+	    my $d = get_internal_test_data($inx);
 	    process_data($d);
 	    output_data($d);
+	}
+    } else {
+	for my $logfile (@logfiles) {
+	    open(LOG, "tail -r $logfile | ") or die $!;
+	    while(<LOG>) {
+		if ($skip_lines > 0) {
+		    $skip_lines--;
+		    next;
+		}
+		my $d = parse_line($_);
+		next if !$d;
+		process_data($d);
+		output_data($d);
+	    }
 	}
     }
 }
@@ -131,6 +163,8 @@ sub parse_line {
 sub process_data {
     my $d = shift;
 
+    $kr = $kr; # XXX hack for lexical binding (because of the "eval" below)
+
     my $path_i = 0;
 
     my $get_hop_coords = sub {
@@ -162,13 +196,13 @@ sub process_data {
 	    #print $main_street . "\t";
 
 	    if ($r->[Strassen::CAT] =~ /^CP/) {
-		return $k; # point comment
+		return ["", $k]; # point comment
 	    }
 
 	    my $ret;
-	    if (0 #$v->[0] == 0 && $v->[1] == $#hop_coords
+	    if ($v->[0] == 0 && $v->[1] == $#hop_coords
 	       ) {
-		$ret = "$k (*)"; # XXX "(*)" only for debugging XXX aber was bedeutet das?
+		$ret = ["", "$k (*gesamt)"]; # XXX "(*gesamt)" only for debugging
 	    } else {
 		my $prev_street = $hop_i >= 0 ? $d->{Route}[$hop_i-1]{Strname} : undef;
 
@@ -195,31 +229,31 @@ sub process_data {
 		}
 
 		if ($v->[0] == 0 && defined $end_crossing) {
-		    $ret = "bis $end_crossing: $k";
+		    $ret = ["bis $end_crossing", $k];
 		} elsif (defined $begin_crossing && $v->[1] == $#hop_coords) {
-		    $ret = "ab $begin_crossing: $k";
+		    $ret = ["ab $begin_crossing", $k];
 		} elsif (defined $begin_crossing && defined $end_crossing) {
-		    $ret = "zwischen $begin_crossing und $end_crossing: $k";
+		    $ret = ["zwischen $begin_crossing und $end_crossing", $k];
 		    # alternativ: ab ... bis ...
 		} elsif (!defined $begin_crossing && !defined $end_crossing) {
-		    my $len1 = len_fmt get_path_part_len(\@hop_coords, 0, $v->[0]);
-		    my $len2 = len_fmt get_path_part_len(\@hop_coords, $v->[0], $v->[1]);
-		    $ret = "nach $len1 für $len2: $k";
+		    my $len1 = len_fmt get_path_part_len(\@hop_coords, 0, $v->[0]), "nach";
+		    my $len2 = len_fmt get_path_part_len(\@hop_coords, $v->[0], $v->[1]), "für";
+		    $ret = ["$len1 $len2", $k];
 		} elsif (defined $begin_crossing && !defined $end_crossing) {
-		    my $len = len_fmt get_path_part_len(\@hop_coords, $v->[0], $v->[1]);
-		    $ret = "ab $begin_crossing für $len: $k";
+		    my $len = len_fmt get_path_part_len(\@hop_coords, $v->[0], $v->[1]), "für";
+		    $ret = ["ab $begin_crossing $len", $k];
 		} elsif (!defined $begin_crossing && defined $end_crossing) {
-		    my $len = len_fmt get_path_part_len(\@hop_coords, 0, $v->[0]);
-		    $ret = "nach $len bis $end_crossing: $k";
+		    my $len = len_fmt get_path_part_len(\@hop_coords, 0, $v->[0]), "nach";
+		    $ret = ["$len bis $end_crossing", $k];
 		} elsif (!defined $begin_crossing && $v->[1] == $#hop_coords) {
-		    my $len = len_fmt get_path_part_len(\@hop_coords, 0, $v->[0]);
-		    $ret = "nach $len: $k";
+		    my $len = len_fmt get_path_part_len(\@hop_coords, 0, $v->[0]), "nach";
+		    $ret = ["$len", $k];
 		} elsif ($v->[0] == 0 && !defined $end_crossing) {
-		    my $len = len_fmt get_path_part_len(\@hop_coords, 0, $v->[1]);
-		    $ret = "für $len: $k";
+		    my $len = len_fmt get_path_part_len(\@hop_coords, 0, $v->[1]), "für";
+		    $ret = ["$len", $k];
 		} else {
 		    die "Should never happen!";
-		    $ret = "$begin_crossing $end_crossing";
+		    $ret = ["$begin_crossing $end_crossing", ""];
 		}
 	    }
 	    $ret;
@@ -296,7 +330,21 @@ sub process_data {
 	}
 
 	if (@new_comments) {
-	    $d->{Route}[$hop_i]{Comment} = join("; ", @new_comments);
+	    my %same_hop;
+	    for (@new_comments) {
+		my($hop_desc, $comment) = @$_;
+		push @{ $same_hop{$hop_desc} }, $comment;
+	    }
+	    $d->{Route}[$hop_i]{Comment} =
+		join("; ",
+		     map {
+			 my $comments = join(", ", @{ $same_hop{$_} });
+			 if ($_ eq '') {
+			     $comments;
+			 } else {
+			     $_ . ": " . $comments;
+			 }
+		     } keys %same_hop);
 	}
     }
 }
@@ -964,6 +1012,11 @@ my $d = YAML::Load($yaml[$inx]);
 
 $d;
 }
+
+return 1 if caller();
+
+process();
+
 __END__
 
 XXX Weitere Verbesserungen:

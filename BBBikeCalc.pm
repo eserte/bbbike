@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCalc.pm,v 1.11 2005/03/17 00:05:19 eserte Exp $
+# $Id: BBBikeCalc.pm,v 1.11 2005/03/17 00:05:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2005 Slaven Rezic. All rights reserved.
@@ -160,6 +160,22 @@ sub line_to_canvas_direction {
 	warn "Winkel $arc is unknown";
 	undef;
     }
+}
+
+sub localize_direction {
+    my($dir, $lang) = @_;
+    if ($lang eq 'de') {
+	$dir = { "N" => "Norden",
+		 "NE" => "Nordosten",
+		 "NW" => "Nordwesten",
+		 "E" => "Osten",
+		 "S" => "Süden",
+		 "SE" => "Südosten",
+		 "SW" => "Südwesten",
+		 "W" => "Westen",
+	       }->{uc($dir)};
+    }
+    $dir;
 }
 
 1;

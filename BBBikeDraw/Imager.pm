@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Imager.pm,v 1.12 2005/02/25 07:55:24 eserte Exp $
+# $Id: Imager.pm,v 1.13 2005/03/17 23:08:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -45,7 +45,7 @@ use vars @colors;
 #      }
 #  }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -938,7 +938,7 @@ return; # XXX not yet
     my $self = shift;
     return unless $self->{Wind};
     require BBBikeCalc;
-    main::init_wind();
+    BBBikeCalc::init_wind();
     my $richtung = lc($self->{Wind}{Windrichtung});
     if ($richtung =~ /o$/) { $richtung =~ s/o$/e/; }
     my $staerke  = $self->{Wind}{Windstaerke};
@@ -958,7 +958,7 @@ return; # XXX not yet
 	      '1,-1' => [-1,-1],
 	      '0,-1' => [-1, 0],
 	    );
-	my($ydir, $xdir) = @{$main::wind_dir{$richtung}};
+	my($ydir, $xdir) = @{$BBBikeCalc::wind_dir{$richtung}};
 	if (exists $senkrecht{"$xdir,$ydir"}) {
 	    my($x2dir, $y2dir) = @{ $senkrecht{"$xdir,$ydir"} };
 	    my($yadd, $xadd) = map { -$_*15 } ($ydir, $xdir);

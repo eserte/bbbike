@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.50 2005/03/15 20:56:29 eserte Exp $
+# $Id: Makefile,v 1.51 2005/03/16 22:14:02 eserte Exp $
 #
 
 # Targets:
@@ -122,6 +122,7 @@ TARGET=radzeit.herceg.de
       make(prepare-bbbike-dist-data) || \
       make(rsync)		     || \
       make(rsync-bbbike-data)	     || \
+      make(rsync-temp-blockings)     || \
       make(rsync-routopedia)	     || \
       make(clean-cache-files-on-remote)
 TARGET=radzeit
@@ -208,6 +209,10 @@ do-rsync-bbbike-data:
 post-rsync-bbbike-data:
 	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
 	   "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/miscsrc/winter_optimization.pl -one-instance &"
+
+rsync-temp-blockings:
+	${RSYNC} ${RSYNC_ARGS} \
+	    BBBike/data/temp_blockings/ ${RSYNC_DEST}/BBBike/data/temp_blockings/
 
 show-rsync-message:
 	-[ ! -e ${CURDIR}/.rsync_message ] && true || cat ${CURDIR}/.rsync_message
