@@ -5,63 +5,56 @@
 # $Id: shapefile.t,v 1.11 2004/01/04 11:34:54 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2004 Slaven Rezic. All rights reserved.
 #
 # Mail: slaven@rezic.de
 # WWW:  http://bbbike.sourceforge.net
 #
 
-use Test;
+use Test::More;
 
-BEGIN { plan tests => 4 }
-
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../..",
+	 "$FindBin::RealBin/../lib",
+	);
 use ESRI::Shapefile;
-use lib ("..", "../..");
 use BBBikeESRI;
 use File::Basename;
+use Strassen::Core;
+use File::Spec::Functions qw(abs2rel);
 
-my $arcviewfile = "/cdrom2/arcview/shapes/buf_grue.dbf";
-if (-r $arcviewfile) {
-    my $shapefile = new ESRI::Shapefile;
-    $shapefile->set_file("/cdrom2/arcview/shapes/buf_grue");
-    $shapefile->dump_bbd("/tmp/muenchen_gruen.bbd");
+my @files =
+    ("/cdrom2/arcview/shapes/buf_grue.dbf",
+     "/cdrom2/arcexplorer/aepdata/stpl_ges.dbf",
+     "$ENV{HOME}/src/bbbike/projects/radlstadtplan_muenchen/data_Muenchen_DE/radroute_muc",
+    );
+push @files, glob("$FindBin::RealBin/../../mapserver/brb/data/*.shp");
+
+@files = grep { -r $_ } @files;
+
+if (!@files) {
+    plan tests => 1;
     ok(1);
-} else {
-    skip("$arcviewfile missing",1);
+    diag("No shape files for testing found");
+    exit 0;
 }
 
-my $arcexplfile = "/cdrom2/arcexplorer/aepdata/stpl_ges.dbf";
-if (-r $arcexplfile) {
-    my $shapefile = new ESRI::Shapefile;
-    $shapefile->set_file("/cdrom2/arcexplorer/aepdata/stpl_ges");
-    $shapefile->dump_bbd("/tmp/muenchen_stpl.bbd", -dbfinfo => 'NAME');
-    ok(1);
-} else {
-    skip("$arcexplfile missing",1);
-}
+plan tests => 5 * scalar @files;
 
-$testdir = "$ENV{HOME}/src/bbbike/projects/radlstadtplan_muenchen/data_Muenchen_DE";
-if (-d $testdir) {
+for my $f (@files) {
     my $shapefile = new ESRI::Shapefile;
-    $shapefile->set_file("$testdir/radroute_muc");
-    $shapefile->dump_bbd("/tmp/muenchen.bbd");
-    ok(1);
-} else {
-    skip("$testdir missing",1);
-}
-
-$mapserverdir = "$ENV{HOME}/src/bbbike/mapserver/brb/data";
-if (-d $mapserverdir) {
-    for my $f (glob("$mapserverdir/*.shp")) {
-	print "# Check $f...\n";
-	$f =~ s/\.shp$//;
-	my $shapefile = new ESRI::Shapefile;
-	$shapefile->set_file($f);
-	$shapefile->dump_bbd("/tmp/" . basename($f));
-    }
-    ok(1);
-} else {
-    skip("$mapserverdir missing", 1);
+    $shapefile->set_file($f);
+    ok(UNIVERSAL::isa($shapefile->Main, "ESRI::Shapefile::Main"),
+       "main shp loaded from " . abs2rel($f));
+    ok(UNIVERSAL::isa($shapefile->Index, "ESRI::Shapefile::Index"),
+       "index loaded from " . abs2rel($f));
+    ok(UNIVERSAL::isa($shapefile->DBase, "ESRI::Shapefile::DBase"),
+       "dbase loaded from " . abs2rel($f));
+    my $bbd = $shapefile->as_bbd;
+    ok(length $bbd > 0, "Non empty bbd export");
+    my $s = Strassen->new_from_data(split /\n/, $bbd);
+    ok(scalar @{ $s->data } > 0, "Non empty Strassen::Core object");
 }
 
 __END__
