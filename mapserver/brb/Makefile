@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.1 2003/07/01 08:57:32 eserte Exp $
+# $Id: Makefile,v 1.2 2003/07/01 14:48:47 eserte Exp $
 #
 
 # XXX should not be necessary!
@@ -51,7 +51,15 @@ BBBIKE_MAPSERVER_URL=	http://radzeit.herceg.de/cgi-bin/mapserv
 
 .endif
 
-.if ${TARGET} == "local"
+.if ${TARGET} == "devpc01"
+ABS_LOCAL_BBBIKE_DIR=	/home/slavenr/work2/bbbike
+MAPSERVER_PROG_FSPATH=	/home/slavenr/work2/mapserver/mapserv.cgi
+# XXX port number or not?
+LOCAL_HOST=		localhost:8080
+FONTS_LIST=		fonts-devpc01.list
+.endif
+
+.if ${TARGET} == "local" || ${TARGET} == "devpc01"
 
 HOST=			$(LOCAL_HOST)
 MAPSERVER_DIR=		$(LOCAL_BBBIKE_DIR)/mapserver/brb
@@ -64,7 +72,7 @@ BBBIKE_HTML_RELURL=	/~eserte/bbbike/html
 BBBIKE_CGI_RELURL=	/~eserte/bbbike/cgi
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 IMAGE_SUFFIX=		png # was: gif
-FONTS_LIST=		fonts-vran.list
+FONTS_LIST?=		fonts-vran.list
 WWW_USER=		eserte
 TARGET_DIR=		${.CURDIR}
 
@@ -122,6 +130,7 @@ ALL_TPL_DEFINES=\
 	--define MAPSERVER_URL="$(MAPSERVER_URL)" \
 	--define MAPSERVER_PROG_RELURL="$(MAPSERVER_PROG_RELURL)" \
 	--define MAPSERVER_PROG_URL="$(MAPSERVER_PROG_URL)" \
+	--define MAPSERVER_PROG_FSPATH="$(MAPSERVER_PROG_FSPATH)" \
 	--define IMAGE_DIR="$(IMAGE_DIR)" \
 	--define BBBIKE_HTML_RELURL="$(BBBIKE_HTML_RELURL)" \
 	--define BBBIKE_URL="$(BBBIKE_URL)" \
@@ -190,7 +199,7 @@ maps:	${MAPFILES}
 
 html:	${HTMLFILES}
 
-misc:	crontab
+misc:	crontab httpd.conf
 
 Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile ${ABS_LOCAL_BBBIKE_DIR}/BBBikeVar.pm Makefile
 	rm $@
@@ -199,7 +208,7 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile ${ABS_LOCAL_BBBIKE_DIR}
 	echo "### DO NOT EDIT. Automatically created" >> $@
 .for makefile_var in $(ADD_MAKEFILE_VARS)
 	@echo -n "$(makefile_var)=	" >> $@
-	@make -f ${ABS_LOCAL_BBBIKE_DIR}/Makefile -V $(makefile_var) >> $@
+	@${MAKE} -f ${ABS_LOCAL_BBBIKE_DIR}/Makefile -V $(makefile_var) >> $@
 .endfor
 .for bbbikevar_var in $(ADD_BBBIKEVAR_VARS)
 	@echo -n "$(bbbikevar_var)=	" >> $@
@@ -208,7 +217,7 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile ${ABS_LOCAL_BBBIKE_DIR}
 	@echo -n "ALL_LAYERS=	" >> $@
 	perl -I${ABS_LOCAL_BBBIKE_DIR} -MBBBikeMapserver -e 'print join(" ", BBBikeMapserver::all_layers()), "\n"' >> $@
 
-.SUFFIXES:	.html-tpl .html .map-tpl .map .js-tpl .js
+.SUFFIXES:	.html-tpl .html .map-tpl .map .js-tpl .js .conf-tpl
 
 .html-tpl.html:	Makefile Makefile.${TARGET}.inc
 	tpage $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
@@ -219,6 +228,10 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile ${ABS_LOCAL_BBBIKE_DIR}
 	chmod ugo+r $@
 
 .map-tpl.map:	Makefile Makefile.${TARGET}.inc
+	tpage $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
+	chmod ugo+r $@
+
+.conf-tpl.conf:	Makefile Makefile.${TARGET}.inc
 	tpage $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 
@@ -267,6 +280,10 @@ crontab:	crontab.tpl Makefile
 	tpage $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 
+httpd.conf:	httpd.conf-tpl Makefile
+	tpage $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
+	chmod ugo+r $@
+
 ######################################################################
 # dists
 
@@ -293,7 +310,7 @@ dist-radzeit.herceg.de:	# build-all
 	cd $(RADZEIT_DIST_DIR) && $(MAKE) $(MAKEFLAGS) TARGET=radzeit.herceg.de
 
 rsync-radzeit:
-	[ ! -d $(RADZEIT_DIST_DIR) ] && ( echo Please execute make dist-radzeit first; false ) || true
+	[ ! -d $(RADZEIT_DIST_DIR) ] && ( echo Please execute ${MAKE} dist-radzeit first; false ) || true
 	cd $(RADZEIT_DIST_DIR) && rsync -Pvzrt . $(BBBIKE_RADZEIT_USER)@$(BBBIKE_RADZEIT_HOST):$(RADZEIT_APACHE_DIR)/htdocs/mapserver/brb/
 
 dist-spiff:

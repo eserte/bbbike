@@ -145,7 +145,7 @@
 <input type="hidden" name="orig_mode" value="[orig_mode]">
 <input type="hidden" name="orig_zoomdir" value="[orig_zoomdir]">
 
-<input type="hidden" name="imgxy" value="299.5 299.5">
+<input type="hidden" name="imgxy" value="[% IMGWIDTH / 2 %] [% IMGHEIGHT / 2 %]">
 <input type="hidden" name="imgext" value="[mapext]">
 <input type="hidden" name="savequery" value="true">
 <input type="hidden" name="imgsize" value="[mapsize]">
