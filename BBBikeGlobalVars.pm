@@ -186,7 +186,7 @@ use vars qw(%wetter_full $temperature %wind_colors $stderr $stderr_window
 	    $geometry $scaling $visual @max_extends);
 ### Fonts
 use vars qw(%font @font $font_family $fixed_font_family $font_size $font_weight
-	    $standard_height $use_font_rot);
+	    $standard_height $use_font_rot $label_font_size);
 ### Postscript
 use vars qw($ps_rotate $print_cmd $gv_reuse $ps_color $ps_scale_a4 $ps_fixed_font $print_backend);
 
