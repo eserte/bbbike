@@ -18,21 +18,11 @@ Legend:
 
 The -lazy option seems to cause a big memory leak.
 
-=item * (M5)
-
-relation_gps-orig aus insert_points herausnehmen? Ueberdenken...
-
 =item * (M3)
 
 last_loaded_streets muss komplizierter werden und den gesamten State
 beim Zeichnen der Datei enthalten (z.b. die Aufrufparameter von
 plot())
-
-=item * (H4)
-
-Acrobat Reader often shows an error message for
-BBBikeDraw/PDF.pm-created files. No problems with xpdf and other
-viewers.
 
 =item * (M2)
 
@@ -46,46 +36,10 @@ Ersteres könnte man machen, indem man einen Link bereitstellt, der das
 gleiche wie der submit-Button macht, nur mit Content-Disposition:
 attachment oder ähnlichem. Vielleicht nicht allzu schwer.
 
-=item * (M4)
-
-Use the :by and :temporary directives in the data files (ampeln
-already done). Change some files which are using this information
-(e.g. misc/Makefile). Write some tests for all kinds of directives
-(global, block, line, nested blocks and lines, errors)
-
-=item * (M3)
-
-Change convert_* to optionally not ignore directives and comments.
-Rewrite the misc/Makefile rule to use standard Strassen methods.
-
-=item * (E2)
-
-Mapinfo.pm converter: add new attributes Author, AcquireAuthor,
-CreationDate, AcquireDate (maybe better names for AcquireDate?) (from
-by directive), FromDate, ToDate (from temporary directive). Implement
-first the directive stuff above.
-
-New output scheme: create one mapinfo file per layer. Use real
-pen/symbol for lines.
-
-=item * (M3)
-
-All references to E<quot>commentsE<quot> should use the partial
-comments files instead. Maybe define a method with a list of the
-partial files in Strassen/Dataset. Add the partial comments files to
-the MANIFEST, remove the monolith comments from CVS and MANIFEST.
-Create new menu cascade Comments all and comment types; remove the
-comments cascade in the edit menu.
-
 =item * (M2)
 
 BBBikeXS, fast_plot_point: use main::get_symbol_scale() to get name of
 ampel/andreaskr/etc. images.
-
-=item * (M1)
-
-Convert the data/Makefile to data/Makefile.PL or similar (to solve
-problems like loops etc.).
 
 =item * (H2)
 
@@ -169,7 +123,9 @@ Unlimited Undo?
 =item * (M1)
 
 Optionen -auchumland und -nurberlin einführen: damit könnten einige
-Variablen wie wasserumland, landstr, orte etc. gesetzt werden
+Variablen wie wasserumland, landstr, orte etc. gesetzt werden.
+
+Aber wahrscheinlich sollte ich besser auf lazyplot setzen?
 
 =item * (H2)
 
@@ -178,7 +134,7 @@ unklar.
 
 =item * (M3)
 
-Mehr benutzerfreundliche Optionen (E<quot>Shortcutse<quot>) fE<uuml>r
+Mehr benutzerfreundliche Optionen (E<quot>ShortcutsE<quot>) fE<uuml>r
 die Suche: kE<uuml>rzeste Strecke, schnellste Strecke (in
 AbhE<auml>ngigkeit von Wind, Steigung/GefE<auml>lle,
 StraE<szlig>enoberflE<auml>che etc.),
@@ -269,54 +225,53 @@ E<quot>Mastering Perl/TkE<quot> verwenden.
 Rotierte Fonts: vielleicht ein Freetype-Modul schreiben, dafE<uuml>r
 eine Tk::Canvas-Erweiterung und diese in BBBike verwenden?
 
-=item *
-
-Wenn GD nicht installiert ist, sollte die gif-Datei gelE<ouml>scht
-werden und eine Fehlermeldung ausgegeben werden (wo? ptk-version?
-cgi?) XXX
-
 =item * (M1)
 
 VergrE<ouml>E<szlig>erung der Schrift beim Zoomen
 
-=item *
+=item * (E1)
 
-Speichern von Grafiken: Extension erzwingen (?), E<Uuml>berschreiben testen
-und verhindern
+Speichern von Grafiken: Extension erzwingen (oder wird das bereits
+gemacht?), E<Uuml>berschreiben testen und verhindern (oder wird das
+bereits gemacht?)
 
-=item *
+=item * (??)
 
-evtl. mit fork eine Warteschleife implementieren. Wenn es nicht mit
-Tk (threads!) geht, dann vielleicht mit X11::Protocol oder mit xterm?
+evtl. mit fork eine Warteschleife implementieren. Wenn es nicht mit Tk
+(threads!) geht, dann vielleicht mit X11::Protocol oder mit xterm? XXX
+Warteschleife?
 
-=item *
+=item * (H1)
 
 Kurzhilfe: kann man feststellen, ob man eine 2/3-Tastenmaus hat?
 
-=item *
+=item * (E2)
 
-Vielleicht Windchill-Temperatur zusE<auml>tzlich anzeigen.
+Vielleicht Windchill-Temperatur zusE<auml>tzlich anzeigen. See
+windchill program in bin/sh or devel.
 
-=item *
+New formula: L<http://www.nws.noaa.gov/om/windchill/>
+
+=item * (H1)
 
 Optimierung: Beim Ausschalten von Outline oder StraE<szlig>ennamen
 muE<szlig> nicht alles neu gezeichnet werden.
 
-=item *
+=item * (H2)
 
 Meta-Choose-Dialog, das alle Choose-Dialoge vereinigt. Vielleicht
 Tk::SmartListbox verwenden?
 
-=item *
+=item * (M3)
 
 wettermeldung2 mit fork/spawn/threads aufrufen
 
-=item *
+=item * (H3)
 
 Neue Version von wettermeldung2 schreiben, die SYNOP-Information
 verwendet.
 
-=item *
+=item * (M4)
 
 Wenn wE<auml>hrend eines WWW-Fetches die Verbindung gekappt wird,
 hE<auml>ngt BBBike vollkommen. Gesehen bei Win32. Vielleicht mit
@@ -326,7 +281,9 @@ Leider ist das Event-Handling noch inkompatibel mit Tk. Auch fE<uuml>r
 wettermeldung2 mit LWPng arbeiten. =E<gt> Vielleicht das hochgelobte
 POE verwenden.
 
-=item *
+Stimmt das noch immer, auch mit Http.pm?
+
+=item * (M2)
 
 FE<uuml>r das Drucken von Text: evtl. auch Netscape und print-Methode
 verwenden (?). FE<uuml>r Unix kE<ouml>nnte man eine start netscape,
@@ -335,24 +292,24 @@ Netscape kE<ouml>nnte man auch zum Mailabschicken verwenden,
 E<uuml>ber mailto. Evtl. ein Modul fE<uuml>r Netscape schreiben,
 daE<szlig> die ganzen remote-Kommandos verwendet. Hier eine Liste:
 
-%s: usage: OpenURL(url [ , new-window|window-name ] )
-%s: usage: OpenFile(file)
-%s: usage: print([filename])
-%s: usage: SaveAS(file, output-data-type)
-%s: usage: SaveAS(file, [output-data-type])
-%s: usage: mailto(address ...)
-%s: usage: find(string)
-%s: usage: addBookmark(url, title)
-%s: usage: htmlHelp(map-file, id, search-text)
+ %s: usage: OpenURL(url [ , new-window|window-name ] )
+ %s: usage: OpenFile(file)
+ %s: usage: print([filename])
+ %s: usage: SaveAS(file, output-data-type)
+ %s: usage: SaveAS(file, [output-data-type])
+ %s: usage: mailto(address ...)
+ %s: usage: find(string)
+ %s: usage: addBookmark(url, title)
+ %s: usage: htmlHelp(map-file, id, search-text)
 
 Mit Xprt fE<uuml>r X11 experimentieren (doc lesen).
 
-=item *
+=item * (H1)
 
 Ein LightWeight-Modul (CanvasMap) schreiben. Vielleicht irgendwann
 alles auf dieses Modul umschreiben.
 
-=item *
+=item * (H1)
 
 PerlPlusPlugin ausprobieren und BBBike dafE<uuml>r portieren. Sachen,
 die mir dafE<uuml>r einfallen: Ich brauche ein open(), das E<uuml>ber
@@ -366,11 +323,11 @@ hyperrequire. Z.B.
 
 Irgendwo habe ich so etwas schon implementiert gesehen ... suchen!
 
-=item *
+=item * (M2)
 
 Bei einem Resize muE<szlig> auch das Progress-Canvas angepasst werden.
 
-=item *
+=item * (H1)
 
 BBBikeContext.pm schreiben: gibt alles aus, was ich so brauche: $os,
 Strassen-Objekte, Crossings, Netze etc. Caching bei Belieben
@@ -379,27 +336,14 @@ durchgE<auml>ngig mit Methoden. AutoLoading verwenden.
 
 =E<gt> Teilweise erledigt BBBikeRouting.pm einige dieser Sachen...
 
-=item *
-
-Folgende Radwege in der Landsberger Chaussee kE<ouml>nnen nicht
-dargestellt werden, weil sich die StraE<szlig>e in landstrassen-orig
-und nicht in strassen-orig befindet.
-
-14389,5916	14348,5906	radweg	radweg
-14545,5953	14389,5916	radweg	radweg
-14844,6029	14545,5953	radweg	pflicht
-15283,6150	14844,6029	radweg	pflicht
-
-=E<gt> radwege_l anlegen?
-
-=item *
+=item * (H1)
 
 Speicheroptimierung.
 
 Folgende Symbole kommen im Dump von Devel::Symdump vor und
 bedE<uuml>rfen KlE<auml>rung (warum, woher, benE<ouml>tigt?):
 
-    * English::*
+    * English::* => in irgendeinem Tk-Modul
     * DB::args
     * Tk::Pretty::*
     * re::*
@@ -412,7 +356,7 @@ Ein minimales System kann auf Folgendes verzichten:
     * Devel::Peek::*
     * EasySound::*
     * Karte::Berlinmap1997::*
-    * Karte::Berlinmap1999::*
+    * Karte::Berlinmap1999::* und weitere
     * wettermeldung2::*
     * BSD::Resource::*
     * Hyper::*
@@ -429,41 +373,21 @@ Evtl. auch:
     * Tk::SRTProgress::*
     * Tk::UnderlineAll::*
 
-=item *
+=item * (H1)
 
 3D-Darstellung von Berlin (z.B. vier versetzte FlE<auml>chen, die
 oberste in der Hintergrundfarbe und die anderen in der Schattenfarbe).
 
-=item *
+=> Wo verwenden: overview-Fenster, overview-Button oder im CanvasMap
+anstelle der normalen Grenzen?
 
-bbbike.cgi: Eine "Neu"-Subroutine, die jeweils die neuen Features der
-Version anzeigt. Vielleicht auch eine "Neu"-History, die automatisch
-aus den alten EintrE<auml>gen oder aus dem RCS-Log aufgebaut wird?
-
-=item *
-
-Cgiinfo in cgi2.t funktioniert leider nicht, weil openURL als zweiten
-Parameter nur true oder false zulE<auml>E<szlig>t. Workaround:
-Schreiben eines Multiplexers, der per Javascript neue Fenster
-E<ouml>ffnet.
-
-=item *
-
-Soll ich mit Scopes arbeiten? Scopes wE<auml>ren: Berlin, Brandenburg,
-jwd und wE<uuml>rden sich auf StraE<szlig>en, Orte und GewE<auml>sser
-beziehen. 
-
-=item *
-
-Kann ich mapserv irgendwie einsetzen?
-
-=item *
+=item * (H5)
 
 Bike+Ride integrieren. Das wE<uuml>rde in eine unterbrochene Route
-resultieren, deren Fahrzeiten addiert wE<uuml>rden. ZusE<auml>tzlich kE<auml>me noch
-eine abgeschE<auml>tzte Zeit fE<uuml>r die Benutzung des Verkehrsmittels (Fahrzeit
-+ Zusteigzeit + Umsteigezeiten). Eine Verbindung zu Fahrinfo wE<auml>re
-genial.
+resultieren, deren Fahrzeiten addiert wE<uuml>rden. ZusE<auml>tzlich
+kE<auml>me noch eine abgeschE<auml>tzte Zeit fE<uuml>r die Benutzung
+des Verkehrsmittels (Fahrzeit + Zusteigzeit + Umsteigezeiten). Eine
+Verbindung zu Fahrinfo wE<auml>re genial.
 
 =item *
 
@@ -1084,6 +1008,40 @@ L<http://www.wirtschaft.brandenburg.de/sixcms/media.php/1312/broschurrad.pdf>
 
 =back
 
+=head2 Datenhandling (make, conversion ...)
+
+=over
+
+=item * (M1)
+
+Convert the data/Makefile to data/Makefile.PL or similar (to solve
+problems like for loops etc.).
+
+=item * (M3)
+
+All references to E<quot>commentsE<quot> should use the partial
+comments files instead. Maybe define a method with a list of the
+partial files in Strassen/Dataset. Create new menu cascade Comments
+all and comment types (partially done in bbbike).
+
+=item * (M5)
+
+relation_gps-orig aus insert_points herausnehmen? Ueberdenken...
+
+=item * (M4)
+
+Use the :by and :temporary directives in the data files (ampeln
+already done). Change some files which are using this information
+(e.g. misc/Makefile). Write some tests for all kinds of directives
+(global, block, line, nested blocks and lines, errors)
+
+=item * (M3)
+
+Change convert_* to optionally not ignore directives and comments.
+Rewrite the misc/Makefile rule to use standard Strassen methods.
+
+=back
+
 =head2 Verschiedenes
 
 =over
@@ -1313,7 +1271,37 @@ leaving the entry.
 
 =back
 
-=head1 Modules (Strassen/ESRI/...)
+=head1 Modules
+
+=head2 BBBikeDraw
+
+=over
+
+=item * (H4)
+
+Acrobat Reader often shows an error message for
+BBBikeDraw/PDF.pm-created files. No problems with xpdf and other
+viewers.
+
+=back
+
+=head2 Strassen and Strassen-related
+
+=over
+
+=item * (E2)
+
+Mapinfo.pm converter: add new attributes Author, AcquireAuthor,
+CreationDate, AcquireDate (maybe better names for AcquireDate?) (from
+by directive), FromDate, ToDate (from temporary directive). Implement
+first the directive stuff above.
+
+New output scheme: create one mapinfo file per layer. Use real
+pen/symbol for lines.
+
+=back
+
+=head2 Other
 
 =over
 
@@ -1365,6 +1353,15 @@ AbhE<auml>ngigkeit von HAVE_KDE angeben.
 =head1 Tests
 
 =over
+
+=item * (M2)
+
+Cgiinfo in cgi2.t funktioniert leider nicht, weil openURL als zweiten
+Parameter nur true oder false zulE<auml>E<szlig>t. Workaround:
+Schreiben eines Multiplexers, der per Javascript neue Fenster
+E<ouml>ffnet.
+
+=item *
 
  ... reveals problems if started first time without any cache files ---
  many warnings, sometimes even coredumps on RedHat (?). The 2nd pass is
