@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.20 2004/02/16 01:59:51 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.21 2004/05/10 21:46:04 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -618,6 +618,11 @@ mangle:
 		-exec mv {} {}~ \; \
 		-exec perltidy -t -mangle -dac -dp {}~ -o {} \; \
 		-exec rm -f {}~ \;
+
+permission:
+	perl -MExtUtils::Manifest=maniread -le 'print join "\n", sort keys %{ maniread("MANIFEST") }' | xargs chmod ugo+r
+	chmod ugo+rx bbbike cgi/*.cgi
+	chmod ugo+r cgi/*.config
 
 EOF
 ;
