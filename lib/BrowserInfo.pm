@@ -264,6 +264,10 @@ sub set_info {
 	    my($w, $h) = ($ENV{HTTP_DEVICE_WIDTH}, $ENV{HTTP_DEVICE_HEIGHT});
 	    $w -= $vert_scrollbar_space;
 	    $self->{'display_size'} = [$w, $h];
+	} elsif (defined $ENV{HTTP_EZOS_UA_PIXELS} && $ENV{HTTP_EZOS_UA_PIXELS}	=~ /screen(\d+)*(\d+)/) {
+	    my($w, $h) = ($1, $2);
+	    $w -= $vert_scrollbar_space;
+	    $self->{'display_size'} = [$w, $h];
 	} elsif ($q->user_agent('portalmmm')) {
 	    $self->{'display_size'} = [120,120]; # minimum size, newer imode devices have larger displays
 	} elsif ($self->{'mobile_device'}) {
