@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Kreuzungen.pm,v 1.9 2003/11/15 14:27:53 eserte Exp $
+# $Id: Kreuzungen.pm,v 1.10 2004/01/13 19:53:07 eserte Exp eserte $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -27,7 +27,7 @@ sub new {
     my $self = {};
     my $rettype = 'hash';
     my $usecache = defined $args{UseCache} ? $args{UseCache} : 1;
-    my $kurvenpunkte = defined $args{Kurvenpunkte} ? $args{Kurvenpunkte} : 0;
+    my $all_points = $args{AllPoints} || $args{Kurvenpunkte} || 0;
     if (!exists $args{Hash}) {
 	die "Missing arg for new Kreuzungen: either Hash or Strassen"
 	    if !exists $args{Strassen};
@@ -35,7 +35,7 @@ sub new {
 	    $rettype .= "pos";
 	}
 	my($kreuzungen_ref) = $args{Strassen}->all_crossings
-	    (RetType => $rettype, Kurvenpunkte => $kurvenpunkte,
+	    (RetType => $rettype, AllPoints => $all_points,
 	     UseCache => $usecache);
 	$args{Hash} = $kreuzungen_ref;
     }
@@ -192,7 +192,7 @@ sub nearest {
     my $use_cache = delete $args{UseCache};
     my $best_only = delete $args{BestOnly};
     $self->make_grid(UseCache => $use_cache) if (!$self->{Grid});
-    my $xy = join(",", $x, $y);
+    my $xy = "$x,$y";
     my $grids = $args{Grids} || 1;
 #   my $distance = $args{Distance};
 # XXX distance wird noch ignoriert
@@ -207,7 +207,7 @@ sub nearest {
 	    for my $yy (@grid_sequence) {
 		next if (exists $seen_combination{"$xx,$yy"});
 		$seen_combination{"$xx,$yy"} = 1;
-		my $s = join(",", $gridx+$xx, $gridy+$yy);
+		my $s = ($gridx+$xx) . "," . ($gridy+$yy);
 		if (defined $self->{Grid}{$s}) {
 		    push @res, @{$self->{Grid}{$s}};
 		}

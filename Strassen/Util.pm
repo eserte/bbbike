@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.14 2003/12/22 19:47:50 eserte Exp $
+# $Id: Util.pm,v 1.15 2004/01/13 19:51:59 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -374,7 +374,8 @@ sub get_from_cache {
     warn "Using $cache_func_found for reading.\n" if $VERBOSE;
 
     if (!_valid_cache($cachepath, $srcref)) {
-	warn "Cache file $cachepath is not valid.\n" if $VERBOSE;
+	warn "Cache file $cachepath is not valid.
+Checked against @$srcref.\n" if $VERBOSE;
 	return undef;
     }
 

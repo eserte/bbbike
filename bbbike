@@ -4755,6 +4755,7 @@ sub define_item_attribs {
 	 'P0' => 1,
 	 'PI' => 1,
 	);
+    # Label size per category
     %category_size =
 	('N'  => 8,
 	 'NN' => 7,
@@ -5484,9 +5485,10 @@ EOF
 			       -tags => "$abk-bg");
 	    } elsif ($abk =~ /^L(\d+)/) {
 		my $color = $category =~ /^\#/ ? $category : exists $category_color{$category} ? $category_color{$category} : undef;
+		my $width = $category_width{$category} || 6;
 		$c->createLine($x, $y, $x, $y,
 			       (defined $color ? (-fill => $color) : ()),
-			       -width => 3,
+			       -width => $width,
 			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "p-" . ($i-1), "L-fg"]);
 	    } elsif ($abk =~ /^(kn|ki|rest)$/) {
 		$c->createImage($x, $y,
@@ -5498,11 +5500,12 @@ EOF
 			       -anchor => "w", # XXX
 			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . ($i-1)]);
 	    } else {
-		# ansonsten gleich mit fetten Punkt zeichnen
-		my $color = $category =~ /^\#/ ? $category : 'red';
+		# Else draw a generic point (broad, color from cat)
+		my $color = $category_color{$category} || ($category =~ /^\#/ ? $category : 'red');
+		my $width = $category_width{$category} || 6;
 		$c->createLine($x, $y, $x, $y,
 			       -fill => $color, -capstyle => 'round',
-			       -width => 6,
+			       -width => $width,
 			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . ($i-1)]);
 	    }
 	    if ($name_draw) {
@@ -7718,6 +7721,10 @@ sub plotstr {
 	delete $str_file{$abk}; # XXX -orig?
     }
 
+    if (defined $filename && -e "$filename.desc") {
+	require BBBikeAdvanced;
+	read_desc_file("$filename.desc");
+    }
 
     # Radwege werden im Edit-Modus besser mit radweg_draw_canvas() gezeichnet
     if ($abk eq 'rw' and $coord_system ne 'standard') {
@@ -7858,7 +7865,7 @@ sub plotstr {
 	$category_color{Z} = '#9e9e9e';
     }
 
-    my %category_width;
+    my %category_width; # XXX the global category_width is ignored!!! should be changed
     my $default_width = get_line_width($abk) || 4;
     if (defined $args{Width}) { $default_width = $args{Width} }
     {
@@ -8533,7 +8540,7 @@ sub plot_symbol {
   	eval {
   	    $c->itemconfigure($tag_fg,
   			      -capstyle => $capstyle_round,
-  			      -width => 6);
+			     );
   	}; warn $@ if $@;
     } elsif ($abk eq 'pl') {
 	$c->itemconfigure($tag_fg, -fill => 'red', -capstyle => 'projecting',
@@ -8586,6 +8593,11 @@ sub plot_point {
     }
     if (!$p_draw{$abk}) {
 	return;
+    }
+
+    if (-e "$filename.desc") {
+	require BBBikeAdvanced;
+	read_desc_file("$filename.desc");
     }
 
     # XXX $ignore code fehlt noch...
@@ -8736,6 +8748,7 @@ sub choose_ort {
     my $nodraw = $args{-nodraw};
     my $ondestroy = $args{-ondestroy};
     my $additionalframe = $args{-additionalframe};
+    my $sorted = exists $args{-unsorted} ? !$args{-unsorted} : 1;
 
     unless ($nodraw) {
 	if ($linetype =~ /^s/) {
@@ -8781,12 +8794,12 @@ sub choose_ort {
 	    delete $toplevel{"chooseort-$type-$linetype"};
 	}
 
-	if (!defined $K2Listbox) {
-	    $K2Listbox = 'Listbox';
+	my $Listbox = "Listbox";
+	if (!defined $K2Listbox && $sorted) {
 	  TRYLISTBOX: {
 	      foreach my $try (qw(K2Listbox KListbox WListbox)) {
 		  if (eval q{ require Tk::} . $try . q{; 1;} && !$@) {
-		      $K2Listbox = $try;
+		      $K2Listbox = $Listbox = $try;
 		      last TRYLISTBOX;
 		  } else {
 		      warn "Can't use module Tk::$try: $@";
@@ -8849,7 +8862,7 @@ sub choose_ort {
 	    }
 
 	    my $lb;
-	    if ($K2Listbox =~ /^K.*Listbox/ and $Tk::VERSION >= 800) {
+	    if ($Listbox =~ /K.*Listbox/ && $Tk::VERSION >= 800) {
 	        my $c = $t->Canvas(-takefocus => 0)->pack;
 		my $x = 1;
 		for ('A'..'Z') {
@@ -8876,13 +8889,14 @@ sub choose_ort {
 			     $c->itemconfigure('current', -fill => 'black');
 			 });
 	    }
-	    $lb = $t->Scrolled($K2Listbox,
+	    $lb = $t->Scrolled($Listbox,
 			       -scrollbars => 'osoe',
 			       -selectmode => 'single',
 			      )->pack(-expand => 1, -fill => 'both');
 	    $t->Advertise(Listbox => $lb->Subwidget("scrolled"));
 
 	    my %orte;
+	    my @orte;
 	    my $object;
 	    if ($type eq 'p') {
 		my @haltestellen;
@@ -8960,16 +8974,24 @@ sub choose_ort {
 		}
 	    }
 
-	    # XXX maybe use Sort::Naturally? speed issues?
-	    my $tf_sub = (defined &Win32Util::sort_cmp_hack_transform &&
-			  $os eq 'win'
-			  ? sub { Win32Util::sort_cmp_hack_transform($_[0]) }
-			  : sub { $_[0] });
-	    $lb->insert('end',
-			map { $_->[1] }
-			sort { $a->[0] cmp $b->[0] }
-			map { [ do { /^\(?(.*)/; $tf_sub->($1) }, $_] }
-			keys %orte);
+	    if (!$sorted) {
+		$lb->insert('end',
+			    map { $_->[1] }
+			    sort { $a->[0] <=> $b->[0] }
+			    map { [$orte{$_}, $_] }
+			    keys %orte);
+	    } else {
+		# XXX maybe use Sort::Naturally? speed issues?
+		my $tf_sub = (defined &Win32Util::sort_cmp_hack_transform &&
+			      $os eq 'win'
+			      ? sub { Win32Util::sort_cmp_hack_transform($_[0]) }
+			      : sub { $_[0] });
+		$lb->insert('end',
+			    map { $_->[1] }
+			    sort { $a->[0] cmp $b->[0] }
+			    map { [ do { /^\(?(.*)/; $tf_sub->($1) }, $_] }
+			    keys %orte);
+	    }
 
 	    eval {
 		$lb->Cache(1);

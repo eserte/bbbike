@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.8 2004/01/11 13:47:35 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.9 2004/01/13 18:31:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -1304,25 +1304,6 @@ sub BBBikeHeavy::reload_all {
 	    $change{"p"}->{$type} = 1;
 	}
     }
-#XXX del:
-#      my %change;
-#      foreach my $file (keys %old_mtime) {
-#  	if ($old_mtime{$file} < (stat($file))[STAT_MODTIME]) {
-#  	    my($linetype, $type) = @{$mtime_file_type{$file}}[0, 1];
-#  	    if (($linetype eq 'str' and $str_draw{$type}) or
-#  		($linetype eq 'p'   and $p_draw{$type})) {
-#  		$change{$linetype}->{$type} = 1;
-#  	    }
-#  	    if ($BBBikeExp::mode) {
-#  		if ($linetype eq 'str' && $str_obj{$type}) {
-#  		    $str_obj{$type}->reload;
-#  		} elsif ($linetype eq 'p' && $p_obj{$type}) {
-#  		    $p_obj{$type}->reload;
-#  		}
-#  	    }
-#  	}
-#      }
-
     return if ($BBBikeExp::mode);
 
     $progress->InitGroup;

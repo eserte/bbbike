@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.86 2004/01/10 22:36:21 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.87 2004/01/13 18:32:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2003 Slaven Rezic. All rights reserved.
@@ -212,6 +212,7 @@ sub read_desc_file {
     my $abk = shift;
     @BBBike::ExtFile::scrollregion = ();
     if (-r $desc_file && -f $desc_file) {
+	warn "Read $desc_file...\n" if $verbose;
 	require Safe;
 	#XXX problems!
 	#require Symbol;
@@ -221,12 +222,13 @@ sub read_desc_file {
 	    $BBBike::ExtFile::abk = $BBBike::ExtFile::abk = $abk;
 	}
 	# $str_attrib and $p_attrib should be used in favour of
-	# %str_attrin and %p_attrib
+	# %str_attrib and %p_attrib
 	my @shared_symbols =
-	    qw(%line_width %str_color
-	       %line_length %category_size %outline_color
-	       %str_attrib %p_attrib %category_color
+	    qw(%line_width %line_length
+	       %str_color  %outline_color
+	       %str_attrib %p_attrib
 	       $str_attrib $p_attrib
+	       %category_size %category_color %category_width
 	      );
 	$compartment->share(@shared_symbols);
 	$compartment->rdo($desc_file);
@@ -1623,9 +1625,19 @@ sub reload_new_modules {
 		close SAVEMAIN;
 		print STDERR "Reloading main...\n";
 		eval { do $tmpfile };
-		warn "*** $@" if $@;
-		## Don't delete to track errors easier...
-		#unlink $tmpfile;
+		if (!$@) {
+		    unlink $tmpfile;
+		    if ($verbose) {
+			warn "Re-call some functions in main script...\n";
+		    }
+		    eval {
+			generate_plot_functions();
+			set_bindings();
+		    };
+		    warn $@ if $@;
+		} else {
+		    warn "*** Found errors: $@";
+		}
 	    } else {
 		warn "Can't write to $tmpfile: $!";
 	    }

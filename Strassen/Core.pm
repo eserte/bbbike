@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.30 2003/11/15 14:28:23 eserte Exp eserte $
+# $Id: Core.pm,v 1.31 2004/01/13 18:33:56 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.31 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -616,6 +616,9 @@ sub all_crossings {
     my $min_strassen = ($all_points ? 1 : 2);
 
     if (!defined $rettype) { $rettype = 'array' }
+    if ($rettype !~ /^(array|hash)(pos)?$/) {
+	die "Wrong RetType $rettype";
+    }
     my $basename = $self->id;
     my $cachefile = "all_crossings_${basename}_$rettype";
     if ($all_points) {
