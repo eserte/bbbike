@@ -971,4 +971,12 @@ EOF
 userdel	q4; 6698,8385 6990,8685 7009,8705 7201,8870 7275,8960
 EOF
      },
+     { from  => 1097618400, # 2004-10-13 00:00
+       until => 1097964000, # 2004-10-17 00:00
+       text  => 'L 33; (Berliner Str.); OL Altlandsberg Vollsp. Vollsperrung 14.10.2004-16.10.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 32100,18012 31887,17453
+EOF
+     },
     );

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.20 2004/10/02 16:04:57 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.20 2004/10/02 16:04:57 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -303,7 +303,7 @@ sub create_mapfile {
 		warn "Cmd: @cmd" if $self->{DEBUG};
 		system @cmd;
 		if ($?) {
-		    die "Error while doing @cmd";
+		    die "Error ($?) while doing @cmd";
 		}
 	    }
 
@@ -321,7 +321,7 @@ sub create_mapfile {
 	    warn "Cmd: @cmd" if $self->{DEBUG};
 	    system @cmd;
 	    if ($?) {
-		die "Error while doing @cmd";
+		die "Error ($?) while doing @cmd";
 	    }
 	    # last $map_path is the start map
 	}
