@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.16 2004/07/21 23:59:30 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.16 2004/07/21 23:59:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -650,7 +650,7 @@ sub BBBikeHeavy::getmap {
 
     my $too_big = sub {
 	if ($newwidth > 1400 || $newheight > 1000) {
-	    status_message("Die Karte zu groß ($newwidth x $newheight) und wird nicht angezeigt", "warn");
+	    status_message("Die Karte zu groß ($newwidth x $newheight) und wird nicht angezeigt", "info");
 	    return 1;
 	}
 	0;
@@ -737,7 +737,7 @@ sub BBBikeHeavy::getmap {
 	if ($@ || !defined $map_img) {
 	    $map_img = $convert_image->($filename);
 	}
-	if (!defined $map_img) {
+	if (!defined $map_img && $@ !~ /too big/) {
 	    status_message($@, 'warn');
 	    $map_draw = 0;
 	    return;

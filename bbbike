@@ -8369,7 +8369,7 @@ if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->po
 	    }
 	}
 
-	if (($edit_mode || $edit_normal_mode || $abk eq 'relgps') and !$diffed_str) {
+	if (($edit_mode || $edit_normal_mode || $abk eq 'relgps' || $args{FastUpdate}) and !$diffed_str) {
 	    warn "Try to copy original data" if $verbose;
 	    my $r = $str->copy_orig;
 	    warn "Returned $r" if $verbose;
@@ -8491,7 +8491,8 @@ sub plot_sperre {
 	my $diffed_str = 0;
 	my $str = $gesperrt;
 	#XXX Abfrage auf $edit_mode notwendig?
-	if (($edit_mode || $edit_normal_mode) && $args{FastUpdate}) {
+	if (#XXX del: ($edit_mode || $edit_normal_mode) &&
+	    $args{FastUpdate}) {
 	    my($new_str, $todelref) = $str->diff_orig(-clonefile => 1);
 	    if (!defined $new_str) {
 		warn M("Diff-Ausgabe wird nicht verwendet") if $verbose;
@@ -8657,7 +8658,7 @@ sub plot_sperre {
 	    }
 	}
 
-	if (($edit_mode || $edit_normal_mode) and !$diffed_str) {
+	if (($edit_mode || $edit_normal_mode || $args{FastUpdate}) and !$diffed_str) {
 	    warn "Try to copy original data" if $verbose;
 	    my $str = $gesperrt;
 	    my $r = $str->copy_orig;
@@ -10021,7 +10022,13 @@ sub choose_from_plz {
 sub get_orte_label_font {
     my($category, $is_overview_canvas) = @_;
     my $base_index = 0;
-    $base_index = 1 if $scale >= 3 && !$is_overview_canvas;
+    if (!$is_overview_canvas) {
+	if ($scale >= 6) {
+	    $base_index = 2;
+	} elsif ($scale >= 3) {
+	    $base_index = 1;
+	}
+    }
     my $font;
     # This should handle the range MIN_ORT_CAT .. MAX_ORT_CAT:
     if      ($category <= 2) {
@@ -10108,7 +10115,8 @@ sub plotorte {
 	my $progress_hack = ($name_o && $no_overlap_label{$type});
 
 	my $diffed_orte = 0;
-	if (($edit_mode || $edit_normal_mode) && $args{FastUpdate}) {
+	if (#XXX del? ($edit_mode || $edit_normal_mode) &&
+	    $args{FastUpdate}) {
 	    my($new_orte, $todelref) = $orte->diff_orig(-clonefile => 1);
 	    if (!defined $new_orte) {
 		warn "Not using diff output" if $verbose;
@@ -15020,6 +15028,10 @@ sub menu_entry_choose_ort {
 	       -command => sub { undef $p_obj{$abk};
 				 plot_point($abk);
 			     });
+	    $menu->command
+	      (-label => Mfmt("Schnelles Update der %s",
+			      $p_attrib{$abk}->[ATTRIB_PLURAL]),
+	       -command => sub { plot('p',$abk, FastUpdate => 1); });
 	    $menu->command
 	      (-label => "Lazy drawing",
 	       -command => sub {

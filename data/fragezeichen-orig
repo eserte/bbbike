@@ -160,7 +160,7 @@ Beisheim-Center/Park: befahrbar, Name?	? 8490,11526 8326,11732
 zwischen Tierpark und Bahntrasse: Weg Q2, geht es weiter in Richtung Norden/Osten?	? 18690,10016 19641,10476 19734,10690 19713,10880
 Am Rummelsburger See: abfahren	? 15129,9806 15223,10072 15321,10099 15261,10167 14854,10444 14905,10583 15100,10639 15459,10408 15526,10234 15760,9988 16004,10204
 Oberspreestr. - Grünauer: evtl. lohnende Diagonale	? 20949,4775 21091,4154 21132,4184 21325,3644 21350,3526 21840,3144 21951,3189
-Aßmannstr.: Qualität für den abknickenden Teil; können Radfahrer gegen die Einbahnstr. fahren?	? 25030,5307 25039,5766
+Aßmannstr.: Qualität für den abknickenden Teil (möglicherweise asphaltiert?); können Radfahrer gegen die Einbahnstr. fahren?	? 25030,5307 25039,5766
 Charlotte-E-Pauly-Str.: Qualität?	? 25030,5307 25024,4833
 Stinggraben und See	? 1584,39467 1930,39739 1864,40227 2186,40991 2056,41586 1860,42350
 Esplanade - Grüntaler Str.: angeblich existiert eine Verbindung?	? 9984,16968 9811,17016
@@ -261,9 +261,7 @@ IKEA-Zufahrt checken, Sachsendamm passierbar?	? 8229,7154 8204,6958
 Bosestr. und Verlängerung befahrbar?	? 8181,6341 8680,6322
 Wetzlarer Str (Potsdam): Qualität etc.	? -9306,-4259 -9646,-4906 -9975,-5578
 Cremzow - Wallmow: dem Anschein nach (von Cremzow aus) ein Feldweg Q2	? 51339,106155 54624,105031
-Glambeck - Steinhöfel: Qualität etc.	? 39790,73115 40076,73677 40433,73845 40538,74349 41230,76426 40965,77012
-Steinhöfel - Stegelitz: Qualität etc.	? 40733,77232 40601,78230 40223,78943 39950,79048 39887,79845 39573,80349 39573,80747 39303,80853
-Glambeck - Wolletz - Blumberger Mühle: Qualität etc.	? 37405,68989 39782,69398 43109,69459 44775,70174 45761,70992
+Glambeck - Wolletz - Blumberger Mühle: Qualität etc.	? 37368,68987 39782,69398 43109,69459 44775,70174 45761,70992
 Blumberger Mühle - Gorlsdorf: Qualität etc.	? 45761,70992 45584,72614
 Peetzig - Steinhöfel: Qualität etc.	? 44200,74890 42992,76027 41901,77034 41472,77229
 Prenzlau: Uckersee - B109: Qualität? Name der Straße?	? 39662,100778 39800,101031 39889,101084
@@ -351,6 +349,7 @@ Fredersdorf - Polßen: laut "Regio-Cart" gut geeignet	? 51500,85425 51112,85637 5
 Zichow - Lützlow: Qualität (wahrscheinlich schlecht)?	? 52049,88323 52387,90362 52461,90659 51925,91912 52012,92300 51762,92675
 Gramzow (Ost): Durchfahrt möglich? Qualität?	? 50210,89678 50201,90483 50183,90669
 Angermünde - Mürow: laut "Regio-Cart" gut geeignet	? 49725,69331 50600,70525 50600,71150 52003,72761
+Mürow - Henriettenhof: Qualität?	? 52003,72761 53612,69769 54031,69280
 Mürow - Grünow: laut "Regio-Cart" gut geeignet	? 52003,72761 52112,73687 51887,73912 52087,74725 52637,75412 54887,78437 54930,78757 54332,80590
 Biesenbrow - Passow: laut "Regio-Cart" gut geeignet	? 50477,80139 50650,79712 51975,78362 52712,79112 54332,80590 55200,80962 56977,82763
 Pinnow - Frauenhagen: laut "Regio-Cart" gut geeignet	? 55594,73546 55625,73837 55287,73875 55300,74112 55075,74062 53687,74900 52637,75412 52331,75777
@@ -436,3 +435,16 @@ Oderdeich: Qualität (vermutlich gut?)?	? 57813,49341 58325,49275 58312,48812 584
 Criewen - Schwedt: Qualität (vermutlich gut?)?	? 65350,68350 66562,70062 67262,71187 68312,72287 68150,72665
 Falkenberg - Liepe: Qualität (vermutlich nur mäßig?)?	? 48475,46175 48425,46625 48662,47600 49237,48087 49400,48437 49750,48625 49912,48925
 Zepernicker Landweg: Qualität (vermutlich mäßig bis schlecht?)?	? 22195,32466 22528,32937 22540,33318
+Crossiw - Gellmersdorf: Qualität?	? 55045,66286 54925,64862 54700,64125 54787,63762 54700,63500
+Gellmersdorf - Lüderitz: Qualität?	? 54874,63371 54975,63187 54712,63012 54662,62850 55100,61175 55462,60387 55443,60071
+Pinnow - Schönermark: Qualität?	? 55300,74112 54837,75112 54975,75812 54875,76587 54887,78437
+Nach Lützlow: Qualität (voraussichtliche Betonweg?)?	? 54005,92771 53275,93087 52900,93012 52103,93487
+Grillenweg: Qualität? Stimmt der Straßen/Wegname? Ausschilderung vorhanden? nachts beleuchtet?	? 24206,5583 24025,5884 23956,5931 23967,6011
+Str. 125a in "Kleine Usedomstr." umbenannt? Siehe auch http://www.pds-fraktion-treptow-koepenick.de/drucksache-5-908.html. Jupiterstr./Altglienicke aus der Datenbank herausnehmen.	? 19550,996 19618,1206
+Umbenenunng zu "Zu den Gosener Bergen"? Siehe http://www.pds-fraktion-treptow-koepenick.de/drucksache-5-871.html	? 30640,-2803 30721,-2321
+Casekow - Luckow: Qualität?	? 63246,90760 63800,91275 63362,92337 63712,93412 63938,93631
+Luckow - Petershagen: Qualität?	? 63938,93631 65825,93937 66468,94268
+Petershagen - Penkun: Qualität?	? 66587,93937 66468,94268 66575,94387 66312,94862 66250,95800 65112,98837 65312,99387 65237,99575 65135,99977
+Luckow - Penkun: Qualität?	? 63938,93631 64150,94312 64062,94762 64262,96387 65112,98837
+Luckow - Sommersdorf: Qualität?	? 63938,93631 63800,94250 62800,96175 62912,96800 62425,97375 61900,97587 61393,98356
+Bei Penkun: Qualität? Ausgeschildert?	? 68961,100161 67712,99425 65237,99575 64837,99262 64362,99087 63575,98375 62425,97375

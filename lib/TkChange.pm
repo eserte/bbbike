@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: TkChange.pm,v 1.10 2003/01/08 21:01:16 eserte Exp $
+# $Id: TkChange.pm,v 1.10 2003/01/08 21:01:16 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
@@ -282,6 +282,20 @@ sub XXXPopup
 #   }
 # }
 ######################################################################
+
+# Enable mouse wheel on Tk::HList for older Tks
+use Tk::HList;
+BEGIN {
+    if ($Tk::VERSION < 800.025 && Tk::Widget->can("MouseWheelBind")) { # or < 804?
+	package Tk::HList;
+	my $old_class_init = \&Tk::HList::ClassInit;
+	*ClassInit = sub {
+	    my($class,$mw) = @_;
+	    $mw->MouseWheelBind($class);
+	    $old_class_init->($class, $mw);
+	};
+    }
+}
 
 package Tk::Widget;
 
