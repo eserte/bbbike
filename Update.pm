@@ -236,6 +236,31 @@ sub bbbike_data_update {
 	if ($rootdir =~ m|/home/e/eserte/src/bbbike|);
     die "FATAL: RCS in datadir detected"
 	if (-e "$rootdir/data/RCS");
+
+ TRY_CVS: {
+	if (-e "$rootdir/data/CVS") {
+	    if (!is_in_path("cvs")) {
+		last TRY_CVS;
+	    }
+	    require Cwd;
+	    my $old_cwd = Cwd::cwd();
+	    eval {
+		chdir "$rootdir/data"
+		    or main::status_message("Can't chdir to data dir: $!", "die");
+		# XXX Do it in background!
+		system "cvs", "update";
+		if ($? != 0) {
+		    main::status_message("cvs update fehlgeschlagen (code $?)", "warn");
+		} else {
+		    main::status_message("cvs update erfolgreich durchgelaufen", "info");
+		}
+	    };
+	    chdir $old_cwd or warn $!;
+	    main::reload_all();
+	    return;
+	}
+    }
+
     die "FATAL: Makefile in datadir detected"
 	if (-e "$rootdir/data/Makefile");
 
