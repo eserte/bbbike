@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.94 2004/05/08 21:22:19 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.95 2004/05/17 23:32:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1412,6 +1412,42 @@ sub penalty_menu {
 	foreach my $koeff (@koeffs) {
 	    $c_bpcm->radiobutton(-label => $koeff,
 				 -variable => \$penalty_nolighting_koeff,
+				 -value => $koeff);
+	}
+    }
+
+    my $penalty_tram = 0;
+    my $penalty_tram_koeff = 2;
+    $pen_m->checkbutton
+      (-label => M"Penalty für Straßenbahn auf Fahrbahn",
+       -variable => \$penalty_tram,
+       -command => sub {
+	   if ($penalty_tram) {
+
+	       my $s = new Strassen "comments_tram";
+	       die "Can't get comments_tram" if !$s;
+	       my $net = new StrassenNetz $s;
+	       $net->make_net;
+
+	       $penalty_subs{'trampenalty'} = sub {
+		   my($p, $next_node, $last_node) = @_;
+		   if ($net->{Net}{$next_node}{$last_node} ||
+		       $net->{Net}{$last_node}{$next_node}) {
+		       $p *= $penalty_tram_koeff;
+		   }
+		   $p;
+	       };
+	   } else {
+	       delete $penalty_subs{'trampenalty'};
+	   }
+       });
+    $pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
+    {
+	my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
+	$pen_m->entryconfigure("last", -menu => $c_bpcm);
+	foreach my $koeff (@koeffs) {
+	    $c_bpcm->radiobutton(-label => $koeff,
+				 -variable => \$penalty_tram_koeff,
 				 -value => $koeff);
 	}
     }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.27 2004/03/24 22:48:17 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.28 2004/05/17 23:37:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -512,6 +512,7 @@ sub draw_legend {
 	}
     }
 
+    my $u_bg_seen;
     my %p_category = ('u'  => 'U',
 		      'r'  => 'R',
 		      'b'  => 'S',
@@ -617,6 +618,28 @@ sub draw_legend {
 	    $skip_height_add = 1;
 	} elsif ($abk =~ /^pp-/) {
 	    next;
+	} elsif ($abk =~ /^[ubr]_bg$/) {
+	    next if $u_bg_seen;
+	    $u_bg_seen++;
+	    for my $def (["bg" => M"behindertengerechter Zugang"],
+			 ["bf" => M"behindertenfreundlicher Zugang"],
+			) {
+		my($cat, $text) = @$def;
+		if (exists $category_image{$cat} &&
+		    (my $img = $mw->{MapImages}{"p_$category_image{$cat}"})) {
+		    $c->createImage($left+$start_symbol, $top+$height,
+				    -anchor => "nw",
+				    -image => $img,
+				    -tags => 'legend');
+		    $c->createText
+			($left+$start_text, $top+$height+8,
+			 $adjust_width->($text, $font{'normal'}),
+			 -anchor => "w",
+			 -tags => 'legend');
+		    $height += BBBikeUtil::max($baselineskip, $img->height+2);
+		}
+	    }
+	    $skip_height_add = 1;
 	} else {
 	    my $p_cat = $p_category{$abk} || '';
 	    my $color = (defined $category_color{$p_cat}

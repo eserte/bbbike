@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.131 2004/04/27 23:29:44 eserte Exp $
+# $Id: bbbike,v 3.132 2004/05/17 23:36:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -223,7 +223,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.131 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.132 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -325,9 +325,9 @@ foreach (@Radwege::category_order) {
 	       'ql', 'hl', 'l-label-bg', 'l-label'], # XXX mount?
    'p_o'   => ['o', 'O'],
    'p_p'   => ['p'],
-   'str_u' => ['u', 'sperre_u', 'u-bg', 'u-fg', 'u-label'],
-   'str_b' => ['b', 'sperre_b', 'b-bg', 'b-fg', 'b-label'],
-   'str_r' => ['r', 'sperre_r', 'r-bg', 'r-fg', 'r-label'],
+   'str_u' => ['u', 'sperre_u', 'u-bg', 'u-fg', 'u_bg-img', 'u-label'],
+   'str_b' => ['b', 'sperre_b', 'b-bg', 'b-fg', 'b_bg-img', 'b-label'],
+   'str_r' => ['r', 'sperre_r', 'r-bg', 'r-fg', 'r_bg-img', 'r-label'],
    'str_w' => ['w-out', 'w', 'i-out', 'i', 'w-label-bg', 'w-label'],
    'str_f' => ['f', 'f-label-bg', 'f-label', 'f-Pabove'],
    'str_g' => ['z', 'g', 'gP', 'gD'],
@@ -2482,6 +2482,12 @@ sub do_iconframe {
 			   pending(1, 'replot-p-u');
 		       },
 		      );
+    $ubcm->checkbutton(-label => M"Fahrradfreundliche Zugänge",
+		       -variable => \$p_draw{'u_bg'},
+		       -command => sub {
+			   plot('p', 'u_bg');
+		       },
+		      );
     $ubcm->separator;
     foreach ([M"VBB-Zone Berlin A", 'UA'],
 	     [M"VBB-Zone Berlin B", 'UB'],
@@ -2527,6 +2533,12 @@ sub do_iconframe {
 		       -variable => \$no_overlap_label{'b'},
 		       -command => sub {
 			   pending(1, 'replot-p-b');
+		       },
+		      );
+    $sbcm->checkbutton(-label => M"Fahrradfreundliche Zugänge",
+		       -variable => \$p_draw{'b_bg'},
+		       -command => sub {
+			   plot('p', 'b_bg');
 		       },
 		      );
     $sbcm->separator;
@@ -4789,6 +4801,12 @@ sub define_item_attribs {
 	);
     %p_color =
 	();
+
+    %category_image =
+	('bg'  => "behindertengerecht.gif",
+	 'bf'  => "behindertenfreundlich.gif",
+	);
+
     %line_width =
 	('s-H'      => [1, 2, 3, 4, 6, 10],
 	 's-HH'     => [1, 2, 3, 4, 6, 10],
@@ -4915,7 +4933,9 @@ sub define_item_attribs {
     %p_file =
 	('lsa'    => 'ampeln',
 	 'u'      => 'ubahnhof',
+	 'u_bg'   => 'ubahnhof_bg',
 	 'b'      => 'sbahnhof',
+	 'b_bg'   => 'sbahnhof_bg',
 	 'r'      => 'rbahnhof',
 	 'o'      => 'orte',	# XXX scoped
 	 'sperre' => $sperre_file,
@@ -4964,8 +4984,11 @@ sub define_item_attribs {
     %p_attrib =
 	('lsa'  => [M"Ampel",       M"Ampeln",       undef],
 	 'u'    => [M"U-Bahnhof",   M"U-Bahnhöfe",   undef],
+	 'u_bg' => [M"Fahrradfreundlicher Zugang (U-Bahn)",   M"Fahrradfreundliche Zugänge (U-Bahn)",   undef],
 	 'b'    => [M"S-Bahnhof",   M"S-Bahnhöfe",   undef],
+	 'u_bg' => [M"Fahrradfreundlicher Zugang (S-Bahn)",   M"Fahrradfreundliche Zugänge (S-Bahn)",   undef],
 	 'r'    => [M"R-Bahnhof",   M"R-Bahnhöfe",   undef],
+	 'r_bg' => [M"Fahrradfreundlicher Zugang (Regionalbahn)",   M"Fahrradfreundliche Zugänge (Regionalbahn)",   undef],
 	 'o'    => [M"Ort",         M"Orte",         undef],
 	 'p'    => [M"Haltestelle", M"Haltestellen", undef],
 	 'obst' => [M"Obst",        M"Obst",         undef],
@@ -5067,7 +5090,8 @@ sub define_item_attribs {
 	    s-out l-out gr rw s-NN s-N s-H s-HH s-B s-BAB l v
 	    f-label-bg w-label-bg f-label w-label
 	    s-label-bg s-label l-label-bg l-label
-	    u sperre_u u-bg u-fg r sperre_r b sperre_b r-bg r-fg b-bg b-fg
+	    u sperre_u u-bg u-fg u_bg-img r sperre_r b sperre_b
+	    r-bg r-fg r_bg-img b-bg b-fg b_bg-img
 	    u-label r-label b-label
 	    hoehe vf-bg sperre temp_sperre_s temp_sperre v-fg obst
 	    route comm),
@@ -5577,9 +5601,9 @@ EOF
 
 	    if ($abk =~ /^[ubr]$/) {
 		$c->createLine($x-$ubahn_length, $y, $x+$ubahn_length, $y,
-			       -tags => ["$abk-bg", $pointname, $xx, $yy]);
+			       -tags => ["$abk-bg", "$xx,$yy", $pointname]);
 		$c->createText($x, $y,
-			       -tags => ["$abk-fg", $pointname, $xx, $yy]);
+			       -tags => ["$abk-fg", "$xx,$yy", $pointname]);
 	    } elsif ($abk eq 'lsa') {
 		# keine Verwendung von _coord_as_string
 		# XXX 'F' sollte mal ein leicht anderes Bild bekommen
@@ -5597,7 +5621,7 @@ EOF
 		$ampeln{"$xx,$yy"} = $category;
 	    } elsif ($abk eq 'pl') {
 		$c->createLine($x, $y, $x, $y,
-			       -tags => ["$abk-fg", $pointname],
+			       -tags => ["$abk-fg", "$xx,$yy", $pointname],
 			      );
 	    } elsif ($abk eq 'vf') {
 		$c->createImage(transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][1])}),
@@ -5705,7 +5729,7 @@ EOF
                 if (!$municipality) {
                     $point_item = $c->createLine
 			($tx, $ty, $tx, $ty,
-			 -tags => [$type, $fullname, $label_tag."P$cat"],
+			 -tags => [$type, "$xx,$yy", $fullname, $label_tag."P$cat"],
 			);
                 }
 		if ($name_o) {
@@ -5754,7 +5778,8 @@ EOF
 }
 
 sub set_bindings {
-    foreach (qw(p pp o u-bg u-fg b-bg b-fg r-bg r-fg
+    foreach (qw(p pp o
+		u-bg u-fg u_bg-img b-bg b-fg b_bg-img r-bg r-fg r_bg-img
 		sperre sperre_u sperre_b sperre_r temp_sperre
 		lsa-fg lsa-bg show pl-fg
 		L-img L-fg kn-fg ki-fg rest-fg)) {
@@ -10298,16 +10323,17 @@ sub enterpoint {
     if ($tags[0] eq 'p') {
 	$act_value{Haltestelle} = $names[$tags[1]];
 	$hs_label->configure(-fg => 'black');
-    } elsif ($tags[0] eq 'o' || $tags[0] =~ /^[ubr]-/) {
+    } elsif ($tags[0] eq 'o' || $tags[0] =~ /^[ubr](?:-|_bg)/) {
 	my $prefix = '';
-	if ($tags[0] =~  /^u-/) {
+	my $name = $tags[2];
+	if      ($tags[0] =~ /^u(?:-|_bg)/) {
 	    $prefix = 'U ';
-	} elsif ($tags[0] =~  /^b-/) {
+	} elsif ($tags[0] =~ /^b(?:-|_bg)/) {
 	    $prefix = 'S ';
-	} elsif ($tags[0] =~  /^r-/) {
+	} elsif ($tags[0] =~ /^r(?:-|_bg)/) {
 	    $prefix = 'Bhf. '; # XXX language?
 	}
-	$act_value{Haltestelle} = $prefix . $tags[1];
+	$act_value{Haltestelle} = $prefix . $name;
 	$hs_label->configure(-fg => 'black');
     } elsif ($tags[0] eq 'pp' || $tags[0] =~ /^(L\d+|kn|ki|rest)/) {
 	if (defined $tags[2] && $tags[2] ne 'current') {
@@ -10364,7 +10390,7 @@ sub enterpoint {
 	    $str_label->configure(-fg => $dim_color);
 	}
     } elsif ($tags[0] =~ /^pl/) {
-	$act_value{Haltestelle} = $tags[1];
+	$act_value{Haltestelle} = $tags[2];
 	$hs_label->configure(-fg => 'black');
     }
 
