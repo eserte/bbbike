@@ -55,6 +55,7 @@ sub init {
 
     $self->SUPER::init();
 
+    # XXX provide fallbacks (by using an array?)!
     $TTF_STREET = '/usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf'
 	if !defined $TTF_STREET;
     $TTF_CITY   = '/usr/X11R6/lib/X11/fonts/Type1/lcdxsr.pfa'
@@ -701,14 +702,25 @@ sub draw_scale {
 	      $self->{Width}-$x_margin,
 	      $self->{Height}-$y_margin-$bar_width-2,
 	      $color);
-    $im->string($self->{GD_Font}->Small,
-		$self->{Width}-($x1-$x0)-$x_margin-3,
-		$self->{Height}-$y_margin-$bar_width-2-12,
-		"0", $color);
-    $im->string($self->{GD_Font}->Small,
-		$self->{Width}-$x_margin+8-6*length($strecke_label),
-		$self->{Height}-$y_margin-$bar_width-2-12,
-		$strecke_label, $color);
+    $self->_draw_scale_label($self->{Width}-($x1-$x0)-$x_margin-3,
+			     $self->{Height}-$y_margin-$bar_width-2-12,
+			     "0", $color);
+    $self->_draw_scale_label($self->{Width}-$x_margin+8-6*length($strecke_label),
+			     $self->{Height}-$y_margin-$bar_width-2-12,
+			     $strecke_label, $color);
+}
+
+sub _draw_scale_label {
+    my($self, $x, $y, $string, $color) = @_;
+    my $ttf = "/usr/X11R6/lib/X11/fonts/TTF/luxirr.ttf"; # XXX do not hardcode!
+    my $im = $self->{Image};
+    if (defined &GD::Image::stringFT && -r $ttf) {
+	# XXX why +8?
+	$im->stringFT($color, $ttf, 8, 0, $x, $y+8, $string);
+    } else {
+	$im->string($self->{GD_Font}->Small,
+		    $x, $y, $string, $color);
+    }
 }
 
 sub draw_route {
