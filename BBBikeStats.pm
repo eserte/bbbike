@@ -25,6 +25,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Util;
 use BBBikeUtil;
+use BBBikeUtil qw(min max);
 
 BEGIN {
     if (!eval '
