@@ -1076,4 +1076,13 @@ EOF
 userdel	2 -926,27132 -2118,26060
 EOF
      },
+     { from  => 1099177200, # 2004-10-31 01:00
+       until => 1101078000, # 2004-11-22 00:00
+       text  => 'L 200; (Breite Str.); OD Eberswalde, zw. BÜ und Neue Str. Straßenbauarbeiten, Vollsperrung 01.11.2004-21.11.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 38264,50086 38035,49183
+userdel	q4 38264,50086 38864,51295
+EOF
+     },
     );
