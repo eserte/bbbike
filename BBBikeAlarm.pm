@@ -377,7 +377,7 @@ sub grabbing_at {
 
 sub tk_leave {
     my($time, %args) = @_;
-    my $end_time = end_time($time);
+    my $end_time = $args{-epoch} || end_time($time);
     my $text = $args{-text};
     $text = "Leave" if !defined $text || $text eq "";
     $text =~ s/[\"\\]//g; # XXX quote properly
@@ -744,6 +744,30 @@ sub _get_host {
 
 }
 
+sub restart_alarms {
+    eval {
+	my $this_host = _get_host();
+	require DB_File;
+	require Fcntl;
+	tie my %pids, 'DB_File', get_alarms_file(), &Fcntl::O_RDONLY, 0600
+	    or die "Can't tie DB_File " . get_alarms_file() . ": $!";
+	while(my($k,$v) = each %pids) {
+	    my(@l) = split /\t/, $v;
+	    my($host, $pid, $time, $desc) = @l;
+	    my $state = "unknown";
+	    if ($host eq $this_host) {
+		if (!kill(0 => $pid)) {
+		    warn "Restart process $pid at " . scalar(localtime $time) . " ...\n";
+		    tk_leave(undef, -epoch => $time, -text => $desc); # XXX use_tk?
+		    delete $pids{$k};
+		}
+	    }
+	}
+	untie %pids;
+    };
+    warn $@ if $@;
+}
+
 sub show_all {
     my @result;
     my $this_host = _get_host();
@@ -812,6 +836,7 @@ sub del_tk_alarm {
     };
     warn $@ if $@;
 }
+
 
 # return number of seconds to wait
 sub end_time {
@@ -968,6 +993,7 @@ my $text;
 my $interactive;
 my $ask;
 my $show_all;
+my $restart;
 require Getopt::Long;
 if (!Getopt::Long::GetOptions("-tk!" => \$use_tk,
 			      "-time=s" => \$time,
@@ -975,9 +1001,10 @@ if (!Getopt::Long::GetOptions("-tk!" => \$use_tk,
 			      "-interactive!" => \$interactive,
 			      "-ask!" => \$ask,
 			      "showall|list" => \$show_all,
+			      "restart" => \$restart,
 			     )) {
     die "Usage $0 [-tk [-ask]] [-time hh:mm] [-text message] [-interactive]
-                  [-showall|-list]
+                  [-showall|-list] [-restart]
 ";
 }
 
@@ -997,6 +1024,8 @@ if ($interactive) {
     }
 } elsif ($show_all) {
     print join("\n", map { join "\t", @$_ } BBBikeAlarm::show_all()), "\n";
+} elsif ($restart) {
+    BBBikeAlarm::restart_alarms();
 } else {
     die "Can't set alarm: type e.g. -tk missing";
 }
