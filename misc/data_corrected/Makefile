@@ -210,8 +210,7 @@ init-ident:	/tmp/berlin_polygon.bbd pre-init-ident do-init-ident
 	${MISCSRCDIR}/combine_streets.pl -closedpolygon $> > $@
 
 pre-init-ident:
-	[ ! -e ${CONVDB} ] && touch -t 197001010000 ${CONVDB} || true
-	touch -r ${CONVDB} ${CONVDB_MODTIME}
+	touch ${CONVDB_MODTIME}
 
 do-init-ident:
 	cd ${DATADIR} && perl -w -I.. -I../lib -MKarte -MStrassen -MObject::Iterate=iterate -MList::Util=max,min -MDB_File -MVectorUtil=point_in_grid,point_in_polygon -e '\
@@ -222,13 +221,18 @@ $$minx = min map { $$_->[0] } @polygon;\
 $$miny = min map { $$_->[1] } @polygon;\
 $$maxx = max map { $$_->[0] } @polygon;\
 $$maxy = max map { $$_->[1] } @polygon;\
-tie %db, "DB_File", "${.CURDIR}/${CONVDB}", O_RDWR|O_CREAT, 0600 or die 1;\
-open(B, "BASE") or die 2;\
+$$convdb = "${.CURDIR}/${CONVDB}";\
+$$touch_needed = ! -e $$convdb;\
+tie %db, "DB_File", $$convdb, O_RDWR|O_CREAT, 0600 or die "Cannot tie $$convdb: $$!";\
+if ($$touch_needed) { utime 0, 0, $$convdb }\
+$$modtime = (stat($$convdb))[9];\
+utime $$modtime, $$modtime, "${.CURDIR}/${CONVDB_MODTIME}";\
+open(B, "BASE") or die "Cannot open BASE: $$!";\
 @base = <B>;\
 close B;\
 for (@base) {\
  ($$file,$$type) = split /\s+/;\
- next if $$file eq "ampelschaltung-orig";\
+ next if $$file =~ /^(ampelschaltung-orig|label-orig|relation_gps-orig)$$/;\
  next if -M $$file >= -M "${.CURDIR}/${CONVDB_MODTIME}";\
  warn "$$file...\n";\
  $$s=Strassen->new($$file);\
@@ -262,5 +266,11 @@ for (@base) {\
 # empty directory.
 init-ostsee:
 	perl -w -MDB_File -e 'tie %db, "DB_File", "${CONVDB}", O_RDWR, 0600 or die; $$db{$$_} = $$_ for (qw(6556,269275 129023,269530 -212543,268820 6556,269275))'
+
+link-check-files:
+	for i in BASE add_str multi_bez_str str_cont_ausnahme add_plaetze sehenswuerdigkeit_img; do \
+	    echo "Check $$i"; \
+	    [ ! -e $$i ] && ln -s ../data/$$i || true ; \
+	done
 
 .include "${DATADIR}/Makefile.mapfiles"
