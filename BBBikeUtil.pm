@@ -29,14 +29,6 @@ use constant STAT_MODTIME => 9;
 # REPO BEGIN
 # REPO NAME is_in_path /home/e/eserte/src/repository 
 # REPO MD5 ccab6618d5af7a1e314eb8e0e448ff2c
-=head2 is_in_path($prog)
-
-Return the pathname of $prog, if the program is in the PATH, or undef
-otherwise.
-
-DEPENDENCY: file_name_is_absolute
-
-=cut
 
 sub is_in_path {
     my($prog) = @_;
@@ -73,12 +65,6 @@ sub catfile {
 # REPO BEGIN
 # REPO NAME file_name_is_absolute /home/e/eserte/src/repository 
 # REPO MD5 47355e35bcf03edac9ea12c6f8fff9a3
-=head2 file_name_is_absolute($file)
-
-Return true, if supplied file name is absolute. This is only necessary
-for older perls where File::Spec is not part of the system.
-
-=cut
 
 sub file_name_is_absolute {
     my $file = shift;

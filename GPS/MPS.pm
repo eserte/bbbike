@@ -166,14 +166,6 @@ sub strip0 { $_[0] =~ s/\0+// }
 # REPO NAME sqr /home/e/eserte/src/repository 
 # REPO MD5 846375a266b4452c6e0513991773b211
 
-=head2 sqr($n)
-
-=for category Math
-
-Return the square of $n.
-
-=cut
-
 sub sqr { $_[0] * $_[0] }
 # REPO END
 

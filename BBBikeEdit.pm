@@ -3372,15 +3372,6 @@ sub add_cross_road_blockings {
 # REPO NAME month_days /home/e/eserte/src/repository 
 # REPO MD5 349f6caae4054c70e91da1cda0eeea5f
 
-=head2 month_days($mon,$year)
-
-=for category Date
-
-Return the number of days for the specified month (1..12) and year
-(4-digit).
-
-DEPENDENCY: leapyear
-
 =cut
 
 sub month_days {

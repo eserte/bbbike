@@ -635,15 +635,6 @@ sub Points {
 # REPO NAME monthabbrev_number /home/e/eserte/src/repository 
 # REPO MD5 5dc25284d4ffb9a61c486e35e84f0662
 
-=head2 monthabbrev_number($mon)
-
-=for category Date
-
-Return the number for the (English) abbreviated month name (e.g. "Sep"
-=> 9).
-
-=cut
-
 sub monthabbrev_number {
     my $mon = shift;
     +{'Jan' => 1,

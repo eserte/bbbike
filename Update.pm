@@ -25,15 +25,6 @@ use FindBin;
 # REPO NAME file_name_is_absolute /home/e/eserte/src/repository 
 # REPO MD5 89d0fdf16d11771f0f6e82c7d0ebf3a8
 
-=head2 file_name_is_absolute($file)
-
-=for category File
-
-Return true, if supplied file name is absolute. This is only necessary
-for older perls where File::Spec is not part of the system.
-
-=cut
-
 BEGIN {
     if (eval { require File::Spec; defined &File::Spec::file_name_is_absolute }) {
 	*file_name_is_absolute = \&File::Spec::file_name_is_absolute;
@@ -55,17 +46,6 @@ BEGIN {
 # REPO BEGIN
 # REPO NAME is_in_path /home/e/eserte/src/repository 
 # REPO MD5 1b42243230d92021e6c361e37c9771d1
-
-=head2 is_in_path($prog)
-
-=for category File
-
-Return the pathname of $prog, if the program is in the PATH, or undef
-otherwise.
-
-DEPENDENCY: file_name_is_absolute
-
-=cut
 
 sub is_in_path {
     my($prog) = @_;
