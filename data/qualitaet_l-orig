@@ -1,4 +1,4 @@
-# $Id: qualitaet_l-orig,v 4.12 2005/03/24 01:03:46 eserte Exp $
+# $Id: qualitaet_l-orig,v 4.12 2005/03/24 01:03:46 eserte Exp eserte $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen; schlechte Straße; 01.11.96-unbekannt	Q3 -50149,24689 -50016,24414 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -177,7 +177,7 @@ Mühlenstr.: nicht befestigt	Q2 38451,15268 38323,15374
 Wesendahler Weg: nicht befestigt	Q2 38323,15374 38325,15906 38461,16967 38398,17202 38537,17484
 Lankestr.: Kopfsteinpflaster	Q2 -9942,21 -9952,-109
 Wannseestr.: schlechtes Kopfsteinpflaster	Q3 -9766,-85 -9727,-54 -9656,41 -9558,52 -9437,35 -9313,54
-Waldmüllerstr.: Kopfsteinpflaster	Q2 -10097,200 -10108,121 -9942,21 -9766,-85
+Waldmüllerstr.: Kopfsteinpflaster	Q2 -10097,200 -10095,137 -9942,21 -9766,-85
 Saarmund: Kopfsteinpflaster	Q2 -8035,-10235 -8591,-10278
 Gottsdorf - Berkenbrück: sandige Straße	Q3 -10943,-31376 -10051,-30798 -9563,-30710 -8565,-30703 -8312,-30318 -8206,-30104 -8100,-29997
 Hennickendorf - Ahrensdorf: sehr gute Straße mit breitem asphaltierten Radweg	Q0 -9594,-27471 -9298,-27089 -9016,-26788 -8893,-26326 -8511,-25814 -8128,-25535 -7894,-25017 -7586,-24667 -7310,-24388 -6700,-24539 -5997,-24621 -5200,-24423
@@ -315,9 +315,9 @@ Mangerstr. (Potsdam): Kopfsteinpflaster	Q2 -11665,-143 -11751,-58 -11831,-70 -11
 Mangerstr. (Potsdam): Kopfsteinpflaster, Ausweichen auf Uferweg möglich	Q2; -12064,-284 -12265,-418
 Mangerstr. (Potsdam): Kopfsteinpflaster, aber mit Banketten	Q2; -12265,-418 -12064,-284
 Wilhelm-Leuschner-Str.: schlechtes Kopfsteinpflaster (Potsdam)	Q3 -10059,374 -10097,200
-Gutenbergstr. (Potsdam): mäßiges bis schlechtes Kopfsteinpflaster	Q2 -12895,-913 -13021,-932 -13172,-957 -13272,-983 -13568,-1062
+Gutenbergstr. (Potsdam): mäßiges bis schlechtes Kopfsteinpflaster	Q2 -12895,-913 -13021,-932 -13172,-957 -13272,-983 -13427,-1024 -13568,-1062
 Jägerstr. (Potsdam): mäßiges Kopfsteinpflaster, südlich der Brandenburger Str. eher schlechter	Q2 -13062,-729 -13021,-932 -13005,-1002 -12984,-1110
-Dortustr. (Potsdam): Kopfsteinpflaster	Q2 -13192,-1150 -13171,-1042 -13172,-957 -13146,-759
+Dortustr. (Potsdam): Kopfsteinpflaster	Q2 -13203,-1154 -13184,-1043 -13172,-957 -13146,-759
 (?) (Werder): Kopfsteinpflaster	Q2 -22206,-1693 -21937,-1808 -21679,-1995
 Wildpark (F2.2): Waldweg	Q1 -18097,-2054 -16966,-2096 -16603,-2116 -16562,-2010 -16008,-1753
 Eisenbahnbrücke - Wildpark West (F2.2): enger Feldweg	Q2 -21063,-2021 -21062,-2042 -20700,-2020 -20677,-2058
@@ -1081,7 +1081,7 @@ Jahnstr.: mäßiges Kopfsteinpflaster	Q2 741,-584 767,-542 818,-298
 Im Tal: Kopfsteinpflaster	Q2 -882,-1220 -940,-1256 -1112,-1123 -1310,-1137
 Am Weinberg: Kopfsteinpflaster, etwas kleinteiliger	Q2 -1348,-1098 -1310,-1137 -1112,-1353 -940,-1256
 Allee am Forsthaus: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten, und teilweise unebener Sandweg	Q3 -1503,-1328 -1607,-1389 -1698,-1384 -1976,-1325 -2071,-1259 -2262,-1317 -2334,-1392 -2614,-1434
-Leiblstr.: Kopfsteinpflaster	Q2 -12545,-698 -12304,-628
+Leiblstr.: Kopfsteinpflaster	Q2 -12545,-698 -12262,-612
 Mittelstr.: Kopfsteinpflaster	Q2 -12545,-698 -12712,-734 -12884,-769
 Am Schafgraben: Parkweg	Q1 -14500,-2012 -14612,-1809
 Spindelstr.: Kopfsteinpflaster, OK	Q1 -10365,-1376 -10581,-1271
@@ -1092,7 +1092,7 @@ Oderstr.: Asphalt	Q0 595,-310 -425,-935 -882,-1220
 Plantagenstr.: Kopfsteinpflaster	Q2 -9837,-1612 -9868,-1425
 #: add_fragezeichen: wenigstens auf der Seite Plantagenstr:
 Lessingstr. (Potsdam): Kopfsteinpflaster	Q3 -9837,-1612 -9219,-1590
-Brandenburger Str.: grobes Pflaster	Q1 -12894,-977 -13005,-1002 -13171,-1042 -13289,-1071 -13556,-1140
+Brandenburger Str.: grobes Pflaster	Q1 -12894,-977 -13005,-1002 -13184,-1043 -13289,-1071 -13410,-1101 -13556,-1140
 # von der Bahn aus gesehen: vvv
 Welsow - Bruchhagen: Asphalt	Q0 49075,74662 48437,74675 48262,74825
 Schönermark - Biesenbrow: Asphalt	Q0 51975,78362 50650,79712
@@ -1111,7 +1111,7 @@ Kleinow: Asphalt	Q0 50875,97118 50846,97187
 Zimmerstr. (Potsdam): Kopfsteinpflaster	Q2 -14150,-1290 -13884,-1243 -13646,-1168
 Zimmerplatz (Potsdam): Kopfsteinpflaster	Q2 -13884,-1243 -13886,-1295
 #: add_fragezeichen: eventuell Q1?
-Kastanienallee (Potsdam): Kopfsteinpflaster	Q2 -14909,-1818 -14859,-2384
+Kastanienallee (Potsdam): Kopfsteinpflaster	Q2 -14909,-1818 -14897,-1946 -14859,-2384
 bei Zechow: Asphalt	Q0 -26350,70262 -24687,71412 -24162,71612
 dt. Alleenstraße: Asphalt	Q0 -24335,65501 -22567,67134 -21150,67860
 An der Alten Fahrt: Parkweg	Q1 -12265,-1434 -12114,-1409 -12110,-1379
@@ -1120,6 +1120,17 @@ Eltesterstr.: Kopfsteinpflaster	Q2 -12062,-1378 -11981,-1390
 Daimlerstr. (Potsdam): Betonplatten, unbenutzte Straßenbahnschienen auf Fahrbahn	Q1 -10793,-2157 -10712,-1942 -10678,-1860
 Voltastr. (Potsdam): Kopfsteinpflaster, OK	Q1 -10588,-1975 -10712,-1942
 Glasmeisterstr. (Potsdam): Kopfsteinpflaster	Q2 -10773,-1828 -11145,-1959
+Mövenstr. (Potsdam): asphaltiert, aber teilweise Baumwurzeln	Q1 -10269,445 -10185,280 -10097,200
+Uferpromenade im Babelsberger Park: Parkweg, teilweise etwas uneben	Q1 -9952,-109 -10041,-74 -10293,-96 -10321,-37 -10619,51 -10709,-62 -10832,-75 -10895,-246
+Uferpromenade und Hauptweg im Babelsberger Park: asphaltiert	Q0 -10895,-246 -11149,-653 -11127,-812 -11040,-887 -11084,-1396
+Uferpromenade im Babelsberger Park: Parkweg, kurzes Stück Kopfsteinpflaster	Q1 -11149,-653 -11284,-909 -11486,-1018 -11579,-987 -11657,-1018
+Uferpromenade: überwiegend guter Parkweg	Q1 -11657,-1018 -11698,-1104 -11719,-1189 -11783,-1276 -11739,-1382 -11909,-1532 -11952,-1596 -12059,-1617 -12065,-1571 -12335,-1725 -12420,-1853
+Breite Str. - Auf dem Kiewitt: überwiegend gute Parkwege	Q1 -13771,-1471 -13865,-1618 -14009,-1678 -13999,-1856
+Auf dem Kiewitt: asphaltiert	Q0 -14061,-2261 -13975,-2098 -13990,-1932 -13999,-1856 -14115,-1678
+Auf dem Kiewitt - Zeppelinstr.: guter Parkweg	Q1 -14061,-2261 -14265,-2221 -14500,-2012
+Schillerplatz: Kopfsteinpflaster	Q2 -14369,-1898 -14346,-1996 -13990,-1932
+Hermann-Elflein-Str.: Kopfsteinpflaster	Q2 -13464,-864 -13427,-1024 -13410,-1101 -13392,-1196
+Benkertstr.: Kopfsteinpflaster	Q2 -12727,-640 -12712,-734 -12685,-870
 #: XXX Dresden vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Seestr.: gutes Kopfsteinpflaster	Q1 36381,-150315 36371,-150487 36375,-150750
 Lennéplatz: Kopfsteinpflaster	Q2 37346,-151765 37146,-151737 37093,-151665
@@ -1146,7 +1157,7 @@ Elbufer: asphaltiert	Q0 38140,-149359 38109,-149290 38150,-149228 38378,-149087 
 Hans-Sachs-Str. (Potsdam): Kopfsteinpflaster	Q2 -14575,-1809 -14600,-1537 -14612,-1415
 Carl-von-Ossietzky-Str.: Kopfsteinpflaster	Q3 -14453,-1784 -14471,-1534 -14499,-1341
 Nansenstr.: Kopfsteinpflaster	Q3 -14366,-1728 -14356,-1509 -14362,-1340
-Lennéstr.: Kopfsteinpflaster	Q2 -14634,-1343 -14499,-1341 -14362,-1340 -14150,-1290 -13886,-1295 -13727,-1300
+Lennéstr.: Kopfsteinpflaster	Q2 -14634,-1343 -14251,-1365 -14499,-1341 -14362,-1340 -14150,-1290 -13886,-1295 -13727,-1300
 Meistersingerstr.: Kopfsteinpflaster	Q3 -14600,-1537 -14471,-1534 -14356,-1509 -14246,-1506
 Feuerbachstr.: geteert, aber mit Straßenschäden	Q1 -14362,-1340 -14140,-1390 -13879,-1445
 #: by: ^^^

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: QuadTree.pm,v 1.1 2004/08/17 21:32:17 eserte Exp eserte $
+# $Id: QuadTree.pm,v 1.2 2005/03/28 22:49:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::QuadTree;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 use Algorithm::QuadTree;
 use Strassen::Core;

@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.18 2005/03/24 00:58:36 eserte Exp $
+# $Id: gesperrt-orig,v 4.18 2005/03/24 00:58:36 eserte Exp eserte $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraﬂen etc.)
@@ -275,7 +275,8 @@ Roennebergstr.	1 5533,6753 5374,6932
 #
 # Potsdam
 #
-Hans-Thoma-Str.	1 -12148,-784 -12255,-784 -12304,-628 -12322,-576
+Benkertstr.	1 -12685,-870 -12712,-734 -12727,-640
+Hans-Thoma-Str.	1 -12148,-784 -12190,-775 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
 Potsdamer Damm	2 -5736,-3629 -6439,-3969
 Nuthestr.	2 -6439,-3969 -8128,-4073 -9063,-3934 -11144,-2193 -11142,-1675 -11226,-1445 -11356,-1317
@@ -283,7 +284,7 @@ Nuthestr.	2 -6439,-3969 -8128,-4073 -9063,-3934 -11144,-2193 -11142,-1675 -11226
 Nuthestr.	1 -11356,-1317 -11463,-1232 -11549,-1169
 Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12063,-784 -11875,-925 -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
-Geschwister-Scholl-Str.	1 -14366,-1728 -14193,-1621 -14115,-1678
+Geschwister-Scholl-Str.	1 -14366,-1728 -14234,-1646 -14193,-1621 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13884,-1243
 Platz der Einheit	1 -12768,-1069 -12718,-1327
 # 
@@ -481,7 +482,7 @@ Schranke (Griesinger-Krankenhaus)	BNP:5 21581,12182
 Hauptweg: Schranke	BNP:5 9410,21680
 Dr‰ngelgitter (Hoher Bogen)	BNP:5 3831,8674
 Schranke (Krankenhaus Herzberge)	BNP:5 17247,13519
-zwei Dr‰ngelgitter (S-Bhf. Grunewald)	BNP:10 731,9103
+Dr‰ngelgitter (S-Bhf. Grunewald)	BNP:10 731,9103
 Dr‰ngelgitter (vor der Straﬂenbahnhaltestelle)	BNP:5 29092,4761
 Schranke (Berliner Str./Woltersdorf)	BNP:5 32192,5915
 Schranke, schwer passierbarf (Neue Steinmetzstr.)	BNP:10 7628,9364
@@ -504,6 +505,7 @@ Barriere (Seydelstr.)	BNP:5 10370,11593
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
+Voltairestr. (Arbeiten an "Alexa", voraussichtlich bis 2005-10-31)	2:inwork 11323,12484 11209,12430
 Elsenstr.	1:inwork 13760,9188 13657,9063 13504,8882
 Pfarrstr.	1:inwork 15339,11123 15267,10865
 Ernst-Ruska-Ufer: noch in Bau	2:inwork 19103,2442 18927,2431

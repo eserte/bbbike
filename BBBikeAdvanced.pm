@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.112 2005/03/21 21:16:15 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.113 2005/03/27 22:43:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -29,7 +29,6 @@ BEGIN {
 use constant MAX_LAYERS => 100;
 
 sub start_ptksh {
-    my $perldir = $Config{'scriptdir'};
     # Is there already a (withdrawn) ptksh?
     foreach my $mw0 (Tk::MainWindow::Existing()) {
 	if ($mw0->title =~ /^ptksh/) {
@@ -38,10 +37,17 @@ sub start_ptksh {
 	    return;
 	}
     }
-    # Find the ptksh script
-    if (-r "$perldir/ptksh") {
+    my @perldirs = $Config{'scriptdir'};
+    push @perldirs, dirname(dirname($^X)); # for the SiePerl installation
+    my $perldir;
+    TRY: {
+        # Find the ptksh script
+        for $perldir (@perldirs) {
+            if (-r "$perldir/ptksh") {
 	require "$perldir/ptksh";
-    } else {
+                last TRY;
+            }
+        }
 	$perldir = dirname($^X);
 	if (-r "$perldir/ptksh") {
 	    require "$perldir/ptksh";
@@ -56,7 +62,8 @@ sub start_ptksh {
 		return;
 	    }
 	}
-    }
+    } 
+
     # The created mainwindow is unnecessary - destroy it
     foreach my $mw0 (Tk::MainWindow::Existing()) {
 	if ($mw0->title eq '$mw') {

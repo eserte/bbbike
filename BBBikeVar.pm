@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.32 2005/03/24 01:03:06 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.33 2005/03/27 22:43:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2004 Slaven Rezic. All rights reserved.
@@ -41,6 +41,7 @@ $BBBIKE_SF_WWW	   = 'http://bbbike.sourceforge.net';
 # URLs for data update
 #$BBBIKE_UPDATE_WWW = "http://bbbike.sourceforge.net/bbbike";
 $BBBIKE_UPDATE_WWW = "http://www.radzeit.de/BBBike";
+$BBBIKE_UPDATE_DATA_CGI = "http://www.radzeit.de/cgi-bin/bbbike-data.cgi";
 #$BBBIKE_UPDATE_RSYNC = 'rsync://www.radzeit.de/bbbike/'; # not yet XXX
 #$BBBIKE_UPDATE_DATA_RSYNC = 'rsync://www.radzeit.de/bbbike_data/'; # XXX not yet
 

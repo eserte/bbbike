@@ -979,8 +979,8 @@ userdel	q4 32100,18012 31887,17453
 EOF
      },
      { from  => 1109025830, # 2005-02-21 23:43
-       until => 1109545200, # 2005-03-28 00:00
-       text  => 'Naumannstraße zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt bis 28.02.2005 ',
+       until => 1114898399, # 2005-04-30 23:59
+       text  => 'Naumannstraße zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt (bis Ende 04/2005)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 7716,8048 7717,7759

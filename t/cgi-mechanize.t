@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.22 2005/03/24 00:53:21 eserte Exp eserte $
+# $Id: cgi-mechanize.t,v 1.23 2005/03/28 20:46:12 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -45,7 +45,7 @@ if (!@browsers) {
 }
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
-my $tests = 76;
+my $tests = 77;
 plan tests => $tests * @browsers;
 
 ######################################################################
@@ -465,6 +465,8 @@ for my $browser (@browsers) {
 	$get_agent->();
 
 	$agent->get($cgiurl);
+	is($agent->response->code, 200, "$cgiurl returned OK");
+
 	$agent->follow_link(text_regex => qr/Info/);
 	my_tidy_check($agent);
 
@@ -478,10 +480,14 @@ for my $browser (@browsers) {
 
 	$agent->field("strname", "TEST IGNORE");
 	$agent->field("author",  "TEST IGNORE");
-	$agent->submit;
-	my_tidy_check($agent);
+    SKIP: {
+	    skip("URL is hardcoded and not valid on radzeit.herceg.de", 2)
+		if $cgiurl =~ /radzeit.herceg.de/;
+	    $agent->submit;
+	    my_tidy_check($agent);
 
-	like($agent->content, qr{Danke, die Angaben.*gesendet}, "Sent comment");
+	    like($agent->content, qr{Danke, die Angaben.*gesendet}, "Sent comment");
+	}
 
 	$agent->get($fragezeichenform_url);
 	my_tidy_check($agent);
@@ -489,10 +495,14 @@ for my $browser (@browsers) {
 	$agent->field("strname",  "TEST IGNORE");
 	$agent->field("comments", "TEST IGNORE");
 	$agent->field("author",   "TEST IGNORE");
-	$agent->submit;
-	my_tidy_check($agent);
+    SKIP: {
+	    skip("URL is hardcoded and not valid on radzeit.herceg.de", 2)
+		if $cgiurl =~ /radzeit.herceg.de/;
+	    $agent->submit;
+	    my_tidy_check($agent);
 
-	like($agent->content, qr{Danke, die Angaben.*gesendet}, "Sent comment (fragezeichenform)");
+	    like($agent->content, qr{Danke, die Angaben.*gesendet}, "Sent comment (fragezeichenform)");
+	}
     }
 
 } # for

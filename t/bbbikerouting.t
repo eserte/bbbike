@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.23 2005/03/06 19:27:29 eserte Exp $
+# $Id: bbbikerouting.t,v 1.24 2005/03/29 07:12:55 eserte Exp $
 # Author: Slaven Rezic
 #
 

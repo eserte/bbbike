@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead.t,v 1.10 2004/05/10 07:03:22 eserte Exp $
+# $Id: cgihead.t,v 1.11 2005/03/29 07:12:55 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -85,7 +85,7 @@ sub check_url {
 	$prog = basename $url;
     }
     (my $safefile = $prog) =~ s/[^A-Za-z0-9._-]/_/g;
-    system("HEAD -H 'User-Agent: BBBike-Test/1.0' '$url' > /tmp/head.$safefile.log");
+    system("lwp-request -m HEAD -H 'User-Agent: BBBike-Test/1.0' '$url' > /tmp/head.$safefile.log");
     is($?, 0, $url);
 }
 

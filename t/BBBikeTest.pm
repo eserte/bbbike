@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.8 2005/03/24 00:57:14 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.9 2005/03/28 20:45:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -59,9 +59,10 @@ sub get_std_opts {
 	    if ($k !~ /^(\w+[-\w|]*)?(!|[=:][infse][@%]?)?$/) {
 		die "Error in option spec: \"", $k, "\"\n";
 	    }
-	    my($o) = ($1);
+	    my($o,$type) = ($1,$2);
+	    $type = "" if !defined $type;
 	    if ($o eq $_) {
-		$opts{$_} = $v;
+		$opts{"$o$type"} = $v;
 		next OPT;
 	    }
 	}

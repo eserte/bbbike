@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiBezStr.pm,v 1.2 2004/12/05 00:10:59 eserte Exp eserte $
+# $Id: MultiBezStr.pm,v 1.3 2005/03/28 22:49:18 eserte Exp $
 #
 # Copyright (c) 1995-2001,2005 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::MultiBezStr;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 package MultiBezStr;
 use strict;

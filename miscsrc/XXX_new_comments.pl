@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: XXX_new_comments.pl,v 1.3 2005/03/17 22:50:19 eserte Exp eserte $
+# $Id: XXX_new_comments.pl,v 1.4 2005/03/28 22:53:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.

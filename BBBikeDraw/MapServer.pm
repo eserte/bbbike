@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.19 2005/03/21 23:16:34 eserte Exp $
+# $Id: MapServer.pm,v 1.20 2005/03/28 20:54:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -72,11 +72,11 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 	    # new radzeit.de
 	    $apache_root = "/var/www/domains/radzeit.de/www";
 	    $htdocs = "public";
-            $fontslist = "fonts-radzeit-new.list";
+            $fontslist = "fonts-radzeit.list";
 	} else {
 	    $apache_root = "/usr/local/apache/radzeit";
 	    $htdocs = "htdocs";
-            $fontslist = "fonts-radzeit.list";
+            $fontslist = "fonts-radzeit-old.list";
 	}
 	$self->BbbikeDir("$apache_root/BBBike");
 	$self->MapserverMapDir("$apache_root/$htdocs/mapserver/brb");
@@ -93,7 +93,12 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 	my $self = shift->new;
 	my $apache_root = "/home/e/eserte/src/bbbike/projects/www.radzeit.de";
 	$self->BbbikeDir("$apache_root/BBBike");
-	$self->MapserverMapDir("$apache_root/htdocs/mapserver/brb");
+	if (-d "$apache_root/public/mapserver/brb") {
+	    # new radzeit.de
+	    $self->MapserverMapDir("$apache_root/public/mapserver/brb");
+	} else {
+	    $self->MapserverMapDir("$apache_root/htdocs/mapserver/brb");
+	}
 	#$self->MapserverBinDir("$apache_root/cgi-bin");
 	$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
 	$self->MapserverRelurl("/mapserver/brb");

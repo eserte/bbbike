@@ -1,15 +1,19 @@
 #
-# $Id: Makefile,v 1.55 2005/03/24 00:56:47 eserte Exp eserte $
+# $Id: Makefile,v 1.56 2005/03/28 21:32:32 eserte Exp $
 #
 
 # Targets:
 #  check:	Show what would be rsync'ed from the current directory
 #  rsync:	Do the rsync. This will not be permitted if the make system
 #		detects that the contents are prepared for the local server.
+#  rsync-bbbike-data: Do the rsync of only the data directory. This is
+#		also allowed if prepared for the local server.
+#  rsync-temp-blockings: Do the rsync of just the "temp-blockings" part of
+#		the data. Also allowed if prepared for the local server.
 #  tkrsync:	Execute the "tkrsync" for manually syncing parts of the tree.
 #  test:	Test the remote server from the local host.
 #  test-on-remote:	Test the remote server from the remote host.
-#  deploy:	Do everything from preparing to rsync'ing.
+#  deploy:	Do everything from preparing to rsync'ing and testing.
 #  deploy-local:	Prepare a local distribution for testing. Do not rsync.
 #  test-makefile:	Same as deploy-local, but each make command has to
 #			be confirmed.
@@ -118,6 +122,7 @@ TARGET=radzeit.herceg.de
 .if   make(deploy)                   || \
       make(deploy-data)		     || \
       make(tkrsync)		     || \
+      make(check)		     || \
       make(backup) 		     || \
       make(test)		     || \
       make(prepare-bbbike-dist-data) || \

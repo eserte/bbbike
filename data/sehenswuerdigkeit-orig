@@ -1,4 +1,4 @@
-# $Id: sehenswuerdigkeit-orig,v 4.4 2005/03/24 01:05:34 eserte Exp $
+# $Id: sehenswuerdigkeit-orig,v 4.4 2005/03/24 01:05:34 eserte Exp eserte $
 # Berlin ##################################################
 Brandenburger Tor	IMG:sehenswuerdigkeit_img/brandenburger_tor.gif|ANCHOR:s 8593,12243
 Philharmonie	F:SW 8028,11538 8054,11499 8122,11510 8128,11560 8081,11576
@@ -72,6 +72,7 @@ Waldbühne	F:SW -1392,11989 -1395,11935 -1451,11904 -1488,11901 -1527,11902 -1514
 Grunewaldturm	SW -3613,7768
 Schloß Köpenick	F:SW 22043,4451 22029,4404 22004,4411 22025,4461
 Schloß Glienicke	F:SW -10354,527 -10341,505 -10382,481 -10395,506 -10381,516 -10375,499 -10358,507 -10364,524
+Jagdschloß Glienicke	F:SW -10296,300
 Kirche St. Peter u. Paul	SW|IMG:church.gif -8878,1726
 Schloß Pfaueninsel	F:SW -8644,2422 -8651,2405 -8685,2421 -8676,2444
 Forsthaus Nikolskoe	F:SW -8866,1633 -8843,1604 -8821,1621 -8844,1645
@@ -207,6 +208,7 @@ Museumsdorf Düppel	SW -1027,1922
 Schloß Babelsberg	F:SW -10482,-195 -10486,-222 -10515,-242 -10511,-193
 Neues Palais	SW -15737,-1011
 Schloß Charlottenhof	SW -15071,-1601
+Römische Bäder	SW -14923,-1387
 Chinesisches Teehaus	SW -14650,-1071
 Communs (Universität Potsdam)	SW -15950,-1032
 Kaiserbahnhof	SW -15925,-1565
@@ -222,9 +224,9 @@ Brandenburger Tor (Potsdam)	F:SW -13556,-1107
 Jägertor	SW -13237,-796
 Nauener Tor	SW -12897,-705
 Holländisches Viertel	F:SW -12867,-681 -12871,-754 -12732,-728 -12742,-662
-Holländisches Viertel	F:SW -12700,-657 -12693,-715 -12582,-700 -12585,-632
+Holländisches Viertel	F:SW -12693,-715 -12568,-684 -12582,-609 -12700,-654
 Holländisches Viertel	F:SW -12867,-781 -12875,-892 -12707,-868 -12725,-750
-Holländisches Viertel	F:SW -12689,-751 -12671,-853 -12587,-840 -12584,-723
+Holländisches Viertel	F:SW -12689,-751 -12671,-853 -12542,-826 -12559,-720
 St.-Peter und Paul-Kirche	SW|IMG:church.gif -12766,-998
 Französische Kirche	SW|IMG:church.gif -12511,-955
 Friedenskirche	SW|IMG:church.gif -13856,-963
@@ -239,7 +241,6 @@ Gothische Bibliothek (Neuer Garten, Potsdam)	SW -12277,-327
 Marmorpalais (Neuer Garten, Potsdam)	SW -12095,345
 Krongut Bornstedt	SW -14714,-196
 Bornstedter Kirche	SW -14822,-89
-Wasserwerk Sanssouci	SW -13809,-1535
 Rathaus Potsdam	SW -12920,-491
 Rathaus Babelsberg	SW -10591,-1872
 Medienstadt und Filmpark Babelsberg	F:SW -8458,-1969 -8515,-2805 -9070,-2636 -8859,-1999
@@ -247,6 +248,9 @@ Sternwarte Babelsberg	SW -9719,-457
 Persiusturm	SW -16118,3329
 Gutsgarten	SW -16143,3261
 Klinikum Ernst-von-Bergmann	F:SW|IMG:hospital.gif -12334,-1023
+Einsteinturm (Potsdam)	SW -12348,-3476
+Landtag (Potsdam)	SW -12587,-2495
+Pumpwerk (Moschee)	SW -13793,-1540
 # Brandenburg ##################################################
 Schloß Rheinsberg	SW -25852,76666
 Schloß Diedersdorf	SW 7420,-7598
@@ -264,8 +268,6 @@ Henkerhaus Bernau	SW 22261,30732
 St. Marien Bernau	F:SW|IMG:church.gif 22390,30710
 Steintor Bernau	SW 22778,30561
 Stadtmauer Bernau	SW 22261,30413 22217,30605 22283,30775 22606,30879 22799,30539 22692,30412 22367,30328
-Einsteinturm (Potsdam)	SW -12348,-3476
-Landtag (Potsdam)	SW -12587,-2495
 Schiffshebewerk Niederfinow	SW 46113,49913
 Alte Schleusentreppe	SW 46287,50187
 Kloster Chorin	SW 41912,54746

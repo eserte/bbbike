@@ -1,4 +1,4 @@
-# $Id: comments_path-orig,v 4.9 2005/03/24 00:55:33 eserte Exp $
+# $Id: comments_path-orig,v 4.9 2005/03/24 00:55:33 eserte Exp eserte $
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C
 # CP   : wie "CP;", Kommentar gültig für beide Fahrtrichtungen
 # CP2; : Kommentar an Punkt A bei Fahrt von A nach B
@@ -117,3 +117,4 @@ Mehringbrücke - Ruhlsdorfer Str.: den linken Gehweg benutzen	PI; 9401,10199 9368
 Buchholzer Str. - Schönhauser Allee: zunächst auf der linken Geh/Radwegseite der Schönhauser Allee fahren, an der Kreuzung Gneiststr. die Straßenseite wechseln	CP; 11055,15504 10929,15516 10917,15418
 Uferweg am Plötzensee	CS 5618,14981 5518,15236 5291,15424 5050,15643 5084,15415 5018,15228
 An der Stadtteilbibliothek einbiegen	CS; 9460,6519 9453,6415
+Breite Str. - Auf dem Kiewitt: bereits an der Ampel Schopenhauerstr. die Straßenseite wechseln	PI; -13531,-1534 -13771,-1471 -13865,-1618

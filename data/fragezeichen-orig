@@ -37,6 +37,7 @@ Linienstr.: Fahrradstraße geplant (nach der Sanierung)	? 9281,13374 9607,13507 9
 #: section ^^^
 #
 #: section Straßen in Planung vvv
+Schulzendorfer Str.: laut Tagesspiegel wird in Zukunft hier das Kopfsteinpflaster durch Asphalt ersetzt	? -596,23009 -862,22946 -1484,22799
 Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
 Uferweg an der Kongreßhalle: laut Tsp im Frühjahr 2005 fertig	?::inwork 7753,12578
 Alsensteg laut Tsp im Sommer 2005, laut Mopo im Frühjahr 2005 fertig	?::inwork 8228,12964 8206,13012 8256,13009
@@ -50,6 +51,9 @@ Autotunnel wird im Frühjahr 2005 zugeschüttet	?::inwork 5652,11004 5716,10978 58
 #: section ignorieren vvv
 # Hier kommen die Strecken herein, die nicht bei einer
 # erweiterten Suche aufgenommen werden sollen.
+Potsdam, Lennestr. - Ökonomieweg: asphaltiert, durch Park Sanssouci, der nachts geschlossen wird	? -14634,-1343 -14856,-1223 -14859,-1142
+Sanssouci, Am Grünen Gitter: asphaltiert, nachts geschlossen	? -13857,-1040 -14153,-1135 -14182,-995
+Sanssouci, Ökonomieweg: nachts geschlossen, wie geht es am Neuen Palais weiter?	? -14182,-995 -14410,-1039 -14612,-1117 -14859,-1142 -15553,-1139 -15651,-1137 -15771,-1070
 Sella-Hasse-Str.: eigentlich in diese Fahrtrichtung gesperrt, aber noch keine Anknüpfung an das Restnetz vorhanden	?; 20948,16612 20771,16690 20843,16829
 Naumannstr. -> Sachsendamm: Überquerung möglich, aber hohe Penalty einplanen	? 7718,7641 7717,7564 7859,7486
 Viktoriapark, Katzbachstr. über das Denkmal zur Methfesselstr.: Weg wird aufgenommen, wenn bbbike.cgi Steigungen kann	? 8598,9061 8884,9078 8901,9104 8943,9098 8962,9048 9106,9038
@@ -95,7 +99,7 @@ Alter Bernauer Heerweg: die gesamte Straße mäßig geeignet? durchlässig für Kfz-V
 Waldpark Steinberg: laut ADFC-Karte befahrbar, Qualität?	? 5138,21358 4717,21199 4412,21154 4208,21159 3979,21211 3718,21489 3553,21665 3406,21911 3139,22201
 Waldweg über den Beyschlagtunnel: befahrbar, Qualität?	? 506,22266 742,22666
 Soldiner Str.: laut ADFC mäßig geeignet	? 9096,16976 9317,16882 9604,16760
-Pankeweg durch Wedding: Durchfahrt möglich? Qualität?	?? 8153,14769 8235,14835 8270,15233 8348,15474 8155,15648 8158,15850 8359,16271 8675,16518 8983,17195 9165,17910 9310,18108
+Pankeweg durch Wedding: Durchfahrt möglich? Qualität?	?? 8153,14769 8235,14835 8270,15233 8348,15474 8155,15648 8158,15850 8206,15953 8359,16271 8675,16518 8983,17195 9165,17910 9310,18108
 Weg am Tegeler Fließ: Durchfahrt möglich? Qualität, wahrscheinlich Waldweg Q2?	?? 7639,24383 6966,24090 6329,23969 6083,24107 5678,24021 5402,23949 5117,23654 5126,23484 5059,23186 4774,22987 4416,22891 4208,22866 4144,22756 3898,22581 3804,22391 3636,22368 3443,22201 3372,22088 3139,22201 2653,21993 2504,21768 2321,21532 2072,21339 1914,21508
 Ist die alte Verbindung Hermsdorfer Damm zur Heiligenseestr. noch vorhanden?	?? 1835,21427 1470,21205
 Landsberger Allee/Dahmeweg/Wiesenburger Weg: Sind die Zugänge vorhanden, Einbahnstraßen?	? 19329,14897 19283,14982 19280,15014 19472,15184
@@ -134,7 +138,6 @@ Schloßpark Charlottenburg, Spreeweg: ganztägig befahrbar? Qualität? durchgängig 
 Am Oder-Spree-Kanal, Schwarzer Weg nach Schmöckwitz: Qualtität?	? 30546,-3072 29348,-2798 28923,-2859 28623,-3061 28110,-3047 27906,-3136
 Straßenführung und Straßennamen im Wohnpark an der Buga?	? -13820,1095 -13907,1223 -13801,1414 -14016,1563
 westlich des Sacrower Sees - Försterei Zedlitz - zur Straße nach Krampnitz: Qualität? (wahrscheinlich Waldweg, Q2)	? -9342,4943 -9430,4935 -9678,4913 -10147,4870 -10616,4399 -10912,3738 -11571,3187
-Schopenhauerstr. (Potsdam): Einbahnstraße?	? -13531,-1534 -13554,-1235
 Hermann-Blankenstein-Str. - Landsberger Allee: existiert eine Verbindung für Radfahrer?	? 14056,13386 13843,13681
 Grünanlage Kolonie Bäketal - Bäkepark: befahrbar, Qualität (anscheinend normale Parkwege, unbeleuchtet)?	? 5236,4078 5068,4261 4846,4592 4802,4921
 Lefevrestr.: Qualität? gute Verbindung?	? 4987,6902 5023,6762 5126,6655 5372,6663
@@ -144,7 +147,6 @@ Spekteweg, Spektewiesen: Qualität?	? -4007,15127 -4448,14800 -4635,14803 -5121,1
 An der Felgenlake, Spektelake: Qualität?	? -6116,15254 -6919,15372 -7119,15532 -7310,15526 -7506,15938
 Spektelake - Finkenkruger Weg: genaue Wegführung? Qualität?	? -7310,15526 -7384,15643 -7333,15451
 Niederheideweg - Hubertusstr.: Alternative zur Radelandstr? befahrbar, Qualität?	? -6445,17503 -5935,17290 -5597,17327 -5136,17227 -4841,17172 -4722,17029 -4240,16941 -3937,16881 -3727,16918
-Kiewitt - Schafgraben: ausprobieren, laut "mobil-potsdam.de" teilweise Kopfsteinpflaster	? -14061,-2261 -14296,-2241 -14500,-2012
 Röpersdorf - Zollchow (Uckerseen-Rundweg): Qualität?	? 38548,97797 38546,97349 38654,97007 38871,96664 38913,96023 38846,95660
 östliches Ufer des Unteruckersees: existiert hier tatsächlich eine Strecke? Qualität?	? 42106,95893 41692,97360 41212,97425 40798,98917 40298,99240 39668,100787 39022,101334
 Schenkenberg - Tornow: Qualität?	? 45406,107350 44745,108948 45265,108797 46428,109624 46174,110110 45810,110576 46075,110850 46272,110976 46317,111103 46685,111038 47335,110888
@@ -252,7 +254,6 @@ Karl-Schrader-Str: Qualität?	? 6837,9389 6859,9521
 Falkenwalde - Neu-Kleinow: nach den Bauarbeiten wahrscheinlich bessere Qualität	? 49480,96389 49576,95796 49681,95541 49872,95222
 Fahrenwalde - Brüssow: Bauarbeiten, Straße wahrscheinlich gesperrt. Nach den Bauarbeiten kann Q3 wahrscheinlich entfernt werden	? 54570,114006 53900,114432 53445,115324 53340,115664
 Sind die Radwege in Turm- und Gotzkowskystr. dauerhaft gesperrt?	? 5256,13420 5388,13398 5328,13019
-Schulzendorfer Str.: laut Tagesspiegel wird in Zukunft hier das Kopfsteinpflaster durch Asphalt ersetzt; und laut <od59ac.bu.ln@leon.cluster-labs.de> zurzeit eher schlechtes Kopfsteinpflaster (Q3)?	? -596,23009 -862,22946 -1484,22799
 eigentlich ein Knoten	? -9586,13296
 eigentlich ein Knoten	? -11250,13690
 Seeburg - Falkensee: Radweg auf der östlichen Seite? (nicht sicher)	? -8644,9593 -8693,10340 -8697,10653 -8899,11121
@@ -398,7 +399,6 @@ Fortsetzung der Stahnsdorfer Str.: laut "mobil-potsdam.de" Waldweg. Geht es nach
 Goethestr./Fontanestr.: laut "mobil-potsdam.de" asphaltiert	? -9868,-1425 -9775,-1431 -9506,-1431 -9215,-1431 -9219,-1590 -9224,-1727
 Geltow - Pirschheide am Templiner See: Laut "mobil-potsdam.de" überwiegend Waldweg mit kurzen asphaltierten Stellen	? -16912,-5690 -16558,-5727 -16323,-5706 -16072,-4894 -16010,-4509 -15886,-4339
 Am Templiner See zwischen Damm und R-Bhf. Charlottenhof: laut "mobil-potsdam.de" unterschiedliche Qualität ("Promenade", betoniert, Waldweg)	? -15886,-4339 -15750,-4196 -15765,-3990 -15431,-3618 -15340,-3406 -15203,-2931 -14912,-2884 -14734,-2471 -14859,-2384
-Auf dem Kiewitt - Breite Str.: laut "mobil-potsdam.de" eine "Promenade"	? -13999,-1856 -13978,-1640 -13879,-1445
 Laut "mobil-potsdam.de" Durchfahrt am rechten Ufer der Alten Fahrt möglich, unterschiedliche Qualität. Von der Inselbrücke aus gesehen: Parkweg, Q1	? -12719,-1661 -12600,-1706 -12437,-1506 -12265,-1434
 Alte Potsdamer Landstraße: Durchfahrt möglich (Friedhof?)? Qualität (Waldweg?)?	? -4075,-1837 -6084,-1934
 S-Bahnhof Griebnitzsee - Uferweg am Griebnitzsee: laut "mobil-potsdam.de" eine Treppe	? -8063,-1651 -8250,-1503
@@ -546,14 +546,14 @@ Parkstr. (Potsdam): Fortsetzung zur Schopenhauerstr.?	? -13803,-462 -13965,-590 
 Voltaireweg in diese Fahrtrichtung gesperrt?	?; -14034,-571 -13795,-407 -13636,-331
 Rübelandstr.: Qualität?	? 12787,7546 12818,7403
 Unter den Linden: irgendwo zwischen Zeughaus und Universitätsstr. ist noch eine Ampel	? 9603,12372 9782,12393 9853,12402 9918,12411
-Delbrückstr. (Neukölln): Qualität? Einbahnstraße auch für Radfahrer?	? 12468,6592 12756,6578 13125,6717
+Delbrückstr. (Neukölln): Qualität? Einbahnstraße auch für Radfahrer?	? 12468,6592 13125,6717
 Koburger Str.: Qualität? Linksabbiegen in die Hauptstr. möglich?	? 6534,8467 6560,8219
 Krahmerstr.: laut ADFC-Karte gute Qualität; am Hindenburgdamm Linksabbiegen möglich; wie sieht die Verbindung zur Uferpromenade aus?	? 4534,3456 4801,3370 4862,3345 5015,3292
 Schönhauser Allee: gibt es im südlichen Abschnitt jetzt auch (benutzungspflichtige?) Radwege?	? 10746,13673 10793,13785 10832,13877 10906,13950 10947,14114
 Wattstr./nördlicher Teil der Strelitzer Str.: Qualität?	? 9361,15066 9437,14926 9526,14779 9621,14624
 Ruppiner Str.: Qualität?	? 9857,15122 9904,15014 9929,14957 9956,14909 10011,14810 10043,14735 10070,14678 10150,14525
 Segelfliegerdamm: nach den Bauarbeiten voraussichtlich kein Kopfsteinpflaster mehr und wahrscheinlich Radwege auf beiden Seiten	? 18058,4627 17797,4441 17628,4148 17586,3728 17490,3637
-Schillerstr. (Lichtenrade): Qualität? (Bessere Alternative zur Halker Zeile?)	? 9993,686 10051,642 10300,34 10403,-266 10500,-543 10600,-823
+Schillerstr. (Lichtenrade): Qualität? (Als bessere Alternative zur Halker Zeile geeignet?)	? 9993,686 10051,642 10300,34 10403,-266 10500,-543 10600,-823
 Fürstenwalder Damm/Müggelseedamm: Vorfahrtsregelung?	? 28195,5141
 Dahlwitzer Landstraße/Schöneicher Str.: Vorfahrtsregelung?	? 25585,6050
 Fürstenwalder Damm - S-Bhf. Rahnsdorf entlang der S-Bahn-Strecke: laut ADFC-Karte gut befahrbare Strecke	? 27068,5723 27100,5850 30050,5379 30112,5431
@@ -574,8 +574,8 @@ Kleine Hamburger Str.: Qualität?	? 9668,13629 9752,13575
 Kleine Hamburger Str.: Qualität?	? 9850,13509 9885,13480
 Kleine Auguststr.: Qualität?	? 10020,13669 10049,13528
 Joachimstr.: stimmt die Einbahnstraße hier?	? 10081,13673 10142,13556
-Lindenstr. (Potsdam): Qualität? Einbahnstraße im Süden auch für Radfahrer relevant? Zugang zur Breiten Str.?	? -13237,-796 -13272,-983 -13289,-1071 -13314,-1178 -13381,-1496
-Gutenbergstr. (Potsdam): Einbahnstraße auch für Radfahrer relevant?	?; -13568,-1062 -13272,-983
+Lindenstr. (Potsdam): Qualität (sehr wahrscheinlich: Kopfsteinpflaster)? Einbahnstraße im Süden auch für Radfahrer relevant? Zugang zur Breiten Str.?	? -13237,-796 -13272,-983 -13289,-1071 -13314,-1178 -13381,-1496
+Gutenbergstr. (Potsdam): Einbahnstraße auch für Radfahrer relevant?	?; -13568,-1062 -13427,-1024 -13272,-983
 Yorckstr. (Potsdam): Kopfsteinpflaster?	? -12834,-1362 -13234,-1320
 Benkertstr. (Potsdam): Kopfsteinpflaster?	? -12727,-640 -12712,-734 -12685,-870
 Teerofenweg: Waldweg? Qualität?	? -7067,-36 -6395,-887
@@ -593,3 +593,6 @@ Malteserstr.: Busspur eingerichtet? (siehe auch http://www.berlin.de/landespress
 Fußgängerweg zwischen Wartenberger Str. und Margaretenhöhe: Qualität? Gibt es an der Bahnbrücke Treppen?	? 16284,19198 16392,19760
 Wohngebiet Schulze-Boysen-Str.: Einbahnstraßen, auch für Radfahrer?	? 15722,11857 15582,11886 15581,11956 15482,11973 15378,11992 15288,11968
 Stephanstr.: Einbahnstraße auch für Radfahrer?	?; 6526,4475 6377,4490
+Gabelung der R1 (zwischen Fähre und Zeppelinstr.): Wegführung und Qualität?	? -14265,-2221 -14378,-2115 -14734,-2471
+Clara-Zetkin-Str. (Potsdam): Qualität?	? -14251,-1365 -14246,-1506 -14234,-1646
+Goethestr.: Qualität? laut ADFC-Karte schlecht geeignet	? 9701,-351 9961,-363 10273,-301 10403,-266 10586,-220 10788,-172

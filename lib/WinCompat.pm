@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: WinCompat.pm,v 1.4 1999/02/20 16:39:21 eserte Exp eserte $
+# $Id: WinCompat.pm,v 1.5 2005/03/28 23:02:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.

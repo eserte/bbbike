@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KDEUtil.pm,v 2.13 2004/06/25 22:21:14 eserte Exp $
+# $Id: KDEUtil.pm,v 2.14 2005/03/28 23:02:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2004 Slaven Rezic. All rights reserved.

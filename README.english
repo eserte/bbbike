@@ -4,7 +4,7 @@
 
 =head1 INSTALLATION
 
-=head2 General
+=head2 Download
 
 You can find the newest distribution file of BBBike in the directory
 L<http://sourceforge.net/project/showfiles.php?group_id=19142> . The current source version is
@@ -155,7 +155,7 @@ menu and a desktop icon.
 =head2 Alternative Windows Installation (2)
 
 If you have Cygwin (L<http://www.cygwin.org/>) installed, you can start
-a bash shell and follow the
+a cygwin shell and follow the
 L<UNIX instructions|/Linux, Solaris, other UNIX operating systems>.
 
 =head2 Alternative Windows Installation (3)
@@ -223,6 +223,13 @@ läuft!
 
 =back
 
+Um compilieren zu können, sind die Entwicklertools notwendig. Diese
+werden "Xcode" genannt und befinden sich entweder auf einer
+gleichnamigen CD (bei älteren Macs) oder im Applications-Ordner unter
+C<Installers/Xcode Tools/Developer.mpkg> (bei neueren Macs).
+
+Es wird auch eine X11- bzw. Darwin-Umgebung benötigt.
+
 Mac OS Classic is not supported.
 
 
@@ -280,7 +287,7 @@ To use the CVS repository from command line type the following:
 
     # to update the next time
     cd bbbike
-    cvs update
+    cvs -q update -d
 
 The CVS repository is always up-to-date and also contains the current data.
 

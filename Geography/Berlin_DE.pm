@@ -101,6 +101,8 @@ sub new {
 # cityname in native or common language
 sub cityname { "Berlin" }
 
+sub center { "8581,12243" } # Brandenburger Tor
+
 sub supercityparts { sort keys %cityparts }
 sub cityparts      { sort keys %subcityparts }
 sub subcityparts   { map { (@$_) } values %subcityparts }

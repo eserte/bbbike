@@ -42,7 +42,14 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1114898399,
+         'text' => 'Naumannstraße zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt (bis Ende 04/2005)',
+         'from' => 1109025830,
+         'data' => 'userdel	2 7716,8048 7717,7759
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -202,14 +209,7 @@ userdel	q4 -18080,-12637 -17374,-13449
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1111705200,
-         'text' => 'Sterndamm (Treptow) in Richtung Rudow zwischen Königsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 24.03.2005)',
-         'from' => 1111437775,
-         'data' => 'userdel	1 17518,4644 17428,4503
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

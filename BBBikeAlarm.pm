@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAlarm.pm,v 1.30 2004/11/06 22:52:21 eserte Exp $
+# $Id: BBBikeAlarm.pm,v 1.31 2005/03/27 22:42:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -41,7 +41,7 @@ my $install_datebook_additions = 1;
 
 use Time::Local;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.31 $ =~ /(\d+)\.(\d+)/);
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
@@ -769,13 +769,33 @@ sub _get_host {
 
 }
 
-sub restart_alarms {
-    eval {
-	my $this_host = _get_host();
+sub open_dbm {
+    my(%args) = @_;
+    my $readonly = delete $args{-readonly} || 0;
+    if (keys %args) {
+	die "Unhandled arguments " . join " ", %args;
+    }
+    my $pids;
+    if (!eval {
 	require DB_File;
 	require Fcntl;
-	tie my %pids, 'DB_File', get_alarms_file(), &Fcntl::O_RDONLY, 0600
+	my $flags = $readonly ? &Fcntl::O_RDONLY : &Fcntl::O_RDWR|&Fcntl::O_CREAT;
+	tie %$pids, 'DB_File', get_alarms_file(), $flags, 0600
 	    or die "Can't tie DB_File " . get_alarms_file() . ": $!";
+    }) {
+	require SDBM_File;
+	require Fcntl;
+	my $flags = $readonly ? &Fcntl::O_RDONLY : &Fcntl::O_RDWR|&Fcntl::O_CREAT;
+	tie %$pids, 'SDBM_File', get_alarms_file(), $flags, 0600
+	    or die "Can't tie SDBM_File " . get_alarms_file() . ": $!";
+    }
+    $pids;
+}
+
+sub restart_alarms {
+    eval {
+	my %pids = %{ open_dbm(-readonly => 1) };
+	my $this_host = _get_host();
 	while(my($k,$v) = each %pids) {
 	    my(@l) = split /\t/, $v;
 	    my($host, $pid, $time, $desc) = @l;
@@ -798,10 +818,7 @@ sub show_all {
     my $this_host = _get_host();
 
     eval {
-	require DB_File;
-	require Fcntl;
-	tie my %pids, 'DB_File', get_alarms_file(), &Fcntl::O_RDONLY, 0600
-	    or die "Can't tie DB_File " . get_alarms_file() . ": $!";
+	my %pids = %{ open_dbm(-readonly => 1) };
 	while(my($k,$v) = each %pids) {
 	    my(@l) = split /\t/, $v;
 	    my($host, $pid, $time, $desc) = @l;
@@ -824,11 +841,7 @@ sub add_tk_alarm {
     my $this_host = _get_host();
 
     eval {
-	require DB_File;
-	require Fcntl;
-	tie my %pids, 'DB_File', get_alarms_file(),
-	    &Fcntl::O_RDWR|&Fcntl::O_CREAT, 0600
-		or die "Can't tie DB_File " . get_alarms_file() . ": $!";
+	my %pids = %{ open_dbm(-readonly => 0) };
 	$pids{$this_host.":".$pid} = join("\t", $this_host, $pid, $time, $desc);
 	untie %pids;
     };
@@ -841,10 +854,7 @@ sub del_tk_alarm {
     my $this_host = _get_host();
 
     eval {
-	require DB_File;
-	require Fcntl;
-	tie my %pids, 'DB_File', get_alarms_file(), &Fcntl::O_RDWR, 0600
-	    or die "Can't read DB_File " . get_alarms_file() . ": $!";
+	my %pids = %{ open_dbm(-readonly => 0) };
 	delete $pids{$this_host.":".$this_pid};
 	my @to_del;
 	while(my($k, $string) = each %pids) {

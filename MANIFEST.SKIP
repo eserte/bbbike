@@ -52,6 +52,8 @@ patch\.gz$
 ^ext/VectorUtil-Inline/Inline.(bs|c|o)$
 ^BBBike-\d\.\d+/
 ^Bundle/BBBike.pm.tmpl$
+^Bundle/BBBike_radzeit.pm$
+^Bundle/make_radzeit_bundle$
 ^Bundle/make_bundle$
 ^Bundle/make_small_bundle$
 ^Bundle/make_pi_osd$
@@ -88,6 +90,7 @@ cgi/bbbikesoapserver.cgi$
 cgi/global.asa$
 cgi/test.cgi$
 data/\.check_
+data/\.create_fragezeichen$
 data/\.fragezeichen_
 data/.custom_files$
 data/BASE

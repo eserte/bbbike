@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.155 2005/03/23 00:36:35 eserte Exp eserte $
+# $Id: bbbike,v 3.156 2005/03/27 22:45:50 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -213,7 +213,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.155 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.156 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -693,6 +693,8 @@ eval { local $SIG{'__DIE__'};
    ['geometry','=s',undef,
     subtype => "geometry", # XXX use fix_geometry for tk::getopt editor
     label => M"Geometry", var => \$geometry],
+   ['maximized','!',0,
+    label => M"immer maximiert öffnen", var => \$open_maximized],
    ['scaling','=f',undef,
     label => M"Skalierung", var => \$scaling],
    ['visual','=s',undef,
@@ -1030,6 +1032,11 @@ sub pre_check_arguments {
     }
 }
 
+my $city_obj;
+if (!defined $city) {
+    $city = "Berlin";
+    $country = "DE";
+}
 if (defined $city) {
     if (opendir GEO, "$FindBin::RealBin/Geography") {
 	my $search_term = $city;
@@ -1044,12 +1051,12 @@ if (defined $city) {
 		$citypkg = 'Geography::' . $f;
 		eval 'require ' . $citypkg;
 		die $@ if $@;
-		my $cityobj = $citypkg->new;
-		set_datadir($cityobj->datadir, -clearold => 1);
-		%global_search_args = $cityobj->search_args
-		    if $cityobj->can("search_args");
+		$city_obj = $citypkg->new;
+		set_datadir($city_obj->datadir, -clearold => 1);
+		%global_search_args = $city_obj->search_args
+		    if $city_obj->can("search_args");
 		$found++;
-		$no_original_datadir = 1;
+		$no_original_datadir = $city ne "Berlin"; # XXX Was bedeutet das genau?
 		last;
 	    }
 	}
@@ -1066,6 +1073,7 @@ if (defined $city) {
     set_datadir($datadir, -clearold => 1);
     $no_original_datadir = 1;
 } else {
+    # XXX Should never happen anymore
     # default (Berlin)
     set_datadir("$FindBin::RealBin/data");
 }
@@ -3829,15 +3837,16 @@ sub do_iconframe {
 		       -command => \&set_verbose);
     if ($advanced) {
 	$opbm->command
-	    (-label => M"Update über das Internet",
+	    (-label => M"Daten-Update über das Internet",
 	     -command => sub {
 		 if ($devel_host) {
-		     die "Kein Update auf cabulja/vran/cvrsnica/spiff möglich!!!\n";
+		     status_message("Kein Update auf cabulja/vran/cvrsnica/spiff möglich!", "die");
+		     die;
 		 }
 		 require Tk::Dialog;
 		 if ($top->Dialog
 		     (-title => M"Update",
-		      -text => M("Soll das Update gestartet werden?\nJe nach Internet-Verbindung und Stand der Daten\nkann das Update 5 bis 10 Minuten dauern.\nAlternativ können die Dateien manuell von\n$BBBike::BBBIKE_UPDATE_WWW/data\ngeholt und in das Verzeichnis\n$FindBin::RealBin/data\nkopiert werden.\n"),
+		      -text => M("Soll das Update gestartet werden?\nJe nach Internet-Verbindung und Stand der Daten\nkann das Update 5 bis 10 Minuten dauern.\nAlternativ können die Dateien als ZIP-Datei von\n$BBBike::BBBIKE_UPDATE_DATA_CGI\ngeholt und in das Verzeichnis\n$FindBin::RealBin/data\nausgepackt werden.\n"),
 		      -bitmap => 'question',
 		      -buttons => [M"Ja", M"Nein"])->Show eq M"Ja") {
 		     require Update;
@@ -4053,8 +4062,9 @@ sub do_iconframe {
 					  -class => "BBBike Changes",
 					 );
 				 });
-    $hpbm->command(-label => M"Busy-Zeiger zurücksetzen",
-		   -command => sub { ResetBusy($top) });
+## XXX del: Ist schon seit Aenon nicht mehr notwendig
+#    $hpbm->command(-label => M"Busy-Zeiger zurücksetzen",
+#		   -command => sub { ResetBusy($top) });
     menuright($help_button, $hpbm);
     menuarrow($hpbmb, $hpbm, $col++, -menulabel => M"~Hilfe");
 
@@ -4671,7 +4681,7 @@ sub set_default_geometry {
 	defined $Plugin::brinfo{y_len}) {
 	$top->geometry($Plugin::brinfo{x_len} . "x" . $Plugin::brinfo{y_len});
     } else {
-	if ($geometry) {
+	if ($geometry && !$open_maximized) {
 	    @want_extends = parse_geometry_string($geometry);
 	    if (!$want_extends[GEOMETRY_WIDTH] || !$want_extends[GEOMETRY_HEIGHT]) { # test on 0 or undef
 		($want_extends[GEOMETRY_WIDTH], $want_extends[GEOMETRY_HEIGHT]) =
@@ -6097,7 +6107,7 @@ sub set_bindings {
 		   $map_mode = MM_USEREDIT;
 		   set_cursor('delnet');
 	       });
-    if ($Tk::platform ne 'MSWin32') {
+    if ($Tk::platform ne 'MSWin32') { # XXX aber auf der Win98-Maschine von Monika laeuft es gut?!
 	bind_nomod($top, "<X>" => \&layer_editor);
     }
     bind_nomod($top, "<i>" => sub { show_info() });
@@ -9941,7 +9951,7 @@ sub mark_street {
 sub choose_from_plz {
     my(%args) = @_;
 
-    return if defined $city && $city ne "b";
+    return if $city ne "Berlin";
 
     my $batch = (defined $args{'-str'} || defined $args{'-coord'});
     if (!$batch) {
@@ -9954,7 +9964,7 @@ sub choose_from_plz {
 
     require PLZ;
     my $plz;
-    if (1) { # XXX
+    if ($city eq 'Berlin') {
 	require PLZ::Multi;
 	my @objs = ("Berlin.coords.data",
 		    "Potsdam.coords.data",
@@ -12812,12 +12822,13 @@ sub scale_maps {
 # Berlins.
 ### AutoLoad Sub
 sub center_best {
-    if (defined $center_on_str) {
+    if (defined $center_on_str && $center_on_str !~ /^\s*$/) {
 	choose_from_plz(-str   => $center_on_str);
-    } elsif (defined $center_on_coord) {
+    } elsif (defined $center_on_coord && $center_on_coord !~ /^\s*$/) {
 	choose_from_plz(-coord => $center_on_coord);
+    } elsif ($city_obj && $city_obj->can("center")) {
+	$c->center_view(transpose(split /,/, $city_obj->center));
     } else {
-#XXX auf das Brandenburger Tor zentrieren, falls Berlin
 	$c->center_view;
     }
 }
@@ -13078,7 +13089,12 @@ sub show_overview_populate {
 				      -command => ["xview", $overview_canvas]);
     $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
 
-    my $brandenburger_tor_coords = [8581,12243];
+    my $center_coords;
+    if ($city_obj && $city_obj->can("center")) {
+	$center_coords = [ split /,/, $city_obj->center ];
+    } else {
+	$center_coords = [8581,12243]; # Fallback: Brandenburger Tor
+    }
 
     my $arrow_update = sub {
 	$overview_canvas->delete('berlinarrow');
@@ -13097,10 +13113,10 @@ sub show_overview_populate {
 		my $anti_transpose = ($show_overview_mode eq 'brb'
 				      ? \&anti_transpose_small
 				      : \&anti_transpose_medium);
-		# zum Brandenburger Tor
+		# Distance to center (in Berlin: Brandenburger Tor)
 		my $entf = Strassen::Util::strecke
 		    ([$anti_transpose->($ix1,$iy1)],
-		     $brandenburger_tor_coords);
+		     $center_coords);
 		$overview_canvas->createLine
 		    ($ix1,$iy1,$ix2,$iy2,
 		     -arrow => "last",
@@ -16211,13 +16227,14 @@ sub DecBusy {
     }
 }
 
-### AutoLoad Sub
-sub ResetBusy {
-    my $top = shift;
-    return if !Tk::Exists($top);
-    $top->Unbusy;
-    $top->{'BusyCount'} = 0;
-}
+#XXXX del: ist nicht mehr noetig
+#### AutoLoad Sub
+#sub ResetBusy {
+#   my $top = shift;
+#    return if !Tk::Exists($top);
+#    $top->Unbusy;
+#    $top->{'BusyCount'} = 0;
+#}
 
 ### AutoLoad Sub
 sub redisplay_top {
@@ -16880,6 +16897,12 @@ sub fix_geometry {
     my $geom_string = shift || $top->geometry;
     my(@extends) = parse_geometry_string($geom_string);
     $extends[GEOMETRY_HEIGHT] += ($top->wrapper)[1];
+    if ($^O eq 'MSWin32') {
+        # This seems to be necessary at least on a Win98 machine
+        # or maybe only on systems where wrapper[1] returns 0?
+        # 20 should probably be replaced by the value of $SM_CYCAPTION, see Win32Util (19 on this system)
+        $extends[GEOMETRY_HEIGHT] += 20; # get titlebar height (?) by API functions XXX
+    }
     "$extends[GEOMETRY_WIDTH]x$extends[GEOMETRY_HEIGHT]" .
 	"+$extends[GEOMETRY_X]+$extends[GEOMETRY_Y]"
 }

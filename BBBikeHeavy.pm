@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.19 2004/09/30 22:25:01 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.20 2005/03/27 22:42:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -288,6 +288,7 @@ sub BBBikeHeavy::layer_editor {
 			    }
 		 },
 		 {'Text'  => M"Sehenswürdigkeiten",
+		   'Image' => $star_photo,
 		  'Visible' => $str_draw{'v'},
 		  'Data' => {Group => 'v',
 			     Type => 's',
@@ -1135,9 +1136,9 @@ sub BBBikeHeavy::any_bbbikedraw_export {
 	$draw->draw_map;
 	if (@realcoords) {
 	    $draw->draw_route;
-	}
-	if ($net && $draw->can("add_route_descr")) {
-	    $draw->add_route_descr(-net => $net)
+	    if ($net && $draw->can("add_route_descr")) {
+		$draw->add_route_descr(-net => $net)
+	    }
 	}
 	$draw->flush;
     };

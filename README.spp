@@ -22,7 +22,7 @@
 ## perlreplace #HTTPCVS#    '"http://sourceforge.net/cvs/?group_id=19142"'
 ## perlreplace #CVSREPO#    '":pserver:anonymous\@cvs.bbbike.sourceforge.net:/cvsroot/bbbike"'
 ## dnl
-## dnl $Id: README.spp,v 2.30 2004/11/29 23:06:50 eserte Exp $
+## dnl $Id: README.spp,v 2.32 2005/03/28 22:48:05 eserte Exp $
 ## dnl strpp source of README
 ## dnl
 =head1 README
@@ -489,18 +489,12 @@ läuft!
 
 =back
 
-## only XXX
-als erstes solltest du mal Xcode (das sind die developer tools) installieren. das findest du entweder auf einer mit Xcode beschrifteten CD (bei älteren Macs) oder in deinem Applications Ordner unter Installers/Xcode Tools/Developer.mpkg (bei neueren Macs).
-Wenn du das installierst hast du erst mal (neben vielem anderen) alle
-Perl dokumentationen und nen gcc (C kompiler). 
+Um compilieren zu können, sind die Entwicklertools notwendig. Diese
+werden "Xcode" genannt und befinden sich entweder auf einer
+gleichnamigen CD (bei älteren Macs) oder im Applications-Ordner unter
+C<Installers/Xcode Tools/Developer.mpkg> (bei neueren Macs).
 
-also, im Auslieferungszustand, befindet sich eine Perl v5.8.1-RC3, ohne Tk!
-Alles was ich installiert habe, ist eine X11, bzw. Darwin Umgebung, die gibts von und für Apple, auf der Apple - Homepage. Danach hab ich die XCode - Tools installiert, auch die sind auf der Apple Page zu finden. Bzw. bei mir, lag eine CD bei und die Pakete waren auf der Festplatte zu finden, unter installers!
-So, als nächstes und das wusste ich nicht hab ich ein Paket installiert, dass durch die installation, der Xcode Tools auf der Platte, in dem ordner der XCode Tools zu finden war es hies: X11sdk.pkg
-Zu guter letzt, über die Cpan-Shell, noch ein Force install Tk und
-alles lioef wunderbar!
-
-## yes
+Es wird auch eine X11- bzw. Darwin-Umgebung benötigt.
 
 ## only DE
 
