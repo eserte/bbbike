@@ -664,4 +664,23 @@ userdel	2 9925,11947 9907,12055
 userdel	2 10582,13104 10445,13091
 EOF
      },
+     { from  => 1093924800, # 2004-08-31 06:00
+       until => 1098482400, # 2004-10-23 00:00
+       text  => 'Gartenstraße zwischen Invalidenstraße und Bernauer Straße gesperrt, Baustelle, Einbahnstraße in südlicher Richtung wird eingerichtet, zudem wird die Ackerstraße zwischen Invalidenstraße und Bernauer Straße gesperrt. Dauer: 01.09.2004, 06.00 Uhr bis 22.10.2004',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 9383,13978 9236,14157
+userdel	2 9400,14400 9628,14215
+userdel	2 9628,14215 9737,14126
+userdel	2 9737,14126 9810,14066
+EOF
+     },
+     { from  => 1093928400, # 2004-08-31 07:00
+       until => 1094234400, # 2004-09-03 20:00
+       text  => 'Dauer: 01.09.2004 07:00 Uhr bis 03.09.2004 20:00 Uhr. Rudower Chaussee, gesperrt von Agastraße bis Großberliner Damm in Richtung Treptow',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 19770,3343 19611,3167
+EOF
+     },
     );
