@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.10 2004/10/02 16:03:20 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.11 2004/10/05 21:53:48 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -206,7 +206,7 @@ $agent->form("BBBikeForm");
 { local $^W; $agent->current_form->value('ziel', 'Römische Bäder'); };
 $agent->submit();
 
-like($agent->content, qr{\QGeschwister-Scholl-Str. (Potsdam)/(Am Schafgraben) (Potsdam)}i,  "Correct goal resolution (Geschwister-Scholl ...)");
+like($agent->content, qr{\QHans-Sachs-Str. (Potsdam)/Meistersingerstr. (Potsdam)}i,  "Correct goal resolution (Hans-Sachs-Str. ...)");
 like($agent->content, qr{\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)}i,  "Correct goal resolution (Marquardt ...)");
                            
 }
