@@ -59,6 +59,8 @@ sub dialog {
     $p = str_object();
 }
 
+my($show_places);
+
 sub buttonframe {
     my($toplevel, $container) = @_;
     $container->Button(-text => M("Hinzufügen"),
@@ -69,6 +71,11 @@ sub buttonframe {
 		       -command => [\&change_point, $toplevel])->pack(-fill => "x");
     $container->Button(-text => M("Löschen"),
 		       -command => [\&del, $toplevel])->pack(-fill => "x");
+    $show_places = 0;
+    $container->Checkbutton(-text => M("Alle zeigen"),
+			    -command => \&toggle_show,
+			    -variable => \$show_places,
+			   )->pack(-fill => "x");
 }
 
 sub add {
@@ -243,6 +250,16 @@ sub change_file {
     }
     main::status_message(Mfmt("Konnte <%s> nicht in der persönlichen Datei finden", $oldname), "err");
     0;
+}
+
+sub toggle_show {
+    if ($show_places) {
+	require BBBikeAdvanced;
+	main::custom_draw("p", "personal", filename(),
+			  -namedraw => 1, -close => 0);
+    } else {
+	main::plot('p', "personal", -draw => 0);
+    }
 }
 
 1;
