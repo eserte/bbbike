@@ -66,6 +66,12 @@ sub id {
     $basedir . join("_", sort map { File::Basename::basename($_) } @depfiles);
 }
 
+sub dependent_files {
+    my $self = shift;
+    my @depfiles = map { $_->dependent_files } @{ $self->{SubObj} };
+    @depfiles;
+}
+
 sub is_current {
     my $self;
     for my $subobj (@{ $self->{SubObj} }) {
