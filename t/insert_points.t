@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points.t,v 1.7 2004/08/27 06:59:44 eserte Exp $
+# $Id: insert_points.t,v 1.8 2004/11/27 12:08:00 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -54,7 +54,9 @@ SKIP: {
 					$dudenstr_orig)->getlines;
 	chomp @res;
 	is(join(" ", sort @res),
-	   join(" ", qw(ampeln-orig
+	   join(" ", qw(../misc/ampelschaltung-orig.txt
+			ampeln-orig
+			ampelschaltung-orig
 			hoehe-orig
 			housenumbers-orig
 			radwege-orig
@@ -71,7 +73,9 @@ SKIP: {
 					$dudenstr)->getlines;
 	chomp @res;
 	is(join(" ", sort @res),
-	   join(" ", qw(ampeln
+	   join(" ", qw(../misc/ampelschaltung.txt
+			ampeln
+			ampelschaltung
 			hoehe
 			housenumbers
 			radwege_exact

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.19 2004/10/02 18:18:00 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.20 2004/11/27 12:26:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -143,16 +143,16 @@ sub add_button {
 # 		   main::plot('str','fz', -draw => 1);
 # 	       }],
 	      [Button => "Standard upload all",
-	       -command => sub { upload("upload") },
+	       -command => sub { make_gps_target("upload") },
 	      ],
 	      [Button => "Standard upload trk only",
-	       -command => sub { upload("upload-trk") },
+	       -command => sub { make_gps_target("upload-trk") },
 	      ],
 	      [Button => "Standard upload wpt only",
-	       -command => sub { upload("upload-wpt") },
+	       -command => sub { make_gps_target("upload-wpt") },
 	      ],
 	      [Button => "Update tracks and matches.bbd",
-	       -command => sub { upload("tracks develtracks ../../tmp/unique-matches.bbd") },
+	       -command => sub { make_gps_target("tracks develtracks ../../tmp/unique-matches.bbd") },
 	      ],
 	      [Button => "Add streets-accurate.bbd (all accurate GPS tracks)",
 	       -command => sub {
@@ -204,11 +204,11 @@ sub add_button {
 	    );
 }
 
-sub upload {
+sub make_gps_target {
     my $rule = shift;
     if (fork == 0) {
 	exec(qw(xterm -e sh -c),
-	     'cd ' . $bbbike_rootdir . '/misc/gps_data && make ' . $rule . '; sleep 9999');
+	     'cd ' . $bbbike_rootdir . '/misc/gps_data && make ' . $rule . '; echo Ready; sleep 9999');
 	die $!;
     }
 }

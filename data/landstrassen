@@ -862,11 +862,14 @@ Am Neuen Garten (Potsdam)	B -12362,-370 -12557,11
 Am Neuen Garten (Potsdam)	N -12557,11 -12462,221 -12378,284 -12184,803 -12181,1196 -12185,1388
 Alleestr. (Potsdam)	B -12557,11 -12855,-72
 Am Kanal  (Potsdam)	B -12834,-1362 -12718,-1327 -12553,-1278 -12317,-1212
-Am Kanal (Potsdam)	N -12317,-1212 -12082,-1147 -12040,-1169
-Große Fischerstr. (Potsdam)	N -12040,-1169 -11981,-1390
-zur Hl.-Geist-Str. (Potsdam)	NN -12100,-962 -12104,-1062
-Hl.-Geist-Str. (Potsdam)	N -12104,-1062 -12082,-1147 -12062,-1378
-Holzmarktstr. (Potsdam)	N -12148,-934 -12100,-962 -11977,-934
+Am Kanal (Potsdam)	N -12317,-1212 -12070,-1153 -12040,-1169
+Große Fischerstr. (Potsdam)	N -12040,-1169 -12011,-1273 -11981,-1390
+Kleine Fischerstr. (Potsdam)	N -12070,-1269 -12011,-1273
+zur Hl.-Geist-Str. (Potsdam)	NN -12100,-962 -12078,-1068
+Hl.-Geist-Str. (Potsdam)	N -12078,-1068 -12070,-1153 -12070,-1269 -12062,-1378
+Türkstr. (Potsdam)	N -12231,-1078 -12078,-1068 -12020,-1062
+Holzmarktstr. (Potsdam)	N -12148,-934 -12100,-962 -11910,-945
+Holzmarktstr - Humboldtbrücke (Potsdam)	NN -11910,-945 -11875,-925
 Russ. Kolonie (B2) (Potsdam)	B -12855,-72 -12961,-136 -13068,-115
 Russ. Kolonie (Potsdam)	NN -13068,-115 -13091,-8
 Russ. Kolonie (Potsdam)	NN -13050,337 -13000,379 -12918,431 -12812,371
@@ -927,7 +930,7 @@ Am Schragen (Potsdam)	N -13157,394 -13050,337
 Am Schragen (B2) (Potsdam)	B -13050,337 -13091,-8
 Jägerallee (B2) (Potsdam)	B -13091,-8 -13111,-136
 Jägerallee (Potsdam)	H -13111,-136 -13237,-796
-Berliner Str. (B1) (Potsdam)	B -12317,-1212 -12296,-1190 -12148,-934 -12063,-784 -11926,-580 -11870,-495 -11723,-220 -11665,-143 -10825,465
+Berliner Str. (B1) (Potsdam)	B -12317,-1212 -12296,-1190 -12231,-1078 -12148,-934 -12063,-784 -11926,-580 -11870,-495 -11723,-220 -11665,-143 -10825,465
 Werderscher Damm (Potsdam)	H -17929,-1654 -17482,-1546 -17268,-1631 -17035,-1417 -16608,-1395 -16008,-1753
 Forststr. (Potsdam)	H -15722,-3398 -15766,-3141 -16070,-2159 -16008,-1753
 Stahnsdorfer Str. (Potsdam)	N -7821,-1890 -8415,-1928 -9225,-1950 -9734,-1896
@@ -955,7 +958,7 @@ Lotte-Pulewka-Str. (Potsdam)	N -11145,-1959 -11674,-1659
 Humboldtring (Potsdam)	H -11356,-1317 -11399,-1339 -11461,-1424 -11674,-1659 -11822,-1874
 Friedrich-List-Str. (Potsdam)	H -12493,-1896 -12528,-1950 -11822,-1959 -11209,-2023 -11145,-1959 -10997,-1787
 (Verbindung ISIS - Humboldtring) (Potsdam)	H -11822,-1959 -11822,-1874
-Nuthestr. (Potsdam)	HH -12063,-784 -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317 -11226,-1445 -11140,-1702 -11144,-2193 -9063,-3934 -8128,-4073 -6439,-3969
+Nuthestr. (Potsdam)	HH -12063,-784 -11875,-925 -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317 -11226,-1445 -11140,-1702 -11144,-2193 -9063,-3934 -8128,-4073 -6439,-3969
 (Am Babelsberger Park - Humboldtbrücke) (Potsdam)	NN -11407,-1090 -11460,-1098 -11549,-1169
 Am Babelsberger Park (Potsdam)	NN -11061,-1744 -11098,-1616 -11084,-1396 -11407,-1090 -11486,-1018
 (Umfahrung Nuthestr. Richtung Babelsberg) (Potsdam)	NN -11461,-1424 -11226,-1617 -11225,-1745 -10997,-1787
@@ -1015,9 +1018,12 @@ An der Alten Zauche (Potsdam)	H -10746,-4024 -10682,-3960 -10619,-3767 -10664,-3
 Yorckstr. (Potsdam)	N -13234,-1320 -12834,-1362
 Lindenallee (Potsdam)	N -16062,-993 -16331,-1040
 Lindenallee (Potsdam)	NN -16331,-1040 -18100,-1171
-Burgstr. (Potsdam)	N -12317,-1212 -12275,-1378 -12256,-1434 -12265,-1512
-Inselbrücke (Potsdam)	NN -12265,-1512 -12246,-1587
-Freundschaftsinsel (Potsdam)	NN -12246,-1587 -12396,-1681 -12567,-1817
+Burgstr. (Potsdam)	N -12317,-1212 -12281,-1378 -12265,-1434 -12256,-1456
+Burgstr. (Potsdam)	N -12110,-1379 -12062,-1378
+Eltesterstr. (Potsdam)	N -12062,-1378 -11981,-1390
+Inselbrücke (Potsdam)	NN -12256,-1456 -12260,-1503
+Freundschaftsinsel (Potsdam)	NN -12260,-1503 -12253,-1589 -12396,-1681 -12567,-1817
+An der Alten Fahrt (Potsdam)	NN -12265,-1434 -12114,-1409 -12110,-1379
 Schlaatzstr. (Potsdam)	N -11681,-2256 -11506,-2368
 Schlaatzweg (Potsdam)	NN -11506,-2368 -11425,-2384 -11431,-2425 -11240,-2525 -10903,-2700 -10624,-2957
 Horstweg - Stern (An der Nuthe) (Potsdam)	NN -10553,-2859 -10071,-3321 -9425,-3990 -9375,-4159 -9306,-4259 -9234,-4190 -9009,-3837
