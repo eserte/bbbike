@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.34 2004/12/11 00:01:05 eserte Exp eserte $
+# $Id: Makefile,v 2.35 2004/12/23 01:19:26 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -124,11 +124,12 @@ strassen:	.strassen.tmp plaetze
 	rm $@~
 
 .for f in ${COOKED_TARGETS}
-$f:	${f:S/-cooked$//} inaccessible_landstrassen
+_f_raw_${f}:=${f:S/-cooked$//}
+$f:	${_f_raw_${f}} inaccessible_landstrassen
 	-@${WRITEABLE} $@
 	perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib -MStrassen -e \
 	    '$$s = Strassen->new($$ARGV[0]); $$ina = Strassen->new($$ARGV[1]); $$s->new_with_removed_points($$ina)->write("-")' \
-	    ${f:S/-cooked$//} inaccessible_landstrassen \
+	    ${_f_raw_${f}} inaccessible_landstrassen \
 	    > $@ || rm -f $@
 	-@${READONLY} $@
 .endfor
