@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.7 2003/09/03 16:06:46 eserte Exp $
+# $Id: wapcgi.t,v 1.8 2003/10/01 07:01:01 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -21,6 +21,8 @@ BEGIN {
 	print "1..0 # skip: no Test module\n";
 	exit;
     }
+    # XXX Image::Info does not recognize wbmp (really?)
+    #eval { use Image::Info qw(image_info) };
 }
 
 my $ua = new LWP::UserAgent;
@@ -42,7 +44,7 @@ if (!@wap_url) {
     @wap_url = "http://www/bbbike/cgi/wapbbbike.cgi";
 }
 
-plan tests => 20 * scalar @wap_url;
+plan tests => (22 + (defined &image_info ? 2 : 0)) * scalar @wap_url;
 
 for my $wapurl (@wap_url) {
     my $resp;
@@ -82,6 +84,11 @@ for my $wapurl (@wap_url) {
     $resp = $ua->get($url);
     ok(!!$resp->is_success, 1, $url);
     ok($resp->header('Content_Type'), qr|^image/|, $url);
+    ok(length $resp->content > 0, 1, "No content: $url");
+    if (defined &image_info) {
+	ok(image_info($resp->content)->{file_media_type},
+	   $resp->header('Content_Type'));
+    }
 
     $resp = $ua->get($surr_url);
     ok($resp->header('Content_Type'), qr|^text/vnd.wap.wml|, $surr_url);
@@ -94,6 +101,11 @@ for my $wapurl (@wap_url) {
     $resp = $ua->get($surr_image_url);
     ok(!!$resp->is_success, 1, $surr_image_url);
     ok($resp->header('Content_Type'), qr|^image/|, $surr_image_url);
+    ok(length $resp->content > 0, 1, "No content: $surr_image_url");
+    if (defined &image_info) {
+	ok(image_info($resp->content)->{file_media_type},
+	   $resp->header('Content_Type'));
+    }
 }
 
 sub validate_wml {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.2 2003/08/08 19:31:30 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.3 2003/09/22 20:02:34 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -80,11 +80,16 @@ like($agent->content, qr/Route/);
     my $formnr = (($agent->forms)[0]->attr("name") =~ /Ausweichroute/ ? 3 : 2);
     $agent->form($formnr);
 }
-{ local $^W; $agent->current_form->value('pref_speed', '25'); };
-{ local $^W; $agent->current_form->value('pref_cat', 'N_RW'); };
-{ local $^W; $agent->current_form->value('pref_quality', 'Q2'); };
-{ local $^W; $agent->current_form->value('pref_ampel', 'yes'); };
-{ local $^W; $agent->current_form->value('pref_green', 'yes'); };
+eval { local $^W; $agent->current_form->value('pref_speed', '25'); };
+is($@, "", "setting pref_speed ok");
+eval { local $^W; $agent->current_form->value('pref_cat', 'N_RW'); };
+is($@, "", "setting pref_cat ok");
+eval { local $^W; $agent->current_form->value('pref_quality', 'Q2'); };
+is($@, "", "setting pref_quality ok");
+eval { local $^W; $agent->current_form->value('pref_ampel', 'yes'); };
+is($@, "", "setting pref_ampel ok");
+eval { local $^W; $agent->current_form->value('pref_green', 'GR2'); };
+is($@, "", "setting pref_green ok");
 $agent->submit();
 
 like($agent->content, qr/Route/);

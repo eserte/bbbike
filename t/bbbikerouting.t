@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.4 2003/08/25 06:47:23 eserte Exp $
+# $Id: bbbikerouting.t,v 1.5 2003/10/01 07:01:00 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -19,10 +19,10 @@ $Data::Dumper::Sortkeys = $Data::Dumper::Sortkeys = 1;
 
 BEGIN {
     if (!eval q{
-	use Test;
+	use Test::More;
 	1;
     }) {
-	print "# tests only work with installed Test module\n";
+	print "# tests only work with installed Test::More module\n";
 	print "1..1\n";
 	print "ok 1\n";
 	exit;
@@ -48,6 +48,8 @@ if (!GetOptions("full|slow|all" => sub { $all = 1 },
 	       )) {
     die "usage!";
 }
+
+if ($all) { $v = 1 }
 
 if (defined $v && $v > 1) {
     require Strassen;
@@ -119,7 +121,7 @@ sub _my_init_context {
 sub do_tests {
 
     my $routing = BBBikeRouting->new();
-    ok(ref $routing, "BBBikeRouting");
+    is(ref $routing, "BBBikeRouting");
     $routing->init_context;
     my $context = $routing->Context;
     _my_init_context($context);
@@ -131,39 +133,39 @@ sub do_tests {
     ok(1);
 
     $routing->Start->Street("Dudenstr");
-    ok($routing->Start->Street, "Dudenstr");
+    is($routing->Start->Street, "Dudenstr", "Check start street");
     $routing->Goal->Street("Sonntagstr/Böcklinstr.");
-    ok($routing->Goal->Street, "Sonntagstr/Böcklinstr.");
+    is($routing->Goal->Street, "Sonntagstr/Böcklinstr.", "Check goal street");
     $routing->search;
-    ok($routing->Start->Street, "Dudenstr."); # normalized
-    ok($routing->Goal->Street, "Sonntagstr/Böcklinstr."); # XXX not yet normalized
+    is($routing->Start->Street, "Dudenstr.", "Normalized start street");
+    is($routing->Goal->Street, "Sonntagstr/Böcklinstr.", "Normalized goal street"); # XXX not yet normalized
     my $goal_street = "Sonntagstr.";
-    ok(scalar @{ $routing->Path } > 0);
+    ok(scalar @{ $routing->Path } > 0, "Non-empty path");
     my $path = clone($routing->Path);
-    ok(scalar @{ $routing->RouteInfo } > 0);
+    ok(scalar @{ $routing->RouteInfo } > 0, "Non-empty route info");
     my $routeinfo = clone($routing->RouteInfo);
     {
 	local $^W; # no "numeric" warning
-	ok($routing->RouteInfo->[0]->{Whole} < $routing->RouteInfo->[-1]->{Whole});
+	ok($routing->RouteInfo->[0]->{Whole} < $routing->RouteInfo->[-1]->{Whole}, "Positive distance");
     }
-    ok($routing->RouteInfo->[-1]->{Street}, $goal_street);
+    is($routing->RouteInfo->[-1]->{Street}, $goal_street, "Goal street is really goal street");
     my $new_goal = BBBikeRouting::Position->new;
     $new_goal->Street("Alexanderplatz");
     $routing->continue($new_goal);
-    ok($routing->Goal->Street, "Alexanderplatz");
-    ok(scalar @{$routing->Via}, 1);
-    ok($routing->Via->[0]->Street, "Sonntagstr/Böcklinstr."); # XXX not yet normalized
+    is($routing->Goal->Street, "Alexanderplatz", "Continued to new goal");
+    is(scalar @{$routing->Via}, 1, "With a new via");
+    is($routing->Via->[0]->Street, "Sonntagstr/Böcklinstr.", "Correct via"); # XXX not yet normalized
     $routing->search;
-    ok($routing->RouteInfo->[-1]->{Street}, $routing->Goal->Street);
+    is($routing->RouteInfo->[-1]->{Street}, $routing->Goal->Street);
 
     $routing->delete_to_last_via;
-    ok(Data::Dumper->new([$routing->Path],[])->Useqq(1)->Dump,
+    is(Data::Dumper->new([$routing->Path],[])->Useqq(1)->Dump,
        Data::Dumper->new([$path],[])->Useqq(1)->Dump);
-    ok(Data::Dumper->new([$routing->RouteInfo],[])->Useqq(1)->Dump,
+    is(Data::Dumper->new([$routing->RouteInfo],[])->Useqq(1)->Dump,
        Data::Dumper->new([$routeinfo],[])->Useqq(1)->Dump);
 
     if ($cmp_path) {
-	ok(Data::Dumper->new([$cmp_path],[])->Useqq(1)->Dump,
+	is(Data::Dumper->new([$cmp_path],[])->Useqq(1)->Dump,
 	   Data::Dumper->new([$path],[])->Useqq(1)->Dump);
     } else {
 	$cmp_path = $path;
@@ -175,13 +177,13 @@ sub do_tests {
     $custom_pos->Coord("4711,1234");
     my $old_goal = $routing->Goal;
     $routing->add_position($custom_pos);
-    ok($routing->Goal->Coord, "4711,1234");
-    ok($routing->Via->[-1]->Coord, $old_goal->Coord);
-    ok($routing->RouteInfo->[-1]->{Coords}, join(",", @{$routing->Path->[-2]}));
+    is($routing->Goal->Coord, "4711,1234", "Added freehand position");
+    is($routing->Via->[-1]->Coord, $old_goal->Coord);
+    is($routing->RouteInfo->[-1]->{Coords}, join(",", @{$routing->Path->[-2]}));
     {
 	local $^W = 0;
-	ok($routing->RouteInfo->[-1]->{Whole} =~ /km/);
-	ok($routing->RouteInfo->[-1]->{Whole} > $routing->RouteInfo->[-2]->{Whole});
+	like($routing->RouteInfo->[-1]->{Whole}, qr/km/);
+	ok($routing->RouteInfo->[-1]->{Whole} > $routing->RouteInfo->[-2]->{Whole}, "Distance Ok");
     }
 
     {
@@ -194,53 +196,54 @@ sub do_tests {
 	$custom_pos->Street("???");
 	$custom_pos->Coord("4711,1234");
 	$routing2->add_position($custom_pos);
-	ok($routing2->Start->Coord, "4711,1234");
-	ok($routing2->Start->Attribs =~ /\bfree\b/);
+	is($routing2->Start->Coord, "4711,1234", "Added freehand position");
+	like($routing2->Start->Attribs, qr/\bfree\b/);
 	ok(UNIVERSAL::isa($routing2->RouteInfo,"ARRAY"));
 	ok(UNIVERSAL::isa($routing2->Path,"ARRAY"));
-	ok(join(",", @{$routing2->Path->[-1]}), "4711,1234");
+	is(join(",", @{$routing2->Path->[-1]}), "4711,1234");
 
 	# add another freehand position
 	$custom_pos = BBBikeRouting::Position->new;
 	$custom_pos->Street("???");
 	$custom_pos->Coord("1234,4711");
 	$routing2->add_position($custom_pos);
-	ok($routing2->Goal->Coord, "1234,4711");
-	ok($routing2->Goal->Attribs =~ /\bfree\b/);
-	ok(scalar @{$routing2->RouteInfo}, 1);
-	ok(scalar @{$routing2->Path}, 2);
-	ok(join(",", @{$routing2->Path->[-1]}), "1234,4711");
-	ok(join(",", @{$routing2->Path->[-2]}), "4711,1234");
+	is($routing2->Goal->Coord, "1234,4711", "Added another freehand position");
+	like($routing2->Goal->Attribs, qr/\bfree\b/);
+	is(scalar @{$routing2->RouteInfo}, 1);
+	is(scalar @{$routing2->Path}, 2);
+	is(join(",", @{$routing2->Path->[-1]}), "1234,4711");
+	is(join(",", @{$routing2->Path->[-2]}), "4711,1234");
 
 	# now an existing position, but do _no_ search yet
 	$custom_pos = BBBikeRouting::Position->new;
 	$custom_pos->Street("Dudenstr.");
 	$routing2->resolve_position($custom_pos);
 	$routing2->add_position($custom_pos);
-	ok(scalar @{$routing2->RouteInfo}, 2);
-	ok(scalar @{$routing2->Path}, 3);
+	is(scalar @{$routing2->RouteInfo}, 2, "Correct route info element count");
+	is(scalar @{$routing2->Path}, 3, "Correct path element count");
 
 	# again an existing position _with_ search
 	$custom_pos = BBBikeRouting::Position->new;
 	$custom_pos->Street("Alexanderplatz");
 	$routing2->continue($custom_pos);
 	$routing2->search;
-	ok(1);
+	ok(1, "No errors while continuing search");
     }
 
     {
 	my $routing2 = BBBikeRouting->new();
-	ok(ref $routing2, "BBBikeRouting");
+	is(ref $routing2, "BBBikeRouting");
 	$routing2->init_context;
 	_my_init_context($routing2->Context);
 	$routing2->Context->Vehicle("oepnv");
 	$routing2->Start->Street("Platz der Luftbrücke");
-	ok($routing2->Start->Street, "Platz der Luftbrücke");
+	is($routing2->Start->Street, "Platz der Luftbrücke", "Station as start");
 	$routing2->Goal->Street("Wannsee");
-	ok($routing2->Goal->Street, "Wannsee");
+	is($routing2->Goal->Street, "Wannsee", "Station as goal");
 	$routing2->search;
 	# nach Wannsee kommt man nur mit der S- oder R-Bahn
-	ok($routing2->RouteInfo->[-1]->{Street} =~ /^[SR]\d+$/);
+	like($routing2->RouteInfo->[-1]->{Street}, qr/^[SR]\d+$/,
+	     "Vehicle=oepnv test");
 
 	# clear the positions and check it with street names
 	$routing2->Start(BBBikeRouting::Position->new);
@@ -250,10 +253,11 @@ sub do_tests {
 	eval {
 	    $routing2->search;
 	};
-	ok($@, "", "Error while searching: $@, Routing start object is: " . Dumper($routing2->Start) . " and goal object is: " . Dumper($routing2->Goal));
-	ok($routing2->Start->Street, "Platz der Luftbrücke");
-	ok($routing2->Goal->Street, "Wannsee");
-	ok($routing2->RouteInfo->[-1]->{Street} =~ /^[SR]\d+$/);
+	is($@, "") or diag("Error while searching: $@, Routing start object is: " . Dumper($routing2->Start) . " and goal object is: " . Dumper($routing2->Goal));
+	is($routing2->Start->Street, "Platz der Luftbrücke", "Correct start");
+	is($routing2->Goal->Street, "Wannsee", "Correct goal");
+	like($routing2->RouteInfo->[-1]->{Street}, qr/^[SR]\d+$/,
+	     "Route info contains S-Bahn/R-Bahn");
     }
 
     # changing the existing scope
@@ -261,9 +265,9 @@ sub do_tests {
     $routing->Start->Street("B2");
     $routing->Goal->Street("B96");
     $routing->search;
-    ok($routing->Start->Street =~ /^B2/); # normalized
-    ok($routing->Goal->Street =~ /^B96/); # normalized
-    ok(scalar @{ $routing->Path } > 0);
+    like($routing->Start->Street, qr/^B2/); # normalized
+    like($routing->Goal->Street, qr/^B96/); # normalized
+    ok(scalar @{ $routing->Path } > 0, "scope=wideregion test");
     ok(scalar @{ $routing->RouteInfo } > 0);
 }
 

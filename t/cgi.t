@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.14 2003/09/03 16:06:46 eserte Exp $
+# $Id: cgi.t,v 1.15 2003/10/01 07:01:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -253,7 +253,7 @@ for my $cgiurl (@urls) {
 	}
 
 	# This created degenerated routes because of missing handling of "B"
-	# category
+	# (Bundesstraßen) category
 	$req = new HTTP::Request
 	    ('GET', "$action?startname=Otto-Nagel-Str.+%28Potsdam%29&startplz=&startc=-11978%2C-348&zielname=Sonntagstr.&zielplz=10245&zielc=14598%2C11245&scope=region&pref_seen=1&pref_speed=20&pref_cat=N2&pref_quality=&output_as=perldump");
 	$res = $ua->request($req);
@@ -395,7 +395,6 @@ for my $cgiurl (@urls) {
 	ok($content =~ /^GIF8/) or diag $url;
     }
 
- XXX:
     for my $imagetype (
 		       "gif", "png", "jpeg",
 		       "svg", "mapserver",
@@ -431,6 +430,8 @@ for my $cgiurl (@urls) {
 	    ok(defined uncompr($res));
 	}
     }
+
+    XXX:
 
     # Semantik ein bisschen testen:
     {
