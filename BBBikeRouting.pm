@@ -43,6 +43,7 @@ $BBBikeRouting::Context::Members =
      Verbose => "\$",
      MultipleChoices => "\$",
      MultipleChoicesLimit => "\$",
+     UseTelbuchDBApprox => "\$",
     };
 struct('BBBikeRouting::Context' => $BBBikeRouting::Context::Members);
 
@@ -111,6 +112,7 @@ sub init_context {
     $context->RouteInfoKm(1);
     $context->MultipleChoices(1);
     $context->MultipleChoicesLimit(undef);
+    $context->UseTelbuchDBApprox(0);
     $self;
 }
 
@@ -315,6 +317,8 @@ sub resolve_position {
     my $street = shift || $pos_o->Street;
     my $citypart = shift || $pos_o->Citypart;
     my(%args) = @_;
+    my $fixposition = $args{fixposition};
+    if (!defined $fixposition) { $fixposition = 1 }
     my $context = $self->Context;
 
     if ($context->Vehicle eq 'oepnv') {
@@ -345,6 +349,44 @@ sub resolve_position {
 	    return $pos_o->Coord;
 	} # else fallback
 	warn "Can't find city $city in @{[ $cities->file ]}, fallback to streets";
+    }
+
+    if ($context->UseTelbuchDBApprox) {
+	# XXX experimental
+	my $coord;
+	my $return;
+	eval {
+	    require TelbuchDBApprox;
+	    my $tb = TelbuchDBApprox->new(%args);
+	    my(@res) = $tb->search($street, undef, $citypart);
+	    if (@res == 1) {
+		$pos_o->Street  ($res[0]{Street});
+		$pos_o->Citypart($res[0]{Citypart});
+		$pos_o->Coord   ($res[0]{Coord});
+		$coord = $pos_o->Coord;
+		$return = 1;
+	    } elsif (@res && $context->MultipleChoices) {
+		my $limit = $context->MultipleChoicesLimit;
+		@$choices_o = ();
+		my %seen;
+		for (@res) {
+		    my $new_pos = $self->BBBikeRouting_Position_Class->new;
+		    my $key = "$_->{Street}, $_->{Citypart}";
+		    next if $seen{$key};
+		    $new_pos->Street  ($_->{Street});
+		    $new_pos->Citypart($_->{Citypart});
+		    $new_pos->Coord   ($_->{Coord});
+		    push @$choices_o, $new_pos;
+		    $seen{$key}++;
+		    last if defined $limit && @$choices_o >= $limit;
+		}
+		$return = 1;
+	    }
+	};
+	warn $@ if $@;
+	if ($return) {
+	    return $coord;
+	}
     }
 
     if ($street =~ m|/|) { # StreetA/StreetB
@@ -440,7 +482,10 @@ sub resolve_position {
 	$pos_o->Coord($r->[Strassen::COORDS()]->[0]);
     }
 
-    $self->fix_position($pos_o);
+    if ($fixposition) {
+	$self->fix_position($pos_o);
+    }
+    $pos_o->Coord;
 }
 
 sub get_position {
