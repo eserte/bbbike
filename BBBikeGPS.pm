@@ -195,10 +195,42 @@ sub BBBikeGPS::draw_gpsman_data {
 	my $gestern = sprintf("$gpsman_data_dir/%04d%02d%02d", $l_gestern[5]+1900,$l_gestern[4]+1,$l_gestern[3]);
 	my $ff = $cfc_top->Frame->pack(-fill => "x", -expand => 1);
 	my $row = 0;
-	$ff->Button(-text => M"Gpsman-Datenverzeichnis",
-		    -command => sub { $file = $gpsman_data_dir }
-		   )->grid(-row => $row, -column => 0, -sticky => "ew",
-			   -columnspan => 2);
+	{
+	    my $columnspan;
+	    my $can_dateentry = 0;
+	    if (eval { require Tk::DateEntry; 1 }) {
+		$can_dateentry = 1;
+	    } else {
+		$columnspan = 2;
+	    }
+	    $ff->Button(-text => M"Gpsman-Datenverzeichnis",
+			-command => sub { $file = $gpsman_data_dir }
+		       )->grid(-row => $row, -column => 0, -sticky => "ew",
+			       (defined $columnspan ? (-columnspan => $columnspan) : ()),
+			      );
+	    if ($can_dateentry) {
+		my $date;
+		my $de = $ff->DateEntry
+		    (-dateformat => 2,
+		     -todaybackground => "yellow",
+		     -weekstart => 1,
+		     -textvariable => \$date,
+		     -formatcmd => sub {
+			 my($year,$month,$day) = @_;
+			 $file = "$gpsman_data_dir/" . sprintf("%04d%02d%02d", $year, $month, $day) . ".trk";
+			 "$year/$month/$day";
+		     },
+		    )->grid(-row => $row, -column => 1, -sticky => "ew");
+		my $dee = $de->Subwidget("entry"); # XXX hackery
+		$dee->configure(-relief => "flat",
+				-highlightthickness => 0,
+				-bd => 0);
+		$dee->Label(-text => "Datum:",
+			    -anchor => "e")->place(-x => 0, -y => 0,
+						   -relwidth => 1,
+						   -relheight => 1);
+	    }
+	}
 	$row++;
 	$ff->Button(-text => M"Track heute",
 		    (!-r "$heute.trk" ? (-state => "disabled") : ()),

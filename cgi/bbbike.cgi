@@ -2380,7 +2380,7 @@ sub search_coord {
 	for my $tb (@temp_blocking) {
 	    if (($t >= $tb->{from} &&
 		 $t <= $tb->{until}) ||
-		(defined $q->param("test") && grep { /^temp-blocking/ } $q->param("test"))) {
+		(defined $q->param("test") && grep { /^(?:custom|temp)[-_]blocking/ } $q->param("test"))) {
 		my $type = $tb->{type} || 'gesperrt';
 		push @current_temp_blocking, $tb;
 		$tb->{'index'} = $index;

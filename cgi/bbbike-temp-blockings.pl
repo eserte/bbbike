@@ -107,4 +107,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Kurfürstendamm zwischen Joachimstaler Straße und Fasanenstraße in Fahrtrichtung Westen gesperrt (Kranarbeiten). Dauer: 27.07.2003 zwischen 05.30 Uhr und ca. 22.00 Uhr',
        type  => "handicap",
      },
+     { from  => 1061539200, # 2003-08-22 10:00
+       until => 1061661600, # 2003-08-23 20:00
+       file  => '20030823.bbd',
+       text  => 'John-Foster-Dulles-Allee zwischen Spreeweg und Entlastungsstraße, Sportveranstaltung, Straße in beiden Richtungen gesperrt. Dauer: 23.08.2003, 10.00 Uhr bis 20.00 Uhr',
+       type  => 'gesperrt',
+     },
     );
