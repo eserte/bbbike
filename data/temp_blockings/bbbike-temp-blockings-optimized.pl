@@ -259,6 +259,22 @@ userdel	q4 22217,1108 22162,1067
          'data' => 'userdel	2 15657,10846 15628,10915
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1114034400,
+         'text' => 'B 246; (Gerichtsstr.); OL Zossen, zw. Friedhofsweg u. Luchweg Straßenbauarbeiten Vollsperrung 29.03.2005-20.04.2005 ',
+         'from' => 1111960800,
+         'data' => 'userdel	q4 15178,-20983 15072,-21175
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1117576800,
+         'text' => 'K 6501; (Bahnhofstr.); OD Schildow, zw. Hauptstr. u. F.-Schmidt-Str. grundhafter Straßenbau Vollsperrung 16.03.2005-31.05.2005 ',
+         'from' => 1110841200,
+         'data' => 'userdel	q4 8066,25646 8182,25608
+',
+         'type' => 'handicap'
        }
      
 );

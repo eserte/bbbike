@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.18 2005/03/15 23:08:23 eserte Exp eserte $
+# $Id: bbbike.cgi,v 7.20 2005/03/17 00:08:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -664,7 +664,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.20 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2497,7 +2497,6 @@ sub search_coord {
     my $starthnr    = $q->param('starthnr');
     my $viahnr      = $q->param('viahnr');
     my $zielhnr     = $q->param('zielhnr');
-    my $alternative = $q->param('alternative');
     my(@custom)     = $q->param('custom');
     my %custom      = map { ($_ => 1) } @custom;
     my $output_as   = $q->param('output_as');
@@ -2661,6 +2660,7 @@ sub search_coord {
 	    $handicap_net->make_net_cat;
 	}
 	my $penalty;
+	# XXX also other categories?
 	$penalty = { "q4" => $velocity_kmh/5, # hardcoded für Fußgängerzonen
 		   };
 	for my $q (0 .. 3) {
@@ -2849,7 +2849,7 @@ sub search_coord {
 	}
     }
 
-    my(@r) = $net->search($startcoord, $zielcoord,
+    my($r) = $net->search($startcoord, $zielcoord,
 			  AsObj => 1,
 			  %extra_args);
 
@@ -2859,16 +2859,16 @@ sub search_coord {
 	    (-type => "application/x-palm-database",
 	     -Content_Disposition => "attachment; filename=route.pdb",
 	    );
-	print BBBikePalm::route2palm(-net => $net, -route => $r[0],
+	print BBBikePalm::route2palm(-net => $net, -route => $r,
 				     -startname => $startname,
 				     -zielname => $zielname);
 	return;
     }
 
     if (defined $output_as && $output_as eq 'mapserver') {
-	if ($r[0]->path) {
+	if ($r->path) {
 	    $q->param('coords', join("!", map { "$_->[0],$_->[1]" }
-				     @{ $r[0]->path }));
+				     @{ $r->path }));
 	}
 	$q->param("imagetype", "mapserver");
 	draw_route();
@@ -2894,40 +2894,43 @@ sub search_coord {
 	$has_fragezeichen = 0 if !$fragezeichen_net;
     }
 
-    my $r;
+    my(@power) = (50, 100, 200);
+    my @speeds = qw(10 15 20 25);
+    if ($q->param('pref_speed')) {
+	if (!grep { $_ == $q->param('pref_speed') } @speeds) {
+	    push @speeds, $q->param('pref_speed');
+	    @speeds = sort { $a <=> $b } @speeds;
+	    if ($q->param('pref_speed') > 17) {
+		shift @speeds;
+	    } else {
+		pop @speeds;
+	    }
+	}
+    }
+
     my @out_route;
     my %speed_map;
     my %power_map;
     my @strnames;
     my @path;
  CALC_ROUTE_TEXT: {
-	last CALC_ROUTE_TEXT if (!@r);
+	last CALC_ROUTE_TEXT if (!$r || !$r->path_list);
 
-	if (defined $alternative &&
-	    $alternative >= 0 && $alternative <= $#r) {
-	    $r = $r[$alternative];
-	} else {
-	    $r = $r[0];
-	}
-
-	last CALC_ROUTE_TEXT if (!$r->path_list);
-
-	my(@power) = (50, 100, 200);
 	my @bikepwr_time = (0, 0, 0);
-	use vars qw($wind_dir $wind_v %wind_dir $wind); # XXX oben definieren
-	if ($bp_obj && @weather_res && exists $wind_dir{lc($weather_res[4])}) {
-	    analyze_wind_dir($weather_res[4]);
-	    $wind = 1;
-	    $wind_v = $weather_res[7];
+	#use vars qw($wind_dir $wind_v %wind_dir $wind); # XXX oben definieren
+	if ($bp_obj && @weather_res && exists $BBBikeCalc::wind_dir{lc($weather_res[4])}) {
+	    BBBikeCalc::analyze_wind_dir($weather_res[4]);
+	    # XXX del: $wind = 1;
+	    my $wind_v = $weather_res[7];
 	    my(@path) = $r->path_list;
 	    for(my $i = 0; $i < $#path; $i++) {
 		my($x1, $y1) = @{$path[$i]};
 		my($x2, $y2) = @{$path[$i+1]};
 		my($deltax, $deltay) = ($x1-$x2, $y1-$y2);
-		my $etappe = sqrt(sqr($deltax) + sqr($deltay));
+		my $etappe = sqrt(BBBikeUtil::sqr($deltax) + BBBikeUtil::sqr($deltay));
 		next if $etappe == 0;
 # XXX feststellen, warum hier ein Minus stehen muß...
-		my $hw = -head_wind($deltax, $deltay);
+		my $hw = -BBBikeCalc::head_wind($deltax, $deltay);
 		# XXX Doppelung mit bbbike-Code vermeiden
 		my $wind; # Berechnung des Gegenwindes
 		if ($hw >= 2) {
@@ -2951,30 +2954,21 @@ sub search_coord {
 
 	@strnames = $net->route_to_name($r->path);
 
-	my @speeds = qw(10 15 20 25);
-	if ($q->param('pref_speed')) {
-	    if (!grep { $_ == $q->param('pref_speed') } @speeds) {
-		push @speeds, $q->param('pref_speed');
-		@speeds = sort { $a <=> $b } @speeds;
-		if ($q->param('pref_speed') > 17) {
-		    shift @speeds;
-		} else {
-		    pop @speeds;
-		}
-	    }
-	}
-
 	foreach my $speed (@speeds) {
 	    my $def = {};
 	    $def->{Pref} = ($q->param('pref_speed') && $speed == $q->param('pref_speed'));
 	    my $time;
 	    if ($handicap_net) {
+		# XXX should also have values for other categories?
 		my %handicap_speed = ("q4" => 5); # hardcoded für Fußgängerzonen
 		$time = 0;
-		my @realcoords = @{ $r[0]->path };
+		my @realcoords = @{ $r->path };
 		for(my $ii=0; $ii<$#realcoords; $ii++) {
 		    my $s = Strassen::Util::strecke($realcoords[$ii],$realcoords[$ii+1]);
 		    my @etappe_speeds = $speed;
+## XXX warum ist das hier nicht aktiviert, sieht mir sinnvoll aus?
+## XXX Aus dem RCS log: das hier war nie aktiv, kein Kommentar.
+## XXX Antwort: weil qualitaet_s_speed nicht definiert ist
 #		    if ($qualitaet_net && (my $cat = $qualitaet_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
 #		    push @etappe_speeds, $qualitaet_s_speed{$cat}
 #			if defined $qualitaet_s_speed{$cat};
@@ -3050,14 +3044,14 @@ sub search_coord {
 		    my $s = Strassen->new("gesperrt");
 		    $s->init;
 		    while(1) {
-			my $r = $s->next;
-			last if !@{ $r->[Strassen::COORDS] };
-			if ($r->[Strassen::CAT] =~ /^0(?::(\d+))?/) {
-			    my $name = $r->[Strassen::NAME];
+			my $rec = $s->next;
+			last if !@{ $rec->[Strassen::COORDS] };
+			if ($rec->[Strassen::CAT] =~ /^0(?::(\d+))?/) {
+			    my $name = $rec->[Strassen::NAME];
 			    if (defined $1) {
 				$name .= " (ca. $1 Sekunden Zeitverlust)";
 			    }
-			    $comments_points->{$r->[Strassen::COORDS][0]}
+			    $comments_points->{$rec->[Strassen::COORDS][0]}
 				= $name;
 			}
 		    }
@@ -3107,7 +3101,7 @@ sub search_coord {
 		my($x1,$y1) = @{ $r->path->[0] };
 		my($x2,$y2) = @{ $r->path->[1] };
 		$raw_direction =
-		    uc(main::line_to_canvas_direction
+		    uc(BBBikeCalc::line_to_canvas_direction
 		       ($x1,$y1,$x2,$y2));
 		$richtung = "nach " . localize_direction($raw_direction, "de");
 	    }
@@ -3491,11 +3485,15 @@ EOF
 			}
 			if ($rec) {
 			    my $cat = $rec ? $rec->[Strassen::CAT] : '';
+			    if ($cat =~ /^\?/) {
+				$cat = 'fz';
+			    }
 			    my $title = { NN => "Nebenstraße ohne Kfz",
 					  N  => "Nebenstraße",
 					  H  => "Hauptstraße",
 					  HH => "wichtige Hauptstraße",
 					  B  => "Bundesstraße",
+					  fz => "unbekannte Strecke",
 					}->{$cat};
 			    print "<td></td><td title='$title' class='cat$cat catcell'></td><td></td>";
 			} else {
@@ -3807,7 +3805,7 @@ EOF
 
 	if ($show_start_ziel_url) {
 	    my $qq = new CGI $q->query_string;
-	    foreach (qw(viac vianame alternative)) {
+	    foreach (qw(viac vianame)) {
 		$qq->delete($_);
 	    }
 	    foreach ($qq->param) {
@@ -3848,37 +3846,6 @@ EOF
 
 	print "</form>\n";
 	print qq{</div>};
-
-	#print "<hr>\n";
-
-	# Andere Alternativen ausgeben
-	if (@r > 1) {
-	    my $i;
-	    print "Weitere Alternativen:<br><ul>\n";
-	    for($i = 0; $i <= $#r; $i++) {
-		print "<li>";
-		my $len = sprintf "%.3f km", $r[$i]->len/1000;
-		if ((defined $alternative  && $i == $alternative) ||
-		    (!defined $alternative && $i == 0)) {
-		    print "diese Strecke ($len)";
-		} else {
-		    my $qq = new CGI $q->query_string;
-		    $qq->param('startc',    $startcoord);
-		    $qq->param('startname', $startname);
-		    $qq->param('viac',      $viacoord);
-		    $qq->param('vianame',   $vianame);
-		    $qq->param('zielc',     $zielcoord);
-		    $qq->param('zielname',  $zielname);
-		    $qq->param('alternative', $i);
-		    print "<a href=\"$bbbike_script?" . $qq->query_string . "\">";
-		    print
-		      ($i == 0 ? "beste Alternative" : "Alternative $i");
-		    print " ($len)</a>";
-		}
-		print "\n";
-	    }
-	    print "</ul><hr>\n";
-	}
 
     }
 
@@ -5013,7 +4980,7 @@ sub init_bikepower {
 	require BikePower::HTML;
 	$bp_obj = BikePower::HTML::new_from_cookie($q);
 	$bp_obj->given('P');
-	init_wind();
+	BBBikeCalc::init_wind();
     };
     # XXX warn __LINE__ .  ": Warnung: $@<br>\n" if $@;
     $bp_obj;
@@ -5605,7 +5572,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/03/15 23:08:23 $';
+    my $cgi_date = '$Date: 2005/03/17 00:08:07 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

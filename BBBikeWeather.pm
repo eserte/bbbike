@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeWeather.pm,v 1.3 2004/01/17 17:56:27 eserte Exp eserte $
+# $Id: BBBikeWeather.pm,v 1.4 2005/03/17 00:05:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeWeather;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -298,7 +298,7 @@ sub BBBikeWeather::parse_wetterline {
     my $fullwetter = $wetter_full{$source};
     my(@wetterline) = split(/\|/, $wetterline);
     $wetterline[$wettermeldung2::FIELD_WIND_DIR] = lc($wetterline[$wettermeldung2::FIELD_WIND_DIR]);
-    if (!exists $wind_dir{$wetterline[$wettermeldung2::FIELD_WIND_DIR]}
+    if (!exists $BBBikeCalc::wind_dir{$wetterline[$wettermeldung2::FIELD_WIND_DIR]}
 	|| $wetterline[$wettermeldung2::FIELD_WIND_MAX] !~ /^\d+$/
 	|| ($fullwetter && $wetterline[$wettermeldung2::FIELD_WIND_AVG] !~ /^\d+$/)
        ) {
@@ -321,7 +321,7 @@ sub BBBikeWeather::parse_wetterline {
 ### AutoLoad Sub
 sub BBBikeWeather::analyze_wind {
     my($date, $time, $dir, $maxv, $v, %args) = @_;
-    analyze_wind_dir($dir);
+    ($winddir) = BBBikeCalc::analyze_wind_dir($dir);
     $wind_v_max = $maxv;
     $wind_v     = $v;
     if (defined $date && defined $time) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.20 2004/08/21 23:09:27 eserte Exp eserte $
+# $Id: BBBikeGlobalVars.pm,v 1.21 2005/03/17 00:06:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -75,7 +75,7 @@ use vars qw(
      %str_name_draw %str_nr_draw %p_name_draw %str_far_away %p_far_away
      %p_regions %str_regions
      $init_from $init_to $coloring $route_dashed $route_arrowed
-     $public $want_wind $wind $winddir $wind_dir_from $wind_dir_to %wind_dir
+     $public $want_wind $winddir $wind
      $wind_v $wind_v_max $winddate
      $bp_obj $ua $proxy
      $orientation $wasserstadt $wasserumland $init_scope %act_value
@@ -101,7 +101,7 @@ use vars qw(
      $outline_i
      $without_zoom_factor $coord_output_int
     );
-
+#XXX del:  %wind_dir $wind_dir_from $wind_dir_to $wind 
 use vars qw(@speed @power $speed_power_reference_string
 	    $wetter_station %wetter_source
 	    $wetter_force_update $wetter_route_update

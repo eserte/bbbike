@@ -1,4 +1,4 @@
-# $Id: handicap_s-orig,v 4.11 2004/12/19 12:45:01 eserte Exp eserte $
+# $Id: handicap_s-orig,v 4.12 2005/03/16 22:13:49 eserte Exp eserte $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Unter den Linden (Mitte) Richtung Westen zwischen Schadowstr. und Wilhelmstr. Baustelle, Straße für Autos gesperrt, Radfahrer können weiterhin passieren (bis August 2005)	q1::inwork; 9028,12307 8804,12280
 Ebertstr.: bis 2005-04-30 für Autofahrer gesperrt, Radfahrer können weiterhin passieren	q1::inwork 8595,12066 8579,11917 8571,11846
@@ -10,7 +10,8 @@ Wilhelmstr.: Fahrbahn vor der britischen Botschaft für Autos gesperrt, passierba
 Tucholskystr.: Einbahnstr., Richtung Süden gesperrt	q4::inwork; 9651,13406 9605,13248
 Prenzlauer Promenade, zw. Am Steinberg und Ostseestr. Baustelle, Sperrung stadteinwärts an Elsa-Brandström-Straße. Umleitung: Elsa-Brandström -Straße - Neumannstraße - Wisbyer Straße bis 31.05.2005	q4::inwork; 12012,16752 12046,16568 12054,16517 12097,16263 12091,16209
 Mohrenstr.: Bauarbeiten	q4::inwork; 9173,11770 9220,11781
-#XXX wahrscheinlich bis Fertigstellung der S-Bahnhof-Verschiebung?
+#: XXX wahrscheinlich bis Fertigstellung der S-Bahnhof-Verschiebung?
+#: add_fragezeichen: noch immer?
 Krumme Str.: Bauarbeiten	q4::inwork; 3942,11010 3827,10980
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Georgenstr.: Fußgänger	q1 9437,12662 9308,12649

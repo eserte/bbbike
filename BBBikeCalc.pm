@@ -1,19 +1,20 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCalc.pm,v 1.10 2005/03/02 00:25:23 eserte Exp $
+# $Id: BBBikeCalc.pm,v 1.11 2005/03/17 00:05:19 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2005 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
-package main; # warum notwendig? irgendwann konnte bbbike.cgi nicht mehr ohne..
-#XXX irgendwann: package BBBikeCalc;
+#XXX del: package main; # warum notwendig? irgendwann konnte bbbike.cgi nicht mehr ohne..
+#XXX irgendwann: 
+package BBBikeCalc;
 
 use BBBikeUtil;
 use strict;
@@ -22,10 +23,10 @@ use vars qw(@INC @EXPORT_OK
 	    %wind_dir $winddir $wind_dir_from $wind_dir_to $wind);
 
 #XXX irgendwann:
-#  require Exporter;
-#  @ISA = qw(Exporter);
-#  @EXPORT_OK = qw(CAKE %opposite opposite_direction init_wind
-#  		%wind_dir analyze_wind_dir norm_arc
+# require Exporter;
+# @ISA = qw(Exporter);
+# @EXPORT_OK = qw(CAKE %opposite opposite_direction init_wind
+# 		%wind_dir analyze_wind_dir norm_arc);
 
 # globale Variablen und Konstanten, die auch in main verwendet werden:
 #
@@ -34,7 +35,7 @@ use vars qw(@INC @EXPORT_OK
 # $winddir: aktuelle Windrichtung
 # $wind_dir_from, $wind_dir_to: Winkelangaben für die aktuelle Windrichtung
 # $wind: Windberechnung in head_wind() wird nur durchgeführt, wenn diese
-#        Variable wahr ist
+#        Variable wahr ist XXX del
 #
 
 #perl2exe_include constant.pm
@@ -78,6 +79,8 @@ sub init_wind {
 		);
 }
 
+# Returns a list (normalized wind direction string, wind dir cake from, wind dir cake to)
+# Sets also the global variables $winddir, $wind_dir_from, $wind_dir_to
 sub analyze_wind_dir {
     my($dir) = @_;
     $winddir = lc($dir);
@@ -85,8 +88,9 @@ sub analyze_wind_dir {
     my($winkel) = norm_arc(atan2($wd[0], $wd[1]));
     ($wind_dir_from, $wind_dir_to) = ($winkel - CAKE, $winkel + CAKE);
     # XXX was soll das hier? :
-    norm_arc($wind_dir_from);
-    norm_arc($wind_dir_to);
+    $wind_dir_from = norm_arc($wind_dir_from);
+    $wind_dir_to = norm_arc($wind_dir_to);
+    ($winddir, $wind_dir_from, $wind_dir_to);
 }
 
 sub norm_arc {
@@ -114,7 +118,7 @@ sub arc_is_between {
 
 sub head_wind { # returns +2 for back wind and -2 for head wind
     my($deltax, $deltay) = @_;
-    return 0 if !defined $deltax || !defined $deltay || !$wind;
+    return 0 if !defined $deltax || !defined $deltay; #XXX || !$wind; del XXX
     my $arc = norm_arc(atan2($deltay, $deltax));
     my $i;
     for($i=0; $i<4; $i++) {

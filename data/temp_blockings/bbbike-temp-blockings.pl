@@ -1434,7 +1434,7 @@ userdel	2 15174,5463 15373,5675
 EOF
      },
      { from  => 1111014000, # 2005-03-17 00:00
-       until => 1111359600, # 2005-03-21 00:00
+       until => 1111359600, # 2005-03-21 00:00 # XXX z.Zt. auf "unbekannt" gesetzt
        text  => 'L 24; (AS Pfingstberg-Gerswalde); Bereich AS Pfingstberg, Brücke A 11 Brückenabruch Vollsperrung 18.03.2005-20.03.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -1547,6 +1547,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 15657,10846 15628,10915
+EOF
+     },
+     { from  => 1111960800, # 2005-03-28 00:00
+       until => 1114034400, # 2005-04-21 00:00
+       text  => 'B 246; (Gerichtsstr.); OL Zossen, zw. Friedhofsweg u. Luchweg Straßenbauarbeiten Vollsperrung 29.03.2005-20.04.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 15178,-20983 15072,-21175
+EOF
+     },
+     { from  => 1110841200, # 2005-03-15 00:00
+       until => 1117576800, # 2005-06-01 00:00
+       text  => 'K 6501; (Bahnhofstr.); OD Schildow, zw. Hauptstr. u. F.-Schmidt-Str. grundhafter Straßenbau Vollsperrung 16.03.2005-31.05.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 8066,25646 8182,25608
 EOF
      },
     );
