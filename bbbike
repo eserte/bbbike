@@ -7915,7 +7915,8 @@ sub plotstr {
 
     my $diffed_str = 0;
     #XXX Abfrage auf $edit_mode notwendig?
-    if (($edit_mode || $abk eq 'relgps') && $args{FastUpdate}) {
+    if (#XXX del? ($edit_mode || $abk eq 'relgps') &&
+	$args{FastUpdate}) {
 	my($new_str, $todelref) = $str->diff_orig(-clonefile => 1);
 	if (!defined $new_str) {
 	    warn M("Diff-Ausgabe wird nicht verwendet") if $verbose;
