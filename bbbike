@@ -14953,7 +14953,7 @@ sub show_logo { # und About
 	if $balloon;
 
     $ff->Label(-image => $srtbike_photo
-	      )->pack(-side => 'left', anchor => "ne");
+	      )->pack(-side => 'left', -anchor => "ne");
     if ($as_about) {
 	my $okb = $logotop->Button(Name => 'ok',
 				   -command => sub { hide_logo($as_about) },
