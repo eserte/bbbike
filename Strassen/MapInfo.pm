@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapInfo.pm,v 1.5 2004/02/25 23:56:49 eserte Exp $
+# $Id: MapInfo.pm,v 1.6 2004/03/02 08:05:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
