@@ -26,7 +26,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 5 }
+BEGIN { plan tests => 11 }
 
 my $s = Strassen->new("strassen");
 my $net = StrassenNetz->new($s);
@@ -45,5 +45,24 @@ ok($net->isa("StrassenNetz::CNetFile"));
 }
 $net->make_net;
 ok(1);
+
+{
+    keys %{ $net->{Net} };
+    my($k,$v) = each %{ $net->{Net} };
+    ok(defined $k);
+    ok(defined $v);
+
+    my $keys = scalar keys %{ $net->{Net} };
+    ok($keys > 0);
+    #warn $keys;
+
+    my($k2,$v2) = each %{ $net->{Net}{$k} };
+    ok(defined $k2);
+    ok(defined $v2);
+
+    ok(scalar keys %{ $net->{Net}{$k} } > 0);
+
+}
+
 
 __END__
