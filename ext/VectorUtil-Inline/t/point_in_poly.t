@@ -98,7 +98,11 @@ while(1) {
 	    }
 	}
 
-	$c->createLine($x,$y,-width=>2,-fill=>($mismatch?"yellow":$in[0]?"green":"red"));
+	if ($Tk::VERSION < 804) {
+	    $c->createLine($x,$y,-width=>2,-fill=>($mismatch?"yellow":$in[0]?"green":"red"));
+	} else {
+	    $c->createLine($x,$y,$x,$y+1,-width=>1,-fill=>($mismatch?"yellow":$in[0]?"green":"red"));
+	}
     }
     if ($mismatches) {
 	print "# $mismatches mismatches\n";
