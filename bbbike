@@ -8126,7 +8126,9 @@ sub plotstr {
 	}
 	if ($abk ne 'w') { # XXX get_cache_identifier benutzen
 	    if ((!$dont_set_cache && cache_decider()) ||
-		 $abk =~ /^[sl]$/) {
+		$abk =~ /^[sl]$/ ||
+		$edit_normal_mode # Always cache in edit mode to make "reload all" work
+	       ) {
 		# für nearest_line_points Caching erzwingen
 		$str_obj{$abk} = $str;
 		if ($abk eq 'l') {

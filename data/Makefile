@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.21 2004/07/06 21:18:12 eserte Exp $
+# $Id: Makefile,v 2.21 2004/07/06 21:18:12 eserte Exp eserte $
 #
 
 BBBIKEDIR=		..
@@ -597,16 +597,17 @@ check-disabled:	.check_label
 .for i in $(COMMENTS_PARTIAL)
 .check_comments1:	.check_${i}_1
 
-.check_${i}_1:	$i .strassen.tmp landstrassen landstrassen2 faehren
-	$(CHECK_POINTS) $i .strassen.tmp landstrassen landstrassen2 faehren
+.check_${i}_1:	$i .strassen.tmp landstrassen landstrassen2 faehren fragezeichen
+	$(CHECK_POINTS) $i .strassen.tmp landstrassen landstrassen2 faehren fragezeichen
 	@touch $@
 
 .endfor
 
-.check_comments2:	$(COMMENTS_PARTIAL) strassen landstrassen landstrassen2 faehren
+.check_comments2:	$(COMMENTS_PARTIAL) strassen landstrassen landstrassen2 faehren fragezeichen
 	$(CHECK_NEIGHBOUR) -type standard \
 	    -against strassen -against landstrassen -against landstrassen2 \
-	    -against faehren ${COMMENTS_PARTIAL:S/^/-data /g}
+	    -against faehren -against fragezeichen \
+	    ${COMMENTS_PARTIAL:S/^/-data /g}
 	@touch $@
 
 .check_comments_ferry:	comments_ferry faehren

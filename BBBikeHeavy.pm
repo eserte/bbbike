@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.15 2004/07/08 07:07:20 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.15 2004/07/08 07:07:20 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -1383,7 +1383,9 @@ sub BBBikeHeavy::reload_all {
 	    $change{"p"}->{$type} = 1;
 	}
     }
-    return if ($BBBikeExp::mode);
+
+    #XXX del: seems to be wrong (as seen for fragezeichen)
+    #return if ($BBBikeExp::mode);
 
     $progress->InitGroup;
     while(my($linetype, $v) = each %change) {
