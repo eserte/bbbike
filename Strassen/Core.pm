@@ -81,6 +81,26 @@ sub new {
 	require Strassen::MapInfo;
 	return Strassen::MapInfo->new($filename, %args);
     }
+    if (defined $filename &&
+	$filename =~ /\.e00$/i) {
+	require File::Temp;
+	my($tmpfh, $tmpfile) = File::Temp::tempfile(SUFFIX => ".bbd",
+						    #UNLINK => 1
+						   );
+	open(DCWTOBBD, "-|") or do {
+	    system("$FindBin::RealBin/miscsrc/dcwtobbd.pl", $filename);
+	    if ($?) {
+		warn "Fallback to e00_to_bbd...\n";
+		system("$FindBin::RealBin/miscsrc/e00_to_bbd.pl < $filename");
+	    }
+	    exit 0;
+	};
+	while(<DCWTOBBD>) {
+	    print $tmpfh $_;
+	}
+	close DCWTOBBD;
+	$filename = $tmpfile;
+    }
 
     my(@filenames);
     if (defined $filename) {
