@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.41 2004/06/10 23:00:37 eserte Exp $
+# $Id: BrowserInfo.pm,v 1.44 2005/01/02 18:16:18 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2005 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.41 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, $q) = @_;
@@ -212,11 +212,12 @@ sub set_info {
 	     Nokia7250 => [124, 128], # space for vert scrollbar ?
 	     Nokia7250I=> [124, 128], # space for vert scrollbar ?
 	     Nokia6610 => [128, 128],
-	     Nokia6100 => [128, 90], # XXX ca.
+#XXX	     Nokia6100 => [128, 90], # XXX ca.
 	     Nokia3650 => [170, 144], # visible size
 	     Nokia3660 => [170, 144],
 	     Nokia7650 => [170, 144], # max image width is smaller? check wapbbbike.cgi output
 	     Nokia6600 => [170, 144],
+	     Nokia6630 => [164, 144], # additional space for vert scrollbar
 	     "NokiaN-Gage" => [170, 144],
 	    );
     TRY: {
@@ -226,15 +227,42 @@ sub set_info {
 		    last TRY;
 		}
 	    }
-	    warn "Fallback for unknown Nokia phone " . $q->user_agent;
-	    $self->{display_size} = [84, 49]; # fallback to smallest...
+# 	    warn "Fallback for unknown Nokia phone " . $q->user_agent;
+# 	    $self->{display_size} = [84, 49]; # fallback to smallest...
 	}
     } elsif ($q->user_agent("Dillo")) {
 	$self->{'display_size'} = [200,320]; # iPAQ
     } elsif ($self->{'mobile_device'}) {
 	$self->{'display_size'} = [80,60-20]; # ???
-    } else {
-	$self->{'display_size'} = [800-50,600-10]; # ???
+    }
+
+    my $uaprof;
+    my $tried_uaprof;
+    my $get_uaprof = sub {
+	if (!$uaprof && ($ENV{HTTP_PROFILE} || $ENV{HTTP_X_WAP_PROFILE}) && !$tried_uaprof) {
+	    $tried_uaprof = 1;
+	    eval {
+		require BrowserInfo::UAProf;
+		$uaprof = BrowserInfo::UAProf->new(uaprofdir => $self->default_uaprof_dir);
+	    };
+	    warn $@ if $@;
+	}
+	$uaprof;
+    };
+
+    if (!defined $self->{'display_size'}) {
+	if ($get_uaprof->()) {
+	    my $screensize = $uaprof->get_cap("ScreenSize");
+	    if (defined $screensize) {
+		my($w,$h) = split /x/, $screensize;
+		$w -= 6; # most browsers need space for a vertical scrollbar
+		$self->{'display_size'} = [$w, $h];
+	    }
+	}
+    }
+
+    if (!defined $self->{'display_size'}) {
+	$self->{'display_size'} = [800-50,600-10]; # last fallback
     }
 
     # XXX neues User-Agent-Scheme anwenden...
@@ -262,12 +290,21 @@ sub set_info {
 			     $self->{'user_agent_version'} >= 4.0) ||
 			    ($self->{'user_agent_name'} eq 'Konqueror' &&
 			     $self->{'user_agent_version'} >= 2.0));
-    $self->{'can_table'} = ((!$self->{'text_browser'} ||
-			     $q->user_agent("w3m")) &&
-			    !$q->user_agent("nokia7110") &&
-			    !$q->user_agent("libwww-perl") # tkweb
-			   );
-    # Dillo kann Tabellen ab ca. 0.6.x
+
+    my $can_table;
+    if ($get_uaprof->()) {
+	$can_table = $uaprof->get_cap("TablesCapable") =~ /yes/i ? 1 : 0;
+    }
+    if (!defined $can_table) {
+	$can_table = ((!$self->{'text_browser'} ||
+		       $q->user_agent("w3m")) &&
+		      !$q->user_agent("nokia7110") &&
+		      !$q->user_agent("libwww-perl") # tkweb
+		     );
+	# Dillo kann Tabellen ab ca. 0.6.x
+    }
+    $self->{'can_table'} = $can_table;
+
     $self->{'dom_type'} = "";
     if ($self->{'user_agent_name'} eq 'Mozilla') {
 	if ($self->{'user_agent_version'} >= 4 &&
@@ -531,6 +568,21 @@ sub footer {
 	$out .="</body>\n";
     }
     $out;
+}
+
+sub default_uaprof_dir {
+    my $self = shift;
+    if (exists $self->{uaprofdir}) {
+	return $self->{uaprofdir};
+    }
+    if (defined $main::uaprofdir) {
+	return $main::uaprofdir;
+    }
+    require File::Basename;
+    require File::Spec;
+    my $dir = File::Spec->rel2abs(File::Basename::dirname(__FILE__)) . "/../tmp/uaprof";
+    $self->{uaprofdir} = $dir;
+    $dir;
 }
 
 package main;

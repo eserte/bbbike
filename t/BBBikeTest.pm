@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.2 2004/12/30 20:48:33 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.3 2005/01/02 22:48:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -22,12 +22,13 @@ BEGIN {
 use strict;
 use vars qw(@EXPORT);
 use vars (@opt_vars);
+use vars qw($can_tidy);
 
 use base qw(Exporter);
 
 use BBBikeUtil qw(is_in_path);
 
-@EXPORT = (qw(get_std_opts set_user_agent do_display),
+@EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check),
 	   @opt_vars);
 
 # Old logfile
@@ -109,6 +110,40 @@ sub do_display {
 	} else {
 	    warn "Can't display $filename";
 	}
+    }
+}
+
+# only usable with Test::More
+sub tidy_check {
+    my($content, $test_name, %args) = @_;
+ SKIP: {
+	my $no_of_tests = 1;
+	if (!defined $can_tidy) {
+	    $can_tidy = is_in_path("tidy");
+	}
+	skip("tidy is not available", $no_of_tests) if !$can_tidy;
+	if (UNIVERSAL::isa($content, "HTTP::Message")) {
+	    skip("No html output", $no_of_tests)
+		if $content->headers->content_type ne "text/html";
+	    $content = $content->content;
+	}
+	require File::Temp;
+	my($fh, $filename) = File::Temp::tempfile(SUFFIX => ".html",
+						  UNLINK => 1);
+	print $fh $content;
+	system("tidy", "-f", "/tmp/tidy.err", "-q", "-e", $filename);
+	Test::More::cmp_ok($?>>8, "<", 2, $test_name)
+		or do {
+		    my $diag = "";
+		    if ($args{-uri}) {
+			$diag .= "$args{-uri}: ";
+		    }
+		    open(DIAG, "/tmp/tidy.err") or die;
+		    local $/ = undef;
+		    $diag .= <DIAG>;
+		    close DIAG;
+		    Test::More::diag($diag);
+		};
     }
 }
 

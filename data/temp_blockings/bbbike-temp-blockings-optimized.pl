@@ -1,19 +1,7 @@
 @temp_blocking = ();
-$#temp_blocking = 118;
+$#temp_blocking = 122;
 push @temp_blocking,
 (
-       {
-         'until' => 1104620400,
-         'text' => 'B 96a; (Bahnhofstr., Hauptstr.); OD Schildow Kanal- und Straﬂenbau Vollsperrung 20.09.2004-01.01.2005 ',
-         'from' => 1095544800,
-         'data' => 'userdel	q4 8493,25378 8370,25539
-userdel	q4 8370,25539 8182,25608
-',
-         'type' => 'handicap'
-       },
-       undef,
-       undef,
-       undef,
        {
          'until' => 1114898400,
          'text' => 'L 40; (Groﬂbeeren-G¸terfelde); zw. Groﬂbeeren u. Neubeeren Neubau Bauwerk; Vollsperrung; 24.09.2004-30.04.2005 ',
@@ -73,14 +61,7 @@ userdel	q4 8370,25539 8182,25608
        undef,
        undef,
        undef,
-       {
-         'until' => 1104620400,
-         'text' => 'L 21; (M¸hlenbecker Str.); OL Schildow grundh. Straﬂenbau Vollsperrung 16.08.2004-01.01.2005 ',
-         'from' => 1092520800,
-         'data' => 'userdel	q4 8231,26584 8194,25966
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1114898400,
          'text' => 'L 401; (Lindenallee); OL Zeuthen, zw. Platanenallee und Ahornallee grundhafter Straﬂenbau Vollsperrung 01.11.2004-30.04.2005 ',

@@ -1338,17 +1338,18 @@ points if delta exceeds 128/128 meters.
 
 =over
 
-=item * (M1)
+=item * (M5)
 
-CSS-Manipulation (erstmal nur bei Netscape):
-
-* wenn PDF, berliner-stadtplan.com ausgewählt wird, dann Größen etc.
-disabled machen
+Ackerstr. (Mitte,Wedding,Spandau)-Problematik: es sollte erkannt
+werden, dass die Ackerstr. (Mitte, Wedding) die selbe Strasse ist. In
+multi_bez_str steht es drinnen, muesste wahrscheinlich von PLZ.pm
+verwendet werden (combined streets?). (Aber nur, falls multi_bez_str
+vorhanden ist)
 
 =item * (E2)
 
 Info page: link to screenshot html page instead of single screenshot
-image.
+image. (?)
 
 =item * (M2)
 

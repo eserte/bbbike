@@ -2,9 +2,17 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-grid.t,v 1.2 2003/11/16 22:37:23 eserte Exp $
+# $Id: strassen-grid.t,v 1.3 2005/01/02 23:06:47 eserte Exp $
 # Author: Slaven Rezic
 #
+
+# This test may fail if new points are added in the tested area.
+# If this is the case, then please find new points which fulfill these
+# criterias:
+# - the point should lay on a street but the nearest next point is *not*
+#   on this street
+# - the second and third tests should generate the same result for all
+#   grid types
 
 use strict;
 use FindBin;
@@ -25,37 +33,50 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 9 }
+BEGIN { plan tests => 9 * 2 }
 
 my %opt;
 GetOptions(\%opt, "v!") or die "usage!";
 
 Strassen::set_verbose($opt{v});
 
-my $s_fast = Strassen->new("strassen");
-$s_fast->make_grid(Exact => 0, UseCache => 1);
+for my $use_cache (1, 0) {
+    my $cache_text = $use_cache ? "with cache" : "no cache";
+    my $s_fast = Strassen->new("strassen");
+    $s_fast->make_grid(Exact => 0, UseCache => $use_cache);
 
-my $s_exact = Strassen->new("strassen");
-$s_exact->make_grid(Exact => 1, UseCache => 1);
+    my $s_exact = Strassen->new("strassen");
+    $s_exact->make_grid(Exact => 1, UseCache => $use_cache);
 
-my $kr = Kreuzungen->new(Strassen => $s_fast,
-			 WantPos => 1,
-			 Kurvenpunkte => 1,
-			 UseCache => 1);
+    my $kr = Kreuzungen->new(Strassen => $s_fast,
+			     WantPos => 1,
+			     Kurvenpunkte => 1,
+			     UseCache => $use_cache);
 
-for my $p_def (# Köpenicker Chaussee/Rummelsburg (with wrong $p_kr)
-	       ["16743,9200", "17072,8714", undef, "16449,9011"],
-	       # etwas südlich davon
-	       ["16912,8956", "17072,8714"],
-	       # etwas nördlich davon
-	       ["16587,9437", "16374,9760"],
-	      ) {
-    my($p, $p_exact, $p_fast, $p_kr) = @$p_def;
-    if (!defined $p_fast) { $p_fast = $p_exact }
-    if (!defined $p_kr)   { $p_kr   = $p_fast }
-    is($s_exact->nearest_point($p), $p_exact, "Exact test for $p");
-    is(($kr->nearest_loop(split /,/, $p))[0], $p_kr, "Nearest loop test for $p");
-    is($s_fast->nearest_point($p), $p_fast, "Fast test for $p");
+    for my $p_def (
+		   ## point to check, exact result, fast result, normal result
+## Do not use this tests with the new points for the Klingenbergbrücke
+# 		   # Köpenicker Chaussee/Rummelsburg (with wrong $p_kr)
+# 		   ["16743,9200", "17072,8714", undef, "16449,9011"],
+# 		   # etwas südlich davon
+# 		   ["16912,8956", "17072,8714"],
+# 		   # etwas nördlich davon
+# 		   ["16587,9437", "16374,9760"],
+
+		   # Puschkinallee
+		   ["15079,9321", "14811,9449", undef, "15147,9574"],
+		   # etwas nördlich davon
+		   ["15042,9340", "14811,9449"],
+		   # etwas südlich davon
+		   ["15228,9250", "15366,9182"],
+		  ) {
+	my($p, $p_exact, $p_fast, $p_kr) = @$p_def;
+	if (!defined $p_fast) { $p_fast = $p_exact }
+	if (!defined $p_kr)   { $p_kr   = $p_fast }
+	is($s_exact->nearest_point($p), $p_exact, "Exact test for $p, $cache_text");
+	is(($kr->nearest_loop(split /,/, $p))[0], $p_kr, "Nearest loop test for $p, $cache_text");
+	is($s_fast->nearest_point($p), $p_fast, "Fast test for $p, $cache_text");
+    }
 }
 
 __END__

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.42 2004/12/29 23:31:33 eserte Exp $
+# $Id: GD.pm,v 1.42 2004/12/29 23:31:33 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -1110,7 +1110,7 @@ EOF
 		"coords=\"$coordstr\" ",
 		#XXX "title=\"" . $s->name . "\" ",
 		"onmouseover=\"return s('" . $s->name . "')\" ",
-	        "onclick=\"return false\" ",
+	        #XXX"onclick=\"return false\" ",
 		">\n";
 #XXXXXXXXXXXXX
 # Geht jetzt auch nicht mehr mit NS4?!

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.16 2004/12/23 00:50:32 eserte Exp $
+# $Id: plz.t,v 1.17 2005/01/03 00:16:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ package main;
 
 use Test::More;
 BEGIN { eval "use Test::Differences" };
-BEGIN { plan tests => 56 }
+BEGIN { plan tests => 58 }
 
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../data", "$FindBin::RealBin/../lib");
@@ -178,6 +178,14 @@ EOF
     is($friedenau_schoeneberg->[PLZ::LOOK_CITYPART], "Friedenau, Sch\366neberg");
     is($friedenau_schoeneberg->[PLZ::LOOK_ZIP], "10827, 12159", "Check PLZ");
 
+ XXX:
+    @res = grep { defined $_->[PLZ::LOOK_COORD] } $plz->look("Am Nordgraben", MultiCitypart => 1, MultiZIP => 1);
+    is(scalar @res, 2, "Hits for Am Nordgraben. with MultiCitypart")
+	or diag $dump->(\@res);
+    @res = map { $plz->combined_elem_to_string_form($_) } $plz->combine(@res);
+    is(scalar @res, 1, "Combine hits")
+	or diag $dump->(\@res);
+
     @res = $plz->look("friedrichstr", Citypart => "mitte");
     is(scalar @res, 1, "Lower case match, Citypart supplied")
 	or diag $dump->(\@res);
@@ -324,7 +332,6 @@ EOF
        "Should find Brandenburger Tor in Potsdam")
 	or diag $dump->(\@res);
 
- XXX:
     @res = $plz_multi->look_loop("kl. präsidentenstr.");
     is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Kleine Präsidentenstr.' } @{$res[0]}), 1,
        "Expanding kl.")

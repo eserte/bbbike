@@ -1,13 +1,13 @@
 # -*- perl -*-
 
 #
-# $Id: MultiBezStr.pm,v 1.2 2004/12/05 00:10:59 eserte Exp $
+# $Id: MultiBezStr.pm,v 1.2 2004/12/05 00:10:59 eserte Exp eserte $
 #
-# Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2001,2005 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
-# Author: Slaven Rezic (eserte@cs.tu-berlin.de)
+# Author: Slaven Rezic (eserte@users.sourceforge.net)
 #
 
 package Strassen::MultiBezStr;
@@ -21,12 +21,14 @@ use strict;
 # make gzip-aware
 sub new {
     my $class = shift;
+    my $base = shift || "multi_bez_str";
     require MyFile;
     if (MyFile::openlist(*MULTI,
-			 map { "$_/multi_bez_str" } @Strassen::datadirs)) {
+			 map { "$_/$base" } @Strassen::datadirs)) {
 	my $self = {};
 	while(<MULTI>) {
 	    chomp;
+	    next if /^\#/; # comments
 	    my($str, $rest) = split(/\t/);
 	    my(@bez) = split(/,/, $rest);
 	    $self->{$str} = \@bez;

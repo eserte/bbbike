@@ -1,4 +1,4 @@
-// $Id: bbbike_result.js,v 1.14 2005/01/01 22:37:27 eserte Exp $
+// $Id: bbbike_result.js,v 1.15 2005/01/03 00:16:23 eserte Exp $
 // (c) 2003 Slaven Rezic. All rights reserved.
 
 function test_temp_blockings_set() {
@@ -110,6 +110,51 @@ function all_checked() {
     }
 }
 
+function enable_size_details_buttons() {
+    var frm = document.forms["showmap"];
+    if (!frm) return;
+    var imgtypeelem = frm.elements["imagetype"];
+    if (!imgtypeelem) return;
+    var imgtype = imgtypeelem.value;
+    var can_size = true;
+    var can_details = true;
+    if (imgtype.match(/^(mapserver|berlinerstadtplan)/)) {
+	can_size = false;
+	can_details = false;
+    }
+    if (imgtype.match(/^(pdf|svg)/)) {
+	can_size = false;
+    }
+    var elems = frm.elements;
+    for (var e = 0; e < elems.length; e++) {
+	if (elems[e].name == "draw") {
+	    elems[e].disabled = !can_details;
+	}
+	if (elems[e].name == "geometry") {
+	    elems[e].disabled = !can_size;
+	}
+    }
+}
+
+function enable_settings_buttons() {
+    var frm = document.forms["settings"];
+    if (!frm) {
+	frm = document.forms[0];
+	if (!frm) return;
+    }
+    var winteroptelem = frm.elements["pref_winter"];
+    if (!winteroptelem) return;
+    var disable_non_winter = winteroptelem.value != "";
+    var elems = frm.elements;
+    var other_prefs = ["speed", "cat", "quality", "ampel", "green"];
+    for(var e = 0; e < other_prefs.length; e++) {
+	var elem = frm.elements["pref_" + other_prefs[e]];
+	if (elem) {
+	    elem.disabled = disable_non_winter;
+	}
+    }
+}
+
 function reset_form(default_speed, default_cat, default_quality,
 		    default_routen, default_ampel, default_green,
 		    default_winter) {
@@ -118,7 +163,9 @@ function reset_form(default_speed, default_cat, default_quality,
 	frm = document.forms[0];
     }
     with (frm) {
-	elements["pref_speed"].value = default_speed;
+	if (typeof default_speed != null) {
+	    elements["pref_speed"].value = default_speed;
+	}
 	elements["pref_cat"].options[default_cat].selected = true;
 	elements["pref_quality"].options[default_quality].selected = true;
 	if (elements["pref_routen"]) {
@@ -142,6 +189,11 @@ function show_help(what) {
     } else {
 	alert("Keine Hilfe für das Thema " + what);
     }
+}
+
+function init_search_result() {
+    enable_size_details_buttons();
+    enable_settings_buttons();
 }
 
 // Local variables:

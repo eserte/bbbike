@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.3 2005/01/01 22:20:25 eserte Exp eserte $
+# $Id: bbbike.cgi,v 7.5 2005/01/02 22:48:46 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -637,7 +637,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.5 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1437,7 +1437,7 @@ EOF
 	load_teaser();
 	# use "make count-streets" in ../data
  	print <<EOF;
-<td valign="top">@{[ blind_image(420,1) ]}<br>Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 3400 von 10000 Berliner Stra&szlig;en sowie ca. 150 Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
+<td valign="top">@{[ blind_image(420,1) ]}<br>Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 3600 von 10000 Berliner Stra&szlig;en sowie ca. 150 Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
 Nebenstra&szlig;en). Bei nicht erfassten Straßen wird automatisch die
 nächste bekannte verwendet. Hausnummern k&ouml;nnen nicht angegeben werden.<br><br>
 </td>
@@ -2193,10 +2193,11 @@ sub get_kreuzung {
 
 
     print <<EOF;
-<hr><p><b>Einstellungen</b>:</p>
+<hr><p><b>Einstellungen</b>:
 EOF
-    settings_html();
     reset_html();
+    print "</p>";
+    settings_html();
     print "<hr>\n";
 
     suche_button();
@@ -2300,7 +2301,7 @@ sub reset_html {
 	get_settings_defaults();
 
 	print <<EOF
-<input type=button value="Reset" onclick="return reset_form($default_speed, @{[defined $strcat{$default_cat} ? $strcat{$default_cat} : 0]}, @{[defined $strqual{$default_quality} ? $strqual{$default_quality}: 0]}, @{[defined $strrouten{$default_routen} ? $strrouten{$default_routen} : 0]}, @{[ $default_ampel?"true":"false" ]}, @{[defined $strgreen{$default_green} ? $strgreen{$default_green} : 0]}, @{[defined $strwinter{$default_winter} ? $strwinter{$default_winter} : 0]});">
+<input class="settingsreset" type=button value="Reset" onclick="reset_form(@{[defined $default_speed ? $default_speed : "null" ]}, @{[defined $strcat{$default_cat} ? $strcat{$default_cat} : 0]}, @{[defined $strqual{$default_quality} ? $strqual{$default_quality}: 0]}, @{[defined $strrouten{$default_routen} ? $strrouten{$default_routen} : 0]}, @{[ $default_ampel?"true":"false" ]}, @{[defined $strgreen{$default_green} ? $strgreen{$default_green} : 0]}, @{[defined $strwinter{$default_winter} ? $strwinter{$default_winter} : 0]}); enable_settings_buttons(); return false;">
 EOF
     }
 }
@@ -2378,7 +2379,7 @@ EOF
     if ($use_winter_optimization) {
 	print <<EOF;
 <tr>
- <td>Winteroptimierung</td><td><select $bi->{hfill} name="pref_winter">
+ <td>Winteroptimierung</td><td><select $bi->{hfill} name="pref_winter" onchange=enable_settings_buttons()>
 <option @{[ $winter_checked->("") ]}>nein
 <option @{[ $winter_checked->("WI1") ]}>schwach
 <option @{[ $winter_checked->("WI2") ]}>stark
@@ -2492,31 +2493,9 @@ sub search_coord {
     $extra_args{Velocity} = $velocity_kmh/3.6; # convert to m/s
     # XXX Anzahl der Tragestellen zählen...
 
-    # Ampeloptimierung
-    if (defined $q->param('pref_ampel') && $q->param('pref_ampel') eq 'yes') {
-	if (new_trafficlights()) {
-	    $extra_args{Ampeln} = {Net     => $ampeln,
-				   Penalty => 100};
-	}
-    }
-
     my @penalty_subs;
 
-    # Haupt/Freizeitrouten-Optimierung
-    if (defined $q->param('pref_routen') && $q->param('pref_routen') ne '') { # 'RR'
-	if (!$routen_net) {
-	    $routen_net =
-		new StrassenNetz(Strassen->new("radrouten"));
-	    $routen_net->make_net;
-	}
-	push @penalty_subs, sub {
-	    my($p, $next_node, $last_node) = @_;
-	    if (!$routen_net->{Net}{$last_node}{$next_node}) {
-		$p *= 2; # XXX differenzieren?
-	    }
-	    $p;
-	};
-    }
+    my $disable_other_optimizations = 0;
 
     # Winteroptimierung
     if (defined $q->param('pref_winter') && $q->param('pref_winter') ne '') {
@@ -2557,6 +2536,31 @@ sub search_coord {
 	    }
 	    $pen;
 	};
+	$disable_other_optimizations = 1;
+    }
+
+    # Ampeloptimierung
+    if (!$disable_other_optimizations && defined $q->param('pref_ampel') && $q->param('pref_ampel') eq 'yes') {
+	if (new_trafficlights()) {
+	    $extra_args{Ampeln} = {Net     => $ampeln,
+				   Penalty => 100};
+	}
+    }
+
+    # Haupt/Freizeitrouten-Optimierung
+    if (!$disable_other_optimizations && defined $q->param('pref_routen') && $q->param('pref_routen') ne '') { # 'RR'
+	if (!$routen_net) {
+	    $routen_net =
+		new StrassenNetz(Strassen->new("radrouten"));
+	    $routen_net->make_net;
+	}
+	push @penalty_subs, sub {
+	    my($p, $next_node, $last_node) = @_;
+	    if (!$routen_net->{Net}{$last_node}{$next_node}) {
+		$p *= 2; # XXX differenzieren?
+	    }
+	    $p;
+	};
     }
 
     # UserDefPenaltySubs
@@ -2573,7 +2577,7 @@ sub search_coord {
     }
 
     # Optimierung der grünen Wege
-    if (defined $q->param('pref_green') && $q->param('pref_green') ne '') {
+    if (!$disable_other_optimizations && defined $q->param('pref_green') && $q->param('pref_green') ne '') {
 	if (!$green_net) {
 	    $green_net = new StrassenNetz(Strassen->new("green"));
 	    $green_net->make_net_cat;
@@ -2593,7 +2597,11 @@ sub search_coord {
 	    };
     }
 
-    # Handicap-Optimierung ... zurzeit nur Fußgängerzonenoptimierung automatisch
+    # Handicap-Optimierung ...
+    # Zurzeit nur Fußgängerzonenoptimierung automatisch.
+    # sowie Daten aus temp_blockings (wird unten ge-merge-t).
+    # Diese Optimierung ist immer eingeschaltet, auch wenn die
+    # Winteroptimierung aktiv ist (hauptsächlich wegen temp_blockings)
     if (1) {
 	if (!$handicap_net) {
 	    if ($scope eq 'region' || $scope eq 'wideregion') {
@@ -2620,7 +2628,7 @@ sub search_coord {
     }
 
     # Qualitätsoptimierung
-    if (defined $q->param('pref_quality') && $q->param('pref_quality') ne '') {
+    if (!$disable_other_optimizations && defined $q->param('pref_quality') && $q->param('pref_quality') ne '') {
 	# XXX landstraßen?
 	if (!$qualitaet_net) {
 	    if ($scope eq 'region' || $scope eq 'wideregion') {
@@ -2653,7 +2661,7 @@ sub search_coord {
     }
 
     # Kategorieoptimierung
-    if (defined $q->param('pref_cat') && $q->param('pref_cat') ne '') {
+    if (!$disable_other_optimizations && defined $q->param('pref_cat') && $q->param('pref_cat') ne '') {
 	my $penalty;
 	if ($q->param('pref_cat') eq 'N_RW') {
 	    if (!$radwege_strcat_net) {
@@ -3169,7 +3177,8 @@ sub search_coord {
     foreach my $key (@pref_keys) {
 	$persistent{"pref_$key"} = $q->param("pref_$key");
 	if (!defined $persistent{"pref_$key"}) {
-	    $persistent{"pref_$key"} = "";
+	    #$persistent{"pref_$key"} = "";
+	    delete $persistent{"pref_$key"};
 	}
     }
     my $cookie = set_cookie({ %persistent });
@@ -3193,7 +3202,7 @@ sub search_coord {
     $header_args{-script} = {-src => $bbbike_html . "/bbbike_result.js",
 			    };
     $header_args{-printmode} = 1 if $printmode;
-    header(%header_args);
+    header(%header_args, -onLoad => "init_search_result()");
 
  ROUTE_HEADER:
     if (!@out_route) {
@@ -3434,9 +3443,15 @@ EOF
             # XXX Mit GET statt POST gibt es zwar einen häßlichen GET-String
 	    # und vielleicht können lange Routen nicht gezeichnet werden,
 	    # dafür gibt es keine Cache-Probleme mehr.
+	    # (Möglicher Fix: timestamp mitschicken)
+	    # Weiterer Vorteil: die Ergebnisse werden auch im accesslog
+	    # aufgezeichnet. Ansonsten muesste ich ein weiteres Logfile
+	    # anlegen.
 	    my $post_bug = 1; # XXX für alle aktivieren
 	    #$post_bug = 1 if ($kfm_bug); # XXX war mal nur für kfm
-	    print "<hr><form name=showmap method=" .
+	    #print "<hr>";
+	    print qq{<div class="box">};
+	    print "<form name=showmap method=" .
 		($post_bug ? "get" : "post");
 
 	    my(%c) = %persistent;
@@ -3493,7 +3508,7 @@ EOF
 	    print "<input type=submit name=interactive value=\"Grafik zeichnen\"> <font size=-1>(neues Fenster wird ge&ouml;ffnet)</font>";
 	    print " <input type=checkbox name=outputtarget value='print' " . ($default_print?"checked":"") . "> f&uuml;r Druck optimieren";
 #XXX not yet	    print " <input type=checkbox name='cb_attachment'> als Download";
-	    print "&nbsp;&nbsp; <span class=nobr>Ausgabe als: <select name=imagetype>\n";
+	    print "&nbsp;&nbsp; <span class=nobr>Ausgabe als: <select name=imagetype onchange='enable_size_details_buttons()'>\n";
 	    print " <option " . $imagetype_checked->("png") . ">PNG\n" if $graphic_format eq 'png';
 	    print " <option " . $imagetype_checked->("gif") . ">GIF\n" if $graphic_format eq 'gif' || $can_gif;
 	    print " <option " . $imagetype_checked->("jpeg") . ">JPEG\n" unless $cannot_jpeg;
@@ -3544,7 +3559,7 @@ EOF
 		    ">$fontstr $geom  $fontend</td>\n";
 	    }
 	    if (@not_for) {
-		print "<td><small>(nicht für: " . join(", ", @not_for) . ")</small></td>";
+		print "<td valign=bottom><small>(nicht für: " . join(", ", @not_for) . ")</small></td>";
 	    }
 	    print "</tr>\n";
 	    print "<tr><td>$fontstr<b>Details:</b>$fontend</td>";
@@ -3591,34 +3606,41 @@ EOF
 #  		print "<input type=hidden name=draw value=umland>\n";
 #  	    }
 	    print "</table>\n";
-	    print "<p>";
 	    print <<EOF;
-<font size=-1>Die Dateigr&ouml;&szlig;e der Grafik beträgt je nach
+<div class="graphfootnote">Die Dateigr&ouml;&szlig;e der Grafik beträgt je nach
 Bildgr&ouml;&szlig;e, Bildformat und Detailreichtum 15 bis 50 kB. PDFs sind 100 bis 400 kB groß.
 EOF
             print window_open("$bbbike_html/legende.html", "BBBikeLegende",
 			      "dependent,height=392,resizable" .
 			      "screenX=400,screenY=80,scrollbars,width=440")
-		. "Legende.</a></font>\n";
+		. "Legende.</a>\n";
+	    print "</div>";
 	}
 
 	print "<input type=hidden name=scope value='" .
 	    ($scope ne 'city' ? $scope : "") . "'>";
 	print "</form>\n";
+	print qq{</div>};
 
-	print "<hr><form name=settings action=\"" . $q->self_url . "\">\n";
+	#print "<hr>";
+	print qq{<div class="box">};
+	print "<form name=settings action=\"" . $q->self_url . "\">\n";
 	foreach my $key ($q->param) {
 	    next if $key =~ /^(pref_.*)$/;
 	    print $q->hidden(-name=>$key,
 			     -default=>[$q->param($key)])
 	}
-	print "<b>Einstellungen</b>:<p>\n";
+	print "<b>Einstellungen:</b>";
+	reset_html();
+	print "<p>\n";
 	settings_html();
 	print "<input type=submit value=\"Route mit ge&auml;nderten Einstellungen\">\n";
-	reset_html();
 	print "</form>\n";
+	print qq{</div>};
 
-	print "<hr><form action=\"$bbbike_script\">\n";
+	#print "<hr>";
+	print qq{<div class="box">};
+	print "<form action=\"$bbbike_script\">\n";
 	print "<input type=hidden name=startc value=\"$zielcoord\">";
 	print "<input type=hidden name=zielc value=\"$startcoord\">";
 	print "<input type=hidden name=startname value=\"$zielname\">";
@@ -3689,8 +3711,9 @@ EOF
 	}
 
 	print "</form>\n";
+	print qq{</div>};
 
-	print "<hr>\n";
+	#print "<hr>\n";
 
 	# Andere Alternativen ausgeben
 	if (@r > 1) {
@@ -4269,7 +4292,7 @@ sub get_streets {
 	    );
 
     my $use_cooked_street_data = $use_cooked_street_data;
-    do {
+    while(1) {
 	my @f = @f;
 	if ($use_cooked_street_data) {
 	    @f = map { "$_-cooked" } @f;
@@ -4285,12 +4308,13 @@ sub get_streets {
 	    if ($use_cooked_street_data) {
 		warn 'Maybe the "cooked" version is missing? Try again the normal version...';
 		$use_cooked_street_data = 0;
-		redo;
+		next;
 	    } else {
 		die $@;
 	    }
 	}
-    } while(0);
+	last;
+    }
     $g_str->{Scope} = $scope;
 
     if (!$use_cooked_street_data) {
@@ -5394,7 +5418,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/01/01 22:20:25 $';
+    my $cgi_date = '$Date: 2005/01/02 22:48:46 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

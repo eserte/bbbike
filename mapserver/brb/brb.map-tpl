@@ -4,6 +4,27 @@
 [% UNLESS TEMPLATE.defined; TEMPLATE = "brb"; END -%]
 [% UNLESS REFMAPOUTLINE.defined; REFMAPOUTLINE = "0 0 0"; END -%]
 [% UNLESS REFMAPCOLOR.defined; REFMAPCOLOR = "-1 -1 -1"; END -%]
+[% UNLESS ON_FLAECHEN.defined %][% ON_FLAECHEN = "ON" %][% END -%]
+[% UNLESS ON_GEWAESSER.defined %][% ON_GEWAESSER = "ON" %][% END -%]
+[% UNLESS ON_FAEHREN.defined %][% ON_FAEHREN = "ON" %][% END -%]
+[% UNLESS ON_GRENZEN.defined %][% ON_GRENZEN = "ON" %][% END -%]
+[% UNLESS ON_STRASSEN.defined %][% ON_STRASSEN = "DEFAULT" %][% END -%]
+[% UNLESS ON_U_BAHN.defined %][% ON_U_BAHN = "ON" %][% END -%]
+[% UNLESS ON_S_BAHN.defined %][% ON_S_BAHN = "ON" %][% END -%]
+[% UNLESS ON_R_BAHN.defined %][% ON_R_BAHN = "ON" %][% END -%]
+[% UNLESS ON_FRAGEZEICHEN.defined %][% ON_FRAGEZEICHEN = "OFF" %][% END -%]
+[% UNLESS ON_ORTE.defined %][% ON_ORTE = "ON" %][% END -%]
+[% UNLESS ON_OBST.defined %][% ON_OBST = "ON" %][% END -%]
+[% UNLESS ON_AMPELN.defined %][% ON_AMPELN = "ON" %][% END -%]
+[% UNLESS COLOR_MIDDLE_GREEN.defined %][% COLOR_MIDDLE_GREEN = "0 225 0" %][% END -%]
+[% UNLESS COLOR_GREEN.defined %][% COLOR_GREEN = "128 255 128" %][% END -%]
+[% UNLESS COLOR_DARK_GREEN.defined %][% COLOR_DARK_GREEN = "0 128 0" %][% END -%]
+[% UNLESS COLOR_YELLOW.defined %][% COLOR_YELLOW = "255 255 0" %][% END -%]
+[% UNLESS COLOR_RED.defined %][% COLOR_RED = "200 0 0" %][% END -%]
+[% UNLESS COLOR_DARK_BLUE.defined %][% COLOR_DARK_BLUE = "0 0 128" %][% END -%]
+[% UNLESS COLOR_WHITE.defined %][% COLOR_WHITE = "255 255 255" %][% END -%]
+[% UNLESS COLOR_LIGHT_BLUE.defined %][% COLOR_LIGHT_BLUE = "200 200 255" %][% END -%]
+[% UNLESS COLOR_GREY_BG.defined %][% COLOR_GREY_BG = "200 200 200" %][% END -%]
 #
 # Start of map file
 #
@@ -360,7 +381,7 @@ END
 LAYER
   NAME "Fl‰chen"
   TYPE POLYGON
-  STATUS ON
+  STATUS [% ON_FLAECHEN %]
   GROUP flaechen
   DATA flaechen
 
@@ -370,12 +391,12 @@ LAYER
   CLASS
     EXPRESSION "F:P" 
     NAME "Park, Wald"
-    COLOR 0 225 0
+    COLOR [% COLOR_MIDDLE_GREEN %]
   END
   CLASS
     EXPRESSION "F:Ae" 
     NAME "Flughafen"
-    COLOR 255 255 255
+    COLOR [% COLOR_WHITE %]
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -394,7 +415,7 @@ LAYER
   NAME "Gew‰sser"
   GROUP gewaesser
   TYPE LINE
-  STATUS ON
+  STATUS [% ON_GEWAESSER %]
   DATA wasserstrassen
   
   LABELITEM "NAME"
@@ -492,7 +513,7 @@ LAYER
   NAME "Gew‰sser (Polygone)"
   GROUP gewaesser
   TYPE POLYGON
-  STATUS ON
+  STATUS [% ON_GEWAESSER %]
   DATA wasserstrassen_polygon
 
   TOLERANCE 3
@@ -532,7 +553,7 @@ LAYER
   NAME "Inseln"
   GROUP gewaesser
   TYPE POLYGON
-  STATUS ON
+  STATUS [% ON_GEWAESSER %]
   DATA wasserstrassen_polygon
 
   LABELITEM "NAME"
@@ -587,7 +608,7 @@ END
 LAYER
   NAME "F‰hren"
   TYPE LINE
-  STATUS ON
+  STATUS [% ON_FAEHREN %]
   GROUP faehren
   DATA faehren
 
@@ -595,7 +616,7 @@ LAYER
 
 [% BLOCK CLASS_FAEHREN -%]  
   CLASS
-    COLOR 255 255 255
+    COLOR [% COLOR_WHITE %]
     SYMBOL "raute"
     SIZE [% size %]
     [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
@@ -623,16 +644,17 @@ END
 LAYER
   NAME "F‰hren (Annotations)"
   GROUP faehren
-  MAXSCALE 75000
-  STATUS ON
+#  MAXSCALE 75000
+  STATUS [% ON_FAEHREN %]
   DATA faehren
   TYPE ANNOTATION
 
   LABELITEM "STRNR" # dummy ... should be invisible i.e. one space
+[% BLOCK CLASS_FERRY -%]
   CLASS
     NAME "F‰hren"
     COLOR 0 255 0
-    SYMBOL '[% IMAGE_DIR %]/ferry.[% IMAGE_SUFFIX %]'
+    SYMBOL '[% IMAGE_DIR %]/ferry[% imgsuffix %].[% IMAGE_SUFFIX %]'
     LABEL
       MINFEATURESIZE 10
       MINDISTANCE 150
@@ -640,7 +662,12 @@ LAYER
       SIZE TINY
       COLOR 0 0 0
     END
+    [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+    [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
+[% END -%]
+[% PROCESS CLASS_FERRY imgsuffix="_klein" minscale=75000 maxscale=150000 -%]
+[% PROCESS CLASS_FERRY imgsuffix="" minscale=undef maxscale=75000 -%]
 END
 
 ### BEGIN AFTER FAEHREN_ANNOTATIONS
@@ -650,7 +677,7 @@ LAYER
   NAME "Grenzen von Berlin"
   GROUP grenzen
   TYPE LINE
-  STATUS ON
+  STATUS [% ON_GRENZEN %]
   DATA berlin
   CLASSITEM 'CAT'
   CLASS
@@ -677,7 +704,7 @@ LAYER
   NAME "Grenzen von Potsdam"
   GROUP grenzen
   TYPE LINE
-  STATUS ON
+  STATUS [% ON_GRENZEN %]
   DATA potsdam
   CLASSITEM 'CAT'
   CLASS
@@ -922,7 +949,7 @@ END
 LAYER
   NAME "Straﬂen"
   TYPE LINE
-  STATUS DEFAULT
+  STATUS [% ON_STRASSEN %]
   DATA strassen
   GROUP strassen
   
@@ -973,7 +1000,7 @@ LAYER
       OUTLINECOLOR 225 225 225
       ANGLE AUTO
     END
-    COLOR 255 255 255
+    COLOR [% COLOR_WHITE %]
     SYMBOL 'width'
     SIZE [% size %]
     [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
@@ -1086,14 +1113,14 @@ LAYER
   NAME "Straﬂen (Annotations)"
   GROUP strassen
 #  MAXSCALE 600000
-  STATUS DEFAULT
+  STATUS [% ON_STRASSEN %]
   DATA strassen
   TYPE ANNOTATION
   LABELITEM "STRNR"
   CLASSITEM "CAT"
   CLASS
     EXPRESSION /^B/
-    COLOR 255 255 0
+    COLOR [% COLOR_GREEN %]
     SYMBOL 'strnrbox'
     SIZE 10
     LABEL
@@ -1109,7 +1136,7 @@ LAYER
   CLASS
 # XXX warum geht /^F/ nicht???
     EXPRESSION /^.+/
-    COLOR 0 255 0
+    COLOR [% COLOR_YELLOW %]
     SYMBOL 'strnrbox'
     SIZE 10
     LABEL
@@ -1122,7 +1149,6 @@ LAYER
       COLOR 0 0 0
     END
   END
-
   METADATA
     WMS_TITLE "Straﬂennummern"
     WMS_ABSTRACT "Straﬂennummern und Nummerierung von ausgeschilderten Radrouten"
@@ -1140,7 +1166,7 @@ LAYER
   NAME "U-Bahn"
   GROUP bahn
   TYPE LINE
-  STATUS ON
+  STATUS [% ON_U_BAHN %]
   DATA ubahn
   
   CLASSITEM 'CAT'
@@ -1173,7 +1199,7 @@ LAYER
   NAME "S-Bahn"
   GROUP bahn
   TYPE LINE
-  STATUS ON
+  STATUS [% ON_S_BAHN %]
   DATA sbahn
   
   CLASSITEM 'CAT'
@@ -1206,7 +1232,7 @@ LAYER
   NAME "Regionalbahn"
   GROUP bahn
   TYPE LINE
-  STATUS ON
+  STATUS [% ON_R_BAHN %]
   DATA rbahn
   
   CLASSITEM 'CAT'
@@ -1479,7 +1505,7 @@ LAYER
   NAME "Fragezeichen"
   GROUP fragezeichen
   TYPE LINE
-  STATUS OFF
+  STATUS [% ON_FRAGEZEICHEN %]
   DATA fragezeichen
   
   LABELITEM 'CAT'
@@ -1515,7 +1541,7 @@ LAYER
   NAME "U-Bahnhof"
   GROUP bahn
   TYPE POINT
-  STATUS ON
+  STATUS [% ON_U_BAHN %]
   DATA ubahnhof
   MAXSCALE 300000
   TOLERANCE 5
@@ -1573,7 +1599,7 @@ LAYER
   NAME rbahnhof
   GROUP bahn
   TYPE POINT
-  STATUS ON
+  STATUS [% ON_R_BAHN %]
   DATA rbahnhof
   MAXSCALE 300000
   TOLERANCE 3
@@ -1622,7 +1648,7 @@ LAYER
   NAME "S-Bahnhof"
   GROUP bahn
   TYPE POINT
-  STATUS ON
+  STATUS [% ON_S_BAHN %]
   DATA sbahnhof
   MAXSCALE 300000
   TOLERANCE 5
@@ -1678,7 +1704,7 @@ END
 LAYER
   NAME Orte
   TYPE POINT
-  STATUS ON
+  STATUS [% ON_ORTE %]
   GROUP orte
   DATA orte
   
@@ -1765,7 +1791,7 @@ END
 LAYER
   NAME Obst
   TYPE POINT
-  STATUS ON
+  STATUS [% ON_OBST %]
   GROUP obst
   DATA obst
   MAXSCALE 300000
@@ -2061,7 +2087,7 @@ LAYER
   NAME "Grenzen von Deutschland"
   GROUP grenzen
   TYPE LINE
-  STATUS ON
+  STATUS [% ON_GRENZEN %]
   DATA deutschland
   CLASSITEM 'CAT'
   CLASS

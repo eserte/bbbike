@@ -93,6 +93,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
     sub bbbike_cgi_conf {
 	my $self = shift->new;
+	my(%args) = @_[1..$#_];
 	# guess position of bbbike.cgi.config
 	require File::Basename;
 	require File::Spec;
@@ -113,7 +114,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 	$self->MapserverRelurl($ms->{MAPSERVER_PROG_RELURL});
 	$self->MapserverUrl($ms->{MAPSERVER_PROG_URL});
 	$self->TemplateMap("brb.map-tpl");
-	$self->ImageSuffix("png");
+	$self->ImageSuffix($args{ImageType} || "png");
 	if (!defined $ms->{MAPSERVER_FONTS_LIST}) {
 	    die "Please define \$mapserver_fonts_list in $bbbike_cgi_conf_path";
 	}

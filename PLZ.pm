@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.55 2004/12/23 00:26:01 eserte Exp $
+# $Id: PLZ.pm,v 1.55 2004/12/23 00:26:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -352,7 +352,8 @@ sub look {
 }
 
 # Argument: an array of references (the output of look())
-# Combine streets which are probably the same (same citypart and/or same
+# Combine streets which are probably the same (same coord, same citypart
+# and/or same
 # zip code)
 # Returned value has the same format as the input
 sub combine {
@@ -362,9 +363,10 @@ sub combine {
     foreach my $s (@in) {
 	if (exists $out{$s->[LOOK_NAME]}) {
 	    foreach my $r (@{ $out{$s->[LOOK_NAME]} }) {
+		my $eq_coord = $s->[LOOK_COORD] eq $r->[LOOK_COORD];
 		my $eq_cp = grep { $s->[LOOK_CITYPART] eq $_ } grep { $_ ne "" } @{ $r->[LOOK_CITYPART] };
 		my $eq_zp = grep { $s->[LOOK_ZIP]      eq $_ } grep { $_ ne "" } @{ $r->[LOOK_ZIP] };
-		if ($eq_cp || $eq_zp) {
+		if ($eq_cp || $eq_zp || $eq_coord) {
 		    push @{ $r->[LOOK_CITYPART] }, $s->[LOOK_CITYPART]
 			unless $eq_cp;
 		    push @{ $r->[LOOK_ZIP] }, $s->[LOOK_ZIP]

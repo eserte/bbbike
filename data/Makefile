@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.38 2005/01/01 19:01:56 eserte Exp $
+# $Id: Makefile,v 2.38 2005/01/01 19:01:56 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -54,7 +54,7 @@ SOURCE_TARGETS+=	gesperrt gesperrt_car
 .for i in u s r
 SOURCE_TARGETS+=	gesperrt_$(i)
 .endfor
-SOURCE_TARGETS+=	${COMMENTS_PARTIAL} fragezeichen exits
+SOURCE_TARGETS+=	${COMMENTS_PARTIAL} fragezeichen exits multi_bez_str
 
 # These do not have a -orig file of their own
 COMPUTED_TARGETS=	sbahnhof_bg ubahnhof_bg rbahnhof berlin
@@ -127,7 +127,7 @@ inaccessible_landstrassen: strassen landstrassen landstrassen2 gesperrt
 strassen:	.strassen.tmp plaetze
 	-@$(WRITEABLE) $@
 	cat $> > $@
-	-rm -f strassen-cooked
+	#-rm -f strassen-cooked
 	-@$(READONLY) $@
 
 .strassen.tmp: strassen-orig
@@ -533,6 +533,11 @@ check-fragezeichen:	/tmp/check-fragezeichen.bbd \
 /tmp/inaccessible-fragezeichen.bbd: fragezeichen strassen landstrassen landstrassen2
 	${SEARCH_INACCESSIBLE} -street strassen,landstrassen,landstrassen2,fragezeichen > $@
 
+multi_bez_str:	multi_bez_str-orig
+	-@$(WRITEABLE) $@
+	${MISCSRCDIR}/complete_multi_bez_str > $@
+	-@$(READONLY) $@
+
 # Makefile in ../misc ausführen
 # drat ... ich möchte nicht gmake verwenden :-(
 make_misc:
@@ -575,7 +580,7 @@ do-checks:	.check_strassen1 .check_strassen2 \
 
 check-disabled:	.check_label
 
-.check_strassen1:	.strassen.tmp add_str multi_bez_str Berlin.coords.data
+.check_strassen1:	.strassen.tmp add_str multi_bez_str-orig Berlin.coords.data
 	$(CHECK_STR_PLZ) -data .strassen.tmp
 	@touch $@
 

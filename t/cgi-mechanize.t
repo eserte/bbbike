@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.18 2004/12/30 21:45:41 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.19 2005/01/02 22:48:30 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -48,21 +48,24 @@ $agent->env_proxy();
 
 $agent->get($cgiurl);
 like($agent->content, qr/BBBike/, "Startpage $cgiurl is not empty");
+my_tidy_check($agent);
 
 $agent->form(1) if $agent->forms and scalar @{$agent->forms};
 { local $^W; $agent->current_form->value('start', 'duden'); };
 { local $^W; $agent->current_form->value('ziel', 'sonntag'); };
 $agent->submit();
+my_tidy_check($agent);
 
 like($agent->content, qr/Kreuzung/, "On the crossing page");
 { local $^W; $agent->current_form->value('startc', '8982,8781'); };
 { local $^W; $agent->current_form->value('zielc', '14598,11245'); };
 $agent->submit();
+my_tidy_check($agent);
 
 like($agent->content, qr/Route/, "On the route result page");
 $agent->submit();
 
-#like($agent->content_type, qr{^image/}); # XXX how test?
+like($agent->ct, qr{^image/});
 $agent->back();
 
 {
@@ -70,8 +73,10 @@ $agent->back();
     $agent->form($formnr);
 }
 $agent->submit();
+my_tidy_check($agent);
 
 $agent->follow('Start beibehalten');
+my_tidy_check($agent);
 
 like($agent->content, qr/BBBike/, "On the startpage again ...");
 like($agent->content, qr/Sonntagstr./, "... with the start street preserved");
@@ -79,13 +84,16 @@ like($agent->content, qr/Sonntagstr./, "... with the start street preserved");
 { local $^W; $agent->current_form->value('via', 'Heerstr'); };
 { local $^W; $agent->current_form->value('ziel', 'Adlergestell'); };
 $agent->submit();
+my_tidy_check($agent);
 
 like($agent->content, qr/genaue/i, "expecting multiple matches");
 $agent->submit();
+my_tidy_check($agent);
 
 like($agent->content, qr/Kreuzung/, "On the crossing page");
 { local $^W; $agent->current_form->value('zielc', '27342,-3023'); };
 $agent->submit();
+my_tidy_check($agent);
 
 like($agent->content, qr/Route/, "On the route result page");
 {
@@ -103,6 +111,7 @@ is($@, "", "setting pref_ampel ok");
 eval { local $^W; $agent->current_form->value('pref_green', 'GR2'); };
 is($@, "", "setting pref_green ok");
 $agent->submit();
+my_tidy_check($agent);
 
 like($agent->content, qr/Route/);
 
@@ -112,6 +121,7 @@ $agent->follow('Start und Ziel neu eingeben');
 $agent->current_form->value('start', 'seume/simplon');
 $agent->current_form->value('ziel', 'brandenburger tor (mitte)');
 $agent->submit;
+my_tidy_check($agent);
 
 like($agent->content, qr{Einstellungen}, "On the settings page");
 unlike($agent->content, qr{genaue.*kreuzung}i, "Crossings are exact");
@@ -132,6 +142,7 @@ $agent->form("BBBikeForm");
 { local $^W; $agent->current_form->value('start', 'kaiser-friedrich-str'); };
 { local $^W; $agent->current_form->value('ziel', 'helmholtzstr'); };
 $agent->submit();
+my_tidy_check($agent);
 
 like($agent->content, qr/genaue.*startstr.*ausw/i, "Start is ambiguous");
 like($agent->content, qr/genaue.*zielstr.*ausw/i,  "Goal is ambiguous");
@@ -170,6 +181,7 @@ TRY: {
 }
 
 $agent->submit;
+my_tidy_check($agent);
 
 like($agent->content, qr{genaue kreuzung}i, "On the crossing page");
 
@@ -194,6 +206,7 @@ $agent->form("BBBikeForm");
 { local $^W; $agent->current_form->value('start', 'am neuen palais'); };
 { local $^W; $agent->current_form->value('ziel', 'dudenstr'); };
 $agent->submit();
+my_tidy_check($agent);
 
 like($agent->content, qr/genaue.*kreuzung.*angeben/i, "On the crossing page");
 like($agent->content, qr/\QAm Neuen Palais (F2.2) (Potsdam)/i,  "Correct start resolution (Neues Palais ...)");
@@ -214,6 +227,7 @@ $agent->form("BBBikeForm");
 { local $^W; $agent->current_form->value('start', 'Petri Dank'); };
 { local $^W; $agent->current_form->value('ziel', 'Römische Bäder'); };
 $agent->submit();
+my_tidy_check($agent);
 
 # May have different results depending on $use_exact_streetchooser.
 # The first is with $use_exact_streetchooser=0, the second with
@@ -265,6 +279,7 @@ $agent->form("BBBikeForm");
 { local $^W; $agent->current_form->value('start', 'kleine parkstr'); };
 { local $^W; $agent->current_form->value('ziel', 's lehrter bahnhof'); };
 $agent->submit();
+my_tidy_check($agent);
 
 like($agent->content, qr/Kleine Parkstr\..*ist nicht bekannt/i, "Street not in database");
 like($agent->content, qr{\Qhtml/newstreetform.html?\E.*\Qstrname=Kleine%20Parkstr}i, "newstreetform link");
@@ -285,6 +300,7 @@ $agent->form("BBBikeForm");
 { local $^W; $agent->current_form->value('start', 'brandenburger tor'); };
 { local $^W; $agent->current_form->value('ziel', 'seumestr'); };
 $agent->submit();
+my_tidy_check($agent);
 
 like($agent->content, qr/genaue.*startstr.*ausw/i, "Start is ambiguous");
 
@@ -312,6 +328,7 @@ for my $test (["Brandenburger Tor/Mitte among start alternatives",
 
 $input->value(($input->possible_values)[0]);
 $agent->submit;
+my_tidy_check($agent);
 
 like($agent->content, qr/brandenburger tor.*mitte/i, "Mitte alternative selected");
 
@@ -326,10 +343,12 @@ for my $value ($input->possible_values) {
     }
 }
 $agent->submit;
+my_tidy_check($agent);
 
 like($agent->content, qr/brandenburger tor.*potsdam/i, "Potsdam alternative selected");
 
 $agent->submit;
+my_tidy_check($agent);
 
 my %len;
 for my $winter_optimization ("", "WI1", "WI2") {
@@ -339,6 +358,7 @@ for my $winter_optimization ("", "WI1", "WI2") {
 	skip("winter_optimization not available", 1) if !defined $input;
 	$input->value($winter_optimization);
 	$agent->submit;
+	my_tidy_check($agent);
 	my($len) = $agent->content =~ /l.*?nge:.*?([\d\.]+)\s*km/;
 	ok(defined $len, "Got length=$len with winter optimization=$winter_optimization");
 	$len{$winter_optimization} = $len;
@@ -353,4 +373,14 @@ SKIP: {
 }
 
 }
+
+sub my_tidy_check {
+    my($agent) = @_;
+    my $uri = $agent->uri;
+    $uri =~ s/^.*?\?/...?/;
+    my $maxlen = 55;
+    $uri = substr($uri, 0, $maxlen) . "..." if length($uri) > $maxlen;
+    tidy_check($agent->content, "HTML check: $uri", -uri => $agent->uri);
+}
+
 __END__

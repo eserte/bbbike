@@ -80,6 +80,7 @@ data/temp_blockings/*.bbd
 data/temp_blockings/*.pl
 data/exits-orig
 data/exits
+data/multi_bez_str-orig
 ext/Strassen-Inline/.cvsignore
 ext/Strassen-Inline2/.cvsignore
 ext/StrassenNetz-CNetFile/.cvsignore
@@ -269,3 +270,4 @@ Strassen/QuadTree.pm
 miscsrc/XXX_new_comments.pl
 miscsrc/tkzinctest
 miscsrc/winter_optimization.pl
+miscsrc/complete_multi_bez_str

@@ -9,7 +9,10 @@ body {
 td,th,p,h2,li,input {
   font-family:sans-serif,helvetica,verdana,arial;
 }
-table.desc,td {
+table.desc {
+  vertical-align:top;
+}
+table.routelist td {
   vertical-align:top;
 }
 table.detailmap td {
@@ -67,3 +70,24 @@ a.ms:visited { color:#333333; }
   background-color:yellow;
   font-size:small;
 }
+
+.settingsreset {
+  margin-left:1cm;
+}
+
+.box {
+  border: 2px black solid;
+  padding: 4px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.box form {
+  margin-bottom: 0px;
+}
+
+.graphfootnote {
+  font-size:smaller;
+  margin-top:8px;
+}
+
