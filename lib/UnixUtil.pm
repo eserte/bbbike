@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: UnixUtil.pm,v 1.2 2000/10/17 21:18:57 eserte Exp $
+# $Id: UnixUtil.pm,v 1.3 2003/04/26 19:45:46 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999, 2003 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net/
 #
 
 package UnixUtil;
@@ -26,7 +26,7 @@ sub get_cdrom_drives {
     my @drives;
     my $cdrom_devs_regex;
     if ($^O =~ /linux/i) {
-	my @cdrom_devs = (qw(scd[0-7] sonycd mcd mcdx cdu535 lmscd
+	my @cdrom_devs = (qw(cdrom scd[0-7] sonycd mcd mcdx cdu535 lmscd
 			     sbpcd sbpcd[123] aztcd bpcd));
 	$cdrom_devs_regex = "^/dev/(" . join("|", @cdrom_devs) . ")\$";
     } elsif ($^O =~ /freebsd/i) {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanConn.pm,v 1.9 2003/01/08 20:12:24 eserte Exp $
+# $Id: GpsmanConn.pm,v 1.11 2003/05/17 00:37:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@
 package GPS::GpsmanConn;
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 use Config;
 
 # XXX should go away some day...
@@ -43,6 +43,9 @@ BEGIN {
 		last SEARCH_FOR_GARMIN;
 	    }
 	}
+# Use the new perl-GPS repository. If upload/downloads fail, comment this
+# line to get the old prod.perl-GPS
+use blib "/home/e/eserte/work/perl-GPS";
 	# make sure /tmp version is first
 	if (-e "/tmp/prod.perl-GPS") {
 	    eval 'use blib "/tmp/prod.perl-GPS"'; warn $@ if $@;
@@ -59,6 +62,9 @@ BEGIN {
 	eval 'use GPS::Garmin'; die $@ if $@; # 0.12 plus
     }
 }
+use GPS::Garmin::Handler;
+
+use constant MIN_TIME => 633826800; # 1990-01-01, see also GPS::Garmin::Constant::GRMN_UTC_DIFF
 
 use Karte::Polar;
 
@@ -109,6 +115,8 @@ sub new {
     if (!$self->{GPS}) {
 	#XXX require GPS::Garmin;
 	GPS::Garmin->VERSION(0.12); # 0.12 plus
+	# XXX Windows? HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\SERIALCOMM
+	# XXX Linux: /dev/ttyS0 or ttyS1
 	my $port = $args{Port} || ($Config::Config{archname} eq 'arm-linux' ? '/dev/ttySA0' : '/dev/cuaa0'); # more distinctions
 	my $baud = $args{Baud} || 9600;
 	$self->{GPS} = new GPS::Garmin('Port' => $port,
@@ -123,10 +131,11 @@ sub new {
 
 sub _time_to_gpsman {
     my $time = shift;
+    $time = MIN_TIME if $time < MIN_TIME;
     my @l = localtime $time;
     sprintf "%02d-%s-%04d %02d:%02d:%02d",
 	$l[3],
-	[qw(Jan Feb May Apr May Jun Jul Aug Sep Oct Nov Dec)]->[$l[4]],
+	[qw(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec)]->[$l[4]],
 	$l[5]+1900,
 	@l[2,1,0];
 }
@@ -214,7 +223,7 @@ EOF
 		   $alt
 		  ) . "\n";
 	$r_i++;
-	printf STDERR "Records read: %d%%     \r", $r_i/$numr*100
+	printf STDERR "Records read: %d%% (%d/%d)    \r", $r_i/$numr*100, $r_i, $numr
 	    if $self->{Verbose};
     }
     printf STDERR "\n" if $self->{Verbose};
@@ -326,8 +335,9 @@ sub put_route_from_bbd {
     require Karte;
     require Karte::Standard;
     my @d;
+    my $handler = $gps->can("handler") ? $gps->handler : $gps;
     push @d,
-	[$gps->GRMN_RTE_HDR, $gps->pack_Rte_hdr({nmbr => $number, cmnt => $comment})];
+	[$gps->GRMN_RTE_HDR, $handler->pack_Rte_hdr({nmbr => $number, cmnt => $comment})];
     my $s = new Strassen $bbd_file or die "Can't open $bbd_file: $!";
     $s->init;
     my $r = $s->next;
@@ -337,12 +347,16 @@ sub put_route_from_bbd {
 	my($lon,$lat) = split /,/, $p;
 	($lon,$lat) = $Karte::map{'polar'}->standard2map($lon,$lat);
 	unless ($first) {
-	    push @d, [$gps->GRMN_RTE_LINK_DATA, $gps->pack_Rte_link_data];
+	    push @d, [$gps->GRMN_RTE_LINK_DATA, $handler->pack_Rte_link_data];
 	}
-	push @d, [$gps->GRMN_RTE_WPT_DATA, $gps->pack_Rte_wpt_data({lat => $lat, lon => $lon, ident => "I".(++$i)})];
+	push @d, [$gps->GRMN_RTE_WPT_DATA, $handler->pack_Rte_wpt_data({lat => $lat, lon => $lon, ident => "I".(++$i)})];
 	$first = 0;
     }
-    $gps->upload_data2(\@d);
+    if ($gps->can("upload_data2")) {
+	$gps->upload_data2(\@d);
+    } else {
+	$gps->upload_data(\@d);
+    }
 }
 
 # REPO BEGIN
@@ -366,9 +380,10 @@ sub monthabbrev_number {
 }
 # REPO END
 
-{
+BEGIN {
+    if ($GPS::Garmin::Handler::VERSION < 0.13) {
+	eval q{
 # XXX should be moved to prod code, but is already in "new" code...
-use GPS::Garmin::Handler;
 package GPS::Garmin::Handler;
 
 sub Trk_data {
@@ -432,6 +447,9 @@ sub pack_Trk_data {
 	$s;
 }
 
+};
+        die $@ if $@;
+    }
 }
 
 return 1 if caller;

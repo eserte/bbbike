@@ -1,16 +1,25 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMenubar.pm,v 1.12 2003/01/08 18:48:02 eserte Exp $
+# $Id: BBBikeMenubar.pm,v 1.13 2003/01/18 13:02:59 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2002,2003 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
 # Mail: slaven@rezic.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# WWW:  http://bbbike.sourceforge.net/
 #
+
+# Cloning menus is expensive (tkMenu.c: CloneMenu and Tk/Menu.pm:
+# MenuDup). Exactly this is what is happening in this module: cloning
+# menus from the symbol icon bar to the standard menu bar. This takes
+# some two seconds from overall 16 seconds startup time on a 466MHz
+# Celeron running FreeBSD 4.6, perl 5.8.0 and Tk 800.024. Starting
+# with "./bbbike -nomenu" disables the standard menu. All menus are
+# also accessible from the standard menu bar, so no functionality is
+# lost.
 
 package BBBike::Menubar;
 

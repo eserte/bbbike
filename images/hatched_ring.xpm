@@ -1,0 +1,36 @@
+/* XPM */
+static char *hatched_ring[] = {
+/* columns rows colors chars-per-pixel */
+"20 20 10 1",
+"  c red",
+". c #ff002a",
+"X c #ff0033",
+"o c #ff003d",
+"O c #ff0043",
+"+ c #ff0048",
+"@ c #ff0055",
+"# c #ff007f",
+"$ c white",
+"% c None",
+/* pixels */
+"%%%%@OoOOOO+ooOO %%%",
+"%% .OOOOOOOOOOOOX %%",
+"% ooOoOOOoOOOOOOOO@%",
+" +oOOOOOOOOOOOOOO+O ",
+"@oOOOOoOOOOOO+OOOOO+",
+"OOOOOOOOoooooOOOOOOO",
+"OOOOOOOX@ #@XOOOOOO+",
+"oOOOOoo %%%% XOO+OOO",
+"OOOOOX %%%%%% oOOOOO",
+"OOOOO+%%%%%%%%.OOOOO",
+"OOOOOX%%%%%%%%.oOOOO",
+"OOOOOO%%%%%%% oOOOOO",
+"oOOOO+ %%%%%%oOOOOoO",
+"oOOOOOO@ %  XooOOOOO",
+"OOOOOooO++O+OOOOOOOo",
+"O+OOoOOOOOOOOOOOOOO+",
+"@oOOOOO+OOOOOOOOoOo#",
+"%XoOOOOOOOOOOOOOOo#%",
+"%%XXOOOOOOOOOOOoo %%",
+"%%%@XoOOOOoOoOoX%%%%"
+};

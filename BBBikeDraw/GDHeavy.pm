@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GDHeavy.pm,v 1.3 2003/01/08 20:10:57 eserte Exp $
+# $Id: GDHeavy.pm,v 1.3 2003/01/08 20:10:57 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -195,7 +195,7 @@ sub draw_arctext_layer {
 	my(undef, $type, undef, undef, $text, $height, $angle, undef, $justify, $fonttype, $slant) = split /:/, $r->[Strassen::NAME];
 	my($x, $y) = $transpose->(@{Strassen::to_koord1($coords->[0])});
 	if ($type == 3 || $type == 16) { # Hauptstraßen, Bahnhöfe
-	    $im->stringFT($typefill{$type}, "/usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf", $height/4, -$angle/180*pi, $x, $y, $text);
+	    $im->stringFT($typefill{$type}, $TTF_STREET, $height/4, -$angle/180*pi, $x, $y, $text);
 	}
     }
 }

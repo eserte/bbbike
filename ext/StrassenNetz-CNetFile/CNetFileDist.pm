@@ -7,7 +7,7 @@ package StrassenNetz::CNetFile;
 require DynaLoader;
 unshift @ISA, 'DynaLoader';
 #use base 'DynaLoader';
-$VERSION = "1.09";
+$VERSION = "1.10";
 use StrassenNetz::CNetFilePerl;
 
 bootstrap StrassenNetz::CNetFile $VERSION;

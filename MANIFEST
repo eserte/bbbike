@@ -9,9 +9,13 @@ BBBikeDraw/PDF.pm
 BBBikeDraw/SVG.pm
 BBBikeDraw/GD.pm
 BBBikeDraw/ImageMagick.pm
+BBBikeDraw/MapServer.pm
 BBBikeEdit.pm
 BBBikeEditUtil.pm
 BBBikeESRI.pm
+BBBikeGlobalVars.pm
+BBBikeGPS.pm
+BBBikeHeavy.pm
 BBBikeMail.pm
 BBBikeMapserver.pm
 BBBikeMenubar.pm
@@ -30,6 +34,7 @@ BBBikeThunder.pm
 BBBikeTrans.pm
 BBBikeUtil.pm
 BBBikeVar.pm
+BBBikeWeather.pm
 # not yet: BBBikeMapEditorPlugin.pm
 BBBikeScribble.pm
 BBBikeScribblePlugin.pm
@@ -58,6 +63,7 @@ Karte/Berlinmap2000.pm
 Karte/Berlinmap2001.pm
 Karte/Berlinmap2002.pm
 Karte/Cityinfo.pm
+Karte/ETRS89.pm
 Karte/FURadar.pm
 Karte/FURadar2.pm
 Karte/FURadar3.pm
@@ -75,6 +81,9 @@ Karte/Standard.pm
 Karte/T99.pm
 Karte/T2001.pm
 Karte/UTM.pm
+Karte/Demap2002.pm
+Karte/Potsdammap2002.pm
+Karte/Tk50.pm
 MANIFEST
 MasterPunkte.pm
 MasterStrassen.pm
@@ -115,6 +124,7 @@ Strassen/DB_File.pm
 Strassen/DB_File_Btree.pm
 Strassen/Stat.pm
 Strassen/Lazy.pm
+Strassen/Pg.pm
 Telefonbuch.pm
 Telefonbuch98.pm
 Telefonbuch99.pm
@@ -146,6 +156,7 @@ cgi/tinyhttpd			experimentell (fuer Win32)
 cgi/tinyhttpd.config
 cgi/mksymlinks
 cgi/mapserver_comment.cgi
+cgi/mapserver_address.cgi
 data/README
 data/.modified			for updating over the internet
 data/Berlin.coords.data
@@ -158,6 +169,7 @@ data/faehren
 data/flaechen
 data/gesperrt
 data/gesperrt_car
+data/green
 data/handicap_l
 data/handicap_s
 data/hoehe
@@ -261,6 +273,7 @@ html/routensuche.html
 html/bbbike_start.js
 html/bbbike.css
 html/bbbikepod.css
+html/bbbikeprint.css
 html/bbbike_small.html
 html/bbbike_small.en.html
 html/bbbike_sidebar.html
@@ -272,12 +285,14 @@ images/addnet_ptr_mask.xbm
 images/airport.gif
 images/airport.xpm
 images/ampel.gif
+images/ampel.png
 images/ampel_klein.gif
 images/ampel_klein2.gif
 images/ampel_klein_grey.xpm
 images/ampel_klein.png
 images/ampel_klein2.png
 images/andreaskr.gif
+images/andreaskr.png
 images/andreaskr_klein.gif
 images/andreaskr_klein2.gif
 images/andreaskr_klein.png
@@ -289,6 +304,7 @@ images/andreaskr_klein2.jpg
 images/flag2_bl.jpg
 images/flag_ziel.jpg
 images/apfel.gif
+images/apfel.png
 images/bbbike_splash.xpm
 images/bbbike_splash.gif
 images/berlin_overview_small.gif
@@ -318,6 +334,7 @@ images/exit.gif
 images/favicon.ico
 images/ferry.gif
 images/ferry.xpm
+images/ferry.png
 images/ferry_klein.gif
 images/ferry_klein.xpm
 images/flaechen.gif
@@ -332,6 +349,9 @@ images/glas.xpm
 images/glas_klein.gif
 images/glas_klein.xpm
 images/haltestelle.gif
+images/hatched_ring.gif
+images/hatched_ring.xpm
+images/hatched_ring.png
 images/help.gif
 images/info.gif
 images/info_ptr.xbm
@@ -340,6 +360,7 @@ images/inwork.gif
 images/kino_klein.gif
 images/kino_klein.xpm
 images/kirsche.gif
+images/kirsche.png
 images/koord.gif
 images/kopfstein_klein.gif
 images/kopfstein_klein.xpm
@@ -347,6 +368,7 @@ images/kopfstein_klein_grey.gif
 images/kopfstein_klein_grey.xpm
 images/landstrasse.gif
 images/legend_blocked.gif
+images/legend_blockedroute.gif
 images/legend_carry.gif
 images/legend_narrowpassage.gif
 images/legend_oneway.gif
@@ -361,6 +383,7 @@ images/open.gif
 images/opt.gif
 images/ort.gif
 images/pflaume.gif
+images/pflaume.png
 images/PoweredByPerl.gif
 images/printer.gif
 images/px_1t.gif
@@ -374,6 +397,7 @@ images/salesman_ptr.xbm
 images/salesman_ptr_mask.xbm
 images/save.gif
 images/sbahn.gif
+images/sbahn.png
 images/search.gif
 images/search_pref.gif
 images/search_pref.xpm
@@ -392,12 +416,14 @@ images/start.gif
 images/start_ptr.xbm
 images/start_ptr_mask.xbm
 images/star.gif
+images/star.png
 images/star.xpm
 images/steigung.gif
 images/steigung.xpm
 images/stip.xbm
 images/strasse.gif
 images/ubahn.gif
+images/ubahn.png
 images/usercross.gif
 images/usercross.xpm
 images/via.gif
@@ -428,6 +454,7 @@ images/berlin_small.xpm
 images/berlin_small_hi.xpm
 images/bicycle.xpm
 images/birne.xpm
+images/birne.png
 images/cgi_legende.xpm
 images/click.xpm
 images/cross.xpm
@@ -483,6 +510,7 @@ images/hospital.xpm
 images/hospital.gif
 images/church.gif
 images/church.xpm
+images/church.png
 images/sbahn_klein.gif
 images/sbahn_klein.png
 images/sbahn_klein.xpm

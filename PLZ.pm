@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.43 2003/01/08 20:05:09 eserte Exp $
+# $Id: PLZ.pm,v 1.43 2003/01/08 20:05:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package PLZ;
 use strict;
-use vars qw(@plzfile $OLD_AGREP $VERSION $VERBOSE $sep);
+use vars qw($PLZ_BASE_FILE @plzfile $OLD_AGREP $VERSION $VERBOSE $sep);
 use locale;
 use BBBikeUtil;
 
@@ -24,8 +24,11 @@ use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)
 use constant FMT_COORDS  => 2; # ./data/Berlin.coords.data
 
+$PLZ_BASE_FILE = "Berlin.coords.data" if !defined $PLZ_BASE_FILE;
+
 @plzfile =
-  ((map { ("$_/Berlin.coords.data", "$_/data/Berlin.coords.data") } @INC),
+  ((map { "$_/$PLZ_BASE_FILE" } @Strassen::datadirs),
+   (map { ("$_/$PLZ_BASE_FILE", "$_/data/$PLZ_BASE_FILE") } @INC),
    (map { ("$_/berlinco.dat",
 	   "$_/Berlin.data",        "$_/data/Berlin.data") } @INC),
    "/usr/www/soc/plz/Berlin.data",
@@ -737,3 +740,8 @@ foreach my $res (@$res_ref) {
 }
 print "*** Errors: $errors\n";
 
+######################################################################
+# Ein Kuriosum in Berlin: sowohl die Waldstr. in Grünau als auch die
+# Waldstr. in Schmöckwitz haben die gleiche PLZ 12527. Erschwerend kommt
+# hinzu, dass Grünau (früher Köpenick) und Schmöckwitz (früher Treptow)
+# heute im gleichen Bezirk liegen. Lösung zurzeit: ignorieren.

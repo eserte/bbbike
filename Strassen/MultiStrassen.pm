@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiStrassen.pm,v 1.2 2002/09/25 13:05:26 eserte Exp $
+# $Id: MultiStrassen.pm,v 1.3 2003/05/09 22:50:14 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -30,24 +30,22 @@ sub new {
 
     my $self = {};
 
-    $self->{Data} = [];
     $self->{File} = [];
     $self->{Pos}  = 0;
     $self->{SourcePos} = {};
+    $self->{SubObj} = [];
 
     for (@obj) {
 	if (!UNIVERSAL::isa($_, 'Strassen')) {
 	    # assume file name
 	    $_ = Strassen->new($_);
 	}
-	if (defined $_->{File}) {
-	    push @{$self->{File}}, $_->file;
-	}
-	push @{$self->{FirstIndex}}, $#{$self->{Data}}+1;
-	push @{$self->{Data}}, @{$_->{Data}};
-	push @{$self->{SubObj}}, $_; # XXX Performance-Hit?
+	push @{ $self->{SubObj} }, $_;
     }
+
     bless $self, $class;
+    $self->read_data;
+    $self;
 }
 
 # Ausgabe der Source-Files
@@ -60,6 +58,27 @@ sub id {
     }
     require File::Basename;
     join("_", sort map { File::Basename::basename($_) } $self->file);
+}
+
+sub is_current {
+    my $self;
+    for my $subobj (@{ $self->{SubObj} }) {
+	return 0 if !$subobj->is_current;
+    }
+    1;
+}
+
+sub read_data {
+    my $self = shift;
+    $self->{Data} = [];
+    $self->{FirstIndex} = [];
+    for (@{ $self->{SubObj} }) {
+	if (defined $_->{File}) {
+	    push @{$self->{File}}, $_->file;
+	}
+	push @{$self->{FirstIndex}}, $#{$self->{Data}}+1;
+	push @{$self->{Data}}, @{$_->{Data}};
+    }
 }
 
 # XXX Hack: autoloader does not work for inherited methods

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: Generated_src.pm,v 1.10 2003/01/08 20:14:41 eserte Exp $
+# $Id: Generated_src.pm,v 1.12 2003/04/18 13:41:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -58,7 +58,7 @@ sub make_net_slow_<%=$type%> {
     my($self, %args) = @_;
     my($cachefile);
 
-    my $cacheable = $args{UseCache} && $Strassen::Util::cacheable;
+    my $cacheable = defined $args{UseCache} ? $args{UseCache} : $Strassen::Util::cacheable;
     if ($cacheable) {
 	my @src = $self->sourcefiles;
 	$cachefile = $self->get_cachefile;
@@ -153,7 +153,15 @@ sub make_net_slow_<%=$type%> {
 						   $kreuz_coord[$i+1]));
  	    $net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $entf;
  	    $net->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $entf;
- 	    $net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $strassen->pos;
+# XXX not yet, but maybe someday necessary:
+#  	    if (exists $net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]}) {
+#  		if (ref $net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} ne 'ARRAY') {
+#  		    $net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = [ $net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} ];
+#  		}
+#  		push @{ $net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} }, $strassen->pos;
+#  	    } else {
+		$net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $strassen->pos;
+#	    }
 	}
 <% } %>
     }
@@ -288,7 +296,7 @@ sub route_to_name_<%=$type%> {
 		$str = "...";
 	    }
 	}
-	if (!defined $entf) {
+	if (!defined $entf && $i+1 <= $#{$route_ref}) {
 	    $entf = Strassen::Util::strecke($route_ref->[$i],
 					    $route_ref->[$i+1]);
 	}

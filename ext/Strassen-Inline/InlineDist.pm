@@ -7,7 +7,7 @@ package Strassen::Inline;
 require DynaLoader;
 unshift @ISA, 'DynaLoader';
 #use base 'DynaLoader';
-$VERSION = "2.20";
+$VERSION = "2.21";
 
 bootstrap Strassen::Inline $VERSION;
 

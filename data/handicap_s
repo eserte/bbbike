@@ -1,20 +1,20 @@
-Potsdamer Platz: Baustelle, Fuﬂg‰nger	q3 8542,11502 8553,11638
 Georgenstr.: Bauarbeiten, Fuﬂg‰nger	q3 9437,12662 9308,12649
 Voﬂstr. in Richtung Osten: gesperrt, Gehweg benutzen	q2 8553,11638 8837,11676
-Neue Promenade: Bauarbeiten	q3 10294,13070 10132,12941
 L¸ckstr.: Bauarbeiten in Richtung Westen, Gehweg benutzen	q3 16460,10699 16153,10818 16032,10842
-Pfarrstr.: Bauarbeiten, nur enger Gehweg befahrbar	q3 15339,11123 15438,11305
-Pariser Platz/Brandenburger Tor: Fuﬂg‰nger	q2 8804,12280 8515,12242
+Pfarrstr.: Bauarbeiten, nur enger Gehweg oder noch nicht gepflasterte Straﬂe befahrbar	q3 15339,11123 15438,11305
+Neue Promenade: Fuﬂg‰nger	q2 10294,13070 10132,12941
+Pariser Platz/Brandenburger Tor: Fuﬂg‰nger	q2 8804,12280 8610,12254 8515,12242
 Potsdamer Platz: Fuﬂg‰nger	q3 8542,11502 8490,11526
 Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3 9590,10262 9593,10238 9592,10174 9579,10122
 Gorkistr.: reger Fuﬂg‰ngerverkehr	q3 2055,20280 2116,20314 2311,20348
-Breitscheidplatz: starker Fuﬂg‰ngerverkehr	q4 5725,10892 5716,10978
+Breitscheidplatz: starker Fuﬂg‰ngerverkehr	q4 5657,10868 5652,11004
+Breitscheidplatz/Budapester Str.: Fuﬂg‰ngerverkehr	q3; 5652,11004 5716,10978 6135,10982
 Neue Promenade: Fuﬂg‰ngerzone	q3 10294,13070 10132,12941
 Wilmersdorfer Str.: starker Fuﬂg‰ngerverkehr	q4 3723,11457 3751,11334 3770,11231 3795,11098 3827,10980
 (An der M¸ggelspree): fester Waldweg, aber Fuﬂg‰nger	q2 23451,4877 23441,4956 23468,5075 23620,5096 23776,5040 23982,5030 24233,4878 24398,4842 24834,4541 25023,4441 25102,4408 25427,4482 25479,4540 25565,4549
 Am M¸ggelsee: Fuﬂg‰nger	q2 26006,2615 26151,2624 26339,2667 26457,2660 26627,2610 26868,2580 27135,2500 27173,2444 27267,2414 27372,2434 27517,2523 27565,2569 27743,2842 27822,2910 27945,3006 28292,3150 28496,3253
 Pestalozzistr.: Fuﬂg‰ngerzone	q3 3721,11230 3770,11231 3822,11224
-(Zufahrt am NKZ): Bordsteine, Fuﬂg‰nger/Lieferverkehr	q2 11291,10438 11311,10505 11343,10528
+(Zufahrt am NKZ): Bordsteine, Fuﬂg‰nger/Lieferverkehr	q3 11291,10438 11311,10505 11343,10528
 Alexanderplatz: Fuﬂg‰ngerverkehr	q2 11139,13008 10960,12809 10923,12779
 Alexanderplatz [zur Dircksenstr.]: Fuﬂg‰ngerverkehr	q2 10960,12809 10844,12935
 Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 15793,8984 15653,8989 15533,9070 15509,9163 15432,9322 15321,9448 15147,9574 14910,9643 14642,9763 14515,9856 14483,9843 14452,9919
@@ -23,11 +23,12 @@ Gˆrlitzer Park: Parkweg, Fuﬂg‰nger	q2 12761,10195 12770,10210 12779,10232
 Gˆrlitzer Park: Parkweg, Fuﬂg‰nger	q2 13145,9920 12869,10071 12802,10097
 Gˆrlitzer Park: Parkweg, Fuﬂg‰nger	q2 12817,9964 12848,10039 12869,10071 12904,10141 12911,10156
 Gˆrlitzer Park, Rondell: Parkweg, Fuﬂg‰nger	q2 12802,10097 12737,10051 12690,10062 12659,10119 12670,10176 12704,10201 12761,10195 12801,10146 12802,10097
-Tiergartenufer: Parkweg, Fuﬂg‰nger	q1 6128,11500 5976,11603 5821,11733 5665,11820 5527,11852
-Tiergarten: Parkweg, Fuﬂg‰nger	q2 5666,11362 5727,11573 5758,11630 5794,11624 5821,11733 5870,11842 5929,11871 5918,11905
+Tiergartenufer: Parkweg, Fuﬂg‰nger	q1 6128,11500 5976,11603 5835,11768 5711,11841 5566,11860
+Tiergarten: Parkweg, Fuﬂg‰nger	q2 5666,11362 5727,11573 5758,11630 5794,11624 5835,11768 5870,11842 5890,11865 5901,11902
 Fasanerieallee: Parkweg	q1 6435,11606 6459,11638 6540,11754 6685,11954
 Groﬂe Sternallee: Parkweg	q1 6809,11979 7073,11798 7163,11738 7504,11504
-Bellevueallee: Parkweg	q1 7028,12290 7383,12095 7663,11946 8172,11679
+Bellevueallee: Parkweg	q1 7028,12290 7383,12095 7663,11946 8006,11766 8172,11679
+Ahornsteig: Parkweg	q1 7669,11586 7852,11721 8006,11766 8022,12016 8063,12182
 Tiergarten: Parkweg	q1 8214,12205 8223,11700
 Tiergarten: Parkweg	q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
 Parkweg: enge Br¸cke, Parkweg	q2 14310,9692 14452,9919 14656,10197
@@ -50,7 +51,7 @@ vor dem Kanzleramt: Fuﬂg‰nger, manchmal gesperrt	q1 8109,12738 8132,12601
 Am Stadtpark: Parkweg	q1 15395,12762 15433,12686 15454,12519
 Am Stichkanal: Parkweg	q1 22832,4491 22702,4592 22585,4634 22472,4572
 Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10333,14983 10238,15316 10122,15647
-(Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21930,12185 21211,12507
+(Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21930,12185 21615,12326 21211,12507
 (Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14798,10985 14761,10982 14739,10892 14794,10844
 Marheinekeplatz: Fuﬂg‰nger, Brunnen	q3 9882,9287 9881,9238
 (Uferweg am Urbanhafen): Fuﬂg‰nger	q1 11177,9935 11052,9935 10923,9925 10522,10056 10490,10080
@@ -65,10 +66,11 @@ Breite Str.: Fuﬂg‰ngerzone	q3 -3012,14546 -3155,14340 -3227,14260
 Markt: Fuﬂg‰ngerzone	q3 -3155,14340 -3244,14380
 Moritzstr.: Fuﬂg‰ngerzone	q3 -3244,14380 -3440,14484
 Wuhlheide/R1: Fuﬂg‰nger	q2 20440,6221 20078,6379
-(am Schloﬂ Niederschˆnhausen): Fuﬂg‰nger	q2 10308,19297 10350,19182 10390,19069
+(am Schloﬂ Schˆnhausen): Fuﬂg‰nger	q2 10308,19297 10350,19182 10390,19069
 Blockdammweg (Br¸cke): eng, Fuﬂg‰nger	q2 17976,8964 18087,9035 18124,9056
 Markgrafenstr.: Gehweg	q2 9711,11543 9701,11649
 Gendarmenmarkt: Fuﬂg‰nger	q1 9526,11911 9663,11927
+Gendarmenmarkt: Fuﬂg‰nger	q1 9516,12010 9651,12020
 Am Volkspark: Parkweg	q1 5745,8194 5934,8220
 Karl-Marx-Str. - Marchlewskistr.: Gehweg	q2 13024,12403 13011,12324
 Lange Str. [vor Kaufhof]: Fuﬂg‰nger	q2 12401,11886 12522,11837
@@ -77,6 +79,17 @@ Gotenstr. - Kolonnenstr.: Fuﬂg‰nger	q2 7488,8768 7570,8863
 Nettelbeckplatz: Fuﬂg‰nger	q2 8035,15411 7989,15412 7891,15417
 Nettelbeckplatz: Fuﬂg‰nger	q2 7953,15362 7989,15412
 Volkspark Wilmersdorf: kombinierter Rad- und Fuﬂweg	q1 5919,8417 5823,8348 5667,8308
-(zur Thomas-Dehler-Str.): Fuﬂg‰nger, Bordsteine	q2 6654,11460 6716,11439
+(zur Thomas-Dehler-Str.): Fuﬂg‰nger, Bordsteine	q4 6654,11460 6716,11439
 Ernststr.: Fuﬂg‰nger	q2 2497,19503 2700,19527
 (S-Bahnbr¸cke Wartenberg): Fuﬂg‰nger?	q2 16923,18650 17114,18775
+Am Kupfergraben: am Wochenende Flohmarkt	q3 9867,12651 9754,12775 9661,12876 9614,12893 9529,12925
+Bernburger Treppe: Rampe	q3 8542,11061 8458,11081
+Virchowstr. (Volkspark Friedrichshain): Fuﬂg‰nger	q1 12873,13444 12707,13706
+(Buckower Ring - Cecilienstr.): Fuﬂg‰nger	q1 21874,13543 21931,13724
+(Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3388,8958 3333,9026
+Gillweg: enger Gehweg	q2 2585,9653 2392,9715
+Leon-Jessel-Platz: Fuﬂg‰nger	q1 4700,9179 4750,9143
+Nikolsburger Platz: Fuﬂg‰nger, Bordsteine	q3 5374,9619 5307,9664
+zur Sybelstr.: Bordsteine	q4 3712,10566 3739,10576
+Rosa-Luxemburg-Str.: Fuﬂg‰nger, Bordsteine	q4 10699,12929 10701,12969
+Damaschkestr.: Gehweg, Bordsteine	q4 3562,10264 3492,10307

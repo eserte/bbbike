@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.14 2003/01/08 20:15:29 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.21 2003/05/17 20:06:16 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -247,10 +247,7 @@ sub make_net_steigung {
 	while(my($p2) = each %$v) {
 	    if (exists $hoehe->{$p1}) {
 		if (exists $hoehe->{$p2}) {
-		    my($x1,$y1) = split(/,/, $p1);
-		    my($x2,$y2) = split(/,/, $p2);
-		    my $strecke = Strassen::Util::strecke([$x1,$y1],
-							  [$x2,$y2]);
+		    my $strecke = Strassen::Util::strecke_s($p1, $p2);
 		    my $hoehendiff = $hoehe->{$p2}-$hoehe->{$p1};
 		    $net->{$p1}{$p2} = int(($hoehendiff/$strecke)*1000)/1000;
 		}
@@ -310,6 +307,7 @@ struct('StrassenNetz::SearchContext' =>
 	HasStrcat => "\$",
 	HasRadwege => "\$",
 	HasRadwegeStrcat => "\$",
+	HasGreen => "\$",
 	HasSteigung => "\$",
 	HasTragen => "\$",
 	Velocity => "\$",
@@ -327,9 +325,6 @@ sub build_penalty_code {
     if ($sc->Algorithm ne 'srt' &&
 	$sc->Algorithm !~ /^C-/) {
 	$penalty_code .= '
-#XXX delete buggy code...
-#                    my $next_node = $min_node;
-#                    my $last_node = $NODES_min_node->[0];
                     my $next_node = $successor;
                     my $last_node = $min_node;
 ';
@@ -388,6 +383,18 @@ sub build_penalty_code {
 		    if (defined $last_node and
                         exists $radwege_strcat_net->{$last_node}{$next_node}) {
                         $pen *= $radwege_strcat_penalty->{$radwege_strcat_net->{$last_node}{$next_node}}; # combined cycle path/street category penalty
+		    }
+';
+    }
+    if ($sc->HasGreen) {
+	$penalty_code .= '
+		    if (defined $last_node) {
+                        if (exists $green_net->{$last_node}{$next_node}) {
+                            $pen *= $green_penalty->{$green_net->{$last_node}{$next_node}};
+                        } else {
+                            $pen *= $green_penalty->{"green0"};
+                        }
+
 		    }
 ';
     }
@@ -628,10 +635,9 @@ sub build_search_code {
             $ret[RES_PATH]          = \@path;
             $ret[RES_LEN]           = $len;
             $ret[2]                 = 0; # ???
-            $ret[RES_PENALTY]       = 0;
+            $ret[RES_PENALTY]       = $min_node_f;
             $ret[RES_TRAFFICLIGHTS] = undef;
             return @ret;
-            # XXX DEL: return (\@path, $len, 0, 0, 0);
         }
         my @successors = keys %{ $net->{$min_node} };
      CHECK_SUCCESSOR:
@@ -648,15 +654,11 @@ sub build_search_code {
             # mit der alten, nicht-Array-Implementation)
             if ($wegfuehrung and
                 exists $wegfuehrung->{$successor}) {
-#XXXwarn "check for wegfuehrung in $successor";
                 my($wegfuehrungen) = $wegfuehrung->{$successor};
-#XXXuse Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->Dumpxs([$wegfuehrungen],[]); # XXX
-
                 for my $wegfuehrung (@$wegfuehrungen) {
                     my $this_node = $min_node;
                     my $same = 1;
                     for(my $i=$#$wegfuehrung-1; $i>=0; $i--) {
-#XXXwarn "$wegfuehrung->[$i] ne $this_node";
                         if ($wegfuehrung->[$i] ne $this_node) {
                             $same = 0;
                             last;
@@ -667,7 +669,6 @@ sub build_search_code {
                             last;
                         }
                     }
-#XXXwarn "same=$same";
                     next CHECK_SUCCESSOR if $same;
                 }
             }
@@ -1060,7 +1061,6 @@ BIGLOOP:
     if ($sc->Statistics) {
 	$code .= '
         $visited_nodes = scalar keys %visited;
-warn "XXX";
         warn "\nAlgorithm: SRT (CutPath=' . $cut_path_nr .', PureDepth=' . $pure_depth . ', BackTracking=' . $backtracking . ')\n";
 ';
     }
@@ -1111,6 +1111,7 @@ sub search {
 		    exists $args{Strcat}    ||
 		    exists $args{Radwege}   ||
 		    exists $args{RadwegeStrcat} ||
+		    exists $args{Green} ||
 		    exists $args{Steigung}  ||
 		    exists $args{Abbiegen}  ||
 		    exists $args{Tragen}
@@ -1126,6 +1127,7 @@ sub search {
     $sc->HasStrcat        (exists $args{Strcat});
     $sc->HasRadwege       (exists $args{Radwege});
     $sc->HasRadwegeStrcat (exists $args{RadwegeStrcat});
+    $sc->HasGreen         (exists $args{Green});
     $sc->HasSteigung      (exists $args{Steigung});
     $sc->HasAbbiegen      (exists $args{Abbiegen} and exists $args{Ampeln});
     $sc->HasTragen        (exists $args{Tragen} and exists $args{Velocity});
@@ -1169,6 +1171,11 @@ sub search {
     if (exists $args{RadwegeStrcat}) {
 	$radwege_strcat_net = $args{RadwegeStrcat}->{Net}->{Net};
 	$radwege_strcat_penalty = $args{RadwegeStrcat}->{Penalty} || die "No penalty";
+    }
+    my($green_net, $green_penalty);
+    if (exists $args{Green}) {
+	$green_net = $args{Green}->{Net}->{Net};
+	$green_penalty = $args{Green}->{Penalty} || die "No penalty";
     }
     my($steigung_net, $steigung_penalty, $steigung_penalty_sub);
     if (exists $args{Steigung}) {
@@ -1320,6 +1327,9 @@ EOF
 		. sprintf("%.4f", scalar(@{$res[0]})/$visited_nodes) . "\n";
 	    # XXX effective branching factor
 	}
+	warn "Length:               " . $res[RES_LEN] . "\n";
+	warn "Penalty:              " . $res[RES_PENALTY] . "\n";
+	warn "Length/Penalty ratio: " . ($res[RES_LEN] ? $res[RES_PENALTY]/$res[RES_LEN] : "Inf") . "\n";
 	if ($sc->Statistics > 1) {
 	    for(my $i=1; $i<=3; $i++) {
 		if (defined $loop_count[$i-1]) {
@@ -1645,6 +1655,7 @@ sub get_point_comment {
     } else {
 	@pos = $pos;
     }
+
  POS:
     for my $pos1 (@pos) {
 	next if $seen && $seen->{$pos1};
@@ -1703,11 +1714,25 @@ sub get_point_comment {
 	    next POS;
 	} else { # arbitrary categories
 	    # XXX what about obey_dir???
+	    my $cat_hin = $r->[Strassen::CAT()];
+	    my $cat_rueck;
+	    if ($cat_hin =~ /(.*);(.*)/) {
+		($cat_hin, $cat_rueck) = ($1, $2);
+	    } else {
+		$cat_rueck = $cat_hin;
+	    }
 	    for my $i (0 .. $#{$r->[Strassen::COORDS()]}-1) {
-		if (($r->[Strassen::COORDS()][$i] eq $xy1 &&
-		     $r->[Strassen::COORDS()][$i+1] eq $xy2) ||
-		    ($r->[Strassen::COORDS()][$i+1] eq $xy1 &&
-		     $r->[Strassen::COORDS()][$i] eq $xy2)) {
+		my $yes = 0;
+		if ($r->[Strassen::COORDS()][$i] eq $xy1 &&
+		    $r->[Strassen::COORDS()][$i+1] eq $xy2 &&
+		    $cat_hin ne "") {
+		    $yes = 1;
+		} elsif ($r->[Strassen::COORDS()][$i+1] eq $xy1 &&
+			 $r->[Strassen::COORDS()][$i] eq $xy2 &&
+			 $cat_rueck ne "") {
+		    $yes = 1;
+		}
+		if ($yes) {
 		    $seen->{$pos1}++ if $seen;
 		    push @res, $r->[Strassen::NAME()];
 		    next POS;
@@ -1749,6 +1774,7 @@ sub add_net {
     my($self, $pos, @points) = @_;
     return unless defined $pos;
     die 'Es müssen genau 3 Punkte in @points sein!' if @points != 3;
+    # additional check: for (@points) { die "add_net: all points should be array refs" if !UNIVERSAL::isa($_,"ARRAY") }
     my($startx, $starty) = @{$points[0]};
     require Route;
     my $starts = Route::_coord_as_string([$startx,$starty]);
@@ -1938,7 +1964,7 @@ sub use_data_format {
     local($^W) = 0;
 
     if ($data_format == $FMT_MMAP) {
-	*make_sperre = \&make_sperre_1; # XXX
+	*make_sperre = sub { }; # XXX do nothing \&make_sperre_1; # XXX
     } elsif ($data_format == $FMT_CDB) {
 	require Strassen::CDB;
 	use_data_format_cdb();

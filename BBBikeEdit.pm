@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.50 2003/01/08 18:46:55 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.53 2003/05/09 22:52:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003 Slaven Rezic. All rights reserved.
@@ -14,6 +14,9 @@
 
 # better: use auto-loading
 
+package BBBikeEdit;
+
+package main;
 use strict;
 use vars qw($top $c $scale %font
 	    $special_edit $edit_mode 
@@ -116,8 +119,7 @@ sub radweg_edit_modus {
     switch_edit_berlin_mode() if (!defined $edit_mode or $edit_mode ne 'b');
     radweg_open();
     unless ($str_draw{'s'}) {
-	$str_draw{'s'} = 1;
-	plot('str','s');
+	plot('str','s', -draw => 1);
     }
     unless ($c->find("withtag", "rw-edit")) {
 	radweg_draw_canvas();
@@ -129,6 +131,9 @@ sub radweg_edit_modus {
 					 Kurvenpunkte => 1) };
     }
     set_mouse_desc();
+    my $cursorfile = defined &main::build_text_cursor ? main::build_text_cursor("RW") : undef;
+    $main::c->configure(-cursor => $cursorfile);
+
     $radweg_last_b2_mode = $main::b2_mode;
     $main::b2_mode = main::B2M_CUSTOM();
     $main::b2m_customcmd = \&radweg_edit_mouse3;
@@ -279,7 +284,7 @@ sub radweg_display_index {
 }
 
 # XXX still using internally the old format and not a Strassen object
-sub radweg_open {
+sub BBBikeEdit::radweg_open {
     require Strassen::Core;
     my $s = Strassen->new("$str_file{rw}-orig");
     if (!$s) {
@@ -387,7 +392,7 @@ sub radweg_draw_arrow {
 		  );
 }
 
-sub radweg_draw_canvas {
+sub BBBikeEdit::radweg_draw_canvas {
     my $index = shift;
     my @data;
     my %color;
@@ -472,8 +477,7 @@ sub ampel_edit_modus {
     }
 
     unless ($p_draw{'lsa'}) {
-	$p_draw{'lsa'} = 1;
-	plot('p','lsa');
+	plot('p','lsa', -draw => 1);
     }
 #XXX
 #     if (!defined $ampel_time_photo) {
@@ -1528,9 +1532,9 @@ $x_end $y_begin moveto $x_end $y_end lineto stroke
 }
 
 if (defined $os && $os eq 'win') {
-    *ampeln_on_route = \&ampeln_on_route_canvas;
+    *BBBikeEdit::ampeln_on_route = \&ampeln_on_route_canvas;
 } else {
-    *ampeln_on_route = \&ampeln_on_route_enscript;
+    *BBBikeEdit::ampeln_on_route = \&ampeln_on_route_enscript;
 }
 
 ######################################################################
@@ -1548,11 +1552,10 @@ sub label_edit_modus {
     $special_edit = 'label';
     switch_edit_berlin_mode() if (!defined $edit_mode or $edit_mode ne 'b');
     unless ($str_draw{'s'}) {
-	$str_draw{'s'} = 1;
-	plot('str','s');
+	plot('str','s', -draw => 1);
     }
     label_undef_all();
-    $p_draw{'lb'} = 1; plot('p',"lb");
+    plot('p',"lb", -draw => 1);
 
     $p_obj{'lb'}->init;
     my $i = 0;
@@ -1580,7 +1583,7 @@ sub label_undef_all {
 sub label_edit_off {
     $special_edit = '';
     set_mouse_desc();
-    $p_draw{'lb'} = 0; plot('p',"lb");
+    plot('p',"lb", -draw => 0);
 }
 
 sub label_edit_mouse1 {
@@ -1660,11 +1663,10 @@ sub vorfahrt_edit_modus {
     $special_edit = 'vorfahrt';
     switch_edit_berlin_mode() if (!defined $edit_mode or $edit_mode ne 'b');
     unless ($str_draw{'s'}) {
-	$str_draw{'s'} = 1;
-	plot('str','s');
+	plot('str','s', -draw => 1);
     }
     vorfahrt_undef_all();
-    $p_draw{'vf'} = 1; plot('p',"vf");
+    plot('p',"vf", -draw => 1);
 
     $p_obj_vf = new Strassen $p_file{'vf'} . "-orig" unless $p_obj_vf;
     $p_obj_vf->init;
@@ -1693,7 +1695,7 @@ sub vorfahrt_undef_all {
 sub vorfahrt_edit_off {
     $special_edit = '';
     set_mouse_desc();
-    $p_draw{'vf'} = 0; plot('p',"vf");
+    plot('p',"vf", -draw => 0);
 }
 
 # XXXX
@@ -1708,7 +1710,7 @@ sub vorfahrt_edit_mouse1 {
     my(@tags) = $c->gettags('current');
     return unless grep($_ =~ /^(pp|vf.*|lsa.*)$/, @tags);
 
-=comment 
+=begin comment
 
     $vorfahrt_coord = $tags[1];
     $vorfahrt_i = (exists $vorfahrt_index{$vorfahrt_coord} 
@@ -1746,11 +1748,13 @@ sub vorfahrt_edit_mouse1 {
     }
     $vorfahrt_entry->focus;
 
+=end comment
+
 =cut
 
 }
 
-=comment
+=begin comment
 
 # XXXX
 sub vorfahrt_set_i {
@@ -1763,6 +1767,8 @@ sub vorfahrt_set_i {
     $p_obj_vf->write;
     plot('p','vf');
 }
+
+=end comment
 
 =cut
 
@@ -1798,6 +1804,7 @@ use Class::Struct;
 use Tk::LabEntry;
 use Strassen;
 use BBBikeEditUtil;
+use BBBikeGPS;
 use File::Basename;
 
 BEGIN {
@@ -2047,18 +2054,24 @@ sub editmenu {
 	       -command => \&main::reload_all)->pack(-anchor => "w");
     my $insert_point_mode = 0;
     my $old_mode;
-    $t->Checkbutton(-text => "Split street",
-		    -indicatoron => 0,
-		    -variable => \$insert_point_mode,
-		    -command => sub {
-			if ($insert_point_mode) {
-			    $old_mode = $main::map_mode;
-			    $main::map_mode = main::MM_INSERTPOINT();
-			} elsif (defined $old_mode) {
-			    $main::map_mode = $old_mode;
-			    undef $old_mode;
-			}
-		    })->pack(-anchor => "w");
+    $t->Checkbutton
+	(-text => "Split street",
+	 -indicatoron => 0,
+	 -variable => \$insert_point_mode,
+	 -command => sub {
+	     if ($insert_point_mode) {
+		 $old_mode = $main::map_mode;
+		 $main::map_mode = main::MM_INSERTPOINT();
+		 my $cursorfile = main::build_text_cursor("Split");
+		 $main::c->configure(-cursor => defined $cursorfile ? $cursorfile : "hand2");
+	     } else {
+		 if (defined $old_mode) {
+		     $main::map_mode = $old_mode;
+		     undef $old_mode;
+		 }
+		 $main::c->configure(-cursor => undef);
+	     }
+	 })->pack(-anchor => "w");
     $t->Button(-text => "Move point",
 	       -command => \&main::change_points)->pack(-anchor => "w");
     $t->Button(-text => "Move line",
@@ -2099,7 +2112,7 @@ sub editmenu {
 
 sub addnew {
     my($top, $file) = @_;
-    if (!@main::realcoords) {
+    if (!@main::inslauf_selection) {
 	main::status_message("No points to add", "err");
 	return;
     }
@@ -2113,7 +2126,7 @@ sub addnew {
     $t->transient($top) unless defined $main::transient && !$main::transient;
     $t->Popup(@main::popup_style);
     my($name, $cat, $coords);
-    $coords = join(" ", map { $prefix . join ",", @$_ } @main::realcoords);
+    $coords = join(" ", @main::inslauf_selection);
     my($e, $be);
     Tk::grid($t->Label(-text => M("Name")),
 	     $e = $t->Entry(-textvariable => \$name),
@@ -2182,658 +2195,6 @@ sub insert_point_from_canvas {
     }
 }
 
-use vars qw($gpsman_last_dir $gpsman_data_dir);
-$gpsman_data_dir = "$FindBin::RealBin/misc/gps_data"
-    if !defined $gpsman_data_dir;
-
-struct('PathGraphElem' => [map { ($_ => "\$") }
-			   (qw(wholedist wholetime dist time legtime
-			       speed alt grade coord))
-			  ]);
-
-use constant DEFAULT_MAX_GAP => 2; # minutes
-
-sub draw_gpsman_data {
-    my($top) = @_;
-
-    require Tk::ColorFlowChooser;
-    require Tk::PathEntry;
-    Tk::PathEntry->VERSION(2.18);
-    require Safe;
-    require Cwd;
-    require Data::Dumper;
-    require BBBikeUtil;
-    require Tk::Ruler;
-
-    my $max_gap = DEFAULT_MAX_GAP;
-    # continuous colors
-    my @colordef = ('#ffff00', {len => 80},
-		    '#ff0000', {len => 80},
-		    '#a0a000', {len => 80},
-		    '#00ff00', {len => 80},
-		    '#00c0c0', {len => 80},
-		    '#0000ff', {len => 80},
-		    '#ff00ff',
-		   );
-    {
-	# discrete colors
-	my $l = 80;
-	@colordef = ('#ff0000', {len => $l}, '#ff0000', {len => 1},
-		     '#d0d000', {len => $l}, '#d0d000', {len => 1},
-		     '#00c000', {len => $l}, '#00c000', {len => 1},
-		     '#0000ff', {len => $l}, '#0000ff', {len => 1},
-		     '#c000c0', {len => $l}, '#c000c0', #{len => 1},
-		    );
-    }
-
-    #my @colordef = ('#000000', {len => 320}, '#ffffff');
-
-    my $cfc_top = $top->Toplevel(-title => M"Gpsman-Daten zeichnen");
-    $cfc_top->transient($top) if $main::transient;
-
-    use vars qw($draw_gpsman_data_s $draw_gpsman_data_p $show_track_graph);
-    $draw_gpsman_data_s = 1 if !defined $draw_gpsman_data_s;
-    $draw_gpsman_data_p = 1 if !defined $draw_gpsman_data_p;
-    $show_track_graph = 0   if !defined $show_track_graph;
-
-    my $file = $gpsman_last_dir || Cwd::cwd();
-    my $weiter = 0;
-    $cfc_top->Label(-text => M("Gpsman-Datei").":")->pack(-anchor => "w");
-    my $f = $cfc_top->Frame->pack(-fill => "x", -expand => 1);
-    my $pe = $f->PathEntry
-	(-textvariable => \$file,
-	 -selectcmd => sub { $weiter = 1 },
-	 -cancelcmd => sub { $weiter = -1 },
-	 -width => BBBikeUtil::max(length($file), 40),
-	)->pack(-fill => "x", -expand => 1, -side => "left");
-    $pe->focus;
-    $pe->icursor("end");
-    if (-d $gpsman_data_dir) {
-	my @l = localtime;
-	my @l_gestern = localtime(time-86400); # good approx...
-	my $heute = sprintf("$gpsman_data_dir/%04d%02d%02d", $l[5]+1900,$l[4]+1,$l[3]);
-	my $gestern = sprintf("$gpsman_data_dir/%04d%02d%02d", $l_gestern[5]+1900,$l_gestern[4]+1,$l_gestern[3]);
-	my $ff = $cfc_top->Frame->pack(-fill => "x", -expand => 1);
-	my $row = 0;
-	$ff->Button(-text => M"Gpsman-Datenverzeichnis",
-		    -command => sub { $file = $gpsman_data_dir }
-		   )->grid(-row => $row, -column => 0, -sticky => "ew",
-			   -columnspan => 2);
-	$row++;
-	$ff->Button(-text => M"Track heute",
-		    (!-r "$heute.trk" ? (-state => "disabled") : ()),
-		    -command => sub { $file = "$heute.trk";
-				      $draw_gpsman_data_s = 1;
-				      $draw_gpsman_data_p = 0;
-				  }
-		   )->grid(-row => $row, -column => 0, -sticky => "ew");
-	$ff->Button(-text => M"Track gestern",
-		    (!-r "$gestern.trk" ? (-state => "disabled") : ()),
-		    -command => sub { $file = "$gestern.trk";
-				      $draw_gpsman_data_s = 1;
-				      $draw_gpsman_data_p = 0;
-				  }
-		   )->grid(-row => $row, -column => 1, -sticky => "ew");
-	$row++;
-	$ff->Button(-text => M"Waypoints heute",
-		    (!-r "$heute.wpt" ? (-state => "disabled") : ()),
-		    -command => sub { $file = "$heute.wpt";
-				      $draw_gpsman_data_s = 0;
-				      $draw_gpsman_data_p = 1;
-				  }
-		   )->grid(-row => $row, -column => 0, -sticky => "ew");
-	$ff->Button(-text => M"Waypoints gestern",
-		    (!-r "$gestern.wpt" ? (-state => "disabled") : ()),
-		    -command => sub { $file = "$gestern.wpt";
-				      $draw_gpsman_data_s = 0;
-				      $draw_gpsman_data_p = 1;
-				  }
-		   )->grid(-row => $row, -column => 1, -sticky => "ew");
-	$row++;
-    }
-    $f->Button(Name => "ok",
-	       -command => sub { $weiter = 1 })->pack(-side => "left");
-    $f->Button(-text => "?",
-	       -command => sub {
-		   my $ht = $f->Toplevel(-title => M("Hilfe"));
-		   $ht->transient($f->toplevel);
-		   my $msg =
-		       $ht->Message(-text => <<EOF)->pack(-fill => "both");
-Mit der <TAB>-Taste kann der Dateiname automatisch vervollständigt werden. Gibt es mehrere Vervollständigungen, wird eine klickbare Liste angezeigt. Wenn mehr als zehn Treffer vorhanden sind, werden mit weiteren Druck auf die <TAB>-Taste die nächsten Treffer der Liste angezeigt.
-EOF
-                   my $okb =
-		       $ht->Button(Name => "ok",
-				   -command => sub { $ht->destroy })->pack;
-		   $okb->focus;
-	       })->pack(-side => "left");
-
-    my $f2 = $cfc_top->Frame->pack(-fill => "x", -expand => 1);
-    $f2->Checkbutton(-text => M"Strecken zeichnen",
-		     -variable => \$draw_gpsman_data_s)->pack(-anchor => "w");
-    $f2->Checkbutton(-text => M"Punkte zeichnen",
-		     -variable => \$draw_gpsman_data_p)->pack(-anchor => "w");
-    $f2->Checkbutton(-text => M"Graphen zeichnen",
-		     -variable => \$show_track_graph)->pack(-anchor => "w");
-
-
-    $cfc_top->Ruler->rulerPack;
-
-    $cfc_top->Label(-text => M("Geschwindigkeit => Farbe").":")->pack;
-    my $cfc = $cfc_top->ColorFlowChooser(-startx => 5,
-					 -starty => 2,
-					 -movecarry => 1,
-					 -colordef => \@colordef,
-					 # 0 .. 130
-					 -scaledef => [map { $_*5 } (0 .. 26)],
-					)->pack;
-    my $solid_coloring;
-    $cfc_top->Checkbutton(-text => M("Einheitliche Farbe"),
-			  -variable => \$solid_coloring)->pack;
-
-    my $cfc_file = "$main::bbbike_configdir/speed_color_mapping.cfc";
-    my $safe = Safe->new;
-    use vars qw($cfc_mapping);
-    undef $cfc_mapping;
-    $safe->share(qw($cfc_mapping));
-    $safe->rdo($cfc_file);
-    if (defined $cfc_mapping) {
-	$cfc->set_mapping($cfc_mapping);
-    }
-
-    $cfc_top->OnDestroy(sub { $weiter = -1 });
-    $pe->waitVariable(\$weiter);
-    if ($weiter != 1) {
-	$cfc_top->destroy if Tk::Exists($cfc_top);
-	return;
-    }
-    $gpsman_last_dir = $file;
-    $cfc_mapping = $cfc->get_mapping;
-    if (open(D, ">$cfc_file")) {
-	print D Data::Dumper->Dumpxs([$cfc_mapping], ['cfc_mapping']);
-	close D;
-    }
-    $cfc_top->destroy;
-    $top->update;
-
-    do_draw_gpsman_data($top, $file,
-			-gap => $max_gap,
-			-solidcoloring => $solid_coloring,
-			-drawstreets => $draw_gpsman_data_s,
-			-drawpoints  => $draw_gpsman_data_p,
-		       );
-}
-
-sub do_draw_gpsman_data {
-    my($top, $file, %args) = @_;
-    my $max_gap = exists $args{-gap} ? $args{-gap} : DEFAULT_MAX_GAP;
-    my $solid_coloring = $args{-solidcoloring};
-    my $draw_gpsman_data_s = exists $args{-drawstreets} ? $args{-drawstreets} : 1;
-    my $draw_gpsman_data_p = exists $args{-drawpoints} ? $args{-drawpoints} : 1;
-
-    my $base;
-    my $s;
-
-    require GPS::GpsmanData;
-
-    main::IncBusy($top);
-    eval {
-    my $gps = GPS::GpsmanData->new;
-    $gps->load($file);
-    $gps->convert_all("DDD");
-    require Karte;
-    Karte::preload(qw(Polar));
-    require Strassen;
-    $s = Strassen->new;
-    my $s_speed;
-    if ($gps->Type eq GPS::GpsmanData::TYPE_TRACK() && $draw_gpsman_data_s) {
-	$s_speed = Strassen->new;
-    }
-    my $whole_dist = 0;
-    my $whole_time = 0;
-    my $max_speed = 0;
-    my @add_wpt_prop;
-    require File::Basename;
-    $base = File::Basename::basename($file);
-    my $last_wpt;
-    foreach my $wpt (@{ $gps->Points }) {
-	my($x,$y) = map { int } $Karte::map{"polar"}->map2map($main::coord_system_obj, $wpt->Longitude, $wpt->Latitude);
-	my($x0,$y0) = ($main::coord_system eq 'standard' ? ($x,$y) : map { int } $Karte::map{"polar"}->map2standard($wpt->Longitude, $wpt->Latitude));
-	my $alt = $wpt->Altitude;
-	undef $alt if $alt =~ /^~/; # marked as inexact point
-	my $l = [$base . "/" . $wpt->Ident . "/" . $wpt->Comment .
-		 (defined $alt ? " alt=".sprintf("%.1fm",$alt) : "") .
-		 " long=" . Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($wpt->Longitude)) .
-		 " lat=" . Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($wpt->Latitude)),
-		 ["$x,$y"], "#0000a0"];
-	$s->push($l);
-	if ($s_speed) {
-	    my $time = $wpt->Comment_to_unixtime;
-	    if (defined $time) {
-		if ($last_wpt) {
-		    my($last_x,$last_y,$last_x0,$last_y0,$last_time,$last_alt) = @$last_wpt;
-		    my $legtime = $time-$last_time;
-		    # Do not check for $legtime==0 --- saved tracks do not
-		    # have any time at all!
-		    if (abs($legtime) < 60*$max_gap) {
-			my $dist = sqrt(($x0-$last_x0)**2 + ($y0-$last_y0)**2);
-			$whole_dist += $dist;
-			$whole_time += $legtime;
-			my @l = localtime $time;
-			my $speed;
-			if ($legtime) {
-			    $speed = $dist/($legtime)*3.6;
-			    if (!defined $max_speed || $max_speed < $speed) {
-				$max_speed = $speed;
-			    }
-			}
-			my $grade;
-			if ($dist != 0) {
-			    $grade = 100*(($alt-$last_alt)/$dist);
-			    if (abs($grade) > 10) { # XXX too many wrong values... XXX more intelligent solution
-				undef $grade;
-			    }
-			}
-
-			my $path_graph_elem = new PathGraphElem;
-			$path_graph_elem->wholedist($whole_dist);
-			$path_graph_elem->wholetime($whole_time);
-			$path_graph_elem->dist($dist);
-			$path_graph_elem->time($time);
-			$path_graph_elem->legtime($legtime);
-			$path_graph_elem->speed($speed)
-			    if defined $speed;
-			$path_graph_elem->alt($alt);
-			$path_graph_elem->grade($grade);
-			$path_graph_elem->coord("$x,$y");
-			push @add_wpt_prop, $path_graph_elem;
-
- 			my $color = "#000000";
-			if (defined $speed && !$solid_coloring) {
-			    $color = $cfc_mapping->{int($speed)};
-			}
-			if (!defined $color) {
-			    my(@sorted) = sort { $a <=> $b } keys %$cfc_mapping;
-			    if ($speed <= $sorted[0]) {
-				$color = $cfc_mapping->{$sorted[0]};
-			    } else {
-				$color = $cfc_mapping->{$sorted[-1]};
-			    }
-			}
-			{
-			    my $name = "";
-			    if (defined $speed) {
-				$name .= int($speed) . " km/h ";
-			    }
-			    $name .= "[dist=" . BBBikeUtil::m2km($whole_dist,2) . ",time=" . BBBikeUtil::s2ms($whole_time) . "min" . sprintf(", abstime=%02d:%02d:%02d", @l[2,1,0]) . (defined $grade ? ", grade=" . sprintf("%.1f%%", $grade) : "") . "]";
-			    $s_speed->push([$name, ["$last_x,$last_y", "$x,$y"], $color]);
-			}
-		    }
-		}
-		$last_wpt = [$x,$y,$x0,$y0,$time,$alt];
-	    }
-	}
-    }
-
-    if ($s_speed) {
-	warn "Total distance = " . BBBikeUtil::m2km($whole_dist, 2) . "\n";
-	if ($whole_time) {
-	    warn "Total time =     " . BBBikeUtil::s2ms($whole_time) . " min\n";
-	    warn "Average speed =  " . sprintf("%.1f km/h", $whole_dist/$whole_time*3.6) . "\n";
-	}
-	if ($max_speed) {
-	    warn "Maximum speed =  " . sprintf("%.1f km/h", $max_speed) . "\n";
-	}
-	my $real_speed_outfile = my $speed_outfile = "$tmpdir/$base-gpsspeed.bbd";
-	if ($main::edit_mode) {
-	    $real_speed_outfile = $speed_outfile . "-orig";
-	}
-	$s_speed->write($real_speed_outfile);
-	main::plot_layer('str',$speed_outfile,-fallbackxxx=>1);
-	Hooks::get_hooks("after_new_layer")->execute;
-    }
-
-    draw_track_graph($top, \@add_wpt_prop) if $show_track_graph;
-    };
-    my $err = $@;
-    main::DecBusy($top);
-    if ($err) {
-	main::status_message($err,'error');
-	return;
-    }
-
-    if ($draw_gpsman_data_p) {
-	my $real_outfile = my $outfile = "$tmpdir/$base-gpspoints.bbd";
-	if ($main::edit_mode) {
-	    $real_outfile = $outfile . "-orig";
-	}
-	$s->write($real_outfile);
-	main::plot_layer('p',$outfile,-fallbackxxx=>1);
-    }
-}
-
-sub draw_track_graph {
-    my($top, $add_wpt_prop_ref, $limit_ref, $peak_ref, $smooth_ref) = @_;
-    return if !@$add_wpt_prop_ref;
-
-    my $add_wpt_prop_ref_orig = $add_wpt_prop_ref;
-    my($limit_speed_min, $limit_speed_max, $limit_alt_min, $limit_alt_max);
-    my($peak_speed_neg, $peak_speed_pos, $peak_alt_neg, $peak_alt_pos);
-    if ($limit_ref || $peak_ref) {
-	if ($limit_ref) {
-	    ($limit_speed_min, $limit_speed_max) = @{$limit_ref->{'speed'}};
-	    undef $limit_speed_min if $limit_speed_min =~ /^\s*$/;
-	    undef $limit_speed_max if $limit_speed_max =~ /^\s*$/;
-	    ($limit_alt_min,   $limit_alt_max)   = @{$limit_ref->{'alt'}};
-	    undef $limit_alt_min if $limit_alt_min =~ /^\s*$/;
-	    undef $limit_alt_max if $limit_alt_max =~ /^\s*$/;
-	}
-	if ($peak_ref) {
-	    ($peak_speed_neg, $peak_speed_pos) = @{$peak_ref->{'speed'}};
-	    undef $peak_speed_neg if $peak_alt_neg =~ /^\s*$/;
-	    undef $peak_speed_pos if $peak_speed_pos =~ /^\s*$/;
-	    ($peak_alt_neg,   $peak_alt_pos) = @{$peak_ref->{'alt'}};
-	    undef $peak_alt_neg if $peak_alt_neg =~ /^\s*$/;
-	    undef $peak_alt_pos if $peak_alt_pos =~ /^\s*$/;
-	}
-	require Storable;
-	$add_wpt_prop_ref = Storable::dclone($add_wpt_prop_ref_orig);
-    }
-    if (!$smooth_ref) { $smooth_ref = {} }
-    foreach my $type (qw(alt grade speed)) {
-	if (!$smooth_ref->{$type}) { $smooth_ref->{$type} = 5 }
-    }
-
-    my($max_alt, $min_alt, $max_grade, $min_grade, $max_speed, $min_speed);
-    my $inx = 0;
-    foreach (@$add_wpt_prop_ref) {
-	my($speed, $alt, $grade) = ($_->speed, $_->alt, $_->grade);
-	if (defined $limit_alt_min && $alt < $limit_alt_min) {
-	    $_->alt(undef);
-	} elsif (defined $limit_alt_max && $alt > $limit_alt_max) {
-	    $_->alt(undef);
-	} else {
-	    if (defined $peak_alt_neg && $inx > 0 && $inx < $#$add_wpt_prop_ref
-		&& $alt < $add_wpt_prop_ref->[$inx-1]->alt-$peak_alt_neg
-		&& $alt < $add_wpt_prop_ref->[$inx+1]->alt-$peak_alt_neg) {
-		$_->alt(undef);
-	    } elsif (defined $peak_alt_pos && $inx > 0 && $inx < $#$add_wpt_prop_ref
-		&& $alt > $add_wpt_prop_ref->[$inx-1]->alt+$peak_alt_pos
-		&& $alt > $add_wpt_prop_ref->[$inx+1]->alt+$peak_alt_pos) {
-		$_->alt(undef);
-	    } else {
-		$max_alt = $alt if !defined $max_alt || $alt > $max_alt;
-		$min_alt = $alt if !defined $min_alt || $alt < $min_alt;
-		$max_grade = $grade if defined $grade && (!defined $max_grade || $grade > $max_grade);
-		$min_grade = $grade if defined $grade && (!defined $min_grade || $grade < $min_grade);
-	    }
-	}
-	if (defined $limit_speed_min && $speed < $limit_speed_min) {
-	    $_->speed(undef);
-	} elsif (defined $limit_speed_max && $speed > $limit_speed_max) {
-	    $_->speed(undef);
-	} else {
-	    if (defined $peak_speed_neg && $inx > 0 && $inx < $#$add_wpt_prop_ref
-		&& $speed < $add_wpt_prop_ref->[$inx-1]->speed-$peak_speed_neg
-		&& $speed < $add_wpt_prop_ref->[$inx+1]->speed-$peak_speed_neg) {
-		$_->speed(undef);
-	    } elsif (defined $peak_speed_pos && $inx > 0 && $inx < $#$add_wpt_prop_ref
-		&& $speed > $add_wpt_prop_ref->[$inx-1]->speed+$peak_speed_pos
-		&& $speed > $add_wpt_prop_ref->[$inx+1]->speed+$peak_speed_pos) {
-		$_->speed(undef);
-	    } else {
-		$max_speed = $speed if !defined $max_speed || $speed > $max_speed;
-		$min_speed = $speed if !defined $min_speed || $speed < $min_speed;
-	    }
-	}
-    } continue { $inx++ }
-
-    my $max_dist = $add_wpt_prop_ref->[-1]->wholedist;
-    my $max_time = $add_wpt_prop_ref->[-1]->wholetime;
-
-    if (defined $limit_alt_min || defined $limit_alt_max) {
-	for my $i (1 .. $#$add_wpt_prop_ref) {
-	    if (!defined $add_wpt_prop_ref->[$i]->alt) {
-		$add_wpt_prop_ref->[$i]->grade(undef);
-		if ($i < $#$add_wpt_prop_ref) {
-		    $add_wpt_prop_ref->[$i+1]->grade(undef);
-		}
-	    }
-	}
-    }
-
-    my $alt_delta = $max_alt-$min_alt;
-    my $grade_delta = $max_grade-$min_grade;
-    my $speed_delta = $max_speed-$min_speed;
-
-    my $def_c_h = 300;
-    my $def_c_w = 488;
-    my $c_y = 5;
-    my $def_c_x = 26;
-
-    my(%graph_t, %graph_c, %c_x, %c_h, %c_w);
-
-    foreach my $type (qw(speed alt grade)) {
-	my $tl_name = "trackgraph-$type";
-	if (Tk::Exists($main::toplevel{$tl_name})) {
-	    my $tl = $graph_t{$type} = $main::toplevel{$tl_name};
-	    $graph_c{$type} = $tl->{Graph};
-	    $graph_c{$type}->delete("all");
-	    $tl->deiconify;
-	    $tl->raise;
-
-	    $c_w{$type} = $graph_c{$type}->width - $def_c_x*2;
-	    $c_h{$type} = $graph_c{$type}->height - $c_y*2;
-	} else {
-	    my $tl = $graph_t{$type} = $top->Toplevel(-title => "Graph $type");
-	    $tl->transient($top)
-		unless defined $main::transient && !$main::transient;
-	    $main::toplevel{$tl_name} = $tl;
-	    $c_w{$type} = $def_c_w;
-	    $c_h{$type} = $def_c_h;
-	    $graph_c{$type} = $tl->Canvas(-height => $c_h{$type}+$c_y*2, -width => $c_w{$type}+$def_c_x*2)->pack(-fill => "both");
-
-	    $tl->{Graph} = $graph_c{$type};
-	    if ($type ne 'grade') {
-		my $f = $tl->Frame->pack(-fill => 'x');
-		my($min,$max);
-		my($peak_neg, $peak_pos);
-		if ($limit_ref && $limit_ref->{$type}) {
-		    ($min, $max) = @{ $limit_ref->{$type} };
-		}
-		if (!$limit_ref) {
-		    $limit_ref = {speed => [], alt => []};
-		}
-		if ($peak_ref && $peak_ref->{$type}) {
-		    ($peak_neg, $peak_pos) = @{ $peak_ref->{$type} };
-		}
-		if (!$peak_ref) {
-		    $peak_ref = {speed => [], alt => []};
-		}
-		$f->Label(-text => M"Min")->pack(-side => "left");
-		$f->Entry(-textvariable => \$min, -width => 4)->pack(-side => "left");
-		$f->Label(-text => M"Max")->pack(-side => "left");
-		$f->Entry(-textvariable => \$max, -width => 4)->pack(-side => "left");
-		$f->Label(-text => M"untere Spitzen")->pack(-side => "left");
-		$f->Entry(-textvariable => \$peak_neg, -width => 4)->pack(-side => "left");
-		$f->Label(-text => M"obere Spitzen")->pack(-side => "left");
-		$f->Entry(-textvariable => \$peak_pos, -width => 4)->pack(-side => "left");
-		my $redraw_cb = [sub {
-				     my $type = shift;
-				     $limit_ref->{$type} = [$min,$max];
-				     $peak_ref->{$type} = [$peak_neg,$peak_pos];
-				     draw_track_graph($top, $add_wpt_prop_ref_orig,
-						      $limit_ref, $peak_ref, $smooth_ref);
-				 }, $type];
-		$f->Button(-text => M"Neu zeichnen",
-			   -command => $redraw_cb,
-			  )->pack(-side => "left");
-#XXX not yet $graph_c{$type}->bind("<Configure>" => $redraw_cb);
-	    }
-
-	    if ($type eq 'speed') {
-		my $f = $tl->Frame->pack(-fill => 'x');
-		$f->Label(-text => M"Glätten")->pack(-side => "left");
-		my $smooth = $smooth_ref->{$type};
-		$f->Entry(-textvariable => \$smooth, -width => 4)->pack(-side => "left");
-		$f->Button(-text => M"Neu zeichnen",
-			   -command => [sub {
-					    my $type = shift;
-					    $smooth_ref->{$type} = $smooth;
-					    draw_track_graph($top, $add_wpt_prop_ref_orig,
-							     $limit_ref, $peak_ref, $smooth_ref);
-					}, $type]
-			  )->pack(-side => "left");
-		$f->Button(-text => M"Geglättete oben",
-			   -command => [sub {
-					    $graph_c{$type}->raise("$type-smooth");
-					}, $type]
-			  )->pack(-side => "left");
-		$f->Button(-text => M"Geglättete unten",
-			   -command => [sub {
-					    $graph_c{$type}->lower("$type-smooth");
-					}, $type]
-			  )->pack(-side => "left");
-	    }
-	}
-
-	# fix room for y scale labels
-	$c_x{$type} = $def_c_x;
-	if ($limit_ref && $limit_ref->{$type}) {
-	    my $test_item = $graph_c{$type}->createText(0,0,-text => $limit_ref->{$type}->[1]);
-	    my(@bbox) = $graph_c{$type}->bbox($test_item);
-	    if ($bbox[2]-$bbox[0] > $def_c_x) {
-		$c_x{$type} = $bbox[2]-$bbox[0];
-		$graph_c{$type}->configure(-width => $c_w{$type}+$c_x{$type}*2);
-	    }
-	    $graph_c{$type}->delete($test_item);
-	}
-
-    }
-
-    for my $type (qw(speed alt grade)) {
-	# first the scales
-	no strict 'refs';
-	my $min   = eval '$min_'.$type;
-	my $max   = eval '$max_'.$type;
-	my $delta = eval "\$".$type."_delta";
-	my $c_x = $c_x{$type};
-	my $c_w = $c_w{$type};
-	my $c_h = $c_h{$type};
-
-	for (my $val = $min%5*5; $val < $max; $val+=5) {
-	    my $y = $c_y + $c_h-( ($c_h/$delta)*($val-$min));
-	    $graph_c{$type}->createLine($c_x-2, $y, $c_x+2, $y);
-	    $graph_c{$type}->createLine($c_x+2, $y, $c_x+$c_w, $y, -dash => '. ');
-	    $graph_c{$type}->createText($c_x-2, $y, -text => $val, -anchor => "e");
-	}
-    }
-
-    {
-	# now the graphs
-	my($last_speed_y, $last_alt_y, $last_grade_y,
-	   $last_speed_x, $last_alt_x, $last_grade_x);
-	foreach (@$add_wpt_prop_ref) {
-	    my($whole_dist, $speed, $alt, $grade, $coord) = ($_->wholedist, $_->speed, $_->alt, $_->grade, $_->coord);
-	    my $speed_x = $c_x{"speed"} + ($c_w{"speed"}/$max_dist)*$whole_dist;
-	    my $alt_x   = $c_x{"alt"} + ($c_w{"speed"}/$max_dist)*$whole_dist;
-	    my $grade_x = $c_x{"grade"} + ($c_w{"speed"}/$max_dist)*$whole_dist;
-
-	    if (defined $last_speed_x) {
-		if (defined $speed) {
-		    my $y = $c_y + $c_h{"speed"}-( ($c_h{"speed"}/$speed_delta)*($speed-$min_speed));
-		    if (defined $last_speed_y) {
-			$graph_c{'speed'}->createLine
-			    ($last_speed_x, $last_speed_y, $speed_x, $y,
-			     -tags => ["speed", "speed-$coord"]);
-		    }
-		    $last_speed_y = $y;
-		}
-
-		if (defined $alt) {
-		    my $y = $c_y + $c_h{"speed"}-( ($c_h{"speed"}/$alt_delta)*($alt-$min_alt));
-		    if (defined $last_alt_y) {
-			$graph_c{'alt'}->createLine
-			    ($last_alt_x, $last_alt_y, $alt_x, $y,
-			     -tags => ["alt", "alt-$coord"]);
-		    }
-		    $last_alt_y = $y;
-		}
-
-		if (defined $grade) {
-		    my $y = $c_y + $c_h{"speed"}-( ($c_h{"speed"}/$grade_delta)*($grade-$min_grade));
-		    if (defined $last_grade_y) {
-			$graph_c{'grade'}->createLine
-			    ($last_grade_x, $last_grade_y, $grade_x, $y,
-			     -tags => ["grade", "grade-$coord"]);
-		    }
-		    $last_grade_y = $y;
-		}
-	    }
-
-	    $last_speed_x = $speed_x;
-	    $last_alt_x   = $alt_x;
-	    $last_grade_x = $grade_x;
-	}
-    }
-
-    {
-	# smooth graphs
-# XXX use dist and legtime instead!!!
-	my($last_speed, $last_x_speed);
-	my $smooth_i = $smooth_ref->{speed};
-	my($sum_speed, $sum_dist, $count) = (0, 0, 0);
-	for my $i (0 .. $smooth_i-1) {
-	    my $speed = $add_wpt_prop_ref->[$i]->speed;
-	    my $dist  = $add_wpt_prop_ref->[$i]->dist;
-	    if (defined $speed) {
-		$sum_speed+=$speed;
-		$sum_dist+=$dist;
-		$count++;
-	    }
-	}
-
-	for my $inx (0 .. $#$add_wpt_prop_ref-$smooth_i) {
-	    if ($inx > 0) {
-		my $first_old_speed = $add_wpt_prop_ref->[$inx-1]->speed;
-		if (defined $first_old_speed) {
-		    $sum_speed-=$first_old_speed;
-		    $count--;
-		}
-		my $new_speed = $add_wpt_prop_ref->[$inx+$smooth_i-1]->speed;
-		if (defined $new_speed) {
-		    $sum_speed+=$new_speed;
-		    $count++;
-		}
-	    }
-	    my $whole_dist = $add_wpt_prop_ref->[$inx+$smooth_i/2]->wholedist;
-	    if ($count) {
-		my $speed = $sum_speed/$count;
-		my $x = $c_x{'speed'} + ($c_w{"speed"}/$max_dist)*$whole_dist;
-		if (defined $last_x_speed) {
-		    my $y = $c_y + $c_h{"speed"}-( ($c_h{"speed"}/$speed_delta)*($speed-$min_speed));
-		    if (defined $last_speed) {
-			$graph_c{'speed'}->createLine($last_x_speed, $last_speed, $x, $y, -fill => 'red', -tags => 'speed-smooth');
-		    }
-		    $last_speed = $y;
-		}
-		$last_x_speed = $x;
-	    }
-	}
-    }
-
-    # bind <1> to mark point
-    foreach (qw(speed alt grade)) {
-	my $type = $_;
-	$graph_c{$type}->bind
-	    ($type, "<1>" => sub {
-		 my(@tags) = $graph_c{$type}->gettags("current");
-		 (my $coord = $tags[1]) =~ s/$type-//;
-		 my($x,$y) = main::transpose(split /,/, $coord);
-		 main::mark_point(-x => $x, -y => $y,
-				  -clever_center => 1);
-	     });
-    }
-}
 
 use vars qw(@points $point_nr $auto_create);
 
@@ -2844,17 +2205,14 @@ sub create_relation_menu {
     my $t = $top->Toplevel(-title => "Create relation menu");
     $t->transient($top) unless defined $main::transient && !$main::transient;
 
-    $main::str_file{'relgps'} = relgps_filename();
-    $main::str_draw{'relgps'} = 1;
-    main::plot("str", "relgps");
+    main::plot("str", "relgps", -draw => 1, -filename => relgps_filename());
 
     my $old_mode = $main::map_mode;
     $main::map_mode = main::MM_CREATERELATION();
 
     $t->OnDestroy(sub {
 		      $main::map_mode = $old_mode;
-		      $main::str_draw{'relgps'} = 0;
-		      main::plot("str", "relgps");
+		      main::plot("str", "relgps", -draw => 0);
 		  });
 
 
@@ -2898,8 +2256,7 @@ sub create_relation_menu {
 	my $f = $t->Frame->pack;
 	$f->Button(-text => "Delete from map",
 		   -command => sub {
-		       $main::str_draw{'relgps'} = 0;
-		       main::plot("str", "relgps");
+		       main::plot("str", "relgps", -draw => 0);
 		       $t->destroy;
 		   })->pack;
 	$f->Button(-text => "Close",
@@ -2978,12 +2335,12 @@ sub do_create_relation {
     print RELFILE "\n";
     close RELFILE;
 
-    $main::str_draw{'relgps'} = 1;
-    main::plot("str", "relgps", FastUpdate => 1);
+    main::plot("str", "relgps", FastUpdate => 1, -draw => 1);
 }
 
 use vars qw($gps_penalty_koeff $gps_penalty_multiply
-	    $bbd_penalty_koeff $bbd_penalty_multiply $bbd_penalty_file);
+	    $bbd_penalty_koeff $bbd_penalty_multiply $bbd_penalty_file
+	    $bbd_penalty_invert);
 
 sub build_gps_penalty_for_search {
     require Strassen::Core;
@@ -3045,6 +2402,33 @@ sub build_bbd_penalty_for_search {
 	    $penalty->{$r->[Strassen::COORDS()]->[$i+1] . "," . $r->[Strassen::COORDS()]->[$i]}++;
 	}
     }
+
+    if ($bbd_penalty_invert) {
+	warn M"Die Bedeutung der Penalty-Daten invertieren...\n";
+	my $new_penalty = {};
+	if (!$main::net) {
+	    $bbd_penalty_invert = 0;
+	    main::status_message(M"Nur möglich, wenn ein Netz existiert", "die");
+	}
+	my $net = $main::net->{Net};
+	while(my($k1,$v) = each %$net) {
+	    while(my($k2,$v2) = each %$v) {
+		my $k12 = "$k1,$k2";
+		my $k21 = "$k2,$k1";
+		if (!exists $penalty->{$k12}) {
+		    $new_penalty->{$k12}++;
+		}
+		if (!exists $penalty->{$k21}) {
+		    $new_penalty->{$k21}++;
+		}
+	    }
+	}
+warn scalar keys %$penalty;
+warn scalar keys %$net;
+	$penalty = $new_penalty;
+    }
+warn scalar keys %$penalty;
+
     $main::penalty_subs{bbdpenalty} = sub {
 	my($pen, $next_node, $last_node) = @_;
 	if (exists $penalty->{$last_node.",".$next_node}) {
@@ -3070,7 +2454,8 @@ sub set_edit_gpsman_waypoint {
 	return;
     }
     $main::map_mode = main::MM_CUSTOMCHOOSE();
-    $main::c->configure(-cursor => "hand2");
+    my $cursorfile = main::build_text_cursor("Edit wpt");
+    $main::c->configure(-cursor => defined $cursorfile ? $cursorfile : "hand2");
     main::status_message(M("Waypoints editieren"), "info");
     $main::customchoosecmd = sub {
 	my($c,$e) = @_;
@@ -3095,13 +2480,13 @@ sub edit_gpsman_waypoint {
 	main::status_message(Mfmt("Der Tag <%s> kann nicht geparst werden", $wpt_tag), "err");
 	return;
     }
-    if (!-d $gpsman_data_dir) {
-	main::status_message(Mfmt("Die GPSMan-Datei muss sich im Verzeichnis <%s> befinden", $gpsman_data_dir), "err");
+    if (!-d $main::gpsman_data_dir) {
+	main::status_message(Mfmt("Die GPSMan-Datei muss sich im Verzeichnis <%s> befinden", $main::gpsman_data_dir), "err");
 	return;
     }
     my $file = find_gpsman_file($basefile);
     if (!defined $file) {
-	main::status_message(Mfmt("Die Datei <%s> konnte nicht im Verzeichnis <%s> oder den Unterverzeichnissen gefunden werden", $basefile, $gpsman_data_dir), "err");
+	main::status_message(Mfmt("Die Datei <%s> konnte nicht im Verzeichnis <%s> oder den Unterverzeichnissen gefunden werden", $basefile, $main::gpsman_data_dir), "err");
 	return;
     }
     tie my @gpsman_data, 'DB_File', $file, &Fcntl::O_RDWR, 0644, $DB_File::DB_RECNO
@@ -3349,7 +2734,8 @@ sub edit_gps_track_mode {
     $remember_map_mode_for_edit_gps_track = $main::map_mode
 	if $main::map_mode != main::MM_CUSTOMCHOOSE();
     $main::map_mode = main::MM_CUSTOMCHOOSE();
-    $main::c->configure(-cursor => "hand2");
+    my $cursorfile = main::build_text_cursor("GPS trk");
+    $main::c->configure(-cursor => defined $cursorfile ? $cursorfile : "hand2");
     main::status_message(M("Track zum Editieren auswählen"), "info");
     $main::customchoosecmd = sub {
 	my($c,$e) = @_;
@@ -3375,20 +2761,24 @@ sub edit_gps_track {
 	eval {
 	    if ($main::edit_mode) {
 		if ($main::edit_mode eq 'b') {
-		    system("$ENV{HOME}/src/bbbike/miscsrc/gpsman2bbd.pl -deststreets streets.bbd-orig -destpoints points.bbd-orig -destmap berlinmap -destdir /tmp $file -forcepoints");
+		    require "$ENV{HOME}/src/bbbike/miscsrc/gpsman2bbd.pl";
+		    BBBike::GpsmanConv::gpsman2bbd(qw(-deststreets streets.bbd-orig -destpoints points.bbd-orig -destmap berlinmap -destdir /tmp), $file, qw(-forcepoints));
+#		    system("$ENV{HOME}/src/bbbike/miscsrc/gpsman2bbd.pl -deststreets streets.bbd-orig -destpoints points.bbd-orig -destmap berlinmap -destdir /tmp $file -forcepoints");
 		} else {
 		    main::status_message("No support for edit mode $main::edit_mode", "error");
 		    die;
 		}
 	    } else {
-		system("$ENV{HOME}/src/bbbike/miscsrc/gpsman2bbd.pl -destdir /tmp $file -forcepoints");
+		require "$ENV{HOME}/src/bbbike/miscsrc/gpsman2bbd.pl";
+		BBBike::GpsmanConv::gpsman2bbd(qw(-destdir /tmp), $file, qw(-forcepoints));
+#		system("$ENV{HOME}/src/bbbike/miscsrc/gpsman2bbd.pl -destdir /tmp $file -forcepoints");
 	    }
 
 	    my $abk   = main::plot_layer('p', "/tmp/points.bbd");
 	    my $abk_s = main::plot_layer('str', "/tmp/streets.bbd");
 
 	    main::special_raise($abk_s);
-	    main::special_raise($abk);
+	    main::special_raise($abk."-fg");
 	};
 	my $err = $@;
 	main::DecBusy($main::top);
@@ -3409,7 +2799,8 @@ sub show_gps_track_mode {
     $remember_map_mode_for_edit_gps_track = $main::map_mode
 	if $main::map_mode != main::MM_CUSTOMCHOOSE();
     $main::map_mode = main::MM_CUSTOMCHOOSE();
-    $main::c->configure(-cursor => "hand2");
+    my $cursorfile = main::build_text_cursor("GPS trk");
+    $main::c->configure(-cursor => defined $cursorfile ? $cursorfile : "hand2");
     main::status_message(M("Track zum Anzeigen auswählen"), "info");
     $main::customchoosecmd = sub {
 	my($c,$e) = @_;
@@ -3446,7 +2837,7 @@ use vars qw($prefer_tracks); # "bahn" or "street"
 sub find_gpsman_file {
     my $basename = shift;
     require File::Spec;
-    my $rootdir = $gpsman_data_dir;
+    my $rootdir = $main::gpsman_data_dir;
     if (defined $prefer_tracks && $prefer_tracks eq 'bahn') {
 	$rootdir .= "/bahn";
     }

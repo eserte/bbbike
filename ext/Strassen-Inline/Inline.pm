@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Inline.pm,v 2.20 2003/01/08 20:58:26 eserte Exp $
+# $Id: Inline.pm,v 2.21 2003/05/17 19:38:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ package Strassen::Inline;
 require 5.005; # new semantics of hv_iterinit
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 2.20 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 2.21 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Cwd;
@@ -523,13 +523,11 @@ void search_c(SV* self, char* from, char* to, ...) {
 
 	    if (penaltysub != NULL) {
 	      /* call penaltysub with
-	       * * min_node
-	       * * last_node
+	       * * succ_key = next_node
+	       * * min_node = last_node
 	       * * len_pen
 	       * returned value is new len_pen
 	       */
-
-	      SV* last_node = &PL_sv_undef;
 
 	      /* Using Inline_Stack_Reset et al. as advertised in
 		 Inline::C-Cookbook does not work! */

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: VectorUtil.pm,v 1.10 2003/01/08 21:01:24 eserte Exp $
+# $Id: VectorUtil.pm,v 1.12 2003/02/18 23:31:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001 Slaven Rezic. All rights reserved.
@@ -17,12 +17,13 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
 
 require Exporter;
 @ISA = 'Exporter';
 
-@EXPORT_OK = qw(vector_in_grid distance_point_line get_polygon_center);
+@EXPORT_OK = qw(vector_in_grid distance_point_line get_polygon_center
+		point_in_grid);
 
 # Diese Funktion testet, ob sich ein Vektor innerhalb eines Gitters
 # befindet. Für Vektoren, bei denen mindestens einer der Punkte innerhalb
@@ -214,10 +215,115 @@ sub get_polygon_center {
     }
 }
 
+# XXX check for enclosed missing
+# only for parallel rectangles
+sub intersect_rectangles {
+    my($ax,$ay,$bx,$by, $cx,$cy,$dx,$dy) = @_;
+    # horizontal against vertical
+    return 1 if intersect_lines($ax,$ay,$bx,$ay, $cx,$cy,$cx,$dy);
+    return 1 if intersect_lines($ax,$ay,$bx,$ay, $dx,$cy,$dx,$dy);
+    return 1 if intersect_lines($ax,$by,$bx,$by, $cx,$cy,$cx,$dy);
+    return 1 if intersect_lines($ax,$by,$bx,$by, $dx,$cy,$dx,$dy);
+
+    # vertical against horizontal
+    return 1 if intersect_lines($ax,$ay,$ax,$by, $cx,$cy,$dx,$cy);
+    return 1 if intersect_lines($ax,$ay,$ax,$by, $cx,$dy,$dx,$dy);
+    return 1 if intersect_lines($bx,$ay,$bx,$by, $cx,$cy,$dx,$cy);
+    return 1 if intersect_lines($bx,$ay,$bx,$by, $cx,$dy,$dx,$dy);
+
+    0;
+}
+
+
+# from mapsearch.c
+sub intersect_lines {
+    my($ax,$ay,$bx,$by, $cx,$cy,$dx,$dy) = @_;
+
+    my $numerator = (($ay-$cy)*($dx-$cx) - ($ax-$cx)*($dy-$cy));
+    my $denominator = (($bx-$ax)*($dy-$cy) - ($by-$ay)*($dx-$cx));
+
+    if (($denominator == 0) && ($numerator == 0)) { # lines are coincident, intersection is a line segement if it exists
+	if ($ay == $cy) { # coincident horizontally, check x's
+	    if ((($ax >= min($cx,$dx)) && ($ax <= max($cx,$dx))) || (($bx >= min($cx,$dx)) && ($bx <= max($cx,$dx)))) {
+		return 1;
+	    } else {
+		return 0;
+	    }
+	} else { # test for y's will work fine for remaining cases
+	    if ((($ay >= min($cy,$dy)) && ($ay <= max($cy,$dy))) || (($by >= min($cy,$dy)) && ($by <= max($cy,$dy)))) {
+		return 1;
+	    } else {
+		return 0;
+	    }
+	}
+    }
+
+    if ($denominator == 0) { # lines are parallel, can't intersect
+	return 0;
+    }
+
+    my $r = $numerator/$denominator;
+
+    if (($r<0) || ($r>1)) {
+	return 0; # no intersection
+    }
+
+    $numerator = (($ay-$cy)*($bx-$ax) - ($ax-$cx)*($by-$ay));
+    my $s = $numerator/$denominator;
+
+    if (($s<0) || ($s>1)) {
+	return 0; # no intersection
+    }
+
+    1;
+}
+
+sub point_in_grid {
+    my($x1,$y1,$gridx1,$gridy1,$gridx2,$gridy2) = @_;
+    return ($x1 >= $gridx1 && $x1 <= $gridx2 &&
+	    $y1 >= $gridy1 && $y1 <= $gridy2);
+}
+
 # REPO BEGIN
 # REPO NAME sqr /home/e/eserte/src/repository 
 # REPO MD5 846375a266b4452c6e0513991773b211
 sub sqr { $_[0] * $_[0] }
+# REPO END
+
+# REPO BEGIN
+# REPO NAME min /home/e/eserte/src/repository 
+# REPO MD5 80379d2502de0283d7f02ef8b3ab91c2
+BEGIN {
+    if (eval { require List::Util; 1 }) {
+	*min = \&List::Util::min;
+    } else {
+	*min = sub {
+	    my $min = $_[0];
+	    foreach (@_[1..$#_]) {
+		$min = $_ if $_ < $min;
+	    }
+	    $min;
+	};
+    }
+}
+# REPO END
+
+# REPO BEGIN
+# REPO NAME max /home/e/eserte/src/repository 
+# REPO MD5 6156c68fa67185196c12f0fde89c0f6b
+BEGIN {
+    if (eval { require List::Util; 1 }) {
+	*max = \&List::Util::max;
+    } else {
+	*max = sub {
+	    my $max = $_[0];
+	    foreach (@_[1..$#_]) {
+		$max = $_ if $_ > $max;
+	    }
+	    $max;
+	};
+    }
+}
 # REPO END
 
 1;

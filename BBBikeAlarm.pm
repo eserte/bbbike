@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAlarm.pm,v 1.21 2003/01/08 18:45:27 eserte Exp $
+# $Id: BBBikeAlarm.pm,v 1.22 2003/02/11 23:58:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -41,7 +41,7 @@ my $install_datebook_additions = 1;
 
 use Time::Local;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
@@ -538,6 +538,7 @@ sub tk_interface {
 		       -command => sub { $ack_t->destroy },
 		      )->pack;
 	$ack_t->after(10*1000, sub { $ack_t->destroy });
+	$ack_t->Popup;
     }
 
     add_tk_alarm($$, $end_time, "leave");
@@ -784,18 +785,6 @@ sub time2epoch {
 # REPO BEGIN
 # REPO NAME is_in_path /home/e/eserte/src/repository 
 # REPO MD5 1aa226739da7a8178372aa9520d85589
-
-=head2 is_in_path($prog)
-
-=for category File
-
-Return the pathname of $prog, if the program is in the PATH, or undef
-otherwise.
-
-DEPENDENCY: file_name_is_absolute
-
-=cut
-
 sub is_in_path {
     my($prog) = @_;
     return $prog if (file_name_is_absolute($prog) and -x $prog);
@@ -811,16 +800,6 @@ sub is_in_path {
 # REPO BEGIN
 # REPO NAME file_name_is_absolute /home/e/eserte/src/repository 
 # REPO MD5 a77759517bc00f13c52bb91d861d07d0
-
-=head2 file_name_is_absolute($file)
-
-=for category File
-
-Return true, if supplied file name is absolute. This is only necessary
-for older perls where File::Spec is not part of the system.
-
-=cut
-
 sub file_name_is_absolute {
     my $file = shift;
     my $r;
@@ -865,15 +844,6 @@ sub CenterWindow {
 # REPO BEGIN
 # REPO NAME bg_system /home/e/eserte/src/repository 
 # REPO MD5 aa3191a2004671b54fd024be12389d0d
-
-=head2 bg_system($cmd)
-
-=for category System
-
-Create a background process in a portable way.
-
-=cut
-
 sub bg_system {
     my($cmd) = @_;
     #warn "cmd=$cmd\n";

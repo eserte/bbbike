@@ -28,8 +28,8 @@ Neubrandenburg	4 -1650,127890
 Wittstock|a.d. Dosse	4 -52865,83319
 Pritzwalk	4 -73507,81847
 Ueckermünde	4 49494,149450
-Bergen	4 7545,223917
-Waren	4 -40176,123310
+Bergen|auf Rügen	4 7545,223917
+Waren|(Müritz)	4 -40176,123310
 Barth	4 -38385,217701
 Geesthacht	4 -193239,114589
 Seesen	4 -210379,-57075
@@ -81,6 +81,7 @@ Tangermünde	4 -86575,14474
 Stendal	4 -94920,21366
 Wernigerode	4 -168663,-64367
 Calbe	4 -100254,-56526
+Celle	4 -214664,25254
 Swinoujscie	4 62384,168798
 Ostseebad Rerik	3 -110604,188058
 Kühlungsborn	3 -103143,192722
@@ -106,7 +107,7 @@ Putbus	3 10296,216864
 Pasewalk	3 46656,123426
 Lychen	3 2780,89449
 Penzlin	3 -13271,121852
-Boitzenburg|/Elbe	3 -170268,107152
+Boizenburg|/Elbe	3 -170268,107152
 Röbel	3 -44833,107327
 Saßnitz	3 20520,234948
 Gartz	3 74237,91197
@@ -123,7 +124,7 @@ Penkun	3 64285,100645
 Loitz	3 -11096,174104
 Reuterstadt Stavenhagen	3 -25408,143046
 Bad Salzdetfurth	3 -221423,-37777
-Wedel|(Holtein)	3 -237607,132006
+Wedel|(Holstein)	3 -237607,132006
 Bleckede	3 -169626,98026
 Winsen|(Luhe)	3 -204493,106825
 Ribnitz-Damgarten	3 -57394,203501
@@ -236,6 +237,7 @@ Jerichow	3 -83382,9469
 Arneburg	3 -84456,29043
 Elbingerode|(Harz)	3 -167236,-71316
 Ilsenburg|(Harz)	3 -175675,-60713
+Eggesin	3 52072,143335
 Cedinya|(Polen)	3 63078,54045
 Police	3 85415,129052
 Wolin	3 86568,162706
@@ -244,7 +246,6 @@ Kamien Pomorski	3 96483,176738
 Leknica	3 105382,-93696
 Usti|nad Labem	3 59812,-192720
 Decin	3 71884,-179111
-Eggesin	3 52072,143335
 Dorf Mecklenburg	2 -120096,158779
 Boitzenburg	2 22065,95929
 Fürstenwerder	2 20214,110213
@@ -378,7 +379,6 @@ Klietz	2 -80631,27985
 Schönhausen	2 -82337,18705
 Benzigerode	2 -162792,-64163
 Heimburg	2 -159843,-65415
-Stepnica	2 88736,141300
 Viereck	2 50059,128402
 Liepgarten	2 48709,147571
 Mönkebude	2 44234,152488
@@ -399,6 +399,7 @@ Wartin	2 58832,95451
 Luckow-Petershagen	2 62657,94307
 Hohenselchow	2 67235,90585
 Groß Pinnow	2 67134,88367
+Stepnica	2 88736,141300
 Jakobshagen	1 19242,89270
 Hardenbeck	1 18522,95282
 Morgenitz	1 44169,169997
@@ -419,6 +420,7 @@ Bruchhagen	1 47159,76191
 Frauenhagen	1 51536,76200
 Landin|Uckermark	1 58475,76236
 Schönermark|Uckermark	1 54090,79170
+Schapow	1 28443,106520
 Grünow|Uckermark	1 53531,80981
 Briest	1 52583,84242
 Stendell	1 59844,83596
@@ -436,10 +438,11 @@ Potzlow	1 37748,91078
 Wallmow	1 53726,105229
 Drense	1 46817,101802
 Ziemkendorf	1 49782,102918
-Seehausen|am Ober-Ueckersee	1 40693,91681
+Seehausen|am Oberuckersee	1 40693,91681
 Wichmannsdorf|bei Boitzenburg	1 24462,93588
 Beenz	1 30009,95434
 Sternhagen	1 35158,93909
+Röpersdorf	1 37816,98094
 Falkenwalde|Uckermark	1 48985,97243
 Bertikow	1 44380,94312
 Bietikow	1 44096,97126
@@ -459,6 +462,10 @@ Reinberg	1 -3734,201011
 Rambin	1 -7104,216657
 Haßleben	1 28077,90759
 Gollmitz	1 29955,99848
+Güstow	1 33919,102671
+Klinkow	1 35281,104466
+Blindow	1 40314,106801
+Schönwerder	1 37726,108480
 Berkholz	1 25689,98133
 Carpin	1 -2533,105389
 Gandenitz	1 11181,85286
@@ -579,10 +586,12 @@ Niebelhorst	1 -19012,-31726
 Niebel	1 -21662,-30814
 Weichensdorf	1 76728,-33531
 Möbiskruge	1 92650,-31216
-Neubrück|(Spree)	1 70806,-13391
 Schernsdorf	1 83787,-21937
 Fahrenwalde	1 52076,116187
 Damerow	1 45991,116196
+Schönfeld|(Uckermark)	1 46703,113275
+Schenkenberg|(bei Prenzlau)	1 44453,107726
+Milow|(bei Pasewalk)	1 36011,119758
 Züsedom	1 48936,116479
 Nieden	1 42426,116039
 Torgelow-Holländerei	1 49531,143137
@@ -639,6 +648,9 @@ Woltersorf|bei Casekow	1 63186,87698
 Blumberg|bei Casekow	1 58652,90460
 Sommersdorf	1 60232,99186
 Grünz	1 57371,99052
+Groß Riwtz	1 66061,-19905
+Bornow	1 65283,-24577
+Görzig	1 65818,-16920
 Warnemünde	0 -79879,195905
 Ostseebad Heiligendamm	0 -95818,192055
 Pinnow|bei Anklam	0 31964,167092
@@ -672,9 +684,13 @@ Kleinzerlang	0 -24006,86429
 Repente	0 -30469,83920
 Priepert	0 -15710,89965
 Drosedow	0 -24213,92293
+Bündigershof	0 41950,101472
+Wollenthin	0 42416,103052
+Seelübbe	0 41684,96759
 Hammelstall|(Brüssow)	0 55615,109541
 Neuhof|(Warnitz)	0 41554,88911
 Quast|(Warnitz)	0 40932,90061
+Strehlow|(Potzlow)	0 37874,92251
 Abbau|Potzlow	0 35640,89154
 Rollberg|bei Eickstedt	0 52472,103008
 Grenz	0 50119,104816
@@ -689,15 +705,24 @@ Buchholz|bei Gerswalde	0 31283,89551
 Blankensee|bei Haßleben	0 28532,88180
 Kuhz|bei Haßleben	0 25834,91395
 Lindenhagen	0 32766,94267
+Schmachtenhagen|(Uckermark)	0 33976,96786
+Zollchow	0 38121,95962
+Neu Zollchow	0 35880,95489
 Fergitz	0 38057,87070
 Melzow	0 41221,85647
 Dreesch	0 45263,99816
 Kleinow|(Falkenwalde)	0 50308,97630
+Neu-Kleinow	0 48989,95580
 Weselitz	0 46554,95895
+Neumeichow	0 46402,88558
 Mönchehof|(Grünow)	0 46962,103551
+Naugarten	0 26664,101142
+Wilhelmshof	0 30159,103517
 Stahlbrode	0 -1604,203063
 Losentitz	0 1999,204862
 Horst|bei Golmitz	0 31936,101473
+Rathsberge	0 36530,100288
+Ellingen	0 36708,105791
 Lobbe	0 26232,213379
 Katschow	0 49895,168302
 Bergedorf	0 -204420,120516
@@ -739,7 +764,12 @@ Plaue	0 -56817,-754
 Kirchmöser Dorf	0 -55762,-4377
 Blumenberg	0 -122024,-42283
 Gottsdorf	0 -11263,-31283
-Dabie	0 92459,112688
+Tornow|(bei Schönfeld, Uckermark)	0 44765,111011
+Wittenhof	0 42302,105760
+Werbelow	0 39006,117525
+Trebenow	0 37685,116242
+Bandelow	0 37800,113022
+Klockow	0 48458,111338
 Bröllin	0 50618,118594
 Kamp	0 36379,160448
 Binenwalde	0 -31527,71293
@@ -766,3 +796,5 @@ Gölsdorf|b. Jüterbog	0 -17386,-50318
 Wölmsdorf	0 -18329,-48636
 Glashütte|Baruth	0 23649,-41724
 Kemlitz	0 16096,-43894
+Birkholz|bei Beeskow	0 65383,-21954
+Dabie	0 92459,112688

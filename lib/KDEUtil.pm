@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KDEUtil.pm,v 2.9 2002/03/03 18:16:50 eserte Exp $
+# $Id: KDEUtil.pm,v 2.10 2003/02/09 13:04:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
@@ -176,8 +176,19 @@ sub keep_on_top {
     shift;
     my $w = shift;
     my($wrapper) = $w->toplevel->wrapper;
-    $w->property('set', '_NET_WM_STATE', "ATOM", 32,
-		 ["_NET_WM_STATE_STAYS_ON_TOP"], $wrapper);
+    eval {
+	if (!grep { $_ eq '_NET_WM_STATE_STAYS_ON_TOP' } $w->property('get', '_NET_SUPPORTED', 'root')) {
+	    die "_NET_WM_STATE_STAYS_ON_TOP not supported";
+	}
+	$w->property('set', '_NET_WM_STATE', "ATOM", 32,
+		     ["_NET_WM_STATE_STAYS_ON_TOP"], $wrapper);
+    };
+    if ($@) {
+	warn $@;
+	0;
+    } else {
+	1;
+    }
 }
 
 sub panel {

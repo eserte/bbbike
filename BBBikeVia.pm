@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVia.pm,v 1.6 2003/01/08 20:01:19 eserte Exp $
+# $Id: BBBikeVia.pm,v 1.8 2003/04/27 17:09:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -16,12 +16,12 @@ package BBBikeVia;
 
 use strict;
 use vars qw($VERSION $move_index $add_point);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use vars qw(%cursor %cursor_mask $map_mode $c %do_flag %flag_photo
 	    @search_route_points %set_route_point
-	    $map_mode_deactivate $net);
+	    $map_mode_deactivate $net @realcoords);
 use subs qw(M SRP_TYPE SRP_COORD POINT_MANUELL POINT_SEARCH);
 
 BBBikeVia::load_cursors(); # XXX move somewhere...
@@ -61,7 +61,7 @@ sub BBBikeVia::menu_entries {
 # __END__ here for "use load"
 
 sub BBBikeVia::load_cursors {
-    foreach my $def (qw(via_add_nb1 via_add_nb2 via_add	via_del	via_move)) {
+    foreach my $def (qw(via_add_nb1 via_add_nb2 via_add	via_del	via_move via_move_2)) {
 	load_cursor($def);
     }
 }
@@ -110,25 +110,34 @@ sub BBBikeVia::move_via {
 	# do nothing
     };
     $map_mode_deactivate = sub {
-	$c->bind("viaflag", "<ButtonPress-1>", "");
+	for (qw(start via ziel)) {
+	    $c->bind($_."flag", "<ButtonPress-1>", "");
+	}
     };
-    $c->bind("viaflag", "<ButtonPress-1>" => \&BBBikeVia::move_via_2);
+    for (qw(start via ziel)) {
+	$c->bind($_."flag", "<ButtonPress-1>" => [\&BBBikeVia::move_via_2, $_]);
+    }
     status_message(M"Zu verschiebendes Via wählen", "info");
 }
 
 sub BBBikeVia::move_via_2 {
+    my($c, $type) = @_;
+
     $BBBikeVia::move_index = BBBikeVia::_find_point_from_tags();
     return if !defined $BBBikeVia::move_index;
 
-    # set_cursor("via_move_2"); # XXX
+    set_cursor("via_move_2");
     $set_route_point{"MM_VIA_MOVE"} = \&BBBikeVia::move_via_action;
-    $c->bind("viaflag", "<ButtonPress-1>" => "");
-    status_message(M"Punkt zum Verschieben wählen", "info");
+    for (qw(start via ziel)) {
+	$c->bind($_."flag", "<ButtonPress-1>" => "");
+    }
+    my $point_text = !defined $type ? M("Punkt zum Verschieben wählen") : Mfmt("Punkt wählen, wohin %s verschoben werden soll", ($type eq 'start' ? M("der Start") : M("das " . ucfirst($type))));
+    status_message($point_text, "info");
 }
 
 sub BBBikeVia::move_via_action {
     my $coord = set_coords($c);
-    warn $coord;
+    warn $coord; # XXX
     $search_route_points[$BBBikeVia::move_index]->[SRP_COORD] = $coord;
 
     re_search();
@@ -160,6 +169,32 @@ sub BBBikeVia::add_via_2 {
 	    [$BBBikeVia::add_point, POINT_SEARCH];
 	re_search();
 	return BBBikeVia::add_via();
+    }
+
+    my @tags = $c->gettags("current");
+    if (grep { $_ eq 'route' } @tags) {
+	# Click on route
+	if ($tags[1] =~ /route-(\d+)/) {
+	    my $route_nr = $1;
+	    my %srp_to_index;
+	    for my $inx (0 .. $#search_route_points) {
+		$srp_to_index{$search_route_points[$inx]->[0]} = $inx;
+	    }
+	    for my $i ($route_nr .. $#realcoords) { # XXX off-by-one?
+		my $xy = join(",", @{$realcoords[$i]});
+		if (exists $srp_to_index{$xy}) {
+		    splice @search_route_points,
+			$srp_to_index{$xy},
+			0,
+			[$BBBikeVia::add_point, POINT_SEARCH];
+		    re_search();
+		    return BBBikeVia::add_via();
+		}
+	    }
+	    warn "Can't find route-$route_nr in realcoords\n";
+	} else {
+	    warn "Can't find route number in @tags\n";
+	}
     }
 
     BBBikeVia::add_via_2_2();

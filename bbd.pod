@@ -26,9 +26,17 @@ The category of this point or polyline. If the category matches
 C<#rrggbb> (where C<rr>, C<gg> and C<bb> are hexadecimal values), then
 this denotes a color for the representation in the Perl/Tk interface.
 A prefix of C<F:> denotes that the polyline should be treated as a
-polygon and this filled with a solid color. Other predefined
-categories are listed below. The category should not contain any
-spaces.
+polygon and filled with a solid color. Note that the polygon is always
+closed, but it is optional to make the first and last the same.
+
+If the category matches I<forwardcat>C<;>I<backwardcat>, then
+I<forwardcat> applies to the street in forward direction and
+I<backwardcat> applies to the street in backward direction. Either
+I<forwardcat> or I<backwardcat> may be empty; in this case the
+category applies only to the other direction.
+
+Other predefined categories are listed below. The category should not
+contain any spaces.
 
 =item x,y
 
@@ -36,7 +44,10 @@ A coordinate. x and y should be integer or float values. The datum and
 grid of the coordinates should be handled by the software. It is
 recommended that x and y should denote the easting and northing in
 meters (as in GKK or UTM). A record may contain an unlimited number of
-coordinates.
+coordinates, though there may be limitations in the interpreting
+software (currently the maximum number of points is hardcoded in
+L<BBBikeXS> and checked in the rule C<check-line-lengths> of
+C<data/Makefile>).
 
 =back
 
@@ -79,7 +90,11 @@ Für Kfz gesperrte Straßen.
 
 =item Pl
 
-Places (Plätze). Only for point records.
+Places (Plätze).
+
+=item Br
+
+Bridges.
 
 =back
 
@@ -89,29 +104,31 @@ Used in files: C<gesperrt>.
 
 =over
 
-=item 1
+=item * 1
 
 One way street. The blocking is in the direction of the polyline.
 
-=item 2
+=item * 2
 
 Blocked street (in both directions).
 
-=item 0
+=item * 0
 
 The bicycle has to be carried. An optional penalty parameter expressed
 in seconds of lost time may be added after the category, with a C<:>
 as separator. Example: C<0:30> for a penalty of 30 seconds. This is
 only for point records.
 
-=item 3
+=item * 3
 
-A blocked route (gesperrte Wegführung).
+A blocked route (gesperrte Wegführung). This means that the whole path
+specified by the coordinates of this record are blocked, but parts of
+the path are not.
 
-=item BNP
+=item * BNP
 
-A narrow passage. An optional penalty parameter may be added, like for
-the C<0> category.
+A narrow passage (E<quot>DrE<auml>ngelgitterE<quot> etc.). An optional
+penalty parameter may be added, like for the C<0> category.
 
 =back
 
@@ -123,35 +140,43 @@ Used in files: C<radwege_exact>.
 
 =item RW0
 
-Normaler nicht benutzungspflichtiger Radweg.
+Kein Radweg.
 
 =item RW1
 
-Benutzungspflichtiger Radweg.
+Normaler nicht benutzungspflichtiger Radweg.
 
 =item RW2
 
-Suggestivstreifen für Radfahrer.
+Benutzungspflichtiger Radweg.
 
 =item RW3
 
-Radstreifen.
+Suggestivstreifen für Radfahrer.
 
 =item RW4
 
-Busspur (eventuell nur temporär), auch für Radfahrer frei.
+Radstreifen.
 
 =item RW5
 
-Verkehrsberuhigte Straße.
+Busspur (eventuell nur temporär), auch für Radfahrer frei.
 
 =item RW6
 
-Fahrradstraße.
+Verkehrsberuhigte Straße.
 
 =item RW7
 
-Zweirichtungsradweg, Gegenrichtung.
+Fahrradstraße.
+
+=item RW8
+
+Benutzungspflichtiger Zweirichtungsradweg, Gegenrichtung.
+
+=item RW9
+
+Nicht benutzungspflichtiger Zweirichtungsradweg, Gegenrichtung.
 
 =back
 
@@ -274,6 +299,10 @@ Auf 18 km/h.
 
 Auf 13 km/h.
 
+=item q4
+
+Auf Schrittgeschwidigkeit (z.B. in FuE<szlig>gE<auml>ngerzonen).
+
 =back
 
 =head2 COMMENTS
@@ -363,11 +392,26 @@ in meters, the category is not used.
 
 XXX To be continued
 
+=head1 EXAMPLES
+
+                      A list of coordinates (x,y pairs)
+                      v
+    Dudenstr. <TAB> H 9222,8787 8982,8781 8594,8773
+    ^               ^
+    Street name     Category (H = main street)
+
+                           A list of coordinates for the polygon
+                           v
+    Viktoriapark <TAB> F:P 8554,8628 8551,8698 8577,8699 8579,8727
+    ^                  ^
+    Name of a park     Category (F = area (polygon, Fläche),
+                                 P = park)
+
 =head1 AUTHOR
 
 Slaven Rezic <slaven@rezic.de>
 
 =head1 SEE ALSO
 
-bbbike(1), Strassen(3).
+L<bbbike>, L<Strassen>.
 

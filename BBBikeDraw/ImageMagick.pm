@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ImageMagick.pm,v 1.5 2003/01/08 20:11:02 eserte Exp $
+# $Id: ImageMagick.pm,v 1.5 2003/01/08 20:11:02 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -21,7 +21,8 @@ use Image::Magick;
 # sparen:
 use Carp qw(confess);
 
-use vars qw($gd_version $VERSION @colors %color %outline_color %width);
+use vars qw($gd_version $VERSION @colors %color %outline_color %width
+	    $TTF_STREET);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
 	    $darkblue $lightblue $black);
@@ -35,24 +36,24 @@ my(%brush, %outline_brush);
 sub init {
     my $self = shift;
 
-    my($geometry) = $self->{Geometry};
+    $self->SUPER::init();
+
+    $TTF_STREET = '/usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf'
+	if !defined $TTF_STREET;
 
     $self->{ImageType} = 'png' if !defined $self->{ImageType};
 
-    my($w, $h) = (640, 480);
-    if (defined $geometry) {
-	($w, $h) = split(/x/, $geometry);
-    }
+    $self->{Width}  ||= 640;
+    $self->{Height} ||= 480;
+
     my $im;
     if ($self->{OldImage}) {
 	$im = $self->{OldImage};
     } else {
-	$im = Image::Magick->new(size=>$w."x".$h);
+	$im = Image::Magick->new(size=>$self->{Width}."x".$self->{Height});
     }
 
     $self->{Image}  = $im;
-    $self->{Width}  = $w;
-    $self->{Height} = $h;
 
     if (!$self->{OldImage}) {
   	$self->allocate_colors;
@@ -89,12 +90,15 @@ sub allocate_colors {
     my $self = shift;
     my $im = $self->{Image};
 
+#    my $GREY = 153;
+    my $GREY = 225;
+
     $self->{'Bg'} = '' if !defined $self->{'Bg'};
     if ($self->{'Bg'} =~ /^white/) {
 	# Hintergrund weiß: Nebenstraßen werden grau,
 	# Hauptstraßen dunkelgelb gezeichnet
 	$grey_bg   = _colorAllocate(255,255,255);
-	$white     = _colorAllocate(153,153,153);
+	$white     = _colorAllocate($GREY,$GREY,$GREY);
 	$yellow    = _colorAllocate(128,128,0);
 	$im->Transparent(color => $grey_bg) if ($self->{'Bg'} =~ /transparent$/);
     } elsif ($self->{'Bg'} =~ /^\#([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})/i) {
@@ -102,7 +106,7 @@ sub allocate_colors {
 	$grey_bg   = _colorAllocate($r,$g,$b);
 	$im->Transparent(color => $grey_bg) if ($self->{'Bg'} =~ /transparent$/);
     } else {
-	$grey_bg   = _colorAllocate(153,153,153);
+	$grey_bg   = _colorAllocate($GREY,$GREY,$GREY);
 	$im->Transparent(color => $grey_bg) if ($self->{'Bg'} =~ /transparent$/);
     }
     if ($self->imagetype eq 'wbmp') { # XXX
@@ -117,7 +121,8 @@ sub allocate_colors {
 	$green       = _colorAllocate(0,255,0);
 	$darkgreen   = _colorAllocate(0,128,0);
 	$darkblue    = _colorAllocate(0,0,128);
-	$lightblue   = _colorAllocate(186,213,247);
+	#$lightblue   = _colorAllocate(186,213,247);
+	$lightblue   = _colorAllocate(0xa0,0xa0,0xff);
 	$middlegreen = _colorAllocate(0, 200, 0);
 	$black       = _colorAllocate(0, 0, 0);
     }
@@ -353,10 +358,7 @@ sub draw_map {
 #      if (ref $self->{StrLabel} &&
 #  	(defined &ImageMagick::Image::stringFT || defined &ImageMagick::Image::stringTTF)) {
 #  	eval {
-#  	    # XXX allgemeiner machen
-#  	    #my $ttf = '/usr/X11R6/share/enlightenment/E-docs/aircut3.ttf';
-#  	    #my $ttf = '/usr/X11R6/share/enlightenment/E-docs//benjamingothic.ttf';
-#  	    my $ttf = '/usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf';
+#  	    my $ttf = $TTF_STREET;
 
 #  	    my $fontsize = 10;
 #  	    $Tk::RotFont::NO_X11 = 1;

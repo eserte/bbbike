@@ -1236,14 +1236,18 @@ L<README|README> bzw. README.html.
 
 =head2 fvwm2
 
-Um Icons mit dem fvwm2 darstellen zu können, sollte in .fvwm2rc oder
-.fvwmrc folgende Zeile eingefügt werden:
-
+Bei der Verwendung von fvwm2 kE<ouml>nnen folgende Zeilen in .fvwm2rc
+oder .fvwmrc eingefE<uuml>gt werden:
 
  Style "Bbbike*"        MiniIcon srtbike_mini.xpm
+ Style "BbbikePassive"  GrabFocusOff, GrabFocusTransientOff
 
-Die Datei srtbike_mini.xpm sollte in ein Verzeichnis eingefügt werden,
-wo sich die sonstigen fvwm-Icons befindet (siehe Direktive PixmapPath).
+Die erste Zeile lE<auml>sst das BBBike-Icon in der Titelleiste
+erscheinen. Dazu sollte die Datei srtbike_mini.xpm in ein Verzeichnis
+eingefügt werden, wo sich die sonstigen fvwm-Icons befinden (siehe
+Direktive PixmapPath). Die zweite Zeile sorgt dafE<uuml>r, dass
+E<quot>unwichtigeE<quot> zusE<auml>tzliche Fenster nicht
+(unnE<ouml>tigerweise) den Fokus erhalten.
 
 =head1 INTERNA
 
@@ -1321,8 +1325,7 @@ Zu viele...
 
 Entfernungen von manuell erzeugten Strecken werden bei der
 Wegbeschreibung nicht berE<uuml>cksichtigt, wenn eine Neuberechnung
-oder RE<uuml>ckweg angewE<auml>hlt wurde. Bei einer Neuberechnung
-bleibt die Routenbeschreibung immer leer.
+oder RE<uuml>ckweg angewE<auml>hlt wurde.
 
 =item *
 
@@ -1342,12 +1345,7 @@ vorberechnet) umsteigen werde.
 
 optionadd...*search hat auch Auswirkungen auf den MenE<uuml>punkt in
 Tk::Pod ... wie kann das begrenzt werden? Vielleicht MainWindow statt
-Toplevel benutzen?
-
-=item *
-
-Kontextsensitive Hilfe auf "km/h" findet beim Tk-POD-Ersatz nicht den
-richtigen Abschnitt.
+Toplevel fE<uuml>r das Pod-Widget benutzen?
 
 =item *
 
@@ -1363,26 +1361,16 @@ anderen Symbol befindet, kann es nicht angeklickt werden
 
 =item *
 
-Vias verschieben etc.: Start- und Zielflagge koennen (entgegen den
-Behauptungen im Menue) noch nicht verschoben etc. werden
-
-=item *
-
 Ab und zu, besonders beim Wechseln zwischen Kartenmodi, reagiert bbbike
 beim Setzen eines Startpunktes nicht. Aushilfe: einmal "Route löschen"
-auswählen, danach geht es wieder.
+auswählen, danach geht es wieder. =E<gt> scheint behoben zu sein
+(siehe set_route_point, E<quot>XXX activatingE<quot>).
 
 =back
 
 =head1 LIMITATIONS
 
 =over 4
-
-=item *
-
-Beim Reinzoomen werden die Strecken und Punkte sehr ungenau
-gezeichnet. Dies kE<ouml>nnte behoben werden, wenn alle Punkte beim Zoomen
-neu gezeichnet werden, aber das wE<uuml>rde das Zoomen *sehr* verlangsamen. 
 
 =item *
 
@@ -1393,6 +1381,10 @@ Der Canvas-Postscript-Treiber kann mit rotierten Fonts nichts anfangen.
 =head1 TODO
 
 =over 4
+
+=item *
+
+bbbike.cgi - Info: Beschreibung der Sucheinstellungen
 
 =item *
 
@@ -1424,9 +1416,7 @@ mit nearest_... arbeiten.
 
 =item *
 
-Update E<uuml>ber das Internet: gzip/zip-UnterstE<uuml>tzung, oder,
-noch besser, rsync-UnterstE<uuml>tzung. Wie richtet man einen
-rsync-Server ein?
+Update E<uuml>ber das Internet: rsync-UnterstE<uuml>tzung austesten. 
 
 =item *
 
@@ -1466,10 +1456,6 @@ nicht RB, RB-Bhf, S, S-Bhf wie bislang
 
 =item *
 
-Vias werden gesondert dargestellt.
-
-=item *
-
 unlimited Undo?
 
 =item *
@@ -1486,11 +1472,6 @@ search_route: multiple Start/Ziel (Checkbutton)
 Mehr benutzerfreundliche Optionen fE<uuml>r die Suche: kE<uuml>rzeste
 Strecke, schnellste Strecke (in AbhE<auml>ngigkeit von Wind,
 Steigung/GefE<auml>lle, StraE<szlig>enoberflE<auml>che etc.),
-
-=item *
-
-Weiterer Suchmodus: Start- und Ziel bleiben fest, Via kann beliebig
-verE<auml>ndert werden. Und: Ausgabe von alternativen Routen.
 
 =item *
 
@@ -1535,11 +1516,6 @@ NE<auml>he einstellbar, default 100m)
 Im Umland ist es wahrscheinlich sinnvoller, eine Routenbeschreibung
 anhand von Punkten (Ortschaften) anstatt Strecken (StraE<szlig>en) zu
 machen. Optional eins oder beides zusammen.
-
-=item *
-
-Ab und zu Pfeile zeichnen, damit die RoutenfE<uuml>hrung eindeutig wird
-(wenn eine Strecke zweimal durchfahren wird).
 
 =item *
 
@@ -1617,7 +1593,6 @@ Hatte ich schonmal:
 Sachen wie Brücken, Tunnel, "Alexanderplatz [zur Grunerstr.]" etc.
 ansonsten werden sie in bbbike.cgi nicht erkannt, obwohl sie
 existieren!]
-
 
 =item *
 
@@ -2030,6 +2005,10 @@ dafE<uuml>r gibt es aber ein neues Tk::MDI-Widget
 
 Andreas' Labeling-Algorithmus verwenden
 
+=back
+
+=over
+
 =item CDROM-Probleme:
 
  - tk:underlineall.pm warnings in 111,114,157,178
@@ -2084,7 +2063,7 @@ Andreas' Labeling-Algorithmus verwenden
  * evtl. Programm zum Suchen von Überschneidungen schreiben (mit
    Ausnahmedatei für Brücken)
 
-=item *
+=item Bookmarks
 
 Bookmarks in choose_ort und möglichkeit, per dnd neue bookmarks zu definieren, um als straßenauswahl dienen zu können
 
@@ -2103,7 +2082,7 @@ Bookmarks in choose_ort und möglichkeit, per dnd neue bookmarks zu definieren, u
  
  - Verwendung von Tk::App::Reloader. Scheint allgemein zu funktionieren.
 
-=item *
+=item Fahrbahnbeschaffenheit
 
   Aus der Radzeit 3/2001, Seite 8-9:
   Radwege: Verbundsteine kontra Asphalt
@@ -2124,7 +2103,7 @@ Bookmarks in choose_ort und möglichkeit, per dnd neue bookmarks zu definieren, u
   Auflage August 1999 E<quot>Entwicklung und potentiale des
   Fahrrad-VerkehrsE<quot> Seiten 18 bis 20
 
-=item *
+=item Verkehrsverwaltung
 
   Verkehrs-/Umweltverwaltung wegen Emissionen:
   ReulenbE<auml>cker
@@ -2133,7 +2112,7 @@ Bookmarks in choose_ort und möglichkeit, per dnd neue bookmarks zu definieren, u
   Raum 8.020
   BrE<uuml>ckenstr. Mitte
 
-=item *
+=item weiter
 
  - Farbeditor: background setzen sollte vielleicht Canvas-bg ignorieren bzw. eigener Auswahlpunkt für Canvas-bg. Vielleicht *alle* Farben änderbar machen --- aber dann muss man die Änderungen auch abspeichern können (schwer, unwichtig)
  
@@ -2153,6 +2132,86 @@ Bookmarks in choose_ort und möglichkeit, per dnd neue bookmarks zu definieren, u
  
  - bbbike.cgi: kommentar-spalte: bei münchen schiebestrecken ausweisen, evtl. auch radwege. in berlin vielleicht alles mögliche ausgeben --- ausprobieren
 
+=item StraE<szlig>ennetz, Suche
+
+Die build-Funktion kE<ouml>nnte viel einfacher gestaltet werden, da if
+(const) { } von perl optimiert wird. Die Vorgehensweise wE<auml>re
+also:
+
+    eval q{
+        sub CONST () { $const }
+        ...
+        A*-Code
+    }
+
+Leider gibt es mandatory redefine warnings, die vielleicht mit einer
+STDERR-Umleitung unsichtbar gemacht werden kE<ouml>nnen. Allerdings
+--- eine Analyse mit B::Terse zeigt, dass nach der Optimierung
+zusE<auml>tzliche enter/leave opcodes im Tree geblieben sind. (Das
+wE<auml>re eine Idee fE<uuml>r optimize::...: E<uuml>berflE<uuml>ssige
+enter/leave E<uuml>berspringen, wenn in einem Block keine padsv (my)
+oder LVINTRO (local) vorkommen sowie der Block in einem void-Kontext
+steht.)
+
+=item BBBikeEdit
+
+Teile nach BBBikeGPS etc. auslagern => schon gemacht, noch mehr?
+
+=item VernE<uuml>nftige Koordinaten verwenden
+
+Wahrscheinlich ist GKK (fE<uuml>r Deutschland) die beste Wahl.
+
+Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
+
+  * 1km entspricht wieviel LE<auml>ngengrad in Usedom, Prenzlau,
+    Berlin, Dessau, Dresden?
+
+  * Das gleiche mit Karte::Polar ausrechnen
+
+  * Zur Sicherheit auch BreitengradabstE<auml>nde berechnen.
+
+  * Range von GKK feststellen (in Mapsource einstellen, falls
+    mE<ouml>glich, ansonsten mit dem eTrex). Wo gelten die Zonen, was
+    fE<uuml>r EinschrE<auml>nkungen hE<auml>tte ich?
+
+  * Umrechnung GKK - Karte::Standard - Karte::Berlinmap1966 - Karte::GISmap.
+
+  * -orig-Dateien =E<gt> GKK, konvertierte Dateien =E<gt> einfach auf
+    0/0 subtrahiert (E<auml>hnlich wie in ME<uuml>nchen)?
+    Hmmm. Wahrscheinlich ist es sogar besser, wenn die -orig-Dateien
+    auf polare Koordinaten basieren --- wegen der verschiedenen Zonen.
+    Beim Konvertieren wird eine Zone als E<quot>HauptzoneE<quot>
+    angenommen und die gesamte Karte dagegen konvertiert (die
+    RE<auml>nder sind dann verzerrt). Da mitten durch Berlin eine
+    GKK-Zone verlE<auml>uft, sollte ich vielleicht eine Pseudo-Zone
+    4.5 verwenden (Aufruf von Karte::UTM::ConvToTm mit dem Berliner
+    LE<auml>ngengrad als lat0 z.B.). Wie sieht es mit der
+    Konvertierungsfunktion DegreesToGKK aus?
+
+  * Liste aller von den derzeitigen Koordinaten abhE<auml>ngigen
+    Dateien erstellen
+
+  * Wenn die GKK-Konvertierung in Perl zu langsam lE<auml>uft:
+    XS-Modul schreiben. Tests sind einfach (Perl-Ausgabe gegen
+    XS-Ausgabe checken)
+
+  * Welches Datum verwenden: Potsdam oder WGS84?
+
+  * Alle abgespeicherten Dateien sollten besser Degrees sein! Also
+    .bbr und evtl. esri und so. Auch wenn mE<ouml>glich: die
+    sichtbaren Koordinaten im cgi sollten auch Degrees sein.
+
+  * Evtl. alle data/*-Dateien nach .bbd umbenennen und am Anfang einen
+    Header einfE<uuml>gen (Datum, Koordinatenformat etc.)
+    Entsprechende orig-Dateien heiE<szlig>en .orig.bbd oder .bbd.orig.
+    In der Zwischenzeit mit beiden Systemen gleichzeitig arbeiten
+    (Konvertierung im Makefile)
+
+  * DegreesToNZGrid sieht interessant aus --- das brauche ich: x und y
+    und keine Zonen. Implementieren, angucken!
+
+  * Was ist mit dem Koordinatensystem ETRS 89
+
 =back
 
 =head1 KOMPATIBILITE<Auml>T
@@ -2161,9 +2220,9 @@ BBBike wird zur Zeit unter FreeBSD 4.6 mit perl 5.00503/5.6.1/5.8.0
 und der neuesten Perl/Tk-Version (z.Zt. 800.024) entwickelt.
 
 TestlE<auml>ufe wurden und werden von Zeit zu Zeit auf Windows 95/98,
-Windows NT 4.0, Solaris/Sparc 7 und Linux gefahren. Dabei werden
-meistens auch die aktuellen Stable-Versionen von Perl und Tk
-verwendet.
+Windows NT 4.0, Solaris/Sparc 7 und Linux (Debian 3.0, SuSE) gefahren.
+Dabei werden meistens auch die aktuellen Stable-Versionen von Perl und
+Tk verwendet.
 
 Es wird versucht, auch zu den E<auml>lteren Versionen perl 5.00404 und Tk
 402.004 kompatibel zu bleiben. Dabei bleiben aber einige Features

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.81 2003/01/08 20:49:59 eserte Exp $
+# $Id: bbbike,v 3.102 2003/05/17 01:56:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -30,13 +30,13 @@ BEGIN { eval 'use BBBikeDebug' if $ENV{BBBIKE_DEBUG} }
 ##XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 BEGIN {
-    if ($] >= 5.005 && !$^C && !$^P) {
+    if ($] >= 5.005 && !$^C && !$^P && !grep { $_ eq '-nosplash' } @ARGV) {
 	# XXX don't know whether this is a Tk400 or an old perl problem
 	eval {
 	    require Tk::ProgressSplash;
 	    $splash_screen = Tk::ProgressSplash->Show
 		(-splashtype => 'fast',
-                 "$FindBin::RealBin/images/bbbike_splash.xpm",
+		 "$FindBin::RealBin/images/bbbike_splash.xpm",
 		 240, 90, "BBBike", 1);
 	}; warn $@ if $@;
     }
@@ -77,10 +77,30 @@ use Config;
 
 # Call "autouse" as early as possible. Otherwise there will be errors,
 # if any other module requires theses modules.
-# "autouse" seems to have problems with some modules.
+# "autouse" cannot be used on modules with non-standard import functions
 use autouse 'BBBikeMail'	=> qw(enter_send_mail enter_send_fax);
 use autouse 'Text::Wrap'	=> qw(wrap);
 use autouse 'File::Copy'	=> qw(copy mv);
+use autouse 'BBBikeGPS'         => qw(gps_interface draw_gpsman_data);
+use autouse 'BBBikeWeather'
+    => qw(wetter_dir_exists ignore_weather reset_wind update_weather
+	  show_weather_db parse_wetterline analyze_wind);
+use autouse 'BBBikeHeavy'
+    => qw(start_followmouse stop_followmouse
+	  string_eval_die load_plugin layer_editor
+	  getmap get_file_or_url get_user_agent delete_map
+	  pdf_export perlmod_install_advice
+	  show_register save_register_routes load_register_routes
+	  show_calories check_available_memory
+	  reload_all);
+#XXX problems with autouse!
+use autouse 'BBBikeEdit'
+    => qw(insert_point_from_canvas create_relation_from_canvas
+	  ampeln_on_route radweg_open radweg_draw_canvas);
+use autouse 'BBBikeExp'
+    => qw(bbbikeexp_init bbbikeexp_clear bbbikeexp_reload plotstr_on_demand);
+use autouse 'BBBikePrint'
+    => qw(create_postscript toggle_legend print_text_postscript);
 
 ## This is only for the Autoloader-Hack (see "make autoload")
 #use AutoLoader 'AUTOLOAD';
@@ -118,23 +138,8 @@ use VectorUtil qw(get_polygon_center);
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before locale");}
 ## DEBUG_END
-#use locale; # XXX use locale macht undefinierbare Probleme mit linux' perl
-## XXX soll ich FBSD 2.2.1 noch unterstützen?
-#  if ($Config{'osname'} eq 'freebsd' &&
-#      version_cmp($Config{'osvers'}, "2.2.1") < 1) {
-#      warn "FreeBSD-2.2.1 hat Probleme mit locale. locale wird ausgeschaltet...\n";
-#      $^H &= ~0x800;		# hack XXX geht das überhaupt????
-#  }
 
 BEGIN {
-    if (!eval '
-use Msg;
-1;
-') {
-	warn $@ if $@;
-	eval 'sub M ($) { $_[0] }';
-	eval 'sub Mfmt { sprintf(shift, @_) }';
-    }
 }
 
 use strict;
@@ -142,71 +147,7 @@ use strict;
 #BEGIN{mymstat("before use vars");}
 ## DEBUG_END
 
-use vars
-  qw($bbbike_context $splash_screen
-     $coords_ref $realcoords_ref $search_route_points_ref @realcoords
-     $VERSION $PROG_REVISION $tmpdir %tmpfiles $progname
-     $os $win32s $sfn $use_clipboard $verbose $advanced $devel_host
-     $datadir $city $citypkg $country
-     $top %toplevel $transient $c $top_dpi $top_dpmm @want_extends
-     $small_icons $is_handheld
-     @scrollregion $init_scrollregion $normal_scrollregion $scrollre
-     $K2Listbox
-     $dataset %str_obj %str_cache_attr %p_obj $net $no_make_net
-     %str_file %p_file $koord %ampeln %hoehe
-     %sperre %sperre_tragen %sperre_narrowpassage $sperre_file $use_faehre
-     $coord_system $coord_system_obj $scale_coeff $scale %scalecommand
-     $default_img_fmt $register_window_adjust
-     $ampel_count $kopfstein_count $ampel_count_button $kopfstein_count_button
-
-     $ampel_photo $ampel_klein_photo $ampel_klein_grey_photo
-     $kopfstein_klein_photo $kopfstein_klein_grey_photo $vorfahrt_photo
-     $andreaskr_photo $andreaskr_klein_photo %obst_photo
-     $windrose2_photo $usercross_photo
-     $strasse_photo $landstrasse_photo $ort_photo $hs_photo
-     $ubahn_photo $sbahn_photo $rbahn_photo $wasser_photo $flaechen_photo
-     $kneipen_photo $kneipen_klein_photo
-     $essen_photo $essen_klein_photo $kino_klein_photo
-     $search_photo $search_pref_photo $steigung_photo $gefaelle_photo
-     $inwork_photo $star_photo
-     $menuarrow_photo $ferry_photo $ferry_klein_photo %photo
-
-     @wetter_dir $wetter_dir %wetter_zuordnung %wetter_name
-     $x11 $special_edit $edit_mode $edit_mode_flag
-     $customchoosecmd $b2m_customcmd
-     %line_width %line_length %line_dash %line_arrow $default_line_width
-     %category_size %outline_color %category_color %str_color %p_color
-     %category_font_color %category_font
-     $crossings $all_outline %str_attrib %p_attrib %category_attrib
-     $init_choose_street %init_str_draw %str_draw %str_draw_demand
-     %init_p_draw %p_draw %str_outline $auto_show_list
-     %str_name_draw %str_nr_draw %p_name_draw %str_far_away %p_far_away
-     %p_regions %str_regions
-     $init_from $init_to $coloring $route_dashed $route_arrowed
-     $public $want_wind $wind $winddir $wind_dir_from $wind_dir_to %wind_dir
-     $wind_v $wind_v_max $winddate
-     $bp_obj $ua $proxy
-     $orientation $wasserstadt $wasserumland $init_scope %act_value
-     $map_draw @show_route_save @html_show_route_save
-     $palm_doc_format $show_route_start $show_route_ziel @act_search_route
-     @speed_txt @power_txt @calories_speed @calories_power
-     $route_strname_lbox $show_strlist $strlist_top $show_enter_opt_preferences
-     %module_time %module_check $aufschlag
-     $plotstr_draw_sub $plotpoint_draw_sub $plotorte_draw_sub $progress
-     @remember_plot_str @remember_plot_p
-     @standard_mode_cmd @edit_mode_cmd @edit_mode_b_cmd @edit_mode_brb_cmd
-     $map_mode %map_mode_callback $map_mode_deactivate $b2_mode %b2_mode_desc
-     %set_route_point $search_stat $search_visual
-     $coord_prefix %delayed_sub_timer
-     %global_search_args %penalty_subs %optprefs $autosave_opts
-     $autoscroll_speed $autoscroll_middle
-     $do_iconframe %check_sub $right_is_popup
-     $environment $use_server $turbo $use_mldbm
-     $run_under_kde $kde $exceed
-     $use_xwd_if_possible $str_history $nearest_orte
-     $standard_menubar $auto_install_cpan $ask_quit $gps_device
-     $outline_i
-    );
+use BBBikeGlobalVars;
 
 # Map modes
 # Please don't change order to stay compatible with tkbabybike
@@ -223,23 +164,12 @@ use enum qw(:B2M_
 # Attribute description field indexes
 use enum qw(:ATTRIB_ SINGULAR PLURAL LINES LONG);
 
-use vars qw(@speed @power
-	    $wetter_station %wetter_source
-	    $wetter_force_update $wetter_route_update
-	    $do_route_strnames $do_route_strnames_km
-	    $do_route_strnames_compact $do_route_strnames_orte
-	    $do_route_strnames_comments $comments_net $comments_pos_net);
-
-# Scale of the map (1:$mapscale)
-use vars qw($mapscale $default_mapscale);
+# XXX maybe this should go to Strassen::Dataset?
+@comments_types = qw(cyclepath ferry misc mount path route tram);
 
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before use constant");}
 ## DEBUG_END
-
-use constant DEFAULT_SCALE => 4;
-use constant DEFAULT_SMALL_SCALE => 1;
-use constant MINMEM        => 28000;
 
 use your qw($Karte::Standard::obj $Karte::Standard::init_scrollregion
 	    $Karte::GISmap::obj $Karte::Polar::obj
@@ -255,13 +185,15 @@ use your qw($Karte::Standard::obj $Karte::Standard::init_scrollregion
 	   );
 
 *transpose_ls          = \&transpose_ls_slow;
-*create_transpose_subs = \&old_create_transpose_subs;
+# If you don't have a FPU, maybe \&old_create_transpose_subs should be
+# used instead.
+*create_transpose_subs = \&old_create_transpose_subs_no_int;
 
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before use BBBikeXS");}
 ## DEBUG_END
 
-eval 'use BBBikeXS 0.07';
+eval 'use BBBikeXS 0.09';
 
 ## DEBUG_BEGIN
 #BEGIN{mymstat("after use BBBikeXS");}
@@ -272,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.81 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.102 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -283,6 +215,9 @@ $os = (($^O eq 'MSWin32' || $^O eq 'os2' || $^O eq 'dos')
        : ($^O eq 'MacOS'
 	  ? 'mac'
 	  : 'unix'));
+if (!defined $is_handheld) {
+    $is_handheld = $Config{"archname"} =~ /^arm-linux$/i;
+}
 $sfn    = 0; # short filenames (8.3)
 $win32s = 0; # Win32S
 $use_clipboard = 1 if $os eq 'win';
@@ -305,44 +240,8 @@ if ($os eq 'win') {
     require WinCompat;
 }
 
-if ($os eq 'unix') {
-    # Check for limited resources.
-    my $soft_data;
-    eval {
-	local $^W = 0;
-	require BSD::Resource; # can't be autoused
-	($soft_data) = BSD::Resource::getrlimit(&BSD::Resource::RLIMIT_DATA);
-	$soft_data /= 1024 if $soft_data != -1;
-    };
-    if ($@ && $^O =~ /bsd/) {
-	# There's a bug in freebsd4.3 limits issuing a warning. Ignore it.
-	open(L, "limits -d|");
-	while(<L>) {
-	    if (/datasize(?:-cur)?\s+(\d+)/) {
-		$soft_data = $1;
-		last;
-	    }
-	}
-	close L;
-    }
-    if (defined $soft_data &&
-	$soft_data != -1 &&
-	$soft_data < MINMEM) {
-	warn
-	  Mfmt("
-Achtung:
-
- Der frei verfügbare Speicherplatz ist durch resource limits auf %s kB
- eingeschränkt worden. Empfohlen sind %s kB. In der csh/tcsh kann
- man die Einschränkung mit `limit datasize unlimited' aufheben, in der sh/bash
- mit `ulimit -d %s`. Zusätzlich muss man evtl. seine Login-Klasse
- ändern oder die Werte in /etc/login.conf erhöhen.
-
- Siehe auch limits(1) und login.conf(5).
-
-", $soft_data, MINMEM, MINMEM);
-    }
-}
+## I don't think this is necessary anymore...
+#check_available_memory();
 
 # enable DnD
 use Tk::DropSite;
@@ -358,20 +257,17 @@ if (! -d $tmpdir) {
 # Var section: map scales and orientation
 set_landscape();
 $scale_coeff = 1;
-use vars qw($small_scale $medium_scale $small_scale_edit $medium_scale_edit);
 $small_scale  = 0.0625;    # map scale for overview window (region mode)
 $medium_scale = 0.13;      # map scale for overview window (city/Berlin mode)
-$small_scale_edit  = 0.2;         # dasselbe für den Edit-Mode XXX not yet
-$medium_scale_edit = 0.4;
+$small_scale_edit  = 0.01;         # dasselbe für den Edit-Mode XXX not yet
+$medium_scale_edit = 0.02;
 set_canvas_scale(DEFAULT_SCALE);
 Karte::preload('Standard');
 $init_scrollregion = $Karte::Standard::init_scrollregion;
 $normal_scrollregion = $init_scrollregion*$scale;
 @scrollregion = ((-$normal_scrollregion) x 2,
 		 ($normal_scrollregion)  x 2);
-use vars qw($zoomrect_after $showmark_after $bbbike_route_ext);
 $bbbike_route_ext = 'bbr';
-use vars qw(%active_speed_power);
 
 # Var section: street and point attributes
 $str_draw{'s'} = 1;      # draw streets by default
@@ -380,8 +276,7 @@ $p_draw{"pp-all"} = 0;   # pp drawing only for the tag types below:
 $p_draw{"pp-$_"} = 1 for qw(s l r b u w f v e z fz); # this list should cover most keys of %str_file (but not the dependent ones like "comm" or "qs")
 $p_draw{'lsa'} = 1;
 $p_far_away{'o'} = 0;
-use vars qw(%str_restrict %str_ignore);
-$str_restrict{'s'}  = {qw(BAB 0 B 1 HH 1 H 1 N 1 NN 1 Pl 0)}; # Pl = places
+$str_restrict{'s'}  = {qw(BAB 0 B 1 HH 1 H 1 N 1 NN 1 Pl 0 Br 0)}; # Pl = places, Br = bridges
 $str_restrict{'r'}  = {qw(RA 1 RB 1 RC 1 R 1 R0 0)};
 $str_restrict{'b'}  = {qw(S 1 SA 1 SB 1 SC 1 S0 0)};
 $str_restrict{'u'}  = {qw(U 1 UA 1 UB 1 U0 0)};
@@ -397,11 +292,16 @@ foreach (@Radwege::category_order) {
         if defined $Radwege::category_code{$_};
 }
 
-use vars qw(%tag_group);
 %tag_group = # group related tags (for stacking)
-  ('str_s' => ['s-out', 's-NN', 's-N', 's-H', 's-HH', 's-B', 's-BAB', 'comm', 'nl', 'qs', 'hs',
-	       's-label-bg', 's-label', 'hoehe', 'sperre', 'lsa-bg', 'lsa-fg'],
-   'str_l' => ['l-out', 'l', 'comm', 'ql', 'hl', 'l-label-bg', 'l-label'],
+  ('str_s' => ['s-out', 'rw',
+	       's-NN', 's-N', 's-H', 's-HH', 's-B', 's-BAB', 'comm',
+	       (map { "comm-$_" } @comments_types),
+	       'nl', 'qs', 'hs',
+	       's-label-bg', 's-label', 'hoehe', 'vf-bg', 'sperre',
+	       'delnet', 'pl-fg', 'lsa-bg', 'vf-fg', 'lsa-fg'],
+   'str_l' => ['l-out', 'l', 'comm',
+	       (map { "comm-$_" } @comments_types),
+	       'ql', 'hl', 'l-label-bg', 'l-label'],
    'p_o'   => ['o', 'O'],
    'p_p'   => ['p'],
    'str_u' => ['u', 'u-bg', 'u-fg', 'u-label'],
@@ -417,29 +317,18 @@ use vars qw(%tag_group);
    'e'     => ['e', 'e-img'],
   );
 $do_iconframe = 1;
-use vars qw(@route_strnames);
 $do_route_strnames          = 0 if !defined $do_route_strnames;
 $do_route_strnames_km       = 0 if !defined $do_route_strnames_km;
 $do_route_strnames_compact  = 0 if !defined $do_route_strnames_compact;
 $do_route_strnames_comments = 1 if !defined $do_route_strnames_comments;
-use vars qw($net_type);
 $net_type = "s";
 $no_make_net = 0;
 $str_far_away{'w'} = 0;
-use vars qw($place_category $orte_label_size);
 $orte_label_size = 1;
-use vars qw(%no_overlap_label %do_outline_text);
 $str_far_away{'l'} = 0;
-use vars qw($overview_top $overview_canvas $radar_image
-	    %overview_draw $show_overview $show_overview_mode);
 $show_overview_mode = "b";
 $show_overview = $show_strlist = 0;
-use vars qw($show_calories);
 $show_calories = 0;
-use vars qw(%choose_ort_cache @mouse_text $flat_relief @route_time
-	    @route_distance $use_hoehe $steigung_optimierung
-	    $grade_minimum_short $grade_minimum $grade_minimum_short_length
-	    $use_legend $use_legend_right $show_legend);
 $use_hoehe = 1; # XXX kann im Programm nicht gesetzt werden
 $steigung_optimierung = 0;
 $grade_minimum_short_length = 100; # 100m gilt als kurz für grademinimumshort
@@ -452,10 +341,8 @@ $sperre{'wegfuehrung'} = 1;
 $sperre{'Q3'} = 0;
 $p_draw{'sperre'} = 0;
 $sperre_file = "gesperrt";
-use vars qw(%immediate %pending);
 # immediate_replot: 0 = none, 1 = immediate, 2 = deferred
 my($immediate_replot, $immediate_recalc) = (1, 1);
-use vars qw(%tag_invisible $auto_visible %tag_visibility);
 $auto_visible = 1;
 %tag_visibility =
   ('p-hoehe'  => 1,
@@ -467,47 +354,18 @@ $auto_visible = 1;
    'str-s-H'  => 0.125,
    'p-o-2'    => 0.125,
   );
-use vars qw(@popup_style $focus_policy
-	    $escape $abortWWW
-	    $followmouse $followmouse_repeat
-	    $map_default_type
-	    $map_surround $dont_delete_map
-	    @special_lower %special_lower @special_raise %special_raise
-	    $str_file $landstr_file $wasser_file $flaechen_file
-	    $plz_file $border_file %obst_file);
 $map_draw = 0;
 $map_default_type = 'berlinmap';
 $map_surround = 0;
-$dont_delete_map = 0;
+$dont_delete_map = 1;
 $str_file = "strassen";
 $landstr_file = "landstrassen";
 $wasser_file = "wasserstrassen";
 $flaechen_file = "flaechen";
 $plz_file = "plz";
 $border_file = "berlin";
-use vars qw($last_loaded_menu $last_loaded_obj $last_loaded_layers_obj
-	    $coord_output $coord_output_sub);
 $coord_prefix = 0;
-# %old_mtime: last modification time
-# %mtime_file_type: Zuordung der old_mtime-Dateien zu str/p-Werten
-use vars qw(%old_mtime %mtime_file_type $coordlist_lbox $coordlist_lbox_nl);
 $coordlist_lbox_nl = "";
-# $hs_check: checkbutton für Haltestellen
-# $plzmcmd: Menüpunkt für PLZ-Auswahl
-# $set_mode: evtl. durch $edit_mode ersetzen
-use vars qw($hs_check $plzmcmd $ampelstatus_label
-	    $windrose_button
-	    $cache_decider_time $min_cache_decider_time $use_smooth_scroll
-	    $use_balloon $use_c_balloon $c_balloon_wait
-	    $balloon $c_balloon $ch
-	    $map_color $steady_mark $lowmem $slowcpu
-	    $use_contexthelp $use_logo $use_dialog
-	    $center_on_str $center_on_coord
-	    $center_loaded_route $zoom_loaded_route
-	    $zoom_new_route $zoom_new_route_chooseort
-	    $set_mode
-	    $ps_image_res $point_editor $info_text
-	    $mark_color $initial_plugins $initial_layers);
 $min_cache_decider_time = 0.500; # 500ms, dann wird gecached
 $steady_mark = 0;
 $lowmem = 0;
@@ -527,20 +385,13 @@ $b2_mode = B2M_FASTSCAN;
 		);
 # Default ist rot, weil das Orange von power oder wind schlecht zu erkennen ist
 $mark_color    = 'red'; # Farbe der Markierung in mark_street et al.
-use enum qw(:EXPORT_TXT_ FULL SIMPLIFY_NAME SIMPLIFY_ANGLE SIMPLIFY_NAME_OR_ANGLE SIMPLIFY_AUTO);
-use vars qw($export_txt_mode $export_txt_min_angle);
+$gps_waypoints = 50;
 
 define_item_attribs();
 
 generate_plot_functions();
 
 ###################################################################
-use vars qw($www_is_slow $do_www $really_no_www $no_map
-	    %save_route $multistrassen
-	    @coords @names @rbahn_coords
-	    $abbiege_optimierung $abbiege_penalty
-	    $ampel_optimierung $lost_strecke_per_ampel
-	    $lost_time_per_ampel $average_v $beschleunigung);
 #$really_no_www = $win32s; # Trumpet hängt zu lange
 $really_no_www = $os eq 'win'; # Trumpet und Win32Sock hängen zu lange, wenn es keine Verbindung gibt
 $no_map = !$devel_host && (!defined $ENV{USER} || $ENV{USER} !~ /^(eserte|rezic|srezic)$/);
@@ -556,34 +407,23 @@ $lost_strecke_per_ampel = 50; # verlorene Strecke pro Ampel in m
 $lost_time_per_ampel = 15; # verlorene Zeit pro Ampel in s
 $average_v = 0;
 
-use vars qw($qualitaet_s_optimierung %qualitaet_s_speed
-	    $qualitaet_s_net);
-
-use vars qw($handicap_s_optimierung %handicap_s_speed
-	    $handicap_s_net);
-
-use vars qw($radwege_optimierung $radwege_net %radwege_speed);
 $radwege_optimierung = 0;
 for(0..$#Radwege::category_order) {
     $radwege_speed{"RW$_"} = 100;
 }
 
-use vars qw($strcat_optimierung $strcat_net %strcat_speed %strcat_bez);
 %strcat_bez =
-  (B  => M"Bundesstraßen",
-   HH => M"wichtige Hauptstraßen",
+  (
    #BAB => M"Autobahnen",
+   B  => M"Bundesstraßen",
+   HH => M"wichtige Hauptstraßen",
    H  => M"Hauptstraßen",
    N  => M"Nebenstraßen",
    NN => M"für Kfz gesperrte Straßen",
   );
+@strcat_order = (#"BAB",
+		 qw(B HH H N NN));
 
-use vars qw($steigung_net %steigung_penalty_env $steigung_penalty
-	    @inslauf_selection @ext_selection
-	    $strecke $dim_color $unit_km
-	    $bikepwr @bikepwr_all_time @bikepwr_time @bikepwr_cal
-	    $power_cache $next_is_undo
-	    %do_flag);
 $steigung_penalty = {};
 $strecke = 0;
 $dim_color = '#999999';
@@ -592,8 +432,6 @@ $next_is_undo = 0;
 # kontrolliert das Zeichnen der Start/Zielflagge:
 @do_flag{qw(start via ziel)} = (1, 1, 1);
 # $in_search: wahr, wenn gerade gesucht wird
-use vars qw(@search_route_points $search_route_flag $in_search
-	    $show_grade);
 
 use enum qw(:SRP_ COORD TYPE);
 
@@ -614,8 +452,6 @@ $wetter_station = 'uptodate' if !defined $wetter_station;
    'dahlem2'   => M"Dahlem (FU, kurz)",
    #'tempelhof' => M"Tempelhof (DWD)",
   );
-use vars qw(%wetter_full $temperature %wind_colors $stderr
-	    $geometry $scaling $visual @max_extends);
 %wetter_full = ('dahlem1' => 1);
 $temperature = 20; # Grad Celsius
 init_wind();
@@ -630,20 +466,16 @@ use enum qw(:WIND_COLOR_ RED GREEN BLUE NAME);
 	       );
 
 ### Fonts
-use vars qw(%font @font $font_family $fixed_font_family $font_size $font_weight
-	    $standard_height $use_font_rot);
 $standard_height = 12;
 
-### Postscript
-use vars qw($ps_rotate $print_cmd $gv_reuse $ps_color $ps_scale_a4);
 ## DEBUG_BEGIN
 #BEGIN{mymstat("use vars für postscript...");}
 ## DEBUG_END
+### Postscript
 $ps_color    = 'color';
 $ps_rotate      = 1;
 $ps_scale_a4 = 1;
 
-use vars qw($nr $cache_root $use_wwwcache);
 $nr = -1;
 {
     my $cachedir = catfile($FindBin::RealBin, "cache");
@@ -653,7 +485,6 @@ $nr = -1;
     $Karte::cache_root = $cache_root;
 }
 
-use vars qw($map_img @map_surround_img $do_wwwmap);
 Karte::preload('Berlinmap2000');
 $do_wwwmap = (! $Karte::Berlinmap2000::obj ||
 	      ! -e $Karte::Berlinmap2000::obj->fs_dir);
@@ -664,7 +495,6 @@ if ($devel_host) {
 if (!$ENV{HOME} || !-d $ENV{HOME}) { # z.B. unter Win32
     $ENV{HOME} = $FindBin::RealBin;
 }
-use vars qw($bbbike_configdir $bbbike_routedir $oldpath $save2_path);
 if ($os eq 'win') {
     require Win32Util;
     my $home = Win32Util::get_user_folder();
@@ -703,8 +533,6 @@ eval { local $SIG{'__DIE__'};
 #BEGIN{mymstat("before getopt BEGIN");} mymstat("before getopt");
 ## DEBUG_END
 
-# $opt: Tk::Getopt object
-use vars qw($opt $preload_file @opttable @getopt);
 @opttable =
   (M"Strecken/Punkte",
    ['','',M"Strecken und Punkte, die beim Start von BBBike\ngezeichnet werden sollen."],
@@ -773,6 +601,8 @@ use vars qw($opt $preload_file @opttable @getopt);
     label => M"R-Bahnnetz",	var => sub { $net_type = "r" }],
    ['usbahnetz','!',undef, nogui => 1,
     label => M"U/S-Bahnnetz",	var => sub { $net_type = "us" }],
+   ['bahnnetz','!',undef, nogui => 1,
+    label => M"Gesamtes Bahnnetz", var => sub { $net_type = "rus" }],
    ['scope','=s',undef,
     label => M"Scope", var => \$init_scope,
     choices => ["", qw/city region jwd/]],
@@ -857,7 +687,7 @@ use vars qw($opt $preload_file @opttable @getopt);
     label => M"Handheld", var => \$is_handheld],
 
    M"GUI",
-   ['menu|standardmenu','!',1,
+   ['menu','!',1, # XXX hier stand mal "menu|stdmenu|standardmenu" => aber Aliase werden anscheinend von Tk::GetOpt nicht unterstützt?!
     label => M"Standard-Menü", var => \$standard_menubar],
    ['balloon','!',1,
     label => M"Balloons", var => \$use_balloon],
@@ -976,6 +806,32 @@ use vars qw($opt $preload_file @opttable @getopt);
    ['proxy','=s',undef,
     label => M"HTTP-Proxy (Format: http://host:port/)", var => \$proxy],
 
+   M"GPS",
+   ['exporttxtmode','=i',EXPORT_TXT_SIMPLIFY_AUTO,
+    label => M"Export-Format bei Routen",
+    longhelp => EXPORT_TXT_FULL.":".M("Komplette Route")."\n".
+                EXPORT_TXT_SIMPLIFY_NAME.":".M("Unterschiedliche Straßennamen")."\n".
+                EXPORT_TXT_SIMPLIFY_ANGLE.":".M("Abbiegevorgänge")."\n".
+                EXPORT_TXT_SIMPLIFY_NAME_OR_ANGLE.":".M("Abbiegevorgänge/unterschiedliche Straßennamen")."\n".
+                EXPORT_TXT_SIMPLIFY_AUTO.":".M("automatisch")."\n".
+                '',
+    choices => [EXPORT_TXT_FULL,EXPORT_TXT_SIMPLIFY_NAME,
+		EXPORT_TXT_SIMPLIFY_ANGLE,EXPORT_TXT_SIMPLIFY_NAME_OR_ANGLE,
+		EXPORT_TXT_SIMPLIFY_AUTO], # XXX better choices
+    var =>  \$export_txt_mode],
+   ['exporttxtminangle','=s',30,
+    label => M"Minimalwinkel bei Route-Export",
+    longhelp => "Minimalwinkel in Grad bei (GPS-)Export von Routen\n",
+    var => \$export_txt_min_angle],
+   ['gpswaypoints','=i',50,
+    label => M"Maximale Anzahl der GPS-Waypoints",
+    longhelp => "Moderne Garmin-Geräte können 50 Waypoints pro Route verwenden,\nwährend ältere nur 20 Waypoints laden können\n",
+    var => \$gps_waypoints,
+   ],
+   ['gpsdevice','=s','/dev/cuaa0', # XXX anderer Default für andere Systeme
+    #XXX check: subtype => 'file',
+    label => M"GPS-Device", var => \$gps_device],
+
    M"Sonstiges",
    ['kde','!',undef,
     label => M"Für KDE optimieren", var => \$run_under_kde],
@@ -1007,26 +863,6 @@ speicherplatzsparender.",
     label => M"Palm-Doc-Format", var => \$palm_doc_format],
    ['usexwd','!',undef,
     label => M"xwd als Screengrabber", var => \$use_xwd_if_possible],
-   ['', '', '-'],
-   ['exporttxtmode','=i',EXPORT_TXT_SIMPLIFY_AUTO,
-    label => M"Export-Format bei Routen",
-    longhelp => EXPORT_TXT_FULL.":".M("Komplette Route")."\n".
-                EXPORT_TXT_SIMPLIFY_NAME.":".M("Unterschiedliche Straßennamen")."\n".
-                EXPORT_TXT_SIMPLIFY_ANGLE.":".M("Abbiegevorgänge")."\n".
-                EXPORT_TXT_SIMPLIFY_NAME_OR_ANGLE.":".M("Abbiegevorgänge/unterschiedliche Straßennamen")."\n".
-                EXPORT_TXT_SIMPLIFY_AUTO.":".M("automatisch")."\n".
-                '',
-    choices => [EXPORT_TXT_FULL,EXPORT_TXT_SIMPLIFY_NAME,
-		EXPORT_TXT_SIMPLIFY_ANGLE,EXPORT_TXT_SIMPLIFY_NAME_OR_ANGLE,
-		EXPORT_TXT_SIMPLIFY_AUTO], # XXX better choices
-    var =>  \$export_txt_mode],
-   ['exporttxtminangle','=s',30,
-    label => M"Minimalwinkel bei Route-Export",
-    longhelp => "Minimalwinkel in Grad bei (GPS-)Export von Routen\n",
-    var => \$export_txt_min_angle],
-   ['gpsdevice','=s','/dev/cuaa0', # XXX anderer Default für andere Systeme
-    #XXX check: subtype => 'file',
-    label => M"GPS-Device", var => \$gps_device],
 
    M"Advanced",
    ['edit','=s',undef,	alias => [qw(mode)],
@@ -1070,6 +906,7 @@ speicherplatzsparender.",
 	}
 	exit(0);
     }],
+   ['nosplash','!',undef, nogui => 1], # pseudo option, handled at BEGIN
   );
 
 eval {
@@ -1267,7 +1104,6 @@ if (defined $init_scope) {
     elsif ($init_scope eq 'jwd')    { jwd_settings() }
 }
 
-use vars qw(@extra_args);
 if ($visual) {
     push(@extra_args, -visual => $visual);
 }
@@ -1327,7 +1163,7 @@ if (!defined $top) {
 	$top->optionAdd("*$_.background", '#C0C080', 'startupFile');
     }
     # Browse is for Tk::HistEntry::Browse
-    for (qw(Browse Entry NumEntry Listbox KListbox K2Listbox
+    for (qw(Browse Entry NumEntry PathEntry Listbox KListbox K2Listbox
 	    TixHList HList Text ROText BrowseEntry.Entry SimpleHistEntry)) {
 	$top->optionAdd("*$_.background", "grey95", "startupFile");
     }
@@ -1400,79 +1236,16 @@ if (@ARGV) {
 
 # Die folgende Reihenfolge ist wichtig einzuhalten:
 # * Geometry ermitteln und in @want_extends ablegen, aber noch nicht setzen
+#   (set_default_geometry, geometry_dependent_settings)
 # * Zeichensätze ermitteln und Default einstellen (set_fonts)
 # * EmptyMenubar zeichnen
 # * Geometry setzen
 
 use enum qw(:GEOMETRY_ X Y WIDTH HEIGHT);
 
-if (defined $Plugin::brinfo{x_len} and
-	 defined $Plugin::brinfo{y_len}) {
-    $top->geometry($Plugin::brinfo{x_len} . "x" . $Plugin::brinfo{y_len});
-} else {
-    if ($geometry) {
-	@want_extends = parse_geometry_string($geometry);
-	if (!$want_extends[GEOMETRY_WIDTH] || !$want_extends[GEOMETRY_HEIGHT]) { # test on 0 or undef
-	    ($want_extends[GEOMETRY_WIDTH], $want_extends[GEOMETRY_HEIGHT]) =
-		($top->screenwidth, $top->screenheight);
-	}
-	if (!defined $want_extends[GEOMETRY_X] || !defined $want_extends[GEOMETRY_Y]) {
-	    ($want_extends[GEOMETRY_X], $want_extends[GEOMETRY_Y]) = (0, 0);
-	}
-    } else {
-	@want_extends = (0, 0, $top->screenwidth, $top->screenheight);
-    }
-    if ($kde) {
-	@max_extends = $kde->client_window_region();
-    } elsif ($os eq 'win') {
-	@max_extends = Win32Util::client_window_region($top);
-    } else {
-	if ($top->property("exists", "_NET_CURRENT_DESKTOP", "root") &&
-	    $top->property("exists", "_NET_WORKAREA", "root")) {
-	    (undef, my $desktop) = $top->property("get", "_NET_CURRENT_DESKTOP", "root");
-	    if (defined $desktop) {
-		my @vals = ($top->property("get", "_NET_WORKAREA", "root"))[$desktop*4+1 .. $desktop*4+4];
-		if (@vals && defined $vals[0]) {
-		    @max_extends = @vals;
-		}
-	    }
-	    @max_extends[2]-=10; # XXX
-	    @max_extends[3]-=24;
-	}
-    }
-    if (!@max_extends) {
-	# XXX guess width/height of wm borders and title bar
-	@max_extends = (0, 0, $top->screenwidth-10, $top->screenheight-24);
-    }
-    if ($exceed) {
-	$max_extends[GEOMETRY_HEIGHT] -= 35; # possible task bar --- but what to do if the taskbar is not at the standard location or has more than one row?
-    }
-
-    crop_geometry(\@want_extends, \@max_extends);
-}
-
-if (!defined $is_handheld) {
-    $is_handheld = $Config{"archname"} =~ /^arm-linux$/i;
-}
-
-# after geometry processing
-{
-    my $win_width = @want_extends ? $want_extends[GEOMETRY_WIDTH] : $top->width;
-    my $win_height = @want_extends ? $want_extends[GEOMETRY_HEIGHT] : $top->height;
-    if ($win_width <= 320 || $win_height <= 320 || $is_handheld) {
-	$small_icons = 1;
-	$standard_menubar = 0;
-	set_canvas_scale(DEFAULT_SMALL_SCALE);
-    }
-    if ($is_handheld) {
-	$use_balloon = 0;
-	$use_c_balloon = 0;
-	$use_contexthelp = 0;
-	$right_is_popup = 0;
-	$followmouse = 0;
-	$b2_mode = B2M_NONE;
-    }
-}
+# Geometry
+set_default_geometry();
+geometry_dependent_settings();
 
 # Zeichensätze
 set_fonts();
@@ -1522,7 +1295,6 @@ $top_dpmm = $top->screenwidth/$top->screenmmwidth;
 $top_dpi  = $top_dpmm*25.4;
 $ps_image_res = int($top_dpi) . "x" . int($top_dpi);
 
-use vars qw($srtbike_icon $srtbike_photo);
 $srtbike_photo = load_photo($top, 'srtbike_solid.' . $default_img_fmt);
 if ($os eq 'win') {
     # XXX should I use 16 too?
@@ -1552,7 +1324,6 @@ $top->Icon(-image => $srtbike_icon) if defined $srtbike_icon;
 #$Tk::strictMotif = 1;
 
 # Exceed-Bug
-use vars qw($capstyle_round);
 $capstyle_round = ($exceed ? "projecting" : "round");
 
 #XXX
@@ -1567,8 +1338,10 @@ for(my $i=0; $i <= $#power; $i++) {
 mk_power_txt();
 
 # Zeichensätze für Straßennamen
-use vars qw($rot_font_sub $rot_bold_font_sub);
 if ($font_family =~ /nimbus/) {
+    # XXX nimbus is a rather obscure font found in
+    # /usr/ports/x11-fonts/freefonts --- maybe use another?
+    #
     # somewhere called "nimbus sans" without "l"
     $rot_font_sub  = sub { "-*-nimbus sans l-medium-r-condensed--0-" . $_[0]
 			       . "-0-0-p-0-iso8859-1"};
@@ -1593,7 +1366,6 @@ if (!$rot_bold_font_sub) {
     $rot_bold_font_sub  = sub { "-*-$font_family-bold-r-normal--0-" . $_[0]
 				  . "-0-0-p-0-iso8859-1"};
 }
-use vars qw(%category_rot_font);
 %category_rot_font =
   ('N'   => $rot_font_sub,
    'NN'  => $rot_font_sub,
@@ -1663,8 +1435,7 @@ if (!defined $balloon) {
 
 # XXX if !perl2exe
 if (!$lowmem) {
-    eval q{require Tk::CanvasBalloon};
-    if (!$@) {
+    if (eval { require Tk::CanvasBalloon; 1 }) {
 	$c_balloon = $top->CanvasBalloon(-initwait => $c_balloon_wait,
 					 -show => $use_c_balloon);
     }
@@ -1676,10 +1447,10 @@ if (!$lowmem) {
 
 TRY: {
     last TRY unless $use_contexthelp;
-    eval { require Tk::ContextHelp;
-	   Tk::ContextHelp->VERSION(0.05); # Win32 check
-       };
-    if ($@) {
+    if (!eval {
+	require Tk::ContextHelp;
+	Tk::ContextHelp->VERSION(0.05); # Win32 check
+    }) {
 	$use_contexthelp = 0;
 	last TRY;
     }
@@ -1700,7 +1471,6 @@ if (!defined $ch) {
 #BEGIN{mymstat("after contexthelp BEGIN");} mymstat("after contexthelp");
 ## DEBUG_END
 
-use vars qw($frame $ctrl_frame);
 $frame = $top->Frame;
 $frame->pack(-side => "top", -expand => "yes", -fill => "both");
 $ctrl_frame = $frame->Frame->pack(-anchor => 'w', -fill => 'x');
@@ -1751,7 +1521,6 @@ if (!$small_icons) {
 
 #XXXXXXXXXXXXXXXXX Ab hier POD attaches Msg-tauglich machen
 $hslabel_frame->gridColumnconfigure(1, -weight => 1, -minsize => 10);
-use vars qw($hs_label $str_label);
 $hs_label = $hslabel_frame->Label
   (-textvariable => \$act_value{Haltestelle},
    -fg => $dim_color,
@@ -2121,7 +1890,6 @@ $check_sub{'p'} = sub { plot('p','p') };
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before do_iconframe BEGIN");} mymstat("before do_iconframe");
 ## DEBUG_END
-use vars qw($misc_frame $misc_frame2 $DockFrame $Checkbutton $Radiobutton);
 $DockFrame = 'Frame';
 
 # use FlatCheckbox or not?
@@ -2410,7 +2178,6 @@ sub do_iconframe {
 		       );
     my $fragezeichen_check_index;
     if ($advanced and $devel_host) {
-	$str_file{'fz'} = "$FindBin::RealBin/misc/fragezeichen";
 	$strcm->checkbutton(-label => M"Fragezeichen",
 			    -variable => \$str_draw{'fz'},
 			    -command => sub { plot('str','fz') },
@@ -2919,7 +2686,7 @@ sub do_iconframe {
 			  -variable => \$dont_delete_map,
 			 );
 	$kcm->command(-label => M"Karten löschen",
-		      -command => \&delete_berlinmap,
+		      -command => \&delete_map,
 		     );
 	$kcm->separator;
 	foreach my $color ([M"Farbe (Photo)", 'color'],
@@ -3067,7 +2834,7 @@ sub do_iconframe {
     $sbm->command(-label => M"Route aktualisieren",
 		  -command => \&redraw_path);
     $sbm->command(-label => M"Suche wiederholen",
-		  -command => \&re_search);
+		  -command => \&re_search_gui);
     $sbm->command(-label => M"Rückweg",
 		  -command => \&way_back_gui);
     $sbm->command(-label => M"Register",
@@ -3261,7 +3028,12 @@ sub do_iconframe {
 		      -variable => \$qualitaet_s_optimierung,
 		     );
     $sb2m->checkbutton(-label => M"Straßenkategorie-Optimierung",
-		      -variable => \$strcat_optimierung,
+		       -variable => \$strcat_optimierung,
+		       -command => sub {
+			   if ($strcat_optimierung) {
+			       $N_RW_optimization = 0;
+			   }
+		       },
 		     );
     $sb2m->checkbutton(-label => M"Optimierung der sonstigen Behinderungen",
 		      -variable => \$handicap_s_optimierung,
@@ -3269,13 +3041,27 @@ sub do_iconframe {
     $sb2m->checkbutton(-label => M"Ampel-Optimierung",
 		      -variable => \$ampel_optimierung,
 		      -command => \&calc_ampel_optimierung,
-#XXX del:
-#		      ($advanced && $Tk::VERSION >= 800 ?
-#		       (-columnbreak => 1) : ()),
 		     );
     $sb2m->checkbutton(-label => M"Radwege-Optimierung",
-		      -variable => \$radwege_optimierung,
-		     );
+		       -variable => \$radwege_optimierung,
+		       -command => sub {
+			   if ($radwege_optimierung) {
+			       $N_RW_optimization = 0;
+			   }
+		       }
+		      );
+    $sb2m->checkbutton(-label => M"Hauptstraßen ohne Radwege meiden",
+		       -variable => \$N_RW_optimization,
+		       -command => sub {
+			   if ($N_RW_optimization) {
+			       $radwege_optimierung = 0;
+			       $strcat_optimierung = 0;
+			   }
+		       }
+		      );
+    $sb2m->checkbutton(-label => M"Grüne Wege bevorzugen",
+		       -variable => \$green_optimization,
+		      );
     $sb2m->checkbutton(-label => M"Steigungsoptimierung",
 		      -variable => \$steigung_optimierung,
 		     );
@@ -3330,9 +3116,7 @@ sub do_iconframe {
 	);
     if ($advanced) {
 	$slbm->command(-label => M"Ampeln an der aktuellen Route",
-		       -command => sub { require BBBikeEdit;
-					 ampeln_on_route(@realcoords);
-				     });
+		       -command => sub { ampeln_on_route(@realcoords) });
     }
     menuright($strlist_button, $slbm);
     menuarrow($slbmb, $slbm, $col, -menulabel => M"Routen~liste");
@@ -3479,7 +3263,6 @@ sub do_iconframe {
 		$args{-rotate} = -90 if $orientation eq 'portrait';
 
 	    } else {
-		require BBBikePrint;
 		$tmpfile = create_postscript($c,
 					     -colormode => 'color',
 					     -rotate => 1,
@@ -3694,11 +3477,24 @@ sub do_iconframe {
     my $opt_photo = load_photo($misc_frame2, 'opt.' . $default_img_fmt);
     my $opt_button = $misc_frame2->Button
       (image_or_text($opt_photo, 'Opt'),
-       -command => sub { $opt->option_editor
-			     ($top,
-			      ($transient ? (-transient => $top) : ()),
-			     )
-		       },
+       -command => sub {
+	   $opt->option_editor
+	       ($top,
+		($transient ? (-transient => $top) : ()),
+		(!defined $ENV{LANG} || $ENV{LANG} =~ /^de/ ?
+		 (-string => {optedit => "Options-Editor",
+			      undo => "Undo",
+			      lastsaved => "Zuletzt gespeichert",
+			      save => "Speichern",
+			      defaults => "Voreinstellungen",
+			      ok => "Ok",
+			      apply => "Anwenden",
+			      cancel => "Abbrechen",
+			      helpfor => "Hilfe für",
+			     }
+		 ) : ()),
+	       )
+	   },
       )->grid(-row => $curr_row, -column => $col, -sticky => 's');
     if (!$opt) {
 	$opt_button->configure(-state => 'disabled');
@@ -3890,8 +3686,7 @@ sub do_iconframe {
 #  		       },
 #  		      );
     if ($advanced) {
-	$opbm->checkbutton(-label => M"Status nach STDERR",
-			   -variable => \$stderr);
+	stderr_menu($opbm);
     }
     $opbm->checkbutton(-label => M"Wortreich (verbose)",
 		       -variable => \$verbose,
@@ -3939,7 +3734,7 @@ sub do_iconframe {
 		     Menu => $m,
 		     Title => main::M("Letzte Layer").":",
 		     Cb => sub { main::plot_additional_layer_s($_[0]) },
-		     Max => 4,
+		     Max => 8,
 		    };
 		main::load_last_loaded($main::last_loaded_layers_obj);
 		$w->{'job_done'} = 1;
@@ -4024,8 +3819,7 @@ sub do_iconframe {
 	}
 	$cusm->command(-label => M"Gpsman-Daten zeichnen",
 		       -command => sub {
-			   require BBBikeEdit;
-			   BBBikeEdit::draw_gpsman_data($top);
+			   draw_gpsman_data($top);
 		       });
 	$cusm->command(-label => M"GPS-Track-Animation",
 		       -command => sub {
@@ -4074,7 +3868,6 @@ sub do_iconframe {
     my $hpbm = $hpbmb->Menu(-title => M"Hilfe");
     $hpbm->checkbutton(-label => M"Legende",
 		       -command => sub {
-			   require BBBikePrint;
 			   toggle_legend($top, -realcanvas => $c);
 		       },
 		       -variable => \$show_legend,
@@ -4261,7 +4054,6 @@ $splash_screen->Update(0.3) if $splash_screen;
 ## DEBUG_BEGIN
 #mymstat("load photos");
 ## DEBUG_END
-use vars qw/%flag_photo/;
 $flag_photo{'start'}   = load_photo($top, 'flag2_bl.' . $default_img_fmt);
 $flag_photo{'via'}     = load_photo($top, 'flag_via.' . $default_img_fmt);
 $flag_photo{'ziel'}    = load_photo($top, 'flag_ziel.' . $default_img_fmt);
@@ -4282,7 +4074,6 @@ $inwork_photo          = load_photo($top, 'inwork.' . $default_img_fmt);
 $ferry_photo           = load_photo($top, 'ferry.' . $default_img_fmt);
 $ferry_klein_photo     = load_photo($top, 'ferry_klein.' . $default_img_fmt);
 
-use vars qw/$berlin_overview_photo/; # wird bei Bedarf nachgeladen
 my $linestip = eval { Tk::findINC('images/stip.xbm') };
 
 ##### configure Canvas/Scrollbars #####
@@ -4316,7 +4107,8 @@ my $sx = $canvas_frame->Scrollbar(-orient => "horiz",
 $c->configure(-yscrollcommand =>
 	      sub { $sy->set(@_);
 		    overview_update();
-		    if (defined &plotstr_on_demand and $str_draw_demand{'s'}) {
+		    if (defined &plotstr_on_demand
+			and $BBBikeExp::mode) {
 			my($x1,$y1,$x2,$y2) = $c->get_corners;
 			plotstr_on_demand(anti_transpose($x1,$y1),
 					  anti_transpose($x2,$y2));
@@ -4326,7 +4118,8 @@ $c->configure(-yscrollcommand =>
               -xscrollcommand =>
               sub { $sx->set(@_);
 		    overview_update();
-		    if (defined &plotstr_on_demand and $str_draw_demand{'s'}) {
+		    if (defined &plotstr_on_demand
+			and $BBBikeExp::mode) {
 			my($x1,$y1,$x2,$y2) = $c->get_corners;
 			plotstr_on_demand(anti_transpose($x1,$y1),
 					  anti_transpose($x2,$y2));
@@ -4361,8 +4154,6 @@ $sy->grid(-row => 0, -column => 1, -sticky => 'ns');
 $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
 
 ##### Statuszeile/Progress Bar #####
-use vars qw($status_label $edit_mode_type $edit_mode_indicator
-	    $indicator_frame);
 {
     my $status_frame = $frame->Frame(-height => 16)->pack(-fill => 'x');
     # XXX hmmm, das kriege ich nicht so gut hin....
@@ -4388,6 +4179,10 @@ use vars qw($status_label $edit_mode_type $edit_mode_indicator
     }
     $status_label = $status_frame->Label(-justify => 'left', -anchor => 'w')
       ->grid(-row => 0, -column => $gridx++, -sticky => 'ew');
+
+    $status_button_column = $gridx;
+    $status_button = $status_frame->Button(-padx => 0, -pady => 0); $gridx++; # do not map
+
     $indicator_frame = $status_frame->Frame
 	->grid(-row => 0, -column => $gridx++, -sticky => "ew");
     if ($advanced) {
@@ -4434,7 +4229,7 @@ read_ampeln() unless $lowmem;
 read_sperre_tragen() unless $lowmem;
 plot_sperre() if $p_draw{'sperre'};
 
-if ($net_type =~ /^(us|r)$/) {
+if ($net_type =~ /^(us|r|rus)$/) {
     make_net();
 }
 
@@ -4451,13 +4246,11 @@ $splash_screen->Update(0.7) if $splash_screen;
 
 set_bindings();
 
-use vars qw(%cursor %cursor_mask);
 foreach my $def (qw(start watch ziel addnet delnet info salesman xy
 		    movehand)) {
     load_cursor($def);
 }
 
-use vars qw(%busy_watch_args);
 if ($cursor{"watch"}) {
     $busy_watch_args{-cursor} = ['@' . $cursor{"watch"}, $cursor_mask{"watch"},
 				 'black', 'white'];
@@ -4472,7 +4265,7 @@ $last_loaded_obj =
      Menu => $last_loaded_menu,
      Title => M('Letzte Routen-Dateien').':',
      Cb => sub { load_save_route(0, $_[0]) },
-     Max => 4,
+     Max => 8,
     };
 load_last_loaded($last_loaded_obj);
 
@@ -4527,8 +4320,7 @@ if ($use_server and $os ne 'win') { # Win32 unterstützt kein fork etc.
 }
 
 if ($turbo) {
-    require BBBikeExp;
-    $str_draw_demand{'s'} = 1;
+    bbbikeexp_init();
 }
 
 if (defined $initial_plugins && $initial_plugins ne "") {
@@ -4551,6 +4343,73 @@ choose_streets()                            if $init_choose_street;
 MainLoop;
 
 ##### Subs ### RELOADER_START ############################################
+
+sub set_default_geometry {
+    if (defined $Plugin::brinfo{x_len} and
+	defined $Plugin::brinfo{y_len}) {
+	$top->geometry($Plugin::brinfo{x_len} . "x" . $Plugin::brinfo{y_len});
+    } else {
+	if ($geometry) {
+	    @want_extends = parse_geometry_string($geometry);
+	    if (!$want_extends[GEOMETRY_WIDTH] || !$want_extends[GEOMETRY_HEIGHT]) { # test on 0 or undef
+		($want_extends[GEOMETRY_WIDTH], $want_extends[GEOMETRY_HEIGHT]) =
+		    ($top->screenwidth, $top->screenheight);
+	    }
+	    if (!defined $want_extends[GEOMETRY_X] || !defined $want_extends[GEOMETRY_Y]) {
+		($want_extends[GEOMETRY_X], $want_extends[GEOMETRY_Y]) = (0, 0);
+	    }
+	} else {
+	    @want_extends = (0, 0, $top->screenwidth, $top->screenheight);
+	}
+	if ($kde) {
+	    @max_extends = $kde->client_window_region();
+	} elsif ($os eq 'win') {
+	    @max_extends = Win32Util::client_window_region($top);
+	} else {
+	    if ($top->property("exists", "_NET_CURRENT_DESKTOP", "root") &&
+		$top->property("exists", "_NET_WORKAREA", "root")) {
+		(undef, my $desktop) = $top->property("get", "_NET_CURRENT_DESKTOP", "root");
+		if (defined $desktop) {
+		    my @vals = ($top->property("get", "_NET_WORKAREA", "root"))[$desktop*4+1 .. $desktop*4+4];
+		    if (@vals && defined $vals[0]) {
+			@max_extends = @vals;
+		    }
+		}
+		$max_extends[2]-=10; # XXX
+		$max_extends[3]-=24;
+	    }
+	}
+	if (!@max_extends) {
+	    # XXX guess width/height of wm borders and title bar
+	    @max_extends = (0, 0, $top->screenwidth-10, $top->screenheight-24);
+	}
+	if ($exceed) {
+	    $max_extends[GEOMETRY_HEIGHT] -= 35; # possible task bar --- but what to do if the taskbar is not at the standard location or has more than one row?
+	}
+
+	crop_geometry(\@want_extends, \@max_extends);
+    }
+}
+
+
+# after geometry processing
+sub geometry_dependent_settings {
+    my $win_width = @want_extends ? $want_extends[GEOMETRY_WIDTH] : $top->width;
+    my $win_height = @want_extends ? $want_extends[GEOMETRY_HEIGHT] : $top->height;
+    if ($win_width <= 320 || $win_height <= 320 || $is_handheld) {
+	$small_icons = 1;
+	$standard_menubar = 0;
+	set_canvas_scale(DEFAULT_SMALL_SCALE);
+    }
+    if ($is_handheld) {
+	$use_balloon = 0;
+	$use_c_balloon = 0;
+	$use_contexthelp = 0;
+	$right_is_popup = 0;
+	$followmouse = 0;
+	$b2_mode = B2M_NONE;
+    }
+}
 
 sub define_item_attribs {
 # grey99 wird als Weiß-Ersatz verwendet (damit die Postscript-Umwandlung
@@ -4655,6 +4514,9 @@ sub define_item_attribs {
 	 'S2' => '#a000a0',
 	 'PI' => '#a000a0',
 	 'P0' => '#a000a0',
+
+	 'green1' => '#7fbb7f',
+	 'green2' => '#008b00',
 	);
     %category_font_color =
 	(
@@ -4674,7 +4536,6 @@ sub define_item_attribs {
 	 'Ae' => 'helvetica %d',
 	);
 
-    use vars qw($pp_color);
     $pp_color = '#008000';
 
     $category_color{'W1'} = $category_color{'W2'} = $category_color{'W'};
@@ -4727,6 +4588,9 @@ sub define_item_attribs {
     foreach (qw/gP gD/) {
 	$line_width{$_} = [@{ $line_width{"g"}}];
     }
+    foreach (@comments_types) {
+	$line_width{"comm-".$_} = [@{ $line_width{"comm"}}];
+    }
 
     %line_dash =
 	('qs'   => [5,2],
@@ -4743,6 +4607,10 @@ sub define_item_attribs {
     foreach (qw/gP gD/) {
 	$line_dash{$_} = [@{ $line_dash{"g"}}];
     }
+    foreach (@comments_types) {
+	$line_dash{"comm-".$_} = [@{ $line_dash{"comm"}}];
+    }
+
     %line_length =
 	('sperre1'  => [0, 0, 4, 5, 7, 10],
 	 'sperre2'  => [0, 0, 3, 4, 6, 8],
@@ -4751,14 +4619,20 @@ sub define_item_attribs {
     foreach (qw/sperre1s/) {
 	$line_length{$_} = [@{ $line_length{"sperre1"}}];
     }
+
     %line_arrow =
 	('P1' => 'last',
-	 'P2' => 'both',
+#	 'P2' => 'both',#XXX ohne Doppelpfeil besser?
 	 'S1' => 'last',
-	 'S2' => 'both',
+#	 'S2' => 'both',#XXX dito
 	 'S1,St' => 'last',
 	 'PI' => 'last',
 	 'P0' => 'last',
+	);
+    %line_shorten =
+	('P1' => 1,
+	 'P2' => 1,
+	 'P0' => 1,
 	);
     %category_size =
 	('N'  => 8,
@@ -4795,7 +4669,11 @@ sub define_item_attribs {
 	 'hl' => 'handicap_l',
 	 'nl' => 'nolighting',
 	 'comm' => 'comments',
+	 'fz' => "$FindBin::RealBin/misc/fragezeichen", # only for development
 	);
+    foreach my $type (@comments_types) {
+	$str_file{"comm-$type"} = "comments-$type";
+    }
     %p_file =
 	('lsa'    => 'ampeln',
 	 'u'      => 'ubahnhof',
@@ -4838,6 +4716,7 @@ sub define_item_attribs {
 	 'hl' => [M"Sonst. Behinderungen (Landstraße)", M"Sonst. Behinderungen (Landstraße)", 0],
 	 'nl' => [M"Unbeleuchtete Straße", M"Unbeleuchtete Straßen", 0],
 	 'comm' => [M"Kommentare", M"Kommentare", 0],
+	 # XXX specific comm types?
 	);
     %p_attrib =
 	('lsa'  => [M"Ampel",       M"Ampeln",       undef],
@@ -4847,7 +4726,7 @@ sub define_item_attribs {
 	 'o'    => [M"Ort",         M"Orte",         undef],
 	 'p'    => [M"Haltestelle", M"Haltestellen", undef],
 	 'obst' => [M"Obst",        M"Obst",         undef],
-	 'pl'   => [M"Platz",       M"Plätze",       undef],
+	 'pl'   => [M"Platz/Brücke",M"Plätze/Brücken",undef],
 	 'vf'   => [M"Vorfahrt",    M"Vorfahrt",     undef],
 	 'pp'   => [M"Kreuzung",    M"Kreuzungen",   undef],
 	 'kn'   => [M"Kneipe",      M"Kneipen",      undef],
@@ -4908,7 +4787,6 @@ sub define_item_attribs {
 	 'pflaume' => 'pflaume.' . $default_img_fmt,
 	);
 
-    use vars qw($xadd_anchor_type $yadd_anchor_type);
     # für Orte und Sonstiges
     $xadd_anchor_type->{'o'} = {'w' => 4, 'n' => 0, 'e' => -4, 's' => 0,
 				'nw' => 2, 'sw' => 2};
@@ -4931,22 +4809,24 @@ sub define_item_attribs {
     $yadd_anchor_type->{'v'} = {'w' => 0, 'n' => 8, 'e' => 0,  's' => -8,
 				'nw' => 5, 'sw' => -5};
 
-    use vars qw(@normal_stack_order @set_stack_order);
     # normale Reihenfolge für das Übereinanderlegen bei restack()
     #XXX labels sollten grundsätzlich immer oben sein. Problematisch bei tag_groups
     @normal_stack_order =
-	qw(map f w-out w i-out i e e-img
-	   gP gD z g
-	   s-out l-out rw s-NN s-N s-H s-HH s-B s-BAB l v
-	   f-label-bg w-label-bg f-label w-label
-	   s-label-bg s-label l-label-bg l-label
-	   u u-bg u-fg r b r-bg r-fg b-bg b-fg u-label r-label b-label
-	   hoehe sperre v-fg obst
-	   route
-	   comm qs hs ql hl nl delnet
-	   O o p pp pl-fg lsas lsas-t lsa-bg lsa-fg
-	   vf-bg vf-fg kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
-	   fz L pp-L L-img L-fg xxx pp-xxx xxx-img xxx-fg ovl gpsanimrect zoomrect);
+	(qw(map f w-out w i-out i e e-img
+	    gP gD z g gP gD
+	    s-out l-out rw s-NN s-N s-H s-HH s-B s-BAB l v
+	    f-label-bg w-label-bg f-label w-label
+	    s-label-bg s-label l-label-bg l-label
+	    u u-bg u-fg r b r-bg r-fg b-bg b-fg u-label r-label b-label
+	    hoehe vf-bg sperre v-fg obst
+	    route comm),
+	 (map { "comm-$_" } @comments_types),
+	 qw(qs hs ql hl nl delnet
+	    O o p pp pl-fg lsas lsas-t lsa-bg lsa-fg
+	    vf-fg kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
+	    fz L pp-L L-img L-fg xxx pp-xxx xxx-img xxx-fg ovl
+	    gpsanimrect zoomrect),
+	);
 }
 
 sub generate_plot_functions {
@@ -4955,12 +4835,23 @@ sub generate_plot_functions {
 	    my $ret = shift;
 	    my $strname = $ret->[Strassen::NAME];
 	    my @kreuzungen = @{$ret->[Strassen::COORDS]};
-	    my $category = $ret->[Strassen::CAT];
-	    return if defined $ignore and $category =~ /$ignore/;
-	    return if defined $restrict and $category !~ /$restrict/;
-	    my $this_color = $category =~ /^\#/ ? $category :
-		$category_color{$category} || $str_color{$abk} || 'white';
-	    my $this_width = $category_width{$category} || $default_width || 1;
+	    my $cat_hin = $ret->[Strassen::CAT];
+	    my $cat_rueck;
+	    if ($cat_hin =~ /^(.*);(.*)$/) {
+		($cat_hin, $cat_rueck) = ($1, $2);
+	    }
+	    return if defined $ignore and $cat_hin =~ /$ignore/;
+	    return if defined $restrict and $cat_hin !~ /$restrict/;
+	    my $this_color_hin = $cat_hin =~ /^\#/ ? $cat_hin :
+		$category_color{$cat_hin} || $str_color{$abk} || 'white';
+	    my $this_color_rueck = defined $cat_rueck ?
+		($cat_rueck =~ /^\#/ ? $cat_rueck :
+		 $category_color{$cat_rueck} || $str_color{$abk} || 'white') :
+		     'white';
+	    my $this_width_hin = $category_width{$cat_hin} || $default_width || 1;
+	    my $this_width_rueck = defined $cat_rueck ?
+		($category_width{$cat_hin} || $default_width || 1) :
+		    1;
 	    my @coordlist;
 	CROSSINGS_LOOP:
 	    foreach (@kreuzungen) {
@@ -4999,18 +4890,56 @@ sub generate_plot_functions {
 		}
 	    }
 	    if (@coordlist > 0) {
+		my $abk = $abk;
+		my($mx,$my);
+		my $image;
+		my $anchor = "c";
 
-		if ($category =~ /^F:(.*)$/) { # Fläche
+		if (exists $line_shorten{$cat_hin}) { # XXX no $cat_rueck handling
+		    line_shorten(\@coordlist);
+		}
+
+		my $sight_draw = sub {
+		    # speciality for sights: draw a star
+		    if (!defined $mx) {
+			if (@coordlist > 2) {
+			    ($mx,$my) = get_polygon_center(@coordlist);
+			}
+			if (!defined $mx) {
+			    ($mx,$my) = @coordlist[0,1];
+			}
+		    }
+		    if ($image) {
+			if (!$photo{$image}) {
+			    my $f = Tk::findINC("images/$image");
+			    if ($f) {
+				$photo{$image} = $c->Photo(-file => $f);
+			    } else {
+				warn "Can't find photo $image (1)";
+			    }
+			}
+			if ($photo{$image}) {
+			    $c->createImage($mx,$my,-image => $photo{$image},
+					    -anchor => $anchor,
+					    -tags => ["$abk-fg", $strname]);
+			} else {
+			    warn "No image for $image";
+			}
+		    } else {
+			$c->createImage($mx,$my,-image => $star_photo,
+					-tags => ["$abk-fg", $strname]);
+		    }
+		};
+
+		if ($cat_hin =~ /^F:(.*)$/) { # Fläche, no $cat_rueck handlin here
 		    my $item;
-		    my $abk = $abk;
-		    $category = $1;
+		    my $category = $1;
 		    my($color, $rest) = split(/\|/, $category);
-		    my($image, $stipple);
-		    my $anchor = "c";
+		    my $stipple;
 		    if (defined $rest && $rest ne "") {
-			if ($rest =~ /^IMG:([^|]+)(\|ANCHOR:([^|]+))?$/) {
+			if ($rest =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) {
 			    $image = $1;
-			    $anchor = $3 if $3;
+			    $anchor = $2 if $2;
 			} else {
 			    $stipple = $rest;
 			}
@@ -5049,7 +4978,6 @@ sub generate_plot_functions {
 			    );
 		    }
 
-		    my($mx,$my); # a little more global for performance
 		    if ($str_name_draw{$abk}) {
 			my($name, $add) = split(/\|/, $strname);
 			if ($add) {
@@ -5108,40 +5036,12 @@ sub generate_plot_functions {
 		    }
 
 		    if (($abk eq 'v' && $star_photo) || $image) {
-			# speciality for sights: draw a star
-			if (!defined $mx) {
-			    if (@coordlist > 2) {
-				($mx,$my) = get_polygon_center(@coordlist);
-			    }
-			    if (!defined $mx) {
-				($mx,$my) = @coordlist[0,1];
-			    }
-			}
-			if ($image) {
-			    if (!$photo{$image}) {
-				my $f = Tk::findINC("images/$image");
-				if ($f) {
-				    $photo{$image} = $c->Photo(-file => $f);
-				} else {
-				    warn "Can't find photo $image";
-				}
-			    }
-			    if ($photo{$image}) {
-				$c->createImage($mx,$my,-image => $photo{$image},
-						-anchor => $anchor,
-						-tags => ["$abk-fg", $strname]);
-			    } else {
-				warn "No image for $image";
-			    }
-			} else {
-			    $c->createImage($mx,$my,-image => $star_photo,
-					    -tags => ["$abk-fg", $strname]);
-			}
+			$sight_draw->();
 		    }
 
-		} elsif ($category =~ /^IMG:([^|]+)(\|ANCHOR:([^|]+))?$/) { # Bild
+		} elsif ($cat_hin =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) { # Bild, no $cat_rueck handling here
 		    my $img = $1;
-		    my $anchor = ($3 ? $3 : "c");
+		    my $anchor = ($2 ? $2 : "c");
 		    $img = Tk::findINC("data/$img");
 		    my $p = $c->Photo(-file => $img);
 		    # XXX this is leaking (photo never deleted...)
@@ -5153,67 +5053,132 @@ sub generate_plot_functions {
 						  "$abk-XXX", "$abk-" . ($i-1)],
 				       );
 		    } else {
-			warn "Can't find photo $img";
+			warn "Can't find photo $img (2)";
 		    }
 		} elsif ($use_stippleline == 1) { # old stipple code
+		    # XXX no $cat_rueck handling here (this code branch is anyway obsolete)
 		    # min. 4 Koordinaten erzwingen
 		    @coordlist == 2 && push(@coordlist, @coordlist);
 
 		    Tk::StippleLine::create
 		      ($c, @coordlist,
-		       -fill => $this_color,
-		       -width => $this_width,
+		       -fill => $this_color_hin,
+		       -width => $this_width_hin,
 		       -joinstyle => 'bevel',
 		       -tags => [$abk, $strname,
-				 "$abk-$category", "$abk-" . ($i-1)],
+				 "$abk-$cat_hin", "$abk-" . ($i-1)],
 		      );
 
 		} else {
 		    if (@coordlist == 2) {
+			# Points do not have $cat_rueck
+			if ($abk eq 'v') {
+			TRY_IMAGE: {
+				if ($cat_hin =~ /\|IMG:([^|]+)/) {
+				    $image = $1;
+				} elsif ($star_photo) {
+				    $image = undef; # default to $star_photo
+				} else {
+				    last TRY_IMAGE;
+				}
+				$sight_draw->();
+				return; # next loop
+			    }
+			}
+
 			# dicken Punkt zeichnen
 			$c->createLine(@coordlist, @coordlist,
-				       -fill => $this_color,
+				       -fill => $this_color_hin,
 				       -width => 5, # XXX skalieren
 				       -capstyle => 'round',
 				       -tags => [$abk, $strname,
-						 "$abk-$category", "$abk-" . ($i-1),
+						 "$abk-$cat_hin", "$abk-" . ($i-1),
 						 @extra_tags],
 				      );
 		    } else {
 			if ($str_outline{$abk}) {
+			    # XXX no $cat_rueck support yet for outlines
 			    $c->createLine
 			      (@coordlist,
 			       -fill      => $outline_color{$abk},
-			       -width     => $this_width+2,
+			       -width     => $this_width_hin+2,
 			       -joinstyle => 'bevel',
 			       -tags      => ["$abk-out",
-					      "$abk-$category-out"],
+					      "$abk-$cat_hin-out"],
                                ($use_stippleline ? (-dash => $line_dash{$abk}) : ()),
-			       (exists $line_arrow{$category} ? (-arrow => $line_arrow{$category}) : ()),
+			       (exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
 			      );
 			}
-			$c->createLine
-			  (@coordlist,
-			   -fill      => $this_color,
-			   -width     => $this_width,
-			   -joinstyle => 'bevel',
-			   -tags      => [$abk, $strname,
-					  "$abk-$category", "$abk-" . ($i-1),
-					 @extra_tags],
-                           ($use_stippleline ? (-dash => $line_dash{$abk}) : ()),
-			   (exists $line_arrow{$category} ? (-arrow => $line_arrow{$category}) : ()),
-			  );
+			if (defined $cat_rueck) {
+			    my %side_coordlist;
+			    for my $dir (1, -1) {
+				my($cl, $this_color, $this_width, $cat);
+				if ($dir == 1 && $cat_hin ne '') {
+				    $this_color = $this_color_hin;
+				    $this_width = $this_width_hin/2;
+				    $cat        = $cat_hin;
+				    $cl         = [@coordlist],
+				} elsif ($dir == -1 && $cat_rueck ne '') {
+				    $this_color = $this_color_rueck;
+				    $this_width = $this_width_rueck/2;
+				    $cat        = $cat_rueck;
+				    $cl         = [reverse @coordlist];
+				} else {
+				    next;
+				}
+				my $delta = -$this_width;
+warn "(@$cl, $this_color, $this_width, $cat) $delta $strname";
 
+				for(my $ii = 2; $ii < $#$cl; $ii+=2) {
+				    # atan2(y2-y1, x2-x1)
+				    my $alpha = atan2($cl->[$ii+1]-$cl->[$ii-1], $cl->[$ii]-$cl->[$ii-2]);
+				    my $beta  = $alpha - pi()/2;
+				    my($dx, $dy) = ($delta*cos($beta), $delta*sin($beta));
+				    $cl->[$ii] += $dx;
+				    $cl->[$ii+1] += $dy;
+				    if ($ii == 2) {
+					$cl->[0] += $dx;
+					$cl->[1] += $dy;
+				    }
+				}
+				$c->createLine
+				    (@$cl,
+				     -fill  => $this_color,
+				     -width => $this_width,
+				     -joinstyle => 'bevel',
+				     -tags  => [$abk, $strname,
+						"$abk-$cat", "$abk-" . ($i-1),
+						@extra_tags],
+				     ($use_stippleline ? (-dash => $line_dash{$abk}) : ()),
+				     #(exists $line_arrow{$cat} ? (-arrow => $line_arrow{$cat}) : ()),
+				     -arrow => "last",
+				    );
+			    }
+			} else {
+			    $c->createLine
+				(@coordlist,
+				 -fill      => $this_color_hin,
+				 -width     => $this_width_hin,
+				 -joinstyle => 'bevel',
+				 -tags      => [$abk, $strname,
+						"$abk-$cat_hin", "$abk-" . ($i-1),
+						@extra_tags],
+				 ($use_stippleline ? (-dash => $line_dash{$abk}) : ()),
+				 (exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
+				);
+			}
+
+			# no $cat_rueck support for names
 			if ($str_name_draw{$abk}
-			    && (($abk =~ /^[ls]/ && $category =~ /^[BH]/) || 0) # XXX nur Hauptstraßen zeichnen (wg. Performance und Übersichtlichkeit)
+			    && (($abk =~ /^[ls]/ && $cat_hin =~ /^[BH]/) || 0) # XXX nur Hauptstraßen zeichnen (wg. Performance und Übersichtlichkeit)
 			   ) {
 			    my $strname = Strassen::strip_bezirk($strname);
 			    Tk::RotFont::canvas
 			      ($c, $abk, \@coordlist,
-			       $category_rot_font{$category} || $rot_font_sub,
-			       $category_size{$category} || 10,
+			       $category_rot_font{$cat_hin} || $rot_font_sub,
+			       $category_size{$cat_hin} || 10,
 			       $strname,
-			       (defined $category_font_color{$category} ? (-fill => $category_font_color{$category}) : ()),
+			       (defined $category_font_color{$cat_hin} ? (-fill => $category_font_color{$cat_hin}) : ()),
 			      );
 			}
 			if ($str_nr_draw{$abk}) {
@@ -5236,16 +5201,8 @@ sub generate_plot_functions {
 	};
 EOF
 
-    $plotpoint_draw_sub = <<'EOF';
-	sub {
-	    my $ret = shift;
-	    my $category = $ret->[Strassen::CAT];
-	    return if defined $restrict and $category !~ /$restrict/;
-	    my $pointname = $ret->[Strassen::NAME];
-	    my $koord = $ret->[Strassen::COORDS][0]; # erste Koordinate
-#	    my($xx, $yy) = @{Strassen::to_koord1($koord)};
-	    my($xx,$yy);
-	    $_ = $koord;
+    # XXX maybe combine this code with parsing coords code in $plotstr_draw_sub
+    my $parse_coords_code = <<'EOF';
 	      TRY: {
 #XXX		    my($xx, $yy);
 		    if (!$edit_mode) {
@@ -5267,21 +5224,25 @@ EOF
 			last TRY;
 		    }
 		}
+EOF
 
-# 	    if ($edit_mode && $xx =~ /([A-Za-z])(-?\d+)$/) {
-# 		my $this_coordsys = (defined $1 ? $1 : '');
-# 		if ($this_coordsys ne $coordsys &&
-# 		    ($this_coordsys ne '' || $coordsys ne 'B')) {
-# 		    $xx = $2;
-# 		} else {
-# 		    return; # while
-# 		}
-# 	    }
+    $plotpoint_draw_sub = <<'EOF'
+	sub {
+	    my $ret = shift;
+	    my $category = $ret->[Strassen::CAT];
+	    return if defined $restrict and $category !~ /$restrict/;
+	    my $pointname = $ret->[Strassen::NAME];
+	    my $koord = $ret->[Strassen::COORDS][0]; # erste Koordinate
+	    my($xx,$yy);
+	    $_ = $koord;
+EOF
+    . $parse_coords_code . <<'EOF';
 	    my($x, $y) = transpose($xx, $yy);
 
-	    if ($category =~ /^IMG:([^|]+)/) {
+	    if ($category =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) {
 		my $photo = $1;
-		my $base = ($photo =~ m|/| ? $photo =~ /([^\/]+)$/ : $photo);
+		my $anchor = ($2 ? $2 : "c");
+		my($base) = ($photo =~ m|/| ? $photo =~ /([^\/]+)$/ : $photo);
 		$base = "p_$base";
 		my $images = ($top->{'MapImages'} ||= {});
 		my $p = $images->{$base};
@@ -5291,7 +5252,7 @@ EOF
 		    };
 		    if (!$p) {
 			eval {
-			    $c->Photo(-file => Tk::findINC($photo));
+			    $p = $c->Photo(-file => Tk::findINC($photo));
 			};
 			if (!$p) {
 			    eval {
@@ -5306,11 +5267,12 @@ EOF
 		}
 		if ($p) {
 		    $c->createImage($x, $y, -image => $p,
+				    -anchor => $anchor,
 				    -tags => ["$abk-img", "$xx,$yy", $pointname, ($abk =~ /^L\d+$/ ? ("L-fg") : ())],
 				   );
 		    return;
 		}
-		warn "Can't find image $photo";
+		warn "Can't find image $photo (3)";
 	    }
 
 	    if ($abk =~ /^[ubr]$/) {
@@ -5341,11 +5303,15 @@ EOF
 		   transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][1])}),
 		   transpose(@{Strassen::to_koord1($ret->[Strassen::COORDS][2])}));
 		my $len1 = Strassen::Util::strecke([$x1,$y1], [$x2,$y2]);
+		my $whole_len1 = $len1 > 20 ? 20 : $len1;
 		my $len2 = Strassen::Util::strecke([$x2,$y2], [$x3,$y3]);
+		my $whole_len2 = $len2 > 20 ? 20 : $len2;
 		my($cx1,$cy1,$cx2,$cy2,$cx3,$cy3)
-		  = (($x1-$x2)/$len1*20+$x2, ($y1-$y2)/$len1*20+$y2,
+		  = (($x1-$x2)/$len1*$whole_len1+$x2,
+		     ($y1-$y2)/$len1*$whole_len1+$y2,
 		     $x2,$y2,
-		     ($x3-$x2)/$len2*20+$x2, ($y3-$y2)/$len2*20+$y2,
+		     ($x3-$x2)/$len2*$whole_len2+$x2,
+		     ($y3-$y2)/$len2*$whole_len2+$y2,
 		    );
 		$c->createLine($cx1,$cy1,$cx2,$cy2,$cx3,$cy3,
 			       -tags => "$abk-bg");
@@ -5415,16 +5381,21 @@ EOF
 	};
 EOF
 
-    $plotorte_draw_sub = <<'EOF';
+    $plotorte_draw_sub = <<'EOF'
 	sub {
 	    my $ret = shift;
 	    my $cat = $ret->[Strassen::CAT];
 	    my($name, $add) = split(/\|/, $ret->[Strassen::NAME]);
-	    if ($ret->[Strassen::COORDS][0] =~ /(-?\d+),(-?\d+)/) {
-		my($x, $y) = ($1, $2);
-		my($tx, $ty) = $transpose->($x, $y);
+	    my($xx,$yy);
+	    $_ = $ret->[Strassen::COORDS][0];
+EOF
+    . $parse_coords_code . <<'EOF';
+#	    if ($ret->[Strassen::COORDS][0] =~ /(-?\d+),(-?\d+)/) {
+	    if (defined $xx) {
+#		my($x, $y) = ($1, $2);
+#		my($tx, $ty) = $transpose->($x, $y);
+		my($tx, $ty) = $transpose->($xx, $yy);
 		my $fullname = ($add ? $name . " " . $add : $name);
-		#XXX del: push @orte_coords, [$fullname, $x, $y];
 		return if ($place_category && $place_category ne "auto" && $cat < $place_category);
 		my $point_item;
                 if (!$municipality) {
@@ -5485,16 +5456,19 @@ sub set_bindings {
 	std_p_binding($_);
     }
 
-    foreach (qw(s S l L u b r f v v-fg w W i e comm qs hs ql hl fz xxx nl ovl)) {
+    foreach (qw(s S l L u b r f v v-fg w W i e comm),
+	     (map { "comm-$_" } @comments_types),
+	     qw(qs hs ql hl fz xxx nl ovl)) {
 	std_str_binding($_);
     }
 
-    # XXX ACK! some bindings are here and in std_p_binding, which cause
+    # XXX Some bindings are here and in std_p_binding, which cause
     # problems as both function set the <Leave> binding
-    foreach (qw(route lsa-bg lsa-fg
+    # XXX route: no!
+    foreach (qw(lsa-bg lsa-fg vf-bg vf-fg
 		s-label-bg s-label w-label-bg w-label f-label-bg f-label
 		l-label-bg l-label
-		u-label b-label r-label show)) {
+		u-label b-label r-label show O)) {
 	std_transparent_binding($_);
     }
     # spezielle Bindings für Routen
@@ -5511,14 +5485,6 @@ sub set_bindings {
 	     });
     $c->bind("delnet", "<Any-Leave>" => \&_restore_cursor);
 
-    ##XXX kann das hier weg? funktioniert all?
-    #  foreach (qw(p pp o lsa-bg lsa-fg s l
-    #  	    route u u-bg u-fg b b-bg b-fg r r-bg r-fg
-    #  	    O s-label l-label hoehe sperre delnet
-    #  	    u-label b-label r-label
-    #           comm qs hs ql hl fz L L-img L-fg xxx xxx-img xxx-fg
-    #  	    kn-fg ki-fg rest-fg show nl e e-img v v-fg
-    #  	   )) {
     foreach (qw(all)) {
 	$c->bind($_, "<ButtonPress-1>" => \&set_route_point);
     }
@@ -5560,11 +5526,16 @@ sub set_bindings {
 	$popup_menu = $c->Menu(-title => M"Kartenmenü",
 			       -tearoff => $Tk::platform eq 'unix');
 	# XXX evtl. zwischen undo/del wechseln
+	my $inx = $popup_menu->index("last")+1;
 	$popup_menu->command(-label => M"Route löschen",
-			     -command => \&delete_route,
+			     -command => sub { delete_route() },
+#XXX problems: "Route löschen" should be active as long as the first point
+# is set. Also, both toggle functions should probably replace the
+# non-toggle versions. Or just dump this feature into the trashcan.
+# -command => sub { delete_route_gui_toggle($inx) },
 			    );
 	$popup_menu->command(-label => M"Suche wiederholen",
-			     -command => \&re_search,
+			     -command => \&re_search_gui,
 			    );
 	$popup_menu->command(-label => M"Rückweg",
 			     -command => \&way_back,
@@ -5591,6 +5562,7 @@ sub set_bindings {
 			 }
 		     });
     }
+    $top->Advertise(PopupMenu => $popup_menu);
 
     my $alt_mouse1 = sub {
 	if ($map_mode eq MM_BUTTONPOINT) {
@@ -5646,6 +5618,10 @@ sub set_bindings {
     $top->bind('<Control-s>' => sub { load_save_route(1) });
     $top->bind('<Control-underscore>' => \&get_undo_route);
     $top->bind('<Control-z>' => \&get_undo_route);
+    $top->bind('<Control-f>' => sub {
+		   require BBBikeAdvanced;
+		   search_anything();
+	       });
 
     $top->bind("<Escape>" => sub { $escape = 1 });
     $top->bind('Busy', '<Escape>' => sub { $escape = 1; });
@@ -5665,8 +5641,11 @@ sub set_bindings {
 		   reload_new_modules();
 	       });
     $top->bind("<S>" => sub {
-		   require BBBikeExp;
-		   $str_draw_demand{'s'} = !$str_draw_demand{'s'};
+		   if ($BBBikeExp::mode) {
+		       bbbikeexp_clear();
+		   } else {
+		       bbbikeexp_init();
+		   }
 	       });
     $top->bind("<U>" => sub {
 		   $map_mode = MM_USEREDIT;
@@ -5675,12 +5654,7 @@ sub set_bindings {
     if ($Tk::platform ne 'MSWin32') {
 	$top->bind("<X>" => \&layer_editor);
     }
-
-    $top->bind("<E>" => sub {
-		   warn M"Plotting extra...";
-		   $str_draw{'E'} = 1 - $str_draw{'E'};
-		   plot('str','E', Filename => "/tmp/extra");
-	       });
+    $top->bind("<i>" => sub { show_info() });
 
     if (!$no_map) {
 	$top->bind('<Key-M>' => sub { $map_draw = 1; getmap() });
@@ -5771,10 +5745,12 @@ sub std_transparent_binding {
 		 if (defined $str && $str ne ''
 		     && defined $c_balloon
 		     && $use_c_balloon > 1) {
+		     # XXX before each $c_ballon->Popup should be this line (maybe move into sub?):
+		     if ($leave_after) { $leave_after->cancel; undef $leave_after }
 		     $c_balloon->Popup($str);
 		 }
 	     });
-    if (/^(show$|lsa-)/) { # XXX this special handling should go away
+    if ($_[0] =~ /^(show$|lsa-)/) { # XXX this special handling should go away
 	$c->bind($_[0], '<Any-Leave>'  => sub { &leavepoint;
 						&leavestr; } );
     } else {
@@ -5788,7 +5764,7 @@ sub freerec_sub {
     my($xx, $yy) = ($c->canvasx($e->x), $c->canvasy($e->y));
     require BBBikeAdvanced;
     buttonpoint(anti_transpose($xx, $yy));
-};
+}
 
 # freies Zeichnen von Punkten
 sub freedraw_sub {
@@ -5810,6 +5786,9 @@ sub freedraw_sub {
 	$search_route_flag = 'ziel_cont';
     }
     updatekm();
+    if (!$edit_mode) {
+	update_route_strname();
+    }
 }
 
 # Letzten Punkt löschen
@@ -5838,6 +5817,8 @@ sub change_net_type {
 	*set_coords = \&set_coords_rbahn;
     } elsif ($net_type eq "us") {
 	*set_coords = \&set_coords_usbahn;
+    } elsif ($net_type eq "rus") {
+	*set_coords = \&set_coords_bahn;
     } else {
 	*set_coords = \&set_coords_str;
     }
@@ -5862,11 +5843,9 @@ sub set_route_point {
 	    $point_editor->set($tags[1]);
 	}
     } elsif ($map_mode eq MM_INSERTPOINT) {
-	require BBBikeEdit;
-	BBBikeEdit::insert_point_from_canvas($c);
+	insert_point_from_canvas($c);
     } elsif ($map_mode eq MM_CREATERELATION) {
-	require BBBikeEdit;
-	BBBikeEdit::create_relation_from_canvas($c);
+	create_relation_from_canvas($c);
     } elsif ($map_mode eq MM_DRAG) {
 	$c->scan('mark', $e->x, $e->y);
     } elsif ($special_edit ne '') {
@@ -5874,35 +5853,37 @@ sub set_route_point {
 	die $@ if $@;
     } elsif ($map_mode eq MM_CUSTOMCHOOSE) {
 	$customchoosecmd->($c, $e);
-    } else {
+    } elsif ($map_mode eq MM_SEARCH) { # XXX doppelt
 	#XXX defined $search_route_flag && ????
-	if ($map_mode eq MM_SEARCH) { # XXX doppelt
-	    if (defined $search_route_flag &&$search_route_flag eq 'ziel_cont') {
-		search_route_mouse_cont();
-	    } elsif ($search_route_flag) {
-		search_route_mouse();
-	    }
-	    Tk->break; # XXX insert more Tk->break in this subroutine?
+	if (defined $search_route_flag && $search_route_flag eq 'ziel_cont') {
+	    search_route_mouse_cont();
+	} elsif ($search_route_flag) {
+	    search_route_mouse();
+	} else {
+	    warn "XXX activating....";
+	    $search_route_flag = "start";
+	    search_route_mouse();
 	}
-	if ($map_mode eq MM_BUTTONPOINT) {
-	    require BBBikeAdvanced;
-	    buttonpoint();
+	Tk->break; # XXX insert more Tk->break in this subroutine?
+    } elsif ($map_mode eq MM_BUTTONPOINT) {
+	require BBBikeAdvanced;
+	buttonpoint();
+	freedraw_sub($_[0]);
+    } elsif ($map_mode eq MM_INFO) {
+	show_info();
+    } elsif ($map_mode =~ /^BBBike/) {
+	my $itembutton_callback = $map_mode . '::itembutton';
+	if (defined &$itembutton_callback) {
+	    eval $itembutton_callback.'($c,$e)';
+	    die $@ if $@;
 	}
-	if ($map_mode eq MM_INFO) {
-	    show_info();
-	} elsif ($map_mode =~ /^BBBike/) {
-	    my $itembutton_callback = $map_mode . '::itembutton';
-	    if (defined &$itembutton_callback) {
-		eval $itembutton_callback.'($c,$e)';
-		die $@ if $@;
-	    }
-	} elsif ($map_mode eq MM_USEREDIT) {
-	    user_edit_street();
-	} elsif ($set_route_point{$map_mode}) {
-	    $set_route_point{$map_mode}->($e);
-	} elsif ($map_mode ne MM_SEARCH) {
-	    addpoint_inter();
-	}
+    } elsif ($map_mode eq MM_USEREDIT) {
+	user_edit_street();
+	Tk->break; # XXX insert more Tk->break in this subroutine?
+    } elsif ($set_route_point{$map_mode}) {
+	$set_route_point{$map_mode}->($e);
+    } elsif ($map_mode ne MM_SEARCH) {
+	addpoint_inter();
     }
 }
 
@@ -5938,275 +5919,6 @@ sub draw_street_numbers {
 	    }
 	}
     }
-}
-
-sub layer_editor {
-    require Tk::LayerEditorToplevel;
-    Tk::LayerEditorToplevel->VERSION(0.11);
-    # XXX max. 1 layereditor öffnen bzw. Änderungen per Hooks an andere
-    # editoren propagieren
-    my @elem;
-    my $reorder_elems = sub {
-	@elem = (
-		 {'Image' => $ampel_klein_photo,
-		  'Text'  => M"Ampeln",
-		  'Visible' => $p_draw{'lsa'},
-		  'Data' => {Group => '',
-			     Type  => 'p',
-			     Subtype => 'lsa',
-			    }
-		 },
-		 {'Image' => $search_photo,
-		  'Text'  => M"Route",
-		  'Visible' => (@realcoords > 0),
-		  'Data' => {Group => 'route',}
-		 },
-		 {'Image' => $strasse_photo,
-		  'Text'  => M"Straßen",
-		  'Visible' => $str_draw{'s'},
-		  'Data' => {Group => 'str_s',
-			     Type  => 's',
-			     Subtype => 's',
-			    }
-		 },
-		 {'Image' => $landstrasse_photo,
-		  'Text'  => M"Landstraßen",
-		  'Visible' => $str_draw{'l'},
-		  'Data' => {Group => 'str_l',
-			     Type => 's',
-			     Subtype => 'l',
-			    }
-		 },
-		 {'Image' => $ort_photo,
-		  'Text'  => M"Orte",
-		  'Visible' => $p_draw{'o'},
-		  'Data' => {Group => 'p_o',
-			     Type  => 'p',
-			     Subtype => 'o',
-			    }
-		 },
-		 {'Image' => $ubahn_photo,
-		  'Text'  => M"U-Bahn",
-		  'Visible' => $str_draw{'u'},
-		  'Data' => {Group => 'str_u',
-			     Type  => 's',
-			     Subtype => 'u',
-			    }
-		 },
-		 {'Image' => $sbahn_photo,
-		  'Text'  => M"S-Bahn",
-		  'Visible' => $str_draw{'b'},
-		  'Data' => {Group => 'str_b',
-			     Type => 's',
-			     Subtype => 'b',
-			    }
-		 },
-		 {'Image' => $rbahn_photo,
-		  'Text'  => M"Regionalbahn",
-		  'Visible' => $str_draw{'r'},
-		  'Data' => {Group => 'str_r',
-			     Type => 's',
-			     Subtype => 'r',
-			    }
-		 },
-		 {'Image' => $wasser_photo,
-		  'Text'  => M"Gewässser",
-		  'Visible' => $str_draw{'w'},
-		  'Data' => {Group => 'str_w',
-			     Type => 's',
-			     Subtype => 'w',
-			    }
-		 },
-		 {'Image' => $flaechen_photo,
-		  'Text'  => M"Flächen",
-		  'Visible' => $str_draw{'f'},
-		  'Data' => {Group => 'str_f',
-			     Type => 's',
-			     Subtype => 'f',
-			    }
-		 },
-		 {'Text'  => M"Grenzen von Berlin",
-		  'Visible' => $str_draw{'g'},
-		  'Data' => {Group => 'str_g',
-			     Type => 's',
-			     Subtype => 'g',
-			    }
-		 },
-		 {'Text'  => M"Grenzen von Potsdam",
-		  'Visible' => $str_draw{'gP'},
-		  'Data' => {Group => 'str_g',
-			     Type => 's',
-			     Subtype => 'gP',
-			    }
-		 },
-		 {'Text'  => M"Staatsgrenzen",
-		  'Visible' => $str_draw{'gD'},
-		  'Data' => {Group => 'str_g',
-			     Type => 's',
-			     Subtype => 'gD',
-			    }
-		 },
-		 {'Text'  => M"Kneipen etc.",
-		  'Visible' => $p_draw{'kn'},
-		  'Data' => {Group => 'p_kn',
-			     Type => 'p',
-			     Subtype => 'kn',
-			    }
-		 },
-		 {'Text'  => M"Sehenswürdigkeiten",
-		  'Visible' => $str_draw{'v'},
-		  'Data' => {Group => 'v',
-			     Type => 's',
-			     Subtype => 'v',
-			    }
-		 },
-		);
-	if ($advanced) {
-	    push @elem, {Image => undef,
-			 Text => 'XXX-s',
-			 Visible => $str_draw{'xxx'},
-			 Data => {Tag => 'xxx-s',
-				  Type => 's',
-				  Subtype => 'xxx',
-				 }
-			};
-	    push @elem, {Image => undef,
-			 Text => 'XXX-p',
-			 Visible => $p_draw{'xxx'},
-			 Data => {Tag => 'xxx-fg',
-				  Type => 'p',
-				  Subtype => 'xxx',
-				 }
-			};
-	    push @elem, {Image => undef,
-			 Text => 'pp',
-			 Visible => $p_draw{'pp'},
-			 Data => {Tag => 'pp',
-				  Type => 'p',
-				  Subtype => 'pp',
-				 }
-			};
-	    push @elem, {Image => undef,
-			 Text => '?',
-			 Visible => $str_draw{'fz'},
-			 Data => {Tag => 'fz',
-				  Type => 's',
-				  Subtype => 'fz',
-				 }
-			};
-	}
-	for my $i (1..100) {
-	    my $abk = "L$i";
-	    if ($str_draw{$abk} && defined $str_file{$abk}) {
-		push @elem, {Image => undef,
-			     Text => "Layer $abk (" .basename($str_file{$abk}).")",
-			     Visible => $str_draw{$abk},
-			     Data => {Tag => "$abk-s",
-				      Type => 's',
-				      Subtype => $abk,
-				     }
-			    };
-	    }
-	    if ($p_draw{$abk} && defined $p_file{$abk}) {
-		push @elem, {Image => undef,
-			     Text => "Layer $abk (" .basename($p_file{$abk}).")",
-			     Visible => $p_draw{$abk},
-			     Data => {Tags => ["$abk-fg", "$abk-img"],
-				      Type => 'p',
-				      Subtype => $abk,
-				     }
-			    };
-	    }
-	}
-
-	my $score = 0;
-	my %score;
-	foreach (reverse real_stack_order()) {
-	    $score{$_} = $score;
-	    $score++;
-	}
-	# using ST :-)
-	@elem = map { $_->[1] }
-	    sort { $a->[0] <=> $b->[0] }
-		map {
-		    if (exists $tag_group{$_->{Data}{Group}} &&
-			defined $tag_group{$_->{Data}{Group}} &&
-			exists $score{$tag_group{$_->{Data}{Group}}->[0]}
-		       ) {
-			[$score{$tag_group{$_->{Data}{Group}}->[0]}, $_]
-		    } else {
-			my $tag = ($_->{Data}{Tags}
-				   ? $_->{Data}{Tags}[0]
-				   : $_->{Data}{Tag});
-			[$score{$tag}, $_] # XXX oder 0?
-		    }
-		} @elem;
-    };
-    $reorder_elems->();
-
-    my $bbl = $top->LayerEditorToplevel
-	(-title => M"Layer-Editor",
-	 -closelabel => M"Schließen",
-	 -orderchange => sub {
-	     my $items = $_[1];
-	     foreach my $item (reverse @$items) {
-		 if (defined $item->{Data}{Group} && exists $tag_group{$item->{Data}{Group}}) {
-		     foreach (@{ $tag_group{$item->{Data}{Group}} }) {
-			 special_raise($_, 1);
-		     }
-		 } elsif (defined $item->{Data}{Tags}) {
-		     foreach (@{ $item->{Data}{Tags} }) {
-			 special_raise($_, 1);
-		     }
-		 } elsif (defined $item->{Data}{Tag}) {
-		     special_raise($item->{Data}{Tag}, 1);
-		 }
-	     }
-	     restack()
-	 },
-	 -visibilitychange => sub {
-	     my($w, $data, $vis) = @_;
-	     if ($data->{Group} eq 'route') {
-		 if ($vis) {
-		     # do nothing...
-		 } else {
-		     reset_button_command();
-		 }
-	     } else {
-		 eval "\$" . ($data->{Type} eq 's' ? 'str' : 'p') .
-		     '_draw{"' . $data->{Subtype} . '"} = ' .
-			 ($vis ? "1" : "0");
-		 warn __LINE__ . ": $@" if $@;
-		 if (exists $check_sub{$data->{Subtype}}) {
-		     $check_sub{$data->{Subtype}}->();
-		 } else {
-		     if ($data->{Type} eq 'p') {
-			 plot('p',$data->{Subtype});
-		     } else {
-			 plot('str',$data->{Subtype});
-		     }
-		 }
-	     }
-	 },
-	 -transient => $top,
-	);
-    $bbl->add(@elem);
-
-    # Hooks
-    my $bblpath = $bbl->PathName;
-    for my $layer (qw(after_new_layer after_delete_layer)) {
-	Hooks::get_hooks($layer)->add
-		(sub {
-		     $reorder_elems->();
-		     $bbl->add(@elem);
-		 }, $bblpath);
-    }
-    $bbl->OnDestroy
-	(sub {
-	     for my $layer (qw(after_new_layer after_delete_layer)) {
-		 Hooks::get_hooks($layer)->del($bblpath);
-	     }
-	 });
 }
 
 # middle mouse button bindings
@@ -6332,317 +6044,6 @@ sub exit_app_noninteractive {
     unlink @todel if (@todel);
     $top->destroy if Tk::Exists($top);
     exit;
-}
-
-##### Wind & Wetter ##############################################
-
-# Gibt 1 zurück, falls ein lokales Verzeichnis mit Wetterdaten existiert
-sub wetter_dir_exists {
-    foreach my $dir (@wetter_dir) {
-	if (-d $dir && -x $dir) {
-	    $wetter_dir = $dir;
-	    return 1;
-	}
-    }
-    0;
-}
-
-# Ignoriert die Wind- und Wettereinstellungen und zeichnet die Route
-# ggfs. neu.
-### AutoLoad Sub
-sub ignore_weather {
-    reset_wind();
-    if ($wetter_route_update) {
-	redraw_path();
-	updatekm();
-    }
-}
-
-### AutoLoad Sub
-sub reset_wind {
-    $wind_v_max = 0;
-    $wind_v = 0;
-    $winddate = '';
-    $act_value{Windlabel} = M"Wind";
-    $act_value{Wind} = M"Keine Daten";
-    $wind = 0;
-}
-
-# Laden der Wetterinformationen. Abhängig von den aktuellen Einstellungen
-# passiert das lokal oder über das WWW.
-### AutoLoad Sub
-sub update_weather {
-    my $force_update = shift;
-    return unless $force_update;
-
-    IncBusy($top);
-
-    eval {
-	my @station;
-	if ($wetter_station eq 'uptodate') {
-	    # Dahlem2 hat keine mittlere Windgeschwindigkeit
-	    @station = ('dahlem1',
-			#'tempelhof'
-		       );
-	} else {
-	    @station = ($wetter_station);
-	}
-
-	my @source;
-	foreach (keys %wetter_source) {
-	    push @source, $_ if $wetter_source{$_};
-	}
-#  	if (!@source) {
-#  	    push @source, 'www' unless $really_no_www;
-#  	}
-	if (!@source) {
-	    die M"Es wurde keine Quelle für den Empfang der Wetterdaten angegeben.\n";
-	}
-
-	# hack, um wettermeldung2 perl4-kompatibel zu lassen
-	$wettermeldung2::module = 1;
-	$wettermeldung2::tk_widget = $top;
-	require "wettermeldung2";
-
-	my($act_line, $act_station);
-	my $station;
-	foreach $station (@station) {
-	    my $source;
-	    foreach $source (@source) {
-		warn Mfmt("Versuche %s mit %s...\n", $station, $source)
-		    if $verbose;
-		my $line;
-		if ($source eq 'www') {
-		    $wettermeldung2::local = 0;
-		    $line = wettermeldung2::parse($station);
-		} elsif ($source eq 'db') {
-		    my $file = "$wetter_dir/$wetter_zuordnung{$station}";
-		    next if !-r $file;
-		    $line = wettermeldung2::tail_1($file);
-		} elsif ($source eq 'local') {
-		    $wettermeldung2::local = 1;
-		    $line = wettermeldung2::parse($station);
-		} else {
-		    die Mfmt("Unbekannte Quelle %s", $source);
-		}
-		next if !defined $line || $line =~ /^\s*$/;
-		if (!defined $act_line ||
-		    &wettermeldung2::date_cmp($act_line, $line) < 0) {
-		    $act_line    = $line;
-		    $act_station = $station;
-		}
-	    }
-	}
-
-	if (!defined $act_line || $act_line =~ /^\s*$/) {
-	    die M("Der Wetterbericht kann nicht empfangen werden.\n" .
-		  "Möglicher Grund: es konnte keine Internet-Verbindung aufgebaut werden.\n");
-	}
-
-	warn Mfmt("Ergebnis von `%s' wird geparst\n", $act_station) if $verbose;
-	my @wetterline = parse_wetterline($act_line, $act_station);
-	analyze_wind(@wetterline[$wettermeldung2::FIELD_DATE,
-				 $wettermeldung2::FIELD_TIME,
-				 $wettermeldung2::FIELD_WIND_DIR,
-				 $wettermeldung2::FIELD_WIND_MAX,
-				 $wettermeldung2::FIELD_WIND_AVG],
-		     -station => $act_station);
-
-	if ($wetter_route_update) {
-	    redraw_path();
-	    updatekm();
-	}
-    };
-    if ($@) {
-	status_message($@, 'err');
-    }
-    DecBusy($top);
-}
-
-# Eine lokal vorhandene Wetterdatenbank, falls vorhanden, wird angezeigt.
-# Der Benutzer kann einen Eintrag auswählen, der dann diese Daten für
-# die aktuellen Wetterdaten nimmt.
-### AutoLoad Sub
-sub show_weather_db {
-    my($type, $filename) = @_;
-    $filename = $wetter_zuordnung{$type} if !defined $filename;
-    if (!defined $filename) { $filename = 'wetter-full' }
-    if ($filename !~ m|^/|) { $filename = "$wetter_dir/$filename" }
-    if (!-e $filename) {
-	# append current year
-	$filename .= "-" . (((localtime)[5])+1900);
-    }
-
-    my $t = redisplay_top($top, "weather_db-$filename",
-			  -title => $filename);
-    return if !defined $t;
-
-    if (!open(DB, $filename)) {
-	if (! -f "$filename.gz" || !open(DB, "zcat $filename.gz|")) {
-	    status_message
-	      (Mfmt("Die Datei %s kann nicht geöffnet werden: %s",
-		    $filename, $!), 'warn');
-	    return undef;
-	}
-    }
-
-    require Tk::HList;
-    IncBusy($top);
-    eval {
-	my @data;
-	my $fullwetter = $wetter_full{$type};
-	my $select_sub = sub {
-	    eval {
-		my @wetterline = parse_wetterline($data[$_[0]],
-						  $type);
-		analyze_wind(@wetterline[$wettermeldung2::FIELD_DATE,
-					 $wettermeldung2::FIELD_TIME,
-					 $wettermeldung2::FIELD_WIND_DIR,
-					 $wettermeldung2::FIELD_WIND_MAX,
-					 $wettermeldung2::FIELD_WIND_AVG],
-			     -station => $type);
-		redraw_path();
-		updatekm();
-	    };
-	};
-	my $f = $t->Frame->pack(-fill => 'x', -side => "bottom");
-	my $cols = ($type eq 'dahlem1' ? 6 : 5);
-	my $lb = $t->Scrolled('HList',
-			      -header => 1,
-			      -columns => $cols,
-			      -selectmode => 'single',
-			      -scrollbars => 'osoe',
-			      -width => 50,
-			      -command => $select_sub,
-			     )->pack(-expand => 1, -fill => 'both');
-	eval {
-	    require Tk::ItemStyle;
-	    require Tk::resizeButton;
-	    my $headerstyle = $lb->ItemStyle('window', -padx => 0, -pady => 0);
-	    my @header;
-	    my $i = 0;
-	    my $scr_hlist = $lb->Subwidget('scrolled');#XXX
-	    for (qw(Datum Uhrzeit Temp Windri.)) {
-		$header[$i] = $lb->resizeButton
-		  (-text => $_,
-		   -relief => 'flat', -pady => 0,
-		   -widget => \$scr_hlist,
-		   -command => sub {},
-		   -column => $i);
-		$i++;
-	    }
-	    for (0 .. 3) {
-		$lb->header('create', $_, -itemtype => 'window',
-			    -widget => $header[$_], -style => $headerstyle);
-	    }
-	};
-	if ($@) {
-	    warn __LINE__ . ": $@" if $verbose;
-	    $lb->header('create', 0, -text => M"Datum");
-	    $lb->header('create', 1, -text => M"Uhrzeit");
-	    $lb->header('create', 2, -text => M"Temp");
-	    $lb->header('create', 3, -text => M"Windri.");
-	}
-	{
-#XXX resizeButton auch hier verwenden
-	    my $col = 4;
-	    if ($type ne 'tempelhof') {
-		$lb->header('create', $col, -text => M"max. Wind");
-		$col++;
-	    }
-	    if ($type ne 'dahlem2') {
-		$lb->header('create', $col, -text => M"mitt. Wind");
-	    }
-	}
-	my $i = 0;
-	my $code .= <<'EOF';
-	while(<DB>) {
-	    chomp;
-	    push @data, $_;
-	    my @a = split /\|/o;
-	    $lb->add($i, -text => $a[$wettermeldung2::FIELD_DATE]);
-	    $lb->itemCreate($i, 1, -text => $a[$wettermeldung2::FIELD_TIME]);
-	    $lb->itemCreate($i, 2, -text => $a[$wettermeldung2::FIELD_TEMP]);
-	    $lb->itemCreate($i, 3, -text => $a[$wettermeldung2::FIELD_WIND_DIR]);
-	    $lb->itemCreate($i, 4, -text => $a[$wettermeldung2::FIELD_WIND_MAX]);
-EOF
-        if ($type eq 'dahlem1') {
-	    $code .= '$lb->itemCreate($i, 5, -text => $a[$wettermeldung2::FIELD_WIND_AVG]);';
-	}
-	$code .= <<'EOF';
-	    $i++;
-	}
-EOF
-	eval $code;
-	warn __LINE__ . ": $@" if $@;
-	close DB;
-	$lb->idletasks; $lb->see($i-1);
-	$lb->anchorSet($i-1);
-	$lb->focus;
-	$f->Button(Name => 'apply',
-		   -command => sub { my $i = $lb->info('anchor');
-				     return unless defined $i;
-				     $select_sub->($i) },
-		  )->pack(-side => 'left');
-	my $cb = $f->Button(Name => 'end',
-			    -command => sub { $t->destroy },
-			   )->pack(-side => 'left');
-	$t->bind('<<CloseWin>>' => sub { $cb->invoke });
-    };
-    DecBusy($top);
-}
-
-# Parset eine Zeile mit Wetterdaten, die entweder aus dem Web oder aus der
-# lokalen Datenbank stammt. Zurückgegeben wird ein Array mit den folgenden
-# Elementen:
-#   Datum, Uhrzeit, Temperatur, Luftdruck, Windrichtung, Windstärke etc.
-### AutoLoad Sub
-sub parse_wetterline {
-    my($wetterline, $source) = @_;
-    my $fullwetter = $wetter_full{$source};
-    my(@wetterline) = split(/\|/, $wetterline);
-    $wetterline[$wettermeldung2::FIELD_WIND_DIR] = lc($wetterline[$wettermeldung2::FIELD_WIND_DIR]);
-    if (!exists $wind_dir{$wetterline[$wettermeldung2::FIELD_WIND_DIR]}
-	|| $wetterline[$wettermeldung2::FIELD_WIND_MAX] !~ /^\d+$/
-	|| ($fullwetter && $wetterline[$wettermeldung2::FIELD_WIND_AVG] !~ /^\d+$/)
-       ) {
-	$wind = 0;
-	die "Can't parse wind: " . join("|", @wetterline);
-    }
-    status_message("");
-    $temperature = $wetterline[$wettermeldung2::FIELD_TEMP];
-    $act_value{Temp} = $temperature . "°C";
-    if (!$fullwetter) { # Windstärke ist in Beaufort statt m/s
-	require Met::Wind;
-	import Met::Wind;
-	$wetterline[$wettermeldung2::FIELD_WIND_AVG] = wind_velocity([$wetterline[$wettermeldung2::FIELD_WIND_MAX], 'beaufort'], 'm/s');
-	$wetterline[$wettermeldung2::FIELD_WIND_MAX] = undef;
-    }
-    @wetterline;
-}
-
-# Setzt die angegebenen Wetterdaten für globale Variablen.
-### AutoLoad Sub
-sub analyze_wind {
-    my($date, $time, $dir, $maxv, $v, %args) = @_;
-    analyze_wind_dir($dir);
-    $wind_v_max = $maxv;
-    $wind_v     = $v;
-    if (defined $date && defined $time) {
-	$winddate = join(", ", $date, $time);
-##XXX zu wenig Platz im Label
-#  	if ($args{-station}) {
-#  	    $winddate .= ", $args{-station}";
-#  	}
-    } else {
-	$winddate = '';
-    }
-    $act_value{Windlabel} = M("Wind")." ".($winddate ne "" ? "($winddate)" : "");
-    $act_value{Wind} = "\U$winddir\E,  $wind_v m/s";
-    if (defined $wind_v_max) {
-	$act_value{Wind} .= " ($wind_v_max m/s)";
-    }
-    $wind = 1;
 }
 
 ######################################################################
@@ -7076,7 +6477,7 @@ sub enter_scale {
        %scaleargs,
        -orient => 'horiz',
        -variable => \$new_mapscale_scale,
-       -command => sub { $new_mapscale = int($new_mapscale_scale) },
+       -command => sub { $new_mapscale = int($new_mapscale_scale); },
       )->grid(-row => 1, -column => 1,
 	      -columnspan => 2,
 	      -sticky => 'we');
@@ -7326,17 +6727,34 @@ sub enter_opt_preferences {
 	$gridy++;
     }
 
+    my $N_RW_cb;
     my $cb3;
     $cb3 = $act_page[2]->Checkbutton
       (-text => M"Verwenden",
        -variable => \$radwege_optimierung,
        -command => sub { change_state_all($act_page[2], $radwege_optimierung,
-					  {$cb3=>3}); },
+					  {$cb3=>3,$N_RW_cb=>1}); },
       )->grid(-row => $gridy++,
 	      -column => 2,
 	      -sticky => 'e');
     change_state_all($act_page[2], $radwege_optimierung, {$cb3=>3});
+
+    $N_RW_cb = $act_page[2]->Checkbutton
+	(-text => M"Hauptstraßen ohne Radwege meiden",
+	 -variable => \$N_RW_optimization,
+	 -command => sub {
+	     if ($N_RW_optimization) {
+		 $radwege_optimierung = 0;
+		 $strcat_optimierung = 0;
+		 change_state_all($act_page[2], $radwege_optimierung,
+				  {$cb3=>1,$N_RW_cb=>1});
+	     }
+	 },
+	)->grid(-row => $gridy++,
+		-column => 0,
+		-sticky => "w");
 });
+
     #######
     $act_page[3] = $nb->add("lsa", -label => M"Ampel-Optimierung",
 -createcmd => sub {
@@ -7923,7 +7341,6 @@ sub save_route_as_esri {
 # weiter zur Druckfunktion...
 ### AutoLoad Sub
 sub print_function {
-    require BBBikePrint;
     my $tmpfile = create_postscript
 	($c,
 	 -legend => ($use_legend ?
@@ -8029,19 +7446,6 @@ sub plotstr {
 
     status_message("");
     $abk   = 's'      if !defined $abk;
-    my $filename = $args{Filename};
-    if (!defined $filename) {
-	$filename = ($coord_system eq 'standard'
-		     ? $str_file{$abk}
-		     : "$str_file{$abk}-orig"
-		    );
-    }
-    delete $pending{"replot-str-$abk"};
-    if (!defined $filename) {
-	status_message(Mfmt("Dateiname für <%s> ist nicht definiert.", $abk),
-		       'err');
-	return;
-    }
 
     # alte Tags löschen
     if (!$std || !$args{FastUpdate} || !$str_draw{$abk}) {
@@ -8060,29 +7464,53 @@ sub plotstr {
 	return;
     }
 
+    # Get source from filename or street object
+    my($filename, $str);
+    if (!defined $args{-object}) {
+	$filename = $args{-filename} || $args{Filename};
+	if (!defined $filename) {
+	    $filename = ($coord_system eq 'standard'
+			 ? $str_file{$abk}
+			 : "$str_file{$abk}-orig"
+			);
+	}
+	delete $pending{"replot-str-$abk"};
+	if (!defined $filename) {
+	    status_message(Mfmt("Dateiname für <%s> ist nicht definiert.", $abk),
+			   'err');
+	    return;
+	}
+    } else {
+	$str = delete $args{-object};
+    }
+
+
     # Radwege werden im Edit-Modus besser mit radweg_draw_canvas() gezeichnet
     if ($abk eq 'rw' and $coord_system ne 'standard') {
-	require BBBikeEdit;
 	radweg_open();
 	radweg_draw_canvas();
 	return;
     }
 
-    my $str;
-    my $dont_use_cache = ($coord_system ne 'standard' ||
-			  $args{FastUpdate} ||
-			  $abk =~ /^(xxx|L\d+)$/);
-    my $dont_set_cache = ($coord_system ne 'standard' ||
-			  $abk =~ /^(xxx|L\d+)$/);
-  TRYCACHE: {
-      if (defined $str_obj{$abk} && !$dont_use_cache) {
-	  last TRYCACHE if ($abk eq 'l' and
-			    (defined $str_cache_attr{'l'} and
-			     $str_cache_attr{'l'} ne "$str_far_away{'l'}"));
-	  last TRYCACHE if ($str_regions{'l'} && @{$str_regions{'l'}});
-	  $str = $str_obj{$abk};
-      }
-  }
+    my $dont_use_cache;
+    my $dont_set_cache = 1;
+
+    if (!$str) {
+	$dont_use_cache = ($coord_system ne 'standard' ||
+			   $args{FastUpdate} ||
+			   $abk =~ /^(xxx|L\d+)$/);
+	$dont_set_cache = ($coord_system ne 'standard' ||
+			   $abk =~ /^(xxx|L\d+)$/);
+    TRYCACHE: {
+	    if (defined $str_obj{$abk} && !$dont_use_cache) {
+		last TRYCACHE if ($abk eq 'l' and
+				  (defined $str_cache_attr{'l'} and
+				   $str_cache_attr{'l'} ne "$str_far_away{'l'}"));
+		last TRYCACHE if ($str_regions{'l'} && @{$str_regions{'l'}});
+		$str = $str_obj{$abk};
+	    }
+	}
+    }
 
     if (!defined $str) {
 	cache_decider_init();
@@ -8094,10 +7522,11 @@ sub plotstr {
 	    eval { $str = new Strassen $filename };
 	    if ($@) {
 		if ($edit_mode) {
-		    warn "While loading $filename: $@";
+		    status_message(Mfmt("Beim Laden der Datei %s: %s", $filename, $@), "info");
 		    return;
 		}
-		die $@;
+		# Do not "die", may be in Progress mode
+		status_message($@, "err");
 	    }
 	}
 	if ($abk ne 'w') { # XXX get_cache_identifier benutzen
@@ -8208,10 +7637,11 @@ sub plotstr {
 
     my $coordsys = $coord_system_obj->coordsys;
 
-    foreach ($str->file) {
-	$old_mtime{$_} = (stat($_))[STAT_MODTIME];
-	$mtime_file_type{$_} = ['str', $abk];
-    }
+#XXX del:
+#      foreach ($str->file) {
+#  	$old_mtime{$_} = (stat($_))[STAT_MODTIME];
+#  	$mtime_file_type{$_} = ['str', $abk];
+#      }
 
     my $use_stippleline = 0; # XXX Duplikat in BBBikeExp
     if (exists $line_dash{$abk}) {
@@ -8290,7 +7720,7 @@ sub plotstr {
 	my @extra_tags = ($abk =~ /^(xxx|L\d+)$/ ? ("$abk-s") : ());
 
 	my $draw_sub = eval $plotstr_draw_sub;
-	die $@ if $@;
+	string_eval_die($@, $plotstr_draw_sub) if $@; #die $@ if $@;
 
 	my $bench = Tk::Time_So_Far();
 	while (1) {
@@ -8360,6 +7790,12 @@ sub plotstr {
     DecBusy($top);
 }
 
+# Arguments:
+#   $c: canvas to draw onto
+#   $x, $y: canvas coordinates
+#   %args: options for createText, special options are:
+#      -outlinecolor: color of the outline, by default canvas background
+#      -outlinewidth: width of the outline, by default 1
 ### AutoLoad Sub
 sub outline_text {
     my($c, $x, $y, %args) = @_;
@@ -8410,10 +7846,11 @@ sub plot_sperre {
 				       )
 				    );
 
-	foreach ($gesperrt->file) {
-	    $old_mtime{$_} = (stat($_))[STAT_MODTIME];
-	    $mtime_file_type{$_} = ['p', 'sperre'];
-	}
+# XXX del:
+#  	foreach ($gesperrt->file) {
+#  	    $old_mtime{$_} = (stat($_))[STAT_MODTIME];
+#  	    $mtime_file_type{$_} = ['p', 'sperre'];
+#  	}
 
 	my $width0  = get_line_width('sperre0');
 	my $width1  = get_line_width('sperre1');
@@ -8504,9 +7941,30 @@ sub plot_sperre {
 		for(my $i = 0; $i <= $#kreuzungen; $i++) {
 		    push @c, map { transpose(@$_) } Strassen::to_koord1($kreuzungen[$i]);
 		}
+
+		line_shorten(\@c);
+
+		# move to the right
+		{
+		    my $delta = -3;
+		    for(my $i = 2; $i < $#c; $i+=2) {
+			# atan2(y2-y1, x2-x1)
+			my $alpha = atan2($c[$i+1]-$c[$i-1], $c[$i]-$c[$i-2]);
+			my $beta  = $alpha - pi()/2;
+			my($dx, $dy) = ($delta*cos($beta), $delta*sin($beta));
+			$c[$i] += $dx;
+			$c[$i+1] += $dy;
+			if ($i == 2) {
+			    $c[0] += $dx;
+			    $c[1] += $dy;
+			}
+		    }
+		}
+
 		$c->createLine
 		    (@c,
 		     -fill => 'red', -width => $width3,
+		     -smooth => 1,
 		     -arrow => 'last',
 		     -arrowshape => [4,6,3],
 		     ($Tk::VERSION >= 800.016 ? (-dash => $line_dash{sperre3}) : ()),
@@ -8567,6 +8025,22 @@ sub plot_sperre {
     };
     DecBusy($top);
     Hooks::get_hooks("after_plot")->execute;
+}
+
+sub line_shorten {
+    my($cref) = @_;
+    if (@$cref > 4) { # else should never happen
+	my $len1 = Strassen::Util::strecke([@{$cref}[0,1]], [@{$cref}[2,3]]);
+	my $whole_len1 = $len1 > 20 ? 20 : $len1;
+	my $len2 = Strassen::Util::strecke([@{$cref}[-4,-3]], [@{$cref}[-2,-1]]);
+	my $whole_len2 = $len2 > 20 ? 20 : $len2;
+	@{$cref}[0,1, -2,-1] =
+	    (($cref->[0]-$cref->[2])/$len1*$whole_len1+$cref->[2],
+	     ($cref->[1]-$cref->[3])/$len1*$whole_len1+$cref->[3],
+	     ($cref->[-2]-$cref->[-4])/$len2*$whole_len2+$cref->[-4],
+	     ($cref->[-1]-$cref->[-3])/$len2*$whole_len2+$cref->[-3],
+	    );
+    }
 }
 
 ### AutoLoad Sub
@@ -8640,39 +8114,37 @@ sub plot_hoehe {
     my(%args) = @_;
     Hooks::get_hooks("before_plot")->execute;
     $c->delete('hoehe');
-    if (!$p_draw{'hoehe'}) {
-	Hooks::get_hooks("after_plot")->execute; # XXX should not be here
-	return;
-    }
-    my $coordsys = $coord_system_obj->coordsys;
-    IncBusy($top);
-    eval {
-	read_hoehe(%args);
-	while(my($koord,$hoehe) = each %hoehe) {
-	    my($xx,$yy) = split(/,/, $koord);
-	    if ($edit_mode && $xx =~ /([A-Za-z])?(-?\d+)$/) {
-		my $this_coordsys = (defined $1 ? $1 : '');
-		if ($this_coordsys eq $coordsys ||
-		    !($this_coordsys ne '' || $coordsys ne 'B')) {
-		    $xx = $2;
-		} else {
-		    next; # while
+    if ($p_draw{'hoehe'}) {
+	my $coordsys = $coord_system_obj->coordsys;
+	IncBusy($top);
+	eval {
+	    read_hoehe(%args);
+	    while(my($koord,$hoehe) = each %hoehe) {
+		my($xx,$yy) = split(/,/, $koord);
+		if ($edit_mode && $xx =~ /([A-Za-z])?(-?\d+)$/) {
+		    my $this_coordsys = (defined $1 ? $1 : '');
+		    if ($this_coordsys eq $coordsys ||
+			!($this_coordsys ne '' || $coordsys ne 'B')) {
+			$xx = $2;
+		    } else {
+			next; # while
+		    }
 		}
+		my($x, $y) = transpose($xx, $yy);
+		$c->createLine($x, $y, $x+1, $y+1,
+			       -fill => 'red',
+			       -tags => 'hoehe',
+			      );
+		$c->createText($x+1, $y+1, -anchor => 'nw',
+			       -font => $font{'small'},
+			       -text => $hoehe,
+			       -tags => 'hoehe',
+			      );
 	    }
-	    my($x, $y) = transpose($xx, $yy);
-	    $c->createLine($x, $y, $x+1, $y+1,
-			   -fill => 'red',
-			   -tags => 'hoehe',
-			  );
-	    $c->createText($x+1, $y+1, -anchor => 'nw',
-			   -font => $font{'small'},
-			   -text => $hoehe,
-			   -tags => 'hoehe',
-			  );
-	}
-    };
-    warn __LINE__ . ": $@" if $@;
-    DecBusy($top);
+	};
+	warn __LINE__ . ": $@" if $@;
+	DecBusy($top);
+    }
     Hooks::get_hooks("after_plot")->execute;
 }
 
@@ -8811,7 +8283,7 @@ sub plot_symbol {
 sub plot_point {
     my($abk, %args) = @_;
 
-    my $filename = $args{Filename};
+    my $filename = $args{-filename} || $args{Filename};
     if (!defined $filename) {
 	$filename = ($coord_system eq 'standard'
 		     ? $p_file{$abk}
@@ -8895,10 +8367,11 @@ sub plot_point {
 	    }
 	}
 
-	foreach ($bhf->file) {
-	    $old_mtime{$_} = (stat($_))[STAT_MODTIME];
-	    $mtime_file_type{$_} = ['p', $abk];
-	}
+# XXX del:
+#  	foreach ($bhf->file) {
+#  	    $old_mtime{$_} = (stat($_))[STAT_MODTIME];
+#  	    $mtime_file_type{$_} = ['p', $abk];
+#  	}
 
 	# XXX Experiment!!!
 	if ($orientation eq 'landscape' &&
@@ -8942,7 +8415,7 @@ sub plot_point {
 	my $yadd_anchor = $yadd_anchor_type->{'u'};
 
 	my $draw_sub = eval $plotpoint_draw_sub;
-	die $@ if $@;
+	string_eval_die($@, $plotpoint_draw_sub) if $@; #die $@ if $@;
 
 	while(1) {
 	    my $ret = $bhf->next;
@@ -8957,7 +8430,7 @@ sub plot_point {
     };
     if ($@) {
 	if ($@ !~ /^OK/) {
-	    status_message($@, ($edit_mode ? 'info' : 'err'));
+	    status_message($@, ($edit_mode ? 'info-stack-trace' : 'err'));
 	}
     }
     $progress->Finish;
@@ -9094,6 +8567,8 @@ sub choose_ort {
 		     $net_type eq 's')                       ||
 		    ($linetype eq 'p' && $type =~ /^[ub]$/ &&
 		     $net_type eq 'us')                      ||
+		    ($linetype eq 'p' && $type =~ /^[ubr]$/ &&
+		     $net_type eq 'rus')                     ||
 		    ($linetype eq 'p' && $type eq 'r' &&
 		     $net_type eq 'r')) {
 		    $args{-markstart} = 1;
@@ -9232,18 +8707,15 @@ sub choose_ort {
 	    };
 
 	    my $show_sub =  sub {
+		my %args = @_;
 		my $lb_index = $lb->index('active');
 		return if !defined $lb_index;
 		my $index = $orte{$lb->get($lb_index)};
 		my $tcoords = [];
-		my %args;
 		$args{'-type'} = $type;
 		if ($type eq 'o') {
 		    my($x,$y) = split /,/, _get_orte_obj()->get($index)->[Strassen::COORDS]->[0];
 		    $tcoords->[0][0] = [ transpose($x, $y) ];
-#XXX del:  		    $tcoords->[0][0] =
-#  		      [ transpose($orte_coords[$index]->[1],
-#  				  $orte_coords[$index]->[2]) ];
 		} elsif ($type eq 'p') {
 		    $tcoords->[0][0] = [ transpose($koord->get($index)) ];
 		} else {
@@ -9298,8 +8770,9 @@ sub choose_ort {
 	    }
 
 	    $showb  = $f->Button(Name => 'show',
-				 -command => $show_sub,
+				 -command => sub { $show_sub->() },
 				)->pack(-side => 'left');
+	    $showb->bind("<3>" => sub { $show_sub->(-dont_center => 1) });
 	    $closeb = $f->Button(Name => 'close',
 				 -command => sub {
 				     if ($ondestroy) {
@@ -9314,6 +8787,15 @@ sub choose_ort {
 	    for (qw(Return Double-1 2)) {
 		$lb->bind("<$_>", sub { $showb->invoke });
 	    }
+	    $lb->bind("<3>" =>
+		      [sub {
+			   my($w, $y) = @_;
+			   my $inx = $w->nearest($y);
+			   $w->selectionClear(0, "end");
+			   $w->selectionSet($inx);
+			   $w->activate($inx);
+			   $show_sub->(-dont_center => 1);
+		       }, Ev('y')]);
 	    $lb->focus;
 	};
 	warn __LINE__ . ": $@" if $@;
@@ -9389,10 +8871,12 @@ sub mark_point {
 		       -tags => \@tags);
 	show_mark(undef, @show_mark_args);
     }
-    if ($args{'-clever_center'} && clever_center($tx, $ty)) {
-	# NOP
-    } elsif (!$args{'-dont_center'}) {
-	$c->center_view($tx, $ty);
+    if (!$args{'-dont_center'}) {
+	if ($args{'-clever_center'} && clever_center($tx, $ty)) {
+	    # NOP
+	} else {
+	    $c->center_view($tx, $ty);
+	}
     }
     eval { local $SIG{__DIE__}; $c->lower('show', $args{'-type'}) };
 }
@@ -9469,10 +8953,12 @@ sub mark_street {
  	}
     }
     show_mark() unless $args{'-dont_mark'};
-    if ($args{'-clever_center'} && clever_center(@res_coords[0,1, $#res_coords-1,$#res_coords])) {
-	# NOP
-    } elsif (!$args{'-dont_center'}) {
-	$c->center_view2(@res_coords[0,1, $#res_coords-1,$#res_coords]);
+    if (!$args{'-dont_center'}) {
+	if ($args{'-clever_center'} && clever_center(@res_coords[0,1, $#res_coords-1,$#res_coords])) {
+	    # NOP
+	} else {
+	    $c->center_view2(@res_coords[0,1, $#res_coords-1,$#res_coords]);
+	}
     }
     eval { local $SIG{__DIE__}; $c->lower('show', $args{'-type'}) };
 }
@@ -9743,6 +9229,8 @@ sub plotorte {
 	return;
     }
 
+    my $coordsys = $coord_system_obj->coordsys;
+
     destroy_delayed_restack();
     IncBusy($top);
     $progress->Init(-dependents => $c,
@@ -9775,12 +9263,12 @@ sub plotorte {
 	    }
 	}
 
-#XXX del:	@orte_coords = ();
 	my @orte_coords_labeling;
-	foreach ($orte->file) {
-	    $old_mtime{$_} = (stat($_))[STAT_MODTIME];
-	    $mtime_file_type{$_} = ['p', $type];
-	}
+#XXX del:
+#  	foreach ($orte->file) {
+#  	    $old_mtime{$_} = (stat($_))[STAT_MODTIME];
+#  	    $mtime_file_type{$_} = ['p', $type];
+#  	}
 
 	my $next_meth;
 	if ($no_overlap_label{$type}) {
@@ -9986,10 +9474,11 @@ sub plotobst {
  	my $obst = new Strassen ($coord_system eq 'standard'
 				 ? $p_file{'obst'}
 				 : $p_file{'obst'} . "-orig");
-	foreach ($obst->file) {
-	    $old_mtime{$_} = (stat($_))[STAT_MODTIME];
-	    $mtime_file_type{$_} = [qw(p obst)];
-	}
+#XXX del:
+#  	foreach ($obst->file) {
+#  	    $old_mtime{$_} = (stat($_))[STAT_MODTIME];
+#  	    $mtime_file_type{$_} = [qw(p obst)];
+#  	}
 	$obst->init;
 	my $anzahl_eindeutig = $obst->count;
 	while(1) {
@@ -10160,12 +9649,13 @@ sub enterpoint {
 	if ($tags[1] eq 'sperre0') {
 	    $act_value{Haltestelle} = $tags[2] || M"tragen notwendig";
 	} elsif ($tags[1] =~ /^sperre1/) {
-	    $act_value{Haltestelle} = M"Einbahnstraße";
+	    $act_value{Haltestelle} = M("Einbahnstraße") .
+		(defined $tags[2] and $tags[2] ne "" ? " - " . $tags[2] : "");
 	} elsif ($tags[1] eq 'sperre2') {
 	    if (defined $tags[2] and $tags[2] ne "") {
 		$act_value{Haltestelle} = $tags[2];
 	    } else {
-		$act_value{Haltestelle} = M"gesperrte Straße";
+		$act_value{Haltestelle} = M("gesperrte Straße");
 	    }
 	} else {
 	    $act_value{Haltestelle} = $tags[2] || '';
@@ -10211,6 +9701,7 @@ sub enterpoint {
     }
     if (defined $c_balloon) {
 	if (@l && $use_c_balloon > 1) {
+	    if ($leave_after) {	$leave_after->cancel; undef $leave_after }
 	    $c_balloon->Popup(join(" / ", @l));
 	} else {
 	    $c_balloon->Deactivate;
@@ -10245,6 +9736,7 @@ sub enterstr {
     }
     if (defined $c_balloon) {
 	if (@l && $use_c_balloon > 1) {
+	    if ($leave_after) {	$leave_after->cancel; undef $leave_after }
 	    $c_balloon->Popup(join(" / ", @l));
 	} else {
 	    $c_balloon->Deactivate;
@@ -10265,12 +9757,17 @@ sub enterroute {
     $item = 'current' unless defined $item;
     my(@tags) = $c->gettags($item);
     my $routenr;
+    if ($tags[2] eq 'viaflag') {
+	my($item2,@tags2) = find_below_rx($c, ['^route-'],[1]);
+	if (defined $item2) {
+	    ($item, @tags) = ($item2, @tags2);
+	}
+    }
     if ($tags[1] =~ /^route-(.*)/) {
 	$routenr = $1;
 	if ($routenr eq "") { warn "@tags" } # XXXXX
     } else {
-	#XXX no warning anymore (because Vias do not have a route-\d tag):
-	# warn "No Routenummer in @tags?!";
+	warn "No Routenummer in @tags?!";
 	return;
     }
     my @l;
@@ -10284,11 +9781,12 @@ sub enterroute {
 	$c->configure(-closeenough => $old_closeenough);
     }
     push @l, Strassen::strip_bezirk($str)      if (defined $str);
-    if ($routenr >= 0) { # wenn mehr als nur der Startpunkt angewählt ist
+    if (defined $routenr && $routenr >= 0) { # wenn mehr als nur der Startpunkt angewählt ist
 	push @l, s2hm($route_time[$routenr]) . "h" if ($route_time[$routenr]);
 	push @l, m2km($route_distance[$routenr])   if ($route_distance[$routenr]);
     }
     if (@l) {
+	if ($leave_after) { $leave_after->cancel; undef $leave_after }
 	$c_balloon->Popup(join(" / ", @l));
     } else {
 	$c_balloon->Deactivate;
@@ -10297,8 +9795,14 @@ sub enterroute {
 
 # Wird beim Verlassen einer Route aufgerufen.
 sub leaveroute {
-    $str_label->configure(-fg => $dim_color);
-    $c_balloon->Deactivate(1) if defined $c_balloon;
+    if (!$leave_after) { # XXX not well tested yet!
+	$leave_after =
+	    $c->after(100, sub {
+			  $str_label->configure(-fg => $dim_color);
+			  $c_balloon->Deactivate(1) if defined $c_balloon;
+			  undef $leave_after;
+		      });
+    }
 }
 
 # Gibt den ersten Tag aus @allowed_tags aus, der sich unter dem jetzigen
@@ -10321,6 +9825,26 @@ sub find_below {
     foreach (@allowed_tags) {
 	if (exists $res{$_}) {
 	    return ($res{$_}, $c->gettags($res{$_}));
+	}
+    }
+    undef;
+}
+
+# Similar to find_below, but use a list of regexes and restrict to
+# a list of tag positions.
+sub find_below_rx {
+    my($c, $allowed_rx_tags, $tag_pos) = @_;
+    my $e = $c->XEvent;
+    my($xx, $yy) = ($c->canvasx($e->x), $c->canvasy($e->y));
+    my(@items) = $c->find(overlapping => $xx-1, $yy-1, $xx+1, $yy+1);
+    foreach my $item (@items) {
+	my(@tags) = $c->gettags($item);
+	for my $tag (@tags[@$tag_pos]) {
+	    for my $rx (@$allowed_rx_tags) {
+                if ($tag =~ /$rx/) {
+		    return ($item, @tags);
+		}
+	    }
 	}
     }
     undef;
@@ -10379,9 +9903,15 @@ sub show_info {
 	@coords = ($c->canvasx($px), $c->canvasy($py));
     }
     require Karte::Polar;
+    require Karte::UTM;
+    require Karte::ETRS89;
     my($px,$py) = $coord_system_obj->map2map($Karte::Polar::obj, anti_transpose($coords[0], $coords[1]));
-    $polarcoord = Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($py)) . "\n" . Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($px)) . "\n";
+    $polarcoord = Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($py)) . "\n" . Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($px));
     $url = "$stadtplan_url?ORT=b&LL=+${py}+${px}";
+    my($gkk_zone_potsdam, $gkk_easting_potsdam, $gkk_northing_potsdam) = Karte::UTM::DegreesToGKK($py, $px, "Potsdam");
+    my($gkk_zone_wgs84, $gkk_easting_wgs84, $gkk_northing_wgs84) = Karte::UTM::DegreesToGKK($py, $px, "WGS 84");
+    my($utm_ze, $utm_zn, $utm_x, $utm_y) = Karte::UTM::DegreesToUTM($py, $px, "WGS 84");
+    my($etrs_east, $etrs_north) = Karte::ETRS89::UTMToETRS89($utm_ze, $utm_zn, $utm_x, $utm_y);
 
     my @comments;
     if (!$str_obj{"comm"}) {
@@ -10412,9 +9942,14 @@ sub show_info {
     }
 
     my($area, $total_len);
-    if ($base_tag eq 'w' && defined $index) {
+    if ($base_tag =~ /^[wf]$/ && defined $index) {
 	require Strassen::Stat;
-	my $s = _get_wasser_obj($wasser_file);
+	my $s;
+	if ($base_tag eq 'w') {
+	    $s = _get_wasser_obj($wasser_file);
+	} else {
+	    $s = Strassen->new($flaechen_file);
+	}
 	my $r = $s->get($index);
 # XXX bei weitem noch nicht perfekt: statt des Indexes sollte der
 # NAME verwendet werden, um alle gleichnamigen Objekte zusammenzufassen
@@ -10448,7 +9983,9 @@ sub show_info {
 	#my $tl_tag = "info-$base_tag"; # one window per canvas type
 	my $tl_tag = "info"; # one window for all
 	my $info_top = redisplay_top($top, $tl_tag,
-				     -title => M"Information");
+				     -title => M"Information",
+				     -class => "BbbikePassive",
+				    );
 	if (defined $info_top) {
 	    toplevel_checker($info_top);
 	    require Tk::ROText;
@@ -10489,18 +10026,67 @@ sub show_info {
 				   );
 	    }
 	}
+	if (defined $gkk_zone_potsdam) {
+	    $info_text->insert("end", "\nGKK (Potsdam): [$gkk_zone_potsdam] $gkk_easting_potsdam/$gkk_northing_potsdam");
+	}
+	if (defined $gkk_zone_wgs84) {
+	    $info_text->insert("end", "\nGKK (WGS 84): [$gkk_zone_wgs84] $gkk_easting_wgs84/$gkk_northing_wgs84");
+	}
+	if (defined $utm_ze) {
+	    $info_text->insert("end", "\nUTM (WGS 84): [$utm_ze/$utm_zn] $utm_x/$utm_y");
+	}
+	if (defined $etrs_east) {
+	    $info_text->insert("end", "\nETRS 89: $etrs_east/$etrs_north");
+	}
+	$info_text->insert("end", "\n\n");
+
 	if ($devel_host) {
-	    my(@corners) = $c->get_corners;
-	    @corners = (anti_transpose(@corners[0..1]),
-			anti_transpose(@corners[2..3]),
-		       );
-	    my $url = "http://www/~eserte/cgi/mapserv.cgi?zoomsize=2&layer=gewaesser&layer=flaechen&layer=grenzen&layer=bahn&layer=qualitaet&layer=radwege&layer=orte&mapext=" . join("+", @corners) . "&map=%2Fhome%2Fe%2Feserte%2Fsrc%2Fbbbike%2Fmapserver%2Fbrb%2Fbrb.map&program=%2F%7Eeserte%2Fcgi%2Fmapserv.cgi";
+	    my $url = "http://www/~eserte/bbbike/cgi/mapserver_address.cgi?coords=" . join(",", anti_transpose($coords[0], $coords[1]));
 	    $info_text->insert("end", "Lokaler Mapserver", "link");
 	    $info_text->tagBind("link", "<ButtonRelease-1>" => sub {
 				    require WWWBrowser;
 				    WWWBrowser::start_browser($url);
 				}
 			       );
+	}
+
+	if (eval { require Astro::Sunrise }) {
+	    my $get_sun_rise = sub {
+		my $alt = shift;
+		Astro::Sunrise::sun_rise($px,$py, $alt);
+	    };
+	    my $get_sun_set = sub {
+		my $alt = shift;
+		Astro::Sunrise::sun_set($px,$py, $alt);
+	    };
+
+	    my $sunrise_real     = $get_sun_rise->();
+	    my $sunrise_civil    = $get_sun_rise->(-6);
+	    my $sunrise_nautical = $get_sun_rise->(-12);
+	    my $sunrise_astro    = $get_sun_rise->(-15);
+
+	    my $sunset_real      = $get_sun_set->();
+	    my $sunset_civil     = $get_sun_set->(-6);
+	    my $sunset_nautical  = $get_sun_set->(-12);
+	    my $sunset_astro     = $get_sun_set->(-15);
+
+	    # XXX use fixed font or tabs
+	    $info_text->insert("end", <<EOF);
+
+
+Sonnenaufgang: $sunrise_real
+Dämmerung        ab:
+  bürgerliche:   $sunrise_civil
+  nautische:     $sunrise_nautical
+  astronomische: $sunrise_astro
+
+Sonnenuntergang: $sunset_real
+Dämmerung        bis:
+  bürgerliche:   $sunset_civil
+  nautische:     $sunset_nautical
+  astronomische: $sunset_astro
+
+EOF
 	}
     };
 
@@ -10587,10 +10173,8 @@ sub show_info {
 
 ### AutoLoad Sub
 sub show_statistics {
-    IncBusy($top);
-    eval {
-        require BBBikeStats;
-        require Strassen::Dataset;
+    my $update_statistics;
+    $update_statistics = sub {
         # XXX some day $dataset should replace all of %str_obj etc.
         $dataset = Strassen::Dataset->new if !$dataset;
         my $res = BBBikeStats::calculate
@@ -10605,7 +10189,17 @@ sub show_statistics {
 		 }
 		 mark_street(-coords => \@coordsref,
 			     -dont_center => 1);
-	     });
+	     },
+	     -updatecommand => $update_statistics,
+	     -reusewindow => 1,
+	    );
+    };
+
+    IncBusy($top);
+    eval {
+        require BBBikeStats;
+        require Strassen::Dataset;
+	$update_statistics->();
     };
     my $err = $@;
     DecBusy($top);
@@ -10670,8 +10264,16 @@ sub set_coord_output_sub {
     if ($coord_output eq 'canvas') {
  	$coord_output_sub = sub {
 	    my(@c) = transpose(@_);
-	    map { int } @c;
-	    #map { $_ / $scale } @c;#XXX del: was für einen Sinn sollte das machen?
+	    map {
+		my $x = $_;
+		if ($without_zoom_factor) {
+		    $x = $x / $scale;
+		}
+		if ($coord_output_int) {
+		    $x = int $x;
+		}
+		$x;
+	    } @c;
 	};
     } elsif ($coord_output ne '') {
 	die "Unknown value for coordout: $coord_output";
@@ -10747,7 +10349,7 @@ sub addpoint_xy {
 	 -width => 5,
 	 ($route_arrowed ? (-arrow => "last") : ()),
 	 # -dash and -capstyle don't work well together
-	 ($route_dashed ? (-dash => [5,2]) : (-capstyle => $capstyle_round)),
+	 ($route_dashed ? (-dash => [4,5]) : (-capstyle => $capstyle_round)),
 	 -tags => ['route', "route-$nr"]);
     if ($nr == 0) {
 	set_flag('start');
@@ -11049,7 +10651,7 @@ sub way_back {
 	$search_route_points[$i+1]->[SRP_TYPE] = $search_route_points[$i]->[SRP_TYPE];
     }
     $search_route_points[0]->[SRP_TYPE] = POINT_MANUELL;
-    re_search();
+    re_search(-undo => 0);
     update_route_strname();
 }
 
@@ -11070,6 +10672,27 @@ sub delete_route {
     update_route_strname(); # XXX => hook
     Hooks::get_hooks("del_route")->execute;
 }
+
+### XXX problems, see above
+#  sub delete_route_gui_toggle {
+#      my $menu_index = shift;
+#      delete_route();
+#      $top->Subwidget(PopupMenu)->entryconfigure
+#  	($menu_index,
+#  	 -label => M"Route wiederherstellen (Undo)",
+#  	 -command => sub { get_undo_route_gui_toggle($menu_index) }
+#  	);
+#  }
+
+#  sub get_undo_route_gui_toggle {
+#      my $menu_index = shift;
+#      get_undo_route();
+#      $top->Subwidget(PopupMenu)->entryconfigure
+#  	($menu_index,
+#  	 -label => M"Route löschen",
+#  	 -command => sub { delete_route_gui_toggle($menu_index) }
+#  	);
+#  }
 
 # Hierfür nicht Autoload verwenden, weil es sonst *langsam* wird!
 sub bikepwr_get_v { # Resultat in m/s
@@ -11255,18 +10878,20 @@ sub updatekm {
 	    make_handicap_net();
 	    make_qualitaet_net();
 	    $time[$i] = 0;
-	    for(my $ii=0; $ii<$#realcoords; $ii++) {
-		my $s = Strassen::Util::strecke($realcoords[$ii],$realcoords[$ii+1]);
-		my @etappe_speeds = $speed[$i];
-		if ($qualitaet_s_net && (my $cat = $qualitaet_s_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
-		    push @etappe_speeds, $qualitaet_s_speed{$cat}
-			if defined $qualitaet_s_speed{$cat};
+	    if ($#realcoords > 0) {
+		for(my $ii=0; $ii<$#realcoords; $ii++) {
+		    my $s = Strassen::Util::strecke($realcoords[$ii],$realcoords[$ii+1]);
+		    my @etappe_speeds = $speed[$i];
+		    if ($qualitaet_s_net && (my $cat = $qualitaet_s_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
+			push @etappe_speeds, $qualitaet_s_speed{$cat}
+			    if defined $qualitaet_s_speed{$cat};
+		    }
+		    if ($handicap_s_net && (my $cat = $handicap_s_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
+			push @etappe_speeds, $handicap_s_speed{$cat}
+			    if defined $handicap_s_speed{$cat};
+		    }
+		    $time[$i] += ($s/1000)/min(@etappe_speeds);
 		}
-		if ($handicap_s_net && (my $cat = $handicap_s_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
-		    push @etappe_speeds, $handicap_s_speed{$cat}
-			if defined $handicap_s_speed{$cat};
-		}
-		$time[$i] += ($s/1000)/min(@etappe_speeds);
 	    }
 	} else {
 	    $time[$i] = ($strecke / 1000) / $speed[$i];
@@ -11489,12 +11114,6 @@ sub scalecanvas {
 	if (defined $x && defined $y) {
 	    # preserve position under cursor
 	    $c->scroll_canvasxy_to_rootxy($x*$scalefactor,$y*$scalefactor,$rx,$ry);
-
-# XXX del:
-#  	    # ist noch nicht 100% richtig, aber ausreichend
-#  	    $c->center_view($x*$scalefactor, $y*$scalefactor,
-#  			    NoSmoothScroll => 1,
-#  			   );
 	} else {
 	    # in die Mitte des vorherigen Ausschnitts positionieren
 	    $c->xview('moveto' => $oldx[0]+($xwidth-$xwidth/$scalefactor)/2);
@@ -11520,7 +11139,7 @@ sub scale_width {
     foreach my $type (qw(s-BAB s-HH s-B s-H s-N s-NN s-HH-out s-B-out s-H-out
 			 s-N-out s-NN-out rw
 			 w-W w-W1 w-W2 w-W-out w-W1-out w-W2-out
-			 l l-out u b r pp p z g
+			 l l-out u b r pp p z g gP gD fz
 			 sperre0 sperre1 sperre1s sperre2)) {
 	my $new_width = get_line_width($type, $scale);
 	if (defined $old_scale) {
@@ -11992,15 +11611,10 @@ sub show_mark {
 sub show_overview {
     my $new    = shift;
 
-    if ($coord_system ne 'standard') {
-	$top->messageBox(-message => M("Nur im Standard-Modus unterstützt"));
-	$show_overview = 0;
-	return;
+    if ($overview_top && $overview_top->{CoordSystem} ne $coord_system) {
+	$new = 1;
     }
-
-    my $old_geometry;
     if (defined $overview_top and Tk::Exists($overview_top)) {
-	$old_geometry = $overview_top->geometry;
 	$overview_top->destroy if ($new);
     }
 
@@ -12014,54 +11628,77 @@ sub show_overview {
 	return;
     }
 
-    my $overview_width = $normal_scrollregion/DEFAULT_SCALE*
-	($show_overview_mode eq 'brb' ? $small_scale : $medium_scale);
     $overview_top = $top->Toplevel(-title => M"Übersicht",
 				   -class => "Bbbike Overview",
 				  );
     $overview_top->transient($top) if $transient;
-    if ($old_geometry) {
-	$overview_top->geometry($old_geometry);
+    $overview_top->{CoordSystem} = $coord_system;
+    # Try to set the overview to the right bottom corner of the main
+    # window:
+    my($w,$h) = (int($top->width/3), int($top->height/3));
+    if (!@max_extends) {
+	warn "Should not happen: no defined max_extends";
+	$overview_top->geometry("${w}x$h-0-0");
     } else {
-	# Try to set the overview to the right bottom corner of the main
-	# window:
-	my($w,$h) = (int($top->width/3), int($top->height/3));
-	if (!@max_extends) {
-	    warn "Should not happen: no defined max_extends";
-	    $overview_top->geometry("${w}x$h-0-0");
-	} else {
-	    my(@want_extends) = ($top->x+$top->width, $top->y+$top->height,
-				 $w, $h);
+	my(@want_extends) = ($top->x+$top->width, $top->y+$top->height,
+			     $w, $h);
 
-	    crop_geometry(\@want_extends, \@max_extends);
-	    if ($want_extends[GEOMETRY_HEIGHT] < $h) {
-		$want_extends[GEOMETRY_HEIGHT] = $h;
-		$want_extends[GEOMETRY_Y]      = "-0";
-	    } else {
-		$want_extends[GEOMETRY_Y] =~ s/^/+/;
-	    }
-	    if ($want_extends[GEOMETRY_WIDTH] < $w) {
-		$want_extends[GEOMETRY_WIDTH] = $w;
-		$want_extends[GEOMETRY_X]     = "-0";
-	    } else {
-		$want_extends[GEOMETRY_X] =~ s/^/+/;
-	    }
-	    my $geom = "$want_extends[GEOMETRY_WIDTH]x$want_extends[GEOMETRY_HEIGHT]" . "$want_extends[GEOMETRY_X]$want_extends[GEOMETRY_Y]";
-	    $overview_top->geometry($geom);
-	    # XXX hack to get the position (nearly) right
-	    $overview_top->after(100, sub { $overview_top->geometry($geom) });
+	crop_geometry(\@want_extends, \@max_extends);
+	if ($want_extends[GEOMETRY_HEIGHT] < $h) {
+	    $want_extends[GEOMETRY_HEIGHT] = $h;
+	    $want_extends[GEOMETRY_Y]      = "-0";
+	} else {
+	    $want_extends[GEOMETRY_Y] =~ s/^/+/;
 	}
+	if ($want_extends[GEOMETRY_WIDTH] < $w) {
+	    $want_extends[GEOMETRY_WIDTH] = $w;
+	    $want_extends[GEOMETRY_X]     = "-0";
+	} else {
+	    $want_extends[GEOMETRY_X] =~ s/^/+/;
+	}
+	my $geom = "$want_extends[GEOMETRY_WIDTH]x$want_extends[GEOMETRY_HEIGHT]" . "$want_extends[GEOMETRY_X]$want_extends[GEOMETRY_Y]";
+	$overview_top->geometry($geom);
     }
+
+    show_overview_populate($overview_top);
+}
+
+sub show_overview_clean_and_populate {
+    my $overview_top = shift;
+    for ($overview_top->children) {
+	$_->destroy;
+    }
+    show_overview_populate($overview_top);
+}
+
+sub show_overview_populate {
+    my $overview_top = shift;
     my $withdraw_sub = sub { $overview_top->withdraw;
 			     $show_overview = 0 };
     $overview_top->protocol('WM_DELETE_WINDOW', $withdraw_sub);
 
     # Canvas. Create scrollbars manually, so arrow_update can be called
-    $overview_canvas = $overview_top->Canvas
-	(
-	 -scrollregion => [-$overview_width, -$overview_width,
-			   $overview_width,  $overview_width],
-	);
+    $overview_canvas = $overview_top->Canvas;
+
+    my($overview_width, $overview_height);
+    if ($coord_system eq 'standard') {
+	$overview_width = $normal_scrollregion/DEFAULT_SCALE*
+	    ($show_overview_mode eq 'brb' ? $small_scale : $medium_scale);
+	$overview_height = $overview_width;
+	$overview_canvas->configure
+	    (-scrollregion => [-$overview_width, -$overview_width,
+			       $overview_width,  $overview_width]
+	    );
+    } else {
+	my @s = $coord_system_obj->scrollregion;
+	# XXX show_overview_mode beachten
+	@s = (transpose_medium(@s[0, 1]),
+	      transpose_medium(@s[2, 3]));
+	$overview_width  = ($s[2]-$s[0])/2;
+	$overview_height = ($s[3]-$s[1])/2;
+	$overview_canvas->configure(-scrollregion => [@s]);
+    }
+
     $overview_canvas->createLine(0,0,0,0,-tags => 'zoomrect');
     $overview_top->gridColumnconfigure(0, -weight => 1);
     $overview_top->gridRowconfigure(0, -weight => 1);
@@ -12071,6 +11708,8 @@ sub show_overview {
     my $sx = $overview_top->Scrollbar(-orient => 'horiz',
 				      -command => ["xview", $overview_canvas]);
     $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
+
+    my $brandenburger_tor_coords = [8581,12243];
 
     my $arrow_update = sub {
 	$overview_canvas->delete('berlinarrow');
@@ -12091,7 +11730,8 @@ sub show_overview {
 				      : \&anti_transpose_medium);
 		# zum Brandenburger Tor
 		my $entf = Strassen::Util::strecke
-		    ([$anti_transpose->($ix1,$iy1)],[8581,12243]);
+		    ([$anti_transpose->($ix1,$iy1)],
+		     $brandenburger_tor_coords);
 		$overview_canvas->createLine
 		    ($ix1,$iy1,$ix2,$iy2,
 		     -arrow => "last",
@@ -12131,7 +11771,8 @@ sub show_overview {
 	 -command => sub {
 	     $show_overview_mode =
 		 ($show_overview_mode eq 'b' ? 'brb' : 'b');
-	     $overview_top->after(10, sub { show_overview(1) });
+#	     $overview_top->after(10, sub { show_overview(1) });
+	     $overview_top->after(10, sub { show_overview_clean_and_populate($overview_top) });
 	 });
     $mode_button->place("-x" => 2, "-y" => 2);
     if ($show_overview_mode eq 'brb') {
@@ -12195,7 +11836,7 @@ sub show_overview {
 			($xoff, $yoff,
 			 -image => $radar_image,
 			 -tags => 'radarimage');
-		    foreach my $raise (qw(g O o)) { # XXX evtl. andere Tags auch raisen
+		    foreach my $raise (qw(g gP gD O o)) { # XXX evtl. andere Tags auch raisen
 			$overview_canvas->raise($raise);
 		    }
 		}
@@ -12216,45 +11857,38 @@ sub show_overview {
     # Zeichnen von Gewässern, S-Bahnen, Straßen in der
     # Übersichtskarte
     foreach my $abk (qw(w b s)) {
-	my($oldwasserumland, $oldwasserstadt, $oldstrnamedraww,
-	   %oldstrrestrict, $oldoutline);
+	local(%str_outline, %str_name_draw, $wasserumland, $wasserstadt,
+	      %str_far_away, %str_restrict, %p_draw);
 	if ($overview_draw{$abk}) {
-	    $oldoutline = $str_outline{$abk};
 	    $str_outline{$abk} = 0;
+	    $p_draw{'pp'} = 0;
 	    if ($abk eq 'w') {
-		$oldwasserumland = $wasserumland;
-		$oldwasserstadt  = $wasserstadt;
-		$oldstrnamedraww = $str_name_draw{'w'} = 0;
+		$str_name_draw{$abk} = 0;
 		$wasserumland = $wasserstadt = 1;
-		$str_name_draw{'w'} = 0;
-	    } elsif ($abk eq 's') {
-		while(my($k,$v) = each %{ $str_restrict{'s'} }) {
-		    $oldstrrestrict{$k} = $v;
-		    $str_restrict{'s'}->{$k} = 0;
+		$str_far_away{$abk} = 1;
+
+		for my $cat (qw(W1 W2 F:W)) {
+		    $str_restrict{$abk}->{$cat} = 1;
 		}
-		$str_restrict{'s'}->{'HH'} = 1;
+		$str_restrict{$abk}->{W} = 0;
+	    } elsif ($abk eq 's') {
+		$str_restrict{$abk}->{'HH'} = 1;
 	    }
+
 	    plot('str',$abk,
 		 Canvas => $overview_canvas,
 		 Width  => 1,
 		);
-	    if ($abk eq 'w') {
-		$wasserumland = $oldwasserumland;
-		$wasserstadt  = $oldwasserstadt;
-		$str_name_draw{'w'} = $oldstrnamedraww;
-	    } elsif ($abk eq 's') {
-		while(my($k,$v) = each %oldstrrestrict) {
-		    $str_restrict{'s'}->{$k} = $v;
-		}
-	    }
-	    $str_outline{$abk} = $oldoutline;
 	}
     }
 
     $progress->InitGroup;
-    plot('str','g',
-	 Canvas => $overview_canvas,
-	);
+    for my $abk (qw(g gD)) {
+	plot('str',$abk,
+	     Canvas => $overview_canvas,
+	     ($abk eq 'g' && $coord_system ne 'standard' ? (Filename => "plz-orig") : ()),
+	    );
+    }
     {
 	# schöner wär's mit local(), aber geht nicht so ohne weiteres
 	my $orte_far_away_orig = $p_far_away{'o'};
@@ -12342,12 +11976,17 @@ sub show_overview {
 	  my(@oldy) = $c->yview;
 	  my($xwidth) = $oldx[1]-$oldx[0];
 	  my($ywidth) = $oldy[1]-$oldy[0];
-	  $c->xview(moveto => (($xx+$overview_width)/($overview_width*2)
-			       - $xwidth*$delta_x_fraction)
-		   );
-	  $c->yview(moveto => (($yy+$overview_width)/($overview_width*2)
-			       - $ywidth*$delta_y_fraction)
-		   );
+	  if ($coord_system ne 'standard') {
+	      ($xx, $yy) = anti_transpose_medium($xx, $yy); # XXX brb mode!!!
+	      $c->center_view($xx, $yy);
+	  } else {
+	      $c->xview(moveto => (($xx+$overview_width)/($overview_width*2)
+				   - $xwidth*$delta_x_fraction)
+		       );
+	      $c->yview(moveto => (($yy+$overview_height)/($overview_height*2)
+				   - $ywidth*$delta_y_fraction)
+		       );
+	  }
       };
 
     $real_canvas->Tk::bind('<ButtonPress-1>'  => sub {
@@ -12418,42 +12057,6 @@ sub overview_update {
 
     if (!$overview_canvas->is_visible($midx, $midy)) {
 	$overview_canvas->center_view($midx, $midy);
-    }
-
-}
-
-######################################################################
-### Kalorien-Fenster
-### AutoLoad Sub
-sub show_calories {
-    if (!$show_calories) {
-	if (Tk::Exists($toplevel{Calories})) {
-	    $toplevel{Calories}->destroy;
-	}
-	return;
-    }
-
-    my $t = redisplay_top($top, 'Calories',
-			  -title => M"Kalorienverbrauch");
-    return if !defined $t;
-    my $withdraw_sub = sub { $t->destroy;
-			     $show_calories = 0 };
-    $t->protocol('WM_DELETE_WINDOW', $withdraw_sub);
-    $t->Label(-text => M"Kalorienverbrauch")->pack;
-    my $f = $t->Frame->pack;
-    foreach my $def ([\@power, 'W:', \@calories_power, 'kcal'],
-		     #[\@speed, 'km/h:', \@calories_speed, 'kcal'],
-		    ) {
-	for(my $i=0; $i<=$#power; $i++) {
-	    $f->Label(-textvariable => \$def->[0][$i]
-		 )->grid(-row => $i, -column => 0, -sticky => 'e');
-	    $f->Label(-text => $def->[1]
-		     )->grid(-row => $i, -column => 1, -sticky => 'w');
-	    $f->Label(-textvariable => \$def->[2][$i]
-		     )->grid(-row => $i, -column => 2, -sticky => 'e');
-	    $f->Label(-text => $def->[3]
-		     )->grid(-row => $i, -column => 3, -sticky => 'w');
-	}
     }
 }
 
@@ -12579,6 +12182,15 @@ sub search_route {
 		my $radwege_exact = new Strassen "radwege_exact";
 		$radwege_net = new StrassenNetz $radwege_exact;
 		$radwege_net->make_net_cat(-obeydir => 1);
+		# add all other streets do not have cycle paths ...
+		while(my($p1,$hash) = each %{ $net->{Net} }) {
+		    while(my($p2,$entf) = each %$hash) {
+			if (!exists $radwege_net->{Net}{$p1}{$p2}) {
+			    $radwege_net->{Net}{$p1}{$p2} = "RW0";
+			    $radwege_net->{Net}{$p2}{$p1} = "RW0";
+			}
+		    }
+		}
 	    }
 	    my $penalty;
 	    foreach (keys %radwege_speed) {
@@ -12590,6 +12202,48 @@ sub search_route {
 	       Penalty => $penalty,
 	      };
 	}
+
+	if ($N_RW_optimization) {
+	    # XXX check if $N_RW_net is up-to-date with respect to its
+	    # sources, or whether a new $N_RW_net should be build
+	    if (!$N_RW_net) {
+		my $s = $multistrassen ? $multistrassen : $str_obj{'s'};
+		if (!$s) {
+		    warn "Can't get streets object, ignore N_RW optimization";
+		} else {
+		    $N_RW_net = new StrassenNetz $s;
+		    $N_RW_net->make_net_cyclepath(Strassen->new("radwege_exact"), 'N_RW');
+		}
+	    }
+	    if ($N_RW_net) {
+		my $penalty = { "H"    => 4,
+				"H_RW" => 1,
+				"N"    => 1,
+				"N_RW" => 1 };
+		$extra_args{RadwegeStrcat} =
+		    {Net => $N_RW_net,
+		     Penalty => $penalty,
+		    };
+	    }
+	}
+
+	if ($green_optimization) {
+	    # XXX check if $N_RW_net is up-to-date with respect to its
+	    # sources, or whether a new $N_RW_net should be build
+	    if (!$green_net) {
+		$green_net = new StrassenNetz(Strassen->new("green"));
+		$green_net->make_net_cat;
+	    }
+	    my $penalty = { "green0" => 3,
+			    "green1" => 2,
+			    "green2" => 1,
+			  };
+	    $extra_args{Green} =
+		{Net => $green_net,
+		 Penalty => $penalty,
+		};
+	}
+
 	if ($steigung_optimierung) {
 	    if (!$steigung_net) {
 		$steigung_net = new StrassenNetz Strassen->new;
@@ -12678,8 +12332,12 @@ sub search_route {
  	    $old_nr = $#coords;
  	} else {
 	    # XXX shouldn't be necessary!!!
-	    my($save_start) = $search_route_points[SRP_COORD];
- 	    reset_undo_route();
+	    my($save_start) = $search_route_points[0]; # XXX used to be [SRP_COORD]?!
+ 	    if (!exists $args{-undo} || $args{-undo}) {
+		reset_undo_route();
+	    } else {
+		resetroute();
+	    }
 	    push @search_route_points, $save_start;
  	}
 # 	my(@res);
@@ -12736,6 +12394,7 @@ sub search_route {
 # Wiederholung der Suche (evtl. mit neuen Parametern)
 ### AutoLoad Sub
 sub re_search {
+    my(%args) = @_;
     return if @search_route_points < 2;
     IncBusy($top, %busy_watch_args);
     eval {
@@ -12748,14 +12407,22 @@ sub re_search {
 		addpoint_xy(split(/,/, $p2->[SRP_COORD]));
 		push @search_route_points, [@$p2];
 	    } else {
-		search_route($p1->[SRP_COORD], $p2->[SRP_COORD],
-			     undef, ($i == 0 ? '' : 'cont'));
+		search_route
+		    ($p1->[SRP_COORD], $p2->[SRP_COORD],
+		     undef, ($i == 0 ? '' : 'cont'),
+		     (exists $args{-undo} ? (-undo => $args{-undo}) : ()),
+		    );
 	    }
 	}
     };
     my $err = $@;
     DecBusy($top);
     die $err if $err;
+}
+
+sub re_search_gui {
+    re_search(@_);
+    update_route_strname();
 }
 
 # Steigung muß als Tausendfaches angegeben werden.
@@ -12825,34 +12492,34 @@ sub show_route_strname {
 
     my $t;
     my $withdraw_sub;
-    if (defined $strlist_top && Tk::Exists($strlist_top)) {
+    if (defined $toplevel{strlist} && Tk::Exists($toplevel{strlist})) {
 	if (!$show_strlist) {
-	    $strlist_top->withdraw;
+	    $toplevel{strlist}->withdraw;
 	} else {
-	    my $was_withdrawn = $strlist_top->state ne "normal";
-	    $strlist_top->deiconify;
+	    my $was_withdrawn = $toplevel{strlist}->state ne "normal";
+	    $toplevel{strlist}->deiconify;
 	    # raise nur ausführen, wenn es wirklich was zu sehen gibt
-	    #$strlist_top->raise;
+	    #$toplevel{strlist}->raise;
 
 	    #XXX maybe combine with code below
 	    if ($was_withdrawn && eval {require Tk::Placement; 1; }) {
 		# XXX use placer also for other toplevels --- replace
 		# all Popup(@popup_style) calls?
 		warn "Use Tk::Placement, yet experimental..." if $devel_host;
-		Tk::Placement::placer($strlist_top, -screen => $c,
+		Tk::Placement::placer($toplevel{strlist}, -screen => $c,
 				      -addx => 20, -addy => 25, # XXX for fvwm
 				     );
 	    }
 
 	}
     } else {
-	$strlist_top = $top->Toplevel(-title => M"Aktuelle Route",
+	$toplevel{strlist} = $top->Toplevel(-title => M"Aktuelle Route",
 				      -class => "Bbbike Routeinfo");
-	$strlist_top->transient($top) if $transient;
-	$withdraw_sub = sub { $strlist_top->withdraw;
+	$toplevel{strlist}->transient($top) if $transient;
+	$withdraw_sub = sub { $toplevel{strlist}->withdraw;
 			      $show_strlist = 0 };
-	$strlist_top->protocol('WM_DELETE_WINDOW', $withdraw_sub);
-	$t = $strlist_top;
+	$toplevel{strlist}->protocol('WM_DELETE_WINDOW', $withdraw_sub);
+	$t = $toplevel{strlist};
     }
 
 #XXX    my $t = redisplay_top($top, 'route_strname',
@@ -12925,7 +12592,8 @@ sub show_route_strname {
 		}
 		if ($str_obj{"comm"}) {
 		    $comments_net = new StrassenNetz $str_obj{"comm"};
-		    $comments_net->make_net_cat(-net2name => 1);
+		    $comments_net->make_net_cat(-net2name => 1,
+						-multiple => 1);
 		}
 	    }
 	}
@@ -13084,7 +12752,7 @@ sub show_route_strname {
 		!$do_route_strnames_compact) {
 		my @comments;
 		for my $i ($index_arr->[0] .. $index_arr->[1]) {
-		    my $etappe_comment = $comments_net->get_point_comment([@realcoords], $i, \%seen_comments);
+		    my($etappe_comment) = $comments_net->get_point_comment([@realcoords], $i, \%seen_comments);
 		    push @comments, $etappe_comment if defined $etappe_comment;
 		}
 		$etappe_comment = join("; ", @comments) if @comments;
@@ -13134,7 +12802,7 @@ sub show_route_strname {
 	    $c->delete("routename");
 	    route_strname_on_map(\@route_strnames);
 	}
-	$strlist_top->raise;
+	$toplevel{strlist}->raise;
     } else {
 	$route_strname_lbox->add(0, -text => M"Keine Route");
     }
@@ -13233,7 +12901,6 @@ sub show_route_strname {
 	    Win32Util::start_txt_print($temp);
 	    $tmpfiles{$temp}++;
 	} else {
-	    require BBBikePrint;
 	    print_text_postscript
 		(join("\n", @show_route_save),
 		 -columns => 1,
@@ -13303,7 +12970,7 @@ sub show_route_strname {
 }
 
 sub update_route_strname {
-    if (defined $strlist_top && Tk::Exists($strlist_top)) {
+    if (defined $toplevel{strlist} && Tk::Exists($toplevel{strlist})) {
 	show_route_strname();
     }
 }
@@ -13331,8 +12998,9 @@ sub make_net {
 	    }
 	    push @net_source,     $str_obj{'r'};
 	    push @net_source_abk, 'r';
-	} elsif ($net_type eq "us") {
-	    foreach (qw(u b)) {
+	} elsif ($net_type eq "us" || $net_type eq 'rus') {
+	    my @abk = ($net_type eq 'us' ? qw(u b) : qw(u b r));
+	    foreach (@abk) {
 		if (!$str_obj{$_}) {
 		    $str_obj{$_} = new Strassen $str_file{$_};
 		}
@@ -13436,9 +13104,10 @@ sub make_net {
 		if ($use_faehre) {
 		    $net->add_faehre($str_file{'e'});
 		}
-	    } elsif ($net_type eq 'us') {
+	    } elsif ($net_type eq 'us' || $net_type eq 'rus') {
+		my @abk = ($net_type eq 'us' ? qw(u b) : qw(u b r));
 		my @bhf_source;
-		foreach (qw(u b)) {
+		foreach (@abk) {
 		    if (!$p_obj{$_}) {
 			$p_obj{$_} = new Strassen $p_file{$_};
 		    }
@@ -13506,6 +13175,7 @@ sub make_handicap_net {
     $handicap_s_net;
 }
 
+# User definable blockings
 sub load_user_dels {
     my $file = shift || "$bbbike_configdir/userdels.bbd";
     $net->load_user_deletions
@@ -13577,11 +13247,8 @@ sub set_coords_str {
 	$tags[1];
 ##XXX geht nicht?
 #      } elsif ($tags[0] eq 'o') {
-#  #XXX del:	foreach (@orte_coords) {
 #  	foreach (_get_orte_obj()->{Data}) {
-#  #XXX del:	    if ($tags[1] eq $_->[0]) {
 #  	    if ($tags[1] eq $_->[Strassen::NAME]) {
-#  #XXX del: return Route::_coord_as_string([$_->[1],$_->[2]]); 
 #  		return Route::_coord_as_string([split /,/, $_->[Strassen::COORDS]->[0]]);
 #  	    }
 #  	}
@@ -13631,6 +13298,21 @@ sub set_coords_usbahn {
 }
 
 ### AutoLoad Sub
+sub set_coords_bahn {
+    my($c, @tags) = @_;
+    @tags = $c->gettags('current') if !@tags;
+    return if !@tags;
+    if ($tags[0] =~ /^[ubr]-[bf]g/) {
+	Route::_coord_as_string([$tags[2], $tags[3]]);
+    } else {
+	my($item, @tags) = find_below($c, qw/u-bg b-bg u-fg u-bg r-bg r-fg/);
+	return if !defined $item;
+	set_coords($c, @tags); # hoffentlich keine Endlosrekursion...
+	#die "Tag [@tags] ist weder p, pp, o, s noch l sollte nicht vorkommen!";
+    }
+}
+
+### AutoLoad Sub
 sub user_edit_street {
     # XXX zur Zeit nur Löschen möglich
     return unless $net;
@@ -13663,11 +13345,6 @@ sub set_usercross_image {
 	$usercross_photo =
 	    load_photo($top, 'usercross.' . $default_img_fmt);
     }
-##XXX del:
-#  	    my($midx, $midy) =
-#  		(int(($points[2]->[0]-$points[1]->[0])/2+$points[1]->[0]),
-#  		 int(($points[2]->[1]-$points[1]->[1])/2+$points[1]->[1]),
-#  		);
     my($x1,$y1,$x2,$y2) = (split(/,/,$xy1), split(/,/,$xy2));
     my($midx,$midy) = (int(($x2-$x1)/2+$x1), int(($y2-$y1)/2+$y1));
     ($midx,$midy) = transpose($midx, $midy);
@@ -14152,11 +13829,26 @@ sub menuarrow_unmanaged {
 
 sub status_message {
     my($msg, $err) = @_;
-    if (!defined $err || $err eq 'info' || !$use_dialog) {
+    if (!defined $err || $err =~ /^info/ || !$use_dialog) {
 	if (!defined $progress) {
-	    warn "$msg\n";
+	    if (defined $err && $err eq 'info-stack-trace') {
+		require Carp;
+		Carp::cluck($msg);
+	    } else {
+		warn "$msg\n";
+	    }
 	} else {
+	    $msg =~ s/\n+\z//;
 	    $status_label->configure(-text => $msg);
+	    if ($msg =~ /\n/) {
+		set_status_button
+		    (-text => "OK",
+		     -command => sub {
+			 status_message("", "info");
+		     });
+	    } else {
+		remove_status_button();
+	    }
 	}
     } else {
 	# warn or error
@@ -14175,6 +13867,28 @@ sub status_message {
     if (defined $err && $err eq 'die') { # also die
 	require Carp;
 	Carp::confess($msg);
+    }
+}
+
+sub set_status_button {
+    my(%args) = @_;
+    $status_button->grid(-column => $status_button_column,
+			 -row => 0);
+    if (!$args{-command}) {
+	die "-command missing";
+    }
+    my $cmd = $args{-command};
+    $args{-command} = sub {
+	$cmd->();
+	remove_status_button();
+    };
+    $status_button->configure(%args);
+}
+
+sub remove_status_button {
+    if ($status_button->manager) {
+	$status_button->configure(-text => "", -command => \&Tk::NoOp);
+	$status_button->gridForget;
     }
 }
 
@@ -14235,6 +13949,10 @@ die "too many loops, please report, line " . __LINE__ if ($safe_loop++ > 100);
 	    if ($tags[0] =~ /^[ub]$/) {
 		return nearest_line_points($x, $y, @tags); # XXX
 	    }
+	} elsif ($net_type eq "rus") {
+	    if ($tags[0] =~ /^[ubr]$/) {
+		return nearest_line_points($x, $y, @tags); # XXX
+	    }
 	} else {
 	    if ($tags[0] =~ /^[sSlL]$/) {
 		return nearest_line_points($x, $y, @tags); # XXX
@@ -14270,12 +13988,19 @@ sub nearest_line_points {
 	$s = $str_obj{$type};
 	if (!defined $s) {
 	    if (exists $str_file{$type}) {
-		$str_obj{$type} = new Strassen $str_file{$type};
+		# XXX better: create a function type_to_filename
+		my $filename = ($coord_system eq 'standard'
+				? $str_file{$type}
+				: "$str_file{$type}-orig"
+			       );
+		$str_obj{$type} = new Strassen $filename;
 		$s = $str_obj{$type};
 	    }
 	    if (!defined $s) {
-		die "Streets not defined XXX";
+		die "Streets not defined for type $type, Filename is $str_file{$type} XXX";
 	    }
+	} else {
+	    $s->reload;
 	}
 	my $ret = $s->get($index);
 	if ($ret and @{$ret->[Strassen::COORDS]}) {
@@ -14336,7 +14061,12 @@ sub nearest_line_points {
 		}
 	    }
  	}
-	warn "nearest_line_points: failed 1st method, try 2nd...";
+	warn "nearest_line_points: failed 1st method
+Tags are @tags
+Type is $type
+Index is $index
+
+Try 2nd method...";
     } else {
 	die "Can't find index from tags: @tags";
     }
@@ -14345,14 +14075,16 @@ sub nearest_line_points {
     # hat einen *sehr* kurvigen Verlauf (90°-Kurven etc.).
     my(@coords_dist, $nearest_i);
     my $i;
-    for($i = 0; $i < $#coords; $i+=2) {
-	my($lx, $ly) = ($coords[$i], $coords[$i+1]);
-	push(@coords_dist,
-	     Strassen::Util::strecke([$x, $y],
-				     [$coords[$i], $coords[$i+1]]));
-	if (!defined $nearest_i or
-	    $coords_dist[$nearest_i] > $coords_dist[-1]) {
-	    $nearest_i = $#coords_dist;
+    if ($#coords > 0) {
+	for($i = 0; $i < $#coords; $i+=2) {
+	    my($lx, $ly) = ($coords[$i], $coords[$i+1]);
+	    push(@coords_dist,
+		 Strassen::Util::strecke([$x, $y],
+					 [$coords[$i], $coords[$i+1]]));
+	    if (!defined $nearest_i or
+		$coords_dist[$nearest_i] > $coords_dist[-1]) {
+		$nearest_i = $#coords_dist;
+	    }
 	}
     }
     my @res = ([anti_transpose($x, $y)]);
@@ -14714,466 +14446,6 @@ sub hide_logo {
     }
 }
 
-# Funktionen für Darstellung einer berlinmap-Karte
-# XXX mehr in eval einklammern
-### AutoLoad Sub
-sub getmap {
-    my($x, $y, $type, %args) = @_;
-    if (!defined $x) {
-	my $e = $c->XEvent;
-	($x, $y) = ($c->canvasx($e->x), $c->canvasy($e->y));
-    }
-    if ($dont_delete_map && !$args{'-from_check'}) {
-	push @map_surround_img, $map_img;
-	undef $map_img;
-    } else {
-	delete_berlinmap();
-    }
-
-    if (!$map_draw) {
-	return;
-    }
-
-    my $rotate_cmd = '';
-    if (0 && $orientation eq 'portrait') { # XXXXXX
-	$rotate_cmd = ' | pnmrotate -noantialias 90 ';
-    } elsif ($orientation ne 'landscape') {
-	status_message(M"Die Karte kann nur im Landscape-Modus gezeichnet werden.", 'warn');
-	$map_draw = 0;
-	return;
-    }
-
-    if (!defined $type) {
-	$type = $map_default_type;
-    }
-
-    my $o = $Karte::map{$type};
-    if (!defined $o) {
-	$map_draw = 0;
-	die Mfmt("Dem Kartentyp %s kann kein Objekt zugeordnet werden", $type);
-    }
-    my $width  = $o->width;
-    my $height = $o->height;
-    my $bx1    = $o->x1;
-    my $by2    = $o->y2;
-    my $toppm  = $o->to_ppm;
-
-    my($mapx, $mapy, $mapxx, $mapyy);
-    if ($coord_system eq 'standard') {
-	($mapx, $mapy, $mapxx, $mapyy) = $o->coord
-	  ($o->standard2map(anti_transpose($x, $y)));
-    } elsif ($coord_system eq $type) {
-	($mapx, $mapy, $mapxx, $mapyy) = $o->coord(anti_transpose($x, $y));
-    } else {
-	($mapx, $mapy, $mapxx, $mapyy) = $o->coord($coord_system_obj->map2map($o, anti_transpose($x, $y)));
-	($bx1,$by2) = ($o->x1/$coord_system_obj->x1,
-		       $o->y2/$coord_system_obj->y2);
-	status_message("Transformation $coord_system nach $type", 'info');
-    }
-#    if ($orientation eq 'portrait') {
-#	my $swap = $mapxx;
-#	$mapxx = $mapyy;
-#	$mapyy = $swap;
-#    }
-
-#warn "x,y=$x, $y; anti_transpose=" . anti_transpose($x, $y)."mapx/y=($mapx, $mapy, $mapxx, $mapyy)";
-
-    # XXX da berlinmap-Koordinaten gegenüber den Standard-Koordinaten (Hafas)
-    # gedreht sind, stimmt die Karte mit den Vektoren an den Rändern
-    # nicht mehr überein.
-    my($newwidth, $newheight);
-    my($deltax, $deltay);
-    {
-	my($xx, $yy); # Zuweisung weiter oben machen XXX
-	if ($coord_system eq 'standard' ||
-	    ($coord_system ne $type)) {
-	    ($xx, $yy) = ($bx1, $by2);
-	} else {
-	    ($xx, $yy) = (1, 1);
-	}
-	my($x0, $y0, $x1, $y1, $xd, $yd) =
-	  (transpose(0, 0),
-	   transpose($width  * $xx,
-		     $height * $yy),
-	   transpose($mapxx * $xx,
-		     $mapyy * $yy),
-	  );
-	($newwidth, $newheight) = map { int } (abs($x1-$x0), abs($y1-$y0));
-	($deltax, $deltay)      = (abs($xd-$x0), abs($yd-$y0));
-    }
-
-    my $filename = get_file_or_url($o, $mapx, $mapy);
-
-## XXX geht nicht :(
-#     # Hack: lieber XPM statt GIF verwenden, weil schneller und 8bit
-#     if ($filename =~ m|^(.*map)/(...)\.gif$|) {
-# 	my($dir, $coord) = ($1, $2);
-# 	my $xpmfile = $dir . "_xpm/$coord.xpm.gz";
-# 	if (-f $xpmfile) {
-# 	    require Tk::Pixmap;
-# 	    $filename = "$tmpdir/$coord.xpm";
-# 	    system("zcat $xpmfile > $filename");
-# 	    $tmpfiles{$filename}++;
-# 	    $toppm = "xpmtoppm";
-# 	}
-#     }
-
-    my $tmpfile;
-    if (! -r $filename || ! -f $filename) {
-	warn "Map $filename non-existent!\n";
-	if ($devel_host && $type eq 'brbmap' && -d "$FindBin::RealBin/misc") {
-	    eval q{
-		use DB_File;
-		use Fcntl;
-		my %gismap;
-		tie %gismap, 'DB_File', "$FindBin::RealBin/misc/gismap_missing",
-		    O_CREAT|O_RDWR, 0644, $DB_HASH;
-		$gismap{$filename}++;
-		untie %gismap;
-	    };
-	    warn __LINE__ . ": $@" if $@;
-	    $c->createRectangle($x-$deltax, $y-$deltay,
-				$x+$newwidth-$deltax, $y+$newheight-$deltay,
-				-fill => 'white',
-				-outline => 'red', -tags => 'map');
-	    my $ci = $Karte::GISmap::obj->coord_from_filename($filename);
-	    if (defined $ci) {
-		$c->createText($x+$newwidth/2-$deltax,
-			       $y+$newheight/2-$deltay,
-			       -anchor => 'c',
-			       -text => $ci,
-			       -tags => 'map');
-	    }
-	    restack_delayed();
-	}
-	if (0 && $type ne 'brbmap' && $map_default_type ne 'brbmap') { # XXXX ("0 &&")
-	    getmap($x, $y, 'brbmap', -recursive => 1);
-	} elsif ($type ne 'berlinmap' && $map_default_type ne 'berlinmap') {
-#	    getmap($x, $y, 'berlinmap', -recursive => 1);
-	} else {
-	    $top->bell;
-	    status_message(Mfmt("Die Datei <%s> existiert nicht.", $filename),
-			   'warn');
-	    $map_draw = 0;
-	}
-	goto CLEANUP;
-    }
-    $tmpfile = "$tmpdir/bbbikemap.$$";
-
-    my $convert_image = sub {
-	my($filename, $nofail) = @_;
-	my $map_img;
-	if ($newwidth  != $width ||
-	    $newheight != $height ||
-	    $rotate_cmd ne '' ||
-	    $map_color =~ /^(mono|pixmap|gray)$/
-	   ) {
-	    my $cmd;
-	    $cmd = "$toppm $filename " .
-	      $rotate_cmd .
-		" | pnmscale -xsize $newwidth -ysize $newheight ";
-	    if ($map_color eq 'color') {
-		$cmd .= " > $tmpfile";
-	    } elsif ($map_color eq 'gray') {
-		$cmd .= " | ppmtopgm | ppmtobmp > $tmpfile";
-	    } elsif ($map_color eq 'pixmap') {
-		$cmd .= " | ppmquant 256 | ppmtoxpm > $tmpfile";
-	    } elsif ($map_color eq 'mono') {
-		$cmd .= " | ppmtopgm | pgmtopbm -floyd | pbmtoxbm > $tmpfile";
-	    } else { die }
-	    warn "Doing system <$cmd>\n" if $verbose;
-	    system($cmd);
-	    if ($?) {
-		return undef if $nofail;
-		status_message(Mfmt("Die Karte <%s> kann nicht mit " .
-				    "<%s> und <pnmscale> " .
-				    "konvertiert werden.", $filename, $toppm),
-			       'warn');
-		$map_draw = 0;
-		goto CLEANUP;
-	    }
-	    eval {
-		$map_img = image_from_file($top, $tmpfile,
-					   -colormode => $map_color,
-					   -mimetype => "image/x-ppm");
-	    };
-	    warn $@ if $@;
-	} else {
-	    eval {
-		$map_img = image_from_file($top, $filename,
-					   -colormode => $map_color,
-					   -mimetype => $o->mimetype);
-	    };
-	    warn $@ if $@;
-	}
-	$map_img;
-    };
-
-    status_message("");
-    $progress->Init; # (-dependents => $c);
-
-    IncBusy($top);
-    eval {
-	eval {
-	    die "map_color=$map_color rotate_cmd=$rotate_cmd"
-	      if $map_color ne 'color' or $rotate_cmd ne '';
-	    die "newwidth=$newwidth width=$width " .
-	      "newheight=$newheight height=$height"
-		if $newwidth == $width and $newheight == $height;
-	    require GfxConvert;
-	    GfxConvert::transform_image($filename, $tmpfile,
-					-in_mime => $o->mimetype,
-					-out_mime => $o->mimetype,
-					-width => $newwidth,
-					-height => $newheight);
-	    $map_img = $top->Photo(-file => $tmpfile);
-	};
-	warn __LINE__ . ": $@" if $@ and $verbose;
-	if ($@ || !defined $map_img) {
-	    $map_img = $convert_image->($filename);
-	}
-	if (!defined $map_img) {
-	    status_message($@, 'warn');
-	    $map_draw = 0;
-	    return;
-	}
-	if ($verbose) {
-	    warn "Create image $map_img at (", $x-$deltax, "/", $y-$deltay,
-		 ") with anchor nw";
-	}
-	$c->createImage($x-$deltax, $y-$deltay,
-			-image => $map_img,
-			-anchor => 'nw', -tags => ['map']);
-
-	if ($map_surround && !$o->noenvironment) {
-	    $escape = 0;
-	    my $progress_count = 1;
-	LOOP: foreach my $ix (-1 .. 1) {
-		foreach my $iy (-1 .. 1) {
-		    next if $ix == 0 and $iy == 0;
-		    $progress->Update($progress_count/9); $progress_count++;
-		    last LOOP if ($escape);
-		    my $filename = get_file_or_url($o,
-						   $o->incx($mapx, $ix),
-						   $o->incy($mapy, $iy));
-		    next if ! -r $filename || ! -f $filename;
-		    my $img = $convert_image->($filename, 'nofail');
-		    next if !defined $img;
-		    $c->createImage($x-$deltax+($ix*$newwidth),
-				    $y-$deltay+($iy*$newheight),
-				    -image => $img,
-				    -anchor => 'nw', -tags => ['map']);
-		    push @map_surround_img, $img;
-		}
-	    }
-	}
-
-	restack_delayed();
-    };
-  CLEANUP:
-    unlink($tmpfile) if defined $tmpfile;
-    $progress->Finish;
-    DecBusy($top);
-}
-
-### AutoLoad Sub
-sub get_file_or_url {
-    my($o, $mapx, $mapy) = @_;
-    my $filename;
-  TRY: {
-      TRYCACHE: {
-	    # Cachefile verwenden, falls gewünscht und möglich
-	    if ($use_wwwcache && $o->can('cache')) {
-		my $tmpfile = $o->cache($mapx, $mapy, 0);
-		# $tmpfile löschen? XXX überprüfen!
-		if (-f $tmpfile) {
-		    $filename = $tmpfile;
-		    last TRY; # Erfolg
-		}
-	    }
-	}
-
-	  my $get_by_lwp = sub {
-	      if ($do_wwwmap && $o->can('url')) {
-		  my $ua = get_user_agent();
-		  if (!$ua) {
-		      return; # kein Erfolg
-		  }
-		  my $res;
-		  my $tmpurlfile;
-		  my $content = "";
-		  my $get_content = sub {
-		      my($chunk, $res, $prot) = @_;
-		      $top->update;
-		      die "Aborted" if ($escape);
-		      $content .= $chunk;
-		  };
-		  my $req_url = $o->url($mapx, $mapy);
-
-		  IncBusy($top);
-		  eval {
-		      my $req = HTTP::Request->new('GET', $req_url);
-		      $tmpurlfile = "$tmpdir/bbbike_url.$$";
-		      print STDERR
-			  Mfmt("Die URL <%s> wird geholt (LWP) ... ",
-			       $req->url);
-		      $escape = 0;
-		      $res = $ua->request($req, $get_content, 1024);
-		  };
-		  DecBusy($top);
-
-		  if (!defined $res || !$res->is_success || $content eq '') {
-		      if (!$res) {
-			  status_message(Mfmt("Keine Antwort von %s",
-					      $req_url));
-		      } else {
-			  status_message($res->as_string);
-		      }
-		      return; # kein Erfolg
-		  } else {
-		      if (!open(TMP, ">$tmpurlfile")) {
-			  status_message
-			      (Mfmt("Kann auf %s nicht schreiben: %s",
-				    $tmpurlfile, $!));
-			  return;
-		      }
-		      binmode TMP;
-		      print TMP $content;
-		      close TMP;
-		  }
-		  print STDERR "OK\n";
-		  $filename = $tmpurlfile;
-		  $tmpfiles{$tmpurlfile}++;
-		  # Cachefile erstellen
-		  if ($use_wwwcache && $o->can('cache')) {
-		      my $cachefile = $o->cache($mapx, $mapy, 1);
-		      if ($cachefile) {
-			  copy($filename, $cachefile);
-		      }
-		  }
-		  return 1;
-	      }
-	      return 0;
-	  };
-
-	  # XXX %tk_widget-Lösung funktioniert nicht optimal
-	  # besser mit fork, auch unter Win32, arbeiten!
-	  # (aber zunächst unter win98 und winnt austesten!)
-	  my $get_by_http_pm = sub {
-	      if ($do_wwwmap && $o->can('url')) {
-		  eval { require Http };
-		  if ($@) {
-		      status_message($@, 'warn') if $verbose;
-		      return; # wirklich kein Erfolg
-		  }
-		  $Http::tk_widget = $top;
-		  my %res;
-		  my $tmpurlfile;
-		  my $requrl;
-
-		  my $t = $top->Toplevel(-title => "Abort");
-		  $t->transient($top) if $transient;
-		  $t->Button(-text => "Abort WWW",
-			     -command => sub {
-				 $abortWWW = -1;
-			     })->pack;
-		  $t->Popup(@popup_style);
-
-		  IncBusy($top);
-		  eval {
-
-		      $requrl = $o->url($mapx, $mapy);
-		      $tmpurlfile = "$tmpdir/bbbike_url.$$";
-		      open(WWW, ">$tmpurlfile") or
-			  die Mfmt("Kann auf die Datei %s nicht schreiben: %s", $tmpurlfile, $!);
-		      binmode WWW;
-		      print STDERR
-			  Mfmt("Die URL <%s> wird geholt (Http.pm) ... ",
-			       $requrl);
-		      $abortWWW = 0;
-		      %res = Http::get("url" => $requrl,
-				       ($proxy ? ("proxy" => $proxy) : ()),
-				       "debug" => $verbose,
-				       "waitVariable" => \$abortWWW,
-				      );
-		      if ($res{"error"} == 200 && $abortWWW != -1) {
-			  print WWW $res{"content"};
-		      }
-		      close WWW;
-		  };
-		  DecBusy($top);
-
-		  $t->destroy if Tk::Exists($t);
-
-		  if ($res{"error"} != 200) {
-		      status_message(Mfmt("Fehler beim Holen der URL %s",
-					  $requrl));
-		      return; # kein Erfolg
-		  }
-		  if ($abortWWW == -1) {
-		      status_message(Mfmt("Benutzerabbruch beim Holen der URL %s",
-					  $requrl));
-		      return; # kein Erfolg
-		  }
-		  print STDERR "OK\n";
-		  $filename = $tmpurlfile;
-		  $tmpfiles{$tmpurlfile}++;
-		  # Cachefile erstellen
-		  if ($use_wwwcache && $o->can('cache')) {
-		      my $cachefile = $o->cache($mapx, $mapy, 1);
-		      if ($cachefile) {
-			  copy($filename, $cachefile);
-		      }
-		  }
-		  return 1;
-	      }
-	      return 0;
-	  };
-
-	  $get_by_http_pm->()
-	      ||
-	  $get_by_lwp->()
-	      ;
-    }
-    if (!defined $filename) {
-	$filename = $o->filename($mapx, $mapy);
-    }
-    $filename;
-}
-
-### AutoLoad Sub
-sub get_user_agent {
-    return $ua if defined $ua;
-    eval { require LWP::UserAgent };
-    return undef if $@;
-    $ua = LWP::UserAgent->new;
-    $ua->agent("$progname/$VERSION");
-    $ua->timeout(30);
-    $ua->env_proxy;
-    if ($os eq 'win' && eval { require Win32Util; 1 }) {
-	Win32Util::lwp_auto_proxy($ua);
-    }
-    if ($proxy) {
-	$ua->proxy(['http','ftp'], $proxy);
-    }
-    $ua;
-}
-
-### AutoLoad Sub
-sub delete_berlinmap {
-    $c->delete('map');
-    if (defined $map_img) {
-	eval { $map_img->delete };
-	undef $map_img;
-    }
-    if (@map_surround_img) {
-	foreach (@map_surround_img) {
-	    eval { $_->delete }; # möglicherweise nicht mehr vorhanden
-	}
-	undef @map_surround_img;
-    }
-}
-
 ######################################################################
 # Utilities ...
 
@@ -15483,6 +14755,9 @@ sub update_last_loaded_menu {
     my $last_loaded_obj = shift;
     my $last_loaded_menu = $last_loaded_obj->{Menu};
     return unless $last_loaded_menu;
+    if (!Tk::Exists($last_loaded_menu)) {
+	die "XXX Can't update last loaded menu $last_loaded_menu";
+    }
     $last_loaded_menu->delete(0, 'end');
     if (!@{ $last_loaded_obj->{List} }) {
 	$last_loaded_menu->command(-label => "Flaschen leer",# kein M
@@ -15518,30 +14793,6 @@ sub fast_settings {
     $autosave_opts = 0; # besser ist's
 }
 
-### AutoLoad Sub
-sub reload_all {
-    my %change;
-    foreach my $file (keys %old_mtime) {
-	if ($old_mtime{$file} < (stat($file))[STAT_MODTIME]) {
-	    my($linetype, $type) = @{$mtime_file_type{$file}}[0, 1];
-	    if (($linetype eq 'str' and $str_draw{$type}) or
-		($linetype eq 'p'   and $p_draw{$type})) {
-		$change{$linetype}->{$type} = 1;
-	    }
-	}
-    }
-    $progress->InitGroup;
-    while(my($linetype, $v) = each %change) {
-	while(my($type, $vv) = each %$v) {
-	    if ($verbose) {
-		warn "Updating $linetype $type ...\n";
-	    }
-	    plot($linetype,$type, FastUpdate => 1);
-	}
-    }
-    $progress->FinishGroup;
-}
-
 sub set_mouse_desc {
     if ($special_edit eq 'radweg') {
 	$mouse_text[1] = M"Radweg editieren";
@@ -15563,78 +14814,6 @@ sub set_mouse_desc {
 	} else {
 	    $mouse_text[3] = M"Gesamte Route löschen";
 	}
-    }
-}
-
-# Automatisches Scrolling, wenn der Benutzer die Maus zum Rand des Canvases
-# bewegt.
-### AutoLoad Sub
-sub start_followmouse {
-    # Bei Versionen bis einschließlich 800.013 kann man mit dieser
-    # Funktion Tk zum Absturz bringen.
-    # Hmmm... anscheinend auch mit 800.022 schlecht. containing() scheint
-    # böse zu sein. Aber 803.023 scheint zu gehen...
-    return $Tk::VERSION < 803;
-    stop_followmouse(); # vorsichtshalber...
-    my $scroll_lock;
-    my $followmouse_last;
-    my $set_scroll_lock = sub {
-	$scroll_lock = $c->after(100,
-				 sub { undef $scroll_lock });
-    };
-    $followmouse_repeat = $c->repeat
-      (10, sub {
-	   return if !$c;
-	   my $e = $c->XEvent;
-	   return if $scroll_lock or !$e;
-	   # XXX Das hier scheint böse zu sein:
-	   my $under_w = $c->containing($e->X, $e->Y);
-	   if (!defined $under_w or $under_w ne $c) {
-	       undef $followmouse_last;
-	       return;
-	   }
-	   my($x, $y) = ($e->x, $e->y);
-	   my $real_canvas_width  = $c->width;
-	   my $real_canvas_height = $c->height;
-	   my $pad = 30;
-	   if ($x < $pad) {
-	       $c->xview(scroll => -1, 'units');
-	       $set_scroll_lock->();
-	   }
-	   if ($y < $pad) {
-	       # Das Scrollen nach oben um 0.3 Sekunden verzögern, weil
-	       # der Benutzer evtl. nur das Menü erreichen wollte.
-	       my $now = Tk::timeofday();
-	       if (!defined $followmouse_last) {
-		   $followmouse_last = $now;
-		   return;
-	       }
-	       if (defined $followmouse_last and
-		   $followmouse_last+.300 < $now ) {
-	       } else {
-		   return;
-	       }
-	       $c->yview(scroll => -1, 'units');
-	       $set_scroll_lock->();
-	   } else {
-	       undef $followmouse_last;
-	   }
-	   if ($x > $real_canvas_width-$pad) {
-	       $c->xview(scroll => +1, 'units');
-	       $set_scroll_lock->();
-	   }
-	   if ($y > $real_canvas_height-$pad) {
-	       $c->yview(scroll => +1, 'units');
-	       $set_scroll_lock->();
-	   }
-       });
-}
-
-### AutoLoad Sub
-sub stop_followmouse {
-    if ($followmouse_repeat) {
-	$followmouse_repeat->cancel;
-	undef $followmouse_repeat;
     }
 }
 
@@ -15684,7 +14863,21 @@ sub set_fonts {
 		if (defined $font_weight && $font_weight ne '') {
 		    $a{-weight} = $font_weight;
 		}
-		$std_font = $top->fontCreate(%a);
+		eval {
+		    $std_font = $top->fontCreate(%a);
+		};
+		if ($@) {
+		    my $err = $@;
+		    $std_font = "helvetica 10";
+		    warn Mfmt("Fehler beim Definieren des Zeichensatzes:\n" .
+			      "%s\n" .
+			      "Fallback auf den Zeichensatz <%s>.\n",
+			      $err, $std_font) .
+			 wrap("", "",
+			      Mfmt("Dieser Fehler kann möglicherweise durch Korrigieren der Einträge <fontfamily> und <fontheight> in <%s> oder <*font> in <~/.Xdefaults> behoben werden.",
+				   catfile($bbbike_configdir, "config"))) .
+			 "\n";
+		}
 		$top->optionAdd('*font' => $std_font, 'userDefault');
 	    } else {
 		$std_font = $get_std_font->();
@@ -15911,118 +15104,6 @@ sub accept_drop {
     }
 }
 
-# Zeigt den Dialog mit den Routen-Registern an.
-### AutoLoad Sub
-sub show_register {
-    my $t = redisplay_top($top, M"Register",
-			  -title => M"Routen-Register");
-    return if !defined $t;
-
-    $t->protocol('WM_DELETE_WINDOW', sub { $t->withdraw });
-
-    $t->Label(-text => M("Abspeichern").":")->grid(-row => 0,
-						   -column => 0,
-						   -sticky => 'w');
-    $t->Label(-text => M("Anzeigen").":")->grid(-row => 1,
-						-column => 0,
-						-sticky => 'w');
-    $t->Checkbutton(-text => M("Karte zentrieren"),
-		    -variable => \$register_window_adjust)
-	->grid(-row => 2, -column => 0, -sticky => "w", -columnspan => 2);
-    my $sf = $t->Frame->grid(-row => 0, -column => 1,
-			     -sticky => 'w');
-    my $rf = $t->Frame->grid(-row => 1, -column => 1,
-			     -sticky => 'w');
-
-#XXX issues ... see below
-#      $t->Button(-text => M("In Datei speichern"),
-#  	       -command => \&save_register_routes,
-#  	      )->grid(-row => 0,
-#  		      -column => 2,
-#  		      -sticky => 'we');
-#      $t->Button(-text => M("Von Datei laden"),
-#  	       -command => \&load_register_routes,
-#  	      )->grid(-row => 1,
-#  		      -column => 2,
-#  		      -sticky => 'we');
-
-    my @ret_b;
-    foreach my $i (0 .. 9) {
-	my $ii = $i;
-	my $text = (!$ii ? M"Undo" : $ii);
-	my $b;
-	$b = $sf->Button
-	    (-text => $text,
-	     -command => sub {
-		 if ($save_route{$ii}) {
-		     require Tk::Dialog;
-		     if ($top->Dialog
-			 (-text    => M"Gespeicherte Route ersetzen?",
-			  -buttons => [M"Ja", M"Nein"],
-			  -default_button => M"Nein",
-			 )->Show ne M"Ja") {
-			 return;
-		     }
-		 }
-		 save_route_to_register($ii);
-		 $ret_b[$ii]->configure(-fg => 'red');
-		 $b->configure(-fg => 'red');
-
-		 if ($balloon) {
-		     my $text = get_route_description();
-		     if ($text ne '') {
-			 foreach ($b, $ret_b[$ii]) {
-			     $balloon->attach($_, -msg => $text);
-			 }
-		     }
-		 }
-	     }
-	    )->pack(-side => 'left');
-	$ret_b[$i] = $rf->Button
-	    (-text => $text,
-	     -command => sub {
-		 if (get_route_from_register($ii)) {
-		     center_whole_route() if $register_window_adjust;
-		 } else {
-		     $top->messageBox
-			 (-title => M"Leeres Register",
-			  -text => M"Hier ist keine Route gespeichert.",
-			  -icon => 'error',
-			  -type => 'Ok');
-		 }
-	     }
-	    )->pack(-side => 'left');
-    }
-}
-
-# XXX issues: doesn't work for first route???
-# XXX can't continue search (but this is also true for normal register routes)
-# XXX evtl. croaks on not defined added points in net
-# XXX bikepwr values are not valid in new session
-# XXX really use .bbrs extension?
-### AutoLoad Sub
-sub save_register_routes {
-    my $f = $top->getSaveFile(-defaultextension => ".bbrs");
-    return unless $f;
-    open(F, ">$f") or die "Can't write to $f: $!"; # XXX language
-    require Data::Dumper;
-    print F Data::Dumper->new([\%save_route], ['*save_route'])->Indent(0)->Dump;
-    close F;
-}
-
-### AutoLoad Sub
-sub load_register_routes {
-    my $f = $top->getOpenFile(-title => M"Register laden",
-			      -filetypes => [['Register-Datei' => '.bbrs'],
-					     ['Alle Dateien' => '*']],
-			     );
-    return unless $f;
-    require Safe;
-    my $s = Safe->new;
-    $s->share(qw(%save_route));
-    $s->rdo($f);
-}
-
 
 # Return the start and goal streets of the current route
 ### AutoLoad Sub
@@ -16069,82 +15150,6 @@ sub get_bbox_area {
     abs(($bbox[2]-$bbox[0]) * ($bbox[3]-$bbox[1]));
 }
 
-# PDF-Export
-### AutoLoad Sub
-sub pdf_export {
-    my $file = $top->getSaveFile(-defaultextension => '.pdf');
-    return unless defined $file;
-    require BBBikeDraw;
-    open(OUT, ">$file") or
-	status_message
-	    (Mfmt("Kann auf %s nicht schreiben: %s",
-		  $file, $!));
-
-    my $scope = 'city';
-    if ($str_file{'l'}) {
-	if ($str_far_away{'l'}) {
-	    # XXX str_regions???
-	    $scope = 'wideregion';
-	} else {
-	    $scope = 'region';
-	}
-    }
-
-    my @draw = ('title');
-    push @draw, 'ampel' if ($p_draw{'lsa'});
-    push @draw, 'berlin' if ($p_draw{'g'});
-    push @draw, 'potsdam' if ($p_draw{'gP'});
-    push @draw, 'deutschland' if ($p_draw{'gD'});
-    push @draw, 'wasser' if ($str_draw{'w'});
-    push @draw, 'flaechen' if ($str_draw{'f'});
-    push @draw, 'ubahn' if ($str_draw{'u'});
-    push @draw, 'sbahn' if ($str_draw{'b'});
-    push @draw, 'rbahn' if ($str_draw{'r'});
-    push @draw, 'str' if ($str_draw{'s'});
-    push @draw, 'ort' if ($p_draw{'o'});
-    push @draw, 'wind';
-    push @draw, 'strname' if ($str_draw{'s'});
-
-    IncBusy($top);
-    eval {
-	my $draw = BBBikeDraw->new
-	    (ImageType => 'pdf',
-	     Coords => [map { join ",", @$_ } @realcoords],
-	     Fh => \*OUT,
-	     Scope => $scope,
-	     Geometry => 'auto', # landscape or portrait
-	     Draw => [@draw],
-	     NoInit => 1,
-	    );
-	if (!@realcoords) {
-	    # use visible map for bounding box
-	    my($minx,$miny,$maxx,$maxy) = $c->get_corners;
-	    ($minx,$miny) = anti_transpose($minx,$miny);
-	    ($maxx,$maxy) = anti_transpose($maxx,$maxy);
-	    $draw->set_bbox($minx,$miny,$maxx,$maxy);
-	    $draw->init;
-	    $draw->create_transpose;
-	} else {
-	    # else use bounding box of route
-	    $draw->init;
-	    $draw->pre_draw;
-	}
-	$draw->draw_map;
-	if (@realcoords) {
-	    $draw->draw_route;
-	}
-	$draw->flush;
-    };
-    my $err = $@;
-    DecBusy($top);
-    close OUT;
-    if ($err) {
-	unlink $file;
-	status_message(Mfmt("Die PDF-Datei konnte nicht erstellt werden. Grund: %s", $err), "error");
-	return;
-    }
-}
-
 # Erzeugt eine Backupdatei
 ### AutoLoad Sub
 sub make_backup {
@@ -16159,24 +15164,6 @@ sub make_backup {
 			   'err');
 	}
     }
-}
-
-# Vergleicht zwei Versionsnummern
-### AutoLoad Sub
-sub version_cmp {
-    my($a, $b) = @_;
-    my(@a) = split(/\./, $a);
-    my(@b) = split(/\./, $b);
-    local($^W) = 0; # non-numeric values possible
-    my $i = 0;
-    for($i = 0; $i <= $#a && $i <= $#b; $i++) {
-	last if $a[$i] =~ /^\D/ || $b[$i] =~ /^\D/;
-	my $cmp = $a[$i] <=> $b[$i];
-	if ($cmp != 0) {
-	    return $cmp;
-	}
-    }
-    ($#a > $#b ? 1 : $#a == $#b ? 0 : -1);
 }
 
 use your qw($StrassenNetz::VERBOSE $Strassen::VERBOSE $wettermeldung2::VERBOSE
@@ -16195,175 +15182,6 @@ sub set_verbose {
     $GfxConvert::VERBOSE      = $verbose;
     $Hooks::VERBOSE           = $verbose;
     $FURadar::VERBOSE         = $verbose;
-}
-
-# Gibt eine Meldung aus, wie Module nachinstalliert werden können.
-# XXX Besser wäre ein "interactive_require" statt "require".
-### AutoLoad Sub
-sub perlmod_install_advice {
-    my(@mod) = @_;
-    use vars qw(%perlmod_install_advice_seen);
-    @mod = grep { !exists $perlmod_install_advice_seen{$_} } @mod;
-    return if !@mod;
-    $perlmod_install_advice_seen{$_}++ for (@mod);
-    if ($auto_install_cpan) {
-	require AutoInstall::Tk;
-	my $r = AutoInstall::Tk::do_autoinstall_tk(@mod);
-	if ($r > 0) {
-	    for my $mod (@mod) {
-		warn "Re-require $mod...\n";
-		eval "require $mod";
-		die __LINE__ . ": $@" if $@;
-	    }
-	}
-    } else {
-	my $shell = ($os eq 'win' ? M"Eingabeaufforderung" : M"Shell");
-	status_message
-	    (
-	     Mfmt((@mod > 1
-		   ? "Die fehlenden Perl-Module können aus der %s mit dem Kommando\n"
-		   : "Das fehlende Perl-Modul kann aus der %s mit dem Kommando\n"), $shell) .
-	     "    perl -MCPAN -e \"install " . join(", ", @mod) . "\"\n" .
-	     M"aus dem Internet geholt und installiert werden.\n",
-
-	     "err");
-	0;
-    }
-}
-
-### AutoLoad Sub
-sub load_plugin {
-    my $file = shift;
-    $file .= ".pm" if ($file !~ /\.pm$/);
-    my($mod) = fileparse($file, '\..*');
-    if (-r $file) {
-	do $file;
-	$INC{"$mod.pm"} = $file;
-    } elsif (-r "$FindBin::RealBin/$file") {
-	do "$FindBin::RealBin/$file";
-	$INC{"$mod.pm"} = "$FindBin::RealBin/$file";
-    } else {
-	my $ok = 0;
-	if (!file_name_is_absolute($file)) {
-	    foreach my $d (@INC) {
-		if (-r "$d/$file") {
-		    do $file;
-		    $INC{"$mod.pm"} = "$d/$file";
-		    $ok = 1;
-		    last;
-		}
-	    }
-	}
-
-	if (!$ok) {
-	    eval 'require $file';
-	    if ($@) {
-		status_message(Mfmt("Die Datei %s konnte nicht geladen werden. Grund: %s", $file, $@), "error");
-		warn $@;
-		return;
-	    }
-	}
-    }
-    eval $mod.'::register()';
-    if ($@) {
-	status_message(Mfmt("Das Plugin %s konnte nicht registriert werden. Grund: %s", $mod, $@), "error");
-	warn $@;
-	return;
-    }
-}
-
-sub gps_interface {
-    my($label, $mod) = @_;
-
-    $mod = 'GPS::' . $mod;
-    my %extra_args;
-    if ($mod =~ s/_Test$//) {
-	$extra_args{"-test"} = 1;
-    }
-
-    my $modobj;
-    eval qq{
-	require $mod;
-    } . q{
-	$modobj = $mod->new;
-    };
-    if ($@ || !$modobj) {
-	if (!$@) {
-	    $@ = "\$modobj undefined";
-	}
-	my $err = $@;
-	status_message(Mfmt("Das Modul %s konnte nicht geladen werden. Grund: %s", $mod, $err), "error");
-	warn $err;
-	return;
-    }
-    my $file;
-    my $gps_route_info = {};
-    if ($modobj->transfer_to_file()) {
-	$file = $top->getSaveFile(-defaultextension => '.txt');
-	return unless defined $file;
-    } elsif ($modobj->can("tk_interface")) {
-	return if !$modobj->tk_interface(-top => $top,
-					 -gpsrouteinfo => $gps_route_info,
-					 -test => $extra_args{-test});
-    }
-
-    if ($export_txt_mode == EXPORT_TXT_FULL) {
-	status_message("Export mode: full", "info");
-    } elsif ($export_txt_mode == EXPORT_TXT_SIMPLIFY_NAME) {
-	$extra_args{"-routetoname"} = get_act_search_route();
-	status_message("Export mode: simplify name", "info");
-    } elsif ($export_txt_mode == EXPORT_TXT_SIMPLIFY_ANGLE) {
-	# XXX vielleicht einen Mode EXPORT_TXT_SIMPLIFY_AUTO_ANGLE
-	# (Kombination aus EXPORT_TXT_SIMPLIFY_ANGLE und
-	# EXPORT_TXT_SIMPLIFY_AUTO) einführen
-	$extra_args{"-routetoname"} = [StrassenNetz::simplify_route_to_name(get_act_search_route(), -minangle => $export_txt_min_angle)];
-	status_message("Export mode: simplify with angle $export_txt_min_angle°", "info");
-    } elsif ($export_txt_mode == EXPORT_TXT_SIMPLIFY_NAME_OR_ANGLE) {
-	$extra_args{"-routetoname"} =
-	    [StrassenNetz::simplify_route_to_name
-	     ([$net->route_to_name([@realcoords],-startindex=>0,-combinestreet=>0)],
-	      -minangle => $export_txt_min_angle, -samestreet => 1)];
-	status_message("Export mode: simplify with angle $export_txt_min_angle° or name", "info");
-    } elsif ($export_txt_mode == EXPORT_TXT_SIMPLIFY_AUTO) {
-	# XXX besser binäre Suche statt inkrementell
-	my $routetoname;
-	my $step = 5;
-	for(my $tryangle = 5; $tryangle <= 90; $tryangle+=$step) {
-	    $routetoname = [StrassenNetz::simplify_route_to_name
-			    ([$net->route_to_name([@realcoords],-startindex=>0,-combinestreet=>0)],
-			     -minangle => $tryangle, -samestreet => 1)];
-	    if (@$routetoname <= 50) { # XXX don't hardcode max. waypoints in route
-		status_message("Export simplify mode: auto; using $tryangle° as minimum angle", "info");
-		last;
-	    }
-	    if ($tryangle+$step > $export_txt_min_angle) {
-		$step = 15;
-	    }
-	}
-	$extra_args{"-routetoname"} = $routetoname;
-    }
-    eval {
-	my $res = $modobj->convert_from_route
-	    (Route->new_from_realcoords(\@realcoords),
-	     -streetobj   => $multistrassen || $str_obj{'s'},
-	     -netobj      => $net,
-	     -routename   => $gps_route_info->{Name},
-	     -routenumber => $gps_route_info->{Number},
-	     -wptsuffix   => $gps_route_info->{WptSuffix},
-	     -wptsuffixexisting => $gps_route_info->{WptSuffixExisting},
-	     -gpsdevice   => $gps_device,
-#x	     -gpsprotocol => $gps_protocol,
-	     %extra_args,
-	    );
-	$modobj->transfer(-file => $file,
-			  -res => $res,
-			  -test => $extra_args{-test},
-			  -top => $top);
-    };
-    if ($@) {
-	status_message
-	    (Mfmt("Schreiben auf <%s> nicht möglich: %s", $file, $@), 'err');
-    }
 }
 
 # crops the array in $want_extends to the limits in $extends

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: UTM.pm,v 1.6 2002/09/17 17:11:24 eserte Exp $
+# $Id: UTM.pm,v 1.8 2003/02/06 21:53:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN {
 }
 
 use base qw(Exporter);
-@EXPORT_OK = qw(ConvertDatum ConvToTM ConvFromTM %GRIDZN DegreesToGKK GKKToDegrees);
+@EXPORT_OK = qw(ConvertDatum ConvToTM ConvFromTM %GRIDZN DegreesToGKK GKKToDegrees UTMToDegrees DegreesToUTM);
 
 $UTMlat0 = 0;
 $UTMk0 = 0.9996;
@@ -501,15 +501,16 @@ sub ExtDegrees {
     }
 }
 
+# XXX changed to Tcl/Tk version: optional extra argument $z
 sub DegreesToGKK {
-    my($lat, $long, $datum) = @_;
+    my($lat, $long, $datum, $z) = @_;
     # convert from lat/long in signed degrees to German Krueger grid coords
     # zone codes: 0-5
 
     if ($long < -1.5 || $long > 16.5 || $lat < 0) {
 	return ("--", 0, 0);
     }
-    my $z = int(($long+1.5)/3);
+    $z = int(($long+1.5)/3) if !defined $z;
     my $long0 = 3.0*$z;
     my(@cs) = ConvToTM($lat, $long, 0, $long0, 1.0, $datum);
     my $x = sprintf("%.0f", $cs[0]+5e5+1e6*$z);
@@ -583,7 +584,7 @@ Yield the ellipsoid data for datum as a list with
 sub EllipsdData {
     my $datum = shift || "WGS 84";
 
-    my @d = @{ $GDATUM{$datum} }[0..3];
+    my @d = @{ $GDATUM{$datum} || die "Unknown datum $datum" }[0..3];
     my $def = $ELLPSDDEF{$d[0]};
     ($def->[0], 1.0/$def->[1], @d[1..$#d]);
 }
@@ -596,6 +597,8 @@ my($lat, $long) = @ARGV;
 foreach my $ref (\$lat, \$long) {
     if ($$ref =~ /\s+/) {
 	warn "DMS coord detected, converting to DDD\n";
+	require FindBin;
+	push @INC, "$FindBin::RealBin/..";
 	require Karte::Polar;
 	$$ref = Karte::Polar::dms_string2ddd($$ref);
     }

@@ -77,7 +77,7 @@ Müllrose	3 80057,-15845
 Golßen	3 25458,-48011
 Golzow	3 -43437,-15078
 Trebbin	3 -1872,-21560
-Seehausen	3 -101767,52956
+Seehausen|(Altmark)	3 -101767,52956
 Sandau	2 -81691,41717
 Glöwen	2 -79228,56031
 Kletzke	2 -81193,64728
@@ -173,7 +173,7 @@ Borgsdorf|/Nordbahn	2 1275,34191
 Schmachtenhagen	2 4441,40168
 Basdorf	2 11947,35642
 Birkenwerder|b. Berlin	2 1795,31291
-Hohen-Neuendorf|b. Berlin	2 944,29775
+Hohen Neuendorf|b. Berlin	2 944,29775
 Zepernick	2 19439,27959
 Lindenberg|b. Berlin	2 18343,22348
 Wandlitz	2 12985,38757
@@ -195,7 +195,7 @@ Paulinenaue	2 -36523,28823
 Damsdorf	2 -33895,-5654
 Plötzin	2 -28345,-5323
 Groß Kreutz	2 -32028,-958
-Geltow	2 -18588,-5302
+Geltow	2 -18481,-5259
 Caputh	2 -17068,-6941
 Tremmen	2 -29288,12951
 Heinersdorf	2 65715,7220
@@ -231,6 +231,7 @@ Bad Saarow-Mitte	2 55513,-11183
 Rauen	2 53155,-7563
 Sperenberg	2 8630,-29344
 Bestensee	2 26300,-17770
+Trebatsch	2 64005,-34326
 Wendisch Rietz	2 52248,-20510
 Glienicke	2 57671,-20413
 Herzberg|bei Lindenberg	2 59975,-19640
@@ -267,6 +268,9 @@ Ratzdorf	2 103953,-34626
 Ruhlsdorf|b. Teltow	1 1092,-3662
 Groß Wasserburg	1 42128,-37485
 Leibsch	1 43553,-35285
+Hohenbrück	1 45791,-33574
+Neu Schadow	1 47180,-34254
+Neuendorf|am See	1 45446,-32338
 Leipe	1 56020,-59933
 Diedersdorf	1 7529,-7445
 Brusendorf	1 18276,-10557
@@ -402,7 +406,7 @@ Berkenbrück	1 61496,-4560
 Demnitz	1 64539,-651
 Falkenberg	1 67252,-1157
 Alt Madlitz	1 70539,-596
-Petersdorf	1 74687,-3168
+Petersdorf|(bei Briesen)	1 74687,-3168
 Sieversdorf	1 76668,-1095
 Pillgram	1 78432,-6359
 Biegen	1 76409,-8709
@@ -599,6 +603,8 @@ Gräningen	1 -52851,18297
 Buckow|b. Nennhausen	1 -47898,18457
 Garlitz	1 -46976,17072
 Freiwalde	1 35131,-48439
+Hartmannsdorf|(Spreewald)	1 44802,-47865
+Biebersdorf	1 50945,-45655
 Kuhlhausen	1 -71825,41055
 Jederitz	1 -75994,43307
 Buckwitz	1 -51970,50266
@@ -636,6 +642,8 @@ Neu Golm	1 57816,-10198
 Alt Golm	1 59929,-9703
 Wilmersdorf	1 60925,-15075
 Pfaffendorf	1 62887,-14196
+Neubrück|(Spree)	1 70464,-13178
+Drahendorf	1 67513,-11414
 Glienick	1 9432,-17144
 Saalow	1 10004,-23796
 Rehagen	1 8409,-26529
@@ -666,12 +674,23 @@ Groß Eichholz	1 43382,-26563
 Bugk	1 46425,-22612
 Kehrigk	1 46647,-26173
 Alt Schadow	1 48730,-30689
+Werder|(bei Alt Schadow)	1 54303,-31126
+Plattkow	1 53516,-32151
+Kossenblatt	1 57314,-31055
+Briescht	1 60390,-31817
+Kummerow	1 67533,-27963
+Zeust	1 70459,-28384
+Kohlsdorf	1 65777,-25792
+Ranzig	1 65297,-30420
+Leißnitz	1 67200,-31248
+Pretschen	1 51835,-34308
 Dahmsdorf	1 51132,-18123
 Diensdorf	1 56508,-16406
 Limsdorf	1 53544,-26457
 Ahrensdorf	1 57190,-24402
 Görsdorf	1 58350,-27023
 Falkenberg|b. Beeskow	1 60802,-25909
+Bornow|b. Beeskow	1 65283,-24577
 Tauche	1 63110,-26693
 Giesensdorf	1 60958,-28510
 Stremmen	1 63245,-29230
@@ -801,6 +820,11 @@ Jühnsdorf	1 9375,-11386
 Falkenhagen	0 -10105,17597
 Finow	0 31748,48841
 Buckow|b. Lichterfelde	0 31586,54001
+Karutzhöhe	0 35072,843
+Neu-Buchhorst	0 34066,1588
+Hubertushöhe|(bei Storkow)	0 49574,-18191
+Birkholz|bei Märkisch Buchholz	0 39679,-31433
+Klein Wasserburg	0 40497,-33927
 Köthen|b. Märkisch Buchholz	0 39156,-35870
 Pagram	0 82745,-6734
 Rosengarten	0 83574,-5047
@@ -862,6 +886,8 @@ Heidekrug	0 48480,9252
 Liebenhof	0 51534,17277
 Wilkendorf	0 44217,23596
 Schönholz	0 33729,42170
+Kaisermühl|(bei Müllrose)	0 82534,-15904
+Schlaubehammer	0 84241,-15602
 Döberitz	0 -13320,13879
 Krampnitz	0 -13256,5563
 Leest	0 -21041,2561
@@ -950,12 +976,15 @@ Fürstenwalde Südwest	0 52806,-4301
 Pieskow	0 56033,-14189
 Theresienhof	0 56590,-14999
 Lamitsch	0 62461,-14837
+Neuhaus	0 71533,-13752
+Biegenbrück	0 75952,-13508
 Streitberg	0 62549,-7117
 Roter Krug	0 62267,-5539
 Charlottenhof	0 61071,3030
 Dabendorf	0 12722,-18054
 Zehrensdorf	0 18294,-26168
 Neuhof|b. Wünsdorf	0 16423,-29456
+Motzenmühle	0 23347,-23406
 Waldeck	0 23826,-27137
 Egsdorf	0 23640,-29462
 Liepe|bei Pätz	0 27523,-19943
@@ -965,14 +994,20 @@ Hammer	0 34332,-27648
 Kolberg	0 38362,-17233
 Kleineichholz	0 40270,-20193
 Hermsdorf	0 38066,-26745
+Hermsdorfer Mühle	0 36271,-26173
 Klein Schauen	0 42738,-16904
 Busch	0 43083,-18034
+Sawall	0 64755,-35369
+Glowe|(Leißnitz)	0 66115,-32828
+Wittmannsdorf	0 56365,-35749
 Radlow	0 55424,-18051
 Behrensdorf	0 55266,-23276
 Mollendorf	0 53968,-25006
 Schwenow	0 55107,-28053
 Premsdorf	0 58261,-25850
 Wulfersdorf	0 59889,-27915
+Radinkendorf	0 70289,-20046
+Raßmannsdorf	0 69208,-14887
 Bollensdorf	0 30944,11860
 Hönow Nord	0 25828,17309
 Seeberg	0 29417,16463
@@ -996,7 +1031,7 @@ Grabow	0 -41509,7743
 Mötzow	0 -44749,5817
 Bollmannsruh	0 -38378,10756
 Vor Ketzin	0 -27274,10289
-Nedlitz	0 -14595,3086
+Nedlitz	0 -14445,3044
 Sacrow	0 -10408,2114
 Neuschmerzke	0 -44111,-1645
 Grüneiche	0 -45130,-12630

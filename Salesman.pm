@@ -1,20 +1,37 @@
 # -*- perl -*-
 
 #
-# $Id: Salesman.pm,v 1.9 2002/11/06 15:50:44 eserte Exp $
+# $Id: Salesman.pm,v 1.10 2003/01/17 19:33:42 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2003 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net/
+#
+
+#
+# Algorithm::Permute seems to be slightly faster, but dumps core
+# if "die"ing in the permute { } loop. This seems only to happen within
+# Tk callbacks.
+#
+# So we do not use Algorithm::Permute, just List::Permutor.
 #
 
 package Salesman;
-use List::Permutor; # this ones is better for larger lists
-#use Algorithm::Permute;
+BEGIN {
+#    eval 'use Algorithm::Permute';
+#    if ($@) {
+#	warn "$@, fallback to List::Permutor";
+	eval 'use List::Permutor;';
+	if ($@) {
+	    die $@;
+	}
+#    }
+}
+
 use strict;
 
 sub new {
@@ -99,7 +116,79 @@ sub _calculate_distances {
     }
 }
 
-sub best_path {
+#  sub best_path_algorithm_permute {
+#      my $self = shift;
+#      my $progress  = $self->{Progress};
+#      $main::escape = 0;
+
+#      if ($progress) {
+#  	$progress->Init(-label => "Abbruch mit Esc");
+#      }
+
+#      $self->_points; # XXX conditional?
+#      if (!$self->{Start} || !$self->{End}) {
+#  	return ();
+#      }
+
+#      if (!scalar keys %{ $self->{Distances} }) {
+#  	$self->_calculate_distances;
+#      }
+#      my@row = @{ $self->{Points} };
+#      my $count    = _fact(scalar @{ $self->{Points} });
+
+#      my $best_permute;
+#      my $shortest_path;
+#      my $distances = $self->{Distances};
+#      my $tk        = $self->{Tk};
+#      my $i = 0;
+#      eval {
+#  	Algorithm::Permute::permute(sub {
+#   PERMUTE:
+#  	my $permute = [@row];
+#  	$i++;
+#  	if ($i%500 == 0) {
+#  	    $progress->Update(0.5+0.5*($i/$count));
+#  	    if ($tk) {
+#  		$tk->update;
+#  		if ($main::escape) {
+#  		    CORE::die("User break, using best path at moment");
+#  		}
+#  	    }
+#  	}
+#  	unshift @$permute, $self->{Start};
+#  	push    @$permute, $self->{End};
+#  	my $pathlen = 0;
+#  	for(my $j = 1; $j <= $#$permute; $j++) {
+#  	    if (exists $distances->{$permute->[$j-1]}{$permute->[$j]}) {
+#  		$pathlen += $distances->{$permute->[$j-1]}{$permute->[$j]};
+#  	    } else {
+#  		#XXX to verbose: warn "No path for permutation @$permute";
+#  		next PERMUTE;
+#  	    }
+#  	}
+#  	if (!defined $shortest_path ||
+#  	    $shortest_path > $pathlen) {
+#  	    $shortest_path = $pathlen;
+#  	    $best_permute = $permute;
+#  	    warn "Best one is $shortest_path" if $main::verbose;
+#  	}
+#      }, @row);
+#      };
+#      warn $@ if $@;
+
+#      if ($progress) {
+#  	$progress->Finish;
+#      }
+
+#      if ($best_permute) {
+#  	warn "best one is: @$best_permute";
+#  	@$best_permute;
+#      } else {
+#  	();
+#      }
+#  }
+
+sub best_path_list_permutor {
     my $self = shift;
     my $progress  = $self->{Progress};
     $main::escape = 0;
@@ -116,8 +205,7 @@ sub best_path {
     if (!scalar keys %{ $self->{Distances} }) {
 	$self->_calculate_distances;
     }
-    #my(@permute) = Algorithm::Permute::permute($self->{Points});
-    my $permutor = new List::Permutor @{ $self->{Points} };
+    my $permutor = List::Permutor->new(@{ $self->{Points} });
     my $count    = _fact(scalar @{ $self->{Points} });
 
     my $best_permute;
@@ -126,7 +214,6 @@ sub best_path {
     my $tk        = $self->{Tk};
     my $i = 0;
  PERMUTE:
-    #	foreach my $permute (@permute) {
     while(1) {
 	my @row = $permutor->next;
 	last if !@row;
@@ -180,6 +267,12 @@ sub _fact {
 	_fact($_[0]-1)*$_[0];
     }
 }
+
+#if (defined &Algorithm::Permute::permute) {
+#    *best_path = \&best_path_algorithm_permute;
+#} else {
+    *best_path = \&best_path_list_permutor;
+#}
 
 1;
 

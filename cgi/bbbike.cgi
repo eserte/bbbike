@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.3 2003/01/07 19:46:05 eserte Exp $
+# $Id: bbbike.cgi,v 6.18 2003/05/19 20:23:39 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -19,29 +19,38 @@ bbbike.cgi - CGI interface to bbbike
 
 =cut
 
-BEGIN {
-    eval <<'EOF';
+use vars qw(@extra_libs);
 use FindBin;
-# Libraries müssen unten (Apache::) noch einmal aufgeführt werden!
-use lib (#"/home/e/eserte/src/bbbike",
-	 "$FindBin::RealBin/..", # falls normal installiert
-	 "$FindBin::RealBin/../lib",
-	 "$FindBin::RealBin/../BBBike", # falls in .../cgi-bin/... installiert
-	 "$FindBin::RealBin/../BBBike/lib",
-	 "$FindBin::RealBin/BBBike", # weitere Alternative
-	 "$FindBin::RealBin/BBBike/lib",
-	 "$FindBin::RealBin",
-	 "/home/e/eserte/lib/perl", # only for TU Berlin
-	);
-# Achtung: evtl. ist auch ~/lib/ für GD.pm notwendig (z.B. CS)
-EOF
-    if ($@) {
-	eval <<'EOF';
-	use lib qw(.. ../lib);
-	$FindBin::RealBin = ".";
-EOF
+BEGIN {
+    if ($ENV{SERVER_NAME} =~ /radzeit\.de$/) {
+	# Make it easy to switch between versions:
+	if ($FindBin::Script =~ /bbbike2/) {
+	    @extra_libs =
+		("$FindBin::RealBin/../BBBike2",
+		 "$FindBin::RealBin/../BBBike2/lib",
+		);
+	} else {
+	    @extra_libs =
+		("$FindBin::RealBin/../BBBike",
+		 "$FindBin::RealBin/../BBBike/lib",
+		);
+	}
+    } else {
+	# Achtung: evtl. ist auch ~/lib/ für GD.pm notwendig (z.B. CS)
+	@extra_libs =
+	    (#"/home/e/eserte/src/bbbike",
+	     "$FindBin::RealBin/..", # falls normal installiert
+	     "$FindBin::RealBin/../lib",
+	     "$FindBin::RealBin/../BBBike", # falls in .../cgi-bin/... installiert
+	     "$FindBin::RealBin/../BBBike/lib",
+	     "$FindBin::RealBin/BBBike", # weitere Alternative
+	     "$FindBin::RealBin/BBBike/lib",
+	     "$FindBin::RealBin",
+	     "/home/e/eserte/lib/perl", # only for TU Berlin
+	    );
     }
 }
+use lib (@extra_libs);
 
 use Strassen; # XXX => Core etc.?
 #use Strassen::Lazy; # XXX mal sehen...
@@ -50,7 +59,7 @@ use BBBikeVar;
 use BBBikeUtil qw(is_in_path min max);
 use CGI qw(-no_xhtml);
 use CGI::Carp; # Nur zum Debuggen verwenden --- manche Web-Server machen bei den kleinsten Kleinigkeiten Probleme damit: qw(fatalsToBrowser);
-use BrowserInfo 1.22;
+use BrowserInfo 1.31;
 use strict;
 use vars qw($VERSION $VERBOSE $WAP_URL
 	    $debug $tmp_dir $mapdir_fs $mapdir_url
@@ -60,6 +69,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $str $lstr $lstr2 $multistr $orte $orte2 $multiorte
 	    $ampeln $qualitaet_s_net $handicap_s_net
 	    $strcat_net $radwege_strcat_net $routen_net $comments_net
+	    $green_net
 	    $inaccess_str $crossings $kr $plz $net $multi_bez_str
 	    $overview_map
 	    $use_umland $use_umland_jwd $use_special_destinations
@@ -68,8 +78,9 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $bp_obj $bi $use_select
 	    $graphic_format $use_mysql_db $use_exact_streetchooser
 	    $cannot_gif_png $cannot_jpeg $cannot_pdf $cannot_svg $can_gif
-	    $can_palmdoc $can_mapserver
-	    $no_berlinmap $max_plz_streets $with_comments
+	    $can_palmdoc $can_mapserver $mapserver_address_url
+	    $mapserver_init_url $no_berlinmap $max_plz_streets $with_comments
+	    $use_coord_link
 	    @weak_cache @no_cache %proc
 	    $bbbike_script $bbbike_script_cgi $cgi $port
 	    $search_algorithm $use_background_image
@@ -92,9 +103,7 @@ eval q{local $SIG{'__DIE__'};
 Please change the configuration variables in the file bbbike.cgi.config
 (replace bbbike.cgi with the basename of the CGI script).
 
-=over
-
-=item Filesystem and URLs
+=head2 Filesystem and URLs
 
 =over
 
@@ -118,7 +127,10 @@ $mapdir_fs  = '/home/e/eserte/www/bbbike-tmp';
 =item $tmp_dir
 
 Temporary directory for cache files, weather data files etc. Default:
-the environment variables TMPDIR or TEMP or the C</tmp> directory.
+the environment variables TMPDIR or TEMP or the C</tmp> directory. A
+good platform-independent default is
+
+    do { require File::Spec; File::Spec->tmpdir }
 
 =cut
 
@@ -135,7 +147,7 @@ $use_cgi_bin_layout = 0;
 
 =back
 
-=item External programs
+=head2 External programs
 
 =over
 
@@ -164,7 +176,7 @@ $PLZ::OLD_AGREP      = $PLZ::OLD_AGREP; # peacify -w
 
 =back
 
-=item Web Server
+=head2 Web Server
 
 =over
 
@@ -205,7 +217,7 @@ $modperl_lowmem = 0;
 
 =back
 
-=item Imagemaps, graphic creation
+=head2 Imagemaps, graphic creation
 
 =over
 
@@ -304,7 +316,8 @@ $can_palmdoc = 0;
 
 =item $can_mapserver
 
-Set this to a true value if mapserver can be used. Default: false.
+Set this to a true value if mapserver can be used. Default: false. See
+below for special mapserver variables.
 
 =cut
 
@@ -312,7 +325,45 @@ $can_mapserver = 0;
 
 =back
 
-=item Appearance
+=head2 Mapserver
+
+=over
+
+=item $mapserver_dir
+
+Directory containing map and template html files.
+
+=item $mapserver_prog_relurl
+
+Relative URL to the mapserver cgi program.
+
+=item $mapserver_prog_url
+
+Absolute URL to the mapserver cgi program.
+
+=item $mapserver_init_url
+
+Absolute URL to the page which starts the mapserver program.
+
+=cut
+
+$mapserver_init_url = $BBBike::BBBIKE_MAPSERVER_INIT;
+
+=item $mapserver_address_url
+
+Absolute URL to the mapserver address cgi program.
+
+=cut
+
+$mapserver_address_url = $BBBike::BBBIKE_MAPSERVER_ADDRESS_URL;
+
+=item $bbd2esri_prog
+
+Path to the bbd2esri program.
+
+=back
+
+=head2 Appearance
 
 =over
 
@@ -377,9 +428,18 @@ is able to display tables.
 
 $with_comments = 1;
 
+=item $use_coord_link
+
+Use an own exact coordinate link (i.e. to Mapserver) instead of a
+"Stadtplan" link. Default: true:
+
+=cut
+
+$use_coord_link = 1;
+
 =back
 
-=item Data
+=head2 Data
 
 =over
 
@@ -410,7 +470,7 @@ $use_special_destinations = 0;
 
 =back
 
-=item Misc
+=head2 Misc
 
 =over
 
@@ -483,11 +543,14 @@ $temp_blocking_text = undef;
 
 =back
 
-=back
-
 =cut
 
 ####################################################################
+
+unshift(@Strassen::datadirs,
+	"$FindBin::RealBin/../data",
+	"$FindBin::RealBin/../BBBike/data",
+       );
 
 eval { local $SIG{'__DIE__'};
        #warn "$0.config";
@@ -557,7 +620,7 @@ use vars qw(@ISA);
 
 } # jetzt beginnt wieder package main
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.18 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -577,23 +640,9 @@ my $delim = '!'; # wegen Mac nicht ¦ verwenden!
 	     '-cache-control' => 'no-cache',
             );
 
-unshift(@Strassen::datadirs,
-        #"/home/e/eserte/src/bbbike/data",
-	"$FindBin::RealBin/../data",
-	"$FindBin::RealBin/../BBBike/data",
-       );
-
 if (defined %Apache::) {
     # workaround for "use lib" problem with Apache::Registry
-    'lib'->import(#"/home/e/eserte/src/bbbike",
-		"$FindBin::RealBin/..",
-	        "$FindBin::RealBin/../lib",
-		"$FindBin::RealBin/../BBBike",
-	        "$FindBin::RealBin/../BBBike/lib",
-		"$FindBin::RealBin/BBBike",
-		"$FindBin::RealBin/BBBike/lib",
-		"/home/e/eserte/lib/perl", # only for TU Berlin
-	       );
+    'lib'->import(@extra_libs);
 }
 
 # Konstanten für die Imagemaps
@@ -895,7 +944,8 @@ while (1) {
 			 '-quiet'    => 1,
 			 '-logging'  => 1,
 			 '-strlabel' => 1,
-			 '-force'    => 0);
+			 '-force'    => 0,
+			);
 	    }
 	}
 	exit(0);
@@ -979,7 +1029,7 @@ sub abc_link {
 	print "<img src=\"$bbbike_images/abc_hi.gif\" border=0 width=270 height=94 alt=\"\">";
 	print "</div>";
 	print <<EOF;
-<script language=javascript><!--
+<script type="text/javascript"><!--
 function ${type}char_init() { return any_init("${type}char"); }
 function ${type}char_highlight(Evt) { return any_highlight("${type}char", Evt); }
 function ${type}char_byebye(Evt) { return any_byebye("${type}char", Evt); }
@@ -991,7 +1041,7 @@ EOF
 
     } else {
 	print "<input type=image name=" . $type
-	  . "charimg src=\"$bbbike_images/abc.gif\" border=0 width=270 height=94 alt=\"A..Z\">";
+	  . "charimg src=\"$bbbike_images/abc.gif\" class=\"charmap\" alt=\"A..Z\">";
     }
 }
 
@@ -1323,9 +1373,10 @@ sub choose_form () {
  	print <<EOF;
 <table>
 <tr>
-<td valign="top"><img src="$bbbike_images/px_1t.gif" width=420 height=1><br>Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 2700 von 10000 Berliner Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
+<td valign="top">@{[ blind_image(420,1) ]}<br>Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 2800 von 10000 Berliner Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
 Nebenstra&szlig;en). Bei nicht erfassten Straßen wird automatisch die
-nächste bekannte verwendet.</td>
+nächste bekannte verwendet.<br>
+<i>Neu</i>: In der Datenbank sind jetzt auch ca. 120 Potsdamer Stra&szlig;en.</td>
 <td valign="top" @{[ $start_bgcolor ? "bgcolor=$start_bgcolor" : "" ]}>@{[ teaser() ]}</td>
 </tr>
 </table>
@@ -1378,16 +1429,15 @@ EOF
 	my $tryempty  = 0;
 	my $no_td     = 0;
 
-	print "<a name=\"$type\"></a>";
 	if ($bi->{'can_table'}) {
-	    print "<tr id=${type}tr $bgcolor_s><td align=center valign=middle width=40><img src=\"$imagetype\" border=0 alt=\"$printtype\"></td>";
+	    print "<tr id=${type}tr $bgcolor_s><td align=center valign=middle width=40><a name=\"$type\"><img src=\"$imagetype\" border=0 alt=\"$printtype\"></a></td>";
 	    my $color = {'start' => '#e0e0e0',
 			 'via'   => '#c0c0c0',
 			 'ziel'  => '#a0a0a0',
 			}->{$type};
 #XXX not yet:	    print "<td bgcolor=\"$color\">" . blind_image(1,1) . "</td>";
 	} else {
-	    print "<b>$printtype</b>: ";
+	    print "<a name=\"$type\"><b>$printtype</b></a>: ";
 	}
 	if ((defined $$nameref and $$nameref ne '') ||
 	    (defined $coord and $coord ne '')) {
@@ -1481,7 +1531,7 @@ EOF
 		}
 		print "> $s->[0]";
 		if (defined $s->[1] && defined $s->[2]) {
-		    print " (<font size=-1>$s->[1], $s->[2]</font>)";
+		    print " (<font size=-1>$s->[1]" . ($s->[2] ne "" ? ", $s->[2]" : "") . "</font>)";
 		}
 		print "<br>\n";
 	    }
@@ -1502,7 +1552,6 @@ EOF
 
 		    my $js = "";
 		    my $match_nr = 0;
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$matchref],[])->Indent(1)->Useqq(1)->Dump; # XXX
 
 		    foreach $s (@$matchref) {
 			$match_nr++;
@@ -1519,7 +1568,7 @@ require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . 
 		    }
 
 		    print <<EOF;
-<script><!--
+<script type="text/javascript"><!--
 function $ {type}map_init() { vis("${type}mapbelow", "show"); $js }
 // --></script>
 EOF
@@ -1581,7 +1630,7 @@ EOF
 		    print "<img src=\"$bbbike_images/berlin_small_hi.gif\" border=0 width=200 height=200 alt=\"\">";
 		    print "</div>";
 		    print <<EOF;
-<script><!--
+<script type="text/javascript"><!--
 function $ {type}map_init() { return any_init("${type}map"); }
 function $ {type}map_highlight(Evt) { return any_highlight("${type}map", Evt); }
 function $ {type}map_byebye(Evt) { return any_byebye("${type}map", Evt); }
@@ -1590,17 +1639,17 @@ function $ {type}map_detail(Evt) { return any_detail("${type}map", Evt); }
 EOF
 		} elsif (!$bi->{'text_browser'} && !$no_berlinmap) {
 		    print "<input type=image name=" . $type
-		      . "mapimg src=\"$bbbike_images/berlin_small.gif\" border=0 width=200 height=200 alt=\"\">";
+		      . "mapimg src=\"$bbbike_images/berlin_small.gif\" class=\"citymap\" alt=\"\">";
 		}
 		print "</td>" if $bi->{'can_table'};
 	    }
 	} elsif ($nice_berlinmap) {
 	    if (!$has_init_map_js) {
-		print "<script language=javascript><!--
+		print "<script type=\"text/javascript\"><!--
 function " . $type . "map_init() {}
 //--></script>\n";
 	    }
-            print "<script language=javascript><!--
+            print "<script type=\"text/javascript\"><!--
 function " . $type . "char_init() {}
 //--></script>\n";
         }
@@ -1625,20 +1674,21 @@ function " . $type . "char_init() {}
 	$button_str .= "<a name=\"weiter\"><input type=submit value=\"Weiter &gt;&gt;\"></a>";
 	$tbl_center->($button_str);
     }
-    $tbl_center->("<hr>");
+
+    print "</table>\n" if $bi->{'can_table'};
+
+    print "<hr>";
 
     if (!$smallform) {
-	$tbl_center->(window_open("$bbbike_script?all=1", "BBBikeAll",
-				  "dependent,height=500,resizable," .
-				  "screenX=500,screenY=30,scrollbars,width=250")
-		      . "Liste aller bekannten Stra&szlig;en</a> (ca. 50 kB)",
-		     "left");
-	$tbl_center->("<hr>");
+	print window_open("$bbbike_script?all=1", "BBBikeAll",
+			  "dependent,height=500,resizable," .
+			  "screenX=500,screenY=30,scrollbars,width=250")
+	    . "Liste aller bekannten Stra&szlig;en</a> (ca. 50 kB)";
+	print "<hr>";
     }
 
+    print footer_as_string();
     print "</form>\n";
-    $tbl_center->(footer_as_string());
-    print "</table>\n" if $bi->{'can_table'};
 
     print $q->end_html;
 }
@@ -1729,8 +1779,8 @@ sub choose_ch_form {
     }
     print "andere " . ucfirst($search_type) . "stra&szlig;e:<br>\n";
     abc_link($search_type);
-    print "</form>\n";
     footer();
+    print "</form>\n";
     print $q->end_html;
 }
 
@@ -1774,7 +1824,7 @@ sub get_kreuzung {
 	    } else {
 		$str_normed = eval "\$".$type.'_str'; die $@ if $@;
 	    }
-	    next if ($str_normed =~ /^\s*$/);
+	    next if (!defined $str_normed || $str_normed =~ /^\s*$/);
 
 	    if (defined $hnr && $hnr =~ /\d/) {
 		if (!$tdb) {
@@ -1888,7 +1938,11 @@ sub get_kreuzung {
 	    if (defined $plz and $plz eq '') {
 		print $strname;
 	    } else {
-		print stadtplan_link($strname, $plz, $is_ort{$type});
+		if (defined $c && $use_coord_link) {
+		    print coord_link($strname, $c);
+		} else {
+		    print stadtplan_link($strname, $plz, $is_ort{$type});
+		}
 	    }
 	}
 	if (defined $q->param($type."hnr") && $q->param($type."hnr") ne "") {
@@ -1993,8 +2047,8 @@ EOF
 #      if ($q->user_agent !~ m|libwww-perl|) {
 #  	print " <font size=\"-1\"><input type=submit name=nahbereich value=\"Nahbereich\"></font>\n";
 #      }
-    print "</form>";
     footer();
+    print "</form>";
     print $q->end_html;
 }
 
@@ -2037,7 +2091,7 @@ sub settings_html {
     # Einstellungen ########################################
     my %c = $q->cookie(-name => $cookiename);
 
-    foreach my $key (qw/speed cat quality ampel/) {
+    foreach my $key (qw/speed cat quality ampel green/) {
 	$c{"pref_$key"} = $q->param("pref_$key")
 	    if defined $q->param("pref_$key");
     }
@@ -2051,6 +2105,7 @@ sub settings_html {
     my $default_quality = (defined $c{"pref_quality"} ? $c{"pref_quality"} : "");
     my $default_ampel   = (defined $c{"pref_ampel"} && $c{"pref_ampel"} eq 'yes' ? 1 : 0);
     my $default_routen  = (defined $c{"pref_routen"}  ? $c{"pref_routen"}  : "");
+    my $default_green   = (defined $c{"pref_green"} && $c{"pref_green"} eq 'yes' ? 1 : 0);
 
     my $cat_checked = sub { my $val = shift;
 			    'value="' . $val . '" ' .
@@ -2067,7 +2122,7 @@ sub settings_html {
 
     if ($bi->{'can_javascript'}) {
 	print <<EOF;
-<script><!--
+<script type="text/javascript"><!--
 function reset_form() {
     var frm = document.forms.settings;
     if (!frm) {
@@ -2079,6 +2134,7 @@ function reset_form() {
 	elements["pref_quality"].options[@{[defined $strqual{$default_quality} ? $strqual{$default_quality}: 0]}].selected = true;
 //	elements["pref_routen"].options[@{[defined $strrouten{$default_routen} ? $strrouten{$default_routen} : 0]}].selected = true;
 	elements["pref_ampel"].checked = @{[ $default_ampel?"true":"false" ]};
+	elements["pref_green"].checked = @{[ $default_green?"true":"false" ]};
     }
     return false;
 }
@@ -2086,10 +2142,10 @@ function reset_form() {
 EOF
     }
     print <<EOF;
-<input type=hidden name=pref_seen value=1>
+<input type=hidden name="pref_seen" value=1>
 <table>
-<tr><td>Bevorzugte Geschwindigkeit:</td><td><input type=text width=4 size=2 name=pref_speed value="$default_speed"> km/h</td></tr>
-<tr><td>Bevorzugter Straßentyp:</td><td><select $bi->{hfill} name=pref_cat>
+<tr><td>Bevorzugte Geschwindigkeit:</td><td><input type=text maxlength=4 size=2 name="pref_speed" value="$default_speed"> km/h</td></tr>
+<tr><td>Bevorzugter Straßentyp:</td><td><select $bi->{hfill} name="pref_cat">
 <option @{[ $cat_checked->("") ]}>egal
 <option @{[ $cat_checked->("N1") ]}>Nebenstraßen bevorzugen
 <option @{[ $cat_checked->("N2") ]}>nur Nebenstraßen benutzen
@@ -2097,24 +2153,25 @@ EOF
 <option @{[ $cat_checked->("H2") ]}>nur Hauptstraßen benutzen
 <option @{[ $cat_checked->("N_RW") ]}>Hauptstraßen ohne Radwege meiden
 </select></td></tr>
-<tr><td>Bevorzugter Straßenbelag:</td><td><select $bi->{hfill} name=pref_quality>
+<tr><td>Bevorzugter Straßenbelag:</td><td><select $bi->{hfill} name="pref_quality">
 <option @{[ $qual_checked->("") ]}>egal
 <option @{[ $qual_checked->("Q0") ]}>nur sehr gute Beläge bevorzugen (rennradtauglich)
 <option @{[ $qual_checked->("Q2") ]}>Kopfsteinpflaster vermeiden
 </select></td></tr>
 <!--
-<tr><td>Ausgeschilderte Fahrradrouten bevorzugen:</td><td><select $bi->{hfill} name=pref_routen>
+<tr><td>Ausgeschilderte Fahrradrouten bevorzugen:</td><td><select $bi->{hfill} name="pref_routen">
 <option @{[ $routen_checked->("") ]}>egal
 <option @{[ $routen_checked->("RR") ]}>ja
 </select></td></tr>
 -->
-<!--XXX implement <tr><td>Radwege:</td><td><select $bi->{hfill} name=pref_rw>
+<!--XXX implement <tr><td>Radwege:</td><td><select $bi->{hfill} name="pref_rw">
 <option value="">egal
 <option value="R0">nur Radwege verwenden
 <option value="R1">Hauptstraßen mit Radweg bevorzugen
 <option value="R2">benutzungspflichtige Radwege vermeiden
 </select></td></tr>-->
-<tr><td>Ampeln vermeiden:</td><td><input type=checkbox name=pref_ampel value=yes @{[ $default_ampel?"checked":"" ]}></td>
+<tr><td>Ampeln vermeiden:</td><td><input type=checkbox name="pref_ampel" value=yes @{[ $default_ampel?"checked":"" ]}></td>
+<tr><td>Grüne Wege bevorzugen:</td><td><input type=checkbox name="pref_green" value=yes @{[ $default_green?"checked":"" ]}></td>
 EOF
     if ($bi->{'can_javascript'}) {
 	print <<EOF
@@ -2183,7 +2240,7 @@ sub search_coord {
     my $alternative = $q->param('alternative');
     my $custom      = $q->param('custom');
     my $output_as   = $q->param('output_as');
-    my $printmode   = $output_as eq 'print';
+    my $printmode   = defined $output_as && $output_as eq 'print';
 
     my $printwidth  = 400;
     my $fontstr     = ($printmode
@@ -2225,7 +2282,7 @@ sub search_coord {
     # XXX Anzahl der Tragestellen zählen...
 
     # Ampeloptimierung
-    if ($q->param('pref_ampel') && $q->param('pref_ampel') eq 'yes') {
+    if (defined $q->param('pref_ampel') && $q->param('pref_ampel') eq 'yes') {
 	if (new_trafficlights()) {
 	    $extra_args{Ampeln} = {Net     => $ampeln,
 				   Penalty => 100};
@@ -2233,7 +2290,7 @@ sub search_coord {
     }
 
     # Haupt/Freizeitrouten-Optimierung
-    if ($q->param('pref_routen') ne '') { # 'RR'
+    if (defined $q->param('pref_routen') && $q->param('pref_routen') ne '') { # 'RR'
 	if (!$routen_net) {
 	    $routen_net =
 		new StrassenNetz(Strassen->new("radrouten"));
@@ -2246,6 +2303,22 @@ sub search_coord {
 	    }
 	    $p;
 	};
+    }
+
+    # Optimierung der grünen Wege
+    if (defined $q->param('pref_green') && $q->param('pref_green') ne '') {
+	if (!$green_net) {
+	    $green_net = new StrassenNetz(Strassen->new("green"));
+	    $green_net->make_net_cat;
+	}
+	my $penalty = { "green0" => 3,
+			"green1" => 2,
+			"green2" => 1,
+		      };
+	$extra_args{Green} =
+	    {Net => $green_net,
+	     Penalty => $penalty,
+	    };
     }
 
     # Handicap-Optimierung ... zurzeit nur Fußgängerzonenoptimierung automatisch
@@ -2391,7 +2464,7 @@ sub search_coord {
     }
 
     %persistent = $q->cookie(-name => $cookiename);
-    foreach my $key (qw/speed cat quality ampel/) {
+    foreach my $key (qw/speed cat quality ampel green/) {
 	$persistent{"pref_$key"} = $q->param("pref_$key");
     }
     my $cookie = $q->cookie
@@ -2507,28 +2580,37 @@ EOF
 	    print " width=$printwidth";
 	}
 	print "><tr><td>${fontstr}Route von <b>" .
-	    stadtplan_link($startname,
-			   $q->param('startplz')||"",
-			   $q->param('startisort')?1:0,
-			   (defined $starthnr && $starthnr ne '' ? $starthnr : undef),
-			  )
+	    ($use_coord_link
+	     ? coord_link($startname, $startcoord)
+	     : stadtplan_link($startname,
+			      $q->param('startplz')||"",
+			      $q->param('startisort')?1:0,
+			      (defined $starthnr && $starthnr ne '' ? $starthnr : undef),
+			     )
+	    )
 		. "</b> ";
 	if (defined $vianame && $vianame ne '') {
 	    print "&uuml;ber <b>" .
-		stadtplan_link($vianame,
-			       $q->param('viaplz')||"",
-			       $q->param('viaisort')?1:0,
-			       (defined $viahnr && $viahnr ne '' ? $viahnr : undef),
-			      )
+		($use_coord_link
+		 ? coord_link($vianame, $viacoord)
+		 : stadtplan_link($vianame,
+				  $q->param('viaplz')||"",
+				  $q->param('viaisort')?1:0,
+				  (defined $viahnr && $viahnr ne '' ? $viahnr : undef),
+				 )
+		)
 		    . "</b> ";
 	}
 	print "bis <b>" .
-	  stadtplan_link($zielname,
-			 $q->param('zielplz')||"",
-			 $q->param('zielisort')?1:0,
-			 (defined $zielhnr && $zielhnr ne '' ? $zielhnr : undef),
-			)
-	      . "</b>$fontend</td></tr></table><br>\n";
+	    ($use_coord_link
+	     ? coord_link($zielname, $zielcoord)
+	     : stadtplan_link($zielname,
+			      $q->param('zielplz')||"",
+			      $q->param('zielisort')?1:0,
+			      (defined $zielhnr && $zielhnr ne '' ? $zielhnr : undef),
+			     )
+	    )
+		. "</b>$fontend</td></tr></table><br>\n";
 	print "<table";
 	if ($printmode) {
 	    print " width=$printwidth";
@@ -2580,8 +2662,7 @@ EOF
 		print "</tr><tr><td></td>";
 	    }
 	}
-	print "<tr>\n";
-	print "$fontend</td></tr>";
+	print "<tr><td></td></tr>";
 	if ($bp_obj and $bikepwr_time[0]) {
 	    print
 	      "<tr><td></td><td>$fontstr",
@@ -2659,6 +2740,7 @@ EOF
 	    @path = $r->path_list;
 	}
 
+	my $odd = 0;
 	my $ges_entf = 0;
 	for(my $i = 0; $i <= $#strnames; $i++) {
 	    my $strname;
@@ -2712,7 +2794,8 @@ EOF
 		printf $line_fmt,
 		  $entf, $richtung, string_kuerzen($strname, 31), $ges_entf_s;
 	    } else {
-		print "<tr><td nowrap>$fontstr$entf$fontend</td><td>$fontstr$richtung$fontend</td><td>$fontstr$strname$fontend</td><td nowrap>$fontstr$ges_entf_s$fontend</td>";
+		print "<tr class=" . ($odd ? "odd" : "even") . "><td nowrap>$fontstr$entf$fontend</td><td>$fontstr$richtung$fontend</td><td>$fontstr$strname$fontend</td><td nowrap>$fontstr$ges_entf_s$fontend</td>";
+		$odd = 1-$odd;
 		if ($with_comments && $comments_net) {
 		    print "<td>$fontstr$etappe_comment$fontend</td>";
 		}
@@ -2726,7 +2809,11 @@ EOF
 	    print "</pre>\n";
 	} else {
 	    print
-	      "<tr><td>$fontstr$entf$fontend</td><td>${fontstr}angekommen!$fontend</td><td>&nbsp;</td><td>$fontstr$ges_entf_s$fontend</td></tr>\n";
+	      "<tr class=" . ($odd ? "odd" : "even") . "><td>$fontstr$entf$fontend</td><td>${fontstr}angekommen!$fontend</td><td>&nbsp;</td><td>$fontstr$ges_entf_s$fontend</td>";
+	    if ($with_comments && $comments_net) {
+		print "<td></td>";
+	    }
+	    print "</tr>\n";
 
 	    if (!$bi->{'text_browser'} && !$printmode) {
 		my $qq = new CGI $q->query_string;
@@ -2763,7 +2850,7 @@ EOF
 	      "<hr><br>", $fontstr,
 	      "BBBike by Slaven Rezic: ",
 	      "<a href=\"$bbbike_url\">$bbbike_url</a><br>\n",
-	      "<script><!--\nprint();\n",
+	      "<script type=\"text/javascript\"><!--\nprint();\n",
               "// --></script>\n";
 	    goto END_OF_HTML;
 	}
@@ -2773,7 +2860,7 @@ EOF
 	    my $kfm_bug = ($q->user_agent =~ m|^Konqueror/1.0|i);
 	    if ($bi->{'can_javascript'}) {
 		print <<EOF;
-<script language="javascript"><!--
+<script type="text/javascript"><!--
 function show_map() {
     // show extra window for PDF && Netscape --- the .pdf is not embedded
     var frm = document.forms.showmap;
@@ -2873,7 +2960,7 @@ EOF
 	    print ">\n";
 	    print "<input type=submit name=interactive value=\"Grafik zeichnen\"> <font size=-1>(neues Fenster wird ge&ouml;ffnet)</font>";
 	    print " <input type=checkbox name=outputtarget value='print' " . ($default_print?"checked":"") . "> f&uuml;r Druck optimieren";
-	    print "&nbsp;&nbsp; <nobr>Ausgabe als: <select name=imagetype>\n";
+	    print "&nbsp;&nbsp; <span class=nobr>Ausgabe als: <select name=imagetype>\n";
 	    print " <option " . $imagetype_checked->("png") . ">PNG\n" if $graphic_format eq 'png';
 	    print " <option " . $imagetype_checked->("gif") . ">GIF\n" if $graphic_format eq 'gif' || $can_gif;
 	    print " <option " . $imagetype_checked->("jpeg") . ">JPEG\n" unless $cannot_jpeg;
@@ -2882,7 +2969,7 @@ EOF
 	    print " <option " . $imagetype_checked->("pdf-landscape") . ">PDF (Querformat)\n" unless $cannot_pdf;
 	    print " <option " . $imagetype_checked->("svg") . ">SVG\n" unless $cannot_svg;
 	    print " <option " . $imagetype_checked->("mapserver") . ">MapServer\n" if $can_mapserver;
-	    print " </select></nobr>\n";
+	    print " </select></span>\n";
 	    print "<br>\n";
 
 	    my $sess = tie_session(undef);
@@ -2912,7 +2999,7 @@ EOF
 	    }
 
 	    print <<EOF;
-<script language="javascript"><!--
+<script type="text/javascript"><!--
 function all_checked() {
     var all_checked_flag = false;
     var elems = document.forms["showmap"].elements;
@@ -2977,10 +3064,10 @@ EOF
 		    $text = $draw->[0];
 		}
 		print
-		    "<td><nobr><input type=checkbox name=draw value=$draw->[1]",
+		    "<td><span class=nobr><input type=checkbox name=draw value=$draw->[1]",
 		    ($draw->[2] ? " checked" : ""),
 		    ($draw->[1] eq 'all' ? " onclick=\"all_checked()\"" : ""),
-		    ">$fontstr $text $fontend</nobr></td>\n";
+		    ">$fontstr $text $fontend</span></td>\n";
 	    }
 	    print "</tr>\n";
 	    if ($lstr || $multiorte) {
@@ -3006,7 +3093,7 @@ EOF
 	    print $q->hidden(-name=>$key,
 			     -default=>[$q->param($key)])
 	}
-	print "<b>Einstellungen</b>:</p>\n";
+	print "<b>Einstellungen</b>:<p>\n";
 	settings_html();
 	print "<input type=submit value=\"Route mit ge&auml;nderten Einstellungen\">\n";
 	print "</form>\n";
@@ -3022,7 +3109,7 @@ EOF
 	}
 	foreach my $param ($q->param) {
 	    if ($param =~ /^pref_/) {
-		print "<input type=hidden name=$param value=\"".
+		print "<input type=hidden name='$param' value=\"".
 		    $q->param($param) ."\">";
 	    }
 	}
@@ -3162,8 +3249,14 @@ sub user_agent_info {
 }
 
 sub show_user_agent_info {
-    $bi->show_info('complete');
-    $bi->show_server_info;
+    print $bi->show_info('complete');
+    print $bi->show_server_info;
+}
+
+sub coord_link {
+    my($strname, $coords) = @_;
+    $coords = CGI::escape($coords);
+    "<a target=\"_blank\" href=\"$mapserver_address_url?coords=$coords\">$strname</a>";
 }
 
 sub stadtplan_link {
@@ -3177,8 +3270,8 @@ sub stadtplan_link {
 	$str_plain = CGI::escape($str_plain);
 	push @aref,
 	    "<a target=\"_blank\" href=\"$stadtplan_url?adr_street=$str_plain".
-		(defined $plz ? "&adr_zip=$plz" : "") .
-		    (defined $hnr ? "&adr_house=$hnr" : "") .
+		(defined $plz ? "&amp;adr_zip=$plz" : "") .
+		    (defined $hnr ? "&amp;adr_house=$hnr" : "") .
 			"\">$s</a>";
     }
     join("/", @aref);
@@ -3211,6 +3304,7 @@ sub overview_map {
 sub start_mapserver {
     require BBBikeMapserver;
     my $ms = BBBikeMapserver->new_from_cgi($q, -tmpdir => $tmp_dir);
+    $ms->read_config("$0.config");
     $ms->{Coords} = ["8593,12243"]; # Brandenburger Tor
     $ms->start_mapserver(-route => 0,
 			 -bbbikeurl => $bbbike_url,
@@ -3223,9 +3317,11 @@ sub draw_route {
     my(%args) = @_;
     my @cache = (exists $args{-cache} ? @{ $args{-cache} } : @no_cache);
 
-    $q->param("scope", ($use_umland_jwd ? 'wideregion' :
-			($use_umland    ? 'region'     :
-			                  'city')));
+    if (!defined $q->param("scope")) {
+	$q->param("scope", ($use_umland_jwd ? 'wideregion' :
+			    ($use_umland    ? 'region'     :
+			     'city')));
+    }
 
     my $draw;
     my $header_written;
@@ -3239,11 +3335,35 @@ sub draw_route {
 	$q->param('imagetype') =~ /^mapserver/) {
 	require BBBikeMapserver;
 	my $ms = BBBikeMapserver->new_from_cgi($q, -tmpdir => $tmp_dir);
+	$ms->read_config("$0.config");
+	my $layers;
+	if (grep { $_ eq 'all' } $q->param("draw")) {
+	    $layers = [ $ms->all_layers ];
+	} else {
+	    $layers = [ "route",
+			map {
+			    my $out = +{
+					str => "str", # always drawn
+					ubahn => "bahn",
+					sbahn => "bahn",
+					wasser => "gewaesser",
+					flaechen => "flaechen",
+					ampel => "ampeln",
+				       }->{$_};
+			    if (!defined $out) {
+				();
+			    } else {
+				$out;
+			    }
+			} $q->param('draw')
+		      ];
+	}
 	$ms->start_mapserver
 	    (-bbbikeurl => $bbbike_url,
 	     -bbbikemail => $BBBike::EMAIL,
 	     -scope => "all,city", # so switching between reference maps is possible
 	     -externshape => 1,
+	     -layers => $layers,
 	    );
 	return;
     }
@@ -3356,7 +3476,7 @@ sub draw_map {
     if (!$args{'-force'}) {
 	foreach (qw(png gif)) {
 	    $ext = $_;
-	    next if $ext eq 'png' and !$bi->{'can_png'};
+#XXX	    next if $ext eq 'png' and !$bi->{'can_png'};
 	    $set_img_name->();
 	    if (-s $img_file && -s $map_file) {
 		my(@img_file_stat)   = stat($img_file);
@@ -3409,6 +3529,14 @@ sub draw_map {
 	    # XXX Argument sollte übergeben werden (wird sowieso noch nicht
 	    # verwendet, bis auf Überprüfung des boolschen Wertes)
 	    $q->param('strlabel', 'str:HH,H');#XXX if $args{-strlabel};
+	    if (!$q->param('imagetype')) {
+		if (!$can_gif) {
+		    $q->param('imagetype', 'png');
+		} else {
+		    $q->param('imagetype', 'gif');
+		}
+	    }
+	    $q->param('module', $args{-module}) if $args{-module};
 	    my $draw = new_from_cgi BBBikeDraw($q, Fh => \*IMG);
 	    $draw->set_dimension(@dim);
 	    $draw->create_transpose();
@@ -3454,7 +3582,7 @@ EOF
 	print "<input type=hidden name=detailmapx value=\"$x\">\n";
 	print "<input type=hidden name=detailmapy value=\"$y\">\n";
 	print "<input type=hidden name=type value=\"$type\">\n";
-	print "<center><table>";
+	print "<center><table class=\"detailmap\">";
 
 	# obere Zeile
 	if ($y > 0) {
@@ -3478,7 +3606,7 @@ EOF
 	  "</td><td><input type=image title='' name=detailmap ",
 	  "src=\"$img_url\" alt=\"\" border=0 ",
 	  ($use_imagemap ? "usemap=\"#map\" " : ""),
-	  "align=middle width=$detailwidth height=$detailheight alt=\"\">",
+	  "align=middle width=$detailwidth height=$detailheight>",
 	  "</td>\n";
 	if ($x < $xgridnr-1) {
 	    print "<td align=left><input type=submit name=movemap value=\"Ost\"></td>";
@@ -3501,7 +3629,7 @@ EOF
 	print "<input type=submit name=Dummy value=\"&lt;&lt; Zur&uuml;ck\">";
 	print "</center>";
 	print <<EOF;
-<script language=javascript>
+<script type="text/javascript">
 <!--
 function s(text) {
   self.status=text;
@@ -3518,8 +3646,8 @@ EOF
 	    }
 	    close MAP;
 	}
-	print "</form>\n";
 	footer();
+	print "</form>\n";
 	print $q->end_html;
     }
 }
@@ -3662,7 +3790,15 @@ sub start_weather_proc {
 		local $SIG{'__DIE__'};
 		my $weather_pid = fork();
 		if (defined $weather_pid and $weather_pid == 0) {
-		    open(STDERR, ">/dev/null");
+		    eval {
+			require File::Spec;
+			open STDIN, File::Spec->devnull;
+			open STDOUT, '>' . File::Spec->devnull;
+			open(STDERR, '>' . File::Spec->devnull);
+			require POSIX;
+			# Can't use `exists' (for 5.00503 compat):
+			POSIX::setsid() if defined &POSIX::setsid;
+		    }; warn $@ if $@;
 		    unlink "$tmp_dir/wettermeldung";
 		    exec @weather_cmdline;
 		    exit 1;
@@ -3707,6 +3843,9 @@ sub header {
 		      ? \&CGI::link
 		      : \&CGI::Link);
     my $head = [];
+    push @$head, $q->meta({-http_equiv => "Content-Script-Type",
+			   -content => "text/javascript"});
+    push @$head, "<base target='_top'>"; # Can't use -target option here
     push @$head, cgilink({-rel  => "shortcut icon",
 #  			  -href => "$bbbike_images/favicon.ico",
 #  			  -type => "image/ico",
@@ -3728,8 +3867,9 @@ sub header {
 	}
     }
     delete @args{qw(-contents -up)};
+    my $printmode = delete $args{-printmode};
     if ($bi->{'can_css'} && !exists $args{-style}) {
-	$args{-style} = {-src => "$bbbike_html/bbbike.css"};
+	$args{-style} = {-src => "$bbbike_html/" . ($printmode ? "bbbikeprint" : "bbbike") . ".css"};
 #XXX del:
 #  <<EOF;
 #  $std_css
@@ -3740,16 +3880,15 @@ sub header {
 	delete $args{-onload};
     }
 
-    my $printmode = delete $args{-printmode};
     $args{-head} = $head if $head && @$head;
 
     if (!$smallform) {
 	print $q->start_html
 	    (%args,
 	     -BGCOLOR => '#ffffff',
-	     ($use_background_image && !$printmode ? (-BACKGROUND => "$bbbike_images/bg.jpg", -BGPROPERTIES => "fixed") : ()),
+	     ($use_background_image && !$printmode ? (-BACKGROUND => "$bbbike_images/bg.jpg") : ()),
 	     -meta=>{'keywords'=>'berlin fahrrad route bike karte suche cycling route routing',
-		     'copyright'=>'(c) 1998-2002 Slaven Rezic',
+		     'copyright'=>'(c) 1998-2003 Slaven Rezic',
 		    },
 	     -author => $BBBike::EMAIL,
 	    );
@@ -3791,7 +3930,7 @@ sub footer_as_string {
     $s .= <<EOF;
 <tr>
 <td align=center>${fontstr}bbbike.cgi $VERSION${fontend}</td>
-<td align=center>${fontstr} <a target="_top" href="mailto:@{[ $BBBike::EMAIL ]}?subject=BBBike">Kontakt</a>${fontend}</td>
+<td align=center>${fontstr} <a target="_top" href="mailto:@{[ $BBBike::EMAIL ]}?subject=BBBike">E-Mail</a>${fontend}</td>
 <td align=center>$fontstr<a target="_top" href="$bbbike_script?begin=1$smallformstr">Neue Anfrage</a>${fontend}</td>
 EOF
     if ($use_miniserver) {
@@ -3800,13 +3939,15 @@ EOF
 EOF
     }
     $s .= <<EOF;
-<td align=center>$fontstr<a target="_top" href="$bbbike_script?info=1$smallformstr">Info</a>${fontend}</td>
+<td align=center>$fontstr<a target="_top" href="$bbbike_script?info=1$smallformstr">Info &amp; Disclaimer</a>${fontend}</td>
 EOF
     $s .= "<td align=center>$fontstr";
     $s .= complete_link_to_einstellungen();
     $s .= "${fontend}</td>\n";
     if ($can_mapserver) {
         $s .= "<td><a href=\"$bbbike_script?mapserver=1\">Mapserver</a></td>";
+    } elsif (defined $mapserver_init_url) {
+        $s .= "<td><a href=\"$mapserver_init_url\">Mapserver</a></td>";
     }
     $s .= <<EOF;
 </table>
@@ -3821,7 +3962,7 @@ EOF
 sub blind_image {
     my($w,$h) = @_;
     $w = 1 if !$w; $h = 1 if !$h;
-    "<img src='$bbbike_images/px_1t.gif' width=$w height=$h border=0>"
+    "<img src='$bbbike_images/px_1t.gif' alt='' width=$w height=$h border=0>"
 }
 
 sub complete_link_to_einstellungen {
@@ -3838,7 +3979,7 @@ sub link_to_met {
 sub window_open {
     my($href, $winname, $settings) = @_;
     if ($bi->{'can_javascript'} && !$bi->{'window_open_buggy'}) {
-	"<a href=# onclick='window.open(\"$href\", \"$winname\"" .
+	"<a href=\"$href\" target=\"$winname\" onclick='window.open(\"$href\", \"$winname\"" .
 	  (defined $settings ? ", \"$settings\"" : "") .
 	    "); return false;'>";
     } else {
@@ -4033,8 +4174,8 @@ sub nahbereich {
     }
     print "<hr>";
     suche_button();
-    print "</form>";
     footer();
+    print "</form>\n";
     print $q->end_html;
 }
 
@@ -4085,13 +4226,23 @@ sub draw_route_from_fh {
 	draw_route();
     } else {
 	print $q->header(@no_cache, etag());
+	header();
 	print "Dateiformat nicht erkannt: $err";
+	upload_button_html();
+	footer();
+	print $q->end_html;
     }
 }
 
 sub upload_button {
     print $q->header(@no_cache, etag()); # wegen dummy
     header();
+    upload_button_html();
+    footer();
+    print $q->end_html;
+}
+
+sub upload_button_html {
     # XXX warum ist dummy notwendig???
     print $q->start_multipart_form(-method => 'post',
 				   -action => "$bbbike_url?dummy=@{[ time ]}"),
@@ -4107,19 +4258,19 @@ sub upload_button {
 				     ($cannot_pdf ? () : ('pdf-auto')),
 				     ($cannot_svg ? () : ('svg')),
 				     ($cannot_jpeg ? () : ('jpeg')),
+				     ($can_mapserver ? ('mapserver') : ()),
 				    ],
 			 -default => 'png',
 			 -labels => {'png' => 'PNG',
 				     'pdf-auto' => 'PDF',
 				     'svg' => 'SVG',
-				     'jpeg' => 'JPEG'},
+				     'jpeg' => 'JPEG',
+				     'mapserver' => 'Mapserver'},
 			),
 	  "<br>\n",
 	  $q->submit(-name => 'routefile_submit',
 		     -value => 'Anzeigen'),
 	  $q->endform;
-    footer();
-    print $q->end_html;
 }
 
 sub tie_session {
@@ -4231,6 +4382,7 @@ EOF
 sub show_info {
     print $q->header(@weak_cache, etag());
     header();
+    my $perl_url = "http://www.perl.com/";
     my $cpan = "http://www.perl.com/CPAN";
     my $scpan = "http://search.cpan.org/search?mode=module&query=";
     print <<EOF;
@@ -4241,6 +4393,8 @@ sub show_info {
  <li><a href="#resourcen">Weitere Möglichkeiten mit BBBike</a>
  <li><a href="@{[ $bbbike_html ]}/presse.html">Die Presse über BBBike</a>
  <li><a href="#hardsoftware">Hard- und Softwareinformation</a>
+ <li><a href="#disclaimer">Disclaimer</a>
+ <li><a href="#autor">Kontakt</a>
 </ul>
 <hr>
 
@@ -4257,7 +4411,21 @@ geachtet; auf Steigungen und Verkehrsdichte (noch) nicht. Straßen mit
 schlechter Oberfläche und/oder Hauptstraßen können geringer bewertet oder
 von der Suche ganz ausgeschlossen werden.
 <p>
-
+<!-- XXX not yet
+Wozu werden die Sucheinstellungen verwendet?
+<dl>
+ <dt>Bevorzugte Geschwindigkeit
+ <dd>
+ <dt>Bevorzugter Straßentyp
+ <dd>
+ <dt>Bevorzugter Straßenbelag
+ <dd>
+ <dt>Ampeln vermeiden
+ <dd>
+ <dt>Grüne Wege bevorzugen
+ <dd>
+</dl>
+-->
 EOF
     print
       "Falls die " . complete_link_to_einstellungen() . " ",
@@ -4312,7 +4480,7 @@ Das Programm wird auch in <a href="@{[ $BBBike::DIPLOM_URL ]}">meiner Diplomarbe
 EOF
     if ($bi->is_browser_version("Mozilla", 5)) {
 	print <<EOF;
-<script><!--
+<script type="text/javascript"><!--
 function addSidebar(frm) {
     if (window && window.sidebar && window.sidebar.addPanel &&
 	typeof window.sidebar.addPanel == 'function') {
@@ -4423,8 +4591,8 @@ EOF
     print <<EOF;
 Verwendete Software:
 <ul>
-<li><a href="$cpan">perl $]</a><a href="$cpan"><img border=0 align=right src="$bbbike_images/PoweredByPerl.gif"></a>
-<li>perl-Module:
+<li><a href="$perl_url">perl $]</a><a href="$perl_url"><img border=0 align=right src="$bbbike_images/PoweredByPerl.gif"></a>
+<li>perl-Module:<a href="$cpan"><img border=0 align=right src="http://theoryx5.uwinnipeg.ca/images/cpan.jpg"></a>
 <ul>
 <li><a href="${scpan}CGI">CGI $CGI::VERSION</a>
 EOF
@@ -4467,11 +4635,32 @@ EOF
     if ($bi || eval { require BrowserInfo }) {
 	print "<h3>Browserinformation</h3><pre>";
 	$bi = BrowserInfo->new($q) if !$bi;
-	$bi->show_info();
+	print $bi->show_info();
 	print "</pre><hr><p>\n";
     }
 
     print <<EOF;
+<h3><a name="disclaimer">Disclaimer</a></h3>
+Es wird keine Gewähr für die Inhalte dieser Site sowie verlinkter Sites
+übernommen.
+<hr>
+
+EOF
+
+    print <<EOF;
+<h3><a name="autor">Kontakt</a></h3>
+<center>
+Autor: Slaven Rezic<br>
+<a href="mailto:@{[ $BBBike::EMAIL ]}">E-Mail:</a> <a href="mailto:@{[ $BBBike::EMAIL ]}">@{[ $BBBike::EMAIL ]}</a><br>
+<a href="@{[ $BBBike::HOMEPAGE ]}">Homepage:</a> <a href="@{[ $BBBike::HOMEPAGE ]}">@{[ $BBBike::HOMEPAGE ]}</a></a><br>
+Telefon: @{[ CGI::escapeHTML("+49-0178-3737831") ]}<br>
+</center>
+<p>
+EOF
+
+    # XXX Wo gehören die Fußnoten am besten hin?
+    print <<EOF;
+<p><p><p><hr>
 Fußnoten:<br>
 <a name="footnote1"><sup>1</sup> R. Dechter and J. Pearl, Generalized
 best-first search strategies and the optimality of A<sup>*</sup>,
@@ -4479,15 +4668,8 @@ Journal of the Association for Computing Machinery, Vol. 32, No. 3,
 July 1985, Seiten 505-536.<hr><p>
 EOF
 
-    print <<EOF;
-<center>
-Autor: Slaven Rezic<br>
-<a href="mailto:@{[ $BBBike::EMAIL ]}">E-Mail:</a> <a href="mailto:@{[ $BBBike::EMAIL ]}">@{[ $BBBike::EMAIL ]}</a><br>
-<a href="@{[ $BBBike::HOMEPAGE ]}">Homepage:</a> <a href="@{[ $BBBike::HOMEPAGE ]}">@{[ $BBBike::HOMEPAGE ]}</a></a>
-</center>
-<p>
-EOF
     footer();
+
     print $q->end_html;
 }
 
@@ -4497,7 +4679,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (C) 1998-2002 Slaven Rezic. All rights reserved.
+Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
 This is free software; you can redistribute it and/or modify it under the
 terms of the GNU General Public License, see the file COPYING.
 

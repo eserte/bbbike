@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeThunder.pm,v 1.8 2003/01/08 20:00:59 eserte Exp $
+# $Id: BBBikeThunder.pm,v 1.9 2003/05/06 06:18:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -77,7 +77,8 @@ EOF
 sub activate {
     $main::map_mode = 'BBBikeThunder';
     $stage = STAGE_POSITION;
-    main::set_cursor(undef);
+    my $cursorfile = defined &main::build_text_cursor ? main::build_text_cursor("Curr Pos") : undef;
+    $main::c->configure(-cursor => $cursorfile);
     main::status_message("Derzeitige Position markieren", "info");
     Hooks::get_hooks("after_resize")->add
 	    (sub {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: FastSplash.pm,v 1.14 2003/01/07 18:46:28 eserte Exp $
+# $Id: FastSplash.pm,v 1.14 2003/01/07 18:46:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -124,7 +124,7 @@ Tk::FastSplash - create a fast starting splash screen
 
 This module creates a splash screen for perl/Tk programs. It uses
 lowlevel perk/Tk stuff, so upward compatibility is not given (the
-module should work at least for Tk800.015 and .022). The splash screen
+module should work at least for Tk800.015, .022 and .024). The splash screen
 is created with the B<Show> function. Supplied arguments are: filename
 of the displayed image, width and height of the image and the string
 for the title bar. C<$width> and C<$height> may be left undefined. If
@@ -143,11 +143,11 @@ set the variable C<$Tk::FastSplash::TK_VERSION> to a value less than
 This module does forbidden things e.g. bootstrapping the Tk shared
 object or poking in the Perl/Tk internals. Because of this, this
 module can stop working in a new Perl/Tk release. If you are concerned
-about compatibility, then you should use C<Tk::Splash> instead. If
+about compatibility, then you should use L<Tk::Splash> instead. If
 your primary concern is speed, then C<Tk::FastSplash> is for you (and
 the primary reason I wrote this module). The splash window of
 C<Tk::FastSplash> should pop up 1 or 2 seconds faster than using
-C<Tk::Splash> or a vanilla C<Tk::Toplevel> window.
+C<Tk::Splash> or a vanilla L<Tk::Toplevel> window.
 
 =head1 BUGS
 
@@ -160,14 +160,28 @@ The $^W variable should be turned off until the "use Tk" call.
 If FastSplash is executed in a BEGIN block (which is recommended for
 full speed), then strange things will happen when using C<perl -c> or
 trying to compile a script: the splash screen will always pop up while
-doing those things.
+doing those things. Therefore it is recommended to disable the splash
+screen in check or debug mode:
+
+    BEGIN {
+        if (!$^C && !$^P) {
+            require Tk::FastSplash;
+            $splash = Tk::FastSplash->Show($image, $width, $height, $title,
+                                           $overrideredirect);
+        }
+    }
 
 The -display switch is not honoured (but setting the environment
 variable DISPLAY will work).
 
 =head1 AUTHOR
 
-Slaven Rezic
+Slaven Rezic (slaven@rezic.de)
+
+=head1 SEE ALSO
+
+L<Tk::Splash>, L<Tk::ProgressSplash>, L<Tk::Splashscreen>,
+L<Tk::mySplashScreen>.
 
 =cut
 

@@ -1,22 +1,22 @@
 # -*- perl -*-
 
 #
-# $Id: Convert.pm,v 1.18 2002/08/06 15:25:56 eserte Exp $
+# $Id: Convert.pm,v 2.1 2003/02/07 11:38:53 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
+# Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
 #
 
 package GD::Convert;
 
 use strict;
-use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+use vars qw($VERSION $DEBUG);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.1 $ =~ /(\d+)\.(\d+)/);
 
 sub import {
     my($pkg, @args) = @_;
@@ -125,22 +125,24 @@ sub xpm {
 
     my($width, $height) = $im->getBounds;
     my $chars_per_pixel = 2;
-    my $ncolors = 256;
+
+    my($bufp, $is_gd2, $is_truecolor, $no_colors) = _get_header(\$gd);
 
     my $xpm = <<EOF;
 /* XPM */
 static char *noname[] = {
 /* width height ncolors chars_per_pixel */
-"$width $height $ncolors $chars_per_pixel",
+"$width $height $no_colors $chars_per_pixel",
 /* colors */
 EOF
 
-    my $bufp = 7;
     my $ch1 = "a";
     my $ch2 = "a";
     my @color;
     for(my $i=0; $i<256; $i++) {
         my $buf = substr($gd, $bufp, 3); $bufp+=3;
+	if ($is_gd2) { $bufp++ } # ignore alpha
+	next if $i >= $no_colors; # unused color entries
 	$color[$i] = "$ch1$ch2";
 	if ($im->transparent == $i) {
 	    $xpm .= "\"$ch1$ch2 s mask c none\",\n";
@@ -174,11 +176,13 @@ sub ppm {
     my $gd = $im->gd;
 
     my($width, $height) = $im->getBounds;
-    my $bufp = 4+3;
+
+    my($bufp, $is_gd2, $is_truecolor, $no_colors) = _get_header(\$gd);
     my @color;
     for(my $i=0; $i<256; $i++) {
 	my $buf = substr($gd, $bufp, 3); $bufp+=3;
 	$color[$i] = $buf;
+	if ($is_gd2) { $bufp++ } # ignore alpha
     }
 
     my $ppm = "P6\n"
@@ -187,11 +191,37 @@ sub ppm {
     for(my $rows=0; $rows<$height; $rows++) {
 	for(my $cols=0; $cols<$width; $cols++) {
 	    my $buf = substr($gd, $bufp, 1); $bufp++;
+	    #XXX not necessary yet: next if ($is_truecolor && $cols%4==3); # ignore alpha channel
 	    $ppm .= $color[unpack("c", $buf)];
 	}
     }
 
     $ppm;
+}
+
+sub _get_header {
+    my $gdref = shift;
+    my $is_gd2 = 0;
+    my $bufp;
+    my $is_truecolor = 0;
+    my $no_colors;
+    if (substr($$gdref, 0, 2) eq "\xff\xff") {
+	$bufp = 6;
+	$is_truecolor = unpack("c", substr($$gdref, $bufp, 1));
+	$bufp++;
+	if (!$is_truecolor) {
+	    $no_colors = unpack("n", substr($$gdref, $bufp, 2));
+	    $bufp+=2;
+	} else {
+	    die "True color images not supported!";
+	}
+	$bufp+=4; # transparent color
+	$is_gd2 = 1;
+    } else {
+	$bufp = 4+3;
+	$no_colors = 256;
+    }
+    ($bufp, $is_gd2, $is_truecolor, $no_colors);
 }
 
 sub _gif_external {
@@ -259,6 +289,7 @@ sub _gif_external {
 
     require IPC::Open3;
 
+    warn "Cmd: @cmd\n" if $GD::Convert::DEBUG;
     my $pid = IPC::Open3::open3(\*WTR, \*RDR, \*ERR, @cmd);
     die "Can't create process for @cmd" if !defined $pid;
     binmode RDR;
@@ -357,11 +388,11 @@ output.
 
 =head1 AUTHOR
 
-Slaven Rezic <slaven.rezic@berlin.de>
+Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2001 Slaven Rezic. All rights reserved.
+Copyright (c) 2001,2003 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Splash.pm,v 1.10 2003/01/07 18:46:03 eserte Exp $
+# $Id: Splash.pm,v 1.10 2003/01/07 18:46:03 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -86,12 +86,11 @@ Tk::Splash - create a splash screen in a compatible way
 =head1 DESCRIPTION
 
 This module is another way to create a splash screen. It is slower
-than B<Tk::FastSplash>, but tries to be compatible by using standard
+than L<Tk::FastSplash>, but tries to be compatible by using standard
 Tk methods for creation.
 
-The arguments to the B<Show> are the same as in
-L<Tk::FastSplash|Tk::FastSplash>. For further documentation, see
-L<Tk::FastSplash>.
+The arguments to the B<Show> are the same as in B<Tk::FastSplash>. For
+further documentation, see L<Tk::FastSplash>.
 
 =head1 NOTES
 

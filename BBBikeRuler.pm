@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.8 2003/01/08 20:00:12 eserte Exp $
+# $Id: BBBikeRuler.pm,v 1.8 2003/01/08 20:00:12 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -74,6 +74,12 @@ EOF
     }
 
     add_button();
+
+    # XXX Leider reicht das hier nicht. Anscheinend ist
+    # std_transparent_binding zu eingeschränkt, es wird nur nach Straßen
+    # unterhalb geschaut, aber nicht nach anderen Punkten, die auch einen
+    # Balloon haben könnten
+    main::std_transparent_binding("ruler");
 }
 
 sub activate {

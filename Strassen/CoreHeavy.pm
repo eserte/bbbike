@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.6 2003/01/08 20:14:04 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.8 2003/05/09 22:50:46 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -448,6 +448,56 @@ sub filter_region {
     $new_s;
 }
 
+# Resets iterator
+# Arguments: -date (optional, default is today)
+#            -negpos (optional, default is 0=negative, matches are deleted)
+### AutoLoad Sub
+sub filter_date {
+    my($s, %args) = @_;
+
+    my $date = $args{-date};
+    if (!defined $date) {
+	my @l = localtime;
+	$date = sprintf "%04d-%02d-%02d", $l[5]+1900, $l[4]+1, $l[3];
+    }
+
+    my $neg_pos = $args{-negpos} || 0;
+
+    my $new_s = Strassen->new;
+    $s->init;
+    while(1) {
+	my $r = $s->next;
+	last if !@{ $r->[COORDS] };
+	my $hit;
+	if ($r->[NAME] =~ /(\d{4}-\d{2}-\d{2})\s*(?:-|bis)\s*(\d{4}-\d{2}-\d{2})/
+	    && ($date lt $1 || $date gt $2)) {
+	    if ($neg_pos == 0) {
+		next;
+	    } else {
+		$hit = 1;
+	    }
+	} elsif ($r->[NAME] =~ /(?:-|bis)\s*(\d{4}-\d{2}-\d{2})/
+		 && $date le $1) {
+	    if ($neg_pos == 0) {
+		next;
+	    } else {
+		$hit = 1;
+	    }
+	} elsif ($r->[NAME] =~ /(\d{4}-\d{2}-\d{2})\s*(?:-|bis)/
+		 && $date ge $1) {
+	    if ($neg_pos == 0) {
+		next;
+	    } else {
+		$hit = 1;
+	    }
+	}
+	if ($neg_pos == 0 || $hit) {
+	    $new_s->push($r);
+	}
+    }
+    $new_s;
+}
+
 # XXX german/multilingual labels?
 # use as: $mw->getOpenFile(-filetypes => [Strassen->filetypes])
 sub filetypes {
@@ -514,6 +564,26 @@ sub bboxes {
     \@bboxes;
 }
 
+# Return the bounding box of the file
+# Ack: resets the iterator
+sub bbox {
+    my($self) = @_;
+    $self->init;
+    my($x1,$y1,$x2,$y2);
+    while(1) {
+	my $r = $self->next;
+	last if !@{ $r->[Strassen::COORDS] };
+	for (@{ $r->[Strassen::COORDS] }) {
+	    my($x,$y) = split /,/;
+	    $x1 = $x if !defined $x1 || $x1 > $x;
+	    $x2 = $x if !defined $x2 || $x2 < $x;
+	    $y1 = $y if !defined $y1 || $y1 > $y;
+	    $y2 = $y if !defined $y2 || $y2 < $y;
+	}
+    }
+    ($x1,$y1,$x2,$y2);
+}
+
 # $catref is either a hash reference of category => level mapping or a
 # an array reference of categories. Lower categories should be first.
 sub sort_by_cat {
@@ -531,6 +601,23 @@ sub sort_by_cat {
         map  { my $l = parse($_);
 	       [exists $catval{$l->[CAT]} ?
 		$catval{$l->[CAT]} : 9999, $_] } @{ $self->{Data} };
+}
+
+sub is_current {
+    my($self) = @_;
+    return 0 if !defined $self->{Modtime};
+    for my $f ($self->file) {
+	my $now_modtime = (stat($f))[STAT_MODTIME];
+	return 0 if $self->{Modtime} < $now_modtime;
+    }
+    return 1;
+}
+
+sub reload {
+    my($self) = @_;
+    return if $self->is_current;
+    warn "Reload " . $self->file . "...\n";
+    $self->read_data;
 }
 
 1;

@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: Http.pm,v 3.8 2003/01/03 21:31:09 eserte Exp $
+# $Id: Http.pm,v 3.14 2003/01/18 19:24:11 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1995,1996,1998,2000,2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 1995,1996,1998,2000,2001,2003 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: srezic@cpan.org
+# WWW:  http://www.rezic.de/eserte/
 #
 
 package Http;
@@ -20,14 +20,15 @@ use Socket;
 use Symbol qw(gensym);
 use strict;
 use vars qw(@ISA @EXPORT_OK $VERSION $tk_widget $user_agent $http_defaultheader
-	    $BACKEND $waitVariable);
+	    $BACKEND $waitVariable $timeout $can_alarm);
 
 @ISA = qw(Exporter);
 @EXPORT_OK = qw(get $user_agent $http_defaultheader
 		rfc850_date uuencode);
-$VERSION = sprintf("%d.%02d", q$Revision: 3.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.14 $ =~ /(\d+)\.(\d+)/);
 
 $tk_widget = 0 unless defined $tk_widget;
+$timeout = 10  unless defined $timeout;
 $user_agent = "Http.pm/$VERSION (perl)";
 $http_defaultheader = <<EOF;
 Accept: */*;
@@ -165,7 +166,31 @@ sub get_plain {
     local($/) = $/;
 
     my $sock = gensym;
-    my $r = &socket($sock, $host, $port);
+
+    my $r;
+    if ($timeout && _can_alarm()) {
+	local $SIG{ALRM} = sub { die "Timeout" };
+	alarm($timeout);
+	# connect() may block --- find a way how to detect blocking connects
+	# and get rid of the alarm() stuff
+	eval {
+	    $r = &socket($sock, $host, $port);
+	};
+	my $err = $@;
+	alarm(0);
+	if ($err) {
+	    return ('content' => $err,
+		    'error' => 500);
+	}
+    } else {
+	eval {
+	    $r = &socket($sock, $host, $port);
+	};
+	if ($@) {
+	    return ('content' => $@,
+		    'error' => 500);
+	}
+    }
     binmode($sock);
     if (!defined $r) {
         return ('content'       => undef,
@@ -180,9 +205,8 @@ sub get_plain {
 	    . ($extra_header ne "" ? "$extra_header\015\012" : "")
 	      . "\015\012";
 
-    if ($tk_widget) {
+    if ($tk_widget && $^O ne "MSWin32") {
 	$$waitref = 0;
-	# XXX unter Win32 austesten!
 	print STDERR "\nWait for writable socket ..." if $debug;
 	$tk_widget->fileevent($sock, 'writable', sub { $$waitref = 1 });
 	$tk_widget->waitVariable($waitref);
@@ -269,29 +293,44 @@ sub get_plain {
     };
 
     if ($tk_widget) {
-	eval q{ alarm 0 };
-	my $timeout = 10;
-	my $can_alarm = $@ eq '';
+	my $error = 0;
+	my $recursive_call = 0;
 	$$waitref = 0;
 	$tk_widget->fileevent
 	    ($sock, 'readable', sub {
-		 if ($can_alarm) {
+		 if ($timeout && _can_alarm()) {
 		     local $SIG{ALRM} = sub { die "Timeout" };
 		     alarm($timeout);
+		     my $r;
+		     eval {
+			 $r = sysread($sock, $buffer, 1024, length($buffer));
+		     };
+		     my $err = $@;
+		     alarm(0);
+		     if ($err) {
+			 $content = $err;
+			 $error = 1;
+			 $$waitref = 1;
+			 return;
+		     }
+		     if ($r == 0) {
+			 $$waitref = 1;
+			 return;
+		     }
+		 } else {
+		     if (sysread($sock, $buffer, 1024, length($buffer)) == 0) {
+			 $$waitref = 1;
+			 return;
+		     }
 		 }
-		 if (sysread($sock, $buffer, 1024, length($buffer)) == 0) {
-		     alarm(0) if ($can_alarm);
-		     $$waitref = 1;
-		     return;
-		 }
-		 alarm(0) if ($can_alarm);
 		 if ($stage == 0) {
 		     while ($buffer =~ s/(.*?\012)(.*)/$2/) {
 			 $_ = $1;
 			 if (!$parse_header_line->()) {
 			     $stage = 1;
-			     if (!$content_follows->()) {
+			     if ($error{code} != 200) {
 				 $$waitref = 1;
+				 $recursive_call = 1;
 				 return;
 			     }
 			     $content .= $buffer;
@@ -306,6 +345,13 @@ sub get_plain {
 	     });
 	$tk_widget->waitVariable($waitref);
 	$tk_widget->fileevent($sock, 'readable', '');
+	if ($recursive_call) {
+	    $content_follows->();
+	} elsif ($error) {
+	    close $sock;
+	    return ('content' => $content,
+		    'error'   => 500);
+	}
     } else {
 	local($/) = "\012";
 	while (<$sock>) {
@@ -481,4 +527,105 @@ sub is_in_path {
     undef;
 }
 
+sub _can_alarm {
+    return $can_alarm if (defined $can_alarm);
+    eval q{ alarm 0 };
+    $can_alarm = $@ eq '';
+    $can_alarm;
+}
+
 1;
+
+__END__
+
+=head1 NAME
+
+Http - wrapper around HTTP protocol
+
+=head1 SYNOPSIS
+
+    use Http;
+    %res = Http::get(url => "http://...");
+    if ($res{'error'} == 200) {
+        print $res{'content'};
+    } else {
+        print "Error code $res{'error'}\n";
+    }
+
+=head1 DESCRIPTION
+
+The get() function may take the following arguments:
+
+=over
+
+=item url
+
+The URL to fetch. This is mandatory.
+
+=item rfc850
+
+An RFC 850-styled date. Only fetch the URL if the document is newer.
+
+=item ctime
+
+A ctime-styled date. Only fetch the URL if the document is newer.
+C<rfc850> and C<ctime> may not be used together.
+
+=item debug
+
+Turn debugging on.
+
+=item header
+
+A string with extra header lines. Header lines should be in the form
+
+    val: key\015\012
+
+=item no-retry
+
+Do not retry if the first fetch encounter an authorization request.
+
+=item proxy
+
+Use the named proxy. Also the environment variable C<http_proxy> may
+be used to set a proxy.
+
+=item waitVariable
+
+For using with Tk: a variable reference to wait for a writable socket.
+
+=back
+
+=head2 Global variables
+
+=over
+
+=item C<$BACKEND>
+
+Choose a backend. Choices are: C<plain> (for a pure-perl
+implementation) and C<ghttp> (for using C<HTTP::GHTTP>). C<best>
+chooses from either C<ghttp> (if available) or C<plain>.
+
+=item C<$user_agent>
+
+Change the name of the user agent.
+
+=item C<$http_defaultheader>
+
+A list of default headers to send. By default, C<Http.pm> checks
+whether C<zcat> is available and adds a header to accept compress and
+gzip encodings.
+
+=back
+
+=head1 AUTHOR
+
+Slaven Rezic <srezic@cpan.org>
+
+=head1 COPYRIGHT
+
+Copyright (c) 1995,1996,1998,2000,2001,2003 Slaven Rezic. All rights reserved.
+This module is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=head1 SEE ALSO

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CNetFile.pm,v 1.9 2003/01/08 20:59:03 eserte Exp $
+# $Id: CNetFile.pm,v 1.10 2003/04/13 15:56:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package StrassenNetz::CNetFile;
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Inline 0.40; # because of API changes
@@ -93,7 +93,7 @@ void* translate_pointer(SV* self, int ptr) {
     return (void*)(buf+ptr);
 }
 
-void get_coord_struct(void* ptr) {
+void get_coord_struct(SV* self, void* ptr) {
     int x, y, no_succ;
     int* ptr_i = (int*)ptr;
     int i;

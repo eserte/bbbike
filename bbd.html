@@ -28,6 +28,7 @@
 <li><a class="POD_NAVLINK" href="#MISC">MISC</a>
 <li><a class="POD_NAVLINK" href="#MORE_STANDARD_FILES">MORE STANDARD FILES</a>
 </ul>
+<li><a class="POD_NAVLINK" href="#EXAMPLES">EXAMPLES</a>
 <li><a class="POD_NAVLINK" href="#AUTHOR">AUTHOR</a>
 <li><a class="POD_NAVLINK" href="#SEE_ALSO">SEE ALSO</a>
 </ul>
@@ -57,16 +58,29 @@ The category of this point or polyline. If the category matches
 <code>#rrggbb</code> (where <code>rr</code>, <code>gg</code> and <code>bb</code> are hexadecimal values), then
 this denotes a color for the representation in the Perl/Tk interface.
 A prefix of <code>F:</code> denotes that the polyline should be treated as a
-polygon and this filled with a solid color. Other predefined
-categories are listed below. The category should not contain any
-spaces.
+polygon and filled with a solid color. Note that the polygon is always
+closed, but it is optional to make the first and last the same.
+<p class="POD_TEXT">
+If the category matches <i>forwardcat</i><code>;</code><i>backwardcat</i>, then
+<i>forwardcat</i> applies to the street in forward direction and
+<i>backwardcat</i> applies to the street in backward direction. Either
+<i>forwardcat</i> or <i>backwardcat</i> may be empty; in this case the
+category applies only to the other direction.
+</p>
+<p class="POD_TEXT">
+Other predefined categories are listed below. The category should not
+contain any spaces.
+</p>
 <dt class="POD_ITEM"><a name="x_y">x,y</a>
 <dd>
 A coordinate. x and y should be integer or float values. The datum and
 grid of the coordinates should be handled by the software. It is
 recommended that x and y should denote the easting and northing in
 meters (as in GKK or UTM). A record may contain an unlimited number of
-coordinates.
+coordinates, though there may be limitations in the interpreting
+software (currently the maximum number of points is hardcoded in
+<u>BBBikeXS</u> and checked in the rule <code>check-line-lengths</code> of
+<code>data/Makefile</code>).
 </dl>
 <p class="POD_TEXT">
 If a line begins with a hash sign (<code>#</code>), then it is treated as a
@@ -101,33 +115,38 @@ Nebenstra&szlig;en
 F&uuml;r Kfz gesperrte Stra&szlig;en.
 <dt class="POD_ITEM"><a name="Pl">Pl</a>
 <dd>
-Places (Pl&auml;tze). Only for point records.
+Places (Pl&auml;tze).
+<dt class="POD_ITEM"><a name="Br">Br</a>
+<dd>
+Bridges.
 </dl>
 <h3 class="POD_HEAD2"><a name="BLOCKINGS">BLOCKINGS</a></h3>
 <p class="POD_TEXT">
 Used in files: <code>gesperrt</code>.
 </p>
-<ol class="POD_LIST">
-<li class="POD_ITEM"><a name="_"></a>
+<ul class="POD_LIST">
+<li class="POD_ITEM"><a name=1>1</a>
 
 One way street. The blocking is in the direction of the polyline.
-<li class="POD_ITEM"><a name="_1"></a>
+<li class="POD_ITEM"><a name=2>2</a>
 
 Blocked street (in both directions).
-<li class="POD_ITEM"><a name="_2"></a>
+<li class="POD_ITEM"><a name="_"></a>
 
 The bicycle has to be carried. An optional penalty parameter expressed
 in seconds of lost time may be added after the category, with a <code>:</code>
 as separator. Example: <code>0:30</code> for a penalty of 30 seconds. This is
 only for point records.
-<li class="POD_ITEM"><a name="_3"></a>
+<li class="POD_ITEM"><a name=3>3</a>
 
-A blocked route (gesperrte Wegf&uuml;hrung).
+A blocked route (gesperrte Wegf&uuml;hrung). This means that the whole path
+specified by the coordinates of this record are blocked, but parts of
+the path are not.
 <li class="POD_ITEM"><a name="BNP">BNP</a>
 
-A narrow passage. An optional penalty parameter may be added, like for
-the <code></code> category.
-</ol>
+A narrow passage (&quot;Dr&auml;ngelgitter&quot; etc.). An optional
+penalty parameter may be added, like for the <code></code> category.
+</ul>
 <h3 class="POD_HEAD2"><a name="CYCLE_PATHS_RADWEGE_">CYCLE PATHS (RADWEGE)</a></h3>
 <p class="POD_TEXT">
 Used in files: <code>radwege_exact</code>.
@@ -135,28 +154,34 @@ Used in files: <code>radwege_exact</code>.
 <dl class="POD_LIST">
 <dt class="POD_ITEM"><a name="RW0">RW0</a>
 <dd>
-Normaler nicht benutzungspflichtiger Radweg.
+Kein Radweg.
 <dt class="POD_ITEM"><a name="RW1">RW1</a>
 <dd>
-Benutzungspflichtiger Radweg.
+Normaler nicht benutzungspflichtiger Radweg.
 <dt class="POD_ITEM"><a name="RW2">RW2</a>
 <dd>
-Suggestivstreifen f&uuml;r Radfahrer.
+Benutzungspflichtiger Radweg.
 <dt class="POD_ITEM"><a name="RW3">RW3</a>
 <dd>
-Radstreifen.
+Suggestivstreifen f&uuml;r Radfahrer.
 <dt class="POD_ITEM"><a name="RW4">RW4</a>
 <dd>
-Busspur (eventuell nur tempor&auml;r), auch f&uuml;r Radfahrer frei.
+Radstreifen.
 <dt class="POD_ITEM"><a name="RW5">RW5</a>
 <dd>
-Verkehrsberuhigte Stra&szlig;e.
+Busspur (eventuell nur tempor&auml;r), auch f&uuml;r Radfahrer frei.
 <dt class="POD_ITEM"><a name="RW6">RW6</a>
 <dd>
-Fahrradstra&szlig;e.
+Verkehrsberuhigte Stra&szlig;e.
 <dt class="POD_ITEM"><a name="RW7">RW7</a>
 <dd>
-Zweirichtungsradweg, Gegenrichtung.
+Fahrradstra&szlig;e.
+<dt class="POD_ITEM"><a name="RW8">RW8</a>
+<dd>
+Benutzungspflichtiger Zweirichtungsradweg, Gegenrichtung.
+<dt class="POD_ITEM"><a name="RW9">RW9</a>
+<dd>
+Nicht benutzungspflichtiger Zweirichtungsradweg, Gegenrichtung.
 </dl>
 <h3 class="POD_HEAD2"><a name="RAILROADS">RAILROADS</a></h3>
 <p class="POD_TEXT">
@@ -251,6 +276,9 @@ Auf 18 km/h.
 <dt class="POD_ITEM"><a name="q3">q3</a>
 <dd>
 Auf 13 km/h.
+<dt class="POD_ITEM"><a name="q4">q4</a>
+<dd>
+Auf Schrittgeschwidigkeit (z.B. in Fu&szlig;g&auml;ngerzonen).
 </dl>
 <h3 class="POD_HEAD2"><a name="COMMENTS">COMMENTS</a></h3>
 <p class="POD_TEXT">
@@ -317,13 +345,28 @@ in meters, the category is not used.
 <p class="POD_TEXT">
 XXX To be continued
 </p>
+<h2 class="POD_HEAD1"><a name="EXAMPLES">EXAMPLES</a></h2>
+<pre class="POD_VERBATIM">
+                      A list of coordinates (x,y pairs)
+                      v
+    Dudenstr. &lt;TAB&gt; H 9222,8787 8982,8781 8594,8773
+    ^               ^
+    Street name     Category (H = main street)
+
+                           A list of coordinates for the polygon
+                           v
+    Viktoriapark &lt;TAB&gt; F:P 8554,8628 8551,8698 8577,8699 8579,8727
+    ^                  ^
+    Name of a park     Category (F = area (polygon, Fl&auml;che),
+                                 P = park)
+</pre>
 <h2 class="POD_HEAD1"><a name="AUTHOR">AUTHOR</a></h2>
 <p class="POD_TEXT">
 Slaven Rezic &lt;slaven@rezic.de&gt;
 </p>
 <h2 class="POD_HEAD1"><a name="SEE_ALSO">SEE ALSO</a></h2>
 <p class="POD_TEXT">
-bbbike(1), Strassen(3).
+<a class="POD_LINK" href="bbbike.html">bbbike</a>, <u>Strassen</u>.
 </p>
 <hr>
 <a class="POD_NAVLINK" href="#Pod_TOP_OF_PAGE">[Top]</a></body>

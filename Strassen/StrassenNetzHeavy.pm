@@ -1,9 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetzHeavy.pm,v 1.6 2003/01/08 20:15:37 eserte Exp $
+# $Id: StrassenNetzHeavy.pm,v 1.8 2003/05/16 22:15:22 eserte Exp eserte $
 #
-# Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -14,6 +14,7 @@
 package Strassen::StrassenNetzHeavy;
 
 package StrassenNetz;
+use Strassen::StrassenNetz;
 use strict;
 use vars @StrassenNetz::EXPORT_OK;
 
@@ -165,47 +166,94 @@ if ($node eq $last_node) {warn "$node == $last_node\n";}
 # If -net2name is true, then create Net2Name member.
 # If -multiple is true, then allow multiple values per street connection.
 #   In this case values are always array references.
+# Turn caching on/off with -usecache. If -usecache is not specified, the
+#   global value from $Strassen::Util::cacheable is used.
 ### AutoLoad Sub
 sub make_net_cat {
     my($self, %args) = @_;
-    my $obey_dir    = $args{-obeydir};
-    my $do_net2name = $args{-net2name};
-    my $multiple    = $args{-multiple};
-    # Caching ist (noch) nicht notwendig
+    my $obey_dir    = $args{-obeydir} || 0;
+    my $do_net2name = $args{-net2name} || 0;
+    my $multiple    = $args{-multiple} || 0;
+    my $cacheable   = defined $args{-usecache} ? $args{-usecache} : $Strassen::Util::cacheable;
+    my $args2filename = join("_", $obey_dir, $do_net2name, $multiple);
+
+    my $cachefile;
+    if ($cacheable) {
+	my @src = $self->sourcefiles;
+	$cachefile = $self->get_cachefile;
+	my $net2name = Strassen::Util::get_from_cache("net2name_" . $args2filename . "_$cachefile", \@src);
+	my $net = Strassen::Util::get_from_cache("net_" . $args2filename . "_$cachefile", \@src);
+	if (defined $net2name && defined $net) {
+	    $self->{Net2Name} = $net2name;
+	    $self->{Net} = $net;
+	    if ($VERBOSE) {
+		warn "Using cache for $cachefile\n";
+	    }
+	    return;
+	}
+    }
+
     $self->{Net} = {};
     $self->{Net2Name} = {};
     my $net      = $self->{Net};
     my $net2name = $self->{Net2Name};
     my $strassen = $self->{Strassen};
     $strassen->init;
+    local $^W = 0;
     while(1) {
 	my $ret = $strassen->next;
 	my @kreuzungen = @{$ret->[Strassen::COORDS()]};
 	last if @kreuzungen == 0;
-	my $cat = $ret->[Strassen::CAT()];
+	my($cat_hin, $cat_rueck);
+	if ($ret->[Strassen::CAT()] =~ /^(.*);(.*)$/) {
+	    ($cat_hin, $cat_rueck) = ($1, $2);
+	} else {
+	    $cat_hin = $cat_rueck = $ret->[Strassen::CAT()];
+	}
+	my $strassen_pos = $strassen->pos;
 	my $i;
 	for($i = 0; $i < $#kreuzungen; $i++) {
-	    if ($multiple) {
-		push @{$net->{$kreuzungen[$i]}{$kreuzungen[$i+1]}}, $cat;
-	    } else {
-		$net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $cat;
-	    }
-	    if (!$obey_dir) {
+	    if ($cat_hin ne "") {
 		if ($multiple) {
-		    push @{$net->{$kreuzungen[$i+1]}{$kreuzungen[$i]}}, $cat;
+		    push @{$net->{$kreuzungen[$i]}{$kreuzungen[$i+1]}}, $cat_hin;
 		} else {
-		    $net->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $cat;
+		    $net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $cat_hin;
+		}
+	    }
+	    if (!$obey_dir && $cat_rueck ne "") {
+		if ($multiple) {
+		    push @{$net->{$kreuzungen[$i+1]}{$kreuzungen[$i]}}, $cat_rueck;
+		} else {
+		    $net->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $cat_rueck;
 		}
 	    }
 	    if ($do_net2name) {
-		if ($multiple) {
-		    push @{$net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]}}, $strassen->pos;
-		} else {
-		    $net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $strassen->pos;
+		if ($cat_hin ne "") {
+		    if ($multiple) {
+			push @{$net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]}}, $strassen_pos;
+		    } else {
+			$net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $strassen_pos;
+		    }
+		}
+		if (!$obey_dir && $cat_rueck ne "") {
+		    if ($multiple) {
+			push @{$net2name->{$kreuzungen[$i+1]}{$kreuzungen[$i]}}, $strassen_pos;
+		    } else {
+			$net2name->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $strassen_pos;
+		    }
 		}
 	    }
 	}
     }
+
+    if ($cacheable) {
+	Strassen::Util::write_cache($net2name, "net2name_" . $args2filename . "_$cachefile", -modifiable => 1);
+	Strassen::Util::write_cache($net, "net_" . $args2filename . "_$cachefile", -modifiable => 1);
+	if ($VERBOSE) {
+	    warn "Wrote cache ($cachefile)\n";
+	}
+    }
+
 }
 
 # Create a special cycle path/street category net
@@ -214,10 +262,28 @@ sub make_net_cat {
 #    H_RW => same with
 #    N    => N or NN without cycle path
 #    N_RW => same with
+# %args: may be UseCache => $boolean
 ### AutoLoad Sub
 sub make_net_cyclepath {
-    my($self, $cyclepath, $type) = @_;
-    # Caching ist (noch) nicht notwendig
+    my($self, $cyclepath, $type, %args) = @_;
+
+    my $args2filename = "$type";
+
+    my $cachefile;
+    my $cacheable = defined $args{UseCache} ? $args{UseCache} : $Strassen::Util::cacheable;
+    if ($cacheable) {
+	my @src = $self->sourcefiles;
+	$cachefile = $self->get_cachefile;
+	my $net = Strassen::Util::get_from_cache("net_" . $args2filename . "_$cachefile", \@src);
+	if (defined $net) {
+	    $self->{Net} = $net;
+	    if ($VERBOSE) {
+		warn "Using cache for $cachefile\n";
+	    }
+	    return;
+	}
+    }
+
     $self->{Net} = {};
     my $net      = $self->{Net};
     my $strassen = $self->{Strassen};
@@ -248,6 +314,14 @@ sub make_net_cyclepath {
 	    }
 	}
     }
+
+    if ($cacheable) {
+	Strassen::Util::write_cache($net, "net_" . $args2filename . "_$cachefile", -modifiable => 1);
+	if ($VERBOSE) {
+	    warn "Wrote cache ($cachefile)\n";
+	}
+    }
+
 }
 
 # XXX Abspeichern der Wegfuehrung nicht getestet

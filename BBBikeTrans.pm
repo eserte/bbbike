@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTrans.pm,v 1.4 2002/11/06 15:47:30 eserte Exp $
+# $Id: BBBikeTrans.pm,v 1.4 2002/11/06 15:47:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
@@ -145,6 +145,66 @@ sub anti_transpose_ls_medium {
 }
 sub anti_transpose_pt_medium {
     (int((200-$_[1]/$medium_scale)*25), int((600-$_[0]/$medium_scale)*25));
+}
+';
+    warn $code if $verbose;
+    eval $code;
+    warn $@ if $@;
+}
+
+# Besser, da nicht mit ints gearbeitet wird (vor allem beim Reinzoomen!).
+# Könnte auf Maschinen ohne FPU langsamer sein.
+my $create_transpose_subs_no_int_created = 0;
+sub old_create_transpose_subs_no_int {
+    return if ($create_transpose_subs_no_int_created);
+    warn "XXX Using old_create_transpose_subs_no_int ...\n";
+    $create_transpose_subs_no_int_created++;
+    my $code = '
+sub transpose_ls_slow {
+    ((-200+$_[0]/25)*$scale, (600-$_[1]/25)*$scale);
+}
+sub transpose_pt {
+    ((600-$_[1]/25)*$scale, (200-$_[0]/25)*$scale);
+}
+# wie transpose_ls, nur für das Overview-Fenster (Verkleinerung: $small_scale)
+sub transpose_ls_small {
+    ((-200+$_[0]/25)*$small_scale, (600-$_[1]/25)*$small_scale);
+}
+sub transpose_pt_small {
+    ((600-$_[1]/25)*$small_scale, (200-$_[0]/25)*$small_scale);
+}
+# wie transpose_ls, nur für das Overview-Fenster (Verkleinerung: $medium_scale)
+sub transpose_ls_medium {
+    ((-200+$_[0]/25)*$medium_scale, (600-$_[1]/25)*$medium_scale);
+}
+sub transpose_pt_medium {
+    ((600-$_[1]/25)*$medium_scale, (200-$_[0]/25)*$medium_scale);
+}
+# wie transpose_ls, nur ohne x und y_delta. Für das Berechnen von Breiten
+# und Höhen geeignet
+sub transpose_ls_abs {
+    (($_[0]/25)*$scale, ($_[1]/25)*$scale);
+}
+# Diese Funktion bildet von coords (im canvas) auf realcoords ab.
+sub anti_transpose_ls {
+    (($_[0]/$scale+200)*25, (600-$_[1]/$scale)*25);
+}
+sub anti_transpose_pt {
+    ((200-$_[1]/$scale)*25, (600-$_[0]/$scale)*25);
+}
+# wie anti_transpose_ls, nur für das Overview-Fenster (Verkleinerung: $small_scale)
+sub anti_transpose_ls_small {
+    (($_[0]/$small_scale+200)*25, (600-$_[1]/$small_scale)*25);
+}
+sub anti_transpose_pt_small {
+    ((200-$_[1]/$small_scale)*25, (600-$_[0]/$small_scale)*25);
+}
+# wie anti_transpose_ls, nur für das Overview-Fenster (Verkleinerung: $medium_scale)
+sub anti_transpose_ls_medium {
+    (($_[0]/$medium_scale+200)*25, (600-$_[1]/$medium_scale)*25);
+}
+sub anti_transpose_pt_medium {
+    ((200-$_[1]/$medium_scale)*25, (600-$_[0]/$medium_scale)*25);
 }
 ';
     warn $code if $verbose;

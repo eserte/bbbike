@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.70 2003/01/08 18:45:10 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.79 2003/05/17 00:38:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2003 Slaven Rezic. All rights reserved.
@@ -12,17 +12,13 @@
 # WWW:  http://bbbike.sourceforge.net
 #
 
+package BBBikeAdvanced;
+
+package main;
+
 use Config;
 use strict;
-use vars qw($top $transient %str_draw %p_draw $os $use_clipboard
-	    %str_file %p_file $edit_mode %font $advanced
-	    %p_attrib %str_attrib
-	    $tmpdir %tmpfiles $datadir @popup_style
-	    $center_on_str $verbose %global_search_args @realcoords
-	    %toplevel @scrollregion $c
-	    @normal_stack_order $default_line_width
-	    $last_loaded_layers_obj
-	   );
+use BBBikeGlobalVars;
 
 BEGIN {
     if (!defined &M) {
@@ -257,13 +253,20 @@ sub enlarge_transposed_scrollregion {
     $c->configure(-scrollregion => \@scrollregion);
 }
 
+sub _layer_tag_expr {
+    my $abk = shift;
+    "$abk || $abk-fg";
+}
+
 sub enlarge_scrollregion_for_layer {
     my $abk = shift;
     IncBusy($top);
     eval {
-	my(@bbox) = $c->bbox($abk);
+	my(@bbox) = $c->bbox(_layer_tag_expr($abk));
 	if (@bbox) {
 	    enlarge_transposed_scrollregion(@bbox);
+	} else {
+	    die "No bbox for tag $abk: maybe the layer is empty";
 	}
     };
     my $err = $@;
@@ -317,7 +320,7 @@ sub plot_additional_layer {
     } elsif ($linetype eq 'p') {
 	$p_draw{$abk} = 1;
     } else {
-	die;
+	die "Unknown linetype $linetype, should be str or p";
     }
     if (defined $file) {
 	custom_draw($linetype, $abk, $file);
@@ -515,9 +518,11 @@ sub zoom_view_for_layer {
     my $abk = shift;
     IncBusy($top);
     eval {
-	my(@bbox) = $c->bbox($abk);
+	my(@bbox) = $c->bbox(_layer_tag_expr($abk));
 	if (@bbox) {
 	    zoom_view(@bbox);
+	} else {
+	    die "No bbox for tag $abk: maybe the layer is empty";
 	}
     };
     my $err = $@;
@@ -542,10 +547,12 @@ sub set_scrollregion_for_layer {
     my $abk = shift;
     IncBusy($top);
     eval {
-	my(@bbox) = $c->bbox($abk);
+	my(@bbox) = $c->bbox(_layer_tag_expr($abk));
 	if (@bbox) {
 	    @scrollregion = @bbox;
 	    $c->configure(-scrollregion => [@scrollregion]);
+	} else {
+	    die "No bbox for tag $abk: maybe the layer is empty";
 	}
     };
     my $err = $@;
@@ -595,12 +602,9 @@ sub change_datadir {
 }
 
 use vars qw($standard_command_index $editberlin_command_index
-	    $editbrb_command_index $coord_output $coord_output_int
-	    @edit_mode_cmd
-	    $coord_system $coord_system_obj
-	    @edit_mode_brb_cmd @edit_mode_b_cmd @edit_mode_any_cmd
-	    @standard_mode_cmd $pp_color $c $coord_prefix $special_edit
-	    $net $point_editor $crossings %str_file %p_file);
+  	    $editbrb_command_index @edit_mode_any_cmd);
+
+$without_zoom_factor = 1 if !defined $without_zoom_factor;
 
 sub set_coord_interactive {
     my $t = redisplay_top($top, 'set_coord_interactive',
@@ -733,9 +737,10 @@ sub set_coord_interactive {
 	}
     }
 
-    my $stplurl_f;
     {
-	my $f = $stplurl_f = $t->Frame->pack(-anchor => "w");
+	# Stadtplandienst, obsolete
+
+	my $f = $t->Frame->pack(-anchor => "w");
 	$f->Label(-text => M"Stadtplandienst-URL")->pack(-side => "left");
 	my $stadtplandiensturl;
 	$f->Entry(-textvariable => \$stadtplandiensturl)->pack(-side => "left");
@@ -758,6 +763,45 @@ sub set_coord_interactive {
 		     $coord_output = 'polar';
 		     $coord_menu->setOption('polar'); # XXX $Karte::map{'polar'}->name); #XXX should be better in Tk
 		     $set_sub->(1);
+		 } else {
+		     die "Can't parse <$stadtplandiensturl>";
+		 }
+	     })->pack(-side => "left");
+    }
+
+    {
+	# www.berlinonline.de
+
+	my $f = $t->Frame->pack(-anchor => "w");
+	$f->Label(-text => M"BerlinOnline-Stadtplan-URL")->pack(-side => "left");
+	my $stadtplandiensturl;
+	$f->Entry(-textvariable => \$stadtplandiensturl)->pack(-side => "left");
+	$f->Button
+	    (-text => M"Selection",
+	     -command => sub {
+		 Tk::catch {
+		     $stadtplandiensturl
+			 = $f1->SelectionGet('-selection' => ($os eq 'win'
+							      ? "CLIPBOARD"
+							      : "PRIMARY"));
+		 };
+	     })->pack(-side => "left");
+	$f->Button
+	    (-text => M"Setzen",
+	     -command => sub {
+		 if ($stadtplandiensturl =~ /ADR_ZIP=(\d+)&ADR_STREET=(.+?)&ADR_HOUSE=(.*)/) {
+		     my($zip, $street, $hnr) = ($1, $2, $3);
+		     local @INC = @INC;
+		     push @INC, "$FindBin::RealBin/miscsrc";
+		     require TelbuchDBApprox;
+		     my $tb = TelbuchDBApprox->new(-approxhnr => 1);
+		     my(@res) = $tb->search("$street $hnr", $zip);
+		     if (!@res) {
+			 status_message(M("Kein Ergebnis gefunden"), "die");
+		     }
+		     my($x,$y) = transpose(split /,/, $res[0]->{Coord});
+		     mark_point('-x' => $x, '-y' => $y,
+				-clever_center => 1);
 		 } else {
 		     die "Can't parse <$stadtplandiensturl>";
 		 }
@@ -791,9 +835,15 @@ sub set_line_coord_interactive {
 			  -title => M"Linienkoordinaten setzen");
     return if !defined $t;
 
-    my @coords;
-
     my $set_sub = sub {
+	my(@mark_args) = @_;
+	my @coords = ();
+	my $s = $t->SelectionGet('-selection' => ($os eq 'win'
+						  ? "CLIPBOARD"
+						  : "PRIMARY"));
+	foreach (split(/\s+/, $s)) {
+	    push @coords, [split /,/, $_];
+	}
 	my @line_coords;
 	foreach (@coords) {
 	    my($valx,$valy) = @$_;
@@ -802,25 +852,19 @@ sub set_line_coord_interactive {
 	}
 	mark_street(-coords => \@line_coords,
 		    -type => 's',
-		    -clever_center => 1,
+		    @mark_args,
 		   );
     };
 
-    $t->Button(-text => M"Selection setzen",
-	       -command => sub {
-		   @coords = ();
-		   my $s = $t->SelectionGet('-selection' => ($os eq 'win'
-							     ? "CLIPBOARD"
-							     : "PRIMARY"));
-		   foreach (split(/\s+/, $s)) {
-		       push @coords, [split /,/, $_];
-		   }
-
-		   $set_sub->();
-	       })->pack;
+    my $b = $t->Button
+	(-text => M"Selection setzen",
+	 -command => sub {
+	     $set_sub->(-clever_center => 1);
+	 })->pack;
+    $b->bind("<3>" => sub {
+		 $set_sub->(-dont_center => 1);
+	     });
 }
-
-use vars qw($search_stat $search_visual);
 
 sub add_search_menu_entries {
     my $sbm = shift;
@@ -864,8 +908,6 @@ sub add_search_menu_entries {
     $sbm->separator;
 }
 
-use vars qw($net_type %penalty_subs);
-
 sub add_search_net_menu_entries {
     my $sbm = shift;
     $sbm->cascade(-label => M"Netz ändern");
@@ -874,6 +916,7 @@ sub add_search_net_menu_entries {
     foreach my $def ([M"Straßen",  's'],
 		     [M"U/S-Bahn", 'us'],
 		     [M"R-Bahn", 'r'],
+		     [M"Gesamtes Bahnnetz", 'rus'],
 		    ) {
 	my($label, $value) = @$def;
 	$nsbm->radiobutton(-label => $label,
@@ -910,6 +953,9 @@ sub advanced_coord_menu {
 	$ausm->checkbutton(-label => "Integer",
 			   -variable => \$coord_output_int,
 			  );
+	$ausm->checkbutton(-label => "Without zoom factor",
+			   -variable => \$without_zoom_factor,
+			  );
     }
 
     $bpcm->cascade(-label => M"Koordinatensystem");
@@ -943,6 +989,7 @@ sub advanced_coord_menu {
     $bpcm->command(-label => M"Linienkoordinaten setzen",
 		   -command => \&set_line_coord_interactive);
     $bpcm->command(-label => M"Suchen",
+		   -accelerator => "Ctrl-F",
 		   -command => sub { search_anything() });
     $bpcm->separator;
     {
@@ -979,6 +1026,25 @@ sub advanced_coord_menu {
 		       -variable => \$p_draw{'pl'},
 		       -command => sub { plot('p','pl') },
 		      );
+    # XXX should move someday to bbbike, main streets menu
+    $bpcm->cascade(-label => M"Kommentare zeichnen");
+    {
+	my $c_bpcm = $bpcm->Menu(-title => M"Kommentare zeichnen");
+	$bpcm->entryconfigure("last", -menu => $c_bpcm);
+	foreach my $type (@comments_types) {
+	    my $type = my $label = $type;
+	    my $def = 'comm-' . $type;
+	    $c_bpcm->checkbutton
+		(-label => $label,
+		 -variable => \$str_draw{$def},
+		 -command => sub {
+		     my $file  = "comments_" . $type . ($edit_mode ? "-orig" : "");
+		     plot('str', $def, Filename => $file);
+		 },
+		);
+	}
+    }
+
     $bpcm->command(-label => M"Neu laden",
 		   -command => \&reload_all,
 		   -accelerator => 'Alt-r',
@@ -1034,18 +1100,21 @@ sub advanced_coord_menu {
 		      -offvalue => '',
 		      -command => sub {
 			require BBBikeEdit;
+			# XXX move to autouse
 			eval $def->{Type} . "_edit_toggle()";
 			warn $@ if $@;
 		      });
       $m->command(-label => 'Undef all',
 		  -command => sub {
 		    require BBBikeEdit;
+		    # XXX move to autouse
 		    eval $def->{Type} . "_undef_all()";
 		    warn $@ if $@;
 		  });
       $m->command(-label => M"Speichern als...",
 		  -command => sub {
 		    require BBBikeEdit;
+		    # XXX move to autouse
 		    eval $def->{Type} . "_save_as()";
 		    warn $@ if $@;
 		  });
@@ -1111,9 +1180,40 @@ sub advanced_coord_menu {
 	);
 }
 
+sub stderr_menu {
+    my $opbm = shift;
+    my $stderr_window;
+    $opbm->checkbutton(-label => M"Status nach STDERR",
+		       -variable => \$stderr);
+    $opbm->checkbutton
+	(-label => M"STDERR in ein Fenster",
+	 -variable => \$stderr_window,
+	 -command => sub {
+	     if ($stderr_window) {
+		 if (!eval { require Tk::Stderr; Tk::Stderr->VERSION(1.2); }) {
+		     if (!perlmod_install_advice("Tk::Stderr")) {
+			 $stderr_window = 0;
+			 return;
+		     }
+		 }
+		 my $errwin = $top->StderrWindow;
+		 if (!$errwin || !Tk::Exists($errwin)) {
+		     $top->InitStderr;
+		     $errwin = $top->StderrWindow;
+		     $errwin->title("BBBike - " . M("STDERR-Fenster"));
+		 } else {
+		     $errwin = $top->RedirectStderr(1);
+		 }
+	     } elsif ($top->can("RedirectStderr")) {
+		 $top->RedirectStderr(0);
+	     }
+	 });
+}
+
 sub penalty_menu {
     my $bpcm = shift;
 
+    my @koeffs = (0.25, 0.5, 0.8, 1, 1.2, 1.5, 2, 2.5, 3, 3.5, 4, 6, 8, 10, 12, 15, 20);
 
     $bpcm->cascade(-label => M"Penalty");
     my $pen_m = $bpcm->Menu(-title => M"Penalty");
@@ -1148,7 +1248,7 @@ sub penalty_menu {
     {
 	my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
 	$pen_m->entryconfigure("last", -menu => $c_bpcm);
-	foreach my $koeff (0.25, 0.5, 0.8, 1, 1.2, 1.5, 2, 3, 4) {
+	foreach my $koeff (@koeffs) {
 	    $c_bpcm->radiobutton(-label => $koeff,
 				 -variable => \$penalty_nolighting_koeff,
 				 -value => $koeff);
@@ -1182,14 +1282,15 @@ sub penalty_menu {
     {
 	my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
 	$pen_m->entryconfigure("last", -menu => $c_bpcm);
-	foreach my $koeff (0.25, 0.5, 0.8, 1, 1.2, 1.5, 2, 3, 4) {
+	foreach my $koeff (@koeffs) {
 	    $c_bpcm->radiobutton(-label => $koeff,
 				 -variable => \$penalty_on_current_route_koeff,
 				 -value => $koeff);
 	}
     }
 
-    my $bbd_penalty = 0;
+    use vars qw($bbd_penalty);
+    $bbd_penalty = 0;
     $pen_m->checkbutton
       (-label => M"Penalty für BBD-Datei",
        -variable => \$bbd_penalty,
@@ -1207,22 +1308,51 @@ sub penalty_menu {
 	   require BBBikeEdit;
 	   BBBikeEdit::choose_bbd_file_for_penalty();
        });
-    $pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
-    {
-	$BBBikeEdit::bbd_penalty_koeff = 2
-	    if !defined $BBBikeEdit::bbd_penalty_koeff;
-	my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
-	$pen_m->entryconfigure("last", -menu => $c_bpcm);
-	foreach my $koeff (0.25, 0.5, 0.8, 1, 1.2, 1.5, 2, 3, 4) {
-	    $c_bpcm->radiobutton(-label => $koeff,
-				 -variable => \$BBBikeEdit::bbd_penalty_koeff,
-				 -value => $koeff);
-	}
-	$c_bpcm->separator;
-	$c_bpcm->checkbutton(-label => M"Multiplizieren",
-			     -variable => \$BBBikeEdit::bbd_penalty_multiply,
-			    );
-    }
+#    $pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
+    $BBBikeEdit::bbd_penalty_koeff = 2
+	if !defined $BBBikeEdit::bbd_penalty_koeff;
+    $pen_m->command
+	(-label => M("Penalty-Koeffizient")." ...",
+	 -command => sub
+	 {
+	     my $t = redisplay_top($top, "bbd-koeff", -title => M"Penalty-Koeffizient für BBD-Datei");
+	     return if !defined $t;
+	     require Tk::LogScale;
+	     Tk::grid($t->Label(-text => M"Koeffizient"),
+		      $t->Entry(-textvariable => \$BBBikeEdit::bbd_penalty_koeff)
+		     );
+	     Tk::grid($t->LogScale(-from => 0.25, -to => 20,
+				   -resolution => 0.01,
+				   -showvalue => 0,
+				   -orient => 'horiz',
+				   -variable => \$BBBikeEdit::bbd_penalty_koeff,
+				   -command => sub {
+				       $BBBikeEdit::bbd_penalty_koeff =
+					   sprintf "%.2f", $BBBikeEdit::bbd_penalty_koeff,;
+				   }
+				  ),
+		      -columnspan => 2, -sticky => "we"
+		     );
+	     Tk::grid($t->Checkbutton(-text => M"Multiplizieren",
+				      -variable => \$BBBikeEdit::bbd_penalty_multiply,
+				     ),
+		      -columnspan => 2, -sticky => "w"
+		     );
+	     Tk::grid($t->Checkbutton(-text => M"Daten invertieren",
+				      -variable => \$BBBikeEdit::bbd_penalty_invert,
+				      -command => sub {
+					  BBBikeEdit::build_bbd_penalty_for_search();
+				      },
+				     ),
+		      -columnspan => 2, -sticky => "w"
+		     );
+	     Tk::grid($t->Button(Name => "close",
+				 -command => sub { $t->withdraw }),
+		      -columnspan => 2, -sticky => "we"
+		     );
+	     $t->protocol("WM_DELETE_WINDOW" => sub { $t->withdraw });
+	 }
+	);
 
     my $gps_search_penalty = 0;
     $pen_m->checkbutton
@@ -1242,7 +1372,7 @@ sub penalty_menu {
 	    if !defined $BBBikeEdit::gps_penalty_koeff;
 	my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
 	$pen_m->entryconfigure("last", -menu => $c_bpcm);
-	foreach my $koeff (0.25, 0.5, 0.8, 1, 1.2, 1.5, 2, 3, 4) {
+	foreach my $koeff (@koeffs) {
 	    $c_bpcm->radiobutton(-label => $koeff,
 				 -variable => \$BBBikeEdit::gps_penalty_koeff,
 				 -value => $koeff);
@@ -1352,12 +1482,11 @@ $main_check_time = -M $0;
 
 ### AutoLoad Sub
 sub check_new_modules {
+    no strict 'refs';
     my $pkg = shift;
     $pkg = 'main' if (!defined $pkg);
     #warn "checking new modules for $pkg..." if $verbose; # nervig
-    my %inc;
-    eval '%inc = %' . $pkg . '::INC';
-    warn $@ if $@;
+    my %inc = %{$pkg."::INC"};
     while(my($k, $v) = each %inc) {
 	# only record BBBike-related and own modules
 	next if $v !~ /bbbike/i && $v !~ /$ENV{HOME}/;
@@ -1366,12 +1495,10 @@ sub check_new_modules {
 	warn "recorded $module_time{$v} for $k\n" if $verbose;
     }
     $module_check{$pkg}++ if defined $pkg;
-    my %stash;
-    eval '%stash = %' . $pkg . '::';
-    warn $@ if $@;
-    foreach my $sym (keys %stash) {
+    my @stash_keys = keys %{$pkg."::"};
+    foreach my $sym (@stash_keys) {
 	if ($sym =~ /^(.*)::$/) {
-	    my $subpkg = ($pkg eq 'main' 
+	    my $subpkg = ($pkg eq 'main'
 			  ? $1
 			  : $pkg . "::" . $1);
 	    if (!exists $module_check{$subpkg}) {
@@ -1383,11 +1510,14 @@ sub check_new_modules {
 
 ### AutoLoad Sub
 sub reload_new_modules {
+    my @check_c;
     while(my($k, $v) = each %module_time) {
 	my $now = (stat($k))[9];
 	next if $v >= $now;
+	next if $k =~ /^\Q$tmpdir\/bbbike_reload/;
 	print STDERR "Reloading $k...\n";
 	eval { do $k };
+	push @check_c, $k;
 	warn "*** $@" if $@;
 	$module_time{$k} = $now;
     }
@@ -1415,21 +1545,58 @@ sub reload_new_modules {
 		warn "Can't write to $tmpfile: $!";
 	    }
 	    close MAIN;
+	    push @check_c, $0;
 	} else {
 	    warn "Can't open $0: $!";
 	}
 	$main_check_time = -M $0;
+    }
+
+    # Check reloaded files for compile errors...
+    if (@check_c && $os eq 'unix') {
+	pipe(RDR, WTR);
+	if (fork == 0) {
+	    close RDR;
+	    my @problems;
+	    for my $f (@check_c) {
+		my @cmd = ($^X, "-I$FindBin::RealBin/lib", "-I$FindBin::RealBin", "-c", $f);
+		warn "@cmd\n";
+		system @cmd;
+		if ($? != 0) {
+		    push @problems, $f;
+		}
+	    }
+	    if (@problems) {
+		print WTR join("\n", @problems), "\n";
+	    }
+	    close WTR;
+	    CORE::exit(0);
+	}
+	close WTR;
+	$top->fileevent
+	    (\*RDR, 'readable',
+	     sub {
+		 my $buf = "";
+		 while(<RDR>) {
+		     $buf .= $_;
+		 }
+		 if ($buf ne "") {
+		     $top->messageBox
+			 (-icon => "error",
+			  -type => "Ok",
+			  -message => "Compile problems with the following files:\n" . $buf,
+			 );
+		 }
+		 close RDR;
+		 $top->fileevent(\*RDR, 'readable', '');
+	     }
+	    );
     }
 }
 
 ############################################################
 # Selection-Kram (Koordinatenliste, buttonpoint et al.)
 #
-
-use vars qw(@inslauf_selection @ext_selection
-	    $coord_prefix $coord_system_obj $coord_output_sub
-	    $koord @names
-	    $coordlist_lbox $coordlist_lbox_nl);
 
 # Gibt den angewählten Punkt aus.
 # Ausgegeben wird: Name (soweit vorhanden), Canvas-Koordinaten und
@@ -1619,8 +1786,6 @@ sub show_coord_list {
 # Zusätzliche Zeichenfunktionen
 #
 
-use vars qw($progress);
-
 # Zeichnet Haltestellen-Informationen aus der Hafas-Datenbank.
 # Funktioniert nur für ältere Daten.
 # Fraglich, ob diese Funktion noch benötigt wird...
@@ -1664,8 +1829,8 @@ sub ploths {
 	       -tags => ['p', $i]);
 	}
 
-	$c->itemconfigure('p', 
-			  -capstyle => 'round', 
+	$c->itemconfigure('p',
+			  -capstyle => 'round',
 			  -width => 5,
 			  -fill => 'blue',
 			 );
@@ -1679,12 +1844,6 @@ sub ploths {
 #
 # Edit/Standard-Modus
 #
-
-use vars qw($ampelstatus_label @remember_plot_str @remember_plot_p
-	    %str_obj %p_obj $map_draw $map_mode $map_default_type
-	    $wasserstadt $wasserumland %str_far_away %do_flag
-	    $place_category
-	    );
 
 # Löscht die aktiven Straßen und Punkte und merkt sie sich in
 # für das spätere Wiederzeichnen in set_remember_plot.
@@ -1711,7 +1870,7 @@ sub remove_plot {
 	    push @remember_plot_p, $abk;
 	}
     }
-    delete_berlinmap();
+    delete_map();
     $map_draw = 0; # XXX
 }
 
@@ -1754,7 +1913,7 @@ sub switch_mode {
 ### AutoLoad Sub
 sub switch_standard_mode {
     my $init = shift;
-    my($oldx, $oldy) = 
+    my($oldx, $oldy) =
       $coord_system_obj->map2standard
 	(anti_transpose($c->get_center));
     remove_plot() unless $init;
@@ -1884,8 +2043,6 @@ sub all_crossings {
 				       UseCache => 1);
     }
 }
-
-use vars qw(@search_route_points);
 
 ### AutoLoad Sub
 sub search_movie {
@@ -2051,7 +2208,7 @@ sub search_anything {
 	    }
 
 	    $lb->delete(0, "end");
-	    die M"Nichts gefunden" if !keys %found_in;
+	    die M("Nichts gefunden")."\n" if !keys %found_in;
 
 	    $lb->focus;
 	    if ($e->can('historyAdd') && $e->can('history')) {
@@ -2142,17 +2299,27 @@ sub search_anything {
 	    return;
 	}
 
+	my $transpose;
+	if ($coord_system ne "standard") {
+	    $transpose = sub {
+		my($x,$y) = @_;
+		transpose($coord_system_obj->standard2map($x, $y));
+	    };
+	} else {
+	    $transpose = \&transpose;
+	}
+
 	if (@{$match->[1]} == 1) {
 	    return if !defined $match->[1][0];
 	    my($xy) = $match->[1][0];
-	    mark_point(-coords => [[[ transpose(split /,/, $xy) ]]],
+	    mark_point(-coords => [[[ $transpose->(split /,/, $xy) ]]],
 		       -clever_center => 1);
 	} elsif (@{$match->[1]} > 1) {
 	    my @line_coords_array;
 	    foreach my $polyline ($match->[1], @{ $match->[3] }) {
 		my @line_coords;
 		foreach (@$polyline) {
-		    push @line_coords, [ transpose(split /,/, $_) ];
+		    push @line_coords, [ $transpose->(split /,/, $_) ];
 		}
 		push @line_coords_array, \@line_coords;
 	    }
@@ -2362,6 +2529,51 @@ sub get_dbf_info {
 	};
     }
     join(":", $xbase{$dbf_file}->get_record($index-1));
+}
+
+sub build_text_cursor {
+    my $text = shift;
+    if (length($text) > 8) {
+	warn "`$text' may be too long for cursor";
+    }
+    (my $file_frag = $text) =~ s/[^A-Za-z0-9_-]/_/g;
+    my $cursor_file = "$tmpdir/cursor_" . $file_frag . ".xbm";
+    my $cursor_spec = ['@' . $cursor_file, $cursor_file, "black", "white"];
+    if (-r $cursor_file) {
+	return $cursor_spec;
+    }
+
+    my $ptr = Tk::findINC("images/ptr.xbm");
+    if (!$ptr) {
+	warn "Cannot find ptr.xbm in @INC";
+	return undef;
+    }
+
+    if (!is_in_path("pbmtext") ||
+	!is_in_path("pnmcat") ||
+	!is_in_path("xbmtopbm") ||
+	!is_in_path("pbmtoxbm") ||
+	!is_in_path("pnmcrop")
+       ) {
+	warn "Netpbm seems to be missing";
+	return undef;
+    }
+
+    my $tmp1file = "/tmp/cursortext.$$.pbm";
+    my $tmp2file = "/tmp/cursorptr.$$.pbm";
+    system("pbmtext \"$text\" | pnmcrop > $tmp1file");
+    system("xbmtopbm $ptr > $tmp2file");
+    system("pnmcat -white -lr -jbottom $tmp2file $tmp1file | pbmtoxbm | $^X -nle 's/(#define.*height.*)/\$1\\n#define noname_x_hot 1\\n#define noname_y_hot 1\\n/; print' > $cursor_file");
+
+    unlink $tmp1file;
+    unlink $tmp2file;
+
+    if (-s $cursor_file) {
+	return $cursor_spec;
+    } else {
+	warn "Errors while building $cursor_file";
+	return undef;
+    }
 }
 
 1;

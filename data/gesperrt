@@ -24,8 +24,8 @@ Erkelenzdamm etc.	1 11089,10276 11021,10242 10955,10105
 Großer Stern	1 6725,12113 6799,12083 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6653,12067 6725,12113
 Ernst-Reuter-Platz	1 4770,11820 4867,11835 4906,11772 4897,11727 4842,11679 4780,11702 4747,11751 4770,11820
 Theodor-Heuss-Platz	1 1381,11335 1414,11418 1574,11379 1532,11280 1381,11335
-Halenseestr.	1 1928,10728 2028,10612 2112,10488 2106,10308 2374,9850 2373,9806 2410,9777
-Halenseestr.	1 2379,9665 2340,9758 2277,9801
+Halenseestr.	1 2112,10488 2069,10330 2268,9976 2300,9883 2410,9777
+Halenseestr.	1 2392,9715 2340,9758 2277,9801
 Halenseestr.	1 1957,10426 1919,10568 1928,10728
 Rasthof Avus	1 1894,10390 1904,10353 1866,10315 1736,10293 1716,10324 1842,10413 1878,10409 1894,10390
 Breitenbachplatz (Westseite)	1 4292,6558 4208,6566 4096,6632 4026,6688 3918,6791
@@ -92,16 +92,16 @@ Olivaer Platz	1 4239,10358 4157,10418
 Platz S (Hundekehlestr.)	1 2296,7695 2224,7620
 Platz S (Hundekehlestr.)	1 2161,7685 2222,7718 2296,7695
 Platz am Wilden Eber	1 2723,7029 2701,7045 2688,7067 2695,7082 2717,7093 2737,7073 2742,7056 2733,7039 2723,7029
-Wexstr.	2 6371,7976 6135,7973 5807,7978 5649,8004
-Wexstr.	1 5649,8004 5928,8052 6229,8086 6409,8026
+Wexstr.	2 6371,7976 6135,7973 5807,7978 5634,8004
+Wexstr.	1 5634,8004 5928,8052 6229,8086 6409,8026
 Detmolder Str. (Süd)	1 4659,7982 4543,7908 4481,7914 4389,7966 4342,8093 4289,8183
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4659,7982
 Detmolder Str. (Nord)	1 4289,8183 4349,8118
 Gartenufer (in der Dunkelheit gesperrt)	2 6239,11399 5794,11624
 Steinplatz	1 5166,11343 5122,11300 5088,11322 5053,11343 5091,11406
-Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 15162,8467 14858,8793 14614,9052 14390,9291 14242,9448 14089,9610 13829,9905
-Amtsgerichtsplatz	1 3082,11090 3033,10980 2981,10892 2921,10928 3006,11093
-Giesebrechtstr.	1 3915,10684 4157,10418
+Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 15166,8489 14858,8793 14614,9052 14390,9291 14242,9448 14089,9610 13867,9864 13829,9905
+Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928 2987,11055
+Giesebrechtstr.	1 3915,10684 4006,10585 4157,10418
 Bethaniendamm	1 12055,11331 11956,11166 11852,11102 11816,11084 11649,11075 11461,11145
 Engeldamm	1 11473,11180 11665,11118 11798,11128 11921,11185 12026,11348
 Pannierstr.	1 12202,8895 12242,8972
@@ -122,11 +122,12 @@ Schulze-Delitzsch-Platz	1 11022,11782 11155,11750
 Weydemeyerstr.	1 11905,13069 11910,13055 12062,12986 12056,12907
 Gipsstr.	1 10331,13397 10199,13446 10031,13509
 Dorotheenstr.	1 9867,12651 9723,12594 9574,12578 9454,12558 9323,12528
+Georgenstr.	1 9437,12662 9562,12679 9657,12694 9754,12775
 Paul-Junius-Str	1L 15084,12975 15085,13105
 Marksburgstr.	1 18319,9218 18809,9133
 Griechische Allee	1 17962,6674 18146,6703 18353,6658 18494,6588
 Griechische Allee	1 18494,6588 18280,6603 18080,6670 17962,6674
-Hardenbergplatz	1 5542,11075 5548,11144 5666,11362 5730,11316 5632,11112 5542,11075
+Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5590,11118 5542,11075
 (Waterlooufer - Zossener Str.)	1 9849,10202 9812,10211
 Greinerstr.	1 8340,3365 8327,2975
 Dederingstr.	1 8457,2965 8472,3395
@@ -165,6 +166,21 @@ Atzpodienstr.	1 16468,12386 16445,12193 16415,11926
 Alt-Lietzow	1 4221,12306 4108,12326 4073,12355 4092,12385 4134,12391 4257,12357
 Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 12913,3743
 Wilskistr.	1 -392,3999 -240,4091 43,4421 207,4575 442,4689 661,4748 825,4764
+Grazer Platz	1 6445,6769 6679,6816 6802,6816
+Grazer Platz	1 6811,6737 6686,6732 6451,6710
+Goltzstr. (Spandau)	1 -2811,16911 -3009,16761
+Putlitzstr.	1 6210,13939 6214,14208
+Putlitzstr.	1 6289,14225 6272,13916
+Langhansstr. (außer Tram)	1 12046,16568 12200,16579 12409,16475
+Triftstr. (Buchholz)	1 12035,23043 12178,23034
+Joachimstr.	1 10148,13546 10081,13673
+Wilhelmsaue	1 4778,8784 4927,8785 5180,8785
+Wilhelmsaue	1 5181,8731 4926,8730 4777,8720
+Friedrichsruher Str.	1 3196,9193 3333,9026
+Schweidnitzer Str	1 3202,9583 3223,9837
+Mansfelder Str.	1 4102,9164 4155,9103 4325,9082
+Johann-Georg-Str.	1 3108,10069 3170,10041 3347,9793
+Damaschkestr.	1 3132,10499 3013,10553
 Hans-Thoma-Str.	1 -12151,-768 -12258,-768 -12323,-555
 Behlertstr.	1 -12237,-427 -12195,-469 -12066,-768
 Potsdamer Damm	2 -5717,-3655 -6229,-4018
@@ -172,8 +188,9 @@ Nuthestr.	2 -6229,-4018 -8129,-4129 -9069,-3918 -11144,-2173 -11145,-1683 -11231
 Nuthestr.	1 -11360,-1299 -11467,-1214 -11617,-1108
 Rudolf-Breitscheid-Str.	2 -11060,-1725 -11145,-1683
 Rudolf-Breitscheid-Str.	1 -11060,-1725 -10996,-1768
+Geschwister-Scholl-Str.	1 -14476,-1775 -14199,-1604
 Altlandsberger Chaussee	1 40283,16977 40625,16977
-Benau, Bahnhofstr.	1 22784,30674 22827,30546
+Bernau, Bahnhofstr.	1 22784,30674 22827,30546
 Gubener Str.	1s 13411,11899 13362,12002
 Czeminskistr.	1s 7603,8911 7570,8863
 Stallschreiberstr.	1s 10489,11405 10678,11172
@@ -184,10 +201,13 @@ Lohmeyerstr.	1s 3348,12314 3409,12451
 Waldweg	1s 25496,2429 24972,2583
 Schulenburgring	1s 9019,8434 9013,8594
 Neue Schönhauser Str.	1s 10528,13243 10441,13195 10305,13211
+Kirchhofstr.	1s 13177,7644 13188,7590 13032,7334
+Niemannstr.	1s 14252,11368 14211,11229
 Lützowufer - Lützowplatz (unbequem passierbarer Mittelstreifen)	3 6626,11178 6873,11011 7002,11034
 Düsseldorfer - Paderborner (Tunneleinfahrt Adenauerplatz)	3 4151,10026 3906,10035 3720,9996
 Paderborner - Düsseldorfer (Tunneleinfahrt Adenauerplatz)	3 3720,9996 3906,10035 4151,10026
 Paderborner - Brandenburgische (Tunneleinfahrt Adenauerplatz)	3 3720,9996 3906,10035 3852,10236
+Brandenburgische - Düsseldorfer (Tunneleinfahrt Adenauerplatz)	3 3852,10236 3906,10035 4151,10026
 Bahndamm - Treskowallee - Ontarioseestr. (Straßenbahntrasse)	3 19675,10410 18698,9996 18690,10016 18577,10023
 Regensburger - Pariser (unbequem passierbarer Mittelstreifen)	3 5541,9923 5475,9914 5416,9928
 Pariser - Regensburger (unbequem passierbarer Mittelstreifen)	3 5416,9928 5475,9914 5541,9923
@@ -207,10 +227,27 @@ Schönhauser Allee - Wörther Str. (U-Bahn-Rampe)	3 10909,14710 10924,14491 11163,
 Marchlewskistr - Karl-Marx-Str. (unbequem passierbarer Mittelstreifen)	3 13011,12324 13024,12403 12869,12425
 Alt-Friedrichsfelde - Charlottenstr. (Straßentunnel)	3 18853,11798 18529,11722 18526,11640
 Charlottenstr. - Alt-Friedrichsfelde (Straßentunnel)	3 18526,11640 18529,11722 18220,11710
+Dunckerstr. - Wisbyer Str. (Straßenbahn)	3 11939,16084 12026,16247 11905,16318
+Berliner Str. - Thulestr. (U-Bahn-Rampe)	3 10986,16897 11042,16605 11645,16616
+Thulestr. - Berliner Str. (U-Bahn-Rampe)	3 11645,16616 11042,16605 11033,16464
+Löwenberger Str. - Alt-Friedrichsfelde (nicht passierbarer Mittelstreifen)	3 17477,11893 17436,11791 17750,11771
+Alt-Friedrichsfelde - Löwenberger Str. (nicht passierbarer Mittelstreifen)	3 17249,11802 17436,11791 17477,11893
+Robert-Uhrig-Str. - Alt-Friedrichsfelde (nicht passierbarer Mittelstreifen)	3 17734,11408 17750,11771 17436,11791
+Alt-Friedrichsfelde - Robert-Uhrig-Str. (nicht passierbarer Mittelstreifen)	3 18220,11710 17750,11771 17734,11408
+Märkische Allee - Weißenhöher Weg (nicht passierbarer Mittelstreifen)	3 19802,11794 19693,11762 19827,11686
+Gervinusstr./Lewishamstr.	3 3587,10768 3631,10784 3839,10904
+Gervinusstr./Lewishamstr.	3 3839,10904 3631,10784 3587,10768
+Sybelstr./Lewishamstr.	3 3712,10566 3739,10576 3644,10759
+Sybelstr./Lewishamstr.	3 3813,10435 3739,10576 3712,10566
+Waitzstr./Lewishamstr.	3 3737,10322 3739,10576 3644,10759
+Waitzstr./Lewishamstr.	3 3813,10435 3739,10576 3737,10322
+Rauchstr./Klingelhöferstr.	3 6683,11367 6853,11336 6825,11486
+Rauchstr./Klingelhöferstr.	3 7160,11225 6853,11336 6880,11110
+Köbisstr./Klingelhöferstr.	3 6880,11110 6853,11336 6683,11367
+Rauchstr./Köbisstr.	3 7160,11225 6853,11336 6683,11367
+Rauchstr./Köbisstr.	3 6683,11367 6853,11336 7160,11225
 Dorotheenstr. an der US-Botschaft	3 8907,12472 9112,12499 9323,12528
 Dorotheenstr. an der US-Botschaft	3 9323,12528 9112,12499 8907,12472
-Wilhelmstr/Pariser Platz (Bauarbeiten)	3 8851,12123 8804,12280 8775,12457
-Wilhelmstr/Pariser Platz (Bauarbeiten)	3 8775,12457 8804,12280 8851,12123
 tragen (Eisebahnbrücke Templiner See)	0:60:-231 -15515,-4592
 tragen (Eisebahnbrücke Templiner See)	0:60:-232 -15793,-4379
 tragen (Eisebahnbrücke Caputh)	0:60 -18006,-7498
@@ -240,6 +277,7 @@ tragen (Bahnübergang Bhf. Satzkorn)	0:60:-269 -19132,7342
 tragen (Bahnübergang Bhf. Satzkorn)	0:60:71 -19196,7320
 schieben (Rampe Schmöckwitzwerdersteg)	0:30:14 30533,-3124
 schieben (Rampe Schmöckwitzwerdersteg)	0:30:17 30546,-3072
+tragen (Treppe Mansfelder Str.)	0:30:90 3620,9330
 Drängelgitter (Görlitzer Park)	BNP:5:13 12686,10045
 Drängelgitter (Görlitzer Park)	BNP:5:22 12770,10210
 Drängelgitter (Görlitzer Park)	BNP:5:-153 12904,10141
@@ -252,6 +290,9 @@ Drängelgitter (Schloßallee/Straßenbahn) 	BNP:5:67 11883,19739
 Drängelgitter (Pankweg)	BNP:5:-96 11995,19759
 Drängelgitter (Brachvogelstr.)	BNP:5:-255 9884,10192
 Barriere (Pflügerstr.)	BNP:5:-231 12318,9482
+Schranke (Griesinger-Krankenhaus)	BNP:5:-169 21581,12182
+Hauptweg: Schranke	BNP:5:-105 9459,21686
+Drängelgitter (Hoher Bogen)	BNP:5:48 3831,8674
 Entlastungsstr. (Tiergartentunnel)	1:inwork 8172,11679 8129,11735 8056,12061 8063,12182
 Reichstagufer (Bauarbeiten)	2:inwork 8766,12541 8665,12548 8554,12593
 Schönow - Bernau: Autobahnbrücke gesperrt	2:inwork 20200,30732 20712,31032
@@ -259,14 +300,30 @@ Behrenstr. (Bauarbeiten)	1:inwork 9492,12214 9365,12196
 Charlottenstr. (Bauarbeiten)	1:inwork 9476,12359 9492,12214
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10177,12493
 Sperrung vor der amerikanischen Botschaft	2 9141,12320 9112,12499 9100,12627
-Delfter Ufer (wegen Neubau der Späthstr., bis ca. 2003)	2:inwork 14389,5270 14457,5097
+Delfter Ufer (wegen Neubau der Späthstr., bis 2003-12-00)	2:inwork 14389,5270 14457,5097
 Neubau der Havelkanalbrücke	2:inwork -25044,6370 -24232,6094
 Zimmerstr. (Kreuzberg,Mitte)	2:inwork 10065,11383 9945,11371 9737,11349
 (Neue Naumannstr.) (noch in Bau)	2:inwork 7606,7611 7717,7759
 Hönower Weg (Bauarbeiten)	2:inwork 17622,9642 17849,9679
 Schottstr. (Bauarbeiten)	1:inwork 16270,12261 16389,12394
 Rüdigerstr. (Bauarbeiten)	1:inwork 16389,12394 16468,12386
-Französische Str. (Bauarbeiten)	1:inwork 9171,12066 9076,12054
-Mauerstr. (Bauarbeiten)	1:inwork 9095,11958 9076,12054 9059,12155
+Französische Str. (Bauarbeiten)	1:inwork 9183,12076 9076,12054
+Mauerstr. (Bauarbeiten)	1:inwork 9108,11961 9076,12054 9059,12155
+Fehrbelliner Str.: keine Abbiegemöglichkeit in die Schönhauser Allee	2:inwork 10832,13877 10686,13947
+Mohrenstr. (Bauarbeiten)	1:inwork 9410,11803 9220,11781
+Mohrenstr. (Bauarbeiten)	1:inwork 9878,11857 9672,11833
+Richard-Sorge-Str. (Bauarbeiten, kann auf Gehweg umfahren werden)	1s:inwork 13468,12497 13381,12685
+Kronenstr. (Bauarbeiten)	1s:inwork 9689,11732 9892,11752
+Lückstr. (Bauarbeiten, bis 2003-08-31)	1s:inwork 16460,10699 16153,10818
+Giselastr. (Bauarbeiten)	1s:inwork 16153,10818 16218,10994
+Rüdersdorfer Str. (Bauarbeiten)	1s:inwork 13066,11854 13173,11788
+Gertrud-Kolmar-Str. (Bauarbeiten am Holocaust-Denkmal)	2:inwork 8804,11838 8769,11971
+Goethestr. (Bauarbeiten)	1:inwork 4896,11345 5053,11343
+Gendarmenmarkt (Filmaufnahmen, ca. bis 2003-06-00)	2:inwork 9526,11911 9663,11927
+Brückenstr. (Bauarbeiten, ca. bis 2004-08-29)	1:inwork 11242,11720 11328,12040
+Krausenstr. (Bauarbeiten)	1s:inwork 9449,11512 9581,11523
+Potsdamer Platz/Ebertstr.	1:inwork 8553,11638 8542,11502
 Reutlinger Str.	1 7676,4216 7601,4485
-Kirchhofstr.	1 13177,7644 13188,7590 13032,7334
+Sybelstr.	1 4006,10585 4256,10583
+Sybelstr.	1 4006,10585 3883,10577
+Sybel/Waltzstr.	1 3883,10577 3800,10580 3744,10668 3734,10756

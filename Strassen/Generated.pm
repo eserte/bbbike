@@ -10,7 +10,7 @@ sub make_net_slow_1 {
     my($self, %args) = @_;
     my($cachefile);
 
-    my $cacheable = $args{UseCache} && $Strassen::Util::cacheable;
+    my $cacheable = defined $args{UseCache} ? $args{UseCache} : $Strassen::Util::cacheable;
     if ($cacheable) {
 	my @src = $self->sourcefiles;
 	$cachefile = $self->get_cachefile;
@@ -61,7 +61,15 @@ sub make_net_slow_1 {
 						   $kreuz_coord[$i+1]));
  	    $net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $entf;
  	    $net->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $entf;
- 	    $net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $strassen->pos;
+# XXX not yet, but maybe someday necessary:
+#  	    if (exists $net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]}) {
+#  		if (ref $net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} ne 'ARRAY') {
+#  		    $net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = [ $net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} ];
+#  		}
+#  		push @{ $net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} }, $strassen->pos;
+#  	    } else {
+		$net2name->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $strassen->pos;
+#	    }
 	}
 
     }
@@ -82,7 +90,7 @@ sub make_net_slow_2 {
     my($self, %args) = @_;
     my($cachefile);
 
-    my $cacheable = $args{UseCache} && $Strassen::Util::cacheable;
+    my $cacheable = defined $args{UseCache} ? $args{UseCache} : $Strassen::Util::cacheable;
     if ($cacheable) {
 	my @src = $self->sourcefiles;
 	$cachefile = $self->get_cachefile;
@@ -244,7 +252,7 @@ sub route_to_name_1 {
 		$str = "...";
 	    }
 	}
-	if (!defined $entf) {
+	if (!defined $entf && $i+1 <= $#{$route_ref}) {
 	    $entf = Strassen::Util::strecke($route_ref->[$i],
 					    $route_ref->[$i+1]);
 	}
@@ -380,7 +388,7 @@ sub route_to_name_2 {
 		$str = "...";
 	    }
 	}
-	if (!defined $entf) {
+	if (!defined $entf && $i+1 <= $#{$route_ref}) {
 	    $entf = Strassen::Util::strecke($route_ref->[$i],
 					    $route_ref->[$i+1]);
 	}

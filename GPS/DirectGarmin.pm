@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.19 2003/01/08 15:49:12 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.19 2003/01/08 15:49:12 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -18,23 +18,22 @@ push @ISA, 'GPS';
 
 # XXX should go away some day...
 BEGIN {
-    if (-e "/tmp/prod.perl-GPS") {
+    if (-e "/home/e/eserte/work/perl-GPS") {
+	eval 'use blib "/home/e/eserte/work/perl-GPS"'; warn $@ if $@;
+    } elsif (-e "/tmp/prod.perl-GPS") {
 	eval 'use blib "/tmp/prod.perl-GPS"'; warn $@ if $@;
     } elsif (-e "/usr/local/prod.perl-GPS") {
 	eval 'use blib "/usr/local/prod.perl-GPS"'; warn $@ if $@;
     } else {
-	eval 'use blib "/home/slavenr/work2/perl-GPS"';
-warn $@ if $@;
+	eval 'use blib "/home/e/eserte/work/prod.perl-GPS"';
     }
-#    require Config;
-#     if ($Config::Config{archname} eq 'arm-linux') {
-# 	eval 'use GPS::GarminX'; die $@ if $@;
-#     } else {
-# 	eval 'use GPS::Garmin'; die $@ if $@; # 0.12 plus
-#     }
+    require Config;
+    if ($Config::Config{archname} eq 'arm-linux') {
+	eval 'use GPS::GarminX'; die $@ if $@;
+    } else {
+	eval 'use GPS::Garmin'; die $@ if $@; # 0.12 plus
+    }
 }
-
-use GPS::Base;
 
 BEGIN {
     if (!eval '
@@ -312,7 +311,6 @@ sub convert_from_route {
     };
 
     my $gps_device = $args{-gpsdevice} || "/dev/cuaa0";
-    my $gps_protocol = $args{-gpsprotocol} || "GRMN";
     my %crossings;
     if ($str) {
 	%crossings = %{ $str->all_crossings(RetType => 'hash',
@@ -333,21 +331,21 @@ sub convert_from_route {
 
     my $gps;
     if (!$args{-test}) {
-	$gps = GPS::Base->new(  'Port'      => $gps_device,
-				'Baud'      => 9600, # XXX don't hardcode
-				'Protocol'  => $gps_protocol,
-				#verbose => 1,
-			     ) or
-				 die Mfmt("Verbindung zum GPS-Gerät <%s> fehlgeschlagen", $gps_device);
+	$gps = new GPS::Garmin(  'Port'      => $gps_device,
+				 'Baud'      => 9600, # XXX don't hardcode
+				 #verbose => 1,
+			      ) or
+				  die Mfmt("Verbindung zum GPS-Gerät <%s> fehlgeschlagen", $gps_device);
     } else {
 	$gps = bless {}, 'GPS::Garmin';
     }
 
     my @d;
 
+    my $handler = $gps->handler;
     push @d,
-	[$gps->GRMN_RTE_HDR, $gps->handler->pack_Rte_hdr({nmbr => $routenumber,
-							  cmnt => $routename})];
+	[$gps->GRMN_RTE_HDR, $handler->pack_Rte_hdr({nmbr => $routenumber,
+						     cmnt => $routename})];
     if ($DEBUG) {
 	$self->{'debugdata'} = [];
     }
@@ -514,10 +512,10 @@ sub convert_from_route {
 	$waypoints{$ident}++;
 
 	if ($n > 0) {
-	    push @d, [$gps->GRMN_RTE_LINK_DATA, $gps->handler->pack_Rte_link_data];
+	    push @d, [$gps->GRMN_RTE_LINK_DATA, $handler->pack_Rte_link_data];
 	}
 	my $wptdata = {lat => $lat, lon => $lon, ident => $ident, smbl => 8246}; # summit symbol XXX
-	push @d, [$gps->GRMN_RTE_WPT_DATA, $gps->handler->pack_Rte_wpt_data($wptdata)];
+	push @d, [$gps->GRMN_RTE_WPT_DATA, $handler->pack_Rte_wpt_data($wptdata)];
 	if ($DEBUG) {
 	    push @{$self->{'debugdata'}}, {%$wptdata, origlon => $xy->[0], origlat => $xy->[1]};
 	}

@@ -2,7 +2,7 @@
 
 package Bundle::BBBike;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.2 $ =~ /(\d+)\.(\d+)/);
 
 1;
 
@@ -20,11 +20,11 @@ Bundle::BBBike - A bundle to install all dependencies of BBBike
 
 Tk 402.002	- das absolute Muss!
 
-Tk::FireButton
+Tk::FireButton	- "Firebutton"-Funktionalität für die Windrose
 
 Tk::Pod 2.8	- Online-Hilfe
 
-Tk::FontDialog
+Tk::FontDialog	- zum Ändern des Zeichensatzes aus dem Programm heraus
 
 Tk::JPEG
 
@@ -32,11 +32,13 @@ Tie::Watch
 
 Tk::HistEntry
 
+Tk::Stderr	- optionales Redirect von Fehlermeldungen in ein Tk-Fenster
+
 LWP::UserAgent	- für die WWW-Verbindungen (Stadtplan und Wetterbericht)
 
 Image::Magick	- für Bildmanipulationen beim Radar-Bild der FU
 
-CGI::MiniSvr	- für das persistente CGI-Programm
+CGI::MiniSvr	- für das persistente CGI-Programm XXX ist nicht mehr auf dem CPAN vorhanden!
 
 FCGI
 
@@ -68,9 +70,15 @@ Math::MatrixReal
 
 Class::Accessor	- für GPS::GpsmanData, die ESRI-Module etc.
 
+Template	- für BBBikeDraw::MapServer
+
 Inline::C	- für den schnelleren Suchalgorithmus, siehe ext/Strassen-Inline
 
 Pod::Usage	- für das Ausgeben der 'Usage' in einigen Entwicklungs-Tools
+
+Palm::PalmDoc	- für das Erzeugen von palmdoc-Dateien mit der Routenbeschreibung
+
+Astro::Sunrise	- Anzeige des Sonnenuntergangs/-aufgangs im Info-Fenster
 
 
 
@@ -79,8 +87,11 @@ Pod::Usage	- für das Ausgeben der 'Usage' in einigen Entwicklungs-Tools
 Dieses BE<uuml>ndel listet alle erforderlichen und empfohlenen Module
 fE<uuml>r BBBike auf. Bis auf B<Tk> sind alle anderen Module optional.
 
+This bundle lists all required and optional perl modules for BBBike.
+Only B<Tk> is really required, all other modules are optional.
+
 =head1 AUTHOR
 
-Slaven Rezic <eserte@cs.tu-berlin.de>
+Slaven Rezic <slaven@rezic.de>
 
 =cut

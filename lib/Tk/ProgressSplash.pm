@@ -1,14 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: ProgressSplash.pm,v 1.6 2002/07/28 15:41:40 eserte Exp $
+# $Id: ProgressSplash.pm,v 1.6 2002/07/28 15:41:40 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
+# Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
 #
 
@@ -118,22 +118,22 @@ Create a splash screen with progress bar.
 =item Show
 
 The Show() method takes the same arguments as the Show() method of
-C<Tk::Splash> and additionaly:
+L<Tk::Splash>. Additionally you can specify:
 
 =over
 
 =item -splashtype
 
-Set to "fast" if you want to use C<Tk::FastSplash> instead of
-C<Tk::Splash> as the underlying splash widget. "normal", "safe" or
-"slow" may be used for C<Tk::Splash>.
+Set to "fast" if you want to use L<Tk::FastSplash> instead of
+L<Tk::Splash> as the underlying splash widget. "normal", "safe" or
+"slow" may be used for L<Tk::Splash>.
 
 =back
 
 =item Update
 
 Advance the progressbar (and make it visible, if it was not yet
-visible). The argument is a fraction from 0 to 1.
+visible). The argument is a number between 0 and 1.
 
 =item Destroy
 
@@ -143,11 +143,15 @@ Destroy the splash widget.
 
 =head1 BUGS
 
-See Tk::Splash and Tk::FastSplash.
+See L<Tk::Splash> and L<Tk::FastSplash>.
 
 =head1 AUTHOR
 
-Slaven Rezic
+Slaven Rezic (slaven@rezic.de)
+
+=head1 SEE ALSO
+
+L<Tk::Splash>, L<Tk::FastSplash>.
 
 =cut
 

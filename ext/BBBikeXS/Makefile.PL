@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.PL,v 1.7 2003/01/08 20:58:10 eserte Exp $
+# $Id: Makefile.PL,v 1.8 2003/02/20 14:10:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -28,7 +28,7 @@ WriteMakefile
    'VERSION_FROM'    => 'BBBikeXS.pm',
    'OBJECT'          => 'sqrt$(OBJ_EXT) $(BASEEXT)$(OBJ_EXT)',
    'LIBS'	     => [''],
-   'DEFINE'          => '-DINT_SQRT', # XXX only for ipaqs
+   'DEFINE'          => "-DMAYBE_INT_SQRT", # Primarily for non-FPU machines, but seems to be faster on FPU machines, too. But: this is restricted to approx. 100 km distances, so do not use it everywhere!
    'INC'	     => '',
 );
 

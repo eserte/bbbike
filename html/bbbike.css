@@ -1,3 +1,7 @@
+/* - Do not hardcode background-image in css.
+ * - background--attachment: fixed seems to be unintutive and slows down the
+ *   Mozilla renderer
+ */
 body {
   background-color:#ffffff;
   font-family:sans-serif,helvetica,verdana,arial;
@@ -8,6 +12,9 @@ td,th,p,h2,li,input {
 table.desc,td {
   vertical-align:top;
 }
+table.detailmap td {
+  vertical-align:middle;
+}
 tt,pre {
   font-family:courier,fixed;
 }
@@ -17,3 +24,18 @@ dt {
 .hfill { width:100%; }
 /* not interpreted by Gecko, wrong interpretation by IE 5.0 */
 /* table.routelist > td { background-color:#ffcc66; } */
+input.charmap {
+  width: 270;
+  height: 94;
+  border: 0;
+}
+input.citymap {
+  width: 200;
+  height: 200;
+  border: 0;
+}
+.nobr {
+  white-space: nowrap;
+}
+tr.odd  { background-color: #ffcc66; }
+tr.even { background-color: #ffdd88; }

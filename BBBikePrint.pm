@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.18 2003/01/08 19:59:50 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.20 2003/05/09 03:58:03 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -12,22 +12,14 @@
 # WWW:  http://user.cs.tu-berlin.de/~eserte/
 #
 
+package BBBikePrint;
+
+package main;
 use strict;
-use vars qw($use_font_rot %str_name_draw $orientation
-	    $tmpdir $progname %tmpfiles 
-	    $top $balloon %toplevel $c $print_cmd $gv_reuse @gv_old_args
-	    $gv_pid $os $verbose %str_color %p_color
-	    %str_draw %p_draw %str_attrib %p_attrib %category_attrib
-	    %str_outline %category_color %font %line_dash $show_legend);
-#$ps_rotate
+use BBBikeGlobalVars;
+use vars qw(@gv_old_args $gv_pid);
 
-BEGIN {
-    if (!defined &main::M) {
-	eval 'sub main::M ($) { @_ }'; warn $@ if $@;
-    }
-}
-
-sub create_postscript {
+sub BBBikePrint::create_postscript {
     my($c, %args) = @_;
     if ($use_font_rot) {
 	foreach (keys %str_name_draw) {
@@ -240,7 +232,7 @@ sub print_postscript {
     }
 }
 
-sub print_text_postscript {
+sub BBBikePrint::print_text_postscript {
     my($text, %args) = @_;
     require Tk::Enscript;
     my $tmpfile = "$tmpdir/$progname" . "_$$.ps";
@@ -305,7 +297,7 @@ sub draw_legend {
 			'b' => [qw(SA SB SC)],
 			'l' => [qw(B HH H N NN)], # XXX BAB
 			'w' => 'W',
-			'f' => [qw(P F)],
+			'f' => [qw(P Ae)], # XXX geht nicht fürs Anklicken
 			'v' => 'F', # XXX ???
 			'qs' => [qw(Q0 Q1 Q2 Q3)],
 			'ql' => [qw(Q0 Q1 Q2 Q3)],
@@ -544,6 +536,7 @@ sub draw_legend {
 
 	    foreach my $def ([blocked => M"gesperrte Straße"],
 			     [oneway => M"Einbahnstraße"],
+			     [blockedroute => M"gesperrte Wegführung"],
 			     [carry => M"tragen"],
 			     [narrowpassage => M"Drängelgitter"]
 			    ) {
@@ -701,7 +694,10 @@ sub clear_legend {
 sub show_legend {
     my $parent = shift;
     my %args = @_;
-    my $t = redisplay_top($parent, "legend", -title => M"Legende");
+    my $t = redisplay_top($parent, "legend",
+			  -title => M"Legende",
+			  -class => "BbbikePassive",
+			 );
     $t = $toplevel{"legend"} if (!defined $t);
     $t->bind("<F1>" => sub { $t->destroy });
     my $c = $t->{Canvas};
@@ -734,7 +730,7 @@ sub show_legend {
 }
 
 ### AutoLoad Sub
-sub toggle_legend {
+sub BBBikePrint::toggle_legend {
     if (defined $toplevel{"legend"} and
 	Tk::Exists($toplevel{"legend"})) {
 	$toplevel{"legend"}->destroy;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.21 2003/01/08 20:12:29 eserte Exp $
+# $Id: GpsmanData.pm,v 1.22 2003/02/16 14:34:52 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN {
 }
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_WAYPOINT => 0;
 use constant TYPE_TRACK    => 1;
@@ -53,7 +53,7 @@ use GPS::Util; # for eliminate_umlauts
 use Class::Struct;
 struct('GPS::Gpsman::Waypoint' =>
        [map {($_ => "\$")}
-	qw(Ident Comment Latitude Longitude Altitude NewTrack)
+	qw(Ident Comment Latitude Longitude Altitude NewTrack Symbol)
        ]
       );
 {
@@ -177,16 +177,18 @@ sub convert_from_route {
     foreach my $xy (@path) {
 	my $xy_string = join ",", @$xy;
 	my($polar_x, $polar_y) = $obj->standard2map(@$xy);
-	my $NS = $polar_y > 0 ? "N" : do { $polar_y = -$polar_y; "S" };
-	my $EW = $polar_x > 0 ? "E" : do { $polar_x = -$polar_x; "W" };
-	my $ns_deg = int($polar_y);
-	my $ew_deg = int($polar_x);
-	my $ns_min = ($polar_y-$ns_deg)*60;
-	my $ew_min = ($polar_x-$ew_deg)*60;
-	my $ns_sec = ($ns_min-int($ns_min))*60;
-	my $ew_sec = ($ew_min-int($ew_min))*60;
-	$ns_min = int($ns_min);
-	$ew_min = int($ew_min);
+	my($lat,$long) = convert_lat_long_to_gpsman($polar_y, $polar_x);
+#XXX del: (after testing!)
+#  	my $NS = $polar_y > 0 ? "N" : do { $polar_y = -$polar_y; "S" };
+#  	my $EW = $polar_x > 0 ? "E" : do { $polar_x = -$polar_x; "W" };
+#  	my $ns_deg = int($polar_y);
+#  	my $ew_deg = int($polar_x);
+#  	my $ns_min = ($polar_y-$ns_deg)*60;
+#  	my $ew_min = ($polar_x-$ew_deg)*60;
+#  	my $ns_sec = ($ns_min-int($ns_min))*60;
+#  	my $ew_sec = ($ew_min-int($ew_min))*60;
+#  	$ns_min = int($ns_min);
+#  	$ew_min = int($ew_min);
 
 	# create comment and point number
 	my $comment = "$now ";
@@ -248,8 +250,11 @@ sub convert_from_route {
 	$wpt->Ident("");
 #	$wpt->Comment($comment);
 	$wpt->Comment("20-Jan-2002 14:20:16");
-	$wpt->Latitude(sprintf "%s%d %02d %04.1f", $NS, $ns_deg, $ns_min, $ns_sec);
-	$wpt->Longitude(sprintf "%s%d %02d %04.1f", $EW, $ew_deg, $ew_min, $ew_sec);
+#XXX del:
+#  	$wpt->Latitude(sprintf "%s%d %02d %04.1f", $NS, $ns_deg, $ns_min, $ns_sec);
+#  	$wpt->Longitude(sprintf "%s%d %02d %04.1f", $EW, $ew_deg, $ew_min, $ew_sec);
+	$wpt->Latitude($lat);
+	$wpt->Longitude($long);
 
 	push @data, $wpt;
 
@@ -305,8 +310,16 @@ sub parse_waypoint {
     $wpt->Comment($f[1]);
     $wpt->Latitude($f[2]);
     $wpt->Longitude($f[3]);
-    if (defined $f[4] && $f[4] =~ /^alt=(.*)/) {
-	$wpt->Altitude($1);
+    if ($#f > 3) {
+	for (@f[4 .. $#f]) {
+	    if (/^alt=(.*)/) {
+		$wpt->Altitude($1);
+	    } elsif (/^symbol=(.*)/) {
+		$wpt->Symbol($1);
+	    } else {
+		warn "Ignore $_" if $^W;
+	    }
+	}
     }
     $wpt;
 }
@@ -426,6 +439,27 @@ sub convert_DDD_to_DDD {
     }
 }
 
+sub convert_lat_long_to_gpsman {
+    my($polar_y, $polar_x) = @_;
+    my $NS = $polar_y > 0 ? "N" : do { $polar_y = -$polar_y; "S" };
+    my $EW = $polar_x > 0 ? "E" : do { $polar_x = -$polar_x; "W" };
+    my $ns_deg = int($polar_y);
+    my $ew_deg = int($polar_x);
+    my $ns_min = ($polar_y-$ns_deg)*60;
+    my $ew_min = ($polar_x-$ew_deg)*60;
+    my $ns_sec = ($ns_min-int($ns_min))*60;
+    my $ew_sec = ($ew_min-int($ew_min))*60;
+    my $ns_csec = ($ns_sec-int($ns_sec))*10;
+    my $ew_csec = ($ew_sec-int($ew_sec))*10;
+    $ns_min = int($ns_min);
+    $ew_min = int($ew_min);
+    $ns_sec = int($ns_sec);
+    $ew_sec = int($ew_sec);
+    (sprintf("%s%d %02d %02d.%01d", $NS, $ns_deg, $ns_min, $ns_sec, $ns_csec), # latitude
+     sprintf("%s%d %02d %02d.%01d", $EW, $ew_deg, $ew_min, $ew_sec, $ew_csec), # longitude
+    );
+}
+
 # XXX only waypoints --- tracks usually have no idents
 sub create_cache {
     my $self = shift;
@@ -503,7 +537,14 @@ sub as_string {
     if ($self->Type == TYPE_WAYPOINT) {
 	$s .= "!W:\n";
 	foreach my $wpt (@{ $self->Waypoints }) {
-	    $s .= join("\t", $wpt->Ident, $wpt->Comment, $wpt->Latitude, $wpt->Longitude, (defined $wpt->Altitude ? "alt=".$wpt->Altitude : "")) . "\n";
+	    $s .= join("\t",
+		       $wpt->Ident,
+		       (defined $wpt->Comment ? $wpt->Comment : ""),
+		       $wpt->Latitude, $wpt->Longitude,
+		       (defined $wpt->Altitude ? "alt=".$wpt->Altitude : ()),
+		       (defined $wpt->Symbol ? "symbol=".$wpt->Symbol : ()),
+		      )
+		. "\n";
 	}
     } elsif ($self->Type == TYPE_TRACK) {
 	$s .= "!T:";
@@ -512,7 +553,12 @@ sub as_string {
 	}
 	$s .= "\n";
 	foreach my $wpt (@{ $self->Track }) {
-	    $s .= join("\t", $wpt->Ident, $wpt->Comment, $wpt->Latitude, $wpt->Longitude, (defined $wpt->Altitude ? $wpt->Altitude : "")) . "\n";
+	    $s .= join("\t",
+		       $wpt->Ident,
+		       (defined $wpt->Comment ? $wpt->Comment : ""),
+		       $wpt->Latitude, $wpt->Longitude,
+		       (defined $wpt->Altitude ? $wpt->Altitude : ""))
+		. "\n";
 	}
     } else {
 	die "NYI!";

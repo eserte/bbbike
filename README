@@ -72,10 +72,10 @@ BBBike erleichtern.
 
 BBBike und Perl benötigen ca. 32 MB an Festplattenspeicher.
 
-Die Datei L<http://prdownloads.sourceforge.net/bbbike/BBBike-3.09-Windows.zip>
+Die Datei L<http://prdownloads.sourceforge.net/bbbike/BBBike-3.12-Windows.zip>
 laden und mit WinZip an einer
 beliebigen Stelle auf der Festplatte auspacken. Zum Starten von BBBike
-muss das Icon C<bbbike.bat> im Verzeichnis BBBike-3.09-Windows
+muss das Icon C<bbbike.bat> im Verzeichnis BBBike-3.12-Windows
 angeklickt werden.
 
 Mit C<setup.bat> kann man optional BBBike nach C<C:\BBBike>
@@ -182,7 +182,7 @@ Für weitere Hinweise bitte an den Autor wenden.
 Mac OS X enthält bereits perl 5.6.0. Um BBBike zum Laufen zu bringen
 werden noch XDarwin und Perl/Tk benötigt. Eine Anleitung zum Aufsetzen
 von Perl/Tk auf Mac OS X bekommt man in der comp.lang.perl.tk Newsgroup
-(siehe L<http://groups.google.com>). I habe niemals BBBike unter Mac OS X
+(siehe L<http://groups.google.com>). Ich habe niemals BBBike unter Mac OS X
 ausprobiert und würde mich über Erfolgsberichte (und auch Problemberichte)
 freuen.
 
@@ -217,7 +217,7 @@ L<http://www.bbbike.de>
 eine einfache, stark text-orientierte Version von bbbike. Weitere
 Informationen zu der CGI-Version gibt es unter
 
-L<http://www.bbbike.de/info=1>
+L<http://www.radzeit.de/cgi-bin/bbbike.cgi/info=1>
 
 
 =head2 Kommandozeilen-Version
@@ -251,7 +251,7 @@ C<lib/Text/ScriptTemplate.pm> von Taisuke Yamada, C<lib/enum.pm> von
 Zenin, C<ext/Strassen-Inline/heap.[ch]> der Internet Software
 Consortium, C<ext/BBBikeXS/sqrt.c> von Eyal Lebedinsky.
 
-C<BBBike-3.09-Windows.zip> enthält einen Teil der
+C<BBBike-3.12-Windows.zip> enthält einen Teil der
 C<SiePerl>-Distribution.
 
 

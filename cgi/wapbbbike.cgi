@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 1.3 2003/01/07 19:46:20 eserte Exp $
+# $Id: wapbbbike.cgi,v 1.3 2003/01/07 19:46:20 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001 Slaven Rezic. All rights reserved.
@@ -15,7 +15,8 @@
 
 package BBBikeRouting::WAP;
 use FindBin;
-use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/../BBBike", "$FindBin::RealBin/../BBBike/lib");
 use BBBikeRouting;
 @ISA = 'BBBikeRouting';
 use strict;
@@ -42,12 +43,11 @@ sub wap_input {
      Straﬂe: <input type="text" name="zielname" /><br/>
      Bezirk: <input type="text" name="zielbezirk" /><br/>
   <anchor>Route zeigen
-   <go href="@{[ $self->Context->CGI->script_name ]}" cache-control="no-cache" method="get">
-    <postfield name="startname"   value="\$(startname)" />
-    <postfield name="startbezirk" value="\$(startbezirk)" />
-    <postfield name="zielname"    value="\$(zielname)" />
-    <postfield name="zielbezirk"  value="\$(zielbezirk)" />
-    <postfield name="test"  value="foobar" />
+   <go href="@{[ $self->Context->CGI->script_name ]}" method="get">
+    <postfield name="startname"   value="\$startname" />
+    <postfield name="startbezirk" value="\$startbezirk" />
+    <postfield name="zielname"    value="\$zielname" />
+    <postfield name="zielbezirk"  value="\$zielbezirk" />
    </go>
   </anchor>
   </p>
@@ -159,7 +159,6 @@ sub wap_cgi_object {
 sub wap_std_header {
     my $self = shift;
     my %args = @_;
-    $args{'-Cache-Control'} = "must-revalidate, max-age=0, no-cache";
     print $self->Context->CGI->header(-type => "text/vnd.wap.wml", %args);
 }
 
@@ -196,7 +195,6 @@ my $routing = BBBikeRouting->new->init_context;
 bless $routing, 'BBBikeRouting::WAP'; # 5.005 compat
 
 my $q = $routing->wap_init;
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$q],[])->Indent(1)->Useqq(1)->Dump; # XXX
 if ($q->param("info")) {
     $routing->wap_info();
 } elsif (defined $q->param("startname") &&

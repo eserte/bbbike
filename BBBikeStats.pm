@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeStats.pm,v 1.6 2003/01/08 20:00:48 eserte Exp $
+# $Id: BBBikeStats.pm,v 1.7 2003/05/10 19:31:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -21,10 +21,21 @@ package BBBikeStats;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Util;
 use BBBikeUtil;
+
+BEGIN {
+    if (!eval '
+use Msg;
+1;
+') {
+	warn $@ if $@;
+	eval 'sub M ($) { $_[0] }';
+	eval 'sub Mfmt { sprintf(shift, @_) }';
+    }
+}
 
 sub calculate {
     my($route, $dataset, %args) = @_;
@@ -46,7 +57,7 @@ sub calculate {
 	for my $def ([Quality => "Q0"],
 		     [Handicap => "q0"],
 		     [Cyclepaths => "RW0"],
-		     [Category => "N"],#XXX better solution?
+		     [Category => "N"],#XXX better solution? use unknown category?
 		    ) {
 	    my($member, $fallback) = @$def;
 
@@ -69,6 +80,8 @@ sub calculate {
     $res;
 }
 
+# XXX split into widget creation and update data subroutine
+#XXX maybe use a Scrolled Pane?
 sub tk_display_result {
     my($top, $res, %args) = @_;
     if (!$args{-markcommand}) {
@@ -80,23 +93,29 @@ sub tk_display_result {
 	$args{-chart} = 1;
     }
 
-    # XXX use Msg
-    my $t = $top->Toplevel(-title => "Statistik");
-    # transient?
+    my $t;
+    if ($args{-reusewindow} &&
+	Tk::Exists($t = $top->Subwidget("Statistics"))) {
+	$_->destroy for ($t->children);
+    } else {
+	$t = $top->Toplevel(-title => M("Statistik"));
+	$top->Advertise("Statistics" => $t);
+	# make transient?
 
-    $t->OnDestroy(sub {
-		      if ($t->{Photos}) {
-			  foreach (@{ $t->{Photos} }) {
-			      $_->delete;
+	$t->OnDestroy(sub {
+			  if ($t->{Photos}) {
+			      foreach (@{ $t->{Photos} }) {
+				  $_->delete;
+			      }
 			  }
-		      }
-		      delete $t->{Photos};
-		  });
+			  delete $t->{Photos};
+		      });
 
-    (my $path = $t->PathName) =~ s/^.//;
-    $t->optionAdd("*$path*Button*Pad", 0);
-    $t->optionAdd("*$path*Button*anchor", "w"); # for the text labels
-    $t->optionAdd("*$path*Label*anchor", "e"); # for the numbers
+	(my $path = $t->PathName) =~ s/^.//;
+	$t->optionAdd("*$path*Button*Pad", 0);
+	$t->optionAdd("*$path*Button*anchor", "w"); # for the text labels
+	$t->optionAdd("*$path*Label*anchor", "e"); # for the numbers
+    }
 
     # XXX!!!
     my $category_attrib = \%main::category_attrib;
@@ -105,17 +124,17 @@ sub tk_display_result {
 
     my %grid_row;
 
-    Tk::grid($t->Label(-text => "Länge:", -font => $font{"bold"}),
+    Tk::grid($t->Label(-text => M("Länge").":", -font => $font{"bold"}),
 	     $t->Label(-text => sprintf "%.1f km", $res->{Length}/1000),
 	     -sticky => "w");
 
     Tk::grid($t->Frame(-height => 1, -background => "black"),
 	     -sticky => "ew", -columnspan => 10);
 
-    Tk::grid($t->Label(-text => "Straßenqualität", -font => $font{"bold"}),
+    Tk::grid($t->Label(-text => M("Straßenqualität"), -font => $font{"bold"}),
 	     -sticky => "w", -columnspan => 3);
     $grid_row{"Quality1"} = ($t->gridSize)[1]-1;
-    for my $cat (map "Q$_", (0..3)) { # XXX don't hardcode
+    for my $cat (sort grep { /^Q\d$/ } keys %$category_attrib) {
 	Tk::grid($t->Button(-text => $category_attrib->{$cat}[0],
 			    -bg => $category_color{$cat}||"white",
 			    -fg => _readable_fg($t,$category_color{$cat}),
@@ -129,10 +148,10 @@ sub tk_display_result {
     Tk::grid($t->Frame(-height => 1, -background => "black"),
 	     -sticky => "ew", -columnspan => 10);
 
-    Tk::grid($t->Label(-text => "Sonstige Behinderungen", -font => $font{"bold"}),
+    Tk::grid($t->Label(-text => M("Sonstige Behinderungen"), -font => $font{"bold"}),
 	     -sticky => "w", -columnspan => 3);
     $grid_row{"Handicap1"} = ($t->gridSize)[1]-1;
-    for my $cat (map "q$_", (0..3)) { # XXX don't hardcode
+    for my $cat (sort grep { /^q\d$/ } keys %$category_attrib) {
 	Tk::grid($t->Button(-text => $category_attrib->{$cat}[0],
 			    -bg => $category_color{$cat}||"white",
 			    -fg => _readable_fg($t,$category_color{$cat}),
@@ -146,10 +165,10 @@ sub tk_display_result {
     Tk::grid($t->Frame(-height => 1, -background => "black"),
 	     -sticky => "ew", -columnspan => 10);
 
-    Tk::grid($t->Label(-text => "Radwege", -font => $font{"bold"}),
+    Tk::grid($t->Label(-text => M("Radwege"), -font => $font{"bold"}),
 	     -sticky => "w", -columnspan => 3);
     $grid_row{"Cyclepaths1"} = ($t->gridSize)[1]-1;
-    for my $cat (map "RW$_", (1..8,0)) { # XXX use Radwege.pm
+    for my $cat (sort grep { /^RW\d$/ } keys %$category_attrib) {
 	Tk::grid($t->Button(-text => $category_attrib->{$cat}[0],
 			    -bg => $category_color{$cat}||"white",
 			    -fg => _readable_fg($t,$category_color{$cat}),
@@ -163,10 +182,10 @@ sub tk_display_result {
     Tk::grid($t->Frame(-height => 1, -background => "black"),
 	     -sticky => "ew", -columnspan => 10);
 
-    Tk::grid($t->Label(-text => "Straßenkategorien", -font => $font{"bold"}),
+    Tk::grid($t->Label(-text => M("Straßenkategorien"), -font => $font{"bold"}),
 	     -sticky => "w", -columnspan => 3);
     $grid_row{"Category1"} = ($t->gridSize)[1]-1;
-    for my $cat (qw(B HH H N NN)) { # XXX don't hardcode
+    for my $cat (@main::strcat_order) {
 	Tk::grid($t->Button(-text => $category_attrib->{$cat}[0],
 			    -bg => $category_color{$cat}||"white",
 			    -fg => _readable_fg($t,$category_color{$cat}),
@@ -176,6 +195,16 @@ sub tk_display_result {
 		 -sticky => "we");
     }
     $grid_row{"Category2"} = ($t->gridSize)[1]-1;
+
+    if ($args{-updatecommand}) {
+	Tk::grid($t->Frame(-height => 1, -background => "black"),
+		 -sticky => "ew", -columnspan => 10);
+	Tk::grid($t->Button(-text => M("Update"),
+			    -anchor => "c",
+			    -font => $font{"bold"},
+			    -command => $args{-updatecommand},
+			   ), -sticky => "ew", -columnspan => 10);
+    }
 
     $t->update;
 
@@ -229,3 +258,7 @@ sub _readable_fg {
 1;
 
 __END__
+
+Gesamtlänge des Straßennetzes:
+
+perl -Ilib -MStrassen::Util -MStrassen -MObject::Iterate=iterate -e '$s=Strassen->new("strassen");iterate { for $i (0 .. $#{$_->[Strassen::COORDS]}-1) { $len += Strassen::Util::strecke_s($_->[Strassen::COORDS][$i], $_->[Strassen::COORDS][$i+1])} } $s; warn $len/1000'

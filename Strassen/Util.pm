@@ -1,18 +1,18 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.8 2002/12/30 02:12:13 eserte Exp $
+# $Id: Util.pm,v 1.11 2003/05/16 22:16:13 eserte Exp $
 #
-# Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
-# Author: Slaven Rezic (eserte@cs.tu-berlin.de)
+# Author: Slaven Rezic (slaven@rezic.de)
 #
 
 package Strassen::Util;
 use strict;
-use BBBikeUtil qw(rad2deg sqr STAT_MODTIME);
+use BBBikeUtil qw(rad2deg STAT_MODTIME);
 #use AutoLoader 'AUTOLOAD';
 use vars qw($VERBOSE $tmpdir
 	    $cachedir $cacheprefix
@@ -77,23 +77,32 @@ if (!@cacheable && !$cacheable_array_set) {
 
 # Argument: [x1,y1], [x2, y2]
 sub strecke {
-    CORE::sqrt(sqr($_[0]->[0] - $_[1]->[0]) +
-	       sqr($_[0]->[1] - $_[1]->[1]));
+    CORE::sqrt(($_[0]->[0] - $_[1]->[0])**2 +
+	       ($_[0]->[1] - $_[1]->[1])**2
+	      );
 }
 
 # Argument: "x1,y1", "x2,y2"
 sub strecke_s {
-    my($x1, $y1) = split(/,/, $_[0]);
-    my($x2, $y2) = split(/,/, $_[1]);
-    CORE::sqrt(sqr($x1-$x2) + sqr($y1-$y2));
+    my $inx1 = index($_[0], ",");
+    my $inx2 = index($_[1], ",");
+    CORE::sqrt((substr($_[0],0,$inx1)-substr($_[1],0,$inx2))**2 +
+	       (substr($_[0],$inx1+1)-substr($_[1],$inx2+1))**2
+	      );
 }
+## Die alte lesbare (aber etwas langsamere, siehe t/strassen2-bench.pl)
+## Variante:
+#    my($x1, $y1) = split(/,/, $_[0]);
+#    my($x2, $y2) = split(/,/, $_[1]);
+#    CORE::sqrt(sqr($x1-$x2) + sqr($y1-$y2));
+
 
 # Argumente: Indices
 sub strecke_i {
     my($self, $i1, $i2) = @_;
     my($x1,$y1) = unpack("l2", $self->{Index2Coord}[$i1]);
     my($x2,$y2) = unpack("l2", $self->{Index2Coord}[$i2]);
-    CORE::sqrt(sqr($x1-$x2) + sqr($y1-$y2));
+    CORE::sqrt(($x1-$x2)**2 + ($y1-$y2)**2);
 }
 
 # return the middle point between the points

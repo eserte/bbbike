@@ -70,10 +70,10 @@ BBBike and Perl need approx. 32 MB hard disk space.
 
 
 Download the file
-L<http://prdownloads.sourceforge.net/bbbike/BBBike-3.09-Windows.zip> and 
+L<http://prdownloads.sourceforge.net/bbbike/BBBike-3.12-Windows.zip> and 
 extract this file
 with WinZip. To start BBBike just click on the icon C<bbbike.bat> in
-the directory BBBike-3.09-Windows.
+the directory BBBike-3.12-Windows.
 
 Optionally you can install BBBike in C<C:\BBBike> with C<setup.bat>.
 This will also create an entry in the start menu. After the
@@ -217,7 +217,7 @@ L<http://www.bbbike.de>
 
 More information for the CGI version at:
 
-L<http://www.bbbike.de/info=1>
+L<http://www.radzeit.de/cgi-bin/bbbike.cgi/info=1>
 
 
 =head2 Command line version
@@ -247,7 +247,7 @@ C<lib/Text/ScriptTemplate.pm> by Taisuke Yamada, C<lib/enum.pm> by
 Zenin, C<ext/Strassen-Inline/heap.[ch]> by Internet Software
 Consortium, C<ext/BBBikeXS/sqrt.c> by Eyal Lebedinsky.
 
-C<BBBike-3.09-Windows.zip> contains a partial C<SiePerl>
+C<BBBike-3.12-Windows.zip> contains a partial C<SiePerl>
 distribution.
 
 

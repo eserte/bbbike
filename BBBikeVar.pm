@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.20 2003/01/08 20:01:12 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.23 2003/05/19 05:50:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2001 Slaven Rezic. All rights reserved.
@@ -31,7 +31,9 @@ $BBBIKE_WWW	   = 'http://www.bbbike.de';
 		      'http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.cgi',
 		     );
 # WWW version, URL for direct access (sometimes www.bbbike.de does not work)
-$BBBIKE_DIRECT_WWW = 'http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.cgi';
+#$BBBIKE_DIRECT_WWW = 'http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.cgi';
+$BBBIKE_DIRECT_WWW = 'http://www.radzeit.de/cgi-bin/bbbike.cgi';
+
 # Homepage on Sourceforge
 $BBBIKE_SF_WWW	   = 'http://bbbike.sourceforge.net';
 # URLs for data update
@@ -40,8 +42,7 @@ $BBBIKE_UPDATE_WWW = "http://bbbike.sourceforge.net/bbbike";
 $BBBIKE_UPDATE_DATA_RSYNC = 'rsync://www.radzeit.de/bbbike_data/';
 
 # WAP version
-# XXX move to sourceforge or so...
-$BBBIKE_WAP	   = 'http://www.onlineoffice.de/bbbike/wapbbbike.cgi';
+$BBBIKE_WAP	   = 'http://www.radzeit.de/cgi-bin/wapbbbike.cgi';
 # distribution directory for scripts:
 $DISTDIR	   = 'http://prdownloads.sourceforge.net/bbbike';
 # distribution directory for humans (entry to 'show files' at sourceforge)
@@ -53,9 +54,10 @@ $UPDATE_DIR	   = 'http://www.onlineoffice.de/bbbike';
 # URL auf die Diplomarbeit
 $DIPLOM_URL        = 'http://user.cs.tu-berlin.de/~eserte/diplom/';
 
-# XXX not yet...
-$BBBIKE_MAPSERVER_URL  = 'http://www.radzeit.de/cgi-bin/mapserver.cgi';
-$BBBIKE_MAPSERVER_INIT = 'http://www.radzeit.de/cgi-bin/BBBike/mapserver/brb/brb_init.html';
+$BBBIKE_MAPSERVER_URL  = 'http://www.radzeit.de/cgi-bin/mapserv';
+$BBBIKE_MAPSERVER_ADDRESS_URL = 'http://www.radzeit.de/cgi-bin/mapserver_address.cgi';
+#XXX zurzeit nicht ansprechbar
+$BBBIKE_MAPSERVER_INIT = 'http://www.radzeit.de/mapserver/brb/';
 
 1;
 

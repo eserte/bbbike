@@ -1076,16 +1076,20 @@ Die Installationsbeschreibung befindet sich in der Datei
 <a class="POD_LINK" href="README.html">README</a> bzw. README.html.
 </p>
 <h3 class="POD_HEAD2"><a name="fvwm2">fvwm2</a></h3>
-<p class="POD_TEXT">
-Um Icons mit dem fvwm2 darstellen zu k&ouml;nnen, sollte in .fvwm2rc oder
-.fvwmrc folgende Zeile eingef&uuml;gt werden:
-</p>
-<pre>
+<pre class="POD_TEXT">
+Bei der Verwendung von fvwm2 k&ouml;nnen folgende Zeilen in .fvwm2rc
+oder .fvwmrc eingef&uuml;gt werden:
+
  Style &quot;Bbbike*&quot;        MiniIcon srtbike_mini.xpm
+ Style &quot;BbbikePassive&quot;  GrabFocusOff, GrabFocusTransientOff
 </pre>
 <p class="POD_TEXT">
-Die Datei srtbike_mini.xpm sollte in ein Verzeichnis eingef&uuml;gt werden,
-wo sich die sonstigen fvwm-Icons befindet (siehe Direktive PixmapPath).
+Die erste Zeile l&auml;sst das BBBike-Icon in der Titelleiste
+erscheinen. Dazu sollte die Datei srtbike_mini.xpm in ein Verzeichnis
+eingef&uuml;gt werden, wo sich die sonstigen fvwm-Icons befinden (siehe
+Direktive PixmapPath). Die zweite Zeile sorgt daf&uuml;r, dass
+&quot;unwichtige&quot; zus&auml;tzliche Fenster nicht
+(unn&ouml;tigerweise) den Fokus erhalten.
 </p>
 <h2 class="POD_HEAD1"><a name="INTERNA">INTERNA</a></h2>
 <p class="POD_TEXT">
@@ -1147,8 +1151,7 @@ Zu viele...
 
 Entfernungen von manuell erzeugten Strecken werden bei der
 Wegbeschreibung nicht ber&uuml;cksichtigt, wenn eine Neuberechnung
-oder R&uuml;ckweg angew&auml;hlt wurde. Bei einer Neuberechnung
-bleibt die Routenbeschreibung immer leer.
+oder R&uuml;ckweg angew&auml;hlt wurde.
 <li class="POD_ITEM"><a name="_17"></a>
 
 Suche: Das Anw&auml;hlen eines Punktes innerhalb einer gesperrten
@@ -1165,59 +1168,50 @@ vorberechnet) umsteigen werde.
 
 optionadd...*search hat auch Auswirkungen auf den Men&uuml;punkt in
 Tk::Pod ... wie kann das begrenzt werden? Vielleicht MainWindow statt
-Toplevel benutzen?
+Toplevel f&uuml;r das Pod-Widget benutzen?
 <li class="POD_ITEM"><a name="_20"></a>
-
-Kontextsensitive Hilfe auf &quot;km/h&quot; findet beim Tk-POD-Ersatz nicht den
-richtigen Abschnitt.
-<li class="POD_ITEM"><a name="_21"></a>
 
 Beim Anzeigen einer Routenbeschreibung, die Landstra&szlig;en
 enth&auml;lt, wird nichts ausgegeben, wenn Landstra&szlig;en nicht
 gezeichnet sind. =&gt; in nearest_points evtl. Landstra&szlig;en bei
 Bedarf nachladen (wie feststellen???).
-<li class="POD_ITEM"><a name="_22"></a>
+<li class="POD_ITEM"><a name="_21"></a>
 
 Vias verschieben etc.: wenn eine Via-Flagge sich unterhalb eines
 anderen Symbol befindet, kann es nicht angeklickt werden
-<li class="POD_ITEM"><a name="_23"></a>
-
-Vias verschieben etc.: Start- und Zielflagge koennen (entgegen den
-Behauptungen im Menue) noch nicht verschoben etc. werden
-<li class="POD_ITEM"><a name="_24"></a>
+<li class="POD_ITEM"><a name="_22"></a>
 
 Ab und zu, besonders beim Wechseln zwischen Kartenmodi, reagiert bbbike
 beim Setzen eines Startpunktes nicht. Aushilfe: einmal &quot;Route l&ouml;schen&quot;
-ausw&auml;hlen, danach geht es wieder.
+ausw&auml;hlen, danach geht es wieder. =&gt; scheint behoben zu sein
+(siehe set_route_point, &quot;XXX activating&quot;).
 </ul>
 <h2 class="POD_HEAD1"><a name="LIMITATIONS">LIMITATIONS</a></h2>
 <ul class="POD_LIST">
-<li class="POD_ITEM"><a name="_25"></a>
-
-Beim Reinzoomen werden die Strecken und Punkte sehr ungenau
-gezeichnet. Dies k&ouml;nnte behoben werden, wenn alle Punkte beim Zoomen
-neu gezeichnet werden, aber das w&uuml;rde das Zoomen *sehr* verlangsamen.
-<li class="POD_ITEM"><a name="_26"></a>
+<li class="POD_ITEM"><a name="_23"></a>
 
 Der Canvas-Postscript-Treiber kann mit rotierten Fonts nichts anfangen.
 </ul>
 <h2 class="POD_HEAD1"><a name="TODO">TODO</a></h2>
 <ul class="POD_LIST">
-<li class="POD_ITEM"><a name="_27"></a>
+<li class="POD_ITEM"><a name="_24"></a>
+
+bbbike.cgi - Info: Beschreibung der Sucheinstellungen
+<li class="POD_ITEM"><a name="_25"></a>
 
 BikePower: Profile laden/speichern, evtl. auch direkt aus bbbike
 sichtbar. Erst einmal das Problem mit dem Komma (Linux, Solaris mit
 LANG gesetzt) l&ouml;sen.
-<li class="POD_ITEM"><a name="_28"></a>
+<li class="POD_ITEM"><a name="_26"></a>
 
 Dynamisches Zeichnen (weniger/mehr) von Kartenelementen anhand der
 Vergr&ouml;&szlig;erung (wird teilweise schon gemacht, z.B. bei
 get_symbol oder Orte/Kategorien=Auto).
-<li class="POD_ITEM"><a name="_29"></a>
+<li class="POD_ITEM"><a name="_27"></a>
 
 In Routenbeschreibungen Zeilen wie &quot;Stra&szlig;e A&quot;, &quot;...&quot;,
 &quot;Stra&szlig;e A&quot; zu einer Zeile zusammenfassen.
-<li class="POD_ITEM"><a name="_30"></a>
+<li class="POD_ITEM"><a name="_28"></a>
 
 Bessere Routenbeschreibung f&uuml;r Landstra&szlig;en. In der
 Datenbank &quot;X - Y&quot; nach &quot;(A) - X - V - Y - (B)&quot; &auml;ndern, wobei X
@@ -1228,154 +1222,141 @@ Via-Ort ist. Die geklammerten Orte und V sind optional.
 M&ouml;glichst Orte in die Routenbeschreibung aufnehmen. Vielleicht
 mit nearest_... arbeiten.
 </p>
-<li class="POD_ITEM"><a name="_31"></a>
+<li class="POD_ITEM"><a name="_29"></a>
 
-Update &uuml;ber das Internet: gzip/zip-Unterst&uuml;tzung, oder,
-noch besser, rsync-Unterst&uuml;tzung. Wie richtet man einen
-rsync-Server ein?
-<li class="POD_ITEM"><a name="_32"></a>
+Update &uuml;ber das Internet: rsync-Unterst&uuml;tzung austesten.&#0;
+<li class="POD_ITEM"><a name="_30"></a>
 
 Telefonbuch-Datenbank (Name): Die Suche ist suboptimal. Bei der
 Suche von h&auml;ufigen Nachnamen (M&uuml;ller, Schulze)
 wird das Ergebnis begrenzt (200 Namen) und kann mit &quot;Weiter&quot;
 fortgesetzt werden.
-<li class="POD_ITEM"><a name="_33"></a>
+<li class="POD_ITEM"><a name="_31"></a>
 
 B2/B3 auf Speed/Power-Labels dokumentieren --- generelles Widget wie
 Mouse-Info bei xfig?
-<li class="POD_ITEM"><a name="_34"></a>
+<li class="POD_ITEM"><a name="_32"></a>
 
 evtl. ein Composite-Item fuer canvas erstellen und zwar fuer punkte
 mit zugehoerigem label. so bleiben die labels im korrekten
 abstand neben dem punkt
-<li class="POD_ITEM"><a name="_35"></a>
+<li class="POD_ITEM"><a name="_33"></a>
 
 CGI: Grafik zeichnen: Option (Stra&szlig;ennamen) einf&uuml;hren,
 mit der eine Imagemap f&uuml;r die Route erstellt wird. W&uuml;rde
 Sinn machen, wenn alle Browser onmouseover &uuml;ber Imagemaps
 handhaben w&uuml;rden.
-<li class="POD_ITEM"><a name="_36"></a>
+<li class="POD_ITEM"><a name="_34"></a>
 
 Optimierung: bei Landstra&szlig;en reine Kurvenpunkte bei der
 Netzberechnung ignorieren =&gt; ist mit make_wide_net bereits
 implementiert, wird aber nicht verwendet...
-<li class="POD_ITEM"><a name="_37"></a>
+<li class="POD_ITEM"><a name="_35"></a>
 
 oben/normal/unten: Reihenfolge: RB oder S, dann RB-Bhf oder S-Bhf, und
 nicht RB, RB-Bhf, S, S-Bhf wie bislang
-<li class="POD_ITEM"><a name="_38"></a>
-
-Vias werden gesondert dargestellt.
-<li class="POD_ITEM"><a name="_39"></a>
+<li class="POD_ITEM"><a name="_36"></a>
 
 unlimited Undo?
-<li class="POD_ITEM"><a name="_40"></a>
+<li class="POD_ITEM"><a name="_37"></a>
 
 Optionen -auchumland und -nurberlin: setzen einige Variablen wie
 wasserumland, landstr, orte etc.
-<li class="POD_ITEM"><a name="_41"></a>
+<li class="POD_ITEM"><a name="_38"></a>
 
 search_route: multiple Start/Ziel (Checkbutton)
-<li class="POD_ITEM"><a name="_42"></a>
+<li class="POD_ITEM"><a name="_39"></a>
 
 Mehr benutzerfreundliche Optionen f&uuml;r die Suche: k&uuml;rzeste
 Strecke, schnellste Strecke (in Abh&auml;ngigkeit von Wind,
 Steigung/Gef&auml;lle, Stra&szlig;enoberfl&auml;che etc.),
-<li class="POD_ITEM"><a name="_43"></a>
-
-Weiterer Suchmodus: Start- und Ziel bleiben fest, Via kann beliebig
-ver&auml;ndert werden. Und: Ausgabe von alternativen Routen.
-<li class="POD_ITEM"><a name="_44"></a>
+<li class="POD_ITEM"><a name="_40"></a>
 
 GUI-build aus package main in eigene Funktionen verlagern
-<li class="POD_ITEM"><a name="_45"></a>
+<li class="POD_ITEM"><a name="_41"></a>
 
 einheitliche Schalter f&uuml;r das interne Caching von Daten (z.B. ob
 beim Anklicken von &quot;Ort&quot; die Datei immer neu eingelesen werden soll)
-<li class="POD_ITEM"><a name="_46"></a>
+<li class="POD_ITEM"><a name="_42"></a>
 
 Portrait/Landscape-Umschaltung: alle Canvas-Daten aktualisieren. 
 Route wird z.Zt. nicht gedreht (evtl.
 auf @coords verzichten und nur @realcoords verwenden).
-<li class="POD_ITEM"><a name="_47"></a>
+<li class="POD_ITEM"><a name="_43"></a>
 
 Vern&uuml;nftige Options-Eingabe in der GUI. Zwischen
 Startup-Optionen (Zeichnen der Stra&szlig;en/Punkte) und aktuellen
 Optionen unterscheiden.
-<li class="POD_ITEM"><a name="_48"></a>
+<li class="POD_ITEM"><a name="_44"></a>
 
 Kategorisierung der Landstra&szlig;en? Gibt es Untersuchungen zur
 Verkehrsdichte? Vielleicht zweigleisig fahren: Stra&szlig;enbelag,
 Verkehrsdichte, offizielle Einstufung (Bundesstra&szlig;e ...) (ups,
 ist dreigleisig geworden...)
-<li class="POD_ITEM"><a name="_49"></a>
+<li class="POD_ITEM"><a name="_45"></a>
 
 choose_ort, S- und U-Bahnen: neben dem Bahnhof die zugeh&ouml;rige(n)
 Linien anzeigen
-<li class="POD_ITEM"><a name="_50"></a>
+<li class="POD_ITEM"><a name="_46"></a>
 
 Option: alle Ortschaften entlang einer Route zeigen (evtl. auch die
 N&auml;he einstellbar, default 100m)
-<li class="POD_ITEM"><a name="_51"></a>
+<li class="POD_ITEM"><a name="_47"></a>
 
 Im Umland ist es wahrscheinlich sinnvoller, eine Routenbeschreibung
 anhand von Punkten (Ortschaften) anstatt Strecken (Stra&szlig;en) zu
 machen. Optional eins oder beides zusammen.
-<li class="POD_ITEM"><a name="_52"></a>
-
-Ab und zu Pfeile zeichnen, damit die Routenf&uuml;hrung eindeutig wird
-(wenn eine Strecke zweimal durchfahren wird).
-<li class="POD_ITEM"><a name="_53"></a>
+<li class="POD_ITEM"><a name="_48"></a>
 
 Option -centerc auch interaktiv zug&auml;nglich machen (ist schon,
 aber nur mit grauenvollem Interface).
-<li class="POD_ITEM"><a name="_54"></a>
+<li class="POD_ITEM"><a name="_49"></a>
 
 Das Erzeugen von GIF-Bildern ben&ouml;tigt netpbm, von JPEG-Bildern
 die JPEG-Distribution und alle brauchen ghostscript. Eine bessere
 Methode w&auml;re WinPhoto (wenn es korrekt funktionieren
 w&uuml;rde).
-<li class="POD_ITEM"><a name="_55"></a>
+<li class="POD_ITEM"><a name="_50"></a>
 
 Suchen nach Alternativen. Es ist schwierig zu entscheiden, wann eine
 Alternative wirklich eine Alternative darstellt (z.B. ist es kein
 gro&szlig;er Unterschied, ob man nur rechts oder links um einen Block
 herum f&auml;hrt).
-<li class="POD_ITEM"><a name="_56"></a>
+<li class="POD_ITEM"><a name="_51"></a>
 
 Bei Tix sind Eingabe-Widgets und Listboxen in einem helleren Farbton.
 Auch hier umsetzen. Wie wendet Tix die Schemes auf die alten Widgets
 an?
-<li class="POD_ITEM"><a name="_57"></a>
+<li class="POD_ITEM"><a name="_52"></a>
 
 Evtl: Canvas und &Uuml;bersichtskarte: Maus ziehen zum Einstellen
 eines Ausschnitts
-<li class="POD_ITEM"><a name="_58"></a>
+<li class="POD_ITEM"><a name="_53"></a>
 
 R&uuml;ckkehr aus dem edit-Modus in den Suchmodus: Cursor wieder
 umstellen, Start/Zielflagge aktivieren.
-<li class="POD_ITEM"><a name="_59"></a>
+<li class="POD_ITEM"><a name="_54"></a>
 
 Stra&szlig;ennamen: Labels wie in richtigen Stadtpl&auml;nen
 anordnen, also z.B. &quot;Yorckstr.&quot;: am Anfang der Stra&szlig;e &quot;Yorck-&quot;,
 am Ende der Stra&szlig;e &quot;str.&quot;. Dadurch werden die Namen hoffentlich
 lesbarer sein. =&gt; Ist schon implementiert, aber langsam...
-<li class="POD_ITEM"><a name="_60"></a>
+<li class="POD_ITEM"><a name="_55"></a>
 
 Da das Zeichnen von Stra&szlig;ennamen so lange dauert: mit Hints
 arbeiten (z.B. f&uuml;r einige oft verwendete Zoomstufen Koordinaten
 vorberechnen).
-<li class="POD_ITEM"><a name="_61"></a>
+<li class="POD_ITEM"><a name="_56"></a>
 
 Beim Vergr&ouml;&szlig;ern k&ouml;nnte man ab einer bestimmten
 Stufe auch die Gr&ouml;&szlig;e der Stra&szlig;en/Ortslabel auch
 mitvergr&ouml;&szlig;ern.
-<li class="POD_ITEM"><a name="_62"></a>
+<li class="POD_ITEM"><a name="_57"></a>
 
 Optional mehr Informationen in der Routenbeschreibung, z.B.
 Steigungen, Sehensw&uuml;rdigkeiten in der N&auml;he,
 U/S-Bahnstationen ... Kommentare sind schon drinnen.
-<li class="POD_ITEM"><a name="_63"></a>
+<li class="POD_ITEM"><a name="_58"></a>
 
 Alle in &quot;strassen&quot; vorkommende Stra&szlig;en sollten auch in
 &quot;Berlin.coords.data&quot; stehen. Ansonsten gibt es derart P&Uuml;robleme,
@@ -1392,46 +1373,45 @@ Sachen wie Br&uuml;cken, Tunnel, &quot;Alexanderplatz [zur Grunerstr.]&quot; etc
 ansonsten werden sie in bbbike.cgi nicht erkannt, obwohl sie
 existieren!]
 </p>
-<p></p>
-<li class="POD_ITEM"><a name="_64"></a>
+<li class="POD_ITEM"><a name="_59"></a>
 
 Server-Mode und Client-Programm: austesten, insbesondere mit KDE, und
 dann alle Starts auf bbbikeclient umschreiben. Gucken, wie man sowas
 mit Win32 machen k&ouml;nnte. Server-Beispielcode aus
 &quot;Mastering Perl/Tk&quot; verwenden.
-<li class="POD_ITEM"><a name="_65"></a>
+<li class="POD_ITEM"><a name="_60"></a>
 
 CGI-Bilder antialiased erstellen. Ich habe schon was gemacht, ist aber
 noch nicht optimal. (Was habe ich gemacht? Wie kann man das mit GD
 machen???)
-<li class="POD_ITEM"><a name="_66"></a>
+<li class="POD_ITEM"><a name="_61"></a>
 
 In BBBikeDraw.pm nach AREA suchen: Probleme mit den verschiedenen
 Netscape-Versionen.
-<li class="POD_ITEM"><a name="_67"></a>
+<li class="POD_ITEM"><a name="_62"></a>
 
 Implementierung der interaktiven Eingabe f&uuml;r einige
 Stra&szlig;enlabels, die dann bei &quot;Stra&szlig;ennamen&quot; in bbbike und
 immer in den vorgefertigten bbbike.cgi-Bildern und konditional in den
 dynamischen gesetzt werden.
-<li class="POD_ITEM"><a name="_68"></a>
+<li class="POD_ITEM"><a name="_63"></a>
 
 install.pl: Falls Tk nicht installiert ist und PPM vorhanden ist, mit
 PPM nachinstallieren. Bei Bedarf eine Reihe weiterer Module
 nachinstallieren (siehe Bundle::BBBike). Das Installieren mittels
 Bundle::BBBike funktioniert ab CPAN 1.60 nicht mehr.
-<li class="POD_ITEM"><a name="_69"></a>
+<li class="POD_ITEM"><a name="_64"></a>
 
 FreeBSD-Port anpassen, so da&szlig; install.pl verwendet wird. PLIST
 von install.pl abh&auml;ngig machen. -kdeinstall in
 Abh&auml;ngigkeit von HAVE_KDE angeben.
-<li class="POD_ITEM"><a name="_70"></a>
+<li class="POD_ITEM"><a name="_65"></a>
 
 Rotierte Fonts: vielleicht ein Freetype-Modul schreiben, daf&uuml;r
 eine Tk::Canvas-Erweiterung und diese in BBBike verwenden? ---
 Es gibt bereits libgdtf. Dieses zu einem Perl-Modul machen und
 wenigstens f&uuml;r die statischen CGI-Karten verwenden.
-<li class="POD_ITEM"><a name="_71"></a>
+<li class="POD_ITEM"><a name="_66"></a>
 
 Neuimplementation der Streckensuche. Dabei soll zwischen
 Streckenaufw&auml;nden und Knotenpunktaufw&auml;nden unterschieden
@@ -1478,46 +1458,46 @@ Analyse einer Kreuzung:
 
  * Feststellen, ob die Vorfahrt beachtet werden muE&lt;szlig&gt;
 </pre>
-<li class="POD_ITEM"><a name="_72"></a>
+<li class="POD_ITEM"><a name="_67"></a>
 
 cgi-Version: Linux+Netscape: Probleme mit Cookies (Einstellungen)
 =&gt; noch immer?
-<li class="POD_ITEM"><a name="_73"></a>
+<li class="POD_ITEM"><a name="_68"></a>
 
 wenn GD nicht installiert ist, sollte die gif-Datei gel&ouml;scht werden und<br>&nbsp;&nbsp;&nbsp;eine Fehlermeldung ausgegeben werden (?)
-<li class="POD_ITEM"><a name="_74"></a>
+<li class="POD_ITEM"><a name="_69"></a>
 
 Vergr&ouml;&szlig;erung der Schrift beim Zoomen
-<li class="POD_ITEM"><a name="_75"></a>
+<li class="POD_ITEM"><a name="_70"></a>
 
 Speichern von Grafiken: Extension erzwingen (?), &Uuml;berschreiben testen
 und verhindern
-<li class="POD_ITEM"><a name="_76"></a>
+<li class="POD_ITEM"><a name="_71"></a>
 
 evtl. mit fork eine Warteschleife implementieren. Wenn es nicht mit
 Tk (threads!) geht, dann vielleicht mit X11::Protocol oder mit xterm?
-<li class="POD_ITEM"><a name="_77"></a>
+<li class="POD_ITEM"><a name="_72"></a>
 
 Kurzhilfe: kann man feststellen, ob man eine 2/3-Tastenmaus hat?
-<li class="POD_ITEM"><a name="_78"></a>
+<li class="POD_ITEM"><a name="_73"></a>
 
 Vielleicht Windchill-Temperatur zus&auml;tzlich anzeigen.
-<li class="POD_ITEM"><a name="_79"></a>
+<li class="POD_ITEM"><a name="_74"></a>
 
 Optimierung: Beim Ausschalten von Outline oder Stra&szlig;ennamen
 mu&szlig; nicht alles neu gezeichnet werden.
-<li class="POD_ITEM"><a name="_80"></a>
+<li class="POD_ITEM"><a name="_75"></a>
 
 Meta-Choose-Dialog, das alle Choose-Dialoge vereinigt. Vielleicht
 Tk::SmartListbox verwenden?
-<li class="POD_ITEM"><a name="_81"></a>
+<li class="POD_ITEM"><a name="_76"></a>
 
 wettermeldung2 mit fork/spawn/threads aufrufen
-<li class="POD_ITEM"><a name="_82"></a>
+<li class="POD_ITEM"><a name="_77"></a>
 
 Neue Version von wettermeldung2 schreiben, die SYNOP-Information
 verwendet.
-<li class="POD_ITEM"><a name="_83"></a>
+<li class="POD_ITEM"><a name="_78"></a>
 
 Wenn w&auml;hrend eines WWW-Fetches die Verbindung gekappt wird,
 h&auml;ngt BBBike vollkommen. Gesehen bei Win32. Vielleicht mit
@@ -1526,7 +1506,7 @@ noch besser: fileevent verwenden! ... LWPng kann Event-Handling.
 Leider ist das Event-Handling noch inkompatibel mit Tk. Auch f&uuml;r
 wettermeldung2 mit LWPng arbeiten. =&gt; Vielleicht das hochgelobte
 POE verwenden.
-<li class="POD_ITEM"><a name="_84"></a>
+<li class="POD_ITEM"><a name="_79"></a>
 
 F&uuml;r das Drucken von Text: evtl. auch Netscape und print-Methode
 verwenden (?). F&uuml;r Unix k&ouml;nnte man eine start netscape,
@@ -1548,11 +1528,11 @@ da&szlig; die ganzen remote-Kommandos verwendet. Hier eine Liste:
 <p class="POD_TEXT">
 Mit Xprt f&uuml;r X11 experimentieren (doc lesen).
 </p>
-<li class="POD_ITEM"><a name="_85"></a>
+<li class="POD_ITEM"><a name="_80"></a>
 
 Ein LightWeight-Modul (CanvasMap) schreiben. Vielleicht irgendwann
 alles auf dieses Modul umschreiben.
-<li class="POD_ITEM"><a name="_86"></a>
+<li class="POD_ITEM"><a name="_81"></a>
 
 PerlPlusPlugin ausprobieren und BBBike daf&uuml;r portieren. Sachen,
 die mir daf&uuml;r einfallen: Ich brauche ein open(), das &uuml;ber
@@ -1567,16 +1547,16 @@ hyperrequire. Z.B.
 <p class="POD_TEXT">
 Irgendwo habe ich so etwas schon implementiert gesehen ... suchen!
 </p>
-<li class="POD_ITEM"><a name="_87"></a>
+<li class="POD_ITEM"><a name="_82"></a>
 
 Bei einem Resize mu&szlig; auch das Progress-Canvas angepasst werden.
-<li class="POD_ITEM"><a name="_88"></a>
+<li class="POD_ITEM"><a name="_83"></a>
 
 BBBikeContext.pm schreiben: gibt alles aus, was ich so brauche: $os,
 Strassen-Objekte, Crossings, Netze etc. Caching bei Belieben
 einstellen, evtl. mit Ties arbeiten, die sich selbst umwandeln oder
 durchg&auml;ngig mit Methoden. AutoLoading verwenden.
-<li class="POD_ITEM"><a name="_89"></a>
+<li class="POD_ITEM"><a name="_84"></a>
 
 Folgende Radwege in der Landsberger Chaussee k&ouml;nnen nicht
 dargestellt werden, weil sich die Stra&szlig;e in landstrassen-orig
@@ -1587,7 +1567,7 @@ und nicht in strassen-orig befindet.
 14844,6029	14545,5953	radweg	pflicht
 15283,6150	14844,6029	radweg	pflicht
 </p>
-<li class="POD_ITEM"><a name="_90"></a>
+<li class="POD_ITEM"><a name="_85"></a>
 
 Speicheroptimierung.
 <pre class="POD_TEXT">
@@ -1626,47 +1606,47 @@ Evtl. auch:
     * Tk::SRTProgress::*
     * Tk::UnderlineAll::*
 </pre>
-<li class="POD_ITEM"><a name="_91"></a>
+<li class="POD_ITEM"><a name="_86"></a>
 
 3D-Darstellung von Berlin (z.B. vier versetzte Fl&auml;chen, die
 oberste in der Hintergrundfarbe und die anderen in der Schattenfarbe).
-<li class="POD_ITEM"><a name="_92"></a>
+<li class="POD_ITEM"><a name="_87"></a>
 
 bbbike.cgi: Eine &quot;Neu&quot;-Subroutine, die jeweils die neuen Features der
 Version anzeigt. Vielleicht auch eine &quot;Neu&quot;-History, die automatisch
 aus den alten Eintr&auml;gen oder aus dem RCS-Log aufgebaut wird?
-<li class="POD_ITEM"><a name="_93"></a>
+<li class="POD_ITEM"><a name="_88"></a>
 
 Cgiinfo in cgi2.t funktioniert leider nicht, weil openURL als zweiten
 Parameter nur true oder false zul&auml;&szlig;t. Workaround:
 Schreiben eines Multiplexers, der per Javascript neue Fenster
 &ouml;ffnet.
-<li class="POD_ITEM"><a name="_94"></a>
+<li class="POD_ITEM"><a name="_89"></a>
 
 Soll ich mit Scopes arbeiten? Scopes w&auml;ren: Berlin, Brandenburg,
 jwd und w&uuml;rden sich auf Stra&szlig;en, Orte und Gew&auml;sser
 beziehen.
-<li class="POD_ITEM"><a name="_95"></a>
+<li class="POD_ITEM"><a name="_90"></a>
 
 Kann ich mapserv irgendwie einsetzen?
-<li class="POD_ITEM"><a name="_96"></a>
+<li class="POD_ITEM"><a name="_91"></a>
 
 Bike+Ride integrieren. Das w&uuml;rde in eine unterbrochene Route
 resultieren, deren Fahrzeiten addiert w&uuml;rden. Zus&auml;tzlich k&auml;me noch
 eine abgesch&auml;tzte Zeit f&uuml;r die Benutzung des Verkehrsmittels (Fahrzeit
 + Zusteigzeit + Umsteigezeiten). Eine Verbindung zu Fahrinfo w&auml;re
 genial.
-<li class="POD_ITEM"><a name="_97"></a>
+<li class="POD_ITEM"><a name="_92"></a>
 
 Aufteilung des Routen-Men&uuml;s. In das zweite Men&uuml; kommen
 alle Punkte, die die Ausgabe beeinflussen: Ausschnitt anpassen,
 Steigungen zeigen, Streckenprofil, Start/Zielflagge, Routenfarbe (+
 Einf&auml;rbung Wind/Leistung/Qualit&auml;t/etc.), Kalorienverbrauch
-<li class="POD_ITEM"><a name="_98"></a>
+<li class="POD_ITEM"><a name="_93"></a>
 
 Berechnen des Stra&szlig;ennetzes: Ausblenden des Canvas nicht
 notwendig
-<li class="POD_ITEM"><a name="_99"></a>
+<li class="POD_ITEM"><a name="_94"></a>
 
 GfxConvert evtl. mit Tk-Photo-Funktionen definieren, wenn die externen
 Programme nicht verf&uuml;gbar sind. Am besten w&auml;re
@@ -1674,7 +1654,7 @@ nat&uuml;rlich noch immer ein NetPBM-Modul.
 <p class="POD_TEXT">
 Photo-Zooming: -zoom x -subsample y == -zoom x/y oder umgekehrt
 </p>
-<li class="POD_ITEM"><a name="_100"></a>
+<li class="POD_ITEM"><a name="_95"></a>
 
 Radwegekategorien erweitern: RW(kategorie)(qualitaetskategorie). Also
 hei&szlig;t dann z.B. RW00: Radweg mit sehr guter Qualit&auml;t und
@@ -1683,17 +1663,17 @@ Qualit&auml;t. Bei den restlichen Kategorien kann man sich die
 Erweiterung sparen, da dort die Qualit&auml;tskategorie der
 Stra&szlig;e gilt. Default-Qualit&auml;tskategorie f&uuml;r Radwege
 sei 1 (gute Qualit&auml;t).
-<li class="POD_ITEM"><a name="_101"></a>
+<li class="POD_ITEM"><a name="_96"></a>
 
 ShAddRecentDoc geht unter Win98 nicht?
-<li class="POD_ITEM"><a name="_102"></a>
+<li class="POD_ITEM"><a name="_97"></a>
 
 Drag'n'drop und open's sollten vielleicht etwas mit .lnk-Dateien unter
 Win* anfangen k&ouml;nnen...
-<li class="POD_ITEM"><a name="_103"></a>
+<li class="POD_ITEM"><a name="_98"></a>
 
 outline_text bei draw_text_intelligent verwenden
-<li class="POD_ITEM"><a name="_104"></a>
+<li class="POD_ITEM"><a name="_99"></a>
 
 Beim intelligenten Zeichen von Ortsnamen bietet sich ein
 Scanline-Vorgang von rechts nach links an. Somit vermeidet man Sachen
@@ -1704,19 +1684,19 @@ wie
 Schwierig, wenn gleichzeitig das Ergebnis aus sortbycat beachtet
 werden soll (Multipass? Langsam!)
 </p>
-<li class="POD_ITEM"><a name="_105"></a>
+<li class="POD_ITEM"><a name="_100"></a>
 
 Bei der Ausgabe der Stra&szlig;ennamen an der Route sollte ein aehnlich
 intelligentes Verfahren angewendet werden. Vielleicht kann bei Routen,
 die von W nach O verlaufen, die Strassennamen erstmal links vom Punkt
 eingezeichnet werden und umgekehrt.
-<li class="POD_ITEM"><a name="_106"></a>
+<li class="POD_ITEM"><a name="_101"></a>
 
 Bei -usbahnnetz sollte folgendes gehen: Routenbeschreibung mit Bahnh&ouml;fen
 statt Strecken (davon kann auch die Routenbeschreibung auf dem flachen
 Land profitieren!) ... Und noch sch&ouml;ner: eine Kombination von U/S-Bahn
 und Stra&szlig;ennetz (f&uuml;r Fu&szlig;wege bzw. Bike+Ride).
-<li class="POD_ITEM"><a name="_107"></a>
+<li class="POD_ITEM"><a name="_102"></a>
 
 Optional eine k&uuml;rzere Beschreibung. Diese w&uuml;rde nur
 folgendes enthalten: Stra&szlig;en und Abbiegevorg&auml;nge. Wenn
@@ -1726,36 +1706,38 @@ verschiedene Stra&szlig;ennamen in einer Liste zusammengefasst.
 Zus&auml;tzlich noch eine Druckausgabe. Auch beim CGI. Wann wird die
 Ausgabe endlich vereinheitlicht?
 </p>
-<li class="POD_ITEM"><a name="_108"></a>
+<li class="POD_ITEM"><a name="_103"></a>
 
 bei Windows (oder allgemein: bei ClickToFocus) ist es
 unangenehm, dass neue Fenster den Focus klauen. Allerdings ist es ohne
 Maus eher angenehm, dass neue Fenster den Focus bekommen. Wie soll man
 also verfahren?
-<li class="POD_ITEM"><a name="_109"></a>
+<li class="POD_ITEM"><a name="_104"></a>
 
 Pilot.pm installieren, BBBikePalm daf&uuml;r erweitern
-<li class="POD_ITEM"><a name="_110"></a>
+<li class="POD_ITEM"><a name="_105"></a>
 
 user editing: negative/positive pr&auml;ferenzen mit b2/b3 lange druecken
 setzen
-<li class="POD_ITEM"><a name="_111"></a>
+<li class="POD_ITEM"><a name="_106"></a>
 
 bugfix: optmenu in optimierungseinstellungen korrigieren (Fehler beim
 Tk Widget)
-<li class="POD_ITEM"><a name="_112"></a>
+<li class="POD_ITEM"><a name="_107"></a>
 
 lange h&auml;nger bei vielen Canvas-Elementen ueberpruefen
-<li class="POD_ITEM"><a name="_113"></a>
+<li class="POD_ITEM"><a name="_108"></a>
 
 MDI-Interface entwickeln mit:<br>&nbsp;* map-widget<br>&nbsp;* start/zieleingabe<br>&nbsp;* einfaches opt-einstellungs-fenster<br>&nbsp;* routenbeschreibung
 Siehe Tk::WindowManager =&gt; entwickle ich nicht mehr weiter,
 daf&uuml;r gibt es aber ein neues Tk::MDI-Widget
-<li class="POD_ITEM"><a name="_114"></a>
+<li class="POD_ITEM"><a name="_109"></a>
 
 Andreas' Labeling-Algorithmus verwenden
-<li class="POD_ITEM"><a name="CDROM_Probleme_">CDROM-Probleme:</a>
-<pre class="POD_VERBATIM">
+</ul>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="CDROM_Probleme_">CDROM-Probleme:</a>
+<dd><pre class="POD_VERBATIM">
  - tk:underlineall.pm warnings in 111,114,157,178
  - win, print: fehlermeldung nicht auf stdout zeigen. start_cmd wird ohne progexe gestartet, wenn der ps-viewer gestartet weden soll. dito beim browser
  - tk::getopt: pane verwenden. ab 800.015 eh standard
@@ -1774,8 +1756,8 @@ Andreas' Labeling-Algorithmus verwenden
  - shift-click vom start aus geht nicht
  - besseres cdrom.pl schreiben. Sowas wie cons, nur fuer das kopieren. Oder mkisofs beibringen, das er die richtigen sachen ohne kopieren erzeugt
 </pre>
-<li class="POD_ITEM"><a name="BBBike_Externalizati">BBBike - Externalization, towards to v3.0</a>
-<pre class="POD_VERBATIM">
+<dt class="POD_ITEM"><a name="BBBike_Externalizati">BBBike - Externalization, towards to v3.0</a>
+<dd><pre class="POD_VERBATIM">
  Allgemein: Aenderungen nur durchfuehren, wenn sie entweder trivial und unaufwendig sind oder zwingend fuer die anstehenden Portierungen sind.
 
  - data: neue Verzeichnishierarchie
@@ -1808,11 +1790,11 @@ Andreas' Labeling-Algorithmus verwenden
  * evtl. Programm zum Suchen von &Uuml;berschneidungen schreiben (mit
    Ausnahmedatei f&uuml;r Br&uuml;cken)
 </pre>
-<li class="POD_ITEM"><a name="_115"></a>
-
+<dt class="POD_ITEM"><a name="Bookmarks">Bookmarks</a>
+<dd>
 Bookmarks in choose_ort und m&ouml;glichkeit, per dnd neue bookmarks zu definieren, um als stra&szlig;enauswahl dienen zu k&ouml;nnen
-<li class="POD_ITEM"><a name="weiter_">weiter:</a>
-<pre class="POD_VERBATIM">
+<dt class="POD_ITEM"><a name="weiter_">weiter:</a>
+<dd><pre class="POD_VERBATIM">
  - bei Http.pm vielleicht IO::Select::can_read/write verwenden
  - bbbike.cgi: Installation auf rapidsite testen =&gt; automatisierten Test a la wap_test schreiben, gleiche Features erkennen und verallgemeinern
  - BBBike: feinere Aufteilung der Gegenwind- etc. Strecken (flie&szlig;end von rot bis gr&uuml;n)
@@ -1826,8 +1808,8 @@ Bookmarks in choose_ort und m&ouml;glichkeit, per dnd neue bookmarks zu definier
 
  - Verwendung von Tk::App::Reloader. Scheint allgemein zu funktionieren.
 </pre>
-<li class="POD_ITEM"><a name="_116"></a>
-<pre class="POD_VERBATIM">
+<dt class="POD_ITEM"><a name="Fahrbahnbeschaffenhe">Fahrbahnbeschaffenheit</a>
+<dd><pre class="POD_VERBATIM">
   Aus der Radzeit 3/2001, Seite 8-9:
   Radwege: Verbundsteine kontra Asphalt
   [...]
@@ -1847,8 +1829,8 @@ Bookmarks in choose_ort und m&ouml;glichkeit, per dnd neue bookmarks zu definier
   Auflage August 1999 E&lt;quot&gt;Entwicklung und potentiale des
   Fahrrad-VerkehrsE&lt;quot&gt; Seiten 18 bis 20
 </pre>
-<li class="POD_ITEM"><a name="_117"></a>
-<pre class="POD_VERBATIM">
+<dt class="POD_ITEM"><a name="Verkehrsverwaltung">Verkehrsverwaltung</a>
+<dd><pre class="POD_VERBATIM">
   Verkehrs-/Umweltverwaltung wegen Emissionen:
   ReulenbE&lt;auml&gt;cker
   IX D2
@@ -1856,8 +1838,8 @@ Bookmarks in choose_ort und m&ouml;glichkeit, per dnd neue bookmarks zu definier
   Raum 8.020
   BrE&lt;uuml&gt;ckenstr. Mitte
 </pre>
-<li class="POD_ITEM"><a name="_118"></a>
-<pre class="POD_VERBATIM">
+<dt class="POD_ITEM"><a name="weiter">weiter</a>
+<dd><pre class="POD_VERBATIM">
  - Farbeditor: background setzen sollte vielleicht Canvas-bg ignorieren bzw. eigener Auswahlpunkt f&uuml;r Canvas-bg. Vielleicht *alle* Farben &auml;nderbar machen --- aber dann muss man die &Auml;nderungen auch abspeichern k&ouml;nnen (schwer, unwichtig)
 
  - Stra&szlig;ennamen: zeichnen on demand? besserer Algorithmus? TIP mit -angle ausprobieren? (schwer)
@@ -1876,16 +1858,97 @@ Bookmarks in choose_ort und m&ouml;glichkeit, per dnd neue bookmarks zu definier
 
  - bbbike.cgi: kommentar-spalte: bei m&uuml;nchen schiebestrecken ausweisen, evtl. auch radwege. in berlin vielleicht alles m&ouml;gliche ausgeben --- ausprobieren
 </pre>
-</ul>
-<h2 class="POD_HEAD1"><a name="KOMPATIBILIT_T">KOMPATIBILIT&Auml;T</a></h2>
+<dt class="POD_ITEM"><a name="Stra_ennetz_Suche">Stra&szlig;ennetz, Suche</a>
+<dd>
+Die build-Funktion k&ouml;nnte viel einfacher gestaltet werden, da if
+(const) { } von perl optimiert wird. Die Vorgehensweise w&auml;re
+also:
+<pre class="POD_VERBATIM">
+    eval q{
+        sub CONST () { $const }
+        ...
+        A*-Code
+    }
+</pre>
+<p class="POD_TEXT">
+Leider gibt es mandatory redefine warnings, die vielleicht mit einer
+STDERR-Umleitung unsichtbar gemacht werden k&ouml;nnen. Allerdings
+--- eine Analyse mit B::Terse zeigt, dass nach der Optimierung
+zus&auml;tzliche enter/leave opcodes im Tree geblieben sind. (Das
+w&auml;re eine Idee f&uuml;r optimize::...: &uuml;berfl&uuml;ssige
+enter/leave &uuml;berspringen, wenn in einem Block keine padsv (my)
+oder LVINTRO (local) vorkommen sowie der Block in einem void-Kontext
+steht.)
+</p>
+<dt class="POD_ITEM"><a name="BBBikeEdit">BBBikeEdit</a>
+<dd>
+Teile nach BBBikeGPS etc. auslagern =&gt; schon gemacht, noch mehr?
+<dt class="POD_ITEM"><a name="Vern_nftige_Koordina">Vern&uuml;nftige Koordinaten verwenden</a>
+<dd>
+Wahrscheinlich ist GKK (f&uuml;r Deutschland) die beste Wahl.
+<pre class="POD_TEXT">
+Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
 
+  * 1km entspricht wieviel LE&lt;auml&gt;ngengrad in Usedom, Prenzlau,
+    Berlin, Dessau, Dresden?
+
+  * Das gleiche mit Karte::Polar ausrechnen
+
+  * Zur Sicherheit auch BreitengradabstE&lt;auml&gt;nde berechnen.
+
+  * Range von GKK feststellen (in Mapsource einstellen, falls
+    mE&lt;ouml&gt;glich, ansonsten mit dem eTrex). Wo gelten die Zonen, was
+    fE&lt;uuml&gt;r EinschrE&lt;auml&gt;nkungen hE&lt;auml&gt;tte ich?
+
+  * Umrechnung GKK - Karte::Standard - Karte::Berlinmap1966 - Karte::GISmap.
+
+  * -orig-Dateien =E&lt;gt&gt; GKK, konvertierte Dateien =E&lt;gt&gt; einfach auf
+    0/0 subtrahiert (E&lt;auml&gt;hnlich wie in ME&lt;uuml&gt;nchen)?
+    Hmmm. Wahrscheinlich ist es sogar besser, wenn die -orig-Dateien
+    auf polare Koordinaten basieren --- wegen der verschiedenen Zonen.
+    Beim Konvertieren wird eine Zone als E&lt;quot&gt;HauptzoneE&lt;quot&gt;
+    angenommen und die gesamte Karte dagegen konvertiert (die
+    RE&lt;auml&gt;nder sind dann verzerrt). Da mitten durch Berlin eine
+    GKK-Zone verlE&lt;auml&gt;uft, sollte ich vielleicht eine Pseudo-Zone
+    4.5 verwenden (Aufruf von Karte::UTM::ConvToTm mit dem Berliner
+    LE&lt;auml&gt;ngengrad als lat0 z.B.). Wie sieht es mit der
+    Konvertierungsfunktion DegreesToGKK aus?
+
+  * Liste aller von den derzeitigen Koordinaten abhE&lt;auml&gt;ngigen
+    Dateien erstellen
+
+  * Wenn die GKK-Konvertierung in Perl zu langsam lE&lt;auml&gt;uft:
+    XS-Modul schreiben. Tests sind einfach (Perl-Ausgabe gegen
+    XS-Ausgabe checken)
+
+  * Welches Datum verwenden: Potsdam oder WGS84?
+
+  * Alle abgespeicherten Dateien sollten besser Degrees sein! Also
+    .bbr und evtl. esri und so. Auch wenn mE&lt;ouml&gt;glich: die
+    sichtbaren Koordinaten im cgi sollten auch Degrees sein.
+
+  * Evtl. alle data/*-Dateien nach .bbd umbenennen und am Anfang einen
+    Header einfE&lt;uuml&gt;gen (Datum, Koordinatenformat etc.)
+    Entsprechende orig-Dateien heiE&lt;szlig&gt;en .orig.bbd oder .bbd.orig.
+    In der Zwischenzeit mit beiden Systemen gleichzeitig arbeiten
+    (Konvertierung im Makefile)
+
+  * DegreesToNZGrid sieht interessant aus --- das brauche ich: x und y
+    und keine Zonen. Implementieren, angucken!
+
+  * Was ist mit dem Koordinatensystem ETRS 89
+</pre>
+</dl>
+<h2 class="POD_HEAD1"><a name="KOMPATIBILIT_T">KOMPATIBILIT&Auml;T</a></h2>
+<p class="POD_TEXT">
 BBBike wird zur Zeit unter FreeBSD 4.6 mit perl 5.00503/5.6.1/5.8.0
 und der neuesten Perl/Tk-Version (z.Zt. 800.024) entwickelt.
+</p>
 <p class="POD_TEXT">
 Testl&auml;ufe wurden und werden von Zeit zu Zeit auf Windows 95/98,
-Windows NT 4.0, Solaris/Sparc 7 und Linux gefahren. Dabei werden
-meistens auch die aktuellen Stable-Versionen von Perl und Tk
-verwendet.
+Windows NT 4.0, Solaris/Sparc 7 und Linux (Debian 3.0, SuSE) gefahren.
+Dabei werden meistens auch die aktuellen Stable-Versionen von Perl und
+Tk verwendet.
 </p>
 <p class="POD_TEXT">
 Es wird versucht, auch zu den &auml;lteren Versionen perl 5.00404 und Tk

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Karte.pm,v 1.31 2003/01/08 20:02:15 eserte Exp $
+# $Id: Karte.pm,v 1.36 2003/05/03 23:08:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2002 Slaven Rezic. All rights reserved.
@@ -30,10 +30,11 @@ sub preload {
     if ($types[0] eq ':all') {
 	@types = qw(Standard
 		    Berlinmap1996 Berlinmap1997 Berlinmap1998 Berlinmap1999
-		    Berlinmap2000 Berlinmap2001 Berlinmap2002
+		    Berlinmap2000 Berlinmap2001 Berlinmap2002 Potsdammap2002
+		    Demap2002
 		    Satmap SatmapGIF GISmap Polar T99 T2001 GDF
 		    FURadar FURadar2 FURadar3
-                    GPS Soldner_alt Cityinfo PilotPl PilotPl12
+                    GPS Soldner_alt Cityinfo PilotPl PilotPl12 Tk50
 		   );
     }
     my $karte;
@@ -101,7 +102,13 @@ sub to_ppm {
 	? 'djpeg'
 	: ($self->mimetype eq 'image/png'
 	   ? 'pngtopnm'
-	   : die "Unknown to_ppm for " . $self->mimetype
+	   : ($self->mimetype eq 'image/tiff'
+	      ? 'tifftopnm'
+	      : ($self->mimetype =~ m|^image/x-portable-.*map$|
+		 ? 'cat'
+		 : die "Unknown to_ppm for " . $self->mimetype
+		)
+	     )
 	  )
        )
     );
@@ -221,6 +228,11 @@ sub object_from_bbd_file {
     _object_from_file(-datafrombbd => $bbd_file);
 }
 
+sub object_from_any_file {
+    my $bbd_file = shift;
+    _object_from_file(-datafromany => $bbd_file);
+}
+
 sub _object_from_file {
     my(@args) = @_;
     my $res = `$^X $FindBin::RealBin/convert_berlinmap.pl @args -bbbike`;
@@ -242,4 +254,18 @@ sub _object_from_file {
     $k_obj;
 }
 
-1;
+return 1 if caller;
+
+require Getopt::Long;
+Karte::preload(":all");
+my($frommap) = "standard";
+my($tomap) = "standard";
+if (!Getopt::Long::GetOptions("from=s" => \$frommap,
+			      "to=s" => \$tomap,
+			     )) {
+    die "usage: $^X $0 [-from map] [-to map] -- x,y";
+}
+my($c) = @ARGV;
+print join(",", $Karte::map{$frommap}->map2map($Karte::map{$tomap},
+					       split/,/, $c)), "\n";
+

@@ -1,0 +1,24 @@
+/* CSS for print mode */
+body {
+  background-color:#ffffff;
+  font-family:sans-serif,helvetica,verdana,arial;
+}
+td,th,p,h2,li,input {
+  font-family:sans-serif,helvetica,verdana,arial;
+}
+table.desc,td {
+  vertical-align:top;
+}
+table.detailmap td {
+  vertical-align:middle;
+}
+tt,pre {
+  font-family:courier,fixed;
+}
+dt {
+  font-weight:bold;
+}
+.hfill { width:100%; }
+.nobr {
+  white-space: nowrap;
+}

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.28 2003/01/08 21:00:59 eserte Exp $
+# $Id: BrowserInfo.pm,v 1.31 2003/05/09 04:01:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2001 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.31 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, $q) = @_;
@@ -220,8 +220,7 @@ sub show_info {
     if ($self->{'wap_browser'}) {
 	$self->show_info_wml(@_);
     } else {
-	$self->show_info_html(@_);
-	print "<hr>\n";
+	$self->show_info_html(@_) . "<hr>\n";
     }
 }
 
@@ -229,9 +228,10 @@ sub show_info_html {
     my $self = shift;
     my $complete = shift;
     my $q = $self->{CGI};
+    my $out = "";
     if ($complete) {
 	if ($self->{'can_javascript'}) {
-	    print <<EOF;
+	    $out .= <<EOF;
 <script language=javascript><!--
 function get_navigator() {
     var s = "";
@@ -286,26 +286,26 @@ function get_dhtml_info() {
 </script>
 EOF
 	}
-	print "</head><body><pre>";
+	$out .= "</head><body><pre>";
     }
-    print "Browser: ", $q->user_agent, "\n";
-    print " User-Agent-Name:    " . $self->{'user_agent_name'} . "\n";
-    print " User-Agent-Version: " . $self->{'user_agent_version'} . "\n";
-    print " User-Agent-OS:      " . $self->{'user_agent_os'} . "\n";
-    print "\nCapabilities:\n";
-    print " Text Browser:       " . (!!$self->{'text_browser'}) . "\n";
-    print " WAP Browser:        " . (!!$self->{'wap_browser'}) . "\n";
-    print " Mobile device:      " . (!!$self->{'mobile_device'}) . "\n";
-    print " Javascript:         " . (!!$self->{'can_javascript'}) . "\n";
-    print " CSS:                " . (!!$self->{'can_css'}) . "\n";
-    print " DHTML:              " . (!!$self->{'can_dhtml'}) . "\n";
-    print " Tables:             " . (!!$self->{'can_table'}) . "\n";
-    print "\nBugs:\n";
-    print " Window.open:        " . (!!$self->{'window_open_buggy'}) . "\n";
-    print " DHTML:              " . (!!$self->{'dhtml_buggy'}) . "\n";
-    print " CSS:                " . (!!$self->{'css_buggy'}) . "\n";
+    $out .= "Browser: " . $q->user_agent . "\n";
+    $out .= " User-Agent-Name:    " . $self->{'user_agent_name'} . "\n";
+    $out .= " User-Agent-Version: " . $self->{'user_agent_version'} . "\n";
+    $out .= " User-Agent-OS:      " . $self->{'user_agent_os'} . "\n";
+    $out .= "\nCapabilities:\n";
+    $out .= " Text Browser:       " . (!!$self->{'text_browser'}) . "\n";
+    $out .= " WAP Browser:        " . (!!$self->{'wap_browser'}) . "\n";
+    $out .= " Mobile device:      " . (!!$self->{'mobile_device'}) . "\n";
+    $out .= " Javascript:         " . (!!$self->{'can_javascript'}) . "\n";
+    $out .= " CSS:                " . (!!$self->{'can_css'}) . "\n";
+    $out .= " DHTML:              " . (!!$self->{'can_dhtml'}) . "\n";
+    $out .= " Tables:             " . (!!$self->{'can_table'}) . "\n";
+    $out .= "\nBugs:\n";
+    $out .= " Window.open:        " . (!!$self->{'window_open_buggy'}) . "\n";
+    $out .= " DHTML:              " . (!!$self->{'dhtml_buggy'}) . "\n";
+    $out .= " CSS:                " . (!!$self->{'css_buggy'}) . "\n";
     if ($complete) {
-	print <<EOF;
+	$out .= <<EOF;
 </pre>
 <br>
 <a href="javascript:get_navigator()">Information via Javascript</a><br>
@@ -314,14 +314,16 @@ EOF
 <br>
 EOF
     }
+    $out;
 }
 
 sub show_info_wml {
     my $self = shift;
     my $complete = shift;
     my $q = $self->{CGI};
+    my $out = "";
     if ($complete) {
-	print <<EOF;
+	$out .= <<EOF;
   <p>
 Browser: @{[ $q->user_agent ]}<br/>
 User-Agent-Name: @{[ $self->{'user_agent_name'} ]}<br/>
@@ -343,24 +345,27 @@ CSS:                @{[ (!!$self->{'css_buggy'}) ]}<br/>
   </p>
 EOF
     }
+    $out;
 }
 
 sub show_server_info {
     my $bi = shift;
+    my $out = "";
     if ($bi->{'wap_browser'}) {
 	require HTML::Entities;
-	print "<p>Server Info (environment):<br/>\n";
+	$out .= "<p>Server Info (environment):<br/>\n";
 	foreach my $env (sort keys %ENV) {
-	    print "$env: " . HTML::Entities::encode_entities_numeric($ENV{$env}) . "<br/>\n";
+	    $out .= "$env: " . HTML::Entities::encode_entities_numeric($ENV{$env}) . "<br/>\n";
 	}
-	print "</p>\n";
+	$out .= "</p>\n";
     } else {
-	print "Server Info (environment):<ul>\n";
+	$out .= "Server Info (environment):<ul>\n";
 	foreach my $env (sort keys %ENV) {
-	    print "<li>$env: $ENV{$env}\n";
+	    $out .= "<li>$env: $ENV{$env}\n";
 	}
-	print "</ul>";
+	$out .= "</ul>";
     }
+    $out;
 }
 
 sub _get_browser_version {
@@ -376,7 +381,8 @@ sub _get_browser_version {
 }
 
 if (caller()) {
-    if (!($ENV{GATEWAY_INTERFACE} =~ /^CGI-Perl/ &&
+    if (!(defined $ENV{GATEWAY_INTERFACE} &&
+	  $ENV{GATEWAY_INTERFACE} =~ /^CGI-Perl/ &&
 	  (caller())[0] eq 'Apache::Registry')) {
 	return 1;
     }
@@ -385,37 +391,41 @@ if (caller()) {
 sub header {
     my $self = shift;
     my $q = $self->{CGI};
+    my $out = "";
     if ($self->{'wap_browser'}) {
-	print $q->header(-type => 'text/vnd.wap.wml');
-	print <<EOF;
+	$out .= $q->header(-type => 'text/vnd.wap.wml');
+	$out .= <<EOF;
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
 <wml>
  <card title="Browserinfo">
 EOF
     } else {
-	print $q->header(-type => 'text/html');
-	print "<html><head><title>Browserinfo</title>";
+	$out .= $q->header(-type => 'text/html');
+	$out .= "<html><head><title>Browserinfo</title>";
     }
+    $out;
 }
 
 sub footer {
     my $self = shift;
+    my $out = "";
     if ($self->{'wap_browser'}) {
-	print "<p>by BrowserInfo.pm $BrowserInfo::VERSION</p></card>";
-	print "</wml>\n";
+	$out .= "<p>by BrowserInfo.pm $BrowserInfo::VERSION</p></card>";
+	$out .= "</wml>\n";
     } else {
-	print "<hr><small>by BrowserInfo.pm $BrowserInfo::VERSION</small>\n";
-	print "</body>\n";
+	$out .= "<hr><small>by BrowserInfo.pm $BrowserInfo::VERSION</small>\n";
+	$out .="</body>\n";
     }
+    $out;
 }
 
 package main;
 my $bi = new BrowserInfo CGI->new;
 #$bi->emulate("wap");
-$bi->header;
-$bi->show_info('complete');
-$bi->show_server_info;
-$bi->footer;
+print $bi->header;
+print $bi->show_info('complete');
+print $bi->show_server_info;
+print $bi->footer;
 exit;
 

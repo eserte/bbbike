@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.24 2003/01/01 23:36:15 eserte Exp $
+# $Id: GD.pm,v 1.28 2003/05/19 06:45:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net/
 #
 
 package BBBikeDraw::GD;
@@ -20,7 +20,8 @@ use Strassen;
 # sparen:
 use Carp qw(confess);
 
-use vars qw($gd_version $VERSION @colors %color %outline_color %width);
+use vars qw($gd_version $VERSION @colors %color %outline_color %width
+	    $TTF_STREET $TTF_CITY);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
 	    $darkblue $lightblue $black);
@@ -38,14 +39,25 @@ sub AUTOLOAD {
     }
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
+
+# REPO BEGIN
+# REPO NAME pi /home/e/eserte/src/repository 
+# REPO MD5 bb2103b1f2f6d4c047c4f6f5b3fa77cd
+sub pi ()   { 4 * atan2(1, 1) } # 3.141592653
+# REPO END
 
 sub init {
     my $self = shift;
 
-    my($geometry) = $self->{Geometry};
+    $self->SUPER::init();
+
+    $TTF_STREET = '/usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf'
+	if !defined $TTF_STREET;
+    $TTF_CITY   = '/usr/X11R6/lib/X11/fonts/Type1/lcdxsr.pfa'
+	if !defined $TTF_CITY;
 
     local $^W = 0;
 
@@ -109,20 +121,16 @@ sub init {
 	   $gd_version = $GD::VERSION;
        };
 
-    my($w, $h) = (640, 480);
-    if (defined $geometry) {
-	($w, $h) = split(/x/, $geometry);
-    }
+    $self->{Width}  ||= 640;
+    $self->{Height} ||= 480;
     my $im;
     if ($self->{OldImage}) {
 	$im = $self->{OldImage};
     } else {
-	$im = GD::Image->new($w,$h);
+	$im = GD::Image->new($self->{Width},$self->{Height});
     }
 
     $self->{Image}  = $im;
-    $self->{Width}  = $w;
-    $self->{Height} = $h;
 
     if (!$self->{OldImage}) {
 	$self->allocate_colors;
@@ -142,6 +150,7 @@ sub init {
 
 	# create brushes
 	foreach my $cat (keys %width) {
+	    next if $cat eq 'Route';
 	    my $brush = GD::Image->new($width{$cat}, $width{$cat});
 	    $brush->colorAllocate($im->rgb($color{$cat}));
 	    $brush{$cat} = $brush;
@@ -169,12 +178,15 @@ sub allocate_colors {
     my $self = shift;
     my $im = $self->{Image};
 
+#    my $GREY = 153;
+    my $GREY = 225;
+
     $self->{'Bg'} = '' if !defined $self->{'Bg'};
     if ($self->{'Bg'} =~ /^white/) {
 	# Hintergrund weiß: Nebenstraßen werden grau,
 	# Hauptstraßen dunkelgelb gezeichnet
 	$grey_bg   = $im->colorAllocate(255,255,255);
-	$white     = $im->colorAllocate(153,153,153);
+	$white     = $im->colorAllocate($GREY,$GREY,$GREY);
 	$yellow    = $im->colorAllocate(180,180,0);
 	$im->transparent($grey_bg) if ($self->{'Bg'} =~ /transparent$/);
     } elsif ($self->{'Bg'} =~ /^\#([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})/i) {
@@ -182,7 +194,7 @@ sub allocate_colors {
 	$grey_bg   = $im->colorAllocate($r,$g,$b);
 	$im->transparent($grey_bg) if ($self->{'Bg'} =~ /transparent$/);
     } else {
-	$grey_bg   = $im->colorAllocate(153,153,153);
+	$grey_bg   = $im->colorAllocate($GREY,$GREY,$GREY);
 	$im->transparent($grey_bg) if ($self->{'Bg'} =~ /transparent$/);
     }
     if ($self->imagetype eq 'wbmp') {
@@ -453,7 +465,9 @@ sub draw_map {
 			    $self->outline_text($ort_font{'bhf'},
 						$x1+4, $y1,
 						patch_string($name),
-						$white, $darkblue);
+						$darkblue, $grey_bg,
+#						$white, $darkblue
+					       );
 			    $seen_bahnhof{$name}++;
 			}
 		    }
@@ -468,7 +482,9 @@ sub draw_map {
 			    $self->outline_text($ort_font{'bhf'},
 						$x+4, $y,
 						patch_string($name),
-						$white, $darkgreen);
+						$darkgreen, $grey_bg,
+#						$white, $darkgreen
+					       );
 			    $seen_bahnhof{$name}++;
 			}
 		    }
@@ -504,10 +520,7 @@ sub draw_map {
     if (ref $self->{StrLabel} &&
 	(defined &GD::Image::stringFT || defined &GD::Image::stringTTF)) {
 	eval {
-	    # XXX allgemeiner machen
-	    #my $ttf = '/usr/X11R6/share/enlightenment/E-docs/aircut3.ttf';
-	    #my $ttf = '/usr/X11R6/share/enlightenment/E-docs//benjamingothic.ttf';
-	    my $ttf = '/usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf';
+	    my $ttf = $TTF_STREET;
 
 	    my $fontsize = 10;
 	    $Tk::RotFont::NO_X11 = 1;
@@ -572,8 +585,8 @@ sub get_ort_font_mapping {
     my $self = shift;
 
     my %ort_font;
-    my $ttf = "/usr/X11R6/lib/X11/fonts/Type1/lcdxsr.pfa";
-    if (defined &GD::Image::stringFT && -r $ttf) {
+    my $ttf = $TTF_CITY;
+    if (defined $ttf && defined &GD::Image::stringFT && -r $ttf) {
 	my $sc = $self->{FontSizeScale} || 1;
 	%ort_font = (0 => [$ttf, 6*$sc],
 		     1 => [$ttf, 7*$sc],
@@ -583,6 +596,7 @@ sub get_ort_font_mapping {
 		     5 => [$ttf, 11*$sc],
 		     6 => [$ttf, 12*$sc],
 		     bhf => [$ttf, 7*$sc],
+		     strname => [$ttf, 9*$sc],
 		    );
     } else {
 	%ort_font = (0 => &GD::Font::Tiny,
@@ -592,6 +606,8 @@ sub get_ort_font_mapping {
 		     4 => &GD::Font::Large,
 		     5 => &GD::Font::Giant,
 		     6 => &GD::Font::Giant,
+		     bhf => &GD::Font::Small,
+		     strname => &GD::Font::Small,
 		    );
     }
     \%ort_font;
@@ -673,6 +689,7 @@ sub draw_route {
 
     my $brush; # should be *outside* the next block!!!
     my $line_style;
+    my $width;
     if ($self->{RouteWidth}) {
 	# fette Routen für die WAP-Ausgabe (B/W)
 	$brush = GD::Image->new($self->{RouteWidth}, $self->{RouteWidth});
@@ -688,13 +705,25 @@ sub draw_route {
 	# besser: rot-grün-gestrichelt
 	$im->setStyle($darkblue, $darkblue, $darkblue, $red, $red, $red);
 	$line_style = GD::gdStyled();
+	$width = $width{Route};
     }
 
     # Route
     for(my $i = 0; $i < $#c1; $i++) {
 	my($x1, $y1, $x2, $y2) = (@{$c1[$i]}, @{$c1[$i+1]});
-	$im->line(&$transpose($x1, $y1),
-		  &$transpose($x2, $y2), $line_style);
+	my($tx1,$ty1, $tx2,$ty2) = (&$transpose($x1, $y1),
+				    &$transpose($x2, $y2));
+	$im->line($tx1,$ty1, $tx2,$ty2, $line_style);
+	if (defined $width) {
+	    my $alpha = atan2($ty2-$ty1, $tx2-$tx1);
+	    my $beta  = $alpha - pi()/2;
+	    for my $delta (-int($width/2) .. int($width/2)) {
+		next if $delta == 0;
+		my($dx, $dy) = ($delta*cos($beta), $delta*sin($beta));
+		$im->line($tx1+$dx,$ty1+$dy,$tx2+$dx,$ty2+$dy,
+			  $line_style);
+	    }
+	}
     }
 
     # Flags
@@ -748,20 +777,40 @@ sub draw_route {
 
     # Ausgabe der Straßennnamen
     if ($strnet) {
+	my %ort_font = %{ $self->get_ort_font_mapping };
 	my($text_inner, $text_outer);
-	if ($self->{Bg} eq 'white') {
-	    ($text_inner, $text_outer) = ($darkblue, $white);
-	} else {
-	    ($text_inner, $text_outer) = ($white, $darkblue);
-	}
+#  	if ($self->{Bg} eq 'white') {
+#  	    ($text_inner, $text_outer) = ($darkblue, $white);
+#  	} else {
+#  	    ($text_inner, $text_outer) = ($white, $darkblue);
+#  	}
+	($text_inner, $text_outer) = ($black, $grey_bg);
 	my(@strnames) = $strnet->route_to_name
 	    ([ map { [split ','] } @{ $self->{Coords} } ]);
+	require VectorUtil;
+	my @rectangles;
 	foreach my $e (@strnames) {
 	    my $name = Strassen::strip_bezirk($e->[0]);
 	    my $f_i  = $e->[4][0];
 	    my($x,$y) = &$transpose(split ',', $self->{Coords}[$f_i]);
-	    $self->outline_text(&GD::Font::Small, $x, $y,
-				patch_string($name), $text_inner, $text_outer);
+	    my @args = ($ort_font{strname}, $x, $y,
+			patch_string($name),
+			$text_inner, $text_outer
+		       );
+	    my(@bounds) = $self->check_outline_text(@args);
+	    if (!@bounds) {
+		$self->outline_text(@args);
+	    } else {
+	    CHECK_FOR_INTERSECT: {
+		    for my $rect (@rectangles) {
+			if (VectorUtil::intersect_rectangles(@bounds[0,1,4,5], @$rect)) {
+			    last CHECK_FOR_INTERSECT;
+			}
+		    }
+		    $self->outline_text(@args);
+		    push @rectangles, [@bounds[0,1,4,5]];
+		}
+	    }
 	}
     }
 
@@ -786,11 +835,12 @@ sub draw_route {
 	} else {
 	    $gdfont = \&GD::Font::Tiny;
 	}
-	my $inner = $white;
-	my $outer = $darkblue;
-	if ($self->{Bg} =~ /^white/) {
-	    ($inner, $outer) = ($outer, $inner);
-	}
+#  	my $inner = $white;
+#  	my $outer = $darkblue;
+#  	if ($self->{Bg} =~ /^white/) {
+#  	    ($inner, $outer) = ($outer, $inner);
+#  	}
+	my($inner, $outer) = ($darkblue, $grey_bg);
 	$self->outline_text(&$gdfont, 1, 1, $s, $inner, $outer);
     }
 }
@@ -801,8 +851,8 @@ sub outline_text {
     if (ref $gdfont eq 'ARRAY') { # check for ft font spec
 	return outline_ft_text(@_);
     }
-    $x += $args{-padx} if defined $args{-padx};
     # XXX anchor handling missing
+    $x += $args{-padx} if defined $args{-padx};
     my $im = $self->{Image};
     for ([-1, 0], [1, 0], [0, 1], [0, -1]) {
 	$im->string($gdfont, $x+$_->[0], $y+$_->[1],
@@ -830,6 +880,20 @@ sub outline_ft_text {
 	$im->stringFT($outer, @$fontspec, 0, $x+$_->[0], $y+$_->[1], $s);
     }
     $im->stringFT($inner, @$fontspec, 0, $x, $y, $s);
+}
+
+sub check_outline_text {
+    if (ref $_[1] eq 'ARRAY') { # check for ft font spec
+	return &check_outline_ft_text;
+    }
+    ();
+}
+
+# XXX rough (without outline, no non-true-type support)
+# return bounds
+sub check_outline_ft_text {
+    my($self, $fontspec, $x, $y, $s, $inner, $outer, %args) = @_;
+    GD::Image->stringFT($inner, @$fontspec, 0, $x, $y, $s);
 }
 
 sub _adjust_anchor {
@@ -988,7 +1052,7 @@ EOF
 # FreeBSD-Netscape
 # bei Win-MSIE wird es ignoriert
 # und bei WIn-NS wird ein falscher Link erzeugt
-# title= wird noch nicht von NS und IE unterstützt
+# title= wird noch nicht von NS und IE unterstützt (aber vom Galeon)
 # evtl. AREA ganz weglassen
 # XXX check mit onclick. evtl. onclick so patchen, dass submit mit
 # richtigen Werten aufgerufen wird.
@@ -996,9 +1060,12 @@ EOF
 	      "<area href=\"\" ",
 		"shape=poly ",
 		"coords=\"$coordstr\" ",
+		#XXX "title=\"" . $s->name . "\" ",
 		"onmouseover=\"return s('" . $s->name . "')\" ",
 	        "onclick=\"return false\" ",
 		">\n";
+#XXXXXXXXXXXXX
+# Geht jetzt auch nicht mehr mit NS4?!
 	}
     }
 

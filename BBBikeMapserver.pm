@@ -2,15 +2,15 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.5 2003/01/02 20:53:38 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.7 2003/02/04 23:47:14 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
 # Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  http://bbbike.sourceforge.net/
 #
 
 # convert from bbbike to mapserver
@@ -22,17 +22,49 @@ use File::Basename;
 sub new {
     my($class, %args) = @_;
     my $self = bless {}, $class;
-    $self->{TmpDir} = $args{-tmpdir} || die "-tmpdir argument is missing";
+    $self->{TmpDir} = $args{-tmpdir};
+    if (!$self->{TmpDir}) {
+	require File::Spec;
+	$self->{TmpDir} = File::Spec->tmpdir();
+    }
+    if (!$self->{TmpDir}) {
+	die "Can't set TmpDir";
+    }
     $self;
 }
 
 sub new_from_cgi {
     my($class, $q, %args) = @_;
     my $self = $class->new(%args);
-    my(@c) = split /!/, $q->param("coords");
+    my(@c) = split /!/, $q->param("coords") if defined $q->param("coords");
     $self->{Coords} = \@c;
     $self->{CGI}    = $q;
     $self;
+}
+
+sub all_layers {
+    qw(gewaesser flaechen grenzen bahn qualitaet radwege orte
+       handicap ampeln obst faehren
+       fragezeichen blocked sehenswuerdigkeit route);
+}
+
+sub read_config {
+    my($self, $file) = @_;
+    {
+	package BBBikeMapserver::Config;
+	do($file);
+	die $@ if $@;
+    }
+
+    eval {
+	$self->{MAPSERVER_DIR} = $BBBikeMapserver::Config::mapserver_dir || die "mapserver_dir\n";
+	$self->{MAPSERVER_PROG_RELURL} = $BBBikeMapserver::Config::mapserver_prog_relurl || die "mapserver_prog_relurl\n";
+	$self->{MAPSERVER_PROG_URL} = $BBBikeMapserver::Config::mapserver_prog_url || die "mapserver_prog_url\n";
+	$self->{BBD2ESRI_PROG} = $BBBikeMapserver::Config::bbd2esri_prog || die "bbd2esri_prog\n";
+    };
+    if ($@) {
+	die "Missing variables: $@";
+    }
 }
 
 # -scope => city, region, wideregion, or all,...
@@ -49,7 +81,7 @@ sub start_mapserver {
 
     my $do_route = exists $args{-route} ? $args{-route} : 1;
 
-    my $orig_map_dir = "/home/e/eserte/src/bbbike/mapserver/brb";
+    my $orig_map_dir = $self->{MAPSERVER_DIR};
     my $path_for_scope = sub {
 	my $scope = shift;
 	my $prefix = shift || "";
@@ -104,23 +136,33 @@ sub start_mapserver {
 	    if ($externshape) {
 		# convert bbd file to esri file
 		$tmpfile2 = $self->{TmpDir} . "/bbbikems-${prefix}";
-		# XXX do not hardcode path!!!
-		system("/home/e/eserte/src/bbbike/miscsrc/bbd2esri",
-		       $tmpfile1, "-o", $tmpfile2);
+		my @cmd = ($self->{BBD2ESRI_PROG},
+			   $tmpfile1, "-o", $tmpfile2);
+		system @cmd;
+		if ($?) {
+		    die "Error while doing @cmd";
+		}
 	    }
 
 	    # copy brb.map to new map file
-	    # XXX do not hardcode paths!!!
-	    system("/home/e/eserte/src/bbbike/mapserver/brb/mkroutemap",
-		   (defined $tmpfile2
-		    ? (-routeshapefile => $tmpfile2)
-		    : (-routecoords => join(",",@{$self->{Coords}}))
-		   ),
-		   -start => $self->{Coords}[0],
-		   -goal => $self->{Coords}[-1],
-		   -scope => $scope,
-		   $orig_map_path,
-		   $map_path);
+	    my @cmd =
+		($self->{MAPSERVER_DIR} . "/mkroutemap",
+		 (defined $tmpfile2
+		  ? (-routeshapefile => $tmpfile2)
+		  : (-routecoords => join(",",@{$self->{Coords}}))
+		 ),
+		 (@{$self->{Coords}} > 1
+		  ? (-start => $self->{Coords}[0],
+		     -goal => $self->{Coords}[-1])
+		  : (-markerpoint => $self->{Coords}[-1])
+		 ),
+		 -scope => $scope,
+		 $orig_map_path,
+		 $map_path);
+	    system @cmd;
+	    if ($?) {
+		die "Error while doing @cmd";
+	    }
 	    # last $map_path is the start map
 	}
 
@@ -128,19 +170,19 @@ sub start_mapserver {
     }
 
     # send Location:
-    # XXX do not hardcode URL and paths!!!
-    my $cgi_prog = "/~eserte/cgi/mapserv.cgi";
+    my $cgi_prog = $self->{MAPSERVER_PROG_RELURL};
     my $cgi_prog_esc = CGI::escape($cgi_prog);
-    my $url = "http://www$cgi_prog";
-    my($width, $height) = (6000, 6000); # meters
+    my $url = $self->{MAPSERVER_PROG_URL};
+    my($width, $height) = ($args{-width}||6000, $args{-height}||6000); # meters
     my(@mapext) = $self->get_extents($width, $height);
     my $mapext_esc = CGI::escape(join(" ", @mapext));
     my $map_esc = CGI::escape($map_path);
-    # XXX make configurable
-    my @layers = qw(gewaesser flaechen grenzen bahn qualitaet radwege orte
-		    handicap ampeln obst faehren);
-    push @layers, "route" if $do_route;
-
+    my @layers;
+    if ($args{-layers}) {
+	@layers = @{ $args{-layers} };
+    } else {
+	@layers = grep { $_ ne 'route' || $do_route } all_layers();
+    }
     my $layers = join("&", map { "layer=$_" } @layers);
     my @param = ("zoomsize=2",
 		 "mapext=$mapext_esc",
@@ -159,6 +201,10 @@ sub start_mapserver {
 
 sub get_extents {
     my($self, $width, $height) = @_;
+    if (!$self->{Coords} || !$self->{Coords}[0]) {
+	# Default is Brandenburger Tor, do not hardcode XXX
+	$self->{Coords} = ["8593,12243"];
+    }
     my($x1,$y1) = split /,/, $self->{Coords}[0];
     if (@{$self->{Coords}} == 1) {
 	($x1-$width/2, $y1-$height/2, $x1+$width/2, $y1+$height/2);

@@ -2,7 +2,7 @@
 
 package Bundle::BBBike;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.2 $ =~ /(\d+)\.(\d+)/);
 
 1;
 
@@ -27,8 +27,11 @@ Tk 402.002	- das absolute Muss!
 Dieses BE<uuml>ndel listet alle erforderlichen und empfohlenen Module
 fE<uuml>r BBBike auf. Bis auf B<Tk> sind alle anderen Module optional.
 
+This bundle lists all required and optional perl modules for BBBike.
+Only B<Tk> is really required, all other modules are optional.
+
 =head1 AUTHOR
 
-Slaven Rezic <eserte@cs.tu-berlin.de>
+Slaven Rezic <slaven@rezic.de>
 
 =cut

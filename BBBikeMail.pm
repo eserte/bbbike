@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMail.pm,v 1.10 2003/01/08 18:47:36 eserte Exp $
+# $Id: BBBikeMail.pm,v 1.10 2003/01/08 18:47:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -15,7 +15,8 @@
 package BBBikeMail;
 use strict;
 use vars qw($top @popup_style
-	    $can_send_mail $can_send_fax);
+	    $can_send_mail $can_send_fax
+	    $cannot_send_mail_reason $cannot_send_fax_reason);
 
 $top = $main::top;
 *redisplay_top  = \&main::redisplay_top;
@@ -39,10 +40,13 @@ sub enter_send_anything {
 
     if (($type eq 'mail' && !$can_send_mail) ||
 	($type eq 'fax'  && !$can_send_fax)) {
+	my $reason = ($type eq 'mail' ? $cannot_send_mail_reason : $cannot_send_fax_reason);
 	$top->messageBox
 	    (-icon => "error",
 	     -message => "Kann keine " .
-	     ($type eq 'mail' ? 'Mails' : 'Faxe') . ' versenden',
+	     ($type eq 'mail' ? 'Mails' : 'Faxe') . ' versenden' .
+	     (defined $reason && $reason ne '' ?
+	      ". Grund: $reason" : ""),
 	    );
 	return;
     }
@@ -65,11 +69,13 @@ sub enter_send_anything {
 	};
 	if (!$@ && $mail_alias) {
 	    $e = $t->BrowseEntry(-textvariable => \$to);
+	    my @alias;
 	    while(my($k,$v) = each %$mail_alias) {
 		foreach (@$v) {
-		    $e->insert("end", @{ $mail_alias->expand($_) });
+		    push @alias, @{ $mail_alias->expand($_) }
 		}
 	    }
+	    $e->insert("end", sort { lc($a) cmp lc($b) } @alias);
 	}
     }
     if (!$e) {
@@ -177,11 +183,16 @@ sub capabilities {
 	Mail::Mailer->VERSION(1.53); # previous versions were unreliable
 	$can_send_mail = 1;
     };
+    if (!$can_send_mail) {
+	$cannot_send_mail_reason = $@;
+    }
     eval {
 	require Fax::Send;
 	$can_send_fax  = 1;
     };
-
+    if (!$can_send_fax) {
+	$cannot_send_fax_reason = $@;
+    }
 }
 
 1;

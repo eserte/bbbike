@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.16 2003/01/08 20:13:59 eserte Exp $
+# $Id: Core.pm,v 1.19 2003/05/09 22:51:23 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -24,8 +24,9 @@ use BBBikeUtil;
 use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
 
 use enum qw(NAME COORDS CAT);
+use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -73,7 +74,10 @@ sub new {
 
     my(@filenames);
     if (defined $filename) {
-	push @filenames, $filename, map { $_ . "/$filename" } @datadirs;
+	push @filenames, $filename;
+	if (!file_name_is_absolute($filename)) { 
+	    push @filenames, map { $_ . "/$filename" } @datadirs;
+	}
     }
     my $self = { Data => [] };
     bless $self, $class;
@@ -141,6 +145,7 @@ sub read_data {
     } else {
 	die "Can't open $file" if !open(FILE, $file);
     }
+    $self->{Modtime} = (stat($file))[STAT_MODTIME];
     binmode FILE;
     my @data;
     my $line;
@@ -274,6 +279,7 @@ sub write {
 	$filename = $self->file;
     }
     if (!defined $filename) {
+	warn "No filename specified";
 	return 0;
     }
     if (open(COPY, ">$filename")) {
@@ -397,19 +403,17 @@ sub arr2line2 {
     "$name\t$arg->[CAT] " . join(" ", @{ $arg->[COORDS] });
 }
 
-# XXX convert to use index() and substr() and Benchmark it!
 sub parse {
     my $line = shift;
     return [undef, [], undef] if !$line;
-    my $name;
-    ($name, $line) = split /\t/, $line, 2;
-    if (!defined $line) {
+    my $tab_inx = index($line, "\t");
+    if ($tab_inx < 0) {
 	warn "Probably tab character is missing\n";
-	[$name];
+	[$line];
     } else {
-	my @s = split /\s+/, $line;
+	my @s = split /\s+/, substr($line, $tab_inx+1);
 	my $category = shift @s;
-	[$name, \@s, $category];
+	[substr($line, 0, $tab_inx), \@s, $category];
     }
 }
 
@@ -639,6 +643,10 @@ sub split_ort {
     split /\|/, $_[0], 2;
 }
 
+# Arguments (hash-style):
+#   UseCache: use cache
+#   Exact: use "exact" algorithm
+#   GridHeight, GridWidth: grid extents (by default 1000)
 # warning: don't call this in a Strassen-loop (init, next ...)
 ### AutoLoad Sub
 sub make_grid {
@@ -714,7 +722,7 @@ sub _make_grid_exact {
 	if (@{ $r->[COORDS] } == 1) {
 	    $grid_build{join(",",$self->grid(split(/,/, $r->[COORDS][0])))}->{$strpos}++;
 	} else {
-	    for(my $i = 0; $i < $#{$r->[COORDS]}; $i++) {
+	    for my $i (0 .. $#{$r->[COORDS]}-1) {
 		my($x1, $y1) = split(',', $r->[COORDS][$i]);
 		my($x2, $y2) = split(',', $r->[COORDS][$i+1]);
 		my($from_grid_x, $from_grid_y) = $self->grid($x1,$y1);

@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl
+#!/usr/bin/env perl
 
 # Program: TinyHTTPD.pl 2.0u alpha - expires March 1, 1999
 # Purpose: A fully-functional HTTP/1.0 server that is -*-one Perl-*- script (except optional SSL support)
@@ -86,9 +86,6 @@ BEGIN {
     $THE_OS = $^O;
     $USE_SOCKET = eval 'require Socket; Socket->import(qw(SO_REUSEADDR SOCK_STREAM AF_INET PF_INET SOL_SOCKET SOL_SOCKET $CRLF)); 1';
 }
-
-$THE_OS = $^O;
-$USE_SOCKET = 1; # enable/disable socket constants from Socket.pm
 
 if ($USE_SOCKET) {
 
@@ -542,7 +539,7 @@ for (;;) {
        print STDOUT $response;
     }
 
-    close(STDIN); close(STDOUT);
+    close(STDIN); close(STDOUT); close(NS);
 }
 
 if ($ssl_config) {

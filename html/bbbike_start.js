@@ -1,4 +1,4 @@
-// $Id: bbbike_start.js,v 1.7 2002/12/29 15:43:23 eserte Exp $
+// $Id: bbbike_start.js,v 1.8 2003/01/12 23:20:55 eserte Exp $
 // (c) 2001-2002 Slaven Rezic. All rights reserved.
 // See comment in bbbike.cgi regarding x/ygridwidth
 
@@ -130,19 +130,20 @@ function any_highlight(type, Evt) {
   if (document.layers) {
     var above = document.layers[type + "above"];
     var below = document.layers[type + "below"];
-    below.captureEvents(Event.MOUSEMOVE);
-    below.onmousemove = eval(type + "_highlight");
-    var x = Math.floor((Evt.pageX-below.pageX)/xgridwidth)*xgridwidth;
-    var y = Math.floor((Evt.pageY-below.pageY)/ygridwidth)*ygridwidth+offset;
-    with(above.clip) {
-      left = x;
-      top = y;
-      right = x+xgridwidth;
-      bottom = y+xgridwidth;
-    }
-    above.visibility = 'show';
-    for (var x in all_above_layer) {
-      if (all_above_layer[x] != above) all_above_layer[x].visibility = 'hide';
+    if (above && below) {
+      below.captureEvents(Event.MOUSEMOVE);
+      below.onmousemove = eval(type + "_highlight");
+      var x = Math.floor((Evt.pageX-below.pageX)/xgridwidth)*xgridwidth;
+      var y = Math.floor((Evt.pageY-below.pageY)/ygridwidth)*ygridwidth+offset;
+      // with is evil?
+      above.clip.left = x;
+      above.clip.top = y;
+      above.clip.right = x+xgridwidth;
+      above.clip.bottom = y+xgridwidth;
+      above.visibility = 'show';
+      for (var x in all_above_layer) {
+	if (all_above_layer[x] != above) all_above_layer[x].visibility = 'hide';
+      }
     }
   } else if (document.all || document.body) {
     var above, below, Evt, x, y;

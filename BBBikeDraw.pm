@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.21 2003/01/06 12:25:46 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.25 2003/02/26 14:21:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.21 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.25 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, %args) = @_;
@@ -58,6 +58,7 @@ sub new {
     $self->{Module}    = delete $args{Module}; # use another BBBikeDraw module
     $self->{MinPlaceCat} = delete $args{MinPlaceCat}; # force minimum place (ort) category
     $self->{FontSizeScale} = delete $args{FontSizeScale} || 1;
+    $self->{Conf}      = delete $args{Conf} || 1;
 
     if (defined $self->{Return} &&
 	$self->{Return} eq 'string') {
@@ -69,6 +70,8 @@ sub new {
 
     my $require;
     if ($self->{Module}) {
+	# some king of untainting
+	(my $module = $self->{Module}) =~ s/[^A-Za-z_0-9:]+//g;
 	$require = $pkg = "BBBikeDraw::" . $self->{Module};
     } elsif (defined $self->{ImageType} && $self->{ImageType} =~ /^pdf$/i) {
 	$require = $pkg = "BBBikeDraw::PDF";
@@ -86,6 +89,10 @@ sub new {
     bless $self, $pkg;
 
     my $noinit = delete $args{NoInit};
+
+    if (keys %args) {
+	warn "Warning: the following arguments are supplied, but unrecognized: " . join(", ", keys %args) . "\n";
+    }
 
     if ($noinit) {
 	$self;
@@ -127,6 +134,8 @@ sub new_from_cgi {
 	if defined $q->param('strlabel');
     $args{ImageType} = $q->param('imagetype')
 	if defined $q->param('imagetype');
+    $args{Module} = $q->param('module')
+	if defined $q->param('module');
     $pkg->new(%args);
 }
 
@@ -134,6 +143,20 @@ sub init {
     my $self = shift;
     if (defined $self->{Geometry}) {
 	($self->{Width}, $self->{Height}) = split(/x/, $self->{Geometry});
+	# support for Geometry => "*x${height}"
+	if ($self->{Width} eq '*') {
+	    if (!defined $self->{Min_x}) {
+		die "* in Geometry/Width is only possible if set_bbox is called before init";
+	    }
+	    $self->{Width} = $self->{Height} * ($self->{Max_x}-$self->{Min_x}) / ($self->{Max_y}-$self->{Min_y});
+	}
+	# support for Geometry => "${width}x*"
+	if ($self->{Height} eq '*') {
+	    if (!defined $self->{Min_x}) {
+		die "* in Geometry/Height is only possible if set_bbox is called before init";
+	    }
+	    $self->{Height} = $self->{Width} * ($self->{Max_y}-$self->{Min_y}) / ($self->{Max_x}-$self->{Min_x});
+	}
     }
     $self;
 }
@@ -227,6 +250,9 @@ sub set_bbox_max {
     }
     $self->set_bbox($min_x, $min_y, $max_x, $max_y);
 }
+
+# Alias for old method name:
+sub set_dimension_max { shift->set_bbox_max(@_) }
 
 # If
 #    -asstring => 1
@@ -439,6 +465,7 @@ sub set_draw_elements {
     foreach (@{$self->{Draw}}) {
 	if ($_ eq 'all') {
 	    $self->{Draw} = ['title', 'ampel', 'berlin', 'wasser',
+			     'faehren',
 			     'flaechen', 'ubahn', 'sbahn', 'rbahn', 'str',
 			     'ort', 'wind',
 			     'strname', 'ubahnname', 'sbahnname'];

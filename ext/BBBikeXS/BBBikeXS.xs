@@ -36,12 +36,16 @@ extern "C" {
 
 #undef MYDEBUG
 
+/* INT_SQRT and !USE_HYPOT is restricted to dist of approx. 100 km */
+#define USE_HYPOT
+
 /* Check whether the longest line in the database files does not
  * overflow the buffer. Current longest:
  * wasserumland2 with 8821 bytes.
  * See rule "check-line-lengths" in data/Makefile
  */
 #define MAXBUF 12288
+#define MAXPOINTS 1024
 
 /* should be the same as in BBBikeTrans.pm */
 #define X_DELTA -200.0
@@ -51,6 +55,18 @@ extern "C" {
 
 #define TRANSPOSE_X(x) (X_DELTA+X_MOUNT*x/25.0)*canvas_scale+0.5
 #define TRANSPOSE_Y(y) (Y_DELTA+Y_MOUNT*y/25.0)*canvas_scale+0.5
+
+/* Define TRANSPOSE_USE_INTS if you do not need the accuracy
+ * (important for zooms!) or your machine is lacking a floating
+ * point processor
+ */
+#ifdef TRANSPOSE_USE_INTS
+# define TRANSPOSE_X_SCALAR(x) (newSViv(TRANSPOSE_X(x)))
+# define TRANSPOSE_Y_SCALAR(y) (newSViv(TRANSPOSE_Y(y)))
+#else
+# define TRANSPOSE_X_SCALAR(x) (newSVnv(TRANSPOSE_X(x)))
+# define TRANSPOSE_Y_SCALAR(y) (newSVnv(TRANSPOSE_Y(y)))
+#endif
 
 typedef HV* StrassenNetz;
 
@@ -110,7 +126,7 @@ strecke(kreuz_coord, i)
 AV* kreuz_coord;
 int i;
 {
-#ifdef INT_SQRT
+#if defined(INT_SQRT) || defined(MAYBE_INT_SQRT)
     long a1, a2;
 #else
     float a1, a2;
@@ -124,12 +140,15 @@ int i;
          SvIV(*(av_fetch((AV*)tmp2, 0, 0)));
     a2 = SvIV(*(av_fetch((AV*)tmp1, 1, 0))) -
          SvIV(*(av_fetch((AV*)tmp2, 1, 0)));
-#ifdef INT_SQRT
+#if defined(INT_SQRT) || defined(MAYBE_INT_SQRT)
     return eyal(a1*a1 + a2*a2);
 #else
+#  ifdef USE_HYPOT
     /* what's faster/better: hypot or sqrt(sqr ...) ? */
     return hypotf(a1,a2);
-    /*    return sqrtf(a1*a1 + a2*a2); */
+#  else
+    return sqrtf(a1*a1 + a2*a2);
+#  endif
 #endif
 }
 
@@ -185,10 +204,82 @@ transpose_ls_XS(x, y)
 
 	PPCODE:
 	EXTEND(sp, 2);
-	PUSHs(sv_2mortal(newSViv(TRANSPOSE_X(x))));
-	PUSHs(sv_2mortal(newSViv(TRANSPOSE_Y(y))));
+	PUSHs(sv_2mortal(TRANSPOSE_X_SCALAR(x)));
+	PUSHs(sv_2mortal(TRANSPOSE_Y_SCALAR(y)));
 
 
+
+MODULE = BBBikeXS		PACKAGE = Strassen::Util
+
+PROTOTYPES: DISABLE
+
+double strecke_XS(p1, p2)
+	SV *p1;
+	SV *p2;
+	PREINIT:
+#ifdef INT_SQRT
+#  define MySvGET(x) SvIV((x))
+	long a1, a2;
+#else
+#  define MySvGET(x) SvNV((x))
+	double a1,a2;
+#endif
+	CODE:
+	a1 = MySvGET(*(av_fetch((AV*)SvRV(p1), 0, 0))) -
+	     MySvGET(*(av_fetch((AV*)SvRV(p2), 0, 0)));
+	a2 = MySvGET(*(av_fetch((AV*)SvRV(p1), 1, 0))) -
+	     MySvGET(*(av_fetch((AV*)SvRV(p2), 1, 0)));
+#ifdef INT_SQRT
+	RETVAL = eyal(a1*a1 + a2*a2);
+#else
+#  ifdef USE_HYPOT
+	RETVAL = hypot(a1, a2);
+#  else
+	RETVAL = sqrt(a1*a1 + a2*a2);
+#  endif
+#endif
+	OUTPUT:
+	RETVAL
+
+
+double strecke_s_XS(p1, p2)
+	char *p1;
+	char *p2;
+	PREINIT:
+	long x1 = 0;
+	long y1 = 0;
+	long x2 = 0;
+	long y2 = 0;
+	char *new_p;
+	CODE:
+	new_p = strchr(p1, ',');
+	if (new_p) {
+	  x1 = atoi(p1);
+	  y1 = atoi(new_p + 1);
+	} else {
+	  warn("%s is not a point", p1);
+	  goto error;
+	}
+	new_p = strchr(p2, ',');
+	if (new_p) {
+	  x2 = atoi(p2);
+	  y2 = atoi(new_p + 1);
+	} else {
+	  warn("%s is not a point", p2);
+	  goto error;
+	}
+	error:
+#ifdef INT_SQRT
+	RETVAL = eyal((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2));
+#else
+#  ifdef USE_HYPOT
+	RETVAL = hypot(x1-x2, y1-y2);
+#  else
+	RETVAL = sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2));
+#  endif
+#endif
+	OUTPUT:
+	RETVAL
 
 MODULE = BBBikeXS		PACKAGE = Strassen
 
@@ -236,7 +327,7 @@ make_net_XS(self, ...)
 	StrassenNetz self;
 
 	PREINIT:
-	HV *net, *net2name, *wegfuehrung;
+	HV *net, *net2name, *wegfuehrung, *penalty;
 #ifdef WITH_KOORDXY
 	HV *koordxy;
 #endif
@@ -259,12 +350,10 @@ make_net_XS(self, ...)
 	  }
 	}
 	SP -= items;
-#ifdef INT_SQRT
-	set_eyal();
-#endif
 	net         = newHV();
 	net2name    = newHV();
 	wegfuehrung = newHV();
+	penalty     = newHV();
 #ifdef WITH_KOORDXY
 	koordxy  = newHV();
 #endif
@@ -274,6 +363,8 @@ make_net_XS(self, ...)
 		       newRV_noinc((SV*) net2name), 0);
 	hv_store(self, "Wegfuehrung", strlen("Wegfuehrung"),
 		       newRV_noinc((SV*) wegfuehrung), 0);
+	hv_store(self, "Penalty", strlen("Penalty"),
+		       newRV_noinc((SV*) penalty), 0);
 #ifdef WITH_KOORDXY
 	hv_store(self, "KoordXY",  strlen("KoordXY"),
 		       newRV_noinc((SV*) koordxy), 0);
@@ -353,7 +444,25 @@ make_net_XS(self, ...)
 	      hashtmp = (HV*)SvRV(*tmp);
 	    tmp = hv_fetch((HV*)SvRV(strassen),
 			   "Pos", strlen("Pos"), 0);
-	    hv_store(hashtmp, k1_s, k1_slen, newSVsv(*tmp), 0);
+#if 0 /* NOT_YET? */
+	    if (hv_exists(hashtmp, k1_s, k1_slen)) {
+	      AV *arrtmp;
+	      SV **tmp2;
+	      tmp2 = hv_fetch(hashtmp, k1_s, k1_slen, 0);
+	      if (SvTYPE(*tmp2) != SVt_PVAV) {
+		arrtmp = newAV();
+		av_push(arrtmp, *tmp2);
+		hv_store(hashtmp, k1_s, k1_slen, (SV*)arrtmp, 0);
+	      } else {
+		arrtmp = (AV*)*tmp2;
+	      }
+	      av_push(arrtmp, newSVsv(*tmp));
+	    } else {
+#endif /* NOT_YET */
+	      hv_store(hashtmp, k1_s, k1_slen, newSVsv(*tmp), 0);
+#if 0 /* NOT_YET? */
+	    }
+#endif /* NOT_YET */
 	  }
 #ifdef WITH_KOORDXY
 	  /* letztes $i */
@@ -396,7 +505,7 @@ fast_plot_str(canvas, abk, fileref, ...)
 	char abkcat[24];
 	struct {
 	  int x, y;
-	} point[256];
+	} point[MAXPOINTS];
 	AV *tags, *outline_tags;
 	int count;
 	SV* file_or_object;
@@ -675,8 +784,8 @@ fast_plot_str(canvas, abk, fileref, ...)
 		    PUSHMARK(sp);
 		    XPUSHs(canvas);
 		    for(i = 0; i < point_i; i++) {
-		      XPUSHs(sv_2mortal(newSViv(TRANSPOSE_X(point[i].x))));
-		      XPUSHs(sv_2mortal(newSViv(TRANSPOSE_Y(point[i].y))));
+		      XPUSHs(sv_2mortal(TRANSPOSE_X_SCALAR(point[i].x)));
+		      XPUSHs(sv_2mortal(TRANSPOSE_Y_SCALAR(point[i].y)));
 		    }
 		    XPUSHs(tags_sv);
 		    XPUSHs(sv_2mortal(newRV_inc((SV*)outline_tags)));
@@ -703,8 +812,8 @@ fast_plot_str(canvas, abk, fileref, ...)
 		  PUSHMARK(sp);
 		  XPUSHs(canvas);
 		  for(i = 0; i < point_i; i++) {
-		    XPUSHs(sv_2mortal(newSViv(TRANSPOSE_X(point[i].x))));
-		    XPUSHs(sv_2mortal(newSViv(TRANSPOSE_Y(point[i].y))));
+		    XPUSHs(sv_2mortal(TRANSPOSE_X_SCALAR(point[i].x)));
+		    XPUSHs(sv_2mortal(TRANSPOSE_Y_SCALAR(point[i].y)));
 		  }
 		  XPUSHs(tags_sv);
 		  XPUSHs(sv_2mortal(newRV_inc((SV*)tags)));
@@ -843,8 +952,8 @@ fast_plot_point(canvas, abk, fileref, progress)
 
 	        PUSHMARK(sp);
 	        XPUSHs(canvas);
-	        XPUSHs(sv_2mortal(newSViv(TRANSPOSE_X(point.x))));
-	        XPUSHs(sv_2mortal(newSViv(TRANSPOSE_Y(point.y))));
+	        XPUSHs(sv_2mortal(TRANSPOSE_X_SCALAR(point.x)));
+	        XPUSHs(sv_2mortal(TRANSPOSE_Y_SCALAR(point.y)));
 	        XPUSHs(tags_sv);
 	        XPUSHs(sv_2mortal(newRV_inc((SV*)tags)));
 	        XPUSHs(image_sv);
@@ -888,6 +997,9 @@ fast_plot_point(canvas, abk, fileref, progress)
 	av_undef(tags);
 
 BOOT:
+#if defined(INT_SQRT) || defined(MAYBE_INT_SQRT)
+	set_eyal();
+#endif
 #ifdef MYDEBUG
 	{
 	  /* XXX

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: shapefile.t,v 1.8 2003/01/08 20:12:16 eserte Exp $
+# $Id: shapefile.t,v 1.9 2003/05/17 00:39:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ if (-r "/cdrom2/arcexplorer/aepdata/stpl_ges.dbf") {
 $testdir = "$ENV{HOME}/src/bbbike/projects/radlstadtplan_muenchen/data_Muenchen_DE";
 if (-d $testdir) {
     my $shapefile = new ESRI::Shapefile;
-    $shapefile->set_file("$testdir/netzgraph");
+    $shapefile->set_file("$testdir/radroute_muc");
     $shapefile->dump_bbd("/tmp/muenchen.bbd");
     ok(1);
 } else {

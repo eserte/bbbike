@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wettermeldung2,v 1.59 2002/05/14 09:49:35 eserte Exp $
+# $Id: wettermeldung2,v 1.61 2003/03/28 20:41:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1997, 1998, 1999, 2000, 2002 Slaven Rezic. All rights reserved.
@@ -78,7 +78,7 @@ $FIELD_WIND_AVG      = 7;
 $FIELD_PRECIPITATION = 8;
 $FIELD_WEATHER       = 9;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.59 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.61 $ =~ /(\d+)\.(\d+)/);
 
 $mailto = 'eserte@cs.tu-berlin.de';
 $user_agent = "wettermeldung2/$VERSION";
@@ -388,7 +388,24 @@ sub parse_dahlem1 {
 	    if (!defined $windrichtung) {
 		$windrichtung = $1;
 		if ($windrichtung !~ /^(n|e|s|w|ne|nw|se|sw)$/i) {
-		    &add_problem("Unbekannte Windrichtung");
+
+		    %richtungen = ('west', 'W',
+				   'sued', 'S',
+				   'süd', 'S',
+				   'ost' , 'E',
+				   'nord', 'N',
+				   'nordwest', 'NW',
+				   'nordost' , 'NE',
+				   'suedwest', 'SW',
+				   'südwest', 'SW',
+				   'suedost' , 'SE',
+				   'südost', 'SE',
+				   'windstill', '',
+				   'stille'  , '');
+		    $windrichtung = $richtungen{"\L$windrichtung"};
+		    if (!defined $windrichtung) {
+			&add_problem("Windrichtung nicht erkannt!");
+		    }
 		}
 	    } else {
 		&add_problem("Windrichtung doppelt");
@@ -582,12 +599,16 @@ sub parse_dahlem2 {
 	    if (!defined $windrichtung) {
 		%richtungen = ('west', 'W',
 			       'sued', 'S',
+			       'süd', 'S',
 			       'ost' , 'E',
 			       'nord', 'N',
 			       'nordwest', 'NW',
 			       'nordost' , 'NE',
 			       'suedwest', 'SW',
+			       'südwest',  'SW',
 			       'suedost' , 'SE',
+			       'südost',   'SE',
+			       'windstill', '',
 			       'stille'  , '');
 		$windrichtung = $richtungen{"\L$1"};
 		if (!defined $windrichtung) {
@@ -601,6 +622,10 @@ sub parse_dahlem2 {
 	    } else {
 		&add_problem("Windstaerke doppelt");
 	    }
+	}
+	elsif (/wind\s*:\s*windstill/i) {
+	    $windrichtung = '';
+	    $windstaerke = 0;
 	}
 
 	# Wetterzustand

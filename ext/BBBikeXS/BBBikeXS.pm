@@ -14,7 +14,7 @@ use vars qw($VERSION @ISA);
 require DynaLoader;
 
 @ISA     = qw(DynaLoader);
-$VERSION = '0.08';
+$VERSION = '0.09';
 
 eval {
     local $SIG{__DIE__};
@@ -32,12 +32,12 @@ package Strassen;
     *to_koord1 = \&to_koord1_XS;
 }
 
-package StrassenNetz;
 {
     local($^W) = 0;
+    *StrassenNetz::make_net_PP = \&StrassenNetz::make_net;
     if ($StrassenNetz::data_format == $StrassenNetz::FMT_HASH) {
-	*make_net = \&make_net_XS;
-	*make_net_classic = \&make_net_XS;
+	*StrassenNetz::make_net    = \&StrassenNetz::make_net_XS;
+	*StrassenNetz::make_net_classic = \&StrassenNetz::make_net_XS;
     }
 }
 
@@ -45,6 +45,16 @@ package main;
 {
     local($^W) = 0;
     *transpose_ls = \&transpose_ls_XS;
+}
+
+{
+    local $^W = 0;
+    *Strassen::Util::strecke_PP = \&Strassen::Util::strecke;
+    # Warning: no checks with the XS version!
+    *Strassen::Util::strecke    = \&Strassen::Util::strecke_XS;
+
+    *Strassen::Util::strecke_s_PP = \&Strassen::Util::strecke_s;
+    *Strassen::Util::strecke_s    = \&Strassen::Util::strecke_s_XS;
 }
 
 1;
