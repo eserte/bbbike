@@ -108,6 +108,19 @@ sub ddd2dms {
     (($north_east ? $deg : -$deg), $min, $sec);
 }
 
+# input: deg (decimal)
+# output: deg, min (with fraction)
+# deg is signed
+sub ddd2dmm {
+    my($ddd) = @_;
+
+    my $north_east = $ddd >= 0;
+    $ddd = -$ddd if !$north_east;
+    my $deg = int($ddd);
+    my $min = ($ddd-$deg)*60;
+    (($north_east ? $deg : -$deg), $min);
+}
+
 sub dms_human_readable {
     my($type, @dms) = @_;
     my $s = "";
