@@ -243,6 +243,7 @@ Geisenheimer Str.	1 4391,7258 4462,7137 4534,7015
 Tannenweg	1 -2993,17856 -3003,17990
 Pintschstr.	1 13342,13185 13438,12965
 Dievenowstr.	1 3225,7390 3189,7249 3206,7109
+Neue Schönholzer Str.	1 10089,18180 10140,18080 10179,17772
 #
 # Potsdam
 #
@@ -261,8 +262,8 @@ Nuthestr.	3 -11460,-1098 -11549,-1169 -11463,-1232
 Rudolf-Breitscheid-Str.	2 -11061,-1744 -11140,-1702
 #: XXX Umgehen auf Gehweg möglich?
 Rudolf-Breitscheid-Str.	1s -11061,-1744 -10997,-1787
-# kann man diese Einbahnstraße umgehen?
-Geschwister-Scholl-Str.	1 -14469,-1792 -14366,-1728 -14193,-1621
+Geschwister-Scholl-Str.	1 -14366,-1728 -14193,-1621 -14115,-1678
+Zimmerstr.	1 -13646,-1168 -13884,-1243
 # 
 # elsewhere in Brandenburg
 Altlandsberger Chaussee	1 40487,16703 40712,16743
@@ -588,20 +589,20 @@ B 167; (Herzberg-Neuruppin); OL Alt Ruppin, Rhinbrücke    Brückenneubau    Volls
 #XXX del L 22; (Zehdenick-Gransee); OD Gransee, Krz. Berliner Damm/Strelitzer    Str.    Bau Kreisverkehrsplatz    Vollsperrung    22.03.2004-30.08.2004	BNP:60 -7071,66471
 #XXX del L 90; (A10 AS Glindow-B1); Klaistower Str.; Straßenbau und Kanalarbeiten; Vollsperrung; Umleitung; 01.04.2004-22.04.2004	2:inwork E4553,5997 E4572,5967 E4593,5925 E4598,5899 E4596,5869
 #XXX del: K 6422; (Petershagener Str.); OL Fredersdorf, zw. E.-Thälmann-Str. u. Dorfstr.; Bau Kreisverkehr; Vollsperrung; 13.04.2004-15.07.2004	2:inwork 34139,13113 34896,13562 35234,13541
-#XXX nodel L 912; (Päwesin-Gortz); zw. OA Päwesin u. Bagow, Brücke über Seeverbindung; Brückenneubau; Vollsperrung; 10.05.2004-06.11.2004	2:inwork E3967,5113 E3939,5098
 #XXX del L 37; (Eisenhüttenstadt-Politz); Abzweig Pohlitz; Restarbeiten; Vollsperrung; 23.04.2004-21.05.2004	2:inwork 92436,-22729 92714,-22814
 #XXX del: L 142; OD Wusterhausen, Brücke über Klempnitz; Brückensanierung; Vollsperrung; 04.05.2004-30.08.2004	2:inwork -55166,53457 -54776,53333
 #XXX del L 55; (Calau-Boblitz); zwischen Bischdorf und Groß Lübbenau; Deckenerneuerung; Vollsperrung; 29.03.2004-14.05.2004	2:inwork 50968,-63078 50909,-65254
 #XXX del L 239; (Kerkow (Angermünde)-Joachimsthal); zwischen Joachimsthal und    Glambeck    Instandsetzung Durchlässe    Vollsperrung    10.05.2004-11.06.2004	2:inwork 34297,66446 34612,66468 35512,66695
 L 592; Brücken über Pulsnitz,Binnengraben und zwei Durchlässe; Ersatzneubau; Vollsperrung; 10.05.2004-19.11.2004	2:inwork 25830,-109886 26164,-109378
 #XXX del L 75; (Karl-Marx-Straße); von Dorfstraße bis Friedhofsweg; Straßenbauarbeiten; Vollsperrung; 24.05.2004-20.12.2004	2:inwork 13225,-681 13309,-1268
-L 912; (Päwesin-Gortz); zw. OA Päwesin u. Bagow, Brücke über Seeverbindung; Brückenneubau; Vollsperrung; 10.05.2004-06.11.2004	2:inwork -36427,10861 -37026,11176
+L 912; (Päwesin-Gortz); zw. OA Päwesin u. Bagow, Brücke über Seeverbindung; Brückenneubau; Vollsperrung; 10.05.2004-24.10.2004	2:inwork -36427,10861 -37026,11176
 #XXX del L 71; (B 96-Drahnsdorf); bei Krossen Brücke über Vorflutkanal; Brückenneubau; Vollsperrung; 25.03.2004-31.07.2004	2:inwork 24195,-54396 24639,-53978
 #XXX del B 5; zw. OU Müncheberg und Friedrichshof; Deckenerneurung; Vollsperrung; 06.07.2004-09.07.2004	2:inwork 61195,11119 65071,7242
 #XXX del L 34; (Reichenberg-B168 (Bollersdorfer Kreisel)); zw. Reichenberg u. Abzw. Buckow; Instandsetzung Durchlaß; Vollsperrung; 05.07.2004-06.08.2004	2:inwork 58405,23616 58340,23341 58151,22324 57358,21972 56330,21643 55558,21417 55194,21167
 L 237; (Britzer Str.); OD Eberswalde, Brücke über Oder-Havel-Kanal; Brückenneubau; Vollsperrung; 02.08.2004-28.10.2004	2:inwork 36312,50126 36289,50743
 #XXX del K 6302; zwischen Pausin und Alt Brieselang; Kanal- und Straßenbau; Vollsperrung; 02.08.2004-01.10.2004	2:inwork -14680,25643 -14763,25345 -15254,24958 -15322,24572 -15621,24357 -15705,24101 -15767,23889 -15966,23802 -16135,23503 -16319,22950 -16595,22693 -16873,22649
 #XXX del? L 19; (Zechlinerhütte-Wesenberg (MVP)); zw. Abzw. Klein Zerlang u. LG; (nö. Prebelowbrücke); Brückenneubau; Vollsperrung; 11.10.2004-30.04.2005	2:inwork -26403,85177 -26316,84900
+K 7234; (Glienick-Dabendorf); zwischen den Ortschaften Dabendorf-Glienick Straßenbau, Vollsperrung, 25.10.2004-10.12.2004	2:inwork 10156,-17681 11304,-17936 11623,-17809 11793,-17851 12091,-17766
 #
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

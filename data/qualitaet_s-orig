@@ -89,7 +89,7 @@ Pfarrstr.: mäßiges Kopfsteinpflaster	Q2 15267,10865 15339,11123 15438,11305
 Pfarrstr.: sehr guter Asphalt	Q0 15438,11305 15452,11330
 Schulze-Boysen-Str: sehr guter Asphalt	Q0 15452,11330 15480,11392
 Buchberger Str.: teilweise mäßige Betonplatten	Q1 16225,11523 16373,11933
-Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, Richtung Westen 17km/h möglich (weil bergab)	Q3 7497,8168 7268,8225 7005,8150
+Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, Richtung Westen 17km/h möglich (weil bergab)	Q3 7497,8168 7446,8200 7268,8225 7005,8150
 Ebersstr.: gutes Kopfsteinpflaster, >22 km/h	Q1 6935,8208 6918,8178 6658,8063
 Reichenberger Str.: Kopfsteinpflaster	Q2 11454,10400 11610,10305 11833,10206 12054,10108 12237,10023 12403,9948 12562,9875 12718,9802 12837,9748 12939,9703
 Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11833,10206 11949,10414
@@ -604,7 +604,7 @@ Maxstr.: mäßiges Kopfsteinpflaster	Q2 7786,15785 7744,15831
 Maxstr.: teilweise gutes Kopfsteinpflaster, teilweise Asphalt	Q1 7744,15831 7631,15937
 Maxstr.: mäßiges Kopfsteinpflaster	Q2 7631,15937 7543,16016 7491,16072
 #: XXX korrekte Bezeichnung?
-Nazarethkirchstr.: einige Straßenwellen	Q0 7543,16016 7198,15656
+Nazarethkirchstr.: einige Straßenwellen	Q0 7543,16016 7441,15909 7198,15656
 Genter Str.: mäßiges Kopfsteinpflaster	Q2 7270,15307 7162,15436 6681,15928
 Am Walde: Richtung Westen schlechtes Kopfsteinpflaster	Q3; 17775,7874 17678,7850
 Oskarstr.: Richtung Süden schlechtes Kopfsteinpflaster	Q3; 17762,7931 17775,7874
@@ -825,7 +825,6 @@ Spreetalallee: uneben, leichter Schotter	Q2 677,12667 753,12972 715,13126
 Spreetalallee: abschüssig, schlechtes Kopfsteinpflaster	Q3 715,13126 693,13215
 Um den Flughafen: mäßiger bis akzeptabler Belag (Schotter, fester Sand, mäßiger Asphalt)	Q1 1053,16254 1018,16321 878,16365 762,16318 306,16250 259,16628 318,16740 1450,17366 1464,17373
 Klemkestr.: Kopfsteinpflaster	Q2 7217,18681 7320,18688
-Neue Schönholzer Str.: Kopfsteinpflaster	Q2 10089,18180 10140,18080
 Arnimplatz: gutes Kopfsteinpflaster	Q1 10753,16144 10619,16319
 Bergstr. (Mitte): Kopfsteinpflaster	Q2 9792,13681 9663,14036
 Lepsiusstr.: Kopfsteinpflaster	Q2 4981,6642 4948,6582 4922,6537
@@ -1125,7 +1124,17 @@ Thurneysserstr.: Kopfsteinpflaster	Q2 8582,16052 8402,16198
 Dievenowstr.: Asphalt	Q0 3206,7109 3189,7249 3225,7390
 Borkumer Str.: Asphalt	Q0 3056,7095 3206,7109 3302,7092 3585,7028
 #: by: ^^^
-#: by: Stefan Micke:
-Görschstr.: mäßiger Asphalt	Q1 10112,17287 10085,17370 10056,17781 9870,17971
+#: by: Stefan Micke: vvv
+Görschstr.: mäßiger Asphalt	Q1 10112,17287 10085,17370 10056,17781
+Görschstr.: Kopfsteinpflaster	Q2 10056,17781 9870,17971
+Neue Schönholzer Str.: mäßiges Asphalt	Q1 10089,18180 10140,18080
+Neue Schönholzer Str.: Kopfsteinpflaster	Q2 10179,17772 10140,18080
+#: by: ^^^
 #: by: arndt westphal:
 Guntherstr.: Kopfsteinpflaster	Q2 17010,12313 16983,12124 16970,11976
+#: by: D.Mahlow:
+Cheruskerstr.: Asphalt	Q0 7450,8206 7412,8253 7409,8621 7493,8756
+#: by: Mara Kuhl:
+Malplaquetstr.: mäßiges Kopfsteinpflaster	Q2 7441,15909 7051,16264
+#: by: Frank I:
+Stahnsdorfer Damm: breiter asphaltierter Forstweg	Q2 -4995,1075 -4974,900 -4717,694 -4257,328 -3985,115 -3541,-144

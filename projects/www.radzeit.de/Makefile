@@ -141,7 +141,7 @@ check:
 	${RSYNC} --dry-run ${RSYNC_ARGS} ${RSYNC_SRCDEST}
 
 clean-cache-files-on-remote:
-	ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
+	-ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
 	    rm /tmp/b_de_\*
 
 rsync:	check-rsync-ok clean-cache-files-on-remote do-rsync
