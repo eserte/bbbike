@@ -1,89 +1,7 @@
 @temp_blocking = ();
-$#temp_blocking = 47;
+$#temp_blocking = 119;
 push @temp_blocking,
 (
-       {
-         'until' => 1112562000,
-         'text' => 'Müllerstraße, Zwischen Kreuzung Seestraße und Kreuzung Leopoldplatz in beiden Richtungen Veranstaltung, Straße gesperrt, Dauer: 01.04.2005 06:00 Uhr bis 03.04.2005 23:00 Uhr (Müllerstraßenfest) ',
-         'from' => 1112241600,
-         'data' => 'userdel	2 7043,15793 7198,15656
-userdel	2 7043,15793 6914,15908
-userdel	2 7198,15656 7288,15579
-userdel	2 6790,16018 6914,15908
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'until' => 1117231200,
          'text' => 'K 6413; (Wriezener Straße); OL Buckow, zw. Weinbergsweg u. Ringstr. Kanal- u. Straßenbau Vollsperrung 17.01.2005-27.05.2005 ',
@@ -356,16 +274,6 @@ userdel	q4 22217,1108 22162,1067
          'text' => 'die Fähre Ketzin ist vom 30.03.05 07.00 Uhr bis 06.04.2005 20.00 Uhr aufgrund Bauarbeiten gesperrt',
          'from' => 1112072400,
          'data' => 'userdel	2 -26784,5756 -26840,5684
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1112562000,
-         'text' => 'Wilhelmstraße, Straße gesperrt bis 03.04.2005 23:00 Uhr (Frühlingsfest zwischen Pichelsdorfer Straße und Adamstraße). ',
-         'from' => 1112339478,
-         'data' => 'userdel	2 -3880,13032 -3796,13312
-userdel	2 -3880,13032 -4025,12801
-userdel	2 -4025,12801 -4137,12651
 ',
          'type' => 'gesperrt'
        }

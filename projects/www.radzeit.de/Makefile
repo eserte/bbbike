@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.56 2005/03/28 21:32:32 eserte Exp $
+# $Id: Makefile,v 1.56 2005/03/28 21:32:32 eserte Exp eserte $
 #
 
 # Targets:
@@ -214,8 +214,11 @@ do-rsync-bbbike-data:
 	    BBBike/data/ ${RSYNC_DEST}/BBBike/data/
 
 post-rsync-bbbike-data:
+# No winter optimization needed anymore...
+.if 0
 	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
 	   "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/miscsrc/winter_optimization.pl -one-instance &"
+.endif
 
 rsync-temp-blockings:
 	${RSYNC} ${RSYNC_ARGS} \
