@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.6 2003/07/22 23:28:24 eserte Exp eserte $
+# $Id: Strasse.pm,v 1.7 2003/08/07 23:16:11 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -15,6 +15,8 @@ package Strassen::Strasse;
 package Strasse;
 use strict;
 #use AutoLoader 'AUTOLOAD';
+
+BEGIN { require Strassen::Core }
 
 use constant NAME   => Strassen::NAME();
 use constant COORDS => Strassen::COORDS();
@@ -167,6 +169,16 @@ sub strip_bezirk {
 	$str =~ s/\s*\(.*\)\s*$//;
     }
     $str;
+}
+
+sub split_street_citypart {
+    my $str = shift;
+    my @cityparts;
+    if ($str =~ /^(.+?)\s+\((.*)\)$/) {
+	$str = $1;
+	@cityparts = split /\s*,\s*/, $2;
+    }
+    ($str, @cityparts);
 }
 
 1;

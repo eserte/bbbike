@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.44 2003/06/02 23:21:13 eserte Exp eserte $
+# $Id: PLZ.pm,v 1.45 2003/08/07 22:44:45 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ use vars qw($PLZ_BASE_FILE @plzfile $OLD_AGREP $VERSION $VERBOSE $sep);
 use locale;
 use BBBikeUtil;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)
@@ -225,7 +225,7 @@ sub look {
 	if (($args{MultiCitypart}||!exists $res{$to_push[FILE_NAME]}->{$to_push[FILE_CITYPART]}) &&
 	    ($args{MultiZIP}     ||!exists $res{$to_push[FILE_NAME]}->{$to_push[FILE_ZIP]})) {
 	    push @res, [@to_push];
-	    last if defined $args{Max} and $args{Max} < $#res;
+	    return if defined $args{Max} and $args{Max} < $#res;
 	    $res{$to_push[FILE_NAME]}->{$to_push[FILE_CITYPART]}++;
 	    $res{$to_push[FILE_NAME]}->{$to_push[FILE_ZIP]}++;
 	}
@@ -414,8 +414,20 @@ sub look_loop {
     };
     my $strip_hnr = sub {
 	my $str = shift;
-	if ($str =~ /\s+\d+\s*$/) {
-	    $str =~ s/\s+\d+\s*$//;
+	if ($str =~ m{\s+(?:\d+[a-z]?|\d+[-/]\d+)\s*$}) {
+	    $str =~ s{\s+(?:\d+[a-z]?|\d+[-/]\d+)\s*$}{};
+	    $str;
+	} else {
+	    undef;
+	}
+    };
+    my $expand_strasse = sub {
+	my $str = shift;
+	if ($str =~ /^\s*str\./i) {
+	    $str =~ s/^\s*(s)tr\./$1traße/i;
+	    $str;
+	} elsif ($str =~ /^\s*strasse/i) {
+	    $str =~ s/^\s*(s)trasse/$1traße/i;
 	    $str;
 	} else {
 	    undef;
@@ -423,20 +435,65 @@ sub look_loop {
     };
     my $agrep = 0;
     my @matchref;
+    # 1. Try unaltered
     @matchref = $self->look($str, %args);
     if (!@matchref) {
-	if (my $str = $strip_strasse->($str)) { # XXX check for undef?
-	    @matchref = $self->look($str, %args);
+	# 2. Try to strip house number
+	if (my $str0 = $strip_hnr->($str)) {
+	    @matchref = $self->look($str0, %args);
 	}
+	# 3. Try to strip "straße" => "str."
+	# 3b. Strip house number
+	if (!@matchref) {
+	    if (my $str0 = $strip_strasse->($str)) {
+		@matchref = $self->look($str0, %args);
+		if (!@matchref) {
+		    if ($str0 = $strip_hnr->($str0)) {
+			@matchref = $self->look($str0, %args);
+		    }
+		}
+	    }
+	}
+	# 4. Try to expand "Str." on beginning of the string
+	# 4b. Strip house number
+	if (!@matchref) {
+	    if (my $str0 = $expand_strasse->($str)) {
+		@matchref = $self->look($str0, %args);
+
+		if (!@matchref) {
+		    if ($str0 = $strip_hnr->($str0)) {
+			@matchref = $self->look($str0, %args);
+		    }
+		}
+	    }
+	}
+	# 5. Use increasing approximate match. Try first unaltered, then
+	#    with stripped street, then without house number.
 	if (!@matchref) {
 	    $agrep = 1;
 	    while ($agrep <= $max_agrep) {
 		@matchref = $self->look($str, %args, Agrep => $agrep);
-		if (!@matchref && (my $str = $strip_strasse->($str))) { # XXX check for undef?
-		    @matchref = $self->look($str, %args, Agrep => $agrep);
+		if (!@matchref && (my $str0 = $strip_strasse->($str))) {
+		    @matchref = $self->look($str0, %args, Agrep => $agrep);
 		}
-		if (!@matchref && (my $str = $strip_hnr->($str))) { # XXX check for undef?
-		    @matchref = $self->look($str, %args, Agrep => $agrep);
+		if (!@matchref && (my $str0 = $strip_hnr->($str))) {
+		    @matchref = $self->look($str0, %args, Agrep => $agrep);
+		}
+		{
+		    my $str0;
+		    if (!@matchref
+			&& ($str0 = $strip_strasse->($str))
+			&& ($str0 = $strip_hnr->($str0))) {
+			@matchref = $self->look($str0, %args, Agrep => $agrep);
+		    }
+		}
+		{
+		    my $str0;
+		    if (!@matchref
+			&& ($str0 = $expand_strasse->($str))
+			&& ($str0 = $strip_hnr->($str0))) {
+			@matchref = $self->look($str0, %args, Agrep => $agrep);
+		    }
 		}
 		last if @matchref;
 		$agrep++;
