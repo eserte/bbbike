@@ -1,22 +1,3 @@
-;;; obsolete: fügt die Indices aus der aktuellen X-Selection in den Punkt ein
-(defun inslauf ()
-  (interactive)
-  (let ((str (x-selection))
-	(start 0)
-	(out "")
-	(loop t))
-    (while loop
-      (cond
-       ((string-match "\\((-?[0-9]+,-?[0-9]+)\\|[0-9]+\\)\\s *$" str start)
-	(let ((match (substring str (match-beginning 1) (match-end 1))))
-	  (if (string= out "")
-	      (setq out match)
-	    (setq out (concat out " " match)))))
-       (t (setq loop nil))
-       )
-      (setq start (match-end 1)))
-    (insert out)))
-
 ;;; reverses the current region
 (defun bbbike-reverse-street ()
   (interactive)
@@ -35,5 +16,28 @@
       (delete-region (region-beginning) (region-end))
     ))
 
-;(global-set-key [f8] 'inslauf)
-;(message "Press F8 for using inslauf!")
+(defun bbbike-search-x-selection ()
+  (interactive)
+  (let ((sel (x-selection)))
+    (if sel
+	(progn
+	  (goto-char (point-min))
+	  (search-forward-regexp (concat "\\(\t\\| \\)" sel "\\( \\|$\\)"))
+	  (goto-char (- (point) (length sel))))
+      (error "No X selection"))))
+
+(defvar bbbike-mode-map nil "Keymap for BBBike bbd mode.")
+(if bbbike-mode-map
+    nil
+  (let ((map (make-sparse-keymap)))
+    (setq bbbike-mode-map map)))
+
+(defun bbbike-mode ()
+  (interactive)
+  (use-local-map bbbike-mode-map)
+  (setq mode-name "BBBike"
+	major-mode 'bbbike-mode)
+  (run-hooks 'bbbike-mode-hook)
+  )
+
+(provide 'bbbike-mode)

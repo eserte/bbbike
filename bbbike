@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.137 2004/07/22 00:30:45 eserte Exp $
+# $Id: bbbike,v 3.137 2004/07/22 00:30:45 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -198,7 +198,7 @@ use enum qw(:ATTRIB_ SINGULAR PLURAL LINES LONG);
 @comments_types = @Strassen::Dataset::comments_types;
 
 ## DEBUG_BEGIN
-#BEGIN{mymstat("before use constant");}
+#BEGIN{mymstat("before use your");}
 ## DEBUG_END
 
 use your qw($Karte::Standard::obj $Karte::Standard::init_scrollregion
@@ -357,6 +357,8 @@ $net_type = "s";
 $no_make_net = 0;
 $str_far_away{'w'} = 0;
 $orte_label_size = 1;
+use constant MIN_ORT_CAT => 0;
+use constant MAX_ORT_CAT => 6;
 $str_far_away{'l'} = 0;
 $show_overview_mode = "b";
 $show_overview = $show_strlist = 0;
@@ -624,7 +626,7 @@ eval { local $SIG{'__DIE__'};
    ['ortkategorie','=s','auto',
     label => M"Ortskategorie",
     longhelp => M"Minimale Ortskategorie, die gezeichnet werden soll",
-    choices => [qw(auto), 0..6],
+    choices => [qw(auto), MIN_ORT_CAT .. MAX_ORT_CAT],
     var =>  \$place_category],
    ['wassername','!',1,		alias => [qw(gewaessername)],
     label => M"Gewässernamen plotten",	var => \$str_name_draw{'w'}],
@@ -2353,6 +2355,11 @@ sub do_iconframe {
 		    );
 	    }
 	}
+	$strcm->command(-label => M"Radroute auswählen",
+			-command => sub {
+			    choose_ort(qw(s comm-route),
+				       -markstartifactive => 1);
+			});
 
 	# XXX include comments_mount?
 	$strcm->checkbutton
@@ -4982,6 +4989,7 @@ sub define_item_attribs {
 	 'g'    => [8,5,2,5],	# Grenzen
 	 'z'    => [8,5,2,5],	# PLZ-Grenzen
 	 'sperre3' => [6,2],
+	 'fz'   => [8,5],
 	);
     foreach (qw/gP gD/) {
 	$line_dash{$_} = [@{ $line_dash{"g"}}];
@@ -10045,20 +10053,26 @@ sub choose_from_plz {
 # Gibt die aktuelle Fontgröße für die übergebene Ortskategorie zurück.
 ### AutoLoad Sub
 sub get_orte_label_font {
-    my($category) = @_;
+    my($category, $is_overview_canvas) = @_;
+    my $base_index = 0;
+    $base_index = 1 if $scale >= 3 && !$is_overview_canvas;
     my $font;
+    # This should handle the range MIN_ORT_CAT .. MAX_ORT_CAT:
     if      ($category <= 2) {
-	$font = $font{$font[$orte_label_size]};
+	$font = $font{$font[$base_index + $orte_label_size]};
     } elsif ($category == 3) {
-	$font = $font{$font[$orte_label_size+1]};
+	$font = $font{$font[$base_index + $orte_label_size+1]};
     } elsif ($category == 4) {
-	$font = $font{$font[$orte_label_size+2]};
+	$font = $font{$font[$base_index + $orte_label_size+2]};
     } elsif ($category == 5) {
-	$font = $font{$font[$orte_label_size+3]};
+	$font = $font{$font[$base_index + $orte_label_size+3]};
     } elsif ($category > 5) {
-	$font = $font{$font[$orte_label_size+4]};
+	$font = $font{$font[$base_index + $orte_label_size+4]};
     } else {
 	die "Unknown category $category";
+    }
+    if (!defined $font) {
+	$font = $font{'veryhuge'};
     }
 
     $font;
@@ -10076,12 +10090,14 @@ sub plotorte {
     my $municipality = $args{-municipality};
     my $type         = $args{-type} || 'o';
     my $label_tag    = uc($type);
+    my $is_overview_canvas;
     if (exists $args{Canvas}) {
 	$c = $args{Canvas};
 	$std = 0;
 	$transpose = ($show_overview_mode eq 'brb'
 		      ? \&transpose_small
 		      : \&transpose_medium);
+	$is_overview_canvas = 1;
     } else {
 	$std = 1;
 	$transpose = \&transpose;
@@ -10197,7 +10213,7 @@ sub plotorte {
 		      if $i % 80 == 0;
 		    $i++;
 		    my($text, $tx, $ty, $cat, $point_item) = @$ort_def;
-		    my $font = get_orte_label_font($cat);
+		    my $font = get_orte_label_font($cat, $is_overview_canvas);
 		    my(@tags) = ($label_tag, "$label_tag$cat");
 		    if (!draw_text_intelligent($c, $tx, $ty,
 					       -text => $text,
@@ -10230,7 +10246,7 @@ sub plotorte {
 	    if ($orientation eq 'landscape' &&
 		!$do_outline_text) {
 		$c->itemconfigure($label_tag,
-				  -font => get_orte_label_font(2));
+				  -font => get_orte_label_font(2, $is_overview_canvas));
 	    }
 	    if ($municipality) {
 		$c->itemconfigure($label_tag, -fill => '#7e7e7e');
@@ -10241,10 +10257,10 @@ sub plotorte {
 		!$do_outline_text) {
 		unless ($args{'AllSmall'}) {
 		    # wichtigere Orte bekommen eine größere Schrift
-		    foreach my $category (3, 4, 5, 6) {
+		    foreach my $category (3 .. MAX_ORT_CAT) {
 			$c->itemconfigure
 			  ("$label_tag$category",
-			   -font => get_orte_label_font($category));
+			   -font => get_orte_label_font($category, $is_overview_canvas));
 		    }
 		}
 	    }
@@ -12276,6 +12292,11 @@ sub scale_width {
 	$master =~ s/^strnr-//;
 	my(@bbox) = $c->bbox($master);
 	$c->coords($item, $bbox[0]-2,$bbox[1]-2,$bbox[2]+2,$bbox[3]+2);
+    }
+
+    for my $o_cat (MIN_ORT_CAT .. MAX_ORT_CAT) {
+	my $font = get_orte_label_font($o_cat);
+	$c->itemconfigure("O$o_cat", -font => $font);
     }
 
     while(my($name,$scalecommand) = each %scalecommand) {

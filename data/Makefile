@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.23 2004/07/22 21:26:46 eserte Exp $
+# $Id: Makefile,v 2.23 2004/07/22 21:26:46 eserte Exp eserte $
 #
 
 BBBIKEDIR=		..
@@ -404,6 +404,9 @@ fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 	cat /tmp/other-source-fragezeichen >> fragezeichen
 	-@$(READONLY) $@
 
+/tmp/projektierte_radstreifen.bbd:	fragezeichen-orig
+	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "projektierte Radstreifen" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
+
 # Die mit "laut adfc-karte" u.ä. gekennzeichneten Straßen extrahieren und
 # nach other-source-fragezeichen schreiben.
 # XXX Very strange: with db4 on RedHat 8.0 I have to use O_RDWR instead of
@@ -686,6 +689,9 @@ check-crossings:	.check_crossings
 	${MISCSRCDIR}/check_crossings -o /tmp/crossings.bbd -against brunnels \
 	    strassen landstrassen landstrassen2
 	@touch $@
+
+## Einzeiler zum Extrahieren einer Postleitzahl:
+# perl -F'\|' -nale '$F[2] == 12489 and $F[3] and print "$F[0] $F[1]\tX $F[3]"' Berlin.coords.data > /tmp/12489.bbd
 
 check-Berlin.coords.data:	.check_Berlin_coords_data
 

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.79 2004/07/03 22:45:25 eserte Exp $
+# $Id: bbbike.cgi,v 6.80 2004/07/24 20:35:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -612,7 +612,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.79 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.80 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2093,7 +2093,7 @@ sub get_kreuzung {
 		    if (@kreuzung == 0) {
 			print "..."; # XXX bessere Loesung?
 		    } else {
-			print join("/", @kreuzung);
+			print join("/", map { Strasse::strip_bezirk($_) } @kreuzung);
 		    }
 		    print "<br>" unless $use_select;
 		    print "\n";
@@ -5108,7 +5108,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/07/03 22:45:25 $';
+    my $cgi_date = '$Date: 2004/07/24 20:35:39 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

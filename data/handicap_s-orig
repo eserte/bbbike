@@ -6,7 +6,7 @@ Taubenstraße, zwischen Glinkastraße und Mauerstraße, veränderte Verkehrsführung 
 ##: XXX andere Quelle sagt bis Ende 08.2004
 #XXX del? Mohrenstraße (Mitte) in beiden Richtungen zwischen Charlottenstraße und Friedrichstraße Baustelle, Straße vollständig gesperrt	q4::inwork 9410,11803 9538,11818
 #XXX del Rapsweg (Marzahn) in beiden Richtungen zwischen Oberfeldstraße und Blumberger Damm Baustelle, Straße vollständig gesperrt	q4::inwork 21242,12769 20953,12866 20711,12905
-Straßensperrungen der Straße vor Schönholz zwischen Klemkestr. und Provinzstr. sowie der Klemkestraße zwischen Sommerstr. und Straße vor Schönholz, in Fahrtrichtung Niederschönhausen, aufgrund Tiefbauarbeiten. Dauer: 14.06.04 bis ca. 31.08.04	q4;::inwork 8182,18761 8260,18765 8361,18778 8476,18773 8650,18796 8687,18755
+Straßensperrungen der Straße vor Schönholz zwischen Klemkestr. und Provinzstr. sowie der Klemkestraße zwischen Sommerstr. und Straße vor Schönholz, in Fahrtrichtung Niederschönhausen, aufgrund Tiefbauarbeiten. Dauer: 14.06.04 bis ca. 31.08.04	q4::inwork; 8182,18761 8260,18765 8361,18778 8476,18773 8650,18796 8687,18755
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
 #XXX nicht mehr lange?
 Voßstr.: Bauarbeiten an der Ebertstr.	q3::inwork 8553,11638 8837,11676
@@ -23,6 +23,7 @@ Bitterfelder Straße (Marzahn) Richtung Märkische Allee, Höhe S-Bahn-Brücke Fahrt
 #XXX del? Gartenstraße zwischen Torstraße und Schröderstraße in beiden Richtungen gesperrt. Asphaltarbeiten. Ab 29.03.2004, 07.00 Uhr bis ?	q4::inwork 9668,13629 9383,13978
 #XXX del Rathausstr./Alarichstr. (Schöneberg) in beiden Richtungen zwischen Kreuzung Ringstr. und Attilaplatz Baustelle, Straße vollständig gesperrt (bis 16.05.2004) (14:36)	q4::inwork 8606,5496 8707,5289 8750,5173 8772,5081 8801,4993 8838,4668 8862,4462 8877,4356 8954,4084 9003,3878
 Jerusalemer Str. (Mitte) Richtung Norden zwischen Leipziger Str. und Hausvogteiplatz Baustelle, Richtungsfahrbahn Richtung Süden gesperrt, Einbahnstraßenregelung (bis Juni 2005)	q4::inwork; 9878,11857 9892,11752 9899,11670
+#: XXX Diese Meldung kommt und geht ...
 Saatwinkler Damm (Spandau) in beiden Richtungen zwischen Rohrdamm und Gartenfelder Str. Baustelle, Straße vollständig gesperrt (bis 31.12.2004)	q4::inwork -303,15526 468,15640
 #XXX del Lückstraße Berlin-Friedrichsfelde Richtung Berlin-Friedrichshain Zwischen Rummelsburger Straße und Schlichtallee wegen Bauarbeiten gesperrt bis 14.05.	q4::inwork 16032,10842 16153,10818 16460,10699 16655,10622
 Mohrenstr.: Bauarbeiten	q4::inwork; 9173,11770 9220,11781
