@@ -420,7 +420,7 @@ sub fileevent_read_line {
 	show_errors($@);
     }
     for my $l (@types) {
-	if (@{$d{$l}}) {
+	if ($d{$l} && @{$d{$l}}) {
 	    push @{$accesslog_data{$l}}, @{$d{$l}};
 	    eval {
 		my $s = Strassen->new_from_data_ref($accesslog_data{$l});
@@ -779,6 +779,7 @@ sub show_errors {
 	$txt = $main::toplevel{$winname}->Subwidget("Log");
 	$txt->insert("end", ("-"x70) . "\n");
     } else {
+	require Tk::ROText;
 	$txt = $t->Scrolled("ROText", -scrollbars => "eos"
 			   )->pack(-fill => "both", -expand => 1);
 	$t->Advertise(Log => $txt);
