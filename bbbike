@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.123 2004/01/21 23:42:29 eserte Exp $
+# $Id: bbbike,v 3.123 2004/01/21 23:42:29 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -1472,6 +1472,7 @@ $top->optionAdd("*default*foreground" => 'yellow4');
 $top->optionAdd("*default*text"       => M"Voreinstellung");
 $top->optionAdd("*cancel*foreground"  => 'red');
 $top->optionAdd("*cancel*text"        => M"Abbrechen");
+#XXX Experiment for Tk804: {my $p=load_photo($top, "cross.".$default_img_fmt, -name => "cross");for(qw(close cancel)) { $top->optionAdd("*$_*compound","left"); $top->optionAdd("*$_*image","cross")}}
 $top->optionAdd("*close*foreground"   => 'red');
 $top->optionAdd("*close*text"         => M"Schließen");
 $top->optionAdd("*end*foreground"     => 'green4');
@@ -15683,16 +15684,18 @@ sub image_from_file {
 
 # Lädt ein Bild.
 sub load_photo {
-    my($top, $file) = @_;
+    my($top, $file, %args) = @_;
     my $photo;
     unless ($lowmem) {
 	eval {
+	    my @name = exists $args{-name} ? ($args{-name}) : ();
 	    if ($file =~ /.xpm$/ && !$small_icons) {
-		$photo = $top->Pixmap(-file => Tk::findINC($file));
+		$photo = $top->Pixmap(@name, -file => Tk::findINC($file));
 	    } else {
-		$photo = $top->Photo(-file => Tk::findINC($file));
+		$photo = $top->Photo(@name, -file => Tk::findINC($file));
 	    }
 	    if ($small_icons && $photo) {
+		# XXX setting of @name missing
 		my $small_photo = $top->Photo(-width => $photo->width/2,
 					      -height => $photo->height/2);
 		$small_photo->copy($photo, -subsample => 2, 2);

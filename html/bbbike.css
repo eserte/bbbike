@@ -43,3 +43,5 @@ tr.even { background-color: #ffdd88; }
 a.ms:hover   { background-color:#FFFFFF; color:#000000; }
 a.ms:link    { color:#000000; }
 a.ms:visited { color:#333333; }
+
+.new { font-weight:bold;color:#a00000; }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeExp.pm,v 1.18 2003/11/16 21:13:58 eserte Exp $
+# $Id: BBBikeExp.pm,v 1.18 2003/11/16 21:13:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -25,17 +25,6 @@ use strict;
 use vars qw(%exp_str_drawn %exp_str
 	    %exp_p_drawn %exp_p
 	    %exp_known_grids $exp_master);
-#XXX del:
-#  	    $plotpoint_draw_sub $plotstr_draw_sub $plotorte_draw_sub
-#  	    $coord_system_obj $coord_system
-#  	    %outline_color %p_draw  %str_color %p_color %p_name_draw
-#  	    $c $pp_color $lowmem $net
-#  	    %line_width $scale $verbose
-#  	    $xadd_anchor_type $yadd_anchor_type
-#  	    @orte_coords $place_category
-#  	    $orientation $no_make_net $environment
-#  	    %str_draw %p_draw
-#  	   );
 use vars qw($xadd_anchor $yadd_anchor @extra_tags $ignore);
 use BBBikeGlobalVars;
 
@@ -392,6 +381,7 @@ sub BBBikeExp::plotstr_on_demand {
 		}
 	    }
 
+	    my $label_spaceadd = ''; # XXX?
 	    my $transpose = \&transpose;
 	    my $draw_sub = eval $plotstr_draw_sub;
 	    die $@ if $@;
@@ -440,6 +430,7 @@ sub BBBikeExp::plotstr_on_demand {
 	    # ^^^
 	    my $xadd_anchor = $xadd_anchor_type->{'u'};
 	    my $yadd_anchor = $yadd_anchor_type->{'u'};
+	    my $label_spaceadd = ''; # XXX?
 
 	    my $transpose = \&transpose;
 	    my $draw_sub = eval $plotpoint_draw_sub;

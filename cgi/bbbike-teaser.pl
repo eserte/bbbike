@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.3 2003/05/29 20:24:39 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.4 2004/01/23 00:11:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@
 #
 sub teaser {
     my @teasers_optional = ('routen', 'link');
-    my @teasers_mandatory = (teaser_perltk(), teaser_mapserver());
+    my @teasers_mandatory = (teaser_perltk_newrelease(), teaser_mapserver());
     my $sub = "teaser_" . $teasers_optional[int(rand(@teasers_optional))];
     my $t = eval $sub . '()';
     join(blind_image(1,8),
@@ -33,6 +33,12 @@ sub teaser {
 sub teaser_sternfahrt {
     <<EOF
 <a href="http://www.radzeit.de/mapserver/brb/sternfahrt2003_init.html"><img src="$bbbike_images/stern2003_titel.jpg" border="0"><br>Die Routen der Sternfahrt 2003</a>
+EOF
+}
+
+sub teaser_perltk_newrelease {
+    <<EOF;
+<small><a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">Download</a> der Perl/Tk-Version von BBBike mit interaktiver Karte. Läuft auf Linux, Unix und Windows.</small><br><a class="new" href="@{[ $BBBike::LATEST_RELEASE_DISTDIR ]}">NEU: Version 3.13</a><br>
 EOF
 }
 

@@ -1752,6 +1752,8 @@ sub buttonpoint {
 		if ($tags[2] =~ m|^(.*\.wpt)/(\d+)/|) {
 		    my($wpt_file,$wpt_nr) = ($1,$2);
 		    system q{gnuclient -batch -eval '(find-file "~/src/bbbike/misc/gps_data/}.$wpt_file.q{") (goto-char (point-min)) (search-forward-regexp "^}.$wpt_nr.q{\t")'};
+		} elsif ($tags[2] =~ /^ORIG:(.*),(.*)$/) {
+		    ($x, $y) = ($1, $2);
 		}
 		# XXX verallgemeinern!!!
 		my $crossing = "?";

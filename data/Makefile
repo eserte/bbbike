@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.85 2004/01/04 00:31:33 eserte Exp $
+# $Id: Makefile,v 1.86 2004/01/24 17:39:16 eserte Exp $
 #
 
 MISCDIR=		../misc
@@ -42,9 +42,7 @@ targets:	${TARGETS}
 
 # Useful checks, but normally too slow for a quick build
 # XXX merge with sort-Berlin.coords.data rule below?
-slow-checks:	inaccessible_strassen check-line-lengths check-dates
-	env LC_ALL=de_DE.ISO_8859-1 sort -c Berlin.coords.data || \
-	    ( env LC_ALL=de_DE.ISO_8859-1 sort Berlin.coords.data | diff -u - Berlin.coords.data; false )
+slow-checks:	inaccessible_strassen check-line-lengths check-dates check-Berlin.coords.data
 
 # even slower (about four minutes)
 really-slow-checks:	check-crossings
@@ -483,6 +481,13 @@ check-crossings:	.check_crossings
 
 .check_crossings:	strassen brunnels
 	${MISCSRCDIR}/check_crossings $>
+	@touch $@
+
+check-Berlin.coords.data:	.check_Berlin_coords_data
+
+.check_Berlin_coords_data: Berlin.coords.data
+	env LC_ALL=de_DE.ISO_8859-1 sort -c Berlin.coords.data || \
+	    ( env LC_ALL=de_DE.ISO_8859-1 sort Berlin.coords.data | diff -u - Berlin.coords.data; false )
 	@touch $@
 
 GNUmakefile: Makefile ../miscsrc/b2gmake

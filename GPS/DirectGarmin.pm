@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.23 2004/01/03 01:09:15 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.24 2004/01/23 00:12:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -204,13 +204,17 @@ sub tk_interface {
 	     -sticky => "w", -columnspan => 2);
     my $weiter = 0;
     {
-	my $f = $t->Frame->grid(-columnspan => 2);
-	$f->Button(-text => ($args{-test} ?
-			     M("Upload zum Garmin simulieren") :
-			     M("Upload zum Garmin")),
-		   -command => sub { $weiter = 1 })->pack(-side => "left");
-	$f->Button(-text => M"Abbruch", -command => sub { $weiter = -1 })->pack(-side => "left");
+	my $f = $t->Frame->grid(-columnspan => 2, -sticky => "ew");
+	Tk::grid($f->Button(-text => ($args{-test} ?
+				      M("Upload zum Garmin simulieren") :
+				      M("Upload zum Garmin")),
+			    -command => sub { $weiter = 1 }),
+		 $f->Button(Name => "cancel",
+			    -text => M"Abbruch",
+			    -command => sub { $weiter = -1 }),
+		);
     }
+    $t->gridColumnconfigure($_, -weight => 1) for (0..1);
     $t->OnDestroy(sub { $weiter = -1 });
     $t->waitVariable(\$weiter);
     $t->afterIdle(sub { if (Tk::Exists($t)) { $t->destroy } });

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.5 2004/01/18 10:25:56 eserte Exp $
+# $Id: vmzrobot.pl,v 1.6 2004/01/25 10:18:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -135,7 +135,13 @@ if (exists $output_as{'bbd'}) {
 	    ($info->{x1}, $info->{y1});
 	my($x2, $y2) = map { int } $Karte::Polar::obj->map2standard
 	    ($info->{x2}, $info->{y2});
-	print $fh "$text\tX $x1,$y1 $x2,$y1 $x2,$y2 $x1,$y2 $x1,$y1\n";
+	print $fh "$text\tX ";
+	if ($x1 == $x2 && $y1 == $y2) {
+	    print $fh "$x1,$y1";
+	} else {
+	    print $fh "$x1,$y1 $x2,$y1 $x2,$y2 $x1,$y2 $x1,$y1";
+	}
+	print $fh "\n";
     }
 }
 

@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.61 2004/01/10 22:36:05 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.61 2004/01/10 22:36:05 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -3369,6 +3369,44 @@ sub add_cross_road_blockings {
     }
 
     $add_userdels;
+}
+
+sub draw_pp {
+    my(undef, $file, %args) = @_;
+    my $top = $main::top;
+    my $c = $main::c;
+    my $transpose = \&main::transpose;
+    my $abk = $args{-abk} || '';
+    $c->delete("pp-$abk");
+    require Karte;
+    require Karte::Berlinmap1996;
+    my $map = $Karte::Berlinmap1996::obj;
+    my $s = Strassen->new($file."-orig");
+    main::IncBusy($top);
+    eval {
+	$s->init;
+	while(1) {
+	    my $r = $s->next;
+	    last if !@{ $r->[Strassen::COORDS()] };
+	    for my $p (@{ $r->[Strassen::COORDS()] }) {
+		my($ox,$oy) = split /,/, $p;
+		my($x, $y)  = $map->map2standard($ox,$oy);
+		my($cx,$cy) = $transpose->($x,$y);
+		$c->createLine($cx,$cy,$cx,$cy,
+			       -tags => ['pp', "$x,$y",
+					 "ORIG:$ox,$oy", "pp-$abk"],
+			      );
+	    }
+	}
+	$c->itemconfigure('pp',
+			  -capstyle => $main::capstyle_round,
+			  -width => 5,
+			  -fill => $main::pp_color,
+			 );
+    };
+    my $err = $@;
+    main::DecBusy($top);
+    main::status_message($err, "die") if $err;
 }
 
 # REPO BEGIN
