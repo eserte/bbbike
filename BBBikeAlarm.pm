@@ -305,33 +305,48 @@ sub enter_alarm_small_dialog {
     my($top, %args) = @_;
     my $t = $top->Toplevel(-title => "Alarm");
     $t->transient($top) if $main::transient;
+    my $row = 0;
     my $time;
+    my $text = "Leave";
+    $t->Label(-text => "Time (HH:MM)")->grid(-column => 0, -row => $row,
+					     -sticky => "w");
     my $e = $t->Entry(-textvariable => \$time,
 		      -width => 6,
-		     )->grid(-row => 0, -column => 0,
-			     -columnspan => 2,
+		     )->grid(-row => $row, -column => 1,
 			     -sticky => "we");
     $e->focus;
+    $row++;
+
+    if ($args{-withtext}) {
+	$t->Label(-text => "Alarm text")->grid(-column => 0, -row => $row,
+					       -sticky => "w");
+	$t->Entry(-textvariable => \$text,
+		  -width => 20,
+		 )->grid(-row => $row, -column => 1,
+			 -sticky => "we");
+	$row++;
+    }
 
     my $weiter;
+    my $bf = $t->Frame->grid(-row => $row, -column => 0, -columnspan => 2);
     my $okb =
-	$t->Button(-text => "OK",
-		   -command => sub {
-		       my($h_a, $m_a) = $time =~ /(?:^|\s)(\d{1,2})[:.]?(\d{2})(?:$|\s)/;
-		       if (!defined $h_a || !defined $m_a) {
-			   $top->messageBox(-message => "Wrong time format, should be HH:MM",
-					    -icon => "error",
-					    -type => "OK");
-			   return undef;
-		       }
-		       tk_leave(sprintf "%02d%02d", $h_a, $m_a, -text => "Leave");
-		       $weiter = 1;
-		   })->grid(-row => 1, -column => 0);
+	$bf->Button(-text => "OK",
+		    -command => sub {
+			my($h_a, $m_a) = $time =~ /(?:^|\s)(\d{1,2})[:.]?(\d{2})(?:$|\s)/;
+			if (!defined $h_a || !defined $m_a) {
+			    $top->messageBox(-message => "Wrong time format, should be HH:MM",
+					     -icon => "error",
+					     -type => "OK");
+			    return undef;
+			}
+			tk_leave(sprintf "%02d%02d", $h_a, $m_a, -text => $text);
+			$weiter = 1;
+		    })->grid(-row => 0, -column => 0);
     $e->bind("<Return>" => sub { $okb->invoke });
-    $t->Button(-text => "Cancel",
-	       -command => sub {
-		   $weiter = 1;
-	       })->grid(-row => 1, -column => 1);
+    $bf->Button(-text => "Cancel",
+		-command => sub {
+		    $weiter = 1;
+		})->grid(-row => 0, -column => 1);
     $t->Popup(-popover => "cursor");
     $t->OnDestroy(sub { $weiter = 1 });
     $t->waitVariable(\$weiter);
