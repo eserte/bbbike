@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.24 2003/07/22 23:28:11 eserte Exp eserte $
+# $Id: Core.pm,v 1.25 2003/08/14 22:29:43 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.25 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -954,6 +954,7 @@ sub set_verbose {
     $Strassen::VERBOSE        = $verbose;
     $Strassen::Util::VERBOSE  = $verbose;
     $Kreuzungen::VERBOSE      = $verbose;
+    $StrassenNetz::CNetFile::VERBOSE = $verbose;
 }
 
 sub DESTROY { }

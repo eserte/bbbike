@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Build.pm,v 1.11 2003/01/08 20:13:37 eserte Exp $
+# $Id: Build.pm,v 1.12 2003/08/14 22:30:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
@@ -16,11 +16,11 @@ package Strassen::Build;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz::CNetFile;
 
-use vars qw($FILE_VERSION $MAGIC);
+use vars qw($FILE_VERSION $MAGIC $VERBOSE);
 
 $FILE_VERSION = 1;
 $MAGIC = 'stnt';
@@ -47,10 +47,19 @@ require Strassen::Util;
 #   -blocked => $sperre_file: file for blocked streets, usually "gesperrt"
 sub create_mmap_net {
     my($self, $file_prefix, %args) = @_;
-    $self->make_net_classic if (!$self->{Net});
+#    $self->make_net_classic if (!$self->{Net});
+    warn "Create classic net...\n" if $VERBOSE;
+    if (!$self->{Net}) {
+	if ($self->can("make_net_XS")) {
+	    $self->make_net_XS;
+	} else {
+	    $self->make_net_classic;
+	}
+    }
 
     if ($args{-blocked}) {
-	$self->make_sperre($args{-blocked}, Type => [qw(einbahn sperre)]);
+	warn "Remove blocked streets...\n" if $VERBOSE;
+	$self->StrassenNetz::make_sperre($args{-blocked}, Type => [qw(einbahn sperre)]);
     }
 
     use constant SIZEOF_LONG => 4; # XXX only for intel
@@ -65,14 +74,15 @@ sub create_mmap_net {
     use constant LENGTH_HEADER => SIZEOF_LONG*3; # three longs for x, y, number of succ
     use constant LENGTH_SUCC   => SIZEOF_LONG*2; # two longs for pointer and distance
 
-    # first pass: calculate structs and create $coord2ptr Hash
+    warn "First pass: calculate structs and create \$coord2ptr Hash...\n"
+	if $VERBOSE;
     while(my($coord, $val) = each %{ $self->{Net} }) {
 	$coord2ptr->{$coord} = $total_structlength;
 	my $this_structlength = LENGTH_HEADER + LENGTH_SUCC * scalar keys %$val;
 	$total_structlength += $this_structlength;
     }
 
-    # second pass: create mmap file
+    warn "Second pass: create mmap file...\n" if $VERBOSE;
     open(F, "> $mmap_file") or die "Can't create $mmap_file: $!";
     binmode F;
 
@@ -94,6 +104,7 @@ sub create_mmap_net {
     }
     close F;
 
+    warn "Write cache files...\n" if $VERBOSE;
     Strassen::Util::write_cache($coord2ptr, $self->get_cachefile . "_coord2ptr");
     Strassen::Util::write_cache($self->{Net2Name}, $self->get_cachefile . "_net2name");
 

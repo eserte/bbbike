@@ -752,7 +752,8 @@ Tk::CmdLine::SetArguments();
 			  Q1 => 25,
 			  Q2 => 18,
 			  Q3 => 13},
-    label => M"Straßenqualität konfigurieren", var => \%qualitaet_s_speed],
+    label => M"Straßenqualität konfigurieren", var => \%qualitaet_s_speed,
+    nogui => 1], # XXX Tk::Getopt can't handle this yet
    ['kategorieoptimierung','!',0,
     label => M"Straßenkategorien beachten", var => \$strcat_optimierung],
    ['kategoriewerte','!',{B  => 100,
@@ -761,7 +762,8 @@ Tk::CmdLine::SetArguments();
 			  H  => 100,
 			  N  => 100,
 			  NN => 100},
-    label => M"Straßenkategorien konfigurieren", var => \%strcat_speed],
+    label => M"Straßenkategorien konfigurieren", var => \%strcat_speed,
+    nogui => 1], # XXX Tk::Getopt can't handle this yet
    ['radwegeoptimierung','!',0, var => \$radwege_optimierung,
     label => M"Radwege-Optimierung"],
    ['N_RW_optimization', '!', 0, var => \$N_RW_optimization, nogui => 1],
@@ -779,7 +781,8 @@ Tk::CmdLine::SetArguments();
 			 q3 => 13,
 			 q4 => 5, # z.B. Fußgängerzonen
 			},
-    label => M"Sonstige Behinderungen konfigurieren", var => \%handicap_s_speed],
+    label => M"Sonstige Behinderungen konfigurieren", var => \%handicap_s_speed,
+    nogui => 1], # XXX Tk::Getopt can't handle this yet
    ['sperre','!',undef,		alias => [qw(gesperrt)],
     label => M"Gesperrte Straßen beachten", nogui => 1,
     var => sub {
@@ -996,9 +999,10 @@ if (defined $city) {
 		$citypkg = 'Geography::' . $f;
 		eval 'require ' . $citypkg;
 		die $@ if $@;
-		set_datadir($citypkg->datadir);
-		%global_search_args = $citypkg->search_args
-		    if $citypkg->can("search_args");
+		my $cityobj = $citypkg->new;
+		set_datadir($cityobj->datadir, -clearold => 1);
+		%global_search_args = $cityobj->search_args
+		    if $cityobj->can("search_args");
 		$found++;
 		last;
 	    }
@@ -1013,7 +1017,7 @@ if (defined $city) {
 		 "$FindBin::RealBin/Geography", $!);
     }
 } elsif ($datadir) {
-    set_datadir($datadir);
+    set_datadir($datadir, -clearold => 1);
 } else {
     # default (Berlin)
     set_datadir("$FindBin::RealBin/data");
@@ -3904,7 +3908,9 @@ sub do_iconframe {
 		       });
     }
 
-    plugin_menu($opbm);
+    if (!$standard_menubar) {
+	plugin_menu($opbm);
+    }
     if ($advanced) {
 	advanced_option_menu($opbm);
     }
@@ -6120,7 +6126,10 @@ sub enter_leave_bind_for_help {
 }
 
 sub set_datadir {
-    my $newdir = shift;
+    my($newdir, %args) = @_;
+    if ($args{-clearold}) {
+	@Strassen::datadirs = ();
+    }
     if (defined $newdir && -d $newdir) {
 	unshift @Strassen::datadirs, $newdir;
 	$datadir = $newdir;
@@ -13538,7 +13547,13 @@ sub set_coords_str {
     } elsif ($tags[0] =~ /^[sSlL]$/) {
 	my($pos, @points) = nearest_line_points_mouse($c, @tags);
 	make_net() if !$net;
-	$net->add_net($pos, @points);
+	if ($net->can("adjust_to_nearest")) {
+	    $points[0] = [ split /,/,
+			   $net->adjust_to_nearest(join ",", @{$points[0]})
+			 ];
+	} else {
+	    $net->add_net($pos, @points);
+	}
 	my($x, $y) = @{$points[0]};
 	Route::_coord_as_string([$x,$y]);
     } else {

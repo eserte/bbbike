@@ -891,8 +891,13 @@ sub _do_undo {
 		@{ $undo_options->{$opt->[OPTNAME]}} = @swap;
 	    } elsif ($ref eq 'HASH') {
 		my %swap = % {$self->_varref($opt)};
+warn $opt->[OPTNAME];
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$undo_options->{$opt->[OPTNAME]},$self->_varref($opt)],[])->Indent(1)->Useqq(1)->Dump; # XXX
+
 		% {$self->_varref($opt)} = %{ $undo_options->{$opt->[OPTNAME]} };
+warn "ok...";
 		%{ $undo_options->{$opt->[OPTNAME]}} = %swap;
+warn "ok???";
 	    } elsif ($ref eq 'SCALAR') {
 		my $swap = $ {$self->_varref($opt)};
 		$ {$self->_varref($opt)} = $undo_options->{$opt->[OPTNAME]};

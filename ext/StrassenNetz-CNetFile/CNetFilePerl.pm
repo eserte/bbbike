@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CNetFilePerl.pm,v 1.11 2003/08/07 21:34:14 eserte Exp eserte $
+# $Id: CNetFilePerl.pm,v 1.12 2003/08/14 22:31:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002 Slaven Rezic. All rights reserved.
@@ -51,6 +51,12 @@ sub make_net {
 sub reachable {
     my($self, $coord) = @_;
     exists $self->{CNetCoord2Ptr}->{$coord};
+}
+
+sub adjust_to_nearest {
+    my($self, $coord) = @_;
+    return $coord if ($self->reachable($coord));
+    $self->fix_coords($coord);
 }
 
 # XXX Still problems: because all other types are ignored it is not
@@ -168,6 +174,19 @@ sub FETCH {
 
 sub STORE {
     die "A STORE is not allowed in " . __PACKAGE__ . ". Args: @_";
+}
+
+sub EXISTS {
+    my($self, $key2) = @_;
+    my $str_net = $self->{StrassenNetz};
+    my(undef,undef,undef,@neighbors) = $str_net->get_coord_struct($str_net->translate_pointer($str_net->{CNetCoord2Ptr}->{$self->{Key1}}));
+    my $n_ptr = $str_net->translate_pointer($str_net->{CNetCoord2Ptr}->{$key2}) - $str_net->{CNetMmap};
+    for(my $n_i = 0; $n_i < $#neighbors; $n_i += 2) {
+	if ($neighbors[$n_i] eq $n_ptr) {
+	    return 1;
+	}
+    }
+    0;
 }
 
 1;

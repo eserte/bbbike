@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Muenchen_DE.pm,v 1.5 2003/01/08 20:12:45 eserte Exp $
+# $Id: Muenchen_DE.pm,v 1.6 2003/08/14 22:47:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -38,6 +38,19 @@ use vars qw(%subcityparts %subcitypart_to_citypart %properties);
 
 sub new {
     my($class) = @_;
+
+    # Somewhat hackish: delete not available layers
+    for (\%main::init_str_draw) {
+	for my $abk (qw(w u r b f)) {
+	    $_->{$abk} = 0;
+	}
+    }
+    for (\%main::init_p_draw) {
+	for my $abk (qw(u lsa b)) {
+	    $_->{$abk} = 0;
+	}
+    }
+
     bless {}, $class;
 }
 

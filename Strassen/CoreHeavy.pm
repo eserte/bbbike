@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.10 2003/06/08 21:19:20 eserte Exp eserte $
+# $Id: CoreHeavy.pm,v 1.11 2003/08/14 05:14:10 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -629,7 +629,7 @@ sub reload {
     my($self) = @_;
     return if $self->is_current;
     if ($self->{RebuildCode}) {
-	$self->{RebuildCode};
+	$self->{RebuildCode}->();
     } else {
 	warn "Reload " . $self->file . "...\n";
 	$self->read_data;

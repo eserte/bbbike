@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.28 2003/08/07 21:32:41 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.28 2003/08/07 21:32:41 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -209,7 +209,7 @@ sub make_sperre_1 {
 	my $ret = $sperre_obj->next;
 	last if !@{$ret->[Strassen::COORDS()]};
 	my($category,$penalty) = split /:/, $ret->[Strassen::CAT()]; # ignore @addinfo
-		if (exists $sperre_type{$category}) {
+	if (exists $sperre_type{$category}) {
 	    if ($category eq BLOCKED_ROUTE) {
 		# Aufzeichnen der nicht erlaubten Wegführung
 		push @{ $self->{Wegfuehrung}{$ret->[Strassen::COORDS()][-1]} },
