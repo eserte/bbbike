@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cleanup,v 1.3 2003/08/15 05:45:05 eserte Exp $
+# $Id: cleanup,v 1.4 2003/11/20 15:29:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -26,14 +26,16 @@ use FindBin;
 use Getopt::Long;
 
 my $force;
+my $q;
 my $age = 1;
 my $agehours;
 
 if (!GetOptions("f|force" => \$force,
+		"q|quiet" => \$q,
 		"age=f" => \$age,
 		"agehours=f" => \$agehours,
 	       )) {
-    die "usage: $0 [-f|-force] [-age age_in_days | -agehours age_in_hours]
+    die "usage: $0 [-f|-force] [-q] [-age age_in_days | -agehours age_in_hours]
 Default: -age 1
 To cleanup all files use -age 0
 ";
@@ -59,6 +61,13 @@ if (defined $age) {
 
 if (!@files) {
     exit 0;
+}
+
+if ($> != 0 && !$q) {
+    my @not_owner_files = grep { (stat($_))[4] != $> } @files;
+    if (@not_owner_files) {
+	print STDERR "Note: you don't own the following files: @not_owner_files\n";
+    }
 }
 
 if (!$force) {
