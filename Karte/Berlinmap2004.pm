@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlinmap2004.pm,v 1.1 2004/03/30 18:05:24 eserte Exp $
+# $Id: Berlinmap2004.pm,v 1.2 2004/04/11 20:09:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -22,7 +22,7 @@ use POSIX qw(floor);
 use strict;
 use vars qw(@ISA $obj);
 
-@ISA = qw(Karte Karte::Berlinmap2002);
+@ISA = qw(Karte::Berlinmap2002);
 
 my $w_h = 200;
 

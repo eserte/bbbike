@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.129 2004/03/26 22:08:38 eserte Exp $
+# $Id: bbbike,v 3.130 2004/04/08 21:40:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -223,7 +223,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.129 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.130 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -324,9 +324,9 @@ foreach (@Radwege::category_order) {
 	       'ql', 'hl', 'l-label-bg', 'l-label'], # XXX mount?
    'p_o'   => ['o', 'O'],
    'p_p'   => ['p'],
-   'str_u' => ['u', 'u-bg', 'u-fg', 'u-label'],
-   'str_b' => ['b', 'b-bg', 'b-fg', 'b-label'],
-   'str_r' => ['r', 'r-bg', 'r-fg', 'r-label'],
+   'str_u' => ['u', 'sperre_u', 'u-bg', 'u-fg', 'u-label'],
+   'str_b' => ['b', 'sperre_b', 'b-bg', 'b-fg', 'b-label'],
+   'str_r' => ['r', 'sperre_r', 'r-bg', 'r-fg', 'r-label'],
    'str_w' => ['w-out', 'w', 'i-out', 'i', 'w-label-bg', 'w-label'],
    'str_f' => ['f', 'f-label-bg', 'f-label', 'f-Pabove'],
    'str_g' => ['z', 'g', 'gP', 'gD'],
@@ -2485,7 +2485,9 @@ sub do_iconframe {
     my $ubcmb = $misc_frame->Menubutton;
     my $ubcm = $ubcmb->Menu(-title => M"U-Bahn");
     menu_entry_choose_ort($ubcm, 'u', -accelerator => 'u',
-			  -pchooseortargs => {'-markstartifactive' => 1});
+			  -pchooseortargs => {'-markstartifactive' => 1},
+			  -strblockings => 1,
+			 );
     $ubcm->checkbutton(-label => M"U-Bhf-Namen",
 		       -variable => \$p_name_draw{'u'},
 		       -command => sub {
@@ -2530,7 +2532,9 @@ sub do_iconframe {
     my $sbcmb = $misc_frame->Menubutton;
     my $sbcm = $sbcmb->Menu(-title => M"S-Bahn");
     menu_entry_choose_ort($sbcm, 'b', -accelerator => 'b',
-			  -pchooseortargs => {'-markstartifactive' => 1});
+			  -pchooseortargs => {'-markstartifactive' => 1},
+			  -strblockings => 1,
+			 );
     $sbcm->checkbutton(-label => M"S-Bhf-Namen",
 		       -variable => \$p_name_draw{'b'},
 		       -command => sub {
@@ -2576,7 +2580,9 @@ sub do_iconframe {
     my $rbcmb = $misc_frame->Menubutton;
     my $rbcm = $rbcmb->Menu(-title => M"Regionalbahn");
     menu_entry_choose_ort($rbcm, 'r', -accelerator => 'r',
-			  -pchooseortargs => {'-markstartifactive' => 1});
+			  -pchooseortargs => {'-markstartifactive' => 1},
+			  -strblockings => 1,
+			 );
     $rbcm->checkbutton(-label => M"R-Bhf-Namen",
 		       -variable => \$p_name_draw{'r'},
 		       -command => sub {
@@ -4906,6 +4912,9 @@ sub define_item_attribs {
 	 'r'      => 'rbahnhof',
 	 'o'      => 'orte',	# XXX scoped
 	 'sperre' => $sperre_file,
+	 'sperre_u' => 'gesperrt_u',
+	 'sperre_b' => 'gesperrt_s',
+	 'sperre_r' => 'gesperrt_r',
 	 'obst'   => 'obst',
 	 'pl'     => 'plaetze',
 	 'vf'     => 'vorfahrt',
@@ -5051,7 +5060,8 @@ sub define_item_attribs {
 	    s-out l-out gr rw s-NN s-N s-H s-HH s-B s-BAB l v
 	    f-label-bg w-label-bg f-label w-label
 	    s-label-bg s-label l-label-bg l-label
-	    u u-bg u-fg r b r-bg r-fg b-bg b-fg u-label r-label b-label
+	    u sperre_u u-bg u-fg r sperre_r b sperre_b r-bg r-fg b-bg b-fg
+	    u-label r-label b-label
 	    hoehe vf-bg sperre temp_sperre v-fg obst
 	    route comm),
 	 (map { "comm-$_" } @comments_types),
@@ -5737,7 +5747,8 @@ EOF
 
 sub set_bindings {
     foreach (qw(p pp o u-bg u-fg b-bg b-fg r-bg r-fg
-		sperre temp_sperre lsa-fg lsa-bg show pl-fg
+		sperre sperre_u sperre_b sperre_r temp_sperre
+		lsa-fg lsa-bg show pl-fg
 		L-img L-fg kn-fg ki-fg rest-fg)) {
 	std_p_binding($_);
     }
@@ -7778,7 +7789,7 @@ sub plot {
     if ($type eq 'str') {
 	plotstr($abk, %args);
     } elsif ($type eq 'p') {
-	if ($abk =~ /sperre$/) {
+	if ($abk =~ /sperre/) {
 	    my $object_or_file = $args{-object} || $args{-filename};
 	    $args{-abk} = $abk;
 	    plot_sperre($object_or_file, %args);
@@ -10245,7 +10256,7 @@ sub enterpoint {
 	    $act_value{Haltestelle} .= " ($hoehe{$tags[1]}m)";
 	}
 	$hs_label->configure(-fg => 'black');
-    } elsif ($tags[0] =~ /sperre$/) {
+    } elsif ($tags[0] =~ /sperre/) {
 	if ($tags[1] eq 'sperre0') {
 	    $act_value{Haltestelle} = $tags[2] || M"tragen notwendig";
 	} elsif ($tags[1] =~ /^sperre1/) {
@@ -13951,6 +13962,10 @@ sub make_net {
 		}
 	    } elsif ($net_type eq 'us' || $net_type eq 'rus') {
 		my @abk = ($net_type eq 'us' ? qw(u b) : qw(u b r));
+
+		my $sperre_s = MultiStrassen->new(map { $p_file{"sperre_$_"} } @abk);
+		$net->make_sperre($sperre_s, Type => "sperre");
+
 		my @bhf_source;
 		foreach (@abk) {
 		    if (!$p_obj{$_}) {
@@ -14657,6 +14672,17 @@ sub menu_entry_choose_ort {
 		   $str_draw{$abk} = 1 - $str_draw{$abk};
 		   plot('str',$abk, -lazy => 1);
 	       });
+	}
+	if ($args{'-strblockings'}) {
+	    my $sperre_abk = 'sperre_'.$abk;
+	    $menu->checkbutton
+		(-label => M"gesperrte Strecken",
+		 -variable => \$p_draw{$sperre_abk},
+		 -command => sub {
+		     plot_sperre($p_file{$sperre_abk},
+				 -abk => $sperre_abk);
+		 },
+		);
 	}
     }
 

@@ -150,6 +150,8 @@ bbbike-fast.bat
 bbbike.bat
 bbbike.pod
 bbbike.html
+bbbike_internals.pod
+bbbike_internals.html
 bbbikeapplet
 bbbikeclient
 cbbbike
@@ -191,6 +193,9 @@ data/deutschland
 data/faehren
 data/flaechen
 data/gesperrt
+data/gesperrt_u
+data/gesperrt_s
+data/gesperrt_r
 data/gesperrt_car
 data/green
 data/handicap_l
@@ -634,7 +639,6 @@ lib/Tk/context_nohelp_mask.xbm
 lib/Tk/Enscript.pm
 lib/Tk/enscript.cfg
 lib/Tk/CanvasFig.pm
-lib/Tk/FileDialogExt.pm
 lib/Tk/FlatCheckbox.pm
 lib/Tk/FlatRadiobutton.pm
 lib/Tk/Getopt.pm

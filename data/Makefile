@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.2 2004/04/02 06:51:00 eserte Exp eserte $
+# $Id: Makefile,v 2.4 2004/04/08 21:38:45 eserte Exp $
 #
 
 BBBIKEDIR=		..
@@ -32,7 +32,8 @@ TARGETS+=	wasserstrassen wasserumland wasserumland2
 TARGETS+=	sbahn sbahnhof sbahnhof_bg rbahn rbahnhof
 TARGETS+=	ubahn ubahnhof ubahnhof_bg
 TARGETS+=	faehren hoehe orte orte2 orte_city ampeln ampelschaltung
-TARGETS+=	gesperrt gesperrt_car plz berlin potsdam deutschland
+TARGETS+=	gesperrt gesperrt_car gesperrt_u gesperrt_s gesperrt_r
+TARGETS+=	plz berlin potsdam deutschland
 TARGETS+=	sehenswuerdigkeit obst radwege radwege_exact
 TARGETS+=	qualitaet_s qualitaet_l
 TARGETS+=	handicap_s handicap_l
@@ -255,10 +256,17 @@ ampelschaltung:	ampelschaltung-orig
 	$(CONVERT2HAFAS) -ampelschaltung ampelschaltung-orig > ampelschaltung
 	-@$(READONLY) $@
 
-gesperrt:	gesperrt-orig strassen landstrassen
+gesperrt:	gesperrt-orig strassen landstrassen landstrassen2
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) -specsperre=strassen,landstrassen gesperrt-orig > gesperrt
+	$(CONVERT2HAFAS) -specsperre=strassen,landstrassen,landstrassen2 gesperrt-orig > gesperrt
 	-@$(READONLY) $@
+
+.for i in u s r
+gesperrt_$(i):	gesperrt_$(i)-orig $(i)bahn
+	-@$(WRITEABLE) $@
+	$(CONVERT2HAFAS) gesperrt_$(i)-orig | $(MISCSRCDIR)/check_dates -filter > gesperrt_$(i)
+	-@$(READONLY) $@
+.endfor
 
 gesperrt_car:	gesperrt_car-orig
 	-@$(WRITEABLE) $@
@@ -419,6 +427,7 @@ remove_checks:
 check:	.check_strassen1 .check_strassen2 \
 	.check_plaetze1 .check_plaetze2 .check_hoehe \
 	.check_ampeln .check_gesperrt1 .check_gesperrt2 \
+	.check_gesperrt_u2 .check_gesperrt_s2 .check_gesperrt_r2 \
 	.check_gesperrt_car1 .check_gesperrt_car2 \
 	.check_ubahnhof .check_sbahnhof .check_orte \
 	.check_radwege .check_ampelschaltung \
@@ -431,100 +440,107 @@ check:	.check_strassen1 .check_strassen2 \
 
 .check_strassen1:	.strassen.tmp add_str multi_bez_str
 	$(CHECK_STR_PLZ) -data .strassen.tmp
-	@touch .check_strassen1
+	@touch $@
 
 .check_strassen2:	.strassen.tmp str_cont_ausnahme
 	$(CHECK_CONT) -data .strassen.tmp
-	@touch .check_strassen2
+	@touch $@
 
 .check_plaetze1: plaetze .strassen.tmp
 	$(CHECK_POINTS) plaetze .strassen.tmp
-	@touch .check_plaetze1
+	@touch $@
 
 .check_plaetze2: plaetze add_plaetze
 	$(CHECK_STR_PLZ) -addstr add_plaetze -data plaetze -nomultibez
-	@touch .check_plaetze2
+	@touch $@
 
 .check_hoehe:	hoehe .strassen.tmp landstrassen landstrassen2 
 	$(CHECK_POINTS) hoehe .strassen.tmp landstrassen landstrassen2
-	@touch .check_hoehe
+	@touch $@
 
 .check_ampeln:	ampeln .strassen.tmp landstrassen landstrassen2
 	$(CHECK_POINTS) ampeln .strassen.tmp landstrassen landstrassen2
-	@touch .check_ampeln
+	@touch $@
 
 .check_ampelschaltung:	ampelschaltung-orig ampeln-orig
 	$(CHECK_POINTS) -ampelschaltung ampelschaltung-orig ampeln-orig
-	@touch .check_ampelschaltung
+	@touch $@
 
 .check_gesperrt1:	gesperrt .strassen.tmp landstrassen landstrassen2
 	$(CHECK_POINTS) gesperrt .strassen.tmp landstrassen landstrassen2
-	@touch .check_gesperrt1
+	@touch $@
 
 .check_gesperrt2:	gesperrt strassen landstrassen landstrassen2
 	$(CHECK_NEIGHBOUR) -type standard -data gesperrt \
 		-against strassen -against landstrassen -against landstrassen2
-	@touch .check_gesperrt2
+	@touch $@
+
+.for i in u s r
+.check_gesperrt_$(i)2:	gesperrt_$(i) $(i)bahn
+	$(CHECK_NEIGHBOUR) -type standard -data gesperrt_$(i) \
+		-against $(i)bahn
+	@touch $@
+.endfor
 
 .check_gesperrt_car1:	gesperrt_car .strassen.tmp landstrassen landstrassen2
 	$(CHECK_POINTS) gesperrt_car .strassen.tmp landstrassen landstrassen2
-	@touch .check_gesperrt_car1
+	@touch $@
 
 .check_gesperrt_car2:	gesperrt_car strassen landstrassen landstrassen2
 	$(CHECK_NEIGHBOUR) -type standard -data gesperrt_car \
 		-against strassen -against landstrassen -against landstrassen2
-	@touch .check_gesperrt_car2
+	@touch $@
 
 .check_ubahnhof:	ubahnhof ubahn
 	$(CHECK_POINTS) ubahnhof ubahn
-	@touch .check_ubahnhof
+	@touch $@
 
 .check_sbahnhof:	sbahnhof sbahn
 	$(CHECK_POINTS) sbahnhof sbahn
-	@touch .check_sbahnhof
+	@touch $@
 
 .check_orte: orte orte2 orte_city
 	$(CHECK_DOUBLE) orte orte2 orte_city
-	@touch .check_orte
+	@touch $@
 
 .check_radwege:	radwege_exact strassen
 	$(CHECK_NEIGHBOUR) -type standard -data radwege_exact
-	@touch .check_radwege
+	@touch $@
 
 .check_qualitaet_s:	qualitaet_s strassen
 	$(CHECK_NEIGHBOUR) -type standard -data qualitaet_s
-	@touch .check_qualitaet_s
+	@touch $@
 
 .check_qualitaet_l:	qualitaet_l landstrassen landstrassen2
 	$(CHECK_NEIGHBOUR) -type standard -origmap GISmap -data qualitaet_l \
 		-against landstrassen -against landstrassen2
-	@touch .check_qualitaet_l
+	@touch $@
 
 .check_handicap_s:	handicap_s strassen
 	$(CHECK_NEIGHBOUR) -type standard -data handicap_s
-	@touch .check_handicap_s
+	@touch $@
 
 .check_handicap_l:	handicap_l landstrassen landstrassen2
 	$(CHECK_NEIGHBOUR) -type standard -origmap GISmap -data handicap_l \
 		-against landstrassen -against landstrassen2
-	@touch .check_handicap_l
+	@touch $@
 
 .check_label:	label .strassen.tmp landstrassen landstrassen2
 	$(CHECK_POINTS) label .strassen.tmp landstrassen landstrassen2
-	@touch .check_label
+	@touch $@
 
 .check_vorfahrt:	vorfahrt strassen landstrassen landstrassen2
 	$(CHECK_NEIGHBOUR) -type standard -data vorfahrt \
 		-against strassen -against landstrassen -against landstrassen2
 	$(CHECK_COUNT) -type vorfahrt -data vorfahrt
-	@touch .check_vorfahrt
+	@touch $@
 
 .for i in $(COMMENTS_PARTIAL)
 .check_comments1:	.check_${i}_1
 
 .check_${i}_1:	$i .strassen.tmp landstrassen landstrassen2 faehren
 	$(CHECK_POINTS) $i .strassen.tmp landstrassen landstrassen2 faehren
-	@touch .check_${i}_1
+	@touch $@
 
 .check_comments2:	.check_${i}_2
 
@@ -532,32 +548,32 @@ check:	.check_strassen1 .check_strassen2 \
 	$(CHECK_NEIGHBOUR) -type standard \
 	    -against strassen -against landstrassen -against landstrassen2 \
 	    -against faehren -data $i
-	@touch .check_${i}_2
+	@touch $@
 .endfor
 
 .check_nolighting:	nolighting strassen
 	$(CHECK_NEIGHBOUR) -type standard -data nolighting
-	@touch .check_nolighting
+	@touch $@
 
 .check_housenumbers:	housenumbers-orig housenumbers .strassen.tmp
 	$(CHECK_HOUSENUMBERS) housenumbers-orig
 	$(CHECK_POINTS) housenumbers .strassen.tmp
-	@touch .check_housenumbers
+	@touch $@
 
 .check_sehenswuerdigkeit:	sehenswuerdigkeit
 	$(CHECK_IMAGES) sehenswuerdigkeit
-	@touch .check_sehenswuerdigkeit
+	@touch $@
 
 .check_green:	green strassen landstrassen
 	$(CHECK_NEIGHBOUR) -type standard -data green \
 		-against strassen -against landstrassen
-	@touch .check_green
+	@touch $@
 
 # XXX against landstrassen, too?
 .check_brunnels:	brunnels strassen landstrassen landstrassen2
 	$(CHECK_NEIGHBOUR) -type standard -data brunnels \
 	    -against strassen -against landstrassen -against landstrassen2
-	@touch .check_brunnels
+	@touch $@
 
 #.PHONY: .modified
 

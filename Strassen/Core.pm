@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.36 2004/04/07 21:36:27 eserte Exp $
+# $Id: Core.pm,v 1.36 2004/04/07 21:36:27 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the

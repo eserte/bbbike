@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_dates,v 1.4 2004/01/02 23:52:15 eserte Exp $
+# $Id: check_dates,v 1.6 2004/04/08 21:39:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -19,43 +19,73 @@ use lib ("$FindBin::RealBin/..",
 	);
 use Strassen::Core;
 use Object::Iterate qw(iterate);
+use Getopt::Long;
 use strict;
 
+my $do_filter;
 my @l = localtime;
 my $today = sprintf "%04d-%02d-%02d", $l[5]+1900, $l[4]+1, $l[3];
+
+if (!GetOptions("filter!" => \$do_filter,
+		"today=s" => \$today)) {
+    die <<EOF;
+usage: $0 [-filter] [-today YYYY-MM-SS] files
+EOF
+}
 
 my $isodaterx = qr/\b\d{4}-\d{2}-\d{2}\b/;
 my $eudaterx  = qr/\b([0123]?\d)\.([01]?\d)\.(\d{4})\b/;
 
+if (!@ARGV) {
+    push @ARGV, "-";
+}
 for my $file (@ARGV) {
     my $s = Strassen->new($file, PreserveLineInfo => 1);
     iterate {
 	my($start_date, $end_date);
-	if      ($_->[Strassen::NAME] =~
-		 /\b(?: seit|ab )\s+(?: dem\s+ )? ($isodaterx)/x) {
-	    $start_date = $1;
-	} elsif ($_->[Strassen::NAME] =~
-		 /\b(?: seit|ab )\s+(?: dem\s+ )? $eudaterx/x){
-	    $start_date = sprintf "%04d-%02d-%02d", $3, $2, $1;
-	} elsif ($_->[Strassen::NAME] =~
-		 /(?: ($isodaterx) )? # start date (optional)
+	if ($_->[Strassen::NAME] =~
+		 /($isodaterx) # start date
 		  .*
-		   ($isodaterx)         # end date
-		   /x) {
+		  ($isodaterx) # end date
+		  /x) {
 	    ($start_date, $end_date) = ($1, $2);
 	} elsif ($_->[Strassen::NAME] =~
-		 /(?: $eudaterx )? # start date (optional)
+		 /$eudaterx # start date
 		  .*
-		  $eudaterx         # end date
+		  $eudaterx # end date
 		  /x) {
-	    if (defined $1) {
-		$start_date = sprintf "%04d-%02d-%02d", $3, $2, $1;
-	    }
+	    $start_date = sprintf "%04d-%02d-%02d", $3, $2, $1;
 	    $end_date = sprintf "%04d-%02d-%02d", $6, $5, $4;
+	} elsif ($_->[Strassen::NAME] =~
+		 /\b(?: seit|ab|vom )\s+(?: dem\s+ )? ($isodaterx)/xi) {
+	    $start_date = $1;
+	} elsif ($_->[Strassen::NAME] =~
+		 /\b(?: seit|ab|vom )\s+(?: dem\s+ )? $eudaterx/xi){
+	    $start_date = sprintf "%04d-%02d-%02d", $3, $2, $1;
+	} elsif ($_->[Strassen::NAME] =~
+		 /($isodaterx)      # end date
+		  /x) {
+	    ($end_date) = ($1);
+	} elsif ($_->[Strassen::NAME] =~
+		 /$eudaterx         # end date
+		  /x) {
+	    $end_date = sprintf "%04d-%02d-%02d", $3, $2, $1;
 	}
-	if (defined $end_date) {
-	    if ($end_date lt $today) {
-		print "$file:" . $s->line . " $_->[Strassen::NAME] expired\n";
+	if ($do_filter) {
+	    if ((defined $start_date && defined $end_date &&
+		 $start_date le $today &&
+		 $end_date ge $today) ||
+		(!defined $start_date && defined $end_date &&
+		 $end_date ge $today) ||
+		(defined $start_date && !defined $end_date &&
+		 $start_date le $today)) {
+		print Strassen::arr2line2($_), "\n";
+	    }
+	} else {
+	    if (defined $end_date) {
+		if ($end_date lt $today) {
+		    print "$file:" . $s->line . " $_->[Strassen::NAME] expired\n";
+		}
 	    }
 	}
     } $s;

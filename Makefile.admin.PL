@@ -31,10 +31,12 @@ use constant POD_HTML  => 1;
 use constant POD_TITLE => 2; # XXX do not put double quotes into title
 #        podfile         htmlfile             title
 my @pods = 
-    ([qw(bbbike.pod      bbbike.html),        "Dokumentation für BBBike"],
+    (
+     [qw(bbbike.pod      bbbike.html),        "Dokumentation für BBBike"],
      [qw(README          README.html),        "README für BBBike"],
      [qw(README.english  README.english.html),"README for BBBike"],
      [qw(bbd.pod         bbd.html),           "BBD file format"],
+     [qw(bbbike_internals.pod      bbbike_internals.html),        "BBBike Internals"],
      );
 my $all_pods = join " ", map { $_->[POD_POD] } @pods;
 my $all_html = join " ", map { $_->[POD_HTML] } @pods;

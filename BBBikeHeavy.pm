@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.13 2004/03/22 23:46:26 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.13 2004/03/22 23:46:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -489,7 +489,7 @@ sub BBBikeHeavy::getmap {
 
     if (!$args{-fallback} && $use_map_fallback) {
 	$args{-fallback} = [ grep { $_ ne $type }
-			     "b2002", "b2003", "brbmap", "de2002"
+			     "b2002", "b2003", "b2004", "brbmap", "de2002"
 			   ];
     }
 
