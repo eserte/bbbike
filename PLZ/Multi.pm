@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Multi.pm,v 1.11 2004/06/15 07:26:23 eserte Exp $
+# $Id: Multi.pm,v 1.12 2004/06/16 22:23:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package PLZ::Multi;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
 
 use Getopt::Long qw(GetOptions);
 BEGIN {
@@ -74,9 +74,7 @@ sub new {
 	             join("_", map { basename $_ } @files);
     my $cachefile = Strassen::Util::get_cachefile($cachetoken);
     if ($args{cache}) {
-warn $cachefile;
 	if (Strassen::Util::cache_is_recent($cachefile, \@files)) {
-warn "is recent";
 	    $combined = $cachefile;
 	    goto FINISH;
 	}
