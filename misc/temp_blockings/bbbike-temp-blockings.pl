@@ -240,4 +240,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Budapester Straße, Stülerstraße, zwischen Klingelhöferstraße und Kurfürstenstrsße in beiden Richtungen für den Durchgangsverkehrgesperrt. Konferenz. Dauer: 20.03.2004, 14.00 Uhr bis 01.04.2004, 18.00 Uhr',
        type  => 'gesperrt',
      },
+     { from  => 1081476000, # 2004-04-09 04:00
+       until => 1081807200, # 2004-04-13 00:00
+       file  => 'artists_boulevard.bbd',
+       text  => 'Potsdamer Straße zwischen Schöneberger Ufer und Pohlstraße in beiden Richtungen gesperrt, Veranstaltung (Boulevard des Artistes). Dauer: 10.04.2004, 04:00 Uhr bis 12.04.2004, 24:00 Uhr',
+       type  => 'gesperrt',
+     },
     );

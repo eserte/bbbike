@@ -8529,7 +8529,7 @@ sub activate_temp_blockings {
 	    }
 	}
 	if (!@s) {
-	    status_message("Keine aktiven temporaeren Sperrungen", "warn");
+	    warn "Keine aktiven temporären Sperrungen\n" if $verbose;
 	    return;
 	}
 	my $ms = MultiStrassen->new(@s);
@@ -16370,7 +16370,7 @@ sub slow_postscript_generation {
 sub start_process {
     my($token, $gather_command, $action_command) = @_;
     if (defined $processes{$token}) {
-	status_message(M("Der Prozess $token laeuft noch (PID $processes{$token}) XXX"), "die");
+	status_message(M("Der Prozess $token läuft noch (PID $processes{$token}) XXX"), "die");
 	# XXX Abschiessen blabla
     }
     if (!$Config{d_fork}) {

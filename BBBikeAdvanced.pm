@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.91 2004/03/26 22:08:50 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.91 2004/03/26 22:08:50 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1635,6 +1635,8 @@ sub check_new_modules {
     no strict 'refs';
     my $pkg = shift;
     $pkg = 'main' if (!defined $pkg);
+    my $loop = shift || 0;
+    die "Recursion break on $pkg", return if $loop > 10;
     #warn "checking new modules for $pkg..." if $verbose; # nervig
     my %inc = %{$pkg."::INC"};
     while(my($k, $v) = each %inc) {
@@ -1652,7 +1654,7 @@ sub check_new_modules {
 			  ? $1
 			  : $pkg . "::" . $1);
 	    if (!exists $module_check{$subpkg}) {
-		check_new_modules($subpkg);
+		check_new_modules($subpkg, $loop+1);
 	    }
 	}
     }

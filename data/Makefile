@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.1 2004/03/29 21:40:57 eserte Exp eserte $
+# $Id: Makefile,v 2.2 2004/04/02 06:51:00 eserte Exp eserte $
 #
 
 BBBIKEDIR=		..
@@ -83,8 +83,13 @@ origconvert:	$(ORIGCONVERTDIR) $(TARGETS3) \
 		$(ORIGCONVERTDIR)/ampelschaltung-orig \
 		$(ORIGCONVERTDIR)/ampelschaltung-orig.txt
 
-origconvert-all:
+origconvert-all:	origconvert-all1 origconvert-all2
+
+origconvert-all1:
 	cd $(ORIGCONVERTDIR) && make BBBIKEDIR=${.CURDIR}/..
+
+origconvert-all2:
+	cd $(ORIGCONVERTDIR) && make -f ${.CURDIR}/../misc/Makefile BBBIKEDIR=${.CURDIR}/.. DATADIR=$(ORIGCONVERTDIR)
 
 
 .PHONY: $(ORIGCONVERTDIR)
@@ -95,7 +100,7 @@ $(ORIGCONVERTDIR):
 	fi
 	cp -f Makefile $(ORIGCONVERTDIR)
 	cp -f Makefile.mapfiles $(ORIGCONVERTDIR)
-	perl -pe 's/\t+./\tH/' < BASE > $(ORIGCONVERTDIR)/BASE
+	cat BASE $(MISCDIR)/BASE | perl -pe 's/\t+./\tH/' > $(ORIGCONVERTDIR)/BASE
 
 .for f in $(TARGETS2)
 $(ORIGCONVERTDIR)/$f:	$f

@@ -160,7 +160,8 @@ if (!defined $use_map) {
     my $f_dir  = dirname($f);
     my $f_base = basename($f);
     if ($base_file) {
-	$f_base = $base_file;
+	$f_dir = dirname($base_file);
+	$f_base = basename($base_file);
     }
     my $BASE   = "$f_dir/BASE";
     if (!open(BASE, $BASE)) {
@@ -541,7 +542,12 @@ sub do_ampelschaltung {
 	next if /^\#/;
 	my($c, $r) = split(/\t/, $_, 2);
 	my($x, $y) = split(/,/, $c);
-	my($newx, $newy) = berlinmap2hafas($x, $y);
+	my($newx,$newy);
+	if ($use_map eq 'H') {
+	    ($newx, $newy) = ($x, $y);
+	} else { # only support for "B" map!
+	    ($newx, $newy) = berlinmap2hafas($x, $y);
+	}
 	print "$newx,$newy\t$r\n";
     }
     close F;
@@ -559,7 +565,12 @@ sub do_ampelschaltung2 {
 	next if /^\#/;
 	if (/^(\d+),(\d+)/) {
 	    my($x, $y) = ($1, $2);
-	    my($newx, $newy) = berlinmap2hafas($x, $y);
+	    my($newx,$newy);
+	    if ($use_map eq 'H') {
+		($newx, $newy) = ($x, $y);
+	    } else { # only support for "B" map!
+		($newx, $newy) = berlinmap2hafas($x, $y);
+	    }
 	    $_ = Text::Tabs::expand($_);
 	    substr($_, 0, 13) = substr("$newx,$newy" . " "x13, 0, 13);
 	}
