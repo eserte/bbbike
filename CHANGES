@@ -3,6 +3,29 @@ BBBike RELEASE 3.14
 bbbike (ptk)
 - fixed some zoom problems (place labels, start/via/goal flags)
 - some other bugfixes
+- new -lazy option for lazy drawing of layers
+- better slope calculation
+- "Zugbruecke" icon
+- optional automatic drawing of temporary blocked streets (-tempblockings
+  option)
+- personal place: new "show all" checkbutton
+- the shortcut for quit changed from q to Control-q
+- new shortcut for search: /
+- draw additional layers: now with an extra dialog for setting line width etc.
+- experimental support for .e00 data
+
+Data
+- comments is splitted into comments_cyclepath comments_ferry comments_misc
+  comments_mount comments_path comments_route comments_tram
+  comments_kfzverkehr (the last one is new)
+- Berlin-Kreuzberg is complete (except for some dead end streets)
+
+Modules
+- BBBikeDraw::* is now (often) faster due to usage of grids
+- VectorUtil::Inline is now an XS module (not Inline::C anymore)
+
+Misc
+- improved bbd documentation (with new directives)
 
 ----------------------------------------------------------------------
 
