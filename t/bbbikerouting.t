@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.19 2004/08/27 07:23:52 eserte Exp $
+# $Id: bbbikerouting.t,v 1.20 2004/12/13 08:06:39 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -15,7 +15,6 @@ use Strassen::Util;
 use Benchmark;
 use Getopt::Long;
 use Data::Dumper;
-$Data::Dumper::Sortkeys = $Data::Dumper::Sortkeys = 1;
 
 BEGIN {
     if (!eval q{
@@ -29,12 +28,36 @@ BEGIN {
     }
 }
 
+if (!eval {
+    require Test::Differences;
+    import Test::Differences;
+    1;
+}) {
+    *eq_or_diff = sub {
+	my($a, $b, $info) = @_;
+
+    SKIP: {
+	    eval {
+		Data::Dumper->VERSION(2.12); # Sortkeys
+	    };
+	    if ($@) {
+		skip("Need recent Data::Dumper (2.12, Sortkeys)", 1);
+	    }
+
+	    local $Data::Dumper::Sortkeys = $Data::Dumper::Sortkeys = 1;
+	    is(Data::Dumper->new([$a],[])->Useqq(1)->Dump,
+	       Data::Dumper->new([$b],[])->Useqq(1)->Dump,
+	       $info);
+	}
+    };
+}
+
 my $num_tests = 63; # basic number of tests
 
 use vars qw($single $all $common $bench $v $do_xxx);
 
 use vars qw($token %times $cmp_path
-	    $usexs $algorithm $usenetserver $usecache $cachetype);
+	    $usexs $algorithm @algorithm $usenetserver $usecache $cachetype);
 
 $common = 1;
 if (!GetOptions("full|slow|all" => sub { $all = 1 },
@@ -44,7 +67,7 @@ if (!GetOptions("full|slow|all" => sub { $all = 1 },
 		"xxx" => \$do_xxx,
 
 		"usexs!"        => sub { $common = 0; $usexs = $_[1] },
-		"algorithm=s"   => sub { $common = 0; $algorithm = $_[1] },
+		'algorithm=s@'  => sub { $common = 0; push @algorithm, $_[1] },
 		"usenetserver!" => sub { $common = 0; $usenetserver = $_[1] },
 		"usecache!"     => sub { $common = 0; $usecache = $_[1] },
 		"cachetype=s"   => sub { $common = 0; $cachetype = $_[1] },
@@ -79,8 +102,10 @@ if ($common) {
 	 [1, 0, 1, "CDB_File", "C-A*-2"], # radlstadtplan
 	);
 } elsif (!$all) {
-    push @runs, [$usexs, $usenetserver, $usecache,
-		 $cachetype, $algorithm];
+    for my $algorithm (@algorithm) {
+	push @runs, [$usexs, $usenetserver, $usecache,
+		     $cachetype, $algorithm];
+    }
 } else {
     # run twice to get the cache effect!
     my @cachetypes;
@@ -200,26 +225,15 @@ sub do_tests {
     is($routing->RouteInfo->[-1]->{Street}, $routing->Goal->Street);
 
     $routing->delete_to_last_via;
- SKIP: {
-	eval {
-	    Data::Dumper->VERSION(2.12); # Sortkeys
-	};
-	if ($@) {
-	    skip("Need recent Data::Dumper (2.12)", 3);
-	}
 
-	is(Data::Dumper->new([$routing->Path],[])->Useqq(1)->Dump,
-	   Data::Dumper->new([$path],[])->Useqq(1)->Dump);
-	is(Data::Dumper->new([$routing->RouteInfo],[])->Useqq(1)->Dump,
-	   Data::Dumper->new([$routeinfo],[])->Useqq(1)->Dump);
+    eq_or_diff($routing->Path, $path, "Path after continuation and cropping ok");
+    eq_or_diff($routing->RouteInfo, $routeinfo, "Routeinfo after continuation and cropping ok");
 
-	if ($cmp_path) {
-	    is(Data::Dumper->new([$cmp_path],[])->Useqq(1)->Dump,
-	       Data::Dumper->new([$path],[])->Useqq(1)->Dump);
-	} else {
-	    $cmp_path = $path;
-	    ok(1);
-	}
+    if ($cmp_path) {
+	eq_or_diff($cmp_path, $path, "Path is the same as in the previous run");
+    } else {
+	$cmp_path = $path;
+	pass("No previous run, no path to compare");
     }
 
     my $custom_pos = BBBikeRouting::Position->new;

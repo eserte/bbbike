@@ -76,7 +76,7 @@ if (!defined $cacheprefix) {
 #  Data::Dumper:  5s
 #  ohne Cache:    2s
 if (!@cacheable && !$cacheable_array_set) {
-    @cacheable = qw(CDB_File VirtArray Storable);
+    @cacheable = qw(CDB_File_Flat CDB_File VirtArray Storable);
 }
 
 # Argument: [x1,y1], [x2, y2]
@@ -231,6 +231,7 @@ sub cache_ext {
      'Storable'     => '.st',
      'Data::Dumper' => '.pl',
      'CDB_File'     => '.st.cdb',
+     'CDB_File_Flat'=> '.cdb',
     }->{$_[0]};
 }
 
@@ -289,6 +290,18 @@ sub try_cache {
 		    return ($cache_type, $filename);
 		}
 	    }
+	} elsif ($cache_type eq 'CDB_File_Flat') {
+	    next if defined $ref && ref $ref ne 'HASH';
+	    next if !$args{-flathash} || $args{-modifiable};
+	    eval q{ local $SIG{'__DIE__'};
+		    require CDB_File;
+	          };
+	    #warn $@ if $@;
+	    next if $@;
+	    next if !$write && !-f $filename;
+	    warn "CDB_File_Flat NYI"; # XXX
+	    next; # XXX
+	    return ($cache_type, $filename);
 	} elsif ($cache_type eq 'CDB_File') {
 	    next if defined $ref && ref $ref ne 'HASH';
 	    next if $args{-modifiable};
@@ -400,6 +413,10 @@ the source files @$srcref.\n" if $VERBOSE;
 	my @a;
 	tie @a, 'VirtArray', $cachepath;
 	\@a;
+    } elsif ($cache_func_found eq 'CDB_File_Flat') {
+	my %a;
+	tie %a, 'CDB_File', $cachepath or die "Can't tie $cachepath: $!";
+	\%a;
     } elsif ($cache_func_found eq 'CDB_File') {
 	local $MLDBM::UseDB = 'CDB_File';
 	local $MLDBM::Serializer = 'Storable';
@@ -446,6 +463,17 @@ sub write_cache {
 	}
     } elsif ($cache_func_found eq 'VirtArray') {
 	VirtArray::store($ref, $cachepath);
+    } elsif ($cache_func_found eq 'CDB_File_Flat') {
+	my $t = new CDB_File ($cachepath, "$cachepath.$$")
+	    or die "Can't create cache file $cachepath with CDB_File: $!";
+	while(my($k,$v) = each %$ref) {
+	    $t->insert($k, $v);
+	}
+	$t->finish or die "CDB_File finish of $cachepath failed: $!\n";
+	if (!-r $cachepath || !-s $cachepath) {
+	    die "Really can't create cache file $cachepath with CDB_File";
+	}
+	1;
     } elsif ($cache_func_found eq 'CDB_File') {
 	my $t = new CDB_File ($cachepath, "$cachepath.$$")
 	    or die "Can't create cache file $cachepath with CDB_File: $!";
@@ -458,7 +486,7 @@ sub write_cache {
 	}
 	$t->finish or die "CDB_File finish of $cachepath failed: $!\n";
 	if (!-r $cachepath || !-s $cachepath) {
-	    die "Really can't create cache file $cachepath with CDB_File";
+	    die "Really can't create cache file $cachepath with CDB_File (MLDBM, Storable)";
 	}
 	1;
     } elsif (defined $cache_func_found) {

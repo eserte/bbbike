@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.80 2004/12/08 22:24:33 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.80 2004/12/08 22:24:33 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3211,7 +3211,7 @@ sub temp_blockings_editor {
 	my $f = $t->LabFrame(-label => M"Metadaten",
 			     -labelside => "acrosstop");
 	Tk::grid($f, -sticky => "ew", -columnspan => $cs);
-	$f->Radiobutton(-text => M"Nichts",
+	$f->Radiobutton(-text => M"Nach STDERR schreiben",
 			-value => "",
 			-variable => \$meta_data_handling,
 		       )->pack(-anchor => "w");

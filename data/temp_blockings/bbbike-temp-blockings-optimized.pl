@@ -174,7 +174,14 @@ userdel	q4 21637,30946 21955,30976
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'until' => 1102892400,
+         'text' => 'Sophienstraße, zwischen Große Hamburger Straße und Rosenthaler Straße, für den Fahrzeugverkehr gesperrt (9. Umwelt- und Weihnachtsmarkt). Dauer: 11.12.2004 06:00 Uhr bis 12.12.2004 24:00 Uhr ',
+         'from' => 1102654800,
+         'data' => 'userdel	2 9982,13411 10312,13231
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        {

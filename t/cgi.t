@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.26 2004/06/13 22:01:58 eserte Exp $
+# $Id: cgi.t,v 1.27 2004/12/13 08:06:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004 Slaven Rezic. All rights reserved.
@@ -82,17 +82,20 @@ for my $cgiurl (@urls) {
     my $content;
     my $req = new HTTP::Request('GET', $cgiurl, $hdrs);
     my $res = $ua->request($req);
-    ok($res->is_success, $cgiurl) or diag $res->as_string;
-    like($res->header('Content_Type'), qr|^text/html(?:; charset=ISO-8859-1)?$|);
+    ok($res->is_success, "Simple $cgiurl request")
+	or diag $res->as_string;
+    like($res->header('Content_Type'),
+	 qr|^text/html(?:; charset=ISO-8859-1)?$|, "Expect text/html");
     $content = uncompr($res);
-    like($content, qr/Dieses Programm sucht .*Fahrrad-.*Routen in Berlin/);
+    like($content, qr/Dieses Programm sucht .*Fahrrad-.*Routen in Berlin/,
+	 "Expected introduction text in body");
 
     my $action;
     if ($content =~ /form action=\"([^\"]+)\"/i) {
-	ok(1);
+	pass("Form found");
 	$action = $1;
     } else {
-	ok(0);
+	pass("No form found");
 	$action = $cgiurl;
     }
 

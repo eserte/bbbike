@@ -1,7 +1,7 @@
 # -*- c -*-
 
 #
-# $Id: Inline.pm,v 2.26 2004/01/03 21:15:20 eserte Exp $
+# $Id: Inline.pm,v 2.28 2004/12/12 19:53:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ package Strassen::Inline;
 require 5.005; # new semantics of hv_iterinit
 
 BEGIN {
-    $VERSION = sprintf("%d.%02d", q$Revision: 2.26 $ =~ /(\d+)\.(\d+)/);
+    $VERSION = sprintf("%d.%02d", q$Revision: 2.28 $ =~ /(\d+)\.(\d+)/);
 }
 
 use Cwd;
@@ -48,8 +48,8 @@ BEGIN {
 use Inline 0.40; # because of API changes
 use Config;
 #use Inline Config => CLEAN_AFTER_BUILD => 0;   #XXX debugging, both needed
-#use Inline C => Config => CCFLAGS => "-g -O2"; #XXX debugging
-#use Inline C => Config => CCFLAGS => "-g"; #XXX debugging, faster
+#use Inline C => Config => CCFLAGS => "-g -O2 -DDUMP_NODES"; #XXX debugging
+#use Inline C => Config => CCFLAGS => "-g -DDUMP_NODES"; #XXX debugging, faster
 use Inline (C => DATA =>
 # ***FILTER=1***
 	    NAME => 'Strassen::Inline',
@@ -135,7 +135,11 @@ void _dump_ptr(int d1, int d2) { }
 # define PLACEHOLDER "%s"
 #endif
 
+#ifdef HAS_HEAP
+#define OPEN_empty   OPEN_heap->heap_size == 0
+#else
 #define OPEN_empty   hv_iterinit(OPEN) == 0
+#endif
 
 static HV* NODES = Nullhv; /* should not be global, but is here because of heap_cmp ... */
 
@@ -151,7 +155,7 @@ static int heap_cmp(void* a, void* b) {
   /* no checks to be as fast as possible */
   node_a = hv_fetch(NODES, COORD_HV_VAL(key_a), COORD_HV_LEN(key_a), 0);
   node_b = hv_fetch(NODES, COORD_HV_VAL(key_b), COORD_HV_LEN(key_a), 0);
-#else
+#else /* NO MMAP IMPL */
   node_a = hv_fetch(NODES, (char*)a, strlen((char*)a), 0);
   node_b = hv_fetch(NODES, (char*)b, strlen((char*)b), 0);
 #endif
@@ -159,8 +163,9 @@ static int heap_cmp(void* a, void* b) {
   sn_b = (search_node*)SvIV(*node_b);
   return (sn_a->heuristic_dist < sn_b->heuristic_dist);
 }
-#endif
+#endif /* HAS_HEAP */
 
+/* Number of fixed arguments in search_c */
 #define SEARCH_C_ARGS 3
 void search_c(SV* self, char* from, char* to, ...) {
   HV* self_hash = Nullhv;
@@ -175,15 +180,23 @@ void search_c(SV* self, char* from, char* to, ...) {
 
 #ifdef HAS_HEAP
   heap_context OPEN_heap = heap_new(heap_cmp, NULL, 0);
+#else
+  HV* OPEN   = newHV();
 #endif
 
-  HV* OPEN   = newHV();
   HV* CLOSED = newHV();
 
 #ifdef USE_MMAP_IMPL
   int from_ptr, to_ptr;
   int from_x, from_y;
   int to_x, to_y;
+#endif
+
+#ifdef USE_MMAP_IMPL
+#define PTR_TO_X_COORD(ptr) \
+	(*((int*)(c_net_mmap+ptr)))
+#define PTR_TO_Y_COORD(ptr) \
+	(*(((int*)(c_net_mmap+from_ptr))+1))
 #endif
 
   SV* tmp;
@@ -259,16 +272,16 @@ void search_c(SV* self, char* from, char* to, ...) {
       croak("Cannot find start coordinate `%s' in net", from);
     from_ptr = SvIV(*tmp2);
 
-    from_x = *((int*)(c_net_mmap+from_ptr));
-    from_y = *(((int*)(c_net_mmap+from_ptr))+1);
+    from_x = PTR_TO_X_COORD(from_ptr);
+    from_y = PTR_TO_Y_COORD(from_ptr);
 
     tmp2 = hv_fetch(c_net_coord2ptr, to, strlen(to), 0);
     if (!tmp2)
       croak("Cannot find goal coordinate `%s' in net", to);
     to_ptr = SvIV(*tmp2);
 
-    to_x = *((int*)(c_net_mmap+to_ptr));
-    to_y = *(((int*)(c_net_mmap+to_ptr))+1);
+    to_x = PTR_TO_X_COORD(to_ptr);
+    to_y = PTR_TO_Y_COORD(to_ptr);
   }
 #endif
 
@@ -287,14 +300,16 @@ void search_c(SV* self, char* from, char* to, ...) {
 #ifdef USE_MMAP_IMPL
 #  ifdef HAS_HEAP
     heap_insert(OPEN_heap, (void*) from_ptr);
-#  endif
+#  else
     hv_store(OPEN,  COORD_HV_VAL(from_ptr), COORD_HV_LEN(from_ptr), &PL_sv_yes, 0);
+#  endif
     hv_store(NODES, COORD_HV_VAL(from_ptr), COORD_HV_LEN(from_ptr), newSViv((IV)first_node), 0);
 #else
 #  ifdef HAS_HEAP
     heap_insert(OPEN_heap, (void*) from);
-#  endif
+#  else
     hv_store(OPEN,  COORD_HV_VAL(from), COORD_HV_LEN(from), &PL_sv_yes, 0);
+#  endif
     hv_store(NODES, COORD_HV_VAL(from), COORD_HV_LEN(from), newSViv((IV)first_node), 0);
 #endif
   }
@@ -361,9 +376,10 @@ void search_c(SV* self, char* from, char* to, ...) {
       hv_store(CLOSED, COORD_HV_VAL(min_node), min_node_len, &PL_sv_yes, 0);
 #ifdef HAS_HEAP
       heap_delete(OPEN_heap, 1);
-#endif
+#else
       tmp = hv_delete(OPEN, COORD_HV_VAL(min_node), min_node_len, G_DISCARD);
       if (tmp != Nullsv) SvREFCNT_dec(tmp);
+#endif
 
       /* Route found? */
 #ifdef USE_MMAP_IMPL
@@ -588,8 +604,9 @@ void search_c(SV* self, char* from, char* to, ...) {
 	      hv_store(NODES, COORD_HV_VAL(succ_key), succ_key_len, newSViv((IV)new_sn), 0);
 #ifdef HAS_HEAP
 	      heap_insert(OPEN_heap, (void*) succ_key);
-#endif
+#else
 	      hv_store(OPEN, COORD_HV_VAL(succ_key), succ_key_len, &PL_sv_yes, 0);
+#endif
 	    } else {
 	      SV** tmp2 = hv_fetch(NODES, COORD_HV_VAL(succ_key), succ_key_len, 0);
 	      search_node* old_sn = (search_node*)SvIV(*tmp2);
@@ -600,8 +617,9 @@ void search_c(SV* self, char* from, char* to, ...) {
 		if (hv_exists(CLOSED, COORD_HV_VAL(succ_key), succ_key_len)) {
 #ifdef HAS_HEAP
 		  heap_insert(OPEN_heap, (void*) succ_key);
-#endif
+#else
 		  hv_store(OPEN, COORD_HV_VAL(succ_key), succ_key_len, &PL_sv_yes, 0);
+#endif
 		  tmp = hv_delete(CLOSED, COORD_HV_VAL(succ_key), succ_key_len, G_DISCARD);
 		  if (tmp != Nullsv) SvREFCNT_dec(tmp);
 		} else { /* exists in OPEN */
@@ -638,9 +656,53 @@ done:
   if (OPEN_heap) {
     heap_free(OPEN_heap);
   }
-#endif
+#else
   SvREFCNT_dec(OPEN);
+#endif
   SvREFCNT_dec(CLOSED);
+
+#if defined(USE_MMAP_IMPL) && defined(DUMP_NODES)
+  {
+    HV* c_net_ptr2coord = newHV();
+    hv_iterinit(c_net_coord2ptr);
+    {
+      HE* he;
+      while(he = hv_iternext(c_net_coord2ptr)) {
+	SV* key_sv = hv_iterkeysv(he);
+	SV* val_sv = hv_iterval(c_net_coord2ptr, he);
+	int val_len;
+	char* val = SvPV(val_sv, val_len);
+	hv_store(c_net_ptr2coord, val, val_len, key_sv, 0);
+      }
+    }
+
+    if (!hv_iterinit(NODES))
+      croak("Cannot iterate NODES");
+
+    {
+      HE* NODES_he;
+      SV* ptrIV = sv_2mortal(newSViv(0));
+      while(NODES_he = hv_iternext(NODES)) {
+	SV* node_sv = hv_iterval(NODES, NODES_he);
+	search_node* sn = (search_node*)SvIV(node_sv);
+	int pred_x = *((int*)(c_net_mmap + sn->predecessor));
+	int pred_y = *(((int*)(c_net_mmap + sn->predecessor))+1);
+
+	I32 keylen;
+	char* key = hv_iterkey(NODES_he, &keylen);
+	SV** coord;
+	int ptr = *(int*)key;
+	char* ptrIVch;
+	int ptrIVlen;
+	sv_setiv(ptrIV, ptr);
+	ptrIVch = SvPV(ptrIV, ptrIVlen);
+	coord = hv_fetch(c_net_ptr2coord, ptrIVch, ptrIVlen, 0);
+
+	warn("(%s) <- (%d,%d) %d %d\n", (coord ? SvPV(*coord, PL_na) : "?"), pred_x, pred_y, sn->dist, sn->heuristic_dist);
+      }
+    }
+  }
+#endif
 
   if (hv_iterinit(NODES)) {
     HE* NODES_he;

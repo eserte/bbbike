@@ -1,15 +1,11 @@
 #
-# $Id: Makefile,v 1.19 2004/01/13 18:40:02 eserte Exp $
+# $Id: Makefile,v 1.20 2004/12/12 20:32:42 eserte Exp $
 #
-
-# XXX Installieren immer über *dieses* Makefile (wegen INLINE2DIST)!!!
-# (in Zukunft INLINE2DIST besser in den einzelnen makefiles vor install aufrufen)
 
 # cygwin: failures while building in some directories. Solution:
 # build with "make -k" and try again
 
 PERL?=perl
-INLINE2DIST=$(PERL) ../inline2dist.pl
 
 all:	clean build
 
@@ -52,7 +48,7 @@ ext-strassennetz-cnetfile-clean:
 	-cd StrassenNetz-CNetFile && $(PERL) Makefile.PL && ${MAKE} clean && rm -f Makefile.old
 
 ext-strassennetz-cnetfile-build:
-	cd StrassenNetz-CNetFile && $(INLINE2DIST) StrassenNetz::CNetFile && $(PERL) Makefile.PL && rm -f Inline.inl && env PERL5LIB=../..:../../lib:$$PERL5LIB ${MAKE} ${.MAKEFLAGS}
+	cd StrassenNetz-CNetFile && $(PERL) Makefile.PL && rm -f Inline.inl && env PERL5LIB=../..:../../lib:$$PERL5LIB ${MAKE} ${.MAKEFLAGS}
 
 ext-strassennetz-cnetfile-test:
 	cd StrassenNetz-CNetFile && env PERL5LIB=../..:../../lib:$$PERL5LIB ${MAKE} ${.MAKEFLAGS} test
@@ -65,7 +61,7 @@ ext-strassen-inline-clean:
 	-cd Strassen-Inline && $(PERL) Makefile.PL && ${MAKE} clean && rm -f Makefile.old
 
 ext-strassen-inline-build:
-	cd Strassen-Inline && $(INLINE2DIST) Strassen::Inline && $(PERL) Makefile.PL && rm -f Inline.inl && ${MAKE} ${.MAKEFLAGS}
+	cd Strassen-Inline && $(PERL) Makefile.PL && rm -f Inline.inl && ${MAKE} ${.MAKEFLAGS}
 
 ext-strassen-inline-test:
 	cd Strassen-Inline && ${MAKE} ${.MAKEFLAGS} test
@@ -78,7 +74,7 @@ ext-strassen-inline2-clean:
 	-cd Strassen-Inline2 && $(PERL) Makefile.PL && ${MAKE} clean && rm -f Makefile.old
 
 ext-strassen-inline2-build:
-	cd Strassen-Inline2 && $(INLINE2DIST) Strassen::Inline2 && $(PERL) Makefile.PL && rm -f Inline.inl && ${MAKE} ${.MAKEFLAGS}
+	cd Strassen-Inline2 && $(PERL) Makefile.PL && rm -f Inline.inl && ${MAKE} ${.MAKEFLAGS}
 
 ext-strassen-inline2-test:
 	cd Strassen-Inline2 && env PERL5OPT=-Mblib=../StrassenNetz-CNetFile ${MAKE} ${.MAKEFLAGS} test
@@ -91,7 +87,7 @@ ext-vectorutil-inline-clean:
 	-cd VectorUtil-Inline && $(PERL) Makefile.PL && ${MAKE} clean && rm -f Makefile.old
 
 ext-vectorutil-inline-build:
-	cd VectorUtil-Inline && $(INLINE2DIST) VectorUtil::Inline && $(PERL) Makefile.PL && rm -f Inline.inl && ${MAKE} ${.MAKEFLAGS}
+	cd VectorUtil-Inline && $(PERL) Makefile.PL && rm -f Inline.inl && ${MAKE} ${.MAKEFLAGS}
 
 ext-vectorutil-inline-test:
 	cd VectorUtil-Inline && env BATCH=yes ${MAKE} ${.MAKEFLAGS} test

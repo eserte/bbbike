@@ -33,10 +33,11 @@ sub cmdline_input {
 	     "v" => sub { require Strassen; Strassen::set_verbose(1);
 			  $self->Context->Verbose(1),
 		      },
+	     "dumproute" => sub { $self->{DumpRoute} = 1 },
 	    )) {
 	    die <<EOF;
 Usage: $0 [-vehicle vehicle] [-[no]cache] [-[no]xs]
-        [-algorithm ...] [-scope ...] [-v] start goal
+        [-algorithm ...] [-scope ...] [-v] [-dumproute] start goal
 
 start and goal may be prefixed with \"city:\" to force cities instead of
 streets. start and goal may also be "standard" coordinates instead.
@@ -106,9 +107,14 @@ sub cmdline_output {
 #      }
     print "\n";
 
-    print
-	join("\n", map { sprintf("%-40s %s", $_->{Street}, $_->{Whole}) }
-	               @{ $self->RouteInfo} ), "\n";
+    if ($self->{DumpRoute}) {
+	require Data::Dumper;
+	print Data::Dumper->new([$self->RouteInfo],[])->Indent(1)->Useqq(1)->Dump;
+    } else {
+	print
+	    join("\n", map { sprintf("%-40s %s", $_->{Street}, $_->{Whole}) }
+		 @{ $self->RouteInfo} ), "\n";
+    }
 }
 
 sub set_city_or_street {

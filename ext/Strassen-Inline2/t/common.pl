@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: common.pl,v 1.4 2004/05/19 20:02:58 eserte Exp $
+# $Id: common.pl,v 1.4 2004/05/19 20:02:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -100,4 +100,5 @@ TEST7:
     ok($route[1]->[0], qr/Bellevueallee/);
 }
 
+$algorithm = $algorithm if 0; # peacify -w
 __END__
