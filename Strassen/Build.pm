@@ -130,22 +130,23 @@ sub filename_c_net_mmap {
 
 sub create_mmap_net_if_needed {
     my($self, $file_prefix, %args) = @_;
-    my @depend_files = ($self->{Strassen}->file);
+    my @depend_files = ($self->{Strassen}->dependent_files);
     if ($args{-blocked}) {
 	my $blocked = Strassen->new($args{-blocked}, NoRead => 1);
 	if (!$blocked) {
 	    die "Can't read file $args{-blocked}";
 	}
-	push @depend_files, $blocked->file;
+	push @depend_files, $blocked->dependent_files;
     }
     warn "Dependent files for mmap creation: @depend_files\n" if $VERBOSE;
     my $doit = 0;
-    for my $f ($self->{Strassen}->file) {
-	if (! -e $f) {
-	    $doit = 1;
-	    last;
-	}
-    }
+#     for my $f ($self->{Strassen}->file) {
+# 	if (! -e $f) {
+# 	    $doit = 1;
+# 	    warn "$f does not exist => update net\n" if $VERBOSE;
+# 	    last;
+# 	}
+#     }
     if (   !$doit &&
 	   (!Strassen::Util::valid_cache($self->get_cachefile(%args) . "_coord2ptr",
 					 \@depend_files)
@@ -155,10 +156,12 @@ sub create_mmap_net_if_needed {
 	   )
        ) {
 	$doit = 1;
+	warn "Cache is not valid\n" if $VERBOSE;
     } else {
 	for my $f (@depend_files) {
 	    if (-M $f < -M $self->filename_c_net_mmap($file_prefix)) {
 		$doit = 1;
+		warn "Dependent file $f was changed => update net\n" if $VERBOSE;
 		last;
 	    }
 	}
