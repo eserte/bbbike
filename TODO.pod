@@ -1212,6 +1212,11 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (M5)
+
+Opera and Safari: Hitting the return key on the first screen calls the
+abc page (because it's the first <input image> element in the form).
+
 =item * (H1)
 
 On resize, the reddot points for multiple choices become displaced.
