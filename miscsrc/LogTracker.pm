@@ -816,6 +816,10 @@ warn "update $l";
     }
 }
 
+END {
+    kill_tail();
+}
+
 return 1 if caller;
 
 __END__
