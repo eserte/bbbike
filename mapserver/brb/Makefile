@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.11 2004/02/04 11:46:25 eserte Exp $
+# $Id: Makefile,v 1.12 2004/05/07 06:12:37 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -283,12 +283,18 @@ brb-ipaq.map:
 
 ######################################################################
 # Temporaries
-.PHONY: sternfahrt2003
-sternfahrt2003:	sternfahrt2003/sternfahrt2003.html sternfahrt2003/sternfahrt2003_init.html sternfahrt2003/sternfahrt2003-b.map
+STERNFAHRTEN=	2003 2004
 
-sternfahrt2003/sternfahrt2003-b.map:	sternfahrt2003/sternfahrt2003.map mkroutemap
-	${BRBDIR}/mkroutemap -force -scope city sternfahrt2003/sternfahrt2003.map sternfahrt2003/sternfahrt2003-b.map
+.PHONY: ${STERNFAHRTEN:S/^/sternfahrt/g}
+
+.for year in ${STERNFAHRTEN}
+sternfahrt${year}:	sternfahrt${year}/sternfahrt${year}.html sternfahrt${year}/sternfahrt${year}_init.html sternfahrt${year}/sternfahrt${year}-b.map
+
+sternfahrt${year}/sternfahrt${year}-b.map:	sternfahrt${year}/sternfahrt${year}.map mkroutemap
+	${BRBDIR}/mkroutemap -force -scope city sternfahrt${year}/sternfahrt${year}.map sternfahrt${year}/sternfahrt${year}-b.map
 	chmod ugo+r $@
+
+.endfor
 
 ######################################################################
 # html

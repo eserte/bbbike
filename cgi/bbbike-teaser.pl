@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.5 2004/05/02 15:13:28 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.5 2004/05/02 15:13:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -25,6 +25,7 @@ sub teaser {
     my @teasers_mandatory = (
 			     #teaser_perltk_newrelease(),
 			     teaser_mapserver(),
+			     teaser_sternfahrt(),
 			     teaser_dobli(),
 			    );
     my $sub = "teaser_" . $teasers_optional[int(rand(@teasers_optional))];
@@ -39,8 +40,10 @@ sub teaser {
 }
 
 sub teaser_sternfahrt {
+    my $year = (localtime)[5]+1900;
+    my $url = "http://www.radzeit.de/mapserver/brb/sternfahrt${year}_init.html";
     <<EOF
-<div class="teaser"><a href="http://www.radzeit.de/mapserver/brb/sternfahrt2003_init.html"><img src="$bbbike_images/stern2003_titel.jpg" border="0"><br>Die Routen der Sternfahrt 2003</a></div>
+<div class="teaser"><a style="text-decoration:none;" href="$url"><img style="padding:3px 0px 3px 0px; border:0px;" src="$bbbike_images/stern${year}_titel.jpg" border="0"></a><br><a href="$url">Die Routen der Sternfahrt ${year}</a></div>
 EOF
 }
 
