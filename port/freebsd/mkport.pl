@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mkport.pl,v 1.23 2004/03/15 21:39:38 eserte Exp eserte $
+# $Id: mkport.pl,v 1.24 2004/03/17 23:24:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2004 Slaven Rezic. All rights reserved.
@@ -32,13 +32,20 @@ use vars qw($bbbike_base $bbbike_archiv
 my %dir;
 
 my $v = 0;
+my $do_fast;
 my $use_version;
 my $portsdir = "/usr/ports";
 
 if (!GetOptions("v" => \$v,
+		"fast" => \$do_fast,
 		"useversion=s" => \$use_version,
 		"portsdir=s" => \$portsdir)) {
-    die "usage: $0 [-v] [-useversion x.yy] [-portsdir /usr/ports]";
+    die "usage: $0 [-v] [-fast] [-useversion x.yy] [-portsdir /usr/ports]
+
+-v: be verbose
+-useversion: use another version than $BBBike::STABLE_VERSION
+-fast: do not call the port test script, only call portlint
+";
 }
 
 if (defined $use_version) {
@@ -112,19 +119,19 @@ mkdir $portdir, 0755 or die $!;
 
 substitute("Makefile.tmpl", "$portdir/Makefile");
 
-my $plist = "$portdir/pkg-plist";
-my $plist5005 = "$portdir/pkg-plist.5005";
+my $plist = "$portdir/pkg-plist.in";
+#my $plist5005 = "$portdir/pkg-plist.5005";
 open(PLIST, ">$plist") or die "Can't write to $plist: $!";
-open(PLIST_5005, ">$plist5005") or die "Can't write to $plist5005: $!";
+#open(PLIST_5005, ">$plist5005") or die "Can't write to $plist5005: $!";
 foreach (sort @files) {
     plist_line($_);
-    plist_line($_, \*PLIST_5005);
+#    plist_line($_, \*PLIST_5005);
 }
 
 if (open(PLISTADD, "pkg-plist.add")) {
     while(<PLISTADD>) {
 	chomp;
-	plist_line($_, \*PLIST_5005);
+#	plist_line($_, \*PLIST_5005);
 	my $l = $_;
 # 	if ($l =~ m|^lib/|) {
 # 	    $l =~ s|^lib|lib/%%PERL_VER%%|;
@@ -146,9 +153,9 @@ foreach my $dir (keys %dir) {
 }
 foreach (sort { dircmp($a, $b) } keys %dir) {
     print PLIST "\@dirrm $_\n";
-    print PLIST_5005 "\@dirrm $_\n";
+#    print PLIST_5005 "\@dirrm $_\n";
 }
-close PLIST_5005;
+#close PLIST_5005;
 close PLIST;
 
 warn "Get MD5 of $bbbike_archiv_dir/$bbbike_archiv:\n";
@@ -177,8 +184,12 @@ close DISTINFO;
 
 substitute("pkg-descr",   "$portdir/pkg-descr");
 substitute("pkg-message", "$portdir/pkg-message");
-#system("cd $tmpdir/BBBike && portlint -a -b -c -t");
-system("cd $tmpdir/BBBike && port test");
+if ($do_fast) {
+    system("cd $tmpdir/BBBike && portlint -a -b -c -t");
+} else {
+    system("cd $tmpdir/BBBike && port test");
+    unlink "$tmpdir/BBBike/BBBike-${bbbike_version}.tgz"; # created by "port test"
+}
 system("cd $tmpdir && tar cfvz $tmpdir/bbbike-fbsdport.tar.gz BBBike");
 
 sub dircmp {

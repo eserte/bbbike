@@ -27,7 +27,6 @@ MAN1=		bbbike.1
 MYDESTDIR=	${PREFIX}/BBBike
 
 .if !defined(PERL_VER) || ${PERL_VER} == 5.005
-PLIST=			${PKGDIR}/pkg-plist.5005
 LOCAL_PERL_ARCH=	${PERL_ARCH}
 .else
 LOCAL_PERL_ARCH=	${PERL_VER}/${ARCH}-freebsd
@@ -45,6 +44,17 @@ do-build:
 	${CHMOD} 0755 ${WRKSRC}/bbbike
 
 BBBIKEEXE=	bbbike cbbbike bbbikeclient cmdbbbike smsbbbike
+PLIST_IN=	pkg-plist.in
+PLIST=		${WRKDIR}/pkg-plist
+
+pre-install:
+.if !defined(PERL_VER) || ${PERL_VER} == 5.005
+	LOCAL_PERL_ARCH=`${PERL5} -MConfig -e 'print $$Config{archname}'`; \
+	${SED} -e "s/%%LOCAL_PERL_ARCH%%/$$LOCAL_PERL_ARCH/g" < ${PLIST_IN} > ${PLIST}
+.else
+	LOCAL_PERL_ARCH=`${PERL5} -MConfig -e 'print $$Config{version}/$$Config{archname}'`; \
+	${SED} -e "s/%%LOCAL_PERL_ARCH%%/$$LOCAL_PERL_ARCH/g" < ${PLIST_IN} > ${PLIST}
+.endif
 
 do-install:
 	-${RM} -rf ${MYDESTDIR}

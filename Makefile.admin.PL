@@ -419,7 +419,8 @@ fbsdportdiff: fbsdport do-fbsdportdiff
 fbsdportdiff-devel: fbsdport-devel do-fbsdportdiff
 
 do-fbsdportdiff:
-	-cd $(TMPDIR) && diff --new-file -u /usr/ports/german/BBBike BBBike > $(TMPDIR)/bbbike-freebsdport.diff
+	makepatch /usr/ports/german/BBBike $(TMPDIR)/BBBike > $(TMPDIR)/bbbike-freebsdport.diff
+#	-cd $(TMPDIR) && diff --new-file -u /usr/ports/german/BBBike BBBike > $(TMPDIR)/bbbike-freebsdport.diff
 
 VARPORTDIR=/var/tmp/BBBike
 TMPPORTDIR=$(TMPDIR)/BBBike
