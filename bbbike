@@ -4222,8 +4222,12 @@ $c->Tk::bind("<4>" => [sub { return if $_[1] ne "" && $_[1] ne "B4-";
 $c->Tk::bind("<5>" => [sub { return if $_[1] ne "" && $_[1] ne "B5-";
 			     $c->yviewScroll(+1,"units") },
 		       Tk::Ev('s')]);
-$c->Tk::bind("<Shift-5>" => sub { $c->xviewScroll(+1,"units") });
-$c->Tk::bind("<Shift-4>" => sub { $c->xviewScroll(-1,"units") });
+for ("<Shift-5>", "<B1-5>") {
+    $c->Tk::bind($_ => sub { $c->xviewScroll(+1,"units") });
+}
+for ("<Shift-4>", "<B1-4>") {
+    $c->Tk::bind($_ => sub { $c->xviewScroll(-1,"units") });
+}
 
 if ($c->can('DropSite')) {
     eval {
