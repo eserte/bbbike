@@ -43,6 +43,7 @@ function set_gui_browse_mode() {
 	    break;
 	}
     }
+    toggled_searchroute_mode();
 }
 
 function set_mode(mode,zoomdir) {
