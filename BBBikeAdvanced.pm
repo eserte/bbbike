@@ -128,6 +128,9 @@ sub custom_draw {
     my $abk      = shift or die "Missing abk";
     my $file     = shift;
     my(%args)    = @_;
+    # XXX -retargs is a hack, please refactor the whole plot_additional_layer
+    # and custom_draw thingy
+    my $retargs  = (delete $args{-retargs}) || {};
     my $draw      = eval '\%' . $linetype . "_draw";
     my $fileref   = eval '\%' . $linetype . "_file";
     my $name_draw = eval '\%' . $linetype . "_name_draw";
@@ -139,7 +142,7 @@ sub custom_draw {
 	die "Tk 800 needed"
 	    unless $Tk::VERSION >= 800;
 	my $get_file = sub {
-	    $file = $top->getOpenFile
+	    my $_file = $top->getOpenFile
 		(-filetypes =>
 		 [
 		  # XXX use Strassen->filetypes?
@@ -155,6 +158,7 @@ sub custom_draw {
 		 ],
 		 (defined $file ? (-initialdir => $file =~ m{/$} ? $file : File::Basename::dirname($file)) : ()),
 		);
+	    $file = $_file if defined $_file;
 	};
 
 	if (eval { require Tk::PathEntry; 1 }) {
@@ -257,6 +261,7 @@ sub custom_draw {
     }
 
     if ($args{-namedraw}) {
+	$retargs->{NameDraw} = $args{-namedraw};
 	delete $args{-namedraw};
 	$name_draw->{$abk} = 1;
     }
@@ -269,9 +274,15 @@ sub custom_draw {
     if ($default_line_width && (!defined $args{Width} || $args{Width} eq "")) {
 	$args{Width} = $default_line_width;
     }
+    if ($args{Width}) {
+	$retargs->{Width} = $args{Width};
+    }
     $args{-draw} = 1;
     $args{-filename} = $file;
-    $args{-map} = $coord_input if defined $coord_input && $coord_input ne "Standard";
+    if (defined $coord_input && $coord_input ne "Standard") {
+	$args{-map} = $coord_input;
+	$retargs->{-map} = $coord_input;
+    }
     plot($linetype, $abk, %args);
 
     for (($linetype eq 'p' ? ("$abk-img", "$abk-fg") : ($abk))) {
@@ -410,10 +421,10 @@ sub plot_additional_sperre_layer {
     plot_additional_layer("sperre");
 }
 
-# Called from last loaded menu
-sub plot_additional_layer_s {
+# Called from last cmdline (initial layers)
+sub plot_additional_layer_cmdline {
     my($layer_def, %args) = @_;
-    my($layer_type, $layer_filename) = split /:/, $layer_def, 2;
+    my($layer_type, $layer_filename) = split /=/, $layer_def, 2;
     if (!defined $layer_type) {
 	($layer_type, $layer_filename) = ('str', $layer_def);
     }
@@ -440,6 +451,7 @@ sub plot_additional_layer {
 	die "Unknown linetype $linetype, should be str, sperre or p";
     }
 
+    my @args;
     {
 	# "sperre" linetype should be "p" for drawing, but still "sperre"
 	# for the last loaded menu
@@ -447,11 +459,14 @@ sub plot_additional_layer {
 	if ($linetype eq 'sperre') {
 	    $linetype = 'p';
 	}
+	$args{-retargs} = {};
 	if (defined $file) {
 	    custom_draw($linetype, $abk, $file, %args);
 	} else {
-	    $file = custom_draw_dialog($linetype, $abk, %args);
+	    $file = custom_draw_dialog($linetype, $abk, undef, %args);
 	}
+	@args = %{ $args{-retargs} };
+	push @args, -linetype => $linetype;
     }
 
     if (defined $file) {
@@ -459,7 +474,11 @@ sub plot_additional_layer {
 	    my $s = $p_obj{$abk} || Strassen->new($file);
 	    $net->make_sperre($s, Type => "all");
 	}
-	add_last_loaded("$linetype:$file", $last_loaded_layers_obj);
+	my $add_def;
+	if (@args) {
+	    $add_def = "\t" . join "\t", @args;
+	}
+	add_last_loaded($file, $last_loaded_layers_obj, $add_def);
     }
 
     Hooks::get_hooks("after_new_layer")->execute;
@@ -2906,20 +2925,45 @@ sub path_to_selection {
 sub active_temp_blockings_for_date_dialog {
     $show_active_temp_blockings = 1;
     require Tk::DateEntry;
+    Tk::DateEntry->VERSION("1.38");
     require POSIX;
     require Time::Local;
     require Data::Dumper;
     eval {
 	require "$FindBin::RealBin/miscsrc/check_bbbike_temp_blockings";
     }; warn $@ if $@;
+
+    my @future;
+    if (BBBike::check_bbbike_temp_blockings->can("process")) {
+	BBBike::check_bbbike_temp_blockings::process(-f => $BBBike::check_bbbike_temp_blockings::temp_blockings_pl);
+	BBBike::check_bbbike_temp_blockings::load_file();
+	@future = BBBike::check_bbbike_temp_blockings::return_future();
+    }
+    use Data::Dumper;warn Dumper \@future;
+
     my $t = $top->Toplevel(-title => "Datum");
     $t->transient($top) if $transient;
     my $date = POSIX::strftime("%Y/%m/%d", localtime);
     {
 	my $f = $t->Frame->pack(-fill => "x");
 	Tk::grid($f->Label(-text => "Sperrungen für Datum: "),
-		 $f->DateEntry(-dateformat => 2,
-			       -textvariable => \$date)
+		 $f->DateEntry
+		 (-dateformat => 2,
+		  -textvariable => \$date,
+		  -configcmd => sub {
+		      my(%args) = @_;
+		      if (@future && $args{-date}) {
+			  my($d,$m,$y) = @{ $args{-date} };
+			  my $t1 = Time::Local::timelocal(0,0,0,$d,$m-1,$y-1900);
+			  my $t2 = Time::Local::timelocal(59,59,23,$d,$m-1,$y-1900);
+			  for my $rec (@future) {
+			      next if (defined $rec->{from} && $t1 < $rec->{from});
+			      next if (defined $rec->{until} && $t2 > $rec->{until});
+			      $args{-datewidget}->configure(-bg => "red");
+			  }
+		      }
+		  },
+		 )
 		);
     }
 
@@ -2939,16 +2983,13 @@ sub active_temp_blockings_for_date_dialog {
 			    }));
     }
 
-    if (BBBike::check_bbbike_temp_blockings->can("process")) {
+    if (@future) {
 	my $txt = $t->Scrolled("ROText", -scrollbars => "osoe",
 			       -width => 40, -height => 5)->pack(-fill => "both", -expand => 1);
-	BBBike::check_bbbike_temp_blockings::process(-f => $BBBike::check_bbbike_temp_blockings::temp_blockings_pl);
-	BBBike::check_bbbike_temp_blockings::load_file();
-	my @future = BBBike::check_bbbike_temp_blockings::return_future();
 	for my $rec (@future) {
-	    $rec->{from} = scalar localtime $rec->{from}
+	    $rec->{fromdate} = scalar localtime $rec->{from}
 		if $rec->{from};
-	    $rec->{until} = scalar localtime $rec->{until}
+	    $rec->{untildate} = scalar localtime $rec->{until}
 		if $rec->{until};
 	}
 	$txt->insert("end", scalar Data::Dumper->new([@future], [])->Indent(1)->Dump);
