@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.47 2005/01/20 00:44:16 eserte Exp $
+# $Id: Makefile,v 1.47 2005/01/20 00:44:16 eserte Exp eserte $
 #
 
 # Targets:
@@ -356,6 +356,10 @@ prepare-touren-dist:
 	chmod 755 ${CURDIR}/htdocs/mapserver/touren
 	cp -pf ${BBBIKE_ROOT_DIR}/mapserver/touren/*.trk \
 	    ${CURDIR}/htdocs/mapserver/touren
+
+prepare-routopedia-dist:
+	cd ${BBBIKE_ROOT_DIR}/routopedia && ${MAKE} distcheck
+	(umask 022; cd ${BBBIKE_ROOT_DIR}/routopedia && perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread(),'${CURDIR}/routopedia', 'best');")
 
 test:
 	cd ${.CURDIR}/BBBike/t && \
