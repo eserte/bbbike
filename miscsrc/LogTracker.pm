@@ -429,8 +429,8 @@ sub fileevent_read_line {
 		$main::str_obj{$layer{$l}} = $s; # for LayerEditor
 		my $last = $s->get($s->count-1);
 		if ($last && $last->[Strassen::COORDS()]->[-1]) {
-		    main::mark_point
-			    (-point =>  join(",", main::transpose(split /,/, $last->[Strassen::COORDS()]->[-1])),
+		    main::mark_street
+			    (-coords => [[ map { main::transpose(split /,/, $_) } @{$last->[Strassen::COORDS()]} ]],
 			     -dont_center => 1);
 		}
 	    };
