@@ -123,7 +123,8 @@ if (!GetOptions(get_std_opts("cgiurl", "xxx", "display", "debug"),
 		
 		$agent->submit;
 
-		is($agent->ct, "image/png", "It's a png");
+		is($agent->ct, "image/png", "It's a png")
+		    or diag "Tried to upload $filename";
 		my $content = $agent->content;
 		cmp_ok($content, "ne", "", "Non-empty content");
 		if ($do_display) {

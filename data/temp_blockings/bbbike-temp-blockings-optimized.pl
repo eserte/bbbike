@@ -180,6 +180,15 @@ userdel	2 -12403,-10753 -12459,-12120
          'data' => 'userdel	q3; 25579,5980 25121,5799
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1109372400,
+         'text' => 'L 791; (Luckenwalder Str.); Bahnübergang in Zossen, Havarie, Vollsperrung, 19.02.2005-25.02.2005 ',
+         'from' => 1108681200,
+         'data' => 'userdel	2 13525,-21873 13014,-22300
+userdel	2 13525,-21873 13988,-21217
+',
+         'type' => 'gesperrt'
        }
      
 );

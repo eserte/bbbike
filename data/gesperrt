@@ -239,6 +239,7 @@ Strausberger Str.	1 12422,13047 12368,13031
 Groﬂe Pr‰sidentenstr.	1 10097,12997 10220,13098
 Naumannstr.	1 7709,8770 7706,8875
 Gritznerstr.	1 4507,6320 4555,6403
+Duisburger Str.:	1 4183,10144 3874,10153
 Hans-Thoma-Str.	1 -12148,-784 -12255,-784 -12304,-628 -12322,-576
 Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
 Potsdamer Damm	2 -5736,-3629 -6439,-3969
@@ -301,11 +302,12 @@ L¸tzowpl. -> L¸tzowufer: unbequem passierbarer Mittelstreifen	3 7002,11034 6873,
 L¸tzowpl. -> Schillstr.: unbequem passierbarer Mittelstreifen	3 7002,11034 6873,11011 6824,10904
 Schillstr. -> L¸tzowpl.: unbequem passierbarer Mittelstreifen	3 6882,11061 6873,11011 7002,11034
 L¸tzowufer -> L¸tzowpl.: unbequem passierbarer Mittelstreifen	3 6732,11106 6873,11011 7002,11034
+Brandenburgische Str. -> Duisburger Str.: Tunneleinfahrt Adenauerplatz	3 3852,10236 3874,10153 4183,10144
+Brandenburgische Str. -> D¸sseldorfer Str.: Tunneleinfahrt Adenauerplatz	3 3874,10153 3906,10035 4151,10026
 D¸sseldorfer Str. -> Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3 4151,10026 3906,10035 3930,9919
 D¸sseldorfer Str. -> Paderborner Str.: Tunneleinfahrt Adenauerplatz	3 4151,10026 3906,10035 3720,9996
-Brandenburgische Str. -> D¸sseldorfer Str.: Tunneleinfahrt Adenauerplatz	3 3852,10236 3906,10035 4151,10026
+Paderborner Str. -> Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3 3720,9996 3906,10035 3874,10153
 Paderborner Str. -> D¸sseldorfer Str.: Tunneleinfahrt Adenauerplatz	3 3720,9996 3906,10035 4151,10026
-Paderborner Str. -> Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3 3720,9996 3906,10035 3852,10236
 Treskowallee -> Ontarioseestr.: Straﬂenbahntrasse	3 18698,9996 18690,10016 18577,10023
 Ontarioseestr. -> Am Tierpark: Straﬂenbahntrasse	3 18577,10023 18690,10016 18628,10177
 Am Bahndamm -> Treskowallee: Straﬂenbahntrasse	3 19675,10410 18698,9996 18737,9901

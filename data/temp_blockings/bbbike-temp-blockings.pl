@@ -1414,4 +1414,13 @@ EOF
 userdel	q3; 25579,5980 25121,5799
 EOF
      },
+     { from  => 1108681200, # 2005-02-18 00:00
+       until => 1109372400, # 2005-02-26 00:00
+       text  => 'L 791; (Luckenwalder Str.); Bahnübergang in Zossen, Havarie, Vollsperrung, 19.02.2005-25.02.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 13525,-21873 13014,-22300
+userdel	2 13525,-21873 13988,-21217
+EOF
+     },
     );

@@ -174,7 +174,7 @@ sub add_button {
 	       -command => sub {
 		   my $f = "$bbbike_rootdir/tmp/points-all.bbd";
 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
-		   add_new_layer("p", $f);
+		   add_new_layer("p", $f, Width => 20);
 	       }
 	      ],
 	      [Button => "Add hm96.bbd (Höhenpunkte)",
@@ -213,10 +213,14 @@ sub make_gps_target {
     }
 }
 
+# Width support for now only for p layers
 sub add_new_layer {
-    my($type, $file) = @_;
+    my($type, $file, %args) = @_;
     my $free_layer = main::next_free_layer($type);
     $main::line_width{$free_layer} = [(1)x6];
+    if (exists $args{Width}) {
+	$main::p_width{$free_layer} = $args{Width};
+    }
     if (!$BBBikeLazy::mode) {
 	require BBBikeLazy;
 	BBBikeLazy::bbbikelazy_empty_setup();

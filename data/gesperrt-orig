@@ -262,6 +262,7 @@ Strausberger Str.	1 12422,13047 12368,13031
 Große Präsidentenstr.	1 10097,12997 10220,13098
 Naumannstr.	1 7709,8770 7706,8875
 Gritznerstr.	1 4507,6320 4555,6403
+Duisburger Str.:	1 4183,10144 3874,10153
 #
 # Potsdam
 #
@@ -338,7 +339,7 @@ Ringbahnstr.	1s 8717,6965 8447,6964
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
-Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3906,10035 3930,9919
+Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3906,10035 3930,9919
 Treskowallee: Straßenbahntrasse	3nocross 18628,10177 18690,10016 18698,9996 18737,9901
 Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5474,9961 5475,9914 5472,9850
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19694,15149 19735,15155 20266,15456
@@ -626,8 +627,8 @@ B 167; (Herzberg-Neuruppin); OL Alt Ruppin, Rhinbrücke    Brückenneubau    Volls
 #Meinekestr. - Kudamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3 5329,10422 5351,10760 5229,10716
 #Düsseldorfer - Paderborner: Tunneleinfahrt Adenauerplatz	3 4151,10026 3906,10035 3720,9996
 #Paderborner - Düsseldorfer: Tunneleinfahrt Adenauerplatz	3 3720,9996 3906,10035 4151,10026
-#Paderborner - Brandenburgische: Tunneleinfahrt Adenauerplatz	3 3720,9996 3906,10035 3852,10236
-#Brandenburgische - Düsseldorfer: Tunneleinfahrt Adenauerplatz	3 3852,10236 3906,10035 4151,10026
+#Paderborner - Brandenburgische: Tunneleinfahrt Adenauerplatz	3 3720,9996 3906,10035 3874,10153 3852,10236
+#Brandenburgische - Düsseldorfer: Tunneleinfahrt Adenauerplatz	3 3852,10236 3874,10153 3906,10035 4151,10026
 #Regensburger - Pariser: unbequem passierbarer Mittelstreifen	3 5541,9923 5475,9914 5416,9928
 #Pariser - Regensburger: unbequem passierbarer Mittelstreifen	3 5416,9928 5475,9914 5541,9923
 #Nuthestr. - Uferweg	3 -11875,-925 -11613,-1125 -11657,-1018

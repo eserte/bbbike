@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Heavy.pm,v 1.3 2005/01/15 22:39:30 eserte Exp $
+# $Id: Heavy.pm,v 1.3 2005/01/15 22:39:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -79,6 +79,19 @@ sub load_from_string {
     my $ret = Route::load($file, @args);
     unlink $file if !$Route::DEBUG;
     $ret;    
+}
+
+sub get_bbox {
+    my($coordref) = @_;
+    my($x1,$y1,$x2,$y2);
+    for my $coord (@$coordref) {
+	my($x,$y) = @$coord;
+	$x1 = $x if !defined $x1 || $x1 > $x;
+	$x2 = $x if !defined $x2 || $x2 < $x;
+	$y1 = $y if !defined $y1 || $y1 > $y;
+	$y2 = $y if !defined $y2 || $y2 < $y;
+    }
+    ($x1,$y1,$x2,$y2);
 }
 
 1;

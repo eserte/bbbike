@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.47 2005/01/20 00:44:16 eserte Exp eserte $
+# $Id: Makefile,v 1.48 2005/02/19 13:17:51 eserte Exp $
 #
 
 # Targets:
@@ -155,6 +155,7 @@ clean-cache-files-on-remote:
 rsync:			check-rsync-ok \
 			clean-cache-files-on-remote \
 			do-rsync \
+			show-rsync-message \
 			post-rsync-bbbike-data
 
 check-rsync-ok:
@@ -172,13 +173,17 @@ rsync-mapserver:
 	@echo NYI
 	false
 
-rsync-routopedia:
+rsync-routopedia:	do-rsync-routopedia \
+			show-rsync-message
+
+do-rsync-routopedia:
 	${RSYNC} ${RSYNC_ARGS} \
 	    --exclude data/ \
 	    routopedia/ ${RSYNC_DEST}/routopedia/
 
 rsync-bbbike-data:	clean-cache-files-on-remote \
 			do-rsync-bbbike-data \
+			show-rsync-message \
 			post-rsync-bbbike-data
 
 do-rsync-bbbike-data:
@@ -188,6 +193,9 @@ do-rsync-bbbike-data:
 post-rsync-bbbike-data:
 	-ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
 	   "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/miscsrc/winter_optimization.pl &"
+
+show-rsync-message:
+	-[ ! -e ${CURDIR}/.rsync_message ] && true || cat ${CURDIR}/.rsync_message
 
 # use -t in rsync?
 tkrsync:
