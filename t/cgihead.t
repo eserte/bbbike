@@ -2,20 +2,19 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead.t,v 1.3 2003/06/25 07:06:47 eserte Exp $
+# $Id: cgihead.t,v 1.4 2003/10/23 12:32:39 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
-
-use Test;
+use FindBin;
 
 BEGIN {
     if (!eval q{
-	use Test;
+	use Test::More;
 	1;
     }) {
-	print "1..0 # skip: no Test module\n";
+	print "1..0 # skip: no Test::More module\n";
 	exit;
     }
 }
@@ -29,11 +28,18 @@ if (!GetOptions("cgidir=s" => \$cgi_dir,
 }
 
 my @prog = qw(bbbike.cgi
-	      mapserv
 	      mapserver_address.cgi
 	      mapserver_comment.cgi
 	      wapbbbike.cgi
 	     );
+
+use vars qw($mapserver_prog_url);
+do "$FindBin::RealBin/../cgi/bbbike.cgi.config";
+if (defined $mapserver_prog_url) {
+    push @prog, $mapserver_prog_url;
+} else {
+    diag("No URL for mapserv defined");
+}
 
 plan tests => scalar @prog;
 
@@ -42,8 +48,10 @@ for my $prog (@prog) {
     if ($prog =~ /mapserver_comment/) {
 	$qs = "?comment=cgihead+test";
     }
-    system("HEAD -H 'User-Agent: BBBike-Test/1.0' $cgi_dir/$prog$qs > /tmp/head.$prog.log");
-    ok($?, 0, "$cgi_dir/$prog");
+    my $absurl = ($prog =~ /^http:/ ? $prog : "$cgi_dir/$prog");
+    (my $safefile = $prog) =~ s/[^A-Za-z0-9._-]/_/g;
+    system("HEAD -H 'User-Agent: BBBike-Test/1.0' $absurl$qs > /tmp/head.$safefile.log");
+    is($?, 0, $absurl);
 }
 
 
