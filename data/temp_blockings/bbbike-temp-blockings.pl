@@ -506,7 +506,7 @@ userdel	q4 -74489,80545 -74038,78181
 EOF
      },
      { from  => undef, # 
-       until => 1092725846,
+       until => undef, # 1092725846,
        text  => 'Flottwellstr. (Tiergarten) in beiden Richtungen zwischen Lützowstraße und Am Karlsbad Verkehrsbehinderung durch Absenkung der Fahrbahn, Straße vollständig gesperrt',
        type  => 'handicap',
       data  => <<EOF,
@@ -608,6 +608,26 @@ EOF
        type  => 'handicap',
       data  => <<EOF,
 userdel	q4 10023,-8859 10115,-8276
+EOF
+     },
+     { from  => 1094076000, # 2004-09-02 00:00
+       until => 1094421600, # 2004-09-06 00:00
+       text  => 'B 103; (Havelberger Str.); OD Pritzwalk, Bahnübergang Gleisbauarbeiten Vollsperrung 03.09.2004-05.09.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -74489,80545 -74653,81289
+EOF
+     },
+     { from  => 1093471200, # 2004-08-26 00:00
+       until => 1093903200, # 2004-08-31 00:00
+       text  => 'OL Finsterwalde Sängerfest Vollsperrung 27.08.2004-30.08.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 33215,-85288 33412,-85191
+userdel	q4 33215,-85288 33047,-85458
+userdel	q4 33559,-85384 33412,-85191
+userdel	q4 33559,-85384 33488,-85803
+userdel	q4 33089,-85779 33047,-85458
 EOF
      },
     );
