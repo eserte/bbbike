@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.113 2003/10/19 22:03:23 eserte Exp $
+# $Id: bbbike,v 3.114 2003/11/18 23:39:54 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -101,7 +101,7 @@ use autouse 'BBBikeExp'
 	  bbbikeexp_reload bbbikeexp_reload_all bbbikeexp_redraw_current_view
 	  bbbikeexp_add_data bbbikeexp_remove_data plotstr_on_demand);
 use autouse 'BBBikePrint'
-    => qw(create_postscript toggle_legend print_text_postscript);
+    => qw(create_postscript toggle_legend print_text_postscript print_text_pdflatex);
 
 ## This is only for the Autoloader-Hack (see "make autoload")
 #use AutoLoader 'AUTOLOAD';
@@ -218,7 +218,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.113 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.114 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -488,8 +488,9 @@ $standard_height = 12;
 ## DEBUG_END
 ### Postscript
 $ps_color    = 'color';
-$ps_rotate      = 1;
+$ps_rotate   = 1;
 $ps_scale_a4 = 1;
+$ps_fixed_font = "Courier7";
 
 $nr = -1;
 {
@@ -878,7 +879,9 @@ Tk::CmdLine::SetArguments();
    ['coordout','=s','standard',
     label => M"Koordinatenausgabe", var => \$coord_output],
    ['printcmd','=s',undef,
-    label => M"Drucker", var => \$print_cmd],
+    label => M"Druckerkommando", var => \$print_cmd],
+   ['ps_fixed_font','=s',"Courier7",
+    label => M"Druckerzeichensatz (fixed)", var => \$ps_fixed_font],
    ['mapcolor','=s','color',
     choices => [qw(mono pixmap gray color)],
     label => M"Farbeinstellung beim Drucken", var => \$map_color],
@@ -12928,14 +12931,11 @@ sub show_route_strname {
 	$t = $toplevel{strlist};
     }
 
-#XXX    my $t = redisplay_top($top, 'route_strname',
-#			  -title => M"Aktuelle Route");
-    undef @show_route_save;
-    @html_show_route_save = ();
+    undef @route_info;
     if (defined $t) {
 	$t->SelectionOwn;
 	# XXX maxbytes beachten
-	$t->SelectionHandle(sub { join("\n", @show_route_save) . "\n" });
+	$t->SelectionHandle(sub { route_info_to_text() });
     }
 
     my($bf, $f1);
@@ -12971,10 +12971,6 @@ sub show_route_strname {
     } else {
 	$route_strname_lbox->header('configure', 4, -text => M"");
     }
-
-    push @show_route_save, sprintf("%-14s %-10s %-26s %s",
-				   M"Länge", M"Gesamt", M"Richtung", M"Straße");
-    push @show_route_save, "-" x 70;
 
     undef $show_route_start;
     undef $show_route_ziel;
@@ -13157,40 +13153,16 @@ sub show_route_strname {
 		$etappe_comment = join("; ", @comments) if @comments;
 	    }
 	    $route_strname_lbox->itemCreate($i, 4, -text => $etappe_comment);
-	    push @show_route_save, sprintf("%-14s %-10s %-26s %s",
-					   ($entf_s||""), ($ges_entf_s||""),
-					   $richtung, $str);
-	    push @html_show_route_save,
-		sprintf(M("nach"). " %s %s<br>\n%s <b>%s</b><br><br>\n",
-			m2km($entf,3,2), $ges_entf_s,
-			$richtung, $str);
+	    push @route_info, [($out_dist||""), ($out_total_dist||""),
+			       $out_dir, $out_str];
 	}
 	$ges_entf_s = "(" . m2km($ges_entf+$next_entf) . ")";
 	my $i = $#search_route + 1;
 	$route_strname_lbox->add($i, -text => M("nach")." ".m2km($next_entf, 3, 2));
 	$route_strname_lbox->itemCreate($i, 1, -text => "$ges_entf_s");
 	$route_strname_lbox->itemCreate($i, 2, -text => M"angekommen!");
-	push @show_route_save, Mfmt("%-14s %-10s %-26s %s",
-				    M("nach")." ".m2km($next_entf, 3, 2),
-				    $ges_entf_s, M"angekommen!", "$out_str");
-	push @html_show_route_save,
-	    M("Gesamtstrecke").": $ges_entf_s", "</body></html>";
-
-	my $html_route_name = "BBBike-Route";
-	if (defined $show_route_start and
-	    defined $show_route_ziel) {
-	    my($start, $ziel);
-	    $start = Strasse::short(Strassen::strip_bezirk($show_route_start), 3); # Start besser abkürzen --- ist meist immer der Gleiche
-	    $ziel  = Strasse::short(Strassen::strip_bezirk($show_route_ziel), 2);
-	    $html_route_name = "BBBike: $start-$ziel";
-	    eval {
-		require HTML::Entities;
-		HTML::Entities::encode_entities($html_route_name);
-	    };
-	    #warn $@ if $@;
-	}
-	unshift @html_show_route_save,
-	    "<html><head><title>$html_route_name</title></head><body>";
+	push @route_info, [M("nach")." ".m2km($next_entf, 3, 2),
+			   $ges_entf_s, M"angekommen!"];
 
 	my(@children) = $route_strname_lbox->info('children');
 	my $last_i = $children[-1];
@@ -13267,7 +13239,7 @@ sub show_route_strname {
 	   }
 	   make_backup($file);
 	   if (open(ROUTE, ">$file")) {
-	       print ROUTE join("\n", @show_route_save), "\n";
+	       print ROUTE route_info_to_text();
 	       close ROUTE;
 	   } else {
 	       status_message
@@ -13295,47 +13267,50 @@ sub show_route_strname {
 	    open(TMP, ">$temp") or status_message("Can't write to $temp: $!", "die");
 	    print TMP Mfmt("Route von %s bis %s",
 			   $show_route_start, $show_route_ziel), "\n";
-	    print TMP join("\n", @show_route_save);
+	    print TMP route_info_to_text();
 	    close TMP;
 	    Win32Util::start_txt_print($temp);
 	    $tmpfiles{$temp}++;
+	} elsif (1) { # XXX make an option
+	    print_text_pdflatex
+		(route_info_to_latex());
 	} else {
 	    print_text_postscript
-		(join("\n", @show_route_save),
+		(route_info_to_text(),
 		 -columns => 1,
 		 -header => Mfmt("Route von %s bis %s",
 				 $show_route_start, $show_route_ziel),
-		 -font => $font, #"Courier7",
+		 -font => $font,
 		);
 	}
     };
     my $db;
     $db = $bf->Button
       (-text => M"Drucken",
-       -command => sub { $print_text_sub->("Courier7") },
+       -command => sub { $print_text_sub->($ps_fixed_font||"Courier7") },
       )->pack(-side => 'left');
     $bf->Button
       (-text => M"Mail",
        -command => sub {
-	   if (@show_route_save) {
+	   if (@route_info) {
 	       $show_route_start = "???" unless $show_route_start;
 	       $show_route_ziel  = "???" unless $show_route_ziel;
 	       enter_send_mail
 		 (Mfmt("BBBike-Route von %s bis %s",
 		       $show_route_start, $show_route_ziel),
-		  -data => join("\n", @show_route_save). "\n");
+		  -data => route_info_to_text());
 	   }
        })->pack(-side => 'left');
     $bf->Button
       (-text => M"Fax",
        -command => sub {
-	   if (@show_route_save) {
+	   if (@route_info) {
 	       $show_route_start = "???" unless $show_route_start;
 	       $show_route_ziel  = "???" unless $show_route_ziel;
 	       enter_send_fax
 		 (Mfmt("BBBike-Route von %s bis %s",
 		       $show_route_start, $show_route_ziel),
-		  -data => join("\n", @show_route_save). "\n");
+		  -data => route_info_to_text());
 	   }
        })->pack(-side => 'left');
     $t->bind('<Up>'   => sub { $route_strname_lbox->yview(scroll => -1,
@@ -13366,6 +13341,69 @@ sub show_route_strname {
 	    $t->deiconify;
 	}
     }
+}
+
+sub route_info_to_text {
+    my $text = sprintf("%-14s %-10s %-26s %s\n",
+		       M"Länge", M"Gesamt", M"Richtung", M"Straße");
+    $text .= "-" x 70 . "\n";
+    $text .= join "", map { sprintf("%-14s %-10s %-26s %s\n", @$_) } @route_info;
+    $text;
+}
+
+sub _get_route_title {
+    my $route_name = "BBBike-Route";
+    if (defined $show_route_start and
+	defined $show_route_ziel) {
+	my $start = Strasse::short(Strassen::strip_bezirk($show_route_start), 3); # Start besser abkürzen --- ist meist immer der Gleiche
+	my $ziel  = Strasse::short(Strassen::strip_bezirk($show_route_ziel), 2);
+	$route_name = "BBBike: $start-$ziel";
+    }
+    $route_name;
+}
+
+sub route_info_to_html {
+    my $html_route_name = _get_route_title();
+    eval {
+	require HTML::Entities;
+	HTML::Entities::encode_entities($html_route_name);
+    };
+    warn $@ if $@;
+    my $html = "<html><head><title>$html_route_name</title></head><body>";
+    $html .= join "", map { sprintf(" %s %s<br>\n%s <b>%s</b><br><br>\n", @$_) } @route_info;
+    $html .= "</body></html>";
+    $html;
+}
+
+# More tweaking could be done (other font face/size, real wide margins...)
+sub route_info_to_latex {
+    my $route_title = _get_route_title();
+    # escape for latex missing XXX
+    my $latex = <<'EOF';
+\documentclass[10pt]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[widemargins]{a4}
+\usepackage{german}
+\usepackage{supertabular}
+\pagestyle{empty}
+\sloppy
+\begin{document}
+EOF
+    $latex .= "\\section*{$route_title}\n";
+    $latex .= <<'EOF';
+\begin{supertabular}{lllp{8cm}}
+EOF
+    $latex .= join(" & ", M"Länge", M"Gesamt", M"Richtung", M"Straße") . "\\\\\n";
+    $latex .= "\\hline \\\\\n";
+
+    $latex .= join "", map {
+	join(" & ", map { s/=>/\$\\rightarrow{}\$/g; $_ } @$_) . "\\\\\n"
+    } @route_info;
+    $latex .= <<'EOF';
+\end{tabular}
+\end{document}
+EOF
+    $latex;
 }
 
 sub update_route_strname {

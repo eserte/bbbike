@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePalm.pm,v 1.8 2002/12/19 02:47:09 eserte Exp $
+# $Id: BBBikePalm.pm,v 1.10 2003/11/18 23:37:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@
 
 use strict;
 # main bbbike variables
-use vars qw($os $tmpdir %tmpfiles @html_show_route_save $palm_doc_format $top);
+use vars qw($os $tmpdir %tmpfiles $palm_doc_format $top);
 
 my @prog_order = qw(txt2pdbdoc /usr/local/txt2pdbdoc/bin/txt2pdbdoc
 		    pilot_makedoc
@@ -86,7 +86,7 @@ sub create_palm_doc {
 		}
 		open(PALM, ">$f") or
 		    die "$f kann nicht geschrieben werden: $!";
-		print PALM join("\n", @html_show_route_save), "\n";
+		print PALM route_info_to_html();
 		close PALM;
 		$is_empty->();
 		my @cmd;
@@ -112,8 +112,7 @@ sub create_palm_doc {
 		$f .= "txt";
 		open(PALM, ">$f") or
 		    die "$f kann nicht geschrieben werden: $!";
-		print PALM BBBikePalm::strip_html_tags
-		    (join("\n", @html_show_route_save)), "\n";
+		print PALM BBBikePalm::strip_html_tags(route_info_to_html()); # or route_info_to_text???
 		close PALM;
 		$is_empty->();
 		if ($check_sys =~ /pilot_makedoc/) {

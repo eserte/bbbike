@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.23 2003/09/09 21:43:43 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.23 2003/09/09 21:43:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -246,6 +246,26 @@ sub BBBikePrint::print_text_postscript {
        -text => $text,
        -verbose => $verbose);
     print_postscript($out, -quiet => $args{-quiet});
+}
+
+sub BBBikePrint::print_text_pdflatex {
+    my($text, %args) = @_;
+    my $basename = "$progname" . "_$$.tex";
+    my $tmpfile = "$tmpdir/$basename";
+    my $pdffile = "$tmpdir/$progname" . "_$$.pdf";
+    unlink $tmpfile;
+    unlink $pdffile;
+    open(TEX, ">$tmpfile") or status_message(Mfmt("Kann %s nicht schreiben: %s", $tmpfile, $!), "die");
+    print TEX $text;
+    close TEX;
+    my $cmd = "cd $tmpdir && pdflatex -interaction=batchmode $basename";
+    warn "$cmd\n" if $verbose;
+    system($cmd);
+    if (-r $pdffile) {
+	system("acroread $pdffile &");
+    }
+    unlink $tmpfile;
+    $main::tmpfiles{$pdffile}++;
 }
 
 ######################################################################

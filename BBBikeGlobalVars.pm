@@ -70,7 +70,7 @@ use vars qw(
      $wind_v $wind_v_max $winddate
      $bp_obj $ua $proxy
      $orientation $wasserstadt $wasserumland $init_scope %act_value
-     $map_draw @show_route_save @html_show_route_save
+     $map_draw @route_info
      $palm_doc_format $show_route_start $show_route_ziel @act_search_route
      @speed_txt @power_txt @calories_speed @calories_power
      $route_strname_lbox $show_strlist $show_enter_opt_preferences
@@ -186,7 +186,7 @@ use vars qw(%wetter_full $temperature %wind_colors $stderr
 use vars qw(%font @font $font_family $fixed_font_family $font_size $font_weight
 	    $standard_height $use_font_rot);
 ### Postscript
-use vars qw($ps_rotate $print_cmd $gv_reuse $ps_color $ps_scale_a4);
+use vars qw($ps_rotate $print_cmd $gv_reuse $ps_color $ps_scale_a4 $ps_fixed_font);
 
 use vars qw($nr $cache_root $use_wwwcache);
 use vars qw($map_img @map_surround_img $do_wwwmap);
