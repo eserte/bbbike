@@ -219,14 +219,7 @@ userdel	q4 -18080,-12637 -17374,-13449
        },
        undef,
        undef,
-       {
-         'until' => 1111186800,
-         'text' => 'L 29; (Oderberg-Hohenfinow); OD Oderberg Baumf‰llarb. Dammsicherung Vollsperrung 14.03.2005-18.03.2005 ',
-         'from' => 1110668400,
-         'data' => 'userdel	q4 52650,51875 51437,51575
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1116194400,
          'text' => 'Wassersportallee - Regattastraﬂe, Zwischen Kreuzung Adlergestell und Kreuzung Wassersportallee in beiden Richtungen gesperrt, Baustelle, Dauer: 14.03.2005 03:00 Uhr bis 15.05.2005 ',

@@ -570,7 +570,7 @@ eval { local $SIG{'__DIE__'};
    ['wasserumland','!',0,
     label => M"Gewässer im Umland", var => \$wasserumland], # XXX auch init!
    ['wasserjwd','!',0,
-    label => "MGewässer jwd", var => \$str_far_away{'w'}],
+    label => M"Gewässer jwd", var => \$str_far_away{'w'}],
    ['faehre','!',0,	alias=>[qw(faehren)],
     label => M"Fähren",	var => \$init_str_draw{'e'}],
    ['flaeche','!',0,	alias=>[qw(flaechen)],
@@ -578,7 +578,9 @@ eval { local $SIG{'__DIE__'};
    ['ort','!',0,	alias=>[qw(orte)],
     label => M"Orte",		var => \$init_p_draw{'o'}],
    ['ortjwd','!',0,
-    label => M"Orte",		var => \$p_far_away{'o'}],
+    label => M"Orte jwd",	var => \$p_far_away{'o'}],
+   ['sehenswuerdigkeiten','!',0,
+    label => M"Sehenswürdigkeiten", var => \$init_str_draw{'v'}],
    ['pp','!',0,
     label => M"Kurvenpunkte und Kreuzungen", var => \$init_p_draw{'pp'}],
 
