@@ -334,9 +334,12 @@ sub parse_synop {
     local($station_code) = @_;
     local($synop);
     local($ENV{PATH}) = $ENV{PATH};
+    local($ENV{PERL5LIB}) = $ENV{PERL5LIB};
     eval '
-            require File::Basename;
-  	    $ENV{PATH} .= ":" . File::Basename::dirname($0);
+            require FindBin;;
+  	    $ENV{PATH} = "$FindBin::RealBin:$FindBin::RealBin/lib:$ENV{PATH}";
+	    $ENV{PERL5LIB} = "$FindBin::RealBin:$FindBin::RealBin/lib:$ENV{PERL5LIB}";
+warn $ENV{PERL5LIB};
         ';
     local(@synop);
     if ($local) {
