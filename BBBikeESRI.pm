@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeESRI.pm,v 1.12 2003/01/08 18:45:47 eserte Exp $
+# $Id: BBBikeESRI.pm,v 1.12 2003/01/08 18:45:47 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -58,9 +58,15 @@ sub as_bbd {
     } elsif (defined $args{-dbfinfo} && $args{-dbfinfo} eq 'NAME') {
 	if (defined $args{-dbfcol}) {
 	    my $col = $args{-dbfcol};
-	    $get_name = sub { $self->DBase->Data->[$_[0]]->[$col] };
+	    $get_name = sub { ($self->DBase->Data->[$_[0]] ?
+			       $self->DBase->Data->[$_[0]]->[$col] :
+			       "Index $_[0]")
+			  };
 	} else {
-	    $get_name = sub { join(":", @{ $self->DBase->Data->[$_[0]] }) };
+	    $get_name = sub { ($self->DBase->Data->[$_[0]] ?
+			       join(":", @{ $self->DBase->Data->[$_[0]] }) :
+			       "Index $_[0]")
+			  };
 	}
     }
 
@@ -84,11 +90,10 @@ sub as_bbd {
 
     my $inx = 0;
     while(defined(my $record = $self->Main->next_record)) {
-#    foreach my $record (@{ $self->Main->Records }) {
 	if ($handle_all) {
 	    my @coords;
 	    if ($record->isa("ESRI::Shapefile::Main::Record::Polygon")) {
-		@coords = @{ $record->Areas };
+		@coords = @{ $record->Areas }; # XXX correct?
 	    } elsif ($record->isa("ESRI::Shapefile::Main::Record::Point")) {
 		@coords = [$record->Point];
 	    } elsif ($record->isa("ESRI::Shapefile::Main::Record::Null")) {

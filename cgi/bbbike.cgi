@@ -3,7 +3,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.35 2003/06/30 22:05:29 eserte Exp eserte $
+# $Id: bbbike.cgi,v 6.36 2003/07/06 21:16:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -251,6 +251,15 @@ Default: true.
 =cut
 
 $create_imagemap = 1;
+
+=item $detailmap_module
+
+The L<BBBikeDraw> module to use for detailmap creation. By default
+C<GD> is used.
+
+=cut
+
+$detailmap_module = undef;
 
 =item $check_map_time
 
@@ -606,7 +615,7 @@ use vars qw($cgic); # Can't use my here!
 sub my_exit {
     # Seems to be necessary for CGI::Compress::Gzip to flush the
     # output buffer.
-warn "call my exit with @_";#XXX remove
+    #warn "call my exit with @_";#XXX remove
     undef $cgic;
     exit @_;
 }
@@ -655,7 +664,7 @@ use vars qw(@ISA);
 
 } # jetzt beginnt wieder package main
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.35 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.36 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -2763,22 +2772,48 @@ sub search_coord {
 			 };
     }
 
-    if ($output_as eq 'perldump') {
-	require Data::Dumper;
-	http_header(-type => "text/plain",
-		    @no_cache,
-		   );
-	print Data::Dumper->new
-	    ([{
-	       Route => \@out_route,
-	       Len   => $r->len, # in meters
-	       Trafficlights => $r->trafficlights,
-	       Speed => \%speed_map,
-	       Power => \%power_map,
-	       ($sess ? (Session => $sess->{_session_id}) : ()),
-	       Path => [ map { join ",", @$_ } @{ $r->path }],
-	      }
-	     ], ['route'])->Dump;
+    if ($output_as =~ /^(xml|perldump)$/) {
+	require Karte;
+	Karte::preload(qw(Polar Standard));
+	my $res = {
+		   Route => \@out_route,
+		   Len   => $r->len, # in meters
+		   Trafficlights => $r->trafficlights,
+		   Speed => \%speed_map,
+		   Power => \%power_map,
+		   ($sess ? (Session => $sess->{_session_id}) : ()),
+		   Path => [ map { join ",", @$_ } @{ $r->path }],
+		   LongLatPath => [ map {
+		       join ",", $Karte::Polar::obj->standard2map(@$_)
+		   } @{ $r->path }],
+		  };
+	if ($output_as eq 'perldump') {
+	    require Data::Dumper;
+	    http_header(-type => "text/plain",
+			@no_cache,
+		       );
+	    print Data::Dumper->new([$res], ['route'])->Dump;
+	} else { # xml
+	    require XML::Simple;
+	    http_header(-type => "text/xml",
+			@no_cache,
+		       );
+	    my $new_res = {};
+	    while(my($k,$v) = each %$res) {
+		if ($k eq 'Path' || $k eq 'LongLatPath') {
+		    $new_res->{$k} = { XY => $v };
+		} elsif ($k eq 'Route') {
+		    $new_res->{$k} = { Point => $v };
+		} else {
+		    $new_res->{$k} = $v;
+		}
+	    }
+	    print XML::Simple->new
+		(NoAttr => 1,
+		 RootName => "BBBikeRoute",
+		 XMLDecl => "<?xml version='1.0' standalone='yes' encoding='iso-8859-1'?>",
+		)->XMLout($new_res);
+	}
 	return;
     }
 
@@ -3669,6 +3704,8 @@ sub draw_map {
 
     my $create = 1;
     my $ext;
+    my $_create_imagemap =
+	exists $args{-imagemap} ? $args{-imagemap} : $create_imagemap;
 
     my $set_img_name = sub {
 	$img_file = "$mapdir_fs/berlin_map_$part.$ext";
@@ -3680,7 +3717,7 @@ sub draw_map {
 	    $ext = $_;
 #XXX	    next if $ext eq 'png' and !$bi->{'can_png'};
 	    $set_img_name->();
-	    if (-s $img_file && -s $map_file) {
+	    if (-s $img_file && (!$use_imagemap || -s $map_file)) {
 		my(@img_file_stat)   = stat($img_file);
 		if (defined $img_file_stat[9]) {
 		    my(@map_file_stat)   = stat($img_file);
@@ -3726,7 +3763,7 @@ sub draw_map {
 	    open(MAP, ">$map_file") or confess "Fehler: Die Map $map_file konnte nicht erstellt werden.<br>\n";
 	    chmod 0644, $map_file;
 	    $q->param('geometry', $detailwidth."x".$detailheight);
-	    $q->param('draw', 'str', 'ubahn', 'sbahn', 'wasser');
+	    $q->param('draw', 'str', 'ubahn', 'sbahn', 'wasser', 'orte');
 	    $q->param('drawwidth', 1);
 	    # XXX Argument sollte übergeben werden (wird sowieso noch nicht
 	    # verwendet, bis auf Überprüfung des boolschen Wertes)
@@ -3738,13 +3775,17 @@ sub draw_map {
 		    $q->param('imagetype', 'gif');
 		}
 	    }
-	    $q->param('module', $args{-module}) if $args{-module};
+	    if ($args{-module}) {
+		$q->param('module', $args{-module});
+	    } elsif ($detailmap_module) {
+		$q->param('module', $detailmap_module);
+	    }
 	    my $draw = new_from_cgi BBBikeDraw($q, Fh => \*IMG);
 	    $draw->set_dimension(@dim);
 	    $draw->create_transpose();
 	    print "Create $img_file...\n" if $args{-logging};
 	    $draw->draw_map();
-	    if ($create_imagemap) {
+	    if ($_create_imagemap) {
 		$draw->make_imagemap(\*MAP);
 	    }
 	    $draw->flush();
@@ -3999,6 +4040,7 @@ sub fix_coords {
 	    $$varref = $nearest[0];
 	} else {
 	    # Try to enlarge search region
+	    local $use_umland_jwd = 1;
 	    get_streets("use_umland");
 	    new_kreuzungen();
 	    @nearest = $kr->nearest_coord($$varref);

@@ -30,7 +30,8 @@ function redirect_form(frm) {
 }
 
 function force_browse_move_mode() {
-    force_mode = "browse";
+  //XXX    force_mode = "browse";
+    set_mode("browse", 0);
     return true;
 }
 
@@ -94,16 +95,16 @@ function move_map(x,y) {
     if (x < 0) {
 	imgx = 0;
     } else if (x > 0) {
-	imgx = 599;
+	imgx = [% IMGWIDTH - 1 %];
     } else {
-	imgx = "299.5";
+	imgx = [% IMGWIDTH / 2 %];
     }
     if (y < 0) {
 	imgy = 0;
     } else if (y > 0) {
-	imgy = 599;
+	imgy = [% IMGHEIGHT - 1 %];
     } else {
-	imgy = "299.5";
+	imgy = [% IMGHEIGHT / 2 %];
     }
     var frm = document.forms.map;
     frm.imgxy.value = imgx+" "+imgy;
@@ -176,6 +177,9 @@ function init() {
 	orig_zoomdir = frm.orig_zoomdir.value;
     }
     set_mode_no_orig_change(orig_mode, orig_zoomdir);
+    if (is_searchroute_set()) {
+        set_setcoord_action();
+    }
 }
 
 // XXX no --- this is not intuitive
@@ -183,28 +187,38 @@ function adjust_for_redraw() {
     // set_mode("browse", 0);
 }
 
-function toggled_searchroute_mode() {
+function is_searchroute_set() {
     var frm = document.forms["map"];
-    var val = null;
+    var val = false;
     for(var i = 0; i < frm.mode.length; i++) {
 	if (frm.mode[i].value == "searchroute") {
-	    val = frm.mode[i].checked;
-	    break;
+	    return frm.mode[i].checked; 
 	}
     }
+    return false;
+}
+
+function set_setcoord_action() {
+    var frm = document.forms["map"];
+    orig_action = frm.action;
+    frm.action = '[% BBBIKE_CGI_RELURL %]/mapserver_setcoord.cgi';
+    if (frm.startc.value == "[startc]" || frm.startc.value == "") {
+        frm.coordset.value = "start";
+    } else {
+        frm.coordset.value = "ziel";
+    }
+}
+
+function toggled_searchroute_mode() {
+    var frm = document.forms["map"];
+    var val = is_searchroute_set();
     if (!val) {
 	if (orig_action != "") {
 	    frm.action = orig_action;
 	}
 	frm.coordset.value = "";
     } else {
-	orig_action = frm.action;
-	frm.action = '[% BBBIKE_CGI_RELURL %]/mapserver_setcoord.cgi';
-	if (frm.startc.value == "[startc]" || frm.startc.value == "") {
-	    frm.coordset.value = "start";
-	} else {
-	    frm.coordset.value = "ziel";
-	}
+        set_setcoord_action();
     }
 	    
 }

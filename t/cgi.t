@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.4 2003/07/01 08:58:00 eserte Exp $
+# $Id: cgi.t,v 1.5 2003/07/07 19:37:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003 Slaven Rezic. All rights reserved.
@@ -58,7 +58,7 @@ if (!@urls) {
     }
 }
 
-plan tests => (59 + ($ortsuche ? 11 : 0)) * scalar @urls;
+plan tests => (66 + ($ortsuche ? 11 : 0)) * scalar @urls;
 
 my $hdrs = (defined &Compress::Zlib::memGunzip
 	    ? HTTP::Headers->new(Accept_Encoding => "gzip")
@@ -259,15 +259,19 @@ XXX:
 	    display($res);
 	} elsif ($imagetype =~ /(png|jpeg)/) {
 	    ok($res->header('Content_Type'), 'image/' . $imagetype);
+	    ok(defined uncompr($res));
 	    display($res);
 	} elsif ($imagetype =~ /pdf/) {
 	    ok($res->header('Content_Type'), 'application/pdf');
+	    ok(defined uncompr($res));
 	    display($res);
 	} elsif ($imagetype =~ /svg/) {
 	    ok($res->header('Content_Type'), "image/svg+xml");
+	    ok(defined uncompr($res));
 	    display($res);
 	} else {
 	    ok($res->header('Content_Type'), qr{^text/html}, $imagetype);
+	    ok(defined uncompr($res));
 	}
     }
 }

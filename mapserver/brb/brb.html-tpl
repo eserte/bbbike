@@ -27,7 +27,7 @@
      <td>
       <table summary="" cellpadding="0" cellspacing="1" border="0" bgcolor="#000000">
        <tr>
-        <td><INPUT NAME="img" TYPE="image" SRC="[img]" width=550 height=550 border=0></td>
+        <td><INPUT NAME="img" TYPE="image" SRC="[img]" width="[% IMGWIDTH %]" height="[% IMGHEIGHT %]" border=0></td>
        </tr>
       </table>
      </td>
@@ -135,7 +135,7 @@
        <a id="bbbikemail" href="mailto:slaven@rezic.de">E-Mail</a> |
        <a href="help.html">Info</a> |
        <a id="bbbikeurl" href="[% BBBIKE_URL %]">BBBike</a> |
-       <a href="[% BBBIKE_CGI_RELURL %]/mapserver_address.cgi">Adresssuche</a>
+       <a href="[% BBBIKE_CGI_RELURL %]/mapserver_address.cgi?[get_layers]&mapext=[mapext_esc]">Adresssuche</a>
       </p>
   </td>
  </tr>

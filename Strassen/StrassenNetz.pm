@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.24 2003/06/30 22:05:55 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.24 2003/06/30 22:05:55 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -165,6 +165,8 @@ use constant BLOCKED_NARROWPASSAGE => "BNP";
 sub make_sperre_1 {
     my($self, $sperre_file, %args) = @_;
 
+    my $del_token = $args{DelToken};
+
     my %sperre_type;
     if (exists $args{Type}) {
 	$args{Type} = [$args{Type}] unless ref $args{Type} eq 'ARRAY';
@@ -213,15 +215,19 @@ sub make_sperre_1 {
 		# Aufzeichnen der nicht erlaubten Wegführung
 		push @{ $self->{Wegfuehrung}{$ret->[Strassen::COORDS()][-1]} },
 		     $ret->[Strassen::COORDS()];
+		if (defined $del_token) {
+		    push @{ $self->{"Wegfuehrung_$del_token"}{$ret->[Strassen::COORDS()][-1]} },
+			 $ret->[Strassen::COORDS()];
+		}
 	    } else { # ONEWAY...
 		my @kreuzungen = @{$ret->[Strassen::COORDS()]};
 		if (@kreuzungen == 1) {
-		    $self->del_net($kreuzungen[0]);
+		    $self->del_net($kreuzungen[0], undef, undef, $del_token);
 		} else {
 		    my $i;
 		    for($i = 0; $i < $#kreuzungen; $i++) {
 			$self->del_net($kreuzungen[$i], $kreuzungen[$i+1],
-				       substr($category, 0, 1));
+				       substr($category, 0, 1), $del_token);
 		    }
 		}
 	    }
@@ -1761,16 +1767,31 @@ sub get_point_comment {
 # Wenn zwei Punkte angegeben sind, dann wird nur diese Strecke entfernt,
 # und zwar nur in dieser Richtung, wenn dir == 1, oder beide Richtungen,
 # wenn dir == 2
+# If $del_token is defined, then record the deletion in _Deleted$del_token
 sub del_net {
-    my($self, $point1, $point2, $dir) = @_;
+    my($self, $point1, $point2, $dir, $del_token) = @_;
     if (!defined $point2) {
 	foreach (keys %{$self->{Net}{$point1}}) {
+	    if (defined $del_token) {
+		if (exists $self->{Net}{$point1}{$_}) {
+		    $self->{"_Deleted$del_token"}{$point1}{$_} = $self->{Net}{$point1}{$_};
+		}
+		if (exists $self->{Net}{$_}{$point1}) {
+		    $self->{"_Deleted$del_token"}{$_}{$point1} = $self->{Net}{$_}{$point1};
+		}
+	    }
 	    delete $self->{Net}{$point1}{$_};
 	    delete $self->{Net}{$_}{$point1};
 	}
     } else {
+	if (defined $del_token && exists $self->{Net}{$point1}{$point2}) {
+	    $self->{"_Deleted$del_token"}{$point1}{$point2} = $self->{Net}{$point1}{$point2};
+	}
 	delete $self->{Net}{$point1}{$point2};
 	if ($dir ne BLOCKED_ONEWAY) { # "2"
+	    if (defined $del_token && exists $self->{Net}{$point2}{$point1}) {
+		$self->{"_Deleted$del_token"}{$point2}{$point1} = $self->{Net}{$point2}{$point1};
+	    }
 	    delete $self->{Net}{$point2}{$point1};
 	}
     }

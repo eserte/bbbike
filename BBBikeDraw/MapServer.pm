@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.7 2003/02/26 14:50:51 eserte Exp $
+# $Id: MapServer.pm,v 1.8 2003/07/06 21:55:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -22,7 +22,7 @@ use Carp qw(confess);
 
 use vars qw($VERSION %color %outline_color %width);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -31,6 +31,8 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 				 MapserverRelurl MapserverUrl TemplateMap
 				 ImageSuffix FontsList));
     sub new { bless {}, shift }
+
+    # XXX How to code the preferences better?
     sub vran_default {
 	my $self = shift->new;
 	$self->BbbikeDir("$ENV{HOME}/src/bbbike");
@@ -38,9 +40,24 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 	$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
 	$self->MapserverRelurl("/~eserte/mapserver/brb");
 	$self->MapserverUrl("http://www/~eserte/mapserver/brb");
-	$self->TemplateMap("brb-ipaq.map-tpl");
+	#$self->TemplateMap("brb-ipaq.map-tpl");
+	$self->TemplateMap("brb.map-tpl");
 	$self->ImageSuffix("png");
 	$self->FontsList("fonts-vran.list");
+	$self;
+    }
+
+    sub radzeit_default {
+	my $self = shift->new;
+	my $apache_root = "/usr/local/apache/radzeit";
+	$self->BbbikeDir("$apache_root/BBBike");
+	$self->MapserverMapDir("$apache_root/htdocs/mapserver/brb");
+	$self->MapserverBinDir("$apache_root/cgi-bin");
+	$self->MapserverRelurl("/mapserver/brb");
+	$self->MapserverUrl("http://www.radzeit.de/mapserver/brb");
+	$self->TemplateMap("brb.map-tpl");
+	$self->ImageSuffix("png");
+	$self->FontsList("fonts-radzeit.list");
 	$self;
     }
 }
@@ -75,7 +92,17 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
     sub imageOut {
 	my $self = shift;
-	my $conf = $self->Conf || die "No configuration supplied --- set self->{Image}->Conf";
+	my $conf = $self->Conf;
+	if (!$conf) {
+	    require Sys::Hostname;
+	    if (Sys::Hostname::hostname() =~ /herceg\.de$/) {
+		$conf = BBBikeDraw::MapServer::Conf->vran_default;
+	    } elsif ($ENV{SERVER_NAME} =~ /radzeit\.de$/) {
+		$conf = BBBikeDraw::MapServer::Conf->radzeit_default;
+	    } else {
+		die "No configuration supplied --- set self->{Image}->Conf";
+	    }
+	}
 	my $tmpdir = tempdir(CLEANUP => 1);
 	my $mapfile = "$tmpdir/brb-ipaq.$$.map";
 	$self->BbbikeDir($conf->BbbikeDir);
@@ -96,7 +123,9 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 	    my $v = $self->$k();
 	    (my $k2 = $k) =~ s/(?<=.)([A-Z])/_$1/g;
 	    $k2 = uc($k2);
-	    if ($k2 =~ /^COLOR_/ || $k2 eq 'IMAGECOLOR') {
+	    if ($k2 =~ /^(WIDTH|HEIGHT)$/) {
+		$k2 = "IMG$k2";
+	    } elsif ($k2 =~ /^COLOR_/ || $k2 eq 'IMAGECOLOR') {
 		$v = join(" ", @$v);
 	    }
 	    if ($k2 =~ /^ON_/) {

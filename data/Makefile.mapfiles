@@ -1,9 +1,9 @@
 #
-# $Id: Makefile.mapfiles,v 1.8 2003/07/03 20:56:02 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.8 2003/07/03 20:56:02 eserte Exp eserte $
 #
 
 # should this be here?
-MAPFILES_ROOT_DIR=	../mapserver/brb
+MAPFILES_ROOT_DIR?=	../mapserver/brb
 MAPFILES_DATA_DIR=	$(MAPFILES_ROOT_DIR)/data
 MAPFILES_IMG_DIR=	$(MAPFILES_ROOT_DIR)/graphics
 
@@ -19,8 +19,10 @@ SORTBYCAT=		${MISCSRCDIR}/sortbycat
 BBD2ESRI=		${MISCSRCDIR}/bbd2esri
 CONVERT_RADWEGE=	${MISCSRCDIR}/convert_radwege
 
-mapfiles:	mapfiles-prepare mapfiles-convert mapfiles-permissions \
-		mapfiles-reference
+SHPTREE=		/usr/local/src/work/mapserver/shptree
+
+mapfiles:	mapfiles-prepare mapfiles-convert mapfiles-shptree \
+		mapfiles-permissions mapfiles-reference
 
 mapfiles-prepare:
 	[ ! -d $(MAPFILES_ROOT_DIR) ] && mkdir $(MAPFILES_ROOT_DIR) || true
@@ -110,9 +112,8 @@ $(MAPFILES_IMG_DIR)/reference-wide.xpm:	$(MAPFILES_IMG_DIR)/reference-wide.png
 
 
 RADWEGE_DELTA=	5 10 20
-
 # XXX comments_.*.shp generieren?
-mapfiles-convert:	$(MAPFILES_DATA_DIR)/strassen.shp \
+MAPFILES=		$(MAPFILES_DATA_DIR)/strassen.shp \
 			$(MAPFILES_DATA_DIR)/wasserstrassen.shp \
 			$(MAPFILES_DATA_DIR)/orte.shp \
 			$(MAPFILES_DATA_DIR)/orte_city.shp \
@@ -139,6 +140,14 @@ mapfiles-convert:	$(MAPFILES_DATA_DIR)/strassen.shp \
 			$(MAPFILES_DATA_DIR)/sehenswuerdigkeit.shp \
 			$(MAPFILES_DATA_DIR)/fragezeichen.shp \
 			$(MAPFILES_DATA_DIR)/nolighting.shp
+
+ADDITIONAL_MAPFILES=	$(MAPFILES_DATA_DIR)/gesperrt_point.shp \
+			$(MAPFILES_DATA_DIR)/sehenswuerdigkeit_point.shp \
+			$(MAPFILES_DATA_DIR)/sehenswuerdigkeit_polygon.shp \
+			$(MAPFILES_DATA_DIR)/wasserstrassen_polygon.shp
+ALL_MAPFILES=		$(MAPFILES) $(ADDITIONAL_MAPFILES)
+
+mapfiles-convert:	${MAPFILES}
 
 MAPFILES_TEMP_PREFIX=	/tmp/b_de_
 
@@ -292,6 +301,18 @@ $(MAPFILES_DATA_DIR)/fragezeichen.shp:	${MISCDIR}/fragezeichen
 
 $(MAPFILES_DATA_DIR)/nolighting.shp:	nolighting
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/nolighting nolighting
+
+mapfiles-shptree:	${ALL_MAPFILES:S/.shp$/.qix/}
+
+.for qix in ${ALL_MAPFILES:S/.shp$/.qix/}
+${qix}:
+	@[ -x ${SHPTREE} ] && ( \
+		echo $@; \
+		${SHPTREE} $@ \
+	) || ( \
+		echo "Warning: no shptree program found for converting $@" \
+	)
+.endfor
 
 # XXX more needed
 cleanup-tmp:

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.31 2003/06/25 05:36:40 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.31 2003/06/25 05:36:40 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -59,7 +59,7 @@ sub new {
     $self->{Module}    = delete $args{Module}; # use another BBBikeDraw module
     $self->{MinPlaceCat} = delete $args{MinPlaceCat}; # force minimum place (ort) category
     $self->{FontSizeScale} = delete $args{FontSizeScale} || 1;
-    $self->{Conf}      = delete $args{Conf} || 1;
+    $self->{Conf}      = delete $args{Conf};
 
     if (defined $self->{Return} &&
 	$self->{Return} eq 'string') {

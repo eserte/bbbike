@@ -13,14 +13,21 @@
 # WWW:  http://bbbike.sourceforge.net
 #
 
-BEGIN { open(STDERR, ">/tmp/wapbbbike.log") } # XXX For the roxen webserver...
+BEGIN {
+    if ($ENV{SERVER_SOFTWARE} =~ /roxen/i) {
+	open(STDERR, ">/tmp/wapbbbike.log");
+    }
+}
 
-package BBBikeRouting::WAP;
 BEGIN { delete $INC{"FindBin.pm"} }
 use FindBin;
+BEGIN { warn "FindBin is $FindBin::RealBin" }#XXX problems...
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/../BBBike", "$FindBin::RealBin/../BBBike/lib");
 use lib "/home/e/eserte/lib/perl"; # XXX fuer GD on cs
+BEGIN { warn "INC is @INC" }#XXX ... with apache..registry...
+
+package BBBikeRouting::WAP;
 use BBBikeRouting;
 use BBBikeVar;
 @ISA = 'BBBikeRouting';
@@ -334,7 +341,7 @@ return 1 if ((caller() and (caller())[0] ne 'Apache::Registry')
 
 my $routing = BBBikeRouting->new->init_context;
 bless $routing, 'BBBikeRouting::WAP'; # 5.005 compat
-$routing->Context->Algorithm("A*"); # XXX should use config file...
+$routing->read_conf("$FindBin::RealBin/bbbike.cgi.config");
 
 my $q = $routing->wap_init;
 my $do_image = defined $q->param("output_as") && $q->param("output_as") eq 'image';

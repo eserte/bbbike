@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.12 2003/07/03 00:09:01 eserte Exp $
+# $Id: LogTracker.pm,v 1.12 2003/07/03 00:09:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -359,7 +359,9 @@ sub parse_tail_log {
     if (!$tail_pid) {
 	_tail_log();
     };
-    warn "Start parsing file $logfile...\n";
+    warn "Start parsing file $logfile " .
+	(defined $remotehost && $remotehost ne '' ? "on $remotehost " : "") .
+	    "...\n";
     _maybe_gunzip(\*FH);
     $tracking = 1;
     $main::top->fileevent(\*FH, "readable", \&fileevent_read_line);

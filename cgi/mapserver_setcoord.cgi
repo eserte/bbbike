@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_setcoord.cgi,v 1.4 2003/06/29 10:44:53 eserte Exp $
+# $Id: mapserver_setcoord.cgi,v 1.5 2003/07/05 17:26:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -36,10 +36,17 @@ if ($set ne "pass") {
 if ($set eq 'ziel') {
     my $q2 = CGI->new(query_string());
     $q2->param("output_as", "mapserver");
+    # XXX Vielleicht das hier konfigurierbar machen: wenn false,
+    # dann hat der User die Möglichkeit, seine Preferenzen einzustellen
+    # und sich die Routenliste anzugucken. Wenn true wird die Route
+    # sofort im Mapserver gezeichnet.
     $q2->param("pref_seen", "true");
     $q2->param("startc", param("startc"));
     $q2->param("zielc", param("zielc"));
     $q2->param("layer", param("layer")) if defined param("layer");
+    if (!grep { $_ eq 'route' } $q2->param("layer")) {
+	$q2->append(-name => "layer", -values => ["route"]);
+    }
     $q2->param("mapext", param("imgext")) if defined param("imgext");
     print redirect("http://www/~eserte/bbbike/cgi/bbbike.cgi?"
 		   . $q2->query_string);
@@ -49,12 +56,24 @@ if ($set eq 'ziel') {
     require FindBin; $FindBin::RealBin = $FindBin::RealBin; # peacify -w
     my $ms = BBBikeMapserver->new(-tmpdir => "/tmp"); # XXX do not hardcode
     $ms->read_config("$FindBin::RealBin/bbbike.cgi.config");
+
+    my @layers;
+    my $q2 = CGI->new(query_string());
+    if (!grep { $_ eq 'route' } $q2->param("layer")) {
+	@layers = ($q2->param("layer"), "route");
+    }
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@layers],[])->Indent(1)->Useqq(1)->Dump; # XXX
+
     $ms->start_mapserver(-passparams => 1,
-			 -start => param("startc"));
+			 -scope => "all,city", # XXX do not use "city" here, maybe "best" to get the scope according to -start?
+			 -start => param("startc"),
+			 (@layers ? (-layers => \@layers) : ()),
+			);
 } else { # pass
     push_INC();
     require BBBikeVar;
     require FindBin; $FindBin::RealBin = $FindBin::RealBin; # peacify -w
+    $BBBike::BBBIKE_MAPSERVER_URL = $BBBike::BBBIKE_MAPSERVER_URL; # peacify -w
     do "$FindBin::RealBin/bbbike.cgi.config";
     if (!defined $mapserver_prog_url) {
 	warn "Fallback to standard Mapserver URL";

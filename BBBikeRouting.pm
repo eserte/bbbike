@@ -96,6 +96,18 @@ sub init_context {
     $self;
 }
 
+sub read_conf {
+    my $self = shift;
+    my $file = shift;
+    {
+	package BBBikeConf;
+	do $file;
+    }
+    my $context = $self->Context;
+    $context->Algorithm($BBBikeConf::search_algorithm)
+	if defined $BBBikeConf::search_algorithm;
+}
+
 sub change_scope {
     my($self, $scope) = @_;
     $self->Context->Scope($scope);

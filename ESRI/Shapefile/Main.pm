@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Main.pm,v 1.9 2003/01/08 20:12:04 eserte Exp $
+# $Id: Main.pm,v 1.9 2003/01/08 20:12:04 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2002 Slaven Rezic. All rights reserved.
@@ -178,16 +178,17 @@ sub new {
 
     my $shape_type = unpack("V", substr($header, 8, 4));
 
-    my $new_class = "ESRI::Shapefile::Main::Record::" .
+    my $new_class =
 	{ ESRI::Shapefile::Main::SHAPE_POINT()    => "Point",
 	  ESRI::Shapefile::Main::SHAPE_POLYLINE() => "PolyLine",
 	  ESRI::Shapefile::Main::SHAPE_POLYGON()  => "Polygon",
 	  ESRI::Shapefile::Main::SHAPE_NULL()     => "Null",
 	  #XXX
 	}->{$shape_type};
-    if ($new_class =~ /::$/) {
+    if (!defined $new_class) {
 	die "Unhandled shape type $shape_type at pos " . tell($root->FH);
     }
+    $new_class = "ESRI::Shapefile::Main::Record::" . $new_class;
 
     my $record = $new_class->new_from_file($root);
 

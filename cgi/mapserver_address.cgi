@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.12 2003/07/01 22:07:59 eserte Exp eserte $
+# $Id: mapserver_address.cgi,v 1.13 2003/07/05 17:26:12 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -30,9 +30,10 @@ BEGIN { # XXX do not hardcode
 use strict;
 use FindBin;
 use CGI qw(:standard *table);
-use lib ("$BBBIKE_ROOT",
-	 "$BBBIKE_ROOT/lib",
-	 "$BBBIKE_ROOT/data",
+# XXX fix warning if $BBBIKE_ROOT is
+use lib (defined $BBBIKE_ROOT ? ("$BBBIKE_ROOT",
+				 "$BBBIKE_ROOT/lib",
+				 "$BBBIKE_ROOT/data") : (),
 	 "/home/e/eserte/src/bbbike",
 	 "/home/e/eserte/src/bbbike/lib",
 	 "/home/e/eserte/src/bbbike/data",
@@ -65,8 +66,15 @@ if (defined param("mapserver")) {
     print end_html;
 }
 
+sub _form {
+    print start_form(-action => url(-relative=>1));
+    print hidden("layer", param("layer")) if param("layer");
+    print hidden("mapext", param("mapext")) if param("mapext");
+}
+
 sub show_form {
-    print h2("Berlin"), start_form;
+    print h2("Berlin");
+    _form;
     print table({-border=>0},
 		Tr(
 		   [
@@ -77,7 +85,8 @@ sub show_form {
 	       );
     print end_form, hr;
 
-    print h2("Brandenburg"), start_form;
+    print h2("Brandenburg");
+    _form;
     print table({-border=>0},
 		Tr(
 		   [
@@ -87,7 +96,8 @@ sub show_form {
 	       );
     print end_form, hr;
 
-    print h2("Volltextsuche"), start_form;
+    print h2("Volltextsuche");
+    _form;
     print table({-border=>0},
 		Tr(
 		   [
@@ -97,7 +107,8 @@ sub show_form {
 	       );
     print end_form, hr;
 
-    print h2("Breite/L‰nge"), start_form;
+    print h2("Breite/L‰nge");
+    _form;
     print table({-border=>0},
 		Tr(
 		   [
@@ -145,7 +156,7 @@ sub resolve_street {
     } elsif (@$res_ref > 1) {
 	splice @$res_ref, 20 if @$res_ref > 20;
 	print header, start_html("Auswahl nach Straﬂen und Orten"), h1("Auswahl nach Straﬂen und Orten");
-	print start_form;
+	_form;
 	print h2("Mehrere Straﬂen gefunden");
 	print radio_group
 	    (-name=>"coords",
@@ -207,7 +218,7 @@ sub resolve_city {
 	splice @res, 20 if @res > 20;
 	print header, start_html("Auswahl nach Straﬂen und Orten"), h1("Auswahl nach Straﬂen und Orten");
 	print h2("Mehrere Orte gefunden");
-	print start_form;
+	_form;
 	print radio_group
 	    (-name=>"coords",
 	     -values => [map { $_->[Strassen::COORDS()]->[0] } @res],
@@ -295,7 +306,7 @@ sub resolve_fulltext {
 	if (@res > 1) {
 	    print header, start_html("Auswahl nach Straﬂen und Orten"), h1("Auswahl nach Straﬂen und Orten");
 	    print h2("Mehrere Treffer");
-	    print start_form;
+	    _form;
 
 	    {
 		my $use_icons = 1;
@@ -361,7 +372,11 @@ sub redirect_to_ms {
     }
     $args{-scope} = "all," . $args{-scope};
 
-    if (param("width")) {
+    if (param("mapext")) {
+	my($x1,$y1,$x2,$y2) = split /\s+/, param("mapext");
+	$args{-width} = $x2-$x1;
+	$args{-height} = $y2-$y1;
+    } elsif (param("width")) {
 	$args{-width} = param("width");
 	$args{-height} = (param("height") ? param("height") : $args{-width});
     } else {
