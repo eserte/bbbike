@@ -84,7 +84,12 @@ targets-clean:
 # Useful checks, but normally too slow for a quick build
 # XXX merge with sort-Berlin.coords.data rule below?
 slow-checks:	inaccessible_strassen inaccessible_landstrassen \
-		check-line-lengths check-dates check-Berlin.coords.data
+		check-line-lengths check-dates check-Berlin.coords.data \
+		persistent-tmp
+
+persistent-tmp:	${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
+		${PERSISTENTTMPDIR}/strassen_in_planung.bbd \
+		${PERSISTENTTMPDIR}/upload-fragezeichen.wpt
 
 # even slower (about four minutes)
 really-slow-checks:	check-crossings check-nearest
@@ -438,10 +443,10 @@ fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 	cp -f /tmp/fragezeichen_$(i)-orig.bbd $@
 .endfor
 
-/tmp/projektierte_radstreifen.bbd:	fragezeichen-orig
+${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd:	fragezeichen-orig
 	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "projektierte Radstreifen" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
 
-/tmp/strassen_in_planung.bbd:	fragezeichen-orig
+${PERSISTENTTMPDIR}/strassen_in_planung.bbd:	fragezeichen-orig
 	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "Straﬂen in Planung" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
 
 # Die mit "laut adfc-karte" u.‰. gekennzeichneten Straﬂen extrahieren und
@@ -454,9 +459,9 @@ fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 	cd ${DATADIR} && perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib -MStrassen::Core -MTie::File -MFcntl=O_RDONLY -e 'for my $$file (qw(qualitaet_s-orig qualitaet_l-orig)) { tie @l, "Tie::File", $$file, mode => O_RDONLY or die qq{Cannot open $$file: $$!}; for my $$i (1 .. $$#l) { if ($$l[$$i-1] =~ /\#:\s+unverified_by\s+(.*?):?\s*$$/i) { my $$comment = "laut $$1"; my $$x = Strassen::parse($$l[$$i]); $$x->[Strassen::NAME()] .= " ($$comment)"; $$x->[Strassen::CAT()] = "?"; print Strassen::arr2line2($$x),"\n" } } }' > /tmp/other-source-fragezeichen-orig
 	${CONVERT2HAFAS} -basefile ${DATADIR}/qualitaet_s-orig /tmp/other-source-fragezeichen-orig > $@
 
-PREFIXMAP=sperr=SP,kopfstein=KP,qualit‰t=QU,m‰ﬂig.geeignet=QU,radweg=RW,bau=BA,vorfahrt=VF
+PREFIXMAP=sperr=SP,kopfstein=KP,qualit‰t=QU,m‰ﬂig.geeignet=QU,radweg=RW,benutzungspflich=RW,bau=BA,vorfahrt=VF,name=NA,bezeichn=NA,vorfahrt=VF,ampel=AM
 
-/tmp/upload-fragezeichen.wpt:	fragezeichen
+${PERSISTENTTMPDIR}/upload-fragezeichen.wpt:	fragezeichen Makefile
 	${MISCSRCDIR}/bbd2gpsman.pl -filter nearby=200 \
 	    -prefix XXX -match name \
 	    -prefixmap ${PREFIXMAP} \
