@@ -6,7 +6,11 @@
 # Change 1..1 below to 1..last_test_to_print .
 # (It may become useful if the test is moved to ./t subdirectory.)
 
-# XXX switch to Test.pm (low priority)
+use strict;
+use vars qw($x_delta $y_delta);
+
+use Test::More;
+plan tests => 12;
 
 BEGIN {
     eval {
@@ -14,17 +18,17 @@ BEGIN {
 	import Devel::Leak;
     };
     if ($@) {
-	warn "Devel::Leak not found, memory leak tests not activated.\n";
+	warn "\nDevel::Leak not found, memory leak tests not activated.\n";
     }
 }
-BEGIN { $| = 1; print "1..8\n"; $ok = 0;}
-END {print "not ok 1\n" unless $loaded;}
+
 BEGIN {
     # Don't use "use lib", so we are sure that the real BBBikeXS.pm/so is
     # loaded first
     push @INC, qw(../.. ../../lib);
 }
 use Strassen;
+
 BEGIN {
     $x_delta = 100; # wrong value, expect warn
     $y_delta = 600; # right value
@@ -40,33 +44,30 @@ use BBBikeXS;
 #use Data::Dumper;
 use Getopt::Long;
 use Benchmark;
+
 my $datadir = "../../data";
 my $imgdir = "../../images";
 push(@Strassen::datadirs, $datadir);
 my $leaktest = 1;
 
-$loaded = 1;
-print "ok @{[++$ok]}\n";
+ok(1, "loaded module");
 
 # test if functions are available
-print "not " unless defined &main::set_canvas_scale_XS; print "ok @{[++$ok]}\n";
-print "not " unless defined &main::transpose_ls_XS; print "ok @{[++$ok]}\n";
-
-print "not " unless defined &Strassen::to_koord1_XS; print "ok @{[++$ok]}\n";
-print "not " unless defined &Strassen::to_koord_XS; print "ok @{[++$ok]}\n";
-
-print "not " unless defined &StrassenNetz::make_net_XS; print "ok @{[++$ok]}\n";
-
-print "not " unless defined &BBBike::fast_plot_str; print "ok @{[++$ok]}\n";
-print "not " unless defined &BBBike::fast_plot_point; print "ok @{[++$ok]}\n";
+ok(defined &main::set_canvas_scale_XS, "Subroutine definitions...");
+ok(defined &main::transpose_ls_XS);
+ok(defined &Strassen::to_koord1_XS);
+ok(defined &Strassen::to_koord_XS);
+ok(defined &StrassenNetz::make_net_XS);
+ok(defined &BBBike::fast_plot_str);
+ok(defined &BBBike::fast_plot_point);
 
 # which tests to perform:
-$test_tk        = 1;
-$test_make_net  = 1;
-$test_to_koord1 = 0;
-$test_to_koord  = 0;
-$test_transpose = 0;
-$repeat         = -2;
+my $test_tk        = 1;
+my $test_make_net  = 1;
+my $test_to_koord1 = 0;
+my $test_to_koord  = 0;
+my $test_transpose = 0;
+my $repeat         = -2;
 
 if (!GetOptions("tk!"        => \$test_tk,
 		"makenet!"   => \$test_make_net,
@@ -81,17 +82,29 @@ if (!GetOptions("tk!"        => \$test_tk,
     die "usage!";
 }
 
-if ($test_tk) {
+SKIP: {
+    skip "Tk tests not enabled", 4 if !$test_tk;
+
     require Tk;
-    $top=Tk::tkinit();
-    $c = $top->Canvas(-width => 1000,
-		      -height => 700)->pack;
+    my $top = Tk::tkinit();
+    my $c = $top->Canvas(-width => 1000,
+			 -height => 700)->pack;
+    use vars qw($andreaskr_klein_photo $ampel_klein_photo $zugbruecke_klein_photo);
     $andreaskr_klein_photo
       = $top->Photo(-file => "$imgdir/andreaskr.gif");
     $ampel_klein_photo 
       = $top->Photo(-file => "$imgdir/ampel.gif");
     $zugbruecke_klein_photo 
       = $top->Photo(-file => "$imgdir/zugbruecke.gif");
+
+    sub get_symbol_scale {
+	my $p = {"lsa-X" => $ampel_klein_photo,
+		 "lsa-B" => $andreaskr_klein_photo,
+		 "lsa-Zbr" => $zugbruecke_klein_photo,
+		}->{$_[0]};
+	$p;
+    }
+
     BBBike::fast_plot_point($c, "lsa", ["$datadir/ampeln"], 0);
     $c->delete("lsa");
 
@@ -99,12 +112,24 @@ if ($test_tk) {
     checkpoint1();
     checktime1();
     BBBike::fast_plot_point($c, "lsa", ["$datadir/ampeln"], 0);
+    
     checktime2();
     checkpoint2();
 
+ TODO: {
+	local $TODO;
+	$TODO = "Strange behaviour ... perl or Tk problem?"; # only seen with SuSE's perl 5.8.1 and a self-compiled Tk 800.025, but not with Tk 804.027
+	    if $Tk::VERSION < 804;
+	for my $abk (qw(B X Zbr)) {
+	    my(@tags) = $c->find(withtag => "lsa-$abk-fg");
+	    ok(scalar @tags > 0, "Tags for $abk");
+	}
+    }
+
+    use vars qw(%str_outline %category_color);
     $str_outline{"s"} = 1;
-    @restr = ('HH', 'H', 'N', 'NN');
-    $category_width = {'HH' => 6, 'H' => 4, 'N' => 2, 'NN' => 1};
+    my @restr = ('HH', 'H', 'N', 'NN');
+    my $category_width = {'HH' => 6, 'H' => 4, 'N' => 2, 'NN' => 1};
     %category_color = ('N'  => 'grey99',
 		       'NN' => '#bdffbd',
 		       'H'  => 'yellow',
@@ -131,23 +156,24 @@ if ($test_tk) {
     # check object mode of dast_plot_str
     {
 	$category_color{$_} = 'green4' for (qw(S SA SB SC));
-	$category_width{$_} = 3        for (qw(S SA SB SC));
+	$category_width->{$_} = 3        for (qw(S SA SB SC));
 	my $s = Strassen->new("$datadir/sbahn");
 	BBBike::fast_plot_str($c, "b", $s, 0, undef, $category_width);
     }
 
-    $top->after(5000, sub { $top->destroy });
+    $top->after(5000, sub { $top->destroy;});
     Tk::MainLoop();
+    ok(1);
 }
 
-$s = new Strassen "strassen";
+my $s = new Strassen "strassen";
 
 if ($test_make_net) {
     print "# Test make_net\n";
     $StrassenNetz::VERBOSE = 1;
 
     checkpoint1();
-    for $pass (1 .. 3) {
+    for my $pass (1 .. 3) {
 	print "# pass $pass...\n";
 	checktime1();
 	my $n = new StrassenNetz $s;
@@ -216,7 +242,7 @@ if ($test_to_koord1) {
 	my(@k) = @{$ret->[1]};
 	last if !@k;
 	foreach (@k) {
-	    for $i (1 .. 10) {
+	    for my $i (1 .. 10) {
 		my(@fast) = @{Strassen::to_koord1_XS($_)};
 	    }
 	}
@@ -231,7 +257,7 @@ if ($test_to_koord1) {
 	my(@k) = @{$ret->[1]};
 	last if !@k;
 	foreach (@k) {
-	    for $i (1 .. 10) {
+	    for my $i (1 .. 10) {
 		my(@slow) = @{Strassen::to_koord1_slow($_)};
 	    }
 	}
@@ -289,7 +315,7 @@ $slow->[0][1] != $fast->[0][1]";
 
 ######################################################################
 
-$scale = 0.5;
+my $scale = 0.5;
 sub transpose_ls_slow {
     (int((-200+$_[0]/25)*$scale), int((600-$_[1]/25)*$scale));
 }
@@ -325,6 +351,10 @@ if ($test_transpose) {
     }
 }
 
+my $count1;
+my $count2;
+my $handle;
+
 sub checkpoint1 {
     if ($leaktest) {
 	eval {
@@ -345,6 +375,9 @@ sub checkpoint2 {
 	};
     }
 }
+
+my $checktime;
+my $newtime;
 
 sub checktime1 {
     if (defined &Tk::timeofday) {
