@@ -1172,4 +1172,62 @@ EOF
 userdel	q4 26136,29466 25361,29596
 EOF
      },
+     { from  => 1101507035, # 2004-11-26 23:10
+       until => 1114898400, # 2005-05-01 00:00
+       text  => 'Ebertstr. Richtung Potsdamer Platz zwischen Behrensstr. und Hannah-Ahrendt-Str. Baustelle, Fahrtrichtung gesperrt (bis April 2005)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 8595,12066 8571,11846
+EOF
+     },
+     { from  => 1101337200, # 2004-11-25 00:00
+       until => 1102374000, # 2004-12-07 00:00
+       text  => 'B 167; (Zerpenschleuse-Liebenwalde); zw. OA Liebenwalde und Abzw. Hammer Erneuerung Durchlass Vollsperrung 26.11.2004-06.12.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 11228,52175 9686,52037
+EOF
+     },
+     { from  => 1085263200, # 2004-05-23 00:00
+       until => 1103583600, # 2004-12-21 00:00
+       text  => 'L 75; (Karl-Marx-Straße); OD Großziethen, von Dorfstraße bis Friedhofsweg Straßenbauarbeiten Vollsperrung 24.05.2004-20.12.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 13225,-681 13309,-1268
+EOF
+     },
+     { from  => 1101445200, # 2004-11-26 06:00
+       until => 1101682800, # 2004-11-29 00:00
+       text  => 'Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße Umwelt- und Weihnachtsmarkt, Straße gesperrt. Dauer 27.11.2004, 06.00 Uhr bis 28.11.2004, 24.00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 9982,13411 10312,13231
+EOF
+     },
+     { from  => 1101445200, # 2004-11-26 06:00
+       until => 1101600000, # 2004-11-28 01:00
+       text  => 'Bahnhofstr. zwischen Goltzstraße und Steinstraße Weihnachstsmarkt, Straße gesperrt, Dauer: 27.11.2004, 06:00 Uhr bis 28.11.2004, 01:00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 10945,-2124 10747,-2129
+userdel	2 10310,-2136 10453,-2133
+userdel	2 10453,-2133 10747,-2129
+EOF
+     },
+     { from  => 1101337200, # 2004-11-25 00:00
+       until => 1101769200, # 2004-11-30 00:00
+       text  => 'B 198; zw. Althüttendorf und Joachimsthal Einbau Deckschicht Vollsperrung 26.11.2004-29.11.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 34237,62950 34368,62531
+EOF
+     },
+     { from  => 1101337200, # 2004-11-25 00:00
+       until => 1103065200, # 2004-12-15 00:00
+       text  => 'L 912; (Päwesin-Gortz); Brücke über Seeverbindung bei Päwesin Brückenneubau Vollsperrung 26.11.2004-14.12.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -37026,11176 -36427,10861
+EOF
+     },
     );

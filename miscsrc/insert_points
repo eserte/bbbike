@@ -35,7 +35,7 @@
 # grep_point:
 # show files containing the point
 
-# XXX delete_points implementieren
+# XXX deletemulti implementieren
 
 # Mit -tk wird das Programm mit Tk-Interface aufgerufen. Dann werden die
 # Argumente in der X11-Selection erwartet (Für Win32: Clipboard).
@@ -91,6 +91,7 @@ my %noorig_files;
 my $useint; # XXX never used?
 my $orig = 1;
 my $logfile;
+my $ask = 1;
 
 my $operation;
 
@@ -117,6 +118,7 @@ sub process {
 		    'useint!'    => \$useint,
 		    'orig!'      => \$orig,
 		    "report!"    => \$report,
+		    "ask!"       => \$ask,
 		   )) {
 	die "Usage!";
     }
@@ -193,10 +195,17 @@ sub process {
 	($from, $to, $extra) = @coords;
     } elsif ($operation =~ /^(grep|delete)$/) {
 	($from, $extra) = @coords;
+    } elsif ($operation eq 'deletemulti') {
+	$from = undef;
+	$to = undef;
+	@middle = @coords;
     }
 
     my @cmd_args = ($operation, @coords);
-    warn "from=$from middle=@middle to=$to new_to=$new_to\n" if $verbose;
+    {
+	local $^W = undef;
+	warn "from=<$from> middle=<@middle> to=<$to> new_to=<$new_to>\n" if $verbose;
+    }
 
     if (defined $extra) {
 	if ($use_tk) {
@@ -230,6 +239,8 @@ sub process {
 	or
 	($operation eq 'insertmulti' and (!@middle or grep { !/$coord_rx/ } @middle))
 	or
+	($operation eq 'deletemulti' and (!@middle or grep { !/$coord_rx/ } @middle))
+	or
 	($operation eq 'changeline' and (!defined $new_to or $new_to !~ $coord_rx))
 	or
 	((!defined $to or $to     !~ $coord_rx) && $operation !~ /^(delete|grep)$/)
@@ -241,7 +252,10 @@ sub process {
 			       ? "muss genau ein Punkt"
 			       : ($operation eq 'insertmulti'
 				  ? "mindestens drei Punkte"
-				  : "müssen genau zwei Punkte"
+				  : ($operation eq 'deletemulti'
+				     ? "mindestens ein Punkt"
+				     : "müssen genau zwei Punkte"
+				    )
 				 )
 			      )
 			   );
@@ -282,7 +296,7 @@ sub process {
     if (!@custom_check_files) {
 	chdir $datadir or die "chdir to $datadir failed: $!";
 
-	if ($operation =~ /^(insert|insertmulti|changeline|change|grep|delete)$/) {
+	if ($operation =~ /^(insert|insertmulti|changeline|change|grep|delete|deletemulti)$/) {
 	    # folgende Dateien werden bei insert_points überprüft:
 	    # normales Format
 	    # XXX gesperrt/gesperrt_car: Die Kategorie 3 müsste
@@ -560,12 +574,15 @@ sub process {
 	}
 	$dialog_text .= "\n";
     }
-    $dialog_text .= "\nSoll die Umwandlung vorgenommen werden?";
+    $dialog_text .= "\nSoll die Umwandlung ($operation) vorgenommen werden?";
     if ($n) {
 	$dialog_text .= " (no-clobber mode)";
     }
     my $ans;
-    if ($use_tk) {
+    if (!$ask) {
+	print STDERR "Doing $operation...\n" if $verbose;
+	$ans = 'j';
+    } elsif ($use_tk) {
 	require Tk::DialogBox;
 	my $dia = $top->DialogBox
 	    (-title => $0,
@@ -663,7 +680,9 @@ sub process {
 		    @map_middle = map { "$current_coordsys$_" } @middle;
 		    @rev_middle = reverse @map_middle;
 		}
-		my $map_to     = "$map_char_rx$to";
+		$map_char_rx = "" if !defined $map_char_rx;
+		my $map_to;
+		$map_to = "$map_char_rx$to" if defined $to;
 		my $map_new_to;
 		if ($operation eq 'changeline') {
 		    $map_new_to = "$new_to";
@@ -752,7 +771,7 @@ sub process {
 			}
 		    } elsif ($operation eq 'delete') {
 			if ($type == T_NORMAL || $type == T_TEMPBLOCK || $type == T_TEMPBLOCKMAIN || $type == T_RADWEGE || $type == T_VORFAHRT) {
-			    s/\s*$map_from//g;
+			    s/(?:(?<=\s)|^)$map_from($|\b)//g;
 			    if (/^[^\t]\t\S+$/) {
 				# remove this record
 			    } else {
