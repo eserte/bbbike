@@ -248,6 +248,38 @@ userdel	q4 22217,1108 22162,1067
          'data' => 'userdel	1 -8749,13269 -8662,13322 -8365,13294 -8014,13292
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1120168800,
+         'text' => 'Pistoriusstr. (Weissensee) Richtung Berliner Allee zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 30.06.2005)',
+         'from' => 1111524913,
+         'data' => 'userdel	1 13386,16408 13797,16237
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1119477600,
+         'text' => 'L 200; (Bernau-Biesenthal); B 2, OD Rüdnitz grundh. Ausbau, Bau Kreisverk. Vollsperrung 29.03.2005-22.06.2005 ',
+         'from' => 1111960800,
+         'data' => 'userdel	q4 25095,35601 24915,35340
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1120168800,
+         'text' => 'L 23; (Joachimsthal-Templin); OD Joachimsthal Neubau Durchlass Vollsperrung 29.03.2005-30.06.2005 ',
+         'from' => 1111960800,
+         'data' => 'userdel	q4 32966,64019 33254,63446
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1114898400,
+         'text' => 'L 291; (Oderberger Str.); OD Eberswalde, Einm. Breite Str. Straßenbauarbeiten Vollsperrung 24.03.2005-30.04.2005 ',
+         'from' => 1111532400,
+         'data' => 'userdel	q4 38035,49183 37875,48253
+',
+         'type' => 'handicap'
        }
      
 );

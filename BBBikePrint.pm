@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.29 2005/03/18 08:23:16 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.30 2005/03/23 00:36:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -288,11 +288,17 @@ sub BBBikePrint::print_text_pdflatex {
     my $cmd = "cd $tmpdir && pdflatex -interaction=batchmode $basename";
     warn "$cmd\n" if $verbose;
     system($cmd);
-    if (-r $pdffile) {
+    # Unfortunately pdflatex may exit with $?==1 and still
+    # produce correct pdf, so check only for existance of
+    # the pdf file:
+    my $ret = 0;
+    if (-s $pdffile && -r $pdffile) {
+	$ret = 1;
 	BBBikePrint::view_pdf($pdffile);
     }
     unlink $tmpfile;
     $main::tmpfiles{$pdffile}++;
+    $ret;
 }
 
 sub BBBikePrint::view_pdf {

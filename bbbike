@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.152 2005/03/17 00:05:38 eserte Exp eserte $
+# $Id: bbbike,v 3.155 2005/03/23 00:36:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -213,7 +213,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.152 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.155 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -14138,7 +14138,7 @@ sub show_route_strname {
 	    }
 	    $route_strname_lbox->itemCreate($i, 4, -text => $etappe_comment);
 	    push @route_info, [($out_dist||""), ($out_total_dist||""),
-			       $out_dir, $out_str];
+			       $out_dir || "", $out_str || ""];
 	}
 	$ges_entf_s = "(" . m2km($ges_entf+$next_entf) . ")";
 	my $i = $#search_route + 1;
@@ -14146,7 +14146,7 @@ sub show_route_strname {
 	$route_strname_lbox->itemCreate($i, 1, -text => "$ges_entf_s");
 	$route_strname_lbox->itemCreate($i, 2, -text => M"angekommen!");
 	push @route_info, [M("nach")." ".m2km($next_entf, 3, 2),
-			   $ges_entf_s, M"angekommen!"];
+			   $ges_entf_s, M"angekommen!", ""];
 
 	my(@children) = $route_strname_lbox->info('children');
 	my $last_i = $children[-1];
@@ -14255,17 +14255,16 @@ sub show_route_strname {
 	    close TMP;
 	    Win32Util::start_txt_print($temp);
 	    $tmpfiles{$temp}++;
-	} elsif (1) { # XXX make an option
-	    print_text_pdflatex
-		(route_info_to_latex());
-	} else {
-	    print_text_postscript
-		(route_info_to_text(),
-		 -columns => 1,
-		 -header => Mfmt("Route von %s bis %s",
-				 $show_route_start, $show_route_ziel),
-		 -font => $font,
-		);
+        } else { # try pdflatex, then postscript
+	    if (!print_text_pdflatex(route_info_to_latex())) {
+		print_text_postscript
+		    (route_info_to_text(),
+		     -columns => 1,
+		     -header => Mfmt("Route von %s bis %s",
+				     $show_route_start, $show_route_ziel),
+		     -font => $font,
+		    );
+	    }
 	}
     };
     my $db;

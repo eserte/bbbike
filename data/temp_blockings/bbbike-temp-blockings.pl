@@ -1573,4 +1573,36 @@ EOF
 userdel	1 -8749,13269 -8662,13322 -8365,13294 -8014,13292
 EOF
      },
+     { from  => 1111524913, # 2005-03-22 21:55
+       until => 1120168800, # 2005-07-01 00:00
+       text  => 'Pistoriusstr. (Weissensee) Richtung Berliner Allee zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 30.06.2005)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 13386,16408 13797,16237
+EOF
+     },
+     { from  => 1111960800, # 2005-03-28 00:00
+       until => 1119477600, # 2005-06-23 00:00
+       text  => 'L 200; (Bernau-Biesenthal); B 2, OD Rüdnitz grundh. Ausbau, Bau Kreisverk. Vollsperrung 29.03.2005-22.06.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 25095,35601 24915,35340
+EOF
+     },
+     { from  => 1111960800, # 2005-03-28 00:00
+       until => 1120168800, # 2005-07-01 00:00
+       text  => 'L 23; (Joachimsthal-Templin); OD Joachimsthal Neubau Durchlass Vollsperrung 29.03.2005-30.06.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 32966,64019 33254,63446
+EOF
+     },
+     { from  => 1111532400, # 2005-03-23 00:00
+       until => 1114898400, # 2005-05-01 00:00
+       text  => 'L 291; (Oderberger Str.); OD Eberswalde, Einm. Breite Str. Straßenbauarbeiten Vollsperrung 24.03.2005-30.04.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 38035,49183 37875,48253
+EOF
+     },
     );
