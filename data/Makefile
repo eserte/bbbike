@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.6 2004/04/26 21:38:49 eserte Exp eserte $
+# $Id: Makefile,v 2.7 2004/04/27 22:25:47 eserte Exp $
 #
 
 BBBIKEDIR=		..
@@ -441,6 +441,7 @@ check:	.check_strassen1 .check_strassen2 \
 	.check_comments1 .check_comments2 .check_nolighting \
 	.check_housenumbers .check_sehenswuerdigkeit .check_green \
 	.check_brunnels .check_comments_ferry \
+	.check_temp_blockings \
 
 .check_strassen1:	.strassen.tmp add_str multi_bez_str
 	$(CHECK_STR_PLZ) -data .strassen.tmp
@@ -581,6 +582,13 @@ check:	.check_strassen1 .check_strassen2 \
 .check_brunnels:	brunnels strassen landstrassen landstrassen2
 	$(CHECK_NEIGHBOUR) -type standard -data brunnels \
 	    -against strassen -against landstrassen -against landstrassen2
+	@touch $@
+
+.check_temp_blockings:	${MISCDIR}/temp_blockings/*.bbd strassen
+	for i in ${MISCDIR}/temp_blockings/*.bbd; do \
+	    echo $$i; \
+	    $(CHECK_NEIGHBOUR) -type standard -data $$i -against strassen; \
+	done
 	@touch $@
 
 #.PHONY: .modified

@@ -2,16 +2,18 @@
 # -*- perl -*-
 
 #
-# $Id: check_bbbike_temp_blockings,v 1.7 2003/08/05 22:38:41 eserte Exp $
+# $Id: check_bbbike_temp_blockings,v 1.10 2004/04/27 22:58:28 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003, 2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
 # Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
 #
+
+package BBBike::check_bbbike_temp_blockings;
 
 use strict;
 use vars qw(@temp_blocking);
@@ -25,83 +27,104 @@ my $check_net = 1;
 my $temp_blockings_dir = "$FindBin::RealBin/../misc/temp_blockings";
 my $file = "$temp_blockings_dir/bbbike-temp-blockings.pl";
 
-if (!GetOptions("outputfiles" => \$do_output_files,
-		"f=s" => \$file,
-		"checknet!" => \$check_net,
-	       )) {
-    die "usage";
-}
-
-if (!-r $file) {
-    die "$file is not readable";
-}
-do $file;
-if (!@temp_blocking) {
-    system($^X, "-c", $file);
-    die "No \@temp_blocking variable in $file found (perl check returned $?)";
-}
-
 my $longest_file_length;
-for my $o (@temp_blocking) {
-    if (!exists $o->{from} || !exists $o->{until} ||
-	!exists $o->{file} || !exists $o->{text}) {
-	die "Incomplete definition: " . Dumper($o);
-    }
-    if (exists $o->{type} && $o->{type} !~ /^(handicap|gesperrt)$/) {
-	die "Unknown type $o->{type}: " . Dumper($o);
-    }
-    if ($o->{from} > $o->{until}) {
-	die "Interval mismatch: " . Dumper($o);
-    }
-    my $full_path = "$temp_blockings_dir/$o->{file}";
-    if (!-e $full_path) {
-	die "File $full_path is missing: " . Dumper($o);
-    }
-    if (!((stat($full_path))[2] & 0004)) {
-	warn "File $full_path is not readable for world";
-    }
 
-    # Checks only for future blockings
-    if ($check_net && $o->{until} > time) {
+sub process {
+    local @ARGV = @_;
 
-	$longest_file_length = length $o->{file}
-	    if !defined $longest_file_length || length $o->{file} > $longest_file_length;
-
-	# Checks for now restricted to Berlin
-	system("$FindBin::RealBin/check_points",
-	       $full_path, "strassen");
-	if ($? != 0) {
-	    die "File $full_path failed check_points test";
-	}
-
-	require "$FindBin::RealBin/check_neighbour";
-	if (!eval {
-	    BBBike::check_neighbour::doit
-		    ("-type", "standard", "-data", $full_path,
-		     "-against", "strassen", "-keepnet");
-	    1;
-	}) {
-	    die "File $full_path failes check_neighbour test: $@";
-	}
-#  	system("$FindBin::RealBin/check_neighbour",
-#  	       "-type", "standard", "-data", $full_path,
-#  	       "-against", "strassen");
-#  	if ($? != 0) {
-#  	    die "File $full_path failes check_neighbour test";
-#  	}
+    if (!GetOptions("outputfiles" => \$do_output_files,
+		    "f=s" => \$file,
+		    "checknet!" => \$check_net,
+		   )) {
+	die "usage";
     }
 }
 
-for my $o (sort { $a->{from} <=> $b->{from} } @temp_blocking) {
-    if ($o->{until} > time) {
-	if ($do_output_files) {
-	    print $o->{file}, "\n";
-	} else {
-	    printf STDERR "  %-${longest_file_length}s: %s - %s\n",
-		$o->{file}, format_date($o->{from}),
-		    format_date($o->{until});
+sub load_file {
+    if (!-r $file) {
+	die "$file is not readable";
+    }
+    do $file;
+    if (!@temp_blocking) {
+	system($^X, "-c", $file);
+	die "No \@temp_blocking variable in $file found (perl check returned $?)";
+    }
+}
+
+sub run_checks {
+    for my $o (@temp_blocking) {
+	if (!exists $o->{from} || !exists $o->{until} ||
+	    !exists $o->{file} || !exists $o->{text}) {
+	    die "Incomplete definition: " . Dumper($o);
+	}
+	if (exists $o->{type} && $o->{type} !~ /^(handicap|gesperrt)$/) {
+	    die "Unknown type $o->{type}: " . Dumper($o);
+	}
+	if ($o->{from} > $o->{until}) {
+	    die "Interval mismatch: " . Dumper($o);
+	}
+	my $full_path = "$temp_blockings_dir/$o->{file}";
+	if (!-e $full_path) {
+	    die "File $full_path is missing: " . Dumper($o);
+	}
+	if (!((stat($full_path))[2] & 0004)) {
+	    warn "File $full_path is not readable for world";
+	}
+
+	# Checks only for future blockings
+	if ($check_net && $o->{until} > time) {
+
+	    $longest_file_length = length $o->{file}
+		if !defined $longest_file_length || length $o->{file} > $longest_file_length;
+
+	    # Checks for now restricted to Berlin
+	    system("$FindBin::RealBin/check_points",
+		   $full_path, "strassen");
+	    if ($? != 0) {
+		die "File $full_path failed check_points test";
+	    }
+
+	    require "$FindBin::RealBin/check_neighbour";
+	    if (!eval {
+		BBBike::check_neighbour::doit
+			("-type", "standard", "-data", $full_path,
+			 "-against", "strassen", "-keepnet");
+		1;
+	    }) {
+		die "File $full_path failes check_neighbour test: $@";
+	    }
+	    #  	system("$FindBin::RealBin/check_neighbour",
+	    #  	       "-type", "standard", "-data", $full_path,
+	    #  	       "-against", "strassen");
+	    #  	if ($? != 0) {
+	    #  	    die "File $full_path failes check_neighbour test";
+	    #  	}
 	}
     }
+}
+
+sub output_future {
+    for my $o (sort { $a->{from} <=> $b->{from} } @temp_blocking) {
+	if ($o->{until} > time) {
+	    if ($do_output_files) {
+		print $o->{file}, "\n";
+	    } else {
+		printf STDERR "  %-${longest_file_length}s: %s - %s\n",
+		    $o->{file}, format_date($o->{from}),
+			format_date($o->{until});
+	    }
+	}
+    }
+}
+
+sub return_future {
+    my @res;
+    for my $o (sort { $a->{from} <=> $b->{from} } @temp_blocking) {
+	if ($o->{until} > time) {
+	    push @res, $o;
+	}
+    }
+    @res;
 }
 
 sub format_date {
@@ -109,5 +132,12 @@ sub format_date {
     my @l = localtime $time;
     strftime "%d.%m.%Y %H:%M:%S (%a)", @l;
 }
+
+return 1 if caller;
+
+process(@ARGV);
+load_file();
+run_checks();
+output_future();
 
 __END__

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.91 2004/03/26 22:08:50 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.93 2004/04/27 23:12:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1548,6 +1548,7 @@ sub _insert_points_and_co {
 		    (-e "$datadir/.custom_files" ? (-filelist => "$datadir/.custom_files") : ()),
 		    "-useint", # XXX but not for polar coordinates
 		    -datadir => $datadir,
+		    -bbbikerootdir => $FindBin::RealBin,
 		    "-tk",
 		    ($vstr ne "" ? $vstr : ()),
 		   );
@@ -2797,6 +2798,51 @@ sub path_to_selection {
     @inslauf_selection = map { join ",", @$_ } @realcoords;
     $c->SelectionOwn;
     standard_selection_handle();
+}
+
+sub active_temp_blockings_for_date_dialog {
+    $show_active_temp_blockings = 1;
+    require Tk::DateEntry;
+    require POSIX;
+    require Time::Local;
+    require Data::Dumper;
+    eval {
+	require "$FindBin::RealBin/miscsrc/check_bbbike_temp_blockings";
+    }; warn $@ if $@;
+    my $t = $top->Toplevel(-title => "Datum");
+    $t->transient($top) if $transient;
+    my $date = POSIX::strftime("%Y/%m/%d", localtime);
+    {
+	my $f = $t->Frame->pack(-fill => "x");
+	Tk::grid($f->Label(-text => "Sperrungen für Datum: "),
+		 $f->DateEntry(-dateformat => 2,
+			       -textvariable => \$date)
+		);
+    }
+
+    {
+	my $f = $t->Frame->pack;
+	Tk::grid($f->Button
+		 (Name => 'ok',
+		  -command => sub {
+		      $t->destroy;
+		      my($y,$m,$d) = split m{/}, $date;
+		      my $now = Time::Local::timelocal(0,0,0,$d,$m-1,$y-1900);
+		      activate_temp_blockings($show_active_temp_blockings, -now => $now);
+		  }),
+		 $f->Button(Name => 'cancel',
+			    -command => sub {
+				$t->destroy;
+			    }));
+    }
+
+    if (BBBike::check_bbbike_temp_blockings->can("process")) {
+	my $txt = $t->Scrolled("ROText", -scrollbars => "osoe",
+			       -width => 40, -height => 5)->pack(-fill => "both", -expand => 1);
+	BBBike::check_bbbike_temp_blockings::process(-f => "$FindBin::RealBin/misc/temp_blockings/bbbike-temp-blockings.pl");
+	BBBike::check_bbbike_temp_blockings::load_file();
+	$txt->insert("end", scalar Data::Dumper->new([BBBike::check_bbbike_temp_blockings::return_future()], [])->Indent(1)->Dump);
+    }
 }
 
 1;

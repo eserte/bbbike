@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.31 2004/04/08 21:41:41 eserte Exp $
+# $Id: insert_points,v 1.32 2004/04/27 22:34:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -53,7 +53,8 @@ use constant T_OLD_RADWEGE => 1;
 use constant T_AMPEL => 2;
 use constant T_COMMENTS => 3;
 use constant T_RADWEGE => 4;
-use constant T_MAX => 4;
+use constant T_TEMPBLOCK => 5;
+use constant T_MAX => 5;
 
 use strict;
 use Getopt::Long;
@@ -66,12 +67,15 @@ use File::Basename;
 
 my $use_tk = 0;
 my $report;
-my $datadir = "../data";
+my $bbbikerootdir = "..";
+my $datadir;
+my $tempblockingdir;
 my $verbose = 0;
 my $current_coordsys = '';
 my $n;
 my @custom_check_files;
 my $custom_file_list;
+my @add_check_files_noorig;
 my $useint;
 my $orig = 1;
 
@@ -83,7 +87,9 @@ sub process {
     local @ARGV = @argv;
 
     if (!GetOptions('tk!'        => \$use_tk,
+		    'bbbikerootdir=s' => \$bbbikerootdir,
 		    'datadir=s'  => \$datadir,
+		    'tempblockingdir=s' => \$tempblockingdir,
 		    'v!'         => \$verbose,
 		    'coordsys=s' => \$current_coordsys,
 		    'n'          => \$n,
@@ -96,6 +102,9 @@ sub process {
 		   )) {
 	die "Usage!";
     }
+
+    $datadir = "$bbbikerootdir/data" if !defined $datadir;
+    $tempblockingdir = "$bbbikerootdir/misc/temp_blockings" if !defined $tempblockingdir;
 
     if ($custom_file_list) {
 	open(F, $custom_file_list) or die $!;
@@ -114,6 +123,15 @@ sub process {
 	}
 	close F;
     }
+
+    if ($current_coordsys eq '') {
+	@add_check_files_noorig = glob("$tempblockingdir/*.bbd");
+    } else {
+	@add_check_files_noorig = ();
+    }
+
+    warn "Custom check files are @custom_check_files\n" if $verbose and @custom_check_files;
+    warn "Additional files to check are @add_check_files_noorig\n" if $verbose and @add_check_files_noorig;
 
     my($from, $middle, $to, $new_to);
     my $top;
@@ -238,13 +256,16 @@ sub process {
 	    @{$check_files[T_RADWEGE]} =
 		($orig ? qw(radwege) : qw(radwege_exact));
 
-	    if (!$orig) {
-		my $temp_blockings_dir = "$FindBin::RealBin/../misc/temp_blockings";
-		if (-d $temp_blockings_dir) {
-		    push @{$check_files[T_NORMAL]},
-			glob("$temp_blockings_dir/*.bbd");
-		}
-	    }
+# 	    if (!$orig) {
+# 		my $temp_blockings_dir = "$FindBin::RealBin/../misc/temp_blockings";
+# 		if (-d $temp_blockings_dir) {
+# 		    push @{$check_files[T_NORMAL]},
+# 			glob("$temp_blockings_dir/*.bbd");
+# 		}
+# 	    }
+
+	    @{$check_files[T_TEMPBLOCK]} =
+		@add_check_files_noorig if @add_check_files_noorig;
 	}
 
 	open(BASE, "BASE") or die "Can't open BASE: $!";
@@ -275,7 +296,9 @@ sub process {
     # uhm... how hackish :-(
     if ($orig) {
 	if ($operation ne 'change') {
-	    for my $cf (@check_files) {
+	    for my $cf_i (0 .. $#check_files) {
+		next if $cf_i == T_TEMPBLOCK;
+		my $cf = $check_files[$cf_i];
 		for my $f (@$cf) {
 		    $f .= "-orig";
 		}
@@ -283,7 +306,9 @@ sub process {
 	}
     } else {
 	if ($operation eq 'change') {
-	    for my $cf (@check_files) {
+	    for my $cf_i (0 .. $#check_files) {
+		next if $cf_i == T_TEMPBLOCK;
+		my $cf = $check_files[$cf_i];
 		for my $f (@$cf) {
 		    $f =~ s/-orig//;
 		}
@@ -321,7 +346,7 @@ sub process {
 	    my(@data) = <F>;
 	    close F;
 	    if ($operation =~ /^(insert|changeline)$/) {
-		if ($type == T_NORMAL || $type == T_RADWEGE) {
+		if ($type == T_NORMAL || $type == T_TEMPBLOCK || $type == T_RADWEGE) {
 		    if ($verbose) {
 			warn "Check for ($map_from $map_to|$map_to $map_from)\n";
 		    }
@@ -359,7 +384,7 @@ sub process {
 	    } elsif ($operation =~ /^(change|grep|delete)$/) {
 		my $map_rx = ($current_coordsys eq '' ? 'B?' : $current_coordsys.'?');
 		# XXX verbose fehlt
-		if ($type == T_NORMAL || $type == T_COMMENTS || $type == T_OLD_RADWEGE || $type == T_RADWEGE) {
+		if ($type == T_NORMAL || $type == T_TEMPBLOCK || $type == T_COMMENTS || $type == T_OLD_RADWEGE || $type == T_RADWEGE) {
 		    if (grep(/\b$map_rx$map_from\b/, @data)) {
 			push @{$change_files[$type]}, $file;
 		    }
@@ -526,7 +551,7 @@ sub process {
 		binmode W; # XXX check on NT
 		while(<R>) {
 		    if ($operation eq 'insert') {
-			if ($type == T_NORMAL) {
+			if ($type == T_NORMAL || $type == T_TEMPBLOCK) {
 			    if (/\b$map_from $map_to\b/) {
 				s/\b($map_from) ($map_to)\b/$1 $map_middle $2/;
 			    } elsif (/\b$map_to $map_from\b/) {
@@ -557,7 +582,7 @@ sub process {
 			    }
 			}
 		    } elsif ($operation eq 'changeline') {
-			if ($type == T_NORMAL || $type == T_RADWEGE) {
+			if ($type == T_NORMAL || $type == T_TEMPBLOCK || $type == T_RADWEGE) {
 			    if (/\b$map_from $map_to\b/) {
 				s/\b($map_from) $map_to\b/$1 $map_new_to/;
 			    } elsif (/\b$map_to $map_from\b/) {
@@ -568,7 +593,7 @@ sub process {
 			    die "NYI!!!";
 			}
 		    } elsif ($operation eq 'delete') {
-			if ($type == T_NORMAL || $type == T_RADWEGE) {
+			if ($type == T_NORMAL || $type == T_TEMPBLOCK || $type == T_RADWEGE) {
 			    s/\s*$map_from//g;
 			    if (/^[^\t]\t\S+$/) {
 				# remove this record
@@ -579,7 +604,7 @@ sub process {
 			    die "NYI!";
 			}
 		    } elsif ($operation eq 'change') {
-			if ($type == T_NORMAL || $type == T_RADWEGE) {
+			if ($type == T_NORMAL || $type == T_TEMPBLOCK || $type == T_RADWEGE) {
 			    s/\b$map_from\b/$1$map_new_from/g;
 			    print W $_;
 			} elsif ($type == T_AMPEL) {
