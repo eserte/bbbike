@@ -51,6 +51,7 @@ use constant REQTABLE_LONGDESC=> 5;
   [qw/Tk::HistEntry	0	all	0	gui/],
   [qw/Tk::Stderr	0	all	0	gui/,
    'optionales Redirect von Fehlermeldungen in ein Tk-Fenster'],
+  [qw/Tk::DateEntry	1.38	all	0	gui/],
 
   [qw/LWP::UserAgent	0	all	0	www/,
    'für die WWW-Verbindungen (Stadtplan und Wetterbericht)'],
