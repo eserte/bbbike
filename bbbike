@@ -10629,10 +10629,6 @@ sub show_info {
     }
 
     my @polarcoord;
-    # XXX replace with "http://www.berlin.de/stadtplan/explorer"?
-    # XXX is there a LL interface?
-    my $stadtplan_url = "http://www.stadtplandienst.de/query"; # XXX not here
-    my $url;
     my(@coords) = $c->coords('current');
     if (!@coords || @coords > 2) {
 	my($px,$py) = $c->pointerxy;
@@ -10645,9 +10641,8 @@ sub show_info {
     require Karte::ETRS89;
     my($sx,$sy) = anti_transpose($coords[0], $coords[1]);
     my($px,$py) = $coord_system_obj->map2map($Karte::Polar::obj, $sx, $sy);
-    @polarcoord = (Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($py)),
-		   Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($px)));
-    $url = "$stadtplan_url?ORT=b&LL=+${py}+${px}";
+    my @polarcoord = (Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($py)),
+		      Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($px)));
     my($gkk_zone_potsdam, $gkk_easting_potsdam, $gkk_northing_potsdam) = Karte::UTM::DegreesToGKK($py, $px, "Potsdam");
     my($gkk_zone_wgs84, $gkk_easting_wgs84, $gkk_northing_wgs84) = Karte::UTM::DegreesToGKK($py, $px, "WGS 84");
     my($utm_ze, $utm_zn, $utm_x, $utm_y) = Karte::UTM::DegreesToUTM($py, $px, "WGS 84");
@@ -10827,6 +10822,18 @@ sub show_info {
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
 	}
+
+	{
+	    my $y_wgs = (Karte::Polar::ddd2dmm($py))[1];
+	    my $x_wgs = (Karte::Polar::ddd2dmm($px))[1];
+	    my $url = "http://www.berliner-stadtplan.com/?y_wgs=${y_wgs}%27&x_wgs=${x_wgs}%27&zoom=100&size=500x400&sub.x=15&sub.y=7";
+	    $info_text->insert("end", "www.berliner-stadtplan.com\n",
+			       "link$linkcount");
+	    $show_url->($linkcount, $url);
+	    $info_text->insert("end", "\n");
+	    $linkcount++;
+	}
+
 	if ($devel_host) {
 	    # t0p s3cr37!
 	    my $url = sprintf "http://www.stadt".
