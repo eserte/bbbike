@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.37 2004/12/06 20:39:30 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.39 2004/12/29 23:33:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.37 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.39 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, %args) = @_;
@@ -59,7 +59,7 @@ sub new {
     $self->{OutlineCat} = delete $args{OutlineCat}; # array with categories
     $self->{Module}    = delete $args{Module}; # use another BBBikeDraw module
     $self->{MinPlaceCat} = delete $args{MinPlaceCat}; # force minimum place (ort) category
-    $self->{FontSizeScale} = delete $args{FontSizeScale} || 1;
+    $self->{FontSizeScale} = delete $args{FontSizeScale};
     $self->{Conf}      = delete $args{Conf};
     $self->{CGI}       = delete $args{CGI};
 
@@ -302,25 +302,30 @@ sub create_transpose {
     my($code, $anti_code);
     if ($self->origin_position eq 'sw') {
 	# Ursprung ist unten, nicht oben (z.B. PDF)
-#XXX Konstanten konstant machen! siehe unten... s// nicht vergessen
-	$code = <<'EOF';
+	$code = <<EOF;
 	sub {
-	    my($x, $y) = @_;
-	    ($x-$delta_x)*$xk, ($y-$delta_y)*$yk;
+	    my(\$x, \$y) = \@_;
+	    ((\$x-$delta_x)*$xk, (\$y-$delta_y)*$yk);
 	};
 EOF
+        $code =~ s/--/+/g;
+	$code =~ s/\+-/-/g;
+	#warn $code;
 	$transpose = eval $code;
-	die $@ if $@;
+	die "$code: $@" if $@;
 
-	$anti_code = <<'EOF';
+	$anti_code = <<EOF;
 	sub {
-	    my($x, $y) = @_;
-	    (($x/$xk)+$delta_x, (-$y)/$yk+$delta_y); # XXX y???
+	    my(\$x, \$y) = \@_;
+	    ((\$x/$xk)+$delta_x, (\$y/$yk)+$delta_y);
 	};
 EOF
+        $anti_code =~ s/--/+/g;
+	$anti_code =~ s/\+-/-/g;
+	#warn $anti_code;
         $anti_transpose = eval $anti_code;
 	die "$anti_code: $@" if $@;
-    } else {
+    } else { # origin_positon eq 'nw'
 	$code = <<EOF;
 	sub {
 	    my(\$x, \$y) = \@_;
@@ -353,10 +358,11 @@ EOF
     }
 
     # Correct bounding box:
-#warn "before: ($self->{Min_x}, $self->{Min_y}, $self->{Max_x}, $self->{Max_y})";
+    #warn "before: $self->{Min_x},$self->{Min_y} $self->{Max_x},$self->{Max_y}";
     $self->set_bbox($anti_transpose->(0,0),$anti_transpose->($w, $h));
-#warn "after: ($self->{Min_x}, $self->{Min_y}, $self->{Max_x}, $self->{Max_y})";
+    #warn "after: $self->{Min_x},$self->{Min_y} $self->{Max_x},$self->{Max_y}";
 
+    # Bei 100dpi ist Xk=1 <=> 1km=1000 Pixel
     $self->{Xk} = $xk;
     $self->{Yk} = $yk;
 }
@@ -574,6 +580,7 @@ sub _get_nets {
 
     # Netze zeichnen
     my @netz;
+    my @netz_name;
     my @outline_netz;
     my(%str_draw, $title_draw, %p_draw);
 
@@ -595,6 +602,7 @@ sub _get_nets {
     foreach my $f (@{$self->{Draw}}) {
 	if ($f =~ m|^/|) {
 	    push @netz, new Strassen $f;
+	    push @netz_name, $f;
 	}
     }
 
@@ -609,41 +617,49 @@ sub _get_nets {
 	    ) {
 	if ($str_draw{$def->[1]}) {
 	    push @netz, new Strassen $def->[0];
-	    if ($def->[1] eq 'flaechen') {
-		$netz[-1]->{AfterHook} = sub {
-		    $self->{FlaechenPass} = 2;
-		};
-	    }
+	    push @netz_name, $def->[1];
 	}
     }
     if ($str_draw{'wasser'}) {
 	my $wasser = $self->_get_gewaesser(Strdraw => \%str_draw);
 	push @netz, $wasser;
+	push @netz_name, "wasser";
 #XXX not yet, siehe auch comment bei PDF.pm
 #	push @outline_netz, $wasser;
-	push @netz, new Strassen "flaechen" if $str_draw{"flaechen"};
+	if ($self->can_multiple_passes("flaechen") && $str_draw{"flaechen"}) {
+	    push @netz, new Strassen "flaechen";
+	    push @netz_name, "flaechen";
+	}
     }
     my $multistr = $self->_get_strassen(Strdraw => \%str_draw);
     if ($str_draw{'str'}) {
 	push @netz, $multistr;
 	push @outline_netz, $multistr;
+	push @netz_name, "str";
     }
     if ($str_draw{'fragezeichen'}) {
 	eval {
-	    push @netz, "fragezeichen";
+	    my $s = Strassen->new("fragezeichen");
+	    push @netz, $s;
+	    push @netz_name, "fragezeichen";
 	};
 	warn $@ if $@;
     }
-    foreach (
+    foreach my $def (
 	     ['ubahn',           'ubahn'],
 	     ['sbahn',           'sbahn'],
 	     ['rbahn',           'rbahn'],
 	    ) {
-	push @netz, new Strassen $_->[0] if $str_draw{$_->[1]}
+	my($file, $type) = @$def;
+	if ($str_draw{$type}) {
+	    push @netz, new Strassen $file;
+	    push @netz_name, $type;
+	}
     }
 
     $self->{_Net} = \@netz;
     $self->{_OutlineNet} = \@outline_netz;
+    $self->{_NetName} = \@netz_name;
     $self->{_StrDraw} = \%str_draw;
     $self->{_PDraw} = \%p_draw;
     $self->{_TitleDraw} = $title_draw;
@@ -766,6 +782,28 @@ sub make_default_title {
     }
     my $s =  "$start -> $ziel";
     $s;
+}
+
+sub get_street_records_in_bbox {
+    my($self, $streets) = @_;
+    my %seen;
+    $streets->make_grid(UseCache => 1);
+    my @grids = $streets->get_new_grids($self->{Min_x}, $self->{Min_y},
+					$self->{Max_x}, $self->{Max_y},
+				       );
+    $streets->sort_records_by_cat
+	([map  { $seen{$_}++;
+		 $streets->get($_) }
+	  grep { !$seen{$_} }
+	  map  {
+	      $streets->{Grid}{$_} ? @{ $streets->{Grid}{$_} } : ()
+	  } @grids
+	 ])
+}
+
+sub can_multiple_passes {
+    my($self, $type) = @_;
+    0;
 }
 
 1;

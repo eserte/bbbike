@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GDHeavy.pm,v 1.4 2003/06/02 22:57:34 eserte Exp eserte $
+# $Id: GDHeavy.pm,v 1.5 2004/12/29 17:42:29 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2004 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package BBBikeDraw::GDHeavy;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 package BBBikeDraw::GD;
 use Strassen::Core;
@@ -25,13 +25,6 @@ use GD;
 use VectorUtil qw(get_polygon_center);
 
 use vars qw(%color_to_index);
-
-#XXX remove; already defined in BBBikeDraw::GD
-# REPO BEGIN
-# REPO NAME pi /home/e/eserte/src/repository 
-# REPO MD5 bb2103b1f2f6d4c047c4f6f5b3fa77cd
-#sub pi ()   { 4 * atan2(1, 1) } # 3.141592653
-# REPO END
 
 # recognizes:
 #   [$r,$g,$b]
@@ -202,6 +195,52 @@ sub draw_arctext_layer {
     }
 }
 
+sub draw_custom_places {
+    my($self, $mapping_str) = @_;
+    my(@l) = split /;/, $mapping_str;
+    my %mapping;
+    for (@l) {
+	$_ = [split /,/, $_];
+	$mapping{$_->[0]} = { @{$_}[1..$#$_] };
+    }
+    my $im        = $self->{Image};
+    my $transpose = $self->{Transpose};
+    my $p = $self->_get_orte;
+
+    my $cp = Strassen->new("orte_city");
+    $cp->init;
+    while(1) {
+	my $s = $cp->next_obj;
+	last if $s->is_empty;
+	if ($s->name eq 'Mitte') {
+	    $p->push(["Berlin", $s->coords, $s->category]);
+	}
+    }
+
+    my %ort_font = %{ $self->get_ort_font_mapping };
+    $p->init;
+    $BBBikeDraw::GD::grey_bg = $BBBikeDraw::GD::grey_bg; # peacify -w
+    while(1) {
+	my $s = $p->next_obj;
+	last if $s->is_empty;
+	my $cat = $s->category;
+	my($x0,$y0) = @{$s->coord_as_list(0)};
+	my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
+	my $ort = $s->name;
+	# Anhängsel löschen (z.B. "b. Berlin")
+	$ort =~ s/\|.*$//;
+	next if !exists $mapping{$ort};
+	$im->arc($x, $y, 3, 3, 0, 360, $BBBikeDraw::GD::black);
+	$self->outline_text
+	    ($ort_font{$cat} || &GD::Font::Small,
+	     $x, $y,
+	     BBBikeDraw::GD->patch_string($ort),
+	     $BBBikeDraw::GD::black, $BBBikeDraw::GD::grey_bg,
+	     -padx => 4,
+	     -anchor => $mapping{$ort}->{-anchor},
+	    );
+    }
+}
 
 1;
 

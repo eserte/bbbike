@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: sortbycat,v 2.9 2004/07/20 20:45:54 eserte Exp $
+# $Id: sortbycat,v 2.10 2004/12/28 22:54:59 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -19,25 +19,7 @@ use Strassen;
 use strict;
 use Getopt::Long;
 
-my %catval =
-    ('F:W'          => 3, # Gewässer
-     'W'            => 3,
-     'W1'           => 3,
-     'W2'           => 3,
-     'F:I'          => 6, # Insel
-     'F:#c08080'    => 10, # bebaute Flächen
-     'F:violet'     => 20, # Industrie
-     'F:DarkViolet' => 21, # Hafen oder Industrie
-     'F:P'          => 15, # Parks
-     'F:#46b47b'    => 13, # Wald
-
-     'B'            => 20,
-     'HH'           => 15,
-     'H'            => 10,
-     'N'            => 5,
-     'NN'           => 1,
-     );
-
+my %catval = %{ Strassen->default_cat_stack_mapping() };
 # für nummerische Kategorien
 for (0 .. 10) {
     $catval{$_} = 10-$_;

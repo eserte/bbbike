@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.39 2004/12/06 20:39:19 eserte Exp $
+# $Id: GD.pm,v 1.42 2004/12/29 23:31:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.39 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -164,30 +164,6 @@ sub init {
     $self->set_category_outline_colors;
     $self->set_category_widths;
 
-    if ($self->{Width}) {
-	if ($self->{Width} <= 200) {
-	    # scale widths
-	    while(my($k,$v) = each %width) {
-		$width{$k} = int($v/2) if $v >= 2;
-	    }
-	}
-
-	# create brushes
-	foreach my $cat (keys %width) {
-	    next if $cat eq 'Route';
-	    my $brush = $self->{GD_Image}->new($width{$cat}, $width{$cat});
-	    $brush->colorAllocate($im->rgb($color{$cat}));
-	    $brush{$cat} = $brush;
-	}
-	# create outline brushes
-	foreach my $cat (keys %width) {
-	    next unless $outline_color{$cat};
-	    my $brush = $self->{GD_Image}->new($width{$cat}+2, $width{$cat}+2);
-	    $brush->colorAllocate($im->rgb($outline_color{$cat}));
-	    $outline_brush{$cat} = $brush;
-	}
-    }
-
     $im->interlaced('true');
 
     $self->set_draw_elements;
@@ -201,6 +177,39 @@ sub init {
     }
 
     $self;
+}
+
+sub pre_draw {
+    my $self = shift;
+    $self->SUPER::pre_draw;
+
+    my $im = $self->{Image};
+
+    my $scale = ($self->{Xk} > 1 ? 10 : $self->{Xk} * 10);
+    $scale = 0.5 if $scale < 0.5;
+
+    # create brushes
+    foreach my $cat (keys %width) {
+	next if $cat eq 'Route';
+	my $width = $width{$cat} * $scale;
+	$width = 1 if $width < 1;
+	$width = int($width);
+	my $brush = $self->{GD_Image}->new($width, $width);
+	$brush->colorAllocate($im->rgb($color{$cat}));
+	$brush{$cat} = $brush;
+    }
+    # create outline brushes
+    foreach my $cat (keys %width) {
+	next unless $outline_color{$cat};
+	my $width = $width{$cat} * $scale;
+	$width = 1 if $width < 1;
+	$width = int($width);
+	$width += 2;
+	my $brush = $self->{GD_Image}->new($width, $width);
+	$brush->colorAllocate($im->rgb($outline_color{$cat}));
+	$outline_brush{$cat} = $brush;
+    }
+
 }
 
 sub allocate_colors {
@@ -233,6 +242,7 @@ sub draw_map {
 
     my @netz = @{ $self->{_Net} };
     my @outline_netz = @{ $self->{_OutlineNet} };
+    my @netz_name = @{ $self->{_NetName} };
     my %str_draw = %{ $self->{_StrDraw} };
     my %p_draw = %{ $self->{_PDraw} };
     my $title_draw = $self->{_TitleDraw};
@@ -287,34 +297,24 @@ sub draw_map {
 	}
     }
 
-    foreach my $strecke (@netz) {
+    foreach my $strecke_i (0 .. $#netz) {
+	my $strecke = $netz[$strecke_i];
+	my $strecke_name = $netz_name[$strecke_i];
 	my $flaechen_pass = $self->{FlaechenPass};
-my %seen;
-$strecke->make_grid(UseCache => 1);
-my @grids = $strecke->get_new_grids($self->{Min_x}, $self->{Min_y},
-				    $self->{Max_x}, $self->{Max_y},
-				   );
-#	$strecke->init;
-#	while(1) {
-#	    my $s = $strecke->next;
-#	    last if !@{$s->[1]};
-for my $grid (@grids) {
-if ($strecke->{Grid}{$grid}) {
-for my $strpos (@{ $strecke->{Grid}{$grid}}) {
-next if $seen{$strpos};
-$seen{$strpos}++;
-my $s = $strecke->get($strpos);
+
+	for my $s ($self->get_street_records_in_bbox($strecke)) {
 	    my $cat = $s->[Strassen::CAT];
 	    if ($cat =~ /^F:(.*)/) {
 		my $cat = $1;
-#XXX NYI
-#		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
-#			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
+		next if ($strecke_name eq 'flaechen' &&
+			 (($flaechen_pass == 1 && $cat eq 'Pabove') ||
+			  ($flaechen_pass == 2 && $cat ne 'Pabove'))
+			);
 		my $c = defined $color{$cat} ? $color{$cat} : $white;
 		my $poly = $self->{GD_Polygon}->new();
-		for(my $i = 0; $i <= $#{$s->[1]}; $i++) {
+		for(my $i = 0; $i <= $#{$s->[Strassen::COORDS]}; $i++) {
 		    $poly->addPt(&$transpose
-				 (@{Strassen::to_koord1($s->[1][$i])}));
+				 (@{Strassen::to_koord1($s->[Strassen::COORDS][$i])}));
 		}
 		$im->filledPolygon($poly, $c);
 	    } elsif ($cat !~ /^[SRU]0$/) { # Ausnahmen: in Bau
@@ -326,10 +326,10 @@ my $s = $strecke->get($strpos);
 		} else {
 		    $color = defined $color{$cat} ? $color{$cat} : $white;
 		}
-		for(my $i = 0; $i < $#{$s->[1]}; $i++) {
+		for(my $i = 0; $i < $#{$s->[Strassen::COORDS]}; $i++) {
 		    my($x1, $y1, $x2, $y2) =
-		      (@{Strassen::to_koord1($s->[1][$i])},
-		       @{Strassen::to_koord1($s->[1][$i+1])});
+		      (@{Strassen::to_koord1($s->[Strassen::COORDS][$i])},
+		       @{Strassen::to_koord1($s->[Strassen::COORDS][$i+1])});
 		    # XXX evtl. aus Performancegründen testen, ob
 		    # überhaupt im Zeichenbereich.
 		    # Evtl. eine XS-Funktion für diese Schleife
@@ -340,10 +340,9 @@ my $s = $strecke->get($strpos);
 		}
 	    }
 	}
-}
-}
-	if ($strecke->{AfterHook}) {
-	    $strecke->{AfterHook}->();
+
+	if ($strecke_name eq 'flaechen') {
+	    $self->{FlaechenPass}++;
 	}
     }
 
@@ -352,39 +351,13 @@ my $s = $strecke->get($strpos);
     # ab etwa 0.05 kann man die mittelgroße Variante nehmen
     if ($p_draw{'ampel'} && $self->{Xk} >= 0.02) {
 	my $lsa = new Strassen "ampeln";
-	my $images_dir = $self->get_images_dir;
 	my $suf = ($self->{Xk} >= 0.05 ? '' : '2');
 
-	my($kl_ampel, $w_lsa, $h_lsa);
-	my($kl_andreas, $w_and, $h_and);
-	my $imgfile;
-	$imgfile = "$images_dir/ampel_klein$suf." . $self->suffix;
-	if (open(GIF, $imgfile)) {
-	    binmode GIF;
-	    $kl_ampel = $self->{GD_Image}->newFromImage(\*GIF);
-	    if ($kl_ampel) {
-		($w_lsa, $h_lsa) = $kl_ampel->getBounds;
-	    } else {
-		warn "$imgfile exists, but can't be read by GD";
-	    }
-	    close GIF;
-	}
+	my($kl_ampel, $w_lsa, $h_lsa) = $self->read_image("ampel_klein$suf");
+	my($kl_andreas, $w_and, $h_and) = $self->read_image("andreaskr_klein$suf");
+	my($kl_zugbruecke, $w_zbr, $h_zbr) = $self->read_image($self->{Xk} >= 0.05 ? "zugbruecke" : "zugbruecke_klein");
 
-	$imgfile = "$images_dir/andreaskr_klein$suf." . $self->suffix;
-	if (open(GIF, $imgfile)) {
-	    binmode GIF;
-	    $kl_andreas = $self->{GD_Image}->newFromImage(\*GIF);
-	    if ($kl_andreas) {
-		# workaround: newFromPNG vergisst die Transparency-Information
-		$kl_andreas->transparent($kl_andreas->colorClosest(192,192,192));
-		($w_and, $h_and) = $kl_andreas->getBounds;
-	    } else {
-		warn "$imgfile exists, but can't be read by GD";
-	    }
-	    close GIF;
-	}
-
-	if ($kl_andreas && $kl_ampel) {
+	if ($kl_andreas || $kl_ampel || $kl_zugbruecke) {
 	    $lsa->init;
 	    while(1) {
 		my $s = $lsa->next_obj;
@@ -392,11 +365,20 @@ my $s = $strecke->get($strpos);
 		my $cat = $s->category;
 		my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
 		if ($cat eq 'B') {
-		    $im->copy($kl_andreas, $x-$w_and/2, $y-$h_and/2, 0, 0,
-			      $w_and, $h_and);
+		    if ($kl_andreas) {
+			$im->copy($kl_andreas, $x-$w_and/2, $y-$h_and/2, 0, 0,
+				  $w_and, $h_and);
+		    }
+		} elsif ($cat eq 'Zbr') {
+		    if ($kl_zugbruecke) {
+			$im->copy($kl_zugbruecke, $x-$w_zbr/2, $y-$h_zbr/2, 0, 0,
+				  $w_zbr, $h_zbr);
+		    }
 		} else {
-		    $im->copy($kl_ampel, $x-$w_lsa/2, $y-$h_lsa/2, 0, 0,
-			      $w_lsa, $h_lsa);
+		    if ($kl_ampel) {
+			$im->copy($kl_ampel, $x-$w_lsa/2, $y-$h_lsa/2, 0, 0,
+				  $w_lsa, $h_lsa);
+		    }
 		}
 	    }
 	}
@@ -435,7 +417,6 @@ my $s = $strecke->get($strpos);
 	require Strassen::Strasse;
 	$bhf =~ s/\s+\(.*\)$//; # strip text in parenthesis
 	$bhf = Strasse::short($bhf, 1);
-	$bhf =~ s/b[eu]rg$/b\'g/;
 	$bhf;
     };
     foreach my $points (['ubahn', 'ubahnhof', 'u'],
@@ -467,25 +448,28 @@ my $s = $strecke->get($strpos);
 		     : new Strassen $points->[1]);
 	    my $type = $points->[2];
 
-$p->make_grid(UseCache => 1);
-my @grids = $p->get_new_grids($self->{Min_x}, $self->{Min_y},
-			      $self->{Max_x}, $self->{Max_y},
-			     );
-#	    $p->init;
-#	    while(1) {
-#		my $s = $p->next_obj;
-#		last if $s->is_empty;
-for my $grid (@grids) {
-if ($p->{Grid}{$grid}) {
-for my $strpos (@{ $p->{Grid}{$grid}}) {
-my $s = $p->get($strpos);
+	    my($image, $image_w, $image_h);
+	    if ($points->[1] =~ /^([us])bahnhof$/ && $self->{Xk} > 0.01) {
+		my $type = $1;
+		my $basename = "${type}bahn" . ($self->{Xk} > 0.12 ? "" :
+						$self->{Xk} > 0.07 ? "_klein" : "_mini");
+		($image, $image_w, $image_h) = $self->read_image($basename);
+	    }
+
+	    for my $s ($self->get_street_records_in_bbox($p)) {
+
 		my $cat = $s->[Strassen::CAT];
 		next if $cat =~ /0$/;
 		my($x0,$y0) = split /,/, $s->[Strassen::COORDS][0];
-		# Bereichscheck (XXX ist nicht ganz korrekt wenn der Screen breiter ist als die Route)
-#  		next if (!(($x0 >= $self->{Min_x} and $x0 <= $self->{Max_x})
-#  			   and
-#  			   ($y0 >= $self->{Min_y} and $y0 <= $self->{Max_y})));
+		my $draw_symbol = 1;
+		my $pad_left;
+		if ($type =~ /^[us]$/ && $image) {
+		    my($x, $y) = &$transpose($x0, $y0);
+		    $im->copy($image, $x-$image_w/2, $y-$image_h/2, 0, 0,
+			      $image_w, $image_h);
+		    $draw_symbol = 0;
+		    $pad_left = int($image_w/2) + 2;
+		}
 		if ($type eq 'u' || ($type eq 's' && $small_display)) {
 		    my($x1,$x2,$y1,$y2);
 		    if (0 && !$small_display) {
@@ -498,12 +482,15 @@ my $s = $p->get($strpos);
 		    }
 		    # Achtung: y2 und y1 vertauschen!
 		    # XXX Farbe bei small_display && s-bahn
-		    $im->filledRectangle($x1, $y2, $x2, $y1, $darkblue);
+		    if ($draw_symbol) {
+			$im->filledRectangle($x1, $y2, $x2, $y1, $darkblue);
+		    }
 		    if ($do_bahnhof) {
 			my $name = $strip_bhf->($s->[Strassen::NAME]);
 			if (!$seen_bahnhof{$name}) {
+			    $pad_left = 4 if !defined $pad_left;
 			    $self->outline_text($ort_font{'bhf'},
-						$x1+4, $y1,
+						$x1+$pad_left, $y1,
 						$self->patch_string($name),
 						$darkblue, $grey_bg,
 #						$white, $darkblue
@@ -515,12 +502,15 @@ my $s = $p->get($strpos);
 		    # XXX ausgefüllten Kreis zeichnen
 		    my($x, $y) = &$transpose(split /,/, $s->[Strassen::COORDS][0]);
 		    #$im->arc($x, $y, $xw_s, $yw_s, 0, 360, $darkgreen);
-		    $im->line($x,$y,$x,$y,$self->{GD}->gdBrushed());
+		    if ($draw_symbol) {
+			$im->line($x,$y,$x,$y,$self->{GD}->gdBrushed());
+		    }
 		    if ($do_bahnhof) {
 			my $name = $strip_bhf->($s->[Strassen::NAME]);
 			if (!$seen_bahnhof{$name}) {
+			    $pad_left = 4 if !defined $pad_left;
 			    $self->outline_text($ort_font{'bhf'},
-						$x+4, $y,
+						$x+$pad_left, $y,
 						$self->patch_string($name),
 						$darkgreen, $grey_bg,
 #						$white, $darkgreen
@@ -556,7 +546,6 @@ my $s = $p->get($strpos);
 	    }
 	}
     }
-}}
 
     if (ref $self->{StrLabel} &&
 	(defined &GD::Image::stringFT || defined &GD::Image::stringTTF)) {
@@ -628,7 +617,10 @@ sub get_ort_font_mapping {
     my %ort_font;
     my $ttf = $TTF_CITY;
     if (defined $ttf && defined &GD::Image::stringFT && -r $ttf) {
-	my $sc = $self->{FontSizeScale} || 1;
+	my $sc = $self->{FontSizeScale} ||
+	    ($self->{Xk} < 0.1 ? 1 :
+	     $self->{Xk} < 0.2 ? 1.2 :
+	     $self->{Xk} < 0.5 ? 1.5 : 2);
 	%ort_font = (0 => [$ttf, 6*$sc],
 		     1 => [$ttf, 7*$sc],
 		     2 => [$ttf, 8*$sc],
@@ -803,14 +795,15 @@ sub draw_route {
 		    my($w, $h) = $start_flag->getBounds;
 		    my($x, $y) = &$transpose(@{ $c1[0] });
 		    # workaround: newFromPNG vergisst die Transparency-Information
-		    $start_flag->transparent($start_flag->colorClosest(192,192,192));
+		    #$start_flag->transparent($start_flag->colorClosest(192,192,192));
 		    $im->copyMerge($start_flag, $x-5, $y-15,
 				   0, 0, $w, $h, 50);
 		} else {
 		    warn "$imgfile exists, but can't be read by GD";
 		}
+	    } else {
+		warn "Can't open $imgfile: $!";
 	    }
-else { warn $! }
 
 	    $imgfile = "$images_dir/flag_ziel." . $self->suffix;
 	    if (open(GIF, $imgfile)) {
@@ -821,12 +814,14 @@ else { warn $! }
 		    my($w, $h) = $end_flag->getBounds;
 		    my($x, $y) = &$transpose(@{ $c1[-1] });
 		    # workaround: newFromPNG vergisst die Transparency-Information
-		    $end_flag->transparent($end_flag->colorClosest(192,192,192));
+		    #$end_flag->transparent($end_flag->colorClosest(192,192,192));
 		    $im->copyMerge($end_flag, $x-5, $y-15,
 				   0, 0, $w, $h, 50);
 		} else {
 		    warn "$imgfile exists, but can't be read by GD";
 		}
+	    } else {
+		warn "Can't open $imgfile: $!";
 	    }
 	} elsif ($self->{UseFlags} && $self->imagetype eq 'wbmp' &&
 		 $self->{RouteWidth}) {
@@ -917,6 +912,7 @@ sub outline_text {
 sub outline_ft_text {
     my($self, $fontspec, $x, $y, $s, $inner, $outer, %args) = @_;
     my $im = $self->{Image};
+    return if !$im->can("stringFT"); # for example for GD::SVG operation
     if ($args{-anchor}) {
 	($x, $y) = _adjust_anchor
 	    ($x, $y, $args{-anchor}, $args{-padx}||0, $args{-pady}||0,
@@ -1165,14 +1161,31 @@ sub empty_image_error {
     confess "Empty image";
 }
 
-# XXX trying to fix GD color problem...
-sub DESTROY {
-#      my $self = shift;
-#      if ($self->{Image}) {
-#  	foreach my $col (@colors) {
-#  	    $self->{Image}->colorDeallocate(eval '$col');
-#  	}
-#      }
+sub can_multiple_passes {
+    my($self, $type) = @_;
+    return $type eq 'flaechen';
 }
+
+sub read_image {
+    my($self, $basename) = @_;
+    my($img, $w, $h);
+
+    my $images_dir = $self->get_images_dir;
+    my $imgfile = "$images_dir/$basename." . $self->suffix;
+    if (open(GIF, $imgfile)) {
+	binmode GIF;
+	$img = $self->{GD_Image}->newFromImage(\*GIF);
+	if ($img) {
+	    ($w, $h) = $img->getBounds;
+	} else {
+	    warn "$imgfile exists, but can't be read by GD";
+	}
+	close GIF;
+    }
+    ($img, $w, $h);
+}
+
+# To avoid loading of GDHeavy
+sub DESTROY { }
 
 1;

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.44 2004/12/27 23:30:44 eserte Exp $
+# $Id: Makefile,v 1.45 2004/12/29 21:49:15 eserte Exp $
 #
 
 # Targets:
@@ -28,6 +28,18 @@ LOCAL_HTML_URL?=	${LOCAL_URL}/BBBike
 #XXXDATA_DIR=		data_corrected
 DATA_DIR=		data
 TEMP_BLOCKINGS_DIR=	data/temp_blockings
+
+EXTRA_MISCSRC_FILES=	bbd2esri winter_optimization.pl
+EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html
+CGI_FILES=		bbbike.cgi wapbbbike.cgi \
+			mapserver_address.cgi mapserver_comment.cgi \
+			mapserver_setcoord.cgi
+TESTS=			basic.t \
+			cgihead.t \
+			cgi-mechanize.t \
+			cgi.t \
+			wapcgi.t \
+
 
 # XXX maybe use test-on-remote-and-send-mail (after tests)
 DEPLOY_TARGETS=			prepare-bbbike-data \
@@ -63,12 +75,6 @@ RSYNC_SRCDEST?=	. ${RSYNC_DEST}
 
 # XXX Should be set from mapserver/brb/Makefile:
 WWW_USER?=	www
-
-TESTS=		basic.t \
-		cgihead.t \
-		cgi-mechanize.t \
-		cgi.t \
-		wapcgi.t \
 
 .if ${OSTYPE} == "linux"
 XARGS_REPL?=	xargs --replace=%
@@ -199,15 +205,23 @@ prepare-bbbike-dist:	prepare-bbbike-dist-prog prepare-bbbike-dist-data
 prepare-bbbike-dist-prog: 	prepare-bbbike-dist-prog-bbbike \
 				prepare-bbbike-dist-prog-stadtplan
 
-prepare-bbbike-dist-prog-bbbike:
+prepare-bbbike-dist-prog-bbbike:	\
+				prepare-bbbike-dist-prog-bbbike-copy \
+				prepare-bbbike-dist-prog-bbbike-cgi \
+				prepare-bbbike-dist-prog-bbbike-htdocs \
+				prepare-bbbike-dist-prog-bbbike-tmp \
+				prepare-bbbike-dist-prog-bbbike-t \
+				prepare-bbbike-dist-prog-bbbike-miscsrc \
+				prepare-bbbike-dist-prog-bbbike-html
+
+prepare-bbbike-dist-prog-bbbike-copy:
 	cd ${BBBIKE_ROOT_DIR} && ${MAKE} distcheck
 	(umask 022; cd ${BBBIKE_ROOT_DIR} && perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread(),'${CURDIR}/BBBike', 'best');")
+
+prepare-bbbike-dist-prog-bbbike-cgi:
 	[ -d ${CURDIR}/cgi-bin ] || mkdir ${CURDIR}/cgi-bin
-	[ -d ${CURDIR}/htdocs  ] || mkdir ${CURDIR}/htdocs
-	chmod 755 ${CURDIR}/cgi-bin ${CURDIR}/htdocs
-.for i in \
-	  bbbike.cgi wapbbbike.cgi \
-	  mapserver_address.cgi mapserver_comment.cgi mapserver_setcoord.cgi
+	chmod 755 ${CURDIR}/cgi-bin
+.for i in ${CGI_FILES}
 	rm -f ${CURDIR}/cgi-bin/$(i)
 	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/$(i)
 .endfor
@@ -216,30 +230,51 @@ prepare-bbbike-dist-prog-bbbike:
 	rm -f ${CURDIR}/cgi-bin/bbbike.cgi.config
 	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike.cgi.config
 	chmod ugo+r ${CURDIR}/BBBike/cgi/bbbike.cgi.config
+	chmod ugo+r ${CURDIR}/cgi-bin/*
 	@echo "Maybe create bbbike2.cgi and bbbike2.cgi.config"
+
+prepare-bbbike-dist-prog-bbbike-htdocs:
+	[ -d ${CURDIR}/htdocs  ] || mkdir ${CURDIR}/htdocs
+	chmod 755 ${CURDIR}/htdocs
 	[ -e ${CURDIR}/htdocs/BBBike ] || \
 	    ln -s ../BBBike ${CURDIR}/htdocs/BBBike
 	@echo "Do 'ln -s ../BBBike ${BBBIKE_RADZEIT_APACHE_DIR}/htdocs/BBBike' manually on server"
+
+prepare-bbbike-dist-prog-bbbike-tmp:
 	chmod 777 ${CURDIR}/BBBike/tmp
 	@echo "Maybe chown ${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/tmp on ${BBBIKE_RADZEIT_HOST} to www"
-	chmod ugo+r ${CURDIR}/cgi-bin/*
+
+prepare-bbbike-dist-prog-bbbike-miscsrc:
 	[ -d ${CURDIR}/BBBike/miscsrc ] || \
 	    mkdir ${CURDIR}/BBBike/miscsrc
-	cp -pf ${BBBIKE_ROOT_DIR}/miscsrc/bbd2esri \
-	    ${CURDIR}/BBBike/miscsrc/
+.for f in ${EXTRA_MISCSRC_FILES}
+	if [ ${BBBIKE_ROOT_DIR}/miscsrc/$f -nt ${CURDIR}/BBBike/miscsrc/$f ] ; then \
+	    cp -pf ${BBBIKE_ROOT_DIR}/miscsrc/$f ${CURDIR}/BBBike/miscsrc/$f; \
+	fi
+.endfor
+
+prepare-bbbike-dist-prog-bbbike-t:
 	[ -d ${CURDIR}/BBBike/t ] || \
 	    mkdir ${CURDIR}/BBBike/t
-	for f in ${TESTS}; do \
-	    cp -pf ${BBBIKE_ROOT_DIR}/t/$$f ${CURDIR}/BBBike/t; \
-	done
-	cp -pf ${BBBIKE_ROOT_DIR}/html/Makefile		\
-	       ${BBBIKE_ROOT_DIR}/html/newstreetform.tpl.html	\
-	    ${CURDIR}/BBBike/html
+.for f in ${TESTS}
+	if [ ${BBBIKE_ROOT_DIR}/t/$f -nt ${CURDIR}/BBBike/t/$f ] ; then \
+	    cp -pf ${BBBIKE_ROOT_DIR}/t/$f ${CURDIR}/BBBike/t/$f; \
+	fi
+.endfor
+
+prepare-bbbike-dist-prog-bbbike-html:
+.for f in ${EXTRA_HTML_FILES}
+	if [ ${BBBIKE_ROOT_DIR}/html/$f -nt ${CURDIR}/BBBike/html/$f ] ; then \
+	    cp -pf ${BBBIKE_ROOT_DIR}/html/$f ${CURDIR}/BBBike/html/$f; \
+	fi
+.endfor
 	cd ${CURDIR}/BBBike/html && \
 	    ${MAKE} newstreetform.html CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin
 
 prepare-bbbike-dist-prog-stadtplan:
-	[ ! -e ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com ] && echo Skip berliner-stadtplan.com deployment || (cp -pf ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com/lib/BBBikeDraw/BerlinerStadtplan.pm ${CURDIR}/BBBike/BBBikeDraw/)
+	[ ! -e ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com ] && \
+	    echo Skip berliner-stadtplan.com deployment || \
+	    (cp -pf ${BBBIKE_ROOT_DIR}/projects/www.berliner-stadtplan.com/lib/BBBikeDraw/BerlinerStadtplan.pm ${CURDIR}/BBBike/BBBikeDraw/)
 
 prepare-bbbike-dist-data:	prepare-bbbike-dist-data-datadir \
 				prepare-bbbike-dist-data-datadir-additional \

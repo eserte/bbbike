@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.12 2004/12/04 22:50:51 eserte Exp eserte $
+# $Id: cgi-mechanize.t,v 1.16 2004/12/29 23:34:33 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -113,6 +113,16 @@ $agent->submit();
 
 like($agent->content, qr/Route/);
 
+######################################################################
+# exact crossings
+$agent->follow('Start und Ziel neu eingeben');
+$agent->current_form->value('start', 'seume/simplon');
+$agent->current_form->value('ziel', 'brandenburger tor (mitte)');
+$agent->submit;
+
+like($agent->content, qr{Einstellungen}, "On the settings page");
+unlike($agent->content, qr{genaue.*kreuzung}i, "Crossings are exact");
+
 }
 
 ######################################################################
@@ -130,8 +140,8 @@ $agent->form("BBBikeForm");
 { local $^W; $agent->current_form->value('ziel', 'helmholtzstr'); };
 $agent->submit();
 
-like($agent->content, qr/genaue.*startstr.*ausw/i, "Start is ambigous");
-like($agent->content, qr/genaue.*zielstr.*ausw/i,  "Goal is ambigous");
+like($agent->content, qr/genaue.*startstr.*ausw/i, "Start is ambiguous");
+like($agent->content, qr/genaue.*zielstr.*ausw/i,  "Goal is ambiguous");
 
 $agent->form("BBBikeForm");
 
@@ -148,6 +158,7 @@ TRY: {
 	}
     }
     fail($testname);
+    diag("Selection box is empty") if !$input->possible_values;
 }
 
 $input = $form->find_input("ziel2");
@@ -162,12 +173,17 @@ TRY: {
 	}
     }
     fail($testname);
+    diag("Selection box is empty") if !$input->possible_values;
 }
 
 $agent->submit;
 
-like($agent->content, qr/Kuhfortdamm/);
-like($agent->content, qr/Mangerstr/);
+like($agent->content, qr{genaue kreuzung}i, "On the crossing page");
+
+like($agent->content, qr/Kuhfortdamm/, "Expected start crossing")
+    or diag $agent->uri;
+like($agent->content, qr/Mangerstr/, "Expected goal crossing")
+    or diag $agent->uri;
 
 }
 
@@ -186,7 +202,7 @@ $agent->form("BBBikeForm");
 { local $^W; $agent->current_form->value('ziel', 'dudenstr'); };
 $agent->submit();
 
-like($agent->content, qr/genaue.*kreuzung.*angeben/i, "Crossings page");
+like($agent->content, qr/genaue.*kreuzung.*angeben/i, "On the crossing page");
 like($agent->content, qr/\QAm Neuen Palais (F2.2) (Potsdam)/i,  "Correct start resolution (Neues Palais ...)");
 
 }
@@ -206,7 +222,15 @@ $agent->form("BBBikeForm");
 { local $^W; $agent->current_form->value('ziel', 'Römische Bäder'); };
 $agent->submit();
 
-like($agent->content, qr{\QHans-Sachs-Str. (Potsdam)/Meistersingerstr. (Potsdam)}i,  "Correct goal resolution (Hans-Sachs-Str. ...)");
+# May have different results depending on $use_exact_streetchooser.
+# The first is with $use_exact_streetchooser=0, the second with
+# $use_exact_streetchooser=1. Actually the correct crossing in this case
+# should be the end of "Lennestr.", but the find-nearest-crossing code finds
+# only real crossing, not endpoints of streets.
+like($agent->content,
+     qr{(\QHans-Sachs-Str. (Potsdam)/Meistersingerstr. (Potsdam)\E
+        |\QCarl-von-Ossietzky-Str. (Potsdam)/Lennéstr. (Potsdam)\E
+        )}ix,  "Correct goal resolution (Hans-Sachs-Str. ... or Lennestr. ...)");
 like($agent->content, qr{\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)}i,  "Correct goal resolution (Marquardt ...)");
                            
 }
@@ -269,7 +293,7 @@ $agent->form("BBBikeForm");
 { local $^W; $agent->current_form->value('ziel', 'seumestr'); };
 $agent->submit();
 
-like($agent->content, qr/genaue.*startstr.*ausw/i, "Start is ambigous");
+like($agent->content, qr/genaue.*startstr.*ausw/i, "Start is ambiguous");
 
 my $form = $agent->current_form;
 my $input = $form->find_input("start2");
@@ -311,6 +335,29 @@ for my $value ($input->possible_values) {
 $agent->submit;
 
 like($agent->content, qr/brandenburger tor.*potsdam/i, "Potsdam alternative selected");
+
+$agent->submit;
+
+my %len;
+for my $winter_optimization ("", "WI1", "WI2") {
+    $form = $agent->current_form;
+    $input = $form->find_input("pref_winter");
+ SKIP: {
+	skip("winter_optimization not available", 1) if !defined $input;
+	$input->value($winter_optimization);
+	$agent->submit;
+	my($len) = $agent->content =~ /l.*?nge:.*?([\d\.]+)\s*km/;
+	ok(defined $len, "Got length=$len with winter optimization=$winter_optimization");
+	$len{$winter_optimization} = $len;
+	$agent->back;
+    }
+}
+
+SKIP: {
+    skip("winter_optimization not available", 2) if !keys %len;
+    cmp_ok($len{""}, "<=", $len{"WI1"}, "No optimization is shortest");
+    cmp_ok($len{"WI1"}, "<=", $len{"WI2"}, "Strong optimization is farthest");
+}
 
 }
 __END__

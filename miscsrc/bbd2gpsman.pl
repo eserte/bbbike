@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2gpsman.pl,v 1.4 2003/04/02 22:16:21 eserte Exp $
+# $Id: bbd2gpsman.pl,v 1.5 2004/12/29 23:29:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -73,7 +73,7 @@ my $outtype = ($type_string =~ /^(waypoint|wpt)$/
 	       : die "Unknown type $type_string, should be waypoint or track");
 
 my $file = shift || "-";
-if ($file eq '-') { warn "Reading from STDIN ...\n" }
+if ($file eq '-' && -t STDIN) { warn "Reading from STDIN ...\n" }
 
 my $s = Strassen->new($file);
 my $gpsmandata = GPS::GpsmanData->new;

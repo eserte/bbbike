@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: draw_ovl,v 2.7 2003/08/24 23:23:33 eserte Exp $
+# $Id: draw_ovl,v 2.8 2004/12/29 23:32:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -313,6 +313,14 @@ sub draw_symbols {
 		     : $args{-tags}
 		    );
     }
+
+    my @first_coord;
+    foreach my $sym (@{$self->{Symbols}}) {
+	if ($sym->{Coords} && @{ $sym->{Coords} }) {
+	    @first_coord = $transpose->(@{ $sym->{Coords}[0] });
+	}
+    }
+
     foreach my $sym (@{$self->{Symbols}}) {
 	next unless $sym->{Coords};
 	my @tags = @tags;
@@ -346,10 +354,14 @@ sub draw_symbols {
 		push @tc, $transpose->(@$_);
 	    }
 	    $c->createLine(@tc, @create_args,
-			   (exists $sym->{Color} ? (-fill => $sym->{Color}) : ()),
+			   (defined $sym->{Color} ? (-fill => $sym->{Color}) : ()),
 			   (@tags ? (-tags => \@tags) : ()),
 			  );
 	}
+    }
+
+    if (@first_coord && $c->can("see")) {
+	$c->see(@first_coord);
     }
 }
 

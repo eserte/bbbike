@@ -1,34 +1,36 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.25 2003/11/28 00:18:51 eserte Exp eserte $
+# $Id: PDF.pm,v 2.28 2004/12/28 23:41:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
 package BBBikeDraw::PDF;
 use strict;
 use base qw(BBBikeDraw);
-use PDF::Create 0.06; # for image support
+use PDF::Create 0.06; # for image support, get from SourceForge, see Makefile.PL
+use PDF::Create::MyPage; # additional methods
 use Strassen;
 # Strassen benutzt FindBin benutzt Carp, also brauchen wir hier nicht zu
 # sparen:
 use Carp qw(confess);
 
-use vars qw($VERSION @colors %color %width %outline_color $sansserif);
+use vars qw($VERSION @colors %color %width %outline_color
+	    $sansserif $symbolfont);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
 	    $darkblue $lightblue $black);
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.25 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.28 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -61,7 +63,7 @@ sub init {
     }
     if ($geometry eq 'landscape') {
 	@$page_bbox[2,3] = @$page_bbox[3,2];
-#XXX jeht nicht:	$rotate = 90; # oder -90
+	#XXX jeht nicht:	$rotate = 90; # oder -90
     }
 
     my $page = $pdf->new_page('MediaBox' => $page_bbox,
@@ -134,7 +136,12 @@ sub allocate_fonts {
 
     $sansserif = $self->{PDF}->font('Subtype'  => 'Type1',
 				    'Encoding' => 'WinAnsiEncoding',
-				    'BaseFont' => 'Helvetica');
+				    'BaseFont' => 'Helvetica'
+				   );
+    $symbolfont = $self->{PDF}->font('Subtype'  => 'Type1',
+				     'Encoding' => 'Symbol',
+				     'BaseFont' => 'Symbol'
+				   );
 }
 
 
@@ -143,64 +150,17 @@ sub draw_map {
     my $im        = $self->{Image};
     my $transpose = $self->{Transpose};
 
-    # XXX use _get_nets
-    # Netze zeichnen
-    my @netz;
-    my @outline_netz;
-    my(%str_draw, $title_draw, %p_draw);
+    $self->_get_nets;
+    $self->{FlaechenPass} = 1;
+
+    my @netz = @{ $self->{_Net} };
+    my @outline_netz = @{ $self->{_OutlineNet} };
+    my @netz_name = @{ $self->{_NetName} };
+    my %str_draw = %{ $self->{_StrDraw} };
+    my %p_draw = %{ $self->{_PDraw} };
+    my $title_draw = $self->{_TitleDraw};
+
     my $bbox = $self->{PageBBox};
-    my $flaechen_pass = 1;
-
-    foreach (@{$self->{Draw}}) {
-	if ($_ eq 'title' &&
-	    defined $self->{Startname} && $self->{Startname} ne '' &&
-	    defined $self->{Zielname}  && $self->{Zielname}  ne '') {
-	    $title_draw = 1;
-	} elsif ($_ eq 'ampel') {
-	    $p_draw{$_} = 1;
-	} elsif ($_ eq 'strname') {
-	    # NOP, done in draw_route
-	} else {
-	    $str_draw{$_} = 1;
-	}
-    }
-    # Reihenfolge (von unten nach oben):
-    # Berlin-Grenze, Gewässer, Straßen, U-, S-Bahn
-    foreach my $def (
-	     ['berlin',           'berlin'],
-	     ['flaechen',         'flaechen'],
-	    ) {
-	if ($str_draw{$def->[1]}) {
-	    push @netz, new Strassen $def->[0];
-	    if ($def->[1] eq 'flaechen') {
-		$netz[-1]->{AfterHook} = sub {
-		    $flaechen_pass = 2;
-		};
-	    }
-	}
-    }
-    if ($str_draw{'wasser'}) {
-	my $wasser = $self->_get_gewaesser(Strdraw => \%str_draw);
-	push @netz, $wasser;
-#XXX not yet: erst einmal muss das Zeichnen der outlines auch F: verstehen
-#	push @outline_netz, $wasser;
-	# Again to draw F:Pabove
-	push @netz, new Strassen "flaechen" if $str_draw{"flaechen"};
-    }
-
-    my $multistr = $self->_get_strassen(Strdraw => \%str_draw);
-    if ($str_draw{'str'}) {
-	push @netz, $multistr;
-	push @outline_netz, $multistr;
-    }
-
-    foreach (
-	     ['ubahn',           'ubahn'],
-	     ['sbahn',           'sbahn'],
-	     ['rbahn',           'rbahn'],
-	    ) {
-	push @netz, new Strassen $_->[0] if $str_draw{$_->[1]}
-    }
 
     my $restrict;
     if ($self->{Restrict}) {
@@ -231,14 +191,14 @@ sub draw_map {
 	}
     }
 
-    foreach my $strecke (@netz) {
-	$strecke->init;
-	while(1) {
-	    my $s = $strecke->next;
-	    last if !@{$s->[1]};
-	    my $cat = $s->[2];
+    foreach my $strecke_i (0 .. $#netz) {
+	my $strecke = $netz[$strecke_i];
+	my $strecke_name = $netz_name[$strecke_i];
+	my $flaechen_pass = $self->{FlaechenPass};
+	for my $s ($self->get_street_records_in_bbox($strecke)) {
+	    my $cat = $s->[Strassen::CAT];
 
-	    my($ss, $bbox) = transpose_all($s->[1], $transpose);
+	    my($ss, $bbox) = transpose_all($s->[Strassen::COORDS], $transpose);
 	    next if (!bbox_in_region($bbox, $self->{PageBBox}));
 
 	    # move to first point
@@ -246,9 +206,10 @@ sub draw_map {
 
 	    if ($cat =~ /^F:(.*)/) {
 		my $cat = $1;
-#XXX NYI
-#		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
-#			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
+		next if ($strecke_name eq 'flaechen' &&
+			 (($flaechen_pass == 1 && $cat eq 'Pabove') ||
+			  ($flaechen_pass == 2 && $cat ne 'Pabove'))
+			);
 		$im->set_line_width(1);
 		$im->set_stroke_color(@{ $color{$cat} || [0,0,0] });
 		$im->set_fill_color  (@{ $color{$cat} || [0,0,0] });
@@ -266,15 +227,15 @@ sub draw_map {
 		$im->stroke;
 	    }
 	}
-	if ($strecke->{AfterHook}) {
-	    $strecke->{AfterHook}->();
+	if ($strecke_name eq 'flaechen') {
+	    $self->{FlaechenPass}++;
 	}
     }
 
     # $self->{Xk} bezeichnet den Vergrößerungsfaktor
     # bis etwa 0.02 ist es zu unübersichtlich, Ampeln zu zeichnen,
     # ab etwa 0.05 kann man die mittelgroße Variante nehmen
-if($self->{Width} < $self->{Height}){#XXX scheint sonst undefinierbare Probleme mit Acrobat Reader zu machen (nur beim Querformat/Landscape?)
+if(1||$self->{Width} < $self->{Height}){#XXX scheint sonst undefinierbare Probleme mit Acrobat Reader zu machen (nur beim Querformat/Landscape?)
     if ($p_draw{'ampel'} && $self->{Xk} >= 0.02) {
 	my $lsa = new Strassen "ampeln";
 	my $images_dir = $self->get_images_dir;
@@ -336,15 +297,35 @@ if($self->{Width} < $self->{Height}){#XXX scheint sonst undefinierbare Probleme 
 #  		    5 => &GD::Font::Giant,
 #  		    6 => &GD::Font::Giant,
 #  		   );
-    foreach my $points (['ubahn', 'ubahnhof', 'u'],
-  			['sbahn', 'sbahnhof', 's'],
+    foreach my $def (['ubahn', 'ubahnhof', 'u'],
+		     ['sbahn', 'sbahnhof', 's'],
 #  			['ort', 'orte',       'o'],
-  		       ) {
-  	if ($str_draw{$points->[0]}) {
-  	    my $p = ($points->[0] eq 'ort'
+		    ) {
+	my($lines, $points, $type) = @$def;
+  	if ($str_draw{$lines}) {
+  	    my $p = ($lines eq 'ort'
   		     ? $self->_get_orte
-  		     : new Strassen $points->[1]);
-  	    my $type = $points->[2];
+  		     : new Strassen $points);
+
+	    my $images_dir = $self->get_images_dir;
+	    my $image;
+	    my $suffix;
+	    if ($self->{Xk} < 0.05) {
+		$suffix = "_mini";
+	    } elsif ($self->{Xk} < 0.2) {
+		$suffix = "_klein";
+	    } else {
+		$suffix = "";
+	    }
+	    eval {
+		die "Acroread has problems with these images...";
+		if ($points eq 'ubahnhof') {
+		    $image = $self->{PDF}->image("$images_dir/ubahn$suffix.jpg");
+		} elsif ($points eq 'sbahnhof') {
+		    $image = $self->{PDF}->image("$images_dir/sbahn$suffix.jpg");
+		}
+	    }; #warn $@ if $@; # XXX remove comment if die is meaningful here
+
   	    $p->init;
   	    while(1) {
   		my $s = $p->next_obj;
@@ -356,7 +337,11 @@ if($self->{Width} < $self->{Height}){#XXX scheint sonst undefinierbare Probleme 
 #  		next if (!(($x0 >= $self->{Min_x} and $x0 <= $self->{Max_x})
 #  			   and
 #  			   ($y0 >= $self->{Min_y} and $y0 <= $self->{Max_y})));
-  		if ($type eq 'u' || ($type eq 's' && $small_display)) {
+		if ($image) {
+		    my($x1, $y1) = &$transpose($x0, $y0);
+		    $im->image(image => $image, xpos => $x1, ypos => $y1,
+			       xalign => 1, yalign => 1);
+		} elsif ($type eq 'u' || ($type eq 's' && $small_display)) {
   		    my($x1,$x2,$y1,$y2);
 #    		    if (!$small_display) {
 #    			($x1, $y1) = &$transpose($x0-30, $y0-30);
@@ -590,7 +575,7 @@ $self->{UseFlags} = 0; # XXX don't use this because of missing transparency info
 	    my $name = Strassen::strip_bezirk($e->[0]);
 	    my $f_i  = $e->[4][0];
 	    my($x,$y) = &$transpose(split ',', $self->{Coords}[$f_i]);
-	    my $s_width = $im->string_width($sansserif, $name) * $size;
+	    my $s_width = $im->my_string_width($sansserif, $name) * $size;
 	    $im->set_fill_color(@$white);
 	    $im->rectangle($x-2, $y-2, $s_width+4, $size+2);
 	    $im->fill;
@@ -612,22 +597,38 @@ $self->{UseFlags} = 0; # XXX don't use this because of missing transparency info
 	    }
 	    $$s = join("/", @s);
 	}
-	my $s =  "$start -> $ziel";
+	my @s = ("$start ",
+		 chr(174), # left arrow
+		 " $ziel"
+		);
 
 	my $size = 20;
-	my $s_width = $im->string_width($sansserif, $s) * $size;
+	my @s_width = ($im->my_string_width($sansserif, $s[0]) * $size,
+		       20, # no width mapping for Symbol font: $im->my_string_width($symbolfont, $s[1]) * $size,
+		       $im->my_string_width($sansserif, $s[2]) * $size,
+		      );
+	my $s_width = $s_width[0] + $s_width[1] + $s_width[2];
+
+	my $y_top = $self->{PageBBox}[3];
+	$y_top -= 37;
 
 	$im->set_stroke_color(@$black);
 	$im->set_fill_color(@$white);
 	$im->set_line_width(1);
-	$im->rectangle(15, 795, $s_width+5+5, $size+5);
+	$im->rectangle(15, $y_top, $s_width+5+5, $size+7);
 	$im->fill;
-	$im->rectangle(15, 795, $s_width+5+5, $size+5);
+	$im->rectangle(15, $y_top, $s_width+5+5, $size+7);
 	$im->stroke;
 
 	$im->set_stroke_color(@$black);
 	$im->set_fill_color(@$black);
-	$im->string($sansserif, $size, 20, 800, $s);
+	my $x = 20;
+	my $y = $y_top + 5;
+	$im->string($sansserif, $size, $x, $y, $s[0]);
+	$x += $s_width[0];
+	$im->string($symbolfont, $size, $x, $y, $s[1]);
+	$x += $s_width[1];
+	$im->string($sansserif, $size, $x, $y, $s[2]);
     }
 
 }
@@ -787,54 +788,9 @@ sub bbox_in_region {
 
 sub origin_position { "sw" }
 
-# Additional PDF::Create methods
-
-package PDF::Create::Page;
-
-use constant PI => 3.141592653;
-
-sub set_stroke_color {
-    my($page, $r, $g, $b) = @_;
-    return if (defined $page->{'current_stroke_color'} &&
-	       $page->{'current_stroke_color'} eq join(",", $r, $g, $b));
-    $page->{'pdf'}->page_stream($page);
-    $page->{'pdf'}->add("$r $g $b RG");
-    $page->{'current_stroke_color'} = join(",", $r, $g, $b);
-}
-
-sub set_fill_color {
-    my($page, $r, $g, $b) = @_;
-    return if (defined $page->{'current_fill_color'} &&
-	       $page->{'current_fill_color'} eq join(",", $r, $g, $b));
-    $page->{'pdf'}->page_stream($page);
-    $page->{'pdf'}->add("$r $g $b rg");
-    $page->{'current_fill_color'} = join(",", $r, $g, $b);
-}
-
-sub set_line_width {
-    my($page, $w) = @_;
-    return if (defined $page->{'current_line_width'} &&
-	       $page->{'current_line_width'} == $w);
-    $page->{'pdf'}->page_stream($page);
-    $page->{'pdf'}->add("$w w");
-    $page->{'current_line_width'} = $w;
-}
-
-sub circle {
-    my($page, $x, $y, $r) = @_;
-
-    my @coords;
-    for(my $i = 0; $i < PI*2; $i+=PI*2/$r/2) {
-	my($xi,$yi) = map { $_*$r } (sin $i, cos $i);
-	push @coords, $x+$xi, $y+$yi;
-    }
-    push @coords, @coords[0,1];
-    @coords = map { sprintf "%.2f", $_ } @coords;
-
-    $page->moveto(shift @coords, shift @coords);
-    for(my $i = 0; $i <= $#coords; $i+=2) {
-	$page->lineto($coords[$i], $coords[$i+1]);
-    }
+sub can_multiple_passes {
+    my($self, $type) = @_;
+    return $type eq 'flaechen';
 }
 
 1;

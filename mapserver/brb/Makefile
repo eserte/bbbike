@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.20 2004/10/13 07:09:59 eserte Exp $
+# $Id: Makefile,v 1.21 2004/12/30 11:44:10 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -241,12 +241,28 @@ MAPFILES=	brb.map brb-b.map brb-inner-b.map brb-wide.map brb-p.map
 HTMLFILES=	brb.html brb_init.html brb.js help.html query_header.html query_footer.html index.html
 ######################################################################
 
+.MAIN: all
+
+.BEGIN:
+.if !exists(Makefile.${TARGET}.inc)
+	touch -t 197001010000 Makefile.${TARGET}.inc
+.endif
+.if make(all) || make(build-all)
+.if !exists(.built_for.${TARGET})
+	touch -t 197001010000 Makefile.${TARGET}.inc
+.endif
+.endif
+
 all:	build-all
 
 clean:
 	rm -f ${MAPFILES} ${HTMLFILES}
 
-build-all: Makefile.${TARGET}.inc maps html misc
+build-all: Makefile.${TARGET}.inc maps html misc .WAIT .built_for.${TARGET}
+
+.built_for.${TARGET}:
+	rm -f .built_for.*
+	touch .built_for.${TARGET}
 
 maps:	${MAPFILES}
 
@@ -384,6 +400,7 @@ httpd.conf:	httpd.conf-tpl Makefile
 dist-any:	# build-all
 	[ ! -d $(RADZEIT_DIST_DIR) ] && mkdir $(RADZEIT_DIST_DIR) || true
 	chmod ugo+rx $(RADZEIT_DIST_DIR)
+	$(MAKE) $(MAKEFLAGS) TARGET=$(TARGET) Makefile.${TARGET}.inc
 	cp -pf $(DISTFILES) $(FONTS_LIST) $(RADZEIT_DIST_DIR)
 	-mkdir $(RADZEIT_DIST_DIR)/sternfahrt2004
 	chmod ugo+rx $(RADZEIT_DIST_DIR)/sternfahrt2004

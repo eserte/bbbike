@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.27 2004/12/13 08:06:39 eserte Exp $
+# $Id: cgi.t,v 1.28 2004/12/30 11:44:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004 Slaven Rezic. All rights reserved.
@@ -116,8 +116,11 @@ for my $cgiurl (@urls) {
     $res = $ua->request($req);
     ok($res->is_success) or diag $res->as_string;
     $content = uncompr($res);
-    like($content, qr/Mehringdamm.*Platz.*Tempelhofer/);
-    like($content, qr/Urban.*Fichte/);
+    my($mehringdamm_line) = $content =~ /(.*Mehringdamm.*)/;
+    ok(defined $mehringdamm_line, "Found Mehringdamm");
+    like($mehringdamm_line, qr/Platz.*d.*Luftbr/, "Found PladeLu");
+    like($mehringdamm_line, qr/Tempelhofer/);
+    like($content, qr/(Urban.*Fichte|Fichte.*Urban)/);
 
     {
 	# Potsdam

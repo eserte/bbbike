@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiStrassen.pm,v 1.13 2004/08/26 23:38:02 eserte Exp eserte $
+# $Id: MultiStrassen.pm,v 1.14 2004/12/28 22:58:22 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::MultiStrassen;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
 package MultiStrassen;
 use strict;
@@ -104,7 +104,7 @@ sub read_data {
 }
 
 # XXX Hack: autoloader does not work for inherited methods
-for my $method (qw(agrep bbox bboxes pos_from_name choose_street new_with_removed_points)) {
+for my $method (qw(agrep bbox bboxes pos_from_name choose_street new_with_removed_points sort_records_by_cat)) {
     my $code = 'sub ' . $method . ' { shift->Strassen::' . $method . '(@_) }';
     #warn $code;
     eval $code;

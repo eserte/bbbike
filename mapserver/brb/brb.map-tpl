@@ -17,7 +17,8 @@ IMAGECOLOR [% IMAGECOLOR %]
 FONTSET "[% MAPSERVER_DIR %]/[% FONTS_LIST %]"
 
 # you may need to change this to match your MapServer build
-IMAGETYPE PNG
+[% UNLESS IMAGE_TYPE.defined; IMAGE_TYPE = "png"; END -%]
+IMAGETYPE [% IMAGE_TYPE %]
 
 #
 # Projection definition, consult the PROJ.4 documentation for parameter discussion
@@ -262,13 +263,13 @@ END
 SYMBOL
   NAME 'startflag'
   TYPE PIXMAP
-  IMAGE "[% IMAGE_DIR %]/flag2_bl.[% IMAGE_SUFFIX %]"
+  IMAGE "[% IMAGE_DIR %]/flag2_bl_centered.[% IMAGE_SUFFIX %]"
 END
 
 SYMBOL
   NAME 'goalflag'
   TYPE PIXMAP
-  IMAGE "[% IMAGE_DIR %]/flag_ziel.[% IMAGE_SUFFIX %]"
+  IMAGE "[% IMAGE_DIR %]/flag_ziel_centered.[% IMAGE_SUFFIX %]"
 END
 
 SYMBOL
@@ -1424,6 +1425,8 @@ LAYER
 END
 
 # Steigungen
+# XXX Suboptimal gezeichnet. Vielleicht mit (mehrfachen) Größer-Zeichen,
+# optional mit Prozentangabe, falls es große Steigungen sind?
 LAYER
   NAME "Steigungen"
   TYPE LINE
@@ -1873,6 +1876,7 @@ LAYER
     MAXSCALE 16000
     SYMBOL '[% IMAGE_DIR %]/ampel_klein.[% IMAGE_SUFFIX %]'
   END
+
   CLASS
     EXPRESSION "B"
     MAXSCALE 8000
@@ -1885,12 +1889,26 @@ LAYER
     MAXSCALE 16000
     SYMBOL '[% IMAGE_DIR %]/andreaskr_klein.[% IMAGE_SUFFIX %]'
   END
+
+  CLASS
+    EXPRESSION "Zbr"
+    MAXSCALE 8000
+    SYMBOL '[% IMAGE_DIR %]/zugbruecke.[% IMAGE_SUFFIX %]'
+  END
+  CLASS
+    NAME "Zugbrücke"
+    EXPRESSION "Zbr"
+    MINSCALE 8000
+    MAXSCALE 16000
+    SYMBOL '[% IMAGE_DIR %]/zugbruecke_klein.[% IMAGE_SUFFIX %]'
+  END
+
   TEMPLATE "query.html"
   HEADER "query_header2.html"
   FOOTER "query_footer2.html"
   METADATA
     WMS_TITLE "Ampeln"
-    WMS_ABSTRACT "Ampeln, beschrankte Bahnübergänge"
+    WMS_ABSTRACT "Ampeln, beschrankte Bahnübergänge, Zugbrücken"
     WMS_SRS "EPSG:4326"
   END
 END

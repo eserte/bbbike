@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.15 2004/12/20 00:28:04 eserte Exp $
+# $Id: Makefile,v 1.16 2004/12/28 14:46:57 eserte Exp eserte $
 #
 
 # XXX needs MORE work
@@ -34,7 +34,7 @@ bbbike_splash_tkbabybike.xpm: srtbike.xpm
 /tmp/bbbike_favicon2.ppm:
 	ppmcolormask white /tmp/bbbike_favicon1.ppm > /tmp/bbbike_favicon2.ppm
 
-.SUFFIXES: .gif .xpm .png .wbmp
+.SUFFIXES: .gif .xpm .png .wbmp .jpg
 
 # .xpm.gif:
 # 	convert $< $@
@@ -60,9 +60,15 @@ bbbike_splash_tkbabybike.xpm: srtbike.xpm
 	convert $< $@
 	chmod ugo+r $@
 
+.png.jpg:
+	convert $< $@
+	chmod ugo+r $@
+
 png-to-gif:	\
 		airport.gif \
 		ampel_klein2_rahmen.gif \
+		andreaskr.gif \
+		andreaskr_klein.gif \
 		apfel.gif \
 		birne.gif \
 		church.gif \
@@ -131,6 +137,15 @@ png-to-xpm:	\
 
 png-to-wbmp:	\
 		flag2_bl.wbmp \
+
+png-to-jpg:	\
+		andreaskr_klein.jpg \
+		ubahn.jpg \
+		sbahn.jpg \
+		ubahn_klein.jpg \
+		sbahn_klein.jpg \
+		ubahn_mini.jpg \
+		sbahn_mini.jpg \
 
 
 #XXX .PHONY: favicon.ico srtbike.ico

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.1 2004/12/27 23:21:46 eserte Exp $
+# $Id: bbbike.cgi,v 7.2 2004/12/28 17:03:32 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -637,7 +637,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.2 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2051,7 +2051,9 @@ sub get_kreuzung {
 			    };
     header(%header_args);
 
-    if (!$start_c || !$ziel_c || (@via_coords && !$via_c)) {
+    if ((!$start_c && @start_coords != 1) ||
+	(!$ziel_c  && @ziel_coords != 1) ||
+	(@via_coords && !$via_c)) {
 	print "Genaue Kreuzung angeben:<p>\n";
     }
 
@@ -2259,13 +2261,8 @@ sub set_cookie {
 	);
 }
 
-my $default_speed;
-my $default_cat;
-my $default_quality;
-my $default_ampel;
-my $default_routen;
-my $default_green;
-my $default_winter;
+use vars qw($default_speed $default_cat $default_quality
+	    $default_ampel $default_routen $default_green $default_winter);
 
 sub get_settings_defaults {
     my %c = get_cookie();
@@ -2378,7 +2375,7 @@ EOF
 <option @{[ $winter_checked->("WI1") ]}>schwach
 <option @{[ $winter_checked->("WI2") ]}>stark
 </select></td>
- <td style="vertical-align:bottom"><small><a href="#" onclick="show_info('winter_optimization'); return false;">Was ist das?</a></small></td>
+ <td style="vertical-align:bottom"><span class="experimental">Experimentell</span><small><a href="#" onclick="show_info('winter_optimization'); return false;">Was ist das?</a></small></td>
 </tr>
 EOF
     }
@@ -3097,7 +3094,7 @@ sub search_coord {
     }
 
  OUTPUT_DISPATCHER:
-    if ($output_as =~ /^(xml|yaml|yaml-short|perldump)$/) {
+    if (defined $output_as && $output_as =~ /^(xml|yaml|yaml-short|perldump)$/) {
 	require Karte;
 	Karte::preload(qw(Polar Standard));
 	my $res = {
@@ -3970,17 +3967,18 @@ sub draw_route {
 	local $SIG{'__DIE__'};
 	require BBBikeDraw;
 	BBBikeDraw->VERSION(2.26);
-	$draw = new_from_cgi BBBikeDraw $q,
-	    MakeNet => \&make_netz;
+	$draw = BBBikeDraw->new_from_cgi($q,
+					 MakeNet => \&make_netz
+					);
 	die $@ if !$draw;
     };
     if ($@) {
-	my $err = $@;
+	my $err = "Fehler in BBBikeDraw: $@";
 	http_header(-type => 'text/html',
 		    @no_cache,
 		   );
-	print "<body>Fehler in BBBikeDraw: $err</body>";
-	my_exit 0;
+	print "<body>$err</body>";
+	die $err;
     }
 
     if (!$header_written && !$draw->module_handles_all_cgi) {
@@ -4101,7 +4099,7 @@ sub draw_map {
 	    } elsif ($detailmap_module) {
 		$q->param('module', $detailmap_module);
 	    }
-	    my $draw = new_from_cgi BBBikeDraw($q, Fh => \*IMG);
+	    my $draw = BBBikeDraw->new_from_cgi($q, Fh => \*IMG);
 	    $draw->set_dimension(@dim);
 	    $draw->create_transpose();
 	    print "Create $img_file...\n" if $args{-logging};
@@ -4262,8 +4260,8 @@ sub get_streets {
 	     ($scope eq 'wideregion' ? "landstrassen2" : ()),
 	    );
 
+    my $use_cooked_street_data = $use_cooked_street_data;
     do {
-	my $use_cooked_street_data = $use_cooked_street_data;
 	my @f = @f;
 	if ($use_cooked_street_data) {
 	    @f = map { "$_-cooked" } @f;
@@ -4687,7 +4685,7 @@ sub header {
 	     -lang => 'de-DE',
 	     -BGCOLOR => '#ffffff',
 	     ($use_background_image && !$printmode ? (-BACKGROUND => "$bbbike_images/bg.jpg") : ()),
-	     -meta=>{'keywords'=>'berlin fahrrad route bike karte suche cycling route routing routenplaner fahrradroutenplaner radroutenplaner',
+	     -meta=>{'keywords'=>'berlin fahrrad route bike karte suche cycling route routing routenplaner routenplanung fahrradroutenplaner radroutenplaner',
 		     'copyright'=>'(c) 1998-2004 Slaven Rezic',
 		    },
 	     -author => $BBBike::EMAIL,
@@ -5388,7 +5386,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/12/27 23:21:46 $';
+    my $cgi_date = '$Date: 2004/12/28 17:03:32 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

@@ -980,7 +980,7 @@ userdel	q4 32100,18012 31887,17453
 EOF
      },
      { from  => 1102981474, # 2004-12-14 00:44
-       until => 1107212399, # 2005-01-31 23:59
+       until => 1107212399, # 2005-01-31 23:59, andere Quelle: 2005-02-28
        text  => 'Naumannstr. (Schöneberg) in beiden Richtungen zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt (bis Ende 01.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -1299,6 +1299,31 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -26784,5756 -26840,5684
+EOF
+     },
+     { from  => 1104123600, # 2004-12-27 06:00
+       until => 1104692400, # 2005-01-02 20:00
+       text  => 'Straße des 17. Juni zwischen Bachstraße und Ebertstraße Silvester-Party, Straße gesperrt, Dauer: 28.12.2004, 06:00 Uhr bis 02.01.2005, 20:00 Uhr',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 8214,12205 8063,12182
+userdel	q4 8214,12205 8515,12242
+userdel	q4 6653,12067 6642,12010
+userdel	q4 6685,11954 6744,11936
+userdel	q4 8610,12254 8515,12242
+userdel	q4 7816,12150 8063,12182
+userdel	q4 7816,12150 7383,12095
+userdel	q4 6744,11936 6809,11979
+userdel	q4 5771,11887 5901,11902
+userdel	q4 6809,11979 6828,12031
+userdel	q4 8539,12286 8515,12242
+userdel	q4 6828,12031 7383,12095
+userdel	q4 6828,12031 6799,12083
+userdel	q4 6642,12010 5901,11902
+userdel	q4 6642,12010 6685,11954
+userdel	q4 8600,12165 8515,12242
+userdel	q4 6725,12113 6653,12067
+userdel	q4 6799,12083 6725,12113
 EOF
      },
     );

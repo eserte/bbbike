@@ -58,3 +58,12 @@ a.ms:visited { color:#333333; }
 }
 
 .ftr  { text-align:center; background-color: #ffcc66; padding: 3; }
+
+.experimental {
+  border:1px red solid;
+  color:red;
+  padding:2px;
+  margin:0px 8px 0px 8px;
+  background-color:yellow;
+  font-size:small;
+}

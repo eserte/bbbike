@@ -2,18 +2,19 @@
 # -*- perl -*-
 
 #
-# $Id: plzlogfile.t,v 1.9 2004/12/05 00:11:33 eserte Exp $
+# $Id: plzlogfile.t,v 1.10 2004/12/28 22:56:19 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
 
 use FindBin;
-use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../data", "$FindBin::RealBin/../lib");
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../data", "$FindBin::RealBin/../lib", $FindBin::RealBin);
 use PLZ;
 use PLZ::Multi;
 use Getopt::Long;
 use CGI;
+use BBBikeTest;
 
 BEGIN {
     if (!eval q{
@@ -31,10 +32,6 @@ BEGIN { plan tests => 1 }
 
 my $doit;
 my $hnr;
-# Old logfile
-#my $logfile = "$ENV{HOME}/www/log/radzeit.de-access_log";
-# New logfile since 2004-09-28 ca.
-my $logfile = "$ENV{HOME}/www/log/radzeit.combined_log";
 my $seek = 0;
 my $potsdam = 1;
 my $extern = 1;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.pl,v 1.19 2003/10/07 22:52:51 eserte Exp $
+# $Id: bbbikedraw.pl,v 1.20 2004/12/29 17:42:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -174,59 +174,11 @@ if (defined $custom_places) {
     if ($use_mapserver) {
 	warn "-customplaces not available for -mapserver";
     } else {
-	draw_custom_places($draw, $custom_places);
+	$draw->draw_custom_places($custom_places);
     }
 }
 $draw->flush;
 close OUT;
-
-# pseudo BBBikeDraw::GD method
-sub draw_custom_places {
-    my($self, $mapping_str) = @_;
-    my(@l) = split /;/, $mapping_str;
-    my %mapping;
-    for (@l) {
-	$_ = [split /,/, $_];
-	$mapping{$_->[0]} = { @{$_}[1..$#$_] };
-    }
-    my $im        = $self->{Image};
-    my $transpose = $self->{Transpose};
-    my $p = $self->_get_orte;
-
-    my $cp = Strassen->new("orte_city");
-    $cp->init;
-    while(1) {
-	my $s = $cp->next_obj;
-	last if $s->is_empty;
-	if ($s->name eq 'Mitte') {
-	    $p->push(["Berlin", $s->coords, $s->category]);
-	}
-    }
-
-    my %ort_font = %{ $self->get_ort_font_mapping };
-    $p->init;
-    $BBBikeDraw::GD::grey_bg = $BBBikeDraw::GD::grey_bg; # peacify -w
-    while(1) {
-	my $s = $p->next_obj;
-	last if $s->is_empty;
-	my $cat = $s->category;
-	my($x0,$y0) = @{$s->coord_as_list(0)};
-	my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
-	my $ort = $s->name;
-	# Anhängsel löschen (z.B. "b. Berlin")
-	$ort =~ s/\|.*$//;
-	next if !exists $mapping{$ort};
-	$im->arc($x, $y, 3, 3, 0, 360, $BBBikeDraw::GD::black);
-	$self->outline_text
-	    ($ort_font{$cat} || &GD::Font::Small,
-	     $x, $y,
-	     BBBikeDraw::GD::patch_string($ort),
-	     $BBBikeDraw::GD::black, $BBBikeDraw::GD::grey_bg,
-	     -padx => 4,
-	     -anchor => $mapping{$ort}->{-anchor},
-	    );
-    }
-}
 
 if (defined $dimfile) {
     require Data::Dumper;

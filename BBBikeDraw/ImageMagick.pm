@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ImageMagick.pm,v 1.8 2003/09/02 22:34:03 eserte Exp eserte $
+# $Id: ImageMagick.pm,v 1.9 2004/12/29 23:34:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -32,7 +32,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -69,14 +69,15 @@ sub init {
     # XXX don't hardcode
     $im->Read('xc:' . $grey_bg);
 
-    if ($self->{Width}) {
-  	if ($self->{Width} <= 200) {
-  	    # scale widths
-  	    while(my($k,$v) = each %width) {
-  		$width{$k} = int($v/2) if $v >= 2;
-  	    }
-  	}
-    }
+# XXX del:
+#     if ($self->{Width}) {
+#   	if ($self->{Width} <= 200) {
+#   	    # scale widths
+#   	    while(my($k,$v) = each %width) {
+#   		$width{$k} = int($v/2) if $v >= 2;
+#   	    }
+#   	}
+#     }
 
     $im->SetAttribute(interlace => 'Plane');
 
@@ -86,6 +87,22 @@ sub init {
 #$self->{StrLabel} = ['str:HH,H'];#XXX
 
     $self;
+}
+
+sub pre_draw {
+    my $self = shift;
+    $self->SUPER::pre_draw;
+
+    my $im = $self->{Image};
+
+    my $scale = ($self->{Xk} > 1 ? 10 : $self->{Xk} * 10);
+    $scale = 0.5 if $scale < 0.5;
+
+    if ($scale != 1) {
+	while(my($k,$v) = each %width) {
+	    $width{$k} = int($v*$scale);
+	}
+    }
 }
 
 # XXX use BBBikeDraw::get_color_values
@@ -138,6 +155,9 @@ sub _colorAllocate {
 
 sub draw_map {
     my $self = shift;
+
+    $self->pre_draw if !$self->{PreDrawCalled};
+
     my $im        = $self->{Image};
     my $transpose = $self->{Transpose};
 
@@ -146,6 +166,7 @@ sub draw_map {
 
     my @netz = @{ $self->{_Net} };
     my @outline_netz = @{ $self->{_OutlineNet} };
+    my @netz_name = @{ $self->{_NetName} };
     my %str_draw = %{ $self->{_StrDraw} };
     my %p_draw = %{ $self->{_PDraw} };
     my $title_draw = $self->{_TitleDraw};
@@ -155,58 +176,73 @@ sub draw_map {
 	$restrict = { map { ($_ => 1) } @{ $self->{Restrict} } };
     }
 
-#      if ($self->{Outline}) {
-#  	foreach my $strecke (@outline_netz) {
-#  	    $strecke->init;
-#  	    while(1) {
-#  		my $s = $strecke->next;
-#  		last if !@{$s->[1]};
-#  		my $cat = $s->[2];
-#  #  	    if ($cat =~ /^F:(.*)/) {
-#  #  		if ($1 eq 'I') {
-#  #  		    next; # Inseln vorerst ignorieren
-#  #  		}
-#  #  		my $c = $color{$1} || $white;
-#  #  		my $poly = ImageMagick::Polygon->new();
-#  #  		for(my $i = 0; $i <= $#{$s->[1]}; $i++) {
-#  #  		    $poly->addPt(&$transpose
-#  #  				 (@{Strassen::to_koord1($s->[1][$i])}));
-#  #  		}
-#  #  		$im->filledPolygon($poly, $c);
-#  #	    } elsif ($cat !~ /^[SRU]0$/) { # Ausnahmen: in Bau
-#  		next if $restrict && !$restrict->{$cat};
-#  	        next if (!$outline_brush{$cat});
-#  		my $color;
-#  	        $im->setBrush($outline_brush{$cat});
-#  		$color = ImageMagick::gdBrushed();
-#  		for(my $i = 0; $i < $#{$s->[1]}; $i++) {
-#  		    my($x1, $y1, $x2, $y2) =
-#  		      (@{Strassen::to_koord1($s->[1][$i])},
-#  		       @{Strassen::to_koord1($s->[1][$i+1])});
-#  		    # XXX evtl. aus Performancegründen testen, ob
-#  		    # überhaupt im Zeichenbereich.
-#  		    # Evtl. eine XS-Funktion für diese Schleife
-#  		    # schreiben?
-#  		    my($x1t, $y1t, $x2t, $y2t) = (&$transpose($x1, $y1),
-#  						  &$transpose($x2, $y2));
-#  		    $im->line($x1t, $y1t, $x2t, $y2t, $color);
+    if ($self->{Outline}) {
+ 	foreach my $strecke (@outline_netz) {
+ 	    $strecke->init;
+ 	    while(1) {
+ 		my $s = $strecke->next;
+ 		last if !@{$s->[1]};
+ 		my $cat = $s->[2];
+# XXX what about outlined areas?
+#  	    if ($cat =~ /^F:(.*)/) {
+#  		if ($1 eq 'I') {
+#  		    next; # Inseln vorerst ignorieren
 #  		}
-#  	    }
-#  	}
-#      }
+#  		my $c = $color{$1} || $white;
+#  		my $poly = ImageMagick::Polygon->new();
+#  		for(my $i = 0; $i <= $#{$s->[1]}; $i++) {
+#  		    $poly->addPt(&$transpose
+#  				 (@{Strassen::to_koord1($s->[1][$i])}));
+#  		}
+#  		$im->filledPolygon($poly, $c);
+#	    } elsif ($cat !~ /^[SRU]0$/) { # Ausnahmen: in Bau
+ 		next if $restrict && !$restrict->{$cat};
+ 		my $color = $outline_color{$cat};
+		next if !$color;
+		my $width = defined $width{$cat} ? $width{$cat} : 1;
+ 		for(my $i = 0; $i < $#{$s->[1]}; $i++) {
+ 		    my($x1, $y1, $x2, $y2) =
+ 		      (@{Strassen::to_koord1($s->[1][$i])},
+ 		       @{Strassen::to_koord1($s->[1][$i+1])});
+#XXX z.Zt. nicht korrekt, weil die bbox nicht anhand der Aspect-Beibehaltung
+# des Bildes nicht korrigiert wird. Siehe auch BBBikeDraw::create_transpose
+#XXX das stimmt nicht mehr
+		    next if !VectorUtil::vector_in_grid
+			($x1,$y1,$x2,$y2,
+			 $self->{Min_x},$self->{Min_y},
+			 $self->{Max_x},$self->{Max_y},
+			);
+ 		    my($x1t, $y1t, $x2t, $y2t) = (&$transpose($x1, $y1),
+ 						  &$transpose($x2, $y2));
+ 		    $im->Draw(primitive=>'line',
+			      points => "$x1t,$y1t,$x2t,$y2t",
+			      strokewidth => $width+2,
+			      stroke => $color);
+ 		}
+ 	    }
+ 	}
+    }
 
-    foreach my $strecke (@netz) {
+    foreach my $strecke_i (0 .. $#netz) {
+	my $strecke = $netz[$strecke_i];
+	my $strecke_name = $netz_name[$strecke_i];
 	my $flaechen_pass = $self->{FlaechenPass};
-	$strecke->init;
-	while(1) {
-	    my $s = $strecke->next;
-	    last if !@{$s->[1]};
+
+	for my $s ($self->get_street_records_in_bbox($strecke)) {
+#XXX del:
+#     foreach my $strecke (@netz) {
+# 	my $flaechen_pass = $self->{FlaechenPass};
+# 	$strecke->init;
+# 	while(1) {
+# 	    my $s = $strecke->next;
+# 	    last if !@{$s->[1]};
 	    my $cat = $s->[2];
 	    if ($cat =~ /^F:(.*)/) {
 		my $cat = $1;
-#XXX NYI
-#		next if (($flaechen_pass == 1 && $cat eq 'F:Pabove') ||
-#			 ($flaechen_pass == 2 && $cat ne 'F:Pabove'));
+		next if ($strecke_name eq 'flaechen' &&
+			 (($flaechen_pass == 1 && $cat eq 'Pabove') ||
+			  ($flaechen_pass == 2 && $cat ne 'Pabove'))
+			);
 		my $c = defined $color{$cat} ? $color{$cat} : $white;
 		my $oc = ($self->{Outline} && defined $outline_color{$cat} ?
 			  $outline_color{$cat} : $c);
@@ -233,6 +269,7 @@ sub draw_map {
 		    # schreiben?
 #XXX z.Zt. nicht korrekt, weil die bbox nicht anhand der Aspect-Beibehaltung
 # des Bildes nicht korrigiert wird. Siehe auch BBBikeDraw::create_transpose
+#XXX das stimmt nicht mehr
 		    next if !VectorUtil::vector_in_grid
 			($x1,$y1,$x2,$y2,
 			 $self->{Min_x},$self->{Min_y},
@@ -247,8 +284,9 @@ sub draw_map {
 		}
 	    }
 	}
-	if ($strecke->{AfterHook}) {
-	    $strecke->{AfterHook}->();
+
+	if ($strecke_name eq 'flaechen') {
+	    $self->{FlaechenPass}++;
 	}
     }
 

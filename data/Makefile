@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.36 2004/12/27 23:27:58 eserte Exp $
+# $Id: Makefile,v 2.37 2004/12/29 21:48:52 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -77,6 +77,11 @@ COORDS_DATA_SORT_OPTS=
 
 all:	targets check .modified .rsync_include make_misc
 
+# These targets have to be rebuild once a day
+.BEGIN:
+	@perl -e 'for (@ARGV) { do { unlink($$_) and warn "Removed $$_\n" } if (-M $$_ >= 1) }' \
+		.check_bbbike-temp-blockings-optimized .check_dates
+
 targets:	${TARGETS}
 
 targets-clean:
@@ -137,7 +142,8 @@ $f:	${_f_raw_${f}} inaccessible_landstrassen
 	perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib -MStrassen -e \
 	    '$$s = Strassen->new($$ARGV[0]); $$ina = Strassen->new($$ARGV[1]); $$s->new_with_removed_points($$ina)->write("-")' \
 	    ${_f_raw_${f}} inaccessible_landstrassen \
-	    > $@ || rm -f $@
+	    > $@~
+	mv $@~ $@
 	-@${READONLY} $@
 .endfor
 
@@ -420,7 +426,7 @@ exits:	exits-orig
 # ::inwork => will maybe change to :inwork
 #XXX in "-orig" transition: handicap_s-orig and gesperrt-orig always need to have the same base map!
 fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
-		.fragezeichen-other-source Makefile \
+		.fragezeichen-other-source \
 		${SOURCE_TARGETS:S|^|.fragezeichen-|}
 	-@$(WRITEABLE) $@
 	cat fragezeichen-orig |\
@@ -458,7 +464,22 @@ ${PERSISTENTTMPDIR}/strassen_in_planung.bbd:	fragezeichen-orig
 # But O_RDWR does not work if the file is read-only, so still use O_RDONLY
 # Now using Tie::File, which works everywhere
 .fragezeichen-other-source:	${DATADIR}/qualitaet_s-orig ${DATADIR}/qualitaet_l-orig
-	cd ${DATADIR} && perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib -MStrassen::Core -MTie::File -MFcntl=O_RDONLY -e 'for my $$file (qw(qualitaet_s-orig qualitaet_l-orig)) { tie @l, "Tie::File", $$file, mode => O_RDONLY or die qq{Cannot open $$file: $$!}; for my $$i (1 .. $$#l) { if ($$l[$$i-1] =~ /\#:\s+unverified_by\s+(.*?):?\s*$$/i) { my $$comment = "laut $$1"; my $$x = Strassen::parse($$l[$$i]); $$x->[Strassen::NAME()] .= " ($$comment)"; $$x->[Strassen::CAT()] = "?"; print Strassen::arr2line2($$x),"\n" } } }' > /tmp/other-source-fragezeichen-orig
+	cd ${DATADIR} && \
+	    perl -I${BBBIKEDIR} -I${BBBIKEDIR}/lib \
+		-MStrassen::Core -MTie::File -MFcntl=O_RDONLY \
+		-e 'for my $$file (qw(qualitaet_s-orig qualitaet_l-orig)) {\
+			tie @l, "Tie::File", $$file, mode => O_RDONLY or \
+		    	    die qq{Cannot open $$file: $$!};\
+			for my $$i (1 .. $$#l) {\
+			    if ($$l[$$i-1] =~ /\#:\s+unverified_by\s+(.*?):?\s*$$/i) {\
+				my $$comment = "laut $$1";\
+				my $$x = Strassen::parse($$l[$$i]);\
+				$$x->[Strassen::NAME()] .= " ($$comment)";\
+				$$x->[Strassen::CAT()] = "?";\
+				print Strassen::arr2line2($$x),"\n"\
+			    }\
+			}\
+		    }' > /tmp/other-source-fragezeichen-orig
 	${CONVERT2HAFAS} -basefile ${DATADIR}/qualitaet_s-orig /tmp/other-source-fragezeichen-orig > $@
 
 PREFIXMAP=sperr=SP,kopfstein=KP,qualit‰t=QU,m‰ﬂig.geeignet=QU,radweg=RW,benutzungspflich=RW,bau=BA,vorfahrt=VF,name=NA,bezeichn=NA,vorfahrt=VF,ampel=AM
@@ -467,7 +488,7 @@ ${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt:	fragezeichen Makefile
 	${MISCSRCDIR}/bbd2gpsman.pl -filter nearby=200 \
 	    -prefix XXX -match name \
 	    -prefixmap ${PREFIXMAP} \
-	    -symbol danger < $> > $@
+	    -symbol danger < fragezeichen > $@
 	@echo gpsman with file $@
 
 .PHONY: /tmp/upload-restricted-fragezeichen.wpt
@@ -493,13 +514,15 @@ ${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt:	fragezeichen Makefile
 	    RESTRICT_BBOX="-8250,2025,-15000,-2675 16500,15375,4625,8125"
 	cp -pf /tmp/upload-restricted-fragezeichen.wpt $@
 
-# XXX This should be updated at least check once a day
-temp_blockings/bbbike-temp-blockings-optimized.pl:	temp_blockings/bbbike-temp-blockings.pl
+temp_blockings/bbbike-temp-blockings-optimized.pl:	temp_blockings/bbbike-temp-blockings.pl .check_bbbike-temp-blockings-optimized
 	-@$(WRITEABLE) $@
 	$(MISCSRCDIR)/check_bbbike_temp_blockings \
 	    -action output_future \
 	    -action dump_future_as_perl > $@
+	touch .check_bbbike-temp-blockings-optimized
 	-@$(READONLY) $@
+
+.OPTIONAL: .check_bbbike-temp-blockings-optimized
 
 # It is legal for fragezeichen points to not be on strassen, so this is
 # only informative...
@@ -529,9 +552,6 @@ force_check: remove_checks check
 
 remove_checks:
 	rm -f .check_*
-
-remove_nextruns:
-	rm -f .nextrun_*
 
 # checks
 check:	report-checks do-checks

@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.104 2004/12/04 20:26:12 eserte Exp $
+# $Id: Makefile.PL,v 1.105 2004/12/30 01:50:29 eserte Exp $
 
 use 5.005;
 
@@ -85,6 +85,8 @@ use constant REQTABLE_LONGDESC=> 5;
    'Für das Problem des Handlungsreisenden'],
   [qw/PDF::Create	0.06	all	0	base/,
    'Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download)'],
+  [qw/Font::Metrics::Helvetica	0	all	0	base/,
+   'Für die Reparatur der Zeichenbreitentabellen in PDF::Create'],
   #in dist: [qw/BikePower	0	all	0	base/],
 
   [qw/BSD::Resource	0	unix	0	base/], # really only BSD

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.8 2004/08/01 17:38:47 eserte Exp eserte $
+# $Id: Strasse.pm,v 1.9 2004/12/29 23:32:36 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -104,6 +104,8 @@ sub short {
 	$strname =~ s/(a)llee/$1$dot/i;
 	$strname =~ s/\b(k)leine[srnm]?\b/$1l$dot/i;
 	$strname =~ s/\b(g)ro(ß|ss)e[srnm]?\b/$1r$dot/i;
+	$strname =~ s/Rathaus\s+/Rath./i;
+	$strname =~ s/b[eu]rg$/b\'g/;
     } elsif ($level > 1) {
 	$strname =~ s/(s)tr\./$1tr/i;
 	$strname =~ s/(p)l\./$1l/i;

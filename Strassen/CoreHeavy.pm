@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.22 2004/11/28 23:59:10 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.23 2004/12/28 22:54:37 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -626,6 +626,7 @@ sub bbox {
 # an array reference of categories. Lower categories should be first.
 sub sort_by_cat {
     my($self, $catref, %args) = @_;
+    $catref = $self->default_cat_stack_mapping if !$catref;
     my %catval;
     if (ref $catref eq 'HASH') {
 	%catval = %$catref;
@@ -651,6 +652,41 @@ sub sort_by_cat {
 	       ]
 	} @{ $self->{Data} };
 }
+
+sub sort_records_by_cat {
+    my($self, $records, $catref, %args) = @_;
+    $catref = $self->default_cat_stack_mapping if !$catref;
+    return map  { $_->[1] }
+	   sort { $a->[0] <=> $b->[0] }
+	   map  { [(exists $catref->{$_->[CAT]} ? $catref->{$_->[CAT]} : 9999),
+		   $_
+		  ]
+	      } @$records;
+}
+
+sub default_cat_stack_mapping {
+    return {'F:W'          => 3, # Gewässer
+	    'W'            => 3,
+	    'W1'           => 3,
+	    'W2'           => 3,
+	    'F:I'          => 6, # Insel
+	    'F:P'          => 15, # Parks
+
+	    # XXX This should be changed to real categories
+	    'F:#c08080'    => 10, # bebaute Flächen
+	    'F:violet'     => 20, # Industrie
+	    'F:DarkViolet' => 21, # Hafen oder Industrie
+	    'F:#46b47b'    => 13, # Wald
+
+	    'B'            => 20,
+	    'HH'           => 15,
+	    'H'            => 10,
+	    'N'            => 5,
+	    'NN'           => 1,
+	    'Pl'	    => 0,
+	   };
+}
+
 
 sub is_current {
     my($self) = @_;

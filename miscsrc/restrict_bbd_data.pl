@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: restrict_bbd_data.pl,v 2.2 2003/06/29 22:23:02 eserte Exp eserte $
+# $Id: restrict_bbd_data.pl,v 2.3 2004/12/28 22:57:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.

@@ -1,14 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 1.7 2003/12/22 19:46:22 eserte Exp $
+# $Id: PDF.pm,v 1.8 2004/12/28 22:48:58 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2004 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
+# Mail: eserte@users.sourceforge.net
 # WWW:  http://bbbike.sourceforge.net
 #
 
@@ -16,7 +16,7 @@ package Route::PDF;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my $class = shift;
@@ -45,6 +45,7 @@ sub new_pdf {
     }
     require PDF::Create;
     PDF::Create->VERSION(0.06);
+    require PDF::Create::MyPage;
     my $pdf = PDF::Create->new
 	((defined $filename ?
 	  ('filename' => $filename) :
@@ -80,7 +81,7 @@ sub output {
     if ($out->{Title}) {
 	my $font_size = 18;
 	my @str = split / /, $out->{Title};
-  	my $width = $page->string_width($font, join(" ", @str))*$font_size;
+  	my $width = $page->my_string_width($font, join(" ", @str))*$font_size;
 	if ($width > $page_width-40) {
 	    $page->stringc($font, $font_size, $page_width/2, $y, join(" ", @str[0 .. $#str/2])); $y -= 18+3;
 	    $page->stringc($font, $font_size, $page_width/2, $y, join(" ", @str[$#str/2+1 .. $#str])); $y -= 18+3;
@@ -98,7 +99,7 @@ sub output {
 	for my $col (@$line) {
 	    $col = "" if !defined $col;
 	    my $font = ($col_i == 2 ? $bold_font : $font);
-	    my $this_width = $page->string_width($font, $col)*$font_size;
+	    my $this_width = $page->my_string_width($font, $col)*$font_size;
 	    if (!defined $max_width[$col_i] || $max_width[$col_i] < $this_width) {
 		$max_width[$col_i] = $this_width;
 	    }
@@ -115,7 +116,7 @@ sub output {
 	for my $col (@$line) {
 	    $col = "" if !defined $col;
 	    my $font = ($col_i == 2 ? $bold_font : $font);
-	    my $width = $page->string_width($font, $col)*$font_size;
+	    my $width = $page->my_string_width($font, $col)*$font_size;
 	    if ($x + $width > $page_width-30) {
 		#XXX TODO warn "wrap!";
 	    }

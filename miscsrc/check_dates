@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_dates,v 1.9 2004/12/06 20:40:27 eserte Exp $
+# $Id: check_dates,v 1.10 2004/12/29 21:47:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -40,7 +40,9 @@ if (!GetOptions("filter!" => \$do_filter,
     die <<EOF;
 usage: $0 [-filter] [-today YYYY-MM-SS] [-nextrunfile file] [-reldays days] files
 
--nextrunfile is not implented (and what's it anyway?)
+-nextrunfile is not implented. The date of this file was supposed to be used as the date when
+this script should be run the next time (because it's expensive, and it's needed seldomly). The
+problem is now solved by using a special rule in data/Makefile
 EOF
 }
 

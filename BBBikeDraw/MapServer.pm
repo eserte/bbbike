@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.14 2004/12/06 20:38:00 eserte Exp $
+# $Id: MapServer.pm,v 1.14 2004/12/06 20:38:00 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.

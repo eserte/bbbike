@@ -198,6 +198,7 @@ port/lsm/mklsm.pl
 port/rpm/bbbike.rpm.spec
 port/rpm/mkrpm.pl
 t/*.pl
+t/*.pm
 t/*.t
 t/Makefile
 t/cgiinfo.cgi

@@ -14,12 +14,18 @@ Legend:
 
 =over
 
+=item * (H1)
+
+Hausnummern. Für wichtige lange Straßen erfassen. In der
+Kreuzungsliste beim CGI dann neben den Straßennamen anzeigen. Wie in
+der Perl/Tk-Karte darstellen? Vielleicht nur bei kleinen Massstaeben?
+
 =item * (H2)
 
 Optimize SRTProgress: only hide canvas if first progress drawing is
-necessary. Adjust progress drawing to be specified in time intervals
-(alternatively). This would reduce the need of hiding/displaying the
-canvas in short or empty redraws.
+necessary (already done, check). Adjust progress drawing to be
+specified in time intervals (alternatively). This would reduce the
+need of hiding/displaying the canvas in short or empty redraws.
 
 Research for alternative SRTProgress implementation: pre-forked
 stand-alone MainWindow, or submit a TIP with a per-widget update (in
@@ -29,12 +35,6 @@ Perl/Tk: updateWidget) method.
 
 The -lazy option seems to cause a big memory leak. (Hmmm, I cannot
 reproduce this one anymore...)
-
-=item * (M2)
-
-BBBikeXS, fast_plot_point: use main::get_symbol_scale() to get name of
-ampel/andreaskr/etc. images. => done, but I get strange warnings, see
-TODOs in BBBikeXS/t/base.t...
 
 =item * (H2)
 
@@ -87,7 +87,12 @@ Optional eins oder beides zusammen.
 =item * (M2)
 
 Update E<uuml>ber das Internet: rsync-UnterstE<uuml>tzung und die
-Alternative CVS testen.
+Alternative CVS testen. rsync ist vielleicht nicht so gut, weil ein
+rsyncd irgendwo benötigt wird und rsyncd nicht das Sicherste der Welt
+ist. CVS wäre besser, noch besser, wenn es eine abgespeckte
+Client-Variante in Perl gäbe (VCS-LibCVS scheint auch brauchbar zu
+sein), die man ins Windows-distfile dazupacken könnte. CVS ist unter
+Unix meist vorhanden.
 
 =item * (M1)
 
@@ -953,13 +958,6 @@ Edit-Modus funktioniert.
 Drucken: optional auch die Routenansicht/PDF drucken, mit/ohne
 Routenbeschreibung. 
 
-=item * (H3)
-
-Bessere Platzierung der Labels in der PDF-Ausgabe. U- und
-S-Bahn-Symbole sind suboptimal, evtl. GIFs stattdessen verwenden. Wenn
-Platz ist, könnten auch die Bahnhöfe mit Labels versehen werden. Wenn
-ich rotierte Fonts zeichnen kann, dann auch wichtige Straßen.
-
 =item * (M3)
 
 SehenswE<uuml>rdigkeiten: eine neue Kategorie für
@@ -1103,13 +1101,19 @@ nachzulesen.
 
  Fahrplanaenderungen Dezember 2003 bei RE/RB beachten!
 
- alle Brücken aus plaetze => brunnels überführen
  brunnels mit nicht-leeren NAME suchbar machen
 
  S-Bahn: N-S-Tunnel als brunnel markieren
  U-Bahn: Negativliste erstellen, alle Strecke, die nicht enthalten
  sind, sind automatisch als Tunnel markieren. U1 nach Krumme Lanke =
  tunnel.
+
+ brunnels sollten bei sort_by_cat verwendet werden können,
+ insbesondere für BBBikeDraw::GD und ::PDF
+
+	      \__/
+ brunnels so:  __  zeichnen
+              /  \
 
 =item * Funktionieren die Aufzüge bei der S-Bahn? Das erfährt man
 E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.
@@ -1334,6 +1338,13 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (M1)
+
+CSS-Manipulation (erstmal nur bei Netscape):
+
+* wenn PDF, berliner-stadtplan.com ausgewählt wird, dann Größen etc.
+disabled machen
+
 =item * (E2)
 
 Info page: link to screenshot html page instead of single screenshot
@@ -1371,13 +1382,6 @@ Dokumentieren (in ?info=1): Beschreibung der Sucheinstellungen
 Optional mehr Informationen in der Routenbeschreibung aufnehmen, z.B.
 Steigungen, SehenswE<uuml>rdigkeiten in der NE<auml>he,
 U/S-Bahnstationen ... Kommentare sind schon drinnen.
-
-=item * (M3)
-
-In BBBikeDraw/GD.pm nach Kommentar bei AREA suchen: Probleme mit den
-verschiedenen Netscape-Versionen. Beim Galeon scheint man nicht auf
-das Area-Polygon klicken zu koennen, sondern nur in der Naehe davon.
-Evtl. das gleiche Problem bei allen Gecko-Browsern.
 
 =item * (E3)
 
@@ -1437,13 +1441,161 @@ leaving the entry.
 
 =head2 BBBikeDraw
 
+=head3 BBBikeDraw::GD
+
 =over
+
+=item * (M5)
+
+Was sind die gepunkteten Linien bei der MapServer-Ausgabe von
+bbbikedraw.t? -> Steigungen! Nicht bzw. schöner zeichnen! Siehe auch
+brb.map-tpl, mount.
+
+=item * (M5)
+
+Route wird bei bbbikedraw.t nicht gezeichnet?
+
+=item * (M1)
+
+Wird ImageSuffix irgendwo verwendet? Besser ImageType stattdessen
+verwenden, dann kann ich auch bei bbbikedraw MapServer/gif oder
+MapServer/pdf sagen.
+
+=back
+
+=head3 BBBikeDraw::GD
+
+=over
+
+=item * (M2)
+
+Falls die Routenliste nur aus einem Punkt besteht (Beispiel:
+?center=;interactive=Grafik%20zeichnen;imagetype=png;coords=11824%2C8995;startname=Hermannplatz;zielname=Karl-Marx-Str.;geometry=640x480;draw=str;draw=title;scope=),
+dann bbox automatisch auf eine Mindestgröße vergrößern.
+
+=item * (M3)
+
+In BBBikeDraw/GD.pm nach Kommentar bei AREA suchen: Probleme mit den
+verschiedenen Netscape-Versionen. Beim Galeon scheint man nicht auf
+das Area-Polygon klicken zu koennen, sondern nur in der Naehe davon.
+Evtl. das gleiche Problem bei allen Gecko-Browsern.
+
+=item * (H3)
+
+Auch hier könnte man Labels intelligent positionieren, siehe unten bei
+BBBikeDraw::PDF. VectorUtil::intersect_rectangles wird hier aber schon
+genutzt... (Werden auf radzeit.de die XS-Versionen genutzt? Beim
+syncen kompilieren!)
+
+=item * (M2)
+
+Brushes für die Linienbreite vielleicht rund statt quadratisch machen?
+
+=item * (M1)
+
+Titel: E<quot>->E<quot> schöner E<quot>malenE<quot> statt Text
+verwenden
+
+=item * (M3)
+
+Bahnhofsnamenpositionierung: vertikal zentrieren (ist zurzeit nicht,
+sieht man, wenn die Schrift groß wird).
+
+=item * (H2)
+
+Routenbrush: kann man transparente Pixel einfügen, also rot -
+transparent - blau - transparent? Ebenfalls zu übelegen bei
+BBBikeDraw::PDF.
+
+=item * (M4)
+
+bbbikedraw.t-Test: Werden Routennamen gezeichent? Wenn nein, dann
+einschalten!
+
+=item * (E2)
+
+E<quot>(A -) BE<quot> zu E<quot>-> BE<quot> optimieren
+
+=back
+
+=head3 BBBikeDraw::PDF
+
+=over
+
+=item * (H3)
+
+Bei Bedarf in mehrere Seiten aufteilen?
+
+=item * (M2)
+
+Überprüfen, ob der Massstab noch auf die Karte passt, ansonsten von
+1km verkleinern. Der entsprechende Code müsste auch für andere
+BBBikeDraw::*-Module verwendet werden.
+
+=item * (H3)
+
+Straßenbeschreibung: Labels intelligent positionieren. Das
+::PDF-Objekt führt eine Liste der belegten BBoxes. Jede neue
+potentielle Text-BBBox wird dagegen geprüft. Auch prüfen, ob man sich
+innerhalb der PageBBox befindet. Falls kein Platz ist, werden zunächst
+die Himmerlsrichtungen versucht und dann per Verbindungslinie eine
+entferntere Position. Kann man Texte auch rotieren? Besser:
+feststellen, wo sich die Route befindet (Pseudo-BBox dafür erstellen?)
+und Überlappungen der Route somit vermeiden.
+
+Oder ganz alternativ: wie sieht die PDF-Unterstützung des Mapservers
+aus?
+
+Weiterhin kann man Strasse::short verwenden, wenn es nicht passt.
+
+=item * (E5)
+
+Überprüfen: wird womöglich eine cooked-Version beim Erstellen des
+PDF-Straßennetzes verwendet?
+
+=item * (M1)
+
+Via im Titel erwähnen: Start -> Goal über Via. Dazu muesste vianame im
+CGI übermittelt werden.
+
+=item * (H2)
+
+Untersuchen, ob man mit 8-Bit-GIFs und PDF::Create arbeiten kann. Wenn
+ja, dann 8-Bit-Varianten für U/S-Bahnsymbole erstellen. (Oder
+vielleicht liegt es an der Transparenz?)
+
+=item * (M5)
+
+Check: wird das richtige gemacht, wenn die Route Landscape und die
+Routenliste weiterhin Portrait ist? Veraenderungen bei Route::PDF
+notwendig?
+
+=item * (E2)
+
+E<quot>(A -) BE<quot> zu E<quot>-> BE<quot> optimieren (mit leftarrow)
 
 =item * (H4)
 
 Acrobat Reader often shows an error message for
 BBBikeDraw/PDF.pm-created files. No problems with xpdf and other
-viewers.
+viewers. (Not reproducible anymore)
+
+=item * (H3)
+
+Bessere Platzierung der Labels in der PDF-Ausgabe. U- und
+S-Bahn-Symbole sind suboptimal, evtl. GIFs stattdessen verwenden (geht
+zurzeit nicht, weil PDF::Create anscheinend GIFs mit 8 Bit Farbtiefe
+erwartet (extra dafuer erzeugen?). JPEGs gehen, aber ohne Transparenz
+(schlecht für das S-Bahn-Symbol), außerdem geht es nur mit xpdf, aber
+nicht mit acroread). Wenn Platz ist, könnten auch die Bahnhöfe mit
+Labels versehen werden. Wenn ich rotierte Fonts zeichnen kann, dann
+auch wichtige Straßen.
+
+=item * (H1)
+
+Migrate to PDF::API2 (beginnings in BBBikeDraw::PDF2, Route::PDF2
+should also be created) or another pdf package, which is supported (in
+opposite to PDF::Create).
 
 =back
 

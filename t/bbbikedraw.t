@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.10 2004/03/24 23:33:15 eserte Exp eserte $
+# $Id: bbbikedraw.t,v 1.12 2004/12/29 23:33:40 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -32,7 +32,7 @@ BEGIN {
 	exit;
     }
 
-    @modules = qw(GD/png GD/gif GD/jpeg GD::SVG SVG PDF
+    @modules = qw(GD/png GD/gif GD/jpeg GD::SVG SVG PDF PDF2
 		  Imager/png Imager/jpeg MapServer
 		  ImageMagick/png ImageMagick/jpeg);
 }
@@ -67,13 +67,20 @@ if (!GetOptions("display!" => \$display,
 
 @modules = @only_modules if @only_modules;
 
-plan tests => scalar @modules * 4;
+my $tests_per_module = 4;
+
+plan tests => scalar @modules * $tests_per_module;
 
 for my $module (@modules) {
-    eval {
-	draw_map($module);
-    };
-    is($@, "", "Draw with $module");
+ SKIP: {
+	skip("PDF2 is not ready yet", $tests_per_module)
+	    if $module eq 'PDF2';
+
+	eval {
+	    draw_map($module);
+	};
+	is($@, "", "Draw with $module");
+    }
 }
 
 if ($display) {
@@ -96,7 +103,7 @@ sub draw_map {
 	$imagetype = $2;
     } elsif ($module eq 'SVG') {
 	$imagetype = "svg";
-    } elsif ($module eq 'PDF') {
+    } elsif ($module =~ /^PDF2?$/) {
 	$imagetype = "pdf";
     }
 
@@ -109,6 +116,7 @@ sub draw_map {
 	Fh         => $fh,
 	Geometry   => $geometry,
 	Draw       => [@drawtypes],
+	Outline	   => 1,
         Scope      => "city",
         ImageType  => $imagetype,
 	Module     => $module,
@@ -119,7 +127,7 @@ sub draw_map {
     if ($do_slow) {
 	$draw->set_bbox_max(Strassen->new("strassen"));
     } else {
-	$draw->set_bbox(8000,8000,9000,9000);
+	$draw->set_bbox(8134,8581,9450,9718);
     }
     $draw->init;
     $draw->create_transpose(-asstring => 1);
