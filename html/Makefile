@@ -5,7 +5,8 @@
 # XXX don't duplicate, see ../Makefile.PL
 STRPP=	strpp
 # XXX replace with tpage from Template 2.14?
-TPAGE=	mytpage
+#TPAGE=	mytpage
+TPAGE=	tpage
 # XXX get from elsewhere
 CGIDIR?=../cgi
 
