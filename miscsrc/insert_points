@@ -382,6 +382,7 @@ sub process {
 
     } else { # custom_check_files
 	@{$check_files[T_NORMAL]} = @custom_check_files;
+	$noorig_files{$_} = 1 for (@custom_check_files);
 	for (T_NORMAL+1 .. T_MAX) {
 	    @{$check_files[$_]} = ();
 	}

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.28 2004/10/10 22:59:47 eserte Exp eserte $
+# $Id: Makefile,v 2.29 2004/11/09 21:26:01 eserte Exp eserte $
 #
 
 BBBIKEDIR=		..
@@ -30,22 +30,29 @@ COMMENTS_PARTIAL=	comments_cyclepath comments_ferry comments_misc \
 			comments_mount comments_path comments_route \
 			comments_tram comments_kfzverkehr
 
-TARGETS=	strassen plaetze landstrassen landstrassen2 flaechen
-TARGETS+=	wasserstrassen wasserumland wasserumland2
-TARGETS+=	sbahn sbahnhof sbahnhof_bg rbahn rbahnhof
-TARGETS+=	ubahn ubahnhof ubahnhof_bg
-TARGETS+=	faehren hoehe orte orte2 orte_city ampeln ampelschaltung
-TARGETS+=	plz berlin potsdam deutschland
-TARGETS+=	sehenswuerdigkeit obst radwege radwege_exact
-TARGETS+=	qualitaet_s qualitaet_l
-TARGETS+=	handicap_s handicap_l
-TARGETS+=	vorfahrt nolighting
-TARGETS+=	housenumbers green brunnels mount
-TARGETS+=	gesperrt gesperrt_car
+SOURCE_TARGETS=		strassen plaetze landstrassen landstrassen2 flaechen
+SOURCE_TARGETS+=	wasserstrassen wasserumland wasserumland2
+SOURCE_TARGETS+=	sbahn sbahnhof rbahn
+SOURCE_TARGETS+=	ubahn ubahnhof
+SOURCE_TARGETS+=	faehren hoehe orte orte2 orte_city
+SOURCE_TARGETS+=	ampeln ampelschaltung
+SOURCE_TARGETS+=	plz potsdam deutschland
+SOURCE_TARGETS+=	sehenswuerdigkeit obst radwege
+SOURCE_TARGETS+=	qualitaet_s qualitaet_l
+SOURCE_TARGETS+=	handicap_s handicap_l
+SOURCE_TARGETS+=	vorfahrt nolighting
+SOURCE_TARGETS+=	housenumbers green brunnels
+SOURCE_TARGETS+=	gesperrt gesperrt_car
 .for i in u s r
-TARGETS+=	gesperrt_$(i)
+SOURCE_TARGETS+=	gesperrt_$(i)
 .endfor
-TARGETS+=	${COMMENTS_PARTIAL} fragezeichen exits
+SOURCE_TARGETS+=	${COMMENTS_PARTIAL} fragezeichen exits
+
+# These do not have a -orig file of their own
+COMPUTED_TARGETS=	sbahnhof_bg ubahnhof_bg rbahnhof berlin
+COMPUTED_TARGETS+=	radwege_exact mount
+
+TARGETS+=	${SOURCE_TARGETS} ${COMPUTED_TARGETS}
 
 TARGETS_DISABLED=	label relation_gps 
 
@@ -405,11 +412,7 @@ exits:	exits-orig
 #XXX in "-orig" transition: handicap_s-orig and gesperrt-orig always need to have the same base map!
 fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 		.fragezeichen-other-source Makefile \
-		${DATADIR}/handicap_s-orig \
-		${DATADIR}/gesperrt-orig \
-		${DATADIR}/qualitaet_s-orig \
-		${DATADIR}/qualitaet_l-orig \
-		${DATADIR}/brunnels-orig
+		${SOURCE_TARGETS:S|^|.fragezeichen-|}
 	-@$(WRITEABLE) $@
 	cat fragezeichen-orig |\
 	        ${GREPSTRASSEN} -v -sectionrx "projektierte Radstreifen" |\
@@ -422,11 +425,16 @@ fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 	    perl -nle '/(.*\t)(\S+)(.*)/ && !/\b(\d{4}-\d{2}-\d{2}|[0123]?\d\.[01]?\d\.\d{4})\b/ && print "Noch immer? $$1?::inwork$$3"' | \
 	    ${CONVERT2HAFAS} -basefile ${DATADIR}/handicap_s-orig -- - >> $@
 	cat .fragezeichen-other-source >> $@
-	for f in qualitaet_s-orig qualitaet_l-orig brunnels-orig; do \
-	    ${GREPSTRASSEN} -special fragezeichen ${DATADIR}/$$f > /dev/null; \
-	    cat /tmp/fragezeichen_$$f.bbd >> $@; \
-	done
+.for i in ${SOURCE_TARGETS:S|^|.fragezeichen-|}
+	cat $(i) >> $@
+.endfor
 	-@$(READONLY) $@
+
+.for i in ${SOURCE_TARGETS}
+.fragezeichen-$(i):	$(i)-orig
+	${GREPSTRASSEN} -special fragezeichen ${DATADIR}/$(i)-orig > /dev/null
+	cp -f /tmp/fragezeichen_$(i)-orig.bbd $@
+.endfor
 
 /tmp/projektierte_radstreifen.bbd:	fragezeichen-orig
 	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "projektierte Radstreifen" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
