@@ -389,4 +389,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Bergmannstrassenfest, 11.06.2004, 0.00 Uhr bis 13.06.2004, 24.00 Uhr',
        type  => 'handicap',
      },
+     { from  => 1087975800, # 2004-06-23 09:30
+       until => 1088287200, # 2004-06-27 00:00
+       file  => 'csd.bbd',
+       text  => 'CSD am 26.06.2004 von 9.30 Uhr bis 24.00 Uhr',
+       type  => 'gesperrt',
+     },
     );
