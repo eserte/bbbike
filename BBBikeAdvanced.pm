@@ -126,51 +126,111 @@ sub custom_draw_dialog {
 sub custom_draw {
     my $linetype = shift;
     my $abk      = shift or die "Missing abk";
-    my $f        = shift;
+    my $file     = shift;
     my(%args)    = @_;
-    my $draw = eval '\%' . $linetype . "_draw";
-    my $file = eval '\%' . $linetype . "_file";
+    my $draw      = eval '\%' . $linetype . "_draw";
+    my $fileref   = eval '\%' . $linetype . "_file";
     my $name_draw = eval '\%' . $linetype . "_name_draw";
-    if (!defined $f) {
+
+    require File::Basename;
+
+    if (!defined $file) {
 	die "Tk 800 needed"
 	    unless $Tk::VERSION >= 800;
-	$f = $top->getOpenFile
-	    (-filetypes =>
-	     [
-	      # XXX use Strassen->filetypes?
-	      [M"BBD-Dateien", '.bbd'],
-	      [M"BBBike-Route-Dateien", '.bbr'],
-	      [M"ESRI-Shape-Dateien", '.shp'],
-	      [M"MapInfo-Dateien", ['.mif','.MIF']],
-	      ($advanced
-	       ? [M"ARC/DCW/E00-Dateien", ['.e00','.E00']]
-	       : ()
-	      ),
-	      [M"Alle Dateien", '*'],
-	     ]
-	    );
-	if (!defined $f) {
+	my $get_file = sub {
+	    $file = $top->getOpenFile
+		(-filetypes =>
+		 [
+		  # XXX use Strassen->filetypes?
+		  [M"BBD-Dateien", '.bbd'],
+		  [M"BBBike-Route-Dateien", '.bbr'],
+		  [M"ESRI-Shape-Dateien", '.shp'],
+		  [M"MapInfo-Dateien", ['.mif','.MIF']],
+		  ($advanced
+		   ? [M"ARC/DCW/E00-Dateien", ['.e00','.E00']]
+		   : ()
+		  ),
+		  [M"Alle Dateien", '*'],
+		 ],
+		 (defined $file ? (-initialdir => $file =~ m{/$} ? $file : File::Basename::dirname($file)) : ()),
+		);
+	};
+
+	if (eval { require Tk::PathEntry; 1 }) {
+	    my $t = $top->Toplevel;
+	    $t->title(M("Zusätzlich zeichnen"));
+	    $t->transient($top) if $transient;
+
+	    my $f;
+	    $f = $t->Frame->pack(-fill => "x");
+	    my $pe;
+	    Tk::grid($pe = $f->PathEntry(-textvariable => \$file),
+		     $f->Button(-image => $t->Getimage("openfolder"),
+				-command => $get_file
+			       )
+		    );
+	    $pe->focus;
+	    $f = $t->Frame->pack(-fill => "x");
+	    if ($linetype eq "p") {
+		Tk::grid($f->Checkbutton(-text => M"Namen zeichnen",
+					 -variable => \$args{-namedraw}),
+			);
+	    } else {
+		my $e;
+		if (eval { require Tk::NumEntry; 1 }) {
+		    $e = $f->NumEntry(-minvalue => 1,
+				      -maxvalue => 20,
+				      -textvariable => \$args{Width},
+				      -width => 3,
+				     );
+		} else {
+		    $e = $f->Entry(-width => 3);
+		}
+		Tk::grid($f->Label(-text => M"Linienbreite"),
+			 $e,
+			);
+	    }
+	    $f = $t->Frame->pack(-fill => "x");
+	    my $weiter = 0;
+	    Tk::grid($f->Button(Name => "ok",
+				-command => sub {
+				    $weiter = 1;
+				}),
+		     $f->Button(Name => "cancel",
+				-command => sub {
+				    $weiter = -1;
+				})
+		    );
+	    $t->OnDestroy(sub { $weiter = -1 if !$weiter });
+	    $t->waitVariable(\$weiter);
+	    $t->destroy if Tk::Exists($t);
+
+	    undef $file if $weiter == -1;
+
+	} else {
+	    $get_file->();
+	}
+
+	if (!defined $file) {
 	    $draw->{$abk} = 0;
 	    return;
 	}
     }
 
     # XXX not nice, but it works...
-    if ($f =~ /\.bbr$/) {
-	require File::Basename;
-	my $tmpfile = "$tmpdir/" . basename($f);
+    if ($file =~ /\.bbr$/) {
+	my $tmpfile = "$tmpdir/" . basename($file);
 	require Route::Heavy;
-	my $s = Route::as_strassen($f);
+	my $s = Route::as_strassen($file);
 	$s->write($tmpfile);
-	$f = $tmpfile;
+	$file = $tmpfile;
     }
 
     @BBBike::ExtFile::scrollregion = ();
     undef $BBBike::ExtFile::center_on_coord;
-
-    $file->{$abk} = $f;
+    $fileref->{$abk} = $file;
     # zusätzliches desc-File einlesen:
-    if ($f =~ /(.*)\.bbd(\.gz)?$/) {
+    if ($file =~ /(.*)\.bbd(\.gz)?$/) {
 	my $desc_file = "$1.desc";
 	warn "Try to load description file $desc_file"
 	    if $verbose;
@@ -187,11 +247,11 @@ sub custom_draw {
 
     # XXX the condition should be defined $default_line_width,
     # but can't use it because of the Checkbutton/Menu bug
-    if ($default_line_width) {
+    if ($default_line_width && (!defined $args{Width} || $args{Width} eq "")) {
 	$args{Width} = $default_line_width;
     }
     $args{-draw} = 1;
-    $args{-filename} = $f;
+    $args{-filename} = $file;
     plot($linetype, $abk, %args);
 
     for (($linetype eq 'p' ? ("$abk-img", "$abk-fg") : ($abk))) {
@@ -219,7 +279,7 @@ sub custom_draw {
     $toplevel{"chooseort-$abk-$linetype"}->destroy
 	if $toplevel{"chooseort-$abk-$linetype"} && $do_close;
 
-    $f; # return filename
+    $file; # return filename
 }
 
 sub read_desc_file {
@@ -994,9 +1054,12 @@ sub advanced_coord_menu {
 			       -value => $_,
 			       -command => sub { set_coord_output_sub() },
 			       );
+	    my $index = $ausm->index('last');
 	    if ($_ eq 'canvas') {
-		my $index = $ausm->index('last');
-		push @edit_mode_cmd, sub { $ausm->invoke($index) };
+		push @edit_mode_brb_cmd, sub { $ausm->invoke($index) };
+		push @edit_mode_b_cmd, sub { $ausm->invoke($index) };
+	    } elsif ($_ eq 'standard') {
+		push @edit_mode_standard_cmd, sub { $ausm->invoke($index) };
 	    }
 	}
 	$ausm->checkbutton(-label => "Integer",
@@ -1030,6 +1093,7 @@ sub advanced_coord_menu {
 	    } elsif ($_ eq 'standard') {
 		my $index = $csm->index('last');
 		push @standard_mode_cmd, sub { $csm->invoke($index) };
+		push @edit_mode_standard_cmd, sub { $csm->invoke($index) };
 	    }
 	}
     }
@@ -1110,6 +1174,10 @@ sub advanced_coord_menu {
 	     -accelerator => 'F4',
 	    );
 	$standard_command_index = $c_bpcm->index('last');
+	$c_bpcm->command
+	    (-label => M"Edit-Modus Standard",
+	     -command => sub { switch_edit_standard_mode() },
+	    );
 	$c_bpcm->command
 	    (-label => M"Edit-Modus Berlin",
 	     -command => sub { switch_edit_berlin_mode() },
@@ -1470,7 +1538,7 @@ sub _insert_points_and_co {
 	if (!$SRTShortcuts::force_edit_mode) {
 	    push @args, (
 			 (!defined $edit_mode || $edit_mode eq '' ? "-noorig" : ()),
-			 ($coord_system_obj->coordsys eq 'B' ? () : (-coordsys => $coord_system_obj->coordsys)),
+			 ($coord_system_obj->coordsys eq 'B' || !defined $edit_mode || $edit_mode eq '' ? () : (-coordsys => $coord_system_obj->coordsys)),
 			);
 	}
 	warn "@args\n";
@@ -2025,6 +2093,28 @@ sub switch_standard_mode {
     $do_flag{'start'} = $do_flag{'ziel'} = 1; # XXX better solution
     set_remember_plot() unless $init;
     $ampelstatus_label->configure(-text => '') if $ampelstatus_label;
+    $c->center_view
+	(transpose($coord_system_obj->standard2map($oldx, $oldy)),
+	 NoSmoothScroll => 1);
+}
+
+# Schaltet in den Edit-Standard-Modus um.
+### AutoLoad Sub
+sub switch_edit_standard_mode {
+    my $init = shift;
+    my($oldx, $oldy) =
+      $coord_system_obj->map2standard
+	(anti_transpose($c->get_center));
+    remove_plot() unless $init;
+    foreach (@edit_mode_cmd) { $_->() }
+    foreach (@edit_mode_standard_cmd) { $_->() }
+    $map_mode = MM_BUTTONPOINT();
+    $use_current_coord_prefix = 0;
+    $coord_prefix = "";
+#XXX    set_edit_mode(0);
+    $do_flag{'start'} = $do_flag{'ziel'} = 1; # XXX better solution
+    set_remember_plot() unless $init;
+#    $ampelstatus_label->configure(-text => '') if $ampelstatus_label;
     $c->center_view
 	(transpose($coord_system_obj->standard2map($oldx, $oldy)),
 	 NoSmoothScroll => 1);
