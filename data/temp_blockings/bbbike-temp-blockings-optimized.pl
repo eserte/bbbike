@@ -60,7 +60,14 @@ userdel	q4 8370,25539 8182,25608
          'type' => 'gesperrt'
        },
        undef,
-       undef,
+       {
+         'until' => 1104533999,
+         'text' => 'Blankenburger Weg - Blankenburger-Weg-Brücke (Pankow) Richtung Bahnhofstr. zwischen Pasewalker Str. und Bahnhofsstraße Baustelle, Einbahnstraße in Richtung Bahnhofstr. (bis 12/2004)',
+         'from' => 1103789525,
+         'data' => 'userdel	1 12442,20805 12030,20490
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        {
@@ -129,26 +136,12 @@ userdel	q4 21637,30946 21955,30976
        },
        undef,
        undef,
-       {
-         'until' => 1103583600,
-         'text' => 'L 23; (Templin-Lychen); OD Lychen Straßenbau Vollsperrung 17.11.2004-20.12.2004 ',
-         'from' => 1100559600,
-         'data' => 'userdel	q4 3125,88753 2788,89447
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
        undef,
-       {
-         'until' => 1103583600,
-         'text' => 'L 75; (Karl-Marx-Straße); OD Großziethen, von Dorfstraße bis Friedhofsweg Straßenbauarbeiten Vollsperrung 24.05.2004-20.12.2004 ',
-         'from' => 1085263200,
-         'data' => 'userdel	q4 13225,-681 13309,-1268
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,

@@ -995,9 +995,9 @@ EOF
 userdel	2 375,28109 938,28349
 EOF
      },
-     { from  => undef, # 
-       until => 1101855600, # 2004-12-01 00:00
-       text  => 'Blankenburger Weg - Blankenburger-Weg-Brücke (Pankow) in beiden Richtungen zwischen Pasewalker Str. und Bahnhofsstraße Baustelle, Einbahnstraße Richtung Bahnhofstr. (bis 12/2004)',
+     { from  => 1103789525, # 2004-12-23 09:12
+       until => 1104533999, # 2004-12-31 23:59
+       text  => 'Blankenburger Weg - Blankenburger-Weg-Brücke (Pankow) Richtung Bahnhofstr. zwischen Pasewalker Str. und Bahnhofsstraße Baustelle, Einbahnstraße in Richtung Bahnhofstr. (bis 12/2004)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1 12442,20805 12030,20490
