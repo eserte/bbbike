@@ -3436,8 +3436,8 @@ sub do_iconframe {
 		     ['GPSMAN (Tracklog)', 'GpsmanData'],
 		     ['Waypoint+ (Track)', 'WaypointPlus'],
 		     '-',
-		     ['Send Route to Garmin', 'DirectGarmin'],
-		     ['Simulate send to Garmin', 'DirectGarmin_Test'],
+		     ['Route zu einem Garmin senden', 'DirectGarmin'],
+		     ['Senden der Route zu einem Garmin simulieren', 'DirectGarmin_Test'],
 		    ) {
 	if ($fmt eq '-') {
 	    $svm->separator;
