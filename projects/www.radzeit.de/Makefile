@@ -17,7 +17,8 @@
 # The local service is available on
 #   ${LOCAL_URL}/cgi-bin/bbbike.cgi
 
-BBBIKE_ROOT_DIR?=	$(HOME)/src/bbbike
+#BBBIKE_ROOT_DIR?=	$(HOME)/src/bbbike
+BBBIKE_ROOT_DIR?=	${.CURDIR}/../..
 CURDIR=			${.CURDIR}
 LOCAL_URL?=		http://radzeit.herceg.de
 DATA_DIR=		data_corrected
@@ -31,12 +32,18 @@ DEPLOY_TARGETS=		prepare-bbbike-data \
 DEPLOY_LOCAL_TARGETS=	${DEPLOY_TARGETS:S/prepare-mapserver-dist/prepare-mapserver-local-dist/:S/rsync//:S/test$/test-local/:S/test-on-remote/test-local/}
 
 RSYNC_PROG?=	rsync
-RSYNC_ARGS=	-e ssh -Pvz -r -t --cvs-exclude --exclude-from .rsync.exclude
+RSYNC_ARGS=	-e ssh -Pvz -r -t --links --cvs-exclude --exclude-from .rsync.exclude
 RSYNC_DEST?=	${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_HOST}:${BBBIKE_RADZEIT_APACHE_DIR}
 RSYNC_SRCDEST?=	. ${RSYNC_DEST}
 
 # XXX Should be set from mapserver/brb/Makefile:
 WWW_USER=	www
+
+.if ${OSTYPE} == "linux"
+XARGS_REPL?=	xargs --replace=%
+.else
+XARGS_REPL?=	xargs -J %
+.endif
 
 .ifndef TARGET
 .for t in ${DEPLOY_TARGETS}
@@ -58,7 +65,11 @@ TARGET=radzeit.herceg.de
 .if make(deploy) || make(tkrsync) || make(backup) || make(test) || make(prepare-bbbike-dist-data) || make(rsync) || make(rsync-bbbike-data)
 TARGET=radzeit
 .elif make(deploy-local) || make(backup-local)
+.if ${HOST} == "devpc01.iconmobile.de"
+TARGET=devpc01
+.else
 TARGET=radzeit.herceg.de
+.endif
 .else
 .error "Please set TARGET to radzeit or radzeit.herceg.de"
 .endif
@@ -128,18 +139,15 @@ prepare-bbbike-dist-prog-bbbike:
 	[ -d ${CURDIR}/cgi-bin ] || mkdir ${CURDIR}/cgi-bin
 	[ -d ${CURDIR}/htdocs  ] || mkdir ${CURDIR}/htdocs
 	chmod 755 ${CURDIR}/cgi-bin ${CURDIR}/htdocs
-	cd ${BBBIKE_ROOT_DIR} && ( \
-	    cp -pf cgi/bbbike.cgi cgi/mapserver_address.cgi \
-		   cgi/mapserver_comment.cgi cgi/wapbbbike.cgi \
-		   cgi/mapserver_setcoord.cgi \
-		${CURDIR}/cgi-bin/; \
-	    cp -pf cgi/bbbike-radzeit.cgi.config \
-		${CURDIR}/cgi-bin/bbbike.cgi.config; \
-	    chmod ugo+r ${CURDIR}/cgi-bin/bbbike.cgi.config; \
-	    cp -pf cgi/bbbike-radzeit.cgi.config \
-		${CURDIR}/BBBike/cgi/bbbike.cgi.config; \
-	    chmod ugo+r ${CURDIR}/BBBike/cgi/bbbike.cgi.config \
-	)
+.for i in \
+	  bbbike.cgi wapbbbike.cgi \
+	  mapserver_address.cgi mapserver_comment.cgi mapserver_setcoord.cgi
+	rm -f ${CURDIR}/cgi-bin/$(i)
+	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/$(i)
+.endfor
+	cd ${CURDIR}/cgi-bin && \
+	    ln -s ../BBBike/cgi/bbbike-radzeit.cgi.config bbbike.cgi.config
+	chmod ugo+r ${CURDIR}/BBBike/cgi/bbbike-radzeit.cgi.config
 	@echo "Maybe create bbbike2.cgi and bbbike2.cgi.config"
 	[ -e ${CURDIR}/htdocs/BBBike ] || \
 	    ln -s ../BBBike ${CURDIR}/htdocs/BBBike
@@ -169,11 +177,11 @@ prepare-bbbike-dist-data:
 	-rm -f ${CURDIR}/BBBike/data/conv.db*
 	[ -d ${CURDIR}/BBBike/misc/temp_blockings ] || \
 	    mkdir -p ${CURDIR}/BBBike/misc/temp_blockings
-	find ${BBBIKE_ROOT_DIR}/misc/temp_blockings/ -maxdepth 1 -type f ! -name "*~" | xargs -J % cp -pf % ${CURDIR}/BBBike/misc/temp_blockings/
+	find ${BBBIKE_ROOT_DIR}/misc/temp_blockings/ -maxdepth 1 -type f ! -name "*~" | ${XARGS_REPL} cp -pf % ${CURDIR}/BBBike/misc/temp_blockings/
 	-cp -pf ${BBBIKE_ROOT_DIR}/misc/temp_blockings/* \
 	    ${CURDIR}/BBBike/misc/temp_blockings/
-	cp -pf ${BBBIKE_ROOT_DIR}/cgi/bbbike-teaser.pl \
-	    ${CURDIR}/cgi-bin
+	rm -f ${CURDIR}/cgi-bin/bbbike-teaser.pl
+	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike-teaser.pl
 
 prepare-mapserver-dist:	prepare-mapserver-dist-pre \
 			prepare-mapserver-dist-main \
