@@ -979,8 +979,8 @@ userdel	q4 32100,18012 31887,17453
 EOF
      },
      { from  => 1109025830, # 2005-02-21 23:43
-       until => 1112047200, # 2005-03-29 00:00
-       text  => 'Naumannstraße zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt bis 28.03.2005 ',
+       until => 1109545200, # 2005-03-28 00:00
+       text  => 'Naumannstraße zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt bis 28.02.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 7716,8048 7717,7759
@@ -1455,6 +1455,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 9112,14771 9472,14478
+EOF
+     },
+     { from  => 1109628414, # 2005-02-28 23:06
+       until => 1136069999, # 2005-12-31 23:59
+       text  => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 3507,3635 3184,3413 2701,3064 2639,2989 2638,2843
 EOF
      },
     );

@@ -42,14 +42,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1112047200,
-         'text' => 'Naumannstraße zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt bis 28.03.2005 ',
-         'from' => 1109025830,
-         'data' => 'userdel	2 7716,8048 7717,7759
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -206,6 +199,14 @@ userdel	2 15174,5463 15373,5675
          'text' => 'Hussitenstr. (Mitte) in Richtung Bernauer Str. zwischen Bernauer Str. und Usedomer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2005)',
          'from' => 1109365909,
          'data' => 'userdel	q4; 9112,14771 9472,14478
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1136069999,
+         'text' => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
+         'from' => 1109628414,
+         'data' => 'userdel	q4; 3507,3635 3184,3413 2701,3064 2639,2989 2638,2843
 ',
          'type' => 'handicap'
        }
