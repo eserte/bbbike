@@ -1,4 +1,4 @@
-# $Id: handicap_l-orig,v 4.11 2004/11/22 01:17:57 eserte Exp eserte $
+# $Id: handicap_l-orig,v 4.12 2004/12/23 00:35:32 eserte Exp eserte $
 Brandenburger Str.: Fußgängerzone	q4 -12894,-977 -13171,-1042 -13556,-1140
 Neuer Garten: Schiebestrecke	q3 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12115,1331 -12185,1388
 Neuer Garten: Schiebestrecke	q3 -12081,1168 -12181,1196
@@ -16,7 +16,7 @@ Holzmarktstr - Humboldtbrücke: steile Rampe	q4 -11910,-945 -11875,-925
 Potsdam, Friedrich-Engels-Str.: Bauarbeiten an der Nuthe-Brücke und weiter (mindestens seit Sommer 2004)	q3::inwork -11507,-2130 -10995,-2108
 Potsdam, Großbeerenstr.: Richtung Westen gesperrt, Gehweg benutzen (mindestens seit Sommer 2004)	q4::inwork; -9753,-2474 -10348,-2276
 B 169; OU Senftenberg; Bau Ortsumfahrung; Vollsperrung; 06.11.2003-30.05.2006	q4::inwork 55158,-95910 54884,-96292 54357,-96691
-B 1; (Brandenburger Str.); OD Groß Kreutz, zw. Lehniner Str. u. Bahnhofstr.; Straßenbauarbeiten; Vollsperrung; 14.04.2004-31.12.2004	q4::inwork -31991,-1024 -32417,-963
+#XXX del B 1; (Brandenburger Str.); OD Groß Kreutz, zw. Lehniner Str. u. Bahnhofstr.; Straßenbauarbeiten; Vollsperrung; 14.04.2004-31.12.2004	q4::inwork -31991,-1024 -32417,-963
 K 6016; (Angermünde-KG-Althüttendorf); OD Neugrimnitz; Straßenneubau; Vollsperrung; 10.05.2004-31.12.2004	q4::inwork 37844,63430 38581,64181
 B 96; (Hauptstr.); OD Baruth; Straßenbauarbeiten; Vollsperrung; 01.06.2004-31.12.2004	q4::inwork 18042,-39923 18307,-38801
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

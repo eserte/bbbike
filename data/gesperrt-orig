@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.12 2004/12/14 01:41:05 eserte Exp eserte $
+# $Id: gesperrt-orig,v 4.13 2004/12/23 00:34:45 eserte Exp eserte $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraßen etc.)
@@ -18,7 +18,7 @@ Oppelner Str.	1 13035,10635 12980,10575
 Oberbaumstr.	1 12995,10669 13015,10659 13082,10634
 Oberbaumstr.	1 13082,10634 13035,10635
 am Hackeschen Markt (Süd)	1 10132,12941 10097,12997 9932,13109
-am Hackeschen Markt (Nord)	1 9932,13109 10077,13100 10264,13097
+am Hackeschen Markt (Nord)	1 9932,13109 10077,13100 10220,13098 10264,13097
 Dennewitzplatz	1 7862,9893 7813,10112
 Dennewitzplatz	1 7813,10112 7911,10109 7862,9893
 Winterfeldtplatz	1 7049,9833 7039,10082
@@ -138,7 +138,7 @@ Schulze-Delitzsch-Platz	1 11155,11750 11048,11745 11022,11782
 Schulze-Delitzsch-Platz	1 11022,11782 11155,11750
 # hier stand mal ein Polizeiauto, als ich reinfahren wollte...:
 Weydemeyerstr.	1 11905,13069 11910,13055 12062,12986 12056,12907
-Gipsstr.	1 10331,13397 10199,13446 10031,13509
+Gipsstr.	1 10331,13397 10199,13446 10026,13521
 Dorotheenstr.	1 9867,12651 9723,12594 9574,12578 9454,12558 9323,12528
 Georgenstr.	1 9437,12662 9562,12679 9657,12694 9754,12775
 Paul-Junius-Str	1 15084,13276 15082,13369
@@ -193,7 +193,7 @@ Putlitzstr.	1 6210,13939 6214,14208
 Putlitzstr.	1 6289,14225 6272,13916
 Langhansstr. (außer Tram)	1 12046,16568 12200,16579 12409,16475
 Triftstr. (Buchholz)	1 12018,23040 12178,23034
-Joachimstr.	1 10148,13546 10081,13673
+Joachimstr.	1 10142,13556 10081,13673
 Wilhelmsaue	1 4778,8784 4927,8785 5180,8785
 Wilhelmsaue	1 5181,8731 4926,8730 4777,8720
 Friedrichsruher Str.	1 3196,9193 3333,9026
@@ -257,6 +257,9 @@ Pflugstr.	1 8662,14567 8781,14357
 Schwartzkopffstr.	1 8781,14357 8607,14253
 Wriezener Karree	1 12778,11691 12819,11764 12726,11851
 Strausberger Str.	1 12422,13047 12368,13031
+#: add_fragezeichen: tatsächlich auch für Radfahrer gesperrt?
+Jacobystr.	1 11191,12700 11260,12809 11594,12662
+Große Präsidentenstr.	1 10097,12997 10220,13098
 #
 # Potsdam
 #
@@ -580,7 +583,6 @@ Gertrud-Kolmar-Str. (Bauarbeiten am Holocaust-Denkmal)	2:inwork 8804,11838 8737,
 Goethestr. (Bauarbeiten)	1:inwork 4896,11345 5053,11343
 #XXX del Krausenstr. (Bauarbeiten)	1s:inwork 9449,11512 9581,11523
 #XXX del Potsdamer Platz/Ebertstr.	1:inwork 8553,11638 8546,11537 8542,11502
-Auguststr. (Bauarbeiten)	2:inwork 10262,13583 10306,13591
 #XXX del? Müggelseedamm (Bauarbeiten)	2:inwork 16185,10440 16498,10466
 # als "Mitte 2006" gekennzeichnet
 Markgrafenstraße  Richtung Französische Straße zwischen Behrenstraße und Französische Straße, Bauarbeiten als Einbahnstraße eingerichtet, Dauer:  bis 01.07.2006	1:inwork 9636,12126 9626,12227

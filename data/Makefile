@@ -96,7 +96,7 @@ inaccessible_strassen: strassen gesperrt
 	    -blockedtype einbahn -blockedtype sperre \
 	    > inaccessible_strassen~ && mv inaccessible_strassen~ inaccessible_strassen
 	@if [ -e /tmp/old_inaccessible_strassen ] ; then \
-	    diff -u $@ /tmp/old_inaccessible_strassen; \
+	    diff -u /tmp/old_inaccessible_strassen $@; \
 	fi
 	-@$(READONLY) $@
 
@@ -108,7 +108,7 @@ inaccessible_landstrassen: strassen landstrassen landstrassen2 gesperrt
 	    -blockedtype einbahn -blockedtype sperre \
 	    > inaccessible_landstrassen~ && mv inaccessible_landstrassen~ inaccessible_landstrassen
 	@if [ -e /tmp/old_inaccessible_landstrassen ] ; then \
-	    diff -u $@ /tmp/old_inaccessible_landstrassen; \
+	    diff -u /tmp/old_inaccessible_landstrassen $@; \
 	fi
 	-@$(READONLY) $@
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.15 2004/12/14 23:16:11 eserte Exp $
+# $Id: plz.t,v 1.16 2004/12/23 00:50:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ package main;
 
 use Test::More;
 BEGIN { eval "use Test::Differences" };
-BEGIN { plan tests => 54 }
+BEGIN { plan tests => 56 }
 
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../data", "$FindBin::RealBin/../lib");
@@ -315,7 +315,6 @@ EOF
        "Should find Brandenburger Tor in Potsdam")
 	or diag $dump->(\@res);
 
- XXX:
     @res = $plz_multi->look_loop("brandenburger tor",
 				 @standard_look_loop_args);
     is(scalar(grep { $_->[PLZ::LOOK_CITYPART] eq 'Mitte' } @{$res[0]}), 1,
@@ -325,6 +324,15 @@ EOF
        "Should find Brandenburger Tor in Potsdam")
 	or diag $dump->(\@res);
 
+ XXX:
+    @res = $plz_multi->look_loop("kl. präsidentenstr.");
+    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Kleine Präsidentenstr.' } @{$res[0]}), 1,
+       "Expanding kl.")
+	or diag $dump->(\@res);
+    @res = $plz_multi->look_loop("gr. seestr.");
+    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Große Seestr.' } @{$res[0]}), 1,
+       "Expanding gr.")
+	or diag $dump->(\@res);
 }
 
 
