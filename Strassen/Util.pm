@@ -344,11 +344,12 @@ sub valid_cache {
 sub get_cachefile {
     my($_cachefile) = @_;
     unless ($_cachefile =~ m|^/|) {
-	my $cachefile = "$cachedir/${cacheprefix}_${_cachefile}";
-	if (!-w $cachefile) {
-	    $cachefile = "$cachedir/${cacheprefix}_" . $< . "_" . $_cachefile;
-	}
-	$cachefile;
+#XXXdel:	my $cachefile = "$cachedir/${cacheprefix}_${_cachefile}";
+#	if (!-w $cachefile) {
+#	    $cachefile =
+ "$cachedir/${cacheprefix}_" . $< . "_" . $_cachefile;
+#	}
+#	$cachefile;
     } else {
 	$_cachefile;
     }
