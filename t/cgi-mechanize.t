@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.8 2004/08/28 23:24:47 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.9 2004/09/10 00:24:15 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -118,7 +118,6 @@ like($agent->content, qr/Route/);
 ######################################################################
 # test for Kaiser-Friedrich-Str. (Potsdam) problem
 
-XXX:
 {
 
 my $agent = WWW::Mechanize->new;
@@ -235,5 +234,26 @@ like($agent->content, qr{\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marqu
 # $agent->back;
 # $agent->current_form->value(
 # }
+
+######################################################################
+# test for a street in Berlin.coords.data but not in strassen
+
+XXX: {
+
+my $agent = WWW::Mechanize->new;
+$agent->env_proxy;
+
+$agent->get($cgiurl);
+$agent->form("BBBikeForm");
+{ local $^W; $agent->current_form->value('start', 'kleine parkstr'); };
+{ local $^W; $agent->current_form->value('ziel', 's lehrter bahnhof'); };
+$agent->submit();
+
+like($agent->content, qr/Kleine Parkstr\..*ist nicht bekannt/i, "Street not in database");
+like($agent->content, qr{\Qhtml/newstreetform.html?strname=Kleine%20Parkstr}i, "newstreetform link");
+like($agent->content, qr{Lehrter Bahnhof.*?die nächste Kreuzung}is,  "S-Bhf.");
+like($agent->content, qr{Invalidenstr./Heidestr.}i,  "S-Bhf., next crossing");
+
+}
 
 __END__

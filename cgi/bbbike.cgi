@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.86 2004/09/06 22:59:10 eserte Exp $
+# $Id: bbbike.cgi,v 6.87 2004/09/10 00:24:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2004 Slaven Rezic. All rights reserved.
@@ -626,7 +626,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.86 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.87 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1558,7 +1558,7 @@ EOF
 		} else {
 		    print qq{<i>$strasse</i><br>\n};
 		}
-		print qq{Die nächste } . ($report_nearest ? "bekannte " : "") . qq{ Kreuzung ist:<br>\n};
+		print qq{Die nächste } . ($report_nearest ? "bekannte " : "") . qq{Kreuzung ist:<br>\n};
 		print "<i>$cr</i>";
 		if ($report_nearest) {
 		    print qq{<br>\nund wird für die Suche verwendet.};
@@ -5204,7 +5204,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2004/09/06 22:59:10 $';
+    my $cgi_date = '$Date: 2004/09/10 00:24:26 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

@@ -770,4 +770,13 @@ EOF
 userdel	q4 32334,89385 31796,89304
 EOF
      },
+     { from  => 1094940000, # 2004-09-12 00:00
+       until => 1098568800, # 2004-10-24 00:00
+       text  => 'L 961; (Rogäsen-LG Genthin); zw. Zitz und LG Karow Straßenbauarbeiten Vollsperrung 13.09.2004-23.10.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -62793,-10268 -63668,-10212
+userdel	2 -63668,-10212 -64600,-9931
+EOF
+     },
     );

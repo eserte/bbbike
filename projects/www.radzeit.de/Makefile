@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.38 2004/08/21 23:11:30 eserte Exp eserte $
+# $Id: Makefile,v 1.39 2004/09/10 00:24:05 eserte Exp $
 #
 
 # Targets:
@@ -134,9 +134,17 @@ all:
 check:
 	${RSYNC} --dry-run ${RSYNC_ARGS} ${RSYNC_SRCDEST}
 
-rsync:
+clean-cache-files-on-remote:
+	ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
+	    rm /tmp/b_de_\*
+
+rsync:	check-rsync-ok clean-cache-files-on-remote do-rsync
+
+check-rsync-ok:
 	[ ! -e ${CURDIR}/.not_rsyncable ] || ( echo "Not rsyncable!"; false )
 	[ ! -e ${CURDIR}/.rsync_block ] || ( echo "Not rsyncable because:"; cat ${CURDIR}/.rsync_block; false )
+
+do-rsync:
 	${RSYNC} ${RSYNC_ARGS} ${RSYNC_SRCDEST}
 
 rsync-bbbike:
@@ -150,10 +158,6 @@ rsync-mapserver:
 rsync-bbbike-data:	clean-cache-files-on-remote
 	${RSYNC} ${RSYNC_ARGS} \
 	    BBBike/data/ ${RSYNC_DEST}/BBBike/data/
-
-clean-cache-files-on-remote:
-	ssh -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
-	    rm /tmp/b_de_\*
 
 # use -t in rsync?
 tkrsync:
