@@ -202,7 +202,9 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 		    $vars, $mapfh) || die $t->error;
 	close $mapfh;
 
-	my @cmd = ("$mapserver_bin_dir/shp2img",
+	my @cmd = (
+		   #"valgrind",
+		   "$mapserver_bin_dir/shp2img",
 		   "-m", $mapfile,
 		   "-e", @{ $self->BBox },
 		  );
