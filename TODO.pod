@@ -999,6 +999,14 @@ zur Verkehrsdichte? Recherchieren!
  siehe auch: http://www.grass-net.de/modules.php?name=Content&pa=showpage&pid=16
  Fahrplanaenderungen Dezember 2003 bei RE/RB beachten!
 
+ alle Brücken aus plaetze => brunnels überführen
+ brunnels mit nicht-leeren NAME suchbar machen
+
+ S-Bahn: N-S-Tunnel als brunnel markieren
+ U-Bahn: Negativliste erstellen, alle Strecke, die nicht enthalten
+ sind, sind automatisch als Tunnel markieren. U1 nach Krumme Lanke =
+ tunnel.
+
 =back
 
 =head2 Routing (BBBikeRouting.pm, Strassen::StrassenNetz)

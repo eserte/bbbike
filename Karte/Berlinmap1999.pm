@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlinmap1999.pm,v 1.4 2001/11/07 23:16:21 eserte Exp $
+# $Id: Berlinmap1999.pm,v 1.4 2001/11/07 23:16:21 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
@@ -28,15 +28,16 @@ sub new {
       {
        Name     => 'Berlinmap-Karte 1999',
        Token    => 'b1999',
-## XXX wann spuckt Stadtplandienst png aus?
        Mimetype => 'image/jpeg',
 #       Mimetype => 'image/gif',
        Coordsys => 'B99',
-       Users    => ['Stadtplandienst 1999'],
+       Users    => ['Stadtpla' .
+		    'ndienst 1999'],
 
        Fs_base   => "map1999",
        Cache_dir => "$Karte::cache_root/map1999",
-       Root_URL  => "http://www.stadtplandienst.de/cities/b/b/pq/r195/b9812c",
+       Root_URL  => "http://www.stad" .
+       "tplandienst.de/cities/b/b/pq/r195/b9812c",
 
        X0 => -12822.983798183,
        X1 => 2.59708522291797,

@@ -638,6 +638,7 @@ Tk::CmdLine::SetArguments();
 						 $turbo = 1;
 					     },
    ],
+   #XXX -nolazy geht nicht!
    ['lazy','!',undef,   nogui => 1, var => sub {
        $lazy_plot = 1;
        $p_far_away{'o'}   = 1;
@@ -5071,7 +5072,7 @@ sub define_item_attribs {
 	    s-label-bg s-label l-label-bg l-label
 	    u sperre_u u-bg u-fg r sperre_r b sperre_b r-bg r-fg b-bg b-fg
 	    u-label r-label b-label
-	    hoehe vf-bg sperre temp_sperre v-fg obst
+	    hoehe vf-bg sperre temp_sperre_s temp_sperre v-fg obst
 	    route comm),
 	 (map { "comm-$_" } @comments_types),
 	 qw(qs hs ql hl mount nl delnet
@@ -5765,7 +5766,7 @@ sub set_bindings {
 
     foreach (qw(s S l L u b r f v v-fg w W i e comm mount),
 	     (map { "comm-$_" } @comments_types),
-	     qw(gr qs hs ql hl fz nl ovl)) {
+	     qw(gr qs hs ql hl fz nl ovl temp_sperre_s)) {
 	std_str_binding($_);
     }
 
@@ -7880,7 +7881,7 @@ sub plotstr {
     }
 
     # Get source from filename or street object
-    my($filename, $str);
+    my($filename, $str, $has_filename);
     if (!defined $args{-object}) {
 	$filename = $args{-filename} || $args{Filename};
 	if (defined $filename) {
@@ -7891,6 +7892,7 @@ sub plotstr {
 			 : "$str_file{$abk}-orig"
 			);
 	}
+	$has_filename = 1;
 	delete $pending{"replot-str-$abk"};
 	if (!defined $filename) {
 	    status_message(Mfmt("Dateiname für <%s> ist nicht definiert.", $abk),
@@ -7976,7 +7978,7 @@ sub plotstr {
     }
 
     my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
-    if ($std && $lazy) {
+    if ($std && $lazy && $has_filename) {
 	return bbbikeexp_add_data("str", $abk, $str);
     }
 
@@ -8522,11 +8524,13 @@ sub activate_temp_blockings {
     my $temp_blockings_dir = "$FindBin::RealBin/misc/temp_blockings";
     my $file = "$temp_blockings_dir/bbbike-temp-blockings.pl";
     if (!-r $file) {
-	status_message(M("Kein Support fuer temporaere Sperrungen"), "die");
+	status_message(M("Kein Support fuer temporaere Sperrungen, das Verzeichnis $temp_blockings_dir fehlt. Dieses Verzeichnis ist aus dem CVS erhältlich, siehe README."), "warn");
+	return;
     }
     if (!$do_show_active_temp_blockings) {
 	$show_active_temp_blockings = 0;
 	plot("p", "temp_sperre", -draw => 0);
+	plot("str", "temp_sperre_s", -draw => 0);
 	make_net(); # XXX find more performant solution
 	return;
     }
@@ -8537,8 +8541,10 @@ sub activate_temp_blockings {
 	my @s;
 	for my $o (@temp_blocking) {
 	    if ($o->{from} < time && $o->{until} > time) {
+		my $f = "$temp_blockings_dir/$o->{file}";
+		my $s = Strassen->new($f);
 		my $new_s = Strassen->new;
-		my $s = Strassen->new("$temp_blockings_dir/$o->{file}");
+		push @{$new_s->{DependentFiles}}, $f;
 		$s->init;
 		while(1) {
 		    my $ret = $s->next;
@@ -8554,9 +8560,12 @@ sub activate_temp_blockings {
 	    return;
 	}
 	my $ms = MultiStrassen->new(@s);
+	warn "Aktive temporäre Sperrungen: " . join(", ", $ms->dependent_files) . "\n" if $verbose;
 	make_net() if !$net;
 	$net->make_sperre($ms, Type => "all");
 	plot("p", "temp_sperre", -object => $ms, -draw => 1);
+	plot("str", "temp_sperre_s", -object => $ms, -draw => 1);
+	# XXX handicaps werden noch nicht bei der Routensuche berücksichtigt!
     };
     if ($@) {
 	$show_active_temp_blockings = 0;

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Potsdammap2002.pm,v 1.2 2003/01/21 01:02:59 eserte Exp $
+# $Id: Potsdammap2002.pm,v 1.2 2003/01/21 01:02:59 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -35,8 +35,10 @@ sub new {
 
        Fs_base   => "potsdammap2002",
        Cache_dir => "$Karte::cache_root/potsdammap2002",
-       Root_URL  => "http://www.stadtplandienst.de/cities/potsdam/grid1",
-       Users    => ['Stadtplandienst 2002'],
+       Root_URL  => "http://www.stadtpla" .
+       "ndienst.de/cities/potsdam/grid1",
+       Users    => ['Stadtpla' .
+		    'ndienst 2002'],
 
        X0 => -27118.2922275088,
        X1 => 2.48640820411157,

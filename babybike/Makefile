@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.46 2003/08/24 23:29:35 eserte Exp $
+# $Id: Makefile,v 1.47 2004/04/23 22:40:54 eserte Exp $
 #
 
 # Prerequisites:
@@ -414,7 +414,9 @@ image_koethen_tiles:
 ######################################################################
 # von Berlin bis zur Uckermark
 
-BBOX_UCKERMARK=85200,125500,3000,30000
+#BBOX_UCKERMARK=85200,125500,3000,30000
+# Das hier schließt Neubrandenburg mit ein:
+BBOX_UCKERMARK=85200,141100,-19300,30000
 
 data_uckermark:
 	-mkdir data_uckermark
@@ -425,12 +427,12 @@ data_uckermark:
 	echo -n | gzip > data_uckermark/gesperrt.gz
 	echo -n | gzip > data_uckermark/orte2.gz
 	echo -n | gzip > data_uckermark/qualitaet_s.gz
-	env BBBIKE_DATADIR=${DATADIR} ${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK) -scope wideregion -strdata landstrassen,landstrassen2 -o - | gzip -9f > data_uckermark/landstrassen.gz
-	env BBBIKE_DATADIR=${DATADIR} ${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK) -scope wideregion -strdata wasserumland,wasserumland2 -o - | gzip -9f > data_uckermark/wasserumland.gz
-	env BBBIKE_DATADIR=${DATADIR} ${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK) -scope wideregion -strdata rbahn -o - | gzip -9f > data_uckermark/rbahn.gz
-	env BBBIKE_DATADIR=${DATADIR} ${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK) -scope wideregion -strdata rbahnhof -o - | gzip -9f > data_uckermark/rbahnhof.gz
-	env BBBIKE_DATADIR=${DATADIR} ${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK) -scope wideregion -strdata orte,orte2 -o - | gzip -9f > data_uckermark/orte.gz
-	env BBBIKE_DATADIR=${DATADIR} ${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK) -scope wideregion -strdata qualitaet_l -o - | gzip -9f > data_uckermark/qualitaet_l.gz
+	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK) -scope wideregion -strdata ${DATADIR}/landstrassen,${DATADIR}/landstrassen2 -o - | gzip -9f > data_uckermark/landstrassen.gz
+	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK) -scope wideregion -strdata ${DATADIR}/wasserumland,${DATADIR}/wasserumland2 -o - | gzip -9f > data_uckermark/wasserumland.gz
+	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK) -scope wideregion -strdata ${DATADIR}/rbahn -o - | gzip -9f > data_uckermark/rbahn.gz
+	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK) -scope wideregion -strdata ${DATADIR}/rbahnhof -o - | gzip -9f > data_uckermark/rbahnhof.gz
+	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK) -scope wideregion -strdata ${DATADIR}/orte,${DATADIR}/orte2 -o - | gzip -9f > data_uckermark/orte.gz
+	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK) -scope wideregion -strdata ${DATADIR}/qualitaet_l -o - | gzip -9f > data_uckermark/qualitaet_l.gz
 
 data_uckermark_gpstracks:
 	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_UCKERMARK)  -strdata ${BBBIKEDIR}/tmp/streets.bbd,${BBBIKEDIR}/tmp/streets-bahn.bbd,${BBBIKEDIR}/misc/mps_examples/streets.bbd -o - | gzip -9f > data_uckermark/gpstracks.gz
@@ -457,6 +459,21 @@ image_uckermark_tiles:
 	    -o /tmp/uckermark.png -dimfile images/uckermark_tiles/uckermark.dim
 	pngtopnm /tmp/uckermark.png > /tmp/uckermark.ppm
 	perl -I$HOME/lib/perl ../miscsrc/tilemap -image /tmp/uckermark.ppm -destdir images/uckermark_tiles -geometry 100x100 -conf /tmp/uckermark.conf
+
+rsync-uckermark: do-rsync-tkbabybike ipaq-generate-cache-uckermark
+
+do-rsync-uckermark:
+	$(RSYNC) -L --times -r -z --hard-links \
+	    --cvs-exclude \
+	    data_uckermark/ \
+	    $(IPAQTMPBBBIKEDEST)/data_uckermark/
+	$(RSYNC) -L --times -r -z --hard-links \
+	    --cvs-exclude \
+	     images/uckermark_tiles/ \
+	    $(IPAQTMPBBBIKEDEST)/images/uckermark_tiles/
+
+ipaq-generate-cache-uckermark:
+	ssh -l $(IPAQUSER) $(IPAQHOST) $(IPAQTMPBBBIKE)/generate_cache.pl -scopes uckermark
 
 ######################################################################
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlinmap1997.pm,v 1.6 2001/11/07 23:16:21 eserte Exp $
+# $Id: Berlinmap1997.pm,v 1.6 2001/11/07 23:16:21 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -32,7 +32,8 @@ sub new {
        Fs_base   => "newmap",
        Cache_dir => "$Karte::cache_root/newmap",
        Root_URL  => "http://www.kulturbox.de/stadtware/cities/b/pq/r195/195",
-       Users    => ['Stadtplandienst 1997'],
+       Users    => ['Stadtpla' .
+		    'ndienst 1997'],
 
        X0 => -12832.5603303591,
        X1 => 2.60107157639434,

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: convert_radwege,v 1.21 2003/11/12 00:11:56 eserte Exp $
+# $Id: convert_radwege,v 1.22 2004/04/26 21:45:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002 Slaven Rezic. All rights reserved.
@@ -27,12 +27,13 @@ use constant PI => 3.141592653;
 # somit kann die erzeugte Datei für ein Optimierungs-Netz (siehe Strassen.pm,
 # Package StrassenNetz) verwendet werden.
 my $exact = 0;
-my $inmap = "Berlinmap1996";
+my $inmap; # = "Berlinmap1996";
 my $outmap = "Standard";
 my $conv;
 my $conv_code;
 my $oldfmt;
 my $delta = 20;
+my $datadir = $ENV{BBBIKE_DATADIR} || "$FindBin::RealBin/../data";
 
 if (!GetOptions("exact!" => \$exact,
 		"inmap=s" => \$inmap,
@@ -41,10 +42,11 @@ if (!GetOptions("exact!" => \$exact,
 		"noconv" => sub { $conv = sub { @_ } },
 		"oldfmt!" => \$oldfmt,
 		"delta=f" => \$delta,
+		"datadir=s" => \$datadir,
 	       )) {
     die <<EOF;
 Usage: $0 [-[no]exact]
-          [-inmap map] [-outmap map] [-conv convcode]
+          [-inmap map] [-outmap map] [-conv convcode] [-datadir directory]
           [-noconv] [-oldfmt] < infile > outfile
 
 -exact:      create an exact database (for the routing engine)
@@ -56,7 +58,18 @@ Usage: $0 [-[no]exact]
 -noconv:     do not convert (by default:
              convert from $inmap to $outmap)
 -oldfmt:     obsolete
+-datadir:    use another datadir instead of $datadir
 EOF
+}
+
+if (!defined $inmap) {
+    require BBBikeEditUtil;
+    Karte::preload(":all");
+    my %file2base = BBBikeEditUtil::base($datadir);
+    my $obj = $Karte::map_by_coordsys{$file2base{"radwege-orig"}};
+    $conv = sub {
+	$obj->map2map($Karte::map_by_modname{$outmap}, @_);
+    };
 }
 
 if ($oldfmt) {

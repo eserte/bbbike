@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlinmap1996.pm,v 1.6 2001/11/07 23:16:21 eserte Exp $
+# $Id: Berlinmap1996.pm,v 1.6 2001/11/07 23:16:21 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -29,7 +29,8 @@ sub new {
        Token    => 'berlinmap',
        Mimetype => 'image/gif',
        Coordsys => 'B',
-       Users    => ['Stadtplandienst 1996'],
+       Users    => ['Stadtp' .
+		    'landienst 1996'],
        Fs_base => "map",
 
        X0 => -12836.9327939148,

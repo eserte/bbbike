@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Demap2002.pm,v 1.1 2003/01/22 13:47:18 eserte Exp $
+# $Id: Demap2002.pm,v 1.1 2003/01/22 13:47:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -35,8 +35,10 @@ sub new {
 
        Fs_base   => "demap2002",
        Cache_dir => "$Karte::cache_root/demap2002",
-       Root_URL  => "http://www.stadtplandienst.de/cities/de/datlas",
-       Users    => ['Stadtplandienst 2002'],
+       Root_URL  => "http://www.stadtp" .
+       "landienst.de/cities/de/datlas",
+       Users    => ['Stadtpl'.
+		    'andienst 2002'],
 
        X0 => -514788.710269181,
        X1 => 17.025482843199,

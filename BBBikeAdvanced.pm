@@ -1047,6 +1047,8 @@ sub advanced_coord_menu {
     my $bpcm = shift;
     $bpcm->command(-label => M"Koordinatenliste zeigen",
 		   -command => \&show_coord_list);
+    $bpcm->command(-label => M"Path to Selection",
+		   -command => \&path_to_selection);
     $bpcm->separator;
     $bpcm->cascade(-label => M"Aus/Eingabe");
     {
@@ -1126,18 +1128,23 @@ sub advanced_coord_menu {
 	$bpcm->checkbutton(-label => M"pp für alle Layer",
 			   -variable => \$p_draw{'pp-all'});
     }
-    my $coldef;
-    foreach $coldef ([M"rot", '#800000'],
-		     [M"grün", '#008000'],
-		    ) {
-      $bpcm->radiobutton(-label    => M('Kurvenpunkte').' '. $coldef->[0],
-			 -variable => \$pp_color,
-			 -value    => $coldef->[1],
-			 -command  => sub {
-			   $c->itemconfigure('pp',
-					     -fill => $pp_color);
-			 },
-			);
+    $bpcm->cascade(-label => M('Kurvenpunkte'));
+    {
+	my $csm = $bpcm->Menu(-title => M('Kurvenpunkte'));
+	$bpcm->entryconfigure('last', -menu => $csm);
+	my $coldef;
+	foreach $coldef ([M"rot", '#800000'],
+			 [M"grün", '#008000'],
+			) {
+	    $csm->radiobutton(-label    => $coldef->[0],
+			      -variable => \$pp_color,
+			      -value    => $coldef->[1],
+			      -command  => sub {
+				  $c->itemconfigure('pp',
+						    -fill => $pp_color);
+			      },
+			     );
+	}
     }
     $bpcm->checkbutton(-label => M"Präfix-Ausgabe",
 		       -variable => \$use_current_coord_prefix,
@@ -2784,6 +2791,12 @@ sub build_text_cursor {
 	warn "Errors while building $cursor_file";
 	return undef;
     }
+}
+
+sub path_to_selection {
+    @inslauf_selection = map { join ",", @$_ } @realcoords;
+    $c->SelectionOwn;
+    standard_selection_handle();
 }
 
 1;

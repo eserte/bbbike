@@ -32,7 +32,7 @@ sub preload {
 		    Berlinmap1996 Berlinmap1997 Berlinmap1998 Berlinmap1999
 		    Berlinmap2000 Berlinmap2001 Berlinmap2002 Berlinmap2003
 		    Berlinmap2004
-		    Potsdammap2002 Demap2002
+		    Potsdammap2002 Demap2002 Nbrbmap2004
 		    Satmap SatmapGIF GISmap Polar T99 T2001 GDF
 		    FURadar FURadar2 FURadar3
                     GPS Soldner_alt Cityinfo PilotPl PilotPl12 Tk50

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: convert_berlinmap.pl,v 1.41 2004/03/03 23:15:30 eserte Exp $
+# $Id: convert_berlinmap.pl,v 1.41 2004/03/03 23:15:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003 Slaven Rezic. All rights reserved.
@@ -253,6 +253,15 @@ my @p2002_data = split(/\n/, <<'EOF');
 -7749,-2443	7635,7661	# Stein/Mendelssohn-Bartoldy
 EOF
 
+my @nbrb2004_data = split(/\n/, <<'EOF');
+# polar (from my converted data)		nbrb2002
+N53 33 04.5	E13 15 47.8	4059,4597	# Nbrb, Stargader Tor
+N53 33 21.0	E13 16 02.3	4182,4332	# Nbrb, Demminer/Woldegker
+N53 33 33.9	E13 13 34.4	3144,4302	# Nbrb, 104/Woggersiner Str
+N53 33 19.5	E13 15 12.9	3847,4442	# Nbrb, Rostocker Str./Ring
+N53 34 11.7	E13 16 47.3	4495,3786	# Nbrb, Ihlenfelder Knick
+EOF
+
 my @de2002_data = split(/\n/, <<'EOF');
 # hafas		de2002
 9222,8787	31340,13451	# Duden/Mehringdamm
@@ -482,6 +491,7 @@ my @maps =
 	  ['b2001',     \@b2001_data,            'n2001'],
 	  ['b2002',     \@b2002_data,            'n2002'],
 	  ['p2002',     \@p2002_data,            'p2002'],
+	  ['nbrb2004',  \@nbrb2004_data,         'nbrb2004'],
 	  ['de2002',    \@de2002_data,           'de2002'],
 	  ['t99',       \@t99_data,              't99'],
 	  ['t2001',     \@t2001_data,            't2001'],

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Update.pm,v 1.11 2003/12/22 19:39:23 eserte Exp $
+# $Id: Update.pm,v 1.12 2004/04/26 21:38:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2003 Slaven Rezic. All rights reserved.
@@ -91,7 +91,7 @@ sub update_http {
     my $i = 0;
     foreach my $file (@files) {
 	my $src_file  = $root . "/" . $file;
-	$main::progress->Update($i++/$#files,
+	$main::progress->Update($i++/$#files, # / help emacs
 				-label => "Updating: " . basename($src_file));
 	my $dest_file = $dest . "/" . $file . "~";
 	my $real_dest_file = $dest . "/" . $file;
@@ -174,7 +174,7 @@ sub create_modified_devel {
     my(%args) = @_;
     my $rsync_include = $args{-rsyncinclude};
     my $rootdir = "..";
-    my $datadir = $rootdir . "/data";
+    my $datadir = $ENV{BBBIKE_DATADIR} || $rootdir . "/data";
     if (!-f "$rootdir/bbbike" || !-d $datadir || !-f "$rootdir/MANIFEST") {
 	die "Probably wrong rootdir: $rootdir from `pwd`";
     }

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.5 2004/04/19 21:32:43 eserte Exp $
+# $Id: Makefile,v 2.6 2004/04/26 21:38:49 eserte Exp eserte $
 #
 
 BBBIKEDIR=		..
@@ -72,6 +72,12 @@ strassen:	.strassen.tmp plaetze
 	-@$(READONLY) $@
 
 #XXX vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# radwege werden leicht anders konvertiert (approx. 1m Abweichung), aber
+# noch tolerierbar
+#
+# diff sieht zurzeit gut aus, Konvertierung kann erfolgen, wenn Tools
+# wie insert_points etc. funktionieren
+#
 # Call with:
 #   make -k origconvert origconvert-all
 #
@@ -434,7 +440,7 @@ check:	.check_strassen1 .check_strassen2 \
 	.check_label .check_vorfahrt \
 	.check_comments1 .check_comments2 .check_nolighting \
 	.check_housenumbers .check_sehenswuerdigkeit .check_green \
-	.check_brunnels \
+	.check_brunnels .check_comments_ferry \
 
 .check_strassen1:	.strassen.tmp add_str multi_bez_str
 	$(CHECK_STR_PLZ) -data .strassen.tmp
@@ -548,6 +554,10 @@ check:	.check_strassen1 .check_strassen2 \
 	    -against faehren -data $i
 	@touch $@
 .endfor
+
+.check_comments_ferry:	comments_ferry faehren
+	$(CHECK_NEIGHBOUR) -type standard -against faehren -data comments_ferry
+	@touch $@
 
 .check_nolighting:	nolighting strassen
 	$(CHECK_NEIGHBOUR) -type standard -data nolighting

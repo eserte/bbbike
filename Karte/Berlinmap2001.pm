@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlinmap2001.pm,v 1.3 2002/07/13 20:55:12 eserte Exp $
+# $Id: Berlinmap2001.pm,v 1.3 2002/07/13 20:55:12 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -33,8 +33,10 @@ sub new {
 
        Fs_base   => "map2001",
        Cache_dir => "$Karte::cache_root/map2001",
-       Root_URL  => "http://www.stadtplandienst.de/cities/b/b/pq/r195/b010404-std",
-       Users    => ['Stadtplandienst 2001'],
+       Root_URL  => "http://www.stadtpl" .
+       "andienst.de/cities/b/b/pq/r195/b010404-std",
+       Users    => ['Stadtp' .
+		    'landienst 2001'],
 
        X0 => -11129.5289835653,
        X1 => 2.62357003833534,

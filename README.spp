@@ -20,7 +20,7 @@
 ## perlreplace #HTTPCVS#    '"http://sourceforge.net/cvs/?group_id=19142"'
 ## perlreplace #CVSREPO#    '":pserver:anonymous\@cvs.bbbike.sourceforge.net:/cvsroot/bbbike"'
 ## dnl
-## dnl $Id: README.spp,v 2.26 2004/03/08 00:07:31 eserte Exp $
+## dnl $Id: README.spp,v 2.26 2004/03/08 00:07:31 eserte Exp eserte $
 ## dnl strpp source of README
 ## dnl
 =head1 README
@@ -577,11 +577,12 @@ DEVELOPMENT
 Der aktuelle Entwicklungsstand von BBBike kann über CVS
 verfolgt werden. Eine Anleitung dazu befindet sich unter L<#HTTPCVS#>,
 direkt erreichbar ist das Repository über anonymous login (ohne
-Passwort) auf C<#CVSREPO#>.
+Passwort) auf C<#CVSREPO#>. Das CVS enthält auch die aktuellen Daten.
 ## only EN
 The current BBBike development may be tracked via CVS. Look at
 L<#HTTPCVS#> for instructions on how to use CVS. For direct access use
 the repository on C<#CVSREPO#> with user=anonymous and no password.
+The CVS repository also contains the current data.
 ## yes
 
 
