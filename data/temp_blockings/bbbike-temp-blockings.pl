@@ -681,4 +681,22 @@ EOF
 userdel	1 19770,3343 19611,3167
 EOF
      },
+     { from  => 1094083200, # 2004-09-02 02:00
+       until => 1094428800, # 2004-09-06 02:00
+       text  => 'Turmstraße zwischen Kreuzung Beusselstraße und Kreuzung Stromstraße sowie Thusneldaallee: Straße gesperrt (Turmstraßenfest), Dauer: 03.09.2004 02:00 Uhr bis 06.09.2004 02:00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 5256,13420 5388,13398 5585,13368 5723,13346 5844,13334 5964,13324 6113,13313 6247,13304
+userdel	2 5975,13256 5964,13324
+EOF
+     },
+     { from  => 1094097600, # 2004-09-02 06:00
+       until => 1094248799, # 2004-09-03 23:59
+       text  => 'Erkstraße zwischen Kreuzung Karl-Marx-Straße und Kreuzung Sonnenallee Straße gesperrt (Spielfest), Dauer: 03.09.2004 06:00 Uhr bis 23:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 12598,8390 12771,8439
+userdel	2 12771,8439 12925,8494
+EOF
+     },
     );
