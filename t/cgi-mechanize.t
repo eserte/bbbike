@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.19 2005/01/02 22:48:30 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.20 2005/02/03 22:12:37 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -11,12 +11,12 @@ use strict;
 BEGIN {
     if (!eval q{
 	use WWW::Mechanize;
-	use WWW::Mechanize::FormFiller;
+	#use WWW::Mechanize::FormFiller;# not yet
 	use URI::URL;
 	use Test::More;
 	1;
     }) {
-	print "1..0 # skip: no Test::More and/or WWW::Mechanize modules\n";
+	print "1..0 # skip: no Test::More, URI::URL and/or WWW::Mechanize modules\n";
 	exit;
     }
 }
@@ -57,6 +57,29 @@ if ($do_xxx) {
 
 for my $browser (@browsers) {
 
+my $is_textbrowser = $browser =~ /lynx/i;
+my $can_javascript = $browser !~ /lynx/i;
+
+my $result_search_form_button = sub {
+    my($agent, $button_value) = @_;
+    if (!$can_javascript) {
+	$agent->follow($button_value);
+    } else {
+	my $form = $agent->form_name("search");
+	my($input) = grep { defined $_->{value} && $_->{value} eq $button_value } $form->inputs; # but $_->value should also work?!
+	# Extract javascript location.href=...
+	my $onclick = $input->{onclick};
+	if ($onclick =~ m{'(http://.*)'}) {
+	    my $new_url = $1;
+	    $agent->get($new_url);
+	} else {
+	    die "Cannot find link in <$onclick>";
+	}
+	#$agent->click_button(value => "Start beibehalten");
+    }
+};
+
+
 {
 my $agent = WWW::Mechanize->new();
 $agent->agent($browser);
@@ -67,7 +90,7 @@ $agent->get($cgiurl);
 like($agent->content, qr/BBBike/, "Emulating $browser, Startpage $cgiurl is not empty");
 my_tidy_check($agent);
 
-$agent->form(1) if $agent->forms and scalar @{$agent->forms};
+$agent->form_number(1) if $agent->forms and scalar @{$agent->forms};
 { local $^W; $agent->current_form->value('start', 'duden'); };
 { local $^W; $agent->current_form->value('ziel', 'sonntag'); };
 $agent->submit();
@@ -82,17 +105,18 @@ my_tidy_check($agent);
 like($agent->content, qr/Route/, "On the route result page");
 $agent->submit();
 
-like($agent->ct, qr{^image/});
+like($agent->ct, qr{^image/}, "Content is image");
 $agent->back();
 
 {
     my $formnr = (($agent->forms)[0]->attr("name") =~ /Ausweichroute/ ? 4 : 3);
-    $agent->form($formnr);
+    $agent->form_number($formnr);
 }
 $agent->submit();
 my_tidy_check($agent);
 
-$agent->follow('Start beibehalten');
+$result_search_form_button->($agent, 'Start beibehalten');
+
 my_tidy_check($agent);
 
 like($agent->content, qr/BBBike/, "On the startpage again ...");
@@ -115,7 +139,7 @@ my_tidy_check($agent);
 like($agent->content, qr/Route/, "On the route result page");
 {
     my $formnr = (($agent->forms)[0]->attr("name") =~ /Ausweichroute/ ? 3 : 2);
-    $agent->form($formnr);
+    $agent->form_number($formnr);
 }
 eval { local $^W; $agent->current_form->value('pref_speed', '25'); };
 is($@, "", "setting pref_speed ok");
@@ -130,11 +154,12 @@ is($@, "", "setting pref_green ok");
 $agent->submit();
 my_tidy_check($agent);
 
-like($agent->content, qr/Route/);
+like($agent->content, qr/Route/, "Route in content");
 
 ######################################################################
 # exact crossings
-$agent->follow('Start und Ziel neu eingeben');
+$result_search_form_button->($agent, 'Start und Ziel neu eingeben');
+#XXX del: $agent->follow('Start und Ziel neu eingeben');
 $agent->current_form->value('start', 'seume/simplon');
 $agent->current_form->value('ziel', 'brandenburger tor (mitte)');
 $agent->submit;
@@ -155,7 +180,7 @@ my $agent = WWW::Mechanize->new;
 $agent->env_proxy;
 
 $agent->get($cgiurl);
-$agent->form("BBBikeForm");
+$agent->form_name("BBBikeForm");
 { local $^W; $agent->current_form->value('start', 'kaiser-friedrich-str'); };
 { local $^W; $agent->current_form->value('ziel', 'helmholtzstr'); };
 $agent->submit();
@@ -164,7 +189,7 @@ my_tidy_check($agent);
 like($agent->content, qr/genaue.*startstr.*ausw/i, "Start is ambiguous");
 like($agent->content, qr/genaue.*zielstr.*ausw/i,  "Goal is ambiguous");
 
-$agent->form("BBBikeForm");
+$agent->form_name("BBBikeForm");
 
 my $form = $agent->current_form;
 my $input = $form->find_input("start2");
@@ -219,7 +244,7 @@ my $agent = WWW::Mechanize->new;
 $agent->env_proxy;
 
 $agent->get($cgiurl);
-$agent->form("BBBikeForm");
+$agent->form_name("BBBikeForm");
 { local $^W; $agent->current_form->value('start', 'am neuen palais'); };
 { local $^W; $agent->current_form->value('ziel', 'dudenstr'); };
 $agent->submit();
@@ -240,7 +265,7 @@ my $agent = WWW::Mechanize->new;
 $agent->env_proxy;
 
 $agent->get($cgiurl);
-$agent->form("BBBikeForm");
+$agent->form_name("BBBikeForm");
 { local $^W; $agent->current_form->value('start', 'Petri Dank'); };
 { local $^W; $agent->current_form->value('ziel', 'Römische Bäder'); };
 $agent->submit();
@@ -270,7 +295,7 @@ like($agent->content, qr{\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marqu
 # $agent->env_proxy;
 
 # $agent->get($cgiurl);
-# $agent->form("BBBikeForm");
+# $agent->form_name("BBBikeForm");
 # { local $^W; $agent->current_form->value('start', 'gitschiner str'); };
 # { local $^W; $agent->current_form->value('ziel', 'warschauer str'); };
 # $agent->submit();
@@ -292,7 +317,7 @@ my $agent = WWW::Mechanize->new;
 $agent->env_proxy;
 
 $agent->get($cgiurl);
-$agent->form("BBBikeForm");
+$agent->form_name("BBBikeForm");
 { local $^W; $agent->current_form->value('start', 'kleine parkstr'); };
 { local $^W; $agent->current_form->value('ziel', 's lehrter bahnhof'); };
 $agent->submit();
@@ -313,7 +338,7 @@ my $agent = WWW::Mechanize->new;
 $agent->env_proxy;
 
 $agent->get($cgiurl);
-$agent->form("BBBikeForm");
+$agent->form_name("BBBikeForm");
 { local $^W; $agent->current_form->value('start', 'brandenburger tor'); };
 { local $^W; $agent->current_form->value('ziel', 'seumestr'); };
 $agent->submit();

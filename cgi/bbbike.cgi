@@ -3640,7 +3640,7 @@ EOF
 
 	#print "<hr>";
 	print qq{<div class="box">};
-	print "<form action=\"$bbbike_script\">\n";
+	print "<form name='search' action=\"$bbbike_script\">\n";
 	print "<input type=hidden name=startc value=\"$zielcoord\">";
 	print "<input type=hidden name=zielc value=\"$startcoord\">";
 	print "<input type=hidden name=startname value=\"$zielname\">";

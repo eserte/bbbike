@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize-upload.t,v 1.2 2004/12/30 20:48:13 eserte Exp $
+# $Id: cgi-mechanize-upload.t,v 1.3 2005/02/03 21:40:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -10,7 +10,7 @@ use strict;
 
 BEGIN {
     if (!eval q{
-	use WWW::Mechanize 1.10; # images method
+	use WWW::Mechanize 1.08; # images method
 	use Test::More;
 	1;
     }) {
