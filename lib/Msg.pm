@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: Msg.pm,v 1.6 2002/11/23 15:57:44 eserte Exp $
+# $Id: Msg.pm,v 1.7 2003/11/11 23:09:10 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
 #
 
 package Msg;
@@ -17,12 +17,19 @@ use strict;
 use FindBin;
 use File::Basename;
 
-use vars qw($messages $lang $lang_messages $VERSION @EXPORT @EXPORT_OK $caller_file $frommain);
+use vars qw($messages $lang $lang_messages $VERSION @EXPORT @EXPORT_OK
+	    $caller_file $frommain $DEBUG);
 use base qw(Exporter);
 @EXPORT = qw(M Mfmt);
 @EXPORT_OK = qw(frommain);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+
+BEGIN {
+    if ($ENV{PERL_MSG_DEBUG}) {
+	$DEBUG = 1;
+    }
+}
 
 # XXX this is obfuscated... try something better
 CALLER_FILE: {
@@ -43,6 +50,10 @@ if (!defined $caller_file || -l $caller_file) {
     $caller_file = "$FindBin::RealBin/$FindBin::RealScript";
 }
 $caller_file =~ s/\.(pl|PL|plx|cgi)$//g; # strip extension
+
+if ($DEBUG) {
+    warn "caller_file is $caller_file\n";
+}
 
 # Stolen from CGI::Carp
 sub import {
@@ -83,6 +94,9 @@ sub setup_file (;$$) {
 	# normalize language
 	$lang =~ s/^([^_.-]+).*/$1/; # XXX better use I18N::Lang
     }
+    if ($DEBUG) {
+	warn "Use language $lang\n";
+    }
 
     require Safe;
     my $safe = Safe->new;
@@ -93,11 +107,16 @@ sub setup_file (;$$) {
  TRY: {
 	my @candidates = ("$base$lang");
 	foreach my $f (@candidates) {
-#warn "*** try $f...\n";
+	    if ($DEBUG) {
+		warn "Try candidate message file $f...\n";
+	    }
 	    if (-r $f && -f $f) {
 		$safe->rdo($f);
 		if (ref $lang_messages) {
 		    $messages = $lang_messages;
+		    if ($DEBUG) {
+			warn "... success!\n";
+		    }
 		    last TRY;
 		}
 	    }

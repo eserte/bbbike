@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Main.pm,v 1.10 2003/07/10 00:07:09 eserte Exp $
+# $Id: Main.pm,v 1.11 2003/11/11 22:34:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2002 Slaven Rezic. All rights reserved.
@@ -159,7 +159,7 @@ sub new {
 	$pos+=8;
     }
     $self->BoundingBox(\%bounding_box);
-
+    $self;
 }
 
 ######################################################################

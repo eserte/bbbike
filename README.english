@@ -205,11 +205,11 @@ BBBike.
 
 To switch the English language support, please set the LC_ALL,
 LC_MESSAGES, or LANG environment variables to "en" or something
-similar (for FreeBSD and Linux, this is "en-GB.ISO8859-1"). For Unix,
+similar (for FreeBSD and Linux, this is "en_GB.ISO8859-1"). For Unix,
 this can be done with
 
 
-	env LC_ALL=en-GB.ISO8859-1 perl bbbike
+	env LC_ALL=en_GB.ISO8859-1 perl bbbike
 
 
 BBBike is a memory and cpu hog. You need at least 16 MB RAM on i386

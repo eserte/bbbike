@@ -18,16 +18,6 @@ package main;
 
 use strict;
 
-# i18n functions M and Mfmt
-if (!eval '
-use Msg;
-1;
-') {
-    warn $@ if $@;
-    eval 'sub M ($) { $_[0] }';
-    eval 'sub Mfmt { sprintf(shift, @_) }';
-}
-
 use vars
   qw($bbbike_context $splash_screen
      $coords_ref $realcoords_ref $search_route_points_ref @realcoords

@@ -148,6 +148,18 @@ use strict;
 #BEGIN{mymstat("before use vars");}
 ## DEBUG_END
 
+# i18n functions M and Mfmt
+BEGIN {
+    if (!eval '
+use Msg; # This call has to be in bbbike!
+1;
+') {
+	warn $@ if $@;
+	eval 'sub M ($) { $_[0] }';
+	eval 'sub Mfmt { sprintf(shift, @_) }';
+    }
+}
+
 use BBBikeGlobalVars;
 
 # XXX move to BBBikeGlobalVars?
@@ -5724,14 +5736,8 @@ sub set_bindings {
     if ($right_is_popup) {
 	$popup_menu = $c->Menu(-title => M"Kartenmenü",
 			       -tearoff => $Tk::platform eq 'unix');
-	# XXX evtl. zwischen undo/del wechseln
-	my $inx = $popup_menu->index("last")+1;
 	$popup_menu->command(-label => M"Route löschen",
 			     -command => sub { delete_route() },
-#XXX problems: "Route löschen" should be active as long as the first point
-# is set. Also, both toggle functions should probably replace the
-# non-toggle versions. Or just dump this feature into the trashcan.
-# -command => sub { delete_route_gui_toggle($inx) },
 			    );
 	$popup_menu->command(-label => M"Suche wiederholen",
 			     -command => \&re_search_gui,

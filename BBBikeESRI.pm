@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeESRI.pm,v 1.13 2003/07/10 00:06:52 eserte Exp $
+# $Id: BBBikeESRI.pm,v 1.14 2003/11/11 23:00:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -47,7 +47,25 @@ sub as_bbd {
 
     $self->Main->init(-nopreload => 1, -force => 1);
 
-    my $conv = $args{-conv} || \&BBBikeESRI::null_conv;
+    my $conv = $args{-conv};
+
+    if ($args{-autoconv}) {
+	my $hdr = $self->Main->Header;
+	my $bbox = $hdr->BoundingBox;
+	my($cx,$cy) = (($bbox->{Xmax}+$bbox->{Xmin})/2,
+		       ($bbox->{Ymax}+$bbox->{Ymin})/2);
+	$conv = sub {
+	    # Internal note: 8500/12000 is the offset from Kleinmachnow
+	    # to Brandenburger Tor
+	    map {
+		sprintf "%d,%d", $_->[0] - $cx + 8500, $_->[1] - $cy + 12000;
+	    } @{ $_[0] }
+	}
+    }
+
+    if (!$conv) {
+	$conv = \&BBBikeESRI::null_conv;
+    }
 
     my $get_name;
     if ($args{-dbfinfo}) {

@@ -10,7 +10,7 @@ BBBikeRouting - frontend for using BBBike routing
     my $routing = BBBikeRouting->new;
     $routing->init_context;
     $routing->Start->Street("from street");
-    $routing->Goal->Street("from street");
+    $routing->Goal->Street("to street");
     $routing->search;
     print @{ $routing->RouteInfo };
 

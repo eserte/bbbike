@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.PL,v 1.3 2003/01/08 20:11:36 eserte Exp $
+# $Id: Makefile.PL,v 1.3 2003/01/08 20:11:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
 #
 # Mail: slaven@rezic.de
 # WWW:  http://bbbike.sourceforge.net
@@ -19,6 +19,7 @@ WriteMakefile
    'VERSION'       => '0.01',
    'EXE_FILES'     => ['esri2bbd.pl'],
    'PREREQ_PM'     => {Class::Accessor => undef,
+		       DBD::XBase => undef,
 		      },
 
    'PM' => {'Shapefile.pm'       => '$(INST_LIB)/ESRI/Shapefile.pm',

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ESRI.pm,v 1.4 2003/01/08 20:14:32 eserte Exp $
+# $Id: ESRI.pm,v 1.4 2003/01/08 20:14:32 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2001 Slaven Rezic. All rights reserved.
@@ -29,7 +29,9 @@ sub new {
     if ($filename) {
 	my $shapefile = new ESRI::Shapefile;
 	$shapefile->set_file($filename);
-	$self->{Data} = [ split /\n/, $shapefile->as_bbd(-dbfinfo => 'NAME') ];
+	$self->{Data} = [ split /\n/, $shapefile->as_bbd(-dbfinfo => 'NAME',
+							 -autoconv => 1,
+							) ];
     }
 
     $self;
