@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.64 2004/03/02 23:37:11 eserte Exp $
+# $Id: bbbike.cgi,v 6.64 2004/03/02 23:37:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -2783,7 +2783,7 @@ sub search_coord {
 		   ($sess ? (Session => $sess->{_session_id}) : ()),
 		   Path => [ map { join ",", @$_ } @{ $r->path }],
 		   LongLatPath => [ map {
-		       join ",", $Karte::Polar::obj->standard2map(@$_)
+		       join ",", $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(@$_))
 		   } @{ $r->path }],
 		  };
 	if ($output_as eq 'perldump') {

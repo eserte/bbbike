@@ -40,7 +40,7 @@ Legiendamm: Kopfsteinpflaster	Q2 11283,10981 11220,10839 11186,10843 11151,10781
 Segitzdamm: Kopfsteinpflaster	Q2 11151,10781 11133,10714 11157,10699 11134,10642 11090,10538 11062,10458 11009,10442 10971,10367 10962,10340 10974,10266 10910,10131
 Graefestr.: Kopfsteinpflaster, teils OK, teils uneben	Q1 11266,9496 11346,9655 11411,9810
 Graefestr.: mäßiges Kopfsteinpflaster	Q2 11507,10004 11411,9810
-Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11512,10105 11735,10022 11946,9913 12119,9823 12591,9584 12712,9523
+Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11512,10105 11735,10022 11946,9913 12119,9823 12276,9745 12439,9660 12591,9584 12712,9523
 Maybachufer: Kopfsteinpflaster	Q2 11543,10015 11880,9874 12093,9783 12257,9703 12569,9547 12785,9443 12841,9368 12870,9366
 Innstr.: Kopfsteinpflaster (mäßig bis schlecht)	Q2 13107,8343 13217,8493 13366,8694
 Elsenstr.: mäßiges Kopfsteinpflaster	Q2 13402,8741 13504,8882 13657,9063
@@ -90,7 +90,7 @@ Schulze-Boysen-Str: sehr guter Asphalt	Q0 15452,11330 15480,11392
 Buchberger Str.: teilweise mäßige Betonplatten	Q1 16225,11523 16373,11933
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, Richtung Westen 17km/h möglich (weil bergab)	Q3 7497,8168 7268,8225 7005,8150
 Ebersstr.: gutes Kopfsteinpflaster, >22 km/h	Q1 6935,8208 6918,8178 6658,8063
-Reichenberger Str.: Kopfsteinpflaster	Q2 11454,10400 11610,10305 11833,10206 12054,10108 12237,10023 12718,9802 12837,9748 12939,9703
+Reichenberger Str.: Kopfsteinpflaster	Q2 11454,10400 11610,10305 11833,10206 12054,10108 12237,10023 12403,9948 12562,9875 12718,9802 12837,9748 12939,9703
 Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11833,10206 11949,10414
 Aachener Str.: Kopfsteinpflaster	Q2 4687,8034 4688,8323 4623,8457
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13302,9894 13266,9851
@@ -327,6 +327,8 @@ Görlitzer Park: teils fester sandiger Weg	Q1 12761,10195 12770,10210 12779,10232
 Görlitzer Park: teils fester sandiger Weg	Q1 13145,9920 12869,10071 12802,10097
 Görlitzer Park: teils fester sandiger Weg	Q1 12817,9964 12848,10039 12869,10071 12904,10141 12911,10156
 Görlitzer Park, Rondell: teils fester sandiger Weg	Q1 12802,10097 12737,10051 12690,10062 12659,10119 12670,10176 12704,10201 12761,10195 12801,10146 12802,10097
+Görlitzer Park: teils fester sandiger Weg	Q1 12507,10130 12559,10220
+Görlitzer Park: schlechtes Kopfsteinpflaster	Q3 12559,10220 12603,10312
 Tiergartenufer: Parkweg (holprig)	Q2 6292,11427 6128,11500 5976,11603 5835,11768 5711,11841 5566,11860
 (Lichtensteinallee - Tiergartenufer): Parkweg	Q2 6309,11443 6128,11500
 Fasanerieallee: Parkweg	Q1 6435,11606 6459,11638 6540,11754 6685,11954
@@ -365,8 +367,8 @@ Am Heidekampgraben: Feldweg, teilweise etwas sandig	Q2 15053,7966 14969,7580 151
 An der Güterbahn: Parkweg	Q1 15330,1658 15205,1670 15110,1732 14968,1835 14845,1866 14705,1836 14630,1795
 Stubenrauchstr.: Kopfsteinpflaster (Richtung Westen)	Q2 16766,3002 16909,3193
 Falkensteinstr.: Kopfsteinpflaster	Q2 12911,10156 13031,10366 13135,10551
-Gürlitzer Str.: Kopfsteinpflaster (Radweg Richtung Nordwest OK); Schwellen an der Kreuzung Cuvrystr.	Q2 13221,10005 13053,10088 12911,10156
-Gürlitzer Str.: Kopfsteinpflaster (Radweg Richtung Nordwest OK)	Q2 12911,10156 12779,10232 12328,10442
+Görlitzer Str.: Kopfsteinpflaster (Radweg Richtung Nordwest OK); Schwellen an der Kreuzung Cuvrystr.	Q2 13221,10005 13053,10088 12911,10156
+Görlitzer Str.: Kopfsteinpflaster (Radweg Richtung Nordwest OK)	Q2 12911,10156 12779,10232 12603,10312 12328,10442
 Alter Markt: Kopfsteinpflaster	Q2 22502,4528 22472,4572 22383,4703
 Lüdersstr.: Kopfsteinpflaster	Q2 22383,4703 22377,4836
 Freiheit: Kopfsteinpflaster	Q2 22377,4836 22196,4847
@@ -800,3 +802,6 @@ Schenkendorfstr.: Kopfsteinpflaster	Q2 9674,9179 9689,9266
 Eylauer Str.: Kopfsteinpflaster	Q2 8480,9071 8472,8772
 Wolffring: schlechtes Kopfsteinpflaster	Q3 8670,8370 8527,8293
 Wolffring: Kopfsteinpflaster	Q2 8807,8353 8711,8371 8670,8370
+Forster Str.: teilweise Kopfsteinpflaster, teilweise Asphalt	Q1 12276,9745 12403,9948
+Liegnitzer Str.: Kopfsteinpflaster	Q2 12439,9660 12562,9875
+Dirschauer Str.: Kopfsteinpflaster	Q2 14032,11570 13970,11366
