@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.84 2003/05/17 00:39:26 eserte Exp eserte $
+# $Id: Makefile.PL,v 1.85 2003/06/01 22:13:20 eserte Exp $
 
 BEGIN {
     $^W = 0;

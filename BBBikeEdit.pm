@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.53 2003/05/09 22:52:18 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.54 2003/06/01 21:59:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003 Slaven Rezic. All rights reserved.
@@ -2423,11 +2423,8 @@ sub build_bbd_penalty_for_search {
 		}
 	    }
 	}
-warn scalar keys %$penalty;
-warn scalar keys %$net;
 	$penalty = $new_penalty;
     }
-warn scalar keys %$penalty;
 
     $main::penalty_subs{bbdpenalty} = sub {
 	my($pen, $next_node, $last_node) = @_;

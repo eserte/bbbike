@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 1.5 2003/06/01 21:43:42 eserte Exp $
+# $Id: bbbike,v 3.103 2003/06/01 21:54:15 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -209,7 +209,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.103 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -313,7 +313,7 @@ foreach (@Radwege::category_order) {
    'str_b' => ['b', 'b-bg', 'b-fg', 'b-label'],
    'str_r' => ['r', 'r-bg', 'r-fg', 'r-label'],
    'str_w' => ['w-out', 'w', 'i-out', 'i', 'w-label-bg', 'w-label'],
-   'str_f' => ['f', 'f-label-bg', 'f-label'],
+   'str_f' => ['f', 'f-label-bg', 'f-label', 'f-Pabove'],
    'str_g' => ['z', 'g', 'gP', 'gD'],
    'p_kn'  => ['kn', 'ki', 'rest'],
    'map'   => ['map'],
@@ -4485,6 +4485,7 @@ sub define_item_attribs {
 	 'U0' => '#a0a0b0', 	# U-Bahn in Bau
 	 'W'  => '#bad5f7', 	# Gewässer
 	 'P'  => '#76c48b', 	# Parks, Wälder
+	 'Pabove'  => '#76c48b', 	# same, but for higher stacking
 	 'Ae' => 'white',	# Flughäfen
 	 'F'  => 'grey99',	# sonstige Flächen
 	 'SW' => 'red',		# Sehenswürdigkeit
@@ -4551,6 +4552,7 @@ sub define_item_attribs {
 	(
 	 'W'  => 'helvetica %d italic',
 	 'P'  => 'helvetica %d',
+	 'Pabove' => 'helvetica %d',
 	 'Ae' => 'helvetica %d',
 	);
 
@@ -4770,6 +4772,7 @@ sub define_item_attribs {
 	 'NN' => [M"für Kfz gesperrte Straße", M"für Kfz gesperrte Straßen", undef],
 	 'BAB'=> [M"Autobahn", M"Autobahnen", undef],
 	 'P'  => [M"Park/Wald", M"Parks/Wälder", undef],
+	 'Pabove' => [M"Park/Wald", M"Parks/Wälder", undef],
 	 'F'  => [M"Flughafen", M"Flughäfen", undef],
 	 'Q0' => [M"sehr guter Belag", undef, undef,
 		  M"sehr guter Belag (Asphalt)"],
@@ -4830,7 +4833,7 @@ sub define_item_attribs {
     # normale Reihenfolge für das Übereinanderlegen bei restack()
     #XXX labels sollten grundsätzlich immer oben sein. Problematisch bei tag_groups
     @normal_stack_order =
-	(qw(map f w-out w i-out i e e-img
+	(qw(map f w-out w i-out i f-Pabove e e-img
 	    gP gD z g gP gD
 	    s-out l-out rw s-NN s-N s-H s-HH s-B s-BAB l v
 	    f-label-bg w-label-bg f-label w-label
@@ -4978,7 +4981,7 @@ sub generate_plot_functions {
 			   -fill    => $outline_color{$abk},
 			   -outline => $outline_color{$abk},
 			   -width   => 2,
-			   -tags    => "$abk-out",
+			   -tags    => ["$abk-out", "$abk-$category-out"],
 			  );
 		    }
 		    if (@coordlist == 2) {
@@ -4998,7 +5001,7 @@ sub generate_plot_functions {
 			     -fill    => $color,
 			     ($stipple ? (-stipple => $stipple) : ()),
 			     -tags    => [$abk, $strname,
-					  undef,$abk."-".($i-1)],
+					  "$abk-$category",$abk."-".($i-1)],
 			    );
 		    }
 

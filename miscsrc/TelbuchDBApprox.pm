@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: TelbuchDBApprox.pm,v 1.22 2003/03/28 22:24:02 eserte Exp eserte $
+# $Id: TelbuchDBApprox.pm,v 1.24 2003/06/01 21:56:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.

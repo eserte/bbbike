@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeExp.pm,v 1.13 2003/05/29 20:31:22 eserte Exp eserte $
+# $Id: BBBikeExp.pm,v 1.15 2003/06/01 22:12:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -179,7 +179,7 @@ sub BBBikeExp::draw_points {
     }
     $p_draw{$def->[0]} = 1;
     if ($def->[0] =~ /^L\d+/) {
-	p_str_binding($def->[0]);
+	std_p_binding($def->[0]);
     }
 }
 
