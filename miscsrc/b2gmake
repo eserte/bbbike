@@ -33,6 +33,7 @@ while(<STDIN>) {
     s/\$\{\.?MAKEFLAGS\}/-\${MAKEFLAGS}/g;
     s/\$\(\.?MAKEFLAGS\)/-\${MAKEFLAGS}/g;
     s/\$>/\$^/g;
+    s[\${(.*):M/(.*)/(.*)/}][\$($1:$2=$3)]g;
     print;
 }
 
