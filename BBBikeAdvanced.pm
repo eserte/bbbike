@@ -140,6 +140,10 @@ sub custom_draw {
 	      [M"BBBike-Route-Dateien", '.bbr'],
 	      [M"ESRI-Shape-Dateien", '.shp'],
 	      [M"MapInfo-Dateien", ['.mif','.MIF']],
+	      ($advanced
+	       ? [M"ARC/DCW/E00-Dateien", ['.e00','.E00']]
+	       : ()
+	      ),
 	      [M"Alle Dateien", '*'],
 	     ]
 	    );
