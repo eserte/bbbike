@@ -28,8 +28,9 @@ use lib (#"/home/e/eserte/src/bbbike",
 
 use CGI qw(:standard);
 use strict;
+use Cwd qw(abs_path);
 
-use vars qw(%cap);
+use vars qw(%cap %comment);
 
 $| = 1;
 
@@ -51,7 +52,11 @@ check_mapserver();
 
 use Data::Dumper;
 foreach my $key (sort keys %cap) {
-    print Data::Dumper->Dump([$cap{$key}],["*$key"]);
+    my $out = Data::Dumper->Dump([$cap{$key}],["*$key"]);
+    if (exists $comment{$key}) {
+	$out =~ s/$/ # $comment{$key}/;
+    }
+    print $out;
 }
 
 print <<EOF;
@@ -178,8 +183,19 @@ sub check_svg {
 }
 
 sub check_mapserver {
-    if (-d "$FindBin::RealBin/mapserver/brb") {
+    if (-d "$FindBin::RealBin/../mapserver/brb") {
 	$cap{'can_mapserver'} = 1; # maybe always set to one if there is an external mapserver instance
+	$cap{'mapserver_dir'} = abs_path("$FindBin::RealBin/../mapserver/brb");
+	$cap{'mapserver_prog_relurl'} = undef;
+	$comment{'mapserver_prog_relurl'} = "EDIT!";
+	$cap{'mapserver_prog_url'} = undef;
+	$comment{'mapserver_prog_url'} = "EDIT!";
+    }
+    if (-e "$FindBin::RealBin/miscsrc/bbd2esri") {
+	$cap{'bbd2esri_prog'} = "$FindBin::RealBin/miscsrc/bbd2esri";
+    } else {
+	$cap{'bbd2esri_prog'} = undef;
+	$comment{'bbd2esri_prog'} = "EDIT!";
     }
 }
 
