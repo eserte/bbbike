@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAlarm.pm,v 1.29 2004/10/02 18:17:52 eserte Exp $
+# $Id: BBBikeAlarm.pm,v 1.30 2004/11/06 22:52:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -41,7 +41,7 @@ my $install_datebook_additions = 1;
 
 use Time::Local;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
@@ -339,7 +339,8 @@ sub enter_alarm_small_dialog {
 					     -type => "OK");
 			    return undef;
 			}
-			tk_leave(sprintf "%02d%02d", $h_a, $m_a, -text => $text);
+			tk_leave(sprintf("%02d%02d", $h_a, $m_a),
+				 -text => $text);
 			$weiter = 1;
 		    })->grid(-row => 0, -column => 0);
     $e->bind("<Return>" => sub { $okb->invoke });
@@ -633,7 +634,10 @@ sub tk_interface {
 	$ack_t->Popup;
     }
 
-    add_tk_alarm($$, $end_time, M"verlassen");
+    {
+	(my $esc_text = $text) =~ s/\t/ /g;
+	add_tk_alarm($$, $end_time, $esc_text);
+    }
 
     $top->after
 	($wait*1000, sub {
@@ -655,7 +659,7 @@ sub tk_interface {
 		      $cb->configure
 			  (-bg => sprintf("#%02x%02x%02x", $red,0,0),
 			   -activebackground => sprintf("#%02x%02x%02x", $red,0,0),
-			   -text => "Leave\n" .
+			   -text => "$text\n" .
 			            sprintf("%02d:%02d", $l[2], $l[1]),
 			  );
 		      $red+=(8*$dir);
@@ -681,9 +685,15 @@ sub get_alarms_file {
 use constant LIST_HOST    => 0;
 use constant LIST_PID     => 1;
 use constant LIST_TIME    => 2;
-use constant LIST_RELTIME => 3;
-use constant LIST_DESC    => 4;
-use constant LIST_STATE   => 5;
+use constant LIST_DESC    => 3;
+use constant LIST_STATE   => 4;
+
+use constant COL_HOST    => 0;
+use constant COL_PID     => 1;
+use constant COL_TIME    => 2;
+use constant COL_RELTIME => 3;
+use constant COL_DESC    => 4;
+use constant COL_STATE   => 5;
 
 sub _get_host {
     eval 'require Sys::Hostname; Sys::Hostname::hostname();';
@@ -726,26 +736,26 @@ sub _get_host {
 				 }
 			     },
 			    )->pack(-fill => "both", -expand => 1);
-	$hl->headerCreate(LIST_HOST,    -text => M"Rechner");
-	$hl->headerCreate(LIST_PID,     -text => M"Pid");
-	$hl->headerCreate(LIST_TIME,    -text => M"Zeit");
-	$hl->headerCreate(LIST_RELTIME, -text => M"Verbl. Zeit");
-	$hl->headerCreate(LIST_DESC,    -text => M"Beschr.");
-	$hl->headerCreate(LIST_STATE,   -text => M"Status");
+	$hl->headerCreate(COL_HOST,    -text => M"Rechner");
+	$hl->headerCreate(COL_PID,     -text => M"Pid");
+	$hl->headerCreate(COL_TIME,    -text => M"Zeit");
+	$hl->headerCreate(COL_RELTIME, -text => M"Verbl. Zeit");
+	$hl->headerCreate(COL_DESC,    -text => M"Beschr.");
+	$hl->headerCreate(COL_STATE,   -text => M"Status");
 
 	my $i=0;
 	foreach my $result (@result) {
 	    $hl->add($i, -text => $result->[LIST_HOST], -data => $result);
-	    $hl->itemCreate($i, LIST_PID, -text => $result->[LIST_PID]);
-	    $hl->itemCreate($i, LIST_TIME, -text => scalar localtime $result->[LIST_TIME]);
+	    $hl->itemCreate($i, COL_PID, -text => $result->[LIST_PID]);
+	    $hl->itemCreate($i, COL_TIME, -text => scalar localtime $result->[LIST_TIME]);
 	    my $min = ($result->[LIST_TIME]-time)/60;
 	    if ($min < 0) {
-		$hl->itemCreate($i, LIST_RELTIME, -text => M"überfällig");
+		$hl->itemCreate($i, COL_RELTIME, -text => M"überfällig");
 	    } else {
-		$hl->itemCreate($i, LIST_RELTIME, -text => sprintf "%d:%02d h", $min/60, abs($min)%60);
+		$hl->itemCreate($i, COL_RELTIME, -text => sprintf "%d:%02d h", $min/60, abs($min)%60);
 	    }
-	    $hl->itemCreate($i, LIST_DESC, -text => $result->[LIST_DESC]);
-	    $hl->itemCreate($i, LIST_STATE, -text => $result->[LIST_STATE]);
+	    $hl->itemCreate($i, COL_DESC, -text => $result->[LIST_DESC]);
+	    $hl->itemCreate($i, COL_STATE, -text => $result->[LIST_STATE]);
 	    $i++;
 	}
     }
