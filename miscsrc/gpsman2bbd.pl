@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman2bbd.pl,v 2.7 2003/11/15 19:02:18 eserte Exp eserte $
+# $Id: gpsman2bbd.pl,v 2.8 2004/06/13 09:12:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -294,7 +294,7 @@ EOF
 	while (1) {
 	    my $r = $old_p->next;
 	    last if !@{ $r->[Strassen::COORDS()] };
-	    my $file = $r->[Strassen::NAME()] =~ m|^([^/]+)|;
+	    (my $file) = $r->[Strassen::NAME()] =~ m|^([^/]+)|;
 	    if (!$new_p{$file}) {
 		$p->push($r);
 	    }

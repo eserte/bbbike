@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.96 2004/06/10 22:23:43 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.96 2004/06/10 22:23:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2898,6 +2898,28 @@ sub active_temp_blockings_for_date_dialog {
 	}
 	$txt->insert("end", scalar Data::Dumper->new([@future], [])->Indent(1)->Dump);
     }
+}
+
+sub adjust_map_by_delta {
+    if (@coords != 2) {
+	status_message("Genau zwei Koordinaten erwartet!", "error");
+	return;
+    }
+    my $dx = $coords[1]->[0] - $coords[0]->[0];
+    my $dy = $coords[1]->[1] - $coords[0]->[1];
+ MAPITEMS:
+    for my $i ($c->find("withtag" => "map")) {
+	my @t = $c->gettags($i);
+	for (@t) {
+	    next MAPITEMS if ($_ eq 'map_adjusted');
+	}
+	$c->move($i, $dx, $dy);
+	$c->addtag("map_adjusted", withtag => $i);
+    }
+}
+
+sub reset_map_adjusted_tag {
+    $c->dtag("map_adjusted");
 }
 
 1;

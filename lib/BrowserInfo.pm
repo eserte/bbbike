@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.40 2004/01/17 13:45:25 eserte Exp eserte $
+# $Id: BrowserInfo.pm,v 1.41 2004/06/10 23:00:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.41 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, $q) = @_;

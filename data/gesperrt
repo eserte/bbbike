@@ -86,7 +86,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1 15657,10846 15871,10925
 Nöldnerplatz	1 15871,10925 16032,10842
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
-Grünau/B179	1 22092,999 22105,888 22075,779 22013,691 21847,794 21894,881 21990,979 22092,999
+Grünau/B179	1 22092,999 22105,888 22075,779 22012,706 21847,794 21894,881 21990,979 22092,999
 Dorfplatz	1 21051,-533 21022,-566 20873,-608 20836,-577 21011,-529 21051,-533
 B96a (Kfz-Straße)	2 20237,-581 20602,-318 21315,454 21563,782 21668,982 21829,1351 21862,1532 21819,1595 21541,1739
 Choriner Str.	1 10499,14067 10469,13866 10445,13752
@@ -186,7 +186,7 @@ Wundtstr.	1 2386,11183 2352,11041
 Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
 Gervinusstr.	1 3587,10768 3631,10784
 (Friedrich-Ludwig-Jahn-Sportpark)	2 10473,15549 10607,15142
-Darßer Str.	1 14995,18123 15062,18204 15177,18226 15253,18206
+Darßer Str.	1 15000,18056 15031,18106 15181,18137
 Schottstr.	1 16270,12261 16389,12394
 Rüdigerstr.	1 16389,12394 16468,12386
 Alfredstr.	1 16211,11951 16261,12224 16270,12261
@@ -214,10 +214,13 @@ Nuthestr.	1 -11356,-1317 -11463,-1232 -11613,-1125
 Rudolf-Breitscheid-Str.	2 -11061,-1744 -11140,-1702
 Rudolf-Breitscheid-Str.	1 -11061,-1744 -10997,-1787
 Geschwister-Scholl-Str.	1 -14469,-1792 -14193,-1621
-Altlandsberger Chaussee	1 40374,16786 40718,16783
+Altlandsberger Chaussee	1 40431,16690 40712,16743
 Bernau, Bahnhofstr.	1 22864,30560 22907,30433
 Elisenau - Börnicke: Privatgelände?	2 24360,26503 24427,26841
 B110 nach Swinoujscie: kein Grenzübergang	2 62279,166179 62934,166705
+Einbahnstraßen in Altlandsberg	1 32224,18110 32181,18009 32100,18012 32115,18106 32224,18110
+Joachimsthal (Am Bahnhof)	1 32533,64285 32587,64375 32912,64212 32966,64019
+Joachimsthal	1 32966,64019 32533,64285
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s 12119,9823 11946,9913 11735,10022 11512,10105
 Vorbergstr.	1s 7315,9156 7137,9216 7022,9211
 Gubener Str.	1s 13411,11899 13362,12002
@@ -321,8 +324,8 @@ Dorotheenstr. an der US-Botschaft	3 8907,12472 9112,12499 9323,12528
 Dorotheenstr. an der US-Botschaft	3 9323,12528 9112,12499 8907,12472
 tragen (Eisebahnbrücke Templiner See)	0:60:-231 -15497,-4614
 tragen (Eisebahnbrücke Templiner See)	0:60:-233 -15779,-4402
-tragen (Eisebahnbrücke Caputh)	0:60 -17978,-7525
-tragen (Eisebahnbrücke Caputh)	0:60:-180 -17978,-7375
+tragen (Eisebahnbrücke Caputh)	0:60 -18009,-7528
+tragen (Eisebahnbrücke Caputh)	0:60:-168 -17978,-7375
 tragen (Eisebahnbrücke Werder)	0:60 -21063,-2021
 tragen (Eisebahnbrücke Werder)	0:60:75 -21210,-2058
 tragen (Brücke)	0:60:-143 13383,8716
@@ -345,7 +348,7 @@ tragen (Fußgängerbrücke Ostkreuz)	0:60:13 14739,10892
 tragen (Durchgang unter der U-Bahn zur Warschauer Str.)	0:30:-255 13437,10992
 tragen (Treppe)	0:30:-87 7370,6451
 tragen (Bahnübergang Bhf. Satzkorn)	0:60:89 -19150,7320
-tragen (Bahnübergang Bhf. Satzkorn)	0:60:71 -19214,7298
+tragen (Bahnübergang Bhf. Satzkorn)	0:60:59 -19190,7296
 schieben (Rampe Schmöckwitzwerdersteg)	0:30:14 30533,-3124
 schieben (Rampe Schmöckwitzwerdersteg)	0:30:17 30546,-3072
 tragen (Treppe Mansfelder Str.)	0:30:90 3620,9330
@@ -375,9 +378,10 @@ Drängelgitter (Hoher Bogen)	BNP:5:48 3831,8674
 Schranke (Krankenhaus Herzberge)	BNP:5:88 17247,13519
 zwei Drängelgitter (S-Bhf. Grunewald)	BNP:10:-57 731,9103
 Drängelgitter (vor der Straßenbahnhaltestelle)	BNP:5:-115 29092,4761
-Schranke (Berliner Str./Woltersdorf)	BNP:5:-103 32192,5915
+Schranke (Berliner Str./Woltersdorf)	BNP:5:-105 32192,5915
 Schranke, schwer passierbarf (Neue Steinmetzstr.)	BNP:10:-201 7628,9364
 Schranke (Neue Steinmetzstr.)	BNP:5:-191 7612,9446
+Drängelgitter (Radweg nach Bötzow)	BNP:5:-260 -5890,25875
 Entlastungsstr. (Tiergartentunnel, längerfristig)	1:inwork 8172,11679 8129,11735 8056,12061 8063,12182
 Bebelplatz (Bauarbeiten)	2:inwork 9782,12393 9803,12243
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10177,12493
@@ -397,21 +401,19 @@ Rathenower Straße (Tiergarten) in beiden Richtungen zwischen Quitzowstr. und Ste
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen; schlechte Straße; Vollsperrung; 01.11.96-unbekannt	2:inwork -50149,24689 -50016,24414 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
 L 11; (Bad Wilsnack-Wittenberge); Bahnübergang zw. Klein Lüben u. Kuhblank; Brückenbauarbeiten; Vollsperrung; 16.10.2003-30.06.2004	2:inwork -94968,62636 -94965,61610
 L 39; (ASFriedersdorf-Neu Zittau); keine Brücke ü. Oder-Spree-Kanal; kein Bw ü. Oder-Spree-Kanal; Vollsperrung; 00:00:00-unbekannt	2:inwork 35335,-6272 35143,-5650
-L 40; zw. Großbeeren und Güterfelde; Bau der L 40n; Vollsperrung; 16.06.2003-28.06.2004	2:inwork 1663,-5427 2031,-5468 2565,-6108 2544,-6344
+L 40; zw. Großbeeren und Güterfelde; Bau der L 40n; Vollsperrung; 16.06.2003-28.06.2004	2:inwork 1663,-5427 2031,-5468 2471,-6025 2356,-6128 2443,-6309
 L 70 (Doberlug Kirchhain-Dahme); zw. B87 Hohenbuckow u. Hillmersdorf; Fahrbahnschäden; Vollsperrung; 22.05.97-unbekannt	2:inwork 17023,-71738 17783,-72721 17979,-73530 17960,-73915 17961,-74364 18228,-75553 18187,-76301 18061,-76878
 L 75; (B 96a Mahlow-Berlin); zwischen B 96a und Klein Ziethen; Neubau B 96; Vollsperrung; 04.08.2003-28.07.2004	2:inwork 13348,-3283 13289,-4660
 L 76; (Mahlow-Teltow); zw. B101 nördl. Großbeeren und B101n; Straßenbauarb. B101n; Vollsperrung; 29.11.2003-31.08.2004	2:inwork 5394,-3053 4260,-2373
 L 24; (Greiffenberg-Gerswalde); bei Pfingstberg, Brücke über DB; Brückenneubau; Vollsperrung; 19.01.2004-31.08.2004	2:inwork 41666,80812 41292,81052
 B 179; (Spreewaldstr., Karl-Liebknecht-Str.); zw. Bahnübergang und nördl. A.-Bebel-Str.; grundh. Straßenbau; Vollsperrung; 01.04.2004-31.12.2005	2:inwork 26612,-15094 26583,-15677
-B 168; (Lieberose-Beeskow); zw. L434 (Schadow-Trebitz) u. Abzw. Karras; Straßenbauarbeiten; Vollsperrung; 08.03.2004-15.06.2004 	2:inwork 70237,-35915 70757,-36882 71170,-37973 71792,-39389
 L 23; (B 1 (bei Tasdorf)-Hennickendorf); bei Hennickendorf, Brücke über Werkgleis; Brückenneubau; Vollsperrung; 15.03.2004-30.06.2004 	2:inwork 39970,11328 40399,11613
 L 34; (Reichenberg-B168 (Bollersdorfer Kreisel)); bei Bollersdorf, Brücke über Sophienfließ; Brückenneubau; Vollsperrung; 15.03.2004-27.08.2004 	2:inwork 55194,21167 55043,21042
 B 167; (Herzberg-Neuruppin); OL Alt Ruppin, Rhinbrücke    Brückenneubau    Vollsperrung    02.03.2004-31.12.2005	2:inwork -28477,59467 -28692,59635 -28866,59954
-L 22; (Zehdenick-Gransee); OD Gransee, Krz. Berliner Damm/Strelitzer    Str.    Bau Kreisverkehrsplatz    Vollsperrung    22.03.2004-30.08.2004	BNP:60 -6985,66460
+L 22; (Zehdenick-Gransee); OD Gransee, Krz. Berliner Damm/Strelitzer    Str.    Bau Kreisverkehrsplatz    Vollsperrung    22.03.2004-30.08.2004	BNP:60 -7071,66471
 K 6422; (Petershagener Str.); OL Fredersdorf, zw. E.-Thälmann-Str. u. Dorfstr.; Bau Kreisverkehr; Vollsperrung; 13.04.2004-15.07.2004	2:inwork 34139,13113 34896,13562 35234,13541
 L 142; OD Wusterhausen, Brücke über Klempnitz; Brückensanierung; Vollsperrung; 04.05.2004-16.07.2004	2:inwork -55166,53457 -54776,53333
-L 239; (Kerkow (Angermünde)-Joachimsthal); zwischen Joachimsthal und    Glambeck    Instandsetzung Durchlässe    Vollsperrung    10.05.2004-11.06.2004	2:inwork 34297,66446 35512,66695
 L 592; Brücken über Pulsnitz,Binnengraben und zwei Durchlässe; Ersatzneubau; Vollsperrung; 10.05.2004-19.11.2004	2:inwork 25830,-109886 26164,-109378
-L 75; (Karl-Marx-Straße); von Dorfstraße bis Friedhofsweg; Straßenbauarbeiten; Vollsperrung; 24.05.2004-20.12.2004	2:inwork 13201,-673 13222,-1281
+L 75; (Karl-Marx-Straße); von Dorfstraße bis Friedhofsweg; Straßenbauarbeiten; Vollsperrung; 24.05.2004-20.12.2004	2:inwork 13225,-681 13309,-1268
 L 912; (Päwesin-Gortz); zw. OA Päwesin u. Bagow, Brücke über Seeverbindung; Brückenneubau; Vollsperrung; 10.05.2004-06.11.2004	2:inwork -36427,10861 -37026,11176
 L 71; (B 96-Drahnsdorf); bei Krossen Brücke über Vorflutkanal; Brückenneubau; Vollsperrung; 25.03.2004-31.07.2004	2:inwork 24195,-54396 24639,-53978

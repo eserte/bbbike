@@ -2855,6 +2855,14 @@ sub do_iconframe {
 	$kcm->command(-label => M"Karten löschen",
 		      -command => \&delete_map,
 		     );
+	if ($advanced) {
+	    $kcm->command(-label => M"Karten um Delta verschieben",
+			  -command => \&adjust_map_by_delta,
+			 );
+	    $kcm->command(-label => M"Reset map_adjusted-Tag",
+			  -command => \&reset_map_adjusted_tag,
+			 );
+	}
 	$kcm->separator;
 	foreach my $color ([M"Farbe (Photo)", 'color'],
 			   [M"Farbe (Pixmap)", 'pixmap'],

@@ -1,4 +1,4 @@
-# $Id: orte2-orig,v 3.2 2004/06/05 01:26:34 eserte Exp eserte $
+# $Id: orte2-orig,v 4.1 2004/06/11 21:12:21 eserte Exp eserte $
 # noch weiter entfernte Orte
 # Mecklenburg-Vorpommern, Brandenburg
 Rostock	5 -79160,185302
@@ -52,7 +52,7 @@ Groß Friedenwalde	1 35554,80921
 Klein Friedenwalde	0 33769,80829
 Friedenfelde	1 31236,81841
 Neudorf|(Friedenfelde)	0 30311,82061
-Milmersdorf	2 25166,78466
+Milmersdorf	2 25146,78471
 Mittenwalde|b. Templin	2 26483,86997
 Netzow	0 15425,83562
 Metzelthin	0 15563,86309
@@ -270,11 +270,11 @@ Lenzen	3 -122199,74069
 Penkun	3 65597,100079
 Wollin|(Penkun)	1 64241,102111
 Krackow	1 67229,105204
-Glasow|(Rangowbruch)	1 67645,109130
+Glasow|(Rangowbruch)	1 67637,109062
 Wollschow	1 61885,112074
 Sonnenberg|(bei Retzin)	0 70127,111146
-Retzin	0 66873,112962
-Rammin	0 68603,113156
+Retzin	0 66800,112881
+Ramin	0 68603,113156
 Löcknitz|(Vorpommern)	2 63107,117496
 Betzin	1 -33911,38631
 Brunne	1 -36131,39797
@@ -294,7 +294,7 @@ Blumenow	1 -1232,77061
 Barsdorf	1 1242,77330
 Beutel	1 8215,78783
 Tornow|bei Marienthal	1 1320,73046
-Dannenwalde|bei Gransee	1 -5762,74600
+Dannenwalde|bei Gransee	1 -5753,74728
 Altglobsow	1 -10726,80270
 Bredereiche	1 -1997,81198
 Marienthal	1 780,72281
@@ -385,12 +385,12 @@ Nienburg	3 -99329,-65133
 Bernburg	3 -100606,-69760
 Aschersleben	4 -120131,-74464
 Ermsleben	3 -128061,-77502
-Köthen	4 -85112,-74651
-Quellendorf	2 -74640,-74820
+Köthen	4 -85143,-74737
+Quellendorf	2 -74525,-74893
 Prosigk	2 -79460,-80066
 Libbesdorf	1 -75991,-72165
-Kochstedt (Dessau)	0 -70807,-69205
-Mosigkau (Dessau)	0 -72989,-68407
+Kochstedt (Dessau)	0 -71143,-69262
+Mosigkau (Dessau)	0 -73018,-68393
 Reupzig	1 -78953,-76175
 Scheuder	1 -78219,-72693
 Lausigk	0 -77648,-73754
@@ -398,11 +398,12 @@ Frassdorf	1 -75564,-77078
 Elsnigk	1 -79490,-69929
 Reppichau	1 -77937,-67763
 Grossbadegast	1 -81506,-76736
-Chorau	1 -75424,-67292
-Osternienburg	2 -81456,-69770
-Elsdorf (Köthen)	0 -84712,-71325
-Porst (Köthen)	0 -83306,-72395
-Dohndorf	1 -91929,-77735
+Chorau	1 -75093,-67200
+Osternienburg	2 -81406,-69725
+Elsdorf (Köthen)	0 -84643,-71312
+Micheln	1 -85300,-68006
+Porst (Köthen)	0 -83331,-72431
+Dohndorf	1 -92206,-77781
 Biendorf	1 -93381,-74606
 Preußlitz	1 -96035,-76870
 Lebendorf	2 -97750,-78712
@@ -608,7 +609,7 @@ Parey	2 -85686,-4539
 Torfhaus	0 -182998,-70896
 Barby	3 -91709,-50815
 Dessau	5 -66987,-65347
-Aken	3 -80426,-63541
+Aken	3 -80381,-63562
 Loburg	3 -79120,-33822
 Reetz	1 -58829,-34179
 Wiesenburg	2 -53191,-33648
@@ -622,10 +623,10 @@ Parchau	2 -92425,-11219
 Ihleburg	2 -89892,-10303
 Hohenseeden	2 -84072,-11761
 Gladau	2 -78364,-12779
-Karow|b. Genthin	2 -66672,-8457
+Karow|b. Genthin	2 -66668,-8356
 Bergzow	2 -81235,-2890
-Zitz	2 -62709,-10371
-Rogäsen	2 -60374,-10674
+Zitz	2 -62793,-10268
+Rogäsen	2 -60468,-10637
 Viesen	1 -58228,-10328
 Mahlenzien	0 -54749,-9973
 Wenzlow	1 -53700,-13146
@@ -648,7 +649,7 @@ Bücknitz	1 -62153,-15009
 Glienecke|b. Ziesar	2 -59014,-15413
 Plaue	0 -56732,-1070
 Lostau	2 -102355,-23832
-Wusterwitz	2 -58576,-5370
+Wusterwitz	2 -58606,-5512
 Kirchmöser Dorf	0 -55628,-4672
 Kade	1 -66484,-4328
 Oschersleben	3 -136861,-44762
@@ -788,9 +789,9 @@ Radeland	1 21448,-38755
 Dornswalde	1 24749,-39659
 Mückendorf	1 17021,-36490
 Kemlitz	0 15912,-43922
-Hohenfelde	1 68859,82022
-Kunow	1 67037,82580
-Woltersorf|bei Casekow	1 64262,87128
+Hohenfelde	1 68737,82062
+Kunow	1 66925,82537
+Woltersorf|bei Casekow	1 64187,87200
 Casekow	2 63395,90587
 Wartin	2 59916,94943
 Luckow-Petershagen	2 63888,93681

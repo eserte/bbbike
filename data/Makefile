@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.16 2004/06/10 22:03:05 eserte Exp $
+# $Id: Makefile,v 2.16 2004/06/10 22:03:05 eserte Exp eserte $
 #
 
 BBBIKEDIR=		..
@@ -32,16 +32,16 @@ TARGETS+=	wasserstrassen wasserumland wasserumland2
 TARGETS+=	sbahn sbahnhof sbahnhof_bg rbahn rbahnhof
 TARGETS+=	ubahn ubahnhof ubahnhof_bg
 TARGETS+=	faehren hoehe orte orte2 orte_city ampeln ampelschaltung
-TARGETS+=	gesperrt gesperrt_car
-.for i in u s r
-TARGETS+=	gesperrt_$(i)
-.endfor
 TARGETS+=	plz berlin potsdam deutschland
 TARGETS+=	sehenswuerdigkeit obst radwege radwege_exact
 TARGETS+=	qualitaet_s qualitaet_l
 TARGETS+=	handicap_s handicap_l
 TARGETS+=	vorfahrt nolighting
 TARGETS+=	housenumbers green brunnels mount
+TARGETS+=	gesperrt gesperrt_car
+.for i in u s r
+TARGETS+=	gesperrt_$(i)
+.endfor
 TARGETS+=	${COMMENTS_PARTIAL}
 
 TARGETS_DISABLED=	label relation_gps 

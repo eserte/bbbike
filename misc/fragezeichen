@@ -49,7 +49,6 @@ Mauerweg Schönow: befahrbar, Qualität?	? 277,-1 135,-29 118,407 -2,1105
 Str. 19 (Am Nordgraben): Qualität? (westl. Seite: mäßiger Feldweg)	? 10228,21940 11008,21725 11183,21598 11345,21360 11733,21134
 Rosenthaler Str./Str. 19: Qualität?	? 11905,21565 11021,21723
 Möllersdorfer Weg: Qualität	? 9813,24015 10106,24090 10855,24664 11150,24434 11514,24284
-Seeburger Chaussee: noch befahrbar, besonders am nördl. Ende?	?? -10612,13251 -10743,13677 -11022,13761
 Staakener Heuweg: Qualität (nur mäßig)?, für Kfz befahrbar?	? -7506,15938 -7428,16314
 Zum Eiskeller: Qualität OK?	? -6668,20809 -7015,20320 -7572,20024 -7566,19861 -7980,19618 -7960,19066
 Mauerweg Spandau: Qualität OK, Wegführung? Geht es weiter als bis zur Radelandstr.?	? -6668,20809 -7570,20029 -7738,19974 -7928,19807 -8407,19761 -8450,19469 -8248,19331 -8153,19024 -7955,19068 -7012,19435 -6842,19290 -6691,18808 -6669,18290 -6890,17664
@@ -89,7 +88,8 @@ Wuhletalstr: laut Radzeit Radstreifen (wo genau?)	? 21906,17419 21799,17456 2154
 Südostallee: hier auch Radstreifen? (laut Radzeit)	? 17645,5328 16861,5935
 Skandinavische Str.: auf der westlichen Seite Suggestivstreifen (laut Radzeit)?	? 17363,11972 17082,11909 16958,11778
 Ortsteil Eichwerder? (laut S-Bahn-Wanderungsheft)	? 20625,28887
-Panke-Rad- und Wanderweg (laut S-Bahn-Wanderungsheft), auch Teil des Radfernwanderweges Berlin-Usedom?	? 23079,30454 23383,30903 23576,30754 23445,30325 22182,29536 20561,28929 20240,29226 18942,28340
+Panke-Rad- und Wanderweg (laut S-Bahn-Wanderungsheft), auch Teil des Radfernwanderweges Berlin-Usedom? Der äußerste nördliche Teil ist anscheinend nur für Wanderer geeignet. 	? 23079,30454 23383,30903 23576,30754 23445,30325 22182,29536 20561,28929 20240,29226 18942,28340
+Panke-Radweg: hier startet er	? 22900,30340 23053,30081
 Radfernwanderweges Berlin-Usedom? (und wie weiter?)	? 24208,35693 23713,37031 23746,39567 24354,40323
 Fähre Liepnitzsee zum Großen Werder: wo genau?	? 16050,38181 16455,37790
 Prenden - Sophienstädt - Marienwerder: Hier ist Loblo langgefahren: Qualität?	? 20114,42825 20374,43076 20396,43307 20955,43367 21496,43924 22253,44600 22923,45477 23062,46171 22746,46867 22758,47772 23002,48254 22897,48799
@@ -167,7 +167,6 @@ Am Neuen Palais: Radweg vorhanden?	? -15796,-1709 -15799,-1352
 Maulbeerallee: teilweise Radweg vorhanden?	? -15719,-412 -15248,-668 -14669,-686 -14391,-665
 B273: hier auch Radweg?	? -14714,286 -14842,414 -15527,795 -16640,1304 -16876,1495
 Leipziger Str., Potsdam: teilweise Suggestivstreifen?	? -12397,-2195 -12716,-2238 -12780,-2410 -13075,-2901
-Friedrich-Engels-Str.: Radweg vorhanden?	? -12397,-2195 -12098,-2173 -11656,-2237 -11507,-2130
 Heinrich-Mann-Allee.: Radweg vorhanden? wie weit?	? -12397,-2195 -11781,-2729 -11667,-3047 -11153,-3534 -10811,-3874 -10746,-4024 -9972,-5601 -9779,-6007
 Bernau - Zepernick: teilweise (schlechte) Radwege, wo genau?	? 22152,30329 21872,30139 21561,30131 21172,29984 21085,29942 20499,29310 20472,28570 20017,28297 19475,27877
 Stolzenhagen - Kreuzbruch: Qualität?	? 11997,41511 10934,44311 10485,45287 9925,45458
@@ -211,6 +210,13 @@ Ab 2004-07-01 wird der Bahnübergang gesperrt	? 830,13353 801,13323
 Fahrenwalde - Brüssow: Bauarbeiten, Straße wahrscheinlich gesperrt. Nach den Bauarbeiten kann Q3 wahrscheinlich entfernt werden	? 54777,113837 53977,114327 53445,115324 53340,115664
 Radwege in Turm- und Gotzkowskystr. dauerhaft gesperrt?	? 5256,13420 5388,13398 5328,13019
 laut Tagesspiegel wird in Zukunft hier das Kopfsteinpflaster durch Asphalt ersetzt; und laut <od59ac.bu.ln@leon.cluster-labs.de> zurzeit eher Q3?	? -596,23009 -862,22946 -1484,22799
+eigentlich ein Knoten	? -9586,13296
+eigentlich ein Knoten	? -11250,13690
+Radweg auf der östlichen Seite? (nicht sicher)	? -8644,9593 -8693,10340 -8697,10653 -8899,11121
+B109n bei Großbeeren: ist diese Streckenführung temporär?	? 2715,-6365 2890,-6178 3131,-6334
+bei Großbeeren: zurzeit wird die Hauptstraße noch weiter nördlich geführt, aber die künftige (?) Trasse ist bereits befahrbar	? 3242,-6330 3610,-6085
+Joachimsthal - B198: Qualität unbekannt, Teil der Route Berlin-Usedom?	? 32533,64285 32450,63887 32300,63887 32275,63125 32562,62525 32050,62162 31462,62112 30925,61812 31000,61437
+Wallmow - Grünberg: wie geht es hier weiter?	? 55550,105487 57224,106265
 wirklich?	? 9215,3599
 geplante Ampel in Hellersdorf	? 24321,14448
 geplante Ampel in Hellersdorf	? 25094,14209
@@ -220,6 +226,7 @@ geplante Ampel in der Johannisthaler	? 14196,2876
 (evtl. ident mit 14420,7937)	? 22912,11264
 geschlossen bei Bedarf (?)	Zbr 27657,-11741
 	? 11939,16084
+S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?)	B 40248,14503
 Rufacher Weg: bedingt geeignet (laut ADFC-Karte)	? 12255,2058 12582,2129 12738,2162
 (Der Breite Weg): wahrscheinlich Waldweg (laut ADFC-Karte)	? 1464,17373 1549,17718 1687,18141
 (Uferweg): wahrscheinlich Waldweg (laut ADFC-Karte)	? -389,17140 -280,17229 -266,17335 -215,17385 -141,17377 61,17495 110,17489 151,17537 187,17663 235,17704 260,17788 258,17880 381,18186 416,18386 448,18476 496,18514 586,18540 680,18631 757,18673 768,18742 970,18919 1006,18972 1122,19036 1189,19018 1200,18969 1369,18958 1457,18969 1512,18934

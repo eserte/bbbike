@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Demap2002.pm,v 1.1 2003/01/22 13:47:18 eserte Exp eserte $
+# $Id: Demap2002.pm,v 1.2 2004/06/10 23:04:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.

@@ -372,7 +372,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'gesperrt',
      },
      { from  => 1086041261, # 2004-06-01 00:07
-       until => 1086991200, # 2004-06-12 00:00
+       until => Time::Local::timelocal(reverse(2004-1900,6-1,16,23,59,59)),
        file  => 'liesenstr.bbd',
        text  => 'Liesenstr. (Mitte) Richtung Süden zwischen Gartenstr. und Chausseestr. Baustelle, Fahrtrichtung gesperrt (bis 11.06.2004)',
        type  => 'handicap',

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Karte.pm,v 1.40 2004/03/08 00:08:07 eserte Exp $
+# $Id: Karte.pm,v 1.41 2004/06/10 23:03:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2002 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package Karte;
 #use AutoLoader 'AUTOLOAD';
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.40 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.41 $ =~ /(\d+)\.(\d+)/);
 
 use strict;
 use vars qw(%map %map_by_modname %map_by_coordsys @map $cache_root $map_root);

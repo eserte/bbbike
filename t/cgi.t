@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.25 2004/06/03 07:42:35 eserte Exp $
+# $Id: cgi.t,v 1.26 2004/06/13 22:01:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004 Slaven Rezic. All rights reserved.
@@ -245,7 +245,6 @@ for my $cgiurl (@urls) {
 	$content = uncompr($res);
 	like($content, qr/Sekunden.*Zeitverlust/);
 
-    XXX:
 	# This is only correct with use_exact_streetchooser=true
 	$req = new HTTP::Request
 	    ('GET', "$action?startc=13332%2C15765&zielc=-10825,-62&startname=Berliner+Allee&zielname=Babelsberg+%28Potsdam%29&pref_seen=1&pref_speed=21&pref_cat=&pref_quality=&output_as=perldump&scope=");
@@ -266,6 +265,7 @@ for my $cgiurl (@urls) {
 	    ok(0);
 	}
 
+    XXX:
 	# This created degenerated routes because of missing handling of "B"
 	# (Bundesstraßen) category
 	$req = new HTTP::Request
@@ -278,7 +278,7 @@ for my $cgiurl (@urls) {
 	if (is(ref $route, "HASH")) {
 	    ok($route->{Len} > 30000 && $route->{Len} < 40000,
 	       "check route length")
-		or diag "Route length: $route->{Len}";
+		or diag "Route length: $route->{Len}, Route is " . Dumper($route->{Route});
 	} else {
 	    diag($@);
 	    ok(0);

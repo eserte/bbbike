@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.17 2004/06/01 06:03:37 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.18 2004/06/13 22:01:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -163,10 +163,10 @@ if (exists $output_as{'text'}) {
 if (exists $output_as{'bbd'}) {
     my $fh = file_or_stdout($output_as{bbd});
 
-    require "correct_data.pl";
-    local $BBBike::CorrectData::minpoints = 5;
-    local @BBBike::CorrectData::ref_dist = (10000,20000,40000,80000,120000);
-    local $BBBike::CorrectData::reverse = 1;
+#     require "correct_data.pl";
+#     local $BBBike::CorrectData::minpoints = 5;
+#     local @BBBike::CorrectData::ref_dist = (10000,20000,40000,80000,120000);
+#     local $BBBike::CorrectData::reverse = 1;
 
     require Karte;
     Karte::preload(qw(Standard Polar));
@@ -176,7 +176,7 @@ if (exists $output_as{'bbd'}) {
 	$text = state_out($info) . $text;
 	my($x1, $y1) = map { int } $Karte::Polar::obj->map2standard
 	    ($info->{"x"}, $info->{"y"});
-	($x1, $y1) = BBBike::CorrectData::convert_record_for_x_y($x1, $y1);
+#	($x1, $y1) = BBBike::CorrectData::convert_record_for_x_y($x1, $y1);
 	my $cat = get_bbd_category($info);
 	print $fh "$text\t$cat $x1,$y1\n";
     }
@@ -499,9 +499,9 @@ sub get_bbd_category {
 __END__
 
 # cd .../bbbike/miscsrc
-# cp -f /tmp/vmz.yaml /tmp/oldvmz.yaml
-# ./vmzrobot.pl -f -outputas yaml:/tmp/newvmz.yaml || exit 1
-# mv -f /tmp/newvmz.yaml /tmp/vmz.yaml
-# ./vmzrobot.pl -old /tmp/oldvmz.yaml -i /tmp/vmz.yaml -diffcount || \
-#    (./vmzrobot.pl -old /tmp/oldvmz.yaml -i /tmp/vmz.yaml -f -outputas bbd:/tmp/vmz.bbd; \
-#     tkmessage -center -font "helvetica 18" -bg red -fg white "New VMZ data available" )
+# cp -f /tmp/lbvs.yaml /tmp/oldlbvs.yaml
+# ./lbvsrobot.pl -f -outputas yaml:/tmp/newlbvs.yaml || exit 1
+# mv -f /tmp/newlbvs.yaml /tmp/lbvs.yaml
+# ./lbvsrobot.pl -old /tmp/oldlbvs.yaml -i /tmp/lbvs.yaml -diffcount || \
+#    (./lbvsrobot.pl -old ~/cache/misc/oldlbvs.yaml -i ~/cache/misc/lbvs.yaml -f -outputas bbd:/tmp/lbvs.bbd; \
+#     tkmessage -center -font "helvetica 18" -bg red -fg white "New LBVS data available" )

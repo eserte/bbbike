@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVia.pm,v 1.12 2004/01/21 23:42:40 eserte Exp $
+# $Id: BBBikeVia.pm,v 1.13 2004/06/10 22:57:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeVia;
 
 use strict;
 use vars qw($VERSION $move_index $add_point);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use BBBikeGlobalVars;
