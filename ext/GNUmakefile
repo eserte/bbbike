@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.12 2003/01/08 20:58:01 eserte Exp eserte $
+# $Id: Makefile,v 1.14 2003/09/02 21:43:29 eserte Exp $
 #
 
 # XXX Installieren immer über *dieses* Makefile (wegen INLINE2DIST)!!!
@@ -117,6 +117,7 @@ strassen-inline2-update:
 	$(PERL) ../miscsrc/filter_version.pl -force -update -prefix FILTER -version 2 Strassen-Inline Strassen-Inline2
 	-rm -f Strassen-Inline2/InlineDist.pm
 	-rm -f Strassen-Inline2/heap.*
+	-rm -f Strassen-Inline2/Inline2.pm
 	mv Strassen-Inline2/Inline.pm Strassen-Inline2/Inline2.pm
 
 clean:	ext-bbbikexs-clean \
