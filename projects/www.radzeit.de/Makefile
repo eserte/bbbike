@@ -13,6 +13,8 @@
 #  deploy-local:	Prepare a local distribution for testing. Do not rsync.
 #  test-makefile:	Same as deploy-local, but each make command has to
 #			be confirmed.
+#
+# It is required that the target web server has "FollowSymLinks" on.
 
 # The local service is available on
 #   ${LOCAL_URL}/cgi-bin/bbbike.cgi
