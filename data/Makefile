@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.40 2005/01/20 00:45:21 eserte Exp $
+# $Id: Makefile,v 2.40 2005/01/20 00:45:21 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -433,9 +433,16 @@ exits:	exits-orig
 	$(CONVERT2HAFAS) $> > $@
 	-@$(READONLY) $@
 
+# The fragezeichen-PHONY and .create_fragezeichen stuff is necessary
+# to minimize dependencies (well...)
+
+.PHONY:	fragezeichen
+
+fragezeichen:	.create_fragezeichen
+
 # ::inwork => will maybe change to :inwork
 #XXX in "-orig" transition: handicap_s-orig and gesperrt-orig always need to have the same base map!
-fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
+.create_fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 		.fragezeichen-other-source \
 		${SOURCE_TARGETS:S|^|.fragezeichen-|}
 	-@$(WRITEABLE) $@
@@ -451,6 +458,7 @@ fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 	    ${CONVERT2HAFAS} -basefile ${DATADIR}/handicap_s-orig -- - >> $@~
 	cat .fragezeichen-other-source ${SOURCE_TARGETS:S|^|.fragezeichen-|} >> $@~
 	cmp -s $@~ $@ && rm $@~ || mv $@~ $@
+	touch .create_fragezeichen
 	-@$(READONLY) $@
 
 .for i in ${SOURCE_TARGETS}
@@ -566,7 +574,7 @@ storable:
 force_check: remove_checks check
 
 remove_checks:
-	rm -f .check_*
+	rm -f .check_* .create_*
 
 # checks
 check:	report-checks do-checks

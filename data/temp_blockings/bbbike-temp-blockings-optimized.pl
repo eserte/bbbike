@@ -133,14 +133,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1106780400,
-         'text' => 'L 62; (Elsterwerda-Hohenleipisch); Bahn¸bergang bei Dreska Gleisbauarbeiten Vollsperrung 24.01.2005-26.01.2005 ',
-         'from' => 1106434800,
-         'data' => 'userdel	2 22508,-102744 22382,-102254
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1107298800,
          'text' => 'L 86; zw. Schmergow und Ketzin Straﬂenbau Vollsperrung 18.01.2005-01.02.2005 ',
