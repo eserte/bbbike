@@ -627,7 +627,7 @@ sub Points {
     } elsif ($self->Type eq TYPE_TRACK || $self->Type eq TYPE_ROUTE) {
 	$self->Track;
     } else {
-	die;
+	die "Can't determine type in Points method (neither waypoint nor track)";
     }
 }
 
