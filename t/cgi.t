@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.21 2004/01/04 21:54:41 eserte Exp $
+# $Id: cgi.t,v 1.22 2004/02/24 17:08:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004 Slaven Rezic. All rights reserved.
@@ -199,7 +199,7 @@ for my $cgiurl (@urls) {
 	$route = $cpt->reval($content);
 	is(ref $route, "HASH");
 	ok($route->{Len} > 0 && $route->{Len} < 500, "check route length")
-	    or diag "Route length: $route->{Len}";
+	    or diag "Route length: $route->{Len} too large, Route is " . Dumper($route->{Route});
 
 	# this had once an empty route as the result:
 	$req = new HTTP::Request
@@ -251,7 +251,8 @@ for my $cgiurl (@urls) {
 	       "check route length")
 		or diag "Route length: $route->{Len}";
 	    ok((grep { $_->{Strname} =~ /Park Babelbsberg/ } @{ $route->{Route} }),
-	       "Route through Park Babelsberg");
+	       "Route through Park Babelsberg")
+		or diag "Route not through Park Babelsberg: " . Dumper($route->{Route});
 	} else {
 	    diag($@);
 	    ok(0);
@@ -450,7 +451,7 @@ for my $cgiurl (@urls) {
 	if ($imagetype eq 'gif') {
 	    is($res->header('Content_Type'), 'image/gif');
 	    my $content = uncompr($res);
-	    ok($content =~ /^GIF8/) or diag $url; # no qr//!
+	    ok($content =~ /^GIF8/) or diag "Not a gif: $url"; # no qr//!
 	    display($res);
 	} elsif ($imagetype =~ /(png|jpeg)/) {
 	    is($res->header('Content_Type'), 'image/' . $imagetype);
