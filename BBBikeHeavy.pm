@@ -1318,14 +1318,17 @@ sub BBBikeHeavy::reload_all {
 
     my %change;
     foreach my $type (keys %str_obj) {
-	if (!$str_obj{$type}->is_current) {
-	    $str_obj{$type}->reload;
+	my $o = $str_obj{$type};
+	next if !$o;
+	if (!$o->is_current) {
+	    $o->reload;
 	    $change{"str"}->{$type} = 1;
 	}
     }
     foreach my $type (keys %p_obj) {
-	if (!$p_obj{$type}->is_current) {
-	    $p_obj{$type}->reload;
+	my $o = $p_obj{$type};
+	if (!$o->is_current) {
+	    $o->reload;
 	    $change{"p"}->{$type} = 1;
 	}
     }
