@@ -329,6 +329,7 @@ WriteMakefile
    'ABSTRACT'     => $abstract,
    'AUTHOR'       => $author,
    'LICENSE'	  => 'gpl',
+   'NO_META'	  => 1,
 
    'INSTALLER'    =>
    { CONSOLE_PROGRAM        => "cbbbike",
