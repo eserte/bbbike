@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: hv_impl.t,v 1.15 2003/09/02 21:42:31 eserte Exp $
+# $Id: hv_impl.t,v 1.15 2003/09/02 21:42:31 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -51,7 +51,7 @@ if ($v > 0) {
 use vars qw($algorithm);
 $algorithm = "C-A*";
 
-my $leaktest = exists &Devel::Leak::NoteSV;
+my $leaktest = defined &Devel::Leak::NoteSV;
 
 ok(1);
 

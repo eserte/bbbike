@@ -257,6 +257,7 @@ ext/StrassenNetz-CNetFile/CNetFilePerl.pm
 ext/StrassenNetz-CNetFile/Makefile.PL
 ext/StrassenNetz-CNetFile/CNetFileDist.pm
 ext/StrassenNetz-CNetFile/t/base.t
+ext/StrassenNetz-CNetFile/ppport.h
 ext/Strassen-Inline/Inline.pm
 ext/Strassen-Inline/Makefile.PL
 ext/Strassen-Inline/t/db_impl.t
@@ -265,12 +266,14 @@ ext/Strassen-Inline/t/common.pl
 ext/Strassen-Inline/InlineDist.pm
 ext/Strassen-Inline/heap.c
 ext/Strassen-Inline/heap.h
+ext/Strassen-Inline/ppport.h
 ext/Strassen-Inline2/Inline2.pm
 ext/Strassen-Inline2/Inline2Dist.pm
 ext/Strassen-Inline2/Makefile.PL
 ext/Strassen-Inline2/t/common.pl
 ext/Strassen-Inline2/t/db_impl.t
 ext/Strassen-Inline2/t/hv_impl.t
+ext/Strassen-Inline2/ppport.h
 ext/VectorUtil-Inline/Inline.pm
 ext/VectorUtil-Inline/InlineDist.pm
 ext/VectorUtil-Inline/InlinePerl.pm
