@@ -73,7 +73,7 @@ sub read_config {
 	$self->{BBD2ESRI_PROG} = $BBBikeMapserver::Config::bbd2esri_prog || die "bbd2esri_prog\n";
     };
     if ($@) {
-	die "Missing variables: $@";
+	die "Missing variables in config file $file: $@";
     }
 }
 
