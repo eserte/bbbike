@@ -8,7 +8,7 @@
 
 Die aktuellste BBBike-Archivdatei findet man im Verzeichnis
 L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike> . Die aktuelle Sourcedatei ist
-L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13.tar.gz> .
+L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.14-DEVEL.tar.gz> .
 
 =head2 FreeBSD
 
@@ -32,10 +32,10 @@ mindestens die Version 5.005 benötigt.
 Danach kann BBBike ausgepackt werden:
 
 
-	zcat BBBike-3.13.tar.gz | tar xfv -
+	zcat BBBike-3.14-DEVEL.tar.gz | tar xfv -
 
 Falls perl/Tk (eine möglichst neue Version, z.B. 800.025) nicht
-installiert ist: in das Verzeichnis C<BBBike-3.13>
+installiert ist: in das Verzeichnis C<BBBike-3.14-DEVEL>
 wechseln und als Superuser
 
 
@@ -131,13 +131,13 @@ wird das ppm-Programm verlassen.
 
 =item *
 
-L<BBBike-3.13.tar.gz|ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13.tar.gz>
+L<BBBike-3.14-DEVEL.tar.gz|ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.14-DEVEL.tar.gz>
 downloaden und mit WinZip auspacken. Das
 ausgepackte Verzeichnis wird später nicht mehr verschoben.
 
 =item *
 
-In der Eingabeaufforderung oder im Explorer zum Verzeichnis BBBike-3.13
+In der Eingabeaufforderung oder im Explorer zum Verzeichnis BBBike-3.14-DEVEL
 wechseln und
 
 

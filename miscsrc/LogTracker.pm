@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.14 2003/10/07 22:52:26 eserte Exp $
+# $Id: LogTracker.pm,v 1.15 2004/02/16 01:09:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -32,7 +32,7 @@ use vars qw($VERSION $lastcoords
 	    $error_checks $ua $safe
             $remoteuser $remotehost $logfile $tracking $tail_pid $bbbike_cgi
 	    $last_parselog_call);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 # XXX replace all %layer, %show etc. with @layer, @show...
 use constant ROUTES => 0;

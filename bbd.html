@@ -3,7 +3,8 @@
 <head>
 <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
 <meta content="text/css" http-equiv="Content-Style-Type">
-<meta content="Pod::HTML 0.43" name="GENERATOR">
+<meta content="Marek::Pod::HTML 0.49" name="GENERATOR">
+<link href="html/bbbikepod.css" rel="stylesheet" type="text/css">
 <title>bbd</title>
 </head>
 <body>
@@ -16,6 +17,11 @@
 <ul>
 <li><a class="POD_NAVLINK" href="#NAME">NAME</a>
 <li><a class="POD_NAVLINK" href="#DESCRIPTION">DESCRIPTION</a>
+<ul>
+<li><a class="POD_NAVLINK" href="#Coordinate_lines">Coordinate lines</a>
+<li><a class="POD_NAVLINK" href="#Directive_lines">Directive lines</a>
+<li><a class="POD_NAVLINK" href="#Comment_lines">Comment lines</a>
+</ul>
 <li><a class="POD_NAVLINK" href="#CATEGORIES">CATEGORIES</a>
 <ul>
 <li><a class="POD_NAVLINK" href="#STREETS">STREETS</a>
@@ -42,11 +48,13 @@ bbd - bbbike data format description
 <code>bbd</code> is a simple format for describing points and polylines for
 geographics information systems.
 </p>
-<pre class="POD_TEXT">
+<p class="POD_TEXT">
 Bbd files consist of newline-terminated records in the format:
-
+</p>
+<pre class="POD_VERBATIM">
     Name TAB Category SPACE x,y SPACE x,y ...
 </pre>
+<h3 class="POD_HEAD2"><a name="Coordinate_lines">Coordinate lines</a></h3>
 <dl class="POD_LIST">
 <dt class="POD_ITEM"><a name="Name">Name</a>
 <dd>
@@ -67,10 +75,11 @@ If the category matches <i>forwardcat</i><code>;</code><i>backwardcat</i>, then
 <i>forwardcat</i> or <i>backwardcat</i> may be empty; in this case the
 category applies only to the other direction.
 </p>
-<pre class="POD_TEXT">
+<p class="POD_TEXT">
 Other predefined categories are listed below. The category should not
 contain any spaces.
-
+</p>
+<pre class="POD_VERBATIM">
    DRAFT (not yet in use!): Change the category format to:
 
        &lt;cat&gt; = &lt;onewaycat&gt; ; &lt;onewaycat&gt; |
@@ -101,8 +110,24 @@ meters (as in GKK or UTM). A record may contain an unlimited number of
 coordinates, though there may be limitations in the interpreting
 software (currently the maximum number of points is hardcoded in
 <u>BBBikeXS</u> and checked in the rule <code>check-line-lengths</code> of
-<code>data/Makefile</code>).
+<code>data/Makefile</code>). See also below for the <b>map</b> directive in
+<a class="POD_LINK" href="#Directive_lines">Directive lines</a>.
 </dl>
+<h3 class="POD_HEAD2"><a name="Directive_lines">Directive lines</a></h3>
+<p class="POD_TEXT">
+If a line begines with a hash sign followed by a color (<code>#:</code>), then
+the line is treated as a directive. The following directives are
+defined:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="map_maptype"><code>map: <i>maptype</i></code></a>
+<dd>
+This directive sets the coordinate system of the bbd file. If no
+<code>map</code> directive is specified, then the proprietary bbbike coordinate
+system is used. For WGS84 coordinates specified as DDD use the maptype
+<b>polar</b>.
+</dl>
+<h3 class="POD_HEAD2"><a name="Comment_lines">Comment lines</a></h3>
 <p class="POD_TEXT">
 If a line begins with a hash sign (<code>#</code>), then it is treated as a
 comment. Empty lines are ignored.
@@ -146,61 +171,66 @@ Bridges.
 Used in files: <code>gesperrt</code>.
 </p>
 <ul class="POD_LIST">
-<li class="POD_ITEM"><a name="1_">1:</a>
-
+<li class="POD_ITEM"><a name="1_"><p><code>1</code>:</p></a>
+<p class="POD_TEXT">
 One way street. The blocking is in the direction of the polyline.
-<li class="POD_ITEM"><a name="2_">2:</a>
-
+</p>
+<li class="POD_ITEM"><a name="2_"><p><code>2</code>:</p></a>
+<p class="POD_TEXT">
 Blocked street (in both directions).
-<li class="POD_ITEM"><a name="0_">0:</a>
-
+</p>
+<li class="POD_ITEM"><a name="0_"><p><code></code>:</p></a>
+<p class="POD_TEXT">
 The bicycle has to be carried. An optional penalty parameter expressed
 in seconds of lost time may be added after the category, with a <code>:</code>
 as separator. Example: <code>0:30</code> for a penalty of 30 seconds. This is
 only for point records.
-<li class="POD_ITEM"><a name="3_">3:</a>
-
+</p>
+<li class="POD_ITEM"><a name="3_"><p><code>3</code>:</p></a>
+<p class="POD_TEXT">
 A blocked route (gesperrte Wegf&uuml;hrung). This means that the whole path
 specified by the coordinates of this record are blocked, but parts of
 the path are not.
-<li class="POD_ITEM"><a name="BNP_">BNP:</a>
-
+</p>
+<li class="POD_ITEM"><a name="BNP_"><p><code>BNP</code>:</p></a>
+<p class="POD_TEXT">
 A narrow passage (&quot;Dr&auml;ngelgitter&quot; etc.). An optional
 penalty parameter may be added, like for the <code></code> category.
+</p>
 </ul>
 <h3 class="POD_HEAD2"><a name="CYCLE_PATHS_RADWEGE_">CYCLE PATHS (RADWEGE)</a></h3>
 <p class="POD_TEXT">
 Used in files: <code>radwege_exact</code>.
 </p>
 <dl class="POD_LIST">
-<dt class="POD_ITEM"><a name="RW0">RW0</a>
+<dt class="POD_ITEM"><a name="RW0"><code>RW0</code></a>
 <dd>
 Kein Radweg.
-<dt class="POD_ITEM"><a name="RW1">RW1</a>
+<dt class="POD_ITEM"><a name="RW1"><code>RW1</code></a>
 <dd>
 Normaler nicht benutzungspflichtiger Radweg.
-<dt class="POD_ITEM"><a name="RW2">RW2</a>
+<dt class="POD_ITEM"><a name="RW2"><code>RW2</code></a>
 <dd>
 Benutzungspflichtiger Radweg.
-<dt class="POD_ITEM"><a name="RW3">RW3</a>
+<dt class="POD_ITEM"><a name="RW3"><code>RW3</code></a>
 <dd>
 Suggestivstreifen f&uuml;r Radfahrer.
-<dt class="POD_ITEM"><a name="RW4">RW4</a>
+<dt class="POD_ITEM"><a name="RW4"><code>RW4</code></a>
 <dd>
 Radstreifen.
-<dt class="POD_ITEM"><a name="RW5">RW5</a>
+<dt class="POD_ITEM"><a name="RW5"><code>RW5</code></a>
 <dd>
 Busspur (eventuell nur tempor&auml;r), auch f&uuml;r Radfahrer frei.
-<dt class="POD_ITEM"><a name="RW6">RW6</a>
+<dt class="POD_ITEM"><a name="RW6"><code>RW6</code></a>
 <dd>
 Verkehrsberuhigte Stra&szlig;e.
-<dt class="POD_ITEM"><a name="RW7">RW7</a>
+<dt class="POD_ITEM"><a name="RW7"><code>RW7</code></a>
 <dd>
 Fahrradstra&szlig;e.
-<dt class="POD_ITEM"><a name="RW8">RW8</a>
+<dt class="POD_ITEM"><a name="RW8"><code>RW8</code></a>
 <dd>
 Benutzungspflichtiger Zweirichtungsradweg, Gegenrichtung.
-<dt class="POD_ITEM"><a name="RW9">RW9</a>
+<dt class="POD_ITEM"><a name="RW9"><code>RW9</code></a>
 <dd>
 Nicht benutzungspflichtiger Zweirichtungsradweg, Gegenrichtung.
 </dl>
@@ -210,49 +240,49 @@ Used in files: <code>ubahn</code>, <code>sbahn</code>, <code>rbahn</code>, <code
 <code>rbahnhof</code>.
 </p>
 <dl class="POD_LIST">
-<dt class="POD_ITEM"><a name="R">R</a>
+<dt class="POD_ITEM"><a name="R"><code>R</code></a>
 <dd>
 Regionalbahnen au&szlig;erhalb des Stadtgebiets.
-<dt class="POD_ITEM"><a name="RA">RA</a>
+<dt class="POD_ITEM"><a name="RA"><code>RA</code></a>
 <dd>
 Regionalbahnen Zone A.
-<dt class="POD_ITEM"><a name="RB">RB</a>
+<dt class="POD_ITEM"><a name="RB"><code>RB</code></a>
 <dd>
 Regionalbahnen Zone B.
-<dt class="POD_ITEM"><a name="RC">RC</a>
+<dt class="POD_ITEM"><a name="RC"><code>RC</code></a>
 <dd>
 Regionalbahnen Zone C.
-<dt class="POD_ITEM"><a name="R0">R0</a>
+<dt class="POD_ITEM"><a name="R0"><code>R0</code></a>
 <dd>
 Regionalbahnen au&szlig;er Betrieb oder in Bau.
-<dt class="POD_ITEM"><a name="S">S</a>
+<dt class="POD_ITEM"><a name="S"><code>S</code></a>
 <dd>
 S-Bahnen au&szlig;erhalb des Stadtgebiets.
-<dt class="POD_ITEM"><a name="SA">SA</a>
+<dt class="POD_ITEM"><a name="SA"><code>SA</code></a>
 <dd>
 S-Bahnen Zone A.
-<dt class="POD_ITEM"><a name="SB">SB</a>
+<dt class="POD_ITEM"><a name="SB"><code>SB</code></a>
 <dd>
 S-Bahnen Zone B.
-<dt class="POD_ITEM"><a name="SC">SC</a>
+<dt class="POD_ITEM"><a name="SC"><code>SC</code></a>
 <dd>
 S-Bahnen Zone C.
-<dt class="POD_ITEM"><a name="S0">S0</a>
+<dt class="POD_ITEM"><a name="S0"><code>S0</code></a>
 <dd>
 S-Bahnen au&szlig;er Betrieb oder in Bau.
-<dt class="POD_ITEM"><a name="U">U</a>
+<dt class="POD_ITEM"><a name="U"><code>U</code></a>
 <dd>
 U-Bahnen au&szlig;erhalb des Stadtgebiets.
-<dt class="POD_ITEM"><a name="UA">UA</a>
+<dt class="POD_ITEM"><a name="UA"><code>UA</code></a>
 <dd>
 U-Bahnen Zone A.
-<dt class="POD_ITEM"><a name="UB">UB</a>
+<dt class="POD_ITEM"><a name="UB"><code>UB</code></a>
 <dd>
 U-Bahnen Zone B.
-<dt class="POD_ITEM"><a name="UC">UC</a>
+<dt class="POD_ITEM"><a name="UC"><code>UC</code></a>
 <dd>
 U-Bahnen Zone C.
-<dt class="POD_ITEM"><a name="U0">U0</a>
+<dt class="POD_ITEM"><a name="U0"><code>U0</code></a>
 <dd>
 U-Bahnen au&szlig;er Betrieb oder in Bau.
 </dl>
@@ -264,18 +294,18 @@ Qualit&auml;t der Wege (Fahrbahnbeschaffenheit).
 Used in files: <code>quality_s</code>, <code>quality_l</code>.
 </p>
 <dl class="POD_LIST">
-<dt class="POD_ITEM"><a name="Q0">Q0</a>
+<dt class="POD_ITEM"><a name="Q0"><code>Q0</code></a>
 <dd>
 Beste Qualit&auml;t, keine Einschr&auml;nkungen.
-<dt class="POD_ITEM"><a name="Q1">Q1</a>
+<dt class="POD_ITEM"><a name="Q1"><code>Q1</code></a>
 <dd>
 Gute Kopfsteinpflasterstrecken, m&auml;&szlig;iger Asphalt, etwa 25 km/h
 H&ouml;chstgeschwindigkeit.
-<dt class="POD_ITEM"><a name="Q2">Q2</a>
+<dt class="POD_ITEM"><a name="Q2"><code>Q2</code></a>
 <dd>
 Gew&ouml;hnliche Kopfsteinpflasterstrecken, schlechter Asphalt, Waldwege,
 etwa 18 km/h H&ouml;chstgeschwindigkeit.
-<dt class="POD_ITEM"><a name="Q3">Q3</a>
+<dt class="POD_ITEM"><a name="Q3"><code>Q3</code></a>
 <dd>
 Schlechte Kopfsteinpflasterstrecken, sandige Strecken, etwa 13 km/h
 H&ouml;chstgeschwindigkeit.
@@ -285,19 +315,19 @@ Andere, nicht fahrbahnbezogene Handicaps. Used in files: <code>handicap_s</code>
 <code>handicap_l</code>.
 </p>
 <dl class="POD_LIST">
-<dt class="POD_ITEM"><a name="q0">q0</a>
+<dt class="POD_ITEM"><a name="q0"><code>q0</code></a>
 <dd>
 Keine.
-<dt class="POD_ITEM"><a name="q1">q1</a>
+<dt class="POD_ITEM"><a name="q1"><code>q1</code></a>
 <dd>
 Auf 25 km/h.
-<dt class="POD_ITEM"><a name="q2">q2</a>
+<dt class="POD_ITEM"><a name="q2"><code>q2</code></a>
 <dd>
 Auf 18 km/h.
-<dt class="POD_ITEM"><a name="q3">q3</a>
+<dt class="POD_ITEM"><a name="q3"><code>q3</code></a>
 <dd>
 Auf 13 km/h.
-<dt class="POD_ITEM"><a name="q4">q4</a>
+<dt class="POD_ITEM"><a name="q4"><code>q4</code></a>
 <dd>
 Auf Schrittgeschwidigkeit (z.B. in Fu&szlig;g&auml;ngerzonen).
 </dl>
@@ -306,48 +336,48 @@ Auf Schrittgeschwidigkeit (z.B. in Fu&szlig;g&auml;ngerzonen).
 Used in files: <code>comments</code>.
 </p>
 <dl class="POD_LIST">
-<dt class="POD_ITEM"><a name="P1">P1</a>
+<dt class="POD_ITEM"><a name="CP_"><code>CP;</code></a>
 <dd>
 Only for records with three points. Comment is valid for point B if
 driving from A to C.
-<dt class="POD_ITEM"><a name="P2">P2</a>
+<dt class="POD_ITEM"><a name="CP"><code>CP</code></a>
 <dd>
-Same as P1, but valid for both directions.
-<dt class="POD_ITEM"><a name="S1">S1</a>
+Same as <code>CP;</code>, but valid for both directions.
+<dt class="POD_ITEM"><a name="CS_"><code>CS;</code></a>
 <dd>
 Comment is valid for the whole route in this direction.
-<dt class="POD_ITEM"><a name="S2">S2</a>
+<dt class="POD_ITEM"><a name="CS"><code>CS</code></a>
 <dd>
 Comment is valid for the whole route in both directions.
-<dt class="POD_ITEM"><a name="PI">PI</a>
+<dt class="POD_ITEM"><a name="PI"><code>PI</code></a>
 <dd>
 Path instruction (genauere Wegbeschreibung).
-<dt class="POD_ITEM"><a name="P0">P0</a>
+<dt class="POD_ITEM"><a name="P0"><code>P0</code></a>
 <dd>
 Dieser Weg ist gesperrt (z.B. Abbiegen nicht m&ouml;glich), aber eine
-Umfahrung ist m&ouml;glich ... siehe auch Kategorie &quot;3&quot; in <code>Blocking</code>.
+Umfahrung ist m&ouml;glich ... siehe auch Kategorie <code>3</code> in <a class="POD_LINK" href="#BLOCKINGS">BLOCKINGS</a>.
 </dl>
 <h3 class="POD_HEAD2"><a name="AREAS">AREAS</a></h3>
 <p class="POD_TEXT">
-Used in files: <code>flaechen</code>. Mostly prefixed with &quot;F:&quot;, see above.
+Used in files: <code>flaechen</code>. Mostly prefixed with <code>F:</code>, see above.
 </p>
 <dl class="POD_LIST">
-<dt class="POD_ITEM"><a name="P">P</a>
+<dt class="POD_ITEM"><a name="P"><code>P</code></a>
 <dd>
 Parks and forests.
-<dt class="POD_ITEM"><a name="Ae">Ae</a>
+<dt class="POD_ITEM"><a name="Ae"><code>Ae</code></a>
 <dd>
 Airports.
 </dl>
 <h3 class="POD_HEAD2"><a name="MISC">MISC</a></h3>
 <dl class="POD_LIST">
-<dt class="POD_ITEM"><a name="radroute">radroute</a>
+<dt class="POD_ITEM"><a name="radroute"><code>radroute</code></a>
 <dd>
 Haupt- oder Freizeitrouten.
-<dt class="POD_ITEM"><a name="Q">Q</a>
+<dt class="POD_ITEM"><a name="Q"><code>Q</code></a>
 <dd>
 F&auml;hren.
-<dt class="POD_ITEM"><a name="X">X</a>
+<dt class="POD_ITEM"><a name="X"><code>X</code></a>
 <dd>
 The category will not be used in this case.
 </dl>
@@ -368,15 +398,39 @@ XXX To be continued
 </p>
 <h2 class="POD_HEAD1"><a name="EXAMPLES">EXAMPLES</a></h2>
 <pre class="POD_VERBATIM">
-                      List of coordinates (x,y pairs)
-                      v
-    Dudenstr. &lt;TAB&gt; H 9222,8787 8982,8781 8594,8773
+    #: map: polar
+    # a comment
+    Dudenstr.	H 13.3857982559056,52.4850047136888 13.3822671967909,52.4849893166144 13.3765591649622,52.4849797043717 13.3721313913775,52.4849830887141 13.3708964575072,52.4850055627098
+    Viktoriapark	F:P 13.3770529147335,52.4891642850551 13.376956820767,52.4876188211697 13.3778829456197,52.4875997186591
+</pre>
+<p class="POD_TEXT">
+And a detailed explanation...
+</p>
+<pre class="POD_VERBATIM">
+    Start of a directive
+    v
+    #: map: polar
+       ^
+       Coordinate system of this file is defined as WGS84, DDD
+
+    Start of a comment
+    v
+    # a comment
+</pre>
+<p class="POD_TEXT">
+(Note that spaces are insignificant in the following examples, but
+<code>&lt;TAB&gt;</code> and <code>&lt;SPACE&gt;</code> should be inserted)
+</p>
+<pre class="POD_VERBATIM">
+                              List of coordinates (x,y pairs)
+                              v
+    Dudenstr. &lt;TAB&gt; H &lt;SPACE&gt; 13.3857982559056,52.4850047136888 13.3822671967909,52.4849893166144 13.3765591649622,52.4849797043717 13.3721313913775,52.4849830887141 13.3708964575072,52.4850055627098
     ^               ^
     Street name     Category (H = main street)
 
-                           List of coordinates for a polygon
-                           v
-    Viktoriapark &lt;TAB&gt; F:P 8554,8628 8551,8698 8577,8699 8579,8727
+                                   List of coordinates for a polygon
+                                   v
+    Viktoriapark &lt;TAB&gt; F:P &lt;SPACE&gt; 13.3770529147335,52.4891642850551 13.376956820767,52.4876188211697 13.3778829456197,52.4875997186591
     ^                  ^
     Name of a park     Category (F = area (polygon, Fl&auml;che),
                                  P = park)
@@ -390,6 +444,8 @@ Slaven Rezic &lt;slaven@rezic.de&gt;
 <a class="POD_LINK" href="bbbike.html">bbbike</a>, <u>Strassen</u>.
 </p>
 <hr>
-<a class="POD_NAVLINK" href="#Pod_TOP_OF_PAGE">[Top]</a></body>
+<a class="POD_NAVLINK" href="#Pod_TOP_OF_PAGE">[Top]</a>
+Generated by Marek::Pod::HTML 0.49 on Mon Feb 16 01:29:24 2004
+</body>
 </html>
 

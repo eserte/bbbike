@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.19 2004/01/17 20:57:52 eserte Exp eserte $
+# $Id: Makefile.admin.PL,v 1.20 2004/02/16 01:59:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -19,9 +19,9 @@
 my $bbbike_html_rule;
 $ENV{PATH} .= ":/usr/local/src/CPAN/new.build/new.MarekPodHtml-0.43/scripts";
 my $pod2html = is_in_path("mpod2html");
-if (defined $pod2html) {
-    $pod2html = "$^X -Mblib=/usr/local/src/CPAN/new.build/new.MarekPodHtml-0.43/ $pod2html";
-}
+#if (defined $pod2html) {
+#    $pod2html = "$^X -Mblib=/usr/local/src/CPAN/new.build/new.MarekPodHtml-0.43/ $pod2html";
+#}
 #XXX check new pod2html: undef $pod2html;
 #XXX $pod2html = 'perl -Mblib=/usr/local/src/CPAN/new.build/new.MarekPodHtml-0.43 /usr/local/src/CPAN/new.build/new.MarekPodHtml-0.43/blib/script/mpod2html -css html/bbbikepod.css';
 my $htmlroot = "--htmlroot http://www.perldoc.com/cpan";
@@ -42,7 +42,7 @@ if (defined $pod2html) {
     # XXX here no $htmlroot
     $bbbike_html_rule = <<EOF;
 $all_html:	$all_pods
-	$pod2html -tocname http://bbbike.sourceforge.net/index -notoc $all_pods
+	$pod2html -stylesheet html/bbbikepod.css -tocname http://bbbike.sourceforge.net/index -notoc $all_pods
 	\$(CLEAN_POD2HTML)
 	chmod ugo+r $all_html podindex.html
 EOF
@@ -469,6 +469,8 @@ winbindist: winbindist-pre
 #XXX	[ -d /usr/ports/distfiles -a ! -l /usr/ports/distfiles/BBBike-$(VERSION)-Windows.zip ] && ln -s 
 
 ########################################################################
+
+Makefile : Makefile.admin.PL
 
 alldist: bbbikedoc dist dist_mv makepatch fbsdport fbsdport-distfiles-link \
 	 winbindist ChangeLog

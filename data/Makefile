@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.86 2004/01/24 17:39:16 eserte Exp $
+# $Id: Makefile,v 1.87 2004/02/16 01:58:56 eserte Exp $
 #
 
 MISCDIR=		../misc
@@ -479,8 +479,9 @@ check-dates:	.check_dates
 
 check-crossings:	.check_crossings
 
-.check_crossings:	strassen brunnels
-	${MISCSRCDIR}/check_crossings $>
+.check_crossings:	strassen landstrassen landstrassen2 brunnels
+	${MISCSRCDIR}/check_crossings -o /tmp/crossings.bbd -against brunnels \
+	    strassen landstrassen landstrassen2
 	@touch $@
 
 check-Berlin.coords.data:	.check_Berlin_coords_data

@@ -2,15 +2,15 @@
 # -*- perl -*-
 
 #
-# $Id: berlinmap2hafas,v 1.40 2004/01/17 13:48:18 eserte Exp $
+# $Id: berlinmap2hafas,v 1.41 2004/02/16 00:51:29 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2001,2004 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sf.net
 #
 
 use strict;
@@ -65,6 +65,7 @@ my %file2map =
     );
 
 my $use_map;
+my $to_map;
 my $global_use_map;
 while(my($k,$v) = each %file2map) {
     if (basename($0) eq $k) {
@@ -97,7 +98,8 @@ if (!GetOptions("bahnhof=s"        => \$bahnhof,
 		"specsperre=s"     => \$specsperre,
 		"v!"               => \$verbose,
 		"q!"               => \$quiet,
-		'map=s'            => \$use_map,
+		'map|frommap=s'    => \$use_map,
+		"tomap=s"          => \$to_map,
 		'ampelschaltung!'  => \$do_ampelschaltung,
 		'ampelschaltung2!' => \$do_ampelschaltung2,
 		'cropdouble!'      => \$do_cropdouble,
@@ -200,6 +202,11 @@ if ($infile) {
     open(W, ">$tmpfile") or die "Can't write to $tmpfile: $!";
 } else {
     open(W, ">&STDOUT");
+}
+
+if (defined $to_map) {
+    die "-infile and -tomap are incompatible" if $infile;
+    from_to_convert();
 }
 
 my @str_buffer;
@@ -489,6 +496,27 @@ sub nextline {
 	scalar <F>;
     }
 }
+
+sub from_to_convert {
+    require Strassen;
+    require Object::Iterate;
+    require Karte;
+    Karte::preload(":all");
+    my $to_obj = $Karte::map{$to_map};
+
+    my $s = Strassen->new($f);
+
+    print "#:map: $to_map\n";
+    Object::Iterate::iterate
+	    (sub {
+		 print $_->[Strassen::NAME()], "\t", $_->[Strassen::CAT()], " ";
+		 print join(" ", map {
+		     join(",", $k_obj->map2map($to_obj, split /,/, $_))
+		 } @{ $_->[Strassen::COORDS()] }), "\n";
+	     }, $s);
+    exit 0;
+}
+
 
 sub usage {
     die <<EOF;

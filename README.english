@@ -8,7 +8,7 @@
 
 You can find the newest distribution file of BBBike in the directory
 L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike> . The current source version is
-L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13.tar.gz> .
+L<ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.14-DEVEL.tar.gz> .
 
 =head2 FreeBSD
 
@@ -31,11 +31,11 @@ perl5 at L<http://www.perl.com>. You need at least version 5.005.
 Next step is to extract the BBBike distribution:
 
 
-	zcat BBBike-3.13.tar.gz | tar xfv -
+	zcat BBBike-3.14-DEVEL.tar.gz | tar xfv -
 
 If perl/Tk (the recommended version is 800.025) is not installed:
 change to the directory
-C<BBBike-3.13> and type as super user:
+C<BBBike-3.14-DEVEL> and type as super user:
 
 
 	perl -I`pwd` -MCPAN -e "install Bundle::BBBike_small"
@@ -130,14 +130,14 @@ to download and install perl/Tk. To leave the ppm program, type
 =item *
 
 Download
-C<BBBike-3.13.tar.gz|ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.13.tar.gz>
+C<BBBike-3.14-DEVEL.tar.gz|ftp://us.dl.sourceforge.net/pub/sourceforge/bbbike/BBBike-3.14-DEVEL.tar.gz>
 and extract this file with 
 WinZip. The unpacked directory will not move in the later
 installation.
 
 =item *
 
-Open the explorer, change to the BBBike-3.13 directory and call
+Open the explorer, change to the BBBike-3.14-DEVEL directory and call
 
 
 	install.pl.
