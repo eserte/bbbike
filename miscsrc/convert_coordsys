@@ -1,0 +1,77 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: convert_coordsys,v 1.4 2001/12/29 14:43:48 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven.rezic@berlin.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+# Konvertiert zwischen Koordinatensystemen. Macht ungefähr das gleiche
+# wie convert2hafas, aber mit konsequentem Einsatz von
+# BBBike-Standard-Modulen
+
+use strict;
+
+use FindBin;
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+use Karte;
+use Strassen;
+Karte::preload(':all');
+use Getopt::Long;
+
+my($addx,$addy) = (0,0);
+
+if (!GetOptions("addx=i" => \$addx,
+		"addy=i" => \$addy)) {
+    usage();
+}
+
+my($from, $to);
+
+if (@ARGV == 2) {
+    $from = $Karte::map{$ARGV[0]} || usage_coordsys($ARGV[0]);
+    $to   = $Karte::map{$ARGV[1]} || usage_coordsys($ARGV[1]);
+} elsif (@ARGV == 1) {
+    $from = $Karte::map{$ARGV[0]} || usage_coordsys($ARGV[0]);
+    $to   = $Karte::map{'standard'} || die;
+} else {
+    usage();
+}
+
+while(<STDIN>) {
+    chomp;
+    my $l = Strassen::parse($_);
+    my @new_s;
+    foreach my $xy (@{$l->[1]}) {
+	my($x,$y) = split /,/, $xy;
+	my($tx,$ty) = map { int $_ } $from->map2map($to, $x, $y);
+	$tx+=$addx;
+	$ty+=$addy;
+	push @new_s, "$tx,$ty";
+    }
+    $l->[1] = join(" ", @new_s);
+    print Strassen::arr2line($l);
+}
+
+sub usage_coordsys {
+    my $tried = shift;
+    die "Unknown coordsys token <$tried>. Use one of following:\n" .
+	join(", ", keys %Karte::map) . "\n";
+}
+
+sub usage {
+    die <<EOF;
+usage: $0 [-addx x] [-addy y] fromcoordsys [tocoordsys] < bbdin > bbdout
+-addx/y: add value to each coordinate
+if tocoordsys is not specified, then "standard" is assumed.
+EOF
+}
+
+__END__

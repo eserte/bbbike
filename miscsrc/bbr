@@ -1,0 +1,58 @@
+#!/usr/bin/env perl5.6.0 -w
+# -*- perl -*-
+
+#
+# $Id: bbr,v 1.2 2000/09/10 23:15:03 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2000 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: eserte@cs.tu-berlin.de
+# WWW:  http://user.cs.tu-berlin.de/~eserte/
+#
+
+use FindBin;
+use lib "$FindBin::RealBin/..";
+use Way;
+use Way::Metric;
+use Safe;
+use strict;
+use vars qw($realcoords_ref);
+
+my @bbr = @ARGV;
+
+if (!@bbr) {
+    die "No bbr file(s)";
+}
+
+my $total = 0;
+
+foreach my $bbr (@bbr) {
+    my $safe = new Safe;
+    $safe->share(qw($realcoords_ref
+		    $coords_ref
+		    $search_route_points_ref
+		   ));
+    $safe->rdo($bbr);
+    if (!$realcoords_ref || ref $realcoords_ref ne "ARRAY") {
+	die "Wrong file format";
+    }
+
+    my @nodes;
+    foreach my $xy (@$realcoords_ref) {
+	my $node = new Way::Node::Metric X => $xy->[0], Y => $xy->[1];
+	push @nodes, $node;
+    }
+
+    my $way = new_from_nodes Way::Metric @nodes;
+    printf "%6.2f km\t%s\n", $way->len/1000, $bbr;
+    $total += $way->len/1000;
+}
+
+if (@bbr > 1) {
+    printf "%6.2f km\t%s\n", $total, "total";
+}
+
+__END__

@@ -1,0 +1,81 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: check_nearest,v 1.6 2002/11/06 15:28:32 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 1998 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: eserte@cs.tu-berlin.de
+# WWW:  http://user.cs.tu-berlin.de/~eserte/
+#
+
+# Überprüft, ob nahe beianderliegende Punkte existieren, die nicht miteinander
+# direkt verbunden sind (mögliche Fehlerquelle)
+# Bislang wird nur eine Liste ausgegeben, die manuell kontrolliert werden
+# muß.
+
+use FindBin;
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+use Strassen;
+use Getopt::Long;
+use strict;
+use File::Basename;
+
+eval 'use BBBikeXS 0.02';
+
+my $verbose = 0;
+GetOptions("v!" => \$verbose,
+	   "datadir=s" => sub {
+	       my $dir = $_[1];
+	       @Strassen::datadirs = ($dir);
+	       $dir =~ s|/+$||;
+	       ($Strassen::Util::cacheprefix = basename($dir)) =~ s/\W/_/g;
+	   },
+	  );
+
+warn "new Strassen...\n" if $verbose;
+my $str = new Strassen "strassen";
+warn "make_net...\n" if $verbose;
+my $net = new StrassenNetz $str;
+$net->make_net;
+warn "all_crossings...\n" if $verbose;
+my $crossings = $str->all_crossings(RetType => 'hash',
+				    UseCache => 1,
+				    Kurvenpunkte => 1);
+warn "make_grid...\n" if $verbose;
+my $kr = new Kreuzungen Hash => $crossings;
+$kr->make_grid;
+
+warn "searching...\n" if $verbose;
+my @nearest_glob;
+while(my($k,$v) = each %$crossings) {
+    my($x, $y) = Strassen::Util::string_to_coord($k);
+    my(@nearest) = $kr->nearest($x, $y, IncludeDistance => 1);
+#warn join(", ", @{ $nearest[1] }), "\n";
+    if (!exists $net->{Net}{$k}{$nearest[1]->[0]}) {
+	push @nearest_glob, [$nearest[1]->[0], $k, $nearest[1]->[1]];
+    }
+#     foreach (@nearest) {
+# 	if ($_->[1] == 0) {
+# 	    next;
+# 	} elsif ($_->[1] < 5) {
+# 	    print "$k => $_->[0]: $_->[1]\n";
+# 	} else {
+# 	    last;
+# 	}
+#     }
+}
+
+warn "sorting...\n" if $verbose;
+my %seen;
+foreach (sort { $a->[2] <=> $b->[2] } @nearest_glob) {
+    next if ($seen{$_->[0]} || $seen{$_->[1]});
+    print join(", ", @$_), "\n";
+    $seen{$_->[0]}++;
+    $seen{$_->[1]}++;
+}
+__END__

@@ -1,0 +1,100 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: resolve_stars,v 1.2 2003/01/11 00:21:49 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+# Resolve "*" in bbd data
+# e.g. "Zugang durch Betonabsperrung	P1 * 13719,7417 13683,7399"
+
+use strict;
+#use Getopt::Long;
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/../data",
+	);
+use Strassen::Core;
+use Strassen::MultiStrassen;
+use Strassen::StrassenNetz;
+use BBBikeXS;
+use Object::Iterate qw(iterate);
+
+my @str_files = @ARGV;
+my $file_to_change = pop @str_files;
+
+if (!@str_files) {
+    die "usage!";
+}
+
+my $s = MultiStrassen->new(@str_files);
+my $net = StrassenNetz->new($s);
+$net->make_net;
+
+my $s2 = Strassen->new($file_to_change);
+iterate {
+    my @res_begin;
+    my @res_end;
+    if (@{ $_->[Strassen::COORDS] } > 2) {
+	if ($_->[Strassen::COORDS][0] eq '*') {
+	    if ($_->[Strassen::COORDS][1] eq '*' ||
+		$_->[Strassen::COORDS][2] eq '*') {
+		warn "Can't handle * in @{ $_->[Strassen::COORDS] }";
+	    } else {
+		push @res_begin, get_neighbor_points(@{ $_->[Strassen::COORDS] }[1,2]);
+	    }
+	}
+	if ($_->[Strassen::COORDS][-1] eq '*') {
+	    if ($_->[Strassen::COORDS][-2] eq '*' ||
+		$_->[Strassen::COORDS][-3] eq '*') {
+		warn "Can't handle * in @{ $_->[Strassen::COORDS] }";
+	    } else {
+		push @res_end, get_neighbor_points(@{ $_->[Strassen::COORDS] }[-2,-3]);
+	    }
+	}
+	for my $i (1 .. $#{$_->[Strassen::COORDS]}-1) {
+	    if ($_->[Strassen::COORDS][$i] eq '*') {
+		warn "Can't handle * in @{ $_->[Strassen::COORDS] }";
+	    }
+	}
+    }
+    if (!@res_begin && !@res_end) {
+	print Strassen::arr2line2($_), "\n";
+    } else {
+	@res_begin = ($_->[Strassen::COORDS][0])  if !@res_begin;
+	@res_end   = ($_->[Strassen::COORDS][-1]) if !@res_end;
+	for my $begin (@res_begin) {
+	    for my $end (@res_end) {
+		my @r;
+		$r[Strassen::NAME]   = $_->[Strassen::NAME];
+		$r[Strassen::CAT]    = $_->[Strassen::CAT];
+		$r[Strassen::COORDS] =
+		    [$begin,
+		     @{$_->[Strassen::COORDS]}[1..$#{$_->[Strassen::COORDS]}-1],
+		     $end];
+		print Strassen::arr2line2(\@r), "\n";
+	    }
+	}
+    }
+} $s2;
+
+sub get_neighbor_points {
+    my($p1, $p2) = @_;
+    my @res;
+    while(my($k,$v) = each %{$net->{Net}{$p1}}) {
+	next if $k eq $p2;
+	push @res, $k;
+    }
+    @res;
+}
+
+__END__

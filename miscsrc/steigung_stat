@@ -1,0 +1,126 @@
+#!/usr/local/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: steigung_stat,v 1.9 2003/08/25 23:06:19 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 1999,2001,2003 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net
+#
+
+use FindBin;
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib", "$FindBin::RealBin/../data");
+use Strassen;
+use strict;
+use Getopt::Long;
+
+my @steigung;
+my %hoehe;
+my $steigung_schwelle = 0.05; # darüber wird alles schwarz gezeichnet
+my $o = "/tmp/steigungen.bbd";
+my $i = "hoehe";
+my $commentscompatible = 0;
+my $gefaelle = 0;
+my $orig = 0;
+my $min_mount;
+
+if (!GetOptions("i=s" => \$i,
+		"o=s" => \$o,
+		"commentscompatible!" => \$commentscompatible,
+		"gefaelle!" => \$gefaelle,
+		"orig!" => \$orig,
+		"minmount=f" => \$min_mount,
+	       )) {
+    die "usage: $0 [-i hoehe.bbd] [-o output.bbd]
+                   [-[no]commentscompatible] [-[no]gefaelle] [-[no]orig]
+
+Default for -i: $i
+Default for -o: $o
+";
+}
+
+my $str = new Strassen ($orig ? "strassen-orig" : "strassen");
+if ($orig) {
+    require Karte;
+    Karte::preload("Berlinmap1996", "Standard");
+    $Karte::Berlinmap1996::obj = $Karte::Berlinmap1996::obj; # peacify -w
+    $i = $i . "-orig";
+}
+my $netz = new StrassenNetz $str;
+$netz->make_net;
+read_hoehe();
+my $steigungsnetz = new StrassenNetz Strassen->new;
+$steigungsnetz->make_net_steigung
+    ($netz, \%hoehe,
+     (defined $min_mount ? (-min => $min_mount) : ()),
+     ($orig ? (-strecke => sub {
+		   my($p1, $p2) = @_;
+		   my($pp1,$pp2) =
+		       map { $Karte::Berlinmap1996::obj->map2standard_s($_) }
+			   ($p1, $p2);
+		   Strassen::Util::strecke_s($pp1, $pp2);
+	       }) : ()),
+    );
+while(my($p1,$v) = each %{$steigungsnetz->{Net}}) {
+    while(my($p2,$steigung) = each %$v) {
+	if ($steigung > 0) {
+	    my $pos = $netz->{Net2Name}{$p1}{$p2};
+	    if (!defined $pos) {
+		$pos = $netz->{Net2Name}{$p2}{$p1};
+	    }
+	    if (!defined $pos) {
+		warn "Unbekannt: $p1 => $p2, Steigung: $steigung\n";
+	    } else {
+		my $strasse = $str->get($pos)->[0];
+		push @steigung, [$steigung, $strasse, $p1, $p2];
+	    }
+	}
+    }
+}
+
+@steigung = sort { $b->[0] <=> $a->[0] } @steigung;
+
+open(BBD, ">$o");
+foreach (@steigung) {
+    my $grade_percent = $_->[0]*100;
+    my $strname = $_->[1];
+    my @coords = @{$_}[2, 3];
+    if ($commentscompatible) {
+	printf BBD "Steigung %.1f%% (%s)\tSt; %s %s\n",
+	    $grade_percent, $strname, @coords;
+	if ($gefaelle) {
+	    printf BBD "Gefälle %.1f%% (%s)\tGf; %s %s\n",
+		$grade_percent, $strname, @{$_}[3, 2];
+	}
+    } else {
+	printf BBD "%.1f %%: %s\t%s %s %s\n", $grade_percent, $strname, grey($_->[0]), @coords;
+    }
+}
+close BBD;
+
+# XXX aus bbbike kopiert, generalisieren!
+sub read_hoehe {
+    %hoehe = ();
+    my $h = new Strassen $i;
+
+    $h->init;
+    while(1) {
+	my $ret = $h->next;
+	last if !@{$ret->[1]};
+	my $hoehe = $ret->[0];
+	$hoehe{$ret->[1][0]} = $hoehe;
+    }
+}
+
+sub grey {
+    my $steigung = shift;
+    my $val = $steigung > $steigung_schwelle ? 255 : $steigung/$steigung_schwelle*255;
+    sprintf("#%02x%02x%02x", (255-$val)x3);
+}
+
+__END__

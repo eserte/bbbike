@@ -1,0 +1,138 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: bbr2bbd,v 1.6 2003/06/02 23:02:12 eserte Exp $
+# Author: Slaven Rezic
+#
+
+#
+# To create a .bbd file of all .bbr files:
+#   cd ~/.bbbike/route/touren
+#   ~/src/bbbike/miscsrc/bbr2bbd -cat '#800000' -f -usebasename -dest /tmp *.bbr
+#   cat /tmp/*.bbd > /tmp/all
+#   mv /tmp/all /tmp/all.bbd
+#
+
+use strict;
+use vars qw($coords_ref $realcoords_ref $search_route_points_ref);
+my %opt = (cat => "X", name => "Route", f => 0, usebasename => 0);
+use Getopt::Long;
+use File::Basename;
+
+if (!GetOptions(\%opt,
+		"cat=s", "name=s", "dest=s", "f", "usebasename")) {
+    die "usage:
+    $0 [-cat category] ] [-dest directory] [-name routename]
+       [-usebasename] [-f] [from to | files ...]
+";
+}
+
+if ($opt{dest}) {
+    warn "Using batch conversion to directory $opt{dest}\n";
+    if (!-d $opt{dest} || !-w $opt{dest}) {
+	die "$opt{dest} is no directory or not writable";
+    }
+    foreach my $f (@ARGV) {
+	my $dest = basename($f);
+	$dest =~ s/\.bbr$/\.bbd/g;
+	eval {
+	    convert_one_file($f, "$opt{dest}/$dest");
+	};
+	if ($@) {
+	    warn $@;
+	}
+    }
+} else {
+    convert_one_file(@ARGV[0,1]);
+}
+
+sub convert_one_file {
+    my $in_file  = shift;
+    my $out_file = shift;
+
+    if (defined $in_file) {
+	open(IN, "< $in_file") or die "Can't open $in_file: $!";
+    } else {
+	open(IN, "<&STDIN");
+    }
+
+    if (defined $out_file) {
+	if ($in_file eq $out_file) {
+	    die "In and out files are the same";
+	}
+	if (-e $out_file && !$opt{f}) {
+	    die "$out_file already exists";
+	}
+	open(OUT, "> $out_file") or die "Can't create $out_file: $!";
+    } else {
+	open(OUT, ">&STDOUT");
+    }
+
+    my $first_line = scalar <IN>;
+    my $conversion;
+    my @in_data;
+    if (defined $first_line && $first_line =~ /^\#BBBike\s+route/) {
+	$conversion = "bbr2bbd";
+    } else {
+	if (defined $first_line && $first_line =~ /^\s*\#/) {
+	    while(<IN>) {
+		if (!/^\s*\#/) {
+		    $first_line = $_;
+		    last;
+		}
+	    }
+	}
+	if (defined $first_line && $first_line =~ /^([^\t]*)\t(\S+)\s+(.*)$/) {
+	    $conversion = "bbd2bbr";
+	    @in_data = ($1, $2, $3);
+	} else {
+	    warn "<$in_file>: Unknown input file format, assuming .bbr file";
+	    $conversion = "bbr2bbd";
+	}
+    }
+    close IN;
+
+    if ($conversion eq 'bbr2bbd') {
+	require Safe;
+	my $compartment = new Safe;
+	$compartment->share(qw($realcoords_ref $coords_ref
+			       $search_route_points_ref
+			      ));
+	$compartment->rdo($in_file);
+
+	die "Die Datei <$in_file> enthält keine Route."
+	    if (!defined $realcoords_ref);
+
+	if (defined $coords_ref) {
+	    warn "Achtung: <$in_file> enthält altes Routen-Format.\n".
+		"Koordinaten können verschoben sein!\n";
+	}
+
+	my $name = $opt{name};
+	if ($opt{usebasename}) {
+	    ($name) = fileparse($in_file, "\\..+\$");
+	}
+	print OUT "$name\t$opt{cat}";
+	foreach (@$realcoords_ref) {
+	    print OUT " " . $_->[0] . "," . $_->[1];
+	}
+	print OUT "\n";
+    } else {
+	my @coords = split(/\s+/, $in_data[2]);
+	print OUT "#BBBike Route\n";
+	print OUT "\$realcoords_ref = [";
+	foreach (@coords) {
+	    print OUT "[" . $_ . "],";
+	}
+	print OUT "];\n";
+	print OUT "\$search_route_points_ref = [";
+	print OUT "['" . $coords[0] . "','m'],";
+	print OUT "['" . $coords[-1] . "','a'],";
+	print OUT "];\n";
+    }
+
+    close OUT;
+}
+
+__END__

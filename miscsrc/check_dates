@@ -1,0 +1,69 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: check_dates,v 1.4 2004/01/02 23:52:15 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+use Strassen::Core;
+use Object::Iterate qw(iterate);
+use strict;
+
+my @l = localtime;
+my $today = sprintf "%04d-%02d-%02d", $l[5]+1900, $l[4]+1, $l[3];
+
+my $isodaterx = qr/\b\d{4}-\d{2}-\d{2}\b/;
+my $eudaterx  = qr/\b([0123]?\d)\.([01]?\d)\.(\d{4})\b/;
+
+for my $file (@ARGV) {
+    my $s = Strassen->new($file, PreserveLineInfo => 1);
+    iterate {
+	my($start_date, $end_date);
+	if      ($_->[Strassen::NAME] =~
+		 /\b(?: seit|ab )\s+(?: dem\s+ )? ($isodaterx)/x) {
+	    $start_date = $1;
+	} elsif ($_->[Strassen::NAME] =~
+		 /\b(?: seit|ab )\s+(?: dem\s+ )? $eudaterx/x){
+	    $start_date = sprintf "%04d-%02d-%02d", $3, $2, $1;
+	} elsif ($_->[Strassen::NAME] =~
+		 /(?: ($isodaterx) )? # start date (optional)
+		  .*
+		   ($isodaterx)         # end date
+		   /x) {
+	    ($start_date, $end_date) = ($1, $2);
+	} elsif ($_->[Strassen::NAME] =~
+		 /(?: $eudaterx )? # start date (optional)
+		  .*
+		  $eudaterx         # end date
+		  /x) {
+	    if (defined $1) {
+		$start_date = sprintf "%04d-%02d-%02d", $3, $2, $1;
+	    }
+	    $end_date = sprintf "%04d-%02d-%02d", $6, $5, $4;
+	}
+	if (defined $end_date) {
+	    if ($end_date lt $today) {
+		print "$file:" . $s->line . " $_->[Strassen::NAME] expired\n";
+	    }
+	}
+    } $s;
+}
+
+__END__
+
+Regexes for date check: ISO and german:
+
+\b(\d{4}-\d{2}-\d{2})\b
+\b([0123]?\d\.[01]?\d\.\d{4})\b

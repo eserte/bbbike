@@ -1,0 +1,18 @@
+README for vbbbike
+------------------
+
+INSTALL
+
+Create Makefile:
+
+	$ ./vconfig.pl
+
+Compile everything:
+
+	$ make
+
+Binary is built into architecure-specific directory. For starting, try
+something like:
+
+	$ ./i586-linux/vbbbike ../data/strassen ../data/wasserstrassen ../data/flaechen ../data/ubahn ../data/sbahn
+

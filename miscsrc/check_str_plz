@@ -1,0 +1,202 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: check_str_plz,v 1.19 2003/02/04 18:59:01 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 1998 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: eserte@cs.tu-berlin.de
+# WWW:  http://user.cs.tu-berlin.de/~eserte/
+#
+
+# überprüft Straßennamen gegen die PLZ-Datei
+
+use Getopt::Long;
+use FindBin;
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+use Strassen;
+use PLZ;
+use Symbol;
+
+unshift(@Strassen::datadirs, "$FindBin::RealBin/../data");
+
+$do_multi_bez = 1;
+$datafile = "strassen";
+$ignore_in_parens = 1;
+
+GetOptions("plzdata=s"  => \$plzdata,
+	   "plzfield=i" => \$plzfield,
+	   "addstr=s"   => \$addstr,
+	   "multibez!"  => \$do_multi_bez,
+	   "data=s"     => \$datafile,
+	   "ignoreparens!" => \$ignore_in_parens,
+	   "checkcoords!" => \$do_check_coords,
+	  );
+
+if (!defined $plzdata or !defined $plzfield) {
+    if (0) {
+	$plzdata = "/usr/www/soc/plz/Berlin.data";
+	$plzfield = 4;
+    } elsif (0) {
+	$plzdata = "$FindBin::RealBin/../data/Berlin.coords.data";
+	$plzfield = 2;
+    } else {
+	my $plz = PLZ->new();
+	$plzdata = $plz->{File};
+	$plzfield = PLZ::FILE_ZIP();
+    }
+}
+
+my $fh = gensym;
+open($fh, $plzdata) or die "$plzdata: $!";
+while(<$fh>) {
+    chomp;
+    my(@l) = split(/\|/, $_);
+    $str_in_plz{$l[0]}->{$l[1]}++;
+    $str_in_plz2{$l[0]}->{$l[$plzfield]}++;
+    $str_coord{$l[PLZ::FILE_NAME()]}->{$l[PLZ::FILE_CITYPART()]}
+	= $l[PLZ::FILE_COORD()];
+}
+close $fh;
+
+if (!defined $addstr) {
+    foreach (@Strassen::datadirs) {
+	$addstr = "$_/add_str";
+	if (-f $addstr && -r $addstr) {
+	    last;
+	} else {
+	    undef $addstr;
+	}
+    }
+}
+
+open(D, $addstr) or die "$addstr: $!";
+while(<D>) {
+    chomp;
+    my($str, $bez) = split(/\t/, $_);
+    $bez = 'XXX' if !$bez;
+    $str_in_plz{$str}->{$bez}++;
+}
+close D;
+
+if ($do_multi_bez) {
+    my $multi_bez_str = new MultiBezStr;
+    if ($multi_bez_str) {
+	my $k;
+	my %h = $multi_bez_str->hash;
+	while(my($k, $v) = each %h) {
+	    $str_in_multi_bez{$k} = join(",", sort @$v);
+	}
+    } else {
+	warn "Can't set multi_bez_str";
+    }
+}
+
+my @lastbezirk;
+my @coords;
+my $check_coords = sub {
+    return unless $do_check_coords;
+    my $check_against;
+    if (exists $str_coord{$lastname}) {
+	if (keys %{ $str_coord{$lastname} } == 1) {
+	    while(my($k,$v) = each %{ $str_coord{$lastname} }) {
+		$check_against = $v;
+		last;
+	    }
+	} else {
+	    for my $bezirk (@lastbezirk) {
+		if (exists $str_coord{$lastname}->{$bezirk}) {
+		    $check_against = $str_coord{$lastname}->{$bezirk};
+		    last;
+		}
+	    }
+	    # else use first
+	    while(my($k,$v) = each %{ $str_coord{$lastname} }) {
+		$check_against = $v;
+		last;
+	    }
+	}
+    }
+    if (!$check_against) {
+	warn "Can't find any coordinate for $lastname @lastbezirk\n";
+    } elsif (!grep { $_ eq $check_against } @coords) {
+	warn "Can't find coordinate $check_against for $lastname @lastbezirk\n";
+    }
+};
+
+$s = new Strassen $datafile;
+$s->init;
+while(1) {
+    my $ret = $s->next;
+    last if !@{$ret->[1]};
+    my $name = $ret->[0];
+
+    if ($ignore_in_parens && $name =~ /^\(.*\)$/) {
+	next;
+    }
+
+    my @bezirk;
+    if ($name =~ s/\s+\(([^\(]+)\)$//) {
+	foreach (split(/,\s*/, $1)) {
+	    push(@bezirk, $_) unless /\?/ || /^(?:F|R)\s*\d+$/;
+	}
+    }
+
+    if (defined $lastname && $name eq $lastname) {
+	push @coords, @{$ret->[Strassen::COORDS()]};
+	next;
+    } else {
+	if (defined $lastname && @coords) {
+	    $check_coords->();
+	}
+	@coords = @{$ret->[Strassen::COORDS()]};
+    }
+
+    if (!@bezirk) {
+	if (exists $str_in_plz{$name} &&
+	    exists $str_in_plz2{$name}) {
+	    my $k1 = keys %{$str_in_plz{$name}};
+	    my $k2 = keys %{$str_in_plz2{$name}};
+	    if ($k1 > 1 && $k2 > 1) {
+		my(@b) = keys %{$str_in_plz{$name}};
+		if (!exists $str_in_multi_bez{$name} ||
+		    $str_in_multi_bez{$name} ne join(",", sort @b)) {
+		    push @ambiguous, $name;
+		}
+	    }
+	}
+    }
+    if (!exists $str_in_plz{$name}) {
+	push(@unknown, $name);
+    } elsif (@bezirk && $name !~ /^\(/) {
+	foreach my $bezirk (@bezirk) {
+	    if (!exists $str_in_plz{$name}->{$bezirk}) {
+		push(@unknown2, $name);
+	    }
+	}
+    }
+
+    $lastname = $name;
+    @lastbezirk = @bezirk;
+}
+$check_coords->();
+
+if (@unknown || @unknown2 || @ambiguous) {
+    print "="x70,"\n", join("\n", sort @unknown), "\n";
+    print "="x70,"\n", join("\n", sort @unknown2), "\n";
+    print "="x70,"\n";
+    if (@ambiguous) {
+	print "= Add to file multi_bez_str or add citypart name to street:\n";
+	foreach (sort @ambiguous) {
+	    print "$_<TAB>", join(",", keys %{$str_in_plz{$_}}), "\n";
+	}
+    }
+    exit 1;
+} else {
+    exit 0;
+}
+

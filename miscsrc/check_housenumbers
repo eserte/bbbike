@@ -1,0 +1,47 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: check_housenumbers,v 1.1 2002/11/07 14:33:24 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven.rezic@berlin.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use Getopt::Long;
+use FindBin;
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+use Strassen::Core;
+use Object::Iterate 0.05 qw(iterate);
+use HouseNumbers;
+
+unshift(@Strassen::datadirs, "$FindBin::RealBin/../data");
+
+my $file = shift || die "housenumbers file?";
+
+my %types = map { ($_ => undef) } @{ HouseNumbers::TYPES() };
+
+my $errors = 0;
+
+my $s = Strassen->new($file);
+iterate {
+    if ($_->[Strassen::NAME] !~ HouseNumbers::NAME_RX) {
+	warn "Wrong pattern in $s->[Strassen::NAME]";
+	$errors++;
+    } else {
+	if (!exists $types{$1}) {
+	    warn "Unknown type $1 in $_->[Strassen::NAME]";
+	    $errors++;
+	}
+	# XXX more checks
+    }
+} $s;
+
+exit ($errors == 0 ? 0 : 1);
+
+__END__

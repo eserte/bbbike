@@ -1,0 +1,536 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: berlinmap2hafas,v 1.41 2004/02/16 00:51:29 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 1998,2001,2004 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sf.net
+#
+
+use strict;
+use File::Basename;
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/../data");
+use Route;
+use Getopt::Long;
+use Karte;
+Karte::preload(':all');
+
+# XXX Verwendung von Karte::*
+
+my $bx0 = -12836.9327939148;
+my $bx1 = 2.45136658405786;
+my $bx2 = 0.056379335402179;
+
+my $by0 = 30045.9720846232;
+my $by1 = 0.0545170183739305;
+my $by2 = -2.46551998888634;
+
+my $ax0 = -28.2216526290485;
+my $ax1 = 8.16235406585393;
+my $ax2 = -0.0109733165457586;
+
+my $ay0 = -65.8047677518293;
+my $ay1 = 0.0260694234625675;
+my $ay2 = 8.10351573376008;
+
+my $ebx0 = -121386.178249258;
+my $ebx1 = 21.3506107238918;
+my $ebx2 = 0.0535889077211635;
+my $eby0 = 119836.098179657;
+my $eby1 = 0.0443840560242271;
+my $eby2 = -21.3256129065485;
+
+require Karte::GISmap;
+$Karte::GISmap::obj=$Karte::GISmap::obj; # -w
+($ebx0,$ebx1,$ebx2,$eby0,$eby1,$eby2) =
+    @{$Karte::GISmap::obj}{qw(X0 X1 X2 Y0 Y1 Y2)};
+
+my %file2map =
+    ("satmap2hafas"    => "S",
+     "berlinmap2hafas" => "B",
+     "gismap2hafas"    => "E",
+     "hafas2hafas"     => "H",
+     "gdf2hafas"       => "g",
+     "rectxy2hafas"    => "r", # GDF-Koordinaten mit polar2xy konvertiert
+     # else: convert2hafas
+    );
+
+my $use_map;
+my $to_map;
+my $global_use_map;
+while(my($k,$v) = each %file2map) {
+    if (basename($0) eq $k) {
+	$use_map = $v;
+    }
+}
+
+my $koord;
+my $convert_all = 0;
+if ($convert_all) {
+    require Fahrinfo;
+    $koord = new Fahrinfo::Koord;
+}
+
+my $k_obj;
+my $bahnhof;
+my $specborder;
+my($specsperre, $specsperre_str, %specsperre_cr);
+my $append;
+my $verbose = 0;
+my $quiet = 0;
+my $do_cropdouble = 0;
+my $infile = 0;
+my($do_ampelschaltung, $do_ampelschaltung2);
+my $data_from_file;
+my $data_from_bbd_file;
+my $strict;
+if (!GetOptions("bahnhof=s"        => \$bahnhof,
+		"specborder=s"     => \$specborder,
+		"specsperre=s"     => \$specsperre,
+		"v!"               => \$verbose,
+		"q!"               => \$quiet,
+		'map|frommap=s'    => \$use_map,
+		"tomap=s"          => \$to_map,
+		'ampelschaltung!'  => \$do_ampelschaltung,
+		'ampelschaltung2!' => \$do_ampelschaltung2,
+		'cropdouble!'      => \$do_cropdouble,
+		'infile!'          => \$infile,
+		"datafromfile=s"   => \$data_from_file,
+		"datafrombbd|datafrombbdfile=s"   => \$data_from_bbd_file,
+		"strict!"          => \$strict,
+	       )) {
+    usage("Wrong option");
+}
+
+if (defined $data_from_file) {
+    $k_obj = Karte::object_from_file($data_from_file);
+} elsif (defined $data_from_bbd_file) {
+    $k_obj = Karte::object_from_bbd_file($data_from_bbd_file);
+}
+
+my $f = shift || "-";
+if ($f eq '-') {
+    if (-t $f) {
+	warn "Read from STDIN...\n";
+    }
+}
+
+if (!defined $use_map) {
+    my $f_dir  = dirname($f);
+    my $f_base = basename($f);
+    my $BASE   = "$f_dir/BASE";
+    if (!open(BASE, $BASE)) {
+	die "-map is not set and $BASE could not be read";
+    }
+  LOOP: {
+	while(<BASE>) {
+	    chomp;
+	    my($file, $map) = split(/\s+/, $_);
+	    if ($file eq $f_base) {
+		$use_map = $map;
+		last LOOP;
+	    }
+	}
+    }
+    close BASE;
+    if (!defined $use_map) {
+	die "-map is not set and no entry for $f in $f_base.\nPlease edit $BASE.\n";
+    }
+} elsif (!$k_obj) {
+    my $karte_token_rx = join("|", keys %Karte::map);
+    if ($use_map =~ /^($karte_token_rx)$/) {
+	$k_obj = $Karte::map{$use_map};
+    } elsif ($use_map eq 'g' || $use_map eq 'r') {
+	$Karte::GDF::obj = $Karte::GDF::obj; # peacify -w
+	$k_obj = $Karte::GDF::obj;
+    }
+    if ($use_map eq 'r') {
+	unshift @INC, "/home/rezic/routenplaner/ppsrc";
+	require Routenplaner;
+    }
+}
+
+$global_use_map = $use_map;
+if ($verbose) {
+    print STDERR "Using map: $use_map\n";
+}
+
+if ($do_ampelschaltung) {
+    do_ampelschaltung();
+    exit 0;
+} elsif ($do_ampelschaltung2) {
+    do_ampelschaltung2();
+    exit 0;
+}
+
+if (defined $bahnhof) {
+    die "Bahnhof-Datei = Source" if $f eq $bahnhof;
+    die "Bahnhof-Datei is orig?" if $bahnhof =~ /-orig/;
+    open(SPEC, ">$bahnhof") or die "Can't write to file $bahnhof: $!";
+}
+
+if (defined $specborder) {
+    die "Border-Datei = Source" if $f eq $specborder;
+    die "Border-Datei is orig?" if $specborder =~ /-orig/;
+    open(SPEC, ">$specborder") or die "Can't write to file $specborder: $!";
+}
+
+if ($specsperre) {
+    require Strassen;
+    require BBBikeUtil;
+    my @s = split /,/, $specsperre;
+    $specsperre_str = MultiStrassen->new(@s);
+    %specsperre_cr = %{ $specsperre_str->all_crossings(RetType => 'hashpos',
+						       UseCache => 1,
+						       Kurvenpunkte => 1) };
+}
+
+my $no_coords = 0;
+
+my $tmpfile;
+if ($infile) {
+    $tmpfile = "/tmp/convert2hafas.tmp";
+    open(W, ">$tmpfile") or die "Can't write to $tmpfile: $!";
+} else {
+    open(W, ">&STDOUT");
+}
+
+if (defined $to_map) {
+    die "-infile and -tomap are incompatible" if $infile;
+    from_to_convert();
+}
+
+my @str_buffer;
+if ($f eq '-') {
+    open(F, "<&STDIN") or die "Can't open stdin: $!";
+} else {
+    open(F, $f) or die "Can't open file $f: $!";
+}
+LINES: while(defined($_ = nextline())) {
+    chomp;
+
+    if (/^\#--(\S+)\s*(.*)/) {
+	my($dir, $text) = ($1, $2);
+	if ($dir eq 'append') {
+	    $append = $text;
+	} elsif ($dir eq 'end_append') {
+	    undef $append;
+	} else {
+	    die "Unknown directive: $dir";
+	}
+    }
+
+    next if /^\#/ or /^\s*$/;
+
+    my @specborder_list;
+    my $specborder_flag = 0;
+    my($name, $rest) = split(/\t/, $_);
+    if ($strict && (!defined $rest || $rest eq '')) {
+	die "Uncomplete line $_";
+    }
+    if (defined $append) {
+	$name .= " ($append)";
+    }
+    if ($strict && $rest =~ /(^\s|\s$)/) {
+	die "Leading or trailing space in coordinates, line $_";
+    }
+    my(@coord) = split(/ /, $rest); # nur nach Space trennen (160 kein Trennzeichen)
+    if (!@coord) {
+	$no_coords++;
+	if ($strict) {
+	    die "No coords in line $_";
+	}
+    }
+    my $cat = shift @coord;
+
+    if ($cat eq 'St;') {
+	# Steigungen: automatische Erzeugung der Gegenrichtung
+	# "Steigung" durch "Gefälle" ersetzen
+	require Strassen::Core;
+	my $r = Strassen::parse($_);
+	$r->[Strassen::NAME()] =~ s/Steigung/Gefälle/;
+	$r->[Strassen::CAT()] = 'Gf;';
+	@{ $r->[Strassen::COORDS()] } = reverse @{ $r->[Strassen::COORDS()] };
+	push @str_buffer, Strassen::arr2line2($r);
+    }
+
+    my(@res);
+#    print W "$name\t$cat";
+    my $coords = "";
+    my $last;
+  LINE: foreach (@coord) {
+	next if $_ eq 'X';
+	last LINE if $_ =~ /^\#/;
+
+	# überprüft, ob es doppelte Koordinaten gibt
+	if (defined $last and $_ eq $last) {
+	    if ($do_cropdouble) {
+		next LINE;
+	    } else {
+		warn "Doppelte Koordinaten in $name: $_\n"
+		    unless $quiet;
+	    }
+	} else {
+	    $last = $_;
+	}
+
+	if (/^(\d+)$/) {
+	    if ($convert_all) {
+		my($x, $y) = @{$koord->FETCH($1)};
+		$coords .= " " if $coords ne '';
+		$coords .= Route::_coord_as_string([$x,$y]);
+	    } else {
+		warn "Leave $1 unconverted\n";
+		$coords .= " " if $coords ne '';
+		$coords .= "$1";
+	    }
+	    next;
+	}
+	if ($_ eq '*') { # special case
+	    $coords .= " " if $coords ne '';
+	    $coords .= "*";
+	    next;
+	}
+	die "Can't parse $_"
+#	  if (!/(:[^:]+:)?([HSBE])?\(([+-]?\d+),([+-]?\d+)\)/);
+	  if (!/(:[^:]+:)?([HSBE])?([+-]?[\d.]+),([+-]?[\d.]+)/);
+	my($spec, $type, $oldx, $oldy) = ($1, $2, $3, $4);
+	if ($spec) { $spec = substr($spec, 1, length($spec)-2) }
+	my $use_map = $use_map;
+	if (defined $type) {
+	    if ($type ne 'S' and $type ne 'B' and
+		$type ne 'H' and $type ne 'E') {
+		die "Parse error: Neither S nor B nor H nor E: $type";
+	    }
+	    $use_map = $type;
+	}
+	my($newx, $newy);
+	if ($k_obj) {
+	    if ($use_map eq 'r') {
+		my($px, $py) = map { int } Routenplaner::xy2polar($oldx, $oldy);
+		($newx, $newy) = $k_obj->map2standard($px, $py);
+	    } elsif ($use_map ne $global_use_map) {
+		warn "Ignore $oldx,$oldy ($use_map ne $global_use_map)";
+		next LINE;
+	    } else {
+		($newx, $newy) = map { int } $k_obj->map2standard($oldx, $oldy);
+	    }
+	} else {
+	    ($newx, $newy) = ($use_map eq 'S'
+			      ? satmap2hafas($oldx, $oldy)
+			      : ($use_map eq 'B'
+				 ? berlinmap2hafas($oldx, $oldy)
+				 : ($use_map eq 'E'
+				    ? gismap2hafas($oldx, $oldy)
+				    : ($oldx, $oldy))));
+	}
+	$coords .= " " if $coords ne '';
+	$coords .= Route::_coord_as_string([$newx,$newy]);
+	if ($bahnhof && $spec) {
+	    $spec =~ s/_/ /g;
+	    print SPEC
+	      "$spec\t$cat " . Route::_coord_as_string([$newx,$newy]) . "\n";
+	}
+	if ($specborder) {
+	    if ($spec) {
+		if ($spec eq 'B_ON') {
+		    if ($specborder_flag) {
+			die "Multiple B_ON in $name";
+		    }
+		    $specborder_flag++;
+		} elsif ($spec ne 'B_OFF') {
+		    die "Unknown specifier $spec in $name";
+		}
+	    }
+	    if ($specborder_flag) {
+		push @specborder_list, Route::_coord_as_string([$newx,$newy]);
+	    }
+	    if ($spec) {
+		if ($spec eq 'B_OFF') {
+		    if (!$specborder_flag) {
+			die "Multiple B_OFF or B_OFF without B_ON in $name";
+		    }
+		    print
+		      SPEC "Berlin\tZ " . join(" ", @specborder_list) . "\n";
+		    $specborder_flag = 0;
+		    undef @specborder_list;
+		} elsif ($spec ne 'B_ON') {
+		    die "Unknown specifier $spec in $name";
+		}
+	    }
+	}
+## Test für hafas2berlinmap
+# 	if ($use_map eq 'B') {
+# 	    my($oldx2, $oldy2) = hafas2berlinmap($newx, $newy);
+# 	    if (abs($oldx2-$oldx) > 1 or abs($oldy2-$oldy) > 1) {
+# 		die "$oldx=$oldx2 $oldy=$oldy2";
+# 	    }
+# 	}
+    }
+
+    if ($specsperre && $cat =~ /^(0|BNP)/) {
+	my($_cat, @addinfo) = split /:/, $cat;
+	if (exists $specsperre_cr{$coords} &&
+	    (scalar @{$specsperre_cr{$coords}} == 1 ||
+	     scalar @{$specsperre_cr{$coords}} == 2)) {
+
+	    my $angle;
+
+	    my @c = @{ $specsperre_str->get($specsperre_cr{$coords}->[0])->[&Strassen::COORDS] };
+	    for my $i (0 .. $#c) {
+		if ($c[$i] eq $coords) {
+		    my $ii = ($i > 0 ? $i : 1);
+		    my($x1,$y1,$x2,$y2) = (split(/,/,$c[$i-1]),
+					   split(/,/,$c[$i]));
+		    # calculate angle, swap to mathematical coordinate system
+		    my $_angle = atan2(-($y2-$y1),$x2-$x1);
+		    # 0° means straight forward => subtract 90°
+		    $angle = int(BBBikeUtil::rad2deg($_angle)-90);
+		    # XXX maybe range checking/adjusting should be done
+		}
+	    }
+
+	    if (defined $angle) {
+		$addinfo[1] = $angle;
+		$cat = join(":", $_cat, @addinfo);
+	    }
+	}
+    }
+
+    if ($coords ne "") {
+	print W "$name\t$cat $coords\n";
+    }
+
+    if (@specborder_list) {
+	die "Missing B_OFF in $name";
+    }
+}
+close F;
+close W;
+
+if ($infile) {
+    require File::Copy;
+    if ($f eq '-') {
+	die "-infile option not valid with stdin";
+    }
+    File::Copy::cp($tmpfile, $f);
+}
+
+if ($no_coords) {
+    warn "Found $no_coords references without coordinates.";
+}
+
+if (defined $bahnhof || defined $specborder) {
+    close SPEC;
+}
+
+sub berlinmap2hafas {
+    my($oldx, $oldy) = @_;
+    (int($bx0+$oldx*$bx1+$oldy*$bx2),
+     int($by0+$oldx*$by1+$oldy*$by2));
+}
+
+sub hafas2berlinmap {
+    my($newx, $newy) = @_;
+    (int((($newx-$bx0)*$by2-($newy-$by0)*$bx2)/($bx1*$by2-$by1*$bx2)),
+     int((($newx-$bx0)*$by1-($newy-$by0)*$bx1)/($bx2*$by1-$bx1*$by2)));
+}
+
+sub satmap2hafas {
+    my($oldx, $oldy) = @_;
+    my($newx, $newy) = (int($ax0+$oldx*$ax1+$oldy*$ax2),
+			int($ay0+$oldx*$ay1+$oldy*$ay2));
+    (int($bx0+$newx*$bx1+$newy*$bx2),
+     int($by0+$newx*$by1+$newy*$by2));
+}
+
+sub gismap2hafas {
+    my($oldx, $oldy) = @_;
+    (int($ebx0+$oldx*$ebx1+$oldy*$ebx2),
+     int($eby0+$oldx*$eby1+$oldy*$eby2));
+}
+
+sub do_ampelschaltung {
+    open(F, $f) or die "$f? $!";
+    while(<F>) {
+	next if /^\#/;
+	chomp;
+	my($c, $r) = split(/\t/, $_, 2);
+	my($x, $y) = split(/,/, $c);
+	my($newx, $newy) = berlinmap2hafas($x, $y);
+	print "$newx,$newy\t$r\n";
+    }
+    close F;
+}
+
+sub do_ampelschaltung2 {
+    require Text::Tabs;
+    open(F, $f) or die "$f? $!";
+    while(<F>) {
+	next if /^\#/;
+	chomp;
+	if (/^(\d+),(\d+)/) {
+	    my($x, $y) = ($1, $2);
+	    my($newx, $newy) = berlinmap2hafas($x, $y);
+	    $_ = Text::Tabs::expand($_);
+	    substr($_, 0, 13) = substr("$newx,$newy" . " "x13, 0, 13);
+	}
+	print "$_\n";
+    }
+    close F;
+}
+
+sub nextline {
+    if (@str_buffer) {
+	pop @str_buffer;
+    } else {
+	scalar <F>;
+    }
+}
+
+sub from_to_convert {
+    require Strassen;
+    require Object::Iterate;
+    require Karte;
+    Karte::preload(":all");
+    my $to_obj = $Karte::map{$to_map};
+
+    my $s = Strassen->new($f);
+
+    print "#:map: $to_map\n";
+    Object::Iterate::iterate
+	    (sub {
+		 print $_->[Strassen::NAME()], "\t", $_->[Strassen::CAT()], " ";
+		 print join(" ", map {
+		     join(",", $k_obj->map2map($to_obj, split /,/, $_))
+		 } @{ $_->[Strassen::COORDS()] }), "\n";
+	     }, $s);
+    exit 0;
+}
+
+
+sub usage {
+    die <<EOF;
+This script only converts from a bbd file with any coord system to a
+bbd file with a standard (hafas) coord system. For a converting tool
+between all coord systems see the convert_coordsys script.
+
+usage: $0 [-bahnhof file] [-specborder file] [-v] [-q] [-map map]
+          [-ampelschaltung] [-ampelschaltung2] [-cropdouble] [-infile]
+          [ file ]
+-v:  verbose
+-q:  quiet
+-map map: specify source coord system
+...
+If file is not given, read input from stdin (some features are not available then).
+EOF
+}

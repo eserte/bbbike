@@ -1,0 +1,63 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: check_cont,v 1.10 2002/11/06 15:28:16 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 1998 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: eserte@cs.tu-berlin.de
+# WWW:  http://user.cs.tu-berlin.de/~eserte/
+#
+
+# Überprüft, ob bei fortgesetzten Straßen das vorherige Stück aufschließt.
+# In str_cont_ausnahme stehen die Ausnahmen (z.B. weil es zwei unabhängige
+# Teilstücke sind oder die Straße von einem Platz unterbrochen wird).
+
+use strict;
+use Getopt::Long;
+use FindBin;
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+use Strassen;
+
+@Strassen::datadirs = ("$FindBin::RealBin/../data");
+
+my $datafile     = 'strassen';
+my $contausnahme = 'str_cont_ausnahme';
+
+GetOptions("contausnahme=s"   => \$contausnahme,
+	   "data=s"           => \$datafile,
+	  );
+
+my %ausnahme;
+if ($contausnahme ne '' and open(AUSNAHME, $contausnahme)) {
+    while(<AUSNAHME>) {
+	chomp;
+	$ausnahme{$_}++;
+    }
+    close AUSNAHME;
+}
+
+my $str = new Strassen $datafile;
+my $lastname;
+my $lastlastcoord;
+$str->init;
+while(1) {
+    my $s = $str->next_obj;
+    last if $s->is_empty;
+    if (defined $lastname and !exists $ausnahme{$s->name} and
+	$lastname eq $s->name) {
+	my($x, $y) = @{$s->coord_as_list(0)};
+	if ($lastlastcoord->[0] != $x ||
+	    $lastlastcoord->[1] != $y) {
+	    print $s->name . "\n";
+	}
+    }
+    $lastname = $s->name;
+    my @coords = $s->coords_list;
+    $lastlastcoord = $s->coord_as_list($#coords);
+}
+
