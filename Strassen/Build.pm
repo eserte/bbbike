@@ -59,8 +59,8 @@ sub create_mmap_net {
     }
 
     if ($args{-blocked}) {
-	warn "Remove blocked streets...\n" if $VERBOSE;
 	my $blocked_type = $args{-blockedtype} || [qw(einbahn sperre)];
+	warn "Remove blocked streets from file $args{-blocked}, type @$blocked_type ...\n" if $VERBOSE;
 	$self->StrassenNetz::make_sperre($args{-blocked},
 					 Type => $blocked_type);
     }
