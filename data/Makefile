@@ -77,7 +77,7 @@ strassen:	.strassen.tmp plaetze
 #
 
 ORIGCONVERTDIR=/tmp/convert
-TARGETS2=$(TARGETS:Nampelschaltung:Nrbahn:Nrbahnhof:Nradwege_exact:Nmount:Nberlin:S/$/-orig/)
+TARGETS2=$(TARGETS:Nampelschaltung:Nrbahn:Nrbahnhof:Nplz:Nradwege_exact:Nmount:Nberlin:S/$/-orig/)
 TARGETS3=$(TARGETS2:S/^/$(ORIGCONVERTDIR)\//)
 
 origconvert:	$(ORIGCONVERTDIR) $(TARGETS3) \
