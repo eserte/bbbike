@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.2 2003/06/01 22:14:02 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.2 2003/06/01 22:14:02 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -300,12 +300,16 @@ EOF
     $file;
 }
 
+use vars qw($global_draw_gpsman_data_s $global_draw_gpsman_data_p);
+$global_draw_gpsman_data_s = 1 if !defined $global_draw_gpsman_data_s;
+$global_draw_gpsman_data_p = 1 if !defined $global_draw_gpsman_data_p;
+
 sub BBBikeGPS::do_draw_gpsman_data {
     my($top, $file, %args) = @_;
     my $max_gap = exists $args{-gap} ? $args{-gap} : DEFAULT_MAX_GAP;
     my $solid_coloring = $args{-solidcoloring};
-    my $draw_gpsman_data_s = exists $args{-drawstreets} ? $args{-drawstreets} : 1;
-    my $draw_gpsman_data_p = exists $args{-drawpoints} ? $args{-drawpoints} : 1;
+    my $draw_gpsman_data_s = exists $args{-drawstreets} ? $args{-drawstreets} : $global_draw_gpsman_data_s;
+    my $draw_gpsman_data_p = exists $args{-drawpoints} ? $args{-drawpoints} : $global_draw_gpsman_data_p;
 
     my $base;
     my $s;
@@ -364,7 +368,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 			    }
 			}
 			my $grade;
-			if ($dist != 0) {
+			if ($dist != 0 && defined $alt) {
 			    $grade = 100*(($alt-$last_alt)/$dist);
 			    if (abs($grade) > 10) { # XXX too many wrong values... XXX more intelligent solution
 				undef $grade;

@@ -9,6 +9,7 @@ BBBikeDraw/PDF.pm
 BBBikeDraw/SVG.pm
 BBBikeDraw/GD.pm
 BBBikeDraw/ImageMagick.pm
+BBBikeDraw/Imager.pm
 BBBikeDraw/MapServer.pm
 BBBikeEdit.pm
 BBBikeEditUtil.pm
@@ -162,6 +163,7 @@ cgi/mapserver_address.cgi
 cgi/mapserver_setcoord.cgi
 cgi/bbbike-temp-blockings.pl
 cgi/httpd.conf.tpl
+cgi/redirect-bbbike.cgi
 data/README
 data/.modified			for updating over the internet
 data/Berlin.coords.data

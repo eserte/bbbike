@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.28 2003/06/09 21:45:40 eserte Exp $
+# $Id: bbbike.cgi,v 6.29 2003/06/16 12:46:35 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -78,6 +78,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $show_weather $show_start_ziel_url @weather_cmdline
 	    $bp_obj $bi $use_select
 	    $graphic_format $use_mysql_db $use_exact_streetchooser
+	    $use_module
 	    $cannot_gif_png $cannot_jpeg $cannot_pdf $cannot_svg $can_gif
 	    $can_wbmp $can_palmdoc $can_mapserver $mapserver_address_url
 	    $mapserver_init_url $no_berlinmap $max_plz_streets $with_comments
@@ -269,6 +270,15 @@ the the variable to an empty string. Default: png.
 =cut
 
 $graphic_format = 'png';
+
+=item $use_module
+
+Use another drawing module instead of the default GD. Possible values
+are ImageMagick or Imager.
+
+=cut
+
+undef $use_module;
 
 =item $cannot_jpeg
 
@@ -636,7 +646,7 @@ use vars qw(@ISA);
 
 } # jetzt beginnt wieder package main
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.28 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.29 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -3541,12 +3551,17 @@ sub draw_route {
 					str => "str", # always drawn
 					ubahn => "bahn",
 					sbahn => "bahn",
-					wasser => "gewaesser",
+					wasser => ["gewaesser", "faehren"],
 					flaechen => "flaechen",
 					ampel => "ampeln",
+					fragezeichen => "fragezeichen",
+					orte => "orte",
+					grenzen => "grenzen",
 				       }->{$_};
 			    if (!defined $out) {
 				();
+			    } elsif (ref $out eq 'ARRAY') {
+				@$out;
 			    } else {
 				$out;
 			    }
@@ -3582,6 +3597,10 @@ sub draw_route {
 	}
     }
 
+    if (defined $use_module) {
+	$q->param("module", $use_module);
+    }
+
     eval {
 	local $SIG{'__DIE__'};
 	require BBBikeDraw;
@@ -3614,7 +3633,7 @@ sub draw_route {
     if ($q->param('imagetype') eq 'pdf') {
 	require Route::PDF;
 	require Route;
-	my(@c) = map { [split /,/ ] } split /!/, $q->param("coords");
+	my(@c) = map { [split /,/ ] } split /[!; ]/, $q->param("coords");
 	Route::PDF::add_page_to_bbbikedraw
 		(-bbbikedraw => $draw,
 		 -net => make_netz(),

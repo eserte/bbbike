@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.6 2003/06/01 21:54:25 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.6 2003/06/01 21:54:25 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -126,7 +126,7 @@ use vars qw($show_calories);
 use vars qw(%choose_ort_cache @mouse_text $flat_relief @route_time
 	    @route_distance $use_hoehe $steigung_optimierung
 	    $grade_minimum_short $grade_minimum $grade_minimum_short_length
-	    $use_legend $use_legend_right $show_legend);
+	    $use_legend $use_legend_right $show_legend $show_mouse_help);
 use vars qw(%immediate %pending);
 use vars qw(%tag_invisible $auto_visible %tag_visibility);
 use vars qw(@popup_style $focus_policy

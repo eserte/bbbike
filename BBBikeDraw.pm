@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.28 2003/06/09 21:44:01 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.29 2003/06/16 12:47:12 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.28 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.29 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, %args) = @_;
@@ -106,7 +106,7 @@ sub new_from_cgi {
     my($pkg, $q, %args) = @_;
     $args{Geometry}  = $q->param('geometry')
       if defined $q->param('geometry');
-    $args{Coords}    = [ split(/[!;]/, $q->param('coords')) ]
+    $args{Coords}    = [ split(/[!; ]/, $q->param('coords')) ]
       if defined $q->param('coords');
     $args{Draw}      = [ $q->param('draw') ]
       if defined $q->param('draw');
@@ -334,6 +334,66 @@ EOF
 
     $self->{Xk} = $xk;
     $self->{Yk} = $yk;
+}
+
+sub get_color_values {
+    my $self = shift;
+
+#    my $GREY = 153;
+    my $GREY = 225;
+
+    my %c; # for color mapping
+    my @c; # for order
+
+    if ($self->can('imagetype') && $self->imagetype eq 'wbmp') {
+	# black-white image for WAP
+	$c{black} = $c{grey_bg} = [0, 0, 0];
+	$c{white} = $c{yellow} = $c{red} = $c{green} = $c{darkgreen} =
+	    $c{darkblue} = $c{lightblue} = $c{middlegreen} = [255,255,255];
+	@c = qw(black grey_bg white yellow red green darkgreen
+		darkblue lightblue middlegreen);
+	return (\%c, \@c);
+    }
+
+    $self->{'Bg'} = '' if !defined $self->{'Bg'};
+    if ($self->{'Bg'} =~ /^white/) {
+	# Hintergrund weiß: Nebenstraßen werden grau,
+	# Hauptstraßen dunkelgelb gezeichnet
+	$c{grey_bg}   = [255,255,255,
+			 $self->{'Bg'} =~ /transparent$/ ? 1 : 0];
+	$c{white}     = [$GREY,$GREY,$GREY];
+	$c{yellow}    = [180,180,0];
+	@c = qw(grey_bg white yellow);
+    } elsif ($self->{'Bg'} =~ /^\#([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})/i) {
+	my($r,$g,$b) = (hex($1), hex($2), hex($3));
+	$c{grey_bg}   = [$r,$g,$b,
+			 $self->{'Bg'} =~ /transparent$/ ? 1 : 0];
+	@c = qw(grey_bg);
+    } else {
+	$c{grey_bg}   = [$GREY,$GREY,$GREY,
+			 $self->{'Bg'} =~ /transparent$/ ? 1 : 0];
+	@c = qw(grey_bg);
+    }
+
+    if (!defined $c{white}) {
+	$c{white}   = [255,255,255];
+	push @c, "white";
+    }
+    if (!defined $c{yellow}) {
+	$c{yellow}  = [255,255,0];
+	push @c, "yellow";
+    }
+    $c{red}         = [255,0,0];
+    $c{green}       = [0,255,0];
+    $c{darkgreen}   = [0,128,0];
+    $c{darkblue}    = [0,0,128];
+    #$c{lightblue}   = [186,213,247];
+    $c{lightblue}   = [0xa0,0xa0,0xff];
+    $c{middlegreen} = [0, 200, 0];
+    $c{black}       = [0, 0, 0];
+    push @c, qw(red green darkgreen darkblue lightblue middlegreen black);
+
+    (\%c, \@c);
 }
 
 sub set_category_colors {

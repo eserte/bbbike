@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.54 2003/06/01 21:59:44 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.54 2003/06/01 21:59:44 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003 Slaven Rezic. All rights reserved.
@@ -2729,7 +2729,7 @@ warn "ok";
 use vars qw($remember_map_mode_for_edit_gps_track);
 sub edit_gps_track_mode {
     $remember_map_mode_for_edit_gps_track = $main::map_mode
-	if $main::map_mode != main::MM_CUSTOMCHOOSE();
+	if $main::map_mode ne main::MM_CUSTOMCHOOSE();
     $main::map_mode = main::MM_CUSTOMCHOOSE();
     my $cursorfile = main::build_text_cursor("GPS trk");
     $main::c->configure(-cursor => defined $cursorfile ? $cursorfile : "hand2");
@@ -2794,7 +2794,7 @@ sub edit_gps_track {
 
 sub show_gps_track_mode {
     $remember_map_mode_for_edit_gps_track = $main::map_mode
-	if $main::map_mode != main::MM_CUSTOMCHOOSE();
+	if $main::map_mode ne main::MM_CUSTOMCHOOSE();
     $main::map_mode = main::MM_CUSTOMCHOOSE();
     my $cursorfile = main::build_text_cursor("GPS trk");
     $main::c->configure(-cursor => defined $cursorfile ? $cursorfile : "hand2");

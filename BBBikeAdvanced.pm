@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.80 2003/06/01 21:54:48 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.80 2003/06/01 21:54:48 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2003 Slaven Rezic. All rights reserved.
@@ -1172,9 +1172,17 @@ sub advanced_coord_menu {
 	     BBBikeEdit::edit_gps_track_mode();
 	 });
     $bpcm->command
-	(-label => M"GPS-Track anzeigen",
+	(-label => M"GPS-Track mit Waypoints anzeigen",
 	 -command => sub {
 	     require BBBikeEdit;
+	     $main::global_draw_gpsman_data_p = 1; # XXX don't qualify
+	     BBBikeEdit::show_gps_track_mode();
+	 });
+    $bpcm->command
+	(-label => M"GPS-Track ohne Waypoints anzeigen",
+	 -command => sub {
+	     require BBBikeEdit;
+	     $main::global_draw_gpsman_data_p = 0; # XXX don't qualify
 	     BBBikeEdit::show_gps_track_mode();
 	 });
     $bpcm->checkbutton

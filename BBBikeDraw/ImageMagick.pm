@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ImageMagick.pm,v 1.6 2003/06/02 23:00:09 eserte Exp $
+# $Id: ImageMagick.pm,v 1.6 2003/06/02 23:00:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -85,7 +85,7 @@ sub init {
     $self;
 }
 
-# XXX maybe create a $self->colorAllocate($im, $r, $g, $b) method for all?
+# XXX use BBBikeDraw::get_color_values
 sub allocate_colors {
     my $self = shift;
     my $im = $self->{Image};
@@ -486,7 +486,7 @@ sub draw_scale {
 		  pointsize => 10);
 }
 
-#  sub draw_route {
+  sub draw_route {
 #      my $self = shift;
 #      my $im        = $self->{Image};
 #      my $transpose = $self->{Transpose};
@@ -619,10 +619,10 @@ sub draw_scale {
 #      }
 #      $im->string($gdfont, $x, $y,
 #  		$s, $inner);
-#  }
+  }
 
 #  # Draw this first, otherwise the filling of the circle won't work!
-#  sub draw_wind {
+  sub draw_wind {
 #      my $self = shift;
 #      return unless $self->{Wind};
 #      require BBBikeCalc;
@@ -686,7 +686,7 @@ sub draw_scale {
 #  	    }
 #  	}
 #      }
-#  }
+  }
 
 #  sub make_imagemap {
 #      my $self = shift;

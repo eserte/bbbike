@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.105 2003/06/09 21:45:24 eserte Exp $
+# $Id: bbbike,v 3.105 2003/06/09 21:45:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -3886,9 +3886,10 @@ sub do_iconframe {
     my $this_index = $hpbm->index("last");
     $top->bind("<F1>" => sub { $hpbm->invoke($this_index) });
 
-    $hpbm->command(-label => M"Maushilfe",
-		   -command => \&mouse_help,
-		  );
+    $hpbm->checkbutton(-label => M"Maushilfe",
+		       -command => \&toggle_mouse_help,
+		       -variable => \$show_mouse_help,
+		      );
     if ($use_contexthelp) {
 	$hpbm->command(-label => M"Kontexthilfe",
 		       -command => sub { $ch->activate });
@@ -4875,6 +4876,9 @@ sub generate_plot_functions {
 	    if (defined $cat_rueck && $cat_rueck =~ /^([^:]+):\d+/) {
 		$cat_rueck = $1;
 	    }
+# XXX Problems with cat = ";anything": $cat_hin is empty and thus always
+# restricted. Workaround: always use "anything;" with the reversed
+# coord list. But nevertheless $ignore and $restrict won't work correctly.
 	    return if defined $ignore and $cat_hin =~ /$ignore/;
 	    return if defined $restrict and $cat_hin !~ /$restrict/;
 	    my $this_color_hin = $cat_hin =~ /^\#/ ? $cat_hin :
@@ -7205,6 +7209,15 @@ sub get_active_speed {
     $speed;
 }
 
+sub toggle_mouse_help {
+    if (defined $toplevel{"help"} and
+	Tk::Exists($toplevel{"help"})) {
+	$toplevel{"help"}->destroy;
+    } else {
+	mouse_help();
+    }
+}
+
 # Gibt ein Hilfsfenster mit der derzeitigen Maustastenbelegung aus
 ### AutoLoad Sub
 sub mouse_help {
@@ -7442,9 +7455,10 @@ sub plot {
     } else {
 	die "Unknown type $type";
     }
-    if ($BBBikeExp::mode && defined &bbbikeexp_remove_data) {
-	bbbikeexp_remove_data($type, $abk);
-    }
+###XXX Häh?
+#    if ($BBBikeExp::mode && defined &bbbikeexp_remove_data) {
+#	bbbikeexp_remove_data($type, $abk);
+#    }
     Hooks::get_hooks("after_plot")->execute;
 }
 
@@ -7468,7 +7482,9 @@ sub plot_layer {
 	$str_draw{$abk} = 1;
 	$str_file{$abk} = $file;
     }
+warn $str_draw{$abk};
     plot($type, $abk, %args);
+warn $str_draw{$abk};
     $abk;
 }
 
@@ -10056,6 +10072,9 @@ sub show_info {
 					$info_text->configure(-cursor => undef);
 				    });
 	    }
+	    $info_top->Button(Name => 'close',
+			      -command => sub { $info_top->destroy },
+			     )->pack(-fill => "x");
 	}
 	$info_text->delete("1.0", "end");
 	$info_text->insert("1.0", $txt);
@@ -10274,7 +10293,7 @@ sub show_statistics {
 
 ### AutoLoad Sub
 sub next_free_layer {
-    for my $i (1..100) {
+    for my $i (1..1000) {
 	my $abk = "L$i";
 	if (!$str_draw{$abk} && !$p_draw{$abk}) {
 	    return $abk;
@@ -13973,7 +13992,7 @@ sub add_new_point {
     }
     unless ($args{'-quiet'}) {
 	if (!$net->reachable($point)) {
-	    die Mfmt("Der Punkt <%s> existiert im Netz nicht und kann auch nicht erzeugt werden", $pos);
+	    status_message(Mfmt("Der Punkt <%s> existiert im Netz nicht und kann auch nicht erzeugt werden", $pos), "die");
 	}
     }
     join(",", @{ $points[1] });

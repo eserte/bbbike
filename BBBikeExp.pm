@@ -189,7 +189,7 @@ sub BBBikeExp::bbbikeexp_remove_data {
 	}
 	$str_draw{$abk} = 0;
 	delete $exp_str_drawn{$abk};
-	if ($exp_master eq $exp_str{$abk}) {
+	if (defined $exp_master && $exp_master eq $exp_str{$abk}) {
 	    undef $exp_master;
 	}
 	# XXX no! main::plot("str", $abk, -draw => 0);
@@ -205,14 +205,15 @@ sub BBBikeExp::bbbikeexp_remove_data {
 	}
 	$p_draw{$abk} = 0;
 	delete $exp_p_drawn{$abk};
-	if ($exp_master eq $exp_p{$abk}) {
+	if (defined $exp_master && $exp_master eq $exp_p{$abk}) {
 	    undef $exp_master;
 	}
 	# XXX no! main::plot("p", $abk, -draw => 0);
     }
 
     if (!defined $exp_master) {
-	warn "XXX master deleted, should find another one!!!";
+	warn "XXX master deleted, disable BBBikeExp mode!!!";
+	$BBBikeExp::mode = 0;
     }
 }
 

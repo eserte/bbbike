@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.9 2003/05/30 21:45:53 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.10 2003/06/16 12:46:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -38,7 +38,7 @@ sub new {
 sub new_from_cgi {
     my($class, $q, %args) = @_;
     my $self = $class->new(%args);
-    my(@c) = split /!/, $q->param("coords") if defined $q->param("coords");
+    my(@c) = split /[!; ]/, $q->param("coords") if defined $q->param("coords");
     $self->{Coords} = \@c;
     $self->{CGI}    = $q;
     $self;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: to_koord1.t,v 1.2 2003/06/12 18:36:27 eserte Exp $
+# $Id: to_koord1.t,v 1.3 2003/06/17 05:50:19 eserte Exp $
 # Author: Slaven Rezic
 #
 
