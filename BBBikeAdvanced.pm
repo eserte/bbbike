@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.89 2004/03/04 23:20:04 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.90 2004/03/22 23:40:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1765,7 +1765,7 @@ sub reload_new_modules {
 # geschrieben.
 ### AutoLoad Sub
 sub buttonpoint {
-    my($x, $y) = @_;
+    my($x, $y, $current) = @_;
     $c->SelectionOwn(-command => sub {
 			 @inslauf_selection = ();
 			 # kein reset_ext_selection, weil dann beim Anklicken
@@ -1790,7 +1790,8 @@ sub buttonpoint {
 	push_ext_selection($ext);
 	print STDERR $ext, "\n";
     } else {
-	my(@tags) = $c->gettags('current');
+	$current = 'current' if !defined $current;
+	my(@tags) = $c->gettags($current);
 	return if !@tags || !defined $tags[0];
 	if ($tags[0] eq 'p'    ||
 	    $tags[0] eq 'o'    ||
@@ -1845,7 +1846,7 @@ sub buttonpoint {
 		push_ext_selection($s);
 	    } elsif ($tags[0] eq 'o' ||
 		     $tags[0] eq 'fz') {
-		my($cx, $cy) = anti_transpose($c->coords('current'));
+		my($cx, $cy) = anti_transpose($c->coords($current));
 		my($x, $y) = $coord_output_sub->($cx, $cy);
 		my $name = ($tags[0] eq 'o'
 			    ? substr(Strassen::strip_bezirk($tag), 0, 40)

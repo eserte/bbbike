@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.94 2004/03/21 13:43:11 eserte Exp $
+# $Id: Makefile,v 1.95 2004/03/22 23:37:33 eserte Exp $
 #
 
 MISCDIR=		../misc
@@ -449,21 +449,21 @@ check:	.check_strassen1 .check_strassen2 \
 	$(CHECK_COUNT) -type vorfahrt -data vorfahrt
 	@touch .check_vorfahrt
 
-.check_comments1:	$(COMMENTS_PARTIAL) .strassen.tmp landstrassen landstrassen2 faehren
-	for i in $(COMMENTS_PARTIAL); do \
-	    echo "Check $$i"; \
-	    $(CHECK_POINTS) $$i .strassen.tmp landstrassen landstrassen2 faehren; \
-	done
-	@touch .check_comments1
+.for i in $(COMMENTS_PARTIAL)
+.check_comments1:	.check_${i}_1
 
-.check_comments2:	$(COMMENTS_PARTIAL) strassen landstrassen landstrassen2 faehren
-	for i in $(COMMENTS_PARTIAL); do \
-	    echo "Check $$i"; \
-	    $(CHECK_NEIGHBOUR) -type standard \
-		    -against strassen -against landstrassen -against landstrassen2 \
-		    -against faehren -data $$i; \
-	done
-	@touch .check_comments2
+.check_${i}_1:	$i .strassen.tmp landstrassen landstrassen2 faehren
+	$(CHECK_POINTS) $i .strassen.tmp landstrassen landstrassen2 faehren
+	@touch .check_${i}_1
+
+.check_comments2:	.check_${i}_2
+
+.check_${i}_2:	$i strassen landstrassen landstrassen2 faehren
+	$(CHECK_NEIGHBOUR) -type standard \
+	    -against strassen -against landstrassen -against landstrassen2 \
+	    -against faehren -data $i
+	@touch .check_${i}_2
+.endfor
 
 .check_nolighting:	nolighting strassen
 	$(CHECK_NEIGHBOUR) -type standard -data nolighting

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.127 2004/03/11 00:04:23 eserte Exp $
+# $Id: bbbike,v 3.128 2004/03/22 23:45:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -222,7 +222,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.127 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.128 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -6150,13 +6150,17 @@ sub set_route_point {
 	}
 	Tk->break; # XXX insert more Tk->break in this subroutine?
     } elsif ($map_mode eq MM_BUTTONPOINT) {
-	my(@tags) = $c->gettags('current');
+	my $item = 'current';
+	my(@tags) = $c->gettags($item);
 	if ($tags[0] !~ /^(pp|o)$/) {
-	    warn "Not over a <pp> or <o> point, got @tags";
-	    return;
+	    ($item) = find_below($c, "pp", "o");
+	    if (!defined $item) {
+		warn "Not over a <pp> or <o> point, got @tags";
+		return;
+	    }
 	}
 	require BBBikeAdvanced;
-	buttonpoint();
+	buttonpoint(undef,undef,$item);
 	freedraw_sub($_[0]);
     } elsif ($map_mode eq MM_INFO) {
 	show_info();
@@ -7834,6 +7838,9 @@ sub plotstr {
 	$c->delete("i-out");
     }
     if ($std && !$str_draw{$abk}) {
+	if ($main::exp_str{$abk}) {
+	    bbbikeexp_remove_data("str", $abk);
+	}
 	return;
     }
 
@@ -7863,6 +7870,10 @@ sub plotstr {
     if (defined $filename && -e "$filename.desc") {
 	require BBBikeAdvanced;
 	read_desc_file("$filename.desc");
+    }
+
+    if ($args{-lazy}) {
+	return bbbikeexp_add_data("str", $abk, $filename);
     }
 
     # Radwege werden im Edit-Modus besser mit radweg_draw_canvas() gezeichnet
@@ -8772,6 +8783,10 @@ sub plot_symbol {
 
 # Zeichnen von Punkten. Hiermit werden U-/S-/R-Bahnhöfe, Ampeln und alle
 # sonstigen Punkte gezeichnet.
+# Arguments:
+#  $abk: layer token
+#  -filename => $filename (Alias: Filename => $filename)
+#  NameDraw => $boolean
 ### AutoLoad Sub
 sub plot_point {
     my($abk, %args) = @_;
@@ -8795,6 +8810,9 @@ sub plot_point {
 	$c->delete('lsas-t'); # Ampelschaltung-Symbole löschen
     }
     if (!$p_draw{$abk}) {
+	if ($main::exp_p{$abk}) {
+	    bbbikeexp_remove_data("p", $abk);
+	}
 	return;
     }
 
@@ -8813,6 +8831,10 @@ sub plot_point {
     if (-e "$filename.desc") {
 	require BBBikeAdvanced;
 	read_desc_file("$filename.desc");
+    }
+
+    if ($args{-lazy}) {
+	return bbbikeexp_add_data("p", $abk, $filename);
     }
 
     # XXX $ignore code fehlt noch...
@@ -14597,6 +14619,12 @@ sub menu_entry_choose_ort {
 	      (-label => Mfmt("Schnelles Update der %s",
 			      $str_attrib{$abk}->[ATTRIB_PLURAL]),
 	       -command => sub { plot('str',$abk, FastUpdate => 1); });
+	    $menu->command
+	      (-label => "Lazy drawing",
+	       -command => sub {
+		   $str_draw{$abk} = 1 - $str_draw{$abk};
+		   plot('str',$abk, -lazy => 1);
+	       });
 	}
     }
 
@@ -14628,6 +14656,12 @@ sub menu_entry_choose_ort {
 	       -command => sub { undef $p_obj{$abk};
 				 plot_point($abk);
 			     });
+	    $menu->command
+	      (-label => "Lazy drawing",
+	       -command => sub {
+		   $p_draw{$abk} = 1 - $p_draw{$abk};
+		   plot('p',$abk, -lazy => 1);
+	       });
 	}
     }
 }

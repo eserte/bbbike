@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.14 2004/03/11 00:07:42 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.15 2004/03/22 23:48:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -133,14 +133,8 @@ use vars qw(@popup_style $focus_policy
 	    $map_surround $dont_delete_map
 	    @special_lower %special_lower @special_raise %special_raise
 	    %obst_file);
-#XXX del:
-# 	    $str_file $landstr_file $wasser_file $flaechen_file
-# 	    $plz_file $border_file 
 use vars qw($last_loaded_menu $last_loaded_obj $last_loaded_layers_obj
 	    $coord_output $coord_output_sub);
-# %old_mtime: last modification time
-# %mtime_file_type: Zuordung der old_mtime-Dateien zu str/p-Werten
-#XXX del: %old_mtime %mtime_file_type
 use vars qw($coordlist_lbox $coordlist_lbox_nl);
 # $hs_check: checkbutton für Haltestellen
 # $plzmcmd: Menüpunkt für PLZ-Auswahl

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.11 2004/03/04 23:18:52 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.12 2004/03/22 23:38:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
 
 my $streets_track      = "$ENV{HOME}/src/bbbike/tmp/streets.bbd";
 my $orig_streets_track = "$ENV{HOME}/src/bbbike/tmp/streets.bbd-orig";
@@ -214,6 +214,9 @@ sub edit_in_normal_mode {
     require BBBikeEdit;
     my $map = "berlinmap";
     BBBikeEdit->draw_pp("strassen", -abk => "s");
+#XXX does not work :-(
+#    require BBBikeExp;
+#    BBBikeExp::bbbikeexp_add_data_by_subs("p","pp",init => sub { BBBikeEdit->draw_pp_init_code("strassen", -abk => "s")}, draw => \&BBBikeEdit::draw_pp_draw_code, post_draw => \&BBBikeEdit::draw_pp_post_draw_code);
     main::set_coord_output_sub($map);
     $SRTShortcuts::force_edit_mode = 1;
     $main::use_current_coord_prefix = 0;
@@ -225,6 +228,9 @@ sub edit_in_normal_mode_landstrassen {
     require BBBikeEdit;
     my $map = "brbmap";
     BBBikeEdit->draw_pp(["landstrassen", "landstrassen2"], -abk => "l");
+#XXX does not work :-(
+#    require BBBikeExp;
+#    BBBikeExp::bbbikeexp_add_data_by_subs("p","pp",init => sub { BBBikeEdit->draw_pp_init_code(["landstrassen", "landstrassen2"], -abk => "l")}, draw => \&BBBikeEdit::draw_pp_draw_code, post_draw => \&BBBikeEdit::draw_pp_post_draw_code);
     main::set_coord_output_sub($map);
     $SRTShortcuts::force_edit_mode = 1;
     $main::use_current_coord_prefix = 0;

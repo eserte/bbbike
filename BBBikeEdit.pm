@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.65 2004/03/08 00:12:38 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.66 2004/03/22 23:38:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3430,66 +3430,89 @@ sub add_cross_road_blockings {
     $add_userdels;
 }
 
-sub draw_pp {
-    my(undef, $file, %args) = @_;
-    my $top = $main::top;
-    my $c = $main::c;
-    my $transpose = \&main::transpose;
-    my $abk = $args{-abk} || '';
-    $c->delete("pp-$abk");
+{
+    my($map, $c, $transpose, $abk, $s);
 
-    my @orig_files;
-    my $s;
-    if (ref $file eq "ARRAY") {
-	@orig_files = map { "$_-orig" } @$file;
-	$s = MultiStrassen->new(@orig_files);
-    } else {
-	@orig_files = $file."-orig";
-	$s = Strassen->new(@orig_files);
-    }
-
-    my $maptoken = $args{-map};
-    require Karte;
-    Karte::preload(":all");
-    require BBBikeEditUtil;
-    my $map = $Karte::map{$maptoken};
-    my $mapprefix = $map->coordsys if $map;
-    for my $f (@orig_files) {
-	my $baseprefix = { BBBikeEditUtil::base() }->{$f};
-	if (defined $mapprefix && $mapprefix ne $baseprefix) {
-	    warn "Ambigous base prefixes ($mapprefix vs $baseprefix)";
-	} else {
-	    $mapprefix = $baseprefix;
+    sub draw_pp_draw_code {
+	my $r = shift;
+	for my $p (@{ $r->[Strassen::COORDS()] }) {
+	    my($ox,$oy) = split /,/, $p;
+	    my($prefix) = $ox =~ m/^([^0-9+-]+)/; # stores prefix
+	    $prefix = "" if !defined $prefix;
+	    $ox =~ s/^([^0-9+-]+)//; # removes prefix
+	    my $map = $prefix ? $Karte::map_by_coordsys{$prefix} : $map;
+	    #if (!defined $map) { warn "@$r $p $prefix" }
+	    my($x, $y)  = $map->map2standard($ox,$oy);
+	    my($cx,$cy) = $transpose->($x,$y);
+	    $c->createLine($cx,$cy,$cx,$cy,
+			   -tags => ['pp', "$x,$y",
+				     "ORIG:$prefix$ox,$oy", "pp-$abk"],
+			  );
 	}
     }
-    $map = $Karte::map_by_coordsys{$mapprefix};
 
+    sub draw_pp_init_code {
+	my(undef, $file, %args) = @_;
+	$c = $main::c;
+	$transpose = \&main::transpose;
+	$abk = $args{-abk} || '';
+	$c->delete("pp-$abk");
+
+	my @orig_files;
+	if (ref $file eq "ARRAY") {
+	    @orig_files = map { "$_-orig" } @$file;
+	    $s = MultiStrassen->new(@orig_files);
+	} else {
+	    @orig_files = $file."-orig";
+	    $s = Strassen->new(@orig_files);
+	}
+
+	my $nonorig_s;
+	if (ref $file eq 'ARRAY') {
+	    $nonorig_s = MultiStrassen->new(@$file);
+	} else {
+	    $nonorig_s = Strassen->new($file);
+	}
+
+	my $maptoken = $args{-map};
+	require Karte;
+	Karte::preload(":all");
+	require BBBikeEditUtil;
+	$map = $Karte::map{$maptoken};
+	my $mapprefix = $map->coordsys if $map;
+	for my $f (@orig_files) {
+	    my $baseprefix = { BBBikeEditUtil::base() }->{$f};
+	    if (defined $mapprefix && $mapprefix ne $baseprefix) {
+		warn "Ambigous base prefixes ($mapprefix vs $baseprefix)";
+	    } else {
+		$mapprefix = $baseprefix;
+	    }
+	}
+	$map = $Karte::map_by_coordsys{$mapprefix};
+	($s, $nonorig_s);
+    }
+
+    sub draw_pp_post_draw_code {
+	$c->itemconfigure('pp',
+			  -capstyle => $main::capstyle_round,
+			  -width => 5,
+			  -fill => $main::pp_color,
+			 );
+    }
+}
+
+sub draw_pp {
+    my($s) = draw_pp_init_code(@_);
+    my $top = $main::top;
     main::IncBusy($top);
     eval {
 	$s->init;
 	while(1) {
 	    my $r = $s->next;
 	    last if !@{ $r->[Strassen::COORDS()] };
-	    for my $p (@{ $r->[Strassen::COORDS()] }) {
-		my($ox,$oy) = split /,/, $p;
-		my($prefix) = $ox =~ m/^([^0-9+-]+)/; # stores prefix
-		$prefix = "" if !defined $prefix;
-		$ox =~ s/^([^0-9+-]+)//; # removes prefix
-		my $map = $prefix ? $Karte::map_by_coordsys{$prefix} : $map;
-		#if (!defined $map) { warn "@$r $p $prefix" }
-		my($x, $y)  = $map->map2standard($ox,$oy);
-		my($cx,$cy) = $transpose->($x,$y);
-		$c->createLine($cx,$cy,$cx,$cy,
-			       -tags => ['pp', "$x,$y",
-					 "ORIG:$prefix$ox,$oy", "pp-$abk"],
-			      );
-	    }
+	    draw_pp_draw_code($r);
 	}
-	$c->itemconfigure('pp',
-			  -capstyle => $main::capstyle_round,
-			  -width => 5,
-			  -fill => $main::pp_color,
-			 );
+	draw_pp_post_draw_code();
     };
     my $err = $@;
     main::DecBusy($top);

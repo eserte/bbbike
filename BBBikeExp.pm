@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeExp.pm,v 1.19 2004/02/13 22:13:01 eserte Exp $
+# $Id: BBBikeExp.pm,v 1.20 2004/03/22 23:38:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ package main;
 use Strassen;
 use strict;
 use vars qw(%exp_str_drawn %exp_str
-	    %exp_p_drawn %exp_p
+	    %exp_p_drawn %exp_p %exp_p_subs
 	    %exp_known_grids $exp_master);
 use vars qw($xadd_anchor $yadd_anchor @extra_tags $ignore);
 use BBBikeGlobalVars;
@@ -31,7 +31,9 @@ use BBBikeGlobalVars;
 use vars qw(@defs_str @defs_p @defs_p_o
 	    @defs_str_abk
 	    @defs_p_abk
-	    @defs_p_o_abk);
+	    @defs_p_o_abk
+	    @defs_p_subs_abk
+	   );
 
 sub BBBikeExp::bbbikeexp_setup {
     @defs_str = ();
@@ -163,6 +165,42 @@ sub BBBikeExp::bbbikeexp_add_data {
     }
     %exp_known_grids = (); # to force redraw
     BBBikeExp::bbbikeexp_redraw_current_view();
+    $BBBikeExp::mode = 1;
+}
+
+# Hacky because of the non-orig/orig confusion. Otherwise nice:
+sub BBBikeExp::bbbikeexp_add_data_by_subs {
+    my($type, $abk, %subs) = @_;
+    my($s, $nonorig_s);
+    if ($subs{init}) {
+	($s, $nonorig_s) = $subs{init}->();
+    }
+    if ($type eq 'str') {
+	die "NYI";
+# 	my $def = [$abk, $file];
+# 	push @defs_str, $def;
+# 	push @defs_str_abk, $abk;
+# 	BBBikeExp::draw_streets($def);
+# 	if (!defined $exp_master) {
+# 	    $exp_master = $exp_str{$abk};
+# 	}
+    } elsif ($type eq 'p') {
+	my $def = [$abk, undef];
+	push @defs_p, $def;
+	push @defs_p_subs_abk, $abk;
+	BBBikeExp::draw_points($def);
+	$exp_p{$abk} = $nonorig_s;
+	$exp_p{$abk}->make_grid(UseCache => 1);
+	if (!defined $exp_master) {
+	    $exp_master = $exp_p{$abk};
+	}
+	%{$exp_p_subs{$abk}} = %subs;
+    } else {
+	die "type has to be either str or p, not $type";
+    }
+    %exp_known_grids = (); # to force redraw
+    BBBikeExp::bbbikeexp_redraw_current_view();
+    $BBBikeExp::mode = 1;
 }
 
 sub BBBikeExp::bbbikeexp_remove_data {
@@ -182,8 +220,9 @@ sub BBBikeExp::bbbikeexp_remove_data {
 	if (defined $exp_master && $exp_master eq $exp_str{$abk}) {
 	    undef $exp_master;
 	}
+	delete $exp_str{$abk};
 	# XXX no! main::plot("str", $abk, -draw => 0);
-    } else {
+    } elsif ($abk eq 'p') {
 	my $i = 0;
 	for (@defs_p) {
 	    if ($_->[0] eq $abk) {
@@ -198,11 +237,17 @@ sub BBBikeExp::bbbikeexp_remove_data {
 	if (defined $exp_master && $exp_master eq $exp_p{$abk}) {
 	    undef $exp_master;
 	}
+	delete $exp_p{$abk};
 	# XXX no! main::plot("p", $abk, -draw => 0);
+    } else {
+	warn "Unknown abk=$abk";
     }
 
     if (!defined $exp_master) {
 	warn "XXX master deleted, disable BBBikeExp mode!!!";
+	$BBBikeExp::mode = 0;
+    }
+    if (!keys %exp_p && !keys %exp_str) {
 	$BBBikeExp::mode = 0;
     }
 }
@@ -278,7 +323,6 @@ sub BBBikeExp::bbbikeexp_init {
     $exp_master = $exp_str{'s'} if !defined $exp_master;
 
     BBBikeExp::bbbikeexp_redraw_current_view();
-
     $BBBikeExp::mode = 1;
 }
 
@@ -487,6 +531,31 @@ sub BBBikeExp::plotstr_on_demand {
 		    }
 		}
 	    }
+	}
+
+	foreach my $abk (@defs_p_subs_abk) {
+	    my $draw_sub = $exp_p_subs{$abk}->{draw};
+	    my $i = 0;
+	    foreach my $grid (@grids) {
+		my($gx,$gy) = split /,/, $grid;
+		$gx-=5; $gy-=0;
+		warn $grid; $grid = "$gx,$gy"; warn $grid;
+		if ($exp_p{$abk}->{Grid}{$grid}) {
+		    warn "Drawing new grid for p/$abk: $grid\n" if $verbose;
+		    $something_new++;
+		    foreach my $strpos (@{ $exp_p{$abk}->{Grid}{$grid} }) {
+			if (!$exp_p_drawn{$abk}->{$strpos}) {
+			    my $r = $exp_p{$abk}->get($strpos);
+			    $i = $strpos+1; # XXX warum +1?
+			    $draw_sub->($r);
+			    $exp_p_drawn{$abk}->{$strpos}++;
+			}
+		    }
+		}
+	    }
+	    # XXX oder später?
+	    $exp_p_subs{$abk}->{post_draw}->()
+		if $exp_p_subs{$abk}->{post_draw};
 	}
     }
 
