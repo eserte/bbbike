@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.4 2004/10/02 18:16:56 eserte Exp $
+# $Id: basic.t,v 1.6 2004/10/07 20:38:26 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -149,19 +149,33 @@ for my $f (@files) {
 	close STDERR;
 	open(STDERR, ">&OLDERR") or die;
 	die "Signal caught" if $? & 0xff;
+
+	my $skip_no_tk;
+	my $diag;
+	if (open(DIAG, $diag_file)) {
+	    local $/ = undef;
+	    $diag = <DIAG>;
+	    close DIAG;
+
+	    if ($diag =~ /Can\'t locate Tk.pm/) {
+		$skip_no_tk = 1;
+	    }
+	}
+
+	skip "$f needs Tk", $tests_per_file if $skip_no_tk;
+
 	is($?, 0, "Check $f")
 	    or do {
-		system("cat $diag_file");
+		require Text::Wrap;
+		print Text::Wrap::wrap("# ", "# ", $diag), "\n";
 	    };
 
-	{
+	if (defined $diag && $diag ne "") {
 	    my $warn = "";
-	    open(DIAG, $diag_file) or die $!;
-	    while(<DIAG>) {
+	    for (split /\n/, $diag) {
 		next if / syntax OK/;
 		$warn .= $_;
 	    }
-	    close DIAG;
 	    is($warn, "", "Warnings " . ($can_w ? "" : "(only mandatory) ") . "in $f");
 	}
 

@@ -596,8 +596,8 @@ userdel	q4 5771,11887 5798,12021
 EOF
      },
      { from  => 1093125600, # 2004-08-22 00:00
-       until => 1099260000, # 2004-10-31 23:00
-       text  => 'L 435; (Grunow-Müllrose); OD Mixdorf, Hauptstr. grundhafter Ausbau Vollsperrung 23.08.2004-31.10.2004 ',
+       until => 1097618400, # 2004-10-13 00:00
+       text  => 'L 435; (Grunow-Müllrose); OD Mixdorf, Hauptstr. grundhafter Ausbau Vollsperrung 23.08.2004-12.10.2004 ',
        type  => 'handicap',
       data  => <<EOF,
 userdel	q4 79281,-22168 79255,-22467
@@ -794,7 +794,7 @@ userdel	2 8515,12242 8600,12165
 EOF
      },
      { from  => 1094940000, # 2004-09-12 00:00
-       until => 1097272800, # 2004-10-09 00:00
+       until => 1097097435, # 2004-10-09 00:00, vorzeitig aufgehoben
        text  => 'B 102; zw. Krz. Kampehl und Bückwitz Straßenbauarbeiten Vollsperrung 13.09.2004-08.10.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -914,6 +914,44 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -25,27812 -250,27739
+EOF
+     },
+     { from  => 1096927200, # 2004-10-05 00:00
+       until => 1097877600, # 2004-10-16 00:00
+       text  => 'K 6003; (Friedrichswalde-LG-L100 Gollin); OD Reiersdorf Deckenerneuerung Vollsperrung 06.10.2004-15.10.2004 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 24200,72512 25875,71662
+userdel	q4 28100,70162 26500,71425
+userdel	q4 26500,71425 25875,71662
+EOF
+     },
+     { from  => 1098136800, # 2004-10-19 00:00
+       until => 1100905200, # 2004-11-20 00:00
+       text  => 'L 34; (Philipp-Müller-Str.); OL Strausberg Fahrbahninstandsetzung Vollsperrung 20.10.2004-19.11.2004 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 43553,20466 43584,20871
+userdel	2 43553,20466 43110,19818
+EOF
+     },
+     { from  => 1097177672, # 2004-10-07 21:34
+       until => 1098050400, # 2004-10-18 00:00
+       text  => 'Ruppiner Chaussee (Hennigsdorf) Kreuzung Hennigsdorfer Straße wegen Bauarbeiten gesperrt (bis 17.10.2004)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -1809,24343 -1214,23742
+userdel	q4 -1809,24343 -1879,24174
+userdel	q4 -1809,24343 -1912,24442
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Werner-Voß-Damm (Tempelhof) in beidenRichtungen zwischen Boelckestraße und Bäumerplan Verkehrsbehinderung durch geplatzte Wasserleitung, Straße ind beiden Richtungen gesperrt.',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 8553,7795 8637,7871
+userdel	q4 8553,7795 8512,7757
 EOF
      },
     );

@@ -8071,13 +8071,14 @@ sub plotstr {
     }
 
     # Get source from filename or street object
-    my($filename, $str, $has_filename);
+    my($filename, $filename_maybe, $str, $has_filename);
     if (!defined $args{-object}) {
 	$filename = $args{-filename} || $args{Filename};
 	if (defined $filename) {
 	    $str_file{$abk} = $filename;
 	} else {
 	    $filename = get_strassen_file($str_file{$abk});
+	    $filename_maybe = $str_file{$abk} if $edit_mode_flag; # as fallback if no -orig version available
 	}
 	$has_filename = 1;
 	delete $pending{"replot-str-$abk"};
@@ -8133,6 +8134,9 @@ sub plotstr {
 	    $str = _get_comments_obj();
 	} else {
 	    eval { $str = Strassen->new($filename); };
+	    if ($@ && $filename_maybe) {
+		eval { $str = Strassen->new($filename_maybe); };
+	    }
 	    if ($@) {
 		if ($edit_mode || $edit_normal_mode) {
 		    status_message(Mfmt("Beim Laden der Datei %s: %s", $filename, $@), "info");
@@ -9085,8 +9089,10 @@ sub plot_point {
     }
 
     my $filename = $args{-filename} || $args{Filename};
+    my $filename_maybe;
     if (!defined $filename) {
 	$filename = get_strassen_file($p_file{$abk});
+	$filename_maybe = $p_file{$abk} if $edit_mode_flag;
     }
     if (!defined $filename) {
 	status_message("Filename is not defined", 'err');
@@ -9147,6 +9153,11 @@ sub plot_point {
 	    eval {
 		$bhf = new Strassen $filename;
 	    };
+	    if ($@ && $filename_maybe) {
+		eval {
+		    $bhf = Strassen->new($filename_maybe);
+		};
+	    }
 	    if ($@) {
 		$p_draw{$abk} = 0;
 		die "OK" if ($abk eq 'r' && $coord_system ne 'standard');

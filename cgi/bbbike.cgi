@@ -185,7 +185,8 @@ a sane value (e.g. /bin:/usr/bin) for some required external programs.
 =cut
 
 $ENV{PATH} = '' if !defined $ENV{PATH};
-$ENV{PATH} = "/usr/bin:$ENV{PATH}"; # for Sys::Hostname
+$ENV{PATH} = "/usr/bin:$ENV{PATH}" if $ENV{PATH} !~ m{/usr/bin}; # for Sys::Hostname
+warn $ENV{PATH};
 
 =item $Strassen::OLD_AGREP, $PLZ::OLD_AGREP
 
