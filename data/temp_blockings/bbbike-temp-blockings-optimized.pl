@@ -216,6 +216,15 @@ userdel	q4 -18080,-12637 -17374,-13449
          'data' => 'userdel	1 17518,4644 17428,4503
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'until' => 1110672000,
+         'text' => 'Brückendurchfahrt zwischen Schöneicher Str. und Bölschestr.: in beiden Richtungen Brückenarbeiten, gesperrt, Dauer: 10.03.2005 23:45 Uhr bis 13.03.2005 01:00 Uhr ',
+         'from' => 1110408300,
+         'data' => 'userdel	2 25585,6050 25579,5980
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -1482,9 +1482,9 @@ userdel	q4 62529,5578 62084,5754
 userdel	q4 61809,5952 62084,5754
 EOF
      },
-     { from  => 1110063600, # 2005-03-06 00:00
+     { from  => 1111960800, # 2005-03-28 00:00
        until => 1125525600, # 2005-09-01 00:00
-       text  => 'K 6907; (B 1 Neuseddin-Ferch); OD Neuseddin, Kunersdorfer Str. Straßenbauarbeiten Vollsperrung 07.03.2005-31.08.2005 ',
+       text  => 'K 6907; (B 1 Neuseddin-Ferch); OD Neuseddin, Kunersdorfer Str. Straßenbauarbeiten Vollsperrung 29.03.2005-31.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -16605,-14239 -17374,-13449
@@ -1505,6 +1505,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1 9028,12307 8804,12280
+EOF
+     },
+     { from  => 1110408300, # 2005-03-09 23:45
+       until => 1110672000, # 2005-03-13 01:00
+       text  => 'Brückendurchfahrt zwischen Schöneicher Str. und Bölschestr.: in beiden Richtungen Brückenarbeiten, gesperrt, Dauer: 10.03.2005 23:45 Uhr bis 13.03.2005 01:00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 25585,6050 25579,5980
+EOF
+     },
+     { from  => 1110668400, # 2005-03-13 00:00
+       until => 1111186800, # 2005-03-19 00:00
+       text  => 'L 29; (Oderberg-Hohenfinow); OD Oderberg Baumfällarb. Dammsicherung Vollsperrung 14.03.2005-18.03.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 52650,51875 51437,51575
 EOF
      },
     );

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: $
+# $Id: XXX_new_comments.pl,v 1.1 2005/03/12 07:33:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -211,17 +211,35 @@ sub process_data {
 	my %last_attribs;
 	my @new_comments;
 	for my $hop_coord_i (1 .. $#hop_coords) {
+
+	    my $valid_comment_for_this_point = sub {
+		my($r) = @_;
+		if ($r->[Strassen::CAT] =~ /^PI/) {
+#XXX weitermachen!
+# 		    my $pos;
+# 		    for my $c (@{ $r->[Strassen::COORDS] }) {
+# 			if ($c eq $hop_coords[$hop_coord_i-1]) {
+			    
+# 		    }
+		    1;
+		} else {
+		    1;
+		}
+	    };
+
 	    my $is = $qs_net->{Net2Name}{$hop_coords[$hop_coord_i-1]}{$hop_coords[$hop_coord_i]};
 	    my %next_last_attribs;
 	    if (defined $is) {
 		for my $i (@$is) {
 		    my($r) = $qs->get($i);
-		    my($name) = $r->[Strassen::NAME];
-		    if (exists $last_attribs{$name}) {
-			$next_last_attribs{$name} = [$last_attribs{$name}[0],
-						     $hop_coord_i];
-		    } else {
-			$next_last_attribs{$name} = [$hop_coord_i-1];
+		    if ($valid_comment_for_this_point->($r, $d->{Route}, $hop_i, \@hop_coords, $hop_coord_i)) {
+			my($name) = $r->[Strassen::NAME];
+			if (exists $last_attribs{$name}) {
+			    $next_last_attribs{$name} = [$last_attribs{$name}[0],
+							 $hop_coord_i];
+			} else {
+			    $next_last_attribs{$name} = [$hop_coord_i-1];
+			}
 		    }
 		}
 	    }

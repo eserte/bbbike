@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi2.pl,v 1.7 2005/03/09 23:49:52 eserte Exp $
+# $Id: cgi2.pl,v 1.8 2005/03/12 08:00:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -38,6 +38,7 @@ my $logfile = "$ENV{HOME}/www/log/radzeit.combined_log";
 my $filter;
 my $only_result;
 my %add_param;
+my $backwards;
 
 GetOptions('seek=i'       => \$seek,
 	   'v|verbose!'   => \$verbose,
@@ -56,6 +57,7 @@ GetOptions('seek=i'       => \$seek,
 	   "filter=s"     => \$filter,
 	   "addparam=s"   => \%add_param,
 	   "onlyresult!"  => \$only_result,
+	   "r"            => \$backwards,
 	  ) or die <<EOF;
 usage: $0 [many options]
 -addparam key=value: add a key-value CGI parameter to all requests, e.g. pref_fragezeichen=yes
@@ -89,11 +91,20 @@ if      ($cgi_type eq 'slow') {
 
 my $cgiinfourl = "http://www/~eserte/bbbike/t/cgiinfo.cgi";
 
-if (!open(LOG, $logfile)) {
-    die "Can't open $logfile: $!";
+my $nextline;
+if ($backwards) {
+    require File::ReadBackwards;
+    my $bw = File::ReadBackwards->new($logfile)
+	or die "Can't open $logfile: $!";
+    $nextline = sub { $bw->readline };
+} else {
+    use IO::Handle;
+    if (!open(LOG, $logfile)) {
+	die "Can't open $logfile: $!";
+    }
+    $nextline = sub { LOG->getline };
 }
-my @requests;
-my @req_lines;
+
 if ($seek) {
     seek LOG, $seek, 0;
 }
@@ -110,17 +121,6 @@ if ($firstdate) {
     }
     # XXX wenn diese Zeile eine bbbike.cgi-Zeile ist, wird diese ignoriert
 }
-while(<LOG>) {
-    if (m{GET (?:/~eserte/bbbike/cgi/bbbike.cgi|/cgi-bin/bbbike.cgi)\?(\S+)}) {
-	my $qs = $1;
-	next if (defined $filter && !/$filter/o);
-	next if m{\"BBBike-Test/\d+\.\d+\"}; # ignore my tests
-	next if $only_result && (!has_params_for_search($qs) || $qs =~ /output_as=print/);
-	push @requests, $qs; #XXX? uri_unescape($1);
-	push @req_lines, $_ if $netscape;
-    }
-}
-close LOG;
 
 open(ERRLOG, ">/tmp/bbbike-cgi-error.log");
 
@@ -151,84 +151,95 @@ if ($netscape) {
 #     }
 }
 
-for my $i (0 .. $#requests) {
-    my $req_url_part = $requests[$i];
-    if (keys %add_param) {
-	my $q = CGI->new($req_url_part);
-	while(my($k,$v) = each %add_param) {
-	    $q->param($k, $v);
-	}
-	$req_url_part = $q->query_string;
-    }
-    my $full_url = ($req_url_part =~ /coords=/ ? $cgigfxurl : $cgiurl)
-      . "?$req_url_part";
-    my $check_text = "Check $full_url $req_url_part...\n";
-    if ($verbose) {
-	print $tee $check_text;
-    }
-    if ($netscape) {
-	system("netscape -remote 'openURL($full_url, main)' &");
-	my $q = new CGI {};
-	$q->param('reqline', $req_lines[$i]);
-#	system("netscape -remote 'openURL($cgiinfourl?" . $q->query_string .
-#	       ", cgiinfo)' &");
-	print STDERR "Continue ... ";
-	<STDIN>;
-    } else {
-	my $req = new HTTP::Request('GET', $full_url);
-	my $res = $ua->request($req);
-	my $error_str = "";
-	if (!$res->is_success) {
-	    $error_str .= "*** ERROR: " . $res->as_string . "\n";
-	} elsif ($res->content =~ /(Der Rechner ist überlastet)/) {
-	    die $1;
-	} elsif ($res->content =~ /(Fehler.{1,40})/) {
-	    $error_str .= "*** Programm error: $1\n";
-	} elsif ($res->content =~ m|((<b>.*</b>).*nicht bekannt)|) {
-	    $error_str .= "*** Warnung: $1\n";
-	} elsif ($res->content =~ m|(.*nicht bekannt)|) {
-	    $error_str .= "*** Warnung: $1\n";
-	} elsif ($res->content =~ m|(Keine Route gefunden)|) {
-	    $error_str .= "*** Warnung: $1\n";
-	}			# else OK
-	if ($error_str ne "") {
-	    if (!$verbose) {
-		print $tee $check_text;
-	    }
-	    print $tee $error_str;
-	}
+while(defined($_ = $nextline->())) {
+    if (m{GET (?:/~eserte/bbbike/cgi/bbbike.cgi|/cgi-bin/bbbike.cgi)\?(\S+)}) {
+	my $qs = $1;
+	next if (defined $filter && !/$filter/o);
+	next if m{\"BBBike-Test/\d+\.\d+\"}; # ignore my tests
+	next if $only_result && (!has_params_for_search($qs) || $qs =~ /output_as=print/);
 
-	if ($sgml_check &&
-	    $res->content_type eq 'text/html' &&
-	    $res->is_success
-	   ) {
-	    my $sgmlfile = "/tmp/bla.html";
-	    if (open(ERR, ">>$errorfile")) {
-		print ERR ("-"x70)."\n*** ".$req_url_part." ***\n";
-		close ERR;
+	my $request = $qs; #XXX? uri_unescape($1);
+	my $req_line = $_ if $netscape;
+
+	my $req_url_part = $request;
+	if (keys %add_param) {
+	    my $q = CGI->new($req_url_part);
+	    while (my($k,$v) = each %add_param) {
+		$q->param($k, $v);
 	    }
-	    if (open(BLA, ">$sgmlfile")) {
-		print BLA '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">';
-		print BLA "\n";
-	        my($line, $rest) = split(/\n/, $res->content, 2);
-		if ($line !~ /<!DOCTYPE/) {
-		    print BLA "$line\n";
+	    $req_url_part = $q->query_string;
+	}
+	my $full_url = ($req_url_part =~ /coords=/ ? $cgigfxurl : $cgiurl)
+	    . "?$req_url_part";
+	my $check_text = "Check $full_url $req_url_part...\n";
+	if ($verbose) {
+	    print $tee $check_text;
+	}
+	if ($netscape) {
+	    system("netscape -remote 'openURL($full_url, main)' &");
+	    my $q = new CGI {};
+	    $q->param('reqline', $req_line);
+	    #	system("netscape -remote 'openURL($cgiinfourl?" . $q->query_string .
+	    #	       ", cgiinfo)' &");
+	    print STDERR "Continue ... ";
+	    <STDIN>;
+	} else {
+	    my $req = new HTTP::Request('GET', $full_url);
+	    my $res = $ua->request($req);
+	    my $error_str = "";
+	    if (!$res->is_success) {
+		$error_str .= "*** ERROR: " . $res->as_string . "\n";
+	    } elsif ($res->content =~ /(Der Rechner ist überlastet)/) {
+		die $1;
+	    } elsif ($res->content =~ /(Fehler.{1,40})/) {
+		$error_str .= "*** Programm error: $1\n";
+	    } elsif ($res->content =~ m|((<b>.*</b>).*nicht bekannt)|) {
+		$error_str .= "*** Warnung: $1\n";
+	    } elsif ($res->content =~ m|(.*nicht bekannt)|) {
+		$error_str .= "*** Warnung: $1\n";
+	    } elsif ($res->content =~ m|(Keine Route gefunden)|) {
+		$error_str .= "*** Warnung: $1\n";
+	    }			# else OK
+	    if ($error_str ne "") {
+		if (!$verbose) {
+		    print $tee $check_text;
 		}
-		print BLA $rest;
-		close BLA;
+		print $tee $error_str;
+	    }
 
-		local(%ENV) = %ENV;
-		$ENV{SHELL} = "/bin/sh";
-		system
-		  ("nsgmls -m $sgml_catalog ".
-		   "$sgmlfile 2>>$errorfile >/dev/null");
+	    if ($sgml_check &&
+		$res->content_type eq 'text/html' &&
+		$res->is_success
+	       ) {
+		my $sgmlfile = "/tmp/bla.html";
+		if (open(ERR, ">>$errorfile")) {
+		    print ERR ("-"x70)."\n*** ".$req_url_part." ***\n";
+		    close ERR;
+		}
+		if (open(BLA, ">$sgmlfile")) {
+		    print BLA '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">';
+		    print BLA "\n";
+		    my($line, $rest) = split(/\n/, $res->content, 2);
+		    if ($line !~ /<!DOCTYPE/) {
+			print BLA "$line\n";
+		    }
+		    print BLA $rest;
+		    close BLA;
 
-		print STDERR "Continue ... ";
-		<STDIN>;
+		    local(%ENV) = %ENV;
+		    $ENV{SHELL} = "/bin/sh";
+		    system
+			("nsgmls -m $sgml_catalog ".
+			 "$sgmlfile 2>>$errorfile >/dev/null");
+
+		    print STDERR "Continue ... ";
+		    <STDIN>;
+		}
 	    }
 	}
     }
 }
+close LOG;
 
 sub has_params_for_search {
     my($query_string) = @_;

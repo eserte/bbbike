@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: polizei-faxabruf-diff.pl,v 1.4 2005/02/25 01:52:51 eserte Exp $
+# $Id: polizei-faxabruf-diff.pl,v 1.4 2005/02/25 01:52:51 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004, 2005 Slaven Rezic. All rights reserved.
@@ -73,6 +73,10 @@ for my $i (0 .. $#events_old) {
 }
 
 use Text::Wrap;
+local $Text::Wrap::columns = 60;
+use Text::Tabs;
+local $tabstop = 8;
+
 @flat = sort { $b->[0] <=> $a->[0] } @flat;
 my %seen_old;
 my %seen_new;
@@ -81,9 +85,23 @@ for (@flat) {
     my($factor, $index_old, $index_new) = @$_;
     next if $seen_old{$index_old} || $seen_new{$index_new};
     if ($factor < 1) {
-	print wrap("", "", as_string($index_old, "old")), "\n";
+	my @lines_new = expand split /\n/, wrap("", "", as_string($index_new, "new"));
+	my @lines_old = expand split /\n/, wrap("", "", as_string($index_old, "old"));
+	if (@lines_new < @lines_old) {
+	    @lines_new = ("") x (@lines_old-@lines_new);
+	}
+
+	@lines_new = map {
+	    if (length $_ < $Text::Wrap::columns) {
+		$_ .= " "x($Text::Wrap::columns-length$_);
+	    }
+	    $_;
+	} @lines_new;
+
+	for my $i (0 .. $#lines_new) {
+	    print "$lines_new[$i]    $lines_old[$i]\n";
+	}
 	print "-"x10, sprintf("Similarity: %.3f", $factor), "\n";
-	print wrap("", "", as_string($index_new, "new")), "\n";
 	print "-"x70, "\n";
     }
     $seen_old{$index_old}++;
