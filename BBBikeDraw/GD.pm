@@ -714,7 +714,7 @@ sub _draw_scale_label {
     my($self, $x, $y, $string, $color) = @_;
     my $ttf = "/usr/X11R6/lib/X11/fonts/TTF/luxirr.ttf"; # XXX do not hardcode!
     my $im = $self->{Image};
-    if (defined &GD::Image::stringFT && -r $ttf) {
+    if ($self->{GD_Image}->can("stringFT") && -r $ttf) {
 	# XXX why +8?
 	$im->stringFT($color, $ttf, 8, 0, $x, $y+8, $string);
     } else {
