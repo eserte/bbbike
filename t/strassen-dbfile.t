@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-dbfile.t,v 1.2 2003/06/23 22:04:48 eserte Exp $
+# $Id: strassen-dbfile.t,v 1.3 2004/02/12 10:57:00 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -15,11 +15,11 @@ use lib ("$FindBin::RealBin/..",
 
 BEGIN {
     if (!eval q{
-	use Test;
+	use Test::More;
 	use Strassen::DB_File;
 	1;
     }) {
-	print "1..0 # skip: and/or DB_File no Test module\n";
+	print "1..0 # skip: no DB_File and/or Test::More modules\n";
 	exit;
     }
 }
@@ -31,60 +31,65 @@ BEGIN { plan tests => 3 }
 
 # memory benchmarks (as early as possible)
 
-my(@s) = currmem();
-my $s = Strassen->new("strassen");
-my(@s1) = currmem();
-my $s2 = Strassen::DB_File->new("strassen");
-my(@s2) = currmem();
-print "# Memory consumption\nStrassen:          @{[ $s1[1]-$s[1] ]} bytes\nStrassen::DB_File: @{[ $s2[1]-$s1[1] ]} bytes\n";
+SKIP: {
+    my(@s) = currmem();
+    my $s = Strassen->new("strassen");
+    my(@s1) = currmem();
+    my $s2;
+    eval { $s2 = Strassen::DB_File->new("strassen"); };
+    skip "strassen.db not available here", 3 if $@;
 
-ok(ref $s2, 'Strassen::DB_File');
-ok($s2->isa('Strassen'));
+    my(@s2) = currmem();
+    print "# Memory consumption\nStrassen:          @{[ $s1[1]-$s[1] ]} bytes\nStrassen::DB_File: @{[ $s2[1]-$s1[1] ]} bytes\n";
 
-CHECK: {
-    $s->init;
-    $s2->init;
-    while(1) {
-	my $r = $s->next;
-	my $r2 = $s2->next;
-	if (!@{ $r->[Strassen::COORDS] }) {
-	    ok(!@{ $r2->[Strassen::COORDS] });
-	    last CHECK;
-	}
-	if ($r->[Strassen::NAME] ne $r2->[Strassen::NAME]) {
-	    ok(0);
-	    last CHECK;
-	}
-	if ($r->[Strassen::CAT] ne $r2->[Strassen::CAT]) {
-	    ok(0);
-	    last CHECK;
-	}
-	if (@{$r->[Strassen::COORDS]} != @{$r2->[Strassen::COORDS]}) {
-	    ok(0);
-	    last CHECK;
-	}
-	for my $i (0 .. $#{$r->[Strassen::COORDS]}) {
-	    if ($r->[Strassen::COORDS][$i] ne $r2->[Strassen::COORDS][$i]) {
+    is(ref $s2, 'Strassen::DB_File');
+    ok($s2->isa('Strassen'));
+
+ CHECK: {
+	$s->init;
+	$s2->init;
+	while(1) {
+	    my $r = $s->next;
+	    my $r2 = $s2->next;
+	    if (!@{ $r->[Strassen::COORDS] }) {
+		ok(!@{ $r2->[Strassen::COORDS] });
+		last CHECK;
+	    }
+	    if ($r->[Strassen::NAME] ne $r2->[Strassen::NAME]) {
 		ok(0);
 		last CHECK;
 	    }
+	    if ($r->[Strassen::CAT] ne $r2->[Strassen::CAT]) {
+		ok(0);
+		last CHECK;
+	    }
+	    if (@{$r->[Strassen::COORDS]} != @{$r2->[Strassen::COORDS]}) {
+		ok(0);
+		last CHECK;
+	    }
+	    for my $i (0 .. $#{$r->[Strassen::COORDS]}) {
+		if ($r->[Strassen::COORDS][$i] ne $r2->[Strassen::COORDS][$i]) {
+		    ok(0);
+		    last CHECK;
+		}
+	    }
 	}
     }
+
+    # CPU benchmarks
+
+    timethese(-1,
+	      {'strassen'        => sub { Strassen->new("strassen") },
+	       'strassen-dbfile' => sub { Strassen::DB_File->new("strassen") },
+	      }
+	     );
+
+    timethese(-1,
+	      {'strassen-get'        => sub { $s->get(1000); },
+	       'strassen-dbfile-get' => sub { $s2->get(1000); },
+	      }
+	     );
 }
-
-# CPU benchmarks
-
-timethese(-1,
-	  {'strassen'        => sub { Strassen->new("strassen") },
-	   'strassen-dbfile' => sub { Strassen::DB_File->new("strassen") },
-	  }
-	 );
-
-timethese(-1,
-	  {'strassen-get'        => sub { $s->get(1000); },
-	   'strassen-dbfile-get' => sub { $s2->get(1000); },
-	  }
-	 );
 
 # REPO BEGIN
 # REPO NAME currmem /home/e/eserte/src/repository 
