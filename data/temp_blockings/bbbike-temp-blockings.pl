@@ -468,4 +468,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Berlin-Moabit, Kreuzung Rathenower Straße / Stephanstraße, Baustelle, Kreuzung vollständig gesperrt, Dauer: voraussichtlich bis 09.08.2004',
        type  => 'handicap',
      },
+     { from  => 1091055057, # 2004-07-29 00:50
+       until => 1094335200, # 2004-09-05 00:00
+       file  => 'dietzgenstr.bbd',
+       text  => 'Dietzgenstr. (Pankow) Richtung stadteinwärts zwischen Schillerstr. und Uhlandstr. Baustelle, Richtungsfahrbahn komplett gesperrt (bis 04.09.2004) ',
+       type  => 'gesperrt',
+     },
     );
