@@ -820,6 +820,8 @@ Tk::CmdLine::SetArguments();
    ],
    ['nichttragen','!',0,
     label => M"Tragen strikt vermeiden", var => \$sperre{'tragen'}],
+   ['tempblockings','!',0,
+    label => M"Temporaere Sperrungen verwenden", var => \$do_activate_temp_blockings],
    ['ampeloptimierung','!',0,
     label => M"Ampeloptimierung verwenden", var => \$ampel_optimierung],
    ['beschleunigung','=f',1,
@@ -3138,6 +3140,13 @@ sub do_iconframe {
 			  }
 		      });
 	if ($advanced) {
+	    $bdm->checkbutton
+		(-label => M"Aktive Sperrungen zeichnen und beachten",
+		 -variable => \$show_active_temp_blockings,
+		 -command => sub {
+		     activate_temp_blockings($show_active_temp_blockings);
+		 },
+		);
 	    $bdm->command
 		(-label => M"Speichern für temp_blockings",
 		 -command => sub {
@@ -4375,6 +4384,7 @@ read_hoehe()  if $show_grade || $steigung_optimierung || $use_hoehe;
 read_ampeln() unless $lowmem;
 read_sperre_tragen() unless $lowmem;
 plot_sperre() if $p_draw{'sperre'};
+activate_temp_blockings(1) if $do_activate_temp_blockings;
 
 if ($net_type =~ /^(us|r|rus)$/) {
     make_net();
@@ -5023,7 +5033,7 @@ sub define_item_attribs {
 	    f-label-bg w-label-bg f-label w-label
 	    s-label-bg s-label l-label-bg l-label
 	    u u-bg u-fg r b r-bg r-fg b-bg b-fg u-label r-label b-label
-	    hoehe vf-bg sperre v-fg obst
+	    hoehe vf-bg sperre temp_sperre v-fg obst
 	    route comm),
 	 (map { "comm-$_" } @comments_types),
 	 qw(qs hs ql hl mount nl delnet
@@ -5708,7 +5718,7 @@ EOF
 
 sub set_bindings {
     foreach (qw(p pp o u-bg u-fg b-bg b-fg r-bg r-fg
-		sperre lsa-fg lsa-bg show pl-fg
+		sperre temp_sperre lsa-fg lsa-bg show pl-fg
 		L-img L-fg kn-fg ki-fg rest-fg)) {
 	std_p_binding($_);
     }
@@ -7745,7 +7755,9 @@ sub plot {
 	plotstr($abk, %args);
     } elsif ($type eq 'p') {
 	if ($abk =~ /sperre$/) {
-	    plot_sperre($args{-filename}, -abk => $abk);
+	    my $object_or_file = $args{-object} || $args{-filename};
+	    $args{-abk} = $abk;
+	    plot_sperre($object_or_file, %args);
 	} else {
 	    plotp($abk, %args);
 	}
@@ -8205,7 +8217,7 @@ sub outline_text {
 # XXX gesperrte Wegführungen werden noch nicht gezeichnet
 ### AutoLoad Sub
 sub plot_sperre {
-    my $file = shift;
+    my $file_or_object = shift;
     my %args = @_;
     my $abk = $args{-abk} || 'sperre';
     Hooks::get_hooks("before_plot")->execute;
@@ -8216,13 +8228,18 @@ sub plot_sperre {
     }
     IncBusy($top);
     eval {
-	my $gesperrt = new Strassen (defined $file
-				     ? $file
-				     : ($coord_system eq 'standard'
-					? $sperre_file
-					: "$sperre_file-orig"
-				       )
-				    );
+	my $gesperrt;
+	if (UNIVERSAL::isa($file_or_object, "Strassen")) {
+	    $gesperrt = $file_or_object;
+	} else {
+	    $gesperrt = new Strassen (defined $file_or_object
+				      ? $file_or_object
+				      : ($coord_system eq 'standard'
+					 ? $sperre_file
+					 : "$sperre_file-orig"
+					)
+				     );
+	}
 
 	my $width0  = get_line_width('sperre0');
 	my $width1  = get_line_width('sperre1');
@@ -8424,6 +8441,7 @@ sub plot_sperre {
 	}
 
     };
+    warn $@ if $@;
     DecBusy($top);
     Hooks::get_hooks("after_plot")->execute;
 }
@@ -8441,6 +8459,56 @@ sub line_shorten {
 	     ($cref->[-2]-$cref->[-4])/$len2*$whole_len2+$cref->[-4],
 	     ($cref->[-1]-$cref->[-3])/$len2*$whole_len2+$cref->[-3],
 	    );
+    }
+}
+
+sub activate_temp_blockings {
+    my $do_show_active_temp_blockings = shift;
+    # XXX these should come from a file as constants
+    my $temp_blockings_dir = "$FindBin::RealBin/misc/temp_blockings";
+    my $file = "$temp_blockings_dir/bbbike-temp-blockings.pl";
+    if (!-r $file) {
+	status_message(M("Kein Support fuer temporaere Sperrungen"), "die");
+    }
+    if (!$do_show_active_temp_blockings) {
+	$show_active_temp_blockings = 0;
+	plot("p", "temp_sperre", -draw => 0);
+	make_net(); # XXX find more performant solution
+	return;
+    }
+
+    eval {
+	use vars qw(@temp_blocking); # XXX do not use a global such as this
+	do $file; # XXX Safe?
+	my @s;
+	for my $o (@temp_blocking) {
+	    if ($o->{from} < time && $o->{until} > time) {
+		my $new_s = Strassen->new;
+		my $s = Strassen->new("$temp_blockings_dir/$o->{file}");
+		$s->init;
+		while(1) {
+		    my $ret = $s->next;
+		    last if !@{ $ret->[Strassen::COORDS()] };
+		    $ret->[Strassen::NAME] = $o->{text};
+		    $new_s->push($ret);
+		}
+		push @s, $new_s;
+	    }
+	}
+	if (!@s) {
+	    status_message("Keine aktiven temporaeren Sperrungen", "warn");
+	    return;
+	}
+	my $ms = MultiStrassen->new(@s);
+	make_net() if !$net;
+	$net->make_sperre($ms, Type => "all");
+	plot("p", "temp_sperre", -object => $ms, -draw => 1);
+    };
+    if ($@) {
+	$show_active_temp_blockings = 0;
+	status_message($@, "die");
+    } else {
+	$show_active_temp_blockings = 1;
     }
 }
 
@@ -10097,7 +10165,7 @@ sub enterpoint {
 	    $act_value{Haltestelle} .= " ($hoehe{$tags[1]}m)";
 	}
 	$hs_label->configure(-fg => 'black');
-    } elsif ($tags[0] eq 'sperre') {
+    } elsif ($tags[0] =~ /sperre$/) {
 	if ($tags[1] eq 'sperre0') {
 	    $act_value{Haltestelle} = $tags[2] || M"tragen notwendig";
 	} elsif ($tags[1] =~ /^sperre1/) {
