@@ -1086,10 +1086,10 @@ sub get_from_db {
   eval join('',<main::DATA>) || die("$@ $main::DATA") unless caller();
 }
 
-1;
-
 %main::str_file = %$main::str_file if 0; # peacify -w
 $main::devel_host = $main::devel_host if 0; # peacify -w
+
+1;
 
 __END__
 
