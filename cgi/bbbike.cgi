@@ -1539,8 +1539,8 @@ EOF
 	    print "<input type=hidden name=" . $type . "isort value=1>\n";
 	} elsif ($$oneref ne '' && @$matchref == 0) {
 	    print "<td align=center>$fontstr" if $bi->{'can_table'};
-	    print "<i>$$oneref</i> ist nicht bekannt.<br>\n";
-	    print qq{<a target="newstreetform" href="$bbbike_html/newstreetform.html">Straße eintragen</a><br>\n};
+	    print "<i>$$oneref</i> ist nicht bekannt.\n";
+	    print qq{(<a target="newstreetform" href="$bbbike_html/newstreetform.html">Straße eintragen</a>)<br>\n};
 	    $no_td = 1;
 	    $tryempty = 1;
 	} elsif ($$tworef ne '') {
@@ -1551,7 +1551,8 @@ EOF
 		my($best) = get_nearest_crossing_coords(split(/,/, $xy));
 		my $cr = crossing_text(defined $best ? $best : $xy);
 		print qq{<i>$strasse</i> ist nicht bekannt (<a target="newstreetform" href="$bbbike_html/newstreetform.html">Straße eintragen</a>).<br>\nDie nächste bekannte Kreuzung ist:<br>\n};
-		print "$cr";
+		print "<i>$cr</i>";
+		print qq{<br>\nund wird für die Suche verwendet.<br>\n};
 		print "<input type=hidden name=" . $type .
 		    "c value=\"$best\">";
 		print "<input type=hidden name=" . $type .
