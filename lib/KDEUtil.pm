@@ -214,8 +214,10 @@ sub fm {
 # XXX Probably wrong for KDE 3
 sub kde_dirs {
     my $self = shift;
-    my $given_prefix = shift;
-    my $writable = shift;
+    my(%args) = @_;
+    my $given_prefix = $args{-prefix};
+    my $writable     = $args{-writable};
+    my $all          = $args{-all};
     if (defined $given_prefix) {
 	my %kdedirs;
 	%kdedirs = $self->_find_kde_dirs($given_prefix, $writable);
@@ -225,7 +227,7 @@ sub kde_dirs {
 	require File::Basename;
 	my $sep = $Config::Config{'path_sep'} || ':';
 
-	my %kdedirs = $self->_find_kde_dirs_with_kde_config($writable);
+	my %kdedirs = $self->_find_kde_dirs_with_kde_config(-writable => $writable, -all => 1);
 	return %kdedirs if %kdedirs;
 
 	my @path = map { File::Basename::dirname($_) } split(/$sep/o, $ENV{PATH});
@@ -241,8 +243,16 @@ sub kde_dirs {
 
 sub _find_kde_dirs_with_kde_config {
     shift;
-    my $writable = shift;
+    my(%args) = @_;
+    my $writable = $args{-writable} || 0;
+    my $all      = $args{-all}      || 0;
     my %ret;
+
+    # PATH fallback
+    require Config;
+    my $sep = $Config::Config{'path_sep'} || ':';
+    local $ENV{PATH} = $ENV{PATH} . join $sep, map { "/opt/kde$_/bin" } (3, 2, "");
+
  TYPE:
     for my $def ([apps => "applnk"],
 		 [icon => "icons"],
@@ -252,12 +262,18 @@ sub _find_kde_dirs_with_kde_config {
 		 [config => "config"],
 		) {
 	my($new_name, $old_name) = @$def;
-	my(@path) = split /:/, `kde-config --expandvars --path $new_name`;
+	my $cfg = `kde-config --expandvars --path $new_name`;
+	chomp $cfg;
+	my(@path) = split /:/, $cfg;
 	for my $path (@path) {
 	    next if (!-e $path || !-d $path);
 	    next if $writable && !-w $path;
-	    $ret{"-$old_name"} = $path;
-	    next TYPE;
+	    if ($all) {
+		push @{ $ret{"-$old_name"} }, $path;
+	    } else {
+		$ret{"-$old_name"} = $path;
+		next TYPE;
+	    }
 	}
     }
     %ret;
@@ -299,26 +315,38 @@ sub _find_kde_dirs {
 sub get_kde_config {
     my $self = shift;
     my $rc = shift;
-    my %commondirs = $self->kde_dirs;
-    my %homedirs   = $self->kde_dirs("$ENV{HOME}/.kde");
-    my $cfg = {};
+
+    my %commondirs = $self->kde_dirs(-all => 1);
+    my %homedirs   = $self->kde_dirs(-prefix => "$ENV{HOME}/.kde");
+
+    my @dirs;
     foreach my $cfgdir (\%commondirs, \%homedirs) {
 	if (exists $cfgdir->{-config}) {
-	    if (open(F, $cfgdir->{-config} . "/$rc")) {
-		my $curr_section;
-		while(<F>) {
-		    /^#/ && next;
-		    chomp;
-		    if (/^\[(.*)\]/) {
-			$curr_section = $1;
-		    } elsif (/^([^=]+)=(.*)/) {
-			if (defined $curr_section) {
-			    $cfg->{$curr_section}{$1} = $2;
-			}
+	    if (ref $cfgdir->{-config} eq "ARRAY") {
+		push @dirs, reverse @{ $cfgdir->{-config} };
+	    } else {
+		push @dirs, $cfgdir->{-config};
+	    }
+	}
+    }
+
+    my $cfg = {};
+    foreach my $dir (@dirs) {
+	my $rcfile = "$dir/$rc";
+	if (open(F, $rcfile)) {
+	    my $curr_section;
+	    while(<F>) {
+		/^#/ && next;
+		chomp;
+		if (/^\[(.*)\]/) {
+		    $curr_section = $1;
+		} elsif (/^([^=]+)=(.*)/) {
+		    if (defined $curr_section) {
+			$cfg->{$curr_section}{$1} = $2;
 		    }
 		}
-		close F;
 	    }
+	    close F;
 	}
     }
     $cfg;
@@ -329,8 +357,10 @@ sub get_kde_config {
 Set the appearance of Tk windows as close as possible to that of the
 current KDE defintions.
 
-XXX Does not work for KDE 3.
+Seems to work again with KDE 3 (but is there always a .kderc?)
 
+XXX It's better to use get_kde_config on config > kdeglobals
+ 
 =cut
 
 sub kde_config_for_tk {
