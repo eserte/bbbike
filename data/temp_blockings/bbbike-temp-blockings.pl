@@ -462,4 +462,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'L 239; (B198 nö.Angermünde-Joachimsthal); Bahnübergang Görlsdorf Gleis- u. Straßenbau Vollsperrung 24.07.2004-30.07.2004 ',
        type  => 'gesperrt',
      },
+     { from  => 1090913211, # 2004-07-27 09:26
+       until => 1092088800, # 2004-08-10 00:00
+       file  => 'rathenower.bbd',
+       text  => 'Berlin-Moabit, Kreuzung Rathenower Straße / Stephanstraße, Baustelle, Kreuzung vollständig gesperrt, Dauer: voraussichtlich bis 09.08.2004',
+       type  => 'handicap',
+     },
     );

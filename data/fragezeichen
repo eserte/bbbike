@@ -76,7 +76,7 @@ An der Felgenlake, Spektelake: Qualität?	? -6116,15254 -6919,15372 -7119,15532 -
 Spektelake - Finkenkruger Weg: genaue Wegführung? Qualität?	? -7310,15526 -7384,15643 -7333,15451
 Niederheideweg - Hubertusstr.: Alternative zur Radelandstr? befahrbar, Qualität?	? -6443,17501 -5935,17290 -5597,17327 -5136,17227 -4841,17172 -4722,17029 -4240,16941 -3937,16881 -3727,16918
 Lünette: befahrbar, Qualität?	? -1055,15588 -1442,15459
-Kiewitt - Schafgraben: ausprobieren	? -14061,-2261 -14296,-2241 -14468,-2006 -14661,-1779
+Kiewitt - Schafgraben: ausprobieren, laut "mobil-potsdam.de" teilweise Kopfsteinpflaster	? -14061,-2261 -14296,-2241 -14444,-2029 -14661,-1779
 Drense - Ziemkendorf: Qualität?	? 47323,101179 47748,101441 47922,101590 48986,101899 49791,102345 50527,102364 50767,102535
 Röpersdorf - Zollchow (Uckerseen-Rundweg): Qualität?	? 38548,97797 38546,97349 38654,97007 38871,96664 38913,96023 38846,95660
 östliches Ufer des Unteruckersees: Qualität?	? 41165,91912 40479,93202 40438,94142 40874,94140 41117,95142 42124,95971 41692,97360 41212,97425 40798,98917 40298,99240 39662,100778 39022,101334
@@ -164,7 +164,7 @@ Esplanade - Grüntaler Str.: angeblich existiert eine Verbindung?	? 9984,16968 98
 B101 bis Großbeeren: hier auch ein Radweg?	? 5394,-3053 4842,-4182 4547,-4951 4227,-5721
 Teltow: größtenteils auch Radweg, genauer erfassen	? -2477,-1717 -2073,-1525 -1668,-1709 -1453,-1715 -1303,-1758 -1143,-1759 -705,-1564 -282,-1184 465,-662 741,-584 925,-684 1346,-762
 Am Kanal, Potsdam: Radweg vorhanden?	? -12317,-1212 -12553,-1278 -12834,-1362
-B1, Zeppelinstr.: Radweg vorhanden? (wahrscheinlich!)	? -13853,-1450 -14115,-1678 -15722,-3398
+B1, Zeppelinstr.: Radweg vorhanden? (wahrscheinlich!)	? -13853,-1450 -14115,-1678 -14444,-2029 -14806,-2417 -15474,-3133 -15722,-3398
 Am Neuen Palais: Radweg vorhanden?	? -15764,-1710 -15799,-1352
 B273: hier auch Radweg?	? -14737,300 -14859,421 -15527,795 -16640,1304 -16894,1485
 Leipziger Str., Potsdam: teilweise Suggestivstreifen?	? -12431,-2096 -12716,-2238 -12780,-2410 -13075,-2901
@@ -249,8 +249,8 @@ Glambeck - Templin: ist das hier die ausgeschilderte Strecke? Qualität?	? 37273,
 Am Neuen Garten: Wegführung?	? -12557,11 -12462,221 -12378,284 -12184,803 -12181,1196
 Bertinistr./Bertiniweg: Durchfahrt möglich? Qualität?	? -12185,1388 -12153,1787 -12275,1875 -12731,2009 -12893,1915
 Viereckremise/Grenzallee Potsdam: Durchfahrt möglich? Qualität?	? -13418,1668 -13854,2025 -14315,2135
-Katharinenholzstr.: laut "Berliner Umland" gut geeignet	? -15577,397 -14969,-50
-Verlängerte Amtsstr.: laut "Berliner Umland" witterungsabhängige Strecke	? -15251,1200 -15143,1812 -15290,2665 -15459,2946
+Katharinenholzstr.: laut "Berliner Umland" gut geeignet, laut "mobil-potsdam.de" asphaltiert	? -15577,397 -14969,-50
+Verlängerte Amtsstr.: laut "Berliner Umland" witterungsabhängige Strecke; laut "mobil-potsdam.de" teils eine "Promenade", teils betoniert 	? -15251,1200 -15143,1812 -15290,2665 -15459,2946
 Am Pappelhof: Durchfahrt möglich? Qualität?	? -18733,-2697 -18737,-3218 -18621,-3784 -18928,-4646 -18921,-5303 -19012,-5346
 zur Kohlhasenbrücker Str.: Durchfahrt möglich?	? -6998,-1320 -6996,-1436 -6892,-1492
 Kohlhasenbrücker Str.: Qualität?	? -6892,-1492 -6882,-1922 -6815,-3136 -6773,-3161 -6813,-3177 -6813,-3490 -6808,-3642 -6808,-3950
@@ -261,8 +261,9 @@ Galileistr.: Qualität? Name westl. der Neuendorfer Str. noch immer Galileistr?	?
 Im Schäferfeld: Qualität?	? -8114,-3675 -8475,-3861
 Im Schäferfeld - Nuthe: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)? genaue Wegführung? Durchfahrt möglich?	? -8475,-3861 -8813,-3912 -8915,-4069 -9306,-4259
 Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? -6983,-3886 -7077,-4186 -6902,-4397 -6775,-4326 -6671,-6390 -6516,-6520 -6508,-6969 -6183,-7600 -6319,-7823 -5766,-8911 -5374,-8934
-Puschkinallee: Einbahnstraße auch für Radfahrer?	? -12811,533 -12922,762 -13052,775
-F3 nach Marquardt: genaue Wegführung? Qualität?	? -19309,4359 -19403,4631 -18693,4568 -18825,4750
+Puschkinallee: Einbahnstraße Richtung Nord/West auch für Radfahrer?	? -12811,533 -12922,762 -13052,775
+F3 nach Marquardt: genaue Wegführung? Qualität?	? -19309,4359 -19403,4631 -18693,4568
+F3 nach Marquardt: genaue Wegführung? Laut "mobil-potsdam.de" Kopfsteinpflaster	? -18693,4568 -18825,4750
 Schwarzer Weg: Durchfahrt Richtung Marquardt möglich?	? -18513,4458 -18693,4568
 Joachimsthal - Altkünkendorf: Qualität?	? 35512,66695 38125,66800 39287,67537 39575,67262 39878,66515
 Oderdeich: Qualität?	? 59816,52294 60112,52487 60237,52787 60175,52837 60650,53662 60825,54487 60250,55787 59275,59912 59325,60650 59162,61250 59187,61800 59412,62775 59612,62975
@@ -329,7 +330,6 @@ Gellenthin: Fahrradroute laut Kompass-Karte	? 38459,162337 39037,162387 39930,16
 Kamp - Karnin: Fähre (auf Zuruf)?	? 37862,160236 38325,160573
 Ernst-Ruska-Ufer: Zufahrt von der westlichen Seite möglich?	? 20232,2362 19621,2378 19059,2421 18927,2431
 Walther-Nernst-Str. order Walther-Nemst-Str?	? 19562,2971
-Blankensee - Stücken: Qualität OK? (da fährt Thomas lang, also wahrscheinlich rennradtauglich)	? -7334,-18549 -7927,-18744 -8100,-18950 -8650,-19150 -9162,-19275 -9700,-18825 -10562,-18562 -11025,-18450 -11050,-18262 -11190,-18168
 Stücken - Tremsdorf: Qualität?	? -10978,-17764 -10562,-16912 -10175,-16537 -9675,-16375 -9200,-15550 -9035,-15135 -8680,-14704
 Am Havelkanal: laut "Berliner Umland" gut geeigneter Radweg, nur der westliche Teil ist witterungsabhängige Strecke	? -3379,23141 -3462,23100 -7081,22356 -9012,22250 -9060,22342
 An der Havel (Mauerweg und Berlin-Kopenhagen): laut "Berliner Umland" gut geeigneter Radweg, Durchfahrt unter der S-Bahn möglich?	? -3379,23141 -3025,23393 -2775,23981 -2675,24500 -2818,24631 -2946,25212
@@ -340,7 +340,7 @@ Mauerweg Spandau: laut "Berliner Umland" gut geeigneter Radweg	? -7322,12806 -73
 Am Park - Gutsstr. - Privatstr.: Durchfahrt möglich? Qualität?	? -9364,7189 -9128,7275 -8968,7328 -8768,7338 -8367,7717
 Mauerweg am Groß-Glienicker See: laut "Berliner Umland" witterungsabhängige Strecke	? -9128,7275 -9178,7165 -9175,7037 -9437,6887 -9490,6650 -9668,6171 -9665,5840 -9725,5559 -9797,5374
 Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsabhängige Strecke	? -9430,4935 -9543,4625 -8868,3875 -8820,3707
-Mauerweg am Griebnitzsee: laut "Berliner Umland" witterungsabhängige Strecke	? -9656,-285 -9562,-325 -9412,-518 -9337,-668 -9109,-821 -8934,-871 -8846,-993 -8693,-1115 -8662,-1215 -8378,-1490 -8250,-1503 -8062,-1459 -7837,-1346 -7592,-1402
+Mauerweg am Griebnitzsee: laut "Berliner Umland" witterungsabhängige Strecke, laut "mobil-potsdam.de" Waldweg	? -9656,-285 -9562,-325 -9412,-518 -9337,-668 -9109,-821 -8934,-871 -8846,-993 -8693,-1115 -8662,-1215 -8378,-1490 -8250,-1503 -8062,-1459 -7837,-1346 -7592,-1402
 Königsweg - Benschallee: Qualität? Durchfahrt möglich?	? -1606,1836 -1583,1701
 Mauerweg in Schildow: Qualität? Wegführung? einzelne Straßen benennen?	? 7639,24383 7590,24481 7412,24481 7425,24715 6821,24700 6306,24537 6034,24503 5534,24521 5309,24571 5256,24593 4950,24293 4825,24328
 Mauerweg in Frohnau: Verlauf weitgehend unklar, Qualität?	? 3848,24546 3600,24490 3515,24668 3546,24859 3603,24968 3306,25259 3200,25429 3211,25484 3473,25618 3662,25618 3615,25890 3362,26046 3390,26225 3540,26465 3450,26503 3403,26668
@@ -355,6 +355,20 @@ Glindow - Pertzow: laut "Berliner Umland" witterungsabhängige Strecke	? -22914,-
 Pfad am Sacrow-Paretzer-Kanal: genaue Wegführung? Qualität?	? -15034,3150 -15042,3314 -15217,3329 -15357,3538 -15781,3663 -15950,3654 -16187,3722 -17557,4296 -18210,4505
 Werder - zum Plessower See: genaue Wegführung? Qualität?	? -22042,-2060 -22734,-2249 -22933,-2411 -23320,-2574
 Alt-Brieselang - Brieselang: Qualität? genaue Wegführung?	? -16914,22393 -18103,22064 -17978,21602 -18415,21465 -18378,20766 -18817,19637
+Laut mobil-potsdam.de: Asphaltiert	? -18683,4751 -18825,4750
+Laut "mobil-potsdam.de" Waldweg	? -18693,4568 -18210,4505
+Fortsetzung der Stahnsdorfer Str.: laut "mobil-potsdam.de" Waldweg. Geht es nach Osten hin weiter?	? -7821,-1890 -6882,-1922 -6084,-1934
+Laut "mobil-potsdam.de" Durchfahrt möglich, laut einschlägigen Stadtplänen aber nicht	? -9224,-1727 -9225,-1950
+Plantagenstr.: laut "mobil-potsdam.de" Kopfsteinpflaster (schwierig zu erkennen)	? -9837,-1612 -9868,-1425
+Goethestr./Fontanestr.: laut "mobil-potsdam.de" asphaltiert	? -9868,-1425 -9775,-1431 -9506,-1431 -9215,-1431 -9224,-1727
+Laut "mobil-potsdam.de" asphaltiert	? -9837,-1612 -9896,-1625 -10365,-1376 -10606,-1286
+Laut "mobil-potsdam.de" überwiegend Waldweg mit kurzen asphaltierten Stellen	? -16912,-5690 -16558,-5727 -16323,-5706 -16072,-4894 -16010,-4509 -15886,-4339
+Am Templiner See: laut "mobil-potsdam.de" unterschiedliche Qualität ("Promenade", betoniert, Waldweg)	? -15886,-4339 -15750,-4196 -15765,-3990 -15431,-3618 -15340,-3406 -15203,-2931 -14912,-2884 -14734,-2471 -14806,-2417
+Auf dem Kiewitt - Breite Str.: laut "mobil-potsdam.de" eine "Promenade"	? -13999,-1856 -13978,-1640 -13853,-1450
+Laut "mobil-potsdam.de" Durchfahrt am rechten Ufer der Alten Fahrt möglich, unterschiedliche Qualität	? -12719,-1661 -12600,-1706 -12437,-1506 -12256,-1434
+Alte Potsdamer Landstraße: Durchfahrt möglich (Friedhof?)? Qualität (Waldweg?)?	? -2545,-1614 -6084,-1934
+S-Bahnhof Griebnitzsee - Uferweg am Griebnitzsee: laut "mobil-potsdam.de" eine Treppe	? -8063,-1651 -8250,-1503
+Behlertstr.: Einbahnstraße in östlicher Richtung?	? -12868,-493 -12578,-426 -12362,-370
 wirklich?	? 9215,3599
 geplante Ampel in Hellersdorf	? 24321,14448
 geplante Ampel in Hellersdorf	? 25094,14209
