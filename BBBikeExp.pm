@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeExp.pm,v 1.15 2003/06/01 22:12:01 eserte Exp $
+# $Id: BBBikeExp.pm,v 1.17 2003/06/09 21:44:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use Strassen;
 use strict;
 use vars qw(%exp_str_drawn %exp_str
 	    %exp_p_drawn %exp_p
-	    %exp_known_grids);
+	    %exp_known_grids $exp_master);
 #XXX del:
 #  	    $plotpoint_draw_sub $plotstr_draw_sub $plotorte_draw_sub
 #  	    $coord_system_obj $coord_system
@@ -122,6 +122,17 @@ sub BBBikeExp::bbbikeexp_setup {
     $BBBikeExp::setup_done = 1;
 }
 
+sub BBBikeExp::bbbikeexp_empty_setup {
+    @defs_str = ();
+    @defs_p = ();
+    @defs_p_o = ();
+    @defs_str_abk = map { $_->[0] } @defs_str;
+    @defs_p_abk   = map { $_->[0] } @defs_p;
+    @defs_p_o_abk = map { $_->[0] } @defs_p_o;
+
+    $BBBikeExp::setup_done = 1;
+}
+
 # XXX for now "-orig" has to be specified unlike in other functions
 # like main::plotstr
 sub BBBikeExp::bbbikeexp_add_data {
@@ -146,11 +157,17 @@ sub BBBikeExp::bbbikeexp_add_data {
 	push @defs_str, $def;
 	push @defs_str_abk, $abk;
 	BBBikeExp::draw_streets($def);
+	if (!defined $exp_master) {
+	    $exp_master = $exp_str{$abk};
+	}
     } elsif ($type eq 'p') {
 	my $def = [$abk, $file];
 	push @defs_p, $def;
 	push @defs_p_abk, $abk;
 	BBBikeExp::draw_points($def);
+	if (!defined $exp_master) {
+	    $exp_master = $exp_p{$abk};
+	}
     } else {
 	die "type has to be either str or p, not $type";
     }
@@ -158,11 +175,54 @@ sub BBBikeExp::bbbikeexp_add_data {
     BBBikeExp::bbbikeexp_redraw_current_view();
 }
 
+sub BBBikeExp::bbbikeexp_remove_data {
+    my($type, $abk) = @_;
+    if ($type eq 'str') {
+	my $i = 0;
+	for (@defs_str) {
+	    if ($_->[0] eq $abk) {
+		splice @defs_str, $i, 1;
+		splice @defs_str_abk, $i, 1;
+		last;
+	    }
+	    $i++;
+	}
+	$str_draw{$abk} = 0;
+	delete $exp_str_drawn{$abk};
+	if ($exp_master eq $exp_str{$abk}) {
+	    undef $exp_master;
+	}
+	# XXX no! main::plot("str", $abk, -draw => 0);
+    } else {
+	my $i = 0;
+	for (@defs_p) {
+	    if ($_->[0] eq $abk) {
+		splice @defs_p, $i, 1;
+		splice @defs_p_abk, $i, 1;
+		last;
+	    }
+	    $i++;
+	}
+	$p_draw{$abk} = 0;
+	delete $exp_p_drawn{$abk};
+	if ($exp_master eq $exp_p{$abk}) {
+	    undef $exp_master;
+	}
+	# XXX no! main::plot("p", $abk, -draw => 0);
+    }
+
+    if (!defined $exp_master) {
+	warn "XXX master deleted, should find another one!!!";
+    }
+}
+
 sub BBBikeExp::draw_streets {
     my $def = shift;
     if (!$exp_str{$def->[0]}) {
 	$exp_str{$def->[0]} = new Strassen $def->[1];
 	$exp_str{$def->[0]}->make_grid(UseCache => 1);
+    } else {
+	$exp_str{$def->[0]}->reload;
     }
     $str_draw{$def->[0]} = 1;
     $str_outline{$def->[0]} = 0;
@@ -176,6 +236,8 @@ sub BBBikeExp::draw_points {
     if (!$exp_p{$def->[0]}) {
 	$exp_p{$def->[0]} = new Strassen $def->[1];
 	$exp_p{$def->[0]}->make_grid(UseCache => 1);
+    } else {
+	$exp_p{$def->[0]}->reload;
     }
     $p_draw{$def->[0]} = 1;
     if ($def->[0] =~ /^L\d+/) {
@@ -198,6 +260,9 @@ sub BBBikeExp::bbbikeexp_init {
 	BBBikeExp::draw_points($def);
     }
 #XXX needed here???    make_net(-l_add => 1) if !defined $net and !$no_make_net;
+
+    $exp_master = $exp_str{'s'} if !defined $exp_master;
+
     BBBikeExp::bbbikeexp_redraw_current_view();
 
     $BBBikeExp::mode = 1;
@@ -269,9 +334,9 @@ sub BBBikeExp::bbbikeexp_reload_all {
 sub BBBikeExp::plotstr_on_demand {
     my($x1, $y1, $x2, $y2) = @_;
 
-    return if !$exp_str{'s'};
+    return if !$exp_master;
 
-    my(@grids) = $exp_str{'s'}->get_new_grids
+    my(@grids) = $exp_master->get_new_grids
       ($x1, $y1, $x2, $y2,
        KnownGrids => \%exp_known_grids);
     my $something_new = 0;
@@ -308,7 +373,7 @@ sub BBBikeExp::plotstr_on_demand {
 
 	    foreach my $grid (@grids) {
 		if ($exp_str{$abk}->{Grid}{$grid}) {
-		    warn "Drawing new grid: $grid\n" if $verbose;
+		    warn "Drawing new grid for str/$abk: $grid\n" if $verbose;
 		    $something_new++;
 		    foreach my $strpos (@{ $exp_str{$abk}->{Grid}{$grid} }) {
 			if (!$exp_str_drawn{$abk}->{$strpos}) {
@@ -357,7 +422,7 @@ sub BBBikeExp::plotstr_on_demand {
 
 	    foreach my $grid (@grids) {
 		if ($exp_p{$abk}->{Grid}{$grid}) {
-		    warn "Drawing new grid: $grid\n" if $verbose;
+		    warn "Drawing new grid for p/$abk: $grid\n" if $verbose;
 		    $something_new++;
 		    foreach my $strpos (@{ $exp_p{$abk}->{Grid}{$grid} }) {
 			if (!$exp_p_drawn{$abk}->{$strpos}) {

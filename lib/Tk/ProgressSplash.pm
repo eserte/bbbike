@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ProgressSplash.pm,v 1.6 2002/07/28 15:41:40 eserte Exp eserte $
+# $Id: ProgressSplash.pm,v 1.7 2003/04/26 08:35:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.

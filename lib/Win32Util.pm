@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Win32Util.pm,v 1.28 2003/01/07 21:37:32 eserte Exp $
+# $Id: Win32Util.pm,v 1.30 2003/01/30 14:34:52 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2003 Slaven Rezic. All rights reserved.
@@ -35,7 +35,7 @@ these modules are already bundled with the popular ActivePerl package.
 use strict;
 use vars qw($DEBUG $browser_ole_obj $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
 $DEBUG=0 unless defined $DEBUG;
 
 # XXX Win-Registry-Funktionen mit Hilfe von Win32::API und
@@ -92,6 +92,9 @@ use vars qw(%API_FUNC %API_DEF);
 				       Out => 'N'},
 	    "RemoveMenu"           => {Lib => 'user32',
 				       In  => ['N','N','N'],
+				       Out => 'N'},
+	    "SetWindowPos"         => {Lib => 'user32',
+				       In  => [qw(N N N N N N N)],
 				       Out => 'N'},
 	   );
 
@@ -1460,6 +1463,12 @@ sub maximize {
 =head2 get_sys_color($what)
 
 Return ($r,$g,$b) values from 0 to 255 for the requested system color.
+C<$what> is any of: scrollbar, background, activecaption,
+inactivecaption, menu, window, windowframe, menutext, windowtext,
+captiontext, activeborder, inactiveborder, appworkspace, highlight,
+highlighttext, btnface, btnshadow, graytext, btntext,
+inactivecaptiontext, btnhighlight, 3ddkshadow, 3dlight, infotext,
+infobk.
 
 =cut
 
@@ -1542,6 +1551,60 @@ sub disable_dosbox_close_button {
     }
 }
 
+=head2 keep_on_top($tk_window [, $flag])
+
+Keep the window C<$tk_window> on top. If C<Win32::API> is not
+available, a crude hack with a <Visibility> binding is used instead.
+If the optional variable C<$flag> is false, "keep on top" is disabled.
+
+=cut
+
+# Idea by Jack
+sub keep_on_top {
+    my $mw = shift;
+    my $flag = 1;
+    if (@_) {
+	$flag = shift;
+    }
+
+    my $HWND_NOTOPMOST = -2;
+    my $HWND_TOPMOST = -1;
+    my $SWP_NOMOVE = 2;
+    my $SWP_NOSIZE = 1;
+
+    my $set_window_pos = _get_api_function("SetWindowPos");
+    if ($set_window_pos) {
+	$mw->update;
+	my $WinID = hex($mw->frame);
+	my $callAPI = sub {
+	    my($flag) = @_;
+	    my($return) = $set_window_pos->Call($WinID,$flag,0,0,0,0,$SWP_NOSIZE|$SWP_NOMOVE);
+	    warn "ERROR in api call" unless $return;
+	};
+	if ($flag) {
+	    $callAPI->($HWND_TOPMOST);
+	} else {
+	    $callAPI->($HWND_NOTOPMOST);
+	}
+    } else {
+	warn "No Win32::API available, visibility binding hack";
+	my $stay_above_after;
+	$mw->bind("<Visibility>" =>
+		  sub {
+		      if ($stay_above_after) {
+			  $stay_above_after->cancel;
+		      }
+		      $stay_above_after = $mw->after
+			  (1000, sub {
+			       $mw->raise;
+			       #Tk->break;
+			       undef $stay_above_after;
+			   });
+		  }
+		 );
+    }
+}
+
 =head1 MISC FUNCTIONS
 
 =head2 sort_cmp_hack($a,$b)
@@ -1582,3 +1645,14 @@ it under the same terms as Perl itself.
 =cut
 
 1;
+
+__END__
+
+Subject: Re: Best way to locate Windows install dir?
+
+I think that in practice env(windir) (note lowercase spelling) is
+indeed the most portable method.  It exists and is well-known since
+Win 3.x.
+
+You could also code your own small extension to call the
+GetWindowsDirectory() API. 

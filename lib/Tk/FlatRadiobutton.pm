@@ -1,14 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: FlatRadiobutton.pm,v 1.3 2001/11/07 19:09:16 eserte Exp $
+# $Id: FlatRadiobutton.pm,v 1.3 2001/11/07 19:09:16 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
+# Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
 #
 

@@ -8,7 +8,7 @@
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
+# Mail: slaven@rezic.de
 # WWW:  http://bbbike.sourceforge.net/
 #
 
@@ -685,7 +685,7 @@ L<Tk|Tk>, L<Tk::Canvas|Tk::Canvas>, L<xfig|xfig>
 
 =head1 AUTHOR
 
-Slaven Rezic <slaven.rezic@berlin.de>
+Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 

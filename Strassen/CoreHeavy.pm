@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.9 2003/06/01 21:59:04 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.10 2003/06/08 21:19:20 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -211,9 +211,11 @@ sub agrep_file {
 }
 
 # Sucht Straße anhand des Bezirkes.
+# $bezirk may be in the form "citypart1, citypart2, ..."
 ### AutoLoad Sub
 sub choose_street {
     my($str, $strasse, $bezirk, %args) = @_;
+    my @bezirk = split /\s*,\s*/, $bezirk;
     my @pos;
     $str->init;
     while(1) {
@@ -227,11 +229,14 @@ sub choose_street {
 		foreach (split(/\s*,\s*/, $2)) {
 		    $bez{$_}++;
 		}
-		if (exists $bez{$bezirk}) {
-		    if (wantarray) {
-			CORE::push(@pos, $str->pos);
-		    } else {
-			return $str->pos;
+		for my $bezirk (@bezirk) {
+		    if (exists $bez{$bezirk}) {
+			if (wantarray) {
+			    CORE::push(@pos, $str->pos);
+			} else {
+			    return $str->pos;
+			}
+			last;
 		    }
 		}
 	    } elsif ($check_strasse eq $strasse) {
@@ -619,6 +624,10 @@ sub reload {
     return if $self->is_current;
     warn "Reload " . $self->file . "...\n";
     $self->read_data;
+    if ($self->{Grid}) {
+	warn "Rebuild grid for " . $self->file . "...\n";
+	$self->make_grid(-rebuild => 1);
+    }
 }
 
 1;

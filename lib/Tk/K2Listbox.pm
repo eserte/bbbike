@@ -1,14 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: K2Listbox.pm,v 1.8 2002/08/01 21:32:39 eserte Exp $
+# $Id: K2Listbox.pm,v 1.9 2003/06/09 10:55:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999, 2000, 2002 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
+# Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
 #
 
@@ -22,7 +22,7 @@ use vars qw(@ISA $VERSION);
 @ISA = qw(Tk::Derived Tk::Frame);
 Construct Tk::Widget 'K2Listbox';
 
-$VERSION = '0.07';
+$VERSION = '0.08';
 
 sub Populate {
     my($w,$args) = @_;
@@ -76,7 +76,9 @@ sub Populate {
 		 $$textvarref = $lb->get("active");
 	     });
 
-    $w->ConfigSpecs(DEFAULT => [$lb]);
+    $w->ConfigSpecs(-regexp => ['PASSIVE', 'regexp', 'Regexp', 0],
+		    DEFAULT => [$lb],
+		   );
     $w->Delegates('focus'   => $e,
 		  'Goto'    => $w, # XXX why are these necessary?
 		  'Cache'   => $w,
@@ -95,25 +97,55 @@ sub bind {
 sub change_val {
     my($w, $watch, $newval) = @_;
     my $lb = $w->Subwidget("listbox");
-    my(@entries);
-    my $first_ch = lc(substr($newval, 0, 1));
-    my $i;
-    if (exists $w->{'_cache'}{$first_ch}) {
-	# XXX end könnte noch etwas effizienter sein...
-	$i = $w->{'_cache'}{$first_ch};
-    } else {
-	$i = 0;
-    }
-    @entries = $lb->get($i, "end");
-    for my $ent (@entries) {
-	if ($ent =~ /^\Q$newval\E/i) {
-	    $lb->activate($i);
-	    $lb->selectionClear(0, "end");
-	    $lb->selectionSet($i);
-	    $lb->see($i);
-	    last;
+    my $e = $w->Subwidget("entry");
+    my $found_i;
+    if ($w->cget(-regexp)) {
+	# check for valid regexp
+	eval {
+	    "" =~ /$newval/i;
+	};
+	if (!$@) {
+	    my $i = 0;
+	    for my $ent ($lb->get("0", "end")) {
+		if ($ent =~ /$newval/i) {
+		    $found_i = $i;
+		    last;
+		}
+		$i++;
+	    }
+	    if (exists $w->{OrigEntryFg}) {
+		$e->configure(-foreground => $w->{OrigEntryFg});
+		delete $w->{OrigEntryFg};
+	    }
+	} else {
+	    if (!exists $w->{OrigEntryFg}) {
+		$w->{OrigEntryFg} = $e->cget(-foreground);
+	    }
+	    $e->configure(-foreground => "red");
 	}
-	$i++;
+    } else {
+	my(@entries);
+	my $first_ch = lc(substr($newval, 0, 1));
+	my $i;
+	if (exists $w->{'_cache'}{$first_ch}) {
+	    # XXX end könnte noch etwas effizienter sein...
+	    $i = $w->{'_cache'}{$first_ch};
+	} else {
+	    $i = 0;
+	}
+	@entries = $lb->get($i, "end");
+	for my $ent (@entries) {
+	    if ($ent =~ /^\Q$newval\E/i) {
+		$found_i = $i;
+	    }
+	    $i++;
+	}
+    }
+    if (defined $found_i) {
+	$lb->activate($found_i);
+	$lb->selectionClear(0, "end");
+	$lb->selectionSet($found_i);
+	$lb->see($found_i);
     }
     $watch->Store($newval);
 }

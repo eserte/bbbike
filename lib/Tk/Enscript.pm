@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Enscript.pm,v 1.6 2001/12/15 14:23:00 eserte Exp $
+# $Id: Enscript.pm,v 1.6 2001/12/15 14:23:00 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -316,13 +316,13 @@ Tk::Enscript - a text-to-postscript converter using Tk::Canvas
 
 =head1 SYNOPSIS
 
-use Tk::Enscript;
+    use Tk::Enscript;
 
-enscript($top,
-	 -text   => $text,
-	 -media  => 'A4',
-	 -output => "/tmp/bla.%d.ps",
-	);
+    enscript($top,
+	     -text   => $text,
+	     -media  => 'A4',
+	     -output => "/tmp/bla.%d.ps",
+    );
 
 =head1 DESCRIPTION
 

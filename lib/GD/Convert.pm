@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Convert.pm,v 2.4 2003/05/29 22:56:46 eserte Exp $
+# $Id: Convert.pm,v 2.5 2003/06/09 10:16:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,9 @@ package GD::Convert;
 
 use strict;
 use vars qw($VERSION $DEBUG);
-$VERSION = sprintf("%d.%02d", q$Revision: 2.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.5 $ =~ /(\d+)\.(\d+)/);
+
+$DEBUG = 0 if !defined $DEBUG;
 
 sub import {
     my($pkg, @args) = @_;
@@ -341,23 +343,7 @@ sub _gif_external {
 	die "Unhandled type $ext_type";
     }
 
-    require IPC::Open3;
-
-    warn "Cmd: @cmd\n" if $GD::Convert::DEBUG;
-    my $pid = IPC::Open3::open3(\*WTR, \*RDR, \*ERR, @cmd);
-    die "Can't create process for @cmd" if !defined $pid;
-    binmode RDR;
-    binmode WTR;
-    print WTR $in_image;
-    close WTR;
-
-    my $gif;
-    {
-	local $/ = undef;
-	$gif = scalar <RDR>;
-    }
-    close RDR;
-
+    my $gif = _3_pipe(\$in_image, \@cmd);
     $gif;
 
 }
@@ -398,28 +384,7 @@ sub _newFromGif_external {
 	die "Unhandled type $ext_type";
     }
 
-    require IPC::Open3;
-
-    warn "Cmd: @cmd\n" if $GD::Convert::DEBUG;
-    my $pid = IPC::Open3::open3(\*WTR, \*RDR, \*ERR, @cmd);
-    die "Can't create process for @cmd" if !defined $pid;
-    binmode RDR;
-    binmode WTR;
-    print WTR $data;
-    close WTR;
-
-    my $data2;
-    {
-	local $/ = undef;
-	$data2 = scalar <RDR>;
-    }
-    close RDR;
-
-    if ($GD::Convert::DEBUG) {
-	local $/ = undef;
-	my $err = scalar <ERR>;
-	warn $err if defined $err && $err ne "";
-    }
+    my $data2 = _3_pipe(\$data, \@cmd);
 
     my $cmd;
     if ($input_type eq 'png') {
@@ -474,6 +439,108 @@ sub _data_from_file {
     my $data = <$FH>;
     close $FH if $do_close;
     $data;
+}
+
+sub _3_pipe {
+    my($in_ref, $cmd_ref) = @_;
+
+    warn "Cmd: @$cmd_ref\n" if $GD::Convert::DEBUG;
+
+    if ($ENV{MOD_PERL}) {
+#	return _3_pipe_ipc_run(@_); # XXX see below
+	warn "Using File::Temp interface instead of IPC::Open3"
+	    if $GD::Convert::DEBUG;
+	return _3_pipe_file_temp(@_);
+    }
+
+    require IPC::Open3;
+
+    my $pid = IPC::Open3::open3(\*WTR, \*RDR, \*ERR, @$cmd_ref);
+    die "Can't create process for @$cmd_ref" if !defined $pid;
+    binmode RDR;
+    binmode WTR;
+    warn "About to write " . length($$in_ref) . " Bytes, signature is "
+	. substr($$in_ref, 0, 3) . " ...\n"
+	    if $GD::Convert::DEBUG > 1;
+    print WTR $$in_ref;
+    warn "... written\n" if $GD::Convert::DEBUG > 1;
+    close WTR;
+
+    my $out;
+    {
+	local $/ = undef;
+	warn "About to read result ...\n" if $GD::Convert::DEBUG > 1;
+	$out = scalar <RDR>;
+	warn "... read " . length($out) . " bytes\n"
+	    if $GD::Convert::DEBUG > 1;
+    }
+    close RDR;
+
+    if ($GD::Convert::DEBUG) {
+	local $/ = undef;
+	my $err = scalar <ERR>;
+	warn $err if defined $err && $err ne "";
+    }
+
+    $out;
+}
+
+sub _3_pipe_file_temp {
+    my($in_ref, $cmd_ref) = @_;
+
+    warn "Cmd: @$cmd_ref\n" if $GD::Convert::DEBUG;
+
+    require File::Temp;
+    my($fh, $filename) = File::Temp::tempfile(UNLINK => 1);
+    print $fh $$in_ref;
+
+    my $out = `cat $filename | @$cmd_ref`;
+
+    unlink $filename;
+
+    $out;
+}
+
+# XXX does not work with LANG=..utf-8
+sub _3_pipe_ipc_run {
+    my($in_ref, $cmd_ref) = @_;
+
+$GD::Convert::DEBUG =2;#XXX
+    require IPC::Run;
+
+    my $h = IPC::Run::start(
+	$cmd_ref,
+	'<pipe', \*WTR,
+	'>pipe', \*RDR,
+	'2>pipe', \*ERR
+    ) or die "Can't create process for @$cmd_ref";
+    binmode RDR;
+    binmode WTR;
+    warn "About to write " . length($$in_ref) . " Bytes, signature is " . substr($$in_ref, 0, 3) . " ...\n"
+	if $GD::Convert::DEBUG > 1;
+    print WTR $$in_ref;
+    warn "... written\n" if $GD::Convert::DEBUG > 1;
+    close WTR;
+
+    my $out;
+    {
+	local $/ = undef;
+	warn "About to read result ...\n" if $GD::Convert::DEBUG > 1;
+	$out = scalar <RDR>;
+	warn "... read " . length($out) . " bytes\n"
+	    if $GD::Convert::DEBUG > 1;
+    }
+    close RDR;
+
+    if ($GD::Convert::DEBUG) {
+	local $/ = undef;
+	my $err = scalar <ERR>;
+	warn $err if defined $err && $err ne "";
+    }
+
+    IPC::Run::finish($h);
+
+    $out;
 }
 
 package GD::Wbmp;
@@ -716,8 +783,9 @@ The transparency handling for GIF images is clumsy --- maybe the new
 The size of the created files should be smaller, especially of the XPM
 output.
 
-There may be problems if running under modperl... stay tuned for more
-diagnostics.
+IPC::Open3 does not work if running under mod_perl. In this case
+($ENV{MOD_PERL} detected) a scheme with temporary files is used. This
+may be still flaky, better solutions are in the research.
 
 =head1 AUTHOR
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.104 2003/06/02 23:23:14 eserte Exp $
+# $Id: bbbike,v 3.105 2003/06/09 21:45:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
@@ -102,7 +102,7 @@ use autouse 'BBBikeEdit'
 use autouse 'BBBikeExp'
     => qw(bbbikeexp_setup bbbikeexp_init bbbikeexp_clear
 	  bbbikeexp_reload bbbikeexp_reload_all bbbikeexp_redraw_current_view
-	  bbbikeexp_add_data plotstr_on_demand);
+	  bbbikeexp_add_data bbbikeexp_remove_data plotstr_on_demand);
 use autouse 'BBBikePrint'
     => qw(create_postscript toggle_legend print_text_postscript);
 
@@ -209,7 +209,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.104 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.105 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -298,7 +298,7 @@ foreach (@Radwege::category_order) {
 }
 
 %tag_group = # group related tags (for stacking)
-  ('str_s' => ['s-out', 'rw',
+  ('str_s' => ['s-out', 'gr', 'rw',
 	       's-NN', 's-N', 's-H', 's-HH', 's-B', 's-BAB', 'comm',
 	       (map { "comm-$_" } @comments_types),
 	       'nl', 'qs', 'hs',
@@ -2178,6 +2178,10 @@ sub do_iconframe {
     $strcm->checkbutton(-label => M"Unbeleuchtete Straßen",
 			-variable => \$str_draw{'nl'},
 			-command => sub { plot('str','nl') },
+		       );
+    $strcm->checkbutton(-label => M"Grüne Wege",
+			-variable => \$str_draw{'gr'},
+			-command => sub { plot('str','gr') },
 		       );
     $strcm->checkbutton(-label => M"Vorfahrt",
 			-variable => \$p_draw{'vf'},
@@ -4569,6 +4573,7 @@ sub define_item_attribs {
 	 'hs'  => 'red',
 	 'hl'  => 'red',
 	 'nl'  => 'black',
+	 'gr'  => 'green',
 	);
     %p_color =
 	();
@@ -4584,6 +4589,7 @@ sub define_item_attribs {
 	 'hs'       => [3, 4, 5, 6, 8, 12],
 	 'rw'       => [1, 2, 3, 4, 6, 10],
 	 'l'        => [2, 2, 3, 4, 6, 10],
+	 'gr'       => [5, 7, 8, 9, 10, 14], # s-H + 4 pixels
 	 'ql'       => [3, 4, 5, 6, 8, 12],
 	 'hl'       => [3, 4, 5, 6, 8, 12],
 	 'z'        => [1, 1, 2, 3, 5, 8],
@@ -4688,6 +4694,7 @@ sub define_item_attribs {
 	 'hs' => 'handicap_s',
 	 'hl' => 'handicap_l',
 	 'nl' => 'nolighting',
+	 'gr' => 'green',
 	 'comm' => 'comments',
 	 'fz' => "$FindBin::RealBin/misc/fragezeichen", # only for development
 	);
@@ -4735,6 +4742,7 @@ sub define_item_attribs {
 	 'hs' => [M"Sonst. Behinderungen", M"Sonst. Behinderungen", 0],
 	 'hl' => [M"Sonst. Behinderungen (Landstraße)", M"Sonst. Behinderungen (Landstraße)", 0],
 	 'nl' => [M"Unbeleuchtete Straße", M"Unbeleuchtete Straßen", 0],
+	 'gr' => [M"Grüner Weg", M"Grüne Wege", 0],
 	 'comm' => [M"Kommentare", M"Kommentare", 0],
 	 # XXX specific comm types?
 	);
@@ -4835,7 +4843,7 @@ sub define_item_attribs {
     @normal_stack_order =
 	(qw(map f w-out w i-out i f-Pabove e e-img
 	    gP gD z g gP gD
-	    s-out l-out rw s-NN s-N s-H s-HH s-B s-BAB l v
+	    s-out l-out gr rw s-NN s-N s-H s-HH s-B s-BAB l v
 	    f-label-bg w-label-bg f-label w-label
 	    s-label-bg s-label l-label-bg l-label
 	    u u-bg u-fg r b r-bg r-fg b-bg b-fg u-label r-label b-label
@@ -5484,7 +5492,7 @@ sub set_bindings {
 
     foreach (qw(s S l L u b r f v v-fg w W i e comm),
 	     (map { "comm-$_" } @comments_types),
-	     qw(qs hs ql hl fz xxx nl ovl)) {
+	     qw(gr qs hs ql hl fz xxx nl ovl)) {
 	std_str_binding($_);
     }
 
@@ -5644,7 +5652,7 @@ sub set_bindings {
     $top->bind('<Control-s>' => sub { load_save_route(1) });
     $top->bind('<Control-underscore>' => \&get_undo_route);
     $top->bind('<Control-z>' => \&get_undo_route);
-    $top->bind('<Control-f>' => sub {
+    $top->bind('<Control-Key-f>' => sub {
 		   require BBBikeAdvanced;
 		   search_anything();
 	       });
@@ -7434,6 +7442,9 @@ sub plot {
     } else {
 	die "Unknown type $type";
     }
+    if ($BBBikeExp::mode && defined &bbbikeexp_remove_data) {
+	bbbikeexp_remove_data($type, $abk);
+    }
     Hooks::get_hooks("after_plot")->execute;
 }
 
@@ -7786,7 +7797,7 @@ sub plotstr {
 # XXXXXX can this ever happen? XXXXXXXXXXXXXXXXXXXXXXXXXXX
 if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->pos . " != " . scalar(@{$str->{Data}}) . "!", "dialog", "err") }
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-	warn ("Plotting street took " . (Tk::Time_So_Far()-$bench) . "s\n") if $verbose;
+	warn ("Plotting streets took " . (Tk::Time_So_Far()-$bench) . "s\n") if $verbose;
 
       PLOTSTR_CONT:
 	$c->itemconfigure('pp',

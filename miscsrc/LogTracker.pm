@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.5 2003/06/02 23:01:17 eserte Exp $
+# $Id: LogTracker.pm,v 1.7 2003/06/06 19:35:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ use vars qw($VERSION $lastcoords
             $layer @colors $colors_i @accesslog_data
 	    $do_search_route $ua $safe
             $logfile $tracking $tail_pid $bbbike_cgi);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 use URI::Escape;
 use Strassen::Core;
@@ -169,6 +169,7 @@ sub init {
                '#0080f0', '#8000f0', '#6000c0', '#4000a0',
               );
     $layer = main::next_free_layer();
+    main::fix_stack_order($layer);
     @accesslog_data = ();
 }
 
@@ -178,6 +179,7 @@ sub parse_accesslog {
     @accesslog_data = ();
     if (!$fh) {
 	open($fh, $logfile) or die "Can't open $logfile: $!";
+	_maybe_gunzip($fh);
     }
     while(<$fh>) {
 	chomp;
@@ -190,8 +192,8 @@ sub parse_accesslog {
 
 sub draw_accesslog_data {
     my $s = Strassen->new_from_data_ref(\@accesslog_data);
-    $s->write("/tmp/x.bbd");
-    main::plot("str", $layer, -draw => 1, Filename => "/tmp/x.bbd");
+    $s->write("/tmp/LogTracker.bbd");
+    main::plot("str", $layer, -draw => 1, Filename => "/tmp/LogTracker.bbd");
     $main::str_obj{$layer} = $s; # for LayerEditor
 }
 
@@ -238,9 +240,17 @@ sub parse_accesslog_for_date {
 
 sub parse_accesslog_any_day {
     my $rx = shift;
-    require File::ReadBackwards;
-    tie *BW, 'File::ReadBackwards', $logfile or die $!;
+    my $is_tied = 0;
     @accesslog_data = ();
+    if ($logfile =~ /\.gz$/) {
+	# Can't read backwards
+	open(BW, $logfile) or die $!;
+	_maybe_gunzip(\*BW); # here it is not "maybe"
+    } else {
+	require File::ReadBackwards;
+	tie *BW, 'File::ReadBackwards', $logfile or die $!;
+	$is_tied++;
+    }
     my $gather = 0;
     while(<BW>) {
 	if (!$gather) {
@@ -255,7 +265,7 @@ sub parse_accesslog_any_day {
 	my(@d) = parse_line($_);
 	push @accesslog_data, @d if @d;
     }
-    untie *BW;
+    untie *BW if $is_tied;
     draw_accesslog_data();
 }
 
@@ -274,6 +284,7 @@ sub parse_tail_log {
         die $!;
     };
     warn "Start parsing file $logfile...\n";
+    _maybe_gunzip(\*FH);
     $tracking = 1;
     $main::top->fileevent(\*FH, "readable", \&fileevent_read_line);
 }
@@ -300,8 +311,8 @@ sub fileevent_read_line {
 	push @accesslog_data, @d;
 	eval {
 	    my $s = Strassen->new_from_data_ref(\@accesslog_data);
-	    $s->write("/tmp/x.bbd");
-	    main::plot("str", $layer, -draw => 1, Filename => "/tmp/x.bbd");
+	    $s->write("/tmp/LogTracker.bbd");
+	    main::plot("str", $layer, -draw => 1, Filename => "/tmp/LogTracker.bbd");
 	    $main::str_obj{$layer} = $s; # for LayerEditor
 	    my $last = $s->get($s->count-1);
 	    if ($last && $last->[Strassen::COORDS()]->[-1]) {
@@ -466,6 +477,15 @@ sub _prepare_qs_dump {
 	push @p, "$p=" . $q->param($p);
     }
     join(" ", @p);
+}
+
+sub _maybe_gunzip {
+    my $fh = shift;
+    if (eval { require PerlIO::gzip }) {
+	binmode $fh, ":gzip(autopop)";
+    } else {
+	warn "Harmless for normal files: $@";
+    }
 }
 
 return 1 if caller;

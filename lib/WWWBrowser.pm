@@ -2,30 +2,33 @@
 # -*- perl -*-
 
 #
-# $Id: WWWBrowser.pm,v 2.22 2003/01/21 22:01:12 eserte Exp $
+# $Id: WWWBrowser.pm,v 2.24 2003/04/25 22:24:41 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2000,2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2000,2001,2003 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
+# Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
 #
 
 package WWWBrowser;
 
 use strict;
-use vars qw(@unix_browsers $VERSION $initialized $os $fork
+use vars qw(@unix_browsers $VERSION $VERBOSE $initialized $os $fork
 	    $got_from_config $ignore_config);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.22 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.24 $ =~ /(\d+)\.(\d+)/);
 
-@unix_browsers = qw(_default_gnome _default_kde
+@unix_browsers = qw(_internal_htmlview
+		    _default_gnome _default_kde
+		    htmlview
 		    mozilla galeon konqueror netscape Netscape kfmclient
 		    dillo w3m lynx
 		    mosaic Mosaic
-		    chimera arena tkweb) if !@unix_browsers;
+		    chimera arena tkweb
+		    explorer) if !@unix_browsers;
 
 init();
 
@@ -54,8 +57,8 @@ sub start_browser {
     if ($os eq 'win') {
 	if (!eval 'require Win32Util;
 	           Win32Util::start_html_viewer($url)') {
-	    # if this fails, just try to start a default viewer
-	    system($url);
+	    # if this fails, just try to start explorer
+	    system("start explorer $url");
 	    # otherwise croak
 	    if ($?/256 != 0) {
 		status_message("Can't find HTML viewer.", "err");
@@ -71,7 +74,7 @@ sub start_browser {
     }
 
     foreach my $browser (@browsers) {
-	next if (!is_in_path($browser));
+	next if ($browser !~ /^_/ && !is_in_path($browser));
 	if ($browser =~ /^(lynx|w3m)$/) { # text-orientierte Browser
 	    if (defined $ENV{DISPLAY} && $ENV{DISPLAY} ne "") {
 		foreach my $term (qw(xterm kvt gnome-terminal)) {
@@ -90,8 +93,11 @@ sub start_browser {
 	    next;
 	}
 
-	next if !defined $ENV{DISPLAY} || $ENV{DISPLAY} eq '';
-	# after this point only X11 browsers
+	if ((!defined $ENV{DISPLAY} || $ENV{DISPLAY} eq '') &&
+	    $^O ne 'cygwin') {
+	    next;
+	}
+	# After this point only X11 browsers or cygwin as a special case
 
 	my $url = $url;
 	if ($browser eq '_default_gnome') {
@@ -135,6 +141,16 @@ sub start_browser {
 		    }
 		}
 		exec_bg("netscape", $url);
+		return 1;
+	    }
+	} elsif ($browser eq '_internal_htmlview') {
+	    eval {
+		htmlview($url);
+	    };
+	    if ($@) {
+		warn $@;
+		next;
+	    } else {
 		return 1;
 	    }
 	} else {
@@ -291,15 +307,172 @@ sub _guess_and_expand_url {
     }
 }
 
+# A port of htmlview to perl
+sub htmlview {
+    #!/bin/bash
+    #
+    # Invoke whatever HTML viewer is installed...
+    # Usage:
+    #	htmlview [URL]
+    #
+    # Changes:
+    # v2.0.0
+    # ------
+    # - Allow users to override default settings in
+    #   ~/.htmlviewrc and /etc/htmlview.conf.
+    #   Users can define X11BROWSER, TEXTBROWSER and
+    #   CONSOLE variables to indicate their preferences.
+    # - --remote and --local are deprecated, we don't
+    #   have any non-browser HTML viewers these days.
+    #
+    # Christopher Blizzard <blizzard@redhat.com> Aug 09 2002 
+    # - prefer mozilla over galeon
+    #
+    # written by Bernhard Rosenkraenzer <bero@redhat.com>
+    # (c) 2000-2002 Red Hat, Inc.
+    #
+    # This script is in the public domain.
+
+    #XXXunset BROWSER CONSOLE TERMS_KDE TERMS_GNOME TERMS_GENERIC
+    #XXX[ -e /etc/htmlview.conf ] && source /etc/htmlview.conf
+    #XXX[ -e ~/.htmlviewrc ] && source ~/.htmlviewrc
+
+    my(@args) = @_;
+
+    my @TERMS_KDE = qw(/usr/bin/konsole /usr/bin/kvt);
+    my @TERMS_GNOME = qw(/usr/bin/gnome-terminal);
+    my @TERMS_GENERIC = qw(/usr/bin/rxvt /usr/X11R6/bin/xterm /usr/bin/Eterm);
+    my @TTYBROWSERS = qw(/usr/bin/links /usr/bin/lynx /usr/bin/w3m);
+    my @X11BROWSERS_KDE = qw(/usr/bin/konqueror /usr/bin/kfmbrowser);
+    my @X11BROWSERS_GNOME = qw(/usr/bin/mozilla /usr/bin/galeon);
+    my @X11BROWSERS_GENERIC = qw(/usr/bin/mozilla /usr/bin/netscape);
+
+    my(@X11BROWSERS, @TERMS);
+
+    my $gnome_is_running;
+    if (eval { require Proc::ProcessTable }) {
+	require File::Basename;
+	for my $p (@{ Proc::ProcessTable->new->table }) {
+	    if (File::Basename::basename($p->fname) eq 'gnome-session') {
+		$gnome_is_running++;
+		last;
+	    }
+	}
+    } elsif (-x "/sbin/pidof") {
+	my($out) = `/sbin/pidof gnome-session`;
+	$gnome_is_running = $out ? 1 : 0;
+    } else {
+	warn "Cannot determine whether GNOME is running: neither Proc::ProcessTable nor pidof are available\n";
+    }
+
+    if ($gnome_is_running) {
+	@X11BROWSERS = (@X11BROWSERS_GENERIC, @X11BROWSERS_GNOME, @X11BROWSERS_KDE);
+	@TERMS = (@TERMS_GENERIC, @TERMS_GNOME, @TERMS_KDE);
+    } else {
+	@X11BROWSERS = (@X11BROWSERS_GENERIC, @X11BROWSERS_KDE, @X11BROWSERS_GNOME);
+	@TERMS = (@TERMS_GENERIC, @TERMS_KDE, @TERMS_GNOME);
+    }
+
+    if ($ENV{X11BROWSER}) {
+	unshift @X11BROWSERS, $ENV{X11BROWSER};
+    }
+    if ($ENV{TEXTBROWSER}) {
+	unshift @TTYBROWSERS, $ENV{TEXTBROWSER};
+    }
+    if ($ENV{CONSOLE}) {
+	unshift @TERMS, $ENV{CONSOLE};
+    }
+
+    if ($VERBOSE) {
+	require Data::Dumper;
+	print STDERR Data::Dumper->new([\@X11BROWSERS, \@TTYBROWSERS, \@TERMS],
+				       [qw(X11BROWSERS TTYBROWSERS TERMS)])
+	    ->Indent(1)->Useqq(1)->Dump;
+    }
+
+ TRY: {
+	if (!defined $ENV{DISPLAY} || $ENV{DISPLAY} eq "") {
+	    for my $ttybrowser (@TTYBROWSERS) {
+		if (is_in_path($ttybrowser)) {
+		    system($ttybrowser, @args); # blocks in tty mode
+		    last TRY;
+		}
+	    }
+
+	    die "No valid text mode browser found.\n";
+	} else {
+	    for my $x11browser (@X11BROWSERS) {
+		if (is_in_path($x11browser)) {
+		    exec_bg($x11browser, @args);
+		    last TRY;
+		}
+	    }
+
+	    my @console;
+	    for my $term (@TERMS) {
+		if (is_in_path($term)) {
+		    @console = ($term, "-e");
+		    last;
+		}
+	    }
+
+	    if (!@console) {
+		die "No CONSOLE found.\n";
+	    }
+
+	    for my $ttybrowser (@TTYBROWSERS) {
+		if (is_in_path($ttybrowser)) {
+		    exec_bg(@console, $ttybrowser, @args);
+		    last TRY;
+		}
+	    }
+	}
+
+	die "No valid browser found.\n";
+    }
+
+}
+
 # REPO BEGIN
-# REPO NAME is_in_path
-# REPO MD5 3beca578b54468d079bd465a90ebb198
+# REPO NAME file_name_is_absolute /home/e/eserte/src/repository 
+# REPO MD5 89d0fdf16d11771f0f6e82c7d0ebf3a8
+BEGIN {
+    if (eval { require File::Spec; defined &File::Spec::file_name_is_absolute }) {
+	*file_name_is_absolute = \&File::Spec::file_name_is_absolute;
+    } else {
+	*file_name_is_absolute = sub {
+	    my $file = shift;
+	    my $r;
+	    if ($^O eq 'MSWin32') {
+		$r = ($file =~ m;^([a-z]:(/|\\)|\\\\|//);i);
+	    } else {
+		$r = ($file =~ m|^/|);
+	    }
+	    $r;
+	};
+    }
+}
+# REPO END
+
+# REPO BEGIN
+# REPO NAME is_in_path /home/e/eserte/src/repository 
+# REPO MD5 81c0124cc2f424c6acc9713c27b9a484
 sub is_in_path {
     my($prog) = @_;
+    return $prog if (file_name_is_absolute($prog) and -f $prog and -x $prog);
     require Config;
     my $sep = $Config::Config{'path_sep'} || ':';
     foreach (split(/$sep/o, $ENV{PATH})) {
-	return $_ if -x "$_/$prog";
+	if ($^O eq 'MSWin32') {
+	    # maybe use $ENV{PATHEXT} like maybe_command in ExtUtils/MM_Win32.pm?
+	    return "$_\\$prog"
+		if (-x "$_\\$prog.bat" ||
+		    -x "$_\\$prog.com" ||
+		    -x "$_\\$prog.exe" ||
+		    -x "$_\\$prog.cmd");
+	} else {
+	    return "$_/$prog" if (-x "$_/$prog" && !-d "$_/$prog");
+	}
     }
     undef;
 }
@@ -397,11 +570,11 @@ the path.
 
 =head1 AUTHOR
 
-Slaven Rezic <eserte@cs.tu-berlin.de>
+Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (c) 1999,2000,2001 Slaven Rezic. All rights reserved.
+Copyright (c) 1999,2000,2001,2003 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 

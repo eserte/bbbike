@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 6.25 2003/06/02 22:53:40 eserte Exp $
+# $Id: bbbike.cgi,v 6.28 2003/06/09 21:45:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -636,7 +636,7 @@ use vars qw(@ISA);
 
 } # jetzt beginnt wieder package main
 
-$VERSION = sprintf("%d.%02d", q$Revision: 6.25 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 6.28 $ =~ /(\d+)\.(\d+)/);
 
 my $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
 my $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -1812,7 +1812,7 @@ sub get_kreuzung {
     if (!defined $via_str) {
 	$via_str = $q->param('vianame');
     }
-    if ($via_str =~ /^\s*$/) {
+    if (defined $via_str && $via_str =~ /^\s*$/) {
 	undef $via_str;
     }
     if (!defined $ziel_str) {
@@ -2258,7 +2258,8 @@ sub search_coord {
     my $viahnr      = $q->param('viahnr');
     my $zielhnr     = $q->param('zielhnr');
     my $alternative = $q->param('alternative');
-    my $custom      = $q->param('custom');
+    my(@custom)     = $q->param('custom');
+    my %custom      = map { ($_ => 1) } @custom;
     my $output_as   = $q->param('output_as');
     my $printmode   = defined $output_as && $output_as eq 'print';
 
@@ -2441,15 +2442,19 @@ sub search_coord {
 	$extra_args{Algorithm} = $search_algorithm;
     }
 
-    my(%custom_s, $custom_net, %current_temp_blocking);
+    my(%custom_s, $custom_net, %current_temp_blocking, $custom_no);
     {
 	my $t = time;
+	my $index = 0;
 	for my $temp_blocking (@temp_blocking) {
 	    if ($t >= $temp_blocking->{from} &&
 		$t <= $temp_blocking->{until}) {
 		my $type = $temp_blocking->{type} || 'gesperrt';
 		push @{ $current_temp_blocking{$type} }, $temp_blocking;
+		$temp_blocking->{'index'} = $index;
+		$custom_no++;
 	    }
+	    $index++;
 	}
 	if (keys %current_temp_blocking) {
 	    push @Strassen::datadirs,
@@ -2459,23 +2464,36 @@ sub search_coord {
 	}
 	while(my($type, $list) = each %current_temp_blocking) {
 	    if (@$list) {
-		eval {
-		    $custom_s{$type} = MultiStrassen->new
-			(map { $_->{file} } @$list);
-		};
-		warn $@ if $@;
-	    }
-	    if ($custom && $custom eq 'temp-blocking') {
-		if ($type eq 'gesperrt' && $custom_s{$type}) {
-		    $net->load_user_deletions
-			($custom_s{$type},
-			 -merge => 1,
-			);
-		} elsif ($type eq 'handicap' && $custom_s{$type}) {
-		    if (!$handicap_s_net) {
-			warn "No net for handicap defined, ignoring temp_blocking=handicap";
-		    } else {
-			$handicap_s_net->merge_net_cat($custom_s{$type});
+		my @s;
+		if (@custom) {
+		    for (@$list) {
+			if (exists $custom{'temp-blocking-' . $_->{'index'}}) {
+			    push @s, $_->{file};
+			}
+		    }
+		} else {
+		    @s = @$list;
+		}
+		if (@s) {
+		    eval {
+			$custom_s{$type} = MultiStrassen->new
+			    (map { $_->{file} } @$list);
+		    };
+		    warn $@ if $@;
+		}
+
+		if (@custom && $custom_s{$type}) {
+		    if ($type eq 'gesperrt' && $custom_s{$type}) {
+			$net->load_user_deletions
+			    ($custom_s{$type},
+			     -merge => 1,
+			    );
+		    } elsif ($type eq 'handicap' && $custom_s{$type}) {
+			if (!$handicap_s_net) {
+			    warn "No net for handicap defined, ignoring temp_blocking=handicap";
+			} else {
+			    $handicap_s_net->merge_net_cat($custom_s{$type});
+			}
 		    }
 		}
 	    }
@@ -2630,7 +2648,7 @@ sub search_coord {
 	    if (!$comments_net) {
 		my @s;
 		my @comment_files = qw(comments qualitaet_s);
-		if ($custom && $custom eq 'temp-blocking' &&
+		if (@custom && grep { $_ =~ /^temp-blocking-/ } @custom &&
 		    $custom_s{"handicap"}) {
 		    push @s, $custom_s{"handicap"};
 		} else {
@@ -2783,6 +2801,8 @@ sub search_coord {
 # -->
 # EOF
 #     }
+    $header_args{-script} = {-src => $bbbike_html . "/bbbike_result.js",
+			    };
     $header_args{-printmode} = 1 if $printmode;
     header(%header_args);
 
@@ -2795,17 +2815,29 @@ sub search_coord {
 		my($x1, $y1) = @{$path[$i]};
 		my($x2, $y2) = @{$path[$i+1]};
 		if ($custom_net->{Net}{"$x1,$y1"}{"$x2,$y2"}) {
-		    if (!$custom) {
+		    if (!@custom) {
 			my $hidden = "";
 			foreach my $key ($q->param) {
 			    $hidden .= $q->hidden(-name => $key,
 						  -default => [$q->param($key)]);
 			}
-			$hidden .= $q->hidden(-name => 'custom',
-					      -default => 'temp-blocking');
+			print qq{<center><form name="Ausweichroute" action="} . $q->self_url . qq{" } . ($custom_no != 1 ? qq{onSubmit="return test_temp_blockings_set()"} : "") . qq{>};
+			print "Ereignisse, die die Route betreffen k&ouml;nnen:<br>";
+			my $is_first = 1;
+                        while(my($k,$v) = each %current_temp_blocking) {
+			    for my $tb_obj (@$v) {
+				if ($is_first) {
+				    $is_first = 0;
+				} else {
+				    print "<br>\n";
+				}
+				print "<input type=\"" .
+				    ($custom_no > 1 ? "checkbox" : "hidden") .
+					"\" name=\"custom\" value=\"temp-blocking-$tb_obj->{'index'}\"> ";
+				print "$tb_obj->{text}";
+			    }
+			}
 			print <<EOF;
-<center><form name="Ausweichroute" action="@{[ $q->self_url ]}">
-@{[ join("<br>\n", map { $_->{text} } map { @$_ } values %current_temp_blocking) ]}
 $hidden
 <br><input type=submit value="Ausweichroute suchen"><hr>
 </form></center><p>
@@ -2815,7 +2847,7 @@ EOF
 		}
 	    }
 	}
-	if ($custom) {
+	if (@custom) {
 	    print "<center>Mögliche Ausweichroute</center>\n";
 	}
 
@@ -2867,13 +2899,14 @@ EOF
 
 	{
 	    my $i = 0;
-	    for my $speed (sort { $a <=> $b } keys %speed_map) {
+	    my @speeds = sort { $a <=> $b } keys %speed_map;
+	    for my $speed (@speeds) {
 		my $def = $speed_map{$speed};
 		my $bold = $def->{Pref};
 		my $time = $def->{Time};
 		print "<td>$fontstr" . make_time($time)
 		    . "h (" . ($bold ? "<b>" : "") . "bei $speed km/h" . ($bold ? "</b>" : "") . ")";
-		print "," if $speed != 25;
+		print "," if $speed != $speeds[-1];
 		print "$fontend</td>";
 		if ($i == 1) {
 		    print "</tr><tr><td></td>";
@@ -2887,12 +2920,13 @@ EOF
 	    print "<tr><td></td>";
 	    my $is_first = 1;
 	    for my $power (sort { $a <=> $b } keys %power_map) {
+		print "<td>";
 		if (!$is_first) {
 		    print ",";
 		} else {
 		    $is_first = 0;
 		}
-		print "<td>", $fontstr,  make_time($power_map{$power}->{Time}/3600) . "h (bei $power W)", $fontend, "</td>"
+		print $fontstr,  make_time($power_map{$power}->{Time}/3600) . "h (bei $power W)", $fontend, "</td>"
 	    }
 	    print "</tr>\n";
 	}

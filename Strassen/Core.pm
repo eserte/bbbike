@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.20 2003/06/01 21:58:49 eserte Exp $
+# $Id: Core.pm,v 1.21 2003/06/08 21:19:38 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -651,9 +651,17 @@ sub split_ort {
 #   Exact: use "exact" algorithm
 #   GridHeight, GridWidth: grid extents (by default 1000)
 # warning: don't call this in a Strassen-loop (init, next ...)
+# With -rebuild => 1 the grid will be build again.
 ### AutoLoad Sub
 sub make_grid {
     my($self, %args) = @_;
+    if ($args{-rebuild} && $self->{Grid}) {
+	%args = (GridWidth => $self->{GridWidth},
+		 GridHeight => $self->{GridHeight},
+		 Exact => $self->{GridIsExact},
+		 UseCache => $self->{GridUseCache},
+		);
+    }
     my $use_cache = $args{UseCache};
     my $use_exact = $args{Exact}||0;
     $self->{GridWidth}  = (defined $args{GridWidth}
@@ -672,6 +680,8 @@ sub make_grid {
 	}
     }
     $self->{Grid} = {};
+    $self->{GridIsExact} = $use_exact;
+    $self->{GridUseCache} = $use_cache;
     my $grid_build = ($use_exact
 		      ? $self->_make_grid_exact
 		      : $self->_make_grid_fast);

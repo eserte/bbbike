@@ -1,14 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: FlatCheckbox.pm,v 1.10 2002/02/23 18:41:36 eserte Exp $
+# $Id: FlatCheckbox.pm,v 1.10 2002/02/23 18:41:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2002 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
+# Mail: slaven@rezic.de
 # WWW:  http://user.cs.tu-berlin.de/~eserte/
 #
 

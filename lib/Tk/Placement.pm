@@ -1,14 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: Placement.pm,v 1.7 2003/01/04 15:55:57 eserte Exp $
+# $Id: Placement.pm,v 1.7 2003/01/04 15:55:57 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
+# Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
 #
 

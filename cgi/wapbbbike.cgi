@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.2 2003/06/03 19:17:35 eserte Exp $
+# $Id: wapbbbike.cgi,v 2.4 2003/06/09 21:45:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -13,15 +13,14 @@
 # WWW:  http://bbbike.sourceforge.net
 #
 
-BEGIN { open(STDERR, ">/tmp/wapbbbike.log") }
+BEGIN { open(STDERR, ">/tmp/wapbbbike.log") } # XXX For the roxen webserver...
 
 package BBBikeRouting::WAP;
 BEGIN { delete $INC{"FindBin.pm"} }
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/../BBBike", "$FindBin::RealBin/../BBBike/lib");
-use lib "/home/e/eserte/lib/perl"; # fuer GD
-use lib "/tmp/bbbike";
+use lib "/home/e/eserte/lib/perl"; # XXX fuer GD on cs
 use BBBikeRouting;
 use BBBikeVar;
 @ISA = 'BBBikeRouting';
@@ -295,6 +294,7 @@ sub wap_cgi_object {
 
 sub wap_std_header {
     my $self = shift;
+    return if $ENV{WAPBBBIKE_FROM_CMDLINE};
     my %args = @_;
     print $self->Context->CGI->header(-type => "text/vnd.wap.wml",
 				      -expires => "now",
@@ -332,8 +332,7 @@ return 1 if ((caller() and (caller())[0] ne 'Apache::Registry')
 
 my $routing = BBBikeRouting->new->init_context;
 bless $routing, 'BBBikeRouting::WAP'; # 5.005 compat
-$routing->Context->Algorithm("A*");
-
+$routing->Context->Algorithm("A*"); # XXX should use config file...
 
 my $q = $routing->wap_init;
 my $do_image = defined $q->param("output_as") && $q->param("output_as") eq 'image';

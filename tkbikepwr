@@ -5,12 +5,12 @@ eval 'exec /usr/perl5.8.0/bin/perl5.8.0  -S $0 ${1+"$@"}'
 # -*- perl -*-
 
 #
-# $Id: tkbikepwr,v 1.7 2001/10/13 14:30:11 eserte Exp $
+# $Id: tkbikepwr,v 1.7 2001/10/13 14:30:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright: see at bottom of file
 #
-# Mail: slaven.rezic@berlin.de
+# Mail: slaven@rezic.de
 # WWW:  http://user.cs.tu-berlin.de/~eserte/
 #
 
@@ -72,7 +72,7 @@ $HOME/.bikepowerrc.
 
 =head1 AUTHOR
 
-Slaven Rezic (slaven.rezic@berlin.de)
+Slaven Rezic (slaven@rezic.de)
 
 Copyright (c) 1997,2000 Slaven Rezic. All rights reserved.
 This package is free software; you can redistribute it and/or

@@ -7,7 +7,7 @@
 #
 # Copyright: see at bottom of file
 #
-# Mail: slaven.rezic@berlin.de
+# Mail: slaven@rezic.de
 # WWW:  http://user.cs.tu-berlin.de/~eserte/
 #
 
@@ -765,7 +765,7 @@ L<tkbikepwr(1)|tkbikepwr>
 
 =head1 AUTHOR
 
-Slaven Rezic (slaven.rezic@berlin.de)
+Slaven Rezic (slaven@rezic.de)
 
 Original program bike_power.c by Ken Roberts
 (roberts@cs.columbia.edu), Dept of Computer Science, Columbia

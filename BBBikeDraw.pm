@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.27 2003/06/02 22:57:17 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.28 2003/06/09 21:44:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.27 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.28 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, %args) = @_;
@@ -165,7 +165,9 @@ sub init {
 sub pre_draw {
     my $self = shift;
     $self->{PreDrawCalled}++;
-    $self->dimension_from_route;
+    if (!defined $self->{Min_x}) { # XXX condition may be dangerous
+	$self->dimension_from_route;
+    }
     $self->create_transpose;
 }
 

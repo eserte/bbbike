@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: FastSplash.pm,v 1.14 2003/01/07 18:46:28 eserte Exp eserte $
+# $Id: FastSplash.pm,v 1.16 2003/04/26 12:47:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package Tk::FastSplash;
 #use strict;use vars qw($TK_VERSION $VERSION);
-$VERSION = $VERSION = 0.11;
+$VERSION = $VERSION = 0.12;
 $TK_VERSION = 800 if !defined $TK_VERSION;
 
 sub Show {
@@ -23,7 +23,8 @@ sub Show {
     $title = $0 if !defined $title;
     my $splash_screen = {};
     eval {
-	package Tk;
+	package
+	    Tk; # hide from indexer
 	require DynaLoader;
 	eval q{ require Tk::Event };
 	@Tk::ISA = qw(DynaLoader);
@@ -31,7 +32,8 @@ sub Show {
 	sub TranslateFileName { $_[0] }
 	sub SplitString { split /\s+/, $_[0] } # rough approximation
 
-	package Tk::Photo;
+	package
+	    Tk::Photo; # hide from indexer
 	@Tk::Photo::ISA = qw(DynaLoader);
 	bootstrap Tk::Photo;
 

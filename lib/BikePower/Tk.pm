@@ -1,12 +1,12 @@
 # -*- perl -*-
 
 #
-# $Id: Tk.pm,v 1.7 2001/10/13 14:30:11 eserte Exp $
+# $Id: Tk.pm,v 1.7 2001/10/13 14:30:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright: see BikePower.pm
 #
-# Mail: slaven.rezic@berlin.de
+# Mail: slaven@rezic.de
 # WWW:  http://user.cs.tu-berlin.de/~eserte/
 #
 

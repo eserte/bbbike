@@ -1,14 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: HTML.pm,v 1.6 2001/10/13 14:10:35 eserte Exp $
+# $Id: HTML.pm,v 1.6 2001/10/13 14:10:35 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
+# Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
 #
 
@@ -38,7 +38,7 @@ sub head {
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN"> <!-- -*-html-*- -->
 <html><head>
 <title>BikePower: pers&ouml;nliche Einstellungen</title>
-<link rev=made href="mailto:slaven.rezic@berlin.de">
+<link rev=made href="mailto:slaven@rezic.de">
 EOF
     $head .= set_personal_settings_js_code();
     $head .= get_personal_settings_js_code();

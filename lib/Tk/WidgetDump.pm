@@ -910,14 +910,6 @@ sub _lsearch {
 # REPO BEGIN
 # REPO NAME _hist_entry /home/e/eserte/src/repository 
 # REPO MD5 904022626019f774e4c0039cd8eecf78
-=head2 _hist_entry({ entry args }, { histentry args})
-
-    $top->_hist_entry(...);
-
-Create a HistEntry widget, if possible, otherwise an Entry widget.
-
-=cut
-
 sub Tk::Widget::_hist_entry {
     my($top, $entry_args, $hist_entry_args) = @_;
     my $Entry = "Entry";
@@ -1286,11 +1278,12 @@ will be displayed. The hierarchie can always be refreshed by the
 B<Refresh> button (e.g. if new widgets are added after calling the
 C<WidgetDump> method).
 
-By double-clicking on a widget entry, the widget flashes a new
+By double-clicking on a widget entry, the widget flashes and a new
 toplevel is opened containing the configuration options of the widget.
 It also displays other characteristics of the widget like children and
-parent widgets, size, position and server parameters. Configuration
-values can also be changed on the fly. Furthermore it is possible:
+parent widgets, size, position, geometry management and server
+parameters. Configuration values can also be changed on the fly.
+Furthermore it is possible:
 
 =over 4
 
@@ -1319,7 +1312,7 @@ itself.
 
 =head1 AUTHOR
 
-Slaven Rezic (slaven.rezic@berlin.de)
+Slaven Rezic (slaven@rezic.de)
 
 =head1 SEE ALSO
 

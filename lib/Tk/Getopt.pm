@@ -8,7 +8,7 @@
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
+# Mail: slaven@rezic.de
 # WWW:  http://user.cs.tu-berlin.de/~eserte/
 #
 
@@ -1780,7 +1780,7 @@ This should be done only by Apply and Ok buttons.
 
 =head1 AUTHOR
 
-Slaven Rezic <slaven.rezic@berlin.de>
+Slaven Rezic <slaven@rezic.de>
 
 This package is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.3 2003/06/02 23:14:30 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.5 2003/06/06 19:34:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -321,7 +321,7 @@ sub BBBikeHeavy::layer_editor {
 		    {Image => undef,
 		     Text => $layer_name,
 		     Visible => $str_draw{$abk},
-		     Data => {Tag => "$abk-s",
+		     Data => {Tag => "$abk", # XXX apparently without "-s"
 			      Type => 's',
 			      Subtype => $abk,
 			     }
@@ -352,7 +352,7 @@ sub BBBikeHeavy::layer_editor {
 	}
 	# using ST :-)
 	@elem = map { $_->[1] }
-	    sort { $a->[0] <=> $b->[0] }
+	        sort { $a->[0] <=> $b->[0] }
 		map {
 		    if (exists $tag_group{$_->{Data}{Group}} &&
 			defined $tag_group{$_->{Data}{Group}} &&
@@ -391,7 +391,7 @@ sub BBBikeHeavy::layer_editor {
 	 },
 	 -visibilitychange => sub {
 	     my($w, $data, $vis) = @_;
-	     if ($data->{Group} eq 'route') {
+	     if (defined $data->{Group} && $data->{Group} eq 'route') {
 		 if ($vis) {
 		     # do nothing...
 		 } else {

@@ -1,14 +1,14 @@
 # -*- perl -*-
 
 #
-# $Id: UnderlineAll.pm,v 1.11 2001/08/26 11:26:56 eserte Exp $
+# $Id: UnderlineAll.pm,v 1.11 2001/08/26 11:26:56 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright © 1997,2001 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
+# Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
 #
 

@@ -234,6 +234,7 @@ ext/BBBikeXS/Makefile.PL
 ext/BBBikeXS/t/base.t
 ext/BBBikeXS/t/makenet.t
 ext/BBBikeXS/t/strecke.t
+ext/BBBikeXS/t/to_koord1.t
 ext/BBBikeXS/typemap
 ext/BBBikeXS/README
 ext/BBBikeXS/sqrt.c
@@ -279,6 +280,7 @@ html/empty.html
 html/legende.html
 html/pleasewait.html
 html/presse.html
+html/bbbike_result.js
 html/bbbike_start.js
 html/bbbike.css
 html/bbbikepod.css

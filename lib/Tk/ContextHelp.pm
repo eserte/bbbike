@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: ContextHelp.pm,v 1.15 2000/09/13 22:55:20 eserte Exp $
+# $Id: ContextHelp.pm,v 1.16 2003/02/12 22:46:07 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (c) 1998,2000 Slaven Rezic. All rights reserved.
+# Copyright (c) 1998,2000,2003 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte
 #
 
 package Tk::ContextHelp;
@@ -18,8 +18,8 @@ BEGIN { die "Tk::ContextHelp does not work with Win32" if $^O eq 'MSWin32' }
 
 use Tk::InputO;
 use strict;
-use vars qw($VERSION @ISA);
-$VERSION = '0.09';
+use vars qw($VERSION @ISA $NO_TK_POD);
+$VERSION = '0.10';
 @ISA = qw(Tk::Toplevel);
 
 Construct Tk::Widget 'ContextHelp';
@@ -183,8 +183,7 @@ sub _show_help {
 		$w->{'podwindow'}->deiconify;
 		$w->{'podwindow'}->raise;
 	    } else {
-		eval { require Tk::Pod };
-		if ($@) {
+		if ($NO_TK_POD || !eval { require Tk::Pod; 1 }) {
 		    # use SimplePod as fallback for Tk::Pod
 		    my $t = $parent->toplevel->CHSimplePod
 		      (-title => "POD: $podfile",
@@ -664,12 +663,12 @@ not-attached widgets while in context mode)
 
 =head1 AUTHOR
 
-Slaven Rezic <F<eserte@cs.tu-berlin.de>>
+Slaven Rezic <F<slaven@rezic.de>>
 
 Some code and documentation is derived from Rajappa Iyer's
 B<Tk::Balloon>.
 
-Copyright (c) 1998,2000 Slaven Rezic. All rights reserved.
+Copyright (c) 1998,2000,2003 Slaven Rezic. All rights reserved.
 This package is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
 

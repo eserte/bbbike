@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogScale.pm,v 1.7 2002/07/27 20:04:35 eserte Exp $
+# $Id: LogScale.pm,v 1.7 2002/07/27 20:04:35 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
@@ -230,7 +230,7 @@ B<-tickinterval> options is unclear.
 
 =head1 AUTHOR
 
-Slaven Rezic <slaven.rezic@berlin.de>
+Slaven Rezic <slaven@rezic.de>
 
 =head1 SEE ALSO
 
