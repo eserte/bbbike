@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.8 2003/11/17 21:35:06 eserte Exp $
+# $Id: bbbikerouting.t,v 1.9 2003/12/02 20:38:41 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -126,6 +126,10 @@ sub do_tests {
     my $context = $routing->Context;
     _my_init_context($context);
     @Strassen::Util::cacheable = $cachetype if defined $cachetype;
+    if ("@Strassen::Util::cacheable" eq "VirtArray") {
+	# VirtArray can only cache flat arrays ... add a fallback
+	push @Strassen::Util::cacheable, "Storable";
+    }
     $token = "Algorithm=".$context->Algorithm.", UseXS=".$context->UseXS.", UseNetServer=".$context->UseNetServer.", UseCache=".$context->UseCache.(defined $cachetype ? " ($cachetype)" : "");
     if ($v) {
 	print STDERR "$token\n";
@@ -138,7 +142,7 @@ sub do_tests {
     is($routing->Goal->Street, "Sonntagstr/Böcklinstr.", "Check goal street");
     $routing->search;
     is($routing->Start->Street, "Dudenstr.", "Normalized start street");
-    is($routing->Goal->Street, "Sonntagstr/Böcklinstr.", "Normalized goal street"); # XXX not yet normalized
+    is($routing->Goal->Street, "Sonntagstr./Böcklinstr.", "Normalized goal street");
     my $goal_street = "Sonntagstr.";
     ok(scalar @{ $routing->Path } > 0, "Non-empty path");
     my $path = clone($routing->Path);
@@ -154,7 +158,7 @@ sub do_tests {
     $routing->continue($new_goal);
     is($routing->Goal->Street, "Alexanderplatz", "Continued to new goal");
     is(scalar @{$routing->Via}, 1, "With a new via");
-    is($routing->Via->[0]->Street, "Sonntagstr/Böcklinstr.", "Correct via"); # XXX not yet normalized
+    is($routing->Via->[0]->Street, "Sonntagstr./Böcklinstr.", "Correct via");
     $routing->search;
     is($routing->RouteInfo->[-1]->{Street}, $routing->Goal->Street);
 
