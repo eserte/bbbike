@@ -1628,14 +1628,11 @@ $str_label = $hslabel_frame->Label
 $ch->attach($str_label, -pod => "^Straße/Strecke");
 
 $km_frame = $top_frame->Frame(-relief => 'raised',
-				 -bd => 1);
+			      -bd => 1);
 my $kmcb = $km_frame->Button
     (-textvariable => \$unit_km,
      -class => 'FlatBut',
-     -command => sub {
-	 $unit_km = ($unit_km eq 'km' ? 'm' : 'km');
-	 updatekm();
-     },
+     -command => \&change_unit,
     )->pack;
 #  my $kmcbm = $km_frame->Menu(-title => "Meter");
 #  $kmcbm->radiobutton(-label => 'km',
@@ -4585,6 +4582,12 @@ if ($ENV{BBBIKE_GUI_TEST}) {
 MainLoop unless $ENV{BBBIKE_TEST_PERFORMANCE};
 
 ##### Subs ### RELOADER_START ############################################
+
+# km <=> m
+sub change_unit {
+    $unit_km = ($unit_km eq 'km' ? 'm' : 'km');
+    updatekm();
+}
 
 sub standard_selection_handle {
     $c->SelectionHandle

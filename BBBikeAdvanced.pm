@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.97 2004/06/15 22:54:21 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.98 2004/06/20 22:42:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -868,10 +868,10 @@ sub set_coord_interactive {
     {
 	# Stadtplandienst, obsolete
 
-	my $f = $t->Frame->pack(-anchor => "w");
+	my $f = $t->Frame->pack(-anchor => "w", -fill => "x");
 	$f->Label(-text => M"Alte Stadtplandienst-URL")->pack(-side => "left");
 	my $stadtplandiensturl;
-	$f->Entry(-textvariable => \$stadtplandiensturl)->pack(-side => "left");
+	$f->Entry(-textvariable => \$stadtplandiensturl)->pack(-side => "left", -fill => "x", -expand => 1);
 	$f->Button
 	    (-text => M"Selection",
 	     -command => sub {
@@ -900,10 +900,10 @@ sub set_coord_interactive {
     {
 	# www.berlinonline.de
 
-	my $f = $t->Frame->pack(-anchor => "w");
+	my $f = $t->Frame->pack(-anchor => "w", -fill => "x");
 	$f->Label(-text => M"BerlinOnline-Stadtplan-URL")->pack(-side => "left");
 	my $stadtplandiensturl;
-	$f->Entry(-textvariable => \$stadtplandiensturl)->pack(-side => "left");
+	$f->Entry(-textvariable => \$stadtplandiensturl)->pack(-side => "left", -fill => "x", -expand => 1);
 	$f->Button
 	    (-text => M"Selection",
 	     -command => sub {
@@ -929,6 +929,40 @@ sub set_coord_interactive {
 		     }
 		     my($x,$y) = transpose(split /,/, $res[0]->{Coord});
 		     mark_point('-x' => $x, '-y' => $y,
+				-clever_center => 1);
+		 } else {
+		     die "Can't parse <$stadtplandiensturl>";
+		 }
+	     })->pack(-side => "left");
+    }
+
+    {
+	# www.berliner-stadtplan.com
+
+	my $f = $t->Frame->pack(-anchor => "w", -fill => "x");
+	$f->Label(-text => M"berliner-stadtplan.com-URL")->pack(-side => "left");
+	my $stadtplandiensturl;
+	$f->Entry(-textvariable => \$stadtplandiensturl)->pack(-side => "left", -fill => "x", -expand => 1);
+	$f->Button
+	    (-text => M"Selection",
+	     -command => sub {
+		 Tk::catch {
+		     $stadtplandiensturl
+			 = $f1->SelectionGet('-selection' => ($os eq 'win'
+							      ? "CLIPBOARD"
+							      : "PRIMARY"));
+		 };
+	     })->pack(-side => "left");
+	$f->Button
+	    (-text => M"Setzen",
+	     -command => sub {
+		 if ($stadtplandiensturl =~ m{x_wgs/(.*?)/y_wgs/(.*?)/}) {
+		     my($x, $y) = ($1, $2);
+		     require Karte::Polar;
+		     my $x_ddd = Karte::Polar::dmm2ddd(13, $x);
+		     my $y_ddd = Karte::Polar::dmm2ddd(52, $y);
+		     my($tx,$ty) = transpose($Karte::Polar::obj->map2standard($x_ddd, $y_ddd));
+		     mark_point('-x' => $tx, '-y' => $ty,
 				-clever_center => 1);
 		 } else {
 		     die "Can't parse <$stadtplandiensturl>";
@@ -2190,6 +2224,9 @@ sub switch_edit_standard_mode {
     $c->center_view
 	(transpose($coord_system_obj->standard2map($oldx, $oldy)),
 	 NoSmoothScroll => 1);
+    if ($unit_km eq 'km') {
+	change_unit();
+    }
 }
 
 # Schaltet in den Edit-Mode für Berlin um.

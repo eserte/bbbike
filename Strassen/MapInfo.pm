@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapInfo.pm,v 1.15 2004/06/20 09:23:30 eserte Exp $
+# $Id: MapInfo.pm,v 1.16 2004/06/21 07:38:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
@@ -253,10 +253,10 @@ sub create_mif_mid {
     ($maxx,$maxy) = $trim_accuracy->($conv->($maxx,$maxy)) if $conv;
 
     if ($args{tomap} eq 'polar') {
-	$coordsysline = "";
+	$coordsysline = qq{CoordSys Earth Projection 1, 0\n};
     }
     if (!defined $coordsysline) {
-	$coordsysline = qq{COORDSYS NonEarth Units "m" Bounds ($minx,$miny) ($maxx,$maxy)\n};
+	$coordsysline = qq{CoordSys NonEarth Units "m" Bounds ($minx,$miny) ($maxx,$maxy)\n};
     }
     my($max_name_length, $max_cat_length) = (1, 1);
     $self->init;
@@ -271,13 +271,13 @@ sub create_mif_mid {
 
     my $mid = "";
     my $mif = <<EOF;
-VERSION $version
-CHARSET "WindowsLatin1"
-DELIMITER ","
+Version $version
+Charset "WindowsLatin1"
+Delimiter ","
 ${coordsysline}COLUMNS 2
   Name     Char($max_name_length)
   Category Char($max_cat_length)
-DATA
+Data
 
 EOF
 
@@ -939,6 +939,10 @@ if ($use_datadir) {
 Example usage from command line:
 
     perl -Ilib Strassen/MapInfo.pm -o /tmp/brb -scope region -tomap polar -v data_corrected/
+
+Converting a mapinfo file into a bbd file:
+
+    perl -Ilib -MStrassen::MapInfo -MKarte -MKarte::Polar -e '$s = Strassen->new($ARGV[0]); $s->write($ARGV[1])' mapinfofile bbdfile
 
 =head1 AUTHOR
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Polar.pm,v 1.12 2004/03/08 00:07:58 eserte Exp $
+# $Id: Polar.pm,v 1.13 2004/06/20 22:43:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -153,6 +153,15 @@ sub dms2ddd {
     my(@dms) = @_;
     die "Overflow" if ($dms[1] >= 60 || $dms[2] >= 60);
     $dms[0] + $dms[1]/60 + $dms[2]/3600;
+}
+
+# input: deg, min
+# deg should be signed
+# output: deg (decimal)
+sub dmm2ddd {
+    my(@dmm) = @_;
+    die "Overflow" if $dmm[1] >= 60;
+    $dmm[0] + $dmm[1]/60;
 }
 
 # input: a dms styled string e.g. N51 12 56.2
