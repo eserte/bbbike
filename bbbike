@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.126 2004/03/04 23:17:23 eserte Exp eserte $
+# $Id: bbbike,v 3.127 2004/03/11 00:04:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2004 Slaven Rezic. All rights reserved.
@@ -220,7 +220,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.126 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.127 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4522,6 +4522,9 @@ sub load_photos {
     $inwork_photo        = load_photo($top, 'inwork.' . $default_img_fmt);
     $ferry_photo         = load_photo($top, 'ferry.' . $default_img_fmt);
     $ferry_klein_photo   = load_photo($top, 'ferry_klein.' . $default_img_fmt);
+    $zugbruecke_photo    = load_photo($top, 'zugbruecke.' . $default_img_fmt);
+    $zugbruecke_klein_photo
+	= load_photo($top, 'zugbruecke_klein.' . $default_img_fmt);
 }
 
 sub set_default_geometry {
@@ -5535,8 +5538,11 @@ EOF
 		  ($x, $y,
 		   -image => ($category eq 'B'
 			      ? $andreaskr_photo
-			      : $ampel_photo),
-		   -tags => ["$abk-fg", "$xx,$yy",
+			      : $category eq 'Zbr'
+				? $zugbruecke_photo
+			        : $ampel_photo
+			     ),
+		   -tags => ["$abk-fg", "$xx,$yy", $pointname,
 			     "$abk-" . ($category eq 'B' ? 'B' : 'X') . "-fg"],
 		  );
 		$ampeln{"$xx,$yy"} = $category;
@@ -8702,8 +8708,9 @@ sub plot_point {
     my($ampel_photo, $andreaskr_photo);
     if ($abk eq 'lsa') {
 	undef %ampeln;
-	$ampel_photo     = get_symbol_scale('lsa-X');
-	$andreaskr_photo = get_symbol_scale('lsa-B');
+	$ampel_photo      = get_symbol_scale('lsa-X');
+	$andreaskr_photo  = get_symbol_scale('lsa-B');
+	$zugbruecke_photo = get_symbol_scale('lsa-Zbr');
 	$c->delete('lsas'); # Ampelschaltung-Symbole löschen
 	$c->delete('lsas-t'); # Ampelschaltung-Symbole löschen
     }
@@ -10104,14 +10111,18 @@ sub enterpoint {
 	}
 	$hs_label->configure(-fg => 'black');
     } elsif ($tags[0] =~ /^lsa-/) {
-	if ($tags[2] !~ /^lsa-X/) {
-	    $act_value{Haltestelle} = ($tags[2] =~ /^lsa-F/
+	my $exact_cat = $tags[3];
+	if ($exact_cat !~ /^lsa-X/) {
+	    $act_value{Haltestelle} = ($exact_cat =~ /^lsa-F/
 				       ? M"Fußgängerampel"
-				       : ($tags[2] =~ /^lsa-B/
+				       : ($exact_cat =~ /^lsa-B/
 					  ? M"Bahnübergang"
-					  : substr($tags[2], 4, 1)
+					  : ($exact_cat =~ /^lsa-Zbr/
+					     ? M"Zugbrücke (" . $tags[2] . ")"
+					     : substr($exact_cat, 4, 1)
+					    )
 					 )
-				       );
+				      );
 	    $hs_label->configure(-fg => 'black');
 	} else {
 	    $act_value{Haltestelle} = "";
@@ -11749,7 +11760,7 @@ sub scale_width {
 #  	}
     }
 
-    foreach (qw(lsa-X lsa-B rest kn)) {
+    foreach (qw(lsa-X lsa-B lsa-Zbr rest kn)) {
 	$c->itemconfigure($_ . '-fg', -image => get_symbol_scale($_, $scale));
     }
     foreach (qw(e)) {
@@ -11965,6 +11976,14 @@ sub get_symbol_scale {
 	    return $andreaskr_klein_photo;
 	} elsif ($scale >= 0.5*$mod) {
 	    return $andreaskr_klein2_photo;
+	} else {
+	    return undef;
+	}
+    } elsif ($tag eq 'lsa-Zbr') {
+	if ($myscale >= 4*$mod) {
+	    return $zugbruecke_photo;
+	} elsif ($scale >= 1*$mod) {
+	    return $zugbruecke_klein_photo;
 	} else {
 	    return undef;
 	}

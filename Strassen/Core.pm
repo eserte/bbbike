@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.33 2004/02/17 23:18:46 eserte Exp $
+# $Id: Core.pm,v 1.35 2004/03/10 23:59:48 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable);
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.33 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.35 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -69,17 +69,17 @@ sub AUTOLOAD {
 #   NoRead
 #   PreserveLineInfo
 sub new {
-    my($class, $filename, %arg) = @_;
+    my($class, $filename, %args) = @_;
 
     if (defined $filename &&
 	$filename =~ /\.(dbf|sbn|sbx|shp|shx)$/) {
 	require Strassen::ESRI;
-	return Strassen::ESRI->new($filename, %arg);
+	return Strassen::ESRI->new($filename, %args);
     }
     if (defined $filename &&
 	$filename =~ /\.(mif|mid)$/i) {
 	require Strassen::MapInfo;
-	return Strassen::MapInfo->new($filename, %arg);
+	return Strassen::MapInfo->new($filename, %args);
     }
 
     my(@filenames);
@@ -90,7 +90,8 @@ sub new {
 	}
     }
     my $self = { Data => [],
-		 Directives => {},
+		 Directives => [],
+		 GlobalDirectives => {},
 	       };
     bless $self, $class;
 
@@ -103,7 +104,7 @@ sub new {
 
 	    my $file;
 	    foreach $file (@filenames) {
-#  		if (!$arg{NoStorable} and $can_strassen_storable and -f "$file.st" and -r _) {
+#  		if (!$args{NoStorable} and $can_strassen_storable and -f "$file.st" and -r _) {
 #  		    my $obj = Strassen::Storable->new("$file.st");
 #  		    return $obj if $obj;
 #  		}
@@ -139,8 +140,10 @@ sub new {
 	    require Carp;
 	    Carp::confess("Can't open ", join(", ", @filenames));
 	}
-	unless ($arg{NoRead}) {
-	    $self->read_data(PreserveLineInfo => $arg{PreserveLineInfo});
+	unless ($args{NoRead}) {
+	    $self->read_data(PreserveLineInfo   => $args{PreserveLineInfo},
+			     UseLocalDirectives => $args{UseLocalDirectives},
+			    );
 	}
     }
 
@@ -160,8 +163,15 @@ sub read_data {
     warn "Read Strassen file $file...\n" if ($VERBOSE && $VERBOSE > 1);
     $self->{Modtime} = (stat($file))[STAT_MODTIME];
     binmode FILE;
+
     my @data;
-    my %directives;
+    my @directives;
+    my %global_directives;
+
+    my $use_local_directives = $args{UseLocalDirectives};
+    my $directives_stage = "local";
+    my @line_directive;
+    my @block_directives;
     if ($args{PreserveLineInfo}) {
 	while (<FILE>) {
 	    next if m{^(\#|\s*$)};
@@ -170,17 +180,59 @@ sub read_data {
 	}
     } else {
 	while (<FILE>) {
-	    if (/^\#:\s*(.*?):\s*(.*)/) {
-		$directives{$1} = $2;
+	    if (/^\#:\s*([^\s:]+):?\s*(.*)$/) {
+		my($directive, $value_and_marker) = ($1, $2);
+		my($value, $is_block_begin, $is_block_end);
+		if ($value_and_marker =~ /^\^+\s*$/) {
+		    $is_block_end = 1;
+		    $value = "";
+		} else {
+		    $value_and_marker =~ /(.*?)(\s*vvv+\s*)?$/;
+		    if ($2) {
+			$is_block_begin = 1;
+		    }
+		    $value = $1;
+		}
+
+		if ($. == 1) {
+		    $directives_stage = "global";
+		} elsif ($directives_stage eq 'global' && $_ =~ /^\#:$/) {
+		    $directives_stage = "local";
+		}
+		if ($directives_stage eq "global") {
+		    $global_directives{$directive} = $value;
+		} elsif ($use_local_directives) {
+		    if ($is_block_begin) {
+			push @block_directives, [$directive => $value];
+		    } elsif ($is_block_end) {
+			pop @block_directives;
+		    } else {
+			@line_directive = ($directive => $value);
+		    }
+		}
 	    }
 	    next if m{^(\#|\s*$)};
 	    push @data, $_;
+	    if (@line_directive || @block_directives) {
+		$directives[$#data] = { @line_directive, map { @$_ } @block_directives };
+		if (@line_directive) {
+		    @line_directive = ();
+		}
+	    }
         }
+    }
+    if (@block_directives) {
+	die "The following block directives were not closed: `" . join(" ", map { "@$_" } @block_directives) . "'";
+    }
+    if (@line_directive) {
+	die "Stray line directive `@line_directive' at end of file";
     }
     warn "... done\n" if ($VERBOSE && $VERBOSE > 1);
     close FILE;
+
     $self->{Data} = \@data;
-    $self->{Directives} = \%directives;
+    $self->{Directives} = \@directives;
+    $self->{GlobalDirectives} = \%global_directives;
 }
 
 # Return true if there is no data loaded.
@@ -342,6 +394,13 @@ sub get {
     return [undef, [], undef] if $pos < 0;
     my $line = $self->{Data}->[$pos];
     parse($line);
+}
+
+sub get_directive {
+    my($self, $pos) = @_;
+    $pos = $self->{Pos} if !defined $pos;
+    return {} if !$self->{Directives};
+    $self->{Directives}[$pos] || {};
 }
 
 # Returns a list of all elements in the streets database
@@ -998,8 +1057,8 @@ sub nearest_point {
 sub get_conversion {
     my($self, %args) = @_;
     my $convsub;
-    if ($self->{Directives}{map}) {
-	my $map = $self->{Directives}{map};
+    if ($self->{GlobalDirectives}{map}) {
+	my $map = $self->{GlobalDirectives}{map};
 	require Karte;
 	Karte::preload($map);
 	my $tomap = $args{-tomap};

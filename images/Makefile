@@ -89,6 +89,7 @@ png-to-gif:	\
 		ubahn_klein.gif \
 		ubahn_mini.gif \
 		zugbruecke.gif \
+		zugbruecke_klein.gif \
 		opt.gif \
 		flag2_bl_centered.gif \
 		flag_via_centered.gif \
@@ -116,6 +117,7 @@ png-to-xpm:	\
 		ubahn_klein.xpm \
 		ubahn_mini.xpm \
 		zugbruecke.xpm \
+		zugbruecke_klein.xpm \
 		hatched_ring.xpm \
 		flag2_bl_centered.xpm \
 		flag_via_centered.xpm \

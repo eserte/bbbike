@@ -1639,15 +1639,17 @@ X	X 7315,10537
 X	X 8690,13723
 X	X 11623,9104
 X	B 801,13323
-Zugbrücke, geschlossen jede volle Stunde	X 28606,-26103
-Zugbrücke, geschlossen bei Bedarf	X 44901,48506
+geschlossen jede volle Stunde	Zbr 28606,-26103
+geschlossen bei Bedarf	Zbr 44901,48506
+geschlossen 2x täglich für ca. eine halbe Stunde	Zbr 34834,163174
+geschlossen bei Bedarf (?)	Zbr 27758,-11646
 X	X 21077,4736
 X	X 21002,5755
 X	X 5413,2436
 X	X 11688,16365
 X	X 14523,12183
 X	X 20532,11505
-X	B 21562,12088
+S-Bahn und Regionalbahn	B 21562,12088
 X	X 11962,22597
 X	X 2392,9715
 X	F 6272,10926
@@ -1656,7 +1658,7 @@ X	F 11310,14953
 X	X 11623,15108
 X	X 5421,8337
 X	F 8241,11024
-X	X 5831,10978
+nur Richtung Westen	X 5831,10978
 X	X 12055,11331
 X	X 3872,10749
 X	F 2702,10006

@@ -90,6 +90,8 @@ if ($test_tk) {
       = $top->Photo(-file => "$imgdir/andreaskr.gif");
     $ampel_klein_photo 
       = $top->Photo(-file => "$imgdir/ampel.gif");
+    $zugbruecke_klein_photo 
+      = $top->Photo(-file => "$imgdir/zugbruecke.gif");
     BBBike::fast_plot_point($c, "lsa", ["$datadir/ampeln"], 0);
     $c->delete("lsa");
 

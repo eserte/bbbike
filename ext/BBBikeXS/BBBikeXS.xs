@@ -924,7 +924,7 @@ fast_plot_point(canvas, abk, fileref, progress)
 	  int x, y;
 	} point;
 	AV* tags;
-	SV *andreaskreuz, *ampel;
+	SV *andreaskreuz, *ampel, *zugbruecke;
 	char *file;
 	int file_count = 0;
 	AV* fileref_array = NULL;
@@ -944,6 +944,8 @@ fast_plot_point(canvas, abk, fileref, progress)
 	if (!andreaskreuz) croak("Can't get andreaskr_klein_photo\n");
 	ampel        = perl_get_sv("main::ampel_klein_photo", 0);
 	if (!ampel) croak("Can't get ampel_klein_photo\n");
+	zugbruecke   = perl_get_sv("main::zugbruecke_klein_photo", 0);
+	if (!zugbruecke) croak("Can't get zugbruecke_klein_photo\n");
 
 	if (SvROK(fileref) && SvTYPE(SvRV(fileref)) == SVt_PVAV) {
 	  fileref_array = (AV*)SvRV(fileref);
@@ -963,14 +965,16 @@ fast_plot_point(canvas, abk, fileref, progress)
 	  if (!f) croak("Can't open %s: %s\n", file, strerror(errno));
 
 	  while(!feof(f)) {
-	    char *p, *cat;
+	    char *p, *cat, *pointname;
 
 	    fgets(buf, MAXBUF, f);
+	    pointname = buf;
 	    p = strchr(buf, '\t');
 	    if (p) {
 	      *p = 0;
 	      cat = p+1;
-	      if (*cat != 'B' && *cat != 'X') *cat = 'X';
+	      if (*cat != 'B' && *cat != 'X' && *cat != 'Z' /* br */
+		  ) *cat = 'X';
 	      p = strchr(p+1, ' ');
 	      if (p) {
 	        char *new_p;
@@ -988,11 +992,12 @@ fast_plot_point(canvas, abk, fileref, progress)
 
 	        sprintf(abkcat, "%d,%d", point.x, point.y);
 	        av_store(tags, 1, newSVpv(abkcat, 0));
+		av_store(tags, 2, newSVpv(pointname, 0));
 	        strcpy(abkcat, abk);
 	        strcat(abkcat, "-");
 	        strcat(abkcat, cat);
 	        strcat(abkcat, "-fg");
-	        av_store(tags, 2, newSVpv(abkcat, 0));
+	        av_store(tags, 3, newSVpv(abkcat, 0));
 
 	        PUSHMARK(sp);
 	        XPUSHs(canvas);
@@ -1005,7 +1010,10 @@ fast_plot_point(canvas, abk, fileref, progress)
 	        case 'B':
 		  XPUSHs(andreaskreuz);
 		  break;
-
+		case 'Z':
+		  /* Zbr */
+		  XPUSHs(zugbruecke);
+		  break;
 		default:
 		  XPUSHs(ampel);
 		}

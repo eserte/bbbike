@@ -92,6 +92,8 @@ specified block. Block directives are markes as such:
 The C<v> and C<^> markers could be repeated an indefinite number of
 times, but at least three times.
 
+An colon (:) after the directive_name is always optional.
+
 The following directives are defined:
 
 =over
@@ -116,12 +118,17 @@ Same as E<quot>by:E<quot> for unverified data.
 E<quot>UnverifiedE<quot> means that there's no communication channel
 back to the information provider.
 
-=item C<temporary>
+=item C<temporary:>
 
 The next block or line is just temporary. Typically the date
 information is included in the Name field of the data line, preferred
 in a ISO-date similar notation (e.g. YYYY-MM-DD - YYYY-MM-DD for a
 starting and an end date).
+
+=item C<unsure: I<why>>
+
+The next block or line is unsure information. The I<why> text
+specifies an additional comment. An alias for C<unsure:> is C<XXX>.
 
 =back
 

@@ -34,16 +34,15 @@ attachment oder ähnlichem. Vielleicht nicht allzu schwer.
 
 =item * (E4)
 
-Use the :by and :temporary directives in the data files. Change some
-files which are using this information (e.g. misc/Makefile).
+Use the :by and :temporary directives in the data files (ampeln
+already done). Change some files which are using this information
+(e.g. misc/Makefile). Write some tests for all kinds of directives
+(global, block, line, nested blocks and lines, errors)
 
 =item * (M3)
 
-Extend Strassen/Core.pm to recognize global, block and line
-directives. Block and line directives should be added as a new forth
-argument (an array ref). Change convert_* to not ignore directives
-(and optionally not ignore comments). Maybe rewrite the misc/Makefile
-rule to use standard Strassen methods.
+Change convert_* to optionally not ignore directives and comments.
+Rewrite the misc/Makefile rule to use standard Strassen methods.
 
 =item * (E2)
 
@@ -52,12 +51,22 @@ CreationDate, AcquireDate (maybe better names for AcquireDate?) (from
 by directive), FromDate, ToDate (from temporary directive). Implement
 first the directive stuff above.
 
+New output scheme: create one mapinfo file per layer. Use real
+pen/symbol for lines.
+
 =item * (M3)
 
 All references to E<quot>commentsE<quot> should use the partial
 comments files instead. Maybe define a method with a list of the
 partial files in Strassen/Dataset. Add the partial comments files to
 the MANIFEST, remove the monolith comments from CVS and MANIFEST.
+Create new menu cascade Comments all and comment types; remove the
+comments cascade in the edit menu.
+
+=item * (M2)
+
+BBBikeXS, fast_plot_point: use main::get_symbol_scale() to get name of
+ampel/andreaskr/etc. images.
 
 =item * (M1)
 
