@@ -1123,6 +1123,14 @@ Evtl. das gleiche Problem bei allen Gecko-Browsern.
 cgi-Version: Linux+Netscape: Probleme mit Cookies (Einstellungen)
 =E<gt> noch immer?
 
+=item * (M2)
+
+Automatisches HTML-Validieren in der Test-Suite. Man koennte
+
+http://validator.w3.org/check?output=xml;uri=http%3A%2F%2Fwww.iconmobile.com%2F&doctype=%28detect+automatically%29&charset=iso-8859-1+%28Western+Europe%29
+
+verwenden, aber die XML-Ausgabe ist als "experimentell" markiert.
+
 =back
 
 =head2 WAP version of bbbike
