@@ -491,10 +491,11 @@ sub resolve_position {
 sub get_position {
     my $self = shift;
     my $type = ucfirst(shift); # start or goal
+    my(%args) = @_;
     my $pos_o = $self->$type();
     my $choices = $type . "Choices";
     my $choices_o = $self->$choices();
-    $self->resolve_position($pos_o, $choices_o);
+    $self->resolve_position($pos_o, $choices_o, undef, undef, %args);
 }
 
 sub fix_position {
