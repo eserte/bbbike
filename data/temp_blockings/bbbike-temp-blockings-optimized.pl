@@ -22,7 +22,15 @@ push @temp_blocking,
        },
        undef,
        undef,
-       undef,
+       {
+         'until' => 1118872800,
+         'text' => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 12.04.2005-15.06.2005 ',
+         'from' => 1113170400,
+         'data' => 'userdel	q4 49039,44131 48583,44366
+userdel	q4 49039,44131 49691,43812
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -49,7 +57,14 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1113256800,
+         'text' => 'L 302; (Schöneicher Str.); OL Schöneiche, Dorfaue und Rüdersdorfer Str. Baustellensicherung halbseitig gesperrt; Einbahnstraße 28.01.2005-11.04.2005',
+         'from' => 1106780400,
+         'data' => 'userdel	q4 31221,8312 30688,8432
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -120,14 +135,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1112824800,
-         'text' => 'L 86; zw. Schmergow und Ketzin Straßenbau Vollsperrung 30.03.2005-06.04.2005 ',
-         'from' => 1112047200,
-         'data' => 'userdel	2 -27793,4863 -27127,5270
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -144,7 +152,14 @@ push @temp_blocking,
        },
        undef,
        undef,
-       undef,
+       {
+         'until' => undef,
+         'text' => 'L 24; (AS Pfingstberg-Gerswalde); Bereich AS Pfingstberg, Brücke A 11 Brückenabruch Vollsperrung, Dauer unbekannt',
+         'from' => undef,
+         'data' => 'userdel	2 41292,81052 41593,80703
+',
+         'type' => 'gesperrt'
+       },
        {
          'until' => 1128117600,
          'text' => 'B 179; (Berliner Str.); OL Königs Wusterhausen, zw. Schloßplatz u. Funkerberg Kanalarbeiten halbseitig gesperrt (XXX welche Richtung?); Einbahnstraße 01.03.2005-30.09.2005 ',
@@ -285,6 +300,22 @@ userdel	q4 22217,1108 22162,1067
          'data' => 'userdel	q4 -24967,-35112 -24515,-36113
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1113602400,
+         'text' => 'L 23; (Britz-Joachimsthal); Bereich AS Chorin Brückenbauarbeiten Vollsperrung 13.04.2005-15.04.2005 ',
+         'from' => 1113256800,
+         'data' => 'userdel	2 35962,59463 35405,59832
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => undef,
+         'text' => 'L 711; (Krausnick-AS Stakow); zw. Krausnick u. Bahnhof Brand Einschränkung Tragfähigkeit Vollsperrung, Dauer unbekannt ',
+         'from' => undef,
+         'data' => 'userdel	2 35178,-41015 40398,-40989
+',
+         'type' => 'gesperrt'
        }
      
 );

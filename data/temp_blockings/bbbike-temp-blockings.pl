@@ -866,9 +866,9 @@ userdel	q4 -21137,-4034 -21003,-4494
 userdel	q4 -21003,-4494 -20851,-4878
 EOF
      },
-     { from  => 1096754400, # 2004-10-03 00:00
-       until => 1102460400, # 2004-12-08 00:00
-       text  => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 04.10.2004-07.12.2004 ',
+     { from  => 1113170400, # 2005-04-11 00:00
+       until => 1118872800, # 2005-06-16 00:00
+       text  => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 12.04.2005-15.06.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 49039,44131 48583,44366
@@ -1039,9 +1039,9 @@ EOF
 userdel	q4 90062,-33160 90271,-33398
 EOF
      },
-     { from  => 1098568800, # 2004-10-24 00:00
-       until => 1112306400, # 2005-04-01 00:00
-       text  => 'L 302; (Schöneicher Str.); OL Schöneiche, zw. Stegeweg u. Dorfaue Gleisbauarbeiten Vollsperrung 25.10.2004-31.03.2005 ',
+     { from  => 1106780400, # 2005-01-27 00:00
+       until => 1113256800, # 2005-04-12 00:00
+       text  => 'L 302; (Schöneicher Str.); OL Schöneiche, Dorfaue und Rüdersdorfer Str. Baustellensicherung halbseitig gesperrt; Einbahnstraße 28.01.2005-11.04.2005',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 31221,8312 30688,8432
@@ -1353,7 +1353,7 @@ EOF
      },
      { from  => 1112047200, # 2005-03-29 00:00
        until => 1112824800, # 2005-04-07 00:00
-       text  => 'L 86; zw. Schmergow und Ketzin Straßenbau Vollsperrung 30.03.2005-06.04.2005 ',
+       text  => 'L 86; zw. Schmergow und Ketzin Straßenbau Vollsperrung 30.03.2005-06.04.2005',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -27793,4863 -27127,5270
@@ -1438,9 +1438,9 @@ userdel	2 14994,5193 15174,5463
 userdel	2 15174,5463 15373,5675
 EOF
      },
-     { from  => 1111014000, # 2005-03-17 00:00
-       until => 1111359600, # 2005-03-21 00:00 # XXX z.Zt. auf "unbekannt" gesetzt
-       text  => 'L 24; (AS Pfingstberg-Gerswalde); Bereich AS Pfingstberg, Brücke A 11 Brückenabruch Vollsperrung 18.03.2005-20.03.2005 ',
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'L 24; (AS Pfingstberg-Gerswalde); Bereich AS Pfingstberg, Brücke A 11 Brückenabruch Vollsperrung, Dauer unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 41292,81052 41593,80703
@@ -1650,6 +1650,22 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -24967,-35112 -24515,-36113
+EOF
+     },
+     { from  => 1113256800, # 2005-04-12 00:00
+       until => 1113602400, # 2005-04-16 00:00
+       text  => 'L 23; (Britz-Joachimsthal); Bereich AS Chorin Brückenbauarbeiten Vollsperrung 13.04.2005-15.04.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 35962,59463 35405,59832
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'L 711; (Krausnick-AS Stakow); zw. Krausnick u. Bahnhof Brand Einschränkung Tragfähigkeit Vollsperrung, Dauer unbekannt ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 35178,-41015 40398,-40989
 EOF
      },
     );

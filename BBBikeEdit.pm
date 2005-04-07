@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.83 2005/03/21 21:15:34 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.83 2005/03/21 21:15:34 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -68,34 +68,6 @@ sub edit_mode_save_as {
     my $type = shift;
     eval $type . '_save_as()';
     warn $@ if $@;
-}
-
-# Return true if the file is writable (eventually after checking out).
-sub ask_for_co {
-    my($top, $file) = @_;
-    if (!-w $file) {
-	require Tk::Dialog;
-	my $ans = $top->Dialog
-	    (-title => 'Warnung',
-	     -text => "Achtung: auf die Datei $file kann nicht geschrieben werden.\nSoll ein \"co -l\" ausgeführt werden?",
-	     -buttons => ['Ja', 'Nein'])->Show;
-	if ($ans eq 'Ja') {
-	    require BBBikeUtil;
-	    my $ok = BBBikeUtil::rcs_co($file);
-	    if (!$ok) {
-		$top->Dialog
-		    (-title => 'Warnung',
-		     -text =>
-		     "\"co -l $file\" hat einen Fehler gemeldet. " .
-		     "Bitte stderr überprüfen.",
-		     -buttons => ['OK'])->Show;
-		return 0;
-	    }
-	} else {
-	    return 0;
-	}
-    }
-    1;
 }
 
 ######################################################################
@@ -309,7 +281,7 @@ sub BBBikeEdit::radweg_open {
 	$l[3] = $rev_category_code{$rueck} || "kein";
 	radweg_new_point(@l);
     }
-    ask_for_co($top, $radweg_file);
+    BBBikeEdit::ask_for_co($top, $radweg_file);
 }
 
 sub radweg_old_open {
@@ -327,13 +299,14 @@ sub radweg_old_open {
 	    radweg_new_point(@l);
 	}
 	close RW;
-	ask_for_co($top, $radweg_file);
+	BBBikeEdit::ask_for_co($top, $radweg_file);
     }
 }
 
 sub radweg_save {
     if ($radweg_file) {
-	open(RW, ">$radweg_file") or die $!;
+	BBBikeEdit::ask_for_co($main::top, $radweg_file);
+	open(RW, ">$radweg_file") or main::status_message($!, "die");
 	binmode RW; # XXX check on NT
 	print RW _auto_rcs_header();
 	for my $F (@radweg_data) {
@@ -346,7 +319,8 @@ sub radweg_save {
 
 sub radweg_old_save {
     if ($radweg_file) {
-	open(RW, ">$radweg_file") or die $!;
+	BBBikeEdit::ask_for_co($main::top, $radweg_file);
+	open(RW, ">$radweg_file") or main::status_message($!, "die");
 	binmode RW; # XXX check on NT
 	print RW _auto_rcs_header();
 	print RW join("\n", map { join("\t", @$_) } @radweg_data), "\n";
@@ -573,7 +547,7 @@ sub sort_hlist {
 	    eval {
 		local $SIG{__DIE__};
 		undef $p->{Style}[$j]
-		  unless $p->{Style}[$j]->isa('Tk::ItemStyle');
+		    unless $p->{Style}[$j]->isa('Tk::ItemStyle');
 	    };
 	    if ($@) {
 		undef $p->{Style}[$j];
@@ -1083,7 +1057,8 @@ sub ampel_open {
 
 sub ampel_save {
     if ($ampelschaltung_file) {
-	open(RW, ">$ampelschaltung_file") or die $!;
+	BBBikeEdit::ask_for_co($main::top, $ampelschaltung_file);
+	open(RW, ">$ampelschaltung_file") or main::status_message($!, "die");
 	binmode RW; # XXX check on NT
 	print RW _auto_rcs_header();
 	print RW join("\n", map { join("\t", @$_) } @ampel_data), "\n";
@@ -1907,6 +1882,34 @@ if (!defined $tmpdir) {
 use vars qw($auto_reload);
 $auto_reload = 0 if !defined $auto_reload;
 
+# Return true if the file is writable (eventually after checking out).
+sub ask_for_co {
+    my($top, $file) = @_;
+    if (!-w $file) {
+	require Tk::Dialog;
+	my $ans = $top->Dialog
+	    (-title => 'Warnung',
+	     -text => "Achtung: auf die Datei $file kann nicht geschrieben werden.\nSoll ein \"co -l\" ausgeführt werden?",
+	     -buttons => ['Ja', 'Nein'])->Show;
+	if ($ans eq 'Ja') {
+	    require BBBikeUtil;
+	    my $ok = BBBikeUtil::rcs_co($file);
+	    if (!$ok) {
+		$top->Dialog
+		    (-title => 'Warnung',
+		     -text =>
+		     "\"co -l $file\" hat einen Fehler gemeldet. " .
+		     "Bitte stderr überprüfen.",
+		     -buttons => ['OK'])->Show;
+		return 0;
+	    }
+	} else {
+	    return 0;
+	}
+    }
+    1;
+}
+
 sub create {
     my($pkg) = @_;
     my $o = $pkg->new();
@@ -2286,6 +2289,7 @@ sub addnew {
 		       }
 		       $cat =~ s/\s.*//; # remove comment
 		       my $line = Strassen::arr2line([$name,$coords,$cat]);
+		       ask_for_co($t, $file);
 		       if (!open(ADD, ">>$file")) {
 			   main::status_message(Mfmt("Kann auf %s nicht schreiben: %s", $file, $!),"err");
 			   return;
@@ -2505,7 +2509,8 @@ sub do_create_relation {
 
     $main::str_file{'relgps'} = relgps_filename();
     my $file = "$main::str_file{'relgps'}-orig";
-    open(RELFILE, ">>$file") or die "Can't write to $file: $!";
+    ask_for_co($main::top, $file);
+    open(RELFILE, ">>$file") or main::status_message("Can't write to $file: $!", "die");
     my @order = (1,2);
     if ($points[2]->{Type} eq 'GPS') {
 	@order = (2,1);
@@ -3427,6 +3432,7 @@ EOF
 		  if ($old_contents[-1] =~ m{^\s*\);\s*$}) {
 		      splice @old_contents, -1, 0, $pl_entry;
 		      if ($meta_data_handling eq 'append') {
+			  ask_for_co($t, $pl_file);
 			  open(PL_OUT, "> $pl_file")
 			      or main::status_message("Kann auf $pl_file nicht schreiben: $!", "die");
 			  print PL_OUT join "", @old_contents;
@@ -3600,7 +3606,8 @@ sub temp_blockings_editor_replace {
 #     }
 
     if ($yesno eq M"Ja") {
-	open PL_OUT, "> $pl_file" or die $!;
+	ask_for_co($main::top, $pl_file);
+	open PL_OUT, "> $pl_file" or main::status_message($!, "die");
 	print PL_OUT $s{pre} . $new_string . $s{post};
 	close PL_OUT;
 	$ret = 1;
@@ -3681,7 +3688,8 @@ sub temp_blockings_editor_replace {
 		goto TRYAGAIN;
 	    }
 
-	    open PL_OUT, "> $pl_file" or die $!;
+	    ask_for_co($t, $pl_file);
+	    open PL_OUT, "> $pl_file" or main::status_message($!, "die");
 	    print PL_OUT $s{pre};
 	    if ($sel > 0) {
 		print PL_OUT join("", @records[0 .. $sel-1]);

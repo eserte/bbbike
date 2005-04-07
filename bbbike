@@ -3178,6 +3178,13 @@ sub do_iconframe {
 		 -command => \&active_temp_blockings_for_date_dialog,
 		);
 	    $bdm->command
+		(-label => M"Aktive und zukünftige Sperrungen zeichnen",
+		 -command => sub {
+		     $show_active_temp_blockings = 1;
+		     active_temp_blockings($show_active_temp_blockings, -from => time);
+		 },
+		);
+	    $bdm->command
 		(-label => M"Speichern für temp_blockings",
 		 -command => sub {
 		     require BBBikeEdit;
@@ -8796,6 +8803,7 @@ sub activate_temp_blockings {
     my $do_show_active_temp_blockings = shift;
     my(%args) = @_;
     my $now = $args{-now} || time;
+    my $from = $args{-from};
     # XXX these should come from a file as constants
     my $temp_blockings_dir = "$FindBin::RealBin/data/temp_blockings"; # XXX was misc
     my $file = "$temp_blockings_dir/bbbike-temp-blockings.pl";
@@ -8823,8 +8831,16 @@ sub activate_temp_blockings {
 	my @s;
 	for my $o (@temp_blocking) {
 	    next if !$o; # undefined entry
-	    if ((!defined $o->{from} || $o->{from} < $now) &&
-		(!defined $o->{until} || $o->{until} > $now)) {
+	    my $do_it = 0;
+	    if (defined $from && (!defined $o->{until} || $o->{until} > $from)) {
+		$do_it = 1;
+	    }
+	    if (!$do_it && ((!defined $o->{from} || $o->{from} < $now) &&
+			    (!defined $o->{until} || $o->{until} > $now))) {
+		$do_it = 1;
+	    }
+
+	    if ($do_it) {
 		my $s;
 		my $f;
 		if ($o->{file}) {

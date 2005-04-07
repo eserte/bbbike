@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.42 2005/03/17 21:01:41 eserte Exp $
+# $Id: Makefile,v 2.43 2005/04/07 20:42:12 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -799,15 +799,19 @@ temp_blockings/bbbike-temp-blockings.yml: temp_blockings/bbbike-temp-blockings.p
 	    do $$ARGV[0];\
 	    die 1 if not @temp_blocking;\
 	    YAML::DumpFile($$ARGV[1], \@temp_blocking);\
-	' $> $@
+	' $> $@~
 	perl -MData::Compare -MData::Dumper -MYAML -e '\
 	    do $$ARGV[0];\
 	    $$y = YAML::LoadFile($$ARGV[1]);\
 	    die 2 if not @temp_blocking;\
 	    $$Data::Dumper::Sortkeys = 1;\
-	    die Data::Dumper->new([\@temp_blocking, $$y],[qw(a b)])->Dump \
-	        if not Compare(\@temp_blocking, $$y);\
-	' $> $@
+	    if (not Compare(\@temp_blocking, $$y)) {\
+	        open(F1, "> /tmp/1"); print F1 Data::Dumper->new([\@temp_blocking],[])->Dump; \
+	        open(F2, "> /tmp/2"); print F2 Data::Dumper->new([$$y],[])->Dump; \
+		system("diff -u /tmp/1 /tmp/2 | less"); \
+	    }\
+	' $> $@~
+	mv -f $@~ $@
 
 $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blockings.yml
 	perl -MYAML -e '\

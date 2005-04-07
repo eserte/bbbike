@@ -37,11 +37,11 @@
       (setq end-name-cat-pos (match-end 0))
       (setq name-cat (buffer-substring begin-line-pos end-name-cat-pos)))
     (save-excursion
-      (goto-char (1+ end-coord-pos))
+      (goto-char end-coord-pos)
       (insert "\n")
       (insert name-cat)
       (insert coord)
-      (insert " "))
+      )
     ))
 
 (defun bbbike-search-x-selection ()
