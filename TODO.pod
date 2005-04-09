@@ -16,9 +16,9 @@ Legend:
 
 =over
 
-=item * Check everything in
+=item * Check everything in (almost only data is missing)
 
-=item * Write Changes/Release notes
+=item * Write Changes/Release notes (well... take it easy)
 
 =item * Add some of the suggested modules to the win32 distribution,
 update e.g. the perl gps distro
@@ -27,6 +27,9 @@ update e.g. the perl gps distro
 
 =item * perl/tk: E<quot>kompaktE<quot> in show_route_strnames
 funktioniert nicht richtig
+
+=item * try the inno setup on windows (if it does not work: backup the
+CHANGES text)
 
 =back
 

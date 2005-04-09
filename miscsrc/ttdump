@@ -1,0 +1,64 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: ttdump.pl,v 1.1 2005/04/08 21:49:16 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2005 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use Data::Dumper;
+use Getopt::Long;
+
+my $package;
+my $prefix;
+GetOptions("package=s" => \$package,
+	   "prefix=s" => \$prefix,
+	  ) or die "usage!";
+my $mod = shift || die "Please specify module to dump";
+
+eval 'require $mod'; die $@ if $@;
+$package = $mod if !defined $package;
+
+my $stash = eval '\%' . $package . '::';
+
+my $vars = {};
+while(my($k,$v) = each %$stash) {
+    for my $type (qw(SCALAR ARRAY HASH)) {
+	my $code = $v."{$type}";
+	my $x = eval $code;
+	if (!$@ && $x) {
+	    if (ref $x eq 'SCALAR') {
+		$vars->{$k} = $$x;
+	    } else {
+		$vars->{$k} = $x;
+	    }
+	}
+    }
+}
+
+my $out = "";
+$out .= "[% PERL -%]\n";
+while(my($k,$v) = each %$vars) {
+    my $v_s = Data::Dumper->new([$v],[''])->Useqq(1)->Indent(1)->Dump;
+    $v_s =~ s/^.*?=\s*//;
+    $v_s =~ s/;\n?\z//;
+    my $full_var;
+    if (defined $prefix && $prefix ne "") {
+	$full_var = $prefix . ".";
+    }
+    $full_var .= $k;
+    $out .= '$stash->set("' . $full_var . '", ' . $v_s . ');' . "\n";
+}
+$out .= "[% END -%]\n";
+
+print $out;
+
+__END__

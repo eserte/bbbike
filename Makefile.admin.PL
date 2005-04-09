@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.26 2005/03/27 22:46:15 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.28 2005/04/08 23:03:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -444,9 +444,14 @@ WINBINDISTDIR=$(TMPDIR)/BBBike-$(VERSION)-Windows
 WINPERLBIN=$(HOME)/src/binperl/sieperl-5.6.1
 WINBINDIST=$(WINBINDISTDIR).zip
 
-winbindist-pre:
-	@echo "Make sure that the distfile is uptodate"
+winbindist-pre:	winbindist-clean winbindist-copy
+
+winbindist-clean:
 	rm -rf $(WINBINDISTDIR)
+
+winbindist-copy:
+	[ ! -d $(WINBINDISTDIR) ]
+	@echo "Make sure that the distfile is uptodate"
 	umask 022; mkdir $(WINBINDISTDIR)
 	umask 022; cp -Rp $(WINPERLBIN) $(WINBINDISTDIR)
 	mv $(WINBINDISTDIR)/`basename $(WINPERLBIN)` $(WINBINDISTDIR)/windows
@@ -631,6 +636,9 @@ permission:
 
 data:
 	cd data && ${MAKE}
+
+BBBikeVar.tpl: BBBikeVar.pm
+	./miscsrc/ttdump --package BBBike --prefix BBBike BBBikeVar.pm > BBBikeVar.tpl
 
 EOF
 ;

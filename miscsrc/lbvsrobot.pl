@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.22 2005/04/05 22:09:11 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.23 2005/04/09 10:36:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -502,7 +502,7 @@ sub get_bbd_category {
 __END__
 
 # Als cronjob auf dem radzeit-Server:
-#     /home/slaven/lbvsrobot.pl -f -outputas yaml:/home/slaven/lbvs.yaml
+#     /home/slaven/lbvsrobot.pl -q -f -outputas yaml:/home/slaven/lbvs.yaml
 
 # cd .../bbbike/miscsrc
 # cp -f /tmp/lbvs.yaml /tmp/oldlbvs.yaml
