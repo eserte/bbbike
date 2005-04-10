@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.23 2005/04/05 22:41:25 eserte Exp $
+# $Id: bbbike.cgi,v 7.24 2005/04/10 08:50:56 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -664,7 +664,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.23 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.24 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2782,8 +2782,9 @@ sub search_coord {
     my(%custom_s, @current_temp_blocking);
     {
 	my $t = time;
-	my $index = 0;
+	my $index = -1;
 	for my $tb (@temp_blocking) {
+	    $index++;
 	    next if !$tb; # undefined entry
 	    if (((!defined $tb->{from} || $t >= $tb->{from}) &&
 		 (!defined $tb->{until} || $t <= $tb->{until})) ||
@@ -2792,7 +2793,6 @@ sub search_coord {
 		push @current_temp_blocking, $tb;
 		$tb->{'index'} = $index;
 	    }
-	    $index++;
 	}
 	if (@current_temp_blocking) {
 	    push @Strassen::datadirs,
@@ -5605,7 +5605,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/04/05 22:41:25 $';
+    my $cgi_date = '$Date: 2005/04/10 08:50:56 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

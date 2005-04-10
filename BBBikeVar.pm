@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.33 2005/03/27 22:43:58 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.33 2005/03/27 22:43:58 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2004 Slaven Rezic. All rights reserved.
@@ -27,11 +27,11 @@ $HOMEPAGE	   = 'http://www.rezic.de/eserte/';
 # pointer to WWW version
 $BBBIKE_WWW	   = 'http://www.bbbike.de';
 # list of additional WWW mirrors
-@BBBIKE_WWW        = ('http://bbbike.sourceforge.net/cgi-bin/bbbike.cgi',
-		      'http://www.radzeit.de/cgi-bin/bbbike.cgi',
-		      'http://www.rezic.de/cgi-bin/bbbike.cgi',
-		      'http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.cgi',
-		     );
+@BBBIKE_WWW_MIRRORS = ('http://bbbike.sourceforge.net/cgi-bin/bbbike.cgi',
+		       'http://www.radzeit.de/cgi-bin/bbbike.cgi',
+		       'http://www.rezic.de/cgi-bin/bbbike.cgi',
+		       'http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.cgi',
+		      );
 # WWW version, URL for direct access (sometimes www.bbbike.de does not work)
 #$BBBIKE_DIRECT_WWW = 'http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.cgi';
 $BBBIKE_DIRECT_WWW = 'http://www.radzeit.de/cgi-bin/bbbike.cgi';

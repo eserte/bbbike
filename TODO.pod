@@ -21,27 +21,19 @@ Legend:
 =item * Write Changes/Release notes (well... take it easy)
 
 =item * Add some of the suggested modules to the win32 distribution,
-update e.g. the perl gps distro
+update e.g. the perl gps distro, Tk::Stderr
 
 =item * a -public check on Win32, Linux and FreeBSD
-
-=item * perl/tk: E<quot>kompaktE<quot> in show_route_strnames
-funktioniert nicht richtig
-
-=item * try the inno setup on windows (if it does not work: backup the
-CHANGES text)
 
 =back
 
 =head1 Unsorted after Win98 session
 
- * It would be nice to include Tk::Stderr into the Windist
  * option editor does not fit into 800x600 screen --- using scrollable pane?
  * Drucken: if the PDF backend is chosen, then Druckeinstellungen have no effect. Maybe it
     would be nice to support at least some of them (legend, maybe b/w)
  * Overview-Map: always segfault
  * Archive::Zip-Teil fuer cgi/bbbike-data.zip schreiben. Test fuer dieses Skript schreiben.
- * Update -> E<quot>Daten-UpdateE<quot> benennen
 
 =head1 Perl/Tk version of bbbike
 

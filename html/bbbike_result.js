@@ -1,4 +1,4 @@
-// $Id: bbbike_result.js,v 1.17 2005/02/28 08:25:58 eserte Exp $
+// $Id: bbbike_result.js,v 1.18 2005/04/10 21:33:58 eserte Exp $
 // (c) 2003 Slaven Rezic. All rights reserved.
 
 function test_temp_blockings_set() {
@@ -118,11 +118,11 @@ function enable_size_details_buttons() {
     var imgtype = imgtypeelem.value;
     var can_size = true;
     var can_details = true;
-    if (imgtype && imgtype.match(/^(mapserver|berlinerstadtplan)/)) {
+    if (imgtype && imgtype.match(/^(berlinerstadtplan)/)) {
 	can_size = false;
 	can_details = false;
     }
-    if (imgtype && imgtype.match(/^(pdf|svg)/)) {
+    if (imgtype && imgtype.match(/^(mapserver|pdf|svg)/)) {
 	can_size = false;
     }
     var elems = frm.elements;

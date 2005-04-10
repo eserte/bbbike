@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.156 2005/03/27 22:45:50 eserte Exp eserte $
+# $Id: bbbike,v 3.157 2005/04/09 22:01:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -213,7 +213,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.156 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.157 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -14041,6 +14041,12 @@ sub show_route_strname {
 	# max angle meaning straight forward
 	use constant ROUTE_STRAIGHT_ANGLE => 30;
 
+	if ($do_route_strnames_compact) {
+	    @search_route = $net->compact_route(\@search_route,
+						-routestraightangle => ROUTE_STRAIGHT_ANGLE,
+					       );
+	}	    
+
 	my $ges_entf = 0;
 	my($next_entf, $ges_entf_s, $next_winkel, $next_richtung)
 	  = ("", "", undef, "");
@@ -14130,39 +14136,40 @@ sub show_route_strname {
 		}
 	    }
 
-	    if ($do_route_strnames_compact) {
-#		$aggr_dist += $entf if defined $entf;
-		if (!defined $aggr_dir) {
-		    $aggr_dir = $richtung;
-		}
-		if (!defined $aggr_begin_dist) {
-		    $aggr_begin_dist = $entf;
-		    $out_dist_add = 0;
-		} else {
-		    $out_dist_add += $entf;
-		}
-		if ($aggr_streets ne '') {
-		    $aggr_streets .= ", ";
-		}
-		$aggr_streets .= $str;
-		if (!defined $next_winkel ||
-		    $next_winkel < ROUTE_STRAIGHT_ANGLE) {
-		    next;
-		}
-		($out_dist, $out_dir, $out_str)
-		    = ($aggr_begin_dist > 0 ? M("nach")." ".m2km($aggr_begin_dist, 3, 2) : "",
-		       $aggr_dir,
-		       $aggr_streets);
-		($aggr_begin_dist, $aggr_streets) = (undef,"");
-		undef $aggr_dir;
-	    } else {
+##XXX del:
+# 	    if ($do_route_strnames_compact) {
+# #		$aggr_dist += $entf if defined $entf;
+# 		if (!defined $aggr_dir) {
+# 		    $aggr_dir = $richtung;
+# 		}
+# 		if (!defined $aggr_begin_dist) {
+# 		    $aggr_begin_dist = $entf;
+# 		    $out_dist_add = 0;
+# 		} else {
+# 		    $out_dist_add += $entf;
+# 		}
+# 		if ($aggr_streets ne '') {
+# 		    $aggr_streets .= ", ";
+# 		}
+# 		$aggr_streets .= $str;
+# 		if (!defined $next_winkel ||
+# 		    $next_winkel < ROUTE_STRAIGHT_ANGLE) {
+# 		    next;
+# 		}
+# 		($out_dist, $out_dir, $out_str)
+# 		    = ($aggr_begin_dist > 0 ? M("nach")." ".m2km($aggr_begin_dist, 3, 2) : "",
+# 		       $aggr_dir,
+# 		       $aggr_streets);
+# 		($aggr_begin_dist, $aggr_streets) = (undef,"");
+# 		undef $aggr_dir;
+# 	    } else {
 		($out_dist, $out_dir, $out_str)
 		    = ($entf_s, $richtung, $str);
 		if (defined $out_dist_add) {
 		    $out_dist += $out_dist_add;
 		    undef $out_dist_add;
 		}
-	    }
+#XXX del:	    }
 	    $out_total_dist = $ges_entf_s;
 
 	    $route_strname_lbox->add($i, -text => $out_dist);

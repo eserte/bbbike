@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.43 2005/04/07 20:42:12 eserte Exp $
+# $Id: Makefile,v 2.43 2005/04/07 20:42:12 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -70,6 +70,7 @@ TARGETS_DISABLED=	label relation_gps
 
 WRITEABLE=	chmod u+w,ugo+r
 READONLY=	chmod ugo+r,ugo-w
+READABLE=	chmod ugo+r
 
 ## XXX what is write, what is wrong?
 #COORDS_DATA_SORT_OPTS=	-f -t "|" -k 1,3
@@ -812,6 +813,7 @@ temp_blockings/bbbike-temp-blockings.yml: temp_blockings/bbbike-temp-blockings.p
 	    }\
 	' $> $@~
 	mv -f $@~ $@
+	@$(READABLE) $@
 
 $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blockings.yml
 	perl -MYAML -e '\

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.5 2005/04/05 22:55:20 eserte Exp $
+# $Id: strassennetz.t,v 1.6 2005/04/09 21:59:18 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -24,18 +24,23 @@ use BBBikeTest;
 BEGIN {
     if (!eval q{
 	use Test::More;
+	use List::Util qw(sum);
 	1;
     }) {
-	print "1..0 # skip: no Test module\n";
+	print "1..0 # skip: no Test::More and/or List::Util module\n";
 	exit;
     }
 }
 
-plan tests => 27;
+plan tests => 29;
 
 if (!GetOptions(get_std_opts(qw(xxx)))) {
     die "usage: $0 [-xxx]";
 }
+
+my $s		  = Strassen::Lazy->new("strassen");
+my $s_net	  = StrassenNetz->new($s);
+$s_net->make_net(UseCache => 1);
 
 my $qs            = Strassen::Lazy->new("qualitaet_s");
 my $comments_path = Strassen::Lazy->new("comments_path");
@@ -64,7 +69,6 @@ if ($do_xxx) {
     like(($net->get_point_comment($route, 1, undef))[0], qr/kopfstein/i);
 }
 
-XXX:
 {
     # CP;-Kommentar Buchholzer/Schönhauser Allee
     my $net = StrassenNetz->new($comments_path);
@@ -151,6 +155,19 @@ XXX:
 		or diag $comment;
 	}
     }
+}
+
+XXX:
+{
+    my $c1 = "4695,17648"; # Scharnweberstr.
+    my $c2 = "10524,655"; # Lichtenrader Damm
+    my($path) = $s_net->search($c1, $c2);
+    my(@route) = $s_net->route_to_name($path);
+    my $dist1 = int sum map { $_->[StrassenNetz::ROUTE_DIST] } @route;
+    my(@compact_route) = $s_net->compact_route(\@route);
+    my $dist2 = int sum map { $_->[StrassenNetz::ROUTE_DIST] } @compact_route;
+    is($dist1, $dist2, "Distance the same after compaction");
+    cmp_ok(scalar(@compact_route), "<", scalar(@route), "Actually less hops in compacted route");
 }
 
 __END__

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetzHeavy.pm,v 1.19 2005/03/06 11:15:15 eserte Exp $
+# $Id: StrassenNetzHeavy.pm,v 1.20 2005/04/09 21:59:27 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -808,6 +808,34 @@ sub dump_search_nodes {
 	printf STDERR "f=%d g=%d\tX; %s %s\n",
 	    $def->[StrassenNetz::DIST()], $def->[StrassenNetz::HEURISTIC_DIST()], $def->[StrassenNetz::PREDECESSOR()], $coord;
     }
+}
+
+# $route_with_name is the result of route_to_name
+sub compact_route {
+    my($self, $route_with_name, %args) = @_;
+    my $route_straight_angle = delete $args{-routestraightangle};
+    if (!defined $route_straight_angle) {
+	$route_straight_angle = 30;
+    }
+    die "Unknown arguments: " . join(" ", %args) if keys %args;
+    return if !@$route_with_name;
+    require Storable;
+    my @res = Storable::dclone($route_with_name->[0]);
+    for my $i (1 .. $#$route_with_name) {
+	my $this = $route_with_name->[$i];
+	my $last = $res[-1];
+	if ($last->[ROUTE_ANGLE] < $route_straight_angle) {
+	    $last->[ROUTE_NAME] .= ", " . $this->[ROUTE_NAME];
+	    $last->[ROUTE_DIST] += $this->[ROUTE_DIST];
+	    $last->[ROUTE_ANGLE] = $this->[ROUTE_ANGLE];
+	    $last->[ROUTE_DIR] = $this->[ROUTE_DIR];
+	    $last->[ROUTE_ARRAYINX][1] = $this->[ROUTE_ARRAYINX][1];
+	    # combine ROUTE_EXTRA?
+	} else {
+	    push @res, Storable::dclone($this);
+	}
+    }
+    @res;
 }
 
 1;
