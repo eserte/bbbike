@@ -302,3 +302,5 @@ port/lsm/mklsm.pl
 port/lsm/lsm.txt
 port/ipk/mkipk.pl
 port/MetaPort.pm
+port/debian/Makefile
+port/debian/control.tpl
