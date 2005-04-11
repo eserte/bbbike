@@ -1046,9 +1046,9 @@ EOF
 userdel	q4 90062,-33160 90271,-33398
 EOF
      },
-     { from  => 1106780400, # 2005-01-27 00:00
-       until => 1113256800, # 2005-04-12 00:00
-       text  => 'L 302; (Schöneicher Str.); OL Schöneiche, Dorfaue und Rüdersdorfer Str. Baustellensicherung halbseitig gesperrt; Einbahnstraße 28.01.2005-11.04.2005',
+     { from  => 1113170400, # 2005-04-11 00:00
+       until => 1135983600, # 2005-12-31 00:00
+       text  => 'L 302; (Schöneicher Str.); OL Schöneiche, Dorfaue und Rüdersdorfer Str. Kanal- und Straßenbau Vollsperrung 12.04.2005-30.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 31221,8312 30688,8432
@@ -1673,6 +1673,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 35178,-41015 40398,-40989
+EOF
+     },
+     { from  => 1113256800, # 2005-04-12 00:00
+       until => 1113688800, # 2005-04-17 00:00
+       text  => 'L 30; (Bernauer Str.); OL Altlandsberg zw. Strausberger Str. u. Buchholzer Str. Kanalarbeiten Vollsperrung 13.04.2005-16.04.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 32665,17841 33589,15778
+EOF
+     },
+     { from  => 1113084000, # 2005-04-10 00:00
+       until => 1114812000, # 2005-04-30 00:00
+       text  => 'L 59; (Bormannstr.); OL Bad Liebenwerda Kanalneubau Vollsperrung 11.04.2005-29.04.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 12571,-99519 12788,-100207
 EOF
      },
     );

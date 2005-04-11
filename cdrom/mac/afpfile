@@ -1,0 +1,19 @@
+# Example filename mapping file
+#
+# EXTN   XLate   CREATOR   TYPE     Comment
+.tif     Raw     '8BIM'    'TIFF'   "Photoshop TIFF image"
+.tiff    Raw     '8BIM'    'TIFF'   "Photoshop TIFF image"
+.gif     Raw     '8BIM'    'GIFf'   "GIF image"
+.jpg     Raw     '8BIM'    'JPEG'   "JPEG image"
+.jpeg    Raw     '8BIM'    'JPEG'   "JPEG image"
+.hqx     Ascii   'BnHq'    'TEXT'   "BinHex file"
+.doc     Raw     'MSWD'    'WDBN'   "Word file"
+.mov     Raw     'TVOD'    'MooV'   "QuickTime Movie"
+.pl	 Ascii   'McPL'    'TEXT'   "Perl script"
+.pm      Ascii   'McPL'    'TEXT'   "Perl module"
+.htm     Ascii   'MOSS'    'HTML'   "HyperText Markup Language file"
+.html    Ascii   'MOSS'    'HTML'   "HyperText Markup Language file"
+.txt     Ascii   'ttxt'    'TEXT'   "SimpleText file"
+#.pod    Ascii   'Suck'    'TEXT'   "Perl POD" # (S is Mac Sigma!!!!)
+.cgi     Ascii   'MrPL'    'APPL'   "CGI script"
+*        Ascii   'ttxt'    'TEXT'   "Text file"

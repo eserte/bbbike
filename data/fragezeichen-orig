@@ -39,7 +39,7 @@ Linienstr.: Fahrradstraße geplant (nach der Sanierung)	? 9281,13374 9607,13507 9
 #
 #: section Straßen in Planung vvv
 Mauerpark: unter Umständen wird ein Streifen des Mauerparkweges asphaltiert; der Weg wird Teil von Berlin-Usedom	? 10333,14983 10238,15316 10122,15647
-Schulzendorfer Str.: laut Tagesspiegel wird in Zukunft hier das Kopfsteinpflaster durch Asphalt ersetzt	? -596,23009 -862,22946 -1484,22799
+Schulzendorfer Str.: laut Tagesspiegel wird in Zukunft hier das Kopfsteinpflaster durch Asphalt ersetzt	? -596,23009 -862,22946 -1254,22853 -1484,22799
 Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
 Uferweg an der Kongreßhalle: laut Tsp im Frühjahr 2005 fertig	?::inwork 7753,12578
 Alsensteg laut Tsp im Sommer 2005, laut Mopo im Frühjahr 2005 fertig	?::inwork 8228,12964 8206,13012 8256,13009
@@ -51,8 +51,9 @@ Autotunnel wird im Frühjahr 2005 zugeschüttet	?::inwork 5652,11004 5716,10978 58
 #: section ^^^
 #
 #: section ignorieren vvv
-# Hier kommen die Strecken herein, die nicht bei einer
+# Hier kommen die Fragezeichen-Strecken herein, die nicht bei einer
 # erweiterten Suche aufgenommen werden sollen.
+Bizetstr.: relativer starker Verkehr, +1 eintragen? Linksabbiegen in die Indira-Gandhi-Str. möglich? 	? 13423,15702 13470,15762 14063,15976 14550,16161
 Potsdam, Lennestr. - Ökonomieweg: asphaltiert, durch Park Sanssouci, der nachts geschlossen wird	? -14634,-1343 -14856,-1223 -14859,-1142
 Sanssouci, Am Grünen Gitter: asphaltiert, nachts geschlossen	? -13857,-1040 -14153,-1135 -14182,-995
 Sanssouci, Ökonomieweg: nachts geschlossen, wie geht es am Neuen Palais weiter?	? -14182,-995 -14410,-1039 -14612,-1117 -14859,-1142 -15553,-1139 -15651,-1137 -15771,-1070
@@ -236,7 +237,6 @@ B1, Zeppelinstr.: Radweg vorhanden? (wahrscheinlich!)	? -14859,-2384 -15474,-313
 Am Neuen Palais: Radweg vorhanden?	? -15764,-1710 -15799,-1352
 B273: hier auch Radweg?	? -14737,300 -14859,421 -15527,795 -16640,1304 -16894,1485
 Leipziger Str., Potsdam: teilweise Suggestivstreifen vorhanden?	? -12431,-2096 -12716,-2238 -12780,-2410 -13075,-2901
-Heinrich-Mann-Allee.: Radweg vorhanden? wie weit?	? -12431,-2096 -11781,-2729 -11667,-3047 -11153,-3534 -11022,-3662 -10811,-3874 -10746,-4024 -9975,-5578 -9779,-6007
 Bernau - Zepernick: teilweise (schlechte) Radwege, wo genau?	? 22178,30343 21872,30139 21561,30131 21172,29984 21085,29942 20499,29310 20475,28650 20472,28570 20017,28297 19475,27877
 Stolzenhagen - Kreuzbruch: Qualität?	? 11997,41511 10934,44311 10485,45287 9968,45418
 Basdorf - Bernauer Heide: passierbar (Bahnstrecke), Qualität, Kfz-los?	? 12887,36543 13723,36178
@@ -495,7 +495,6 @@ Grünstr.: Qualität? für Autofahrer gesperrt?	? 22111,4562 22162,4546 22312,4593
 Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut	?::inwork 31000,61437 30784,60950 30778,60221 30671,59984 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
 Zichow-Lindenwegsiedlung: Qualität?	? 54500,87934 51992,88068
 Greifenhagener Str.: Brücke tatsächlich nur für Fußgänger/Radfahrer offen?	? 11162,15903 11190,15950
-Laubenheimer Str.: Qualität laut ADFC-Karte gut	? 4317,7069 4439,6958 4482,6866 4503,6822 4528,6711
 Parsteiner Ring: Qualität laut ADFC-Karte gut	? 22406,16309 22428,16462 22321,16553 22250,16468 22215,16343
 Glambecker Ring: Qualität laut ADFC-Karte gut	? 21824,16506 21885,16494 22187,16437 22278,16590 22050,16781 21892,16841
 Parsteiner Ring - Glambecker Ring: Verbindung existiert laut ADFC-Karte	? 22321,16553 22278,16590
@@ -603,3 +602,7 @@ Schwendenerstr.: Qualität?	? 3426,5292 3324,5207 3072,5062 2906,4940 2762,4713
 Kaiserswerther Str.: Qualität?	? 2762,4713 2545,4565 2461,4556
 Antonstr.: Qualität?	? 7414,15463 7744,15831
 Paplitzer Str.: Qualität? Zwischen Goltzstr. und Kirchbachstr. Einbahnstraße auch für Radfahrer? Verbindung zum Mauerweg vorhanden?	? 11063,-2025 11003,-2434 10942,-2632 10707,-3109 10631,-3215
+#: XXX von anonym eingetragen: Spielstraße:
+Am Irissee: Qualität?	? 11000,3115 11143,3246 11114,3360
+Gürtelstr.: Einbahnstraße auch für Radfahrer?	?; 13423,15702 13332,15765
+Varnhagenstr. - Wisbyer Str.: Linksabbiegen wegen der Straßenbahntrasse möglich?	? 11680,16151 11807,16340 11727,16358

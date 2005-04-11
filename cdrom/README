@@ -1,0 +1,20 @@
+Erstellung der CD-ROM für die Diplomarbeit (bei Onlineoffice). Alle
+Aktionen aus dem cdrom-Verzeichnis von bbbike ausführen.
+
+Zuerst ein altes CDROM-Verzeichnis löschen:
+
+	make clean
+
+Auf der FreeBSD-Maschine ausführen:
+
+	./cdrom.pl -dip -latexrebuild
+
+Auf der Linux-Maschine ausführen
+
+	./cdrom.pl -dip
+
+Dann Makefile ausführen (auch unter Linux):
+
+	make image
+	make checkimage # zum Testen des Images... ab jetzt als root!
+	make cdrom

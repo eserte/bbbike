@@ -1,0 +1,5 @@
+[autorun]
+icon = BBBike\images\srtbike.ico
+;open = index.html
+shell\readme\command = notepad.exe README.txt
+shell\readme = Manuelle Installation

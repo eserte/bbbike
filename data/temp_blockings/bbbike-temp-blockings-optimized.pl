@@ -1,95 +1,7 @@
 @temp_blocking = ();
-$#temp_blocking = 43;
+$#temp_blocking = 119;
 push @temp_blocking,
 (
-       {
-         'until' => 1113170400,
-         'text' => 'Turmstr. (Mitte) in beiden Richtungen zwischen Gotzkowskystr. und Stromstr. Veranstaltung, Straße vollständig gesperrt (bis 10.04.2005 ca. 24 Uhr)',
-         'from' => 1112991869,
-         'data' => 'userdel	q4 6113,13313 6247,13304
-userdel	q4 5723,13346 5844,13334
-userdel	q4 5723,13346 5565,13370
-userdel	q4 5964,13324 5844,13334
-userdel	q4 5388,13398 5565,13370
-userdel	q4 6113,13313 5964,13324
-',
-         'type' => 'handicap'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'until' => 1117231200,
          'text' => 'K 6413; (Wriezener Straße); OL Buckow, zw. Weinbergsweg u. Ringstr. Kanal- u. Straßenbau Vollsperrung 17.01.2005-27.05.2005 ',
@@ -146,9 +58,9 @@ userdel	q4 49039,44131 49691,43812
        undef,
        undef,
        {
-         'until' => 1113256800,
-         'text' => 'L 302; (Schöneicher Str.); OL Schöneiche, Dorfaue und Rüdersdorfer Str. Baustellensicherung halbseitig gesperrt; Einbahnstraße 28.01.2005-11.04.2005',
-         'from' => 1106780400,
+         'until' => 1135983600,
+         'text' => 'L 302; (Schöneicher Str.); OL Schöneiche, Dorfaue und Rüdersdorfer Str. Kanal- und Straßenbau Vollsperrung 12.04.2005-30.12.2005 ',
+         'from' => 1113170400,
          'data' => 'userdel	q4 31221,8312 30688,8432
 ',
          'type' => 'handicap'
@@ -404,6 +316,22 @@ userdel	q4 22217,1108 22162,1067
          'data' => 'userdel	2 35178,-41015 40398,-40989
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1113688800,
+         'text' => 'L 30; (Bernauer Str.); OL Altlandsberg zw. Strausberger Str. u. Buchholzer Str. Kanalarbeiten Vollsperrung 13.04.2005-16.04.2005 ',
+         'from' => 1113256800,
+         'data' => 'userdel	q4 32665,17841 33589,15778
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1114812000,
+         'text' => 'L 59; (Bormannstr.); OL Bad Liebenwerda Kanalneubau Vollsperrung 11.04.2005-29.04.2005 ',
+         'from' => 1113084000,
+         'data' => 'userdel	q4 12571,-99519 12788,-100207
+',
+         'type' => 'handicap'
        }
      
 );

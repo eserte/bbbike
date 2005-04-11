@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: db_impl.t,v 1.12 2004/12/18 10:44:10 eserte Exp eserte $
+# $Id: db_impl.t,v 1.13 2004/12/18 12:36:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001, 2002, 2003 Slaven Rezic. All rights reserved.

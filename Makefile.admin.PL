@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.28 2005/04/08 23:03:36 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.28 2005/04/08 23:03:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -171,6 +171,11 @@ ask-copy-to-cvs:
 
 do-copy-to-cvs:	MANIFEST.withcvs
 	perl "-MExtUtils::Manifest=manicopy,maniread" -e '$$fs=maniread(q{MANIFEST.withcvs}); while($$f=each %$$fs) { if (-e qq{${CVS_DIR}/$$f} && -M $$f >= -M qq{${CVS_DIR}/$$f}) { delete $$fs->{$$f} } } manicopy($$fs,q{${CVS_DIR}}, q{cp}); utime time,time,map { qq{${CVS_DIR}/$$_} } keys %$$fs'
+
+# Slow, aber gruendlich!
+do-copy-to-cvs-slow: MANIFEST.withcvs
+	perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread('MANIFEST.withcvs'),'${CVS_DIR}', 'cp');"
+
 
 diff-with-cvs:	MANIFEST.withcvs
 	makepatch --verbose \
