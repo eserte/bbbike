@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.157 2005/04/09 22:01:48 eserte Exp $
+# $Id: bbbike,v 3.157 2005/04/09 22:01:48 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -3181,7 +3181,7 @@ sub do_iconframe {
 		(-label => M"Aktive und zukünftige Sperrungen zeichnen",
 		 -command => sub {
 		     $show_active_temp_blockings = 1;
-		     active_temp_blockings($show_active_temp_blockings, -from => time);
+		     activate_temp_blockings($show_active_temp_blockings, -from => time);
 		 },
 		);
 	    $bdm->command

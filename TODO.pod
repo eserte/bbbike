@@ -20,10 +20,11 @@ Legend:
 
 =item * Write Changes/Release notes (well... take it easy)
 
-=item * Add some of the suggested modules to the win32 distribution,
-update e.g. the perl gps distro, Tk::Stderr
+=item * test GPS @ windows, especially multiple uploads
 
 =item * a -public check on Win32, Linux and FreeBSD
+
+=item * test Data update on linux
 
 =back
 
