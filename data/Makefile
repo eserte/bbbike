@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.44 2005/04/12 21:16:24 eserte Exp $
+# $Id: Makefile,v 2.45 2005/04/13 22:22:42 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -365,12 +365,16 @@ obst:	obst-orig
 
 radwege:	radwege-orig
 	-@$(WRITEABLE) $@
-	${MISCSRCDIR}/convert_radwege < radwege-orig | $(COMBINE_STREETS) - > radwege
+	${MISCSRCDIR}/convert_radwege < radwege-orig > radwege-orig~
+	cat radwege-orig~ | $(COMBINE_STREETS) - > $@ \
+	    || (rm -f $@; false)
+	rm -f radwege-orig~
 	-@$(READONLY) $@
 
 radwege_exact:	radwege-orig
 	-@$(WRITEABLE) $@
-	${MISCSRCDIR}/convert_radwege -exact < radwege-orig > radwege_exact
+	${MISCSRCDIR}/convert_radwege -exact < radwege-orig > $@ \
+	    || (rm -f $@; false)
 	-@$(READONLY) $@
 
 qualitaet_s:	qualitaet_s-orig

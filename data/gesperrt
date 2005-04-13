@@ -369,7 +369,6 @@ Kopenhagener Str. -> Schönhauser Allee: U-Bahnviadukt	3 10722,15921 10972,15895 
 Schönhauser Allee -> Kopenhagener Str.: U-Bahnviadukt	3 10963,15789 10972,15895 10722,15921
 Schönhauser Allee: U-Bahnviadukt	3 10949,15674 10929,15516 11055,15504
 Wisbyer Str. -> Stahlheimer Str.: Straßenbahn	3 11807,16340 11727,16358 11618,16183
-Varnhagenstr. -> Wisbyer Str.: Straßenbahn	3 11680,16151 11807,16340 11727,16358
 Wisbyer Str. -> Varnhagenstr.: Straßenbahn	3 11905,16318 11807,16340 11680,16151
 Dunckerstr. -> Wisbyer Str.: Straßenbahn	3 11939,16084 12026,16247 11905,16318
 Löwenberger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3 17477,11893 17436,11791 17750,11771
@@ -468,6 +467,8 @@ Möllendorffstr. -> Deutschmeisterstr.: Mittelstreifen mit Straßenbahn	3 15392,12
 Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3 15350,12270 15437,12225 15502,12367
 Müllerstr. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3 7043,15793 6914,15908 6809,15798
 Brüsseler Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3 6809,15798 6914,15908 6790,16018
+Bizetstr. -> Indira-Gandhi-Str.: Straßenbahntrasse	3 14296,16065 14550,16161 14499,16341
+Indira-Gandhi-Str. -> Bizetstr.: Straßenbahntrasse	3 14576,16069 14550,16161 14296,16065
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9008,12485 9112,12499 9323,12528
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9323,12528 9112,12499 9008,12485
 Mittelstr. -> Mittelstr.: An der US-Botschaft	3 9335,12442 9126,12413 9018,12400
@@ -520,6 +521,8 @@ tragen (Treppe)	0:30:-156 8021,12835
 tragen (Treppe)	0:30:35 8414,12854
 tragen (Treppe)	0:30:77 8445,12747
 tragen (zwei kurze Treppen)	0:30:3 9453,6415
+tragen (Treppe)	0:30:-124 1659,3226
+tragen (Treppe)	0:30:-114 1715,3257
 Drängelgitter (Görlitzer Park)	BNP:5:13 12686,10045
 Drängelgitter (Görlitzer Park)	BNP:5:22 12770,10210
 Drängelgitter (Görlitzer Park)	BNP:5:-153 12904,10141

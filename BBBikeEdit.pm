@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.84 2005/04/08 23:03:14 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.84 2005/04/08 23:03:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3455,32 +3455,45 @@ EOF
 		      return;
 		  }
 
+# XXX Folge von Debuggingstatements, weil ab und zu bbbike hier mit einem X11-Fehler abstürzt
+warn "XXX 1";
 		  my $err = `$FindBin::RealBin/miscsrc/check_bbbike_temp_blockings 2>&1`;
+warn "XXX 2";
 		  if ($? != 0) {
+warn "XXX 3";
 		      my $t = $main::top->Toplevel(-title => "check_bbbike_temp_blockings problems");
 		      my $txt = $t->Scrolled("ROText")->pack(-fill => "both",
 							     -expand => 1);
 		      $txt->insert("end", $err);
+warn "XXX 4";
 		  }
+warn "XXX 5";
 
 		  # Im Anschluss...
 		  if ($edit_after) {
+warn "XXX 6";
 		      if (fork == 0) {
+warn "XXX 7";
 			  exec("emacsclient", "-n", $pl_file);
 			  CORE::exit(1);
 		      }
 		      if (!$as_data) {
+warn "XXX 8";
 			  if (fork == 0) {
+warn "XXX 9";
 			      exec("emacsclient", "-n", $file);
 			      CORE::exit(1);
 			  }
 		      }
 		  }
+warn "XXX 10";
 		  if ($do_delete_blockings) {
 		      main::delete_user_dels(-force => 1);
 		  }
 
+warn "XXX 11";
 		  $t->destroy;
+warn "XXX 12";
 	      }),
 	     $t->Button
 	      (-text => M"Abbruch",
@@ -3490,8 +3503,11 @@ EOF
 	      -sticky => "ew",
 	     );
 
+warn "XXX 13";
     $pe->idletasks; # to fill the variable
+warn "XXX 14";
     $pe->xview(1);#XXX does not work???
+warn "XXX 15";
 }
 
 sub temp_blockings_editor_preserve_data {
@@ -3592,18 +3608,6 @@ sub temp_blockings_editor_replace {
 	$d->add("Label", -text => "? (index = $max_index, similarity factor = $max_similarity)")->pack;
 	$yesno = $d->Show;
     }
-
-#     my $yesno = $main::top->messageBox(-type => "YesNo",
-# 				       -message => <<EOF);
-# Replace the following record:
-# $s{"inner"}
-# with
-# $new_string
-# ? (index = $max_index, similarity factor = $max_similarity)
-# EOF
-#     if ($yesno !~ /yes/i) {
-# 	return;
-#     }
 
     if ($yesno eq M"Ja") {
 	ask_for_co($main::top, $pl_file);

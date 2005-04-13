@@ -405,6 +405,7 @@ Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10621,
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5229,10716 5351,10760 5484,10810
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15392,12135 15437,12225 15502,12367
 Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6790,16018 6914,15908 7043,15793
+Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14576,16069 14550,16161 14499,16341
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Neustädtische Kirchstr.: An der US-Botschaft	3nocross 9100,12627 9112,12499 9126,12413 9141,12320
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -463,6 +464,10 @@ tragen (Treppe)	0:30 8414,12854
 tragen (Treppe)	0:30 8445,12747
 #: add_fragezeichen: wo sind die Treppen genau?
 tragen (zwei kurze Treppen)	0:30 9453,6415
+#: by: Katharina Hoffmann: vvv
+tragen (Treppe)	0:30 1659,3226
+tragen (Treppe)	0:30 1715,3257
+#: by: ^^^
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)

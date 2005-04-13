@@ -280,7 +280,7 @@ Kieler Str.: Kopfsteinpflaster, OK	Q1 5124,5750 5050,5785
 Düppelstr.: Kopfsteinpflaster	Q2 5124,5750 4957,5542
 Königstr.: schlechtes Kopfsteinpflaster	Q3 525,3008 -141,2648 -267,2576
 Königsweg: Waldweg, mäßig bis OK	Q1 -3161,975 -4257,328 -5983,-648 -6395,-887 -6807,-1093 -6928,-1076
-Königsweg: Waldweg, mäßig bis OK	Q1 -1088,2134 -1303,2003 -1581,1850 -2618,1281
+Königsweg: Waldweg, mäßig bis OK	Q1 -1088,2134 -1303,2003 -1581,1850 -2043,1596 -2618,1281
 Sonntagstr.: Kopfsteinpflaster	Q2 14434,11465 14535,11327 14598,11245 14669,11152 14752,11041 14798,10985
 Simplonstr.: Kopfsteinpflaster	Q2 13954,11647 14032,11570 14049,11553 14180,11428 14252,11368 14327,11308 14367,11276 14394,11254 14459,11200 14530,11137 14597,11069 14677,11027 14752,11041
 Matkowskystr.: Kopfsteinpflaster	Q2 14530,11137 14509,11060
@@ -403,7 +403,7 @@ Alter Markt: Kopfsteinpflaster	Q2 22502,4528 22472,4572 22449,4605 22383,4703
 Lüdersstr.: Kopfsteinpflaster	Q2 22383,4703 22377,4836
 Freiheit: Kopfsteinpflaster	Q2 22377,4836 22196,4847
 Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10333,14983 10238,15316 10122,15647
-Norwegerstr.: mäßiger Asphalt	Q1 9967,16514 9987,16414 10033,16232
+Norwegerstr.: mäßiger Asphalt	Q1 9967,16514 9987,16414 10008,16330 10033,16232
 Gleimtunnel: Kopfsteinpflaster (noch)	Q2 10122,15647 9917,15613
 Gleimstr: Kopfsteinpflaster (noch)	Q2 9917,15613 9734,15579
 Nordufer: uneben	Q2 5618,14981 5937,14824 5991,14832
@@ -659,7 +659,6 @@ Wikingerufer: Kopfsteinpflaster	Q2 5369,12529 5391,12626 5376,12781 5372,12818 5
 Beerenstr.: Kopfsteinpflaster	Q2 82,3166 -765,3253 -1117,3317
 Jupiterstr.: Kopfsteinpflaster	Q2 14850,6546 15043,6799
 Heidekampweg: mäßig geeignet	Q2 15719,6218 15667,6648
-Baseler Str.: mäßig geeignet	Q2 3168,2838 3180,3035 3184,3413 3187,3499 3201,3968
 Malchower Str.: mäßig geeignet	Q2 12841,18157 13163,18149 13374,18134 13631,18041 13732,18026 13901,18124
 Grumbkowstr.: mäßig geeignet	Q2 11297,20686 11437,20341 11584,20058 11756,19694
 Schillerstr.: mäßig geeignet	Q2 10082,20518 10323,20578 10547,20644 10642,20698 10743,20764
@@ -779,7 +778,7 @@ Georg-Wilhelm-Str.: Kopfsteinpflaster, OK	Q1 2702,10006 2691,10047
 Holtzendorffstr.: mäßiges Kopfsteinpflaster	Q2 3049,11015 3082,11090
 Goslarer Ufer: Kopfsteinpflaster	Q2 4449,12667 4387,12914
 Goslarer Ufer: Kopfsteinpflaster, kann auf Gehweg umfahren werden	Q2 4301,13213 4195,13695
-Malmöer Str.: mäßiges Kopfsteinpflaster	Q2 10242,16422 10301,16186 10352,15992
+Malmöer Str.: mäßiges Kopfsteinpflaster	Q2 10242,16422 10254,16363 10301,16186 10352,15992
 Sonnenburger Str.: Kopfsteinpflaster	Q2 10564,15721 10550,15610
 Charlottenstr.: mäßiger Asphalt	Q1 9454,12558 9465,12460 9476,12359
 Mohrenstr.: mäßiger Asphalt	Q1; 8990,11719 9076,11743 9173,11770 9220,11781
@@ -1048,6 +1047,7 @@ Schwartzkopffstr.: Asphalt	Q0 8607,14253 8781,14357
 Pflugstr.: Asphalt	Q0 8781,14357 8662,14567
 Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
+Schönstedtstr. (Wedding): gutes Verbundsteinpflaster	Q1 8437,15894 8291,16033
 Büchnerweg: Kopfsteinpflaster	Q2 20207,3115 21048,3628
 Badener Str.: Beton	Q0 24051,9156 23467,9422 23140,9556
 Helmstedter Str.: Asphalt	Q0 5726,9029 5711,9349 5704,9557
@@ -1255,6 +1255,7 @@ Togostr.	Q0 6575,15831 6537,15858 6401,15956 6260,16081
 Togostr.	Q0 6260,16081 6119,16203
 Togostr.	Q0 6119,16203 5918,16389 5602,16718 5325,16915
 Kommandantenstr. (Lichterfelde): Asphalt	Q0 3025,2847 3050,3316 3060,3710
+Baseler Str.: Kopfsteinpflaster	Q2 3148,1888 3154,2467 3168,2838 3180,3035 3184,3413 3187,3499 3201,3968
 Juchaczweg: Asphalt	14117,3224 14214,3426 14391,3786
 Arnimallee: mäßiges Kopfsteinpflaster	Q2 3366,5654 3079,5411 2913,5294
 Rudolf-Schwarz-Str.: mäßiges Kopfsteinpflaster	Q2 13115,14293 13079,14320 12811,14526
@@ -1271,11 +1272,18 @@ Florian-Geyer-Str.: mäßiges Kopfsteinpflaster	Q2 19954,3887 20166,3590
 Schmitzweg: mäßiger Asphalt, Schlaglöcher	Q2 6004,19963 5920,19911 5763,19828 5849,19552 5914,19351
 Karl-Schrader-Str.: Asphalt	Q0 6837,9389 6862,9542
 Jägerweg: Kopfsteinpflaster	Q2 -1282,22489 -1225,22721 -1254,22853
-Bizetstr.: mäßiger Asphalt	Q1 13423,15702 13470,15762 14063,15976 14550,16161
+Bizetstr.: mäßiger Asphalt	Q1 13423,15702 13470,15762 14063,15976 14296,16065 14550,16161
 Varnhagenstr.: guter Asphalt	Q0 11614,16034 11680,16151 11807,16340
 Gartenstr.: mäßiges Kopfsteinpflaster	Q2 725,2702 821,2714 912,2965 950,3072
 Bogenstr.: schlechtes Kopfsteinpflaster	Q3 912,2965 967,2943 1017,2823
+(Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Kiesweg	Q2 821,2714 1017,2823 1126,2885 1262,2975 1453,3085 1659,3226 1687,3244 1715,3257 1977,3414 2271,3571
 Matternstr.: mäßiges Kopfsteinpflaster	Q2 13798,13003 13578,12903
 Elßholzstr.: mäßiges Kopfsteinpflaster	Q2 7201,9318 7192,9508 7185,9819
 Schwarzspechtweg	N -1743,19320 -2027,19326 -2152,19331 -2205,19331
 Schwarzspechtweg	N -2152,19331 -2158,19119
+Rüdnitzer Zeile: mäßiger Beton	Q1 3581,20008 3513,19961 3412,20105 3342,20050
+Johann-Sigismund-Str.: mäßiges Kopfsteinpflaster	Q2 2898,9794 2938,9935 2963,10078
+Ueckermünder Str.: Asphalt	Q0 10008,16330
+Am Rohrgarten: geteert	Q0 -2127,1760 -1973,1833 -1474,2073
+Quendelsteig: gut befahrbares Verbundsteinpflaster	Q1 -2165,1862 -2003,1913
+Himbeersteig: gut befahrbares Verbundsteinpflaster	Q1 -1973,1833 -2003,1913 -2064,2078
