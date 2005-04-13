@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.18 2005/03/24 00:58:36 eserte Exp eserte $
+# $Id: gesperrt-orig,v 4.19 2005/04/12 21:11:26 eserte Exp eserte $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraßen etc.)
@@ -87,6 +87,8 @@ Alt-Müggelheim	1 28317,891 28188,962 28119,1079 28218,1017 28317,891
 Prenzlauer Promenade	2 12008,19613 12040,19725 11907,19749
 Prenzlauer Promenade	2 12165,19600 12008,19613 11953,19363 12003,18896 11950,18529
 Prenzlauer Promenade	2 11927,19308 12020,19333
+#: XXX überprüfen, ob tatsächlich komplett gesperrt!
+Späthstr.	2 14457,5097 14705,5176
 Breite Str. Pankow	1 10240,18193 10281,18241 10562,18387 10609,18384
 Breite Str. Pankow	1 10680,18380 10669,18336 10327,18177 10240,18193
 Heinrich-Mann-Platz.	1 9590,18548 9527,18517 9469,18570 9475,18617 9526,18648 9588,18610 9590,18548
@@ -275,6 +277,7 @@ Wilseder Str.	1 6295,5132 6288,4906
 Dickhardtstr.	1 5817,7223 5828,6839 5778,6754 5604,6709 5533,6753
 Schmitzweg	1 5914,19351 5849,19552 5763,19828
 Barbarossaplatz	1 6731,9559 6746,9540 6743,9523 6728,9515 6704,9537 6712,9557 6731,9559
+Matternstr.	1 13798,13003 13578,12903
 #
 # Potsdam
 #
@@ -501,6 +504,7 @@ Schranke (Rütlistr.)	BNP:5 12565,9200
 Barriere (Falkstr.)	BNP:10 12177,7988
 Drängelgitter (Rochstr.)	BNP:5 10535,13006
 Barriere (Seydelstr.)	BNP:5 10370,11593
+Drängelgitter (Gleditschstr. - Elßholzstr.)	BNP:10 7158,9509
 #
 ############################################################################
 #

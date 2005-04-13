@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Update.pm,v 1.13 2005/03/24 01:02:49 eserte Exp $
+# $Id: Update.pm,v 1.15 2005/04/12 21:09:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2003 Slaven Rezic. All rights reserved.
@@ -90,6 +90,7 @@ sub update_http {
     $main::c = $main::c; # peacify -w
     $main::progress->Init(-dependents => $main::c,
 			  -label => "Updating via Internet");
+    my @errors;
     my $i = 0;
     foreach my $file (@files) {
 	my $src_file  = $root . "/" . $file;
@@ -140,11 +141,16 @@ sub update_http {
 	    rename $dest_file, $real_dest_file;
 	    unlink $tmp;
 	    print STDERR " loaded\n" if $main::verbose;
-	} elsif ($ua) {
-	    if ($res->is_error) {
-		print STDERR "\n", $res->as_string;
+	} else {
+	    if ($ua) {
+		if ($res->is_error) {
+		    print STDERR "\n", $res->as_string;
+		    push @errors, "Fehler beim Übertragen der Datei $src_file:" . $res->as_string;
+		} else {
+		    print STDERR " OK\n" if $main::verbose;
+		}
 	    } else {
-		print STDERR " OK\n" if $main::verbose;
+		push @errors, "Fehler beim Übertragen der Datei $src_file";
 	    }
 	}
 	last if $fatal;
@@ -152,6 +158,9 @@ sub update_http {
     }
     #main::finish_progress();
     $main::progress->Finish;
+    if (@errors) {
+	main::status_message(join("\n", @errors), "warn");
+    }
 }
 
 sub update_rsync {
@@ -267,7 +276,7 @@ sub bbbike_data_update {
 	if (-e "$rootdir/data/Makefile");
 
  TRY_RSYNC: {
-	if ($protocol eq 'rsync' || $protocol eq 'best') {
+	if ($protocol eq 'rsync') {
 	    eval {
 		local $SIG{__DIE__};
 		local $SIG{__WARN__};
@@ -287,7 +296,7 @@ sub bbbike_data_update {
 	}
     }
 
-    # assume http
+    # assume http (or "best")
     my(@files, %modified);
     if (open(MOD, "$rootdir/data/.modified")) {
 	while(<MOD>) {

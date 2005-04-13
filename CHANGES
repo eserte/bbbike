@@ -20,7 +20,7 @@ bbbike (ptk)
 - new shortcut for search: /
 - draw additional layers: now with an extra dialog for setting line width etc.
 - experimental support for .e00 data
-- updating data via internet now really works (XXX test it!)
+- updating data via internet now really works
 - nicer info window
 - nicer drawing of well-known cycle routes
 - pdflatex output uses a sans serif font
@@ -47,7 +47,7 @@ Misc
 - wapbbbike: get handset profile automatically if needed
 
 Install
-- Windows uses now the inno setup installer (XXX maybe)
+- Windows uses now the inno setup installer
 
 CGI
 - new forms for inputting data (missing streets, additional comments)

@@ -3,7 +3,6 @@ Boizenburger Str.: guter Asphalt (Q0)	? 22310,12829 22309,12350 22373,12273
 Verbindung zwischen Michelangelostr. und Hohenschönhausener Str. vorhanden? im Süden: ja, Feldweg	? 13838,15113 14125,14905 14574,14646
 Promenade am Teltowkanal: Qualität? durchgängig befahrbar?	? 6645,4254 6224,4307 6013,4327
 Rungiusstr: Kopfsteinpflaster?	? 13027,6168 13116,5689 13158,5490
-Neubau der Späthstr.: ist die neue Verkehrsführung am Autobahnknoten schon aktiv?	?? 14025,5319 14340,5393 14720,5490 14861,5449 14994,5193
 Weißwasserweg: Qualität? Als Abkürzung für Finckensteinallee/Ringstr. benutzbar?	? 2639,2989 2229,2898 2119,2790
 Europarc Dreilingen: Qualität? durchgängig befahrbar?	? -1525,1453 -3174,556 -3104,391
 Europarc Dreilingen: Qualität? durchgängig befahrbar?	? -3985,115 -4459,-157 -6147,-1125 -6395,-887
@@ -140,7 +139,7 @@ Aßmannstr.: Qualität für den abknickenden Teil (möglicherweise asphaltiert?); kö
 Charlotte-E-Pauly-Str.: Qualität?	? 25030,5307 25024,4833
 B101 bis Großbeeren: hier auch ein Radweg?	? 5394,-3053 4842,-4182 4547,-4951 4227,-5721
 Teltow: größtenteils auch Radweg, genauer erfassen	? -2477,-1717 -2073,-1525 -1668,-1709 -1453,-1715 -1303,-1758 -1143,-1759 -705,-1564 -282,-1184 465,-662 741,-584 925,-684 1346,-762
-Am Kanal, Potsdam: Radweg vorhanden?	? -12317,-1212 -12553,-1278 -12718,-1327 -12834,-1362
+Am Kanal, Potsdam: Radweg oder -spur vorhanden?	? -12553,-1278 -12317,-1212
 B1, Zeppelinstr.: Radweg vorhanden? (wahrscheinlich!)	? -14859,-2384 -15474,-3133 -15722,-3398
 Am Neuen Palais: Radweg vorhanden?	? -15764,-1710 -15799,-1352
 B273: hier auch Radweg?	? -14737,300 -14859,421 -15527,795 -16640,1304 -16894,1485
@@ -182,7 +181,7 @@ Prenzlau: Seeweg: Qualität?	? 39668,100787 39787,101031 39867,101104
 Potsdam, Burgstr.: Qualität?	? -12553,-1278 -12500,-1437 -12281,-1378 -12265,-1434
 Heiliger See, Westufer: Parkweg, Schiebestrecke, Treppen am Marmorpalais	? -12321,9 -12278,134 -12156,193 -12103,315 -12143,353 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
 Mauerweg am Teltowkanal: Qualität (laut "Berliner Umland" größtenteils gut geeigneter Radweg)?	? 15573,4122 14625,4881 14457,5097
-Mauerweg zwischen Späthstr. und Britzer Allee: laut "Berliner Umland" gut geeigneter Radweg	? 14720,5490 14659,5853 15131,5891
+Mauerweg zwischen Späthstr. und Britzer Allee: laut "Berliner Umland" gut geeigneter Radweg	? 14600,5450 14659,5853 15131,5891
 Leipe - Lübbenau: Waldweg, teilweise muss getragen werden	? 55335,-60336 53287,-59787 51925,-59900 51325,-59737 50962,-59112 50601,-59060
 Lübbenau - Lübben durch den Spreewald: Wegführung? Qualität?	? 46730,-58909 47050,-58625 47112,-58025 47562,-57700 47625,-57287 48462,-56487 49400,-55325 49512,-53925 50550,-54062 50612,-53612 48562,-53200 47237,-51750 46325,-51787 45812,-51650 45675,-51412 45786,-51125
 Unterspreewald, Schlepzig - Lübben: genaue Wegführung? Qualität?	? 44543,-41337 43587,-43237 43698,-43902 44087,-44687 44225,-45450 44625,-45337 44762,-45500 44662,-45650 44950,-45762 45075,-46075 44775,-46687 45237,-47987 45087,-48112 45200,-49100 44856,-51015
@@ -305,7 +304,7 @@ Fortsetzung der Stahnsdorfer Str.: laut "mobil-potsdam.de" Waldweg. Geht es nach
 Goethestr./Fontanestr.: laut "mobil-potsdam.de" asphaltiert	? -9868,-1425 -9775,-1431 -9506,-1431 -9215,-1431 -9219,-1590 -9224,-1727
 Geltow - Pirschheide am Templiner See: Laut "mobil-potsdam.de" überwiegend Waldweg mit kurzen asphaltierten Stellen	? -16912,-5690 -16558,-5727 -16323,-5706 -16072,-4894 -16010,-4509 -15886,-4339
 Am Templiner See zwischen Damm und R-Bhf. Charlottenhof: laut "mobil-potsdam.de" unterschiedliche Qualität ("Promenade", betoniert, Waldweg)	? -15886,-4339 -15750,-4196 -15765,-3990 -15431,-3618 -15340,-3406 -15203,-2931 -14912,-2884 -14734,-2471 -14859,-2384
-Laut "mobil-potsdam.de" Durchfahrt am rechten Ufer der Alten Fahrt möglich, unterschiedliche Qualität. Von der Inselbrücke aus gesehen: Parkweg, Q1	? -12719,-1661 -12600,-1706 -12437,-1506 -12265,-1434
+Uferweg - Mercure-Hotel: Zugang unter der Langen Brücke möglich?	? -12600,-1706 -12656,-1820 -12719,-1661
 Alte Potsdamer Landstraße: Durchfahrt möglich (Friedhof?)? Qualität (Waldweg?)?	? -4075,-1837 -6084,-1934
 S-Bahnhof Griebnitzsee - Uferweg am Griebnitzsee: laut "mobil-potsdam.de" eine Treppe	? -8063,-1651 -8250,-1503
 Behlertstr.: Einbahnstraße in östlicher Richtung?	? -12868,-493 -12607,-434 -12362,-370
@@ -502,6 +501,8 @@ Am Irissee: Qualität?	? 11000,3115 11143,3246 11114,3360
 Gürtelstr.: Einbahnstraße auch für Radfahrer?	?; 13423,15702 13332,15765
 Varnhagenstr. - Wisbyer Str.: Linksabbiegen wegen der Straßenbahntrasse möglich?	? 11680,16151 11807,16340 11727,16358
 S-Bhf. Zehlendorf - Seehofstr. entlang der S-Bahn: laut ADFC-Karte ungeeignet für Radfahrer, aber dennoch als Radroute gekennzeichnet	? 821,2714 1017,2823 1126,2885
+Matternstr.: Einbahnstraße auch für Radfahrer?	?; 13798,13003 13578,12903
+Entlang der Havel zwischen Bärbelstr. und Am Krähenberg: Durchfahrt für Radfahrer möglich? Qualität (laut ADFC-Karte größtenteils "mäßig" geeignet)? Stören Fußgänger? Geht es in Richtung Norden weiter am Fluss entlang?	? -2064,18667 -2192,18756 -2266,18941 -2251,19047 -2201,19218 -2205,19331 -2244,19547 -2228,19658 -2215,19817 -2149,19966 -2144,20100
 wirklich?	? 9215,3599
 Wirklich?	? -3755,17090
 geplante Ampel in der Johannisthaler	? 14196,2876

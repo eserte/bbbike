@@ -117,6 +117,13 @@ Optional eins oder beides zusammen.
 
 =item * (M2)
 
+To speed up the update, just upload .modified from server
+first and compare the dates exclusively by using .modified!
+
+=item * (H1)
+
+(Rsync und CVS hat Zeit...)
+
 Update E<uuml>ber das Internet: rsync-UnterstE<uuml>tzung und die
 Alternative CVS testen. rsync ist vielleicht nicht so gut, weil ein
 rsyncd irgendwo benötigt wird und rsyncd nicht das Sicherste der Welt

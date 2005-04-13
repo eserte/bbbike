@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.157 2005/04/09 22:01:48 eserte Exp eserte $
+# $Id: bbbike,v 3.158 2005/04/12 21:10:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -213,7 +213,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.157 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.158 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -3843,26 +3843,26 @@ sub do_iconframe {
     $opbm->checkbutton(-label => M"Wortreich (verbose)",
 		       -variable => \$verbose,
 		       -command => \&set_verbose);
-    if ($advanced) {
-	$opbm->command
-	    (-label => M"Daten-Update über das Internet",
-	     -command => sub {
-		 if ($devel_host && $ENV{HOST} !~ /^devpc01/) {
-		     status_message("Kein Update auf cabulja/vran/cvrsnica/spiff möglich!", "die");
-		     die;
-		 }
-		 require Tk::Dialog;
-		 if ($top->Dialog
-		     (-title => M"Update",
-		      -text => M("Soll das Update gestartet werden?\nJe nach Internet-Verbindung und Stand der Daten\nkann das Update 5 bis 10 Minuten dauern.\nAlternativ können die Dateien als ZIP-Datei von\n$BBBike::BBBIKE_UPDATE_DATA_CGI\ngeholt und in das Verzeichnis\n$FindBin::RealBin/data\nausgepackt werden.\n"),
-		      -bitmap => 'question',
-		      -buttons => [M"Ja", M"Nein"])->Show eq M"Ja") {
-		     require Update;
-		     Update::bbbike_data_update();
-		 }
-	     },
-	    );
-    }
+
+    $opbm->command
+	(-label => M"Daten-Update über das Internet",
+	 -command => sub {
+	     if ($devel_host && $ENV{HOST} !~ /^devpc01/) {
+		 status_message("Kein Update auf cabulja/vran/cvrsnica/spiff möglich!", "die");
+		 die;
+	     }
+	     require Tk::Dialog;
+	     if ($top->Dialog
+		 (-title => M"Update",
+		  -text => M("Soll das Update gestartet werden?\nJe nach Internet-Verbindung und Stand der Daten kann das Update 5 bis 10 Minuten dauern. Alternativ können die Dateien als ZIP-Datei von\n$BBBike::BBBIKE_UPDATE_DATA_CGI\ngeholt und in das Verzeichnis\n$FindBin::RealBin/data\nausgepackt werden.\n"),
+		  -bitmap => 'question',
+		  -buttons => [M"Ja", M"Nein"])->Show eq M"Ja") {
+		 require Update;
+		 Update::bbbike_data_update();
+	     }
+	 },
+	);
+
     $opbm->command(-label => M"Alarmliste",
 		   -command => sub {
 		       require BBBikeAlarm;

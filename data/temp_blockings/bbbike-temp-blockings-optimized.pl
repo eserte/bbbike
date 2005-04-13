@@ -332,6 +332,39 @@ userdel	q4 22217,1108 22162,1067
          'data' => 'userdel	q4 12571,-99519 12788,-100207
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1117490400,
+         'text' => 'Zimmermannstr. (Marzahn) Richtung Osten zwischen Köpenicker Str. und Lindenstr. Baustelle, Fahrtrichtung gesperrt (bis 30.05.2005)',
+         'from' => 1113336339,
+         'data' => 'userdel	q4; 21093,9179 21351,9066
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1115244000,
+         'text' => 'B 101; (Luckenwalder-, Berliner Str.); OD Trebbin, Knoten Beelitzer Str. Straßenbauarbeiten Vollsperrung 01.04.2005-04.05.2005 ',
+         'from' => 1112220000,
+         'data' => 'userdel	q4 -1887,-21501 -1992,-21489
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1119045600,
+         'text' => 'L 141; (B 5-Neustadt); zw. B 5 und Dreetz Deckenerneuerung Vollsperrung 18.04.2005-17.06.2005 ',
+         'from' => 1113688800,
+         'data' => 'userdel	2 -50303,42160 -50198,42376
+userdel	2 -50303,42160 -50496,42007
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1130536800,
+         'text' => 'L 14; (Großderschau- Bahnhof Zernitz); Brücke über die Neue Jägelitz bei Zernitz Brückensanierung Vollsperrung 19.04.2005-28.10.2005 ',
+         'from' => 1113775200,
+         'data' => 'userdel	2 -63163,51264 -63375,50856
+',
+         'type' => 'gesperrt'
        }
      
 );
