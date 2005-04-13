@@ -145,7 +145,16 @@ sub update_http {
 	    if ($ua) {
 		if ($res->is_error) {
 		    print STDERR "\n", $res->as_string;
-		    push @errors, "Fehler beim Übertragen der Datei $src_file:" . $res->as_string;
+		    my $text = $res->error_as_HTML;
+		    if (eval {
+			require HTML::FormatText;
+			require HTML::TreeBuilder;
+			1;
+		    }) {
+			my $tree = HTML::TreeBuilder->new->parse($text);
+			$text = HTML::FormatText->new(leftmargin => 0, rightmargin => 50)->format($tree);
+		    }
+		    push @errors, "Fehler beim Übertragen der Datei $src_file: " . $text;
 		} else {
 		    print STDERR " OK\n" if $main::verbose;
 		}
