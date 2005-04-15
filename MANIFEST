@@ -137,6 +137,7 @@ Strassen/Stat.pm
 Strassen/Lazy.pm
 Strassen/Pg.pm
 Strassen/WaypointPlus.pm
+Strassen/Gardown.pm
 Telefonbuch.pm
 Telefonbuch98.pm
 Telefonbuch99.pm
@@ -723,7 +724,7 @@ GPS/Gardown.pm
 GPS/G7toWin_ASCII.pm
 GPS/G7toWin_2.pm
 GPS/Unknown1.pm
-GPS/Unknown2.pm
+GPS/NMEA.pm
 GPS/DirectGarmin.pm
 GPS/GpsmanData.pm
 GPS/Util.pm
