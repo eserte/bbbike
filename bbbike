@@ -151,7 +151,7 @@ use Route;
 ## DEBUG_END
 use Karte;
 use Hooks;
-use VectorUtil qw(get_polygon_center);
+use VectorUtil qw(get_polygon_center point_in_polygon);
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before locale");}
 ## DEBUG_END
@@ -5393,9 +5393,20 @@ sub generate_plot_functions {
 			}
 			$name =~ s/\cK/\n/g; # vert tab -> newline
 			($mx,$my) = get_polygon_center(@coordlist);
-			if (!defined $mx) {
-			    ($mx,$my) = @coordlist[0,1];
+			if (!defined $mx || ! do {
+			    my @zipped_coordlist;
+			    for(my $i = 0; $i < $#coordlist; $i+=2) {
+				push @zipped_coordlist, [$coordlist[$i], $coordlist[$i+1]];
+			    }
+			    point_in_polygon([$mx,$my], \@zipped_coordlist);
+			}) {
+			    my $middle = int $#coordlist/2;
+			    if ($middle%2 != 0) {
+				$middle--;
+			    }
+			    ($mx,$my) = @coordlist[$middle,$middle+1];
 			}
+
 			my $abk_fg = $abk;
 			if ($abk eq 'v') {
 			    $abk_fg = 'v-fg';
@@ -7826,6 +7837,7 @@ sub load_save_route {
 	      (-defaultextension => ".$ext") :
 	      (-filetypes => [[M"Route-Dateien", '.' . $bbbike_route_ext],
 			      [M"GPS-Tracks", ['.tracks','.trk']],
+			      [M"G7toWin", ['.g7t', '.G7T']],
 			      [M"MPS-Tracks", '.mps'],
 			      [M"Alle Dateien",  '*']]),
 	     ));
@@ -10843,7 +10855,9 @@ sub enterroute {
 	$routenr = $1;
 	if ($routenr eq "") { warn "@tags" } # XXXXX
     } else {
-	warn "No Routenummer in @tags?!";
+	if (!grep { $_ eq "viaflag" } @tags) {
+	    warn "Unexpected: no route number in <@tags>";
+	}
 	return;
     }
     my @l;
@@ -11642,14 +11656,17 @@ sub addpoint_xy {
     my $v_rel;
     if ($bikepwr && $etappe) {
 	my $wind; # Berechnung des Gegenwindes
-	if ($hw >= 2) {
-	    $wind = -$wind_v;
-	} elsif ($hw > 0) { # unsicher beim Crosswind
-	    $wind = -$wind_v*0.7;
-	} elsif ($hw > -2) {
-	    $wind = $wind_v*0.7;
-	} else {
-	    $wind = $wind_v;
+	{
+	    local $^W = 0;
+	    if ($hw >= 2) {
+		$wind = -$wind_v;
+	    } elsif ($hw > 0) { # unsicher beim Crosswind
+		$wind = -$wind_v*0.7;
+	    } elsif ($hw > -2) {
+		$wind = $wind_v*0.7;
+	    } else {
+		$wind = $wind_v;
+	    }
 	}
 
 	# Verhältnis zwischen der möglichen Geschwindigkeit, die ohne
@@ -14239,18 +14256,18 @@ sub show_route_strname {
 			$do_route_strnames_sub->();
 		    });
 
-    if ($advanced) { # XXX funktioniert noch nicht richtig...
-	$f1->Checkbutton(-text => M"Kompakt",
-			 -variable => \$do_route_strnames_compact,
+    $f1->Checkbutton(-text => M"Kompakt",
+		     -variable => \$do_route_strnames_compact,
+		     -command => \&show_route_strname,
+		     -font => $font{'small'},
+		    )->pack(-side => 'left');
+    if ($advanced) { # XXX funktioniert noch nicht so schoen intuitiv...
+	$f1->Checkbutton(-text => M"Orte einbinden",
+			 -variable => \$do_route_strnames_orte,
 			 -command => \&show_route_strname,
 			 -font => $font{'small'},
 			)->pack(-side => 'left');
     }
-    $f1->Checkbutton(-text => M"Orte einbinden",
-		     -variable => \$do_route_strnames_orte,
-		     -command => \&show_route_strname,
-		     -font => $font{'small'},
-		    )->pack(-side => 'left');
     $f1->Checkbutton(-text => M"Kommentare",
 		     -variable => \$do_route_strnames_comments,
 		     -command => \&show_route_strname,
