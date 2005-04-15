@@ -110,6 +110,11 @@ sub new {
 	require Strassen::Gpsman;
 	return Strassen::Gpsman->new($filename, %args);
     }
+    if (defined $filename &&
+	$filename =~ /waypoint\.txt$/) {
+	require Strassen::WaypointPlus;
+	return Strassen::WaypointPlus->new($filename, %args);
+    }
 
     my(@filenames);
     if (defined $filename) {
