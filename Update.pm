@@ -89,13 +89,13 @@ sub update_http {
     }
     $main::c = $main::c; # peacify -w
     $main::progress->Init(-dependents => $main::c,
-			  -label => "Updating via Internet");
+			  -label => "Aktualisierung via Internet");
     my @errors;
     my $i = 0;
     foreach my $file (@files) {
 	my $src_file  = $root . "/" . $file;
 	$main::progress->Update($i++/$#files, # / help emacs
-				-label => "Updating: " . basename($src_file));
+				-label => "Aktualisiere " . basename($src_file));
 	my $dest_file = $dest . "/" . $file . "~";
 	my $real_dest_file = $dest . "/" . $file;
 	my $h;
@@ -114,18 +114,19 @@ sub update_http {
 	if ($main::verbose) {
 	    print STDERR "$src_file => $dest_file...";
 	}
-	my($res, $success, $fatal);
+	my($res, $success);
+	my $code;
 	if ($ua) {
 	    $res = $ua->request(new HTTP::Request('GET', $src_file, $h),
 				$dest_file);
+	    $code = $res->code;
 	    $success = $res->is_success;
-	    $fatal = $res->code >= 500;
 	} else {
 	    my(%res) = Http::get('url' => $src_file,
 				 %$h,
 				);
-	    $success = ($res{'error'} == 200);
-	    $fatal = $res{'error'} >= 500;
+	    $code = $res{'error'};
+	    $success = ($code == 200);
 	    if ($success) {
 		if (!open(OUT, ">$dest_file")) {
 		    $success = 0;
@@ -135,12 +136,15 @@ sub update_http {
 		}
 	    }
 	}
+	my $fatal = $code >= 500;
 	if ($success) {
 	    my $tmp = $dest_file . "~~";
 	    rename $real_dest_file, $tmp;
 	    rename $dest_file, $real_dest_file;
 	    unlink $tmp;
-	    print STDERR " loaded\n" if $main::verbose;
+	    if ($main::verbose) {
+		print STDERR " aktualisiert\n";
+	    }
 	} else {
 	    if ($ua) {
 		if ($res->is_error) {
@@ -156,7 +160,7 @@ sub update_http {
 		    }
 		    push @errors, "Fehler beim Übertragen der Datei $src_file: " . $text;
 		} else {
-		    print STDERR " OK\n" if $main::verbose;
+		    print STDERR " keine Änderung\n" if $main::verbose;
 		}
 	    } else {
 		push @errors, "Fehler beim Übertragen der Datei $src_file";
