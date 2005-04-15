@@ -136,6 +136,8 @@ Strassen/DB_File_Btree.pm
 Strassen/Stat.pm
 Strassen/Lazy.pm
 Strassen/Pg.pm
+Strassen/WaypointPlus.pm
+Strassen/Gardown.pm
 Telefonbuch.pm
 Telefonbuch98.pm
 Telefonbuch99.pm
@@ -205,6 +207,7 @@ data/handicap_l
 data/handicap_s
 data/hoehe
 data/housenumbers
+data/inaccessible_landstrassen
 data/inaccessible_strassen
 data/innerberliner_grenze
 data/kneipen
@@ -717,7 +720,9 @@ ESRI/Shapefile/Main.pm
 ESRI/t/shapefile.t
 ESRI/esri2bbd.pl
 GPS.pm
+GPS/Gardown.pm
 GPS/G7toWin_ASCII.pm
+GPS/G7toWin_2.pm
 GPS/Unknown1.pm
 GPS/Unknown2.pm
 GPS/DirectGarmin.pm
