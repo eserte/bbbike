@@ -1,6 +1,7 @@
 .check_*
 .create_fragezeichen
 .fragezeichen-*
+.modified
 .rsync_include
 .strassen.tmp
 ampeln.st
@@ -29,7 +30,11 @@ handicap_s.st
 hoehe.st
 housenumbers.st
 label.st
+landstrassen-cooked
+landstrassen-cooked.st
 landstrassen.st
+landstrassen2-cooked
+landstrassen2-cooked.st
 landstrassen2.st
 mount.st
 multi_bez_str.st
@@ -51,6 +56,8 @@ sbahn.st
 sbahnhof.st
 sbahnhof_bg.st
 sehenswuerdigkeit.st
+strassen-cooked
+strassen-cooked.st
 strassen.st
 ubahn.st
 ubahnhof.st
@@ -59,9 +66,3 @@ vorfahrt.st
 wasserstrassen.st
 wasserumland.st
 wasserumland2.st
-landstrassen-cooked
-landstrassen-cooked.st
-landstrassen2-cooked
-landstrassen2-cooked.st
-strassen-cooked
-strassen-cooked.st
