@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: NMEA.pm,v 1.1 2005/04/15 23:53:19 eserte Exp $
+# $Id: NMEA.pm,v 1.2 2005/04/15 23:58:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -12,7 +12,7 @@
 # WWW:  http://user.cs.tu-berlin.de/~eserte/
 #
 
-package GPS::Unknown2;
+package GPS::NMEA;
 require GPS;
 push @ISA, 'GPS';
 
