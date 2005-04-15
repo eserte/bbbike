@@ -26,7 +26,7 @@ sub convert_to_route {
     my($self, $file, %args) = @_;
 
     my($fh, $lines_ref) = $self->overread_trash($file, %args);
-    die "File $file does not match" unless $fh;
+    die "File $file is not a G7T file" unless $fh;
 
     require Karte::Polar;
     my $obj = $Karte::Polar::obj;
@@ -35,7 +35,7 @@ sub convert_to_route {
     my $check = sub {
 	my $line = shift;
 	chomp;
-	if (m|^W\s+(?:\w+)\s+([NS])(\d+)\s+([\d.]+)\s+([EW])(\d+)\s+([\d.]+)|) {
+	if (m{^(?:T|W\s+(?:\w+))\s+([NS])(\d+)\s+([\d.]+)\s+([EW])(\d+)\s+([\d.]+)}) {
 	    my $breite = $2;
 	    my $laenge = $5;
 
