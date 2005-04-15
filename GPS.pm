@@ -19,7 +19,7 @@ package GPS;
 use strict;
 use vars qw(@gps);
 
-@gps = qw(GpsmanData Unknown1 Unknown2 G7toWin_ASCII Ovl WaypointPlus MPS);
+@gps = qw(GpsmanData Unknown1 Unknown2 G7toWin_2 G7toWin_ASCII Ovl WaypointPlus MPS Gardown);
 
 sub new { bless {}, shift }
 
