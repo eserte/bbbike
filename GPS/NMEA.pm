@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Unknown2.pm,v 1.4 2005/04/05 22:36:56 eserte Exp $
+# $Id: NMEA.pm,v 1.1 2005/04/15 23:53:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
