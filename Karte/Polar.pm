@@ -171,7 +171,18 @@ sub dms_string2ddd {
 	my($sgn) = $1 eq 'N' || $1 eq 'E' ? +1 : -1;
 	dms2ddd($sgn*$2, $3, $4);
     } else {
-	die "Can't parse $s";
+	die "Can't parse the dms styled string <$s>";
+    }
+}
+
+# input: a dmm styled string e.g. N51 12.1234
+sub dmm_string2ddd {
+    my($s) = @_;
+    if ($s =~ /([NSEW])(\d+)\s([\d\.]+)/) {
+	my($sgn) = $1 eq 'N' || $1 eq 'E' ? +1 : -1;
+	dmm2ddd($sgn*$2, $3);
+    } else {
+	die "Can't parse the dms styled string <$s>";
     }
 }
 
