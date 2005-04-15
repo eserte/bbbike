@@ -147,6 +147,11 @@ starting and an end date).
 The next block or line is unsure information. The I<why> text
 specifies an additional comment. An alias for C<unsure:> is C<XXX>.
 
+=item C<alias: I<name>>
+
+Define another known name for the next line. For now, only one alias
+is allowed.
+
 =item C<section: I<section name>>
 
 The next block is part of a named section. Sections may be nested.
