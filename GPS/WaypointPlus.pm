@@ -25,26 +25,54 @@ sub magics { ('^Datum,') }
 
 sub convert_to_route {
     my($self, $file, %args) = @_;
+    my $res = $self->parse($file, %args);
+    map { [@{$_}[0,1]] } @{ $res->{points } };
+}
+
+sub parse {
+    my($self, $file, %args) = @_;
 
     require Karte::Polar;
     my $obj = $Karte::Polar::obj;
 
     my @res;
+    my $type;
     open(FH, $file) or die "Can't open $file: $!";
     while(<FH>) {
-	if (/^TP,D,/) {
+	if (/^([WT])P,(D|DMX),/) {
+	    $type = $1;
+	    my $ddd = $2;
+	    my $start_inx = $type eq 'W' ? 3 : 2;
+
 	    chomp;
 	    my(@l) = split /,/;
-	    my($x,$y) = $obj->map2standard($l[3], $l[2]);
+
+	    my($desc, $long, $lat);
+	    if ($ddd eq 'D') {
+		$long = $l[$start_inx+1];
+		$lat  = $l[$start_inx+0];
+		$desc = $l[$start_inx+4];
+	    } else { # DMX
+		my $long_d  = $l[$start_inx+2];
+		my $long_mx = $l[$start_inx+3];
+		my $lat_d   = $l[$start_inx+0];
+		my $lat_mx  = $l[$start_inx+1];
+		$long = Karte::Polar::dmm2ddd($long_d, $long_mx);
+		$lat  = Karte::Polar::dmm2ddd($lat_d, $lat_mx);
+		$desc = $l[$start_inx+6];
+	    }
+	    my($x,$y) = $obj->map2standard($long, $lat);
 	    if (!@res || ($x != $res[-1]->[0] ||
 			  $y != $res[-1]->[1])) {
-		push @res, [$x, $y];
+		push @res, [$x, $y, $desc];
 	    }
 	}
     }
     close FH;
 
-    @res;
+    return { type => $type,
+	     points => \@res,
+	   };
 }
 
 sub convert_from_route {
