@@ -824,7 +824,7 @@ sub compact_route {
     for my $i (1 .. $#$route_with_name) {
 	my $this = $route_with_name->[$i];
 	my $last = $res[-1];
-	if ($last->[ROUTE_ANGLE] < $route_straight_angle) {
+	if (!defined $last->[ROUTE_ANGLE] || $last->[ROUTE_ANGLE] < $route_straight_angle) {
 	    $last->[ROUTE_NAME] .= ", " . $this->[ROUTE_NAME]
 		if $route_with_name->[$i-1]->[ROUTE_NAME] ne $this->[ROUTE_NAME];
 	    $last->[ROUTE_DIST] += $this->[ROUTE_DIST];
