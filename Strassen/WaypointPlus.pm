@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: WaypointPlus.pm,v 1.1 2005/04/15 23:05:50 eserte Exp $
+# $Id: WaypointPlus.pm,v 1.2 2005/04/15 23:49:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -13,6 +13,17 @@
 #
 
 package Strassen::WaypointPlus;
+
+=head1 NAME
+
+Strassen::WaypointPlus - support for the Waypoint+ format
+
+=head1 DESCRIPTION
+
+See L<http://www.tapr.org/~kh2z/Waypoint/> for programm
+information.
+
+=cut
 
 use strict;
 use vars qw(@ISA);
