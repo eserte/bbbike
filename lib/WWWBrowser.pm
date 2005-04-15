@@ -57,12 +57,16 @@ sub start_browser {
     if ($os eq 'win') {
 	if (!eval 'require Win32Util;
 	           Win32Util::start_html_viewer($url)') {
-	    # if this fails, just try to start explorer
-	    system("start explorer $url");
-	    # otherwise croak
+	    # if this fails, just try the url only
+	    system("start $url");
 	    if ($?/256 != 0) {
-		status_message("Can't find HTML viewer.", "err");
-		return 0;
+		# otherwise explicitely use explorer
+		system("start explorer $url");
+		if ($?/256 != 0) {
+		    # or die ...
+		    status_message("Can't find HTML viewer.", "err");
+		    return 0;
+		}
 	    }
 	}
 	return 1;
