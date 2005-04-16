@@ -1561,9 +1561,9 @@ EOF
 userdel	2 15657,10846 15628,10915
 EOF
      },
-     { from  => 1111960800, # 2005-03-28 00:00
-       until => 1114034400, # 2005-04-21 00:00
-       text  => 'B 246; (Gerichtsstr.); OL Zossen, zw. Friedhofsweg u. Luchweg Straßenbauarbeiten Vollsperrung 29.03.2005-20.04.2005 ',
+     { from  => 1112479200, # 2005-04-03 00:00
+       until => 1113602400, # 2005-04-16 00:00
+       text  => 'B 246; (Gerichtsstr.); OL Zossen, zw. Friedhofsweg u. Luchweg Straßenbauarbeiten Vollsperrung 04.04.2005-15.04.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 15178,-20983 15072,-21175
@@ -1722,6 +1722,23 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -63163,51264 -63375,50856
+EOF
+     },
+     { from  => 1112652000, # 2005-04-05 00:00
+       until => 1122847200, # 2005-08-01 00:00
+       text  => 'B 273; (Potsdamer Str.); OD Potsdam, OT Bornim, zw. Florastr. u. Rückertstr. Kanalarbeiten halbseitig gesperrt; Einbahnstraße 06.04.2005-31.07.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -16640,1304 -15527,795
+userdel	q4 -16640,1304 -16894,1485
+EOF
+     },
+     { from  => 1113775200, # 2005-04-18 00:00
+       until => 1120946400, # 2005-07-10 00:00
+       text  => 'L 691; (Dübrichen-Wehrhain-B 87); Kreuzung zw. Dübrichen u. Frankenhain Knotenausbau Vollsperrung 19.04.2005-09.07.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 11561,-75017 12171,-75229
 EOF
      },
     );

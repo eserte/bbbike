@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.17 2004/03/21 23:10:55 eserte Exp $
+# $Id: wapcgi.t,v 1.18 2005/04/16 01:36:34 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -14,7 +14,7 @@ use File::Temp qw(tempfile);
 use URI;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!eval q{
@@ -27,6 +27,10 @@ BEGIN {
 
     eval q{ use Image::Info qw(image_info) };
 }
+
+# XXX Missing:
+# a test with a "real" user agent and a profile setting
+# to check if BrowserInfo::UAProf works correcly
 
 my $ua = new LWP::UserAgent;
 $ua->agent("BBBike-Test/1.0 (wapcgi.t/$VERSION)");
