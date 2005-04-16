@@ -219,14 +219,7 @@ userdel	q4 22217,1108 22162,1067
        },
        undef,
        undef,
-       {
-         'until' => 1114034400,
-         'text' => 'B 246; (Gerichtsstr.); OL Zossen, zw. Friedhofsweg u. Luchweg Straßenbauarbeiten Vollsperrung 29.03.2005-20.04.2005 ',
-         'from' => 1111960800,
-         'data' => 'userdel	q4 15178,-20983 15072,-21175
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1117576800,
          'text' => 'K 6501; (Bahnhofstr.); OD Schildow, zw. Hauptstr. u. F.-Schmidt-Str. grundhafter Straßenbau Vollsperrung 16.03.2005-31.05.2005 ',
@@ -283,14 +276,7 @@ userdel	q4 22217,1108 22162,1067
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1113602400,
-         'text' => 'L 622; (Rückersdorf-Doberlug Kirchhain); südl. Doberlug-Kirchhain, Höhe Hammerteich Baumfällarbeiten Vollsperrung 11.04.2005-15.04.2005 ',
-         'from' => 1113084000,
-         'data' => 'userdel	2 22495,-89358 22558,-89699
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -301,14 +287,7 @@ userdel	q4 22217,1108 22162,1067
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1113602400,
-         'text' => 'L 23; (Britz-Joachimsthal); Bereich AS Chorin Brückenbauarbeiten Vollsperrung 13.04.2005-15.04.2005 ',
-         'from' => 1113256800,
-         'data' => 'userdel	2 35962,59463 35405,59832
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => undef,
          'text' => 'L 711; (Krausnick-AS Stakow); zw. Krausnick u. Bahnhof Brand Einschränkung Tragfähigkeit Vollsperrung, Dauer unbekannt ',
@@ -363,6 +342,23 @@ userdel	2 -50303,42160 -50496,42007
          'text' => 'L 14; (Großderschau- Bahnhof Zernitz); Brücke über die Neue Jägelitz bei Zernitz Brückensanierung Vollsperrung 19.04.2005-28.10.2005 ',
          'from' => 1113775200,
          'data' => 'userdel	2 -63163,51264 -63375,50856
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1122847200,
+         'text' => 'B 273; (Potsdamer Str.); OD Potsdam, OT Bornim, zw. Florastr. u. Rückertstr. Kanalarbeiten halbseitig gesperrt; Einbahnstraße 06.04.2005-31.07.2005 ',
+         'from' => 1112652000,
+         'data' => 'userdel	q4 -16640,1304 -15527,795
+userdel	q4 -16640,1304 -16894,1485
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1120946400,
+         'text' => 'L 691; (Dübrichen-Wehrhain-B 87); Kreuzung zw. Dübrichen u. Frankenhain Knotenausbau Vollsperrung 19.04.2005-09.07.2005 ',
+         'from' => 1113775200,
+         'data' => 'userdel	2 11561,-75017 12171,-75229
 ',
          'type' => 'gesperrt'
        }

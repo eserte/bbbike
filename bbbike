@@ -5545,7 +5545,10 @@ sub generate_plot_functions {
 				    $this_color = $this_color_rueck;
 				    $this_width = $this_width_rueck/2;
 				    $cat        = $cat_rueck;
-				    $cl         = [reverse @coordlist];
+				    $cl         = [];
+				    for(my $cl_i = $#coordlist-1; $cl_i >= 0; $cl_i-=2) {
+					push @$cl, @coordlist[$cl_i, $cl_i+1];
+				    }
 				} else {
 				    next;
 				}

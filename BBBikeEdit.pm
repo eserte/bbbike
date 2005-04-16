@@ -2247,7 +2247,7 @@ sub addnew {
 	main::status_message("No points to add", "err");
 	return;
     }
-    return if !main::ask_for_co($top, $file);
+    return if !BBBikeEdit::ask_for_co($top, $file);
     my $std_prefix = { BBBikeEditUtil::base() }->{basename($file)};
     my $prefix = "";
     if ($main::coord_system_obj->coordsys ne $std_prefix) {
