@@ -1435,6 +1435,12 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (M2)
+
+Zusätzlich zu "Schopenhauer Str. (Potsdam)" die Schreibweise "Potsdam,
+Schopenhauer Str." akzeptieren. Frage: nur fuer Orte oder auch fuer
+Bezirke, also "Kreuzberg, Bahnhofstr."?
+
 =item * (E3)
 
 /robots.txt einrichten, um das Indexieren von temporären Dateien bei
