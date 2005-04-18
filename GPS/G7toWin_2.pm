@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: G7toWin_2.pm,v 1.1 2005/04/15 23:55:17 eserte Exp $
+# $Id: G7toWin_2.pm,v 1.2 2005/04/18 07:10:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.

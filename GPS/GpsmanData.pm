@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.30 2005/03/23 22:02:06 eserte Exp $
+# $Id: GpsmanData.pm,v 1.32 2005/04/16 18:26:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_WAYPOINT => 0;
 use constant TYPE_TRACK    => 1;
@@ -106,6 +106,12 @@ sub convert_to_route {
 
     $self = __PACKAGE__->new if !ref $self;
     $self->load($file);
+
+    $self->do_convert_to_route(%args);
+}
+
+sub do_convert_to_route {
+    my($self, %args) = @_;
 
     require Karte::Polar;
     require Karte::Standard;
@@ -367,7 +373,10 @@ sub parse_route {
 sub parse {
     my($self, $buf, %args) = @_;
     my $multiple = delete $args{-multiple};
-    my $beginref = delete $args{-beginref};
+    my $beginref = delete $args{-begin};
+    if (keys %args) {
+	die "Unhandled arguments: " . join " ", %args;
+    }
     my $type;
     my @lines = split /\n/, $buf;
     my $i = $beginref ? $$beginref : 0;
@@ -384,13 +393,8 @@ sub parse {
 	local $_ = $lines[$i];
 	next if /^%/; # comment
 	next if /^\s*$/;
-	if (defined $type) {
-	    if (/^!/) {
-		# XXX ignore for now
-		# XXX for tracks, some kind of signalling a new route should be possible...
-	    } else {
-		push @data, $parse{$type}->();
-	    }
+	if (defined $type && !/^!/) {
+	    push @data, $parse{$type}->();
 	} elsif (/^!Format:\s+(\S+)\s+(\S+)\s+(.*)$/) {
 	    $self->PositionFormat($1);
 	    $self->DatumFormat($3);
@@ -706,8 +710,15 @@ sub load {
     close F;
 
     my $begin = 0;
+    my $old_gps_o;
     while(1) {
 	my $gps_o = GPS::GpsmanData->new;
+	if ($old_gps_o) {
+	    # "sticky" attributes
+	    for my $member (qw(DatumFormat PositionFormat Creation)) {
+		$gps_o->$member($old_gps_o->$member)
+	    }
+	}
 	my $old_begin = $begin;
 	$gps_o->parse($buf, -multiple => 1, -begin => \$begin);
 	push @{ $self->{Chunks} }, $gps_o;
@@ -715,10 +726,28 @@ sub load {
 	    # last track/route/... read
 	    last;
 	}
+	$old_gps_o = $gps_o;
     }
 }
 
 sub Chunks { shift->{Chunks} }
+
+sub convert_to_route {
+    my($self, $file, %args) = @_;
+
+    $self = __PACKAGE__->new if !ref $self;
+    $self->load($file);
+
+    my @res;
+    for my $chunk (@{ $self->Chunks }) {
+	if ($chunk->Type eq $chunk->TYPE_TRACK ||
+	    $chunk->Type eq $chunk->TYPE_ROUTE
+	   ) {
+	    push @res, $chunk->do_convert_to_route(%args);
+	}
+    }
+    @res;
+}
 
 1;
 

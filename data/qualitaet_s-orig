@@ -335,7 +335,8 @@ Falkstr.: Asphalt	Q0 12139,8128 12162,8055 12177,7988 12211,7830
 Schillerpromenade: Kopfsteinpflaster	Q2 11665,8130 11695,8005
 Schillerpromenade: Kopfsteinpflaster	Q2 11717,7895 11736,7801 11755,7704 11779,7582 11797,7492
 Säntisstr.: Kopfsteinpflaster	Q2 8892,802 8533,512
-Alt-Marienfelde: Kopfsteinpflaster	Q2 8742,475 8533,512 8484,529 8114,705 8026,711 7855,771
+Alt-Marienfelde: Kopfsteinpflaster	Q2 8742,475 8533,512 8484,529 8258,662 8150,728 8026,711 7855,771
+Alt-Marienfelde: schlechtes Kopfsteinpflaster	Q3 8026,711 8208,626 8208,626 8258,662
 Ratiborstr.: Kopfsteinpflaster	Q2 12712,9523 12724,9545 12837,9748
 Kirchhofstr: schlechtes Kopfsteinpflaster	Q3 13177,7644 13188,7590 13032,7334
 Kirchhofstr: Kopfsteinpflaster	Q2 13013,7329 12872,7134
@@ -400,7 +401,7 @@ Colbestr.: mäßiger Asphalt	Q1 14416,11815 14468,11992
 Waldeyerstr.: Kopfsteinpflaster	Q2 15054,12323 14997,12243
 Am Heidekampgraben: Feldweg, teilweise etwas sandig	Q2 15053,7966 14969,7580 15162,7281 15342,7013 15563,6683 15577,6518 15478,6343 15422,6228 15365,6126
 An der Güterbahn: Parkweg	Q1 15330,1658 15205,1670 15110,1732 14968,1835 14845,1866 14705,1836 14630,1795
-Stubenrauchstr.: Kopfsteinpflaster	Q2; 16909,3193 16893,3171 16766,3002
+# XXX wahrscheinlich nicht mehr: Stubenrauchstr.: Kopfsteinpflaster	Q2; 16909,3193 16893,3171 16766,3002
 Falkensteinstr.: Kopfsteinpflaster	Q2 12911,10156 13031,10366 13135,10551
 Görlitzer Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q2; 13221,10005 13053,10088 12911,10156 12779,10232 12689,10273 12603,10312 12328,10442
 Görlitzer Str.: Kopfsteinpflaster	Q2; 12328,10442 12603,10312 12689,10273 12779,10232 12911,10156
@@ -873,7 +874,10 @@ Südstern: Kopfsteinpflaster	Q2 10629,9360 10567,9379
 Samariterstr.: Kopfsteinpflaster	Q2 14488,12189 14538,12371 14595,12557 14632,12681 14661,12798
 #: add_fragezeichen: Stimmt das?
 Fanningerstr.: Kopfsteinpflaster	Q2 16261,12224 16445,12193 16782,12154 16983,12124 17139,12100
+#: add_fragezeichen: mäßiges oder schlechtes Kopfsteinpflaster?
 Marienhöher Weg: Kopfsteinpflaster	Q2 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250
+Maulbronner Ufer: Parkweg	Q1 7161,4091 6904,4162
+(Luckeweg - Hildburghauser Str.): Parkweg	Q1 7544,624 7599,725
 Voigtstr.: Kopfsteinpflaster	Q2 14702,12157 14748,12314 14798,12502 14814,12626 14842,12826
 Friedrichshaller Str.: Kopfsteinpflaster	Q2 3083,7587 2784,7711
 Christburger Str.: Kopfsteinpflaster	Q2 11642,14625 11920,14468 12188,14321

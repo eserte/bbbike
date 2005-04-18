@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.158 2005/04/12 21:10:56 eserte Exp $
+# $Id: bbbike,v 3.159 2005/04/16 18:29:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -213,7 +213,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.158 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.159 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -6439,7 +6439,7 @@ sub draw_street_numbers {
 	    $type = 'BU';
 	} elsif ($strname =~ /berlin\s*-\s*kopenhagen/i) {
 	    $type = 'BK';
-	} elsif ($strname =~ /mauerweg/i) {
+	} elsif ($strname =~ /mauer.*weg/i) {
 	    $type = 'M';
 	} elsif ($strname =~ /havellandradweg/i) {
 	    $type = 'HVL';
@@ -7841,7 +7841,7 @@ sub load_save_route {
 	      (-filetypes => [[M"Route-Dateien", '.' . $bbbike_route_ext],
 			      [M"GPS-Tracks", ['.tracks','.trk']],
 			      [M"G7toWin", ['.g7t', '.G7T']],
-			      [M"MPS-Tracks", '.mps'],
+			      [M"MPS-Tracks", ['.mps', '.MPS']],
 			      [M"Alle Dateien",  '*']]),
 	     ));
 	return if !defined $file;

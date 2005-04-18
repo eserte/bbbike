@@ -272,7 +272,6 @@ Welzin - Usedom: Fahrradroute laut Kompass-Karte	? 44925,163225 43164,164582
 Dargen - Katschow: Fahrradroute laut Kompass-Karte	? 51094,165141 50723,166073 50337,166737 51034,167286 51481,167900
 Usedom - Suckow, Abkürzung: Fahrradroute laut Kompass-Karte, Qualität (wahrscheinlich Waldweg Q2)?	? 44290,165418 44836,167839
 Gellenthin: Fahrradroute laut Kompass-Karte	? 38459,162337 39037,162387 39930,160816
-Kamp - Karnin: Fähre (auf Zuruf)?	? 37862,160236 38325,160573
 Wie heißt die Straße genau: Walther-Nernst-Str. oder Walther-Nemst-Str?	? 19562,2971
 Stücken - Tremsdorf: Qualität?	? -10978,-17764 -10562,-16912 -10175,-16537 -9675,-16375 -9200,-15550 -9035,-15135 -8680,-14704
 Am Havelkanal: laut "Berliner Umland" gut geeigneter Radweg, nur der westliche Teil ist witterungsabhängige Strecke	? -3379,23141 -3462,23100 -7081,22356 -9012,22250 -9060,22342
@@ -314,7 +313,6 @@ Waldsieversdorf - Münchehofe: laut "Berliner Umland" witterungsabhängige Strecke
 Waldsieversdorf - Münchehofe: laut "Berliner Umland" geeignete Strecke	? 58512,18662 58760,18878
 Münchehofe - Trebnitz: laut "Berliner Umland" geeignete Strecke	? 62444,15991 62962,15975 63062,15775 63462,15800 64212,15387 65200,15637 65819,15698
 Münchehofe - Buckow: Waldweg, Q2! Genaue Wegführung?	? 58512,18662 56750,19200 56237,18900 55920,18769
-Beelitz-Heilstätten - Petzow: laut "Berliner Umland" gut geeigneter Radweg	? -21642,-16531 -21421,-16696 -21187,-16509 -21468,-15641 -22031,-15477 -22922,-14422 -22922,-13719 -22734,-12969 -22758,-11984 -22476,-11163 -22734,-11163 -22438,-10456 -21773,-9616 -21590,-9622
 Postbruch - Spitzmühle: Qualität? Genaue Wegführung?	? 39771,18075 39696,18175 39490,19893
 Elisabethstr. (Strausberg) etc.: Genaue Wegführung? Tatsächlich Hauptstraße?	? 42434,19150 42804,19034 42830,19630
 Altlandsberg - Wegendorf: wahrscheinlich schlechte Strecke	? 32519,18904 32600,19331 32859,19606 32882,19988 33051,20649 33574,21276 33710,21746 33822,22066 34125,22128
@@ -517,6 +515,8 @@ Zühlen - Rheinsberg: Qualität?	? -30695,73610 -30112,73900 -27371,75722
 Zühlen - Binenwalde: Qualität?	? -30695,73610 -30962,73512 -31387,73037 -31537,72225 -31787,71700 -32112,71377
 Beerenbusch - Zechlinerhütte: Qualität?	? -22787,81662 -23550,82037 -24975,82587 -26520,83231
 Neuglobsow - Rheinsberg: laut http://www.ruppin.de/rheinsberg/freizeit/sport/radw_neuglobsow.html teilweise Waldweg, teilweise Radweg?	? -14296,81633 -14795,81699 -14946,81614 -15229,81572 -15596,81274 -15943,81207 -16224,80970 -16961,80707 -17299,80205 -17707,79391 -17901,79432 -18074,79390 -18050,79047 -18179,78812 -18200,78576 -18350,78427 -18393,78235 -18544,78020
+Verlauf des Mauerradwegs im Bereich Späthstr.?	? 14457,5097 14362,5146 14242,5284 14025,5319 14340,5393 14600,5450
+Hasselwerderstr.: Einbahnstraße, auch für Radfahrer?	? 18268,5739 18023,5623
 wirklich?	? 9215,3599
 Wirklich?	? -3755,17090
 geplante Ampel in der Johannisthaler	? 14196,2876
@@ -563,6 +563,7 @@ Rathenower Str.: mäßig geeignet (laut ADFC-Karte)	? 6743,14008 6696,14197 6670,1
 (Weg zur Krampenburg) (ist das ein offizieller Name mit Ausschilderung?)	? 27609,305 27571,262 27171,155 27273,-106 27407,-401 27552,-741 27559,-1365 27357,-1545 27323,-1671
 Knollstr. (letztes Stück Privatstr.?)	? 17178,-101 17558,126 17740,214
 Nelly-Sachs-Str. ((teilweise) Kategorie N oder sogar NN?)	? 23993,14838 24325,14965
+Borkheide - Neuendorf (ungenaue Koordinaten!)	? -26338,-21122 -27908,-22935 -28547,-22981 -29244,-23127
 (Am Nutheschnellweg) (Meinte ich damit den straßenbegleitenden Radweg?)	? -11399,-1339 -11698,-1104
 Stahnsdorfer Damm (ab Frühjar 2005 wieder Kategorie N oder H)	? -2632,-1358 -2614,-1434
 Görlsdorf - Peetzig (Qualität?)	? 45584,72614 45209,73684 45124,74047 44996,74261 44200,74890
@@ -613,7 +614,6 @@ Stadtpark Steglitz (unbeleuchtet?)	? 5838,4454 5931,4659 6018,4850
 Stadtpark Steglitz (unbeleuchtet?)	? 5344,4672 5476,4626 5747,4697 5931,4659 6114,4709
 nördliches Ufer am Teltowkanal (unbeleuchtet?)	? 7921,4451 8162,4725 8249,4769
 Heidekampbrücke (kommt nur im RV-Plan so vor:)	? 15335,6146 15365,6126
-Hinckeldeybrücke (genaue Koordinaten der Schleife?)	? 3406,15792 3336,15644 3332,15587
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn (evtl. bis zur Danziger verlängern:)	? 11642,14625 11662,14695 11681,14759
 Märkische Allee: Linksabbiegen wahrscheinlich verboten (wahrscheinlich!)	? 20512,17101 20691,17463 20717,17516 20834,17752 20878,17842 21218,18536

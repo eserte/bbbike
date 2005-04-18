@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: dcwtobbd.pl,v 1.3 2005/02/25 01:45:39 eserte Exp $
+# $Id: dcwtobbd.pl,v 1.4 2005/04/16 12:24:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -48,6 +48,7 @@ if ($do_make) {
 }
 
 Karte::preload('Standard','Polar');
+$Karte::Polar::obj = $Karte::Polar::obj; # peacify -w
 
 my $line;
 $line = scalar <>;

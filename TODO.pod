@@ -38,6 +38,11 @@ Legend:
 
 =over
 
+=item * (M3)
+
+Computers are faster nowadays. Make some feature default, e.g.
+no_overlap_labels, more layers on startup (flaechen, gewaesser).
+
 =item * (M2)
 
 E<quot>Optionen für langsame RechnerE<quot>: z.B. E<quot>Überlappungen
@@ -1165,6 +1170,47 @@ nachzulesen.
 	      \__/
  brunnels so:  __  zeichnen
               /  \
+
+ gpsbabel kann zwischen einer großen Anzahl von GPS-Formaten
+ konvertieren. Evtl. optional in bbbike integrieren. Siehe auch:
+ L<http://gpsbabel.sourceforge.net/>
+
+=item * Waypoints und Tracks im Internet:
+
+=over
+
+=item *
+
+Jede Menge, leider in einem binaeren Format:
+L<http://www.grabo.de/gps/index.html>
+
+=item *
+
+Als Test für G7T Version 2, enthält Teil von Berlin-Usedom bis
+Biesethal:
+
+L<http://www.berlin-usedom-radweginfo.de/downloadzaehler.php?URL=http://www.berlin-usedom-radweginfo.de/tracks/0u1_BB.zip>
+
+=item *
+
+Alternativroute von Frankfurt/Oder Richtung Norden:
+L<http://adfc.jgr.de/alternativradroute/alternativradroute.ovl> und
+L<http://adfc.jgr.de/alternativradroute/>
+
+=item *
+
+Radfernwege in Brandenburg:
+L<http://www.brandenburg.adfc.de/Tourismus/index.htm>
+
+=item *
+
+Radwege um den Stechlinsee herum:
+L<http://www.stechlin.de/aktivitaet.htm>
+Radfernwanderweg Berlin - Kopenhagen,
+Stechlinsee-Radweg,
+Polzow-Radweg
+
+=back
 
 =item * Funktionieren die Aufzüge bei der S-Bahn? Das erfährt man
 E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.

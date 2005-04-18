@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: WaypointPlus.pm,v 1.1 2003/07/21 22:39:58 eserte Exp $
+# $Id: WaypointPlus.pm,v 1.2 2005/04/16 12:23:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::WaypointPlus;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 require GPS;
 push @ISA, 'GPS';

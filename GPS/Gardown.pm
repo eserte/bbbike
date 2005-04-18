@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Gardown.pm,v 1.1 2005/04/15 23:55:17 eserte Exp $
+# $Id: Gardown.pm,v 1.2 2005/04/18 07:10:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::Gardown;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 require GPS;
 push @ISA, 'GPS';
@@ -34,6 +34,7 @@ sub parse {
 
     require Karte::Standard;
     require Karte::Polar;
+    $Karte::Polar::obj = $Karte::Polar::obj; # peacify -w
     my $obj = $Karte::Polar::obj;
 
     my @res;

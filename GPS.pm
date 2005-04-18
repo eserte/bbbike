@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GPS.pm,v 1.9 2004/12/30 13:32:33 eserte Exp $
+# $Id: GPS.pm,v 1.10 2005/04/16 12:55:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
