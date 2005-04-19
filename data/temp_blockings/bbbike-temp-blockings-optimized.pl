@@ -74,8 +74,8 @@ userdel	q4 49039,44131 49691,43812
        undef,
        undef,
        {
-         'until' => 1114898400,
-         'text' => 'L 401; (Lindenallee); OL Zeuthen, zw. Platanenallee und Ahornallee grundhafter Straßenbau Vollsperrung 01.11.2004-30.04.2005 ',
+         'until' => 1117576800,
+         'text' => 'L 401; (Lindenallee, Fontaneallee); OL Zeuthen, zw. Forstweg und Fährstr. grundhafter Straßenbau Vollsperrung 01.11.2004-31.05.2005 ',
          'from' => 1099177200,
          'data' => 'userdel	q4 26581,-7087 26146,-6218
 ',
@@ -100,7 +100,14 @@ userdel	q4 49039,44131 49691,43812
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1114725600,
+         'text' => 'Volkradstraße (Lichtenberg) Richtung Rummelsburger Straße, zwischen Sewanstraße und Moldaustraße Baustelle, Straße gesperrt, (bis 28.04.2005)',
+         'from' => 1113870336,
+         'data' => 'userdel	1 17475,10442 17427,10259
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -152,14 +159,7 @@ userdel	q4 49039,44131 49691,43812
        },
        undef,
        undef,
-       {
-         'until' => 1113775200,
-         'text' => 'L 24; (AS Pfingstberg-Gerswalde); Bereich AS Pfingstberg, Brücke A 11 Brückenabruch Vollsperrung 15.04.2005-17.04.2005 ',
-         'from' => 1113429600,
-         'data' => 'userdel	2 41292,81052 41593,80703
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1128117600,
          'text' => 'B 179; (Berliner Str.); OL Königs Wusterhausen, zw. Schloßplatz u. Funkerberg Kanalarbeiten halbseitig gesperrt (XXX welche Richtung?); Einbahnstraße 01.03.2005-30.09.2005 ',
@@ -296,14 +296,7 @@ userdel	q4 22217,1108 22162,1067
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1113688800,
-         'text' => 'L 30; (Bernauer Str.); OL Altlandsberg zw. Strausberger Str. u. Buchholzer Str. Kanalarbeiten Vollsperrung 13.04.2005-16.04.2005 ',
-         'from' => 1113256800,
-         'data' => 'userdel	q4 32665,17841 33589,15778
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1114812000,
          'text' => 'L 59; (Bormannstr.); OL Bad Liebenwerda Kanalneubau Vollsperrung 11.04.2005-29.04.2005 ',
@@ -321,10 +314,10 @@ userdel	q4 22217,1108 22162,1067
          'type' => 'handicap'
        },
        {
-         'until' => 1115244000,
-         'text' => 'B 101; (Luckenwalder-, Berliner Str.); OD Trebbin, Knoten Beelitzer Str. Straßenbauarbeiten Vollsperrung 01.04.2005-04.05.2005 ',
-         'from' => 1112220000,
-         'data' => 'userdel	q4 -1887,-21501 -1992,-21489
+         'until' => 1117317600,
+         'text' => 'B 101; (Berliner Str.); OD Trebbin, Knoten Bahnhofstr. Straßenbauarbeiten Vollsperrung 22.04.2005-28.05.2005 ',
+         'from' => 1114034400,
+         'data' => 'userdel	q4 -1623,-21150 -1887,-21501
 ',
          'type' => 'handicap'
        },
@@ -361,6 +354,38 @@ userdel	q4 -16640,1304 -16894,1485
          'data' => 'userdel	2 11561,-75017 12171,-75229
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1114812000,
+         'text' => 'Kastanienallee (Prenzlauer Berg) Richtung stadtauswärts zwischen Schwedter Str. und Oderberger Str. Baustelle, Fahrtrichtung gesperrt (bis 29.04.2005)',
+         'from' => 1113869983,
+         'data' => 'userdel	q4; 10534,14460 10723,14772
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1114034400,
+         'text' => 'Kronenstraße (Mitte) in beiden Richtungen, zwischen Charlottenstraße und Markgrafenstraße Kranarbeiten, Straße gesperrt, Dauer: 18.04.2005, 07.00 Uhr bis 20.04.2005',
+         'from' => 1113714000,
+         'data' => 'userdel	q4 9569,11631 9701,11649
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1136069999,
+         'text' => 'Rosa-Luxemburg-Str. (Mitte) Richtung stadtauswärts, zwischen Memhardstr. und Torstr. Baustelle, Straße vollständig gesperrt (bis Ende 2005) Umleitung über Karl-Liebknecht-Straße - Torstraße',
+         'from' => 1113870146,
+         'data' => 'userdel	q4; 10755,13152 10846,13362 10790,13565 10777,13614 10746,13673
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1115244000,
+         'text' => 'B 101; (Luckenwalder-, Berliner Str.); OD Trebbin, Knoten Beelitzer Str. Straßenbauarbeiten Vollsperrung 01.04.2005-04.05.2005 ',
+         'from' => 1112220000,
+         'data' => 'userdel	q4 -1887,-21501 -1992,-21489
+',
+         'type' => 'handicap'
        }
      
 );

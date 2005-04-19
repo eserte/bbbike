@@ -1120,8 +1120,8 @@ userdel	q4 8231,26584 8194,25966
 EOF
      },
      { from  => 1099177200, # 2004-10-31 01:00
-       until => 1114898400, # 2005-05-01 00:00
-       text  => 'L 401; (Lindenallee); OL Zeuthen, zw. Platanenallee und Ahornallee grundhafter Straßenbau Vollsperrung 01.11.2004-30.04.2005 ',
+       until => 1117576800, # 2005-06-01 00:00
+       text  => 'L 401; (Lindenallee, Fontaneallee); OL Zeuthen, zw. Forstweg und Fährstr. grundhafter Straßenbau Vollsperrung 01.11.2004-31.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 26581,-7087 26146,-6218
@@ -1167,12 +1167,12 @@ EOF
 userdel	q4 3125,88753 2788,89447
 EOF
      },
-     { from  => 1100942003, # 2004-11-20 10:13
-       until => 1102713377, # 2004-12-15 23:59 (früher beendet)
-       text  => 'Volkradstr. (Friedrichsfelde) in Richtung Rummelsburger Str. ab Sewanstr. Baustelle, Fahrtrichtung gesperrt, Umleitung: Sewanstr. - Rummelsburger Str. (bis Mitte 12.2004)',
-       type  => 'handicap',
+     { from  => 1113870336, # 2005-04-19 02:25
+       until => 1114725600, # 2005-04-29 00:00
+       text  => 'Volkradstraße (Lichtenberg) Richtung Rummelsburger Straße, zwischen Sewanstraße und Moldaustraße Baustelle, Straße gesperrt, (bis 28.04.2005)',
+       type  => 'gesperrt',
        data  => <<EOF,
-userdel	q4; 17427,10259 17475,10442 17621,10994
+userdel	1 17475,10442 17427,10259
 EOF
      },
      { from  => 1100991600, # 2004-11-21 00:00
@@ -1699,12 +1699,12 @@ EOF
 userdel	q4; 21093,9179 21351,9066
 EOF
      },
-     { from  => 1112220000, # 2005-03-31 00:00
-       until => 1115244000, # 2005-05-05 00:00
-       text  => 'B 101; (Luckenwalder-, Berliner Str.); OD Trebbin, Knoten Beelitzer Str. Straßenbauarbeiten Vollsperrung 01.04.2005-04.05.2005 ',
+     { from  => 1114034400, # 2005-04-21 00:00
+       until => 1117317600, # 2005-05-29 00:00
+       text  => 'B 101; (Berliner Str.); OD Trebbin, Knoten Bahnhofstr. Straßenbauarbeiten Vollsperrung 22.04.2005-28.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -1887,-21501 -1992,-21489
+userdel	q4 -1623,-21150 -1887,-21501
 EOF
      },
      { from  => 1113688800, # 2005-04-17 00:00
@@ -1739,6 +1739,38 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 11561,-75017 12171,-75229
+EOF
+     },
+     { from  => 1113869983, # 2005-04-19 02:19
+       until => 1114812000, # 2005-04-30 00:00
+       text  => 'Kastanienallee (Prenzlauer Berg) Richtung stadtauswärts zwischen Schwedter Str. und Oderberger Str. Baustelle, Fahrtrichtung gesperrt (bis 29.04.2005)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 10534,14460 10723,14772
+EOF
+     },
+     { from  => 1113714000, # 2005-04-17 07:00
+       until => 1114034400, # 2005-04-21 00:00
+       text  => 'Kronenstraße (Mitte) in beiden Richtungen, zwischen Charlottenstraße und Markgrafenstraße Kranarbeiten, Straße gesperrt, Dauer: 18.04.2005, 07.00 Uhr bis 20.04.2005',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 9569,11631 9701,11649
+EOF
+     },
+     { from  => 1113870146, # 2005-04-19 02:22
+       until => 1136069999, # 2005-12-31 23:59
+       text  => 'Rosa-Luxemburg-Str. (Mitte) Richtung stadtauswärts, zwischen Memhardstr. und Torstr. Baustelle, Straße vollständig gesperrt (bis Ende 2005) Umleitung über Karl-Liebknecht-Straße - Torstraße',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 10755,13152 10846,13362 10790,13565 10777,13614 10746,13673
+EOF
+     },
+     { from  => 1112220000, # 2005-03-31 00:00
+       until => 1115244000, # 2005-05-05 00:00
+       text  => 'B 101; (Luckenwalder-, Berliner Str.); OD Trebbin, Knoten Beelitzer Str. Straßenbauarbeiten Vollsperrung 01.04.2005-04.05.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -1887,-21501 -1992,-21489
 EOF
      },
     );

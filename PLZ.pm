@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.57 2005/04/05 22:32:47 eserte Exp $
+# $Id: PLZ.pm,v 1.58 2005/04/18 23:47:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -22,8 +22,9 @@ use strict;
 use vars qw($PLZ_BASE_FILE @plzfile $OLD_AGREP $VERSION $VERBOSE $sep);
 use locale;
 use BBBikeUtil;
+use Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.57 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.58 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)
@@ -402,9 +403,9 @@ sub combined_elem_to_string_form {
 # to the street component and the citypart components
 sub split_street {
     my $street = shift;
-    if ($street =~ /^(.*)\s+\(([^\(]+)\)$/) {
-	$street = $1;
-	my @cityparts = split /\s*,\s*/, $2;
+    my @cityparts;
+    ($street, @cityparts) = Strasse::split_street_citypart($street);
+    if (@cityparts) {
 	($street, Citypart => \@cityparts);
     } else {
 	($street);

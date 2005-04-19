@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strasse.t,v 1.8 2005/03/24 00:04:03 eserte Exp $
+# $Id: strasse.t,v 1.9 2005/04/18 23:58:02 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -27,7 +27,10 @@ my @split_street_citypart =
       ["Heerstr.", "Spandau", "Charlottenburg"]],
      ["Heerstr. (Spandau)" =>
       ["Heerstr.", "Spandau"]],
-     ["Heerstr." => ["Heerstr."]],
+     ["Heerstr." =>
+      ["Heerstr."]],
+     ["Potsdam, Schopenhauerstr." =>
+      ["Schopenhauerstr.", "Potsdam"]],
     );
 
 my @beautify_landstrasse =

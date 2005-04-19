@@ -2117,6 +2117,7 @@ use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n"
 			}
 			untie @rec;
 			if (eval { require "$FindBin::RealBin/miscsrc/insert_points" }) {
+			    $BBBikeModify::datadir = $main::datadir;
 			    BBBikeModify::do_log("changerec", "$rec_count $name\t$cat $coords", $file);
 			} else {
 			    warn $@ if $@;
@@ -2298,6 +2299,7 @@ sub addnew {
 		       close ADD;
 
 		       if (eval { require "$FindBin::RealBin/miscsrc/insert_points" }) {
+			   $BBBikeModify::datadir = $main::datadir;
 			   BBBikeModify::do_log("add", "$name\t$cat $coords", $file);
 		       } else {
 			   warn $@ if $@;
