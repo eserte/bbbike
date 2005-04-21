@@ -167,6 +167,10 @@ Define additional attributes for the following line or block. The
 attributes may be used in a preprocessing script to generate
 additional layers. An alias for C<attributes> is C<attrs>.
 
+=item C<note: I<string>>
+
+A free text note, which shouldn't appear in the processed data.
+
 =back
 
 =head2 Comment lines

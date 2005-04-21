@@ -368,7 +368,7 @@ Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9851,10219 9849,102
 Grunerstr.: Straßentunnelrampe	3nocross 10887,12543 10959,12629 11062,12710 11134,12793
 Bundesallee: Straßentunnelrampe	3nocross 5505,8832 5510,8709 5513,8588
 Bundesallee: Absperrung auf dem Mittelstreifen	3nocross 5510,8709 5513,8588 5481,8506 5444,8406 5421,8337
-Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9189,5184 9185,5271 9182,5332 9147,5534
+Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9189,5184 9185,5271 9182,5332 9171,5397 9147,5534
 Schönhauser Allee: U-Bahnrampe	3nocross 10909,14710 10924,14491 10947,14114
 Schönhauser Allee: U-Bahnviadukt	3nocross 10977,15944 10972,15895 10963,15789
 Schönhauser Allee: U-Bahnviadukt	3 10949,15674 10929,15516 11055,15504
@@ -507,6 +507,8 @@ Drängelgitter (Radweg nach Bötzow)	BNP:5 -5890,25875
 Barriere (Treptower Str.)	BNP:5 13982,8764
 Schranke (Rütlistr.)	BNP:5 12496,9053
 Schranke (Rütlistr.)	BNP:5 12565,9200
+Schranke, meistens offen (Iranische Str.)	BNP:5 7875,16509
+Schranke, meistens offen (Iranische Str.)	BNP:5 7707,16543
 #: XXX müsste eigentlich verschoben werden, weil die Barriere nicht für die Briesestr. gilt!
 Barriere (Falkstr.)	BNP:10 12177,7988
 Drängelgitter (Rochstr.)	BNP:5 10535,13006
@@ -635,7 +637,7 @@ B 167; (Herzberg-Neuruppin); OL Alt Ruppin, Rhinbrücke    Brückenneubau    Volls
 #Mittelstr. an der US-Botschaft	3 9335,12442 9126,12413 9018,12400
 #Teltowkanalufer - Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3 8881,5143 9185,5271 9182,5332
 #Tedamm - Teltowkanalufer: unbequem passierbarer Mittelstreifen	3 9185,5271 9182,5332 9145,5323
-#Teltowkanalufer - Tedamm: unbequem passierbarer Mittelstreifen	3 9145,5323 9182,5332 9147,5534
+#Teltowkanalufer - Tedamm: unbequem passierbarer Mittelstreifen	3 9145,5323 9182,5332 9171,5397 9147,5534
 #Gervinusstr./Lewishamstr.: Straßentunnelrampe	3 3839,10904 3631,10784 3587,10768
 #Sybelstr./Lewishamstr.: Straßentunnelrampe	3 3712,10566 3739,10576 3644,10759
 #Sybelstr./Lewishamstr.: Straßentunnelrampe	3 3813,10435 3739,10576 3712,10566

@@ -1651,12 +1651,12 @@ userdel	2 -3880,13032 -4025,12801
 userdel	2 -4025,12801 -4137,12651
 EOF
      },
-     { from  => 1112654002, # 2005-04-05 00:33
-       until => 1121896800, # 2005-07-21 00:00
-       text  => 'B102 Zwischen Treuenbrietzen Umgehungsstraße/Kreuzung Treuenbrietzen und Einmündung Treuenbrietzen wegen Bauarbeiten gesperrt (bis 20.07.2005) ',
+     { from  => 1111960800, # 2005-03-28 00:00
+       until => 1133391600, # 2005-12-01 00:00
+       text  => 'B 2; (Leipziger Str.); OD Treuenbrietzen, zw. Krz.Leipz.-/Belziger Str. u. Hinter d.Mauer Straßenbau, KVK Vollsperrung 29.03.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -24967,-35112 -24515,-36113
+userdel	q4 -25472,-35585 -24967,-35112
 EOF
      },
      { from  => 1113256800, # 2005-04-12 00:00

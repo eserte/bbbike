@@ -273,10 +273,10 @@ userdel	q4 22217,1108 22162,1067
        undef,
        undef,
        {
-         'until' => 1121896800,
-         'text' => 'B102 Zwischen Treuenbrietzen Umgehungsstraße/Kreuzung Treuenbrietzen und Einmündung Treuenbrietzen wegen Bauarbeiten gesperrt (bis 20.07.2005) ',
-         'from' => 1112654002,
-         'data' => 'userdel	q4 -24967,-35112 -24515,-36113
+         'until' => 1133391600,
+         'text' => 'B 2; (Leipziger Str.); OD Treuenbrietzen, zw. Krz.Leipz.-/Belziger Str. u. Hinter d.Mauer Straßenbau, KVK Vollsperrung 29.03.2005-30.11.2005 ',
+         'from' => 1111960800,
+         'data' => 'userdel	q4 -25472,-35585 -24967,-35112
 ',
          'type' => 'handicap'
        },
@@ -356,14 +356,7 @@ userdel	q4 -16640,1304 -16894,1485
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1114034400,
-         'text' => 'Kronenstraße (Mitte) in beiden Richtungen, zwischen Charlottenstraße und Markgrafenstraße Kranarbeiten, Straße gesperrt, Dauer: 18.04.2005, 07.00 Uhr bis 20.04.2005',
-         'from' => 1113714000,
-         'data' => 'userdel	q4 9569,11631 9701,11649
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1136069999,
          'text' => 'Rosa-Luxemburg-Str. (Mitte) Richtung stadtauswärts, zwischen Memhardstr. und Torstr. Baustelle, Straße vollständig gesperrt (bis Ende 2005) Umleitung über Karl-Liebknecht-Straße - Torstraße',

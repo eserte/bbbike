@@ -473,7 +473,9 @@ Zum Hundsteinweg: fester Sandweg	Q1 10661,2790 10775,2765
 Tauernallee - Wildspitzweg: fester Sandweg	Q1 10705,2598 10775,2765 10864,3157
 Sangerhauser Weg: Verbundsteine	Q1 10748,2412 10933,2606 10934,2670 11025,2766 11190,2930
 Alt-Britz: schlechtes Kopfsteinpflaster	Q3 12560,4290 12678,4389 12836,4649 12905,4761 13015,5062
-Bendastr.: Kopfsteinpflaster	Q2 12689,6905 12702,6846 12756,6578 12793,6407 12804,6377
+Bendastr.: Kopfsteinpflaster	Q2 12689,6905 12702,6846
+Bendastr.: asphaltiert	Q0 12702,6846 12743,6645
+Bendastr.: Kopfsteinpflaster	Q2 12743,6645 12756,6578 12779,6478 12793,6407 12804,6377
 Ilsestr.: Kopfsteinpflaster	Q2 12645,7087 12613,7236
 Jonasstr.: Kopfsteinpflaster	Q2 12221,7271 12396,7312 12585,7357 12703,7370
 Jonasstr.: Kopfsteinpflaster	Q2 12925,7425 13015,7440
@@ -1012,7 +1014,7 @@ Schützallee: mäßiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlec
 Riemeisterstr.: mäßiges Kopfsteinpflaster	Q2 373,4816 319,4906 168,5092 103,5123
 Soldiner Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 9604,16760 9317,16882 9096,16976
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2053,6841 1975,6812
-Wilhelmshöher Str.: guter Asphalt	Q0 4836,7327 5072,7327 5310,7325
+Wilhelmshöher Str.: guter Asphalt	Q0 4836,7327 4889,7323 5072,7327 5310,7325
 Sarrazinstr.: guter Asphalt	Q0 5357,7381 5653,7639
 Perelsplatz: guter Asphalt	Q0 5653,7639 5812,7637
 Bennigsenstr.: guter Asphalt	Q0 5807,7771 5957,7765 6225,7776
@@ -1238,7 +1240,7 @@ Korsörer Str.: mäßiges Kopfsteinpflaster	Q2 10101,15751 10398,15797
 Roennebergstr.: Asphalt	Q0 5374,6932 5533,6753
 Stephanstr.: schlechtes Kopfsteinpflaster	Q3 6377,4490 6526,4475 6840,4456
 Herderstr.: Kopfsteinpflaster	Q2 4697,6118 4472,6242 4407,6281
-Glasower Str.: mäßiges Kopfsteinpflaster	Q2 12498,6531 12756,6578 13159,6655
+Glasower Str.: mäßiges Kopfsteinpflaster	Q2 12498,6531 12756,6578 12865,6600 13159,6655
 Marienstr.: Asphalt	Q0 8726,12861 9046,12933
 Nordmannzeile: sehr gute Qualität	Q0 6773,7116 6807,7262
 Bornemannstr.: Asphalt	Q0 8206,15953 8003,16098
@@ -1303,8 +1305,16 @@ Seecktstr.: Asphalt	Q0 -4259,13267 -3998,13138
 Budsiner Str.: asphaltiert	Q0 19790,11445 20126,11356
 Schlochauer Str.: asphaltiert	Q0 19778,11260 19790,11445 19810,11585 19881,11591
 Arnold-Zweig-Str.: Asphalt	Q0 11870,17522 11492,17460 11100,17396
+Binzstr.: holprige Pflasterstraße	Q2 11845,17656 11468,17586 11088,17511 10892,17491
 Sponholzstr.: Asphalt	Q0 6157,7685 6155,7216 6153,7078
 Puccinistr.: Asphalt und Kopfsteinpflaster	Q2 13723,15505 13973,15660
 Argenauer Str.: Kopfsteinpflaster	Q2 22044,7156 21838,7114 21569,7273
 Hübnerstr.: schlechtes Kopfsteinpflaster	Q3 13960,12866 13884,12679
 Jacobsohnstr.: mäßiger Asphalt	Q1 12200,16579 12353,16687 12486,16791 12521,16817 12699,16945
+Iranische Str.: Kopfsteinpflaster	Q2 8092,16485 7875,16509 7728,16538 7456,16620
+Reinholdstr.: mäßiges Kopfsteinpflaster	Q2 12820,6805 13010,6842
+Bruno-Bauer-Str.: Kopfsteinpflaster	Q2 12806,6868 12820,6805 12851,6664 12865,6600 12879,6543
+Juliusstr.: Kopfsteinpflaster	Q2 13209,6564 12890,6493 12779,6478 12545,6436
+Rheingaustr.: Asphalt	Q0 4894,6709 4893,6900 4892,7203 4889,7323 4886,7402
+Brennerstr.: Asphalt	Q0 10927,17022 10665,17023
+Viktoriastr.: Kopfsteinpflaster	Q2 9171,5397 8943,5428
