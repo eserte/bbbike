@@ -3,6 +3,9 @@
 <html><head>
 <title>Hilfe</title>
 <link rel="stylesheet" type="text/css" href="[% BBBIKE_HTML_RELURL %]/bbbike.css">
+<style type="text/css">
+tr { vertical-align:top; }
+</style>
 <link rev=made href="mailto:slaven@rezic.de">
 </head>
 <body>
@@ -13,7 +16,7 @@
  <li><a href="#query">Merkmale anzeigen</a>
  <li><a href="#scale">Maßstab</a>
  <li><a href="#cat">Kategorien</a>
- <li><a href="#cat">Routensuche</a>
+ <li><a href="#search">Routensuche</a>
  <li><a href="#disclaimer">Disclaimer</a>
 </ul>
 
@@ -190,6 +193,10 @@ Der Maßstab gilt nur für Monitore mit einer Auflösung von 72dpi (Pixel pro Zoll)
   <td><a name="RW9">RW9</a></td>
   <td>Zweirichtungsradweg (Gegenrichtung)</td>
  </tr>
+ <tr>
+  <td><a name="RW">RW</a></td>
+  <td>Radweg (ohne genauere Attributierung)</td>
+ </tr>
  <tr><th colspan="2">U-/S-/Regionalbahn</th></tr>
  <tr>
   <td><a name="UA">UA</a></td>
@@ -262,11 +269,19 @@ Der Maßstab gilt nur für Monitore mit einer Auflösung von 72dpi (Pixel pro Zoll)
  </tr>
  <tr>
   <td><a name="1_right">1_right</a>, <a name="1_left">1_left</a></td>
-  <td>Einbahnstraße</td>
+  <td style="vertical-align:bottom">Einbahnstraße</td>
  </tr>
  <tr>
   <td><a name="2">2</a></td>
   <td>für Radfahrer gesperrte Straße</td>
+ </tr>
+ <tr>
+  <td><a name="?">?</a></td>
+  <td>Merkmale, die der Aufklärung bedürfen</td>
+ </tr>
+ <tr>
+  <td><a name="CS">CS</a>, <a name="CP">CP</a></td>
+  <td style="vertical-align:bottom">allgemeiner Kommentar</td>
  </tr>
 </table>
 

@@ -36,19 +36,23 @@ function init() {
   }
 
   if (document.cookie) {
-    if (document.cookie.match(/^mapserver_comment=(.*)/)) {
-      var arr = RegExp.$1.split("&");
-      for(var i=0; i<arr.length/2; i++) {
-        var key = arr[i*2];
-	var val = arr[i*2+1];
-	if (key == "email" || key == "author") {
-	  frm.elements[key].value = val;
-	}
+    var cookies = document.cookie.split(/;\s*/);
+    for (var i=0; i<cookies.length; i++) {
+      if (cookies[i].match(/^mapserver_comment=(.*)/)) {
+        var arr = RegExp.$1.split("&");
+        for(var i=0; i<arr.length/2; i++) {
+          var key = arr[i*2];
+	  var val = arr[i*2+1];
+  	  if (key == "email" || key == "author") {
+	    frm.elements[key].value = val;
+	  }
+  	}
+	break;
       }
     }
   }
 
-  if (strname_html != "" && typeof document.getElementById == "function") {
+  if (typeof strname_html != "undefined" && strname_html != "" && typeof document.getElementById == "function") {
     var node = document.getElementById("fragezeichen_text");
     if (node) {
       node.innerHTML = strname_html;
@@ -111,33 +115,37 @@ function init() {
       <tr><td colspan="2"><b>Bewertung:</b></td></tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qcat_1" value="Q0"
+      <tr>       <td>
+        <input id="Qcat_1_Q0" style="margin-right:1em;" type="radio" name="Qcat_1" value="Q0"
  /></td>
-       <td>sehr gut
+       <td><label for="Qcat_1_Q0">sehr gut</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qcat_1" value="Q1"
+      <tr>       <td>
+        <input id="Qcat_1_Q1" style="margin-right:1em;" type="radio" name="Qcat_1" value="Q1"
  /></td>
-       <td>gut
+       <td><label for="Qcat_1_Q1">gut</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qcat_1" value="Q2"
+      <tr>       <td>
+        <input id="Qcat_1_Q2" style="margin-right:1em;" type="radio" name="Qcat_1" value="Q2"
  /></td>
-       <td>m‰ﬂig
+       <td><label for="Qcat_1_Q2">m‰ﬂig</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qcat_1" value="Q3"
+      <tr>       <td>
+        <input id="Qcat_1_Q3" style="margin-right:1em;" type="radio" name="Qcat_1" value="Q3"
  /></td>
-       <td>schlecht
+       <td><label for="Qcat_1_Q3">schlecht</label>
 
        </td>
       </tr>
@@ -147,49 +155,55 @@ function init() {
       <tr><td colspan="2"><b>Beschreibung:</b></td></tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="Asphalt"
+      <tr>       <td>
+        <input id="Qdesc_1_Asphalt" style="margin-right:1em;" type="radio" name="Qdesc_1" value="Asphalt"
  /></td>
-       <td>Asphalt
+       <td><label for="Qdesc_1_Asphalt">Asphalt</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="Beton"
+      <tr>       <td>
+        <input id="Qdesc_1_Beton" style="margin-right:1em;" type="radio" name="Qdesc_1" value="Beton"
  /></td>
-       <td>Beton
+       <td><label for="Qdesc_1_Beton">Beton</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="Kopfsteinpflaster"
+      <tr>       <td>
+        <input id="Qdesc_1_Kopfsteinpflaster" style="margin-right:1em;" type="radio" name="Qdesc_1" value="Kopfsteinpflaster"
  /></td>
-       <td>Kopfsteinpflaster
+       <td><label for="Qdesc_1_Kopfsteinpflaster">Kopfsteinpflaster</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="fester Sandweg"
+      <tr>       <td>
+        <input id="Qdesc_1_fester Sandweg" style="margin-right:1em;" type="radio" name="Qdesc_1" value="fester Sandweg"
  /></td>
-       <td>fester Sandweg
+       <td><label for="Qdesc_1_fester Sandweg">fester Sandweg</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="loser Sandweg"
+      <tr>       <td>
+        <input id="Qdesc_1_loser Sandweg" style="margin-right:1em;" type="radio" name="Qdesc_1" value="loser Sandweg"
  /></td>
-       <td>loser Sandweg
+       <td><label for="Qdesc_1_loser Sandweg">loser Sandweg</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="Qdesc_1" value="Verbundsteinpflaster"
+      <tr>       <td>
+        <input id="Qdesc_1_Verbundsteinpflaster" style="margin-right:1em;" type="radio" name="Qdesc_1" value="Verbundsteinpflaster"
  /></td>
-       <td>Verbundsteinpflaster
+       <td><label for="Qdesc_1_Verbundsteinpflaster">Verbundsteinpflaster</label>
 
        </td>
       </tr>
@@ -206,11 +220,15 @@ function init() {
      </table>
     </td>
     
-    <td>     <input type="radio" name="Qrange_1" value="whole"checked />
-     gesamte Straﬂe<br />
-     <input type="radio" name="Qrange_1" value="part" 
+    <td>     <label>
+      <input type="radio" name="Qrange_1" value="whole"checked />
+      gesamte Straﬂe
+     </label><br />
+     <label>
+      <input type="radio" name="Qrange_1" value="part" 
  />
-     Teilabschnitt<br />
+      Teilabschnitt
+     </label><br />
      <table cellpadding="0" cellspacing="0">
       <tr>       <td style="padding-right:1ex;">von</td>
        <td><input name="Qrangefrom_1" /></td>
@@ -233,41 +251,46 @@ function init() {
       <tr><td colspan="2"><b>Eingeschr‰nkte Geschwindigkeit:</b></td></tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qcat_1" value="q0"
+      <tr>       <td>
+        <input id="qcat_1_q0" style="margin-right:1em;" type="radio" name="qcat_1" value="q0"
  /></td>
-       <td>30 km/h oder mehr mˆglich
+       <td><label for="qcat_1_q0">30 km/h oder mehr mˆglich</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qcat_1" value="q1"
+      <tr>       <td>
+        <input id="qcat_1_q1" style="margin-right:1em;" type="radio" name="qcat_1" value="q1"
  /></td>
-       <td>bis 25 km/h
+       <td><label for="qcat_1_q1">bis 25 km/h</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qcat_1" value="q2"
+      <tr>       <td>
+        <input id="qcat_1_q2" style="margin-right:1em;" type="radio" name="qcat_1" value="q2"
  /></td>
-       <td>bis 18 km/h
+       <td><label for="qcat_1_q2">bis 18 km/h</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qcat_1" value="q3"
+      <tr>       <td>
+        <input id="qcat_1_q3" style="margin-right:1em;" type="radio" name="qcat_1" value="q3"
  /></td>
-       <td>bis 13 km/h
+       <td><label for="qcat_1_q3">bis 13 km/h</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qcat_1" value="q4"
+      <tr>       <td>
+        <input id="qcat_1_q4" style="margin-right:1em;" type="radio" name="qcat_1" value="q4"
  /></td>
-       <td>Schrittgeschwindigkeit
+       <td><label for="qcat_1_q4">Schrittgeschwindigkeit</label>
 
        </td>
       </tr>
@@ -276,25 +299,28 @@ function init() {
       <tr><td colspan="2"><b>Grund:</b></td></tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qdesc_1" value="viele Fuﬂg‰nger"
+      <tr>       <td>
+        <input id="qdesc_1_viele Fuﬂg‰nger" style="margin-right:1em;" type="radio" name="qdesc_1" value="viele Fuﬂg‰nger"
  /></td>
-       <td>viele Fuﬂg‰nger
+       <td><label for="qdesc_1_viele Fuﬂg‰nger">viele Fuﬂg‰nger</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qdesc_1" value="Fuﬂg‰ngerzone"
+      <tr>       <td>
+        <input id="qdesc_1_Fuﬂg‰ngerzone" style="margin-right:1em;" type="radio" name="qdesc_1" value="Fuﬂg‰ngerzone"
  /></td>
-       <td>Fuﬂg‰ngerzone
+       <td><label for="qdesc_1_Fuﬂg‰ngerzone">Fuﬂg‰ngerzone</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="qdesc_1" value="kurvenreich"
+      <tr>       <td>
+        <input id="qdesc_1_kurvenreich" style="margin-right:1em;" type="radio" name="qdesc_1" value="kurvenreich"
  /></td>
-       <td>kurvenreich
+       <td><label for="qdesc_1_kurvenreich">kurvenreich</label>
 
        </td>
       </tr>
@@ -311,11 +337,15 @@ function init() {
      </table>
     </td>
     
-    <td>     <input type="radio" name="qrange_1" value="whole"checked />
-     gesamte Straﬂe<br />
-     <input type="radio" name="qrange_1" value="part" 
+    <td>     <label>
+      <input type="radio" name="qrange_1" value="whole"checked />
+      gesamte Straﬂe
+     </label><br />
+     <label>
+      <input type="radio" name="qrange_1" value="part" 
  />
-     Teilabschnitt<br />
+      Teilabschnitt
+     </label><br />
      <table cellpadding="0" cellspacing="0">
       <tr>       <td style="padding-right:1ex;">von</td>
        <td><input name="qrangefrom_1" /></td>
@@ -335,67 +365,78 @@ function init() {
     <td>
      <table cellpadding="0" cellspacing="0">
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW0"
+      <tr>       <td>
+        <input id="RWcat_1_RW0" style="margin-right:1em;" type="radio" name="RWcat_1" value="RW0"
  /></td>
-       <td>keine
+       <td><label for="RWcat_1_RW0">keine</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW1"
+      <tr>       <td>
+        <input id="RWcat_1_RW1" style="margin-right:1em;" type="radio" name="RWcat_1" value="RW1"
  /></td>
-       <td>Radweg
+       <td><label for="RWcat_1_RW1">Radweg</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW4"
+      <tr>       <td>
+        <input id="RWcat_1_RW4" style="margin-right:1em;" type="radio" name="RWcat_1" value="RW4"
  /></td>
-       <td>Radstreifen
+       <td><label for="RWcat_1_RW4">Radstreifen</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW7"
+      <tr>       <td>
+        <input id="RWcat_1_RW7" style="margin-right:1em;" type="radio" name="RWcat_1" value="RW7"
  /></td>
-       <td>Fahrradstraﬂe
+       <td><label for="RWcat_1_RW7">Fahrradstraﬂe</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW5"
+      <tr>       <td>
+        <input id="RWcat_1_RW5" style="margin-right:1em;" type="radio" name="RWcat_1" value="RW5"
  /></td>
-       <td>Busspur
+       <td><label for="RWcat_1_RW5">Busspur</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="RWcat_1" value="RW6"
+      <tr>       <td>
+        <input id="RWcat_1_RW6" style="margin-right:1em;" type="radio" name="RWcat_1" value="RW6"
  /></td>
-       <td>Spielstraﬂe
+       <td><label for="RWcat_1_RW6">Spielstraﬂe</label>
 
        </td>
       </tr>
 
 
       <tr>
-       <td><input type="radio" name="RWcat_1" value="userdefined"
+       <td>
+        <input type="radio" name="RWcat_1" value="userdefined"
  /></td>
        <td><input name="RWdescuserdef_1"  /></td>
       </tr>
      </table>
     </td>
     
-    <td>     <input type="radio" name="RWrange_1" value="whole"checked />
-     gesamte Straﬂe<br />
-     <input type="radio" name="RWrange_1" value="part" 
+    <td>     <label>
+      <input type="radio" name="RWrange_1" value="whole"checked />
+      gesamte Straﬂe
+     </label><br />
+     <label>
+      <input type="radio" name="RWrange_1" value="part" 
  />
-     Teilabschnitt<br />
+      Teilabschnitt
+     </label><br />
      <table cellpadding="0" cellspacing="0">
       <tr>       <td style="padding-right:1ex;">von</td>
        <td><input name="RWrangefrom_1" /></td>
@@ -414,41 +455,46 @@ function init() {
     <td>
      <table cellpadding="0" cellspacing="0">
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="sperrecat_1" value=""checked
+      <tr>       <td>
+        <input id="sperrecat_1_" style="margin-right:1em;" type="radio" name="sperrecat_1" value=""checked
  /></td>
-       <td>offen f¸r Radfahrer
+       <td><label for="sperrecat_1_">offen f¸r Radfahrer</label>
 
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="sperrecat_1" value="1"
+      <tr>       <td>
+        <input id="sperrecat_1_1" style="margin-right:1em;" type="radio" name="sperrecat_1" value="1"
  /></td>
-       <td>Einbahnstraﬂe in Richtung
+       <td><label for="sperrecat_1_1">Einbahnstraﬂe in Richtung</label>
 <input name="sperre_oneway_1"  />
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="sperrecat_1" value="BNP"
+      <tr>       <td>
+        <input id="sperrecat_1_BNP" style="margin-right:1em;" type="radio" name="sperrecat_1" value="BNP"
  /></td>
-       <td>Dr‰ngelgitter/Schranke an der Kreuzung
+       <td><label for="sperrecat_1_BNP">Dr‰ngelgitter/Schranke an der Kreuzung</label>
 <input name="sperre_BNP_1"  />
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="sperrecat_1" value="0"
+      <tr>       <td>
+        <input id="sperrecat_1_0" style="margin-right:1em;" type="radio" name="sperrecat_1" value="0"
  /></td>
-       <td>Treppe, Rad muss getragen werden
+       <td><label for="sperrecat_1_0">Treppe, Rad muss getragen werden</label>
 <input name="sperre_carry_1"  />
        </td>
       </tr>
 
 
-      <tr>       <td><input style="margin-right:1em;" type="radio" name="sperrecat_1" value="2"
+      <tr>       <td>
+        <input id="sperrecat_1_2" style="margin-right:1em;" type="radio" name="sperrecat_1" value="2"
  /></td>
-       <td>Straﬂe vollkommen gesperrt f¸r Radfahrer
+       <td><label for="sperrecat_1_2">Straﬂe vollkommen gesperrt f¸r Radfahrer</label>
 
        </td>
       </tr>

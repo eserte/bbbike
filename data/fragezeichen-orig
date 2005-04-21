@@ -66,7 +66,6 @@ Potsdam, Lennestr. - Ökonomieweg: asphaltiert, durch Park Sanssouci, der nachts 
 Sanssouci, Am Grünen Gitter: asphaltiert, nachts geschlossen	? -13857,-1040 -14153,-1135 -14182,-995
 Sanssouci, Ökonomieweg: nachts geschlossen, wie geht es am Neuen Palais weiter?	? -14182,-995 -14410,-1039 -14612,-1117 -14859,-1142 -15553,-1139 -15651,-1137 -15771,-1070
 Sella-Hasse-Str.: eigentlich in diese Fahrtrichtung gesperrt, aber noch keine Anknüpfung an das Restnetz vorhanden	?; 20948,16612 20771,16690 20843,16829
-Naumannstr. -> Sachsendamm: Überquerung möglich, aber hohe Penalty einplanen	? 7718,7641 7717,7564 7859,7486
 Viktoriapark, Katzbachstr. über das Denkmal zur Methfesselstr.: Weg wird aufgenommen, wenn bbbike.cgi Steigungen kann	? 8598,9061 8884,9078 8901,9104 8943,9098 8962,9048 9106,9038
 Viktoriapark, Kreuzbergstr. zur Methfesselstr.: Weg wird aufgenommen, wenn bbbike.cgi Steigungen kann	? 9141,9142 8973,9171 9007,9264 8955,9318
 # http://www.agenda21berlin.de/vonwegen/map_tmpvelo.htm
@@ -97,7 +96,6 @@ Boizenburger Str.: guter Asphalt (Q0)	? 22310,12829 22309,12350 22373,12273
 #: section ^^^
 #
 Verbindung zwischen Michelangelostr. und Hohenschönhausener Str. vorhanden? im Süden: ja, Feldweg	? 13838,15113 14125,14905 14574,14646
-Promenade am Teltowkanal: Qualität? durchgängig befahrbar?	? 6645,4254 6224,4307 6013,4327
 Rungiusstr: Kopfsteinpflaster?	? 13027,6168 13116,5689 13158,5490
 Weißwasserweg: Qualität? Als Abkürzung für Finckensteinallee/Ringstr. benutzbar?	? 2639,2989 2229,2898 2119,2790
 Europarc Dreilingen: Qualität? durchgängig befahrbar?	? -1525,1453 -3174,556 -3104,391
@@ -525,7 +523,7 @@ Zionskirchstr.: Qualität?	? 10101,14455 10277,14350
 Griebenowstr.: laut ADFC-Karte gut geeignet	? 10365,14372 10405,14425 10517,14508
 Wriezener/Osloer Str.: ist das Abbiegen wegen der Straßenbahn möglich?	? 9210,16638
 Graunstr/Ramlerstr.: Qualität? laut ADFC-Karte nicht geeignet	? 10022,15203 10012,15389 9917,15613 9865,15728 9652,15738 9314,15695
-Eldenaer etc.: Vorfahrtsregelung?	? 14661,12798 14336,12758 14096,12827 13844,12900 13798,13003 13756,13103 13707,13206 13658,13315 13550,13560
+Eldenaer etc.: Vorfahrtsregelung?	? 14661,12798 14336,12758 14096,12827 13960,12866 13844,12900 13798,13003 13756,13103 13707,13206 13658,13315 13550,13560
 Prenzlauer Allee -> Hiddenseer Str.: Abbiegen für Radfahrer möglich?	? 11822,15193 11655,15253
 #: XXX Was bedeutet "sehr eng" in der Straßeneintragung? 
 Gaudystr.: Qualität? Fortsetzung Richtung Mauerpark für Radfahrer befahrbar (ohne Einschränkung wegen der Halle)?	? 10473,15549 10759,15622 10949,15674
@@ -640,3 +638,5 @@ Mittelweg (Altglienicke, Bohnsdorf): Qualität, möglicherweise loser Sandweg?	? 2
 Terrassenstr.: Qualität?	? -1379,3897 -1554,3889 -1754,3907 -1909,3854 -1913,3672
 #: XXX anonymer Eintrag spricht von Kopfsteinpflaster, die ADFC-Karte hat unterschiedliche Qualitäten
 Schweinfurthstr.: Qualität: Kopfsteinpflaster oder Asphalt, unterschiedliche Beläge nördlich/südlich der Schorlemerallee?	? 3723,5922 3589,6101 3412,6353 3320,6455 3043,6806 2884,7016 2818,7105
+#: XXX Eintrag von Stefan b...q, tatsächlich?
+Jacobsohnstr.: Fahrradstraße	? 12200,16579 12353,16687 12486,16791 12521,16817 12699,16945

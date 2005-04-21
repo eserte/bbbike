@@ -121,7 +121,7 @@
         <small><a href="help.html#query" onclick="return help('query')">(Hilfe)</a></small>
 	<br>
       <label><input type="radio" name="mode_or_zoomdir" value="searchroute" onclick="change_mode_or_zoomdir()"> Start/Zielpunkt setzen</label>
-	<small>(experimentell! - <a href="help.html#search" onclick="return help('query')">Hilfe</a>)</small>
+	<small>(experimentell! - <a href="help.html#search" onclick="return help('search')">Hilfe</a>)</small>
       <p>
 
 [% ELSE %]
