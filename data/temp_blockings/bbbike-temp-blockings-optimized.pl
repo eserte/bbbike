@@ -237,14 +237,7 @@ userdel	q4 22217,1108 22162,1067
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1119477600,
-         'text' => 'L 200; (Bernau-Biesenthal); B 2, OD Rüdnitz grundh. Ausbau, Bau Kreisverk. Vollsperrung 29.03.2005-22.06.2005 ',
-         'from' => 1111960800,
-         'data' => 'userdel	q4 25095,35601 24915,35340
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1120168800,
          'text' => 'L 23; (Joachimsthal-Templin); OD Joachimsthal Neubau Durchlass Vollsperrung 29.03.2005-30.06.2005 ',

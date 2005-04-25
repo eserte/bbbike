@@ -1594,7 +1594,7 @@ userdel	1 13386,16408 13797,16237
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
-       until => 1119477600, # 2005-06-23 00:00
+       until => 1114370892, # XXX aufgehoben 2005-06-23 00:00
        text  => 'L 200; (Bernau-Biesenthal); B 2, OD Rüdnitz grundh. Ausbau, Bau Kreisverk. Vollsperrung 29.03.2005-22.06.2005 ',
        type  => 'handicap',
        data  => <<EOF,
