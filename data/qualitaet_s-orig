@@ -350,7 +350,7 @@ Königsheideweg: schlechter Asphalt	Q1 16256,5137 16051,5211 15859,5212 15373,567
 Uferweg: fester Sandweg	Q1 16604,8576 16529,8845 16449,9011 16319,9149 16259,9182 16129,9189 15969,9102 15793,8984
 Böcklinstr.: Kopfsteinpflaster	Q2 14676,11375 14598,11245
 Berliner Str.: Kopfsteinpflaster	Q2 12746,17981 12479,17811
-Handjerystr.: Kopfsteinpflaster	Q2 20982,3325 20556,3829
+Handjerystr.: Kopfsteinpflaster	Q2 20982,3325 20693,3667 20556,3829
 (An der Müggelspree): fester Waldweg	Q1 23441,4956 23468,5075 23620,5096 23776,5040 23982,5030 24233,4878 24398,4842 24834,4541 25023,4441 25102,4408 25427,4482 25479,4540 25565,4549
 Görlitzer Park: teils fester sandiger Weg	Q1 12671,10042 12686,10045 12690,10062
 Görlitzer Park: teils fester sandiger Weg	Q1 12761,10195 12770,10210 12779,10232
@@ -433,7 +433,6 @@ Wilmsstr.: Kopfsteinpflaster	Q2 10244,9981 10397,9962
 Boppstr.: Kopfsteinpflaster	Q2 11560,9524 11794,9438
 #: unverified_by ADFC-Karte
 Rufacher Weg: bedingt geeignet	Q2 12255,2058 12582,2129 12738,2162
-Rungiusstr.: Kopfsteinpflaster	Q2 13027,6168 12997,6290 12981,6371
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9355,19789 9266,20048 9174,20316 9142,20411 8915,20605 8714,20907 8526,21110 8321,21258 8277,21257
 Quickborner Str.: Kopfsteinpflaster	Q2 8170,21304 8022,21476
 Quickborner Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7072,22905 6779,23392
@@ -487,7 +486,7 @@ Sangerhauser Weg: Verbundsteine	Q1 10748,2412 10933,2606 10934,2670 11025,2766 1
 Alt-Britz: schlechtes Kopfsteinpflaster	Q3 12560,4290 12678,4389 12836,4649 12905,4761 13015,5062
 Bendastr.: Kopfsteinpflaster	Q2 12689,6905 12702,6846
 #: by: Gabi Sieber:
-Bendastr.: asphaltiert	Q0 12702,6846 12743,6645
+Bendastr.: asphaltiert	Q0 12702,6846 12715,6783 12743,6645
 Bendastr.: Kopfsteinpflaster	Q2 12743,6645 12756,6578 12779,6478 12793,6407 12804,6377
 Ilsestr.: Kopfsteinpflaster	Q2 12645,7087 12613,7236
 Jonasstr.: Kopfsteinpflaster	Q2 12221,7271 12396,7312 12585,7357 12703,7370
@@ -690,8 +689,6 @@ Wikingerufer: Kopfsteinpflaster	Q2 5369,12529 5391,12626 5376,12781 5372,12818 5
 Beerenstr.: Kopfsteinpflaster	Q2 82,3166 -765,3253 -1117,3317
 Jupiterstr.: Kopfsteinpflaster	Q2 14850,6546 15043,6799
 #: unverified_by ADFC-Karte
-Heidekampweg: mäßig geeignet	Q2 15719,6218 15667,6648
-#: unverified_by ADFC-Karte
 Malchower Str.: mäßig geeignet	Q2 12841,18157 13163,18149 13374,18134 13631,18041 13732,18026 13901,18124
 #: unverified_by ADFC-Karte
 Grumbkowstr.: mäßig geeignet	Q2 11297,20686 11437,20341 11584,20058 11756,19694
@@ -873,14 +870,14 @@ Fontanepromenade: Kopfsteinpflaster	Q2 10752,9662 10705,9555 10629,9360
 Freiligrathstr.: Kopfsteinpflaster	Q2 10903,9475 10705,9555
 Südstern: gutes Kopfsteinpflaster	Q1 10747,9326 10629,9360
 Südstern: Kopfsteinpflaster	Q2 10629,9360 10567,9379
-Samariterstr.: Kopfsteinpflaster	Q2 14488,12189 14538,12371 14595,12557 14632,12681 14661,12798
+Samariterstr.: Kopfsteinpflaster	Q2 14488,12189 14538,12371 14570,12478 14595,12557 14632,12681 14661,12798
 #: add_fragezeichen: Stimmt das?
 Fanningerstr.: Kopfsteinpflaster	Q2 16261,12224 16445,12193 16782,12154 16983,12124 17139,12100
 #: add_fragezeichen: mäßiges oder schlechtes Kopfsteinpflaster?
 Marienhöher Weg: Kopfsteinpflaster	Q2 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250
 Maulbronner Ufer: Parkweg	Q1 7161,4091 6904,4162
 (Luckeweg - Hildburghauser Str.): Parkweg	Q1 7544,624 7599,725
-Voigtstr.: Kopfsteinpflaster	Q2 14702,12157 14748,12314 14798,12502 14814,12626 14842,12826
+Voigtstr.: Kopfsteinpflaster	Q2 14702,12157 14748,12314 14776,12418 14798,12502 14814,12626 14842,12826
 Friedrichshaller Str.: Kopfsteinpflaster	Q2 3083,7587 2784,7711
 Christburger Str.: Kopfsteinpflaster	Q2 11642,14625 11920,14468 12188,14321
 Pasteurstr.: Kopfsteinpflaster	Q2 12499,14136 12792,13957
@@ -1135,6 +1132,7 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 #: by: kalkreuth
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 #: by: anonymous vvv
+Taunusstr. (Lichtenrade): gute Betonstraße	Q0 11578,-1220 11515,-935 11475,-595 11475,-548
 Schwendenerstr.: Asphalt	Q0 3426,5292 3324,5207 3072,5062 2906,4940 2762,4713
 Kaiserswerther Str.: grobes Kopfsteinpflaster	Q3 2762,4713 2545,4565 2461,4556
 Schönstedtstr. (Wedding): gutes Verbundsteinpflaster	Q1 8437,15894 8291,16033
@@ -1292,7 +1290,7 @@ Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7409,8621 7488,8768
 #: by: Mara Kuhl:
 Malplaquetstr.: mäßiges Kopfsteinpflaster	Q2 7441,15909 7051,16264
 #: by: Frank I:
-Stahnsdorfer Damm: breiter asphaltierter Forstweg	Q2 -4995,1075 -4974,900 -4717,694 -4257,328 -3985,115 -3541,-144
+Stahnsdorfer Damm: breiter asphaltierter Forstweg	Q2 -4995,1075 -4974,900 -4717,694 -4257,328 -3985,115
 #: by: Trine:
 Ringenwalder Str.: Asphalt	Q0 22478,16195 22406,16309 22215,16343 22090,16365 21801,16392
 #: by: "sportwart":
@@ -1573,6 +1571,12 @@ Ueckermünder Str.: Asphalt	Q0 10008,16330
 Am Rohrgarten: geteert	Q0 -2127,1760 -1973,1833 -1474,2073
 Quendelsteig: gut befahrbares Verbundsteinpflaster	Q1 -2165,1862 -2003,1913
 Himbeersteig: gut befahrbares Verbundsteinpflaster	Q1 -1973,1833 -2003,1913 -2064,2078
+Schopenhauerstr.: asphaltiert 	Q0 -1873,3315 -2162,3128
+Schopenhauerstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -2162,3128 -2481,2900 -2593,2764 -2918,2581 -3190,2467
+Normannenstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -3309,2400 -3395,2403 -3579,2532 -3692,2549
+Wasgenstr.: Kopfsteinpflaster	Q2 -2481,2900 -2395,2600
+Wasgenstr.: asphaltiert	Q0 -2395,2600 -2280,2164
+Breisgauer Str.: Teerstr.	Q0 -2306,3547 -2243,3371 -2162,3128 -2096,2929 -2026,2742
 #: by: ^^^
 #: by: Stefan (binarchy):
 Seelingstr.: Asphalt	Q0 3091,12071 2921,12059 2701,12033 2496,12023
@@ -1611,6 +1615,8 @@ Reinholdstr.: mäßiges Kopfsteinpflaster	Q2 12820,6805 13010,6842
 Bruno-Bauer-Str.: Kopfsteinpflaster	Q2 12806,6868 12820,6805 12851,6664 12865,6600 12879,6543
 #: note: laut Bild von Gabi:
 Juliusstr.: Kopfsteinpflaster	Q2 13209,6564 12890,6493 12779,6478 12545,6436
+Walterstr.: Kopfsteinpflaster	Q2 13125,6717 13010,6842 12983,6904 12934,6967
+Kranoldplatz: Kopfsteinpflaster	Q2 12820,6805 12715,6783
 #: by: ^^^
 #: by: Rüdiger Willer:
 #: note: auch laut ADFC-Karte gut geeignet:
@@ -1620,3 +1626,38 @@ Brennerstr.: Asphalt	Q0 10927,17022 10665,17023
 #: by: Lothar Wiesweg:
 #: note: Ich erinnere mich auch an Kopfsteinpflaster:
 Viktoriastr.: Kopfsteinpflaster	Q2 9171,5397 8943,5428
+#: by: Sissy (Rabefranziska)
+Genovevastr.: Asphalt	Q0 23066,7355 23312,7078 23603,6906
+#: by: Johannes Krugel: vvv
+Schmarjestr.: Asphalt	Q0 511,3532 971,3534
+Otto-von-Simson-Str.: Kopfsteinpflaster	Q2 2560,5044 2835,5410
+#: by: ^^^
+#: by: Bernd Stary:
+Mindener Str.: Asphalt	Q0 3143,13175 3292,13123 3415,13093 3542,13063
+#: by: Daniel (paulick):
+Im Eck: Kopfsteinpflaster	Q2 10028,1106 10150,1041
+#: by: Romana Miftari: vvv
+Mörikestr.: guter Asphalt	Q0 16049,6852 15821,6587
+#: note: laut ADFC-Karte "mäßig geeignet"
+Heidekampweg: holpriger Asphalt	Q2 15719,6218 15667,6648
+#: by: ^^^
+#: by: Kristine:
+Erasmusstr.: Asphalt	Q0 5216,13228 4964,13319
+#: by: Joachim Westphal:
+#: XXX: ich hatte für ein Teilstück "Kopfsteinpflaster" eingetragen --- woher hatte ich die Information? Die ADFC-Karte meint ebenfalls "gut geeignet"
+Rungiusstr.: sehr guter Asphalt	Q0 13158,5490 13116,5689 13077,5905 13065,5969 13027,6168 12997,6290 12981,6371 12962,6433
+#: by: Peter Panik:
+#: XXX widersprüchliche Einträge:
+#: add_fragezeichen: stimmt das?
+Schreinerstr.: schlechtes Kopfsteinpflaster	Q3 15054,12323 14776,12418 14570,12478 14304,12552
+#: by: frizzo
+Seestr. (Rahnsdorf): Asphalt	Q0 29860,4309 29660,4093 29593,4057 29350,3862
+#: by: Sandra (sweetydream...):
+Schulstr. (Spandau): Kopfsteinpflaster	Q2 -7562,13376 -7781,13437 -8014,13428 -8107,13415
+#: by: Michael Ebert:
+#: note: ebenso aus der S-Bahn gesehen, auch die ADFC-Karte sagt "gut geeignet"
+Eichbuschallee: guter Asphalt	Q0 16136,7886 15920,7697 15765,7567 15557,7388
+#: by: Nicole Weber:
+In den neuen Gärten: Asphalt	Q0 7130,3414 7339,3276 7378,3328 7482,3292
+#: by: Crsty (orion...):
+Gieselerstr.: Asphalt	Q0 4602,9439 4619,9200 4606,9023

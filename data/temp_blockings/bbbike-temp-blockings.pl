@@ -1773,4 +1773,36 @@ EOF
 userdel	q4 -1887,-21501 -1992,-21489
 EOF
      },
+     { from  => 1114468172, # 2005-04-26 00:29
+       until => 1136069999, # 2005-12-31 23:59
+       text  => 'Berliner Allee Richtung stadtauwärts, zwischen Langhanstr. und Lindenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 13540,15928 13751,16009 14014,16106 14067,16127 14371,16252
+EOF
+     },
+     { from  => 1114468319, # 2005-04-26 00:31
+       until => 1136069999, # 2005-12-31 23:59
+       text  => 'Vulkanstr. in Richtung Herzbergstr. Baustelle, Einbahnstraße in Richtung Landsberger Allee (bis Ende 2005)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 15838,14319 15873,14046 15880,13535
+EOF
+     },
+     { from  => 1114466400, # 2005-04-26 00:00
+       until => 1136070000, # 2006-01-01 00:00
+       text  => 'B 1; (Potsdamer Str.); OD Groß Kreutz Kanal- und Straßenbau Vollsperrung 27.04.2005-31.12.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4	-28793,-1618 -31991,-1024
+EOF
+     },
+     { from  => 1115503200, # 2005-05-08 00:00
+       until => 1116021600, # 2005-05-14 00:00
+       text  => 'L 30; (Tiergartenstr.); OT Neue Mühle, Schleuse Straßenbauarbeiten Vollsperrung 09.05.2005-13.05.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	2 27543,-11912 27657,-11741
+EOF
+     },
     );

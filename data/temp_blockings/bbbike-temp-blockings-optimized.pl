@@ -365,6 +365,38 @@ userdel	q4 -16640,1304 -16894,1485
          'data' => 'userdel	q4 -1887,-21501 -1992,-21489
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1136069999,
+         'text' => 'Berliner Allee Richtung stadtauwärts, zwischen Langhanstr. und Lindenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
+         'from' => 1114468172,
+         'data' => 'userdel	q4; 13540,15928 13751,16009 14014,16106 14067,16127 14371,16252
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1136069999,
+         'text' => 'Vulkanstr. in Richtung Herzbergstr. Baustelle, Einbahnstraße in Richtung Landsberger Allee (bis Ende 2005)',
+         'from' => 1114468319,
+         'data' => 'userdel	q4; 15838,14319 15873,14046 15880,13535
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1136070000,
+         'text' => 'B 1; (Potsdamer Str.); OD Groß Kreutz Kanal- und Straßenbau Vollsperrung 27.04.2005-31.12.2005 ',
+         'from' => 1114466400,
+         'data' => 'userdel	q4	-28793,-1618 -31991,-1024
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1116021600,
+         'text' => 'L 30; (Tiergartenstr.); OT Neue Mühle, Schleuse Straßenbauarbeiten Vollsperrung 09.05.2005-13.05.2005 ',
+         'from' => 1115503200,
+         'data' => 'userdel	2 27543,-11912 27657,-11741
+',
+         'type' => 'handicap'
        }
      
 );
