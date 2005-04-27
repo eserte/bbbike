@@ -1430,7 +1430,7 @@ Ortlerweg: schlechtes Kopfsteinpflaster	Q3 3500,1587 3740,1918 3700,2045
 Kögelstr.: mäßiges Kopfsteinpflaster	Q2 5221,17921 5367,17876
 #: by: Christian: vvv
 Wielandstr. (Friedenau): sehr guter Asphalt	Q0 6083,7582 6081,7215 6082,6965
-Fregestr.: guter Asphalt	Q0 5897,6799 5957,6889 5958,7220 5955,7406
+Fregestr.: guter Asphalt	Q0 5897,6799 5957,6889 5957,6970 5958,7220 5955,7406
 #: by: ^^^
 #: by: Thomas (dobr@...) vvv
 (Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Asphalt	Q0 7921,4451 8162,4725
@@ -1518,7 +1518,7 @@ Rudolf-Schwarz-Str.: mäßiges Kopfsteinpflaster	Q2 13115,14293 13079,14320 12811,
 #: by: Sabine Pesch:
 Kablower Weg: glatter Asphalt	Q0 22315,490 22504,425 22815,37 22976,-176 23206,206
 #: by: Verena:
-Dickhardtstr.: Beton	Q1 5533,6753 5604,6709 5778,6754 5828,6839 5817,7223
+Dickhardtstr.: Beton	Q1 5533,6753 5604,6709 5778,6754 5828,6839 5824,6974 5817,7223
 #: by: Mara Pankau: vvv
 Wetzlarer Str.: Asphalt	Q0 4352,6813 4482,6866 4599,6933 4787,7052
 # deckt sich auch mit dem ADFC-Eintrag:
@@ -1646,10 +1646,11 @@ Erasmusstr.: Asphalt	Q0 5216,13228 4964,13319
 #: by: Joachim Westphal:
 #: XXX: ich hatte für ein Teilstück "Kopfsteinpflaster" eingetragen --- woher hatte ich die Information? Die ADFC-Karte meint ebenfalls "gut geeignet"
 Rungiusstr.: sehr guter Asphalt	Q0 13158,5490 13116,5689 13077,5905 13065,5969 13027,6168 12997,6290 12981,6371 12962,6433
-#: by: Peter Panik:
-#: XXX widersprüchliche Einträge:
-#: add_fragezeichen: stimmt das?
-Schreinerstr.: schlechtes Kopfsteinpflaster	Q3 15054,12323 14776,12418 14570,12478 14304,12552
+#: by: Susanna (Vinesumar...): vvv
+#: XXX Peter Panik hat für die gesamte Strecke "schlechtes Kopfsteinpflaster" eingetragen
+Schreinerstr.: asphaltiert	Q0 15054,12323 14776,12418
+Schreinerstr.: Kopfsteinpflaster	Q2 14776,12418 14570,12478 14304,12552
+#: by: ^^^
 #: by: frizzo
 Seestr. (Rahnsdorf): Asphalt	Q0 29860,4309 29660,4093 29593,4057 29350,3862
 #: by: Sandra (sweetydream...):
@@ -1661,3 +1662,9 @@ Eichbuschallee: guter Asphalt	Q0 16136,7886 15920,7697 15765,7567 15557,7388
 In den neuen Gärten: Asphalt	Q0 7130,3414 7339,3276 7378,3328 7482,3292
 #: by: Crsty (orion...):
 Gieselerstr.: Asphalt	Q0 4602,9439 4619,9200 4606,9023
+#: by: Holger Niermann:
+Hattenheimer Str. (Frohnau): schlechtes Kopfsteinpflaster	Q3 2666,24998 2950,24719
+#: by: Markus Kringel:
+Hubertusstr. (Steglitz): Asphalt	Q0 5240,5922 5099,5994
+#: by: WIll Gibson:
+Hessenallee: Asphalt	Q0 657,11650 664,11678 788,11744 906,11870

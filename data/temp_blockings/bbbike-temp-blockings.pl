@@ -849,11 +849,11 @@ userdel	2 -38293,34081 -39143,34187
 EOF
      },
      { from  => 1095890400, # 2004-09-23 00:00
-       until => 1114898400, # 2005-05-01 00:00
-       text  => 'L 40; (Großbeeren-Güterfelde); zw. Großbeeren u. Neubeeren Neubau Bauwerk; Vollsperrung; 24.09.2004-30.04.2005 ',
+       until => 1117576800, # 2005-06-01 00:00
+       text  => 'L 40; (Großbeeren-Güterfelde); zw. Großbeeren u. Neubeeren Neubau Bauwerk Vollsperrung 24.09.2004-31.05.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 2715,-6365 2443,-6309
+userdel	2 2443,-6309 2715,-6365
 EOF
      },
      { from  => 1096754400, # 2004-10-03 00:00
@@ -1758,7 +1758,7 @@ userdel	q4 9569,11631 9701,11649
 EOF
      },
      { from  => 1113870146, # 2005-04-19 02:22
-       until => 1136069999, # 2005-12-31 23:59
+       until => 1114553274, # XXX ich konnte aus der S-Bahn heraus nichts erkennen 2005-12-31 23:59
        text  => 'Rosa-Luxemburg-Str. (Mitte) Richtung stadtauswärts, zwischen Memhardstr. und Torstr. Baustelle, Straße vollständig gesperrt (bis Ende 2005) Umleitung über Karl-Liebknecht-Straße - Torstraße',
        type  => 'handicap',
        data  => <<EOF,

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.15 2005/04/05 22:37:08 eserte Exp $
+# $Id: Berlin_DE.pm,v 1.16 2005/04/27 00:12:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -144,6 +144,29 @@ sub datadir {
 	    . "/data";
     }
     undef; # XXX better solution?
+}
+
+sub parse_street_type_nr {
+    my($self, $strname) = @_;
+    my $type;
+    my $do_round;
+    if ($strname =~ /berlin\s*-\s*usedom/i) {
+	$type = 'BU';
+    } elsif ($strname =~ /berlin\s*-\s*kopenhagen/i) {
+	$type = 'BK';
+    } elsif ($strname =~ /mauer.*weg/i) {
+	$type = 'M';
+    } elsif ($strname =~ /havellandradweg/i) {
+	$type = 'HVL';
+    } elsif ($strname =~ /spreeradweg/i) {
+	$type = 'S';
+    } elsif ($strname =~ /hofjagdweg/i) {
+	$type = 'H';
+    }
+    if (defined $type) {
+	$do_round = 1;
+    }
+    ($type, undef, $do_round);
 }
 
 1;

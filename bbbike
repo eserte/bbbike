@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.159 2005/04/16 18:29:11 eserte Exp $
+# $Id: bbbike,v 3.160 2005/04/27 00:26:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -213,7 +213,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.159 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.160 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -1039,42 +1039,22 @@ if (!defined $city) {
     $country = "DE";
 }
 if (defined $city) {
-    if (opendir GEO, "$FindBin::RealBin/Geography") {
-	my $search_term = $city;
-	if (defined $country) {
-	    $search_term .= ".*_$country";
-	}
-	my $found = 0;
-	while(defined(my $f = readdir GEO)) {
-	    next if -d $f || $f !~ /\.pm$/;
-	    if ($f =~ /^$search_term/i) {
-		$f =~ s/\.pm$//;
-		$citypkg = 'Geography::' . $f;
-		eval 'require ' . $citypkg;
-		die $@ if $@;
-		$city_obj = $citypkg->new;
-		set_datadir($city_obj->datadir, -clearold => 1);
-		%global_search_args = $city_obj->search_args
-		    if $city_obj->can("search_args");
-		$found++;
-		$no_original_datadir = $city ne "Berlin"; # XXX Was bedeutet das genau?
-		last;
-	    }
-	}
-	closedir GEO;
-	if (!$found) {
-	    die Mfmt("Kann keine passende Datei für Stadt=%s und Land=%s finden",
-		     $city, (defined $country ? $country : M("(unbestimmt)")));
-	}
+    require Geography;
+    $city_obj = Geography->new($city, $country);
+    if ($city_obj) {
+	set_datadir($city_obj->datadir, -clearold => 1);
+	%global_search_args = $city_obj->search_args
+	    if $city_obj->can("search_args");
+	$no_original_datadir = $city ne "Berlin"; # XXX Was bedeutet das genau?
     } else {
-	die Mfmt("Kann das Verzeichnis %s nicht öffnen: %s",
-		 "$FindBin::RealBin/Geography", $!);
+	die Mfmt("Kann keine passende Datei für Stadt=%s und Land=%s finden",
+		 $city, (defined $country ? $country : M("(unbestimmt)")));
     }
 } elsif ($datadir) {
     set_datadir($datadir, -clearold => 1);
     $no_original_datadir = 1;
 } else {
-    # XXX Should never happen anymore
+    warn "XXX Should never happen anymore";
     # default (Berlin)
     set_datadir("$FindBin::RealBin/data");
 }
@@ -6432,25 +6412,11 @@ sub draw_street_numbers {
     # the coloring is german specific
     my($c,$strname,$abk,$coordlist_ref) = @_;
     my $do_round = 0;
+    # XXX handling of multiple street numbers? e.g. "F1, R1" or "B2/B5"?
     my($type,$nr) = Strasse::parse_street_type_nr($strname);
     # Extra routes in and outer Berlin:
-    if (!defined $type) {
-	if ($strname =~ /berlin\s*-\s*usedom/i) {
-	    $type = 'BU';
-	} elsif ($strname =~ /berlin\s*-\s*kopenhagen/i) {
-	    $type = 'BK';
-	} elsif ($strname =~ /mauer.*weg/i) {
-	    $type = 'M';
-	} elsif ($strname =~ /havellandradweg/i) {
-	    $type = 'HVL';
-	} elsif ($strname =~ /spreeradweg/i) {
-	    $type = 'S';
-	} elsif ($strname =~ /hofjagdweg/i) {
-	    $type = 'H';
-	}
-	if (defined $type) {
-	    $do_round = 1;
-	}
+    if (!defined $type && $city_obj && $city_obj->can("parse_street_type_nr")) {
+	($type, $nr, $do_round) = $city_obj->parse_street_type_nr($strname);
     }
     if (defined $type) {
 	my $dist = 0;

@@ -13,10 +13,10 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1114898400,
-         'text' => 'L 40; (Großbeeren-Güterfelde); zw. Großbeeren u. Neubeeren Neubau Bauwerk; Vollsperrung; 24.09.2004-30.04.2005 ',
+         'until' => 1117576800,
+         'text' => 'L 40; (Großbeeren-Güterfelde); zw. Großbeeren u. Neubeeren Neubau Bauwerk Vollsperrung 24.09.2004-31.05.2005 ',
          'from' => 1095890400,
-         'data' => 'userdel	2 2715,-6365 2443,-6309
+         'data' => 'userdel	2 2443,-6309 2715,-6365
 ',
          'type' => 'gesperrt'
        },
@@ -350,14 +350,7 @@ userdel	q4 -16640,1304 -16894,1485
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1136069999,
-         'text' => 'Rosa-Luxemburg-Str. (Mitte) Richtung stadtauswärts, zwischen Memhardstr. und Torstr. Baustelle, Straße vollständig gesperrt (bis Ende 2005) Umleitung über Karl-Liebknecht-Straße - Torstraße',
-         'from' => 1113870146,
-         'data' => 'userdel	q4; 10755,13152 10846,13362 10790,13565 10777,13614 10746,13673
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1115244000,
          'text' => 'B 101; (Luckenwalder-, Berliner Str.); OD Trebbin, Knoten Beelitzer Str. Straßenbauarbeiten Vollsperrung 01.04.2005-04.05.2005 ',

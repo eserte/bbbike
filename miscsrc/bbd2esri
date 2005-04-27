@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2esri,v 1.14 2004/12/29 23:29:07 eserte Exp $
+# $Id: bbd2esri,v 1.16 2005/04/27 00:36:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -21,6 +21,7 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/../data",
 	);
+use Geography;
 use Strassen::Core;
 use Strassen::MultiStrassen;
 use Strassen::Strasse;
@@ -37,6 +38,9 @@ my $type = "";
 my $imagetype;
 my $onewayhack;
 my $qualityshack;
+
+my $city;
+my $country;
 
 # Generated with M-x occur --append in landstrassen-orig
 # and some hand-editing... # XXX automate!
@@ -56,8 +60,13 @@ if (!GetOptions("o=s" => \$outprefix,
 		"imagetype=s" => \$imagetype,
 		"onewayhack!" => \$onewayhack,
 		"qualityshack!" => \$qualityshack,
+		"city=s" => \$city,
+		"country=s" => \$country,
 	       )) {
-    die "usage $0: [-o outprefix] [-shptype shapetype] [-type type] [-imagetype imagetype] [-onewayhack] [-qualityshack] bbdfile ...
+    die "usage $0: [-o outprefix] [-shptype shapetype] [-type type]
+	[-imagetype imagetype] [-onewayhack] [-qualityshack]
+	[-city city] [-country country]
+	bbdfile ...
 
 shapetype may be auto, polyline, polygon, or point
 ";
@@ -65,6 +74,8 @@ shapetype may be auto, polyline, polygon, or point
 if (!defined $outprefix) {
     die "-o is missing";
 }
+
+my $city_obj = Geography->new($city, $country);
 
 my @files = @ARGV;
 if (!@files) {
@@ -141,7 +152,7 @@ sub create_shape_file {
 	    push @rec_length, length($rec);
 	    push @rec, $rec;
 	    $rec_offset += length($rec);
-	    push @dbf, create_dbf_record($d, -type => $type);
+	    push @dbf, create_dbf_record($d, -type => $type, -file => $file);
 	};
 
 	iterate {
@@ -325,13 +336,21 @@ sub create_dbf_record {
 	    } else {
 		$displayname = "";
 	    }
-	    my($type,$nr) = Strasse::parse_street_type_nr($s_rec->[Strassen::NAME]);
-	    if (defined $type) {
-		$str_nr = "$type$nr"; # XXX flacky...
-	    }
 	} elsif ($args{-type} =~ /^ferry/) {
 	    $str_nr = "\xa0"; # dummy invisible string for mapserver
 	    # a single space seems to be ignored by dbf or Xbase
+	}
+	if ($args{-type} eq 'street-l' ||
+	    $args{-file} =~ /\bcomments_route/) {
+	    my($type,$nr) = Strasse::parse_street_type_nr($s_rec->[Strassen::NAME]);
+	    if (!defined $type && $city_obj && $city_obj->can("parse_street_type_nr")) {
+		my $do_round; # XXX not yet used...
+		($type, $nr, $do_round) = $city_obj->parse_street_type_nr($s_rec->[Strassen::NAME]);
+		$nr = "" if !defined $nr;
+	    }
+	    if (defined $type) {
+		$str_nr = "$type$nr"; # XXX flacky...
+	    }
 	}
     }
     if ($s_rec->[Strassen::CAT] =~ /\|/) {

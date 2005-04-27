@@ -1170,15 +1170,32 @@ LAYER
       COLOR 0 0 0
     END
   END
+  METADATA
+    WMS_TITLE "Straﬂennummern"
+    WMS_ABSTRACT "Straﬂennummern und Nummerierung von ausgeschilderten Radrouten"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Straﬂen (Annotations)"
+  GROUP strassen
+#  MAXSCALE 600000
+  STATUS [% ON_STRASSEN %]
+  DATA comments_route
+  TYPE ANNOTATION
+  LABELITEM "STRNR"
+  CLASSITEM "CAT"
   CLASS
 # XXX warum geht /^F/ nicht???
+#    EXPRESSION /^F/
     EXPRESSION /^.+/
     COLOR [% COLOR_GREEN %]
     SYMBOL 'strnrbox'
     SIZE 10
     LABEL
       MINFEATURESIZE 50
-      MINDISTANCE 150
+      MINDISTANCE 100
       POSITION CC
       TYPE truetype
       FONT "lucida"

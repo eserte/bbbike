@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.20 2005/03/28 20:54:38 eserte Exp $
+# $Id: MapServer.pm,v 1.20 2005/03/28 20:54:38 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -487,6 +487,7 @@ sub draw_route {
 
 # Draw this first, otherwise the filling of the circle won't work!
 sub draw_wind {
+    # XXX use the TRANSFORM FALSE feature of layer objects in mapserver here!
     die "draw_wind NYI";
 #      my $self = shift;
 #      return unless $self->{Wind};

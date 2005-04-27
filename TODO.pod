@@ -12,13 +12,11 @@ Legend:
 
 =head1 NEXT RELEASE
 
-=head2 Show stoppers
+=head2 Show stoppers -> scheduled release @ 2005-04-30
 
 =over
 
 =item * Check everything in (almost only data is missing)
-
-=item * Write Changes/Release notes (well... take it easy)
 
 =item * test GPS @ windows, especially multiple uploads
 
@@ -1034,6 +1032,7 @@ with Tk804?).
 =item * (E3)
 
 Windows: add List::Permutor to the bindist of Windows (sieperl)
+-> getan; überprüfen, ob Salesman nun läuft
 
 =item * (M1)
 
@@ -1260,6 +1259,12 @@ E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.
 =head2 Datenhandling (make, conversion ...)
 
 =over
+
+=item * (H3)
+
+rbahn-orig -> rbahn-orig + rbahnhof-orig. Oder gibt es noch einen
+Grund für das Extra-Handling? insert_points und co. sollten gut genug
+sein, um die beiden Dateien synchron zu halten...
 
 =item * (M3)
 
@@ -1708,11 +1713,6 @@ aus?
 
 Weiterhin kann man Strasse::short verwenden, wenn es nicht passt.
 
-=item * (E5)
-
-Überprüfen: wird womöglich eine cooked-Version beim Erstellen des
-PDF-Straßennetzes verwendet?
-
 =item * (M1)
 
 Via im Titel erwähnen: Start -> Goal über Via. Dazu muesste vianame im
@@ -1795,6 +1795,17 @@ crossing, or just a crossing) from normal text.
 
 Sometime take a look at L<http://search.cpan.org/dist/Geo-Shapelib/>
 Only needed if my functions would be too slow one day.
+
+=back
+
+=head1 MapServer
+
+=over
+
+=item * (M2)
+
+Zurzeit werden innerhalb Berlins Radroutennummern angezeigt. Soll das
+so bleiben?
 
 =back
 

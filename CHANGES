@@ -29,12 +29,14 @@ bbbike (ptk)
 - workaround for no-mod bindings
 
 Data
-- comments splitted into comments_cyclepath, comments_ferry, comments_misc,
-  comments_mount, comments_path, comments_route, comments_tram, and
-  comments_kfzverkehr (the last one is new)
+- about 600 more streets in Berlin
+- more streets in Brandenburg
 - Berlin-Kreuzberg is complete (except for some dead end streets), large
   parts of southern Friedrichshain and Mitte and northern Neukoelln are
   also complete
+- comments splitted into comments_cyclepath, comments_ferry, comments_misc,
+  comments_mount, comments_path, comments_route, comments_tram, and
+  comments_kfzverkehr (the last one is new)
 
 Modules
 - BBBikeDraw::* is now (often) faster due to usage of grids

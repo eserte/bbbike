@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: Geography.pm,v 1.3 2000/03/17 01:47:44 eserte Exp $
+# $Id: Geography.pm,v 1.5 2005/04/27 00:26:09 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2005 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
 package Geography;
@@ -18,7 +18,40 @@ sub new {
     my($class, $city, $country, @args) = @_;
     my $pkg = 'Geography::' . ucfirst(lc($city)) . '_' . uc($country);
     my $obj = eval 'use ' . $pkg . '; ' . $pkg . '->new(@args)';
+    if (!$obj) {
+	$obj = $class->fallback_constructor($city, $country, @args);
+    }
     $obj;
+}
+
+sub fallback_constructor {
+    my($class, $city, $country, @args) = @_;
+    require File::Basename;
+    my $geo_dir = File::Basename::dirname(__FILE__). "/Geography";
+    warn $geo_dir;
+    my $city_obj;
+    if (opendir GEO, $geo_dir) {
+	my $search_term = quotemeta $city;
+	if (defined $country) {
+	    $search_term .= ".*_" . quotemeta $country;
+	}
+	while(defined(my $f = readdir GEO)) {
+	    next if -d $f || $f !~ /\.pm$/;
+	    if ($f =~ /^$search_term/i) {
+		$f =~ s/\.pm$//;
+		my $citypkg = 'Geography::' . $f;
+		eval 'require ' . $citypkg;
+		die $@ if $@;
+		$city_obj = $citypkg->new;
+		last;
+	    }
+	}
+	closedir GEO;
+	return $city_obj;
+    } else {
+	die sprintf("Kann das Verzeichnis %s nicht öffnen: %s",
+		    $geo_dir, $!);
+    }
 }
 
 # XXX smarter? look at existing data directories?

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.19 2005/02/15 22:31:46 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.21 2005/04/27 00:36:42 eserte Exp $
 #
 
 # should this be here?
@@ -188,6 +188,7 @@ MAPFILES=		$(MAPFILES_DATA_DIR)/strassen.shp \
 			$(MAPFILES_DATA_DIR)/radwege20.shp \
 			$(MAPFILES_DATA_DIR)/obst.shp \
 			$(MAPFILES_DATA_DIR)/comments.shp \
+			$(MAPFILES_DATA_DIR)/comments_route.shp \
 			$(MAPFILES_DATA_DIR)/faehren.shp \
 			$(MAPFILES_DATA_DIR)/hoehe.shp \
 			$(MAPFILES_DATA_DIR)/mount.shp \
@@ -310,6 +311,9 @@ $(MAPFILES_DATA_DIR)/obst.shp:	obst
 $(MAPFILES_DATA_DIR)/comments.shp:	$(COMMENTS_PARTIAL)
 	cat $(COMMENTS_PARTIAL) > /tmp/comments
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/comments /tmp/comments
+
+$(MAPFILES_DATA_DIR)/comments_route.shp:	comments_route
+	$(BBD2ESRI) -city Berlin -country DE -o $(MAPFILES_DATA_DIR)/comments_route comments_route
 
 $(MAPFILES_DATA_DIR)/faehren.shp:	faehren
 	$(BBD2ESRI) -type ferry -o $(MAPFILES_DATA_DIR)/faehren faehren
