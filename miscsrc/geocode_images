@@ -1,0 +1,109 @@
+#!/usr/bin/perl -w
+#
+# Copyright 2005 iconmobile GmbH. All rights reserved.
+#
+
+use strict;
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+
+use File::Spec;
+use File::Basename;
+use Getopt::Long;
+use Image::Info qw(image_info);
+use Time::Local qw(timelocal);
+use GD;
+use Image::GD::Thumbnail;
+
+use lib "/home/slavenr/work2/bbbike";
+use GPS::GpsmanData;
+use Karte::Standard;
+use Karte::Polar;
+
+my $gps_data_dir = "/home/slavenr/work2/bbbike/misc/gps_data";
+my $thumbnail_dir = "/tmp/thumbnails";
+mkdir $thumbnail_dir if !-d $thumbnail_dir;
+
+my $converter;
+
+sub get_image_location {
+    my $file = shift;
+    my $info = image_info($file);
+    if (my $error = $info->{error}) {
+	warn "Can't parse image info from $file: $error\n";
+	return;
+    }
+
+    my(@lines) = split /\n/, $info->{Comment};
+    my $date = $lines[2];
+    my $time = $lines[3];
+
+    if ($date !~ /^(\d+)-(\d+)-(\d{4})$/) {
+	warn "Can't parse date $date (file $file)";
+	return;
+    }
+    my($y,$m,$d) = ($3,$2,$1);
+
+    if ($time !~ /^(\d+)\.(\d+)\.(\d+)$/) {
+	warn "Can't parse time $time (file $file)";
+	return;
+    }
+    my($H,$M,$S) = ($1,$2,$3);
+
+    my $iso_date = sprintf "%04d-%02d-%02dT%0d:%0d:%0d", $y,$m,$d,$H,$M,$S;
+    my $epoch = timelocal($S,$M,$H,$d,$m-1,$y-1900);
+
+    my $filename = sprintf "%04d%02d%02d.trk", $y,$m,$d;
+    $filename = $gps_data_dir . "/" . $filename;
+
+
+    if (-e $filename) {
+	my $gps = GPS::GpsmanData->new;
+	$gps->load($filename);
+	my $got_wpt;
+	for my $wpt (@{ $gps->Track }) {
+	    my $wpt_epoch = $wpt->Comment_to_unixtime;
+	    if ($wpt_epoch > $epoch) {
+		$got_wpt = $wpt;
+		last;
+	    }
+	}
+	if (!$got_wpt) {
+	    $got_wpt = $gps->Track->[-1];
+	}
+	if ($got_wpt) {
+	    $converter = GPS::GpsmanData::_get_converter($gps->PositionFormat, "DDD"); # XXX hacky!
+	    return ($got_wpt->Latitude, $got_wpt->Longitude);
+	}
+    }
+}
+
+for my $file (@ARGV) {
+    my($lat, $long) = get_image_location($file);
+    if (defined $lat) {
+	my($x, $y) = $Karte::Standard::obj->trim_accuracy
+	    ($Karte::Polar::obj->map2standard(map { $converter->($_) }
+					      $long, $lat));
+	#my $abs_file = File::Spec->rel2abs($file);
+	my $abs_file = create_thumbnail($file);
+	print "$file $lat $long\tIMG:$abs_file $x,$y\n";
+    }
+}
+
+sub create_thumbnail {
+    my $file = shift;
+    open my $IN, $file or die "Could not open $file: $!";
+    binmode $IN;
+    my $srcImage = GD::Image->new($IN);
+    close $IN;
+
+    my ($thumb,$x,$y) = Image::GD::Thumbnail::create($srcImage,50);
+
+    # Save your thumbnail
+    my $dest = $thumbnail_dir . "/" . basename($file);
+    open my $OUT, ">", $dest or die "Could not save $dest: $!";
+    binmode $OUT;
+    print $OUT $thumb->jpeg;
+    close $OUT;
+
+    $dest;
+}
