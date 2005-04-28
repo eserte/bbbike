@@ -4,12 +4,13 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 use File::Spec;
 use File::Basename;
 use Getopt::Long;
-use Image::Info qw(image_info);
+eval 'use Image::Info qw(image_info);';
+eval 'use Image::ExifTool qw(ImageInfo);';
 use Time::Local qw(timelocal);
 use GD;
 use Image::GD::Thumbnail;
@@ -27,27 +28,47 @@ my $converter;
 
 sub get_image_location {
     my $file = shift;
-    my $info = image_info($file);
-    if (my $error = $info->{error}) {
-	warn "Can't parse image info from $file: $error\n";
-	return;
+
+    my($y,$m,$d,$H,$M,$S);
+
+    if (defined &ImageInfo) {
+	my $exif = ImageInfo($file);
+	if ($exif) {
+	    my $date = $exif->{DateTimeOriginal} || $exif->{CreateDate};
+	    if (defined $date && $date =~ /^(\d{4}):(\d{2}):(\d{2}) (\d{2}):(\d{2}):(\d{2})$/) {
+		($y,$m,$d,$H,$M,$S) = ($1,$2,$3,$4,$5,$6);
+	    }
+	}
     }
 
-    my(@lines) = split /\n/, $info->{Comment};
-    my $date = $lines[2];
-    my $time = $lines[3];
+    if (!defined $y && defined &image_info) {
+	# Nokia 7650 hack
+	my $info = image_info($file);
+	if (my $error = $info->{error}) {
+	    warn "Can't parse image info from $file: $error\n";
+	    return;
+	}
 
-    if ($date !~ /^(\d+)-(\d+)-(\d{4})$/) {
-	warn "Can't parse date $date (file $file)";
-	return;
-    }
-    my($y,$m,$d) = ($3,$2,$1);
+	if (defined $info->{Comment}) {
+	    my(@lines) = split /\n/, $info->{Comment};
+	    my $date = $lines[2];
+	    my $time = $lines[3];
 
-    if ($time !~ /^(\d+)\.(\d+)\.(\d+)$/) {
-	warn "Can't parse time $time (file $file)";
-	return;
+	    if (!defined $date || $date !~ /^(\d+)-(\d+)-(\d{4})$/) {
+		warn "Can't parse date $date (file $file)";
+		return;
+	    }
+	    ($y,$m,$d) = ($3,$2,$1);
+
+	    if (!defined $date || $time !~ /^(\d+)\.(\d+)\.(\d+)$/) {
+		warn "Can't parse time $time (file $file)";
+		return;
+	    }
+	    ($H,$M,$S) = ($1,$2,$3);
+	}
     }
-    my($H,$M,$S) = ($1,$2,$3);
+
+    return if (!defined $y);
 
     my $iso_date = sprintf "%04d-%02d-%02dT%0d:%0d:%0d", $y,$m,$d,$H,$M,$S;
     my $epoch = timelocal($S,$M,$H,$d,$m-1,$y-1900);
@@ -55,6 +76,7 @@ sub get_image_location {
     my $filename = sprintf "%04d%02d%02d.trk", $y,$m,$d;
     $filename = $gps_data_dir . "/" . $filename;
 
+    warn "Try $filename for date $iso_date...\n";
 
     if (-e $filename) {
 	my $gps = GPS::GpsmanData->new;
