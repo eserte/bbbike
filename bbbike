@@ -5299,9 +5299,9 @@ sub generate_plot_functions {
 		    }
 		    if ($image) {
 			if (!$photo{$image}) {
-			    my $f = Tk::findINC("images/$image");
+			    my $f = file_name_is_absolute($image) ? $image : Tk::findINC("images/$image");
 			    if ($f) {
-				$photo{$image} = $c->Photo(-file => $f);
+				$photo{$image} = image_from_file($top, $f);
 			    } else {
 				warn "Can't find photo $image (1)";
 			    }
@@ -5444,8 +5444,8 @@ sub generate_plot_functions {
 		} elsif ($cat_hin =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) { # Bild, no $cat_rueck handling here
 		    my $img = $1;
 		    my $anchor = ($2 ? $2 : "c");
-		    $img = Tk::findINC("data/$img");
-		    my $p = $c->Photo(-file => $img);
+		    $img = file_name_is_absolute($img) ? $img : Tk::findINC("data/$img");
+		    my $p = image_from_file($top, $img);
 		    # XXX this is leaking (photo never deleted...)
 		    # XXX $abk-XXX => $abk-fg or $abk-img ?
 		    # XXX use $abk-fg for now (scaling works!)
