@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.3 2005/04/29 06:54:56 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.4 2005/04/29 18:48:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -14,7 +14,9 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $image_viewer_toplevel);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+
+my $iso_date_rx = qr{(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})};
 
 sub register {
     add_button();
@@ -51,7 +53,13 @@ sub button {
     my($c, $e) = @_;
     my $current_inx = $c->find(withtag => "current");
     my($img_x, $img_y) = $c->coords($current_inx);
-    my @all_image_inx = grep {
+    my @all_image_inx = sort {
+	my(@tags_a) = $c->gettags($a);
+	my(@tags_b) = $c->gettags($b);
+	my($date_a) = $tags_a[1] =~ $iso_date_rx;
+	my($date_b) = $tags_b[1] =~ $iso_date_rx;
+	$date_a cmp $date_b;
+    } grep {
 	my(@tags) = $c->gettags($_);
 	my $name = $tags[1];
 	$name =~ /^Image:/;
@@ -78,6 +86,7 @@ sub show_image_viewer {
 	if (!-e $abs_file) {
 	    main::status_message("Kann die Datei $abs_file nicht finden", "die");
 	}
+	my($date) = $name =~ $iso_date_rx;
 	if (!defined $image_viewer_toplevel || !Tk::Exists($image_viewer_toplevel)) {
 	    $image_viewer_toplevel = $main::top->Toplevel(-title => "Image viewer");
 	    my $f = $image_viewer_toplevel->Frame->pack(-fill => "x", -side => "bottom");
@@ -85,6 +94,8 @@ sub show_image_viewer {
 	    $image_viewer_toplevel->Advertise(PrevButton => $prev_button);
 	    my $next_button = $f->Button(-text => ">>")->pack(-side => "left");
 	    $image_viewer_toplevel->Advertise(NextButton => $next_button);
+	    my $date_label = $f->Label->pack(-side => "left");
+	    $image_viewer_toplevel->Advertise(DateLabel => $date_label);
 	    my $image_viewer_label = $image_viewer_toplevel->Label->pack(-fill => "both", -expand => 1,
 									 -side => "bottom");
 	    $image_viewer_toplevel->Advertise(ImageLabel => $image_viewer_label);
@@ -141,6 +152,8 @@ sub show_image_viewer {
 	} else {
 	    $image_viewer_toplevel->Subwidget("NextButton")->configure(-state => "disabled");
 	}
+
+	$image_viewer_toplevel->Subwidget("DateLabel")->configure(-text => $date);
 
 	$image_viewer_toplevel->{"photo"} = $p;
 	$image_viewer_toplevel->deiconify;
