@@ -1167,9 +1167,9 @@ EOF
 userdel	q4 3125,88753 2788,89447
 EOF
      },
-     { from  => 1113870336, # 2005-04-19 02:25
-       until => 1114725600, # 2005-04-29 00:00
-       text  => 'Volkradstraße (Lichtenberg) Richtung Rummelsburger Straße, zwischen Sewanstraße und Moldaustraße Baustelle, Straße gesperrt, (bis 28.04.2005)',
+     { from  => 1114726594, # 2005-04-29 00:16
+       until => 1116021600, # 2005-05-14 00:00
+       text  => 'Volkradstr. (Lichtenberg) Richtung Rummelsburger Str. zwischen Sewanstr. und Rummelsburger Str. Baustelle, Fahrtrichtung gesperrt (bis 13.05.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1 17475,10442 17427,10259
@@ -1618,9 +1618,9 @@ userdel	q4 38035,49183 37875,48253
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
-       until => 1115071200, # 2005-05-03 00:00
-       text  => 'L 23; (Templin-Lychen); OD Lychen, Kreuzungsber. Straßenbau Vollsperrung 29.03.2005-02.05.2005 ',
-       type  => 'handicap',
+       until => 1115157600, # 2005-05-04 00:00
+       text  => 'L 23; (Templin-Lychen); OD Lychen, Kreuzungsber. Straßenbau Vollsperrung 29.03.2005-03.05.2005 ',
+       type  => 'gesperrt',
        data  => <<EOF,
 userdel	q4 3125,88753 2788,89447
 EOF
@@ -1803,6 +1803,30 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	2 27543,-11912 27657,-11741
+EOF
+     },
+     { from  => 1115503200, # 2005-05-08 00:00
+       until => 1120946400, # 2005-07-10 00:00
+       text  => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 09.05.2005-09.07.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 26313,-13049 26028,-12312
+EOF
+     },
+     { from  => 1114725600, # 2005-04-29 00:00
+       until => 1114984800, # 2005-05-02 00:00
+       text  => 'B 198; (Schwedter Str.); OD Prenzlau, Kno. Uckermarkkaserne Ausbau Knotenpunkt Vollsperrung 30.04.2005-01.05.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 40864,100741 40507,100965
+EOF
+     },
+     { from  => 1114725600, # 2005-04-29 00:00
+       until => 1114984800, # 2005-05-02 00:00
+       text  => 'L 90; (Eisenbahnstr.); OD Werder, zw. B1 Berliner Str. u. Phöbener Str. 126. Baumblütenfest Vollsperrung 30.04.2005-01.05.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -21137,-4034 -21112,-3787
 EOF
      },
     );

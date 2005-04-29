@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.108 2005/04/05 22:32:04 eserte Exp $
+# $Id: Makefile.PL,v 1.109 2005/04/29 00:18:19 eserte Exp $
 
 use 5.005;
 
@@ -129,6 +129,8 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
    'hilft bei der sicheren Ausführung von externen Kommandos (insbesondere für Win32)'],
   [qw/Imager	0	all	0	devel/,
    'additional optional BBBikeDraw backend for PNG graphics'],
+  [qw/Image::ExifTool	0	all	0	devel/,
+   'für geocode_images'],
   [qw/SVG	0	all	2	cgi/,
    'additional optional BBBikeDraw backend for SVG graphics'],
   [qw/Object::Iterate	0	all	2	base/,

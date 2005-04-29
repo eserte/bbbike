@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeProfil.pm,v 1.11 2005/03/29 21:46:49 eserte Exp $
+# $Id: BBBikeProfil.pm,v 1.12 2005/04/27 22:37:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2002 Slaven Rezic. All rights reserved.
@@ -58,15 +58,21 @@ sub Show {
 	     }
 	    );
     }
-    my $c;
+
     if ($context->{ProfilCanvas} &&
 	Tk::Exists($context->{ProfilCanvas})) {
-	$c = $context->{ProfilCanvas};
+	# nop
     } else {
 	my($w, $h) = (int($top->screenwidth/3*2),
 		      int($top->screenheight/6));
-	$c = $toplevel->Canvas(-height => $h, -width => $w)->pack;
-	$context->{ProfilCanvas} = $c;
+	$context->{ProfilCanvas} = $toplevel->Canvas(-height => $h, -width => $w)->pack;
+    }
+
+    if ($context->{ProfilLabel} &&
+	Tk::Exists($context->{ProfilLabel})) {
+	# nop
+    } else {
+	$context->{ProfilLabel} = $toplevel->Label->pack(-anchor => "w");
     }
 
     $self->Redraw($context, %args);
@@ -76,6 +82,7 @@ sub Redraw {
     my($self, $context, %args) = @_;
     my $t = $context->{ProfilToplevel};
     my $c = $context->{ProfilCanvas};
+    my $label = $context->{ProfilLabel};
     $c->delete('all');
     my $hoehe   =    $context->{Hoehe};
     my(@coords) = @{ $context->{Coords} };
@@ -115,7 +122,9 @@ sub Redraw {
     my $x_sub = sub { int($_[0]/$dist[$#dist]*$w) };
     my $y_sub = sub { $h - int($_[0]/($max_h+10)*$h) };
 
-    my($lastx, $lasty);
+    my $hoehen_meter = 0;
+
+    my($lastx, $lasty, $last_hoehe);
     my @etappe_coords;
     for(my $i=0; $i<=$#dist; $i++) {
 	my($d) = $dist[$i];
@@ -135,7 +144,11 @@ sub Redraw {
 		    );
 		@etappe_coords = ($x, $y);
 	    }
+	    if (defined $last_hoehe && $last_hoehe < $hoehe->{"$x,$y"}) {
+		$hoehen_meter += ($hoehe->{"$x,$y"} - $last_hoehe);
+	    }
 	    ($lastx, $lasty) = ($thisx, $thisy);
+	    $last_hoehe = $hoehe->{"$x,$y"};
 	}
     }
 
@@ -158,6 +171,12 @@ sub Redraw {
 	for my $y ($max_y, $min_y) {
 	    $c->createLine(25, $y, $w, $y, -dash => "..");
 	}
+    }
+
+    if ($hoehen_meter) {
+	$label->configure(-text => M("Höhenmeter") . ": $hoehen_meter m");
+    } else {
+	$label->configure(-text => "");
     }
 
     $c->raise("alt");

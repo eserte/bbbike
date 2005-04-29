@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.20 2005/03/27 22:42:16 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.21 2005/04/28 22:11:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -1112,6 +1112,7 @@ sub BBBikeHeavy::any_bbbikedraw_export {
     eval {
 	my $draw = BBBikeDraw->new
 	    (ImageType => $args{-imagetype},
+	     Module => $args{-module},
 	     Coords => [map { join ",", @$_ } @realcoords],
 	     Fh => \*OUT,
 	     Scope => $scope,
@@ -1133,9 +1134,9 @@ sub BBBikeHeavy::any_bbbikedraw_export {
 	    $draw->init;
 	    $draw->pre_draw;
 	}
-	$draw->draw_map;
+	$draw->draw_map if $draw->can("draw_map");
 	if (@realcoords) {
-	    $draw->draw_route;
+	    $draw->draw_route if $draw->can("draw_route");
 	    if ($net && $draw->can("add_route_descr")) {
 		$draw->add_route_descr(-net => $net)
 	    }

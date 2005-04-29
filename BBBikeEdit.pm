@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.85 2005/04/26 23:31:01 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.86 2005/04/28 22:51:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3599,15 +3599,15 @@ sub temp_blockings_editor_replace {
 	    (-title => M"Ersetzen",
 	     -buttons => [M"Ja", M"Manuell wählen", M"Nein"],
 	    );
-	$d->add("Label", -text => "Replace the following record:")->pack;
+	$d->add("Label", -text => "Replace the following record:")->pack(-fill => "x");
 	my $t1 = $d->add("Scrolled", "ROText", -width => 50, -height => 10,
-			 -scrollbars => "osoe")->pack;
+			 -scrollbars => "osoe")->pack(-fill => "x");
 	$t1->insert("end", $s{"inner"});
-	$d->add("Label", -text => "with:")->pack;
+	$d->add("Label", -text => "with:")->pack(-fill => "x");
 	my $t2 = $d->add("Scrolled", "ROText", -width => 50, -height => 10,
-			 -scrollbars => "osoe")->pack;
+			 -scrollbars => "osoe")->pack(-fill => "x");
 	$t2->insert("end", $new_string);
-	$d->add("Label", -text => "? (index = $max_index, similarity factor = $max_similarity)")->pack;
+	$d->add("Label", -text => "? (index = $max_index, similarity factor = $max_similarity)")->pack(-fill => "x");
 	$yesno = $d->Show;
     }
 
