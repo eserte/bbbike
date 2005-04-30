@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.8 2005/03/22 08:37:20 eserte Exp $
+# $Id: basic.t,v 1.9 2005/04/30 07:14:37 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -58,6 +58,8 @@ for my $f (@files) {
 	    if $f eq 'BBBikeDraw/ImageMagick.pm' && !eval { require Image::Magick };
 	skip "$f needs SVG", $tests_per_file
 	    if $f eq 'BBBikeDraw/SVG.pm' && !eval { require SVG };
+	skip "$f needs GD", $tests_per_file
+	    if $f =~ m{^BBBikeDraw/GD.*\.pm$} && !eval { require GD };
 	skip "$f needs Tk::Wizard", $tests_per_file
 	    if $f eq 'BBBikeImportWizard.pm' && !eval { require Tk::Wizard };
 	skip "$f needs GPS::Garmin", $tests_per_file
@@ -72,6 +74,13 @@ for my $f (@files) {
 	    if $f eq 'Strassen/Pg.pm' && !eval { require DBD::Pg };
 	skip "$f needs X11::Protocol", $tests_per_file
 	    if $f eq 'lib/Tk/RotX11Font.pm' && !eval { require X11::Protocol };
+	skip "$f needs Class::Accessor", $tests_per_file
+	    if $f =~ m{^( BBBikeDraw/MapServer.pm
+		        | ESRI/Shapefile.pm
+		        | ESRI/Shapefile/.*.pm
+		        | BBBikeESRI.pm
+		        | Strassen/ESRI.pm
+		      )$}x && !eval { require Class::Accessor };
 
 	my @add_opt;
 	if ($f =~ m{Tk/.*\.pm}) {

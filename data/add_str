@@ -1,14 +1,15 @@
 # Diese Straßennamen werden zusätzlich akzeptiert:
+#: note: genereller Fallback:
 XXX
-Admiralbrücke
-Advokatensteig
+#: note: Wege im Parks und Wäldern:
 Ahornsteig
+Alte Spandauer Poststr.
+#: note: kaum oder nicht besiedelt:
+Am Bahnhof Wuhlheide
+#: note: Straßen, die in der DB existieren, hier mit Zusatz
 Alexanderplatz [Dircksenstr./zur Grunerstr.]
 Alexanderplatz [Dircksenstr./zur Karl-Liebknecht-Str.]
-# XXX heißt sie wirklich so?
-Alte Potsdamer Str.
-Alte Spandauer Poststr.
-Am Bahnhof Wuhlheide
+#: note: nicht kategorisiert:
 Am Flutgraben
 Am Lustgarten
 Am Müggelsee
@@ -42,7 +43,6 @@ Gontardstr.
 Großer Weg
 Griebnitzseepromenade
 Große Sternallee
-Hans-Rosenthal-Platz
 Henriette-Herz-Platz
 Hertabrücke
 Ida-Wolff-Platz

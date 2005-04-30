@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: WidgetDump.pm,v 1.29 2004/01/14 22:52:15 eserte Exp $
+# $Id: WidgetDump.pm,v 1.30 2004/10/02 16:03:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package Tk::WidgetDump;
 use vars qw($VERSION);
 use strict;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.29 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.30 $ =~ /(\d+)\.(\d+)/);
 
 package # hide from CPAN indexer
   Tk::Widget;

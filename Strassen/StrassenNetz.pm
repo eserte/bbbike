@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.51 2005/03/24 00:59:46 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.52 2005/04/30 06:54:37 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -29,7 +29,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.51 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.52 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz;
 use strict;
@@ -486,10 +486,10 @@ sub get_street_record {
     }
 }
 
-#use Class::Struct;
+use Class::Struct;
 #BEGIN { Class::Struct::printem() }
-#struct('StrassenNetz::SearchContext' =>
-use Class::Struct 'StrassenNetz::SearchContext' =>
+BEGIN {
+    struct('StrassenNetz::SearchContext' =>
        {Algorithm => "\$",
 	HasPenalty => "\$",
 	HasAmpeln => "\$",
@@ -509,8 +509,8 @@ use Class::Struct 'StrassenNetz::SearchContext' =>
 	UserDefPenaltySub => "\$",
 	HasBlocked => "\$",
        }
-#      )
-;
+   );
+}
 
 sub build_penalty_code {
     my $sc = shift || die "No build context given";

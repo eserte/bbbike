@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: check_str_plz,v 1.23 2005/03/20 20:56:47 eserte Exp $
+# $Id: check_str_plz,v 1.24 2005/04/29 21:55:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2004 Slaven Rezic. All rights reserved.
@@ -221,7 +221,7 @@ if (@unknown || @unknown2 || @ambiguous || @no_coord) {
     }
     print "="x70,"\n";
     if (@ambiguous) {
-	print "= Add to file multi_bez_str or add citypart name to street:\n";
+	print "= Add to file multi_bez_str-orig or add citypart name to street:\n";
 	foreach (sort @ambiguous) {
 	    print "$_<TAB>", join(",", keys %{$str_in_plz{$_}}), "\n";
 	}

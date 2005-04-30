@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.29 2005/04/12 21:13:41 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.31 2005/04/30 07:45:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -548,9 +548,9 @@ echoextmodperl:
 # XXX testen, ob man überhaupt einen X-Server hat
 extmod:
 #	Xvfb :121 & \
-	Xnest -geometry 640x400 :121 & \
-	_XVFB_PID=$$!; \
-	DISPLAY=:121; \
+#	Xnest -geometry 640x400 :121 & \
+#	_XVFB_PID=$$!; \
+#	DISPLAY=:121; \
 	for i in $(EXTMODCPAN); do \
 	    echo $$i; \
 	    cd $(EXTMODCPANTOP)/$$i; \
@@ -567,8 +567,8 @@ extmod:
 		BATCH=yes make test && \
 		make install; \
 	done; \
-	echo Kill process $$_XVFB_PID; \
-	kill -TERM $$_XVFB_PID
+#	echo Kill process $$_XVFB_PID; \
+#	kill -TERM $$_XVFB_PID
 EOF
 . <<EOF
 
@@ -586,18 +586,20 @@ bundles:
 	if [ ! -h Bundle/make_small_bundle ] ; then \
 	    ln -s ../Makefile.PL Bundle/make_small_bundle; \
 	fi
+	cd Bundle; $(FULLPERL) make_bundle; $(FULLPERL) make_small_bundle
+
+# OSD bundles are not supported anymore
+bundles-osd:
 	if [ ! -h Bundle/make_pi_osd ] ; then \
 	    ln -s ../Makefile.PL Bundle/make_pi_osd; \
 	fi
 	if [ ! -h Bundle/make_small_pi_osd ] ; then \
 	    ln -s ../Makefile.PL Bundle/make_small_pi_osd; \
 	fi
-EOF
-.
-"	cd Bundle; $^X make_bundle; $^X make_small_bundle; \\
-		   $^X make_pi_osd unix; $^X make_pi_osd win; \\
-		   $^X make_small_pi_osd unix; $^X make_small_pi_osd win
-" . <<'EOF'
+	cd Bundle && $(FULLPERL) make_pi_osd unix; \
+		     $(FULLPERL) make_pi_osd win; \
+		     $(FULLPERL) make_small_pi_osd unix; \
+		     $(FULLPERL) make_small_pi_osd win
 
 Strassen/Generated.pm: Strassen/Generated_src.pm Strassen.pm
 	-rm -f Strassen/Generated.pm

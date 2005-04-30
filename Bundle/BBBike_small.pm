@@ -2,7 +2,7 @@
 
 package Bundle::BBBike;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.3 $ =~ /(\d+)\.(\d+)/);
 
 1;
 
@@ -18,7 +18,7 @@ Bundle::BBBike - A bundle to install all dependencies of BBBike
 
 =head1 CONTENTS
 
-Tk 402.002	- das absolute Muss!
+Tk 800.000	- das absolute Muss!
 
 
 

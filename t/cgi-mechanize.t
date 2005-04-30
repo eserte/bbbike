@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.23 2005/03/28 20:46:12 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.24 2005/04/29 20:17:28 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -285,14 +285,14 @@ for my $browser (@browsers) {
 	my_tidy_check($agent);
 
 	like($agent->content, qr/genaue.*kreuzung.*angeben/i, "On the crossing page");
-	like($agent->content, qr/\QAm Neuen Palais (F2.2) (Potsdam)/i,  "Correct start resolution (Neues Palais ...)");
+	like($agent->content, qr/\QAm Neuen Palais (Potsdam)/i,  "Correct start resolution (Neues Palais ...)");
 
     }
 
     ######################################################################
     # A street in Potsdam but not in "landstrassen"
 
-    {
+ XXX: {
 
 	$get_agent->();
 
@@ -461,7 +461,7 @@ for my $browser (@browsers) {
 
     }
 
- XXX: {
+    {
 	$get_agent->();
 
 	$agent->get($cgiurl);

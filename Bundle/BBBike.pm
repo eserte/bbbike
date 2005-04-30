@@ -2,7 +2,7 @@
 
 package Bundle::BBBike;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.3 $ =~ /(\d+)\.(\d+)/);
 
 1;
 
@@ -18,7 +18,7 @@ Bundle::BBBike - A bundle to install all dependencies of BBBike
 
 =head1 CONTENTS
 
-Tk 402.002	- das absolute Muss!
+Tk 800.000	- das absolute Muss!
 
 Tk::FireButton	- "Firebutton"-Funktionalität für die Windrose
 
@@ -34,21 +34,27 @@ Tk::HistEntry
 
 Tk::Stderr	- optionales Redirect von Fehlermeldungen in ein Tk-Fenster
 
-LWP::UserAgent	- für die WWW-Verbindungen (Stadtplan und Wetterbericht)
+Tk::DateEntry 1.38
+
+LWP::UserAgent	- für die WWW-Verbindungen (z.B. Wetterbericht)
 
 Image::Magick	- für Bildmanipulationen beim Radar-Bild der FU
 
-Apache::Session::DB_File	- optionale Session-Verwaltung für das CGI-Programm
+Apache::Session::DB_File	- optionale Session-Verwaltung für das CGI-Programm, notwendig für wapbbbike
 
 XML::SAX	- CPAN.pm kann XML::SAX nicht über XML::Simple automatisch installieren
 
 XML::Simple	- optional für XML-Dumps der BBBike-Route
 
-YAML	- optional für YAML-Dumps der BBBike-Route
+XML::Parser	- optional für UAProf parsing (alternative wäre XML::SAX::PurePerl)
+
+YAML	- optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings
 
 Mail::Send	- falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will
 
 String::Approx 2.7	- oder man verwendet agrep (mindestens Version 3.0)
+
+String::Similarity	- optional für den temp_blockings-Editor
 
 Storable	- für das Caching beim CGI-Programm
 
@@ -61,6 +67,8 @@ Chart::ThreeD::Pie	- Tortendiagramme in der Statistik
 List::Permutor	- Für das Problem des Handlungsreisenden
 
 PDF::Create 0.06	- Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download)
+
+Font::Metrics::Helvetica	- Für die Reparatur der Zeichenbreitentabellen in PDF::Create
 
 BSD::Resource
 
@@ -82,21 +90,31 @@ Palm::PalmDoc	- für das Erzeugen von palmdoc-Dateien mit der Routenbeschreibung
 
 Astro::Sunrise	- Anzeige des Sonnenuntergangs/-aufgangs im Info-Fenster
 
-File::ReadBackwards	- LogTracker plugin
+File::ReadBackwards	- LogTracker plugin, Edititeren
 
-Date::Pcalc	- LogTracker plugin
+Date::Pcalc	- LogTracker plugin (Alternative wäre Date::Calc)
 
-XBase	- Erzeugen der Mapserver- oder anderer ESRI-Dateien
+XBase	- Erzeugen der Mapserver- oder anderer ESRI-Dateien, notwendig für radzeit.de
 
 IPC::Run	- hilft bei der sicheren Ausführung von externen Kommandos (insbesondere für Win32)
 
 Imager	- additional optional BBBikeDraw backend for PNG graphics
 
+Image::ExifTool	- für geocode_images
+
 SVG	- additional optional BBBikeDraw backend for SVG graphics
+
+Object::Iterate	- Notwendig für die radzeit.de-Version (bbd2esri)
 
 Image::Info
 
 Test::More
+
+Test::Differences
+
+Test::NoWarnings
+
+WWW::Mechanize	- Für Testen des CGI-Interfaces
 
 
 

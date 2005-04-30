@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.21 2005/03/14 21:59:36 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.22 2005/04/29 22:57:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -147,7 +147,7 @@ eval {
 	$comment =
 	    "Von: " . ($by || "anonymous\@bbbike.de") . "\n" .
 	    "An:  $to\n\n" .
-	    (defined $mapx ? "Kartenkoordinaten: " . $mapx . "/" . $mapy . "\n\n" : "") .
+	    (defined $mapx ? "Kartenkoordinaten: " . int($mapx) . "," . int($mapy) . "\n\n" : "") .
 	    "Kommentar:\n" .
 	    param("comment") . "\n";
 	print $fh $comment . "\n";

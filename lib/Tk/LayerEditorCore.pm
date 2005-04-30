@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LayerEditorCore.pm,v 1.8 2004/10/02 08:20:47 eserte Exp eserte $
+# $Id: LayerEditorCore.pm,v 1.9 2004/10/02 18:17:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999, 2000, 2004 Slaven Rezic. All rights reserved.

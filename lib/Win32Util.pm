@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Win32Util.pm,v 1.32 2004/01/11 12:37:44 eserte Exp $
+# $Id: Win32Util.pm,v 1.34 2004/10/19 19:27:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -35,7 +35,7 @@ these modules are already bundled with the popular ActivePerl package.
 use strict;
 use vars qw($DEBUG $browser_ole_obj $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
 $DEBUG=0 unless defined $DEBUG;
 
 # XXX Win-Registry-Funktionen mit Hilfe von Win32::API und
@@ -222,6 +222,29 @@ sub start_ps_print_cmd {
     my $ps_print = get_ps_print();
     start_cmd($ps_print, $file);
 }
+
+# XXX Maybe make a start_pdf_print with this information:
+#
+# --- CUT START ---
+# Other options for the command line are:
+# AcroRd32.exe /p filename - Executes the Reader and prints a file.
+#    /n Launch a separate instance of the Acrobat application, even if one is
+# currently open.
+#    /s Open Acrobat, suppressing the splash screen.
+#    /o Open Acrobat, suppressing the open file dialog.
+#    /h Open Acrobat in hidden mode.
+# AcroRd32.exe /t path printername drivername portname - Initiates
+# Acrobat Reader, prints a file while suppressing the Acrobat print dialog
+# box, then terminates Reader.
+
+# The four parameters of the /t option evaluate to path, printername,
+# drivername, and portname (all strings).
+# printername - The name of your printer.
+# drivername - Your printer driver's name. Whatever appears in the Driver Used
+# box when you view your printer's properties.
+# portname - The printer's port. portname cannot contain any "/" characters;
+# if it does, output is routed to the default port for that printer.
+# --- CUT END ---
 
 sub start_txt_print {
     my $file = shift;
@@ -1460,7 +1483,7 @@ sub maximize {
     my $showwindow = _get_api_function("ShowWindow");
     if (defined $showwindow) {
         my $SW_SHOWMAXIMIZED = 3;
-	warn $showwindow->Call(hex($top->frame), $SW_SHOWMAXIMIZED);
+	$showwindow->Call(hex($top->frame), $SW_SHOWMAXIMIZED);
     } else {
 	my @extends = client_window_region($top);
 	$top->geometry("$extends[2]x$extends[3]+$extends[0]+$extends[1]");
@@ -1520,6 +1543,18 @@ sub get_sys_color {
     ($r, $g, $b);
 }
 
+=head2 close_dosbox()
+
+Closes the dosbox. Handy if starting a GUI program with the standard
+perl.exe and not wperl.exe.
+
+=cut
+
+sub close_dosbox {
+    require Win32::Console;
+    Win32::Console::Free();
+}
+
 =head2 disable_dosbox_close_button()
 
 As the function name says :-). Derived from a posting from Jack D.
@@ -1561,8 +1596,9 @@ sub disable_dosbox_close_button {
 =head2 keep_on_top($tk_window [, $flag])
 
 Keep the window C<$tk_window> on top. If C<Win32::API> is not
-available, a crude hack with a <Visibility> binding is used instead.
-If the optional variable C<$flag> is false, "keep on top" is disabled.
+available, attributes(-topmost) is used if Tk 804.027 is available,
+otherwise a crude hack with a <Visibility> binding is used instead. If
+the optional variable C<$flag> is false, "keep on top" is disabled.
 
 =cut
 
@@ -1593,6 +1629,8 @@ sub keep_on_top {
 	} else {
 	    $callAPI->($HWND_NOTOPMOST);
 	}
+    } elsif ($Tk::VERSION >= 804.027) {
+	$mw->attributes(-topmost => $flag); # XXX test this!
     } else {
 	warn "No Win32::API available, visibility binding hack";
 	my $stay_above_after;

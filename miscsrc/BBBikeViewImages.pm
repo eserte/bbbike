@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.4 2005/04/29 18:48:42 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.5 2005/04/30 10:04:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $image_viewer_toplevel);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 my $iso_date_rx = qr{(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})};
 

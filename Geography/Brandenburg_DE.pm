@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Brandenburg_DE.pm,v 1.3 2003/01/08 20:12:40 eserte Exp $
+# $Id: Brandenburg_DE.pm,v 1.4 2005/04/29 23:37:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -203,6 +203,11 @@ my $partdef =
 	LOS => 'Landkreis Oder-Spree',
 	MOL => 'Märkisch Oderland',
        );
+
+sub new {
+    my($class) = @_;
+    bless {}, $class;
+}
 
 1;
 

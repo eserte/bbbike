@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTScrollbar.pm,v 1.2 2004/10/02 08:50:09 eserte Exp eserte $
+# $Id: SRTScrollbar.pm,v 1.3 2004/10/02 18:17:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.

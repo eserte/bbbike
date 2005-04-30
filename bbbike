@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.161 2005/04/28 22:10:43 eserte Exp $
+# $Id: bbbike,v 3.162 2005/04/30 08:38:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -213,7 +213,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.161 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.162 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -9256,8 +9256,11 @@ sub plot_point {
 		if (grep { /\.gz$/ } $filename) {
 		    die "fast_plot_point can't handle gzipped files yet";
 		}
+		my $abs_path = file_name_is_absolute($filename)
+		    ? $filename
+			: "$datadir/$filename";
 		BBBike::fast_plot_point($c, 'lsa',
-					"$datadir/$filename",
+					$abs_path,
 					$progress);
 	    };
 	    my $err = $@;
@@ -11262,7 +11265,6 @@ sub show_info {
 	    $info_text->insert("end", "Stadtp".
 			       "landienst\n", "link$linkcount");
 	    $show_url->($linkcount, $url);
-	    $info_text->insert("end", "\n");
 	    $linkcount++;
 	}
 
@@ -11289,7 +11291,7 @@ sub show_info {
 	    my $sunset_nautical  = $get_sun_set->(-12);
 	    my $sunset_astro     = $get_sun_set->(-15);
 
-	    $info_text->insert("end", "Sonnenaufgang/-untergang\n", "bold");
+	    $info_text->insert("end", "\nSonnenaufgang/-untergang\n", "bold");
 	    $info_text->insert("end", <<EOF, "fixed");
 Sonnenaufgang:   $sunrise_real
 Dämmerung ab:
@@ -11329,7 +11331,7 @@ EOF
 
     # XXX zu viel Code dupliziert!
     my(%info, $info_file);
-    if ($str_file{$base_tag} =~ /\.shp$/) {
+    if (defined $str_file{$base_tag} && $str_file{$base_tag} =~ /\.shp$/) {
 	(my $dbf_file = $str_file{$base_tag}) =~ s/\.shp$/.dbf/;
 	require BBBikeAdvanced;
 	my $index;

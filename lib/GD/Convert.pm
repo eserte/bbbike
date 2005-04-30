@@ -35,7 +35,7 @@ sub import {
 		    # hmmm ...
 		} elsif ($GD::VERSION >= 1.40 && !$installed{$f} && GD::Image->can($f)) {
 		    $@ = "";
-		    GD::Image->new->$f();
+		    eval { GD::Image->new->$f(); };
 		    if ($@ !~ /libgd was not built with gif support/) {
 			undef $as;
 		    }

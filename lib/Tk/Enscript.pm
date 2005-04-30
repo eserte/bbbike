@@ -184,7 +184,7 @@ sub parse_cfg {
 	} elsif (/^\s*FontMap:\s*(\S+)\s+(.*)/) {
 	    $postscript_to_x11_font{$1} = $2;
 	} else {
-	    die "Can't parse $_";
+	    #warn "Can't parse $_";
 	}
     }
     close CFG;

@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.19 2005/04/12 21:11:26 eserte Exp eserte $
+# $Id: gesperrt-orig,v 4.20 2005/04/29 23:48:47 eserte Exp $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraßen etc.)
@@ -209,9 +209,10 @@ Damaschkestr.	1 3132,10499 3013,10553
 Wundtstr.	1 2386,11183 2352,11041
 Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
 Gervinusstr.	1 3587,10768 3631,10784
-# während Veranstaltungen und nachts von ca. 22 bis 7 Uhr gesperrt,
-# mit Anhänger wegen des engen Südeinganges nicht befahrbar:
+#: note während Veranstaltungen und nachts von ca. 22 bis 7 Uhr gesperrt, mit Anhänger wegen des engen Südeinganges nicht befahrbar:
 (Friedrich-Ludwig-Jahn-Sportpark)	2 10473,15549 10607,15142
+#: note: bei Veranstaltungen (Max-Schmelling-Halle) gesperrt:
+(Gaudystr. - Mauerpark)	2 10473,15549 10186,15463
 Darßer Str.	1 15000,18056 15031,18106 15181,18137
 Schottstr.	1 16270,12261 16389,12394
 Rüdigerstr.	1 16389,12394 16468,12386
@@ -280,6 +281,8 @@ Barbarossaplatz	1 6731,9559 6746,9540 6743,9523 6728,9515 6704,9537 6712,9557 67
 Matternstr.	1 13798,13003 13578,12903
 Otto-von-Simson-Str.	1 2560,5044 2835,5410
 In den neuen Gärten	1 7130,3414 7339,3276 7378,3328 7482,3292
+Braillestr.	1 4433,5315 4512,5199
+Mudrackzeile	1 7009,17778 7043,17667
 #
 # Potsdam
 #
@@ -408,6 +411,7 @@ Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15392,12135 15437,12225 15502,12367
 Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6790,16018 6914,15908 7043,15793
 #del: Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14576,16069 14550,16161 14499,16341
+Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14603,15971 14619,15920 14650,15750
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Neustädtische Kirchstr.: An der US-Botschaft	3nocross 9100,12627 9112,12499 9126,12413 9141,12320
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

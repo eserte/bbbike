@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mkport.pl,v 1.25 2005/04/05 22:51:19 eserte Exp $
+# $Id: mkport.pl,v 1.26 2005/04/30 09:09:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2004 Slaven Rezic. All rights reserved.
@@ -23,6 +23,7 @@ use strict;
 use ExtUtils::Manifest;
 use File::Basename;
 use File::Copy qw(cp);
+use File::Path qw(mkpath);
 use Getopt::Long;
 
 use vars qw($bbbike_version $tmpdir $bbbike_dir);
@@ -100,6 +101,12 @@ my $bbbike_manifest;
     my $cmd;
     $cmd = "rm -f $tmpdir/$bbbike_base/MANIFEST";
     warn "$cmd\n" if $v;
+    if (!-d "$tmpdir/$bbbike_base") {
+	if (-e "$tmpdir/$bbbike_base") {
+	    die "$tmpdir/$bbbike_base exists, but is not a directory. Please remove first";
+	}
+	mkpath "$tmpdir/$bbbike_base" or die $!
+    }
     system($cmd) and die "Failed on command $cmd with $?";
     $cmd = "zcat $bbbike_archiv_path | ( cd $tmpdir ; tar xf - $bbbike_base/MANIFEST )";
     warn "$cmd\n" if $v;

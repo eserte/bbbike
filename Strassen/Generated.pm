@@ -64,7 +64,6 @@ sub make_net_slow_1 {
 
 sub net_read_cache_1 {
     my($self) = @_;
-#XXX    my @src = $self->sourcefiles;
     my @src = $self->dependent_files;
     if (!@src || grep { !defined $_ } @src) {
 	return 0;
@@ -95,7 +94,6 @@ sub net_read_cache_1 {
 
 sub net_write_cache_1 {
     my($self) = @_;
-#XXX    my @src = $self->sourcefiles;
     my @src = $self->dependent_files;
     if (!@src || grep { !defined $_ } @src) {
 	return;
@@ -178,7 +176,6 @@ sub make_net_slow_2 {
 
 sub net_read_cache_2 {
     my($self) = @_;
-#XXX    my @src = $self->sourcefiles;
     my @src = $self->dependent_files;
     if (!@src || grep { !defined $_ } @src) {
 	return 0;
@@ -215,7 +212,6 @@ sub net_read_cache_2 {
 
 sub net_write_cache_2 {
     my($self) = @_;
-#XXX    my @src = $self->sourcefiles;
     my @src = $self->dependent_files;
     if (!@src || grep { !defined $_ } @src) {
 	return;
@@ -232,7 +228,7 @@ sub net_write_cache_2 {
     }
 }
 
-# line 227 Generated_src.pm
+# line 225 Generated_src.pm
 sub route_to_name_1 {
     my($self, $route_ref, %args) = @_;
     my @strname;
@@ -259,18 +255,6 @@ sub route_to_name_1 {
 	    if ($str_i =~ /^\d/) {
 		$str = $self->{Strassen}->get($str_i)->[0];
 		$str = Strasse::beautify_landstrasse($str, $rueckwaerts);
-#  		if ($str =~ /^(\w+:\s+)?(.*\s-\s.*)$/) {
-#  		    my $str_nummer = "";
-#   		    if (defined $1 and $1 ne "") {
-#  		        $str_nummer = $1;
-#  			$str = $2;
-#  		    }
-#  		    my(@comp) = ($rueckwaerts ?
-#  				 reverse split(/\s-\s/, $str) :
-#  				 split(/\s-\s/, $str));
-#  		    $str = $str_nummer . "(" . join(" - ", @comp[0..$#comp-1])
-#  			. " -) " . $comp[$#comp];
-#  		}
 	    } else {
 		$str = $str_i;
 	    }
@@ -340,7 +324,7 @@ sub route_to_name_1 {
 
     @strname;
 }
-# line 227 Generated_src.pm
+# line 225 Generated_src.pm
 sub route_to_name_2 {
     my($self, $route_ref, %args) = @_;
     my @strname;
@@ -389,18 +373,6 @@ sub route_to_name_2 {
 	    if ($str_i =~ /^\d/) {
 		$str = $self->{Strassen}->get($str_i)->[0];
 		$str = Strasse::beautify_landstrasse($str, $rueckwaerts);
-#  		if ($str =~ /^(\w+:\s+)?(.*\s-\s.*)$/) {
-#  		    my $str_nummer = "";
-#   		    if (defined $1 and $1 ne "") {
-#  		        $str_nummer = $1;
-#  			$str = $2;
-#  		    }
-#  		    my(@comp) = ($rueckwaerts ?
-#  				 reverse split(/\s-\s/, $str) :
-#  				 split(/\s-\s/, $str));
-#  		    $str = $str_nummer . "(" . join(" - ", @comp[0..$#comp-1])
-#  			. " -) " . $comp[$#comp];
-#  		}
 	    } else {
 		$str = $str_i;
 	    }
@@ -470,7 +442,7 @@ sub route_to_name_2 {
 
     @strname;
 }
-# line 373 Generated_src.pm
+# line 359 Generated_src.pm
 sub reachable_1 {
     my($self, $coord) = @_;
     if (!exists $self->{Net}{$coord}) {
@@ -481,7 +453,7 @@ sub reachable_1 {
 	1;
     }
 }
-# line 373 Generated_src.pm
+# line 359 Generated_src.pm
 sub reachable_2 {
     my($self, $coord) = @_;
     if (!defined $self->{Net}[$self->{Coord2Index}{$coord}]) {

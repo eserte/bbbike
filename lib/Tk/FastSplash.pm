@@ -232,6 +232,21 @@ screen in check or debug mode:
 The -display switch is not honoured (but setting the environment
 variable DISPLAY will work).
 
+XXX Avoid Win32 raise/lower problem with this code (maybe)?
+
+    # Windows constants
+    my ($ONTOP, $NOTOP, $TOP) = (-1, -2, 0);
+    my ($SWP_NOMOVE, $SWP_NOSIZE) = (2, 1);
+    
+    my $SetWindowPos        = new Win32::API("user32", "SetWindowPos", 'NNNNNNN', 'N'); 
+    my $FindWindow          = new Win32::API("user32", "FindWindow", 'PP', 'N'); 
+    
+    # Reestablish Z order
+    my $class = "TkTopLevel";
+    my $topHwnd = $FindWindow->Call($class, $w->title);
+    $topHwnd and $SetWindowPos->Call($topHwnd, $ONTOP, 0, 0, 0, 0, $SWP_NOMOVE | $SWP_NOSIZE);
+
+
 =head1 AUTHOR
 
 Slaven Rezic (slaven@rezic.de)

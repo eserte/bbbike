@@ -1,4 +1,4 @@
-# $Id: qualitaet_l-orig,v 4.15 2005/04/16 20:54:05 eserte Exp eserte $
+# $Id: qualitaet_l-orig,v 4.16 2005/04/29 23:49:52 eserte Exp $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen; schlechte Straße; 01.11.96-unbekannt	Q3 -50149,24689 -50016,24414 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -23,8 +23,6 @@ Schönfeld - Willmersdorf - Straße nach Bernau: OK (mäßiger Asphalt)	Q1 32703,309
 Börnicke - Bernau: OK	Q0 25361,29596 24956,29921 23631,30262 23368,30409 23024,30523
 Goethestr./Bernau: Kopfsteinpflaster	Q2 22649,30519 22712,30340
 Bernau Richtung Zepernick: OK, wenn man den Radweg nicht benutzt	Q0 22178,30343 21872,30139 21561,30131 21172,29984 21085,29942 20499,29310 20475,28650 20472,28570
-Zepernick: schlechtes Kopfsteinpflaster	Q3 20472,28570 20017,28297
-Zepernick: mäßiges Kopfsteinpflaster	Q2 20017,28297 19475,27877 19364,27415
 Strausberg - Abzweig nach Buckow: sehr guter Asphalt	Q0 43110,19818 43686,19241 43857,19113 46386,18523 47672,18859 48635,18552 48709,18618 48896,18721 50418,19010 50805,19326 51600,19853 52244,20083 52879,20172 53929,20311 54143,20415 55043,21042
 Straße nach Strausberg - Buckow: sehr guter Asphalt	Q0 55043,21042 55108,20914 55194,20680 55515,20339 55429,20127 55558,19957
 Ortsdurchfahrt Buckow: mäßiges Kopfsteinpflaster	Q2 55558,19957 55664,19342 55920,18769
@@ -1184,4 +1182,8 @@ Mühlenweg (Zühlsdorf): fester Sandweg	Q2 8787,36250 8367,36411 8002,36777 7541,3
 #: by: Werner Braun: vvv
 An der Stammbahn: Asphalt	Q0 -1515,1380 -1689,1326 -2965,668 -3165,565
 Grenzweg zwischen Kleinmachnow/Düppel und Europarc Dreilinden: mäßiger Weg	Q2 -1525,1453 -3348,592 -3440,254 -3631,-123
+#: by: ^^^
+#: by: Torsten Fleischmann: vvv
+#: note: bislang war hier mäßiges bis schlechtes Kopfsteinpflaster:
+Zepernick: Asphalt	Q0 20472,28570 20017,28297 19475,27877 19364,27415
 #: by: ^^^

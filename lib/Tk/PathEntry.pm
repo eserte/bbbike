@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PathEntry.pm,v 2.22 2004/05/16 21:53:57 eserte Exp $
+# $Id: PathEntry.pm,v 2.23 2004/09/04 01:11:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2002,2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Tk::PathEntry;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 2.22 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.23 $ =~ /(\d+)\.(\d+)/);
 
 use base qw(Tk::Derived Tk::Entry);
 
@@ -34,12 +34,14 @@ sub ClassInit {
 		      $w->_popup_on_key($$pathref);
 		  }
 		  if (@{$w->{CurrentChoices}} > 0) {
-		      my $sep = $w->cget(-separator);
+		      my $pos_sep_rx = $w->_pos_sep_rx;
 		      my $common = $w->_common_match;
+		      my $case_rx = $w->cget(-casesensitive) ? "" : "(?i)";
 		      if ($w->Callback(-isdircmd => $w, $common) &&
-			  $common !~ m|\Q$sep\E$|                &&
+			  $common !~ m/$case_rx$pos_sep_rx$/             &&
 			  @{$w->{CurrentChoices}} == 1
 			 ) {
+			  my $sep = $w->_sep;
 			  $common .= $sep;
 		      }
 		      my $pathref = $w->cget(-textvariable);
@@ -173,8 +175,12 @@ sub Populate {
     $w->ConfigSpecs
 	(-initialdir  => ['PASSIVE',  undef, undef, undef],
 	 -initialfile => ['PASSIVE',  undef, undef, undef],
-	 # XXX auf den OS-separator setzen??? unter win32 ausprobieren!
-	 -separator   => ['PASSIVE',  undef, undef, "/"],
+	 -separator   => ['PASSIVE',  undef, undef,
+			  $^O eq "MSWin32" ? ["\\", "/"] : "/"
+			  ],
+	 -casesensitive => ['PASSIVE', undef, undef,
+			    $^O eq "MSWin32" ? 0 : 1
+			    ],
 	 -isdircmd    => ['CALLBACK', undef, undef, ['_is_dir']],
 	 -isdirectorycommand => 'isdircmd',
 	 -choicescmd  => ['CALLBACK', undef, undef, ['_get_choices']],
@@ -218,13 +224,45 @@ sub _popup_on_key {
     }
 }
 
+sub _sep {
+    my $w = shift;
+    my $sep = $w->cget(-separator);
+    if (ref $sep eq 'ARRAY') {
+	$sep->[0];
+    } else {
+	$sep;
+    }
+
+}
+
+sub _pos_sep_rx {
+    my $w = shift;
+    my $sep = $w->cget(-separator);
+    if (ref $sep eq 'ARRAY') {
+	"[" . join("", map { quotemeta } @$sep) . "]";
+    } else {
+	quotemeta $sep;
+    }
+}
+
+sub _neg_sep_rx {
+    my $w = shift;
+    my $sep = $w->cget(-separator);
+    if (ref $sep eq 'ARRAY') {
+	"[^" . join("", map { quotemeta } @$sep) . "]";
+    } else {
+	"[^" . quotemeta($sep) . "]";
+    }
+}
+
 sub _delete_last_path_component {
     my $w = shift;
 
     my $before_cursor = substr($w->get, 0, $w->index("insert"));
     my $after_cursor = substr($w->get, $w->index("insert"));
-    my $sep = $w->cget(-separator);
-    $before_cursor =~ s|[^$sep]+\Q$sep\E?$||;
+    my $pos_sep = $w->_pos_sep_rx;
+    my $neg_sep = $w->_neg_sep_rx;
+    $before_cursor =~ s|$neg_sep+$pos_sep?$||;
     my $pathref = $w->cget(-textvariable);
     $$pathref = $before_cursor . $after_cursor;
     $w->icursor(length $before_cursor);
@@ -237,8 +275,9 @@ sub _delete_next_path_component {
 
     my $before_cursor = substr($w->get, 0, $w->index("insert"));
     my $after_cursor = substr($w->get, $w->index("insert"));
-    my $sep = $w->cget(-separator);
-    $after_cursor =~ s|^\Q$sep\E?[^$sep]+||;
+    my $pos_sep = $w->_pos_sep_rx;
+    my $neg_sep = $w->_neg_sep_rx;
+    $after_cursor =~ s|^$pos_sep?$neg_sep+||;
     my $pathref = $w->cget(-textvariable);
     $$pathref = $before_cursor . $after_cursor;
     $w->icursor(length $before_cursor);
@@ -249,8 +288,9 @@ sub _delete_next_path_component {
 sub _forward_path_component {
     my $w = shift;
     my $after_cursor = substr($w->get, $w->index("insert"));
-    my $sep = $w->cget(-separator);
-    if ($after_cursor =~ m|^(\Q$sep\E?[^$sep]+)|) {
+    my $pos_sep = $w->_pos_sep_rx;
+    my $neg_sep = $w->_neg_sep_rx;
+    if ($after_cursor =~ m|^($pos_sep?$neg_sep+)|) {
 	$w->icursor($w->index("insert") + length $1);
     }
 }
@@ -258,8 +298,9 @@ sub _forward_path_component {
 sub _backward_path_component {
     my $w = shift;
     my $before_cursor = substr($w->get, 0, $w->index("insert"));
-    my $sep = $w->cget(-separator);
-    if ($before_cursor =~ m|([^$sep]+\Q$sep\E?)$|) {
+    my $pos_sep = $w->_pos_sep_rx;
+    my $neg_sep = $w->_neg_sep_rx;
+    if ($before_cursor =~ m|($neg_sep+$pos_sep?)$|) {
 	$w->icursor($w->index("insert") - length $1);
     }
 }
@@ -268,14 +309,17 @@ sub _common_match {
     my $w = shift;
     my(@choices) = @{$w->{CurrentChoices}};
     my $common = shift @choices;
+    my $case_sensitive = $w->cget(-casesensitive);
     foreach (@choices) {
-	if (length $_ < length $common) {
+	my $choice = $case_sensitive ? $_ : lc $_;
+	if (length $choice < length $common) {
 	    $common = substr($common, 0, length $_);
 	}
+	$common = lc $common if !$case_sensitive;
 	for my $i (0 .. length($common) - 1) {
-	    if (substr($_, $i, 1) ne substr($common, $i, 1)) {
+	    if (substr($choice, $i, 1) ne substr($common, $i, 1)) {
 		return "" if $i == 0;
-		$common = substr($_, 0, $i);
+		$common = substr($choice, 0, $i);
 		last;
 	    }
 	}
@@ -285,10 +329,11 @@ sub _common_match {
 
 sub _get_choices {
     my($w, $pathname) = @_;
-    my $sep = $w->cget(-separator);
-    if ($pathname =~ m|^~([^$sep]+)$|) {
+    my $neg_sep = $w->_neg_sep_rx;
+    if ($pathname =~ m|^~($neg_sep+)$|) {
 	my $userglob = $1;
 	my @users;
+	my $sep = $w->_sep;
 	while(my $user = getpwent) {
 	    if ($user =~ /^$userglob/) {
 		push @users, "~$user$sep";
@@ -409,7 +454,14 @@ also use a pre-filled C<-textvariable> to set the initial path.
 
 =item -separator
 
-The character used as the path component separator. For Unix, this is "/".
+The character used as the path component separator. This may be also
+an array reference for multiple characters. For Windows, this is by
+default the characters C</> and C<\>, otherwise just C</>.
+
+=item -casesensitive
+
+Set to a true value if the filesystem is case sensitive. For Windows,
+this is by default false, otherwise true.
 
 =item -isdircmd
 

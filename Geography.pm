@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Geography.pm,v 1.5 2005/04/27 00:26:09 eserte Exp $
+# $Id: Geography.pm,v 1.6 2005/04/29 21:03:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2005 Slaven Rezic. All rights reserved.
@@ -28,7 +28,6 @@ sub fallback_constructor {
     my($class, $city, $country, @args) = @_;
     require File::Basename;
     my $geo_dir = File::Basename::dirname(__FILE__). "/Geography";
-    warn $geo_dir;
     my $city_obj;
     if (opendir GEO, $geo_dir) {
 	my $search_term = quotemeta $city;

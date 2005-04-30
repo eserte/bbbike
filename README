@@ -8,7 +8,7 @@
 
 Die aktuellste BBBike-Archivdatei findet man im Verzeichnis
 L<http://sourceforge.net/project/showfiles.php?group_id=19142> . Die aktuelle Sourcedatei ist
-L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.13.tar.gz> .
+L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz> .
 
 =head2 FreeBSD
 
@@ -36,10 +36,10 @@ mindestens die Version 5.005 benötigt.
 Danach kann BBBike ausgepackt werden:
 
 
-	zcat BBBike-3.13.tar.gz | tar xfv -
+	zcat BBBike-3.14.tar.gz | tar xfv -
 
 Falls perl/Tk (eine möglichst neue Version, z.B. 800.025 order 804.027) nicht
-installiert ist: in das Verzeichnis C<BBBike-3.13>
+installiert ist: in das Verzeichnis C<BBBike-3.14>
 wechseln und als Superuser
 
 
@@ -83,10 +83,10 @@ ausgeführt werden. Dazu ist das Perl-Modul L<Inline::C> notwendig.
 
 BBBike und Perl benötigen ca. 32 MB an Festplattenspeicher.
 
-Die Datei L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.13-Windows.zip>
+Die Datei L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.zip>
 laden und mit WinZip an einer
 beliebigen Stelle auf der Festplatte auspacken. Zum Starten von BBBike
-muss das Icon C<bbbike.bat> im Verzeichnis BBBike-3.13-Windows
+muss das Icon C<bbbike.bat> im Verzeichnis BBBike-3.14-Windows
 angeklickt werden.
 
 Mit C<setup.bat> kann man optional BBBike nach C<C:\BBBike>
@@ -135,13 +135,13 @@ wird das ppm-Programm verlassen.
 
 =item *
 
-L<BBBike-3.13.tar.gz|http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.13-Windows.zip>
+L<BBBike-3.14.tar.gz|http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.zip>
 downloaden und mit WinZip auspacken. Das
 ausgepackte Verzeichnis wird später nicht mehr verschoben.
 
 =item *
 
-In der Eingabeaufforderung oder im Explorer zum Verzeichnis BBBike-3.13
+In der Eingabeaufforderung oder im Explorer zum Verzeichnis BBBike-3.14
 wechseln und
 
 
@@ -190,7 +190,7 @@ von Perl/Tk auf Mac OS X bekommt man in der comp.lang.perl.tk Newsgroup
 
 Folgende Anleitung habe ich von Wolfram Kroll erhalten:
 
-L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.13.tar.gz> und (von
+L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz> und (von
 L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
 besorgt.
 
@@ -312,7 +312,7 @@ C<lib/Text/ScriptTemplate.pm> von Taisuke Yamada, C<lib/enum.pm> von
 Zenin, C<ext/Strassen-Inline/heap.[ch]> der Internet Software
 Consortium, C<ext/BBBikeXS/sqrt.c> von Eyal Lebedinsky.
 
-C<BBBike-3.13-Windows.zip> enthält einen Teil der
+C<BBBike-3.14-Windows.zip> enthält einen Teil der
 C<SiePerl>-Distribution.
 
 

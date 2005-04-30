@@ -94,9 +94,9 @@ userdel	q4 49039,44131 49691,43812
        undef,
        undef,
        {
-         'until' => 1114725600,
-         'text' => 'Volkradstraße (Lichtenberg) Richtung Rummelsburger Straße, zwischen Sewanstraße und Moldaustraße Baustelle, Straße gesperrt, (bis 28.04.2005)',
-         'from' => 1113870336,
+         'until' => 1116021600,
+         'text' => 'Volkradstr. (Lichtenberg) Richtung Rummelsburger Str. zwischen Sewanstr. und Rummelsburger Str. Baustelle, Fahrtrichtung gesperrt (bis 13.05.2005)',
+         'from' => 1114726594,
          'data' => 'userdel	1 17475,10442 17427,10259
 ',
          'type' => 'gesperrt'
@@ -136,7 +136,14 @@ userdel	q4 49039,44131 49691,43812
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1121119200,
+         'text' => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, zw. K.-Liebknecht-Str. u. Freiligrathstr. Kanal- und Straßenbau Vollsperrung 28.04.2005-11.07.2005 ',
+         'from' => 1114552800,
+         'data' => 'userdel	q4 25185,-3955 23463,-4466
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -255,12 +262,12 @@ userdel	q4 22217,1108 22162,1067
          'type' => 'handicap'
        },
        {
-         'until' => 1115071200,
-         'text' => 'L 23; (Templin-Lychen); OD Lychen, Kreuzungsber. Straßenbau Vollsperrung 29.03.2005-02.05.2005 ',
+         'until' => 1115157600,
+         'text' => 'L 23; (Templin-Lychen); OD Lychen, Kreuzungsber. Straßenbau Vollsperrung 29.03.2005-03.05.2005 ',
          'from' => 1111960800,
          'data' => 'userdel	q4 3125,88753 2788,89447
 ',
-         'type' => 'handicap'
+         'type' => 'gesperrt'
        },
        undef,
        undef,
@@ -283,14 +290,7 @@ userdel	q4 22217,1108 22162,1067
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1114812000,
-         'text' => 'L 59; (Bormannstr.); OL Bad Liebenwerda Kanalneubau Vollsperrung 11.04.2005-29.04.2005 ',
-         'from' => 1113084000,
-         'data' => 'userdel	q4 12571,-99519 12788,-100207
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1117490400,
          'text' => 'Zimmermannstr. (Marzahn) Richtung Osten zwischen Köpenicker Str. und Lindenstr. Baustelle, Fahrtrichtung gesperrt (bis 30.05.2005)',
@@ -341,14 +341,7 @@ userdel	q4 -16640,1304 -16894,1485
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1114812000,
-         'text' => 'Kastanienallee (Prenzlauer Berg) Richtung stadtauswärts zwischen Schwedter Str. und Oderberger Str. Baustelle, Fahrtrichtung gesperrt (bis 29.04.2005)',
-         'from' => 1113869983,
-         'data' => 'userdel	q4; 10534,14460 10723,14772
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -390,6 +383,30 @@ userdel	q4 -16640,1304 -16894,1485
          'data' => 'userdel	2 27543,-11912 27657,-11741
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1120946400,
+         'text' => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 09.05.2005-09.07.2005 ',
+         'from' => 1115503200,
+         'data' => 'userdel	2 26313,-13049 26028,-12312
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1114984800,
+         'text' => 'B 198; (Schwedter Str.); OD Prenzlau, Kno. Uckermarkkaserne Ausbau Knotenpunkt Vollsperrung 30.04.2005-01.05.2005 ',
+         'from' => 1114725600,
+         'data' => 'userdel	q4 40864,100741 40507,100965
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1114984800,
+         'text' => 'L 90; (Eisenbahnstr.); OD Werder, zw. B1 Berliner Str. u. Phöbener Str. 126. Baumblütenfest Vollsperrung 30.04.2005-01.05.2005 ',
+         'from' => 1114725600,
+         'data' => 'userdel	2 -21137,-4034 -21112,-3787
+',
+         'type' => 'gesperrt'
        }
      
 );

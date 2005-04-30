@@ -70,6 +70,8 @@ extern "C" {
 # define TRANSPOSE_Y_SCALAR(y) (newSVnv(TRANSPOSE_Y(y)))
 #endif
 
+/* targ stuff does not work with 5.005 */
+#ifdef dXSTARG
 #define LOAD_AMPEL_IMAGE(tag,var)	{			\
     dSP;							\
     dXSTARG; /* XXX why is this necessary? */			\
@@ -77,7 +79,7 @@ extern "C" {
     ENTER;							\
     SAVETMPS;							\
     PUSHMARK(SP);						\
-    XPUSHp(tag, 5);						\
+    XPUSHp(tag, strlen(tag));					\
     PUTBACK;							\
     count = call_pv("main::get_symbol_scale", G_SCALAR);	\
     SPAGAIN;							\
@@ -89,7 +91,7 @@ extern "C" {
     FREETMPS;							\
     LEAVE;							\
 }
-        
+#endif
 
 typedef SV* StrassenNetz;
 
@@ -990,12 +992,18 @@ fast_plot_point(canvas, abk, fileref, progress)
 	    file = SvPV(fileref, PL_na);
 
 	  f = fopen(file, "r");
-	  if (!f) croak("Can't open %s: %s\n", file, strerror(errno));
+	  if (!f) croak("Can't open %s: %s in fast_plot_point\n", file, strerror(errno));
+#ifdef MYDEBUG
+	    fprintf(stderr, "Reading from <%s>\n", file);
+#endif
 
 	  while(!feof(f)) {
 	    char *p, *cat, *pointname;
 
 	    fgets(buf, MAXBUF, f);
+#ifdef MYDEBUG
+	    /* fprintf(stderr, "%s", buf); */
+#endif
 	    pointname = buf;
 	    p = strchr(buf, '\t');
 	    if (p) {

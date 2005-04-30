@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.21 2005/04/21 20:56:37 eserte Exp eserte $
+# $Id: qualitaet_s-orig,v 4.23 2005/04/30 07:37:50 eserte Exp $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -219,7 +219,8 @@ Alt-Reinickendorf: Kopfsteinpflaster	Q2 7217,18681 7003,18715 6766,18794 6567,18
 Alt-Reinickendorf: Kopfsteinpflaster	Q2 6567,18812 6734,18728 7003,18715
 Edelhofdamm: Kopfsteinpflaster (?)	Q2 3473,25618 3211,25484
 Zepernicker Str: Kopfsteinpflaster, OK (?)	Q1 17223,26153 17013,25874
-Alt-Buch: Kopfsteinpflaster, OK (?)	Q1 17013,25874 16850,25821 16586,25675 16414,25575
+#: note: bestätigt durch Torsten Fleischmann:
+Alt-Buch: Kopfsteinpflaster, OK	Q1 17013,25874 16850,25821 16586,25675 16414,25575
 Müggelseedamm: Kopfsteinpflaster, OK	Q1 26625,4958 26964,5039 27215,5200
 Müggelseedamm: Kopfsteinpflaster	Q2 28195,5141 27427,5188 27215,5200
 Dahlwitzer Landstr.: Kopfsteinpflaster	Q2 25585,6050 25579,5980
@@ -242,6 +243,8 @@ Mannheimer Str.: Kopfsteinpflaster	Q2 4456,8703 4456,8584
 Thulestr.: Kopfsteinpflaster	Q2 11645,16616 11042,16605
 # ADFC-Karte sagt hier: mäßig geeignet
 Granitzstr.: Asphalt	Q0 10859,17854 10907,17884 11264,18154 11606,18416 11950,18529
+#: note: ADFC-Karte, Joern (js) widerspricht nicht:
+Stargardtstr.: gut geeignet	Q0 7043,17667 7237,17729 7495,17814
 Windscheidstr.: Kopfsteinpflaster, OK	Q1 3283,11097 3344,10878
 Suarezstr.: Kopfsteinpflaster	Q2 2766,10750 2921,10928 2987,11055 3006,11093
 Rönnestr.: Kopfsteinpflaster	Q2 2739,10645 3049,10719 3299,10816 3291,10853
@@ -279,7 +282,11 @@ Pettenkoferstr Str.: Kopfsteinpflaster	Q2 15103,12107 15098,12213 15054,12323 14
 Marktstr., Fahrbahn Richtung Osten: Kopfsteinpflaster	Q2; 15267,10865 15168,10887
 Gryphiusstr.: Kopfsteinpflaster	Q2 14367,11276 14434,11465 14496,11620 14513,11657 14550,11732
 Jungstr.: Kopfsteinpflaster	Q2 14550,11732 14623,11867 14675,11964
-Oberhofer Platz: Kopfsteinpflaster	Q2 5443,2109 5411,2098 5382,2080 5437,1941 5469,1949 5495,1964 5443,2109
+Oberhofer Platz: Kopfsteinpflaster	Q2 5411,2098 5382,2080 5437,1941 5469,1949
+#: by: Peter Fenske (vorher "Kopfsteinpflaster")
+Oberhofer Platz: Asphalt	Q0 5469,1949 5495,1964 5443,2109 5411,2098
+#: by: Peter Fenske
+Oberhofer Weg: Asphalt	Q0 5740,1227 5751,1289 5673,1473 5469,1949
 Kieler Str.: Kopfsteinpflaster, OK	Q1 5124,5750 5050,5785
 Düppelstr.: Kopfsteinpflaster	Q2 5124,5750 4957,5542
 Königstr.: schlechtes Kopfsteinpflaster	Q3 525,3008 -141,2648 -267,2576
@@ -408,7 +415,7 @@ Görlitzer Str.: Kopfsteinpflaster; Schwellen an der Kreuzung Cuvrystr.	Q2; 12911
 Alter Markt: Kopfsteinpflaster	Q2 22502,4528 22472,4572 22449,4605 22383,4703
 Lüdersstr.: Kopfsteinpflaster	Q2 22383,4703 22377,4836
 Freiheit: Kopfsteinpflaster	Q2 22377,4836 22196,4847
-Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10333,14983 10238,15316 10122,15647
+Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10333,14983 10238,15316 10186,15463 10122,15647
 Norwegerstr.: mäßiger Asphalt	Q1 9967,16514 9987,16414 10008,16330 10033,16232
 Gleimtunnel: Kopfsteinpflaster (noch)	Q2 10122,15647 9917,15613
 Gleimstr: Kopfsteinpflaster (noch)	Q2 9917,15613 9734,15579
@@ -420,7 +427,7 @@ Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22473,11272 22513,11440 22477,11501 22
 Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22271,11736 22477,11501
 Dorfstr.: Kopfsteinpflaster	Q2 22271,11736 22104,11952 22215,12031
 zwischen Dorfstr. und Bhf. Wuhletal: Asphalt	Q0 22104,11952 21990,11912 21936,12022 22008,12073 21970,12153
-Biesdorfer Promenade: mäßiger Asphalt	Q1 20975,12620 20843,12677 20693,12742 20137,13016 20085,13046
+Biesdorfer Promenade: mäßiger Asphalt	Q1 20975,12620 20843,12677 20693,12742 20546,12815 20137,13016 20085,13046
 Luise-Zietz-Str.: Kopfsteinpflaster	Q2 20079,12479 20137,13016 20143,13082
 Rigaer Str.: Kopfsteinpflaster	Q2 14133,12482 14272,12446 14538,12371 14748,12314 14997,12243 15098,12213 15175,12180
 Thaerstr.: Kopfsteinpflaster	Q2 13773,12694 13844,12900
@@ -529,8 +536,6 @@ Zwieseler Str.: Kopfsteinpflaster	Q2 19510,9035 19629,9094
 Köpenicker Allee: wechselnd: holpriger Fahrweg, mäßiger Asphalt	Q2 19907,8407 20213,7872 20280,7757
 Vulkanstr.: Kopfsteinpflaster, OK	Q1 15880,13535 15873,14046 15838,14319
 Sandinostr.: Kopfsteinpflaster	Q2 15883,14606 15830,14647 15685,14757
-#: add_fragezeichen: mäßiges oder schlechtes Kopfsteinpflaster?
-Orankeweg: Kopfsteinpflaster	Q2 14934,15860 14802,15857 14720,15905 14619,15920
 Orankeweg: holpriger Feldweg	Q2 14934,15860 15305,15858 15439,15859
 Orankestr.: schlechtes Kopfsteinpflaster	Q3 16331,15486 15665,15765
 Orankestrand: guter Parkweg	Q1 15871,16399 15664,16115 15599,16077 15479,16072
@@ -693,11 +698,7 @@ Malchower Str.: mäßig geeignet	Q2 12841,18157 13163,18149 13374,18134 13631,1804
 #: unverified_by ADFC-Karte
 Grumbkowstr.: mäßig geeignet	Q2 11297,20686 11437,20341 11584,20058 11756,19694
 #: unverified_by ADFC-Karte
-Schillerstr.: mäßig geeignet	Q2 10082,20518 10323,20578 10547,20644 10642,20698 10743,20764
-#: unverified_by ADFC-Karte
 Friesenstr. (Niederschönhausen): mäßig geeignet	Q2 8833,19259 9475,18862
-#: unverified_by ADFC-Karte
-Beuthstr.: mäßig geeignet	Q2 10830,20280 10653,20200 10452,20109 10309,20032 10148,19999
 #: unverified_by ADFC-Karte
 Platanenstr.: mäßig geeignet	Q2 9355,19789 9177,19745 8977,19694 8730,19555 8496,19410
 Feldstr. (Wedding): Kopfsteinpflaster	Q2 9048,14681 9112,14771
@@ -710,13 +711,7 @@ Nymphenufer: mäßig geeignet	Q2 -4044,1841 -3981,1764 -3806,1644 -3761,1576 -3654
 #: unverified_by ADFC-Karte
 Dolomitenstr.: mäßig geeignet	Q2 10596,17554 10473,17446 10305,17299
 #: unverified_by ADFC-Karte
-Walderseestr.: mäßig geeignet	Q2 7333,17149 7631,17239
-#: unverified_by ADFC-Karte (wenigstens der östliche Teil)
-Alter Bernauer Heerweg: mäßig geeignet	Q2 6668,22746 7072,22905 7782,23172 7923,23225 8176,23315 8584,23421
-#: unverified_by ADFC-Karte
 Cyclopstr.: nicht geeignet	Q3 4825,21718 5138,21358
-#: unverified_by ADFC-Karte
-Friedhofstr.: gut geeignet	Q0 15534,15675 15598,15793
 #: unverified_by ADFC-Karte
 (Orankestr. - Orankesee): gut geeignet	Q0 15598,15793 15581,15846
 Peter-Vischer-Str.: Asphalt	Q0 6185,6469 6324,6480 6473,6493 6706,6513 6826,6523
@@ -989,10 +984,6 @@ Palmkernzeile: Verbundsteinpflaster	Q0 15100,9831 15209,10087
 Friedrich-Junge-Str.: Asphalt	Q0 15020,9875 15153,10112 15181,10154
 Schinkestr.: Kopfsteinpflaster	Q2 11623,9841 11734,9856 11880,9874
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): asphaltierer Radweg	Q0 17587,17965 16990,18694
-#: add_fragezeichen: tatsächlich? laut Bild im Tagesspiegel vvv
-Greifenhagener Str.: Kopfsteinpflaster	Q2 11040,15398 11055,15504 11093,15771 11162,15903
-Greifenhagener Str.: Kopfsteinpflaster	Q2 11190,15950 11232,16037 11306,16194 11341,16273 11397,16405
-#: add_fragezeichen ^^^
 Tuchollaplatz: Kopfsteinpflaster	Q2 15628,10915 15554,10934
 Lichtenrader Str.: Kopfsteinpflaster	Q2 11523,8178 11532,8104 11565,7921 11603,7759 11618,7671 11638,7558 11656,7460
 Kienitzer Str.: Kopfsteinpflaster	Q2 11498,7750 11603,7759 11736,7801 11856,7826 12025,7852 12090,7865
@@ -1086,7 +1077,7 @@ Honnefer Str.: Asphalt	Q0 19316,8933 19209,9125
 Voltastr.: Kopfsteinpflaster	Q2 9041,14896 9361,15066 9571,15178
 #: by: ^^^
 #: by: André Käding vvv
-Buschiner Str.: Asphalt	Q0 20160,13287 20743,13197
+Buschiner Str.: Asphalt	Q0 20160,13287 20598,13219 20743,13197
 Stangeweg: Beton	Q0 21414,16284 21542,16209 21610,16079
 Anemonenstr.: asphaltiert	Q0 23447,4425 23809,4533 23934,4661
 Sella-Hasse-Str.: Asphalt	Q0 20896,16937 20843,16829 20771,16690 20948,16612
@@ -1162,6 +1153,7 @@ Schluchseestr.: Asphalt	Q0 5016,22485 5237,22200 5540,22221 5808,22613
 Niedstr.: Asphalt	Q0 5364,7330 5653,7333 5810,7337 5902,7334
 Jägerstr. (Kaulsdorf): fester Sandweg	Q2 22631,8531 22506,8828 22009,9118 21831,9134
 Königswinterstr.: mäßiger Asphalt	Q1 19148,8406 18998,8784 18962,8879 18992,9000
+#: note: Joern (js) hat zu diesem Abschnitt nur "Asphalt" eingetragen:
 Schliemannstr.: mäßiger Asphalt	Q1 11154,14985 11334,15248
 Schliemannstr.: mäßiger Asphalt	Q1 11368,15301 11502,15527
 #: add_fragezeichen: Hier wurde als Range "5-15" angegegeben. Hausnummern?
@@ -1325,8 +1317,6 @@ Anton-Saefkow-Str.: Asphalt	Q0 12536,14827 12723,14714 12885,14616 13202,14388
 Julierstr.: Beton	Q1 6376,17687 6268,17709
 Septimerstr.: Beton	Q0 5854,17530 5931,17609 6243,17603 6274,17403
 Winterthurstr.: Beton	Q0 6243,17603 6268,17709 6279,17753 6297,17821
-#: add_fragezeichen: die ADFC-Karte sagt hier aber "gut geeignet"
-Zermatter Str.: Kopfsteinpflaster, schlechte Straße	Q2 6512,17696 6653,17696 6761,17741 6859,17753
 #: by: ^^^
 #: by: Carsten
 Am Iderfenngraben: schlechtes Kopfsteinpflaster	Q3 8623,19353 8653,19431 9015,19606 9408,19707 9578,19759
@@ -1668,3 +1658,62 @@ Hattenheimer Str. (Frohnau): schlechtes Kopfsteinpflaster	Q3 2666,24998 2950,247
 Hubertusstr. (Steglitz): Asphalt	Q0 5240,5922 5099,5994
 #: by: WIll Gibson:
 Hessenallee: Asphalt	Q0 657,11650 664,11678 788,11744 906,11870
+#: by: Andreas Mühlhausen: vvv
+#: XXX Teil von Maikäferweg bis Radelandstr. laut "Berliner Umland" "witterungsabhängiger Weg"
+(Mauerweg Forst Spandau): Asphalt	Q0 -7212,16862 -7128,16971 -7109,17315 -6912,17671 -6669,18290 -6691,18808 -6842,19290 -7012,19435 -7960,19066
+Eiskeller - Schönwalder Allee: Asphalt	Q0 -6668,20809 -7015,20320 -7570,20029 -7566,19861 -7980,19618 -7960,19066
+#: XXX laut "Berliner Umland" im Ostteil ab Oberjägerweg witterungsabhängige Strecke, sonst gut geeigneter Radweg
+(Mauerweg Forst Spandau): mäßiger Asphalt (rauh und Wurzeln)	Q1 -3214,19850 -3412,19968 -4175,20187 -4427,20384 -4625,20537 -5025,20675 -5400,20737 -5462,20837 -5818,20918 -6099,20718
+#: by: ^^^
+#: by: Detlef Herzog:
+Abbestr.: Kopfsteinpflaster	Q2 4693,12068 4755,12219 4829,12357
+#: by: Michael Meyer:
+Kuglerstr.: schlechtes Kopfsteinpflaster	Q3 11618,16183 11341,16273 11018,16358
+#: by: Holger (hgruetjen):
+Justus-von-Liebig-Str.: Asphalt	Q0 19495,2535 19878,2899
+#: by: Reiner Wild:
+Braillestr.: Asphalt	Q0 4512,5199 4433,5315
+#: by: maja wegener:
+Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18703,8405 18320,8662 18273,8758 18243,8818 18010,8954
+#: by: Torsten Fleischmann:
+Zepernicker Str.: Asphalt	Q0 18178,26668 17707,26410 17433,26288 17223,26153
+#: by: Thomas Specht:
+Eckermannstr.: Asphalt	Q0 20473,12212 20503,12432 20546,12815 20561,12925 20598,13219 20633,13497 20692,13984
+#: by: Joern (js): vvv
+Gaudystr.: Kopfsteinpflaster, schlechtere Qualität	Q2 10949,15674 10759,15622 10473,15549
+Greifenhagener Str.: Asphalt	Q0 11093,15771 11162,15903 11190,15950 11232,16037
+#: note: laut Bild im Tagesspiegel, kein Widerspruch von Joern vvv
+Greifenhagener Str.: Kopfsteinpflaster	Q2 11040,15398 11055,15504 11093,15771
+Greifenhagener Str.: Kopfsteinpflaster	Q2 11232,16037 11306,16194 11341,16273 11397,16405
+#: note: ^^^
+Ruppiner Str.: Asphalt	Q0 10150,14525 10070,14678 10043,14735 10011,14810
+(Uferweg am Invalidenfriedhof): Kopfsteinpflaster mittlerer Qualität	Q2 8337,13541 7968,14190
+#: note: Katha hat hier "Kopfsteinpflaster, schlechte Straße" geschrieben, die ADFC-Karte sagt hier "gut geeignet". 2:1 für Q1
+Zermatter Str.: Kopfsteinpflaster besserer Qualität 	Q1 6653,17696 6761,17741 6859,17753
+Zermatter Str.: Betonplatten, gut	Q1 6376,17687 6512,17696 6653,17696
+(Um den Schäfersee): gute befestigte Sandwege	Q1 7501,17525 7490,17632 7437,17670 7214,17656 7193,17554 7233,17462
+Baseler Str. (Reinickendorf): Kopfsteinpflaster	Q2 6792,17951 6859,17753 6895,17625 6914,17567 6995,17322
+#: note: auch die ADFC-Karte sagt "gut geeignet" vvv
+Mudrackzeile: asphaltiert	Q0 6895,17625 7043,17667 7009,17778
+Mariabrunner Weg: asphaltiert	Q0 7009,17778 6859,17753
+#: note: ^^^
+#: note: die ADFC-Karte sagt hier: "mäßig geeignet":
+Walderseestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7333,17149 7631,17239
+Fräsersteig: Betonplatten	Q1 5770,20407 6134,20585 6184,20550 6298,20599
+#: note: die ADFC-Karte sagt hier für den östlichen Teil: "mäßig geeignet":
+Alter Bernauer Heerweg: Kopfsteinpflaster	Q2 6668,22746 7072,22905 7782,23172 7923,23225 8176,23315 8584,23421
+#: note: die ADFC-Karte sagt hier: "mäßig geeignet":
+Alte Fasanerie:: Sandweg, Spurrillen, mäßig bis gut	Q1 7423,22368 8015,22512
+Freizeitpark Lübars: befestigter Sandweg mittlerer Güte	Q1 8015,22512 8062,22631 7782,23172
+#: note: die ADFC-Karte sagt hier "mäßig geeignet":
+Schillerstr.: Betonplatten	Q2 10082,20518 10323,20578 10547,20644 10642,20698 10743,20764
+#: note: die ADFC-Karte sagt hier "mäßig geeignet":
+Beuthstr.: Asphalt mit Löchern	Q1 10830,20280 10653,20200 10452,20109 10309,20032 10148,19999
+Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2 14934,15860 14802,15857 14720,15905 14619,15920
+#: note: laut ADFC-Karte gut geeignet
+Friedhofstr.: sehr guter Asphalt	Q0 15534,15675 15598,15793
+#: by: ^^^
+#: by: W. Schwarz:
+Adolf-Martens-Str.: Asphalt	Q0 2712,4091 2787,3975 3025,4123
+#: by: rüvo
+Zwinglistr.: Asphalt	Q0 5212,13211 5358,13207 5699,13184

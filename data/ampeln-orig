@@ -1,4 +1,4 @@
-# $Id: ampeln-orig,v 4.5 2004/10/10 22:39:12 eserte Exp eserte $
+# $Id: ampeln-orig,v 4.6 2005/04/29 23:48:56 eserte Exp $
 	X 9222,8787
 	X 8982,8781
 	X 8594,8773
@@ -1659,8 +1659,9 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: by: Olaf Schulz vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 	? 11939,16084
 	F 11310,14953
-	X 11623,15108
 #: by ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#: by: Joern (js):
+	F 11581,14994
 	X 5421,8337
 	F 8241,11024
 nur Richtung Westen	X 5831,10978

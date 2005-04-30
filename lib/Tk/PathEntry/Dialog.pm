@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Dialog.pm,v 1.8 2003/11/13 21:50:15 eserte Exp $
+# $Id: Dialog.pm,v 1.9 2004/09/04 01:11:59 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2005 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ use Tk::PathEntry;
 use base qw(Tk::DialogBox);
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 Construct Tk::Widget 'PathEntryDialog';
 
@@ -125,13 +125,24 @@ Tk::PathEntry::Dialog - File dialog using Tk::PathEntry
 
 =head1 SYNOPSIS
 
+Using as a replacement for getOpenFile and getSaveFile:
+
     use Tk::PathEntry::Dialog qw(as_default);
     $mw->getOpenFile;
+
+Using as a normal module:
+
+    use Tk::PathEntry::Dialog;
+    $filename = $mw->PathEntryDialog->Show;
 
 =head1 DESCRIPTION
 
 With this module, the L<Tk::PathEntry|Tk::PathEntry> can also be used
 as a standard Tk file dialog.
+
+=head1 BUGS
+
+This widget does not work on Windows.
 
 =head1 SEE ALSO
 
