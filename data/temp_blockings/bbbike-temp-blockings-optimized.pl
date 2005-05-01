@@ -74,22 +74,8 @@ userdel	q4 49039,44131 49691,43812
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1114898400,
-         'text' => 'K 6740; (L 38 ˆstl. Berkenbr¸ck-Steinhˆfel); OL Demnitz Straﬂenbauarbeiten Vollsperrung 12.07.2004-30.04.2005 ',
-         'from' => 1089496800,
-         'data' => 'userdel	q4 64514,-1544 64439,-1243
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1114898400,
-         'text' => 'L 19; (Zechlinerh¸tte-Wesenberg (MVP)); zw. Abzw. Klein Zerlang u. LG (nˆ. Prebelowbr¸cke) Br¸ckenneubau Vollsperrung 11.10.2004-30.04.2005 ',
-         'from' => 1097359200,
-         'data' => 'userdel	2 -26403,85177 -26316,84900
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -253,14 +239,7 @@ userdel	q4 22217,1108 22162,1067
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1114898400,
-         'text' => 'L 291; (Oderberger Str.); OD Eberswalde, Einm. Breite Str. Straﬂenbauarbeiten Vollsperrung 24.03.2005-30.04.2005 ',
-         'from' => 1111532400,
-         'data' => 'userdel	q4 38035,49183 37875,48253
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1115157600,
          'text' => 'L 23; (Templin-Lychen); OD Lychen, Kreuzungsber. Straﬂenbau Vollsperrung 29.03.2005-03.05.2005 ',

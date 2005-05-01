@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.8 2005/04/05 22:41:06 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.8 2005/04/05 22:41:06 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -23,8 +23,8 @@ sub teaser {
 			     #'dobli',
 			    );
     my @teasers_mandatory = (
-			     #teaser_perltk_newrelease(),
-			     teaser_perltk(),
+			     teaser_perltk_newrelease(),
+			     #teaser_perltk(),
 			     teaser_mapserver(),
 			     teaser_routen(),
 			     #teaser_sternfahrt(),
@@ -51,7 +51,7 @@ EOF
 
 sub teaser_perltk_newrelease {
     <<EOF;
-<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> der Perl/Tk-Version von BBBike mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.<br /><a class="new" href="@{[ $BBBike::LATEST_RELEASE_DISTDIR ]}"><span style="font-weight:bold;">NEU: Version 3.13</a></span></div>
+<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> der Perl/Tk-Version von BBBike mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.<br /><a class="new" href="@{[ $BBBike::LATEST_RELEASE_DISTDIR ]}"><span style="font-weight:bold;">NEU: Version $BBBike::STABLE_VERSION</a></span></div>
 EOF
 }
 

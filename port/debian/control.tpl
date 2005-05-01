@@ -1,12 +1,12 @@
 [% PROCESS "../../BBBikeVar.tpl" -%]
-Source: bbbike
+Package: bbbike
+Version: [% BBBike.STABLE_VERSION %]
 Section: geo
 Priority: optional
+Architecture: i386
+Essential: no
+Depends: perl (>= 5.005), perl-tk (>= 800)
 Maintainer: Slaven Rezic <srezic@cpan.org>
-Package: bbbike
-Version: [% BBBike.VERSION.replace("-DEVEL", "") %]
-Architecture: any
-Depends:  perl (>= 5.005), perl-tk (>= 800)
 Suggests: netpbm | imagemagick, gv | ghostview | gs | ggv
 Description: BBBike is a route planner for cyclists in Berlin-Brandenburg
  .

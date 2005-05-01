@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.35 2005/04/30 07:45:04 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.35 2005/04/30 07:45:04 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@
 
 package BBBike;
 
-$VERSION	   = '3.14'; # remove "-DEVEL" for releases
+$VERSION	   = '3.14-DEVEL'; # remove "-DEVEL" for releases
 $STABLE_VERSION	   = '3.14';
 $WINDOWS_VERSION   = '3.14'; # Windows distribution
 
@@ -56,7 +56,7 @@ $DISTFILE_SOURCE   = "$DISTDIR/BBBike-$STABLE_VERSION.tar.gz";
 $DISTFILE_WINDOWS  = "$DISTDIR/BBBike-$WINDOWS_VERSION-Windows.zip";
 # Distribution directory for humans (entry to 'show files' at sourceforge)
 $DISPLAY_DISTDIR   = 'http://sourceforge.net/project/showfiles.php?group_id=19142';
-$LATEST_RELEASE_DISTDIR  = 'http://sourceforge.net/project/showfiles.php?group_id=19142&package_id=14052&release_id=210614';
+$LATEST_RELEASE_DISTDIR  = 'http://sourceforge.net/project/showfiles.php?group_id=19142&package_id=14052&release_id=324253';
 
 # URL auf die Diplomarbeit
 $DIPLOM_URL        = 'http://user.cs.tu-berlin.de/~eserte/diplom/';

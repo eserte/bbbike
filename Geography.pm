@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Geography.pm,v 1.6 2005/04/29 21:03:01 eserte Exp $
+# $Id: Geography.pm,v 1.6 2005/04/29 21:03:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2005 Slaven Rezic. All rights reserved.
@@ -16,6 +16,7 @@ package Geography;
 
 sub new {
     my($class, $city, $country, @args) = @_;
+    return if !defined $city && !defined $country;
     my $pkg = 'Geography::' . ucfirst(lc($city)) . '_' . uc($country);
     my $obj = eval 'use ' . $pkg . '; ' . $pkg . '->new(@args)';
     if (!$obj) {
@@ -55,7 +56,7 @@ sub fallback_constructor {
 
 # XXX smarter? look at existing data directories?
 sub default {
-    Geography::new("Berlin", "DE");
+    Geography->new("Berlin", "DE");
 }
 
 1;

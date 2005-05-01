@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.23 2005/04/30 07:37:50 eserte Exp $
+# $Id: qualitaet_s-orig,v 4.23 2005/04/30 07:37:50 eserte Exp eserte $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -675,7 +675,7 @@ Alt-Hermsdorf: mäßig geeignet	Q2 4347,23205 4405,23149 4445,23128 4582,23035
 #: unverified_by ADFC-Karte
 Ernststr.: mäßig geeignet	Q2 2497,19503 2700,19527
 Medebacher Weg: Kopfsteinpflaster	Q2 1778,20178 1842,20048
-Medebacher Weg: Kopfsteinpflaster	Q2 1874,19955 1904,19820
+Medebacher Weg: Kopfsteinpflaster	Q2 1874,19955 1883,19913 1904,19820
 Brünowplatz: Kopfsteinpflaster	Q2 1842,20048 1806,19991 1874,19955 1904,20018 1842,20048
 #: unverified_by ADFC-Karte
 Borsigwalder Weg: mäßig geeignet	Q2 2852,19546 3028,19771
@@ -1058,6 +1058,9 @@ Weimarische Str.: Kopfsteinpflaster	Q2 5065,8339 5066,7998 5068,7965
 Reuchlinstr.: mäßiges Kopfsteinpflaster	Q2 4989,13462 4964,13319 4940,13188
 Türkenstr.: Kopfsteinpflaster	Q2 6459,16318 6645,16523
 Am Luchgraben: Asphalt	Q0 17078,21321 16675,22168
+Rhumeweg: Kopfsteinpflaster	Q2 -1530,3323 -1453,3166 -1339,2889
+Dubrowstr.: schlechtes Kopfsteinpflaster	Q3 -2249,2818 -2221,2886 -2096,2929 -1453,3166
+Dubrowstr.: Kopfsteinpflaster	Q2 -1453,3166 -1187,3264
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -1501,8 +1504,10 @@ Baseler Str.: Kopfsteinpflaster	Q2 3148,1888 3154,2467 3168,2838 3180,3035 3184,
 #: by: Marcel:
 # der "Radweg"-Eintrag meint wahrscheinlich die NN-Strecke
 Juchaczweg: Asphalt	14117,3224 14214,3426 14391,3786
-#: by: Gero:
+#: by: Gero: vvv
 Arnimallee: mäßiges Kopfsteinpflaster	Q2 3366,5654 3079,5411 2913,5294
+Martin-Buber-Str.: Asphalt	Q0 514,2818 589,2925 694,3113
+#: by: ^^^
 #: by: Kathleen (kati):
 Rudolf-Schwarz-Str.: mäßiges Kopfsteinpflaster	Q2 13115,14293 13079,14320 12811,14526
 #: by: Sabine Pesch:
@@ -1561,11 +1566,14 @@ Ueckermünder Str.: Asphalt	Q0 10008,16330
 Am Rohrgarten: geteert	Q0 -2127,1760 -1973,1833 -1474,2073
 Quendelsteig: gut befahrbares Verbundsteinpflaster	Q1 -2165,1862 -2003,1913
 Himbeersteig: gut befahrbares Verbundsteinpflaster	Q1 -1973,1833 -2003,1913 -2064,2078
+#: note: confirmed:
 Schopenhauerstr.: asphaltiert 	Q0 -1873,3315 -2162,3128
+#: note: confirmed:
 Schopenhauerstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -2162,3128 -2481,2900 -2593,2764 -2918,2581 -3190,2467
 Normannenstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -3309,2400 -3395,2403 -3579,2532 -3692,2549
 Wasgenstr.: Kopfsteinpflaster	Q2 -2481,2900 -2395,2600
 Wasgenstr.: asphaltiert	Q0 -2395,2600 -2280,2164
+#: note: confirmed:
 Breisgauer Str.: Teerstr.	Q0 -2306,3547 -2243,3371 -2162,3128 -2096,2929 -2026,2742
 #: by: ^^^
 #: by: Stefan (binarchy):
@@ -1633,9 +1641,12 @@ Heidekampweg: holpriger Asphalt	Q2 15719,6218 15667,6648
 #: by: ^^^
 #: by: Kristine:
 Erasmusstr.: Asphalt	Q0 5216,13228 4964,13319
-#: by: Joachim Westphal:
+#: by: Joachim Westphal: vvv
 #: XXX: ich hatte für ein Teilstück "Kopfsteinpflaster" eingetragen --- woher hatte ich die Information? Die ADFC-Karte meint ebenfalls "gut geeignet"
 Rungiusstr.: sehr guter Asphalt	Q0 13158,5490 13116,5689 13077,5905 13065,5969 13027,6168 12997,6290 12981,6371 12962,6433
+#: note: laut ADFC-Karte "gut geeignet":
+(Kolonie Blaschkotal): nicht asphaltierter Weg	Q1 13158,5490 13162,5382 13047,5275
+#: by: ^^^
 #: by: Susanna (Vinesumar...): vvv
 #: XXX Peter Panik hat für die gesamte Strecke "schlechtes Kopfsteinpflaster" eingetragen
 Schreinerstr.: asphaltiert	Q0 15054,12323 14776,12418
@@ -1717,3 +1728,10 @@ Friedhofstr.: sehr guter Asphalt	Q0 15534,15675 15598,15793
 Adolf-Martens-Str.: Asphalt	Q0 2712,4091 2787,3975 3025,4123
 #: by: rüvo
 Zwinglistr.: Asphalt	Q0 5212,13211 5358,13207 5699,13184
+#: by: Petra (psf):
+Schlieperstr.: Kopfsteinpflaster	Q2 1620,19854 1883,19913 2237,19992 2450,20028
+#: by: Ulfert (030):
+#: XXX "mit ein paar Macken"
+Kulmbacher Str.: Asphalt	Q1 5799,9939 5831,10170
+#: by: Jannik (Pf.):
+Nordhauser Str.: Asphalt	Q0 3542,13063 3719,13075 4341,13073

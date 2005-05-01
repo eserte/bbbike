@@ -10,20 +10,6 @@ Legend:
 
   Priority from 1 (unimportant) to 5 (very important).
 
-=head1 NEXT RELEASE
-
-=head2 Show stoppers -> scheduled release @ 2005-04-30
-
-=over
-
-=item * Check everything in (almost only data is missing)
-
-=item * test GPS @ windows, especially multiple uploads
-
-=item * a -public check on Win32, Linux and FreeBSD
-
-=back
-
 =head1 Unsorted after Win98 session
 
  * option editor does not fit into 800x600 screen --- using scrollable pane?
@@ -1364,7 +1350,7 @@ Problems: Nord-Rügen. Stützpunkte in Hiddensee und Sassnitz einfügen.
 Wie zeige ich an, dass ein BNP unpassierbar fuer anhaenger ist?
 Fr-Jahn-Sportpark zur Topsstr ist so ein fall.
 
-=item * (M4)
+=item * (H4)
 
 Alle in "strassen" vorkommende StraE<szlig>en sollten auch in
 "Berlin.coords.data" stehen. Ansonsten gibt es derart PE<Uuml>robleme,
@@ -1373,14 +1359,11 @@ z.B. "Hallesches Tor" angezeigt wird, diese StraE<szlig>e als Eingabe
 aber nicht akzeptiert wird. Sprich: die Datei data/add_str sollte auf
 AktualitE<auml>t E<uuml>berprE<uuml>ft werden und dann mE<ouml>glichst
 alle fehlende StraE<szlig>en nach Berlin.coords.data E<uuml>bertragen
-werden. => Ist das noch immer problematisch? Ich dachte, ich hätte im
-CGI zusätzliche Logik eingeführt, um dieses Problem zu umgehen. Eine
-ähnliche Logik fehlt vielleicht noch in BBBikeRouting.pm => Nein, es
-geht noch immer nicht. Test: Suche nach Treptower Hafen.
+werden.
 
 Hatte ich schonmal:
 [in add_str sollten möglichst KEINE "richtigen" Straßen stehen --- nur
-Sachen wie Brücken, Tunnel, "Alexanderplatz [zur Grunerstr.]" etc.
+Sachen wie Brücken, Tunnel, "Alexanderplatz [zur Grunerstr.]", Parkwege etc.
 ansonsten werden sie in bbbike.cgi nicht erkannt, obwohl sie
 existieren!]
 
