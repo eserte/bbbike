@@ -1248,7 +1248,7 @@ userdel	q4; 7693,18481 7350,18262
 EOF
      },
      { from  => 1101934006, # 2004-12-01 21:46
-       until => 1117576800, # 2005-06-01 00:00
+       until => 1114976619, # aufgehoben XXX 1117576800 2005-06-01 00:00
        text  => 'Akeleiweg, Tiefbauarbeiten, Straße von Eisenhutweg in Richtung Stubenrauchstraße gesperrt, Dauer: bis 31.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -1827,6 +1827,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -21137,-4034 -21112,-3787
+EOF
+     },
+     { from  => 1114898400, # 2005-05-01 00:00
+       until => 1133391600, # 2005-12-01 00:00
+       text  => 'L 76; (Mahlower Str.); OL Teltow, zw. Ruhlsdorfer u. A.-Saefkow-Str. Kanal- und Straßenbau Vollsperrung 02.05.2005-30.11.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 1453,-746 1680,-1011
+userdel	q4 1872,-1118 1680,-1011
 EOF
      },
     );

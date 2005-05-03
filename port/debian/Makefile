@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.1 2005/04/11 22:44:02 eserte Exp eserte $
+# $Id: Makefile,v 1.2 2005/05/02 23:28:50 eserte Exp $
 #
 
 BUILDDIR=	/tmp/bbbike-debian

@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.20 2005/04/29 23:48:47 eserte Exp $
+# $Id: gesperrt-orig,v 4.21 2005/05/02 23:25:29 eserte Exp eserte $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraßen etc.)
@@ -527,6 +527,10 @@ Drängelgitter (Gleditschstr. - Elßholzstr.)	BNP:10 7158,9509
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
+#: by: markus kringel:
+Am Spreebord: Baustelle	2:inwork 4135,12715 4314,12659
+#: by: joern (js):
+Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14903,10403 15059,10289
 Voltairestr. (Arbeiten an "Alexa", voraussichtlich bis 2005-10-31)	2:inwork 11323,12484 11209,12430
 Elsenstr.	1:inwork 13760,9188 13657,9063 13504,8882
 Pfarrstr.	1:inwork 15339,11123 15267,10865
@@ -583,7 +587,7 @@ B 167; (Herzberg-Neuruppin); OL Alt Ruppin, Rhinbrücke    Brückenneubau    Volls
 #Schönhauser Allee - Wörther Str.: U-Bahnrampe	3 10909,14710 10924,14491 11163,14548
 #Kopenhagener Str. - Schönhauser Allee: U-Bahnviadukt	3 10581,15936 10722,15921 10972,15895 10977,15944 10987,16008 10994,16120
 #Schönhauser Allee - Kopenhagener Str.: U-Bahnviadukt	3 10963,15789 10972,15895 10722,15921 10581,15936
-#Berliner Str. - Thulestr.: U-Bahnrampe	3 10986,16897 11042,16605 11645,16616
+#Berliner Str. - Thulestr.: U-Bahnrampe	3 10986,16897 10999,16830 11042,16605 11645,16616
 #Thulestr. - Berliner Str.: U-Bahnrampe	3 11645,16616 11042,16605 11033,16464
 #Dunckerstr. - Wisbyer Str.: Straßenbahn	3 11939,16084 12026,16247 11905,16318
 #Löwenberger Str. - Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3 17477,11893 17436,11791 17750,11771

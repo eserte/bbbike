@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.24 2005/04/10 08:50:56 eserte Exp $
+# $Id: bbbike.cgi,v 7.25 2005/05/02 23:27:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -664,7 +664,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.24 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.25 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3158,7 +3158,7 @@ sub search_coord {
 		    if (!exists $comments_in_whole_etappe{$_->[0]}) {
 			my $cat = $_->[1]->[Strassen::CAT()];
 			if (($cat =~ /^CP2/ && !exists $comments_at_beginning{$_->[0]}) ||
-			    $cat !~ /^(CP2|PI)/) {
+			    $cat !~ /^(CP2|PI|CP$|CP;)/) {
 			    $_->[0] .= " (Teilstrecke)";
 			}
 		    }
@@ -5605,7 +5605,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/04/10 08:50:56 $';
+    my $cgi_date = '$Date: 2005/05/02 23:27:01 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

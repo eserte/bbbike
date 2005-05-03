@@ -155,6 +155,13 @@
       <img title="" alt="legend" src="[legend]">
 
       <br>Maﬂstab: 1:[scale] <small><a href="help.html#scale" onclick="return help('scale')">(Hilfe)</a></small>
+
+      <br>Letzte Aktualisierung der Daten:
+          [%
+	     USE file("data/strassen.shp");
+	     USE date;
+	     date.format(file.mtime, "%Y-%m-%d");
+          %]
     </td></tr></table>
 
   </td></tr>

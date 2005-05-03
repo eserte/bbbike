@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: old_comments.t,v 1.2 2005/03/20 21:41:51 eserte Exp $
+# $Id: old_comments.t,v 1.3 2005/05/02 23:27:15 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -47,6 +47,18 @@ if (!@urls) {
 }
 
 my @tests = (
+	     # Czeminskistr. -> Julius-Leber-Brücke 
+	     ["7603,8911", "7497,8916", <<EOF, "CP;"],
+- ''
+- Als Julius-Leber-Brücke ausgeschildert
+- ~
+EOF
+	     ["7497,8916", "7603,8911", <<EOF, "CP; Rückweg"],
+- ''
+- ''
+- ~
+EOF
+
 	     # Hagelberger/Yorck
 	     ["8773,9524", "8595,9495", <<EOF, "PI"],
 - ! >-

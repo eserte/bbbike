@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.162 2005/04/30 08:38:33 eserte Exp $
+# $Id: bbbike,v 3.163 2005/05/02 23:26:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -213,7 +213,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.162 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.163 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -10974,7 +10974,6 @@ sub show_info {
     my @comments;
     if (!$str_obj{"comm"}) {
 	$str_obj{'comm'} = _get_comments_obj();
-#	$str_obj{"comm"} = Strassen->new("comments");
     }
     if (!$comments_pos_net) {
 	eval {
@@ -11097,13 +11096,16 @@ sub show_info {
 	for(my $i=0; $i<=$#txt_and_tag; $i+=2) {
 	    my($txt, $tag) = @txt_and_tag[$i, $i+1];
 	    for my $txtline (split /\n/, $txt) {
-		if ($txtline =~ m{^http://}) {
-		    $info_text->insert("end", $txtline, "link$linkcount");
-		    $show_url->($linkcount, $txtline);
-		    $linkcount++
-		} else {
-		    $info_text->insert("end", $txtline, $tag);
+		my $pos = 0;
+		while ($txtline =~ m{^(.*?)((?:ftp|https?)://\S+)}g) {
+		    my($pre_text, $link_text) = ($1, $2);
+		    $info_text->insert("end", $pre_text, $tag);
+		    $info_text->insert("end", $link_text, "link$linkcount");
+		    $show_url->($linkcount, $link_text);
+		    $linkcount++;
+		    $pos = pos($txtline);
 		}
+		$info_text->insert("end", substr($txtline, $pos), $tag);
 		$info_text->insert("end", "\n");
 	    }
 	}
@@ -11113,9 +11115,6 @@ sub show_info {
 	    $info_text->insert("end", "\n\n" . M("Kommentare").": ", "bold");
 	    $comment_label_end_index = $info_text->index("end - 1c");
 	    $info_text->insert("end", "\t" . join("\n\t", @comments), "comments_text");
-#XXXdel:	    $comments[0] = "Kommentare:\t$comments[0]";
-#	    @comments[1..$#comments] = map { "\t$_" } @comments[1..$#comments];
-#	    $info_text->insert("end", "\n\n" . join("\n", @comments));
 	}
 	if (defined $area) {
 	    $info_text->insert("end",

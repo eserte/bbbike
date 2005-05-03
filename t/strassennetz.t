@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.6 2005/04/09 21:59:18 eserte Exp $
+# $Id: strassennetz.t,v 1.8 2005/05/02 23:27:36 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -14,10 +14,12 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin",
 	);
 use Getopt::Long;
+use File::Temp qw(tempfile);
 
 use Strassen::Core;
 use Strassen::Lazy;
 use Strassen::StrassenNetz;
+use Route;
 
 use BBBikeTest;
 
@@ -32,7 +34,7 @@ BEGIN {
     }
 }
 
-plan tests => 29;
+plan tests => 30;
 
 if (!GetOptions(get_std_opts(qw(xxx)))) {
     die "usage: $0 [-xxx]";
@@ -157,7 +159,6 @@ if ($do_xxx) {
     }
 }
 
-XXX:
 {
     my $c1 = "4695,17648"; # Scharnweberstr.
     my $c2 = "10524,655"; # Lichtenrader Damm
@@ -168,6 +169,26 @@ XXX:
     my $dist2 = int sum map { $_->[StrassenNetz::ROUTE_DIST] } @compact_route;
     is($dist1, $dist2, "Distance the same after compaction");
     cmp_ok(scalar(@compact_route), "<", scalar(@route), "Actually less hops in compacted route");
+}
+
+XXX:
+{
+    # Bug reported by Dominik
+    $TODO = "In some strange circumstances, angle may be undef";
+    my $route = <<'EOF';
+#BBBike route
+$realcoords_ref = [[-3011,10103],[-2761,10323],[-2766,10325],[-2761,10323],[-2571,10258]];
+$search_route_points_ref = [['-3011,10103','m'],['-2766,10325','a'],['-2571,10258','a']];
+EOF
+    my($tmpfh,$tmpfilename) = tempfile(UNLINK => 1, SUFFIX => ".bbr");
+    print $tmpfh $route;
+    close $tmpfh;
+    my $ret = Route::load($tmpfilename);
+    my $path = $ret->{RealCoords};
+    my(@route) = $s_net->route_to_name($path);
+    my $got_undef = 0;
+    for (@route) { $got_undef++ if !defined $_->[StrassenNetz::ROUTE_ANGLE] }
+    is($got_undef, 0);
 }
 
 __END__

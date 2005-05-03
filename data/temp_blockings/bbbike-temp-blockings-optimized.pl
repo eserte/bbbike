@@ -96,14 +96,7 @@ userdel	q4 49039,44131 49691,43812
        undef,
        undef,
        undef,
-       {
-         'until' => 1117576800,
-         'text' => 'Akeleiweg, Tiefbauarbeiten, Straße von Eisenhutweg in Richtung Stubenrauchstraße gesperrt, Dauer: bis 31.05.2005 ',
-         'from' => 1101934006,
-         'data' => 'userdel	q4; 17894,2783 17631,3200 17603,3240 17388,3576
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -371,21 +364,16 @@ userdel	q4 -16640,1304 -16894,1485
 ',
          'type' => 'gesperrt'
        },
+       undef,
+       undef,
        {
-         'until' => 1114984800,
-         'text' => 'B 198; (Schwedter Str.); OD Prenzlau, Kno. Uckermarkkaserne Ausbau Knotenpunkt Vollsperrung 30.04.2005-01.05.2005 ',
-         'from' => 1114725600,
-         'data' => 'userdel	q4 40864,100741 40507,100965
+         'until' => 1133391600,
+         'text' => 'L 76; (Mahlower Str.); OL Teltow, zw. Ruhlsdorfer u. A.-Saefkow-Str. Kanal- und Straßenbau Vollsperrung 02.05.2005-30.11.2005 ',
+         'from' => 1114898400,
+         'data' => 'userdel	q4 1453,-746 1680,-1011
+userdel	q4 1872,-1118 1680,-1011
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1114984800,
-         'text' => 'L 90; (Eisenbahnstr.); OD Werder, zw. B1 Berliner Str. u. Phöbener Str. 126. Baumblütenfest Vollsperrung 30.04.2005-01.05.2005 ',
-         'from' => 1114725600,
-         'data' => 'userdel	2 -21137,-4034 -21112,-3787
-',
-         'type' => 'gesperrt'
        }
      
 );

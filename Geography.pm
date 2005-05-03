@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Geography.pm,v 1.6 2005/04/29 21:03:01 eserte Exp eserte $
+# $Id: Geography.pm,v 1.7 2005/05/02 23:29:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2005 Slaven Rezic. All rights reserved.

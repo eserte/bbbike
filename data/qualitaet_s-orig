@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.23 2005/04/30 07:37:50 eserte Exp eserte $
+# $Id: qualitaet_s-orig,v 4.24 2005/05/02 23:25:51 eserte Exp eserte $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -957,7 +957,7 @@ Kaiserin-Augusta-Str.: Kopfsteinpflaster	Q2 8990,5950 9177,5922
 #: note: bestätigt durch Stefan (sts):
 Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
 (Kynaststr. - Uferwanderweg): Parkweg	Q1 14828,10628 14906,10587
-Paul-und-Paula-Ufer: Parkweg, teilweise auch Asphalt/Beton	Q1 15314,10121 15261,10167 15204,10201 15137,10239 14903,10403 14864,10451 14906,10587 14937,10598 14990,10581 15100,10637 15209,10581
+Paul-und-Paula-Ufer: Parkweg, teilweise auch Asphalt/Beton	Q1 15314,10121 15261,10167 15204,10201 15059,10289 14903,10403 14864,10451 14906,10587 14937,10598 14990,10581 15100,10637 15209,10581
 Am Rummelsburger See: glatt gepflastert	Q0 15209,10581 15453,10415
 Am Rummelsburger See: Parkweg	Q2 15453,10415 15456,10356 15518,10234 15625,10187 15828,9875 15931,9846
 Am Rummelsburger See: Betonweg	Q0 15931,9846 16046,9746 16262,9925
@@ -977,7 +977,7 @@ Hagenauer Str.: Kopfsteinpflaster	Q2 11154,14985 11187,14763
 Kolmarer Str.: Kopfsteinpflaster	Q2 11299,14112 11418,14290
 südliches Spreeufer: Parkweg	Q1 7775,12631 7934,12734 8012,12848 8084,12914 8228,12964 8343,12925 8426,12871 8473,12753 8495,12651 8554,12593
 Glasbläserallee: Verbundsteinpflaster	Q0 14759,10096 14850,10265 14893,10359
-Fischzug: Asphalt	Q0 14850,10265 14929,10221 15090,10140
+Fischzug: Asphalt	Q0 14850,10265 14929,10221 15001,10182 15090,10140
 Fischzug: Kopfsteinpflaster, teilweise auch Verbundsteinpflaster	Q2 15090,10140 15153,10112 15209,10087
 Am Speicher: Kopfsteinpflaster	Q2 15209,10087 15261,10167
 Palmkernzeile: Verbundsteinpflaster	Q0 15100,9831 15209,10087
@@ -1735,3 +1735,20 @@ Schlieperstr.: Kopfsteinpflaster	Q2 1620,19854 1883,19913 2237,19992 2450,20028
 Kulmbacher Str.: Asphalt	Q1 5799,9939 5831,10170
 #: by: Jannik (Pf.):
 Nordhauser Str.: Asphalt	Q0 3542,13063 3719,13075 4341,13073
+#: by: Kerstin Pantos: vvv
+Ringbahnstr. (Wilmersdorf): mäßiges Kopfsteinpflaster	Q2 2691,10047 2539,10235
+#: by: ^^^
+#: by: Uwe Beckert:
+Rotkopfweg: Asphalt	Q0 10966,3712 10917,3367
+#: by: Sven Dreißig:
+Hallandstr.: Kopfsteinpflaster	Q2 11598,16878 11285,16879 10999,16830
+#: by: Jan (Smile...)
+Kornburger Weg: schlechter Asphalt	Q1 -3280,17120 -3326,16553
+#: by: Martin Dittmar: vvv
+Am Berl: Asphalt	Q0 16923,18650 16817,18809
+Am Berl: Asphalt	Q0 16799,18556 16746,18632 16793,18668 16740,18751
+#: by: ^^^
+#: by: markus kringel: vvv
+Am Spreebord: gute Qualität	Q0 3735,12705 4135,12715
+Am Spreebord: Kopfsteinpflaster	Q2 4135,12715 4314,12659
+#: by: ^^^
