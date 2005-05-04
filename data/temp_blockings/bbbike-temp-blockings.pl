@@ -1805,9 +1805,9 @@ EOF
 userdel	2 27543,-11912 27657,-11741
 EOF
      },
-     { from  => 1115503200, # 2005-05-08 00:00
-       until => 1120946400, # 2005-07-10 00:00
-       text  => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 09.05.2005-09.07.2005 ',
+     { from  => 1116194400, # 2005-05-16 00:00
+       until => 1121637600, # 2005-07-18 00:00
+       text  => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 17.05.2005-17.07.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 26313,-13049 26028,-12312

@@ -357,9 +357,9 @@ userdel	q4 -16640,1304 -16894,1485
          'type' => 'handicap'
        },
        {
-         'until' => 1120946400,
-         'text' => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 09.05.2005-09.07.2005 ',
-         'from' => 1115503200,
+         'until' => 1121637600,
+         'text' => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 17.05.2005-17.07.2005 ',
+         'from' => 1116194400,
          'data' => 'userdel	2 26313,-13049 26028,-12312
 ',
          'type' => 'gesperrt'

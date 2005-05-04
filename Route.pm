@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Route.pm,v 1.21 2005/01/16 22:03:22 eserte Exp $
+# $Id: Route.pm,v 1.23 2005/05/03 21:44:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2001 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ use strict;
 use vars qw($coords_ref $realcoords_ref $search_route_points_ref
 	    @EXPORT @ISA $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
 
 require Exporter;
 @ISA    = qw(Exporter);

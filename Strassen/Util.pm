@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.18 2005/02/27 23:32:00 eserte Exp $
+# $Id: Util.pm,v 1.18 2005/02/27 23:32:00 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -126,6 +126,7 @@ sub string_to_coord ($) { split /,/, $_[0] }
 
 # Gibt "l" oder "r" für Links- oder Rechtsabbiegen sowie den Winkel in
 # Grad aus ($dir, $angle).
+# Es gibt auch "u" für Umkehren.
 # Diese Funktion gilt nur, wenn die Koordinaten im Standard-Koordinatensystem
 # sind (X-Koordinaten wachsen nach rechts und Y-Koordinaten nach oben).
 # Argumente sind drei Punkte in der Form [x1,y1], ...
@@ -133,6 +134,10 @@ sub string_to_coord ($) { split /,/, $_[0] }
 sub abbiegen {
     my($p0,$p1,$p2) = @_;
     my($x0,$y0, $x1,$y1, $x2,$y2) = (@$p0, @$p1, @$p2);
+
+    if ("@$p0" eq "@$p2") {
+	return ("u", 180);
+    }
 
     # XXX kann beim acos anscheinend auftreten
     local $SIG{FPE} = sub { warn "Caught SIGFPE!" };

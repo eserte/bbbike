@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.8 2005/05/02 23:27:36 eserte Exp $
+# $Id: strassennetz.t,v 1.9 2005/05/03 20:14:41 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -14,7 +14,6 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin",
 	);
 use Getopt::Long;
-use File::Temp qw(tempfile);
 
 use Strassen::Core;
 use Strassen::Lazy;
@@ -180,10 +179,7 @@ XXX:
 $realcoords_ref = [[-3011,10103],[-2761,10323],[-2766,10325],[-2761,10323],[-2571,10258]];
 $search_route_points_ref = [['-3011,10103','m'],['-2766,10325','a'],['-2571,10258','a']];
 EOF
-    my($tmpfh,$tmpfilename) = tempfile(UNLINK => 1, SUFFIX => ".bbr");
-    print $tmpfh $route;
-    close $tmpfh;
-    my $ret = Route::load($tmpfilename);
+    my $ret = Route::load_from_string($route);
     my $path = $ret->{RealCoords};
     my(@route) = $s_net->route_to_name($path);
     my $got_undef = 0;

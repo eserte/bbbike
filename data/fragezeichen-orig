@@ -43,9 +43,9 @@ Mauerpark: unter Umständen wird ein Streifen des Mauerparkweges asphaltiert; der
 Schulzendorfer Str.: laut Tagesspiegel wird in Zukunft hier das Kopfsteinpflaster durch Asphalt ersetzt	? -596,23009 -862,22946 -1254,22853 -1484,22799
 Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
 Uferweg an der Kongreßhalle: laut Tsp im Frühjahr 2005 fertig	?::inwork 7753,12578
-Alsensteg laut Tsp im Sommer 2005, laut Mopo im Frühjahr 2005 fertig	?::inwork 8228,12964 8206,13012 8256,13009
-Uferweg laut Tsp im Herbst 2005 fertig	?::inwork 7941,12902 8206,13012
-Uferweg (Kapelleufer) laut Tsp im Herbst 2005 fertig	?::inwork 8259,13009 8484,12868
+Hugo-Preuß-Brücke am 2005-05-09 fertig	?::inwork 8228,12964 8206,13012 8256,13009
+Uferweg (Spreeuferstr., später Rahel-Hirsch-Str.) am 2005-05-09 fertig	?::inwork 7941,12902 8206,13012
+Uferweg (Kapelleufer) am 2005-05-09 fertig	?::inwork 8259,13009 8484,12868
 Uferweg laut Tsp zwischen Frühjahr und Herbst 2005 fertig	?::inwork 8754,12622 8643,12631 8578,12659 8546,12759 8484,12868
 Innenstadtring, Verlängerung der Bernauer zur Invalidenstr. (bereits vorhanden, aber nicht offiziell freigegeben)	?::inwork 9236,14157 9090,13890
 Autotunnel wird im Frühjahr 2005 zugeschüttet	?::inwork 5652,11004 5716,10978 5831,10978
@@ -151,7 +151,6 @@ Möllersdorfer Weg: Qualität (laut ADFC-Karte mäßig geeignet)	? 9813,24015 10106,
 Staakener Heuweg: Qualität (nur mäßig)?, für Kfz befahrbar?	? -7506,15938 -7428,16314
 Mauerweg am Eiskeller: gibt es hier überhaupt einen Weg? Qualität OK, Wegführung?	? -7570,20029 -7738,19974 -7928,19807 -8407,19761 -8450,19469 -8248,19331 -8153,19024 -7960,19066
 #XXX del: -7012,19435 -6842,19290 -6691,18808 -6669,18290 -6912,17671
-Radelandstr.: Qualität Richtung Stadtgrenze?	? -6257,17330 -6445,17503 -6603,17532 -6912,17671
 Martin-Luther-Str. (Falkensee) - Radelandstr.: durchgängige Verbindung vorhanden? Qualität?	? -6912,17671 -7060,17637 -7306,17291 -7424,17303
 Schloßpark Charlottenburg, Spreeweg: ganztägig befahrbar? Qualität? durchgängig bis zum Fürstenbrunner Weg befahrbar?	? 3288,12700 3135,12751 3047,12927 2997,13402 2849,13638 2648,13638 2261,13526 1986,13650 1609,13487 1193,13485
 Am Oder-Spree-Kanal, Schwarzer Weg nach Schmöckwitz: Qualtität?	? 30546,-3072 29348,-2798 28923,-2859 28623,-3061 28110,-3047 27906,-3136
@@ -163,7 +162,7 @@ Lefevrestr.: Qualität? gute Verbindung?	? 4987,6902 5023,6762 5126,6655 5372,666
 Schoelerpark: stören Fußgänger? Treppe an der südlichen Seite?	? 5223,8611 5181,8731
 Spekteweg, Spektewiesen: Qualität?	? -4007,15127 -4448,14800 -4635,14803 -5121,15041 -5659,15084 -5679,14999 -5969,15040 -6211,15150 -6919,15372
 An der Felgenlake, Spektelake: Qualität?	? -6116,15254 -6919,15372 -7119,15532 -7310,15526 -7506,15938
-Spektelake - Finkenkruger Weg: genaue Wegführung? Qualität?	? -7310,15526 -7384,15643 -7333,15451
+Spektelake - Finkenkruger Weg: genaue Wegführung? Qualität?	? -7310,15526 -7384,15643
 Niederheideweg - Hubertusstr.: Alternative zur Radelandstr? befahrbar, Qualität?	? -6445,17503 -5935,17290 -5597,17327 -5136,17227 -4841,17172 -4722,17029 -4240,16941 -3937,16881 -3727,16918
 Röpersdorf - Zollchow (Uckerseen-Rundweg): Qualität?	? 38548,97797 38546,97349 38654,97007 38871,96664 38913,96023 38846,95660
 östliches Ufer des Unteruckersees: existiert hier tatsächlich eine Strecke? Qualität?	? 42106,95893 41692,97360 41212,97425 40798,98917 40298,99240 39668,100787 39022,101334
@@ -381,9 +380,10 @@ Stücken - Tremsdorf: Qualität?	? -10978,-17764 -10562,-16912 -10175,-16537 -9675
 Am Havelkanal: laut "Berliner Umland" gut geeigneter Radweg, nur der westliche Teil ist witterungsabhängige Strecke	? -3379,23141 -3462,23100 -7081,22356 -9012,22250 -9060,22342
 An der Havel (Mauerweg und Berlin-Kopenhagen): laut "Berliner Umland" gut geeigneter Radweg, Durchfahrt unter der S-Bahn möglich?	? -3379,23141 -3025,23393 -2775,23981 -2675,24500 -2818,24631 -2946,25212
 An der Havel (Mauerweg und Berlin-Kopenhagen): laut "Berliner Umland" gut geeigneter Radweg	? -3379,23141 -3396,22893 -3384,22490 -3659,22231 -3753,21784 -3546,21328 -3396,21109 -2865,20800 -2740,20590 -2700,19978
-Oberjägerweg: laut "Berliner Umland" gut geeigneter Radweg, im Mittelteil ohne Kfz-Verkehr	? -5160,19649 -4971,19825 -4881,19871 -4662,20131 -4427,20384 -4018,20537 -3900,21059 -3818,21716
+#: XXX andere Quelle ist Andreas M.:
+Oberjägerweg: laut "Berliner Umland" gut geeigneter Radweg, im Mittelteil ohne Kfz-Verkehr, laut anderen Quellen "ungeniessbar"	? -5160,19649 -4971,19825 -4881,19871 -4662,20131 -4427,20384 -4018,20537 -3900,21059 -3818,21716
 #XXX siehe qualitaet-orig: Mauerweg Spandau: laut "Berliner Umland" witterungsabhängige Strecke	? -6912,17671 -7109,17315 -7128,16971
-Mauerweg Spandau: laut "Berliner Umland" witterungsabhängige Strecke	? -7212,16862 -7146,16584 -7146,16195 -7184,15762 -7119,15532
+Mauerweg Spandau: laut "Berliner Umland" witterungsabhängige Strecke	? -7146,16195 -7184,15762 -7119,15532
 Mauerweg Spandau: laut "Berliner Umland" gut geeigneter Radweg	? -7322,12806 -7337,12293 -7153,12081 -5618,11246 -5487,11212
 Am Park - Gutsstr. - Privatstr.: Durchfahrt möglich? Qualität?	? -9364,7189 -9128,7275 -8968,7328 -8768,7338 -8367,7717
 Mauerweg am Groß-Glienicker See: laut "Berliner Umland" witterungsabhängige Strecke	? -9128,7275 -9178,7165 -9175,7037 -9437,6887 -9490,6650 -9668,6171 -9665,5840 -9725,5559 -9797,5374
@@ -560,7 +560,6 @@ Battenheimer Weg: Qualität?	? 11754,1021 11665,1040 11365,1259
 Gritznerstr.: wo sind die Kopfsteinpflasterabschnitte genau?	? 4734,6716 4555,6403 4507,6320 4472,6242 4385,6045 4306,5865
 Kiesweg zwischen Rüdickenstr. und Paul-König-Straße: genaue Position des Kieswegs, genaue Qualitätskategorie?	? 17393,17301 17767,17006 17446,16393
 Straßen in der Kolonie Margaretenhöhe fehlen, früher Str. 1 bis 7, wie heißen sie jetzt?	? 16193,20167 16679,20189 16695,19754 16392,19760 16200,19764 16193,20167
-Gustav-Müller-Str.: asphaltiert! Linksabbiegen in die Kolonnenstr. möglich? Einbahnstraße auch für Radfahrer?	? 7639,8091 7642,8815
 Bornholmer Str.: Überqueren der Straßenbahntrasse möglich?	? 10215,16527 10300,16521 10635,16497
 nördlicher Radweg auf der Bulgarischen Str.: siehe Message-ID: <1kl0p5nkwlmb1.dlg@tebe.my-fqdn.de>	? 15166,8489 15383,8662 15580,8839
 Kleine Hamburger Str.: Qualität?	? 9668,13629 9752,13575
@@ -642,7 +641,7 @@ Eichbuschallee: Teil der Eichbuschallee im Plänterwald: Qualität?	? 16136,7886 1
 Hof Sternhagen - Lindenhagen: Qualität? (Deckenerneuerung 5/2005)	? 35466,92211 34375,92125 33537,92937 33412,93612 33342,94000
 Beenz - Gollmitz: Qualität?	? 30837,95225 30737,95487 30175,95712 29712,96050 28400,96675 29012,97237 29287,97825 29900,99025 30150,99175 30284,99405
 Lindenhagen - Beenz: Qualität?	? 32388,94460 31800,94925 31012,95287 30837,95225 30516,95187 30250,94887
-Maikäferweg (NN): Qualität?	? -6478,16674 -6866,16846 -7090,16876 -7212,16862
+Maikäferweg (NN): Qualität?	? -6478,16674 -6866,16846 -6984,16860 -7090,16876 -7212,16862
 Tieckstr.: Qualität?	? 9081,13636 9394,13754 9531,13797
 Machonstr.: Qualität? laut ADFC-Karte gut geeignet	? 9025,4871 9044,4667 9067,4495 9080,4371
 Seelbuschring: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 8242,4648 8432,4712 8467,4590
@@ -659,3 +658,4 @@ Porzer Str.: Qualität? Laut ADFC-Karte Radwege, stimmt das? Sind die Radwege ben
 Bohnsdorfer Weg: Qualität? (laut ADFC-Karte mäßig geeignet)	? 20671,87 20606,300 20543,478 20487,512
 Hiroshimastr. und -steg: Qualität? Ist der Steg auch für Radfahrer befahrbar oder gibt es Treppen?	? 7354,11513 7251,11202 7248,11143
 Schillingstr. (Reinickendorf): Qualität?	? 4687,18175 4581,17689
+Eiskeller: genaue Wegführung (GPS-Koordinaten?)?	? -7012,19435 -7960,19066 -7980,19618 -7566,19861 -7570,20029
