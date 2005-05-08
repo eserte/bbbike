@@ -233,14 +233,7 @@ userdel	q4 22217,1108 22162,1067
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1115157600,
-         'text' => 'L 23; (Templin-Lychen); OD Lychen, Kreuzungsber. Straßenbau Vollsperrung 29.03.2005-03.05.2005 ',
-         'from' => 1111960800,
-         'data' => 'userdel	q4 3125,88753 2788,89447
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -316,14 +309,7 @@ userdel	q4 -16640,1304 -16894,1485
        undef,
        undef,
        undef,
-       {
-         'until' => 1115244000,
-         'text' => 'B 101; (Luckenwalder-, Berliner Str.); OD Trebbin, Knoten Beelitzer Str. Straßenbauarbeiten Vollsperrung 01.04.2005-04.05.2005 ',
-         'from' => 1112220000,
-         'data' => 'userdel	q4 -1887,-21501 -1992,-21489
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1136069999,
          'text' => 'Berliner Allee Richtung stadtauwärts, zwischen Langhanstr. und Lindenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',

@@ -1,4 +1,4 @@
-# $Id: orte2-orig,v 4.7 2005/04/29 23:51:44 eserte Exp $
+# $Id: orte2-orig,v 4.7 2005/04/29 23:51:44 eserte Exp eserte $
 # noch weiter entfernte Orte
 # Mecklenburg-Vorpommern, Brandenburg
 Rostock	5 -79160,185302
@@ -111,6 +111,7 @@ Bündigershof	0 42981,101756
 Wollenthin	0 43200,102737
 Seelübbe	0 42437,96300
 Brüssow	3 57405,111424
+Moor|(Brüssow)	0 55287,109712
 Hammelstall|(Brüssow)	0 56821,109071
 Woddow	1 61091,109037
 Bagemühl	1 62608,106744
@@ -119,8 +120,8 @@ Eickstedt	1 51860,100659
 Warnitz	2 40978,86915
 Neuhof|(Warnitz)	0 42210,88596
 Quast|(Warnitz)	0 41821,89709
-Potzlow	1 38409,90770
-Strehlow|(Potzlow)	0 38549,91944
+Potzlow	1 38475,90762
+Strehlow|(Potzlow)	0 38612,91950
 Abbau|(Potzlow)	0 36234,88882
 Rollberg|bei Eickstedt	0 53519,102604
 Vogelsang|(Wallmow)	0 54717,103147
@@ -130,8 +131,9 @@ Drense	1 47800,101393
 Ziemkendorf	1 50581,102443
 Grenz	0 51138,104355
 Cremzow	0 51391,106540
-Kleptow	0 49192,107721
+Kleptow	0 49112,107575
 Carmzow	2 52173,109779
+Hedwigshof|(bei Carmzow)	0 54450,109425
 Grünberg	2 59136,106775
 Trampe|bei Grünberg	0 57498,107476
 Schwaneberg	0 57125,102912
@@ -149,17 +151,19 @@ Lindenhagen	0 33342,94000
 Beenz	1 30510,95194
 Sternhagen	1 35791,93615
 Schmachtenhagen|(Uckermark)	0 34595,96512
-Zollchow	0 38846,95660
+Zollchow	0 38900,95643
 Neu Zollchow	0 36544,95193
-Röpersdorf	1 38548,97797
+Röpersdorf	1 38562,97687
 Fergitz	0 38674,86779
 Melzow	0 41882,85331
 Dreesch	0 46103,99471
 Falkenwalde|(Uckermark)	1 49834,96903
+Mattheshöhe|(bei Falkenwalde)	0 48318,97450
 Kleinow|(Falkenwalde)	0 50846,97187
 Neu-Kleinow	0 49872,95222
 Weselitz	0 47551,95568
 Bertikow	1 45239,93930
+Bertikow Ausbau	0 43295,94461
 Bietikow	1 44920,96794
 Hohengüstow	1 48068,93338
 Lützlow	1 52103,93487
@@ -448,6 +452,8 @@ Marzahna	1 -31155,-45913
 Luckau	3 32174,-61385
 Uckro	1 26261,-61447
 Calau	3 49092,-72754
+Werchow	1 49612,-75012
+Cabel	0 48812,-75800
 Schweinitz	3 -13597,-68791
 Drebkau	3 68184,-82563
 Annaburg	3 -12151,-75427
@@ -706,7 +712,7 @@ Schönfeld|(Uckermark)	1 47894,112908
 Tornow|(bei Schönfeld, Uckermark)	0 45810,110576
 Wittenhof	0 43199,105408
 Schenkenberg|(bei Prenzlau)	1 45406,107350
-Ludwigsburg	1 47516,106682
+Ludwigsburg	1 47587,106693
 Baumgarten|(Ludwigsburg)	0 45417,105402
 Milow|(bei Pasewalk)	1 36949,119322
 Werbelow	0 39980,117080

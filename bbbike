@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.163 2005/05/02 23:26:28 eserte Exp $
+# $Id: bbbike,v 3.163 2005/05/02 23:26:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -14799,7 +14799,10 @@ sub set_coords_str {
     return if !@tags;
     if ($tags[0] eq 'p' or $tags[0] eq 'pp' or $tags[0] =~ /^lsa/) {
 	$tags[1];
-    } elsif ($tags[0] =~ /^[sSlL]$/) {
+    } elsif ($tags[0] =~ /^[sSlL]$/ ||
+	     $add_net{fz} && $tags[0] eq 'fz'
+	     # XXX weitere Ausnahmen für $add_net{is} etc. definieren
+	    ) {
 	my($pos, @points) = nearest_line_points_mouse($c, @tags);
 	make_net() if !$net;
 	if ($net->can("adjust_to_nearest")) {

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.58 2005/05/02 21:54:56 eserte Exp $
+# $Id: Makefile,v 1.58 2005/05/02 21:54:56 eserte Exp eserte $
 #
 
 # Targets:
@@ -330,6 +330,10 @@ prepare-bbbike-dist-prog-bbbike-html:
 	    cp -pf ${BBBIKE_ROOT_DIR}/html/$f ${CURDIR}/BBBike/html/$f; \
 	fi
 .endfor
+	# Vorsichtshalber, weil ansonsten die falschen URLs enthalten sein
+	# könnten:
+	cd ${CURDIR}/BBBike/html && \
+	    rm -f newstreetform.html fragezeichenform.html
 	cd ${CURDIR}/BBBike/html && \
 	    ${MAKE} newstreetform.html fragezeichenform.html \
 		CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin
