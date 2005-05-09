@@ -74,7 +74,13 @@ sub update_http {
     my(%modified) = %{$args{-modified}};
     my $ua;
     eval {
+	local $SIG{__DIE__};
+	local $SIG{__WARN__};
 	require LWP::UserAgent;
+	if ($main::public_test) {
+	    warn "Force using Http.pm for -public\n";
+	    die;
+	}
 	$ua = new LWP::UserAgent;
 	$ua->agent("$main::progname/$main::VERSION");
 	$main::progname = $main::progname if 0; # peacify -w
@@ -85,7 +91,7 @@ sub update_http {
     if ($@ || !$ua) {
 	undef $ua;
 	require Http;
-	Http->VERSION(0.22);
+	Http->VERSION(0.22); # XXX change for latest change!!!
     }
     $main::c = $main::c; # peacify -w
     $main::progress->Init(-dependents => $main::c,
@@ -126,13 +132,22 @@ sub update_http {
 				 %$h,
 				);
 	    $code = $res{'error'};
-	    $success = ($code == 200);
-	    if ($success) {
-		if (!open(OUT, ">$dest_file")) {
+	    $success = ($code <= 304); # OK or Not-modified
+	    if ($code == 200) { # OK
+		eval {
+		    open(OUT, ">$dest_file~") or die $!;
+		    print OUT $res{'content'} or die $!;
+		    close OUT or die $!;
+		};
+		if ($@) {
+		    print STDERR "Can't write to $dest_file: $@\n";
 		    $success = 0;
 		} else {
-		    print OUT $res{'content'};
-		    close OUT;
+		    rename "$dest_file~", $dest_file
+			or do {
+			    warn "Can't rename to $dest_file: $!";
+			    $success = 0;
+			};
 		}
 	    }
 	}
@@ -151,6 +166,8 @@ sub update_http {
 		    print STDERR "\n", $res->as_string;
 		    my $text = $res->error_as_HTML;
 		    if (eval {
+			local $SIG{__DIE__};
+			local $SIG{__WARN__};
 			require HTML::FormatText;
 			require HTML::TreeBuilder;
 			1;
@@ -232,14 +249,22 @@ sub create_modified {
     my $datadir = $destdir . "/data";
     my(@files) = @{$args{-files}};
     my(%modified) = %{$args{-modified}};
-    if (open(MOD, ">$datadir/.modified")) {
+    eval {
+	open(MOD, ">$datadir/.modified~") or die $!;
 	foreach my $file (@files) {
-	    my(@stat) = stat("$file");
-	    print MOD "$file\t$stat[9]\n";
+	    my(@stat) = stat("$destdir/$file");
+	    if (!@stat) {
+		die "Cannot stat $destdir/$file: $!";
+	    }
+	    print MOD "$file\t$stat[9]\n" or die $!;
 	}
-	close MOD;
+	close MOD or die $!;
+    };
+    if ($@) {
+	warn "Can't write to $datadir/.modified: $@";
     } else {
-	warn "Can't write to $datadir/.modified: $!";
+	rename "$datadir/.modified~", "$datadir/.modified"
+	    or warn "Cannot rename to $datadir/.modified: $!";
     }
 }
 
@@ -269,6 +294,8 @@ sub bbbike_data_update {
 	    require Cwd;
 	    my $old_cwd = Cwd::cwd();
 	    eval {
+		local $SIG{__DIE__};
+		local $SIG{__WARN__};
 		chdir "$rootdir/data"
 		    or main::status_message("Can't chdir to data dir: $!", "die");
 		# XXX Do it in background!
