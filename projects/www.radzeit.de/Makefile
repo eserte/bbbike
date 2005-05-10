@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.58 2005/05/02 21:54:56 eserte Exp eserte $
+# $Id: Makefile,v 1.60 2005/05/09 22:59:15 eserte Exp $
 #
 
 # Targets:
@@ -35,8 +35,11 @@ TEMP_BLOCKINGS_DIR=	data/temp_blockings
 
 EXTRA_MISCSRC_FILES=	bbd2esri winter_optimization.pl
 EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html
-CGI_FILES=		bbbike.cgi wapbbbike.cgi \
-			mapserver_address.cgi mapserver_comment.cgi \
+CGI_FILES=		bbbike.cgi \
+			bbbike-data.cgi \
+			wapbbbike.cgi \
+			mapserver_address.cgi \
+			mapserver_comment.cgi \
 			mapserver_setcoord.cgi
 TESTS=			basic.t \
 			cgihead.t \

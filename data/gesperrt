@@ -281,6 +281,7 @@ Altlandsberger Chaussee	1 40487,16703 40712,16743
 Bernau, Bahnhofstr.	1 22864,30560 22907,30433
 Elisenau - Bˆrnicke: Privatgel‰nde?	2 24360,26503 24427,26841
 Weg nach Altlandsberg: Privatstraﬂe, gesperrt	2 28159,19037 28715,18500
+Bernhard-Kellermann-Str. (Werder)	1 -21112,-3787 -21179,-3628 -21266,-3604
 B110 nach Swinoujscie: kein Grenz¸bergang	2 62279,166179 62934,166705
 Einbahnstraﬂen in Altlandsberg	1 32224,18110 32181,18009 32100,18012 32115,18106 32224,18110
 Korswandt - Ahlbeck: f¸r Radfahrer gesperrt	2 59081,169443 59317,169771 59512,170017 60025,170281 60262,170468 60660,170797
@@ -378,6 +379,8 @@ Schˆnhauser Allee -> Kopenhagener Str.: U-Bahnviadukt	3 10963,15789 10972,15895 
 Schˆnhauser Allee: U-Bahnviadukt	3 10949,15674 10929,15516 11055,15504
 Wisbyer Str. -> Stahlheimer Str.: Straﬂenbahn	3 11807,16340 11727,16358 11618,16183
 Wisbyer Str. -> Varnhagenstr.: Straﬂenbahn	3 11905,16318 11807,16340 11680,16151
+Gudvanger Str. -> Wisbyer Str.: Straﬂenbahn	3 11758,16111 11905,16318 11807,16340
+Wisbyer Str. -> Gudvanger Str.: Straﬂenbahn	3 12026,16247 11905,16318 11758,16111
 Dunckerstr. -> Wisbyer Str.: Straﬂenbahn	3 11939,16084 12026,16247 11905,16318
 Lˆwenberger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3 17477,11893 17436,11791 17750,11771
 Alt-Friedrichsfelde -> Lˆwenberger Str.: nicht passierbarer Mittelstreifen	3 17249,11802 17436,11791 17477,11893
@@ -417,7 +420,7 @@ Treppe zum Kolonnenweg -> Bornholmer Str.: Straﬂenbahn auf Mittelstreifen	3 9982
 Bornholmer Str. -> Treppe zum Kolonnenweg: Straﬂenbahn auf Mittelstreifen	3 9883,16557 9998,16547 9983,16561
 Bornholmer Str. -> Treppe zum Kolonnenweg: Straﬂenbahn auf Mittelstreifen	3 10215,16527 9998,16547 9982,16527
 Kreutzigerstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3 14285,12190 14291,12220 14208,12235
-Frankfurter Allee -> Kreutzigerstr.: unbequem passierbarer Mittelstreifen	3 14434,12196 14291,12220 14285,12190
+Frankfurter Allee -> Kreutzigerstr.: unbequem passierbarer Mittelstreifen	3 14381,12205 14291,12220 14285,12190
 Leipziger Str. -> Jerusalemer Str.: unbequem passierbarer Mittelstreifen	3 9701,11649 9899,11670 9892,11752
 Landsberger Allee -> Langenbeckstr.: Mittelstreifen	3 13089,13323 13161,13360 13081,13457
 Langenbeckstr. -> Landsberger Allee: Mittelstreifen	3 13081,13457 13161,13360 13334,13459
@@ -473,6 +476,7 @@ M¸llerstr. -> Br¸sseler Str.: Zaun auf dem Mittelstreifen	3 7043,15793 6914,1590
 Br¸sseler Str. -> M¸llerstr.: Zaun auf dem Mittelstreifen	3 6809,15798 6914,15908 6790,16018
 Indira-Gandhi-Str. -> Orankeweg: Straﬂenbahntrasse	3 14603,15971 14619,15920 14720,15905
 Orankeweg -> Indira-Gandhi-Str.: Straﬂenbahntrasse	3 14720,15905 14619,15920 14650,15750
+Kolonnenstr. -> Gustav-M¸ller-Str.: Mittelinsel mit Gel‰nder	3 7709,8770 7642,8815 7642,8583
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9008,12485 9112,12499 9323,12528
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9323,12528 9112,12499 9008,12485
 Mittelstr. -> Mittelstr.: An der US-Botschaft	3 9335,12442 9126,12413 9018,12400
@@ -561,7 +565,7 @@ Barriere (Falkstr.)	BNP:10 12177,7988
 Dr‰ngelgitter (Rochstr.)	BNP:5:52 10535,13006
 Barriere (Seydelstr.)	BNP:5:-100 10370,11593
 Dr‰ngelgitter (Gleditschstr. - Elﬂholzstr.)	BNP:10:-84 7158,9509
-Dr‰ngelgitter	BNP:5:-191 38587,100750
+Dr‰ngelgitter	BNP:5:-193 38562,100725
 Dr‰ngelgitter	BNP:5:3 38662,97200
 Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14903,10403 15059,10289
 Voltairestr. (Arbeiten an "Alexa", voraussichtlich bis 2005-10-31)	2:inwork 11323,12484 11209,12430

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.36 2005/05/02 06:57:58 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.37 2005/05/09 22:56:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2005 Slaven Rezic. All rights reserved.
@@ -51,7 +51,7 @@ $BBBIKE_DIRECT_WAP = 'http://www.radzeit.de/cgi-bin/wapbbbike.cgi';
 
 # Distribution directory for scripts. Unfortunately there's no directory
 # index available anymore at sourceforge...
-$DISTDIR	   = 'http://belnet.dl.sourceforge.net/sourceforge/bbbike';
+$DISTDIR	   = 'http://heanet.dl.sourceforge.net/sourceforge/bbbike';
 $DISTFILE_SOURCE   = "$DISTDIR/BBBike-$STABLE_VERSION.tar.gz";
 $DISTFILE_WINDOWS  = "$DISTDIR/BBBike-$WINDOWS_VERSION-Windows.zip";
 # Distribution directory for humans (entry to 'show files' at sourceforge)

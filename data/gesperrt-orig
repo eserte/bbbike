@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.21 2005/05/02 23:25:29 eserte Exp eserte $
+# $Id: gesperrt-orig,v 4.22 2005/05/08 22:02:45 eserte Exp eserte $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraßen etc.)
@@ -145,7 +145,7 @@ Gipsstr.	1 10331,13397 10199,13446 10026,13521
 Dorotheenstr.	1 9867,12651 9723,12594 9574,12578 9454,12558 9323,12528
 Georgenstr.	1 9437,12662 9562,12679 9657,12694 9754,12775
 Paul-Junius-Str	1 15084,13276 15082,13369
-#: by Rolf Schröder <001301c0fe12$f9c9eb00$fe78a8c0@pc166>
+#: by: Rolf Schröder <001301c0fe12$f9c9eb00$fe78a8c0@pc166>
 Marksburgstr.	1 18319,9218 18809,9133
 Griechische Allee	1 17962,6674 18146,6703 18353,6658 18494,6588
 Griechische Allee	1 18494,6588 18280,6603 18080,6670 17962,6674
@@ -185,7 +185,7 @@ Schildhornstr.	1 4903,6221 4962,6218 5165,6119
 Schildhornstr.	1 5137,6066 5047,6116 4903,6221
 # XXX evtl. nur bauestellenbedingt?
 Atzpodienstr.	1 16468,12386 16445,12193 16415,11926
-#: by Robert Joop
+#: by: Robert Joop:
 Alt-Lietzow	1 4221,12306 4108,12326 4073,12355 4092,12385 4134,12391 4257,12357
 Martin-Wagner-Ring	1 12796,3821 12895,3991 12941,4015 12995,4003 13007,3949 12913,3743
 Wilskistr.	1 -392,3999 -240,4091 43,4421 207,4575 442,4689 661,4748 825,4764
@@ -305,6 +305,7 @@ Altlandsberger Chaussee	1 40487,16703 40712,16743
 Bernau, Bahnhofstr.	1 22864,30560 22907,30433
 Elisenau - Börnicke: Privatgelände?	2 24360,26503 24427,26841
 Weg nach Altlandsberg: Privatstraße, gesperrt	2 28159,19037 28715,18500
+Bernhard-Kellermann-Str. (Werder)	1 -21112,-3787 -21179,-3628 -21266,-3604
 # elsewhere not in Brandenburg
 B110 nach Swinoujscie: kein Grenzübergang	2 62279,166179 62934,166705
 Einbahnstraßen in Altlandsberg	1 32224,18110 32181,18009 32100,18012 32115,18106 32224,18110
@@ -387,7 +388,7 @@ Levishamstr.: abgesperrter Mittelstreifen	3nocross 3592,10869 3631,10784 3644,10
 Levishamstr: Straßentunnelrampe	3nocross 3644,10759 3739,10576 3813,10435
 Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6853,11336 6880,11110
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 10215,16527 9998,16547 9883,16557 9816,16565
-Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 14291,12220 14434,12196
+Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 14291,12220 14381,12205 14434,12196
 Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11649 9899,11670 9982,11680
 Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13334,13459
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12188,14321 12239,14393 12285,14458 12338,14532
@@ -413,6 +414,8 @@ Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15392,12135 15437,12225
 Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6790,16018 6914,15908 7043,15793
 #del: Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14576,16069 14550,16161 14499,16341
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14603,15971 14619,15920 14650,15750
+#: by: Kerstin Pantos:
+Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8770 7642,8815 7570,8863
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Neustädtische Kirchstr.: An der US-Botschaft	3nocross 9100,12627 9112,12499 9126,12413 9141,12320
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -492,7 +495,7 @@ Schranke (Brandesstr.)	BNP:5 9698,10348
 Drängelgitter (Thomashöhe)	BNP:5 12682,7514
 Barriere (Schwarzer Weg)	BNP:5 17301,7619
 Drängelgitter (Uferweg Spree)	BNP:5 24398,4842
-#: by ADFC-Plan
+#: unverified_by: ADFC-Plan:
 Drängelgitter (Schloßallee/Straßenbahn) 	BNP:5 11883,19739
 Drängelgitter (Pankweg)	BNP:5 11995,19759
 Drängelgitter (Brachvogelstr.)	BNP:5 9884,10192
@@ -522,7 +525,7 @@ Drängelgitter (Rochstr.)	BNP:5 10535,13006
 Barriere (Seydelstr.)	BNP:5 10370,11593
 Drängelgitter (Gleditschstr. - Elßholzstr.)	BNP:10 7158,9509
 # in Brandenburg:
-Drängelgitter	BNP:5 38587,100750
+Drängelgitter	BNP:5 38562,100725
 Drängelgitter	BNP:5 38662,97200
 #
 ############################################################################
@@ -609,7 +612,7 @@ B 167; (Herzberg-Neuruppin); OL Alt Ruppin, Rhinbrücke    Brückenneubau    Volls
 #Rauchstr./Köbisstr.: unbequem passierbarer Mittelstreifen	3 7160,11225 6853,11336 6683,11367
 #Rauchstr./Köbisstr.: unbequem passierbarer Mittelstreifen	3 6683,11367 6853,11336 7160,11225
 #Kreutzigerstr - Frankfurter Allee: unbequem passierbarer Mittelstreifen	3 14285,12190 14291,12220 14208,12235
-#Frankfurter Allee - Kreutzigerstr: unbequem passierbarer Mittelstreifen	3 14434,12196 14291,12220 14285,12190
+#Frankfurter Allee - Kreutzigerstr: unbequem passierbarer Mittelstreifen	3 14434,12196 14381,12205 14291,12220 14285,12190
 #Langenbeckstr - Landsberger: Mittelstreifen	3 13081,13457 13161,13360 13334,13459
 #Landsberger - Langenbeckstr: Mittelstreifen	3 13089,13323 13161,13360 13081,13457
 #Greifswalder - Chodowieckistr: Mittelstreifen mit Straßenbahn	3 12188,14321 12239,14393 12285,14458 11992,14599

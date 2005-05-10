@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Update.pm,v 1.16 2005/04/28 22:14:18 eserte Exp $
+# $Id: Update.pm,v 1.19 2005/05/09 22:58:46 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2001,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2001,2003,2005 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -77,6 +77,7 @@ sub update_http {
 	local $SIG{__DIE__};
 	local $SIG{__WARN__};
 	require LWP::UserAgent;
+	$main::public_test = $main::public_test; # peacify -w
 	if ($main::public_test) {
 	    warn "Force using Http.pm for -public\n";
 	    die;
@@ -91,7 +92,7 @@ sub update_http {
     if ($@ || !$ua) {
 	undef $ua;
 	require Http;
-	Http->VERSION(0.22); # XXX change for latest change!!!
+	Http->VERSION(3.15); # correct handling of Host: ...
     }
     $main::c = $main::c; # peacify -w
     $main::progress->Init(-dependents => $main::c,

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead.t,v 1.11 2005/03/29 07:12:55 eserte Exp $
+# $Id: cgihead.t,v 1.12 2005/05/10 06:35:52 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -13,9 +13,10 @@ use File::Basename;
 BEGIN {
     if (!eval q{
 	use Test::More;
+	use LWP::UserAgent;
 	1;
     }) {
-	print "1..0 # skip: no Test::More module\n";
+	print "1..0 # skip: no Test::More and/or LWP::UserAgent module\n";
 	exit;
     }
 }
@@ -37,6 +38,7 @@ my @prog = qw(bbbike.cgi
 	      mapserver_address.cgi
 	      mapserver_comment.cgi
 	      wapbbbike.cgi
+	      bbbike-data.cgi
 	     );
 
 my @static = qw(html/bbbike.css
@@ -85,8 +87,10 @@ sub check_url {
 	$prog = basename $url;
     }
     (my $safefile = $prog) =~ s/[^A-Za-z0-9._-]/_/g;
-    system("lwp-request -m HEAD -H 'User-Agent: BBBike-Test/1.0' '$url' > /tmp/head.$safefile.log");
-    is($?, 0, $url);
+    my $ua = LWP::UserAgent->new;
+    $ua->agent('BBBike-Test/1.0');
+    my $req = $ua->head($url);
+    ok($req->is_success, $url) or diag $req->content;
 }
 
 __END__

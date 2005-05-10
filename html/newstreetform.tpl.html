@@ -211,27 +211,27 @@ function init() {
     <td>
      <table cellpadding="0" cellspacing="0">
 [% INCLUDE colhead text="Eingeschränkte Geschwindigkeit:" %]
-[% INCLUDE radiocell cat="q" type="cat" val="q0" text="30 km/h oder mehr möglich" %]
-[% INCLUDE radiocell cat="q" type="cat" val="q1" text="bis 25 km/h" %]
-[% INCLUDE radiocell cat="q" type="cat" val="q2" text="bis 18 km/h" %]
-[% INCLUDE radiocell cat="q" type="cat" val="q3" text="bis 13 km/h" %]
-[% INCLUDE radiocell cat="q" type="cat" val="q4" text="Schrittgeschwindigkeit" %]
+[% INCLUDE radiocell cat="qq" type="cat" val="q0" text="30 km/h oder mehr möglich" %]
+[% INCLUDE radiocell cat="qq" type="cat" val="q1" text="bis 25 km/h" %]
+[% INCLUDE radiocell cat="qq" type="cat" val="q2" text="bis 18 km/h" %]
+[% INCLUDE radiocell cat="qq" type="cat" val="q3" text="bis 13 km/h" %]
+[% INCLUDE radiocell cat="qq" type="cat" val="q4" text="Schrittgeschwindigkeit" %]
 [% INCLUDE colhead text="Grund:" %]
-[% INCLUDE radiocell cat="q" type="desc" val="viele Fußgänger" %]
-[% INCLUDE radiocell cat="q" type="desc" val="Fußgängerzone" %]
-[% INCLUDE radiocell cat="q" type="desc" val="kurvenreich" %]
+[% INCLUDE radiocell cat="qq" type="desc" val="viele Fußgänger" %]
+[% INCLUDE radiocell cat="qq" type="desc" val="Fußgängerzone" %]
+[% INCLUDE radiocell cat="qq" type="desc" val="kurvenreich" %]
       <tr>
        <td>
-        <input type="radio" name="qdesc_1" value="userdefined"
-         [%- INCLUDE radio_checked inputname="qdesc_1" val="userdefined" %] />
+        <input type="radio" name="qqdesc_1" value="userdefined"
+         [%- INCLUDE radio_checked inputname="qqdesc_1" val="userdefined" %] />
        </td>
        <td>
-        <input name="qdescuserdef_1" [% INCLUDE text_default inputname="qdescuserdef_1" %]/>
+        <input name="qqdescuserdef_1" [% INCLUDE text_default inputname="qqdescuserdef_1" %]/>
        </td>
       </tr>
      </table>
     </td>
-    [% PROCESS range cat="q" %]
+    [% PROCESS range cat="qq" %]
    </tr>
 
    <tr><td colspan="3"><hr /></td></tr>

@@ -159,7 +159,7 @@ userdel	q4 49039,44131 49691,43812
          'until' => 1136069999,
          'text' => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
          'from' => 1109628414,
-         'data' => 'userdel	q4; 3507,3635 3184,3413 3050,3316 2701,3064 2639,2989 2638,2843
+         'data' => 'userdel	q4; 3507,3635 3375,3544 3184,3413 3050,3316 2701,3064 2639,2989 2638,2843
 ',
          'type' => 'handicap'
        },
@@ -358,6 +358,22 @@ userdel	q4 -16640,1304 -16894,1485
          'from' => 1114898400,
          'data' => 'userdel	q4 1453,-746 1680,-1011
 userdel	q4 1872,-1118 1680,-1011
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1126821599,
+         'text' => 'Danziger Str. (Prenzlauer Berg) Richtung Osten zwischen Schönhauser Allee und Knaackstr. Baustelle Fahrtrichtung gesperrt, Umleitung: Schönhauser Allee - Sredzkistr. - Knaackstr. (bis Mitte 09.2005)',
+         'from' => 1115589537,
+         'data' => 'userdel	q4; 10889,15045 11056,15009
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1118354400,
+         'text' => 'Rosenfelder Straße Richtung Frankfurter Allee zwischen Skandinavische Straße und Frankfurter Allee Baustelle, Straße gesperrt, Dauer: 09.05.2005, 09.00 Uhr bis 09.06.2005 ',
+         'from' => 1115535600,
+         'data' => 'userdel	q4; 17363,11972 17249,11802
 ',
          'type' => 'handicap'
        }

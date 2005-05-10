@@ -2277,12 +2277,15 @@ sub do_iconframe {
 		    );
 	    }
 	}
-	$strcm->command(-label => M"Radroute auswählen",
-			-command => sub {
-			    choose_ort(qw(s comm-route),
-				       -markstartifactive => 1);
-			});
+    }
 
+    $strcm->command(-label => M"Radroute auswählen",
+		    -command => sub {
+			choose_ort(qw(s comm-route),
+				   -markstartifactive => 1);
+		    });
+
+    if ($advanced) {
 	# XXX include comments_mount?
 	$strcm->checkbutton
 	    (-label => M"Steigungen",

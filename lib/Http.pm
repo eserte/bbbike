@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Http.pm,v 3.14 2003/01/18 19:24:11 eserte Exp $
+# $Id: Http.pm,v 3.15 2005/05/09 22:14:09 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1995,1996,1998,2000,2001,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1995,1996,1998,2000,2001,2003,2005 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +25,7 @@ use vars qw(@ISA @EXPORT_OK $VERSION $tk_widget $user_agent $http_defaultheader
 @ISA = qw(Exporter);
 @EXPORT_OK = qw(get $user_agent $http_defaultheader
 		rfc850_date uuencode);
-$VERSION = sprintf("%d.%02d", q$Revision: 3.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.15 $ =~ /(\d+)\.(\d+)/);
 
 $tk_widget = 0 unless defined $tk_widget;
 $timeout = 10  unless defined $timeout;
@@ -163,6 +163,7 @@ sub get_plain {
     }
 
     my(%header, %error, $content);
+    $content = "";
     local($/) = $/;
 
     my $sock = gensym;
@@ -199,11 +200,12 @@ sub get_plain {
     }
 
     my $cmd = "GET $path HTTP/1.0\015\012"
-      . (defined($modtime) ? "If-modified-since: $modtime\015\012" : "")
-	. "$http_defaultheader"
-	  . "User-Agent: $user_agent\015\012"
-	    . ($extra_header ne "" ? "$extra_header\015\012" : "")
-	      . "\015\012";
+      . (defined $host && defined $port ? "Host: $host:$port\015\012" : "")
+        . (defined($modtime) ? "If-modified-since: $modtime\015\012" : "")
+	  . "$http_defaultheader"
+	    . "User-Agent: $user_agent\015\012"
+	      . ($extra_header ne "" ? "$extra_header\015\012" : "")
+	        . "\015\012";
 
     if ($tk_widget && $^O ne "MSWin32") {
 	$$waitref = 0;
@@ -360,6 +362,7 @@ sub get_plain {
 	if ($content_follows->()) {
 	    undef $/;		# Rest der Datei in einem Schwung lesen
 	    $content = <$sock>;
+	    $content = "" if !defined $content;
 	}
     }
 
@@ -552,6 +555,10 @@ Http - wrapper around HTTP protocol
         print "Error code $res{'error'}\n";
     }
 
+As a one-liner:
+
+    perl -MData::Dumper -MHttp -e 'warn Dumper Http::get(url => shift)' http://...
+
 =head1 DESCRIPTION
 
 The get() function may take the following arguments:
@@ -624,7 +631,7 @@ Slaven Rezic <srezic@cpan.org>
 
 =head1 COPYRIGHT
 
-Copyright (c) 1995,1996,1998,2000,2001,2003 Slaven Rezic. All rights reserved.
+Copyright (c) 1995,1996,1998,2000,2001,2003,2005 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 

@@ -22,7 +22,7 @@
 ## perlreplace #HTTPCVS#    '"http://sourceforge.net/cvs/?group_id=19142"'
 ## perlreplace #CVSREPO#    '":pserver:anonymous\@cvs.bbbike.sourceforge.net:/cvsroot/bbbike"'
 ## dnl
-## dnl $Id: README.spp,v 2.33 2005/04/02 19:44:54 eserte Exp $
+## dnl $Id: README.spp,v 2.33 2005/04/02 19:44:54 eserte Exp eserte $
 ## dnl strpp source of README
 ## dnl
 =head1 README
@@ -168,8 +168,8 @@ After that, you can start the program with
 ## only DE
 das Programm gestartet werden. Mit
 ## but DE
-To compile some XS modules (this is optional) and install the panel
-entry for KDE, type:
+To compile some XS modules (this is optional and needs a C compiler)
+and install the panel entry for KDE, type:
 ## yes
 
 
@@ -179,7 +179,9 @@ entry for KDE, type:
 
 ## only DE
 kann optional eine Compilierung von einigen XS-Modulen durchgeführt
-werden sowie Einträge für KDE erzeugt werden.
+werden sowie Einträge für KDE erzeugt werden. Für das Compilieren
+ist ein C-Compiler (z.B. gcc), der mittlerweile nicht bei allen
+Linux-Versionen standardmäßig installiert wird, notwendig.
 ## yes
 
 ## only DE
