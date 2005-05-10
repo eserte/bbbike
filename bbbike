@@ -945,7 +945,8 @@ speicherplatzsparender.",
     label => M"Auto-Installation vom CPAN", var => \$auto_install_cpan],
    ['advanced','!',undef, var => \$advanced],
    ['public','!',undef, nogui => 1,
-    var => sub { $advanced = 0;
+    var => sub { $public_test = 1;
+		 $advanced = 0;
 		 $devel_host = 0;
 		 $do_www = 0;
 		 $no_map = 1;
@@ -3853,21 +3854,16 @@ sub do_iconframe {
 		   },
 		  );
 
-    # XXX not used anymore!
-#     {
-# 	package Tk::LazyMenu;
-# 	@Tk::LazyMenu::ISA = qw(Tk::Menu);
-# 	Construct Tk::Widget 'LazyMenu';
-# 	sub postcascade {
-# 	    my $w = shift;
-# 	    if (!$w->{'job_done'}
-# 		&& $w->index("active") eq $w->index(main::M("Letzte geöffnete Layer")."...")) {
-# 		main::load_last_loaded($main::last_loaded_layers_obj);
-# 		$w->{'job_done'} = 1;
-# 	    }
-# 	    $w->SUPER::postcascade(@_);
-# 	}
-#     }
+    if ($advanced && $os ne "win") {
+	$opbm->command(-label => M"Start BBBike-Server",
+		       -command => sub {
+			   require BBBikeServer;
+			   if (!BBBikeServer::running()) {
+			       BBBikeServer::create_server($top);
+			   }
+		       },
+		      );
+    }
 
     # XXX it would be nice to use autouse in the following callbacks,
     # but it does not work because of artificial restrictions in
