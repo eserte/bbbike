@@ -53,7 +53,7 @@ $BBBIKE_DIRECT_WAP = 'http://www.radzeit.de/cgi-bin/wapbbbike.cgi';
 # index available anymore at sourceforge...
 $DISTDIR	   = 'http://heanet.dl.sourceforge.net/sourceforge/bbbike';
 $DISTFILE_SOURCE   = "$DISTDIR/BBBike-$STABLE_VERSION.tar.gz";
-$DISTFILE_WINDOWS  = "$DISTDIR/BBBike-$WINDOWS_VERSION-Windows.zip";
+$DISTFILE_WINDOWS  = "$DISTDIR/BBBike-$WINDOWS_VERSION-Windows.exe";
 # Distribution directory for humans (entry to 'show files' at sourceforge)
 $DISPLAY_DISTDIR   = 'http://sourceforge.net/project/showfiles.php?group_id=19142';
 $LATEST_RELEASE_DISTDIR  = 'http://sourceforge.net/project/showfiles.php?group_id=19142&package_id=14052&release_id=324253';
