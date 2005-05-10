@@ -5,12 +5,12 @@
 # $Id: bbbikeclient,v 1.9 2001/03/25 17:13:39 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2005 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
 use FindBin;
@@ -21,22 +21,26 @@ use strict;
 
 $^W = 1;
 
+my $verbose = 1;
+
 if (BBBikeServer::running()) {
     # adjust filenames (from relative to absolute)
     my($center, $centerc, $from, $to);
-    if (!GetOptions("center=s" => \$center,
-  			          "centerc=s" => \$centerc,
-				  "from=s"    => \$from,
-				  "to=s"      => \$to,
-			         )) {
+    if (!GetOptions("center=s"  => \$center,
+		    "centerc=s" => \$centerc,
+		    "from=s"    => \$from,
+		    "to=s"      => \$to,
+		    "v|verbose!" => \$verbose,
+		   )) {
 	warn "Some arguments will be ignored...\n";
     }
+
     my @argv;
     if (defined $center) {
 	push @argv, "-center", $center;
     }
     if (defined $centerc) {
-	push @argv, "-centeric", $centerc;
+	push @argv, "-centerc", $centerc;
     }
     if (defined $from) {
 	push @argv, "-from", $from;
@@ -59,18 +63,18 @@ if (BBBikeServer::running()) {
 	}
 	push @argv, "-routefile", $_;
     }
-    warn "Send to bbbike server: @argv";
+    warn "Send to bbbike server: @argv\n" if $verbose;
     exit 0 if !@argv;
     exit 0 if (BBBikeServer::send_to_server(-argv => \@argv));
 }
 
 my @saveargs = @ARGV;
-my $startserver= 1;
+my $startserver = 1;
 # XXX be quiet...
 GetOptions("startserver!" => \$startserver);
 if ($startserver) {
 # remove -startserver option, if necessary XXX
-    warn "No server process found, restarting bbbike...\n";
+    warn "No server process found, restarting bbbike...\n" if $verbose;
     @ARGV = @saveargs;
     unshift @ARGV, "-server";
     system($^X, "$FindBin::RealBin/bbbike", @ARGV);
