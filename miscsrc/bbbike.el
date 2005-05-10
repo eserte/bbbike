@@ -1,3 +1,5 @@
+(setq bbbike-el-file-name load-file-name)
+
 ;;; reverses the current region
 (defun bbbike-reverse-street ()
   (interactive)
@@ -89,6 +91,29 @@
     (setq tab-width 60))
   (recenter)
   )
+
+(defun bbbike-center-point ()
+  (interactive)
+  (let (begin-coord-pos end-coord-pos)
+    (save-excursion
+      (search-forward-regexp "\\($\\| \\)")
+      (if (string= (buffer-substring (match-beginning 0) (match-end 0)) "")
+	  (setq end-coord-pos (match-end 0))
+	(setq end-coord-pos (1- (match-end 0)))))
+    (save-excursion
+      (search-backward-regexp " ")
+      (setq begin-coord-pos (1+ (match-beginning 0))))
+    (setq coord (buffer-substring begin-coord-pos end-coord-pos))
+    (string-match "^\\(.*\\)/[^/]+/[^/]+$" bbbike-el-file-name)
+    (setq bbbikeclient-path (concat (substring bbbike-el-file-name (match-beginning 1) (match-end 1))
+				    "/bbbikeclient"))
+    (setq bbbikeclient-command (concat bbbikeclient-path
+				       "  -centerc "
+				       coord
+				       " &"))
+    (message bbbikeclient-command)
+    (shell-command bbbikeclient-command nil nil)
+    ))
 
 (defvar bbbike-mode-map nil "Keymap for BBBike bbd mode.")
 (if bbbike-mode-map
