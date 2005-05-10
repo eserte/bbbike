@@ -84,6 +84,9 @@ function init() {
     if (search.match(/plz=([^;&]*)/)) {
       frm.supplied_plz.value = RegExp.$1;
     }
+    if (search.match(/coord=([^;&]*)/)) {
+      frm.supplied_coord.value = RegExp.$1;
+    }
     if (search.match(/strname_html=([^;&]*)/)) {
       strname_html = RegExp.$1;
     }
@@ -134,6 +137,7 @@ function init() {
   <input type="hidden" name="supplied_strname" value="" />
   <input type="hidden" name="supplied_bezirk" value="" />
   <input type="hidden" name="supplied_plz" value="" />
+  <input type="hidden" name="supplied_coord" value="" />
   <table>
 
 [% IF is_fragezeichen_form -%]
