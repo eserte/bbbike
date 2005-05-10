@@ -23,6 +23,7 @@ sub teaser {
 			     #'dobli',
 			    );
     my @teasers_mandatory = (
+			     $ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
 			     teaser_perltk_newrelease(),
 			     #teaser_perltk(),
 			     teaser_mapserver(),
@@ -97,6 +98,12 @@ EOF
 sub teaser_wap {
     <<EOF;
 <div class="teaser">Experimentell - BBBike über WAP: <a href="@{[ $BBBike::BBBIKE_WAP ]}">@{[ $BBBike::BBBIKE_WAP ]}</a></div>
+EOF
+}
+
+sub teaser_radzeit {
+    <<EOF;
+<div class="teaser"><a href="http://www.radzeit.de"><!--img src="http://www.radzeit.de/uploads/images/1/thumb-RadZeit_Logo2.gif" width="100" height="21"--><b>Radzeit.de</b></a></div>
 EOF
 }
 
