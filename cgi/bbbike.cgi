@@ -5471,17 +5471,7 @@ EOF
 Für die technisch Interessierten: als Suchalgorithmus wird
 A<sup>*</sup> eingesetzt<sup> <a class="pseudolink" title="@{[ footnote(1) ]}" href="#footnote1">1</a></sup>.<p>
 EOF
-    {
-	for my $dir (@Strassen::datadirs) {
-	    my @s = stat("$dir/.modified");
-	    if (@s) {
-		print "Letzte Aktualisierung der Daten: ";
-		my @l = localtime $s[9];
-		printf "%04d-%02d-%02d, %02d:%02d Uhr<p>\n",
-		    $l[5]+1900, $l[4]+1, $l[3], $l[2], $l[1];
-	    }
-	}
-    }
+
     print <<EOF;
 <hr>
 <a name="data"><h3>Daten</h3></a>
@@ -5616,6 +5606,7 @@ EOF
 	if (my(@s) = stat "$_/.modified") {
 	    my @l = localtime $s[9];
 	    $data_date = sprintf "%04d/%02d/%02d", $l[5]+1900,$l[4]+1,$l[3];
+	    last;
 	}
     }
     $data_date = "unbekannt" if !defined $data_date;
