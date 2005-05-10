@@ -18,10 +18,11 @@ use lib "$FindBin::RealBin";
 use BBBikeServer;
 use Getopt::Long;
 use strict;
+use vars qw($VERBOSE);
 
 $^W = 1;
 
-my $verbose = 1;
+$VERBOSE = 1 if !defined $VERBOSE;
 
 if (BBBikeServer::running()) {
     # adjust filenames (from relative to absolute)
@@ -30,7 +31,7 @@ if (BBBikeServer::running()) {
 		    "centerc=s" => \$centerc,
 		    "from=s"    => \$from,
 		    "to=s"      => \$to,
-		    "v|verbose!" => \$verbose,
+		    "v|verbose!" => \$VERBOSE,
 		   )) {
 	warn "Some arguments will be ignored...\n";
     }
@@ -63,9 +64,11 @@ if (BBBikeServer::running()) {
 	}
 	push @argv, "-routefile", $_;
     }
-    warn "Send to bbbike server: @argv\n" if $verbose;
+    warn "Send to bbbike server: @argv\n" if $VERBOSE;
     exit 0 if !@argv;
+    $BBBikeServer::VERBOSE = $VERBOSE;
     exit 0 if (BBBikeServer::send_to_server(-argv => \@argv));
+    exit 1;
 }
 
 my @saveargs = @ARGV;
@@ -74,7 +77,7 @@ my $startserver = 1;
 GetOptions("startserver!" => \$startserver);
 if ($startserver) {
 # remove -startserver option, if necessary XXX
-    warn "No server process found, restarting bbbike...\n" if $verbose;
+    warn "No server process found, restarting bbbike...\n" if $VERBOSE;
     @ARGV = @saveargs;
     unshift @ARGV, "-server";
     system($^X, "$FindBin::RealBin/bbbike", @ARGV);
