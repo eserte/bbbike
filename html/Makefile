@@ -24,9 +24,9 @@ bbbike_sidebar.html bbbike_sidebar.en.html: bbbike_sidebar.html.spp
 	chmod 644 bbbike_sidebar.html bbbike_sidebar.en.html
 
 newstreetform.html: newstreetform.tpl.html
-	${TPAGE} --define cgidir=${CGIDIR} $> > $@
+	${TPAGE} --define cgidir=${CGIDIR} $^ > $@
 	chmod ugo+r $@
 
 fragezeichenform.html: newstreetform.tpl.html
-	${TPAGE} --define cgidir=${CGIDIR} --define is_fragezeichen_form=1 $> > $@
+	${TPAGE} --define cgidir=${CGIDIR} --define is_fragezeichen_form=1 $^ > $@
 	chmod ugo+r $@
