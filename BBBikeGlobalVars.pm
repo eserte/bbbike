@@ -25,7 +25,7 @@ use vars
   qw($bbbike_context $splash_screen
      $coords_ref $realcoords_ref $search_route_points_ref @realcoords
      $VERSION $PROG_REVISION $tmpdir %tmpfiles $progname
-     $os $use_clipboard $verbose $advanced $devel_host
+     $os $use_clipboard $verbose $advanced $devel_host $public_test
      $datadir $no_original_datadir $city $country
      $top %toplevel %processes $transient $c $sx $sy $top_dpi $top_dpmm @want_extends
      $small_icons $is_handheld
