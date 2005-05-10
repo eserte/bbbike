@@ -131,7 +131,7 @@ eval {
 	print BACKUP $dump;
 	print $fh $dump;
 	close BACKUP;
-    } elsif (param("formtype") eq 'bbbikeroute') {
+    } elsif (param("formtype") && param("formtype") eq 'bbbikeroute') {
 	$comment =
 	    "Von: " . ($by || "anonymous\@bbbike.de") . "\n" .
 	    "An:  $to\n\n" .
