@@ -5534,7 +5534,7 @@ Es besteht die experimentelle Möglichkeit, sich <a href="@{[ $bbbike_url ]}?uplo
 <h4>Diplomarbeit</h4>
 Das Programm wird auch in <a href="@{[ $BBBike::DIPLOM_URL ]}">meiner Diplomarbeit</a> behandelt.<p>
 EOF
-    if ($bi->is_browser_version("Mozilla", 5)) {
+    if (0 && $bi->is_browser_version("Mozilla", 5)) {
 	print <<EOF;
 <script type="text/javascript"><!--
 function addSidebar(frm) {
