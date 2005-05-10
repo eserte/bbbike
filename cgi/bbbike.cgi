@@ -4963,6 +4963,9 @@ EOF
     } elsif (defined $mapserver_init_url) {
         $s .= "<td><a href=\"$mapserver_init_url\">Mapserver</a></td>";
     }
+    if ($ENV{SERVER_NAME} =~ /radzeit/i) {
+        $s .= "<td><a href=\"http://www.radzeit.de\">Radzeit.de</a></td>";
+    }
     $s .= <<EOF;
 </tr>
 </table>
@@ -5404,8 +5407,8 @@ sub load_teaser {
 sub show_info {
     http_header(@weak_cache);
     header();
-    my $perl_url = "http://www.perl.com/";
-    my $cpan = "http://www.perl.com/CPAN";
+    my $perl_url = "http://www.perl.org/";
+    my $cpan = "http://www.cpan.org/";
     my $scpan = "http://search.cpan.org/search?mode=module&query=";
     print <<EOF;
 <center><h2>Information</h2></center>
@@ -5625,11 +5628,7 @@ EOF
         print "Betriebssystem: $os\n";
         if ($os =~ /freebsd/i) {
 	    print "<a href=\"http://www.freebsd.org/\"><img align=right src=\"";
-	    if (-f "/cdrom/www/gifs/powerani.gif") {
-		print "file:/cdrom/www/gifs/powerani.gif";
-	    } else {
-		print "http://www.freebsd.org/gifs/powerani.gif";
-	    }
+	    print "http://www.freebsd.org/gifs/powerani.gif";
 	    print "\" border=0></a>";
 	} elsif ($os =~ /linux/i) {
 	    print "<a href=\"http://www.linux.org/\"><img align=right src=\"";
@@ -5642,11 +5641,7 @@ EOF
 	print "HTTP-Server: $ENV{'SERVER_SOFTWARE'}\n";
 	if ($ENV{'SERVER_SOFTWARE'} =~ /apache/i) {
 	    print "<a href=\"http://www.apache.org/\"><img align=right src=\"";
-	    if (-f "/cdrom/www/gifs/apache.gif") {
-		print "file:/cdrom/www/gifs/apache.gif";
-	    } else {
-		print "http://www.apache.org/images/apache_pb.gif";
-	    }
+	    print "http://www.apache.org/images/apache_pb.gif";
 	    print "\" border=0></a>";
 	}
 	print "<p>";
