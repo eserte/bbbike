@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.9 2005/05/10 06:35:52 eserte Exp $
+# $Id: cgihead2.t,v 1.10 2005/05/10 18:31:08 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -79,21 +79,23 @@ for my $var (@var) {
 	    my $content_type = $req->content_type;
 	    if ($url eq $BBBike::BBBIKE_UPDATE_DATA_CGI ||
 		$url =~ m{\.zip$}) {
-		ok($content_type, "application/zip");
+		is($content_type, "application/zip");
 	    } elsif ($url =~ m{\.tar\.gz$}) {
-		ok($content_type, "XXX");
+		is($content_type, "application/x-gzip");
 	    } elsif ($url =~ m{/\.modified$}) {
-		ok($content_type, "text/plain");
+		is($content_type, "text/plain");
 	    } elsif ($url =~ m{wap}) {
-		ok($content_type, "text/vnd.wap.wml");
+		is($content_type, "text/vnd.wap.wml");
+	    } elsif ($url =~ m{\.exe$}) {
+		is($content_type, "application/octet-stream");
 	    } else {
-		ok($content_type, "text/html");
+		is($content_type, "text/html");
 	    }
 	}
     }
 }
 
-{
+SKIP: {
     my $no_tests = 1;
     my $bsd_port_dir = "/usr/ports";
     if (-d $bsd_port_dir) {
