@@ -19,8 +19,10 @@ use IO::Handle;
 use Net::hostent;
 use Data::Dumper;
 use strict;
-use vars qw($name $args);
+use vars qw($name $args $VERBOSE);
 use Safe;
+
+#$VERBOSE = 1 if !defined $VERBOSE;
 
 my $bbbike_configdir = "$ENV{HOME}/.bbbike";
 my $bbbike_port = 2453; # Vanity für "BIKE"
@@ -59,12 +61,27 @@ sub pipe_filename {
 # Process is running and has a writable socket
 sub running {
     my $pid = pid();
-    return undef if !defined $pid;
-    return undef if !(kill 0 => $pid);
+    if (!defined $pid) {
+	if ($VERBOSE) {
+	    print STDERR "Cannot find pidfile from " . pid_filename() . "\n";
+	}
+	return undef;
+    }
+    if (!(kill 0 => $pid)) {
+	if ($VERBOSE) {
+	    print STDERR "Process $pid not running\n";
+	}
+	return undef;
+    }
     if ($use_inet) {
 	# wie testen? XXX
     } else {
-	return undef if !-S unix_filename() || !-w unix_filename();
+	if (!-S unix_filename() || !-w unix_filename()) {
+	    if ($VERBOSE) {
+		print STDERR "Socket/pipe does not exist or is not writable\n";
+	    }
+	    return undef;
+	}
     }
     1;
 }
