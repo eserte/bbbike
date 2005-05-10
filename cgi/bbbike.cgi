@@ -1613,6 +1613,7 @@ EOF
 		my $qs = CGI->new({strname => $strasse,
 				   bezirk => $bezirk,
 				   plz => $plz,
+				   coord => $xy,
 				  })->query_string;
 		my $report_nearest = $strasse !~ /^[su]-bhf/i;
 		if ($report_nearest) {
