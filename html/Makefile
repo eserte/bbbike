@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.9 2005/04/05 22:48:42 eserte Exp $
+# $Id: Makefile,v 1.10 2005/05/10 23:24:21 eserte Exp $
 #
 
 # XXX don't duplicate, see ../Makefile.PL
@@ -24,9 +24,9 @@ bbbike_sidebar.html bbbike_sidebar.en.html: bbbike_sidebar.html.spp
 	chmod 644 bbbike_sidebar.html bbbike_sidebar.en.html
 
 newstreetform.html: newstreetform.tpl.html
-	${TPAGE} --define cgidir=${CGIDIR} $^ > $@
+	${TPAGE} --define cgidir=${CGIDIR} newstreetform.tpl.html > $@
 	chmod ugo+r $@
 
 fragezeichenform.html: newstreetform.tpl.html
-	${TPAGE} --define cgidir=${CGIDIR} --define is_fragezeichen_form=1 $^ > $@
+	${TPAGE} --define cgidir=${CGIDIR} --define is_fragezeichen_form=1 newstreetform.tpl.html > $@
 	chmod ugo+r $@

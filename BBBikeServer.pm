@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeServer.pm,v 1.12 2001/07/04 11:42:42 eserte Exp $
+# $Id: BBBikeServer.pm,v 1.13 2005/05/10 22:31:21 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001 Slaven Rezic. All rights reserved.
@@ -37,6 +37,10 @@ sub name {
 	require Sys::Hostname;
 	my $hostname = Sys::Hostname::hostname();
 	$name = $hostname . $name;
+    }
+    if ($name =~ /:\d+$/) {
+	# canonify DISPLAY
+	$name .= ".0";
     }
     $name;
 }

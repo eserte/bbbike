@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.45 2005/04/13 22:22:42 eserte Exp $
+# $Id: Makefile,v 2.45 2005/04/13 22:22:42 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -410,8 +410,10 @@ vorfahrt:	vorfahrt-orig
 .for f in ${COMMENTS_PARTIAL}
 ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 	-@$(WRITEABLE) $@
-	cat ${f}-orig | $(CONVERT2HAFAS) -basefile ${f}-orig - | \
-	    $(RESOLVE_STARS) -sperrefile ${PERSISTENTTMPDIR}/gesperrt-without-nocross \
+	cat ${f}-orig | \
+	    ${GREPSTRASSEN} -v -sectionrx "ignorieren" | \
+	    $(CONVERT2HAFAS) -basefile ${f}-orig - | \
+	    ${RESOLVE_STARS} -sperrefile ${PERSISTENTTMPDIR}/gesperrt-without-nocross \
 	    ${ALL_STREETS} - > $@~ && \
 	mv $@~ $@
 	-@$(READONLY) $@

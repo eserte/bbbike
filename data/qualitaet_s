@@ -392,7 +392,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15086,12849 15084,12975
 Gärtnerstr.: Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14311,11884
 Seumestr.: Kopfsteinpflaster	Q2 14395,11753 14358,11656 14305,11514 14252,11368
 Mainzer Str.: Kopfsteinpflaster	Q2 14311,11884 14357,12011 14434,12196
-Colbestr.: mäßiger Asphalt	Q1 14416,11815 14468,11992
+Colbestr.: mäßiger Asphalt mit Schlaglöchern	Q1 14416,11815 14468,11992
 Waldeyerstr.: Kopfsteinpflaster	Q2 15054,12323 14997,12243
 Am Heidekampgraben: Feldweg, teilweise etwas sandig	Q2 15053,7966 14969,7580 15162,7281 15342,7013 15563,6683 15577,6518 15478,6343 15422,6228 15365,6126
 An der Güterbahn: Parkweg	Q1 15330,1658 15205,1670 15110,1732 14968,1835 14845,1866 14705,1836 14630,1795
@@ -736,7 +736,7 @@ Schwerinstr.: Kopfsteinpflaster, OK, in der Mitte Asphalt	Q2 7384,10127 7201,101
 Damaschkestr.: Kopfsteinpflaster	Q2 3132,10499 3013,10553
 Mierendorffstr.: Kopfsteinpflaster, Radwege mäßig bis OK	Q1 3344,12825 3542,13063 3559,13177
 Albrecht-Achilles-Str.: wechselnd Asphalt und gutes Kopfsteinpflaster	Q1 3618,10283 3597,9907
-(Stresemannstr. - Wilhelmstr.): Parkweg, etwas holprig	Q1 9210,10614 9359,10625
+(Stresemannstr. - Wilhelmstr.): Parkweg, etwas holprig	Q1 9250,10563 9359,10625
 (Stavanger Str. - Esplanade): Trampelpfad, mäßige Qualität	Q2 10654,16729 10576,16824 10569,16910
 Fröbelstr.: guter Asphalt	Q0 11776,15060 11968,14950 12089,14891
 Ella-Kay-Str.: guter Asphalt	Q0 12202,15099 12089,14891 11990,14714
@@ -1005,6 +1005,10 @@ Am Luchgraben: Asphalt	Q0 17078,21321 16675,22168
 Rhumeweg: Kopfsteinpflaster	Q2 -1530,3323 -1453,3166 -1339,2889
 Dubrowstr.: schlechtes Kopfsteinpflaster	Q3 -2249,2818 -2221,2886 -2096,2929 -1453,3166
 Dubrowstr.: Kopfsteinpflaster	Q2 -1453,3166 -1187,3264
+Gabelsbergerstr.: Kopfsteinpflaster	Q2 14381,12205 14451,12396
+Hübnerstr.: Kopfsteinpflaster	Q2 13960,12866 13884,12679
+Heidenfeldstr.: Kopfsteinpflaster	Q2 13609,13427 13446,13353
+Neue Promenade: unebenes Pflaster	Q2 10294,13070 10132,12941
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
 Schützallee: mäßiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfläche	Q2 2230,3823 1952,3864 1677,3885
 Riemeisterstr.: mäßiges Kopfsteinpflaster	Q2 373,4816 319,4906 168,5092 103,5123
@@ -1076,7 +1080,7 @@ Schluchseestr.: Asphalt	Q0 5016,22485 5237,22200 5540,22221 5808,22613
 Niedstr.: Asphalt	Q0 5364,7330 5653,7333 5810,7337 5902,7334
 Jägerstr. (Kaulsdorf): fester Sandweg	Q2 22631,8531 22506,8828 22009,9118 21831,9134
 Königswinterstr.: mäßiger Asphalt	Q1 19148,8406 18998,8784 18962,8879 18992,9000
-Schliemannstr.: mäßiger Asphalt	Q1 11154,14985 11334,15248
+Schliemannstr.: Kopfsteinpflaster	Q2 11154,14985 11334,15248
 Schliemannstr.: mäßiger Asphalt	Q1 11368,15301 11502,15527
 Heegermühler Weg: schlechtes Kopfsteinpflaster	Q3 7966,19968 8043,19725 8231,19806 8415,19910
 Rykestr.: Kopfsteinpflaster	Q2 11358,14331 11446,14508 11526,14693 11610,14886
@@ -1314,7 +1318,6 @@ Binzstr.: holprige Pflasterstraße	Q2 11845,17656 11468,17586 11088,17511 10892,1
 Sponholzstr.: Asphalt	Q0 6157,7685 6155,7216 6153,7078
 Puccinistr.: Asphalt und Kopfsteinpflaster	Q2 13723,15505 13973,15660
 Argenauer Str.: Kopfsteinpflaster	Q2 22044,7156 21838,7114 21569,7273
-Hübnerstr.: schlechtes Kopfsteinpflaster	Q3 13960,12866 13884,12679
 Jacobsohnstr.: mäßiger Asphalt	Q1 12200,16579 12353,16687 12486,16791 12521,16817 12699,16945
 Iranische Str.: Kopfsteinpflaster	Q2 8092,16485 7875,16509 7728,16538 7707,16543 7456,16620
 Reinholdstr.: mäßiges Kopfsteinpflaster	Q2 12820,6805 13010,6842
