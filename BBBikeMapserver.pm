@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.21 2004/12/06 20:38:43 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.22 2005/05/11 23:27:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -92,16 +92,16 @@ sub read_config {
 sub scope_by_map {
     my $map = shift;
     my $base = basename($map);
-    if      ($base =~ /brb-wide.map$/) {
+    if      ($base =~ /-wide.map$/) {
 	return 'all,wideregion';
-    } elsif ($base =~ /brb-b\.map$/) {
+    } elsif ($base =~ /-b\.map$/) {
 	return 'all,city';
-    } elsif ($base =~ /brb\.map$/) {
+    } elsif ($base =~ /-p\.map$/) {
 	return 'all,region';
-    } elsif ($base =~ /brb-p\.map$/) {
-	return 'all,region';
-    } elsif ($base =~ /brb-inner-b\.map$/) {
+    } elsif ($base =~ /-inner-b\.map$/) {
 	return 'all,city';
+    } elsif ($base =~ /\.map$/) {
+	return 'all,region';
     }
     undef;
 }

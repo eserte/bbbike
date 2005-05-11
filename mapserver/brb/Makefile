@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.26 2005/03/29 07:12:55 eserte Exp $
+# $Id: Makefile,v 1.27 2005/05/11 23:41:00 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -235,6 +235,12 @@ DISTFILES_STERNFAHRT_2004=\
 	sternfahrt2004/after_strassen_annotations.inc \
 	sternfahrt2004/after_marker.inc
 
+DISTFILES_STERNFAHRT_2005=\
+	sternfahrt2005/sternfahrt2005.html-tpl \
+	sternfahrt2005/sternfahrt2005_init.html-tpl \
+	sternfahrt2005/after_strassen_annotations.inc \
+	sternfahrt2005/after_marker.inc
+
 RADZEIT_DIST_DIR=/tmp/radzeit_mapserver_dist
 SPIFF_DIST_DIR=/home/e/eserte/src/bbbike/mapserver/brb-spiff
 
@@ -362,32 +368,55 @@ brb-ipaq.map:
 # Für 2003 sollten Symlinks im mapserver-Rootverzeichnis auf die Dateien
 # in sternfahrt2003 zeigen (backward compatibility)
 
-STERNFARTEN= 2003 2004
+STERNFARTEN= 2003 2004 2005
 
 #.PHONY: ${STERNFAHRTEN:S/^/sternfahrt/g}
 
-.PHONY: sternfahrt2003 sternfahrt2004
+.PHONY: sternfahrt2003 sternfahrt2004 sternfahrt2005
 
 # XXX Makefile problems?!
 
 #.for year in 2004 2003 # ${STERNFAHRTEN}
-sternfahrt2004:	sternfahrt2004/sternfahrt2004.html sternfahrt2004/sternfahrt2004_init.html sternfahrt2004/sternfahrt2004-b.map
+sternfahrt2005:	sternfahrt2005/sternfahrt2005.html \
+		sternfahrt2005/sternfahrt2005_init.html \
+		sternfahrt2005/sternfahrt2005-b.map \
+		sternfahrt2005/sternfahrt2005.map \
+		data/sternfahrt2005.dbf \
+		data/sternfahrt2005.shp \
+		data/sternfahrt2005.shx \
+		data/treffpunkte2005.dbf \
+		data/treffpunkte2005.shp \
+		data/treffpunkte2005.shx
 
-STERNFAHRT_2004_DEFINES=\
-	--define MAPNAME="sternfahrt2004" \
+STERNFAHRT_2005_DEFINES=\
+	--define MAPNAME="sternfahrt2005" \
 	--define EXTENT="4658 7874 13542 16766" \
-	--define TEMPLATE="sternfahrt2004" \
-	--define INCLUDE_AFTER_STRASSEN_ANNOTATIONS="sternfahrt2004/after_strassen_annotations.inc" \
-	--define INCLUDE_AFTER_MARKER="sternfahrt2004/after_marker.inc" \
+	--define TEMPLATE="sternfahrt2005" \
+	--define INCLUDE_AFTER_STRASSEN_ANNOTATIONS="sternfahrt2005/after_strassen_annotations.inc" \
+	--define INCLUDE_AFTER_MARKER="sternfahrt2005/after_marker.inc" \
 	--define REFMAP_REGION_EXTENT="-15700 -14985 37034 37749" \
 
-sternfahrt2004/sternfahrt2004.map:	brb.map-tpl Makefile Makefile.${TARGET}.inc
-	$(TPAGE) $(ALL_TPL_DEFINES) $(STERNFAHRT_2004_DEFINES) brb.map-tpl > $@
+sternfahrt2005/.sternfahrt2005.map:	brb.map-tpl Makefile Makefile.${TARGET}.inc
+	$(TPAGE) $(ALL_TPL_DEFINES) $(STERNFAHRT_2005_DEFINES) brb.map-tpl > $@
 	chmod ugo+r $@
 
-sternfahrt2004/sternfahrt2004-b.map:	sternfahrt2004/sternfahrt2004.map mkroutemap
-	${BRBDIR}/mkroutemap -force -scope city sternfahrt2004/sternfahrt2004.map sternfahrt2004/sternfahrt2004-b.map || rm -f $@
+sternfahrt2005/sternfahrt2005-b.map:	sternfahrt2005/.sternfahrt2005.map mkroutemap
+	${BRBDIR}/mkroutemap -force -scope city sternfahrt2005/.sternfahrt2005.map sternfahrt2005/sternfahrt2005-b.map || rm -f $@
 	chmod ugo+r $@
+
+sternfahrt2005/sternfahrt2005.map:	sternfahrt2005/.sternfahrt2005.map mkroutemap
+	${BRBDIR}/mkroutemap -force -scope region sternfahrt2005/.sternfahrt2005.map sternfahrt2005/sternfahrt2005.map || rm -f $@
+	chmod ugo+r $@
+
+sternfahrt2005/sternfahrt2005.html:	brb.html-tpl sternfahrt2005/sternfahrt2005.inc Makefile Makefile.${TARGET}.inc
+	$(TPAGE) $(ALL_TPL_DEFINES) --define INCLUDE_FILE=sternfahrt2005/sternfahrt2005.inc brb.html-tpl > $@
+	chmod ugo+r $@
+
+
+.for i in sternfahrt2005.dbf sternfahrt2005.shp sternfahrt2005.shx treffpunkte2005.dbf treffpunkte2005.shp treffpunkte2005.shx
+data/$i:
+	cd data && ln -s ../../../misc/sternfahrt_2005/$i
+.endfor
 
 #.endfor
 
@@ -419,21 +448,21 @@ httpd.conf:	httpd.conf-tpl Makefile
 # dists
 
 # this obsoletes dist-radzeit and dist-radzeit.herceg.de
-#XXX remove the sternfahrt2004 productions to own rule
+#XXX remove the sternfahrt2005 productions to own rule
 dist-any:	# build-all
 	[ ! -d $(RADZEIT_DIST_DIR) ] && mkdir $(RADZEIT_DIST_DIR) || true
 	chmod ugo+rx $(RADZEIT_DIST_DIR)
 	$(MAKE) $(MAKEFLAGS) TARGET=$(TARGET) Makefile.${TARGET}.inc
 	cp -pf $(DISTFILES) $(FONTS_LIST) $(RADZEIT_DIST_DIR)
-	-mkdir $(RADZEIT_DIST_DIR)/sternfahrt2004
-	chmod ugo+rx $(RADZEIT_DIST_DIR)/sternfahrt2004
-	cp -pf $(DISTFILES_STERNFAHRT_2004) $(RADZEIT_DIST_DIR)/sternfahrt2004
+	-mkdir $(RADZEIT_DIST_DIR)/sternfahrt2005
+	chmod ugo+rx $(RADZEIT_DIST_DIR)/sternfahrt2005
+	cp -pf $(DISTFILES_STERNFAHRT_2005) $(RADZEIT_DIST_DIR)/sternfahrt2005
 	cp -pR data $(RADZEIT_DIST_DIR)
 	cp -pR graphics $(RADZEIT_DIST_DIR)
 	-mkdir $(RADZEIT_DIST_DIR)/tmp
 	chmod ugo+rx $(RADZEIT_DIST_DIR)/tmp
 	cd $(RADZEIT_DIST_DIR) && \
-	    $(MAKE) $(MAKEFLAGS) TARGET=$(TARGET) all sternfahrt2004
+	    $(MAKE) $(MAKEFLAGS) TARGET=$(TARGET) all sternfahrt2005
 
 #XXX obsolete
 dist-radzeit:	# build-all

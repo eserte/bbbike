@@ -1,8 +1,18 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <!-- -*-html-*- -->
 [% EDITWARNHTML %]
+[% IF INCLUDE_FILE.defined;
+   PROCESS $INCLUDE_FILE;
+   END;
+-%]
+[%
+   UNLESS TITLE.defined; TITLE = "Berlin/Brandenburg - BBBike - Mapserver"; END;
+   UNLESS HEADLINE_HTML.defined; HEADLINE_HTML = "Berlin/Brandenburg"; END;
+   UNLESS MOREINFO_HTML.defined; MOREINFO_HTML = ""; END;
+   UNLESS EXTRA_LAYERS.size > 0; EXTRA_LAYERS = []; END;
+-%]
 [% SET style="new" -%]
 <html>
-<head><title>Berlin/Brandenburg - BBBike - Mapserver</title>
+<head><title>[% TITLE | html %]</title>
 <base href="[% MAPSERVER_URL %]/brb.html">
 <link rel="stylesheet" type="text/css" href="[% BBBIKE_HTML_RELURL %]/bbbike.css">
 <link rel="stylesheet" type="text/css" href="brb.css">
@@ -80,7 +90,8 @@
 </td>
 <td>&nbsp;&nbsp;</td>
 <td valign="top" bgcolor=#ffffff>
-  <center><h1>Berlin/Brandenburg</h1></center>
+  <center><h1>[% HEADLINE_HTML %]</h1></center>
+  [% MOREINFO_HTML %]
   <table summary="" cellpadding="5" cellspacing="0" border="0" bgcolor="#ffffff">
     <tr><td>
 
@@ -101,6 +112,9 @@
       <label><input type="checkbox" name="layer" value="orte" [orte_check]> Orte</label><br>
       <label><input type="checkbox" name="layer" value="fragezeichen" [fragezeichen_check]> Fragezeichen</label><br>
       <label><input type="checkbox" name="layer" value="route" [route_check]> Route/Markierung</label><br>
+[% FOR layer = EXTRA_LAYERS -%]
+      <label><input type="checkbox" name="layer" value="[% layer.name %]" [[% layer.name %]_check]> [% layer.label %]</label><br>
+[% END -%]
       </div>
 
       <p>

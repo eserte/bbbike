@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_setcoord.cgi,v 1.8 2005/04/05 22:46:16 eserte Exp $
+# $Id: mapserver_setcoord.cgi,v 1.9 2005/05/11 23:26:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -72,7 +72,15 @@ if ($set eq 'ziel') {
 	@layers = ($q2->param("layer"), "route");
     }
 
+    require File::Basename;
+    my $mapname;
+    if (param("map")) {
+	$mapname = File::Basename::basename(param("map"));
+	$mapname =~ s{-.*}{};
+	$mapname =~ s{\..*}{};
+    }
     $ms->start_mapserver(-passparams => 1,
+			 -mapname => $mapname,
 			 -start => param("startc"),
 			 (@layers ? (-layers => \@layers) : ()),
 			);

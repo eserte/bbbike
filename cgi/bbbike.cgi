@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.25 2005/05/02 23:27:01 eserte Exp $
+# $Id: bbbike.cgi,v 7.26 2005/05/11 23:26:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -68,6 +68,7 @@ use Strassen::Dataset;
 use BBBikeCalc;
 use BBBikeVar;
 use BBBikeUtil qw(is_in_path min max);
+use File::Basename qw(dirname);
 use CGI;
 use CGI::Carp; # Nur zum Debuggen verwenden --- manche Web-Server machen bei den kleinsten Kleinigkeiten Probleme damit: qw(fatalsToBrowser);
 use BrowserInfo 1.31;
@@ -664,7 +665,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.25 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.26 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2294,7 +2295,9 @@ sub get_global_cookie {
 
 sub get_cookie {
     $q->cookie(-name => $cookiename,
-	       -path => $q->url(-absolute => 1),
+# XXX cookie seems only to be set if doing some action from the search site, not a page before. Check it!
+# XXX dirname okay with backward compatibility?
+	       -path => dirname($q->url(-absolute => 1)),
 	      );
 }
 
@@ -2304,7 +2307,8 @@ sub set_cookie {
 	(-name => $cookiename,
 	 -value => $href,
 	 -expires => '+1y',
-	 -path => $q->url(-absolute => 1),
+# XXX dirname okay with backward compatibility?
+	 -path => dirname($q->url(-absolute => 1)),
 	);
 }
 
@@ -5599,7 +5603,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/05/02 23:27:01 $';
+    my $cgi_date = '$Date: 2005/05/11 23:26:03 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {
