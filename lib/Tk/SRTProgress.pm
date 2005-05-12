@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: SRTProgress.pm,v 1.8 2004/08/21 20:21:46 eserte Exp $
+# $Id: SRTProgress.pm,v 1.10 2005/05/12 20:49:00 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2003,2005 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -261,3 +261,43 @@ sub labelPack { }
 1;
 
 __END__
+
+=head1 NAME
+
+Tk::SRTProgress - another progress bar for Tk
+
+=head1 SYNOPSIS
+
+    use Tk::SRTProgress;
+    $progressbar = $mw->SRTProgress;
+
+=head1 DESCRIPTION
+
+Missing ...
+
+=head1 EXAMPLE
+
+    use Tk;
+    use Tk::SRTProgress;
+    my $mw = tkinit;
+    my $p = $mw->SRTProgress->pack;
+    $p->Init;
+    $p->repeat(100, sub { $p->UpdateFloat });
+    MainLoop;
+
+=head1 AUTHOR
+
+Slaven Rezic <srezic@cpan.org>
+
+=head1 COPYRIGHT
+
+Copyright (c) 1999,2003,2005 Slaven Rezic. All rights reserved.
+This module is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=head1 SEE ALSO
+
+L<Tk::ProgressBar>
+
+=cut
+
