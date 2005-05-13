@@ -2085,44 +2085,45 @@ sub do_iconframe {
 	  -completelistbutton => sub { choose_from_plz(-interactive => 1) },
 	  -completelistbuttonlabel => M"Alle Straßen",
 	 },
+	 -strextrachoosemenuaction =>
+	 sub {
+	     $strcm->cascade(-label => M('Erweiterte Auswahl').' ...');
+	     my $ausm = $strcm->Menu(-title => M("Erweiterte Auswahl").' ...');
+	     $strcm->entryconfigure('last', -menu => $ausm);
+	     $plzmcmd = $ausm->command
+		 (-label => M"Komplette Straßenliste",
+		  -command => sub { choose_from_plz(-interactive => 1) });
+	     $ausm->command
+		 (-label => M"Telefonbuch-Datenbank (Straße)",
+		  -command => sub {
+		      telefonbuch_dialog("str");
+		  });
+	     $ausm->command
+		 (-label => M"Telefonbuch-Datenbank (Name)",
+		  -command => sub {
+		      telefonbuch_dialog("tel");
+		  });
+	     if ($advanced) {
+		 $ausm->command(-label => M"MySQL-DB",
+				-command => sub {
+				    push @INC, "$FindBin::RealBin/miscsrc";
+				    eval {
+					require TelbuchDBApprox;
+					TelbuchDBApprox::tk_choose($top);
+				    };
+				    if ($@) {
+					status_message($@, "die");
+				    }
+				});
+	     }
+	     $ausm->command(-label => M"Volltextsuche",
+			    -accelerator => "Ctrl-F",
+			    -command => sub {
+				require BBBikeAdvanced;
+				search_anything();
+			    });
+	 },
 	);
-    $strcm->cascade(-label => M('Auswahl aus').' ...');
-    {
-	my $ausm = $strcm->Menu(-title => M("Auswahl aus").' ...');
-	$strcm->entryconfigure('last', -menu => $ausm);
-	$plzmcmd = $ausm->command
-	    (-label => M"Komplette Straßenliste",
-	     -command => sub { choose_from_plz(-interactive => 1) });
-	$ausm->command
-	  (-label => M"Telefonbuch-Datenbank (Straße)",
-	   -command => sub {
-	       telefonbuch_dialog("str");
-	   });
-	$ausm->command
-	  (-label => M"Telefonbuch-Datenbank (Name)",
-	   -command => sub {
-	       telefonbuch_dialog("tel");
-	   });
-	if ($advanced) {
-	    $ausm->command(-label => M"MySQL-DB",
-			   -command => sub {
-			       push @INC, "$FindBin::RealBin/miscsrc";
-			       eval {
-				   require TelbuchDBApprox;
-				   TelbuchDBApprox::tk_choose($top);
-			       };
-			       if ($@) {
-				   status_message($@, "die");
-			       }
-			   });
-	}
-	$ausm->command(-label => M"Volltextsuche",
-		       -accelerator => "Ctrl-F",
-		       -command => sub {
-			   require BBBikeAdvanced;
-			   search_anything();
-		       });
-    }
     $strcm->separator;
     $strcm->cascade(-label => M"Straßenkategorien");
     {
@@ -2725,7 +2726,7 @@ sub do_iconframe {
 			  -command => sub { choose_ort('p', $f) });
 	}
     }
-    if ($advanced) {
+    if (0 && $advanced) { # XXX Wird nicht mehr gepflegt...
 	$knm->command(-label => M"Film auswählen",
 		      -command => sub {
 			  require BBBikeAdvanced;
@@ -15300,7 +15301,10 @@ sub menu_entry_choose_ort {
 	}
 	$menu->command(-label => Mfmt("%s auswählen", $str_attrib{$abk}->[ATTRIB_SINGULAR]),
 		       -command => sub { choose_ort('s', $abk, %str_args) });
-	if ($advanced) {
+	if ($args{'-strextrachoosemenuaction'}) {
+	    $args{'-strextrachoosemenuaction'}->();
+	}
+	if (0) { # XXX Habe ich schon seit Jahren nicht genutzt!
 	    $menu->command
 	      (-label => Mfmt("Liste der %s neu erstellen",
 			      $str_attrib{$abk}->[ATTRIB_PLURAL]),
@@ -15315,6 +15319,8 @@ sub menu_entry_choose_ort {
 	      (-label => Mfmt("Schnelles Update der %s",
 			      $str_attrib{$abk}->[ATTRIB_PLURAL]),
 	       -command => sub { plot('str',$abk, FastUpdate => 1); });
+	}
+	if ($advanced) {
 	    $menu->command
 	      (-label => "Lazy drawing",
 	       -command => sub {
@@ -15354,7 +15360,10 @@ sub menu_entry_choose_ort {
 	}
 	$menu->command(-label => Mfmt("%s auswählen", $p_attrib{$abk}->[ATTRIB_SINGULAR]),
 		       -command => sub { choose_ort('p', $abk, %p_args) });
-	if ($advanced) {
+	if ($args{'-pextrachoosemenuaction'}) {
+	    $args{'-pextrachoosemenuaction'}->();
+	}
+	if (0) { # XXX Habe ich schon seit Jahren nicht genutzt!
 	    $menu->command
 	      (-label => Mfmt("Liste der %s neu erstellen", $p_attrib{$abk}->[ATTRIB_PLURAL]),
 	       -command => sub { choose_ort('p', $abk, -rebuild => 1) });
@@ -15367,6 +15376,8 @@ sub menu_entry_choose_ort {
 	      (-label => Mfmt("Schnelles Update der %s",
 			      $p_attrib{$abk}->[ATTRIB_PLURAL]),
 	       -command => sub { plot('p',$abk, FastUpdate => 1); });
+	}
+	if ($advanced) {
 	    $menu->command
 	      (-label => "Lazy drawing",
 	       -command => sub {
