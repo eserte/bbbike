@@ -22,6 +22,37 @@ Legend:
 
 =over
 
+=item * (M4)
+
+Aufteilen des Strassen-Menues. Vorschlag:
+
+ Strassen-Layer
+  Strasse auswaehlen
+  Erweiterte Auswahl (untereinander!)
+  Strassenkategorien
+  Strassennamen
+  Attributierung:
+  Radwege + Kategorien (comments_cyclepath geht hier ein)
+  Hoehenangaben ?
+  Ampeln
+  Strassenqualitaet + Kategorien
+  Sonstige Beeintraechtigungen + Kategorien ?
+  Unbeleuchtete Straßen
+  Vorfahrt
+  Gruene Wege ?
+  Steigungen (comments_mount geht hier ein)
+  Kfz-Verkehrsdichte (comments_kfzverkehr)
+  Strassenbahnen (comments_tram)
+  Routing-Hilfen (comments_path)
+  Sonstige Kommentare (comments_misc)
+ 
+ Andere Wege-Layer
+  Radrouten (comments_route)
+  Radrouten auswaehlen
+  Faehren (comments_ferry geht hier ein)
+  Faehren auswaehlen
+  Fragezeichen
+
 =item * (H2)
 
 Bug: see t/strassennetz.t
