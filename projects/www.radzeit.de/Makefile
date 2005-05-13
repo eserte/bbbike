@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.60 2005/05/09 22:59:15 eserte Exp $
+# $Id: Makefile,v 1.61 2005/05/12 23:35:30 eserte Exp $
 #
 
 # Targets:
@@ -277,7 +277,8 @@ prepare-bbbike-dist-prog-bbbike:	\
 				prepare-bbbike-dist-prog-bbbike-tmp \
 				prepare-bbbike-dist-prog-bbbike-t \
 				prepare-bbbike-dist-prog-bbbike-miscsrc \
-				prepare-bbbike-dist-prog-bbbike-html
+				prepare-bbbike-dist-prog-bbbike-html \
+				prepare-bbbike-dist-prog-bbbike-images
 
 prepare-bbbike-dist-prog-bbbike-copy:
 	cd ${BBBIKE_ROOT_DIR} && ${MAKE} distcheck
@@ -304,6 +305,11 @@ prepare-bbbike-dist-prog-bbbike-htdocs:
 	[ -e ${CURDIR}/$(HTDOCS)/BBBike ] || \
 	    ln -s ../BBBike ${CURDIR}/$(HTDOCS)/BBBike
 	@echo "Do 'ln -s ../BBBike ${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/BBBike' manually on server"
+
+prepare-bbbike-dist-prog-bbbike-images:
+	cp -pf ${BBBIKE_ROOT_DIR}/images/stern2005_titel.jpg \
+	       ${CURDIR}/BBBike/images/
+	chmod ugo+r ${CURDIR}/BBBike/images/stern2005_titel.jpg
 
 prepare-bbbike-dist-prog-bbbike-tmp:
 	chmod 777 ${CURDIR}/BBBike/tmp

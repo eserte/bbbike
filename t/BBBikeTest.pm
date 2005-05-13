@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.9 2005/03/28 20:45:09 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.10 2005/05/12 23:17:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,9 @@ package BBBikeTest;
 
 use vars qw(@opt_vars);
 BEGIN {
-    @opt_vars = qw($logfile $do_xxx $do_display $pdf_prog $cgiurl $debug);
+    @opt_vars = qw($logfile $do_xxx $do_display $pdf_prog $cgiurl $debug
+		   $cgidir
+		  );
 }
 
 use strict;
@@ -44,9 +46,16 @@ if (defined $ENV{BBBIKE_TEST_CGIURL}) {
     $cgiurl = 'http://www/bbbike/cgi/bbbike.cgi';
 }
 
+if (defined $ENV{BBBIKE_TEST_CGIDIR}) {
+    $cgidir = $ENV{BBBIKE_TEST_CGIDIR};
+} else {
+    $cgidir = 'http://www/bbbike/cgi';
+}
+
 sub get_std_opts {
     my(@what) = @_;
     my %std_opts = ("cgiurl=s"  => \$cgiurl,
+		    "cgidir=s"  => \$cgidir,
 		    "xxx"       => \$do_xxx,
 		    "display!"  => \$do_display,
 		    "debug!"    => \$debug,

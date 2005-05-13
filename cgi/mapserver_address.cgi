@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.18 2005/04/05 22:46:08 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.22 2005/05/12 23:16:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -157,7 +157,9 @@ sub resolve_street {
     require BBBikeRouting;
     my $br = BBBikeRouting->new;
     $br->init_context;
-    $br->Context->UseTelbuchDBApprox(1); # XXX experimental!!!
+    ## XXX not enabled by default, because there is no db
+    ## on radzeit for example
+    #$br->Context->UseTelbuchDBApprox(1); # XXX experimental!!!
     my $start = $br->Start;
     $start->Street(param("street"));
     $start->Citypart(param("citypart") || undef);
@@ -277,13 +279,18 @@ sub resolve_fulltext {
     }
 
     my @res;
-    my @files = grep { !/(relation_gps|coords\.data|ampelschaltung|-orig|-info|~|\.st|\.desc|RCS|CVS)$/ } glob("$dir/*");
+    my @files = grep { -f $_ }
+                grep { !/(relation_gps|coords\.data|ampelschaltung|-orig|-info|~|\.st|\.desc|RCS|CVS)$/ }
+		glob("$dir/*");
     die "No files in directory $dir" if !@files; # should not happen
-    my @cmd = ("fgrep", "-q", "-i", "--", param("searchterm"), @files);
+    my @cmd = ("fgrep", "-i", "--", param("searchterm"), @files);
     #warn "Cmd: @cmd\n";
     open(GREP, "-|") or do {
+	require File::Spec;
+	open(STDERR, ">" . File::Spec->devnull)
+	    or warn "Can't redirect stderr to /dev/null: $!";
 	exec @cmd;
-	die $!;
+	die $!; # XXX actually not visible because of redirect
     };
     while(<GREP>) {
 	my($file, $line) = split /:/, $_, 2;
@@ -544,8 +551,12 @@ sub file_to_icon {
     exists $map{$file} ? $map{$file} . ".gif" : undef;
 }
 
-__END__
+# No __END__ !
+
+=comment
 
 Calling example:
 
 http://<path to mapserver_address.cgi>?coords=5775,11631;layer=bahn;layer=flaechen;layer=route;layer=gewaesser;layer=sehenswuerdigkeit;width=2000
+
+=cut

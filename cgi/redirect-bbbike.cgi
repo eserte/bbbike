@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: redirect-bbbike.cgi,v 1.7 2005/03/24 07:30:31 eserte Exp $
+# $Id: redirect-bbbike.cgi,v 1.8 2005/05/13 00:04:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -38,4 +38,4 @@ if (query_string() ne "") {
 }
 print redirect($redirect);
 
-__END__
+# No __END__ !

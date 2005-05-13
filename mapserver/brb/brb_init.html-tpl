@@ -13,8 +13,19 @@
 <html>
 <head><title>BBBike &amp; MapServer</title>
 <meta http-equiv="refresh" content="0; URL=[% redirect_url | html_entity %]">
+<script>
+var dots_element;
+function progress() {
+  dots_element.innerHTML = dots_element.innerHTML + ".";
+}
+function init() {
+  dots_element = document.getElementById("dots");
+  if (dots_element) {
+    window.setInterval("progress()", 400);
+  }
+}
+</script>
 </head>
 <body bgcolor="#FFFFFF">
-<table summary="" width="100%" height="100%"><tr><td align="center" style="font-famil
-y:sans-serif;">Automatische Weiterleitung auf <a href="[% redirect_url | html_entity %]">Mapserver BBBike Berlin/Brandenburg</a> ...</td></tr></table>
+<table summary="" width="100%" height="100%"><tr><td align="center" style="font-family:sans-serif;">Automatische Weiterleitung auf <a href="[% redirect_url | html_entity %]">Mapserver BBBike Berlin/Brandenburg</a> <span id="dots">...</span></td></tr></table>
 </body></html>

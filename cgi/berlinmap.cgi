@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: berlinmap.cgi,v 2.6 2000/04/12 23:21:42 eserte Exp $
+# $Id: berlinmap.cgi,v 2.8 2005/05/12 21:14:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-1999 Slaven Rezic. All rights reserved.
@@ -205,7 +205,9 @@ sub httpimgname {
     "$wwwdir/" . imgname(@_);
 }
 
-__END__
+# No __END__ !
+
+=comment
 
 Verwendung von Javascript:
 - 640x600-Bilder (ohne Border) erzeugen
@@ -214,3 +216,5 @@ Verwendung von Javascript:
   noch immer blank.gif ist, wird das aktuelle Bild geladen. Kartenteil
   zentrieren
   (onMouseOver, images, scroll)
+
+=cut
