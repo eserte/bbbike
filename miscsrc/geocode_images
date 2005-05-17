@@ -4,7 +4,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 use File::Spec;
 use File::Basename;
@@ -45,7 +45,7 @@ sub get_image_location {
 	my $exif = ImageInfo($file);
 	if ($exif) {
 	    my $date = $exif->{DateTimeOriginal} || $exif->{CreateDate};
-	    if (defined $date && $date =~ /^(\d{4}):(\d{2}):(\d{2}) (\d{2}):(\d{2}):(\d{2})$/) {
+	    if (defined $date && $date =~ /^(\d{4}):(\d{2}):(\d{2}) (\d{2}):(\d{2}):(\d{2})/) {
 		($y,$m,$d,$H,$M,$S) = ($1,$2,$3,$4,$5,$6);
 	    }
 	}
