@@ -8,7 +8,7 @@
 
 You can find the newest distribution file of BBBike in the directory
 L<http://sourceforge.net/project/showfiles.php?group_id=19142> . The current source version is
-L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz> .
+L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz> .
 
 =head2 FreeBSD
 
@@ -58,8 +58,8 @@ After that, you can start the program with
 
 	perl bbbike
 
-To compile some XS modules (this is optional) and install the panel
-entry for KDE, type:
+To compile some XS modules (this is optional and needs a C compiler)
+and install the panel entry for KDE, type:
 
 
 	perl install.pl
@@ -83,7 +83,7 @@ BBBike and Perl need approx. 32 MB hard disk space.
 
 
 Download the file
-L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.zip> and 
+L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.exe> and 
 extract this file
 with WinZip. To start BBBike just click on the icon C<bbbike.bat> in
 the directory BBBike-3.14-Windows.
@@ -135,7 +135,7 @@ to download and install perl/Tk. To leave the ppm program, type
 =item *
 
 Download
-C<BBBike-3.14.tar.gz|http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.zip>
+C<BBBike-3.14.tar.gz|http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.exe>
 and extract this file with 
 WinZip. The unpacked directory will not move in the later
 installation.
@@ -188,7 +188,7 @@ L<http://groups.google.com>).
 
 The following instructions are from Wolfram Kroll:
 
-Get L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz> and (from
+Get L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz> and (from
 L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
 
 =over
@@ -286,6 +286,11 @@ To use the CVS repository from command line type the following:
     cvs -q update -d
 
 The CVS repository is always up-to-date and also contains the current data.
+
+To update only the data part of BBBike, just download the current data
+as a ZIP file from L<http://www.radzeit.de/cgi-bin/bbbike-data.cgi>. The ZIP file has to be
+extracted in the BBBike program directory (Windows: in
+C<C:\Programme\BBBike\bbbike>).
 
 =head1 DOCUMENTATION
 

@@ -1,4 +1,4 @@
-# $Id: comments_path-orig,v 4.13 2005/05/08 22:00:30 eserte Exp $
+# $Id: comments_path-orig,v 4.13 2005/05/08 22:00:30 eserte Exp eserte $
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C
 # CP   : wie "CP;", Kommentar gültig für beide Fahrtrichtungen
 # CP2; : Kommentar an Punkt A bei Fahrt von A nach B
@@ -124,3 +124,7 @@ Als Julius-Leber-Brücke ausgeschildert	CP; 7603,8911 7570,8863 7548,8879
 Falkenwalde - Eickstedt: nicht den Eickstädter Weg nehmen, sondern erst den nächsten (nicht ausgeschilderten) Weg nach links	CP; 51235,97275 52505,97610 52471,98189
 #: note: nur mit einem "t", wohingegen der Ortseil auf der Uckermark-Karte mit zwei "t" geschrieben wird:
 Ausgeschildert: Matheshöher Weg	CP2; 49498,96416 49056,96700
+#: by: Andreas M.: vvv
+Ausgeschildert: Britzer Str.	CP2; 33021,51828 33448,51826
+Ausgeschildert: Blütenberger Weg	CP2; 36885,54257 34819,54697
+#: by: ^^^

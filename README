@@ -8,7 +8,7 @@
 
 Die aktuellste BBBike-Archivdatei findet man im Verzeichnis
 L<http://sourceforge.net/project/showfiles.php?group_id=19142> . Die aktuelle Sourcedatei ist
-L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz> .
+L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz> .
 
 =head2 FreeBSD
 
@@ -65,7 +65,9 @@ das Programm gestartet werden. Mit
 	perl install.pl
 
 kann optional eine Compilierung von einigen XS-Modulen durchgeführt
-werden sowie Einträge für KDE erzeugt werden.
+werden sowie Einträge für KDE erzeugt werden. Für das Compilieren
+ist ein C-Compiler (z.B. gcc), der mittlerweile nicht bei allen
+Linux-Versionen standardmäßig installiert wird, notwendig.
 
 Statt Bundle::BBBike_small kann auch Bundle::BBBike verwendet werden.
 Damit werden wesentlich mehr Module installiert, die teilweise nur für
@@ -83,7 +85,7 @@ ausgeführt werden. Dazu ist das Perl-Modul L<Inline::C> notwendig.
 
 BBBike und Perl benötigen ca. 32 MB an Festplattenspeicher.
 
-Die Datei L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.zip>
+Die Datei L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.exe>
 laden und mit WinZip an einer
 beliebigen Stelle auf der Festplatte auspacken. Zum Starten von BBBike
 muss das Icon C<bbbike.bat> im Verzeichnis BBBike-3.14-Windows
@@ -135,7 +137,7 @@ wird das ppm-Programm verlassen.
 
 =item *
 
-L<BBBike-3.14.tar.gz|http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.zip>
+L<BBBike-3.14.tar.gz|http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.exe>
 downloaden und mit WinZip auspacken. Das
 ausgepackte Verzeichnis wird später nicht mehr verschoben.
 
@@ -190,7 +192,7 @@ von Perl/Tk auf Mac OS X bekommt man in der comp.lang.perl.tk Newsgroup
 
 Folgende Anleitung habe ich von Wolfram Kroll erhalten:
 
-L<http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz> und (von
+L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz> und (von
 L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
 besorgt.
 
@@ -285,6 +287,11 @@ Von der Kommandozeile muss folgendes eingegeben werden:
     cvs -q update -d
 
 Das CVS wird fast täglich aktualisiert und enthält auch die aktuellen Daten.
+
+Um nur die Daten zu aktualisieren, kann man sich die aktuellen Daten
+als ZIP-Datei von L<http://www.radzeit.de/cgi-bin/bbbike-data.cgi> holen. Die ZIP-Datei
+muss im BBBike-Programmverzeichnis (bei Windows unter
+C<C:\Programme\BBBike\bbbike>) ausgepackt werden.
 
 =head1 DOKUMENTATION
 

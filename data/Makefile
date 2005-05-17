@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.46 2005/05/11 23:34:25 eserte Exp $
+# $Id: Makefile,v 2.47 2005/05/17 21:24:53 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -914,9 +914,11 @@ ${PERSISTENTTMPDIR}/crossings_gewaesser_noignore.bbd:	\
 
 check-Berlin.coords.data:	.check_Berlin_coords_data
 
+# Check for sortedness and unique records:
 .check_Berlin_coords_data: Berlin.coords.data
 	env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} -c Berlin.coords.data || \
 	    ( env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} Berlin.coords.data | diff -u - Berlin.coords.data; false )
+	perl -nle '@l=split /\|/; if (++$$x{"@l[0..2]"} > 1) { die "@l" }' Berlin.coords.data
 	@touch $@
 
 check-nearest:	${PERSISTENTTMPDIR}/check_nearest.bbd do-check-nearest

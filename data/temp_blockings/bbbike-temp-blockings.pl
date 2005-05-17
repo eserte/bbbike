@@ -841,7 +841,7 @@ userdel	q4 8370,25539 8182,25608
 EOF
      },
      { from  => 1105830000, # 2005-01-16 00:00
-       until => 1117231200, # 2005-05-28 00:00
+       until => 1116363037, # aufgehoben XXX 2005-05-28 00:00
        text  => 'K 6413; (Wriezener Straße); OL Buckow, zw. Weinbergsweg u. Ringstr. Kanal- u. Straßenbau Vollsperrung 17.01.2005-27.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -955,13 +955,13 @@ userdel	q4 28100,70162 26500,71425
 userdel	q4 26500,71425 25875,71662
 EOF
      },
-     { from  => 1098136800, # 2004-10-19 00:00
-       until => 1098342189, # was 1100905200/2004-11-20 00:00
-       text  => 'L 34; (Philipp-Müller-Str.); OL Strausberg Fahrbahninstandsetzung Vollsperrung 20.10.2004-19.11.2004 ',
-       type  => 'gesperrt',
+     { from  => 1115503200, # 2005-05-08 00:00
+       until => 1117576800, # 2005-06-01 00:00
+       text  => 'L 34; (Philip-Müller-Straße); OL Strausberg, zw. Feuerwehr und Nordkreuzung Fahrbahninstandsetzung halbseitig gesperrt; Einbahnstraße 09.05.2005-31.05.2005 ',
+       type  => 'handicap',
        data  => <<EOF,
-userdel	2 43553,20466 43584,20871
-userdel	2 43553,20466 43110,19818
+userdel	q4 43553,20466 43584,20871
+userdel	q4 43553,20466 43110,19818
 EOF
      },
      { from  => 1097177672, # 2004-10-07 21:34
@@ -1717,9 +1717,9 @@ EOF
 userdel	q4; 21093,9179 21351,9066
 EOF
      },
-     { from  => 1114034400, # 2005-04-21 00:00
-       until => 1117317600, # 2005-05-29 00:00
-       text  => 'B 101; (Berliner Str.); OD Trebbin, Knoten Bahnhofstr. Straßenbauarbeiten Vollsperrung 22.04.2005-28.05.2005 ',
+     { from  => 1116194400, # 2005-05-16 00:00
+       until => 1122847200, # 2005-08-01 00:00
+       text  => 'B 101; (Berliner Str.); OD Trebbin Straßenbauarbeiten Vollsperrung 17.05.2005-31.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -1623,-21150 -1887,-21501
@@ -1870,6 +1870,39 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 17363,11972 17249,11802
+EOF
+     },
+     { from  => 1116280800, # 2005-05-17 00:00
+       until => 1141167600, # 2006-03-01 00:00
+       text  => 'B 115; (Forster Str.); OD Döbern grundhafter Straßenausbau Vollsperrung 18.05.2005-28.02.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 93524,-86350 93217,-85769
+EOF
+     },
+     { from  => 1116280800, # 2005-05-17 00:00
+       until => 1117663200, # 2005-06-02 00:00
+       text  => 'K 6425; Zw. Neuenhagen und Altlandsberg Abriss Brücke ü. BAB Vollsperrung 18.05.2005-01.06.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 30768,15431 29743,14143
+EOF
+     },
+     { from  => 1116367200, # 2005-05-18 00:00
+       until => 1116885600, # 2005-05-24 00:00
+       text  => 'L 30; Friedrichstraße 13.Heimatfest Erkner Vollsperrung 19.05.2005-23.05.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 34443,1951 34250,2546
+userdel	q4 34250,2546 34175,2637
+EOF
+     },
+     { from  => 1117317600, # 2005-05-29 00:00
+       until => 1128117600, # 2005-10-01 00:00
+       text  => 'L 86; (Lehniner Str.); OD Damsdorf Straßenbau Vollsperrung 30.05.2005-30.09.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -32682,-7140 -32645,-6220
 EOF
      },
     );

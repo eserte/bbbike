@@ -1333,9 +1333,9 @@ BBBike wird zur Zeit unter FreeBSD 4.9 mit perl 5.8.0
 und den neuesten Perl/Tk-Versionen (z.Zt. 800.025 und 804.025) entwickelt.
 
 TestlE<auml>ufe wurden und werden von Zeit zu Zeit auf Windows
-95/98/NT/2000 und Linux (Debian 3.0, RedHat 8.0) gefahren. Dabei
-werden meistens auch die aktuellen Stable-Versionen von Perl und Tk
-verwendet.
+95/98/NT/2000/XP, Mac OS X und Linux (Debian 3.0, RedHat 8.0)
+gefahren. Dabei werden meistens auch die aktuellen Stable-Versionen
+von Perl und Tk verwendet.
 
 Es wird versucht, auch zu der E<auml>lteren perl-Version 5.00503
 kompatibel zu bleiben. Dabei könnten aber einige Features auf der
@@ -1344,9 +1344,6 @@ Strecke bleiben. Die GrundfunktionalitE<auml>t ist aber vorhanden.
 perl 5.004 und älter sowie Tk 400 und älter wird nicht mehr
 unterstützt. Für diese Versionen sollte ein älteres BBBike (Version
 2.xx) verwendet werden.
-
-Freiwillige zur Portierung von Perl/Tk auf die Macintosh-Plattform
-werden gesucht :-)
 
 =head1 ANERKENNUNG
 

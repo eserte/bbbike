@@ -1,156 +1,7 @@
 @temp_blocking = ();
-$#temp_blocking = 2;
+$#temp_blocking = 122;
 push @temp_blocking,
 (
-       {
-         'until' => 1116280616,
-         'text' => 'Straßenfest rund um den Blücherplatz',
-         'from' => 1115848800,
-         'data' => 'userdel	2 9522,10017 9811,10055
-userdel	2 9522,10017 9444,10000
-userdel	2 9592,10174 9812,10211
-userdel	2 9401,10199 9592,10174
-userdel	2 9579,10122 9536,10064
-userdel	2 9579,10122 9689,10124
-userdel	2 9827,10120 9811,10055
-userdel	2 9827,10120 9849,10202
-userdel auto	3 9593,10238 9592,10174 9579,10122
-userdel auto	3 10002,9948 9811,10055 9837,9856
-userdel auto	3 10002,9948 9811,10055 9689,10124
-userdel auto	3 9837,9856 9811,10055 10002,9948
-userdel auto	3 9837,9856 9811,10055 9689,10124
-userdel auto	3 9689,10124 9811,10055 10002,9948
-userdel auto	3 9689,10124 9811,10055 9837,9856
-userdel auto	3 9579,10122 9592,10174 9593,10238
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       {
-         'until' => 1117231200,
-         'text' => 'K 6413; (Wriezener Straße); OL Buckow, zw. Weinbergsweg u. Ringstr. Kanal- u. Straßenbau Vollsperrung 17.01.2005-27.05.2005 ',
-         'from' => 1105830000,
-         'data' => 'userdel	q4 55664,19342 55558,19957
-',
-         'type' => 'handicap'
-       },
-       undef,
-       undef,
        {
          'until' => 1117576800,
          'text' => 'L 40; (Großbeeren-Güterfelde); zw. Großbeeren u. Neubeeren Neubau Bauwerk Vollsperrung 24.09.2004-31.05.2005 ',
@@ -176,7 +27,15 @@ userdel	q4 49039,44131 49691,43812
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1117576800,
+         'text' => 'L 34; (Philip-Müller-Straße); OL Strausberg, zw. Feuerwehr und Nordkreuzung Fahrbahninstandsetzung halbseitig gesperrt; Einbahnstraße 09.05.2005-31.05.2005 ',
+         'from' => 1115503200,
+         'data' => 'userdel	q4 43553,20466 43584,20871
+userdel	q4 43553,20466 43110,19818
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -388,9 +247,9 @@ userdel	q4 -18080,-12637 -17374,-13449
          'type' => 'handicap'
        },
        {
-         'until' => 1117317600,
-         'text' => 'B 101; (Berliner Str.); OD Trebbin, Knoten Bahnhofstr. Straßenbauarbeiten Vollsperrung 22.04.2005-28.05.2005 ',
-         'from' => 1114034400,
+         'until' => 1122847200,
+         'text' => 'B 101; (Berliner Str.); OD Trebbin Straßenbauarbeiten Vollsperrung 17.05.2005-31.07.2005 ',
+         'from' => 1116194400,
          'data' => 'userdel	q4 -1623,-21150 -1887,-21501
 ',
          'type' => 'handicap'
@@ -490,6 +349,39 @@ userdel	q4 1872,-1118 1680,-1011
          'text' => 'Rosenfelder Straße Richtung Frankfurter Allee zwischen Skandinavische Straße und Frankfurter Allee Baustelle, Straße gesperrt, Dauer: 09.05.2005, 09.00 Uhr bis 09.06.2005 ',
          'from' => 1115535600,
          'data' => 'userdel	q4; 17363,11972 17249,11802
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1141167600,
+         'text' => 'B 115; (Forster Str.); OD Döbern grundhafter Straßenausbau Vollsperrung 18.05.2005-28.02.2006 ',
+         'from' => 1116280800,
+         'data' => 'userdel	q4 93524,-86350 93217,-85769
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1117663200,
+         'text' => 'K 6425; Zw. Neuenhagen und Altlandsberg Abriss Brücke ü. BAB Vollsperrung 18.05.2005-01.06.2005 ',
+         'from' => 1116280800,
+         'data' => 'userdel	2 30768,15431 29743,14143
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1116885600,
+         'text' => 'L 30; Friedrichstraße 13.Heimatfest Erkner Vollsperrung 19.05.2005-23.05.2005 ',
+         'from' => 1116367200,
+         'data' => 'userdel	q4 34443,1951 34250,2546
+userdel	q4 34250,2546 34175,2637
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1128117600,
+         'text' => 'L 86; (Lehniner Str.); OD Damsdorf Straßenbau Vollsperrung 30.05.2005-30.09.2005 ',
+         'from' => 1117317600,
+         'data' => 'userdel	q4 -32682,-7140 -32645,-6220
 ',
          'type' => 'handicap'
        }

@@ -14,6 +14,7 @@
 ## perlreplace #BBBIKEVAR_DISPLAY_DISTDIR#	$BBBike::DISPLAY_DISTDIR
 ## perlreplace #BBBIKEVAR_DISTFILE_SOURCE#	$BBBike::DISTFILE_SOURCE
 ## perlreplace #BBBIKEVAR_DISTFILE_WINDOWS#	$BBBike::DISTFILE_WINDOWS
+## perlreplace #BBBIKEVAR_UPDATE_DATA_CGI#	$BBBike::BBBIKE_UPDATE_DATA_CGI
 ## perlreplace #BBBIKEVER#  $BBBike::STABLE_VERSION
 ## perlreplace #BBBIKEWINVER#  $BBBike::WINDOWS_VERSION
 ## perlreplace #MAIL#       $BBBike::EMAIL
@@ -22,7 +23,7 @@
 ## perlreplace #HTTPCVS#    '"http://sourceforge.net/cvs/?group_id=19142"'
 ## perlreplace #CVSREPO#    '":pserver:anonymous\@cvs.bbbike.sourceforge.net:/cvsroot/bbbike"'
 ## dnl
-## dnl $Id: README.spp,v 2.34 2005/05/11 23:36:20 eserte Exp $
+## dnl $Id: README.spp,v 2.35 2005/05/17 23:23:13 eserte Exp $
 ## dnl strpp source of README
 ## dnl
 =head1 README
@@ -706,6 +707,21 @@ Das CVS wird fast täglich aktualisiert und enthält auch die aktuellen Daten.
 
 ## only EN
 The CVS repository is always up-to-date and also contains the current data.
+
+## yes
+
+
+## only DE
+Um nur die Daten zu aktualisieren, kann man sich die aktuellen Daten
+als ZIP-Datei von L<#BBBIKEVAR_UPDATE_DATA_CGI#> holen. Die ZIP-Datei
+muss im BBBike-Programmverzeichnis (bei Windows unter
+C<C:\Programme\BBBike\bbbike>) ausgepackt werden.
+
+## only EN
+To update only the data part of BBBike, just download the current data
+as a ZIP file from L<#BBBIKEVAR_UPDATE_DATA_CGI#>. The ZIP file has to be
+extracted in the BBBike program directory (Windows: in
+C<C:\Programme\BBBike\bbbike>).
 
 ## yes
 
