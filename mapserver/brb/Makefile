@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.27 2005/05/11 23:41:00 eserte Exp $
+# $Id: Makefile,v 1.28 2005/05/17 07:14:58 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -178,6 +178,8 @@ TPAGE?=			tpage --compile_ext=.ttc --compile_dir=/tmp
 TPAGE?=			tpage
 .endif
 
+SCOPES=		brb b inner-b wide p
+
 # All Template-Toolkit variables
 ALL_TPL_DEFINES=\
 	--define MAPSERVER_DIR="$(MAPSERVER_DIR)" \
@@ -204,7 +206,9 @@ ALL_TPL_DEFINES=\
 	--define EDITWARNHTML="<!-- DO NOT EDIT. Created automatically from ${.ALLSRC:M*tpl} -->" \
 	--define EDITWARNJS="/* DO NOT EDIT. Created automatically from ${.ALLSRC:M*tpl} */" \
 	--define EDITWARNMAP="\#\# DO NOT EDIT. Created automatically from ${.ALLSRC:M*tpl}" \
-	--define SMALLDEVICE=0
+	--define SMALLDEVICE=0 \
+	--define SCOPES_STRING="$(SCOPES)" \
+
 
 # Distfiles for dist-* rules
 DISTFILES=\
@@ -239,7 +243,8 @@ DISTFILES_STERNFAHRT_2005=\
 	sternfahrt2005/sternfahrt2005.html-tpl \
 	sternfahrt2005/sternfahrt2005_init.html-tpl \
 	sternfahrt2005/after_strassen_annotations.inc \
-	sternfahrt2005/after_marker.inc
+	sternfahrt2005/after_marker.inc \
+	sternfahrt2005/sternfahrt2005.inc
 
 RADZEIT_DIST_DIR=/tmp/radzeit_mapserver_dist
 SPIFF_DIST_DIR=/home/e/eserte/src/bbbike/mapserver/brb-spiff
@@ -256,7 +261,8 @@ ADD_BBBIKEVAR_VARS=\
 	BBBIKE_SF_WWW \
 	EMAIL \
 
-MAPFILES=	brb.map brb-b.map brb-inner-b.map brb-wide.map brb-p.map
+MAPFILES=	$(SCOPES:S/^/brb-/:S/$/.map/)
+MAPFILES_EXTRA=	brb.map
 HTMLFILES=	brb.html brb_init.html brb.js help.html query_header.html query_footer.html index.html
 ######################################################################
 
@@ -275,7 +281,7 @@ HTMLFILES=	brb.html brb_init.html brb.js help.html query_header.html query_foote
 all:	build-all
 
 clean:
-	rm -f ${MAPFILES} ${HTMLFILES}
+	rm -f ${MAPFILES} ${MAPFILES_EXTRA} ${HTMLFILES}
 
 build-all: Makefile.${TARGET}.inc maps html misc .WAIT .built_for.${TARGET}
 
@@ -283,7 +289,7 @@ build-all: Makefile.${TARGET}.inc maps html misc .WAIT .built_for.${TARGET}
 	rm -f .built_for.*
 	touch .built_for.${TARGET}
 
-maps:	${MAPFILES}
+maps:	${MAPFILES} ${MAPFILES_EXTRA}
 
 html:	${HTMLFILES}
 
@@ -340,25 +346,31 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile ${ABS_LOCAL_BBBIKE_DIR}
 	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 
-brb.map:	.brb.map mkroutemap
-	${BRBDIR}/mkroutemap -force -scope region .brb.map $@
-	chmod ugo+r $@
+brb.map:	brb-brb.map
+	[ -L $@ ] || ln -s brb-brb.map $@
 
-brb-b.map:	.brb.map mkroutemap
-	${BRBDIR}/mkroutemap -force -scope city .brb.map $@
+.for scope in $(SCOPES)
+brb-$(scope).map:	.brb.map mkroutemap
+	${BRBDIR}/mkroutemap -force -scope $(scope) .brb.map $@
 	chmod ugo+r $@
+.endfor
 
-brb-inner-b.map:	.brb.map mkroutemap
-	${BRBDIR}/mkroutemap -force -scope innercity .brb.map $@
-	chmod ugo+r $@
+# XXX del:
+# brb-b.map:	.brb.map mkroutemap
+# 	${BRBDIR}/mkroutemap -force -scope city .brb.map $@
+# 	chmod ugo+r $@
 
-brb-wide.map:	.brb.map mkroutemap
-	${BRBDIR}/mkroutemap -force -scope wideregion .brb.map $@
-	chmod ugo+r $@
+# brb-inner-b.map:	.brb.map mkroutemap
+# 	${BRBDIR}/mkroutemap -force -scope innercity .brb.map $@
+# 	chmod ugo+r $@
 
-brb-p.map:	.brb.map mkroutemap
-	${BRBDIR}/mkroutemap -force -scope potsdam .brb.map $@
-	chmod ugo+r $@
+# brb-wide.map:	.brb.map mkroutemap
+# 	${BRBDIR}/mkroutemap -force -scope wideregion .brb.map $@
+# 	chmod ugo+r $@
+
+# brb-p.map:	.brb.map mkroutemap
+# 	${BRBDIR}/mkroutemap -force -scope potsdam .brb.map $@
+# 	chmod ugo+r $@
 
 brb-ipaq.map:
 
@@ -377,16 +389,27 @@ STERNFARTEN= 2003 2004 2005
 # XXX Makefile problems?!
 
 #.for year in 2004 2003 # ${STERNFAHRTEN}
-sternfahrt2005:	sternfahrt2005/sternfahrt2005.html \
+
+STERNFAHRT2005_TARGETS=sternfahrt2005/sternfahrt2005.html \
+		sternfahrt2005.html \
 		sternfahrt2005/sternfahrt2005_init.html \
-		sternfahrt2005/sternfahrt2005-b.map \
+		sternfahrt2005_init.html \
 		sternfahrt2005/sternfahrt2005.map \
+		sternfahrt2005.map \
 		data/sternfahrt2005.dbf \
 		data/sternfahrt2005.shp \
 		data/sternfahrt2005.shx \
 		data/treffpunkte2005.dbf \
 		data/treffpunkte2005.shp \
 		data/treffpunkte2005.shx
+
+.for scope in $(SCOPES)
+STERNFAHRT2005_TARGETS+=sternfahrt2005/sternfahrt2005-$(scope).map
+# and the symlink:
+STERNFAHRT2005_TARGETS+=sternfahrt2005-$(scope).map
+.endfor
+
+sternfahrt2005:	$(STERNFAHRT2005_TARGETS)
 
 STERNFAHRT_2005_DEFINES=\
 	--define MAPNAME="sternfahrt2005" \
@@ -400,22 +423,42 @@ sternfahrt2005/.sternfahrt2005.map:	brb.map-tpl Makefile Makefile.${TARGET}.inc
 	$(TPAGE) $(ALL_TPL_DEFINES) $(STERNFAHRT_2005_DEFINES) brb.map-tpl > $@
 	chmod ugo+r $@
 
-sternfahrt2005/sternfahrt2005-b.map:	sternfahrt2005/.sternfahrt2005.map mkroutemap
-	${BRBDIR}/mkroutemap -force -scope city sternfahrt2005/.sternfahrt2005.map sternfahrt2005/sternfahrt2005-b.map || rm -f $@
+.for scope in $(SCOPES)
+sternfahrt2005/sternfahrt2005-$(scope).map:	sternfahrt2005/.sternfahrt2005.map mkroutemap
+	${BRBDIR}/mkroutemap -force -scope $(scope) sternfahrt2005/.sternfahrt2005.map $@ || rm -f $@
 	chmod ugo+r $@
 
-sternfahrt2005/sternfahrt2005.map:	sternfahrt2005/.sternfahrt2005.map mkroutemap
-	${BRBDIR}/mkroutemap -force -scope region sternfahrt2005/.sternfahrt2005.map sternfahrt2005/sternfahrt2005.map || rm -f $@
-	chmod ugo+r $@
+sternfahrt2005-$(scope).map:	sternfahrt2005/sternfahrt2005-$(scope).map
+	[ -L $@ ] || ln -s sternfahrt2005/sternfahrt2005-$(scope).map
+.endfor
+
+sternfahrt2005/sternfahrt2005.map:	sternfahrt2005/sternfahrt2005-brb.map
+	cd sternfahrt2005 && ([ -L sternfahrt2005.map ] || ln -s sternfahrt2005-brb.map sternfahrt2005.map)
+
+sternfahrt2005.map: sternfahrt2005/sternfahrt2005.map
+	[ -L $@ ] || ln -s sternfahrt2005/sternfahrt2005.map
+
+# XXX del:
+# sternfahrt2005/sternfahrt2005.map:	sternfahrt2005/.sternfahrt2005.map mkroutemap
+# 	${BRBDIR}/mkroutemap -force -scope region sternfahrt2005/.sternfahrt2005.map sternfahrt2005/sternfahrt2005.map || rm -f $@
+# 	chmod ugo+r $@
 
 sternfahrt2005/sternfahrt2005.html:	brb.html-tpl sternfahrt2005/sternfahrt2005.inc Makefile Makefile.${TARGET}.inc
 	$(TPAGE) $(ALL_TPL_DEFINES) --define INCLUDE_FILE=sternfahrt2005/sternfahrt2005.inc brb.html-tpl > $@
 	chmod ugo+r $@
 
+sternfahrt2005.html:	sternfahrt2005/sternfahrt2005.html
+	[ -L $@ ] || ln -s sternfahrt2005/sternfahrt2005.html
 
+sternfahrt2005_init.html:	sternfahrt2005/sternfahrt2005_init.html
+	[ -L $@ ] || ln -s sternfahrt2005/sternfahrt2005_init.html
+
+# Can't use relative paths here, because the stuff is copied to
+# .../projects/www.radzeit.de/...
 .for i in sternfahrt2005.dbf sternfahrt2005.shp sternfahrt2005.shx treffpunkte2005.dbf treffpunkte2005.shp treffpunkte2005.shx
 data/$i:
-	cd data && ln -s ../../../misc/sternfahrt_2005/$i
+	cd data && \
+	    [ -L $i ] || ln -s $(ABS_LOCAL_BBBIKE_DIR)/misc/sternfahrt_2005/$i
 .endfor
 
 #.endfor
@@ -450,7 +493,9 @@ httpd.conf:	httpd.conf-tpl Makefile
 # this obsoletes dist-radzeit and dist-radzeit.herceg.de
 #XXX remove the sternfahrt2005 productions to own rule
 dist-any:	# build-all
-	[ ! -d $(RADZEIT_DIST_DIR) ] && mkdir $(RADZEIT_DIST_DIR) || true
+	[ ! -d $(RADZEIT_DIST_DIR) ] || \
+	    rm -rf $(RADZEIT_DIST_DIR)
+	mkdir $(RADZEIT_DIST_DIR)
 	chmod ugo+rx $(RADZEIT_DIST_DIR)
 	$(MAKE) $(MAKEFLAGS) TARGET=$(TARGET) Makefile.${TARGET}.inc
 	cp -pf $(DISTFILES) $(FONTS_LIST) $(RADZEIT_DIST_DIR)

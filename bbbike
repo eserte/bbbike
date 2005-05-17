@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.164 2005/05/11 23:37:11 eserte Exp $
+# $Id: bbbike,v 3.165 2005/05/16 21:14:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -213,7 +213,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.164 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.165 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -2965,12 +2965,13 @@ sub do_iconframe {
 		      -value => MM_SEARCH,
 		      -command => \&set_map_mode,
 		     );
-    $sbm->command(-label => M"Route löschen",
-		  -command => \&delete_route,
-		 );
+    $sbm->cascade(-label => M('Route löschen'));
+    my $sbm_reset_menu_index = $sbm->index("last");
+
     $sbm->command(-label => M"Route wiederherstellen (Undo)",
 		  -command =>\&get_undo_route,
-		  -accelerator => 'Ctrl-_');
+		  -accelerator => 'Ctrl-Z');
+    # XXX Brauche ich diesen Menüpunkt?
     $sbm->command(-label => M"Route aktualisieren",
 		  -command => \&redraw_path);
     $sbm->command(-label => M"Suche wiederholen",
@@ -3334,9 +3335,28 @@ sub do_iconframe {
     my $reset_button = $misc_frame2->Button
 	(image_or_text($reset_photo, 'X'),
 	 -command => \&delete_route,
-	 )->grid(-row => $curr_row, -column => $col++, -sticky => 's');
-    $balloon->attach($reset_button, -msg => M"Route zurücksetzen");
-    $ch->attach($reset_button, -pod => "^\\s*Route zurücksetzen");
+	 )->grid(-row => $curr_row, -column => $col, -sticky => 's');
+    $balloon->attach($reset_button, -msg => M"Route löschen");
+    $ch->attach($reset_button, -pod => "^\\s*Route löschen");
+    my $resetmb = $misc_frame2->Menubutton;
+    my $resetm = $resetmb->Menu(-title => M"Route löschen");
+    $resetm->command(-label => M"Gesamte Route löschen",
+		     -command => \&delete_route,
+		    );
+    $resetm->command(-label => M"Letzten Punkt der Route löschen",
+		     -command => \&mouse_dellast,
+		     -accelerator => '<-',
+		    );
+    $resetm->command(-label => M"Bis zum letzten Via löschen",
+		     -command => \&deltovia,
+		     -accelerator => 'Del',
+		    );
+    menuright($reset_button, $resetm);
+    menuarrow($resetmb, $resetm, $col, -menulabel => M"Route löschen");
+    $col++;
+    # XXX Check this on Windows! XXX The Tk::Menu manual says: do not
+    # use "clone" outside of the Tk library!
+    $sbm->entryconfigure($sbm_reset_menu_index, -menu => $resetm->clone($sbmb, "normal"));
 
     my $reverse_photo = load_photo($misc_frame2,
 				   'rueckweg.' . $default_img_fmt);
@@ -4093,8 +4113,9 @@ sub do_iconframe {
 
     arrange_symframe();
 
-    $ampelstatus_label = $sym_frame->Label(-justify => "left")->grid
-      (-row => 0, -column => 2, -sticky => 'n');
+#XXX del: (now in "Aktuelle Route")
+#    $ampelstatus_label = $sym_frame->Label(-justify => "left")->grid
+#      (-row => 0, -column => 2, -sticky => 'n');
 
 ## DEBUG_BEGIN
 #mymstat("iconframe: bindings");
@@ -5973,7 +5994,7 @@ sub set_bindings {
     if ($right_is_popup) {
 	$popup_menu = $c->Menu(-title => M"Kartenmenü",
 			       -tearoff => $Tk::platform eq 'unix');
-	$popup_menu->command(-label => M"Route löschen",
+	$popup_menu->command(-label => M"Gesamte Route löschen",
 			     -command => sub { delete_route() },
 			    );
 	$popup_menu->command(-label => M"Suche wiederholen",
@@ -12141,23 +12162,16 @@ sub updatekm {
 	    }
 	}
 	if ($ampel_count == 0) {
-	    if ($ampelstatus_label) {
-		$ampelstatus_label->configure(-text => M"Keine Ampeln");
-	    }
+	    $ampelstatus_label_text = M"Keine Ampeln";
 	} else {
 	    $lost_time_s = $ampel_count*$lost_time_per_ampel;
-	    if ($ampelstatus_label) {
-		$ampelstatus_label->configure
-		    (-text => "$ampel_count " .
-		     ($ampel_count > 1 ? M"Ampeln" : M"Ampel") .
-		     " (-" . s2ms($lost_time_s) . ")"
-		    );
-	    }
+	    $ampelstatus_label_text =
+		"$ampel_count " .
+		    ($ampel_count > 1 ? M"Ampeln" : M"Ampel") .
+			" (-" . s2ms($lost_time_s) . " min)";
 	}
     } else {
-	if ($ampelstatus_label) {
-	    $ampelstatus_label->configure(-text => "");
-	}
+	$ampelstatus_label_text = "";
     }
 
     my $lost_time_tragen_s = 0;
@@ -12174,9 +12188,11 @@ sub updatekm {
 		# XXX don't count
 	    }
 	}
-	if ($ampelstatus_label && $lost_time_tragen_s) {
-	    my $oldlabel = $ampelstatus_label->cget(-text);
-	    $ampelstatus_label->configure(-text => $oldlabel . "\n${tragen_count}x tragen (-" . s2ms($lost_time_tragen_s) . ")");
+	if ($lost_time_tragen_s) {
+	    $ampelstatus_label_text .=
+		"\n" .
+		    Mfmt("%dx tragen", $tragen_count) .
+			" (-" . s2ms($lost_time_tragen_s) . " min)";
 	}
     }
 
@@ -12280,7 +12296,7 @@ sub resetroute {
 	}
     }
 
-    $ampelstatus_label->configure(-text => "") if $ampelstatus_label;
+    $ampelstatus_label_text = "";
     $c->delete('route');
     $nr = -1;
     $next_is_undo = 0;
@@ -13957,6 +13973,9 @@ sub show_route_strname {
     if (defined $t) {
 	$bf = $t->Frame->pack(-fill => 'x', -side => "bottom");
 	$f1 = $t->Frame->pack(-fill => 'x', -side => "bottom");
+	$t->Label(-textvariable => \$ampelstatus_label_text,
+		  -anchor => 'w',
+		  -justify => "left")->pack(-fill => 'x', -side => 'bottom');
     }
 
     if (!Tk::Exists($route_strname_lbox)) {

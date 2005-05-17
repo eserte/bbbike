@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.15 2005/04/29 23:51:19 eserte Exp $
+# $Id: vmzrobot.pl,v 1.17 2005/05/16 21:11:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -38,6 +38,8 @@ my $force;
 my $listing_url = "http://www.vmz-berlin.de/vmz/rdstmc.do";
 my $detail_url  = "http://www.vmz-berlin.de/vmz/trafficmap.do"; # XXX not used anymore
 my @output_as;
+
+return 1 if caller;
 
 if (!GetOptions("test" => \$test,
 		"i|inputfile=s" => \$inputfile,
@@ -288,27 +290,40 @@ sub diff {
 sub mark_irrelevant_entries {
     my(@detail_links) = @_;
     for my $detail (@detail_links) {
-	my $ignore = 0;
-	if ($detail->{text} =~ /^A\s*(\d+)/) {
+	mark_irrelevant_entry($detail);
+    }
+}
+
+sub mark_irrelevant_entry {
+    my $detail = shift;
+
+    my $ignore = 0;
+    if ($detail->{text} =~ /^A\s*(\d+)/) {
+	$ignore = 1;
+    } else {
+	my(@comp) = split /,\s+/, $detail->{text};
+	my $Fahrstreifen = qr{(?:Fahrstreifen|Fahrspuren)};
+	my $reduziert    = qr{(?:reduziert|verengt)};
+	my $zahl         = qr{(?:\d|ein|einen|zwei|drei|vier)};
+	my $last_index   = -1;
+	if ($comp[-1] =~
+	    /( Verkehrsbehinderung\s+erwartet
+	    )/xs) {
+	    $last_index = -2;
+	}
+	if ($comp[$last_index] =~
+	    /( Fahrbahn\s+(teilweise\s+)?auf\s+\S+\s+$Fahrstreifen\s+verengt
+	     | $Fahrstreifen\s+gesperrt
+	     | Fahrbahnverengung
+	     | Ampeln\s+ausgefallen
+	     | Ampeln\s+in\s+Betrieb
+	     | auf\s+$zahl\s+$Fahrstreifen\s+$reduziert
+	    )/xs) {
 	    $ignore = 1;
-	} else {
-	    my(@comp) = split /,\s+/, $detail->{text};
-	    my $Fahrstreifen = qr{(?:Fahrstreifen|Fahrspuren)};
-	    my $reduziert    = qr{(?:reduziert|verengt)};
-	    my $zahl         = qr{(?:\d|ein|einen|zwei|drei|vier)};
-	    if ($comp[-1] =~ /( Fahrbahn\s+(teilweise\s+)?auf\s+\S+\s+$Fahrstreifen\s+verengt
-			      | $Fahrstreifen\s+gesperrt
-			      | Fahrbahnverengung
-			      | Ampeln\s+ausgefallen
-			      | Ampeln\s+in\s+Betrieb
-			      | auf\s+$zahl\s+$Fahrstreifen\s+$reduziert
-			      )/xs) {
-		$ignore = 1;
-	    }
 	}
-	if ($ignore) {
-	    push @{ $detail->{_state} }, "IGNORE";
-	}
+    }
+    if ($ignore) {
+	push @{ $detail->{_state} }, "IGNORE";
     }
 }
 
@@ -348,3 +363,6 @@ mv -f /tmp/newvmz.yaml /tmp/vmz.yaml
 ./vmzrobot.pl -old /tmp/oldvmz.yaml -i /tmp/vmz.yaml -diffcount || \
    (./vmzrobot.pl -old /tmp/oldvmz.yaml -i /tmp/vmz.yaml -f -outputas bbd:/tmp/vmz.bbd; \
     tkmessage -center -font "helvetica 18" -bg red -fg white "New VMZ data available" )
+
+Einzeiler: check mark_irrelevant_entry regexps
+perl -MData::Dumper -e 'require "vmzrobot.pl"; $detail->{text} = $ARGV[0]; mark_irrelevant_entry($detail); warn Dumper $detail' '...'

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbr2bbd,v 1.6 2003/06/02 23:02:12 eserte Exp $
+# $Id: bbr2bbd,v 1.7 2005/05/14 10:24:59 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -15,10 +15,16 @@
 #
 
 use strict;
-use vars qw($coords_ref $realcoords_ref $search_route_points_ref);
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+#use vars qw($coords_ref $realcoords_ref $search_route_points_ref);
 my %opt = (cat => "X", name => "Route", f => 0, usebasename => 0);
 use Getopt::Long;
 use File::Basename;
+use Route;
+use Route::Heavy;
 
 if (!GetOptions(\%opt,
 		"cat=s", "name=s", "dest=s", "f", "usebasename")) {
@@ -57,17 +63,19 @@ sub convert_one_file {
 	open(IN, "<&STDIN");
     }
 
-    if (defined $out_file) {
-	if ($in_file eq $out_file) {
-	    die "In and out files are the same";
+    my $open_out_file = sub {
+	if (defined $out_file) {
+	    if ($in_file eq $out_file) {
+		die "In and out files are the same";
+	    }
+	    if (-e $out_file && !$opt{f}) {
+		die "$out_file already exists";
+	    }
+	    open(OUT, "> $out_file") or die "Can't create $out_file: $!";
+	} else {
+	    open(OUT, ">&STDOUT");
 	}
-	if (-e $out_file && !$opt{f}) {
-	    die "$out_file already exists";
-	}
-	open(OUT, "> $out_file") or die "Can't create $out_file: $!";
-    } else {
-	open(OUT, ">&STDOUT");
-    }
+    };
 
     my $first_line = scalar <IN>;
     my $conversion;
@@ -87,39 +95,53 @@ sub convert_one_file {
 	    $conversion = "bbd2bbr";
 	    @in_data = ($1, $2, $3);
 	} else {
-	    warn "<$in_file>: Unknown input file format, assuming .bbr file";
+	    #warn "<$in_file>: Unknown input file format, assuming Route file";
 	    $conversion = "bbr2bbd";
 	}
     }
     close IN;
 
     if ($conversion eq 'bbr2bbd') {
-	require Safe;
-	my $compartment = new Safe;
-	$compartment->share(qw($realcoords_ref $coords_ref
-			       $search_route_points_ref
-			      ));
-	$compartment->rdo($in_file);
-
-	die "Die Datei <$in_file> enthält keine Route."
-	    if (!defined $realcoords_ref);
-
-	if (defined $coords_ref) {
-	    warn "Achtung: <$in_file> enthält altes Routen-Format.\n".
-		"Koordinaten können verschoben sein!\n";
-	}
-
 	my $name = $opt{name};
 	if ($opt{usebasename}) {
 	    ($name) = fileparse($in_file, "\\..+\$");
 	}
-	print OUT "$name\t$opt{cat}";
-	foreach (@$realcoords_ref) {
-	    print OUT " " . $_->[0] . "," . $_->[1];
+	my $cat = $opt{cat};
+	my $str = Route::as_strassen($in_file, name => $name, fuzzy => 1);
+	if (!$str) {
+	    die "Die Datei <$in_file> enthält keine Route."
 	}
-	print OUT "\n";
-    } else {
+	$open_out_file->();
+	print OUT $str->as_string;
+
+## XXX not used anymore (?)
+# 	require Safe;
+# 	my $compartment = new Safe;
+# 	$compartment->share(qw($realcoords_ref $coords_ref
+# 			       $search_route_points_ref
+# 			      ));
+# 	$compartment->rdo($in_file);
+
+# 	die "Die Datei <$in_file> enthält keine Route."
+# 	    if (!defined $realcoords_ref);
+
+# 	if (defined $coords_ref) {
+# 	    warn "Achtung: <$in_file> enthält altes Routen-Format.\n".
+# 		"Koordinaten können verschoben sein!\n";
+# 	}
+
+# 	my $name = $opt{name};
+# 	if ($opt{usebasename}) {
+# 	    ($name) = fileparse($in_file, "\\..+\$");
+# 	}
+# 	print OUT "$name\t$opt{cat}";
+# 	foreach (@$realcoords_ref) {
+# 	    print OUT " " . $_->[0] . "," . $_->[1];
+# 	}
+# 	print OUT "\n";
+    } else { # bbd2bbr
 	my @coords = split(/\s+/, $in_data[2]);
+	$open_out_file->();
 	print OUT "#BBBike Route\n";
 	print OUT "\$realcoords_ref = [";
 	foreach (@coords) {

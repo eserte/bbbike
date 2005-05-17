@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.58 2005/04/18 23:47:00 eserte Exp $
+# $Id: PLZ.pm,v 1.58 2005/04/18 23:47:00 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -87,7 +87,7 @@ sub new {
 		    warn "Gzip file $_.gz cannot be handled";
 		}
 	    }
-	    next if !defined $file;
+	    last if defined $file;
 	}
     } elsif (defined $file) {
 	open(DATA, $file) or return undef;

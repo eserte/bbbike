@@ -144,7 +144,7 @@ use vars qw($coordlist_lbox $coordlist_lbox_nl);
 # $hs_check: checkbutton für Haltestellen
 # $plzmcmd: Menüpunkt für PLZ-Auswahl
 # $set_mode: evtl. durch $edit_mode ersetzen
-use vars qw($hs_check $plzmcmd $ampelstatus_label
+use vars qw($hs_check $plzmcmd $ampelstatus_label_text
 	    $windrose_button
 	    $cache_decider_time $min_cache_decider_time $use_smooth_scroll
 	    $use_balloon $use_c_balloon $c_balloon_wait

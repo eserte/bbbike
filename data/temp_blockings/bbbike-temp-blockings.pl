@@ -21,10 +21,28 @@ require Time::Local;
        text  => "Gesperrte Straßen am 28.5. zwischen 14 Und 24 Uhr während des Kirchentages (im Bereich Pariser Platz - Unter den Linden - Friedrichstr. - Gendarmenmarkt)",
        type  => "handicap",
      },
-     { from  => Time::Local::timelocal(reverse(2003-1900,6-1,6,0,0,0)),
-       until => Time::Local::timelocal(reverse(2003-1900,6-1,9,23,59,0)),
-       file  => "strassenfest-bluecherplatz.bbd",
-       text  => "Straßenfest rund um den Blücherplatz vom 6.6. - 9.6.",
+     { from  => 1115848800, # 2005-05-12 00:00
+       until => 1116280616, # 2005-05-16 23:56
+       text  => 'Straßenfest rund um den Blücherplatz',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 9522,10017 9811,10055
+userdel	2 9522,10017 9444,10000
+userdel	2 9592,10174 9812,10211
+userdel	2 9401,10199 9592,10174
+userdel	2 9579,10122 9536,10064
+userdel	2 9579,10122 9689,10124
+userdel	2 9827,10120 9811,10055
+userdel	2 9827,10120 9849,10202
+userdel auto	3 9593,10238 9592,10174 9579,10122
+userdel auto	3 10002,9948 9811,10055 9837,9856
+userdel auto	3 10002,9948 9811,10055 9689,10124
+userdel auto	3 9837,9856 9811,10055 10002,9948
+userdel auto	3 9837,9856 9811,10055 9689,10124
+userdel auto	3 9689,10124 9811,10055 10002,9948
+userdel auto	3 9689,10124 9811,10055 9837,9856
+userdel auto	3 9579,10122 9592,10174 9593,10238
+EOF
      },
      { from  => Time::Local::timelocal(reverse(2003-1900,6-1,7,0,0,0)),
        until => Time::Local::timelocal(reverse(2003-1900,6-1,8,22,0,0)),
@@ -1672,7 +1690,7 @@ EOF
        text  => 'L 711; (Krausnick-AS Stakow); zw. Krausnick u. Bahnhof Brand Einschränkung Tragfähigkeit Vollsperrung, Dauer unbekannt ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 35178,-41015 40398,-40989
+userdel	2 35178,-41015 37450,-41050 37950,-41275 38512,-41000 40398,-40989
 EOF
      },
      { from  => 1113256800, # 2005-04-12 00:00

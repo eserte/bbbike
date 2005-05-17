@@ -1,4 +1,4 @@
-# $Id: handicap_s-orig,v 4.20 2005/05/11 23:34:42 eserte Exp $
+# $Id: handicap_s-orig,v 4.21 2005/05/13 22:39:13 eserte Exp $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
 Oberwallstr.: Fahrbahn wegen Bauarbeiten gesperrt, Gehweg benutzen	q4::inwork 9907,12055 9925,11947
@@ -6,7 +6,7 @@ Am Weidendamm: Fahrtrichtung wegen Bauarbeiten gesperrt, schieben	q4::inwork; 92
 Unter den Linden (Mitte) Richtung Westen zwischen Schadowstr. und Wilhelmstr. Baustelle, Straße für Autos gesperrt, Radfahrer können weiterhin passieren (bis 31.08.2005)	q1::inwork; 9028,12307 8804,12280
 #XXX del: Ebertstr.: bis 2005-05-06 für Autofahrer gesperrt, Radfahrer können weiterhin passieren	q1::inwork 8595,12066 8579,11917 8571,11846
 Alexanderstr.: von 2005-01-03 bis 2005-10-31 für Autos gesperrt, Radfahrer können weiterhin passieren. Teilweise Sperren zu den kreuzenden Straßen errichtet. 	q2::inwork 11134,12793 11207,12706 11323,12484 11333,12437 11351,12221
-Naumannstraße: zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße für Autofahrer gesperrt, Radfahrer können passieren (bis Ende 04/2005)	q2::inwork 7716,8048 7717,7759
+#XXX del: Naumannstraße: zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße für Autofahrer gesperrt, Radfahrer können passieren (bis Ende 04/2005)	q2::inwork 7716,8048 7717,7759
 Behrenstr./Bebelplatz: Einbahnstraße	q3::inwork; 9626,12227 9803,12243
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
 Wilhelmstr.: Fahrbahn vor der britischen Botschaft für Autos gesperrt, passierbar für Radfahrer (bis 2006-12-31, vielleicht auch länger)	q2 8851,12123 8804,12280

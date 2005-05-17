@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.52 2005/04/30 06:54:37 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.52 2005/04/30 06:54:37 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -552,32 +552,44 @@ sub build_penalty_code {
 ';
     }
     if ($sc->HasQualitaet) {
+	# A not existing penalty may happen if searching with fragezeichen streets
+	# is turned on.
 	$penalty_code .= '
 		    if (defined $last_node and
                         exists $qualitaet_net->{$last_node}{$next_node}) {
-                        $pen *= $qualitaet_penalty->{$qualitaet_net->{$last_node}{$next_node}}; # Qualitätszuschlag
+			my $cat = $qualitaet_net->{$last_node}{$next_node};
+			if (exists $qualitaet_penalty->{$cat}) {
+  	                    $pen *= $qualitaet_penalty->{$cat}; # Qualitätszuschlag
+			}
 		    }
 ';
     }
     if ($sc->HasHandicap) {
+	# See above
 	$penalty_code .= '
 		    if (defined $last_node and
                         exists $handicap_net->{$last_node}{$next_node}) {
-#warn "$last_node => $next_node, pen before $pen";
-                        $pen *= $handicap_penalty->{$handicap_net->{$last_node}{$next_node}}; # Handicapzuschlag
-#warn "pen after $pen";
+			my $cat = $handicap_net->{$last_node}{$next_node};
+			if (exists $handicap_penalty->{$cat}) {
+                            $pen *= $handicap_penalty->{$cat}; # Handicapzuschlag
+			}
 		    }
 ';
     }
     if ($sc->HasStrcat) {
+	# See above
 	$penalty_code .= '
 		    if (defined $last_node and
                         exists $strcat_net->{$last_node}{$next_node}) {
-                        $pen *= $strcat_penalty->{$strcat_net->{$last_node}{$next_node}}; # Kategorieaufschlag
+			my $cat = $strcat_net->{$last_node}{$next_node};
+			if (exists $strcat_penalty->{$cat}) {
+                            $pen *= $strcat_penalty->{$cat}; # Kategorieaufschlag
+			}
 		    }
 ';
     }
     if ($sc->HasRadwege) {
+	# A penalty for the empty category should be defined.
 	$penalty_code .= '
 		    if (defined $last_node and
                         exists $radwege_net->{$last_node}{$next_node}) {
@@ -589,6 +601,7 @@ sub build_penalty_code {
 ';
     }
     if ($sc->HasRadwegeStrcat) {
+	# Assumes that every possible category has a penalty.
 	$penalty_code .= '
 		    if (defined $last_node and
                         exists $radwege_strcat_net->{$last_node}{$next_node}) {
@@ -597,6 +610,8 @@ sub build_penalty_code {
 ';
     }
     if ($sc->HasGreen) {
+	# Assumes that the penalty for green0 (not a green street) is
+	# defined.
 	$penalty_code .= '
 		    if (defined $last_node) {
                         if (exists $green_net->{$last_node}{$next_node}) {
@@ -609,12 +624,14 @@ sub build_penalty_code {
 ';
     }
     if ($sc->HasUnlitStreets) {
+	# Lit streets have no penalty.
 	$penalty_code .= '
-		    if (defined $last_node) {
-                        if (exists $unlit_streets_net->{$last_node}{$next_node}) {
-                            $pen *= $unlit_streets_penalty->{$unlit_streets_net->{$last_node}{$next_node}};
+		    if (defined $last_node and
+                        exists $unlit_streets_net->{$last_node}{$next_node}) {
+			my $cat = $unlit_streets_net->{$last_node}{$next_node};
+			if (exists $unlit_streets_penalty->{$cat}) {
+                            $pen *= $unlit_streets_penalty->{$cat};
                         }
-
 		    }
 ';
     }

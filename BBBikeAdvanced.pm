@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.113 2005/03/27 22:43:46 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.114 2005/05/16 21:12:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2375,7 +2375,7 @@ sub switch_standard_mode {
 	set_edit_mode(0);
 	$do_flag{'start'} = $do_flag{'ziel'} = 1; # XXX better solution
 	set_remember_plot() unless $init;
-	$ampelstatus_label->configure(-text => '') if $ampelstatus_label;
+	$ampelstatus_label_text = "";
 	$c->center_view
 	    (transpose($coord_system_obj->standard2map($oldx, $oldy)),
 	     NoSmoothScroll => 1);
@@ -2409,7 +2409,6 @@ sub switch_edit_standard_mode {
 	$do_flag{'start'} = $do_flag{'ziel'} = 1; # XXX better solution
 	local $lazy_plot = 1;
 	set_remember_plot() unless $init;
-	#    $ampelstatus_label->configure(-text => '') if $ampelstatus_label;
 	$c->center_view
 	    (transpose($coord_system_obj->standard2map($oldx, $oldy)),
 	     NoSmoothScroll => 1);

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mkroutemap,v 1.6 2005/05/11 23:41:01 eserte Exp $
+# $Id: mkroutemap,v 1.7 2005/05/17 07:14:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2004 Slaven Rezic. All rights reserved.
@@ -24,6 +24,13 @@ my $known_scopes_rx    = "(" . join("|", @known_scopes) . ")";
 my $known_scopes_lc_rx = lc $known_scopes_rx;
 $known_scopes_rx       = qr($known_scopes_rx);
 $known_scopes_lc_rx    = qr($known_scopes_lc_rx);
+
+my %scope_aliases = ('brb'	=> 'region',
+		     'b'	=> 'city',
+		     'inner-b'	=> 'innercity',
+		     'wide'	=> 'wideregion',
+		     'p'	=> 'potsdam',
+		    );
 
 my $routeshapefile;
 my $routecoords;
@@ -56,8 +63,11 @@ if (!GetOptions("routeshpfile|routeshapefile=s" => \$routeshapefile,
 my $oldmapfile = shift || die "Old map file?";
 my $newmapfile = shift || die "New map file?";
 
+if (defined $scope && exists $scope_aliases{$scope}) {
+    $scope = $scope_aliases{$scope};
+}
 if (defined $scope && !grep { $_ eq $scope } @known_scopes_lc) {
-    die "Unknown -scope parameter: can handle only @known_scopes_lc\n";
+    die "Unknown -scope parameter <$scope>: can handle only @known_scopes_lc @{[ keys %scope_aliases ]}\n";
 }
 
 if (defined $start) {

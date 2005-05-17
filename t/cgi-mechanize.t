@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.24 2005/04/29 20:17:28 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.25 2005/05/13 22:40:54 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -120,13 +120,19 @@ for my $browser (@browsers) {
 	my_tidy_check($agent);
 
 	like($agent->content, qr/Route/, "On the route result page");
-	$agent->submit();
+
+	my $has_ausweichroute = ($agent->forms)[0]->attr("name") =~ /Ausweichroute/;
+	{
+	    my $formnr = $has_ausweichroute ? 2 : 1;
+	    $agent->form_number($formnr);
+	    $agent->submit();
+	}
 
 	like($agent->ct, qr{^image/}, "Content is image");
 	$agent->back();
 
 	{
-	    my $formnr = (($agent->forms)[0]->attr("name") =~ /Ausweichroute/ ? 4 : 3);
+	    my $formnr = $has_ausweichroute ? 4 : 3;
 	    $agent->form_number($formnr);
 	}
 	$agent->submit();

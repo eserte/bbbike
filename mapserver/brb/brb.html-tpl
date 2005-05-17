@@ -76,11 +76,12 @@
         <td>
          <input type="hidden" name="map" value="[map]">
           Andere Übersichtskarte:<br>
-          <input class="hfb" type="button" onclick="return change_map('brb-inner-b.map')" value="Berliner Innenstadt"><br>
-          <input class="hfb" type="button" onclick="return change_map('brb-b.map')" value="Berlin"><br>
-          <input class="hfb" type="button" onclick="return change_map('brb-p.map')" value="Potsdam"><br>
-          <input class="hfb" type="button" onclick="return change_map('brb.map')" value="Brandenburg"><br>
-          <input class="hfb" type="button" onclick="return change_map('brb-wide.map')" value="Nordostdeutschland"><br>
+[%# XXX Should use SCOPES, but value is not defined yet... -%]
+          <input class="hfb" type="button" onclick="return change_map('inner-b')" value="Berliner Innenstadt"><br>
+          <input class="hfb" type="button" onclick="return change_map('b')      " value="Berlin"><br>
+          <input class="hfb" type="button" onclick="return change_map('p')      " value="Potsdam"><br>
+          <input class="hfb" type="button" onclick="return change_map('brb')    " value="Brandenburg"><br>
+          <input class="hfb" type="button" onclick="return change_map('wide')   " value="Nordostdeutschland"><br>
         </td>
        </tr>
       </table>

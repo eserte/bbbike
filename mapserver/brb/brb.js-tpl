@@ -199,8 +199,16 @@ function has_focus(w) {
 function change_map(map) {
     var frm = document.forms.map;
     var oldmap = frm.map.value;
-    var rx = new RegExp("brb[^/]*\\.map$");
-    var newmap = oldmap.replace(rx, map);
+[%# XXX Should use SCOPES -%]
+    var rx = new RegExp("(-inner-b|-b|-p|-brb|-wide)\\.map$");
+    var newmap;
+    if (oldmap.match(rx)) {
+	newmap = oldmap.replace(rx, "-" + map + ".map");
+    } else {
+	// Fallback for non-scoped mapfile
+	rx = new RegExp("\\.map$");
+	newmap = oldmap.replace(rx, "-" + map + ".map");
+    }
     frm.map.value = newmap;
     set_mode("browse", 0);
     frm.target = "_self";

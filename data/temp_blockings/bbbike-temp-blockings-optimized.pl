@@ -1,7 +1,146 @@
 @temp_blocking = ();
-$#temp_blocking = 119;
+$#temp_blocking = 2;
 push @temp_blocking,
 (
+       {
+         'until' => 1116280616,
+         'text' => 'Straßenfest rund um den Blücherplatz',
+         'from' => 1115848800,
+         'data' => 'userdel	2 9522,10017 9811,10055
+userdel	2 9522,10017 9444,10000
+userdel	2 9592,10174 9812,10211
+userdel	2 9401,10199 9592,10174
+userdel	2 9579,10122 9536,10064
+userdel	2 9579,10122 9689,10124
+userdel	2 9827,10120 9811,10055
+userdel	2 9827,10120 9849,10202
+userdel auto	3 9593,10238 9592,10174 9579,10122
+userdel auto	3 10002,9948 9811,10055 9837,9856
+userdel auto	3 10002,9948 9811,10055 9689,10124
+userdel auto	3 9837,9856 9811,10055 10002,9948
+userdel auto	3 9837,9856 9811,10055 9689,10124
+userdel auto	3 9689,10124 9811,10055 10002,9948
+userdel auto	3 9689,10124 9811,10055 9837,9856
+userdel auto	3 9579,10122 9592,10174 9593,10238
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'until' => 1117231200,
          'text' => 'K 6413; (Wriezener Straße); OL Buckow, zw. Weinbergsweg u. Ringstr. Kanal- u. Straßenbau Vollsperrung 17.01.2005-27.05.2005 ',
@@ -79,14 +218,7 @@ userdel	q4 49039,44131 49691,43812
        undef,
        undef,
        undef,
-       {
-         'until' => 1116021600,
-         'text' => 'Volkradstr. (Lichtenberg) Richtung Rummelsburger Str. zwischen Sewanstr. und Rummelsburger Str. Baustelle, Fahrtrichtung gesperrt (bis 13.05.2005)',
-         'from' => 1114726594,
-         'data' => 'userdel	1 17475,10442 17427,10259
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -186,16 +318,7 @@ userdel	q4 -18080,-12637 -17374,-13449
        undef,
        undef,
        undef,
-       {
-         'until' => 1116194400,
-         'text' => 'Wassersportallee - Regattastraße, Zwischen Kreuzung Adlergestell und Kreuzung Wassersportallee in beiden Richtungen gesperrt, Baustelle, Dauer: 14.03.2005 03:00 Uhr bis 15.05.2005 ',
-         'from' => 1110679200,
-         'data' => 'userdel	q4 22449,1281 22217,1108
-userdel	q4 22449,1281 22663,1441
-userdel	q4 22217,1108 22162,1067
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -250,7 +373,7 @@ userdel	q4 22217,1108 22162,1067
          'until' => undef,
          'text' => 'L 711; (Krausnick-AS Stakow); zw. Krausnick u. Bahnhof Brand Einschränkung Tragfähigkeit Vollsperrung, Dauer unbekannt ',
          'from' => undef,
-         'data' => 'userdel	2 35178,-41015 40398,-40989
+         'data' => 'userdel	2 35178,-41015 37450,-41050 37950,-41275 38512,-41000 40398,-40989
 ',
          'type' => 'gesperrt'
        },
@@ -334,14 +457,7 @@ userdel	q4 -16640,1304 -16894,1485
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1116021600,
-         'text' => 'L 30; (Tiergartenstr.); OT Neue Mühle, Schleuse Straßenbauarbeiten Vollsperrung 09.05.2005-13.05.2005 ',
-         'from' => 1115503200,
-         'data' => 'userdel	2 27543,-11912 27657,-11741
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1121637600,
          'text' => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 17.05.2005-17.07.2005 ',

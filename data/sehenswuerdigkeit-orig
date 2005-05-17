@@ -48,6 +48,9 @@ Museum für Naturkunde und Zoologisches Museum	F:SW 8713,13790 8667,13762 8646,13
 Museum für Naturkunde und Zoologisches Museum	F:SW 8729,13815 8750,13779 8810,13800 8782,13846
 Neue Synagoge	SW 9736,13221
 Flughafen Tempelhof	F:SW|IMG:airport.gif 9297,8095 9352,8244 9437,8377 9377,8445 9331,8429 9262,8420 9261,8560 9327,8574 9403,8492 9468,8550 9385,8625 9401,8692 9531,8675 9523,8618 9504,8571 9582,8496 9723,8546 9884,8562 10027,8548 10020,8526 9875,8542 9733,8519 9590,8459 9481,8378 9391,8255 9333,8130 9303,8019 9274,8021 9301,8115
+#: XXX Namen fehlen!
+	F:SW 9247,8857 9247,8812 9312,8802 9377,8757 9562,8733 9574,8863 9552,8865 9546,8757 9464,8765 9466,8859 9440,8861 9440,8774 9385,8776 9318,8824 9271,8828 9269,8869
+	F:SW 9249,8871 9568,8877 9572,8855 9249,8851
 Flughafen Schönefeld	F:SW|IMG:airport.gif 18581,-1760 18594,-1810 18359,-1889 18335,-1843
 Flughafen Tegel	F:SW|IMG:airport.gif 2752,16408 2770,16371 2721,16343 2695,16308 2694,16274 2704,16244 2671,16278 2552,16258 2478,16353 2513,16459 2632,16482 2710,16395
 Luftbrückendenkmal	IMG:sehenswuerdigkeit_img/luftbrueckendenkmal.gif|ANCHOR:s 9317,8702
@@ -145,6 +148,7 @@ Wasserturm Westend	SW 1206,12466
 Zionskirche	SW|IMG:church.gif 10336,14320
 Friedrich-Ludwig-Jahn-Sportpark	F:SW 10357,15240 10410,15066 10452,15050 10499,15046 10530,15089 10528,15143 10481,15285 10444,15309 10395,15308 10376,15287
 Gethsemane-Kirche	SW|IMG:church.gif 11176,15771
+#: XXX nach einer anderen Quelle "Amtsgericht". Alias (Alliertenkontrollratgebäude oder so) einrichten?
 Kammergericht	F:SW 7255,9633 7243,9502 7273,9500 7275,9520 7299,9521 7302,9615 7280,9619 7280,9634
 Lilienthal-Gedenkstätte	SW 5518,773
 Velodrom ("Berlin Arena")	F:SW 13688,13745 13634,13744 13594,13765 13578,13814 13594,13869 13655,13893 13711,13877 13737,13823 13726,13786
@@ -209,8 +213,9 @@ Oberbaum City	IMG:sehenswuerdigkeit_img/oberbaumcity.gif 13600,11000
 Schultheissbrauerei	IMG:sehenswuerdigkeit_img/schultheiss.gif 9050,8975
 Museumsdorf Düppel	SW -1027,1922
 #: XXX ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BVG	F:SW 7482,9444 7459,9369 7425,9371 7453,9450
 # Potsdam ##################################################
-Schloß Babelsberg	F:SW -10482,-195 -10486,-222 -10515,-242 -10511,-193
+Schloß Babelsberg	F:SW -10482,-195 -10488,-242 -10515,-242 -10511,-193
 Neues Palais	SW -15737,-1011
 Schloß Charlottenhof	SW -15071,-1601
 Römische Bäder	SW -14923,-1387
@@ -239,7 +244,9 @@ Belvedere (Pfingstberg)	SW -12825,1046
 #: XXX spelling?
 Pomonatempel	SW -12775,978
 Russ.-Orth. Kirche/Kapellenberg	SW|IMG:church.gif -12943,670
-Flatowturm (Babelsberg)	SW -10957,-716
+Flatowturm (Babelsberg)	SW -10933,-679
+Berliner Gerichtslaube (Park Babelsbweg)	SW -10858,-476
+Kleines Schloß (Park Babelsbweg)	SW -10809,-208
 Heilandskirche (Sacrow)	SW|IMG:church.gif -10369,1692
 Sacrower Schloß	SW -10540,1969
 Gothische Bibliothek (Neuer Garten, Potsdam)	SW -12277,-327
