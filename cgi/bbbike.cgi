@@ -4867,12 +4867,14 @@ sub header {
 			  -href => "$bbbike_images/srtbike16.gif",
 			  -type => "image/gif",
 			 });
-    if ($bi->{'text_browser'} && !$smallform) {
+    if (($bi->{user_agent_name} =~ /opera/i || $bi->{'text_browser'}) && !$smallform) {
 	push @$head,
 	    cgilink({-rel => 'Help',
 		     -href => "$bbbike_script?info=1"}),
-	    cgilink({-rel => 'Start',
+	    cgilink({-rel => 'Home',
 		     -href => "$bbbike_script?begin=1"}),
+	    cgilink({-rel => 'Author',
+		     -href => "mailto:@{[ $BBBike::EMAIL ]}"}),
 	   (defined $args{-up}
 	    ? cgilink({-rel => 'Up', -href => $args{-up}}) : ()),
 		;
