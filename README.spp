@@ -20,8 +20,8 @@
 ## perlreplace #MAIL#       $BBBike::EMAIL
 ## perlreplace #CGIURL#     $BBBike::BBBIKE_WWW
 ## perlreplace #DIRECTCGIURL#     $BBBike::BBBIKE_DIRECT_WWW
-## perlreplace #HTTPCVS#    '"http://sourceforge.net/cvs/?group_id=19142"'
-## perlreplace #CVSREPO#    '":pserver:anonymous\@cvs.bbbike.sourceforge.net:/cvsroot/bbbike"'
+## perlreplace #HTTPCVS#    $BBBike::BBBIKE_CVS_HTTP
+## perlreplace #CVSREPO#    $BBBike::BBBIKE_CVS_ANON_REPOSITORY
 ## dnl
 ## dnl $Id: README.spp,v 2.35 2005/05/17 23:23:13 eserte Exp $
 ## dnl strpp source of README
