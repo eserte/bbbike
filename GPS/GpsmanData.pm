@@ -4,7 +4,7 @@
 # $Id: GpsmanData.pm,v 1.32 2005/04/16 18:26:08 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2005 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -29,7 +29,7 @@ BEGIN {
     for (qw(File DatumFormat PositionFormat Creation
 	    Type Name
 	    Waypoints WaypointsHash
-	    Track
+	    Track CurrentConverter
 	   )) {
 	my $acc = $_;
 	*{$acc} = sub {
@@ -45,6 +45,7 @@ BEGIN {
 use vars qw($VERSION @EXPORT_OK);
 $VERSION = sprintf("%d.%03d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
 
+use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
 use constant TYPE_TRACK    => 1;
 use constant TYPE_ROUTE    => 2;
@@ -57,7 +58,7 @@ use GPS::Util; # for eliminate_umlauts
 use Class::Struct;
 struct('GPS::Gpsman::Waypoint' =>
        [map {($_ => "\$")}
-	qw(Ident Comment Latitude Longitude Altitude NewTrack Symbol Accuracy DisplayOpt)
+	qw(Ident Comment Latitude Longitude ParsedLatitude ParsedLongitude Altitude NewTrack Symbol Accuracy DisplayOpt)
        ]
       );
 {
@@ -88,8 +89,9 @@ sub check {
 	next if /^%/ || /^\s*$/;
 	if (/!Format: (DMS|DDD) 1 (WGS 84)/) {
 	    if (ref $self) {
-		$self->PositionFormat($1);
-		$self->DatumFormat($2);
+		my($pos_format, $datum_format) = ($1, $2);
+		$self->change_position_format($pos_format);
+		$self->DatumFormat($datum_format);
 	    }
 	    $check = 1;
 	    last;
@@ -120,11 +122,9 @@ sub do_convert_to_route {
 
     my @res;
 
-    my $converter = _get_converter($self->PositionFormat, "DDD");
     foreach my $wpt (@{ $self->Track }) {
 	my($x,$y) = $to_obj->trim_accuracy
-	    ($obj->map2standard(map { $converter->($_) }
-				$wpt->Longitude, $wpt->Latitude)
+	    ($obj->map2standard($wpt->Longitude, $wpt->Latitude)
 	    );
 	if (!@res || ($x != $res[-1]->[0] ||
 		      $y != $res[-1]->[1])) {
@@ -301,7 +301,8 @@ sub new {
     bless $self, shift;
 
     # some defaults:
-    $self->PositionFormat("DMS");
+    #$self->PositionFormat("DMS");
+    $self->change_position_format("DMS");
     $self->DatumFormat("WGS 84");
 
     $self;
@@ -318,17 +319,52 @@ sub load {
     1;
 }
 
+sub change_position_format {
+    my($self, $pos_format) = @_;
+    if ($pos_format eq 'UTM/UPS') {
+	require Karte::UTM;
+    }
+    my $converter = _get_converter($pos_format, "DDD");
+    $self->CurrentConverter($converter);
+    $self->PositionFormat($pos_format);
+}
+
+sub parse_and_set_coordinate {
+    my($self, $obj, $f_ref, $f_i_ref) = @_;
+
+    my $position_format = $self->PositionFormat;
+    my($lat, $long);
+    if (defined $position_format && $position_format eq 'UTM/UPS') {
+	my($ze,$zn,$x,$y) = @{$f_ref}[$$f_i_ref .. $$f_i_ref+3];
+	$$f_i_ref += 4;
+	my($lat, $long) = Karte::UTM::UTMToDegrees($ze,$zn,$x,$y,$self->DatumFormat);
+	$lat  = ($lat  >= 0 ? "N" : "S") . abs($lat);
+	$long = ($long >= 0 ? "E" : "W") . abs($long);
+    } else {
+	$lat  = $f_ref->[$$f_i_ref++];
+	$long = $f_ref->[$$f_i_ref++];
+    }
+    my $converter = $self->CurrentConverter;
+    $lat  = $converter->($lat);
+    $long = $converter->($long);
+    $obj->Latitude($lat);
+    $obj->Longitude($long);
+}
+
 # argument: line in $_
 # return value: Waypoint object
 sub parse_waypoint {
+    my $self = shift;
     my @f = split /\t/;
     my $wpt = GPS::Gpsman::Waypoint->new;
     $wpt->Ident($f[0]);
     $wpt->Comment($f[1]);
-    $wpt->Latitude($f[2]);
-    $wpt->Longitude($f[3]);
-    if ($#f > 3) {
-	for (@f[4 .. $#f]) {
+
+    my $f_i = 2;
+    $self->parse_and_set_coordinate($wpt, \@f, \$f_i);
+
+    if ($#f >= $f_i) {
+	for (@f[$f_i .. $#f]) {
 	    if (/^alt=(.*)/) {
 		$wpt->Altitude($1);
 	    } elsif (/^symbol=(.*)/) {
@@ -346,12 +382,15 @@ sub parse_waypoint {
 # argument: line in $_
 # return value: Waypoint object
 sub parse_track {
+    my $self = shift;
     my @f = split /\t/;
     my $wpt = GPS::Gpsman::Waypoint->new;
     $wpt->Ident($f[0]);
     $wpt->Comment($f[1]);
-    $wpt->Latitude($f[2]);
-    $wpt->Longitude($f[3]);
+
+    my $f_i = 2;
+    $self->parse_and_set_coordinate($wpt, \@f, \$f_i);
+
     # This are the only diffs to TYPE_WAYPOINT:
     # The "~" thingy is a private extension
     my($acc,$alt) = $f[4] =~ /^(~*)(.*)/;
@@ -361,13 +400,21 @@ sub parse_track {
 }
 
 sub parse_route {
+    my $self = shift;
     my @f = split /\t/;
     my $wpt = GPS::Gpsman::Waypoint->new;
     $wpt->Ident($f[0]);
     $wpt->Comment($f[1]);
-    $wpt->Latitude($f[2]);
-    $wpt->Longitude($f[3]); # no altitude here
+
+    my $f_i = 2;
+    $self->parse_and_set_coordinate($wpt, \@f, \$f_i);
+
+    # no altitude here
     $wpt;
+}
+
+sub parse_group {
+    # nothing..., return empty list
 }
 
 sub parse {
@@ -377,14 +424,15 @@ sub parse {
     if (keys %args) {
 	die "Unhandled arguments: " . join " ", %args;
     }
-    my $type;
+    my $type = TYPE_UNKNOWN;
+    my $parse_method;
     my @lines = split /\n/, $buf;
     my $i = $beginref ? $$beginref : 0;
 
     my %parse =
-	(TYPE_WAYPOINT() => \&parse_waypoint,
-	 TYPE_TRACK()    => \&parse_track,
-	 TYPE_ROUTE()    => \&parse_route,
+	(TYPE_WAYPOINT() => 'parse_waypoint',
+	 TYPE_TRACK()    => 'parse_track',
+	 TYPE_ROUTE()    => 'parse_route',
 	);
 
     my @data;
@@ -393,11 +441,15 @@ sub parse {
 	local $_ = $lines[$i];
 	next if /^%/; # comment
 	next if /^\s*$/;
-	if (defined $type && !/^!/) {
-	    push @data, $parse{$type}->();
+	if (defined $parse_method && !/^!/) {
+	    push @data, $self->$parse_method();
 	} elsif (/^!Format:\s+(\S+)\s+(\S+)\s+(.*)$/) {
-	    $self->PositionFormat($1);
-	    $self->DatumFormat($3);
+	    my($pos_format, $datum_format) = ($1, $3);
+	    $self->change_position_format($pos_format);
+	    $self->DatumFormat($datum_format);
+	} elsif (/^!Position:\s+(\S+)$/) {
+	    my $pos_format = $1;
+	    $self->change_position_format($pos_format);
 	} elsif (/^!/) {
 	    if ($multiple && @data) {
 		# we already have data for one track/route/...
@@ -409,17 +461,22 @@ sub parse {
 	    if (/^!W:/) {
 		$self->Type(TYPE_WAYPOINT);
 		$type = TYPE_WAYPOINT; # performance
+		$parse_method = $parse{$type};
 	    } elsif (/^!(TS?:.*)/) {
 		my @l = split /\t/, $1;
 		$self->Name($l[1]);
 		$self->Type(TYPE_TRACK);
 		$type = TYPE_TRACK;
+		$parse_method = $parse{$type};
 	    } elsif (/^!(R:.*)/) {
 		my @l = split /\t/, $1;
 		$self->Name($l[1]);
 		# XXX safe more attribs
 		$self->Type(TYPE_ROUTE);
 		$type = TYPE_ROUTE;
+		$parse_method = $parse{$type};
+	    } elsif (/^!G/) {
+		$parse_method = 'parse_group';
 	    } else {
 		# ignore
 	    }
@@ -440,7 +497,11 @@ sub parse {
 }
 
 # XXX only waypoints and tracks
+# XXX still necessary???
 sub convert_all {
+    warn "convert_all is deprecated...";
+    return;
+
     my($self, $to_format) = @_;
     my $converter = _get_converter($self->PositionFormat, $to_format);
     foreach my $wpt (@{ $self->Points }) {
@@ -453,6 +514,8 @@ sub convert_all {
 
 sub _get_converter {
     my($from,$to) = @_;
+    $from =~ s/[^A-Za-z]/_/g;
+    $to   =~ s/[^A-Za-z]/_/g;
     my $sub = 'convert_' . $from . '_to_' . $to;
     #warn $sub;
     my $converter = eval '\&'.$sub;
@@ -472,7 +535,7 @@ sub convert_DMS_to_DDD {
 	$deg += $min/60 + $sec/3600;
 	return $deg;
     } else {
-	warn "Can't parse $in, should be in `N52 30 23.8' format";
+	warn "Can't parse <$in>, should be in `N52 30 23.8' format";
     }
 }
 
@@ -486,8 +549,13 @@ sub convert_DDD_to_DDD {
 	}
 	return $ddd;
     } else {
-	warn "Can't parse $in, should be in `N52.49857' format";
+	warn "Can't parse <$in>, should be in `N52.49857' format";
     }
+}
+
+# This is a little bit hackish --- the conversion job was already done in parse_and_set_coordinate
+sub convert_UTM_UPS_to_DDD {
+    $_[0];
 }
 
 sub convert_lat_long_to_gpsman {
@@ -640,7 +708,8 @@ sub Points {
     } elsif ($self->Type eq TYPE_TRACK || $self->Type eq TYPE_ROUTE) {
 	$self->Track;
     } else {
-	die "Can't determine type in Points method (neither waypoint nor track)";
+	warn "Can't determine type in Points method (neither waypoint nor track, type is <" . $self->Type . ">)";
+	[];
     }
 }
 
