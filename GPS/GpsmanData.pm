@@ -409,7 +409,7 @@ sub parse {
 	    if (/^!W:/) {
 		$self->Type(TYPE_WAYPOINT);
 		$type = TYPE_WAYPOINT; # performance
-	    } elsif (/^!(T:.*)/) {
+	    } elsif (/^!(TS?:.*)/) {
 		my @l = split /\t/, $1;
 		$self->Name($l[1]);
 		$self->Type(TYPE_TRACK);
