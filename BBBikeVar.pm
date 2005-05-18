@@ -70,6 +70,10 @@ $BBBIKE_MAPSERVER_DIRECT = 'http://www.radzeit.de/mapserver/brb/';
 # The initial mapserver URL (indirect, from www.bbbike.de)
 $BBBIKE_MAPSERVER_INDIRECT = "http://www.bbbike.de/mapserver/brb/";
 
+# CVS
+$BBBIKE_CVS_ANON_REPOSITORY = ":pserver:anonymous\@cvs.sourceforge.net:/cvsroot/bbbike";
+$BBBIKE_CVS_HTTP = "http://sourceforge.net/cvs/?group_id=19142";
+
 1;
 
 __END__
