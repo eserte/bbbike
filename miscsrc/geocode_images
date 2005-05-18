@@ -4,7 +4,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 use File::Spec;
 use File::Basename;
@@ -169,8 +169,48 @@ sub create_thumbnail {
 
 __END__
 
+=head1 NAME
+
+geocode_images - geocode images against a gps track data base
+
+=head1 SYNOPSIS
+
+See L</EXAMPLES>
+
+=head1 DESCRIPTION
+
+With geocode_images it is possible to create a connection between exif
+coded images and a database of GPS tracks. The connection is done
+through the date.
+
+For now, it is assumed that the GPS track database is just a directory
+with GPSMAN track files, where filenames are named I<YYYYMMDD.trk> or
+I<YYYY-MM-DD.trk>.
+
 =head1 EXAMPLES
 
     find ~/images/scans/Baltikum-02/baltics-bestof/ -name "*.jpg" -print0 | xargs -0 ~/src/bbbike/miscsrc/geocode_images -v -gpsdatadir ~/src/bbbike/misc/gps_data/polen_baltikum/ > /tmp/5.bbd
 
     cd ~/images/from_handy/Fotos/ && find . -name "*.jpg" -print0 | xargs -0 ~/src/bbbike/miscsrc/geocode_images > /tmp/1.bbd
+
+=head1 HOWTO
+
+To display geocoded thumbnails in bbbike:
+
+=over
+
+=item * Start bbbike
+
+=item * Load the BBBikeViewImages plugin through "Plugin laden". The
+plugin is located in the F<miscsrc> subdirectory of bbbike.
+
+=item * Create a bbd file like explained in L</EXAMPLES>.
+
+=item * Load the bbd file in bbbike: Zus‰tzlich zeichnen > Straﬂen-Layer zeichnen
+
+=item * If necessary, then adjust the scrollregion (in the same menu)
+
+=item * If the plugin was loaded, then it is possible to click on the
+thumbnails to get the larger version
+
+=back
