@@ -4,7 +4,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 use File::Spec;
 use File::Basename;
@@ -33,8 +33,6 @@ GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	  ) or die "usage!";
 
 mkdir $thumbnail_dir if !-d $thumbnail_dir;
-
-my $converter;
 
 sub get_image_location {
     my $file = shift;
@@ -117,7 +115,6 @@ sub get_image_location {
 	    }
 	    $interval = abs($got_wpt->Comment_to_unixtime - $epoch);
 	    if ($got_wpt) {
-		$converter = GPS::GpsmanData::_get_converter($gps->PositionFormat, "DDD"); # XXX hacky!
 		return { Latitude  => $got_wpt->Latitude,
 			 Longitude => $got_wpt->Longitude,
 			 Interval  => $interval,
@@ -135,8 +132,7 @@ for my $file (@ARGV) {
     if (defined $ret) {
 	my($lat, $long, $interval, $date) = @{$ret}{qw(Latitude Longitude Interval Date)};
 	my($x, $y) = $Karte::Standard::obj->trim_accuracy
-	    ($Karte::Polar::obj->map2standard(map { $converter->($_) }
-					      $long, $lat));
+	    ($Karte::Polar::obj->map2standard($long, $lat));
 	my $abs_file = File::Spec->rel2abs($file);
 	my $thumb_file = create_thumbnail($file);
 	my $hm = s2hm($interval);
