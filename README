@@ -279,8 +279,8 @@ L<http://sourceforge.net/cvs/?group_id=19142>.
 Von der Kommandozeile muss folgendes eingegeben werden:
 
     # login ist nur das erste Mal notwendig, Passwort leer lassen
-    cvs -d :pserver:anonymous@cvs.bbbike.sourceforge.net:/cvsroot/bbbike login
-    cvs -d :pserver:anonymous@cvs.bbbike.sourceforge.net:/cvsroot/bbbike co bbbike
+    cvs -d :pserver:anonymous@cvs.sourceforge.net:/cvsroot/bbbike login
+    cvs -d :pserver:anonymous@cvs.sourceforge.net:/cvsroot/bbbike co bbbike
 
     # Alle weiteren Male nur folgendes verwenden:
     cd bbbike

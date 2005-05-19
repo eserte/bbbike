@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Gpsman.pm,v 1.3 2005/01/20 00:28:13 eserte Exp $
+# $Id: Gpsman.pm,v 1.4 2005/05/19 00:05:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
@@ -59,7 +59,8 @@ sub read_gpsman {
     {
 	local $^W = 0;
 	$gpsman->load($filename);
-	$gpsman->convert_all("DDD");
+	## XXX del:
+	#$gpsman->convert_all("DDD");
     }
 
     # Options for this? XXX

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: old_comments.t,v 1.3 2005/05/02 23:27:15 eserte Exp $
+# $Id: old_comments.t,v 1.4 2005/05/18 22:29:39 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -77,8 +77,14 @@ EOF
 EOF
 
 	     # Bergmannstr.
-	     ["9248,9350", "10533,9240", <<EOF, "CS (Route)"],
-- Route K; Kopfsteinpflaster (Teilstrecke)
+	     ["9248,9350", "10533,9240", <<EOF, "CS (was Route, now no route here)"],
+- Kopfsteinpflaster (Teilstrecke)
+- ~
+EOF
+
+	     # Belziger Str.
+	     ["7315,9156", "6977,8934", <<EOF, "CS (Route)"],
+- RR1 (Schloßplatz - Wannsee); mäßiges Kopfsteinpflaster (Teilstrecke)
 - ~
 EOF
 

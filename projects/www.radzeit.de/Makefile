@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.61 2005/05/12 23:35:30 eserte Exp eserte $
+# $Id: Makefile,v 1.61 2005/05/12 23:35:30 eserte Exp $
 #
 
 # Targets:
@@ -48,6 +48,7 @@ TESTS=			basic.t \
 			wapcgi.t
 TESTS_ADD=		BBBikeTest.pm
 HTDOCS=			public
+
 
 # XXX maybe use test-on-remote-and-send-mail (after tests)
 DEPLOY_TARGETS=			prepare-bbbike-data \

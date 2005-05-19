@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.28 2005/05/17 07:14:58 eserte Exp $
+# $Id: Makefile,v 1.29 2005/05/19 00:19:29 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -578,3 +578,8 @@ dist-spiff:
 # But the 3.6.6 version has other problems: no transparency with pngs (see
 # the S-Bahn symbol), wrong rendering of oneway symbols (lines instead of
 # arrows)
+
+# To configure the current (2005-05) CVS version on FreeBSD use
+#    sh configure --with-freetype=/usr/local/bin --with-gd=/usr/local --with-png=/usr/local --with-jpeg=/usr/local --with-xpm=/usr/X11R6 --with-libiconv=/usr/local --with-pdf=/usr/local
+# Mind a possible mismatch: /usr/local/include/gd* vs. /usr/local/include/gd/gd*
+

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.21 2005/04/27 00:36:42 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.23 2005/05/18 00:56:29 eserte Exp $
 #
 
 # should this be here?
@@ -391,10 +391,10 @@ mapfiles-shptree-gmake:
 
 .SUFFIXES: .shp .qix
 
-.shp.qix:
+.shp.qix:	${SHPTREE}
 	@[ -x ${SHPTREE} ] && ( \
 		echo $@; \
-		${SHPTREE} $@ \
+		${SHPTREE} $@ 0 NL \
 	) || ( \
 		echo "Warning: no shptree program found for converting $@" \
 	)

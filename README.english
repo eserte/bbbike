@@ -278,8 +278,8 @@ L<http://sourceforge.net/cvs/?group_id=19142> for instructions on how to use CVS
 To use the CVS repository from command line type the following:
 
     # login is necessary only once, leave the password empty
-    cvs -d :pserver:anonymous@cvs.bbbike.sourceforge.net:/cvsroot/bbbike login
-    cvs -d :pserver:anonymous@cvs.bbbike.sourceforge.net:/cvsroot/bbbike co bbbike
+    cvs -d :pserver:anonymous@cvs.sourceforge.net:/cvsroot/bbbike login
+    cvs -d :pserver:anonymous@cvs.sourceforge.net:/cvsroot/bbbike co bbbike
 
     # to update the next time
     cd bbbike

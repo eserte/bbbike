@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.9 2005/05/03 20:14:41 eserte Exp $
+# $Id: strassennetz.t,v 1.10 2005/05/18 22:03:28 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -19,6 +19,7 @@ use Strassen::Core;
 use Strassen::Lazy;
 use Strassen::StrassenNetz;
 use Route;
+use Route::Heavy;
 
 use BBBikeTest;
 

@@ -1890,11 +1890,10 @@ EOF
      },
      { from  => 1116367200, # 2005-05-18 00:00
        until => 1116885600, # 2005-05-24 00:00
-       text  => 'L 30; Friedrichstraße 13.Heimatfest Erkner Vollsperrung 19.05.2005-23.05.2005 ',
+       text  => 'L 30; (Friedrichstraße); OL Erkner, zw. Fürstenwalder Str. u. Beuststr. 13.Heimatfest Erkner Vollsperrung 19.05.2005-23.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 34443,1951 34250,2546
-userdel	q4 34250,2546 34175,2637
 EOF
      },
      { from  => 1117317600, # 2005-05-29 00:00
@@ -1903,6 +1902,30 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -32682,-7140 -32645,-6220
+EOF
+     },
+     { from  => 1117576800, # 2005-06-01 00:00
+       until => 1118959200, # 2005-06-17 00:00
+       text  => 'K 6422; (Schöneicher Allee); Brücke A 10 zw. B 1 und Fredersdorf Brückenabbruch Vollsperrung 02.06.2005-16.06.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 33128,11823 32535,11591
+EOF
+     },
+     { from  => 1116194400, # 2005-05-16 00:00
+       until => 1119650400, # 2005-06-25 00:00
+       text  => 'L 15; (Fürstenberg-Rheinsberg); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-24.06.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -15062,76937 -14623,77426
+EOF
+     },
+     { from  => 1116194400, # 2005-05-16 00:00
+       until => 1119650400, # 2005-06-25 00:00
+       text  => 'L 222; (Gransee-Menz); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-24.06.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -15062,76937 -14862,76637
 EOF
      },
     );

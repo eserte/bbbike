@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.21 2005/04/30 07:46:12 eserte Exp $
+# $Id: MapServer.pm,v 1.22 2005/05/19 00:06:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -39,7 +39,11 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
 	my $HOME = "/home/e/eserte";
 	$self->BbbikeDir("$HOME/src/bbbike");
 	$self->MapserverMapDir($self->BbbikeDir . "/mapserver/brb");
-	$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
+	if (0) { # 1 for current version from CVS
+	    $self->MapserverBinDir("/usr/local/src/work/mapserver");
+	} else {
+	    $self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
+	}
 	$self->MapserverRelurl("/~eserte/mapserver/brb");
 	$self->MapserverUrl("http://www/~eserte/mapserver/brb");
 	$self->TemplateMap("brb.map-tpl");

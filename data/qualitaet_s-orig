@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.26 2005/05/11 23:29:54 eserte Exp eserte $
+# $Id: qualitaet_s-orig,v 4.27 2005/05/19 00:04:33 eserte Exp $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -1560,8 +1560,12 @@ Matternstr.: mäßiges Kopfsteinpflaster	Q2 13798,13003 13578,12903
 #: by: Claudia Radtke:
 Elßholzstr.: mäßiges Kopfsteinpflaster	Q2 7201,9318 7192,9508 7185,9819
 #: by: Carroll Haak: vvv
-Schwarzspechtweg	N -1743,19320 -2027,19326 -2152,19331 -2205,19331
-Schwarzspechtweg	N -2152,19331 -2158,19119
+Schwarzspechtweg: Asphalt	Q0 -1743,19320 -2027,19326 -2152,19331 -2205,19331
+Schwarzspechtweg: Asphalt	Q0 -2152,19331 -2158,19119
+Rallenweg: asphaltiert	Q0 -2307,20958 -1978,20928
+#: note: die ADFC-Karte meint hier "mäßig geeignet"
+Mühlenweg: Waldweg	Q1 -1978,20928 -1843,20925 -1700,20971 -1559,20931 -1040,20962 -843,20940 -750,20878 -290,20665 -46,20553 112,20568 537,20684 666,20723
+Försterweg: Waldweg, etwas holprig	Q2 -1978,20928 -1968,20850 -1400,20615 -1253,20546 -1243,20471 -1050,20281 -871,20225 -823,20184
 #: by: ^^^
 #: by: hoffmannbeck:
 Rüdnitzer Zeile: mäßiger Beton	Q1 3581,20008 3513,19961 3412,20105 3342,20050
@@ -1689,6 +1693,11 @@ Melanchthonstr. (Spandau): grobes Kopfsteinpflaster	Q3 -4143,12336 -4160,12512
 (Südpark): wassergebundene Decke	Q1 -3711,11659 -3726,11773 -3826,11901 -3890,11992 -3985,12056 -4040,12050
 (Südpark): wassergebundene Decke	Q1 -3894,11709 -3918,11803 -4064,11965 -4040,12050 -4085,12081 -4128,12196 -4143,12336
 (Heerstr. - Dorfstr.): fester Waldweg	Q2 -3163,11492 -3004,12251 -2870,12425 -2778,12407
+(Glühwürmchenweg - Pionierstr.): rauher Asphalt	Q1 -6187,16296 -6162,16287 -6018,16250 -5960,16441
+#: XXX: Auch östlich des Goldkäferweges?
+Maikäferweg: asphaltiert	Q0 -6478,16674 -6866,16846 -6984,16860 -7090,16876 -7212,16862
+#: XXX: Auch südlich des Glühwürmchenweg?
+Goldkäferweg: asphaltiert	Q0 -6866,16846 -6975,16550 -7012,16446 -7049,16448
 #: by: ^^^
 #: by: Detlef Herzog:
 Abbestr.: Kopfsteinpflaster	Q2 4693,12068 4755,12219 4829,12357
@@ -1712,7 +1721,7 @@ Greifenhagener Str.: Kopfsteinpflaster	Q2 11040,15398 11055,15504 11093,15771
 Greifenhagener Str.: Kopfsteinpflaster	Q2 11232,16037 11306,16194 11341,16273 11397,16405
 #: note: ^^^
 Ruppiner Str.: Asphalt	Q0 10150,14525 10070,14678 10043,14735 10011,14810
-#: XXX: Helmut (hweber) sagt hierzu: ordentliche Qualität (Asphalt). Die ADFC-Karte saht hier "mäßig geeignet". 2:1 für Q2
+#: XXX: Helmut (hweber) sagt hierzu: ordentliche Qualität (Asphalt) (aber meint er überhaupt diese Straße?). Die ADFC-Karte sagt hier "mäßig geeignet". 2:1 für Q2
 (Uferweg am Invalidenfriedhof): Kopfsteinpflaster mittlerer Qualität	Q2 8337,13541 7968,14190
 #: XXX: Katha hat hier "Kopfsteinpflaster, schlechte Straße" geschrieben, die ADFC-Karte sagt hier "gut geeignet". 2:1 für Q1
 Zermatter Str.: Kopfsteinpflaster besserer Qualität 	Q1 6653,17696 6761,17741 6859,17753
@@ -1802,7 +1811,7 @@ Löptener Str.: sehr guter Asphalt	N 10989,-1904 10760,-1931
 #: by: Rainer Schulz-Ehrcke:
 Darmstädter Str.: sehr guter Asphalt	N 4456,10092 4623,10066
 #: by: Andreas (stratz...):
-#: XXX: mit 13 km/h Maximalgeschwindigkeit gekennzeichnet?
+#: XXX: mit 13 km/h Maximalgeschwindigkeit gekennzeichnet? später die Aussage: "man kann auch schneller fahren..."
 Wuthenowstr.: Verbundsteinpflaster	Q2 5683,5672 5840,5679
 #: by: Tonio Green:
 Ufnaustr.: guter Asphalt	Q0 4429,13763 4455,13567
@@ -1821,8 +1830,10 @@ Lansstr.: mäßiges Kopfsteinpflaster	Q2 3054,5677 2953,5606 2785,5482
 #: by: Petzold:
 Krumme Str. (Bohnsdorf): Beton	Q0 21945,-431 22004,-489 22201,-503 22275,-461
 #: by: Angelika (bt)
-Prinz-Eugen-Str.: mäßiges Kopfsteinpflaster	Q2	N 7542,15839 7649,15726 7796,15590
-#: by: Hubertus Fürther:
+Prinz-Eugen-Str.: mäßiges Kopfsteinpflaster	Q2 7542,15839 7649,15726 7796,15590
+#: by: Hubertus Fürther: vvv
 Paradiesstr.: sehr guter Asphalt	Q0 21265,334 21168,212 21265,93 21343,-309
+Paradiesstr: schlechtes Kopfsteinpflaster	Q3 21343,-309 21281,-762
+#: by: ^^^
 #: by: Thomas Bergen:
 (Englische Str. - Spreeufer): Asphalt	Q0 5518,12159 5719,12253

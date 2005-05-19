@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: read-gps-formats.t,v 1.3 2005/04/16 18:23:32 eserte Exp $
+# $Id: read-gps-formats.t,v 1.4 2005/05/19 00:05:31 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -14,6 +14,7 @@ use lib ("$FindBin::RealBin/..",
 
 use Route;
 use Strassen::Core;
+use Getopt::Long;
 
 BEGIN {
     if (!eval q{
@@ -25,11 +26,14 @@ BEGIN {
     }
 }
 
+my $v;
 my $miscdir = "$FindBin::RealBin/../misc";
 my $gpsmandir = "$miscdir/gps_data";
 my $datadir = "$FindBin::RealBin/../data";
 my $mapserverdir = "$FindBin::RealBin/../mapserver/brb/data";
 my $isdir = "$FindBin::RealBin/..//projects/infrasystem/data/transfer";
+
+GetOptions("v!" => \$v) or die "usage!";
 
 my @gps_formats       = (
 			 ["$miscdir/mps_examples/BERNAU~1.MPS", "MPS"],
@@ -51,6 +55,7 @@ plan tests => 2*@gps_formats + @strassen_formats;
 
 for my $def (@gps_formats) {
     my($file, $fmt) = @$def;
+    print STDERR "$file ($fmt)...\n" if $v;
  SKIP: {
 	my $tests = 2;
 	skip("File $file not available", $tests) if !-f $file;
@@ -65,6 +70,7 @@ for my $def (@gps_formats) {
 
 for my $def (@strassen_formats) {
     my($file, $fmt) = @$def;
+    print STDERR "$file ($fmt)...\n" if $v;
  SKIP: {
 	my $tests = 1;
 	skip("File $file not available", $tests) if !-f $file;

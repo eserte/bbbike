@@ -1295,8 +1295,11 @@ Bogenstr.: schlechtes Kopfsteinpflaster	Q3 912,2965 967,2943 1017,2823
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Kiesweg	Q2 821,2714 1017,2823 1126,2885 1262,2975 1453,3085 1659,3226 1687,3244 1715,3257 1977,3414 2271,3571
 Matternstr.: mäßiges Kopfsteinpflaster	Q2 13798,13003 13578,12903
 Elßholzstr.: mäßiges Kopfsteinpflaster	Q2 7201,9318 7192,9508 7185,9819
-Schwarzspechtweg	N -1743,19320 -2027,19326 -2152,19331 -2205,19331
-Schwarzspechtweg	N -2152,19331 -2158,19119
+Schwarzspechtweg: Asphalt	Q0 -1743,19320 -2027,19326 -2152,19331 -2205,19331
+Schwarzspechtweg: Asphalt	Q0 -2152,19331 -2158,19119
+Rallenweg: asphaltiert	Q0 -2307,20958 -1978,20928
+Mühlenweg: Waldweg	Q1 -1978,20928 -1843,20925 -1700,20971 -1559,20931 -1040,20962 -843,20940 -750,20878 -290,20665 -46,20553 112,20568 537,20684 666,20723
+Försterweg: Waldweg, etwas holprig	Q2 -1978,20928 -1968,20850 -1400,20615 -1253,20546 -1243,20471 -1050,20281 -871,20225 -823,20184
 Rüdnitzer Zeile: mäßiger Beton	Q1 3581,20008 3513,19961 3412,20105 3342,20050
 Johann-Sigismund-Str.: mäßiges Kopfsteinpflaster	Q2 2898,9794 2938,9935 2963,10078
 Ueckermünder Str.: Asphalt	Q0 10008,16330
@@ -1363,6 +1366,9 @@ Melanchthonstr. (Spandau): grobes Kopfsteinpflaster	Q3 -4143,12336 -4160,12512
 (Südpark): wassergebundene Decke	Q1 -3711,11659 -3726,11773 -3826,11901 -3890,11992 -3985,12056 -4040,12050
 (Südpark): wassergebundene Decke	Q1 -3894,11709 -3918,11803 -4064,11965 -4040,12050 -4085,12081 -4128,12196 -4143,12336
 (Heerstr. - Dorfstr.): fester Waldweg	Q2 -3163,11492 -3004,12251 -2870,12425 -2778,12407
+(Glühwürmchenweg - Pionierstr.): rauher Asphalt	Q1 -6187,16296 -6162,16287 -6018,16250 -5960,16441
+Maikäferweg: asphaltiert	Q0 -6478,16674 -6866,16846 -6984,16860 -7090,16876 -7212,16862
+Goldkäferweg: asphaltiert	Q0 -6866,16846 -6975,16550 -7012,16446 -7049,16448
 Abbestr.: Kopfsteinpflaster	Q2 4693,12068 4755,12219 4829,12357
 Kuglerstr.: schlechtes Kopfsteinpflaster	Q3 11618,16183 11341,16273 11018,16358
 Justus-von-Liebig-Str.: Asphalt	Q0 19495,2535 19878,2899
@@ -1431,5 +1437,7 @@ Charlottenburger Str.: mäßiger Asphalt	Q1 13727,16085 13294,16256 13045,16368 12
 Kurfürstenstr. (Lankwitz): Asphalt	Q0 6271,1684 6176,1876 6021,2071 5951,2182 5909,2307 5812,2604
 Lansstr.: mäßiges Kopfsteinpflaster	Q2 3054,5677 2953,5606 2785,5482
 Krumme Str. (Bohnsdorf): Beton	Q0 21945,-431 22004,-489 22201,-503 22275,-461
+Prinz-Eugen-Str.: mäßiges Kopfsteinpflaster	Q2 7542,15839 7649,15726 7796,15590
 Paradiesstr.: sehr guter Asphalt	Q0 21265,334 21168,212 21265,93 21343,-309
+Paradiesstr: schlechtes Kopfsteinpflaster	Q3 21343,-309 21281,-762
 (Englische Str. - Spreeufer): Asphalt	Q0 5518,12159 5719,12253
