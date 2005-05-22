@@ -342,11 +342,16 @@ EOF
        text  => 'Ebertstraße, zwischen Behrenstraße und Dorotheenstraße, Straße des 17.Juni, zwischen Großen Stern und Entlastungsstraße sowie zwischen Entlastungsstraße und Platz des 18. März Veranstaltung. Straßen gesperrt. Dauer: 14.05.2004, 18.00 Uhr bis 15.04.2004, 24.00 Uhr ',
        type  => 'gesperrt',
      },
-     { from  => 1084485600, # 2004-05-14 00:00
-       until => 1084741200, # 2004-05-16 23:00
-       file  => 'hermannstr.bbd',
-       text  => 'Hermannstr. (Neukölln) in beiden Richtungen, zwischen Flughafenstr. und Thomasstr. Veranstaltung, Straße vollständig gesperrt (bis 16.05. 23 Uhr)',
+     { from  => 1116554400, # 2005-05-20 04:00
+       until => 1116885600, # 2005-05-24 00:00
+       text  => 'Hermannstraße, Straßenfest zwischen Flughafenstraße und Thomasstraße, Dauer: 21.05.2005 04:00 Uhr bis 23.05.2005',
        type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 7043,15793 7198,15656
+userdel	2 7043,15793 6914,15908
+userdel	2 7198,15656 7288,15579
+userdel	2 6790,16018 6914,15908
+EOF
      },
      { from  => 1084485600, # 2004-05-14 00:00
        until => 1084741200, # 2004-05-16 23:00
@@ -781,7 +786,7 @@ EOF
        text  => 'Lückstr. Richtung stadteinwärts zwischen Schlichtallee und Wönnichstr. Baustelle, Straße gesperrt (bis Mitte 10.2004) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 16655,10622 16460,10699 16153,10818 16032,10842
+userdel	1 16655,10622 16585,10650 16460,10699 16153,10818 16032,10842
 EOF
      },
      { from  => 1094627730, # 2004-09-08 09:15
@@ -1185,12 +1190,13 @@ EOF
 userdel	q4 3125,88753 2788,89447
 EOF
      },
-     { from  => 1114726594, # 2005-04-29 00:16
-       until => 1116021600, # 2005-05-14 00:00
-       text  => 'Volkradstr. (Lichtenberg) Richtung Rummelsburger Str. zwischen Sewanstr. und Rummelsburger Str. Baustelle, Fahrtrichtung gesperrt (bis 13.05.2005)',
-       type  => 'gesperrt',
+     { from  => 1116572111, # 2005-05-20 08:55
+       until => 1116885600, # 2005-05-24 00:00
+       text  => 'Volksradstr. (Friedrichsfelde) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis 23.05.2005)',
+       type  => 'handicap',
        data  => <<EOF,
-userdel	1 17475,10442 17427,10259
+userdel	q4 17475,10442 17621,10994
+userdel	q4 17475,10442 17427,10259
 EOF
      },
      { from  => 1100991600, # 2004-11-21 00:00
@@ -1612,8 +1618,8 @@ userdel	1 13386,16408 13797,16237
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
-       until => 1114370892, # XXX aufgehoben 2005-06-23 00:00
-       text  => 'L 200; (Bernau-Biesenthal); B 2, OD Rüdnitz grundh. Ausbau, Bau Kreisverk. Vollsperrung 29.03.2005-22.06.2005 ',
+       until => 1119477600, # 2005-06-23 00:00
+       text  => 'B 2; (Bernau-Biesenthal); B 2, OD Rüdnitz grundh. Ausbau, Bau Kreisverk. Vollsperrung 29.03.2005-22.06.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 25095,35601 24915,35340
@@ -1632,7 +1638,7 @@ EOF
        text  => 'L 291; (Oderberger Str.); OD Eberswalde, Einm. Breite Str. Straßenbauarbeiten Vollsperrung 24.03.2005-30.04.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 38035,49183 37875,48253
+userdel	q4 38035,49183 37900,48350 37875,48253
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -1926,6 +1932,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -15062,76937 -14862,76637
+EOF
+     },
+     { from  => 1116885600, # 2005-05-24 00:00
+       until => 1117490400, # 2005-05-31 00:00
+       text  => 'L 35; (Eisenbahnstr.); OL Fürstenwalde, zw. Wassergasse und Frankfurter Str. Frühlingsfest Vollsperrung 25.05.2005-30.05.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 55393,-4240 55563,-4690
 EOF
      },
     );

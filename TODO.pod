@@ -24,6 +24,14 @@ Legend:
 
 =item * (H3)
 
+Unterstützung für E<quot>Persönliche WegeE<quot> (oder user-defined
+layers). Zwei Typen: routingfähig (automatisch per
+E<quot>add...E<quot> in das Straßennetz eingebunden) oder
+nicht-routingfähig. Editiermöglichkeiten für diesen Layer (mit
+Verwendung von datachange.log). Möglichkeit der Veröffentlichung.
+
+=item * (H3)
+
 Ich sollte GPX als Ein/Ausgabeformat unterstützen: L<http://www.topografix.com/gpx_resources.asp>
 
 =item * (H3)
@@ -1088,6 +1096,9 @@ L<http://www.perlmonks.org/index.pl?node_id=355073>
 
 GPS-Tracks in BRB: L<http://www.das-rad-ruft.de/Radtouren/index.php?Bundesland=11&id=431&action=Suche>
 
+Bereits eingepflegt: Ahrensfede-Gamegrund-Niederfinow.trk,
+Berlin-Bredereiche.trk, Teile von anderen.
+
 =item * (E3)
 
 Radrouten im Raum Potsdam:
@@ -1236,7 +1247,9 @@ nachzulesen.
 
  gpsbabel kann zwischen einer großen Anzahl von GPS-Formaten
  konvertieren. Evtl. optional in bbbike integrieren. Siehe auch:
- L<http://gpsbabel.sourceforge.net/>
+ L<http://gpsbabel.sourceforge.net/>. Evtl. ein Strassen::Gpsbabel
+ schreiben, welches alle gpsbabel-unterstützten Formate
+ lesen/schreiben könnte.
 
 =item * Waypoints und Tracks im Internet:
 

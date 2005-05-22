@@ -1,7 +1,86 @@
 @temp_blocking = ();
-$#temp_blocking = 122;
+$#temp_blocking = 53;
 push @temp_blocking,
 (
+       {
+         'until' => 1116885600,
+         'text' => 'Hermannstraße, Straßenfest zwischen Flughafenstraße und Thomasstraße, Dauer: 21.05.2005 04:00 Uhr bis 23.05.2005',
+         'from' => 1116554400,
+         'data' => 'userdel	2 7043,15793 7198,15656
+userdel	2 7043,15793 6914,15908
+userdel	2 7198,15656 7288,15579
+userdel	2 6790,16018 6914,15908
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'until' => 1117576800,
          'text' => 'L 40; (Großbeeren-Güterfelde); zw. Großbeeren u. Neubeeren Neubau Bauwerk Vollsperrung 24.09.2004-31.05.2005 ',
@@ -77,7 +156,15 @@ userdel	q4 43553,20466 43110,19818
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1116885600,
+         'text' => 'Volksradstr. (Friedrichsfelde) in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis 23.05.2005)',
+         'from' => 1116572111,
+         'data' => 'userdel	q4 17475,10442 17621,10994
+userdel	q4 17475,10442 17427,10259
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -205,7 +292,14 @@ userdel	q4 -18080,-12637 -17374,-13449
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'until' => 1119477600,
+         'text' => 'B 2; (Bernau-Biesenthal); B 2, OD Rüdnitz grundh. Ausbau, Bau Kreisverk. Vollsperrung 29.03.2005-22.06.2005 ',
+         'from' => 1111960800,
+         'data' => 'userdel	q4 25095,35601 24915,35340
+',
+         'type' => 'handicap'
+       },
        {
          'until' => 1120168800,
          'text' => 'L 23; (Joachimsthal-Templin); OD Joachimsthal Neubau Durchlass Vollsperrung 29.03.2005-30.06.2005 ',
@@ -405,6 +499,14 @@ userdel	q4 1872,-1118 1680,-1011
          'text' => 'L 222; (Gransee-Menz); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-24.06.2005 ',
          'from' => 1116194400,
          'data' => 'userdel	q4 -15062,76937 -14862,76637
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1117490400,
+         'text' => 'L 35; (Eisenbahnstr.); OL Fürstenwalde, zw. Wassergasse und Frankfurter Str. Frühlingsfest Vollsperrung 25.05.2005-30.05.2005 ',
+         'from' => 1116885600,
+         'data' => 'userdel	q4 55393,-4240 55563,-4690
 ',
          'type' => 'handicap'
        }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeStats.pm,v 1.11 2005/04/05 22:29:56 eserte Exp $
+# $Id: BBBikeStats.pm,v 1.12 2005/05/21 11:48:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ package BBBikeStats;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
 
 use Strassen::Util;
 use BBBikeUtil;
@@ -161,7 +161,7 @@ sub tk_display_result {
     Tk::grid($t->Frame(-height => 1, -background => "black"),
 	     -sticky => "ew", -columnspan => 10);
 
-    Tk::grid($t->Label(-text => M("Sonstige Behinderungen"), -font => $font{"bold"}),
+    Tk::grid($t->Label(-text => M("Sonstige Beeinträchtigungen"), -font => $font{"bold"}),
 	     -sticky => "w", -columnspan => 3);
     $grid_row{"Handicap1"} = ($t->gridSize)[1]-1;
     for my $cat (sort grep { /^q\d$/ } keys %$category_attrib) {

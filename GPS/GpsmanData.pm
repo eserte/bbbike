@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.34 2005/05/18 22:43:54 eserte Exp $
+# $Id: GpsmanData.pm,v 1.35 2005/05/20 23:17:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.35 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -392,8 +392,8 @@ sub parse_track {
     $self->parse_and_set_coordinate($wpt, \@f, \$f_i);
 
     # This are the only diffs to TYPE_WAYPOINT:
-    # The "~" thingy is a private extension
-    my($acc,$alt) = $f[4] =~ /^(~*)(.*)/;
+    # The "~" and "?" thingies are a private extension
+    my($acc,$alt) = $f[4] =~ /^(~*|\?)(.*)/;
     $wpt->Accuracy(length($acc)); # 0=accurate, 2=very inaccurate
     $wpt->Altitude($alt);
     $wpt;

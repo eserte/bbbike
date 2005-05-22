@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.52 2005/04/27 00:43:38 eserte Exp $
+# $Id: Core.pm,v 1.52 2005/04/27 00:43:38 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -257,10 +257,10 @@ sub read_from_fh {
         }
     }
     if (@block_directives) {
-	die "The following block directives were not closed: `" . join(" ", map { "@$_" } @block_directives) . "'";
+	die "The following block directives were not closed: `" . join(" ", map { "@$_" } @block_directives) . "'\n";
     }
     if (@line_directive) {
-	die "Stray line directive `@line_directive' at end of file";
+	die "Stray line directive `@line_directive' at end of file\n";
     }
     warn "... done\n" if ($VERBOSE && $VERBOSE > 1);
     close $fh;

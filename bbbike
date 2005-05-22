@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.166 2005/05/19 00:08:55 eserte Exp $
+# $Id: bbbike,v 3.167 2005/05/21 11:48:49 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -15,6 +15,7 @@
 
 package main;
 
+## This is list is not maintained anymore:
 #perl2exe_include Tk/Checkbutton.pm
 
 BEGIN { $Devel::Trace::TRACE = 0 }
@@ -26,7 +27,12 @@ use lib ("$FindBin::RealBin",
 	);
 # To create the Devel::Size output, start bbbike with:
 #     env BBBIKE_DEBUG=Devel::Size ./bbbike | & grep size
-BEGIN { eval 'use BBBikeDebug' if $ENV{BBBIKE_DEBUG} }
+BEGIN {
+    if ($ENV{BBBIKE_DEBUG}) {
+	eval 'use BBBikeDebug';
+	die $@ if $@;
+    }
+}
 
 BEGIN {
     my $nosplash = grep { $_ eq '-nosplash' } @ARGV;
@@ -46,40 +52,6 @@ BEGIN {
 }
 
 use Config;
-
-## DEBUG_BEGIN
-#  BEGIN {
-#      $BBBikeDebug::start = time;
-#      if ($Config{'optimize'} =~ /PERL_DEBUGGING_MSTATS/ &&
-#  	eval 'require Devel::Peek; 1') {
-#  	eval q{
-#  	    sub mymstat {
-#  		my $time = defined &Tk::timeofday ? Tk::timeofday() : time;
-#  		printf STDERR "%-30s: %.2f\n", "@_", $time-$BBBikeDebug::start;
-#  		Devel::Peek::mstat();
-#  	    }
-#  	}
-#      } elsif ($ENV{BBBIKE_DEBUG} =~ /devel::size/i &&
-#		eval 'require Devel::Size; 1') {
-#  	eval q{
-#	    sub mymstat {
-#		my $time = defined &Tk::timeofday ? Tk::timeofday() : time;
-#  		printf STDERR "%-30s: %.2f\n", "@_", $time-$BBBikeDebug::start;
-#		print "size=".Devel::Size::total_size(\%main::) . " (@_)\n";
-#	    }
-#       }
-#      } else { 
-#  	eval q{
-#  	    sub mymstat {
-#  		my $time = defined &Tk::timeofday ? Tk::timeofday() : time;
-#  		printf STDERR "%-30s: %.2f\n", "@_", $time-$BBBikeDebug::start;
-#  	    }
-#  	}
-#      }
-#      warn $@ if $@;
-#      mymstat("Begin");
-#  }
-## DEBUG_END
 
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before autouse BBBikeMail, Text::Wrap, File::Copy");}
@@ -213,7 +185,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.166 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.167 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -805,14 +777,14 @@ eval { local $SIG{'__DIE__'};
    ['steigungoptimierung', '!', 0, var => \$steigung_optimierung,
     label => M"Steigungsoptimierung"],
    ['handicapoptimierung','!',0,
-    label => M"Sonstige Behinderungen beachten", var => \$handicap_s_optimierung],
+    label => M"Sonstige Beeinträchtigungen beachten", var => \$handicap_s_optimierung],
    ['handicapwerte','!',{q0 => 100,
 			 q1 => 25,
 			 q2 => 18,
 			 q3 => 13,
 			 q4 => 5, # z.B. Fußgängerzonen
 			},
-    label => M"Sonstige Behinderungen konfigurieren", var => \%handicap_s_speed,
+    label => M"Sonstige Beeinträchtigungen konfigurieren", var => \%handicap_s_speed,
     nogui => 1], # XXX Tk::Getopt can't handle this yet
    ['sperre','!',undef,		alias => [qw(gesperrt)],
     label => M"Gesperrte Straßen beachten", nogui => 1,
@@ -2150,7 +2122,6 @@ sub do_iconframe {
 			-variable => \$p_draw{'hoehe'},
 			-command => sub { plot('p','hoehe') });
 
-#XXX include comments_cyclepath into radwege?
     $strcm->checkbutton(-label => M"Radwege",
 			-variable => \$str_draw{'rw'},
 			-command => sub { plot('str','rw')},
@@ -2229,7 +2200,7 @@ sub do_iconframe {
 	      );
 	}
     }
-    $strcm->checkbutton(-label => M"Sonstige Behinderungen",
+    $strcm->checkbutton(-label => M"Sonstige Beeinträchtigungen",
 			-variable => \$str_draw{'hs'},
 			-command => sub { plot('str','hs') },
 		       );
@@ -2256,17 +2227,20 @@ sub do_iconframe {
 	$fragezeichen_check_index = $strcm->index('last');
     }
     if ($advanced) {
-#XXXXXXXXXXXXXXXXX
-	$strcm->checkbutton(-label => M"Kommentare",
-			    -variable => \$str_draw{'comm'},
-			    -command => sub { plot('str','comm') },
-			   );
+#XXXXXXXXXXXXXXXXX del?
+	if (0) {
+	    $strcm->checkbutton(-label => M"Kommentare",
+				-variable => \$str_draw{'comm'},
+				-command => sub { plot('str','comm') },
+			       );
+	}
 #XXXXXXXXXXXXXXXXX do it nicer, maybe using an "all" category?
 	$strcm->cascade(-label => M"Kommentarkategorien");
 	{
 	    my $c_bpcm = $strcm->Menu(-title => M"Kommentarkategorien");
 	    $strcm->entryconfigure("last", -menu => $c_bpcm);
 	    foreach my $_type (@comments_types) {
+		next if $_type =~ /^(cyclepath|mount)$/; # handled elsewhere
 		my $type = my $label = $_type;
 		my $def = 'comm-' . $type;
 		$c_bpcm->checkbutton
@@ -2348,11 +2322,20 @@ sub do_iconframe {
 			 -accelerator => 'Shift-Q',
 			);
     my $qualitaet_l_check_index = $lstrcm->index('last');
-    $lstrcm->checkbutton(-label => M"Sonstige Behinderungen",
+    $lstrcm->checkbutton(-label => M"Sonstige Beeinträchtigungen",
 			 -variable => \$str_draw{'hl'},
 			 -command => sub { plot('str','hl') },
 			);
     my $handicap_l_check_index = $lstrcm->index('last');
+    $lstrcm->checkbutton(-label => M"Radwege im Umland",
+			-variable => \$str_draw{'comm-cyclepath'},
+			 -command => sub {
+			     my $file = get_strassen_file("comments_cyclepath");
+			     plot('str', 'comm-cyclepath', Filename => $file);
+			 },
+			 -accelerator => 'Shift-R',
+			);
+    my $radwege_l_check_index = $strcm->index('last');
     menu_entry_up_down($lstrcm, $tag_group{'str_l'});
     menuright($landstrasse_check, $lstrcm);
     menuarrow($lstrcmb, $lstrcm, $col++, -special => 'LAYER');
@@ -3221,7 +3204,7 @@ sub do_iconframe {
 			   }
 		       },
 		     );
-    $sb2m->checkbutton(-label => M"Optimierung der sonstigen Behinderungen",
+    $sb2m->checkbutton(-label => M"Optimierung der sonstigen Beeinträchtigungen",
 		      -variable => \$handicap_s_optimierung,
 		     );
     $sb2m->checkbutton(-label => M"Ampel-Optimierung",
@@ -4130,7 +4113,15 @@ sub do_iconframe {
     bind_nomod($top, "<f>" => sub { $flaechen_check->invoke });
     bind_nomod($top, "<p>" => sub { $hs_check->invoke }) if $hs_check;
 
-    bind_nomod($top, "<R>" => sub { $strcm->invoke($radwege_check_index) });
+    bind_nomod($top, "<R>" => sub {
+		   # Same problems as in <Q>, see below.
+		   if ($str_draw{'l'} || $str_draw{'comm-cyclepath'}) {
+		       $lstrcm->invoke($radwege_l_check_index);
+		   }
+		   if ($str_draw{'s'} || $str_draw{'rw'} || !$str_draw{'l'}) {
+		       $strcm->invoke($radwege_check_index);
+		   }
+	       });
     bind_nomod($top, "<a>" => sub { $strcm->invoke($ampeln_check_index) });
     bind_nomod($top, "<g>" => sub { $strcm->invoke($sperre_check_index) });
     bind_nomod($top, "<Q>" => sub {
@@ -4777,7 +4768,7 @@ sub define_item_attribs {
 	 'Q1' => 'YellowGreen',
 	 'Q2' => 'gold',
 	 'Q3' => 'red',
-	 # sonstige Behinderungen, die nicht auf schlechte Qualität zurückzuführen
+	 # sonstige Beeinträchtigungen, die nicht auf schlechte Qualität zurückzuführen
 	 # sind und nur die Geschwindigkeit reduzieren. Geschwindigkeitsreduktion
 	 # wie bei Q.
 	 'q0' => 'DarkSeaGreen4',
@@ -5089,8 +5080,8 @@ sub define_item_attribs {
 	 'rw' => [M"Radweg",     M"Radwege", 0],
 	 'qs' => [M"Straßenqualität", M"Straßenqualität", 0],
 	 'ql' => [M"Straßenqualität (Landstraße)", M"Straßenqualität (Landstraße)", 0],
-	 'hs' => [M"Sonst. Behinderungen", M"Sonst. Behinderungen", 0],
-	 'hl' => [M"Sonst. Behinderungen (Landstraße)", M"Sonst. Behinderungen (Landstraße)", 0],
+	 'hs' => [M"Sonst. Beeinträchtigungen", M"Sonst. Beeinträchtigungen", 0],
+	 'hl' => [M"Sonst. Beeinträchtigungen (Landstraße)", M"Sonst. Beeinträchtigungen (Landstraße)", 0],
 	 'nl' => [M"Unbeleuchtete Straße", M"Unbeleuchtete Straßen", 0],
 	 'gr' => [M"Grüner Weg", M"Grüne Wege", 0],
 	 'comm' => [M"Kommentare", M"Kommentare", 0],
@@ -5145,15 +5136,15 @@ sub define_item_attribs {
 	 'Q3' => [M"schlechter Belag", undef, undef,
 		  M"schlechter Belag (Katzenkopfsteinpflaster oder unbefestigte Wege)"],
 	 'q0' => [M"keine", undef, undef,
-		  M"keine Behinderungen"],
+		  M"keine Beeinträchtigungen"],
 	 'q1' => [M"auf ca. 25 km/h", undef, undef,
-		  M"Behinderungen auf ca. 25 km/h"],
+		  M"Beeinträchtigungen auf ca. 25 km/h"],
 	 'q2' => [M"auf ca. 18 km/h", undef, undef,
-		  M"Behinderungen auf ca. 18 km/h"],
+		  M"Beeinträchtigungen auf ca. 18 km/h"],
 	 'q3' => [M"auf ca. 13 km/h", undef, undef,
-		  M"Behinderungen auf ca. 13 km/h"],
+		  M"Beeinträchtigungen auf ca. 13 km/h"],
 	 'q4' => [M"auf Schrittgeschwidigkeit", undef, undef,
-		  M"Behinderungen auf Schrittgeschwidigkeit"],
+		  M"Beeinträchtigungen auf Schrittgeschwidigkeit"],
 	);
     foreach (@Radwege::category_order) {
 	if (defined $Radwege::category_code{$_}) {
@@ -6029,6 +6020,9 @@ sub set_bindings {
 	if $popup_menu;
 
     my $alt_mouse1 = sub {
+## DEBUG_BEGIN
+#benchbegin("Alt Mouse1");
+## DEBUG_END	   
 	if ($alt_set_route_point{$map_mode}) {
 	    return $alt_set_route_point{$map_mode}->(@_);
 	}
@@ -6036,6 +6030,9 @@ sub set_bindings {
 	    freerec_sub(@_);
 	}
 	freedraw_sub(@_);
+## DEBUG_BEGIN
+#benchend();
+## DEBUG_END	   
     };
 
     foreach (qw(Alt Shift Lock)) {
@@ -7435,9 +7432,9 @@ sub enter_opt_preferences {
 });
 
     ####
-    $act_page[4] = $nb->add("h", -label => M"Sonst. Behinderungen");
+    $act_page[4] = $nb->add("h", -label => M"Sonst. Beeinträchtigungen");
     $gridy = 0;
-    $act_page[4]->Label(-text => M"Sonst. Behinderungen",
+    $act_page[4]->Label(-text => M"Sonst. Beeinträchtigungen",
 		     -font => $font{'bold'})->grid(-row => $gridy,
 						   -column => 0);
     $act_page[4]->Label(-text => M"max. Geschwindigkeit",
@@ -8448,6 +8445,7 @@ sub plotstr {
 	    $draw_sub->($ret); # XXX evtl. den Code mit eval erzeugen
 	}
 # XXXXXX can this ever happen? XXXXXXXXXXXXXXXXXXXXXXXXXXX
+# XXX Yes: If a bbd file contains a half-valid line (with name and cat, but without coords)
 if ($str->pos != scalar @{$str->{Data}}) { status_message("warning: " . $str->pos . " != " . scalar(@{$str->{Data}}) . "!", "dialog", "err") }
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 	warn sprintf "Plotting streets took %.3fs\n", Tk::Time_So_Far()-$bench
@@ -11570,6 +11568,9 @@ sub set_coord_output_sub {
 # Fügt interaktiv die angeklickte Stelle in die Route (über die
 # Funktion addpoint_xy) ein, erneuert die Kilometerangaben.
 sub addpoint_inter {
+## DEBUG_BEGIN
+#benchbegin();
+## DEBUG_END	   
     my(@tags) = $c->gettags('current');
     return if !@tags;
     my $res;
@@ -11584,13 +11585,23 @@ sub addpoint_inter {
     updatekm();
     set_flag('via');
     set_flag('ziel');
-    restack_delayed();
-    update_route_strname();
+    # XXX only for slowcpu?
+    if (!($edit_mode || $edit_normal_mode)) {
+	# restack_delayed is very slow for many points, so disabled here...
+	restack_delayed();
+	update_route_strname();
+    }
+## DEBUG_BEGIN
+#benchend();
+## DEBUG_END	   
 }
 
 # Eingaben: $x und $y als realcoords, $xx und $yy als Canvas-Koords
 sub addpoint_xy {
     my($x, $y, $xx, $yy) = @_;
+## DEBUG_BEGIN
+#benchbegin();
+## DEBUG_END	   
 
     if (!defined $xx) {
 	if ($coord_system ne 'standard') {
@@ -11840,6 +11851,10 @@ sub addpoint_xy {
 	$route_distance[$nr-1] = 0 if !defined $route_distance[$nr-1];
 	$route_distance[$nr]   = $route_distance[$nr-1] + $etappe;
     }
+
+## DEBUG_BEGIN
+#benchend();
+## DEBUG_END	   
 
     1;
 }
@@ -12560,7 +12575,9 @@ sub scale_width {
     }
     # rearrange outline_text
     # XXX performance is quite bad (about 0.6s for all U+S-Bahnhöfe)
-    my $t = Tk::timeofday();
+## DEBUG_BEGIN
+#benchbegin("Repositioning labels");
+## DEBUG_END	   
     foreach my $item ($c->find(withtag => 'outlmaster')) {
 	my($x,$y) = $c->coords($item);
 	my $outline_width = 1;
@@ -12582,8 +12599,9 @@ sub scale_width {
 	    }
 	}
     }
-    warn sprintf "Repositioning labels took %.3fs\n", (Tk::timeofday()-$t)
-	if $devel_host;
+## DEBUG_BEGIN
+#benchend();
+## DEBUG_END	   
 
     foreach my $item ($c->find(withtag => 'strnr')) {
 	my $master = ($c->gettags($item))[2];
@@ -13528,7 +13546,7 @@ sub search_route {
 			  ExtraArgsName	 => 'Qualitaet',
 			 },
 			 {OptSwitch	 => \$handicap_s_optimierung,
-			  OptName	 => 'Sonstige Behinderungen',
+			  OptName	 => 'Sonstige Beeinträchtigungen',
 			  Speed          => \%handicap_s_speed,
 			  MakeNet	 => \&make_handicap_net,
 			  CatPrefix	 => 'q',
@@ -15973,18 +15991,18 @@ sub delayed_sub {
     destroy_delayed_sub($name);
     $delayed_sub_timer{$name} = $top->after
       ($ms, sub {
-	   my $t = Tk::timeofday();
+## DEBUG_BEGIN
+#benchbegin("Delayed sub $name");
+## DEBUG_END	   
 	   IncBusy($top) if $busy;
 	   eval {
-	       warn "restack\n"
-		 if $verbose;
 	       $sub->();
-	       warn sprintf("Delayed sub $name took %.3fs\n",
-			    Tk::timeofday()-$t)
-		 if $verbose;
 	   };
 	   warn __LINE__ . ": $@" if $@;
 	   DecBusy($top) if $busy;
+## DEBUG_BEGIN
+#benchend();
+## DEBUG_END	   
        });
 }
 

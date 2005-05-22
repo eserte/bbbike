@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Gpsman.pm,v 1.4 2005/05/19 00:05:42 eserte Exp $
+# $Id: Gpsman.pm,v 1.5 2005/05/20 23:12:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
@@ -73,24 +73,28 @@ sub read_gpsman {
 
     $self->{Data} = [];
 
+    my $cat = $args{cat} || "X";
+
     if ($gpsman->Type eq GPS::GpsmanData::TYPE_WAYPOINT()) {
 	for my $wpt (@{ $gpsman->Waypoints }) {
 	    my $name = $wpt->Ident;
 	    if (defined $wpt->Comment && $wpt->Comment ne "") {
 		$name .= " (" . $wpt->Comment . ")";
 	    }
-	    my $cat = "X"; # XXX
 	    my @coords = $convert_coordinates->($wpt);
-	    $self->push([$name, \@coords, $cat]);
+	    if (@coords) {
+		$self->push([$name, \@coords, $cat]);
+	    }
 	}
     } else {
 	my @coords;
 	for my $wpt (@{ $gpsman->Track }) {
 	    push @coords, $convert_coordinates->($wpt);
 	}
-	my $name = $gpsman->Name;
-	my $cat = "X"; # XXX
-	$self->push([$name, \@coords, $cat]);
+	if (@coords) {
+	    my $name = $gpsman->Name;
+	    $self->push([$name, \@coords, $cat]);
+	}
     }
 }
 

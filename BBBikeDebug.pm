@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDebug.pm,v 1.2 2001/08/11 12:49:53 eserte Exp $
+# $Id: BBBikeDebug.pm,v 1.3 2005/05/22 11:02:00 eserte Exp eserte $
 #
 # This is the Debug example from perlfilter.pod
 # Modified by Slaven Rezic
@@ -66,6 +66,55 @@ sub filter {
 	$self->Die("DEBUG_END has no DEBUG_BEGIN", $self->{LineNo});
     }
     return $status;
+}
+
+package main;
+
+use Config;
+
+$BBBikeDebug::start = time;
+if ($Config{'optimize'} =~ /PERL_DEBUGGING_MSTATS/ &&
+    eval { require Devel::Peek; 1 }) {
+    *mymstat = sub {
+	my $time = defined &Tk::timeofday ? Tk::timeofday() : time;
+	printf STDERR "%-30s: %.2f\n", "@_", $time-$BBBikeDebug::start;
+	Devel::Peek::mstat();
+    }
+} elsif ($ENV{BBBIKE_DEBUG} =~ /devel::size/i &&
+	 eval { require Devel::Size; 1 }) {
+    *mymstat = sub {
+	my $time = defined &Tk::timeofday ? Tk::timeofday() : time;
+	printf STDERR "%-30s: %.2f\n", "@_", $time-$BBBikeDebug::start;
+	print "size=".Devel::Size::total_size(\%main::) . " (@_)\n";
+    }
+} else { 
+    *mymstat = sub {
+	my $time = defined &Tk::timeofday ? Tk::timeofday() : time;
+	printf STDERR "%-30s: %.2f\n", "@_", $time-$BBBikeDebug::start;
+    }
+}
+mymstat("Begin");
+
+if (eval { require Time::HiRes; 1 }) {
+    my @bench_stack;
+    *benchbegin = sub {
+	my $sub = shift || (caller(1))[3];
+	my $t0 = [ Time::HiRes::gettimeofday() ];
+	printf STDERR " " x @bench_stack;
+	printf STDERR "%s ...\n", $sub;
+	push @bench_stack, { Time => $t0,
+			     Sub  => $sub,
+			   };
+    };
+    *benchend = sub {
+	my $t1 = [ Time::HiRes::gettimeofday() ];
+	my $bench_data = pop @bench_stack;
+	my $elapsed = Time::HiRes::tv_interval($bench_data->{Time}, $t1);
+	printf STDERR " " x @bench_stack;
+	printf STDERR "%-30s: %.4f\n", $bench_data->{Sub}, $elapsed;
+    };
+} else {
+    *benchbegin = *benchend = sub { };
 }
 
 1;

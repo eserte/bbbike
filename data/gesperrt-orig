@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.24 2005/05/19 00:04:48 eserte Exp $
+# $Id: gesperrt-orig,v 4.24 2005/05/19 00:04:48 eserte Exp eserte $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraßen etc.)
@@ -284,6 +284,7 @@ Braillestr.	1 4433,5315 4512,5199
 Mudrackzeile	1 7009,17778 7043,17667
 Gustav-Müller-Str.	1 7642,8583 7642,8815
 Niederlagstr.	1 9959,12180 9918,12411
+Kolk/Behnitz/Möllentordamm	1 -3029,14656 -3010,14612 -2939,14585 -2920,14637 -2992,14667 -3029,14656
 #
 # Potsdam
 #
@@ -414,8 +415,11 @@ Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15392,12135 15437,12225
 Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6790,16018 6914,15908 7043,15793
 #del: Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14576,16069 14550,16161 14499,16341
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14603,15971 14619,15920 14650,15750
+Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16738,11878 16858,11860 16964,11845
 #: by: Kerstin Pantos:
 Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8770 7642,8815 7570,8863
+#: by: Andreas Mühlhausen:
+Heerstr.: schlecht passierbar	3nocross -4050,11752 -3894,11709 -3711,11659
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Neustädtische Kirchstr.: An der US-Botschaft	3nocross 9100,12627 9112,12499 9126,12413 9141,12320
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -472,6 +476,7 @@ tragen (Treppe mit Kinderwagenrampe)	0:30 13960,9365
 tragen (Treppe)	0:30 8021,12835
 tragen (Treppe)	0:30 8414,12854
 tragen (Treppe)	0:30 8445,12747
+tragen (Treppe)	0:30 17026,11810
 #: add_fragezeichen: wo sind die Treppen genau?
 tragen (zwei kurze Treppen)	0:30 9453,6415
 #: by: Katharina Hoffmann: vvv
