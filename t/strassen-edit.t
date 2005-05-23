@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-edit.t,v 1.1 2005/05/23 22:02:42 eserte Exp $
+# $Id: strassen-edit.t,v 1.2 2005/05/23 22:21:59 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -26,7 +26,7 @@ BEGIN {
     }
 }
 
-plan tests => 1;
+plan tests => 5;
 
 {
     my $s = get_streets();
@@ -78,6 +78,31 @@ Second street\tX 1,2 3,4 5,6
 Fourth street\tX 1,2 3,4 5,6
 EOF
 }
+
+{
+    my $s = Strassen->new_from_data_string(<<EOF, UseLocalDirectives => 1);
+#:
+#: XXX line directive
+First street	X 1,2 3,4
+Second street	X 3,4 1,2
+#: XXX block directive vvv
+Third street	X 3,4 4,5
+Not deleted 1	X 1,2 4,5
+Not deleted 2	X 3,4 5,6
+#: XXX ^^^
+Not deleted 3	X 1,2 4,5
+EOF
+    $s->edit_all_delete_2_coord_lines("1,2", "3,4", "4,5");
+    is($s->as_string, <<EOF, "edit_all_delete_2_coord_lines");
+#: XXX: block directive
+Not deleted 1	X 1,2 4,5
+#: XXX: block directive
+Not deleted 2	X 3,4 5,6
+Not deleted 3	X 1,2 4,5
+EOF
+}
+
+######################################################################
 
 sub get_streets {
     my $s = Strassen->new_from_data_string(<<EOF, UseLocalDirectives => 1);
