@@ -541,7 +541,7 @@ werden "Xcode" genannt und befinden sich entweder auf einer
 gleichnamigen CD (bei älteren Macs) oder im Applications-Ordner unter
 C<Installers/Xcode Tools/Developer.mpkg> (bei neueren Macs).
 
-Es wird auch eine X11- bzw. Darwin-Umgebung benötigt.
+Es wird auch eine X11- bzw. Darwin-Umgebung benötigt (X11SDK-Paket). 
 
 Mac OS Classic wird nicht unterstützt.
 ## but DE
@@ -550,7 +550,7 @@ These can be found either on a CD-ROM of the same name (for older Macs)
 or in the Applications folder under C<Installers/Xcode Tools/Developer.mpkg>
 (for newer Macs).
  
-An X11 environment or Darwin environment is also required.
+An X11 environment or Darwin environment is also required (package X11SDK).
 
 Mac OS Classic is not supported.
 ## yes
