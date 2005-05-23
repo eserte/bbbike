@@ -30,7 +30,7 @@ use base qw(Exporter);
 
 use BBBikeUtil qw(is_in_path);
 
-@EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check),
+@EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check eq_or_diff),
 	   @opt_vars);
 
 # Old logfile
@@ -176,6 +176,30 @@ sub tidy_check {
 		    Test::More::diag($diag);
 		};
     }
+}
+
+if (!eval {
+    require Test::Differences;
+    import Test::Differences;
+    1;
+}) {
+    *eq_or_diff = sub {
+	my($a, $b, $info) = @_;
+
+    SKIP: {
+	    eval {
+		Data::Dumper->VERSION(2.12); # Sortkeys
+	    };
+	    if ($@) {
+		skip("Need recent Data::Dumper (2.12, Sortkeys)", 1);
+	    }
+
+	    local $Data::Dumper::Sortkeys = $Data::Dumper::Sortkeys = 1;
+	    is(Data::Dumper->new([$a],[])->Useqq(1)->Dump,
+	       Data::Dumper->new([$b],[])->Useqq(1)->Dump,
+	       $info);
+	}
+    };
 }
 
 1;
