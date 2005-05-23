@@ -434,10 +434,13 @@ sub id {
 sub as_string {
     my $self = shift;
     my $s = "";
+    my $has_global_directives = 0;
     if ($self->{GlobalDirectives} && keys %{$self->{GlobalDirectives}}) {
 	$s = join("\n", map { "#: $_: $self->{GlobalDirectives}{$_}" } keys %{ $self->{GlobalDirectives} }) . "\n";
+	$s .= "#:\n"; # end global directives
     }
     if ($self->{Directives}) {
+	# XXX write block directives again if possible
 	for my $pos (0 .. $#{$self->{Data}}) {
 	    if ($self->{Directives}[$pos]) {
 		while(my($k,$v) = each %{ $self->{Directives}[$pos] }) {
@@ -580,8 +583,15 @@ sub push_ext {
 sub delete_current { # funktioniert in init/next-Schleifen
     my($self) = @_;
     return if $self->{Pos} < 0;
-    splice @{$self->{Data}}, $self->{Pos}, 1;
+    splice @{ $self->{Data} }, $self->{Pos}, 1;
+    for my $member (qw(Directives LineInfo)) {
+	if ($self->{$member}) {
+	    splice @{ $self->{$member} }, $self->{Pos}, 1;
+	}
+    }
     $self->{Pos}--;
+    # XXX invalidate get_hashref_name_to_pos result
+    # XXX invalidate all_crossings result
 }
 
 # wandelt eine Array-Referenz ["name", $Koordinaten, "cat"] in
@@ -659,7 +669,7 @@ sub set_index {
 }
 
 sub set_last {
-    $_[0]->{Pos} = scalar @{$_[0]->{Data}};
+    $_[0]->{Pos} = scalar @{$_[0]->{Data}} - 1;
 }
 
 # initialisiert für next() und gibt den ersten Wert zurück
