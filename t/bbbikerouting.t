@@ -2,15 +2,19 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.24 2005/03/29 07:12:55 eserte Exp $
+# $Id: bbbikerouting.t,v 1.25 2005/05/23 23:54:12 eserte Exp $
 # Author: Slaven Rezic
 #
 
 use strict;
 
 use FindBin;
-use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin",
+	);
 use BBBikeRouting;
+use BBBikeTest qw(eq_or_diff);
 use Strassen::Util;
 use Benchmark;
 use Getopt::Long;
@@ -26,30 +30,6 @@ BEGIN {
 	print "ok 1\n";
 	exit;
     }
-}
-
-if (!eval {
-    require Test::Differences;
-    import Test::Differences;
-    1;
-}) {
-    *eq_or_diff = sub {
-	my($a, $b, $info) = @_;
-
-    SKIP: {
-	    eval {
-		Data::Dumper->VERSION(2.12); # Sortkeys
-	    };
-	    if ($@) {
-		skip("Need recent Data::Dumper (2.12, Sortkeys)", 1);
-	    }
-
-	    local $Data::Dumper::Sortkeys = $Data::Dumper::Sortkeys = 1;
-	    is(Data::Dumper->new([$a],[])->Useqq(1)->Dump,
-	       Data::Dumper->new([$b],[])->Useqq(1)->Dump,
-	       $info);
-	}
-    };
 }
 
 my $num_tests = 63; # basic number of tests
