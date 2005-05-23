@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.19 2005/04/19 06:55:38 eserte Exp $
+# $Id: plz.t,v 1.20 2005/05/23 23:53:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -22,17 +22,21 @@
 package main;
 
 use Test::More;
-BEGIN { eval "use Test::Differences" };
 BEGIN { plan tests => 60 }
 
 use FindBin;
-use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../data", "$FindBin::RealBin/../lib");
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../data",
+	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin",
+	);
 use PLZ;
 use PLZ::Multi;
 use Strassen;
 use File::Basename;
 use Getopt::Long;
 use Data::Dumper;
+use BBBikeTest qw(eq_or_diff);
 
 use strict;
 
@@ -435,11 +439,7 @@ sub do_file {
 	    close T;
 
 	    my $label = "Compare results with file $file";
-	    if (defined &eq_or_diff) {
-		eq_or_diff($buf, $res, $label);
-	    } else {
-		is($buf, $res, $label);
-	    }
+	    eq_or_diff($buf, $res, $label);
 	} else {
 	    warn "Can't open $tmpdir/$file: $!. Please use the -create option first and check the results in $tmpdir!\n";
 	    ok(0);
