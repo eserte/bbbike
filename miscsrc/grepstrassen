@@ -62,8 +62,8 @@ while(1) {
     if (defined $cat) { if ($r->[2] eq $cat) { next if $v } else { next unless $v } }
     if (defined $catrx) { if ($r->[2] =~ $catrx) { next if $v } else { next unless $v } }
     my $dir = $s->get_directive;
-    if (defined $section) { if (defined $dir->{section} && $dir->{section} eq $section) { next if $v } else { next unless $v } }
-    if (defined $sectionrx) { if (defined $dir->{section} && $dir->{section} =~ $sectionrx) { next if $v } else { next unless $v } }
+    if (defined $section) { if (defined $dir->{section} && grep { $_ eq $section } @{ $dir->{section} }) { next if $v } else { next unless $v } }
+    if (defined $sectionrx) { if (defined $dir->{section} && grep { /$sectionrx/ } @{ $dir->{section} }) { next if $v } else { next unless $v } }
     while(my($k,$v) = each %special) {
 	next if !$v->($r, $dir);
     }
