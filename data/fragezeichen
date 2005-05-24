@@ -1,7 +1,3 @@
-Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 8934,5095 9025,4871
-Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 9080,4371 9107,4103 9106,3986 9021,3878
-Dann gibt es am Kuhfortdamm den tollen BÜ unter der Eisenbahnbrücke.	? -18148,-1381
-Boizenburger Str.: guter Asphalt (Q0)	? 22310,12829 22309,12350 22373,12273
 Verbindung zwischen Michelangelostr. und Hohenschönhausener Str. vorhanden? im Süden: ja, Feldweg	? 13838,15113 14125,14905 14574,14646
 Weißwasserweg: Qualität? Als Abkürzung für Finckensteinallee/Ringstr. benutzbar?	? 2639,2989 2229,2898 2119,2790
 Europarc Dreilingen: Qualität? durchgängig befahrbar?	? -3985,115 -4459,-157 -6147,-1125 -6395,-887
@@ -96,9 +92,7 @@ Große Seestr.: Existiert eine Verbindung für Fußgänger zur Berliner Allee? Könne
 Lübarser Str.: lohnende Abkürzung? Qualität?	? 5311,21495 5469,21900
 Schönerlinder Str.: Radwegbenutzungspflicht aufgehoben, wo genau?	? 12065,23232 12067,23241 11929,23946 11965,24188 12177,24684 12498,25330 12957,26186 13192,26628 13267,26891
 Müllerstr.: Radwegbenutzungspflicht aufgehoben, wo genau?	? 8057,14876 7929,15006 7754,15160
-Bundesallee: Radwegbenutzungspflicht aufgehoben, wo genau?	? 5468,10442 5472,9850 5493,9357 5505,8832 5513,8588 5360,8197 5356,7862
 Zwischen Seestr. und Friedrich-Olbricht-Damm: Heißt die Straße noch Beusselstr. oder schon Saatwinkler Damm?	? 5074,14718 5062,14681
-Zeppelinstr.: Radstreifen bereits fertig gestellt?	? -4693,14454 -4673,14541 -4630,14616 -4631,14811 -4557,15468 -4503,15906
 Ernst-Liesegang-Ufer: Qualität?	? -6468,5080 -6347,5172 -6270,5136 -5995,5350 -5865,5631 -5749,5747 -5360,5897 -5249,5951 -4887,6107 -4820,6188 -4807,6481
 Teltower Weg: Qualität?	? -903,6923 -1008,7427 -1112,7891 -1317,8836 -1336,9001 -1415,9144
 Teltower Weg: Qualität?	? -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -174,5941 -107,5880
@@ -613,66 +607,67 @@ Dolomitenstr.: mäßig geeignet (laut ADFC-Karte)	? 10596,17554 10473,17446 10305,
 Cyclopstr.: nicht geeignet (laut ADFC-Karte)	? 4825,21718 5138,21358
 (Orankestr. - Orankesee): gut geeignet (laut ADFC-Karte)	? 15598,15793 15581,15846
 (Spreeufer): mäßig geeignet (laut ADFC-Karte)	? -288,13279 -193,13318 303,13287 700,13371 984,13475 1193,13485
-(Am Schinkelplatz) (Ist dieser Name offiziell?)	? 9987,12421 10084,12228
-(Straße 54) (Keine Referenz auf den Straßennamen in Berlin.coords.data und in der ADFC-Karte:)	? 13011,17470 12965,17684 12856,17825
-(Weg zur Krampenburg) (ist das ein offizieller Name mit Ausschilderung?)	? 27609,305 27571,262 27171,155 27273,-106 27407,-401 27552,-741 27559,-1365 27357,-1545 27323,-1671
-Knollstr. (letztes Stück Privatstr.?)	? 17178,-101 17558,126 17740,214
-Nelly-Sachs-Str. ((teilweise) Kategorie N oder sogar NN?)	? 23993,14838 24325,14965
-(Spreeuferstr.) (wann ist die Umbenennung nach Rahel-Hirsch-Str.?)	? 7941,12902 8206,13012
-Borkheide - Neuendorf (ungenaue Koordinaten!)	? -26338,-21122 -27908,-22935 -28547,-22981 -29244,-23127
-Russ. Kolonie (dieser Abschnitt von Alexandrowka tatsächlich für Autofahrer gesperrt?)	? -12855,-72 -12947,106 -13050,337
-(Am Nutheschnellweg) (Meinte ich damit den straßenbegleitenden Radweg?)	? -11399,-1339 -11698,-1104
-Görlsdorf - Peetzig (Qualität?)	? 45584,72614 45209,73684 45124,74047 44996,74261 44200,74890
+(Am Schinkelplatz) (ARRAY(0x832980c))	? 9987,12421 10084,12228
+(Straße 54) (ARRAY(0x8328a14))	? 13011,17470 12965,17684 12856,17825
+(Weg zur Krampenburg) (ARRAY(0x8338ffc))	? 27609,305 27571,262 27171,155 27273,-106 27407,-401 27552,-741 27559,-1365 27357,-1545 27323,-1671
+Knollstr. (ARRAY(0x838e270))	? 17178,-101 17558,126 17740,214
+Roßlauer Str. (ARRAY(0x8390300))	? 20656,12415 21148,12365
+Nelly-Sachs-Str. (ARRAY(0x839de58))	? 23993,14838 24325,14965
+(Spreeuferstr.) (ARRAY(0x835d614))	? 7941,12902 8206,13012
+Borkheide - Neuendorf (ARRAY(0x832e24c))	? -26338,-21122 -27908,-22935 -28547,-22981 -29244,-23127
+Russ. Kolonie (ARRAY(0x835c538))	? -12855,-72 -12947,106 -13050,337
+(Am Nutheschnellweg) (ARRAY(0x8383f18))	? -11399,-1339 -11698,-1104
+Görlsdorf - Peetzig (ARRAY(0x832e9f8))	? 45584,72614 45209,73684 45124,74047 44996,74261 44200,74890
 Barthels Pfuhl (oder Barth*o*ls Pfuhl?)	? -23662,80950 -23775,80837 -23675,80725 -23587,80825 -23587,80912
-Segelfliegerdamm: Kopfsteinpflaster (noch immer Kopfsteinpflaster (es waren Straßenbauarbeiten in der Gegend?))	? 17628,4148 17797,4441 18058,4627
-Artemisstr.: kleinteiliges Kopfsteinpflaster (mindestens im Süden:)	? 4387,22222 4293,22365 4140,22623
-Bohnsdorfer Str.: Waldweg?? (Stimmt das?)	? 21999,2171 21996,1683 22162,1183 22217,1108
-Fanningerstr.: Kopfsteinpflaster (Stimmt das?)	? 16261,12224 16445,12193 16782,12154 16983,12124 17139,12100
-Marienhöher Weg: Kopfsteinpflaster (mäßiges oder schlechtes Kopfsteinpflaster?)	? 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250
-Parkstr.: Kopfsteinpflaster (stimmt das?)	? 9029,6360 9143,6415
-Naumannstr.: Kopfsteinpflaster (überprüfen!)	? 7706,8875 7709,8770
-Margueritenring: Kopfsteinpflaster (Hier widerspricht die ADFC-Karte und meint "gut geeignet")	? 16491,2239 16807,2245 16898,2239 17009,2095 17060,2087 17382,2064 17421,2090
-Heegermühler Weg: schlechtes Kopfsteinpflaster (Hier wurde als Range "5-15" angegegeben. Hausnummern?)	? 7966,19968 8043,19725 8231,19806 8415,19910
-Rykestr.: Kopfsteinpflaster (aber ich erinnere mich ganz schwach, dass der südliche Abschnitt asphaltiert war... Außerdem: ist das Linksabbiegen in die Danziger möglich?)	? 11358,14331 11446,14508 11526,14693 11610,14886
-(Unter dem S-Bhf. Schichauweg): Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9693,-621 9518,-668
-Miethepfad: Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9518,-668 9557,-779 9585,-859
-Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser (Richtung Süden sah es teilweise besser aus, wo genau?)	? 9772,-12194 9345,-11425 9472,-11297 9578,-10891 9598,-10356 9854,-9480 10023,-8859
-F XXX: fester Sandweg mit einigen Schlaglöchern (welche Nummer des F-Wegs?)	? -21063,-2021 -20721,-1935 -20486,-1956 -20295,-1870 -20176,-525
-Seelübbe - Prenzlau: Kopfsteinplaster (aus der Bahn heraus gesehen)	? 40864,100741 40754,100635 40954,100113
-Trebbin: Kopfsteinpflaster, OK (Hier sind Bauarbeiten in Gange, danach kein Kopfsteinpflaster mehr?)	? -1623,-21150 -1887,-21501 -1992,-21489
- (aus dem Zug heraus sah es aber wie ein Feldweg aus? )	? 47508,61052 47290,60882 46696,60855
-Sellin - Viktoriahöhe: Waldweg (genauer erfassen:)	? 53959,173487 54093,173124 53932,172900 54243,172675 54419,172332 54382,172132
-Anklam (Peenedamm): Asphalt (kann mich nicht richtig erinnern:)	? 26512,162666 26628,162628 26761,162114 26783,161901 26782,161604
-Selenthin: Asphalt (kann mich nicht richtig erinnern:)	? 38201,163492 38133,163017 38259,162641 38403,162565 38459,162337 38806,161812 38690,161068
-Waidmannsweg (Hennigsdorf): Asphalt (nur Teilstück befahren)	? -4293,27146 -4600,26443 -4856,25803
-Brandenburgische Str. (Hennigsdorf): Asphalt (nur Teilstück befahren)	? -4642,25672 -4359,26315 -4048,26914
-Heideweg (Hennigsdorf): Asphalt (nur Teilstück befahren)	? -3738,26172 -4121,26209 -4359,26315 -4600,26443
-Groß-Dölln - Joachimsthal: wahrscheinlich Waldweg, bei Joachimsthal Kopfsteinpflaster (nur der westliche Anfang ist bekannt)	? 22068,65681 22262,65687 22687,66025 23087,66087 23962,66462 24450,66575 24550,66987 24825,67112 25250,67187 25275,67412 26100,67825 26200,67787 26362,67300 26350,66737 26400,66325 26487,66100 27037,65962 27412,65812 28525,65800 30625,65012 31437,64500 32137,64362 32406,64340
-Herzsprung: asphaltiert (soweit vom Zug aus zu sehen)	? 48291,64240 48562,64225 48941,64219
-Danewitz - Biesenthal: Asphalt (soweit vom Zug aus zu sehen)	? 27303,37099 27137,37337 26700,38062
-Steinhöfel - B198: asphaltiert, nur unter der Bahnbrücke ist ein kurzes Stück Kopfsteinplaster (aus der Bahn heraus gesehen (beide Seiten):)	? 41472,77229 42820,77327 43106,77287 44301,77619
-Greiffenberg: Kopfsteinplaster (aus der Bahn heraus gesehen:)	? 44200,74890 45817,75966
-asphaltiert (stimmt das?)	? -15921,3268 -15821,3240 -15459,2946
-Templin (nicht mehr sicher, aber wahrscheinlich Kopfsteinpflaster:)	? 16463,79756 16203,79768 15846,79628 15887,79456 15840,79375
-Rüdnitz - Danenwitz: Asphalt (von der Zugstrecke aus gesehen, "Berliner Umland" attestiert der gesamten Strecke eine gute Qualität:)	? 27303,37099 26687,36525 26372,36360
-Rüdnitz - Bahnhof: Asphalt (von der Zugstrecke aus gesehen:)	? 25095,35601 25737,35075
-Lessingstr. (Potsdam): Kopfsteinpflaster (wenigstens auf der Seite Plantagenstr:)	? -9837,-1612 -9219,-1590
-Kastanienallee (Potsdam): Kopfsteinpflaster (eventuell Q1?)	? -14909,-1818 -14897,-1946 -14859,-2384
-Menz: Kopfsteinpflaster (nach Bauarbeiten wahrscheinlich asphaltiert:)	? -15062,76937 -14623,77426
-Krumme Str.: Bauarbeiten (noch immer?)	? 3942,11010 3827,10980
-(S-Bahnbrücke Wartenberg): Fußgänger? (Stimmt das?)	? 16923,18650 16990,18694 17114,18775
-Marzahner Promenade - Mühlenbecker Weg: Fußgänger (Stimmt das?)	? 20222,15519 20150,15678
+Segelfliegerdamm: Kopfsteinpflaster (ARRAY(0x8333ad0))	? 17628,4148 17797,4441 18058,4627
+Artemisstr.: kleinteiliges Kopfsteinpflaster (ARRAY(0x8338d5c))	? 4387,22222 4293,22365 4140,22623
+Bohnsdorfer Str.: Waldweg?? (ARRAY(0x8338e34))	? 21999,2171 21996,1683 22162,1183 22217,1108
+Fanningerstr.: Kopfsteinpflaster (ARRAY(0x8338f60))	? 16261,12224 16445,12193 16782,12154 16983,12124 17139,12100
+Marienhöher Weg: Kopfsteinpflaster (ARRAY(0x833c854))	? 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250
+Parkstr.: Kopfsteinpflaster (ARRAY(0x833e670))	? 9029,6360 9143,6415
+Naumannstr.: Kopfsteinpflaster (ARRAY(0x834246c))	? 7706,8875 7709,8770
+Margueritenring: Kopfsteinpflaster (ARRAY(0x8355eb8))	? 16491,2239 16807,2245 16898,2239 17009,2095 17060,2087 17382,2064 17421,2090
+Heegermühler Weg: schlechtes Kopfsteinpflaster (ARRAY(0x835a15c))	? 7966,19968 8043,19725 8231,19806 8415,19910
+Rykestr.: Kopfsteinpflaster (ARRAY(0x835a270))	? 11358,14331 11446,14508 11526,14693 11610,14886
+(Unter dem S-Bhf. Schichauweg): Verbundsteinpflaster (ARRAY(0x8388598))	? 9693,-621 9518,-668
+Miethepfad: Verbundsteinpflaster (ARRAY(0x83886ac))	? 9518,-668 9557,-779 9585,-859
+Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser (ARRAY(0x82b3658))	? 9772,-12194 9345,-11425 9472,-11297 9578,-10891 9598,-10356 9854,-9480 10023,-8859
+F XXX: fester Sandweg mit einigen Schlaglöchern (ARRAY(0x8313a40))	? -21063,-2021 -20721,-1935 -20486,-1956 -20295,-1870 -20176,-525
+Seelübbe - Prenzlau: Kopfsteinplaster (ARRAY(0x831fac4))	? 40864,100741 40754,100635 40954,100113
+Trebbin: Kopfsteinpflaster, OK (ARRAY(0x8328514))	? -1623,-21150 -1887,-21501 -1992,-21489
+ (ARRAY(0x83427b4))	? 47508,61052 47290,60882 46696,60855
+Sellin - Viktoriahöhe: Waldweg (ARRAY(0x834b998))	? 53959,173487 54093,173124 53932,172900 54243,172675 54419,172332 54382,172132
+Anklam (Peenedamm): Asphalt (ARRAY(0x834ba88))	? 26512,162666 26628,162628 26761,162114 26783,161901 26782,161604
+Selenthin: Asphalt (ARRAY(0x834bb60))	? 38201,163492 38133,163017 38259,162641 38403,162565 38459,162337 38806,161812 38690,161068
+Waidmannsweg (Hennigsdorf): Asphalt (ARRAY(0x834f718))	? -4293,27146 -4600,26443 -4856,25803
+Brandenburgische Str. (Hennigsdorf): Asphalt (ARRAY(0x835100c))	? -4642,25672 -4359,26315 -4048,26914
+Heideweg (Hennigsdorf): Asphalt (ARRAY(0x83510e4))	? -3738,26172 -4121,26209 -4359,26315 -4600,26443
+Groß-Dölln - Joachimsthal: wahrscheinlich Waldweg, bei Joachimsthal Kopfsteinpflaster (ARRAY(0x8351210))	? 22068,65681 22262,65687 22687,66025 23087,66087 23962,66462 24450,66575 24550,66987 24825,67112 25250,67187 25275,67412 26100,67825 26200,67787 26362,67300 26350,66737 26400,66325 26487,66100 27037,65962 27412,65812 28525,65800 30625,65012 31437,64500 32137,64362 32406,64340
+Herzsprung: asphaltiert (ARRAY(0x83512dc))	? 48291,64240 48562,64225 48941,64219
+Danewitz - Biesenthal: Asphalt (ARRAY(0x83513b4))	? 27303,37099 27137,37337 26700,38062
+Steinhöfel - B198: asphaltiert, nur unter der Bahnbrücke ist ein kurzes Stück Kopfsteinplaster (ARRAY(0x8351d20))	? 41472,77229 42820,77327 43106,77287 44301,77619
+Greiffenberg: Kopfsteinplaster (ARRAY(0x8351df8))	? 44200,74890 45817,75966
+asphaltiert (ARRAY(0x8352a94))	? -15921,3268 -15821,3240 -15459,2946
+Templin (ARRAY(0x83598cc))	? 16463,79756 16203,79768 15846,79628 15887,79456 15840,79375
+Rüdnitz - Danenwitz: Asphalt (ARRAY(0x8359b3c))	? 27303,37099 26687,36525 26372,36360
+Rüdnitz - Bahnhof: Asphalt (ARRAY(0x832f030))	? 25095,35601 25737,35075
+Lessingstr. (Potsdam): Kopfsteinpflaster (ARRAY(0x832f2b8))	? -9837,-1612 -9219,-1590
+Kastanienallee (Potsdam): Kopfsteinpflaster (ARRAY(0x832f450))	? -14909,-1818 -14897,-1946 -14859,-2384
+Menz: Kopfsteinpflaster (ARRAY(0x8369580))	? -15062,76937 -14623,77426
+Krumme Str.: Bauarbeiten (ARRAY(0x83157b4))	? 3942,11010 3827,10980
+(S-Bahnbrücke Wartenberg): Fußgänger? (ARRAY(0x83165f8))	? 16923,18650 16990,18694 17114,18775
+Marzahner Promenade - Mühlenbecker Weg: Fußgänger (ARRAY(0x831d108))	? 20222,15519 20150,15678
 Stadtpark Steglitz (unbeleuchtet?)	? 5838,4454 5931,4659 6018,4850
 Stadtpark Steglitz (unbeleuchtet?)	? 5344,4672 5476,4626 5747,4697 5931,4659 6114,4709
 nördliches Ufer am Teltowkanal (unbeleuchtet?)	? 7921,4451 8162,4725 8249,4769
 Heidekampbrücke (kommt nur im RV-Plan so vor:)	? 15335,6146 15365,6126
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
-Prenzlauer Allee: Mittelstreifen mit Straßenbahn (evtl. bis zur Danziger verlängern:)	? 11642,14625 11662,14695 11681,14759
-Märkische Allee: Linksabbiegen wahrscheinlich verboten (wahrscheinlich!)	? 20512,17101 20691,17463 20717,17516 20834,17752 20878,17842 21218,18536
-tragen (zwei kurze Treppen) (wo sind die Treppen genau?)	? 9453,6415
-Fußgängerbrücke über den Sachesendamm gesperrt, südliche Rampe ist aber befahrbar (noch immer?)	? 7718,7641 7772,7610
-L 39; (ASFriedersdorf-Neu Zittau); keine Brücke ü. Oder-Spree-Kanal; kein Bw ü. Oder-Spree-Kanal; Vollsperrung; 00:00:00-unbekannt (noch immer aktuell? (bei LBVS nicht mehr aufgeführt))	? 35335,-6272 35143,-5650
-L 70 (Doberlug Kirchhain-Dahme); zw. B87 Hohenbuckow u. Hillmersdorf; Fahrbahnschäden; Vollsperrung; 22.05.97-unbekannt (bei LBVS nicht mehr aufgeführt:)	? 17023,-71738 17783,-72721 17979,-73530 17960,-73915 17961,-74364 18228,-75553 18187,-76301 18061,-76878
+Prenzlauer Allee: Mittelstreifen mit Straßenbahn (ARRAY(0x8320018))	? 11642,14625 11662,14695 11681,14759
+Märkische Allee: Linksabbiegen wahrscheinlich verboten (ARRAY(0x8320150))	? 20512,17101 20691,17463 20717,17516 20834,17752 20878,17842 21218,18536
+tragen (zwei kurze Treppen) (ARRAY(0x8320f84))	? 9453,6415
+Fußgängerbrücke über den Sachesendamm gesperrt, südliche Rampe ist aber befahrbar (ARRAY(0x8328e94))	? 7718,7641 7772,7610
+L 39; (ASFriedersdorf-Neu Zittau); keine Brücke ü. Oder-Spree-Kanal; kein Bw ü. Oder-Spree-Kanal; Vollsperrung; 00:00:00-unbekannt (ARRAY(0x8328fd8))	? 35335,-6272 35143,-5650
+L 70 (Doberlug Kirchhain-Dahme); zw. B87 Hohenbuckow u. Hillmersdorf; Fahrbahnschäden; Vollsperrung; 22.05.97-unbekannt (ARRAY(0x832b150))	? 17023,-71738 17783,-72721 17979,-73530 17960,-73915 17961,-74364 18228,-75553 18187,-76301 18061,-76878
 B2: teilweise beidseitiger Radweg, teilweise Radstreifen (nördliches Ende vielleicht nicht genau)	? -10206,6756 -10923,6318 -12181,5611 -12865,5567 -13143,5587 -13287,5556 -13578,5396 -13676,5266 -13802,4455 -13784,3900 -13387,2987 -13375,2950 -13152,2169 -13140,1900 -13125,1700 -13074,1136 -13053,919 -13049,865 -13052,775 -13062,535 -13050,337 -13091,-8 -13111,-136
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position ist vielleicht nicht ganz genau)	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9060,22342
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position des südlichen Endes ist vielleicht nicht ganz genau)	? -10377,20973 -10581,19871 -10000,18629

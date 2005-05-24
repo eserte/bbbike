@@ -1,18 +1,35 @@
 @temp_blocking = ();
-$#temp_blocking = 53;
+$#temp_blocking = 33;
 push @temp_blocking,
 (
        {
-         'until' => 1116885600,
-         'text' => 'Hermannstraﬂe, Straﬂenfest zwischen Flughafenstraﬂe und Thomasstraﬂe, Dauer: 21.05.2005 04:00 Uhr bis 23.05.2005',
-         'from' => 1116554400,
-         'data' => 'userdel	2 7043,15793 7198,15656
-userdel	2 7043,15793 6914,15908
-userdel	2 7198,15656 7288,15579
-userdel	2 6790,16018 6914,15908
+         'until' => 1117080000,
+         'text' => 'Schlichtallee, Zwischen Kreuzung Hauptstraﬂe und Kreuzung L¸ckstraﬂe in beiden Richtungen Br¸ckenarbeiten, gesperrt, Dauer: 23.05.2005 06:00 Uhr bis 26.05.2005 06:00 Uhr ',
+         'from' => 1116734400,
+         'data' => 'userdel	2 15751,10582 15629,10481
 ',
          'type' => 'gesperrt'
        },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -156,15 +173,7 @@ userdel	q4 43553,20466 43110,19818
        undef,
        undef,
        undef,
-       {
-         'until' => 1116885600,
-         'text' => 'Volksradstr. (Friedrichsfelde) in beiden Richtungen Baustelle, Straﬂe vollst‰ndig gesperrt (bis 23.05.2005)',
-         'from' => 1116572111,
-         'data' => 'userdel	q4 17475,10442 17621,10994
-userdel	q4 17475,10442 17427,10259
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -462,14 +471,7 @@ userdel	q4 1872,-1118 1680,-1011
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1116885600,
-         'text' => 'L 30; (Friedrichstraﬂe); OL Erkner, zw. F¸rstenwalder Str. u. Beuststr. 13.Heimatfest Erkner Vollsperrung 19.05.2005-23.05.2005 ',
-         'from' => 1116367200,
-         'data' => 'userdel	q4 34443,1951 34250,2546
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1128117600,
          'text' => 'L 86; (Lehniner Str.); OD Damsdorf Straﬂenbau Vollsperrung 30.05.2005-30.09.2005 ',

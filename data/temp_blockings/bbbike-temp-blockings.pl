@@ -211,11 +211,13 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Hermannstraße, zwischen Emserstraße und Thomasstraße gesperrt. Grund: Straßenfest. Dauer: 11.10.2003, 06.00 Uhr bis 12.10.2003, 24.00 Uhr',
        type  => 'handicap',
      },
-     { from  => 1066924800, # 2003-10-23 18:00
-       until => 1067295600, # 2003-10-28 00:00
-       file  => 'schlichtallee.bbd',
-       text  => 'Schlichtallee, zwischen Hauptstraße und Lückstraße, Vollsperrung vom 24.10.03, 18.00 Uhr bis 27.10.03, 04.00 Uhr wegen Ein-/Ausbau der Bahnbrücken. ',
+     { from  => 1116734400, # 2005-05-22 06:00
+       until => 1117080000, # 2005-05-26 06:00
+       text  => 'Schlichtallee, Zwischen Kreuzung Hauptstraße und Kreuzung Lückstraße in beiden Richtungen Brückenarbeiten, gesperrt, Dauer: 23.05.2005 06:00 Uhr bis 26.05.2005 06:00 Uhr ',
        type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 15751,10582 15629,10481
+EOF
      },
      { from  => 1070341200, # 2003-12-02 06:00
        until => 1070924399, # 2003-12-08 23:59
