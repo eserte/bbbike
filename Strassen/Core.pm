@@ -199,11 +199,23 @@ sub read_from_fh {
 
     my @data;
     my @directives;
-    my %global_directives;
 
     my $use_local_directives = $args{UseLocalDirectives};
-    my $directives_stage = "local";
-    my @line_directive;
+    my $has_tie_ixhash = 0;
+    if ($use_local_directives) {
+	$has_tie_ixhash = eval { require Tie::IxHash; 1 };
+    }
+
+    use constant DIR_STAGE_LOCAL => 0;
+    use constant DIR_STAGE_GLOBAL => 1;
+    my $directives_stage = DIR_STAGE_LOCAL;
+
+    my %global_directives;
+    my %line_directive;
+    if ($has_tie_ixhash) {
+	tie %line_directive, "Tie::IxHash";
+	tie %global_directives, "Tie::IxHash";
+    }
     my @block_directives;
     if ($args{PreserveLineInfo}) {
 	while (<$fh>) {
@@ -230,28 +242,42 @@ sub read_from_fh {
 		}
 
 		if ($. == 1) {
-		    $directives_stage = "global";
-		} elsif ($directives_stage eq 'global' && $_ =~ /^\#:$/) {
-		    $directives_stage = "local";
+		    $directives_stage = DIR_STAGE_GLOBAL;
+		} elsif ($directives_stage eq DIR_STAGE_GLOBAL && $_ =~ /^\#:$/) {
+		    $directives_stage = DIR_STAGE_LOCAL;
 		}
-		if ($directives_stage eq "global") {
-		    $global_directives{$directive} = $value;
+		if ($directives_stage eq DIR_STAGE_GLOBAL) {
+		    push @{ $global_directives{$directive} }, $value;
 		} elsif ($use_local_directives) {
 		    if ($is_block_begin) {
 			push @block_directives, [$directive => $value];
 		    } elsif ($is_block_end) {
 			pop @block_directives;
 		    } else {
-			@line_directive = ($directive => $value);
+			push @{ $line_directive{$directive} }, $value;
 		    }
 		}
+		next;
 	    }
+	    $directives_stage = DIR_STAGE_LOCAL if $directives_stage eq DIR_STAGE_GLOBAL;
 	    next if m{^(\#|\s*$)};
 	    push @data, $_;
-	    if (@line_directive || @block_directives) {
-		$directives[$#data] = { @line_directive, map { @$_ } @block_directives };
-		if (@line_directive) {
-		    @line_directive = ();
+	    if (keys %line_directive || @block_directives) {
+		while(my($directive,$values) = each %line_directive) {
+		    if ($has_tie_ixhash && !$directives[$#data]) {
+			tie %{ $directives[$#data] }, 'Tie::IxHash';
+		    }
+		    push @{ $directives[$#data]{$directive} }, @$values;
+		}
+		for (@block_directives) {
+		    my($directive, $value) = @$_;
+		    if ($has_tie_ixhash && !$directives[$#data]) {
+			tie %{ $directives[$#data] }, 'Tie::IxHash';
+		    }
+		    push @{ $directives[$#data]{$directive} }, $value;
+		}
+		if (keys %line_directive) {
+		    %line_directive = ();
 		}
 	    }
         }
@@ -259,8 +285,8 @@ sub read_from_fh {
     if (@block_directives) {
 	die "The following block directives were not closed: `" . join(" ", map { "@$_" } @block_directives) . "'\n";
     }
-    if (@line_directive) {
-	die "Stray line directive `@line_directive' at end of file\n";
+    if (keys %line_directive) {
+	die "Stray line directive `@{[ keys %line_directive ]}' at end of file\n";
     }
     warn "... done\n" if ($VERBOSE && $VERBOSE > 1);
     close $fh;
@@ -434,20 +460,49 @@ sub id {
 sub as_string {
     my $self = shift;
     my $s = "";
-    my $has_global_directives = 0;
+    my $maybe_need_directive_separator = 1;
     if ($self->{GlobalDirectives} && keys %{$self->{GlobalDirectives}}) {
-	$s = join("\n", map { "#: $_: $self->{GlobalDirectives}{$_}" } keys %{ $self->{GlobalDirectives} }) . "\n";
+	$s = "";
+	while(my($k,$v) = each %{ $self->{GlobalDirectives} }) {
+	    $s .= join("\n", map { "#: $k: $_" } @$v) . "\n";
+	}
 	$s .= "#:\n"; # end global directives
+	$maybe_need_directive_separator = 0;
     }
     if ($self->{Directives}) {
-	# XXX write block directives again if possible
+	if ($maybe_need_directive_separator && $self->{Directives}[0]) {
+	    $s .= "#:\n";
+	}
+	my %current_block_directives;
 	for my $pos (0 .. $#{$self->{Data}}) {
+	    my $close_blocks = "";
 	    if ($self->{Directives}[$pos]) {
-		while(my($k,$v) = each %{ $self->{Directives}[$pos] }) {
-		    $s .= "#: $k: $v\n";
+		while(my($directive,$values) = each %{ $self->{Directives}[$pos] }) {
+		    for my $value (@$values) {
+			my $continuing_to_next_line = 0;
+			if ($pos < $#{$self->{Data}}) {
+			    if ($self->{Directives}[$pos+1] &&
+				exists $self->{Directives}[$pos+1]{$directive} &&
+				grep { $_ eq $value } @{ $self->{Directives}[$pos+1]{$directive} }) {
+				$continuing_to_next_line = 1;
+			    }
+			}
+			if ($continuing_to_next_line && !$current_block_directives{$directive}{$value}) {
+			    $s .= "#: $directive: $value vvv\n";
+			    $current_block_directives{$directive}{$value} = 1;
+			} elsif ($continuing_to_next_line && $current_block_directives{$directive}{$value}) {
+			    # do nothing
+			} elsif (!$continuing_to_next_line && $current_block_directives{$directive}{$value}) {
+			    $close_blocks .= "#: $directive: ^^^\n";
+			    delete $current_block_directives{$directive}{$value};
+			} else {
+			    $s .= "#: $directive: $value\n";
+			}
+		    }
 		}
 	    }
 	    $s .= $self->{Data}[$pos];
+	    $s .= $close_blocks;
 	}
 	$s;
     } else {
