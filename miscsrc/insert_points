@@ -930,7 +930,7 @@ $operation = ($0 =~ /       insert_points$ /x ? 'insert'      :
 	      $0 =~ /          grep_point$ /x ? 'grep'        :
 	      $0 =~ /        delete_point$ /x ? 'delete'      :
 	      $0 =~ /        delete_multi$ /x ? 'deletemulti' :
-	      $0 =~ /        deline_lines$ /x = 'deletelines' :
+	      $0 =~ /        deline_lines$ /x ? 'deletelines' :
 	      					'change'
 	     );
 
