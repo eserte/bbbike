@@ -170,7 +170,7 @@ EOF
 	}
 
 	for my $gps (@{ $gps_multi->Chunks }) {
-	    $gps->convert_all("DDD");
+	    #XXX $gps->convert_all("DDD");
 
 	    my $curr_s;
 	    if ($gps->Type eq GPS::GpsmanData::TYPE_TRACK()) {
