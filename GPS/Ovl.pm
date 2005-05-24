@@ -15,18 +15,30 @@
 package GPS::Ovl;
 
 use strict;
-use vars qw($VERSION @ISA $OVL_MAGIC);
+use vars qw($VERSION @ISA $OVL_MAGIC $OVL_MAGIC_3_0);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 require GPS;
 push @ISA, 'GPS';
 
-$OVL_MAGIC = "DOMGVCRD Ovlfile V2.0:";
+$OVL_MAGIC     = "DOMGVCRD Ovlfile V2.0:";
+$OVL_MAGIC_3_0 = "XXX NOT YET SUPPORTED XXX DOMGVCRD Ovlfile V3.0:"; # XXX
+
+BEGIN {
+    if (!eval '
+use Msg qw(frommain);
+1;
+') {
+	warn $@ if $@;
+	eval 'sub M ($) { $_[0] }';
+	eval 'sub Mfmt { sprintf(shift, @_) }';
+    }
+}
 
 sub check {
     my($self_or_class, $file, %args) = @_;
     my $self;
-    if ($self_or_class ne 'HASH') { # static operation
+    if ($self_or_class eq __PACKAGE__ || !UNIVERSAL::isa($self_or_class, __PACKAGE__)) { # static operation
 	$self = $self_or_class->new($file);
     } else {
 	$self = $self_or_class;
@@ -39,6 +51,8 @@ sub check {
 	$self->{FileFormat} = "ascii";
     } elsif (index($first_line, $OVL_MAGIC) == 0) {
 	$self->{FileFormat} = "binary";
+    } elsif (index($first_line, $OVL_MAGIC_3_0) == 0) {
+	$self->{FileFormat} = "binary_3_0";
     }
     close F;
     defined $self->{FileFormat};
@@ -107,19 +121,26 @@ sub new {
 
 sub read {
     my $self = shift;
+
+    if (!UNIVERSAL::isa($self, "HASH") || !defined $self->{FileFormat}) {
+	my $ret = $self->check($self->{File});
+	return if !$ret;
+    }
+
     if (defined $self->{FileFormat}) {
 	my $method = "read_" . $self->{FileFormat};
 	return $self->$method();
     }
-    my $file = $self->{File};
-    if (open(F, $file)) {
-	if (scalar <F> =~ /^\[Symbol/) {
-	    close F;
-	    return $self->read_ascii;
-	}
-	close F;
-    }
-    return $self->read_binary;
+#XXX del:
+#     my $file = $self->{File};
+#     if (open(F, $file)) {
+# 	if (scalar <F> =~ /^\[Symbol/) {
+# 	    close F;
+# 	    return $self->read_ascii;
+# 	}
+# 	close F;
+#     }
+#     return $self->read_binary;
 }
 
 sub read_ascii {
@@ -165,15 +186,23 @@ sub read_ascii {
     $self->{Symbols} = \@symbols;
 }
 
-sub read_binary {
-    my($self) = @_;
-    open(F, $self->{File}) or die "Can't open file $self->{File}: $!";
-    binmode F;
-    local $/ = undef;
-    my $buf = <F>;
-    close F;
+sub as_string_ascii {
+    my($self, $coords, %args) = @_;
+    my $s = "";
+    my $coord_i = 0;
+    for my $coord (@$coords) {
+	my($x,$y) = @$coord;
+	$s .= "[Symbol ${coord_i}]\n";
+	$s .= "XKoord${coord_i}=$x\n";
+	$s .= "YKoord${coord_i}=$y\n";
+	$coord_i++;
+    }
+    $s;
+}
 
-    my $p = 0;
+{
+    my $p;
+    my $buf;
 
     my $_forward = sub {
 	my($count) = @_;
@@ -237,33 +266,6 @@ sub read_binary {
 	$res;
     };
 
-    my $magic = &$_read_string;
-    if ($magic ne $OVL_MAGIC) {
-	die "Wrong magic: $magic\n";
-    }
-    $_forward->(6);
-    my $MapName = &$_read_string;
-    warn "Description: $MapName\n";
-    $_seek_to->(0x3d);
-    my $DimmFc = &$_read_long;
-    my $ZoomFc = &$_read_long;
-    my $CenterLat  = &$_read_float;
-    my $CenterLong = &$_read_float;
-    warn "Center=$CenterLat/$CenterLong\n";
-    $_seek_to->(0xa9);
-
-    my @symbols;
-#my$trace=0;my$abort=0;
-    while($p < length $buf) {
-#if($trace){while(!$abort){sleep 1}$abort=0}
-	my $sym = {};
-	my $typ = &$_read_short;
-	$sym->{Typ} = $typ;
-	if ($typ == 3) {
-	    my @x;
-	    push @x, &$_read_short for 1..6;#print "\n";
-	    #XXXwarn "Type 3, x=@x";
-	    $sym->{Coords} = [&$_read_coords];
 #  rot: gut zu fahrende Straßen mit max. mäßiger Verkehrsdichte. Auch asphaltierte autofreie Wege
 #  grün: befahrbare aber nicht asphaltierte Feld und Waldwege
 #  gelb: rel. verkehrsreiche Straßen, aber wichtige Strecke
@@ -271,62 +273,143 @@ sub read_binary {
 #  schwarz, dünne Zick-Zack Linie: unbefahrbarer Weg
 #  weiß: Bundesstraße, keine Bewertung, nur zum Abdecken des Kartenuntergrundes 
 #  verwendet
-	    my $color = {1 => 'red', # rot/gut befahrbar?',
-			 6 => 'white', #weiß/Bundesstraße?',
-			 4 => 'yellow', #gelb/verkehrsreich?',
-			 5 => 'black', # schwarz/unbefahrbar?
-			 2 => 'green', # Feld/Waldwege
-			 3 => 'blue', # Kopfsteinpflaster
-			}->{$x[3]};
-	    push @x, $color;
-	    $sym->{Balloon} = "@x";
-	    $sym->{Color} = $color if defined $color;
-	} elsif ($typ == 2) {
-	    #print "$typ ";printf "%04x ", &$_read_short for 1..7;print "\n";
-	    my @x;
-	    push @x, &$_read_short for 1..2;
-	    my $subtyp = &$_read_short;
-	    if ($subtyp == 1) {
-		# NOP
-	    } elsif ($subtyp == 0x10) {
-		push @x, &$_read_short for 1..2;
-		$sym->{Text} = &$_read_string;
-	    } else {
-		warn "Unknown subtype=$subtyp p=".sprintf("%x",$p);
-		last;
-	    }
-	    push @x, &$_read_short for 1..4;
-	    warn "Type 2, x=@x";
-	    $sym->{Coords} = [&$_read_coords];
-	    $sym->{Label} = &$_read_fixed_string;
+    my $color_mapping = 
+	{1 => 'red', # rot/gut befahrbar?',
+	 6 => 'white', #weiß/Bundesstraße?',
+	 4 => 'yellow', #gelb/verkehrsreich?',
+	 5 => 'black', # schwarz/unbefahrbar?
+	 2 => 'green', # Feld/Waldwege
+	 3 => 'blue', # Kopfsteinpflaster
+	};
 
-	} elsif ($typ == 6) {
-	    my @x;
-	    push @x, &$_read_short for 1..2;
-	    my $subtyp = &$_read_short;
-	    if ($subtyp == 1) {
-		# NOP
-	    } elsif ($subtyp == 0x10) {
+    sub read_binary {
+	my($self) = @_;
+	open(F, $self->{File}) or die "Can't open file $self->{File}: $!";
+	binmode F;
+	local $/ = undef;
+	$buf = <F>;
+	close F;
+
+	$p = 0;
+
+	my $magic = &$_read_string;
+	if ($magic ne $OVL_MAGIC) {
+	    die "Wrong magic: $magic\n";
+	}
+	$_forward->(6);
+	my $MapName = &$_read_string;
+	warn "Description: $MapName\n";
+	$_seek_to->(0x3d);
+	my $DimmFc = &$_read_long;
+	my $ZoomFc = &$_read_long;
+	my $CenterLat  = &$_read_float;
+	my $CenterLong = &$_read_float;
+	warn "Center=$CenterLat/$CenterLong\n";
+	$_seek_to->(0xa9);
+
+	my @symbols;
+#my$trace=0;my$abort=0;
+	while($p < length $buf) {
+#if($trace){while(!$abort){sleep 1}$abort=0}
+	    my $sym = {};
+	    my $typ = &$_read_short;
+	    $sym->{Typ} = $typ;
+	    if ($typ == 3) {
+		my @x;
+		push @x, &$_read_short for 1..6;#print "\n";
+		#XXXwarn "Type 3, x=@x";
+		$sym->{Coords} = [&$_read_coords];
+		my $color = $color_mapping->{$x[3]};
+		push @x, $color;
+		$sym->{Balloon} = "@x";
+		$sym->{Color} = $color if defined $color;
+	    } elsif ($typ == 2) {
+		#print "$typ ";printf "%04x ", &$_read_short for 1..7;print "\n";
+		my @x;
 		push @x, &$_read_short for 1..2;
-		$sym->{Text} = &$_read_string;
+		my $subtyp = &$_read_short;
+		if ($subtyp == 1) {
+		    # NOP
+		} elsif ($subtyp == 0x10) {
+		    push @x, &$_read_short for 1..2;
+		    $sym->{Text} = &$_read_string;
+		} else {
+		    warn "Unknown subtype=$subtyp p=".sprintf("%x",$p);
+		    last;
+		}
+		push @x, &$_read_short for 1..4;
+		warn "Type 2, x=@x";
+		$sym->{Coords} = [&$_read_coords];
+		$sym->{Label} = &$_read_fixed_string;
+
+	    } elsif ($typ == 6) {
+		my @x;
+		push @x, &$_read_short for 1..2;
+		my $subtyp = &$_read_short;
+		if ($subtyp == 1) {
+		    # NOP
+		} elsif ($subtyp == 0x10) {
+		    push @x, &$_read_short for 1..2;
+		    $sym->{Text} = &$_read_string;
+		} else {
+		    warn "Unknown subtype=$subtyp p=".sprintf("%x",$p);
+		    last;
+		}
+		#print "X ";printf "%04x ", 
+		push @x, &$_read_short for 1..6;#print "\n";
+		warn "Type 6, x=@x";
+		$sym->{Coords} = [&$_read_coord];
 	    } else {
-		warn "Unknown subtype=$subtyp p=".sprintf("%x",$p);
+		warn "Unknown type=$typ p=".sprintf("%x",$p);
 		last;
 	    }
-	    #print "X ";printf "%04x ", 
-	    push @x, &$_read_short for 1..6;#print "\n";
-	    warn "Type 6, x=@x";
-	    $sym->{Coords} = [&$_read_coord];
-	} else {
-	    warn "Unknown type=$typ p=".sprintf("%x",$p);
-	    last;
-	}
 #use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->Dumpxs([$sym],[]); # XXX
 #if($sym->{Text}=~ /ZollamtXXX/){last;$trace++;$SIG{USR1}=sub{$abort=1}}
-	push @symbols, $sym;
+	    push @symbols, $sym;
+	}
+
+	$self->{Symbols} = \@symbols;
     }
 
-    $self->{Symbols} = \@symbols;
+    sub read_binary_3_0 {
+	my($self) = @_;
+	open(F, $self->{File}) or die "Can't open file $self->{File}: $!";
+	binmode F;
+	local $/ = undef;
+	$buf = <F>;
+	close F;
+
+	$p = 0;
+
+	my $magic = &$_read_string;
+	if ($magic ne $OVL_MAGIC_3_0) {
+	    die "Wrong magic: $magic\n";
+	}
+	$_seek_to->(0x44);
+	my $MapName = &$_read_string;
+	warn "Description: $MapName\n";
+
+	# XXX TBD...
+    }
+}
+
+sub tk_export {
+    my($self, %args) = @_;
+    my $top = $main::top;
+    my $file = $top->getSaveFile
+	(-defaultextension => '.ovl',
+	 -filetypes => [[M"OVL-Dateien" => '.ovl'],
+			[M"Alle Dateien" => '*']],
+	);
+    return unless defined $file;
+    require Karte::Standard;
+    require Karte::Polar;
+    my @polar_coords = map { [ $Karte::Polar::obj->standard2map(@$_) ] } @{ $args{coords} };
+    my $s = $self->as_string_ascii(\@polar_coords);
+    die "$s -> $file";#XXX
+    open(OVL, ">$file") or main::status_message("Cannot write to $file: $!", "die");
+    print OVL $s;
+    close OVL;
 }
 
 1;
