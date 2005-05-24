@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Edit.pm,v 1.1 2005/05/23 22:30:34 eserte Exp $
+# $Id: Edit.pm,v 1.2 2005/05/24 00:43:38 eserte Exp $
 #
 # Copyright (c) 2005 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -13,7 +13,7 @@
 
 package Strassen::Edit;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 package Strassen;
 use strict;
@@ -103,6 +103,12 @@ Strassen::Edit - editing functionality for Strassen
 
    use Strassen::Core;
    use Strassen::Edit;
+
+=head1 EXAMPLE
+
+Example for command line usage: removing a coordinate list from the radwege-orig file:
+
+    perl -I. -Ilib -MStrassen::Edit -e '$s = Strassen->new("data/radwege-orig", UseLocalDirectives => 1); $s->edit_all_delete_2_coord_lines(@ARGV); $s->write("/tmp/radwege-orig");' ...
 
 =head1 SEE ALSO
 
