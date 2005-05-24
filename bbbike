@@ -3460,20 +3460,19 @@ sub do_iconframe {
 		      -command => sub {
 			  $svm->after(50, sub { export_visible_map($fmt->[1]) });
 		      });
-    }
-    $svm->separator;
-    $svm->command(-label => M"Postscript-Auflösung:",
-		  -state => "disabled",
-		  -font => $font{"bold"});
-    {
-    my(%sizes) = (36 => 0, 72 => 0, 100 => 0, 150 => 0);
-	$sizes{int($top_dpi)}++;
-	foreach my $size (sort { $a <=> $b } keys %sizes) {
-	    $svm->radiobutton(-label => $size . " dpi"
-			      . ($size == int($top_dpi) ? " ".M"(normal)" : ""),
-			      -variable => \$ps_image_res,
-			      -value => $size . "x" . $size,
-			     );
+	if ($fmt->[1] eq 'ps') {
+	    $svm->cascade(-label => M("Postscript-Auflösung").' ...');
+	    my $psm = $svm->Menu(-title => M("Postscript-Auflösung").' ...');
+	    $svm->entryconfigure("last", -menu => $psm);
+	    my(%sizes) = (36 => 0, 72 => 0, 100 => 0, 150 => 0);
+	    $sizes{int($top_dpi)}++;
+	    foreach my $size (sort { $a <=> $b } keys %sizes) {
+		$psm->radiobutton(-label => $size . " dpi"
+				  . ($size == int($top_dpi) ? " ".M"(normal)" : ""),
+				  -variable => \$ps_image_res,
+				  -value => $size . "x" . $size,
+				 );
+	    }
 	}
     }
 
@@ -5380,6 +5379,7 @@ sub generate_plot_functions {
 
 		    if ($str_name_draw{$abk}) {
 			my($name, $add) = split(/\|/, $strname);
+			$name = "" if !defined $name;
 			if ($add) {
 			    $name .= " $add";
 			}
