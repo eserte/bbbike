@@ -35,7 +35,9 @@
 # grep_point:
 # show files containing the point
 
-# XXX deletemulti implementieren
+# XXX deletemulti implementieren XXX was soll das machen? Mehrere Punkte löschen?
+
+# XXX deletelines implementieren: Loeschen von Streckenzuegen
 
 # Mit -tk wird das Programm mit Tk-Interface aufgerufen. Dann werden die
 # Argumente in der X11-Selection erwartet (Für Win32: Clipboard).
@@ -927,6 +929,8 @@ $operation = ($0 =~ /       insert_points$ /x ? 'insert'      :
 	      $0 =~ /         change_line$ /x ? 'changeline'  :
 	      $0 =~ /          grep_point$ /x ? 'grep'        :
 	      $0 =~ /        delete_point$ /x ? 'delete'      :
+	      $0 =~ /        delete_multi$ /x ? 'deletemulti' :
+	      $0 =~ /        deline_lines$ /x = 'deletelines' :
 	      					'change'
 	     );
 
