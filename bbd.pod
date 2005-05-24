@@ -122,6 +122,15 @@ no C<map> directive is specified, then the proprietary bbbike
 coordinate system is used. For WGS84 coordinates specified as DDD use
 the maptype B<polar>.
 
+=item C<title: I<title string>>
+
+This global directive sets the title or some descriptive text for the
+file.
+
+=item C<version: I<RCS or CVS identifier string>>
+
+This global directive introduces an RCS/CVS Id string.
+
 =item C<by: I<source>>
 
 Denotes that the information in the next block or line was provided by
@@ -170,6 +179,15 @@ additional layers. An alias for C<attributes> is C<attrs>.
 =item C<note: I<string>>
 
 A free text note, which shouldn't appear in the processed data.
+
+=item C<add_fragezeichen: I<string>>
+
+Some postprocessing code may add the following line with the
+descriptive text I<string> to the F<fragezeichen> file.
+
+=item C<XXX: I<string>>
+
+A note if something is unclear about the following line.
 
 =back
 
