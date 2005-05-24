@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.3 2004/08/27 07:23:52 eserte Exp $
+# $Id: strassen.t,v 1.4 2005/05/24 00:16:08 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -11,25 +11,36 @@ use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
-	 "$FindBin::RealBin/../data");
+	 "$FindBin::RealBin/../data",
+	 "$FindBin::RealBin",
+	);
 use Getopt::Long;
 
 use Strassen;
+use BBBikeUtil qw(is_in_path);
+use BBBikeTest qw(get_std_opts $do_xxx eq_or_diff);
 
 BEGIN {
     if (!eval q{
 	use Test::More;
+	use File::Temp qw(tempfile);
 	1;
     }) {
-	print "1..0 # skip: no Test::More module\n";
+	print "1..0 # skip: no Test::More and/or File::Temp module\n";
 	exit;
     }
 }
 
-BEGIN { plan tests => 16 }
+my $datadir = "$FindBin::RealBin/../data";
+my $doit;
+GetOptions(get_std_opts("xxx"),
+	   "doit!" => \$doit,
+	  ) or die "usage";
 
-my $do_xxx;
-GetOptions("xxx" => \$do_xxx) or die "usage";
+my $doit_tests = 1;
+
+plan tests => 17 + $doit_tests;
+
 goto XXX if $do_xxx;
 
 {
@@ -78,7 +89,7 @@ EOF
     is(scalar @{$s->data}, 3, "Constructing from string data");
 }
 
-XXX: {
+{
     my $data = <<EOF;
 #:
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
@@ -106,18 +117,83 @@ EOF
 	my $dir = $s->get_directive_for_iterator("bla");
 	my $name = $r->[Strassen::NAME];
 	if ($name eq 'Heinrich-Heine') {
-	    like($dir->{section}, qr{projektierte Radstreifen});
-	    like($dir->{by}, qr{berliner-zeitung});
+	    ok(grep { /projektierte Radstreifen/ } @{ $dir->{section} });
+	    ok(grep { /berliner-zeitung/ } @{ $dir->{by} });
 	} elsif ($name eq 'Reichsstr.') {
-	    like($dir->{section}, qr{projektierte Radstreifen});
-	    like($dir->{by}, qr{Tagesspiegel});
+	    ok(grep { /projektierte Radstreifen/ } @{ $dir->{section} });
+	    ok(grep { /Tagesspiegel/ } @{ $dir->{by} } );
 	} elsif ($name =~ /^Magnus-Hirschfeld-Steg/) {
-	    like($dir->{section}, qr{Straßen in Planung});
+	    ok(grep { /Straßen in Planung/ } @{ $dir->{section} });
 	    is($dir->{by}, undef);
 	}
     }
+}
 
-    
+XXX: {
+    my $s = Strassen->new_from_data_string(<<EOF, UseLocalDirectives => 1);
+#:
+#: XXX block vvv
+1	1 1,1
+2	2 2,2
+#: XXX ^^^
+#: XXX line
+3	3 3,3
+#: XXX line
+4	4 4,4
+5	5 5,5
+#: XXX block vvv
+6	6 6,6
+#: XXX ^^^
+7	7 7,7
+#: XXX multiple1
+#: XXX multiple2
+8	8 8,8
+#: XXX1 multiple
+#: XXX2 multiple
+9	9 9,9
+EOF
+
+    eq_or_diff($s->as_string, <<EOF, "block directives are preserved");
+#:
+#: XXX: block vvv
+1	1 1,1
+2	2 2,2
+#: XXX: ^^^
+#: XXX: line vvv
+3	3 3,3
+4	4 4,4
+#: XXX: ^^^
+5	5 5,5
+#: XXX: block
+6	6 6,6
+7	7 7,7
+#: XXX: multiple1
+#: XXX: multiple2
+8	8 8,8
+#: XXX1: multiple
+#: XXX2: multiple
+9	9 9,9
+EOF
+}
+
+{
+ SKIP: {
+	skip("Enable more tests with -doit option", $doit_tests) if !$doit;
+	skip("No diff", $doit_tests) if !is_in_path("diff");
+	for my $file (qw(strassen landstrassen landstrassen2 fragezeichen qualitaet_s handicap_s)) {
+	    my $orig_file = "$datadir/$file-orig";
+	    if (-e $orig_file) {
+		my $s = Strassen->new($orig_file, UseLocalDirectives => 1);
+		my($outfh,$outfilename) = tempfile(UNLINK => 1);					       
+		close $outfh;
+		$s->write($outfilename);
+		system("diff", "-u", $orig_file, $outfilename);
+		is($?, 0, "Roundtrip with $orig_file ok");
+	    } else {
+		skip("No orig file", $doit_tests);
+	    }
+	}
+    }
 }
 
 __END__
