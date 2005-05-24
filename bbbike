@@ -3488,6 +3488,7 @@ sub do_iconframe {
 		      ? ('ESRI',
 			 'SVG'
 			) : ()),
+		     #XXX not yet tested: 'OVL (TOP50)',
 		     #'-',
 		     ['G7toWin (ASCII)', 'G7toWin_ASCII'],
 		     ['GPSMAN (Tracklog)', 'GpsmanData'],
@@ -3529,6 +3530,14 @@ sub do_iconframe {
 		     warn __LINE__ . ": $@" if $@;
 		     DecBusy($top);
 		 });
+	} elsif ($fmt =~ /^ovl/i) {
+	    $svm->command
+		(-label => $fmt,
+		 -command => sub {
+		     require GPS::Ovl;
+		     GPS::Ovl->new->tk_export(coords => \@realcoords);
+		 }
+		);
 	} elsif ($fmt =~ /^bbd/) {
 	    if (-x "$FindBin::RealBin/miscsrc/bbr2bbd") {
 		$svm->command
