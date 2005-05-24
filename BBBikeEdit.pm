@@ -65,6 +65,7 @@ sub edit_mode_undef {
 }
 
 sub edit_mode_save_as {
+    main::status_message("Using edit mode is deprecated!", "die");
     my $type = shift;
     eval $type . '_save_as()';
     warn $@ if $@;
@@ -74,6 +75,7 @@ sub edit_mode_save_as {
 # Radwege
 #
 sub radweg_edit_toggle {
+    main::status_message("Using radweg edit mode is deprecated!", "die");
     if ($special_edit eq 'radweg') {
 	radweg_edit_modus();
     } else {
@@ -304,6 +306,7 @@ sub radweg_old_open {
 }
 
 sub radweg_save {
+    main::status_message("Using radwege edit mode is deprecated!", "die");
     if ($radweg_file) {
 	BBBikeEdit::ask_for_co($main::top, $radweg_file);
 	open(RW, ">$radweg_file") or main::status_message($!, "die");
@@ -318,6 +321,7 @@ sub radweg_save {
 }
 
 sub radweg_old_save {
+    main::status_message("Using edit mode is deprecated!", "die");
     if ($radweg_file) {
 	BBBikeEdit::ask_for_co($main::top, $radweg_file);
 	open(RW, ">$radweg_file") or main::status_message($!, "die");
@@ -329,6 +333,7 @@ sub radweg_old_save {
 }
 
 sub radweg_save_as {
+    main::status_message("Using edit mode is deprecated!", "die");
     my $file = $top->getSaveFile;
     if ($file) {
 	$radweg_file = $file;
@@ -1677,6 +1682,7 @@ sub label_set_i {
 }
 
 sub label_save_as {
+    main::status_message("Using edit mode is deprecated!", "die");
     return unless $p_obj{'lb'};
     my $file = $top->getSaveFile;
     if ($file) {
@@ -1813,11 +1819,13 @@ sub vorfahrt_set_i {
 =cut
 
 sub vorfahrt_save {
+    main::status_message("Using edit mode is deprecated!", "die");
     return unless $p_obj_vf;
     $p_obj_vf->write;
 }
 
 sub vorfahrt_save_as {
+    main::status_message("Using edit mode is deprecated!", "die");
     return unless $p_obj_vf;
     my $file = $top->getSaveFile;
     if ($file) {
@@ -2232,6 +2240,11 @@ sub editmenu {
 	       -command => \&main::delete_point,
 	       -anchor => "w",
 	      )->pack(-fill => "x");
+##XXX not yet:
+#     $t->Button(-text => "Delete lines",
+# 	       -command => \&main::delete_lines,
+# 	       -anchor => "w",
+# 	      )->pack(-fill => "x");
     $t->Label(-justify => "left",
 	      -text => "Use F8 to edit element under mouse cursor.\nAlternatively use F2 for insert point.",
 	     )->pack(-anchor => "w");
