@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDebug.pm,v 1.3 2005/05/22 11:02:00 eserte Exp eserte $
+# $Id: BBBikeDebug.pm,v 1.4 2005/05/22 21:18:02 eserte Exp $
 #
 # This is the Debug example from perlfilter.pod
 # Modified by Slaven Rezic
