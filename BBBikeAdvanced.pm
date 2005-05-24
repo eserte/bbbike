@@ -1767,6 +1767,9 @@ sub penalty_menu {
 }
 
 # Return true if there was a modification.
+# Arguments: $action, $oper_name
+#   $action is ignored for now
+#   $oper_name is something like "insert" or "delete"
 ### AutoLoad Sub
 sub _insert_points_and_co {
     my $action = shift;
@@ -1810,6 +1813,7 @@ sub change_points { _insert_points_and_co("change_points", "change")     }
 sub change_line   { _insert_points_and_co("change_line",   "changeline") }
 sub grep_point    { _insert_points_and_co("grep_point",    "grep")       }
 sub delete_point  { _insert_points_and_co("delete_point",  "delete")     }
+sub delete_lines  { _insert_points_and_co("delete_lines",  "deletelines" }
 sub change_poly_points {
     # XXX NYI
 }
