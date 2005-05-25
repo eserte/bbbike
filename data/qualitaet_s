@@ -870,7 +870,7 @@ Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2 11993,9211 11954,9415 11934,9538 1191
 Biebricher Str.: mäßiges Kopfsteinpflaster	Q2 11884,8492 12057,8529
 Mainzer Str.: schlechtes bis mäßiges Kopfsteinpflaster (auch bergab nur 15 km/h)	Q3 12063,8826 12057,8529 12068,8409
 Mainzer Str.: mäßiges Kopfsteinpflaster (?)	Q2 12068,8409 12096,8300 12139,8128
-Wissmannstr.: Kopfsteinpflaster	Q2 11767,9026 11769,8515
+Wissmannstr.: schlechtes Kopfsteinpflaster	Q3 11767,9026 11769,8515
 Liebigstr.: Kopfsteinpflaster	Q2 13905,12374 14000,12519 14067,12698
 Liselotte-Herrmann-Str.: Kopfsteinpflaster	Q2 12703,13859 12438,14054 12262,14176
 Esmarchstr.: Kopfsteinpflaster	Q2 12307,14246 12262,14176 12199,14102 12110,13965
@@ -1189,7 +1189,6 @@ Baikalstr.: mäßiger Beton	Q1 17209,10361 17253,10504 17281,10598
 Rüdickenstr.: gute Betonplattenstraße	Q0 17162,17626 17393,17301 17501,17267 17751,17437
 (Baikalstr. - Rummelsburger Str.): Parkweg mit Unebenheiten	Q2 17281,10598 17241,10865
 Bühler Weg: Asphalt	Q0 11198,1291 11240,1206 11631,978 11665,1040
-Gritznerstr.: asphaltiert, aber teilweise Kopfsteinpflaster	Q1 4734,6716 4555,6403 4507,6320 4472,6242 4385,6045 4306,5865
 Kirchstr.: Asphalt	Q0 589,2925 751,2860
 Max-Lingner-Str.: Asphalt	Q0 11088,17511 11100,17396 11126,17140
 Basdorfer Str.: keine Geschwindigkeitsbegrenzung	Q0 19870,15834 20150,15678
@@ -1355,6 +1354,7 @@ Gieselerstr.: Asphalt	Q0 4602,9439 4619,9200 4606,9023
 Hattenheimer Str. (Frohnau): schlechtes Kopfsteinpflaster	Q3 2666,24998 2950,24719
 Hubertusstr. (Steglitz): Asphalt	Q0 5240,5922 5099,5994
 Hessenallee: Asphalt	Q0 657,11650 664,11678 788,11744 906,11870
+Zionskirchstr.: Kopfsteinpflaster	Q1 10101,14455 10277,14350
 (Mauerweg Forst Spandau): Asphalt	Q0 -7257,16925 -7175,16968 -7151,17330 -6965,17565 -6968,17717 -6764,18287 -6794,18921 -6943,19311 -7016,19375 -8022,19052
 Eiskeller - Schönwalder Allee: Asphalt	Q0 -6791,20816 -7102,20371 -7586,20088 -7598,19871 -8028,19646 -7991,19503 -8022,19052
 (Mauerweg Forst Spandau): mäßiger Asphalt (rauh und Wurzeln)	Q1 -3497,20003 -3805,20118 -4219,20240 -4472,20411 -4625,20537 -5118,20749 -5459,20807
@@ -1370,6 +1370,11 @@ Melanchthonstr. (Spandau): grobes Kopfsteinpflaster	Q3 -4143,12336 -4160,12512
 (Glühwürmchenweg - Pionierstr.): rauher Asphalt	Q1 -6187,16296 -6162,16287 -6018,16250 -5960,16441
 Maikäferweg: asphaltiert	Q0 -6478,16674 -6855,16873 -6971,16889 -7102,16895 -7257,16925
 Goldkäferweg: asphaltiert	Q0 -6855,16873 -6975,16550 -7012,16446 -7049,16448
+Gritznerstr.: asphaltiert	Q0 4734,6716 4555,6403
+Gritznerstr.: Kopfsteinpflaster	Q2 4555,6403 4507,6320
+Gritznerstr.: asphaltiert	Q0 4507,6320 4472,6242
+Gritznerstr.: Kopfsteinpflaster	Q2 4472,6242 4446,6171
+Gritznerstr.: asphaltiert	Q0 4446,6171 4385,6045 4306,5865
 Abbestr.: Kopfsteinpflaster	Q2 4693,12068 4755,12219 4829,12357
 Kuglerstr.: schlechtes Kopfsteinpflaster	Q3 11618,16183 11341,16273 11018,16358
 Justus-von-Liebig-Str.: Asphalt	Q0 19495,2535 19878,2899
@@ -1453,3 +1458,4 @@ Dammbrücke: Kopfsteinpflaster	Q2 -3029,14656 -3054,14704
 Kolk: Kopfsteinpflaster	Q2 -2939,14585 -3010,14612 -3029,14656
 Heidetor: Kopfsteinpflaster	Q2 -3110,14698 -3106,14731
 Oranienburger Tor (Spandau): Kopfsteinpflaster	Q2 -3054,14704 -3110,14698
+Paulsenstr.: schlechtes Kopfsteinpflaster	Q3 4167,5911 4233,6069 4299,6229

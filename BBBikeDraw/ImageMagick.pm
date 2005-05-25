@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ImageMagick.pm,v 1.11 2005/04/05 22:35:30 eserte Exp $
+# $Id: ImageMagick.pm,v 1.11 2005/04/05 22:35:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.

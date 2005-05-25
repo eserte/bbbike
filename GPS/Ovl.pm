@@ -395,7 +395,8 @@ sub as_string_ascii {
 
 sub tk_export {
     my($self, %args) = @_;
-    my $top = $main::top;
+    # peacify -w
+    my $top = $main::top = $main::top;
     my $file = $top->getSaveFile
 	(-defaultextension => '.ovl',
 	 -filetypes => [[M"OVL-Dateien" => '.ovl'],
@@ -404,6 +405,7 @@ sub tk_export {
     return unless defined $file;
     require Karte::Standard;
     require Karte::Polar;
+    $Karte::Polar::obj = $Karte::Polar::obj; # peacify -w
     my @polar_coords = map { [ $Karte::Polar::obj->standard2map(@$_) ] } @{ $args{coords} };
     my $s = $self->as_string_ascii(\@polar_coords);
     die "$s -> $file";#XXX

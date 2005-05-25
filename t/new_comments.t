@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: new_comments.t,v 1.3 2005/04/05 22:53:45 eserte Exp $
+# $Id: new_comments.t,v 1.4 2005/05/24 23:35:39 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -17,7 +17,7 @@ use Strassen;
 BEGIN {
     if (!eval q{
 	use Test::More;
-        use YAML;
+        use YAML 0.39; # changed YAML magic
 	use Strassen::StrassenNetzNew;
 	require "$FindBin::RealBin/../miscsrc/XXX_new_comments.pl";
 	1;
@@ -101,7 +101,7 @@ for my $test (@tests) {
     NewComments::process_data($res);
 
     my $comments = [ map { $_->{Comment} } @{$res->{Route}} ];
-    is(YAML::Dump($comments), "--- #YAML:1.0\n$expected", $desc)
+    is(YAML::Dump($comments), "---\n$expected", $desc)
 	or diag NewComments::output_data($res);
 }
 

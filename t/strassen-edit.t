@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-edit.t,v 1.2 2005/05/23 22:21:59 eserte Exp $
+# $Id: strassen-edit.t,v 1.3 2005/05/25 07:26:29 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -31,11 +31,12 @@ plan tests => 5;
 {
     my $s = get_streets();
     $s->next;
-    is($s->as_string, <<EOF, "well, blocks should be blocks again...");
-#: XXX: block directive
+    is($s->as_string, <<EOF, "Blocks are blocks again");
+#:
+#: XXX: block directive vvv
 First street\tX 1,2 3,4 5,6
-#: XXX: block directive
 Second street\tX 1,2 3,4 5,6
+#: XXX: ^^^
 #: XXX: line directive
 Third street\tX 1,2 3,4 5,6
 Fourth street\tX 1,2 3,4 5,6
@@ -43,6 +44,7 @@ EOF
 
     $s->delete_current;
     is($s->as_string, <<EOF, "Delete at beginning");
+#:
 #: XXX: block directive
 Second street\tX 1,2 3,4 5,6
 #: XXX: line directive
@@ -56,10 +58,11 @@ EOF
     $s->set_last;
     $s->delete_current;
     is($s->as_string, <<EOF, "Delete last");
-#: XXX: block directive
+#:
+#: XXX: block directive vvv
 First street\tX 1,2 3,4 5,6
-#: XXX: block directive
 Second street\tX 1,2 3,4 5,6
+#: XXX: ^^^
 #: XXX: line directive
 Third street\tX 1,2 3,4 5,6
 EOF
@@ -71,10 +74,11 @@ EOF
     $s->next;
     $s->delete_current;
     is($s->as_string, <<EOF, "Delete third street");
-#: XXX: block directive
+#:
+#: XXX: block directive vvv
 First street\tX 1,2 3,4 5,6
-#: XXX: block directive
 Second street\tX 1,2 3,4 5,6
+#: XXX: ^^^
 Fourth street\tX 1,2 3,4 5,6
 EOF
 }
@@ -94,10 +98,11 @@ Not deleted 3	X 1,2 4,5
 EOF
     $s->edit_all_delete_2_coord_lines("1,2", "3,4", "4,5");
     is($s->as_string, <<EOF, "edit_all_delete_2_coord_lines");
-#: XXX: block directive
+#:
+#: XXX: block directive vvv
 Not deleted 1	X 1,2 4,5
-#: XXX: block directive
 Not deleted 2	X 3,4 5,6
+#: XXX: ^^^
 Not deleted 3	X 1,2 4,5
 EOF
 }

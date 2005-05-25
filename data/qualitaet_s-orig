@@ -1358,8 +1358,6 @@ Rüdickenstr.: gute Betonplattenstraße	Q0 17162,17626 17393,17301 17501,17267 177
 #: by: ^^^
 #: by: Torsten Nowak
 Bühler Weg: Asphalt	Q0 11198,1291 11240,1206 11631,978 11665,1040
-#: by: Micha Bustian
-Gritznerstr.: asphaltiert, aber teilweise Kopfsteinpflaster	Q1 4734,6716 4555,6403 4507,6320 4472,6242 4385,6045 4306,5865
 #: by: Sini
 Kirchstr.: Asphalt	Q0 589,2925 751,2860
 #: by: Philipp Kaufmann vvv
@@ -1680,6 +1678,7 @@ Hubertusstr. (Steglitz): Asphalt	Q0 5240,5922 5099,5994
 #: by: WIll Gibson:
 Hessenallee: Asphalt	Q0 657,11650 664,11678 788,11744 906,11870
 #: by: Andreas Mühlhausen: vvv
+Zionskirchstr.: Kopfsteinpflaster	Q1 10101,14455 10277,14350
 #: XXX Teil von Maikäferweg bis Radelandstr. laut "Berliner Umland" "witterungsabhängiger Weg"
 (Mauerweg Forst Spandau): Asphalt	Q0 -7257,16925 -7175,16968 -7151,17330 -6965,17565 -6968,17717 -6764,18287 -6794,18921 -6943,19311 -7016,19375 -8022,19052
 Eiskeller - Schönwalder Allee: Asphalt	Q0 -6791,20816 -7102,20371 -7586,20088 -7598,19871 -8028,19646 -7991,19503 -8022,19052
@@ -1699,6 +1698,12 @@ Melanchthonstr. (Spandau): grobes Kopfsteinpflaster	Q3 -4143,12336 -4160,12512
 Maikäferweg: asphaltiert	Q0 -6478,16674 -6855,16873 -6971,16889 -7102,16895 -7257,16925
 #: XXX: Auch südlich des Glühwürmchenweg?
 Goldkäferweg: asphaltiert	Q0 -6855,16873 -6975,16550 -7012,16446 -7049,16448
+#: note: Angaben von Micha Bustian waren ungenauer:
+Gritznerstr.: asphaltiert	Q0 4734,6716 4555,6403
+Gritznerstr.: Kopfsteinpflaster	Q2 4555,6403 4507,6320
+Gritznerstr.: asphaltiert	Q0 4507,6320 4472,6242
+Gritznerstr.: Kopfsteinpflaster	Q2 4472,6242 4446,6171
+Gritznerstr.: asphaltiert	Q0 4446,6171 4385,6045 4306,5865
 #: by: ^^^
 #: by: Detlef Herzog:
 Abbestr.: Kopfsteinpflaster	Q2 4693,12068 4755,12219 4829,12357

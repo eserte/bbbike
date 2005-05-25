@@ -295,7 +295,7 @@ userdel	q4 -18080,-12637 -17374,-13449
        },
        {
          'until' => 1120168800,
-         'text' => 'Pistoriusstr. (Weissensee) Richtung Berliner Allee zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 30.06.2005)',
+         'text' => 'Pistoriusstr. (Weissensee) Richtung Berliner Allee zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt (bis 30.06.2005)',
          'from' => 1111524913,
          'data' => 'userdel	1 13386,16408 13797,16237
 ',

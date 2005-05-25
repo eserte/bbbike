@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: small_berlinmap.pl,v 2.15 2005/02/25 01:31:22 eserte Exp $
+# $Id: small_berlinmap.pl,v 2.16 2005/05/24 23:32:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001 Slaven Rezic. All rights reserved.
@@ -51,6 +51,10 @@ With -nogif only the PNG images will be created.
 =back
 
 =head1 BUGS
+
+-imagemagick geht nicht mehr: 
+
+    Exception 410: no images to mogrify (Transparent) at /home/e/eserte/src/bbbike/miscsrc/../BBBikeDraw/ImageMagick.pm line 134.
 
 Leider kann Netscape anscheinend keine transparenten PNGs darstellen ...
 deshalb ist eine Konvertierung nach GIF erforderlich.

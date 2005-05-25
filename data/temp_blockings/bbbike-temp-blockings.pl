@@ -1613,7 +1613,7 @@ EOF
      },
      { from  => 1111524913, # 2005-03-22 21:55
        until => 1120168800, # 2005-07-01 00:00
-       text  => 'Pistoriusstr. (Weissensee) Richtung Berliner Allee zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 30.06.2005)',
+       text  => 'Pistoriusstr. (Weissensee) Richtung Berliner Allee zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt (bis 30.06.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1 13386,16408 13797,16237
