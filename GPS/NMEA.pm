@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: NMEA.pm,v 1.3 2005/04/18 07:10:58 eserte Exp $
+# $Id: NMEA.pm,v 1.4 2005/05/25 18:43:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ push @ISA, 'GPS';
 
 use strict;
 
-sub magics { ('^\$(GPGSA|GPGSV|GPRMC|PGRMC|PGRME|PGRMI|PGRMO|PGRMT|PGRMV)') }
+sub magics { ('^\$(GPGSA|GPGSV|GPRMC|PGRMC|PGRME|PGRMI|PGRMO|PGRMT|PGRMV|GPGGA)') }
 
 sub convert_to_route {
     my($self, $file, %args) = @_;
