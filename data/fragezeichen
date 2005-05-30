@@ -134,7 +134,7 @@ Stolzenhagen - Kreuzbruch: Qualität?	? 12427,41870 11625,42525 10934,44311 10485
 Basdorf - Bernauer Heide: passierbar (Bahnstrecke), Qualität, Kfz-los?	? 12887,36543 13723,36178
 Zugbrücke/Schleuse?	? 35066,4548
 Zugbrücke?	? 32737,183789
-Alexanderufer: Existiert diese Verbindung bereits?	? 8259,13009 8312,13296 8378,13425 8337,13541
+Alexanderufer: Existiert diese Verbindung bereits?	? 8269,13062 8312,13296 8378,13425 8337,13541
 Liebigstr. - Frankfurter Allee: existiert eine Verbindung?	? 13905,12374 13885,12279
 Schloßstr (Charlottenburg): gibt es hier auch Radstreifen?	? 3038,12482 3076,12192 3091,12071 3103,11968
 Schillingstr. - Volkspark Friedrichshain: existiert eine direkte Verbindung durch das Wohngebiet?	? 11635,12745 11839,13083 12085,13377
@@ -609,7 +609,7 @@ Cyclopstr.: nicht geeignet (laut ADFC-Karte)	? 4825,21718 5138,21358
 Knollstr. (ARRAY(0x838e270))	? 17178,-101 17558,126 17740,214
 Roßlauer Str. (ARRAY(0x8390300))	? 20656,12415 21148,12365
 Nelly-Sachs-Str. (ARRAY(0x839de58))	? 23993,14838 24325,14965
-(Spreeuferstr.) (ARRAY(0x835d608))	? 7941,12902 8206,13012
+(Spreeuferstr.) (ARRAY(0x835d608))	? 7941,12902 8056,13017 8184,13062
 Borkheide - Neuendorf (ARRAY(0x832e24c))	? -26338,-21122 -27908,-22935 -28547,-22981 -29244,-23127
 Russ. Kolonie (ARRAY(0x835c538))	? -12855,-72 -12947,106 -13050,337
 (Am Nutheschnellweg) (ARRAY(0x8383f18))	? -11399,-1339 -11698,-1104
@@ -622,11 +622,11 @@ Fanningerstr.: Kopfsteinpflaster (ARRAY(0x8338f60))	? 16261,12224 16445,12193 16
 Marienhöher Weg: Kopfsteinpflaster (ARRAY(0x833c854))	? 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250
 Parkstr.: Kopfsteinpflaster (ARRAY(0x833e670))	? 9029,6360 9143,6415
 Naumannstr.: Kopfsteinpflaster (ARRAY(0x834246c))	? 7706,8875 7709,8770
-Margueritenring: Kopfsteinpflaster (ARRAY(0x8355eb8))	? 16491,2239 16807,2245 16898,2239 17009,2095 17060,2087 17382,2064 17421,2090
-Heegermühler Weg: schlechtes Kopfsteinpflaster (ARRAY(0x835a15c))	? 7966,19968 8043,19725 8231,19806 8415,19910
-Rykestr.: Kopfsteinpflaster (ARRAY(0x835a270))	? 11358,14331 11446,14508 11526,14693 11610,14886
-(Unter dem S-Bhf. Schichauweg): Verbundsteinpflaster (ARRAY(0x83884c0))	? 9693,-621 9518,-668
-Miethepfad: Verbundsteinpflaster (ARRAY(0x83885d4))	? 9518,-668 9557,-779 9585,-859
+Margueritenring: Kopfsteinpflaster (ARRAY(0x8355f90))	? 16491,2239 16807,2245 16898,2239 17009,2095 17060,2087 17382,2064 17421,2090
+Heegermühler Weg: schlechtes Kopfsteinpflaster (ARRAY(0x835a234))	? 7966,19968 8043,19725 8231,19806 8415,19910
+Rykestr.: Kopfsteinpflaster (ARRAY(0x835a348))	? 11358,14331 11446,14508 11526,14693 11610,14886
+(Unter dem S-Bhf. Schichauweg): Verbundsteinpflaster (ARRAY(0x8388598))	? 9693,-621 9518,-668
+Miethepfad: Verbundsteinpflaster (ARRAY(0x83886ac))	? 9518,-668 9557,-779 9585,-859
 Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser (ARRAY(0x82b3658))	? 9772,-12194 9345,-11425 9472,-11297 9578,-10891 9598,-10356 9854,-9480 10023,-8859
 F XXX: fester Sandweg mit einigen Schlaglöchern (ARRAY(0x8313a40))	? -21063,-2021 -20721,-1935 -20486,-1956 -20295,-1870 -20176,-525
 Seelübbe - Prenzlau: Kopfsteinplaster (ARRAY(0x831fac4))	? 40864,100741 40754,100635 40954,100113
@@ -664,16 +664,15 @@ tragen (zwei kurze Treppen) (ARRAY(0x8320f9c))	? 9453,6415
 Fußgängerbrücke über den Sachesendamm gesperrt, südliche Rampe ist aber befahrbar (ARRAY(0x8328eac))	? 7718,7641 7772,7610
 L 39; (ASFriedersdorf-Neu Zittau); keine Brücke ü. Oder-Spree-Kanal; kein Bw ü. Oder-Spree-Kanal; Vollsperrung; 00:00:00-unbekannt (ARRAY(0x832b00c))	? 35335,-6272 35143,-5650
 L 70 (Doberlug Kirchhain-Dahme); zw. B87 Hohenbuckow u. Hillmersdorf; Fahrbahnschäden; Vollsperrung; 22.05.97-unbekannt (ARRAY(0x832b168))	? 17023,-71738 17783,-72721 17979,-73530 17960,-73915 17961,-74364 18228,-75553 18187,-76301 18061,-76878
-B2: teilweise beidseitiger Radweg, teilweise Radstreifen (nördliches Ende vielleicht nicht genau)	? -10206,6756 -10923,6318 -12181,5611 -12865,5567 -13143,5587 -13287,5556 -13578,5396 -13676,5266 -13802,4455 -13784,3900 -13387,2987 -13375,2950 -13152,2169 -13140,1900 -13125,1700 -13074,1136 -13053,919 -13049,865 -13052,775 -13062,535 -13050,337 -13091,-8 -13111,-136
-Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position ist vielleicht nicht ganz genau)	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9060,22342
-Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position des südlichen Endes ist vielleicht nicht ganz genau)	? -10377,20973 -10581,19871 -10000,18629
-Radwege unterschiedlicher Form und Qualtität (genauer spezifizieren:)	? -9753,-2474 -8493,-2870 -8428,-2886 -8278,-2928 -7873,-3094 -7060,-3124 -6810,-3151
-Radweg, nördliche Seite (nicht ganz sicher)	? 7981,-7165 9170,-7708 9828,-8106
-Bansin - Ückeritz: asphaltierter Zweirichtungsradweg auf der südlichen Seite (letztes Stück ab Schmollensee bis Bansin war 2004-06 noch in Bau:)	? 55741,174692 55541,175016 55388,175169 55012,175498 54704,175615 54331,175874 52866,176160 52713,176237 52093,178063 51723,178269 51569,178497 51251,179173
-Zweirichtungsradweg auf der östlichen Seite (am Gutsgartenweg sicher, nördl. und südl. davon aus "Berliner Umland" entnommen:)	? -18304,4749 -18210,4505 -18025,4018 -17956,3840 -17588,2815 -17309,2517 -16686,1900
-Heinrich-Mann-Allee: Radweg (auf Gehweg) (wo genau ist das südliche Ende des Radwegs?)	? -10746,-4024 -10811,-3874 -11022,-3662 -11153,-3534 -11667,-3047 -11781,-2729 -12431,-2096
-Radweg (andere Straßenseite auch?)	? 37093,-151665 37375,-151190
-Radweg (andere Straßenseite auch?)	? 37628,-150734 37756,-150359
+Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (ARRAY(0x82e1d5c))	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9060,22342
+Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (ARRAY(0x82e1e4c))	? -10377,20973 -10581,19871 -10000,18629
+Radwege unterschiedlicher Form und Qualtität (ARRAY(0x82e1f48))	? -9753,-2474 -8493,-2870 -8428,-2886 -8278,-2928 -7873,-3094 -7060,-3124 -6810,-3151
+Radweg, nördliche Seite (ARRAY(0x8313854))	? 7981,-7165 9170,-7708 9828,-8106
+Bansin - Ückeritz: asphaltierter Zweirichtungsradweg auf der südlichen Seite (ARRAY(0x8317848))	? 55741,174692 55541,175016 55388,175169 55012,175498 54704,175615 54331,175874 52866,176160 52713,176237 52093,178063 51723,178269 51569,178497 51251,179173
+Zweirichtungsradweg auf der östlichen Seite (ARRAY(0x831798c))	? -18304,4749 -18210,4505 -18025,4018 -17956,3840 -17588,2815 -17309,2517 -16686,1900
+Heinrich-Mann-Allee: Radweg (auf Gehweg) (ARRAY(0x831a1bc))	? -10746,-4024 -10811,-3874 -11022,-3662 -11153,-3534 -11667,-3047 -11781,-2729 -12431,-2096
+Radweg (ARRAY(0x831af00))	? 37093,-151665 37375,-151190
+Radweg (ARRAY(0x831b908))	? 37628,-150734 37756,-150359
 nach links zum Bahndamm abbiegen: bis zur Kreuzung Gregoroviusweg vorfahren (das hier wird wegfallen, falls es eine andere Verbindung zwischen Gregoroviusweg und Bahndamm gibt)	? 18690,10016 18698,9996 19675,10410
-F2.2 (Potsdam) (Stimmt der Verlauf der F2.2 zwischen Nattwerder und Bornim?)	? -20176,-525 -21063,769 -20829,1047 -20766,1326 -20959,1539 -20959,1753 -20064,1906 -19990,2131 -20009,2396 -19656,2362 -19438,2244 -18728,2153 -18712,1225 -18678,1168 -18135,1580 -17730,1580 -17067,1388 -16894,1485
-F3 (Potsdam) (Wie ist der genaue Verlauf der F3?)	? -21636,-2101 -22042,-2060 -22206,-1693 -22683,-1521 -23133,-1244 -23199,-903 -23175,-350 -23411,15 -23896,653 -24509,1607 -24680,1670 -24894,1733 -24895,1903 -24853,2031 -24983,2265 -25110,2303 -25453,2418 -25539,2641 -25662,2746 -25669,2939 -25787,3228 -26196,4769 -27127,5270 -26965,5390 -26840,5684 -26784,5762 -26794,5867 -26689,6111 -26525,6519 -25978,6441 -25531,6634 -25318,6593 -25187,6468 -25060,6338 -24240,6075 -23599,5864 -21067,6503 -21110,6589 -20771,6952 -20301,7082 -20023,6826 -19787,6551 -19616,6466 -19303,5325 -19253,5109 -18825,4750 -18693,4568 -19403,4631 -19309,4359 -19339,3792 -19634,3593 -19766,3346 -19868,3159 -19928,2706 -19987,2459 -20009,2396 -19990,2131 -20064,1906 -20959,1753 -20959,1539 -20766,1326 -20829,1047 -21063,769 -20176,-525 -20295,-1870 -20486,-1956 -20721,-1935 -21063,-2021 -21210,-2058 -21508,-2080 -21636,-2101
+F2.2 (Potsdam) (ARRAY(0x831b6dc))	? -20176,-525 -21063,769 -20829,1047 -20766,1326 -20959,1539 -20959,1753 -20064,1906 -19990,2131 -20009,2396 -19656,2362 -19438,2244 -18728,2153 -18712,1225 -18678,1168 -18135,1580 -17730,1580 -17067,1388 -16894,1485
+F3 (Potsdam) (ARRAY(0x831b7b4))	? -21636,-2101 -22042,-2060 -22206,-1693 -22683,-1521 -23133,-1244 -23199,-903 -23175,-350 -23411,15 -23896,653 -24509,1607 -24680,1670 -24894,1733 -24895,1903 -24853,2031 -24983,2265 -25110,2303 -25453,2418 -25539,2641 -25662,2746 -25669,2939 -25787,3228 -26196,4769 -27127,5270 -26965,5390 -26840,5684 -26784,5762 -26794,5867 -26689,6111 -26525,6519 -25978,6441 -25531,6634 -25318,6593 -25187,6468 -25060,6338 -24240,6075 -23599,5864 -21067,6503 -21110,6589 -20771,6952 -20301,7082 -20023,6826 -19787,6551 -19616,6466 -19303,5325 -19253,5109 -18825,4750 -18693,4568 -19403,4631 -19309,4359 -19339,3792 -19634,3593 -19766,3346 -19868,3159 -19928,2706 -19987,2459 -20009,2396 -19990,2131 -20064,1906 -20959,1753 -20959,1539 -20766,1326 -20829,1047 -21063,769 -20176,-525 -20295,-1870 -20486,-1956 -20721,-1935 -21063,-2021 -21210,-2058 -21508,-2080 -21636,-2101

@@ -726,11 +726,12 @@ GPS/Gardown.pm
 GPS/G7toWin_ASCII.pm
 GPS/G7toWin_2.pm
 GPS/Unknown1.pm
-GPS/NMEA.pm
+GPS/MyNMEA.pm
 GPS/DirectGarmin.pm
 GPS/GpsmanData.pm
 GPS/Util.pm
 GPS/WaypointPlus.pm
+GPS/Gpsbabel.pm
 GPS/t/gpsmandata.t
 Geography/Muenchen_DE.pm
 msg/bbbike/en

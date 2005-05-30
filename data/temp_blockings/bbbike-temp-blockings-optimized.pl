@@ -1,103 +1,7 @@
 @temp_blocking = ();
-$#temp_blocking = 33;
+$#temp_blocking = 122;
 push @temp_blocking,
 (
-       {
-         'until' => 1117080000,
-         'text' => 'Schlichtallee, Zwischen Kreuzung Hauptstraße und Kreuzung Lückstraße in beiden Richtungen Brückenarbeiten, gesperrt, Dauer: 23.05.2005 06:00 Uhr bis 26.05.2005 06:00 Uhr ',
-         'from' => 1116734400,
-         'data' => 'userdel	2 15751,10582 15629,10481
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'until' => 1117576800,
          'text' => 'L 40; (Großbeeren-Güterfelde); zw. Großbeeren u. Neubeeren Neubau Bauwerk Vollsperrung 24.09.2004-31.05.2005 ',
@@ -161,15 +65,22 @@ userdel	q4 43553,20466 43110,19818
        undef,
        undef,
        {
-         'until' => 1117576800,
-         'text' => 'L 401; (Lindenallee, Fontaneallee); OL Zeuthen, zw. Forstweg und Fährstr. grundhafter Straßenbau Vollsperrung 01.11.2004-31.05.2005 ',
+         'until' => 1123884000,
+         'text' => 'L 401; (Lindenallee, Fontaneallee); OL Zeuthen, zw. Forstweg und Fährstr. grundhafter Straßenbau Vollsperrung 01.11.2004-12.08.2005 ',
          'from' => 1099177200,
          'data' => 'userdel	q4 26581,-7087 26146,-6218
 ',
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'until' => 1125525600,
+         'text' => 'L 19; (Zechlinerhütte-Wesenberg (MVP)); zw. Abzw. Klein Zerlang u. LG (nö. Prebelowbrücke) Brückenneubau Vollsperrung 11.10.2004-31.08.2005 ',
+         'from' => 1097359200,
+         'data' => 'userdel	2 -26403,85177 -26316,84900
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -511,6 +422,33 @@ userdel	q4 1872,-1118 1680,-1011
          'data' => 'userdel	q4 55393,-4240 55563,-4690
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1117490400,
+         'text' => 'Luxemburger Straße - Föhrer Straße, Zwischen Kreuzung Leopoldplatz und Kreuzung Amrumer Straße Veranstaltung, Straße gesperrt, Dauer: 27.05.2005 06:00 Uhr bis 30.05.2005 ',
+         'from' => 1117080000,
+         'data' => 'userdel	q4 7162,15436 7020,15314
+userdel	q4 7162,15436 7288,15579
+userdel	q4 6647,15094 6737,15133
+userdel	q4 6737,15133 7020,15314
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1117490400,
+         'text' => 'K 6910; (Geltower Chausse); Bahnübergang im OT Caputh Gleisbauarbeiten Vollsperrung 29.05.2005-30.05.2005 ',
+         'from' => 1117231200,
+         'data' => 'userdel	2 -17811,-6820 -17811,-6691
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1117749600,
+         'text' => 'L 29; (Biesenthal-Wandlitz); Bahnübergang bei Wandlitz Gleisbauarbeiten Vollsperrung 31.05.2005-02.06.2005 ',
+         'from' => 1117404000,
+         'data' => 'userdel	2 15403,40364 14713,40426
+',
+         'type' => 'gesperrt'
        }
      
 );

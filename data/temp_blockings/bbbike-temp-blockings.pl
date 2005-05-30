@@ -1145,8 +1145,8 @@ userdel	q4 8231,26584 8194,25966
 EOF
      },
      { from  => 1099177200, # 2004-10-31 01:00
-       until => 1117576800, # 2005-06-01 00:00
-       text  => 'L 401; (Lindenallee, Fontaneallee); OL Zeuthen, zw. Forstweg und Fährstr. grundhafter Straßenbau Vollsperrung 01.11.2004-31.05.2005 ',
+       until => 1123884000, # 2005-08-13 00:00
+       text  => 'L 401; (Lindenallee, Fontaneallee); OL Zeuthen, zw. Forstweg und Fährstr. grundhafter Straßenbau Vollsperrung 01.11.2004-12.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 26581,-7087 26146,-6218
@@ -1161,8 +1161,8 @@ userdel	q4 64514,-1544 64439,-1243
 EOF
      },
      { from  => 1097359200, # 2004-10-10 00:00
-       until => 1114898400, # 2005-05-01 00:00
-       text  => 'L 19; (Zechlinerhütte-Wesenberg (MVP)); zw. Abzw. Klein Zerlang u. LG (nö. Prebelowbrücke) Brückenneubau Vollsperrung 11.10.2004-30.04.2005 ',
+       until => 1125525600, # 2005-09-01 00:00
+       text  => 'L 19; (Zechlinerhütte-Wesenberg (MVP)); zw. Abzw. Klein Zerlang u. LG (nö. Prebelowbrücke) Brückenneubau Vollsperrung 11.10.2004-31.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -26403,85177 -26316,84900
@@ -1942,6 +1942,33 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 55393,-4240 55563,-4690
+EOF
+     },
+     { from  => 1117080000, # 2005-05-26 06:00
+       until => 1117490400, # 2005-05-31 00:00
+       text  => 'Luxemburger Straße - Föhrer Straße, Zwischen Kreuzung Leopoldplatz und Kreuzung Amrumer Straße Veranstaltung, Straße gesperrt, Dauer: 27.05.2005 06:00 Uhr bis 30.05.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 7162,15436 7020,15314
+userdel	q4 7162,15436 7288,15579
+userdel	q4 6647,15094 6737,15133
+userdel	q4 6737,15133 7020,15314
+EOF
+     },
+     { from  => 1117231200, # 2005-05-28 00:00
+       until => 1117490400, # 2005-05-31 00:00
+       text  => 'K 6910; (Geltower Chausse); Bahnübergang im OT Caputh Gleisbauarbeiten Vollsperrung 29.05.2005-30.05.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -17811,-6820 -17811,-6691
+EOF
+     },
+     { from  => 1117404000, # 2005-05-30 00:00
+       until => 1117749600, # 2005-06-03 00:00
+       text  => 'L 29; (Biesenthal-Wandlitz); Bahnübergang bei Wandlitz Gleisbauarbeiten Vollsperrung 31.05.2005-02.06.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 15403,40364 14713,40426
 EOF
      },
     );

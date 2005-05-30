@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.35 2005/05/20 23:17:53 eserte Exp $
+# $Id: GpsmanData.pm,v 1.35 2005/05/20 23:17:53 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005 Slaven Rezic. All rights reserved.
@@ -30,6 +30,7 @@ BEGIN {
 	    Type Name
 	    Waypoints WaypointsHash
 	    Track CurrentConverter
+	    VersionXXX
 	   )) {
 	my $acc = $_;
 	*{$acc} = sub {
@@ -87,10 +88,11 @@ sub check {
     my $check = 0;
     while(<F>) {
 	next if /^%/ || /^\s*$/;
-	if (/!Format: (DMS|DDD) 1 (WGS 84)/) {
+	if (/!Format: (DMS|DDD) ([12]) (WGS 84)/) {
 	    if (ref $self) {
-		my($pos_format, $datum_format) = ($1, $2);
+		my($pos_format, $versionxxx, $datum_format) = ($1, $2, $3);
 		$self->change_position_format($pos_format);
+		$self->VersionXXX($versionxxx);
 		$self->DatumFormat($datum_format);
 	    }
 	    $check = 1;
@@ -303,6 +305,7 @@ sub new {
     # some defaults:
     #$self->PositionFormat("DMS");
     $self->change_position_format("DMS");
+    $self->VersionXXX(1);
     $self->DatumFormat("WGS 84");
 
     $self;
@@ -444,8 +447,9 @@ sub parse {
 	if (defined $parse_method && !/^!/) {
 	    push @data, $self->$parse_method();
 	} elsif (/^!Format:\s+(\S+)\s+(\S+)\s+(.*)$/) {
-	    my($pos_format, $datum_format) = ($1, $3);
+	    my($pos_format, $versionxxx, $datum_format) = ($1, $2, $3);
 	    $self->change_position_format($pos_format);
+	    $self->VersionXXX($versionxxx);
 	    $self->DatumFormat($datum_format);
 	} elsif (/^!Position:\s+(\S+)$/) {
 	    my $pos_format = $1;
@@ -649,7 +653,10 @@ sub as_string {
     my $self = shift;
     my $s = "% Written by $0 [" . __PACKAGE__ . "]\n\n";
     # XXX:
-    $s .= "!Format: " . $self->PositionFormat . " 1 " . $self->DatumFormat . "
+    $s .= "!Format: " . join(" ",
+			     $self->PositionFormat, 
+			     $self->VersionXXX,
+			     $self->DatumFormat) . "
 !Creation: no
 
 ";
@@ -784,7 +791,7 @@ sub load {
 	my $gps_o = GPS::GpsmanData->new;
 	if ($old_gps_o) {
 	    # "sticky" attributes
-	    for my $member (qw(DatumFormat PositionFormat Creation CurrentConverter)) {
+	    for my $member (qw(DatumFormat VersionXXX PositionFormat Creation CurrentConverter)) {
 		$gps_o->$member($old_gps_o->$member)
 	    }
 	}

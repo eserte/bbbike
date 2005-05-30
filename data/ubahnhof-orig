@@ -1,12 +1,14 @@
-# $Id: ubahnhof-orig,v 4.2 2005/04/30 07:38:38 eserte Exp $
+# $Id: ubahnhof-orig,v 4.3 2005/05/29 20:59:05 eserte Exp $
 # U1
 #: attrs bg
 Warschauer Str.	UA 13506,11159
 Schlesisches Tor	UA 12986,10636
 Görlitzer Bhf.	UA 12076,10426
+#: XXX ab 2006-??-?? bg
 Kottbusser Tor	UA 11370,10398
 #: XXX bg nur Richtung Osten
 Prinzenstr.	UA 10529,10306
+#: XXX ab 2007-??-?? bg
 Hallesches Tor	UA 9582,10220
 Möckernbrücke (U1)	UA 8985,10360
 Gleisdreieck	UA 8395,10394
@@ -53,6 +55,7 @@ Hausvogteiplatz	UA 9829,11957
 #: attrs bg
 Stadtmitte (U2)	UA 9452,11808
 Mohrenstr.	UA 9098,11754
+#: XXX ab 2007-??-?? bg
 Potsdamer Platz	UA 8667,11478
 #: attrs bg
 Mendelssohn-Bartholdy-Park	UA 8444,10854
@@ -66,8 +69,10 @@ Deutsche Oper	UA 3971,11655
 Bismarckstr.	UA 3683,11621
 Sophie-Charlotte-Platz	UA 3147,11552
 Kaiserdamm	UA 2216,11433
+#: XXX ab 2005-??-?? bg
 Theodor-Heuss-Platz	UB 1478,11392
 Neu-Westend	UB 656,12077
+#: XXX ab 2006-??-?? bg
 Olympia-Stadion	UB -19,12148
 #: attrs bg
 Ruhleben	UB -649,13096
@@ -80,15 +85,25 @@ Innsbrucker Platz	UA 6386,8065
 # U5
 #: attrs bg
 Alexanderplatz (U5/U8)	UA 10967,12812
+#: XXX ab 2010-??-?? bg
 Schillingstr.	UA 11640,12743
+#: XXX ab 2010-??-?? bg
 Strausberger Platz	UA 12192,12538
+#: XXX ab 2010-??-?? bg
 Weberwiese	UA 13054,12397
+#: XXX ab 2007-??-?? bg
 Frankfurter Tor	UA 13792,12290
+#: XXX ab 2010-??-?? bg
 Samariterstr.	UA 14508,12185
+#: attrs bg
 Frankfurter Allee	UA 15177,12089
+#: XXX ab 2010-??-?? bg
 Magdalenenstr.	UB 16076,11953
+#: XXX ab 2006-??-?? bg
 Lichtenberg	UB 16866,11820
+#: XXX ab 2010-??-?? bg
 Friedrichsfelde	UB 17802,11316
+#: XXX ab 2010-??-?? bg
 Tierpark	UB 18481,10468
 Biesdorf-Süd	UB 20172,10636
 Elsterwerdaer Platz	UB 21092,11261
@@ -140,15 +155,18 @@ Schwartzkopffstr.	UA 8543,14346
 Reinickendorfer Str.	UA 8030,14905
 #: attrs bg
 Wedding	UA 7739,15167
+#: XXX ab 2007-??-?? bg
 Leopoldplatz	UB 7279,15571
 Seestr.	UB 6828,15983
 Rehberge	UB 6112,16621
 Afrikanische Str.	UB 5594,17068
+#: XXX ab 2007-??-?? bg
 Kurt-Schumacher-Platz	UB 5063,17424
 Scharnweberstr.	UB 4064,17787
 Otisstr.	UB 3389,18248
 Holzhauser Str.	UB 2898,18814
 Borsigwerke	UB 2586,19374
+#: XXX ab 2006-??-?? bg
 Alt-Tegel	UB 2067,20278
 # U7
 #: attrs bg
@@ -173,6 +191,7 @@ Südstern	UA 10684,9295
 Gneisenaustr.	UA 9883,9494
 Möckernbrücke (U7)	UA 8988,10323
 Yorckstr.	UA 8238,9660
+#: XXX ab 2005-05-24 bg
 Kleistpark	UA 7451,9347
 Eisenacher Str.	UA 6805,9248
 #: attrs bg
@@ -180,6 +199,7 @@ Berliner Str.	UA 5505,8963
 Blissestr.	UA 4911,8866
 Konstanzer Str.	UA 4072,9636
 Adenauerplatz	UA 3853,10396
+#: XXX ab 2005-??-?? bg
 Wilmersdorfer Str.	UA 3809,11037
 Richard-Wagner-Platz	UA 3770,12208
 Mierendorffplatz	UA 3643,13248
@@ -205,6 +225,7 @@ Moritzplatz	UA 10870,10915
 Heinrich-Heine-Str.	UA 11203,11611
 Jannowitzbrücke	UA 11362,12172
 Weinmeisterstr.	UA 10386,13334
+#: XXX ab 2006-??-?? bg
 Rosenthaler Platz	UA 10157,13817
 #: attrs bg
 Bernauer Str.	UA 9828,14659

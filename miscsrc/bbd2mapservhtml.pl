@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2mapservhtml.pl,v 1.5 2004/03/02 23:36:45 eserte Exp $
+# $Id: bbd2mapservhtml.pl,v 1.5 2004/03/02 23:36:45 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -14,6 +14,10 @@
 #
 
 # Create a HTML-Formular from bbd data
+
+# TODO:
+# * Unterstützung für unterbrochene Routen, wenigstens für den Mapserver
+# * Zentrieren auf einen bestimmten Punkt,    "         "   "   "
 
 use strict;
 use FindBin;

@@ -44,7 +44,7 @@ Schulzendorfer Str.: laut Tagesspiegel wird in Zukunft hier das Kopfsteinpflaste
 Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
 Uferweg an der Kongreßhalle: laut Tsp im Frühjahr 2005 fertig	?::inwork 7753,12578
 Uferweg laut Tsp zwischen Frühjahr und Herbst 2005 fertig	?::inwork 8754,12622 8643,12631 8578,12659 8546,12759
-Brücke über die Spree: wann fertig, wenn überhaupt?	?::inwork 8228,12964 8206,13012
+Brücke über die Spree: wann fertig, wenn überhaupt?	?::inwork 8228,12964 8184,13062
 Innenstadtring, Verlängerung der Bernauer zur Invalidenstr. (bereits vorhanden, aber nicht offiziell freigegeben)	?::inwork 9236,14157 9090,13890
 Autotunnel wird im Frühjahr 2005 zugeschüttet	?::inwork 5652,11004 5716,10978 5831,10978
 Uferweg - Friedrich-Ebert-Str. an der Nikolaikirche: zurzeit wegen Bauarbeiten kein Durchgang möglich	? -12600,-1706 -12719,-1661
@@ -55,6 +55,8 @@ Entlastungsstr.: wird voraussichtlich im September 2005 stillgelegt	? 8063,12182
 #: section ignorieren vvv
 # Hier kommen die Fragezeichen-Strecken herein, die nicht bei einer
 # erweiterten Suche aufgenommen werden sollen.
+Am Lehrter Bahnhof: wie sieht die Straßenführung genau aus, wie stabil ist sie?	? 7941,12902 7958,12994 7814,13284
+R1 im Raum Spindlersfeld: alternative Wegführung?	? 21025,5437 21450,5418 21687,5006 21918,4859 21796,4517
 Hasenheide, Verlängerung der Karlsgartenstr.: erster Teil bis zum Hauptweg asphaltiert Q0/q1, dann bis zum Columbiadamm guter Parkweg Q1/q1. Da das Linksabbiegen vom Columbiadamm umständlich wäre (Bordsteine), vielleicht gar nicht erlauben?	? 11627,8485 11253,8565 10926,8579 10796,8498
 Neuenburger Str.: für Fußgänger bis zur Lindenstr. offen, Linksabbiegen möglich, allerdings Bordsteine	? 9938,10509 9817,10490
 Bergiusstr.: die Straße ist wegen der Autobahn verschwenkt, genaue Koordinaten einholen!	? 14051,6731 14375,6309
@@ -85,6 +87,8 @@ Rue Diderot: Asphalt, Q0	? 4559,21681 4617,21590
 Kastanienstr.: schlechter Belag, Q3	? 5150,2196 5207,2050
 #: XXX anonymer Eintrag OK, aber keine Verknüpfung zum Netz
 Gelsenkircher Str.: Asphalt, Q0, wenig Autoverkehr	? -5562,15187 -5109,15137
+#: XXX Eintrag von Joerg (Ziegler) OK, aber keine Verknüpfung zum Netz
+Birkheidering: mäßiger fester Sandweg, Q2	? 23252,693 23333,541 23196,440 23076,509 23068,565 23026,715 22999,759
 Borussiastr.: aus dem Bus heraus sah es so aus, als ob hier *kein* Kopfsteinpflaster ist, vielleicht David nochmal fragen?	? 9241,6791 9706,6802
 Stadtplazu am Zwirngraben: ist er hier?	? 10286,13051 10236,13016 10316,13028
 Bürgerpark Pappelfriedhof: ist er hier?	? 11121,15327 11182,15284 11151,15233 11101,15263 11115,15284 11098,15298
@@ -266,7 +270,7 @@ Stolzenhagen - Kreuzbruch: Qualität?	? 12427,41870 11625,42525 10934,44311 10485
 Basdorf - Bernauer Heide: passierbar (Bahnstrecke), Qualität, Kfz-los?	? 12887,36543 13723,36178
 Zugbrücke/Schleuse?	? 35066,4548
 Zugbrücke?	? 32737,183789
-Alexanderufer: Existiert diese Verbindung bereits?	? 8259,13009 8312,13296 8378,13425 8337,13541
+Alexanderufer: Existiert diese Verbindung bereits?	? 8269,13062 8312,13296 8378,13425 8337,13541
 Liebigstr. - Frankfurter Allee: existiert eine Verbindung?	? 13905,12374 13885,12279
 Schloßstr (Charlottenburg): gibt es hier auch Radstreifen?	? 3038,12482 3076,12192 3091,12071 3103,11968
 Schillingstr. - Volkspark Friedrichshain: existiert eine direkte Verbindung durch das Wohngebiet?	? 11635,12745 11839,13083 12085,13377
