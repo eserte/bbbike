@@ -18,7 +18,7 @@ Grellstr.	? 12722,15105 12434,15272 12252,15376 11941,15586
 Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 12188,14321 12338,14532 12437,14680 12536,14827 12722,15105 12743,15138 12886,15346 12976,15483 13098,15592 13332,15765
 Richard-Wagner-Str.	? 3844,11649 3837,11760 3810,11843 3782,12104 3763,12279
 Martin-Luther-Straße (oder die gesamte Straße, wo jetzt schon die Busspur ist?)	? 6468,8109 6470,8464 6471,8639 6470,8681
-Gorkistr.	? 4423,20848 3569,20583 3329,20538 2621,20404 2348,20353 2311,20348
+Gorkistr.	? 4423,20848 4265,20799 3569,20583 3329,20538 2621,20404 2348,20353 2311,20348
 Vulkanstraße	? 15896,13158 15880,13535 15873,14046 15838,14319
 Frankfurter Allee östlich Alfredstraße (Busspur weiter östlich schon vorhanden)	? 16211,11951 16373,11933
 Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17750,11771 17436,11791 17249,11802
@@ -55,6 +55,8 @@ Entlastungsstr.: wird voraussichtlich im September 2005 stillgelegt	? 8063,12182
 #: section ignorieren vvv
 # Hier kommen die Fragezeichen-Strecken herein, die nicht bei einer
 # erweiterten Suche aufgenommen werden sollen.
+Popitzweg: Fußgängerzone?	? 1396,14427 1897,14408
+Groscurthstr.: Einbahnstraße? Radweg?	? 16565,25456 16467,25092 16423,24935
 Am Lehrter Bahnhof: wie sieht die Straßenführung genau aus, wie stabil ist sie?	? 7941,12902 7958,12994 7814,13284
 R1 im Raum Spindlersfeld: alternative Wegführung?	? 21025,5437 21450,5418 21687,5006 21918,4859 21796,4517
 Hasenheide, Verlängerung der Karlsgartenstr.: erster Teil bis zum Hauptweg asphaltiert Q0/q1, dann bis zum Columbiadamm guter Parkweg Q1/q1. Da das Linksabbiegen vom Columbiadamm umständlich wäre (Bordsteine), vielleicht gar nicht erlauben?	? 11627,8485 11253,8565 10926,8579 10796,8498
@@ -83,12 +85,8 @@ Okarinastr.: Schotter, Mulden in der Straße, Q3	? 11571,20392 11434,20643 11678,
 Mahlsdorfer Allee (Waldesruh, Hoppegarten): sehr guter Asphalt, Q0	? 25282,9034 25745,9081 25892,9098
 #: XXX Eintrag von Lavinia Meier-Ewert OK, aber keine Verknüpfung zum Netz (Allee Charles de Gaulle aufnehmen?)
 Rue Diderot: Asphalt, Q0	? 4559,21681 4617,21590
-#: XXX Eintrag von Dierk Jerzynski OK, aber keine Verknüpfung zum Netz (Brauerstr, Jägerstr.)
-Kastanienstr.: schlechter Belag, Q3	? 5150,2196 5207,2050
 #: XXX anonymer Eintrag OK, aber keine Verknüpfung zum Netz
 Gelsenkircher Str.: Asphalt, Q0, wenig Autoverkehr	? -5562,15187 -5109,15137
-#: XXX Eintrag von Joerg (Ziegler) OK, aber keine Verknüpfung zum Netz
-Birkheidering: mäßiger fester Sandweg, Q2	? 23252,693 23333,541 23196,440 23076,509 23068,565 23026,715 22999,759
 Borussiastr.: aus dem Bus heraus sah es so aus, als ob hier *kein* Kopfsteinpflaster ist, vielleicht David nochmal fragen?	? 9241,6791 9706,6802
 Stadtplazu am Zwirngraben: ist er hier?	? 10286,13051 10236,13016 10316,13028
 Bürgerpark Pappelfriedhof: ist er hier?	? 11121,15327 11182,15284 11151,15233 11101,15263 11115,15284 11098,15298
@@ -737,3 +735,8 @@ Velten - Leegebruch - Oranienburg: Qualität?	? -5799,33475 -4914,33432 -4281,335
 Sandhausen - Friedrichsthal: Qualität?	? -304,39065 -263,39459 -459,39809 -481,40507 490,42320 1636,42677
 Bei Liebenwalde an der Havel: Qualität?	? 7037,51950 7107,52868 7817,53807 7918,54093
 Bei Mildenberg: Qualität?	? 2656,68100 1625,68308 1352,68079 1090,67347
+Kavalierstr.: Einbahnstraße, auch für Radfahrer?	?; 10625,18831 10721,18575
+#: XXX ungenaue Angaben by anonymous:
+Am Hügel: mäßiger Belag?	? 4265,20799 4107,21059
+Theodor-Loos-Weg: Qualität?	? 15304,1724 15450,1768 15620,1764 15671,1923 15781,1928 15818,1834 15849,1807
+Brauerstr.: Einbahnstraße auch für Radfahrer?	?; 5167,2160 5317,2345

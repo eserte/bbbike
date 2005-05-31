@@ -22,6 +22,12 @@ Legend:
 
 =over
 
+=item * (E2)
+
+Make canvas tags clickable by URL (e.g. new menu item in E<quot>Zusätzliche LayerE<quot>):
+
+    $c->bind("L3-fg", "<1>" => sub { ($url) = grep { $_ } map { m{(http://\S+)}; $1 } $c->gettags("current"); require WWWBrowser; WWWBrowser::start_browser($url) })
+
 =item * (H3)
 
 Unterstützung für E<quot>Persönliche WegeE<quot> (oder user-defined

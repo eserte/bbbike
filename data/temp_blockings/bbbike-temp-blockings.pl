@@ -255,11 +255,15 @@ EOF
        text  => 'Residenzstraße zwischen Lindauer Allee und Emmentaler Straße, Emmentaler Straße zwischen Residenzstraße und Aroser Allee, Aroser Allee zwischen Emmentaler Straße und Lindauer Allee sowie Lindauer Allee zwischen Aroser Allee und Residenzstraße. Straßen gesperrt. Radrennen. Umleitung ist ausgeschildert. Dauer: 21.03.2004, 08.00 Uhr bis 18.00 Uhr',
        type  => 'gesperrt',
      },
-     { from  => 1079701200, # 2004-03-19 14:00
-       until => 1080856800, # 2004-04-02 00:00
-       file  => 'budapester.bbd',
-       text  => 'Budapester Straße, Stülerstraße, zwischen Klingelhöferstraße und Kurfürstenstrsße in beiden Richtungen für den Durchgangsverkehrgesperrt. Konferenz. Dauer: 20.03.2004, 14.00 Uhr bis 01.04.2004, 18.00 Uhr',
+     { from  => 1117404000, # 2005-05-30 00:00
+       until => 1117620000, # 2005-06-01 12:00
+       text  => 'Budapester Str. wegen Staatsbesuch gesperrt',
        type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 6606,11222 6582,11202
+userdel	2 6446,11147 6168,11042
+userdel	2 6446,11147 6582,11202
+EOF
      },
      { from  => 1081476000, # 2004-04-09 04:00
        until => 1081807200, # 2004-04-13 00:00
@@ -1969,6 +1973,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 15403,40364 14713,40426
+EOF
+     },
+     { from  => 1117317600, # 2005-05-29 00:00
+       until => 1126821600, # 2005-09-16 00:00
+       text  => 'K 7330; (L 23 nördl. Templin-Gandenitz); OD Gandenitz Kanal- und Straßenbau Vollsperrung 30.05.2005-15.09.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 11401,84932 11423,85183
 EOF
      },
     );

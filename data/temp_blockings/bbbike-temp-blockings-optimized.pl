@@ -1,7 +1,98 @@
 @temp_blocking = ();
-$#temp_blocking = 122;
+$#temp_blocking = 40;
 push @temp_blocking,
 (
+       {
+         'until' => 1117620000,
+         'text' => 'Budapester Str. wegen Staatsbesuch gesperrt',
+         'from' => 1117404000,
+         'data' => 'userdel	2 6606,11222 6582,11202
+userdel	2 6446,11147 6168,11042
+userdel	2 6446,11147 6582,11202
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'until' => 1117576800,
          'text' => 'L 40; (Großbeeren-Güterfelde); zw. Großbeeren u. Neubeeren Neubau Bauwerk Vollsperrung 24.09.2004-31.05.2005 ',
@@ -252,14 +343,7 @@ userdel	q4 -18080,-12637 -17374,-13449
        },
        undef,
        undef,
-       {
-         'until' => 1117490400,
-         'text' => 'Zimmermannstr. (Marzahn) Richtung Osten zwischen Köpenicker Str. und Lindenstr. Baustelle, Fahrtrichtung gesperrt (bis 30.05.2005)',
-         'from' => 1113336339,
-         'data' => 'userdel	q4; 21093,9179 21351,9066
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1122847200,
          'text' => 'B 101; (Berliner Str.); OD Trebbin Straßenbauarbeiten Vollsperrung 17.05.2005-31.07.2005 ',
@@ -415,33 +499,9 @@ userdel	q4 1872,-1118 1680,-1011
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1117490400,
-         'text' => 'L 35; (Eisenbahnstr.); OL Fürstenwalde, zw. Wassergasse und Frankfurter Str. Frühlingsfest Vollsperrung 25.05.2005-30.05.2005 ',
-         'from' => 1116885600,
-         'data' => 'userdel	q4 55393,-4240 55563,-4690
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1117490400,
-         'text' => 'Luxemburger Straße - Föhrer Straße, Zwischen Kreuzung Leopoldplatz und Kreuzung Amrumer Straße Veranstaltung, Straße gesperrt, Dauer: 27.05.2005 06:00 Uhr bis 30.05.2005 ',
-         'from' => 1117080000,
-         'data' => 'userdel	q4 7162,15436 7020,15314
-userdel	q4 7162,15436 7288,15579
-userdel	q4 6647,15094 6737,15133
-userdel	q4 6737,15133 7020,15314
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1117490400,
-         'text' => 'K 6910; (Geltower Chausse); Bahnübergang im OT Caputh Gleisbauarbeiten Vollsperrung 29.05.2005-30.05.2005 ',
-         'from' => 1117231200,
-         'data' => 'userdel	2 -17811,-6820 -17811,-6691
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
        {
          'until' => 1117749600,
          'text' => 'L 29; (Biesenthal-Wandlitz); Bahnübergang bei Wandlitz Gleisbauarbeiten Vollsperrung 31.05.2005-02.06.2005 ',
@@ -449,6 +509,14 @@ userdel	q4 6737,15133 7020,15314
          'data' => 'userdel	2 15403,40364 14713,40426
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1126821600,
+         'text' => 'K 7330; (L 23 nördl. Templin-Gandenitz); OD Gandenitz Kanal- und Straßenbau Vollsperrung 30.05.2005-15.09.2005 ',
+         'from' => 1117317600,
+         'data' => 'userdel	q4 11401,84932 11423,85183
+',
+         'type' => 'handicap'
        }
      
 );
