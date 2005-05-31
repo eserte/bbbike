@@ -1,4 +1,3 @@
-#!/usr/local/bin/perl -w
 # -*- perl -*-
 
 #
@@ -32,6 +31,7 @@ require Exporter;
 @EXPORT    = qw(waitproc stop_waitproc);
 @EXPORT_OK = qw(progress);
 
+use strict;
 use vars qw($waitproc_pid $rotor $rotor_delay_time);
 
 =head1 FUNCTIONS
@@ -94,8 +94,11 @@ sub stop_waitproc {
 Usage:
 
     use Waitproc;
-    $i = Waitproc::progress(0, 10000);
-    for ($$i = 0; $$i < 1000000; $$i++) { ... }
+    $from = 0;
+    $to = 10000;
+    $i = Waitproc::progress($from, $to);
+    for ($$i = $from; $$i < $to; $$i++) { ... }
+    # for $$i ($from .. $to) does not work here...
 
 Es gibt noch Bugs, z.B. werden Shared Memory und Semaphoren nicht
 richtig gelöscht und verhindern so einen erneuten Start. (Ich glaube nur bei
@@ -124,7 +127,7 @@ sub progress {
 
 	} else {
 
-	    %options = (
+	    my %options = (
 			'key' => 'paint',
 			'create' => 'no',
 			'exclusive' => 'no',
@@ -133,7 +136,7 @@ sub progress {
 		       );
 
 	    my $i;
-	    tie $i, IPC::Shareable, 'prgrs', \%options;
+	    tie $i, "IPC::Shareable", 'prgrs', \%options;
 
 	    $| = 1;
 	    while (1) {
