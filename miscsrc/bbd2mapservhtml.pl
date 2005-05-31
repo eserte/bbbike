@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2mapservhtml.pl,v 1.5 2004/03/02 23:36:45 eserte Exp eserte $
+# $Id: bbd2mapservhtml.pl,v 1.6 2005/05/31 00:26:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.

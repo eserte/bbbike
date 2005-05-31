@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.26 2005/05/11 23:26:03 eserte Exp $
+# $Id: bbbike.cgi,v 7.27 2005/05/31 00:25:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -665,7 +665,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.26 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.27 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1468,7 +1468,7 @@ EOF
 <td valign="top">@{[ blind_image(420,1) ]}<br>
 EOF
  	print <<EOF;
-Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 3700 von 10000 Berliner Stra&szlig;en sowie ca. 150 Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
+Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 4000 von 10000 Berliner Stra&szlig;en sowie ca. 150 Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
 Nebenstra&szlig;en). Bei nicht erfassten Straßen wird automatisch die
 nächste bekannte verwendet. Hausnummern k&ouml;nnen nicht angegeben werden.<br><br>
 EOF
@@ -5607,7 +5607,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/05/11 23:26:03 $';
+    my $cgi_date = '$Date: 2005/05/31 00:25:20 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

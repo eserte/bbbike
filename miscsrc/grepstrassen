@@ -93,7 +93,11 @@ sub special_fragezeichen {
     my $fragezeichen_r = Storable::dclone($r);
     if (exists $dir->{add_fragezeichen}) {
 	my $name = $r->[Strassen::NAME] . " (";
-	$name .= $dir->{add_fragezeichen} !~ /^\s*$/ ? $dir->{add_fragezeichen} : "unsicher";
+	my @add_names = grep { !/^\s*$/ } @{ $dir->{add_fragezeichen} };
+	if (!@add_names) {
+	    @add_names = "unsicher";
+	}
+	$name .= join("; ", @add_names);
 	$name .= ")";
 	$fragezeichen_r->[Strassen::NAME] = $name;
 	$fragezeichen_r->[Strassen::CAT] = "?";
