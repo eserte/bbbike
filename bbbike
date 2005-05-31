@@ -11289,6 +11289,30 @@ sub show_info {
 	    my $url = sprintf "http://www.stad".
 		"tpland".
 		    "ienst.de/tpl/vm005/map.asp?ll=%.5fx%.5f", $px, $py;
+	    my $grid;
+	    if ($mapscale =~ /:\s*(\d+)/) {
+		my $mapscale_scale = $1;
+		if ($mapscale_scale < 15000) {
+		    $grid = "10";
+		} elsif ($mapscale_scale < 30000) {
+		    $grid = "20";
+		} elsif ($mapscale_scale < 50000) {
+		    $grid = "40";
+		} elsif ($mapscale_scale < 80000) {
+		    $grid = "";
+		} elsif ($mapscale_scale < 250000) {
+		    $grid = "66";
+		} elsif ($mapscale_scale < 625000) {
+		    $grid = "400";
+		} else {
+		    $grid = "750";
+		}
+		$grid = pack("c*", 100,101,100,97,116,108,97,115) . $grid;
+		warn $grid;
+	    }
+	    if ($grid) {
+		$url .= "&grid=$grid";
+	    }
 	    $info_text->insert("end", "Stadtp".
 			       "landienst\n", "link$linkcount");
 	    $show_url->($linkcount, $url);
