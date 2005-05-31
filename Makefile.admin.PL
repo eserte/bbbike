@@ -80,7 +80,13 @@ my(@bundled_perl_module_dists) =
        Tk-StippleLine Tk-WidgetDump Win32Util WWWBrowser
       );
 my $EXTMODCPANTOP = "$ENV{HOME}/src/CPAN";
+if (!-e $EXTMODCPANTOP) {
+    $EXTMODCPANTOP = "$ENV{HOME}/work2";
+}
 my $EXTMODPERLTOP = "$ENV{HOME}/src/perl";
+if (!-e $EXTMODPERLTOP) {
+    $EXTMODPERLTOP = "$ENV{HOME}/work2";
+}
 my(@EXTMODCPAN, @EXTMODPERL);
 for my $module_dist (@bundled_perl_module_dists) {
     if (-e "$EXTMODCPANTOP/$module_dist") {
@@ -517,6 +523,7 @@ autoload:
 
 # Pfad zum mymake-Skript, das Makefile.PL's für ~/lib/perl erzeugt
 # Da vieler meiner Skripte Test.pm verwenden, wird das nicht mit 5.004 gehen
+# XXX mymake ist nur auf meiner Platte vorhanden!
 EOF
 		    . "MYEXTMODMAKE=	\$(HOME)/src/mymake -perl $^X\n"
 		    . <<EOF
@@ -546,11 +553,11 @@ echoextmodperl:
 # baut und installiert die externen Module wie BikePower etc.
 # verwendet Xfvb oder Xnest
 # XXX testen, ob man überhaupt einen X-Server hat
+#	alternative: Xnest -ac -geometry 640x400 :121 &
 extmod:
-#	Xvfb :121 & \
-#	Xnest -geometry 640x400 :121 & \
-#	_XVFB_PID=$$!; \
-#	DISPLAY=:121; \
+	Xvfb -ac :121 & \
+	_XVFB_PID=$$!; \
+	DISPLAY=:121; \
 	for i in $(EXTMODCPAN); do \
 	    echo $$i; \
 	    cd $(EXTMODCPANTOP)/$$i; \
@@ -567,8 +574,8 @@ extmod:
 		BATCH=yes make test && \
 		make install; \
 	done; \
-#	echo Kill process $$_XVFB_PID; \
-#	kill -TERM $$_XVFB_PID
+	echo Kill process $$_XVFB_PID; \
+	kill -TERM $$_XVFB_PID
 EOF
 . <<EOF
 
