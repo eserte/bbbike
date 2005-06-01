@@ -26,6 +26,7 @@ use lib ("$FindBin::RealBin",
 	);
 use BBBikeTest;
 
+use CGI;
 use Getopt::Long;
 
 if (!GetOptions(get_std_opts("cgidir", "xxx"),
@@ -52,7 +53,10 @@ my @layers = qw(
 		route
 	       );
 
-plan tests => 41;
+# Get SCOPES from mapserver/brb/Makefile:
+my @scopes = qw(brb b inner-b wide p);
+
+plan tests => 91;
 
 sub get_agent {
     my $agent = WWW::Mechanize->new;
@@ -109,6 +113,17 @@ my $ms = get_config();
 	$agent->submit;
 	is_on_mapserver_page($agent, "Layer $layer ticked");
 	$agent->back;
+    }
+
+    for my $scope (@scopes) {
+	my $uri = $agent->response->request->uri;
+	($uri, my($qs)) = $uri =~ m{^(.*)\?(.*)};
+	my $q = CGI->new($qs);
+	my $map = $q->param("map");
+	$map =~ s{(/brb-)[^/]+(\.map)$}{$1$scope$2};
+	$q->param("map", $map);
+	$agent->get($uri."?".$q->query_string);
+	is_on_mapserver_page($agent, "Scope $scope for reference map");
     }
 
 }
