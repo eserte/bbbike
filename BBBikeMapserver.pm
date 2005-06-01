@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.22 2005/05/11 23:27:14 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.23 2005/05/31 23:12:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -226,7 +226,7 @@ sub create_mapfile {
 	    : $scope eq 'city'       ? "$orig_map_dir/${prefix}${mapname}-b.map"
 	    : $scope eq 'innercity'  ? "$orig_map_dir/${prefix}${mapname}-inner-b.map"
 	    : $scope eq 'potsdam'    ? "$orig_map_dir/${prefix}${mapname}-p.map"
-	    :                          "$orig_map_dir/${prefix}${mapname}.map"
+	    :                          "$orig_map_dir/${prefix}${mapname}-brb.map"
 	    );
 	$orig_map_path;
     };

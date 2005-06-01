@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.29 2005/05/19 00:19:29 eserte Exp $
+# $Id: Makefile,v 1.30 2005/06/01 07:42:49 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -141,6 +141,9 @@ MAPSERVER_RELURL=	/mapserver/brb
 MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 #MAPSERVER_PROG_RELURL=	/cgi-bin/mapserv
 #MAPSERVER_PROG_URL=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
+.if ${TARGET} == "radzeit.herceg.de"
+BBBIKE_MAPSERVER_URL=	http://radzeit.herceg.de/cgi-bin/mapserv
+.endif
 MAPSERVER_PROG_RELURL=	$(BBBIKE_MAPSERVER_URL:C/^http:\/\/[^\/]+//)
 MAPSERVER_PROG_URL=	$(BBBIKE_MAPSERVER_URL)
 MAPSERVER_VERSION=	3.6.6
