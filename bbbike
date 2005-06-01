@@ -11274,10 +11274,24 @@ sub show_info {
 	    }
 	}
 
+	my($mapscale_scale) = $mapscale =~ /:\s*(\d+)/;
+
 	{
 	    my $y_wgs = (Karte::Polar::ddd2dmm($py))[1];
 	    my $x_wgs = (Karte::Polar::ddd2dmm($px))[1];
-	    my $url = "http://www.berliner-stadtplan.com/?y_wgs=${y_wgs}%27&x_wgs=${x_wgs}%27&zoom=100&size=500x400&sub.x=15&sub.y=7";
+	    my $zoom = "100";
+	    if ($mapscale_scale) {
+		if ($mapscale_scale < 13000) {
+		    $zoom = 100;
+		} elsif ($mapscale_scale < 18000) {
+		    $zoom = 75;
+		} elsif ($mapscale_scale < 26000) {
+		    $zoom = 50;
+		} else {
+		    $zoom = 27;
+		}
+	    }
+	    my $url = "http://www.berliner-stadtplan.com/?y_wgs=${y_wgs}%27&x_wgs=${x_wgs}%27&zoom=$zoom&size=500x400&sub.x=15&sub.y=7";
 	    $info_text->insert("end", "www.berliner-stadtplan.com",
 			       "link$linkcount");
 	    $show_url->($linkcount, $url);
@@ -11290,8 +11304,7 @@ sub show_info {
 		"tpland".
 		    "ienst.de/tpl/vm005/map.asp?ll=%.5fx%.5f", $px, $py;
 	    my $grid;
-	    if ($mapscale =~ /:\s*(\d+)/) {
-		my $mapscale_scale = $1;
+	    if ($mapscale_scale) {
 		if ($mapscale_scale < 15000) {
 		    $grid = "10";
 		} elsif ($mapscale_scale < 30000) {
