@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.30 2005/06/01 07:42:49 eserte Exp $
+# $Id: Makefile,v 1.31 2005/06/01 21:13:30 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -12,7 +12,7 @@
 
 # XXX should not be necessary!
 # Absolute path to the bbbike source directory.
-ABS_LOCAL_BBBIKE_DIR=	/home/e/eserte/src/bbbike			 # ***
+ABS_LOCAL_BBBIKE_DIR=	${.CURDIR}/../..			 # ***
 
 # BRBDIR is the current directory. Do not use .CURDIR, because it may be
 # called via "make -f" from another directory.
@@ -66,8 +66,9 @@ BBBIKE_MAPSERVER_URL=	http://radzeit.herceg.de/cgi-bin/mapserv
 
 .if ${TARGET} == "devpc01"
 ABS_LOCAL_BBBIKE_DIR=	/home/slavenr/work2/bbbike
-MAPSERVER_PROG_FSPATH=	/home/slavenr/work2/mapserver/mapserv.cgi
-MAPSERVER_PROG_FSPATH=	/home/slavenr/mapserver-3.6.6/mapserv
+#MAPSERVER_PROG_FSPATH=	/home/slavenr/work2/mapserver/mapserv.cgi
+#MAPSERVER_PROG_FSPATH=	/home/slavenr/mapserver-3.6.6/mapserv
+MAPSERVER_PROG_FSPATH=	/home/slavenr/mapserver-3.6.4/mapserv
 # XXX port number or not?
 LOCAL_HOST=		localhost:8080
 FONTS_LIST=		fonts-devpc01.list
@@ -482,11 +483,11 @@ check-html:	brb.html brb_init.html help.html empty.html
 ######################################################################
 # misc
 
-crontab:	crontab.tpl Makefile
+crontab:	crontab.tpl Makefile Makefile.${TARGET}.inc
 	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 
-httpd.conf:	httpd.conf-tpl Makefile
+httpd.conf:	httpd.conf-tpl Makefile Makefile.${TARGET}.inc
 	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 
@@ -575,6 +576,11 @@ dist-spiff:
 
 # To build mapserver on devpc01, use:
 # ./configure --with-gd=static,/home/slavenr/tmp/gd-2.0.12/ --enable-debug
+# However, the newest mapserver seems to be buggy. I had more succes with mapserver-3.6.4.
+# The configure line was:
+# ./configure  --without-ogr --with-gd=static,/home/slavenr/tmp/gd-2.0.23 --enable-debug
+# Another problem is the single .cpp file in the code. I just renamed it to .c and
+# removed the mapogr.cpp rule from the Makefile.
 
 # On www.radzeit.de, use the mapserv-3.6.6 binary instead of the
 # mapserv-3.6.4 binary. The latter seems to segfault more often.
