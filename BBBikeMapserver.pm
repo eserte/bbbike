@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.23 2005/05/31 23:12:00 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.26 2005/06/02 01:18:11 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2005 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -40,16 +40,46 @@ sub new_from_cgi {
     my($class, $q, %args) = @_;
     my $self = $class->new(%args);
     my @c;
-    @c = split /[!; ]/, $q->param("coords") if defined $q->param("coords");
-    $self->{Coords} = \@c;
+    if (defined $q->param("coords")) {
+	for my $coords ($q->param("coords")) {
+	    push @c, [ split /[!; ]/, $coords ];
+	}
+    }
+    $self->{MultiCoords} = [@c];
     $self->{CGI}    = $q;
     $self->{DEBUG}  = $q->param("debug");
+    if (defined $q->param("center")) {
+	$self->{CenterTo} = $q->param("center");
+    }
     $self;
+}
+
+sub set_coords {
+    my($self, $coords) = @_;
+    if (!UNIVERSAL::isa($coords, "ARRAY")) {
+	$self->{MultiCoords} = [[ $coords ]];
+    } elsif (!UNIVERSAL::isa($coords->[0], "ARRAY")) {
+	$self->{MultiCoords} = [ $coords ];
+    } else {
+	$self->{MultiCoords} = $coords;
+    }
 }
 
 sub has_coords {
     my $self = shift;
-    $self->{Coords} && @{ $self->{Coords} };
+    $self->{MultiCoords} && @{ $self->{MultiCoords} }
+	&& @{ $self->{MultiCoords}[0] };
+}
+
+sub has_more_than_one_coord {
+    my $self = shift;
+    return 0 if !$self->{MultiCoords} || !@{ $self->{MultiCoords} };
+    my $total = 0;
+    for (@{ $self->{MultiCoords} }) {
+	$total += @$_;
+	return 1 if $total > 1;
+    }
+    0;
 }
 
 sub all_layers {
@@ -240,14 +270,18 @@ sub create_mapfile {
 	my $tmpfile1 = $self->{TmpDir} . "/bbbikems-$$.bbd";
 	open(TMP1, ">$tmpfile1") or die "Can't write to $tmpfile1: $!";
 	my $dist = 0;
-	if ($self->{Coords} && @{ $self->{Coords} } == 1) {
-	    print TMP1 "\tRoute " . $self->{Coords}[0] . "\n";
-	} else {
-	    for my $i (1 .. $#{$self->{Coords}}) {
-		my $old_dist = $dist;
-		$dist += Strassen::Util::strecke_s(@{$self->{Coords}}[$i-1,$i]);
-		# XXX add maybe output of $comments_net->get_point_comment
-		print TMP1 BBBikeUtil::m2km($old_dist) . " - " . BBBikeUtil::m2km($dist) . "\tRoute " . join(" ", @{$self->{Coords}}[$i-1,$i]) . "\n";
+	if ($self->{MultiCoords}) {
+	    if (!$self->has_more_than_one_coord) {
+		print TMP1 "\tRoute " . $self->{MultiCoords}[0][0] . "\n";
+	    } else {
+		for my $line (@{ $self->{MultiCoords} }) {
+		    my $old_dist = $dist;
+		    for my $i (1 .. $#{$line}) {
+			$dist += Strassen::Util::strecke_s(@{$line}[$i-1,$i]);
+			# XXX add maybe output of $comments_net->get_point_comment
+		    }
+		    print TMP1 BBBikeUtil::m2km($old_dist) . " - " . BBBikeUtil::m2km($dist) . "\tRoute " . join(" ", @{$line}) . "\n";
+		}
 	    }
 	}
 	close TMP1;
@@ -278,14 +312,15 @@ sub create_mapfile {
 	    @marker_args = (-start => $args{-start});
 	    $self->{CenterTo} = $args{-start}
 		unless defined $self->{CenterTo};
-	} elsif (@{$self->{Coords}} > 1) {
-	    @marker_args = (-start => $self->{Coords}[0],
-			    -goal => $self->{Coords}[-1]);
-	    $self->{CenterTo} = $self->{Coords}[0]
+	} elsif ($self->has_more_than_one_coord) {
+	    my $start = $self->{MultiCoords}[0][0];
+	    @marker_args = (-start => $start,
+			    -goal  => $self->{MultiCoords}[-1][-1]);
+	    $self->{CenterTo} = $start
 		unless defined $self->{CenterTo};
-	} elsif (@{$self->{Coords}}) {
-	    @marker_args = (-markerpoint => $self->{Coords}[-1]);
-	    $self->{CenterTo} = $self->{Coords}[0]
+	} elsif ($self->has_coords) { # exactly one coordinate?
+	    @marker_args = (-markerpoint => $self->{MultiCoords}[-1][-1]);
+	    $self->{CenterTo} = $self->{MultiCoords}[0][0]
 		unless defined $self->{CenterTo};
 	}
 	if ($args{-markerpoint}) {
@@ -319,7 +354,7 @@ sub create_mapfile {
 		($self->{MAPSERVER_DIR} . "/mkroutemap",
 		 (defined $tmpfile2
 		  ? (-routeshapefile => $tmpfile2)
-		  : (-routecoords => join(",",@{$self->{Coords}}))
+		  : (-routecoords => join(",", map { @$_ } @{$self->{MultiCoords}}))
 		 ),
 		 @marker_args,
 		 @title_args,
@@ -344,18 +379,18 @@ sub get_extents {
     my($self, $width, $height, $do_center, %args) = @_;
     my $center_to = $self->{CenterTo};
     if (!defined $center_to) {
-	if (!$self->{Coords} || !$self->{Coords}[0]) {
-	    # Default is Brandenburger Tor, do not hardcode XXX
+	if (!$self->has_coords) {
+	    # Default is Brandenburger Tor, do not hardcode XXX get from Geography object
 	    $center_to = ["8593,12243"];
 	} else {
-	    $center_to = $self->{Coords}[0];
+	    $center_to = $self->{MultiCoords}[0][0];
 	}
     }
     my($x1,$y1) = split /,/, $center_to;
-    if (!$self->{Coords} || @{$self->{Coords}} <= 1 || $do_center) {
+    if (!$self->has_more_than_one_coord || $do_center) {
 	($x1-$width/2, $y1-$height/2, $x1+$width/2, $y1+$height/2);
     } else {
-	my($x2,$y2) = split /,/, $self->{Coords}[-1];
+	my($x2,$y2) = split /,/, $self->{MultiCoords}[-1][-1];
 
 	my $padx = defined $args{-padx} ? $args{-padx} : int($width/10);
 	my $pady = defined $args{-pady} ? $args{-pady} : int($height/10);

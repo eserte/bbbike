@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver-util.t,v 1.2 2005/05/12 22:22:16 eserte Exp $
+# $Id: mapserver.t,v 1.1 2005/06/02 01:05:04 eserte Exp $
 # Author: Slaven Rezic
 #
 

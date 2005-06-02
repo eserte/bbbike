@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.22 2005/05/12 23:16:38 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.23 2005/06/02 01:18:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -427,7 +427,7 @@ sub redirect_to_ms {
     require BBBikeMapserver;
     my $ms = BBBikeMapserver->new;
     $ms->read_config("$FindBin::RealBin/bbbike.cgi.config");
-    $ms->{Coords} = [$coord] if $coord;
+    $ms->set_coords($coord) if $coord;
     $ms->{CGI} = CGI->new;
     $ms->start_mapserver(%args);
 }

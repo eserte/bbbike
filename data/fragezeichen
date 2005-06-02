@@ -8,7 +8,7 @@ Hindenburgdamm - Teltowkanal: existiert eine Verbindung durch den Schloßpark Lic
 Waldpark Steinberg: laut ADFC-Karte befahrbar, Qualität?	? 5138,21358 4717,21199 4412,21154 4208,21159 3979,21211 3718,21489 3553,21665 3406,21911 3139,22201
 Waldweg über den Beyschlagtunnel: befahrbar, Qualität?	? 506,22266 742,22666
 Soldiner Str.: laut ADFC mäßig geeignet	? 9096,16976 9317,16882 9604,16760
-Pankeweg durch Wedding: Durchfahrt möglich? Qualität?	?? 8153,14769 8235,14835 8270,15233 8348,15474 8155,15648 8158,15850 8206,15953 8359,16271 8446,16352 8517,16395 8675,16518 8983,17195 9165,17910 9310,18108
+Pankeweg durch Wedding: Durchfahrt möglich? Qualität?	?? 8153,14769 8235,14835 8270,15233 8348,15474 8155,15648 8140,15859 8187,15965 8334,16282 8420,16365 8517,16395 8592,16406 8759,16684 8904,17059 8983,17195 9131,17664 9084,17678 9140,17921
 Weg am Tegeler Fließ: Durchfahrt möglich? Qualität, wahrscheinlich Waldweg Q2?	?? 7639,24383 6966,24090 6329,23969 6083,24107 5678,24021 5402,23949 5117,23654 5126,23484 5059,23186 4774,22987 4416,22891 4208,22866 4144,22756 3898,22581 3804,22391 3636,22368 3443,22201 3372,22088 3139,22201 2653,21993 2504,21768 2321,21532 2072,21339 1914,21508
 Ist die alte Verbindung Hermsdorfer Damm zur Heiligenseestr. noch vorhanden?	?? 1835,21427 1470,21205
 Landsberger Allee/Dahmeweg/Wiesenburger Weg: Sind die Zugänge vorhanden, Einbahnstraßen?	? 19329,14897 19283,14982 19280,15014 19472,15184
@@ -58,13 +58,13 @@ Niederheideweg - Hubertusstr.: Alternative zur Radelandstr? befahrbar, Qualität?
 Schenkenberg - Tornow: Qualität?	? 45406,107350 44745,108948 45265,108797 46428,109624 46174,110110 45810,110576 46075,110850 46272,110976 46317,111103 46685,111038 47335,110888
 Lichterfelde - Teltow über Lippstädter Str., Ahlener Weg., Kantstr.: befahrbar, Qualität?	? 3647,739 3817,479 3872,443 3894,340 3872,251 3707,156 3659,159 3471,87 3137,-67 2507,-446 2545,-501
 Im Fischtal: hier auch (gutes) Kopfsteinpflaster?	? 744,4567 666,4339 510,4202 354,4152
-Pankeweg: Qualität? (südliches Teilstück sah OK aus)	? 8185,15821 8291,16033 8345,16145 8402,16198 8556,16357
+Pankeweg: Qualität? (südliches Teilstück sah OK aus)	? 8179,15829 8278,16043 8340,16154 8389,16214 8543,16364
 Wuhlewanderweg: in Bau, bereits fertig?	? 22611,17126 22314,17916
 Wuhletalstr: laut Radzeit Radstreifen (wo genau?)	? 21906,17419 21799,17456 21542,17465 21133,17510 20901,17603 20754,17672 20474,17809
 Skandinavische Str.: auf der westlichen Seite Suggestivstreifen (laut Radzeit)?	? 17363,11972 17082,11909 16958,11778
 Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 Fähre Liepnitzsee zum Großen Werder: wo genau?	? 16050,38181 16455,37790
-Prenden - Sophienstädt - Marienwerder: Qualität?	? 20114,42825 20306,43093 20418,43368 20943,43393 21496,43924 22253,44600 23018,45612 23062,46171 22712,46718 22781,47737 22962,48050 23087,48387 22897,48799
+Prenden - Sophienstädt - Marienwerder: Qualität?	? 20100,42837 20306,43093 20418,43368 20709,43303 20943,43393 21685,44057 22271,44578 23018,45612 23062,46171 22712,46718 22781,47737 23009,48053 23056,48378 22897,48799
 Hertelstr.: Einbahnstraße Richtung Osten, gesperrt Richtung Westen?	?; 5046,6903 4987,6902 4893,6900 4787,6899
 Sputendorfer Str.: laut http://home.arcor.de/hoge-online/std_tlw/std_tlw00.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2049,-2165 -1853,-2412 -1809,-4235
 Spandau: Kurstr. - Galenstr. - Am Bahnhof Spandau - etc.: sieht als Umfahrung für Altstädter Ring etc. gut aus. Qualität, etc?	? -2834,15655 -2956,15575 -3195,15134 -3231,15096 -3453,14815 -3637,14628 -3723,14512 -3805,14138 -3873,13938 -3904,13944 -3971,13755 -4006,13478 -3986,13367
@@ -356,7 +356,7 @@ Onkel-Bräsig-Str.: Qualität laut ADFC-Karte gut, Einbahnstraße auch für Radfahre
 Alt-Köpenick: laut Message-ID: <41614486$0$3640$9b4e6d93@newsread2.arcor-online.net> wieder gepflastert	? 22196,4847 22138,4661 22111,4562 22093,4499
 Alter Markt: laut Message-ID: <2scvijF1io77eU1@uni-berlin.de> soll hier asphaltiert werden	?::inwork 22502,4528 22472,4572 22449,4605 22383,4703
 Grünstr.: Qualität? für Autofahrer gesperrt?	? 22111,4562 22162,4546 22312,4593
-Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut	?::inwork 31000,61437 30784,60950 30778,60221 30671,59984 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
+Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut	?::inwork 31000,61437 30784,60950 30778,60221 30671,59984 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
 Zichow-Lindenwegsiedlung: Qualität?	? 54500,87934 51992,88068
 Parsteiner Ring: Qualität laut ADFC-Karte gut	? 22406,16309 22428,16462 22321,16553 22250,16468 22215,16343
 Glambecker Ring: Qualität laut ADFC-Karte gut	? 21824,16506 21885,16494 22187,16437 22278,16590 22050,16781 21892,16841
@@ -545,8 +545,8 @@ Berlin - Kopenhagen: Strasen - Wesenberg: Qualität? Nur für Radfahrer?	? -20312,
 Am Lehnitzsee: Qualität?	? -171,38119 -70,38205 -21,38485 709,38985 892,39436 1246,39667 1281,39850
 Birkenwerder, entlang der S-Bahn: Qualität?	? 2257,31124 2233,31465 2053,32051
 Zerpenschleuse - Liebenwalde: Qualität?	? 16519,50234 15600,50337 15162,50275 14425,49300 13850,49225 11225,49900 10337,51037 9312,51062 9137,51000
-Marienwerder, am Finowkanal: Qualität?	? 23087,48387 22500,48187 20890,48340
-Ruhlsdorf - Marienwerder: Qualität?	? 20797,46765 22962,48050
+Marienwerder, am Finowkanal: Qualität?	? 23056,48378 22500,48187 20890,48340
+Ruhlsdorf - Marienwerder: Qualität?	? 20797,46765 23009,48053
 Entlang des Wandlitzsees: Qualität?	? 14498,38870 14400,39325 13687,39975 13100,39987 12437,39475 12075,39475 11825,39650 11675,40000
 Eiche - Mehrow: Qualität?	? 22803,17756 23187,17900 23537,18225 24540,18556
 Mehrow - Trappenfelde (langer Weg): Qualität?	? 24996,18937 25675,19887 26262,20037 26800,20075 27256,19887
@@ -619,6 +619,7 @@ Cyclopstr.: nicht geeignet (laut ADFC-Karte)	? 4825,21718 5138,21358
 (Spreeufer): mäßig geeignet (laut ADFC-Karte)	? -288,13279 -193,13318 303,13287 700,13371 984,13475 1193,13485
 (Am Schinkelplatz) (Ist dieser Name offiziell?)	? 9987,12421 10084,12228
 (Straße 54) (Keine Referenz auf den Straßennamen in Berlin.coords.data und in der ADFC-Karte:)	? 13011,17470 12965,17684 12856,17825
+(Pankeweg, Bürgerpark) (Verläuft der Pankeweg im Bürgerpark nördlich oder südlich der Panke?)	? 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9414,18278 9304,18165 9310,18108
 (Weg zur Krampenburg) (ist das ein offizieller Name mit Ausschilderung?)	? 27609,305 27571,262 27171,155 27273,-106 27407,-401 27552,-741 27559,-1365 27357,-1545 27323,-1671
 Knollstr. (letztes Stück Privatstr.?)	? 17178,-101 17558,126 17740,214
 Roßlauer Str. (das letzte Stück zum Blumberger Damm nicht passierbar?)	? 20656,12415 21148,12365
