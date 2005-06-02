@@ -651,8 +651,6 @@ Prühßstr.: Kopfsteinpflaster	Q2 8766,4038 8967,4082 9338,4129 9455,4159 9848,425
 Obersteiner Weg: mäßig geeignet	Q2 13183,17580 13251,17525 13525,17304
 Marienburger Str.: Kopfsteinpflaster	Q2 11582,14448 11835,14309 12091,14179
 Hufelandstr.: Kopfsteinpflaster	Q2 12091,14179 12199,14102 12380,13975 12567,13839 12573,13792
-#: unverified_by ADFC-Karte:
-Moltkestr.: mäßig geeignet	Q2 4596,3738 4487,3802 4235,3999 4092,4217 3926,4438
 Limonenstr.: Kopfsteinpflaster	Q2 3725,4737 3578,4936 3418,5088 3357,5178
 Willdenowstr.: Kopfsteinpflaster	Q2 3826,4800 3668,5015 3426,5292
 Manteuffelstr.: Kopfsteinpflaster	Q2 4092,4217 4521,4484
@@ -942,8 +940,6 @@ Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 16843,
 Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 20266,15456 20551,15582 20800,15692 20994,15681 21183,15659 21237,15665 21699,15833
 #: laut http://www.bsisb.de/friedhofsb/b_s_ws_drl/c10.jpg
 Kurfürstenweg: fester Waldweg	Q1 -5983,-648 -5863,-426 -5762,-145 -5752,-44 -5658,135 -5567,231 -5539,308 -5376,450 -5295,545 -5155,758 -4974,900
-#: unverified_by ADFC-Karte
-(Spreeufer): mäßig geeignet	Q2 -288,13279 -193,13318 303,13287 700,13371 984,13475 1193,13485
 Schönburgstr.: schlechtes Kopfsteinpflaster	Q3 8949,6644 8946,6501 8995,6473
 Schönburgstr.: Kopfsteinpflaster	Q2 8995,6473 9029,6360
 Parkstr.: schlechtes Kopfsteinpflaster	Q3 8943,6292 9029,6360
@@ -1132,6 +1128,7 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 #: by: kalkreuth
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 #: by: anonymous vvv
+Osthofener Weg: Asphalt	Q0 -2321,2323 -2593,2218
 Mollwitzstr.: mäßiger Asphalt	Q1 2350,12784 2546,12821
 Drei-Linien-Weg: gute Qualität	Q0 16186,23189 15976,22801
 Gudvanger Str.: guter Asphalt	Q0 11581,15831 11684,15997 11758,16111 11905,16318
@@ -1446,7 +1443,7 @@ Apostel-Paulus-Str.: Kopfsteinpflaster?	Q2 7044,9163 6945,9142 6747,9111 6465,90
 #not anymore: Heerstr.: Kopfsteinpflaster auf den Parallelstraßen	Q2 467,11221 41,11168 -572,11092 -1269,11008 -1499,10990 -2212,11196
 #: by: ^^^
 #: by: Christiane Wiersch: vvv
-Waldstr. (Niederschönhausen): asphaltiert	Q0 10018,19429 9978,19512
+Waldstr. (Niederschönhausen): asphaltiert	Q0 10018,19429 9906,19718 9978,19512
 Waldstr. (Niederschönhausen): Kleinsteinpflaster	Q1 9978,19512 9840,19923
 Waldstr. (Niederschönhausen): asphaltiert	Q0 9840,19923 9773,20136 9750,20492
 #: by: ^^^
@@ -1585,7 +1582,7 @@ Schopenhauerstr.: asphaltiert 	Q0 -1873,3315 -2162,3128
 Schopenhauerstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -2162,3128 -2277,3045 -2481,2900 -2593,2764 -2918,2581 -3190,2467
 Normannenstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -3309,2400 -3395,2403 -3579,2532 -3692,2549
 Wasgenstr.: Kopfsteinpflaster	Q2 -2481,2900 -2395,2600
-Wasgenstr.: asphaltiert	Q0 -2395,2600 -2280,2164
+Wasgenstr.: asphaltiert	Q0 -2395,2600 -2321,2323 -2280,2164
 #: note: confirmed:
 Breisgauer Str.: Teerstr.	Q0 -2306,3547 -2243,3371 -2162,3128 -2096,2929 -2026,2742
 #: by: ^^^
@@ -1681,6 +1678,16 @@ Hubertusstr. (Steglitz): Asphalt	Q0 5240,5922 5099,5994
 #: by: WIll Gibson:
 Hessenallee: Asphalt	Q0 657,11650 664,11678 788,11744 906,11870
 #: by: Andreas Mühlhausen: vvv
+Hittorfstr.: Asphalt	Q1 2212,4600 2290,4709
+Hittorfstr: Kopfsteinpflaster	Q2 2290,4709 2381,4737 2434,4787 2465,4934 2587,4965
+Lefèvrestr.: Asphalt	Q0 4987,6902 5023,6762 5126,6655 5215,6643 5372,6663
+Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6711
+(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 3288,12700 3149,12800 3055,12973 2997,13402 2909,13542 2849,13638 2648,13638 2261,13526 1986,13650 1609,13487 1162,13484
+#: note: laut ADFC-Karte "mäßig geeignet":
+(Spreeufer): wassergebundene Decke	Q1 -288,13279 -193,13318 303,13287 700,13371 984,13475 1162,13484
+#: note: laut ADFC-Karte "mäßig geeignet" fuer die gesamte Moltkestr.:
+Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4596,3738 4487,3802 4235,3999
+Moltkestr.: eher schlechtes Kopfsteinpflaster	Q3 4235,3999 4092,4217 3926,4438
 Zionskirchstr.: Kopfsteinpflaster	Q1 10101,14455 10277,14350
 #: XXX Teil von Maikäferweg bis Radelandstr. laut "Berliner Umland" "witterungsabhängiger Weg"
 (Mauerweg Forst Spandau): Asphalt	Q0 -7257,16925 -7175,16968 -7151,17330 -6965,17565 -6968,17717 -6764,18287 -6794,18921 -6943,19311 -7016,19375 -8022,19052
@@ -1901,3 +1908,20 @@ Jägerstr.: schlechtes Kopfsteinpflaster	Q3 5443,2109 5672,2197 5778,2237
 #: by: ^^^
 #: by: Annette (buehring):
 Parforceheide: Asphalt	Q0 -1737,1904 -1796,2054 -1717,2084 -1654,1954
+#: by: Michael Heckner:
+Robert-von-Ostertag-Str.: breiter fester Sandweg	Q2 -613,1949 -745,2320
+#: by: Thorsten Schulz:
+Alemannenallee: Asphalt	Q0 936,11280 1146,11156
+#: by: Christian Lochner:
+Kuckhoffstr.: guter Asphalt	Q0 10200,19807 9906,19718 9482,19594 8833,19259
+#: by: Adam Förster:
+#: XXX: auch im Abschnitt unter der S-Bahn (dort gibt es eine Buslinie)?
+Lemkestr.: schlechtes Kopfsteinpflaster	Q3 26615,14054 26455,13925 25984,13328 25525,12750 25143,12284 25053,12156
+#: by: Sabine Schwitzke:
+Stirnerstr.: guter Asphalt	Q0 5909,5072 6068,5028
+#: by: Tatze:
+Hammersteinstr.: schlechtes grobes Kopfsteinpflaster	Q3 2746,7375 2559,7235 2400,7128
+#: by: Jens Wesendrup:
+Hackerstr.: guter Asphalt	Q0 5003,6362 5075,6509 5101,6579 5126,6655 5162,6709
+#: by:  Samuel Koenig:
+Stewardstr.: mäßiger Asphalt (einige Straßenschäden)	Q1 828,5006 953,4994 1275,4956

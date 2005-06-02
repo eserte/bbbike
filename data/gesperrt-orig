@@ -286,6 +286,7 @@ Gustav-Müller-Str.	1 7642,8583 7642,8815
 Niederlagstr.	1 9959,12180 9918,12411
 Kolk/Behnitz/Möllentordamm	1 -3029,14656 -3010,14612 -2939,14585 -2920,14637 -2992,14667 -3029,14656
 Adolfstr.	1 7796,15590 7817,15418
+Hertelstr.	1 4893,6900 4787,6899
 #
 # Potsdam
 #
@@ -420,11 +421,14 @@ Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14603,15971 14619,15920 14650,157
 Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16738,11878 16858,11860 16964,11845
 #: by: Kerstin Pantos:
 Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8770 7642,8815 7570,8863
-#: by: Andreas Mühlhausen:
+#: by: Andreas Mühlhausen: vvv
 Heerstr.: schlecht passierbar	3nocross -4050,11752 -3894,11709 -3711,11659
+Thielallee: nicht passierbarer Mittelstreifens	3nocross 2560,5044 2587,4965 2615,4885
+#: by: ^^^
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Neustädtische Kirchstr.: An der US-Botschaft	3nocross 9100,12627 9112,12499 9126,12413 9141,12320
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Heerstr.: wahrscheinlich unbequem zu überqueren	3nocross 706,11251 936,11280 1210,11314
 #
 ####################################################################
 #
@@ -487,6 +491,10 @@ tragen (Treppe)	0:30 1715,3257
 #: by: ^^^
 #: by: Jessica Mai:
 tragen (Treppe)	0:30 6193,12867
+#: by: Andreas Mühlhausen: vvv
+tragen (Treppe)	0:30 2943,13550
+tragen (Treppe)	0:30 3025,13568
+#: by: ^^^
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
