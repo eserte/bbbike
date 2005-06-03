@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.31 2005/06/01 21:13:30 eserte Exp $
+# $Id: Makefile,v 1.32 2005/06/03 00:35:39 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -12,7 +12,9 @@
 
 # XXX should not be necessary!
 # Absolute path to the bbbike source directory.
-ABS_LOCAL_BBBIKE_DIR=	${.CURDIR}/../..			 # ***
+# It should be really absolute, because this directory may be replicated to
+# elsewhere.
+ABS_LOCAL_BBBIKE_DIR=	/home/e/eserte/src/bbbike		# ***
 
 # BRBDIR is the current directory. Do not use .CURDIR, because it may be
 # called via "make -f" from another directory.

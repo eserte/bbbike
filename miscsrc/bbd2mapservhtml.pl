@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2mapservhtml.pl,v 1.10 2005/06/02 01:21:14 eserte Exp $
+# $Id: bbd2mapservhtml.pl,v 1.10 2005/06/02 01:21:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -40,7 +40,8 @@ my $save_cmdline = "$0 @ARGV";
 if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		"email=s" => \$email,
 		"local!" => sub {
-		    $bbbike_url = "http://www/~eserte/bbbike/cgi/bbbike.cgi";
+		    #$bbbike_url = "http://www/~eserte/bbbike/cgi/bbbike.cgi";
+		    $bbbike_url = "http://radzeit/cgi-bin/bbbike.cgi";
 		},
 		'layer=s@' => \@layers,
 		'initmapext=s' => sub {
