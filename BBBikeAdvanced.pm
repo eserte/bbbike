@@ -196,7 +196,8 @@ sub custom_draw {
 # 					 },
 					),
 		     $f->Button(-image => $t->Getimage("openfolder"),
-				-command => $get_file
+				-command => $get_file,
+				-takefocus => 0,
 			       )
 		    );
 	    $pe->focus;
