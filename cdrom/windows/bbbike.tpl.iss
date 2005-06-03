@@ -30,8 +30,8 @@ Source: "[% f.src %]"; DestDir: "{app}\[% f.dest %]"[% -%]
 -%]
 
 [Icons]
-Name: "{group}\BBBike"; Filename: "[% wperl_exe %]"; Parameters: "{app}\bbbike\bbbike"; WorkingDir: "{app}\bbbike"; IconFilename: "{app}\bbbike\images\srtbike.ico"; Comment: "BBBike - ein Routenplaner für Radfahrer in Berlin und Brandenburg"
-Name: "{userdesktop}\BBBike"; Filename: "[% wperl_exe %]"; Parameters: "{app}\bbbike\bbbike"; WorkingDir: "{app}\bbbike"; IconFilename: "{app}\bbbike\images\srtbike.ico"; Comment: "BBBike - ein Routenplaner für Radfahrer in Berlin und Brandenburg"
+Name: "{group}\BBBike"; Filename: "[% wperl_exe %]"; Parameters: ""{app}\bbbike\bbbike""; WorkingDir: "{app}\bbbike"; IconFilename: "{app}\bbbike\images\srtbike.ico"; Comment: "BBBike - ein Routenplaner für Radfahrer in Berlin und Brandenburg"
+Name: "{userdesktop}\BBBike"; Filename: "[% wperl_exe %]"; Parameters: ""{app}\bbbike\bbbike""; WorkingDir: "{app}\bbbike"; IconFilename: "{app}\bbbike\images\srtbike.ico"; Comment: "BBBike - ein Routenplaner für Radfahrer in Berlin und Brandenburg"
 Name: "{group}\BBBike im WWW"; Filename: "[% BBBike.BBBIKE_DIRECT_WWW %]"; IconFilename: "{app}\bbbike\images\srtbike_www.ico"
 Name: "{group}\BBBike-Dokumentation"; Filename: "{app}\bbbike\bbbike.html"
 
