@@ -75,30 +75,26 @@ sub AUTOLOAD {
 #   CustomPush (only for MapInfo)
 sub new {
     my($class, $filename, %args) = @_;
-    if (defined $filename &&
-	$filename =~ /\.(dbf|sbn|sbx|shp|shx)$/) {
-	require Strassen::ESRI;
-	return Strassen::ESRI->new($filename, %args);
-    }
-    if (defined $filename &&
-	$filename =~ /\.(mif|mid)$/i) {
-	require Strassen::MapInfo;
-	return Strassen::MapInfo->new($filename, %args);
-    }
-    if (defined $filename &&
-	$filename =~ /\.e00$/i) {
-	require Strassen::E00;
-	return Strassen::E00->new($filename, %args);
-    }
-    if (defined $filename &&
-	$filename =~ /\.(wpt|trk|rte)$/) {
-	require Strassen::Gpsman;
-	return Strassen::Gpsman->new($filename, %args);
-    }
-    if (defined $filename &&
-	$filename =~ /waypoint\.txt$/) {
-	require Strassen::WaypointPlus;
-	return Strassen::WaypointPlus->new($filename, %args);
+    if (defined $filename) {
+	if      ($filename =~ /\.(dbf|sbn|sbx|shp|shx)$/) {
+	    require Strassen::ESRI;
+	    return Strassen::ESRI->new($filename, %args);
+	} elsif ($filename =~ /\.(mif|mid)$/i) {
+	    require Strassen::MapInfo;
+	    return Strassen::MapInfo->new($filename, %args);
+	} elsif ($filename =~ /\.e00$/i) {
+	    require Strassen::E00;
+	    return Strassen::E00->new($filename, %args);
+	} elsif ($filename =~ /\.(wpt|trk|rte)$/) {
+	    require Strassen::Gpsman;
+	    return Strassen::Gpsman->new($filename, %args);
+	} elsif ($filename =~ /waypoint\.txt$/) {
+	    require Strassen::WaypointPlus;
+	    return Strassen::WaypointPlus->new($filename, %args);
+	} elsif ($filename =~ /\.mps$/i) {
+	    require Strassen::FromRoute;
+	    return Strassen::FromRoute->new($filename, %args);
+	}
     }
 
     my(@filenames);
