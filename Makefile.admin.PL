@@ -216,6 +216,10 @@ MANIFEST.withcvs:	MANIFEST MANIFEST.addtocvs
 # is always fired.
 .PHONY: MANIFEST.withcvs
 
+# XXX It would be nicer to use "cp" instead of "ln", but ExtUtils::Manifest is buggy
+full-cvs-dist:	MANIFEST.withcvs
+	perl -MExtUtils::Manifest=manicopy,maniread -e 'manicopy(maniread("MANIFEST.withcvs"), "/tmp/BBBike-CVS", "ln")'
+
 # DISTRIBUTIONS ##########################################################
 
 TMPDIR?=	/tmp
