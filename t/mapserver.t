@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver.t,v 1.1 2005/06/02 01:05:04 eserte Exp $
+# $Id: mapserver.t,v 1.2 2005/06/03 01:25:05 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -13,11 +13,17 @@ BEGIN {
 	use WWW::Mechanize;
 	use WWW::Mechanize::FormFiller;
 	use Test::More;
+	use Sys::Hostname qw(hostname);
 	1;
     }) {
 	print "1..0 # skip: no WWW::Mechanize and/or Test::More modules\n";
 	exit;
     }
+}
+
+if (hostname ne "vran.herceg.de" && hostname !~ /radzeit/i) {
+    print "1..0 # skip: works only on vran\n";
+    exit;
 }
 
 use FindBin;
@@ -56,7 +62,7 @@ my @layers = qw(
 # Get SCOPES from mapserver/brb/Makefile:
 my @scopes = qw(brb b inner-b wide p);
 
-plan tests => 91;
+plan tests => 211;
 
 sub get_agent {
     my $agent = WWW::Mechanize->new;
@@ -67,7 +73,7 @@ sub get_agent {
 
 sub is_on_mapserver_page {
     my($agent, $for) = @_;
-    like($agent->response->request->uri, qr{/mapserv.cgi}, "Show mapserver output for $for");
+    like($agent->response->request->uri, qr{/mapserv}, "Show mapserver output for $for");
 
     my(@images) = $agent->find_all_images;
     is(scalar(@images), 4, "Expected 4 images: map, ref, legend, scalebar");
@@ -101,7 +107,13 @@ my $ms = get_config();
 {
     my $agent = get_agent();
     my $url;
-    $url = $ms->{MAPSERVER_PROG_URL} . '?map=%2Fhome%2Fslavenr%2Fwork2%2Fbbbike%2Fmapserver%2Fbrb%2Fbrb-b.map&mode=&zoomdir=&mode_or_zoomdir=0&zoomsize=2&orig_mode=%5Borig_mode%5D&orig_zoomdir=%5Borig_zoomdir%5D&imgxy=275+275&imgext=5593.000000+9243.000000+11593.000000+15243.000000&savequery=true&imgsize=550+550&program=%2Fmapserver%2Fcgi%2Fmapserv.cgi&bbbikeurl=http%3A%2F%2Flocalhost%3A8080%2Fbbbike%2Fcgi%2Fbbbike.cgi&bbbikemail=slaven%40rezic.de&startc=%5Bstartc%5D&coordset=';
+##XXX How to get site-independent?
+#     my $q = CGI->new({map => $ms->{MAPSERVER_DIR}."/brb-b.map",
+# 		      program => $ms->{MAPSERVER_PROG_RELURL},
+# 		     });
+#     $url = $ms->{MAPSERVER_PROG_URL} . "?" . $q->query_string;
+    my $host = hostname =~ /radzeit/ ? "www.radzeit.de" : "radzeit";
+    $url = "http://$host/cgi-bin/bbbike.cgi?mapserver=1";
     $agent->get($url);
     ok($agent->success, "$url is ok");
 
