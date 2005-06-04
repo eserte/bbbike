@@ -30,6 +30,13 @@ BEGIN {
 		last SEARCH_FOR_BBBIKE_DIRS;
 	    }
 	}
+	if (!caller(2)) {
+	    require FindBin;
+	    eval 'use lib ("$FindBin::RealBin/..",
+			   "$FindBin::RealBin/../lib",
+			   "$FindBin::RealBin/../data",
+			  )';
+	}
 	eval 'use lib qw(/home/e/eserte/src/bbbike
 	                 /home/e/eserte/src/bbbike/lib
 	                 /home/e/eserte/src/bbbike/data)';
@@ -287,7 +294,9 @@ sub new {
 	GPS::Garmin->VERSION(0.14); # extended return
 	# XXX Windows? HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\SERIALCOMM
 	# XXX Linux: /dev/ttyS0 or ttyS1
-	my $port = $args{Port} || ($Config::Config{archname} eq 'arm-linux' ? '/dev/ttySA0' : '/dev/cuaa0'); # more distinctions
+	my $port = $args{Port} || ($Config::Config{archname} eq 'arm-linux'   ? '/dev/ttySA0' :
+				   $Config::Config{archname} =~ /^i.86-linux/ ? '/dev/ttyS0'  :
+				   '/dev/cuaa0'); # more distinctions
 	my $baud = $args{Baud} || 9600;
 	$self->{GPS} = new GPS::Garmin('Port' => $port,
 				       'Baud' => $baud,

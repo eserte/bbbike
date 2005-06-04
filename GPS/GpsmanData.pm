@@ -59,7 +59,7 @@ use GPS::Util; # for eliminate_umlauts
 use Class::Struct;
 struct('GPS::Gpsman::Waypoint' =>
        [map {($_ => "\$")}
-	qw(Ident Comment Latitude Longitude ParsedLatitude ParsedLongitude Altitude NewTrack Symbol Accuracy DisplayOpt)
+	qw(Ident Comment Latitude Longitude ParsedLatitude ParsedLongitude Altitude NewTrack Symbol Accuracy DisplayOpt DateTime)
        ]
       );
 {
@@ -124,6 +124,9 @@ sub do_convert_to_route {
 
     my @res;
 
+    if (!$self->{Track} && $self->{Waypoints}) {
+	die "Can convert only tracks to routes, no waypoint files";
+    }
     foreach my $wpt (@{ $self->Track }) {
 	my($x,$y) = $to_obj->trim_accuracy
 	    ($obj->map2standard($wpt->Longitude, $wpt->Latitude)
@@ -364,6 +367,10 @@ sub parse_waypoint {
     $wpt->Comment($f[1]);
 
     my $f_i = 2;
+    if ($f[$f_i] =~ /^(\d{2}-[a-zA-Z]{3}-\d{4} .*)/) {
+	$wpt->DateTime($f[$f_i]);
+	$f_i++;
+    }
     $self->parse_and_set_coordinate($wpt, \@f, \$f_i);
 
     if ($#f >= $f_i) {
@@ -375,7 +382,13 @@ sub parse_waypoint {
 	    } elsif (/^dispopt=(.*)/) {
 		$wpt->DisplayOpt($1);
 	    } else {
-		warn "Ignore $_" if $^W;
+		if ($^W) {
+		    if (/^GD108:(class|colour|attrs|depth|state|country)=/) {
+			# no warning
+		    } else {
+			warn "Ignore $_";
+		    }
+		}
 	    }
 	}
     }
@@ -454,6 +467,8 @@ sub parse {
 	} elsif (/^!Position:\s+(\S+)$/) {
 	    my $pos_format = $1;
 	    $self->change_position_format($pos_format);
+	} elsif (/^!NB:/) {
+	    # ignore comment
 	} elsif (/^!/) {
 	    if ($multiple && @data) {
 		# we already have data for one track/route/...
