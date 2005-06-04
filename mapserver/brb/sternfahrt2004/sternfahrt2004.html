@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <!-- -*-html-*- -->
+<!-- DO NOT EDIT. Created automatically from /home/e/eserte/src/bbbike/mapserver/brb/sternfahrt2004/sternfahrt2004.html-tpl -->
+<html>
+<head><title>Sternfahrt 2004 - BBBike - Mapserver</title>
+<base href="http://www/~eserte/mapserver/brb/sternfahrt2004.html">
+<link rel="stylesheet" type="text/css" href="/~eserte/bbbike/html/bbbike.css">
+<link rel="stylesheet" type="text/css" href="brb.css">
+<script type="text/javascript" src="brb.js"></script>
+</head>
+<body bgcolor=#FFFFFF onload="init()">
+
+<form name="map" target="_self" method=GET
+      action="[program]"
+      onsubmit="return redirect_form(this)">
+
+<table summary="" border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td valign="top" align=left>
+  <table summary="Map with navigation" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+     <td align="left"><input onclick="return move_map(-1,-1)" class="smb1" type="button" value="NW"></td>
+     <td align="center"><input onclick="return move_map(0,-1)" class="smb2" type="button" value="N"></td>
+     <td align="right"><input onclick="return move_map(1,-1)" class="smb1" type="button" value="NO"></td>
+    </tr>
+    <tr>
+     <td style="vertical-align:middle;"><input onclick="return move_map(-1,0)" class="smb" type="button" value="W"></td>
+     <td>
+      <table summary="" cellpadding="0" cellspacing="1" border="0" bgcolor="#000000">
+       <tr>
+        <td><INPUT NAME="img" TYPE="image" SRC="[img]" width="550" height="550" border=0></td>
+       </tr>
+      </table>
+     </td>
+     <td style="vertical-align:middle;"><input onclick="return move_map(1,0)" class="smb" type="button" value="O"></td>
+    </tr>
+    <tr>
+     <td></td>
+     <td>
+      <table summary="" class="pwrdb">
+       <tr>
+        <td class="pwrd">&nbsp;Powered by <a href="http://mapserver.gis.umn.edu/">MapServer</a> &amp; <a href="http://bbbike.sourceforge.net">BBBike</a></td>
+        <td align="right"><img title="" alt="scalebar" src="[scalebar]"></td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td align="left"><input onclick="return move_map(-1,1)" class="smb" type="button" value="SW"></td>
+     <td align="center"><input onclick="return move_map(0,1)" class="smb2" type="button" value="S"></td>
+     <td align="right"><input onclick="return move_map(1,1)" class="smb" type="button" value="SO"></td>
+    </tr>
+    <tr>
+     <td></td>
+     <td>
+      <table summary="" cellpadding="0" cellspacing="1" border="0">
+       <tr>
+        <td bgcolor="#000000">
+         <INPUT NAME="ref" TYPE="image" SRC="[ref]" border="0" onclick="return force_browse_move_mode()">
+        </td>
+        <td>&nbsp;</td>
+        <td>
+         <input type="hidden" name="map" value="[map]">
+<!--
+          Andere Referenzkarte:<br>
+          <input class="hfb" type="button" onclick="return change_map('brb-b.map')" value="Berlin"><br>
+          <input class="hfb" type="button" onclick="return change_map('brb.map')" value="Brandenburg"><br>
+          <input class="hfb" type="button" onclick="return change_map('brb-wide.map')" value="Nordostdeutschland"><br>
+-->
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+  </table>
+</td>
+<td>&nbsp;&nbsp;</td>
+<td valign="top" bgcolor=#ffffff>
+  <center><h1><img src="/~eserte/bbbike/images/stern2004_titel.jpg" alt="Sternfahrt 2004"></h1></center>
+  Mehr Informationen zur Sternfahrt 2004 am 6.Juni 2004 gibt es <a href="http://www.radzeit.de/sternfahrt2">hier</a>.<br /><br />
+  <a href="/~eserte/bbbike/cgi/sternfahrt2004-treffpunkte.cgi">Alle Treffpunkte</a><br /><br />
+
+  <table summary="" cellpadding="5" cellspacing="0" border="0" bgcolor="#ffffff">
+    <tr><td>
+
+      <b>Darzustellende Ebenen: </b><small><a href="help.html#layers" onclick="return help('layers')">(Hilfe)</a></small><br>
+      <div class="lyrchk">
+      <input type="checkbox" name="layer" value="qualitaet" [qualitaet_check]> Qualität<br>
+      <input type="checkbox" name="layer" value="handicap" [handicap_check]> sonstige Behinderungen<br>
+      <input type="checkbox" name="layer" value="radwege" [radwege_check]> Radwege<br>
+      <input type="checkbox" name="layer" value="blocked" [blocked_check]> gesperrte Straßen<br>
+      <input type="checkbox" name="layer" value="bahn" [bahn_check]> Bahnlinien und Bahnhöfe<br>
+      <input type="checkbox" name="layer" value="gewaesser" [gewaesser_check]> Gewässer<br>
+      <input type="checkbox" name="layer" value="faehren" [faehren_check]> Fähren<br>
+      <input type="checkbox" name="layer" value="flaechen" [flaechen_check]> Parks, Wälder<br>
+      <input type="checkbox" name="layer" value="grenzen" [grenzen_check]> Grenzen<br>
+      <input type="checkbox" name="layer" value="ampeln" [ampeln_check]> Ampeln<br>
+      <input type="checkbox" name="layer" value="sehenswuerdigkeit" [sehenswuerdigkeit_check]> Sehenswürdigkeiten<br>
+      <input type="checkbox" name="layer" value="obst" [obst_check]> Obst<br>
+      <input type="checkbox" name="layer" value="orte" [orte_check]> Orte<br>
+      <input type="checkbox" name="layer" value="fragezeichen" [fragezeichen_check]> Fragezeichen<br>
+      <input type="checkbox" name="layer" value="sternfahrt" [sternfahrt_check]> Routen der Sternfahrt<br>
+      <input type="checkbox" name="layer" value="treffpunkte" [treffpunkte_check]> Treffpunkte der Sternfahrt<br>
+      </div>
+
+      <p>
+      <input type="radio" name="mode" value="browse" onclick="toggled_searchroute_mode();" checked> <b>Karte zoomen/bewegen</b> <small><a href="help.html#browse" onclick="return help('browse')">(Hilfe)</a></small><br>
+     <input type="radio" name="mode" value="nquery" onclick="toggled_searchroute_mode();"> <b>Merkmale anzeigen</b> <small><a href="help.html#query" onclick="return help('query')">(Hilfe)</a></small>
+
+      <p>
+      <input type=radio name=zoomdir value=1 [zoomdir_1_check] onclick="set_gui_browse_mode()">&nbsp;Hineinzoomen<br>
+      <input type=radio name=zoomdir value=0 [zoomdir_0_check] onclick="set_gui_browse_mode()">&nbsp;Bewegen<br> 
+      <input type=radio name=zoomdir value=-1 [zoomdir_-1_check] onclick="set_gui_browse_mode()">&nbsp;Herauszoomen
+      <p>
+      Zoomstufe <input type=text name=zoomsize size=4 value=[zoomsize]> <small><a href="help.html#zoomin" onclick="return help('zoomin')">(Hilfe)</a></small>
+      <p>
+
+<!-- Does not work...
+      Bildgröße:<br>
+      <input type=radio name=imgsize value="250 250" Xmapsize_250_250_checkX>&nbsp;250x250<br>
+      <input type=radio name=imgsize value="550 550" Xmapsize_550_550_checkX>&nbsp;550x550<br>
+      <input type=radio name=imgsize value="800 800" Xmapsize_800_800_checkX>&nbsp;800x800<br>
+-->
+      <center><input type="submit" value="Neu zeichnen" onclick="adjust_for_redraw()"></center>
+
+
+<!--
+<input type="radio" name="mode" value="searchroute" onclick="toggled_searchroute_mode();"> Start/Zielpunkt setzen <small>(experimentell! - <a href="help.html#search" onclick="return help('query')">Hilfe</a>)</small>
+-->
+
+      <h3>Legende</h3>
+      <img title="" alt="legend" src="[legend]">
+
+      <br>Maßstab: 1:[scale] <small><a href="help.html#scale" onclick="return help('scale')">(Hilfe)</a></small>
+    </td></tr></table>
+
+  </td></tr>
+
+ <tr><td style="padding-top:3px"></td></tr>
+
+ <tr>
+  <td colspan="3">
+      <p class="ftr">
+       <a id="bbbikemail" href="mailto:slaven@rezic.de">E-Mail</a> |
+       <a href="help.html">Info</a> |
+       <a id="bbbikeurl" href="http://www/~eserte/bbbike/cgi/bbbike.cgi">BBBike</a> |
+       <a href="/~eserte/bbbike/cgi/mapserver_address.cgi?[get_layers]&mapext=[mapext_esc]">Adresssuche</a>
+      </p>
+  </td>
+ </tr>
+
+</table>
+
+<input type="hidden" name="orig_mode" value="[orig_mode]">
+<input type="hidden" name="orig_zoomdir" value="[orig_zoomdir]">
+
+<input type="hidden" name="imgxy" value="275 275">
+<input type="hidden" name="imgext" value="[mapext]">
+<input type="hidden" name="savequery" value="true">
+<input type="hidden" name="imgsize" value="[mapsize]">
+
+<input type="hidden" name="program" value="[program]">
+
+<input type="hidden" name="bbbikeurl" value="[bbbikeurl]">
+<input type="hidden" name="bbbikemail" value="[bbbikemail]">
+<input type="hidden" name="startc" value="[startc]">
+<input type="hidden" name="coordset" value="">
+
+</form>
+
+</body></html>
+

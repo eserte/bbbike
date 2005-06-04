@@ -379,14 +379,7 @@ userdel	q4 1872,-1118 1680,-1011
        undef,
        undef,
        undef,
-       {
-         'until' => 1117749600,
-         'text' => 'L 29; (Biesenthal-Wandlitz); Bahnübergang bei Wandlitz Gleisbauarbeiten Vollsperrung 31.05.2005-02.06.2005 ',
-         'from' => 1117404000,
-         'data' => 'userdel	2 15403,40364 14713,40426
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1126821600,
          'text' => 'K 7330; (L 23 nördl. Templin-Gandenitz); OD Gandenitz Kanal- und Straßenbau Vollsperrung 30.05.2005-15.09.2005 ',

@@ -113,8 +113,6 @@ mapserver/brb/query_footer2.html
 mapserver/brb/query_header.html-tpl
 mapserver/brb/query_header2.html
 mapserver/brb/sternfahrt2004/after_marker.inc
-mapserver/brb/sternfahrt2004/sternfahrt2004_init.html
-mapserver/brb/sternfahrt2004/sternfahrt2004.html
 mapserver/brb/sternfahrt2004/after_strassen_annotations.inc
 mapserver/daemon/mapscript_daemon.pl
 misc/ampelschaltung.txt
@@ -281,7 +279,8 @@ cdrom/windows/install.pl
 cdrom/windows/tkinstall.pl
 cdrom/windows/perl.bat
 cdrom/windows/setup.bat
-cdrom/windows/setup.exe
+##_Never_copied_to_CVS?!
+#cdrom/windows/setup.exe
 cdrom/windows/bbbike.tpl.iss
 cdrom/windows/BBBikeWinDistFiles.tpl
 cdrom/freebsd/startup.sh

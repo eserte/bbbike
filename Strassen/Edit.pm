@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Edit.pm,v 1.2 2005/05/24 00:43:38 eserte Exp $
+# $Id: Edit.pm,v 1.3 2005/06/04 08:27:51 eserte Exp $
 #
 # Copyright (c) 2005 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -13,7 +13,7 @@
 
 package Strassen::Edit;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 package Strassen;
 use strict;

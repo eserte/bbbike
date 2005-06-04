@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.26 2005/06/02 01:18:11 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.27 2005/06/03 23:26:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2005 Slaven Rezic. All rights reserved.
@@ -337,7 +337,7 @@ sub create_mapfile {
 	    $map_path = $path_for_scope->($scope, "$prefix-");
 
 	    my $tmpfile2;
-	    if ($externshape) {
+	    if ($externshape && -s $tmpfile1) {
 		# convert bbd file to esri file
 		$tmpfile2 = $self->{TmpDir} . "/bbbikems-${prefix}";
 		my @cmd = ($self->{BBD2ESRI_PROG},

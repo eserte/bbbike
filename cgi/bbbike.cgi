@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.27 2005/05/31 00:25:20 eserte Exp $
+# $Id: bbbike.cgi,v 7.28 2005/06/03 23:39:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -665,7 +665,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.27 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.28 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -4287,7 +4287,7 @@ sub draw_map {
 	    open(MAP, ">$map_file") or confess "Fehler: Die Map $map_file konnte nicht erstellt werden.<br>\n";
 	    chmod 0644, $map_file;
 	    $q->param('geometry', $detailwidth."x".$detailheight);
-	    $q->param('draw', 'str', 'ubahn', 'sbahn', 'wasser', 'flaechen', 'orte');
+	    $q->param('draw', 'str', 'ubahn', 'sbahn', 'wasser', 'flaechen', 'orte', 'berlin');
 	    $q->param('drawwidth', 1);
 	    # XXX Argument sollte übergeben werden (wird sowieso noch nicht
 	    # verwendet, bis auf Überprüfung des boolschen Wertes)
@@ -5607,7 +5607,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/05/31 00:25:20 $';
+    my $cgi_date = '$Date: 2005/06/03 23:39:20 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {
