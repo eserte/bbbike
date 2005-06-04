@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.20 2005/05/23 23:53:41 eserte Exp $
+# $Id: plz.t,v 1.21 2005/06/04 16:09:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -22,7 +22,7 @@
 package main;
 
 use Test::More;
-BEGIN { plan tests => 60 }
+BEGIN { plan tests => 61 }
 
 use FindBin;
 use lib ("$FindBin::RealBin/..",
@@ -246,6 +246,13 @@ EOF
        "`strasse' instead of `str.', complex house number")
 	or diag $dump->(\@res);
 
+ XXX:
+    @res = $plz_multi->look_loop(PLZ::split_street("Mühlenstraße 24 - 26"),
+				 @standard_look_loop_args);
+    is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Mühlenstr.' } @{$res[0]}), 1,
+       "`straße' instead of `str.', complex house number with whitespace")
+	or diag $dump->(\@res);
+
     @res = $plz->look_loop(PLZ::split_street("Sanderstr. 29/30"),
 			   @standard_look_loop_args);
     is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Sanderstr.' } @{$res[0]}), 1,
@@ -346,7 +353,6 @@ EOF
        "Expanding gr.")
 	or diag $dump->(\@res);
 
- XXX:
     @res = $plz_multi->look_loop(PLZ::split_street("potsdam, schopenhauerstr."),
 				 @standard_look_loop_args);
     is(!!(grep { $_->[PLZ::LOOK_NAME] eq "Schopenhauerstr." } @{$res[0]}), 1, 
@@ -355,6 +361,7 @@ EOF
     is(!!(grep { $_->[PLZ::LOOK_CITYPART] eq "Potsdam" } @{$res[0]}), 1, 
        "split_street with city, street syntax, street part")
 	or diag $dump->(\@res);
+
 }
 
 

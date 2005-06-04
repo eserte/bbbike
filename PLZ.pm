@@ -452,8 +452,8 @@ sub look_loop {
     };
     my $strip_hnr = sub {
 	my $str = shift;
-	if ($str =~ m{\s+(?:\d+[a-z]?|\d+[-/]\d+)\s*$}) {
-	    $str =~ s{\s+(?:\d+[a-z]?|\d+[-/]\d+)\s*$}{};
+	if ($str =~ m{\s+(?:\d+[a-z]?|\d+\s*[-/]\s*\d+)\s*$}) {
+	    $str =~ s{\s+(?:\d+[a-z]?|\d+\s*[-/]\s*\d+)\s*$}{};
 	    $str;
 	} else {
 	    undef;
