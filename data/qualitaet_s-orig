@@ -231,7 +231,8 @@ Wuhlheide: fester Waldweg, bei Trockenheit etwas sandig	Q2 20887,7267 20858,7143
 Wuhlheide: Waldweg	Q2 21378,5843 22012,6219
 Mittelweg: Kopfsteinpflaster	Q2 12923,7611 12781,7691 12697,7689 12644,7688 12516,7718
 Mittelweg: Kopfsteinpflaster	Q3 12182,7824 12335,7770
-Karl-Marx-Platz/Richardplatz: Kopfsteinpflaster	Q2 12980,7597 13177,7644 13297,7654 13429,7689
+Karl-Marx-Platz/Richardplatz: Kopfsteinpflaster	Q2 12980,7597 13100,7626 13177,7644 13297,7654 13429,7689
+Karl-Marx-Platz: Kopfsteinpflaster	Q2 12991,7549 13100,7626
 Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622 13400,7642 13432,7649 13429,7689
 Richardstr.: Kopfsteinpflaster, OK	Q1 12792,8190 12887,8099 13226,7775 13297,7654 13303,7622 13336,7467 13369,7307
 Alt-Rudow: Kopfsteinpflaster	Q2 16960,1282 16838,1457
@@ -280,7 +281,7 @@ Immanuelkirchstr.: Kopfsteinpflaster	Q2 11506,14230 11727,14111 11958,13986
 Bersarinplatz: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q2 13710,12633 13686,12611 13678,12571 13698,12544 13742,12538 13776,12571 13770,12617 13747,12642 13710,12633
 Petersburger Platz: Kopfsteinpflaster	Q2 13558,12766 13467,12978
 Pettenkoferstr Str.: Kopfsteinpflaster	Q2 15103,12107 15098,12213 15054,12323 14997,12450 14935,12596 14842,12826
-Marktstr., Fahrbahn Richtung Osten: Kopfsteinpflaster	Q2; 15267,10865 15168,10887
+Marktstr., Fahrbahn Richtung Osten: Kopfsteinpflaster	Q2; 15267,10865 15109,10911
 Gryphiusstr.: Kopfsteinpflaster	Q2 14367,11276 14434,11465 14496,11620 14513,11657 14550,11732
 Jungstr.: Kopfsteinpflaster	Q2 14550,11732 14623,11867 14675,11964
 Oberhofer Platz: Kopfsteinpflaster	Q2 5411,2098 5382,2080 5437,1941 5469,1949
@@ -325,9 +326,9 @@ Glienicker Str.: schlechtes Kopfsteinpflaster	Q3 -7174,343 -7236,300 -7324,276 -
 Glienicker Str.: mäßiges Kopfsteinpflaster	Q2 -7587,312 -7732,313 -8013,255
 Schäferstr.: Kopfsteinpflaster	Q2 -7232,445 -7365,371 -7587,312
 Karlsgartenstr.: Kopfsteinpflaster	Q2 11882,8527 11769,8515
-Fontanestr.: Kopfsteinpflaster	Q2 11632,8302 11645,8212 11665,8130
-Weisestr.: Kopfsteinpflaster	Q2 11763,8337 11770,8292 11773,8231 11786,8165 11823,7980 11856,7826 11879,7720 11903,7607 11923,7516
-Selchower Str.: Kopfsteinpflaster	Q2 11532,8104 11665,8130 11786,8165 11933,8198
+Fontanestr.: unebenes Kopfsteinpflaster	Q2 11632,8302 11645,8212 11665,8130
+Weisestr.: unebenes Kopfsteinpflaster	Q2 11763,8337 11770,8292 11773,8231 11786,8165 11823,7980 11856,7826 11879,7720 11903,7607 11923,7516
+Selchower Str.: unebenes Kopfsteinpflaster	Q2 11532,8104 11665,8130 11786,8165 11933,8198
 Mahlower Str.: Kopfsteinpflaster	Q2 11523,8178 11645,8212 11773,8231 11920,8252
 Boddinstr.: Kopfsteinpflaster	Q2 11920,8252 12096,8300
 Boddinstr.: teilweise Asphalt auf der Fahrbahn	Q1 12096,8300 12217,8320
@@ -981,7 +982,7 @@ Schinkestr.: Kopfsteinpflaster	Q2 11623,9841 11734,9856 11880,9874
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): asphaltierer Radweg	Q0 17587,17965 16990,18694
 Tuchollaplatz: Kopfsteinpflaster	Q2 15628,10915 15554,10934
 Lichtenrader Str.: Kopfsteinpflaster	Q2 11523,8178 11532,8104 11565,7921 11603,7759 11618,7671 11638,7558 11656,7460
-Kienitzer Str.: Kopfsteinpflaster	Q2 11498,7750 11603,7759 11736,7801 11856,7826 12025,7852 12090,7865
+Kienitzer Str.: unebenes Kopfsteinpflaster	Q2 11498,7750 11603,7759 11736,7801 11856,7826 12025,7852 12090,7865
 Allerstr.: Kopfsteinpflaster	Q2 11515,7654 11618,7671 11755,7704 11879,7720 12055,7751
 Okerstr.: Kopfsteinpflaster	Q2 11536,7533 11638,7558 11779,7582 11903,7607 12090,7651
 Lasdehner Str.: Kopfsteinpflaster	Q2 13520,12264 13470,12190 13375,12062
@@ -1063,6 +1064,11 @@ Heidenfeldstr.: Kopfsteinpflaster	Q2 13609,13427 13446,13353
 Neue Promenade: unebenes Pflaster	Q2 10294,13070 10132,12941
 Griebnitzseepromenade: Waldweg	Q1 -7266,-450 -7318,-515 -7358,-605 -7495,-716 -7585,-736 -7759,-850 -7908,-989 -8071,-1144 -8119,-1211 -8207,-1240 -8253,-1241 -8294,-1163 -8404,-1074 -8495,-1054 -8605,-995 -8628,-959 -8652,-865 -8733,-751 -8770,-720 -8886,-708 -8927,-642 -9009,-582 -9138,-521 -9182,-515 -9183,-381 -9208,-357 -9261,-272 -9399,-139
 (Frankfurter Allee, Nebenfahrbahn): Kopfsteinpflaster, OK	Q1 16870,11920 16746,11921
+Nalepastr.: Betonstr., Eisenbahnschienen	Q1 17039,7685 17043,7617
+Nalepastr.: fester enger Sandweg	Q2 17043,7512 17043,7617
+#: add_fragezeichen: stimmt das?
+Nalepastr.: Betonstr., Eisenbahnschienen	Q1 17043,7512 17211,7265
+Nalepastr.: sehr guter Asphalt	Q0 17211,7265 17284,7175 17614,6571
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -1927,3 +1933,7 @@ Hackerstr.: guter Asphalt	Q0 5003,6362 5075,6509 5101,6579 5126,6655 5162,6709
 Stewardstr.: mäßiger Asphalt (einige Straßenschäden)	Q1 828,5006 953,4994 1275,4956
 #: by: Jörg Krüger:
 Meisenheimer Str.: guter Asphalt	Q0 28543,675 28781,881 29006,1125
+#: by: josef: (oetzijo):
+Hohenbornweg: guter Asphalt	Q0 7846,1718 7675,1885
+#: by: Wolfgang Schmidt:
+Berlinickestr.: Kopfsteinpflaster	Q2 5088,5495 4839,5167
