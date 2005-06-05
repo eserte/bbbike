@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.31 2005/04/30 07:45:16 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.32 2005/06/04 10:08:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -475,6 +475,7 @@ winbindist-copy:
 	elif [ -r BBBike-$(VERSION).tar.gz ]; then \
 	    cat BBBike-$(VERSION).tar.gz | (cd $(WINBINDISTDIR) && tar xfvz - ); \
 	else \
+	    $(MAKE) distdir; \
 	    cp -Rp BBBike-$(VERSION) $(WINBINDISTDIR); \
 	    chmod ugo+rx $(WINBINDISTDIR)/BBBike-$(VERSION); \
 	fi

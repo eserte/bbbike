@@ -428,7 +428,6 @@ Kesselsdorfstr./Geßlerstr./Brunhildstr.: Qualität der Straßen?	? 8008,8767 8003,
 Zechliner Str.: Qualität?	? 16310,14378 16284,14601 16537,14635 16534,14740
 Malteserstr.: Busspur eingerichtet? (siehe auch http://www.berlin.de/landespressestelle/archiv/2005/03/08/24355/index.html)	? 7744,1008 7539,1529 7390,2021 7238,2534 7120,2990
 Fußgängerweg zwischen Wartenberger Str. und Margaretenhöhe: Qualität? Gibt es an der Bahnbrücke Treppen?	? 16284,19198 16392,19760
-Wohngebiet Schulze-Boysen-Str.: Einbahnstraßen, auch für Radfahrer?	? 15722,11857 15582,11886 15581,11956 15482,11973 15378,11992 15288,11968
 Gabelung der R1 (zwischen Fähre und Zeppelinstr.): Wegführung und Qualität?	? -14265,-2221 -14378,-2115 -14734,-2471
 Clara-Zetkin-Str. (Potsdam): Qualität?	? -14251,-1365 -14246,-1506 -14234,-1646
 Goethestr.: Qualität? laut ADFC-Karte schlecht geeignet	? 9701,-351 9961,-363 10273,-301 10403,-266 10586,-220 10788,-172
@@ -515,7 +514,7 @@ Boetticherstr.: Qualität, wahrscheinlich Kopfsteinpflaster?	? 2413,4296 2610,403
 Von-Laue-Str.: Qualität, wahrscheinlich Kopfsteinpflaster?	? 2445,4471 2537,4358 2712,4091
 Rudeloffweg: Qualität, wahrscheinlich Kopfsteinpflaster?	? 2545,4565 2635,4425 2682,4364 2817,4158
 Busseeallee: Qualität, wahrscheinlich Kopfsteinpflaster?	? 166,3040 82,3166 -249,3632
-Am Heidekampgraben: zurzeit anscheinend Bauarbeiten (Grünzugumgestaltung), Durchfahrt noch möglich?	? 15053,7966 14969,7580 15162,7281
+Am Heidekampgraben: zurzeit Bauarbeiten (Grünzugumgestaltung), Durchfahrt nicht möglich	? 15053,7966 14969,7580 15162,7281 15342,7013 15563,6683 15577,6518
 Viktoria-Quartier: Straßen fehlen: Zufahrt, Eberhard-Roters-Platz, Tivoliplatz, Schmiedehof, Sixtusgarten, evtl. weitere (Kategorie: NN, Q0 und Q2)	? 9106,9038 9026,8916 8954,8914 8950,8954 8997,8952 9019,8995
 Polizei in der Friesenstr.: genaue Gebäude, genaue Funktion?	F:? 9828,8934 9828,8725 10183,8707 10228,8790 10230,8916
 Hermsdorfer Str. (Hohen Neuendorf): Qualität?	? 621,29356 625,29868
@@ -581,6 +580,7 @@ Liepe - Grüssow: Qualität?	? 43331,174099 44780,175658
 Hackerstr.: hier Einbahnstraße auch für Radfahrer?	? 5101,6579 5126,6655
 Lefevrestr.: Einbahnstraße nur für Autofahrer, in welcher Richtung?	? 5215,6643 5372,6663
 S-Bhf. Charlottenburg: Nach dem Umklappen (2005-06-06) hier:	? 3718,10912
+Schwarzer Weg: möglicherweise ist das letzte Stück zwischen Grenzweg und Nalepastr. nicht befahrbar	? 17295,7336 17284,7175
 wirklich?	? 9215,3599
 Wirklich?	? -3755,17090
 geplante Ampel in der Johannisthaler	? 14196,2876
@@ -613,6 +613,7 @@ Nymphenufer: mäßig geeignet (laut ADFC-Karte)	? -4044,1841 -3981,1764 -3806,1644
 Dolomitenstr.: mäßig geeignet (laut ADFC-Karte)	? 10596,17554 10473,17446 10305,17299
 Cyclopstr.: nicht geeignet (laut ADFC-Karte)	? 4825,21718 5138,21358
 (Orankestr. - Orankesee): gut geeignet (laut ADFC-Karte)	? 15598,15793 15581,15846
+(südliches Spreeufer) (hat dieser Weg einen Namen (Panoramaweg?))	? 7775,12631 7934,12734 8012,12848 8084,12914 8228,12964 8343,12925 8426,12871 8473,12753 8495,12651 8554,12593
 (Am Schinkelplatz) (Ist dieser Name offiziell?)	? 9987,12421 10084,12228
 (Straße 54) (Keine Referenz auf den Straßennamen in Berlin.coords.data und in der ADFC-Karte:)	? 13011,17470 12965,17684 12856,17825
 (Pankeweg, Bürgerpark) (Verläuft der Pankeweg im Bürgerpark nördlich oder südlich der Panke?)	? 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9414,18278 9304,18165 9310,18108
@@ -634,6 +635,7 @@ Fanningerstr.: Kopfsteinpflaster (Stimmt das?)	? 16261,12224 16445,12193 16782,1
 Marienhöher Weg: Kopfsteinpflaster (mäßiges oder schlechtes Kopfsteinpflaster?)	? 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250
 Parkstr.: Kopfsteinpflaster (stimmt das?)	? 9029,6360 9143,6415
 Naumannstr.: Kopfsteinpflaster (überprüfen!)	? 7706,8875 7709,8770
+Nalepastr.: Betonstr., Eisenbahnschienen (stimmt das?)	? 17043,7512 17211,7265
 Margueritenring: Kopfsteinpflaster (Hier widerspricht die ADFC-Karte und meint "gut geeignet")	? 16491,2239 16807,2245 16898,2239 17009,2095 17060,2087 17382,2064 17421,2090
 Heegermühler Weg: schlechtes Kopfsteinpflaster (Hier wurde als Range "5-15" angegegeben. Hausnummern?)	? 7966,19968 8043,19725 8231,19806 8415,19910
 Rykestr.: Kopfsteinpflaster (aber ich erinnere mich ganz schwach, dass der südliche Abschnitt asphaltiert war... Außerdem: ist das Linksabbiegen in die Danziger möglich?)	? 11358,14331 11446,14508 11526,14693 11610,14886

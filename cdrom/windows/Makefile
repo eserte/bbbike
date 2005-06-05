@@ -1,9 +1,8 @@
 #
-# $Id: Makefile,v 1.8 2005/04/30 09:26:37 eserte Exp $
+# $Id: Makefile,v 1.9 2005/06/04 10:08:23 eserte Exp $
 #
 
-# XXX Get from BBBikeVar
-BBBIKEVER=3.14
+BBBIKEVER!=	perl -I../.. -MBBBikeVar -e 'print $$BBBike::VERSION'
 
 #all: setup.exe
 all: make-windows-installer
