@@ -34,7 +34,7 @@ userdel	q4 49039,44131 49691,43812
          'until' => 1135983600,
          'text' => 'L 302; (Schöneicher Str.); OL Schöneiche, Dorfaue und Rüdersdorfer Str. Kanal- und Straßenbau Vollsperrung 12.04.2005-30.12.2005 ',
          'from' => 1113170400,
-         'data' => 'userdel	q4 31221,8312 30688,8432
+         'data' => 'userdel	q4 31221,8312 30700,8462
 ',
          'type' => 'handicap'
        },

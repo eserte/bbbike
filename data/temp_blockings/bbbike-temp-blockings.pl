@@ -1080,7 +1080,7 @@ EOF
        text  => 'L 302; (Schöneicher Str.); OL Schöneiche, Dorfaue und Rüdersdorfer Str. Kanal- und Straßenbau Vollsperrung 12.04.2005-30.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 31221,8312 30688,8432
+userdel	q4 31221,8312 30700,8462
 EOF
      },
      { from  => 1098655200, # 2004-10-25 00:00

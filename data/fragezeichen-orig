@@ -37,6 +37,9 @@ Linienstr.: Fahrradstraße geplant (nach der Sanierung)	? 9281,13374 9607,13507 9
 #: section ^^^
 #
 #: section Straßen in Planung vvv
+#: by: berliner-stadtplan.com
+Grenzweg: Brücke über die Spree soll 2006 fertig werden	?::inwork 17131,7131 16993,6975
+Wiederaufbau des Kaiserstegs in Planung	?::inwork 18375,5900 18462,6087
 Uferweg an der Kongreßhalle noch in Bau	?::inwork 7775,12631 7670,12576
 Verlängerung der Paul-Löbe-Str. Richtung Kongreßhalle/Spree noch in Bau	?::inwork 7851,12590 7670,12576
 Mauerpark: unter Umständen wird ein Streifen des Mauerparkweges asphaltiert; der Weg wird Teil von Berlin-Usedom	? 10333,14983 10238,15316 10186,15463 10122,15647
@@ -55,6 +58,7 @@ Entlastungsstr.: wird voraussichtlich im September 2005 stillgelegt	? 8063,12182
 #: section ignorieren vvv
 # Hier kommen die Fragezeichen-Strecken herein, die nicht bei einer
 # erweiterten Suche aufgenommen werden sollen.
+Ortsumfahrung Müncheberg (B1/B5): Kraftfahrzeugstraße, für Radfahrer gesperrt	? 58237,11268 58800,10475 59150,10225 60400,10500 61500,10500 61653,10584 62750,11175 63237,11923
 #: by Robert vvv
 eher sandig, wellig	? 15400,24900 14131,25643
 eng, grün, umgestürzte Bäume	? 14162,25675 14550,26556
@@ -250,7 +254,7 @@ Alte Spandauer Poststr.: Qualität?	? -1415,9144 -1482,9276 -1512,9438 -1495,9518
 Am Hundekehlesee entlang: Qualität, Durchfahrt möglich? Laut ADFC-Karte mäßig geeignet	? 490,8716 445,8429 614,8006 761,7922
 Verlängerung Verbindungschaussee: Qualität?	? -2834,5578 -3605,4520
 Abkürzung in der Saubucht: Qualität? sah eigentlich gut aus...	? -2677,7696 -2561,8110
-Kastanienallee (Münchehofe): Qualität?	? 30267,8587 29204,9591 28896,10324
+Kastanienallee (Münchehofe): Qualität?	? 30290,8562 29204,9591 28896,10324
 Bellevuepark: durchgehender Weg vorhanden, Qualität?	? 22726,5332 22803,5755
 Alt-Rüdersdorf - Woltersdorf: Abkürzung durch den Wald? Qualität?	? 37906,7140 36543,6386 35524,5502
 Liepe - Parstein: Qualität? (wahrscheinlich Waldweg, überwiegend schlechtes Kopfsteinpflaster?)	? 48182,51484 48377,51677 48487,51891 48532,52041 48835,52276 49040,53002 49259,53625 49526,54142 49901,54397
@@ -300,7 +304,7 @@ bei Großbeeren: zurzeit wird die Hauptstraße noch weiter nördlich geführt, aber 
 Wallmow - Grünberg: wie geht es hier weiter?	? 55543,105468 57224,106265
 Ernst-Thälmann-Str. in Fürstenwalde umbenannt in Eisenbahnstr.?	? 55393,-4240 55374,-3621
 Ist eine Verbindung nach Seeberg vorhanden (westliche Seite des Ortes)?	? 28569,16324 28775,16193 29459,16348
-IKEA-Zufahrt zum Sachsendamm passierbar für Radfahrer in beide Richtungen?	? 8229,7154 8204,6958
+IKEA-Zufahrt zum Sachsendamm passierbar für Radfahrer in beide Richtungen (eigentlich Einbahnstraße Richtung Süden)?	? 8229,7154 8204,6958
 Wetzlarer Str (Potsdam): Qualität etc.	? -9306,-4259 -9646,-4906 -9975,-5578
 Glambeck - Wolletz - Blumberger Mühle: Qualität etc.	? 37368,68987 39782,69398 43109,69459 44775,70174 45761,70992
 Blumberger Mühle - Gorlsdorf: Qualität etc.	? 45761,70992 45584,72614
@@ -348,7 +352,6 @@ Schwedt - Gartz: Qualität?	? 69470,73251 69850,73437 69887,73650 70225,73562 707
 Gartz - B113: Qualität?	? 75460,90409 75637,90262 76100,90212 76450,90525 76887,91437 76925,92050 77275,92612 77262,93150 77362,93337 77350,93537 77912,93762 78137,93950 78125,94062 78237,94262 78250,94612 78412,94812 78537,94775 78587,94887 78662,95275 78787,95425 78812,95825 78937,96062
 B2 - entlang der polnischen Grenze: Qualität?	? 76848,101276 76087,101337 75912,101137 75337,101225 73987,102612 74112,103100 74475,103750 74825,104062 74887,104275 75125,104387 75237,104637 75412,104775 75425,105250 75775,105512 76187,106212 75525,106650 75737,107200 75837,108375 75800,109062 75400,110350 74225,112737 74237,113462 73987,113512 74137,113850 72925,113675 72801,113578
 zur B158: Qualität?	? 56450,48250 56587,48550 57272,48978
-Ortsumfahrung Müncheberg (B1): in Müncheberg nicht mehr B?	? 58371,11399 58800,10475 59150,10225 60400,10500 61500,10500 62750,11175 63237,11923
 Neue Trasse der B167: alte Trasse nicht mehr Bundesstraße, sondern K6436?	? 59554,34273 59192,34781 58825,34975 58746,35742 59140,36529 57475,40925 56925,41800 56350,42450 55000,43325 54725,44000 53425,44300 53187,44262 52400,43239
 Ortumfahrung Schwedt: existiert diese bereits, Qualität?	? 65570,76221 66300,75725 67725,76050 68075,77375 68375,77800 70037,78775
 Wendisch-Rietz - Radlow: Qualität?	? 54370,-20977 55509,-18644
@@ -764,5 +767,4 @@ Neeberg - Sauzin: Qualität?	? 35047,182022 34133,181849 33287,181934 32822,18180
 Liepe - Grüssow: Qualität?	? 43331,174099 44780,175658
 Hackerstr.: hier Einbahnstraße auch für Radfahrer?	? 5101,6579 5126,6655
 Lefevrestr.: Einbahnstraße nur für Autofahrer, in welcher Richtung?	? 5215,6643 5372,6663
-S-Bhf. Charlottenburg: Nach dem Umklappen (2005-06-06) hier:	? 3718,10912
 Schwarzer Weg: möglicherweise ist das letzte Stück zwischen Grenzweg und Nalepastr. nicht befahrbar	? 17295,7336 17284,7175
