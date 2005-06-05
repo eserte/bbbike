@@ -103,7 +103,7 @@ Reichstagufer	N 9283,12856 9209,12795 9091,12681 8892,12576 8766,12541
 Reichstagufer	NN 8766,12541 8665,12548 8554,12593
 (Monbijoupark - Henriette-Herz-Platz)	NN 9977,12912 10132,12941
 (nördliches Spreeufer)	NN 10171,12769 10100,12876 9977,12912 9895,12936 9784,12953 9707,12974 9557,12992 9533,12994 9508,12991 9271,12952
-#: add_fragezeichen: hat dieser Weg einen Namen (Panoramaweg?)
+#: add_fragezeichen: hat dieser Weg einen Namen (Panoramaweg? oder Ludwig-Erhard-Ufer?)
 (südliches Spreeufer)	NN 7775,12631 7934,12734 8012,12848 8084,12914 8228,12964 8343,12925 8426,12871 8473,12753 8495,12651 8554,12593
 (Moltkebrücke - südliches Spreeufer)	NN 8017,12826 8021,12835 8012,12848
 (Kronprinzenbrücke - südliches Spreeufer)	NN 8426,12871 8414,12854 8398,12833
@@ -2355,7 +2355,8 @@ Freiheit (Köpenick)	H 22377,4836 22196,4847
 Futranplatz	N 22377,4836 22439,4838
 Katzengraben	N 22449,4712 22439,4838
 Katzengraben	NN 22439,4838 22433,4887
-Katzengrabenbrücke	NN 22433,4887 22484,4868 22581,4932
+#: alias: Katzengrabenbrücke:
+Katzengrabensteg	NN 22433,4887 22484,4868 22581,4932
 (Am Krusenick)	NN 22581,4932 22632,4958 22726,5332
 Kietzer Str.	NN 22396,4464 22358,4521 22312,4593
 (Am Stichkanal)	NN 22832,4491 22702,4592 22585,4634 22472,4572
