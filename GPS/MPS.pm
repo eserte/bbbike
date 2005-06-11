@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: MPS.pm,v 1.5 2005/04/16 12:55:12 eserte Exp $
+# $Id: MPS.pm,v 1.7 2005/06/06 22:19:25 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2005 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,9 +16,14 @@ package GPS::MPS;
 
 use strict;
 use vars qw($VERSION $DEBUG);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 use constant SEEK_CUR => 1; # no Fcntl for 5.005 compatibility
+
+use vars qw($magic);
+$magic = qr{^MsRc[df]\0};
+
+#$DEBUG=100;#XXXX
 
 sub check {
     my $self = shift;
@@ -27,7 +32,7 @@ sub check {
 
     open(F, $file) or return 0;
     read(F, my $buf, 6);
-    return 0 if ($buf ne "MsRcd\0");
+    return 0 if ($buf !~ $magic);
     1;
 }
 
@@ -60,7 +65,7 @@ EOF
 
     my $buf;
     read($fh, $buf, 6);
-    if ($buf ne "MsRcd\0") {
+    if ($buf !~ $magic) {
 	die "Wrong magic";
     }
 
@@ -74,6 +79,10 @@ EOF
 	    $version = 1; # old
 	} elsif ($buf eq 'Df') {
 	    $version = 2; # new
+	} elsif ($buf eq 'Di') {
+	    $version = 2; # XXX?
+	} elsif ($buf eq 'Dl') {
+	    $version = 3; # even newer
 	} else {
 	    warn "Unknown version $buf";
 	}
@@ -84,6 +93,19 @@ EOF
     my $len = unpack("V", $buf);
     warn "Len=$len\n" if $DEBUG;
     read($fh, $buf, $len+1);
+
+    if ($version == 3) {
+	my($date, $time) = split /\0/, substr($buf, 7);
+	warn "Datum=$date, Zeit=$time\n" if $DEBUG;
+
+	my $mapsource = "";
+	while(1) {
+	    read($fh, my $ch, 1);
+	    last if $ch eq "\0";
+	    $mapsource .= $ch;
+	}
+	warn "Mapsource=$mapsource\n" if $DEBUG;
+    }
 
     #warn $buf;
 #      read($fh, $buf, 6);
@@ -108,7 +130,7 @@ EOF
 	    my($name) = substr($buf, 1) =~ /^([^\0]+)/;
 	    warn "Waypoint <$name>\n" if $DEBUG;
 	    $buf = substr($buf, length($name)); # skip name
-	    $buf = substr($buf, 12*2+($version==2?1:0)); # skip 00 and ff
+	    $buf = substr($buf, 12*2+($version>=2?1:0)); # skip 00 and ff
 	    my $coords = substr($buf, 0, 16);
 	    my @c = unpack("V*", $coords);
 	    my $lat = semicirc_deg($c[0]);
@@ -124,18 +146,29 @@ EOF
 	} elsif ($type eq 'T') {
 	    my $dist = 0;
 	    my($name) = substr($buf, 1) =~ /^([^\0]+)/;
-#	    warn "Track $name\n";
+	    warn "Track $name\n" if $DEBUG;
 	    $out .= "!T:\t$name\n";
 	    $last_type = 'T';
 	    $buf = substr($buf, length($name));
 	    my($lastx,$lasty);
-	    while($buf =~ /(.{31})/gs) {
+	    my $reclen = $version <= 2 ? 31 : 24;
+#XXX del
+# for (0..$reclen) {
+# my$rec=substr($buf,$_,$reclen);
+# my @f = unpack("V*", substr($rec, -5*4));#-5
+# #warn join(", ", @f),"\n" if $DEBUG;
+# my $lat = semicirc_deg($f[0]);
+# my $long = semicirc_deg($f[1]);
+# warn "$lat $long\n";
+# }
+	    while($buf =~ /(.{$reclen})/gs) {
 		my $rec = $1;
-		#warn $rec;
-		my @f = unpack("V*", substr($rec, -5*4));#-5
-#		warn join(", ", @f),"\n";
+		#warn $rec if $DEBUG;
+		my @f = unpack("V*", $version <= 2 ? substr($rec, -5*4) : substr($rec, 11));
+		#warn join(", ", @f),"\n" if $DEBUG;
 		my $lat = semicirc_deg($f[0]);
 		my $long = semicirc_deg($f[1]);
+#XXX del: warn "$lat/$long";
 		$out .= "\t31-Dec-1989 01:00:00\tN$lat\tE$long\t0.0\n";
 		if (0) {
 		    #warn join(", ", unpack("c*", pack("V", $f[1])));

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Heavy.pm,v 1.5 2005/05/14 10:24:14 eserte Exp $
+# $Id: Heavy.pm,v 1.6 2005/06/06 22:18:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ package Route;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 # XXX Msg.pm
 
@@ -66,7 +66,8 @@ sub as_strassen {
 
     my $s = Strassen->new_from_data
 	($name . "\t" . $cat . " " .
-	 join(" ", map { $_->[0].",".$_->[1] } @$realcoords_ref)
+	 join(" ", map { $_->[0].",".$_->[1] } @$realcoords_ref) .
+	 "\n"
 	);
     $s;
 }

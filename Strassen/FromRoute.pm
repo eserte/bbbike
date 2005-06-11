@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: FromRoute.pm,v 1.1 2005/06/03 20:10:04 eserte Exp $
+# $Id: FromRoute.pm,v 1.2 2005/06/11 22:31:35 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.

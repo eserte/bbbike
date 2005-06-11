@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbr2bbd,v 1.7 2005/05/14 10:24:59 eserte Exp $
+# $Id: bbr2bbd,v 1.8 2005/06/06 21:32:55 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -27,10 +27,10 @@ use Route;
 use Route::Heavy;
 
 if (!GetOptions(\%opt,
-		"cat=s", "name=s", "dest=s", "f", "usebasename")) {
+		"cat=s", "name=s", "dest=s", "f", "usebasename", "route-data", "data-route")) {
     die "usage:
     $0 [-cat category] ] [-dest directory] [-name routename]
-       [-usebasename] [-f] [from to | files ...]
+       [-usebasename] [-f] [-data-route] [-route-data] [from to | files ...]
 ";
 }
 
@@ -79,9 +79,16 @@ sub convert_one_file {
 
     my $first_line = scalar <IN>;
     my $conversion;
+    if ($opt{"data-route"}) {
+	$conversion = "bbd2bbr";
+    } elsif ($opt{"route-data"}) {
+	$conversion = "bbr2bbd";
+    } else {
+	# guess conversion
+    }
     my @in_data;
     if (defined $first_line && $first_line =~ /^\#BBBike\s+route/) {
-	$conversion = "bbr2bbd";
+	$conversion = "bbr2bbd" if !defined $conversion;
     } else {
 	if (defined $first_line && $first_line =~ /^\s*\#/) {
 	    while(<IN>) {
@@ -91,12 +98,13 @@ sub convert_one_file {
 		}
 	    }
 	}
-	if (defined $first_line && $first_line =~ /^([^\t]*)\t(\S+)\s+(.*)$/) {
-	    $conversion = "bbd2bbr";
+	# This heuristic may fail...
+	if (defined $first_line && $first_line =~ /^([^\t]*)\t(\S+)\s+([-+0-9].*)$/) {
+	    $conversion = "bbd2bbr" if !$conversion;
 	    @in_data = ($1, $2, $3);
 	} else {
 	    #warn "<$in_file>: Unknown input file format, assuming Route file";
-	    $conversion = "bbr2bbd";
+	    $conversion = "bbr2bbd" if !$conversion;
 	}
     }
     close IN;

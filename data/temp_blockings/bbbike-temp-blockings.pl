@@ -1983,4 +1983,12 @@ EOF
 userdel	q4 11401,84932 11423,85183
 EOF
      },
+     { from  => 1118091230, # 2005-06-06 22:53
+       until => 1136069999, # 2005-12-31 23:59
+       text  => 'Bouchéstraße (Treptow) in beiden Richtungen zwischen Kiefholzstraße und Am Treptower Park Fahrbahnerneuerung, Straße vollständig gesperrt (bis Ende 2005)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 13867,9864 13601,9572
+EOF
+     },
     );
