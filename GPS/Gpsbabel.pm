@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Gpsbabel.pm,v 1.3 2005/05/25 21:41:10 eserte Exp $
+# $Id: Gpsbabel.pm,v 1.3 2005/05/25 21:41:10 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -23,7 +23,9 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 use BBBikeUtil qw(is_in_path);
 
 my %magics =
-    ('pcx' => ['^H  SOFTWARE NAME & VERSION']);
+    ('pcx' => ['^H  SOFTWARE NAME & VERSION'],
+     'gpx' => ['^<\?xml\s+'],
+    );
 
 sub magics {
     map { @$_ } values %magics;

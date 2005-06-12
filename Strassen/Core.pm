@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.54 2005/06/06 22:18:55 eserte Exp $
+# $Id: Core.pm,v 1.54 2005/06/06 22:18:55 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -91,7 +91,7 @@ sub new {
 	} elsif ($filename =~ /waypoint\.txt$/) {
 	    require Strassen::WaypointPlus;
 	    return Strassen::WaypointPlus->new($filename, %args);
-	} elsif ($filename =~ /\.mps$/i) {
+	} elsif ($filename =~ /\.(mps|gpx)$/i) {
 	    require Strassen::FromRoute;
 	    return Strassen::FromRoute->new($filename, %args);
 	}

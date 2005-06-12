@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.9 2005/05/12 23:15:37 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.10 2005/06/11 22:37:15 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,7 +28,7 @@ sub teaser {
 			     #teaser_perltk(),
 			     teaser_mapserver(),
 			     teaser_routen(),
-			     teaser_sternfahrt(),
+			     #teaser_sternfahrt(),
 			     #teaser_dobli(),
 			    );
     my $sub = "teaser_" . $teasers_optional[int(rand(@teasers_optional))];

@@ -326,14 +326,7 @@ userdel	q4 1872,-1118 1680,-1011
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1118354400,
-         'text' => 'Rosenfelder Straße Richtung Frankfurter Allee zwischen Skandinavische Straße und Frankfurter Allee Baustelle, Straße gesperrt, Dauer: 09.05.2005, 09.00 Uhr bis 09.06.2005 ',
-         'from' => 1115535600,
-         'data' => 'userdel	q4; 17363,11972 17249,11802
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1141167600,
          'text' => 'B 115; (Forster Str.); OD Döbern grundhafter Straßenausbau Vollsperrung 18.05.2005-28.02.2006 ',
@@ -387,6 +380,14 @@ userdel	q4 1872,-1118 1680,-1011
          'data' => 'userdel	q4 11401,84932 11423,85183
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1136069999,
+         'text' => 'Bouchéstraße (Treptow) in beiden Richtungen zwischen Kiefholzstraße und Am Treptower Park Fahrbahnerneuerung, Straße vollständig gesperrt (bis Ende 2005)',
+         'from' => 1118091230,
+         'data' => 'userdel	2 13867,9864 13601,9572
+',
+         'type' => 'gesperrt'
        }
      
 );

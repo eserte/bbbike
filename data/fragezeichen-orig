@@ -4,7 +4,7 @@
 Leipziger Straße zwischen Leipziger Platz und Wilhelmstraße (entweder beidseitig oder nur auf der Südseite)	? 8733,11524 9046,11558
 Hochstr.	? 8456,15235 8607,15426 8865,15772 8923,15850 9059,16038
 #: XXX nach Meldung eines Benutzers noch nicht (Anfang April 2005):
-Wiesenstr.	? 8607,15426 8283,15727 8179,15829 8140,15859 7960,15801
+Wiesenstr.	? 8607,15426 8518,15506 8283,15727 8179,15829 8140,15859 7960,15801
 Mollstr.	? 11905,13069 11839,13083 11456,13286 11319,13379 11170,13475
 Stralauer Str.	? 11351,12221 11304,12234 11139,12243 11094,12243 10946,12241 10825,12271 10780,12297 10732,12355
 Alt-Moabit zwischen Kirch- und Paulstraße	? 7192,13036 6882,13088 6786,13106 6685,13126
@@ -100,16 +100,26 @@ Ungefährer Verlauf der Radroute Schloßlatz - Wannsee (Anfang)	? 10272,12307 1017
 Rummelsburger See - Alt Stralau: genaue Wegführung (am Ufer?)?	? 15314,10121 15211,9982 15472,9720
 #: XXX Eintrag von Torsten Fleischmann:
 Radweg in Zepernick, beidseitig, auf der südöstlichen Seite: genauer Beginn- und Endpunkt?	? 18292,26726 19364,27415 19475,27877 20017,28297 20472,28570
-#: XXX Eintrag von Stefan Walther OK, aber keine Verknüpfung zum Netz:
+#: XXX Eintrag von Stefan Walther OK, aber keine Verknüpfung zum Netz (2x!):
 Indrastr.: Kopfsteinpflaster	? 12233,18170 12269,18042 12245,17888
 #: XXX Eintrag von Marlen Caemmerer OK; aber keine Verknüpfung zum Netz:
 Okarinastr.: Schotter, Mulden in der Straße, Q3	? 11571,20392 11434,20643 11678,20882
 #: XXX Eintrag von Sandy Kusche OK, aber keine Verknüpfung zum Netz, außerdem in Brandenburg:
 Mahlsdorfer Allee (Waldesruh, Hoppegarten): sehr guter Asphalt, Q0	? 25282,9034 25745,9081 25892,9098
-#: XXX Eintrag von Lavinia Meier-Ewert OK, aber keine Verknüpfung zum Netz (Allee Charles de Gaulle aufnehmen?)
-Rue Diderot: Asphalt, Q0	? 4559,21681 4617,21590
 #: XXX anonymer Eintrag OK, aber keine Verknüpfung zum Netz
 Gelsenkircher Str.: Asphalt, Q0, wenig Autoverkehr	? -5562,15187 -5109,15137
+#: XXX Eintrag von Dirk Schmidt OK, aber keine Verknüpfung zum Netz:
+Vietzer Zeile: guter Asphalt, Q0	? 2818,19606 2937,19753
+#: XXX Eintrag von Matthias Grähn OK, aber keine Verknüpfung zum Netz:
+Kilianistr.: mäßiges Kopfsteinpflaster, Q2	? 18128,6559 18253,6515 18475,6478
+#: XXX Eintrag von jesus (marycue) OK, aber keine Verknüpfung zum Netz (außerdem Widerspruch schlechtes K - 18 km/h):
+Florastr. (Karow): Kopfsteinpflaster, Q2	? 14931,22868 14521,23181
+#: XXX Eintrag von anonymous OK, aber keine Verknüpfung zum Netz:
+Crusemarkstr.: Beton, Q1, Einbahnstr. Richtung Süden	? 10712,18975 10825,18634
+#: XXX Eintrag von anonymous OK, aber keine Verknüpfung zum Netz:
+Greulichstr.: mäßiges Kopfsteinpflaster, Q2	? 8156,1100 8528,1846
+#: XXX Eintrag von Roland Maier OK, aber keine Verknüpfung zum Netz:
+Straße 59: fester Sandweg, sehr uneben, Q2	? 12484,20996 12537,20856
 Borussiastr.: aus dem Bus heraus sah es so aus, als ob hier *kein* Kopfsteinpflaster ist, vielleicht David nochmal fragen?	? 9241,6791 9706,6802
 Stadtplazu am Zwirngraben: ist er hier?	? 10286,13051 10236,13016 10316,13028
 Bürgerpark Pappelfriedhof: ist er hier?	? 11121,15327 11182,15284 11151,15233 11101,15263 11115,15284 11098,15298
@@ -157,7 +167,10 @@ Stolper Weg: Qualität?	? -2743,-934 -4003,-684 -4153,-621 -4459,-157
 Arkenberge: wo genau ist die Durchfahrt für Autos gesperrt	? 10402,26369 10318,26399 10203,26387 10120,26363
 Neuendorf (Nl) wird ab 2002-08-18 geschlossen; neu: 'Cottbus-Willmersdorf Nord' und 'Teichland'. Grund: Umverlegung der Trasse (betr. RE1 und RE18)	?? 80691,-66664 80603,-64961 81213,-63504 82460,-63229
 Hindenburgdamm - Teltowkanal: existiert eine Verbindung durch den Schloßpark Lichterfelde? Qualität?	? 4596,3738 4970,3684
-Waldpark Steinberg: laut ADFC-Karte befahrbar, Qualität?	? 5138,21358 4717,21199 4412,21154 4208,21159 3979,21211 3718,21489 3553,21665 3406,21911 3139,22201
+Entlang der Industriebahn: laut ADFC-Karte befahrbar, Qualität?	? 5138,21358 4717,21199 4412,21154 4208,21159
+#: XXX laut anonymen Eintrag "mäßig":
+Am Packereigraben: laut ADFC-Karte befahrbar, Qualität?	? 4208,21159 3979,21211
+Waldpark Steinberg: laut ADFC-Karte befahrbar, Qualität?	? 3979,21211 3718,21489 3553,21665 3406,21911 3139,22201
 Waldweg über den Beyschlagtunnel: befahrbar, Qualität?	? 506,22266 742,22666
 Soldiner Str.: laut ADFC mäßig geeignet	? 9096,16976 9317,16882 9604,16760
 Pankeweg durch Wedding: Durchfahrt möglich? Qualität?	?? 8153,14769 8235,14835 8270,15233 8348,15474 8155,15648 8140,15859 8187,15965 8334,16282 8420,16365 8517,16395 8592,16406 8759,16684 8904,17059 8983,17195 9131,17664 9084,17678 9140,17921
@@ -395,12 +408,8 @@ Wolletz Richtung Norden: laut "Regio-Cart" gut geeignet	? 43095,69473 43250,7150
 Wilmersdorf - Schmiedeberg: laut "Regio-Cart" gut geeignet	? 43151,79054 45600,81525 46075,81712 46197,82609 46425,82825 46677,82770
 Bergstr., Bansin: Einbahnstraße Richtung Nordwesten?	? 57665,174803 57506,175000
 Bansin: Name der Straße (Badstr.? Schulstr.?)	? 57448,174956 57162,174737 57031,174737
-Karnin - Westklüne: Fahrradroute laut Kompass-Karte	? 41074,161393 41700,161487 42400,161212
 Westklüne - Ostklüne: Fährt hier eine Fähre? Wie oft?	? 42400,161212 42700,161025
-Ostklüne - Dargen: Fahrradroute laut Kompass-Karte	? 42700,161025 43887,160887 45137,161687 45262,162125 44925,163225 46187,163150 47075,163387 48325,164025 49150,164087 51094,165141
-Welzin - Usedom: Fahrradroute laut Kompass-Karte	? 44925,163225 43164,164582
-Dargen - Katschow: Fahrradroute laut Kompass-Karte	? 51094,165141 50723,166073 50337,166737 51034,167286 51481,167900
-Usedom - Suckow, Abkürzung: Fahrradroute laut Kompass-Karte, Qualität (wahrscheinlich Waldweg Q2)?	? 44290,165418 44836,167839
+Dargen - Katschow: Fahrradroute laut Kompass-Karte	? 51162,165171 50715,166093 50337,166737 51034,167286 51565,167859
 Gellenthin: Fahrradroute laut Kompass-Karte	? 38459,162337 39037,162387 39930,160816
 Wie heißt die Straße genau: Walther-Nernst-Str. oder Walther-Nemst-Str?	? 19562,2971
 Stücken - Tremsdorf: Qualität?	? -10978,-17764 -10562,-16912 -10175,-16537 -9675,-16375 -9200,-15550 -9035,-15135 -8680,-14704
@@ -515,25 +524,23 @@ Grünstr.: Qualität? für Autofahrer gesperrt?	? 22111,4562 22162,4546 22312,4593
 Berlin-Usedom am Werbellinsee: laut Tsp vom 2004-10-04 wird hier 2005 ein Radweg gebaut	?::inwork 31000,61437 30784,60950 30778,60221 30671,59984 30625,59562 30384,59443 29884,58862 29996,58615 29856,58262 29771,57837 29812,57628 29056,57503 28199,57257 27851,57084 27546,56968 27359,56787 27137,56650 26792,56558 26404,56518 26145,56499 26037,56412 26028,56303
 Zichow-Lindenwegsiedlung: Qualität?	? 54500,87934 51992,88068
 Parsteiner Ring: Qualität laut ADFC-Karte gut	? 22406,16309 22428,16462 22321,16553 22250,16468 22215,16343
-Glambecker Ring: Qualität laut ADFC-Karte gut	? 21824,16506 21885,16494 22187,16437 22278,16590 22050,16781 21892,16841
 Parsteiner Ring - Glambecker Ring: Verbindung existiert laut ADFC-Karte	? 22321,16553 22278,16590
 zwischen Rudolf-Leonhard-Str. und S Raoul-Wallenberg-Str.: Verbindung existiert laut ADFC-Karte und hat eine gute Qualität	? 21210,16481 20865,16440 20543,16488 20265,16496 20181,16325 20111,16316
 Prötzeler Ring und Trappenfelder Pfad: Qualität laut ADFC-Karte gut	? 21980,15967 22134,15615 22073,15172
 Am Ahrensfelder Berg, westlicher Weg: Qualität laut ADFC-Karte gut	? 22690,16383 22350,16690 22293,16818 22002,17492
 Flämingstr.: Qualität laut ADFC-Karte gut	? 21451,18415 21131,17784
 entlang der neuen Wuhle: Qualität laut ADFC-Karte gut, wie ist die Verbindung zur Märkischen Allee und Wuhletalstr.?	? 22002,17492 21579,17559 21131,17784 20965,17862
-Eichhorster Str.: Qualität laut ADFC-Karte gut	? 21451,18415 21543,18571 21853,18700
+Eichhorster Str.: Qualität laut ADFC-Karte gut	? 21451,18415 21543,18571 21662,18621 21853,18700
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23279,14785 23378,14528
 Marchwitzastr. - Langhoffstr.: laut ADFC-Karte gut geeignet, wo führt der Weg genau entlang, Einschränkung wegen Fußgängern?	? 19897,13535 19826,14070 19813,14479
 Beilsteiner Str.: laut ADFC-Karte im südlichen Abschnitt gut geeignet, Einbahnstraße!	? 18749,12413 18875,13473 18859,14048 18998,14089 19025,14037
 Albertinenstr./Amalienstr.: laut ADFC-Karte gut geeignet, im Mittelteil Einbahnstraße	? 14067,16127 14153,16528 13990,16629 13814,16759 13589,16965 13361,17172
-Gäblerstr.: laut ADFC-Karte gut geeignet	? 13146,17016 13029,17185 13023,17379 13011,17470
 Thiesstr.: laut ADFC-Karte im westlichen Teil gut, im östlichen Teil mäßig geeignet	? 13023,17379 13115,17410 13251,17525 13290,17570
 Neukirchstr.: laut ADFC-Karte gut geeignet, Zugang zur Prenzlauer Promenade vorhanden, Zugang zur Blankenburger Str. vorhanden?	? 12896,18317 12752,18387 12562,18483 12002,18768
 Bleicheroder Str./Stiftsweg: Qualität laut ADFC-Karte gut, Tram auf Fahrbahn? Einbahnstraße beachten	? 11937,19175 11725,19007 11268,18851 11025,18531
 Galenusstr.: laut ADFC-Karte gut geeignet	? 11915,19580 11275,19250 11164,19238 11054,19226
-Am Schloßpark: Qualität? für Radfahrer befahrbar? Autoverkehr vorhanden?	? 11054,19226 10775,19054 10496,18704
+Am Schloßpark: Qualität? für Radfahrer befahrbar? Autoverkehr vorhanden?	? 11054,19226 10775,19054 10712,18975 10496,18704
 Birkenallee (Pankow): Qualität?	? 9750,20492 9655,20703
 Nordendstr.: laut ADFC-Karte westlicher Teil mäßig, östlicher Teil gut geeignet	? 10026,20576 9750,20492 9174,20316 8409,19956 8415,19910
 Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11326,23923 10889,23381 10775,23253 10396,23128 9890,22932
@@ -541,8 +548,6 @@ Griebenowstr.: laut ADFC-Karte gut geeignet	? 10365,14372 10405,14425 10517,1450
 Wriezener/Osloer Str.: ist das Abbiegen wegen der Straßenbahn möglich?	? 9210,16638
 Graunstr/Ramlerstr.: Qualität? laut ADFC-Karte nicht geeignet	? 10022,15203 10012,15389 9917,15613 9865,15728 9652,15738 9314,15695
 Prenzlauer Allee -> Hiddenseer Str.: Abbiegen für Radfahrer möglich?	? 11822,15193 11655,15253
-#: XXX Jana Eberhart meint "asphaltiert", ist sich aber nicht sicher:
-Borsigstr.: Qualität?	? 9517,13571 9394,13754 9334,13843
 Groß-Berliner Damm: ein kurzes Stück (50m) ist noch Baustelle, voraussichtlich 2005-12-31 fertig	? 18058,4627 18850,3783 19334,3268
 Luckenwalder Str.: Qualität (wahrscheinlich Asphalt...)?	? 8634,10426 8393,10505
 Schleswiger Ufer: Qualität? Treppen?	? 5719,12253 5951,12536
@@ -756,10 +761,9 @@ Kavalierstr.: Einbahnstraße, auch für Radfahrer?	?; 10625,18831 10721,18575
 Am Hügel: mäßiger Belag?	? 4265,20799 4107,21059
 Theodor-Loos-Weg: Qualität?	? 15304,1724 15450,1768 15620,1764 15671,1923 15781,1928 15818,1834 15849,1807
 Brauerstr.: Einbahnstraße auch für Radfahrer?	?; 5167,2160 5317,2345
-Kachlin - Dargen: Qualität?	? 52630,166799 52484,166503 52356,165540 52110,164995
 Görke - Bossin: Qualität?	? 54147,165600 54696,164496
-Stolpe - Bundesstraße: Qualität?	? 47075,163387 47022,165745 47304,167015 48544,167874
-Welzin - Stolpe: Qualität?	? 45262,162125 46187,163150
+Stolpe - Bundesstraße: Qualität? Im Süden Fortsetzung des sandigen Feldweges	? 46756,164815 47022,165745 47304,167015 48544,167874
+Welzin - Stolpe: Qualität?	? 45265,161990 46068,163106
 Heringsdorf - Gothen: Qualität?	? 58469,173196 57345,171894 56872,172049
 Wolgast - Neeberg: Qualität?	? 33046,183937 33315,183598 34274,182273 35047,182022
 Neeberg - Krummin: Qualität?	? 35047,182022 36973,183302
@@ -772,3 +776,14 @@ Schwarzer Weg: möglicherweise ist das letzte Stück zwischen Grenzweg und Nalepas
 #: XXX Teil des Berliner Fahrradroutennebennetzes?
 Boothstr.: Qualität?	? 4959,3194 5108,3104 5503,2922
 Bruno-Walter-Str.: Qualität?	? 5516,2873 5614,2822 5774,3007 5853,3050
+Stolpe - Usedom: Qualität des Radweges? In Stolpe wahrscheinlich Asphalt/Verbundsteinpflaster, westlich von Stolpe wahrscheinlich Asphalt? Genaue Koordinaten?	? 47621,163737 46987,163775 43164,164582
+Bansin, Fischerweg: geht es weiter zur Bergstr.?	? 56934,175371 57000,175587
+Pudagla - Schmollensee: Radweg in Bau (asphaltiert, auf der westlichen Seite, gesehen: 2005-06)	? 52393,174756 52613,175587 52866,176160
+Matthiasstr./Landsberger Allee: Linksabbiegen möglich?	? 12850,13071 12808,13181 12727,13159
+Friedrich-Wilhelm-Str.: Einbahnstraße nur für Autofahrer oder auch für Radfahrer?	? 8371,5896 8282,5909
+#: XXX widersprüchliche Angaben: mäßiger Beton Q1 (by anonymous) und guter Asphalt Q0 (by openbc...), weiterhin 
+Tiroler Str.: Qualität?	? 10862,17087 10508,17094 10128,17100
+Trelleborger Str.: kann die Wisbyer Str. hier überquert werden? Geht die Trelleborger Str. südlich der Wisbyer Str. weiter?	? 11287,16515 11289,16423 11253,16296
+Schonensche Str.: Qualität östlich der Trelleborger Str.?	? 11287,16515 11450,16490 11673,16456
+# weiter bearbeiten: http://www/~eserte/tmp/newstreetformdata/3713 Gawanstr.
+# bis: http://www/~eserte/tmp/newstreetformdata/3721 Ahrenshooper Str.
