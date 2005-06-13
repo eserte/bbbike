@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.170 2005/06/04 10:08:57 eserte Exp $
+# $Id: bbbike,v 3.170 2005/06/04 10:08:57 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -8542,7 +8542,7 @@ sub outline_text {
 sub plot_mount {
     my $mount;
     if ($str_draw{'mount'}) {
-	my $comm = Strassen->new("comments_mount");
+	my $comm = Strassen->new(get_strassen_file("comments_mount"));
 	my $comm_mount = Strassen->new_copy_restricted($comm, -grep => ["St;"]);
 	$mount = MultiStrassen->new($str_file{"mount"},
 				    $comm_mount);
