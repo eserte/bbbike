@@ -96,12 +96,13 @@ Julie-Wolfthorn-Str.: neu	? 9037,13998 9157,14056
 Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 8934,5095 9025,4871
 Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 9080,4371 9107,4103 9106,3986 9021,3878
 #: by: ^^^
-Ungefährer Verlauf der Radroute Schloßlatz - Wannsee (Anfang)	? 10272,12307 10170,12261 10109,12238 10084,12228 9959,12180 9890,12161 9907,12055 9925,11947 9927,11945 9925,11947 9878,11857 9672,11833 9538,11818 9539,11812 9538,11818 9555,11715 9569,11631 9571,11631
 Rummelsburger See - Alt Stralau: genaue Wegführung (am Ufer?)?	? 15314,10121 15211,9982 15472,9720
 #: XXX Eintrag von Torsten Fleischmann:
 Radweg in Zepernick, beidseitig, auf der südöstlichen Seite: genauer Beginn- und Endpunkt?	? 18292,26726 19364,27415 19475,27877 20017,28297 20472,28570
+#: XXX Eintrag von Diethelm Wandelburg OK, aber keine Verknüpfung zum Netz:
+Gawanstr.: Beton, Q0	? 1764,24610 1564,24678 1400,24693 1310,24681 1132,24818
 #: XXX Eintrag von Stefan Walther OK, aber keine Verknüpfung zum Netz (2x!):
-Indrastr.: Kopfsteinpflaster	? 12233,18170 12269,18042 12245,17888
+Indrastr.: Kopfsteinpflaster, Q2	? 12233,18170 12269,18042 12245,17888
 #: XXX Eintrag von Marlen Caemmerer OK; aber keine Verknüpfung zum Netz:
 Okarinastr.: Schotter, Mulden in der Straße, Q3	? 11571,20392 11434,20643 11678,20882
 #: XXX Eintrag von Sandy Kusche OK, aber keine Verknüpfung zum Netz, außerdem in Brandenburg:
@@ -465,7 +466,6 @@ Krummensee - Wegendorf: laut "Berliner Umland" unterschiedliche Qualität (gut - 
 #: XXX Die Existenz wurde von Andre K. bestaetigt:
 Radweg entlang der Straßenbahntrasse zwischen Lea-Grundig-Str. und Ahrensfelde: genaue Wegführung? Qualität? Wo kommt man in Ahrensfelde heraus?	? 21343,16713 21375,16926 21542,17465 21579,17559 21836,18214 21928,18403 21853,18700 21830,19016
 Hegemühlenstr. - Herrensee: genaue Wegführung? Qualität?	? 42850,17643 42806,17462 42218,17200 42175,16962 41993,16706 41900,16100 41725,16000 41675,15906 41681,15915
-Karl-Liebknecht-Str.: laut bln.verkehr-Artikel Radweg?	?; 11087,13359 11149,13442 11170,13475
 Liepe - Bralitz: Qualität (vermutlich gut?)?	? 47975,51325 48237,50875 48787,50775 49300,50212 49925,49887 50325,49362 49912,48925 50475,48450 50572,48457
 Hohensaaten - Hohenwutzen: Qualität (vermutlich gut?)?	? 57730,52179 57962,51650 57875,50625 58012,50325 57900,50150 57813,49341
 Oderdeich: Qualität (vermutlich gut?)?	? 57813,49341 58325,49275 58312,48812 58487,48725 58562,48037 59687,47325 62612,46962 64550,46737 65037,46437 65937,45000 68012,42975
@@ -653,8 +653,6 @@ Schweinfurthstr.: Qualität: Kopfsteinpflaster oder Asphalt, unterschiedliche Bel
 Pirolstr.: loser Sandweg (Q2): auf Biesdorfer oder Karlshorster Seite?	? 20716,10007 20140,10053
 Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126443 -112,126528 -62,126684 -96,126768 -231,126900 -428,127368 -493,127450 -671,127478
 Dinnendahlstr.: laut anonymen Eintrag eine Kopfsteinpflasterstraße, stimmt das?	? 9123,-1321 9257,-1412 9425,-1440
-#: XXX asphaltiert aber 18 km/h?
-Radickestr.: laut anonymen Eintrag eine asphaltierte Straße, stimmt das?	? 20071,3251 20693,3667 20898,3785
 Eichbuschallee: Teil der Eichbuschallee im Plänterwald: Qualität?	? 16136,7886 16440,8128
 Hof Sternhagen - Lindenhagen: Qualität? (Deckenerneuerung 5/2005)	? 35466,92211 34375,92125 33537,92937 33412,93612 33342,94000
 Beenz - Gollmitz: Qualität?	? 30837,95225 30737,95487 30175,95712 29712,96050 28400,96675 29012,97237 29287,97825 29900,99025 30150,99175 30284,99405
@@ -694,7 +692,6 @@ Lange Str. (Lichterfelde): Qualität?	? 5865,1975 5791,1927 5656,1882 5519,1831 5
 Torweg (Staaken): Qualität? Einbahnstraße zwischen Fachinger und Oberdorfer Str. auch für Radfahrer?	? -6398,14486 -6876,14529 -7154,14532 -7385,14530 -7931,14606 -8085,14618 -8264,14642 -8606,14696
 Gabelberger Str.: Linksabbiegen in die Frankfurter Allee möglich?	? 14381,12205
 Matternstr.: Linksabbiegen in die Petersburger Str. möglich?	? 13578,12903
-Zimmerstr.: wie sieht die Vorfahrtsregelung der Zimmerstr. aus?	? 10065,11383 9945,11371 9737,11349 9603,11328 9473,11316
 Ausschilderung Ida-Wolff-Platz oder Großbeerenstr.?	? 9250,10563 9184,10537
 #: unverified_by: Tagesspiegel-Beilage zu Gransee
 Gransee - Meseberg: Qualität?	? -7696,66033 -8112,65637 -8762,65250 -9437,65037 -9912,64300 -10287,64175 -10675,63237 -11088,62914
@@ -785,5 +782,9 @@ Friedrich-Wilhelm-Str.: Einbahnstraße nur für Autofahrer oder auch für Radfahrer
 Tiroler Str.: Qualität?	? 10862,17087 10508,17094 10128,17100
 Trelleborger Str.: kann die Wisbyer Str. hier überquert werden? Geht die Trelleborger Str. südlich der Wisbyer Str. weiter?	? 11287,16515 11289,16423 11253,16296
 Schonensche Str.: Qualität östlich der Trelleborger Str.?	? 11287,16515 11450,16490 11673,16456
-# weiter bearbeiten: http://www/~eserte/tmp/newstreetformdata/3713 Gawanstr.
-# bis: http://www/~eserte/tmp/newstreetformdata/3721 Ahrenshooper Str.
+#: XXX: laut anonymen Eintrag "gute Qualität":
+Auf dem Grat: Qualität?	? 1644,5397 1965,5337 2062,5314 2075,5075 2081,4940
+#: XXX: widersprüchliche Angaben 
+Gäblerstr.: Beton oder Asphalt	? 13011,17470 13023,17379 13029,17185 13146,17016
+#: XXX: laut anonymen Eintrag "mäßig"
+Pfleidererstr.: Qualität?	? 3050,3316 2854,3373 2778,3392

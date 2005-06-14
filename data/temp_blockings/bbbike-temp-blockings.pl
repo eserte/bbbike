@@ -419,11 +419,17 @@ EOF
        text  => 'Liesenstr. (Mitte) Richtung Süden zwischen Gartenstr. und Chausseestr. Baustelle, Fahrtrichtung gesperrt (bis 11.06.2004)',
        type  => 'handicap',
      },
-     { from  => 1088157600, # 2004-06-25 12:00
-       until => 1088287200, # 2004-06-27 00:00
-       file  => 'oberbaumbruecke.bbd',
-       text  => 'Oberbaum-Brückenfest, 26.06.2004 von 12.00 Uhr bis 24.00 Uhr',
-       type  => 'handicap',
+     { from  => 1119520800, # 2005-06-23 12:00
+       until => 1119736799, # 2005-06-25 23:59
+       text  => 'Oberbaumbrückenfest, Dauer: 25.06.2005 12:00 Uhr bis 24:00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 13305,10789 13332,10832
+userdel	2 13305,10789 13206,10651
+userdel	2 13077,10747 13206,10651
+userdel	2 13082,10634 13178,10623
+userdel	2 13178,10623 13206,10651
+EOF
      },
      { from  => 1086818400, # 2004-06-10 00:00
        until => 1087164000, # 2004-06-14 00:00
@@ -1989,6 +1995,55 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 13867,9864 13601,9572
+EOF
+     },
+     { from  => 1119391200, # 2005-06-22 00:00
+       until => 1123365600, # 2005-08-07 00:00
+       text  => 'B 246; zw. Christinendorf und Trebbin Anbind. neue Brücke Vollsperrung 23.06.2005-06.08.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 1691,-21721 1271,-21606
+EOF
+     },
+     { from  => 1119736800, # 2005-06-26 00:00
+       until => 1130709600, # 2005-10-30 23:00
+       text  => 'K 6152; (Gussower Str.); OD Gräbendorf, ab B246 bis OA Kanal- und Straßenbau Vollsperrung 27.06.2005-30.10.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 31863,-18000 32922,-16523
+EOF
+     },
+     { from  => 1119477600, # 2005-06-23 00:00
+       until => 1120168800, # 2005-07-01 00:00
+       text  => 'K 7234; (Goethestr.); Bahnübergang in Dabendorf Gleisbauarbeiten Vollsperrung 24.06.2005-30.06.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 13048,-18384 13303,-18235
+userdel	2 14153,-17829 13303,-18235
+EOF
+     },
+     { from  => 1118527200, # 2005-06-12 00:00
+       until => 1129327200, # 2005-10-15 00:00
+       text  => 'L 216; (Gollin-Templin); OD Vietmannsdorf, Brücke über Mühlengraben Brückenneubau Vollsperrung 13.06.2005-14.10.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 17636,72217 17653,71852
+EOF
+     },
+     { from  => 1118959200, # 2005-06-17 00:00
+       until => 1119132000, # 2005-06-19 00:00
+       text  => 'L 23; (Mühlenstr.); OD Templin, zw. Heinestr. und M.-Luther-Str. 16. Stadtfest Vollsperrung 18.06.2005-18.06.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 15448,79614 15840,79375
+EOF
+     },
+     { from  => 1118527200, # 2005-06-12 00:00
+       until => 1119650399, # 2005-06-24 23:59
+       text  => 'Zimmerstraße Richtung Charlottenstraße zwischen Friedrichstraße und Charlottenstraße Kranarbeiten, gesperrt bis 24.06.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 9473,11316 9603,11328
 EOF
      },
     );
