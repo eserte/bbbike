@@ -1,0 +1,306 @@
+<!DOCTYPE article PUBLIC "-//FreeBSD//DTD DocBook V3.1-Based Extension//EN" [
+
+<!ENTITY % ISOlat2 PUBLIC
+       "ISO 8879:1986//ENTITIES Added Latin 2//EN">
+%ISOlat2;
+
+<!ENTITY % man PUBLIC "-//FreeBSD//ENTITIES DocBook Manual Page Entities//EN">
+%man;
+
+]>
+
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.1 2005/06/15 08:14:06 eserte Exp $ -->
+
+<article>
+ <artheader>
+  <title>HOWTO - Daten in BBBike editieren</title>
+
+  <authorgroup>
+   <author>
+    <firstname>Slaven</firstname>
+    <!-- eigentlich &ccaron; -->
+    <surname>Rezic</surname>
+    <affiliation>
+     <address>
+      <email>slaven@rezic.de</email>
+     </address>
+    </affiliation>
+   </author>
+  </authorgroup>
+
+  <pubdate>$Date: 2005/06/15 08:14:06 $</pubdate>
+
+  <copyright>
+   <year>2005</year>
+   <holder>Slaven Rezic</holder>
+  </copyright>
+
+<!--
+  <abstract>
+   <para>
+   </para>
+  </abstact>
+-->
+ </artheader>
+
+ <sect1>
+  <title>Voraussetzungen</>
+
+ <sect2>
+  <title>Betriebssystem</>
+
+<para>
+Empfehlenswert ist ein POSIX-kompatibles System, also Linux oder Unix.
+</para>
+
+<para>
+Bei Windows könnte es helfen, wenn <ulink
+url="http://www.cygwin.com">cygwin</> installiert ist (die
+Basis-Installation von cygwin zusammen mit <command>cvs</> dürfte
+ausreichen). Die Umgebungsvariable <envar>PATH</> sollte um den
+bin-Pfad von cygwin ergänzt werden (üblicherweise
+<filename>C:\cygwin\bin</>), falls das nicht automatisch bei der
+cygwin-Installation gemacht wird.
+</para>
+
+ <sect2>
+  <title>CVS</>
+
+<para>
+Ein CVS-Checkout von BBBike ist notwendig, um die neuesten Daten sowie
+die aktuellsten Entwicklungstools zu erhalten. Eine Anleitung für das
+CVS-Checkout befindet sich unter <ulink
+url="REAMDE.html#Entwicklung">Entwicklung im README</>.
+Windows-Benutzer sollten das Verzeichnis aus dem CVS-Checkout an die
+Stelle des originalen BBBike-Programmverzeichnisses verschieben, also
+üblicherweise <filename>C:\Programme\BBBike\bbbike\</>.
+</para>
+
+<!--
+XXX Nightly tarball @ sourceforge als Alternative erwähnen?
+-->
+
+ <sect1>
+  <title>BBBike starten</>
+
+<para>
+BBBike sollte mit der Option <command>-advanced</> gestartet werden
+--- entweder in der Kommandozeile angeben oder in den Option unter
+"Advanced" den Knopf "advanced" anklicken. Nach dem Ändern der Option
+ist ein Neustart erforderlich. Mit der Option <command>-advanced</>
+erhält man u.a. neue Menüs, die bei der Datenerfassung helfen.
+</para>
+
+ <sect1>
+  <title>Editiermodus</>
+
+<para>
+Einschalten des EDIT-Modus durch Klick auf den EDIT-Button unten
+rechts. Zurzeit muss man mit einer Fehlermeldung rechnen, die
+ignoriert werden kann. Die Layer werden neu geladen und zeigen jetzt
+auch Punkte für jeden Kreuzungs- und Kurvenpunkt an.
+</para>
+
+ <sect1>
+  <title>Straßen-Editor</>
+
+<para>
+Mit Klick auf das Menü Bearbeiten > Straßen-Editor wird ein Fenster
+mit einigen Editieroption geöffnet.
+
+ <sect2>
+  <title>Neue Straßen hinzufügen</>
+
+<para>
+Durch Klicken auf die Karte kann ein Straßenzug zusammengestellt
+werden. Für nicht bestehende Punkte muss man gleichzeitig die
+Shift-Taste gedrückt halten. Bei bereits bestehenden Punkten (also
+Kreuzungspunkten) darf die Shift-Taste nicht verwendet werden. Kreuzt
+eine neue Straße eine bestehende Straße, ohne dass bereits ein
+Kreuzungspunkt existiert, muss zuerst ein neuer Kurvenpunkt im
+bestehenden Straßenzug erzeugt werden (siehe <link
+linkend="insertpoint">Punkt einfügen</>). Falls es sich bei der
+Kreuzung um eine Brücke handelt, darf kein gemeinsamer Punkt erzeugt
+werden. Stattdessen sollte ein informeller Eintrag in der Datei
+<filename>brunnels</> erzeugt werden.
+
+<para>
+Nachdem die neue Straße zusammengestellt wurde, muss sie per "Add new
+to:" zu einer Datei, normalerweise <filename>strassen</> (in Berlin),
+<filename>landstrassen</> (im näheren Umland von Berlin) oder
+<filename>landstrassen2</> (im entfernteren Umland von Berlin und
+außerhalb von Brandenburg) hinzugefügt werden. Im nachfolgenden Dialog
+wird der Straßenname und die Kategorie eingetragen, die Koordinaten
+des Straßenzugs sind bereits eingetragen.
+
+ <sect3>
+  <title>Regeln bei Straßennamen</>
+
+<para id="officialstreetnames">
+In Berlin (<filename>strassen</>) werden nur "offizielle"
+Straßennamen verwendet. Offizielle Straßennamen sind in der Datei
+<filename>Berlin.coords.data</> aufgelistet.
+
+<para>
+Es kann aber durchaus sein, dass in dieser Datei Straßen fehlen. In
+diesem Fall muss die Straße mit Bezirks-/Ortsteilsname (nicht die
+neuen Superbezirksnamen verwenden!), Postleitzahl und einem
+exemplarischen Punkt eingetragen werden. "...straße" wird
+immer als "...str." abgekürzt. Straßen, die durch mehrere
+Ortsteile und/oder Postleitzahlgebiete führen, müssen dementsprechende
+viele Einträge erhalten.
+
+<para>
+Wenn eine Straße in mehreren Bezirken vorhanden ist, muß der Bezirk im
+Klammern dahinter stehen. Beispiele:
+
+<programlisting>
+    Methfesselstr.
+    Kurfürstenstr. (Schöneberg)
+    Heerstr. (Spandau, Charlottenburg)
+</programlisting>
+
+<para>
+Wenn es sich innerhalb Berlins um eine "inoffizielle"
+Straße handelt, muss die Straße in Klammern gesetzt werden. Das können
+Wege in Parks sein oder namenslose Verbindungen. Beispiele:
+
+<programlisting>
+    (Parkweg im Volkspark Friedrichshain)
+    (zur Eisenbahnbrücke)
+</programlisting>
+
+<para>
+Bei Verbindungsbezeichnungen sollte ein Bindestrich verwendet werden
+und die beiden Punkte in der richtigen Reihenfolge (genau wie der
+Straßenzug erzeugt wurde) angegeben werden. Beispiel:
+
+<programlisting>
+    (Bahndamm - Elsenstr.)
+</programlisting>
+
+<para>
+Ob die richtige Reihenfolge gewählt wurde, kann später beim Routing
+überprüft werden. Je nach Richtung sollte in der Routenliste
+
+<programlisting>
+    (Elsenstr. -) Bahndamm
+    (Bahndamm -) Elsenstr.
+</programlisting>
+
+erscheinen.
+
+<para>
+In den Landstraßendateien sollten die Straßennamen möglichst so
+gewählt werden, dass sie in der Realität bestehenden Wegweisern
+entsprechen. Ist das nicht bekannt, nimmt man die benachbarten Orte.
+Eine Straßennummerierung wird vorangestellt oder in Klammern angefügt.
+Zurzeit werden nur Bundesstraßen bei der Straßennummerierung
+verwendet. Beispiele:
+
+<programlisting>
+    B1: Potsdam - Brandenburg
+    Müncheberg - Prötzel (B168)
+    Prenzlau - Penkun
+            ^ ^ Hier muss immer ein Leerzeichen stehen!
+    Strausberg-Nord - Altlandsberg
+              ^ Bei zusammengesetzten Ortsnamen darf kein
+                Leerzeichen stehen!
+</programlisting>
+
+<para>
+Nach dem Einfügen der Straße ist diese nicht sofort sichtbar, sondern
+die Straße muss mit "Reload" neu geladen werden. Achtung:
+manchmal funktioniert "Reload" nicht, dann muss der Layer
+aus- und wieder eingeschaltet werden. Tipp: um das Laden zu
+beschleunigen kann im Layermenu "Lazy drawing" verwendet
+werden. Achtung: "Lazy drawing" führt zu einem
+Speicherleck, der zu einem stetigen Speicherzuwachs in BBBike führt.
+
+ <sect2>
+  <title>Attribute zu einer Straße hinzufügen</>
+
+<para>
+Nach dem Reload ist die neue Straße sichtbar. Man kann sich wieder den
+Straßenzug zusammenklicken (den ganzen Teil oder nur einen Teil davon)
+und diesen Straßenzug mit "Add to new" zu einer Attributdatei
+hinzufügen. Hier muss darauf geachtet werden, dass <!-- b -->alle<!--
+/b --> Punkte auf bestehenden Kurvenpunkten liegen (Shift-Maustaste
+ist hier verboten) und dass kein Punkt vergessen oder doppelte
+angeklickt wurden.<footnote> <para> Eine weitere Möglichkeit der
+Punktauswahl wäre eine normale Suche (dazu in den Suchmodus gehen),
+aber dazu muss Suche > Straßennetz neu berechnen ausgewählt werden,
+falls eine neue Straße attributiert werden soll </para> </footnote>
+
+<para>
+Mögliche Attribute sind Fahrbahnqualität (<filename>qualitaet_s</> für
+Berliner, <filename>qualitaet_l</> für Nicht-Berliner Straßen),
+sonstige Beeinträchtigungen (<filename>handicap_s</> für Berliner,
+<filename>handicap_l</> für Nicht-Berliner Straßen), Radwege
+(<filename>radwege</filename> für Berlin,
+<filename>comments_cyclepath</> außerhalb Berlins) usw. Eine Liste der
+Attributierungsdateien befindet sich in <ulink url="bbd.html">der
+Dokumentation zum bbd-Format</>. Hier sind auch die verwendeten
+Kategorien beschrieben. <!-- TODO: --> <!-- bbd.pod übersetzen? -->
+
+ <sect2>
+  <title>Die orig-Dateien konvertieren</>
+
+<para>
+Die im Edit-Modus bearbeiteten Dateien sind die Dateien im Verzeichnis
+<filename>data</> mit der Endung <filename>-orig</>. BBBike im
+Normalmodus verwendet die Dateien ohne die Endung <filename>-orig</>.
+Die Konvertierung wird vom Makefile im Verzeichnis data vorgenommen.
+Das Makefile funktioniert nur mit einem modernen BSD-make. Alle
+Nicht-BSD-Systeme (auch Linux) benötigen dieses make, dass bei <ulink
+url="http://www.sourceforge.net/projects/srezic">Sourceforge</> als
+"pmake" <!-- oder BSD make, check! --> im Quellcode erhältlich ist.
+Eine Windows-Binary existiert noch nicht.
+<!-- check, ob "make install" bei pmake existiert und das -->
+<!-- original-make überschreiben würde, böse, böse -->
+
+<para>
+Mit <command>make</> im <filename>data</>-Verzeichnis wird eine
+Konvertierung vorgenommen und, wichtiger, eine Reihe von
+Konsistenzchecks durchgeführt. So müssen beispielsweise alle Straßen
+in <filename>strassen</> auch in <filename>Berlin.coords.data</>
+aufgeführt sein (siehe auch <link
+linkend="officialstreetnames">oben</link>),
+<filename>Berlin.coords.data</> muss sortiert sein, alle Ampeln müssen
+sich auf Kurvenpunkten existieren, alle Attributedaten müssen auf
+bestehenden Straßenzügen liegen usw.
+
+<sect1>
+<title>Veröffentlichen der Ergänzungen</>
+
+<para>
+Bei der Verwendung des Straßen-Editors wird eine Logdatei in
+<filename>data/datachange.log</> geschrieben. Diese Datei sollte an
+den <ulink url="mailto:slaven@rezic.de">Maintainer der
+BBBike-Stammdaten</> geschickt werden. In der Datei ist auch jeweils
+ein Zeitstempel pro Tag enthalten; es reicht aus, wenn nur die
+neuesten Änderungen abgeschickt werden. Zugleich sollte ein diff
+geschickt werden. Dieses wird mit <command>cvs diff -u data >
+data.diff</> aus dem ausgecheckten BBBike-Verzeichnis heraus gemacht.
+Die diff-Datei namens <filename>data.diff</> sollte dann ebenfalls an
+den Maintainer geschickt werden.
+
+<sect1>
+<title>Nach dem Veröffentlichen</>
+
+<para>
+Es ist empfehlenswert, das Verzeichnis <filename>data</> nach dem
+Veröffentlichen umzubenennen (oder zu löschen) und das alte
+Verzeichnis mit <command>cvs update -d</> wiederherzustellen. Der
+Grund sind mögliche CVS-Konflikte, die auftreten können, nachdem der
+Maintainer die editierten Daten ins CVS eingepflegt hat.
+
+<sect1>
+ <title>Eine komplett neue Datenbank aufbauen</>
+<!-- Abtippen -->
+
+ <sect2 id="insertpoint">
+  <title>Punkt hinzufügen</>
+  <para>
+ </sect1>
+</article>

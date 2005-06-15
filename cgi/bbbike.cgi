@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.28 2005/06/03 23:39:20 eserte Exp $
+# $Id: bbbike.cgi,v 7.28 2005/06/03 23:39:20 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -1280,6 +1280,8 @@ sub choose_form {
 				MultiZIP => 1, # introduced because of Hauptstr./Friedenau vs. Hauptstr./Schöneberg problem
 				MultiCitypart => 1, # works good with the new combine method
 				Agrep => 'default');
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$retref, $matcherr, \@extra, $max_plz_streets],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+
 	    @$matchref = grep { defined $_->[PLZ::LOOK_COORD()] && $_->[PLZ::LOOK_COORD()] ne "" } @$retref;
 	    # XXX needs more checks, but seems to work good
 	    @$matchref = map { $plz->combined_elem_to_string_form($_) } $plz->combine(@$matchref);

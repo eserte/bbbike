@@ -267,13 +267,8 @@ sub draw_map {
 		    my($x1, $y1, $x2, $y2) =
 		      (@{Strassen::to_koord1($s->[1][$i])},
 		       @{Strassen::to_koord1($s->[1][$i+1])});
-		    # XXX evtl. aus Performancegründen testen, ob
-		    # überhaupt im Zeichenbereich.
-		    # Evtl. eine XS-Funktion für diese Schleife
-		    # schreiben?
-#XXX z.Zt. nicht korrekt, weil die bbox nicht anhand der Aspect-Beibehaltung
-# des Bildes nicht korrigiert wird. Siehe auch BBBikeDraw::create_transpose
-#XXX das stimmt nicht mehr
+		    # Aus Performancegründen testen, ob überhaupt im
+		    # Zeichenbereich.
 		    next if !VectorUtil::vector_in_grid
 			($x1,$y1,$x2,$y2,
 			 $self->{Min_x},$self->{Min_y},
@@ -281,6 +276,7 @@ sub draw_map {
 			);
 		    my($x1t, $y1t, $x2t, $y2t) = (&$transpose($x1, $y1),
 						  &$transpose($x2, $y2));
+		    # XXX use polyline instead?
 		    $im->Draw(primitive=>'line',
 			      points => "$x1t,$y1t $x2t,$y2t",
 			      strokewidth => $width,

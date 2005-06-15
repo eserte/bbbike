@@ -1,0 +1,15 @@
+# $Id: Makefile.doc,v 1.1 2005/06/15 08:14:10 eserte Exp $
+
+
+MAINTAINER=	slaven@rezic.de
+DOC=		HOWTO_edit_bbbike_data
+
+SRCS=		${DOC}.sgml
+FORMATS?=	html
+
+DOC_PREFIX?=	/usr/doc
+DSLHTML?=       ${DOC_PREFIX}/share/sgml/freebsd.dsl
+DSLPRINT?=      ${DOC_PREFIX}/share/sgml/freebsd.dsl
+LANGCODE=       de_DE.ISO8859-1
+
+.include "${DOC_PREFIX}/share/mk/doc.project.mk"

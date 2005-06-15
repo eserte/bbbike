@@ -1357,11 +1357,18 @@ E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.
 
 =over
 
+=item * (H4)
+
+Ich brauche eine spezielle handicap-Kategorie für Abbiegevorgänge
+(z.B. q\d3 oder q\d::3), sowohl für Anzeige als auch für das Routing.
+
 =item * (H3)
 
 rbahn-orig -> rbahn-orig + rbahnhof-orig. Oder gibt es noch einen
 Grund für das Extra-Handling? insert_points und co. sollten gut genug
 sein, um die beiden Dateien synchron zu halten...
+Dann brauche ich auch eine make-Regel, um rbahnhof gegen rbahn zu
+checken (wie bei der S-Bahn)
 
 =item * (M3)
 

@@ -10,7 +10,7 @@
 <body>
 <a class="POD_NAVLINK" name="Pod_TOP_OF_PAGE"></a>
 <table width="100%">
-<tr><td align="left" width="1%"><a class="POD_NAVLINK" href="README.english.html">Next:<br>README.english</a></td><td align="left" width="1%"><a class="POD_NAVLINK" href="bbd.html">Previous:<br>bbd</a></td><td width="90%">&nbsp;</td><td align="right" width="1%"><a class="POD_NAVLINK" href="podindex.html">[Index]</a></td></tr>
+<tr><td align="left" width="1%"><a class="POD_NAVLINK" href="README.english.html">Next:<br>README.english</a></td><td align="left" width="1%"><a class="POD_NAVLINK" href="HOWTO_edit_bbbike_data.html">Previous:<br>HOWTO_edit_bbbike_data</a></td><td width="90%">&nbsp;</td><td align="right" width="1%"><a class="POD_NAVLINK" href="podindex.html">[Index]</a></td></tr>
 </table>
 <h1 class="POD_TITLE">README</h1>
 <hr>
@@ -48,7 +48,7 @@
 <p class="POD_TEXT">
 Die aktuellste BBBike-Archivdatei findet man im Verzeichnis
 <a class="POD_LINK" href="http://sourceforge.net/project/showfiles.php?group_id=19142">http://sourceforge.net/project/showfiles.php?group_id=19142</a> . Die aktuelle Sourcedatei ist
-<a class="POD_LINK" href="http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz">http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz</a> .
+<a class="POD_LINK" href="http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz">http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz</a> .
 </p>
 <h3 class="POD_HEAD2"><a name="FreeBSD">FreeBSD</a></h3>
 <p class="POD_TEXT">
@@ -121,7 +121,9 @@ das Programm gestartet werden. Mit
 </pre>
 <p class="POD_TEXT">
 kann optional eine Compilierung von einigen XS-Modulen durchgef&uuml;hrt
-werden sowie Eintr&auml;ge f&uuml;r KDE erzeugt werden.
+werden sowie Eintr&auml;ge f&uuml;r KDE erzeugt werden. F&uuml;r das Compilieren
+ist ein C-Compiler (z.B. gcc), der mittlerweile nicht bei allen
+Linux-Versionen standardm&auml;&szlig;ig installiert wird, notwendig.
 </p>
 <p class="POD_TEXT">
 Statt Bundle::BBBike_small kann auch Bundle::BBBike verwendet werden.
@@ -144,7 +146,7 @@ ausgef&uuml;hrt werden. Dazu ist das Perl-Modul <u>Inline::C</u> notwendig.
 BBBike und Perl ben&ouml;tigen ca. 32 MB an Festplattenspeicher.
 </p>
 <p class="POD_TEXT">
-Die Datei <a class="POD_LINK" href="http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.zip">http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.zip</a>
+Die Datei <a class="POD_LINK" href="http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.exe">http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.exe</a>
 laden und mit WinZip an einer
 beliebigen Stelle auf der Festplatte auspacken. Zum Starten von BBBike
 muss das Icon <code>bbbike.bat</code> im Verzeichnis BBBike-3.14-Windows
@@ -205,7 +207,7 @@ wird das ppm-Programm verlassen.
 </p>
 <li class="POD_ITEM"><a name="_1"></a>
 <p class="POD_TEXT">
-<a class="POD_LINK" href="http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.zip">BBBike-3.14.tar.gz</a>
+<a class="POD_LINK" href="http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.exe">BBBike-3.14.tar.gz</a>
 downloaden und mit WinZip auspacken. Das
 ausgepackte Verzeichnis wird sp&auml;ter nicht mehr verschoben.
 </p>
@@ -266,7 +268,7 @@ von Perl/Tk auf Mac OS X bekommt man in der comp.lang.perl.tk Newsgroup
 Folgende Anleitung habe ich von Wolfram Kroll erhalten:
 </p>
 <p class="POD_TEXT">
-<a class="POD_LINK" href="http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz">http://belnet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz</a> und (von
+<a class="POD_LINK" href="http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz">http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz</a> und (von
 <a class="POD_LINK" href="http://www.cpan.org">http://www.cpan.org</a>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
 besorgt.
 </p>
@@ -303,7 +305,7 @@ gleichnamigen CD (bei &auml;lteren Macs) oder im Applications-Ordner unter
 <code>Installers/Xcode Tools/Developer.mpkg</code> (bei neueren Macs).
 </p>
 <p class="POD_TEXT">
-Es wird auch eine X11- bzw. Darwin-Umgebung ben&ouml;tigt.
+Es wird auch eine X11- bzw. Darwin-Umgebung ben&ouml;tigt (X11SDK-Paket).
 </p>
 <p class="POD_TEXT">
 Mac OS Classic wird nicht unterst&uuml;tzt.
@@ -362,8 +364,8 @@ Von der Kommandozeile muss folgendes eingegeben werden:
 </p>
 <pre class="POD_VERBATIM">
     # login ist nur das erste Mal notwendig, Passwort leer lassen
-    cvs -d :pserver:anonymous@cvs.bbbike.sourceforge.net:/cvsroot/bbbike login
-    cvs -d :pserver:anonymous@cvs.bbbike.sourceforge.net:/cvsroot/bbbike co bbbike
+    cvs -d :pserver:anonymous@cvs.sourceforge.net:/cvsroot/bbbike login
+    cvs -d :pserver:anonymous@cvs.sourceforge.net:/cvsroot/bbbike co bbbike
 
     # Alle weiteren Male nur folgendes verwenden:
     cd bbbike
@@ -371,6 +373,12 @@ Von der Kommandozeile muss folgendes eingegeben werden:
 </pre>
 <p class="POD_TEXT">
 Das CVS wird fast t&auml;glich aktualisiert und enth&auml;lt auch die aktuellen Daten.
+</p>
+<p class="POD_TEXT">
+Um nur die Daten zu aktualisieren, kann man sich die aktuellen Daten
+als ZIP-Datei von <a class="POD_LINK" href="http://www.radzeit.de/cgi-bin/bbbike-data.cgi">http://www.radzeit.de/cgi-bin/bbbike-data.cgi</a> holen. Die ZIP-Datei
+muss im BBBike-Programmverzeichnis (bei Windows unter
+<code>C:\Programme\BBBike\bbbike</code>) ausgepackt werden.
 </p>
 <h2 class="POD_HEAD1"><a name="DOKUMENTATION">DOKUMENTATION</a></h2>
 <p class="POD_TEXT">
@@ -410,7 +418,7 @@ Slaven Rezic, E-Mail: <a class="POD_LINK" href="mailto:slaven@rezic.de">slaven@r
 </p>
 <hr>
 <a class="POD_NAVLINK" href="#Pod_TOP_OF_PAGE">[Top]</a>
-Generated by Marek::Pod::HTML 0.49 on Sat Apr 30 10:44:19 2005
+Generated by Marek::Pod::HTML 0.49 on Wed Jun 15 08:51:09 2005
 </body>
 </html>
 

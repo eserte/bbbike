@@ -1,7 +1,45 @@
 @temp_blocking = ();
-$#temp_blocking = 64;
+$#temp_blocking = 33;
 push @temp_blocking,
 (
+       {
+         'until' => undef,
+         'text' => 'Schlichtallee Richtung Lückstraße Zwischen Hauptstraße und Lückstraße Brückenarbeiten, gesperrt',
+         'from' => undef,
+         'data' => 'userdel	1 15751,10582 15629,10481
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'until' => 1119736799,
          'text' => 'Oberbaumbrückenfest, Dauer: 25.06.2005 12:00 Uhr bis 24:00 Uhr ',
