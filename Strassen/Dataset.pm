@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Dataset.pm,v 1.11 2004/07/16 23:04:05 eserte Exp $
+# $Id: Dataset.pm,v 1.12 2005/06/16 22:25:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::Dataset;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%file %net %crossings %obj @comments_types);
 
@@ -60,7 +60,7 @@ use vars qw(%file %net %crossings %obj @comments_types);
      },
     );
 
-@comments_types = qw(cyclepath ferry misc mount path route tram kfzverkehr);
+@comments_types = qw(cyclepath ferry misc mount path route tram kfzverkehr scenic);
 
 my %scope2inx = (city   => 0,
 		 region => 1,

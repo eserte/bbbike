@@ -1,3 +1,4 @@
+# -*- bbbike -*-
 # temp-blocking
 # XXX undef old entries
 # iso2epoch: date -j 2004MMDDhhmm +%s
@@ -212,11 +213,11 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'handicap',
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Schlichtallee Richtung Lückstraße Zwischen Hauptstraße und Lückstraße Brückenarbeiten, gesperrt',
+       until => 1120514399, # 2005-07-04 23:59
+       text  => 'Schlichtallee Hauptstraße - Lückstraße in beiden Richtungen Zwischen Hauptstraße und Lückstraße beidseitig Baustelle, gesperrt bis 04.07. 2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 15751,10582 15629,10481
+userdel	2 15629,10481 15751,10582
 EOF
      },
      { from  => 1070341200, # 2003-12-02 06:00
@@ -724,7 +725,7 @@ EOF
        text  => 'Dauer: 01.09.2004 07:00 Uhr bis 03.09.2004 20:00 Uhr. Rudower Chaussee, gesperrt von Agastraße bis Großberliner Damm in Richtung Treptow',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 19770,3343 19611,3167
+userdel	1 19732,3340 19581,3184 19495,3110
 EOF
      },
      { from  => 1094083200, # 2004-09-02 02:00
@@ -1478,7 +1479,7 @@ EOF
        data  => <<EOF,
 userdel	2 14705,5176 14994,5193
 userdel	2 14994,5193 15174,5463
-userdel	2 15174,5463 15373,5675
+userdel	2 15174,5463 15382,5687
 EOF
      },
      { from  => 1113429600, # 2005-04-14 00:00
@@ -1735,9 +1736,9 @@ EOF
 userdel	q4; 21093,9179 21351,9066
 EOF
      },
-     { from  => 1116194400, # 2005-05-16 00:00
-       until => 1122847200, # 2005-08-01 00:00
-       text  => 'B 101; (Berliner Str.); OD Trebbin Straßenbauarbeiten Vollsperrung 17.05.2005-31.07.2005 ',
+     { from  => 1118872800, # 2005-06-16 00:00
+       until => 1123538400, # 2005-08-09 00:00
+       text  => 'B 101; (Berliner Str.); OD Trebbin Straßenbauarbeiten Vollsperrung bis 08.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -1623,-21150 -1887,-21501
@@ -2052,6 +2053,19 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 14026,10869 14139,11269
+EOF
+     },
+     { from  => 1118949539, # 2005-06-16 21:18
+       until => 1120068000, # 2005-06-29 20:00
+       text  => 'Französische Str. ab Markgrafenstr., Werderscher Markt, Breite Str. gesperrt. Dauer: bis 29.06.2005, 20:00 Uhr. (Beachvolleyball) ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 9636,12126 9812,12145
+userdel	2 10084,12228 9959,12180
+userdel	2 9812,12145 9890,12161
+userdel	2 9890,12161 9959,12180
+userdel	2 10170,12261 10109,12238
+userdel	2 10170,12261 10267,12305
 EOF
      },
     );

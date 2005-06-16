@@ -1,4 +1,4 @@
-# $Id: handicap_s-orig,v 4.24 2005/05/31 00:27:47 eserte Exp $
+# $Id: handicap_s-orig,v 4.25 2005/06/16 22:26:36 eserte Exp $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
 Oberwallstr.: Fahrbahn wegen Bauarbeiten gesperrt, Gehweg benutzen	q4::inwork 9907,12055 9925,11947
@@ -17,6 +17,8 @@ Am Spreebord: Baustelle	q4::inwork 4135,12715 4314,12659
 #: XXX wahrscheinlich bis Fertigstellung der S-Bahnhof-Verschiebung?
 #: add_fragezeichen: noch immer?
 Krumme Str.: Bauarbeiten	q4::inwork; 3942,11010 3827,10980
+Groß-Berliner Damm: ein kurzes Stück ist noch Baustelle, voraussichtlich 2005-12-31 fertig	q4::inwork 18058,4627 18882,3750
+Segelfliegerdamm: letzte Bauarbeiten	q3::inwork 17797,4441 18058,4627
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Georgenstr.: Fußgänger	q1 9437,12662 9308,12649
 Neue Promenade: Fußgänger	q2 10294,13070 10132,12941
@@ -215,6 +217,9 @@ Spreeuferweg - Washingtonplatz: Rampe	q3 7950,12860 7917,12850 7941,12902
 (südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7718,7641 7772,7610
 Heidenfeldstr.: Gehweg	q1 13446,13353 13393,13326
 (Gudrunstr. - Lichtenberger Brücke): Gehweg, Bordsteine	q2 16870,11920 16884,11889 16858,11860
+Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22162,4546 22111,4562 22093,4499
+(Karlsgartenstr. - Hasenheide): Parkweg, Fußgänger	q1 11627,8485 11253,8565
+(Am Rixdorfer Teich): Parkweg, Fußgänger	q1 11253,8565 11104,8559 11020,8596 10957,8573 10911,8457
 ######################### User Contributions #################################
 #: by: André Käding
 Neustrelitzer Str.: kurvenreich	q1 16739,14733 16668,14765 16534,14740 16443,14825 16346,14750 16256,14828

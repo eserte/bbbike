@@ -1,4 +1,4 @@
-# $Id: comments_path-orig,v 4.14 2005/05/19 00:07:30 eserte Exp $
+# $Id: comments_path-orig,v 4.15 2005/06/16 22:26:56 eserte Exp $
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C
 # CP   : wie "CP;", Kommentar g¸ltig f¸r beide Fahrtrichtungen
 # CP2; : Kommentar an Punkt A bei Fahrt von A nach B
@@ -141,3 +141,6 @@ Greifswalder Str. - Heinrich-Roller-Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen
 #: by: ^^^
 Immanuelkirchstr. - Greifswalder Str.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CS; 11727,14111 11958,13986 11993,14037
 Greifswalder Str. - Immanuelkirchstr.: Fuﬂg‰ngerfurt (Dr‰ngelgitter) benutzen	CS; 11832,13795 11958,13986 11727,14111
+Kietz - Kietzer Str.: zum ‹berqueren der Straﬂe Fuﬂg‰ngerampel links benutzen	CS; 22364,4429 22396,4464 22358,4521
+Kietz - M¸ggelheimer Str.: zum ‹berqueren der Straﬂe Fuﬂg‰ngerampel links benutzen	CS; 22364,4429 22396,4464 22340,4468
+Kietz - Amtsstr.: zum ‹berqueren der Straﬂe Fuﬂg‰ngerampel links benutzen	CS; 22364,4429 22396,4464 22502,4528

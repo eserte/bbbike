@@ -1,5 +1,8 @@
 BBBike RELEASE 3.15
 
+Data
+- new layers: highways (Autobahnen) and comments_scenic
+
 Install
 - Bugfix for Windows installer (shortcuts did not work for installations in
   "C:\Program files")

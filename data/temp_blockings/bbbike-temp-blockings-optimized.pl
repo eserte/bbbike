@@ -3,10 +3,10 @@ $#temp_blocking = 33;
 push @temp_blocking,
 (
        {
-         'until' => undef,
-         'text' => 'Schlichtallee Richtung Lückstraße Zwischen Hauptstraße und Lückstraße Brückenarbeiten, gesperrt',
+         'until' => 1120514399,
+         'text' => 'Schlichtallee Hauptstraße - Lückstraße in beiden Richtungen Zwischen Hauptstraße und Lückstraße beidseitig Baustelle, gesperrt bis 04.07. 2005 ',
          'from' => undef,
-         'data' => 'userdel	1 15751,10582 15629,10481
+         'data' => 'userdel	2 15629,10481 15751,10582
 ',
          'type' => 'gesperrt'
        },
@@ -331,9 +331,9 @@ userdel	q4 -18080,-12637 -17374,-13449
        undef,
        undef,
        {
-         'until' => 1122847200,
-         'text' => 'B 101; (Berliner Str.); OD Trebbin Straßenbauarbeiten Vollsperrung 17.05.2005-31.07.2005 ',
-         'from' => 1116194400,
+         'until' => 1123538400,
+         'text' => 'B 101; (Berliner Str.); OD Trebbin Straßenbauarbeiten Vollsperrung bis 08.08.2005 ',
+         'from' => 1118872800,
          'data' => 'userdel	q4 -1623,-21150 -1887,-21501
 ',
          'type' => 'handicap'
@@ -447,14 +447,7 @@ userdel	q4 1872,-1118 1680,-1011
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1118959200,
-         'text' => 'K 6422; (Schöneicher Allee); Brücke A 10 zw. B 1 und Fredersdorf Brückenabbruch Vollsperrung 02.06.2005-16.06.2005 ',
-         'from' => 1117576800,
-         'data' => 'userdel	2 33128,11823 32535,11591
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1119650400,
          'text' => 'L 15; (Fürstenberg-Rheinsberg); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-24.06.2005 ',
@@ -545,6 +538,19 @@ userdel	2 14153,-17829 13303,-18235
          'text' => '"Bridge Partie", Modersohnbrücke von 21.06.2005, 18.00 Uhr bis 22.06.2005, 06:00 Uhr gesperrt',
          'from' => 1119283200,
          'data' => 'userdel	2 14026,10869 14139,11269
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1120068000,
+         'text' => 'Französische Str. ab Markgrafenstr., Werderscher Markt, Breite Str. gesperrt. Dauer: bis 29.06.2005, 20:00 Uhr. (Beachvolleyball) ',
+         'from' => 1118949539,
+         'data' => 'userdel	2 9636,12126 9812,12145
+userdel	2 10084,12228 9959,12180
+userdel	2 9812,12145 9890,12161
+userdel	2 9890,12161 9959,12180
+userdel	2 10170,12261 10109,12238
+userdel	2 10170,12261 10267,12305
 ',
          'type' => 'gesperrt'
        }

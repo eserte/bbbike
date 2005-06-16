@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.86 2005/04/28 22:51:28 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.87 2005/06/16 22:25:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -1893,6 +1893,19 @@ $auto_reload = 0 if !defined $auto_reload;
 # Return true if the file is writable (eventually after checking out).
 sub ask_for_co {
     my($top, $file) = @_;
+    if (!-e $file) {
+	if (!open(TOUCH, "> $file")) {
+	    main::status_message("Die Datei $file kann nicht angelegt werden: $!", "warn");
+	} else {
+	    close TOUCH;
+	}
+    }
+    if (!-e $file) {
+	$top->messageBox(-title => "Warnung",
+			 -message => "Achtung: die Datei $file kann nicht erzeugt werden. Bitte Berechtigungen überprüfen",
+			);
+	return 0;
+    }
     if (!-w $file) {
 	require Tk::Dialog;
 	my $ans = $top->Dialog

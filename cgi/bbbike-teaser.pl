@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.10 2005/06/11 22:37:15 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.11 2005/06/16 22:34:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -24,8 +24,8 @@ sub teaser {
 			    );
     my @teasers_mandatory = (
 			     $ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
-			     teaser_perltk_newrelease(),
-			     #teaser_perltk(),
+			     #teaser_perltk_newrelease(),
+			     teaser_perltk(),
 			     teaser_mapserver(),
 			     teaser_routen(),
 			     #teaser_sternfahrt(),

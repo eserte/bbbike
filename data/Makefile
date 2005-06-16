@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.47 2005/05/17 21:24:53 eserte Exp $
+# $Id: Makefile,v 2.48 2005/06/16 22:23:33 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -36,9 +36,10 @@ COMBINE_STREETS=	${MISCSRCDIR}/combine_streets.pl
 
 COMMENTS_PARTIAL=	comments_cyclepath comments_ferry comments_misc \
 			comments_mount comments_path comments_route \
-			comments_tram comments_kfzverkehr
+			comments_tram comments_kfzverkehr comments_scenic
 
-SOURCE_TARGETS=		strassen plaetze landstrassen landstrassen2 flaechen
+SOURCE_TARGETS=		strassen plaetze landstrassen landstrassen2 strassen_bab
+SOURCE_TARGETS+=	flaechen
 SOURCE_TARGETS+=	wasserstrassen wasserumland wasserumland2
 SOURCE_TARGETS+=	sbahn sbahnhof rbahn
 SOURCE_TARGETS+=	ubahn ubahnhof
@@ -203,6 +204,13 @@ landstrassen2: landstrassen2-orig
 	cp $@~ $@
 	rm $@~
 	-rm -f landstrassen2-cooked
+	-@$(READONLY) $@
+
+strassen_bab: strassen_bab-orig
+	-@$(WRITEABLE) $@
+	$(CONVERT2HAFAS) strassen_bab-orig > $@~
+	cp $@~ $@
+	rm $@~
 	-@$(READONLY) $@
 
 # Get categories with:

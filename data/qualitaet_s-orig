@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.29 2005/05/31 00:24:36 eserte Exp $
+# $Id: qualitaet_s-orig,v 4.30 2005/06/16 22:25:52 eserte Exp $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -351,11 +351,11 @@ Lüneburger Str.: Kopfsteinpflaster	Q2 7608,12966 7327,12721 7097,12590
 Flensburger Str.: Kopfsteinpflaster	Q2 6309,12678 6400,12662 6546,12653
 Braunschweiger Str.: schlechtes bis mäßiges Kopfsteinpflaster	Q2 13047,7234 13322,7294 13369,7307 13517,7345
 Braunschweiger Str.: Kopfsteinpflaster	Q2 13702,7418 13781,7524 13919,7707
-Königsheideweg: schlechter Asphalt	Q1 16256,5137 16051,5211 15859,5212 15373,5675
+Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15382,5687
 Uferweg: fester Sandweg	Q1 16604,8576 16529,8845 16449,9011 16319,9149 16259,9182 16129,9189 15969,9102 15793,8984
 Böcklinstr.: Kopfsteinpflaster	Q2 14676,11375 14598,11245
 Berliner Str.: Kopfsteinpflaster	Q2 12746,17981 12479,17811
-Handjerystr.: Kopfsteinpflaster	Q2 20982,3325 20693,3667 20556,3829
+Handjerystr.: Kopfsteinpflaster	Q2 20982,3325 20693,3667 20546,3865
 (An der Müggelspree): fester Waldweg	Q1 23441,4956 23468,5075 23620,5096 23776,5040 23982,5030 24233,4878 24398,4842 24834,4541 25023,4441 25102,4408 25427,4482 25479,4540 25565,4549
 Görlitzer Park: teils fester sandiger Weg	Q1 12671,10042 12686,10045 12690,10062
 Görlitzer Park: teils fester sandiger Weg	Q1 12761,10195 12770,10210 12779,10232
@@ -525,7 +525,8 @@ Richtung Grunewaldturm: Waldweg, meist OK, einige sandige Abschnitte	Q1 -1638,91
 Uferweg am Schlachtensee: Waldweg OK, manchmal etwas sandig	Q1 -3348,3055 -3384,3212 -3324,3382 -3087,3646 -2937,3740 -2813,3775 -2494,3758 -2347,3884 -2080,4228 -1935,4303 -1831,4300 -1531,4159 -1391,4135 -1353,4205 -1278,4239
 Weg am Teufelssee: Waldweg	Q1 -898,9375 -942,9251 -1047,9123
 Schwarzer Weg (Oberschöneweide): unbefestigter Weg, holprig	Q2 17298,8147 17297,7752 17301,7619
-Möllhausenufer: Kopfsteinpflaster	Q2 23305,1147 23520,1194 23747,1243
+Möllhausenufer: Kopfsteinpflaster	Q2 23305,1147 23520,1194 23617,1212
+Möllhausenufer: asphaltiert	Q0 23617,1212 23747,1243
 Am Langen See: Waldweg, meist OK, teilweise Wurzeln	Q1 23747,1243 23968,1352 24343,1155 24462,988 24652,915 24949,806 25333,834 25559,890 25881,817 26052,520 26041,228 26385,-195 26423,-140 26628,-313 26687,-316 26751,-460 26944,-639 26952,-744 27141,-785 27329,-1183 27365,-1357 27357,-1545
 Zur Fähre: Waldweg	Q2 28973,3296 29067,3369 29064,3401
 Radweg am Müggelsee: Waldweg OK, trotz Schotter	Q1 28829,3295 28723,3283 28695,3245 28485,3206 27984,2995 27732,2671 27528,2469 27314,2282 27218,2300 26802,2374 26460,2428 26026,2532 25948,2474
@@ -1069,6 +1070,26 @@ Nalepastr.: fester enger Sandweg	Q2 17043,7512 17043,7617
 #: add_fragezeichen: stimmt das?
 Nalepastr.: Betonstr., Eisenbahnschienen	Q1 17043,7512 17211,7265
 Nalepastr.: sehr guter Asphalt	Q0 17211,7265 17284,7175 17614,6571
+#: XXX nicht 100% sicher
+Ernst-Grube-Str.: mäßiger Asphalt	Q1 21364,5435 21362,5289 21345,5157 21325,4998 21300,4837 21264,4809 21332,4655
+Ahornallee: asphaltiert	Q0 21325,4998 21454,4928 21509,4900
+Ahornallee: Kopfsteinpflaster	Q2 21509,4900 21684,4814
+Mentzelstr.: Kopfsteinpflaster	Q2 21732,4901 21684,4814 21579,4579
+Charlottenstr.: Kopfsteinpflaster, OK	Q1 23041,3919 22675,3885
+Charlottenstr.: Asphalt	Q0 22675,3885 22467,3889
+Gartenstr.: Asphalt	Q0 22467,3889 22275,4032 22246,4106 22267,4200
+Kietz: sehr schlechtes Kopfsteinpflaster	Q3 22267,4200 22292,4279
+Kietz: mäßiges Kopfsteinpflaster	Q2 22292,4279 22364,4429 22396,4464
+Grünstr.: asphaltiert	Q0 22111,4562 22162,4546 22312,4593
+(Weg im Park Adlershof): Gehwegplatten	Q0 18882,3750 18442,3740 18293,3890 18126,4071
+(Weg im Park Adlershof): Gehwegplatten	Q0 18293,3890 18031,3737 17976,3735
+Bergiusstr.: Betonstraße	Q0 14153,6795 14193,6718 14154,6629 14193,6556 14396,6298 14398,6184
+Nobelstr.: Betonstraße	Q0 14133,6187 14398,6184 15146,6154
+(Karlsgartenstr. - Hasenheide): asphaltiert	Q0 11627,8485 11253,8565
+(Am Rixdorfer Teich): guter Parkweg	Q1 11253,8565 11104,8559 11020,8596 10957,8573 10911,8457
+Tivoliplatz: Kopfsteinpflaster	Q2 8954,8914 8950,8954 8997,8952
+Schmiedehof: Kopfsteinpflaster	Q2 8997,8952 9019,8995
+Ottomar-Geschke-Str.: Kopfsteinpflaster	Q2 21332,4655 21454,4928 21498,5023
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -1158,7 +1179,7 @@ Badener Str.: Beton	Q0 24051,9156 23467,9422 23140,9556
 Helmstedter Str.: Asphalt	Q0 5726,9029 5711,9349 5704,9557
 Hubertusstr. (Waidmannslust): Kopfsteinpflaster	Q2 4064,22417 4261,22150
 Steinstr.: Asphalt	Q0 6089,5145 5939,5169 5778,5234
-Carl-Scheele-Str.: Asphalt	Q0 19193,2821 19009,2857 18904,2865 18712,2756
+Carl-Scheele-Str.: Asphalt	Q0 19170,2828 19009,2857 18904,2865 18712,2756
 #: note: In der ADFC-Karte auch als "gut geeignet" ausgewiesen:
 Cottbusser Str.: guter Asphalt	Q0 23097,14855 23279,14785 23736,14844
 Andersenstr.: Kopfsteinpflaster	Q2 10300,16521 10315,16651
@@ -1270,7 +1291,7 @@ Dregerhoffstr.: Beton	Q0 22904,2675 23427,2812 24050,2968 24084,2925 24190,2987
 #: by: c. ecker:
 Sprengelstr. (Wedding): Asphalt	Q0 6756,14962 6959,15032 7144,15106 7292,15154
 #: by: Inez Renkwitz:
-Zum Großen Windkanal: Asphalt	Q0 19151,3101 19334,3268 19570,3509
+Zum Großen Windkanal: Asphalt	Q0 19162,3087 19348,3253 19581,3495
 #: by: Florian Dietze-Römkens:
 Elly-Heuss-Knapp-Str.: Asphalt	Q0 17475,-53 17565,-201 17665,-364
 #: by: Christian von Gelieu:
@@ -1548,7 +1569,7 @@ Undinestr.: Kopfsteinpflaster	Q2 4788,4074 4681,4537 4568,4789 4517,4853
 Neltestr.: mäßiges Kopfsteinpflaster	Q2 19493,3877 19701,4052 19744,4116 19765,4195
 Vogelbeerstr.: mäßiges Kopfsteinpflaster	Q2 19744,4116 19896,4098 19996,4143
 Florian-Geyer-Str.: mäßiger Asphalt	Q1 19896,4098 19905,3973 19954,3887
-Florian-Geyer-Str.: mäßiges Kopfsteinpflaster	Q2 19954,3887 20166,3590
+Florian-Geyer-Str.: mäßiges Kopfsteinpflaster	Q2 19954,3887 20159,3623
 Borkumstr.: mäßiges Kopfsteinpflaster	Q2 11425,17817 10871,17722
 #: by: ^^^
 #: by: Claudia (99):
@@ -1992,7 +2013,7 @@ Nahariyastr.: sehr guter Asphalt	Q0 11717,-1204 11778,-1706 11784,-1809
 #: note: Jana war sich nicht sicher, allerdings gibt es noch einen weiteren anonymen Eintrag mit der gleichen Meinung:
 Borsigstr.: asphaltiert	Q0 9517,13571 9394,13754 9334,13843
 #: by: Reinhard (otto):
-Newtonstr.: asphaltiert	Q0 19319,2899 19151,3101 19075,3178
+Newtonstr.: asphaltiert	Q0 19287,2939 19162,3087 19075,3178
 #: by: nic (kleene...):
 #: note: auch laut ADFC-Karte gut geeignet:
 Gäblerstr.: guter Beton	Q0 13146,17016 13029,17185 13023,17379 13011,17470

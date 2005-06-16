@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Gpsbabel.pm,v 1.3 2005/05/25 21:41:10 eserte Exp eserte $
+# $Id: Gpsbabel.pm,v 1.4 2005/06/16 22:30:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ push @ISA, 'GPS';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 use BBBikeUtil qw(is_in_path);
 
