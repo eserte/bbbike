@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.28 2005/06/03 23:39:20 eserte Exp eserte $
+# $Id: bbbike.cgi,v 7.29 2005/06/15 19:40:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -665,7 +665,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.28 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.29 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1280,8 +1280,6 @@ sub choose_form {
 				MultiZIP => 1, # introduced because of Hauptstr./Friedenau vs. Hauptstr./Schöneberg problem
 				MultiCitypart => 1, # works good with the new combine method
 				Agrep => 'default');
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$retref, $matcherr, \@extra, $max_plz_streets],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
-
 	    @$matchref = grep { defined $_->[PLZ::LOOK_COORD()] && $_->[PLZ::LOOK_COORD()] ne "" } @$retref;
 	    # XXX needs more checks, but seems to work good
 	    @$matchref = map { $plz->combined_elem_to_string_form($_) } $plz->combine(@$matchref);
@@ -4023,7 +4021,7 @@ sub start_mapserver {
     require BBBikeMapserver;
     my $ms = BBBikeMapserver->new_from_cgi($q, -tmpdir => $tmp_dir);
     $ms->read_config("$0.config");
-    $ms->{Coords} = ["8593,12243"]; # Brandenburger Tor
+    $ms->set_coords("8593,12243"); # Brandenburger Tor
     $ms->start_mapserver(-route => 0,
 			 -bbbikeurl => $bbbike_url,
 			 -bbbikemail => $BBBike::EMAIL,
@@ -5609,7 +5607,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/06/03 23:39:20 $';
+    my $cgi_date = '$Date: 2005/06/15 19:40:01 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

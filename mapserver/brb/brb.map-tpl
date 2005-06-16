@@ -740,40 +740,52 @@ END
 
 [%
    SET SIZES_N = [
-	{size=>1,  minscale=>100000, maxscale=>1000000, legend=>0, outline=>0},
-	{size=>2,  minscale=>40000,  maxscale=>100000,  legend=>0, outline=>0},
-	{size=>3,  minscale=>20000,  maxscale=>40000,   legend=>0, outline=>0},
-	{size=>4,  minscale=>10000,  maxscale=>20000,   legend=>0, outline=>1},
-	{size=>5,  minscale=>8000,   maxscale=>10000,   legend=>1, outline=>1},
-	{size=>6,  minscale=>6000,   maxscale=>8000,    legend=>0, outline=>1},
-	{size=>8,  minscale=>4000,   maxscale=>6000,    legend=>0, outline=>1},
-	{size=>10, minscale=>2000,   maxscale=>4000,    legend=>0, outline=>1},
-	{size=>12, minscale=>1000,   maxscale=>2000,    legend=>0, outline=>1},
-	{size=>15, minscale=>undef,  maxscale=>1000,    legend=>0, outline=>1},
+	{size=>1,  minscale=>100000, maxscale=>1000000, legend=>0, outline=>0, lblsize=>8 },
+	{size=>2,  minscale=>40000,  maxscale=>100000,  legend=>0, outline=>0, lblsize=>8 },
+	{size=>3,  minscale=>20000,  maxscale=>40000,   legend=>0, outline=>0, lblsize=>8 },
+	{size=>4,  minscale=>10000,  maxscale=>20000,   legend=>0, outline=>1, lblsize=>8 },
+	{size=>5,  minscale=>8000,   maxscale=>10000,   legend=>1, outline=>1, lblsize=>8 },
+	{size=>6,  minscale=>6000,   maxscale=>8000,    legend=>0, outline=>1, lblsize=>8 },
+	{size=>8,  minscale=>4000,   maxscale=>6000,    legend=>0, outline=>1, lblsize=>9 },
+	{size=>10, minscale=>2000,   maxscale=>4000,    legend=>0, outline=>1, lblsize=>9 },
+	{size=>12, minscale=>1000,   maxscale=>2000,    legend=>0, outline=>1, lblsize=>10},
+	{size=>15, minscale=>undef,  maxscale=>1000,    legend=>0, outline=>1, lblsize=>10},
    ];
    SET SIZES_H = [
-	{size=>2   minscale=>500000, maxscale=>1000000, legend=>0, outline=>0},
-	{size=>3,  minscale=>200000, maxscale=>500000,  legend=>0, outline=>0},
-	{size=>4,  minscale=>20000,  maxscale=>200000,  legend=>0, outline=>0},
-	{size=>5,  minscale=>10000,  maxscale=>20000,   legend=>0, outline=>1},
-	{size=>6,  minscale=>8000,   maxscale=>10000,   legend=>1, outline=>1},
-	{size=>8,  minscale=>6000,   maxscale=>8000,    legend=>0, outline=>1},
-	{size=>10, minscale=>4000,   maxscale=>6000,    legend=>0, outline=>1},
-	{size=>13, minscale=>2000,   maxscale=>4000,    legend=>0, outline=>1},
-	{size=>16, minscale=>1000,   maxscale=>2000,    legend=>0, outline=>1},
-	{size=>20, minscale=>undef,  maxscale=>1000,    legend=>0, outline=>1},
+	{size=>2   minscale=>500000, maxscale=>1000000, legend=>0, outline=>0, lblsize=>8 },
+	{size=>3,  minscale=>200000, maxscale=>500000,  legend=>0, outline=>0, lblsize=>8 },
+	{size=>4,  minscale=>20000,  maxscale=>200000,  legend=>0, outline=>0, lblsize=>8 },
+	{size=>5,  minscale=>10000,  maxscale=>20000,   legend=>0, outline=>1, lblsize=>8 },
+	{size=>6,  minscale=>8000,   maxscale=>10000,   legend=>1, outline=>1, lblsize=>8 },
+	{size=>8,  minscale=>6000,   maxscale=>8000,    legend=>0, outline=>1, lblsize=>9 },
+	{size=>10, minscale=>4000,   maxscale=>6000,    legend=>0, outline=>1, lblsize=>10},
+	{size=>13, minscale=>2000,   maxscale=>4000,    legend=>0, outline=>1, lblsize=>11},
+	{size=>16, minscale=>1000,   maxscale=>2000,    legend=>0, outline=>1, lblsize=>12},
+	{size=>20, minscale=>undef,  maxscale=>1000,    legend=>0, outline=>1, lblsize=>13},
+   ];
+   SET SIZES_HH = [
+	{size=>2   minscale=>500000, maxscale=>1000000, legend=>0, outline=>0, lblsize=>8 },
+	{size=>3,  minscale=>200000, maxscale=>500000,  legend=>0, outline=>0, lblsize=>8 },
+	{size=>4,  minscale=>20000,  maxscale=>200000,  legend=>0, outline=>0, lblsize=>8 },
+	{size=>5,  minscale=>10000,  maxscale=>20000,   legend=>0, outline=>1, lblsize=>8 },
+	{size=>6,  minscale=>8000,   maxscale=>10000,   legend=>1, outline=>1, lblsize=>9 },
+	{size=>8,  minscale=>6000,   maxscale=>8000,    legend=>0, outline=>1, lblsize=>10},
+	{size=>10, minscale=>4000,   maxscale=>6000,    legend=>0, outline=>1, lblsize=>11},
+	{size=>13, minscale=>2000,   maxscale=>4000,    legend=>0, outline=>1, lblsize=>12},
+	{size=>16, minscale=>1000,   maxscale=>2000,    legend=>0, outline=>1, lblsize=>13},
+	{size=>20, minscale=>undef,  maxscale=>1000,    legend=>0, outline=>1, lblsize=>14},
    ];
    SET SIZES_B = [
-	{size=>2,  minscale=>1000000,maxscale=>undef,   legend=>0, outline=>0},
-	{size=>3,  minscale=>500000, maxscale=>1000000, legend=>0, outline=>1},
-	{size=>4,  minscale=>20000,  maxscale=>500000,  legend=>0, outline=>1},
-	{size=>5,  minscale=>10000,  maxscale=>20000,   legend=>0, outline=>1},
-	{size=>6,  minscale=>8000,   maxscale=>10000,   legend=>1, outline=>1},
-	{size=>8,  minscale=>6000,   maxscale=>8000,    legend=>0, outline=>1},
-	{size=>10, minscale=>4000,   maxscale=>6000,    legend=>0, outline=>1},
-	{size=>13, minscale=>2000,   maxscale=>4000,    legend=>0, outline=>1},
-	{size=>16, minscale=>1000,   maxscale=>2000,    legend=>0, outline=>1},
-	{size=>20, minscale=>undef,  maxscale=>1000,    legend=>0, outline=>1},
+	{size=>2,  minscale=>1000000,maxscale=>undef,   legend=>0, outline=>0, lblsize=>8 },
+	{size=>3,  minscale=>500000, maxscale=>1000000, legend=>0, outline=>1, lblsize=>8 },
+	{size=>4,  minscale=>20000,  maxscale=>500000,  legend=>0, outline=>1, lblsize=>8 },
+	{size=>5,  minscale=>10000,  maxscale=>20000,   legend=>0, outline=>1, lblsize=>8 },
+	{size=>6,  minscale=>8000,   maxscale=>10000,   legend=>1, outline=>1, lblsize=>9 },
+	{size=>8,  minscale=>6000,   maxscale=>8000,    legend=>0, outline=>1, lblsize=>10},
+	{size=>10, minscale=>4000,   maxscale=>6000,    legend=>0, outline=>1, lblsize=>11},
+	{size=>13, minscale=>2000,   maxscale=>4000,    legend=>0, outline=>1, lblsize=>12},
+	{size=>16, minscale=>1000,   maxscale=>2000,    legend=>0, outline=>1, lblsize=>13},
+	{size=>20, minscale=>undef,  maxscale=>1000,    legend=>0, outline=>1, lblsize=>14},
    ];
 -%]
 
@@ -822,6 +834,15 @@ LAYER
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
+[% END -%]
+[% END -%]
+[% FOR i = SIZES_H;
+      PROCESS CLASS_H_OUTL p=i;
+   END
+-%]
+
+[% BLOCK CLASS_HH_OUTL -%]
+[% IF p.outline -%]
   # sligtly darker outline
   CLASS
     EXPRESSION 'HH'
@@ -833,8 +854,8 @@ LAYER
   END
 [% END -%]
 [% END -%]
-[% FOR i = SIZES_H;
-      PROCESS CLASS_H_OUTL p=i;
+[% FOR i = SIZES_HH;
+      PROCESS CLASS_HH_OUTL p=i;
    END
 -%]
 
@@ -1005,7 +1026,7 @@ LAYER
       POSITION auto
       TYPE truetype
       FONT "street"
-      MINSIZE 8
+      MINSIZE [% p.lblsize %]
       COLOR 0 0 0
       OUTLINECOLOR 225 225 225
       ANGLE AUTO
@@ -1031,7 +1052,7 @@ LAYER
       POSITION auto
       TYPE truetype
       FONT "street"
-      MINSIZE 8
+      MINSIZE [% p.lblsize %]
       COLOR 0 0 0
       OUTLINECOLOR 225 225 225
       ANGLE AUTO
@@ -1061,7 +1082,7 @@ LAYER
       POSITION auto
       TYPE truetype
       FONT "street"
-      MINSIZE 8
+      MINSIZE [% p.lblsize %]
       COLOR 0 0 0
       OUTLINECOLOR 225 225 225
       ANGLE AUTO
@@ -1072,6 +1093,13 @@ LAYER
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
+[% END -%]
+[% FOR i = SIZES_H;
+      PROCESS CLASS_H p=i;
+   END
+-%]
+
+[% BLOCK CLASS_HH -%]
   CLASS
     EXPRESSION 'HH'
 [% IF p.legend -%]
@@ -1083,7 +1111,7 @@ LAYER
       POSITION auto
       TYPE truetype
       FONT "street"
-      MINSIZE 8
+      MINSIZE [% p.lblsize %]
       COLOR 0 0 0
       OUTLINECOLOR 225 225 225
       ANGLE AUTO
@@ -1095,8 +1123,8 @@ LAYER
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
 [% END -%]
-[% FOR i = SIZES_H;
-      PROCESS CLASS_H p=i;
+[% FOR i = SIZES_HH;
+      PROCESS CLASS_HH p=i;
    END
 -%]
 
@@ -1112,7 +1140,7 @@ LAYER
       POSITION auto
       TYPE truetype
       FONT "street"
-      MINSIZE 8
+      MINSIZE [% p.lblsize %]
       COLOR 0 0 0
       OUTLINECOLOR 225 225 225
       ANGLE AUTO

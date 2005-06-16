@@ -160,7 +160,7 @@ Geschwister-Scholl-Str.: Kopfsteinpflaster	Q2 9529,12925 9550,12760
 Marchlewskistr.: Kopfsteinpflaster	Q2 13226,11934 13280,11834 13303,11791
 Pillauer Str.: Kopfsteinpflaster	Q2 13377,11644 13290,11581
 Wriezener Karree: Beton	Q1 12686,11737 12778,11691 12819,11764 12726,11851
-#: XXX ab August 2003 wird das Kopfsteinpflaster durch Asphalt ersetzt:
+#: add_fragezeichen: mittlerweile asphaltiert? Existieren Radwege?
 Prenzlauer Promenade: mäßiges Kopfsteinpflaster	Q2 12012,16752 12046,16568 12054,16517 12097,16263 12091,16209
 #XXX laut Morgenpost seit den Bauarbeiten entfernt: Prenzlauer Allee: Kopfsteinpflaster (nur in Nordrichtung)	Q2; 11941,15586 11997,15834
 Engeldamm: Kopfsteinpflaster	Q2 12026,11348 11921,11185 11798,11128 11665,11118
@@ -2017,3 +2017,9 @@ Grafenwalder Weg: Asphalt	Q0 -3295,16392 -3326,16553
 Manksweg: Asphalt	Q0 20482,14892 20687,15193
 #: by: Peter (disco...):
 Schonensche Str.: Asphalt	Q0 11039,16553 11287,16515
+#: by: Oliver Kraft:
+Oertzenweg: Asphalt	Q0 -1248,2508 -845,2664 -693,2720
+#: by: Andrea Büchner:
+Achenseeweg: Asphalt	Q0 5913,1176 5878,787 5916,499 5993,243
+#: by: Daniel (cined...)
+Mercatorweg: mäßiger Beton	Q1 4873,645 4703,534

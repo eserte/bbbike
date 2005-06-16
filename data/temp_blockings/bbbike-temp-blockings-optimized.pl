@@ -112,15 +112,7 @@ userdel	2 13178,10623 13206,10651
        undef,
        undef,
        undef,
-       {
-         'until' => 1118872800,
-         'text' => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 12.04.2005-15.06.2005 ',
-         'from' => 1113170400,
-         'data' => 'userdel	q4 49039,44131 48583,44366
-userdel	q4 49039,44131 49691,43812
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -545,6 +537,14 @@ userdel	2 14153,-17829 13303,-18235
          'text' => 'Zimmerstraße Richtung Charlottenstraße zwischen Friedrichstraße und Charlottenstraße Kranarbeiten, gesperrt bis 24.06.2005 ',
          'from' => 1118527200,
          'data' => 'userdel	1 9473,11316 9603,11328
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1119412800,
+         'text' => '"Bridge Partie", Modersohnbrücke von 21.06.2005, 18.00 Uhr bis 22.06.2005, 06:00 Uhr gesperrt',
+         'from' => 1119283200,
+         'data' => 'userdel	2 14026,10869 14139,11269
 ',
          'type' => 'gesperrt'
        }

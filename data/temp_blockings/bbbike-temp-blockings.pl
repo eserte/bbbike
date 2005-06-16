@@ -2046,4 +2046,12 @@ EOF
 userdel	1 9473,11316 9603,11328
 EOF
      },
+     { from  => 1119283200, # 2005-06-20 18:00
+       until => 1119412800, # 2005-06-22 06:00
+       text  => '"Bridge Partie", Modersohnbrücke von 21.06.2005, 18.00 Uhr bis 22.06.2005, 06:00 Uhr gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 14026,10869 14139,11269
+EOF
+     },
     );
