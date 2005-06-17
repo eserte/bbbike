@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.33 2005/06/16 22:38:25 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.33 2005/06/16 22:38:25 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -35,9 +35,6 @@ my @pods =
      [qw(bbbike.pod      bbbike.html),        "Dokumentation für BBBike"],
      [qw(README          README.html),        "README für BBBike"],
      [qw(README.english  README.english.html),"README for BBBike"],
-     [qw(HOWTO_edit_bbbike_data.pod
-			 HOWTO_edit_bbbike_data.html),
-					      "HOWTO - Daten in BBBike editieren"],
      [qw(bbd.pod         bbd.html),           "BBD file format"],
      [qw(bbbike_internals.pod      bbbike_internals.html),        "BBBike Internals"],
      );
@@ -404,6 +401,9 @@ README README.english:	README.spp BBBikeVar.pm
 
 EOF
 . $bbbike_html_rule . <<'EOF'
+
+HOWTO_edit_bbbike_data.html: HOWTO_edit_bbbike_data.sgml Makefile.doc
+	make -f Makefile.doc HOWTO_edit_bbbike_data.html
 
 clean_pod2html:
 

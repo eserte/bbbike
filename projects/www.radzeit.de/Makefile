@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.61 2005/05/12 23:35:30 eserte Exp $
+# $Id: Makefile,v 1.61 2005/05/12 23:35:30 eserte Exp eserte $
 #
 
 # Targets:
@@ -208,9 +208,7 @@ do-rsync-routopedia:
 	    routopedia/ ${RSYNC_DEST}/routopedia/
 
 check-rsync-data-ok:
-	@echo "Please sync also the program part!"
-	@echo "And then comment out this rule's commands"
-	false
+	true
 
 rsync-bbbike-data:	check-rsync-data-ok \
 			clean-cache-files-on-remote \

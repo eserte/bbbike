@@ -1,4 +1,4 @@
-# $Id: Makefile.doc,v 1.1 2005/06/15 08:14:10 eserte Exp $
+# $Id: Makefile.doc,v 1.1 2005/06/15 08:14:10 eserte Exp eserte $
 
 
 MAINTAINER=	slaven@rezic.de
@@ -6,6 +6,8 @@ DOC=		HOWTO_edit_bbbike_data
 
 SRCS=		${DOC}.sgml
 FORMATS?=	html
+
+HAS_INDEX=	true
 
 DOC_PREFIX?=	/usr/doc
 DSLHTML?=       ${DOC_PREFIX}/share/sgml/freebsd.dsl

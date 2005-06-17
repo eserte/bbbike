@@ -7,7 +7,7 @@ bbd - bbbike data format description
 =head1 DESCRIPTION
 
 C<bbd> is a simple format for describing points and polylines for
-geographics information systems.
+geographic information systems.
 
 Bbd files consist of newline-terminated records in the format:
 
@@ -19,7 +19,8 @@ Bbd files consist of newline-terminated records in the format:
 
 =item Name
 
-A descriptive name, for example the street name. This field should not
+A descriptive name, for example the street name, or (for attribute
+layers) a description of the attribute category. This field must not
 contain any TAB characters.
 
 If there is a main name and a descriptive part, then the latter should

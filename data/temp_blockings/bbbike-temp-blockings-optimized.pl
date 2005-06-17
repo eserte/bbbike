@@ -112,7 +112,15 @@ userdel	2 13178,10623 13206,10651
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1119650400,
+         'text' => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 12.04.2005-24.06.2005 ',
+         'from' => 1113170400,
+         'data' => 'userdel	q4 49039,44131 48583,44366
+userdel	q4 49039,44131 49691,43812
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -535,8 +543,8 @@ userdel	2 14153,-17829 13303,-18235
        },
        {
          'until' => 1119412800,
-         'text' => '"Bridge Partie", Modersohnbrücke von 21.06.2005, 18.00 Uhr bis 22.06.2005, 06:00 Uhr gesperrt',
-         'from' => 1119283200,
+         'text' => '"Bridge Partie", Modersohnbrücke von 21.06.2005, 06.00 Uhr bis 22.06.2005, 06:00 Uhr gesperrt ',
+         'from' => 1119240000,
          'data' => 'userdel	2 14026,10869 14139,11269
 ',
          'type' => 'gesperrt'
@@ -551,6 +559,51 @@ userdel	2 9812,12145 9890,12161
 userdel	2 9890,12161 9959,12180
 userdel	2 10170,12261 10109,12238
 userdel	2 10170,12261 10267,12305
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1119218400,
+         'text' => '300 Jahre Charlottenburg, 17.06.2005 bis 19.06.2005',
+         'from' => 1118988173,
+         'data' => 'userdel	2 3076,12192 3038,12482
+userdel	2 3076,12192 3091,12071
+userdel	2 3038,12482 2647,12427
+userdel	2 3038,12482 3280,12512
+userdel	2 3103,11968 3091,12071
+userdel auto	3 3365,12231 3076,12192 2902,12183
+userdel auto	3 2902,12183 3076,12192 3365,12231
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1120946400,
+         'text' => 'L 30; (Woltersdorfer Landstr.); OD Erkner Grundhafter Straßenbau Vollsperrung 08.07.2005-09.07.2005 ',
+         'from' => 1120687200,
+         'data' => 'userdel	q4 34271,3184 34486,4276
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1119132000,
+         'text' => 'L 77; (Saarmund-Güterfelde); OD Philippsthal, zw. Kreisel u. OE Dreharbeiten Vollsperrung 17.06.2005-18.06.2005 ',
+         'from' => 1118872800,
+         'data' => 'userdel	q4 -6319,-7823 -6659,-8210
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1119240000,
+         'text' => '"Köpenicker Sommer", im Bereich Altstadt Straßen gesperrt bis 20.06.2005, 06:00 Uhr (Schloßplatz, Grünstraße, Rosenstraße, Alt-Köpenick, Schüßlerplatz, Jägerstraße, Luisenhain, Schloßinsel) ',
+         'from' => 1118993118,
+         'data' => 'userdel	2 22138,4661 22111,4562
+userdel	2 22138,4661 22196,4847
+userdel	2 22111,4562 22162,4546
+userdel	2 22111,4562 22093,4499
+userdel	2 22147,4831 22043,4562
+userdel	2 22383,4703 22312,4593
+userdel	2 22312,4593 22162,4546
+userdel	2 22043,4562 22071,4501
 ',
          'type' => 'gesperrt'
        }

@@ -27,7 +27,7 @@ alink="#0000FF">
 
 <p class="COPYRIGHT">Copyright &copy; 2005 by Slaven Rezic</p>
 
-<p class="PUBDATE">$Date: 2003/04/26 12:11:28 $<br />
+<p class="PUBDATE">$Date: 2005/06/17 21:57:30 $<br />
 </p>
 
 <hr />
@@ -86,12 +86,14 @@ geladen und zeigen jetzt auch Punkte für jeden Kreuzungs- und Kurvenpunkt an.</p
 <hr />
 <h1 class="SECT1"><a id="AEN38" name="AEN38">4. Straßen-Editor</a></h1>
 
-<p>Mit Klick auf das Menü Bearbeiten &#62; Straßen-Editor wird ein Fenster mit einigen
-Editieroption geöffnet.</p>
+<p>Mit Klick auf das Menü <span class="GUIMENU">Bearbeiten</span> &#62; <span
+class="GUIMENUITEM">Straßen-Editor</span> wird ein Fenster mit einigen Editieroption
+geöffnet.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN41" name="AEN41">4.1. Neue Straßen hinzufügen</a></h2>
+<h2 class="SECT2"><a id="NEWSTREETS" name="NEWSTREETS">4.1. Neue Straßen
+hinzufügen</a></h2>
 
 <p>Durch Klicken auf die Karte kann ein Straßenzug zusammengestellt werden. Für nicht
 bestehende Punkte muss man gleichzeitig die Shift-Taste gedrückt halten. Bei bereits
@@ -108,11 +110,11 @@ Datei, normalerweise <tt class="FILENAME">strassen</tt> (in Berlin), <tt
 class="FILENAME">landstrassen</tt> (im näheren Umland von Berlin) oder <tt
 class="FILENAME">landstrassen2</tt> (im entfernteren Umland von Berlin und außerhalb von
 Brandenburg) hinzugefügt werden. Im nachfolgenden Dialog wird der Straßenname und die
-Kategorie eingetragen, die Koordinaten des Straßenzugs sind bereits eingetragen.</p>
+Kategorie eingetragen, die Koordinaten des Straßenzugs sind bereits eingetragen.&#13;</p>
 
 <div class="SECT3">
 <hr />
-<h3 class="SECT3"><a id="AEN50" name="AEN50">4.1.1. Regeln bei Straßennamen</a></h3>
+<h3 class="SECT3"><a id="AEN52" name="AEN52">4.1.1. Regeln bei Straßennamen</a></h3>
 
 <p>In Berlin (<tt class="FILENAME">strassen</tt>) werden nur "offizielle" Straßennamen
 verwendet. Offizielle Straßennamen sind in der Datei <tt
@@ -185,24 +187,45 @@ Beispiele:</p>
 &#13;<br />
 <br />
 <p>Nach dem Einfügen der Straße ist diese nicht sofort sichtbar, sondern die Straße muss
-mit "Reload" neu geladen werden. Achtung: manchmal funktioniert "Reload" nicht, dann muss
-der Layer aus- und wieder eingeschaltet werden. Tipp: um das Laden zu beschleunigen kann
-im Layermenu "Lazy drawing" verwendet werden. Achtung: "Lazy drawing" führt zu einem
-Speicherleck, der zu einem stetigen Speicherzuwachs in BBBike führt.</p>
+mit "Reload" neu geladen werden.</p>
+
+<div class="WARNING">
+<blockquote class="WARNING">
+<p><b>Warning</b>Manchmal funktioniert "Reload" nicht, dann muss der Layer aus- und
+wieder eingeschaltet werden.</p>
+</blockquote>
+</div>
+
+<div class="TIP">
+<blockquote class="TIP">
+<p><b>Tip:</b> Um das Laden zu beschleunigen kann im Layermenu "Lazy drawing" verwendet
+werden.</p>
+</blockquote>
+</div>
+
+<div class="WARNING">
+<blockquote class="WARNING">
+<p><b>Warning</b>"Lazy drawing" führt zu einem Speicherleck, der zu einem stetigen
+Speicherzuwachs in BBBike führt.</p>
+</blockquote>
+</div>
+
+&#13;<br />
+<br />
 </div>
 </div>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN67" name="AEN67">4.2. Attribute zu einer Straße
+<h2 class="SECT2"><a id="AEN75" name="AEN75">4.2. Attribute zu einer Straße
 hinzufügen</a></h2>
 
 <p>Nach dem Reload ist die neue Straße sichtbar. Man kann sich wieder den Straßenzug
 zusammenklicken (den ganzen Teil oder nur einen Teil davon) und diesen Straßenzug mit
 "Add to new" zu einer Attributdatei hinzufügen. Hier muss darauf geachtet werden, dass
 alle Punkte auf bestehenden Kurvenpunkten liegen (Shift-Maustaste ist hier verboten) und
-dass kein Punkt vergessen oder doppelte angeklickt wurden.<a id="AEN70" name="AEN70"
-href="#FTN.AEN70">[1]</a>&#13;</p>
+dass kein Punkt vergessen oder doppelte angeklickt wurden.<a id="AEN78" name="AEN78"
+href="#FTN.AEN78">[1]</a>&#13;</p>
 
 <p>Mögliche Attribute sind Fahrbahnqualität (<tt class="FILENAME">qualitaet_s</tt> für
 Berliner, <tt class="FILENAME">qualitaet_l</tt> für Nicht-Berliner Straßen), sonstige
@@ -211,12 +234,12 @@ class="FILENAME">handicap_l</tt> für Nicht-Berliner Straßen), Radwege (<tt
 class="FILENAME">radwege</tt> für Berlin, <tt class="FILENAME">comments_cyclepath</tt>
 außerhalb Berlins) usw. Eine Liste der Attributierungsdateien befindet sich in <a
 href="bbd.html" target="_top">der Dokumentation zum bbd-Format</a>. Hier sind auch die
-verwendeten Kategorien beschrieben.</p>
+verwendeten Kategorien beschrieben. &#13;</p>
 </div>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN80" name="AEN80">4.3. Die orig-Dateien konvertieren</a></h2>
+<h2 class="SECT2"><a id="AEN88" name="AEN88">4.3. Die orig-Dateien konvertieren</a></h2>
 
 <p>Die im Edit-Modus bearbeiteten Dateien sind die Dateien im Verzeichnis <tt
 class="FILENAME">data</tt> mit der Endung <tt class="FILENAME">-orig</tt>. BBBike im
@@ -235,11 +258,92 @@ href="#OFFICIALSTREETNAMES">oben</a>), <tt class="FILENAME">Berlin.coords.data</
 sortiert sein, alle Ampeln müssen sich auf Kurvenpunkten existieren, alle Attributedaten
 müssen auf bestehenden Straßenzügen liegen usw.&#13;</p>
 </div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="INSERTPOINT" name="INSERTPOINT">4.4. Punkt hinzufügen</a></h2>
+
+<p>Im Straßen-Editor gibt es zwei Möglichkeiten zum Einfügen eines Punktes in eine
+bestehende Seite.&#13;</p>
+
+<p>Mit "Insert point" kann mit einem einfachen Mausklick auf eine Straße an dieser Stelle
+ein Punkt ausgewählt werden. Danach erscheint ein Dialog, wo man das Einfügen bestätigt,
+unter Umständen per Checkbox nur für bestimmte Layer. Nach dem Bestätigen kann per
+"Reload" der neue Punkt sichtbar gemacht werden. Achtung! Beim Bestätigen sollte man den
+angezeigten Straßennamen überprüfen. Stimmt dieser nicht überein, so muss das Hinzufügen
+des Punktes abgebrochen werden, und der Straßen-Layer aus- und wieder eingeschaltet
+werden (bekannter Bug in BBBike). "Insert point" ist ein Modus, der ein- und
+ausgeschaltet werden muss.&#13;</p>
+
+<p>Mit "Insert multiple points" können mehrere Punkte zwischen zwei benachbarten
+Kurvenpunkten eingefügt werden. Dazu klickt man zuerst den ersten Kurvenpunkt an (ohne
+Shift), dann die einzufügenden Punkte (mit Shift) und schließlich den zweiten Kurvenpunkt
+an. Jetzt wählt man "Insert multiple points" aus. Ein Dialog erscheint, wo man das
+Einfügen bestätigen muss und kann dann auf Reload drücken. Der bei der ersten Methode
+erwähnte Bug tritt hier nicht auf.&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN107" name="AEN107">4.5. Punkt verschieben</a></h2>
+
+<p>Mit "Move points" kann ein Punkt verschoben werden. Das wird man z.B. machen, wenn man
+anhand eines GPS-Tracks feststellt, dass eine Straße verschoben ist. Zum Verschieben
+klickt man zuerst den zu verschiebenden Punkt an (ohne Shift) und dann das Ziel (mit oder
+ohne Shift, je nachdem, ob das Ziel ein existierender Kurvenpunkt ist), und schließlich
+"Move points". Der Dialog mit den betreffenden Layern wird angezeigt und kann bestätigt
+werden. Achtung: einige Punkte sollten nur bei genauer vorheriger Überprüfung verschoben
+werden. Dazu zählen Endpunkte (im Dialog mit "endpoint" markiert), Höhenpunkte, Ampeln
+u.ä.&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN110" name="AEN110">4.6. Linie verschieben</a></h2>
+
+<p>Eine bestehende Linie zwischen zwei Punkten kann verschoben werden. Man benutzt diese
+Funktion anstelle von "Move point", wenn einer der Punkte bereits für eine andere Straße
+an der richtigen Stelle steht. Arbeitsweise: die beiden benachbarten Punkte der zu
+verschiebenden Strecke mit Klick markieren (ohne Shift), wobei der zweite Punkt der zu
+verschiebende ist. Dann wird der Zielpunkt mit Klick ausgewählt (meistens mit Shift).
+"Move line" auswählen, Dialog bestätigen und evtl. ein Reload durchführen.&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN113" name="AEN113">4.7. Punkt suchen</a></h2>
+
+<p>Mit "Grep point" kann nachgeschaut werden, in welchen Layern ein Punkt vorkommt. Die
+Vorgehensweise ist: Punkt per Klick markieren und dann auf "Grep point" klicken.&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN116" name="AEN116">4.8. Punkt löschen</a></h2>
+
+<p>Dieser Punkt muss noch mehr als "Einen Punkt bewegen" mit Vorsicht behandelt werden.
+Auch hier gilt, dass Höhenpunkte und Ampeln normalerweise nicht gelöscht werden sollen.
+Bei Strecken muss darauf geachtet werden, dass mindestens zwei Punkte in der Strecke
+übrig bleiben.&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN119" name="AEN119">4.9. Koordinatenliste anzeigen</a></h2>
+
+<p>Eine Koordinatenliste (kann auch aus einem einzelnen Punkt bestehen) markieren und mit
+"Copy" im jeweiligen Programm auswählen (Unix-Benutzer müssen in der Regel nur
+markieren). In BBBike den Menüpunkt Editieren &#62; Linienkoordinaten anzeigen auswählen.
+Nach Klick auf dem Button wird der Kartenausschnitt verschoben und die Punkte der
+Koordinatenliste blinken auf. Mit der Option "Ständige Markierungen" bleibt die
+Markierung ständig bestehen, ansonsten verschwindet sie nach wenigen Sekunden.&#13;</p>
+</div>
 </div>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN94" name="AEN94">5. Veröffentlichen der Ergänzungen</a></h1>
+<h1 class="SECT1"><a id="AEN122" name="AEN122">5. Veröffentlichen der
+Ergänzungen</a></h1>
 
 <p>Bei der Verwendung des Straßen-Editors wird eine Logdatei in <tt
 class="FILENAME">data/datachange.log</tt> geschrieben. Diese Datei sollte an den <a
@@ -254,7 +358,7 @@ geschickt werden.&#13;</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN101" name="AEN101">6. Nach dem Veröffentlichen</a></h1>
+<h1 class="SECT1"><a id="AEN129" name="AEN129">6. Nach dem Veröffentlichen</a></h1>
 
 <p>Es ist empfehlenswert, das Verzeichnis <tt class="FILENAME">data</tt> nach dem
 Veröffentlichen umzubenennen (oder zu löschen) und das alte Verzeichnis mit <tt
@@ -265,14 +369,425 @@ eingepflegt hat.&#13;</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN106" name="AEN106">7. Eine komplett neue Datenbank
-aufbauen</a></h1>
+<h1 class="SECT1"><a id="AEN134" name="AEN134">7. Erfassen anhand eines
+GPS-Tracks</a></h1>
+
+<p>GPS-Tracks können entweder als zusätzlicher Straßen-Layer oder (bevorzugt für Tracks
+im <a href="http://www.ncc.up.pt/gpsman/" target="_top">gpsman</a>-Format) über den
+Menüpunkt Layer zeichnen &#62; Gpsman-Daten zeichnen dargestellt werden. Im letzteren
+Fall sollten sich die GPS-Tracks im Verzeichnis <tt
+class="FILENAME">bbbike/misc/gps_data/</tt> im Dateinamenformat <tt
+class="FILENAME">YYYYMMDD.trk</tt> für Tracks und <tt class="FILENAME">YYYYMMDD.wpt</tt>
+für Waypoints befinden.</p>
+
+<p>Straßen müssen manuell eingetragen werden (siehe <a href="#NEWSTREETS">Neue Straßen
+hinzufügen</a>). Man darf GPS-Tracks nicht 100%ig trauen, da bei schlechten
+Sichtverhältnissen zu den Satelliten (Straßenschluchten, im Wald) oder Reflexionen von
+Hochhäusern verfälschte Punkte auftreten können.</p>
+
+<p>Bei dargestellten Gpsman-Tracks wird die jeweilige Geschwindigkeit farblich kodiert
+(der Farbverlauf kann vor dem Zeichnen nach Belieben eingestellt werden). Das kann
+helfen, um z.B. schlechte Wegabschnitte nachträglich zu identifizieren. Genauer ist es
+meist, wenn man zusätzlich zum Track auch die zugehörigen Waypoints zeichnen lässt.
+Während der Radtouren setzt man dann an "interessanten" Stellen, z.B. bei
+Qualitätsänderungen (Asphalt -&gt; Kopfsteinpflaster) einen Waypoint.</p>
+
+<p>Steigungen können nur bei GPS-Geräten mit barometrischen Höhenmesser einigermaßen
+zuverlässig bestimmt werden. Obwohl GPS-Geräte absolute Höhenangaben erzeugen, sollten
+diese nicht verwendet werden, weil dazu die Geräte höhenkalibriert sein müssen.
+Stattdessen kann man die relative Höhenänderung in eine Prozentangabe übersetzen und in
+die Datei <tt class="FILENAME">comments_mount</tt> eintragen.</p>
+</div>
+
+<div class="SECT1">
+<hr />
+<h1 class="SECT1"><a id="AEN146" name="AEN146">8. Ein Exkurs über die verwendeten
+Attribute</a></h1>
+
+<p>Grundsätzlich ist die Lektüre der <a href="bbd.html" target="_top">Dokumentation des
+bbd-Formats</a> (leider nur englisch) empfehlenswert.&#13;</p>
 
 <div class="SECT2">
-<h2 class="SECT2"><a id="INSERTPOINT" name="INSERTPOINT">7.1. Punkt hinzufügen</a></h2>
+<hr />
+<h2 class="SECT2"><a id="AEN150" name="AEN150">8.1. Qualität</a></h2>
 
-<p></p>
+<p>Fahrbahnbeschaffenheit wie Asphalt, Kopfsteinpflaster, Waldweg usw. Kombinationen sind
+im Beschreibungsteil möglich, z.B. "schlechtes Kopfsteinpflaster mit Sandbanketten" oder
+"schlechte sandige Straße, Ausweichen auf Gehweg möglich". In der Regel sollte man die
+schlechtere Kategorie für solchen Fälle wählen.&#13;</p>
+
+<p>Dateinamen: <tt class="FILENAME">qualitaet_s</tt> und <tt
+class="FILENAME">qualitaet_l</tt>&#13;</p>
 </div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN156" name="AEN156">8.2. sonstige Beeinträchtigungen</a></h2>
+
+<p>Manchmal auch als "sonstige Behinderungen" oder "handicap" bezeichnet. Hier kommt
+alles herein, was, salopp gesprochen, nicht rüttelt, aber dennoch zu einer langsameren
+Fahrweise zwingt. Beispiele wären Fußgängerzonen, Parkwege mit vielen Fußgängern, enge
+und kurvenreiche Wege, aber auch Wege mit Bordsteinen (letzteres könnte in Zukunft anders
+gelöst werden). Notorisch zugestaute Straßen (z.B. die Friedrichstraße in Berlin-Mitte)
+könnten theoretisch hier auch aufgeführt werden.&#13;</p>
+
+<p>Temporäre Beeinträchtigungen werden mit einer "temporary"-Direktive versehen und
+können noch den Zusatz <tt class="CONSTANT">::inwork</tt> erhalten (Beispiel <tt
+class="CONSTANT">q4::inwork</tt>). Der Beschreibungstext sollte zudem das Datum der
+Aufhebung im Format YYYY-MM-DD enthalten, so dass das Postprocessing rechtzeitig das
+Ablaufen anzeigen kann.&#13;</p>
+
+<p>Dateinamen: <tt class="FILENAME">handicap_s</tt> und <tt
+class="FILENAME">handicap_l</tt>&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN165" name="AEN165">8.3. Radwege</a></h2>
+
+<p>In Berlin wird versucht, genau zu kategorisieren, siehe auch <a
+href="bbd.html#CYCLE_PATHS_RADWEGE_" target="_top">die entsprechende Dokumentation in der
+<tt class="FILENAME">bbd</tt>-Dokumentation</a>. Ob ein Radweg benutzungspflichtig ist,
+ändert sich in Berlin häufig und man merkt sich dieses Merkmal beim Vorbeifahren
+schlecht, so dass eine Fehlkategorisierung mit <tt class="CONSTANT">RW1</tt> statt <tt
+class="CONSTANT">RW2</tt> verziehen wird. Der Unterschied zwischen Suggestivstreifen und
+Radspur ist nicht immer klar ersichtlich. Bei Busspuren gibt es noch keine
+Kategorisierung nach den Geltungszeiten, diese könnte im Beschreibungsfeld stehen (das
+ist in den bisherigen Daten noch nicht der Fall).&#13;</p>
+
+<p>In der Berliner Umgebung wird nur mit <tt class="CONSTANT">RW</tt> kategorisiert und
+möglichst immer das Beschreibungsfeld gefüllt.&#13;</p>
+
+<p>Die Qualität des Radwegs kann nur im Beschreibungsfeld als beschreibender Text
+eingetragen werden.&#13;</p>
+
+<p>Dateinamen: <tt class="FILENAME">radwege</tt> und <tt
+class="FILENAME">comments_cyclepath</tt>&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN178" name="AEN178">8.4. Grüne Wege</a></h2>
+
+<p>Wege, die durch Parks und Wälder oder an Gewässern entlang führen. Es gibt zwei
+Stufen, <tt class="CONSTANT">green1</tt> und <tt class="CONSTANT">green2</tt>. <tt
+class="CONSTANT">green1</tt> wird vergeben, wenn sich der Weg im überwiegend städtischen
+Gebiet befindet (z.B. Uferstraßen) oder es sich um eine größere Straße in einem Park
+handelt (z.B. John-Foster-Dulles-Allee). Die Kanaluferstraßen am Landwehrkanal würden
+eigentlich <tt class="CONSTANT">green1</tt>-konform sein, aber die Straßen sind dort so
+sehr befahren, dass sie keine "green"-Kategorisierung erhalten haben.&#13;</p>
+
+<p>Im Beschreibungsfeld steht meistens der Typ wie "Uferstraße" oder "Parkweg durch den
+Tiergarten".&#13;</p>
+
+<p>In Vorbereitung ist die Datei <tt class="FILENAME">comments_scenic</tt> wo
+landschaftlich besonders schöne Strecken im Umland oder sonstige schöne Straßen in der
+Stadt beschrieben werden können.&#13;</p>
+
+<p>Dateiname: <tt class="FILENAME">green</tt>&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN190" name="AEN190">8.5. Unbeleuchtete Straßen</a></h2>
+
+<p>Hier werden nachts unbeleuchtete Straßen eingetragen. Bei Grenzfällen, z.B.
+Ausschalten der Beleuchtung zu einer bestimmten Uhrzeit, kann diese im Beschreibungsfeld
+aufgeführt werden.&#13;</p>
+
+<p>Dateiname: <tt class="FILENAME">nolighting</tt>&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN195" name="AEN195">8.6. Ampeln</a></h2>
+
+<p>Neben Ampeln (hochdeutsch: LSA) kann man auch Bahnübergänge und Zugbrücken
+unterbringen. Bei Bahnübergängen (Kategorie <tt class="CONSTANT">B</tt>) kann man im
+Beschreibungsfeld die ungefähre Anzahl von Zügen pro Stunde angeben.&#13;</p>
+
+<p>Bei Zugbrücken (Kategorie <tt class="CONSTANT">Zbr</tt>) können im Beschreibungsfeld
+die Sperrzeiten angegeben werden, falls welche existieren (z.B. gesehen bei der B110
+zwischen Anklam und Usedom).&#13;</p>
+
+<p>Bei Ampeln wird zwischen normalen Ampeln (Kategorie <tt class="CONSTANT">X</tt>,
+Achtung: kann sich in Zukunft ändern) und reinen Fußgängerampeln (Kategorie <tt
+class="CONSTANT">F</tt>) unterschieden. Ampeln sind nur in Berlin erfasst.&#13;</p>
+
+<p>Mehrfachampeln werden meistens nur einfach erfast, aber theoretisch könnte man das
+Beschreibungsfeld mit einer Erklärung ergänzen.&#13;</p>
+
+<p>Dateiname: <tt class="FILENAME">ampeln</tt>&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN207" name="AEN207">8.7. Steigungen</a></h2>
+
+<p>Drei Möglichkeiten gibt es zur Erfassung von Steigungen:</p>
+
+<ul>
+<li>
+<p>Angabe von Höhenpunkten. In diesem Fall wird ein Eintrag in der Datei <tt
+class="FILENAME">mount</tt> automatisch vom Postprocessing erzeugt.</p>
+</li>
+
+<li>
+<p>Angabe einer informellen Steigung ohne Prozentangabe. Dies geschieht in der Datei <tt
+class="FILENAME">comments_mount</tt>. Mann lann Attribute wie "steil", "stark", "flach",
+"lang", "wellig", "kurz" im Beschreibungsfeld unterbringen.</p>
+</li>
+
+<li>
+<p>Angabe der Steigung in Prozent. Quelle für die Prozentzahl könnte ein Steigungsschild
+an der Straße oder relative Höhenangaben eines barometrischen Höhenmessers sein. In
+diesem Fall muss im Beschreibungsfeld "Steigung n%" stehen.</p>
+</li>
+</ul>
+
+&#13;<br />
+<br />
+<p>Gefälle werden niemals angegeben, sondern ergeben sich implizit aus der
+Steigung.&#13;</p>
+
+<p>Dateinamen: <tt class="FILENAME">hoehe</tt>, <tt class="FILENAME">comments_mount</tt>,
+<tt class="FILENAME">mount</tt>&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN224" name="AEN224">8.8. Straßenbahnen</a></h2>
+
+<p>Wenn zwischen Straßenbahngleisen und parkenden Autos oder Bordsteinkante wenig Platz
+ist, sollte ein Eintrag in dieser Datei geschaffen werden. Faustregel wäre: ein Fahrrad
+mit Anhänger sollte gebührenden Abstand zu parkendes Autos halten können und sicher von
+einer Straßenbahn überholt werden. Nur in Berlin erfasst.&#13;</p>
+
+<p>Dateiname: <tt class="FILENAME">comments_tram</tt>&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN229" name="AEN229">8.9. Ausgeschilderte Radrouten</a></h2>
+
+<p>Beispiele für ausgeschilderte Radrouten sind der europäische Radfernweg R1, die neuen
+Radialrouten in Berlin (z.B. RR10), Berlin-Usedom, Mauerradweg. Oft sind Abschnitte zwar
+als Radroute angedacht, aber (noch) nicht ausgeschildert. Es wäre gut, wenn diese
+Abschnitte entsprechend markiert werden. Manche Nummerierungen werden doppelt vergeben,
+so gibt es eine R1 auch in der Bernauer Umgebung. In diesem Fall wird der
+"unbedeutendere" Weg genauer gekennzeichnet. Für einige wichtige Radrouten gibt es
+vorreservierte Buchstabenkürzel, z.B. "BU" für Berlin-Usedom. Diese sind in der
+Programmdatei <tt class="FILENAME">Geography/Berlin_DE.pm</tt> fest verdrahtet.&#13;</p>
+
+<p>Dateiname: <tt class="FILENAME">comments_route</tt>&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN235" name="AEN235">8.10. Kommentare für
+Streckenführungen</a></h2>
+
+<p>Manchmal sind Streckenführungen in der Realität nicht einfach zu finden. Dazu werden
+in dieser Datei erleichternde Erklärungen geschrieben. Beispiele wären "Ausgeschildert
+als ..." oder "An der Kreuzung .../... die Straßenseite wechseln" oder "Am einsamen Haus
+links abbiegen". Es gibt Punktkommentare (für einen Punkt immer gültig, egal in welche
+Richtung man fährt) und Streckenkommentare (gültig, falls man den kompletten Streckenteil
+fährt; wahlweise auch in der Form, die nur für eine Richtung gültig ist).&#13;</p>
+
+<p>Dateiname: <tt class="FILENAME">comments_path</tt>&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN240" name="AEN240">8.11. Kommentare zu
+Fährverbindungen</a></h2>
+
+<p>Fährzeiten und Preise der Fähren, möglichst mit dem Stand der letzten
+Aktualisierung.&#13;</p>
+
+<p>Dateiname: <tt class="FILENAME">comments_ferry</tt>&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN245" name="AEN245">8.12. Sonstige Kommentare</a></h2>
+
+<p>Alle Kommentare, die nicht in eine der anderen Dateien passen, kommen hier
+herein.&#13;</p>
+
+<p>Dateiname: <tt class="FILENAME">comments_misc</tt>&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN250" name="AEN250">8.13. Gesperrte Straßen</a></h2>
+
+<p>Darunter fallen folgende Typen:</p>
+
+<ul>
+<li>
+<p>Einbahnstraßen, die auch für Radfahrer gelten (Kategorie <tt
+class="CONSTANT">1</tt>&#13;</p>
+</li>
+
+<li>
+<p>Einbahnstraßen, die in der Praxis von Radfahrern ignoriert werden können <tt
+class="CONSTANT">1s</tt>&#13;</p>
+</li>
+
+<li>
+<p>Für Radfahrer vollkommen gesperrte Straßen (z.B. Kfz-Straßen wie die B96a in
+Altglienicke, aber siehe auch <a href="#AEN299">hier</a>; Kategorie <tt
+class="CONSTANT">2</tt>)&#13;</p>
+</li>
+
+<li>
+<p>Stellen, an denen getragen werden muss (Kategorie <tt class="CONSTANT">0:n</tt>, wobei
+<tt class="CONSTANT">n</tt> für die Zeit in Sekunden steht, die dabei verloren geht -
+hier wähle ich miest großzügige Zeiten, meistens nicht unter 30 Sekunden)&#13;</p>
+</li>
+
+<li>
+<p>Drängelgitter und Ähnliches (Kategorie <tt class="CONSTANT">BNP:n</tt>, auch hier
+steht <tt class="CONSTANT">n</tt> für die verlorene Zeit)&#13;</p>
+</li>
+
+<li>
+<p>Eine gesperrte Wegführung (z.B. nicht mögliches Abbiegen oder Überqueren einer Straße)
+(Kategorie <tt class="CONSTANT">3</tt>)&#13;</p>
+</li>
+
+<li>
+<p>Die Spezialkategorie <tt class="CONSTANT">3nocross</tt>, mit der ein Straßenzug, der
+nicht überquert werden kann, gekennzeichnet wird (im Postprocessing werden die <tt
+class="CONSTANT">3nocross</tt>-Kategorien in mehrere Strecken mit der Kategorie <tt
+class="CONSTANT">3</tt> umgewandelt)&#13;</p>
+</li>
+</ul>
+
+&#13;<br />
+<br />
+<p>Gesperrte Straßen für Autofahrer können in der Datei <tt
+class="FILENAME">gesperrt_car</tt> eingetragen werden.&#13;</p>
+
+<p>Temporär gesperrte Strecken sollten mit einer Direktive "temporary" versehen werden
+und unter Umständen in der Kategorie den Zusatz <tt class="CONSTANT">:inwork</tt>
+(Achtung: hier nur ein Doppelpunkt, aber das kann sich ändern!) erhalten (siehe auch die
+<a href="#HANDICAPTEMPORARY">Ausführung zu temporären Einträgen in
+handicap</a>).&#13;</p>
+
+<p>Dateinamen: <tt class="FILENAME">gesperrt</tt>, <tt
+class="FILENAME">gesperrt_car</tt>&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN288" name="AEN288">8.14. Brunnels</a></h2>
+
+<p>Brunnels ist die Zusammenfassung von Brücken und Tunnels. In Zukunft werden auf
+BBBike-gezeichneten Karten brunnels auch als solche gemalt. Zurzeit können die
+brunnels-Daten verwendet werden, um bei der Erkennung von nicht eingetragenen Kreuzungen
+beizutragen (Programm <tt class="FILENAME">miscsrc/check_crossings</tt>).&#13;</p>
+
+<p>Dateiname: <tt class="FILENAME">brunnels</tt>&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN294" name="AEN294">8.15. Vorfahrtstraßen</a></h2>
+
+<p>Diese Datensätze bestehen aus Koordinaten für einen Straßenzug, der Vorfahrt am
+mittleren Punkt besitzt. Dieser Layer kann in BBBike gezeichnet werden, wird aber nicht
+weiter verwendet.&#13;</p>
+
+<p>Dateiname: <tt class="FILENAME">vorfahrt</tt>&#13;</p>
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN299" name="AEN299">8.16. Autobahnen</a></h2>
+
+<p>Autobahnen und Kraftfahrzeugstraßen können zu Informationszwecken in diesem Layer
+aufgeführt werden. Strikt gesehen müssen die Strecken nicht so gezeichnet sein, dass sie
+routingfähig sind.&#13;</p>
+
+<p>Dateiname: <tt class="FILENAME">strassen_bab</tt>&#13;</p>
+</div>
+</div>
+
+<div class="SECT1">
+<hr />
+<h1 class="SECT1"><a id="AEN304" name="AEN304">9. Alternative
+Editiermöglichkeiten</a></h1>
+
+<div class="SECT2">
+<h2 class="SECT2"><a id="AEN306" name="AEN306">9.1. Schnelles Erfassen von Daten</a></h2>
+
+<p>Es ist auch möglich, mit der Standardinstallation von BBBike (ohne CVS) Daten zu
+erfassen, die an der Daten-Maintainer geschickt werden können. Dazu muss einfach ein
+Straßenzug zusammengeklickt werden, indem man die Shift-Maustaste verwendet. Nach
+Auswählen des Menüpunktes Editieren &#62; Path to Selection (dazu muss die <a
+href="#BBBIKEADVANCED">Option Advanced</a> aktiviert sein) steht die Koordinatenliste als
+Selection zur Verfügung und kann mit "Paste" in einen Editor oder ein Mailprogramm
+eingefügt werden. Es ist für den Maintainer hilfreiche, wenn dabei das normale
+BBBike-Datenformat verwendet wird, also</p>
+
+<pre class="PROGRAMLISTING">
+    Bechreibung    TAB    Kategorie oder X   Space    Koordinatenliste
+</pre>
+
+&#13;<br />
+<br />
+</div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN311" name="AEN311">9.2. Direktes Editieren der Daten</a></h2>
+
+<p>BBBike-Daten sind reine Textdateien und können mit einem normalen Texteditor
+bearbeitet werden. Allerdings wird dabei kein <tt class="FILENAME">datachange.log</tt>
+erzeugt und das Zusammenführen mit den Stammdaten könnte in Handarbeit resultieren.
+Deshalb sollte möglichst immer der Straßen-Editor verwendet werden. In einigen Fällen ist
+aber weitergehendes Editieren möglich. Für die genauere Beschreibung des
+BBBike-Datenformats siehe <a href="bbd.html" target="_top">hier</a>.&#13;</p>
+</div>
+</div>
+
+<div class="SECT1">
+<hr />
+<h1 class="SECT1"><a id="AEN316" name="AEN316">10. Neue Layer auf Basis der Berliner
+BBBike-Daten</a></h1>
+
+<p>TBD &#13;</p>
+</div>
+
+<div class="SECT1">
+<hr />
+<h1 class="SECT1"><a id="AEN319" name="AEN319">11. Eine komplett neue Datenbank
+aufbauen</a></h1>
+
+<p>Dazu sollte ein neues Datenverzeichnis parallel zu <tt
+class="FILENAME">data</tt>-Verzeichnis erzeugt werden. Das Verzeichnis sollte alle
+Dateien aus <tt class="FILENAME">data</tt> enthalten (Unterverzeichnisse können erst
+einmal ignoriert werden), aber alle Dateien sollten leer (d.h. 0 Bytes größ) sein
+(Ausnahmen: <tt class="FILENAME">Makefile</tt>, <tt
+class="FILENAME">Makefile.mapfiles</tt>, <tt class="FILENAME">BASE</tt>, <tt
+class="FILENAME">README</tt> - diese Dateien sollten unverändert gelassen werden).</p>
+
+<p>Das neue Datenverzeichnis sollte bevorzugt einen Namen im Format <tt
+class="FILENAME">data_&lt;stadt&gt;_&lt;landeskuerzel&gt;</tt> haben, z.B. <tt
+class="FILENAME">data_hamburg_de</tt> (alles Kleinbuchstaben). Beim Starten von BBBike
+muss dieses neue Datenverzeichnis angegeben werden:</p>
+
+<pre class="PROGRAMLISTING">
+    bbbike -datadir data_hamburg_de
+</pre>
+
+Achtung: da manche BBBike-Tools sich auf ein hart kodiertes <tt
+class="FILENAME">data</tt>-Verzeichnis verlassen, könnten einige Editieroperationen
+fehlschlagen. Alternativ könnte man das neue Verzeichnis auch <tt
+class="FILENAME">data</tt> nennen, aber ein CVS-Update würde zu Konflikten führen.<br />
+<br />
 </div>
 </div>
 
@@ -280,8 +795,8 @@ aufbauen</a></h1>
 
 <table border="0" class="FOOTNOTES" width="100%">
 <tr>
-<td align="LEFT" valign="TOP" width="5%"><a id="FTN.AEN70" name="FTN.AEN70"
-href="#AEN70">[1]</a></td>
+<td align="LEFT" valign="TOP" width="5%"><a id="FTN.AEN78" name="FTN.AEN78"
+href="#AEN78">[1]</a></td>
 <td align="LEFT" valign="TOP" width="95%">
 <p>Eine weitere Möglichkeit der Punktauswahl wäre eine normale Suche (dazu in den
 Suchmodus gehen), aber dazu muss Suche &#62; Straßennetz neu berechnen ausgewählt werden,
