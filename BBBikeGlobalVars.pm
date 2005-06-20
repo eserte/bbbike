@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.25 2005/05/19 00:12:07 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.26 2005/06/19 20:21:17 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.25 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.26 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -54,7 +54,7 @@ use vars qw(
      $kneipen_photo $kneipen_klein_photo
      $essen_photo $essen_klein_photo $kino_klein_photo
      $search_photo $search_pref_photo $steigung_photo $gefaelle_photo
-     $inwork_photo $star_photo
+     $inwork_photo $star_photo $newlayer_photo
      $menuarrow_photo $ferry_photo $ferry_klein_photo $blocked_photo
      %photo
 );
@@ -234,6 +234,7 @@ use enum qw(:MM_
 	    SPECIALEDIT INSERTPOINT CREATERELATION
 	    CUSTOMCHOOSE CUSTOMCHOOSE_TAG
 	    BABYBIKE_SELECT BABYBIKE_BROWSE SCRIBBLE
+	    URL_SELECT
 	   );
 
 # Button2 modes, order is important because of option saving!

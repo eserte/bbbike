@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.12 2004/09/25 22:58:30 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.14 2005/06/19 20:21:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -297,8 +297,6 @@ sub BBBikeGPS::draw_gpsman_data {
 		   )->grid(-row => $row, -column => 1, -sticky => "ew");
 	$row++;
     }
-    $f->Button(Name => "ok",
-	       -command => sub { $weiter = 1 })->pack(-side => "left");
     $f->Button(-text => "?",
 	       -command => sub {
 		   my $ht = $f->Toplevel(-title => M("Hilfe"));
@@ -385,6 +383,15 @@ EOF
     $safe->rdo($cfc_file);
     if (defined $cfc_mapping) {
 	$cfc->set_mapping($cfc_mapping);
+    }
+
+    $cfc_top->Ruler->rulerPack;
+    {
+	my $f = $cfc_top->Frame->pack(-anchor => "e");
+	$f->Button(Name => "ok",
+		   -command => sub { $weiter = 1 })->pack(-side => "left");
+	$f->Button(Name => "close",
+		   -command => sub { $weiter = -1 })->pack(-side => "left");
     }
 
     $cfc_top->OnDestroy(sub { $weiter = -1 });
@@ -543,7 +550,11 @@ sub BBBikeGPS::do_draw_gpsman_data {
 			    if (defined $speed) {
 				$name .= int($speed) . " km/h ";
 			    }
-			    $name .= "[dist=" . BBBikeUtil::m2km($whole_dist,2) . ",time=" . BBBikeUtil::s2ms($whole_time) . "min" . sprintf(", abstime=%02d:%02d:%02d", @l[2,1,0]) . (defined $grade ? ", grade=" . sprintf("%.1f%%", $grade) : "") . "]";
+			    $name .= "[dist=" . BBBikeUtil::m2km($whole_dist,2) .
+				",time=" . BBBikeUtil::s2ms($whole_time) . "min" . sprintf(", abstime=%02d:%02d:%02d", @l[2,1,0]) .
+				    (defined $grade ? ", grade=" . sprintf("%.1f%%", $grade) : "") .
+					(defined $alt ? ", alt=" . sprintf("%.1fm", $alt) : "") .
+					"]";
 			    my $c1 = "$last_x,$last_y";
 			    my $c2 = "$x,$y";
 			    if ($main::use_current_coord_prefix) {
@@ -957,10 +968,10 @@ sub BBBikeGPS::draw_track_graph {
 	    if ($time) {
 		my $whole = $_->wholedist;
 		my $val = $whole/$time*3.6; # speed
+		next if !$max_x;
 		my $x = $c_x{$type} + ($c_w{$type}/$max_x)*$whole;
-
 		if (defined $last_x{$type}) {
-		    if (defined $val) {
+		    if (defined $val && $delta{$type}) {
 			my $y = $c_y + $c_h{$type}-( ($c_h{$type}/$delta{$type})*($val-$min{$type}));
 			if (defined $last_y{$type}) {
 			    $graph_c{$type}->createLine

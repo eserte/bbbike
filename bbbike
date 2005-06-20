@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.170 2005/06/04 10:08:57 eserte Exp eserte $
+# $Id: bbbike,v 3.171 2005/06/19 20:07:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -185,7 +185,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.170 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.171 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -1625,6 +1625,7 @@ $ampel_klein_grey_photo = load_photo($top, 'ampel_klein_grey.' . $default_img_fm
 $kopfstein_klein_photo      = load_photo($top, 'kopfstein_klein.' . $default_img_fmt);
 $kopfstein_klein_grey_photo = load_photo($top, 'kopfstein_klein_grey.' . $default_img_fmt);
 $star_photo             = load_photo($top, 'star.' . $default_img_fmt);
+$newlayer_photo		= load_photo($top, 'newlayer.' . $default_img_fmt);
 
 for(my $i = 0; $i <= $#speed; $i++) {
     my $ii = $i; # für das sub
@@ -2730,6 +2731,114 @@ sub do_iconframe {
     #XXXX menu_entry_up_down($knm, $tag_group{'str_f'});
     menuright($sehenswuerdigkeiten_check, $knm);
     menuarrow($knmb, $knm, $col++, -special => 'LAYER');
+
+##### Zusätzliche Kartenebenen #####
+    my $newlayer_label = $misc_frame->Label
+      (image_or_text($newlayer_photo, '*'),
+      )->grid(-row => $curr_row, -column => $col, -sticky => 's');
+    $balloon->attach($newlayer_label, -msg => M"Zusätzliche Kartenebenen");
+    $ch->attach($newlayer_label, -pod => "^\\s*Zusätzliche Kartenebenen");
+    my $nlmb = $misc_frame->Menubutton;
+    my $nlm = $nlmb->Menu(-title => M"Zusätzliche Kartenebenen");
+    {
+	# XXX this used to be LazyMenu to postpone loading of layers
+	# XXX maybe re-enable this one day if I find a possibility to
+	# update the cascade menu without showing the menu first.
+	my $cusm = $nlm;
+#XXX del:
+# 	$BBBike::Menubar::additional_layer_menu = $cusm;
+# 	$BBBike::Menubar::additional_layer_menu = $BBBike::Menubar::additional_layer_menu; # peacify -w
+ 	$cusm->{BBBike_Menulabel} = M"Zusätzliche Kartenebenen";
+#	$opbm->entryconfigure('last', -menu => $cusm);
+# 	$cusm->command(-label => M"Zusätzliche Layer",
+# 		       -state => 'disabled',
+# 		       -font => $font{'bold'});
+	$cusm->command(-label => M"Straßen-Layer zeichnen",
+		       -command => sub {
+			   require BBBikeAdvanced;
+			   tk_plot_additional_layer('str') });
+	if ($advanced) {
+	    $cusm->command(-label => M"Sperrungen-Layer zeichnen", # XXX label? in advanced mode because there is no way to delete the blockings from net!
+			   -command => sub {
+			       require BBBikeAdvanced;
+			       plot_additional_sperre_layer() });
+	}
+	$cusm->command(-label => M"Punkte-Layer zeichnen",
+		       -command => sub {
+			   require BBBikeAdvanced;
+			   tk_plot_additional_layer('p') });
+	$cusm->command(-label => M"Straßen/Punkte auswählen",
+		       -command => sub {
+			   require BBBikeAdvanced;
+			   choose_from_additional_layer() });
+	$cusm->cascade(-label => M("Letzte geöffnete Layer")."...");
+	{
+	    my $m = $cusm->Menu(-title => M("Letzte geöffnete Layer")."...");
+	    $cusm->entryconfigure("last", -menu => $m);
+	    $main::last_loaded_layers_obj =
+		{
+		 List => [],
+		 File => "$main::bbbike_configdir/last_layers",
+		 Menu => $m,
+		 Title => M("Letzte Layer").":",
+		 Cb => sub {
+		     my($file, %args) = @_;
+		     my $linetype = delete $args{-linetype};
+		     require BBBikeAdvanced;
+		     plot_additional_layer($linetype, $file, %args);
+		 },
+		 Max => 12,
+		};
+	    load_last_loaded($last_loaded_layers_obj);
+	}
+	if ($Tk::platform ne 'MSWin32') {
+	    $cusm->command(-label => M"Umordnen",
+			   -accelerator => 'Shift-X',
+			   -command => sub {
+			       require BBBikeAdvanced;
+			       layer_editor() });
+	}
+	$cusm->command(-label => M"Layer löschen",
+		       -command => sub {
+			   require BBBikeAdvanced;
+			   delete_additional_layer() });
+	$cusm->command(-label => M"Ausschnitt an Layer anpassen",
+		       -command => sub {
+			   require BBBikeAdvanced;
+			   tk_zoom_view_for_layer() });
+	$cusm->command(-label => M"Scrollregion an Layer anpassen",
+		       -command => sub {
+			   require BBBikeAdvanced;
+			   tk_set_scrollregion_for_layer() });
+	$cusm->command(-label => M"Scrollregion für Layer vergrößern",
+		       -command => sub {
+			   require BBBikeAdvanced;
+			   tk_enlarge_scrollregion_for_layer() });
+	if ($advanced) {
+	    $cusm->checkbutton(-label => M"Linienbreite 1 Punkt",
+			       -variable => \$default_line_width,
+			       -offvalue => undef, # XXX don't work,
+                                                   # set to 0... ???
+			       -onvalue => 1,
+			      );
+	}
+	$cusm->radiobutton(-label => M"WWW-Klickmodus", # XXX bessere Bezeichnung
+			   -variable => \$map_mode,
+			   -value => MM_URL_SELECT,
+			  );
+	$cusm->separator;
+	$cusm->command(-label => M"Gpsman-Daten zeichnen",
+		       -command => sub {
+			   draw_gpsman_data($top);
+		       });
+	$cusm->command(-label => M"GPS-Track-Animation",
+		       -command => sub {
+			   require BBBikeAdvanced;
+			   gps_animation($top);
+		       });
+    }
+    menuright($newlayer_label, $nlm);
+    menuarrow($nlmb, $nlm, $col++, -special => 'LAYER');
 
     # room for plugin buttons
     my $mode_layer_plugin_frame = $misc_frame->Frame->grid
@@ -3875,104 +3984,6 @@ sub do_iconframe {
 			   }
 		       },
 		      );
-    }
-
-    # XXX it would be nice to use autouse in the following callbacks,
-    # but it does not work because of artificial restrictions in
-    # autouse.pm
-    # XXX This menu is duplicated in setting and map layers. It should not.
-    $opbm->cascade(-label => M"Zusätzlich zeichnen ...");
-    {
-	# XXX this used to be LazyMenu to postpone loading of layers
-	# XXX maybe re-enable this one day if I find a possibility to
-	# update the cascade menu without showing the menu first.
-	my $cusm = $opbm->Menu(-title => M"Zusätzlich zeichnen ...");
-	$BBBike::Menubar::additional_layer_menu = $cusm;
-	$BBBike::Menubar::additional_layer_menu = $BBBike::Menubar::additional_layer_menu; # peacify -w
-	$cusm->{BBBike_Menulabel} = M"Zusätzliche Kartenebenen";
-	$opbm->entryconfigure('last', -menu => $cusm);
-	$cusm->command(-label => M"Zusätzliche Layer",
-		       -state => 'disabled',
-		       -font => $font{'bold'});
-	$cusm->command(-label => M"Straßen-Layer zeichnen",
-		       -command => sub {
-			   require BBBikeAdvanced;
-			   tk_plot_additional_layer('str') });
-	if ($advanced) {
-	    $cusm->command(-label => M"Sperrungen-Layer zeichnen", # XXX label? in advanced mode because there is no way to delete the blockings from net!
-			   -command => sub {
-			       require BBBikeAdvanced;
-			       plot_additional_sperre_layer() });
-	}
-	$cusm->command(-label => M"Punkte-Layer zeichnen",
-		       -command => sub {
-			   require BBBikeAdvanced;
-			   tk_plot_additional_layer('p') });
-	$cusm->command(-label => M"Straßen/Punkte auswählen",
-		       -command => sub {
-			   require BBBikeAdvanced;
-			   choose_from_additional_layer() });
-	$cusm->cascade(-label => M("Letzte geöffnete Layer")."...");
-	{
-	    my $m = $cusm->Menu(-title => M("Letzte geöffnete Layer")."...");
-	    $cusm->entryconfigure("last", -menu => $m);
-	    $main::last_loaded_layers_obj =
-		{
-		 List => [],
-		 File => "$main::bbbike_configdir/last_layers",
-		 Menu => $m,
-		 Title => M("Letzte Layer").":",
-		 Cb => sub {
-		     my($file, %args) = @_;
-		     my $linetype = delete $args{-linetype};
-		     require BBBikeAdvanced;
-		     plot_additional_layer($linetype, $file, %args);
-		 },
-		 Max => 12,
-		};
-	    load_last_loaded($last_loaded_layers_obj);
-	}
-	if ($Tk::platform ne 'MSWin32') {
-	    $cusm->command(-label => M"Umordnen",
-			   -accelerator => 'Shift-X',
-			   -command => sub {
-			       require BBBikeAdvanced;
-			       layer_editor() });
-	}
-	$cusm->command(-label => M"Layer löschen",
-		       -command => sub {
-			   require BBBikeAdvanced;
-			   delete_additional_layer() });
-	$cusm->command(-label => M"Ausschnitt an Layer anpassen",
-		       -command => sub {
-			   require BBBikeAdvanced;
-			   tk_zoom_view_for_layer() });
-	$cusm->command(-label => M"Scrollregion an Layer anpassen",
-		       -command => sub {
-			   require BBBikeAdvanced;
-			   tk_set_scrollregion_for_layer() });
-	$cusm->command(-label => M"Scrollregion für Layer vergrößern",
-		       -command => sub {
-			   require BBBikeAdvanced;
-			   tk_enlarge_scrollregion_for_layer() });
-	if ($advanced) {
-	    $cusm->checkbutton(-label => M"Linienbreite 1 Punkt",
-			       -variable => \$default_line_width,
-			       -offvalue => undef, # XXX don't work,
-                                                   # set to 0... ???
-			       -onvalue => 1,
-			      );
-	}
-	$cusm->separator;
-	$cusm->command(-label => M"Gpsman-Daten zeichnen",
-		       -command => sub {
-			   draw_gpsman_data($top);
-		       });
-	$cusm->command(-label => M"GPS-Track-Animation",
-		       -command => sub {
-			   require BBBikeAdvanced;
-			   gps_animation($top);
-		       });
     }
 
     if (!$standard_menubar) {
@@ -5972,6 +5983,12 @@ sub set_bindings {
 		       } elsif ($map_mode eq MM_SCRIBBLE) {
 			   # XXX not Tk::Babybike!
 			   Tk::Babybike::handle_button1_scribble($c,$c->XEvent);
+		       } elsif ($map_mode eq MM_URL_SELECT) {
+			   my($url) = grep { $_ } map { m{(http://\S+)}; $1 } $c->gettags("current");
+			   if ($url) {
+			       require WWWBrowser;
+			       WWWBrowser::start_browser($url);
+			   }
 		       }
 		       return unless $map_mode eq MM_DRAG;
 		       my $e = $c->XEvent;
@@ -15530,7 +15547,7 @@ sub menuarrow_unmanaged {
 	(my $balloonlabel = $menulabel) =~ s/~//;
 	$balloon->attach($b, -msg => M("Menü")." $balloonlabel...");
     }
-    $menu->{BBBike_Menulabel} = $menulabel;
+    $menu->{BBBike_Menulabel} = $menulabel if !defined $menu->{BBBike_Menulabel};
     $menu->{BBBike_Special}   = $args{-special};
     $b->bind('<ButtonPress-3>' => sub { $b->ButtonDown });
     1;

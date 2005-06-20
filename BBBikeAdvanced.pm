@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.115 2005/06/16 22:25:22 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.116 2005/06/19 19:35:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -827,7 +827,7 @@ $without_zoom_factor = 1 if !defined $without_zoom_factor;
 
 sub set_coord_interactive {
     my $t = redisplay_top($top, 'set_coord_interactive',
-			  -title => M"Koordinaten setzen");
+			  -title => M"Punktkoordinaten setzen");
     return if !defined $t;
 
     my $coord_menu;
@@ -1179,67 +1179,17 @@ sub add_search_net_menu_entries {
 
 sub advanced_coord_menu {
     my $bpcm = shift;
+    $bpcm->command
+      (-label => M"Straßen-Editor",
+       -command => sub {
+	   require BBBikeEdit;
+	   BBBikeEdit::editmenu($top);
+       });
+    $bpcm->separator;
     $bpcm->command(-label => M"Koordinatenliste zeigen",
 		   -command => \&show_coord_list);
     $bpcm->command(-label => M"Path to Selection",
 		   -command => \&path_to_selection);
-    $bpcm->separator;
-    $bpcm->cascade(-label => M"Aus/Eingabe");
-    {
-	my $ausm = $bpcm->Menu(-title => M"Aus/Eingabe");
-	$bpcm->entryconfigure('last', -menu => $ausm);
-	foreach (@Karte::map, qw(canvas)) {
-	    my $name = (ref $Karte::map{$_} && $Karte::map{$_}->can('name')
-			? $Karte::map{$_}->name
-			: $_);
-	    $ausm->radiobutton(-label => $name,
-			       -variable => \$coord_output,
-			       -value => $_,
-			       -command => sub { set_coord_output_sub() },
-			       );
-	    my $index = $ausm->index('last');
-	    if ($_ eq 'canvas') {
-		push @edit_mode_brb_cmd, sub { $ausm->invoke($index) };
-		push @edit_mode_b_cmd, sub { $ausm->invoke($index) };
-	    } elsif ($_ eq 'standard') {
-		push @edit_mode_standard_cmd, sub { $ausm->invoke($index) };
-	    }
-	}
-	$ausm->checkbutton(-label => "Integer",
-			   -variable => \$coord_output_int,
-			  );
-	$ausm->checkbutton(-label => "Without zoom factor",
-			   -variable => \$without_zoom_factor,
-			  );
-    }
-
-    $bpcm->cascade(-label => M"Koordinatensystem");
-    {
-	my $csm = $bpcm->Menu(-title => M"Koordinatensystem");
-	$bpcm->entryconfigure('last', -menu => $csm);
-	foreach (@Karte::map, qw(canvas)) {
-	    my $o = $Karte::map{$_};
-	    my $name = (ref $o && $o->can('name')
-			? $o->name
-			: $_);
-	    $csm->radiobutton(-label => $name,
-			      -value => $_,
-			      -variable => \$coord_system,
-			      -command => sub { set_coord_system($o) },
-			      );
-	    if ($_ eq 'brbmap') {
-		my $index = $csm->index('last');
-		push @edit_mode_brb_cmd, sub { $csm->invoke($index) };
-	    } elsif ($_ eq 'berlinmap') {
-		my $index = $csm->index('last');
-		push @edit_mode_b_cmd, sub { $csm->invoke($index) };
-	    } elsif ($_ eq 'standard') {
-		my $index = $csm->index('last');
-		push @standard_mode_cmd, sub { $csm->invoke($index) };
-		push @edit_mode_standard_cmd, sub { $csm->invoke($index) };
-	    }
-	}
-    }
     $bpcm->command(-label => M"Koordinaten setzen",
 		   -command => \&set_coord_interactive);
     $bpcm->command(-label => M"Linienkoordinaten setzen",
@@ -1334,77 +1284,132 @@ sub advanced_coord_menu {
 	$top->bind("<F4>" => sub { $c_bpcm->invoke($standard_command_index) });
 	$top->bind("<F5>" => sub { $c_bpcm->invoke($editstandard_command_index) });
     }
-
-    foreach my $def ({Label => M"Radwege",
-		      Type  => 'radweg'},
-		     {Label => M"Ampelschaltung",
-		      Type  => 'ampel'},
-		     {Label => M"Label",
-		      Type  => 'label'},
-		     {Label => M"Vorfahrt",
-		      Type  => 'vorfahrt'}) {
-      $bpcm->cascade(-label => $def->{Label});
-      my $m = $bpcm->Menu(-title => $def->{Label});
-      $bpcm->entryconfigure('last', -menu => $m);
-      $m->checkbutton(-label => $def->{Label} . M"-Modus",
-		      -variable => \$special_edit,
-		      -onvalue => $def->{Type},
-		      -offvalue => '',
-		      -command => sub {
-			require BBBikeEdit;
-			# XXX move to autouse
-			eval $def->{Type} . "_edit_toggle()";
-			warn $@ if $@;
-		      });
-      $m->command(-label => 'Undef all',
-		  -command => sub {
-		    require BBBikeEdit;
-		    # XXX move to autouse
-		    eval $def->{Type} . "_undef_all()";
-		    warn $@ if $@;
-		  });
-      $m->command(-label => M"Speichern als...",
-		  -command => sub {
-		    require BBBikeEdit;
-		    # XXX move to autouse
-		    eval $def->{Type} . "_save_as()";
-		    warn $@ if $@;
-		  });
+    $bpcm->cascade(-label => "Obsolete Editierfunktionen");
+    {
+	my $o_bpcm = $bpcm->Menu(-title => "Obsolete Editierfunktionen");
+	$bpcm->entryconfigure("last", -menu => $o_bpcm);
+	foreach my $def ({Label => M"Radwege",
+			  Type  => 'radweg'},
+			 {Label => M"Ampelschaltung",
+			  Type  => 'ampel'},
+			 {Label => M"Label",
+			  Type  => 'label'},
+			 {Label => M"Vorfahrt",
+			  Type  => 'vorfahrt'}) {
+	    $o_bpcm->cascade(-label => $def->{Label});
+	    my $m = $o_bpcm->Menu(-title => $def->{Label});
+	    $o_bpcm->entryconfigure('last', -menu => $m);
+	    $m->checkbutton(-label => $def->{Label} . M"-Modus",
+			    -variable => \$special_edit,
+			    -onvalue => $def->{Type},
+			    -offvalue => '',
+			    -command => sub {
+				require BBBikeEdit;
+				# XXX move to autouse
+				eval $def->{Type} . "_edit_toggle()";
+				warn $@ if $@;
+			    });
+	    $m->command(-label => 'Undef all',
+			-command => sub {
+			    require BBBikeEdit;
+			    # XXX move to autouse
+			    eval $def->{Type} . "_undef_all()";
+			    warn $@ if $@;
+			});
+	    $m->command(-label => M"Speichern als...",
+			-command => sub {
+			    require BBBikeEdit;
+			    # XXX move to autouse
+			    eval $def->{Type} . "_save_as()";
+			    warn $@ if $@;
+			});
+	}
+	$o_bpcm->checkbutton
+	    (-label => M"Point-Editor",
+	     -variable => \$special_edit,
+	     -onvalue => "point",
+	     -offvalue => "",
+	     -command => sub {
+		 if ($special_edit eq 'point') {
+		     require PointEdit;
+		     my $p = new MasterPunkte "$FindBin::RealBin/misc/masterpoints-orig";
+		     $p->read;
+		     if (!$net) { make_net() }
+		     all_crossings();
+		     $point_editor = new PointEdit
+			 MasterPunkte => $p,
+			     Net => $net,
+				 Crossings => $crossings,
+				     Top => $top;
+		 } elsif ($point_editor) {
+		     $point_editor->delete;
+		     undef $point_editor;
+		 }
+	     });
+	$o_bpcm->command
+	    (-label => M"Beziehungs-Editor",
+	     -command => sub {
+		 require BBBikeEdit;
+		 BBBikeEdit::create_relation_menu($top);
+	     });
     }
-    $bpcm->checkbutton
-      (-label => M"Point-Editor",
-       -variable => \$special_edit,
-       -onvalue => "point",
-       -offvalue => "",
-       -command => sub {
-	 if ($special_edit eq 'point') {
-	   require PointEdit;
-	   my $p = new MasterPunkte "$FindBin::RealBin/misc/masterpoints-orig";
-	   $p->read;
-	   if (!$net) { make_net() }
-	   all_crossings();
-	   $point_editor = new PointEdit
-	     MasterPunkte => $p,
-	     Net => $net,
-	     Crossings => $crossings,
-	     Top => $top;
-	 } elsif ($point_editor) {
-	   $point_editor->delete;
-	   undef $point_editor;
-	 }
-       });
-    $bpcm->command
-      (-label => M"Straßen-Editor",
-       -command => sub {
-	   require BBBikeEdit;
-	   BBBikeEdit::editmenu($top);
-       });
-    $bpcm->command
-      (-label => M"Beziehungs-Editor",
-       -command => sub {
-	   require BBBikeEdit;
-	   BBBikeEdit::create_relation_menu($top);
-       });
+    $bpcm->separator;
+    $bpcm->cascade(-label => M"Aus/Eingabe");
+    {
+	my $ausm = $bpcm->Menu(-title => M"Aus/Eingabe");
+	$bpcm->entryconfigure('last', -menu => $ausm);
+	foreach (@Karte::map, qw(canvas)) {
+	    my $name = (ref $Karte::map{$_} && $Karte::map{$_}->can('name')
+			? $Karte::map{$_}->name
+			: $_);
+	    $ausm->radiobutton(-label => $name,
+			       -variable => \$coord_output,
+			       -value => $_,
+			       -command => sub { set_coord_output_sub() },
+			       );
+	    my $index = $ausm->index('last');
+	    if ($_ eq 'canvas') {
+		push @edit_mode_brb_cmd, sub { $ausm->invoke($index) };
+		push @edit_mode_b_cmd, sub { $ausm->invoke($index) };
+	    } elsif ($_ eq 'standard') {
+		push @edit_mode_standard_cmd, sub { $ausm->invoke($index) };
+	    }
+	}
+	$ausm->checkbutton(-label => "Integer",
+			   -variable => \$coord_output_int,
+			  );
+	$ausm->checkbutton(-label => "Without zoom factor",
+			   -variable => \$without_zoom_factor,
+			  );
+    }
+
+    $bpcm->cascade(-label => M"Koordinatensystem");
+    {
+	my $csm = $bpcm->Menu(-title => M"Koordinatensystem");
+	$bpcm->entryconfigure('last', -menu => $csm);
+	foreach (@Karte::map, qw(canvas)) {
+	    my $o = $Karte::map{$_};
+	    my $name = (ref $o && $o->can('name')
+			? $o->name
+			: $_);
+	    $csm->radiobutton(-label => $name,
+			      -value => $_,
+			      -variable => \$coord_system,
+			      -command => sub { set_coord_system($o) },
+			      );
+	    if ($_ eq 'brbmap') {
+		my $index = $csm->index('last');
+		push @edit_mode_brb_cmd, sub { $csm->invoke($index) };
+	    } elsif ($_ eq 'berlinmap') {
+		my $index = $csm->index('last');
+		push @edit_mode_b_cmd, sub { $csm->invoke($index) };
+	    } elsif ($_ eq 'standard') {
+		my $index = $csm->index('last');
+		push @standard_mode_cmd, sub { $csm->invoke($index) };
+		push @edit_mode_standard_cmd, sub { $csm->invoke($index) };
+	    }
+	}
+    }
     $bpcm->separator;
     $bpcm->command
       (-label => M"GPS-Punkte-Editor",

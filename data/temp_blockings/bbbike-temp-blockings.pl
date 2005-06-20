@@ -70,10 +70,16 @@ EOF
        file  => "csd.bbd",
        text  => "CSD am 28.5.",
      },
-     { from  => Time::Local::timelocal(reverse(2003-1900,6-1,27,6,0,0)),
-       until => Time::Local::timelocal(reverse(2003-1900,6-1,29,23,59,59)),
-       file  => "badstr.bbd",
-       text  => "Badstraße zwischen Böttgerstraße und Pankstraße: in beiden Richtungen Veranstaltung, Straße gesperrt",
+     { from  => 1119070200, # 2005-06-18 06:50
+       until => 1119218400, # 2005-06-20 00:00
+       text  => 'L71 Badstraße Berlin-Wedding - Berlin-Mitte in beiden Richtungen Zwischen Pankstraße und Böttgerstraße beidseitig Veranstaltung, Straße gesperrt bis 19.06.2005, 23:00 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 8862,16208 8788,16264
+userdel	2 8928,16158 8993,16100
+userdel	2 8993,16100 9059,16038
+userdel	2 9134,15953 9059,16038
+EOF
      },
      { from  => Time::Local::timelocal(reverse(2003-1900,7-1,3,6,0,0)),
        until => Time::Local::timelocal(reverse(2003-1900,7-1,7,23,59,59)),

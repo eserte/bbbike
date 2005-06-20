@@ -1,7 +1,42 @@
 @temp_blocking = ();
-$#temp_blocking = 33;
+$#temp_blocking = 8;
 push @temp_blocking,
 (
+       {
+         'until' => 1119218400,
+         'text' => 'L71 Badstraße Berlin-Wedding - Berlin-Mitte in beiden Richtungen Zwischen Pankstraße und Böttgerstraße beidseitig Veranstaltung, Straße gesperrt bis 19.06.2005, 23:00 ',
+         'from' => 1119070200,
+         'data' => 'userdel	2 8862,16208 8788,16264
+userdel	2 8928,16158 8993,16100
+userdel	2 8993,16100 9059,16038
+userdel	2 9134,15953 9059,16038
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'until' => 1120514399,
          'text' => 'Schlichtallee Hauptstraße - Lückstraße in beiden Richtungen Zwischen Hauptstraße und Lückstraße beidseitig Baustelle, gesperrt bis 04.07. 2005 ',
@@ -346,15 +381,7 @@ userdel	q4 -18080,-12637 -17374,-13449
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1119045600,
-         'text' => 'L 141; (B 5-Neustadt); zw. B 5 und Dreetz Deckenerneuerung Vollsperrung 18.04.2005-17.06.2005 ',
-         'from' => 1113688800,
-         'data' => 'userdel	2 -50303,42160 -50198,42376
-userdel	2 -50303,42160 -50496,42007
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1130536800,
          'text' => 'L 14; (Großderschau- Bahnhof Zernitz); Brücke über die Neue Jägelitz bei Zernitz Brückensanierung Vollsperrung 19.04.2005-28.10.2005 ',
@@ -525,14 +552,7 @@ userdel	2 14153,-17829 13303,-18235
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1119132000,
-         'text' => 'L 23; (Mühlenstr.); OD Templin, zw. Heinestr. und M.-Luther-Str. 16. Stadtfest Vollsperrung 18.06.2005-18.06.2005 ',
-         'from' => 1118959200,
-         'data' => 'userdel	q4 15448,79614 15840,79375
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1119650399,
          'text' => 'Zimmerstraße Richtung Charlottenstraße zwischen Friedrichstraße und Charlottenstraße Kranarbeiten, gesperrt bis 24.06.2005 ',
@@ -584,14 +604,7 @@ userdel auto	3 2902,12183 3076,12192 3365,12231
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1119132000,
-         'text' => 'L 77; (Saarmund-Güterfelde); OD Philippsthal, zw. Kreisel u. OE Dreharbeiten Vollsperrung 17.06.2005-18.06.2005 ',
-         'from' => 1118872800,
-         'data' => 'userdel	q4 -6319,-7823 -6659,-8210
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1119240000,
          'text' => '"Köpenicker Sommer", im Bereich Altstadt Straßen gesperrt bis 20.06.2005, 06:00 Uhr (Schloßplatz, Grünstraße, Rosenstraße, Alt-Köpenick, Schüßlerplatz, Jägerstraße, Luisenhain, Schloßinsel) ',

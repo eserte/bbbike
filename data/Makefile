@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.48 2005/06/16 22:23:33 eserte Exp $
+# $Id: Makefile,v 2.49 2005/06/19 12:05:36 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -41,7 +41,7 @@ COMMENTS_PARTIAL=	comments_cyclepath comments_ferry comments_misc \
 SOURCE_TARGETS=		strassen plaetze landstrassen landstrassen2 strassen_bab
 SOURCE_TARGETS+=	flaechen
 SOURCE_TARGETS+=	wasserstrassen wasserumland wasserumland2
-SOURCE_TARGETS+=	sbahn sbahnhof rbahn
+SOURCE_TARGETS+=	sbahn sbahnhof rbahn rbahnhof
 SOURCE_TARGETS+=	ubahn ubahnhof
 SOURCE_TARGETS+=	faehren hoehe orte orte2 orte_city
 SOURCE_TARGETS+=	ampeln ampelschaltung
@@ -238,14 +238,19 @@ sbahnhof:	sbahnhof-orig
 # See SBAHN_CATEGORIES comment
 RBAHN_CATEGORIES=	RA RB RC R R0
 
-rbahn rbahnhof: rbahn-orig
-	-@$(WRITEABLE) rbahn rbahnhof
-	$(CONVERT2HAFAS) -bahnhof=rbahnhof rbahn-orig > /tmp/rbahn
+rbahn: rbahn-orig
+	-@$(WRITEABLE) $@
+	$(CONVERT2HAFAS) rbahn-orig > /tmp/rbahn
 .for cat in $(RBAHN_CATEGORIES)
 	$(GREPSTRASSEN) -cat $(cat) /tmp/rbahn | ../miscsrc/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/rbahn-$(cat)
 .endfor
 	cat $(RBAHN_CATEGORIES:S/^/\/tmp\/rbahn-/) > rbahn
-	-@$(READONLY) rbahn rbahnhof
+	-@$(READONLY) $@
+
+rbahnhof:	rbahnhof-orig
+	-@$(WRITEABLE) $@
+	$(CONVERT2HAFAS) rbahnhof-orig > rbahnhof
+	-@$(READONLY) $@
 
 ubahn: ubahn-orig
 	-@$(WRITEABLE) $@

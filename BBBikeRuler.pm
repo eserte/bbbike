@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.13 2004/07/20 20:51:47 eserte Exp $
+# $Id: BBBikeRuler.pm,v 1.14 2005/06/19 18:58:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -21,7 +21,11 @@ use BBBikePlugin;
 use strict;
 use vars qw($button_image $ruler_cursor $old_motion
 	    $c_x $c_y $m_x $m_y $real_x $real_y $real_height
-	    $aftertask $circle $gpsman_tracks $gpsman_track_tag $old_message);
+	    $aftertask $circle $mode $gpsman_track_tag $old_message
+	   );
+use constant MODE_NORMAL => 0;
+use constant MODE_GPSMAN_TRACKS => 1;
+use constant MODE_GRADE_GPSMAN_TRACKS => 2;
 
 use BBBikeUtil;
 use Hooks;
@@ -74,6 +78,10 @@ static unsigned char ruler_bits[] = {
 EOF
     }
 
+    if (!defined $mode) {
+	$mode = MODE_NORMAL;
+    }
+
     add_button();
 
     # XXX Leider reicht das hier nicht. Anscheinend ist
@@ -81,6 +89,24 @@ EOF
     # unterhalb geschaut, aber nicht nach anderen Punkten, die auch einen
     # Balloon haben könnten
     main::std_transparent_binding("ruler");
+}
+
+sub unregister {
+    my $pkg = __PACKAGE__;
+    return unless $BBBikePlugin::plugins{$pkg};
+    if ($main::map_mode eq $pkg) {
+	deactivate();
+    }
+
+    my $mf = $main::top->Subwidget("ModePluginFrame");
+    my $subw = $mf->Subwidget($pkg . '_on');
+    if (Tk::Exists($subw)) { $subw->destroy }
+
+    my $mmf = $main::top->Subwidget("ModeMenuPluginFrame");
+    my $subm = $mmf->Subwidget($pkg . "_menu");
+    if (Tk::Exists($subm)) { $subm->destroy }
+
+    delete $BBBikePlugin::plugins{$pkg};
 }
 
 sub activate {
@@ -120,8 +146,25 @@ sub add_button {
 	     # XXX Msg.pm
 	     [[Checkbutton => "~Kreis",
 	       -variable => \$circle, -command => sub { toggle_circle() }],
-	      [Checkbutton => "~GPSMan-Tracks vermessen",
-	       -variable => \$gpsman_tracks],
+	      [Radiobutton => "~Normal vermessen",
+	       -variable => \$mode,
+	       -value => MODE_NORMAL,
+	      ],
+	      [Radiobutton => "~GPSMan-Tracks vermessen",
+	       -variable => \$mode,
+	       -value => MODE_GPSMAN_TRACKS,
+	      ],
+	      [Radiobutton => "~Steigungen von GPSMan-Tracks",
+	       -variable => \$mode,
+	       -value => MODE_GRADE_GPSMAN_TRACKS,
+	      ],
+	      "-",
+	      [Button => "Dieses Menü löschen",
+	       -command => sub {
+		   $mmf->after(100, sub {
+				   unregister();
+			       });
+	       }],
 	     ],
 	     $b,
 	     __PACKAGE__."_menu",
@@ -145,8 +188,15 @@ sub button {
     my $fill = "blue";
     $c->delete("ruler");
     my(@tags) = $c->gettags($c->current_item(-ignorerx => "^ruler\$"));
-    if ($gpsman_tracks) {
+    if ($mode eq MODE_GPSMAN_TRACKS) {
 	if ($tags[1] && $tags[1] =~ /abstime=/) {
+	    $gpsman_track_tag = $tags[1];
+	} else {
+	    undef $gpsman_track_tag;
+	    return;
+	}
+    } elsif ($mode eq MODE_GRADE_GPSMAN_TRACKS) {
+	if ($tags[1] && $tags[1] =~ /alt=/) {
 	    $gpsman_track_tag = $tags[1];
 	} else {
 	    undef $gpsman_track_tag;
@@ -198,31 +248,54 @@ sub motion {
     my $dist = sqrt(sqr($new_real_x-$real_x)+
 		    sqr($new_real_y-$real_y));
 
-    if ($gpsman_tracks && $gpsman_track_tag) {
-	my(@tags) = $c->gettags($c->current_item(-ignorerx => "^ruler\$"));
-	if ($gpsman_tracks && $tags[1] && $tags[1] =~ /dist=([\d\.]+).*?time=([\d:]+).*abstime=([\d:]+)/) {
-	    my($dist2,$time2,$abstime2) = ($1, $2, $3);
-	    $time2 = _min2sec($time2);
-	    $abstime2 = _hms2sec($abstime2);
-	    $gpsman_track_tag =~ /dist=([\d\.]+).*?time=([\d:]+).*abstime=([\d:]+)/;
-	    my($dist1,$time1,$abstime1) = ($1, $2, $3);
-	    $time1 = _min2sec($time1);
-	    if ($time2 != $time1 && $abstime2 != $abstime1) {
-		$abstime1 = _hms2sec($abstime1);
-		if ($abstime2 < $abstime1) { $abstime2 += 86400 }
-		$message  = "Zeit: " . _fmt_time($time2-$time1) . "; ";
-		$message .= sprintf "Dist: %.3fkm; ", $dist2-$dist1;
-		$message .= sprintf "Speed: %.1fkm/h; ", ((($dist2-$dist1)*1000/($time2-$time1))*3.6);
-		$message .= "Abszeit: " . _fmt_time($abstime2-$abstime1) . "; ";
-		$message .= sprintf "Absspeed: %.1fkm/h; ", ((($dist2-$dist1)*1000/($abstime2-$abstime1))*3.6);
-		$message .= sprintf "Luft-Dist: %.3fkm; ", $dist/1000;
-		$message .= sprintf "Luft-Speed: %.1fkm/h", (($dist/($time2-$time1))*3.6);
-		$old_message = $message;
+    if ($mode eq MODE_GPSMAN_TRACKS) {
+	if ($gpsman_track_tag) {
+	    my(@tags) = $c->gettags($c->current_item(-ignorerx => "^ruler\$"));
+	    if ($tags[1] && $tags[1] =~ /dist=([\d\.]+).*?time=([\d:]+).*abstime=([\d:]+)/) {
+		my($dist2,$time2,$abstime2) = ($1, $2, $3);
+		$time2 = _min2sec($time2);
+		$abstime2 = _hms2sec($abstime2);
+		$gpsman_track_tag =~ /dist=([\d\.]+).*?time=([\d:]+).*abstime=([\d:]+)/;
+		my($dist1,$time1,$abstime1) = ($1, $2, $3);
+		$time1 = _min2sec($time1);
+		if ($time2 != $time1 && $abstime2 != $abstime1) {
+		    $abstime1 = _hms2sec($abstime1);
+		    if ($abstime2 < $abstime1) { $abstime2 += 86400 }
+		    $message  = "Zeit: " . _fmt_time($time2-$time1) . "; ";
+		    $message .= sprintf "Dist: %.3fkm; ", $dist2-$dist1;
+		    $message .= sprintf "Speed: %.1fkm/h; ", ((($dist2-$dist1)*1000/($time2-$time1))*3.6);
+		    $message .= "Abszeit: " . _fmt_time($abstime2-$abstime1) . "; ";
+		    $message .= sprintf "Absspeed: %.1fkm/h; ", ((($dist2-$dist1)*1000/($abstime2-$abstime1))*3.6);
+		    $message .= sprintf "Luft-Dist: %.3fkm; ", $dist/1000;
+		    $message .= sprintf "Luft-Speed: %.1fkm/h", (($dist/($time2-$time1))*3.6);
+		    $old_message = $message;
+		} else {
+		    $message = "(" . $old_message . ")";
+		}
 	    } else {
 		$message = "(" . $old_message . ")";
 	    }
-	} else {
-	    $message = "(" . $old_message . ")";
+	}
+    } elsif ($mode eq MODE_GRADE_GPSMAN_TRACKS) {
+	if ($gpsman_track_tag) {
+	    my(@tags) = $c->gettags($c->current_item(-ignorerx => "^ruler\$"));
+	    if ($tags[1] && $tags[1] =~ /dist=([\d\.]+).*alt=([\d\.]+)m/) {
+		my($dist2,$alt2) = ($1,$2);
+		$gpsman_track_tag =~ /dist=([\d\.]+).*alt=([\d\.]+)m/;
+		my($dist1,$alt1) = ($1,$2);
+		$dist1*=1000; # km2m
+		$dist2*=1000;
+		if ($dist1 != $dist2) {
+		    my $grade = 100*(($alt2-$alt1)/($dist2-$dist1));
+		    $message  = sprintf "Steigung: %.1f%%", $grade;
+		    $message .= sprintf ", (Höhe: %.1fm - %.1fm)", $alt1, $alt2;
+		    $old_message = $message;
+		} else {
+		    $message = "(" . $old_message . ")";
+		}
+	    } else {
+		$message = "(" . $old_message . ")";
+	    }
 	}
     } else {
 	$message = sprintf("Winkel: %d°; Dist: %dm",

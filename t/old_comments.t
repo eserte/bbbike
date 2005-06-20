@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: old_comments.t,v 1.4 2005/05/18 22:29:39 eserte Exp $
+# $Id: old_comments.t,v 1.5 2005/06/19 16:56:48 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -60,10 +60,11 @@ EOF
 EOF
 
 	     # Hagelberger/Yorck
+	     # XXX order may change which seems to be hash order dependent
 	     ["8773,9524", "8595,9495", <<EOF, "PI"],
 - ! >-
-  Kopfsteinpflaster; Straﬂenseite bei der Fuﬂg‰ngerampel
-  Yorckstr./Katzbachstr. wechseln
+  Straﬂenseite bei der Fuﬂg‰ngerampel
+  Yorckstr./Katzbachstr. wechseln; Kopfsteinpflaster
 - ''
 - ~
 EOF

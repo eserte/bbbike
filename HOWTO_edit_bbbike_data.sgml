@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.2 2005/06/17 21:57:30 eserte Exp $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.2 2005/06/17 21:57:30 eserte Exp eserte $ -->
 
 <article>
  <artheader>
@@ -96,10 +96,8 @@ erhält man u.a. neue Menüs, die bei der Datenerfassung helfen.
 
 <para>
 Einschalten des EDIT-Modus durch Klick auf den EDIT-Button unten
-rechts. Zurzeit muss man mit einer Fehlermeldung rechnen, die
-ignoriert werden kann. Die Layer werden neu geladen und zeigen jetzt
-auch Punkte für jeden Kreuzungs- und Kurvenpunkt an.
-</para>
+rechts. Die Layer werden neu geladen und es werden zusätzlich die
+Kreuzungs- und Kurvenpunkte angezeigt. </para>
 
 <sect1>
 <title>Straßen-Editor</>
