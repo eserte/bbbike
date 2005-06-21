@@ -2219,7 +2219,7 @@ sub do_iconframe {
 			-command => sub { plot('p','vf') },
 		       );
     my $fragezeichen_check_index;
-    if ($advanced and $devel_host) {
+    if ($advanced) {
 	$strcm->checkbutton(-label => M"Fragezeichen",
 			    -variable => \$str_draw{'fz'},
 			    -command => sub { plot('str','fz') },
