@@ -77,9 +77,11 @@ smaller than the visible region.
 
 =cut
 
-sub get_corners {
-    my $c = shift;
-    $c->view_to_coords($c->xview, $c->yview);
+if (!defined &Tk::Canvas::get_corners) { # defined in Tk804
+    *get_corners = sub {
+	my $c = shift;
+	$c->view_to_coords($c->xview, $c->yview);
+    }
 }
 
 =item view_to_coords($xv1,$xv2,$yv1,$yv2)
