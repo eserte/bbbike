@@ -332,6 +332,61 @@ EOF
 die $@ if $@;
 }
 
+package Tk::MyAdditions;
+
+my %loc_de;
+if ($ENV{LANG} !~ /en/) {
+    %loc_de = (Abort   => "Abbrechen",
+	       Retry   => "Wiederholen",
+	       Ignore  => "Ignorieren",
+	       Yes     => "Ja",
+	       No      => "Nein",
+	       Cancel  => "Abbrechen",
+	       Ok      => "Ok",
+	      );
+}
+
+sub LocalisedMessageBox {
+    my ($kind,%args) = @_;
+    require Tk::Dialog;
+    my $parent = delete $args{'-parent'};
+    my $args = \%args;
+
+    my %rev_loc_de = map { ($loc_de{$_}, $_) } keys %loc_de;
+
+    $args->{-bitmap} = delete $args->{-icon} if defined $args->{-icon};
+    $args->{-text} = delete $args->{-message} if defined $args->{-message};
+    $args->{-type} = 'OK' unless defined $args->{-type};
+
+    my $type;
+    if (defined($type = delete $args->{-type})) {
+	delete $args->{-type};
+	my @buttons = grep($_,map(ucfirst($_),
+                      split(/(abort|retry|ignore|yes|no|cancel|ok)/,
+                            lc($type))));
+	@buttons = map { $loc_de{$_} || $_ } @buttons;
+	$args->{-buttons} = [@buttons];
+	$args->{-default_button} = ucfirst(delete $args->{-default}) if
+	    defined $args->{-default};
+	if (not defined $args->{-default_button} and scalar(@buttons) == 1) {
+	   $args->{-default_button} = $buttons[0];
+	}
+        my $md = $parent->Dialog(%$args);
+        my $an = $md->Show;
+        $md->destroy;
+	$an = $rev_loc_de{$an} if exists $rev_loc_de{$an};
+        return $an;
+    }
+} # end messageBox
+
+{
+    no strict 'refs';
+    BEGIN { if ($] < 5.006) { $INC{"warnings.pm"} = 1; *warnings::unimport = sub {} } }
+    no warnings 'redefine';
+    my $code = \&{"LocalisedMessageBox"};
+    *Tk::tk_messageBox = sub { &$code($kind,@_) };
+}
+
 1;
 
 __END__
