@@ -12,7 +12,7 @@ Legend:
 
 =head1 Unsorted after Win98 session
 
- * option editor does not fit into 800x600 screen --- using scrollable pane?
+ * option editor does not fit into 800x600 screen --- using scrollable pane? (it even does not fit into a 1024x768 screen on windows)
  * Drucken: if the PDF backend is chosen, then Druckeinstellungen have no effect. Maybe it
     would be nice to support at least some of them (legend, maybe b/w)
  * Overview-Map: always segfault
@@ -21,6 +21,10 @@ Legend:
 =head1 Perl/Tk version of bbbike
 
 =over
+
+=item * (E4)
+
+Option editor: use german labels
 
 =item * (H3)
 
@@ -1182,6 +1186,11 @@ GPS-Tracks zusammenfassen.
 =head2 Fehler, Ergänzungen, ...
 
 =over
+
+=item * (E2)
+
+Ostsee Richtung Osten so weit erweitern, dass kein haesslicher Rand in
+der Übersichtskarte bleibt.
 
 =item * (H2)
 

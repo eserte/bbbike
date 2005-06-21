@@ -220,16 +220,19 @@ einem stetigen Speicherzuwachs in BBBike führt.</warning>
 <title>Attribute zu einer Straße hinzufügen</>
 
 <para>
-Nach dem Reload ist die neue Straße sichtbar. Man kann sich wieder den
-Straßenzug zusammenklicken (den ganzen Teil oder nur einen Teil davon)
-und diesen Straßenzug mit "Add to new" zu einer Attributdatei
-hinzufügen. Hier muss darauf geachtet werden, dass <!-- b -->alle<!--
-/b --> Punkte auf bestehenden Kurvenpunkten liegen (Shift-Maustaste
-ist hier verboten) und dass kein Punkt vergessen oder doppelte
-angeklickt wurden.<footnote> <para> Eine weitere Möglichkeit der
-Punktauswahl wäre eine normale Suche (dazu in den Suchmodus gehen),
-aber dazu muss Suche > Straßennetz neu berechnen ausgewählt werden,
-falls eine neue Straße attributiert werden soll </para> </footnote>
+Nach dem Reload ist die neue Straße sichtbar. Man kann sich wieder
+den Straßenzug zusammenklicken (den ganzen Teil oder nur einen Teil
+davon) und diesen Straßenzug mit "Add to new" zu einer
+Attributdatei hinzufügen. Hier muss darauf geachtet werden, dass
+<!-- b -->alle<!-- /b --> Punkte auf bestehenden Kurvenpunkten liegen
+(Shift-Maustaste ist hier verboten) und dass kein Punkt vergessen oder
+doppelte angeklickt wurden.<footnote> <para> Eine weitere
+Möglichkeit der Punktauswahl wäre eine normale Suche (dazu in
+den Suchmodus gehen). Nach der Suche müssen die Punkte per
+Bearbeiten > Path to Selection in die X11-Selection übertragen
+werden. Grundsätzlich muss Suche > Straßennetz neu berechnen
+ausgewählt werden, wenn eine gerade neu eingefügte Straße
+attributiert werden soll. </para> </footnote>
 
 <para>
 Mögliche Attribute sind Fahrbahnqualität (<filename>qualitaet_s</> für
@@ -346,7 +349,7 @@ geachtet werden, dass mindestens zwei Punkte in der Strecke übrig bleiben.
 Eine Koordinatenliste (kann auch aus einem einzelnen Punkt bestehen)
 markieren und mit "Copy" im jeweiligen Programm auswählen
 (Unix-Benutzer müssen in der Regel nur markieren). In BBBike den
-Menüpunkt Editieren > Linienkoordinaten anzeigen auswählen. Nach Klick
+Menüpunkt Bearbeiten > Linienkoordinaten anzeigen auswählen. Nach Klick
 auf dem Button wird der Kartenausschnitt verschoben und die Punkte der
 Koordinatenliste blinken auf. Mit der Option "Ständige Markierungen"
 bleibt die Markierung ständig bestehen, ansonsten verschwindet sie
@@ -745,7 +748,7 @@ Es ist auch möglich, mit der Standardinstallation von BBBike (ohne
 CVS) Daten zu erfassen, die an der Daten-Maintainer geschickt werden
 können. Dazu muss einfach ein Straßenzug zusammengeklickt werden,
 indem man die Shift-Maustaste verwendet. Nach Auswählen des
-Menüpunktes Editieren > Path to Selection (dazu muss die <link
+Menüpunktes Bearbeiten > Path to Selection (dazu muss die <link
 linkend="bbbikeadvanced">Option Advanced</> aktiviert sein) steht die
 Koordinatenliste als Selection zur Verfügung und kann mit "Paste" in
 einen Editor oder ein Mailprogramm eingefügt werden. Es ist für den

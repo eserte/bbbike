@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.33 2005/06/03 08:04:07 eserte Exp $
+# $Id: Makefile,v 1.34 2005/06/21 15:33:25 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -68,9 +68,9 @@ BBBIKE_MAPSERVER_URL=	http://radzeit.herceg.de/cgi-bin/mapserv
 
 .if ${TARGET} == "devpc01"
 ABS_LOCAL_BBBIKE_DIR=	/home/slavenr/work2/bbbike
-#MAPSERVER_PROG_FSPATH=	/home/slavenr/work2/mapserver/mapserv.cgi
+MAPSERVER_PROG_FSPATH=	/home/slavenr/work2/mapserver/mapserv.cgi
 #MAPSERVER_PROG_FSPATH=	/home/slavenr/mapserver-3.6.6/mapserv
-MAPSERVER_PROG_FSPATH=	/home/slavenr/mapserver-3.6.4/mapserv
+#MAPSERVER_PROG_FSPATH=	/home/slavenr/mapserver-3.6.4/mapserv
 # XXX port number or not?
 LOCAL_HOST=		localhost:8080
 FONTS_LIST=		fonts-devpc01.list
