@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAlarm.pm,v 1.31 2005/03/27 22:42:49 eserte Exp $
+# $Id: BBBikeAlarm.pm,v 1.32 2005/06/21 21:24:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -41,7 +41,7 @@ my $install_datebook_additions = 1;
 
 use Time::Local;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.31 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
@@ -794,9 +794,9 @@ sub open_dbm {
 
 sub restart_alarms {
     eval {
-	my %pids = %{ open_dbm(-readonly => 1) };
+	my $pids = open_dbm(-readonly => 1);
 	my $this_host = _get_host();
-	while(my($k,$v) = each %pids) {
+	while(my($k,$v) = each %$pids) {
 	    my(@l) = split /\t/, $v;
 	    my($host, $pid, $time, $desc) = @l;
 	    my $state = "unknown";
@@ -804,11 +804,11 @@ sub restart_alarms {
 		if (!kill(0 => $pid)) {
 		    warn "Restart process $pid at " . scalar(localtime $time) . " ...\n";
 		    tk_leave(undef, -epoch => $time, -text => $desc); # XXX use_tk?
-		    delete $pids{$k};
+		    delete $pids->{$k};
 		}
 	    }
 	}
-	untie %pids;
+	untie %$pids;
     };
     warn $@ if $@;
 }
@@ -818,8 +818,8 @@ sub show_all {
     my $this_host = _get_host();
 
     eval {
-	my %pids = %{ open_dbm(-readonly => 1) };
-	while(my($k,$v) = each %pids) {
+	my $pids = open_dbm(-readonly => 1);
+	while(my($k,$v) = each %$pids) {
 	    my(@l) = split /\t/, $v;
 	    my($host, $pid, $time, $desc) = @l;
 	    my $state = "unknown";
@@ -828,7 +828,7 @@ sub show_all {
 	    }
 	    push @result, [@l, $state];
 	}
-	untie %pids;
+	untie %$pids;
     };
     warn $@ if $@;
 
@@ -841,9 +841,9 @@ sub add_tk_alarm {
     my $this_host = _get_host();
 
     eval {
-	my %pids = %{ open_dbm(-readonly => 0) };
-	$pids{$this_host.":".$pid} = join("\t", $this_host, $pid, $time, $desc);
-	untie %pids;
+	my $pids = open_dbm(-readonly => 0);
+	$pids->{$this_host.":".$pid} = join("\t", $this_host, $pid, $time, $desc);
+	untie %$pids;
     };
     warn $@ if $@;
 }
@@ -854,10 +854,10 @@ sub del_tk_alarm {
     my $this_host = _get_host();
 
     eval {
-	my %pids = %{ open_dbm(-readonly => 0) };
-	delete $pids{$this_host.":".$this_pid};
+	my $pids = open_dbm(-readonly => 0);
+	delete $pids->{$this_host.":".$this_pid};
 	my @to_del;
-	while(my($k, $string) = each %pids) {
+	while(my($k, $string) = each %$pids) {
 	    if ($this_host eq (split /\t/, $string)[LIST_HOST]) {
 		my $time = (split /\t/, $string)[LIST_TIME];
 		my $pid = (split /\t/, $string)[LIST_PID];
@@ -866,8 +866,8 @@ sub del_tk_alarm {
 		}
 	    }
 	}
-	delete $pids{$_} foreach @to_del;
-	untie %pids;
+	delete $pids->{$_} foreach @to_del;
+	untie %$pids;
     };
     warn $@ if $@;
 }

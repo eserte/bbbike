@@ -2119,4 +2119,21 @@ userdel	2 22312,4593 22162,4546
 userdel	2 22043,4562 22071,4501
 EOF
      },
+     { from  => 1119391200, # 2005-06-22 00:00
+       until => 1123452000, # 2005-08-08 00:00
+       text  => 'B 168; (Lieberose-Friedland); zw. Lieberose und Abzw. Mochlitz Straßenbauarbeiten Vollsperrung 23.06.2005-07.08.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 73201,-43677 72887,-44704
+EOF
+     },
+     { from  => 1119132000, # 2005-06-19 00:00
+       until => 1132959600, # 2005-11-26 00:00
+       text  => 'L 53; (Seestr.); OL Großräschen, zw. B96 u. Ahornstr. Straßenbauarbeiten Vollsperrung 20.06.2005-25.11.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 53810,-90698 53805,-90240
+userdel	q4 53252,-90440 53805,-90240
+EOF
+     },
     );

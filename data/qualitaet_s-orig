@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.31 2005/06/19 19:02:05 eserte Exp $
+# $Id: qualitaet_s-orig,v 4.31 2005/06/19 19:02:05 eserte Exp eserte $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -160,9 +160,8 @@ Geschwister-Scholl-Str.: Kopfsteinpflaster	Q2 9529,12925 9550,12760
 Marchlewskistr.: Kopfsteinpflaster	Q2 13226,11934 13280,11834 13303,11791
 Pillauer Str.: Kopfsteinpflaster	Q2 13377,11644 13290,11581
 Wriezener Karree: Beton	Q1 12686,11737 12778,11691 12819,11764 12726,11851
-#: add_fragezeichen: mittlerweile asphaltiert? Existieren Radwege?
-Prenzlauer Promenade: mäßiges Kopfsteinpflaster	Q2 12012,16752 12046,16568 12054,16517 12097,16263 12091,16209
-#XXX laut Morgenpost seit den Bauarbeiten entfernt: Prenzlauer Allee: Kopfsteinpflaster (nur in Nordrichtung)	Q2; 11941,15586 11997,15834
+#: by: Roland Maier:
+Prenzlauer Promenade: Asphalt	Q0 12012,16752 12046,16568 12054,16517 12097,16263 12091,16209
 Engeldamm: Kopfsteinpflaster	Q2 12026,11348 11921,11185 11798,11128 11665,11118
 Engeldamm: mäßiger Asphalt	Q1 11665,11118 11473,11180
 Ritterstr.: Kopfsteinpflaster	Q2 10572,10773 10389,10855 10094,10994
@@ -970,7 +969,7 @@ Am Orankesee: Parkweg	Q1 15845,15930 15703,15953 15581,15846 15484,15909 15479,1
 Vorfahrt Reichstagsgebäude: Kopfsteinpflaster, OK	Q1 8400,12417 8400,12605
 Hagenauer Str.: Kopfsteinpflaster	Q2 11154,14985 11187,14763
 Kolmarer Str.: Kopfsteinpflaster	Q2 11299,14112 11418,14290
-südliches Spreeufer: Parkweg	Q1 7775,12631 7934,12734 8012,12848 8084,12914 8228,12964 8343,12925 8426,12871 8473,12753 8495,12651 8554,12593
+südliches Spreeufer: Parkweg	Q1 7775,12631 7934,12734 8012,12848 8084,12914 8158,12958 8228,12964 8343,12925 8426,12871 8473,12753 8495,12651 8554,12593
 Glasbläserallee: Verbundsteinpflaster	Q0 14759,10096 14850,10265 14893,10359
 Fischzug: Asphalt	Q0 14850,10265 14929,10221 15001,10182 15090,10140
 Fischzug: Kopfsteinpflaster, teilweise auch Verbundsteinpflaster	Q2 15090,10140 15153,10112 15209,10087
@@ -1088,6 +1087,7 @@ Nobelstr.: Betonstraße	Q0 14133,6187 14398,6184 15146,6154
 Tivoliplatz: Kopfsteinpflaster	Q2 8954,8914 8950,8954 8997,8952
 Schmiedehof: Kopfsteinpflaster	Q2 8997,8952 9019,8995
 Ottomar-Geschke-Str.: Kopfsteinpflaster	Q2 21332,4655 21454,4928 21498,5023
+Wallotstr.: Asphalt	Q0 2046,9429 1965,9431 1851,9332 1795,9325 1757,9271
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -1153,6 +1153,10 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 #: by: kalkreuth
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 #: by: anonymous vvv
+Presselstr.: schlechtes Kopfsteinpflaster	Q3 6114,4709 6183,4785 6191,4923
+Kunkelstr.: mäßiger Asphalt	Q1 8219,14897 8229,15128 8232,15220 8273,15311
+#: XXX: auch eingetragen: "viele Fußgänger"?:
+Rietzestr.: Asphalt	N 12718,15214 12480,15352
 Luzinstr.: Beton	Q0 22925,13662 22859,13684 22759,13715
 Rudolf-Seiffert-Str.: mäßiger Asphalt	Q1 14857,13146 14978,13581 14821,13628 14844,13667
 Rosenbecker Str.: Beton	Q0 21679,18296 21731,18412 21662,18621 21603,18787
@@ -1366,7 +1370,7 @@ Winterthurstr.: Beton	Q0 6243,17603 6268,17709 6279,17753 6297,17821
 #: by: Carsten
 Am Iderfenngraben: schlechtes Kopfsteinpflaster	Q3 8623,19353 8653,19431 9015,19606 9408,19707 9578,19759
 #: by: franky
-Brehmstr.: Beton	Q1 19410,9844 19432,10061 19692,10044
+Brehmstr.: Beton	Q1 19391,9838 19411,10079 19688,10086
 #: by: Andre Gebel
 Zinzendorfstr.: schlechtes Kopfsteinpflaster	Q3 5442,12852 5472,13056
 #: by: Chris Hellwig
@@ -2043,6 +2047,8 @@ Wolzogenstr.: akzeptables Kopfsteinpflaster	Q2 -785,2492 -845,2664
 Wolzogenstr.: geteert	Q0 -845,2664 -867,2722
 Wolzogenstr.: akzeptables Kopfsteinpflaster	Q2 -867,2722 -928,2900 -990,3160
 Anhaltinerstr.: schlechtes Kopfsteinpflaster	Q3 -141,2648 34,2550 259,2528 646,2628 725,2702
+Urselweg: mäßiges Kopfsteinpflaster	Q2 -1155,3255 -990,3160
+Urselweg: sehr guter Asphalt	Q0 -990,3160 -887,3081 -812,2915
 #: by: ^^^
 #: by: Andrea Büchner:
 Achenseeweg: Asphalt	Q0 5913,1176 5878,787 5916,499 5993,243
@@ -2061,3 +2067,11 @@ Philippistr.: Asphalt	Q0 2589,11598 2450,11571
 Ernststr.: Kopfsteinpflaster	Q2 2497,19503 2700,19527
 Ernststr.: Asphalt	Q0 3645,19921 3182,19580 2852,19546
 #: by: ^^^
+#: by: Claudia Skowronnek: vvv
+Römerweg: gute Qualität	Q0 19452,9845 19422,9718 18816,9705 18665,9693 18452,9744 18408,9746
+Aristotelessteig: guter Beton	Q0 18734,9561 18655,9576 18419,9622 18452,9744
+#: by: ^^^
+#: by: Susan Richter:
+Griembergweg: Asphalt	Q0 11407,113 11072,108 10740,82
+#: by: Matthias Wiegandt
+Nunsdorfer Ring: Asphalt	Q0 8853,172 8981,275 9171,166 9280,-127 9159,-171

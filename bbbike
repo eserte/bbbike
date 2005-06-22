@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.171 2005/06/19 20:07:27 eserte Exp eserte $
+# $Id: bbbike,v 3.172 2005/06/21 21:19:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -99,6 +99,7 @@ use autouse 'BBBikePrint'
 use Tk;
 #XXX for now disabled ... still too many bugs floating around -> what bugs?
 #use Tk::ErrorDialog; # XXX is this OK?
+use Tk::Canvas;
 use Tk::CanvasUtil;
 use File::Basename;
 ## DEBUG_BEGIN
@@ -185,7 +186,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.171 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.172 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -14540,6 +14541,22 @@ sub update_route_strname {
     }
 }
 
+sub add_custom_layers_to_net {
+    my($net_source, $net_source_abk) = @_;
+    while(my($abk,$val) = each %custom_net_str) {
+	if ($val) { # XXX del? && $abk =~ /^L\d/) {
+	    eval {
+		if (!$str_obj{$abk}) {
+		    $str_obj{$abk} = new Strassen $str_file{$abk};
+		}
+		push @$net_source, $str_obj{$abk};
+		push @$net_source_abk, $abk;
+	    };
+	    warn "Cannot get Strassen for $abk: $@" if $@;
+	}
+    }
+}
+
 sub make_net {
     my(%args) = @_;
     IncBusy($top);
@@ -14582,18 +14599,7 @@ sub make_net {
 		push @net_source_abk, $_;
 	    }
 	} elsif ($net_type eq 'custom') {
-	    while(my($abk,$val) = each %custom_net_str) {
-		if ($val) { # XXX del? && $abk =~ /^L\d/) {
-		    eval {
-			if (!$str_obj{$abk}) {
-			    $str_obj{$abk} = new Strassen $str_file{$abk};
-			}
-			push @net_source, $str_obj{$abk};
-			push @net_source_abk, $abk;
-		    };
-		    warn "Cannot get Strassen for $abk: $@" if $@;
-		}
-	    }
+	    add_custom_layers_to_net(\@net_source, \@net_source_abk);
 	} else {
 	    if ($str_obj{'l'}) {
 		push @net_source,     $str_obj{'l'};
@@ -14631,10 +14637,14 @@ sub make_net {
 	    }
 	    while(my($token, $bool) = each %add_net) {
 		next if !$bool;
-		$str_obj{$token} = Strassen->new($str_file{$token})
-		    if !$str_obj{$token};
-		push @net_source, $str_obj{$token};
-		push @net_source_abk, $token;
+		if ($token eq 'custom') {
+		    add_custom_layers_to_net(\@net_source, \@net_source_abk);
+		} else {
+		    $str_obj{$token} = Strassen->new($str_file{$token})
+			if !$str_obj{$token};
+		    push @net_source, $str_obj{$token};
+		    push @net_source_abk, $token;
+		}
 	    }
 	    if (!@net_source) { # XXX nö
 		my(@str_types) = ('s');

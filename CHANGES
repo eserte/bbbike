@@ -3,13 +3,20 @@ BBBike RELEASE 3.15
 bbbike (ptk)
 - added "draw additional layers" pseudo icon
 - reordered "edit" menu
+- "fragezeichen" layer accessible with -advanced
+- add custom layers for searching
+- fixed DnD in layer reordering for Tk804
 
 Data
-- new layers: highways (Autobahnen) and comments_scenic
+- new layers: freeways (Autobahnen, rather complete in
+  Berlin/Brandenburg) and comments_scenic (with no data yet)
 
 Install
 - Bugfix for Windows installer (shortcuts did not work for installations in
   "C:\Program files")
+
+Misc
+- new documentation: HOWTO_edit_bbbike_data (only in CVS)
 
 ----------------------------------------------------------------------
 

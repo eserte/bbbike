@@ -1,42 +1,7 @@
 @temp_blocking = ();
-$#temp_blocking = 8;
+$#temp_blocking = 33;
 push @temp_blocking,
 (
-       {
-         'until' => 1119218400,
-         'text' => 'L71 Badstraße Berlin-Wedding - Berlin-Mitte in beiden Richtungen Zwischen Pankstraße und Böttgerstraße beidseitig Veranstaltung, Straße gesperrt bis 19.06.2005, 23:00 ',
-         'from' => 1119070200,
-         'data' => 'userdel	2 8862,16208 8788,16264
-userdel	2 8928,16158 8993,16100
-userdel	2 8993,16100 9059,16038
-userdel	2 9134,15953 9059,16038
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'until' => 1120514399,
          'text' => 'Schlichtallee Hauptstraße - Lückstraße in beiden Richtungen Zwischen Hauptstraße und Lückstraße beidseitig Baustelle, gesperrt bis 04.07. 2005 ',
@@ -582,20 +547,7 @@ userdel	2 10170,12261 10267,12305
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1119218400,
-         'text' => '300 Jahre Charlottenburg, 17.06.2005 bis 19.06.2005',
-         'from' => 1118988173,
-         'data' => 'userdel	2 3076,12192 3038,12482
-userdel	2 3076,12192 3091,12071
-userdel	2 3038,12482 2647,12427
-userdel	2 3038,12482 3280,12512
-userdel	2 3103,11968 3091,12071
-userdel auto	3 3365,12231 3076,12192 2902,12183
-userdel auto	3 2902,12183 3076,12192 3365,12231
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1120946400,
          'text' => 'L 30; (Woltersdorfer Landstr.); OD Erkner Grundhafter Straßenbau Vollsperrung 08.07.2005-09.07.2005 ',
@@ -605,20 +557,23 @@ userdel auto	3 2902,12183 3076,12192 3365,12231
          'type' => 'handicap'
        },
        undef,
+       undef,
        {
-         'until' => 1119240000,
-         'text' => '"Köpenicker Sommer", im Bereich Altstadt Straßen gesperrt bis 20.06.2005, 06:00 Uhr (Schloßplatz, Grünstraße, Rosenstraße, Alt-Köpenick, Schüßlerplatz, Jägerstraße, Luisenhain, Schloßinsel) ',
-         'from' => 1118993118,
-         'data' => 'userdel	2 22138,4661 22111,4562
-userdel	2 22138,4661 22196,4847
-userdel	2 22111,4562 22162,4546
-userdel	2 22111,4562 22093,4499
-userdel	2 22147,4831 22043,4562
-userdel	2 22383,4703 22312,4593
-userdel	2 22312,4593 22162,4546
-userdel	2 22043,4562 22071,4501
+         'until' => 1123452000,
+         'text' => 'B 168; (Lieberose-Friedland); zw. Lieberose und Abzw. Mochlitz Straßenbauarbeiten Vollsperrung 23.06.2005-07.08.2005 ',
+         'from' => 1119391200,
+         'data' => 'userdel	2 73201,-43677 72887,-44704
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1132959600,
+         'text' => 'L 53; (Seestr.); OL Großräschen, zw. B96 u. Ahornstr. Straßenbauarbeiten Vollsperrung 20.06.2005-25.11.2005 ',
+         'from' => 1119132000,
+         'data' => 'userdel	q4 53810,-90698 53805,-90240
+userdel	q4 53252,-90440 53805,-90240
+',
+         'type' => 'handicap'
        }
      
 );

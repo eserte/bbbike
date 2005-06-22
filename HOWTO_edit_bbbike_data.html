@@ -333,9 +333,9 @@ Bei Strecken muss darauf geachtet werden, dass mindestens zwei Punkte in der Str
 
 <p>Eine Koordinatenliste (kann auch aus einem einzelnen Punkt bestehen) markieren und mit
 "Copy" im jeweiligen Programm auswählen (Unix-Benutzer müssen in der Regel nur
-markieren). In BBBike den Menüpunkt Editieren &#62; Linienkoordinaten anzeigen auswählen.
-Nach Klick auf dem Button wird der Kartenausschnitt verschoben und die Punkte der
-Koordinatenliste blinken auf. Mit der Option "Ständige Markierungen" bleibt die
+markieren). In BBBike den Menüpunkt Bearbeiten &#62; Linienkoordinaten anzeigen
+auswählen. Nach Klick auf dem Button wird der Kartenausschnitt verschoben und die Punkte
+der Koordinatenliste blinken auf. Mit der Option "Ständige Markierungen" bleibt die
 Markierung ständig bestehen, ansonsten verschwindet sie nach wenigen Sekunden.&#13;</p>
 </div>
 </div>
@@ -726,7 +726,7 @@ Editiermöglichkeiten</a></h1>
 <p>Es ist auch möglich, mit der Standardinstallation von BBBike (ohne CVS) Daten zu
 erfassen, die an der Daten-Maintainer geschickt werden können. Dazu muss einfach ein
 Straßenzug zusammengeklickt werden, indem man die Shift-Maustaste verwendet. Nach
-Auswählen des Menüpunktes Editieren &#62; Path to Selection (dazu muss die <a
+Auswählen des Menüpunktes Bearbeiten &#62; Path to Selection (dazu muss die <a
 href="#BBBIKEADVANCED">Option Advanced</a> aktiviert sein) steht die Koordinatenliste als
 Selection zur Verfügung und kann mit "Paste" in einen Editor oder ein Mailprogramm
 eingefügt werden. Es ist für den Maintainer hilfreiche, wenn dabei das normale
@@ -799,8 +799,10 @@ class="FILENAME">data</tt> nennen, aber ein CVS-Update würde zu Konflikten führe
 href="#AEN78">[1]</a></td>
 <td align="LEFT" valign="TOP" width="95%">
 <p>Eine weitere Möglichkeit der Punktauswahl wäre eine normale Suche (dazu in den
-Suchmodus gehen), aber dazu muss Suche &#62; Straßennetz neu berechnen ausgewählt werden,
-falls eine neue Straße attributiert werden soll</p>
+Suchmodus gehen). Nach der Suche müssen die Punkte per Bearbeiten &#62; Path to Selection
+in die X11-Selection übertragen werden. Grundsätzlich muss Suche &#62; Straßennetz neu
+berechnen ausgewählt werden, wenn eine gerade neu eingefügte Straße attributiert werden
+soll.</p>
 </td>
 </tr>
 </table>

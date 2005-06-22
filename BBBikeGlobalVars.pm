@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.26 2005/06/19 20:21:17 eserte Exp eserte $
+# $Id: BBBikeGlobalVars.pm,v 1.27 2005/06/21 21:24:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.26 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 

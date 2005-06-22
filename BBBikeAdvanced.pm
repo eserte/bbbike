@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.116 2005/06/19 19:35:07 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.117 2005/06/21 21:24:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1161,12 +1161,12 @@ sub add_search_net_menu_entries {
 			   -command => \&change_net_type,
 			  );
     }
-    $nsbm->command(-label => M"Layer für Custom auswählen",
-		   -command => sub {
-		       select_layers_for_net_dialog();
-		   });
     $nsbm->checkbutton(-label => M"Add fragezeichen",
 		       -variable => \$add_net{fz},
+		       -command => \&change_net_type,
+		      );
+    $nsbm->checkbutton(-label => M"Add custom",
+		       -variable => \$add_net{custom},
 		       -command => \&change_net_type,
 		      );
     if ($devel_host) {
@@ -1175,6 +1175,10 @@ sub add_search_net_menu_entries {
 			   -command => \&change_net_type,
 			  );
     }
+    $nsbm->command(-label => M"Layer für Custom auswählen",
+		   -command => sub {
+		       select_layers_for_net_dialog();
+		   });
 }
 
 sub advanced_coord_menu {
