@@ -1153,6 +1153,11 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 #: by: kalkreuth
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 #: by: anonymous vvv
+#: note: sehr plausibel:
+Cotheniusstr.: Kopfsteinpflaster	Q2 13228,13615 13430,13733 13517,13778
+Massower Str.: Asphalt	Q0 17734,11408 18178,11504
+Loreleystr.: Asphalt	Q0 19171,8280 19228,8350 19326,8493
+Görresstr.: Asphalt	Q0 5315,7376 5265,7459 5066,7668
 Presselstr.: schlechtes Kopfsteinpflaster	Q3 6114,4709 6183,4785 6191,4923
 Kunkelstr.: mäßiger Asphalt	Q1 8219,14897 8229,15128 8232,15220 8273,15311
 #: XXX: auch eingetragen: "viele Fußgänger"?:
@@ -1195,7 +1200,7 @@ Achtermannstr.: Kopfsteinpflaster	Q2 11233,18981 11756,19214
 Grevesmühlener Str.: Asphalt	Q0 18177,18412 18031,18433 17678,18171
 Husumer Str.: Asphalt	Q0 20726,10291 21015,10284 21263,10276
 Gottschedstr.: Kopfsteinpflaster	Q2 7894,15980 8003,16098 8306,16428
-Fritz-Riedel-Str.: mäßig	Q2 13378,13981 13640,13597
+Fritz-Riedel-Str.: mäßig	Q2 13378,13981 13517,13778 13640,13597
 Maisweg: Asphalt	Q0 20682,12646 20818,12628 20843,12677 20953,12866 20996,13162 21032,13467
 Ingwäonenweg: Asphalt	Q0 16500,22465 16593,22903 16831,23615
 Wulfila-Ufer: Asphalt	Q0 8249,4769 8494,5001 8750,5173
@@ -1253,7 +1258,7 @@ Hansastr. (Wedding): Kopfsteinpflaster	Q2 8079,16953 7884,16940 7852,16963
 Hattinger Weg: guter Asphalt	Q0 1536,18423 1566,18532 1595,18528 1623,18523 1625,18416
 #: by: ^^^
 #: by: Jessica Mai: vvv
-Wiclefstr.: Kopfsteinpflaster	Q2 5239,13824 5441,13796 5617,13768 5748,13748 5895,13725 6115,13684
+Wiclefstr.: Kopfsteinpflaster	Q2 5239,13824 5441,13796 5617,13768 5748,13748 5895,13725 6016,13702 6115,13684
 Buchstr.: Asphalt	Q0 6599,14735 6459,14876
 Stephanstr. (Tiergarten): Kopfsteinpflaster	Q2 6275,13969 6496,14118 6696,14197 7037,14274
 #: note: die Q1 habe ich von Osten her festgestellt
@@ -1856,7 +1861,7 @@ Potsdamer Str. (Lichterfelde): Kopfsteinpflaster	Q2 3193,3793 3375,3544 3646,315
 Dessauerstr.: mäßiges Kopfsteinpflaster	Q2 6725,2494 6651,2479 6465,2356 6232,2201 6190,2200 6021,2071 5865,1975
 #: by: funda: vvv
 Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10135,-1033 10113,-811 10064,-628
-Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10064,-628 10034,-546
+Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10064,-628 9823,0 10034,-546
 Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10034,-546 9961,-363 9848,-59 9762,155
 #: by: ^^^
 #: by: Jörg (sch8374...) vvv
@@ -1972,7 +1977,7 @@ Meisenheimer Str.: guter Asphalt	Q0 28543,675 28781,881 29006,1125
 #: by: josef: (oetzijo):
 Hohenbornweg: guter Asphalt	Q0 7846,1718 7675,1885
 #: by: Wolfgang Schmidt:
-Berlinickestr.: Kopfsteinpflaster	Q2 5088,5495 4839,5167
+Berlinickestr.: Kopfsteinpflaster	Q2 5088,5495 5016,5401 4839,5167
 #: by: Jan-Philipp Kümritz:
 Zugdamer Steig: Beton	Q0 -1923,23378 -2059,23440
 #: by: Ilja Friedrich:
@@ -2075,3 +2080,22 @@ Aristotelessteig: guter Beton	Q0 18734,9561 18655,9576 18419,9622 18452,9744
 Griembergweg: Asphalt	Q0 11407,113 11072,108 10740,82
 #: by: Matthias Wiegandt
 Nunsdorfer Ring: Asphalt	Q0 8853,172 8981,275 9171,166 9280,-127 9159,-171
+#: by: Christof (keuter):
+Markelstr.: Kopfsteinpflaster	Q1 4679,6620 4901,6505
+#: by: René Hartmann:
+Neanderstr.: Asphalt	Q0 9833,-826 9814,-355 9820,-57 9823,0
+#: by: martinstag:
+Bredowstr.: mäßiges Kopfsteinpflaster	Q2 6019,13320 6016,13702 6021,14017
+#: by: Handan (aktas):
+Heilbronner Str.: Asphalt	Q0 6131,9241 6164,9329 6127,9529 6109,9729
+#: by: Ritter:
+Wigandstaler Str.: Asphalt	Q0 13043,16942 12806,17317
+#: by: W.E. Coyote:
+Am Espenpfuhl: gutes Kopfsteinpflaster	Q1 17719,683 18075,128
+#: by: Nicolas Jost: vvv
+Boothstr.: Asphalt	Q0 4959,3194 5108,3104 5244,3041 5503,2922
+#: XXX: laut ADFC-Karte aber gut befahrbar?
+Marienstr.: schlechtes Kopfsteinpflaster	Q3 4962,2532 5115,2803
+Marienstr.: schlechtes Kopfsteinpflaster	Q3 5193,2953 5244,3041
+Marienplatz: schlechtes Kopfsteinpflaster	Q3 5115,2803 5209,2837 5193,2953 5084,2918 5115,2803
+#: by: ^^^
