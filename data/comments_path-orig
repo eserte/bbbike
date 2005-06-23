@@ -1,4 +1,4 @@
-# $Id: comments_path-orig,v 4.16 2005/06/19 16:02:06 eserte Exp $
+# $Id: comments_path-orig,v 4.16 2005/06/19 16:02:06 eserte Exp eserte $
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C
 # CP   : wie "CP;", Kommentar gültig für beide Fahrtrichtungen
 # CP2; : Kommentar an Punkt A bei Fahrt von A nach B
@@ -146,3 +146,7 @@ Kietz - Müggelheimer Str.: zum Überqueren der Straße Fußgängerampel links benutz
 Kietz - Amtsstr.: zum Überqueren der Straße Fußgängerampel links benutzen	CS; 22364,4429 22396,4464 22502,4528
 Als "Neue Dorfstr." ausgeschildert	CS; 52490,75434 52181,75778
 Als "Wiesenweg" ausgeschildert	CS; 52215,83681 52346,83150
+#: by: Susan Richter: vvv
+Lichtenrader Damm - Griembergweg: Überquerungsmöglichkeit nördliche der Kreuzung	CS; 10725,129 10740,82 11072,108
+Griembergweg - Lichtenrader Damm: Überquerungsmöglichkeit nördliche der Kreuzung	CS; 11072,108 10740,82 10780,-43
+#: by: ^^^

@@ -10,29 +10,40 @@ Legend:
 
   Priority from 1 (unimportant) to 5 (very important).
 
-=head1 Unsorted after Win98 session
-
- * option editor does not fit into 800x600 screen --- using scrollable pane? (it even does not fit into a 1024x768 screen on windows)
- * Drucken: if the PDF backend is chosen, then Druckeinstellungen have no effect. Maybe it
-    would be nice to support at least some of them (legend, maybe b/w)
- * Overview-Map: always segfault
- * Archive::Zip-Teil fuer cgi/bbbike-data.zip schreiben. Test fuer dieses Skript schreiben.
-
 =head1 Perl/Tk version of bbbike
 
 =over
 
-=item * (E4)
+=item * (H3)
 
-Option editor: use german labels
+Drucken: if the PDF backend is chosen, then Druckeinstellungen have no
+effect. Maybe it would be nice to support at least some of them
+(legend, maybe b/w)
+
+=item * (H4)
+
+Overview-Map: always segfaults under Win98
 
 =item * (H3)
 
-Unterstützung für E<quot>Persönliche WegeE<quot> (oder user-defined
-layers). Zwei Typen: routingfähig (automatisch per
+Option editor does not fit into 800x600 screen --- using scrollable
+pane? (it even does not fit into a 1024x768 screen on windows)
+
+=item * (E4)
+
+Option editor: use german labels -> FIXED? Under which circumstances
+it's english?
+
+=item * (H1)
+
+Unterstützung für E<quot>Persönliche WegeE<quot> (oder
+user-defined layers). Zwei Typen: routingfähig (automatisch per
 E<quot>add...E<quot> in das Straßennetz eingebunden) oder
-nicht-routingfähig. Editiermöglichkeiten für diesen Layer (mit
-Verwendung von datachange.log). Möglichkeit der Veröffentlichung.
+nicht-routingfähig. Editiermöglichkeiten für diesen Layer
+(mit Verwendung von datachange.log). Möglichkeit der
+Veröffentlichung. -> Niedrige Prio, da theoretisch schon machbar,
+auch wenn nicht ganz komfortabel: edit-Funktion funktioniert für
+eigene Layer, add custom und custom existiert für das Suchnetz
 
 =item * (H3)
 
@@ -87,8 +98,9 @@ Bug: see t/strassennetz.t
 
 Computers are faster nowadays. Make some feature default, e.g.
 no_overlap_labels, more layers on startup (flaechen, gewaesser).
+Detect computer speed on linux:
 
-=item * (M2)
+    perl -e '($bogomips)=`grep bogomips /proc/cpuinfo` =~ /:\s*([\d\.]+)/; print $bogomips,"\n"'
 
 E<quot>Optionen für langsame RechnerE<quot>: z.B. E<quot>Überlappungen
 vermeidenE<quot> etc.
@@ -916,7 +928,11 @@ Mit dem Mapsource-Programm und/oder gpsman folgendes testen:
 =item gpsman2bbd Parameteruebergabe ueberarbeiten
 
 =item Tk::LayerEditor in einer nicht-DND-Version (für Windows,
-optional auch für X11, notwendig fuer Tk804)
+optional auch für X11, notwendig fuer Tk804) -> fix for TK804 ist leicht, einfach
+
+     my($x, $y) = ($_[3], $_[4]);#XXXchanged for Tk804
+
+in LayerEditorCore::Drop verwenden
 
 =item * (H3)
 
@@ -1977,6 +1993,10 @@ AbhE<auml>ngigkeit von HAVE_KDE angeben.
 =head1 Tests
 
 =over
+
+=item * (M2)
+
+Test für cgi/bbbike-data.zip schreiben
 
 =item * (M2)
 

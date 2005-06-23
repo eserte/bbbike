@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.62 2005/06/19 19:01:40 eserte Exp $
+# $Id: Makefile,v 1.62 2005/06/19 19:01:40 eserte Exp eserte $
 #
 
 # Targets:
@@ -190,6 +190,7 @@ check-rsync-ok:
 
 do-rsync:
 	${RSYNC} ${RSYNC_ARGS} ${RSYNC_SRCDEST}
+	touch .last/do-rsync
 
 rsync-bbbike:
 	@echo NYI
@@ -206,6 +207,7 @@ do-rsync-routopedia:
 	${RSYNC} ${RSYNC_ARGS} \
 	    --exclude data/ \
 	    routopedia/ ${RSYNC_DEST}/routopedia/
+	touch .last/do-rsync-routopedia
 
 check-rsync-data-ok:
 	true
@@ -219,17 +221,20 @@ rsync-bbbike-data:	check-rsync-data-ok \
 do-rsync-bbbike-data:
 	${RSYNC} ${RSYNC_ARGS} \
 	    BBBike/data/ ${RSYNC_DEST}/BBBike/data/
+	touch .last/do-rsync-bbbike-data
 
 post-rsync-bbbike-data:
 # No winter optimization needed anymore...
 .if 0
 	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
 	   "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/miscsrc/winter_optimization.pl -one-instance &"
+	touch .last/post-rsync-bbbike-data
 .endif
 
 rsync-temp-blockings:
 	${RSYNC} ${RSYNC_ARGS} \
 	    BBBike/data/temp_blockings/ ${RSYNC_DEST}/BBBike/data/temp_blockings/
+	touch .last/rsync-temp-blockings
 
 show-rsync-message:
 	-[ ! -e ${CURDIR}/.rsync_message ] && true || cat ${CURDIR}/.rsync_message
@@ -431,6 +436,7 @@ test:
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
 		${TESTS}
+	touch .last/test
 
 test-on-remote:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
@@ -442,6 +448,7 @@ test-on-remote:
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS} \
 	'
+	touch .last/test-on-remote
 
 test-on-remote-and-send-mail:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
