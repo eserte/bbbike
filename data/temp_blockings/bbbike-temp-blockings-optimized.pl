@@ -1,12 +1,49 @@
 @temp_blocking = ();
-$#temp_blocking = 33;
+$#temp_blocking = 7;
 push @temp_blocking,
 (
        {
-         'until' => 1120514399,
-         'text' => 'Schlichtallee Hauptstraße - Lückstraße in beiden Richtungen Zwischen Hauptstraße und Lückstraße beidseitig Baustelle, gesperrt bis 04.07. 2005 ',
+         'until' => 1119754800,
+         'text' => 'CSD am 25.6.',
+         'from' => 1119668400,
+         'file' => 'csd.bbd'
+       },
+       undef,
+       {
+         'until' => 1119826800,
+         'text' => 'Rheinstraßenfest in der Rheinstraße zwischen Breslauer Platz  und Walter-Schreiber-Platz. Dauer: 25.06.2005 06:00 Uhr bis 27.06.2005 01:00',
+         'from' => 1119672000,
+         'file' => 'rheinstrassenfest.bbd'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       {
+         'until' => 1130799599,
+         'text' => 'Schlichtallee (Lichtenberg) Richtung Lückstr., Baustelle, Einbahnstraße in Richtung Haupstraße (bis Ende 10/2005)
+',
          'from' => undef,
-         'data' => 'userdel	2 15629,10481 15751,10582
+         'data' => 'userdel	1 15751,10582 15629,10481
 ',
          'type' => 'gesperrt'
        },
@@ -112,15 +149,7 @@ userdel	2 13178,10623 13206,10651
        undef,
        undef,
        undef,
-       {
-         'until' => 1119650400,
-         'text' => 'B 167; zw. Bad Freienw. u. Falkenberg, Höhe Papierfabrik Neubau von Durchlässen Vollsperrung 12.04.2005-24.06.2005 ',
-         'from' => 1113170400,
-         'data' => 'userdel	q4 49039,44131 48583,44366
-userdel	q4 49039,44131 49691,43812
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -442,16 +471,16 @@ userdel	q4 1872,-1118 1680,-1011
        },
        undef,
        {
-         'until' => 1119650400,
-         'text' => 'L 15; (Fürstenberg-Rheinsberg); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-24.06.2005 ',
+         'until' => 1120859999,
+         'text' => 'L 15; (Fürstenberg-Rheinsberg); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-08.07.2005 ',
          'from' => 1116194400,
          'data' => 'userdel	q4 -15062,76937 -14623,77426
 ',
          'type' => 'handicap'
        },
        {
-         'until' => 1119650400,
-         'text' => 'L 222; (Gransee-Menz); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-24.06.2005 ',
+         'until' => 1120859999,
+         'text' => 'L 222; (Gransee-Menz); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-08.07.2005 ',
          'from' => 1116194400,
          'data' => 'userdel	q4 -15062,76937 -14862,76637
 ',
@@ -511,14 +540,7 @@ userdel	2 14153,-17829 13303,-18235
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1119650399,
-         'text' => 'Zimmerstraße Richtung Charlottenstraße zwischen Friedrichstraße und Charlottenstraße Kranarbeiten, gesperrt bis 24.06.2005 ',
-         'from' => 1118527200,
-         'data' => 'userdel	1 9473,11316 9603,11328
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1120068000,
@@ -558,6 +580,30 @@ userdel	2 10170,12261 10267,12305
          'from' => 1119132000,
          'data' => 'userdel	q4 53810,-90698 53805,-90240
 userdel	q4 53252,-90440 53805,-90240
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1123365600,
+         'text' => 'Kreisverkehr bei Hennigsdorf Straßenbau Vollsperrung 27.06.2005-06.08.2005 ',
+         'from' => 1119736800,
+         'data' => 'userdel	q4 -2800,25478 -2446,25386
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1121119200,
+         'text' => 'L 26; (Löcknitz MVP-LG-Brüssow); zw. LG und Kno. Wollschow Deckeneinbau Vollsperrung 27.06.2005-11.07.2005 ',
+         'from' => 1119736800,
+         'data' => 'userdel	2 61780,112606 61784,112969
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1136069999,
+         'text' => 'Dorotheenstr. Richtung Osten zwischen Wilhelmstr. und Schadowstr. gesperrt (bis Ende 2005)',
+         'from' => 1119697095,
+         'data' => 'userdel	q4; 8775,12457 8907,12472 9008,12485
 ',
          'type' => 'handicap'
        }

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.62 2005/06/19 19:01:40 eserte Exp eserte $
+# $Id: Makefile,v 1.65 2005/06/25 11:58:53 eserte Exp $
 #
 
 # Targets:
@@ -190,7 +190,7 @@ check-rsync-ok:
 
 do-rsync:
 	${RSYNC} ${RSYNC_ARGS} ${RSYNC_SRCDEST}
-	touch .last/do-rsync
+	date >> .last/do-rsync
 
 rsync-bbbike:
 	@echo NYI
@@ -207,7 +207,7 @@ do-rsync-routopedia:
 	${RSYNC} ${RSYNC_ARGS} \
 	    --exclude data/ \
 	    routopedia/ ${RSYNC_DEST}/routopedia/
-	touch .last/do-rsync-routopedia
+	date >> .last/do-rsync-routopedia
 
 check-rsync-data-ok:
 	true
@@ -221,20 +221,20 @@ rsync-bbbike-data:	check-rsync-data-ok \
 do-rsync-bbbike-data:
 	${RSYNC} ${RSYNC_ARGS} \
 	    BBBike/data/ ${RSYNC_DEST}/BBBike/data/
-	touch .last/do-rsync-bbbike-data
+	date >> .last/do-rsync-bbbike-data
 
 post-rsync-bbbike-data:
 # No winter optimization needed anymore...
 .if 0
 	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
 	   "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/miscsrc/winter_optimization.pl -one-instance &"
-	touch .last/post-rsync-bbbike-data
+	date >> .last/post-rsync-bbbike-data
 .endif
 
 rsync-temp-blockings:
 	${RSYNC} ${RSYNC_ARGS} \
 	    BBBike/data/temp_blockings/ ${RSYNC_DEST}/BBBike/data/temp_blockings/
-	touch .last/rsync-temp-blockings
+	date >> .last/rsync-temp-blockings
 
 show-rsync-message:
 	-[ ! -e ${CURDIR}/.rsync_message ] && true || cat ${CURDIR}/.rsync_message
@@ -265,8 +265,12 @@ prepare-bbbike-data:
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} all
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} slow-checks
 
+# XXX using "mapfiles-without-reference-maps" instead of "mapfiles" here
+# This is because the "mapfiles-reference-maps" rule takes a lot of time
+# (5 - 10 minutes), but visually it changes very little. So just do it
+# from time to time manually
 prepare-mapserver-data:
-	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} mapfiles
+	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} mapfiles-without-reference-maps
 
 prepare-bbbike-dist:	prepare-bbbike-dist-prog prepare-bbbike-dist-data
 
@@ -436,7 +440,7 @@ test:
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
 		${TESTS}
-	touch .last/test
+	date >> .last/test
 
 test-on-remote:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
@@ -448,7 +452,7 @@ test-on-remote:
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS} \
 	'
-	touch .last/test-on-remote
+	date >> .last/test-on-remote
 
 test-on-remote-and-send-mail:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\

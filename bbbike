@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.172 2005/06/21 21:19:39 eserte Exp $
+# $Id: bbbike,v 3.173 2005/06/24 19:51:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -186,7 +186,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.172 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.173 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -8868,6 +8868,11 @@ sub activate_temp_blockings {
 	    }
 
 	    if ($do_it) {
+		require POSIX;
+		my $datefmt = "%d.%m.%Y %H:%M:%S";
+		my $from_date_readable = defined $o->{from}  ? POSIX::strftime($datefmt, localtime($o->{from})) : "...";
+		my $to_date_readable   = defined $o->{until} ? POSIX::strftime($datefmt, localtime($o->{until})) : "...";
+		my $text = $o->{text} . " [" . $from_date_readable . " - " . $to_date_readable . "]";
 		my $s;
 		my $f;
 		if ($o->{file}) {
@@ -8882,7 +8887,7 @@ sub activate_temp_blockings {
 		while(1) {
 		    my $ret = $s->next;
 		    last if !@{ $ret->[Strassen::COORDS()] };
-		    $ret->[Strassen::NAME] = $o->{text};
+		    $ret->[Strassen::NAME] = $text;
 		    $new_s->push($ret);
 		}
 		push @s, $new_s;

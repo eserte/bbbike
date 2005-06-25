@@ -65,10 +65,10 @@ EOF
        file  => "strassenfest-karl-marx-str.bbd",
        text  => "Karl-Marx-Straße zwischen Flughafenstraße und Werbellinstraße, Erkstraße zwischen Karl-Marx-Straße und Donaustraße: Straßenfest, Straßen gesperrt. Datum: 21.06.2003, 04.00 Uhr bis 22.06.2003, 24.00 Uhr",
      },
-     { from  => Time::Local::timelocal(reverse(2003-1900,6-1,23,5,0,0)),
-       until => Time::Local::timelocal(reverse(2003-1900,6-1,29,5,0,0)),
+     { from  => Time::Local::timelocal(reverse(2005-1900,6-1,25,5,0,0)),
+       until => Time::Local::timelocal(reverse(2005-1900,6-1,26,5,0,0)),
        file  => "csd.bbd",
-       text  => "CSD am 28.5.",
+       text  => "CSD am 25.6.",
      },
      { from  => 1119070200, # 2005-06-18 06:50
        until => 1119218400, # 2005-06-20 00:00
@@ -81,10 +81,10 @@ userdel	2 8993,16100 9059,16038
 userdel	2 9134,15953 9059,16038
 EOF
      },
-     { from  => Time::Local::timelocal(reverse(2003-1900,7-1,3,6,0,0)),
-       until => Time::Local::timelocal(reverse(2003-1900,7-1,7,23,59,59)),
+     { from  => Time::Local::timelocal(reverse(2005-1900,6-1,25,6,0,0)),
+       until => Time::Local::timelocal(reverse(2005-1900,6-1,27,1,0,0)),
        file  => "rheinstrassenfest.bbd",
-       text  => "Rheinstraßenfest in der Rheinstraße zwischen Breslauer Platz  und Walter-Schreiber-Platz. Beide Richtungsfahrbahnen sind ab dem 05.07.2003, 06.00 Uhr bis zum 06.07.2003, 24.00 Uhr gesperrt.",
+       text  => "Rheinstraßenfest in der Rheinstraße zwischen Breslauer Platz  und Walter-Schreiber-Platz. Dauer: 25.06.2005 06:00 Uhr bis 27.06.2005 01:00",
      },
      { from  => Time::Local::timelocal(reverse(2003-1900,7-1,8,6,0,0)),
        until => Time::Local::timelocal(reverse(2003-1900,7-1,12,23,59,59)),
@@ -219,11 +219,12 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'handicap',
      },
      { from  => undef, # 
-       until => 1120514399, # 2005-07-04 23:59
-       text  => 'Schlichtallee Hauptstraße - Lückstraße in beiden Richtungen Zwischen Hauptstraße und Lückstraße beidseitig Baustelle, gesperrt bis 04.07. 2005 ',
+       until => Time::Local::timelocal(reverse(2005-1900,10-1,31,23,59,59)),
+       text  => 'Schlichtallee (Lichtenberg) Richtung Lückstr., Baustelle, Einbahnstraße in Richtung Haupstraße (bis Ende 10/2005)
+',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 15629,10481 15751,10582
+userdel	1 15751,10582 15629,10481
 EOF
      },
      { from  => 1070341200, # 2003-12-02 06:00
@@ -1231,7 +1232,7 @@ EOF
        text  => 'Ebertstr. Richtung Potsdamer Platz zwischen Behrensstr. und Hannah-Ahrendt-Str. Baustelle, Fahrtrichtung gesperrt (bis April 2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 8595,12066 8579,11917 8571,11846
+userdel	q4; 8595,12066 8581,11896 8571,11846
 EOF
      },
      { from  => 1101337200, # 2004-11-25 00:00
@@ -1938,16 +1939,16 @@ userdel	2 33128,11823 32535,11591
 EOF
      },
      { from  => 1116194400, # 2005-05-16 00:00
-       until => 1119650400, # 2005-06-25 00:00
-       text  => 'L 15; (Fürstenberg-Rheinsberg); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-24.06.2005 ',
+       until => Time::Local::timelocal(reverse(2005-1900,7-1,8,23,59,59)),
+       text  => 'L 15; (Fürstenberg-Rheinsberg); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-08.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -15062,76937 -14623,77426
 EOF
      },
      { from  => 1116194400, # 2005-05-16 00:00
-       until => 1119650400, # 2005-06-25 00:00
-       text  => 'L 222; (Gransee-Menz); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-24.06.2005 ',
+       until => Time::Local::timelocal(reverse(2005-1900,7-1,8,23,59,59)),
+       text  => 'L 222; (Gransee-Menz); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-08.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -15062,76937 -14862,76637
@@ -2134,6 +2135,30 @@ EOF
        data  => <<EOF,
 userdel	q4 53810,-90698 53805,-90240
 userdel	q4 53252,-90440 53805,-90240
+EOF
+     },
+     { from  => 1119736800, # 2005-06-26 00:00
+       until => 1123365600, # 2005-08-07 00:00
+       text  => 'Kreisverkehr bei Hennigsdorf Straßenbau Vollsperrung 27.06.2005-06.08.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -2800,25478 -2446,25386
+EOF
+     },
+     { from  => 1119736800, # 2005-06-26 00:00
+       until => 1121119200, # 2005-07-12 00:00
+       text  => 'L 26; (Löcknitz MVP-LG-Brüssow); zw. LG und Kno. Wollschow Deckeneinbau Vollsperrung 27.06.2005-11.07.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 61780,112606 61784,112969
+EOF
+     },
+     { from  => 1119697095, # 2005-06-25 12:58
+       until => 1136069999, # 2005-12-31 23:59
+       text  => 'Dorotheenstr. Richtung Osten zwischen Wilhelmstr. und Schadowstr. gesperrt (bis Ende 2005)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 8775,12457 8907,12472 9008,12485
 EOF
      },
     );

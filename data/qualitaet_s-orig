@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.31 2005/06/19 19:02:05 eserte Exp eserte $
+# $Id: qualitaet_s-orig,v 4.33 2005/06/25 12:00:41 eserte Exp $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -154,7 +154,7 @@ Ackerstr.: Kopfsteinpflaster	Q2 9400,14400 9375,14419 9048,14681 8953,14758 8741
 Ackerstr.: Kopfsteinpflaster	Q2 9737,14126 9628,14215
 Gartenstr.: Kopfsteinpflaster	Q2 8870,14637 8686,14934 8570,15107
 Liesenstr.: Kopfsteinpflaster, OK	Q1 8686,14934 8562,14798
-Am Kupfergraben: teilweise schlechtes Kopfsteinpflaster	Q3 9529,12925 9614,12893 9661,12876
+Am Kupfergraben: teilweise schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 9529,12925 9614,12893 9661,12876
 Am Kupfergraben: Kopfsteinpflaster	Q2 9867,12651 9754,12775 9661,12876
 Geschwister-Scholl-Str.: Kopfsteinpflaster	Q2 9529,12925 9550,12760
 Marchlewskistr.: Kopfsteinpflaster	Q2 13226,11934 13280,11834 13303,11791
@@ -451,7 +451,8 @@ Stahnsdorfer Damm: Kopfsteinpflaster	Q2 -4803,1240 -4995,1075
 (Forst Düppel): Waldweg	Q1 -6009,559 -6306,251 -6353,189 -6485,70 -6627,-56 -7067,-36
 Hampsteadstr.: Kopfsteinpflaster	Q2 793,2632 1157,2818 1314,2915 1722,2887 1842,2880 1903,2903
 Reichstagufer: Kopfsteinpflaster	Q2 9091,12681 8892,12576 8766,12541 8665,12548
-Reichstagufer: mäßiger Asphalt	Q1 9283,12856 9209,12795 9091,12681
+# XXX fand ich letztens nicht so schlimm: Reichstagufer: mäßiger Asphalt	Q1 9283,12856 9209,12795 9091,12681
+Am Weidendamm: mäßiger Asphalt	Q1 9383,12915 9529,12925
 Kopfstr.: Kopfsteinpflaster	Q2 12480,7887 12582,7909
 Morusstr.: Kopfsteinpflaster	Q2 12480,7887 12516,7718
 Leinestr.: Kopfsteinpflaster	Q2 12122,7553 11923,7516 11797,7492 11656,7460 11553,7437
@@ -784,7 +785,7 @@ Ella-Kay-Str.: guter Asphalt	Q0 12202,15099 12089,14891 11990,14714
 #: by ^^^^^^^^^^^^^^^
 Landecker Str.: Kopfsteinpflaster	Q2 3140,8525 2973,8569
 Kufsteiner Str.: glatter Parkweg	Q1 5919,8417 5934,8220
-Rolandufer: Kopfsteinpflaster	Q2 11278,12185 11155,12184 10945,12150
+Rolandufer: Kopfsteinpflaster, Ausweichen auf Uferweg möglich, dort unbefestigter Weg	Q2 11278,12185 11155,12184 10945,12150
 Rolandufer/Spreeufer: gutes Kopfsteinpflaster	Q1 10945,12150 10837,12158 10660,12176
 Spreeufer: Verbundsteine	Q1 10583,12206 10502,12280 10423,12353 10422,12395
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
@@ -799,7 +800,7 @@ Am Berlin Museum: Hindernisse	Q2 10016,10755 9801,10807
 (Rad- und Wanderweg an Spree und Landwehrkanal): teilweise Parkweg, teilweise gutes Kopfsteinfplaster	Q1 3288,12700 3385,12734 3582,12704 3763,12624 3910,12630 4094,12639 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
 Monbijoupark - Henriette-Herz-Platz: holpriger Parkweg	Q2 9977,12912 10132,12941
 Spreeufer: teilweise holpriger Parkweg	Q2 10171,12769 10100,12876 9977,12912 9895,12936
-Spreeufer: Rampen	Q2 9784,12953 9707,12974
+Spreeufer - Monbijoustr.: kurze steile Rampe	Q2 9784,12953 9707,12974
 (Park am Fennpfuhl): Parkweg	Q1 15232,13560 15252,13672 15323,13777 15253,13908 15183,13899 15066,14060
 (NSG Fauler See): Waldweg	Q2 15918,16383 15965,16482 16386,16953
 Barther Str.: Radweg teilweise mit Schotter, Fahrbahn OK	Q1 16697,17695 16607,17767 16317,18020
@@ -1874,8 +1875,14 @@ Rosenheimer Str.: Asphalt	Q0 6164,9329 6070,9322
 #: by: ^^^
 #: by: Jana Eberhart:
 Tieckstr.: asphaltiert	Q0 9081,13636 9394,13754 9531,13797
-#: by: H.-G. Danelski:
+#: by: H.-G. Danelski: vvv
 Löptener Str.: sehr guter Asphalt	Q0 10989,-1904 10760,-1931
+Mellener Str.: Asphalt	Q0 10747,-2129 10760,-1931 10767,-1850 10779,-1751
+Mellener Str.: schlecht befahrbares Kopfsteinpflaster	Q3 10747,-2129 10761,-2268 10773,-2421
+(Am Lichtenrader Graben): asphaltiert	Q0 10531,-1959 10628,-1737 10703,-1518
+#: note: Verbindung wird auch in http://www.agenda21berlin.de/vonwegen/map_tmpvelo.htm erwähnt
+Mellener Str. - Lichtenrader Graben: asphaltiert	Q0 10779,-1751 10628,-1737
+#: by: ^^^
 #: by: Rainer Schulz-Ehrcke:
 Darmstädter Str.: sehr guter Asphalt	Q0 4456,10092 4623,10066
 #: by: Andreas (stratz...):
@@ -1990,8 +1997,10 @@ Kapaunenstr.: schlechtes Kopfsteinpflaster	Q3 16212,-440 16384,101 16550,468
 Glambecker Ring: guter Asphalt	Q0 21824,16506 21885,16494 22187,16437 22278,16590 22050,16781 21892,16841
 #: by: Susanne Hillenkamp:
 Borgmannstr.: guter Asphalt	Q0 22513,5747 22518,5875 22525,6040
-#: by: Thomas Ludwig:
+#: by: Thomas Ludwig: vvv
 Springbornstr.: guter Asphalt	Q0 17142,3393 16934,3571 16615,3734 16737,4084
+Friedrich-List-Str.: Asphalt	Q0 16987,5838 17137,5943 17384,5631 17331,5571
+#: by: ^^^
 #: by: Dirk (gesch):
 Kolberger Str.: Kopfsteinpflaster	Q2 8315,15293 8518,15506
 #: by: Kai Lehmann:
@@ -2115,11 +2124,20 @@ Paul-Robeson-Str.: Kopfsteinpflaster	Q2 10254,16363 10619,16319 11013,16278
 Liebenwalder Str.: Kopfsteinpflaster	Q2 7162,16163 7471,16185 7740,16203 7808,16215
 #: by: Tobias (iow...):
 Starnberger Str.: Asphalt	Q0 6553,9600 6621,9657 6664,9701
-#: by: Michael Stoeter:
+#: by: Michael Stoeter: vvv
 Torweg: Kopfsteinpflaster	Q2 -7931,14606 -7385,14530
+#: add_fragezeichen: wird demnächst asphaltiert:
+Torweg: unbefestigter Weg	Q2 -8606,14696 -8264,14642
+Torweg: asphaltiert	Q0 -8264,14642 -8085,14618 -7931,14606
+Torweg: asphaltiert	Q0 -7385,14530 -7154,14532 -6876,14529 -6398,14486
+#: by: ^^^
 #: by: Snoopsoul: vvv
 #: XXX etwas widersprüchlich: Snoopsoul schreibt "schlechtes Kopfsteinpflaster", die ADFC-Karte vergibt für den nördlichen Abschnitt "gut befahrbar", außerdem werden Teilstücke vom Bus befahren
 Pilgramer Str.: schlechtes Kopfsteinpflaster	Q3 25115,11244 25125,10475 25028,10312 24540,9478
 Pilgramer Str.: Asphalt	Q0 24540,9478 24334,9000 24221,8731
 Pilgramer Str.: schlechtes Kopfsteinpflaster	Q3 24221,8731 24165,8375 24043,7718
 #: by: ^^^
+#: by: Jörg krummholz:
+Delbrückstr. (Neukölln): Beton	Q0 12468,6592 12743,6645
+#: by: Claas Ketelhut:
+Lübarser Str.: Asphalt	Q0 5326,21407 5589,21799

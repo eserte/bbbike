@@ -1,5 +1,5 @@
 #
-# $Id: Makefile.mapfiles,v 1.23 2005/05/18 00:56:29 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.24 2005/06/25 11:59:16 eserte Exp $
 #
 
 # should this be here?
@@ -18,8 +18,11 @@ CONVERT_RADWEGE=	${MISCSRCDIR}/convert_radwege
 MAPSERVER_BIN_DIR?=	/usr/local/src/work/mapserver
 SHPTREE=		${MAPSERVER_BIN_DIR}/shptree
 
-mapfiles:	mapfiles-prepare mapfiles-convert mapfiles-shptree \
-		mapfiles-permissions mapfiles-reference-maps
+mapfiles:	mapfiles-without-reference-maps mapfiles-reference-maps
+
+mapfiles-without-reference-maps: \
+		mapfiles-prepare mapfiles-convert mapfiles-shptree \
+		mapfiles-permissions 
 
 mapfiles-prepare:
 	[ ! -d $(MAPFILES_ROOT_DIR) ] && mkdir $(MAPFILES_ROOT_DIR) || true
