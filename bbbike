@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.173 2005/06/24 19:51:08 eserte Exp $
+# $Id: bbbike,v 3.174 2005/06/26 12:40:33 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -186,7 +186,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.173 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.174 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -555,6 +555,8 @@ eval { local $SIG{'__DIE__'};
     label => M"Sehenswürdigkeiten", var => \$init_str_draw{'v'}],
    ['pp','!',0,
     label => M"Kurvenpunkte und Kreuzungen", var => \$init_p_draw{'pp'}],
+   ['fragezeichen','!',0,
+    label => M"Fragezeichen",	var => \$init_str_draw{'fz'}],
 
    M"Plot-Attribute",
    ['outline','!',0,
@@ -603,12 +605,12 @@ eval { local $SIG{'__DIE__'};
    #XXX -nolazy geht nicht!
    ['lazy','!',undef,   nogui => 1, var => sub {
        $lazy_plot = 1;
-       $p_far_away{'o'}   = 1;
-       $str_far_away{'w'} = 1;
-       $str_far_away{'l'} = 1;
-       $wasserumland      = 1;
-       $str_draw{'l'}     = $str_draw{'s'};
-       $p_draw{'o'}       = 1;
+#        $p_far_away{'o'}   = 1;
+#        $str_far_away{'w'} = 1;
+#        $str_far_away{'l'} = 1;
+#        $wasserumland      = 1;
+#        $str_draw{'l'}     = $str_draw{'s'};
+#        $p_draw{'o'}       = 1;
    }],
    ['lowmem','!',undef, nogui => 1, var => sub {
 	fast_settings();
@@ -673,12 +675,19 @@ eval { local $SIG{'__DIE__'};
     label => M"Visual", var => \$visual],
    ['scale','=f',undef,
     label => M"Skalierung", nogui => 1,
-    var => sub { my $oldscale = $scale;
-		 set_canvas_scale($_[1]);
-		 foreach (@scrollregion) {
-		     $_ *= ($scale/$oldscale);
-		 }
-	     }],
+    var => sub {
+	my $value = $_[1];
+	if (defined $value && $value > 0) {
+	    my $oldscale = $scale;
+	    set_canvas_scale($value);
+	    my $change_scale_factor = $scale/$oldscale;
+	    foreach (@scrollregion) {
+		$_ *= $change_scale_factor;
+	    }
+	} else {
+	    warn "Ungültiger Skalierungswert <$value> wird ignoriert\n";
+	}
+    }],
    ['overviewwasser','!',1,
     label => M"Übersichtskarte mit Gewässern", var => \$overview_draw{'w'}],
    ['overviewsbahn','!',0,
@@ -904,10 +913,10 @@ speicherplatzsparender.",
 
    M"Advanced",
     ['edit','!',undef,
-     label => M"Editmodus beim Starten (experimentell!!!)",
-     nogui => 1,
+     label => M"Editmodus beim Starten",
+     nogui => 1, # XXX remove some day?
      var => sub {
- 	$set_mode = "edit";
+	 $set_mode = "edit";
      }
     ],
    ['stderr','!',0,
@@ -4403,7 +4412,7 @@ if ($c->can('DropSite')) {
 			  [($Tk::VERSION >= 804 ? () : 'KDE'), 'XDND', 'Sun']
 			 )
 	  );
-	warn M("Datei-DND wird akzeptiert") if $verbose;
+	warn M("Datei-DND wird akzeptiert") . "\n" if $verbose;
     };
     warn __LINE__ . ": $@" if $@ && $verbose;
 }
@@ -4450,18 +4459,12 @@ $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
 	    (-text => 'EDIT',
 	     -variable => \$edit_mode_flag,
 	     -command => sub {
-		 if ($edit_mode_flag) {
-		     #XXX del switch_edit_berlin_mode();
-		     switch_edit_standard_mode();
-		 } else {
-		     switch_standard_mode();
-		 }
-		 set_map_mode();
+		 toggle_edit_mode();
 	     })->pack(-side => "left");
 	$edit_mode_type = $indicator_frame->Label
 	    (-text => '', -relief => 'sunken')
 		->pack(-side => "left");
-	set_edit_mode($edit_mode);
+	gui_set_edit_mode($edit_mode);
     }
     $balloon->configure(-statusbar => $status_label);
 }
@@ -4475,9 +4478,10 @@ $splash_screen->Update(0.4) if $splash_screen;
 $progress->InitGroup;
 if (defined $set_mode && $set_mode eq 'edit') {
     require BBBikeAdvanced;
-    #XXX inefficient!
-    switch_edit_standard_mode();
-    $lazy_plot = 1;
+    set_edit_mode(1);
+#     #XXX inefficient!
+#     switch_edit_standard_mode();
+#     $lazy_plot = 1;
 }
 foreach (keys %init_str_draw) {
     $str_draw{$_} = $init_str_draw{$_};
@@ -4489,7 +4493,11 @@ foreach (keys %init_str_draw) {
     }
 }
 foreach (keys %init_p_draw) {
-    $p_draw{$_}   = $init_p_draw{$_};
+    if ($_ eq 'pp' && defined $set_mode) {
+	# XXX already set
+    } else {
+	$p_draw{$_}   = $init_p_draw{$_};
+    }
     eval {
 	plot('p',$_)     if $p_draw{$_};     # Punkte (z.B. Ampeln) zeichnen
     };
@@ -10691,7 +10699,7 @@ sub set_coord_system {
 }
 
 # Setzt die GUI für den Edit-Mode
-sub set_edit_mode {
+sub gui_set_edit_mode {
     my($onoff) = @_;
     if ($onoff) {
 	$edit_mode_indicator->configure(-fg => 'black'); # XXX don't hardcode
@@ -13100,11 +13108,16 @@ sub show_mark {
 sub show_overview {
     my $new    = shift;
 
+    my $overview_top = $toplevel{"overview"};
+
     if ($overview_top && $overview_top->{CoordSystem} ne $coord_system) {
 	$new = 1;
     }
     if (defined $overview_top and Tk::Exists($overview_top)) {
-	$overview_top->destroy if ($new);
+	if ($new) {
+	    $overview_top->destroy;
+	    delete $toplevel{"overview"};
+	}
     }
 
     if (defined $overview_top && Tk::Exists($overview_top)) {
@@ -13120,6 +13133,8 @@ sub show_overview {
     $overview_top = $top->Toplevel(-title => M"Übersicht",
 				   -class => "Bbbike Overview",
 				  );
+    $overview_top->OnDestroy(sub { $show_overview = 0; });
+    $toplevel{"overview"} = $overview_top;
     $overview_top->transient($top) if $transient;
     $overview_top->{CoordSystem} = $coord_system;
     # Try to set the overview to the right bottom corner of the main
@@ -13514,6 +13529,20 @@ sub show_overview_populate {
 	   ($delta_x_fraction, $delta_y_fraction) = (0.5, 0.5);
        });
 
+    {
+	my $gain = 1;
+	$real_canvas->CanvasBind('<2>',
+				 [sub {
+				      my($w,$x,$y) = @_;
+				      $w->scan('mark',$x,$y);
+				  },Tk::Ev('x'),Tk::Ev('y')]);
+	$real_canvas->CanvasBind('<B2-Motion>',
+				 [sub {
+				      my($w,$x,$y) = @_;
+				      $w->scan('dragto',$x,$y,$gain);
+				  },Tk::Ev('x'),Tk::Ev('y')]);
+    }
+
     # Scrolling korrigieren (auf Mitte setzen)
     my(@oldx) = $overview_canvas->xview;
     my(@oldy) = $overview_canvas->yview;
@@ -13537,13 +13566,14 @@ sub show_overview_populate {
 
 ### AutoLoad Sub
 sub delete_overview {
+    my $overview_top = $toplevel{"overview"};
     if (defined $overview_top && Tk::Exists($overview_top)) {
 	$overview_top->destroy;
     }
     eval q{ $radar_image->delete };
 
-    undef $overview_top;
-    $show_overview = 0;
+    delete $toplevel{"overview"};
+    # Done already in OnDestroy: $show_overview = 0;
 }
 
 ### AutoLoad Sub

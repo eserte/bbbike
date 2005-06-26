@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Getopt.pm,v 1.48 2003/09/16 11:57:19 eserte Exp eserte $
+# $Id: Getopt.pm,v 1.51 2005/06/26 12:07:08 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1997,1998,1999,2000,2003 Slaven Rezic. All rights reserved.
@@ -13,7 +13,7 @@
 #
 
 package Tk::Getopt;
-require 5.003;
+require 5.005; # calling CODE refs
 use strict;
 use vars qw($loadoptions $VERSION $x11_pass_through
 	    $CHECKMARK_OFF $CHECKMARK_ON
@@ -24,7 +24,7 @@ use constant OPTTYPE  => 1;
 use constant DEFVAL   => 2;
 use constant OPTEXTRA => 3;
 
-$VERSION = '0.49';
+$VERSION = '0.50-DEVEL';
 
 $DEBUG = 0;
 $x11_pass_through = 0;
@@ -217,7 +217,7 @@ sub load_options {
     foreach $opt ($self->_opt_array) {
 	if (exists $loadoptions->{$opt->[OPTNAME]}) {
 	    if (ref $self->_varref($opt) eq 'CODE') {
-		&{$self->_varref($opt)} if $loadoptions->{$opt->[OPTNAME]};
+		$self->_varref($opt)->($opt, $loadoptions->{$opt->[OPTNAME]}) if $loadoptions->{$opt->[OPTNAME]};
 	    } elsif (ref $self->_varref($opt) eq 'ARRAY' &&
 		     ref $loadoptions->{$opt->[OPTNAME]} eq 'ARRAY') {
 		@{ $self->_varref($opt) } = @{ $loadoptions->{$opt->[OPTNAME]} };
@@ -259,6 +259,7 @@ sub save_options {
 		    }
 		}
 	    }
+	    local $Data::Dumper::Sortkeys = $Data::Dumper::Sortkeys = 1;
 	    if (Data::Dumper->can('Dumpxs')) {
 		# use faster version of Dump
 		print OPT

@@ -63,7 +63,7 @@ Seestr.	1 5440,14840 5264,14671 5071,14614
 Waidmannsluster Damm	1 2142,20849 1835,21427 1914,21508 2242,20908
 Flughafen Tegel	1 2819,16141 2757,16194 2713,16286 2756,16344 2832,16343 2863,16280 2819,16141
 Jakob-Kaiser-Platz	1 2816,14145 2839,14205 2873,14213 2906,14172 2873,14112 2816,14145
-Kurt-Schumacher-Damm (Süd)	1 2839,14205 2766,14381 2861,14731
+Kurt-Schumacher-Damm (Süd)	1 2839,14205 2803,14288 2766,14381 2861,14731
 Kurt-Schumacher-Damm (Süd)	1 3006,14724 2881,14307 2873,14213
 Kurt-Schumacher-Damm (Nord)	1 3567,16369 3645,16509 3722,16649 3853,16825 3948,16849
 Kurt-Schumacher-Damm (Nord)	1 3948,16849 3824,16590 3744,16452 3612,16232
@@ -211,7 +211,7 @@ Herbststr.	1 8465,18365 8634,18401
 Ruhwaldweg: Schranke gesperrt	2 830,13353 801,13323
 Alt-Reinickendorf	1 7003,18715 6734,18728 6567,18812 6766,18794 7003,18715
 Lauterstr.	1 5817,7223 5810,7337
-Friedrich-Wilhelm-Platz	1 5357,7381 5315,7376 5310,7325 5341,7203
+Friedrich-Wilhelm-Platz	1 5357,7381 5315,7376 5310,7325 5324,7205
 Stolbergstr.	1 8850,6421 8834,6639
 Richnowstr.	1 8946,6501 8850,6421
 Menzelstr.	1 6185,6469 6154,6734
@@ -521,6 +521,7 @@ Columbiadamm -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3 10796,8498 1
 Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4789,5079
 Birkbuschstr.: unbequem zu passieren	3 4789,5079 4807,5131 4839,5167
 Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4839,5167 4807,5131 4879,5017
+tragen (Treppen zur U-Bahnbrücke, je drei Stufen)	0:20:-32 2181,4835
 tragen (Eisebahnbrücke Templiner See)	0:60:-231 -15497,-4614
 tragen (Eisebahnbrücke Templiner See)	0:60:-233 -15779,-4402
 tragen (Eisebahnbrücke Caputh)	0:60 -18009,-7528

@@ -1,6 +1,7 @@
 #:
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
-#: by http://www.berlinonline.de/berliner-zeitung/berlin/327989.html?2004-03-26 vvv
+#: by http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2004/1103/lokales/0030/ vvv
+# (alte URL http://www.berlinonline.de/berliner-zeitung/berlin/327989.html?2004-03-26 gilt nicht mehr)
 Leipziger Straße zwischen Leipziger Platz und Wilhelmstraße (entweder beidseitig oder nur auf der Südseite)	? 8733,11524 9046,11558
 Hochstr.	? 8456,15235 8607,15426 8865,15772 8923,15850 9059,16038
 #: XXX nach Meldung eines Benutzers noch nicht (Anfang April 2005):
@@ -26,7 +27,7 @@ Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits e
 Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
 Saargemünder Straße	? 2009,4793 1495,4850
 Englerallee (voraussichtlich 2005-09-01)	? 3707,5758 3723,5922 3756,6272 3836,6550
-Pacelliallee	? 2585,5696 2609,6348 2659,6499 2711,6698 2733,7039
+Pacelliallee	? 2585,5696 2609,6348 2659,6499 2711,6698 2723,7029
 #: by ^^^
 #: by Tagesspiegel 2004-07-25 (obige waren auch dabei) vvv
 Reichsstr.	? 1391,11434 1239,11567 1053,11735 906,11870 836,11935 653,12109 504,12293 448,12361 269,12576 147,12640 50,12695 -112,12866 -120,12915
@@ -57,8 +58,16 @@ Entlastungsstr.: wird voraussichtlich im September 2005 stillgelegt	? 8063,12182
 #: section ^^^
 #
 #: section ignorieren vvv
+# In diesem Abschnitt kommen Straßen rein, die erst einmal nicht in
+# die Datenbank aufgenommen werden sollen.
+Thielpark - Hüttenweg: laut anonymen Eintrag eher nicht geeignet (Stufen). Laut Andreas M. gibt es einige Varianten durch den Park, einige mit Stufen, eine ohne, aber die Variante Gelfertstr. ist sinnvoller	#cccccc 2288,4932 2221,5081
+#: section ^^^
+#
+#: section ignorieren vvv
 # Hier kommen die Fragezeichen-Strecken herein, die nicht bei einer
 # erweiterten Suche aufgenommen werden sollen.
+#: XXX laut Dirk Wittemann keine ebenerdige Verbindung zur Landsberger nur Treppe sowie Aufzüge zum Velodrom
+Hermann-Blankenstein-Str. - Velodrom: genaue Wegführung angucken	? 14056,13386 13802,13756
 Laut eines bln.verkehr-Artikels wird es hier eine Straßenverbindung geben	? 7959,7609 7934,7621 7854,7572
 Alt-Köpenick: laut Message-ID: <41614486$0$3640$9b4e6d93@newsread2.arcor-online.net> wieder gepflastert --- kann ich nicht bestätigen!	? 22196,4847 22138,4661 22111,4562 22093,4499
 Alle Straßen hier (Wendenschloß) scheinen Kopfsteinpflaster (mäßiges bis schlechtes) zu haben. Für die GPS-Tracks bestätigt.	? 23126,2034 23506,2101 23670,1231 23326,1143
@@ -134,7 +143,6 @@ Hasselwerderpark: ist er hier?	? 18226,5930 18197,5876 18377,5748 18407,5845 183
 Ackerpark: ist er hier?	? 9629,14186 9577,14105 9634,14073 9681,14145
 Hinckeldeybrücke: genaue Koordinaten der Schleife?	? 3406,15792 3336,15644 3332,15587
 Uferpromenade Tegelort/Heiligensee: genaueres zur Qualität und zur Fußgängerfrequenz!	? -2251,19047 -2201,19218 -2205,19331 -2244,19547 -2228,19658 -2215,19817 -2149,19966 -2144,20100 -2011,20534
-Thielpark - Hüttenweg: laut anonymen Eintrag eher nicht geeignet (Stufen). Irgendwann mal abfahren und genauer angucken	? 2288,4932 2221,5081
 Neue Späthstr.: genaue GPS-Koordinaten!	? 14705,5176 14600,5450 14398,5406 14340,5393 14025,5319
 Potsdam, Lennestr. - Ökonomieweg: asphaltiert, durch Park Sanssouci, der nachts geschlossen wird	? -14634,-1343 -14856,-1223 -14859,-1142
 Sanssouci, Am Grünen Gitter: asphaltiert, nachts geschlossen	? -13857,-1040 -14153,-1135 -14182,-995
@@ -214,7 +222,6 @@ Martin-Luther-Str. (Falkensee) - Radelandstr.: durchgängige Verbindung vorhanden
 Am Oder-Spree-Kanal, Schwarzer Weg nach Schmöckwitz: Qualtität?	? 30546,-3072 29348,-2798 28923,-2859 28623,-3061 28110,-3047 27906,-3136
 Straßenführung und Straßennamen im Wohnpark an der Buga?	? -13820,1095 -13907,1223 -13801,1414 -14016,1563
 westlich des Sacrower Sees - Försterei Zedlitz - zur Straße nach Krampnitz: Qualität? (wahrscheinlich Waldweg, Q2)	? -9342,4943 -9430,4935 -9678,4913 -10147,4870 -10616,4399 -10912,3738 -11571,3187
-Hermann-Blankenstein-Str. - Landsberger Allee: existiert eine Verbindung für Radfahrer?	? 14056,13386 13843,13681
 Grünanlage Kolonie Bäketal - Bäkepark: befahrbar, Qualität (anscheinend normale Parkwege, unbeleuchtet)?	? 5236,4078 5068,4261 4846,4592 4802,4921
 Schoelerpark: stören Fußgänger? Treppe an der südlichen Seite?	? 5223,8611 5181,8731
 Spekteweg, Spektewiesen: Qualität?	? -4061,15164 -4481,14808 -4631,14811 -5118,15060 -5651,15103 -5679,14999 -5969,15040 -6176,15176 -6252,15228 -6498,15301 -6824,15274 -6821,15374
@@ -261,10 +268,11 @@ Schönerlinder Str.: Radwegbenutzungspflicht aufgehoben, wo genau?	? 12065,23232 
 Müllerstr.: Radwegbenutzungspflicht aufgehoben, wo genau?	? 8057,14876 7929,15006 7754,15160
 Zwischen Seestr. und Friedrich-Olbricht-Damm: Heißt die Straße noch Beusselstr. oder schon Saatwinkler Damm?	? 5074,14718 5062,14681
 Ernst-Liesegang-Ufer: Qualität?	? -6468,5080 -6347,5172 -6270,5136 -5995,5350 -5865,5631 -5749,5747 -5360,5897 -5249,5951 -4887,6107 -4820,6188 -4807,6481
+#: XXX by Michael Heckner: fester Waldweg, gut befahrbar Q1, aber welche der beiden Abschnitte? vvv
 Teltower Weg: Qualität?	? -903,6923 -1008,7427 -1112,7891 -1317,8836 -1336,9001 -1415,9144
 Teltower Weg: Qualität?	? -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -174,5941 -107,5880
+#: XXX ^^^
 Parforceweg: Qualität? (das östliche Ende sieht nur mäßig aus)	? -643,7252 -728,7310 -1008,7427 -1142,7493 -1308,7558 -1328,7597 -1787,7932 -1843,8128 -2028,8270 -2078,8217 -2117,8204 -2156,8208 -2294,8232 -2386,8282
-Alte Spandauer Poststr.: Qualität?	? -1415,9144 -1482,9276 -1512,9438 -1495,9518 -1448,9644 -1453,9748 -1491,9801 -1602,9915 -1846,10292
 Am Hundekehlesee entlang: Qualität, Durchfahrt möglich? Laut ADFC-Karte mäßig geeignet	? 490,8716 445,8429 614,8006 761,7922
 Verlängerung Verbindungschaussee: Qualität?	? -2834,5578 -3605,4520
 Abkürzung in der Saubucht: Qualität? sah eigentlich gut aus...	? -2677,7696 -2561,8110
@@ -310,7 +318,6 @@ Falkenwalde - Neu-Kleinow: nach den Bauarbeiten wahrscheinlich bessere Qualität,
 Fahrenwalde - Brüssow: Bauarbeiten, Straße wahrscheinlich gesperrt. Nach den Bauarbeiten kann Q3 wahrscheinlich entfernt werden	? 54570,114006 53900,114432 53445,115324 53340,115664
 eigentlich ein Knoten	? -9586,13296
 eigentlich ein Knoten	? -11250,13690
-Seeburg - Falkensee: Radweg auf der östlichen Seite? (nicht sicher)	? -8644,9593 -8693,10340 -8697,10653 -8899,11121
 B109n bei Großbeeren: ist diese Streckenführung temporär?	? 2715,-6365 2890,-6178 3131,-6334
 bei Großbeeren: zurzeit wird die Hauptstraße noch weiter nördlich geführt, aber die künftige (?) Trasse ist bereits befahrbar	? 3242,-6330 3653,-6050
 Wallmow - Grünberg: wie geht es hier weiter?	? 55543,105468 57224,106265
@@ -486,14 +493,14 @@ Wallenbergstr - Rudolstädter Str.: Verbindung für Radfahrer vorhanden?	? 4139,84
 Rüdickenstr. und Verlängerung: Qualität? Existiert eine Verbindung für Radfahrer?	? 17425,17281 17891,17097
 Arnimstr.: Qualität? Wo ist die Verbindung zur Gehrenseestr.?	? 17891,17097 18500,16831 18313,16643
 Unterbaumstr.: noch in Bau?	?::inwork 8581,13013 8503,12895
-Gelfertstr - Faradayweg: Brücke über U-Bahn vorhanden?	? 2169,4854 2190,4823
+#: XXX von Katrin Kroschk: Asphalt, aber meinte sie auch diese Strecke?
 Von Gülzower Str. bis Neue Grottkauer Str.: für Radfahrer durchgängig befahrbar? Qualität?	? 23014,12706 22960,13298 23110,13966 23184,14100
 Carola-Neher-Str - Kastanienallee: für Radfahrer durchgängig befahrbar? Qualität?	? 23393,14356 23782,14598
-Wuhlewanderweg - Teterower Ring: Durchfahrt für Radfahrer möglich? Qualität?	? 22168,12931 22315,12984
 Wuhlewanderweg - Alte/Hellerdorfer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? 22827,14356 23172,14395
 Bäkepromenade: Qualität? Existiert eine Verbindung?	? -2618,-1473 -2800,-1484 -2802,-1636
 Krausnick - Brand: Durchfahrt möglich? (Laut lbvs Vollsperrung)	? 40398,-40989 35175,-41012 33108,-41767
 Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2034,55227 -285,58256
+#: XXX Kommentar von Karin Kilian: es geht durch den Park (fester Sandweg, Q1, Fußgänger) weiter (ist der Stadtpark Steglitz gemeint?)
 Route H: geht es hier weiter?	? 4224,2659 4582,3076 4787,3342 4825,3402 4970,3684 5093,3912 5145,3984 5236,4078 5533,4267 5557,4294
 Kramerstr.: Qualität (laut ADFC-Karte gut geeignet)? Ab Kramersteg Richtung SO nur für Radfahrer offen? Wie ist die Anbindung Kramersteg/Uferpromenade?	? 4534,3456 4801,3370 5015,3292
 Humboldtstr. (Grunewald): Qualität?	? 2444,8919 2453,9156 2467,9428 2477,9551 2481,9606
@@ -554,7 +561,6 @@ Ruppiner Str. nördlich der Bernauer Str.: Qualität?	? 10011,14810 9956,14909 992
 Schillerstr. (Lichtenrade): Qualität? (Als bessere Alternative zur Halker Zeile geeignet?)	? 9993,686 10051,642 10300,34 10403,-266 10500,-543 10600,-823
 Fürstenwalder Damm/Müggelseedamm: Vorfahrtsregelung?	? 28195,5141
 Dahlwitzer Landstraße/Schöneicher Str.: Vorfahrtsregelung?	? 25585,6050
-Fürstenwalder Damm - S-Bhf. Rahnsdorf entlang der S-Bahn-Strecke: laut ADFC-Karte gut befahrbare Strecke	? 27068,5723 27100,5850 30050,5379 30112,5431
 Verbindung zwischen Gregoroviusweg und Bahndamm vorhanden? (Seifertweg? Brekowweg?)	? 18830,9943 18854,9954 18817,10046 18698,9996
 Berliner Freiheit: genaue Position?	? 8441,11579 8492,11583
 Erbendorfer Weg: Qualität? Für Radfahrer bis zum Lichterfelde Ring passierbar (laut ADFC-Karte ja und gut befahrbar)?	? 7319,665 7133,667 7040,686 6945,657

@@ -335,7 +335,7 @@ die $@ if $@;
 package Tk::MyAdditions;
 
 my %loc_de;
-if ($ENV{LANG} !~ /en/) {
+if (!defined $ENV{LANG} || $ENV{LANG} !~ /en/) {
     %loc_de = (Abort   => "Abbrechen",
 	       Retry   => "Wiederholen",
 	       Ignore  => "Ignorieren",

@@ -27,12 +27,9 @@ Overview-Map: always segfaults under Win98
 =item * (H3)
 
 Option editor does not fit into 800x600 screen --- using scrollable
-pane? (it even does not fit into a 1024x768 screen on windows)
-
-=item * (E4)
-
-Option editor: use german labels -> FIXED? Under which circumstances
-it's english?
+pane? (it even does not fit into a 1024x768 screen on windows). Maybe
+for a first workaround use a smaller font for smaller screens/on
+windows?
 
 =item * (H1)
 

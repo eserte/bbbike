@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.27 2005/06/21 21:24:33 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.27 2005/06/21 21:24:33 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -122,7 +122,7 @@ use vars qw(@route_strnames);
 use vars qw($net_type %add_net);
 use vars qw($place_category $orte_label_size);
 use vars qw(%no_overlap_label %do_outline_text);
-use vars qw($overview_top $overview_canvas $radar_image
+use vars qw($overview_canvas $radar_image
 	    %overview_draw $show_overview $show_overview_mode);
 use vars qw($show_calories);
 use vars qw(%choose_ort_cache @mouse_text $flat_relief @route_time

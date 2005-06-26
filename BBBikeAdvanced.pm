@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.117 2005/06/21 21:24:08 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.118 2005/06/26 12:39:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2386,7 +2386,7 @@ sub switch_standard_mode {
 	%hoehe = ();
 
 	$map_mode = MM_SEARCH();
-	set_edit_mode(0);
+	gui_set_edit_mode(0);
 	$do_flag{'start'} = $do_flag{'ziel'} = 1; # XXX better solution
 	set_remember_plot() unless $init;
 	$ampelstatus_label_text = "";
@@ -2397,6 +2397,18 @@ sub switch_standard_mode {
     my $err = $@;
     DecBusy($top) unless $init;
     status_message($err, "die") if $err;
+}
+
+sub set_edit_mode {
+    my($flag) = @_;
+    $edit_mode_flag = $flag if defined $flag;
+    if ($edit_mode_flag) {
+	#XXX del switch_edit_berlin_mode();
+	switch_edit_standard_mode();
+    } else {
+	switch_standard_mode();
+    }
+    set_map_mode();
 }
 
 # Schaltet in den Edit-Standard-Modus um.
@@ -2419,10 +2431,14 @@ sub switch_edit_standard_mode {
 	$map_mode = MM_BUTTONPOINT();
 	$use_current_coord_prefix = 0;
 	$coord_prefix = "";
-	set_edit_mode('std-no-orig');
+	gui_set_edit_mode('std-no-orig');
 	$do_flag{'start'} = $do_flag{'ziel'} = 1; # XXX better solution
 	local $lazy_plot = 1;
 	set_remember_plot() unless $init;
+
+	$p_draw{'pp'} = 1; # XXX This is also set in @edit_mode_cmd,
+                           # but maybe setting there is too late?
+
 	$c->center_view
 	    (transpose($coord_system_obj->standard2map($oldx, $oldy)),
 	     NoSmoothScroll => 1);
@@ -2451,7 +2467,7 @@ sub switch_edit_berlin_mode {
     $wasserstadt = 1;
     $wasserumland = 0;
     $str_far_away{'w'} = 0;
-    set_edit_mode('b');
+    gui_set_edit_mode('b');
     $do_flag{'start'} = $do_flag{'ziel'} = 0;
     set_remember_plot() unless $init;
     $c->center_view
@@ -2475,7 +2491,7 @@ sub switch_edit_brb_mode {
     $wasserstadt = 0;
     $wasserumland = 1;
     $place_category = 0;
-    set_edit_mode('brb');
+    gui_set_edit_mode('brb');
     $do_flag{'start'} = $do_flag{'ziel'} = 0;
     set_remember_plot() unless $init;
     $c->center_view
@@ -2497,7 +2513,7 @@ sub switch_edit_any_mode {
     $map_default_type = $coord_system;
     $use_current_coord_prefix = 1;
     $coord_prefix = undef;
-    set_edit_mode($map);
+    gui_set_edit_mode($map);
     $do_flag{'start'} = $do_flag{'ziel'} = 0;
     set_remember_plot() unless $init;
     $c->center_view

@@ -1,14 +1,7 @@
 @temp_blocking = ();
-$#temp_blocking = 7;
+$#temp_blocking = 9;
 push @temp_blocking,
 (
-       {
-         'until' => 1119754800,
-         'text' => 'CSD am 25.6.',
-         'from' => 1119668400,
-         'file' => 'csd.bbd'
-       },
-       undef,
        {
          'until' => 1119826800,
          'text' => 'Rheinstraßenfest in der Rheinstraße zwischen Breslauer Platz  und Walter-Schreiber-Platz. Dauer: 25.06.2005 06:00 Uhr bis 27.06.2005 01:00',
@@ -77,18 +70,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1119736799,
-         'text' => 'Oberbaumbrückenfest, Dauer: 25.06.2005 12:00 Uhr bis 24:00 Uhr ',
-         'from' => 1119520800,
-         'data' => 'userdel	2 13305,10789 13332,10832
-userdel	2 13305,10789 13206,10651
-userdel	2 13077,10747 13206,10651
-userdel	2 13082,10634 13178,10623
-userdel	2 13178,10623 13206,10651
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
