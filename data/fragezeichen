@@ -1,5 +1,4 @@
 Verbindung zwischen Michelangelostr. und Hohenschönhausener Str. vorhanden? im Süden: ja, Feldweg	? 13838,15113 14125,14905 14574,14646
-Weißwasserweg: Qualität? Als Abkürzung für Finckensteinallee/Ringstr. benutzbar?	? 2639,2989 2229,2898 2119,2790
 Europarc Dreilingen: Qualität? durchgängig befahrbar?	? -3985,115 -4459,-157 -6147,-1125 -6395,-887
 Stolper Weg: Qualität?	? -2743,-934 -4003,-684 -4153,-621 -4459,-157
 Arkenberge: wo genau ist die Durchfahrt für Autos gesperrt	? 10402,26369 10318,26399 10203,26387 10120,26363
@@ -10,7 +9,9 @@ Am Packereigraben: laut ADFC-Karte befahrbar, Qualität?	? 4208,21159 3979,21211
 Waldpark Steinberg: laut ADFC-Karte befahrbar, Qualität?	? 3979,21211 3718,21489 3553,21665 3406,21911 3139,22201
 Waldweg über den Beyschlagtunnel: befahrbar, Qualität?	? 506,22266 742,22666
 Soldiner Str.: laut ADFC mäßig geeignet	? 9096,16976 9317,16882 9604,16760
-Pankeweg durch Wedding: Durchfahrt möglich? Qualität?	?? 8153,14769 8235,14835 8270,15233 8348,15474 8155,15648 8140,15859 8187,15965 8334,16282 8420,16365 8517,16395 8592,16406 8759,16684 8904,17059 8983,17195 9131,17664 9084,17678 9140,17921
+Pankeweg zwischen Chausseestr. und Gerichtstr.: Durchfahrt möglich? Qualität?	?? 8153,14769 8235,14835 8273,15311
+Pankeweg zwischen Pankstr. und Wiesenstr.: Qualität (laut ADFC-Karte ungeeignet)?	?? 8179,15601 8140,15859
+Pankeweg durch Wedding: Durchfahrt möglich? Qualität?	?? 8517,16395 8592,16406 8759,16684 8904,17059 8983,17195 9131,17664 9084,17678 9140,17921
 Weg am Tegeler Fließ: Durchfahrt möglich? Qualität, wahrscheinlich Waldweg Q2?	?? 7639,24383 6966,24090 6329,23969 6083,24107 5678,24021 5402,23949 5117,23654 5126,23484 5059,23186 4774,22987 4416,22891 4208,22866 4144,22756 3898,22581 3804,22391 3636,22368 3443,22201 3372,22088 3139,22201 2653,21993 2504,21768 2321,21532 2072,21339 1914,21508
 Ist die alte Verbindung Hermsdorfer Damm zur Heiligenseestr. noch vorhanden?	?? 1835,21427 1470,21205
 Landsberger Allee/Dahmeweg/Wiesenburger Weg: Sind die Zugänge vorhanden, Einbahnstraßen?	? 19329,14897 19283,14982 19280,15014 19472,15184
@@ -85,12 +86,10 @@ Am Marderberg, kreuzender Weg: genaue Wegführung?	? 14288,19459 14328,19527 1420
 Am Fließ: befahrbar, Qualität?	? 14764,19670 14751,19882 14268,20313 13979,20407 13905,20556 13575,20583
 Gebrüder-Grimm-Weg: falls Märchenweg OK, dann diesen Weg hier auch aufnehmen	? 14281,18682 14284,18786 14573,19281
 Mupfrelsteig: falls Rübezahlweg oK, dann diesen Weg hier auch aufnemen	? 14052,18273 13970,18332 13935,19222 14044,19502
-Große Seestr.: Existiert eine Verbindung für Fußgänger zur Berliner Allee? Können Radfahrer diese auch nutzen?	? 14442,16892 14559,16912
 Schönerlinder Str.: Radwegbenutzungspflicht aufgehoben, wo genau?	? 12065,23232 12067,23241 11929,23946 11965,24188 12177,24684 12498,25330 12957,26186 13192,26628 13267,26891
 Müllerstr.: Radwegbenutzungspflicht aufgehoben, wo genau?	? 8057,14876 7929,15006 7754,15160
 Zwischen Seestr. und Friedrich-Olbricht-Damm: Heißt die Straße noch Beusselstr. oder schon Saatwinkler Damm?	? 5074,14718 5062,14681
 Ernst-Liesegang-Ufer: Qualität?	? -6468,5080 -6347,5172 -6270,5136 -5995,5350 -5865,5631 -5749,5747 -5360,5897 -5249,5951 -4887,6107 -4820,6188 -4807,6481
-Teltower Weg: Qualität?	? -903,6923 -1008,7427 -1112,7891 -1317,8836 -1336,9001 -1415,9144
 Teltower Weg: Qualität?	? -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -174,5941 -107,5880
 Parforceweg: Qualität? (das östliche Ende sieht nur mäßig aus)	? -643,7252 -728,7310 -1008,7427 -1142,7493 -1308,7558 -1328,7597 -1787,7932 -1843,8128 -2028,8270 -2078,8217 -2117,8204 -2156,8208 -2294,8232 -2386,8282
 Am Hundekehlesee entlang: Qualität, Durchfahrt möglich? Laut ADFC-Karte mäßig geeignet	? 490,8716 445,8429 614,8006 761,7922
@@ -401,7 +400,6 @@ Blohmstr.: Qualität?	? 10004,-1919 9531,-1931 9093,-1712
 Blohmstr. - Kolonie Birkholz/Diedersdorfer Str.: Qualität? Nachts beleuchtet?	? 9093,-1712 8506,-1418 8073,-1137
 Poleigrund: Qualität? (Laut ADFC-Karte gut geeignet)	? 9557,-779 9155,-902
 Schwarzwurzelstr: Qualität (laut ADFC-Karte gut geeignet)? Radweg vorhanden?	? 20175,18246 20544,18279 21009,18503 21143,18704
-Takustr.: Einbahnstraße auch für Radfahrer oder nur für Autofahrer?	?; 3209,5214 3079,5411 2953,5606 2909,5674
 Paplitzer Str.: Qualität? Zwischen Goltzstr. und Kirchbachstr. Einbahnstraße auch für Radfahrer? Verbindung zum Mauerweg vorhanden?	? 11063,-2025 11003,-2434 10942,-2632 10707,-3109 10631,-3215
 Am Irissee: Qualität?	? 11000,3115 11143,3246 11114,3360
 Gürtelstr.: Einbahnstraße auch für Radfahrer?	?; 13423,15702 13332,15765
@@ -536,7 +534,6 @@ Neeberg - Krummin: Qualität?	? 35047,182022 36973,183302
 Wolgast - Ziemitz: Qualität?	? 33315,183598 32822,181806 32653,180114
 Neeberg - Sauzin: Qualität?	? 35047,182022 34133,181849 33287,181934 32822,181806
 Liepe - Grüssow: Qualität?	? 43331,174099 44780,175658
-Hackerstr.: hier Einbahnstraße auch für Radfahrer?	? 5101,6579 5126,6655
 Lefevrestr.: Einbahnstraße nur für Autofahrer, in welcher Richtung?	? 5215,6643 5372,6663
 Schwarzer Weg: möglicherweise ist das letzte Stück zwischen Grenzweg und Nalepastr. nicht befahrbar	? 17295,7336 17284,7175
 Bruno-Walter-Str.: Qualität?	? 5516,2873 5614,2822 5774,3007 5853,3050
@@ -564,6 +561,11 @@ Heilbronner - Hohenstaufenstr.: Linksabbiegen möglich?	? 6109,9729 6108,9772 600
 Cotheniusstr. - Danziger Str.: ist hier das Linksabbiegen möglich?	? 13430,13733 13228,13615 13334,13459
 Paul-Robeson-Str./Erich-Weinert-Str.: Überqueren der Schönhauser Allee möglich?	? 10619,16319 11013,16278 11306,16194
 Elcknerplatz: Qualität?	? 22428,6063 22525,6040
+Freischützstr.: Qualität?	? 13268,22002 13340,21948 13612,21806
+Burgwallstr.: existiert eine Verbindung zur Bahnhofstr., evtl. nur für Radfahrer?	? 12760,20669 13018,21089
+Dachsteinweg: verkehrsberuhigt?	? 10481,2549 10446,2373 10493,2318
+Ringstr.: Qualität zwischen Spindelmühler Weg und Drakestr.: Kopfsteinpflaster?	? 2701,3064 3050,3316 3184,3413 3375,3544 3507,3635
+Schwendenerstr.: Kopfsteinpflaster auch zwischen Fabeckstr. und Habelschwerdter Allee?	? 3072,5062 2906,4940 2762,4713
 wirklich?	? 9215,3599
 Wirklich?	? -3755,17090
 geplante Ampel in der Johannisthaler	? 14196,2876
@@ -576,7 +578,6 @@ Rufacher Weg: bedingt geeignet (laut ADFC-Karte)	? 12255,2058 12582,2129 12738,2
 (Uferweg): wahrscheinlich Waldweg (laut ADFC-Karte)	? -389,17140 -280,17229 -266,17335 -215,17385 -141,17377 61,17495 110,17489 151,17537 187,17663 235,17704 260,17788 258,17880 381,18186 416,18386 448,18476 496,18514 586,18540 680,18631 757,18673 768,18742 970,18919 1006,18972 1122,19036 1189,19018 1200,18969 1369,18958 1457,18969 1490,18950
 (Schwarzer Weg - Jörsstr.): wahrscheinlich Waldweg (laut ADFC-Karte)	? -792,18564 -828,18556 -955,18506 -1033,18504 -1224,18392 -1329,18382
 (Am Bahndamm): mäßig geeignet (laut ADFC-Karte)	? 8173,3299 8103,3354 7784,4221 7757,4294
-Flaischlenstr.: nicht geeignet (laut ADFC-Karte)	? 13514,22642 13426,22398 13395,22365
 (Spreeuferweg): mäßig geeignet (laut ADFC-Karte)	? 4543,12516 4501,12544 4331,12538
 Obersteiner Weg: mäßig geeignet (laut ADFC-Karte)	? 13183,17580 13251,17525 13525,17304
 Haynauer Str.: mäßig geeignet (laut ADFC-Karte)	? 8039,3242 8055,2885 8018,2657 7897,2380 7921,2302
@@ -585,7 +586,7 @@ Alt-Hermsdorf: mäßig geeignet (laut ADFC-Karte (wahrscheinlich Kopfsteinpflaster
 (Alt-Hermsdorf - Zehntwerderweg): mäßig geeignet (laut ADFC-Karte)	? 4582,23035 4679,22766
 Borsigwalder Weg: mäßig geeignet (laut ADFC-Karte)	? 2852,19546 3028,19771
 Miraustr.: mäßig geeignet (laut ADFC-Karte)	? 3820,19688 4014,19433 4170,19079 4195,19043
-Krampnitzer Weg: mäßig geeignet (laut ADFC-Karte)	? -9005,4933 -8638,4874 -8098,4842 -7498,4786
+Krampnitzer Weg: mäßig geeignet (laut ADFC-Karte)	? -9005,4933 -8638,4874 -8290,4853 -8098,4842 -7498,4786
 Malchower Str.: mäßig geeignet (laut ADFC-Karte)	? 12841,18157 13163,18149 13374,18134 13631,18041 13732,18026 13901,18124
 Grumbkowstr.: mäßig geeignet (laut ADFC-Karte)	? 11297,20686 11437,20341 11584,20058 11756,19694
 Friesenstr. (Niederschönhausen): mäßig geeignet (laut ADFC-Karte)	? 8833,19259 9475,18862

@@ -1,36 +1,7 @@
 @temp_blocking = ();
-$#temp_blocking = 9;
+$#temp_blocking = 33;
 push @temp_blocking,
 (
-       {
-         'until' => 1119826800,
-         'text' => 'Rheinstraßenfest in der Rheinstraße zwischen Breslauer Platz  und Walter-Schreiber-Platz. Dauer: 25.06.2005 06:00 Uhr bis 27.06.2005 01:00',
-         'from' => 1119672000,
-         'file' => 'rheinstrassenfest.bbd'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'until' => 1130799599,
          'text' => 'Schlichtallee (Lichtenberg) Richtung Lückstr., Baustelle, Einbahnstraße in Richtung Haupstraße (bis Ende 10/2005)
@@ -146,7 +117,14 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1136069999,
+         'text' => 'Blankenburger Weg (Pankow) Richtung Süden zwischen Bahnhofstr. und Pasewalker Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
+         'from' => 1119904102,
+         'data' => 'userdel	1 12442,20805 12030,20490
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -588,6 +566,23 @@ userdel	q4 53252,-90440 53805,-90240
          'data' => 'userdel	q4; 8775,12457 8907,12472 9008,12485
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1123365600,
+         'text' => 'L 793; (Schönhagen-Ludwigsfelde); zw. Abzw. Gröben und Siethen Straßenbauarbeiten Vollsperrung 29.06.2005-06.08.2005 ',
+         'from' => 1119909600,
+         'data' => 'userdel	2 -2542,-13926 -3801,-14252
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1123365600,
+         'text' => 'L 793; (Schönhagen-Ludwigsfelde); zw. OD Jütchendorf und Abzw. Gröben Straßenbauarbeiten Vollsperrung 29.06.2005-06.08.2005 ',
+         'from' => 1119909600,
+         'data' => 'userdel	2 -3694,-14508 -4077,-14595
+userdel	2 -4504,-14978 -4077,-14595
+',
+         'type' => 'gesperrt'
        }
      
 );

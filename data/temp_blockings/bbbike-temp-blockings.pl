@@ -219,7 +219,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'handicap',
      },
      { from  => undef, # 
-       until => Time::Local::timelocal(reverse(2005-1900,10-1,31,23,59,59)),
+       until => Time::Local::timelocal(reverse(2005-1900,10-1,31,23,59,59)), # XXX schon aufgehoben???
        text  => 'Schlichtallee (Lichtenberg) Richtung Lückstr., Baustelle, Einbahnstraße in Richtung Haupstraße (bis Ende 10/2005)
 ',
        type  => 'gesperrt',
@@ -1049,9 +1049,9 @@ EOF
 userdel	2 375,28109 938,28349
 EOF
      },
-     { from  => 1103789525, # 2004-12-23 09:12
-       until => 1104533999, # 2004-12-31 23:59
-       text  => 'Blankenburger Weg - Blankenburger-Weg-Brücke (Pankow) Richtung Bahnhofstr. zwischen Pasewalker Str. und Bahnhofsstraße Baustelle, Einbahnstraße in Richtung Bahnhofstr. (bis 12/2004)',
+     { from  => 1119904102, # 2005-06-27 22:28
+       until => 1136069999, # 2005-12-31 23:59
+       text  => 'Blankenburger Weg (Pankow) Richtung Süden zwischen Bahnhofstr. und Pasewalker Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1 12442,20805 12030,20490
@@ -2159,6 +2159,23 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 8775,12457 8907,12472 9008,12485
+EOF
+     },
+     { from  => 1119909600, # 2005-06-28 00:00
+       until => 1123365600, # 2005-08-07 00:00
+       text  => 'L 793; (Schönhagen-Ludwigsfelde); zw. Abzw. Gröben und Siethen Straßenbauarbeiten Vollsperrung 29.06.2005-06.08.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -2542,-13926 -3801,-14252
+EOF
+     },
+     { from  => 1119909600, # 2005-06-28 00:00
+       until => 1123365600, # 2005-08-07 00:00
+       text  => 'L 793; (Schönhagen-Ludwigsfelde); zw. OD Jütchendorf und Abzw. Gröben Straßenbauarbeiten Vollsperrung 29.06.2005-06.08.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -3694,-14508 -4077,-14595
+userdel	2 -4504,-14978 -4077,-14595
 EOF
      },
     );

@@ -4459,7 +4459,7 @@ $sx->grid(-row => 1, -column => 0, -sticky => 'ew');
 	    (-text => 'EDIT',
 	     -variable => \$edit_mode_flag,
 	     -command => sub {
-		 toggle_edit_mode();
+		 set_edit_mode();
 	     })->pack(-side => "left");
 	$edit_mode_type = $indicator_frame->Label
 	    (-text => '', -relief => 'sunken')
