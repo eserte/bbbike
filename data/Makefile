@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.49 2005/06/19 12:05:36 eserte Exp eserte $
+# $Id: Makefile,v 2.50 2005/06/28 21:28:19 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -27,6 +27,7 @@ CHECK_NEIGHBOUR=	${MISCSRCDIR}/check_neighbour
 CHECK_COUNT=		${MISCSRCDIR}/check_count
 CHECK_HOUSENUMBERS=	${MISCSRCDIR}/check_housenumbers
 CHECK_IMAGES=		${MISCSRCDIR}/check_images
+CHECK_STATION_CATEGORY=	${MISCSRCDIR}/check_station_category
 RESOLVE_STARS=		${MISCSRCDIR}/resolve_stars
 SORTBYCAT=		${MISCSRCDIR}/sortbycat
 SEARCH_INACCESSIBLE=	${MISCSRCDIR}/search_inaccessible_points
@@ -622,7 +623,7 @@ do-checks:	.check_strassen1 .check_strassen2 \
 	.check_ampeln .check_gesperrt1 .check_gesperrt2 \
 	.check_gesperrt_u2 .check_gesperrt_s2 .check_gesperrt_r2 \
 	.check_gesperrt_car1 .check_gesperrt_car2 \
-	.check_ubahnhof .check_sbahnhof .check_orte \
+	.check_ubahnhof .check_sbahnhof .check_rbahnhof .check_orte \
 	.check_radwege .check_ampelschaltung \
 	.check_qualitaet_s .check_qualitaet_l \
 	.check_handicap_s .check_handicap_l \
@@ -700,11 +701,15 @@ check-disabled:	.check_label
 	@touch $@
 
 .check_ubahnhof:	ubahnhof ubahn
-	$(CHECK_POINTS) ubahnhof ubahn
+	$(CHECK_STATION_CATEGORY) ubahnhof ubahn
 	@touch $@
 
 .check_sbahnhof:	sbahnhof sbahn
-	$(CHECK_POINTS) sbahnhof sbahn
+	$(CHECK_STATION_CATEGORY) sbahnhof sbahn
+	@touch $@
+
+.check_rbahnhof:	rbahnhof rbahn
+	$(CHECK_STATION_CATEGORY) -special rbahnhof rbahnhof-orig rbahn
 	@touch $@
 
 .check_orte: orte orte2 orte_city

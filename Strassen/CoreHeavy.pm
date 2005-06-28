@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.23 2004/12/28 22:54:37 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.23 2004/12/28 22:54:37 eserte Exp eserte $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -746,6 +746,8 @@ sub get_anti_conversion {
 
 # Filter by a subroutine.
 # Return a new Strassen object.
+# This method uses the "grepstreets" iterator (use this for
+# get_directive_for_iterator)
 # Arguments:
 #  -idadd => $string      add this string to the id of the created object
 #  -preservedir => $bool  preserve directives
