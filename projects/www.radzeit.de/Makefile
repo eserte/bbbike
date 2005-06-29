@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.65 2005/06/25 11:58:53 eserte Exp $
+# $Id: Makefile,v 1.65 2005/06/25 11:58:53 eserte Exp eserte $
 #
 
 # Targets:
@@ -189,8 +189,9 @@ check-rsync-ok:
 	[ ! -e ${CURDIR}/.rsync_block ] || ( echo "Not rsyncable because:"; cat ${CURDIR}/.rsync_block; false )
 
 do-rsync:
+	-@date >> .last/start-do-rsync
 	${RSYNC} ${RSYNC_ARGS} ${RSYNC_SRCDEST}
-	date >> .last/do-rsync
+	-@date >> .last/do-rsync
 
 rsync-bbbike:
 	@echo NYI
@@ -204,10 +205,11 @@ rsync-routopedia:	do-rsync-routopedia \
 			show-rsync-message
 
 do-rsync-routopedia:
+	-@date >> .last/start-do-rsync-routopedia
 	${RSYNC} ${RSYNC_ARGS} \
 	    --exclude data/ \
 	    routopedia/ ${RSYNC_DEST}/routopedia/
-	date >> .last/do-rsync-routopedia
+	-@date >> .last/do-rsync-routopedia
 
 check-rsync-data-ok:
 	true
@@ -219,22 +221,25 @@ rsync-bbbike-data:	check-rsync-data-ok \
 			post-rsync-bbbike-data
 
 do-rsync-bbbike-data:
+	-@date >> .last/start-do-rsync-bbbike-data
 	${RSYNC} ${RSYNC_ARGS} \
 	    BBBike/data/ ${RSYNC_DEST}/BBBike/data/
-	date >> .last/do-rsync-bbbike-data
+	-@date >> .last/do-rsync-bbbike-data
 
 post-rsync-bbbike-data:
 # No winter optimization needed anymore...
 .if 0
+	-@date >> .last/start-post-rsync-bbbike-data
 	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
 	   "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/miscsrc/winter_optimization.pl -one-instance &"
-	date >> .last/post-rsync-bbbike-data
+	-@date >> .last/post-rsync-bbbike-data
 .endif
 
 rsync-temp-blockings:
+	-@date >> .last/start-post-rsync-bbbike-data
 	${RSYNC} ${RSYNC_ARGS} \
 	    BBBike/data/temp_blockings/ ${RSYNC_DEST}/BBBike/data/temp_blockings/
-	date >> .last/rsync-temp-blockings
+	-@date >> .last/rsync-temp-blockings
 
 show-rsync-message:
 	-[ ! -e ${CURDIR}/.rsync_message ] && true || cat ${CURDIR}/.rsync_message
@@ -433,6 +438,7 @@ prepare-routopedia-dist:
 	(umask 022; cd ${BBBIKE_ROOT_DIR}/routopedia && perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread(),'${CURDIR}/routopedia', 'best');")
 
 test:
+	-@date >> .last/start-test
 	cd ${.CURDIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin \
 	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/bbbike.cgi \
@@ -440,9 +446,10 @@ test:
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
 		${TESTS}
-	date >> .last/test
+	-@date >> .last/test
 
 test-on-remote:
+	-@date >> .last/start-test-on-remote
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
 	cd ${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin \
@@ -452,7 +459,7 @@ test-on-remote:
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS} \
 	'
-	date >> .last/test-on-remote
+	-@date >> .last/test-on-remote
 
 test-on-remote-and-send-mail:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\

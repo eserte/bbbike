@@ -160,8 +160,7 @@ Marchlewskistr.: Kopfsteinpflaster	Q2 13226,11934 13280,11834 13303,11791
 Pillauer Str.: Kopfsteinpflaster	Q2 13377,11644 13290,11581
 Wriezener Karree: Beton	Q1 12686,11737 12778,11691 12819,11764 12726,11851
 Prenzlauer Promenade: Asphalt	Q0 12012,16752 12046,16568 12054,16517 12097,16263 12091,16209
-Engeldamm: Kopfsteinpflaster	Q2 12026,11348 11921,11185 11798,11128 11665,11118
-Engeldamm: m‰ﬂiger Asphalt	Q1 11665,11118 11473,11180
+Engeldamm: Asphalt	Q0 12026,11348 11921,11185 11798,11128 11665,11118 11473,11180
 Ritterstr.: Kopfsteinpflaster	Q2 10572,10773 10389,10855 10094,10994
 Adalbertstr.: Kopfsteinpflaster	Q2 11665,11118 11726,11265 11807,11479
 Oderstr.: Kopfsteinpflaster	Q2 11607,7145 11616,7089 11652,6879
@@ -732,7 +731,7 @@ Johannisberger Str.: Kopfsteinpflaster	Q2 4173,7993 4164,7742
 Johannisberger Str.: Kopfsteinpflaster, OK	Q1 4160,7270 4160,7043
 Jagowstr.: Kopfsteinpflaster	Q2 5446,12474 5560,12652 5619,12745 5636,13098
 Pohlstr.: Kopfsteinpflaster	Q2 7932,10475 7849,10488
-Schwerinstr.: Kopfsteinpflaster, OK, in der Mitte Asphalt	Q2 7384,10127 7201,10180 7060,10221
+Schwerinstr.: Kopfsteinpflaster, OK, in der Mitte Asphalt	Q1 7384,10127 7201,10180 7060,10221
 Damaschkestr.: Kopfsteinpflaster	Q2 3132,10499 3013,10553
 Mierendorffstr.: Kopfsteinpflaster, Radwege m‰ﬂig bis OK	Q1 3344,12825 3542,13063 3559,13177
 Albrecht-Achilles-Str.: wechselnd Asphalt und gutes Kopfsteinpflaster	Q1 3618,10283 3597,9907
@@ -1032,6 +1031,11 @@ Tivoliplatz: Kopfsteinpflaster	Q2 8954,8914 8950,8954 8997,8952
 Schmiedehof: Kopfsteinpflaster	Q2 8997,8952 9019,8995
 Ottomar-Geschke-Str.: Kopfsteinpflaster	Q2 21332,4655 21454,4928 21498,5023
 Wallotstr.: Asphalt	Q0 2046,9429 1965,9431 1851,9332 1795,9325 1757,9271
+Gartenufer: Parkweg	Q1 5794,11624 6239,11399 6342,11353 6346,11326
+(s¸dliches Spreeufer): teils gutes Kopfsteinpflaster, teils Parkweg, teils Asphalt	Q1 5579,12231 5737,12281 5962,12553 6029,12693 6078,12848 6193,12867
+Elisabeth-Abegg-Str.: Kopfsteinpflaster	Q2 7941,12902 7793,12764
+Spreeuferweg: glatte Gehwegplatten und fester Sandweg an den Seiten	Q0 7064,12419 7217,12383 7360,12430 7541,12582
+Spreeuferweg: fester Sandweg	Q1 7541,12582 7791,12706 7915,12795 7950,12860
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
 Sch¸tzallee: m‰ﬂiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfl‰che	Q2 2230,3823 1952,3864 1677,3885
 Riemeisterstr.: m‰ﬂiges Kopfsteinpflaster	Q2 373,4816 319,4906 168,5092 103,5123
@@ -1153,7 +1157,8 @@ Hattinger Weg: guter Asphalt	Q0 1536,18423 1566,18532 1595,18528 1623,18523 1625
 Wiclefstr.: Kopfsteinpflaster	Q2 5239,13824 5441,13796 5617,13768 5748,13748 5895,13725 6016,13702 6115,13684
 Buchstr.: Asphalt	Q0 6599,14735 6459,14876
 Stephanstr. (Tiergarten): Kopfsteinpflaster	Q2 6275,13969 6496,14118 6696,14197 7037,14274
-Holsteiner Ufer: Kopfsteinpflaster, OK	Q1 6193,12867 6354,12870 6597,12764 6690,12637
+Holsteiner Ufer: Kopfsteinpflaster, OK	Q1 6193,12867 6354,12870 6597,12764
+Holsteiner Ufer: m‰ﬂiges Kopfsteinpflaster	Q2 6597,12764 6690,12637
 Rathenower Str.: Kopfsteinpflaster	Q2 6743,14008 6696,14197 6670,14302
 Lottumstr.: m‰ﬂiges Kopfsteinpflaster	Q2 10479,13931 10639,13865 10703,13832 10793,13785
 Stieglitzweg: Asphalt	Q0 14318,3259 14493,3143 14530,3044 14637,2868 14746,2781
@@ -1518,7 +1523,7 @@ Prinz-Eugen-Str.: m‰ﬂiges Kopfsteinpflaster	Q2 7542,15839 7649,15726 7796,15590
 Antonstr.: Asphalt	Q0 7414,15463 7649,15726 7744,15831
 Paradiesstr.: sehr guter Asphalt	Q0 21265,334 21168,212 21265,93 21343,-309
 Paradiesstr: schlechtes Kopfsteinpflaster	Q3 21343,-309 21281,-762
-(Englische Str. - Spreeufer): Asphalt	Q0 5518,12159 5719,12253
+(Englische Str. - Spreeufer): Asphalt	Q0 5518,12159 5579,12231
 Hoher Steinweg: Kopfsteinpflaster	Q2 -3132,14607 -3115,14642 -3029,14656
 Neuendorfer Str.: Kopfsteinpflaster	Q2 -3106,14731 -3093,14801 -3135,14846
 Mˆllentordamm: Kopfsteinpflaster	Q2 -3029,14656 -2992,14667 -2920,14637

@@ -2178,4 +2178,36 @@ userdel	2 -3694,-14508 -4077,-14595
 userdel	2 -4504,-14978 -4077,-14595
 EOF
      },
+     { from  => 1120085920, # 2005-06-30 00:58
+       until => 1120413600, # 2005-07-03 20:00
+       text  => 'Straße des 17. Juni in beiden Richtungen zwischen Großer Stern und Entlastungsstr. Veranstaltung, Straße vollständig gesperrt (bis 03.07.2005 ca. 20 Uhr)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 6828,12031 7383,12095
+userdel	2 7383,12095 7816,12150
+userdel	2 7816,12150 8063,12182
+userdel auto	3 7663,11946 7383,12095 7039,12314
+userdel auto	3 7039,12314 7383,12095 7663,11946
+EOF
+     },
+     { from  => 1120086052, # 2005-06-30 01:00
+       until => 1136069999, # 2005-12-31 23:59
+       text  => 'Rosa-Luxemburg-Str. zwischen Torstr. und Memhardstr. Baustelle, Einbahnstraße in Richtung Alexanderplatz, (bis Ende 2005) ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 10846,13362 10790,13565
+	3 10757,13401 10846,13362 10923,13317
+	3 10923,13317 10846,13362 10757,13401
+	3 10969,13430 10846,13362 10757,13401
+	3 10757,13401 10846,13362 10969,13430
+EOF
+     },
+     { from  => 1114293600, # 2005-04-24 00:00
+       until => 1125525600, # 2005-09-01 00:00
+       text  => 'L 70; (Karl-Fiedler-Str.); OD Sperenberg, zw. Goethestr. u. Am Niederfließ Kompletter Straßenausbau Vollsperrung 25.04.2005-31.08.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4 8576,-29378 8683,-29889
+EOF
+     },
     );

@@ -502,19 +502,7 @@ userdel	2 14153,-17829 13303,-18235
        undef,
        undef,
        undef,
-       {
-         'until' => 1120068000,
-         'text' => 'Französische Str. ab Markgrafenstr., Werderscher Markt, Breite Str. gesperrt. Dauer: bis 29.06.2005, 20:00 Uhr. (Beachvolleyball) ',
-         'from' => 1118949539,
-         'data' => 'userdel	2 9636,12126 9812,12145
-userdel	2 10084,12228 9959,12180
-userdel	2 9812,12145 9890,12161
-userdel	2 9890,12161 9959,12180
-userdel	2 10170,12261 10109,12238
-userdel	2 10170,12261 10267,12305
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1120946400,
@@ -583,6 +571,38 @@ userdel	q4 53252,-90440 53805,-90240
 userdel	2 -4504,-14978 -4077,-14595
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1120413600,
+         'text' => 'Straße des 17. Juni in beiden Richtungen zwischen Großer Stern und Entlastungsstr. Veranstaltung, Straße vollständig gesperrt (bis 03.07.2005 ca. 20 Uhr)',
+         'from' => 1120085920,
+         'data' => 'userdel	2 6828,12031 7383,12095
+userdel	2 7383,12095 7816,12150
+userdel	2 7816,12150 8063,12182
+userdel auto	3 7663,11946 7383,12095 7039,12314
+userdel auto	3 7039,12314 7383,12095 7663,11946
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1136069999,
+         'text' => 'Rosa-Luxemburg-Str. zwischen Torstr. und Memhardstr. Baustelle, Einbahnstraße in Richtung Alexanderplatz, (bis Ende 2005) ',
+         'from' => 1120086052,
+         'data' => 'userdel	1 10846,13362 10790,13565
+	3 10757,13401 10846,13362 10923,13317
+	3 10923,13317 10846,13362 10757,13401
+	3 10969,13430 10846,13362 10757,13401
+	3 10757,13401 10846,13362 10969,13430
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1125525600,
+         'text' => 'L 70; (Karl-Fiedler-Str.); OD Sperenberg, zw. Goethestr. u. Am Niederfließ Kompletter Straßenausbau Vollsperrung 25.04.2005-31.08.2005 ',
+         'from' => 1114293600,
+         'data' => '	q4 8576,-29378 8683,-29889
+',
+         'type' => 'handicap'
        }
      
 );

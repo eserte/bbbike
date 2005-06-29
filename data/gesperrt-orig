@@ -418,7 +418,7 @@ Lichtenberger Str.: Mittelstreifen	3nocross 12047,12572 12006,12464 11929,12263
 Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7717,7564 7859,7486 7924,7431
 Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12540,8458
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11763,8337 11892,8372
-Stromstr.: unpassierbarer Mittelstreifen	3nocross 6201,13058 6185,12968 6177,12920 6169,12867
+Stromstr.: unpassierbarer Mittelstreifen	3nocross 6201,13058 6185,12968 6177,12920 6168,12846
 #: add_fragezeichen: wahrscheinlich!
 Märkische Allee: Linksabbiegen wahrscheinlich verboten	3nocross 20512,17101 20691,17463 20717,17516 20834,17752 20878,17842 21218,18536
 Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17412,17800 17703,17990 17843,18078
@@ -457,6 +457,7 @@ Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 #
+tragen (Treppe)	0:30 7945,12871
 tragen (zwei Mal, je fünf Stufen)	0:30 5017,6387
 tragen (Treppen zur U-Bahnbrücke, je drei Stufen)	0:20 2301,4917
 tragen (Treppen zur U-Bahnbrücke, je drei Stufen)	0:20 2181,4835
@@ -515,7 +516,7 @@ tragen (Treppe)	0:30 1659,3226
 tragen (Treppe)	0:30 1715,3257
 #: by: ^^^
 #: by: Jessica Mai:
-tragen (Treppe)	0:30 6193,12867
+tragen (Treppe)	0:30 6187,12851
 #: by: Andreas Mühlhausen: vvv
 tragen (Treppe)	0:30 2943,13550
 tragen (Treppe)	0:30 3025,13568
