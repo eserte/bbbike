@@ -14,6 +14,12 @@ Legend:
 
 =over
 
+=item * (M3)
+
+Tk::Getopt addition: for some changes a post dialog should be shown,
+e.g. "Please restart the app to make this/the option change/s
+visible". Or is it already possible? Use it in bbbike.
+
 =item * (H3)
 
 Drucken: if the PDF backend is chosen, then Druckeinstellungen have no
