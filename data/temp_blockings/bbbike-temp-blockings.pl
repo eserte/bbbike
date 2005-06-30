@@ -2210,4 +2210,12 @@ EOF
 	q4 8576,-29378 8683,-29889
 EOF
      },
+     { from  => 1120088649, # 2005-06-30 01:44
+       until => 1126796400, # 2005-09-15 17:00
+       text  => 'Holzendorffstraße zwischen Rönnestraße und Gervinusstraße Brückenarbeiten, Straße gesperrt. Dauer: bis 15.09.2005, 17.00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 3344,10878 3395,10704
+EOF
+     },
     );

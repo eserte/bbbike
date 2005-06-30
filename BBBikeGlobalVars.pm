@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.27 2005/06/21 21:24:33 eserte Exp eserte $
+# $Id: BBBikeGlobalVars.pm,v 1.28 2005/06/30 00:44:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -42,7 +42,8 @@ use vars
 
 # Photos
 use vars qw(
-     $ampel_photo $ampel_klein_photo $ampel_klein2_photo
+     $ampel_photo $ampelf_photo $ampel_klein_photo $ampelf_klein_photo
+     $ampel_klein2_photo $ampelf_klein2_photo
      $ampel_klein_grey_photo $zugbruecke_photo $zugbruecke_klein_photo
      $kopfstein_klein_photo $kopfstein_klein_grey_photo
      $vorfahrt_photo $vorfahrt_klein_photo

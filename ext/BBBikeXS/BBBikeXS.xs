@@ -949,7 +949,7 @@ fast_plot_point(canvas, abk, fileref, progress)
 	  int x, y;
 	} point;
 	AV* tags;
-	SV *andreaskreuz, *ampel, *zugbruecke;
+	SV *andreaskreuz, *ampel, *ampelf, *zugbruecke;
 	char *file;
 	int file_count = 0;
 	AV* fileref_array = NULL;
@@ -967,14 +967,17 @@ fast_plot_point(canvas, abk, fileref, progress)
 #ifdef LOAD_AMPEL_IMAGE
 	LOAD_AMPEL_IMAGE("lsa-B", andreaskreuz);
 	LOAD_AMPEL_IMAGE("lsa-X", ampel);
+	LOAD_AMPEL_IMAGE("lsa-F", ampelf);
 	LOAD_AMPEL_IMAGE("lsa-Zbr", zugbruecke);
 #else
 	andreaskreuz = perl_get_sv("main::andreaskr_klein_photo", 0);
 	ampel        = perl_get_sv("main::ampel_klein_photo", 0);
+	ampelf       = perl_get_sv("main::ampelf_klein_photo", 0);
 	zugbruecke   = perl_get_sv("main::zugbruecke_klein_photo", 0);
 #endif
 	if (!andreaskreuz) croak("Can't get andreaskr_klein_photo\n");
 	if (!ampel) croak("Can't get ampel_klein_photo\n");
+	if (!ampelf) croak("Can't get ampelf_klein_photo\n");
 	if (!zugbruecke) croak("Can't get zugbruecke_klein_photo\n");
 
 	if (SvROK(fileref) && SvTYPE(SvRV(fileref)) == SVt_PVAV) {
@@ -1009,7 +1012,7 @@ fast_plot_point(canvas, abk, fileref, progress)
 	    if (p) {
 	      *p = 0;
 	      cat = p+1;
-	      if (*cat != 'B' && *cat != 'X' && *cat != 'Z' /* br */
+	      if (*cat != 'B' && *cat != 'X' && *cat != 'Z' /* br */ && *cat != 'F'
 		  ) *cat = 'X';
 	      p = strchr(p+1, ' ');
 	      if (p) {
@@ -1052,6 +1055,9 @@ fast_plot_point(canvas, abk, fileref, progress)
 		  /* Zbr */
 		  XPUSHs(zugbruecke);
 		  break;
+		case 'F':
+		  XPUSHs(ampelf);
+		  break;
 		default:
 		  XPUSHs(ampel);
 		}
@@ -1085,6 +1091,7 @@ fast_plot_point(canvas, abk, fileref, progress)
 	SvREFCNT_dec(image_sv);
 #ifdef LOAD_AMPEL_IMAGE
 	SvREFCNT_dec(ampel);
+	SvREFCNT_dec(ampelf);
 	SvREFCNT_dec(andreaskreuz);
 	SvREFCNT_dec(zugbruecke);
 #endif

@@ -603,6 +603,14 @@ userdel auto	3 7039,12314 7383,12095 7663,11946
          'data' => '	q4 8576,-29378 8683,-29889
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1126796400,
+         'text' => 'Holzendorffstraße zwischen Rönnestraße und Gervinusstraße Brückenarbeiten, Straße gesperrt. Dauer: bis 15.09.2005, 17.00 Uhr ',
+         'from' => 1120088649,
+         'data' => 'userdel	2 3344,10878 3395,10704
+',
+         'type' => 'gesperrt'
        }
      
 );

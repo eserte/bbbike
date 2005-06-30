@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.174 2005/06/26 12:40:33 eserte Exp eserte $
+# $Id: bbbike,v 3.175 2005/06/30 00:43:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -186,7 +186,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.174 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.175 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4679,6 +4679,9 @@ sub load_photos {
     $flag_photo{'ziel'}  = load_photo($top, 'flag_ziel_centered.' . $default_img_fmt);
     $ampel_photo         = load_photo($top, 'ampel.' . $default_img_fmt);
     $ampel_klein2_photo  = load_photo($top, 'ampel_klein2.' . $default_img_fmt);
+    $ampelf_photo        = load_photo($top, 'ampelf.' . $default_img_fmt);
+    $ampelf_klein_photo  = load_photo($top, 'ampelf_klein.' . $default_img_fmt);
+    $ampelf_klein2_photo = load_photo($top, 'ampelf_klein2.' . $default_img_fmt);
     $andreaskr_klein_photo = load_photo($top,
 					'andreaskr_klein.' . $default_img_fmt);
     $andreaskr_klein2_photo= load_photo($top,
@@ -5761,14 +5764,15 @@ EOF
 			       -tags => ["$abk-fg", "$xx,$yy", $pointname]);
 	    } elsif ($abk eq 'lsa') {
 		# keine Verwendung von _coord_as_string
-		# XXX 'F' sollte mal ein leicht anderes Bild bekommen
 		$c->createImage
 		  ($x, $y,
 		   -image => ($category eq 'B'
 			      ? $andreaskr_photo
 			      : $category eq 'Zbr'
 				? $zugbruecke_photo
-			        : $ampel_photo
+				: $category eq 'F'
+				  ? $ampelf_photo
+			          : $ampel_photo
 			     ),
 		   -tags => ["$abk-fg", "$xx,$yy", $pointname,
 			     "$abk-" . ($category eq 'B' ? 'B' : 'X') . "-fg",
@@ -9185,10 +9189,11 @@ sub plot_point {
 	$c->delete($_) for (@del_tags);
     }
 
-    my($ampel_photo, $andreaskr_photo);
+    my($ampel_photo, $ampelf_photo, $andreaskr_photo);
     if ($abk eq 'lsa') {
 	undef %ampeln;
 	$ampel_photo      = get_symbol_scale('lsa-X');
+	$ampelf_photo     = get_symbol_scale('lsa-F');
 	$andreaskr_photo  = get_symbol_scale('lsa-B');
 	$zugbruecke_photo = get_symbol_scale('lsa-Zbr');
 	$c->delete('lsas'); # Ampelschaltung-Symbole löschen
@@ -12617,7 +12622,7 @@ sub scale_width {
 	}
     }
 
-    foreach (qw(lsa-X lsa-B lsa-Zbr rest kn vf)) {
+    foreach (qw(lsa-X lsa-B lsa-F lsa-Zbr rest kn vf)) {
 	$c->itemconfigure($_ . '-fg', -image => get_symbol_scale($_, $scale));
     }
     foreach (qw(e)) {
@@ -12831,6 +12836,16 @@ sub get_symbol_scale {
 	    return $ampel_klein_photo;
 	} elsif ($scale >= 0.5*$mod) {
 	    return $ampel_klein2_photo;
+	} else {
+	    return undef;
+	}
+    } elsif ($tag eq 'lsa-F') {
+	if ($myscale > 4*$mod) {
+	    return $ampelf_photo;
+	} elsif ($scale >= 2*$mod) {
+	    return $ampelf_klein_photo;
+	} elsif ($scale >= 0.5*$mod) {
+	    return $ampelf_klein2_photo;
 	} else {
 	    return undef;
 	}

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.23 2004/12/28 22:54:37 eserte Exp eserte $
+# $Id: CoreHeavy.pm,v 1.24 2005/06/30 00:47:28 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the

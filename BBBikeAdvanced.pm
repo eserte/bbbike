@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.118 2005/06/26 12:39:42 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.119 2005/06/29 23:58:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1076,8 +1076,8 @@ sub set_line_coord_interactive {
 	my $s = $t->SelectionGet('-selection' => ($os eq 'win'
 						  ? "CLIPBOARD"
 						  : "PRIMARY"));
-	foreach (split(/\s+/, $s)) {
-	    push @coords, [split /,/, $_];
+	while ($s =~ /([0-9\.]+),([0-9\.]+)/g) {
+	    push @coords, [$1,$2];
 	}
 	my @line_coords;
 	foreach (@coords) {

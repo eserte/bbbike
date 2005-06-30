@@ -1,10 +1,14 @@
 #
-# $Id: Makefile,v 1.20 2005/06/19 20:21:24 eserte Exp $
+# $Id: Makefile,v 1.21 2005/06/30 00:44:19 eserte Exp $
 #
 
 # XXX needs MORE work
 
-all:	favicon.ico srtbike.ico
+all:	favicon.ico srtbike.ico \
+	png-to-xpm \
+	png-to-gif \
+	png-to-wbmp \
+	png-to-jpg
 
 small-berlinmap:
 	../miscsrc/small_berlinmap.pl
@@ -76,6 +80,9 @@ bbbike_splash_tkbabybike.xpm: srtbike.xpm
 
 png-to-gif:	\
 		airport.gif \
+		ampelf.gif \
+		ampelf_klein.gif \
+		ampelf_klein2.gif \
 		ampel_klein2_rahmen.gif \
 		andreaskr.gif \
 		andreaskr_klein.gif \
@@ -119,6 +126,9 @@ png-to-gif:	\
 
 png-to-xpm:	\
 		ampel.xpm \
+		ampelf.xpm \
+		ampelf_klein.xpm \
+		ampelf_klein2.xpm \
 		ampel_klein2_rahmen.xpm \
 		andreaskr.xpm \
 		apfel.xpm \
