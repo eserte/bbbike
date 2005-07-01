@@ -146,6 +146,31 @@ sub dms_human_readable {
     $s . $dms[0] . "°" . sprintf("%02d", $dms[1]) . "'" . sprintf("%04.1f",$dms[2]) . "\"";
 }
 
+sub dmm_human_readable {
+    my($type, @dmm) = @_;
+    my $s = "";
+    if (defined $type) {
+	if ($type eq 'lat') {
+	    if ($dmm[0] >= 0) {
+		$s .= "N ";
+	    } else {
+		$s .= "S ";
+		$dmm[0] *= -1;
+	    }
+	} elsif ($type eq 'long') {
+	    if ($dmm[0] >= 0) {
+		$s .= "E ";
+	    } else {
+		$s .= "W ";
+		$dmm[0] *= -1;
+	    }
+	} else {
+	    die "Unknown type, should be lat or long";
+	}
+    }
+    $s . $dmm[0] . "°" . sprintf("%05.2f",$dmm[1]) . "'";
+}
+
 # input: deg, min, sec
 # deg should be signed
 # output: deg (decimal)
