@@ -1307,12 +1307,13 @@ EOF
 userdel	2 4151,10026 3906,10035
 EOF
      },
-     { from  => 1102540046, # 2004-12-08 22:07
-       until => 1104533999, # 2004-12-31 23:59
-       text  => 'Johannisthaler Chaussee (Neukölln) in Höhe der Ernst-Keller-Brücke Baustelle, Straße vollständig gesperrt wegen Brückenneubau (bis Ende 2004)',
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Johannisthaler Chaussee (Ernst-Keller-Brücke) Brückenarbeiten, gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 15573,4122 15608,4175
+userdel	2 15669,4266 15608,4175
 EOF
      },
      { from  => 1102712612, # 2004-12-10 22:03
@@ -1410,9 +1411,9 @@ EOF
 userdel	2 -27793,4863 -27127,5270
 EOF
      },
-     { from  => 1114552800, # 2005-04-27 00:00
-       until => 1121119200, # 2005-07-12 00:00
-       text  => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, zw. K.-Liebknecht-Str. u. Freiligrathstr. Kanal- und Straßenbau Vollsperrung 28.04.2005-11.07.2005 ',
+     { from  => 1119996000, # 2005-06-29 00:00
+       until => 1122069600, # 2005-07-23 00:00
+       text  => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, zw. K.-Liebknecht-Str. u. R.-Wagner-Str. Kanal- und Straßenbau Vollsperrung 30.06.2005-22.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 25185,-3955 23463,-4466
@@ -1563,12 +1564,12 @@ EOF
 userdel	1 9028,12307 8804,12280
 EOF
      },
-     { from  => 1110408300, # 2005-03-09 23:45
-       until => 1110672000, # 2005-03-13 01:00
-       text  => 'Brückendurchfahrt zwischen Schöneicher Str. und Bölschestr.: in beiden Richtungen Brückenarbeiten, gesperrt, Dauer: 10.03.2005 23:45 Uhr bis 13.03.2005 01:00 Uhr ',
-       type  => 'gesperrt',
+     { from  => 1120179643, # 2005-07-01 03:00
+       until => 1122933599, # 2005-08-01 23:59
+       text  => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt (bis Anfang 08.2005)',
+       type  => 'handicap',
        data  => <<EOF,
-userdel	2 25585,6050 25579,5980
+userdel	q4 25585,6050 25579,5980
 EOF
      },
      { from  => 1110668400, # 2005-03-13 00:00
@@ -1646,8 +1647,8 @@ userdel	q4 25095,35601 24915,35340
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
-       until => 1120168800, # 2005-07-01 00:00
-       text  => 'L 23; (Joachimsthal-Templin); OD Joachimsthal Neubau Durchlass Vollsperrung 29.03.2005-30.06.2005 ',
+       until => 1120428000, # 2005-07-04 00:00
+       text  => 'L 23; (Joachimsthal-Templin); OD Joachimsthal Neubau Durchlass Vollsperrung 29.03.2005-03.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 32966,64019 33254,63446
@@ -1778,8 +1779,8 @@ userdel	q4 -16640,1304 -16894,1485
 EOF
      },
      { from  => 1113775200, # 2005-04-18 00:00
-       until => 1120946400, # 2005-07-10 00:00
-       text  => 'L 691; (Dübrichen-Wehrhain-B 87); Kreuzung zw. Dübrichen u. Frankenhain Knotenausbau Vollsperrung 19.04.2005-09.07.2005 ',
+       until => 1120168800, # 2005-07-01 00:00
+       text  => 'L 691; (Dübrichen-Wehrhain-B 87); Kreuzung zw. Dübrichen u. Frankenhain Knotenausbau Vollsperrung 19.04.2005-30.06.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 11561,-75017 12171,-75229
@@ -2089,8 +2090,8 @@ userdel auto	3 3365,12231 3076,12192 2902,12183
 userdel auto	3 2902,12183 3076,12192 3365,12231
 EOF
      },
-     { from  => 1120687200, # 2005-07-07 00:00
-       until => 1120946400, # 2005-07-10 00:00
+     { from  => 1120180333, # undef XXX 2005-07-07 00:00
+       until => 1120180333, # undef XXX 2005-07-10 00:00
        text  => 'L 30; (Woltersdorfer Landstr.); OD Erkner Grundhafter Straßenbau Vollsperrung 08.07.2005-09.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -2216,6 +2217,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 3344,10878 3395,10704
+EOF
+     },
+     { from  => 1121378400, # 2005-07-15 00:00
+       until => 1121637600, # 2005-07-18 00:00
+       text  => 'Einfahrt in die Kastanienallee wegen Bauarbeiten gesperrt, 16.07.2005-17.07.2005',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 10889,15045 10723,14772
+EOF
+     },
+     { from  => 1121551200, # 2005-07-17 00:00
+       until => 1127080800, # 2005-09-19 00:00
+       text  => 'Einfahrt in die Pappelallee wegen Bauarbeiten gesperrt, 18.07.2005 - 18.09.2005',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 10889,15045 11119,15385
 EOF
      },
     );

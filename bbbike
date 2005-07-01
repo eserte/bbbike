@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.175 2005/06/30 00:43:20 eserte Exp $
+# $Id: bbbike,v 3.175 2005/06/30 00:43:20 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -381,8 +381,10 @@ $abbiege_penalty = { 'H'   => 70, # entspricht ca. 10s bei 25km/h
 		     'BAB' => 140, # häh? für Radfahrer?
 		     'B'   => 140,
 		   };
-$lost_strecke_per_ampel = 50; # verlorene Strecke pro Ampel in m
-$lost_time_per_ampel = 15; # verlorene Zeit pro Ampel in s
+$lost_strecke_per_ampel = 50; # verlorene Strecke pro Ampel in m # XXX F ...?
+%lost_time_per_ampel = ('X' => 15,
+			'F' => 5,
+		       ); # verlorene Zeit pro Ampel in s
 $average_v = 0;
 
 $radwege_optimierung = 0;
@@ -7650,6 +7652,7 @@ sub enter_opt_preferences2 {
 	eval {
 	    # Ampeloptimierung
 	    #XXX $lost_time_per_ampel    = -$optprefs{"Ampeln"}*?;
+	    # XXX what about F ...?
 	    $lost_strecke_per_ampel = -$optprefs{"Ampeln"}*40;
 	    $ampel_optimierung      = ($optprefs{Ampeln} != 0);
 
@@ -11828,7 +11831,7 @@ sub addpoint_xy {
 		      = $route_time[$nr-1] + $bikepwr_time_etappe;
 		}
 		if (%ampeln && $ampeln{"$x,$y"}) {
-		    $route_time[$nr] += $lost_time_per_ampel;
+		    $route_time[$nr] += $lost_time_per_ampel{X}; # XXX F...
 		}
 	    }
 
@@ -11907,7 +11910,7 @@ sub addpoint_xy {
 	      = $route_time[$nr-1] + ($etappe / 1000) / $speed[$i] * 3600;
 	}
 	if (%ampeln && $ampeln{"$x,$y"}) {
-	    $route_time[$nr] += $lost_time_per_ampel;
+	    $route_time[$nr] += $lost_time_per_ampel{X}; # XXX F ...
 	}
     }
 
@@ -12261,7 +12264,7 @@ sub updatekm {
 	if ($ampel_count == 0) {
 	    $ampelstatus_label_text = M"Keine Ampeln";
 	} else {
-	    $lost_time_s = $ampel_count*$lost_time_per_ampel;
+	    $lost_time_s = $ampel_count*$lost_time_per_ampel{X}; # XXX F ...
 	    $ampelstatus_label_text =
 		"$ampel_count " .
 		    ($ampel_count > 1 ? M"Ampeln" : M"Ampel") .
@@ -16527,9 +16530,9 @@ sub calc_ampel_optimierung {
 	    }
 	}
 	my %res = Ampelschaltung::get_lost($speed, $beschleunigung);
-	$lost_time_per_ampel = $res{-zeit};
+	$lost_time_per_ampel{X} = $res{-zeit}; # XXX F
 	$lost_strecke_per_ampel = $res{-strecke};
-	status_message(Mfmt("Einstellungen für %s km/h: verlorene Zeit pro Ampel: %s s, verlorene Strecke pro Ampel: %d m", $speed, float_prec($lost_time_per_ampel, 1), $lost_strecke_per_ampel), "info");
+	status_message(Mfmt("Einstellungen für %s km/h: verlorene Zeit pro Ampel: %s s, verlorene Strecke pro Ampel: %d m", $speed, float_prec($lost_time_per_ampel{X}, 1), $lost_strecke_per_ampel), "info"); # XXX F
     }
 }
 

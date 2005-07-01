@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.28 2005/06/30 00:44:26 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.28 2005/06/30 00:44:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -164,7 +164,7 @@ use vars qw($www_is_slow $do_www $really_no_www $no_map
 	    @coords @names @rbahn_coords
 	    $abbiege_optimierung $abbiege_penalty
 	    $ampel_optimierung $lost_strecke_per_ampel
-	    $lost_time_per_ampel $average_v $beschleunigung);
+	    %lost_time_per_ampel $average_v $beschleunigung);
 
 use vars qw($qualitaet_s_optimierung %qualitaet_s_speed
 	    $qualitaet_s_net);

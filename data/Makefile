@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.50 2005/06/28 21:28:19 eserte Exp $
+# $Id: Makefile,v 2.51 2005/07/01 00:59:30 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -93,7 +93,8 @@ targets-clean:
 # Useful checks, but normally too slow for a quick build
 # XXX merge with sort-Berlin.coords.data rule below?
 slow-checks:	inaccessible_strassen inaccessible_landstrassen \
-		check-line-lengths check-dates check-Berlin.coords.data \
+		check-line-lengths check-dates \
+		check-Berlin.coords.data check-Potsdam.coords.data \
 		persistent-tmp
 
 persistent-tmp:	${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
@@ -858,10 +859,14 @@ $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blocki
 .modified:	${TARGETS}
 	${MISCSRCDIR}/create_modified
 
-sort-Berlin.coords.data:
-	mv Berlin.coords.data Berlin.coords.data~
-	env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} < Berlin.coords.data~ > Berlin.coords.data
-	touch .check_Berlin_coords_data
+sort-coords.data:	sort-Berlin.coords.data sort-Potsdam.coords.data
+
+.for city in Berlin Potsdam
+sort-$(city).coords.data:
+	mv $(city).coords.data $(city).coords.data~
+	env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} < $(city).coords.data~ > $(city).coords.data
+	touch .check_$(city)_coords_data
+.endfor
 
 # For adjusting the buffer in BBBikeXS.xs.
 # Please adjust the number according to MAXBUF and MAXPOINTS in BBBikeXS.xs.
@@ -930,14 +935,16 @@ ${PERSISTENTTMPDIR}/crossings_gewaesser_noignore.bbd:	\
 ## Einzeiler zum Extrahieren einer Postleitzahl:
 # perl -F'\|' -nale '$F[2] == 12489 and $F[3] and print "$F[0] $F[1]\tX $F[3]"' Berlin.coords.data > /tmp/12489.bbd
 
-check-Berlin.coords.data:	.check_Berlin_coords_data
+.for city in Berlin Potsdam
+check-$(city).coords.data:	.check_$(city)_coords_data
 
 # Check for sortedness and unique records:
-.check_Berlin_coords_data: Berlin.coords.data
-	env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} -c Berlin.coords.data || \
-	    ( env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} Berlin.coords.data | diff -u - Berlin.coords.data; false )
-	perl -nle '@l=split /\|/; if (++$$x{"@l[0..2]"} > 1) { die "@l" }' Berlin.coords.data
+.check_$(city)_coords_data: $(city).coords.data
+	env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} -c $(city).coords.data || \
+	    ( env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} $(city).coords.data | diff -u - $(city).coords.data; false )
+	perl -nle '@l=split /\|/; if (++$$x{"@l[0..2]"} > 1) { die "@l" }' $(city).coords.data
 	@touch $@
+.endfor
 
 check-nearest:	${PERSISTENTTMPDIR}/check_nearest.bbd do-check-nearest
 

@@ -177,7 +177,15 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => undef,
+         'text' => 'Johannisthaler Chaussee (Ernst-Keller-Brücke) Brückenarbeiten, gesperrt',
+         'from' => undef,
+         'data' => 'userdel	2 15573,4122 15608,4175
+userdel	2 15669,4266 15608,4175
+',
+         'type' => 'gesperrt'
+       },
        undef,
        {
          'until' => 1122760800,
@@ -195,9 +203,9 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1121119200,
-         'text' => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, zw. K.-Liebknecht-Str. u. Freiligrathstr. Kanal- und Straßenbau Vollsperrung 28.04.2005-11.07.2005 ',
-         'from' => 1114552800,
+         'until' => 1122069600,
+         'text' => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, zw. K.-Liebknecht-Str. u. R.-Wagner-Str. Kanal- und Straßenbau Vollsperrung 30.06.2005-22.07.2005 ',
+         'from' => 1119996000,
          'data' => 'userdel	q4 25185,-3955 23463,-4466
 ',
          'type' => 'handicap'
@@ -263,7 +271,14 @@ userdel	q4 -18080,-12637 -17374,-13449
        },
        undef,
        undef,
-       undef,
+       {
+         'until' => 1122933599,
+         'text' => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt (bis Anfang 08.2005)',
+         'from' => 1120179643,
+         'data' => 'userdel	q4 25585,6050 25579,5980
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -278,18 +293,11 @@ userdel	q4 -18080,-12637 -17374,-13449
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1120168800,
-         'text' => 'Pistoriusstr. (Weissensee) Richtung Berliner Allee zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt (bis 30.06.2005)',
-         'from' => 1111524913,
-         'data' => 'userdel	1 13386,16408 13797,16237
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
-         'until' => 1120168800,
-         'text' => 'L 23; (Joachimsthal-Templin); OD Joachimsthal Neubau Durchlass Vollsperrung 29.03.2005-30.06.2005 ',
+         'until' => 1120428000,
+         'text' => 'L 23; (Joachimsthal-Templin); OD Joachimsthal Neubau Durchlass Vollsperrung 29.03.2005-03.07.2005 ',
          'from' => 1111960800,
          'data' => 'userdel	q4 32966,64019 33254,63446
 ',
@@ -346,14 +354,7 @@ userdel	q4 -16640,1304 -16894,1485
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1120946400,
-         'text' => 'L 691; (Dübrichen-Wehrhain-B 87); Kreuzung zw. Dübrichen u. Frankenhain Knotenausbau Vollsperrung 19.04.2005-09.07.2005 ',
-         'from' => 1113775200,
-         'data' => 'userdel	2 11561,-75017 12171,-75229
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -482,15 +483,7 @@ userdel	q4 1872,-1118 1680,-1011
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1120168800,
-         'text' => 'K 7234; (Goethestr.); Bahnübergang in Dabendorf Gleisbauarbeiten Vollsperrung 24.06.2005-30.06.2005 ',
-         'from' => 1119477600,
-         'data' => 'userdel	2 13048,-18384 13303,-18235
-userdel	2 14153,-17829 13303,-18235
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1129327200,
          'text' => 'L 216; (Gollin-Templin); OD Vietmannsdorf, Brücke über Mühlengraben Brückenneubau Vollsperrung 13.06.2005-14.10.2005 ',
@@ -504,14 +497,7 @@ userdel	2 14153,-17829 13303,-18235
        undef,
        undef,
        undef,
-       {
-         'until' => 1120946400,
-         'text' => 'L 30; (Woltersdorfer Landstr.); OD Erkner Grundhafter Straßenbau Vollsperrung 08.07.2005-09.07.2005 ',
-         'from' => 1120687200,
-         'data' => 'userdel	q4 34271,3184 34486,4276
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
