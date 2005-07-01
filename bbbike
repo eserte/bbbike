@@ -11033,6 +11033,8 @@ sub show_info {
     my($px,$py) = $Karte::Polar::obj->trim_accuracy($coord_system_obj->map2map($Karte::Polar::obj, $sx, $sy));
     my @polarcoord = (Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($py)),
 		      Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($px)));
+    my @polarcoord2 = (Karte::Polar::dmm_human_readable("lat", Karte::Polar::ddd2dmm($py)),
+		       Karte::Polar::dmm_human_readable("long", Karte::Polar::ddd2dmm($px)));
     my($gkk_zone_potsdam, $gkk_easting_potsdam, $gkk_northing_potsdam) = Karte::UTM::DegreesToGKK($py, $px, "Potsdam");
     my($gkk_zone_wgs84, $gkk_easting_wgs84, $gkk_northing_wgs84) = Karte::UTM::DegreesToGKK($py, $px, "WGS 84");
     my($utm_ze, $utm_zn, $utm_x, $utm_y) = Karte::UTM::DegreesToUTM($py, $px, "WGS 84");
@@ -11193,25 +11195,28 @@ sub show_info {
 			       "\n\n" . M("Länge") . ":", "bold",
 			       sprintf("\t%.2f km", $total_len), undef); # XXX Msg
 	}
-	if (@polarcoord) {
-	    $info_text->insert("end", "\n\n" . M("Koordinaten") . "\n", "bold");
-	    $info_text->insert("end", M("Polar") . ":\t$polarcoord[0]\n\t$polarcoord[1]");
-	}
 
+	$info_text->insert("end", "\n\n" . M("Koordinaten") . "\n", "bold");
+	if (@polarcoord) {
+	    $info_text->insert("end", M("Polar (DMS)") . ":\t$polarcoord[0]\n\t$polarcoord[1]\n");
+	}
+	if (@polarcoord2) {
+	    $info_text->insert("end", M("Polar (DMM)") . ":\t$polarcoord2[0]\n\t$polarcoord2[1]\n");
+	}
 	if (defined $gkk_zone_potsdam) {
-	    $info_text->insert("end", "\nGKK (Potsdam):\t[$gkk_zone_potsdam] $gkk_easting_potsdam/$gkk_northing_potsdam");
+	    $info_text->insert("end", "GKK (Potsdam):\t[$gkk_zone_potsdam] $gkk_easting_potsdam/$gkk_northing_potsdam\n");
 	}
 	if (defined $gkk_zone_wgs84) {
-	    $info_text->insert("end", "\nGKK (WGS 84):\t[$gkk_zone_wgs84] $gkk_easting_wgs84/$gkk_northing_wgs84");
+	    $info_text->insert("end", "GKK (WGS 84):\t[$gkk_zone_wgs84] $gkk_easting_wgs84/$gkk_northing_wgs84\n");
 	}
 	if (defined $utm_ze) {
-	    $info_text->insert("end", "\nUTM (WGS 84):\t[$utm_ze/$utm_zn] $utm_x/$utm_y");
+	    $info_text->insert("end", "UTM (WGS 84):\t[$utm_ze/$utm_zn] $utm_x/$utm_y\n");
 	}
 	if (defined $etrs_east) {
-	    $info_text->insert("end", "\nETRS 89:\t$etrs_east/$etrs_north");
+	    $info_text->insert("end", "ETRS 89:\t$etrs_east/$etrs_north\n");
 	}
-	$info_text->insert("end", "\nBBBike:\t$sx,$sy");
-	$info_text->insert("end", "\n\n");
+	$info_text->insert("end", "BBBike:\t$sx,$sy\n");
+	$info_text->insert("end", "\n");
 
 	$info_text->insert("end", "Links\n", "bold");
 	# Mapserver XXX move to function for creating URL
