@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.29 2005/06/15 19:40:01 eserte Exp $
+# $Id: bbbike.cgi,v 7.30 2005/07/02 14:47:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -665,7 +665,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.29 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.30 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2303,13 +2303,20 @@ sub get_cookie {
 
 sub set_cookie {
     my($href) = @_;
-    $q->cookie
-	(-name => $cookiename,
-	 -value => $href,
-	 -expires => '+1y',
-# XXX dirname okay with backward compatibility?
-	 -path => dirname($q->url(-absolute => 1)),
-	);
+    # Create a dirname and a non-dirname cookie (both for backward compat):
+    [$q->cookie
+     (-name => "$cookiename-dir",
+      -value => $href,
+      -expires => '+1y',
+      -path => dirname($q->url(-absolute => 1)),
+     ),
+     $q->cookie
+     (-name => $cookiename,
+      -value => $href,
+      -expires => '+1y',
+      -path => $q->url(-absolute => 1),
+     ),
+    ];
 }
 
 use vars qw($default_speed $default_cat $default_quality
@@ -5607,7 +5614,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/06/15 19:40:01 $';
+    my $cgi_date = '$Date: 2005/07/02 14:47:05 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

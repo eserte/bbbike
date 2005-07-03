@@ -70,6 +70,14 @@ Entlastungsstr.: wird voraussichtlich im September 2005 stillgelegt	? 8063,12182
 # In diesem Abschnitt kommen Straßen rein, die erst einmal nicht in
 # die Datenbank aufgenommen werden sollen.
 #
+#: XXX Straßen am Lehrter Bahnhof in Bau: vvv
+	?::inwork 7941,12902 7945,12992 7945,13107 7946,13209
+	?::inwork 7945,12992 7864,12987
+	?::inwork 7864,12987 7867,13106
+	?::inwork 7945,13107 7867,13106
+#: XXX ^^^
+#: next_check: 2005-12-01
+Alexanderufer: in Bau	?::inwork 8269,13062 8312,13296 8378,13425 8337,13541
 Thielpark - Hüttenweg: laut anonymen Eintrag eher nicht geeignet (Stufen). Laut Andreas M. gibt es einige Varianten durch den Park, einige mit Stufen, eine ohne, aber die Variante Gelfertstr. ist sinnvoller	#cccccc 2288,4932 2221,5081
 #: section ^^^
 #
@@ -106,7 +114,6 @@ Waldweg	? 27080,57520 27472,58075 28062,58011 29644,59192 30902,61279
 #: by ^^^
 Popitzweg: Fußgängerzone?	? 1396,14427 1897,14408
 Groscurthstr.: Einbahnstraße? Radweg?	? 16565,25456 16467,25092 16423,24935
-Am Lehrter Bahnhof: wie sieht die Straßenführung genau aus, wie stabil ist sie?	? 7941,12902 7958,12994 7814,13284
 R1 im Raum Spindlersfeld: alternative Wegführung?	? 21364,5435 21450,5418 21687,5006 21918,4859 21796,4517
 Neuenburger Str.: für Fußgänger bis zur Lindenstr. offen, Linksabbiegen möglich, allerdings Bordsteine	? 9938,10509 9817,10490
 McNair-Promenade: genaue Wegführung (weiter nördlich, oder hier)? wo weschseln sich NN und N-Abschnitte ab? Heißt der östlich Teil tatsächlich Ostestr? Wie ist die Qualität, die ADFC-Karte sagt "schlecht geeignet"?	? 2266,1510 2094,1408 1990,1360 1769,1257
@@ -316,7 +323,6 @@ Stolzenhagen - Kreuzbruch: Qualität?	? 12427,41870 11625,42525 10934,44311 10485
 Basdorf - Bernauer Heide: passierbar (Bahnstrecke), Qualität, Kfz-los?	? 12887,36543 13723,36178
 Zugbrücke/Schleuse?	? 35066,4548
 Zugbrücke?	? 32737,183789
-Alexanderufer: Existiert diese Verbindung bereits?	? 8269,13062 8312,13296 8378,13425 8337,13541
 Liebigstr. - Frankfurter Allee: existiert eine Verbindung?	? 13905,12374 13885,12279
 Schloßstr (Charlottenburg): gibt es hier auch Radstreifen?	? 3038,12482 3076,12192 3091,12071 3103,11968
 Schillingstr. - Volkspark Friedrichshain: existiert eine direkte Verbindung durch das Wohngebiet?	? 11635,12745 11839,13083 12085,13377
@@ -462,11 +468,11 @@ Münchehofe - Trebnitz: laut "Berliner Umland" geeignete Strecke	? 62444,15991 62
 Münchehofe - Buckow: Waldweg, Q2! Genaue Wegführung?	? 58512,18662 56750,19200 56237,18900 55920,18769
 Postbruch - Spitzmühle: Qualität? Genaue Wegführung?	? 39771,18075 39696,18175 39490,19893
 Elisabethstr. (Strausberg) etc.: Genaue Wegführung? Tatsächlich Hauptstraße?	? 42434,19150 42804,19034 42830,19630
-Altlandsberg - Wegendorf: wahrscheinlich schlechte Strecke	? 32519,18904 32600,19331 32859,19606 32882,19988 33051,20649 33574,21276 33710,21746 33822,22066 34125,22128
+Altlandsberg - Wegendorf: wahrscheinlich schlechte Strecke	? 32550,18921 32600,19331 32859,19606 32882,19988 33051,20649 33574,21276 33710,21746 33822,22066 34125,22128
 Garzin - Hasenholz: Qualität (auf Garziner Seite nur Waldweg)?	? 49700,16565 50037,16837 50175,17200 51475,17887 51887,18312 52289,18271 53457,18135
 Am Bötzsee: Genaue Wegführung, besonders zum Fängersee hin? Alternative Strecke näher am See? Qualität: durchgehend Waldweg?	? 38537,17484 38509,17838 38515,17931 38576,18071 38836,18622 38774,18856 38820,19366 38779,19684 38908,19853
-Badstr. am Straussee: Qualität?	? 42753,20225 42818,20290 42778,20387 42825,20490 42943,20578 43040,20818 43268,20903 43387,20971 43531,20975 43584,20871
-Alternative Strecke zum Roten Hof: Qualität?	? 43584,20871 43537,20996 43681,21175 44037,21303 44246,21496 44312,21556 44290,21668 44158,21724
+Badstr. am Straussee: Qualität?	? 42753,20225 42818,20290 42778,20387 42825,20490 42943,20578 43040,20818 43268,20903 43387,20971 43446,21007 43498,21028
+Alternative Strecke zum Roten Hof: Qualität?	? 43498,21028 43601,21073 43681,21175 44037,21303 44246,21496 44312,21556 44290,21668 44158,21724
 Krummensee - Wegendorf: laut "Berliner Umland" unterschiedliche Qualität (gut - schlecht)	? 29537,21850 30487,22025 31275,22212 33562,22062 33822,22066
 #: XXX Die Existenz wurde von Andre K. bestaetigt:
 Radweg entlang der Straßenbahntrasse zwischen Lea-Grundig-Str. und Ahrensfelde: genaue Wegführung? Qualität? Wo kommt man in Ahrensfelde heraus?	? 21343,16713 21375,16926 21542,17465 21579,17559 21836,18214 21928,18403 21853,18700 21830,19016
@@ -500,6 +506,7 @@ Klockow - Kleptow (Feldweg): auf der Nordseite sandiger Feldweg (Q2?)	? 49487,11
 Wallenbergstr - Rudolstädter Str.: Verbindung für Radfahrer vorhanden?	? 4139,8498 4046,8487 3964,8559
 Rüdickenstr. und Verlängerung: Qualität? Existiert eine Verbindung für Radfahrer?	? 17425,17281 17891,17097
 Arnimstr.: Qualität? Wo ist die Verbindung zur Gehrenseestr.?	? 17891,17097 18500,16831 18313,16643
+#: next_check: 2005-08-01:
 Unterbaumstr.: noch in Bau?	?::inwork 8581,13013 8503,12895
 #: XXX von Katrin Kroschk: Asphalt, aber meinte sie auch diese Strecke?
 Von Gülzower Str. bis Neue Grottkauer Str.: für Radfahrer durchgängig befahrbar? Qualität?	? 23014,12706 22960,13298 23110,13966 23184,14100
@@ -552,7 +559,7 @@ Hannah-Arendt-Str.: zwischen Gertrud-Kolmar-Str. und Wilhelmstr. bereits befahrb
 Treppe zwischen Siegmunds Hof und Spreeuferweg?	? 5737,12281 5719,12253
 Neuwedeller Str.: Qualität?	? 12313,7852 12335,7770
 #: XXX was bedeutet "mäßig" in der Eintragung?
-Straße am ULAP: wird demnächst in Clara-Jaschke-Straße umbenannt	? 7750,12987 7743,13181
+Straße am ULAP: wird demnächst in Clara-Jaschke-Straße umbenannt	? 7781,12987 7764,13236
 Laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgänger begehbar, laut <cn2fr0taoncnlu6s84inbhgpo8lq0u0bh2@4ax.com> sogar offizieller Bestandteil des Elbe-Radwegs	? -92087,-49506 -91387,-49350
 Weg entlang der Elbe: Qualität?	? -91387,-49350 -91150,-49775 -90062,-50750 -89709,-51230
 Laut <41b75ea5$0$23129$9b622d9e@news.freenet.de> wird hier (Berliner Str./Florastr.) bald eine neue Ampel entstehen	? 10846,17992
@@ -560,8 +567,6 @@ Parkstr. (Potsdam): Fortsetzung zur Schopenhauerstr.?	? -13803,-462 -13965,-590 
 Voltaireweg in diese Fahrtrichtung gesperrt?	?; -14034,-571 -13795,-407 -13636,-331
 Rübelandstr.: Qualität?	? 12787,7546 12818,7403
 Unter den Linden: irgendwo zwischen Zeughaus und Universitätsstr. ist noch eine Ampel	? 9603,12372 9782,12393 9853,12402 9918,12411
-#: XXX laut Gabi S. keine Einbahnstraße für Radfahrer
-Delbrückstr. (Neukölln): Qualität zwischen Bendastr. und Karl-Marx-Str. (am östlichen Ende Kopfsteinpflaster!)? Einbahnstraße auch für Radfahrer?	? 12743,6645 12851,6664 13125,6717
 Koburger Str.: Qualität? Linksabbiegen in die Hauptstr. möglich?	? 6534,8467 6560,8219
 Krahmerstr.: laut ADFC-Karte gute Qualität; am Hindenburgdamm Linksabbiegen möglich; wie sieht die Verbindung zur Uferpromenade aus?	? 4534,3456 4801,3370 4862,3345 5015,3292
 Wattstr./nördlicher Teil der Strelitzer Str.: Qualität?	? 9361,15066 9437,14926 9526,14779 9621,14624
@@ -792,6 +797,20 @@ Schwendenerstr.: Kopfsteinpflaster auch zwischen Fabeckstr. und Habelschwerdter 
 Kiepertplatz: Qualität?	? 8528,1846 8606,1875
 Elisabeth-Abegg-Str. bis Lüneburger Str.: Verbindung vorhanden? Qualität?	? 7793,12764 7409,12739 7327,12721
 Elisabeth-Abegg-Str.: noch immer nicht ausgeschildert?	? 7941,12902 7793,12764
-Washingtonplatz: tatsächlich keine Ampel mehr?	? 7941,12902
+Washingtonplatz: Ampel nicht direkt an der Kreuzung Rahel-Hirsch-Str./Alt-Moabit?	? 7862,12917
 #: XXX Martin Barghoorn hat KS angegeben, aber gleichzeitig "nur Fußweg" eingetragen
 Lückhoffstr.: Qualität (Kopfsteinpflaster?)?	? -2847,2893 -3022,2696 -3162,2564 -3190,2467 -3210,2375
+Parkweg vom Kanzleramt zur Gustav-Heinemann-Brücke: für Radfahrer befahrbar?	? 8111,12930 8115,12835 8126,12740
+Betckestr.: Qualität?	? -3614,12529 -3236,12533 -3150,12545
+Altonaer Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? -4900,13857 -4742,13839 -4298,13810 -3971,13755 -3689,13680
+Nauener Str. zur Altonaer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? -4731,13970 -4742,13839
+Staakener Str.: Qualität zwischen Seegefelder Str. und Nauener Str.? Einbahnstraße auch für Radfahrer gültig?	? -4109,14240 -4664,14154 -4707,14196
+Krumme Gärten: Qualität	? -3998,13138 -3986,13367
+Sandstr.: Qualität?	? -5393,12387 -5493,12214 -5576,12057 -5760,11787
+Blasewitzer Ring: Qualität (laut ADFC-Karte mäßig geeignet)?	? -5393,12387 -5198,12337 -5103,12582 -5135,12639
+Gruberzeile: Qualität?	? -6006,12009 -5831,11850 -5760,11787 -5670,11726 -5603,11804
+An der Karolinenhöhe: Qualität?	? -5888,11712 -5832,11770 -5873,11800 -5831,11850
+Kranoldstr.: Qualität zwischen Hermann- und Hertastr.? Östlich davon ist es Kopfsteinpflaster	? 12422,6715 12585,6747 12715,6783
+Treseburger Ufer und Verlängerung Richtung Rungiusstr.: Qualität?	? 12052,5710 12290,5804 12699,5909 13064,5953
+Ringbahnstr. (Neukölln): Kopfsteinpflaster! mäßig oder schlecht? Einbahnstraße im östlichen Abschnitt auch für Radfahrer? Überqueren der Karl-Marx-Str. möglich?	? 13081,7014 12934,6967 12689,6905
+Hertzbergplatz: genauer Name der Straße zwischen Treptower und Hertzbergstr.?	? 13478,8095 13474,8060

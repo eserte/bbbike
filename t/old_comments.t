@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: old_comments.t,v 1.5 2005/06/19 16:56:48 eserte Exp $
+# $Id: old_comments.t,v 1.8 2005/07/02 12:00:22 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -49,85 +49,85 @@ if (!@urls) {
 my @tests = (
 	     # Czeminskistr. -> Julius-Leber-Brücke 
 	     ["7603,8911", "7497,8916", <<EOF, "CP;"],
-- ''
-- Als Julius-Leber-Brücke ausgeschildert
+- {}
+- Als Julius-Leber-Brücke ausgeschildert: 1
 - ~
 EOF
 	     ["7497,8916", "7603,8911", <<EOF, "CP; Rückweg"],
-- ''
-- ''
+- {}
+- {}
 - ~
 EOF
 
 	     # Hagelberger/Yorck
-	     # XXX order may change which seems to be hash order dependent
 	     ["8773,9524", "8595,9495", <<EOF, "PI"],
-- ! >-
-  Straßenseite bei der Fußgängerampel
-  Yorckstr./Katzbachstr. wechseln; Kopfsteinpflaster
-- ''
+- Kopfsteinpflaster: 1
+  Straßenseite bei der Fußgängerampel Yorckstr./Katzbachstr. wechseln: 1
+- {}
 - ~
 EOF
 	     ["8777,9601", "8595,9495", <<EOF, "No PI, starting point outside"],
-- ''
+- {}
 - ~
 EOF
 	     ["8648,9526", "8595,9495", <<EOF, "No PI, starting point inside"],
-- ''
+- {}
 - ~
 EOF
 
 	     # Bergmannstr.
 	     ["9248,9350", "10533,9240", <<EOF, "CS (was Route, now no route here)"],
-- Kopfsteinpflaster (Teilstrecke)
+- Kopfsteinpflaster (Teilstrecke): 1
 - ~
 EOF
 
 	     # Belziger Str.
+	     # XXX Reordered first hash, because otherwise YAML 0.39 would fail!
 	     ["7315,9156", "6977,8934", <<EOF, "CS (Route)"],
-- RR1 (Schloßplatz - Wannsee); mäßiges Kopfsteinpflaster (Teilstrecke)
+- mäßiges Kopfsteinpflaster (Teilstrecke): 1
+  'RR1 (Schloßplatz - Wannsee)': 1
 - ~
 EOF
 
 	     # Franz-Mehring-Platz
 	     ["12811,12081", "12744,11904", <<EOF, "CP2; am Startpunkt"],
-- Als Franz-Mehring-Platz ausgeschildert
+- Als Franz-Mehring-Platz ausgeschildert: 1
 - ~
 EOF
 	     ["12744,11904", "12811,12081", <<EOF, "Rückweg ohne Kommentare"],
-- ''
+- {}
 - ~
 EOF
 	     ["12852,12306", "12744,11904", <<EOF, "Franz-Mehring-Platz als Teilstrecke"],
-- Als Franz-Mehring-Platz ausgeschildert (Teilstrecke)
+- Als Franz-Mehring-Platz ausgeschildert (Teilstrecke): 1
 - ~
 EOF
 
 	     # Bismarckplatz
 	     ["2947,9367", "2348,9398", <<EOF, "CP2; ohne Teilstrecke"],
-- ''
-- als Caspar-Theyß-Str. ausgeschildert
+- {}
+- als Caspar-Theyß-Str. ausgeschildert: 1
 - ~
 EOF
 	     ["2348,9398", "2947,9367", <<EOF, "Rückweg"],
-- als Hubertusallee ausgeschildert
-- ''
+- als Hubertusallee ausgeschildert: 1
+- {}
 - ~
 EOF
 
 	     # Lützowplatz
 	     ["6732,10754", "6642,12010", <<EOF, "Mehrere Kommentare am gleichen Abschnitt"],
-- Als Lützowplatz ausgeschildert (Teilstrecke)
-- ''
-- ''
-- R1
+- Als Lützowplatz ausgeschildert (Teilstrecke): 1
+- {}
+- {}
+- R1: 1
 - ~
 EOF
 	     ["6642,12010", "6732,10754", <<EOF, "Rückweg"],
-- R1
-- ''
-- ''
-- Als Lützowplatz ausgeschildert (Teilstrecke)
+- R1: 1
+- {}
+- {}
+- Als Lützowplatz ausgeschildert (Teilstrecke): 1
 - ~
 EOF
 	    );
@@ -151,7 +151,13 @@ for my $cgiurl (@urls) {
 	my $res = $ua->get($url);
 	ok($res->is_success, "Index $inx, $from - $to");
 	my $got = YAML::Load($res->content);
-	my $comments = [ map { $_->{Comment} } @{$got->{Route}} ];
+	my $comments = [ map {
+	    if (defined $_->{Comment}) {
+		+{ map { ($_,1) } split /;\s+/, $_->{Comment} };
+	    } else {
+		undef;
+	    }
+	} @{$got->{Route}} ];
 	is_deeply($comments, YAML::Load("--- #YAML:1.0\n$expected"), $desc) or do {
 	    if ($v >= 2) {
 		diag Dumper $got;

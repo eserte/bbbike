@@ -14,6 +14,11 @@ Legend:
 
 =over
 
+=item * (M4)
+
+Implement minimal scrolling: if scrolling to a point of a polyline,
+then choose the nearest one!
+
 =item * (M3)
 
 Tk::Getopt addition: for some changes a post dialog should be shown,
@@ -813,6 +818,9 @@ steht.)
 =item BBBikeEdit
 
 Teile nach BBBikeGPS etc. auslagern => schon gemacht, noch mehr?
+
+=item cgpsmapper für die Konvertierung der BBBike-Daten nach
+Garmin-Karten verwenden. Siehe auch: http://gps.chrisb.org/en/qstart.htm
 
 =item VernE<uuml>nftige Koordinaten verwenden
 

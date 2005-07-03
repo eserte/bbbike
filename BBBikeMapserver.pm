@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.27 2005/06/03 23:26:34 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.28 2005/07/01 20:25:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2005 Slaven Rezic. All rights reserved.
@@ -69,6 +69,16 @@ sub has_coords {
     my $self = shift;
     $self->{MultiCoords} && @{ $self->{MultiCoords} }
 	&& @{ $self->{MultiCoords}[0] };
+}
+
+sub get_first_coord {
+    my $self = shift;
+    $self->{MultiCoords}[0][0];
+}
+
+sub get_last_coord {
+    my $self = shift;
+    $self->{MultiCoords}[-1][-1];
 }
 
 sub has_more_than_one_coord {
@@ -272,7 +282,7 @@ sub create_mapfile {
 	my $dist = 0;
 	if ($self->{MultiCoords}) {
 	    if (!$self->has_more_than_one_coord) {
-		print TMP1 "\tRoute " . $self->{MultiCoords}[0][0] . "\n";
+		print TMP1 "\tRoute " . $self->get_first_coord . "\n";
 	    } else {
 		for my $line (@{ $self->{MultiCoords} }) {
 		    my $old_dist = $dist;
@@ -313,14 +323,15 @@ sub create_mapfile {
 	    $self->{CenterTo} = $args{-start}
 		unless defined $self->{CenterTo};
 	} elsif ($self->has_more_than_one_coord) {
-	    my $start = $self->{MultiCoords}[0][0];
+	    my $start = $self->get_first_coord;
 	    @marker_args = (-start => $start,
-			    -goal  => $self->{MultiCoords}[-1][-1]);
+			    -goal  => $self->get_last_coord,
+			   );
 	    $self->{CenterTo} = $start
 		unless defined $self->{CenterTo};
 	} elsif ($self->has_coords) { # exactly one coordinate?
-	    @marker_args = (-markerpoint => $self->{MultiCoords}[-1][-1]);
-	    $self->{CenterTo} = $self->{MultiCoords}[0][0]
+	    @marker_args = (-markerpoint => $self->get_last_coord);
+	    $self->{CenterTo} = $self->get_first_coord
 		unless defined $self->{CenterTo};
 	}
 	if ($args{-markerpoint}) {
@@ -378,12 +389,12 @@ sub create_mapfile {
 sub get_extents {
     my($self, $width, $height, $do_center, %args) = @_;
     my $center_to = $self->{CenterTo};
-    if (!defined $center_to) {
+    if (!defined $center_to || $center_to eq "") {
 	if (!$self->has_coords) {
 	    # Default is Brandenburger Tor, do not hardcode XXX get from Geography object
 	    $center_to = ["8593,12243"];
 	} else {
-	    $center_to = $self->{MultiCoords}[0][0];
+	    $center_to = $self->get_first_coord;
 	}
     }
     my($x1,$y1) = split /,/, $center_to;

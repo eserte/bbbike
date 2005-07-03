@@ -1,6 +1,7 @@
-# $Id: handicap_s-orig,v 4.26 2005/06/30 00:00:53 eserte Exp eserte $
+# $Id: handicap_s-orig,v 4.27 2005/07/02 22:32:32 eserte Exp eserte $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
+Bendastr.: Bauarbeiten (gesehen am 2005-07-03), danach vielleicht asphaltiert?	q4::inwork 12743,6645 12756,6578 12779,6478
 Oberwallstr.: Fahrbahn wegen Bauarbeiten gesperrt, Gehweg benutzen	q4::inwork 9907,12055 9925,11947
 Am Weidendamm: Fahrtrichtung wegen Bauarbeiten gesperrt, schieben	q4::inwork; 9283,12856 9383,12915
 Unter den Linden (Mitte) Richtung Westen zwischen Schadowstr. und Wilhelmstr. Baustelle, Straße für Autos gesperrt, Radfahrer können weiterhin passieren (bis 31.08.2005)	q1::inwork; 9028,12307 8804,12280
@@ -261,7 +262,7 @@ Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8865,5468 8870,5557
 #: by: Carroll Haak:
 Uferpromenade: Absperrung am Restaurant, Fußgänger	q3 -1657,17810 -1654,17874 -1620,18003
 #: by: Gabi Sieber:
-Bruno-Bauer-Str.: Bordsteine, Gehweg	q2 12879,6543 12890,6493
+Bruno-Bauer-Str.: Bordsteine, Gehweg	q2 12879,6543 12902,6495 12921,6424
 #: by: Will Gibson:
 Hessenallee: enge Straße	q1 657,11650 664,11678 788,11744 906,11870
 #: by: Andreas Mühlhausen: vvv
@@ -273,7 +274,7 @@ Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 (Glühwürmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
 Schloßpark Charlottenburg: Fußgänger	q1 3288,12700 3149,12800 3055,12973 2997,13402 2909,13542
 Spreeweg: eng und unübersichtlich	q2 2909,13542 2849,13638 2648,13638 2261,13526
-Lefèvrestr.: enge Straße	q1 4987,6902 5023,6762 5126,6655 5215,6643 5372,6663
+Lefèvrestr.: enge Straße	q1 4987,6902 4993,6812 5023,6762 5126,6655 5215,6643 5372,6663
 #: by: ^^^
 #: by: Michael Heckner:
 Robert-von-Ostertag-Str.: Pferde und Reiter	q1 -613,1949 -745,2320
@@ -286,3 +287,5 @@ Grafenwalder Weg: schmale Fahrbahn	q1 -3295,16392 -3326,16553
 #: by: Timo (fetteMa):
 #: note: dasselbe kann man auch für die beiden anderen Zeilen in der Nachbarschaft eintragen:
 (Dahrendorfzeile - Kurt-Schumacher-Damm): enger Weg, Fußgänger, Bordsteine	q2 2709,14284 2803,14288
+#: by: Sini Bodemer:
+Retzdorffpromenade: Fußgänger	q2 4893,6812 4993,6812

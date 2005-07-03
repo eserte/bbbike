@@ -177,15 +177,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Johannisthaler Chaussee (Ernst-Keller-Brücke) Brückenarbeiten, gesperrt',
-         'from' => undef,
-         'data' => 'userdel	2 15573,4122 15608,4175
-userdel	2 15669,4266 15608,4175
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1122760800,
@@ -595,6 +587,65 @@ userdel auto	3 7039,12314 7383,12095 7663,11946
          'text' => 'Holzendorffstraße zwischen Rönnestraße und Gervinusstraße Brückenarbeiten, Straße gesperrt. Dauer: bis 15.09.2005, 17.00 Uhr ',
          'from' => 1120088649,
          'data' => 'userdel	2 3344,10878 3395,10704
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1121637600,
+         'text' => 'Einfahrt in die Kastanienallee wegen Bauarbeiten gesperrt, 16.07.2005-17.07.2005',
+         'from' => 1121378400,
+         'data' => 'userdel	q4; 10889,15045 10723,14772
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1127080800,
+         'text' => 'Einfahrt in die Pappelallee wegen Bauarbeiten gesperrt, 18.07.2005 - 18.09.2005',
+         'from' => 1121551200,
+         'data' => 'userdel	q4; 10889,15045 11119,15385
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1123538400,
+         'text' => 'B 109; (Prenzlauer Str.); OD Basdorf, Kno. Dimitroff-/Waldheimstr. Straßen-,Geh- u.Radwegbau Vollsperrung 04.07.2005-08.08.2005 ',
+         'from' => 1120341600,
+         'data' => 'userdel	q4 12193,34683 12551,32765
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1123020000,
+         'text' => 'B 158; (Freienwalder Chaussee); OD Blumberg, zw. Kietz u. Elisenauer Ch. Deckenerneuerung Vollsperrung 28.07.2005-02.08.2005 ',
+         'from' => 1122415200,
+         'data' => 'userdel	q4 24735,22556 24951,22681
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1125266400,
+         'text' => 'L 23; (Storkow-Grünheide); OD Spreenhagen, Brücke über Oder-Spree-Kanal Sanierung Brücke Vollsperrung 11.07.2005-28.08.2005 ',
+         'from' => 1120946400,
+         'data' => 'userdel	2 42368,-5702 42647,-6368
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1123970400,
+         'text' => 'L 74; (Kastanienallee); OL Teupitz, Durchlass Ersatzneubau Vollsperrung 11.07.2005-13.08.2005 ',
+         'from' => 1120946400,
+         'data' => 'userdel	q4 25240,-29746 25412,-29762
+userdel	q4 25412,-29762 25541,-29875
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1120424400,
+         'text' => 'Pichelsdorfer Straße, zwischen Kreuzung Wilhelmstraße und Kreuzung Betckestraße Straße gesperrt bis 03.07.2005 23:00 Uhr (Sommerfest Wilhelmstadt) ',
+         'from' => 1120293437,
+         'data' => 'userdel	2 -3642,12886 -3796,13312
+userdel	2 -3642,12886 -3626,12739
+userdel	2 -3614,12529 -3626,12739
 ',
          'type' => 'gesperrt'
        }

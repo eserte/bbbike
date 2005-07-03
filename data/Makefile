@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.51 2005/07/01 00:59:30 eserte Exp $
+# $Id: Makefile,v 2.52 2005/07/02 22:29:17 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -576,6 +576,13 @@ temp_blockings/bbbike-temp-blockings-optimized.pl:	temp_blockings/bbbike-temp-bl
 	touch .check_bbbike-temp-blockings-optimized
 	-@$(READONLY) $@
 
+# XXX Optimierungsmöglichkeit: aus "fragezeichen" alle Strecken herausnehmen, die bereits auf Strecken in strassen+landstrassen matchen
+# XXX vielleicht umbenennen: fragezeichen-approx-matches.bbd oder so
+${PERSISTENTTMPDIR}/fragezeichen-matches.bbd:	fragezeichen ${DATADIR}/strassen ${DATADIR}/landstrassen ${DATADIR}/landstrassen2
+	$(MISCRSRCDIR)/match_bbd_data -incatrx . -v fragezeichen ${DATADIR}/strassen ${DATADIR}/landstrassen ${DATADIR}/landstrassen2 > /tmp/fragezeichen-matches.bbd
+	mv /tmp/fragezeichen-matches.bbd ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd
+
+
 .OPTIONAL: .check_bbbike-temp-blockings-optimized
 
 # It is legal for fragezeichen points to not be on strassen, so this is
@@ -863,8 +870,10 @@ sort-coords.data:	sort-Berlin.coords.data sort-Potsdam.coords.data
 
 .for city in Berlin Potsdam
 sort-$(city).coords.data:
+	-@$(WRITEABLE) $(city).coords.data~
 	mv $(city).coords.data $(city).coords.data~
 	env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} < $(city).coords.data~ > $(city).coords.data
+	@$(READABLE) $(city).coords.data
 	touch .check_$(city)_coords_data
 .endfor
 

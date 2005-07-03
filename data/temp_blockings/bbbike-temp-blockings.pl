@@ -1308,7 +1308,7 @@ userdel	2 4151,10026 3906,10035
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1120247633, # 
        text  => 'Johannisthaler Chaussee (Ernst-Keller-Brücke) Brückenarbeiten, gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -1635,7 +1635,7 @@ EOF
        text  => 'Pistoriusstr. (Weissensee) Richtung Berliner Allee zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt (bis 30.06.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 13386,16408 13797,16237
+userdel	1 13386,16408 13652,16297 13797,16237
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -2233,6 +2233,49 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 10889,15045 11119,15385
+EOF
+     },
+     { from  => 1120341600, # 2005-07-03 00:00
+       until => 1123538400, # 2005-08-09 00:00
+       text  => 'B 109; (Prenzlauer Str.); OD Basdorf, Kno. Dimitroff-/Waldheimstr. Straßen-,Geh- u.Radwegbau Vollsperrung 04.07.2005-08.08.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 12193,34683 12551,32765
+EOF
+     },
+     { from  => 1122415200, # 2005-07-27 00:00
+       until => 1123020000, # 2005-08-03 00:00
+       text  => 'B 158; (Freienwalder Chaussee); OD Blumberg, zw. Kietz u. Elisenauer Ch. Deckenerneuerung Vollsperrung 28.07.2005-02.08.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 24735,22556 24951,22681
+EOF
+     },
+     { from  => 1120946400, # 2005-07-10 00:00
+       until => 1125266400, # 2005-08-29 00:00
+       text  => 'L 23; (Storkow-Grünheide); OD Spreenhagen, Brücke über Oder-Spree-Kanal Sanierung Brücke Vollsperrung 11.07.2005-28.08.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 42368,-5702 42647,-6368
+EOF
+     },
+     { from  => 1120946400, # 2005-07-10 00:00
+       until => 1123970400, # 2005-08-14 00:00
+       text  => 'L 74; (Kastanienallee); OL Teupitz, Durchlass Ersatzneubau Vollsperrung 11.07.2005-13.08.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 25240,-29746 25412,-29762
+userdel	q4 25412,-29762 25541,-29875
+EOF
+     },
+     { from  => 1120293437, # 2005-07-02 10:37
+       until => 1120424400, # 2005-07-03 23:00
+       text  => 'Pichelsdorfer Straße, zwischen Kreuzung Wilhelmstraße und Kreuzung Betckestraße Straße gesperrt bis 03.07.2005 23:00 Uhr (Sommerfest Wilhelmstadt) ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -3642,12886 -3796,13312
+userdel	2 -3642,12886 -3626,12739
+userdel	2 -3614,12529 -3626,12739
 EOF
      },
     );

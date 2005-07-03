@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.31 2005/06/29 23:59:57 eserte Exp $
+# $Id: gesperrt-orig,v 4.31 2005/06/29 23:59:57 eserte Exp eserte $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraßen etc.)
@@ -349,7 +349,7 @@ Waldweg	1s 25496,2429 24972,2583
 Schulenburgring	1s 9019,8434 9013,8594
 Neue Schönhauser Str.	1s 10528,13243 10441,13195 10305,13211
 Alte Schönhauser Str.	1s 10718,13625 10746,13673
-Kirchhofstr.	1s 13188,7590 13032,7334
+Kirchhofstr.	1s 13188,7590 13117,7471 13032,7334
 Niemannstr.	1s 14252,11368 14211,11229
 Björnsonstr	1s 10229,16653 10215,16527
 Eichhornstr.	1s 8226,11458 8258,11254
@@ -422,8 +422,9 @@ Stromstr.: unpassierbarer Mittelstreifen	3nocross 6201,13058 6185,12968 6177,129
 #: add_fragezeichen: wahrscheinlich!
 Märkische Allee: Linksabbiegen wahrscheinlich verboten	3nocross 20512,17101 20691,17463 20717,17516 20834,17752 20878,17842 21218,18536
 Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17412,17800 17703,17990 17843,18078
-Stralauer Str.: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13483,10769 13605,10719
-Stralauer Str.: unbequemes Abbiegen	3nocross 13605,10719 13678,10685 13779,10642
+Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13483,10769 13605,10719
+Stralauer Allee: unbequemes Abbiegen	3nocross 13605,10719 13678,10685 13779,10642
+Stralauer Allee: unbequem passierbare Straße	3nocross 14210,10437 14396,10345 14564,10262
 Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 12630,8722 12742,8635 12772,8612
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10621,12207 10567,12135
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5229,10716 5351,10760 5484,10810
