@@ -146,7 +146,7 @@ Gelsenkircher Str.: Asphalt, Q0, wenig Autoverkehr	? -5562,15187 -5109,15137
 Vietzer Zeile: guter Asphalt, Q0	? 2818,19606 2937,19753
 #: XXX Eintrag von Matthias Grähn OK, aber keine Verknüpfung zum Netz:
 Kilianistr.: mäßiges Kopfsteinpflaster, Q2	? 18128,6559 18253,6515 18475,6478
-#: XXX Eintrag von anonymous OK (2x), aber keine Verknüpfung zum Netz:
+#: XXX Eintrag von anonymous OK (2x) und einmal von grieschen@arcor.de, aber keine Verknüpfung zum Netz:
 Crusemarkstr.: Beton, Q1, Einbahnstr. Richtung Süden	? 10712,18975 10825,18634
 #: XXX Eintrag von anonymous und Holger Kohn OK, aber keine Verknüpfung zum Netz:
 Greulichstr.: mäßiges Kopfsteinpflaster, Q2	? 8156,1100 8528,1846
@@ -154,6 +154,8 @@ Greulichstr.: mäßiges Kopfsteinpflaster, Q2	? 8156,1100 8528,1846
 Straße 59: fester Sandweg, sehr uneben, Q2	? 12484,20996 12537,20856
 #: XXX Eintrag von Malte OK, aber keine Verknüpfung zum Netz:
 Haltrichweg: Asphalt, Q0, Zugang zur Zingerleweg über sandigen Waldweg (Q2)	? -8475,5675 -8431,5750 -8356,5903
+#: XXX Eintrag von Marene Effenberger OK, aber keine Verknüpfung zum Netz:
+Bromelienweg: Asphalt, Q0, Spielstraße	? 13226,18062 13487,17998
 Borussiastr.: aus dem Bus heraus sah es so aus, als ob hier *kein* Kopfsteinpflaster ist, vielleicht David nochmal fragen?	? 9241,6791 9706,6802
 Stadtplazu am Zwirngraben: ist er hier?	? 10286,13051 10236,13016 10316,13028
 Bürgerpark Pappelfriedhof: ist er hier?	? 11121,15327 11182,15284 11151,15233 11101,15263 11115,15284 11098,15298
@@ -211,7 +213,6 @@ Dorfstr./Seenpromenade Groß Glienicke: Durchfahrt möglich? Kopfsteinpflaster?	? 
 Verbindung zwischen Siegfriedstr. und Frankfurter Allee: Durchfahrt möglich? Oder nur für Fußgänger? Treppe?	? 16746,11921 16738,11878
 Templerzeile - Götzstr.: existiert eine Verbindung? Qualität?	? 9665,6029 9708,6493
 Wuhlegartenweg: Durchfahrt unter Blumberger Damm möglich? Qualität?	? 20627,12162 21164,12091 21278,12131
-Dohlengrund, zum U-Bahnhof Biesdorf-Süd: Qualität?	? 20215,10554 20272,10448 21288,10431
 Lenbachstr. (Kaulsdorf): Qualität OK? Zugang zur Wuhle möglich?	? 21668,9885 21704,10036 21671,10289 21954,10700 22325,10707
 Achardstr. und Lassaner Str.: Qualität OK?	? 22325,10707 22826,10614 22857,11009
 Schwanebeck: Kleist/Goethestr.: gute Umfahrunsgmöglichkeit für Zepernicker Str./Karower Chausee?	?? 17459,24340 17796,24584 17921,24943 17976,25276
@@ -452,12 +453,10 @@ Werder - zum Plessower See: genaue Wegführung? Qualität?	? -22042,-2060 -22734,-
 Alt-Brieselang - Brieselang: Qualität? genaue Wegführung?	? -16914,22393 -18103,22064 -17978,21602 -18415,21465 -18378,20766 -18817,19637
 Marquardt, Hauptstr.: Laut mobil-potsdam.de: Asphaltiert	? -18683,4751 -18825,4750
 B273 - Schwarzer Weg: Laut "mobil-potsdam.de" Waldweg	? -18693,4568 -18210,4505
-Fortsetzung der Stahnsdorfer Str.: laut "mobil-potsdam.de" Waldweg. Geht es nach Osten hin weiter?	? -7821,-1890 -6882,-1922 -6084,-1934
 Goethestr./Fontanestr.: laut "mobil-potsdam.de" asphaltiert	? -9868,-1425 -9775,-1431 -9506,-1431 -9215,-1431 -9219,-1590 -9224,-1727
 Geltow - Pirschheide am Templiner See: Laut "mobil-potsdam.de" überwiegend Waldweg mit kurzen asphaltierten Stellen	? -16912,-5690 -16558,-5727 -16323,-5706 -16072,-4894 -16010,-4509 -15886,-4339
 Am Templiner See zwischen Damm und R-Bhf. Charlottenhof: laut "mobil-potsdam.de" unterschiedliche Qualität ("Promenade", betoniert, Waldweg)	? -15886,-4339 -15750,-4196 -15765,-3990 -15431,-3618 -15340,-3406 -15203,-2931 -14912,-2884 -14734,-2471 -14859,-2384
 Uferweg - Mercure-Hotel: Zugang unter der Langen Brücke möglich?	? -12600,-1706 -12656,-1820 -12719,-1661
-Alte Potsdamer Landstraße: Durchfahrt möglich (Friedhof?)? Qualität (Waldweg?)?	? -4075,-1837 -6084,-1934
 S-Bahnhof Griebnitzsee - Uferweg am Griebnitzsee: laut "mobil-potsdam.de" eine Treppe	? -8063,-1651 -8250,-1503
 Behlertstr.: Einbahnstraße in östlicher Richtung (für Autofahrer ja, auch für Radfahrer?)?	? -12868,-493 -12607,-434 -12362,-370
 Strausberg - Garzau: Qualität (laut "Berliner Umland" teilweise witterungsabhängige Strecke, auf Garzauer Seite anscheinend nur Feldweg)?	? 42578,15750 43850,15737 45618,15431 46150,15006 46421,14990

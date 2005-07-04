@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.30 2005/07/02 14:47:05 eserte Exp $
+# $Id: bbbike.cgi,v 7.30 2005/07/02 14:47:05 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -5525,10 +5525,10 @@ EOF
     print <<EOF;
 <a name="resourcen"><h3>Weitere Möglichkeiten und Tipps</h3></a>
 <a name="perltk"><h4>Perl/Tk-Version</h4></a>
-Es gibt eine wesentlich komplexere Version von BBBike mit interaktiver Karte, mehr Kontrollmöglichkeiten über die Routensuche, GPS-Anbindung und den kompletten Daten. Diese Version läuft als normales Programm (mit Perl/Tk-Interface) unter Unix, Linux und Windows.
+Es gibt eine wesentlich komplexere Version von BBBike mit interaktiver Karte, mehr Kontrollmöglichkeiten über die Routensuche, GPS-Anbindung und den kompletten Daten. Diese Version läuft als normales Programm (mit Perl/Tk-Interface) unter Unix, Linux, Mac OS X und Windows.
 <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">Hier</a>
-bekommt man dazu mehr Informationen. Als Beispiel kann man sich einen
-<a href="@{[ $BBBike::BBBIKE_SF_WWW ]}/images/bbbike-screenshot.png">Screenshot</a> der perl/Tk-Version angucken.
+bekommt man dazu mehr Informationen. Als Beispiel kann man sich
+<a href="@{[ $BBBike::BBBIKE_SF_WWW ]}/screenshots.de.html">Screenshots</a> der Perl/Tk-Version angucken.
 <a name="pda"><h4>PDA-Version für iPAQ/Linux</h4></a>
 Für iPAQ-Handhelds mit Familiar Linux gibt es eine kleine Version von BBBike: <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">tkbabybike</a>.
 <a name="wap"><h4>WAP</h4></a>

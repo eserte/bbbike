@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.52 2005/07/02 22:29:17 eserte Exp $
+# $Id: Makefile,v 2.52 2005/07/02 22:29:17 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -102,7 +102,9 @@ persistent-tmp:	${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
 		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
 		${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt \
 		${PERSISTENTTMPDIR}/Berlin.coords.bbd \
-		${PERSISTENTTMPDIR}/Potsdam.coords.bbd
+		${PERSISTENTTMPDIR}/Potsdam.coords.bbd \
+		${PERSISTENTTMPDIR}/non-faked-plaetze \
+		${PERSISTENTTMPDIR}/non-faked-strassen
 
 # even slower (about four minutes)
 really-slow-checks:	check-crossings check-nearest
@@ -156,6 +158,16 @@ $f:	${_f_raw_${f}} inaccessible_landstrassen
 plaetze: plaetze-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) plaetze-orig > plaetze
+	-@$(READONLY) $@
+
+${PERSISTENTTMPDIR}/non-faked-plaetze: plaetze-orig
+	-@$(WRITEABLE) $@
+	$(CONVERT2HAFAS) plaetze-orig | ${GREPSTRASSEN} -v -section "faked-plaetze" > $@
+	-@$(READONLY) $@
+
+${PERSISTENTTMPDIR}/non-faked-strassen: .strassen.tmp ${PERSISTENTTMPDIR}/non-faked-plaetze
+	-@$(WRITEABLE) $@
+	cat $> > $@
 	-@$(READONLY) $@
 
 # sortbycat does not change the sort order of islands

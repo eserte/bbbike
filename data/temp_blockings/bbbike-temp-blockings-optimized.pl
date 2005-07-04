@@ -287,14 +287,7 @@ userdel	q4 -18080,-12637 -17374,-13449
        },
        undef,
        undef,
-       {
-         'until' => 1120428000,
-         'text' => 'L 23; (Joachimsthal-Templin); OD Joachimsthal Neubau Durchlass Vollsperrung 29.03.2005-03.07.2005 ',
-         'from' => 1111960800,
-         'data' => 'userdel	q4 32966,64019 33254,63446
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -550,18 +543,7 @@ userdel	2 -4504,-14978 -4077,-14595
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1120413600,
-         'text' => 'Straße des 17. Juni in beiden Richtungen zwischen Großer Stern und Entlastungsstr. Veranstaltung, Straße vollständig gesperrt (bis 03.07.2005 ca. 20 Uhr)',
-         'from' => 1120085920,
-         'data' => 'userdel	2 6828,12031 7383,12095
-userdel	2 7383,12095 7816,12150
-userdel	2 7816,12150 8063,12182
-userdel auto	3 7663,11946 7383,12095 7039,12314
-userdel auto	3 7039,12314 7383,12095 7663,11946
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1136069999,
          'text' => 'Rosa-Luxemburg-Str. zwischen Torstr. und Memhardstr. Baustelle, Einbahnstraße in Richtung Alexanderplatz, (bis Ende 2005) ',
@@ -638,16 +620,6 @@ userdel auto	3 7039,12314 7383,12095 7663,11946
 userdel	q4 25412,-29762 25541,-29875
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1120424400,
-         'text' => 'Pichelsdorfer Straße, zwischen Kreuzung Wilhelmstraße und Kreuzung Betckestraße Straße gesperrt bis 03.07.2005 23:00 Uhr (Sommerfest Wilhelmstadt) ',
-         'from' => 1120293437,
-         'data' => 'userdel	2 -3642,12886 -3796,13312
-userdel	2 -3642,12886 -3626,12739
-userdel	2 -3614,12529 -3626,12739
-',
-         'type' => 'gesperrt'
        }
      
 );

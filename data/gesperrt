@@ -449,10 +449,12 @@ Greifswalder Str. -> Chodowieckistr.: Mittelstreifen mit Straßenbahn	3 12239,143
 Chodowieckistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 11992,14599 12285,14458 12338,14532
 Jablonskistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3 11955,14531 11662,14695 11642,14625
 Prenzlauer Allee -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3 11681,14759 11662,14695 11955,14531
-Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3 11526,14693 11610,14886 11545,14897
-Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3 11712,14868 11610,14886 11526,14693
 Hiddenseer Str. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3 11655,15253 11822,15193 11852,15281
 Prenzlauer Allee -> Hiddenseer Str.: Mittelstreifen mit Straßenbahn	3 11776,15060 11822,15193 11655,15253
+Chodowieckistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3 11992,14599 11681,14759 11662,14695
+Prenzlauer Allee -> Chodowieckistr.: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3 11712,14868 11681,14759 11992,14599
+Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3 11526,14693 11610,14886 11545,14897
+Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3 11712,14868 11610,14886 11526,14693
 Angermünder Str. -> Torstr.: Mittelstreifen mit Straßenbahn	3 10703,13832 10640,13700 10746,13673
 Torstr. -> Angermünder Str.: Mittelstreifen mit Straßenbahn	3 10569,13719 10640,13700 10703,13832
 Christinenstr. -> Torstr.: Mittelstreifen mit Straßenbahn	3 10639,13865 10569,13719 10640,13700

@@ -219,7 +219,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'handicap',
      },
      { from  => undef, # 
-       until => Time::Local::timelocal(reverse(2005-1900,10-1,31,23,59,59)), # XXX schon aufgehoben???
+       until => Time::Local::timelocal(reverse(2005-1900,7-1,4,23,59,59)), # schon aufgehoben!
        text  => 'Schlichtallee (Lichtenberg) Richtung Lückstr., Baustelle, Einbahnstraße in Richtung Haupstraße (bis Ende 10/2005)
 ',
        type  => 'gesperrt',
@@ -1564,9 +1564,9 @@ EOF
 userdel	1 9028,12307 8804,12280
 EOF
      },
-     { from  => 1120179643, # 2005-07-01 03:00
-       until => 1122933599, # 2005-08-01 23:59
-       text  => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt (bis Anfang 08.2005)',
+     { from  => 1120518392, # 2005-07-05 01:06
+       until => 1125525600, # 2005-09-01 00:00
+       text  => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt bis 31.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 25585,6050 25579,5980

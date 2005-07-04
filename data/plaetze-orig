@@ -1,4 +1,4 @@
-# $Id: plaetze-orig,v 4.14 2005/06/30 00:47:09 eserte Exp eserte $
+# $Id: plaetze-orig,v 4.15 2005/07/04 21:45:39 eserte Exp $
 Hackescher Markt	Pl 10264,13097
 Rosenthaler Platz	Pl 10177,13766
 #: XXX Leider funktioniert der "duplicates"-Test nicht mehr, da es auch einen Eintrag in strassen-orig gibt...
@@ -183,6 +183,7 @@ Heiligengeistkirchplatz	Pl 10360,12793
 Helmholtzplatz	Pl 11368,15301
 Wilhelm-Hasenclever-Platz	Pl 7231,16418
 ######################################################################
+#: section faked_plaetze vvv
 # Keine offiziellen Straßennamen, sondern
 # bekannte Bezeichnungen oder Sehenswürdigkeiten
 Kottbusser Tor	Pl 11370,10398
@@ -208,3 +209,4 @@ Mettmannplatz	Pl 7467,14633
 #Gendarmenmarkt	Pl 9516,12010 9651,12020 9663,11927 9526,11911
 Funkturm	Pl 2016,11034
 Olympiastadion	Pl -460,11951
+#: section ^^^

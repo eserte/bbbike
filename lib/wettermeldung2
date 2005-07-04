@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wettermeldung2,v 1.63 2003/08/20 22:29:33 eserte Exp $
+# $Id: wettermeldung2,v 1.64 2005/07/03 20:52:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1997, 1998, 1999, 2000, 2002 Slaven Rezic. All rights reserved.
@@ -78,7 +78,7 @@ $FIELD_WIND_AVG      = 7;
 $FIELD_PRECIPITATION = 8;
 $FIELD_WEATHER       = 9;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.63 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.64 $ =~ /(\d+)\.(\d+)/);
 
 $mailto = 'eserte@cs.tu-berlin.de';
 $user_agent = "wettermeldung2/$VERSION";
@@ -952,6 +952,7 @@ sub _chr {
 
 sub site_reachable {
     local($site) = @_;
+    return 1 if ($site eq 'www.met.fu-berlin.de');
     if (!gethostbyname($site)) {
 	# probably connected over http proxy...
 	return 1;

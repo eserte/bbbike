@@ -1462,11 +1462,17 @@ Rewrite the misc/Makefile rule to use standard Strassen methods.
 
 =over
 
+=item * (M2)
+
+Straßen im Oderbruch! Anhand meiner Fahrradkarten und
+Benutzer-GPS-Tracks Fragezeichenstrecken eintragen.
+
 =item * (M4)
 
 Nicht benötigte Einträge aus bbbike-temp-blockings.pl nach
 old-bbbike-temp-blockings.pl verschieben. old-bbbike-temp-blockings.pl
-kommt ins MANIFEST.addtocvs, aber nicht ins MANIFEST.
+kommt ins MANIFEST.addtocvs, aber nicht ins MANIFEST. -> evtl. reicht
+die jetzige Methode mit dem optimierten bbbike-temp-blockings?
 
 =item * (E1)
 
@@ -1481,12 +1487,6 @@ paar Meter weiter dann auch die neue S-Bahntrasse unterquert. Bilder
 hier: http://www.bsisb.de/default_f.htm?/anhalter/anhalter07fc.htm
 oder direkt die schrittweise Wandlung vom Kolonnenweg zur Unterführung:
 http://www.bsisb.de/anhalter/g_s_lio_tw/l25.htm
-
-=item * (H5)
-
-data_corrected => data-Transition
-
-Problems: Nord-Rügen. Stützpunkte in Hiddensee und Sassnitz einfügen.
 
 =item * (H4)
 
@@ -1510,10 +1510,15 @@ Sachen wie Brücken, Tunnel, "Alexanderplatz [zur Grunerstr.]", Parkwege etc.
 ansonsten werden sie in bbbike.cgi nicht erkannt, obwohl sie
 existieren!]
 
+Vielleicht ein ausreichender Workaround vorerst: Liste aller Straßen
+enthält nicht die Straßen, die keine Koordinate in Berlin.coords.data
+haben.
+
 =item * (M2)
 
 LandstraE<szlig>en: Gibt es Untersuchungen zur Verkehrsdichte?
-Recherchieren! => Jan hat etwas gefunden (Aldi-Karten...)
+Recherchieren! => Jan hat etwas gefunden (Aldi-Karten...) -> Die habe
+ich jetzt auch...
 
 =back
 
@@ -1525,7 +1530,7 @@ Recherchieren! => Jan hat etwas gefunden (Aldi-Karten...)
 
 Optimierung: bei LandstraE<szlig>en reine Kurvenpunkte bei der
 Netzberechnung ignorieren. Das ist mit B<make_wide_net> bereits
-implementiert, wird aber nicht verwendet. Benchmarks?
+implementiert, wird aber nicht verwendet. Benchmarks? Probleme?
 
 =item * (H1)
 
@@ -1612,7 +1617,8 @@ Bezirke, also "Kreuzberg, Bahnhofstr."?
 =item * (E3)
 
 /robots.txt einrichten, um das Indexieren von temporären Dateien bei
-bbbike und mapserver zu verhindern.
+bbbike und mapserver zu verhindern. -> Hmmm, es existiert schon ein
+robots.txt. Mit Dirk konferieren?
 
 =item * (H1)
 
@@ -1635,11 +1641,6 @@ werden, dass die Ackerstr. (Mitte, Wedding) die selbe Strasse ist. In
 multi_bez_str steht es drinnen, muesste wahrscheinlich von PLZ.pm
 verwendet werden (combined streets?). (Aber nur, falls multi_bez_str
 vorhanden ist)
-
-=item * (E2)
-
-Info page: link to screenshot html page instead of single screenshot
-image. (?)
 
 =item * (M2)
 
@@ -1677,7 +1678,7 @@ U/S-Bahnstationen ... Kommentare sind schon drinnen.
 =item * (E3)
 
 cgi-Version: Linux+Netscape: Probleme mit Cookies (Einstellungen)
-=E<gt> noch immer?
+=E<gt> noch immer? -> ein Problem habe ich gelöst, war es das?
 
 =item * (M2)
 
@@ -1686,6 +1687,13 @@ Automatisches HTML-Validieren in der Test-Suite. Man koennte
 http://validator.w3.org/check?output=xml;uri=http%3A%2F%2Fwww.iconmobile.com%2F&doctype=%28detect+automatically%29&charset=iso-8859-1+%28Western+Europe%29
 
 verwenden, aber die XML-Ausgabe ist als "experimentell" markiert.
+
+Links auf bbbike:
+
+http://validator.w3.org/check?uri=http%3A%2F%2Fwww.radzeit.de%2Fcgi-bin%2Fbbbike.cgi
+
+http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.radzeit.de%2Fcgi-bin%2Fbbbike.cgi
+
 
 =back
 
