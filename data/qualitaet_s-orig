@@ -2181,8 +2181,17 @@ Pilgramer Str.: schlechtes Kopfsteinpflaster	Q3 24221,8731 24165,8375 24043,7718
 Delbrückstr. (Neukölln): Beton	Q0 12468,6592 12743,6645
 #: by: Claas Ketelhut:
 Lübarser Str.: Asphalt	Q0 5326,21407 5589,21799
-#: by: Katrin Kroschk:
+#: by: Katrin Kroschk: vvv
 (Wuhlewanderweg - Teterower Ring): Asphalt	Q0 22168,12931 22315,12984
+(Erich-Kästner-Str. - Peter-Huchel-Str.): Asphalt	Q0 23056,13727 23007,13509
+#: note: genau genommen nur der Teil parallel zur U-Bahn gekennzeichnet
+Peter-Huchel-Str.: Asphalt	Q0 22960,13298 23007,13509 23275,13459 23460,13454
+(Carola-Neher-Str - Kastanienallee): Asphalt	Q0 23393,14356 23782,14598
+#: note: "auch für Rennräder befahrbar"
+(Heinrich-Grüber-Str. - Grottkauer Str.): fester Ascheweg	Q0 23330,12734 23397,13102 23460,13454 23543,13890 23553,13931 23635,13916 23751,13858
+#: XXX: "kurzes Stück am Ende holpriger Siedlungsweg"
+(Heinrich-Grüber-Str. - Hönower Str.): überwiegend fester Ascheweg	Q0 24622,13919 24762,13890 24979,13753 25120,13803 25449,14032
+#: by: ^^^
 #: by: Lavinia Meier...: vvv
 Avenue Charles de Gaulle: Asphalt	Q0 4139,21782 4314,21614 4373,21561 4559,21681 4673,21755 4808,21610
 Rue Montesquieu: Asphalt	Q0 4683,21905 4314,21614
@@ -2246,3 +2255,5 @@ Goldammerstr.: Asphalt	Q0 14714,2732 14746,2781 14832,2885 14923,2992 14981,3062
 Brodowiner Ring: Asphalt	Q0 22215,16343 22192,16165 22290,16146 22400,16226 22406,16309
 #: by: Kasi:
 Bauhüttenweg: Asphalt	Q0 12703,2454 13238,2521 13339,2611
+#: by: o. schumacher:
+Elberfelder Str.: schlechtes Kopfsteinpflaster	Q3 5762,13155 5771,12972 5752,12662

@@ -1565,7 +1565,7 @@ userdel	1 9028,12307 8804,12280
 EOF
      },
      { from  => 1120518392, # 2005-07-05 01:06
-       until => 1125525600, # 2005-09-01 00:00
+       until => 1120594288, # XXX 1125525600 2005-09-01 00:00
        text  => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt bis 31.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -2276,6 +2276,22 @@ EOF
 userdel	2 -3642,12886 -3796,13312
 userdel	2 -3642,12886 -3626,12739
 userdel	2 -3614,12529 -3626,12739
+EOF
+     },
+     { from  => 1121032800, # 2005-07-11 00:00
+       until => 1123106400, # 2005-08-04 00:00
+       text  => 'B 96; OD Rangsdorf, Kno. Kienitzer Str. Straßenverbreiterung Vollsperrung 12.07.2005-03.08.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4 14123,-11199 14327,-11767
+EOF
+     },
+     { from  => 1120341600, # 2005-07-03 00:00
+       until => 1128117600, # 2005-10-01 00:00
+       text  => 'K 6301; (Bötzow-Wansdorf-Pausin); OD Wansdorf Kanal- und Straßenbau Vollsperrung 04.07.2005-30.09.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -11509,25591 -11337,25571
 EOF
      },
     );
