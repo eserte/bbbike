@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.176 2005/07/02 22:33:34 eserte Exp $
+# $Id: bbbike,v 3.177 2005/07/05 23:39:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -87,7 +87,7 @@ use autouse 'BBBikeLazy'
 	  bbbikelazy_add_data bbbikelazy_remove_data plotstr_on_demand);
 use autouse 'BBBikePrint'
     => qw(create_postscript print_postscript toggle_legend
-	  print_text_postscript print_text_pdflatex view_pdf);
+	  print_text_postscript print_text_pdflatex print_route_pdf view_pdf);
 
 ## This is only for the Autoloader-Hack (see "make autoload")
 #use AutoLoader 'AUTOLOAD';
@@ -186,7 +186,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.176 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.177 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -14452,15 +14452,27 @@ sub show_route_strname {
 	    close TMP;
 	    Win32Util::start_txt_print($temp);
 	    $tmpfiles{$temp}++;
-        } else { # try pdflatex, then postscript
-	    if (!print_text_pdflatex(route_info_to_latex())) {
-		print_text_postscript
-		    (route_info_to_text(),
-		     -columns => 1,
-		     -header => Mfmt("Route von %s bis %s",
-				     $show_route_start, $show_route_ziel),
-		     -font => $font,
-		    );
+        } else { # try pdflatex, then postscript, on Windows first Route::PDF
+	    my @try_order = qw(pdflatex postscript routepdf);
+	    if ($os eq 'win') {
+		@try_order = qw(routepdf pdflatex postscript);
+	    }
+	TRY: {
+		for my $try (@try_order) {
+		    if ($try eq 'pdflatex') {
+			last TRY if print_text_pdflatex(route_info_to_latex());
+		    } elsif ($try eq 'postscript') {
+			print_text_postscript
+			    (route_info_to_text(),
+			     -columns => 1,
+			     -header => Mfmt("Route von %s bis %s",
+					     $show_route_start, $show_route_ziel),
+			     -font => $font,
+			    );
+		    } elsif ($try eq 'routepdf') {
+			print_route_pdf();
+		    }
+		}
 	    }
 	}
     };

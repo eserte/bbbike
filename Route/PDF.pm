@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 1.8 2004/12/28 22:48:58 eserte Exp $
+# $Id: PDF.pm,v 1.9 2005/07/05 23:38:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Route::PDF;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my $class = shift;
@@ -146,6 +146,11 @@ sub add_page_to_bbbikedraw {
     my $bbbikedraw = delete $args{-bbbikedraw} || die "-bbbikedraw missing";
     my $rpdf = __PACKAGE__->new(-pdf => $bbbikedraw->{PDF});
     $rpdf->output(%args);
+}
+
+sub flush {
+    my $self = shift;
+    $self->{PDF}->close;
 }
 
 1;

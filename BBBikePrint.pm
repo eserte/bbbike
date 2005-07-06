@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.30 2005/03/23 00:36:16 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.31 2005/07/05 23:38:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -297,6 +297,26 @@ sub BBBikePrint::print_text_pdflatex {
 	BBBikePrint::view_pdf($pdffile);
     }
     unlink $tmpfile;
+    $main::tmpfiles{$pdffile}++;
+    $ret;
+}
+
+sub BBBikePrint::print_route_pdf {
+    require Route::PDF;
+    my $pdffile = "$tmpdir/$progname" . "_$$.pdf";
+    unlink $pdffile;
+
+    my $pdf = Route::PDF->new(-filename => $pdffile);
+    $pdf->output(-net => $net,
+		 -route => Route->new_from_realcoords(\@realcoords),
+		);
+    $pdf->flush;
+
+    my $ret = 0;
+    if (-s $pdffile && -r $pdffile) {
+	$ret = 1;
+	BBBikePrint::view_pdf($pdffile);
+    }
     $main::tmpfiles{$pdffile}++;
     $ret;
 }
