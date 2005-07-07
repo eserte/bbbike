@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.177 2005/07/05 23:39:54 eserte Exp $
+# $Id: bbbike,v 3.178 2005/07/06 23:17:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -186,7 +186,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.177 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.178 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -11202,6 +11202,9 @@ sub show_info {
 	}
 	if (@polarcoord2) {
 	    $info_text->insert("end", M("Polar (DMM)") . ":\t$polarcoord2[0]\n\t$polarcoord2[1]\n");
+	}
+	if (defined $px && defined $py) {
+	    $info_text->insert("end", M("Polar (DDD)") . ":\t$py\n\t$px\n");
 	}
 	if (defined $gkk_zone_potsdam) {
 	    $info_text->insert("end", "GKK (Potsdam):\t[$gkk_zone_potsdam] $gkk_easting_potsdam/$gkk_northing_potsdam\n");

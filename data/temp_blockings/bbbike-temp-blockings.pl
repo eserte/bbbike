@@ -1651,7 +1651,7 @@ EOF
        text  => 'L 23; (Joachimsthal-Templin); OD Joachimsthal Neubau Durchlass Vollsperrung 29.03.2005-03.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 32966,64019 33254,63446
+userdel	q4 32966,64019 33099,63917 33254,63446
 EOF
      },
      { from  => 1111532400, # 2005-03-23 00:00
