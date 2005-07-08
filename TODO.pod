@@ -1382,6 +1382,11 @@ E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.
 
 =over
 
+=item * (M4)
+
+Automatic conversion from GPS tracks to bbd data: maybe using
+Douglas-Peucker polyline simplification algorithm?
+
 =item * (H4)
 
 Ich brauche eine spezielle handicap-Kategorie für Abbiegevorgänge
