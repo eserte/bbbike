@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.35 2005/07/02 22:30:05 eserte Exp eserte $
+# $Id: qualitaet_s-orig,v 4.37 2005/07/08 00:46:54 eserte Exp $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -138,7 +138,7 @@ Böckhstr.: teilweise Kopfsteinpflaster, teilweise Asphalt	Q1 11200,9889 11411,98
 Kohlfurter Str.: Kopfsteinpflaster (mit Rennrad trotzdem 25 km/h möglich)	Q2 11512,10105 11269,10204 11089,10276
 Archibaldweg: Kopfsteinpflaster	Q2 16160,11154 16028,11049
 Münsterlandstr./Delbrückstr.: Kopfsteinpflaster	Q2 16160,11154 16262,11116 16573,11022 16697,10984 16790,10955 16864,10932
-Delbrückstr.: teilweise schlechtes Kopfsteinpflaster	Q3 16864,10932 17166,10840
+Delbrückstr.: teilweise schlechtes Kopfsteinpflaster	Q3 16864,10932 16964,10902 17166,10840
 Sophienstr.: Kopfsteinpflaster	Q2 16967,11162 16777,11216 16653,11251 16345,11328
 Müggelstr.: mäßiger Asphalt	Q1 14764,11591 14837,11706
 Weserstr. (Friedrichshain): Kopfsteinpflaster	Q2 15008,11436 14849,11539 14764,11591 14705,11629 14645,11670 14622,11685 14550,11732 14471,11782 14416,11815
@@ -688,7 +688,7 @@ Wikingerufer: Kopfsteinpflaster	Q2 5369,12529 5391,12626 5376,12781 5372,12818 5
 Beerenstr.: Kopfsteinpflaster	Q2 82,3166 -765,3253 -1117,3317
 Jupiterstr.: Kopfsteinpflaster	Q2 14850,6546 15043,6799
 #: unverified_by ADFC-Karte
-Malchower Str.: mäßig geeignet	Q2 12841,18157 13163,18149 13374,18134 13631,18041 13732,18026 13901,18124
+Malchower Str.: mäßig geeignet	Q2 12841,18157 13163,18149 13374,18134 13537,18075 13631,18041 13732,18026 13901,18124
 #: unverified_by ADFC-Karte
 Grumbkowstr.: mäßig geeignet	Q2 11297,20686 11437,20341 11584,20058 11756,19694
 #: unverified_by ADFC-Karte
@@ -1080,8 +1080,8 @@ Bergiusstr.: Betonstraße	Q0 14153,6795 14193,6718 14154,6629 14193,6556 14396,62
 Nobelstr.: Betonstraße	Q0 14133,6187 14398,6184 15146,6154
 (Karlsgartenstr. - Hasenheide): asphaltiert	Q0 11627,8485 11253,8565
 (Am Rixdorfer Teich): guter Parkweg	Q1 11253,8565 11104,8559 11020,8596 10957,8573 10911,8457
-Tivoliplatz: Kopfsteinpflaster	Q2 8954,8914 8950,8954 8997,8952
-Schmiedehof: Kopfsteinpflaster	Q2 8997,8952 9019,8995
+Schmiedehof: Kopfsteinpflaster	Q2 8988,8958 8988,8990 8990,8915
+Sixtusgarten: Kopfsteinpflaster	Q2 8988,8990 9055,9022
 Ottomar-Geschke-Str.: Kopfsteinpflaster	Q2 21332,4655 21454,4928 21498,5023
 Wallotstr.: Asphalt	Q0 2046,9429 1965,9431 1851,9332 1795,9325 1757,9271
 Gartenufer: Parkweg	Q1 5794,11624 6239,11399 6342,11353 6346,11326
@@ -2188,7 +2188,7 @@ Lübarser Str.: Asphalt	Q0 5326,21407 5589,21799
 Peter-Huchel-Str.: Asphalt	Q0 22960,13298 23007,13509 23275,13459 23460,13454
 (Carola-Neher-Str - Kastanienallee): Asphalt	Q0 23393,14356 23782,14598
 #: note: "auch für Rennräder befahrbar"
-(Heinrich-Grüber-Str. - Grottkauer Str.): fester Ascheweg	Q0 23330,12734 23397,13102 23460,13454 23543,13890 23553,13931 23635,13916 23751,13858
+(Heinrich-Grüber-Str. - Grottkauer Str.): fester Ascheweg	Q0 23330,12734 23397,13102 23460,13454 23490,13611 23543,13890 23553,13931 23635,13916 23751,13858
 #: XXX: "kurzes Stück am Ende holpriger Siedlungsweg"
 (Heinrich-Grüber-Str. - Hönower Str.): überwiegend fester Ascheweg	Q0 24622,13919 24762,13890 24979,13753 25120,13803 25449,14032
 #: by: ^^^
@@ -2257,3 +2257,15 @@ Brodowiner Ring: Asphalt	Q0 22215,16343 22192,16165 22290,16146 22400,16226 2240
 Bauhüttenweg: Asphalt	Q0 12703,2454 13238,2521 13339,2611
 #: by: o. schumacher:
 Elberfelder Str.: schlechtes Kopfsteinpflaster	Q3 5762,13155 5771,12972 5752,12662
+#: by: Anna Tamborini:
+Zimmerstr. (Spandau): Kopfsteinpflaster	Q2 -3944,12929 -3819,12874 -3642,12886
+#: by: Nicole Steireif:
+Archenholdstr.: schlechtes Kopfsteinpflaster	Q3 16892,10731 16964,10902 17275,11626
+#: by: Martin Peter:
+Kissinger Platz: Beton	Q0 3110,8060 2990,8068
+#: by: von Marene Effenberger vvv
+Hibiskusweg: Asphalt	Q0 13537,18075 13478,18011 13257,17797
+Clematisweg: Asphalt	Q0 13257,17797 13182,18065 13163,18149
+Irisweg: Asphalt	Q0 13290,18060 13322,17938 13415,18034
+Bromelienweg: Asphalt	Q0 13478,18011 13415,18034 13290,18060 13182,18065
+#: by: ^^^

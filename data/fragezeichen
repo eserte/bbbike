@@ -462,11 +462,9 @@ Wallmow - Grenz: zumindest von Wallmow aus sieht es so aus, als ob eine Verbindu
 Carmzow - Hedwigshof: im weiteren Verlauf ebenfalls asphaltiert?	? 52635,109881 53437,109825 54050,109712 54450,109425
 Hedwigshof - Moor: existiert eine fahrbare Verbindung?	? 54450,109425 55250,109500 55293,109705
 Moor - Brüssow: Qualität?	? 55293,109705 56287,110437 57250,110862 57522,110764
-Roßweiner Ring: Qualität? Anbindung an das restliche Netz fehlt	? 25007,13951 25146,13901 25120,13803 24975,13848
 Lange Str. (Lichterfelde): Qualität?	? 5865,1975 5791,1927 5656,1882 5519,1831 5403,1779 5250,1725 5126,1693
 Gabelberger Str.: Linksabbiegen in die Frankfurter Allee möglich?	? 14381,12205
 Matternstr.: Linksabbiegen in die Petersburger Str. möglich?	? 13578,12903
-Ausschilderung Ida-Wolff-Platz oder Großbeerenstr.?	? 9250,10563 9184,10537
 Gransee - Meseberg: Qualität?	? -7696,66033 -8112,65637 -8762,65250 -9437,65037 -9912,64300 -10287,64175 -10675,63237 -11088,62914
 Busseeallee: Qualität, wahrscheinlich Kopfsteinpflaster?	? 166,3040 82,3166 -249,3632
 Am Heidekampgraben: zurzeit Bauarbeiten (Grünzugumgestaltung), Durchfahrt nicht möglich	? 15053,7966 14969,7580 15162,7281 15342,7013 15563,6683 15577,6518
@@ -610,7 +608,7 @@ Alt-Hermsdorf: mäßig geeignet (laut ADFC-Karte (wahrscheinlich Kopfsteinpflaster
 (Alt-Hermsdorf - Zehntwerderweg): mäßig geeignet (laut ADFC-Karte)	? 4582,23035 4679,22766
 Borsigwalder Weg: mäßig geeignet (laut ADFC-Karte)	? 2852,19546 3028,19771
 Miraustr.: mäßig geeignet (laut ADFC-Karte)	? 3820,19688 4014,19433 4170,19079 4195,19043
-Malchower Str.: mäßig geeignet (laut ADFC-Karte)	? 12841,18157 13163,18149 13374,18134 13631,18041 13732,18026 13901,18124
+Malchower Str.: mäßig geeignet (laut ADFC-Karte)	? 12841,18157 13163,18149 13374,18134 13537,18075 13631,18041 13732,18026 13901,18124
 Grumbkowstr.: mäßig geeignet (laut ADFC-Karte)	? 11297,20686 11437,20341 11584,20058 11756,19694
 Friesenstr. (Niederschönhausen): mäßig geeignet (laut ADFC-Karte)	? 8833,19259 9475,18862
 Platanenstr.: mäßig geeignet (laut ADFC-Karte)	? 9355,19789 9177,19745 8977,19694 8730,19555 8496,19410
@@ -627,6 +625,8 @@ Cyclopstr.: nicht geeignet (laut ADFC-Karte)	? 4825,21718 5138,21358
 Knollstr. (letztes Stück Privatstr.?)	? 17178,-101 17558,126 17740,214
 Roßlauer Str. (das letzte Stück zum Blumberger Damm nicht passierbar?)	? 20656,12415 21148,12365
 Nelly-Sachs-Str. ((teilweise) Kategorie N oder sogar NN?)	? 23993,14838 24325,14965
+Tivoliplatz (Qualität? Zur Zeit Zugang nur über Treppe.)	? 8949,8989 8950,8954
+(Am Weinhang/Am Weinberg) (Welcher Name ist richtig? Wie wird die Qualität sein - auch Kopfsteinpflaster?)	? 8988,8990 8949,8989
 Borkheide - Neuendorf (ungenaue Koordinaten!)	? -26338,-21122 -27908,-22935 -28547,-22981 -29244,-23127
 Russ. Kolonie (dieser Abschnitt von Alexandrowka tatsächlich für Autofahrer gesperrt?)	? -12855,-72 -12947,106 -13050,337
 (Am Nutheschnellweg) (Meinte ich damit den straßenbegleitenden Radweg?)	? -11399,-1339 -11698,-1104
@@ -686,13 +686,13 @@ Seeburger Chaussee: mäßig, teils Kopfsteinpflaster, teils Asphalt (kann sich mit
 Krumme Str.: Bauarbeiten (noch immer?)	? 3942,11010 3827,10980
 (S-Bahnbrücke Wartenberg): Fußgänger? (Stimmt das?)	? 16923,18650 16990,18694 17114,18775
 Marzahner Promenade - Mühlenbecker Weg: Fußgänger (Stimmt das?)	? 20222,15519 20150,15678
+X (hat die Einbecker Str. tatsächlich Vorfahrt?)	? 17208,11658 17275,11626 17734,11408
 Hasenheide (ist der Weg entlang der Freilichtbühne beleuchtet?)	? 11627,8485 11253,8565
 Stadtpark Steglitz (unbeleuchtet?)	? 5838,4454 5931,4659 6018,4850
 Stadtpark Steglitz (unbeleuchtet?)	? 5344,4672 5476,4626 5747,4697 5931,4659 6114,4709
 nördliches Ufer am Teltowkanal (unbeleuchtet?)	? 7921,4451 8162,4725 8249,4769
 Heidekampbrücke (kommt nur im RV-Plan so vor:)	? 15335,6146 15365,6126
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
-Prenzlauer Allee: Mittelstreifen mit Straßenbahn (evtl. bis zur Danziger verlängern:)	? 11642,14625 11662,14695 11681,14759
 Märkische Allee: Linksabbiegen wahrscheinlich verboten (wahrscheinlich!)	? 20512,17101 20691,17463 20717,17516 20834,17752 20878,17842 21218,18536
 tragen (zwei kurze Treppen) (wo sind die Treppen genau?)	? 9453,6415
 Gertrud-Kolmar-Str./Cora-Berliner-Str. (Bauarbeiten am Holocaust-Denkmal) (mittlerweile geöffnet?)	? 8804,11838 8770,11971 8737,12098

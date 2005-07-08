@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.52 2005/07/02 22:29:17 eserte Exp eserte $
+# $Id: Makefile,v 2.54 2005/07/08 00:46:22 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -995,6 +995,46 @@ GNUmakefile: Makefile ../miscsrc/b2gmake
 GNUmakefile.mapfiles: Makefile.mapfiles ../miscsrc/b2gmake
 	../miscsrc/b2gmake < Makefile.mapfiles > GNUmakefile.mapfiles
 	chmod ugo+r GNUmakefile.mapfiles
+
+######################################################################
+
+CGPSMAPPER?=	/usr/ports/distfiles/cgpsmapper/cgpsmapper0081static
+SENDMAP?=	/usr/ports/distfiles/cgpsmapper/sendmap17Lstatic
+BBD2POLISH?=	${MISCSRCDIR}/bbd2polish
+
+cgpsmapper-output:	${PERSISTENTTMPDIR}/bbbike.mp \
+			${PERSISTENTTMPDIR}/brb.mp \
+			${PERSISTENTTMPDIR}/wide.mp
+
+cgpsmapper-images:	${PERSISTENTTMPDIR}/bbbike.img \
+			${PERSISTENTTMPDIR}/brb.img \
+			${PERSISTENTTMPDIR}/wide.img
+
+cgpsmapper-upload:	cgpsmapper-images
+	-${SENDMAP} /dev/cuaa0  ${PERSISTENTTMPDIR}/bbbike.img \
+				${PERSISTENTTMPDIR}/brb.img \
+				${PERSISTENTTMPDIR}/wide.img
+
+${PERSISTENTTMPDIR}/bbbike.mp:	${BBD2POLISH} \
+				strassen wasserstrassen flaechen sbahn ubahn berlin faehren fragezeichen
+	${BBD2POLISH} -include-fragezeichen -mapset b > $@
+
+${PERSISTENTTMPDIR}/brb.mp:	${BBD2POLISH} \
+				orte landstrassen wasserumland rbahn potsdam
+	${BBD2POLISH} -mapset brb > $@
+
+${PERSISTENTTMPDIR}/wide.mp:	${BBD2POLISH} \
+				orte2 landstrassen2 wasserumland2 deutschland
+	${BBD2POLISH} -mapset wide > $@
+
+${PERSISTENTTMPDIR}/bbbike.img: ${PERSISTENTTMPDIR}/bbbike.mp
+	-${CGPSMAPPER} ${PERSISTENTTMPDIR}/bbbike.mp
+
+${PERSISTENTTMPDIR}/brb.img: ${PERSISTENTTMPDIR}/brb.mp
+	-${CGPSMAPPER} ${PERSISTENTTMPDIR}/brb.mp
+
+${PERSISTENTTMPDIR}/wide.img: ${PERSISTENTTMPDIR}/wide.mp
+	-${CGPSMAPPER} ${PERSISTENTTMPDIR}/wide.mp
 
 ######################################################################
 

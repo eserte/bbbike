@@ -1308,8 +1308,8 @@ userdel	2 4151,10026 3906,10035
 EOF
      },
      { from  => undef, # 
-       until => 1120247633, # 
-       text  => 'Johannisthaler Chaussee (Ernst-Keller-Brücke) Brückenarbeiten, gesperrt',
+       until => undef, # XXX
+       text  => 'Johannisthaler Chaussee Zwischen Rudower Straße und Königsheideweg beidseitig Brückenarbeiten, gesperrt ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 15573,4122 15608,4175
@@ -1692,7 +1692,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -3880,13032 -3796,13312
-userdel	2 -3880,13032 -4025,12801
+userdel	2 -3880,13032 -3944,12929 -4025,12801
 userdel	2 -4025,12801 -4137,12651
 EOF
      },

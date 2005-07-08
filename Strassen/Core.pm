@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.56 2005/07/06 21:15:52 eserte Exp $
+# $Id: Core.pm,v 1.57 2005/07/08 00:47:03 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.56 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.57 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -731,9 +731,16 @@ sub first {
     $self->get(0);
 }
 
+# Return the next record and increment the iterator
 sub next {
     my $self = shift;
     $self->get(++($self->{Pos}));
+}
+
+# Return the next record without incrementing the iterator
+sub peek {
+    my $self = shift;
+    $self->get($self->{Pos}+1);
 }
 
 # Like next(), but use a private iterator

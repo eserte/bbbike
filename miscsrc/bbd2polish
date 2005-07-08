@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2polish,v 1.11 2005/07/05 22:39:59 eserte Exp $
+# $Id: bbd2polish,v 1.13 2005/07/08 00:46:10 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -45,8 +45,12 @@ use Getopt::Long;
 
 my $codepage; # eg. 1252
 my $mapset = "b";
+my $layer;
+my $include_fragezeichen = 0;
 if (!GetOptions("mapset=s" => \$mapset,
+		"layer=s" => \$layer,
 		"codepage=s" => \$codepage,
+		"include-fragezeichen!" => \$include_fragezeichen,
 	       )) {
     die "usage: $0 [-mapset [ b | brb | wide ]";
 }
@@ -63,6 +67,8 @@ my $id   = {"b"    => $base_id,
 die "Cannot set name and/or id for <$mapset>"
     if !defined $name || !defined $id;
 my $levels = 4;
+my $use_dictionary = 0;
+
 my $out = "";
 $out .= <<EOF;
 [IMG ID]
@@ -85,16 +91,16 @@ PreProcess=F
 TreSize=3000
 Elevation=m
 Levels=@{[ $levels + 1 ]}
-; with NN
-Level0=24
-; with N
-Level1=23
+; with NN/N
+Level0=22
 ; with H
-Level2=21
+Level1=20
 ; with HH/B
-Level3=18
+Level2=18
+; with HH/B
+Level3=16
 ; empty
-Level4=16
+Level4=14
 Zoom0=1
 Zoom1=2
 Zoom2=3
@@ -102,6 +108,10 @@ Zoom3=4
 Zoom4=5
 [END-IMG ID]
 
+EOF
+
+if ($use_dictionary) {
+    $out .= <<EOF;
 [DICTIONARY]
 ;Since the default is to import all elements, it is not neccesary to define filters for layer 0
 ;RGN10 = POI
@@ -136,14 +146,22 @@ Level1RGN80=11111111111111111111111111111111111111111111111111111111111111111111
 ;[END-DICTIONARY]
 
 EOF
+}
 
 my @files;
-if ($mapset eq 'b') {
-    @files = qw(strassen wasserstrassen flaechen sbahn ubahn);
-} elsif ($mapset eq 'brb') {
-    @files = qw(orte landstrassen wasserumland rbahn);
-} elsif ($mapset eq 'wide') {
-    @files = qw(orte2 landstrassen2 wasserumland2);
+if (defined $layer) {
+    @files = $layer;
+} else {
+    if ($mapset eq 'b') {
+	@files = qw(strassen wasserstrassen flaechen sbahn ubahn berlin faehren);
+	if ($include_fragezeichen) {
+	    push @files, qw(fragezeichen);
+	}
+    } elsif ($mapset eq 'brb') {
+	@files = qw(orte landstrassen wasserumland rbahn potsdam);
+    } elsif ($mapset eq 'wide') {
+	@files = qw(orte2 landstrassen2 wasserumland2 deutschland);
+    }
 }
 
 for my $file (@files) {
@@ -155,30 +173,35 @@ for my $file (@files) {
 	my @c = @{ $r->[Strassen::COORDS] };
 	last if !@c;
 
-	@c = map {
-	    my($x,$y) = split /,/, $_;
-	    my($long, $lat) = $Karte::Polar::obj->trim_accuracy
-		($Karte::Polar::obj->standard2map($x,$y)
-		);
-	    [$lat,$long];
-	} @c;
+	convert_coords(\@c);
 
 	my $name = convert_strname($r->[Strassen::NAME]);
+	my $add;
+	($name, $add) = split(/\|/, $name);
+
+	if ($file =~ /landstrassen/) {
+	    if ($name =~ /\S+\s-\s\S+/) {
+		$name = "";
+	    }
+	}
+
 	my $cat = $r->[Strassen::CAT];
 
 	if (@c == 1) {
 	    my $type = cat2type($cat, $file, "poi");
 	    next if !defined $type;
 	    my $is_city = "N";
-	    my $end_level = 1;
+	    my $end_level = 0;
 	    if ($file =~ /^orte/) {
 		$is_city = "Y";
 		if ($cat =~ /^[56]$/) {
-		    $end_level = 2;
+		    $end_level = 4;
 		} elsif ($cat =~ /^[34]$/) {
 		    $end_level = 3;
-		} elsif ($cat =~ /^[012]$/) {
-		    $end_level = 4;
+		} elsif ($cat =~ /^[2]$/) {
+		    $end_level = 2;
+		} elsif ($cat =~ /^[01]$/) {
+		    $end_level = 1;
 		}
 	    }
 	    $out .= <<EOF;
@@ -195,18 +218,28 @@ EOF
 	    $cat = $1;
 	    my $type = cat2type($cat, $file, "polygon");
 	    next if !defined $type;
+
+	    my @island_data;
+	    if ($cat eq 'W') {
+		# look for islands
+		while(1) {
+		    my $r_i = $s->peek;
+		    my @c = @{ $r_i->[Strassen::COORDS] };
+		    last if (!@c || $r_i->[Strassen::CAT] ne 'F:I');
+		    convert_coords(\@c);
+		    push @island_data, make_polygon_coords(\@c);
+		    $s->next; # increment iterator
+		}
+	    }
+
 	    $out .= <<EOF;
 [POLYGON]
 Type=$type
 ;Label=$name
 EOF
-	    if ("@{$c[0]}" eq "@{$c[-1]}") {
-		pop @c;
-	    }
-	    my $data0 = join(",", map {
-		"(" . $_->[0] . "," . $_->[1]  . ")"
-	    } @c) . "\n";
-	    $out .= "Data0=" . $data0;
+	    
+	    $out .= make_polygon_coords(\@c);
+	    $out .= join "", @island_data;
 	    $out .= <<EOF;
 EndLevel=$levels
 [END-POLYGON]
@@ -229,13 +262,10 @@ EOF
 	    my $end_level = $levels;
 	    if ($file eq 'strassen') {
 		$end_level = 0;
-		if ($cat ne 'NN') {
+		if ($cat ne 'NN' && $cat ne 'N') {
 		    $end_level = 1;
-		    if ($cat ne 'N') {
+		    if ($cat ne 'H') {
 			$end_level = 2;
-			if ($cat ne 'H') {
-			    $end_level = 3;
-			}
 		    }
 		}
 	    }
@@ -279,10 +309,18 @@ sub cat2type {
     return 0x1f if $cat =~ /^W\d?$/ && $rgn_type eq 'polyline';
     return 0x13 if $cat eq 'I' && $rgn_type eq 'polygon'; # 0x4b=background -> problems?
     if ($file =~ /^orte/) {
-	return 0x01 if $cat =~ /^[01]$/;
-	return 0x06 if $cat =~ /^[23]$/;
-	return 0x0b if $cat =~ /^[456]$/;
+	return 0x0c if $cat =~ /^[0]$/;
+	return 0x0b if $cat =~ /^[1]$/;
+	return 0x08 if $cat =~ /^[2]$/;
+	return 0x06 if $cat =~ /^[3]$/;
+	return 0x05 if $cat =~ /^[4]$/;
+	return 0x03 if $cat =~ /^[5]$/;
+	return 0x01 if $cat =~ /^[6]$/;
     }
+    return 0x1d if $cat eq 'Z' && $file =~ /^(berlin|potsdam)$/;
+    return 0x1e if $cat eq 'Z' && $file =~ /^deutschland$/;
+    return 0x1a if $cat eq 'Q';
+    return 0x01 if $cat =~ /^\?+/; # major highway --- nicht zu übersehen!
     warn "Unhandled cat <$cat>\n";
     return 22; # Trail
 }
@@ -306,6 +344,29 @@ sub encode_string {
 	require Text::Unidecode;
 	Text::Unidecode::unidecode($string);
     }
+}
+
+sub convert_coords {
+    my $c_ref = shift;
+    @$c_ref = map {
+	my($x,$y) = split /,/, $_;
+	my($long, $lat) = $Karte::Polar::obj->trim_accuracy
+	    ($Karte::Polar::obj->standard2map($x,$y)
+	    );
+	[$lat,$long];
+    } @$c_ref;
+}
+
+sub make_polygon_coords {
+    my($c) = @_;
+
+    if ("@{$c->[0]}" eq "@{$c->[-1]}") {
+	pop @$c;
+    }
+    my $data0 = join(",", map {
+	"(" . $_->[0] . "," . $_->[1]  . ")"
+    } @$c) . "\n";
+    "Data0=" . $data0;
 }
 
 __END__

@@ -62,7 +62,15 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => undef,
+         'text' => 'Johannisthaler Chaussee Zwischen Rudower Straße und Königsheideweg beidseitig Brückenarbeiten, gesperrt ',
+         'from' => undef,
+         'data' => 'userdel	2 15573,4122 15608,4175
+userdel	2 15669,4266 15608,4175
+',
+         'type' => 'gesperrt'
+       },
        undef,
        {
          'until' => 1122760800,

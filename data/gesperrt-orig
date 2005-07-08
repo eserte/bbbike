@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.31 2005/06/29 23:59:57 eserte Exp eserte $
+# $Id: gesperrt-orig,v 4.33 2005/07/07 21:59:10 eserte Exp $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraßen etc.)
@@ -408,7 +408,7 @@ Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 142
 Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11649 9899,11670 9982,11680
 Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13334,13459
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12188,14321 12239,14393 12285,14458 12338,14532
-#: add_fragezeichen: evtl. bis zur Danziger verlängern:
+#: note: Fußgängerfurt existiert zwischen Chodowieckistr. und Jablonskistr.:
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 11642,14625 11662,14695 11681,14759
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 11776,15060 11822,15193 11852,15281
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3nocross 11712,14868 11681,14759 11662,14695
@@ -611,127 +611,3 @@ B 167; (Herzberg-Neuruppin); OL Alt Ruppin, Rhinbrücke    Brückenneubau    Volls
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#XXX del: (now nocross)
-#Lützowufer - Lützowplatz: unbequem passierbarer Mittelstreifen	3 6732,11106 6873,11011 7002,11034
-#Lützowplatz - Lützowufer: unbequem passierbarer Mittelstreifen	3 7002,11034 6873,11011 6732,11106
-#Lützowufer - Schillstr.: unbequem passierbarer Mittelstreifen	3 7002,11034 6873,11011 6824,10904
-#Marzahner Kreuz	3 19408,15007 19466,14910 19506,15002
-#Marzahner Kreuz	3 19551,14961 19506,15002 19466,14910
-#Marzahner Kreuz	3 19605,15073 19735,15155 19694,15149
-#Waterlooufer -> Brachvogelstr.: unbequem passierbarer Mittelstreifen	3 9812,10211 9849,10202 9884,10192
-#Waterlooufer -> Zossener Str.: unbequem passierbarer Mittelstreifen	3 9812,10211 9849,10202 9851,10219
-#Brachvogelstr. -> Zossener Str.: unbequem passierbarer Mittelstreifen	3 9884,10192 9849,10202 9827,10120
-#Grunerstr. - Alexanderplatz: Straßentunnelrampe	3 10959,12629 11062,12710 11030,12741
-#Dircksenstr. - Alexanderplatz: Straßentunnelrampe	3 11156,12581 11062,12710 11030,12741
-#Alexanderplatz - Grunerstr.: Straßentunnelrampe	3 11030,12741 11062,12710 11134,12793
-#Alexanderplatz - Dircksenstr.: Straßentunnelrampe	3 11030,12741 11062,12710 11156,12581
-#Grunerstr. - Littenstr: Straßentunnelrampe.	3 11062,12710 10959,12629 11056,12461
-#Littenstr. - Grunerstr.: Straßentunnelrampe	3 11056,12461 10959,12629 10887,12543
-#Wilhelmsaue - Bundesallee: Straßentunnelrampe	3 5346,8720 5510,8709 5505,8832
-#Bundesallee - Wilhelmsaue: Straßentunnelrampe	3 5513,8588 5510,8709 5346,8720 5181,8731
-#Volkspark - Bundesallee: Absperrung	3 5533,8478 5481,8506 5417,8519
-#Volkspark - Bundesallee: Absperrung	3 5533,8478 5481,8506 5444,8406
-#Volkspark - Bundesallee: Absperrung	3 5417,8519 5481,8506 5533,8478
-#Volkspark - Bundesallee: Absperrung	3 5417,8519 5481,8506 5513,8588
-#Wörther Str. - Schönhauser Allee: U-Bahnrampe	3 11163,14548 10924,14491 10947,14114
-#Schönhauser Allee - Wörther Str.: U-Bahnrampe	3 10909,14710 10924,14491 11163,14548
-#Kopenhagener Str. - Schönhauser Allee: U-Bahnviadukt	3 10581,15936 10722,15921 10972,15895 10977,15944 10987,16008 10994,16120
-#Schönhauser Allee - Kopenhagener Str.: U-Bahnviadukt	3 10963,15789 10972,15895 10722,15921 10581,15936
-#Berliner Str. - Thulestr.: U-Bahnrampe	3 10986,16897 10999,16830 11042,16605 11278,16609 11645,16616
-#Thulestr. - Berliner Str.: U-Bahnrampe	3 11645,16616 11278,16609 11042,16605 11039,16553 11033,16464
-#Dunckerstr. - Wisbyer Str.: Straßenbahn	3 11939,16084 12026,16247 11905,16318
-#Löwenberger Str. - Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3 17477,11893 17436,11791 17750,11771
-#Alt-Friedrichsfelde - Löwenberger Str.: nicht passierbarer Mittelstreifen	3 17249,11802 17436,11791 17477,11893
-#Robert-Uhrig-Str. - Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3 17734,11408 17750,11771 17436,11791
-#Alt-Friedrichsfelde - Robert-Uhrig-Str.: nicht passierbarer Mittelstreifen	3 18220,11710 17750,11771 17734,11408
-#Alt-Friedrichsfelde - Gensinger Str.: nicht passierbarer Mittelstreifen	3 19005,11796 19283,11785 19144,11859
-#Alt-Friedrichsfelde - Gensinger Str.: nicht passierbarer Mittelstreifen	3 19144,11859 19005,11796 19283,11785
-#Alt-Friedrichsfelde - Gensinger Str.: nicht passierbarer Mittelstreifen	3 19283,11785 19005,11796 19005,11705
-#Alt-Friedrichsfelde - Gensinger Str.: nicht passierbarer Mittelstreifen	3 19005,11705 19005,11796 18853,11798
-#Märkische Allee - Weißenhöher Weg: nicht passierbarer Mittelstreifen	3 19802,11794 19693,11762 19827,11686
-#Alt-Friedrichsfelde - Charlottenstr.: Straßentunnelrampe	3 18853,11798 18529,11722 18526,11640
-#Charlottenstr. - Alt-Friedrichsfelde: Straßentunnelrampe	3 18526,11640 18529,11722 18220,11710
-#Rauchstr./Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3 6683,11367 6853,11336 6825,11486
-#Rauchstr./Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3 7160,11225 6853,11336 6880,11110
-#Köbisstr./Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3 6880,11110 6853,11336 6683,11367
-#Rauchstr./Köbisstr.: unbequem passierbarer Mittelstreifen	3 7160,11225 6853,11336 6683,11367
-#Rauchstr./Köbisstr.: unbequem passierbarer Mittelstreifen	3 6683,11367 6853,11336 7160,11225
-#Kreutzigerstr - Frankfurter Allee: unbequem passierbarer Mittelstreifen	3 14285,12190 14291,12220 14208,12235
-#Frankfurter Allee - Kreutzigerstr: unbequem passierbarer Mittelstreifen	3 14434,12196 14381,12205 14291,12220 14285,12190
-#Langenbeckstr - Landsberger: Mittelstreifen	3 13081,13457 13161,13360 13334,13459
-#Landsberger - Langenbeckstr: Mittelstreifen	3 13089,13323 13161,13360 13081,13457
-#Greifswalder - Chodowieckistr: Mittelstreifen mit Straßenbahn	3 12188,14321 12239,14393 12285,14458 11992,14599
-#Chodowieckistr - Greifswalder: Mittelstreifen mit Straßenbahn	3 11992,14599 12285,14458 12338,14532
-#Prenzlauer Allee - Hiddenseer Str.: Linksabbiegen wegen Straßenbahn nicht möglich	3 11776,15060 11822,15193 11655,15253
-#Hiddenseer Str. - Prenzlauer Allee: Linksabbiegen wegen Straßenbahn nicht möglich	3 11655,15253 11822,15193 11852,15281
-# Christinenstr. - Torstr.: Mittelstreifen mit Straßenbahn	3 10639,13865 10569,13719 10640,13700
-# Torstr. - Christinenstr.: Mittelstreifen mit Straßenbahn	3 10445,13752 10569,13719 10639,13865
-# Angermünder Str. - Torstr.: Mittelstreifen mit Straßenbahn	3 10703,13832 10640,13700 10746,13673
-# Torstr. - Angermünder Str.: Mittelstreifen mit Straßenbahn	3 10569,13719 10640,13700 10703,13832
-#Katzlerstr. - Yorckstr.: Linksabbiegen verboten (und unbequem)	3 8035,9437 8095,9639 7941,9686
-#Yorckstr. - Katzlerstr.: Linksabbiegen verboten (und unbequem)	3 8188,9610 8095,9639 8035,9437
-#Neue Blumenstr.: Mittelstreifen	3 11709,12601 12006,12464 12118,12462
-#Neue Blumenstr - Lichtenberger Str.: Mittelstreifen	3 11709,12601 12006,12464 12047,12572
-#Neue Blumenstr - Lichtenberger Str.: Mittelstreifen	3 12118,12462 12006,12464 11929,12263
-#Lichtenberger - Neue Blumenstr.: Mittelstreifen	3 11929,12263 12006,12464 11709,12601
-#Lichtenberger - Neue Blumenstr.: Mittelstreifen	3 12047,12572 12006,12464 12118,12462
-#Weisestr. - Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3 11770,8292 11763,8337 11632,8302
-#Flughafenstr. - Weisestr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3 11892,8372 11763,8337 11770,8292
-#Bundesratufer - Stromstr.: unpassierbarer Mittelstreifen	3 6131,12978 6185,12968 6201,13058
-#Stromstr - Bundesratufer.: unpassierbarer Mittelstreifen	3 6177,12920 6185,12968 6131,12978
-# Märkische Allee - Wuhletalstr.: Linksabbiegen wahrscheinlich verboten	3 20878,17842 20834,17752 20912,17678
-# Wuhletalstr. - Märkische Allee: Linksabbiegen wahrscheinlich verboten	3 20912,17678 20834,17752 20717,17516
-# Märkische Allee - Wuhletalstr.: Linksabbiegen wahrscheinlich verboten	3 20834,17752 20717,17516 20853,17528
-# Wuhletalstr. - Märkische Allee: Linksabbiegen wahrscheinlich verboten	3 20853,17528 20717,17516 20691,17463
-# Wuhletalstr. - Märkische Allee: Linksabbiegen wahrscheinlich verboten	3 20675,17515 20691,17463 20717,17516
-# Märkische Allee - Wuhletalstr.: Linksabbiegen wahrscheinlich verboten	3 20834,17752 20878,17842 20832,17824
-#Stralauer - Naglerstr.: unbequemes Abbiegen	3 13389,10808 13483,10769 13575,10963
-#Naglerstr. - Stralauer: unbequemes Abbiegen	3 13575,10963 13483,10769 13605,10719
-#Stralauer - Lehmbruckstr: unbequemes Abbiegen	3 13605,10719 13678,10685 13690,10715
-#Lehmbruckstr - Stralauer: unbequemes Abbiegen	3 13690,10715 13678,10685 13779,10642
-#Mühlendamm - Rolandufer: unbequemes Passieren des Mittelstreifens	3 10567,12135 10621,12207 10583,12206
-#Rolandufer - Mühlendamm: unbequemes Passieren des Mittelstreifens	3 10583,12206 10621,12207 10675,12280
-#Dorotheenstr. an der US-Botschaft	3 8907,12472 9008,12485 9112,12499 9323,12528
-#Dorotheenstr. an der US-Botschaft	3 9323,12528 9112,12499 9008,12485 8907,12472
-#Mittelstr. an der US-Botschaft	3 9018,12400 9126,12413 9335,12442
-#Mittelstr. an der US-Botschaft	3 9335,12442 9126,12413 9018,12400
-#Teltowkanalufer - Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3 8881,5143 9185,5271 9182,5332
-#Tedamm - Teltowkanalufer: unbequem passierbarer Mittelstreifen	3 9185,5271 9182,5332 9145,5323
-#Teltowkanalufer - Tedamm: unbequem passierbarer Mittelstreifen	3 9145,5323 9182,5332 9171,5397 9147,5534
-#Gervinusstr./Lewishamstr.: Straßentunnelrampe	3 3839,10904 3631,10784 3587,10768
-#Sybelstr./Lewishamstr.: Straßentunnelrampe	3 3712,10566 3739,10576 3644,10759
-#Sybelstr./Lewishamstr.: Straßentunnelrampe	3 3813,10435 3739,10576 3712,10566
-#Waitzstr./Lewishamstr.: Straßentunnelrampe	3 3737,10322 3739,10576 3644,10759
-#Waitzstr./Lewishamstr.: Straßentunnelrampe	3 3813,10435 3739,10576 3737,10322
-#Bornholmer Str. - Kolonnenweg: Straßenbahn auf Mittelstreifen	3 10215,16527 9998,16547 9982,16527
-#Bornholmer Str. - Kolonnenweg: Straßenbahn auf Mittelstreifen	3 9883,16557 9998,16547 9983,16561
-#Kolonnenweg - Bornholmer Str.: Straßenbahn auf Mittelstreifen	3 9983,16561 9998,16547 10215,16527
-#Kolonnenweg - Bornholmer Str.: Straßenbahn auf Mittelstreifen	3 9982,16527 9998,16547 9883,16557
-#Leipziger - Jerusalemer: unbequem passierbarer Mittelstreifen	3 9701,11649 9899,11670 9892,11752
-#Sachsendamm: Mittelstreifen	3 7737,7505 7717,7564 7606,7611
-#Sachsendamm: Mittelstreifen	3 7737,7505 7717,7564 7718,7641
-#Sachsendamm: Mittelstreifen	3 7859,7486 7717,7564 7737,7505
-#Sachsendamm: Mittelstreifen	3 7718,7641 7717,7564 7737,7505
-#Boddinstr. - Karl-Marx-Str.: Mittelstreifen	3 12368,8356 12582,8408 12540,8458
-#Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3 17412,17800 17703,17990 17678,18171
-#Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3 17678,18171 17703,17990 17843,18078
-#Warschauer Platz - Stralauer Allee: unbequemes Abbiegen	3 13471,10983 13389,10808 13483,10769
-#Sonnenallee - Schönstedtstr.: unbequemes Passieren des Mittelstreifens (parkende Autos)	3 12772,8612 12742,8635 12649,8535
-#Schönstedtstr. - Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3 12649,8535 12742,8635 12630,8722
-#Kudamm - Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3 5484,10810 5351,10760 5329,10422
-#Meinekestr. - Kudamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3 5329,10422 5351,10760 5229,10716
-#Düsseldorfer - Paderborner: Tunneleinfahrt Adenauerplatz	3 4151,10026 3906,10035 3720,9996
-#Paderborner - Düsseldorfer: Tunneleinfahrt Adenauerplatz	3 3720,9996 3906,10035 4151,10026
-#Paderborner - Brandenburgische: Tunneleinfahrt Adenauerplatz	3 3720,9996 3906,10035 3874,10153 3852,10236
-#Brandenburgische - Düsseldorfer: Tunneleinfahrt Adenauerplatz	3 3852,10236 3874,10153 3906,10035 4151,10026
-#Regensburger - Pariser: unbequem passierbarer Mittelstreifen	3 5541,9923 5475,9914 5416,9928
-#Pariser - Regensburger: unbequem passierbarer Mittelstreifen	3 5416,9928 5475,9914 5541,9923
-#Nuthestr. - Uferweg	3 -11875,-925 -11613,-1125 -11657,-1018
-#Nuthestr. - Uferweg	3 -11549,-1169 -11613,-1125 -11698,-1104
-#Uferweg - Nuthestr.	3 -11657,-1018 -11613,-1125 -11549,-1169
-#Uferweg - Nuthestr.	3 -11698,-1104 -11613,-1125 -11875,-925
-#Nuthestr.	3 -11613,-1125 -11549,-1169 -11460,-1098
-#Nuthestr.	3 -11460,-1098 -11549,-1169 -11463,-1232
-#Holzmarktstr. - Humboldtbrücke	3 -11910,-945 -11875,-925 -12063,-784
-#Humboldtbrücke - Holzmarktstr.	3 -11613,-1125 -11875,-925 -11910,-945
-#Bahndamm - Treskowallee - Ontarioseestr.: Straßenbahntrasse	3 19675,10410 18698,9996 18690,10016 18577,10023
