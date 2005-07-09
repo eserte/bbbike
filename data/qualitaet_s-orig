@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.37 2005/07/08 00:46:54 eserte Exp $
+# $Id: qualitaet_s-orig,v 4.37 2005/07/08 00:46:54 eserte Exp eserte $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -405,7 +405,7 @@ Waldeyerstr.: Kopfsteinpflaster	Q2 15054,12323 14997,12243
 Am Heidekampgraben: Feldweg, teilweise etwas sandig	Q2 15053,7966 14969,7580 15162,7281 15342,7013 15563,6683 15577,6518 15478,6343 15422,6228 15365,6126
 An der Güterbahn: Parkweg	Q1 15330,1658 15205,1670 15110,1732 14968,1835 14845,1866 14705,1836 14630,1795
 # XXX wahrscheinlich nicht mehr: Stubenrauchstr.: Kopfsteinpflaster	Q2; 16909,3193 16893,3171 16766,3002
-Falkensteinstr.: Kopfsteinpflaster	Q2 12911,10156 13031,10366 13135,10551
+Falkensteinstr.: etwas besseres Kopfsteinpflaster	Q2 12911,10156 13031,10366 13135,10551
 Görlitzer Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q2; 13221,10005 13053,10088 12911,10156 12779,10232 12689,10273 12603,10312 12328,10442
 Görlitzer Str.: Kopfsteinpflaster	Q2; 12328,10442 12603,10312 12689,10273 12779,10232 12911,10156
 Görlitzer Str.: Kopfsteinpflaster; Schwellen an der Kreuzung Cuvrystr.	Q2; 12911,10156 13053,10088 13221,10005
@@ -2251,8 +2251,11 @@ Retzdorffpromenade: Kopfsteinpflaster	Q2 4893,6812 4993,6812
 Dohlengrund: Asphalt	Q0 20272,10448 20729,10437 21017,10423 21288,10431
 #: by: Christian Marwitz:
 Goldammerstr.: Asphalt	Q0 14714,2732 14746,2781 14832,2885 14923,2992 14981,3062 15076,3054 15159,2985 15235,2938
-#: by: martin bethge:
+#: by: martin bethge: vvv
 Brodowiner Ring: Asphalt	Q0 22215,16343 22192,16165 22290,16146 22400,16226 22406,16309
+#: note: laut ADFC-Karte ebenfalls "gut geeignet":
+Parsteiner Ring: Asphalt	Q0 22406,16309 22428,16462 22321,16553 22250,16468 22215,16343
+#: by: ^^^
 #: by: Kasi:
 Bauhüttenweg: Asphalt	Q0 12703,2454 13238,2521 13339,2611
 #: by: o. schumacher:
@@ -2269,3 +2272,9 @@ Clematisweg: Asphalt	Q0 13257,17797 13182,18065 13163,18149
 Irisweg: Asphalt	Q0 13290,18060 13322,17938 13415,18034
 Bromelienweg: Asphalt	Q0 13478,18011 13415,18034 13290,18060 13182,18065
 #: by: ^^^
+#: by: Daniel Grunow:
+Wißlerstr.: Asphalt	Q0 23950,5342 23956,5213 23775,5258
+#: by: bernhard.brackmann:
+Kloster-Zinna-Str.: Asphalt	Q0 11218,-350 11704,-303
+#: by: stewar...:
+Campestr.: Asphalt	Q0 1139,20420 1159,20494 1130,20583
