@@ -1007,6 +1007,7 @@ GNUmakefile: Makefile
 
 CGPSMAPPER?=	/usr/ports/distfiles/cgpsmapper/cgpsmapper0081static
 SENDMAP?=	/usr/ports/distfiles/cgpsmapper/sendmap17Lstatic
+GPSPORT?=	/dev/cuaa0
 BBD2POLISH?=	${MISCSRCDIR}/bbd2polish
 
 CGPSMAPPER_FILES=	bbbike brb wide fragezeichen
@@ -1018,7 +1019,7 @@ cgpsmapper-output:	${CGPSMAPPER_MP_FILES}
 cgpsmapper-images:	${CGPSMAPPER_IMG_FILES}
 
 cgpsmapper-upload:	cgpsmapper-images
-	-${SENDMAP} /dev/cuaa0  ${CGPSMAPPER_IMG_FILES}
+	-${SENDMAP} ${GPSPORT}  ${CGPSMAPPER_IMG_FILES}
 
 ${PERSISTENTTMPDIR}/bbbike.mp:	${BBD2POLISH} \
 				strassen wasserstrassen flaechen sbahn ubahn berlin faehren fragezeichen
