@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wettermeldung2,v 1.64 2005/07/03 20:52:27 eserte Exp $
+# $Id: wettermeldung2,v 1.65 2005/07/12 05:16:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1997, 1998, 1999, 2000, 2002 Slaven Rezic. All rights reserved.
@@ -45,8 +45,10 @@ foreach $synop_station (@synop_stations) {
 
 $www_site{'dahlem1'} = $www_site{'dahlem2'} = 'www.met.fu-berlin.de';
 $www_port{'dahlem1'} = $www_port{'dahlem2'} = 80;
-$loc{'dahlem1'}  = '/deutsch/Wetter/beobachtung.html';
-$loc{'dahlem2'}  = '/deutsch/Wetter/meldungen.html';
+#$loc{'dahlem1'}  = '/deutsch/Wetter/beobachtung.html';
+#$loc{'dahlem2'}  = '/deutsch/Wetter/meldungen.html';
+$loc{'dahlem1'}  = '/de/wetter/wetterbeobachtung/';
+$loc{'dahlem2'}  = '/de/wetter/wetterdaten/';
 
 $www_site{'tempelhof'} = 'www.hundert6.de';
 $www_port{'tempelhof'} = 80;
@@ -78,7 +80,7 @@ $FIELD_WIND_AVG      = 7;
 $FIELD_PRECIPITATION = 8;
 $FIELD_WEATHER       = 9;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.64 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.65 $ =~ /(\d+)\.(\d+)/);
 
 $mailto = 'eserte@cs.tu-berlin.de';
 $user_agent = "wettermeldung2/$VERSION";
@@ -386,10 +388,19 @@ sub parse_dahlem1 {
 		       $loc{'dahlem1'})
 	 )
       );
+
+    local $search_for_embedded_data = 1;
     open(IN, $fetch_cmd) || return;
     while(<IN>) {
 	push(@in_file, $_); # für Fehlermeldungen
 	chop;
+
+# 	if ($search_for_embedded_data)
+# 	    if (/<pre>/) {
+# 		$search_for_embedded_data = 0;
+# 	    }
+# 	    next;
+# 	}
 
 	# Datum
 	if (/^\s*datum.*\D(\d+)\s*\.\s*(\d+)\s*\.\s*(\d+)/i) {
@@ -584,10 +595,18 @@ sub parse_dahlem2 {
 		       $loc{'dahlem2'})
 	 )
       );
+    local $search_for_embedded_data = 1;
     open(IN, $fetch_cmd) || return;
     while(<IN>) {
 	push(@in_file, $_); # für Fehlermeldungen
 	chop;
+
+# 	if ($search_for_embedded_data) {
+# 	    if (/<pre>/) {
+# 		$search_for_embedded_data = 0;
+# 	    }
+# 	    next;
+# 	}
 
 	# Datum
 	if (/([0-3]?\d)\s*\.\s*([0-1]?\d)\s*\.\s*(\d{2,4})/i) {

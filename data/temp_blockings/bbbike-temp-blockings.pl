@@ -645,7 +645,7 @@ EOF
        text  => 'Bachstraße: In beiden Richtungen Störungen durch Rohrbruch, gesperrt bis Do 12:00 ',
        type  => 'handicap',
       data  => <<EOF,
-userdel	q4 6040,12480 5798,12021
+userdel	q4 6040,12480 5874,12165 5798,12021
 userdel	q4 5771,11887 5787,11966 5798,12021
 EOF
      },
@@ -665,9 +665,9 @@ EOF
 userdel	q4 10023,-8859 10115,-8276
 EOF
      },
-     { from  => 1094076000, # 2004-09-02 00:00
-       until => 1094421600, # 2004-09-06 00:00
-       text  => 'B 103; (Havelberger Str.); OD Pritzwalk, Bahnübergang Gleisbauarbeiten Vollsperrung 03.09.2004-05.09.2004 ',
+     { from  => 1121292000, # 2005-07-14 00:00
+       until => 1121637600, # 2005-07-18 00:00
+       text  => 'B 103; (Havelberger Str.); OD Pritzwalk, Bahnübergang Gleissanierung Vollsperrung 15.07.2005-17.07.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -74489,80545 -74653,81289
@@ -2299,6 +2299,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 9164,12172 9365,12196 9492,12214
+EOF
+     },
+     { from  => 1121551200, # 2005-07-17 00:00
+       until => 1122674400, # 2005-07-30 00:00
+       text  => 'L 235; (Gielsdorf-Werneuchen); OD Wegendorf, Schulstr. Ersatzneubau Durchlass Vollsperrung 18.07.2005-29.07.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 34471,22214 34321,22151
+userdel	q4 34125,22128 34321,22151
 EOF
      },
     );

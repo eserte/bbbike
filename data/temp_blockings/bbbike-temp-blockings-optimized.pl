@@ -73,7 +73,14 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1121637600,
+         'text' => 'B 103; (Havelberger Str.); OD Pritzwalk, Bahnübergang Gleissanierung Vollsperrung 15.07.2005-17.07.2005 ',
+         'from' => 1121292000,
+         'data' => 'userdel	2 -74489,80545 -74653,81289
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -636,6 +643,15 @@ userdel	q4 25412,-29762 25541,-29875
          'text' => 'Behrenstr. (Mitte) Richtung Gendarmenmarkt zwischen Glinkastr. und Charlottenstr. Baustelle, Fahrtrichtung gesperrt (bis 30.09.2005)',
          'from' => 1121117010,
          'data' => 'userdel	q4; 9164,12172 9365,12196 9492,12214
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1122674400,
+         'text' => 'L 235; (Gielsdorf-Werneuchen); OD Wegendorf, Schulstr. Ersatzneubau Durchlass Vollsperrung 18.07.2005-29.07.2005 ',
+         'from' => 1121551200,
+         'data' => 'userdel	q4 34471,22214 34321,22151
+userdel	q4 34125,22128 34321,22151
 ',
          'type' => 'handicap'
        }
