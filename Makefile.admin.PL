@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.34 2005/06/19 19:01:03 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.35 2005/07/11 21:05:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -653,6 +653,15 @@ permission:
 	chmod ugo+r cgi/*.config
 	chmod ugo+rx data/temp_blockings
 	chmod ugo+r  data/temp_blockings/*
+
+copy-cvs-to-stick:	copy-to-cvs
+	(mount | grep -q /mnt/stick) || sudo mount_msdos -u eserte /dev/da0s1 /mnt/stick
+	mount | grep -q /mnt/stick
+	-mv /mnt/stick/BBBike-CVS{,.old}
+	rsync -v -rlptoD $(CVS_DIR)/ /mnt/stick/BBBike-CVS/
+	echo Unmount stick?
+	read yn
+	sudo umount /mnt/stick
 
 .PHONY: data
 

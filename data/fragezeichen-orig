@@ -219,7 +219,7 @@ Schwanebeck: Kleist/Goethestr.: gute Umfahrunsgmöglichkeit für Zepernicker Str./
 Röntgental, Buchenallee: Qualität?	?? 17689,27853 18418,29246
 Gamengrund: genauere Wegführung, Qualität, teilweise war es sehr sandig!. Geht es von der B 158 aus noch weiter in Richtung Norden?	?? 39307,22734 39106,24096 38867,24914 40048,28763 40331,30763 40508,30935 40750,31012 41300,31862 41200,31900 40562,31025 39783,31398
 Brunow - Gamengrund: Qualität?	? 41710,36619 43362,37337 43825,37262 43975,36775 43637,36362 42975,36212 42854,35917
-Normannenstr.: Einbahnstraße auch für Radfahrer?	? -3692,2549 -3579,2532 -3395,2403
+# Normannenstr.: gar keine Einbahnstraße	? -3692,2549 -3579,2532 -3395,2403
 Wasgenstr.: Qualität zwischen Spanische Allee und Matterhornstr. (wahrscheinlich Kopfsteinpflaster?)?	? -2481,2900 -2614,3124
 Kleinziethen - Pechsteinstr. (Lichtenrade): befahrbare Verbindung, Qualität?	? 13506,-2809 12232,-2281
 Mauerweg Lichtenrade - Lichterfelde: befahrbar, Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 10448,-3214 10291,-3193 9560,-3155 9471,-2138 8334,-2101 8384,-1581 7110,-596 6634,-137 6172,306 6011,195 5831,71 4400,-913
@@ -347,7 +347,6 @@ Blumberger Mühle - Gorlsdorf: Qualität etc.	? 45761,70992 45584,72614
 Peetzig - Steinhöfel: Qualität etc.	? 44200,74890 42992,76027 41901,77034 41472,77229
 Prenzlau: Seeweg: Qualität?	? 39668,100787 39787,101031 39867,101104
 Potsdam, Burgstr.: Qualität?	? -12553,-1278 -12500,-1437 -12281,-1378 -12265,-1434
-Heiliger See, Westufer: Parkweg, Schiebestrecke, Treppen am Marmorpalais	? -12321,9 -12278,134 -12156,193 -12103,315 -12143,353 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
 Mauerweg am Teltowkanal: Qualität (laut "Berliner Umland" größtenteils gut geeigneter Radweg)?	? 15573,4122 14625,4881 14457,5097
 Mauerweg zwischen Späthstr. und Britzer Allee: laut "Berliner Umland" gut geeigneter Radweg	? 14600,5450 14659,5853 15142,5889
 Leipe - Lübbenau: Waldweg, teilweise muss getragen werden	? 55335,-60336 55150,-60225 54925,-60300 54337,-60275 52537,-60162 52137,-60387 51162,-59762 50725,-59237 50575,-59287
@@ -362,7 +361,7 @@ Fährweg - Niederneuendorfer Allee: Kleingartenanlage, Qualität?	? -1800,17710 -1
 Mauerweg Spandau: Qualität?	? -2742,19975 -2821,19740 -3497,20003
 Steinhöfel - Poratz - Ringenwalde: Qualität?	? 37482,74476 37025,74400 36800,74137 36612,74162 35775,73750 35469,73594 35125,73487 33687,73037 33075,72750 32750,72787 32600,73062 31862,73112 30712,72625 30244,72598
 Glambeck - Templin: ist das hier die in Glambeck ausgeschilderte Strecke? Qualität?	? 37273,68606 36000,69075 35962,70325 35600,70962 35112,70912 35080,71176
-Am Neuen Garten: Wegführung? Qualität, anscheinend Kopfsteinpflaster (Q2)?	? -12557,11 -12462,221 -12378,284 -12184,803 -12181,1196
+Am Neuen Garten: Qualität, anscheinend (zumindest im südlichen Abschnitt) Kopfsteinpflaster (Q2)? Einbahnstraße im nördlichen Abschnitt für Radfahrer?	? -12576,107 -12323,635 -12276,831 -12212,1201
 # Fritz-von-der-Lancken-Str. (Potsdam) existiert noch nicht
 Bertinistr./Bertiniweg: Durchfahrt möglich? Qualität?	? -12185,1388 -12153,1787 -12275,1875 -12731,2009 -12893,1915
 Viereckremise/Grenzallee Potsdam: Durchfahrt möglich? Qualität?	? -13418,1668 -13854,2025 -14315,2135
@@ -460,7 +459,6 @@ Geltow - Pirschheide am Templiner See: Laut "mobil-potsdam.de" überwiegend Waldw
 Am Templiner See zwischen Damm und R-Bhf. Charlottenhof: laut "mobil-potsdam.de" unterschiedliche Qualität ("Promenade", betoniert, Waldweg)	? -15886,-4339 -15750,-4196 -15765,-3990 -15431,-3618 -15340,-3406 -15203,-2931 -14912,-2884 -14734,-2471 -14859,-2384
 Uferweg - Mercure-Hotel: Zugang unter der Langen Brücke möglich?	? -12600,-1706 -12656,-1820 -12719,-1661
 S-Bahnhof Griebnitzsee - Uferweg am Griebnitzsee: laut "mobil-potsdam.de" eine Treppe	? -8063,-1651 -8250,-1503
-Behlertstr.: Einbahnstraße in östlicher Richtung (für Autofahrer ja, auch für Radfahrer?)?	? -12868,-493 -12607,-434 -12362,-370
 Strausberg - Garzau: Qualität (laut "Berliner Umland" teilweise witterungsabhängige Strecke, auf Garzauer Seite anscheinend nur Feldweg)?	? 42578,15750 43850,15737 45618,15431 46150,15006 46421,14990
 Waldsieversdorf: laut "Berliner Umland" geeignete Strecke	? 54751,15669 55000,15887 55225,15862 55875,16287 56487,16825
 Waldsieversdorf - Münchehofe: laut "Berliner Umland" witterungsabhängige Strecke	? 56487,16825 58512,18662
@@ -776,10 +774,8 @@ Pfleidererstr.: Qualität?	? 3050,3316 2854,3373 2778,3392
 Achenseeweg - Mauerweg: existiert eine Verbindung?	? 5993,243 6011,195
 #: XXX Eintrag von Dorle existiert: "gut"
 Germaniapromenade: Qualität?	? 12644,6087 12265,6006
-Mentzelstr.: Qualität? Einbahnstraße im südlichen Abschnitt?	? 21732,4901 21684,4814 21579,4579 21535,4457
+Mentzelstr.: Einbahnstraße im südlichen Abschnitt?	? 21535,4457 21579,4579
 Ernst-Grube-Str.: Qualität im südlichen Abschnitt?	? 21325,4998 21300,4837 21264,4809 21332,4655
-#: XXX laut bln.verkehr-Artikel:
-Annenstr./Neue Roßstr.: ist hier eine Ampel?	? 10819,11664
 Mürow - Kerkow: Qualität? Auf der östlichen Seite sah es gut aus (asphaltiert)	? 50387,70821 49950,70956 49512,70978 49007,71214
 Kleinow - Neu-Kleinow: Qualität? weiterhin Asphalt?	? 50331,95646 49872,95222
 Melzow - Gramzow: Qualität?	? 42040,86111 43447,87508 44202,88388 44944,88730 46430,89130
@@ -825,3 +821,4 @@ Am Finowkanal: Qualität?	? 37162,48462 36969,48599 36816,48645 36367,48561 35986
 Am Finowkanal: Qualität?	? 35659,48744 35575,48942 35377,49117 35270,49300 34966,49422 34745,49323 34630,49178 34547,49193 34478,49056 34349,48972 33937,48866 33701,49041 33526,49025 33221,48820 32696,48706 32391,48706 32162,48797 32002,48904 31820,48919 31455,49067
 Am Finowkanal: Qualität?	? 31507,49193 31317,49216 31043,49307 30654,49330 30426,49216 30296,49224 29999,49300 29375,49269 29176,49323 28895,49277 28712,49399 28658,49391 28643,49498 27508,49376 27341,49383 26945,49262 26670,49231 26450,49284 26442,49414 26594,49734 26587,49894 26693,50084 26000,50214 24583,49825 24461,49041 24393,48972
 Ützdorf - Bogensee - Prenden: Qualität?	? 18337,39131 18345,39215 18535,39443 18558,39580 18733,39862 19053,40144 19213,40479 19053,40540 18809,40555 18665,40616 18535,40784 18124,40730 18048,40906 17979,40982 18033,41066 17903,41233 18132,41492 18215,41637 18360,41728 18238,41972 18231,42239 18170,42574 18807,43129
+Prinz-Friedrich-Leopold-Str.: zunächst Kopfsteinpflaster (50m), dann anscheinend Asphalt, wie weiter?	? -3692,2549 -3568,2382 -3532,2189 -3501,1826 -3559,1760

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2polish,v 1.13 2005/07/08 00:46:10 eserte Exp eserte $
+# $Id: bbd2polish,v 1.14 2005/07/11 21:03:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -21,6 +21,7 @@
 #  .../bbbike/miscsrc/bbd2polish              > /tmp/bbbike.mp
 #  .../bbbike/miscsrc/bbd2polish -mapset brb  > /tmp/brb.mp
 #  .../bbbike/miscsrc/bbd2polish -mapset wide > /tmp/wide.mp
+#  .../bbbike/miscsrc/bbd2polish -mapset fragezeichen > /tmp/fragezeichen.mp
 #
 # And then use cgpsmapper to convert the mp files to img files
 # Use sendmap to send the img files to the Garmin device.
@@ -46,11 +47,9 @@ use Getopt::Long;
 my $codepage; # eg. 1252
 my $mapset = "b";
 my $layer;
-my $include_fragezeichen = 0;
 if (!GetOptions("mapset=s" => \$mapset,
 		"layer=s" => \$layer,
 		"codepage=s" => \$codepage,
-		"include-fragezeichen!" => \$include_fragezeichen,
 	       )) {
     die "usage: $0 [-mapset [ b | brb | wide ]";
 }
@@ -59,14 +58,16 @@ my $base_id = 10000099; # XXX how to choose img id? is there a manual? or just i
 my $name = {"b"    => "BBBike map",
 	    "brb"  => "BBBike BRB map",
 	    "wide" => "BBBike wide map",
+	    "fragezeichen" => "BBBike Fragezeichen",
 	   }->{$mapset};
 my $id   = {"b"    => $base_id,
 	    "brb"  => $base_id+1,
 	    "wide" => $base_id+2,
+	    "fragezeichen" => $base_id+3,
 	   }->{$mapset};
 die "Cannot set name and/or id for <$mapset>"
     if !defined $name || !defined $id;
-my $levels = 4;
+my $levels = 5;
 my $use_dictionary = 0;
 
 my $out = "";
@@ -91,21 +92,24 @@ PreProcess=F
 TreSize=3000
 Elevation=m
 Levels=@{[ $levels + 1 ]}
+; with Pl, POI etc.
+Level0=24
 ; with NN/N
-Level0=22
+Level1=22
 ; with H
-Level1=20
+Level2=20
 ; with HH/B
-Level2=18
+Level3=18
 ; with HH/B
-Level3=16
+Level4=16
 ; empty
-Level4=14
+Level5=14
 Zoom0=1
 Zoom1=2
 Zoom2=3
 Zoom3=4
 Zoom4=5
+Zoom5=6
 [END-IMG ID]
 
 EOF
@@ -153,14 +157,19 @@ if (defined $layer) {
     @files = $layer;
 } else {
     if ($mapset eq 'b') {
-	@files = qw(strassen wasserstrassen flaechen sbahn ubahn berlin faehren);
-	if ($include_fragezeichen) {
-	    push @files, qw(fragezeichen);
+	@files = qw(strassen wasserstrassen flaechen sbahn sbahnhof ubahn ubahnhof berlin faehren kneipen);
+	for my $i (0 .. $#files) {
+	    if ($files[$i] eq 'strassen' && -r "$FindBin::RealBin/../tmp/non-faked-strassen") {
+	        $files[$i] = "$FindBin::RealBin/../tmp/non-faked-strassen";
+	        warn "Using non-faked-strassen instead of strassen...\n";
+	    }
 	}
     } elsif ($mapset eq 'brb') {
-	@files = qw(orte landstrassen wasserumland rbahn potsdam);
+	@files = qw(orte landstrassen wasserumland rbahn rbahnhof potsdam);
     } elsif ($mapset eq 'wide') {
 	@files = qw(orte2 landstrassen2 wasserumland2 deutschland);
+    } elsif ($mapset eq 'fragezeichen') {
+	@files = qw(fragezeichen);
     }
 }
 
@@ -178,6 +187,7 @@ for my $file (@files) {
 	my $name = convert_strname($r->[Strassen::NAME]);
 	my $add;
 	($name, $add) = split(/\|/, $name);
+	$name = "" if !defined $name;
 
 	if ($file =~ /landstrassen/) {
 	    if ($name =~ /\S+\s-\s\S+/) {
@@ -195,14 +205,16 @@ for my $file (@files) {
 	    if ($file =~ /^orte/) {
 		$is_city = "Y";
 		if ($cat =~ /^[56]$/) {
-		    $end_level = 4;
+		    $end_level = 5;
 		} elsif ($cat =~ /^[34]$/) {
-		    $end_level = 3;
+		    $end_level = 4;
 		} elsif ($cat =~ /^[2]$/) {
-		    $end_level = 2;
+		    $end_level = 3;
 		} elsif ($cat =~ /^[01]$/) {
-		    $end_level = 1;
+		    $end_level = 2;
 		}
+	    } elsif ($cat eq 'Pl') {
+	        $end_level = 0;
 	    }
 	    $out .= <<EOF;
 [POI]
@@ -210,7 +222,7 @@ Type=$type
 Label=$name
 City=$is_city
 Data0=($c[0]->[0],$c[0]->[1])
-EndLevel=1
+EndLevel=$end_level
 [END-POI]
 
 EOF
@@ -235,7 +247,8 @@ EOF
 	    $out .= <<EOF;
 [POLYGON]
 Type=$type
-;Label=$name
+; XXX werden diese ignoriert?
+Label=$name
 EOF
 	    
 	    $out .= make_polygon_coords(\@c);
@@ -260,12 +273,12 @@ EOF
 	    } @c) . "\n";
 	    $out .= "Data0=" . $data0;
 	    my $end_level = $levels;
-	    if ($file eq 'strassen') {
-		$end_level = 0;
+	    if ($file =~ /^(non-faked-)?strassen$/) {
+		$end_level = 1;
 		if ($cat ne 'NN' && $cat ne 'N') {
-		    $end_level = 1;
+		    $end_level = 2;
 		    if ($cat ne 'H') {
-			$end_level = 2;
+			$end_level = 3;
 		    }
 		}
 	    }
@@ -293,8 +306,13 @@ sub cat2type {
     return 3 if $cat eq 'H'; # Principal HWY - medium
     return 4 if $cat eq 'N'; # Arterial Road - medium
     return 6 if $cat eq 'NN'; # Road - thin
-    return 20 if $cat =~ /^[RUS][ABC]?$/; # Railroad
-    return undef if $cat =~ /^[RUS]0$/;
+    if ($file =~ /[rus]bahnhof$/) {
+        return 2816 if $cat =~ /^[RUS][ABC]?$/; # namedpoint
+        return undef if $cat =~ /^[RUS]0$/;
+    } else {
+        return 20 if $cat =~ /^[RUS][ABC]?$/; # Railroad
+        return undef if $cat =~ /^[RUS]0$/;
+    }
     if ($cat eq 'Pl') {
 	if ($rgn_type eq 'poi') {
 	    # Namedpoint (small point)
@@ -321,6 +339,7 @@ sub cat2type {
     return 0x1e if $cat eq 'Z' && $file =~ /^deutschland$/;
     return 0x1a if $cat eq 'Q';
     return 0x01 if $cat =~ /^\?+/; # major highway --- nicht zu übersehen!
+    return 0x4500 if $file =~ /kneipen$/; # 0x4500 restaurant, maybe also 0x4600 for bars
     warn "Unhandled cat <$cat>\n";
     return 22; # Trail
 }

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.54 2005/07/08 00:46:22 eserte Exp $
+# $Id: Makefile,v 2.56 2005/07/11 21:03:43 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -191,7 +191,9 @@ wasserumland2: wasserumland2-orig
 
 flaechen: flaechen-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) flaechen-orig > flaechen
+	$(CONVERT2HAFAS) flaechen-orig > flaechen~
+	cp $@~ $@
+	rm $@~
 	-@$(READONLY) $@
 
 green:	green-orig
@@ -988,6 +990,7 @@ do-check-nearest:	.check-do-check-nearest
 	    '$$s = Strassen->new($$ARGV[0]);\
 	     iterate { ($$dist) = $$_->[Strassen::NAME] =~ /^\S+\s+(\d+)/; die "Distance $$dist m found" if $$dist < 14 } $$s' ${PERSISTENTTMPDIR}/check_nearest.bbd
 
+.if 0
 GNUmakefile: Makefile ../miscsrc/b2gmake
 	../miscsrc/b2gmake < Makefile > GNUmakefile
 	chmod ugo+r GNUmakefile
@@ -995,6 +998,10 @@ GNUmakefile: Makefile ../miscsrc/b2gmake
 GNUmakefile.mapfiles: Makefile.mapfiles ../miscsrc/b2gmake
 	../miscsrc/b2gmake < Makefile.mapfiles > GNUmakefile.mapfiles
 	chmod ugo+r GNUmakefile.mapfiles
+.else
+GNUmakefile: Makefile
+	perl -e 'print qq{all:\n\t\@echo "*** Sorry, your make program is not supported."\n\t\@echo "*** Please try pmake from the BSD project."\n\t\@echo "*** You can get it from http://www.sourceforge.net/projects/srezic"\n\t\@echo ""\n\t\@false\n}' > $@
+.endif
 
 ######################################################################
 
@@ -1002,22 +1009,20 @@ CGPSMAPPER?=	/usr/ports/distfiles/cgpsmapper/cgpsmapper0081static
 SENDMAP?=	/usr/ports/distfiles/cgpsmapper/sendmap17Lstatic
 BBD2POLISH?=	${MISCSRCDIR}/bbd2polish
 
-cgpsmapper-output:	${PERSISTENTTMPDIR}/bbbike.mp \
-			${PERSISTENTTMPDIR}/brb.mp \
-			${PERSISTENTTMPDIR}/wide.mp
+CGPSMAPPER_FILES=	bbbike brb wide fragezeichen
+CGPSMAPPER_MP_FILES=	${CGPSMAPPER_FILES:S/$/.mp/:S/^/${PERSISTENTTMPDIR}\//}
+CGPSMAPPER_IMG_FILES=	${CGPSMAPPER_FILES:S/$/.img/:S/^/${PERSISTENTTMPDIR}\//}
 
-cgpsmapper-images:	${PERSISTENTTMPDIR}/bbbike.img \
-			${PERSISTENTTMPDIR}/brb.img \
-			${PERSISTENTTMPDIR}/wide.img
+cgpsmapper-output:	${CGPSMAPPER_MP_FILES}
+
+cgpsmapper-images:	${CGPSMAPPER_IMG_FILES}
 
 cgpsmapper-upload:	cgpsmapper-images
-	-${SENDMAP} /dev/cuaa0  ${PERSISTENTTMPDIR}/bbbike.img \
-				${PERSISTENTTMPDIR}/brb.img \
-				${PERSISTENTTMPDIR}/wide.img
+	-${SENDMAP} /dev/cuaa0  ${CGPSMAPPER_IMG_FILES}
 
 ${PERSISTENTTMPDIR}/bbbike.mp:	${BBD2POLISH} \
 				strassen wasserstrassen flaechen sbahn ubahn berlin faehren fragezeichen
-	${BBD2POLISH} -include-fragezeichen -mapset b > $@
+	${BBD2POLISH} -mapset b > $@
 
 ${PERSISTENTTMPDIR}/brb.mp:	${BBD2POLISH} \
 				orte landstrassen wasserumland rbahn potsdam
@@ -1027,14 +1032,14 @@ ${PERSISTENTTMPDIR}/wide.mp:	${BBD2POLISH} \
 				orte2 landstrassen2 wasserumland2 deutschland
 	${BBD2POLISH} -mapset wide > $@
 
-${PERSISTENTTMPDIR}/bbbike.img: ${PERSISTENTTMPDIR}/bbbike.mp
-	-${CGPSMAPPER} ${PERSISTENTTMPDIR}/bbbike.mp
+${PERSISTENTTMPDIR}/fragezeichen.mp:	${BBD2POLISH} \
+				fragezeichen
+	${BBD2POLISH} -mapset fragezeichen > $@
 
-${PERSISTENTTMPDIR}/brb.img: ${PERSISTENTTMPDIR}/brb.mp
-	-${CGPSMAPPER} ${PERSISTENTTMPDIR}/brb.mp
-
-${PERSISTENTTMPDIR}/wide.img: ${PERSISTENTTMPDIR}/wide.mp
-	-${CGPSMAPPER} ${PERSISTENTTMPDIR}/wide.mp
+.for i in ${CGPSMAPPER_FILES}
+${PERSISTENTTMPDIR}/$i.img: ${PERSISTENTTMPDIR}/$i.mp
+	-${CGPSMAPPER} ${PERSISTENTTMPDIR}/$i.mp
+.endfor
 
 ######################################################################
 

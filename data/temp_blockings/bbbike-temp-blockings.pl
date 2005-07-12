@@ -218,13 +218,12 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Hermannstraße, zwischen Emserstraße und Thomasstraße gesperrt. Grund: Straßenfest. Dauer: 11.10.2003, 06.00 Uhr bis 12.10.2003, 24.00 Uhr',
        type  => 'handicap',
      },
-     { from  => undef, # 
-       until => Time::Local::timelocal(reverse(2005-1900,7-1,4,23,59,59)), # schon aufgehoben!
-       text  => 'Schlichtallee (Lichtenberg) Richtung Lückstr., Baustelle, Einbahnstraße in Richtung Haupstraße (bis Ende 10/2005)
-',
-       type  => 'gesperrt',
+     { from  => 1121117105, # 2005-07-11 23:25
+       until => 1130799600, # 2005-11-01 00:00
+       text  => 'Schlichtallee (Lichtenberg) Richtungen Süden zwischen Hauptstr. und Lückstr. Baustelle, Fahrtrichtung gesperrt (bis 31.10.2005)',
+       type  => 'handicap',
        data  => <<EOF,
-userdel	1 15751,10582 15629,10481
+userdel	q4; 16032,10842 15751,10582 15629,10481
 EOF
      },
      { from  => 1070341200, # 2003-12-02 06:00
@@ -1940,7 +1939,7 @@ userdel	2 33128,11823 32535,11591
 EOF
      },
      { from  => 1116194400, # 2005-05-16 00:00
-       until => Time::Local::timelocal(reverse(2005-1900,7-1,8,23,59,59)),
+       until => Time::Local::timelocal(reverse(2005-1900,8-1,31,23,59,59)),
        text  => 'L 15; (Fürstenberg-Rheinsberg); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-08.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -1948,7 +1947,7 @@ userdel	q4 -15062,76937 -14623,77426
 EOF
      },
      { from  => 1116194400, # 2005-05-16 00:00
-       until => Time::Local::timelocal(reverse(2005-1900,7-1,8,23,59,59)),
+       until => Time::Local::timelocal(reverse(2005-1900,8-1,31,23,59,59)),
        text  => 'L 222; (Gransee-Menz); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-08.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -2147,7 +2146,7 @@ userdel	q4 -2800,25478 -2446,25386
 EOF
      },
      { from  => 1119736800, # 2005-06-26 00:00
-       until => 1121119200, # 2005-07-12 00:00
+       until => 1121117530, # 1121119200 2005-07-12 00:00
        text  => 'L 26; (Löcknitz MVP-LG-Brüssow); zw. LG und Kno. Wollschow Deckeneinbau Vollsperrung 27.06.2005-11.07.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -2292,6 +2291,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -11509,25591 -11337,25571
+EOF
+     },
+     { from  => 1121117010, # 2005-07-11 23:23
+       until => 1128117600, # 2005-10-01 00:00
+       text  => 'Behrenstr. (Mitte) Richtung Gendarmenmarkt zwischen Glinkastr. und Charlottenstr. Baustelle, Fahrtrichtung gesperrt (bis 30.09.2005)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 9164,12172 9365,12196 9492,12214
 EOF
      },
     );

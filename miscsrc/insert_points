@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.53 2005/07/02 16:31:48 eserte Exp $
+# $Id: insert_points,v 1.54 2005/07/11 21:36:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -73,7 +73,20 @@ use BBBikeUtil;
 use File::Basename;
 use Strassen::Dataset;
 use Strassen::Core;
-use List::Util qw(first);
+BEGIN {
+    if (!eval q{
+        use List::Util qw(first);
+    }) {
+        *first = sub (&@) {
+            my $sub = shift;
+            for my $elem (@_) {
+                local $_ = $elem;
+                return $elem if $sub->($elem);
+            }
+            undef;
+        };
+    }
+}
 use File::Copy qw(cp);
 
 use vars qw($datadir);
@@ -316,7 +329,7 @@ sub process {
 		   qualitaet_l qualitaet_s
 		   handicap_l handicap_s
 		   strassen plaetze faehren
-		   rbahn
+		   rbahn rbahnhof
 		   sbahn sbahnhof
 		   ubahn ubahnhof
 		   nolighting

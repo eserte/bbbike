@@ -819,11 +819,6 @@ steht.)
 
 Teile nach BBBikeGPS etc. auslagern => schon gemacht, noch mehr?
 
-=item für cgpsmapper: zwischen Wäldern und Parks, und Seen und Meer
-unterscheiden; landstrassen/N und NN ab 8km oder so nicht mehr
-sichtbar haben; Straßennummern - wie?; beim Buildprozess fragezeichen
-separat erzeugen; veröffentlichen
-
 =item VernE<uuml>nftige Koordinaten verwenden
 
 Wahrscheinlich ist GKK (fE<uuml>r Deutschland) die beste Wahl.
@@ -1462,6 +1457,59 @@ already done). Change some files which are using this information
 
 Change convert_* to optionally not ignore directives and comments.
 Rewrite the misc/Makefile rule to use standard Strassen methods.
+
+=back
+
+=head2 cgpsmapper
+
+=over
+
+=item * (M3)
+
+zwischen Wäldern und Parks, und Seen und Meer unterscheiden
+
+=item * (M3)
+
+landstrassen/N und NN ab 8km oder so nicht mehr sichtbar haben;
+Sichtbarkeiten zwischen strassen und landstrassen differenzieren
+
+=item * (H2)
+
+Straßennummern - wie?
+
+=item * (M4)
+
+beim Buildprozess fragezeichen separat erzeugen
+
+=item * (H3)
+
+Images oder Prozess veröffentlichen
+
+=item * (M3)
+
+Eisenbahnen werden zurzeit nur bis 200m angezeigt. Für RB hochgehen
+auf 3 km oder mehr, bei S-Bahn auf ca. 800m, bei U-Bahn auf ca. 500m
+(falls es überhaupt geht).
+
+=item * (H3)
+
+Friedhof-POI (flaechen), scenic-POI (comments-scenic), bank-POI (falls
+ich noch sparkassen/citibank-Daten habe), sonst. Sehenswürdigkeiten ->
+building-POI, church-poi, hospital-poi, theater, museum, stadium, tall
+tower (Fernsehturm, Funkturm, Schäferbergturm), Zoo-POIs, igraliste
+(PVRT?)
+
+=item * (H3)
+
+Regionenübergreifende Dateien: feststellen, ob in Berlin oder nicht
+und dementsprechend in der richtigen Karte zeichnen (mittels
+line/point_in_polygon).
+
+=item * (H3)
+
+Einführen von Garmin-Typen in bbd, z.B.: SW::GARMIN=0x1f39. Diese
+könnten von bbd2polish direkt verwendet werden. IDs oder Klartextnamen
+verwenden?
 
 =back
 

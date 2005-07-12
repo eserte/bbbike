@@ -23,6 +23,7 @@ cgi/bbbike-sourceforge.cgi.config
 data/BASE
 data/Makefile
 data/Makefile.mapfiles
+data/GNUmakefile
 data/add_plaetze
 data/add_str
 data/ampeln-orig
@@ -322,3 +323,4 @@ Makefile.doc
 miscsrc/check_station_category
 miscsrc/bbd2polish
 miscsrc/gpx2bbd
+bbbike-stick.bat

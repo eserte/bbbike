@@ -1,4 +1,4 @@
-# $Id: comments_path-orig,v 4.19 2005/06/30 00:44:51 eserte Exp eserte $
+# $Id: comments_path-orig,v 4.20 2005/07/11 21:04:00 eserte Exp $
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C
 # CP   : wie "CP;", Kommentar gültig für beide Fahrtrichtungen
 # CP2; : Kommentar an Punkt A bei Fahrt von A nach B
@@ -157,3 +157,4 @@ Einfahrt gegenüber Waldcafe	CP2; 30021,5322 27096,5828
 Zur Hackerstr.: Hausdurchgang benutzen	CP2; 4996,6346 5017,6387
 Lützowplatz - Wichmannstr.: Fußgängerampel links benutzen	CP; 6918,10854 6824,10904 6681,10959
 Lützowplatz - Schillstr.: Fußgängerampel links benutzen	CP; 6918,10854 6824,10904 6732,10754
+Ausschilderung: Alter Markt	CS; -11875,-925 -11910,-945
