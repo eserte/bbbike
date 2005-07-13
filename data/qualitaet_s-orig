@@ -649,8 +649,6 @@ Normannenstr.: Kopfsteinpflaster	Q2 16156,12286 16270,12261
 R¸digerstr. (Lichtenberg): Kopfsteinpflaster	Q2 17487,12244 17010,12313 16810,12342
 Barbarossastr.: Kopfsteinpflaster	Q2 7128,9512 7010,9535
 Pr¸hﬂstr.: Kopfsteinpflaster	Q2 8766,4038 8967,4082 9338,4129 9455,4159 9848,4254
-#: unverified_by ADFC-Karte
-Obersteiner Weg: m‰ﬂig geeignet	Q2 13183,17580 13251,17525 13525,17304
 Marienburger Str.: Kopfsteinpflaster	Q2 11582,14448 11835,14309 12091,14179
 Hufelandstr.: Kopfsteinpflaster	Q2 12091,14179 12199,14102 12380,13975 12567,13839 12573,13792
 Limonenstr.: Kopfsteinpflaster	Q2 3725,4737 3578,4936 3418,5088 3357,5178 3324,5207
@@ -689,7 +687,7 @@ Wikingerufer: Kopfsteinpflaster	Q2 5369,12529 5391,12626 5376,12781 5372,12818 5
 Beerenstr.: Kopfsteinpflaster	Q2 82,3166 -765,3253 -1117,3317
 Jupiterstr.: Kopfsteinpflaster	Q2 14850,6546 15043,6799
 #: unverified_by ADFC-Karte
-Malchower Str.: m‰ﬂig geeignet	Q2 12841,18157 13163,18149 13374,18134 13537,18075 13631,18041 13732,18026 13901,18124
+Malchower Str.: m‰ﬂig geeignet	Q2 12841,18157 13035,18151 13163,18149 13374,18134 13537,18075 13631,18041 13732,18026 13901,18124
 #: unverified_by ADFC-Karte
 Grumbkowstr.: m‰ﬂig geeignet	Q2 11297,20686 11437,20341 11584,20058 11756,19694
 #: unverified_by ADFC-Karte
@@ -1573,7 +1571,7 @@ Togostr.	Q0 6260,16081 6119,16203
 Togostr.	Q0 6119,16203 5918,16389 5602,16718 5325,16915
 #: by: ^^^
 #: by: Beate Wolter: vvv
-Kommandantenstr. (Lichterfelde): Asphalt	Q0 3025,2847 3050,3316 3060,3710
+Kommandantenstr. (Lichterfelde): Asphalt	Q0 3025,2847 3036,3050 3050,3316 3060,3710
 #: note: Die ADFC-Karte meint f¸r den Abschnitt Finckensteinallee - Curtiusstr. "m‰ﬂig geeignet"
 Baseler Str.: Kopfsteinpflaster	Q2 3148,1888 3154,2467 3168,2838 3180,3035 3184,3413 3187,3499 3193,3793 3201,3968
 #: by: ^^^
@@ -1898,7 +1896,7 @@ Straﬂburger Str.: Kopfsteinpflaster	Q2 10902,13604 11060,13865 11160,14002 11262
 #: by: ^^^
 #: by: betti (grafik@...):
 #: XXX Eintrag war "gutes" Kopfsteinpflaster. Wie gut?
-Potsdamer Str. (Lichterfelde): Kopfsteinpflaster	Q2 3193,3793 3375,3544 3646,3154 3642,3045 3639,2816
+Potsdamer Str. (Lichterfelde): Kopfsteinpflaster	Q2 3193,3793 3375,3544 3646,3154 3640,3023 3639,2816
 #: by: harald kuendgen:
 Dessauerstr.: m‰ﬂiges Kopfsteinpflaster	Q2 6725,2494 6651,2479 6465,2356 6232,2201 6190,2200 6021,2071 5865,1975
 #: by: funda: vvv
@@ -2075,9 +2073,6 @@ Nahariyastr.: sehr guter Asphalt	Q0 11717,-1204 11778,-1706 11784,-1809
 Borsigstr.: asphaltiert	Q0 9517,13571 9394,13754 9334,13843
 #: by: Reinhard (otto):
 Newtonstr.: asphaltiert	Q0 19287,2939 19162,3087 19075,3178
-#: by: nic (kleene...):
-#: note: auch laut ADFC-Karte gut geeignet:
-G‰blerstr.: guter Beton	Q0 13146,17016 13029,17185 13023,17379 13011,17470
 #: by: Martin Weber:
 Staakener Str.: asphaltiert	Q0 -4709,14197 -4759,14128 -5909,14228 -6253,14240
 #: by: J¸rgen Bruhns:
@@ -2114,12 +2109,6 @@ Achenseeweg: Asphalt	Q0 5913,1176 5878,787 5916,499 5993,243
 Mercatorweg: m‰ﬂiger Beton	Q1 4873,645 4703,534
 #: by: geburzi:
 Andreezeile: Asphalt	Q0 1326,322 1225,309 781,693 721,956
-#: by: Matthias Wiegandt: vvv
-Strˆmannstr.: Asphalt	Q0 15556,22650 15579,22704 15684,22962 15834,23408 15884,23509 15950,23671
-Straﬂe 70: m‰ﬂiger Asphalt mit vielen Schlaglˆchern	Q2 15414,22748 15556,22650
-Straﬂe 70: loser Sandweg	Q3 15579,22704 16298,22221
-Blechenstr.: Asphalt	Q0 14028,16707 13876,16819
-#: by: ^^^
 #: by: Chris (yellow_orange):
 Brucknerstr.: m‰ﬂiges Kopfsteinpflaster	Q2 6056,4138 6287,3616
 #: by: dhb:
@@ -2140,10 +2129,30 @@ C‰sarstr.: etwas sandig	Q2 18665,9693 18655,9576 18621,9404
 #: by: Susan Richter:
 Griembergweg: Asphalt	Q0 11407,113 11072,108 10740,82
 #: by: Matthias Wiegandt vvv
+Strˆmannstr.: Asphalt	Q0 15556,22650 15579,22704 15684,22962 15834,23408 15884,23509 15950,23671
+Straﬂe 70: m‰ﬂiger Asphalt mit vielen Schlaglˆchern	Q2 15414,22748 15556,22650
+Straﬂe 70: loser Sandweg	Q3 15579,22704 16298,22221
+Blechenstr.: Asphalt	Q0 14028,16707 13876,16819
 Nunsdorfer Ring: Asphalt	Q0 8853,172 8981,275 9171,166 9280,-127 9159,-171
 Albertinenstr.: gutes Kopfsteinpflaster	Q1 14067,16127 14085,16210
 Albertinenstr.: Asphalt	Q0 14085,16210 14153,16528
-Amalienstr.: Asphalt	Q0 13814,16759 13990,16629 14153,16528
+Amalienstr.: Asphalt	Q0 14153,16528 13990,16629 13814,16759
+Amalienstr.: m‰ﬂiger Asphalt	Q1 13814,16759 13589,16965
+Amalienstr.: Asphalt	Q0 13589,16965 13361,17172
+#: note: laut ADFC-Karte "m‰ﬂig geeignet":
+Obersteiner Weg: Kopfsteinpflaster	Q2 13183,17580 13251,17525
+Obersteiner Weg: Kopfsteinpflaster, Straﬂenabsenkungen	Q2 13251,17525 13431,17380
+Obersteiner Weg: Beton	Q0 13431,17380 13525,17304
+#: note: laut ADFC-Karte im westlichen Teil gut, im ˆstlichen Teil m‰ﬂig geeignet:
+Thiesstr.: Asphalt	Q0 13023,17379 13115,17410 13251,17525 13290,17570
+#: note: auch laut ADFC-Karte gut geeignet, laut nic (kleene...) Beton, ein weiterer Eintrag meinte ebenfalls "Asphalt":
+G‰blerstr.: Asphalt	Q0 13146,17016 13029,17185
+G‰blerstr.: m‰ﬂiger Asphalt	Q1 13029,17185 13023,17379 13011,17470
+Str. 154: Verbundsteinpflaster	Q0 13011,17470 12965,17684 12856,17825
+#: note: laut ADFC-Karte gut geeignet: vvv
+Neukirchstr.: loser Sandweg	Q2 12896,18317 12752,18387
+Neukirchstr.: Kopfsteinpflaster	Q2 12752,18387 12562,18483
+#: note: ^^^
 #: by: ^^^
 #: by: Christof (keuter): vvv
 Markelstr.: asphaltiert	Q0 4528,6711 4679,6620

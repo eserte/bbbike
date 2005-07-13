@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.57 2005/07/12 21:47:00 eserte Exp $
+# $Id: Makefile,v 2.57 2005/07/12 21:47:00 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -666,8 +666,8 @@ check-disabled:	.check_label
 	$(CHECK_CONT) -data .strassen.tmp
 	@touch $@
 
-.check_plaetze1: plaetze .strassen.tmp
-	$(CHECK_POINTS) plaetze .strassen.tmp
+.check_plaetze1: plaetze .strassen.tmp landstrassen
+	$(CHECK_POINTS) plaetze .strassen.tmp landstrassen
 	@touch $@
 
 .check_plaetze2: plaetze add_plaetze

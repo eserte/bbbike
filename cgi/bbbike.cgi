@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.30 2005/07/02 14:47:05 eserte Exp eserte $
+# $Id: bbbike.cgi,v 7.31 2005/07/13 06:09:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -665,7 +665,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.31 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -718,6 +718,8 @@ if (!$use_background_image) {
     $via_bgcolor   = '#ecf4ff';
     $ziel_bgcolor  = '#e8f0ff';
 }
+use vars qw($speed_default);
+$speed_default = 20;
 
 @pref_keys = qw/speed cat quality ampel green winter fragezeichen/;
 
@@ -2326,7 +2328,7 @@ use vars qw($default_speed $default_cat $default_quality
 sub get_settings_defaults {
     get_global_cookie();
 
-    $default_speed   = (defined $c{"pref_speed"}   ? $c{"pref_speed"}+0 : 20);
+    $default_speed   = (defined $c{"pref_speed"} && $c{"pref_speed"} != 0 ? $c{"pref_speed"}+0 : $speed_default);
     $default_cat     = (defined $c{"pref_cat"}     ? $c{"pref_cat"}     : "");
     $default_quality = (defined $c{"pref_quality"} ? $c{"pref_quality"} : "");
     $default_ampel   = (defined $c{"pref_ampel"} && $c{"pref_ampel"} eq 'yes' ? 1 : 0);
@@ -2547,7 +2549,7 @@ sub search_coord {
 
     # Tragen vermeiden
     $extra_args{Tragen} = 1;
-    my $velocity_kmh = $q->param("pref_speed") || 20;
+    my $velocity_kmh = $q->param("pref_speed") || $speed_default;
     $extra_args{Velocity} = $velocity_kmh/3.6; # convert to m/s
     # XXX Anzahl der Tragestellen zählen...
 
@@ -2974,6 +2976,9 @@ sub search_coord {
 	@strnames = $net->route_to_name($r->path);
 
 	foreach my $speed (@speeds) {
+	    if ($speed == 0) {
+		$speed = $speed_default; # sane default
+	    }
 	    my $def = {};
 	    $def->{Pref} = ($q->param('pref_speed') && $speed == $q->param('pref_speed'));
 	    my $time;
@@ -5614,7 +5619,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/07/02 14:47:05 $';
+    my $cgi_date = '$Date: 2005/07/13 06:09:50 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {
