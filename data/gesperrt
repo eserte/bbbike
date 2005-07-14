@@ -272,6 +272,7 @@ Takustr.	1 3324,5207 3209,5214 3079,5411 2953,5606 2909,5674
 Schönerlinder Str.	1 21799,4319 21640,4368
 Mentzelstr.	1 21579,4579 21535,4457
 Amalienstr.	1 13814,16759 13589,16965
+Cosimaplatz	1 5487,7620 5452,7660 5490,7696 5525,7660 5487,7620
 Benkertstr.	1 -12685,-870 -12712,-734 -12727,-640
 Hans-Thoma-Str.	1 -12148,-784 -12190,-775 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
@@ -340,6 +341,12 @@ Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -
 Stephanstr.	1s 6526,4475 6377,4490
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
+Ortrudstr. -> Bundesallee: Bundesplatztunnel	3 5487,7560 5359,7619 5360,7554
+Bundesallee -> Ortrudstr.: Bundesplatztunnel	3 5359,7661 5359,7619 5487,7560
+Sentastr. -> Bundesallee: Bundesplatztunnel	3 5452,7660 5359,7661 5359,7619
+Bundesallee -> Sentastr.: Bundesplatztunnel	3 5358,7711 5359,7661 5452,7660
+Bundesallee -> Sieglindestr.: Bundesplatztunnel	3 5356,7862 5358,7711 5458,7866
+Sieglindestr. -> Bundesallee: Bundesplatztunnel	3 5458,7866 5358,7711 5359,7661
 Lützowpl. -> Lützowufer: unbequem passierbarer Mittelstreifen	3 7002,11034 6873,11011 6732,11106
 Lützowpl. -> Schillstr.: unbequem passierbarer Mittelstreifen	3 7002,11034 6873,11011 6824,10904
 Schillstr. -> Lützowpl.: unbequem passierbarer Mittelstreifen	3 6882,11061 6873,11011 7002,11034

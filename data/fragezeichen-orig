@@ -22,6 +22,7 @@ Storkower Straße zwischen Kniprode- und Greifswalder Straße	? 13453,14678 12722,
 Grellstr.	? 12722,15105 12434,15272 12252,15376 11941,15586
 Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 12188,14321 12338,14532 12437,14680 12536,14827 12722,15105 12743,15138 12886,15346 12976,15483 13098,15592 13332,15765
 Richard-Wagner-Str.	? 3844,11649 3837,11760 3810,11843 3782,12104 3763,12279
+#: last_checked: 2005-07-13
 Martin-Luther-Straße (oder die gesamte Straße, wo jetzt schon die Busspur ist?)	? 6468,8109 6470,8464 6471,8639 6470,8681
 Gorkistr.	? 4423,20848 4265,20799 3569,20583 3329,20538 2621,20404 2348,20353 2311,20348
 Vulkanstraße	? 15896,13158 15880,13535 15873,14046 15838,14319
@@ -155,6 +156,8 @@ Straße 59: fester Sandweg, sehr uneben, Q2	? 12484,20996 12537,20856
 Haltrichweg: Asphalt, Q0, Zugang zur Zingerleweg über sandigen Waldweg (Q2)	? -8475,5675 -8431,5750 -8356,5903
 #: XXX war ein anonymer Eintrag, als Spielstraße ausgewiesen:
 Roßweiner Ring: Qualität? Anbindung an das restliche Netz fehlt	? 25007,13951 25146,13901 25120,13803 24975,13848
+#: XXX Eintrag von R. Lindner OK, aber keine Verknüpfung zum Netz:
+Summter Str.: mäßiger Beton, Q1	? 24635,8007 24729,8659 25095,9159 25678,9992
 Borussiastr.: aus dem Bus heraus sah es so aus, als ob hier *kein* Kopfsteinpflaster ist, vielleicht David nochmal fragen?	? 9241,6791 9706,6802
 Stadtplazu am Zwirngraben: ist er hier?	? 10286,13051 10236,13016 10316,13028
 Bürgerpark Pappelfriedhof: ist er hier?	? 11121,15327 11182,15284 11151,15233 11101,15263 11115,15284 11098,15298
@@ -206,7 +209,6 @@ Pankeweg zwischen Chausseestr. und Gerichtstr.: Durchfahrt möglich? Qualität?	??
 Pankeweg zwischen Pankstr. und Wiesenstr.: Qualität (laut ADFC-Karte ungeeignet)?	?? 8179,15601 8140,15859
 Pankeweg durch Wedding: Durchfahrt möglich? Qualität?	?? 8517,16395 8592,16406 8759,16684 8904,17059 8983,17195 9131,17664 9084,17678 9140,17921
 Weg am Tegeler Fließ: Durchfahrt möglich? Qualität, wahrscheinlich Waldweg Q2?	?? 7639,24383 6966,24090 6329,23969 6083,24107 5678,24021 5402,23949 5117,23654 5126,23484 5059,23186 4774,22987 4416,22891 4208,22866 4144,22756 3898,22581 3804,22391 3636,22368 3443,22201 3372,22088 3139,22201 2653,21993 2504,21768 2321,21532 2072,21339 1914,21508
-Ist die alte Verbindung Hermsdorfer Damm zur Heiligenseestr. noch vorhanden?	?? 1835,21427 1470,21205
 Landsberger Allee/Dahmeweg/Wiesenburger Weg: Sind die Zugänge vorhanden, Einbahnstraßen?	? 19329,14897 19283,14982 19280,15014 19472,15184
 Dorfstr./Seenpromenade Groß Glienicke: Durchfahrt möglich? Kopfsteinpflaster?	? -9449,7005 -9741,6106 -9797,5374 -9686,5268 -9678,4913
 Verbindung zwischen Siegfriedstr. und Frankfurter Allee: Durchfahrt möglich? Oder nur für Fußgänger? Treppe?	? 16746,11921 16738,11878
@@ -565,7 +567,6 @@ Parkstr. (Potsdam): Fortsetzung zur Schopenhauerstr.?	? -13803,-462 -13965,-590 
 Voltaireweg in diese Fahrtrichtung gesperrt?	?; -14034,-571 -13795,-407 -13636,-331
 Rübelandstr.: Qualität?	? 12787,7546 12818,7403
 Unter den Linden: irgendwo zwischen Zeughaus und Universitätsstr. ist noch eine Ampel	? 9603,12372 9782,12393 9853,12402 9918,12411
-Koburger Str.: Qualität? Linksabbiegen in die Hauptstr. möglich?	? 6534,8467 6560,8219
 Krahmerstr.: laut ADFC-Karte gute Qualität; am Hindenburgdamm Linksabbiegen möglich; wie sieht die Verbindung zur Uferpromenade aus?	? 4534,3456 4801,3370 4862,3345 5015,3292
 Wattstr./nördlicher Teil der Strelitzer Str.: Qualität?	? 9361,15066 9437,14926 9526,14779 9621,14624
 Ruppiner Str. nördlich der Bernauer Str.: Qualität?	? 10011,14810 9956,14909 9929,14957 9904,15014 9857,15122
@@ -752,7 +753,6 @@ Neeberg - Krummin: Qualität?	? 35047,182022 36973,183302
 Wolgast - Ziemitz: Qualität?	? 33315,183598 32822,181806 32653,180114
 Neeberg - Sauzin: Qualität?	? 35047,182022 34133,181849 33287,181934 32822,181806
 Liepe - Grüssow: Qualität?	? 43331,174099 44780,175658
-Lefevrestr.: Einbahnstraße nur für Autofahrer, in welcher Richtung?	? 5215,6643 5372,6663
 Schwarzer Weg: möglicherweise ist das letzte Stück zwischen Grenzweg und Nalepastr. nicht befahrbar	? 17295,7336 17284,7175
 Bruno-Walter-Str.: Qualität?	? 5516,2873 5614,2822 5774,3007 5853,3050
 Stolpe - Usedom: Qualität des Radweges? In Stolpe wahrscheinlich Asphalt/Verbundsteinpflaster, westlich von Stolpe wahrscheinlich Asphalt? Genaue Koordinaten?	? 47621,163737 46987,163775 43164,164582

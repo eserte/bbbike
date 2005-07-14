@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.178 2005/07/06 23:17:43 eserte Exp $
+# $Id: bbbike,v 3.180 2005/07/13 22:19:23 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -186,7 +186,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.178 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.180 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4638,6 +4638,11 @@ if ($ENV{BBBIKE_GUI_TEST}) {
     warn $@ if $@;
 }
 
+# XXX workaround for BBBikeLazy bug
+if (defined $set_mode && $set_mode eq 'edit' && $lazy_plot) {
+    $lazy_plot = 0;
+}
+
 MainLoop unless $ENV{BBBIKE_TEST_PERFORMANCE};
 
 ##### Subs ### RELOADER_START ############################################
@@ -5239,9 +5244,10 @@ sub define_item_attribs {
 	 qw(comm-route-label-bg comm-route-label qs hs ql hl mount nl delnet
 	    O o p pl-fg lsas lsas-t lsa-bg lsa-fg
 	    vf-fg pp kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
-	    L pp-L L-img L-fg personal-fg personal-label ovl
+	    personal-fg personal-label ovl
 	    gpsanimrect zoomrect),
 	);
+    # XXX remove these? (was between rest-fg and personal-fg) L pp-L L-img L-fg 
 }
 
 sub generate_plot_functions {
@@ -8607,6 +8613,12 @@ sub plot_sperre {
 				      : get_strassen_file($sperre_file)
 				     );
 	}
+	$p_obj{$abk} = $gesperrt;
+	my $is_car = $gesperrt->file =~ /gesperrt_car/;
+	my $car_photo;
+	if ($is_car) {
+	    $car_photo = load_photo($top, 'car.' . $default_img_fmt, -persistent => 1);
+	}
 
 	my $width0  = get_line_width('sperre0');
 	my $width1  = get_line_width('sperre1');
@@ -8665,9 +8677,12 @@ sub plot_sperre {
 	    my @kreuzungen = @{$ret->[Strassen::COORDS]};
 	    last if !@kreuzungen;
 
+	    my($icon_x, $icon_y, $icon_anchor);
+	    my $sub_cat;
 	    my($cat,@addinfo) = split ':', $ret->[Strassen::CAT];
 	    if ($cat eq StrassenNetz::BLOCKED_CARRY) {
 		if ($width0) { # größer 0
+		    $sub_cat = 'sperre0';
 		    my($x,$y) =
 		      transpose(@{Strassen::to_koord1($kreuzungen[0])});
 
@@ -8679,15 +8694,16 @@ sub plot_sperre {
 			$c->createLine
 			    ($x-$cos4+$xadd, ($y+$yadd)-$sin4, $x+$cos4+$xadd, ($y+$yadd)+$sin4,
 			     -width => $width0, # XXX $width0 verwenden und in get_line_width anpassen
-			     -tags => [$abk, 'sperre0',
+			     -tags => [$abk, $sub_cat,
 				       $ret->[Strassen::NAME], $abk.'-'.$pos],
 			    );
 		    }
+		    ($icon_x, $icon_y, $icon_anchor) = ($x, $y, 'n');
 		}
-		next;
 	    } elsif ($cat eq StrassenNetz::BLOCKED_NARROWPASSAGE) {
 #XXX works, but write nicer...
 		# if ($widthBNP) XXX
+		$sub_cat = 'sperreBNP';
 		my($x,$y) =
 		    transpose(@{Strassen::to_koord1($kreuzungen[0])});
 
@@ -8701,7 +8717,7 @@ sub plot_sperre {
 		    $c->createLine
 			($x-$cos1+$xadd, ($y+$yadd)-$sin1, $x+$cos4+$xadd, ($y+$yadd)+$sin4,
 			 -width => $width0, # XXX $widthBNP verwenden und in get_line_width anpassen
-			 -tags => [$abk, 'sperreBNP',
+			 -tags => [$abk, $sub_cat,
 				   $ret->[Strassen::NAME], $abk.'-'.$pos],
 			);
 		}
@@ -8710,13 +8726,14 @@ sub plot_sperre {
 		    $c->createLine
 			($x-$cos4+$xadd, ($y+$yadd)-$sin4, $x+$cos1+$xadd, ($y+$yadd)+$sin1,
 			 -width => $width0, # XXX $widthBNP verwenden und in get_line_width anpassen
-			 -tags => [$abk, 'sperreBNP',
+			 -tags => [$abk, $sub_cat,
 				   $ret->[Strassen::NAME], $abk.'-'.$pos],
 			);
 		}
-		next;
+		($icon_x, $icon_y, $icon_anchor) = ($x, $y, 'n');
 	    } elsif ($cat =~ /^@{[ StrassenNetz::BLOCKED_ROUTE ]}(nocross)?/) {
 		my $is_nocross = defined $1;
+		$sub_cat = 'sperre3';
 		my @c;
 		for(my $i = 0; $i <= $#kreuzungen; $i++) {
 		    push @c, map { transpose(@$_) } Strassen::to_koord1($kreuzungen[$i]);
@@ -8753,63 +8770,71 @@ sub plot_sperre {
 				     )
 		     ),
 		     ($Tk::VERSION >= 800.016 ? (-dash => $line_dash{sperre3}) : ()),
-		     -tags => [$abk, 'sperre3',
+		     -tags => [$abk, $sub_cat,
 			       $ret->[Strassen::NAME], $abk.'-'.$pos],
 		    );
-		next;
+		($icon_x, $icon_y, $icon_anchor) = ($c[0], $c[1], 'n');
+	    } else {
+		$sub_cat = $type2cat{$cat};
+		if ($cat eq StrassenNetz::BLOCKED_COMPLETE && $#kreuzungen == 0) {
+		    # ein bisschen schummeln ...
+		    push @kreuzungen, $kreuzungen[0];
+		}
+		for my $i (0 .. $#kreuzungen - 1) {
+		    my($x1,$y1) =
+			transpose(@{Strassen::to_koord1($kreuzungen[$i])});
+		    my($x2,$y2) =
+			transpose(@{Strassen::to_koord1($kreuzungen[$i+1])});
+		    my($xm,$ym) = (int(($x2-$x1)/2+$x1), int(($y2-$y1)/2+$y1));
+
+		    if ($cat eq StrassenNetz::BLOCKED_ONEWAY ||
+			$cat eq StrassenNetz::BLOCKED_ONEWAY_STRICT) {
+			my $alpha = atan2($y2-$y1, $x2-$x1);
+			my($xd,$yd) = ($length1*cos($alpha),
+				       $length1*sin($alpha));
+			$c->createLine($xm+$xd, $ym+$yd, $xm-$xd, $ym-$yd,
+				       -fill => $type2fill{$cat},
+				       -width => $width1,
+				       -arrow => 'last',
+				       -arrowshape => [4,6,3],
+				       -tags => [$abk, $sub_cat,
+						 $ret->[Strassen::NAME], $abk.'-'.$pos],
+				      );
+		    } elsif ($cat eq StrassenNetz::BLOCKED_COMPLETE) {
+			# 		    $c->createImage($xm,$ym,
+			# 				    -image => $blocked_photo,
+			# 				    -tags => [$abk, 'sperre2',
+			# 					      $ret->[Strassen::NAME], $abk.'-'.$pos]);
+			$c->createLine($xm-$length2, $ym-$length2,
+				       $xm+$length2, $ym+$length2,
+				       -fill => $fill2,
+				       -width => $width2,
+				       -tags => [$abk, $sub_cat,
+						 $ret->[Strassen::NAME], $abk.'-'.$pos]);
+			$c->createLine($xm-$length2, $ym+$length2,
+				       $xm+$length2, $ym-$length2,
+				       -fill => $fill2,
+				       -width => $width2,
+				       -tags => [$abk, $sub_cat,
+						 $ret->[Strassen::NAME], $abk.'-'.$pos]);
+		    }
+
+		    if (defined $addinfo[0] && $addinfo[0] =~ /\binwork\b/ && $inwork_photo) {
+			$c->createImage($xm,$ym,
+					-anchor => "nw",
+					-image => $inwork_photo,
+					-tags => [$abk,$sub_cat,$ret->[Strassen::NAME], $abk.'-'.$pos]);
+		    }
+
+		    ($icon_x, $icon_y, $icon_anchor) = ($xm, $ym, 'sw');
+		}
 	    }
 
-	    my $i;
-	    if ($cat eq StrassenNetz::BLOCKED_COMPLETE && $#kreuzungen == 0) {
-		# ein bisschen schummeln ...
-		push @kreuzungen, $kreuzungen[0];
-	    }
-	    for($i = 0; $i < $#kreuzungen; $i++) {
-		my($x1,$y1) =
-		  transpose(@{Strassen::to_koord1($kreuzungen[$i])});
-		my($x2,$y2) =
-		  transpose(@{Strassen::to_koord1($kreuzungen[$i+1])});
-		my($xm,$ym) = (int(($x2-$x1)/2+$x1), int(($y2-$y1)/2+$y1));
-
-		if ($cat eq StrassenNetz::BLOCKED_ONEWAY ||
-		    $cat eq StrassenNetz::BLOCKED_ONEWAY_STRICT) {
-		    my $alpha = atan2($y2-$y1, $x2-$x1);
-		    my($xd,$yd) = ($length1*cos($alpha),
-				   $length1*sin($alpha));
-		    $c->createLine($xm+$xd, $ym+$yd, $xm-$xd, $ym-$yd,
-				   -fill => $type2fill{$cat},
-				   -width => $width1,
-				   -arrow => 'last',
-				   -arrowshape => [4,6,3],
-				   -tags => [$abk, $type2cat{$cat},
-					     $ret->[Strassen::NAME], $abk.'-'.$pos],
-				  );
-		} elsif ($cat eq StrassenNetz::BLOCKED_COMPLETE) {
-# 		    $c->createImage($xm,$ym,
-# 				    -image => $blocked_photo,
-# 				    -tags => [$abk, 'sperre2',
-# 					      $ret->[Strassen::NAME], $abk.'-'.$pos]);
-		    $c->createLine($xm-$length2, $ym-$length2,
-				   $xm+$length2, $ym+$length2,
-				   -fill => $fill2,
-				   -width => $width2,
-				   -tags => [$abk, 'sperre2',
-					     $ret->[Strassen::NAME], $abk.'-'.$pos]);
-		    $c->createLine($xm-$length2, $ym+$length2,
-				   $xm+$length2, $ym-$length2,
-				   -fill => $fill2,
-				   -width => $width2,
-				   -tags => [$abk, 'sperre2',
-					     $ret->[Strassen::NAME], $abk.'-'.$pos]);
-		}
-
-		if (defined $addinfo[0] && $addinfo[0] =~ /\binwork\b/ && $inwork_photo) {
-		    $c->createImage($xm,$ym,
-				    -anchor => "nw",
-				    -image => $inwork_photo,
-				    -tags => [$abk,'sperre'.$cat,$ret->[Strassen::NAME], $abk.'-'.$pos]);
-		}
-
+	    if ($is_car && $car_photo && defined $icon_x) {
+		$c->createImage($icon_x, $icon_y,
+				-image => $car_photo,
+				-anchor => $icon_anchor,
+				-tags => [$abk, $sub_cat,$ret->[Strassen::NAME], $abk.'-'.$pos]);
 	    }
 	}
 
@@ -16905,6 +16930,7 @@ sub image_from_file {
 # Lädt ein Bild.
 sub load_photo {
     my($top, $file, %args) = @_;
+    return $photo{$file} if exists $photo{$file};
     my $photo;
     unless ($lowmem) {
 	eval {
@@ -16923,6 +16949,9 @@ sub load_photo {
 		$photo = $small_photo;
 	    }
 	};warn $@ if $@;
+    }
+    if ($args{-persistent}) {
+	$photo{$file} = $photo;
     }
     $photo;
 }

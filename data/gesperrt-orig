@@ -301,6 +301,7 @@ Takustr.	1 3324,5207 3209,5214 3079,5411 2953,5606 2909,5674
 Schönerlinder Str.	1 21799,4319 21640,4368
 Mentzelstr.	1 21579,4579 21535,4457
 Amalienstr.	1 13814,16759 13589,16965
+Cosimaplatz	1 5487,7620 5452,7660 5490,7696 5525,7660 5487,7620
 #
 # Potsdam
 #
@@ -386,6 +387,7 @@ Ringbahnstr.	1s 8717,6965 8447,6964
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+Bundesplatztunnel	3nocross 5360,7554 5359,7619 5359,7661 5358,7711 5356,7862
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
 Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3906,10035 3930,9919
 Treskowallee: Straßenbahntrasse	3nocross 18628,10177 18690,10016 18698,9996 18737,9901

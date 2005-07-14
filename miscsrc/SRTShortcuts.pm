@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.22 2005/03/28 22:53:24 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.22 2005/03/28 22:53:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -175,6 +175,7 @@ sub add_button {
 		   my $f = "$bbbike_rootdir/tmp/points-all.bbd";
 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
 		   add_new_layer("p", $f, Width => 20);
+		   main::special_lower($f, 0);
 	       }
 	      ],
 	      [Button => "Add hm96.bbd (Höhenpunkte)",

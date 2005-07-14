@@ -1,4 +1,4 @@
-# $Id: comments_path-orig,v 4.20 2005/07/11 21:04:00 eserte Exp $
+# $Id: comments_path-orig,v 4.20 2005/07/11 21:04:00 eserte Exp eserte $
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C
 # CP   : wie "CP;", Kommentar gültig für beide Fahrtrichtungen
 # CP2; : Kommentar an Punkt A bei Fahrt von A nach B
@@ -21,7 +21,7 @@ bereits bei der Ampel an der Corneliusstr. die Straßenseite wechseln	PI; 6880,11
 auf linken Gehweg fahren, Straßenseite an der Corneliusstr. wechseln	PI; 6732,11106 6873,11011 6882,11061
 bereits an der Kreuzung An der Urania/Kurfürstenstr. die Straßenseite wechseln	PI; 6732,10754 6674,10693 6745,10619
 bereits an der Kreuzung Dominicusstr./Ebersstr. die Straßenseite wechseln	PI; 6935,8208 7005,8150 7268,8225
-Richtung Hochbahnhof Hallesches Tor abbiegen	PI; 9522,10017 9536,10064 9579,10122 9592,10174
+Richtung Hochbahnhof Hallesches Tor abbiegen	CP; 9536,10064 9579,10122 9592,10174
 Fußgängerampel am Spittelmarkt zum Wechseln der Straßenseite benutzen, zwischen den Hochhäusern zur Axel-Springer-Str.	PI; 10313,11805 10296,11790 10222,11724 10135,11661 10154,11590
 Straßenseite bei der Fußgängerampel Yorckstr./Katzbachstr. wechseln	PI; 8773,9524 8648,9526 8595,9495
 von der Brandenburgischen in die Paderborner: frühzeitig auf den linken Gehweg wechseln	PI; 3930,9919 3906,10035 3720,9996

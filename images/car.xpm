@@ -1,0 +1,21 @@
+/* XPM */
+static char *car[] = {
+/* columns rows colors chars-per-pixel */
+"10 6 9 1",
+"  c black",
+". c gray3",
+"X c gray35",
+"o c gray49",
+"O c #C1C1C1",
+"+ c #EAEAEA",
+"@ c gray99",
+"# c gray100",
+"$ c None",
+/* pixels */
+"$$$## O#$$",
+"$##o   .#$",
+"#+       #",
+"         X",
+"          ",
+"##  ##  ##"
+};

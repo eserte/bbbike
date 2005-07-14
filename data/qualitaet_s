@@ -1061,10 +1061,10 @@ Riemeisterstr.: mäßiges Kopfsteinpflaster	Q2 373,4816 319,4906 168,5092 103,5123
 Soldiner Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 9604,16760 9317,16882 9096,16976
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2053,6841 1975,6812
 Wilhelmshöher Str.: guter Asphalt	Q0 4836,7327 4889,7323 5072,7327 5310,7325
-Sarrazinstr.: guter Asphalt	Q0 5357,7381 5419,7435 5653,7639
+Sarrazinstr.: guter Asphalt	Q0 5357,7381 5419,7435 5440,7453 5486,7493 5653,7639
 Perelsplatz: guter Asphalt	Q0 5653,7639 5812,7637
 Bennigsenstr.: guter Asphalt	Q0 5807,7771 5957,7765 6225,7776
-Lauterstr.: guter Asphalt	Q0 5812,7637 5807,7771 5814,7818
+Lauterstr.: guter Asphalt	Q0 5812,7637 5810,7684 5807,7771 5810,7796
 Friedrich-Wilhelm-Platz: guter Asphalt	Q0 5324,7205 5310,7325 5315,7376 5357,7381
 Honnefer Str.: Asphalt	Q0 19316,8933 19209,9125
 Voltastr.: Kopfsteinpflaster	Q2 9041,14896 9361,15066 9571,15178
@@ -1181,6 +1181,7 @@ Stephanstr. (Tiergarten): Kopfsteinpflaster	Q2 6275,13969 6496,14118 6696,14197 
 Holsteiner Ufer: Kopfsteinpflaster, OK	Q1 6193,12867 6354,12870 6597,12764
 Holsteiner Ufer: mäßiges Kopfsteinpflaster	Q2 6597,12764 6690,12637
 Rathenower Str.: Kopfsteinpflaster	Q2 6743,14008 6696,14197 6670,14302
+Albrecht-Thaer-Weg: Asphalt	Q0 3347,6460 3449,6863
 Lottumstr.: mäßiges Kopfsteinpflaster	Q2 10479,13931 10639,13865 10703,13832 10793,13785
 Stieglitzweg: Asphalt	Q0 14318,3259 14493,3143 14530,3044 14637,2868 14746,2781
 Waldschluchtpfad: mäßiges Kopfsteinpflaster	Q2 -5215,6722 -5062,6921 -4790,6881
@@ -1415,6 +1416,21 @@ Gieselerstr.: Asphalt	Q0 4602,9439 4619,9200 4606,9023
 Hattenheimer Str. (Frohnau): schlechtes Kopfsteinpflaster	Q3 2666,24998 2950,24719
 Hubertusstr. (Steglitz): Asphalt	Q0 5240,5922 5099,5994
 Hessenallee: Asphalt	Q0 657,11650 664,11678 788,11744 906,11870
+Brünnhildestr.: Asphalt	Q0 5491,7836 5490,7696
+Isoldestr. (Friedenau): Asphalt	Q0 5517,7869 5646,7711
+Sieglindestr.: Asphalt	Q0 5458,7866 5358,7711
+Evastr.: Asphalt	Q0 5635,7660 5525,7660
+Evastr.: Asphalt	Q0 5651,7661 5635,7660
+Cosimaplatz: Asphalt	Q0 5525,7660 5490,7696 5452,7660 5487,7620 5525,7660
+Sentastr.: Asphalt	Q0 5452,7660 5359,7661
+Elsastr. (Friedenau): Asphalt	Q0 5487,7620 5487,7560 5486,7493
+Ortrudstr.: Asphalt	Q0 5487,7560 5359,7619
+Kundrystr.: Asphalt	Q0 5440,7453 5360,7554
+Straße am Güterbahnhof Wilmersdorf: Kopfsteinpflaster	Q2 6275,7847 5710,7820
+Schnackenburgstr.: Asphalt	Q0 5652,7544 5812,7536
+Stierstr.: Asphalt	Q0 5957,7765 5956,7682 5955,7406
+Hähnelstr.: Asphalt	Q0 5810,7684 5956,7682 6157,7685
+Koburger Str.: Kopfsteinpflaster	Q2 6540,8421 6560,8219
 Hiroshimasteg: gute Qualität	Q1 7251,11202 7248,11143
 Hiroshimastr.: Asphalt	Q0 7354,11513 7251,11202
 Bitterstr.: Kopfsteinpflaster	Q2 2444,5303 2363,5398 2267,5450 2230,5543 2142,5649 2175,5788
@@ -1662,7 +1678,7 @@ Gäblerstr.: mäßiger Asphalt	Q1 13029,17185 13023,17379 13011,17470
 Str. 154: Verbundsteinpflaster	Q0 13011,17470 12965,17684 12856,17825
 Neukirchstr.: loser Sandweg	Q2 12896,18317 12752,18387
 Neukirchstr.: Kopfsteinpflaster	Q2 12752,18387 12562,18483
-Markelstr.: asphaltiert	Q0 4528,6711 4679,6620
+Markelstr.: asphaltiert	Q0 4528,6711 4588,6675 4679,6620
 Markelstr.: Kopfsteinpflaster	Q1 4679,6620 4901,6505
 Markelstr.: asphaltiert	Q0 4901,6505 5034,6425 5268,6305
 Neanderstr.: Asphalt	Q0 9833,-826 9814,-355 9820,-57 9823,0

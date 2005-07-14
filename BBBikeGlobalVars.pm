@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.29 2005/07/02 22:36:23 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.29 2005/07/02 22:36:23 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
