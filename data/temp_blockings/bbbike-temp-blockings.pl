@@ -2310,4 +2310,37 @@ userdel	q4 34471,22214 34321,22151
 userdel	q4 34125,22128 34321,22151
 EOF
      },
+     { from  => 1121983200, # 2005-07-22 00:00
+       until => 1122156000, # 2005-07-24 00:00
+       text  => 'B 168; zw. Abzw. Mochlitz und LG in Ri. Friedland Straßenbauarbeiten Vollsperrung 23.07.2005-23.07.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 72781,-41234 71792,-39389
+EOF
+     },
+     { from  => 1122415200, # 2005-07-27 00:00
+       until => 1123365600, # 2005-08-07 00:00
+       text  => 'B 87; zw. Hohenwalde und Müllrose Munitionsbergung Vollsperrung 28.07.2005-06.08.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 81786,-12568 81278,-13886
+EOF
+     },
+     { from  => 1121896800, # 2005-07-21 00:00
+       until => 1122588000, # 2005-07-29 00:00
+       text  => 'K 7234; (Goethestr.); BÜ in Dabendorf, zw.Kastanienallee u. Brandenburger Str. Gleisbauarbeiten Vollsperrung 22.07.2005-28.07.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 13048,-18384 13303,-18235
+userdel	2 14153,-17829 13303,-18235
+EOF
+     },
+     { from  => 1121205600, # 2005-07-13 00:00
+       until => 1122069600, # 2005-07-23 00:00
+       text  => 'L 382; (Gronenfelder Weg); zw. FFO, Birnbaumsmühle und Booßener Kreisel Gefahrenabwehr Vollsperrung 14.07.2005-22.07.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 85161,-3425 84653,-3159
+EOF
+     },
     );

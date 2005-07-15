@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.22 2005/03/28 22:53:24 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.23 2005/07/14 20:34:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -160,6 +160,7 @@ sub add_button {
 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
 		   my $layer = add_new_layer("str", $f);
 		   set_layer_highlightning($layer);
+		   main::special_raise($layer, 0);
 	       }
 	      ],
 	      [Button => "Add streets.bbd (all GPS tracks)",
@@ -174,8 +175,8 @@ sub add_button {
 	       -command => sub {
 		   my $f = "$bbbike_rootdir/tmp/points-all.bbd";
 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
-		   add_new_layer("p", $f, Width => 20);
-		   main::special_lower($f, 0);
+		   my $points_layer = add_new_layer("p", $f, Width => 20);
+		   main::special_lower($points_layer . "-fg", 0);
 	       }
 	      ],
 	      [Button => "Add hm96.bbd (Höhenpunkte)",

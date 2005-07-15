@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.45 2005/01/20 00:31:29 eserte Exp $
+# $Id: BrowserInfo.pm,v 1.45 2005/01/20 00:31:29 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2005 Slaven Rezic. All rights reserved.
@@ -250,7 +250,7 @@ sub set_info {
 
     if (!defined $self->{'display_size'}) {
 	if ($get_uaprof->()) {
-	    my $screensize = $uaprof->get_cap("ScreenSize");
+	    my $screensize = eval { $uaprof->get_cap("ScreenSize") };
 	    if (defined $screensize) {
 		my($w,$h) = split /x/, $screensize;
 		$w -= $vert_scrollbar_space;
@@ -309,7 +309,7 @@ sub set_info {
 
     my $can_table;
     if ($get_uaprof->()) {
-	$can_table = $uaprof->get_cap("TablesCapable") =~ /yes/i ? 1 : 0;
+	$can_table = eval { $uaprof->get_cap("TablesCapable") =~ /yes/i ? 1 : 0 };
     }
     if (!defined $can_table) {
 	$can_table = ((!$self->{'text_browser'} ||
