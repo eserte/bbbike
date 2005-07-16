@@ -52,7 +52,16 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1121637600,
+         'text' => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Londoner Str. und Transvaalstr. Veranstaltung, Straße vollständig gesperrt (bis 17.07.2005 24 Uhr)',
+         'from' => 1121462650,
+         'data' => 'userdel	2 6032,16698 5791,16910
+userdel	2 6032,16698 6129,16611
+userdel	2 6129,16611 6329,16438
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -681,10 +690,26 @@ userdel	2 14153,-17829 13303,-18235
          'type' => 'gesperrt'
        },
        {
-         'until' => 1122069600,
-         'text' => 'L 382; (Gronenfelder Weg); zw. FFO, Birnbaumsmühle und Booßener Kreisel Gefahrenabwehr Vollsperrung 14.07.2005-22.07.2005 ',
+         'until' => 1121464800,
+         'text' => 'L 382; (Gronenfelder Weg); zw. FFO, Birnbaumsmühle und Booßener Kreisel Gefahrenabwehr Vollsperrung 14.07.2005-15.07.2005 ',
          'from' => 1121205600,
          'data' => 'userdel	2 85161,-3425 84653,-3159
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1122328800,
+         'text' => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-25.07.2005 ',
+         'from' => 1121724000,
+         'data' => 'userdel	2 1772,31266 2257,31124
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1133391600,
+         'text' => 'K 7207; (KG südl. Rinow-Weißen); Brücke bei Rinow Brückenbauarbeiten Vollsperrung 20.07.2005-30.11.2005 ',
+         'from' => 1121724000,
+         'data' => 'userdel	2 2362,-64075 3737,-64262
 ',
          'type' => 'gesperrt'
        }

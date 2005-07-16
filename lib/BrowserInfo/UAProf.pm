@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: UAProf.pm,v 1.4 2005/01/20 21:54:09 eserte Exp $
+# $Id: UAProf.pm,v 1.4 2005/01/20 21:54:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -212,6 +212,10 @@ my $uaprof = __PACKAGE__->new
     (uaprofurl => $uaprofurl,
      uaprofdir => File::Spec->rel2abs(File::Basename::dirname(__FILE__)) . "/../../tmp/uaprof",
     );
-print $uaprof->get_cap($cap), "\n";
+my $ret = eval { $uaprof->get_cap($cap) };
+if (!defined $ret) {
+    $ret = "<undefined>";
+}
+print $ret, "\n";
 
 __END__

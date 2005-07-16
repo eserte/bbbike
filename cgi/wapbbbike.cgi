@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.18 2004/10/02 18:18:12 eserte Exp $
+# $Id: wapbbbike.cgi,v 2.18 2004/10/02 18:18:12 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003,2004 Slaven Rezic. All rights reserved.
@@ -277,8 +277,8 @@ sub _any_image {
 	}
     }
 
-    my(@geometry) = @{$self->{BrowserInfo}->{display_size}};
-    if ($cgi->param("debug")) {
+    my(@geometry) = $self->{BrowserInfo} && $self->{BrowserInfo}->{display_size} ? @{$self->{BrowserInfo}->{display_size}} : ();
+    if ($cgi->param("debug") || !@geometry) {
 	@geometry = (170, 144);
     }
 

@@ -504,11 +504,15 @@ EOF
        text  => 'Königsheideweg (Treptow) Richtung Baumschulenstr. nach Sterndamm Baustelle, Fahrtrichtung gesperrt (bis Mitte 07.2004)',
        type  => 'handicap',
      },
-     { from  => 1088719200, # 2004-07-02 00:00
-       until => 1088964000, # 2004-07-04 20:00
-       file  => 'muellerstr.bbd',
-       text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Londoner Str. und Barfußstr. Veranstaltung, Straße vollständig gesperrt (bis 04.07. abends)',
-       type  => 'handicap',
+     { from  => 1121462650, # 2005-07-15 23:24
+       until => 1121637600, # 2005-07-18 00:00
+       text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Londoner Str. und Transvaalstr. Veranstaltung, Straße vollständig gesperrt (bis 17.07.2005 24 Uhr)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 6032,16698 5791,16910
+userdel	2 6032,16698 6129,16611
+userdel	2 6129,16611 6329,16438
+EOF
      },
      { from  => 1090533600, # 2004-07-23 00:00
        until => 1091224800, # 2004-07-31 00:00
@@ -2336,11 +2340,27 @@ userdel	2 14153,-17829 13303,-18235
 EOF
      },
      { from  => 1121205600, # 2005-07-13 00:00
-       until => 1122069600, # 2005-07-23 00:00
-       text  => 'L 382; (Gronenfelder Weg); zw. FFO, Birnbaumsmühle und Booßener Kreisel Gefahrenabwehr Vollsperrung 14.07.2005-22.07.2005 ',
+       until => 1121464800, # 2005-07-16 00:00
+       text  => 'L 382; (Gronenfelder Weg); zw. FFO, Birnbaumsmühle und Booßener Kreisel Gefahrenabwehr Vollsperrung 14.07.2005-15.07.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 85161,-3425 84653,-3159
+EOF
+     },
+     { from  => 1121724000, # 2005-07-19 00:00
+       until => 1122328800, # 2005-07-26 00:00
+       text  => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-25.07.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 1772,31266 2257,31124
+EOF
+     },
+     { from  => 1121724000, # 2005-07-19 00:00
+       until => 1133391600, # 2005-12-01 00:00
+       text  => 'K 7207; (KG südl. Rinow-Weißen); Brücke bei Rinow Brückenbauarbeiten Vollsperrung 20.07.2005-30.11.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 2362,-64075 3737,-64262
 EOF
      },
     );

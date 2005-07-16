@@ -6,7 +6,7 @@
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# $Id: browserinfo.t,v 1.4 2005/01/03 00:11:34 eserte Exp $
+# $Id: browserinfo.t,v 1.4 2005/01/03 00:11:34 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -28,7 +28,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 9 }
+BEGIN { plan tests => 10 }
 
 #use vars qw($uaprofdir);
 #$uaprofdir = "$FindBin::RealBin/../tmp/uaprof";
@@ -62,5 +62,12 @@ BEGIN { plan tests => 9 }
     is($w, 120-6, "Sharp width");
     is($h, 160, "Sharp height");
     ok($bi->{can_table}, "Sharp can tables");
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "UnknownDevice/1.0";
+    local $ENV{HTTP_PROFILE} = "http://does.not-exist.example.com/UAprof/foo.xml";
+    my $bi = BrowserInfo->new;
+    is("@{ $bi->{display_size} }", "750 590", "Fallback for unknown device");
 }
 __END__
