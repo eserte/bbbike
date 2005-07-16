@@ -31,7 +31,7 @@ Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits e
 Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
 Saargemünder Straße	? 2009,4793 1495,4850
 #: next_check: 2005-09-01
-Englerallee (voraussichtlich 2005-09-01)	? 3707,5758 3723,5922 3756,6272 3836,6550
+Englerallee (voraussichtlich 2005-09-01)	? 3707,5758 3723,5922 3740,6106 3756,6272 3800,6418 3836,6550
 Pacelliallee	? 2585,5696 2609,6348 2659,6499 2711,6698 2723,7029
 #: by ^^^
 #: by Tagesspiegel 2004-07-25 (obige waren auch dabei) vvv
@@ -86,6 +86,10 @@ Thielpark - Hüttenweg: laut anonymen Eintrag eher nicht geeignet (Stufen). Laut 
 # Hier kommen die Fragezeichen-Strecken herein, die nicht bei einer
 # erweiterten Suche aufgenommen werden sollen.
 #
+#: XXX: Vorschlag von Corinna Meyer:
+Bremer Weg (Tiergarten): genaue Wegführung, Qualität?	? 5901,11902 5923,11873 6296,11890 6342,11878 6409,11925 6573,11943 6642,12010
+Bremer Weg (Tiergarten): genaue Wegführung, Qualität?	? 6828,12031 6857,11992 7460,12054 8018,12131 8063,12182
+(Bremer Weg - Fasanerieallee): genaue Wegführung, Qualität?	? 6342,11878 6379,11843 6406,11784 6540,11754
 #: by: Dirk Geschwandtner:
 Pankeweg durch Wedding: Bau des Pankewegs zwischen Pankstr. und Gerichtstr. begonnen, allerdings fehlen noch wenige Meter bzw. eine Brücke	?? 8273,15311 8348,15474 8179,15601
 #: XXX laut Dirk Wittemann keine ebenerdige Verbindung zur Landsberger nur Treppe sowie Aufzüge zum Velodrom
@@ -641,8 +645,6 @@ Erich-Lademann-Str.: Betonstraße?	? 15765,7567 15429,7948 15268,8118
 #: XXX ein anonymer Eintrag hat einen (diesen?) Mittelweg mit "loser Sandweg" attributiert:
 Mittelweg (Altglienicke, Bohnsdorf): Qualität (laut ADFC-Karte mäßig geeignet)?	? 20265,858 20187,662 20040,309
 Terrassenstr.: Qualität?	? -1379,3897 -1554,3889 -1754,3907 -1909,3854 -1913,3672
-#: XXX anonymer Eintrag spricht von Kopfsteinpflaster, die ADFC-Karte hat unterschiedliche Qualitäten
-Schweinfurthstr.: Qualität: Kopfsteinpflaster oder Asphalt, unterschiedliche Beläge nördlich/südlich der Schorlemerallee?	? 3723,5922 3589,6101 3412,6353 3320,6455 3043,6806 2884,7016 2818,7105
 #: XXX anonymer Eintrag?
 Pirolstr.: loser Sandweg (Q2): auf Biesdorfer oder Karlshorster Seite?	? 20716,10007 20140,10053
 Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126443 -112,126528 -62,126684 -96,126768 -231,126900 -428,127368 -493,127450 -671,127478
@@ -756,7 +758,6 @@ Bruno-Walter-Str.: Qualität?	? 5516,2873 5614,2822 5774,3007 5853,3050
 Stolpe - Usedom: Qualität des Radweges? In Stolpe wahrscheinlich Asphalt/Verbundsteinpflaster, westlich von Stolpe wahrscheinlich Asphalt? Genaue Koordinaten?	? 47621,163737 46987,163775 43164,164582
 Bansin, Fischerweg: geht es weiter zur Bergstr.?	? 56934,175371 57000,175587
 Pudagla - Schmollensee: Radweg in Bau (asphaltiert, auf der westlichen Seite, gesehen: 2005-06)	? 52468,174931 52613,175587 52866,176160
-Matthiasstr./Landsberger Allee: Linksabbiegen möglich?	? 12850,13071 12808,13181 12727,13159
 Friedrich-Wilhelm-Str.: Einbahnstraße nur für Autofahrer oder auch für Radfahrer?	? 8371,5896 8282,5909
 #: XXX widersprüchliche Angaben: mäßiger Beton Q1 (by anonymous) und guter Asphalt Q0 (by openbc...), die verkehrsberuhigte Zone hat sich wahrscheinlich erledigt
 Tiroler Str.: Qualität?	? 10862,17087 10508,17094 10128,17100

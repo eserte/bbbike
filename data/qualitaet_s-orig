@@ -371,8 +371,8 @@ Tiergartenufer: Parkweg (Bodenwellen)	Q2 6292,11427 6128,11500 5976,11603 5835,1
 Fasanerieallee: Parkweg	Q1 6435,11606 6459,11638 6540,11754 6685,11954
 Großer Weg: Parkweg	Q1 5901,11902 5890,11865 5933,11775 6022,11757 6171,11790 6306,11771 6358,11724 6411,11678 6459,11638 6524,11583 6809,11570 6980,11583 7163,11738 7287,11763 7535,11677
 Große Sternallee: Parkweg	Q1 6809,11979 7073,11798 7163,11738 7504,11504
-Bellevueallee: Parkweg	Q1 7039,12314 7383,12095 7663,11946 8006,11766 8172,11679
-Ahornsteig: Parkweg	Q1 7669,11586 7852,11721 8006,11766
+Bellevueallee: Parkweg	Q1 7039,12314 7383,12095 7460,12054 7663,11946 8006,11766 8172,11679
+Ahornsteig: Parkweg	Q1 7669,11586 7706,11612 7742,11639 7852,11721 8006,11766
 Tiergarten: Parkweg	Q1 8006,11766 8022,12016 8063,12182
 Tiergarten: Parkweg	Q1 8214,12205 8220,11844 8223,11700
 Tiergarten: Parkweg	Q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
@@ -1162,7 +1162,7 @@ Denkstr.: Asphalt	Q0 6865,4659 7040,4615
 Peschkestr.: Asphalt	Q0 5424,6584 5532,6525
 Peschkestr.: Kopfsteinpflaster	Q2 5532,6525 5657,6457
 Fregestr.: grob gepflastert	Q2 5629,6421 5657,6457
-Fregestr.: asphaltiert	Q0 5657,6457 5897,6799
+Fregestr.: asphaltiert	Q0 5657,6457 5777,6628 5897,6799
 #: by ^^^
 #: by: Martin Weber vvv
 Bochumer Str.: Asphalt	Q0 5876,13209 5902,13009 5936,12775
@@ -1383,7 +1383,7 @@ Am Schonungsberg: Asphalt	Q0 30504,3821 30718,4341
 #: by: Gunnar Heuschkel:
 Körnerstr.: schlechtes Kopfsteinpflaster	Q3 10653,20200 10547,20644 10521,20750
 #: by: Michael Bartnik:
-Koserstr.: Kopfsteinpflaster	Q2 3412,6353 3309,6270 3118,6140 3112,6090 2950,6141
+Koserstr.: Kopfsteinpflaster	Q2 3403,6331 3309,6270 3118,6140 3112,6090 2950,6141
 #: by: Ingmar Camphausen: vvv
 Bartschiner Str.: schlechtes Kopfsteinpflaster	Q3 16878,859 16925,631 16946,487 17037,378 17003,337
 (Bartschiner Str. - Schönefelder Str.): Feldweg	Q2 17003,337 17117,283
@@ -1742,6 +1742,13 @@ Hubertusstr. (Steglitz): Asphalt	Q0 5240,5922 5099,5994
 #: by: WIll Gibson:
 Hessenallee: Asphalt	Q0 657,11650 664,11678 788,11744 906,11870
 #: by: Andreas Mühlhausen: vvv
+Rohlfsstr.: Kopfsteinpflaster	Q2 3459,6484 3521,6400 3696,6165 3740,6106
+Am Erlenbusch: grobes Kopfsteipflaster, am Rand besser	Q3 3384,6356 3440,6387 3521,6400
+Drygalskistr.: Kopfsteinpflaster	Q2 3506,6012 3596,6087 3696,6165
+Schweinfurthstr.: grobes Kopfsteinpflaster	Q3 2884,7016 3306,6453
+Schweinfurthstr.: Kopfsteinpflaster	Q2 2818,7105 2884,7016
+Schweinfurthstr.: Kopfsteinpflaster	Q2 3306,6453 3384,6356 3403,6331 3421,6309 3596,6087 3723,5922
+Am Erlenbusch: Asphalt m. Löchern	Q1 3521,6400 3659,6434 3800,6418
 Brünnhildestr.: Asphalt	Q0 5491,7836 5490,7696
 Isoldestr. (Friedenau): Asphalt	Q0 5517,7869 5646,7711
 Sieglindestr.: Asphalt	Q0 5458,7866 5358,7711
@@ -2341,3 +2348,5 @@ Magnusstr.: Asphalt	Q0 19592,2403 19495,2535 19325,2701 19170,2828
 Summter Str.: mäßiger Beton	Q1 24635,8007 24729,8659 25095,9159 25269,9408 25678,9992
 Ahornallee: asphaltiert	Q0 24337,9835 24688,9730 25269,9408 25329,9375
 #: by: ^^^
+#: by: Florian Schintke:
+Holsteinische Str. (Steglitz): mäßiges Kopfsteinpflaster	Q2 5268,6110 5381,6298 5474,6438 5532,6525 5576,6581 5777,6628

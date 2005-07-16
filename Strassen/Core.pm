@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.57 2005/07/08 00:47:03 eserte Exp $
+# $Id: Core.pm,v 1.57 2005/07/08 00:47:03 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -1148,6 +1148,7 @@ sub reachable {
 sub nearest_point {
     my($s, $xy, %args) = @_;
     my($x,$y) = split /,/, $xy;
+    require Strassen::Util;
     my $mindist = Strassen::Util::infinity();
     my @line;
 

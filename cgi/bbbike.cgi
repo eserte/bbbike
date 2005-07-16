@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.31 2005/07/13 06:09:50 eserte Exp $
+# $Id: bbbike.cgi,v 7.31 2005/07/13 06:09:50 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -1600,10 +1600,10 @@ EOF
 	    print "</td>" if $bi->{'can_table'};
 	    print "<input type=hidden name=" . $type . "isort value=1>\n";
 	} elsif ($$oneref ne '' && @$matchref == 0) {
-	    print "<td align=center>$fontstr" if $bi->{'can_table'};
+	    print "<td>$fontstr" if $bi->{'can_table'};
 	    print "<i>$$oneref</i> ist nicht bekannt.<br>\n";
 	    my $qs = CGI->new({strname => $$oneref})->query_string;
-	    print qq{<a target="newstreetform" href="$bbbike_html/newstreetform.html?$qs">Straﬂe eintragen</a><br>\n};
+	    print qq{<a target="newstreetform" href="$bbbike_html/newstreetform.html?$qs">Diese Straﬂe eintragen</a><br>\n};
 	    $no_td = 1;
 	    $tryempty = 1;
 	} elsif ($$tworef ne '') {
@@ -1620,7 +1620,7 @@ EOF
 				  })->query_string;
 		my $report_nearest = $strasse !~ /^[su]-bhf/i;
 		if ($report_nearest) {
-		    print qq{<i>$strasse</i> ist nicht bekannt (<a target="newstreetform" href="$bbbike_html/newstreetform.html?$qs">Straﬂe eintragen</a>).<br>\n};
+		    print qq{<i>$strasse</i> ist nicht bekannt (<a target="newstreetform" href="$bbbike_html/newstreetform.html?$qs">diese Straﬂe eintragen</a>).<br>\n};
 		} else {
 		    print qq{<i>$strasse</i><br>\n};
 		}
@@ -4625,6 +4625,13 @@ sub load_temp_blockings {
     }
 }
 
+# The combination of Strassen->nearest_point and crossing_text may
+# lead to some unexpected results. Take for instance T¸binger Str.
+# (approx. 5426,8148): nearest_point will return a point at
+# Bundesallee (5360,8197). crossing_text will calculate the nearest
+# crossing from this point which would be Bundesallee/Durlacher Str.
+# But the nearest crossing from 5426,8148 is actually
+# Bundesallee/Wexstr.!
 sub crossing_text {
     my $c = shift;
     all_crossings();

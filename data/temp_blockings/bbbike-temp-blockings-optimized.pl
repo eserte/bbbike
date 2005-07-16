@@ -689,14 +689,7 @@ userdel	2 14153,-17829 13303,-18235
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1121464800,
-         'text' => 'L 382; (Gronenfelder Weg); zw. FFO, Birnbaumsmühle und Booßener Kreisel Gefahrenabwehr Vollsperrung 14.07.2005-15.07.2005 ',
-         'from' => 1121205600,
-         'data' => 'userdel	2 85161,-3425 84653,-3159
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1122328800,
          'text' => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-25.07.2005 ',
