@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SVG.pm,v 1.11 2005/03/19 11:14:32 eserte Exp $
+# $Id: SVG.pm,v 1.12 2005/07/17 14:07:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -28,7 +28,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -49,7 +49,7 @@ sub init {
 	$self->{Outline} = 1;
     }
 
-#      $self->allocate_colors_and_fonts;
+    $self->allocate_colors_and_fonts;
     $self->set_category_colors;
     $self->set_category_styles;
 #      $self->set_category_outline_colors;
@@ -98,41 +98,55 @@ sub allocate_colors {
     $black       = [0,0,0];
 }
 
+sub cat2svgrgb {
+    my($cat) = @_;
+    my $color = $color{$cat};
+    if (!defined $color) {
+	warn "No color for category <$cat> found\n";
+	return undef;
+    }
+    "rgb(" . join(",", map { int($_*255) } @$color) . ")";
+}
+
 sub set_category_styles {
     my($self) = @_;
     %style =
 	(
-	 'B'  => {'stroke' => 'red',    'stroke-width' => 2},
-	 'HH' => {'stroke' => 'yellow', 'stroke-width' => 2},
-	 'H'  => {'stroke' => 'yellow', 'stroke-width' => 2},
-	 #default: 'N'  => {'stroke' => 'white'}, # default: 'stroke-width' => 1
-	 'NN' => {'stroke' => 'green'}, # defaukt: 'stroke-width' => 1},
-	 S  => {'stroke' => 'rgb(0,128,0)'},
-	 SA => {'stroke' => 'rgb(0,128,0)'},
-	 SB => {'stroke' => 'rgb(0,128,0)'},
-	 SC => {'stroke' => 'rgb(0,128,0)'},
-	 R  => {'stroke' => 'rgb(0,128,0)'},
-	 RA => {'stroke' => 'rgb(0,128,0)'},
-	 RB => {'stroke' => 'rgb(0,128,0)'},
-	 RC => {'stroke' => 'rgb(0,128,0)'},
-	 U  => {'stroke' => 'rgb(0,0,128)'},
-	 UA => {'stroke' => 'rgb(0,0,128)'},
-	 UB => {'stroke' => 'rgb(0,0,128)'},
-	 W  => {'stroke' => 'rgb(128,128,255)'},
-	 W0 => {'stroke' => 'rgb(128,128,255)', 'stroke-width' => 1},
-	 W1 => {'stroke' => 'rgb(128,128,255)', 'stroke-width' => 2},
-	 W2 => {'stroke' => 'rgb(128,128,255)', 'stroke-width' => 3},
-	 'F:W'  => {'fill' => 'rgb(128,128,255)'},
-	 'F:W1' => {'fill' => 'rgb(128,128,255)'},
-	 'F:W2' => {'fill' => 'rgb(128,128,255)'},
+	 'B'  => {'stroke' => cat2svgrgb('B'),    'stroke-width' => 2},
+	 'HH' => {'stroke' => cat2svgrgb('HH'), 'stroke-width' => 2},
+	 'H'  => {'stroke' => cat2svgrgb('H'), 'stroke-width' => 2},
+	 #default: 'N'  => {'stroke' => cat2svgrgb('N')}, # default: 'stroke-width' => 1
+	 'NN' => {'stroke' => cat2svgrgb('NN')}, # defaukt: 'stroke-width' => 1},
+	 S  => {'stroke' => cat2svgrgb('S')},
+	 SA => {'stroke' => cat2svgrgb('SA')},
+	 SB => {'stroke' => cat2svgrgb('SB')},
+	 SC => {'stroke' => cat2svgrgb('SC')},
+	 R  => {'stroke' => cat2svgrgb('R')},
+	 RA => {'stroke' => cat2svgrgb('RA')},
+	 RB => {'stroke' => cat2svgrgb('RB')},
+	 RC => {'stroke' => cat2svgrgb('RC')},
+	 U  => {'stroke' => cat2svgrgb('U')},
+	 UA => {'stroke' => cat2svgrgb('UA')},
+	 UB => {'stroke' => cat2svgrgb('UB')},
+	 W  => {'stroke' => cat2svgrgb('W')},
+	 W0 => {'stroke' => cat2svgrgb('W0'), 'stroke-width' => 1},
+	 W1 => {'stroke' => cat2svgrgb('W1'), 'stroke-width' => 2},
+	 W2 => {'stroke' => cat2svgrgb('W2'), 'stroke-width' => 3},
+	 'F:W'  => {'fill' => cat2svgrgb('W')},
+	 'F:W1' => {'fill' => cat2svgrgb('W1')},
+	 'F:W2' => {'fill' => cat2svgrgb('W2')},
 	 I  => {'fill' => 'none'},
 #  	 F  => $white,
-#  	 Ae => $white,
-  	 'F:P'  => {'fill' => 'rgb(80,230,80)'},
-  	 Z  => (defined $self->{FrontierColor} && $self->{FrontierColor} eq 'red' ? {'stroke' => 'red'} : {'stroke' => 'black'}),
+  	 'F:Ae' => {'fill' => cat2svgrgb('Ae')},
+  	 'F:P'  => {'fill' => cat2svgrgb('P')},
+	 'F:Pabove' => {'fill' => cat2svgrgb('Pabove')},
+	 'F:Forest'  => {'fill' => cat2svgrgb('Forest')},
+	 'F:Forestabove' => {'fill' => cat2svgrgb('Forestabove')},
+	 'F:Cemetery'  => {'fill' => cat2svgrgb('Cemetery')},
+  	 Z  => {'stroke' => cat2svgrgb('Z')},
 #  	 '?' => $black,
 #  	 '??' => $black,
-  	 Route => {'stroke' => 'red'}, # alternierend
+  	 Route => {'stroke' => cat2svgrgb('Route')}, # alternierend
 	);
 }
 

@@ -27,10 +27,38 @@ alink="#0000FF">
 
 <p class="COPYRIGHT">Copyright &copy; 2005 by Slaven Rezic</p>
 
-<p class="PUBDATE">$Date: 2005/06/17 21:57:30 $<br />
+<p class="PUBDATE">$Date: 2005/07/17 12:47:10 $<br />
 </p>
 
 <hr />
+</div>
+
+<div class="TOC">
+<dl>
+<dt><b>Table of Contents</b></dt>
+
+<dt>1. <a href="#AEN15">Voraussetzungen</a></dt>
+
+<dt>2. <a href="#AEN30">BBBike starten</a></dt>
+
+<dt>3. <a href="#AEN35">Editiermodus</a></dt>
+
+<dt>4. <a href="#AEN38">Straßen-Editor</a></dt>
+
+<dt>5. <a href="#AEN122">Veröffentlichen der Ergänzungen</a></dt>
+
+<dt>6. <a href="#AEN129">Nach dem Veröffentlichen</a></dt>
+
+<dt>7. <a href="#AEN134">Erfassen anhand eines GPS-Tracks</a></dt>
+
+<dt>8. <a href="#AEN146">Ein Exkurs über die verwendeten Attribute</a></dt>
+
+<dt>9. <a href="#AEN307">Alternative Editiermöglichkeiten</a></dt>
+
+<dt>10. <a href="#AEN319">Neue Layer auf Basis der Berliner BBBike-Daten</a></dt>
+
+<dt>11. <a href="#AEN322">Eine komplett neue Datenbank aufbauen</a></dt>
+</dl>
 </div>
 
 <div class="SECT1">
@@ -637,14 +665,14 @@ class="CONSTANT">1s</tt>&#13;</p>
 
 <li>
 <p>Für Radfahrer vollkommen gesperrte Straßen (z.B. Kfz-Straßen wie die B96a in
-Altglienicke, aber siehe auch <a href="#AEN299">hier</a>; Kategorie <tt
+Altglienicke, aber siehe auch <a href="#AEN302">hier</a>; Kategorie <tt
 class="CONSTANT">2</tt>)&#13;</p>
 </li>
 
 <li>
 <p>Stellen, an denen getragen werden muss (Kategorie <tt class="CONSTANT">0:n</tt>, wobei
 <tt class="CONSTANT">n</tt> für die Zeit in Sekunden steht, die dabei verloren geht -
-hier wähle ich miest großzügige Zeiten, meistens nicht unter 30 Sekunden)&#13;</p>
+hier wähle ich großzügige Zeiten, meistens nicht unter 30 Sekunden)&#13;</p>
 </li>
 
 <li>
@@ -654,14 +682,26 @@ steht <tt class="CONSTANT">n</tt> für die verlorene Zeit)&#13;</p>
 
 <li>
 <p>Eine gesperrte Wegführung (z.B. nicht mögliches Abbiegen oder Überqueren einer Straße)
-(Kategorie <tt class="CONSTANT">3</tt>)&#13;</p>
+(Kategorie <tt class="CONSTANT">3</tt>). Wenn beispielsweise nur rechts abbiegen erlaubt
+ist, müssen alle anderen Wegführungen (z.B. geradeaus und links) als gesperrt markiert
+werden, und das sowohl für Hin- und Rückrichtung. Wenn eine Abbiegebeschränkung durch
+eine Einbahnstraße verursacht wird, dann ist eine weitere Markierung in diesem Fall nicht
+notwendig.</p>
+
+<p>Die gesperrte Wegführung wird typischerweise mit drei Punkten gekennzeichnet, wobei
+der mittlere Punkt der Punkt mit der Einschränkung ist.&#13;</p>
 </li>
 
 <li>
 <p>Die Spezialkategorie <tt class="CONSTANT">3nocross</tt>, mit der ein Straßenzug, der
-nicht überquert werden kann, gekennzeichnet wird (im Postprocessing werden die <tt
-class="CONSTANT">3nocross</tt>-Kategorien in mehrere Strecken mit der Kategorie <tt
-class="CONSTANT">3</tt> umgewandelt)&#13;</p>
+nicht überquert werden kann (z.B. wegen einer Straßenbahntrasse, wegen eines nicht
+passierbaren Mittelstreifens oder wegen sehr (!) starken Kfz-Verkehrs), gekennzeichnet
+wird. Im Postprocessing werden die <tt class="CONSTANT">3nocross</tt>-Kategorien in
+mehrere Strecken mit der Kategorie <tt class="CONSTANT">3</tt> umgewandelt.</p>
+
+<p>Beispiele findet man in den BBBike-Daten im Raum Prenzlauer Berg. In BBBike werden die
+<tt class="CONSTANT">3nocross</tt>-Strecken mit gestrichelten orangen Linien markiert und
+sind nur im Editiermodus sichtbar.&#13;</p>
 </li>
 </ul>
 
@@ -682,7 +722,7 @@ class="FILENAME">gesperrt_car</tt>&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN288" name="AEN288">8.14. Brunnels</a></h2>
+<h2 class="SECT2"><a id="AEN291" name="AEN291">8.14. Brunnels</a></h2>
 
 <p>Brunnels ist die Zusammenfassung von Brücken und Tunnels. In Zukunft werden auf
 BBBike-gezeichneten Karten brunnels auch als solche gemalt. Zurzeit können die
@@ -694,7 +734,7 @@ beizutragen (Programm <tt class="FILENAME">miscsrc/check_crossings</tt>).&#13;</
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN294" name="AEN294">8.15. Vorfahrtstraßen</a></h2>
+<h2 class="SECT2"><a id="AEN297" name="AEN297">8.15. Vorfahrtstraßen</a></h2>
 
 <p>Diese Datensätze bestehen aus Koordinaten für einen Straßenzug, der Vorfahrt am
 mittleren Punkt besitzt. Dieser Layer kann in BBBike gezeichnet werden, wird aber nicht
@@ -705,7 +745,7 @@ weiter verwendet.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN299" name="AEN299">8.16. Autobahnen</a></h2>
+<h2 class="SECT2"><a id="AEN302" name="AEN302">8.16. Autobahnen</a></h2>
 
 <p>Autobahnen und Kraftfahrzeugstraßen können zu Informationszwecken in diesem Layer
 aufgeführt werden. Strikt gesehen müssen die Strecken nicht so gezeichnet sein, dass sie
@@ -717,11 +757,11 @@ routingfähig sind.&#13;</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN304" name="AEN304">9. Alternative
+<h1 class="SECT1"><a id="AEN307" name="AEN307">9. Alternative
 Editiermöglichkeiten</a></h1>
 
 <div class="SECT2">
-<h2 class="SECT2"><a id="AEN306" name="AEN306">9.1. Schnelles Erfassen von Daten</a></h2>
+<h2 class="SECT2"><a id="AEN309" name="AEN309">9.1. Schnelles Erfassen von Daten</a></h2>
 
 <p>Es ist auch möglich, mit der Standardinstallation von BBBike (ohne CVS) Daten zu
 erfassen, die an der Daten-Maintainer geschickt werden können. Dazu muss einfach ein
@@ -742,7 +782,7 @@ BBBike-Datenformat verwendet wird, also</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN311" name="AEN311">9.2. Direktes Editieren der Daten</a></h2>
+<h2 class="SECT2"><a id="AEN314" name="AEN314">9.2. Direktes Editieren der Daten</a></h2>
 
 <p>BBBike-Daten sind reine Textdateien und können mit einem normalen Texteditor
 bearbeitet werden. Allerdings wird dabei kein <tt class="FILENAME">datachange.log</tt>
@@ -755,7 +795,7 @@ BBBike-Datenformats siehe <a href="bbd.html" target="_top">hier</a>.&#13;</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN316" name="AEN316">10. Neue Layer auf Basis der Berliner
+<h1 class="SECT1"><a id="AEN319" name="AEN319">10. Neue Layer auf Basis der Berliner
 BBBike-Daten</a></h1>
 
 <p>TBD &#13;</p>
@@ -763,7 +803,7 @@ BBBike-Daten</a></h1>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN319" name="AEN319">11. Eine komplett neue Datenbank
+<h1 class="SECT1"><a id="AEN322" name="AEN322">11. Eine komplett neue Datenbank
 aufbauen</a></h1>
 
 <p>Dazu sollte ein neues Datenverzeichnis parallel zu <tt

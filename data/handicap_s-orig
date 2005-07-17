@@ -1,4 +1,4 @@
-# $Id: handicap_s-orig,v 4.27 2005/07/02 22:32:32 eserte Exp eserte $
+# $Id: handicap_s-orig,v 4.29 2005/07/17 11:50:44 eserte Exp $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
 Bendastr.: Bauarbeiten (gesehen am 2005-07-03), danach vielleicht asphaltiert?	q4::inwork 12743,6645 12756,6578 12779,6478
@@ -264,8 +264,12 @@ Bruno-Bauer-Str.: Bordsteine, Gehweg	q2 12879,6543 12902,6495 12921,6424
 #: by: Will Gibson:
 Hessenallee: enge Straße	q1 657,11650 664,11678 788,11744 906,11870
 #: by: Andreas Mühlhausen: vvv
+Rückertstr.: Fußweg durch Wohngebiet	q3 3875,6104 4022,6087
+Spinozastr.: eng u. unübersichtlich	q2 3900,6415 3909,6484 3975,6521 4051,6512
+
+(Parkweg): mit Stufen	q3 2210,4965 2262,4914
 Koburger Str.: Gehweg	q3 6534,8467 6540,8421
-Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5070 2075,5075 2221,5081
+Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5070 2075,5075 2174,5081 2204,5081
 (Mauerweg Forst Spandau): kurvenreich, schmal, manchmal Fußgänger u. Skater	q1 -7257,16925 -7175,16968 -7151,17330 -6965,17565 -6968,17717 -6764,18287 -6794,18921 -6943,19311 -7016,19375 -8022,19052
 (Weverstr. - Gatower Str.): Fußgänger	q1 -4143,12336 -4334,12334
 (Südpark): Fußgänger	q1 -3711,11659 -3726,11773 -3826,11901 -3890,11992 -3985,12056 -4040,12050
@@ -298,6 +302,3 @@ Str. 154: viele Fußgänger	q2 13011,17470 12965,17684 12856,17825
 #: by: ^^^
 #: by: Michael Dinter:
 Leuthener Str.: enge Straße	q1 7411,8364 7494,8364 7578,8358 7640,8359 7716,8356
-Rückertstr.: Fußweg durch Wohngebiet	q3 3875,6104 4022,6087
-Spinozastr.: eng u. unübersichtlich	q2 3900,6415 3909,6484 3975,6521 4051,6512
-

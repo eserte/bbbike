@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.3 2005/06/21 21:19:02 eserte Exp $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.4 2005/07/17 12:47:10 eserte Exp $ -->
 
 <article>
  <artheader>
@@ -28,7 +28,7 @@
    </author>
   </authorgroup>
 
-  <pubdate>$Date: 2005/06/21 21:19:02 $</pubdate>
+  <pubdate>$Date: 2005/07/17 12:47:10 $</pubdate>
 
   <copyright>
    <year>2005</year>
@@ -670,20 +670,32 @@ linkend="strassenbab">hier</>; Kategorie <constant>2</>)
 
 <listitem><para>Stellen, an denen getragen werden muss (Kategorie
 <constant>0:n</>, wobei <constant>n</> für die Zeit in Sekunden steht,
-die dabei verloren geht - hier wähle ich miest großzügige Zeiten,
-meistens nicht unter 30 Sekunden)
+die dabei verloren geht - hier wähle ich großzügige Zeiten, meistens
+nicht unter 30 Sekunden)
 
 <listitem><para>Drängelgitter und Ähnliches (Kategorie
 <constant>BNP:n</>, auch hier steht <constant>n</> für die verlorene
 Zeit)
 
 <listitem><para>Eine gesperrte Wegführung (z.B. nicht mögliches
-Abbiegen oder Überqueren einer Straße) (Kategorie <constant>3</>)
+Abbiegen oder Überqueren einer Straße) (Kategorie <constant>3</>).
+Wenn beispielsweise nur rechts abbiegen erlaubt ist, müssen alle
+anderen Wegführungen (z.B. geradeaus und links) als gesperrt markiert
+werden, und das sowohl für Hin- und Rückrichtung. Wenn eine
+Abbiegebeschränkung durch eine Einbahnstraße verursacht wird, dann ist
+eine weitere Markierung in diesem Fall nicht notwendig.</para><para> Die gesperrte
+Wegführung wird typischerweise mit drei Punkten gekennzeichnet, wobei
+der mittlere Punkt der Punkt mit der Einschränkung ist.
 
 <listitem><para>Die Spezialkategorie <constant>3nocross</>, mit der
-ein Straßenzug, der nicht überquert werden kann, gekennzeichnet wird
-(im Postprocessing werden die <constant>3nocross</>-Kategorien in
-mehrere Strecken mit der Kategorie <constant>3</> umgewandelt)
+ein Straßenzug, der nicht überquert werden kann (z.B. wegen einer
+Straßenbahntrasse, wegen eines nicht passierbaren Mittelstreifens oder
+wegen sehr (!) starken Kfz-Verkehrs), gekennzeichnet wird. Im
+Postprocessing werden die <constant>3nocross</>-Kategorien in mehrere
+Strecken mit der Kategorie <constant>3</> umgewandelt.</para><para> Beispiele
+findet man in den BBBike-Daten im Raum Prenzlauer Berg. In BBBike
+werden die <constant>3nocross</>-Strecken mit gestrichelten orangen
+Linien markiert und sind nur im Editiermodus sichtbar.
 
 </itemizedlist>
 

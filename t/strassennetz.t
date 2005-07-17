@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.10 2005/05/18 22:03:28 eserte Exp $
+# $Id: strassennetz.t,v 1.11 2005/07/17 18:47:48 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -92,7 +92,7 @@ if ($do_xxx) {
 
     {
 	# CP-Kommentar (beide Richtungen) Sonnenallee/Treptower
-	my $route = [[13510,8138], [13459,8072], [13359,7949]];
+	my $route = [[13478,8095], [13459,8072], [13359,7949]];
 	my $comment;
 
 	for my $pass (1, 2) {

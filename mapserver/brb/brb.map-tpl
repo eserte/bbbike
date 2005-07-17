@@ -404,8 +404,8 @@ LAYER
   
   CLASSITEM 'CAT'
   CLASS
-    EXPRESSION "F:P" 
-    NAME "Park, Wald"
+    EXPRESSION /^F:(P|Forest|Cemetery)$/
+    NAME "Park, Wald, Friedhof"
     COLOR [% COLOR_MIDDLE_GREEN %]
   END
   CLASS
@@ -567,7 +567,7 @@ LAYER
   
   CLASSITEM 'CAT'
   CLASS
-    EXPRESSION "F:Pabove" 
+    EXPRESSION /^F:.*above$/
 #    NAME "Park, Wald"
     COLOR 0 225 0
   END

@@ -1,4 +1,4 @@
-# $Id: comments_path-orig,v 4.20 2005/07/11 21:04:00 eserte Exp eserte $
+# $Id: comments_path-orig,v 4.21 2005/07/17 18:47:56 eserte Exp $
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C
 # CP   : wie "CP;", Kommentar gültig für beide Fahrtrichtungen
 # CP2; : Kommentar an Punkt A bei Fahrt von A nach B
@@ -28,7 +28,7 @@ von der Brandenburgischen in die Paderborner: frühzeitig auf den linken Gehweg w
 #: add_fragezeichen: das hier wird wegfallen, falls es eine andere Verbindung zwischen Gregoroviusweg und Bahndamm gibt
 nach links zum Bahndamm abbiegen: bis zur Kreuzung Gregoroviusweg vorfahren	PI; 18690,10016 18698,9996 19675,10410
 #XXX del: lohnt sich nicht, wegen Einbahnstr. in der Ontarioseestr.: Treskowallee - Ontarioseestr: an der Kreuzung Gregoroviusweg auf den linken Gehweg wechseln	PI; 18737,9901 18698,9996 18690,10016 18577,10023
-Treptower Str./Sonnenallee: Ampel an der Hertzbergstr. benutzen	CP 13510,8138 13478,8095 13459,8072 13359,7949
+Treptower Str./Sonnenallee: Ampel an der Hertzbergstr. benutzen	CP 13478,8095 13459,8072 13359,7949
 zur Prenzlauer Promenade: Straßenseite wechseln	PI; 11907,19838 11907,19749 11933,19590
 zur Pasewalker Straße: Straßenseite wechseln	PI; 11950,18529 11934,18576
 Abbiegender Waldweg ist nicht ausgeschildert	CP; 21576,6644 20858,7143 20887,7267

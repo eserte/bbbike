@@ -399,8 +399,8 @@ userdel	q4 -16640,1304 -16894,1485
          'until' => 1133391600,
          'text' => 'L 76; (Mahlower Str.); OL Teltow, zw. Ruhlsdorfer u. A.-Saefkow-Str. Kanal- und Straßenbau Vollsperrung 02.05.2005-30.11.2005 ',
          'from' => 1114898400,
-         'data' => 'userdel	q4 1453,-746 1680,-1011
-userdel	q4 1872,-1118 1680,-1011
+         'data' => 'userdel	q4 1453,-746 1550,-761 1709,-953
+userdel	q4 1916,-1090 1709,-953
 ',
          'type' => 'handicap'
        },

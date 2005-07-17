@@ -1,56 +1,13 @@
 #!/usr/bin/perl -w
 
 use strict;
-use XML::LibXML;
 
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
-use Karte::Polar;
-use Karte::Standard;
+use Strassen::GPX;
 
 my $file = shift || die;
-my $p = XML::LibXML->new;
-my $doc = $p->parse_file($file);
-my $root = $doc->documentElement;
+Strassen::GPX->new($file)->write("-");
 
-for my $wpt ($root->childNodes) {
-    next if $wpt->nodeName ne "wpt";
-    my($x, $y) = latlong2xy($wpt);
-    my $name = "";
-    for my $name_node ($wpt->childNodes) {
-	next if $name_node->nodeName ne "name";
-	$name = $name_node->textContent;
-	last;
-    }
-    print "$name\tX $x,$y\n";
-}
-
-for my $trk ($root->childNodes) {
-    next if $trk->nodeName ne "trk";
-    my $name;
-    for my $trk_child ($trk->childNodes) {
-	if ($trk_child->nodeName eq 'name') {
-	    $name = $trk_child->textContent;
-	} elsif ($trk_child->nodeName eq 'trkseg') {
-	    my @c;
-	    for my $trkpt ($trk_child->childNodes) {
-		next if $trkpt->nodeName ne 'trkpt';
-		my($x, $y) = latlong2xy($trkpt);
-		#my $ele = $wpt->findvalue(q{./ele});
-		#my $time = $wpt->findvalue(q{./time});
-		push @c, "$x,$y";
-	    }
-	    print "$name\tX @c\n";
-	}
-    }
-}
-
-sub latlong2xy {
-    my($node) = @_;
-    my $lat = $node->findvalue(q{./@lat});
-    my $lon = $node->findvalue(q{./@lon});
-    my($x, $y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon, $lat));
-    ($x, $y);
-}

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.57 2005/07/08 00:47:03 eserte Exp eserte $
+# $Id: Core.pm,v 1.58 2005/07/17 21:26:17 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.57 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.58 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -92,8 +92,12 @@ sub new {
 	    require Strassen::WaypointPlus;
 	    return Strassen::WaypointPlus->new($filename, %args);
 	} elsif ($filename =~ /\.(mps|gpx|g7t)$/i) {
-	    require Strassen::FromRoute;
-	    return Strassen::FromRoute->new($filename, %args);
+	    if ($filename =~ /\.gpx$/ && eval { require Strassen::GPX; 1 }) {
+		return Strassen::GPX->new($filename, %args);
+	    } else {
+		require Strassen::FromRoute;
+		return Strassen::FromRoute->new($filename, %args);
+	    }
 	}
     }
 

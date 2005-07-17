@@ -29,7 +29,7 @@ Vulkanstraße	? 15896,13158 15880,13535 15873,14046 15838,14319
 Frankfurter Allee östlich Alfredstraße (Busspur weiter östlich schon vorhanden)	? 16211,11951 16373,11933
 Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17750,11771 17436,11791 17249,11802
 Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
-Saargemünder Straße	? 2009,4793 1495,4850
+Saargemünder Straße	? 2009,4793 1933,4803 1495,4850
 #: next_check: 2005-09-01
 Englerallee (voraussichtlich 2005-09-01)	? 3707,5758 3723,5922 3740,6106 3756,6272 3800,6418 3836,6550
 Pacelliallee	? 2585,5696 2609,6348 2659,6499 2711,6698 2723,7029
@@ -79,13 +79,13 @@ Entlastungsstr.: wird voraussichtlich im September 2005 stillgelegt	? 8063,12182
 #: XXX ^^^
 #: next_check: 2005-12-01
 Alexanderufer: in Bau	?::inwork 8269,13062 8312,13296 8378,13425 8337,13541
-Thielpark - Hüttenweg: laut anonymen Eintrag eher nicht geeignet (Stufen). Laut Andreas M. gibt es einige Varianten durch den Park, einige mit Stufen, eine ohne, aber die Variante Gelfertstr. ist sinnvoller	#cccccc 2288,4932 2221,5081
 #: section ^^^
 #
 #: section ignorieren vvv
 # Hier kommen die Fragezeichen-Strecken herein, die nicht bei einer
 # erweiterten Suche aufgenommen werden sollen.
 #
+Höhenpunkt Mendelssohnstr.?	? 11613,13570
 #: XXX: Vorschlag von Corinna Meyer:
 Bremer Weg (Tiergarten): genaue Wegführung, Qualität?	? 5901,11902 5923,11873 6296,11890 6342,11878 6409,11925 6573,11943 6642,12010
 Bremer Weg (Tiergarten): genaue Wegführung, Qualität?	? 6828,12031 6857,11992 7460,12054 8018,12131 8063,12182
@@ -223,7 +223,7 @@ Brunow - Gamengrund: Qualität?	? 41710,36619 43362,37337 43825,37262 43975,36775
 # Normannenstr.: gar keine Einbahnstraße	? -3692,2549 -3579,2532 -3395,2403
 Wasgenstr.: Qualität zwischen Spanische Allee und Matterhornstr. (wahrscheinlich Kopfsteinpflaster?)?	? -2481,2900 -2614,3124
 Kleinziethen - Pechsteinstr. (Lichtenrade): befahrbare Verbindung, Qualität?	? 13506,-2809 12232,-2281
-Mauerweg Lichtenrade - Lichterfelde: befahrbar, Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 10448,-3214 10291,-3193 9560,-3155 9471,-2138 8334,-2101 8384,-1581 7110,-596 6634,-137 6172,306 6011,195 5831,71 4400,-913
+Mauerweg Lichtenrade - Lichterfelde: befahrbar, Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 10631,-3215 10448,-3214 10291,-3193 9560,-3155 9471,-2138 8334,-2101 8384,-1581 7110,-596 6634,-137 6172,306 6011,195 5831,71 4400,-913
 Mauerweg Lichtenrade: Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 10609,-3098 10631,-3215 11646,-3251
 Mauerweg, existiert ein Zugang von der Prinzessinenstr.?	? 9471,-2138 9560,-2153
 Mauerweg Lichterfelde: befahrbar, insbesondere am zukünftigen Fernbahndamm, Qualität? laut "Berliner Umland" gut geeigneter Radweg	?? 4400,-913 3941,-279 3659,159 3400,515
@@ -426,7 +426,7 @@ Dargen - Katschow: Fahrradroute laut Kompass-Karte	? 51162,165171 50715,166093 5
 Gellenthin: Fahrradroute laut Kompass-Karte	? 38459,162337 39037,162387 39930,160816
 Wie heißt die Straße genau: Walther-Nernst-Str. oder Walther-Nemst-Str?	? 19562,2971
 Stücken - Tremsdorf: Qualität?	? -10978,-17764 -10562,-16912 -10175,-16537 -9675,-16375 -9200,-15550 -9035,-15135 -8680,-14704
-Am Havelkanal: laut "Berliner Umland" gut geeigneter Radweg, nur der westliche Teil ist witterungsabhängige Strecke	? -3379,23141 -3462,23100 -7081,22356 -9012,22250 -9060,22342
+Am Havelkanal: laut "Berliner Umland" gut geeigneter Radweg, nur der westliche Teil ist witterungsabhängige Strecke	? -3379,23141 -3462,23100 -4000,22989 -7081,22356 -9012,22250 -9060,22342
 An der Havel (Mauerweg und Berlin-Kopenhagen): laut "Berliner Umland" gut geeigneter Radweg, laut ADFC-Karte "mäßig geeignet"; Durchfahrt unter der S-Bahn möglich?	? -3379,23141 -3025,23393 -2775,23981 -2675,24500 -2818,24631 -2946,25212
 An der Havel (Mauerweg und Berlin-Kopenhagen): laut "Berliner Umland" gut geeigneter Radweg, laut ADFC-Karte "mäßig geeignet"	? -3379,23141 -3396,22893 -3421,22495 -3674,22172 -3714,21828 -3546,21328 -3534,21240 -2967,20755 -2775,20533 -2742,19975
 #: XXX andere Quelle ist Andreas M.:
@@ -652,8 +652,8 @@ Lindenhagen - Beenz: Qualität?	? 32388,94460 31800,94925 31012,95287 30837,95225
 Machonstr.: Qualität? laut ADFC-Karte gut geeignet	? 9025,4871 9044,4667 9067,4495 9080,4371
 Seelbuschring: Qualität? Einbahnstraße auch für Radfahrer gültig?	? 8242,4648 8432,4712 8467,4590
 Hannemannstr. (Teltow): Qualität?	? 2789,482 2947,220 3137,-67 3315,-360
-Teltow Richtung Süden: Qualität? Straßennamen?	? 3377,-366 3589,-673 3615,-757 3781,-889 3970,-918 3765,-1732 3748,-2118
-Teltow Richtung Süden (Bahnstr., Flugplatzstr.): Qualität? Wie geht es weiter?	? 3489,-1981 3417,-2460 3310,-3001 3092,-3093
+Teltow Richtung Süden: Qualität? Straßennamen?	? 3377,-366 3589,-673 3615,-757 3781,-889 3970,-918 3765,-1732 3750,-2087
+Teltow Richtung Süden (Bahnstr., Flugplatzstr.): Qualität? Wie geht es weiter?	? 3494,-1950 3417,-2460 3310,-3001 3092,-3093
 Frauenschuhweg: Qualität?	? 16477,3201 16601,3376
 Fenchelweg - Frauenschuhweg (entlang des Teltowkanals): Durchgängig befahrbar? Qualität (laut ADFC-Karte mäßig geeignet)?	? 15840,3916 16601,3376
 An der Werderlake, Glashütter Weg, Rudower Höhe: Qualität?	? 18191,1837 18262,1734 18204,1704 18404,1376 18614,1453
@@ -813,3 +813,8 @@ Prinz-Friedrich-Leopold-Str.: zunächst Kopfsteinpflaster (50m), dann anscheinend
 Weddigenweg: Qualität?	? 2701,3064 3036,3050 3180,3035 3640,3023 3943,3015
 #: XXX: laut anonymen Eintrag asphaltiert und Radstreifen?!
 Mahlower Str. (Köpenick): Qualität (Asphalt)?	? 21442,3774 21521,3734 21762,3992 21690,4057
+Kopernikusstr. (Potsdam-Babelsberg): Qualität?	? -9753,-2474 -9771,-2394 -10121,-2093 -10292,-1995
+Am Neuen Kanal/Trappenallee: Qualität?	? -4000,22989 -3994,23162 -3503,23811
+Dorfstr. Stolpe-Dorf: Qualität?	? -25,27812 237,28184 524,28171
+Weg am Flakensee: Qualität (Waldweg?)?	? 35021,2212 35000,2269 35045,2422 35024,2900 35088,3016 35167,3074 35353,3476 35347,3555 35252,3653 35143,3698 35103,3769 35134,3866 35103,3973 35170,4058 35207,4305 35134,4500
+Bodelschwinghstr./Grenzstr. (Mahlow): Qualität?	? 11291,-4485 11651,-4515 11706,-4579 11779,-4549 11974,-4579

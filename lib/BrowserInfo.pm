@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.45 2005/01/20 00:31:29 eserte Exp eserte $
+# $Id: BrowserInfo.pm,v 1.46 2005/07/17 21:31:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2005 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.46 $ =~ /(\d+)\.(\d+)/);
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 

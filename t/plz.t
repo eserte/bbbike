@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.21 2005/06/04 16:09:53 eserte Exp $
+# $Id: plz.t,v 1.22 2005/07/17 21:43:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -446,7 +446,7 @@ sub do_file {
 	    close T;
 
 	    my $label = "Compare results with file $file";
-	    eq_or_diff($buf, $res, $label);
+	    eq_or_diff($res, $buf, $label);
 	} else {
 	    warn "Can't open $tmpdir/$file: $!. Please use the -create option first and check the results in $tmpdir!\n";
 	    ok(0);

@@ -6,7 +6,7 @@
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# $Id: browserinfo.t,v 1.4 2005/01/03 00:11:34 eserte Exp eserte $
+# $Id: browserinfo.t,v 1.5 2005/07/17 21:30:58 eserte Exp $
 # Author: Slaven Rezic
 #
 

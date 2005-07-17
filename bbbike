@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.180 2005/07/13 22:19:23 eserte Exp eserte $
+# $Id: bbbike,v 3.181 2005/07/17 14:08:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -186,7 +186,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.180 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.181 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4837,8 +4837,11 @@ sub define_item_attribs {
 	 'UB' => '#000080', 	# U-Bahn, Zone B
 	 'U0' => '#a0a0b0', 	# U-Bahn in Bau
 	 'W'  => '#bad5f7', 	# Gewässer
-	 'P'  => '#76c48b', 	# Parks, Wälder
+	 'P'  => '#76c48b', 	# Parks
 	 'Pabove'  => '#76c48b', 	# same, but for higher stacking
+	 'Forest'  => '#66b47b', 	# Wälder
+	 'Forestabove'  => '#66b47b', 	# same, but for higher stacking
+	 'Cemetery'  => '#70c085', 	# Friedhöfe
 	 'Ae' => 'white',	# Flughäfen
 	 'F'  => 'grey99',	# sonstige Flächen
 	 'SW' => 'red',		# Sehenswürdigkeit
@@ -4916,9 +4919,11 @@ sub define_item_attribs {
 	(
 	 'W'  => 'helvetica %d italic',
 	 'P'  => 'helvetica %d',
-	 'Pabove' => 'helvetica %d',
 	 'Ae' => 'helvetica %d',
 	);
+    for (qw(Forest Forestabove Pabove Cemetery)) { 
+	$category_font{$_} = $category_font{'P'};
+    }
 
     $pp_color = '#008000';
 
@@ -5162,8 +5167,12 @@ sub define_item_attribs {
 	 'N'  => [M"Nebenstraße", M"Nebenstraßen", undef],
 	 'NN' => [M"für Kfz gesperrte Straße", M"für Kfz gesperrte Straßen", undef],
 	 'BAB'=> [M"Autobahn", M"Autobahnen", undef],
-	 'P'  => [M"Park/Wald", M"Parks/Wälder", undef],
-	 'Pabove' => [M"Park/Wald", M"Parks/Wälder", undef],
+	 'P'  => [M"Park", M"Parks", undef],
+	 'Pabove' => [M"Park", M"Parks", undef],
+	 'Forest' => [M"Wald", M"Wälder", undef],
+	 'Forestabove' => [M"Wald", M"Wälder", undef],
+	 'Cemetery' => [M"Friedhof", M"Friedhöfe", undef],
+	 'Ae' => [M"Flughafen", M"Flughäfen", undef],
 	 'F'  => [M"Flughafen", M"Flughäfen", undef],
 	 'Q0' => [M"sehr guter Belag", undef, undef,
 		  M"sehr guter Belag (Asphalt)"],

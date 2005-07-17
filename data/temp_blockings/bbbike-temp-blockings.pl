@@ -633,7 +633,7 @@ EOF
        text  => 'L 30; (Tasdorfer Str.); OL Vogelsdorf, zw. Heinestr. u. Seestr. Kanalarbeiten Vollsperrung 26.08.2004-08.10.2004 ',
        type  => 'handicap',
       data  => <<EOF,
-userdel	q4 35359,12542 35656,11817
+userdel	q4 35338,12538 35676,11706
 EOF
      },
      { from  => 1093297474, # 2004-08-23 23:44
@@ -1049,7 +1049,7 @@ EOF
        text  => 'L 171; (Hohen Neuendorf-Hennigsdorf); Bereich Anschlußstelle; Ausbau AS Stolpe; Vollsperrung; 18.10.2004-28.10.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 375,28109 938,28349
+userdel	2 375,28109 524,28171 938,28349
 EOF
      },
      { from  => 1119904102, # 2005-06-27 22:28
@@ -1882,8 +1882,8 @@ EOF
        text  => 'L 76; (Mahlower Str.); OL Teltow, zw. Ruhlsdorfer u. A.-Saefkow-Str. Kanal- und Straßenbau Vollsperrung 02.05.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 1453,-746 1680,-1011
-userdel	q4 1872,-1118 1680,-1011
+userdel	q4 1453,-746 1550,-761 1709,-953
+userdel	q4 1916,-1090 1709,-953
 EOF
      },
      { from  => 1115589537, # 2005-05-08 23:58
