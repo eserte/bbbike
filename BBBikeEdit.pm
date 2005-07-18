@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.87 2005/06/16 22:25:11 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.87 2005/06/16 22:25:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -1890,6 +1890,8 @@ if (!defined $tmpdir) {
 use vars qw($auto_reload);
 $auto_reload = 0 if !defined $auto_reload;
 
+use vars qw($crosshairs_activated);
+
 # Return true if the file is writable (eventually after checking out).
 sub ask_for_co {
     my($top, $file) = @_;
@@ -2169,6 +2171,18 @@ sub editmenu {
 		   )->pack(-side => "left", -fill => "x", -expand => 1);
 	$f0->Checkbutton(-text => "Auto",
 			 -variable => \$auto_reload,
+			 -anchor => "w",
+			)->pack(-side => "left");
+	$f0->Checkbutton(-text => "Crosshairs",
+			 -variable => \$crosshairs_activated,
+			 -command => sub {
+			     require BBBikeCrosshairs;
+			     if ($crosshairs_activated) {
+				 BBBikeCrosshairs::activate();
+			     } else {
+				 BBBikeCrosshairs::deactivate();
+			     }
+			 },
 			 -anchor => "w",
 			)->pack(-side => "left");
     }

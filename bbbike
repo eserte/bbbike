@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.181 2005/07/17 14:08:27 eserte Exp $
+# $Id: bbbike,v 3.181 2005/07/17 14:08:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -5239,7 +5239,7 @@ sub define_item_attribs {
     # normale Reihenfolge für das Übereinanderlegen bei restack()
     #XXX labels sollten grundsätzlich immer oben sein. Problematisch bei tag_groups
     @normal_stack_order =
-	(qw(map f w-out w i-out i f-Pabove e e-img
+	(qw(map f w-out w i-out i f-Pabove crosshairs e e-img
 	    gP gD z g gP gD
 	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB l v
 	    f-label-bg w-label-bg f-label w-label

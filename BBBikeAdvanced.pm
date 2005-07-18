@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.120 2005/07/04 22:56:47 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.120 2005/07/04 22:56:47 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1271,22 +1271,17 @@ sub advanced_coord_menu {
 	$c_bpcm->command
 	    (-label => M"Edit-Modus",
 	     -command => sub { switch_edit_standard_mode() },
-	     -accelerator => 'F5',
 	    );
 	$editstandard_command_index = $c_bpcm->index('last');
 	$c_bpcm->command
 	    (-label => M"Standard-Modus",
 	     -command => sub { switch_standard_mode() },
-	     -accelerator => 'F4',
 	    );
 	$standard_command_index = $c_bpcm->index('last');
 	$c_bpcm->command
 	    (-label => M"Andere Edit-Modi",
 	     -command => sub { choose_edit_any_mode() },
 	     );
-
-	$top->bind("<F4>" => sub { $c_bpcm->invoke($standard_command_index) });
-	$top->bind("<F5>" => sub { $c_bpcm->invoke($editstandard_command_index) });
     }
     $bpcm->cascade(-label => "Obsolete Editierfunktionen");
     {
