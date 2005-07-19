@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: grepstrassen,v 1.9 2005/05/31 07:01:26 eserte Exp $
+# $Id: grepstrassen,v 1.10 2005/07/19 23:29:53 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -15,10 +15,12 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
 use Strassen::Core;
+use Strassen::Stat;
 use strict;
 
 use Getopt::Long;
 my($v, $cat, $catrx, $name, $namerx, $section, $sectionrx);
+my($minarea, $minlength);
 my %special;
 my %special_end;
 GetOptions("v" => \$v,
@@ -32,11 +34,13 @@ GetOptions("v" => \$v,
 	       no strict 'refs';
 	       &{"init_" . $_[1]}($_[1]);
 	   },
+	   "minarea=f" => \$minarea,
+	   "minlength=f" => \$minlength,
 	  ) or die <<EOF;
 usage: $0 [-v] [-cat category] [-catrx regexp]
        [-name name] [-namerx regexp]
        [-section section] [-sectionrx regexp]
-       [-special name]
+       [-special name] [-minarea ...km²] [-minlength ...km]
 
 section is a region marked with the "section" directive in a bbd file.
 
@@ -45,6 +49,8 @@ EOF
 $catrx = qr{$catrx} if $catrx;
 $namerx = qr{$namerx} if $namerx;
 $sectionrx = qr{$sectionrx} if $sectionrx;
+$minarea = $minarea*(1000*1000) if defined $minarea;
+$minlength = $minlength*1000 if defined $minlength;
 
 my $datafile = shift || "-";
 
@@ -64,6 +70,8 @@ while(1) {
     my $dir = $s->get_directive;
     if (defined $section) { if (defined $dir->{section} && grep { $_ eq $section } @{ $dir->{section} }) { next if $v } else { next unless $v } }
     if (defined $sectionrx) { if (defined $dir->{section} && grep { /$sectionrx/ } @{ $dir->{section} }) { next if $v } else { next unless $v } }
+    if (defined $minarea && $r->[2] =~ /^F:/) { if (Strassen::area($r) >= $minarea) { next if $v } else { next unless $v } }
+    if (defined $minlength && $r->[2] !~ /^F:/ && @{$r->[1]} > 1) { if (Strassen::total_len($r) >= $minlength) { next if $v } else { next unless $v } }	
     while(my($k,$v) = each %special) {
 	next if !$v->($r, $dir);
     }

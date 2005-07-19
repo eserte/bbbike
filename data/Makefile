@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.58 2005/07/17 21:34:37 eserte Exp $
+# $Id: Makefile,v 2.59 2005/07/19 23:29:22 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -59,9 +59,10 @@ SOURCE_TARGETS+=	gesperrt_$(i)
 SOURCE_TARGETS+=	${COMMENTS_PARTIAL} fragezeichen exits multi_bez_str
 
 # These do not have a -orig file of their own
-COMPUTED_TARGETS=	sbahnhof_bg ubahnhof_bg rbahnhof berlin
+COMPUTED_TARGETS=	sbahnhof_bg ubahnhof_bg berlin
 COMPUTED_TARGETS+=	radwege_exact mount
 COMPUTED_TARGETS+=	temp_blockings/bbbike-temp-blockings-optimized.pl
+COMPUTED_TARGETS+=	wasserstrassen-lowres
 
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COMPUTED_TARGETS} ${COOKED_TARGETS}
@@ -187,6 +188,15 @@ wasserumland2: wasserumland2-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) wasserumland2-orig | $(SORTBYCAT) -ignore F:I > $@ \
 	    || (rm -f $@; false)
+	-@$(READONLY) $@
+
+wasserstrassen-lowres: wasserstrassen wasserumland wasserumland2
+	-@$(WRITEABLE) $@
+	cat wasserstrassen wasserumland wasserumland2 |\
+	    $(GREPSTRASSEN) --catrx '^(F:W1)$$' > $@~
+	cat wasserstrassen wasserumland wasserumland2 |\
+	    $(GREPSTRASSEN) --catrx '^(W1|W2|F:W)$$' --minarea 3 >> $@~
+	mv -f $@~ $@
 	-@$(READONLY) $@
 
 flaechen: flaechen-orig

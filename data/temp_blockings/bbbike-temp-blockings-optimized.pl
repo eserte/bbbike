@@ -52,16 +52,6 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1121637600,
-         'text' => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Londoner Str. und Transvaalstr. Veranstaltung, Straße vollständig gesperrt (bis 17.07.2005 24 Uhr)',
-         'from' => 1121462650,
-         'data' => 'userdel	2 6032,16698 5791,16910
-userdel	2 6032,16698 6129,16611
-userdel	2 6129,16611 6329,16438
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -82,14 +72,8 @@ userdel	2 6129,16611 6329,16438
        undef,
        undef,
        undef,
-       {
-         'until' => 1121637600,
-         'text' => 'B 103; (Havelberger Str.); OD Pritzwalk, Bahnübergang Gleissanierung Vollsperrung 15.07.2005-17.07.2005 ',
-         'from' => 1121292000,
-         'data' => 'userdel	2 -74489,80545 -74653,81289
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -385,14 +369,7 @@ userdel	q4 -16640,1304 -16894,1485
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1121637600,
-         'text' => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 17.05.2005-17.07.2005 ',
-         'from' => 1116194400,
-         'data' => 'userdel	2 26313,-13049 26028,-12312
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -581,19 +558,12 @@ userdel	2 -4504,-14978 -4077,-14595
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'until' => 1121637600,
-         'text' => 'Einfahrt in die Kastanienallee wegen Bauarbeiten gesperrt, 16.07.2005-17.07.2005',
-         'from' => 1121378400,
-         'data' => 'userdel	q4; 10889,15045 10723,14772
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1127080800,
-         'text' => 'Einfahrt in die Pappelallee wegen Bauarbeiten gesperrt, 18.07.2005 - 18.09.2005',
-         'from' => 1121551200,
-         'data' => 'userdel	q4; 10889,15045 11119,15385
+         'until' => 1123452000,
+         'text' => 'Pappelallee (Prenzlauer Berg) in beiden Richtungen zwischen Raumerstr. und Schönhauser Allee Baustelle, Straße vollständig gesperrt (bis 07.08.2005)',
+         'from' => 1121732314,
+         'data' => 'userdel	q4 11119,15385 10889,15045
 ',
          'type' => 'handicap'
        },
@@ -703,6 +673,30 @@ userdel	2 14153,-17829 13303,-18235
          'text' => 'K 7207; (KG südl. Rinow-Weißen); Brücke bei Rinow Brückenbauarbeiten Vollsperrung 20.07.2005-30.11.2005 ',
          'from' => 1121724000,
          'data' => 'userdel	2 2362,-64075 3737,-64262
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1123884000,
+         'text' => 'Hönower Str. (Mahlsdorf) in Richtung Alt-Mahlsdorf zwischen Wilhelmsmühlenweg und Alt-Mahlsdorf Baustelle, Fahrtrichtung gesperrt (bis 12.08.2005)',
+         'from' => 1121801694,
+         'data' => 'userdel	q4; 24631,11719 24591,11625 24603,11450 24658,11293
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1122156000,
+         'text' => 'B 112; (Kupferhammerstr.); Bahnübergang in OL Guben Gleisinstandhaltungsarb. Vollsperrung 20.07.2005-23.07.2005 ',
+         'from' => 1121724000,
+         'data' => 'userdel	2 99825,-46697 99765,-46542 99702,-46376
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1122588000,
+         'text' => 'B 112; Bahnübergang zw. Groß Breesen u. Bresinchen Gleisinstandsetztungsarb. Vollsp * 25.07.2005-28.07.2005 ',
+         'from' => 1122156000,
+         'data' => 'userdel	2 99277,-43921 99228,-44346
 ',
          'type' => 'gesperrt'
        }

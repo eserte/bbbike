@@ -1462,8 +1462,8 @@ EOF
 userdel	2 -12156,-13509 -12221,-13124
 userdel	2 -12156,-13509 -12177,-13787
 userdel	2 -12372,-12676 -12221,-13124
-userdel	2 -12372,-12676 -12459,-12120
-userdel	2 -12337,-10735 -12459,-12120
+userdel	2 -12372,-12676 -12443,-12223 -12459,-12120
+userdel	2 -12337,-10735 -12433,-11898 -12459,-12120
 EOF
      },
      { from  => 1108684644, # 2005-02-18 00:57
@@ -1853,9 +1853,9 @@ EOF
 userdel	2 27543,-11912 27657,-11741
 EOF
      },
-     { from  => 1116194400, # 2005-05-16 00:00
-       until => 1121637600, # 2005-07-18 00:00
-       text  => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 17.05.2005-17.07.2005 ',
+     { from  => 1122760800, # 2005-07-31 00:00
+       until => 1124056800, # 2005-08-15 00:00
+       text  => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 01.08.2005-14.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 26313,-13049 26028,-12312
@@ -2230,12 +2230,12 @@ EOF
 userdel	q4; 10889,15045 10723,14772
 EOF
      },
-     { from  => 1121551200, # 2005-07-17 00:00
-       until => 1127080800, # 2005-09-19 00:00
-       text  => 'Einfahrt in die Pappelallee wegen Bauarbeiten gesperrt, 18.07.2005 - 18.09.2005',
+     { from  => 1121732314, # 2005-07-19 02:18
+       until => 1123452000, # 2005-08-08 00:00
+       text  => 'Pappelallee (Prenzlauer Berg) in beiden Richtungen zwischen Raumerstr. und Schönhauser Allee Baustelle, Straße vollständig gesperrt (bis 07.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 10889,15045 11119,15385
+userdel	q4 11119,15385 10889,15045
 EOF
      },
      { from  => 1120341600, # 2005-07-03 00:00
@@ -2361,6 +2361,30 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 2362,-64075 3737,-64262
+EOF
+     },
+     { from  => 1121801694, # 2005-07-19 21:34
+       until => 1123884000, # 2005-08-13 00:00
+       text  => 'Hönower Str. (Mahlsdorf) in Richtung Alt-Mahlsdorf zwischen Wilhelmsmühlenweg und Alt-Mahlsdorf Baustelle, Fahrtrichtung gesperrt (bis 12.08.2005)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 24631,11719 24591,11625 24603,11450 24658,11293
+EOF
+     },
+     { from  => 1121724000, # 2005-07-19 00:00
+       until => 1122156000, # 2005-07-24 00:00
+       text  => 'B 112; (Kupferhammerstr.); Bahnübergang in OL Guben Gleisinstandhaltungsarb. Vollsperrung 20.07.2005-23.07.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 99825,-46697 99765,-46542 99702,-46376
+EOF
+     },
+     { from  => 1122156000, # 2005-07-24 00:00
+       until => 1122588000, # 2005-07-29 00:00
+       text  => 'B 112; Bahnübergang zw. Groß Breesen u. Bresinchen Gleisinstandsetztungsarb. Vollsp * 25.07.2005-28.07.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 99277,-43921 99228,-44346
 EOF
      },
     );

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCrosshairs.pm,v 1.3 2005/07/18 21:57:13 eserte Exp $
+# $Id: BBBikeCrosshairs.pm,v 1.4 2005/07/19 00:30:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeCrosshairs;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(@old_bindings $angle $pd $angle_steps $pd_steps);
 $angle = 0       if !defined $angle;
@@ -27,8 +27,8 @@ $pd_steps = 2    if !defined $pd_steps;
 use BBBikeUtil qw(pi deg2rad);
 
 sub activate {
-    my $c   = $main::c;
-    my $top = $main::top;
+    my $c   = $main::c   = $main::c;
+    my $top = $main::top = $main::top;
 
     for my $event (qw(Motion)) {
 	my $old_binding = $c->CanvasBind("<$event>");

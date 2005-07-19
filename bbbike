@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.181 2005/07/17 14:08:27 eserte Exp eserte $
+# $Id: bbbike,v 3.182 2005/07/19 23:27:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -40,8 +40,12 @@ BEGIN {
 	# XXX don't know whether this is a Tk400 or an old perl problem
 	eval {
 	    require Tk::ProgressSplash;
+	    my $splashtype = 'fast';
+	    if ($^O eq 'MSWin32') {
+		$splashtype = 'normal';
+	    }
 	    $splash_screen = Tk::ProgressSplash->Show
-		(-splashtype => 'fast',
+		(-splashtype => $splashtype,
 		 "$FindBin::RealBin/images/bbbike_splash.xpm",
 		 240, 90, "BBBike", 1);
 	}; warn $@ if $@;
@@ -186,7 +190,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.181 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.182 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -13441,17 +13445,22 @@ sub show_overview_populate {
 	if ($overview_draw{$abk}) {
 	    $str_outline{$abk} = 0;
 	    $p_draw{'pp'} = 0;
+	    my %args;
 	    if ($abk eq 'w') {
+		my $ws_low = eval { Strassen->new("wasserstrassen-lowres") };
+		if ($ws_low) {
+		    $args{-object} = $ws_low;
+		} else {
+		    for my $cat (qw(W1 W2 F:W)) {
+			$str_restrict{$abk}->{$cat} = 1;
+		    }
+		    for my $cat (qw(W0 W)) {
+			$str_restrict{$abk}->{$cat} = 0;
+		    }
+		    $wasserumland = $wasserstadt = 1;
+		    $str_far_away{$abk} = 1;
+		}
 		$str_name_draw{$abk} = 0;
-		$wasserumland = $wasserstadt = 1;
-		$str_far_away{$abk} = 1;
-
-		for my $cat (qw(W1 W2 F:W)) {
-		    $str_restrict{$abk}->{$cat} = 1;
-		}
-		for my $cat (qw(W0 W)) {
-		    $str_restrict{$abk}->{$cat} = 0;
-		}
 	    } elsif ($abk eq 's') {
 		$str_restrict{$abk}->{'HH'} = 1;
 	    }
@@ -13459,6 +13468,7 @@ sub show_overview_populate {
 	    plot('str',$abk,
 		 Canvas => $overview_canvas,
 		 Width  => 1,
+		 %args,
 		);
 	}
     }

@@ -1379,6 +1379,11 @@ E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.
 
 =over
 
+=item * (H3)
+
+Find algorithms for reducing points in a polyline/gon. Use it for
+wasserstrassen-lowres.
+
 =item * (M4)
 
 Automatic conversion from GPS tracks to bbd data: maybe using
@@ -1663,11 +1668,12 @@ points if delta exceeds 128/128 meters.
 
 =over
 
-=item * (M2)
+=item * (M3)
 
 Zusätzlich zu "Schopenhauer Str. (Potsdam)" die Schreibweise "Potsdam,
 Schopenhauer Str." akzeptieren. Frage: nur fuer Orte oder auch fuer
-Bezirke, also "Kreuzberg, Bahnhofstr."?
+Bezirke, also "Kreuzberg, Bahnhofstr."? Kommt auch vor, dass die Leute
+E<quot>Berlin, ...E<quot> schreiben.
 
 =item * (E3)
 

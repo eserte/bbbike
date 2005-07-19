@@ -85,6 +85,11 @@ Alexanderufer: in Bau	?::inwork 8269,13062 8312,13296 8378,13425 8337,13541
 # Hier kommen die Fragezeichen-Strecken herein, die nicht bei einer
 # erweiterten Suche aufgenommen werden sollen.
 #
+Gebrüder-Grimm-Weg: falls Märchenweg OK, dann diesen Weg hier auch aufnehmen	? 14281,18682 14284,18786 14573,19281
+Muspelsteig: falls Rübezahlweg oK, dann diesen Weg hier auch aufnemen	? 14052,18273 13970,18332 13935,19222 14044,19502
+#: last_checked: 2005-07-19
+#: by: thuki...
+Hannah-Arendt-Str.: zwischen Gertrud-Kolmar-Str. und Wilhelmstr. bereits befahrbar?	?::inwork 8770,11971 8892,12006
 Höhenpunkt Mendelssohnstr.?	? 11613,13570
 #: XXX: Vorschlag von Corinna Meyer:
 Bremer Weg (Tiergarten): genaue Wegführung, Qualität?	? 5901,11902 5923,11873 6296,11890 6342,11878 6409,11925 6573,11943 6642,12010
@@ -223,10 +228,11 @@ Brunow - Gamengrund: Qualität?	? 41710,36619 43362,37337 43825,37262 43975,36775
 # Normannenstr.: gar keine Einbahnstraße	? -3692,2549 -3579,2532 -3395,2403
 Wasgenstr.: Qualität zwischen Spanische Allee und Matterhornstr. (wahrscheinlich Kopfsteinpflaster?)?	? -2481,2900 -2614,3124
 Kleinziethen - Pechsteinstr. (Lichtenrade): befahrbare Verbindung, Qualität?	? 13506,-2809 12232,-2281
-Mauerweg Lichtenrade - Lichterfelde: befahrbar, Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 10631,-3215 10448,-3214 10291,-3193 9560,-3155 9471,-2138 8334,-2101 8384,-1581 7110,-596 6634,-137 6172,306 6011,195 5831,71 4400,-913
+Mauerweg Lichtenrade, an der S-Bahnstrecke: existiert hier eine Unterführung? Laut http://www.bsisb.de/dresdener/l_s_lr_mw/c40.jpg anscheinend nicht!	? 10631,-3215 10448,-3214
+Mauerweg Lichtenrade - Lichterfelde: befahrbar, Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 10448,-3214 10291,-3193 9560,-3155 9471,-2138 8334,-2101 8384,-1581 7110,-596 6634,-137 6172,306 6011,195 5831,71 4400,-913
 Mauerweg Lichtenrade: Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 10609,-3098 10631,-3215 11646,-3251
 Mauerweg, existiert ein Zugang von der Prinzessinenstr.?	? 9471,-2138 9560,-2153
-Mauerweg Lichterfelde: befahrbar, insbesondere am zukünftigen Fernbahndamm, Qualität? laut "Berliner Umland" gut geeigneter Radweg	?? 4400,-913 3941,-279 3659,159 3400,515
+Mauerweg Lichterfelde: Qualität? Knick am Bahndamm? laut "Berliner Umland" gut geeigneter Radweg	?? 4400,-913 3941,-279 3659,159 3400,515
 Mauerweg, existiert ein Zugang zur Schütte-Lanz-Str.?	? 5831,71 5795,126
 Mauerweg, existiert ein Zugang zur Waldsassener Str.?	? 6634,-137 6725,-89
 Lichterfelder Allee - Mauerweg Teltow: befahrbar, Qualität? laut "Berliner Umland" gut geeigneter Radweg	? 3400,515 3268,828
@@ -281,8 +287,6 @@ Märchenweg/Rübezahlweg: Qualität?	? 14288,19459 14248,19370 14044,19502 13297,19
 # ansonsten gleiche Wegbeschaffenheit wie der kreuzende Weg:
 Am Marderberg, kreuzender Weg: genaue Wegführung?	? 14288,19459 14328,19527 14201,19946
 Am Fließ: befahrbar, Qualität?	? 14764,19670 14751,19882 14268,20313 13979,20407 13905,20556 13575,20583
-Gebrüder-Grimm-Weg: falls Märchenweg OK, dann diesen Weg hier auch aufnehmen	? 14281,18682 14284,18786 14573,19281
-Mupfrelsteig: falls Rübezahlweg oK, dann diesen Weg hier auch aufnemen	? 14052,18273 13970,18332 13935,19222 14044,19502
 Schönerlinder Str.: Radwegbenutzungspflicht aufgehoben, wo genau?	? 12065,23232 12067,23241 11929,23946 11965,24188 12177,24684 12498,25330 12957,26186 13192,26628 13267,26891
 Müllerstr.: Radwegbenutzungspflicht aufgehoben, wo genau?	? 8057,14876 7929,15006 7754,15160
 Zwischen Seestr. und Friedrich-Olbricht-Damm: Heißt die Straße noch Beusselstr. oder schon Saatwinkler Damm?	? 5074,14718 5062,14681
@@ -553,7 +557,6 @@ Wriezener/Osloer Str.: ist das Abbiegen wegen der Straßenbahn möglich?	? 9210,16
 Graunstr/Ramlerstr.: Qualität? laut ADFC-Karte nicht geeignet	? 10022,15203 10012,15389 9917,15613 9865,15728 9652,15738 9314,15695
 Prenzlauer Allee -> Hiddenseer Str.: Abbiegen für Radfahrer möglich?	? 11822,15193 11655,15253
 Luckenwalder Str.: Qualität (wahrscheinlich Asphalt...)?	? 8634,10426 8393,10505
-Hannah-Arendt-Str.: zwischen Gertrud-Kolmar-Str. und Wilhelmstr. bereits befahrbar?	?::inwork 8770,11971 8892,12006
 Treppe zwischen Siegmunds Hof und Spreeuferweg?	? 5737,12281 5719,12253
 Neuwedeller Str.: Qualität?	? 12313,7852 12335,7770
 #: XXX was bedeutet "mäßig" in der Eintragung?

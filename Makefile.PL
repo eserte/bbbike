@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.109 2005/04/29 00:18:19 eserte Exp $
+# $Id: Makefile.PL,v 1.110 2005/07/19 00:33:10 eserte Exp $
 
 use 5.005;
 
@@ -70,6 +70,8 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
    'optional für XML-Dumps der BBBike-Route'],
   [qw/XML::Parser	0	all	2	cgi/,
    'optional für UAProf parsing (alternative wäre XML::SAX::PurePerl)'],
+  [qw/XML::LibXML	0	all	0	base/,
+   'optional für das Parsen von GPX-Dateien'],
   [qw/YAML	0	all	2	cgi/,
    'optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings'],
 

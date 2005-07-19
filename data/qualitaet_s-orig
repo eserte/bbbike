@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.42 2005/07/17 21:40:05 eserte Exp $
+# $Id: qualitaet_s-orig,v 4.43 2005/07/19 23:27:39 eserte Exp $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -1106,8 +1106,6 @@ Scharnweberstr.: Asphalt	Q0 19489,6035 19650,5920
 #: XXX laut Message-ID: <41614486$0$3640$9b4e6d93@newsread2.arcor-online.net> wieder gepflastert --- vom Weiten kann ich das teilweise bestätigen
 Alt-Köpenick: Kopfsteinpflaster, zwischen den Schienen Asphalt 	Q0 22196,4847 22138,4661 22111,4562 22093,4499
 Katzengraben, Schüßlerplatz: Kopfsteinpflaster	Q2 22439,4838 22449,4712 22383,4703
-#: XXX Q geraten:
-(Waidmannsluster Damm - Karolinenstr.): Waldweg	Q1 1914,21508 1878,21506 1802,21436 1773,21319 1656,21145
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -2333,6 +2331,7 @@ Clematisweg: Asphalt	Q0 13257,17797 13182,18065 13163,18149
 Irisweg: Asphalt	Q0 13290,18060 13322,17938 13415,18034
 Bromelienweg: Asphalt	Q0 13478,18011 13415,18034 13290,18060 13182,18065
 #: note: ADFC-Karte kennzeichnet die gesamte Malchower Str. als "mäßig geeignet"
+#: XXX: widersprüchliche Angaben: laut Matthias Wiegandt alles asphaltiert:
 Malchower Str.: mäßig geeignet	Q2 12841,18157 13035,18151 13163,18149
 Malchower Str.: Asphalt	Q0 13163,18149 13374,18134 13537,18075 13631,18041
 Malchower Str.: mäßig geeignet	Q2 13631,18041 13732,18026 13901,18124
@@ -2378,3 +2377,11 @@ Goethestr. (Oberschöneweide): schlechtes Kopfsteinpflaster	Q3 18005,6681 18031,6
 Kilianistr.: mäßiges Kopfsteinpflaster	Q2 18128,6559 18253,6515 18475,6478
 #: by: Christian Conrad:
 Beymestr.: mäßiges Kopfsteinpflaster	Q2 5510,4987 5809,4828
+#: by: Klemens Wawrzinek:
+Lützenstr.: Kopfsteinpflaster	Q2 2539,10235 2708,10245
+#: by: Michael Feske (wobei er sich bei der Kategorisierung unsicher war)
+(Waidmannsluster Damm - Karolinenstr.): Waldweg	Q2 1914,21508 1878,21506 1802,21436 1773,21319 1656,21145
+#: by: Stephan Kiehn: vvv
+Dalandweg: Kopfsteinpflaster	Q1 5557,4294 5396,4229 5266,4302 5233,4249 5128,4310
+Klopstockstr.: Kopfsteinpflaster	Q1 -1670,3716 -1609,3741 -1479,3723 -1414,3759 -1277,3854 -1157,4008 -1077,4236
+#: by: ^^^
