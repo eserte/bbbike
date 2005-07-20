@@ -81,8 +81,6 @@ Stadion Wilmersdorf: Beleuchtung?	? 3667,8142 3676,8394 3618,8447 3500,8474 3429
 Märchenweg/Rübezahlweg: Qualität?	? 14288,19459 14248,19370 14044,19502 13297,19987
 Am Marderberg, kreuzender Weg: genaue Wegführung?	? 14288,19459 14328,19527 14201,19946
 Am Fließ: befahrbar, Qualität?	? 14764,19670 14751,19882 14268,20313 13979,20407 13905,20556 13575,20583
-Gebrüder-Grimm-Weg: falls Märchenweg OK, dann diesen Weg hier auch aufnehmen	? 14281,18682 14284,18786 14573,19281
-Mupfrelsteig: falls Rübezahlweg oK, dann diesen Weg hier auch aufnemen	? 14052,18273 13970,18332 13935,19222 14044,19502
 Schönerlinder Str.: Radwegbenutzungspflicht aufgehoben, wo genau?	? 12065,23232 12067,23241 11929,23946 11965,24188 12177,24684 12498,25330 12957,26186 13192,26628 13267,26891
 Müllerstr.: Radwegbenutzungspflicht aufgehoben, wo genau?	? 8057,14876 7929,15006 7754,15160
 Zwischen Seestr. und Friedrich-Olbricht-Damm: Heißt die Straße noch Beusselstr. oder schon Saatwinkler Damm?	? 5074,14718 5062,14681
@@ -344,7 +342,6 @@ Wriezener/Osloer Str.: ist das Abbiegen wegen der Straßenbahn möglich?	? 9210,16
 Graunstr/Ramlerstr.: Qualität? laut ADFC-Karte nicht geeignet	? 10022,15203 10012,15389 9917,15613 9865,15728 9652,15738 9314,15695
 Prenzlauer Allee -> Hiddenseer Str.: Abbiegen für Radfahrer möglich?	? 11822,15193 11655,15253
 Luckenwalder Str.: Qualität (wahrscheinlich Asphalt...)?	? 8634,10426 8393,10505
-Hannah-Arendt-Str.: zwischen Gertrud-Kolmar-Str. und Wilhelmstr. bereits befahrbar?	?::inwork 8770,11971 8892,12006
 Treppe zwischen Siegmunds Hof und Spreeuferweg?	? 5737,12281 5719,12253
 Neuwedeller Str.: Qualität?	? 12313,7852 12335,7770
 Straße am ULAP: wird demnächst in Clara-Jaschke-Straße umbenannt	? 7781,12987 7764,13236
@@ -379,7 +376,7 @@ Schadowstr.: Qualität?	? 9028,12307 9018,12400 9008,12485
 Verlängerte Französische Str. zwischen Mauerstr. und Wilhelmstr.: laut Tagesspiegel für Fußgänger passierbar	? 8892,12006 9076,12054
 Französische Str. zwischen Glinkastr. und Mauerstr.: noch immer Bauarbeiten?	?; 9183,12076 9076,12054
 Fresdorf - Kähnsdorf: Qualität?	? -11617,-15497 -12187,-15175 -12887,-15425 -13654,-15506
-Kähnsdorf - Seddin: Qualität	? -13384,-15520 -13887,-15575 -14637,-16112 -15863,-15363 -16336,-15236
+Kähnsdorf - Seddin: Qualität?	? -13654,-15506 -13887,-15575 -14637,-16112 -15863,-15363 -16336,-15236
 Kesselsdorfstr./Geßlerstr./Brunhildstr.: Qualität der Straßen?	? 8008,8767 8003,8842 7792,8838 7706,8875 7603,8911
 Zechliner Str.: Qualität?	? 16310,14378 16284,14601 16537,14635 16534,14740
 Fußgängerweg zwischen Wartenberger Str. und Margaretenhöhe: Qualität? Gibt es an der Bahnbrücke Treppen?	? 16284,19198 16392,19760
@@ -582,6 +579,7 @@ Weg am Flakensee: Qualität (Waldweg?)?	? 35021,2212 35000,2269 35045,2422 35024,
 Bodelschwinghstr./Grenzstr. (Mahlow): Qualität?	? 11291,-4485 11651,-4515 11706,-4579 11779,-4549 11974,-4579
 Wege zum Britzer Garten: Qualität? Namen?	? 12681,2748 12345,2804 11907,3142 12068,3182 12666,3408
 Britzer Garten - Mohriner Allee: Qualität? Genaue Wegführung?	? 12068,3182 12171,3460 11732,3715 11768,3950
+Sputendorf - Struveshof: Qualität (wahrscheinlich asphaltiert)? Genaue Wegführung?	? -1316,-7721 -862,-9933
 wirklich?	? 9215,3599
 Wirklich?	? -3755,17090
 geplante Ampel in der Johannisthaler	? 14196,2876
@@ -644,6 +642,8 @@ Heegermühler Weg: schlechtes Kopfsteinpflaster (Hier wurde als Range "5-15" ange
 Miethepfad: Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9518,-668 9557,-779 9585,-859
 Torweg: unbefestigter Weg (wird demnächst asphaltiert:)	? -8606,14696 -8264,14642
 Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser (Richtung Süden sah es teilweise besser aus, wo genau?)	? 9772,-12194 9345,-11425 9472,-11297 9578,-10891 9598,-10356 9854,-9480 10023,-8859
+Sputendorf: teil Kopfsteinpflaster, OK (Stimmt das? Oder ist das Stück in Sputendorf auch asphaltiert?)	? -1316,-7721 -1734,-7716 -2500,-7557
+Fahlhorst: schlechtes Kopfsteinpflaster (Stimmt das noch immer?)	? -5709,-10987 -5452,-11456
 F XXX: fester Sandweg mit einigen Schlaglöchern (welche Nummer des F-Wegs?)	? -21063,-2021 -20721,-1935 -20486,-1956 -20295,-1870 -20176,-525
 Usedom - Stolpe: Asphalt (Strecke zwischen Usedom und Abzweig Welzin nicht abgefahren, aber beide Enden sehen gut aus:)	? 43164,164582 44868,163300 45368,163284 46068,163106 47071,163315
 Seelübbe - Prenzlau: Kopfsteinplaster (aus der Bahn heraus gesehen)	? 40864,100741 40754,100635 40954,100113
@@ -698,7 +698,6 @@ Zweirichtungsradweg auf der östlichen Seite (am Gutsgartenweg sicher, nördl. und
 Heinrich-Mann-Allee: Radweg (auf Gehweg) (wo genau ist das südliche Ende des Radwegs?)	? -10746,-4024 -10811,-3874 -11022,-3662 -11153,-3534 -11667,-3047 -11781,-2729 -12431,-2096
 Radweg (andere Straßenseite auch?)	? 37093,-151665 37375,-151190
 Radweg (andere Straßenseite auch?)	? 37628,-150734 37756,-150359
-Steigung (wo genau?)	? -11617,-15497 -11554,-15134 -11767,-14921 -11877,-14343 -12027,-13872
 nach links zum Bahndamm abbiegen: bis zur Kreuzung Gregoroviusweg vorfahren (das hier wird wegfallen, falls es eine andere Verbindung zwischen Gregoroviusweg und Bahndamm gibt)	? 18690,10016 18698,9996 19675,10410
 F2.2 (Potsdam) (Stimmt der Verlauf der F2.2 zwischen Nattwerder und Bornim?)	? -20176,-525 -21063,769 -20829,1047 -20766,1326 -20959,1539 -20959,1753 -20064,1906 -19990,2131 -20009,2396 -19656,2362 -19438,2244 -18728,2153 -18712,1225 -18678,1168 -18135,1580 -17730,1580 -17067,1388 -16894,1485
 F3 (Potsdam) (Wie ist der genaue Verlauf der F3?)	? -21636,-2101 -22042,-2060 -22206,-1693 -22683,-1521 -23133,-1244 -23199,-903 -23175,-350 -23411,15 -23896,653 -24509,1607 -24680,1670 -24894,1733 -24895,1903 -24853,2031 -24983,2265 -25110,2303 -25453,2418 -25539,2641 -25662,2746 -25669,2939 -25787,3228 -26196,4769 -27127,5270 -26965,5390 -26840,5684 -26784,5762 -26794,5867 -26689,6111 -26525,6519 -25978,6441 -25531,6634 -25318,6593 -25187,6468 -25060,6338 -24240,6075 -23599,5864 -21067,6503 -21110,6589 -20771,6952 -20301,7082 -20023,6826 -19787,6551 -19616,6466 -19303,5325 -19253,5109 -18825,4750 -18693,4568 -19403,4631 -19309,4359 -19339,3792 -19634,3593 -19766,3346 -19868,3159 -19928,2706 -19987,2459 -20009,2396 -19990,2131 -20064,1906 -20959,1753 -20959,1539 -20766,1326 -20829,1047 -21063,769 -20176,-525 -20295,-1870 -20486,-1956 -20721,-1935 -21063,-2021 -21210,-2058 -21508,-2080 -21636,-2101

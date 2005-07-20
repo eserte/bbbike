@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.182 2005/07/19 23:27:26 eserte Exp $
+# $Id: bbbike,v 3.183 2005/07/20 21:22:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -190,7 +190,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.182 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.183 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -5796,7 +5796,7 @@ EOF
 			          : $ampel_photo
 			     ),
 		   -tags => ["$abk-fg", "$xx,$yy", $pointname,
-			     "$abk-" . ($category eq 'B' ? 'B' : 'X') . "-fg",
+			     "$abk-" . $category . "-fg",
 			     $abk."-".($i-1)],
 		  );
 		$ampeln{"$xx,$yy"} = $category;

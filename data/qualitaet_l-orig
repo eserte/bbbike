@@ -1,4 +1,4 @@
-# $Id: qualitaet_l-orig,v 4.28 2005/07/19 23:31:29 eserte Exp $
+# $Id: qualitaet_l-orig,v 4.28 2005/07/19 23:31:29 eserte Exp eserte $
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen; schlechte Straße; 01.11.96-unbekannt	Q3 -50149,24689 -50016,24414 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -103,7 +103,9 @@ Heinersdorf: Kopfsteinpflaster	Q2 5943,-2117 5773,-2075
 Heinersdorf: rauher Asphalt	Q1 5773,-2075 5559,-2032
 Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK	Q3 5559,-2032 4985,-2373 4283,-2370
 Iserstr.: Kopfsteinpflaster	Q2 -282,-1184 -150,-1457
+#: add_fragezeichen: Stimmt das? Oder ist das Stück in Sputendorf auch asphaltiert?
 Sputendorf: teil Kopfsteinpflaster, OK	Q1 -1316,-7721 -1734,-7716 -2500,-7557
+#: add_fragezeichen: Stimmt das noch immer?
 Fahlhorst: schlechtes Kopfsteinpflaster	Q3 -5709,-10987 -5452,-11456
 B96 (bei Birkenwerder): Kopfsteinpflaster, OK	Q1 1611,29359 1707,30544
 Berliner Str (Borgsdorf): sandig	Q3 1069,32756 1123,33294
@@ -1295,6 +1297,8 @@ Zepernick: Asphalt	Q0 20472,28570 20017,28297 19475,27877 19364,27415
 #: by: l.epperlein:
 Wulkow - Hermersdorf: grobes Kopfsteinpflaster und Sand	Q3 66555,19582 66171,19651 65424,19367 64570,19169 63456,18965 63286,18968
 #: by: Andreas Mühlhausen: vvv
+Wildenbruch: übles Kopfsteinpflaster	Q3 -12325,-13958 -12708,-14023
+Tremsdorf - Fresdorf: Plattenweg	Q2 -10871,-15518 -9886,-15119 -9567,-15010
 Emstal - Lehnin: Asphalt, sowohl Fahrbahn als auch Radweg	Q0 -31776,-12438 -32010,-12375 -32394,-12207 -32629,-12038 -32737,-11697 -33398,-11574 -33613,-11062 -33784,-11021 -33786,-10636 -33914,-10466
 #: add_fragezeichen: unsicher:
 Götz - Deetz: schlecht (Kopfsteinpflaster, Beton oder Asphalt)	Q1 -35606,300 -35150,381 -34843,875
@@ -1312,7 +1316,7 @@ Lichterfelde - Britz:	Q0 33021,51828 33448,51826 33469,51996 33770,52079 33921,5
 Waldstr. (Niederfinow): sehr guter Asphalt	Q0 43626,50412 43512,49901 43634,49437 43878,49170
 zwischen Markau und Markee: grobes Kopfsteinpflaster	Q3 -25877,17973 -25990,18546
 Niederfinow	Q0 43878,49170 43855,49056 43710,48866 43939,48835 44137,48725 44125,48587 44662,48475 44875,48287 45075,48237 45332,48212
-Steinstr.: Kopfsteinpflaster	Q2 -7750,-2431 -7909,-2375 -7978,-2309
+Steinstr.: Kopfsteinpflaster	Q2 -7750,-2431 -7909,-2375
 #: add_fragezeichen: kann sich mittlerweile geändert haben:
 Seeburger Chaussee: mäßig, teils Kopfsteinpflaster, teils Asphalt	Q2 -8644,9593 -8584,9571 -8564,9423 -8719,8161 -9077,7923 -9150,7720 -9097,7649 -9120,7522
 Wildenbruch - Fresdorf: sowohl Straße als auch Radweg sehr guter Asphalt	Q0 -12027,-13872 -11877,-14343 -11767,-14921 -11554,-15134 -11617,-15497

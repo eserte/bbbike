@@ -1,5 +1,5 @@
 #: title: Strassen-Koordinaten (standard coords)
-#: version: $Id: strassen-orig,v 4.52 2005/07/19 23:27:47 eserte Exp $
+#: version: $Id: strassen-orig,v 4.52 2005/07/19 23:27:47 eserte Exp eserte $
 #:
 Dudenstr.	H 9222,8787 9050,8783 8982,8781 8770,8777 8594,8773 8472,8772 8425,8771 8293,8768 8209,8769
 Methfesselstr.	N 8982,8781 9057,8936 9106,9038 9141,9142 9163,9209 9211,9354
@@ -806,10 +806,12 @@ Alexanderplatz [Dircksenstr./zur Grunerstr.]	NN 10960,12809 11030,12741 11062,12
 Alexanderplatz [Dircksenstr./zur Karl-Liebknecht-Str.]	NN 10960,12809 10844,12935
 Alexanderplatz [Dircksenstr./zur Karl-Liebknecht-Str.]	N 10844,12935 10781,13002
 Wadzeckstr.	N 11378,13166 11291,13218 11187,13289 11087,13359
-(Straﬂenbahntrasse zum Alex)	NN 11291,13218 11139,13008
+(Straﬂenbahntrasse zum Alex)	N 11291,13218 11191,13080
+(Straﬂenbahntrasse zum Alex)	NN 11191,13080 11139,13008
 Weydemeyerstr.	N 11905,13069 11910,13055 12062,12986 12056,12907 12124,12852
 Gontardstr.	N 10740,12960 10923,12779
 Otto-Braun-Str.	HH 11236,12946 11283,13021 11378,13166 11456,13286 11477,13313 11547,13403 11654,13541 11723,13630
+(Straﬂenbahntrasse - Otto-Braun-Str.)	N 11191,13080 11283,13021
 Mollstr.	HH 11170,13475 11275,13407 11300,13390 11456,13286 11721,13142 11839,13083 11905,13069
 Prenzlauer Berg	H 11723,13630 11538,13683 11257,13647
 Heinrich-Roller-Str.	N 11435,14023 11616,13911 11832,13795

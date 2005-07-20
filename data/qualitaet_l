@@ -1209,6 +1209,8 @@ An der Stammbahn: Asphalt	Q0 -1515,1380 -1689,1326 -2965,668 -3165,565
 Grenzweg zwischen Kleinmachnow/Düppel und Europarc Dreilinden: mäßiger Weg	Q2 -1525,1453 -3348,592 -3440,254 -3631,-123
 Zepernick: Asphalt	Q0 20472,28570 20017,28297 19475,27877 19364,27415
 Wulkow - Hermersdorf: grobes Kopfsteinpflaster und Sand	Q3 66555,19582 66171,19651 65424,19367 64570,19169 63456,18965 63286,18968
+Wildenbruch: übles Kopfsteinpflaster	Q3 -12325,-13958 -12708,-14023
+Tremsdorf - Fresdorf: Plattenweg	Q2 -10871,-15518 -9886,-15119 -9567,-15010
 Emstal - Lehnin: Asphalt, sowohl Fahrbahn als auch Radweg	Q0 -31776,-12438 -32010,-12375 -32394,-12207 -32629,-12038 -32737,-11697 -33398,-11574 -33613,-11062 -33784,-11021 -33786,-10636 -33914,-10466
 Götz - Deetz: schlecht (Kopfsteinpflaster, Beton oder Asphalt)	Q1 -35606,300 -35150,381 -34843,875
 Götz - Deetz: Asphalt	Q0 -34843,875 -34062,1237 -33762,1481 -33412,2600 -33225,2700 -33062,3106 -32555,3570
@@ -1225,9 +1227,11 @@ Lichterfelde - Britz:	Q0 33021,51828 33448,51826 33469,51996 33770,52079 33921,5
 Waldstr. (Niederfinow): sehr guter Asphalt	Q0 43626,50412 43512,49901 43634,49437 43878,49170
 zwischen Markau und Markee: grobes Kopfsteinpflaster	Q3 -25877,17973 -25990,18546
 Niederfinow	Q0 43878,49170 43855,49056 43710,48866 43939,48835 44137,48725 44125,48587 44662,48475 44875,48287 45075,48237 45332,48212
-Steinstr.: Kopfsteinpflaster	Q2 -7750,-2431 -7909,-2375 -7978,-2309
+Steinstr.: Kopfsteinpflaster	Q2 -7750,-2431 -7909,-2375
 Seeburger Chaussee: mäßig, teils Kopfsteinpflaster, teils Asphalt	Q2 -8644,9593 -8584,9571 -8564,9423 -8719,8161 -9077,7923 -9150,7720 -9097,7649 -9120,7522
 Wildenbruch - Fresdorf: sowohl Straße als auch Radweg sehr guter Asphalt	Q0 -12027,-13872 -11877,-14343 -11767,-14921 -11554,-15134 -11617,-15497
-Wildenbruch - Langerwisch: Löcher und kurze Kopfsteinpflasterpassagen	Q2 -12156,-13509 -12221,-13124 -12372,-12676 -12459,-12120 -12337,-10735
+Wildenbruch - Langerwisch: Asphalt mit Löchern	Q0 -12156,-13509 -12221,-13124 -12372,-12676 -12443,-12223
+Wildenbruch - Langerwisch: Kopfsteinpflaster	Q2 -12443,-12223 -12459,-12120 -12433,-11898
+Wildenbruch - Langerwisch: Asphalt mit Löchern	Q0 -12433,-11898 -12337,-10735
 Bad Wilsnack: asphaltiert (vom Zug aus gesehen)	Q0 -89480,59468 -89148,60129
 Buga-Weg durch die Parforceheide: teils sehr sandig, aber inzwischen gut befahrbar	Q2 -7821,-1890 -6882,-1922 -6153,-1903 -5984,-2062

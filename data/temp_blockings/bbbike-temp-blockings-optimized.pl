@@ -369,7 +369,14 @@ userdel	q4 -16640,1304 -16894,1485
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'until' => 1124056800,
+         'text' => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 01.08.2005-14.08.2005 ',
+         'from' => 1122760800,
+         'data' => 'userdel	2 26313,-13049 26028,-12312
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        {
@@ -699,6 +706,22 @@ userdel	2 14153,-17829 13303,-18235
          'data' => 'userdel	2 99277,-43921 99228,-44346
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1123279200,
+         'text' => 'Rudower Str. (Treptow) Richtung stadteinwärts zwischen Köpenicker Str. und Wegedornstr. Baustelle, Fahrtrichtung gesperrt, Einbahnstraße in Richtung Köpenicker Str. (bis 05.08.2005)',
+         'from' => 1121892756,
+         'data' => 'userdel	q4; 19771,1793 19455,1870 19188,1980 18900,2033
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1123365600,
+         'text' => 'B 1; (Küstriner Str.); OD Seelow Deckenerneuerung Vollsperrung 28.07.2005-06.08.2005 ',
+         'from' => 1122415200,
+         'data' => 'userdel	q4 76771,15413 77393,15654
+',
+         'type' => 'handicap'
        }
      
 );
