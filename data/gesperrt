@@ -345,10 +345,12 @@ Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
 Ortrudstr. -> Bundesallee: Bundesplatztunnel	3 5487,7560 5359,7619 5360,7554
 Bundesallee -> Ortrudstr.: Bundesplatztunnel	3 5359,7661 5359,7619 5487,7560
+Bundesallee -> Sentastr.: Bundesplatztunnel	3 5358,7681 5359,7661 5452,7660
 Sentastr. -> Bundesallee: Bundesplatztunnel	3 5452,7660 5359,7661 5359,7619
-Bundesallee -> Sentastr.: Bundesplatztunnel	3 5358,7711 5359,7661 5452,7660
+Bundesallee -> Mainauer Str.: Bundesplatztunnel	3 5359,7661 5358,7681 5286,7681
+Mainauer Str. -> Bundesallee: Bundesplatztunnel	3 5286,7681 5358,7681 5358,7711
 Bundesallee -> Sieglindestr.: Bundesplatztunnel	3 5356,7862 5358,7711 5458,7866
-Sieglindestr. -> Bundesallee: Bundesplatztunnel	3 5458,7866 5358,7711 5359,7661
+Sieglindestr. -> Bundesallee: Bundesplatztunnel	3 5458,7866 5358,7711 5358,7681
 Lützowpl. -> Lützowufer: unbequem passierbarer Mittelstreifen	3 7002,11034 6873,11011 6732,11106
 Lützowpl. -> Schillstr.: unbequem passierbarer Mittelstreifen	3 7002,11034 6873,11011 6824,10904
 Schillstr. -> Lützowpl.: unbequem passierbarer Mittelstreifen	3 6882,11061 6873,11011 7002,11034
@@ -665,3 +667,10 @@ B 167; (Herzberg-Neuruppin); OL Alt Ruppin, Rhinbrücke    Brückenneubau    Volls
 Behlertstr.	1 -12362,-370 -12607,-434 -12868,-493
 tragen (Treppe)	0:30:-73 2247,5068
 tragen (Treppe)	0:15 2204,5081
+Drängelgitter (Herderstr.)	BNP:5:-241 4386,6288
+Drängelgitter (Herderstr.)	BNP:5:-241 4351,6307
+Heimstättenweg (kein öffentlicher Verkehr)	2 4351,6200 4323,6131 4268,6154
+Markobrunner Str.	1 4374,7016 4462,7137 4621,7159
+Deidesheimer Str.	1 4983,7546 4784,7534 4633,7566 4497,7595
+Landauer Str.	1 4621,7345 4786,7327
+Eschenstr. (Friedenau)	1 5067,7523 5121,7523 5158,7560

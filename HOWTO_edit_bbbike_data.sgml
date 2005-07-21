@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.4 2005/07/17 12:47:10 eserte Exp $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.4 2005/07/17 12:47:10 eserte Exp eserte $ -->
 
 <article>
  <artheader>
@@ -427,6 +427,17 @@ Datei <filename>comments_mount</> eintragen.
 <para>
 Grundsätzlich ist die Lektüre der <ulink url="bbd.html">Dokumentation
 des bbd-Formats</> (leider nur englisch) empfehlenswert.
+
+<sect2>
+<title>Plätze</>
+<para>
+Plätze, die einen eigenständigen Straßenzug beschreiben, sollten in
+<filename>strassen</> eingetragen werden. Plätze, die nur mit einem
+Punkt beschrieben werden, sollten in <filename>plaetze</> eingetragen
+werden. Plätze, die sich auf einem bestehenden Straßenzug befinden,
+sollten ebenso nach <filename>plaetze</>. Wenn ein Platz in
+<filename>plaetze</> eingetragen wurde, dann müssen sich alle Punkte
+des Platzes auf einer bestehenden Straße befinden.
 
 <sect2>
 <title>Qualität</>

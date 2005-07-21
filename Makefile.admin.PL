@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.35 2005/07/11 21:05:39 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.35 2005/07/11 21:05:39 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -408,7 +408,10 @@ HOWTO_edit_bbbike_data.html: HOWTO_edit_bbbike_data.sgml Makefile.doc
 clean_pod2html:
 
 EOF
-. "bbbikedoc:	README README.english $all_html\n" . <<'EOF'
+. "bbbikedoc:	README README.english $all_html HOWTO_edit_bbbike_data.html\n" . <<'EOF'
+
+HOWTO_edit_bbbike_data.html: HOWTO_edit_bbbike_data.sgml
+	$(MAKE) -f Makefile.doc HOWTO_edit_bbbike_data.html
 
 # XXX this will fail if there is no symlink to the original libexec position
 ChangeLog:

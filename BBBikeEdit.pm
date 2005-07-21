@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.88 2005/07/19 23:31:16 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.88 2005/07/19 23:31:16 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3499,6 +3499,7 @@ EOF
 
 # XXX Folge von Debuggingstatements, weil ab und zu bbbike hier mit einem X11-Fehler abstürzt
 warn "XXX 1";
+use Cwd;warn "XXX " . cwd;
 		  my $err = `$FindBin::RealBin/miscsrc/check_bbbike_temp_blockings 2>&1`;
 warn "XXX 2";
 		  if ($? != 0) {
