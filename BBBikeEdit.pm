@@ -3499,10 +3499,12 @@ EOF
 
 # XXX Folge von Debuggingstatements, weil ab und zu bbbike hier mit einem X11-Fehler abstürzt
 warn "XXX 1";
-use Cwd;warn "XXX " . cwd;
+#use Cwd;warn "XXX " . cwd;
+warn -e "1";
 # XXX erzeugt immer eine Datei namens "1"???
 #		  my $err = `$FindBin::RealBin/miscsrc/check_bbbike_temp_blockings 2>&1`;
 		  my $err = `$FindBin::RealBin/miscsrc/check_bbbike_temp_blockings`;
+warn -e "1";
 warn "XXX 2";
 		  if ($? != 0) {
 warn "XXX 3";

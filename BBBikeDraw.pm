@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.42 2005/07/17 14:07:22 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.43 2005/07/22 19:52:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.42 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.43 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, %args) = @_;
@@ -473,6 +473,8 @@ sub set_category_colors {
 	      Forest  => $middlegreen,
 	      Forestabove => $middlegreen,
 	      Cemetery  => $middlegreen,
+	      Green  => $middlegreen,
+	      Orchard  => $middlegreen,
 	      Z  => $self->{FrontierColor} eq 'red' ? $red : $black,
 	      '?' => $black,
 	      '??' => $black,

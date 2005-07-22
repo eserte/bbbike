@@ -176,15 +176,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Johannisthaler Chaussee Zwischen Rudower Straße und Königsheideweg beidseitig Brückenarbeiten, gesperrt ',
-         'from' => undef,
-         'data' => 'userdel	2 15573,4122 15608,4175
-userdel	2 15669,4266 15608,4175
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1122760800,
@@ -202,8 +194,8 @@ userdel	2 15669,4266 15608,4175
        undef,
        undef,
        {
-         'until' => 1122069600,
-         'text' => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, zw. K.-Liebknecht-Str. u. R.-Wagner-Str. Kanal- und Straßenbau Vollsperrung 30.06.2005-22.07.2005 ',
+         'until' => 1122415200,
+         'text' => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, Kanal- und Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
          'from' => 1119996000,
          'data' => 'userdel	q4 25185,-3955 23463,-4466
 ',
@@ -331,9 +323,9 @@ userdel	q4 -18080,-12637 -17374,-13449
          'type' => 'gesperrt'
        },
        {
-         'until' => 1126994400,
-         'text' => 'B 273; (Potsdamer Str.); OD Bornim, zw. Amundsenstr. u. Lindstedter Weg Kanalarbeiten halbseitig gesperrt; Einbahnstraße 25.07.2005-17.09.2005 ',
-         'from' => 1122156000,
+         'until' => 1122242400,
+         'text' => 'B 273; (Potsdamer Str.); OD Potsdam, OT Bornim, zw. Florastr. u. Rückertstr. Kanalarbeiten halbseitig gesperrt; Einbahnstraße 06.04.2005-24.07.2005 ',
+         'from' => 1112652000,
          'data' => 'userdel	q4 -16640,1304 -15527,795
 userdel	q4 -16640,1304 -16894,1485
 ',
@@ -730,6 +722,25 @@ userdel	2 14153,-17829 13303,-18235
          'data' => 'userdel	2 19076,-108365 19683,-108408
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1122238800,
+         'text' => 'Eisenacher Str. (Schöneberg) in beiden Richtungen, zwischen Grunwaldstr. und Hauptstr. Veranstaltung, Straße vollständig gesperrt (bis 24.07.2005 23:00 Uhr)',
+         'from' => 1122058524,
+         'data' => 'userdel	2 6747,9111 6769,8996
+userdel	2 6747,9111 6727,9229
+userdel	2 7009,8705 6870,8872
+userdel	2 6769,8996 6870,8872
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1122588000,
+         'text' => 'L 15; (Rosa-Luxemburg-Str.); OD Wittstock Straßenbauarbeiten Vollsperrung 25.07.2005-28.07.2005 ',
+         'from' => 1122156000,
+         'data' => 'userdel	q4 -53868,82504 -53648,82294
+',
+         'type' => 'handicap'
        }
      
 );

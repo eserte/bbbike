@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.183 2005/07/20 21:22:02 eserte Exp $
+# $Id: bbbike,v 3.184 2005/07/22 19:52:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -190,7 +190,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.183 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.184 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4846,6 +4846,8 @@ sub define_item_attribs {
 	 'Forest'  => '#66b47b', 	# Wälder
 	 'Forestabove'  => '#66b47b', 	# same, but for higher stacking
 	 'Cemetery'  => '#70c085', 	# Friedhöfe
+	 'Green' => '#76c48b', 	# sonstige Grünanlagen
+	 'Orchard' => '#76c48b', 	# Kleingärten
 	 'Ae' => 'white',	# Flughäfen
 	 'F'  => 'grey99',	# sonstige Flächen
 	 'SW' => 'red',		# Sehenswürdigkeit
@@ -4925,7 +4927,7 @@ sub define_item_attribs {
 	 'P'  => 'helvetica %d',
 	 'Ae' => 'helvetica %d',
 	);
-    for (qw(Forest Forestabove Pabove Cemetery)) { 
+    for (qw(Forest Forestabove Pabove Cemetery Orchard Green)) { 
 	$category_font{$_} = $category_font{'P'};
     }
 
@@ -5176,6 +5178,8 @@ sub define_item_attribs {
 	 'Forest' => [M"Wald", M"Wälder", undef],
 	 'Forestabove' => [M"Wald", M"Wälder", undef],
 	 'Cemetery' => [M"Friedhof", M"Friedhöfe", undef],
+	 'Green' => [M"Grünanlage", M"Grünanlagen", undef],
+	 'Orchard' => [M"Kleingärten", M"Kleingärten", undef],
 	 'Ae' => [M"Flughafen", M"Flughäfen", undef],
 	 'F'  => [M"Flughafen", M"Flughäfen", undef],
 	 'Q0' => [M"sehr guter Belag", undef, undef,
