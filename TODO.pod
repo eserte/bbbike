@@ -1382,6 +1382,13 @@ E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.
 
 =item * (H3)
 
+Check auf E<quot>erlaubteE<quot> Kategorien pro Datei, also z.B.
+H/HH/N/NN in strassen, zusätzlich B in landstrassen, nur Pl in plaetze
+etc. Diese Information könnte auch dazu verwendet werden, um im
+Straßen-Editor die Kategorien einzuschränken. BBBikeCategories.pm?
+
+=item * (H4)
+
 Find algorithms for reducing points in a polyline/gon. Use it for
 wasserstrassen-lowres.
 
@@ -1469,6 +1476,23 @@ Rewrite the misc/Makefile rule to use standard Strassen methods.
 =head2 cgpsmapper
 
 =over
+
+=item * (H3)
+
+Fragezeichen besser bauen: alle aus fragezeichen ausser für mich
+ignorierte (wo ich z.B. die Daten einfach nicht aufnehmen will).
+next_check/last_checked beachten. Auch alle XXX-Strecken aufnehmen.
+temporaries aufnehmen (es sei denn, mit next_check/last_checked
+versehen).
+
+=item * (M3)
+
+Strip Bezirk: nicht für fragezeichen
+
+=item * (M4)
+
+Nach Kategorien sortieren (HH -> H -> ...). Evtl. werden die Labels
+von zuerst genannten Straßen zuerst gezeichnet.
 
 =item * (M3)
 

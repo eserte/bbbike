@@ -331,9 +331,9 @@ userdel	q4 -18080,-12637 -17374,-13449
          'type' => 'gesperrt'
        },
        {
-         'until' => 1122847200,
-         'text' => 'B 273; (Potsdamer Str.); OD Potsdam, OT Bornim, zw. Florastr. u. Rückertstr. Kanalarbeiten halbseitig gesperrt; Einbahnstraße 06.04.2005-31.07.2005 ',
-         'from' => 1112652000,
+         'until' => 1126994400,
+         'text' => 'B 273; (Potsdamer Str.); OD Bornim, zw. Amundsenstr. u. Lindstedter Weg Kanalarbeiten halbseitig gesperrt; Einbahnstraße 25.07.2005-17.09.2005 ',
+         'from' => 1122156000,
          'data' => 'userdel	q4 -16640,1304 -15527,795
 userdel	q4 -16640,1304 -16894,1485
 ',
@@ -651,8 +651,8 @@ userdel	q4 34125,22128 34321,22151
        },
        {
          'until' => 1123365600,
-         'text' => 'B 87; zw. Hohenwalde und Müllrose Munitionsbergung Vollsperrung 28.07.2005-06.08.2005 ',
-         'from' => 1122415200,
+         'text' => 'B 87; zw. Hohenwalde und Müllrose Munitionsbergung Vollsperrung 29.07.2005-06.08.2005 ',
+         'from' => 1122501600,
          'data' => 'userdel	2 81786,-12568 81278,-13886
 ',
          'type' => 'gesperrt'
@@ -722,6 +722,14 @@ userdel	2 14153,-17829 13303,-18235
          'data' => 'userdel	q4 76771,15413 77393,15654
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1124229600,
+         'text' => 'B 169; (Elsterwerdaer Str.); Bahnübergang zw. B101 und OE Prösen Reparaturarbeiten Vollsperrung 14.08.2005-16.08.2005 ',
+         'from' => 1123884000,
+         'data' => 'userdel	2 19076,-108365 19683,-108408
+',
+         'type' => 'gesperrt'
        }
      
 );

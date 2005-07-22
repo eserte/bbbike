@@ -3500,7 +3500,9 @@ EOF
 # XXX Folge von Debuggingstatements, weil ab und zu bbbike hier mit einem X11-Fehler abstürzt
 warn "XXX 1";
 use Cwd;warn "XXX " . cwd;
-		  my $err = `$FindBin::RealBin/miscsrc/check_bbbike_temp_blockings 2>&1`;
+# XXX erzeugt immer eine Datei namens "1"???
+#		  my $err = `$FindBin::RealBin/miscsrc/check_bbbike_temp_blockings 2>&1`;
+		  my $err = `$FindBin::RealBin/miscsrc/check_bbbike_temp_blockings`;
 warn "XXX 2";
 		  if ($? != 0) {
 warn "XXX 3";
@@ -3508,6 +3510,7 @@ warn "XXX 3";
 		      my $txt = $t->Scrolled("ROText")->pack(-fill => "both",
 							     -expand => 1);
 		      $txt->insert("end", $err);
+		      $txt->insert("end", "\nBitte auch STDERR beachten!");
 warn "XXX 4";
 		  }
 warn "XXX 5";
