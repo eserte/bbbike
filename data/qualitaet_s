@@ -1059,7 +1059,7 @@ Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
 Schützallee: mäßiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfläche	Q2 2230,3823 1952,3864 1677,3885
 Riemeisterstr.: mäßiges Kopfsteinpflaster	Q2 373,4816 319,4906 168,5092 103,5123
 Soldiner Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 9604,16760 9317,16882 9096,16976
-Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2053,6841 1975,6812
+Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2053,6841 1975,6812
 Wilhelmshöher Str.: guter Asphalt	Q0 4836,7327 4889,7327 5072,7327 5310,7325
 Sarrazinstr.: guter Asphalt	Q0 5357,7381 5419,7435 5440,7453 5486,7493 5653,7639
 Perelsplatz: guter Asphalt	Q0 5653,7639 5812,7637
@@ -1229,7 +1229,7 @@ Haderslebener Str.: mäßiges Kopfsteinpflaster	Q2 3899,6411 3893,6333 3875,6097
 Brentanostr.: schlechtes Kopfsteinpflaster	Q3 4096,6632 4058,6602 4054,6565 4050,6506 4045,6402 4039,6321 4022,6087 4006,5876
 Am Schonungsberg: Asphalt	Q0 30504,3821 30718,4341
 Körnerstr.: schlechtes Kopfsteinpflaster	Q3 10653,20200 10547,20644 10521,20750
-Koserstr.: Kopfsteinpflaster	Q2 3403,6331 3309,6270 3118,6140 3112,6090 2950,6141
+Koserstr.: Kopfsteinpflaster	Q2 3403,6331 3309,6270 3209,6206 3118,6140 3112,6090 2950,6141
 Bartschiner Str.: schlechtes Kopfsteinpflaster	Q3 16878,859 16925,631 16946,487 17037,378 17003,337
 (Bartschiner Str. - Schönefelder Str.): Feldweg	Q2 17003,337 17117,283
 Nordendstr.: Asphalt	Q0 10026,20576 9750,20492 9174,20316 8409,19956 8415,19910
@@ -1335,7 +1335,7 @@ Togostr.	Q0 6119,16203 5918,16389 5602,16718 5325,16915
 Kommandantenstr. (Lichterfelde): Asphalt	Q0 3025,2847 3036,3050 3050,3316 3060,3710
 Baseler Str.: Kopfsteinpflaster	Q2 3148,1888 3154,2467 3168,2838 3180,3035 3184,3413 3187,3499 3193,3793 3201,3968
 Juchaczweg: Asphalt	14117,3224 14214,3426 14391,3786
-Arnimallee: mäßiges Kopfsteinpflaster	Q2 3366,5654 3079,5411 2913,5294
+Arnimallee: mäßiges Kopfsteinpflaster	Q2 3366,5654 3173,5493 3079,5411 2913,5294
 Martin-Buber-Str.: Asphalt	Q0 514,2818 589,2925 694,3113
 Rudolf-Schwarz-Str.: mäßiges Kopfsteinpflaster	Q2 13115,14293 13079,14320 12811,14526
 Kablower Weg: glatter Asphalt	Q0 22315,490 22504,425 22815,37 22976,-176 23206,206
@@ -1417,6 +1417,7 @@ Gieselerstr.: Asphalt	Q0 4602,9439 4619,9200 4606,9023
 Hattenheimer Str. (Frohnau): schlechtes Kopfsteinpflaster	Q3 2666,24998 2950,24719
 Hubertusstr. (Steglitz): Asphalt	Q0 5240,5922 5099,5994
 Hessenallee: Asphalt	Q0 657,11650 664,11678 788,11744 906,11870
+Peter-Lenne-Str.: Kopfsteinpflaster	Q2 3574,5717 3407,5938 3209,6206 3123,6318
 Grillparzerstr.: Kopfsteinpflaster	Q2 3893,6333 4039,6321 4095,6313 4140,6298 4181,6283 4299,6229
 Flemmingstr. (Steglitz): Kopfsteinpflaster	Q1 4299,6229 4351,6200 4435,6154 4555,6086 4652,6033
 Rückertstr. (Steglitz): Kopfsteinpflaster	Q1 4022,6087 4077,6083 4233,6069
@@ -1438,7 +1439,7 @@ Schwalbacher Str.: Kopfsteinpflaster	Q1 4803,7084 4890,7084
 Steinrückweg: Kopfsteinpflaster	Q1 4309,6709 4281,6862
 Rohlfsstr.: Kopfsteinpflaster	Q2 3459,6484 3521,6400 3696,6165 3740,6106
 Am Erlenbusch: grobes Kopfsteipflaster, am Rand besser	Q3 3384,6356 3440,6387 3521,6400
-Drygalskistr.: Kopfsteinpflaster	Q2 3506,6012 3596,6087 3696,6165
+Drygalskistr.: Kopfsteinpflaster	Q2 3696,6165 3596,6087 3506,6012 3407,5938
 Schweinfurthstr.: grobes Kopfsteinpflaster	Q3 2884,7016 3040,6800 3306,6453
 Schweinfurthstr.: Kopfsteinpflaster	Q2 2818,7105 2884,7016
 Schweinfurthstr.: Kopfsteinpflaster	Q2 3306,6453 3384,6356 3403,6331 3421,6309 3596,6087 3723,5922
@@ -1631,7 +1632,7 @@ Alemannenallee: Asphalt	Q0 936,11280 1146,11156
 Kuckhoffstr.: guter Asphalt	Q0 10200,19807 9906,19718 9482,19594 8833,19259
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 26615,14054 26455,13925 25984,13328 25525,12750 25143,12284 25053,12156
 Stirnerstr.: guter Asphalt	Q0 5909,5072 6068,5028
-Hammersteinstr.: schlechtes grobes Kopfsteinpflaster	Q3 2746,7375 2559,7235 2400,7128
+Hammersteinstr.: schlechtes grobes Kopfsteinpflaster	Q3 2746,7375 2559,7235 2455,7164 2400,7128
 Hackerstr.: guter Asphalt	Q0 5017,6387 5034,6425 5075,6509 5101,6579 5126,6655 5162,6709
 Stewardstr.: mäßiger Asphalt (einige Straßenschäden)	Q1 828,5006 953,4994 1275,4956
 Meisenheimer Str.: guter Asphalt	Q0 28543,675 28781,881 29006,1125

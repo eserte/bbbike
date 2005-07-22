@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.55 2005/07/17 21:29:51 eserte Exp $
+# $Id: insert_points,v 1.57 2005/07/22 07:25:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -49,12 +49,12 @@ package BBBikeModify;
 # 1: (früher) radwege
 # 2: ampelschaltung.txt
 # 3: comments
-# 4: new radwege (like T_NORMAL, but insert to multiple lines)
+# 4: new radwege (like T_NORMAL, but insert to multiple lines) (not used anymore, now radwege is treated normally!)
 use constant T_NORMAL => 0;
 use constant T_OLD_RADWEGE => 1; # XXX not supported anymore
 use constant T_AMPELSCHALTUNG => 2; # ampelschaltung only, ampeln is T_NORMAL
 use constant T_COMMENTS => 3; # XXX never implemented
-use constant T_RADWEGE => 4;
+use constant T_RADWEGE => 4; # XXX not supported anymore
 use constant T_TEMPBLOCK => 5;
 use constant T_TEMPBLOCKMAIN => 6;
 use constant T_VORFAHRT => 7;
@@ -76,6 +76,7 @@ use Strassen::Core;
 BEGIN {
     if (!eval q{
         use List::Util qw(first);
+	1;
     }) {
         *first = sub (&@) {
             my $sub = shift;
@@ -342,6 +343,11 @@ sub process {
 		   orte orte2
 		   sehenswuerdigkeit
 		  );
+	    if ($orig) {
+		push @{$check_files[T_NORMAL]}, "radwege";
+	    } else {
+		push @{$check_files[T_NORMAL]}, "radwege_exact";
+	    }
 	    # relation_gps herausgenommen (CVS 2004-07-26, RCS ...)
 	    # XXX gehört housenumbers hier rein???
 
@@ -357,8 +363,9 @@ sub process {
 
 	    @{$check_files[T_VORFAHRT]} = qw(vorfahrt);
 
-	    @{$check_files[T_RADWEGE]} =
-		($orig ? qw(radwege) : qw(radwege_exact));
+	    # radwege is "normal" now
+ 	    @{$check_files[T_RADWEGE]} = ();
+# 		($orig ? qw(radwege) : qw(radwege_exact));
 
 # 	    if (!$orig) {
 # 		my $temp_blockings_dir = "$FindBin::RealBin/../data/temp_blockings";
@@ -850,7 +857,7 @@ sub process {
 	    }
 	}
 	if (!$n) {
-	    do_log(@cmd_args, @changed_files);
+	    do_log($top, @cmd_args, @changed_files);
 	}
 
 	{
@@ -889,7 +896,7 @@ sub _interpolate {
 }
 
 sub do_log {
-    my(@args) = @_;
+    my($top, @args) = @_;
     my $logfile = $logfile;
     $logfile = "$datadir/datachange.log" if !$logfile;
     warn "Log to $logfile...\n" if $verbose;
@@ -924,16 +931,20 @@ sub do_log {
     if ($have_bw_fh) {
 	while(<BW>) {
 	    chomp;
-	    if (/^\#\s+EDIT:\s*(.*)/) {
+	    if (/^\#\s+EDIT:\s*(.*)/) { # my edit
 		if ($1 eq $this_date_line) {
 		    $date_line_needed = 0;
 		    last;
 		}
+	    } elsif (/^\#\s+EDIT:/) { # other people's edit
+		$date_line_needed = 1;
+		last;
 	    }
 	}
 	close BW;
     }
 
+    BBBikeEdit::ask_for_co($top, $logfile);
     if (open(LOG, ">>$logfile")) {
 	if ($date_line_needed) {
 	    print LOG "# EDIT: $this_date_line\n";
