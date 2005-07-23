@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PathEntry.pm,v 2.23 2004/09/04 01:11:26 eserte Exp $
+# $Id: PathEntry.pm,v 2.23 2004/09/04 01:11:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2002,2003 Slaven Rezic. All rights reserved.
@@ -155,12 +155,15 @@ sub Populate {
 	undef $w->{ChoicesTop};
 	$w->_popup_on_key($pathname);
 
-	if ($action == 1 && # only on INSERT
-	    $w->{CurrentChoices} && @{$w->{CurrentChoices}} == 1 &&
-	    $w->cget(-autocomplete)) {
-	    # XXX the afterIdle is hackish
-	    $w->afterIdle(sub { $ {$w->cget(-textvariable)} = $w->{CurrentChoices}[0] });
-	    return 0;
+	if ($action == 1 and # only on INSERT
+	    $w->{CurrentChoices} and
+	    my $autocomplete = $w->cget(-autocomplete)) {
+	    if ($autocomplete eq 'always' ||
+		@{$w->{CurrentChoices}} == 1) {
+		# XXX the afterIdle is hackish
+		$w->afterIdle(sub { $ {$w->cget(-textvariable)} = $w->{CurrentChoices}[0] });
+		return 0;
+	    }
 	}
 
 	1;

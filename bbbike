@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.184 2005/07/22 19:52:03 eserte Exp $
+# $Id: bbbike,v 3.186 2005/07/22 22:14:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -190,7 +190,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.184 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.186 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -278,8 +278,8 @@ $str_nr_draw{'comm-route'} = 1;
 
 %tag_group = # group related tags (for stacking)
   ('str_s' => ['s-out', 'gr', 'rw',
-	       's-NN', 's-N', 's-H', 's-HH', 's-B', 's-BAB', 'comm',
-	       (map { "comm-$_" } @comments_types),
+	       's-NN', 's-N', 's-H', 's-HH', 's-B', 's-BAB', 'sBAB-BAB',
+	       'comm', (map { "comm-$_" } @comments_types),
 	       'nl', 'qs', 'hs', 'mount',
 	       's-label-bg', 's-label', 'hoehe', 'vf-bg',
 	       'sperre', 'temp_sperre_s', 'temp_sperre',
@@ -2122,9 +2122,6 @@ sub do_iconframe {
 		 [M"Hauptstraßen", 'H'],
 		 [M"Nebenstraßen", 'N'],
 		 [M"für Kfz gesperrte Straßen", 'NN']);
-	if ($advanced) {
-	    unshift @l, [M"Autobahnen", 'BAB'];
-	}
 	foreach (@l) {
 	    $skm->checkbutton
 	      (-label => $_->[0],
@@ -2134,6 +2131,17 @@ sub do_iconframe {
 	       },
 	      );
 	}
+	if ($advanced) {
+	    $skm->separator;
+	    $skm->checkbutton
+		(-label => M"Autobahnen",
+		 -variable => \$str_draw{'sBAB'},
+		 -command => sub {
+		     plot("str", "sBAB", -filename => "strassen_bab");
+		 },
+		);
+	}
+
     }
     $strcm->checkbutton(-label => M"Höhenangaben",
 			-variable => \$p_draw{'hoehe'},
@@ -4960,6 +4968,7 @@ sub define_item_attribs {
 	 's-HH'     => [1, 2, 3, 4, 6, 10],
 	 's-B'      => [1, 2, 3, 4, 6, 10],
 	 's-BAB'    => [1, 2, 3, 4, 6, 10],
+	 'sBAB-BAB' => [1, 2, 3, 4, 6, 10],
 	 's-N'      => [1, 1, 2, 2, 4, 7],
 	 's-NN'     => [1, 1, 2, 2, 4, 7],
 	 'comm'     => [1, 2, 3, 4, 6, 10],
@@ -5249,7 +5258,7 @@ sub define_item_attribs {
     @normal_stack_order =
 	(qw(map f w-out w i-out i f-Pabove crosshairs e e-img
 	    gP gD z g gP gD
-	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB l v
+	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB sBAB-BAB l v
 	    f-label-bg w-label-bg f-label w-label
 	    s-label-bg s-label l-label-bg l-label
 	    u sperre_u u-bg u-fg u_bg-img r sperre_r b sperre_b
@@ -5914,14 +5923,14 @@ EOF
                 if (!$municipality) {
                     $point_item = $c->createLine
 			($tx, $ty, $tx, $ty,
-			 -tags => [$type, "$xx,$yy", $fullname, $label_tag."P$cat"],
+			 -tags => [$type, "$xx,$yy", $fullname, $label_tag."P$cat", $type."-".($i-1)],
 			);
                 }
 		if ($name_o) {
 		    my $text = ($args{Shortname}
 				? $name
 				: $fullname);
-		    my(@tags) = ($label_tag, "$label_tag$cat");
+		    my(@tags) = ($label_tag, "$label_tag$cat", $label_tag."-".($i-1));
 		    if ($orientation eq 'portrait' && $Tk::VERSION >= 800) {
 			require Tk::RotFont;
 			# XXX geht nicht...
@@ -5971,7 +5980,7 @@ sub set_bindings {
 	std_p_binding($_);
     }
 
-    foreach (qw(s S l L u b r f v v-fg w W i e comm mount),
+    foreach (qw(s sBAB S l L u b r f v v-fg w W i e comm mount),
 	     (map { "comm-$_" } @comments_types),
 	     qw(gr qs hs ql hl fz nl ovl temp_sperre_s rw)) {
 	std_str_binding($_);
@@ -5981,7 +5990,8 @@ sub set_bindings {
     # problems as both function set the <Leave> binding
     # XXX route: no!
     foreach (qw(lsa-bg lsa-fg vf-bg vf-fg
-		s-label-bg s-label w-label-bg w-label f-label-bg f-label
+		s-label-bg s-label sBAB-label-bg sBAB-label
+		w-label-bg w-label f-label-bg f-label
 		l-label-bg l-label
 		u-label b-label r-label show O)) {
 	std_transparent_binding($_);
@@ -10377,8 +10387,6 @@ sub plotorte {
     $progress->Init(-dependents => $c,
 		    -label => 'orte');
     eval {
-	my $i = 0;
-
 	my $place_category = (exists $args{PlaceCategory}
 			      ? $args{PlaceCategory} : $place_category);
 	my $name_o        = (exists $args{NameDraw}
@@ -10415,14 +10423,20 @@ sub plotorte {
 #  	}
 
 	my $next_meth;
+	my $i;
+	my $i_inc;
 	if ($no_overlap_label) {
 	    $orte->init;
 	    $next_meth = 'next';
+	    $i = 0;
+	    $i_inc = +1;
 	} else {
 	    # in diesem Fall sollten die größeren Orte _später_ d.h. über
 	    # den kleineren gezeichnet werden
 	    $orte->set_last;
 	    $next_meth = 'prev';
+	    $i = $orte->count; # XXX off by one???
+	    $i_inc = -1;
 	}
 	my $anzahl_eindeutig = $orte->count;
 	my $do_outline_text = $do_outline_text{$type};
@@ -10436,12 +10450,14 @@ sub plotorte {
 	my $draw_sub = eval $plotorte_draw_sub;
 	die $@ if $@;
 
+	my $prog_i = 0;
 	while(1) {
 	    my $ret = $orte->$next_meth();
 	    last if !@{$ret->[Strassen::COORDS]};
-	    $progress->Update($i/$anzahl_eindeutig*($progress_hack ? 0.5 : 1))
-	      if $i % 80 == 0;
-	    $i++;
+	    $progress->Update($prog_i/$anzahl_eindeutig*($progress_hack ? 0.5 : 1))
+	      if $prog_i % 80 == 0;
+	    $prog_i++;
+	    $i += $i_inc;
 	    $draw_sub->($ret);
 	}
 
@@ -12603,8 +12619,9 @@ sub scale_width {
     my($c, $scale, $old_scale) = @_;
 
 # XXX scale obst (mehrere Icon-Größen)
-    foreach my $type (qw(s-BAB s-HH s-B s-H s-N s-NN s-HH-out s-B-out s-H-out
-			 s-N-out s-NN-out rw
+    foreach my $type (qw(s-BAB sBAB-BAB s-HH s-B s-H s-N s-NN
+			 SBAB-BAB-out s-HH-out s-B-out s-H-out s-N-out s-NN-out
+			 rw
 			 w-W w-W0 w-W1 w-W2 w-W-out w-W0-out w-W1-out w-W2-out
 			 l l-out u b r pp p z g gP gD fz
 			 sperre0 sperre1 sperre1s sperre2)) {

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.121 2005/07/19 23:31:01 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.122 2005/07/22 22:14:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1831,8 +1831,11 @@ sub find_canvas_item_file {
     if ($w || $w eq $c) {
 	my(@tags) = $c->gettags('current');
 	$abk = $tags[0];
-	if (defined $tags[3] && $tags[3] =~ /-(\d+)$/) {
-	    $pos = $1;
+	for my $tag_i (4, 3) {
+	    if (defined $tags[$tag_i] && $tags[$tag_i] =~ /-(\d+)$/) {
+		$pos = $1;
+		last;
+	    }
 	}
     }
     if (defined $abk && (exists $str_file{$abk} ||

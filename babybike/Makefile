@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.49 2005/04/05 22:40:00 eserte Exp $
+# $Id: Makefile,v 1.50 2005/07/22 23:35:01 eserte Exp $
 #
 
 # Prerequisites:
@@ -165,7 +165,11 @@ image_berlin:
 	    -drawtypes str,flaechen,wasser,ubahn,sbahn,berlin,ort \
 	    -o images/berlin.png -dimfile images/berlin.dim
 #	pngtopnm images/berlin.png | ppmtogif > images/berlin.gif
-	pngtopnm images/berlin.png | ppmtoxpm | gzip -9 > images/berlin.xpm.gz
+# ppmtoxpm seems to generate wrong code (a color "D65" without hashmark...)
+#	pngtopnm images/berlin.png | ppmtoxpm | gzip -9 > images/berlin.xpm.gz
+# so use ImageMagick
+	convert images/berlin.png /tmp/berlin.xpm
+	gzip -9 < /tmp/berlin.xpm > images/berlin.xpm.gz
 
 # high quality image with ImageMagick, but SLOW!!!
 image_berlin2:
@@ -174,9 +178,12 @@ image_berlin2:
 	    -geometry $(GEOMETRY) -ipaq -nooutline -fillimage \
 	    -drawtypes str,flaechen,wasser,ubahn,sbahn,berlin,ort \
 	    -o /tmp/berlin.png -dimfile images/berlin.dim
-	pngtopnm /tmp/berlin.png | ppmtoxpm | gzip -9 > images/berlin.xpm.gz
+#	pngtopnm /tmp/berlin.png | ppmtoxpm | gzip -9 > images/berlin.xpm.gz
+	convert /tmp/berlin.png /tmp/berlin.xpm
+	gzip -9 < /tmp/berlin.xpm > images/berlin.xpm.gz
 
 # Should not be used ... rather draw fragezeichen as a bbd layer
+# Also, still uses ppmtoxpm instead of convert
 image_berlin_fragezeichen:
 	../miscsrc/bbbikedraw.pl -datadirs data \
 	    -outtype png \
@@ -192,7 +199,9 @@ image_brb:
 	    -scope region -drawtypes str,wasser,rbahn,berlin,ort \
 	    -o images/brb.png -dimfile images/brb.dim
 #	pngtopnm images/brb.png | ppmtogif > images/brb.gif
-	pngtopnm images/brb.png | ppmtoxpm | gzip -9 > images/brb.xpm.gz
+#	pngtopnm images/brb.png | ppmtoxpm | gzip -9 > images/brb.xpm.gz
+	convert images/brb.png /tmp/brb.xpm
+	gzip -9 < /tmp/brb.xpm > images/brb.xpm.gz
 
 ######################################################################
 # Overview button

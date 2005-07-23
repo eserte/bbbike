@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.24 2005/06/30 00:47:28 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.24 2005/06/30 00:47:28 eserte Exp eserte $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -445,6 +445,7 @@ sub as_reverse_hash {
 ### AutoLoad Sub
 sub get_linenumber {
     my($strfile, $pos) = @_;
+    my $orig_pos = $pos;
     my $linenumber = 0;
     open(STR, $strfile) or die "Can't open $strfile: $!";
     while(<STR>) {
@@ -457,7 +458,7 @@ sub get_linenumber {
 	$pos--;
     }
     close STR;
-    warn "Can't find position $pos in file $strfile";
+    warn "Can't find position $orig_pos in file $strfile";
     undef;
 }
 

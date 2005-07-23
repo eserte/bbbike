@@ -132,8 +132,7 @@ Perl/Tk: updateWidget) method.
 
 =item * (H5)
 
-The -lazy option seems to cause a big memory leak. (Hmmm, I cannot
-reproduce this one anymore...)
+The -lazy option seems to cause a big memory leak.
 
 =item * (H2)
 
@@ -511,7 +510,7 @@ oberste in der Hintergrundfarbe und die anderen in der Schattenfarbe).
 => Wo verwenden: overview-Fenster, overview-Button oder im CanvasMap
 anstelle der normalen Grenzen?
 
-=item * (H5)
+=item * (H2)
 
 Bike+Ride integrieren. Das wE<uuml>rde in eine unterbrochene Route
 resultieren, deren Fahrzeiten addiert wE<uuml>rden. ZusE<auml>tzlich
@@ -1432,10 +1431,6 @@ partial files in Strassen/Dataset. Create new menu cascade Comments
 all and comment types (partially done in bbbike, check for other
 apps).
 
-=item * (M5)
-
-relation_gps-orig aus insert_points herausnehmen? Ueberdenken...
-
 =item * (M4)
 
 insert_points changes:
@@ -1720,7 +1715,7 @@ Evtl. Link auf Detailmap, um eine bessere Straﬂe auszuw‰hlen? Bei
 "genaue Kreuzung": evtl. Link auf Detailmap um alternativ eine
 Kreuzung auszuwaehlen?
 
-=item * (M5)
+=item * (H5)
 
 Ackerstr. (Mitte,Wedding,Spandau)-Problematik: es sollte erkannt
 werden, dass die Ackerstr. (Mitte, Wedding) die selbe Strasse ist. In
@@ -1808,11 +1803,6 @@ Convert to be useable with the Tcl::Tk module (beginnings are done...)
 
 Tk::PathEntry (used in start/goal entries): -autocompletion does not
 work (anymore)?
-
-=item * (M5)
-
-Why are the E<quot>NE<quot> streets and airports colored black? Wrong
-mapserver/brb/brb-ipaq.map?
 
 =item * (M5)
 

@@ -1284,6 +1284,9 @@ sub choose_form {
 				Agrep => 'default');
 	    @$matchref = grep { defined $_->[PLZ::LOOK_COORD()] && $_->[PLZ::LOOK_COORD()] ne "" } @$retref;
 	    # XXX needs more checks, but seems to work good
+	    # except in the cases, where the same street has different coordinates
+	    # see Ackerstr. Mitte/Wedding
+	    # solution: use multi_bez_str!
 	    @$matchref = map { $plz->combined_elem_to_string_form($_) } $plz->combine(@$matchref);
 
 	    if (@$matchref == 0) {
