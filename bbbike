@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.186 2005/07/22 22:14:26 eserte Exp $
+# $Id: bbbike,v 3.186 2005/07/22 22:14:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -4856,6 +4856,7 @@ sub define_item_attribs {
 	 'Cemetery'  => '#70c085', 	# Friedhöfe
 	 'Green' => '#76c48b', 	# sonstige Grünanlagen
 	 'Orchard' => '#76c48b', 	# Kleingärten
+	 'Sport' => '#76c48b', 	# Sportanlagen
 	 'Ae' => 'white',	# Flughäfen
 	 'F'  => 'grey99',	# sonstige Flächen
 	 'SW' => 'red',		# Sehenswürdigkeit
@@ -4935,7 +4936,7 @@ sub define_item_attribs {
 	 'P'  => 'helvetica %d',
 	 'Ae' => 'helvetica %d',
 	);
-    for (qw(Forest Forestabove Pabove Cemetery Orchard Green)) { 
+    for (qw(Forest Forestabove Pabove Cemetery Orchard Green Sport)) { 
 	$category_font{$_} = $category_font{'P'};
     }
 
@@ -5189,6 +5190,7 @@ sub define_item_attribs {
 	 'Cemetery' => [M"Friedhof", M"Friedhöfe", undef],
 	 'Green' => [M"Grünanlage", M"Grünanlagen", undef],
 	 'Orchard' => [M"Kleingärten", M"Kleingärten", undef],
+	 'Sport' => [M"Sportanlage", M"Sportanlagen", undef],
 	 'Ae' => [M"Flughafen", M"Flughäfen", undef],
 	 'F'  => [M"Flughafen", M"Flughäfen", undef],
 	 'Q0' => [M"sehr guter Belag", undef, undef,

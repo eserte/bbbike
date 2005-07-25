@@ -389,8 +389,8 @@ LAYER
   
   CLASSITEM 'CAT'
   CLASS
-    EXPRESSION /^F:(P|Forest|Cemetery|Green|Orchard)$/
-    NAME "Park, Wald, Friedhof"
+    EXPRESSION /^F:(P|Forest|Cemetery|Green|Orchard|Sport)$/
+    NAME "Park, Wald, Friedhof, Grünanlagen"
     COLOR [% COLOR_MIDDLE_GREEN %]
   END
   CLASS

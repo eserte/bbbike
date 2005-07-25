@@ -1,4 +1,4 @@
-# $Id: comments_path-orig,v 4.22 2005/07/22 19:56:49 eserte Exp $
+# $Id: comments_path-orig,v 4.23 2005/07/25 22:39:44 eserte Exp $
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C
 # CP   : wie "CP;", Kommentar gültig für beide Fahrtrichtungen
 # CP2; : Kommentar an Punkt A bei Fahrt von A nach B
@@ -131,7 +131,7 @@ Ausgeschildert: Matheshöher Weg	CP2; 49498,96416 49056,96700
 Ausgeschildert: Britzer Str.	CP2; 33021,51828 33448,51826
 Ausgeschildert: Blütenberger Weg	CP2; 36885,54257 34819,54697
 Spreeufer: durch das Tor der Kleingartenkolonie	CP2; -288,13279 -193,13318
-Lefèvrestr. - Bundesallee: Fußgängerfurt benutzen	CS; 5215,6643 5372,6663 5374,6932
+Lefèvrestr. - Bundesallee: Fußgängerfurt benutzen	CS; 5215,6643 5372,6663 5372,6747 5374,6932
 Straßburger Str. - Torstr.: Fußgängerfurt (Drängelgitter) ca. 50m westlich der Kreuzung benutzen	CS; 11060,13865 10902,13604 11108,13513
 Torstr. - Straßburger Str.: Fußgängerfurt (Drängelgitter) ca. 50m westlich der Kreuzung benutzen	CS; 10746,13673 10902,13604 11060,13865
 Käthe-Niederkirchner-Str - Greifswalder Str.: Fußgängerfurt (Drängelgitter) ca. 50m nord-östlich der Kreuzung benutzen	CS; 12110,13965 11993,14037 11958,13986
@@ -154,7 +154,9 @@ Richtung Bellevuestr. und Kemperplatz	CS; 8546,11537 8513,11530 8490,11526
 Als "Leipziger Platz" ausgeschildert	CS; 8542,11502 8733,11524
 Als "Potsdamer Platz" ausgeschildert	CS; 8542,11502 8505,11494
 Einfahrt gegenüber Waldcafe	CP2; 30021,5322 27096,5828
-Zur Hackerstr.: Hausdurchgang benutzen	CP2; 4996,6346 5017,6387
+Zur Hackerstr.: Hausdurchgang benutzen	CP2; 4987,6336 5017,6387
 Lützowplatz - Wichmannstr.: Fußgängerampel links benutzen	CP; 6918,10854 6824,10904 6681,10959
 Lützowplatz - Schillstr.: Fußgängerampel links benutzen	CP; 6918,10854 6824,10904 6732,10754
 Ausschilderung: Alter Markt	CS; -11875,-925 -11910,-945
+(Am Stadion Wilmersdorf): Der Ausschilderung 'Sommerbad' folgen (durchs Tor)	CP2;  3295,8519 3357,8506
+(Weg in d. Kolonie Norderney): durchs Tor	CP2; 3596,6828 3607,6952

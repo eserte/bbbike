@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SVG.pm,v 1.13 2005/07/22 19:52:21 eserte Exp $
+# $Id: SVG.pm,v 1.13 2005/07/22 19:52:21 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -145,6 +145,7 @@ sub set_category_styles {
 	 'F:Cemetery'  => {'fill' => cat2svgrgb('Cemetery')},
 	 'F:Green'  => {'fill' => cat2svgrgb('Green')},
 	 'F:Orchard'  => {'fill' => cat2svgrgb('Orchard')},
+	 'F:Sport'  => {'fill' => cat2svgrgb('Sport')},
   	 Z  => {'stroke' => cat2svgrgb('Z')},
 #  	 '?' => $black,
 #  	 '??' => $black,

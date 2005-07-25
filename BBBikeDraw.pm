@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.43 2005/07/22 19:52:16 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.43 2005/07/22 19:52:16 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -475,6 +475,7 @@ sub set_category_colors {
 	      Cemetery  => $middlegreen,
 	      Green  => $middlegreen,
 	      Orchard  => $middlegreen,
+	      Sport  => $middlegreen,
 	      Z  => $self->{FrontierColor} eq 'red' ? $red : $black,
 	      '?' => $black,
 	      '??' => $black,
