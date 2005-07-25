@@ -644,14 +644,7 @@ userdel	2 14153,-17829 13303,-18235
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1122328800,
-         'text' => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-25.07.2005 ',
-         'from' => 1121724000,
-         'data' => 'userdel	2 1772,31266 2257,31124
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1133391600,
          'text' => 'K 7207; (KG südl. Rinow-Weißen); Brücke bei Rinow Brückenbauarbeiten Vollsperrung 20.07.2005-30.11.2005 ',
