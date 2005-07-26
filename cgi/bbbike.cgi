@@ -3252,7 +3252,7 @@ sub search_coord {
     }
 
  OUTPUT_DISPATCHER:
-    if (defined $output_as && $output_as =~ /^(xml|yaml|yaml-short|perldump)$/ && $r && $r->path) {
+    if (defined $output_as && $output_as =~ /^(xml|yaml|yaml-short|perldump)$/) {
 	require Karte;
 	Karte::preload(qw(Polar Standard));
 	my $res = {
