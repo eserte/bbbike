@@ -34,13 +34,12 @@ sub Tk::DragDrop::StartDrag
 {
  my $token = shift;
  my $w     = $token->parent;
-warn "$token $w <<<";
+#warn "$token $w <<<";
  unless ($w->{'Dragging'})
   {
    my $e = $w->XEvent;
    my $X = $e->X;
    my $Y = $e->Y;
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$X,$Y],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 #   my $was = $token->{'XY'};
 #     if ($was)
 #      {
@@ -234,7 +233,6 @@ sub StartDrag {
     my $X = $w->canvasx($e->X);
     my $Y = $w->canvasy($e->Y);
     my(@t) = $w->gettags('current');
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$X,$Y,@t],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
     return 1 if (!@t || $t[0] ne 'layeritem' || $t[1] !~ /^layeritem-(\d+)/);
     my $inx = $1;
     $top->{'DragItem'} = $inx;
@@ -254,8 +252,6 @@ require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . 
 sub Motion {
     my $top = shift;
     my($x, $y) = @_;
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([@_],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
-
     my $c = $top->Subwidget('canvas');
     ($x, $y) = ($c->canvasx($x), $c->canvasy($y));
     my $inx = get_item($top, $c, $y);

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Gardown.pm,v 1.2 2005/04/18 07:10:58 eserte Exp $
+# $Id: Gardown.pm,v 1.3 2005/07/26 19:30:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::Gardown;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 require GPS;
 push @ISA, 'GPS';

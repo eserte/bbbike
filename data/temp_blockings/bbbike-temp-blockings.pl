@@ -1328,7 +1328,7 @@ userdel	2 15452,11330 15480,11392
 EOF
      },
      { from  => 1105225200, # 2005-01-09 00:00
-       until => 1122760800, # 2005-07-31 00:00
+       until => 1122406057, # 1122760800 2005-07-31 00:00
        text  => 'K 6938; (Görzke-Hohenlobbese); zw. OL Görzke und Abzw. Reppinichen, Brücke Brücken- und Straßenbau Vollsperrung 10.01.2005-30.07.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -2314,9 +2314,9 @@ userdel	q4 34471,22214 34321,22151
 userdel	q4 34125,22128 34321,22151
 EOF
      },
-     { from  => 1121983200, # 2005-07-22 00:00
-       until => 1122156000, # 2005-07-24 00:00
-       text  => 'B 168; zw. Abzw. Mochlitz und LG in Ri. Friedland Straßenbauarbeiten Vollsperrung 23.07.2005-23.07.2005 ',
+     { from  => 1122588000, # 2005-07-29 00:00
+       until => 1122760800, # 2005-07-31 00:00
+       text  => 'B 168; zw. Abzw. Mochlitz und LG in Ri. Friedland Straßenbauarbeiten Vollsperrung 30.07.2005-30.07.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 72781,-41234 71792,-39389
@@ -2428,6 +2428,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -53868,82504 -53648,82294
+EOF
+     },
+     { from  => 1122242400, # 2005-07-25 00:00
+       until => 1122674400, # 2005-07-30 00:00
+       text  => 'K 6509; (Liebenberg-B 96 Teschendorf); zw. Grüneberg und B 96 grundh. Straßenbau Vollsperrung 26.07.2005-29.07.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -6201,51305 -5813,51200
+userdel	2 -5813,51200 -3395,51242
 EOF
      },
     );

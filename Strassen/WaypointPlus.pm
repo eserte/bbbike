@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: WaypointPlus.pm,v 1.3 2005/04/18 07:10:58 eserte Exp $
+# $Id: WaypointPlus.pm,v 1.4 2005/07/26 19:30:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
