@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.23 2005/07/14 20:34:49 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.23 2005/07/14 20:34:49 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -31,6 +31,7 @@ if (-e "$FindBin::RealBin/bbbike") {
 my $streets_track      = "$bbbike_rootdir/tmp/streets.bbd";
 my $orig_streets_track = "$bbbike_rootdir/tmp/streets.bbd-orig";
 my $acc_streets_track  = "$bbbike_rootdir/tmp/streets-accurate.bbd";
+my $other_tracks       = "$bbbike_rootdir/tmp/other-tracks.bbd";
 
 use vars qw($hm_layer);
 
@@ -158,6 +159,14 @@ sub add_button {
 	       -command => sub {
 		   my $f = $acc_streets_track;
 		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
+		   my $layer = add_new_layer("str", $f);
+		   set_layer_highlightning($layer);
+		   main::special_raise($layer, 0);
+	       }
+	      ],
+	      [Button => "Add other-tracks.bbd (other people's GPS tracks)",
+	       -command => sub {
+		   my $f = $other_tracks;
 		   my $layer = add_new_layer("str", $f);
 		   set_layer_highlightning($layer);
 		   main::special_raise($layer, 0);

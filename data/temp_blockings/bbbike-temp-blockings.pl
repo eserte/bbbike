@@ -1580,7 +1580,7 @@ EOF
        text  => 'L 29; (Oderberg-Hohenfinow); OD Oderberg Baumfällarb. Dammsicherung Vollsperrung 14.03.2005-18.03.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 52650,51875 51496,51542
+userdel	q4 52671,51846 51496,51542
 EOF
      },
      { from  => 1110679200, # 2005-03-13 03:00
