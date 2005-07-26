@@ -186,14 +186,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1122415200,
-         'text' => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, Kanal- und Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
-         'from' => 1119996000,
-         'data' => 'userdel	q4 25185,-3955 23463,-4466
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -490,9 +483,10 @@ userdel	q4 53252,-90440 53805,-90240
        undef,
        {
          'until' => 1136069999,
-         'text' => 'Dorotheenstr. Richtung Osten zwischen Wilhelmstr. und Schadowstr. gesperrt (bis Ende 2005)',
+         'text' => 'Dorotheenstr. Richtung Osten zwischen Wilhelmstr. und Schadowstr. sowie Schadowstr. Richtung Unter den Linden gesperrt (bis Ende 2005)',
          'from' => 1119697095,
          'data' => 'userdel	q4; 8775,12457 8907,12472 9008,12485
+userdel	q4; 9008,12485 9018,12400 9028,12307
 ',
          'type' => 'handicap'
        },

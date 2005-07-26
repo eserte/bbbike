@@ -2159,10 +2159,11 @@ EOF
      },
      { from  => 1119697095, # 2005-06-25 12:58
        until => 1136069999, # 2005-12-31 23:59
-       text  => 'Dorotheenstr. Richtung Osten zwischen Wilhelmstr. und Schadowstr. gesperrt (bis Ende 2005)',
+       text  => 'Dorotheenstr. Richtung Osten zwischen Wilhelmstr. und Schadowstr. sowie Schadowstr. Richtung Unter den Linden gesperrt (bis Ende 2005)',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 8775,12457 8907,12472 9008,12485
+userdel	q4; 9008,12485 9018,12400 9028,12307
 EOF
      },
      { from  => 1119909600, # 2005-06-28 00:00

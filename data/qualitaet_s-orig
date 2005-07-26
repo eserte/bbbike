@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.51 2005/07/26 20:41:12 eserte Exp $
+# $Id: qualitaet_s-orig,v 4.51 2005/07/26 20:41:12 eserte Exp eserte $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -1172,6 +1172,9 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 #: by: kalkreuth
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 #: by: anonymous vvv
+Kormoranweg: Asphalt	Q0 13997,3290 14034,3390 14128,3620 14176,3754 14226,3864 14281,3901
+Devrientweg: Verbundsteinpflaster	Q2 5089,3423 5250,3359 5375,3287
+Berlichingenstr.: Kopfsteinpflaster	Q2 4989,13462 4978,13765 4966,13948
 Rappoltsweilerstr.: gutes Kopfsteinpflaster	Q1 1222,4043 1334,4000 1379,3964 1453,4004
 Beifußweg: mäßiger Beton	Q1 15281,3682 15587,3446 15892,3210
 Egestorffstr.: Asphalt	Q0 9147,-1022 9123,-1321 9093,-1712
@@ -1252,12 +1255,12 @@ Neufährer Steig: Beton	Q0 -1959,23302 -2103,23365
 #: by: Mechthild Epding
 Kleine Andreasstr.: mäßiger Beton	Q1 12064,12171 12223,12137
 #: by: Ulrike Orlowski vvv
-Eberbacher Str.: sehr gute Qualität	Q0 4397,7375 4162,7375 4059,7375 3961,7375
+Eberbacher Str.: sehr gute Qualität	Q0 4397,7375 4330,7375 4162,7375 4059,7375 3961,7375
 Spessartstr.: Asphalt	Q0 4403,7498 4497,7595 4575,7675 4670,7732 4787,7788
 Offenbacher Str.: Asphalt	Q0 5039,7627 4785,7609 4575,7675 4515,7743
 Schlangenbader Str.: Asphalt	Q0 4000,6852 3958,7040 3961,7288 3961,7375 3964,7515 3964,7742 3969,7888
 Nauheimer Str.: Asphalt	Q0 3964,7742 4061,7742 4164,7742 4341,7745
-Homburger Str.: Asphalt	Q0 3964,7515 4061,7494 4162,7494 4403,7498 4628,7470 4785,7438
+Homburger Str.: Asphalt	Q0 3964,7515 4061,7494 4162,7494 4330,7497 4403,7498 4628,7470 4785,7438
 #: by ^^^
 #: by: Britta Steindamm:
 Claudiusstr.: Asphalt	Q0 6393,12573 6400,12662 6354,12870
@@ -1507,7 +1510,7 @@ Fregestr.: guter Asphalt	Q0 5897,6799 5957,6889 5957,6970 5958,7220 5955,7406
 #: by: ^^^
 #: by: Andrea Beu: vvv
 Lettestr.: Kopfsteinpflaster	Q2 11268,15360 11368,15301 11480,15229
-Apostel-Paulus-Str.: Kopfsteinpflaster?	Q2 7044,9163 6945,9142 6747,9111 6465,9047 6283,9022 6209,9012
+Apostel-Paulus-Str.: Kopfsteinpflaster?	Q2 7044,9163 6945,9142 6747,9111 6465,9047 6366,9033 6283,9022 6209,9012
 #: by: ^^^
 #: by: Rudolf C. vvv
 #not anymore: Heerstr.: Kopfsteinpflaster auf den Parallelstraßen	Q2 467,11221 41,11168 -572,11092 -1269,11008 -1499,10990 -2212,11196
@@ -1662,7 +1665,7 @@ Seelingstr.: Asphalt	Q0 3091,12071 2921,12059 2701,12033 2496,12023
 Claszeile: Kopfsteinpflaster	Q2 777,966 657,1524 644,1578 614,1576 537,1870
 #: by: Benjamin Hersch: vvv
 Borstellstr.: mäßiges Kopfsteinpflaster	Q2 6244,4331 6410,4302 6505,4363 6544,4392 6526,4475 6655,4617 6780,4751 6862,4735
-Promenade am Teltowkanal: gut befahrbar	Q0 6645,4254 6224,4307 6013,4327
+Promenade am Teltowkanal: gut befahrbar	Q0 6645,4254 6224,4307 6144,4315 6013,4327
 #: by: ^^^
 #: by: juergen V. Leitner:
 Seecktstr.: Asphalt	Q0 -4259,13267 -3998,13138
@@ -1742,6 +1745,7 @@ Hubertusstr. (Steglitz): Asphalt	Q0 5240,5922 5099,5994
 #: by: WIll Gibson:
 Hessenallee: Asphalt	Q0 657,11650 664,11678 788,11744 906,11870
 #: by: Andreas Mühlhausen: vvv
+Schadowstr.: Asphalt	Q0 9028,12307 9018,12400 9008,12485
 Peter-Lenne-Str.: Kopfsteinpflaster	Q2 3574,5717 3407,5938 3209,6206 3123,6318
 Grillparzerstr.: Kopfsteinpflaster	Q2 3893,6333 4039,6321 4095,6313 4140,6298 4181,6283 4299,6229
 Flemmingstr. (Steglitz): Kopfsteinpflaster	Q1 4299,6229 4351,6200 4435,6154 4555,6086 4652,6033
@@ -1948,7 +1952,7 @@ Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10064,-628 9823,0 10034,-546
 Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10034,-546 9961,-363 9848,-59 9762,155
 #: by: ^^^
 #: by: Jörg (sch8374...) vvv
-Rosenheimer Str.: Asphalt	Q0 6851,9365 6727,9342 6462,9303 6239,9344
+Rosenheimer Str.: Asphalt	Q0 6851,9365 6727,9342 6462,9303 6357,9322 6239,9344
 Rosenheimer Str.: Asphalt	Q0 6239,9344 6164,9329
 Rosenheimer Str.: Asphalt	Q0 6164,9329 6070,9322
 #: by: ^^^
@@ -2019,7 +2023,7 @@ Terwielsteig: Asphalt	Q0 3450,14507 3534,14496
 #: by: ben.kr:
 Paulsenstr.: schlechtes Kopfsteinpflaster	Q3 4167,5911 4233,6069 4268,6154 4299,6229
 #: by: Stefan Lieb:
-Hartmannstr.: gute Betonstraße	Q0 5370,3587 5225,3318 5108,3104
+Hartmannstr.: gute Betonstraße	Q0 5370,3587 5250,3359 5108,3104
 #: by: Florian Schubert:
 Kavalierstr.: Asphalt	Q0 10784,18426 10721,18575 10625,18831
 #: by: baatz (n):
@@ -2328,7 +2332,8 @@ Bauhüttenweg: Asphalt	Q0 12703,2454 13238,2521 13339,2611
 Elberfelder Str.: schlechtes Kopfsteinpflaster	Q3 5762,13155 5771,12972 5752,12662
 #: by: Anna Tamborini: vvv
 Zimmerstr. (Spandau): Kopfsteinpflaster	Q2 -3944,12929 -3819,12874 -3642,12886
-Reiherbeize: Asphalt	Q0 593,4262 460,4479
+Reiherbeize: Kopfsteinpflaster	Q2 593,4262 460,4479
+Im Fischtal: gutes Kopfsteinpflaster	Q1 744,4567 666,4339 593,4262 510,4202 354,4152
 #: by: ^^^
 #: by: Nicole Steireif:
 Archenholdstr.: schlechtes Kopfsteinpflaster	Q3 16892,10731 16964,10902 17275,11626
@@ -2379,11 +2384,13 @@ Ahornallee: asphaltiert	Q0 24337,9835 24688,9730 25269,9408 25329,9375
 #: by: ^^^
 #: by: Florian Schintke:
 Holsteinische Str. (Steglitz): mäßiges Kopfsteinpflaster	Q2 5268,6110 5381,6298 5474,6438 5532,6525 5576,6581 5777,6628
-#: by: Wolfgang Thurner:
+#: by: Wolfgang Thurner: vvv
 #: XXX aber "18 km/h"!
 Goethestr. (Oberschöneweide): schlechtes Kopfsteinpflaster	Q3 18005,6681 18031,6568 18073,6523 18207,6462 18429,6407 18475,6478
+Schillerpromenade (Oberschöneweide): Asphalt	Q0 18175,6376 18207,6462 18231,6521 18262,6606
+#: by: ^^^
 #: by: Matthias Grähn:
-Kilianistr.: mäßiges Kopfsteinpflaster	Q2 18128,6559 18253,6515 18475,6478
+Kilianistr.: mäßiges Kopfsteinpflaster	Q2 18128,6559 18231,6521 18475,6478
 #: by: Christian Conrad:
 Beymestr.: mäßiges Kopfsteinpflaster	Q2 5510,4987 5809,4828
 #: by: Klemens Wawrzinek:
@@ -2403,6 +2410,17 @@ Zinsgutstr.: Asphalt	Q0 20692,3951 20875,3762 21048,3628 21156,3452
 Flinsberger Platz: Kopfsteinpflaster	Q2 2926,8527 2678,8571
 #: by: birgit (kleinatland):
 Markobrunner Str.: Asphalt	Q0 4374,7016 4462,7137 4621,7159
+#: by: Ingo Firlus:
+#: XXX vom Kranoldplatz aus sah es eher mäßig aus, nicht "Q1" wie von Ingo angegeben:
+Kranoldstr.: Kopfsteinpflaster	Q2 12422,6715 12585,6747 12715,6783
+#: by: Roland (Nissen):
+Gerolsteiner Str.: Verbundsteinpflaster	Q1 4330,7497 4330,7375
+#: by: Thorsten Schulz:
+Am Fenn: Kopfsteinpflaster	Q2 6283,4565 6185,4429 6150,4340 6144,4315
+#: by: Sascha Peter:
+Ohmstr.: Asphalt	Q0 1442,14156 1504,14328
+#: by: Achim (Piaskowski):
+Zühlsdorfer Str.: Asphalt	Q0 19976,16046 20214,15923 20262,16029 20170,16075
 Miquelstr.: Kopfsteinpflaster	Q2 3077,6375 3020,6450 2875,6648 2854,6675 2714,6857
 Bernadottestr.	Q2 3020,6450 2935,6448 2875,6485 2793,6593 2711,6698
 Pechüler Pfad: wassergebundene Decke	Q1 2793,6593 2875,6648
