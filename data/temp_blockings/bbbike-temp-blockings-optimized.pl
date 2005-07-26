@@ -178,14 +178,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1122760800,
-         'text' => 'K 6938; (Görzke-Hohenlobbese); zw. OL Görzke und Abzw. Reppinichen, Brücke Brücken- und Straßenbau Vollsperrung 10.01.2005-30.07.2005 ',
-         'from' => 1105225200,
-         'data' => 'userdel	2 -59599,-27568 -59265,-27286
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -625,7 +618,14 @@ userdel	q4 34125,22128 34321,22151
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'until' => 1122760800,
+         'text' => 'B 168; zw. Abzw. Mochlitz und LG in Ri. Friedland Straßenbauarbeiten Vollsperrung 30.07.2005-30.07.2005 ',
+         'from' => 1122588000,
+         'data' => 'userdel	2 72781,-41234 71792,-39389
+',
+         'type' => 'gesperrt'
+       },
        {
          'until' => 1123365600,
          'text' => 'B 87; zw. Hohenwalde und Müllrose Munitionsbergung Vollsperrung 29.07.2005-06.08.2005 ',
@@ -702,6 +702,15 @@ userdel	2 14153,-17829 13303,-18235
          'data' => 'userdel	q4 -53868,82504 -53648,82294
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1122674400,
+         'text' => 'K 6509; (Liebenberg-B 96 Teschendorf); zw. Grüneberg und B 96 grundh. Straßenbau Vollsperrung 26.07.2005-29.07.2005 ',
+         'from' => 1122242400,
+         'data' => 'userdel	2 -6201,51305 -5813,51200
+userdel	2 -5813,51200 -3395,51242
+',
+         'type' => 'gesperrt'
        }
      
 );
