@@ -4409,10 +4409,10 @@ $c->Tk::bind("<4>" => [sub { return if $_[1] ne "" && $_[1] ne "B4-";
 $c->Tk::bind("<5>" => [sub { return if $_[1] ne "" && $_[1] ne "B5-";
 			     $c->yviewScroll(+1,"units") },
 		       Tk::Ev('s')]);
-for ("<Shift-5>", "<B1-5>") {
+for ("<Control-5>", "<Shift-5>", "<B1-5>") {
     $c->Tk::bind($_ => sub { $c->xviewScroll(+1,"units") });
 }
-for ("<Shift-4>", "<B1-4>") {
+for ("<Control-4>", "<Shift-4>", "<B1-4>") {
     $c->Tk::bind($_ => sub { $c->xviewScroll(-1,"units") });
 }
 
