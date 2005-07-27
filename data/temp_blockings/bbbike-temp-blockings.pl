@@ -2440,4 +2440,28 @@ userdel	2 -6201,51305 -5813,51200
 userdel	2 -5813,51200 -3395,51242
 EOF
      },
+     { from  => 1123106400, # 2005-08-04 00:00
+       until => 1123452000, # 2005-08-08 00:00
+       text  => 'B 169; von OD Kahla bis OE Elsterwerda Deckschichteinbau Vollsperrung 05.08.2005-07.08.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 23758,-103850 22424,-103934
+EOF
+     },
+     { from  => 1122501600, # 2005-07-28 00:00
+       until => 1122847200, # 2005-08-01 00:00
+       text  => 'B 169; zw. Plessa und Kahla Deckschichteinbau Vollsperrung 29.07.2005-31.07.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 24971,-104007 26625,-104401
+EOF
+     },
+     { from  => 1122501600, # 2005-07-28 00:00
+       until => 1122674400, # 2005-07-30 00:00
+       text  => 'L 338; (Neuenhagener Chaussee); Zuf. Flora-Gelände bei Schöneiche Umbau Knotenpunkt Vollsperrung 29.07.2005-29.07.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 30455,10061 30500,10571
+EOF
+     },
     );
