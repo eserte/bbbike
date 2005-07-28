@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.66 2005/06/29 23:59:01 eserte Exp $
+# $Id: Makefile,v 1.66 2005/06/29 23:59:01 eserte Exp eserte $
 #
 
 # Targets:
@@ -303,11 +303,22 @@ prepare-bbbike-dist-prog-bbbike-cgi:
 	rm -f ${CURDIR}/cgi-bin/$(i)
 	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/$(i)
 .endfor
+# Create bbbike.cgi configuration
 	cp -pf ${BBBIKE_ROOT_DIR}/cgi/bbbike-radzeit.cgi.config \
 	       ${CURDIR}/BBBike/cgi/bbbike.cgi.config
 	rm -f ${CURDIR}/cgi-bin/bbbike.cgi.config
 	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike.cgi.config
 	chmod ugo+r ${CURDIR}/BBBike/cgi/bbbike.cgi.config
+# Create bbbike2.cgi link
+	rm -f ${CURDIR}/cgi-bin/bbbike2.cgi
+	cd ${CURDIR}/cgi-bin && ln -s bbbike.cgi bbbike2.cgi
+# Create bbbike2.cgi configuration
+	cp -pf ${BBBIKE_ROOT_DIR}/cgi/bbbike2-radzeit.cgi.config \
+	       ${CURDIR}/BBBike/cgi/bbbike2.cgi.config
+	rm -f ${CURDIR}/cgi-bin/bbbike2.cgi.config
+	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike2.cgi.config
+	chmod ugo+r ${CURDIR}/BBBike/cgi/bbbike2.cgi.config
+# Fix permissions
 	chmod ugo+r ${CURDIR}/cgi-bin/*
 	@echo "Maybe create bbbike2.cgi and bbbike2.cgi.config"
 

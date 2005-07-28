@@ -3252,7 +3252,7 @@ sub search_coord {
     }
 
  OUTPUT_DISPATCHER:
-    if (defined $output_as && $output_as =~ /^(xml|yaml|yaml-short|perldump)$/) {
+    if (defined $output_as && $output_as =~ /^(xml|yaml|yaml-short|perldump)$/ && $r && $r->path) {
 	require Karte;
 	Karte::preload(qw(Polar Standard));
 	my $res = {
@@ -5407,9 +5407,49 @@ sub tie_session {
 	return;
     }
 
+    if ($apache_session_module eq 'Apache::Session::Counted') {
+	return tie_session_counted($id);
+    }
+
     tie my %sess, $apache_session_module, $id,
 	{ FileName => "/tmp/bbbike_sessions_" . $< . ".db", # XXX make configurable
 	  LockDirectory => '/tmp',
+	} or do {
+	    $use_apache_session = undef;
+	    warn $! if $debug;
+	    return;
+	};
+
+    return \%sess;
+}
+
+sub tie_session_counted {
+    my $id = shift;
+
+    # To retrieve a session file:
+    #perl -MData::Dumper -MStorable=thaw -e '$content=do{open my $fh,$ARGV[0] or die;local$/;<$fh>}; warn Dumper thaw $content' file
+
+    #my $dirlevels = 1;
+    my $dirlevels = 0;
+    my @l = localtime;
+    my $date = sprintf "%04d-%02d-%02d", $l[5]+1900, $l[4]+1, $l[3];
+    my $directory = "/tmp/bbbike-sessions-$date";
+
+#     require File::Spec;
+#     open(OLDOUT, ">&STDOUT") or die $!;
+#     open(STDOUT, ">&STDERR") or die $!;
+#     Apache::Session::CountedStore->tree_init($directory, $dirlevels);
+#     close STDOUT;
+#     open(STDOUT, ">&OLDOUT") or die $!;
+
+    tie my %sess, $apache_session_module, $id,
+	{ Directory => $directory,
+	  DirLevels => $dirlevels,
+	  CounterFile => "/tmp/bbbike-counter-$date",
+	  AlwaysSave => 1,
+	  HostID => undef,
+	  HostURL => sub { undef },
+	  Timeout => 10,
 	} or do {
 	    $use_apache_session = undef;
 	    warn $! if $debug;
