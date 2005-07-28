@@ -931,7 +931,7 @@ sub do_log {
     if ($have_bw_fh) {
 	while(<BW>) {
 	    chomp;
-	    if (/^\#\s+EDIT:\s*(.*)/ && ) { # my edit
+	    if (/^\#\s+EDIT:\s*(.*)/) { # my edit
 		if ($1 eq $this_date_line) {
 		    $date_line_needed = 0;
 		    last;
