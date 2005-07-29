@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.88 2005/07/19 23:31:16 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.89 2005/07/29 20:28:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2141,7 +2141,7 @@ use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n"
 			untie @rec;
 			if (eval { require "$FindBin::RealBin/miscsrc/insert_points" }) {
 			    $BBBikeModify::datadir = $main::datadir;
-			    BBBikeModify::do_log("changerec", "$rec_count $name\t$cat $coords", $file);
+			    BBBikeModify::do_log($t, "changerec", "$rec_count $name\t$cat $coords", $file);
 			} else {
 			    warn $@ if $@;
 			}
@@ -2340,7 +2340,7 @@ sub addnew {
 
 		       if (eval { require "$FindBin::RealBin/miscsrc/insert_points" }) {
 			   $BBBikeModify::datadir = $main::datadir;
-			   BBBikeModify::do_log("add", "$name\t$cat $coords", $file);
+			   BBBikeModify::do_log($t, "add", "$name\t$cat $coords", $file);
 		       } else {
 			   warn $@ if $@;
 		       }

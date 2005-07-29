@@ -1,4 +1,4 @@
-# $Id: comments_path-orig,v 4.23 2005/07/25 22:39:44 eserte Exp $
+# $Id: comments_path-orig,v 4.23 2005/07/25 22:39:44 eserte Exp eserte $
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C
 # CP   : wie "CP;", Kommentar gültig für beide Fahrtrichtungen
 # CP2; : Kommentar an Punkt A bei Fahrt von A nach B
@@ -110,7 +110,7 @@ Ausgeschildert: Sportplatz	CS; 13540,10190 13506,10146
 Zugang zum Bahndamm über die Terasse der Mambo-Bar	CS; 13929,9401 13960,9365
 Große Querallee: nicht ausgeschildert, vor dem "Tipi" nach links abbiegen	CS; 8132,12601 7945,12592 7875,12363
 Stralauer Allee - Warschauer Platz: bereits vor der U-Bahnbrücke die Straßenseite wechseln	PI; 13332,10832 13389,10808 13471,10983
-Am Schinkelplatz: Nicht ausgeschildert, Fortsetzung der Unterwasserstr.	CP; * 10084,12228 9987,12421
+Am Schinkelplatz: Nicht ausgeschildert, Fortsetzung der Unterwasserstr.	CP; * 10084,12228 10008,12378 9987,12421
 Unter Umständen bereits an der Ampel Steinmetzstr. die Straßenseite wechseln	PI; 7698,10147 7813,10112 7850,10351
 #: XXX Dummy entry because of problem with search algorithm!!!
 Weißenhöher Weg - Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen, bis zum Tunnel Friedrichsfelde vorfahren und ggfs. die Straßenseite wechseln	PI; 19827,11686 19693,11762 19283,11785

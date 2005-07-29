@@ -628,15 +628,7 @@ userdel	q4 34125,22128 34321,22151
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1122588000,
-         'text' => 'K 7234; (Goethestr.); BÜ in Dabendorf, zw.Kastanienallee u. Brandenburger Str. Gleisbauarbeiten Vollsperrung 22.07.2005-28.07.2005 ',
-         'from' => 1121896800,
-         'data' => 'userdel	2 13048,-18384 13303,-18235
-userdel	2 14153,-17829 13303,-18235
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -656,14 +648,7 @@ userdel	2 14153,-17829 13303,-18235
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1122588000,
-         'text' => 'B 112; Bahnübergang zw. Groß Breesen u. Bresinchen Gleisinstandsetztungsarb. Vollsp * 25.07.2005-28.07.2005 ',
-         'from' => 1122156000,
-         'data' => 'userdel	2 99277,-43921 99228,-44346
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1123279200,
          'text' => 'Rudower Str. (Treptow) Richtung stadteinwärts zwischen Köpenicker Str. und Wegedornstr. Baustelle, Fahrtrichtung gesperrt, Einbahnstraße in Richtung Köpenicker Str. (bis 05.08.2005)',
@@ -689,14 +674,7 @@ userdel	2 14153,-17829 13303,-18235
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1122588000,
-         'text' => 'L 15; (Rosa-Luxemburg-Str.); OD Wittstock Straßenbauarbeiten Vollsperrung 25.07.2005-28.07.2005 ',
-         'from' => 1122156000,
-         'data' => 'userdel	q4 -53868,82504 -53648,82294
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1122674400,
          'text' => 'K 6509; (Liebenberg-B 96 Teschendorf); zw. Grüneberg und B 96 grundh. Straßenbau Vollsperrung 26.07.2005-29.07.2005 ',

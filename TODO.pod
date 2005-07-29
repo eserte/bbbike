@@ -303,6 +303,38 @@ Kategorien auf die aktuell verwendbaren (also bei
 strassen auf HH .. NN, bei landstrassen zusätzlich B, bei qualitaet-*
 Q... etc.)
 
+=item * (H3)
+
+Edit-Menu: new feature: prolonge street. From the editing view: click
+2nd and 1st point of street and then a series of coordinates to be
+added.
+
+=item * (H3)
+
+Edit-Menu: new feature: split street. From the editing view: click
+three neighboring points on the street. The middle one is the split
+point.
+
+=item * (H2)
+
+Edit-Menu: new feature: combine streets. From the editing view: click
+three points from two streets, where the middle one belongs to both
+streets. Check if both streets have the same name and category,
+otherwise combining is not possible. But maybe combine nevertheless
+and give the user the possibility to choose the combined
+name/category.
+
+=item * (H3)
+
+Edit-Menu: new feature: Move multiple points. From the editing view:
+select a number of points (e.g. all points of a street or area; or by
+selection rectangle; or by clicking on a number of points). Select a
+delta by defining a line. Move all points by this delta.
+
+=item * (M2)
+
+Edit-Mode: DEL does not delete the coord list (but Backspace does).
+
 =item * (M3)
 
 search net custom: statt automatisch alle Layer zu verwenden sollte
@@ -1687,6 +1719,12 @@ points if delta exceeds 128/128 meters.
 =head1 bbbike.cgi
 
 =over
+
+=item * (H2)
+
+Make an interface to Google Maps. See
+L<http://perl-hackers.net/bragamap.html> or
+L<http://maps.google.com/maps?ll=37.774548,-122.424474&spn=0.021688,0.029232&t=h&\saddr=eddy+st,+San+Francisco,+CA&daddr=Market+St,+San+Francisco,+CA&hl=en>
 
 =item * (M3)
 

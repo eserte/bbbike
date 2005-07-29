@@ -30,8 +30,6 @@ Frankfurter Allee östlich Alfredstraße (Busspur weiter östlich schon vorhanden)	
 Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17750,11771 17436,11791 17249,11802
 Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
 Saargemünder Straße	? 2005,4772 1934,4788 1744,4812 1495,4850
-#: next_check: 2005-09-01
-Englerallee (voraussichtlich 2005-09-01)	? 3707,5758 3723,5922 3740,6106 3756,6272 3800,6418 3836,6550
 Pacelliallee	? 2585,5696 2607,6285 2609,6348 2659,6499 2711,6698 2714,6857 2723,7029
 #: by ^^^
 #: by Tagesspiegel 2004-07-25 (obige waren auch dabei) vvv
@@ -85,6 +83,8 @@ Alexanderufer: in Bau	?::inwork 8269,13062 8312,13296 8378,13425 8337,13541
 # Hier kommen die Fragezeichen-Strecken herein, die nicht bei einer
 # erweiterten Suche aufgenommen werden sollen.
 #
+Am Schinkelplatz: asphaltiert, ist der Name korrekt?	? 9926,12368 10008,12378 9987,12421
+Am Schinkelplatz: wie lautet der Straßenname für dieses Teilstück?	? 10008,12378 10084,12228
 #: by: Andreas Mühlhausen:
 Heinrich-von-Gagern-Str., Yitzhak-Rabin-Str.: möglicherweise schlechte Radwege (Kopfsteinpflaster)	? 8063,12182 8114,12408 8132,12601
 #: last_checked: 2005-07-26
@@ -837,5 +837,3 @@ Rösnerstr.: Qualität?	? 4165,5243 4204,5285
 Route über Altreetz: Qualität (wahrscheinlich gut!)?	? 55324,46596 55756,46298 57210,45669 57800,45549 58714,45072 59375,45180 59794,44895 59921,44457 59921,44114 60638,43517 59730,42362 59870,42146 60098,42101 60435,42101 60867,41746 61425,40876 61393,40400 61451,40127 61413,39860 61546,39041 61432,38883 61901,38013 61933,37537 61781,37321 61800,37042 61933,36845 62098,36273 62079,36083 61489,36115 60619,35880 60460,35931 60086,36267 59990,36267 59876,36115 59806,35893 59479,35889
 #: by: anonymous: widersprüchlicher Eintrag von anonymous: gutes Kopfsteinpflaster, Q3, viele Fußgänger:
 Kappenstr.: Qualität?	? 16519,1778 16651,1962
-#: by: Julia (jbrauch): Asphalt, viele Fußgänger?
-Berchtesgadener Str.: Überqueren der Grunewaldstr. möglich?	? 6370,8922 6366,9033 6361,9164 6357,9322 6348,9535

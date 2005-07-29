@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.110 2005/07/19 00:33:10 eserte Exp $
+# $Id: Makefile.PL,v 1.110 2005/07/19 00:33:10 eserte Exp eserte $
 
 use 5.005;
 
@@ -64,6 +64,8 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
 
   [qw/Apache::Session::DB_File	0	all	2	cgi/,
    'optionale Session-Verwaltung für das CGI-Programm, notwendig für wapbbbike'],
+  [qw/Apache::Session::Counted	0	all	2	cgi/,
+   'optionale aber sehr zu empfehlende Session-Verwaltung für das CGI-Programm'],
   [qw/XML::SAX	0	all	0	cgi/,
    'CPAN.pm kann XML::SAX nicht über XML::Simple automatisch installieren'],
   [qw/XML::Simple	0	all	2	cgi/,
