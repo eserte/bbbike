@@ -228,15 +228,7 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1122674400,
-         'text' => 'K 6738; (L 36 nördl. Steinhöfel-Müncheberg); OD Tempelberg Straßenausbau Vollsperrung 07.03.2005-29.07.2005 ',
-         'from' => 1110063600,
-         'data' => 'userdel	q4 62529,5578 62084,5754
-userdel	q4 61809,5952 62084,5754
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1125525600,
          'text' => 'K 6907; (B 1 Neuseddin-Ferch); OD Neuseddin, Kunersdorfer Str. Straßenbauarbeiten Vollsperrung 29.03.2005-31.08.2005 ',
@@ -524,7 +516,7 @@ userdel	2 -4504,-14978 -4077,-14595
          'until' => 1125525600,
          'text' => 'L 70; (Karl-Fiedler-Str.); OD Sperenberg, zw. Goethestr. u. Am Niederfließ Kompletter Straßenausbau Vollsperrung 25.04.2005-31.08.2005 ',
          'from' => 1114293600,
-         'data' => '	q4 8576,-29378 8683,-29889
+         'data' => '	q4 8576,-29378 8721,-29879
 ',
          'type' => 'handicap'
        },
@@ -603,15 +595,7 @@ userdel	q4 25412,-29762 25541,-29875
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1122674400,
-         'text' => 'L 235; (Gielsdorf-Werneuchen); OD Wegendorf, Schulstr. Ersatzneubau Durchlass Vollsperrung 18.07.2005-29.07.2005 ',
-         'from' => 1121551200,
-         'data' => 'userdel	q4 34471,22214 34321,22151
-userdel	q4 34125,22128 34321,22151
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1122760800,
          'text' => 'B 168; zw. Abzw. Mochlitz und LG in Ri. Friedland Straßenbauarbeiten Vollsperrung 30.07.2005-30.07.2005 ',
@@ -675,15 +659,7 @@ userdel	q4 34125,22128 34321,22151
        },
        undef,
        undef,
-       {
-         'until' => 1122674400,
-         'text' => 'K 6509; (Liebenberg-B 96 Teschendorf); zw. Grüneberg und B 96 grundh. Straßenbau Vollsperrung 26.07.2005-29.07.2005 ',
-         'from' => 1122242400,
-         'data' => 'userdel	2 -6201,51305 -5813,51200
-userdel	2 -5813,51200 -3395,51242
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1123452000,
          'text' => 'B 169; von OD Kahla bis OE Elsterwerda Deckschichteinbau Vollsperrung 05.08.2005-07.08.2005 ',
@@ -697,14 +673,6 @@ userdel	2 -5813,51200 -3395,51242
          'text' => 'B 169; zw. Plessa und Kahla Deckschichteinbau Vollsperrung 29.07.2005-31.07.2005 ',
          'from' => 1122501600,
          'data' => 'userdel	2 24971,-104007 26625,-104401
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1122674400,
-         'text' => 'L 338; (Neuenhagener Chaussee); Zuf. Flora-Gelände bei Schöneiche Umbau Knotenpunkt Vollsperrung 29.07.2005-29.07.2005 ',
-         'from' => 1122501600,
-         'data' => 'userdel	2 30455,10061 30500,10571
 ',
          'type' => 'gesperrt'
        }

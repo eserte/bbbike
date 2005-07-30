@@ -450,7 +450,7 @@ Verl. Pücklerstr.: Waldweg	Q1 1558,6729 1170,6654 967,6620 905,6631 880,6645 832
 Bismarckstr.: Kopfsteinpflaster	Q2 -4892,1267 -5028,1133 -5092,1130 -5417,878 -5482,820 -5616,780 -6009,559
 Stahnsdorfer Damm: Kopfsteinpflaster	Q2 -4803,1240 -4995,1075
 (Forst Düppel): Waldweg	Q1 -6009,559 -6306,251 -6353,189 -6485,70 -6627,-56 -7067,-36
-Hampsteadstr.: Kopfsteinpflaster	Q2 793,2632 1157,2818 1314,2915 1722,2887 1842,2880 1903,2903
+Hampsteadstr.: Kopfsteinpflaster	Q2 793,2632 1157,2818 1268,2886 1314,2915 1722,2887 1842,2880 1903,2903
 Reichstagufer: Kopfsteinpflaster	Q2 9091,12681 8892,12576 8766,12541 8665,12548
 # XXX fand ich letztens nicht so schlimm: Reichstagufer: mäßiger Asphalt	Q1 9283,12856 9209,12795 9091,12681
 Am Weidendamm: mäßiger Asphalt	Q1 9383,12915 9529,12925
@@ -1027,7 +1027,7 @@ Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11025,12450 11040,12415 11094,12243
 Propststr.: Kopfsteinpflaster	Q2 10502,12280 10642,12373
 (Crellestr. - Julius-Leber-Brücke): Verbundsteinpflaster	Q1 7535,9087 7582,9010 7497,8916
 #: add_fragezeichen: überprüfen!
-Naumannstr.: Kopfsteinpflaster	Q2 7706,8875 7709,8770
+Naumannstr.: Kopfsteinpflaster	Q2 7707,8915 7709,8770
 Inselstr.: Kopfsteinpflaster	Q2 10869,11949 10824,11992
 Neue Grünstr.: Kopfsteinpflaster	Q2 10517,11795 10528,11729
 Parkaue: mäßiger Asphalt	Q1 15518,12412 15447,12438 15390,12431 15350,12270
@@ -1172,6 +1172,8 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 #: by: kalkreuth
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 #: by: anonymous vvv
+Tschudistr.: Asphalt	Q0 23584,13661 23705,13636 23817,13613 23936,13589 24119,13556
+Rellstabweg: Verbundsteinpflaster	Q1 -6482,12960 -6480,13028 -6146,13118 -5810,13208
 Kormoranweg: Asphalt	Q0 13997,3290 14034,3390 14128,3620 14176,3754 14226,3864 14281,3901
 Devrientweg: Verbundsteinpflaster	Q2 5089,3423 5250,3359 5375,3287
 Berlichingenstr.: Kopfsteinpflaster	Q2 4989,13462 4978,13765 4966,13948
@@ -1430,7 +1432,7 @@ Rüdickenstr.: gute Betonplattenstraße	Q0 17162,17626 17393,17301 17501,17267 177
 (Baikalstr. - Rummelsburger Str.): Parkweg mit Unebenheiten	Q2 17281,10598 17241,10865
 #: by: ^^^
 #: by: Torsten Nowak
-Bühler Weg: Asphalt	Q0 11198,1291 11240,1206 11631,978 11665,1040
+Bühler Weg: Asphalt	Q0 11198,1291 11250,1189 11636,955 11681,1031
 #: by: Sini
 Kirchstr.: Asphalt	Q0 589,2925 751,2860
 #: by: Philipp Kaufmann vvv
@@ -2491,3 +2493,24 @@ Ohmstr.: Asphalt	Q0 1442,14156 1504,14328
 Zühlsdorfer Str.: Asphalt	Q0 19976,16046 20214,15923 20262,16029 20170,16075
 #: by: Julia (jbrauch):
 Berchtesgadener Str.: Asphalt	Q0 6370,8922 6366,9033 6361,9164 6360,9194 6357,9322 6348,9535
+#: by: Jan (verworner):
+Storchenweg: Beton	Q0 14605,3220 14761,3443
+#: by: Andreas Cohn:
+Im Mühlenfelde: Asphalt	Q0 1268,2886 1320,2731 1324,2603
+#: by: Peter Thom:
+Schwarzmeerstr.: Beton	Q1 17565,10782 17882,10708
+#: by: Alexander Quickert: vvv
+Prinz-Heinrich-Str.: Asphalt	Q0 9964,-1804 9947,-1919 9947,-2143
+Blohmstr.: Asphalt	Q0 10004,-1919 9947,-1919 9531,-1931 9093,-1712
+#: by: ^^^
+#: by: René (rkarlo):
+Kunzeweg: Kopfsteinpflaster	Q3 15908,12480 15734,12506
+#: by: daniel pahl:
+Johannes-Niemeyer-Weg: Asphalt	Q0 -7928,-2165 -7844,-2260 -7743,-2312
+#: by: fabian dietrich:
+Salmbacher Str.: Asphalt	Q0 11139,1145 11250,1189 11393,1243 11523,1292 11905,1439 11991,1471
+#: by: Nicola: vvv
+Geßlerstr.: Asphalt	Q0 8003,8842 7792,8838
+#: XXX: ein anderer Eintrag (von Christina v. Nicolai) hat hier Q2 vergeben:
+Brunhildstr.: grobes Kopfsteinpflaster	Q3 7790,8913 7707,8915 7615,8927
+#: by: ^^^

@@ -39,7 +39,10 @@ BEGIN {
     }
 }
 
-use lib "$FindBin::RealBin/lib"; # just for the ProgressSplash widget
+use lib ("$FindBin::RealBin/lib", # just for the ProgressSplash widget
+	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/..",
+	);
 
 #  # for memory profiling XXX
 #  sub currmem {
@@ -81,6 +84,7 @@ my $tcltk;
 sub start_progress_splash {
     my $type = shift || "slow";
     if ($] >= 5.005) {
+	$type = "slow" if $^O eq "MSWin32";
 	# XXX don't know whether this is a Tk400 or an old perl problem
 	eval {
 	    require Tk::ProgressSplash;
