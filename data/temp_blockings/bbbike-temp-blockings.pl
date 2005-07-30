@@ -1479,8 +1479,8 @@ EOF
        text  => 'L 791; (Luckenwalder Str.); Bahnübergang in Zossen, Havarie, Vollsperrung, 19.02.2005-25.02.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13525,-21873 13014,-22300
-userdel	2 13525,-21873 13988,-21217
+userdel	2 13557,-21831 13014,-22300
+userdel	2 13557,-21831 13988,-21217
 EOF
      },
      { from  => 1109280022, # 2005-02-24 22:20
@@ -2030,8 +2030,8 @@ EOF
        text  => 'K 7234; (Goethestr.); Bahnübergang in Dabendorf Gleisbauarbeiten Vollsperrung 24.06.2005-30.06.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13048,-18384 13303,-18235
-userdel	2 14153,-17829 13303,-18235
+userdel	2 13048,-18384 13282,-18250
+userdel	2 14153,-17829 13282,-18250
 EOF
      },
      { from  => 1118527200, # 2005-06-12 00:00
@@ -2212,7 +2212,7 @@ EOF
        text  => 'L 70; (Karl-Fiedler-Str.); OD Sperenberg, zw. Goethestr. u. Am Niederfließ Kompletter Straßenausbau Vollsperrung 25.04.2005-31.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 8576,-29378 8683,-29889
+	q4 8576,-29378 8721,-29879
 EOF
      },
      { from  => 1120088649, # 2005-06-30 01:44
@@ -2336,8 +2336,8 @@ EOF
        text  => 'K 7234; (Goethestr.); BÜ in Dabendorf, zw.Kastanienallee u. Brandenburger Str. Gleisbauarbeiten Vollsperrung 22.07.2005-28.07.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13048,-18384 13303,-18235
-userdel	2 14153,-17829 13303,-18235
+userdel	2 13048,-18384 13282,-18250
+userdel	2 14153,-17829 13282,-18250
 EOF
      },
      { from  => 1121205600, # 2005-07-13 00:00
