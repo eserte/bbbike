@@ -139,7 +139,6 @@ Glambeck - Wolletz: Qualität etc.	? 37575,69168 38096,68983 38424,69181 38858,69
 Wolletz - Blumberger Mühle: Qualität etc.	? 43116,69546 44693,70057 45761,70992
 Blumberger Mühle - Gorlsdorf: Qualität etc.	? 45761,70992 45584,72614
 Peetzig - Steinhöfel: Qualität etc.	? 44200,74890 42992,76027 41901,77034 41472,77229
-Prenzlau: Seeweg: Qualität?	? 39668,100787 39787,101031 39867,101104
 Potsdam, Burgstr.: Qualität?	? -12553,-1278 -12500,-1437 -12281,-1378 -12265,-1434
 Mauerweg am Teltowkanal: Qualität (laut "Berliner Umland" größtenteils gut geeigneter Radweg)?	? 15573,4122 14625,4881 14457,5097
 Mauerweg zwischen Späthstr. und Britzer Allee: laut "Berliner Umland" gut geeigneter Radweg	? 14600,5450 14659,5853 15142,5889
@@ -292,7 +291,7 @@ Luckow - Sommersdorf: Qualität?	? 63938,93631 63800,94250 62800,96175 62912,9680
 Bei Penkun: Qualität? Ausgeschildert?	? 68961,100161 67712,99425 65237,99575 64837,99262 64362,99087 63575,98375 62425,97375
 Laut "Berliner Umland" verläuft die R1 hier entlang, aber es gibt (noch) keine Ausschilderung	? 17527,7812 17678,7850 17775,7874 17987,7973 18387,7742
 Eberswalde - Spechthausen: Qualität? Genaue Wegführung, Straßennamen? Bahnübergang! Nördlich des Bahnübergangs asphaltiert!	? 35362,48503 35312,48225 35485,48132 35428,47961 35244,47675 35244,47453 35180,47123 35295,47041 35339,46996 35149,46710 35168,46488 35218,46368 35149,46126 35066,45479
-Dreesch - Damme: Qualität?	? 47043,99437 49983,99567
+Dreesch - Damme: Qualität?	? 47043,99437 49971,99565
 Ludwigsburg: Qualität (von Süden aus gesehen: Feldweg; von Norden aus gesehen: Betonplatten/Kopfsteinpflaster)?	? 47587,106693 48762,104987
 Schönfeld - Neuenfeld: im Ort Schönfeld noch Betonplatten mit Spur (Q1), danach den Anschein nach Asphalt (Q0)	? 48060,112975 48800,113000 49137,113325 49537,113375 49887,113837
 Klockow - Züsedom: ab Klockow Asphalt, danach ungewiss	? 49412,111409 49887,113837 50187,114312 50025,115750 50148,115972
@@ -428,7 +427,6 @@ Schillingstr. (Reinickendorf): Qualität?	? 4687,18175 4581,17689
 Herzberg - Vielitz - Lindow: Qualität?	? -19761,54883 -18575,56837 -17019,58171 -16762,58037 -16350,58125 -15987,58387 -15950,58625 -16100,58837 -16583,58871 -16887,58862 -17800,61125 -18200,61425 -18762,61537 -19118,62087
 Calau - Werchow: Qualität?	? 48838,-72837 49300,-73237 49437,-74112 49425,-74550 49618,-75018
 Werchow - Cabel: Qualität?	? 49618,-75018 49412,-75175 49075,-75387 48818,-75806 48437,-75600 47821,-75451
-Prenzlau, Grabowstr. - Uckerpromenade: Qualität, Name der Straße?	? 39022,101334 39106,101231
 Weselitz - Neu-Kleinow: Qualität? (von Weselitz aus gesehen: guter Asphalt)	? 47682,95787 48825,94812 49872,95222
 Baumgarten - Schenkenberg: Qualität? (von Baumgarten aus gesehen: Asphalt)	? 46581,105900 46275,106262 46200,106787 45512,107075 45406,107350
 Ludwigsburg - Schenkenberg: Qualität? (von Ludwigsburg aus gesehen: Asphalt)	? 47812,106862 47550,107125 45900,107675 45406,107350
@@ -568,10 +566,7 @@ Bodelschwinghstr./Grenzstr. (Mahlow): Qualität?	? 11291,-4485 11651,-4515 11706,
 Wege zum Britzer Garten: Qualität? Namen?	? 12681,2748 12345,2804 11907,3142 12068,3182 12666,3408
 Britzer Garten - Mohriner Allee: Qualität? Genaue Wegführung?	? 12068,3182 12171,3460 11732,3715 11768,3950
 Sputendorf - Struveshof: Qualität (wahrscheinlich asphaltiert)? Genaue Wegführung?	? -1316,-7721 -862,-9933
-Neustrelitz - B198: laut Aktiv Regional "sehr gut geeignet"	? -13903,105250 -13659,105433 -12054,104113
-B198: laut Aktiv Regional straßenbegleitender Radweg	? -12062,104131 -8925,105645 -7693,105870 -6848,106401
-B198: laut Aktiv Regional viele Steigungen und Gefälle	? -8925,105645 -7693,105870 -6848,106401 -6283,106464 -6044,106634 -4549,106275 -3699,105763 -3482,105401 -3330,105252 -2961,105166 -2570,105293
-Carpin - Koldenhof: Radfernweg Mecklenburgische Seenplatte, Qualität?	? -2570,105293 -2008,105047 -1328,105078 -464,105331 124,105260 -17,104986 743,104529 1901,103828 2074,103676 2826,102904 3202,102152 4040,102292
+B198: laut Aktiv Regional viele Steigungen und Gefälle	? -8925,105645 -7570,105900 -7335,106120 -6848,106401 -6110,106473 -5887,106647 -4681,106367 -3724,105742 -3482,105401 -3330,105252 -2961,105166 -2570,105293
 Dewitz - Rosenhagen: laut Aktiv Regional viele Steigungen und Gefälle	? 6502,121010 6567,120649 7986,119379 8226,119058
 Johannes-Bobrowski-Str.: Qualität (Asphalt?)	? 24692,14617 24543,14578 24515,14484
 Weg parallel zur Flanaganstr. vorhanden?	? 1051,5525 1736,5850
@@ -580,7 +575,6 @@ Alte Allee: Qualität? ggf. Drängelgitter?	? 896,9396 596,9613
 (Verlängerte Alte Allee): Qualität?	? 596,9613 437,9738
 Kühler Weg: Qualität?	? 596,9613 828,9924
 Rösnerstr.: Qualität?	? 4165,5243 4204,5285
-Route über Altreetz: Qualität (wahrscheinlich gut!)?	? 55324,46596 55756,46298 57210,45669 57800,45549 58714,45072 59375,45180 59794,44895 59921,44457 59921,44114 60638,43517 59730,42362 59870,42146 60098,42101 60435,42101 60867,41746 61425,40876 61393,40400 61451,40127 61413,39860 61546,39041 61432,38883 61901,38013 61933,37537 61781,37321 61800,37042 61933,36845 62098,36273 62079,36083 61489,36115 60619,35880 60460,35931 60086,36267 59990,36267 59876,36115 59806,35893 59479,35889
 Kappenstr.: Qualität?	? 16519,1778 16651,1962
 Rudolf-Breitscheid-Str. (Babelsberg): sind zwischen Karl-Liebknecht-Str. und Plantagenstr. (vielleicht auch weiter?) ebenfalls Suggestivstreifen?	? -10420,-1957 -9735,-1845
 Claire-Waldoff-Str.: Qualität? Spielstraße?	? 9236,13228 9157,13226 9120,13345
@@ -676,6 +670,7 @@ Rüdersdorfer Str. (Schöneiche): schlechtes bis mäßiges Kopfsteinpflaster (wie is
 Brandenburgische Str.: Betonstraße (wie ist die Qualität ab Berliner Str. Richtung Süden?)	? 30496,7915 30587,8490
 Götz - Deetz: schlecht (Kopfsteinpflaster, Beton oder Asphalt) (unsicher:)	? -35606,300 -35150,381 -34843,875
 Seeburger Chaussee: mäßig, teils Kopfsteinpflaster, teils Asphalt (kann sich mittlerweile geändert haben:)	? -8644,9593 -8584,9571 -8564,9423 -8719,8161 -9077,7923 -9150,7720 -9097,7649 -9120,7522
+Reichenberg: grobes Kopfsteinpflaster (genauer Abschnitt fehlt)	? 58453,24209 58429,23868 58340,23653
 (S-Bahnbrücke Wartenberg): Fußgänger? (Stimmt das?)	? 16923,18650 16990,18694 17114,18775
 Marzahner Promenade - Mühlenbecker Weg: Fußgänger (Stimmt das?)	? 20222,15519 20150,15678
 X (hat die Einbecker Str. tatsächlich Vorfahrt?)	? 17208,11658 17275,11626 17734,11408
@@ -700,6 +695,7 @@ Zweirichtungsradweg auf der östlichen Seite (am Gutsgartenweg sicher, nördl. und
 Heinrich-Mann-Allee: Radweg (auf Gehweg) (wo genau ist das südliche Ende des Radwegs?)	? -10746,-4024 -10811,-3874 -11022,-3662 -11153,-3534 -11667,-3047 -11781,-2729 -12431,-2096
 Radweg (andere Straßenseite auch?)	? 37093,-151665 37375,-151190
 Radweg (andere Straßenseite auch?)	? 37628,-150734 37756,-150359
+Lessingstr.: optionaler Radweg (nicht ganz sicher:)	? -13749,105474 -12659,104581 -12122,104267 -12062,104131
 F2.2 (Potsdam) (Stimmt der Verlauf der F2.2 zwischen Nattwerder und Bornim?)	? -20176,-525 -21063,769 -20829,1047 -20766,1326 -20959,1539 -20959,1753 -20064,1906 -19990,2131 -20009,2396 -19656,2362 -19438,2244 -18728,2153 -18712,1225 -18678,1168 -18135,1580 -17730,1580 -17067,1388 -16894,1485
 F3 (Potsdam) (Wie ist der genaue Verlauf der F3?)	? -21636,-2101 -22042,-2060 -22206,-1693 -22683,-1521 -23133,-1244 -23199,-903 -23175,-350 -23411,15 -23896,653 -24509,1607 -24680,1670 -24894,1733 -24895,1903 -24853,2031 -24983,2265 -25110,2303 -25453,2418 -25539,2641 -25662,2746 -25669,2939 -25787,3228 -26196,4769 -27127,5270 -26965,5390 -26840,5684 -26784,5762 -26794,5867 -26689,6111 -26525,6519 -25978,6441 -25531,6634 -25318,6593 -25187,6468 -25060,6338 -24240,6075 -23599,5864 -21067,6503 -21110,6589 -20771,6952 -20301,7082 -20023,6826 -19787,6551 -19616,6466 -19303,5325 -19253,5109 -18825,4750 -18693,4568 -19403,4631 -19309,4359 -19339,3792 -19634,3593 -19766,3346 -19868,3159 -19928,2706 -19987,2459 -20009,2396 -19990,2131 -20064,1906 -20959,1753 -20959,1539 -20766,1326 -20829,1047 -21063,769 -20176,-525 -20295,-1870 -20486,-1956 -20721,-1935 -21063,-2021 -21210,-2058 -21508,-2080 -21636,-2101
 Uckermärkischer Rundweg (genauer Name der Radroute? wo geht es weiter?)	? 49007,71214 49512,70978 49950,70956 50387,70821 50406,70709 50412,70684 50209,70365 50490,70053 50318,69893 50303,69837 50128,69775 50078,69706 49903,69643 49959,69425 49893,69284 49837,69175 49821,69093

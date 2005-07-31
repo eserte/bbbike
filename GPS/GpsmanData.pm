@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.37 2005/06/06 22:00:26 eserte Exp $
+# $Id: GpsmanData.pm,v 1.38 2005/07/30 23:17:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005 Slaven Rezic. All rights reserved.
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.37 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -546,9 +546,9 @@ sub _get_converter {
 
 sub convert_DMS_to_DDD {
     my($in) = @_;
-    if ($in =~ /^([NESW])(\d+)\s(\d+)\s(\d+\.?\d*)$/) {
+    if ($in =~ /^([NESW]?)(\d+)\s(\d+)\s(\d+\.?\d*)$/) {
 	my($dir,$deg,$min,$sec) = ($1,$2,$3,$4);
-	if ($dir =~ /[SW]/) {
+	if (defined $dir && $dir =~ /[SW]/) {
 	    $deg *= -1;
 	}
 	$deg += $min/60 + $sec/3600;
@@ -561,9 +561,9 @@ sub convert_DMS_to_DDD {
 # set sign for S and W
 sub convert_DDD_to_DDD {
     my($in) = @_;
-    if ($in =~ /^([NESW])(\d+\.?\d*)$/) {
+    if ($in =~ /^([NESW]?)(\d+\.?\d*)$/) {
 	my($dir,$ddd) = ($1,$2,$3,$4);
-	if ($dir =~ /[SW]/) {
+	if (defined $dir && $dir =~ /[SW]/) {
 	    $ddd *= -1;
 	}
 	return $ddd;
@@ -696,8 +696,9 @@ sub as_string {
 	$s .= "\n";
 	foreach my $wpt (@{ $self->Track }) {
 	    $s .= join("\t",
-		       $wpt->Ident,
-		       (defined $wpt->Comment ? $wpt->Comment : ""),
+		       (defined $wpt->Ident ? $wpt->Ident : ""),
+		       (defined $wpt->DateTime ? $wpt->DateTime :
+			defined $wpt->Comment ? $wpt->Comment : ""),
 		       $wpt->Latitude, $wpt->Longitude,
 		       (defined $wpt->Altitude ? $wpt->Altitude : ""))
 		. "\n";

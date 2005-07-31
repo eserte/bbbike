@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.14 2005/06/19 20:21:02 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.14 2005/06/19 20:21:02 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -441,6 +441,19 @@ sub BBBikeGPS::do_draw_gpsman_data {
 
     main::IncBusy($top);
     eval {
+    if ($file =~ /\.mps$/i) { # XXX Hack: check for mps files first
+	require File::Temp;
+	require GPS::MPS;
+	my $mps = bless {}, 'GPS::MPS'; # XXX no new?
+	open MPSFH, $file or die "Can't open $file: $!";
+	my $gpsman_data = $mps->convert_to_gpsman(\*MPSFH);
+	close MPSFH;
+	my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1,
+						   SUFFIX => ".trk");
+	print $tmpfh $gpsman_data;
+	close $tmpfh;
+	$file = $tmpfile;
+    }
     my $gps = GPS::GpsmanData->new;
     $gps->load($file);
     $gps->convert_all("DDD");

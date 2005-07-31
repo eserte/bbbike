@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCrosshairs.pm,v 1.4 2005/07/19 00:30:54 eserte Exp $
+# $Id: BBBikeCrosshairs.pm,v 1.4 2005/07/19 00:30:54 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -18,13 +18,15 @@ use strict;
 use vars qw($VERSION);
 $VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
-use vars qw(@old_bindings $angle $pd $angle_steps $pd_steps);
+use vars qw(@old_bindings $angle $pd $angle_steps $pd_steps $show_info);
 $angle = 0       if !defined $angle;
 $pd = 0          if !defined $pd; # distance of parallel lines
 $angle_steps = 1 if !defined $angle_steps;
 $pd_steps = 2    if !defined $pd_steps;
+$show_info = 1	 if !defined $show_info;
 
-use BBBikeUtil qw(pi deg2rad);
+use BBBikeUtil qw(pi deg2rad rad2deg);
+use Strassen::Util;
 
 sub activate {
     my $c   = $main::c   = $main::c;
@@ -40,6 +42,9 @@ sub activate {
     }
 
     if (!$c->find("withtag", "crosshairs")) {
+
+	my $crosshair_angle_dist_changed = 0;
+
 	my $sw = $c->screenwidth > $c->screenheight ? $c->screenwidth : $c->screenheight;
 
 	my $ch1  = $c->createLine(0,0,-tags => ["crosshairs", "crosshairs1"]);
@@ -67,6 +72,19 @@ sub activate {
 		       $x + $cos*$pd - $sin*$pd,
 		       $y - $sin*$pd - $cos*$pd,
 		      );
+	    if ($show_info && $crosshair_angle_dist_changed) {
+		my $out_angle = sprintf "%.1f", rad2deg($angle);
+		my $dist;
+		if ($pd) {
+		    my($x1,$y1) = main::anti_transpose($x,$y);
+		    my($x2,$y2) = main::anti_transpose($x,$y+$pd);
+		    $dist = int Strassen::Util::strecke([$x1,$y1],[$x2,$y2]);
+		}
+		main::status_message("Crosshair: Angle: ${out_angle}°" .
+				     (defined $dist ? ", Distance: ${dist}m" : ""),
+				     "info");
+		$crosshair_angle_dist_changed = 0;
+	    }
 	};
 	my $change_coords_with_pointerxy = sub {
 	    my($x, $y) = $c->pointerxy;
@@ -84,29 +102,42 @@ sub activate {
 			   if (@main::realcoords) {
 			       my($lx,$ly) = main::transpose(@{$main::realcoords[-1]});
 			       $c->coords($chlp,$lx,$ly,$x,$y);
+			       if ($show_info) {
+				   my($rx,$ry) = main::anti_transpose($x,$y);
+				   my $dist = int Strassen::Util::strecke($main::realcoords[-1],[$rx,$ry]);
+				   main::status_message("Distance: ${dist}m", "info");
+			       }
 			   } else {
 			       $c->coords($chlp,0,0);
+			       if ($show_info) {
+				   main::status_message("", "info");
+			       }
 			   }
 		       });
 	$top->bind("<Shift-F4>" => sub {
 		       $angle = 0;
+		       $crosshair_angle_dist_changed++;
 		       $change_coords_with_pointerxy->();
 		   });
 	$top->bind("<F4>" => sub {
 		       $angle += deg2rad($angle_steps);
+		       $crosshair_angle_dist_changed++;
 		       $change_coords_with_pointerxy->();
 		   });
 	$top->bind("<F5>" => sub {
 		       $angle -= deg2rad($angle_steps);
+		       $crosshair_angle_dist_changed++;
 		       $change_coords_with_pointerxy->();
 		   });
 
 	$top->bind("<Shift-F6>" => sub {
 		       $pd = 0;
+		       $crosshair_angle_dist_changed++;
 		       $change_coords_with_pointerxy->();
 		   });
 	$top->bind("<F6>" => sub {
 		       $pd += $pd_steps;
+		       $crosshair_angle_dist_changed++;
 		       $change_coords_with_pointerxy->();
 		   });
 	$top->bind("<F7>" => sub {
@@ -114,6 +145,7 @@ sub activate {
 		       if ($pd < 0) {
 			   $pd = 0;
 		       }
+		       $crosshair_angle_dist_changed++;
 		       $change_coords_with_pointerxy->();
 		   });
 

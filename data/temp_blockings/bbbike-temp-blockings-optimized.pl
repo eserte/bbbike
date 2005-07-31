@@ -596,14 +596,7 @@ userdel	q4 25412,-29762 25541,-29875
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1122760800,
-         'text' => 'B 168; zw. Abzw. Mochlitz und LG in Ri. Friedland Straßenbauarbeiten Vollsperrung 30.07.2005-30.07.2005 ',
-         'from' => 1122588000,
-         'data' => 'userdel	2 72781,-41234 71792,-39389
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1123365600,
          'text' => 'B 87; zw. Hohenwalde und Müllrose Munitionsbergung Vollsperrung 29.07.2005-06.08.2005 ',
