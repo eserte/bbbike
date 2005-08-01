@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.122 2005/07/22 22:14:50 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.122 2005/07/22 22:14:50 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -116,6 +116,12 @@ sub advanced_option_menu {
     if ($devel_host) {
 	$opbm->command(-label => 'Destroy all toplevels',
 		       -command => \&destroy_all_toplevels);
+	$opbm->command(-label => 'Re-call some subs',
+		       -command => sub {
+			   define_item_attribs();
+			   generate_plot_functions();
+			   set_bindings();
+		       });
     }
     $opbm->command(-label => M"Datenverzeichnis ändern ...",
 		   -command => \&change_datadir);

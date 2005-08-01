@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.22 2005/05/19 00:06:24 eserte Exp $
+# $Id: MapServer.pm,v 1.22 2005/05/19 00:06:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -163,7 +163,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
     @accessors = qw(Width Height Imagecolor Transparent BBox
 		    ColorGreyBg ColorWhite ColorYellow ColorRed ColorGreen
 		    ColorMiddleGreen ColorDarkGreen ColorDarkBlue
-		    ColorLightBlue ColorBlack
+		    ColorLightBlue ColorRose ColorBlack
 		    OnFlaechen OnGewaesser OnStrassen OnUBahn OnSBahn OnRBahn
 		    OnAmpeln OnOrte OnFaehren OnGrenzen OnFragezeichen OnObst
 		    OnRoute OnStartFlag OnGoalFlag OnMarkerPoint OnTitle
@@ -348,6 +348,7 @@ sub allocate_colors {
     $im->ColorDarkBlue   ([0,0,128]);
     $im->ColorLightBlue  ([0xa0,0xa0,0xff]);
     $im->ColorMiddleGreen([0, 200, 0]);
+    $im->ColorRose	 ([215, 184, 200]);
     $im->ColorBlack      ([0, 0, 0]);
 }
 

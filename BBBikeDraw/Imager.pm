@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Imager.pm,v 1.16 2005/04/06 21:02:10 eserte Exp $
+# $Id: Imager.pm,v 1.17 2005/08/01 20:23:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -29,7 +29,7 @@ use vars qw($VERSION @colors %color %outline_color %width
 	    $TTF_STREET $TTF_CITY);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
-	    $darkblue $lightblue $black);
+	    $darkblue $lightblue $rose $black);
 }
 use vars @colors;
 
@@ -45,7 +45,7 @@ use vars @colors;
 #      }
 #  }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 

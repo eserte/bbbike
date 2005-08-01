@@ -385,9 +385,9 @@ sub get_color_values {
 	# black-white image for WAP
 	$c{black} = $c{grey_bg} = [0, 0, 0];
 	$c{white} = $c{yellow} = $c{red} = $c{green} = $c{darkgreen} =
-	    $c{darkblue} = $c{lightblue} = $c{middlegreen} = [255,255,255];
+	    $c{darkblue} = $c{lightblue} = $c{middlegreen} = $c{rose} = [255,255,255];
 	@c = qw(black grey_bg white yellow red green darkgreen
-		darkblue lightblue middlegreen);
+		darkblue lightblue middlegreen rose);
 	return (\%c, \@c);
     }
 
@@ -426,8 +426,9 @@ sub get_color_values {
     $c{lightblue}   = [186,213,247];
     #$c{lightblue}   = [0xa0,0xa0,0xff];
     $c{middlegreen} = [0, 200, 0];
+    $c{rose}        = [215, 184, 200];
     $c{black}       = [0, 0, 0];
-    push @c, qw(red green darkgreen darkblue lightblue middlegreen black);
+    push @c, qw(red green darkgreen darkblue lightblue middlegreen rose black);
 
     (\%c, \@c);
 }
@@ -476,6 +477,7 @@ sub set_category_colors {
 	      Green  => $middlegreen,
 	      Orchard  => $middlegreen,
 	      Sport  => $middlegreen,
+	      Industrial => $rose,
 	      Z  => $self->{FrontierColor} eq 'red' ? $red : $black,
 	      '?' => $black,
 	      '??' => $black,

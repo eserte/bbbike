@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.29 2005/03/19 11:15:16 eserte Exp $
+# $Id: PDF.pm,v 2.29 2005/03/19 11:15:16 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ use vars qw($VERSION @colors %color %width %outline_color
 	    $sansserif $symbolfont);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
-	    $darkblue $lightblue $black);
+	    $darkblue $lightblue $rose $black);
 }
 use vars @colors;
 
@@ -127,6 +127,7 @@ sub allocate_colors {
     $darkblue    = [0,0,0.5];
     $lightblue   = [0.73,0.84,0.97];
     $middlegreen = [0,0.78,0];
+    $rose        = [map { $_/256} 215, 184, 200];
     $black       = [0,0,0];
 }
 

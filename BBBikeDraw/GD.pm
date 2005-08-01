@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.44 2005/03/19 11:15:10 eserte Exp $
+# $Id: GD.pm,v 1.44 2005/03/19 11:15:10 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use vars qw($gd_version $VERSION $DEBUG @colors %color %outline_color %width
 	    $TTF_STREET $TTF_CITY);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
-	    $darkblue $lightblue $black);
+	    $darkblue $lightblue $rose $black);
 }
 use vars @colors;
 

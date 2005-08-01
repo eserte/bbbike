@@ -24,7 +24,7 @@ use Carp qw(confess);
 use vars qw($VERSION @colors %color %style %width %outline_color $sansserif);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
-	    $darkblue $lightblue $black);
+	    $darkblue $lightblue $rose $black);
 }
 use vars @colors;
 
@@ -95,6 +95,7 @@ sub allocate_colors {
     $darkblue    = [0,0,0.5];
     $lightblue   = [0.73,0.84,0.97];
     $middlegreen = [0,0.78,0];
+    $rose        = [map { $_/256} 215, 184, 200];
     $black       = [0,0,0];
 }
 
@@ -146,6 +147,7 @@ sub set_category_styles {
 	 'F:Green'  => {'fill' => cat2svgrgb('Green')},
 	 'F:Orchard'  => {'fill' => cat2svgrgb('Orchard')},
 	 'F:Sport'  => {'fill' => cat2svgrgb('Sport')},
+	 'F:Industrial'  => {'fill' => cat2svgrgb('Industrial')},
   	 Z  => {'stroke' => cat2svgrgb('Z')},
 #  	 '?' => $black,
 #  	 '??' => $black,

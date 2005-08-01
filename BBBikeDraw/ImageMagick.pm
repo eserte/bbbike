@@ -32,7 +32,7 @@ use vars qw($gd_version $VERSION @colors %color %outline_color %width
 	    $TTF_STREET);
 BEGIN { @colors =
          qw($grey_bg $white $yellow $red $green $middlegreen $darkgreen
-	    $darkblue $lightblue $black);
+	    $darkblue $lightblue $rose $black);
 }
 use vars @colors;
 
@@ -137,7 +137,7 @@ sub allocate_colors {
 	# black-white image for WAP
 	$white = _colorAllocate(255,255,255) if !defined $white;
 	$yellow = $red = $green = $darkgreen = $darkblue =
-	    $lightblue = $middlegreen = $black = _colorAllocate(0, 0, 0);
+	    $lightblue = $middlegreen = $black = $rose = _colorAllocate(0, 0, 0);
     } else {
 	$white       = _colorAllocate(255,255,255); # XXX! if !defined $white;
 	$yellow      = _colorAllocate(255,255,0); # XXX!   if !defined $yellow;
@@ -148,6 +148,7 @@ sub allocate_colors {
 	#$lightblue   = _colorAllocate(186,213,247);
 	$lightblue   = _colorAllocate(0xa0,0xa0,0xff);
 	$middlegreen = _colorAllocate(0, 200, 0);
+	$rose        = _colorAllocate(215, 184, 200);
 	$black       = _colorAllocate(0, 0, 0);
     }
 }

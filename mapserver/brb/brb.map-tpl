@@ -39,6 +39,7 @@
    UNLESS COLOR_WHITE.defined;		COLOR_WHITE = "255 255 255";	END;
    UNLESS COLOR_LIGHT_BLUE.defined;	COLOR_LIGHT_BLUE = "200 200 255";END;
    UNLESS COLOR_GREY_BG.defined;	COLOR_GREY_BG = "200 200 200";	END;
+   UNLESS COLOR_ROSE.defined;		COLOR_ROSE = "215 184 200";	END;
 -%]
 #
 # Start of map file
@@ -412,6 +413,11 @@ LAYER
     EXPRESSION "F:Ae" 
     NAME "Flughafen"
     COLOR [% COLOR_WHITE %]
+  END
+  CLASS
+    EXPRESSION "F:Industrial"
+    NAME "Industriegebiete"
+    COLOR [% COLOR_ROSE %]
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
