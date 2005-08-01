@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.5 2005/08/01 20:41:30 eserte Exp $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.5 2005/08/01 20:41:30 eserte Exp eserte $ -->
 
 <article>
  <artheader>
@@ -793,12 +793,12 @@ Beispiele:
     befindet: ANCHOR:s wie south)
 
     F:SW|IMG:church.gif
-    (eine Kirche, wobei gleichzeitig ein Kirchensymbol sowie eine
+    (eine Kirche, wobei gleichzeitig eine Kirchensignatur sowie eine
     rote Fläche angezeigt wird)
 
     F:SW
     (eine allgemeine flächige Sehenswürdigkeit, hier wird ein
-    Stern als Symbol angezeigt)
+    Stern als Signatur angezeigt)
 
     IMG:sehenswuerdigkeit_img/reichstag.gif
     (ein Bild ohne Fläche und ohne Anchor-Information, hier wird
