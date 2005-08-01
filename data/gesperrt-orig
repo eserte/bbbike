@@ -10,7 +10,7 @@ Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
 Kanalstraßen Nordufer	1 6880,11110 7160,11225 7251,11202 7333,11179 7595,11086 7873,11142 7993,11137 8241,11024
 # Hier kann ein kurzes Stück auf dem Gehweg überbrückt werden
-Kanalstraßen Nordufer	1 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8739,10404 8820,10379 9029,10366 9147,10359 9241,10324 9392,10260 9593,10238 9865,10286
+Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8739,10404 8820,10379 9029,10366 9147,10359 9241,10324 9392,10260 9593,10238 9865,10286
 Gitschiner Str.	1 9865,10286 9948,10280
 Gitschiner Str.	1 9948,10280 9851,10219
 Skalitzer Str.	1 12980,10575 12899,10595
@@ -130,7 +130,7 @@ Dönhoffstr.	1 18744,8638 18124,9056
 Bersarinplatz	1 13742,12538 13698,12544 13678,12571 13686,12611 13710,12633 13747,12642 13770,12617 13776,12571 13742,12538
 Petersburger Platz	1 13467,12978 13558,12766
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
-Burgstr.	1 10171,12769 10132,12941
+#Anscheinend hier keine Einbahnstraße, vielleicht weiter nördlich auch nicht: Burgstr.	1 10171,12769 10132,12941
 Schuckertdamm	1 756,14787 1348,14958 1488,14952
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
 Oberhofer Platz	1 5495,1964 5469,1949 5437,1941 5382,2080 5411,2098 5443,2109 5495,1964
@@ -592,6 +592,7 @@ Schwingtor an der Luiseninsel	BNP:10 7742,11639
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
+Spreeufer vor dem Monbijoupark: gesperrt wegen Bauarbeiten	2:inwork 10100,12876 9977,12912
 #: by: joern (js):
 Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14903,10403 15059,10289
 Voltairestr. (Arbeiten an "Alexa", voraussichtlich bis 2005-10-31)	2:inwork 11323,12484 11209,12430
@@ -604,6 +605,9 @@ Ernst-Ruska-Ufer: noch in Bau	2:inwork 19103,2442 18927,2431
 Entlastungsstr. (Tiergartentunnel, längerfristig)	1:inwork 8172,11679 8129,11735 8056,12061 8063,12182
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10177,12493
 Sperrung vor der amerikanischen Botschaft	2 9141,12320 9126,12413 9112,12499 9100,12627
+#: last_checked: 2005-07-31
+Naumannstr. unter der S-Bahn-Brücke: noch Bauarbeiten	2:inwork 7716,8048 7717,7759 7718,7641 7717,7564
+#: last_checked: 2005-07-31
 (Neue Naumannstr.) (noch in Bau)	2:inwork 7606,7611 7717,7759
 Französische Str. (Bauarbeiten)	1:inwork 9183,12076 9076,12054
 #: add_fragezeichen: mittlerweile geöffnet?
@@ -611,8 +615,7 @@ Gertrud-Kolmar-Str./Cora-Berliner-Str. (Bauarbeiten am Holocaust-Denkmal)	2:inwo
 Goethestr. (Bauarbeiten)	1:inwork 4896,11345 5053,11343
 # als "Mitte 2006" gekennzeichnet
 Markgrafenstraße  Richtung Französische Straße zwischen Behrenstraße und Französische Straße, Bauarbeiten als Einbahnstraße eingerichtet, Dauer:  bis 01.07.2006	1:inwork 9636,12126 9626,12227
-#: by: <cas51k$37r$1@rzsun03.rrz.uni-hamburg.de>
-#: add_fragezeichen: noch immer?
+#: last_checked: 2005-07-31
 Fußgängerbrücke über den Sachesendamm gesperrt, südliche Rampe ist aber befahrbar	2:inwork 7718,7641 7772,7610
 #
 # section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

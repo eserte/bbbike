@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.53 2005/07/31 12:06:46 eserte Exp $
+# $Id: qualitaet_s-orig,v 4.53 2005/07/31 12:06:46 eserte Exp eserte $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -346,7 +346,7 @@ Kirchhofstr: Kopfsteinpflaster	Q2 13013,7329 12872,7134
 Berliner Allee: Kopfsteinpflaster	Q2 14828,17856 14673,17454 14584,17224 14529,17065 14559,16912
 Lessingstr.: Kopfsteinpflaster	Q2 10410,58 10300,34 10161,3 9848,-59
 Monbijoustr.: Kopfsteinpflaster, OK	Q1 9734,13057 9707,12974
-Lüneburger Str.: Kopfsteinpflaster	Q2 7608,12966 7327,12721 7097,12590
+Lüneburger Str.: Kopfsteinpflaster	Q2 7610,12977 7327,12721 7097,12590
 Flensburger Str.: Kopfsteinpflaster	Q2 6309,12678 6400,12662 6546,12653
 Braunschweiger Str.: schlechtes bis mäßiges Kopfsteinpflaster	Q2 13047,7234 13322,7294 13369,7307 13517,7345
 Braunschweiger Str.: Kopfsteinpflaster	Q2 13702,7418 13781,7524 13919,7707
@@ -373,7 +373,7 @@ Großer Weg: Parkweg	Q1 5901,11902 5890,11865 5933,11775 6022,11757 6171,11790 63
 Große Sternallee: Parkweg	Q1 6809,11979 7073,11798 7163,11738 7504,11504
 Bellevueallee: Parkweg	Q1 7039,12314 7383,12095 7460,12054 7663,11946 8006,11766 8172,11679
 Ahornsteig: Parkweg	Q1 7669,11586 7706,11612 7742,11639 7852,11721 8006,11766
-Tiergarten: Parkweg	Q1 8006,11766 8022,12016 8063,12182
+Tiergarten: Parkweg	Q1 8021,11636 8006,11766 8022,12016 7999,12049 8006,12074 8034,12093 8063,12182
 Tiergarten: Parkweg	Q1 8214,12205 8220,11844 8223,11700
 Tiergarten: Parkweg	Q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
 Parkweg: teils sehr gutes Kopfsteinpflaster	Q1 14310,9692 14452,9919 14656,10197
@@ -608,7 +608,7 @@ Stedingerweg: Kopfsteinpflaster	Q2 13947,14513 13942,14639
 Hauptstr: sandiger und hoplriger Fahrweg	Q3 9686,26977 9577,26725 9713,26457
 Hauptstr.: Betonplatten, OK	Q1 9713,26457 9835,26176 9908,25864
 Bauernweg: sandig	Q2 9835,26176 10120,26363
-Hinter dem Gießhaus: mäßiger Asphalt	Q1 9837,12552 9853,12402
+Hinter dem Gießhaus: mäßiger Asphalt	Q1 9837,12552 9842,12506 9853,12402
 Oberwallstr.: mäßiger Asphalt, teils gutes Kopfsteinpflaster	Q1 9890,12161 9853,12402
 Trautenaustr.: Kopfsteinpflaster, OK	Q1 5374,9619 5321,9583
 Krumme Str.: Kopfsteinpflaster	Q2 3981,11226 3986,11337 3990,11490
@@ -915,7 +915,7 @@ Esmarchstr.: Kopfsteinpflaster	Q2 12307,14246 12262,14176 12199,14102 12110,1396
 Chodowieckistr.: Kopfsteinpflaster	Q2 12285,14458 11992,14599 11681,14759
 Christinenstr.: Kopfsteinpflaster, teilweise OK	Q1 10569,13719 10639,13865 10686,13947 10762,14050 10830,14183
 Angermünder Str.: Kopfsteinpflaster	Q2 10640,13700 10703,13832
-(Schinkelplatz): teilweise schlechtes Kopfsteinpflaster, Baustelle	Q3 10008,12378 10084,12228
+(Schinkelplatz): mäßiges Kopfsteinpflaster	Q2 10008,12378 10084,12228
 Sorauer Str.: teilweise Kopfsteinpflaster	Q1 12829,10504 12689,10273
 am Beisheim-Center: sehr gutes Kopfsteinpflaster	Q0 8326,11732 8399,11630 8490,11526
 Hans-Bülow-Str.: Asphalt/sehr gutes Kopfsteinpflaster	Q0 8399,11630 8473,11634 8553,11638
@@ -962,7 +962,7 @@ Am Orankesee: Parkweg	Q1 15845,15930 15703,15953 15581,15846 15484,15909 15479,1
 Vorfahrt Reichstagsgebäude: Kopfsteinpflaster, OK	Q1 8400,12417 8400,12605
 Hagenauer Str.: Kopfsteinpflaster	Q2 11154,14985 11187,14763
 Kolmarer Str.: Kopfsteinpflaster	Q2 11299,14112 11354,14187 11418,14290
-südliches Spreeufer: wechselnder Belag (Verbundsteinpflaster und fester glatter Sandweg)	Q1 7775,12631 7934,12734 8012,12848 8084,12914 8111,12930 8158,12958 8228,12964 8343,12925 8426,12871 8473,12753 8495,12651 8554,12593
+südliches Spreeufer: wechselnder Belag (Verbundsteinpflaster und fester glatter Sandweg)	Q1 7775,12631 7934,12734 8012,12848 8033,12885 8060,12921 8105,12942 8158,12958 8228,12964 8343,12925 8426,12871 8473,12753 8495,12651 8554,12593
 Glasbläserallee: Verbundsteinpflaster	Q0 14759,10096 14850,10265 14893,10359
 Fischzug: Asphalt	Q0 14850,10265 14929,10221 15001,10182 15090,10140
 Fischzug: Kopfsteinpflaster, teilweise auch Verbundsteinpflaster	Q2 15090,10140 15153,10112 15209,10087
@@ -1026,8 +1026,7 @@ Parochialstr.: Asphalt mit Schadstellen	Q1 10831,12371 10954,12394 11040,12415
 Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11025,12450 11040,12415 11094,12243
 Propststr.: Kopfsteinpflaster	Q2 10502,12280 10642,12373
 (Crellestr. - Julius-Leber-Brücke): Verbundsteinpflaster	Q1 7535,9087 7582,9010 7497,8916
-#: add_fragezeichen: überprüfen!
-Naumannstr.: Kopfsteinpflaster	Q2 7707,8915 7709,8770
+Naumannstr.: Asphalt	Q0 7707,8915 7709,8770
 Inselstr.: Kopfsteinpflaster	Q2 10869,11949 10824,11992
 Neue Grünstr.: Kopfsteinpflaster	Q2 10517,11795 10528,11729
 Parkaue: mäßiger Asphalt	Q1 15518,12412 15447,12438 15390,12431 15350,12270
@@ -1084,7 +1083,7 @@ Ottomar-Geschke-Str.: Kopfsteinpflaster	Q2 21332,4655 21454,4928 21498,5023
 Wallotstr.: Asphalt	Q0 2046,9429 1965,9431 1851,9332 1795,9325 1757,9271
 Gartenufer: Parkweg	Q1 5794,11624 6239,11399 6342,11353 6346,11326
 (südliches Spreeufer): teils gutes Kopfsteinpflaster, teils Parkweg, teils Asphalt	Q1 5579,12231 5737,12281 5804,12362 5962,12553 6029,12693 6078,12848 6193,12867
-Elisabeth-Abegg-Str.: Kopfsteinpflaster	Q2 7941,12902 7793,12764
+Elisabeth-Abegg-Str.: Kopfsteinpflaster	Q2 7942,12912 7793,12764
 Spreeuferweg: glatte Gehwegplatten und fester Sandweg an den Seiten	Q0 7064,12419 7217,12383 7360,12430 7541,12582
 Spreeuferweg: fester Sandweg	Q1 7541,12582 7791,12706 7915,12795 7950,12860
 Delbrückstr. (Neukölln): Kopfsteinpflaster	Q2 12743,6645 12851,6664 13125,6717

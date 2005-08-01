@@ -527,10 +527,10 @@ Dachsteinweg: verkehrsberuhigt?	? 10481,2549 10446,2373 10493,2318
 Ringstr.: Qualität zwischen Spindelmühler Weg und Drakestr.: Kopfsteinpflaster?	? 2701,3064 3050,3316 3184,3413 3375,3544 3507,3635
 Kiepertplatz: Qualität?	? 8528,1846 8606,1875
 Elisabeth-Abegg-Str. bis Lüneburger Str.: Verbindung vorhanden? Qualität?	? 7793,12764 7409,12739 7327,12721
-Elisabeth-Abegg-Str.: noch immer nicht ausgeschildert?	? 7941,12902 7793,12764
-Washingtonplatz: Ampel nicht direkt an der Kreuzung Rahel-Hirsch-Str./Alt-Moabit?	? 7862,12917
+Elisabeth-Abegg-Str.: noch immer nicht ausgeschildert?	? 7942,12912 7793,12764
 Lückhoffstr.: Qualität (Kopfsteinpflaster?)?	? -2847,2893 -3022,2696 -3162,2564 -3190,2467 -3210,2375
-Parkweg vom Kanzleramt zur Gustav-Heinemann-Brücke: für Radfahrer befahrbar?	? 8111,12930 8115,12835 8126,12740
+Parkweg vom Kanzleramt zur Gustav-Heinemann-Brücke: noch nicht vollständig geöffnet?	? 8111,12930 8115,12835 8126,12740
+Spreebogenpark: neuer Weg parallel zum Uferweg mit Rampe zur Gustav-Heinemann-Brücke, wann offen?	? 8343,12925 8229,12952 8159,12948 8111,12930
 Betckestr.: Qualität?	? -3614,12529 -3236,12533 -3150,12545
 Altonaer Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? -4900,13857 -4742,13839 -4298,13810 -3971,13755 -3689,13680
 Nauener Str. zur Altonaer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? -4731,13970 -4742,13839
@@ -605,7 +605,7 @@ Nymphenufer: mäßig geeignet (laut ADFC-Karte)	? -4044,1841 -3981,1764 -3806,1644
 Dolomitenstr.: mäßig geeignet (laut ADFC-Karte)	? 10596,17554 10473,17446 10305,17299
 Cyclopstr.: nicht geeignet (laut ADFC-Karte)	? 4825,21718 5138,21358
 (Orankestr. - Orankesee): gut geeignet (laut ADFC-Karte)	? 15598,15793 15581,15846
-(südliches Spreeufer) (hat dieser Weg einen Namen (Panoramaweg? oder Ludwig-Erhard-Ufer?))	? 7775,12631 7934,12734 8012,12848 8084,12914 8111,12930 8158,12958 8228,12964 8343,12925 8426,12871 8473,12753 8495,12651 8554,12593
+(südliches Spreeufer) (hat dieser Weg einen Namen (Panoramaweg? oder Ludwig-Erhard-Ufer?))	? 7775,12631 7934,12734 8012,12848 8033,12885 8060,12921 8105,12942 8158,12958 8228,12964 8343,12925 8426,12871 8473,12753 8495,12651 8554,12593
 (Straße 54) (Keine Referenz auf den Straßennamen in Berlin.coords.data und in der ADFC-Karte:)	? 13011,17470 12965,17684 12856,17825
 (Pankeweg, Bürgerpark) (Verläuft der Pankeweg im Bürgerpark nördlich oder südlich der Panke?)	? 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9414,18278 9304,18165 9310,18108
 (Weg zur Krampenburg) (ist das ein offizieller Name mit Ausschilderung?)	? 27609,305 27571,262 27171,155 27273,-106 27407,-401 27552,-741 27559,-1365 27357,-1545 27323,-1671
@@ -628,7 +628,6 @@ Bohnsdorfer Str.: Waldweg?? (Stimmt das?)	? 21999,2171 21996,1683 22162,1183 222
 Fanningerstr.: Kopfsteinpflaster (Stimmt das?)	? 16261,12224 16445,12193 16782,12154 16983,12124 17139,12100
 Marienhöher Weg: Kopfsteinpflaster (mäßiges oder schlechtes Kopfsteinpflaster?)	? 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250
 Parkstr.: Kopfsteinpflaster (stimmt das?)	? 9029,6360 9143,6415
-Naumannstr.: Kopfsteinpflaster (überprüfen!)	? 7707,8915 7709,8770
 Nalepastr.: Betonstr., Eisenbahnschienen (stimmt das?)	? 17043,7512 17211,7265
 Braunschweiger Ufer: asphaltiert (zumindest Richtung Osten von der Rungiusstr. aus:)	? 13077,5893 13483,5973
 Braunschweiger Ufer: Parkweg (zumindest Richtung Westen von der Rungiusstr. aus:)	? 13077,5893 12718,5845
@@ -683,7 +682,6 @@ B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 Märkische Allee: Linksabbiegen wahrscheinlich verboten (wahrscheinlich!)	? 20512,17101 20691,17463 20717,17516 20834,17752 20878,17842 21218,18536
 tragen (zwei kurze Treppen) (wo sind die Treppen genau?)	? 9453,6415
 Gertrud-Kolmar-Str./Cora-Berliner-Str. (Bauarbeiten am Holocaust-Denkmal) (mittlerweile geöffnet?)	? 8804,11838 8770,11971 8737,12098
-Fußgängerbrücke über den Sachesendamm gesperrt, südliche Rampe ist aber befahrbar (noch immer?)	? 7718,7641 7772,7610
 L 39; (ASFriedersdorf-Neu Zittau); keine Brücke ü. Oder-Spree-Kanal; kein Bw ü. Oder-Spree-Kanal; Vollsperrung; 00:00:00-unbekannt (noch immer aktuell? (bei LBVS nicht mehr aufgeführt))	? 35335,-6272 35143,-5650
 L 70 (Doberlug Kirchhain-Dahme); zw. B87 Hohenbuckow u. Hillmersdorf; Fahrbahnschäden; Vollsperrung; 22.05.97-unbekannt (bei LBVS nicht mehr aufgeführt:)	? 17023,-71738 17783,-72721 17979,-73530 17960,-73915 17961,-74364 18228,-75553 18187,-76301 18061,-76878
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position ist vielleicht nicht ganz genau)	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9060,22342

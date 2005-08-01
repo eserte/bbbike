@@ -45,8 +45,9 @@ Fasanerieallee: Parkweg	q1 6435,11606 6459,11638 6540,11754 6685,11954
 Große Sternallee: Parkweg	q1 6809,11979 7073,11798 7163,11738 7504,11504
 Bellevueallee: Parkweg	q1 7039,12314 7383,12095 7460,12054 7663,11946 8006,11766 8172,11679
 Ahornsteig: Parkweg	q1 7669,11586 7706,11612 7742,11639 7852,11721 8006,11766
-Tiergarten: Parkweg	q1 8006,11766 8022,12016 8063,12182
+Tiergarten: Parkweg	q1 8006,11766 8022,12016 7999,12049 8006,12074 8034,12093 8063,12182
 Tiergarten: Parkweg	q1 8214,12205 8220,11844 8223,11700
+Tiergarten: Parkweg	q1 8021,11636 8006,11766
 Tiergarten: Parkweg	q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
 Parkweg: enge Brücke, Parkweg	q2 14310,9692 14452,9919 14656,10197
 Spittelmarkt: Gehweg	q1 10154,11590 10135,11661 10222,11724
@@ -128,6 +129,7 @@ Pfalzburger Str.: Gehweg	q2 4905,10069 4909,10119
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3288,12700 3385,12734 3582,12704 3763,12624 3910,12630 4094,12639 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
 Spreeufer: Fußgänger	q1 10171,12769 10100,12876 9977,12912 9895,12936 9784,12953 9707,12974 9557,12992 9533,12994 9508,12991 9271,12952
 Monbijoupark - Henriette-Herz-Platz: Fußgänger	q1 9977,12912 10132,12941
+Monbijoubrücke: eng, Fußgänger	q2 9707,12974 9680,12916 9661,12876
 Garnisonkirchplatz: Straßenbahn	q2 10309,12854 10255,12959
 Fürther Str.: Gehweg	q2 5773,10318 5808,10284
 (Zossener Brücke - Mehringplatz): Gehweg	q1 9865,10286 9646,10301
@@ -151,7 +153,7 @@ St.-Wolfgang-Str.: Fußgänger, Cafés	q3 10219,12701 10285,12744 10360,12793
 Spreegasse: Fußgänger, Cafés	q3 10249,12658 10309,12700 10387,12760
 Heiligengeistgasse: Fußgänger, Cafés, sehr eng	q4 10285,12744 10309,12700 10352,12627
 zur Gormannstr.: Bordstein	q4 10331,13397 10349,13447
-Am Zeughaus: Fußgänger, am Wochenende Flohmarkt	q3 9912,12623 9987,12421
+Am Zeughaus: Fußgänger, am Wochenende Flohmarkt	q3 9912,12623 9950,12522 9987,12421
 Steinmetzstr.: Fußgängerzone, Radfahren erlaubt	q1 7624,9763 7648,9944 7698,10147
 Lützowplatz: Einbahnstraße, Ausweichen auf Gehweg	q3; 7002,11034 6873,11011
 Zauritzweg: Fußgänger	q1 4150,11871 4220,11820 4195,11690
@@ -175,7 +177,7 @@ Bundesratufer: Rampe, Fußgänger	q2 6185,12968 6131,12978
 Lehmbruckstr.: Bordsteine	q3 13678,10685 13690,10715
 Stadtpark Steglitz: Fußgänger	q1 5838,4454 5931,4659 6018,4850
 Stadtpark Steglitz: Fußgänger	q1 5344,4672 5476,4626 5747,4697 5931,4659 6114,4709
-Spreeufer: Fußgänger	q1 7775,12631 7934,12734 8012,12848 8084,12914 8111,12930 8158,12958 8228,12964 8343,12925 8426,12871 8473,12753 8495,12651 8554,12593
+Spreeufer: Fußgänger	q1 7775,12631 7934,12734 8012,12848 8033,12885 8060,12921 8105,12942 8158,12958 8228,12964 8343,12925 8426,12871 8473,12753 8495,12651 8554,12593
 Dieffenbach/Schönleinstr.: Bodenschwellen	q1 11148,9730 11346,9655 11541,9576 11594,9604
 (Grünanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Fußgänger	q2 17678,18171 17703,17990
 Erich-Steinfurth-Str.: Fußgänger	q2 12656,11655 12596,11696
@@ -208,6 +210,7 @@ Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22162,4546 22111,
 Torstr. - Weydingerstr.: Bordsteine	q2 11079,13492 11108,13513
 Gustav-Heinemann-Brücke: Fußgänger, enge Brücke	q2 8111,12930 8107,13032
 Beruner Str.: Rampen, Fußgänger, U-Bahn-Ausgang	q3 20143,10731 20215,10554
+(Spreeufer - Gustav-Heinemann-Brücke): besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 8033,12885 8041,12875 8067,12908 8111,12930
 Neustrelitzer Str.: kurvenreich	q1 16739,14733 16668,14765 16534,14740 16443,14825 16346,14750 16256,14828
 (Esplanade - Grüntaler Str.): Zickzack-Kurs	q2 9984,16968 9811,17016
 Lünette: Fußgänger	q1 -1055,15588 -1475,15441
@@ -260,7 +263,7 @@ Lothar-Bucher-Str.: enge Straße	q1 5598,6136 5748,6067 5845,6062 6024,6080
 Albestr.: enge Straße	q1 5419,7435 5650,7432 5811,7433
 Str. 154: viele Fußgänger	q2 13011,17470 12965,17684 12856,17825
 Leuthener Str.: enge Straße	q1 7411,8364 7494,8364 7578,8358 7640,8359 7716,8356
-südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q1 7775,12631 7934,12734 8012,12848 8084,12914 8111,12930 8158,12958 8228,12964 8343,12925 8426,12871 8473,12753 8495,12651 8554,12593
+südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7775,12631 7934,12734 8012,12848 8033,12885 8060,12921 8105,12942 8158,12958 8228,12964 8343,12925 8426,12871 8473,12753 8495,12651 8554,12593
 Berchtesgadener Str.: Fußgänger, Bordsteine	q2 6361,9164 6360,9194
 (Bad Kissingen): Fußgänger	q2 3639,7590 3652,7795
 (Kolonieweg a. d. Forkenbeckstr.): Fußgänger, teilweise eng 	q3 3225,8214 3230,8194 3635,8099 3709,8082 3753,8073 3771,8094
