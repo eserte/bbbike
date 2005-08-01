@@ -1056,7 +1056,7 @@ Alt-Köpenick: Kopfsteinpflaster, zwischen den Schienen Asphalt 	Q0 22196,4847 22
 Katzengraben, Schüßlerplatz: Kopfsteinpflaster	Q2 22439,4838 22449,4712 22383,4703
 Steinstr.: Kopfsteinpflaster	Q2 -7909,-2375 -7978,-2309
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
-Schützallee: mäßiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfläche	Q2 2230,3823 2151,3834 1952,3864 1918,3868 1815,3876 1783,3879 1738,3881 1677,3885
+Schützallee: mäßiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfläche	Q2 2230,3823 2151,3834 1952,3864 1918,3868 1815,3876
 Riemeisterstr.: mäßiges Kopfsteinpflaster	Q2 373,4816 319,4906 168,5092 103,5123
 Soldiner Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 9604,16760 9317,16882 9096,16976
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2240,6904 2116,6861 2054,6840 1975,6818
@@ -1102,7 +1102,7 @@ Rellstabweg: Verbundsteinpflaster	Q1 -6482,12960 -6480,13028 -6146,13118 -5810,1
 Kormoranweg: Asphalt	Q0 13997,3290 14034,3390 14128,3620 14176,3754 14226,3864 14281,3901
 Devrientweg: Verbundsteinpflaster	Q2 5089,3423 5250,3359 5375,3287
 Berlichingenstr.: Kopfsteinpflaster	Q2 4989,13462 4978,13765 4966,13948
-Rappoltsweilerstr.: gutes Kopfsteinpflaster	Q1 1222,4043 1334,4000 1379,3964 1453,4004
+Rappoltsweilerstr.: grobes Kopfsteinpflaster	Q3 1222,4043 1334,4000 1379,3964 1453,4004
 Beifußweg: mäßiger Beton	Q1 15281,3682 15587,3446 15892,3210
 Egestorffstr.: Asphalt	Q0 9147,-1022 9123,-1321 9093,-1712
 Auf dem Grat: Asphalt	Q0 1644,5397 1812,5365 1842,5342 1965,5337 2062,5314 2075,5075 2081,4940
@@ -1907,3 +1907,27 @@ Brunhildstr.: grobes Kopfsteinpflaster	Q3 7790,8913 7707,8915 7615,8927
 (Bad Kissingen): wassergebunde Decke	Q1 3639,7590 3652,7795
 (Kolonieweg a. d. Forkenbeckstr.): wassergebunde Decke	Q1 3225,8214 3230,8194 3635,8099 3709,8082 3753,8073 3771,8094
 Claire-Waldoff-Weg: wassergebunde Decke	Q1 3635,8099 3596,7550
+(Eppinger Str. - Garystr.): Kleinpflaster	Q1 2211,4280 2254,4376
+Breisacher Str.: Kopfsteinpflaster	Q2 2045,4193 2135,4177 2169,4169 2233,4156 2280,4148 2372,4127
+Leichhardtstr.: Kopfsteinpflaster	Q2 1514,4325 1546,4319 1590,4309 1627,4299
+(Ihnestr. - Clayallee): Asphalt	Q1 1471,4764 1730,4743 1870,4738
+(Ihnestr. - Clayallee): wassergebundene Decke	Q1 1870,4738 1981,4746 2005,4772
+(Lützelsteiner Weg - Reichshofer Str.): wassergebundene Decke	Q1 1667,4664 1674,4661 1698,4653 1712,4648
+(Clayallee - Ripleystr.): fester Sand	Q1 1516,4658 1445,4679
+(Garystr. - Saargemünder): Verbundsteine	Q1 1722,4693 1730,4743
+Lützelsteiner Weg: Beton	Q0 1385,4138 1478,4206 1514,4325
+Balbronner Str.: Asphalt	Q1 1759,4185 1952,4146
+Zaberner Str.: Beton	Q0 1273,3877 1252,3821
+Isenheimer Weg: Beton	Q0 1389,3879 1387,3821
+Forbacher Str.: Beton	Q1 1484,3716 1596,3740 1585,3794 1572,3883
+Ersteiner Str.: Beton	Q1 1585,3794 1781,3807 1913,3818
+Schlettstadter Str.: Asphalt 	Q1 1083,3736 1429,3609 1489,3612
+Schlettstadter Str.: Beton	Q0 1489,3612 1807,3694 1902,3718 1913,3818 1918,3868
+Buchsweilerstr.: Kopfsteinpflaster	Q2 2151,3834 2180,3945 2206,4053 2222,4117 2233,4156
+Markircher Weg: Kopfsteinpflaster	Q2 2159,4130 2222,4117
+Gebweilerstr.: Kopfsteinpflaster	Q2 2122,3958 2180,3945
+Thanner Pfad: Kopfsteinpflaster	Q2 2122,3958 2159,4130
+Altkircher Str.: Kopfsteinpflaster	Q2 2293,4043 2206,4053
+Hüninger Str.: Kopsteipflaster	Q2 1987,3987 2034,4156 2045,4193 2079,4299 2148,4405
+Mörchinger Str.: Kopsteinpflaster	Q1 1442,3104 1347,3281 1458,3342
+Mörchinger Str.: Verbundsteine	Q0 1873,3564 2058,3662
