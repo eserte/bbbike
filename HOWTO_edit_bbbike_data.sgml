@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.4 2005/07/17 12:47:10 eserte Exp eserte $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.5 2005/08/01 20:41:30 eserte Exp $ -->
 
 <article>
  <artheader>
@@ -28,7 +28,7 @@
    </author>
   </authorgroup>
 
-  <pubdate>$Date: 2005/07/17 12:47:10 $</pubdate>
+  <pubdate>$Date: 2005/08/01 20:41:30 $</pubdate>
 
   <copyright>
    <year>2005</year>
@@ -759,6 +759,57 @@ nicht so gezeichnet sein, dass sie routingfähig sind.
 
 <para>
 Dateiname: <filename>strassen_bab</>
+
+<sect2>
+<title id="sehenswuerdigkeit">Sehenswürdigkeiten und wichtige Gebäude</>
+
+<para>
+Die Datensätze in dieser Datei bekommen die Kategorie
+<constant>SW</>, oft mit vielen anderen Zusätzen. Falls es sich nur um
+einen Punkt handelt, ist es einfach nur <constant>SW</>, ansonsten
+<constant>F:SW</>.
+
+<para>
+Wenn zu der Sehenswürdigkeit ein Bild existiert, dann sollte das Bild
+in das Unterverzeichnis <filename>sehenswuerdigkeit_img</> abgelegt
+werden. Als Dateiformat sollte man möglichst ein von Perl/Tk nativ
+unterstütztes wie xpm oder gif wählen (neuere Perl/Tk-Versionen können
+auch jpg und png verarbeiten, aber darauf möchte ich mich erst einmal
+nicht verlassen). Die Bilder sollten relativ klein sein, höchstens 50
+Pixel in Breite und Höhe, und aus Grautönen bestehen und einen Alpha-
+bzw. Transparenzkanal besitzen. Das Bild wird per
+<constant>IMG</>-Kategorie gekennzeichnet (Beispiel siehe unten).
+
+<para>
+Es gibt einige vordefinierten Bilder wie <filename>church.gif</> (für
+Kirchen), <filename>airport.gif</> (für Flughäfen) und
+<filename>hospital.gif</> (für Krankenhäuser).
+
+<para>
+Beispiele:
+<programlisting>
+    IMG:sehenswuerdigkeit_img/brandenburger_tor.gif|ANCHOR:s
+    (ein Bild, wobei sich die definierte Koordinate südlich vom Bild
+    befindet: ANCHOR:s wie south)
+
+    F:SW|IMG:church.gif
+    (eine Kirche, wobei gleichzeitig ein Kirchensymbol sowie eine
+    rote Fläche angezeigt wird)
+
+    F:SW
+    (eine allgemeine flächige Sehenswürdigkeit, hier wird ein
+    Stern als Symbol angezeigt)
+
+    IMG:sehenswuerdigkeit_img/reichstag.gif
+    (ein Bild ohne Fläche und ohne Anchor-Information, hier wird
+    einfach nur zentriert)
+</programlisting>
+
+In Zukunft werden die Standardbilder (church.gif) durch Kategorien
+ersetzt werden.
+
+<para>
+Dateiname: <filename>sehenswuerdigkeit</>
 
 <sect1>
 <title>Alternative Editiermöglichkeiten</>
