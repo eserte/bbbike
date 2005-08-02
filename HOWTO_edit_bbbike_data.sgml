@@ -682,7 +682,8 @@ linkend="strassenbab">hier</>; Kategorie <constant>2</>)
 <listitem><para>Stellen, an denen getragen werden muss (Kategorie
 <constant>0:n</>, wobei <constant>n</> für die Zeit in Sekunden steht,
 die dabei verloren geht - hier wähle ich großzügige Zeiten, meistens
-nicht unter 30 Sekunden)
+nicht unter 30 Sekunden. Zeiten über einer Minute werden ebenfalls in
+Sekunden angegebenm z.B. <constant>0:60</>)
 
 <listitem><para>Drängelgitter und Ähnliches (Kategorie
 <constant>BNP:n</>, auch hier steht <constant>n</> für die verlorene

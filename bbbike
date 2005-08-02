@@ -4855,8 +4855,8 @@ sub define_item_attribs {
 	 'Forestabove'  => '#66b47b', 	# same, but for higher stacking
 	 'Cemetery'  => '#70c085', 	# Friedhöfe
 	 'Green' => '#76c48b', 	# sonstige Grünanlagen
-	 'Orchard' => '#80ca94', 	# Kleingärten
-	 'Sport' => '#86d49b', 	# Sportanlagen
+	 'Orchard' => '#e8f8c8', 	# Kleingärten (was #80ca94)
+	 'Sport' => '#c8d898', 	# Sportanlagen (was #86d49b)
 	 'Industrial' => '#d7b8c8',	# Industriegebiete
 	 'Ae' => 'white',	# Flughäfen
 	 'F'  => 'grey99',	# sonstige Flächen

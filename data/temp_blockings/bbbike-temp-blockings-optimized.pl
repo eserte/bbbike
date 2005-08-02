@@ -192,14 +192,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1122847199,
-         'text' => 'Fürstenwalder Damm zwischen Bölschestr. und Stillerzeile Baustelle, Straße stadteinwärts gesperrt (bis Ende 07.2005)',
-         'from' => 1108684644,
-         'data' => 'userdel	q3; 25579,5980 25121,5799
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -658,14 +651,6 @@ userdel	q4 25412,-29762 25541,-29875
          'text' => 'B 169; von OD Kahla bis OE Elsterwerda Deckschichteinbau Vollsperrung 05.08.2005-07.08.2005 ',
          'from' => 1123106400,
          'data' => 'userdel	2 23758,-103850 22424,-103934
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1122847200,
-         'text' => 'B 169; zw. Plessa und Kahla Deckschichteinbau Vollsperrung 29.07.2005-31.07.2005 ',
-         'from' => 1122501600,
-         'data' => 'userdel	2 24971,-104007 26625,-104401
 ',
          'type' => 'gesperrt'
        }

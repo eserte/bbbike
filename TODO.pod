@@ -14,6 +14,16 @@ Legend:
 
 =over
 
+=item * (M3)
+
+Bugreport von Andreas Mühlhausen: BS/Del funktioniert nicht zum
+Löschen von Punkten aus der Selection im Edit-Modus unter Windows.
+
+=item * (M3)
+
+Bugreport von Andreas Mühlhausen: Sehenswürdigkeiten werden auch im
+Normalmodus mit einem grünen Punkt gezeichnet (unter Windows).
+
 =item * (M4)
 
 Implement minimal scrolling: if scrolling to a point of a polyline,

@@ -53,11 +53,11 @@ alink="#0000FF">
 
 <dt>8. <a href="#AEN146">Ein Exkurs über die verwendeten Attribute</a></dt>
 
-<dt>9. <a href="#AEN331">Alternative Editiermöglichkeiten</a></dt>
+<dt>9. <a href="#AEN332">Alternative Editiermöglichkeiten</a></dt>
 
-<dt>10. <a href="#AEN343">Neue Layer auf Basis der Berliner BBBike-Daten</a></dt>
+<dt>10. <a href="#AEN344">Neue Layer auf Basis der Berliner BBBike-Daten</a></dt>
 
-<dt>11. <a href="#AEN346">Eine komplett neue Datenbank aufbauen</a></dt>
+<dt>11. <a href="#AEN347">Eine komplett neue Datenbank aufbauen</a></dt>
 </dl>
 </div>
 
@@ -678,14 +678,16 @@ class="CONSTANT">1s</tt>&#13;</p>
 
 <li>
 <p>Für Radfahrer vollkommen gesperrte Straßen (z.B. Kfz-Straßen wie die B96a in
-Altglienicke, aber siehe auch <a href="#AEN309">hier</a>; Kategorie <tt
+Altglienicke, aber siehe auch <a href="#AEN310">hier</a>; Kategorie <tt
 class="CONSTANT">2</tt>)&#13;</p>
 </li>
 
 <li>
 <p>Stellen, an denen getragen werden muss (Kategorie <tt class="CONSTANT">0:n</tt>, wobei
 <tt class="CONSTANT">n</tt> für die Zeit in Sekunden steht, die dabei verloren geht -
-hier wähle ich großzügige Zeiten, meistens nicht unter 30 Sekunden)&#13;</p>
+hier wähle ich großzügige Zeiten, meistens nicht unter 30 Sekunden. Zeiten über einer
+Minute werden ebenfalls in Sekunden angegebenm z.B. <tt
+class="CONSTANT">0:60</tt>)&#13;</p>
 </li>
 
 <li>
@@ -735,7 +737,7 @@ class="FILENAME">gesperrt_car</tt>&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN298" name="AEN298">8.15. Brunnels</a></h2>
+<h2 class="SECT2"><a id="AEN299" name="AEN299">8.15. Brunnels</a></h2>
 
 <p>Brunnels ist die Zusammenfassung von Brücken und Tunnels. In Zukunft werden auf
 BBBike-gezeichneten Karten brunnels auch als solche gemalt. Zurzeit können die
@@ -747,7 +749,7 @@ beizutragen (Programm <tt class="FILENAME">miscsrc/check_crossings</tt>).&#13;</
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN304" name="AEN304">8.16. Vorfahrtstraßen</a></h2>
+<h2 class="SECT2"><a id="AEN305" name="AEN305">8.16. Vorfahrtstraßen</a></h2>
 
 <p>Diese Datensätze bestehen aus Koordinaten für einen Straßenzug, der Vorfahrt am
 mittleren Punkt besitzt. Dieser Layer kann in BBBike gezeichnet werden, wird aber nicht
@@ -758,7 +760,7 @@ weiter verwendet.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN309" name="AEN309">8.17. Autobahnen</a></h2>
+<h2 class="SECT2"><a id="AEN310" name="AEN310">8.17. Autobahnen</a></h2>
 
 <p>Autobahnen und Kraftfahrzeugstraßen können zu Informationszwecken in diesem Layer
 aufgeführt werden. Strikt gesehen müssen die Strecken nicht so gezeichnet sein, dass sie
@@ -769,7 +771,7 @@ routingfähig sind.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN314" name="AEN314">8.18. Sehenswürdigkeiten und wichtige
+<h2 class="SECT2"><a id="AEN315" name="AEN315">8.18. Sehenswürdigkeiten und wichtige
 Gebäude</a></h2>
 
 <p>Die Datensätze in dieser Datei bekommen die Kategorie <tt class="CONSTANT">SW</tt>,
@@ -818,11 +820,11 @@ werden.&#13;<br />
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN331" name="AEN331">9. Alternative
+<h1 class="SECT1"><a id="AEN332" name="AEN332">9. Alternative
 Editiermöglichkeiten</a></h1>
 
 <div class="SECT2">
-<h2 class="SECT2"><a id="AEN333" name="AEN333">9.1. Schnelles Erfassen von Daten</a></h2>
+<h2 class="SECT2"><a id="AEN334" name="AEN334">9.1. Schnelles Erfassen von Daten</a></h2>
 
 <p>Es ist auch möglich, mit der Standardinstallation von BBBike (ohne CVS) Daten zu
 erfassen, die an der Daten-Maintainer geschickt werden können. Dazu muss einfach ein
@@ -843,7 +845,7 @@ BBBike-Datenformat verwendet wird, also</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN338" name="AEN338">9.2. Direktes Editieren der Daten</a></h2>
+<h2 class="SECT2"><a id="AEN339" name="AEN339">9.2. Direktes Editieren der Daten</a></h2>
 
 <p>BBBike-Daten sind reine Textdateien und können mit einem normalen Texteditor
 bearbeitet werden. Allerdings wird dabei kein <tt class="FILENAME">datachange.log</tt>
@@ -856,7 +858,7 @@ BBBike-Datenformats siehe <a href="bbd.html" target="_top">hier</a>.&#13;</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN343" name="AEN343">10. Neue Layer auf Basis der Berliner
+<h1 class="SECT1"><a id="AEN344" name="AEN344">10. Neue Layer auf Basis der Berliner
 BBBike-Daten</a></h1>
 
 <p>TBD &#13;</p>
@@ -864,7 +866,7 @@ BBBike-Daten</a></h1>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN346" name="AEN346">11. Eine komplett neue Datenbank
+<h1 class="SECT1"><a id="AEN347" name="AEN347">11. Eine komplett neue Datenbank
 aufbauen</a></h1>
 
 <p>Dazu sollte ein neues Datenverzeichnis parallel zu <tt
