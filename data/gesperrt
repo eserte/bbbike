@@ -90,7 +90,7 @@ Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 Grünau/B179	1 22092,999 22105,888 22075,779 22012,706 21847,794 21894,881 21990,979 22092,999
 Dorfplatz	1 21051,-533 21022,-566 20873,-608 20836,-577 21011,-529 21051,-533
 B96a (Kfz-Straße)	2 20237,-581 20602,-318 20761,-171 21315,454 21563,782 21668,982 21829,1351 21862,1532 21819,1595 21541,1739
-Choriner Str.	1 10499,14067 10479,13931 10469,13866 10445,13752
+Choriner Str.	1 10502,14070 10480,13945 10466,13855 10466,13855 10445,13752
 Olivaer Platz	1 4239,10358 4172,10406 4157,10418
 Platz S (Hundekehlestr.)	1 2277,7705 2206,7637
 Platz S (Hundekehlestr.)	1 2161,7685 2222,7718 2277,7705
@@ -463,16 +463,18 @@ Greifswalder Str. -> Chodowieckistr.: Mittelstreifen mit Straßenbahn	3 12239,143
 Chodowieckistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 11992,14599 12285,14458 12338,14532
 Jablonskistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3 11955,14531 11662,14695 11642,14625
 Prenzlauer Allee -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3 11681,14759 11662,14695 11955,14531
-Hiddenseer Str. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3 11655,15253 11822,15193 11852,15281
-Prenzlauer Allee -> Hiddenseer Str.: Mittelstreifen mit Straßenbahn	3 11776,15060 11822,15193 11655,15253
+Hiddenseer Str. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3 11655,15253 11822,15193 11852,15281
+Prenzlauer Allee -> Hiddenseer Str.: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3 11798,15133 11822,15193 11655,15253
+Prenzlauer Allee -> Stubbenkammerstr.: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3 11776,15060 11798,15133 11643,15189
+Stubbenkammerstr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3 11643,15189 11798,15133 11822,15193
 Chodowieckistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3 11992,14599 11681,14759 11662,14695
 Prenzlauer Allee -> Chodowieckistr.: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3 11712,14868 11681,14759 11992,14599
 Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3 11526,14693 11610,14886 11545,14897
 Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3 11712,14868 11610,14886 11526,14693
 Angermünder Str. -> Torstr.: Mittelstreifen mit Straßenbahn	3 10703,13832 10640,13700 10746,13673
 Torstr. -> Angermünder Str.: Mittelstreifen mit Straßenbahn	3 10569,13719 10640,13700 10703,13832
-Christinenstr. -> Torstr.: Mittelstreifen mit Straßenbahn	3 10639,13865 10569,13719 10640,13700
-Torstr. -> Christinenstr.: Mittelstreifen mit Straßenbahn	3 10445,13752 10569,13719 10639,13865
+Christinenstr. -> Torstr.: Mittelstreifen mit Straßenbahn	3 10593,13765 10569,13719 10640,13700
+Torstr. -> Christinenstr.: Mittelstreifen mit Straßenbahn	3 10445,13752 10569,13719 10593,13765
 Yorckstr. -> Katzlerstr.: Linksabbiegen verboten (und unbequem)	3 8188,9610 8095,9639 8035,9437
 Katzlerstr. -> Yorckstr.: Linksabbiegen verboten (und unbequem)	3 8035,9437 8095,9639 7941,9686
 Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3 12118,12462 12006,12464 11709,12601

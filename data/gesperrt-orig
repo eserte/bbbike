@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.47 2005/08/03 21:25:17 eserte Exp $
+# $Id: gesperrt-orig,v 4.48 2005/08/03 22:04:20 eserte Exp eserte $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraﬂen etc.)
@@ -105,7 +105,7 @@ Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 Gr¸nau/B179	1 22092,999 22105,888 22075,779 22012,706 21847,794 21894,881 21990,979 22092,999
 Dorfplatz	1 21051,-533 21022,-566 20873,-608 20836,-577 21011,-529 21051,-533
 B96a (Kfz-Straﬂe)	2 20237,-581 20602,-318 20761,-171 21315,454 21563,782 21668,982 21829,1351 21862,1532 21819,1595 21541,1739
-Choriner Str.	1 10499,14067 10479,13931 10469,13866 10445,13752
+Choriner Str.	1 10502,14070 10480,13945 10466,13855 10466,13855 10445,13752
 Olivaer Platz	1 4239,10358 4172,10406 4157,10418
 Platz S (Hundekehlestr.)	1 2277,7705 2206,7637
 Platz S (Hundekehlestr.)	1 2161,7685 2222,7718 2277,7705
@@ -419,7 +419,8 @@ Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13334,13459
 Greifswalder Str.: Mittelstreifen mit Straﬂenbahn	3nocross 12188,14321 12239,14393 12285,14458 12338,14532
 #: note: Fuﬂg‰ngerfurt existiert zwischen Chodowieckistr. und Jablonskistr.:
 Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn	3nocross 11642,14625 11662,14695 11681,14759
-Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn	3nocross 11776,15060 11822,15193 11852,15281
+Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn, aber Furt in der N‰he	3nocross 11798,15133 11822,15193 11852,15281
+Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn, aber Ampel in der N‰he	3nocross 11776,15060 11798,15133 11822,15193
 Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn, hier aber Fuﬂg‰ngerfurt vorhanden	3nocross 11712,14868 11681,14759 11662,14695
 Danziger Str.: Mittelstreifen mit Straﬂenbahn	3nocross 11712,14868 11610,14886 11545,14897
 Torstr.: Mittelstreifen mit Straﬂenbahn	3nocross 10746,13673 10640,13700 10569,13719 10445,13752

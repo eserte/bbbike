@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.56 2005/08/03 21:25:19 eserte Exp $
+# $Id: qualitaet_s-orig,v 4.58 2005/08/03 22:17:21 eserte Exp $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -913,7 +913,7 @@ Liebigstr.: Kopfsteinpflaster	Q2 13905,12374 14000,12519 14067,12698
 Liselotte-Herrmann-Str.: Kopfsteinpflaster	Q2 12703,13859 12438,14054 12262,14176
 Esmarchstr.: Kopfsteinpflaster	Q2 12307,14246 12262,14176 12199,14102 12110,13965
 Chodowieckistr.: Kopfsteinpflaster	Q2 12285,14458 11992,14599 11681,14759
-Christinenstr.: Kopfsteinpflaster, teilweise OK	Q1 10569,13719 10639,13865 10686,13947 10762,14050 10830,14183
+Christinenstr.: Kopfsteinpflaster, teilweise OK	Q1 10569,13719 10593,13765 10649,13860 10695,13952 10762,14060 10830,14183
 Angermünder Str.: Kopfsteinpflaster	Q2 10640,13700 10703,13832
 (Schinkelplatz): mäßiges Kopfsteinpflaster	Q2 10008,12378 10084,12228
 Sorauer Str.: teilweise Kopfsteinpflaster	Q1 12829,10504 12689,10273
@@ -1298,7 +1298,7 @@ Rathenower Str.: Kopfsteinpflaster	Q2 6743,14008 6696,14197 6670,14302
 Albrecht-Thaer-Weg: Asphalt	Q0 3347,6460 3449,6863
 #: by: ^^^
 #: by: Susanne Jäger:
-Lottumstr.: mäßiges Kopfsteinpflaster	Q2 10479,13931 10639,13865 10703,13832 10793,13785
+Lottumstr.: mäßiges Kopfsteinpflaster	Q2 10480,13945 10649,13860 10703,13832 10793,13785
 #: by: Günter Becker:
 Stieglitzweg: Asphalt	Q0 14318,3259 14493,3143 14530,3044 14637,2868 14746,2781
 #: by: Norman Brüder:
@@ -1374,7 +1374,7 @@ Ringenwalder Str.: Asphalt	Q0 22478,16195 22406,16309 22215,16343 22090,16365 21
 Schönholzer Str.: Asphalt	Q0 9838,14640 10043,14735
 #: by: martin: vvv
 Rheinsberger Str.: Asphalt	Q0 10402,14835 10242,14765 10155,14719 10070,14678 9864,14578 9685,14495
-Wolliner Str.: Asphalt	Q0 10405,14425 10320,14608 10242,14765 10176,14896 10022,15203
+Wolliner Str.: Asphalt	Q0 10405,14425 10320,14608 10277,14691 10242,14765 10218,14812 10176,14896 10022,15203
 #: by: ^^^
 #: by: Floris Akkerman:
 Am Pichelssee: Kopfsteinpflaster	Q2 -3370,11425 -3528,11100 -3537,10903
@@ -1935,12 +1935,12 @@ Zepernicker Str.: Asphalt	Q0 18178,26668 17707,26410 17433,26288 17223,26153
 Eckermannstr.: Asphalt	Q0 20473,12212 20503,12432 20546,12815 20561,12925 20598,13219 20633,13497 20692,13984
 #: by: Joern (js): vvv
 Gaudystr.: Kopfsteinpflaster, schlechtere Qualität	Q2 10949,15674 10759,15622 10473,15549
-Greifenhagener Str.: Asphalt	Q0 11093,15771 11162,15903 11190,15950 11232,16037
+Greifenhagener Str.: Asphalt	Q0 11093,15771 11140,15859 11162,15903 11190,15950 11232,16037
 #: note: laut Bild im Tagesspiegel, kein Widerspruch von Joern vvv
 Greifenhagener Str.: Kopfsteinpflaster	Q2 11040,15398 11055,15504 11093,15771
 Greifenhagener Str.: Kopfsteinpflaster	Q2 11232,16037 11306,16194 11341,16273 11397,16405
 #: note: ^^^
-Ruppiner Str.: Asphalt	Q0 10150,14525 10070,14678 10043,14735 10011,14810
+Ruppiner Str.: Asphalt	Q0 10150,14525 10105,14608 10070,14678 10043,14735 10011,14810
 #: XXX: Helmut (hweber) sagt hierzu: ordentliche Qualität (Asphalt) (aber meint er überhaupt diese Straße? Und später meint er: "derzeitige Auszeichnung ist OK"). Die ADFC-Karte sagt hier "mäßig geeignet". 2:1 für Q2
 (Uferweg am Invalidenfriedhof): Kopfsteinpflaster mittlerer Qualität	Q2 8337,13541 7968,14190
 #: XXX: Katha hat hier "Kopfsteinpflaster, schlechte Straße" geschrieben, die ADFC-Karte sagt hier "gut geeignet". 2:1 für Q1
@@ -2548,4 +2548,9 @@ Landhausstr.: Kopfsteinpflaster	Q1 5341,8915 5343,8858
 Gasteiner Str.: grobes Kopfsteinpflaster	Q3 4935,8980 4715,8977
 Schrammstr.: grobes Kopfsteinpflaster	Q3 4960,8440 4958,8344
 Eislebender Str. (Wilmersdorf, Charlottenburg): Kopfsteinpflaster	Q2 5686,10468 5578,10529
-(Los Angeles Platz): Kopfsteinpflaster	Q1 5681,10696 5822,10609
+Los-Angeles-Platz: Kopfsteinpflaster	Q1 5681,10696 5822,10609
+Elisabethkirchstr.: neues Kopfsteinpflaster	Q1 9937,14080 9891,14194 9864,14181 9737,14126
+Greifenhagener Str.: Kopfsteinpflaster	Q1 11162,15903 11190,15950
+Greifenhagener Str.: Kopfsteinpflaster	Q1 11140,15859 11162,15903
+Gethsemanestr.: Asphalt mit Löchern und Flicken	Q2 11192,15721 11229,15810 11140,15859
+Zehdenicker Str.: Kopsteinpflaster	Q2 10593,13765 10466,13855
