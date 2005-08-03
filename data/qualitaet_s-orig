@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.55 2005/08/02 19:07:52 eserte Exp $
+# $Id: qualitaet_s-orig,v 4.56 2005/08/03 21:25:19 eserte Exp $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -644,7 +644,7 @@ Nazarethkirchstr.: einige Straßenwellen	Q0 7543,16016 7441,15909 7198,15656
 Genter Str.: mäßiges Kopfsteinpflaster	Q2 7270,15307 7162,15436 6809,15798 6681,15928
 Am Walde: Richtung Westen schlechtes Kopfsteinpflaster	Q3; 17775,7874 17678,7850
 Oskarstr.: Richtung Süden schlechtes Kopfsteinpflaster	Q3; 17762,7931 17775,7874
-Prager Platz: gutes Kopfsteinpflaster	Q1 5661,9630 5657,9600 5630,9592 5575,9623
+Prager Platz: gutes Kopfsteinpflaster	Q1 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
 Normannenstr.: Kopfsteinpflaster	Q2 16156,12286 16270,12261
 Rüdigerstr. (Lichtenberg): Kopfsteinpflaster	Q2 17487,12244 17010,12313 16810,12342
 Barbarossastr.: Kopfsteinpflaster	Q2 7128,9512 7010,9535
@@ -678,7 +678,7 @@ Borsigwalder Weg: mäßig geeignet	Q2 2852,19546 3028,19771
 Miraustr.: mäßig geeignet	Q2 3820,19688 4014,19433 4170,19079 4195,19043
 Schaperstr.: Asphalt	Q0 5706,10216 5597,10299 5471,10331
 Bleibtreustr.: Kopfsteinpflaster	Q2 4728,11195 4722,11030 4701,10837 4685,10689
-Wilhelmsaue: Kopfsteinpflaster	Q2 5181,8731 5346,8720 5510,8709
+Wilhelmsaue: Kopfsteinpflaster	Q2 5181,8731 5226,8729 5346,8720 5510,8709
 Werderstr.: Kopfsteinpflaster	Q2 8955,5549 8974,5708
 Werderstr.: asphaltiert	Q0 8974,5708 8988,5821
 Werderstr.: Kopfsteinpflaster	Q2 8988,5821 8990,5950
@@ -1039,7 +1039,7 @@ Krughorn - Volkspark Glienicke: teilweise renaturierter Weg ohne Asphalt	Q1 -100
 #: XXX Oder doch Q1?
 Uferpromenade: fester Waldweg	Q2 -8400,2156 -8328,2181 -8262,2178 -8141,2211 -8085,2252 -7833,2277 -7562,2431 -7420,2563 -7318,2567 -7216,2622 -7180,2657 -7161,2692 -7129,2786 -6975,3012 -6912,3080 -6792,3196 -6766,3209 -6667,3312 -6510,3404 -6439,3418 -6375,3400 -6260,3398 -6215,3384 -5919,3092 -5820,3035 -5745,2990 -5712,2946 -5653,2807 -5722,2714
 Rosmarienstr.: gutes Kopfsteinpflaster	Q1 9359,12252 9487,12263
-Weimarische Str.: Kopfsteinpflaster	Q2 5065,8339 5066,7998 5068,7965
+Weimarische Str.: Kopfsteinpflaster	Q2 5064,8340 5066,8140 5066,7998 5068,7965
 (Gleditschstr. - Elßholzstr.): kleinteiliges Kopfsteinpflaster	Q1 7128,9512 7158,9509 7192,9508
 Reuchlinstr.: mäßiges Kopfsteinpflaster	Q2 4989,13462 4964,13319 4940,13188
 Türkenstr.: Kopfsteinpflaster	Q2 6459,16318 6645,16523
@@ -1542,7 +1542,7 @@ Nordmannzeile: sehr gute Qualität	Q0 6773,7116 6807,7262
 #: by: Mark Einig:
 Bornemannstr.: Asphalt	Q0 8187,15965 8003,16098
 #: by: Peter Radeck:
-Holsteinische Str.: Asphalt	Q0 5070,9720 5065,9407 5046,8978
+Holsteinische Str.: Asphalt	Q0 5070,9720 5066,9645 5065,9407 5046,8940
 #: by: Winfried Gravenstein: vvv
 Eisnerstr.: Asphalt	Q0 9500,-115 9693,-621
 # Korrektur eines anonymen Eintrags:
@@ -1598,7 +1598,7 @@ Dickhardtstr.: Beton	Q1 5533,6753 5604,6709 5778,6754 5828,6839 5824,6974 5817,7
 Wetzlarer Str.: Asphalt	Q0 4482,6866 4599,6933 4678,6996 4750,7053 4787,7052
 # deckt sich auch mit dem ADFC-Eintrag:
 Laubenheimer Str.: asphaltiert	Q0 4317,7069 4374,7016 4437,6953 4482,6866 4503,6822 4528,6711
-Koblenzer Str.: Kopfsteinpflaster	Q2 4874,8347 4873,7994 4873,7967
+Koblenzer Str.: Kopfsteinpflaster	Q2 4874,8347 4874,8140 4873,7994 4873,7967
 #: by: ^^^
 #: by: Stefan Wietstock:
 (Livländische Str. - Schoelerpark): Steinpflasterweg	Q1 5170,8449 5223,8611
@@ -1746,6 +1746,7 @@ Hubertusstr. (Steglitz): Asphalt	Q0 5240,5922 5099,5994
 #: by: WIll Gibson:
 Hessenallee: Asphalt	Q0 657,11650 664,11678 788,11744 906,11870
 #: by: Andreas Mühlhausen: vvv
+Luckenwalder Str.: Asphalt	Q0 8634,10426 8393,10505
 (Am Schinkelplatz): asphaltiert	Q0 9987,12421 10008,12378 9926,12368
 Miquelstr.: Kopfsteinpflaster	Q2 3077,6375 3020,6450 2875,6648 2854,6675 2714,6857
 Bernadottestr.	Q2 3020,6450 2935,6448 2875,6485 2793,6593 2711,6698
@@ -1975,7 +1976,7 @@ Zwinglistr.: Asphalt	Q0 5212,13211 5358,13207 5699,13184
 Schlieperstr.: Kopfsteinpflaster	Q2 1620,19854 1883,19913 2237,19992 2450,20028
 #: by: Ulfert (030):
 #: XXX "mit ein paar Macken"
-Kulmbacher Str.: Asphalt	Q1 5799,9939 5831,10170
+Kulmbacher Str.: Asphalt	Q1 5799,9939 5853,10168
 #: by: Jannik (Pf.):
 Nordhauser Str.: Asphalt	Q0 3542,13063 3719,13075 4341,13073
 #: by: Kerstin Pantos: vvv
@@ -2541,4 +2542,10 @@ Hüninger Str.: Kopsteipflaster	Q2 1987,3987 2034,4156 2045,4193 2079,4299 2148,4
 Mörchinger Str.: Kopsteinpflaster	Q1 1442,3104 1347,3281 1458,3342
 Mörchinger Str.: Verbundsteine	Q0 1873,3564 2058,3662
 Am Mühlenberg: Gehwegplatten	Q0 6096,8600 6135,8674 6133,8709
-Kalkreuthstr.: Asphalt mit Löchern	Q1 6636,10485 6628,10318 6626,10143
+Kalckreuthstr.: Asphalt mit Löchern	Q1 6636,10485 6628,10318 6626,10143
+Landhausstr.: Kopfsteinpflaster	Q2 5321,9583 5342,9559 5342,9374
+Landhausstr.: Kopfsteinpflaster	Q1 5341,8915 5343,8858
+Gasteiner Str.: grobes Kopfsteinpflaster	Q3 4935,8980 4715,8977
+Schrammstr.: grobes Kopfsteinpflaster	Q3 4960,8440 4958,8344
+Eislebender Str. (Wilmersdorf, Charlottenburg): Kopfsteinpflaster	Q2 5686,10468 5578,10529
+(Los Angeles Platz): Kopfsteinpflaster	Q1 5681,10696 5822,10609

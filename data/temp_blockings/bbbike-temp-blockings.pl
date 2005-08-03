@@ -218,12 +218,12 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Hermannstraße, zwischen Emserstraße und Thomasstraße gesperrt. Grund: Straßenfest. Dauer: 11.10.2003, 06.00 Uhr bis 12.10.2003, 24.00 Uhr',
        type  => 'handicap',
      },
-     { from  => 1121117105, # 2005-07-11 23:25
-       until => 1130799600, # 2005-11-01 00:00
-       text  => 'Schlichtallee (Lichtenberg) Richtungen Süden zwischen Hauptstr. und Lückstr. Baustelle, Fahrtrichtung gesperrt (bis 31.10.2005)',
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Schlichtallee zwischen Hauptstraße und Lückstraße wegen Bauarbeiten gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 16032,10842 15751,10582 15629,10481
+userdel	q4; 15629,10481 15751,10582 16032,10842
 EOF
      },
      { from  => 1070341200, # 2003-12-02 06:00
@@ -1567,9 +1567,9 @@ EOF
 userdel	1 9028,12307 8804,12280
 EOF
      },
-     { from  => 1120518392, # 2005-07-05 01:06
-       until => 1120594288, # XXX 1125525600 2005-09-01 00:00
-       text  => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt bis 31.08.2005 ',
+     { from  => 1123100311, # 2005-08-03 22:18
+       until => 1127167200, # 2005-09-20 00:00
+       text  => 'Friedrichshagener Chaussee in beiden Richtungen zwischen Fürstenwalder Damm und Dahlwitzer Landstraße beidseitig Brückenarbeiten, gesperrt bis 19.09.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 25585,6050 25579,5980
@@ -1927,8 +1927,8 @@ userdel	q4 34443,1951 34250,2546
 EOF
      },
      { from  => 1117317600, # 2005-05-29 00:00
-       until => 1128117600, # 2005-10-01 00:00
-       text  => 'L 86; (Lehniner Str.); OD Damsdorf Straßenbau Vollsperrung 30.05.2005-30.09.2005 ',
+       until => 1133391600, # 2005-12-01 00:00
+       text  => 'L 86; (Lehniner Str.); OD Damsdorf Kanal- und Straßenbau Vollsperrung 30.05.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -32682,-7140 -32645,-6220
@@ -2167,16 +2167,16 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
 EOF
      },
      { from  => 1119909600, # 2005-06-28 00:00
-       until => 1123365600, # 2005-08-07 00:00
-       text  => 'L 793; (Schönhagen-Ludwigsfelde); zw. Abzw. Gröben und Siethen Straßenbauarbeiten Vollsperrung 29.06.2005-06.08.2005 ',
+       until => 1124575200, # 2005-08-21 00:00
+       text  => 'L 793; (Schönhagen-Ludwigsfelde); zw. Abzw. Gröben und Siethen Straßenbauarbeiten Vollsperrung 29.06.2005-20.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -2542,-13926 -3801,-14252
 EOF
      },
      { from  => 1119909600, # 2005-06-28 00:00
-       until => 1123365600, # 2005-08-07 00:00
-       text  => 'L 793; (Schönhagen-Ludwigsfelde); zw. OD Jütchendorf und Abzw. Gröben Straßenbauarbeiten Vollsperrung 29.06.2005-06.08.2005 ',
+       until => 1124575200, # 2005-08-21 00:00
+       text  => 'L 793; (Schönhagen-Ludwigsfelde); zw. OD Jütchendorf und Abzw. Gröben Straßenbauarbeiten Vollsperrung 29.06.2005-20.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -3694,-14508 -4077,-14595
@@ -2462,6 +2462,23 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 30455,10061 30500,10571
+EOF
+     },
+     { from  => 1124575200, # 2005-08-21 00:00
+       until => 1124834400, # 2005-08-24 00:00
+       text  => 'B 112; (OU Neuzelle-OU Guben); Ber. Steinsdorf Vorwerk Bau Oder-Lausitz-Trasse Vollsperrung 22.08.2005-23.08.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 98777,-43381 98337,-41604
+EOF
+     },
+     { from  => 1123103274, # 2005-08-03 23:07
+       until => 1125525600, # 2005-09-01 00:00
+       text  => 'B96, Ortsdurchfahrt Altlüdersdorf gesperrt bis 31.08.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -5146,69565 -5209,70040
+userdel	q4 -5209,70040 -4978,71109
 EOF
      },
     );

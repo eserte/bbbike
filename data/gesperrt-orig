@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.46 2005/08/02 19:07:50 eserte Exp $
+# $Id: gesperrt-orig,v 4.47 2005/08/03 21:25:17 eserte Exp $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraßen etc.)
@@ -670,3 +670,5 @@ Sterzinger Str.	1 6096,8600 6128,8536
 Bozener Str.	1 5904,8906 5995,8926 6049,8916
 Bozener Str.	1 5995,8926 5995,9098
 Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6536,10520 6636,10485 6753,10446
+Bundesallee: Queren nicht möglich	3nocross 5360,8197 5359,8140 5357,8005
+(Los-Angeles-Platz)	1s 5681,10696 5822,10609

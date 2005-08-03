@@ -3,10 +3,10 @@ $#temp_blocking = 33;
 push @temp_blocking,
 (
        {
-         'until' => 1130799600,
-         'text' => 'Schlichtallee (Lichtenberg) Richtungen Süden zwischen Hauptstr. und Lückstr. Baustelle, Fahrtrichtung gesperrt (bis 31.10.2005)',
-         'from' => 1121117105,
-         'data' => 'userdel	q4; 16032,10842 15751,10582 15629,10481
+         'until' => undef,
+         'text' => 'Schlichtallee zwischen Hauptstraße und Lückstraße wegen Bauarbeiten gesperrt',
+         'from' => undef,
+         'data' => 'userdel	q4; 15629,10481 15751,10582 16032,10842
 ',
          'type' => 'handicap'
        },
@@ -233,7 +233,14 @@ userdel	q4 -18080,-12637 -17374,-13449
        },
        undef,
        undef,
-       undef,
+       {
+         'until' => 1127167200,
+         'text' => 'Friedrichshagener Chaussee in beiden Richtungen zwischen Fürstenwalder Damm und Dahlwitzer Landstraße beidseitig Brückenarbeiten, gesperrt bis 19.09.2005 ',
+         'from' => 1123100311,
+         'data' => 'userdel	q4 25585,6050 25579,5980
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -363,8 +370,8 @@ userdel	q4 1916,-1090 1709,-953
        undef,
        undef,
        {
-         'until' => 1128117600,
-         'text' => 'L 86; (Lehniner Str.); OD Damsdorf Straßenbau Vollsperrung 30.05.2005-30.09.2005 ',
+         'until' => 1133391600,
+         'text' => 'L 86; (Lehniner Str.); OD Damsdorf Kanal- und Straßenbau Vollsperrung 30.05.2005-30.11.2005 ',
          'from' => 1117317600,
          'data' => 'userdel	q4 -32682,-7140 -32645,-6220
 ',
@@ -476,16 +483,16 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
          'type' => 'handicap'
        },
        {
-         'until' => 1123365600,
-         'text' => 'L 793; (Schönhagen-Ludwigsfelde); zw. Abzw. Gröben und Siethen Straßenbauarbeiten Vollsperrung 29.06.2005-06.08.2005 ',
+         'until' => 1124575200,
+         'text' => 'L 793; (Schönhagen-Ludwigsfelde); zw. Abzw. Gröben und Siethen Straßenbauarbeiten Vollsperrung 29.06.2005-20.08.2005 ',
          'from' => 1119909600,
          'data' => 'userdel	2 -2542,-13926 -3801,-14252
 ',
          'type' => 'gesperrt'
        },
        {
-         'until' => 1123365600,
-         'text' => 'L 793; (Schönhagen-Ludwigsfelde); zw. OD Jütchendorf und Abzw. Gröben Straßenbauarbeiten Vollsperrung 29.06.2005-06.08.2005 ',
+         'until' => 1124575200,
+         'text' => 'L 793; (Schönhagen-Ludwigsfelde); zw. OD Jütchendorf und Abzw. Gröben Straßenbauarbeiten Vollsperrung 29.06.2005-20.08.2005 ',
          'from' => 1119909600,
          'data' => 'userdel	2 -3694,-14508 -4077,-14595
 userdel	2 -4504,-14978 -4077,-14595
@@ -538,14 +545,7 @@ userdel	2 -4504,-14978 -4077,-14595
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1123020000,
-         'text' => 'B 158; (Freienwalder Chaussee); OD Blumberg, zw. Kietz u. Elisenauer Ch. Deckenerneuerung Vollsperrung 28.07.2005-02.08.2005 ',
-         'from' => 1122415200,
-         'data' => 'userdel	q4 24735,22556 24951,22681
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1125266400,
          'text' => 'L 23; (Storkow-Grünheide); OD Spreenhagen, Brücke über Oder-Spree-Kanal Sanierung Brücke Vollsperrung 11.07.2005-28.08.2005 ',
@@ -653,6 +653,25 @@ userdel	q4 25412,-29762 25541,-29875
          'data' => 'userdel	2 23758,-103850 22424,-103934
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       {
+         'until' => 1124834400,
+         'text' => 'B 112; (OU Neuzelle-OU Guben); Ber. Steinsdorf Vorwerk Bau Oder-Lausitz-Trasse Vollsperrung 22.08.2005-23.08.2005 ',
+         'from' => 1124575200,
+         'data' => 'userdel	2 98777,-43381 98337,-41604
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1125525600,
+         'text' => 'B96, Ortsdurchfahrt Altlüdersdorf gesperrt bis 31.08.2005 ',
+         'from' => 1123103274,
+         'data' => 'userdel	q4 -5146,69565 -5209,70040
+userdel	q4 -5209,70040 -4978,71109
+',
+         'type' => 'handicap'
        }
      
 );

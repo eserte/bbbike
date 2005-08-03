@@ -25,7 +25,7 @@ Ostseeplatz	Pl 12743,15811
 Prerower Platz	Pl 17159,17631
 Frankfurter Tor	Pl 13792,12292
 Helene-Weigel-Platz	Pl 19628,13517
-Hohenzollernplatz (Wilmersdorf)	Pl 5162,9777
+Hohenzollernplatz (Wilmersdorf)	Pl 5070,9720 5162,9777 5223,9810 5253,9754 5174,9708 5066,9645 5070,9720
 Innsbrucker Platz	Pl 6409,8026
 John-F.-Kennedy-Platz	Pl 6470,8681
 Leuthener Platz	Pl 7716,8356
@@ -72,7 +72,6 @@ Viktoriaplatz	Pl 3489,4115
 Weddingplatz	Pl 7929,15006
 Münsterlandplatz	Pl 16573,11022
 Nürnberger Platz	Pl 5706,10216
-Los-Angeles-Platz	Pl 5636,10626
 Magdeburger Platz	Pl 7536,10856
 Matthäikirchplatz	Pl 7969,11443
 Wartburgplatz	Pl 6467,8930
@@ -213,3 +212,9 @@ Mettmannplatz	Pl 7467,14633
 Funkturm	Pl 2016,11034
 Olympiastadion	Pl -460,11951
 #: section ^^^
+Habermannplatz	Pl 4715,8977
+Birger-Forell-Platz	Pl 4788,8318
+Brabanter Platz	Pl 4457,8345
+# XXX Leider kann der gleiche Platz (noch) nicht gleichzeitig in strassen und
+# plaetze vorkommen:
+#Los-Angeles-Platz	Pl 5681,10696 5822,10609 5780,10542 5636,10626
