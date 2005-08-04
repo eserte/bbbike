@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.58 2005/08/03 22:17:21 eserte Exp $
+# $Id: qualitaet_s-orig,v 4.58 2005/08/03 22:17:21 eserte Exp eserte $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -1171,6 +1171,7 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 #: by: kalkreuth
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 #: by: anonymous vvv
+Seelbuschring: Betonplatten, OK	Q1 8242,4648 8432,4712 8467,4590
 Tschudistr.: Asphalt	Q0 23584,13661 23705,13636 23817,13613 23936,13589 24119,13556
 Rellstabweg: Verbundsteinpflaster	Q1 -6482,12960 -6480,13028 -6146,13118 -5810,13208
 Kormoranweg: Asphalt	Q0 13997,3290 14034,3390 14128,3620 14176,3754 14226,3864 14281,3901
@@ -2173,7 +2174,7 @@ Gaillardstr.: Kopfsteinpflaster	Q2 9825,17797 9828,17659 9971,17456 9966,17355
 #: by: J.-A. Koven:
 Schwarzschildstr.: sehr guter Asphalt	Q0 18725,2656 18712,2756 18690,2943
 #: by: Ingrid Peters:
-Fronhoferstr.: gutes Verbundsteinpflaster	Q1 4515,4966 4783,5223
+Fronhoferstr.: gutes Verbundsteinpflaster	Q1 4515,4966 4656,5101 4783,5223
 #: by: Waltraud Engfer:
 Kabelpfuhlweg: schlechtes Kopfsteinpflaster	Q3 11232,4327 11271,4021
 #: by: Philipp (divine...):
@@ -2514,6 +2515,18 @@ Geßlerstr.: Asphalt	Q0 8003,8842 7792,8838
 #: XXX: ein anderer Eintrag (von Christina v. Nicolai) hat hier Q2 vergeben:
 Brunhildstr.: grobes Kopfsteinpflaster	Q3 7790,8913 7707,8915 7615,8927
 #: by: ^^^
+#: by: werner katsch:
+Am Bäkequell: gutes Kopfsteinpflaster	Q1 4593,5235 4656,5101
+#: by: holger (hd, sav):
+Caroline-Michaelis-Str.: Asphalt	Q0 8810,14373 9148,13948
+#: by: Bertil: vvv
+#: note: auch laut ADFC-Karte gut geeignet:
+Machonstr.: gute Qualität	Q0 9025,4871 9044,4667 9067,4495 9080,4371
+#: by: ^^^
+#: by: Saatz:
+Jungfernstieg: schlechtes Kopfsteinpflaster	Q3 5564,3032 5503,2922 5516,2873 5226,2390
+#: by: Jürgen Solms:
+Traunsteiner Str.: Asphalt	Q0 6550,9537 6553,9600 6458,9655
 (Bad Kissingen): wassergebunde Decke	Q1 3639,7590 3652,7795
 (Kolonieweg a. d. Forkenbeckstr.): wassergebunde Decke	Q1 3225,8214 3230,8194 3635,8099 3709,8082 3753,8073 3771,8094
 Claire-Waldoff-Weg: wassergebunde Decke	Q1 3635,8099 3596,7550

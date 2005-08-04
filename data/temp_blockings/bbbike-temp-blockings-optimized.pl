@@ -564,14 +564,7 @@ userdel	q4 25412,-29762 25541,-29875
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1123106400,
-         'text' => 'B 96; OD Rangsdorf, Kno. Kienitzer Str. Straßenverbreiterung Vollsperrung 12.07.2005-03.08.2005 ',
-         'from' => 1121032800,
-         'data' => '	q4 14123,-11199 14327,-11767
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1128117600,
          'text' => 'K 6301; (Bötzow-Wansdorf-Pausin); OD Wansdorf Kanal- und Straßenbau Vollsperrung 04.07.2005-30.09.2005 ',
@@ -672,6 +665,14 @@ userdel	q4 25412,-29762 25541,-29875
 userdel	q4 -5209,70040 -4978,71109
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1128117600,
+         'text' => 'K 6718; von OL Schernsdorf u. Kupferhammer in 3 Abschn. Straßenbauarbeiten Vollsperrung 03.08.2005-30.09.2005 ',
+         'from' => 1122933600,
+         'data' => 'userdel	2 83059,-23016 81501,-23378
+',
+         'type' => 'gesperrt'
        }
      
 );

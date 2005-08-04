@@ -2481,4 +2481,12 @@ userdel	q4 -5146,69565 -5209,70040
 userdel	q4 -5209,70040 -4978,71109
 EOF
      },
+     { from  => 1122933600, # 2005-08-02 00:00
+       until => 1128117600, # 2005-10-01 00:00
+       text  => 'K 6718; von OL Schernsdorf u. Kupferhammer in 3 Abschn. Straßenbauarbeiten Vollsperrung 03.08.2005-30.09.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 83059,-23016 81501,-23378
+EOF
+     },
     );
