@@ -1340,8 +1340,8 @@ EOF
        text  => 'Weihnachtsmarkt am Opernpalais, bis 25.12.2004',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9890,12161 9853,12402
-userdel	2 9803,12243 9782,12393
+userdel	2 9890,12161 9875,12254 9853,12402
+userdel	2 9801,12245 9782,12393
 EOF
      },
      { from  => 1102980716, # 2004-12-14 00:31
@@ -2071,7 +2071,7 @@ EOF
        text  => 'Französische Str. ab Markgrafenstr., Werderscher Markt, Breite Str. gesperrt. Dauer: bis 29.06.2005, 20:00 Uhr. (Beachvolleyball) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9636,12126 9812,12145
+userdel	2 9636,12126 9756,12139 9812,12145
 userdel	2 10084,12228 9959,12180
 userdel	2 9812,12145 9890,12161
 userdel	2 9890,12161 9959,12180
@@ -2487,6 +2487,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 83059,-23016 81501,-23378
+EOF
+     },
+     { from  => 1123365600, # 2005-08-07 00:00
+       until => 1134774000, # 2005-12-17 00:00
+       text  => 'K 6917; (B246 Borkheide-Kanin); OD Borkwalde Straßenbauarbeiten Vollsperrung 08.08.2005-16.12.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -26809,-18383 -27757,-17707
 EOF
      },
     );

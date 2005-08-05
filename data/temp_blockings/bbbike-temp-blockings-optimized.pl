@@ -673,6 +673,14 @@ userdel	q4 -5209,70040 -4978,71109
          'data' => 'userdel	2 83059,-23016 81501,-23378
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1134774000,
+         'text' => 'K 6917; (B246 Borkheide-Kanin); OD Borkwalde Straßenbauarbeiten Vollsperrung 08.08.2005-16.12.2005 ',
+         'from' => 1123365600,
+         'data' => 'userdel	q4 -26809,-18383 -27757,-17707
+',
+         'type' => 'handicap'
        }
      
 );

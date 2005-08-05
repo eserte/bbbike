@@ -122,7 +122,7 @@ An der Schillingbrücke	1 12056,11390 12055,11331
 An der Schillingbrücke	1 12026,11348 12056,11390
 Schulze-Delitzsch-Platz	1 11155,11750 11048,11745 11022,11782
 Schulze-Delitzsch-Platz	1 11022,11782 11155,11750
-Weydemeyerstr.	1 11905,13069 11910,13055 12062,12986 12056,12907
+Weydemeyerstr.	1 11905,13069 11910,13055 12062,12986 12052,12888
 Gipsstr.	1 10331,13397 10199,13446 10026,13521
 Dorotheenstr.	1 9867,12651 9723,12594 9574,12578 9454,12558 9323,12528
 Georgenstr.	1 9437,12662 9562,12679 9657,12694 9754,12775
@@ -529,19 +529,25 @@ Hittorfstr. -> Thielallee: nicht passierbarer Mittelstreifens	3 2516,4936 2587,4
 Mollstr. -> Mendelssohnstr.: Straßenbahntrasse	3 11275,13407 11300,13390 11322,13421
 Mendelssohnstr. -> Mollstr.: Straßenbahntrasse	3 11322,13421 11300,13390 11456,13286
 Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11613,13570 11654,13541 11723,13630
-Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Straßenbahntrasse	3 11547,13403 11654,13541 11613,13570
+Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Straßenbahntrasse	3 11559,13420 11654,13541 11613,13570
+Barnimstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11605,13387 11559,13420 11547,13403
+Otto-Braun-Str. -> Barnimstr.: Straßenbahntrasse	3 11654,13541 11559,13420 11605,13387
 Otto-Braun-Str. -> Mendelssohnstr.: Straßenbahntrasse	3 11477,13313 11547,13403 11511,13429
-Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11511,13429 11547,13403 11654,13541
+Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11511,13429 11547,13403 11559,13420
 Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11444,13335 11477,13313 11547,13403
 Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Straßenbahntrasse	3 11456,13286 11477,13313 11444,13335
-Str.nbahntrasse -> Otto-Braun-Str.: Mittelstreifen	3 11191,13080 11283,13021 11378,13166
+Otto-Braun-Str. -> Berolinastr.: Mittelstreifen	3 11378,13166 11307,13057 11430,12984
+Berolinastr. -> Otto-Braun-Str.: Mittelstreifen	3 11430,12984 11307,13057 11283,13021
+Str.nbahntrasse -> Otto-Braun-Str.: Mittelstreifen	3 11191,13080 11283,13021 11307,13057
 Otto-Braun-Str. -> Str.nbahntrasse: Mittelstreifen	3 11236,12946 11283,13021 11191,13080
 Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Mittelstreifen	3 11444,13335 11477,13313 11547,13403
 Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Mittelstreifen	3 11456,13286 11477,13313 11444,13335
 Otto-Braun-Str. -> Mendelssohnstr.: Mittelstreifen	3 11477,13313 11547,13403 11511,13429
-Mendelssohnstr. -> Otto-Braun-Str.: Mittelstreifen	3 11511,13429 11547,13403 11654,13541
+Mendelssohnstr. -> Otto-Braun-Str.: Mittelstreifen	3 11511,13429 11547,13403 11559,13420
+Barnimstr. -> Otto-Braun-Str.: Mittelstreifen	3 11605,13387 11559,13420 11547,13403
+Otto-Braun-Str. -> Barnimstr.: Mittelstreifen	3 11654,13541 11559,13420 11605,13387
 Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Mittelstreifen	3 11613,13570 11654,13541 11723,13630
-Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Mittelstreifen	3 11547,13403 11654,13541 11613,13570
+Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Mittelstreifen	3 11559,13420 11654,13541 11613,13570
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9008,12485 9112,12499 9323,12528
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9323,12528 9112,12499 9008,12485
 Mittelstr. -> Mittelstr.: An der US-Botschaft	3 9335,12442 9126,12413 9018,12400
