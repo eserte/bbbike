@@ -352,6 +352,8 @@ Bundesallee -> Mainauer Str.: Bundesplatztunnel	3 5359,7661 5358,7681 5286,7681
 Mainauer Str. -> Bundesallee: Bundesplatztunnel	3 5286,7681 5358,7681 5358,7711
 Bundesallee -> Sieglindestr.: Bundesplatztunnel	3 5356,7862 5358,7711 5458,7866
 Sieglindestr. -> Bundesallee: Bundesplatztunnel	3 5458,7866 5358,7711 5358,7681
+Galanderellianlage -> Schillstr.: unbequem passierbarer Mittelstreifen	3 6920,11064 6882,11061 6873,11011
+Klingelhöferstr. -> Galanderellianlage: unbequem passierbarer Mittelstreifen	3 6880,11110 6882,11061 6920,11064
 Lützowpl. -> Lützowufer: unbequem passierbarer Mittelstreifen	3 7002,11034 6873,11011 6732,11106
 Lützowpl. -> Schillstr.: unbequem passierbarer Mittelstreifen	3 7002,11034 6873,11011 6824,10904
 Schillstr. -> Lützowpl.: unbequem passierbarer Mittelstreifen	3 6882,11061 6873,11011 7002,11034
@@ -734,3 +736,7 @@ Büschingstr. -> Mollstr.: Strassenbahn	3 11879,13133 11839,13083 11867,13076
 (Berolinastr.): Tor zum Spielplatz	0:10:-153 11858,13056
 (Berolinastr.): Tor zum Spielplatz	0:10:-242 11781,13019
 Hedwigskirchgasse: wg. Bauarbeiten gesperrt	2::inwork 9743,12239 9756,12139
+(Parkweg Am Karlsbad): tragen (ca. 10 Stufen)	0:40:-140 8190,10960
+Matthäikirchplatz	1 7934,11264 7956,11340 7973,11354
+Matthäikirchplatz	1 7973,11354 7984,11334 7962,11257
+Galanderellianlage: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30 6920,11064 6882,11061
