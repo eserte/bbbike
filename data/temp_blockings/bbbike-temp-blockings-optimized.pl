@@ -612,14 +612,7 @@ userdel	q4 25412,-29762 25541,-29875
        },
        undef,
        undef,
-       {
-         'until' => 1123279200,
-         'text' => 'Rudower Str. (Treptow) Richtung stadteinwärts zwischen Köpenicker Str. und Wegedornstr. Baustelle, Fahrtrichtung gesperrt, Einbahnstraße in Richtung Köpenicker Str. (bis 05.08.2005)',
-         'from' => 1121892756,
-         'data' => 'userdel	q4; 19771,1793 19455,1870 19188,1980 18900,2033
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1123365600,
          'text' => 'B 1; (Küstriner Str.); OD Seelow Deckenerneuerung Vollsperrung 28.07.2005-06.08.2005 ',
