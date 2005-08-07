@@ -1925,7 +1925,7 @@ Abbestr.: Kopfsteinpflaster	Q2 4693,12068 4755,12219 4829,12357
 #: by: Michael Meyer:
 Kuglerstr.: schlechtes Kopfsteinpflaster	Q3 11618,16183 11341,16273 11253,16296 11018,16358
 #: by: Holger (hgruetjen):
-Justus-von-Liebig-Str.: Asphalt	Q0 19495,2535 19878,2899
+Justus-von-Liebig-Str.: Asphalt	Q0 19495,2535 19670,2701 19878,2899
 #: by: Reiner Wild:
 Braillestr.: Asphalt	Q0 4512,5199 4460,5274 4433,5315
 #: by: maja wegener:
@@ -2535,7 +2535,7 @@ Straße 56 (Blankenburg): Asphalt	Q0 14589,20988 14642,21162 14690,21304 14753,21
 #: by: Hubigirl:
 Hausvaterweg: Asphalt	Q0 19817,18232 19985,18781
 #: by: sven draband: vvv
-Büschingstr.: Asphalt mit Löchern	Q1 12085,13377 12017,13299 11903,13161 11879,13133 11839,13083
+Büschingstr.: Asphalt mit Löchern	Q1 11839,13083 11879,13133 11903,13161 12017,13299 12085,13377
 Berolinastr.: Betonplatten	Q0 11635,12745 11667,12811 11706,12888
 #: by: ^^^
 #: by: Ramona G.:
@@ -2583,3 +2583,42 @@ Zehdenicker Str.: Kopsteinpflaster	Q2 10593,13765 10466,13855
 Bissingzeile: Kopfsteinpflaster	Q2 8135,10784 8096,10670
 Reichpietschufer: Kleinpflaster	Q2 7595,11086 7575,11076
 Galanderellianlage: Kleinpflaster	Q2 7575,11076 7251,11181 7218,11181 7140,11156 7142,11145 6920,11064 6882,11061
+Berolinastr.: Beton	Q0 11566,13225 11451,13022 11430,12984 11407,12945 11491,12902 11557,12869
+Berolinastr.: Beton	Q2 11614,12936 11706,12888 11754,12863 11776,12908
+Berolinastr.: Beton	Q0 11407,12945 11491,12902 11557,12869
+Berolinastr.: Beton	Q0 11491,12902 11531,12977
+Berolinastr.: Beton	Q1 11706,12888 11667,12811 11635,12745
+Mollstr.: Beton	Q0 11721,13142 11681,13071 11614,12936 11573,12860
+Weydemeyerstr.: Beton	Q1 12124,12852 12052,12888 11979,12917 11937,12826 11918,12789 11905,12765
+(Weydemeyerstr.): Gehwegplatten	Q0 11905,12765 11873,12778 11851,12729
+(Weydemeyerstr.): Beton	Q2 11978,12673 11987,12763 11918,12789
+Weydemeyerstr.: Beton	Q2 11667,12811 11851,12729 11978,12673 12028,12668 12073,12665
+(Karl-Marx-Allee): Gehwegplatten	Q0 11557,12869 11573,12860 11667,12811
+(Karl-Marx-Allee - Berolinastr.): Gehwegplatten	Q0 11407,12945 11315,12904
+(Karl-Marx-Allee - Berolinastr.): Gehwegplatten	Q0 11573,12860 11540,12795
+(Berolinastr.): Gehwegplatten	Q0 11776,12908 11821,12885 11937,12826
+(Berlolinastr.): Gehwegplatten	Q0 11776,12908 11821,12885 11840,12928 11863,12975 11979,12917
+(Berolinastr.): Gehwegplatten	Q0 11863,12975 11828,12995 11781,13019 11681,13071
+(Berolinastr. - Mollstr.): Gehwegplatten	Q0 11828,12995 11858,13056 11867,13076
+(Berolinastr. - Mollstr.): Beton / Verbundsteine	Q1 11570,12960 11681,13161
+(Lichtenberger Str.): Verbundsteine	Q1 12052,12888 12028,12668
+Barnimstr.: Beton	Q0 11559,13420 11605,13387 11654,13351 11793,13247
+Barnimstr.: Beton	Q0 11879,13133 11754,13199 11596,13279
+(Erschließungstr./Parkplatz): Beton	Q0 11605,13387 11538,13309 11596,13279
+(Erschließungsstr.): Beton	Q0 11605,13387 11660,13457
+(Verbindungsweg): Kopfsteinpflaster	Q1 11660,13457 11711,13416
+Weinstr.: Asphalt stark verwurzelt	Q3 11793,13247 11909,13387
+Weinstr.: Asphalt	Q0 11909,13387 11953,13437
+Weinstr.: Gehwegplatten	Q0 11953,13437 11982,13471
+(Fußweg Büschingstr. - Mollstr.): Gehwegplatten	Q0 11879,13133 11905,13069
+(Friedenstr.): Beton	Q0 12131,13333 12138,13294 12097,13277 12069,13255
+Höchste Str.: Asphalt	Q0 11778,13498 11909,13387 12017,13299 12069,13255
+(Parkplatz): Beton	Q0 12069,13255 12082,13221 12080,13182 12058,13143 12032,13126 11994,13117 11955,13120 11903,13161
+Georgenkirchstr.: Asphalt	Q0 11842,13576 11778,13498 11711,13416 11654,13351 11596,13279
+(Mollstr. - Barnimstr.): Verbundsteine	Q0 11721,13142 11754,13199
+(Volkspark Friedrichshain, parallel zur Friedenstr.): Gehwegplatten und Kopfsteinpflaster	Q0 12386,13085 12387,13107 12344,13157 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11772,13624
+Hinter der Katholischen Kirche: Kopfsteinpflaster	Q1 9801,12245 9782,12393
+Behrenstr.: Asphalt	Q2 9492,12214 9626,12227 9700,12234 9743,12239 9801,12245
+Markgrafenstr. (Kreuzberg, Mitte): Asphalt	Q2 9626,12227 9636,12126
+Am Festungsgraben: Kopfsteinpflaster	Q1 9842,12506 9739,12489
+(Dorotheenstr. - Unter den Linden): Kopfsteinpflaster	Q1 9723,12594 9732,12536 9739,12489 9754,12389
