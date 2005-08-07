@@ -440,14 +440,7 @@ userdel	q4 1916,-1090 1709,-953
        undef,
        undef,
        undef,
-       {
-         'until' => 1123452000,
-         'text' => 'B 168; (Lieberose-Friedland); zw. Lieberose und Abzw. Mochlitz Straßenbauarbeiten Vollsperrung 23.06.2005-07.08.2005 ',
-         'from' => 1119391200,
-         'data' => 'userdel	2 73201,-43677 72887,-44704
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1132959600,
          'text' => 'L 53; (Seestr.); OL Großräschen, zw. B96 u. Ahornstr. Straßenbauarbeiten Vollsperrung 20.06.2005-25.11.2005 ',
@@ -515,14 +508,7 @@ userdel	2 -4504,-14978 -4077,-14595
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1123452000,
-         'text' => 'Pappelallee (Prenzlauer Berg) in beiden Richtungen zwischen Raumerstr. und Schönhauser Allee Baustelle, Straße vollständig gesperrt (bis 07.08.2005)',
-         'from' => 1121732314,
-         'data' => 'userdel	q4 11119,15385 10889,15045
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1123538400,
          'text' => 'B 109; (Prenzlauer Str.); OD Basdorf, Kno. Dimitroff-/Waldheimstr. Straßen-,Geh- u.Radwegbau Vollsperrung 04.07.2005-08.08.2005 ',
@@ -604,14 +590,7 @@ userdel	q4 25412,-29762 25541,-29875
        undef,
        undef,
        undef,
-       {
-         'until' => 1123452000,
-         'text' => 'B 169; von OD Kahla bis OE Elsterwerda Deckschichteinbau Vollsperrung 05.08.2005-07.08.2005 ',
-         'from' => 1123106400,
-         'data' => 'userdel	2 23758,-103850 22424,-103934
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {

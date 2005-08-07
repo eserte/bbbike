@@ -1866,6 +1866,51 @@ leaving the entry.
 
 =head1 Modules
 
+=head2 Route
+
+=head3 Route::GPX
+
+=over
+
+=item new (input: coords, net, maybe also dataset)
+
+=item param_from_cgi:
+
+=over
+
+=item gpxcontent: trk, rte, trk+rte (default), wpt (?)
+
+=item gpxrteno: number of route points, 50 is default, may be 20 or 30
+for older GPS devices
+
+=item gpxtrkno: number of track points, by default very high (1024 or
+2048?) or even unlimited
+
+=item gpxversion: default 1.1, maybe support for 1.0 (for gpsbabel)
+
+=item gpxwptlen: length of waypoint ids, by default 10 
+
+=item gpxwptsuffix: fixed waypoint id suffix
+
+=item gpxwptprefix: fixed waypoint id prefix
+
+=item gpxname: name of gpx file
+
+=item gpxnameauto: boolean; otherwise: generate name automatically
+from start and goal point of route
+
+=back
+
+=item as_string/as_gpx
+
+=back
+
+=head3 Route::Simplifier
+
+Output-agnostic simplifier of routes. Should take coords, net, already
+used waypoints and some gpx* parameters and return a simplified coord
+list with generated shorter waypoint names
+
 =head2 BBBikeDraw
 
 =head3 BBBikeDraw::GD

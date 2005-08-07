@@ -847,13 +847,17 @@ sub set_coord_interactive {
     }
 
     my($valx, $valy);
-    my(%val2);
+    my(%val2, %val3);
     my $set_sub = sub {
 	my($orig) = @_;
 	if ($orig == 2) {
 	    require Karte::Polar;
 	    $valx = Karte::Polar::dms2ddd($val2{'X'}->[0], $val2{'X'}->[1], $val2{'X'}->[2]);
 	    $valy = Karte::Polar::dms2ddd($val2{'Y'}->[0], $val2{'Y'}->[1], $val2{'Y'}->[2]);
+	} elsif ($orig == 3) {
+	    require Karte::Polar;
+	    $valx = Karte::Polar::dmm2ddd($val3{'X'}->[0], $val3{'X'}->[1]);
+	    $valy = Karte::Polar::dmm2ddd($val3{'Y'}->[0], $val3{'Y'}->[1]);
 	}
 	my($setx, $sety);
 	if ($coord_output eq 'canvas') {
@@ -952,31 +956,51 @@ sub set_coord_interactive {
     my $polar_f;
     {
 	my $f = $polar_f = $t->Frame->pack(-anchor => "w");
-	my %label = ('Y' => M"geog. Breite",
-		     'X' => M"geog. Länge",
-		    );
-	for my $ord ('Y', 'X') {
-	    my @e2;
-	    push @e2, $f->Label(-text => $label{$ord} . ":");
-	    for my $i (0 .. 2) {
-		push @e2, $f->Entry(-textvariable => \$val2{$ord}->[$i],
-				    # seconds: place for decimal and one digit after decimal
-				    -width => ($i == 2 ? 4 : 2));
-		if ($i == 0) {
-		    push @e2, $f->Label(-text => "°");
-		} elsif ($i == 1) {
-		    push @e2, $f->Label(-text => "'");
-		} elsif ($i == 2) {
-		    push @e2, $f->Label(-text => "\"");
+	for my $def (["DMS", 2],
+		     ["DMM", 3],
+		    ) {
+	    my($dms_type, $set_sub_type) = @$def;
+	    my $ff = $polar_f->Frame->pack(-anchor => "w");
+	    my %label = ('Y' => M"geog. Breite ($dms_type)",
+			 'X' => M"geog. Länge ($dms_type)",
+			);
+	    for my $ord ('Y', 'X') {
+		my @e2;
+		push @e2, $ff->Label(-text => $label{$ord} . ":");
+		if ($dms_type eq 'DMS') {
+		    for my $i (0 .. 2) {
+			push @e2, $ff->Entry(-textvariable => \$val2{$ord}->[$i],
+					     # seconds: place for decimal and one digit after decimal
+					     -width => ($i == 2 ? 4 : 2));
+			if ($i == 0) {
+			    push @e2, $ff->Label(-text => "°");
+			} elsif ($i == 1) {
+			    push @e2, $ff->Label(-text => "'");
+			} elsif ($i == 2) {
+			    push @e2, $ff->Label(-text => "\"");
+			    if ($ord eq 'X') {
+				push @e2, $ff->Button(-text => M"Setzen",
+						      -command => sub { $set_sub->($set_sub_type) },
+						     );
+			    }
+			}
+		    }
+		} else {
+		    push @e2, $ff->Entry(-textvariable => \$val3{$ord}->[0],
+					 -width => 2);
+		    push @e2, $ff->Label(-text => "°");
+		    push @e2, $ff->Entry(-textvariable => \$val3{$ord}->[1],
+					 -width => 6);
+		    push @e2, $ff->Label(-text => "'");
 		    if ($ord eq 'X') {
-			push @e2, $f->Button(-text => M"Setzen",
-					     -command => sub { $set_sub->(2) },
-					    );
+			push @e2, $ff->Button(-text => M"Setzen",
+					      -command => sub { $set_sub->($set_sub_type) },
+					     );
 		    }
 		}
+		my $first = shift @e2;
+		$first->grid(@e2);
 	    }
-	    my $first = shift @e2;
-	    $first->grid(@e2);
 	}
     }
 
@@ -1051,11 +1075,9 @@ warn "$x $y $x_ddd $y_ddd";
 
     my $coord_menu_sub = sub {
 	if ($coord_output eq 'polar') {
-	    eval { $_->configure(-state => "normal") }
-		for $polar_f->children;
+	    $polar_f->Walk(sub { eval { $_[0]->configure(-state => "normal") } });
 	} else {
-	    eval { $_->configure(-state => "disabled") }
-		for $polar_f->children;
+	    $polar_f->Walk(sub { eval { $_[0]->configure(-state => "disabled") } });
 	}
     };
 

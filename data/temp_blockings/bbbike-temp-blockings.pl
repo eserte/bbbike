@@ -1202,7 +1202,7 @@ EOF
        text  => 'L 201; (Nauener Chaussee); OD Falkensee, Bahnübergang am Finkenkrug Gleisbauarbeiten Vollsperrung 23.11.2004-27.11.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -13743,20218 -13941,20658
+userdel	2 -13743,20218 -13887,20543 -13941,20658
 EOF
      },
      { from  => 1100559600, # 2004-11-16 00:00
