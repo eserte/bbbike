@@ -414,14 +414,7 @@ userdel	q4 1916,-1090 1709,-953
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1123365600,
-         'text' => 'B 246; zw. Christinendorf und Trebbin Anbind. neue Brücke Vollsperrung 23.06.2005-06.08.2005 ',
-         'from' => 1119391200,
-         'data' => 'userdel	2 1691,-21721 1271,-21606
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1130709600,
          'text' => 'K 6152; (Gussower Str.); OD Gräbendorf, ab B246 bis OA Kanal- und Straßenbau Vollsperrung 27.06.2005-30.10.2005 ',
@@ -464,14 +457,7 @@ userdel	q4 53252,-90440 53805,-90240
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1123365600,
-         'text' => 'Kreisverkehr bei Hennigsdorf Straßenbau Vollsperrung 27.06.2005-06.08.2005 ',
-         'from' => 1119736800,
-         'data' => 'userdel	q4 -2800,25478 -2446,25386
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1136069999,
@@ -583,14 +569,7 @@ userdel	q4 25412,-29762 25541,-29875
        },
        undef,
        undef,
-       {
-         'until' => 1123365600,
-         'text' => 'B 87; zw. Hohenwalde und Müllrose Munitionsbergung Vollsperrung 29.07.2005-06.08.2005 ',
-         'from' => 1122501600,
-         'data' => 'userdel	2 81786,-12568 81278,-13886
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -613,14 +592,7 @@ userdel	q4 25412,-29762 25541,-29875
        undef,
        undef,
        undef,
-       {
-         'until' => 1123365600,
-         'text' => 'B 1; (Küstriner Str.); OD Seelow Deckenerneuerung Vollsperrung 28.07.2005-06.08.2005 ',
-         'from' => 1122415200,
-         'data' => 'userdel	q4 76771,15413 77393,15654
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1124229600,
          'text' => 'B 169; (Elsterwerdaer Str.); Bahnübergang zw. B101 und OE Prösen Reparaturarbeiten Vollsperrung 14.08.2005-16.08.2005 ',
