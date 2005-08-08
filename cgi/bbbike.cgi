@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.31 2005/07/13 06:09:50 eserte Exp eserte $
+# $Id: bbbike.cgi,v 7.32 2005/08/08 22:52:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -665,7 +665,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.31 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.32 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -4210,8 +4210,8 @@ sub draw_route {
 
     $draw->pre_draw
 	if $draw->can("pre_draw");
-    $draw->draw_wind   if $draw->can("draw_wind"); # see comment in BBBikeDraw
     $draw->draw_map    if $draw->can("draw_map");
+    $draw->draw_wind   if $draw->can("draw_wind");
     $draw->draw_route  if $draw->can("draw_route");
     $draw->add_route_descr(-net => make_netz())
 	if $draw->can("add_route_descr");
@@ -5669,7 +5669,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/07/13 06:09:50 $';
+    my $cgi_date = '$Date: 2005/08/08 22:52:53 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

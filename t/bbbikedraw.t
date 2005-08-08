@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.15 2005/01/20 00:26:34 eserte Exp $
+# $Id: bbbikedraw.t,v 1.16 2005/08/08 22:52:12 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -142,6 +142,11 @@ sub draw_map {
 	Startname  => "Start",
 	Zielname   => "Goal",
 	Coords     => ["9222,8787", "8209,8769"],
+	UseFlags   => 1,
+	Wind       => {Windrichtung => 'N',
+		       Windstaerke  => 3,
+		      },
+        StrLabel   => ['str:HH,H'],
     ;
     if ($do_slow) {
 	$draw->set_bbox_max(Strassen->new("strassen"));
@@ -154,6 +159,7 @@ sub draw_map {
     if (!$attributes{noroute}) {
 	$draw->draw_route if $draw->can("draw_route");
     }
+    $draw->draw_wind if $draw->can("draw_wind");
     $draw->flush;
     close $fh;
 

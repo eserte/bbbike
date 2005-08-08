@@ -1919,17 +1919,9 @@ list with generated shorter waypoint names
 
 =item * (M5)
 
-setThickness wo möglich verwenden!
-
-=item * (M5)
-
 Was sind die gepunkteten Linien bei der MapServer-Ausgabe von
 bbbikedraw.t? -> Steigungen! Nicht bzw. schöner zeichnen! Siehe auch
 brb.map-tpl, mount.
-
-=item * (M5)
-
-Route wird bei bbbikedraw.t nicht gezeichnet?
 
 =item * (M1)
 
@@ -1942,12 +1934,6 @@ MapServer/pdf sagen.
 =head3 BBBikeDraw::GD
 
 =over
-
-=item * (M2)
-
-Falls die Routenliste nur aus einem Punkt besteht (Beispiel:
-?center=;interactive=Grafik%20zeichnen;imagetype=png;coords=11824%2C8995;startname=Hermannplatz;zielname=Karl-Marx-Str.;geometry=640x480;draw=str;draw=title;scope=),
-dann bbox automatisch auf eine Mindestgröße vergrößern.
 
 =item * (M3)
 
@@ -1963,10 +1949,6 @@ BBBikeDraw::PDF. VectorUtil::intersect_rectangles wird hier aber schon
 genutzt... (Werden auf radzeit.de die XS-Versionen genutzt? Beim
 syncen kompilieren!)
 
-=item * (M2)
-
-Brushes für die Linienbreite vielleicht rund statt quadratisch machen?
-
 =item * (M1)
 
 Titel: E<quot>->E<quot> schöner E<quot>malenE<quot> statt Text
@@ -1980,13 +1962,8 @@ sieht man, wenn die Schrift groß wird).
 =item * (H2)
 
 Routenbrush: kann man transparente Pixel einfügen, also rot -
-transparent - blau - transparent? Ebenfalls zu übelegen bei
-BBBikeDraw::PDF.
-
-=item * (M4)
-
-bbbikedraw.t-Test: Werden Routennamen gezeichent? Wenn nein, dann
-einschalten!
+transparent - blau - transparent? (Versucht, scheint aber mit gd2.0.33
+nicht so schön zu klappen) Ebenfalls zu übelegen bei BBBikeDraw::PDF.
 
 =item * (E2)
 

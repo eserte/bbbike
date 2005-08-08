@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.44 2005/03/19 11:15:10 eserte Exp eserte $
+# $Id: GD.pm,v 1.48 2005/08/08 22:51:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -40,9 +40,9 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.44 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.48 $ =~ /(\d+)\.(\d+)/);
 
-my(%brush, %outline_brush);
+my(%brush, %outline_brush, %thickness, %outline_thickness);
 
 # REPO BEGIN
 # REPO NAME pi /home/e/eserte/src/repository 
@@ -151,10 +151,15 @@ sub init {
     if ($self->{OldImage}) {
 	$im = $self->{OldImage};
     } else {
-	$im = $self->{GD_Image}->new($self->{Width},$self->{Height});
+	my $use_truecolor = 0; # with 1 segfaults!!!
+	$im = $self->{GD_Image}->new($self->{Width},$self->{Height},
+ 				     $use_truecolor);
     }
 
     $self->{Image}  = $im;
+
+    $self->{GD_use_thickness} = $im->can("setThickness");
+    $self->{GD_use_aa} = 0 && $im->can("setAntiAliased"); # no effect seen without truecolor
 
     if (!$self->{OldImage}) {
 	$self->allocate_colors;
@@ -167,9 +172,6 @@ sub init {
     $im->interlaced('true');
 
     $self->set_draw_elements;
-
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
-#$self->{StrLabel} = ['str:HH,H'];#XXX
 
     if ($self->imagetype eq 'wbmp' && !defined $self->{RouteWidth}) {
 	$self->{RouteWidth} = $width{HH} + 4;
@@ -194,9 +196,13 @@ sub pre_draw {
 	my $width = $width{$cat} * $scale;
 	$width = 1 if $width < 1;
 	$width = int($width);
-	my $brush = $self->{GD_Image}->new($width, $width);
-	$brush->colorAllocate($im->rgb($color{$cat}));
-	$brush{$cat} = $brush;
+	if ($self->{GD_use_thickness}) {
+	    $thickness{$cat} = $width;
+	} else {
+	    my $brush = $self->{GD_Image}->new($width, $width);
+	    $brush->colorAllocate($im->rgb($color{$cat}));
+	    $brush{$cat} = $brush;
+	}
     }
     # create outline brushes
     foreach my $cat (keys %width) {
@@ -205,9 +211,13 @@ sub pre_draw {
 	$width = 1 if $width < 1;
 	$width = int($width);
 	$width += 2;
-	my $brush = $self->{GD_Image}->new($width, $width);
-	$brush->colorAllocate($im->rgb($outline_color{$cat}));
-	$outline_brush{$cat} = $brush;
+	if ($self->{GD_use_thickness}) {
+	    $outline_thickness{$cat} = $width;
+	} else {
+	    my $brush = $self->{GD_Image}->new($width, $width);
+	    $brush->colorAllocate($im->rgb($outline_color{$cat}));
+	    $outline_brush{$cat} = $brush;
+	}
     }
 
 }
@@ -256,13 +266,13 @@ sub draw_map {
 	}
     }
 
-    if ($self->{Outline}) {
-	foreach my $strecke (@outline_netz) {
-	    $strecke->init;
-	    while(1) {
-		my $s = $strecke->next;
-		last if !@{$s->[1]};
-		my $cat = $s->[2];
+    my $draw_outline_sub = sub {
+	my($strecke) = @_;
+	$strecke->init;
+	while(1) {
+	    my $s = $strecke->next;
+	    last if !@{$s->[1]};
+	    my $cat = $s->[2];
 # XXX what about outlined areas?
 #  	    if ($cat =~ /^F:(.*)/) {
 #  		if ($1 eq 'I') {
@@ -276,31 +286,33 @@ sub draw_map {
 #  		}
 #  		$im->filledPolygon($poly, $c);
 #	    } elsif ($cat !~ /^[SRU]0$/) { # Ausnahmen: in Bau
-		next if $restrict && !exists $restrict->{$cat};
-	        next if (!$outline_brush{$cat});
-		my $color;
-	        $im->setBrush($outline_brush{$cat});
+	    next if $restrict && !exists $restrict->{$cat};
+	    next if (!$outline_brush{$cat} && !defined $outline_thickness{$cat});
+	    my $color;
+	    if (defined $outline_thickness{$cat}) {
+		$im->setThickness($outline_thickness{$cat});
+		$color = $outline_color{$cat};
+	    } else {
+		$im->setBrush($outline_brush{$cat});
 		$color = $self->{GD}->gdBrushed();
-		for(my $i = 0; $i < $#{$s->[1]}; $i++) {
-		    my($x1, $y1, $x2, $y2) =
-		      (@{Strassen::to_koord1($s->[1][$i])},
-		       @{Strassen::to_koord1($s->[1][$i+1])});
-		    # XXX evtl. aus Performancegründen testen, ob
-		    # überhaupt im Zeichenbereich.
-		    # Evtl. eine XS-Funktion für diese Schleife
-		    # schreiben?
-		    my($x1t, $y1t, $x2t, $y2t) = (&$transpose($x1, $y1),
-						  &$transpose($x2, $y2));
-		    $im->line($x1t, $y1t, $x2t, $y2t, $color);
-		}
+	    }
+	    for(my $i = 0; $i < $#{$s->[1]}; $i++) {
+		my($x1, $y1, $x2, $y2) =
+		    (@{Strassen::to_koord1($s->[1][$i])},
+		     @{Strassen::to_koord1($s->[1][$i+1])});
+		# XXX evtl. aus Performancegründen testen, ob
+		# überhaupt im Zeichenbereich.
+		# Evtl. eine XS-Funktion für diese Schleife
+		# schreiben?
+		my($x1t, $y1t, $x2t, $y2t) = (&$transpose($x1, $y1),
+					      &$transpose($x2, $y2));
+		$im->line($x1t, $y1t, $x2t, $y2t, $color);
 	    }
 	}
-    }
+    };
 
-    foreach my $strecke_i (0 .. $#netz) {
-	my $strecke = $netz[$strecke_i];
-	my $strecke_name = $netz_name[$strecke_i];
-	my $flaechen_pass = $self->{FlaechenPass};
+    my $draw_normal_sub = sub {
+	my($strecke, $strecke_name, $flaechen_pass) = @_;
 
 	for my $s ($self->get_street_records_in_bbox($strecke)) {
 	    my $cat = $s->[Strassen::CAT];
@@ -311,19 +323,36 @@ sub draw_map {
 			  ($flaechen_pass == 2 && $cat ne 'Pabove'))
 			);
 		my $c = defined $color{$cat} ? $color{$cat} : $white;
+		if ($self->{GD_use_aa}) {
+		    $im->setAntiAliased($c);
+		    $c = $self->{GD}->gdAntiAliased();
+		}
 		my $poly = $self->{GD_Polygon}->new();
 		for my $coord (@{ $s->[Strassen::COORDS] }) {
 		    $poly->addPt($transpose->(split /,/, $coord));
+		}
+		if ($self->{GD_use_thickness}) {
+		    $im->setThickness(1);
 		}
 		$im->filledPolygon($poly, $c);
 	    } elsif ($cat !~ /^[SRU]0$/) { # Ausnahmen: in Bau
 		next if $restrict && !exists $restrict->{$cat};
 		my $color;
-		if ($brush{$cat}) {
+		if (defined $thickness{$cat}) {
+		    $im->setThickness($thickness{$cat});
+		    $color = $color{$cat};
+		} elsif ($brush{$cat}) {
 		    $im->setBrush($brush{$cat});
 		    $color = $self->{GD}->gdBrushed();
 		} else {
+		    if ($self->{GD_use_thickness}) {
+			$im->setThickness(1);
+		    }
 		    $color = defined $color{$cat} ? $color{$cat} : $white;
+		}
+		if ($self->{GD_use_aa} && $color ne $self->{GD}->gdBrushed()) {
+		    $im->setAntiAliased($color);
+		    $color = $self->{GD}->gdAntiAliased();
 		}
 		my @txy = map { $transpose->(split/,/, $_) } @{ $s->[Strassen::COORDS] };
 		next if @txy < 4; # ignore points
@@ -332,11 +361,70 @@ sub draw_map {
 		}
 	    }
 	}
+    };
+
+    my @layers;
+
+    use constant LAYER_TYPE_OUTLINE => 1;
+    use constant LAYER_TYPE_NORMAL  => 2;
+
+    if ($self->{Outline}) {
+	push @layers, map {
+	    +{type => LAYER_TYPE_OUTLINE,
+	      str  => $_,
+	     }
+	} @outline_netz;
+    }
+
+    foreach my $strecke_i (0 .. $#netz) {
+	my $strecke = $netz[$strecke_i];
+	my $strecke_name = $netz_name[$strecke_i];
+	my $flaechen_pass = $self->{FlaechenPass};
+
+	push @layers, +{type => LAYER_TYPE_NORMAL,
+			str  => $strecke,
+			name => $strecke_name,
+			flaechen_pass => $flaechen_pass,
+		       };
 
 	if ($strecke_name eq 'flaechen') {
 	    $self->{FlaechenPass}++;
 	}
     }
+
+    {
+	# Sort layers:
+	# At bottom: flaechen+wasser
+	# then: outlines
+	# then: remaining layers
+	# Preserve original sorting by using $micro_level
+	my $micro_level = 0;
+	@layers = (map { $_->[1] }
+		   sort {
+		       $a->[0] <=> $b->[0];
+		   } 
+		   map {
+		       my $level = 0;
+		       $micro_level+=0.0001;
+		       if ($_->{type} eq LAYER_TYPE_OUTLINE) {
+			   $level = -1;
+		       } elsif ($_->{name} =~ /^(flaechen|wasser)$/) {
+			   $level = -2;
+		       }
+		       [$level + $micro_level, $_];
+		   } @layers);
+    }
+
+    for my $layer_def (@layers) {
+	my($type,$str) = @{$layer_def}{qw(type str)};
+	if ($type eq LAYER_TYPE_OUTLINE) {
+	    $draw_outline_sub->($str);
+	} else {
+	    my($name,$flaechen_pass) = @{$layer_def}{qw(name flaechen_pass)};
+	    $draw_normal_sub->($str, $name, $flaechen_pass);
+	}
+    }
+    
 
     # $self->{Xk} bezeichnet den Vergrößerungsfaktor
     # bis etwa 0.02 ist es zu unübersichtlich, Ampeln zu zeichnen,
@@ -348,8 +436,9 @@ sub draw_map {
 	my($kl_ampel, $w_lsa, $h_lsa) = $self->read_image("ampel_klein$suf");
 	my($kl_andreas, $w_and, $h_and) = $self->read_image("andreaskr_klein$suf");
 	my($kl_zugbruecke, $w_zbr, $h_zbr) = $self->read_image($self->{Xk} >= 0.05 ? "zugbruecke" : "zugbruecke_klein");
+	my($kl_ampelf, $w_lsaf, $h_lsaf) = $self->read_image("ampelf_klein$suf");
 
-	if ($kl_andreas || $kl_ampel || $kl_zugbruecke) {
+	if ($kl_andreas || $kl_ampel || $kl_zugbruecke || $kl_ampelf) {
 	    $lsa->init;
 	    while(1) {
 		my $s = $lsa->next_obj;
@@ -365,6 +454,15 @@ sub draw_map {
 		    if ($kl_zugbruecke) {
 			$im->copy($kl_zugbruecke, $x-$w_zbr/2, $y-$h_zbr/2, 0, 0,
 				  $w_zbr, $h_zbr);
+		    }
+		} elsif (0 && $cat eq 'F') {
+		    # XXX Wegen des Alpha-Channels in ampelf* nicht nutzbar.
+		    # Es würde funktionieren, wenn das truecolor-Bit sowohl
+		    # auf $im als auch auf $kl_ampelf gesetzt wäre.
+		    # Leider bekomme ich einen Absturz bei $im mit truecolor.
+		    if ($kl_ampelf) {
+			$im->copy($kl_ampelf, $x-$w_lsa/2, $y-$h_lsa/2, 0, 0,
+				  $w_lsa, $h_lsa);
 		    }
 		} else {
 		    if ($kl_ampel) {
@@ -661,6 +759,10 @@ sub draw_scale {
 	}
     }
 
+    if ($self->{GD_use_thickness}) {
+	$im->setThickness(1);
+    }
+
     $im->line($self->{Width}-($x1-$x0)-$x_margin,
 	      $self->{Height}-$y_margin,
 	      $self->{Width}-$x_margin,
@@ -751,12 +853,18 @@ sub draw_route {
 	# Vorschlag von Rainer Scheunemann: die Route in blau zu zeichnen,
 	# damit Rot-Grün-Blinde sie auch erkennen können. Vielleicht noch
 	# besser: rot-grün-gestrichelt
-	$im->setStyle($darkblue, $darkblue, $darkblue, $red, $red, $red);
+	$im->setStyle(($darkblue)x3,
+		      ($self->{GD}->gdTransparent)x3,
+		      ($red)x3,
+		      ($self->{GD}->gdTransparent)x3,
+		     );
 	$line_style = $self->{GD}->gdStyled();
 	$width = $width{Route};
     }
 
     # Route
+    # Don't use setThickness here, because the dashed effect looks
+    # strange (schraffiert).
     for(my $i = 0; $i < $#c1; $i++) {
 	my($x1, $y1, $x2, $y2) = (@{$c1[$i]}, @{$c1[$i+1]});
 	my($tx1,$ty1, $tx2,$ty2) = (&$transpose($x1, $y1),
@@ -962,6 +1070,7 @@ sub _adjust_anchor {
     ($x, $y);
 }
 
+# Comment only valid for older GDs without filledArc:
 # Draw this first, otherwise the filling of the circle won't work!
 sub draw_wind {
     my $self = shift;
@@ -972,10 +1081,17 @@ sub draw_wind {
     if ($richtung =~ /o$/) { $richtung =~ s/o$/e/; }
     my $staerke  = $self->{Wind}{Windstaerke};
     my $im = $self->{Image};
+    if ($self->{GD_use_thickness}) {
+	$im->setThickness(1);
+    }
     my($radx, $rady) = (10, 10);
     my $col = $darkblue;
-    $im->arc($self->{Width}-20, 20, $radx, $rady, 0, 360, $col);
-    $im->fill($self->{Width}-20, 20, $col);
+    if ($im->can("filledArc")) {
+	$im->filledArc($self->{Width}-20, 20, $radx, $rady, 0, 360, $col);
+    } else {
+	$im->arc($self->{Width}-20, 20, $radx, $rady, 0, 360, $col);
+	$im->fill($self->{Width}-20, 20, $col);
+    }
     if ($staerke > 0) {
 	my %senkrecht = # im Uhrzeigersinn
 	    ('-1,-1' => [-1,+1],
@@ -1146,7 +1262,9 @@ sub empty_image_error {
     my $im = $self->{Image};
     my $fh = $self->{Fh};
 
-    $im->string($self->{GD}->gdLargeFont, 10, 10, "Empty image!", $white);
+    $im->string($self->{GD}->gdLargeFont, 10, 10, "Karte kann nicht gezeichnet werden!", $darkblue);
+    $im->string($self->{GD}->gdLargeFont, 10, 30, "Cannot draw map!", $darkblue);
+    $im->string($self->{GD}->gdLargeFont, 10, 50, scalar(localtime), $darkblue);
     binmode $fh if $fh;
     if ($fh) {
 	print $fh $im->imageOut;

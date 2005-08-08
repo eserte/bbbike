@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.43 2005/07/22 19:52:16 eserte Exp eserte $
+# $Id: BBBikeDraw.pm,v 3.45 2005/08/08 22:52:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.43 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.45 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, %args) = @_;
@@ -218,9 +218,22 @@ sub dimension_from_route {
 	push @c1, [$x,$y];
     }
 
-    if ((!defined $max_x && !defined $min_x) ||
-	$max_x == $min_x || $max_y == $min_y) {
+    if (!defined $max_x && !defined $min_x) {
 	$self->empty_image_error;
+    }
+
+    {
+	# Support for one point routes: show an area of about
+	# 1000x1000 meters:
+	my $min_bbox = 1000;
+	if ($max_x == $min_x) {
+	    $min_x -= $min_bbox/2;
+	    $max_x += $min_bbox/2;
+	}
+	if ($max_y == $min_y) {
+	    $min_y -= $min_bbox/2;
+	    $max_y += $min_bbox/2;
+	}
     }
 
     # etwas Luft lassen

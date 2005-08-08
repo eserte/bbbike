@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.22 2005/05/19 00:06:24 eserte Exp eserte $
+# $Id: MapServer.pm,v 1.23 2005/08/08 22:53:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -23,7 +23,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -490,10 +490,9 @@ sub draw_route {
     }
 }
 
-# Draw this first, otherwise the filling of the circle won't work!
 sub draw_wind {
     # XXX use the TRANSFORM FALSE feature of layer objects in mapserver here!
-    die "draw_wind NYI";
+    warn "draw_wind NYI";
 #      my $self = shift;
 #      return unless $self->{Wind};
 #      require BBBikeCalc;
