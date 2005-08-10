@@ -219,8 +219,8 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        type  => 'handicap',
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Schlichtallee zwischen Hauptstraße und Lückstraße wegen Bauarbeiten gesperrt',
+       until => Time::Local::timelocal(reverse(2005-1900,10-1,31,23,59,59)),
+       text  => 'Schlichtallee zwischen Hauptstraße und Lückstraße wegen Bauarbeiten gesperrt (bis 31.10.)',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 15629,10481 15751,10582 16032,10842
@@ -1567,9 +1567,9 @@ EOF
 userdel	1 9028,12307 8804,12280
 EOF
      },
-     { from  => 1123100311, # 2005-08-03 22:18
-       until => 1127167200, # 2005-09-20 00:00
-       text  => 'Friedrichshagener Chaussee in beiden Richtungen zwischen Fürstenwalder Damm und Dahlwitzer Landstraße beidseitig Brückenarbeiten, gesperrt bis 19.09.2005 ',
+     { from  => 1123619410, # 2005-08-09 22:30
+       until => 1124488800, # 2005-08-20 00:00
+       text  => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt (Brücken- und Straßenarbeiten) (bis 19.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 25585,6050 25579,5980
@@ -2142,8 +2142,8 @@ userdel	q4 53252,-90440 53805,-90240
 EOF
      },
      { from  => 1119736800, # 2005-06-26 00:00
-       until => 1123365600, # 2005-08-07 00:00
-       text  => 'Kreisverkehr bei Hennigsdorf Straßenbau Vollsperrung 27.06.2005-06.08.2005 ',
+       until => 1129240800, # 2005-10-14 00:00
+       text  => 'Kreisverkehr bei Hennigsdorf Straßenbau Vollsperrung 27.06.2005-13.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -2800,25478 -2446,25386
@@ -2348,9 +2348,9 @@ EOF
 userdel	2 85161,-3425 84653,-3159
 EOF
      },
-     { from  => 1121724000, # 2005-07-19 00:00
-       until => 1122328800, # 2005-07-26 00:00
-       text  => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-25.07.2005 ',
+     { from  => 1122415200, # 2005-07-27 00:00
+       until => 1125007200, # 2005-08-26 00:00
+       text  => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 28.07.2005-25.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 1772,31266 2257,31124
@@ -2417,8 +2417,8 @@ EOF
        text  => 'Eisenacher Str. (Schöneberg) in beiden Richtungen, zwischen Grunwaldstr. und Hauptstr. Veranstaltung, Straße vollständig gesperrt (bis 24.07.2005 23:00 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 6747,9111 6769,8996
-userdel	2 6747,9111 6727,9229
+userdel	2 6745,9106 6769,8996
+userdel	2 6745,9106 6727,9229
 userdel	2 7009,8705 6870,8872
 userdel	2 6769,8996 6870,8872
 EOF
@@ -2464,9 +2464,9 @@ EOF
 userdel	2 30455,10061 30500,10571
 EOF
      },
-     { from  => 1124575200, # 2005-08-21 00:00
-       until => 1124834400, # 2005-08-24 00:00
-       text  => 'B 112; (OU Neuzelle-OU Guben); Ber. Steinsdorf Vorwerk Bau Oder-Lausitz-Trasse Vollsperrung 22.08.2005-23.08.2005 ',
+     { from  => 1125180000, # 2005-08-28 00:00
+       until => 1125439200, # 2005-08-31 00:00
+       text  => 'B 112; (OU Neuzelle-OU Guben); Ber. Steinsdorf Vorwerk Bau Oder-Lausitz-Trasse Vollsperrung 29.08.2005-30.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 98777,-43381 98337,-41604
@@ -2495,6 +2495,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -26809,-18383 -27757,-17707
+EOF
+     },
+     { from  => 1124748000, # 2005-08-23 00:00
+       until => 1126389600, # 2005-09-11 00:00
+       text  => 'L 793; (Alfred-Kühne-Str.); OD Ludwigsfelde, am OA in Ri. A 10 Einbau Anschlussgleis Vollsperrung 24.08.2005-10.09.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 2996,-10338 1764,-12480
 EOF
      },
     );

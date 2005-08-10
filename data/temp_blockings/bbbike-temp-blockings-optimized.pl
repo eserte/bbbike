@@ -3,8 +3,8 @@ $#temp_blocking = 33;
 push @temp_blocking,
 (
        {
-         'until' => undef,
-         'text' => 'Schlichtallee zwischen Hauptstraße und Lückstraße wegen Bauarbeiten gesperrt',
+         'until' => 1130799599,
+         'text' => 'Schlichtallee zwischen Hauptstraße und Lückstraße wegen Bauarbeiten gesperrt (bis 31.10.)',
          'from' => undef,
          'data' => 'userdel	q4; 15629,10481 15751,10582 16032,10842
 ',
@@ -234,9 +234,9 @@ userdel	q4 -18080,-12637 -17374,-13449
        undef,
        undef,
        {
-         'until' => 1127167200,
-         'text' => 'Friedrichshagener Chaussee in beiden Richtungen zwischen Fürstenwalder Damm und Dahlwitzer Landstraße beidseitig Brückenarbeiten, gesperrt bis 19.09.2005 ',
-         'from' => 1123100311,
+         'until' => 1124488800,
+         'text' => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt (Brücken- und Straßenarbeiten) (bis 19.08.2005)',
+         'from' => 1123619410,
          'data' => 'userdel	q4 25585,6050 25579,5980
 ',
          'type' => 'handicap'
@@ -283,14 +283,7 @@ userdel	q4 -18080,-12637 -17374,-13449
        undef,
        undef,
        undef,
-       {
-         'until' => 1123538400,
-         'text' => 'B 101; (Berliner Str.); OD Trebbin Straßenbauarbeiten Vollsperrung bis 08.08.2005 ',
-         'from' => 1118872800,
-         'data' => 'userdel	q4 -1623,-21150 -1887,-21501
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1130536800,
@@ -450,7 +443,14 @@ userdel	q4 53252,-90440 53805,-90240
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'until' => 1129240800,
+         'text' => 'Kreisverkehr bei Hennigsdorf Straßenbau Vollsperrung 27.06.2005-13.10.2005 ',
+         'from' => 1119736800,
+         'data' => 'userdel	q4 -2800,25478 -2446,25386
+',
+         'type' => 'handicap'
+       },
        undef,
        {
          'until' => 1136069999,
@@ -509,14 +509,7 @@ userdel	2 -4504,-14978 -4077,-14595
        },
        undef,
        undef,
-       {
-         'until' => 1123538400,
-         'text' => 'B 109; (Prenzlauer Str.); OD Basdorf, Kno. Dimitroff-/Waldheimstr. Straßen-,Geh- u.Radwegbau Vollsperrung 04.07.2005-08.08.2005 ',
-         'from' => 1120341600,
-         'data' => 'userdel	q4 12193,34683 12551,32765
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1125266400,
@@ -625,6 +618,14 @@ userdel	q4 -5209,70040 -4978,71109
          'data' => 'userdel	q4 -26809,-18383 -27757,-17707
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1126389600,
+         'text' => 'L 793; (Alfred-Kühne-Str.); OD Ludwigsfelde, am OA in Ri. A 10 Einbau Anschlussgleis Vollsperrung 24.08.2005-10.09.2005 ',
+         'from' => 1124748000,
+         'data' => 'userdel	2 2996,-10338 1764,-12480
+',
+         'type' => 'gesperrt'
        }
      
 );

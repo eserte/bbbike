@@ -1,7 +1,7 @@
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
-Kanalstraßen Nordufer	1 6880,11110 7160,11225 7251,11202 7333,11179 7595,11086 7873,11142 7993,11137 8241,11024
+Kanalstraßen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7873,11142 7993,11137 8124,11078 8241,11024
 Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8739,10404 8820,10379 9029,10366 9147,10359 9241,10324 9392,10260 9593,10238 9865,10286
 Gitschiner Str.	1 9865,10286 9948,10280
 Gitschiner Str.	1 9948,10280 9851,10219
@@ -328,7 +328,7 @@ Alte Schönhauser Str.	1s 10718,13625 10746,13673
 Kirchhofstr.	1s 13188,7590 13117,7471 13032,7334
 Niemannstr.	1s 14252,11368 14211,11229
 Björnsonstr	1s 10229,16653 10215,16527
-Eichhornstr.	1s 8226,11458 8258,11254
+Eichhornstr.	1s 8232,11414 8258,11254
 Paul-Junius-Str.	1s 15084,12975 15085,13105
 Ahornallee	1s 1589,11483 1574,11379
 Lindenallee	1s 1407,11516 1391,11434
@@ -352,8 +352,8 @@ Bundesallee -> Mainauer Str.: Bundesplatztunnel	3 5359,7661 5358,7681 5286,7681
 Mainauer Str. -> Bundesallee: Bundesplatztunnel	3 5286,7681 5358,7681 5358,7711
 Bundesallee -> Sieglindestr.: Bundesplatztunnel	3 5356,7862 5358,7711 5458,7866
 Sieglindestr. -> Bundesallee: Bundesplatztunnel	3 5458,7866 5358,7711 5358,7681
-Galanderellianlage -> Schillstr.: unbequem passierbarer Mittelstreifen	3 6920,11064 6882,11061 6873,11011
-Klingelhöferstr. -> Galanderellianlage: unbequem passierbarer Mittelstreifen	3 6880,11110 6882,11061 6920,11064
+Herkulesufer -> Schillstr.: unbequem passierbarer Mittelstreifen	3 6920,11064 6882,11061 6873,11011
+Klingelhöferstr. -> Herkulesufer: unbequem passierbarer Mittelstreifen	3 6880,11110 6882,11061 6920,11064
 Lützowpl. -> Lützowufer: unbequem passierbarer Mittelstreifen	3 7002,11034 6873,11011 6732,11106
 Lützowpl. -> Schillstr.: unbequem passierbarer Mittelstreifen	3 7002,11034 6873,11011 6824,10904
 Schillstr. -> Lützowpl.: unbequem passierbarer Mittelstreifen	3 6882,11061 6873,11011 7002,11034
@@ -739,4 +739,6 @@ Hedwigskirchgasse: wg. Bauarbeiten gesperrt	2::inwork 9743,12239 9756,12139
 (Parkweg Am Karlsbad): tragen (ca. 10 Stufen)	0:40:-140 8190,10960
 Matthäikirchplatz	1 7934,11264 7956,11340 7973,11354
 Matthäikirchplatz	1 7973,11354 7984,11334 7962,11257
-Galanderellianlage: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30 6920,11064 6882,11061
+Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30 6920,11064 6882,11061
+Grunewaldstr. -> Klixstr.: queren schlecht möglich	3 6923,9266 6863,9254 6885,9132
+Klixstr. -> Grunewaldstr.: queren schlecht möglich	3 6885,9132 6863,9254 6727,9229

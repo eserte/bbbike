@@ -3287,6 +3287,13 @@ sub do_iconframe {
 		 },
 		);
 	    $bdm->command
+		(-label => M"Frühere und zukünftige Sperrungen zeichnen",
+		 -command => sub {
+		     $show_active_temp_blockings = 1;
+		     activate_temp_blockings($show_active_temp_blockings, -from => 0);
+		 },
+		);
+	    $bdm->command
 		(-label => M"Speichern für temp_blockings",
 		 -command => sub {
 		     require BBBikeEdit;
