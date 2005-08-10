@@ -551,7 +551,14 @@ userdel	q4 25412,-29762 25541,-29875
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1125007200,
+         'text' => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 28.07.2005-25.08.2005 ',
+         'from' => 1122415200,
+         'data' => 'userdel	2 1772,31266 2257,31124
+',
+         'type' => 'gesperrt'
+       },
        {
          'until' => 1133391600,
          'text' => 'K 7207; (KG südl. Rinow-Weißen); Brücke bei Rinow Brückenbauarbeiten Vollsperrung 20.07.2005-30.11.2005 ',
@@ -587,9 +594,9 @@ userdel	q4 25412,-29762 25541,-29875
        undef,
        undef,
        {
-         'until' => 1124834400,
-         'text' => 'B 112; (OU Neuzelle-OU Guben); Ber. Steinsdorf Vorwerk Bau Oder-Lausitz-Trasse Vollsperrung 22.08.2005-23.08.2005 ',
-         'from' => 1124575200,
+         'until' => 1125439200,
+         'text' => 'B 112; (OU Neuzelle-OU Guben); Ber. Steinsdorf Vorwerk Bau Oder-Lausitz-Trasse Vollsperrung 29.08.2005-30.08.2005 ',
+         'from' => 1125180000,
          'data' => 'userdel	2 98777,-43381 98337,-41604
 ',
          'type' => 'gesperrt'
