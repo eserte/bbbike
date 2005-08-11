@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.61 2005/08/10 19:56:44 eserte Exp $
+# $Id: Makefile,v 2.61 2005/08/10 19:56:44 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -79,8 +79,8 @@ READABLE=	chmod ugo+r
 #COORDS_DATA_SORT_OPTS=	-f -t "|" -k 1,3
 COORDS_DATA_SORT_OPTS=
 
-.ORDER: targets check .modified .rsync_include make_misc
-all:	targets check .modified .rsync_include make_misc
+#.ORDER: targets check .modified .rsync_include make_misc
+all:	targets .WAIT check .WAIT .modified .rsync_include .WAIT make_misc
 
 # These targets have to be rebuild once a day
 .BEGIN:
@@ -645,7 +645,7 @@ remove_checks:
 	rm -f .check_* .create_*
 
 # checks
-check:	report-checks do-checks
+check:	report-checks .WAIT do-checks
 
 report-checks:
 	@echo Now doing checks...
@@ -954,7 +954,7 @@ ${PERSISTENTTMPDIR}/crossings_bahn.bbd:	strassen sbahn rbahn brunnels
 ${PERSISTENTTMPDIR}/crossings_gewaesser.bbd:	\
 					strassen wasserstrassen brunnels
 	${MISCSRCDIR}/check_crossings -v \
-	    -ignore "Fasaneriegraben,Packereigraben,Tr‰nkegraben,Teufelsseekanal,(See im Tiergarten),,Luiseninsel,Fennpfuhl,Heidekampgraben,Karpfenteich,Panke,Nordgraben,Tegeler Flieﬂ,Wuhle,Flutgraben" \
+	    -ignore "Fasaneriegraben,Packereigraben,Tr‰nkegraben,Teufelsseekanal,(See im Tiergarten),,Luiseninsel,Fennpfuhl,Heidekampgraben,Karpfenteich,Panke,Nordgraben,Tegeler Flieﬂ,Wuhle,Flutgraben,Kreuzgraben,Zingergraben,Iderfenngraben" \
 	    -o $@~ -against brunnels \
 	    strassen wasserstrassen
 	mv $@~ $@

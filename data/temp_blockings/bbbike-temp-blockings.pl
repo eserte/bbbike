@@ -1728,7 +1728,7 @@ EOF
        text  => 'L 30; (Bernauer Str.); OL Altlandsberg zw. Strausberger Str. u. Buchholzer Str. Kanalarbeiten Vollsperrung 13.04.2005-16.04.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 32665,17841 33589,15778
+userdel	q4 32665,17841 32985,17127 33589,15778
 EOF
      },
      { from  => 1113084000, # 2005-04-10 00:00

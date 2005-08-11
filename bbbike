@@ -2134,7 +2134,7 @@ sub do_iconframe {
 	if ($advanced) {
 	    $skm->separator;
 	    $skm->checkbutton
-		(-label => M"Autobahnen",
+		(-label => M"Autobahnen/Kfz-Straßen",
 		 -variable => \$str_draw{'sBAB'},
 		 -command => sub {
 		     plot("str", "sBAB", -filename => "strassen_bab");
