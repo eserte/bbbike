@@ -1,4 +1,4 @@
-# $Id: ampeln-orig,v 4.24 2005/08/10 21:02:54 eserte Exp $
+# $Id: ampeln-orig,v 4.24 2005/08/10 21:02:54 eserte Exp eserte $
 	X 9222,8787
 	X 8982,8781
 	X 8594,8773
@@ -1770,3 +1770,5 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B -6182,71661
 	B -6100,73876
  	F 6465,8326
+#: add_fragezeichen: evtl. an der Württembergallee
+	F 936,11280
