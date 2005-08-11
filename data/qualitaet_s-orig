@@ -354,7 +354,7 @@ Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15382,5687
 Uferweg: fester Sandweg	Q1 16604,8576 16529,8845 16449,9011 16319,9149 16259,9182 16129,9189 15969,9102 15793,8984
 Böcklinstr.: Kopfsteinpflaster	Q2 14676,11375 14598,11245
 Berliner Str.: Kopfsteinpflaster	Q2 12746,17981 12479,17811
-Handjerystr.: Kopfsteinpflaster	Q2 20982,3325 20693,3667 20546,3865
+Handjerystr.: Kopfsteinpflaster	Q2 20982,3325 20835,3496 20693,3667 20546,3865
 (An der Müggelspree): fester Waldweg	Q1 23441,4956 23468,5075 23620,5096 23776,5040 23982,5030 24233,4878 24398,4842 24834,4541 25023,4441 25102,4408 25427,4482 25479,4540 25565,4549
 Görlitzer Park: teils fester sandiger Weg	Q1 12671,10042 12686,10045 12690,10062
 Görlitzer Park: teils fester sandiger Weg	Q1 12761,10195 12770,10210 12779,10232
@@ -378,7 +378,7 @@ Tiergarten: Parkweg	Q1 8214,12205 8220,11844 8223,11700
 Tiergarten: Parkweg	Q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
 Parkweg: teils sehr gutes Kopfsteinpflaster	Q1 14310,9692 14452,9919 14656,10197
 Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q0 14373,10046 14192,10145 13903,10237
-Hasenheide: asphaltiert	Q0 11308,8317 11128,9100 11131,9189
+Hasenheide: asphaltiert	Q0 11308,8317 11253,8565 11128,9100 11131,9189
 Hasenheide, zur Lilienthalstr.: Parkweg	Q1 10709,9192 11128,9100
 Carl-Herz-Ufer: Kopfsteinpflaster (kann auf Uferweg umgangen werden)	Q2 10601,9922 10490,10080
 Carl-Herz-Ufer: Kopfsteinpflaster (kann auf breitem asphaltierten Uferweg umgangen werden)	Q1 10168,10085 10313,10084 10490,10080
@@ -1220,7 +1220,7 @@ Oudenarder Str.: Kopfsteinpflaster	Q2 7231,16418 7303,16350 7439,16350 7754,1636
 Taunusstr. (Lichtenrade): gute Betonstraße	Q0 11578,-1220 11515,-935 11475,-595 11475,-548
 Kaiserswerther Str.: grobes Kopfsteinpflaster	Q3 2762,4713 2673,4651 2545,4565 2461,4556
 Schönstedtstr. (Wedding): gutes Verbundsteinpflaster	Q1 8437,15894 8278,16043
-Büchnerweg: Kopfsteinpflaster	Q2 20207,3115 21048,3628
+Büchnerweg: Kopfsteinpflaster	Q2 20207,3115 20835,3496 21048,3628
 Badener Str.: Beton	Q0 24051,9156 23467,9422 23140,9556
 Helmstedter Str.: Asphalt	Q0 5726,9029 5711,9349 5704,9557
 Hubertusstr. (Waidmannslust): Kopfsteinpflaster	Q2 4064,22417 4261,22150
@@ -1527,8 +1527,8 @@ Apostel-Paulus-Str.: Kopfsteinpflaster?	Q2 7044,9163 6945,9142 6885,9132 6745,91
 #not anymore: Heerstr.: Kopfsteinpflaster auf den Parallelstraßen	Q2 467,11221 41,11168 -572,11092 -1269,11008 -1499,10990 -2212,11196
 #: by: ^^^
 #: by: Christiane Wiersch: vvv
-Waldstr. (Niederschönhausen): asphaltiert	Q0 10018,19429 9906,19718 9978,19512
-Waldstr. (Niederschönhausen): Kleinsteinpflaster	Q1 9978,19512 9840,19923
+Waldstr. (Niederschönhausen): asphaltiert	Q0 10018,19429 9978,19512
+Waldstr. (Niederschönhausen): Kleinsteinpflaster	Q1 9978,19512 9906,19718 9840,19923
 Waldstr. (Niederschönhausen): asphaltiert	Q0 9840,19923 9773,20136 9750,20492
 #: by: ^^^
 #: by: Raik:
@@ -2029,7 +2029,7 @@ Potsdamer Str. (Lichterfelde): Kopfsteinpflaster	Q2 3193,3793 3375,3544 3646,315
 Dessauerstr.: mäßiges Kopfsteinpflaster	Q2 6725,2494 6651,2479 6465,2356 6232,2201 6190,2200 6021,2071 5865,1975
 #: by: funda: vvv
 Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10135,-1033 10113,-811 10064,-628
-Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10064,-628 9823,0 10034,-546
+Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10064,-628 10034,-546
 Geibelstr. (Lichtenrade): Verbundsteinpflaster	Q0 10034,-546 9961,-363 9848,-59 9762,155
 #: by: ^^^
 #: by: Jörg (sch8374...) vvv
@@ -2354,7 +2354,7 @@ Rue Diderot: Asphalt	Q0 4559,21681 4625,21595
 #: by: David wolff:
 Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q2 13018,21089 13185,21453 13235,21740 13340,21948 13609,22143 13682,22139 13762,22064
 #: by: Andreas Aurenz: vvv
-Am Breiten Luch: Asphalt	Q0 17531,17802 17650,17605 17907,17161
+Am Breiten Luch: Asphalt	Q0 17531,17802 17650,17605 17751,17437 17907,17161
 #: XXX: aber 25 km/h Geschwindigkeit?
 Blumenweg: schlechtes Kopfsteinpflaster	Q3 8418,4432 8169,4342
 #: by: ^^^
@@ -2467,7 +2467,7 @@ Ahornallee: asphaltiert	Q0 24337,9835 24688,9730 25269,9408 25329,9375
 Holsteinische Str. (Steglitz): mäßiges Kopfsteinpflaster	Q2 5268,6110 5381,6298 5474,6438 5532,6525 5576,6581 5777,6628
 #: by: Wolfgang Thurner: vvv
 #: XXX aber "18 km/h"!
-Goethestr. (Oberschöneweide): schlechtes Kopfsteinpflaster	Q3 18005,6681 18031,6568 18073,6523 18207,6462 18429,6407 18475,6478
+Goethestr. (Oberschöneweide): schlechtes Kopfsteinpflaster	Q3 18005,6681 18008,6672 18031,6568 18073,6523 18207,6462 18429,6407 18475,6478
 Schillerpromenade (Oberschöneweide): Asphalt	Q0 18175,6376 18207,6462 18231,6521 18262,6606
 #: by: ^^^
 #: by: Matthias Grähn:

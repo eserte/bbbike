@@ -1,4 +1,4 @@
-#: version: $Id: radwege-orig,v 4.42 2005/08/10 22:35:45 eserte Exp $
+#: version: $Id: radwege-orig,v 4.42 2005/08/10 22:35:45 eserte Exp eserte $
 #:
 	RW1;RW1 9227,8890 9235,9051
 	RW1;RW1 9235,9051 9248,9350
@@ -53,7 +53,7 @@
 	RW1;RW0 8779,9805 8780,9968
 	RW1;RW0 8780,9968 8783,10166
 	RW1;RW0 8783,10166 8804,10314
-	RW2;RW1 8820,10379 8922,10618
+	RW2;RW1 8820,10379 8878,10514 8922,10618
 	RW2;RW1 8922,10618 8939,10657
 	RW2;RW1 8939,10657 9022,10857
 	RW2;RW1 9522,10017 9444,10000
@@ -3748,7 +3748,7 @@ Dennewitzplatz (Gegenrichtung auch Busspur?)	RW5; 7862,9893 7911,10109 7813,1011
 #: note: auﬂerdem Busspur in der Malteserstr. laut http://www.berlin.de/landespressestelle/archiv/2005/03/08/24355/index.html, best‰tigt von Bertil Schwotzer:
 	RW1;RW1 7758,821 7744,1008 7539,1529 7390,2021 7282,2386 7238,2534 7120,2990
 #: note: Zusatzkommentar von Andreas M.:
-sehr schlechter Zustand, nur eine weiﬂe aufgepinselte Linie	RW1;RW1 2585,5696 2607,6285 2609,6348 2659,6499 2711,6698 2714,6857 2723,7029
+sehr schlechter Zustand, nur eine weiﬂe aufgepinselte Linie	RW1;RW1 2585,5696 2594,5923 2607,6285 2609,6348 2659,6499 2711,6698 2714,6857 2723,7029
 	RW6;RW6 11314,10320 11336,10390
 #: by: Kasi:
 	RW6;RW6 12703,2454 13238,2521 13339,2611

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.66 2005/06/29 23:59:01 eserte Exp eserte $
+# $Id: Makefile,v 1.68 2005/08/10 23:43:20 eserte Exp $
 #
 
 # Targets:
@@ -177,11 +177,13 @@ clean-cache-files-on-remote:
 	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
 	    rm /tmp/b_de_\*
 
-rsync:			check-rsync-ok \
+RSYNC_RULES=		check-rsync-ok \
 			clean-cache-files-on-remote \
 			do-rsync \
 			show-rsync-message \
 			post-rsync-bbbike-data
+.ORDER:	$(RSYNC_RULES)	
+rsync:	$(RSYNC_RULES)	
 
 check-rsync-ok:
 	#perl -nle '/^(.*)www.radzeit.de/ && $$1 !~ /\#/ && print "Using new radzeit server"' /etc/hosts
@@ -201,8 +203,10 @@ rsync-mapserver:
 	@echo NYI
 	false
 
-rsync-routopedia:	do-rsync-routopedia \
+RSYNC_ROUTOPEDIA_RULES=	do-rsync-routopedia \
 			show-rsync-message
+.ORDER:			$(RSYNC_ROUTOPEDIA_RULES)
+rsync-routopedia:	$(RSYNC_ROUTOPEDIA_RULES)
 
 do-rsync-routopedia:
 	-@date >> .last/start-do-rsync-routopedia
@@ -214,11 +218,13 @@ do-rsync-routopedia:
 check-rsync-data-ok:
 	true
 
-rsync-bbbike-data:	check-rsync-data-ok \
+RSYNC_BBBIKE_DATA_RULES:check-rsync-data-ok \
 			clean-cache-files-on-remote \
 			do-rsync-bbbike-data \
 			show-rsync-message \
 			post-rsync-bbbike-data
+.ORDER:			$(RSYNC_BBBIKE_DATA_RULES)
+rsync-bbbike-data:	$(RSYNC_BBBIKE_DATA_RULES)
 
 do-rsync-bbbike-data:
 	-@date >> .last/start-do-rsync-bbbike-data
@@ -248,19 +254,21 @@ show-rsync-message:
 tkrsync:
 	tkrsync -showchanges -rsync="-zrt --cvs-exclude --exclude-from .rsync.exclude" ${RSYNC_SRCDEST}
 
+.ORDER:			${DEPLOY_TARGETS}
 deploy:			${DEPLOY_TARGETS}
 
+.ORDER:			${DEPLOY_LOCAL_TARGETS}
 deploy-local:		${DEPLOY_LOCAL_TARGETS}
 
+.ORDER:			${DEPLOY_DATA_TARGETS}
 deploy-data:		${DEPLOY_DATA_TARGETS}
 
+.ORDER:			${DEPLOY_LOCAL_DATA_TARGETS}
 deploy-local-data:	${DEPLOY_LOCAL_DATA_TARGETS}
 
 test-makefile:
 	${MAKE} -n deploy-local > /tmp/test-makefile.cmd
 	perl -e 'while(<ARGV>) {print STDERR "\a$$_> "; <STDIN>; system($$_) and warn $$?}' /tmp/test-makefile.cmd
-
-#XXX .NOTPARALLEL: rsync
 
 ######################################################################
 # Sub targets
@@ -270,12 +278,12 @@ prepare-bbbike-data:
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} all
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} slow-checks
 
-# XXX using "mapfiles-without-reference-maps" instead of "mapfiles" here
-# This is because the "mapfiles-reference-maps" rule takes a lot of time
-# (5 - 10 minutes), but visually it changes very little. So just do it
-# from time to time manually
+# I used "mapfiles-without-reference-maps" instead of "mapfiles" here
+# This was because the "mapfiles-reference-maps" rule took a lot of time
+# (5 - 10 minutes), but visually it changed very little.
+# But now it's not really slow anymore.
 prepare-mapserver-data:
-	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} mapfiles-without-reference-maps
+	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} mapfiles
 
 prepare-bbbike-dist:	prepare-bbbike-dist-prog prepare-bbbike-dist-data
 

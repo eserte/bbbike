@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.34 2005/06/21 15:33:25 eserte Exp $
+# $Id: Makefile,v 1.35 2005/08/11 00:24:57 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -289,7 +289,7 @@ all:	build-all
 clean:
 	rm -f ${MAPFILES} ${MAPFILES_EXTRA} ${HTMLFILES}
 
-build-all: Makefile.${TARGET}.inc maps html misc .WAIT .built_for.${TARGET}
+build-all: Makefile.${TARGET}.inc .WAIT maps html misc .WAIT .built_for.${TARGET}
 
 .built_for.${TARGET}:
 	rm -f .built_for.*

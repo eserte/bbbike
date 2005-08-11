@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.45 2005/08/08 22:52:00 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.46 2005/08/10 23:43:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -21,7 +21,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.45 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.46 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
     my($pkg, %args) = @_;
@@ -822,7 +822,15 @@ sub make_default_title {
 sub get_street_records_in_bbox {
     my($self, $streets) = @_;
     my %seen;
-    $streets->make_grid(UseCache => 1);
+    my $grid_width = 1000;
+    # XXX I should really use quadtrees...
+    if ($self->{Max_x}-$self->{Min_x} > 100000 ||
+	$self->{Max_y}-$self->{Min_y} > 100000) {
+	$grid_width = 10000;
+    }
+    $streets->make_grid(UseCache => 1,
+			GridWidth => $grid_width, GridHeight => $grid_width,
+		       );
     my @grids = $streets->get_new_grids($self->{Min_x}, $self->{Min_y},
 					$self->{Max_x}, $self->{Max_y},
 				       );
@@ -833,7 +841,7 @@ sub get_street_records_in_bbox {
 	  map  {
 	      $streets->{Grid}{$_} ? @{ $streets->{Grid}{$_} } : ()
 	  } @grids
-	 ])
+	 ]);
 }
 
 sub can_multiple_passes {
