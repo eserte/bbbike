@@ -984,8 +984,10 @@ check-$(city).coords.data:	.check_$(city)_coords_data
 
 check-nearest:	${PERSISTENTTMPDIR}/check_nearest.bbd do-check-nearest
 
-${PERSISTENTTMPDIR}/check_nearest.bbd:	strassen landstrassen landstrassen2 fragezeichen brunnels faehren
-	${MISCSRCDIR}/check_nearest -asbbd \
+${PERSISTENTTMPDIR}/check_nearest.bbd:	strassen landstrassen landstrassen2 fragezeichen brunnels faehren \
+					check_nearest_ignore
+	${MISCSRCDIR}/check_nearest -ignore check_nearest_ignore \
+		-asbbd \
 		-strfile strassen \
 		-strfile landstrassen \
 		-strfile landstrassen2 \
