@@ -1,4 +1,4 @@
-# $Id: qualitaet_s-orig,v 4.65 2005/08/10 22:35:43 eserte Exp eserte $
+# $Id: qualitaet_s-orig,v 4.67 2005/08/13 13:21:16 eserte Exp eserte $
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
@@ -282,7 +282,7 @@ Bersarinplatz: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q2 13710,12633 136
 Petersburger Platz: Kopfsteinpflaster	Q2 13558,12766 13467,12978
 Pettenkoferstr Str.: Kopfsteinpflaster	Q2 15103,12107 15098,12213 15054,12323 14997,12450 14935,12596 14842,12826
 Marktstr., Fahrbahn Richtung Osten: Kopfsteinpflaster	Q2; 15267,10865 15109,10911
-Gryphiusstr.: Kopfsteinpflaster	Q2 14367,11276 14391,11345 14434,11465 14496,11620 14513,11657 14550,11732
+Gryphiusstr.: Kopfsteinpflaster	Q2 14367,11276 14395,11356 14434,11465 14496,11620 14513,11657 14550,11732
 Jungstr.: Kopfsteinpflaster	Q2 14550,11732 14623,11867 14675,11964
 Oberhofer Platz: Kopfsteinpflaster	Q2 5411,2098 5382,2080 5437,1941 5469,1949
 Kieler Str.: Kopfsteinpflaster, OK	Q1 5124,5750 5050,5785
@@ -292,7 +292,7 @@ Königsweg: Waldweg, mäßig bis OK	Q1 -3161,975 -4257,328 -5983,-648 -6395,-887 -6
 Königsweg: Waldweg, mäßig bis OK	Q1 -1088,2134 -1303,2003 -1581,1850 -2043,1596 -2618,1281
 Sonntagstr.: Kopfsteinpflaster	Q2 14434,11465 14535,11327 14598,11245 14669,11152 14752,11041 14798,10985
 Simplonstr.: Kopfsteinpflaster	Q2 13954,11647 14032,11570 14049,11553 14099,11505 14180,11428 14252,11368 14327,11308 14367,11276 14394,11254 14459,11200 14530,11137 14597,11069 14677,11027 14752,11041
-Helenenhof: Kleinkopfsteinpflaster	Q1 14495,11261 14391,11345
+Helenenhof: kleinteiliges Pflaster	Q1 14495,11261 14395,11356
 Matkowskystr.: Kopfsteinpflaster	Q2 14530,11137 14509,11060
 Neue Bahnhofstr.: Kopfsteinpflaster	Q2 14752,11041 14811,11067 14912,11252
 (Klein-Glienicke - Hahn-Meitner-Institut): Waldweg	Q2 -9313,54 -8629,175 -8387,190
@@ -1115,6 +1115,7 @@ Steinstr.: Kopfsteinpflaster	Q2 -7909,-2375 -7978,-2309
 (Anhalter Steg): Holzbohlen	Q1 8726,10351 8773,10429
 (Anhalter Steg - Anhalter Bahnhof): Parkweg, wassergebundener Belag	Q1 8773,10429 8776,10548 8854,10712 8912,10846 8938,10872
 Erich-Lodemann-Str.: Betonstraße	Q1 15765,7567 15429,7948 15268,8118
+Hans-Otto-Str.: Kopfsteinpflaster	Q2 12729,14227 12782,14300 12841,14380
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045

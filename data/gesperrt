@@ -256,7 +256,7 @@ In den neuen Gärten	1 7130,3414 7339,3276 7378,3328 7482,3292
 Braillestr.	1 4433,5315 4460,5274 4512,5199
 Mudrackzeile	1 7009,17778 7043,17667
 Gustav-Müller-Str.	1 7642,8583 7642,8815
-Gustav-Müller-Str.	1 7642,8583 7712,8560 7641,8534 7577,8558 7642,8583
+Gustav-Müller-Platz	1 7642,8583 7712,8560 7641,8534 7577,8558 7642,8583
 Niederlagstr.	1 9959,12180 9926,12368 9918,12411
 Kolk/Behnitz/Möllentordamm	1 -3029,14656 -3010,14612 -2939,14585 -2920,14637 -2992,14667 -3029,14656
 Adolfstr.	1 7796,15590 7817,15418
@@ -731,9 +731,9 @@ Berolinastr. -> Mollstr.: Strassenbahn	3 11858,13056 11867,13076 11839,13083
 Mollstr. -> Berolinastr.: Strassenbahn	3 11905,13069 11867,13076 11858,13056
 Mollstr. -> Büschingstr.: Strassenbahn	3 11721,13142 11839,13083 11879,13133
 Büschingstr. -> Mollstr.: Strassenbahn	3 11879,13133 11839,13083 11867,13076
-(Berolinastr.): Tor zum Spielplatz	0:10:-240 11828,12995
-(Berolinastr.): Tor zum Spielplatz	0:10:-153 11858,13056
-(Berolinastr.): Tor zum Spielplatz	0:10:-242 11781,13019
+(Berolinastr.): Tor zum Spielplatz	BNP:10:-240 11828,12995
+(Berolinastr.): Tor zum Spielplatz	BNP:10:-153 11858,13056
+(Berolinastr.): Tor zum Spielplatz	BNP:10:-242 11781,13019
 Hedwigskirchgasse: wg. Bauarbeiten gesperrt	2::inwork 9743,12239 9756,12139
 (Parkweg Am Karlsbad): tragen (ca. 10 Stufen)	0:40:-140 8190,10960
 Matthäikirchplatz	1 7934,11264 7956,11340 7973,11354
@@ -750,6 +750,6 @@ Olga-Benario-Prestes-Str. -> Greifswalder Str.: Greifswalder Str.	3 12653,14653 
 Greifswalder Str. -> Olga-Benario-Prestes-Str.: Greifswalder Str.	3 12536,14827 12488,14753 12653,14653
 Dietrich-Bonhoeffer-Str.	1 12578,14237 12285,14458
 tragen (3 einzelne Stufen)	0:15:-233 13079,14320
-Achtung schlecht sichtbare Kette!!	0:0:-121 13446,14030
+Achtung schlecht sichtbare Kette!!	BNP:5:-121 13446,14030
 Treppe	0:20:-60 12869,14666
 2 Treppen o. schmale Rampen	0:10:-229 12969,14672

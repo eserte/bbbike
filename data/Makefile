@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.62 2005/08/11 23:24:19 eserte Exp $
+# $Id: Makefile,v 2.62 2005/08/11 23:24:19 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -968,6 +968,8 @@ ${PERSISTENTTMPDIR}/crossings_gewaesser_noignore.bbd:	\
 
 ## Einzeiler zum Extrahieren einer Postleitzahl:
 # perl -F'\|' -nale '$F[2] == 12489 and $F[3] and print "$F[0] $F[1]\tX $F[3]"' Berlin.coords.data > /tmp/12489.bbd
+
+check-coords.data:	check-Berlin.coords.data check-Potsdam.coords.data
 
 .for city in Berlin Potsdam
 check-$(city).coords.data:	.check_$(city)_coords_data

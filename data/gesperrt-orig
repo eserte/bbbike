@@ -1,4 +1,4 @@
-# $Id: gesperrt-orig,v 4.55 2005/08/10 22:35:36 eserte Exp eserte $
+# $Id: gesperrt-orig,v 4.57 2005/08/13 13:21:07 eserte Exp eserte $
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraßen etc.)
@@ -285,7 +285,7 @@ In den neuen Gärten	1 7130,3414 7339,3276 7378,3328 7482,3292
 Braillestr.	1 4433,5315 4460,5274 4512,5199
 Mudrackzeile	1 7009,17778 7043,17667
 Gustav-Müller-Str.	1 7642,8583 7642,8815
-Gustav-Müller-Str.	1 7642,8583 7712,8560 7641,8534 7577,8558 7642,8583
+Gustav-Müller-Platz	1 7642,8583 7712,8560 7641,8534 7577,8558 7642,8583
 Niederlagstr.	1 9959,12180 9926,12368 9918,12411
 Kolk/Behnitz/Möllentordamm	1 -3029,14656 -3010,14612 -2939,14585 -2920,14637 -2992,14667 -3029,14656
 Adolfstr.	1 7796,15590 7817,15418
@@ -679,9 +679,9 @@ Bundesallee: Queren nicht möglich	3nocross 5360,8197 5359,8140 5357,8005
 Bregenzer Str.	1 4278,10262 4227,10014
 Mollstr.: Strassenbahn	3nocross 11839,13083 11867,13076 11905,13069
 Mollstr.: Strassenbahn	3nocross 11867,13076 11839,13083 11721,13142
-(Berolinastr.): Tor zum Spielplatz	0:10 11828,12995
-(Berolinastr.): Tor zum Spielplatz	0:10 11858,13056
-(Berolinastr.): Tor zum Spielplatz	0:10 11781,13019
+(Berolinastr.): Tor zum Spielplatz	BNP:10 11828,12995
+(Berolinastr.): Tor zum Spielplatz	BNP:10 11858,13056
+(Berolinastr.): Tor zum Spielplatz	BNP:10 11781,13019
 #: temporary:
 Hedwigskirchgasse: wg. Bauarbeiten gesperrt	2::inwork 9743,12239 9756,12139
 (Parkweg Am Karlsbad): tragen (ca. 10 Stufen)	0:40 8190,10960
@@ -697,6 +697,6 @@ Greifswalder Str.	3nocross 12338,14532 12384,14600 12437,14680
 Greifswalder Str.	3nocross 12437,14680 12488,14753 12536,14827
 Dietrich-Bonhoeffer-Str.	1 12578,14237 12285,14458
 tragen (3 einzelne Stufen)	0:15 13079,14320
-Achtung schlecht sichtbare Kette!!	0:0 13446,14030
+Achtung schlecht sichtbare Kette!!	BNP:5 13446,14030
 Treppe	0:20 12869,14666
 2 Treppen o. schmale Rampen	0:10 12969,14672
