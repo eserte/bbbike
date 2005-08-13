@@ -44,6 +44,10 @@ Linienstr.: Fahrradstraße geplant (nach der Sanierung)? Oder wird es eine Tempo-
 #: section ^^^
 #
 #: section Straßen in Planung vvv
+#: note: siehe auch: http://www.tagesspiegel.de/bilder/berlin/050813_karte_grenze_500x454.jpg
+Mauerweg am Nordbahnhof: wo genau?	?::inwork 9221,13992 8907,14398
+#: note: siehe auch: http://people.freenet.de/andti/bv/k1148_4816.jpg
+Verlängerung Am Nordgraben: wo genau, wie weit? Brücke unter der S-Bahn ist in Bau	?::inwork 6281,20369 6493,20431
 #: by: berliner-stadtplan.com
 #: next_check: 2006-01-01
 Grenzweg: Brücke über die Spree soll 2006 fertig werden	?::inwork 17131,7131 16993,6975
@@ -449,7 +453,9 @@ Mauerweg Spandau: laut "Berliner Umland" witterungsabhängige Strecke	? -7107,161
 Mauerweg Spandau: laut "Berliner Umland" gut geeigneter Radweg	? -7322,12806 -7337,12293 -7153,12081 -5618,11246 -5487,11212
 Am Park - Gutsstr. - Privatstr.: Durchfahrt möglich? Qualität?	? -9364,7189 -9128,7275 -8968,7328 -8768,7338 -8367,7717
 Mauerweg am Groß-Glienicker See: laut "Berliner Umland" witterungsabhängige Strecke	? -9128,7275 -9178,7165 -9175,7037 -9437,6887 -9490,6650 -9668,6171 -9665,5840 -9725,5559 -9797,5374
-Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsabhängige Strecke	? -9430,4935 -9543,4625 -8868,3875 -8820,3707
+Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsabhängige Strecke	? -9430,4935 -9543,4625
+#: note: siehe auch http://archiv.tagesspiegel.de/archiv/13.08.2005/1987440.asp
+Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsabhängige Strecke; am Luisenberg wird vielleicht demnächst asphaltiert	? -9543,4625 -8868,3875 -8820,3707
 Mauerweg am Griebnitzsee: laut "Berliner Umland" witterungsabhängige Strecke, laut "mobil-potsdam.de" Waldweg	? -9656,-285 -9562,-325 -9412,-518 -9337,-668 -9109,-821 -8934,-871 -8846,-993 -8693,-1115 -8662,-1215 -8378,-1490 -8250,-1503 -8062,-1459 -7837,-1346 -7592,-1402
 Mauerweg in Schildow: Qualität? Wegführung? einzelne Straßen benennen?	? 7639,24383 7590,24481 7412,24481 7425,24715 6821,24700 6306,24537 6034,24503 5534,24521 5309,24571 5256,24593 4950,24293 4825,24328
 Mauerweg in Frohnau: Verlauf weitgehend unklar, Qualität?	? 3848,24546 3600,24490 3515,24668 3546,24859 3603,24968 3306,25259 3200,25429 3211,25484 3473,25618 3662,25618 3615,25890 3362,26046 3390,26225 3540,26465 3450,26503 3403,26668
@@ -526,7 +532,7 @@ Arnimstr.: Qualität? Wo ist die Verbindung zur Gehrenseestr.?	? 17891,17097 1850
 Unterbaumstr.: noch in Bau?	?::inwork 8581,13013 8503,12895
 Wuhlewanderweg - Alte/Hellerdorfer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? 22827,14356 23172,14395
 Bäkepromenade: Qualität? Existiert eine Verbindung?	? -2618,-1473 -2800,-1484 -2802,-1636
-Krausnick - Brand: Durchfahrt möglich? (Laut lbvs Vollsperrung)	? 40398,-40989 35175,-41012 33108,-41767
+Krausnick - Brand: Durchfahrt möglich? (Laut lbvs Vollsperrung)	? 40398,-40989 35178,-41015 33108,-41767
 Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2034,55227 -285,58256
 Kramerstr.: Qualität (laut ADFC-Karte gut geeignet)? Ab Kramersteg Richtung SO nur für Radfahrer offen? Wie ist die Anbindung Kramersteg/Uferpromenade?	? 4534,3456 4801,3370 5015,3292
 Humboldtstr. (Grunewald): Qualität?	? 2444,8919 2453,9156 2467,9428 2477,9551 2481,9606
@@ -693,7 +699,7 @@ Um den Laßzinssee: Qualität?	? -6459,20769 -6465,21060 -6099,21157 -6044,20971 -
 Uferweg an der Havel: Qualität (laut ADFC-Karte "mäßig geeignet")?	? -2062,18363 -2291,18628 -2349,18744 -2434,18832 -2474,18921 -2516,19186 -2644,19213 -2733,19454 -2854,19552 -2897,19637 -2821,19740
 Berlin - Kopenhagen zwischen Hennigsdorf und Birkenwerder: Qualität? Nur für Radfahrer?	? -2118,26060 -2126,26133 -2029,26221 -1931,26602 -1925,26785 -2346,27455 -2327,27687 -2193,27684 -2080,27830 -2126,27912 -2123,28101 -1937,28217 -1532,28723 -1233,28982 -1547,29405 -1450,29500 -1173,29043 -1017,29606 -959,30066 -1011,30234 -904,30505 -524,30749 164,30849 362,31115 685,31008 728,31188 1045,31014 1112,31032 1322,31297 1365,31450 1429,31501
 Berlin - Kopenhagen zwischen Lehnitzsee und Liebenwalde: Qualität? Nur für Radfahrer?	? 1281,39850 1343,41897 1636,42677 1867,42860 2209,42373 4000,44274 4564,44474 5073,45310 5207,45420 5475,45590 5987,46492 7047,47102 8254,47126 9204,48003 9825,48275
-Berlin - Kopenhagen zwischen Liebenwalde und Zehdenick: Qualität? Nur für Radfahrer?	? 8522,51745 8510,52025 8083,52074 8081,53068 7981,54068 7918,54093 7925,54743 8083,55925 7827,56669 7962,57318 7937,57706 7581,58350 7568,58668 7681,59556 7587,60006 7481,60368 7475,60393 7075,60862 6362,61350 5993,61743 5437,63156 5318,63337 5112,63250 4880,63531
+Berlin - Kopenhagen zwischen Liebenwalde und Zehdenick: Qualität? Nur für Radfahrer?	? 8509,51740 8510,52025 8083,52074 8081,53068 7981,54068 7918,54093 7925,54743 8083,55925 7827,56669 7962,57318 7937,57706 7581,58350 7568,58668 7681,59556 7587,60006 7481,60368 7475,60393 7075,60862 6362,61350 5993,61743 5437,63156 5318,63337 5112,63250 4880,63531
 Berlin - Kopenhagen: Zehdenick - Burgwall/Marienthal: Qualität? Nur für Radfahrer?	? 3493,63862 3731,65818 3212,66343 3350,67075 3187,67481 2656,68100 2831,68281 2925,69200 2850,69212 2850,69618 2737,69975 2731,70156 2406,70381 2387,70443 2412,70506 2350,70775 2200,70818 2037,71025 1918,71193 1912,71400 1712,71537 650,71562
 Berlin - Kopenhagen: Zabelsdorf - Dannenwalde: Qualität? Nur für Radfahrer?	? -1143,71100 -1987,71562 -2768,71868 -4125,72768 -5425,73225 -6006,73781
 Berlin - Kopenhagen: Dannenwalde - Bredereiche: Qualität? Nur für Radfahrer?	? -5525,74800 -5525,75100 -5062,77525 -5212,77625 -4150,79437 -3712,79825 -3112,80075 -2600,80500 -2343,80985
@@ -780,7 +786,7 @@ Spreebogenpark: neuer Weg parallel zum Uferweg mit Rampe zur Gustav-Heinemann-Br
 Betckestr.: Qualität?	? -3614,12529 -3236,12533 -3150,12545
 Altonaer Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? -4900,13857 -4742,13839 -4298,13810 -3971,13755 -3689,13680
 Nauener Str. zur Altonaer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? -4731,13970 -4742,13839
-Staakener Str.: Qualität zwischen Seegefelder Str. und Nauener Str.? Einbahnstraße auch für Radfahrer gültig?	? -4109,14240 -4664,14154 -4707,14196
+Staakener Str.: Qualität zwischen Seegefelder Str. und Nauener Str.? Einbahnstraße auch für Radfahrer gültig?	? -4112,14242 -4664,14154 -4709,14197
 Krumme Gärten: Qualität	? -3998,13138 -3986,13367
 Sandstr.: Qualität?	? -5393,12387 -5493,12214 -5576,12057 -5760,11787
 Blasewitzer Ring: Qualität (laut ADFC-Karte mäßig geeignet)?	? -5393,12387 -5198,12337 -5103,12582 -5135,12639
