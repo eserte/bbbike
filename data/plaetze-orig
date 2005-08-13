@@ -1,4 +1,4 @@
-# $Id: plaetze-orig,v 4.26 2005/08/13 13:21:14 eserte Exp $
+# $Id: plaetze-orig,v 4.26 2005/08/13 13:21:14 eserte Exp eserte $
 Hackescher Markt	Pl 10264,13097
 Rosenthaler Platz	Pl 10177,13766
 #: XXX Leider funktioniert der "duplicates"-Test nicht mehr, da es auch einen Eintrag in strassen-orig gibt...
@@ -25,7 +25,8 @@ Ostseeplatz	Pl 12743,15811
 Prerower Platz	Pl 17159,17631
 Frankfurter Tor	Pl 13792,12292
 Helene-Weigel-Platz	Pl 19628,13517
-Hohenzollernplatz (Wilmersdorf)	Pl 5070,9720 5162,9777 5223,9810 5253,9754 5174,9708 5066,9645 5070,9720
+#: XXX Leider funktioniert der "duplicates"-Test nicht mehr, da es auch einen Eintrag in strassen-orig gibt...
+#Hohenzollernplatz (Wilmersdorf)	Pl 5070,9720 5162,9777 5223,9810 5253,9754 5174,9708 5066,9645 5070,9720
 Innsbrucker Platz	Pl 6409,8026
 John-F.-Kennedy-Platz	Pl 6470,8681
 Leuthener Platz	Pl 7716,8356
