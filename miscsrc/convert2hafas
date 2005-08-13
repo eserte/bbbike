@@ -317,16 +317,16 @@ LINES: while(defined($_ = nextline())) {
     }
     if ($strict) {
 	if ($rest =~ /^\s/) {
-	    die "Leading space in coordinates, line $_";
+	    add_error "Leading space in coordinates, line $_";
 	} elsif ($rest =~ /\s$/) {
-	    die "Trailing space in coordinates, line $_";
+	    add_error "Trailing space in coordinates, line $_";
 	}
     }
     my(@coord) = split(/ /, $rest); # nur nach Space trennen (160 kein Trennzeichen)
     if (!@coord) {
 	$no_coords++;
 	if ($strict) {
-	    die "No coords in line $_";
+	    add_error "No coords in line $_";
 	}
     }
     my $cat = shift @coord;
@@ -379,7 +379,7 @@ LINES: while(defined($_ = nextline())) {
 	    $coords .= "*";
 	    next;
 	}
-	die "Can't parse coordinate <$_> in coordinate list <$rest>"
+	add_error "Can't parse coordinate <$_> in coordinate list <$rest>"
 #	  if (!/(:[^:]+:)?([HSBE])?\(([+-]?\d+),([+-]?\d+)\)/);
 	  if (!/(:[^:]+:)?([HSBE])?([+-]?[\d.]+),([+-]?[\d.]+)/);
 	my($spec, $type, $oldx, $oldy) = ($1, $2, $3, $4);
@@ -388,7 +388,7 @@ LINES: while(defined($_ = nextline())) {
 	if (defined $type) {
 	    if ($type ne 'S' and $type ne 'B' and
 		$type ne 'H' and $type ne 'E') {
-		die "Parse error: Neither S nor B nor H nor E: $type";
+		add_error "Parse error: Neither S nor B nor H nor E: $type";
 	    }
 	    if ($keep_prefixed) {
 		if ($type eq $global_use_map) {
@@ -445,11 +445,11 @@ LINES: while(defined($_ = nextline())) {
 	    if ($spec) {
 		if ($spec eq 'B_ON') {
 		    if ($specborder_flag) {
-			die "Multiple B_ON in $name";
+			add_error "Multiple B_ON in $name";
 		    }
 		    $specborder_flag++;
 		} elsif ($spec ne 'B_OFF') {
-		    die "Unknown specifier $spec in $name";
+		    add_error "Unknown specifier $spec in $name";
 		}
 	    }
 	    if ($specborder_flag) {
@@ -458,14 +458,14 @@ LINES: while(defined($_ = nextline())) {
 	    if ($spec) {
 		if ($spec eq 'B_OFF') {
 		    if (!$specborder_flag) {
-			die "Multiple B_OFF or B_OFF without B_ON in $name";
+			add_error "Multiple B_OFF or B_OFF without B_ON in $name";
 		    }
 		    print
 		      SPEC "Berlin\tZ " . join(" ", @specborder_list) . "\n";
 		    $specborder_flag = 0;
 		    @specborder_list = ();
 		} elsif ($spec ne 'B_ON') {
-		    die "Unknown specifier $spec in $name";
+		    add_error "Unknown specifier $spec in $name";
 		}
 	    }
 	}
@@ -530,11 +530,15 @@ LINES: while(defined($_ = nextline())) {
     }
 
     if (@specborder_list) {
-	die "Missing B_OFF in $name";
+	add_error "Missing B_OFF in $name";
     }
 }
 close F;
 close W;
+
+if ($errors) {
+    die "Errors encountered, giving up.\n";
+}
 
 if ($infile) {
     require File::Copy;
@@ -837,7 +841,7 @@ sub add_error ($) {
     $errors++;
     if ($errors >= $max_errors) {
 	if ($max_errors > 1) {
-	    die "Too many errors - giving up!\n";
+	    die "Too many errors - giving up.\n";
 	} else {
 	    exit 1;
 	}
