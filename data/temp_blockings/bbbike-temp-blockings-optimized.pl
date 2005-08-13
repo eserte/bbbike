@@ -144,14 +144,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1123884000,
-         'text' => 'L 401; (Lindenallee, Fontaneallee); OL Zeuthen, zw. Forstweg und Fährstr. grundhafter Straßenbau Vollsperrung 01.11.2004-12.08.2005 ',
-         'from' => 1099177200,
-         'data' => 'userdel	q4 26581,-7087 26146,-6218
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1125525600,
@@ -567,14 +560,7 @@ userdel	q4 25412,-29762 25541,-29875
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1123884000,
-         'text' => 'Hönower Str. (Mahlsdorf) in Richtung Alt-Mahlsdorf zwischen Wilhelmsmühlenweg und Alt-Mahlsdorf Baustelle, Fahrtrichtung gesperrt (bis 12.08.2005)',
-         'from' => 1121801694,
-         'data' => 'userdel	q4; 24631,11719 24591,11625 24603,11450 24658,11293
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,

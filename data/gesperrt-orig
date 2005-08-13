@@ -259,7 +259,7 @@ Schmollerplatz/str.	1 13241,9407 13184,9340 13209,9325
 Isarstr.	1 12349,8464 12368,8356
 Zionskirchplatz	1 10306,14247 10277,14350 10315,14386 10365,14372 10389,14274
 Ohmstr.	1 11324,11689 11378,11856
-Anton-Saefkow-Str.	1 13202,14388 12885,14616 12723,14714 12536,14827
+Anton-Saefkow-Str.	1 13202,14388 13084,14472 12998,14533 12885,14616 12782,14676 12723,14714 12536,14827
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 Wöhlertstr.	1 8442,14456 8662,14567
 Pflugstr.	1 8662,14567 8781,14357
@@ -419,7 +419,7 @@ Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6853,1
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 10215,16527 9998,16547 9883,16557 9816,16565
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 14291,12220 14381,12205 14434,12196 14488,12189
 Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11649 9899,11670 9982,11680
-Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13334,13459
+#Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13241,13405 13334,13459
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12188,14321 12239,14393 12285,14458 12338,14532
 #: note: Fußgängerfurt existiert zwischen Chodowieckistr. und Jablonskistr.:
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 11642,14625 11662,14695 11681,14759
@@ -489,7 +489,7 @@ tragen (Spreetunnel)	0:60 25658,4619
 tragen (Spreetunnel)	0:60 25565,4549
 tragen (Brücke Tegeler Hafen)	0:60 1250,20284
 tragen (Brücke Tegeler Hafen)	0:60 1195,20342
-tragen (S-Bahn-Zugang, insgesamt drei Treppen)	0:120 7854,7572
+tragen (S-Bahn-Zugang, insgesamt drei Treppen á 12 Stufen)	0:120 7854,7572
 tragen? (Fußgängerbrücke)	0:120 20445,536
 tragen? (Fußgängerbrücke)	0:120 19770,-213
 tragen (Stufen), mit MTB befahrbar	0:30 5725,11644
@@ -693,3 +693,10 @@ Grunewaldstr.: queren schlecht möglich	3nocross 6727,9229 6863,9254 6923,9266
 Adolf-Scheidt-Platz	1 8723,8100 8759,8071 8770,8018 8760,7976 8726,7944
 Rumeyplan	1 8682,7714 8799,7741 8894,7783 8940,7835
 Rumeyplan	1 8967,7821 8902,7763 8815,7722 8684,7688
+Greifswalder Str.	3nocross 12338,14532 12384,14600 12437,14680
+Greifswalder Str.	3nocross 12437,14680 12488,14753 12536,14827
+Dietrich-Bonhoeffer-Str.	1 12578,14237 12285,14458
+tragen (3 einzelne Stufen)	0:15 13079,14320
+Achtung schlecht sichtbare Kette!!	0:0 13446,14030
+Treppe	0:20 12869,14666
+2 Treppen o. schmale Rampen	0:10 12969,14672
