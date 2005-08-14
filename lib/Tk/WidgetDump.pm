@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: WidgetDump.pm,v 1.30 2004/10/02 16:03:41 eserte Exp $
+# $Id: WidgetDump.pm,v 1.30 2004/10/02 16:03:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -739,6 +739,13 @@ sub edit_canvas_config {
     warn $@ if $@;
     $e->focus if Tk::Exists($e);
     $t->bind("<Escape>" => [$t, 'destroy']);
+    $t->Button(-text => "Undef and close",
+	       -command => sub {
+		   $val = undef;
+		   $set_sub->();
+		   $t->destroy;
+	       }
+	      )->pack(-side => "left");
     $t->Button(-text => "Close", -command => [$t, "destroy"])->pack(-side => "left");
 }
 

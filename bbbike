@@ -1412,6 +1412,7 @@ mk_power_txt();
 ## DEBUG_END
 
 # Zeichens‰tze f¸r Straﬂennamen
+# Normal
 if (defined $font_family && $font_family =~ /nimbus/) {
     # XXX nimbus is a rather obscure font found in
     # /usr/ports/x11-fonts/freefonts --- maybe use another?
@@ -1419,22 +1420,32 @@ if (defined $font_family && $font_family =~ /nimbus/) {
     # somewhere called "nimbus sans" without "l"
     $rot_font_sub  = sub { "-*-nimbus sans l-medium-r-condensed--0-" . $_[0]
 			       . "-0-0-p-0-iso8859-1"};
-    if (!check_font($rot_font_sub->(120))) {
-	undef $rot_font_sub;
-    }
+} elsif (defined $font_family && $font_family =~ /luxi/) {
+    # a Type 1 font --- slower and nicer
+    $rot_font_sub = sub { '-b&h-Luxi Sans-medium-r-normal--0-' . $_[0] . '-0-0-p-0-iso8859-1'};
 }
+if (defined $rot_font_sub && !check_font($rot_font_sub->(120))) {
+    warn "Cannot get normal font in $font_family, use fallback...\n";
+    undef $rot_font_sub;
+}
+# Fallback to helvetica
 if (!$rot_font_sub) {
     my $font_family = "helvetica";
     $rot_font_sub  = sub { "-*-$font_family-medium-r-normal--0-" . $_[0]
 			     . "-0-0-p-0-iso8859-1"};
 }
+# Bold
 if (defined $font_family && $font_family =~ /nimbus/) {
     $rot_bold_font_sub  = sub { "-*-nimbus sans l-bold-r-condensed--0-" . $_[0]
 				  . "-0-0-p-0-iso8859-1"};
-    if (!check_font($rot_bold_font_sub->(120))) {
-	undef $rot_bold_font_sub;
-    }
+} elsif (defined $font_family && $font_family =~ /luxi/) {
+    $rot_bold_font_sub = sub { '-b&h-Luxi Sans-bold-r-normal--0-' . $_[0] . '-0-0-p-0-iso8859-1'};
 }
+if (defined $rot_bold_font_sub && !check_font($rot_bold_font_sub->(120))) {
+    warn "Cannot get bold font in $font_family, use fallback...\n";
+    undef $rot_bold_font_sub;
+}
+# Fallback to helvetica bold
 if (!$rot_bold_font_sub) {
     my $font_family = "helvetica";
     $rot_bold_font_sub  = sub { "-*-$font_family-bold-r-normal--0-" . $_[0]
@@ -5220,6 +5231,15 @@ sub define_item_attribs {
 		  M"Beeintr‰chtigungen auf ca. 13 km/h"],
 	 'q4' => [M"auf Schrittgeschwidigkeit", undef, undef,
 		  M"Beeintr‰chtigungen auf Schrittgeschwidigkeit"],
+
+	 '6'  => [M"Groﬂ- oder Millionenstadt", M"Groﬂ- oder Millionenst‰dte", undef],
+	 '5'  => [M"Groﬂstadt", M"Groﬂst‰dte", undef],
+	 '4'  => [M"Ortskategorie 4", M"Ortskategorie 4", undef],
+	 '3'  => [M"Ortskategorie 3", M"Ortskategorie 3", undef],
+	 '2'  => [M"Ortskategorie 2", M"Ortskategorie 2", undef],
+	 '1'  => [M"kleiner Ort", M"kleine Orte", undef],
+	 '0'  => [M"Ortsteil", M"Ortsteile", undef],
+
 	);
     foreach (@Radwege::category_order) {
 	if (defined $Radwege::category_code{$_}) {
@@ -5664,7 +5684,12 @@ sub generate_plot_functions {
 
 			# no $cat_rueck support for names
 			if ($str_name_draw{$abk}
-			    && (($abk =~ /^[ls]/ && $cat_hin =~ /^[BH]/) || 0) # XXX nur Hauptstraﬂen zeichnen (wg. Performance und ‹bersichtlichkeit)
+			    && (($abk =~ /^[ls]/ &&
+				 ($cat_hin =~ /^[BH]/ ||
+				  ($lazy_str{$abk} && $scale >= 10)
+				 )) || 0) # nur Hauptstraﬂen zeichnen (wg. Performance
+                                          # und ‹bersichtlichkeit), oder auch Nebenstraﬂen,
+                                          # falls lazy_plot und kleiner Maﬂstab 
 			   ) {
 			    my $strname = Strassen::strip_bezirk($strname);
 			    Tk::RotFont::canvas

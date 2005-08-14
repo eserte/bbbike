@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Polar.pm,v 1.14 2005/04/30 07:45:36 eserte Exp $
+# $Id: Polar.pm,v 1.15 2005/08/14 18:06:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.

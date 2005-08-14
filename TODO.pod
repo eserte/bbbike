@@ -1421,6 +1421,17 @@ E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.
 
 =over
 
+=item * (H4)
+
+bbd.desc-Dateien zugunsten von globalen Direktiven aufgeben. Beispiele
+wären:
+
+    #: title.de: Brücken und Tunnel
+    #: title.en: Bridges and tunnels
+
+    #: category_image.bg: behindertengerecht.gif
+    #: category_image.bf: behindertenfreundlich.gif
+
 =item * (H2)
 
 0-Sperrungen mit Richtungen durch drei Koordinaten kennzeichnen.

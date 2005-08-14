@@ -512,15 +512,7 @@ userdel	2 -4504,-14978 -4077,-14595
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1123970400,
-         'text' => 'L 74; (Kastanienallee); OL Teupitz, Durchlass Ersatzneubau Vollsperrung 11.07.2005-13.08.2005 ',
-         'from' => 1120946400,
-         'data' => 'userdel	q4 25240,-29746 25412,-29762
-userdel	q4 25412,-29762 25541,-29875
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {

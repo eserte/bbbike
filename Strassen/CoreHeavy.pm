@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.25 2005/08/10 23:44:32 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.26 2005/08/14 18:06:11 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -667,6 +667,7 @@ sub sort_records_by_cat {
 
 sub default_cat_stack_mapping {
     return {'F:W'          => 3, # Gewässer
+	    'F:W1'         => 3, # Gewässer
 	    'W'            => 3,
 	    'W1'           => 3,
 	    'W2'           => 3,
@@ -675,16 +676,31 @@ sub default_cat_stack_mapping {
 
 	    # XXX This should be changed to real categories
 	    'F:#c08080'    => 10, # bebaute Flächen
-	    'F:violet'     => 20, # Industrie
+	    'F:violet'     => 20, # Industrie (alt)
+	    'F:Industrial' => 20, # Industrie
 	    'F:DarkViolet' => 21, # Hafen oder Industrie
-	    'F:#46b47b'    => 13, # Wald
+	    'F:#46b47b'    => 13, # Wald (alt)
+	    'F:Woods'      => 13, # Wald
+	    'F:Orchard'    => 13,
+	    'F:Sport'      => 13,
+	    'F:Green'      => 13,
 
+	    'BAB'	   => 21,
 	    'B'            => 20,
 	    'HH'           => 15,
 	    'H'            => 10,
 	    'N'            => 5,
 	    'NN'           => 1,
 	    'Pl'	    => 0,
+
+	    # Orte
+	    6		   => 6,
+	    5		   => 5,
+	    4		   => 4,
+	    3		   => 3,
+	    2		   => 2,
+	    1		   => 1,
+	    0 		   => 0,
 	   };
 }
 

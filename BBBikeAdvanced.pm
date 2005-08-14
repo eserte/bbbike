@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.122 2005/07/22 22:14:50 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.123 2005/08/14 18:05:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2716,7 +2716,10 @@ sub search_anything {
     my $e;
     my @inx2match;
 
+    my $sort = "alpha"; # XXX make global or configurable
+
     my $do_search = sub {
+	return if $s eq '';
 ### fork in eval is evil ??? (check it, it seems to work for 5.8.0 + FreeBSD)
 	IncBusy($t);
 	eval {
@@ -2816,13 +2819,60 @@ sub search_anything {
 	    } keys %found_in) {
 		my $matches = $found_in{$file};
 		$lb->insert("end", ($title{$file} || $file).":");
+		$lb->itemconfigure("end", -foreground => "#0000a0")
+		    if $lb->Subwidget("scrolled")->can("itemconfigure");
 		push @inx2match, undef;
+		my @sorted_matches;
+		my $indent = " "x2;
+		if ($sort eq 'dist') {
+		    my($center) = join(",",anti_transpose($c->get_center));
+		    @sorted_matches = map {
+			$_->[1];
+		    } sort {
+			$a->[0] <=> $b->[0];
+		    } map {
+			my $match = $_;
+			my $nearest = min(map {
+			    Strassen::Util::strecke_s($center, $_);
+			} @{$match->[Strassen::COORDS()]});
+			[$nearest, $match];
+		    } @$matches;
+		} elsif ($sort eq 'cat') {
+		    my $cat_stack_mapping = Strassen->default_cat_stack_mapping();
+		    @sorted_matches = sort {
+			my $cmp = $cat_stack_mapping->{$b->[Strassen::CAT()]} <=> $cat_stack_mapping->{$a->[Strassen::CAT()]};
+			if ($cmp == 0) {
+			    $a->[Strassen::NAME()] cmp $b->[Strassen::NAME()];
+			} else {
+			    $cmp;
+			}
+		    } @$matches;
+		    $indent = " "x4;
+		} else { # $sort eq 'alpha'
+		    @sorted_matches = sort { $a->[0] cmp $b->[0] } @$matches;
+		}
+
 		my $last_name;
-		foreach my $match (sort { $a->[0] cmp $b->[0] } @$matches) {
+		my $last_cat;
+		foreach my $match (@sorted_matches) {
 		    if (defined $last_name && $last_name eq $match->[0]) {
 			push @{ $inx2match[-1]->[3] }, $match->[1];
 		    } else {
-			$lb->insert("end", "  " . $match->[0]);
+			my $this_cat = $match->[Strassen::CAT()];
+			if ($sort eq 'cat' &&
+			    $file !~ /^PLZ-Datenbank/ &&
+			    (!defined $last_cat || $last_cat ne $this_cat)) {
+			    my $cat_name = $category_attrib{$this_cat}->[ATTRIB_PLURAL];
+			    if (!defined $cat_name) {
+				$cat_name = $this_cat;
+			    }
+			    $lb->insert("end", "  " . $cat_name);
+			    $lb->itemconfigure("end", -foreground => "#000060")
+				if $lb->Subwidget("scrolled")->can("itemconfigure");
+			    $last_cat = $this_cat;
+			    push @inx2match, "";
+			}
+			$lb->insert("end", $indent . $match->[0]);
 			push @inx2match, $match;
 			$last_name = $match->[0];
 		    }
@@ -2840,9 +2890,8 @@ sub search_anything {
 
     $t->transient($top) if $transient;
     my $f1 = $t->Frame->pack(-fill => 'x');
-    $f1->Button(-text => "Suchen:", -padx => 0, -pady => 0,
-		-command => $do_search,
-	       )->pack(-side => "left");
+    $f1->Label(-text => "Suchen:", -padx => 0, -pady => 0,
+	      )->pack(-side => "left");
     my $Entry = 'Entry';
     my @Entry_args;
     eval {
@@ -2865,21 +2914,57 @@ sub search_anything {
 	Construct Tk::Widget 'ListboxSearchAnything';
 	sub UpDown {
 	    my($w, $amount) = @_;
+	    my $new_amount = $amount;
 	    my $new_inx = $w->index('active')+$amount;
-	    if ($w->get($new_inx) =~ /^\S/) { # is a headline?
-		$amount *= 2;
+	    my $inc = ($amount > 0 ? 1 : -1);
+	    if (${ $w->{SortTypeRef} } eq 'cat') {
+		while($w->get($new_inx) =~ /^(\S|  \S)/) { # headline or category line
+		    $new_inx+=$inc;
+		    $new_amount+=$inc;
+		    last if ($w->index("end") <= $new_inx);
+		}
+	    } else {
+		if ($w->get($new_inx) =~ /^\S/) { # is a headline?
+		    $new_amount+=$inc;
+		}
 	    }
-	    $w->SUPER::UpDown($amount);
+	    $w->SUPER::UpDown($new_amount);
 	}
     }
 
-    $lb = $t->Scrolled("ListboxSearchAnything", -scrollbars => "osoe"
+    $lb = $t->Scrolled("ListboxSearchAnything", -scrollbars => "osoe",
+		       -width => 32,
+		       -height => 12,
 		      )->pack(-fill => "both", -expand => 1);
-    my $cb = $t->Button(Name => 'close',
-			-command => sub {
-			    $t->withdraw;
-			    #$t->destroy;
-			})->pack(-fill => "x");
+    $lb->Subwidget("scrolled")->{SortTypeRef} = \$sort;
+    {
+	my $f = $t->LabFrame(-label => M("Sortieren"),
+			     -labelside => "acrosstop",
+			    )->pack(-fill => "x");
+	for my $cb_def (["Alphabetisch",    "alpha"],
+			["nach Entfernung", "dist"],
+			["nach Kategorie",  "cat"],
+		       ) {
+	    my($text, $sort_value) = @$cb_def;
+	    $f->Radiobutton(-text => M($text),
+			    -variable => \$sort,
+			    -value => $sort_value,
+			    -command => $do_search,
+			   )->pack(-anchor => "w");
+	}
+    }
+    my $cb;
+    {
+	my $f = $t->Frame->pack(-fill => "x");
+	$cb = $f->Button(Name => 'close',
+			 -command => sub {
+			     $t->withdraw;
+			     #$t->destroy;
+			 })->pack(-side => "right");
+	$f->Button(Name => 'search',
+		   -command => $do_search,
+		  )->pack(-side => "right");
+    }
     $t->protocol(WM_DELETE_WINDOW => sub { $cb->invoke });
 
     my $select = sub {
