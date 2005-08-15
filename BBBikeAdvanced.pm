@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.123 2005/08/14 18:05:28 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.123 2005/08/14 18:05:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2753,21 +2753,29 @@ sub search_anything {
 		if (@matches) {
 		    my $file = File::Basename::basename($search_file);
 		    $found_in{$file} = \@matches;
-		    require Safe;
-		    my $s = Safe->new('BBBike::Search');
-		    undef $BBBike::Search::title;
-		    $s->rdo($search_file.".desc");
-		    if (defined $BBBike::Search::title) {
-			if (ref $BBBike::Search::title eq 'HASH') {
-			    my $lang = $Msg::lang || "de";
-			    $title{$file} = $BBBike::Search::title->{$lang} ||
-				            $BBBike::Search::title->{"de"};
-			} else {
-			    $title{$file} = $BBBike::Search::title;
-			}
+		    my $glob_dir = Strassen->get_global_directives($search_file);
+		    eval {
+			my $lang = $Msg::lang || "de"; # XXX get from $var or func
+			$title{$file} = ($glob_dir->{"title.$Msg::lang"} || $glob_dir->{"title.de"})->[0];
 			$title{$file} .= " ($file)";
-		    } else {
-			$title{$file} = $file;
+		    };
+		    if ($@ || !$title{$file}) {
+			require Safe;
+			my $s = Safe->new('BBBike::Search');
+			undef $BBBike::Search::title;
+			$s->rdo($search_file.".desc");
+			if (defined $BBBike::Search::title) {
+			    if (ref $BBBike::Search::title eq 'HASH') {
+				my $lang = $Msg::lang || "de";
+				$title{$file} = $BBBike::Search::title->{$lang} ||
+				    $BBBike::Search::title->{"de"};
+			    } else {
+				$title{$file} = $BBBike::Search::title;
+			    }
+			    $title{$file} .= " ($file)";
+			} else {
+			    $title{$file} = $file;
+			}
 		    }
 		}
 	    }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.58 2005/07/17 21:26:17 eserte Exp $
+# $Id: Core.pm,v 1.59 2005/08/14 20:33:46 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.58 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.59 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -200,6 +200,7 @@ sub read_from_fh {
     my @data;
     my @directives;
 
+    my $read_only_global_directives = $args{ReadOnlyGlobalDirectives};
     my $use_local_directives = $args{UseLocalDirectives};
     my $has_tie_ixhash = 0;
     if ($use_local_directives) {
@@ -260,6 +261,7 @@ sub read_from_fh {
 		next;
 	    }
 	    $directives_stage = DIR_STAGE_LOCAL if $directives_stage eq DIR_STAGE_GLOBAL;
+	    last if ($read_only_global_directives);
 	    next if m{^(\#|\s*$)};
 	    push @data, $_;
 	    if (keys %line_directive || @block_directives) {
@@ -1280,6 +1282,18 @@ sub set_verbose {
     $Strassen::Util::VERBOSE  = $verbose;
     $Kreuzungen::VERBOSE      = $verbose;
     $StrassenNetz::CNetFile::VERBOSE = $verbose;
+}
+
+sub get_global_directives {
+    my $self = shift;
+    if (ref $self && UNIVERSAL::isa($self, "Strassen")) {
+	$self->{GlobalDirectives};
+    } else {
+	my $file = shift;
+	my $tmp_s = $self->new($file, NoRead => 1);
+	$tmp_s->read_data(ReadOnlyGlobalDirectives => 1);
+	$tmp_s->{GlobalDirectives};
+    }
 }
 
 sub DESTROY { }

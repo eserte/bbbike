@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.25 2005/05/13 22:40:54 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.25 2005/05/13 22:40:54 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -370,8 +370,11 @@ for my $browser (@browsers) {
 	$agent->submit();
 	my_tidy_check($agent);
 
-	like($agent->content, qr/Kleine Parkstr\..*ist nicht bekannt/i, "Street not in database");
-	like($agent->content, qr{\Qhtml/newstreetform.html?\E.*\Qstrname=Kleine%20Parkstr}i, "newstreetform link");
+    SKIP: {
+	    skip("Street is known now!", 2); # XXX find another unknown street?
+	    like($agent->content, qr/Kleine Parkstr\..*ist nicht bekannt/i, "Street not in database");
+	    like($agent->content, qr{\Qhtml/newstreetform.html?\E.*\Qstrname=Kleine%20Parkstr}i, "newstreetform link");
+	}
 	like($agent->content, qr{Lehrter Bahnhof.*?die nächste Kreuzung}is,  "S-Bhf.");
 	like($agent->content, qr{Invalidenstr./Heidestr.}i,  "S-Bhf., next crossing");
 

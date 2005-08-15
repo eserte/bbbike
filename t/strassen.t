@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.4 2005/05/24 00:16:08 eserte Exp $
+# $Id: strassen.t,v 1.5 2005/08/15 05:59:23 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -39,7 +39,7 @@ GetOptions(get_std_opts("xxx"),
 
 my $doit_tests = 1;
 
-plan tests => 17 + $doit_tests;
+plan tests => 21 + $doit_tests;
 
 goto XXX if $do_xxx;
 
@@ -129,7 +129,7 @@ EOF
     }
 }
 
-XXX: {
+{
     my $s = Strassen->new_from_data_string(<<EOF, UseLocalDirectives => 1);
 #:
 #: XXX block vvv
@@ -194,6 +194,21 @@ EOF
 	    }
 	}
     }
+}
+
+XXX: {
+    my $f = "strassen-orig";
+
+    my $s = Strassen->new($f, NoRead => 1);
+    my $data = $s->{Data};
+    ok(!$data || !@$data, "No data read");
+    $s->read_data(ReadOnlyGlobalDirectives => 1);
+    ok(!$data || !@$data, "Still no data read");
+
+    my $glob_dir = Strassen->get_global_directives($f);
+    is_deeply($s->{GlobalDirectives}, $glob_dir, "Expected global directives");
+
+    like(join(",", @{$glob_dir->{"title.de"}}), qr{stra.*en.*berlin}i, "German title");
 }
 
 __END__

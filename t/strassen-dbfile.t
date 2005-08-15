@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-dbfile.t,v 1.6 2005/04/06 21:03:03 eserte Exp $
+# $Id: strassen-dbfile.t,v 1.7 2005/08/15 05:59:23 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -56,20 +56,20 @@ SKIP: {
 		last CHECK;
 	    }
 	    if ($r->[Strassen::NAME] ne $r2->[Strassen::NAME]) {
-		ok(0);
+		is($r->[Strassen::NAME], $r2->[Strassen::NAME]);
 		last CHECK;
 	    }
 	    if ($r->[Strassen::CAT] ne $r2->[Strassen::CAT]) {
-		ok(0);
+		is($r->[Strassen::CAT], $r2->[Strassen::CAT]);
 		last CHECK;
 	    }
 	    if (@{$r->[Strassen::COORDS]} != @{$r2->[Strassen::COORDS]}) {
-		ok(0);
+		is(@{$r->[Strassen::COORDS]}, @{$r2->[Strassen::COORDS]});
 		last CHECK;
 	    }
 	    for my $i (0 .. $#{$r->[Strassen::COORDS]}) {
 		if ($r->[Strassen::COORDS][$i] ne $r2->[Strassen::COORDS][$i]) {
-		    ok(0);
+		    is_deeply($r->[Strassen::COORDS],$r2->[Strassen::COORDS]);
 		    last CHECK;
 		}
 	    }

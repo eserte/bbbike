@@ -160,6 +160,9 @@
   (setq comment-start "#")
   (make-local-variable 'comment-padding)
   (setq comment-padding " ")
+
+  (setq bbbike-imenu-generic-expression '((nil "^#: \\(append_comment\\|section\\):? *\\(.*\\) +vvv+" 2)))
+  (setq imenu-generic-expression bbbike-imenu-generic-expression)
   )
 
 (fset 'bbbike-cons25-format-answer
