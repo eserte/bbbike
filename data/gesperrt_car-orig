@@ -1,4 +1,5 @@
-# Sample plot: plot Einbahnstraﬂen, call ptksh, then plot_sperre("gesperrt_car")
+#: title: Einbahnstraﬂen und gesperrte Straﬂen (nur f¸r Autofahrer)
+#:
 Mittelweg	1 12335,7770 12182,7824
 # Die Verl‰ngerung der Kronenstr. ist ein Privatweg, der anscheinend per
 # Schranke gesperrt werden kann.
@@ -155,6 +156,8 @@ Kirchhofstr.	1 13188,7590 13117,7471 13032,7334
 Siegfriedstr.	1 12664,7013 12810,7047 12872,7134
 Prenzlauer Allee/Sredzkistr.	3nocross 11662,14695 11642,14625 11582,14448
 G‰rtnerstr.	1 14211,11552 14247,11681 14272,11775
+Wismarplatz	1 14395,11753 14416,11815
+Wismarplatz	3 14449,11742 14416,11815 14395,11753
 #: by: Gregor (bluege):
 Buchhorster Str.	1 7637,20614 7992,20515
 Handjerystr.	1 5657,7227 5653,7180 5633,7108 5574,7018
@@ -177,4 +180,4 @@ Hohenfriedbergstr.	3 7782,9115 7790,8913 7792,8838
 Hohenfriedbergstr. - Brunhildstr.	3 7782,9115 7790,8913 7707,8915
 Hohenfriedbergstr. - Brunhildstr.	3 7707,8915 7790,8913 7782,9115
 Olga-Benario-Prestes-Str.	1 12653,14653 12488,14753
-Filandastr.	3nocross  5687,5486 5687,5586 5683,5672 5681,5743
+Filandastr.	3nocross 5687,5486 5687,5586 5683,5672 5681,5743

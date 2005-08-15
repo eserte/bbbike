@@ -1,3 +1,6 @@
+#: title: Einbahnstraßen und gesperrte Straßen
+#: version: $Id: gesperrt-orig,v 4.59 2005/08/15 21:27:26 eserte Exp $
+#:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
@@ -345,6 +348,10 @@ Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -
 Stephanstr.	1s 6526,4475 6377,4490
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
+Hermannstr. -> Mahlower Str.: Gitter auf Mittelstreifen	3 11933,8198 11920,8252 11773,8231
+Mahlower Str. -> Boddinstr.: Gitter auf Mittelstreifen	3 11773,8231 11920,8252 12096,8300
+Mahlower Str. -> Hermannstr.: Gitter auf Mittelstreifen	3 11773,8231 11920,8252 11892,8372
+Hermannstr. -> Boddinstr.: Gitter auf Mittelstreifen	3 11892,8372 11920,8252 12096,8300
 Ortrudstr. -> Bundesallee: Bundesplatztunnel	3 5487,7560 5359,7619 5360,7554
 Bundesallee -> Ortrudstr.: Bundesplatztunnel	3 5359,7661 5359,7619 5487,7560
 Bundesallee -> Sentastr.: Bundesplatztunnel	3 5358,7681 5359,7661 5452,7660
@@ -571,7 +578,7 @@ tragen (Eisebahnbrücke Caputh)	0:60 -18009,-7528
 tragen (Eisebahnbrücke Caputh)	0:60:-168 -17978,-7375
 tragen (Eisebahnbrücke Werder)	0:60 -21063,-2021
 tragen (Eisebahnbrücke Werder)	0:60:75 -21210,-2058
-tragen (Elsenbrücke, ungefähr 15 Stufen auf jeder Seite)	0:60:-143 13383,8716
+tragen (Elsenbrücke, ungefähr 15 Stufen auf jeder Seite)	0:60:-142 13383,8716
 tragen (Gerickesteg, ungefähr 20 Stufen auf jeder Seite)	0:60:-118 6732,12660
 tragen (Spreetunnel)	0:60:24 25658,4619
 tragen (Spreetunnel)	0:60 25565,4549

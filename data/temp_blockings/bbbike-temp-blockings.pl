@@ -2505,4 +2505,28 @@ EOF
 userdel	2 2996,-10338 1764,-12480
 EOF
      },
+     { from  => 1123992000, # 2005-08-14 06:00
+       until => 1132095600, # 2005-11-16 00:00 wurde am nächsten Tag wieder entfernt, aber im Tsp steht es drinnen
+       text  => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt (Swinemünder Brücke). Dauer: 15.08.2005, 06:00 Uhr bis ca. 15.11.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 9494,15998 9583,15851
+EOF
+     },
+     { from  => 1124137069, # 2005-08-15 22:17
+       until => 1126303200, # 2005-09-10 00:00
+       text  => 'Lauenburger Str. (Steglitz) in beiden Richtungen zwischen Lothar-Bucher-Str. und Lauenburger Platz Baustelle, Straße vollständig gesperrt (bis 09.09.2005)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 6030,6165 6024,6080
+EOF
+     },
+     { from  => 1123970400, # 2005-08-14 00:00
+       until => 1128117600, # 2005-10-01 00:00
+       text  => 'B 179; (Spreewaldstr.); OD Zeesen, Kno. Karl-Liebknecht-Str. Straßenausbau Vollsperrung 15.08.2005-30.09.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 26583,-15677 26612,-15094
+EOF
+     },
     );

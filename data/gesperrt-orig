@@ -1,4 +1,6 @@
-# $Id: gesperrt-orig,v 4.58 2005/08/13 20:53:34 eserte Exp $
+#: title: Einbahnstraßen und gesperrte Straßen
+#: version: $Id: gesperrt-orig,v 4.59 2005/08/15 21:27:26 eserte Exp $
+#:
 ###################################################################
 #
 # permanente Sperrungen (Einbahnstraßen etc.)
@@ -393,6 +395,7 @@ Ringbahnstr.	1s 8717,6965 8447,6964
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+Hermannstr.: Gitter auf Mittelstreifen	3nocross 11892,8372 11920,8252 11933,8198
 Bundesplatztunnel	3nocross 5360,7554 5359,7619 5359,7661 5358,7681 5358,7711 5356,7862
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
 Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3906,10035 3930,9919
@@ -600,9 +603,10 @@ Spreeufer vor dem Monbijoupark: gesperrt wegen Bauarbeiten	2:inwork 10100,12876 
 #: by: joern (js):
 Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14903,10403 15059,10289
 Voltairestr. (Arbeiten an "Alexa", voraussichtlich bis 2005-10-31)	2:inwork 11323,12484 11209,12430
-#: last_checked: 2005-07-21
+#: last_checked: 2005-08-15
 Elsenstr.	1:inwork 13760,9188 13657,9063 13504,8882
 #: last_checked: 2005-07
+#: add_fragezeichen: Ist die Einbahnstraße in der Pfarrstr. aufgehoben worden?
 Pfarrstr.	1:inwork 15339,11123 15267,10865
 Ernst-Ruska-Ufer: noch in Bau	2:inwork 19103,2442 18927,2431
 #XXX del für Radfahrer nicht relevant: Malchower Chaussee (Pankow) Richtung stadteinwärts zwischen Ortnitstr. und Nachtalbenweg Baustelle, veränderte Verkehrsführung. Für die Arbeiten im Abschnitt von Darßer str. bis Nachtalbenweg wird der Verkehr über Darßer Str. - Nachtalbenw. umgeleitet (bis 30.04.2005)	1:inwork 15181,18137 14828,17856

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.63 2005/08/13 20:54:09 eserte Exp $
+# $Id: Makefile,v 2.65 2005/08/15 21:25:27 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -296,12 +296,17 @@ ubahnhof:	ubahnhof-orig
 .for i in u s
 $(i)bahnhof_bg:	$(i)bahnhof-orig
 	-@$(WRITEABLE) $@
+	(echo "#: title: Fahrradfreundliche Zugänge bei der $(i:U)-Bahn"; \
+	 echo "#: category_image.bg: behindertengerecht.gif"; \
+	 echo "#: category_image.bf: behindertenfreundlich.gif"; \
+	 echo "#:") > $@
 	perl -I../lib -I.. -MStrassen::Core -MObject::Iterate=iterate -e '\
 	$$s=Strassen->new(shift, UseLocalDirectives => 1);\
 	$$new_s=Strassen->new;\
 	iterate {\
 	    my $$attr = $$s->get_directive($$s->pos)->{attributes};\
 	    if ($$attr) {\
+		$$attr = $$attr->[0]; \
 		if ($$attr =~ s/\s+\((.*)\)//) {\
 	            $$_->[Strassen::NAME] .= ": $$1";\
 		}\
@@ -309,7 +314,7 @@ $(i)bahnhof_bg:	$(i)bahnhof-orig
 	        $$new_s->push($$_);\
 	    }\
 	} $$s;\
-	print $$new_s->as_string' $> > $@
+	print $$new_s->as_string' $> >> $@
 	-@$(READONLY) $@
 .endfor
 
@@ -688,7 +693,7 @@ check-disabled:	.check_label
 .check_strassen_plaetze_unique:	strassen-orig plaetze-orig
 	cut -d"	" -f1 strassen-orig | sort -u > /tmp/strassen-names
 	cut -d"	" -f1 plaetze-orig  | sort -u > /tmp/plaetze-names
-	duplicates=`sort /tmp/strassen-names /tmp/plaetze-names | uniq -d`; \
+	duplicates=`sort /tmp/strassen-names /tmp/plaetze-names | grep -v '^#' | uniq -d`; \
 	if [ "$$duplicates" != "" ]; then \
 	    echo "Found duplicates:"; \
 	    echo "$$duplicates"; \

@@ -1,57 +1,61 @@
-Warschauer Str.	ARRAY(0x826c348) 13506,11159
-Nollendorfplatz	ARRAY(0x826cb18) 7000,10370
-Wittenbergplatz	ARRAY(0x826640c) 6301,10601
-Fehrbelliner Platz	ARRAY(0x8266508) 4381,9276
-Heidelberger Platz	ARRAY(0x82665e0) 4295,8137
-Krumme Lanke	ARRAY(0x826670c) -521,3925
-Pankow	ARRAY(0x826f018) 10843,18001
-Schönhauser Allee	ARRAY(0x826f0fc) 10983,15984
-Alexanderplatz (U2)	ARRAY(0x826f1f8) 11068,12895
-Märkisches Museum	ARRAY(0x826f2dc) 10827,11864
-Stadtmitte (U2)	ARRAY(0x826f3cc) 9452,11808
-Mendelssohn-Bartholdy-Park	ARRAY(0x82701a4) 8444,10854
-Bülowstr.	ARRAY(0x827027c) 7658,10160
-Zoologischer Garten	ARRAY(0x8270354) 5586,11074
-Bismarckstr.	ARRAY(0x8270c60) 3683,11621
-Ruhleben	ARRAY(0x8270f0c) -649,13096
-Innsbrucker Platz	ARRAY(0x8272824) 6386,8065
-Alexanderplatz (U5/U8)	ARRAY(0x82728fc) 10967,12812
-Frankfurter Allee	ARRAY(0x8273a28) 15177,12089
-Wuhletal	ARRAY(0x8274a94) 22121,12080
-Kaulsdorf-Nord	ARRAY(0x8274b6c) 22933,13159
-Neue Grottkauer Str.	ARRAY(0x8275460) 22992,13762
-Cottbusser Platz	ARRAY(0x8275538) 23395,14489
-Hellersdorf	ARRAY(0x8275610) 24067,14820
-Louis-Lewin-Str.	ARRAY(0x82756e8) 24946,15113
-Hönow	ARRAY(0x82757c0) 25965,15030
-Alt-Mariendorf	ARRAY(0x82768d8) 9472,3641
-Tempelhof	ARRAY(0x82769e0) 9231,7085
-Paradestr.	ARRAY(0x8276ab8) 9264,8033
-Kochstr.	ARRAY(0x8276ba8) 9491,11089
-Stadtmitte (U6)	ARRAY(0x827749c) 9423,11697
-Friedrichstr.	ARRAY(0x8277580) 9306,12725
-Oranienburger Tor	ARRAY(0x8277658) 9239,13286
-Zinnowitzer Str.	ARRAY(0x8277730) 8899,13915
-Schwartzkopffstr.	ARRAY(0x827a024) 8543,14346
-Reinickendorfer Str.	ARRAY(0x827a0fc) 8030,14905
-Wedding	ARRAY(0x827a1d4) 7739,15167
-Rudow	ARRAY(0x827ada4) 16821,1252
-Lipschitzallee	ARRAY(0x827ae94) 14600,2157
-Neukölln	ARRAY(0x827afa8) 13049,7140
-Rathaus Neukölln	ARRAY(0x827b8a8) 12518,8482
-Hermannplatz	ARRAY(0x827b980) 11837,8980
-Berliner Str.	ARRAY(0x827bb6c) 5505,8963
-Jungfernheide	ARRAY(0x825d774) 3352,13752
-Rathaus Spandau	ARRAY(0x827d4cc) -3560,14235
-Hermannstr.	ARRAY(0x827d5a4) 12358,6895
-Bernauer Str.	ARRAY(0x827d7a8) 9828,14659
-Gesundbrunnen	ARRAY(0x827e0a8) 9226,15911
-Osloer Str.	ARRAY(0x827e18c) 8210,16788
-Paracelsus-Bad	ARRAY(0x827e27c) 6509,18665
-Lindauer Allee	ARRAY(0x827e354) 6056,18753
-Karl-Bonhoeffer-Nervenklinik	ARRAY(0x827ec48) 5448,19169
-Rathaus Reinickendorf	ARRAY(0x827ed20) 4934,20186
-Wittenau	ARRAY(0x827edf8) 5501,21018
-Westhafen	ARRAY(0x827eee8) 6197,14494
-Bundesplatz	ARRAY(0x828080c) 5355,7985
-Rathaus Steglitz	ARRAY(0x8280908) 4841,5591
+#: title: Fahrradfreundliche Zugänge bei der U-Bahn
+#: category_image.bg: behindertengerecht.gif
+#: category_image.bf: behindertenfreundlich.gif
+#:
+Warschauer Str.	bg 13506,11159
+Nollendorfplatz	bg 7000,10370
+Wittenbergplatz	bg 6301,10601
+Fehrbelliner Platz	bg 4381,9276
+Heidelberger Platz	bg 4295,8137
+Krumme Lanke	bg -521,3925
+Pankow	bg 10843,18001
+Schönhauser Allee	bg 10983,15984
+Alexanderplatz (U2)	bg 11068,12895
+Märkisches Museum	bg 10827,11864
+Stadtmitte (U2)	bg 9452,11808
+Mendelssohn-Bartholdy-Park	bg 8444,10854
+Bülowstr.	bg 7658,10160
+Zoologischer Garten	bg 5586,11074
+Bismarckstr.	bg 3683,11621
+Ruhleben	bg -649,13096
+Innsbrucker Platz	bg 6386,8065
+Alexanderplatz (U5/U8)	bg 10967,12812
+Frankfurter Allee	bg 15177,12089
+Wuhletal	bf 22121,12080
+Kaulsdorf-Nord	bf 22933,13159
+Neue Grottkauer Str.	bf 22992,13762
+Cottbusser Platz	bf 23395,14489
+Hellersdorf	bf 24067,14820
+Louis-Lewin-Str.	bf 24946,15113
+Hönow	bf 25965,15030
+Alt-Mariendorf	bg 9472,3641
+Tempelhof	bg 9231,7085
+Paradestr.	bg 9264,8033
+Kochstr.	bg 9491,11089
+Stadtmitte (U6)	bg 9423,11697
+Friedrichstr.	bg 9306,12725
+Oranienburger Tor	bg 9239,13286
+Zinnowitzer Str.	bg 8899,13915
+Schwartzkopffstr.	bg 8543,14346
+Reinickendorfer Str.	bg 8030,14905
+Wedding	bg 7739,15167
+Rudow	bg 16821,1252
+Lipschitzallee	bg 14600,2157
+Neukölln	bg 13049,7140
+Rathaus Neukölln	bg 12518,8482
+Hermannplatz	bg 11837,8980
+Berliner Str.	bg 5505,8963
+Jungfernheide	bg 3352,13752
+Rathaus Spandau	bg -3560,14235
+Hermannstr.	bg 12358,6895
+Bernauer Str.	bg 9828,14659
+Gesundbrunnen	bg 9226,15911
+Osloer Str.	bg 8210,16788
+Paracelsus-Bad	bg 6509,18665
+Lindauer Allee	bg 6056,18753
+Karl-Bonhoeffer-Nervenklinik	bg 5448,19169
+Rathaus Reinickendorf	bg 4934,20186
+Wittenau	bg 5501,21018
+Westhafen	bg 6197,14494
+Bundesplatz	bg 5355,7985
+Rathaus Steglitz	bg 4841,5591

@@ -317,14 +317,7 @@ userdel	q4 -18080,-12637 -17374,-13449
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1124056800,
-         'text' => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 01.08.2005-14.08.2005 ',
-         'from' => 1122760800,
-         'data' => 'userdel	2 26313,-13049 26028,-12312
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -609,6 +602,30 @@ userdel	q4 -5209,70040 -4978,71109
          'text' => 'L 793; (Alfred-Kühne-Str.); OD Ludwigsfelde, am OA in Ri. A 10 Einbau Anschlussgleis Vollsperrung 24.08.2005-10.09.2005 ',
          'from' => 1124748000,
          'data' => 'userdel	2 2996,-10338 1764,-12480
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1132095600,
+         'text' => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt (Swinemünder Brücke). Dauer: 15.08.2005, 06:00 Uhr bis ca. 15.11.2005 ',
+         'from' => 1123992000,
+         'data' => 'userdel	q4 9494,15998 9583,15851
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1126303200,
+         'text' => 'Lauenburger Str. (Steglitz) in beiden Richtungen zwischen Lothar-Bucher-Str. und Lauenburger Platz Baustelle, Straße vollständig gesperrt (bis 09.09.2005)',
+         'from' => 1124137069,
+         'data' => 'userdel	2 6030,6165 6024,6080
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1128117600,
+         'text' => 'B 179; (Spreewaldstr.); OD Zeesen, Kno. Karl-Liebknecht-Str. Straßenausbau Vollsperrung 15.08.2005-30.09.2005 ',
+         'from' => 1123970400,
+         'data' => 'userdel	2 26583,-15677 26612,-15094
 ',
          'type' => 'gesperrt'
        }

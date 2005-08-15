@@ -1,6 +1,7 @@
-# $Id: wasserstrassen-orig,v 4.21 2005/08/13 13:21:25 eserte Exp eserte $
-# Gewässer-Koordinaten (berlinmap)
-#
+#: title.de: Gewässer in Berlin
+#: title.en: Inshore waters in Berlin
+#: version: $Id: wasserstrassen-orig,v 4.23 2005/08/15 21:41:15 eserte Exp $
+#:
 # Einige Regeln: Inseln sollten immer *direkt* *nach* dem jeweiligen
 # Gewässer aufgeführt werden. So wird sicher gestellt, dass die Canvas-
 # Objekte im richtigen Stacking gezeichnet werden (falls nicht anderweitige
