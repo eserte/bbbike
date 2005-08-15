@@ -1928,6 +1928,11 @@ list with generated shorter waypoint names
 
 =over
 
+=item * (M3)
+
+unclosedPolygon anstelle von mehreren line-Aufrufen verwenden
+(benötigt gd 2.0.33!)
+
 =item * (M5)
 
 Was sind die gepunkteten Linien bei der MapServer-Ausgabe von
