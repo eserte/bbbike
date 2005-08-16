@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.69 2005/08/15 21:27:45 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.70 2005/08/16 20:23:53 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
@@ -115,7 +115,7 @@ Bouchestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 13601,9572 13867,9864
 Hirschberger Str.: Kopfsteinpflaster	Q2 14988,11130 15012,11148 15082,11120
 Krummhübler Str.: Kopfsteinpflaster	Q2 15050,11017 15082,11120
 Marzahner Chaussee: Kopfsteinpflaster	Q2 18559,12105 18390,11775
-Stellingdamm: schlechtes Kopfsteinpflaster	Q3 22475,6151 22603,6141 22957,6174
+Stellingdamm: schlechtes Kopfsteinpflaster	Q3 22475,6151 22603,6141 22777,6157 22957,6174
 Planufer: Kopfsteinpflaster, OK	Q1 11543,10015 11507,10004 11479,10026
 Planufer: Kopfsteinpflaster, OK	Q1 11177,9935 10914,9887
 Admiralstr.: mäßiges Kopfsteinpflaster	Q2 11177,9935 11193,9995 11237,10114
@@ -693,7 +693,7 @@ Ettaler Str.: Kopfsteinpflaster	Q2 5997,10286 5948,10152
 Fasanenplatz, zur Schaperstr.: gutes Kopfsteinpflaster	Q1 5242,10237 5198,10234
 Fasanenplatz: gutes Kopfsteinpflaster	Q1 5198,10234 5195,10175
 Fasanenplatz, zur Meierottostr.: gutes Kopfsteinpflaster	Q1 5195,10175 5246,10168
-Virchowstr.: Kopfsteinpflaster	Q2 12916,13368 12873,13444
+Virchowstr.: Kopfsteinpflaster	Q2 12916,13368 12897,13402
 Dunckerstr.: Kopfsteinpflaster	Q2 11337,14946 11450,15173 11480,15229 11603,15455
 Raumerstr.: Kopfsteinpflaster	Q2 11450,15173 11334,15248 11236,15312 11119,15385
 Berliner Str. (Pankow): außen Kopfsteinpflaster, innen betoniert	Q2 10846,17992 10829,18083 10755,18231 10680,18380
@@ -1011,7 +1011,7 @@ Dubrowstr.: schlechtes Kopfsteinpflaster	Q3 -2249,2818 -2221,2886 -2096,2929 -14
 Dubrowstr.: Kopfsteinpflaster	Q2 -1453,3166 -1187,3264
 Gabelsbergerstr.: Kopfsteinpflaster	Q2 14381,12205 14451,12396
 Hübnerstr.: Kopfsteinpflaster	Q2 13960,12866 13884,12679
-Heidenfeldstr.: Kopfsteinpflaster	Q2 13609,13427 13446,13353
+Heidenfeldstr.: Kopfsteinpflaster	Q2 13609,13427 13433,13346
 Neue Promenade: unebenes Pflaster	Q2 10294,13070 10132,12941
 Griebnitzseepromenade: Waldweg	Q1 -7266,-450 -7318,-515 -7358,-605 -7495,-716 -7585,-736 -7759,-850 -7908,-989 -8071,-1144 -8119,-1211 -8207,-1240 -8253,-1241 -8294,-1163 -8404,-1074 -8495,-1054 -8605,-995 -8628,-959 -8652,-865 -8733,-751 -8770,-720 -8886,-708 -8927,-642 -9009,-582 -9138,-521 -9182,-515 -9183,-381 -9208,-357 -9261,-272 -9399,-139
 (Frankfurter Allee, Nebenfahrbahn): Kopfsteinpflaster, OK	Q1 16870,11920 16746,11921
@@ -1736,7 +1736,7 @@ Berlinickestr.: Kopfsteinpflaster	Q2 5088,5495 5016,5401 4930,5286 4839,5167
 Zugdamer Steig: Beton	Q0 -1923,23378 -2059,23440
 Kapaunenstr.: schlechtes Kopfsteinpflaster	Q3 16212,-440 16384,101 16550,468
 Glambecker Ring: guter Asphalt	Q0 21824,16506 21885,16494 22187,16437 22278,16590 22050,16781 21892,16841
-Borgmannstr.: guter Asphalt	Q0 22513,5747 22518,5875 22525,6040
+Borgmannstr.: guter Asphalt	Q0 22513,5747 22518,5875 22524,5997 22526,6062
 Springbornstr.: guter Asphalt	Q0 17142,3393 16934,3571 16615,3734 16737,4084
 Friedrich-List-Str.: Asphalt	Q0 16987,5838 17137,5943 17384,5631 17331,5571
 Kolberger Str.: Kopfsteinpflaster	Q2 8315,15293 8518,15506
@@ -2087,3 +2087,36 @@ Vereinsweg (Steglitz): Kleinpflaster	Q1 5347,4841 5433,4961
 Rugestr.: Kopfsteinpflaster	Q2 4839,5167 4938,5096 5033,5030
 Adolfstr.: Kopfsteinpflaster	Q2 4990,5164 5083,5100 5201,5018
 Kurze Str. (Steglitz): Kopfsteinpflaster	Q2 5083,5100 5033,5030 5001,4986 4950,4907
+Elcknerplatz: Asphalt	Q0 22428,6063 22468,6062
+Elcknerplatz: Kopfsteinpflaster	Q2 22468,6062 22526,6062 22639,6062
+Hirtestr.: Kopfsteinpflaster	Q2 22777,6157 22766,6381 22753,6437
+Hirtestr.: Asphalt	Q0 22727,6487 22675,6510
+Parrisiusstr.: Kopfsteinpflaster	Q2 22362,5931 22518,5875
+Parrisiusstr.: schlechtes Kopfsteinpflaster	Q3 22518,5875 22682,5865 22794,5856 22826,5843 22855,5859
+Kiekebuschstr.: schlechtes Kopfsteinpflaster	Q3 22682,5865 22675,5749
+Gelnitzstr.: Kopfsteinpflaster	Q2 22865,5759 22855,5859
+Gelnitzstr.: Asphalt	Q0 22855,5859 22827,5941 22764,6003
+Weinbergstr.: schlechtes Kopfsteinpflaster	Q3 22794,5856 22753,5753
+Weinbergstr.: Asphalt	Q0 22827,5941 22794,5856
+(Volkspark Friedrichshain): Asphalt	Q0 13100,13803 12987,13727 12965,13709 12829,13621 12771,13603
+(Volkspark Friedrichshain): Asphalt	Q0 12829,13621 12887,13537 12925,13523 12991,13539 13025,13585 13023,13627 12965,13709 12915,13785 12877,13795 12825,13783 12793,13749 12783,13699 12829,13621
+(Volkspark Friedrichshain): Asphalt	Q0 12915,13785 12937,13803 12887,13877 12879,13889
+(Volkspark Friedrichshain): Asphalt	Q0 12937,13803 12987,13727
+(Volkspark Friedrichshain): Asphalt	Q0 12825,13783 12813,13799 12805,13809
+(Volkspark Friedrichshain): Asphalt	Q0 12403,13755 12436,13719 12482,13705 12594,13747 12658,13809
+(Volkspark Friedrichshain): Asphalt	Q0 12771,13603 12737,13593 12727,13571 12582,13519 12483,13418
+(Volkspark Friedrichshain): Kopfsteinpflaster	Q2 12483,13418 12605,13356
+Ernst-Zinna-Weg: Kopfsteinpflaster	Q2 12605,13356 12622,13328 12614,13300 12572,13248 12564,13216 12582,13128
+(Volkspark Friedrichshain): Kopfsteinpflaster	Q2 12438,13387 12344,13320 12248,13254
+(Volkspark Friedrichshain): Kopfsteinpflaster	Q2 12382,13262 12344,13320 12290,13356 12176,13366 12148,13348
+(Zufahrt Landsberger Allee): Gehwegplatten, Beton	Q0 13433,13346 13397,13426 13574,13505
+Weisbachstr.: Asphalt	Q1 13562,13278 13610,13169
+Otto-Ostrowski-Str.: Asphalt	Q0 13708,13623 13760,13503
+Otto-Ostrowski-Str.: Kopfsteinpflaster	Q2 13760,13503 13794,13420 13826,13340 13862,13262 13930,13100
+Kurt-Exner-Str.: Kopfsteinpflaster	Q2 13964,13306 13862,13262
+Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13930,13384 13826,13340
+Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13898,13463 13794,13420
+Wilhelm-Stolze-Str.: Kopfsteinpflaster	Q2 13257,13149 13351,12928
+Fritz-Schiff-Weg: Kleinpflaster	Q1 13472,12337 13484,12436 13468,12497
+Ludwig-Pick-Str.: Asphalt	Q0 13540,12523 13568,12439
+Ludwig-Pick-Str.: Gehwegplatten	Q0 13568,12439 13563,12324

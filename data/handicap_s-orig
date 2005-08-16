@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.46 2005/08/15 21:27:32 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.47 2005/08/16 20:40:39 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: XXX hier br‰uchte man keine zus‰tzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -85,7 +85,7 @@ Marheinekeplatz: Fuﬂg‰nger, Brunnen	q3 9882,9287 9881,9238
 (Uferweg am Urbanhafen): Fuﬂg‰nger	q1 11177,9935 11052,9935 10923,9925 10522,10056 10490,10080
 S-Bahn-Unterf¸hrung	q3 7854,7572 7934,7621 7959,7609
 Marx-Engels-Forum: Fuﬂg‰nger, eigentlich Schiebestrecke	q2 10300,12587 10355,12551 10411,12471 10422,12395
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12325,13148 12344,13157 12391,13189 12382,13262 12474,13311 12438,13387 12483,13418 12446,13570 12336,13646 12403,13755
+Volkspark Friedrichshain: Fuﬂg‰nger	q1 12325,13148 12344,13157 12372,13198 12382,13262 12474,13311 12438,13387 12483,13418 12446,13570 12336,13646 12403,13755
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12336,13646 12128,13604 12115,13540 12005,13481 11982,13471
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12128,13604 12185,13717
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12115,13540 12091,13449 12088,13403
@@ -128,7 +128,7 @@ Ernststr.: Fuﬂg‰nger	q2 2497,19503 2700,19527
 (S-Bahnbr¸cke Wartenberg): Fuﬂg‰nger?	q2 16923,18650 16990,18694 17114,18775
 Am Kupfergraben: am Wochenende Flohmarkt	q3 9867,12651 9754,12775 9661,12876 9614,12893 9529,12925
 Bernburger Treppe: Rampe	q3 8542,11061 8454,11086
-Virchowstr. (Volkspark Friedrichshain): Fuﬂg‰nger	q1 12873,13444 12707,13706
+Virchowstr. (Volkspark Friedrichshain): Fuﬂg‰nger	q1 12897,13402 12771,13603 12707,13706
 (Buckower Ring - Cecilienstr.): Fuﬂg‰nger	q1 21874,13543 21931,13724
 (Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3388,8958 3333,9026
 Gillweg: enger Gehweg	q2 2585,9653 2392,9715
@@ -226,7 +226,7 @@ Karl-Marx-Allee - Kadiner Str.: Fuﬂg‰nger	q1 13563,12324 13555,12259
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7950,12860 7904,12803
 (s¸dliche Fahrbahn des Sachsendamms - Naturpark Schˆneberg): Rampe	q2 7717,7564 7737,7505
 (s¸dliche Fahrbahn des Sachsendamms - Naturpark Schˆneberg): Rampe	q2 7718,7641 7772,7610
-Heidenfeldstr.: Gehweg	q1 13446,13353 13393,13326
+Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
 (Gudrunstr. - Lichtenberger Br¸cke): Gehweg, Bordsteine	q2 16870,11920 16884,11889 16858,11860
 Schloﬂplatz Kˆpenick: Fuﬂg‰nger, Straﬂenbahn, Lieferverkehr	q2 22162,4546 22111,4562 22093,4499
 (Karlsgartenstr. - Hasenheide): Parkweg, Fuﬂg‰nger	q1 11627,8485 11253,8565
@@ -390,3 +390,16 @@ Rezonvillestr.: Fuﬂg‰nger	q2 5589,4617 5629,4597
 Am Stadtpark (Steglitz): Fuﬂg‰nger	q2 5671,4537 5751,4497 5838,4454
 (Stadtpark Steglitz): Fuﬂg‰nger	q2 5826,4819 5765,4693 5697,4545 5671,4537
 Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5347,4841 5433,4961
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 13100,13803 12987,13727 12965,13709 12829,13621 12771,13603
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12829,13621 12887,13537 12925,13523 12991,13539 13025,13585 13023,13627 12965,13709 12915,13785 12877,13795 12825,13783 12793,13749 12783,13699 12829,13621
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12915,13785 12937,13803 12887,13877 12879,13889
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12937,13803 12987,13727
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12825,13783 12813,13799 12805,13809
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12403,13755 12436,13719 12482,13705 12594,13747 12658,13809
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12771,13603 12737,13593 12727,13571 12582,13519 12483,13418
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12483,13418 12605,13356
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12438,13387 12344,13320 12248,13254
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12382,13262 12344,13320 12290,13356 12176,13366 12148,13348
+(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12128,13604 12024,13581 12052,13687
+(Zufahrt Landsberger Allee): Fuﬂg‰nger	q2 13433,13346 13397,13426 13574,13505
+Otto-Ostrowski-Str.: Fuﬂg‰nger	q1 13708,13623 13760,13503

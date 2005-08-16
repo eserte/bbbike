@@ -8256,12 +8256,8 @@ sub plotstr {
 	$str = delete $args{-object};
     }
 
-    if (defined $filename && -e "$filename.desc") {
-	require BBBikeAdvanced;
-	read_desc_file("$filename.desc");
-    }
-
     # Radwege werden im Edit-Modus besser mit radweg_draw_canvas() gezeichnet
+    # XXX ups? stimmt das noch immer???
     if ($abk eq 'rw' and $coord_system ne 'standard') {
 	radweg_open();
 	radweg_draw_canvas();
@@ -8333,6 +8329,13 @@ sub plotstr {
     if (!defined $str) {
 	status_message(M"Kein Objekt definiert!", "err");
 	return;
+    }
+
+    handle_global_directives($str, $abk);
+    # XXX obsolete:
+    if (defined $filename && -e "$filename.desc") {
+	require BBBikeAdvanced;
+	read_desc_file("$filename.desc", $abk);
     }
 
     if ($str_name_draw{$abk}) {
@@ -9308,11 +9311,6 @@ sub plot_point {
 	return;
     }
 
-    if (-e "$filename.desc") {
-	require BBBikeAdvanced;
-	read_desc_file("$filename.desc");
-    }
-
     my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
     if ($lazy && !$args{FastUpdate}) {
 	return bbbikelazy_add_data("p", $abk, $filename);
@@ -9381,6 +9379,13 @@ sub plot_point {
 	       ) {
 		$p_obj{$abk} = $bhf;
 	    }
+	}
+
+	handle_global_directives($bhf, $abk);
+	# XXX obsolete:
+	if (-e "$filename.desc") {
+	    require BBBikeAdvanced;
+	    read_desc_file("$filename.desc", $abk);
 	}
 
 	my $complete_str = $bhf;
@@ -17434,6 +17439,35 @@ warn "do action";
 sub get_strassen_file {
     my $file = shift;
     $file . ($edit_mode_flag ? "-orig" : "");
+}
+
+sub handle_global_directives {
+    my($s_or_file, $abk) = @_;
+    my $glob_dir;
+    if (!ref $s_or_file) {
+	$glob_dir = Strassen->get_global_directives($s_or_file);
+    } else {
+	$glob_dir = $s_or_file->get_global_directives;
+    }
+    return if !$glob_dir;
+    my %accept_global_hash_directives = map{($_,1)}
+	qw(line_width line_length
+	   str_color outline_color
+	   category_size category_color category_width category_image);
+    my %accept_global_hashref_directives = map{($_,1)}
+	qw(str_attrib p_attrib);
+    # XXX scrollregion
+    while(my($directive, $vals) = each %$glob_dir) {
+	my($key, $val) = $directive =~ /^([^\.]+)\.([^\.]+)/;
+	next if !defined $key;
+	if ($accept_global_hash_directives{$key}) {
+	    no strict 'refs';
+	    ${$key}{$val} = $vals->[0];
+	} elsif ($accept_global_hashref_directives{$key}) {
+	    no strict 'refs';
+	    ${$key}->{$val} = $vals->[0];
+	}
+    }
 }
 
 ## DEBUG_BEGIN

@@ -16,6 +16,12 @@ Legend:
 
 =item * (M3)
 
+Edit mode, coloring of pp points: use different coloring for
+E<quot>KurvenpunkteE<quot> and crossings, to easier detect errors in
+the street net.
+
+=item * (M3)
+
 Bugreport von Andreas Mühlhausen: BS/Del funktioniert nicht zum
 Löschen von Punkten aus der Selection im Edit-Modus unter Windows.
 
@@ -1423,14 +1429,10 @@ E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.
 
 =item * (H4)
 
-bbd.desc-Dateien zugunsten von globalen Direktiven aufgeben. Beispiele
-wären:
+.desc-Dateien komplett durch globale Direktiven ersetzen. Es fehlt noch:
 
-    #: title.de: Brücken und Tunnel
-    #: title.en: Bridges and tunnels
-
-    #: category_image.bg: behindertengerecht.gif
-    #: category_image.bf: behindertenfreundlich.gif
+    @scrollregion = (516703,180658,918450,458155)
+    $p_attrib = ["Botschaft", "Botschaften, undef];
 
 =item * (H2)
 

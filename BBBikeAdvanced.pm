@@ -289,7 +289,8 @@ sub custom_draw {
 	my $desc_file = "$1.desc";
 	warn "Try to load description file $desc_file"
 	    if $verbose;
-	read_desc_file($desc_file, $abk);
+	handle_global_directives($desc_file, $abk);
+	read_desc_file($desc_file, $abk); # XXX obsolete
     }
 
     if ($args{-namedraw}) {
@@ -350,6 +351,7 @@ sub custom_draw {
 }
 
 sub read_desc_file {
+    warn "Using .desc files is obsolete, please consider to switch to global in-file directives. See bbd.pod for some information";
     my $desc_file = shift;
     my $abk = shift;
     @BBBike::ExtFile::scrollregion = ();
@@ -441,6 +443,7 @@ sub enlarge_scrollregion_from_descfile {
 					     ]);
     }
     if (defined $f) {
+	# XXX replace with handle_global_directives function
 	read_desc_file($f);
 	if (@BBBike::ExtFile::scrollregion) {
 	    enlarge_scrollregion(@BBBike::ExtFile::scrollregion);
