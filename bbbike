@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.186 2005/07/22 22:14:26 eserte Exp eserte $
+# $Id: bbbike,v 3.187 2005/08/17 20:22:48 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -128,7 +128,7 @@ use Route;
 ## DEBUG_END
 use Karte;
 use Hooks;
-use VectorUtil qw(get_polygon_center point_in_polygon);
+use VectorUtil qw(get_polygon_center point_in_polygon point_in_grid);
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before locale");}
 ## DEBUG_END
@@ -190,7 +190,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.186 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.187 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -2298,7 +2298,6 @@ sub do_iconframe {
 		    });
 
     if ($advanced) {
-	# XXX include comments_mount?
 	$strcm->checkbutton
 	    (-label => M"Steigungen",
 	     -variable => \$str_draw{'mount'},
@@ -5291,7 +5290,6 @@ sub define_item_attribs {
 	    gP gD z g gP gD
 	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB sBAB-BAB l v
 	    f-label-bg w-label-bg f-label w-label
-	    s-label-bg s-label l-label-bg l-label
 	    u sperre_u u-bg u-fg u_bg-img r sperre_r b sperre_b
 	    r-bg r-fg r_bg-img b-bg b-fg b_bg-img
 	    u-label r-label b-label
@@ -5301,6 +5299,7 @@ sub define_item_attribs {
 	 qw(comm-route-label-bg comm-route-label qs hs ql hl mount nl delnet
 	    O o p pl-fg lsas lsas-t lsa-bg lsa-fg
 	    vf-fg pp kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
+	    s-label-bg s-label l-label-bg l-label
 	    personal-fg personal-label ovl
 	    gpsanimrect zoomrect),
 	);
@@ -10056,6 +10055,7 @@ sub mark_street {
     my $point_width = $args{'-pointwidth'} || $line_width+6;
     my @labels = $args{'-labels'} ? @{ $args{'-labels'} } : ();
     my($minx, $miny, $maxx, $maxy);
+    my @all_coords = ();
     foreach (@{$args{'-coords'}}) {
 	my @coords = @$_;
 	@res_coords = ();
@@ -10070,6 +10070,7 @@ sub mark_street {
 			       ? ($_->[0], $_->[1])
 			       : $_);
 	}
+	push @all_coords, @res_coords;
 	unless ($args{'-dont_mark'}) {
 	    my $label = shift @labels;
 	    if ($args{'-polygon'}) {
@@ -10099,14 +10100,33 @@ sub mark_street {
     show_mark() unless $args{'-dont_mark'};
     if ($args{'-zoom_view'} && defined $minx) {
 	zoom_view($minx, $miny, $maxx, $maxy);
-    } elsif (!$args{'-dont_center'}) {
-	if ($args{'-clever_center'} && clever_center(@res_coords[0,1, $#res_coords-1,$#res_coords])) {
-	    # NOP
-	} else {
-	    $c->center_view2(@res_coords[0,1, $#res_coords-1,$#res_coords]);
+    } else {
+	# Prefer an already visible point to scroll to
+	my($vx,$vy) = find_visible_point(\@all_coords);
+	if (!defined $vx) {
+	    ($vx,$vy) = @all_coords[0,1];
+	}
+	if (!$args{'-dont_center'}) {
+	    if ($args{'-clever_center'} && clever_center($vx,$vy,@all_coords[$#all_coords-1,$#all_coords])) {
+		# NOP
+	    } else {
+		$c->center_view2($vx,$vy,@all_coords[$#all_coords-1,$#all_coords]);
+	    }
 	}
     }
     eval { local $SIG{__DIE__}; $c->lower('show', $args{'-type'}) };
+}
+
+sub find_visible_point {
+    my($c_ref) = @_;
+    my($x1,$y1,$x2,$y2) = $c->get_corners;
+    for(my $i = 0; $i < $#$c_ref; $i+=2) {
+	my($cx,$cy) = @{$c_ref}[$i,$i+1];
+	if (point_in_grid($cx,$cy,$x1,$y1,$x2,$y2)) {
+	    return($cx,$cy);
+	}
+    }
+    ();
 }
 
 # Dialog zum Auswahl eines Straße aus der Postleitzahl-Datenbank

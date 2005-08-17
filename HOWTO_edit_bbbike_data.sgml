@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.5 2005/08/01 20:41:30 eserte Exp eserte $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.6 2005/08/17 19:24:22 eserte Exp eserte $ -->
 
 <article>
  <artheader>
@@ -28,7 +28,7 @@
    </author>
   </authorgroup>
 
-  <pubdate>$Date: 2005/08/01 20:41:30 $</pubdate>
+  <pubdate>$Date: 2005/08/17 19:24:22 $</pubdate>
 
   <copyright>
    <year>2005</year>
@@ -683,7 +683,7 @@ linkend="strassenbab">hier</>; Kategorie <constant>2</>)
 <constant>0:n</>, wobei <constant>n</> für die Zeit in Sekunden steht,
 die dabei verloren geht - hier wähle ich großzügige Zeiten, meistens
 nicht unter 30 Sekunden. Zeiten über einer Minute werden ebenfalls in
-Sekunden angegebenm z.B. <constant>0:60</>)
+Sekunden angegeben z.B. <constant>0:60</>)
 
 <listitem><para>Drängelgitter und Ähnliches (Kategorie
 <constant>BNP:n</>, auch hier steht <constant>n</> für die verlorene

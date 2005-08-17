@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.22 2005/07/13 21:28:18 eserte Exp $
+# $Id: Makefile,v 1.22 2005/07/13 21:28:18 eserte Exp eserte $
 #
 
 # XXX needs MORE work
@@ -124,6 +124,7 @@ png-to-gif:	\
 		abc_hi.gif \
 		newlayer.gif \
 		car.gif \
+		touristinfo.gif \
 
 png-to-xpm:	\
 		ampel.xpm \
@@ -163,6 +164,7 @@ png-to-xpm:	\
 		abc_hi.xpm \
 		newlayer.xpm \
 		car.xpm \
+		touristinfo.xpm \
 
 png-to-wbmp:	\
 		flag2_bl.wbmp \

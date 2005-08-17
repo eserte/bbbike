@@ -2141,12 +2141,12 @@ userdel	q4 53810,-90698 53805,-90240
 userdel	q4 53252,-90440 53805,-90240
 EOF
      },
-     { from  => 1119736800, # 2005-06-26 00:00
-       until => 1129240800, # 2005-10-14 00:00
-       text  => 'Kreisverkehr bei Hennigsdorf Straßenbau Vollsperrung 27.06.2005-13.10.2005 ',
+     { from  => 1123365600, # 2005-08-07 00:00
+       until => 1128376800, # 2005-10-04 00:00
+       text  => 'L 17; (LG Berlin-Hennigsdorf); zw. Kreisverkehr und Hennigsdorf Straßenbau Vollsperrung 08.08.2005-03.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -2800,25478 -2446,25386
+userdel	2 -2800,25478 -2446,25386
 EOF
      },
      { from  => 1119736800, # 2005-06-26 00:00
@@ -2530,11 +2530,19 @@ userdel	2 26583,-15677 26612,-15094
 EOF
      },
      { from  => 1122760800, # 2005-07-31 00:00
-       until => 1125525600, # 2005-09-01 00:00
+       until => 1124307438, # vorzeitig beendet 1125525600 2005-09-01 00:00
        text  => 'B 96; (Gransee-Fürstenberg); zw. Gransee und Altlüdersdorf grundh. Ausbau Vollsperrung 01.08.2005-31.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -5575,69050 -5703,68140
+EOF
+     },
+     { from  => 1128290400, # 2005-10-03 00:00
+       until => 1129413600, # 2005-10-16 00:00
+       text  => 'L 171; (Hohen Neuendorf-Hennigsdorf); zw. Kreisverkehr bei Hennigsd. und AS Stolpe Straßenbau Vollsperrung 04.10.2005-15.10.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -2446,25386 -2118,26060
 EOF
      },
     );

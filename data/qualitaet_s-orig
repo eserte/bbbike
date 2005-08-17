@@ -241,7 +241,7 @@ Alt-Rudow: Kopfsteinpflaster	Q2 16960,1282 16838,1457
 Fichtestr.: Kopfsteinpflaster, mit Teer gefugt	Q2 11108,9194 11064,9543
 Alt-Kladow: Kopfsteinpflaster, OK	Q1 -7150,4912 -7066,4847 -6935,4806 -6901,4817 -6798,4839
 Sakrower Kirchweg: stellenweise schlechter Asphalt	Q1 -8444,3865 -8406,3836 -8303,3838 -8154,3965 -7989,4033 -7806,4182 -7706,4221 -7629,4292 -7409,4440 -7254,4525 -7131,4599 -7109,4689 -7066,4847
-Kalischer Str.: gutes Kopfsteinpflaster	Q1 3964,8559 4006,8967
+Kalischer Str.: gutes Kopfsteinpflaster	Q1 3964,8559 3982,8750 4006,8967
 Mannheimer Str.: Kopfsteinpflaster, (enge) Gehwege sind für Radfahrer freigegeben	Q2 4456,8584 4319,8584
 Mannheimer Str.: Kopfsteinpflaster	Q2 4456,8703 4456,8584
 Thulestr.: Kopfsteinpflaster	Q2 11645,16616 11278,16609 11042,16605
@@ -755,7 +755,7 @@ Jessnerstr.: Kopfsteinpflaster	Q2 14941,11689 14849,11539
 Oderstr.: Kopfsteinpflaster	Q2 15091,11596 14941,11689
 Oderstr.: Kopfsteinpflaster	Q2 14787,11774 14728,11807 14623,11867
 Travestr.: Kopfsteinpflaster	Q2 14977,11754 14903,11809
-Kalischer Str.: Kopfsteinpflaster, OK	Q1 4006,8967 3964,8559
+Kalischer Str.: Kopfsteinpflaster, OK	Q1 4006,8967 3982,8750 3964,8559
 Volkspark Wilmersdorf: Parkweg, teilweise etwas holprig	Q1 4319,8584 3964,8559
 Volkspark Wilmersdorf: Parkweg	Q1 5919,8417 5805,8352 5666,8345 5533,8478 5481,8506
 Volkspark Wilmersdorf: Parkweg	Q1 5481,8506 5417,8519 5347,8562
@@ -763,7 +763,7 @@ Friedrichsruher Str.: Kopfsteinpflaster, OK	Q1 3333,9026 3196,9193
 Friedrichsruher Str.: Verbundsteine	Q0 3196,9193 2998,9408
 Cunostr.: Kopfsteinpflaster, mäßig bis OK	Q1 3196,9193 3179,9002
 Schweidnitzer Str.: Kopfsteinpflaster	Q2 3223,9837 3202,9583
-Mansfelder Str.: Kopfsteinpflaster	Q2 3620,9330 3446,9339
+Mansfelder Str.: Kopfsteinpflaster	Q2 3619,9331 3437,9341
 Elgersburger Str.: Kopfsteinpflaster	Q2 2427,8416 2552,8419 2668,8372
 Elgersburger Str.: Kopfsteinpflaster, aber Radwege	Q1 2668,8372 2725,8344
 Heidelberger Platz: Kopfsteinpflaster	Q2 4109,8015 4173,7993 4241,8007 4283,8016
@@ -1648,7 +1648,7 @@ Bogenstr.: schlechtes Kopfsteinpflaster	Q3 912,2965 967,2943 1017,2823
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Kiesweg	Q2 821,2714 1017,2823 1126,2885 1262,2975 1453,3085 1659,3226 1687,3244 1715,3257 1977,3414 2271,3571
 #: by: ^^^
 #: by: Daniel Siebert:
-Matternstr.: mäßiges Kopfsteinpflaster	Q2 13798,13003 13578,12903
+Matternstr.: mäßiges Kopfsteinpflaster	Q2 13798,13003 13579,12904
 #: by: Claudia Radtke:
 Elßholzstr.: mäßiges Kopfsteinpflaster	Q2 7201,9318 7192,9508 7185,9819
 #: by: Carroll Haak: vvv
@@ -1780,7 +1780,7 @@ Doberaner Str. (Schmargendorf): Kopfsteinpflaster	Q2 2732,7235 2803,7227
 (Verlängerter Dauerwaldweg): befestigter Waldweg	Q1 480,9460 461,9556 437,9738
 (Verlängerte Alte Allee): befestigter Waldweg	Q1 596,9613 437,9738 267,9873 115,9993 -14,10096
 Maikäferpfad: Asphalt mit Löchern	Q2 828,9924 917,9860 968,9825 1020,9786 1121,9712
-Maikäferpfad: teilweise Verbundsteinpflaster	Q1 828,9924 573,10109
+Maikäferpfad: Verbundsteinpflaster	Q1 828,9924 573,10109
 Friedrichshaller Str.: Kopfsteinpflaster	Q2 2774,7655 2784,7711 3083,7587
 Reichenhaller Str.: Kopfsteinpflaster	Q2 2751,7811 2639,7814
 Reichenhaller Str.: Kopfsteinpflaster	Q2 2880,7801 2983,7795 3094,7790
@@ -2754,3 +2754,20 @@ Wilhelm-Stolze-Str.: Kopfsteinpflaster	Q2 13257,13149 13351,12928
 Fritz-Schiff-Weg: Kleinpflaster	Q1 13472,12337 13484,12436 13468,12497
 Ludwig-Pick-Str.: Asphalt	Q0 13540,12523 13568,12439
 Ludwig-Pick-Str.: Gehwegplatten	Q0 13568,12439 13563,12324
+Alte Allee: Asphalt	Q0 896,9396 596,9613
+Kühler Weg: Asphalt	Q0 596,9613 828,9924
+Falkensteiner Str.: Kopfsteinpflaster	Q3 4193,8088 4087,8204
+Emslebener Weg: Asphalt	Q0 4139,8485 4139,8356
+Kahlstr.: Kopfsteinpflaster in südlicher Richtung	Q3; 4220,8482 4220,8260
+Kahlstr.: Asphalt in nördlicher Richtung	Q2; 4220,8260 4220,8482
+(Wallenbergstr. - Rudolstätter Str.): Wassergebundene Decke	Q1 4139,8485 4029,8482
+(Zufahrt zur Kolonie Hohenzollerndamm): Kleinpflaster	Q1 3775,8771 3868,8759
+Apeldorner Weg: wassergebundene Decke	Q1 3848,8689 3868,8759 3932,8989
+Bechstedter Weg: Asphalt	Q0 3482,9028 3661,8815
+Zum Bechstedter Weg: Asphalt	Q1 3661,8815 3701,8849
+Münstersche Str.: Kleinpflaster	Q1 3763,9642 3699,9613
+Ruhrstr.: Asphalt	Q1 3983,9343 4230,9229
+Hektorstr.: Asphalt	Q1 3189,10141 3206,10458
+Walter-Benjamin-Platz: Gehwegplatten	Q0 4256,10583 4381,10583
+Bregenzer Str.: Asphalt	Q1 4278,10262 4227,10014
+Maxdorfer Steig: Kopfsteinpflaster	Q1 4325,8998 4449,8999

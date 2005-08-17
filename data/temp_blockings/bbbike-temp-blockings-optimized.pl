@@ -430,10 +430,10 @@ userdel	q4 53252,-90440 53805,-90240
          'type' => 'handicap'
        },
        {
-         'until' => 1129240800,
-         'text' => 'Kreisverkehr bei Hennigsdorf Straßenbau Vollsperrung 27.06.2005-13.10.2005 ',
-         'from' => 1119736800,
-         'data' => 'userdel	q4 -2800,25478 -2446,25386
+         'until' => 1128376800,
+         'text' => 'L 17; (LG Berlin-Hennigsdorf); zw. Kreisverkehr und Hennigsdorf Straßenbau Vollsperrung 08.08.2005-03.10.2005 ',
+         'from' => 1123365600,
+         'data' => 'userdel	2 -2800,25478 -2446,25386
 ',
          'type' => 'handicap'
        },
@@ -550,14 +550,7 @@ userdel	2 -4504,-14978 -4077,-14595
        undef,
        undef,
        undef,
-       {
-         'until' => 1124229600,
-         'text' => 'B 169; (Elsterwerdaer Str.); Bahnübergang zw. B101 und OE Prösen Reparaturarbeiten Vollsperrung 14.08.2005-16.08.2005 ',
-         'from' => 1123884000,
-         'data' => 'userdel	2 19076,-108365 19683,-108408
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -629,11 +622,12 @@ userdel	q4 -5209,70040 -4978,71109
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'until' => 1125525600,
-         'text' => 'B 96; (Gransee-Fürstenberg); zw. Gransee und Altlüdersdorf grundh. Ausbau Vollsperrung 01.08.2005-31.08.2005 ',
-         'from' => 1122760800,
-         'data' => 'userdel	2 -5575,69050 -5703,68140
+         'until' => 1129413600,
+         'text' => 'L 171; (Hohen Neuendorf-Hennigsdorf); zw. Kreisverkehr bei Hennigsd. und AS Stolpe Straßenbau Vollsperrung 04.10.2005-15.10.2005 ',
+         'from' => 1128290400,
+         'data' => 'userdel	2 -2446,25386 -2118,26060
 ',
          'type' => 'gesperrt'
        }

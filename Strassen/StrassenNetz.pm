@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.53 2005/05/19 00:12:44 eserte Exp $
+# $Id: StrassenNetz.pm,v 1.53 2005/05/19 00:12:44 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -349,6 +349,7 @@ sub make_net_steigung {
 		    my $mount = int(($hoehendiff/$new_act_dist)*1000)/1000;
 		    if ($mount >= $min_mount) {
 			for my $i (0 .. $#$seen - 1) {
+			    # XXX müßte ich hier nicht max(abs(...)) aussuchen?
 			    $net->{$seen->[$i]}{$seen->[$i+1]} = $mount
 				unless exists $net->{$seen->[$i]}{$seen->[$i+1]};
 			}

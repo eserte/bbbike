@@ -14,7 +14,7 @@ Legend:
 
 =over
 
-=item * (M3)
+=item * (H3)
 
 Edit mode, coloring of pp points: use different coloring for
 E<quot>KurvenpunkteE<quot> and crossings, to easier detect errors in
@@ -29,11 +29,6 @@ Löschen von Punkten aus der Selection im Edit-Modus unter Windows.
 
 Bugreport von Andreas Mühlhausen: Sehenswürdigkeiten werden auch im
 Normalmodus mit einem grünen Punkt gezeichnet (unter Windows).
-
-=item * (M4)
-
-Implement minimal scrolling: if scrolling to a point of a polyline,
-then choose the nearest one!
 
 =item * (M3)
 
@@ -71,12 +66,12 @@ eigene Layer, add custom und custom existiert für das Suchnetz
 
 =item * (H3)
 
-Ich sollte GPX als Ein/Ausgabeformat unterstützen: L<http://www.topografix.com/gpx_resources.asp>
+Ich sollte GPX als Ein/Ausgabeformat unterstützen:
+L<http://www.topografix.com/gpx_resources.asp>. Eingabe geht bereits.
 
 =item * (H3)
 
-mount E<amp> comments_mount virtuell integrieren. Neue Symbole für
-Steigungen verwenden:
+Neue Symbole für Steigungen verwenden:
 
  > (gepunktet): 1-3%
  > (solid): 3-7%
@@ -125,6 +120,9 @@ no_overlap_labels, more layers on startup (flaechen, gewaesser).
 Detect computer speed on linux:
 
     perl -e '($bogomips)=`grep bogomips /proc/cpuinfo` =~ /:\s*([\d\.]+)/; print $bogomips,"\n"'
+
+How to get CPU/hardware speed on other OSes: FreeBSD (sysctl?),
+Windows?
 
 E<quot>Optionen für langsame RechnerE<quot>: z.B. E<quot>Überlappungen
 vermeidenE<quot> etc.
@@ -197,11 +195,6 @@ gesetzt habe, und interpolierten Punkten unterscheiden)
 Im Umland ist es vielleicht sinnvoller, eine Routenbeschreibung anhand
 von Punkten (Ortschaften) anstatt Strecken (StraE<szlig>en) zu machen.
 Optional eins oder beides zusammen.
-
-=item * (M2)
-
-To speed up the update, just upload .modified from server
-first and compare the dates exclusively by using .modified!
 
 =item * (H1)
 
