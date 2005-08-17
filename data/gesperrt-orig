@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.60 2005/08/16 20:40:32 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.61 2005/08/16 20:44:56 eserte Exp $
 #:
 ###################################################################
 #
@@ -714,7 +714,7 @@ tragen (Treppe)	0:20 5371,4609
 (Stadtpark Steglitz)	BNP:15 5765,4693
 tragen (16 Stufen)	0:45 5459,4547
 tragen (Treppe)	0:20 12387,13107
-Schranke	0:10 12605,13356
+Schranke	BNP:10 12605,13356
 tragen (ca. 5 x 10 Stufen)	0:120 13858,13709
 Danziger Str.: Straßenbahnschienen	3nocross 12912,14084 12975,13990 13037,13897 13100,13803
 Danziger Str.: Straßenbahnschienen	3nocross 13100,13803 13166,13707 13228,13615

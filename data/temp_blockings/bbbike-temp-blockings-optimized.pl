@@ -628,6 +628,14 @@ userdel	q4 -5209,70040 -4978,71109
          'data' => 'userdel	2 26583,-15677 26612,-15094
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1125525600,
+         'text' => 'B 96; (Gransee-Fürstenberg); zw. Gransee und Altlüdersdorf grundh. Ausbau Vollsperrung 01.08.2005-31.08.2005 ',
+         'from' => 1122760800,
+         'data' => 'userdel	2 -5575,69050 -5703,68140
+',
+         'type' => 'gesperrt'
        }
      
 );

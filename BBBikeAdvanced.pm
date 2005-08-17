@@ -289,8 +289,8 @@ sub custom_draw {
 	my $desc_file = "$1.desc";
 	warn "Try to load description file $desc_file"
 	    if $verbose;
-	handle_global_directives($desc_file, $abk);
 	read_desc_file($desc_file, $abk); # XXX obsolete
+	handle_global_directives($file, $abk);
     }
 
     if ($args{-namedraw}) {

@@ -2529,4 +2529,12 @@ EOF
 userdel	2 26583,-15677 26612,-15094
 EOF
      },
+     { from  => 1122760800, # 2005-07-31 00:00
+       until => 1125525600, # 2005-09-01 00:00
+       text  => 'B 96; (Gransee-Fürstenberg); zw. Gransee und Altlüdersdorf grundh. Ausbau Vollsperrung 01.08.2005-31.08.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -5575,69050 -5703,68140
+EOF
+     },
     );
