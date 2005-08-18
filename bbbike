@@ -4961,7 +4961,9 @@ sub define_item_attribs {
     $pp_color = '#008000';
 
     for my $nr (0, 1, 2) {
-	$category_color{'W' . $nr} = $category_color{'W'};
+	$category_color{'W' . $nr}      = $category_color{'W'};
+	$category_font_color{'W' . $nr} = $category_font_color{'W'};
+	$category_font{'W' . $nr}       = $category_font{'W'};
     }
     # fallback, falls kein %category_color definiert ist
     %str_color =
