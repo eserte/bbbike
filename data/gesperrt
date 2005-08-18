@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.61 2005/08/16 20:44:56 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.62 2005/08/18 20:48:20 eserte Exp $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -445,9 +445,13 @@ Lewishamstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3 3644,10759 3631,1078
 Gervinusstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3 3839,10904 3631,10784 3587,10768
 Lewishamstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3 3592,10869 3631,10784 3839,10904
 Lewishamstr. -> Lewishamstr.: Straßentunnelrampe	3 3644,10759 3739,10576 3813,10435
+Lewishamstr. -> Waitzstr.: Straßentunnelrampe	3 3644,10759 3739,10576 3800,10580
 Lewishamstr. -> Sybelstr.: Straßentunnelrampe	3 3813,10435 3739,10576 3712,10566
 Sybelstr. -> Lewishamstr.: Straßentunnelrampe	3 3712,10566 3739,10576 3644,10759
 Sybelstr. -> Lewishamstr.: Straßentunnelrampe	3 3712,10566 3739,10576 3813,10435
+Sybelstr. -> Waitzstr.: Straßentunnelrampe	3 3712,10566 3739,10576 3800,10580
+Waitzstr. -> Lewishamstr.: Straßentunnelrampe	3 3800,10580 3739,10576 3813,10435
+Waitzstr. -> Sybelstr.: Straßentunnelrampe	3 3800,10580 3739,10576 3712,10566
 Köbisstr. -> Rauchstr.: unbequem passierbarer Mittelstreifen	3 7160,11225 6853,11336 6683,11367
 Köbisstr. -> Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3 7160,11225 6853,11336 6880,11110
 Rauchstr. -> Köbisstr.: unbequem passierbarer Mittelstreifen	3 6683,11367 6853,11336 7160,11225
