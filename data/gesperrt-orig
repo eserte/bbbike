@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.62 2005/08/18 20:48:20 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.62 2005/08/18 20:48:20 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -395,6 +395,7 @@ Ringbahnstr.	1s 8717,6965 8447,6964
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+Oberspreestr.: Straßenbahn auf Mittelstreifen	3nocross 21579,4579 21726,4537 21796,4517
 Hermannstr.: Gitter auf Mittelstreifen	3nocross 11892,8372 11920,8252 11933,8198
 Bundesplatztunnel	3nocross 5360,7554 5359,7619 5359,7661 5358,7681 5358,7711 5356,7862
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
@@ -592,6 +593,7 @@ Drängelgitter	BNP:5 38662,97200
 Schwingtor an der Luiseninsel	BNP:10 7706,11612
 Schwingtor an der Luiseninsel	BNP:10 7742,11639
 #: by: ^^^
+Schranke	BNP:5 25558,997
 #
 ############################################################################
 #

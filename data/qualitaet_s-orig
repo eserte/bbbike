@@ -1070,7 +1070,7 @@ Nalepastr.: sehr guter Asphalt	Q0 17211,7265 17284,7175 17614,6571
 Ernst-Grube-Str.: m‰ﬂiger Asphalt	Q1 21364,5435 21362,5289 21345,5157 21325,4998
 Ernst-Grube-Str.: Kopfsteinpflaster	Q2 21325,4998 21300,4837 21264,4809 21332,4655
 Ahornallee: asphaltiert	Q0 21325,4998 21454,4928 21509,4900
-Ahornallee: Kopfsteinpflaster	Q2 21509,4900 21684,4814
+Ahornallee: Kopfsteinpflaster	Q2 21509,4900 21607,4850 21684,4814
 Mentzelstr.: Kopfsteinpflaster	Q2 21732,4901 21684,4814 21579,4579
 Charlottenstr.: Kopfsteinpflaster, OK	Q1 23041,3919 22675,3885
 Charlottenstr.: Asphalt	Q0 22675,3885 22467,3889
@@ -1086,7 +1086,9 @@ Nobelstr.: Betonstraﬂe	Q0 14133,6187 14398,6184 15146,6154
 (Am Rixdorfer Teich): guter Parkweg	Q1 11253,8565 11104,8559 11020,8596 10957,8573 10911,8457
 Schmiedehof: Kopfsteinpflaster	Q2 8988,8958 8988,8990 8990,8915
 Sixtusgarten: Kopfsteinpflaster	Q2 8988,8990 9055,9022
-Ottomar-Geschke-Str.: Kopfsteinpflaster	Q2 21332,4655 21454,4928 21498,5023
+Ottomar-Geschke-Str.: Kopfsteinpflaster	Q2 21332,4655 21376,4748
+Ottomar-Geschke-Str.: Asphalt	Q0 21376,4748 21454,4928
+Ottomar-Geschke-Str.: Kopfsteinpflaster	Q2 21454,4928 21498,5023
 Wallotstr.: Asphalt	Q0 2046,9429 1965,9431 1851,9332 1795,9325 1757,9271
 Gartenufer: Parkweg	Q1 5794,11624 6239,11399 6342,11353 6346,11326
 (s¸dliches Spreeufer): teils gutes Kopfsteinpflaster, teils Parkweg, teils Asphalt	Q1 5579,12231 5737,12281 5804,12362 5962,12553 6029,12693 6078,12848 6193,12867
@@ -1119,6 +1121,12 @@ Steinstr.: Kopfsteinpflaster	Q2 -7909,-2375 -7978,-2309
 Erich-Lodemann-Str.: Betonstraﬂe	Q1 15765,7567 15429,7948 15268,8118
 Hans-Otto-Str.: Kopfsteinpflaster	Q2 12729,14227 12782,14300 12841,14380
 Kleine Parkstr.: schlechtes Kopfsteinpflaster	Q3 9133,9343 9104,9262
+Flemmingstr.: Kopfsteinpflaster	Q2 21845,4875 21726,4537
+Gutenbergstr.: unebenes Kopfsteinpflaster	Q2 21796,4517 21896,4853 21845,4875
+Ernst-Grube-Str. - Uferweg: etwas sandig	Q2 21364,5435 21443,5406 21487,5425
+(Uferweg, Mentzelpark): haupts‰chlich feiner Schotter	Q1 21487,5425 21600,5221 21684,5079 21735,5003 21821,4918 21845,4875
+F‰rberstr. - Uferweg: wassergebundener Belag	Q1 21675,4989 21665,5035 21684,5079
+F‰rberstr. - Uferweg: wassergebundener Belag	Q1 21675,4989 21735,5003
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3489,4115 3768,4045

@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.62 2005/08/18 20:48:20 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.62 2005/08/18 20:48:20 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -348,6 +348,8 @@ Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -
 Stephanstr.	1s 6526,4475 6377,4490
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
+Flemmingstr. -> Oberspreestr.: Straßenbahn auf Mittelstreifen	3 21845,4875 21726,4537 21796,4517
+Oberspreestr. -> Flemmingstr.: Straßenbahn auf Mittelstreifen	3 21579,4579 21726,4537 21845,4875
 Hermannstr. -> Mahlower Str.: Gitter auf Mittelstreifen	3 11933,8198 11920,8252 11773,8231
 Mahlower Str. -> Boddinstr.: Gitter auf Mittelstreifen	3 11773,8231 11920,8252 12096,8300
 Mahlower Str. -> Hermannstr.: Gitter auf Mittelstreifen	3 11773,8231 11920,8252 11892,8372
@@ -667,6 +669,7 @@ Drängelgitter	BNP:5:-193 38562,100725
 Drängelgitter	BNP:5:3 38662,97200
 Schwingtor an der Luiseninsel	BNP:10:-125 7706,11612
 Schwingtor an der Luiseninsel	BNP:10:-126 7742,11639
+Schranke	BNP:5:12 25558,997
 Spreeufer vor dem Monbijoupark: gesperrt wegen Bauarbeiten	2:inwork 10100,12876 9977,12912
 Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14903,10403 15059,10289
 Voltairestr. (Arbeiten an "Alexa", voraussichtlich bis 2005-10-31)	2:inwork 11323,12484 11209,12430
