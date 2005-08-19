@@ -3,7 +3,9 @@
 #: version: $Id: comments_path-orig,v 4.34 2005/08/16 20:40:28 eserte Exp $
 #:
 # Verwendete Kategorien:
-# CP;  : Kommentar an Punkt B bei Fahrt von A nach C
+# CP;  : Kommentar an Punkt B bei Fahrt von A nach C; Bei entweder A oder C kann statt einer Koordinate 
+#		 auch das Jokerzeichen '*' verwendet werden. Das Postprocessing generiert den Kommentar dann 
+#		 für alle Knoten, die dort an B anknüpfen.
 # CP   : wie "CP;", Kommentar gültig für beide Fahrtrichtungen
 # CP2; : Kommentar an Punkt A bei Fahrt von A nach B
 # CP2  : Kommentar an Punkt A bei Fahrt von A nach B und an Punkt B bei Fahrt von B nach A

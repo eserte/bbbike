@@ -777,7 +777,7 @@ tragen (Treppe)	0:20:-62 5371,4609
 tragen (16 Stufen)	0:45:-151 5459,4547
 tragen (Treppe)	0:20:-177 12387,13107
 Schranke	BNP:10:-63 12605,13356
-tragen (ca. 5 x 10 Stufen)	0:120:0 13858,13709
+tragen (ca. 5 x 9 Stufen)	0:120:0 13858,13709
 Danziger Str. -> Erich-Boltze-Str.: Straßenbahnschienen	3 12912,14084 12975,13990 13075,14060
 Danziger Str. -> Margarete-Sommer-Str.: Straßenbahnschienen	3 13037,13897 12975,13990 12879,13889
 Danziger Str. -> Margarete-Sommer-Str.: Straßenbahnschienen	3 13037,13897 12975,13990 12972,13970
@@ -805,3 +805,16 @@ Kette	BNP:5:-220 3264,9261
 (Fußgängertunnel Sybelstr.): 2 mal 30 Stufen	0:240:66 3761,10563
 Bregenzer Str.	1 4278,10262 4227,10014
 Bayerische Str.	1 4296,10004 4349,10247
+Kniprodestr. -> Heinz-Kapelle-Str.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3 12912,14084 12978,14151 12782,14300
+Heinz-Kapelle-Str. -> Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3 12782,14300 12978,14151 12996,14172
+Kniprodestr. -> Ernst-Fürstenberg-Str.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3 13046,14220 12996,14172 13014,14146
+Ernst-Fürstenberg-Str. -> Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3 13014,14146 12996,14172 12978,14151
+Rudolf-Schwarz-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13079,14320 13115,14293 13202,14388
+Kniprodestr. -> Rudolf-Schwarz-Str.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13070,14245 13115,14293 13079,14320
+Anton-Saefkow-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13084,14472 13202,14388 13261,14456
+Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13243,14470 13261,14456 13318,14517
+Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13202,14388 13261,14456 13243,14470
+Kniprodestr. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13374,14581 13318,14517 13261,14456
+Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13374,14581 13318,14517 13281,14540
+Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13261,14456 13318,14517 13281,14540
+Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13281,14540 13318,14517 13374,14581
