@@ -33,6 +33,11 @@ BEGIN {
 #*canvas = \&rot_text_smart_compat;
 #*rot_text = \&rot_text_old;
 
+if ($Tk::VERSION >= 804) {
+    # irgendwas ist hier kaputt gegangen...
+    $Tk::RotFont::NO_X11 = 1;
+}
+
 # XXX durch Variable verfügbar machen
 if (!$Tk::RotFont::NO_X11) { # XXX rot_text_newer ist wesentlich *langsamer* als rot_text_old
     # X11::Protocol scheint Speicherfresser zu sein
