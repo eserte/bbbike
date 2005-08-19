@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.21 2005/04/28 22:11:38 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.22 2005/08/19 21:48:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -1406,6 +1406,20 @@ sub BBBikeHeavy::reload_all {
 	}
     }
     $progress->FinishGroup;
+
+    # Need to delete comments_net?
+    if ($comments_net) {
+	if (exists $change{str}->{comm}) {
+	    undef $comments_net;
+	} else {
+	    for my $src ($comments_net->sourceobjects) {
+		if (!$src->is_current) {
+		    undef $comments_net;
+		    last;
+		}
+	    }
+	}
+    }
 }
 
 1;

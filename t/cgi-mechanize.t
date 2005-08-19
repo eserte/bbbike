@@ -205,7 +205,7 @@ for my $browser (@browsers) {
     ######################################################################
     # test for Kaiser-Friedrich-Str. (Potsdam) problem
 
-    {
+    XXX: {
 
 	$get_agent->();
 
@@ -298,7 +298,7 @@ for my $browser (@browsers) {
     ######################################################################
     # A street in Potsdam but not in "landstrassen"
 
- XXX: {
+    {
 
 	$get_agent->();
 

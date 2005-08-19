@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: StrassenNetz.pm,v 1.53 2005/05/19 00:12:44 eserte Exp eserte $
+# $Id: StrassenNetz.pm,v 1.54 2005/08/19 21:48:41 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -29,7 +29,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.53 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.54 $ =~ /(\d+)\.(\d+)/);
 
 package StrassenNetz;
 use strict;
@@ -136,19 +136,28 @@ sub is_source {
     0;
 }
 
+# gibt die zugehörigen Quellobjekte aus
+### AutoLoad Sub
+sub sourceobjects {
+    my $self = shift;
+    if (exists $self->{Source} && @{$self->{Source}}) {
+	@{$self->{Source}};
+    } else {
+	$self->{Strassen};
+    }
+}
+
 # gibt die zugehörigen Quelldateien aus
 ### AutoLoad Sub
 sub sourcefiles {
     my $self = shift;
-    if (exists $self->{Source} && @{$self->{Source}}) {
-	my %src;
-	foreach (@{$self->{Source}}) {
-	    $src{$_}++ for ($_->file);
+    my %src;
+    for my $obj ($self->sourceobjects) {
+	for my $file ($obj->file) {
+	    $src{$file}++;
 	}
-	sort keys %src;
-    } else {
-	$self->{Strassen}->file;
     }
+    sort keys %src;
 }
 
 sub dependent_files {
@@ -654,7 +663,7 @@ sub build_penalty_code {
 ';
     }
     # should be last, because of addition
-    if ($sc->HasTragen) {
+    if ($sc->HasTragen) { # XXX häh?
 	if ($sc->HasGreen) {
 	    # Adjust penalty according to penalty for "normal" (non-green)
 	    # streets:

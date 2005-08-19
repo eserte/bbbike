@@ -14,6 +14,10 @@ Legend:
 
 =over
 
+=item * (M3)
+
+Show more fields in route list (just like in web interface)
+
 =item * (H3)
 
 Edit mode, coloring of pp points: use different coloring for
@@ -1420,6 +1424,10 @@ E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.
 
 =over
 
+=item * (M3)
+
+resolve_stars: add support for E<quot>* X *E<quot>
+
 =item * (H4)
 
 .desc-Dateien komplett durch globale Direktiven ersetzen. Es fehlt noch:
@@ -1657,6 +1665,26 @@ ich jetzt auch...
 =head1 Routing (BBBikeRouting.pm, Strassen::StrassenNetz)
 
 =over
+
+=item * (H4)
+
+Neue Kategorie 0 und BNP mit Richtungsabhängigkeit einführen. Z.B.
+
+	0:10	A B C
+
+wobei B die Stelle mit dem Hindernis ist. Es sind also nur genau ein
+oder drei Punkte erlaubt. Im Pre-Processing könnte man Joker (*)
+erlauben.
+
+Implementiert werden muss:
+
+* Routing (wahrscheinlich ähnlich wie E<quot>3E<quot> und
+E<quot>BNPE<quot>, make_sperre und build_penalty_code müssen geändert
+werden)
+
+* Zeichnen im Perl/Tk-Tool (weiterer Spezialfall in plot_sperre,
+vielleicht mit einem Pfeil versehen? Neues Icon für Bordsteine, da
+diese so oft vorkommen?)
 
 =item * (H2)
 
@@ -1940,12 +1968,6 @@ Wird ImageSuffix irgendwo verwendet? Besser ImageType stattdessen
 verwenden, dann kann ich auch bei bbbikedraw MapServer/gif oder
 MapServer/pdf sagen.
 
-=back
-
-=head3 BBBikeDraw::GD
-
-=over
-
 =item * (M3)
 
 In BBBikeDraw/GD.pm nach Kommentar bei AREA suchen: Probleme mit den
@@ -1985,6 +2007,10 @@ E<quot>(A -) BE<quot> zu E<quot>-> BE<quot> optimieren
 =head3 BBBikeDraw::PDF
 
 =over
+
+=item * (M3)
+
+Show more fields in route list (just like in web interface)
 
 =item * (H3)
 
