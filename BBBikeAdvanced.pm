@@ -373,6 +373,7 @@ sub read_desc_file {
 	       %str_attrib %p_attrib
 	       $str_attrib $p_attrib
 	       %category_size %category_color %category_width %category_image
+	       %category_stipple
 	      );
 	$compartment->share(@shared_symbols);
 	$compartment->rdo($desc_file);

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.11 2005/04/06 21:01:42 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.12 2005/08/19 05:54:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -475,6 +475,8 @@ sub BBBikeLazy::plotstr_on_demand {
 	    if ($something_new && $layer_active_color{$abk}) {
 		$c->itemconfigure($abk, -activefill => $layer_active_color{$abk});
 	    }
+
+	    undef $draw_sub;
 	}
 
 	foreach my $abk (@defs_p_abk) {
@@ -530,6 +532,8 @@ sub BBBikeLazy::plotstr_on_demand {
 		}
 	    }
 	    plot_symbol($c, $abk);
+
+	    undef $draw_sub;
 	}
 
 	if (0) {
@@ -567,6 +571,8 @@ sub BBBikeLazy::plotstr_on_demand {
 		    }
 		}
 	    }
+
+	    undef $draw_sub;
 	}
     } else {
 #	foreach my $abk (@defs_p_o_abk) {

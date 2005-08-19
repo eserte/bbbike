@@ -4984,6 +4984,9 @@ sub define_item_attribs {
 	 'bf'  => "behindertenfreundlich.gif",
 	);
 
+    %category_stipple =
+	('Cemetery' => 'crosses.xbm');
+
     %line_width =
 	('s-H'      => [1, 2, 3, 4, 6, 10],
 	 's-HH'     => [1, 2, 3, 4, 6, 10],
@@ -5432,7 +5435,7 @@ sub generate_plot_functions {
 		    my $item;
 		    my $category = $1;
 		    my($color, $rest) = split(/\|/, $category);
-		    my $stipple;
+		    my $stipple = $category_stipple{$category};
 		    if (defined $rest && $rest ne "") {
 			if ($rest =~ /^IMG:([^|]+)(?:\|ANCHOR:([^|]+))?$/) {
 			    $image = $1;
@@ -17475,7 +17478,8 @@ sub handle_global_directives {
     my %accept_global_hash_directives = map{($_,1)}
 	qw(line_width line_length
 	   str_color outline_color
-	   category_size category_color category_width category_image);
+	   category_size category_color category_width category_image
+	   category_stipple);
     my %accept_global_hashref_directives = map{($_,1)}
 	qw(str_attrib p_attrib);
     # XXX scrollregion
