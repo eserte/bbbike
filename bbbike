@@ -11470,7 +11470,7 @@ sub show_info {
 	    $linkcount++;
 	}
 
-	if ($devel_host && $ENV{HOME} !~ /^devpc01/) {
+	if ($devel_host && $ENV{HOST} !~ /^devpc01/) {
 	    my $url = sprintf "http://www.stad".
 		"tpland".
 		    "ienst.de/tpl/vm005/map.asp?ll=%.5fx%.5f", $px, $py;
