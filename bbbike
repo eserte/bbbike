@@ -12296,7 +12296,7 @@ sub dellast {
 	    #XXX $bikepwr_cal_spd[$i]  -= $etappe_def->[6];
 	    #}
 	}
-	undef @act_search_route; # XXX performance hit bei langen Strecken
+	@act_search_route = (); # XXX performance hit bei langen Strecken
 	pop @coords;
 	my $ref = pop @realcoords;
 	my $x = $ref->[0];
@@ -12532,7 +12532,7 @@ sub resetroute {
     $c->delete('route');
     $nr = -1;
     $next_is_undo = 0;
-    undef @act_search_route;
+    @act_search_route = ();
     update_route_strname();
 
     if (@inslauf_selection || @ext_selection) {
@@ -14073,12 +14073,14 @@ sub search_route {
 # 	    }
 # 	}
 # 	get_route_from_register(1) if $max_list > 0;
-	# continue with best route
-	if ($continue) {
+	# continue with best route (but do not continue if the route was deleted before and @act_search_route is empty)
+	if ($continue && @act_search_route) {
 	    push @act_search_route,
 		$net->route_to_name([@path], -startindex => $old_nr); # XXX is wrong (?): +1);
 	} else {
-	    @act_search_route = $net->route_to_name([@path], -startindex=>0);
+	    # Use @realcoords instead of @path, in case it is continued,
+	    # but with an empty @act_search_route before
+	    @act_search_route = $net->route_to_name([@realcoords], -startindex=>0);
 	}
 	if (@path) {
 	    push @search_route_points, [join(",", @{ $path[-1] }),

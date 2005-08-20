@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.71 2005/08/16 20:40:41 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.72 2005/08/20 00:16:02 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
@@ -635,7 +635,7 @@ Prager Platz: gutes Kopfsteinpflaster	Q1 5661,9630 5657,9600 5630,9592 5602,9606
 Normannenstr.: Kopfsteinpflaster	Q2 16156,12286 16270,12261
 Rüdigerstr. (Lichtenberg): Kopfsteinpflaster	Q2 17487,12244 17010,12313 16810,12342
 Barbarossastr.: Kopfsteinpflaster	Q2 7128,9512 7010,9535
-Prühßstr.: Kopfsteinpflaster	Q2 8766,4038 8967,4082 9338,4129 9455,4159 9848,4254
+Prühßstr.: Kopfsteinpflaster	Q2 8766,4038 8967,4082 9107,4103 9338,4129 9455,4159 9848,4254
 Marienburger Str.: Kopfsteinpflaster	Q2 11582,14448 11835,14309 12091,14179
 Hufelandstr.: Kopfsteinpflaster	Q2 12091,14179 12199,14102 12380,13975 12478,13903 12567,13839 12573,13792
 Limonenstr.: Kopfsteinpflaster	Q2 3725,4737 3597,4941 3418,5088 3357,5178 3321,5212
@@ -1118,6 +1118,7 @@ Schwartzkopffstr.: Asphalt	Q0 8607,14253 8781,14357
 Pflugstr.: Asphalt	Q0 8781,14357 8662,14567
 Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
+Tödiweg: Asphalt	Q0 9418,2038 9450,1846 9486,1662
 Ernst-Liesegang-Ufer: wassergebundener Weg	Q1 -6468,5080 -6347,5172 -6270,5136 -5995,5350 -5865,5631 -5749,5747 -5360,5897
 Ernst-Liesegang-Ufer: wassergebundener Weg	Q1 -5360,5897 -5249,5951 -4887,6107 -4820,6188 -4807,6481
 Ledebourstr.: mäßiger Asphalt	Q1 24448,10098 24827,9968 25413,9613 25476,9561
@@ -1952,7 +1953,7 @@ Heidebrinker Str.: mäßiger Asphalt	Q1 9226,16020 9215,16132 9268,16228
 Volmerstr.: Asphalt	Q0 19389,3021 19516,2877 19670,2701 19919,2384
 Max-Dohrn-Str.: Asphalt	Q0 3006,13717 3700,13890
 Altheider Str.: schlechtes Kopfsteinpflaster	Q3 19800,3552 20073,3734
-Rohrbachstr.: Kopfsteinpflaster	Q2 9633,-2641 9637,-2150
+Rohrbachstr.: Kopfsteinpflaster	Q2 9633,-2641 9635,-2415 9637,-2150
 Bundschuhweg: Verbundsteinpflaster	Q1 3209,25871 3337,25931
 Maarer Str.: Beton	Q1 5568,21185 5676,21354 5892,21548 6056,21667 6253,21778
 Würtzstr.: gutes Kopfsteinpflaster	Q1 11567,19130 11620,18971
@@ -1963,6 +1964,10 @@ Ernst-Bloch-Str.: Beton	Q0 23014,12706 22985,12807 23017,13037 23132,13034 23165
 Breitensteinweg: Asphalt	Q0 545,334 940,376 1034,474
 Lübecker Str.: Asphalt	Q0 6402,13865 6401,13721 6403,13312
 Skladanowskystr.: Kopfsteinpflaster	Q3 9606,19510 9714,19615
+Hohenzollernstr. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3 9559,-2417 9635,-2415 10173,-2416
+Otto-Schmirgal-Str.: Asphalt	Q0 18561,10341 18482,10306 18410,10275 18425,10231 18332,10185
+Richterstr.: mäßiges Kopfsteinpflaster	Q2 9365,4006 9115,3959 9107,4103 9100,4192
+Dolziger Str.: mäßiges Kopfsteinpflaster	Q2 14363,12749 14632,12681 14814,12626 14935,12596
 (Bad Kissingen): wassergebunde Decke	Q1 3639,7590 3652,7795
 (Kolonieweg a. d. Forkenbeckstr.): wassergebunde Decke	Q1 3225,8214 3230,8194 3635,8099 3709,8082 3753,8073 3771,8094
 Claire-Waldoff-Weg: wassergebunde Decke	Q1 3635,8099 3596,7550
