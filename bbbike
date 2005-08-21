@@ -12330,16 +12330,20 @@ sub dellast {
 	$c->delete("route-$nr");
 	$nr--;
 	unless ($no_update) {
-	    set_flag('via');
-	    set_flag('ziel');
-	    updatekm();
-	    if (!@coords) {
-		undef $search_route_flag;
-		search_route_mouse(1);
-	    }
-	    update_route_strname();
+	    update_flags_and_route();
 	}
     }
+}
+
+sub update_flags_and_route {
+    set_flag('via');
+    set_flag('ziel');
+    updatekm();
+    if (!@coords) {
+	undef $search_route_flag;
+	search_route_mouse(1);
+    }
+    update_route_strname();
 }
 
 ### AutoLoad Sub
@@ -12373,7 +12377,7 @@ sub deltovia {
 	my($x, $y) = @{ $realcoords[$i] };
 	my $xy = "$x,$y";
 	if ($xy eq $via) {
-	    #dellast();
+	    update_flags_and_route();
 	    return;
 	} else {
 	    dellast(1);

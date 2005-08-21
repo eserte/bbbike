@@ -197,9 +197,7 @@ Grazer Platz	1 6445,6769 6679,6816 6802,6816
 Grazer Platz	1 6811,6737 6686,6735 6451,6710
 Goltzstr. (Spandau)	1 -2811,16911 -3009,16761
 Putlitzstr.	1 6210,13939 6214,14208
-Putlitzstr.	1 6289,14225 6275,13969
-# kurzes Stück:
-Putlitzstr.	1s 6275,13969 6272,13916
+Putlitzstr.	1 6289,14225 6286,14183 6264,13995 6242,13953
 Langhansstr. (außer Tram)	1 12046,16568 12200,16579 12409,16475
 Triftstr. (Buchholz)	1 12018,23040 12178,23034
 Joachimstr.	1 10142,13556 10081,13673
@@ -733,3 +731,6 @@ Bregenzer Str.	1 4278,10262 4227,10014
 Bayerische Str.	1 4296,10004 4349,10247
 Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3nocross 12912,14084 12978,14151 12996,14172 13046,14220
 Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross 13070,14245 13115,14293 13202,14388 13261,14456 13318,14517 13340,14552
+(Treppe zur Putlitzbrücke): tragen	0:180 6272,14183
+An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3nocross 6242,13953 6248,14185 6255,14310
+Rathenower Str.: schwierig zu querender Mittelstreifen	3nocross 7192,13036 7207,13118 7148,13245

@@ -1683,8 +1683,10 @@ E<quot>BNPE<quot>, make_sperre und build_penalty_code müssen geändert
 werden)
 
 * Zeichnen im Perl/Tk-Tool (weiterer Spezialfall in plot_sperre,
-vielleicht mit einem Pfeil versehen? Neues Icon für Bordsteine, da
-diese so oft vorkommen?)
+vielleicht mit einem Pfeil versehen? Oder versetzt zeichnen, wenn die
+Position eindeutig ist (i.e.: * A B)? Neues Icon bzw.
+Polygon/Polyline-Zug für Bordsteine, da diese so oft vorkommen [wenn
+ja, dann auch im Postprocessing (Winkelberechnung) berücksichtigen]?)
 
 =item * (H2)
 
