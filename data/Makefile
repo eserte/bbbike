@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.65 2005/08/15 21:25:27 eserte Exp $
+# $Id: Makefile,v 2.65 2005/08/15 21:25:27 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -90,7 +90,8 @@ all:	targets check .modified .rsync_include make_misc
 targets:	${TARGETS}
 
 targets-clean:
-	mv -f ${TARGETS} /tmp
+	-mkdir /tmp/old-data
+	mv -f ${TARGETS} /tmp/old-data/
 
 # Useful checks, but normally too slow for a quick build
 # XXX merge with sort-Berlin.coords.data rule below?

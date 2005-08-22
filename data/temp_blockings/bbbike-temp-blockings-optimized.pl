@@ -631,30 +631,7 @@ userdel	q4 -5209,70040 -4978,71109
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1124679600,
-         'text' => 'Kurfürstendamm / Tauentzienstr. in beiden Richtungen zwischen Passauer Str. und Uhlandstr. Veranstaltung, Straße vollständig gesperrt, einschließlich der Seitenstraßen (bis 22.08.2005 05:00 Uhr)',
-         'from' => 1124486293,
-         'data' => 'userdel	2 5229,10716 5351,10760
-userdel	2 5229,10716 5076,10658
-userdel	2 5657,10868 5484,10810
-userdel	2 5657,10868 5725,10892
-userdel	2 5725,10892 5797,10881
-userdel	2 5942,10803 6040,10751
-userdel	2 5942,10803 5797,10881
-userdel	2 6040,10751 6137,10689
-userdel	2 5484,10810 5351,10760
-userdel auto	3 5831,10978 5797,10881 5681,10696
-userdel auto	3 5247,10992 5229,10716 5207,10399
-userdel auto	3 5207,10399 5229,10716 5247,10992
-userdel auto	3 5479,10719 5484,10810 5505,10971
-userdel auto	3 5877,10486 6040,10751 6135,10982
-userdel auto	3 5505,10971 5484,10810 5479,10719
-userdel auto	3 5681,10696 5797,10881 5831,10978
-userdel auto	3 6135,10982 6040,10751 5877,10486
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1139094000,
          'text' => 'B 101; (Herzberg-Jüterbog); Brücke über Kremnitzbach u. über Rad-u.Gehweg bei Bernsdorf Brückenbau Vollsperrung 22.08.2005-04.02.2006 ',

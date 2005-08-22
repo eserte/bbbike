@@ -74,8 +74,6 @@ Entlastungsstr.: wird voraussichtlich im September 2005 stillgelegt	? 8063,12182
 # In diesem Abschnitt kommen Straßen rein, die erst einmal nicht in
 # die Datenbank aufgenommen werden sollen.
 #
-#: by: matias stief (Kopfsteinpflaster Q2):
-Bernhard-Lichtenberg-Str.: Kopfsteinpflaster oder nicht?	? 12384,14600 12496,14515 12685,14371
 #: XXX laut Detlef Hoge:
 auf der östlichen Seite der B101n: wo genau ist der Radweg hier?	? 6173,-2344 5957,-2575 5627,-2671
 #: XXX laut holger, hd, sav:
@@ -201,7 +199,6 @@ Neue Späthstr.: genaue GPS-Koordinaten!	? 14705,5176 14600,5450 14398,5406 14340
 Potsdam, Lennestr. - Ökonomieweg: asphaltiert, durch Park Sanssouci, der nachts geschlossen wird	? -14634,-1343 -14856,-1223 -14859,-1142
 Sanssouci, Am Grünen Gitter: asphaltiert, nachts geschlossen	? -13857,-1040 -14153,-1135 -14182,-995
 Sanssouci, Ökonomieweg: nachts geschlossen, wie geht es am Neuen Palais weiter?	? -14182,-995 -14410,-1039 -14612,-1117 -14859,-1142 -15553,-1139 -15651,-1137 -15771,-1070
-Sella-Hasse-Str.: eigentlich in diese Fahrtrichtung gesperrt, aber noch keine Anknüpfung an das Restnetz vorhanden	?; 20948,16612 20771,16690 20843,16829
 Viktoriapark, Katzbachstr. über das Denkmal zur Methfesselstr.: Weg wird aufgenommen, wenn bbbike.cgi Steigungen kann	? 8598,9061 8884,9078 8901,9104 8943,9098 8962,9048 9106,9038
 Viktoriapark, Kreuzbergstr. zur Methfesselstr.: Weg wird aufgenommen, wenn bbbike.cgi Steigungen kann	? 9141,9142 8973,9171 9007,9264 8955,9318
 Stinggraben und See	? 1584,39467 1930,39739 1864,40227 2186,40991 2056,41586 1860,42350
@@ -225,6 +222,7 @@ Boizenburger Str.: guter Asphalt (Q0)	? 22310,12829 22309,12350 22373,12273
 #: XXX ^^^
 #: section ^^^
 #
+Ludwig-Renn-Str.: Einbahnstraße auch für Radfahrer?	? 20843,16829 21017,16737
 Verbindung zwischen Michelangelostr. und Hohenschönhausener Str. vorhanden? im Süden: ja, Feldweg	? 13838,15113 14125,14905 14574,14646
 Europarc Dreilingen: Qualität? durchgängig befahrbar?	? -3985,115 -4459,-157 -6147,-1125 -6395,-887
 Stolper Weg: Qualität?	? -2743,-934 -4003,-684 -4153,-621 -4459,-157
@@ -235,7 +233,6 @@ Entlang der Industriebahn: laut ADFC-Karte befahrbar, Qualität?	? 5138,21358 471
 #: XXX laut anonymen Eintrag "mäßig":
 Am Packereigraben: laut ADFC-Karte befahrbar, Qualität?	? 4208,21159 3979,21211
 Waldpark Steinberg: laut ADFC-Karte befahrbar, Qualität?	? 3979,21211 3718,21489 3553,21665 3406,21911 3139,22201
-Waldweg über den Beyschlagtunnel: befahrbar, Qualität?	? 506,22266 742,22666
 Soldiner Str.: laut ADFC mäßig geeignet	? 9096,16976 9317,16882 9604,16760
 Pankeweg zwischen Chausseestr. und Gerichtstr.: Durchfahrt möglich? Qualität?	?? 8153,14769 8235,14835 8273,15311
 Pankeweg zwischen Pankstr. und Wiesenstr.: Qualität (laut ADFC-Karte ungeeignet)?	?? 8179,15601 8140,15859
@@ -310,7 +307,6 @@ Am Marderberg, kreuzender Weg: genaue Wegführung?	? 14288,19459 14328,19527 1420
 Am Fließ: befahrbar, Qualität?	? 14764,19670 14751,19882 14268,20313 13979,20407 13905,20556 13575,20583
 Schönerlinder Str.: Radwegbenutzungspflicht aufgehoben, wo genau?	? 12065,23232 12067,23241 11929,23946 11965,24188 12177,24684 12498,25330 12957,26186 13192,26628 13267,26891
 Müllerstr.: Radwegbenutzungspflicht aufgehoben, wo genau?	? 8057,14876 7929,15006 7754,15160
-Zwischen Seestr. und Friedrich-Olbricht-Damm: Heißt die Straße noch Beusselstr. oder schon Saatwinkler Damm?	? 5074,14718 5062,14681
 Ernst-Liesegang-Ufer: Qualität?	? -6468,5080 -6347,5172 -6270,5136 -5995,5350 -5865,5631 -5749,5747 -5360,5897 -5249,5951 -4887,6107 -4820,6188 -4807,6481
 Teltower Weg: Qualität?	? -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -174,5941 -107,5880
 Parforceweg: Qualität? (das östliche Ende sieht nur mäßig aus)	? -643,7252 -728,7310 -1008,7427 -1142,7493 -1308,7558 -1328,7597 -1787,7932 -1843,8128 -2028,8270 -2078,8217 -2117,8204 -2156,8208 -2294,8232 -2386,8282
@@ -464,7 +460,7 @@ Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsab
 Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsabhängige Strecke; am Luisenberg wird vielleicht demnächst asphaltiert	? -9543,4625 -8868,3875 -8820,3707
 Mauerweg am Griebnitzsee: laut "Berliner Umland" witterungsabhängige Strecke, laut "mobil-potsdam.de" Waldweg	? -9656,-285 -9562,-325 -9412,-518 -9337,-668 -9109,-821 -8934,-871 -8846,-993 -8693,-1115 -8662,-1215 -8378,-1490 -8250,-1503 -8062,-1459 -7837,-1346 -7592,-1402
 Mauerweg in Schildow: Qualität? Wegführung? einzelne Straßen benennen?	? 7639,24383 7590,24481 7412,24481 7425,24715 6821,24700 6306,24537 6034,24503 5534,24521 5309,24571 5256,24593 4950,24293 4825,24328
-Mauerweg in Frohnau: Verlauf weitgehend unklar, Qualität?	? 3848,24546 3600,24490 3515,24668 3546,24859 3603,24968 3306,25259 3200,25429 3211,25484 3473,25618 3662,25618 3615,25890 3362,26046 3390,26225 3540,26465 3450,26503 3403,26668
+Mauerweg in Frohnau: Verlauf weitgehend unklar, Qualität?	? 3848,24546 3600,24490 3515,24668 3546,24859 3603,24968 3306,25259 3200,25429 3211,25484 3473,25618 3662,25618 3615,25890 3428,25979 3362,26046 3390,26225 3448,26315 3540,26465 3450,26503 3403,26668
 Mauerweg in Frohnau: laut "Berliner Umland" teilweise gut geeignet, teilweise witterungsabhängige Strecken	? 3403,26668 3081,27368 3706,27812 3512,28053 3078,28028 2162,28077 1979,28091 1871,28131 1741,27539
 Krumme Lanke - Grunewaldsee: genaue Wegführung? Qualität (wahrscheinlich Waldweg)?	? -604,5228 -579,5320 -236,5389 63,5600 157,5607 213,5582 288,5601 344,5738 325,5925 381,6094 331,6225 394,6368 441,6435
 Grunewaldsee - Hundekehlesee (Umgehungschaussee): Qualität (wahrscheinlich Waldweg); Fußgänger und Hundeauslaufgebiet?	? 905,6631 1149,7205 1263,7450 1252,7741 1043,7929 860,8052 864,8110
@@ -891,10 +887,8 @@ Färberstr.: Kopfsteinpflaster?	? 21494,4605 21607,4850
 (Mörchinger Str. - Berliner Str.): Qualität, Abbiegesituation an Berliner Str.? 	? 1360,3253 1334,3305
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): als grünen Weg kennzeichnen?	? 821,2714 1017,2823 1126,2885 1262,2975
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): als grünen Weg kennzeichnen?	? 1453,3085 1659,3226 1687,3244 1715,3257 1977,3414 2271,3571
-Eisfalterweg: Qualität (wahrscheinlich asphaltiert)?	? 21518,11051 21632,11103 21778,11164
 Zu den Faltern: Qualität?	? 21862,10965 22071,11048
 Grüne Aue: Qualität?	? 21940,11282 22060,11084 22071,11048 22100,10976 22151,10851
 Grüne Aue - Chemnitzer Str.: Qualität? Brücke über die Wuhle vorhanden (nicht für Autofahrer?)?	? 22100,10976 22182,11001 22271,10971 22382,10899
-Skladanowskystr. zwischen Friedrich-Engels-Str. und Blumenthalstr.: Qualität? Auch Kopfsteinpflaster?	? 9251,19407 9606,19510
 Ist hier noch das DRK-Krankenhaus? Name?	? 1053,3142
 Am Tierpark/Otto-Schmirgal-Str.: Überqueren der Straßenbahntrasse möglich?	? 18561,10341

@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.72 2005/08/20 00:16:02 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.74 2005/08/21 18:58:19 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
@@ -1094,6 +1094,7 @@ Buschiner Str.: Asphalt	Q0 20160,13287 20598,13219 20743,13197
 Stangeweg: Beton	Q0 21414,16284 21542,16209 21610,16079
 Anemonenstr.: asphaltiert	Q0 23447,4425 23809,4533 23934,4661
 Sella-Hasse-Str.: Asphalt	Q0 20896,16937 20843,16829 20771,16690 20948,16612
+Eisfalterweg: Asphalt	Q0 21518,11051 21632,11103 21778,11164
 Stolbergstr.: Asphalt	Q0 8831,6780 8834,6639
 Stolbergstr.: Kopfsteinpflaster	Q2 8834,6639 8850,6421
 Richnowstr.: mäßiger Asphalt	Q1 8850,6421 8946,6501
@@ -1339,7 +1340,7 @@ Lettestr.: Kopfsteinpflaster	Q2 11268,15360 11368,15301 11480,15229
 Apostel-Paulus-Str.: Kopfsteinpflaster?	Q2 7044,9163 6945,9142 6885,9132 6745,9106 6593,9074 6465,9047 6366,9033 6283,9022 6209,9012
 Waldstr. (Niederschönhausen): asphaltiert	Q0 10018,19429 9978,19512
 Waldstr. (Niederschönhausen): Kleinsteinpflaster	Q1 9978,19512 9906,19718 9840,19923
-Waldstr. (Niederschönhausen): asphaltiert	Q0 9840,19923 9773,20136 9750,20492
+Waldstr. (Niederschönhausen): asphaltiert	Q0 9840,19923 9773,20136 9745,20260 9750,20492
 Robert-Rössle-Str.: Beton	Q0 16512,24888 16725,24768
 Stubenrauchstr.: schlechtes Kopfsteinpflaster	Q3 3452,3717 3568,3784 3629,3715
 Korsörer Str.: mäßiges Kopfsteinpflaster	Q2 10101,15751 10398,15797
@@ -1957,7 +1958,10 @@ Max-Dohrn-Str.: Asphalt	Q0 3006,13717 3700,13890
 Altheider Str.: schlechtes Kopfsteinpflaster	Q3 19800,3552 20073,3734
 Rohrbachstr.: Kopfsteinpflaster	Q2 9633,-2641 9635,-2415 9637,-2150
 Bundschuhweg: Verbundsteinpflaster	Q1 3209,25871 3337,25931
+Bundschuhweg: Asphalt mit diversen notdürftig geflickten Frostaufbrüchen	Q1 3337,25931 3428,25979
 Maarer Str.: Beton	Q1 5568,21185 5676,21354 5892,21548 6056,21667 6253,21778
+Bieselheider Weg: schlecht ausgebesserte Asphaltdecke	Q1 3615,25890 3428,25979 3362,26046 3390,26225 3448,26315
+Bieselheider Weg: Verbundsteinpflaster	Q1 3448,26315 3540,26465
 Würtzstr.: gutes Kopfsteinpflaster	Q1 11567,19130 11620,18971
 Räuschstr.: Asphalt	Q0 3098,19867 3265,19641 3455,19389
 Maximilianstr. (Lichtenberg): mäßiges Kopfsteinpflaster	Q2 16334,10958 16381,11080 16468,11297
@@ -1965,11 +1969,18 @@ Unterbaumstr.: Kopfsteinpflaster	Q2 8503,12895 8581,13013
 Ernst-Bloch-Str.: Beton	Q0 23014,12706 22985,12807 23017,13037 23132,13034 23165,13167
 Breitensteinweg: Asphalt	Q0 545,334 940,376 1034,474
 Lübecker Str.: Asphalt	Q0 6402,13865 6401,13721 6403,13312
-Skladanowskystr.: Kopfsteinpflaster	Q3 9606,19510 9714,19615
+Skladanowskystr.: schlechtes Kopfsteinpflaster	Q3 9714,19615 9606,19510 9491,19477
+Skladanowskystr.: Beton	Q1 9491,19477 9251,19407
+Wilhelm-Wolff-Str.: schlechtes Kopfsteinpflaster	Q3 9809,19529 9729,19426 9265,19335 9157,19314
 Hohenzollernstr. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3 9559,-2417 9635,-2415 10173,-2416
 Otto-Schmirgal-Str.: Asphalt	Q0 18561,10341 18482,10306 18410,10275 18425,10231 18332,10185
 Richterstr.: mäßiges Kopfsteinpflaster	Q2 9365,4006 9115,3959 9107,4103 9100,4192
 Dolziger Str.: mäßiges Kopfsteinpflaster	Q2 14363,12749 14632,12681 14814,12626 14935,12596
+Bernhard-Lichtenberg-Str.: Kopfsteinpflaster	Q2 12384,14600 12496,14515 12685,14371
+Gemsenpfad: fester Sandweg	Q1 -757,22587 -700,22746 -606,22857
+Ludwig-Renn-Str.: Asphalt	Q0 20479,16155 20504,16204 20567,16320 20750,16226 20865,16440 20948,16612 21017,16737 20843,16829
+(Waldweg über den Beyschlagtunnel): mäßiger fester Sandweg	Q2 332,22372 742,22666
+Weverstr.: mäßiger Asphalt	Q1 -4143,12336 -4054,12337 -3867,12337 -3754,12339 -3609,12348 -3247,12362
 (Bad Kissingen): wassergebunde Decke	Q1 3639,7590 3652,7795
 (Kolonieweg a. d. Forkenbeckstr.): wassergebunde Decke	Q1 3225,8214 3230,8194 3635,8099 3709,8082 3753,8073 3771,8094
 Claire-Waldoff-Weg: wassergebunde Decke	Q1 3635,8099 3596,7550
