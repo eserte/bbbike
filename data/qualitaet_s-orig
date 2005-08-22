@@ -450,7 +450,7 @@ Schleiermacherstr.: Kopfsteinpflaster	Q2 9987,9238 9991,9267 10019,9451 10053,96
 Bergmannstr.: Kopfsteinpflaster	Q2 9962,9237 9987,9238
 Franz-Künstler-Str.: Kopfsteinpflaster	Q2 9979,10639 10026,10635
 Hanauer Str.: Kopfsteinpflaster, teilweise recht schlecht	Q2 4430,7896 4283,8016
-Verl. Pücklerstr.: Waldweg	Q1 1558,6729 1170,6654 967,6620 905,6631 880,6645 832,6607 778,6603 698,6567 546,6583 369,6594 218,6571
+Verl. Pücklerstr.: Waldweg	Q1 1558,6729 1364,6691 1170,6654 967,6620 905,6631 880,6645 832,6607 778,6603 698,6567 546,6583 369,6594 218,6571
 Bismarckstr.: Kopfsteinpflaster	Q2 -4892,1267 -5028,1133 -5092,1130 -5417,878 -5482,820 -5616,780 -6009,559
 Stahnsdorfer Damm: Kopfsteinpflaster	Q2 -4803,1240 -4995,1075
 (Forst Düppel): Waldweg	Q1 -6009,559 -6306,251 -6353,189 -6485,70 -6627,-56 -7067,-36
@@ -1797,7 +1797,7 @@ Wangerooger Steig: Asphalt	Q1 3094,7111 3060,7198
 Norderneyer Str.: Kopfsteinpflaster	Q3 3582,6964 3585,7028 3591,7128 3593,7176
 Doberaner Str. (Schmargendorf): Kopfsteinpflaster	Q2 2732,7235 2803,7227
 (Verlängerter Dauerwaldweg): befestigter Waldweg	Q1 480,9460 461,9556 437,9738
-(Verlängerte Alte Allee): befestigter Waldweg	Q1 596,9613 437,9738 267,9873 115,9993 -14,10096
+(Verlängerte Alte Allee): befestigter Waldweg	Q1 596,9613 437,9738 348,9809 267,9873 115,9993 -14,10096
 Maikäferpfad: Asphalt mit Löchern	Q2 828,9924 917,9860 968,9825 1020,9786 1121,9712
 Maikäferpfad: Verbundsteinpflaster	Q1 828,9924 573,10109
 Friedrichshaller Str.: Kopfsteinpflaster	Q2 2774,7655 2784,7711 3083,7587
@@ -2808,8 +2808,8 @@ Wilhelm-Stolze-Str.: Kopfsteinpflaster	Q2 13257,13149 13351,12928
 Fritz-Schiff-Weg: Kleinpflaster	Q1 13472,12337 13484,12436 13468,12497
 Ludwig-Pick-Str.: Asphalt	Q0 13540,12523 13568,12439
 Ludwig-Pick-Str.: Gehwegplatten	Q0 13568,12439 13563,12324
-Alte Allee: Asphalt	Q0 896,9396 596,9613
-Kühler Weg: Asphalt	Q0 596,9613 828,9924
+Alte Allee: Asphalt	Q0 896,9396 785,9476 733,9511 684,9549 657,9567 596,9613
+Kühler Weg: Asphalt	Q0 596,9613 745,9814 828,9924
 Falkensteiner Str.: Kopfsteinpflaster	Q3 4193,8088 4087,8204
 Emslebener Weg: Asphalt	Q0 4139,8485 4139,8356
 Kahlstr.: Kopfsteinpflaster in südlicher Richtung	Q3; 4220,8482 4220,8260
@@ -2836,3 +2836,45 @@ Stendaler Str. (Tiergarten): Asphalt mit gepflasterten Bodenschwellen	Q1 6733,14
 Otto-Dix-Str.: Asphalt und Kopsteipflasterabschnitte	Q1 7207,13118 7496,13272
 Lesser-Ury-Weg: Asphalt und Kopsteipflasterabschnitte	Q1 7574,13128 7496,13272 7430,13396
 Claire-Waldoff-Promenade: Asphalt und Kopsteipflasterabschnitte	Q1 7448,13058 7370,13204 7303,13330
+Umgehungschaussee: fester breiter Waldweg	Q1 1149,7205 1244,7406 1263,7450 1252,7741 1127,7856 1043,7929 860,8052 864,8110
+(Jagdschloß Grunewald - Umgehungschaussee): fester breiter Waldweg	Q1 905,6631 1149,7205
+(Auerbachstr. - Koenigsallee): Kopfsteinpflaster	Q2 490,8716 445,8429
+(Auerbachstr. - Koenigsallee): fester Waldweg	Q1 445,8429 614,8006 761,7922
+(Verlängerte Harbigstr.): fester Waldweg, teilweise Schlaglöcher	Q1 573,10109 348,9809
+Am Vogelherd: Asphalt	Q1 968,9825 1083,9984 1186,10118
+Rottannenweg: Gehwegplatten	Q1 657,9567 590,9478 560,9439 495,9409
+Gustav-Freytag-Str. (Grunewald): Verbundsteine	Q1 742,8567 787,8627
+Oberhaardter Weg: Kopfsteinpflaster	Q2 1012,8355 1098,8290
+Griegstr.: Kopfsteinpflaster	Q2 1098,8290 1098,8264 1247,8146 1292,8108 1308,8096 1691,7798
+Nikischstr.: Kopfsteinpflaster	Q2 1098,8264 994,8128
+Regerstr.: Kopfsteinpflaster	Q2 940,8171 994,8128 1104,8044 1167,8044 1247,8146
+(Zur Hagenstr.): Gehwegplatten	Q0 1098,8290 1148,8353
+Spohrstr.: Kopfsteinpflaster	Q2 1308,8096 1206,7964
+Wildpfad: Kopfsteinpflaster	Q2 1761,7913 1746,7858 1691,7798 1655,7776 1521,7718 1206,7964
+Königsmarckstr.: Kopfsteinpflaster	Q2 2114,7709 2001,7747 1769,7827
+Kronberger Str.: Kopfsteinpflaster	Q2 1995,7565 2001,7747
+Waldmeisterstr.: Kopfsteinpflaster	Q2 1655,7776 1784,7582 1784,7555 1943,7555 1964,7571
+Waldmeisterstr.: Kopfsteinpflaster	Q2 1979,7460 1943,7499 1780,7499
+Goldfinkweg: Asphalt	Q0 1784,7555 1782,7527 1780,7499 1773,7418 1760,7420 1754,7329 1743,7223 1737,7122 1727,7005 1719,6896 1709,6761
+(Parkweg Robert-Stolz-Anlage): Parkweg	Q1 1782,7527 1943,7527 1943,7499
+(Parkweg Robert-Stolz-Anlage): Waldweg	Q1 1943,7527 1964,7571
+Dünkelbergsteig: Asphalt	Q0 1977,7418 1930,7417 1773,7418
+Luchsweg: Asphalt	Q0 1930,7417 1921,7319 1915,7219 1908,7121 1900,7023 1894,6925 1885,6799
+Rehkitzsteig: Asphalt	Q0 1921,7319 1754,7329
+Frischlingsteig: Asphalt	Q0 1915,7219 1743,7223
+Wildentensteig: Asphalt	Q0 1908,7121 1737,7122
+Fischottersteig: Asphalt	Q0 1900,7023 1727,7005
+Bibersteig: Asphalt	Q0 1894,6925 1719,6896
+Fohlenweg: Asphalt	Q0 1885,6799 1870,6543 1844,6466
+Käuzchensteig: Gehwegplatten	Q0 1930,6432 1909,6441
+Käuzchensteig: Asphalt	Q0 1909,6441 1844,6466 1696,6520
+Bussardsteig: Asphalt	Q0 1870,6543 1789,6571
+Eichhörnchensteig: Asphalt	Q1 1782,7527 1520,7527 1422,7436
+(Verlängerter Eichhörnchensteig): fester Waldweg	Q1 1422,7436 1149,7205
+(Eichhörnchensteig - Umgehungschaussee): Waldweg	Q2 1422,7436 1310,7417 1244,7406
+(Zufahrt Pücklerstr.): fester Waldweg	Q1 1558,6729 1512,6553 1493,6518
+(Käuzchensteig - Pücklerstr.): Waldweg	Q2 1696,6520 1627,6553 1612,6534 1512,6553
+Bernhard-Wieck-Promenade: wassergebundene Decke	Q1 1308,8096 1316,8110 1325,8122 1370,8178
+Bernhard-Wieck-Promenade: wassergebundene Decke	Q1 1325,8122 1313,8129 1292,8108
+(Spohrstr. - Umgehungschaussee): Waldweg	Q2 1206,7964 1176,7922 1127,7856
+Waldschulalle: mäßiger Asphalt	Q2 799,10410 863,10363 1047,10225 1139,10157 1186,10118 1240,10078 1308,10031 1341,10007

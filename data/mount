@@ -209,7 +209,6 @@ Steigung 2.4% (Spandauer Damm)	St; -395,13040 -257,12979
 Steigung 2.4% (Gatower Str.)	St; -4773,11199 -4828,11047
 Steigung 2.3% (Biebricher Str.)	St; 12057,8529 11884,8492
 Steigung 2.3% (Platanenallee)	St; 1758,11702 1645,11731
-Steigung 2.3% (Koenigsallee)	St; 761,7922 864,8110
 Steigung 2.3% (Grabensprung)	St; 20532,11505 20575,11698
 Steigung 2.3% (Hermannstr. (Neukölln))	St; 11884,8492 11882,8527
 Steigung 2.3% (Erdener Str.)	St; 1757,9271 1696,9285
@@ -220,7 +219,6 @@ Steigung 2.3% (Blissestr.)	St; 4789,7859 4793,7992
 Steigung 2.3% (Gormannstr.)	St; 10445,13752 10466,13855
 Steigung 2.3% (Trakehner Allee)	St; -269,11802 -691,11580
 Steigung 2.3% (Paulsborner Str.)	St; 3349,9702 3202,9583
-Steigung 2.3% (Koenigsallee)	St; 864,8110 854,8250
 Steigung 2.2% (Havelchaussee)	St; -3379,8590 -3277,8728
 Steigung 2.2% (Anklamer Str.)	St; 9801,14288 9938,14345
 Steigung 2.2% (Königstr. (Wannsee))	St; -6807,1059 -7408,928
@@ -674,11 +672,9 @@ Steigung 1.1% (Onkel-Tom-Str.)	St; 63,5600 -107,5880
 Steigung 1.1% (Storkower Str.)	St; 12722,15105 13453,14678
 Steigung 1.1% (Kurfürstendamm)	St; 2828,10040 2770,10024
 Steigung 1.1% (Berlinickestr.)	St; 5088,5495 5016,5401
-Steigung 1.1% (Verl. Pücklerstr. (?))	St; 880,6645 905,6631
 Steigung 1.1% (Glockenturmstr.)	St; -1792,11625 -1694,11716
 Steigung 1.1% (Spandauer Damm)	St; 677,12667 817,12625
 Steigung 1.1% (Tempelhofer Damm)	St; 9147,5534 9157,5689
-Steigung 1.1% (Verl. Pücklerstr. (?))	St; 905,6631 967,6620
 Steigung 1.1% (Brachvogelstr.)	St; 10061,10068 10059,10147
 Steigung 1.1% (Passenheimer Str.)	St; -1396,11757 -1359,11741
 Steigung 1.1% (Bruno-Bauer-Str.)	St; 12902,6495 12921,6424
@@ -727,9 +723,7 @@ Steigung 1.1% (Glockenturmstr.)	St; -1966,11466 -1863,11559
 Steigung 1.1% (Angerburger Allee)	St; -1966,11466 -1608,11133
 Steigung 1.1% (Kranoldplatz (Neukölln))	St; 12820,6805 12715,6783
 Steigung 1.1% (Herbertstr. (Schöneberg))	St; 7402,8783 7391,8832
-Steigung 1.1% (Pücklerstr. (Dahlem))	St; 1558,6729 1975,6818
 Steigung 1.1% (Karl-Marx-Str.)	St; 13245,6491 13209,6564
-Steigung 1.1% (Verl. Pücklerstr. (?))	St; 1170,6654 1558,6729
 Steigung 1.1% (Reichpietschufer)	St; 8124,11078 7993,11137
 Steigung 1.1% (Heilbronner Str. (Wilmersdorf))	St; 3013,10553 2965,10522
 Steigung 1.1% (Peschkestr.)	St; 5532,6525 5657,6457
@@ -766,7 +760,6 @@ Steigung 1.1% (Feuerbachstr.)	St; 5560,6344 5588,6370
 Steigung 1.1% (Feuerbachstr.)	St; 5381,6298 5560,6344
 Steigung 1.1% (Havelchaussee)	St; -3947,5129 -3872,4953
 Steigung 1.1% (Hussitenstr.)	St; 8742,15298 8900,15146
-Steigung 1.1% (Verl. Pücklerstr. (?))	St; 967,6620 1170,6654
 Steigung 1.1% (Lilienthalstr.)	St; 10709,9192 10741,9072
 Steigung 1.1% (Fregestr.)	St; 5629,6421 5588,6370
 Steigung 1.1% (Attilastr.)	St; 7161,4091 7171,4200
@@ -829,6 +822,7 @@ Steigung 1.0% (Prenzlauer Allee)	St; 11506,14230 11582,14448
 Steigung 1.0% (Ruschestr.)	St; 15890,12344 15908,12480
 Steigung 1.0% (Hohenfriedbergstr.)	St; 7790,8913 7782,9115
 Steigung 1.0% (Hohenfriedbergstr.)	St; 7792,8838 7790,8913
+Steigung 1.0% ((Auerbachstr. - Koenigsallee))	St; 761,7922 614,8006
 Steigung 1.0% ((Lessinghöhe))	St; 12578,7973 12582,7909
 Steigung 1.0% (Grunewaldstr. (Steglitz))	St; 4167,5911 4306,5865
 Steigung 1.0% (Heiligendammer Str.)	St; 2877,7132 2818,7105
@@ -947,6 +941,7 @@ Steigung 1.0% ((Volkspark Friedrichshain, parallel zur Friedenstr.))	St; 12088,1
 Steigung 1.0% ((Treppe zum Kolonnenweg))	St; 9967,16514 9982,16527
 Steigung 1.0% (Angermünder Str. (Prenzlauer Berg))	St; 10640,13700 10703,13832
 Steigung 1.0% (Arnulfstr.)	St; 7599,5553 8038,5521
+Steigung 1.0% ((Auerbachstr. - Koenigsallee))	St; 614,8006 445,8429
 Steigung 1.0% (Hohenzollerndamm)	St; 4347,9290 4230,9229
 Steigung 1.0% (Danziger Str.)	St; 11610,14886 11545,14897
 Steigung 1.0% (Wiesenstr. (Wedding))	St; 8742,15298 8683,15354
@@ -973,6 +968,7 @@ Steigung 1.0% (Arnulfstr.)	St; 7497,5610 7599,5553
 Steigung 1.0% (Voigtstr.)	St; 14776,12418 14798,12502
 Steigung 1.0% (Ruschestr.)	St; 15908,12480 15928,12625
 Steigung 1.0% (Mecklenburgische Str.)	St; 4457,8345 4325,8229
+Steigung 1.0% ((Auerbachstr. - Koenigsallee))	St; 445,8429 490,8716
 Steigung 1.0% ((Kolonie Bornholm 1 und 2))	St; 10198,16929 10229,16653
 Steigung 1.0% (Glockenturmstr.)	St; -2212,11196 -1966,11466
 Steigung 1.0% (Malmöer Str.)	St; 10215,16527 10242,16422

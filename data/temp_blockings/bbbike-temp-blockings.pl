@@ -1567,9 +1567,9 @@ EOF
 userdel	1 9028,12307 8804,12280
 EOF
      },
-     { from  => 1124486619, # 2005-08-19 23:23
-       until => 1125093600, # 2005-08-27 00:00
-       text  => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt (Brücken- und Straßenarbeiten) (bis 26.08.2005)',
+     { from  => 1124742878, # 2005-08-22 22:34
+       until => 1128117600, # 2005-10-01 00:00
+       text  => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt (Brücken- und Straßenarbeiten) (bis 30.09.2005)',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 25585,6050 25579,5980
@@ -2208,8 +2208,8 @@ userdel	1 10846,13362 10790,13565
 EOF
      },
      { from  => 1114293600, # 2005-04-24 00:00
-       until => 1125525600, # 2005-09-01 00:00
-       text  => 'L 70; (Karl-Fiedler-Str.); OD Sperenberg, zw. Goethestr. u. Am Niederfließ Kompletter Straßenausbau Vollsperrung 25.04.2005-31.08.2005 ',
+       until => 1125698400, # 2005-09-03 00:00
+       text  => 'L 70; (Karl-Fiedler-Str.); OD Sperenberg, zw. Goethestr. u. Am Niederfließ Kompletter Straßenausbau Vollsperrung 25.04.2005-02.09.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 	q4 8576,-29378 8721,-29879
@@ -2584,6 +2584,23 @@ EOF
        data  => <<EOF,
 userdel	2 11145,11042 11105,10945
 userdel	2 11105,10945 11039,10820
+EOF
+     },
+     { from  => 1124742735, # 2005-08-22 22:32
+       until => 1127512800, # 2005-09-24 00:00
+       text  => 'Buschallee (Weißensee) in Richtung Berliner Allee zwischen Elsastr. und Hansastr. Baustelle, Fahrtrichtung gesperrt (bis 23.09.2005)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 15918,16383 15871,16399 15432,16500
+EOF
+     },
+     { from  => 1124575200, # 2005-08-21 00:00
+       until => 1125871200, # 2005-09-05 00:00
+       text  => 'K 7237; (L 40 Klein Kienitz-Rangsdorf); zw. Südringcenter Rangsdorf u. Klein Kienitz Straßenbauarbeiten Vollsperrung 22.08.2005-04.09.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 26583,-15677 26612,-15094
+userdel	2 14327,-11767 15962,-10958
 EOF
      },
     );

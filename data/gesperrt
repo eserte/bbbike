@@ -198,7 +198,7 @@ Fanningerstr.	1 17139,12100 16983,12124 16782,12154
 Gierkeplatz	1 3450,12240 3460,12270 3484,12280 3516,12273 3531,12252 3524,12222 3495,12209 3463,12216 3450,12240
 Knaackstr.	1 11056,15009 11030,14979 11101,14768
 (Brückenstr. - Holzmarktstr.)	1 11388,12202 11347,12181
-Hagenplatz	1 1149,8538 1100,8404
+Hagenplatz	1 1149,8538 1094,8398
 Branitzer Platz	1 1351,12021 1323,12059 1320,12099 1346,12124 1388,12130 1413,12111 1426,12062 1400,12032 1351,12021
 Reutlinger Str.	1 7676,4216 7601,4485
 Sybelstr.	1 4006,10585 4256,10583
@@ -821,3 +821,20 @@ Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (B
 (Treppe zur Putlitzbrücke): tragen	0:180:90 6272,14183
 Rathenower Str. -> Otto-Dix-Str.: schwierig zu querender Mittelstreifen	3 7148,13245 7207,13118 7496,13272
 Otto-Dix-Str. -> Rathenower Str.: schwierig zu querender Mittelstreifen	3 7496,13272 7207,13118 7192,13036
+Eichkatzweg	1 1137,9943 1020,9786 934,9672
+Lärchenweg	1 1038,10018 1083,9984 1137,9943 1238,9869
+Kühler Weg	1 828,9924 745,9814 596,9613
+schieben - einzelne Stufen	0:20:-150 1316,8110
+tragen (4 x 12 Stufen)	0:180:87 874,8205
+schieben (steile Treppe mit seitlicher Rampe)	0:180:35 1176,7922
+schieben (steile Treppe mit seitlicher Rampe)	0:180:80 1310,7417
+Bernadottestr. -> Hohenzollerndamm: Mittlestreifen wg. Leitplanke nicht zu queren	3 1746,7858 1983,7550 1995,7565
+Bernadottestr. -> Bernadottestr.: Mittlestreifen wg. Leitplanke nicht zu queren	3 1746,7858 1983,7550 2038,7484
+Hohenzollerndamm -> Bernadottestr.: Mittlestreifen wg. Leitplanke nicht zu queren	3 1995,7565 1983,7550 2038,7484
+Bernadottestr. -> Bernadottestr.: Mittlestreifen wg. Leitplanke nicht zu queren	3 2038,7484 1983,7550 1746,7858
+Bernadottestr. -> Clayallee: Mittlestreifen wg. Leitplanke nicht zu queren	3 2038,7484 1983,7550 1979,7460
+Clayallee -> Bernadottestr.: Mittlestreifen wg. Leitplanke nicht zu queren	3 1979,7460 1983,7550 1746,7858
+Hohenzollerndamm -> Kronberger Str.: Mittlestreifen wg. Leitplanke nicht zu queren	3 1983,7550 1995,7565 2001,7747
+Kronberger Str. -> Hohenzollerndamm: Mittlestreifen wg. Leitplanke nicht zu queren	3 2001,7747 1995,7565 2053,7634
+Hohenzollerndamm -> Königsmarckstr.: Mittelstreifen schlecht zu queren	3 2053,7634 2114,7709 2001,7747
+Königsmarckstr. -> Hohenzollerndamm: Mittelstreifen schlecht zu queren	3 2001,7747 2114,7709 2129,7728

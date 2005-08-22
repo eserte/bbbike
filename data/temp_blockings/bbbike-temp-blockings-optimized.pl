@@ -227,9 +227,9 @@ userdel	q4 -18080,-12637 -17374,-13449
        undef,
        undef,
        {
-         'until' => 1125093600,
-         'text' => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt (Brücken- und Straßenarbeiten) (bis 26.08.2005)',
-         'from' => 1124486619,
+         'until' => 1128117600,
+         'text' => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt (Brücken- und Straßenarbeiten) (bis 30.09.2005)',
+         'from' => 1124742878,
          'data' => 'userdel	q4 25585,6050 25579,5980
 ',
          'type' => 'handicap'
@@ -478,8 +478,8 @@ userdel	2 -4504,-14978 -4077,-14595
          'type' => 'gesperrt'
        },
        {
-         'until' => 1125525600,
-         'text' => 'L 70; (Karl-Fiedler-Str.); OD Sperenberg, zw. Goethestr. u. Am Niederfließ Kompletter Straßenausbau Vollsperrung 25.04.2005-31.08.2005 ',
+         'until' => 1125698400,
+         'text' => 'L 70; (Karl-Fiedler-Str.); OD Sperenberg, zw. Goethestr. u. Am Niederfließ Kompletter Straßenausbau Vollsperrung 25.04.2005-02.09.2005 ',
          'from' => 1114293600,
          'data' => '	q4 8576,-29378 8721,-29879
 ',
@@ -646,6 +646,23 @@ userdel	q4 -5209,70040 -4978,71109
          'from' => 1124486820,
          'data' => 'userdel	2 11145,11042 11105,10945
 userdel	2 11105,10945 11039,10820
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1127512800,
+         'text' => 'Buschallee (Weißensee) in Richtung Berliner Allee zwischen Elsastr. und Hansastr. Baustelle, Fahrtrichtung gesperrt (bis 23.09.2005)',
+         'from' => 1124742735,
+         'data' => 'userdel	q4; 15918,16383 15871,16399 15432,16500
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1125871200,
+         'text' => 'K 7237; (L 40 Klein Kienitz-Rangsdorf); zw. Südringcenter Rangsdorf u. Klein Kienitz Straßenbauarbeiten Vollsperrung 22.08.2005-04.09.2005 ',
+         'from' => 1124575200,
+         'data' => 'userdel	2 26583,-15677 26612,-15094
+userdel	2 14327,-11767 15962,-10958
 ',
          'type' => 'gesperrt'
        }
