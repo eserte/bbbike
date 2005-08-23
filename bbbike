@@ -4514,6 +4514,10 @@ if (defined $set_mode && $set_mode eq 'edit') {
 #     switch_edit_standard_mode();
 #     $lazy_plot = 1;
 }
+# special case 'pp':
+if ($init_p_draw{'pp'} && !defined $set_mode) {
+    $p_draw{'pp'} = 1;
+}
 foreach (keys %init_str_draw) {
     $str_draw{$_} = $init_str_draw{$_};
     eval {

@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.67 2005/08/23 20:30:47 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.67 2005/08/23 20:30:47 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -279,6 +279,8 @@ Reiherbeize	1 460,4479 593,4262
 Mendelssohnstr.	1 11613,13570 11537,13617 11538,13683
 Am Bäkequell	1 4593,5235 4656,5101
 Sella-Hasse-Str.	1 20948,16612 20771,16690 20843,16829
+Buggenhagenstr.	1 14425,13780 14381,13615
+Schollenhof	1 3247,21430 3196,21547 3265,21570 3297,21469
 Benkertstr.	1 -12685,-870 -12712,-734 -12727,-640
 Hans-Thoma-Str.	1 -12148,-784 -12190,-775 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
@@ -670,6 +672,8 @@ Drängelgitter	BNP:5:3 38662,97200
 Schwingtor an der Luiseninsel	BNP:10:-125 7706,11612
 Schwingtor an der Luiseninsel	BNP:10:-126 7742,11639
 Schranke	BNP:5:12 25558,997
+Drängelgitter	BNP:5:-118 8810,14373
+Monbijoubrücke: gesperrt wegen Neubau, Bauende voraussichtlich 2006-06-01	2:inwork 9680,12916 9707,12974
 Spreeufer vor dem Monbijoupark: gesperrt wegen Bauarbeiten	2:inwork 10100,12876 9977,12912
 Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14903,10403 15059,10289
 Voltairestr. (Arbeiten an "Alexa", voraussichtlich bis 2005-10-31)	2:inwork 11323,12484 11209,12430

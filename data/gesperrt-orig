@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.67 2005/08/23 20:30:47 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.67 2005/08/23 20:30:47 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -307,6 +307,8 @@ Reiherbeize	1 460,4479 593,4262
 Mendelssohnstr.	1 11613,13570 11537,13617 11538,13683
 Am Bäkequell	1 4593,5235 4656,5101
 Sella-Hasse-Str.	1 20948,16612 20771,16690 20843,16829
+Buggenhagenstr.	1 14425,13780 14381,13615
+Schollenhof	1 3247,21430 3196,21547 3265,21570 3297,21469
 #
 # Potsdam
 #
@@ -593,6 +595,8 @@ Schwingtor an der Luiseninsel	BNP:10 7706,11612
 Schwingtor an der Luiseninsel	BNP:10 7742,11639
 #: by: ^^^
 Schranke	BNP:5 25558,997
+#: by: holger (hd, sav):
+Drängelgitter	BNP:5 8810,14373
 #
 ############################################################################
 #
@@ -600,6 +604,8 @@ Schranke	BNP:5 25558,997
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
+#: last_checked: 2005-08-23
+Monbijoubrücke: gesperrt wegen Neubau, Bauende voraussichtlich 2006-06-01	2:inwork 9680,12916 9707,12974
 Spreeufer vor dem Monbijoupark: gesperrt wegen Bauarbeiten	2:inwork 10100,12876 9977,12912
 #: by: joern (js):
 Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14903,10403 15059,10289
