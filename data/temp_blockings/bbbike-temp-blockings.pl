@@ -2348,9 +2348,9 @@ EOF
 userdel	2 85161,-3425 84653,-3159
 EOF
      },
-     { from  => 1122415200, # 2005-07-27 00:00
-       until => 1125007200, # 2005-08-26 00:00
-       text  => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 28.07.2005-25.08.2005 ',
+     { from  => 1121724000, # 2005-07-19 00:00
+       until => 1125698400, # 2005-09-03 00:00
+       text  => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-02.09.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 1772,31266 2257,31124
