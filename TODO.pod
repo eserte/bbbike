@@ -412,6 +412,11 @@ eine Tk::Canvas-Erweiterung und diese in BBBike verwenden?
 
 VergrE<ouml>E<szlig>erung der Schrift beim Zoomen
 
+=item * (M1)
+
+Beim pp-Symbol wird beim Zoomen vergrößert; beim Neuzeichnen wird aber
+die kleinste Vergrößerungsstufe wieder genommen.
+
 =item * (H1)
 
 Kurzhilfe: kann man feststellen, ob man eine 2/3-Tastenmaus hat? Und

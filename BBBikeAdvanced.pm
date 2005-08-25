@@ -1232,7 +1232,7 @@ sub advanced_coord_menu {
 		   -command => \&set_line_coord_interactive);
     $bpcm->separator;
     {
-	$bpcm->checkbutton(-label => M"Kreuzungen/Kurvenpunkte (pp) zeichnen",
+	$bpcm->checkbutton(-label => M"Kreuzungen/Kurvenpunkte (pp) zeichnen (zukünftige Layer)",
 			   -variable => \$p_draw{'pp'});
 	push(@edit_mode_cmd,
 	     sub {
@@ -1242,7 +1242,7 @@ sub advanced_coord_menu {
              sub {
 		 $p_draw{'pp'} = 0;
 	     });
-	$bpcm->checkbutton(-label => M"pp für alle Layer",
+	$bpcm->checkbutton(-label => M"pp für alle zukünftigen Layer",
 			   -variable => \$p_draw{'pp-all'});
     }
     $bpcm->cascade(-label => M('Kurvenpunkte'));

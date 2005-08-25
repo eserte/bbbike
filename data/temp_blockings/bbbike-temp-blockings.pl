@@ -2603,4 +2603,28 @@ userdel	2 26583,-15677 26612,-15094
 userdel	2 14327,-11767 15962,-10958
 EOF
      },
+     { from  => 1125612000, # 2005-09-02 00:00
+       until => 1125784800, # 2005-09-04 00:00
+       text  => 'B 167; (Frankfurter Str.); OD Seelow, zw. Breite Str. u. Berliner Str. Stadtfest Vollsperrung 03.09.2005-03.09.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 76771,15413 77081,14637
+EOF
+     },
+     { from  => 1125698400, # 2005-09-03 00:00
+       until => 1126044000, # 2005-09-07 00:00
+       text  => 'K 6422; (Eggersdorfer Str.); OL Petershagen, unbeschrankter Bahnübergang Instandsetzungsarb. Vollsperrung 04.09.2005-06.09.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 35900,13643 36716,13979
+EOF
+     },
+     { from  => 1124920800, # 2005-08-25 00:00
+       until => 1125093600, # 2005-08-27 00:00
+       text  => 'K 6907; zw. Ferch und L 90 Glindow Dreharbeiten Vollsperrung 26.08.2005-26.08.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -22803,-9880 -23295,-9711
+EOF
+     },
     );
