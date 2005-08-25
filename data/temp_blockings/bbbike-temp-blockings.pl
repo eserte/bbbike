@@ -1963,7 +1963,7 @@ EOF
        text  => 'L 35; (Eisenbahnstr.); OL Fürstenwalde, zw. Wassergasse und Frankfurter Str. Frühlingsfest Vollsperrung 25.05.2005-30.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 55393,-4240 55563,-4690
+userdel	q4 55393,-4240 55562,-4726
 EOF
      },
      { from  => 1117080000, # 2005-05-26 06:00
@@ -2260,7 +2260,7 @@ EOF
        text  => 'L 23; (Storkow-Grünheide); OD Spreenhagen, Brücke über Oder-Spree-Kanal Sanierung Brücke Vollsperrung 11.07.2005-28.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 42368,-5702 42647,-6368
+userdel	2 42349,-5620 42647,-6368
 EOF
      },
      { from  => 1120946400, # 2005-07-10 00:00
@@ -2311,7 +2311,7 @@ EOF
        text  => 'L 235; (Gielsdorf-Werneuchen); OD Wegendorf, Schulstr. Ersatzneubau Durchlass Vollsperrung 18.07.2005-29.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 34471,22214 34321,22151
+userdel	q4 34492,22176 34321,22151
 userdel	q4 34125,22128 34321,22151
 EOF
      },

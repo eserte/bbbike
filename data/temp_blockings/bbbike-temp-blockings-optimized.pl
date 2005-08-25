@@ -501,7 +501,7 @@ userdel	2 -4504,-14978 -4077,-14595
          'until' => 1125266400,
          'text' => 'L 23; (Storkow-Grünheide); OD Spreenhagen, Brücke über Oder-Spree-Kanal Sanierung Brücke Vollsperrung 11.07.2005-28.08.2005 ',
          'from' => 1120946400,
-         'data' => 'userdel	2 42368,-5702 42647,-6368
+         'data' => 'userdel	2 42349,-5620 42647,-6368
 ',
          'type' => 'gesperrt'
        },

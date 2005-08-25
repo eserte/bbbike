@@ -9704,7 +9704,7 @@ sub choose_ort {
 		    if ($type eq 'o') {
 			$object = _get_orte_obj("o");
 		    } else {
-			$object = new Strassen get_strassen_file($p_file{$type});
+			$object = get_strassen_obj($p_file{$type});
 		    }
 		    if ($coord_system eq 'standard' && cache_decider()) {
 			$p_obj{$type} = $object;
@@ -9734,7 +9734,7 @@ sub choose_ort {
 		    } elsif ($type eq 'comm') {
 			$object = _get_comments_obj();
 		    } else {
-			$object = new Strassen get_strassen_file($str_file{$type});
+			$object = get_strassen_obj($str_file{$type});
 		    }
 		    if ($coord_system eq 'standard' && cache_decider()) {
 			$str_obj{$type} = $object;
@@ -10707,7 +10707,7 @@ sub plotobst {
 		    -label => $p_file{'obst'});
     eval {
 	my $i = 0;
- 	my $obst = new Strassen get_strassen_file($p_file{'obst'});
+ 	my $obst = get_strassen_obj($p_file{'obst'});
 	$obst->init;
 	my $anzahl_eindeutig = $obst->count;
 	while(1) {
@@ -17474,6 +17474,18 @@ warn "do action";
 sub get_strassen_file {
     my $file = shift;
     $file . ($edit_mode_flag ? "-orig" : "");
+}
+
+sub get_strassen_obj {
+    my $file = shift;
+    my $object;
+    if ($edit_mode_flag) {
+	$object = eval { Strassen->new(get_strassen_file($file)) };
+    }
+    if (!$object) {
+	$object = Strassen->new($file); # fallback to non-orig file, if necessary
+    }
+    $object;
 }
 
 sub handle_global_directives {
