@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.89 2005/07/29 20:28:49 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.89 2005/07/29 20:28:49 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2236,6 +2236,10 @@ sub editmenu {
 	      )->pack(-fill => "x");
     $t->Button(-text => "Grep point",
 	       -command => \&main::grep_point, # never reload necessary
+	       -anchor => "w",
+	      )->pack(-fill => "x");
+    $t->Button(-text => "Grep line",
+	       -command => \&main::grep_line, # never reload necessary
 	       -anchor => "w",
 	      )->pack(-fill => "x");
     {

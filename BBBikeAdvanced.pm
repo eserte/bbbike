@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.124 2005/08/25 22:17:36 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.124 2005/08/25 22:17:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1804,15 +1804,12 @@ sub penalty_menu {
 }
 
 # Return true if there was a modification.
-# Arguments: $action, $oper_name
-#   $action is ignored for now
+# Arguments: $oper_name
 #   $oper_name is something like "insert" or "delete"
 ### AutoLoad Sub
-sub _insert_points_and_co {
-    my $action = shift;
+sub _insert_points_and_co ($) {
     my $oper_name = shift;
     my $vstr = ($verbose ? " -v" : "");
-    $action = "insert_points";
     my $ret = 0;
     eval {
 	require "$FindBin::RealBin/miscsrc/insert_points";
@@ -1844,13 +1841,14 @@ sub _insert_points_and_co {
     $ret;
 }
 
-sub insert_points { _insert_points_and_co("insert_points", "insert")     }
-sub insert_multi_points { _insert_points_and_co("insert_multi_points", "insertmulti") }
-sub change_points { _insert_points_and_co("change_points", "change")     }
-sub change_line   { _insert_points_and_co("change_line",   "changeline") }
-sub grep_point    { _insert_points_and_co("grep_point",    "grep")       }
-sub delete_point  { _insert_points_and_co("delete_point",  "delete")     }
-sub delete_lines  { _insert_points_and_co("delete_lines",  "deletelines") }
+sub insert_points { _insert_points_and_co("insert")     }
+sub insert_multi_points { _insert_points_and_co("insertmulti") }
+sub change_points { _insert_points_and_co("change")     }
+sub change_line   { _insert_points_and_co("changeline") }
+sub grep_point    { _insert_points_and_co("grep")       }
+sub grep_line	  { _insert_points_and_co("grepline")   }
+sub delete_point  { _insert_points_and_co("delete")     }
+sub delete_lines  { _insert_points_and_co("deletelines") }
 sub change_poly_points {
     # XXX NYI
 }

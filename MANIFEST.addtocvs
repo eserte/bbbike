@@ -105,6 +105,7 @@ mapserver/brb/brb.css
 mapserver/brb/brb.html-tpl
 mapserver/brb/brb.js-tpl
 mapserver/brb/brb.map-tpl
+mapserver/brb/brb.map-inc
 mapserver/brb/brb_init.html-tpl
 mapserver/brb/cleanup
 mapserver/brb/crontab.tpl
@@ -331,3 +332,5 @@ bbbike-stick.bat
 miscsrc/datachangelog2bbd
 misc/abdeckung.bbd
 data/check_nearest_ignore
+images/ampelf_noalpha.png
+images/ampelf_klein_noalpha.png

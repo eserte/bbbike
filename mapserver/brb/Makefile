@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.35 2005/08/11 00:24:57 eserte Exp $
+# $Id: Makefile,v 1.36 2005/08/26 22:59:58 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -269,6 +269,8 @@ ADD_BBBIKEVAR_VARS=\
 
 MAPFILES=	$(SCOPES:S/^/brb-/:S/$/.map/)
 MAPFILES_EXTRA=	brb.map
+IPAQ_MAPFILES=	$(SCOPES:S/^/brb-ipaq-/:S/$/.map/)
+IPAQ_MAPFILES_EXTRA=	brb-ipaq.map
 HTMLFILES=	brb.html brb_init.html brb.js help.html query_header.html query_footer.html index.html
 ######################################################################
 
@@ -287,7 +289,7 @@ HTMLFILES=	brb.html brb_init.html brb.js help.html query_header.html query_foote
 all:	build-all
 
 clean:
-	rm -f ${MAPFILES} ${MAPFILES_EXTRA} ${HTMLFILES}
+	rm -f ${MAPFILES} ${MAPFILES_EXTRA} ${IPAQ_MAPFILES} ${IPAQ_MAPFILES_EXTRA} ${HTMLFILES}
 
 build-all: Makefile.${TARGET}.inc .WAIT maps html misc .WAIT .built_for.${TARGET}
 
@@ -295,7 +297,7 @@ build-all: Makefile.${TARGET}.inc .WAIT maps html misc .WAIT .built_for.${TARGET
 	rm -f .built_for.*
 	touch .built_for.${TARGET}
 
-maps:	${MAPFILES} ${MAPFILES_EXTRA}
+maps:	${MAPFILES} ${MAPFILES_EXTRA} ${IPAQ_MAPFILES} ${IPAQ_MAPFILES_EXTRA}
 
 html:	${HTMLFILES}
 
@@ -348,7 +350,7 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile ${ABS_LOCAL_BBBIKE_DIR}
 ######################################################################
 # maps
 
-.brb.map:	brb.map-tpl Makefile Makefile.${TARGET}.inc
+.brb.map:	brb.map-tpl brb.map-inc Makefile Makefile.${TARGET}.inc
 	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 
@@ -361,24 +363,21 @@ brb-$(scope).map:	.brb.map mkroutemap
 	chmod ugo+r $@
 .endfor
 
-# XXX del:
-# brb-b.map:	.brb.map mkroutemap
-# 	${BRBDIR}/mkroutemap -force -scope city .brb.map $@
-# 	chmod ugo+r $@
+######################################################################
+# ipaq maps
 
-# brb-inner-b.map:	.brb.map mkroutemap
-# 	${BRBDIR}/mkroutemap -force -scope innercity .brb.map $@
-# 	chmod ugo+r $@
+.brb-ipaq.map:	brb-ipaq.map-tpl brb.map-inc Makefile Makefile.${TARGET}.inc
+	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
+	chmod ugo+r $@
 
-# brb-wide.map:	.brb.map mkroutemap
-# 	${BRBDIR}/mkroutemap -force -scope wideregion .brb.map $@
-# 	chmod ugo+r $@
+brb-ipaq.map:	brb-ipaq-brb.map
+	[ -L $@ ] || ln -s brb-ipaq-brb.map $@
 
-# brb-p.map:	.brb.map mkroutemap
-# 	${BRBDIR}/mkroutemap -force -scope potsdam .brb.map $@
-# 	chmod ugo+r $@
-
-brb-ipaq.map:
+.for scope in $(SCOPES)
+brb-ipaq-$(scope).map:	.brb-ipaq.map mkroutemap
+	${BRBDIR}/mkroutemap -force -scope $(scope) .brb-ipaq.map $@
+	chmod ugo+r $@
+.endfor
 
 ######################################################################
 # Temporaries

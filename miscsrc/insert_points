@@ -213,6 +213,8 @@ sub process {
 	($from, $to, $extra) = @coords;
     } elsif ($operation =~ /^(grep|delete)$/) {
 	($from, $extra) = @coords;
+    } elsif ($operation eq 'grepline') {
+	($from, $to, $extra) = @coords;
     } elsif ($operation eq 'deletemulti') {
 	$from = undef;
 	$to = undef;
@@ -291,6 +293,8 @@ sub process {
 		die "Usage: $0 from to newto";
 	    } elsif ($operation eq 'change') {
 		die "Usage: $0 from to";
+	    } elsif ($operation eq 'grepline') {
+		die "Usage: $0 from to";
 	    } elsif ($operation =~ /^(grep|delete)$/) {
 		die "Usage: $0 point";
 	    }
@@ -314,7 +318,7 @@ sub process {
     if (!@custom_check_files) {
 	chdir $datadir or die "chdir to $datadir failed: $!";
 
-	if ($operation =~ /^(insert|insertmulti|changeline|change|grep|delete|deletemulti)$/) {
+	if ($operation =~ /^(insert|insertmulti|changeline|change|grepline|grep|delete|deletemulti)$/) {
 	    # folgende Dateien werden bei insert_points überprüft:
 	    # normales Format
 	    # XXX gesperrt/gesperrt_car: Die Kategorie 3 müsste
@@ -528,7 +532,7 @@ sub process {
 	    my(@data) = <F>;
 	    close F;
 
-	    if ($operation =~ /^(insert|insertmulti|changeline)$/) {
+	    if ($operation =~ /^(insert|insertmulti|changeline|grepline)$/) {
 		if ($type == T_NORMAL || $type == T_TEMPBLOCK || $type == T_TEMPBLOCKMAIN || $type == T_RADWEGE || $type == T_VORFAHRT) {
 		    if ($verbose) {
 			warn "Check for ($map_from $map_to|$map_to $map_from)\n";
@@ -599,6 +603,8 @@ sub process {
     my $dialog_text = "Keine Umwandlung nötig.";
     if ($operation eq 'grep') {
 	$dialog_text = "Punkt nicht gefunden.";
+    } elsif ($operation eq 'grepline') {
+	$dialog_text = "Strecke nicht gefunden.";
     }
     if (!_interpolate(@change_files)) {
 	if ($use_tk) {
@@ -643,13 +649,14 @@ sub process {
 	require Tk::DialogBox;
 	my $dia = $top->DialogBox
 	    (-title => $0,
-	     -buttons => ($operation eq 'grep' ? ['Ok'] : ['Ja', 'Nein']),
+	     -buttons => ($operation =~ /^(grep|grepline)$/ ? ['Ok'] : ['Ja', 'Nein']),
 	    );
 	$dia->add('Label', -text => {insert => 'Punkt einfügen',
 				     insertmulti => 'Mehrere Punkte einfügen',
 				     changeline => 'Strecke verschieben',
 				     change => 'Punkt verschieben',
 				     grep => 'Punkt gefunden',
+				     grepline => 'Strecke gefunden',
 				     delete => 'Punkt löschen',
 				    }->{$operation}
 		 )->pack;
@@ -678,7 +685,7 @@ sub process {
 			  -variable => \$check[$type]->{$file})->pack(-anchor => "w");
 	    }
 	}
-	unless ($operation eq 'grep') {
+	unless ($operation =~ /^(grep|grepline)$/) {
 	    $dia->add('Label',
 		      -text => "Soll die Umwandlung vorgenommen werden?")->pack;
 	}
@@ -700,7 +707,7 @@ sub process {
 	$ans = <STDIN>;
     }
 
-    if ($operation eq 'grep') {
+    if ($operation =~ /^(grep|grepline)$/) {
 	return RET_NOMOD;
     }
 
@@ -977,6 +984,7 @@ $operation = ($0 =~ /       insert_points$ /x ? 'insert'      :
 	      $0 =~ / insert_multi_points$ /x ? 'insertmulti' :
 	      $0 =~ /         change_line$ /x ? 'changeline'  :
 	      $0 =~ /          grep_point$ /x ? 'grep'        :
+	      $0 =~ /           grep_line$ /x ? 'grepline'    :
 	      $0 =~ /        delete_point$ /x ? 'delete'      :
 	      $0 =~ /        delete_multi$ /x ? 'deletemulti' :
 	      $0 =~ /        deline_lines$ /x ? 'deletelines' :
