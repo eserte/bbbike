@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.68 2005/08/24 20:33:51 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.69 2005/08/25 22:01:08 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -281,6 +281,7 @@ Am Bäkequell	1 4593,5235 4656,5101
 Sella-Hasse-Str.	1 20948,16612 20771,16690 20843,16829
 Buggenhagenstr.	1 14425,13780 14381,13615
 Schollenhof	1 3247,21430 3196,21547 3265,21570 3297,21469
+Siegfried-Aufhäuser-Platz	1 13939,7504 13928,7529 13942,7556 13967,7556
 Benkertstr.	1 -12685,-870 -12712,-734 -12727,-640
 Hans-Thoma-Str.	1 -12148,-784 -12190,-775 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
@@ -569,9 +570,8 @@ Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9008,12485 9112,12499 9323
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9323,12528 9112,12499 9008,12485
 Mittelstr. -> Mittelstr.: An der US-Botschaft	3 9335,12442 9126,12413 9018,12400
 Mittelstr. -> Mittelstr.: An der US-Botschaft	3 9018,12400 9126,12413 9335,12442
-Am Rixdorfer Teich -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3 10957,8573 10911,8457 11308,8317
+Am Rixdorfer Teich -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3 10957,8573 10911,8457 11271,8325
 Columbiadamm -> Am Rixdorfer Teich: unbequem zu überqueren (Bordsteine)	3 10796,8498 10911,8457 10957,8573
-Columbiadamm -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3 10796,8498 10911,8457 11308,8317
 Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4789,5079
 Birkbuschstr.: unbequem zu passieren	3 4789,5079 4807,5131 4839,5167
 Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4839,5167 4807,5131 4879,5017

@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: GfxConvert.pm,v 1.15 2005/04/05 22:32:19 eserte Exp $
+# $Id: GfxConvert.pm,v 1.17 2005/08/25 22:16:51 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2003,2004,2005 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -26,7 +26,7 @@ sub init {
     %convsub  = ();
     %checksub = ();
     for my $src (qw(ps xwd)) {
-	for my $dest (qw(ppm gif jpeg png pdf)) {
+	for my $dest (qw(ppm gif jpeg png ps pdf)) {
 	    my $convsub = $src."2".$dest;
 	    if (defined &{$convsub}) {
 		$convsub{$src}->{$dest} = \&{$convsub};
@@ -475,6 +475,53 @@ sub xwd2png {
     }
     # XXX der ganze andere Wust aus ps2ppm fehlt hier...
     1;
+}
+
+my $ps_error_preamble = "Die Postscript-Datei kann nicht erstellt werden. Grund: ";
+
+sub xwd2ps_check {
+    my($infile, $outfile, %args) = @_;
+    if (!is_in_path("pnmtops") ||
+	!is_in_path("gs")) {
+	die $ps_error_preamble . "Ghostscript und pnmtops werden benötigt.";
+    }
+}
+
+sub xwd2ps {
+    my($infile, $outfile, %args) = @_;
+
+    my $ppmfile = "/tmp/GfxConvert.$$.ppm";
+    $tmpfiles{$ppmfile}++;
+    xwd2ppm($infile, $ppmfile, %args);
+    my $cmd = "pnmtops $ppmfile > $outfile";
+    warn "Executing $cmd ..." if $VERBOSE;
+    if (system($cmd) != 0) {
+	die $ps_error_preamble . 
+	    "Konvertierung mit pnmtops fehlgeschlagen (exit: $?)";
+    }
+    return 1;
+}
+
+sub xwd2pdf_check {
+    my($infile, $outfile, %args) = @_;
+    xwd2ps_check($infile, $outfile, %args);
+    if (!is_in_path("ps2pdf")) {
+	die $pdf_error_preamble . "ps2pdf wird benötigt.";
+    }
+}
+
+sub xwd2pdf {
+    my($infile, $outfile, %args) = @_;
+    my $psfile = "/tmp/GfxConvert.$$.ps";
+    $tmpfiles{$psfile}++;
+    xwd2ps($infile, $psfile, %args);
+    my $cmd = "ps2pdf $psfile $outfile";
+    warn "Executing $cmd ..." if $VERBOSE;
+    if (system($cmd) != 0) {
+	die $pdf_error_preamble . 
+	    "Konvertierung mit ps2pdf fehlgeschlagen (exit: $?)";
+    }
+    return 1;
 }
 
 # Maybe move to BBBikeUtil

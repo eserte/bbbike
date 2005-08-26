@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.32 2005/07/17 14:08:40 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.33 2005/08/25 22:16:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -21,16 +21,11 @@ use vars qw(@gv_old_args $gv_pid);
 
 sub BBBikePrint::create_postscript {
     my($c, %args) = @_;
-    if ($use_font_rot) {
-	foreach (keys %str_name_draw) {
-	    # XXX w evtl. auch hereinnehmen
-	    if ($_ =~ /^[sl]$/ && $str_name_draw{$_}) {
-		# XXX geht mit gepatchtem tk4.2
-		status_message(<<EOF, "die");
-Karten mit rotierten Zeichensätzen können nicht gedruckt werden.
+    if (using_rotated_fonts()) {
+	# XXX geht mit gepatchtem tk4.2
+	status_message(M(<<EOF), "die");
+Karten mit rotierten Zeichensätzen können (noch) nicht gedruckt werden.
 EOF
-            }
-	}
     }
     if ($args{-legend}) {
 	draw_legend($c, -anchor => ($args{-legend} eq 'right' ? 'ne' : 'nw'));
@@ -123,6 +118,18 @@ EOF
 	clear_legend($c);
     }
     $tmpfile;
+}
+
+sub using_rotated_fonts {
+    if ($use_font_rot) {
+	foreach (keys %str_name_draw) {
+	    # XXX w evtl. auch hereinnehmen
+	    if ($_ =~ /^[sl]$/ && $str_name_draw{$_}) {
+		return 1;
+            }
+	}
+    }
+    0;
 }
 
 # Bug mit ->postscript und locale:

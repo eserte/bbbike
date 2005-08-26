@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.68 2005/08/24 20:33:51 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.69 2005/08/25 22:01:08 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -309,6 +309,7 @@ Am Bäkequell	1 4593,5235 4656,5101
 Sella-Hasse-Str.	1 20948,16612 20771,16690 20843,16829
 Buggenhagenstr.	1 14425,13780 14381,13615
 Schollenhof	1 3247,21430 3196,21547 3265,21570 3297,21469
+Siegfried-Aufhäuser-Platz	1 13939,7504 13928,7529 13942,7556 13967,7556
 #
 # Potsdam
 #
@@ -466,7 +467,7 @@ Otto-Braun-Str.: Mittelstreifen	3nocross 11456,13286 11477,13313 11547,13403 115
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Neustädtische Kirchstr.: An der US-Botschaft	3nocross 9100,12627 9112,12499 9126,12413 9141,12320
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Columbiadamm: unbequem zu überqueren (Bordsteine)	3nocross 11308,8317 10911,8457 10598,8563
+Columbiadamm: unbequem zu überqueren (Bordsteine)	3nocross 10796,8498 10911,8457 11271,8325
 #: by: Wolfgang Schmidt: vvv
 Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4789,5079
 Birkbuschstr.: unbequem zu passieren	3 4789,5079 4807,5131 4839,5167
@@ -610,7 +611,7 @@ Spreeufer vor dem Monbijoupark: gesperrt wegen Bauarbeiten	2:inwork 10100,12876 
 #: by: joern (js):
 Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14903,10403 15059,10289
 Voltairestr. (Arbeiten an "Alexa", voraussichtlich bis 2005-10-31)	2:inwork 11323,12484 11209,12430
-#: last_checked: 2005-08-15
+#: last_checked: 2005-08-26
 Elsenstr.	1:inwork 13760,9188 13657,9063 13504,8882
 #: last_checked: 2005-07
 #: add_fragezeichen: Ist die Einbahnstraße in der Pfarrstr. aufgehoben worden?

@@ -596,9 +596,9 @@ Liniengruppe), um Umsteigen zu erkennen.
 
 =item *
 
-GfxConvert evtl. mit Tk-Photo-Funktionen definieren, wenn die externen
-Programme nicht verfE<uuml>gbar sind. Am besten wE<auml>re
-natE<uuml>rlich noch immer ein NetPBM-Modul.
+GfxConvert evtl. mit Tk::WinPhoto/Tk::Photo-Funktionen implementieren,
+wenn die externen Programme nicht verfE<uuml>gbar sind. Am besten
+wE<auml>re natE<uuml>rlich noch immer ein NetPBM-Modul.
 
 Photo-Zooming: -zoom x -subsample y == -zoom x/y oder umgekehrt
 

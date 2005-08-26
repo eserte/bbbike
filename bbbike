@@ -559,8 +559,6 @@ eval { local $SIG{'__DIE__'};
     label => M"Orte jwd",	var => \$p_far_away{'o'}],
    ['sehenswuerdigkeiten','!',0,
     label => M"Sehenswürdigkeiten", var => \$init_str_draw{'v'}],
-   ['pp','!',0,
-    label => M"Kurvenpunkte und Kreuzungen", var => \$init_p_draw{'pp'}],
    ['fragezeichen','!',0,
     label => M"Fragezeichen",	var => \$init_str_draw{'fz'}],
 
@@ -930,8 +928,11 @@ speicherplatzsparender.",
    ['stderrwindow','!',undef,
     label => M"STDERR in ein Fenster", var => \$stderr_window],
    ['autoinstall','!',0,
-    label => M"Auto-Installation vom CPAN", var => \$auto_install_cpan],
-   ['advanced','!',undef, var => \$advanced],
+    label => M"Auto-Installation vom CPAN (experimentell!)", var => \$auto_install_cpan],
+   ['pp','!',0,
+    label => M"Kurvenpunkte und Kreuzungen zeichnen", var => \$init_p_draw{'pp'}],
+   ['advanced','!',undef, var => \$advanced,
+    label => M"Advanced mode"],
    ['public','!',undef, nogui => 1,
     var => sub { $public_test = 1;
 		 $advanced = 0;
@@ -953,12 +954,13 @@ speicherplatzsparender.",
 	exit 0;
     }],
    ['plugins','=s',undef,
-    label => M"Plugins", var => \$initial_plugins],
+    label => M"Plugins beim Starten laden", var => \$initial_plugins],
    ['layers','=s',undef,
-    label => M"Layers", var => \$initial_layers],
+    label => M"Zusätzliche Layer zeichnen", var => \$initial_layers],
    ['algorithm','=s','A*', var => \$global_search_args{Algorithm},
     longhelp => M"Nur A* (Perl-Implementation) und C-A* (C-Implementation) sind von Interesse",
     choices => ['A*', 'C-A*', ($devel_host||$advanced ? ("C-A*-2", 'srt') : ())],
+    label => M"Suchalgorithmus",
     strict => 1],
    ['h','!',undef, nogui => 1, alias => [qw(help)],
     var => sub {
@@ -15911,7 +15913,7 @@ die "too many loops, please report, line " . __LINE__ if ($safe_loop++ > 100);
 		return nearest_line_points($x, $y, @tags); # XXX
 	    }
 	} else {
-	    if ($tags[0] =~ /^[sSlL]$/) {
+	    if ($tags[0] =~ /^[sSlL]$/ && !grep { /^[sSlL]-label/ } @tags) {
 		return nearest_line_points($x, $y, @tags); # XXX
 	    }
 	}
@@ -17341,7 +17343,7 @@ sub export_visible_map {
     $top->raise;
     $top->update;
 
-    $top->Busy;
+    IncBusy($top);
     eval {
 	my $in_fmt;
 	my $tmpfile;
@@ -17357,9 +17359,14 @@ sub export_visible_map {
 	     -autocrop => 1,
 	    );
 
-	if ($use_xwd_if_possible and
-	    $fmt !~ /^( ps | pdf )$/x and
-	    is_in_path("xwd")) {
+	my $post_processing_needed = 1;
+
+	require BBBikePrint; # for using_rotated_fonts
+	if ((using_rotated_fonts() || 
+	     $use_xwd_if_possible
+	    ) and
+	    is_in_path("xwd")
+	   ) {
 
 	    $args{-rotate} = -90 if $orientation eq 'portrait';
 
@@ -17367,11 +17374,17 @@ sub export_visible_map {
 	    if ($fmt ne 'xwd') {
 		require GfxConvert;
 		GfxConvert::check($in_fmt, $fmt, $tmpfile, $outfile, %args);
+	    } else {
+		$post_processing_needed = 0;
 	    }
 
 	    $tmpfile = "/tmp/bbbike.$$.xwd";
 	    $tmpfiles{$tmpfile}++;
+
+	    my $deiconify_subs = withdraw_toplevels();
+	    $top->update; # XXX needed?
 	    system("xwd", "-out", "$tmpfile", "-id", $c->id);
+	    $_->() for (@$deiconify_subs);
 	    $top->bell;
 
 	} else {
@@ -17382,6 +17395,8 @@ sub export_visible_map {
 	    if ($fmt ne 'ps') {
 		require GfxConvert;
 		GfxConvert::check($in_fmt, $fmt, $tmpfile, $outfile, %args);
+	    } else {
+		$post_processing_needed = 0;
 	    }
 
 	    die M"Der Export wurde unterbrochen."
@@ -17397,7 +17412,7 @@ sub export_visible_map {
 	    }
 	}
 
-	if ($fmt eq 'ps' || $fmt eq 'xwd') {
+	if (!$post_processing_needed) {
 	    mv($tmpfile, $outfile);
 	} else {
 	    require GfxConvert;
@@ -17412,10 +17427,11 @@ sub export_visible_map {
 	    $tmpfiles{$tmpfile}++;
 	}
     };
-    if ($@) {
-	status_message($@, 'err');
+    my $err = $@;
+    DecBusy($top);
+    if ($err) {
+	status_message($err, 'err');
     }
-    $top->Unbusy;
 }
 
 sub slow_postscript_generation {
@@ -17516,6 +17532,21 @@ sub handle_global_directives {
 	    ${$key}->{$val} = $vals->[0];
 	}
     }
+}
+
+# XXX Does not withdraw torn-off menus
+sub withdraw_toplevels {
+    my $deiconify_subs = [];
+    $top->Walk
+	(sub {
+	     my($w) = @_;
+	     if (Tk::Exists($w) && $w->isa("Tk::Toplevel") &&
+		 $w->state eq 'normal') {
+		 $w->withdraw;
+		 push @$deiconify_subs, sub { $w->deiconify if Tk::Exists($w) };
+	     }
+	 });
+    $deiconify_subs;
 }
 
 ## DEBUG_BEGIN
