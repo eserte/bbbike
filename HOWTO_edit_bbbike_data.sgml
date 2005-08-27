@@ -335,6 +335,13 @@ vorkommt. Die Vorgehensweise ist: Punkt per Klick markieren und dann
 auf "Grep point" klicken.
 
 <sect2>
+<title>Linie suchen</>
+<para>
+Mit "Grep line" kann nachgeschaut werden, in welchen Layern eine Linie
+mit zwei benachbarten Punkten vorkommt. Die Vorgehensweise ist: zwei
+Punkte per Klick markieren und dann auf "Grep line" klicken.
+
+<sect2>
 <title>Punkt löschen</>
 <para>
 Dieser Punkt muss noch mehr als "Einen Punkt bewegen" mit Vorsicht

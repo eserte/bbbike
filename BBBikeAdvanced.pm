@@ -1290,10 +1290,14 @@ sub advanced_coord_menu {
 # 	}
 #     }
 
-    $bpcm->command(-label => M"Neu laden",
-		   -command => \&reload_all,
+    $bpcm->command(-label => M"Neuladen von Änderungen",
+		   -command => sub { reload_all() },
 		   -accelerator => 'Ctrl-R',
 		  );
+## XXX NYI:
+#    $bpcm->command(-label => M"Neuzeichnen aller Layer",
+#		   -command => sub { reload_all_unconditionally() },
+#		  );
     $bpcm->separator;
 
     $bpcm->cascade(-label => M"Edit-Modus");

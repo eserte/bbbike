@@ -2162,29 +2162,40 @@ sub editmenu {
     return if !defined $t;
 
     require BBBikeAdvanced;
-    my $f0;
+    my $sample_b;
     {
-	$f0 = $t->Frame->pack(-fill => 'x');
-	$f0->Button(-text => "Reload",
-		    -command => \&main::reload_all,
+	my $f0 = $t->Frame->pack(-fill => 'x');
+	$sample_b = $f0->Button(-text => "Reload",
+		    -command => sub { main::reload_all() },
 		    -anchor => "w",
 		   )->pack(-side => "left", -fill => "x", -expand => 1);
-	$f0->Checkbutton(-text => "Auto",
-			 -variable => \$auto_reload,
-			 -anchor => "w",
-			)->pack(-side => "left");
-	$f0->Checkbutton(-text => "Crosshairs",
-			 -variable => \$crosshairs_activated,
-			 -command => sub {
-			     require BBBikeCrosshairs;
-			     if ($crosshairs_activated) {
-				 BBBikeCrosshairs::activate();
-			     } else {
-				 BBBikeCrosshairs::deactivate();
-			     }
-			 },
-			 -anchor => "w",
-			)->pack(-side => "left");
+	my $auto = $f0->Checkbutton(-text => "Auto",
+				    -variable => \$auto_reload,
+				    -anchor => "w",
+				   )->pack(-side => "left");
+	my $chb = $f0->Checkbutton(-text => "Crosshairs",
+				   -variable => \$crosshairs_activated,
+				   -command => sub {
+				       require BBBikeCrosshairs;
+				       if ($crosshairs_activated) {
+					   BBBikeCrosshairs::activate();
+				       } else {
+					   BBBikeCrosshairs::deactivate();
+				       }
+				   },
+				   -anchor => "w",
+				  )->pack(-side => "left");
+	if (Tk::Exists($main::balloon)) {
+	    $main::balloon->attach($auto, -msg => "Automatic Reload after each change");
+	    $main::balloon->attach($chb, -msg => M(<<EOF));
+F4: rotate crosshairs to left
+F5: rotate crosshairs to right
+Shift-F4: make crosshairs right-angled
+F6: enlarge additional rectangle
+F7: shrink additional rectangle
+Shift-F7: turn off additional rectangle
+EOF
+	}
     }
     my $insert_point_mode = 0;
     my $old_mode;
@@ -2206,10 +2217,10 @@ sub editmenu {
 		 $main::c->configure(-cursor => undef);
 	     }
 	 },
-	 -padx => 14, # XXX X11 only?
+	 -padx => 12, # XXX X11 only? Font dependent? (was 14 once (for helvetica?))
 	 -anchor => "w", 
 	)->pack(-fill => "x");
-    $cb->configure(-pady => ($f0->reqheight-$cb->reqheight)/2);
+    $cb->configure(-pady => ($sample_b->reqheight-$cb->reqheight)/2);
     $t->Button(-text => "Insert multiple points",
 	       -command => sub {
 		   if (main::insert_multi_points() && $auto_reload) {
@@ -2218,30 +2229,39 @@ sub editmenu {
 	       },
 	       -anchor => "w", 
 	      )->pack(-fill => "x");
-    $t->Button(-text => "Move point (F3)",
-	       -command => sub {
-		   if (main::change_points() && $auto_reload) {
-		       main::reload_all();
-		   }
-	       },
-	       -anchor => "w",
-	      )->pack(-fill => "x");
-    $t->Button(-text => "Move line",
-	       -command => sub {
-		   if (main::change_line() && $auto_reload) {
-		       main::reload_all();
-		   }
-	       },
-	       -anchor => "w",
-	      )->pack(-fill => "x");
-    $t->Button(-text => "Grep point",
-	       -command => \&main::grep_point, # never reload necessary
-	       -anchor => "w",
-	      )->pack(-fill => "x");
-    $t->Button(-text => "Grep line",
-	       -command => \&main::grep_line, # never reload necessary
-	       -anchor => "w",
-	      )->pack(-fill => "x");
+    {
+	my $f = $t->Frame->pack(-fill => "x", -anchor => "w");
+	$f->gridColumnconfigure($_, -weight => 29) for (0, 1);
+
+	my $row = 0;
+	$f->Button(-text => "Move point (F3)",
+		   -command => sub {
+		       if (main::change_points() && $auto_reload) {
+			   main::reload_all();
+		       }
+		   },
+		   -anchor => "w",
+		  )->grid(-column => 0, -row => $row, -sticky => "nesw");
+	$f->Button(-text => "Move line",
+		   -command => sub {
+		       if (main::change_line() && $auto_reload) {
+			   main::reload_all();
+		       }
+		   },
+		   -anchor => "w",
+		  )->grid(-column => 1, -row => $row, -sticky => "nesw");
+
+	$row++;
+
+	$f->Button(-text => "Grep point",
+		   -command => \&main::grep_point, # never reload necessary
+		   -anchor => "w",
+		  )->grid(-column => 0, -row => $row, -sticky => "nesw");
+	$f->Button(-text => "Grep line",
+		   -command => \&main::grep_line, # never reload necessary
+		   -anchor => "w",
+		  )->grid(-column => 1, -row => $row, -sticky => "nesw");
+    }
     {
 	my @files = ((!defined $main::edit_mode || $main::edit_mode eq '')
 		     && !$main::edit_normal_mode

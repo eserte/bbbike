@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.36 2005/08/26 22:59:58 eserte Exp $
+# $Id: Makefile,v 1.37 2005/08/27 12:51:01 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -225,6 +225,7 @@ DISTFILES=\
 	brb.html-tpl \
 	brb.js-tpl \
 	brb.map-tpl \
+	brb.map-inc \
 	brb_init.html-tpl \
 	cleanup \
 	crontab.tpl \

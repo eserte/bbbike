@@ -6204,7 +6204,7 @@ sub set_bindings {
 
     $top->bind("<<CloseMainWin>>" => \&exit_app);
     for my $mod (qw(Alt Control)) {
-	$top->bind("<$mod-r>" => \&reload_all);
+	$top->bind("<$mod-r>" => sub { reload_all() });
     }
 
     $top->bind('<Control-o>' => sub { load_save_route(0) });
