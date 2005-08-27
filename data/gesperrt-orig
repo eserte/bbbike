@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.69 2005/08/25 22:01:08 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.71 2005/08/26 23:26:08 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -527,8 +527,8 @@ tragen (Treppe oder sehr steile, sandige Rampe)	0:60 41715,18446
 tragen (Treppe am Körnerpark)	0:30 12734,7384
 tragen (zwei Treppen)	0:30 12115,8556
 tragen (Treppe mit Kinderwagenrampe)	0:30 13960,9365
-tragen (Treppe)	0:30 8021,12835
-tragen (Treppe)	0:30 8414,12854
+tragen (Treppe)	0:30 8014,12846
+tragen (Treppe)	0:30 8432,12859
 tragen (Treppe)	0:30 8445,12747
 tragen (Treppe)	0:30 17026,11810
 #: add_fragezeichen: wo sind die Treppen genau?
@@ -753,3 +753,7 @@ Clayallee: Mittlestreifen wg. Leitplanke nicht zu queren	3nocross 1979,7460 1983
 Clayallee: Mittelstreifen schlecht zu queren	3nocross 2129,7728 2114,7709 2053,7634
 Am Zirkus	1 9226,12909 9192,13032 9145,13020 9118,13070
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12748
+Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10 8565,13580
+tragen (ca. 20 Stufen)	0:45 8536,12758
+tragen (ca. 20 Stufen)	0:45 8485,12869
+tragen (ca. 20 Stufen)	0:45 8469,12898

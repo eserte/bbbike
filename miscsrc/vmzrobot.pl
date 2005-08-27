@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.17 2005/05/16 21:11:49 eserte Exp $
+# $Id: vmzrobot.pl,v 1.18 2005/08/26 23:09:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -136,6 +136,11 @@ if (exists $output_as{'bbd'}) {
     my $fh = file_or_stdout($output_as{bbd});
     require Karte;
     Karte::preload(qw(Standard Polar));
+
+    print $fh <<EOF;
+#: title: VMZ
+#:
+EOF
     for my $info (@detail_links) {
 	(my $text = $info->{text}) =~ s/[\n\t]+/ /g;
 	$text =~ s/\[IMAGE\]//g; # XXX
@@ -361,7 +366,7 @@ cp -f /tmp/vmz.yaml /tmp/oldvmz.yaml
 ./vmzrobot.pl -f -outputas yaml:/tmp/newvmz.yaml || exit 1
 mv -f /tmp/newvmz.yaml /tmp/vmz.yaml
 ./vmzrobot.pl -old /tmp/oldvmz.yaml -i /tmp/vmz.yaml -diffcount || \
-   (./vmzrobot.pl -old /tmp/oldvmz.yaml -i /tmp/vmz.yaml -f -outputas bbd:/tmp/vmz.bbd; \
+   (./vmzrobot.pl -old ~/cache/misc/oldvmz.yaml -i ~/cache/misc/vmz.yaml -f -outputas bbd:/tmp/vmz.bbd; \
     tkmessage -center -font "helvetica 18" -bg red -fg white "New VMZ data available" )
 
 Einzeiler: check mark_irrelevant_entry regexps

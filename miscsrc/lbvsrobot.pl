@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.23 2005/04/09 10:36:15 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.24 2005/08/27 00:33:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -171,6 +171,13 @@ if (exists $output_as{'bbd'}) {
     require Karte;
     Karte::preload(qw(Standard Polar));
 
+    print $fh <<EOF;
+#: title: LBVS
+### not used:
+###: category_width.X: 10
+###: category_color.X: red
+#:
+EOF
     for my $info (@details) {
 	(my $text = $info->{text}) =~ s/[\n\t]+/ /g;
 	$text = state_out($info) . $text;

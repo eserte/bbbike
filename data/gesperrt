@@ -1,5 +1,5 @@
 #: title: Einbahnstraﬂen und gesperrte Straﬂen
-#: version: $Id: gesperrt-orig,v 4.69 2005/08/25 22:01:08 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.71 2005/08/26 23:26:08 eserte Exp eserte $
 #:
 Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -623,8 +623,8 @@ tragen (Treppe oder sehr steile, sandige Rampe)	0:60:-255 41715,18446
 tragen (Treppe am Kˆrnerpark)	0:30:-114 12734,7384
 tragen (zwei Treppen)	0:30:-255 12115,8556
 tragen (Treppe mit Kinderwagenrampe)	0:30:-135 13960,9365
-tragen (Treppe)	0:30:-156 8021,12835
-tragen (Treppe)	0:30:35 8414,12854
+tragen (Treppe)	0:30:-225 8014,12846
+tragen (Treppe)	0:30:-22 8432,12859
 tragen (Treppe)	0:30:77 8445,12747
 tragen (Treppe)	0:30:28 17026,11810
 tragen (zwei kurze Treppen)	0:30:3 9453,6415
@@ -844,3 +844,7 @@ Hohenzollerndamm -> Kˆnigsmarckstr.: Mittelstreifen schlecht zu queren	3 2053,76
 Kˆnigsmarckstr. -> Hohenzollerndamm: Mittelstreifen schlecht zu queren	3 2001,7747 2114,7709 2129,7728
 Am Zirkus	1 9226,12909 9192,13032 9145,13020 9118,13070
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12748
+Virchowweg: schmale Toreinfahrt, Fuﬂg‰nger und Bordstein	0:10:90 8565,13580
+tragen (ca. 20 Stufen)	0:45:-98 8536,12758
+tragen (ca. 20 Stufen)	0:45:-105 8485,12869
+tragen (ca. 20 Stufen)	0:45:-160 8469,12898

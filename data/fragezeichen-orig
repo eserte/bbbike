@@ -60,8 +60,6 @@ Schulzendorfer Str.: laut Tagesspiegel wird in Zukunft hier das Kopfsteinpflaste
 Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
 #: next_check: 2005-08-01
 Uferweg an der Kongreßhalle: laut Tsp im Frühjahr 2005 fertig	?::inwork 7753,12578
-#: next_check: 2005-08-01
-Uferweg (vermutlich Schiffbauerdamm) laut Tsp zwischen Frühjahr und Herbst 2005 fertig	?::inwork 8754,12622 8643,12631 8578,12659 8546,12759
 Innenstadtring, Verlängerung der Bernauer zur Invalidenstr. (bereits vorhanden, aber nicht offiziell freigegeben)	?::inwork 9236,14157 9090,13890
 #: next_check: 2005-08-01
 Autotunnel wird im Frühjahr 2005 zugeschüttet	?::inwork 5652,11004 5716,10978 5831,10978
@@ -79,7 +77,7 @@ auf der östlichen Seite der B101n: wo genau ist der Radweg hier?	? 6173,-2344 59
 #: XXX laut holger, hd, sav:
 Drängelgitter/Schranke	? 8810,14373
 #: XXX Straßen am Lehrter Bahnhof in Bau: vvv
-	?::inwork 7942,12912 7945,13008 7945,13107 7946,13209
+	?::inwork 7936,12906 7945,13008 7945,13107 7946,13209
 	?::inwork 7945,13008 7866,13009
 	?::inwork 7866,13009 7867,13106
 	?::inwork 7945,13107 7867,13106
@@ -87,7 +85,7 @@ Drängelgitter/Schranke	? 8810,14373
 #: ein anonymer Eintrag mit "mäßig", einer von Nicola mit Asphalt Q0:
 Straße am ULAP: wird demnächst in Clara-Jaschke-Straße umbenannt	? 7779,13012 7764,13236
 #: next_check: 2005-12-01
-Alexanderufer: in Bau	?::inwork 8269,13062 8312,13296 8378,13425 8337,13541
+Alexanderufer: in Bau	?::inwork 8257,13049 8312,13296 8378,13425 8337,13541
 #: last_checked: 2005-05-01
 Umgehungsstraße Michendorf: noch in Bau, genaue Lage, wird sie für Radfahrer gesperrt sein?	?::inwork -14949,-12785 -13597,-10497 -14149,-9371
 #: by: Message-ID: <Xns96A387773A8B04usenet@krickstadt.de>:
@@ -101,9 +99,9 @@ Spree: ist dieser Spreearm wiederhergestellt worden?	? 43394,-2017 43296,-2181 4
 #
 #: by: Felix Beutler
 #: last_checked: 2005-08-19
-Unterbaumstr.: bislang nur der Fußweg freigegeben	? 8503,12895 8581,13013
+Unterbaumstr.: bislang nur der Fußweg freigegeben	? 8486,12918 8581,13013
 #: by: Andreas Mühlhausen:
-Heinrich-von-Gagern-Str., Yitzhak-Rabin-Str.: möglicherweise schlechte Radwege (Kopfsteinpflaster)	? 8063,12182 8114,12408 8132,12601
+Heinrich-von-Gagern-Str., Yitzhak-Rabin-Str.: möglicherweise schlechte Radwege (Kopfsteinpflaster)	? 8063,12182 8119,12414 8122,12600
 #: last_checked: 2005-07-26
 #: by: Andreas Mühlhausen:
 Verlängerte Französische Str. zwischen Mauerstr. und Wilhelmstr.: laut Tagesspiegel für Fußgänger passierbar	? 8892,12006 9076,12054
@@ -772,13 +770,9 @@ Dachsteinweg: verkehrsberuhigt?	? 10481,2549 10446,2373 10493,2318
 Ringstr.: Qualität zwischen Spindelmühler Weg und Drakestr.: Kopfsteinpflaster?	? 2701,3064 3050,3316 3184,3413 3375,3544 3507,3635
 Kiepertplatz: Qualität?	? 8528,1846 8606,1875
 Elisabeth-Abegg-Str. bis Lüneburger Str.: Verbindung vorhanden? Qualität?	? 7793,12764 7409,12739 7327,12721
-Elisabeth-Abegg-Str.: noch immer nicht ausgeschildert?	? 7942,12912 7793,12764
+Elisabeth-Abegg-Str.: noch immer nicht ausgeschildert?	? 7936,12906 7793,12764
 #: XXX Martin Barghoorn hat KS angegeben, aber gleichzeitig "nur Fußweg" eingetragen
 Lückhoffstr.: Qualität (Kopfsteinpflaster?)?	? -2847,2893 -3022,2696 -3162,2564 -3190,2467 -3210,2375
-#: last_checked: 2005-07-31:
-Parkweg vom Kanzleramt zur Gustav-Heinemann-Brücke: noch nicht vollständig geöffnet?	? 8111,12930 8115,12835 8126,12740
-#: last_checked: 2005-07-31:
-Spreebogenpark: neuer Weg parallel zum Uferweg mit Rampe zur Gustav-Heinemann-Brücke, wann offen?	? 8343,12925 8229,12952 8159,12948 8111,12930
 Betckestr.: Qualität?	? -3614,12529 -3236,12533 -3150,12545
 Altonaer Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? -4900,13857 -4742,13839 -4298,13810 -3971,13755 -3689,13680
 Nauener Str. zur Altonaer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? -4731,13970 -4742,13839
@@ -915,6 +909,6 @@ Kernhofer Str.: Wird der Abschnitt nach den Bauarbeiten für Kfz gesperrt?	?::inw
 Nördlich der Laskerstr.: von Westen her immer offen (trotz Tor), schlechtes Kopfsteinpflaster. Wie geht es weiter?	? 14671,10734 14043,10928
 #: note: hier geht es wohl zu einem Discounter...
 Am Wriezener Bahnhof: öffentlich, Qualität?	? 12738,11878 12924,11731
-Albrechtstr. (Mitte): Einbahnstr. für Radler frei?	? 9106,12795 9046,12933 9001,13039
-Margarete-Steffin-Str.: Verbindung zur Luisenstr?	? 8700,12810 8729,12803
 Netzestr.: Qualität?	? 11712,7106 11700,7181
+nördliches Spreeufer / Schiffbauerdamm: genauer Verlauf?	?  8754,12622 8653,12629 8635,12629 8587,12642 8566,12661 8529,12757
+nördliches Spreeufer: wie gehts hier weiter?	? 8245,13016 8246,13175

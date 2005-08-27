@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.81 2005/08/25 22:01:10 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.83 2005/08/26 23:26:10 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
@@ -935,10 +935,10 @@ Winckelmannstr.: Kopfsteinpflaster Richtung Norden	Q2; 17465,3768 17468,3979
 Winckelmannstr.: Kopfsteinpflaster Richtung Süden	Q2; 17428,4503 17506,4235 17468,3979
 Zwiestädter Str.: Asphalt	Q0 13510,7535 13400,7642
 Am Orankesee: Parkweg	Q1 15845,15930 15703,15953 15581,15846 15484,15909 15479,16072
-Vorfahrt Reichstagsgebäude: Kopfsteinpflaster, OK	Q1 8400,12417 8400,12605
+Vorfahrt Reichstagsgebäude: Kopfsteinpflaster, OK	Q1 8400,12417 8399,12601
 Hagenauer Str.: Kopfsteinpflaster	Q2 11154,14985 11187,14763
 Kolmarer Str.: Kopfsteinpflaster	Q2 11299,14112 11354,14187 11418,14290
-südliches Spreeufer: wechselnder Belag (Verbundsteinpflaster und fester glatter Sandweg)	Q1 7775,12631 7934,12734 8012,12848 8033,12885 8060,12921 8105,12942 8158,12958 8228,12964 8343,12925 8426,12871 8473,12753 8495,12651 8554,12593
+südliches Spreeufer: wechselnder Belag (Verbundsteinpflaster und fester glatter Sandweg)	Q1 7775,12631 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8554,12593
 Glasbläserallee: Verbundsteinpflaster	Q0 14759,10096 14850,10265 14893,10359
 Fischzug: Asphalt	Q0 14850,10265 14929,10221 15005,10183 15090,10140
 Fischzug: Kopfsteinpflaster, teilweise auch Verbundsteinpflaster	Q2 15090,10140 15153,10112 15209,10087
@@ -1059,7 +1059,7 @@ Ottomar-Geschke-Str.: Kopfsteinpflaster	Q2 21454,4928 21498,5023
 Wallotstr.: Asphalt	Q0 2046,9429 1965,9431 1851,9332 1795,9325 1757,9271
 Gartenufer: Parkweg	Q1 5794,11624 6239,11399 6342,11353 6346,11326
 (südliches Spreeufer): teils gutes Kopfsteinpflaster, teils Parkweg, teils Asphalt	Q1 5579,12231 5737,12281 5804,12362 5962,12553 6029,12693 6078,12848 6193,12867
-Elisabeth-Abegg-Str.: Kopfsteinpflaster	Q2 7942,12912 7793,12764
+Elisabeth-Abegg-Str.: Kopfsteinpflaster	Q2 7936,12906 7793,12764
 Spreeuferweg: glatte Gehwegplatten und fester Sandweg an den Seiten	Q0 7064,12419 7217,12383 7360,12430 7541,12582
 Spreeuferweg: fester Sandweg	Q1 7541,12582 7791,12706 7915,12795 7950,12860
 Delbrückstr. (Neukölln): Kopfsteinpflaster	Q2 12743,6645 12851,6664 13125,6717
@@ -1985,7 +1985,7 @@ Bieselheider Weg: Verbundsteinpflaster	Q1 3448,26315 3540,26465
 Würtzstr.: gutes Kopfsteinpflaster	Q1 11567,19130 11620,18971
 Räuschstr.: Asphalt	Q0 3098,19867 3265,19641 3455,19389
 Maximilianstr. (Lichtenberg): mäßiges Kopfsteinpflaster	Q2 16334,10958 16381,11080 16468,11297
-Unterbaumstr.: Kopfsteinpflaster	Q2 8503,12895 8581,13013
+Unterbaumstr.: Kopfsteinpflaster	Q2 8486,12918 8502,12935 8581,13013
 Ernst-Bloch-Str.: Beton	Q0 23014,12706 22985,12807 23017,13037 23132,13034 23165,13167
 Breitensteinweg: Asphalt	Q0 545,334 940,376 1034,474
 Lübecker Str.: Asphalt	Q0 6402,13865 6401,13721 6403,13312
@@ -2308,4 +2308,12 @@ Schlegelstr.: Asphalt	Q0 9303,13887 9231,13865 9020,13723
 Claire-Waldoff-Str.: Asphalt	Q0 9236,13228 9114,13217
 Am Zirkus: Asphalt	Q1 9118,13070 9145,13020
 Am Zirkus: Asphalt	Q1 9089,13004 9145,13020 9192,13032 9226,12909
-Unterbaumstr.: Kopfsteinpflaster	Q2 8503,12895 8581,13013
+(Parkweg Spreebogenpark): wassergebundene Decke	Q1 8017,12826 8021,12839 8041,12875 8067,12908 8116,12938 8168,12945 8235,12945 8275,12936 8341,12911 8417,12846
+(Parkweg Spreebogenpark): wassergebundene Decke	Q1 8275,12742 8275,12936
+(südliches Spreeufer - Gustav-Heinemann-Brücke): wassergebundene Decke	Q1 8032,12889 8067,12915 8116,12938
+(südliches Spreeufer - Spreebogenpark): wassergebundene Decke	Q1 8361,12925 8341,12911
+Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8110,13042
+(Otto-Bismark-Str. - Rahel-Hirsch-Str.): wassergebundene Decke	Q1 8124,12742 8124,12840 8116,12938
+(Parkplatz Charité): Asphalt, Schotter	Q1 8804,13459 8777,13414 8778,13368 8665,13353
+Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8675,13580 8668,13645 8660,13707
+Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8668,13645 8626,13641

@@ -220,10 +220,10 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
      },
      { from  => undef, # 
        until => Time::Local::timelocal(reverse(2005-1900,10-1,31,23,59,59)),
-       text  => 'Schlichtallee zwischen Hauptstraße und Lückstraße wegen Bauarbeiten gesperrt (bis 31.10.)',
+       text  => 'Schlichtallee Richtung Süden zwischen Hauptstraße und Lückstraße wegen Bauarbeiten gesperrt (bis 31.10.)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 15629,10481 15751,10582 16032,10842
+userdel	q4; 16032,10842 15751,10582 15629,10481
 EOF
      },
      { from  => 1070341200, # 2003-12-02 06:00
@@ -2349,8 +2349,8 @@ userdel	2 85161,-3425 84653,-3159
 EOF
      },
      { from  => 1121724000, # 2005-07-19 00:00
-       until => 1125698400, # 2005-09-03 00:00
-       text  => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-02.09.2005 ',
+       until => 1128204000, # 2005-10-02 00:00
+       text  => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-01.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 1772,31266 2257,31124

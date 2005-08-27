@@ -4,9 +4,9 @@ push @temp_blocking,
 (
        {
          'until' => 1130799599,
-         'text' => 'Schlichtallee zwischen Hauptstraße und Lückstraße wegen Bauarbeiten gesperrt (bis 31.10.)',
+         'text' => 'Schlichtallee Richtung Süden zwischen Hauptstraße und Lückstraße wegen Bauarbeiten gesperrt (bis 31.10.)',
          'from' => undef,
-         'data' => 'userdel	q4; 15629,10481 15751,10582 16032,10842
+         'data' => 'userdel	q4; 16032,10842 15751,10582 15629,10481
 ',
          'type' => 'handicap'
        },
@@ -530,8 +530,8 @@ userdel	2 -4504,-14978 -4077,-14595
        undef,
        undef,
        {
-         'until' => 1125698400,
-         'text' => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-02.09.2005 ',
+         'until' => 1128204000,
+         'text' => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-01.10.2005 ',
          'from' => 1121724000,
          'data' => 'userdel	2 1772,31266 2257,31124
 ',
@@ -681,14 +681,6 @@ userdel	2 14327,-11767 15962,-10958
          'data' => 'userdel	2 35900,13643 36716,13979
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'until' => 1125093600,
-         'text' => 'K 6907; zw. Ferch und L 90 Glindow Dreharbeiten Vollsperrung 26.08.2005-26.08.2005 ',
-         'from' => 1124920800,
-         'data' => 'userdel	q4 -22803,-9880 -23295,-9711
-',
-         'type' => 'handicap'
        }
      
 );
