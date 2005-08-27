@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.66 2005/08/22 20:07:39 eserte Exp $
+# $Id: Makefile,v 2.66 2005/08/22 20:07:39 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -718,8 +718,12 @@ check-disabled:	.check_label
 	$(CHECK_POINTS) gesperrt .strassen.tmp landstrassen landstrassen2
 	@touch $@
 
+# Second check is necessary because of the 3nocross entries!
+# For the second check we could do a "grepstrassen -cat 3nocross" first
 .check_gesperrt2:	gesperrt strassen landstrassen landstrassen2
 	$(CHECK_NEIGHBOUR) -type standard -data gesperrt \
+		-against strassen -against landstrassen -against landstrassen2
+	$(CHECK_NEIGHBOUR) -type standard -data gesperrt-orig \
 		-against strassen -against landstrassen -against landstrassen2
 	@touch $@
 

@@ -423,6 +423,10 @@ Wörther Str. -> Schönhauser Allee: U-Bahnrampe	3 11163,14548 10924,14491 10947,1
 Kopenhagener Str. -> Schönhauser Allee: U-Bahnviadukt	3 10722,15921 10972,15895 10977,15944
 Schönhauser Allee -> Kopenhagener Str.: U-Bahnviadukt	3 10963,15789 10972,15895 10722,15921
 Schönhauser Allee: U-Bahnviadukt	3 10949,15674 10929,15516 11055,15504
+Thulestr. -> Berliner Str.: U-Bahnrampe	3 11278,16609 11042,16605 11039,16553
+Berliner Str. -> Thulestr.: U-Bahnrampe	3 10999,16830 11042,16605 11278,16609
+Berliner Str. -> Schonensche Str.: U-Bahnrampe	3 11042,16605 11039,16553 11287,16515
+Schonensche Str. -> Berliner Str.: U-Bahnrampe	3 11287,16515 11039,16553 11033,16464
 Wisbyer Str. -> Stahlheimer Str.: Straßenbahn	3 11807,16340 11727,16358 11618,16183
 Wisbyer Str. -> Varnhagenstr.: Straßenbahn	3 11905,16318 11807,16340 11680,16151
 Gudvanger Str. -> Wisbyer Str.: Straßenbahn	3 11758,16111 11905,16318 11807,16340
@@ -449,14 +453,14 @@ Alt-Friedrichsfelde -> Charlottenstr.: Straßentunnelrampe	3 18853,11798 18529,11
 Lewishamstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3 3644,10759 3631,10784 3587,10768
 Gervinusstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3 3839,10904 3631,10784 3587,10768
 Lewishamstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3 3592,10869 3631,10784 3839,10904
-Lewishamstr. -> Lewishamstr.: Straßentunnelrampe	3 3644,10759 3739,10576 3813,10435
+Lewishamstr. -> Sybelstr.: Straßentunnelrampe	3 3771,10511 3739,10576 3712,10566
 Lewishamstr. -> Waitzstr.: Straßentunnelrampe	3 3644,10759 3739,10576 3800,10580
-Lewishamstr. -> Sybelstr.: Straßentunnelrampe	3 3813,10435 3739,10576 3712,10566
 Sybelstr. -> Lewishamstr.: Straßentunnelrampe	3 3712,10566 3739,10576 3644,10759
-Sybelstr. -> Lewishamstr.: Straßentunnelrampe	3 3712,10566 3739,10576 3813,10435
 Sybelstr. -> Waitzstr.: Straßentunnelrampe	3 3712,10566 3739,10576 3800,10580
-Waitzstr. -> Lewishamstr.: Straßentunnelrampe	3 3800,10580 3739,10576 3813,10435
+Waitzstr. -> Lewishamstr.: Straßentunnelrampe	3 3800,10580 3739,10576 3771,10511
 Waitzstr. -> Sybelstr.: Straßentunnelrampe	3 3800,10580 3739,10576 3712,10566
+Lewishamstr. -> Waitzstr.: Straßentunnelrampe	3 3813,10435 3771,10511 3739,10495
+Waitzstr. -> Lewishamstr.: Straßentunnelrampe	3 3739,10495 3771,10511 3739,10576
 Köbisstr. -> Rauchstr.: unbequem passierbarer Mittelstreifen	3 7160,11225 6853,11336 6683,11367
 Köbisstr. -> Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3 7160,11225 6853,11336 6880,11110
 Rauchstr. -> Köbisstr.: unbequem passierbarer Mittelstreifen	3 6683,11367 6853,11336 7160,11225
@@ -799,6 +803,8 @@ Danziger Str. -> Rudi-Arndt-Str.: Straßenbahnschienen	3 13100,13803 13166,13707 
 Rudi-Arndt-Str. -> Danziger Str.: Straßenbahnschienen	3 13359,13832 13166,13707 13228,13615
 Pintschstr.	1 13342,13185 13438,12965
 Weidenweg (Friedrichshain)	1s 13678,12571 13608,12547
+Ernst-Zinna-Weg -> Landsberger Allee: Landsberger Allee	3 12564,13216 12582,13128 12727,13159
+Landsberger Allee -> Ernst-Zinna-Weg: Landsberger Allee	3 12386,13085 12582,13128 12564,13216
 Kalkhorster Weg (10 Stufen)	0:40:-175 3931,8638
 Hoffmann-von-Fallersleben-Pl. -> Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3 3741,8955 3741,9047 3688,9051
 Hohenzollerndamm -> Hoffmann-von-Fallersleben-Pl.: unbequem passierbarer Mittelstreifen	3 3835,9044 3741,9047 3741,8955
@@ -818,11 +824,11 @@ Kniprodestr. -> Rudolf-Schwarz-Str.: schlecht zu querender Mittelstreifen (Bords
 Anton-Saefkow-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13084,14472 13202,14388 13261,14456
 Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13243,14470 13261,14456 13318,14517
 Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13202,14388 13261,14456 13243,14470
-Kniprodestr. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13374,14581 13318,14517 13261,14456
-Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13374,14581 13318,14517 13281,14540
 Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13261,14456 13318,14517 13281,14540
 Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3 13281,14540 13318,14517 13374,14581
 (Treppe zur Putlitzbrücke): tragen	0:180:90 6272,14183
+Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6272,14183 6248,14185 6242,13953
+An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3 6255,14310 6248,14185 6272,14183
 Rathenower Str. -> Otto-Dix-Str.: schwierig zu querender Mittelstreifen	3 7148,13245 7207,13118 7370,13204
 Otto-Dix-Str. -> Rathenower Str.: schwierig zu querender Mittelstreifen	3 7370,13204 7207,13118 7192,13036
 Eichkatzweg	1 1137,9943 1020,9786 934,9672
