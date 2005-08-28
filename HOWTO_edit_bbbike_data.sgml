@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.6 2005/08/17 19:24:22 eserte Exp eserte $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.7 2005/08/28 21:21:30 eserte Exp $ -->
 
 <article>
  <artheader>
@@ -28,7 +28,7 @@
    </author>
   </authorgroup>
 
-  <pubdate>$Date: 2005/08/17 19:24:22 $</pubdate>
+  <pubdate>$Date: 2005/08/28 21:21:30 $</pubdate>
 
   <copyright>
    <year>2005</year>
@@ -472,9 +472,9 @@ Friedrichstraße in Berlin-Mitte) könnten theoretisch hier auch
 aufgeführt werden.
 
 <para id="handicaptemporary">
-Temporäre Beeinträchtigungen werden mit einer "temporary"-Direktive
-versehen und können noch den Zusatz <constant>::inwork</>
-erhalten (Beispiel <constant>q4::inwork</>). Der
+Temporäre Beeinträchtigungen werden mit einer
+<constant>temporary</>-Direktive versehen und können noch den Zusatz
+<constant>::inwork</> erhalten (Beispiel <constant>q4::inwork</>). Der
 Beschreibungstext sollte zudem das Datum der Aufhebung im Format
 YYYY-MM-DD enthalten, so dass das Postprocessing rechtzeitig das
 Ablaufen anzeigen kann.
@@ -723,12 +723,12 @@ Gesperrte Straßen für Autofahrer können in der Datei
 <filename>gesperrt_car</> eingetragen werden.
 
 <para>
-Temporär gesperrte Strecken sollten mit einer Direktive "temporary"
-versehen werden und unter Umständen in der Kategorie den Zusatz
-<constant>:inwork</> (Achtung: hier nur ein Doppelpunkt, aber das kann
-sich ändern!) erhalten (siehe auch die <link
-linkend="handicaptemporary">Ausführung zu temporären Einträgen in
-handicap</>).
+Temporär gesperrte Strecken sollten mit einer Direktive
+<constant>temporary</> versehen werden und unter Umständen in der
+Kategorie den Zusatz <constant>:inwork</> (Achtung: hier nur ein
+Doppelpunkt, aber das kann sich ändern!) erhalten (siehe auch die
+<link linkend="handicaptemporary">Ausführung zu temporären Einträgen
+in handicap</>).
 
 <para>
 Dateinamen: <filename>gesperrt</>, <filename>gesperrt_car</>
@@ -790,7 +790,7 @@ bzw. Transparenzkanal besitzen. Das Bild wird per
 
 <para>
 Es gibt einige vordefinierten Bilder wie <filename>church.gif</> (für
-Kirchen), <filename>monument.gif</> (für Denkmäler), <filename>airport.gif</> 
+Kirchen), <filename>monument.gif</> (für Denkmäler), <filename>airport.gif</>
 (für Flughäfen) und <filename>hospital.gif</> (für Krankenhäuser).
 
 <para>
@@ -818,6 +818,92 @@ ersetzt werden.
 
 <para>
 Dateiname: <filename>sehenswuerdigkeit</>
+
+<sect2>
+<title id="fragezeichen">Fragezeichen</>
+
+<para>
+Zu den "Fragezeichen" gehören alle Strecken und Punkte, bei denen sich
+ein Autor nicht sicher ist. Bei den Datensätzen gibt es zwei Arten:
+öffentliche und nicht-öffentliche. Öffentliche Fragezeichen-Datensätze
+sind wie folgt sichtbar:
+
+<itemizedlist>
+<listitem><para>Sie werden Benutzern des Web-Interfaces von BBBike in
+der Routenliste präsentiert, wenn sie die Option "Unbekannte Strecke
+mit einbeziehen" auswählen.</>
+
+<listitem><para>Benutzer der MapServer-Interfaces und des
+Perl/Tk-Interfaces sehen diese Daten, wenn sie den Fragezeichen-Layer
+einschalten.</>
+</itemizedlist>
+
+<para>
+Nicht-öffentliche Datensätze sind z.B. im Edit-Modus sichtbar oder
+beim Blick in die Datenquellen.
+
+<para>
+Einträge für die erzeugte Datei <filename>fragezeichen</> werden aus
+verschiedenen Quellen zusammengetragen: aus der Originaldatei
+<filename>fragezeichen-orig</> (aber auch nicht alle!) sowie aus mit
+<constant>add_fragezeichen</>-Direktiven versehenen Datensätzen. Die
+Regeln sehen wie folgt aus:
+
+<itemizedlist>
+<listitem><para>
+Alle Einträge in <filename>fragezeichen-orig</>, die in Sections
+
+<programlisting>
+        #: section ignorieren vvv
+        ...
+        #: section ^^^
+</programlisting>
+stehen, werden nicht in die öffentliche
+<filename>fragezeichen</>-Datei übernommen. 
+</>
+
+<listitem><para>
+Die Direktive
+<programlisting>
+        #: add_fragezeichen: ...
+</programlisting>
+übernimmt den nächsten Eintrag in die <filename>fragezeichen</>-Datei.
+Diese sind aber im Edit-Modus nicht sichtbar.
+</>
+
+<listitem><para>
+Die Direktive
+<programlisting>
+        #: XXX: ...
+</programlisting>
+ist ein nicht-öffentlicher Kommentar, der aber nirgends visualisiert
+wird (das wird sich in Zukunft ändern!)
+</>
+
+<listitem><para>
+Alle Einträge in <filename>fragezeichen-orig</>, die die Direktive
+<programlisting>
+        #: XXX ...
+</programlisting>
+haben, besitzen demnach zwei Kommentare: einen öffentlichen (den Namen
+im Datensatz) und den nicht-öffentlichen (der Text hinter der
+<constant>XXX</>-Direktive).
+</>
+
+</itemizedlist>
+
+<para>
+Da alle Fragezeicheneinträge in der Datei <filename>fragezeichen</> im
+Webinterface angezeigt werden können, sollte der Text
+allgemein verständlich sein. Insbesondere geht die Information darüber
+verloren, in welcher Datei sich eine
+<constant>add_fragezeichen</constant>-Direktive befand (befindet sie
+sich z.B. in <filename>qualitaet_s-orig</>, dann sollte im Text auch
+klar werden, dass es sich um eine Frage nach der Qualität handelt).
+Auch geht ein Teil des geographische Kontexts verloren: in der
+Routenbeschreibung wird nicht ersichtlich, um welche Teilstrecke es
+geht. In diesem Fall sollten die von-nach-Kreuzungen möglichst mit
+angegeben werden.
 
 <sect1>
 <title>Alternative Editiermöglichkeiten</>

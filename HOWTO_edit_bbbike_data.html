@@ -27,7 +27,7 @@ alink="#0000FF">
 
 <p class="COPYRIGHT">Copyright &copy; 2005 by Slaven Rezic</p>
 
-<p class="PUBDATE">$Date: 2005/08/17 19:24:22 $<br />
+<p class="PUBDATE">$Date: 2005/08/28 21:21:30 $<br />
 </p>
 
 <hr />
@@ -53,11 +53,11 @@ alink="#0000FF">
 
 <dt>8. <a href="#AEN149">Ein Exkurs über die verwendeten Attribute</a></dt>
 
-<dt>9. <a href="#AEN336">Alternative Editiermöglichkeiten</a></dt>
+<dt>9. <a href="#AEN373">Alternative Editiermöglichkeiten</a></dt>
 
-<dt>10. <a href="#AEN348">Neue Layer auf Basis der Berliner BBBike-Daten</a></dt>
+<dt>10. <a href="#AEN385">Neue Layer auf Basis der Berliner BBBike-Daten</a></dt>
 
-<dt>11. <a href="#AEN351">Eine komplett neue Datenbank aufbauen</a></dt>
+<dt>11. <a href="#AEN388">Eine komplett neue Datenbank aufbauen</a></dt>
 </dl>
 </div>
 
@@ -481,11 +481,11 @@ und kurvenreiche Wege, aber auch Wege mit Bordsteinen (letzteres könnte in Zukun
 gelöst werden). Notorisch zugestaute Straßen (z.B. die Friedrichstraße in Berlin-Mitte)
 könnten theoretisch hier auch aufgeführt werden.&#13;</p>
 
-<p>Temporäre Beeinträchtigungen werden mit einer "temporary"-Direktive versehen und
-können noch den Zusatz <tt class="CONSTANT">::inwork</tt> erhalten (Beispiel <tt
-class="CONSTANT">q4::inwork</tt>). Der Beschreibungstext sollte zudem das Datum der
-Aufhebung im Format YYYY-MM-DD enthalten, so dass das Postprocessing rechtzeitig das
-Ablaufen anzeigen kann.&#13;</p>
+<p>Temporäre Beeinträchtigungen werden mit einer <tt
+class="CONSTANT">temporary</tt>-Direktive versehen und können noch den Zusatz <tt
+class="CONSTANT">::inwork</tt> erhalten (Beispiel <tt class="CONSTANT">q4::inwork</tt>).
+Der Beschreibungstext sollte zudem das Datum der Aufhebung im Format YYYY-MM-DD
+enthalten, so dass das Postprocessing rechtzeitig das Ablaufen anzeigen kann.&#13;</p>
 
 <p>Dateinamen: <tt class="FILENAME">handicap_s</tt> und <tt
 class="FILENAME">handicap_l</tt>&#13;</p>
@@ -493,7 +493,7 @@ class="FILENAME">handicap_l</tt>&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN175" name="AEN175">8.4. Radwege</a></h2>
+<h2 class="SECT2"><a id="AEN176" name="AEN176">8.4. Radwege</a></h2>
 
 <p>In Berlin wird versucht, genau zu kategorisieren, siehe auch <a
 href="bbd.html#CYCLE_PATHS_RADWEGE_" target="_top">die entsprechende Dokumentation in der
@@ -517,7 +517,7 @@ class="FILENAME">comments_cyclepath</tt>&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN188" name="AEN188">8.5. Grüne Wege</a></h2>
+<h2 class="SECT2"><a id="AEN189" name="AEN189">8.5. Grüne Wege</a></h2>
 
 <p>Wege, die durch Parks und Wälder oder an Gewässern entlang führen. Es gibt zwei
 Stufen, <tt class="CONSTANT">green1</tt> und <tt class="CONSTANT">green2</tt>. <tt
@@ -539,7 +539,7 @@ Stadt beschrieben werden können.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN200" name="AEN200">8.6. Unbeleuchtete Straßen</a></h2>
+<h2 class="SECT2"><a id="AEN201" name="AEN201">8.6. Unbeleuchtete Straßen</a></h2>
 
 <p>Hier werden nachts unbeleuchtete Straßen eingetragen. Bei Grenzfällen, z.B.
 Ausschalten der Beleuchtung zu einer bestimmten Uhrzeit, kann diese im Beschreibungsfeld
@@ -550,7 +550,7 @@ aufgeführt werden.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN205" name="AEN205">8.7. Ampeln</a></h2>
+<h2 class="SECT2"><a id="AEN206" name="AEN206">8.7. Ampeln</a></h2>
 
 <p>Neben Ampeln (hochdeutsch: LSA) kann man auch Bahnübergänge und Zugbrücken
 unterbringen. Bei Bahnübergängen (Kategorie <tt class="CONSTANT">B</tt>) kann man im
@@ -572,7 +572,7 @@ Beschreibungsfeld mit einer Erklärung ergänzen.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN217" name="AEN217">8.8. Steigungen</a></h2>
+<h2 class="SECT2"><a id="AEN218" name="AEN218">8.8. Steigungen</a></h2>
 
 <p>Drei Möglichkeiten gibt es zur Erfassung von Steigungen:</p>
 
@@ -606,7 +606,7 @@ Steigung.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN234" name="AEN234">8.9. Straßenbahnen</a></h2>
+<h2 class="SECT2"><a id="AEN235" name="AEN235">8.9. Straßenbahnen</a></h2>
 
 <p>Wenn zwischen Straßenbahngleisen und parkenden Autos oder Bordsteinkante wenig Platz
 ist, sollte ein Eintrag in dieser Datei geschaffen werden. Faustregel wäre: ein Fahrrad
@@ -618,7 +618,7 @@ einer Straßenbahn überholt werden. Nur in Berlin erfasst.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN239" name="AEN239">8.10. Ausgeschilderte Radrouten</a></h2>
+<h2 class="SECT2"><a id="AEN240" name="AEN240">8.10. Ausgeschilderte Radrouten</a></h2>
 
 <p>Beispiele für ausgeschilderte Radrouten sind der europäische Radfernweg R1, die neuen
 Radialrouten in Berlin (z.B. RR10), Berlin-Usedom, Mauerradweg. Oft sind Abschnitte zwar
@@ -634,7 +634,7 @@ Programmdatei <tt class="FILENAME">Geography/Berlin_DE.pm</tt> fest verdrahtet.&
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN245" name="AEN245">8.11. Kommentare für
+<h2 class="SECT2"><a id="AEN246" name="AEN246">8.11. Kommentare für
 Streckenführungen</a></h2>
 
 <p>Manchmal sind Streckenführungen in der Realität nicht einfach zu finden. Dazu werden
@@ -649,7 +649,7 @@ fährt; wahlweise auch in der Form, die nur für eine Richtung gültig ist).&#13;</
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN250" name="AEN250">8.12. Kommentare zu
+<h2 class="SECT2"><a id="AEN251" name="AEN251">8.12. Kommentare zu
 Fährverbindungen</a></h2>
 
 <p>Fährzeiten und Preise der Fähren, möglichst mit dem Stand der letzten
@@ -660,7 +660,7 @@ Aktualisierung.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN255" name="AEN255">8.13. Sonstige Kommentare</a></h2>
+<h2 class="SECT2"><a id="AEN256" name="AEN256">8.13. Sonstige Kommentare</a></h2>
 
 <p>Alle Kommentare, die nicht in eine der anderen Dateien passen, kommen hier
 herein.&#13;</p>
@@ -670,7 +670,7 @@ herein.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN260" name="AEN260">8.14. Gesperrte Straßen</a></h2>
+<h2 class="SECT2"><a id="AEN261" name="AEN261">8.14. Gesperrte Straßen</a></h2>
 
 <p>Darunter fallen folgende Typen:</p>
 
@@ -687,7 +687,7 @@ class="CONSTANT">1s</tt>&#13;</p>
 
 <li>
 <p>Für Radfahrer vollkommen gesperrte Straßen (z.B. Kfz-Straßen wie die B96a in
-Altglienicke, aber siehe auch <a href="#AEN313">hier</a>; Kategorie <tt
+Altglienicke, aber siehe auch <a href="#AEN315">hier</a>; Kategorie <tt
 class="CONSTANT">2</tt>)&#13;</p>
 </li>
 
@@ -734,11 +734,11 @@ sind nur im Editiermodus sichtbar.&#13;</p>
 <p>Gesperrte Straßen für Autofahrer können in der Datei <tt
 class="FILENAME">gesperrt_car</tt> eingetragen werden.&#13;</p>
 
-<p>Temporär gesperrte Strecken sollten mit einer Direktive "temporary" versehen werden
-und unter Umständen in der Kategorie den Zusatz <tt class="CONSTANT">:inwork</tt>
-(Achtung: hier nur ein Doppelpunkt, aber das kann sich ändern!) erhalten (siehe auch die
-<a href="#HANDICAPTEMPORARY">Ausführung zu temporären Einträgen in
-handicap</a>).&#13;</p>
+<p>Temporär gesperrte Strecken sollten mit einer Direktive <tt
+class="CONSTANT">temporary</tt> versehen werden und unter Umständen in der Kategorie den
+Zusatz <tt class="CONSTANT">:inwork</tt> (Achtung: hier nur ein Doppelpunkt, aber das
+kann sich ändern!) erhalten (siehe auch die <a href="#HANDICAPTEMPORARY">Ausführung zu
+temporären Einträgen in handicap</a>).&#13;</p>
 
 <p>Dateinamen: <tt class="FILENAME">gesperrt</tt>, <tt
 class="FILENAME">gesperrt_car</tt>&#13;</p>
@@ -746,7 +746,7 @@ class="FILENAME">gesperrt_car</tt>&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN302" name="AEN302">8.15. Brunnels</a></h2>
+<h2 class="SECT2"><a id="AEN304" name="AEN304">8.15. Brunnels</a></h2>
 
 <p>Brunnels ist die Zusammenfassung von Brücken und Tunnels. In Zukunft werden auf
 BBBike-gezeichneten Karten brunnels auch als solche gemalt. Zurzeit können die
@@ -758,7 +758,7 @@ beizutragen (Programm <tt class="FILENAME">miscsrc/check_crossings</tt>).&#13;</
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN308" name="AEN308">8.16. Vorfahrtstraßen</a></h2>
+<h2 class="SECT2"><a id="AEN310" name="AEN310">8.16. Vorfahrtstraßen</a></h2>
 
 <p>Diese Datensätze bestehen aus Koordinaten für einen Straßenzug, der Vorfahrt am
 mittleren Punkt besitzt. Dieser Layer kann in BBBike gezeichnet werden, wird aber nicht
@@ -769,7 +769,7 @@ weiter verwendet.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN313" name="AEN313">8.17. Autobahnen</a></h2>
+<h2 class="SECT2"><a id="AEN315" name="AEN315">8.17. Autobahnen</a></h2>
 
 <p>Autobahnen und Kraftfahrzeugstraßen können zu Informationszwecken in diesem Layer
 aufgeführt werden. Strikt gesehen müssen die Strecken nicht so gezeichnet sein, dass sie
@@ -780,7 +780,7 @@ routingfähig sind.&#13;</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN318" name="AEN318">8.18. Sehenswürdigkeiten und wichtige
+<h2 class="SECT2"><a id="AEN320" name="AEN320">8.18. Sehenswürdigkeiten und wichtige
 Gebäude</a></h2>
 
 <p>Die Datensätze in dieser Datei bekommen die Kategorie <tt class="CONSTANT">SW</tt>,
@@ -826,15 +826,112 @@ werden.&#13;<br />
 <br />
 <p>Dateiname: <tt class="FILENAME">sehenswuerdigkeit</tt>&#13;</p>
 </div>
+
+<div class="SECT2">
+<hr />
+<h2 class="SECT2"><a id="AEN338" name="AEN338">8.19. Fragezeichen</a></h2>
+
+<p>Zu den "Fragezeichen" gehören alle Strecken und Punkte, bei denen sich ein Autor nicht
+sicher ist. Bei den Datensätzen gibt es zwei Arten: öffentliche und nicht-öffentliche.
+Öffentliche Fragezeichen-Datensätze sind wie folgt sichtbar:</p>
+
+<ul>
+<li>
+<p>Sie werden Benutzern des Web-Interfaces von BBBike in der Routenliste präsentiert,
+wenn sie die Option "Unbekannte Strecke mit einbeziehen" auswählen.</p>
+</li>
+
+<li>
+<p>Benutzer der MapServer-Interfaces und des Perl/Tk-Interfaces sehen diese Daten, wenn
+sie den Fragezeichen-Layer einschalten.</p>
+</li>
+</ul>
+
+&#13;<br />
+<br />
+<p>Nicht-öffentliche Datensätze sind z.B. im Edit-Modus sichtbar oder beim Blick in die
+Datenquellen.&#13;</p>
+
+<p>Einträge für die erzeugte Datei <tt class="FILENAME">fragezeichen</tt> werden aus
+verschiedenen Quellen zusammengetragen: aus der Originaldatei <tt
+class="FILENAME">fragezeichen-orig</tt> (aber auch nicht alle!) sowie aus mit <tt
+class="CONSTANT">add_fragezeichen</tt>-Direktiven versehenen Datensätzen. Die Regeln
+sehen wie folgt aus:</p>
+
+<ul>
+<li>
+<p>Alle Einträge in <tt class="FILENAME">fragezeichen-orig</tt>, die in Sections</p>
+
+<pre class="PROGRAMLISTING">
+        #: section ignorieren vvv
+        ...
+        #: section ^^^
+</pre>
+
+stehen, werden nicht in die öffentliche <tt class="FILENAME">fragezeichen</tt>-Datei
+übernommen. <br />
+<br />
+</li>
+
+<li>
+<p>Die Direktive</p>
+
+<pre class="PROGRAMLISTING">
+        #: add_fragezeichen: ...
+</pre>
+
+übernimmt den nächsten Eintrag in die <tt class="FILENAME">fragezeichen</tt>-Datei. Diese
+sind aber im Edit-Modus nicht sichtbar.<br />
+<br />
+</li>
+
+<li>
+<p>Die Direktive</p>
+
+<pre class="PROGRAMLISTING">
+        #: XXX: ...
+</pre>
+
+ist ein nicht-öffentlicher Kommentar, der aber nirgends visualisiert wird (das wird sich
+in Zukunft ändern!)<br />
+<br />
+</li>
+
+<li>
+<p>Alle Einträge in <tt class="FILENAME">fragezeichen-orig</tt>, die die Direktive</p>
+
+<pre class="PROGRAMLISTING">
+        #: XXX ...
+</pre>
+
+haben, besitzen demnach zwei Kommentare: einen öffentlichen (den Namen im Datensatz) und
+den nicht-öffentlichen (der Text hinter der <tt
+class="CONSTANT">XXX</tt>-Direktive).<br />
+<br />
+</li>
+</ul>
+
+&#13;<br />
+<br />
+<p>Da alle Fragezeicheneinträge in der Datei <tt class="FILENAME">fragezeichen</tt> im
+Webinterface angezeigt werden können, sollte der Text allgemein verständlich sein.
+Insbesondere geht die Information darüber verloren, in welcher Datei sich eine <tt
+class="CONSTANT">add_fragezeichen</tt>-Direktive befand (befindet sie sich z.B. in <tt
+class="FILENAME">qualitaet_s-orig</tt>, dann sollte im Text auch klar werden, dass es
+sich um eine Frage nach der Qualität handelt). Auch geht ein Teil des geographische
+Kontexts verloren: in der Routenbeschreibung wird nicht ersichtlich, um welche
+Teilstrecke es geht. In diesem Fall sollten die von-nach-Kreuzungen möglichst mit
+angegeben werden.&#13;</p>
+</div>
 </div>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN336" name="AEN336">9. Alternative
+<h1 class="SECT1"><a id="AEN373" name="AEN373">9. Alternative
 Editiermöglichkeiten</a></h1>
 
 <div class="SECT2">
-<h2 class="SECT2"><a id="AEN338" name="AEN338">9.1. Schnelles Erfassen von Daten</a></h2>
+<h2 class="SECT2"><a id="AEN375" name="AEN375">9.1. Schnelles Erfassen von Daten</a></h2>
 
 <p>Es ist auch möglich, mit der Standardinstallation von BBBike (ohne CVS) Daten zu
 erfassen, die an der Daten-Maintainer geschickt werden können. Dazu muss einfach ein
@@ -855,7 +952,7 @@ BBBike-Datenformat verwendet wird, also</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN343" name="AEN343">9.2. Direktes Editieren der Daten</a></h2>
+<h2 class="SECT2"><a id="AEN380" name="AEN380">9.2. Direktes Editieren der Daten</a></h2>
 
 <p>BBBike-Daten sind reine Textdateien und können mit einem normalen Texteditor
 bearbeitet werden. Allerdings wird dabei kein <tt class="FILENAME">datachange.log</tt>
@@ -868,7 +965,7 @@ BBBike-Datenformats siehe <a href="bbd.html" target="_top">hier</a>.&#13;</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN348" name="AEN348">10. Neue Layer auf Basis der Berliner
+<h1 class="SECT1"><a id="AEN385" name="AEN385">10. Neue Layer auf Basis der Berliner
 BBBike-Daten</a></h1>
 
 <p>TBD &#13;</p>
@@ -876,7 +973,7 @@ BBBike-Daten</a></h1>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN351" name="AEN351">11. Eine komplett neue Datenbank
+<h1 class="SECT1"><a id="AEN388" name="AEN388">11. Eine komplett neue Datenbank
 aufbauen</a></h1>
 
 <p>Dazu sollte ein neues Datenverzeichnis parallel zu <tt

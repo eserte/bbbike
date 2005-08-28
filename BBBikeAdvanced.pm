@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.124 2005/08/25 22:17:36 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.127 2005/08/28 19:35:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -3381,6 +3381,104 @@ sub adjust_map_by_delta {
 
 sub reset_map_adjusted_tag {
     $c->dtag("map_adjusted");
+}
+
+sub map_button {
+    my($misc_frame, $curr_row, $col_ref) = @_;
+
+    my $map_photo = load_photo($misc_frame, 'map.' . $default_img_fmt);
+    my $karte_check = $misc_frame->$Checkbutton
+	(image_or_text($map_photo, 'Map'),
+	 -variable => \$map_draw,
+	 -command => sub { getmap($c->get_center, undef, -from_check => 1) },
+	)->grid(-row => $curr_row, -column => $$col_ref, -sticky => 's');
+    $balloon->attach($karte_check, -msg => M"reale Karte");
+    $ch->attach($karte_check, -pod => "^\\s*Karten-Symbol");
+
+    my $kcmb = $misc_frame->Menubutton;
+    my $kcm = get_map_button_menu($kcmb);
+    menuright($karte_check, $kcm);
+    menuarrow($kcmb, $kcm, $$col_ref++,
+	      -menulabel => M"Karte", -special => 'LAYER');
+}
+
+sub get_map_button_menu {
+    my($kcmb) = @_;
+
+    my $kcm = $kcmb->Menu(-title => M"reale Karte");
+    my $set_default_type;
+
+    $kcm->checkbutton(-label => M"Karte einblenden",
+		      -variable => \$map_draw,
+		      -command => sub {
+			  getmap($c->get_center, undef, -from_check => 1);
+		      }
+		     );
+
+    $kcm->cascade(-label => M"Kartentypen");
+    {
+	my $kcms = $kcm->Menu(-title => M"Automatische Anpassung");
+	$kcm->entryconfigure('last', -menu => $kcms);
+	foreach (@Karte::map) {
+	    my $o = $Karte::map{$_};
+	    if ($o->can('coord')) { # check auf Karten-Funktion
+		$kcms->radiobutton(-label => $o->name,
+				   -variable => \$map_default_type,
+				   -value => $o->token,
+				  );
+	    }
+	    if ($_ eq 'brbmap') {
+		my $index = $kcm->index('last');
+		push @edit_mode_brb_cmd, sub { $kcm->invoke($index) };
+	    } elsif ($_ eq 'berlinmap') {
+		my $index = $kcm->index('last');
+		push @edit_mode_b_cmd, sub { $kcm->invoke($index) };
+	    }
+	}
+    }
+
+    $kcm->separator;
+    $kcm->checkbutton(-label => M"WWW",
+		      -variable => \$do_wwwmap,
+		     );
+    $kcm->checkbutton(-label => M"WWW-Cache",
+		      -variable => \$use_wwwcache,
+		     );
+    $kcm->separator;
+    $kcm->checkbutton(-label => M"Fallback",
+		      -variable => \$use_map_fallback,
+		     );
+    $kcm->checkbutton(-label => M"mit Umgebung",
+		      -variable => \$map_surround,
+		     );
+    $kcm->checkbutton(-label => M"mehrere Karten",
+		      -variable => \$dont_delete_map,
+		     );
+    $kcm->command(-label => M"Karten löschen",
+		  -command => \&delete_map,
+		 );
+    if ($advanced) {
+	$kcm->command(-label => M"Karten um Delta verschieben",
+		      -command => \&adjust_map_by_delta,
+		     );
+	$kcm->command(-label => M"Reset map_adjusted-Tag",
+		      -command => \&reset_map_adjusted_tag,
+		     );
+    }
+    $kcm->separator;
+    foreach my $color ([M"Farbe (Photo)", 'color'],
+		       [M"Farbe (Pixmap)", 'pixmap'],
+		       [M"Graustufen", 'gray'],
+		       [M"Schwarz/Weiß", 'mono'],
+		      ) {
+	$kcm->radiobutton(-label => $color->[0],
+			  -variable => \$map_color,
+			  -value => $color->[1],
+			 );
+    }
+    menu_entry_up_down($kcm, $tag_group{'map'});
+
+    $kcm;
 }
 
 1;

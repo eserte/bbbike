@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.23 2005/07/14 20:34:49 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.24 2005/08/28 20:32:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.23 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -202,6 +202,7 @@ sub add_button {
 	      [Button => "Show lbvs diff",
 	       -command => \&show_lbvs_diff,
 	      ],
+	      ($main::devel_host ? [Cascade => "Karte"] : ()),
 	      "-",
 	      [Button => "Delete this menu",
 	       -command => sub {
@@ -213,6 +214,12 @@ sub add_button {
 	     $b,
 	     __PACKAGE__."_menu",
 	    );
+    my $menu = $mmf->Subwidget(__PACKAGE__ . "_menu_menu");
+    if ($main::devel_host) {
+	my $map_menuitem = $menu->index("Karte");
+	$menu->entryconfigure($map_menuitem,
+			      -menu => main::get_map_button_menu($menu));
+    }
 }
 
 sub make_gps_target {

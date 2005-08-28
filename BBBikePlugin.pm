@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePlugin.pm,v 1.8 2005/02/27 23:39:15 eserte Exp $
+# $Id: BBBikePlugin.pm,v 1.8 2005/02/27 23:39:15 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -154,6 +154,7 @@ sub place_menu_button {
     }
     $menubutton->place(-x => $x, -y => 0, -width => $width);
     $frame->Advertise($advertised_name => $menubutton);
+    $frame->Advertise($advertised_name . "_menu" => $menu);
 }
 
 sub replace_plugin_widget {
