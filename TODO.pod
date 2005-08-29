@@ -2236,18 +2236,13 @@ E<ouml>ffnet.
 
 =back
 
-=head1 Dokumentation
+=head1 Documentation
 
 =over 
 
 =item * (E2)
 
-README für MacOSX erneuern.
-
-=item * (M2)
-
-HOWTO zum eigenen Editieren der Daten, zum Erzeugen von neuen Layern
-etc.
+pod2html: Pod::ProjectDocs hat gute Ratings bekommen, ausprobieren!
 
 =item * (M4)
 
