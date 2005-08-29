@@ -276,7 +276,14 @@ userdel	q4 -18080,-12637 -17374,-13449
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1130623200,
+         'text' => 'B 101; (Berliner Str.); OD Trebbin, zw. Bahnhofstr. u. Luckenwalder Str., Straßenbauarbeiten, Vollsperrung, 09.08.2005-29.10.2005 ',
+         'from' => 1123452000,
+         'data' => 'userdel	q4 -1887,-21501 -1623,-21150
+',
+         'type' => 'handicap'
+       },
        undef,
        {
          'until' => 1130536800,
@@ -478,8 +485,8 @@ userdel	2 -4504,-14978 -4077,-14595
          'type' => 'gesperrt'
        },
        {
-         'until' => 1125698400,
-         'text' => 'L 70; (Karl-Fiedler-Str.); OD Sperenberg, zw. Goethestr. u. Am Niederfließ Kompletter Straßenausbau Vollsperrung 25.04.2005-02.09.2005 ',
+         'until' => 1125957600,
+         'text' => 'L 70; (Karl-Fiedler-Str.); OD Sperenberg, zw. Goethestr. u. Am Niederfließ Kompletter Straßenausbau Vollsperrung 25.04.2005-05.09.2005 ',
          'from' => 1114293600,
          'data' => '	q4 8576,-29378 8721,-29879
 ',
@@ -489,7 +496,7 @@ userdel	2 -4504,-14978 -4077,-14595
          'until' => 1126796400,
          'text' => 'Holzendorffstraße zwischen Rönnestraße und Gervinusstraße Brückenarbeiten, Straße gesperrt. Dauer: bis 15.09.2005, 17.00 Uhr ',
          'from' => 1120088649,
-         'data' => 'userdel	2 3344,10878 3395,10704
+         'data' => 'userdel	2 3049,10719 3093,10594
 ',
          'type' => 'gesperrt'
        },
@@ -497,14 +504,7 @@ userdel	2 -4504,-14978 -4077,-14595
        undef,
        undef,
        undef,
-       {
-         'until' => 1125266400,
-         'text' => 'L 23; (Storkow-Grünheide); OD Spreenhagen, Brücke über Oder-Spree-Kanal Sanierung Brücke Vollsperrung 11.07.2005-28.08.2005 ',
-         'from' => 1120946400,
-         'data' => 'userdel	2 42349,-5620 42647,-6368
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -679,6 +679,23 @@ userdel	2 14327,-11767 15962,-10958
          'text' => 'K 6422; (Eggersdorfer Str.); OL Petershagen, unbeschrankter Bahnübergang Instandsetzungsarb. Vollsperrung 04.09.2005-06.09.2005 ',
          'from' => 1125698400,
          'data' => 'userdel	2 35900,13643 36716,13979
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'until' => 1129413600,
+         'text' => 'Glienicker Straße zwischen Grünauer Straße und Nipkowstraße Richtung Adlergestell wegen Bauarbeiten gesperrt bis 15.10.2005 ',
+         'from' => 1125350749,
+         'data' => 'userdel	q4; 21823,4210 21690,4057 21498,3837 21442,3774 21325,3644 21247,3536 21236,3496 21156,3452 20982,3325 20844,3159
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1125698400,
+         'text' => 'Fähre Cauth K 6910 Straße der Einheit bis 02.09.2005 außer Betrieb ',
+         'from' => 1125351382,
+         'data' => 'userdel	2 -17703,-6990 -17643,-7028
 ',
          'type' => 'gesperrt'
        }

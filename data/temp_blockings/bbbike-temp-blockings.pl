@@ -1747,12 +1747,12 @@ EOF
 userdel	q4; 21093,9179 21351,9066
 EOF
      },
-     { from  => 1118872800, # 2005-06-16 00:00
-       until => 1123538400, # 2005-08-09 00:00
-       text  => 'B 101; (Berliner Str.); OD Trebbin Straßenbauarbeiten Vollsperrung bis 08.08.2005 ',
+     { from  => 1123452000, # 2005-08-08 00:00
+       until => 1130623200, # 2005-10-30 00:00
+       text  => 'B 101; (Berliner Str.); OD Trebbin, zw. Bahnhofstr. u. Luckenwalder Str., Straßenbauarbeiten, Vollsperrung, 09.08.2005-29.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -1623,-21150 -1887,-21501
+userdel	q4 -1887,-21501 -1623,-21150
 EOF
      },
      { from  => 1113688800, # 2005-04-17 00:00
@@ -2208,8 +2208,8 @@ userdel	1 10846,13362 10790,13565
 EOF
      },
      { from  => 1114293600, # 2005-04-24 00:00
-       until => 1125698400, # 2005-09-03 00:00
-       text  => 'L 70; (Karl-Fiedler-Str.); OD Sperenberg, zw. Goethestr. u. Am Niederfließ Kompletter Straßenausbau Vollsperrung 25.04.2005-02.09.2005 ',
+       until => 1125957600, # 2005-09-06 00:00
+       text  => 'L 70; (Karl-Fiedler-Str.); OD Sperenberg, zw. Goethestr. u. Am Niederfließ Kompletter Straßenausbau Vollsperrung 25.04.2005-05.09.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 	q4 8576,-29378 8721,-29879
@@ -2220,7 +2220,7 @@ EOF
        text  => 'Holzendorffstraße zwischen Rönnestraße und Gervinusstraße Brückenarbeiten, Straße gesperrt. Dauer: bis 15.09.2005, 17.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 3344,10878 3395,10704
+userdel	2 3049,10719 3093,10594
 EOF
      },
      { from  => 1121378400, # 2005-07-15 00:00
@@ -2625,6 +2625,22 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -22803,-9880 -23295,-9711
+EOF
+     },
+     { from  => 1125350749, # 2005-08-29 23:25
+       until => 1129413600, # 2005-10-16 00:00
+       text  => 'Glienicker Straße zwischen Grünauer Straße und Nipkowstraße Richtung Adlergestell wegen Bauarbeiten gesperrt bis 15.10.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 21823,4210 21690,4057 21498,3837 21442,3774 21325,3644 21247,3536 21236,3496 21156,3452 20982,3325 20844,3159
+EOF
+     },
+     { from  => 1125351382, # 2005-08-29 23:36
+       until => 1125698400, # 2005-09-03 00:00
+       text  => 'Fähre Cauth K 6910 Straße der Einheit bis 02.09.2005 außer Betrieb ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -17703,-6990 -17643,-7028
 EOF
      },
     );
