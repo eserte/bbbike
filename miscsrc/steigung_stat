@@ -55,6 +55,8 @@ Default for -o: $o
 }
 
 if ($orig) {
+    warn "The -orig option is obsolete and probably not needed!\n";
+
     # This is not correct, because "-orig" does not mean automatically
     # "b1996". But it's ok, because there's only a non-orig rule in
     # data/Makefile.
