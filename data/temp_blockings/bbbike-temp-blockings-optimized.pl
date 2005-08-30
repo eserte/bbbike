@@ -600,7 +600,7 @@ userdel	q4 -5209,70040 -4978,71109
        },
        {
          'until' => 1132095600,
-         'text' => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt (Swinemünder Brücke). Dauer: 15.08.2005, 06:00 Uhr bis ca. 15.11.2005 ',
+         'text' => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist noch passierbar (Swinemünder Brücke). Dauer: 15.08.2005, 06:00 Uhr bis ca. 15.11.2005 ',
          'from' => 1123992000,
          'data' => 'userdel	q4 9494,15998 9583,15851
 ',

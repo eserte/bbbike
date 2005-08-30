@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.71 2005/08/26 23:26:08 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.74 2005/08/30 20:56:52 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -10,7 +10,7 @@
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
-Kanalstraßen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7873,11142 7993,11137 8124,11078 8241,11024
+Kanalstraßen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7873,11142 7993,11137 8092,11092 8241,11024
 # Hier kann ein kurzes Stück auf dem Gehweg überbrückt werden
 Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8739,10404 8820,10379 9029,10366 9147,10359 9241,10324 9392,10260 9593,10238 9865,10286
 Gitschiner Str.	1 9865,10286 9948,10280
@@ -143,7 +143,7 @@ An der Schillingbrücke	1 12026,11348 12056,11390
 Schulze-Delitzsch-Platz	1 11155,11750 11048,11745 11022,11782
 Schulze-Delitzsch-Platz	1 11022,11782 11155,11750
 # hier stand mal ein Polizeiauto, als ich reinfahren wollte...:
-Weydemeyerstr.	1 11905,13069 11910,13055 12062,12986 12052,12888
+Weydemeyerstr.	1 11905,13069 11910,13055 12062,12986 12054,12903
 Gipsstr.	1 10331,13397 10199,13446 10026,13521
 Dorotheenstr.	1 9867,12651 9723,12594 9574,12578 9454,12558 9323,12528
 Georgenstr.	1 9437,12662 9562,12679 9657,12694 9754,12775
@@ -407,7 +407,7 @@ Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5474,9961 5475,9914 5
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19694,15149 19735,15155 20266,15456
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19670,15435 19582,15221 19506,15002 19466,14910 19422,14793
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9851,10219 9849,10202 9827,10120
-Grunerstr.: Straßentunnelrampe	3nocross 10887,12543 10959,12629 11062,12710 11134,12793
+Grunerstr.: Straßentunnelrampe	3nocross 10878,12560 10954,12635 11057,12715 11134,12793
 Bundesallee: Straßentunnelrampe	3nocross 5505,8832 5510,8709 5513,8588
 Bundesallee: Absperrung auf dem Mittelstreifen	3nocross 5510,8709 5513,8588 5481,8506 5444,8406 5421,8337
 Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9189,5184 9185,5271 9182,5332 9171,5397 9147,5534
@@ -460,11 +460,12 @@ Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8770 7642,8815 7570,8863
 #: by: Andreas Mühlhausen: vvv
 Heerstr.: schlecht passierbar	3nocross -4050,11752 -3894,11709 -3711,11659
 Thielallee: nicht passierbarer Mittelstreifens	3nocross 2560,5044 2587,4965 2615,4885
-Mollstr.: Straßenbahntrasse	3nocross 11456,13286 11300,13390 11275,13407
-Otto-Braun-Str.: Straßenbahntrasse	3nocross 11723,13630 11654,13541 11559,13420 11547,13403 11477,13313 11456,13286
-Otto-Braun-Str.: Mittelstreifen	3nocross 11378,13166 11307,13057 11283,13021 11236,12946
-Otto-Braun-Str.: Mittelstreifen	3nocross 11456,13286 11477,13313 11547,13403 11559,13420 11654,13541 11723,13630
+Mollstr.: Straßenbahntrasse	3nocross 11446,13294 11300,13390 11275,13407
+Otto-Braun-Str.: Straßenbahntrasse	3nocross 11723,13630 11646,13546 11550,13427 11535,13411 11464,13321 11446,13294
+Otto-Braun-Str.: Mittelstreifen	3nocross 11368,13170 11298,13063 11275,13026 11228,12951
+Otto-Braun-Str.: Mittelstreifen	3nocross 11446,13294 11464,13321 11535,13411 11550,13427 11646,13546 11723,13630
 #: by: ^^^
+Karl-Marx-Allee: Mittelstreifen	3nocross 11228,12951 11295,12915 11540,12795 11635,12745
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Neustädtische Kirchstr.: An der US-Botschaft	3nocross 9100,12627 9112,12499 9126,12413 9141,12320
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -474,6 +475,7 @@ Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4789,5079
 Birkbuschstr.: unbequem zu passieren	3 4789,5079 4807,5131 4839,5167
 Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4839,5167 4807,5131 4879,5017
 #: by: ^^^
+Hauptstr.: Mittelstreifen	3nocross 6687,8385 6765,8480 6912,8617 6990,8685
 #
 ####################################################################
 #
@@ -627,8 +629,6 @@ Naumannstr. unter der S-Bahn-Brücke: noch Bauarbeiten	2:inwork 7716,8048 7717,77
 #: last_checked: 2005-07-31
 (Neue Naumannstr.) (noch in Bau)	2:inwork 7606,7611 7717,7759
 Französische Str. (Bauarbeiten)	1:inwork 9183,12076 9076,12054
-#: add_fragezeichen: mittlerweile geöffnet?
-Gertrud-Kolmar-Str./Cora-Berliner-Str. (Bauarbeiten am Holocaust-Denkmal)	2:inwork 8804,11838 8770,11971 8737,12098
 Goethestr. (Bauarbeiten)	1:inwork 4896,11345 5053,11343
 # als "Mitte 2006" gekennzeichnet
 Markgrafenstraße  Richtung Französische Straße zwischen Behrenstraße und Französische Straße, Bauarbeiten als Einbahnstraße eingerichtet, Dauer:  bis 01.07.2006	1:inwork 9636,12126 9626,12227
@@ -692,9 +692,9 @@ Bundesallee: Queren nicht möglich	3nocross 5360,8197 5359,8140 5357,8005
 Bregenzer Str.	1 4278,10262 4227,10014
 Mollstr.: Strassenbahn	3nocross 11839,13083 11867,13076 11905,13069
 Mollstr.: Strassenbahn	3nocross 11867,13076 11839,13083 11721,13142
-(Berolinastr.): Tor zum Spielplatz	BNP:10 11828,12995
-(Berolinastr.): Tor zum Spielplatz	BNP:10 11858,13056
-(Berolinastr.): Tor zum Spielplatz	BNP:10 11781,13019
+(Berolinastr.): Tor zum Spielplatz	BNP:10 11858,13029
+(Berolinastr.): Tor zum Spielplatz	BNP:10 11863,13053
+(Berolinastr.): Tor zum Spielplatz	BNP:10 11815,13045
 #: temporary:
 Hedwigskirchgasse: wg. Bauarbeiten gesperrt	2::inwork 9743,12239 9756,12139
 (Parkweg Am Karlsbad): tragen (ca. 10 Stufen)	0:40 8190,10960
@@ -702,7 +702,7 @@ Matthäikirchplatz	1 7934,11264 7956,11340 7973,11354
 Matthäikirchplatz	1 7973,11354 7984,11334 7962,11257
 Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30 6920,11064 6882,11061
 Potsdamerstr.: schwierig zu überqueren - besser Ampel benutzen	3nocross 7912,10945 7968,11048 7980,11070
-Grunewaldstr.: queren schlecht möglich	3nocross 6727,9229 6863,9254 6923,9266
+Grunewaldstr.: queren schlecht möglich	3nocross 6711,9225 6863,9254 6923,9266
 Adolf-Scheidt-Platz	1 8723,8100 8759,8071 8770,8018 8760,7976 8726,7944
 Rumeyplan	1 8682,7714 8799,7741 8894,7783 8940,7835
 Rumeyplan	1 8967,7821 8902,7763 8815,7722 8684,7688

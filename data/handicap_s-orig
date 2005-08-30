@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.55 2005/08/26 23:26:09 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.58 2005/08/30 20:56:52 eserte Exp eserte $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: XXX hier br‰uchte man keine zus‰tzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -205,7 +205,7 @@ Dieffenbach/Schˆnleinstr.: Bodenschwellen	q1 11148,9730 11346,9655 11541,9576 11
 (Gr¸nanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Fuﬂg‰nger	q2 17678,18171 17703,17990
 Erich-Steinfurth-Str.: Fuﬂg‰nger	q2 12656,11655 12596,11696
 Elbingeroder Weg: Hohe Bordsteine	q3 13178,9062 13146,9085
-(An der Apostelkirche - Kurf¸rstenstr.): Fuﬂg‰nger, Bordsteine	q3 7312,10496 7315,10537
+(An der Apostelkirche - Kurf¸rstenstr.): Fuﬂg‰nger, Bordsteine	q3 7312,10505 7315,10537
 Marie-Elisabeth-L¸ders-Steg: eng, Fuﬂg‰nger	q2 8415,12742 8551,12746
 Kleine Andreasstr.: Gehweg, Bordsteine	q3 12223,12137 12281,12124
 Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13468,12497 13484,12436 13472,12337
@@ -238,6 +238,8 @@ Beruner Str.: Rampen, Fuﬂg‰nger, U-Bahn-Ausgang	q3 20143,10731 20215,10554
 Helenenhof: enge Tore, Fuﬂg‰nger	q3 14495,11261 14395,11356
 F‰rberstr. - Uferweg: sehr eng	q2 21675,4989 21665,5035 21684,5079
 Uferweg, Mentzelpark: Fuﬂg‰nger	q1 21487,5425 21600,5221 21684,5079 21735,5003 21821,4918 21845,4875
+(Verl‰ngerte Franzˆsische Str.): nur langsam passierbar	q4 8892,12006 9076,12054
+Heinrich-Lassen-Park: Fuﬂg‰nger (aber Radfahren ist erlaubt!)	q1 6664,8787 6740,8682 6815,8691 6912,8617
 ######################### User Contributions #################################
 #: by: AndrÈ K‰ding
 Neustrelitzer Str.: kurvenreich	q1 16739,14733 16668,14765 16534,14740 16443,14825 16346,14750 16256,14828
@@ -345,17 +347,17 @@ Bissingzeile: Einspurig, eng bei Gegenverkehr	q1 8000,10879 8135,10784
 (Volkspark Friedrichshain, parallel zur Friedenstr.):Fuﬂg‰nger	q1 12386,13085 12387,13107 12344,13157 12194,13307 12148,13348 12088,13403 12005,13481 11943,13545 11857,13596 11823,13610 11772,13624
 (Weydemeyerstr.): Fuﬂg‰nger	q1 11905,12765 11873,12778 11851,12729
 (Weydemeyerstr.): Fuﬂg‰nger	q1 11978,12673 11987,12763 11918,12789
-(Karl-Marx-Allee): Fuﬂg‰nger	q1 11557,12869 11573,12860 11667,12811
-(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11407,12945 11315,12904
+(Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11557,12869 11573,12860 11667,12811
+(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11419,12944 11362,12964 11295,12915
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger	q1 11573,12860 11540,12795
-(Berolinastr.): Fuﬂg‰nger	q1 11776,12908 11821,12885 11937,12826
-(Berlolinastr.): Fuﬂg‰nger	q1 11776,12908 11821,12885 11840,12928 11863,12975 11979,12917
-(Berolinastr.): Fuﬂg‰nger	q1 11863,12975 11828,12995
-(Berolinastr.): Fuﬂg‰nger	q1 11781,13019 11681,13071
-(Berolinastr.): Weg am Spielplatz vorbei	q2 11828,12995 11781,13019
-(Berolinastr. - Mollstr.): Fuﬂg‰nger	q1 11828,12995 11858,13056 11867,13076
-(Berolinastr. - Mollstr.): Fuﬂg‰nger	q1 11570,12960 11681,13161
-(Lichtenberger Str.): Fuﬂg‰nger	q1 12052,12888 12028,12668
+(Berolinastr.): Fuﬂg‰nger	q1 11834,12902 11862,12889 11942,12839
+(Berlolinastr.): Fuﬂg‰nger	q1 11834,12902 11862,12889 11880,12921 11921,12990 11983,12949
+(Berolinastr.): Fuﬂg‰nger	q1 11921,12990 11858,13029
+(Berolinastr.): Fuﬂg‰nger	q1 11815,13045 11700,13102
+(Berolinastr.): Weg am Spielplatz vorbei	q2 11858,13029 11815,13045
+(Berolinastr. - Mollstr.): Fuﬂg‰nger	q1 11858,13029 11863,13053 11867,13076
+(Berolinastr. - Mollstr.): Fuﬂg‰nger	q1 11608,12985 11681,13161
+(Lichtenberger Str.): Fuﬂg‰nger	q1 12054,12903 12028,12668
 (Verbindungsweg): Fuﬂg‰nger	q1 11660,13457 11711,13416
 Weinstr.: Fuﬂg‰nger, Wurzeln	q3 11793,13247 11909,13387
 Weinstr.: Fuﬂg‰nger	q1 11953,13437 11982,13471
@@ -368,7 +370,7 @@ Br¸der-Grimm-Gasse: Fuﬂg‰nger	q2 8351,11163 8343,11133
 (Linkstr. - Alte Potsdamer Str.): Fuﬂg‰nger, schmal	q3 8474,11350 8420,11385
 Voxstr.: Fuﬂg‰nger	q3 8309,11390 8390,11363
 Alice-Salomon-Park: Fuﬂg‰nger	q2 6851,9365 6743,9523
-(Geﬂlerstr. - Monumentenstr.): Fuﬂg‰nger, Kinder	q2 7972,8841 7964,9053 7992,9055 7990,9129
+(Geﬂlerstr. - Monumentenstr.): Fuﬂg‰nger, Kinder	q2 7970,8886 7964,9060 8009,9063 8014,9126
 (Loewenhardtdamm - Hˆhndorfstr.): Fuﬂg‰nger, Bordsteine, Schranken	q2 8318,8692 8429,8692
 (Weg d. Kol. Papestr.): Fuﬂg‰nger	q1 8220,8596 8243,8596 8243,8321 8264,8289
 (Weg d. Kol. Papestr.): sehr eng	q4 8243,8321 8264,8289
@@ -385,8 +387,8 @@ General-Pape-Str.: schieben; wg. Bauarbeiten nur enger Fuﬂweg	q4::inwork 7959,76
 Ernst-F¸rstenberg-Str.: Fuﬂg‰nger	q1 13014,14146 12996,14172
 An der Brauerei: Fuﬂg‰nger	q1 13291,13290 13283,13311 13378,13353
 An der Brauerei: Fuﬂg‰nger	q2 13283,13311 13241,13405
-(Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12846,12598 13092,12841 13053,12925 12909,13231
-(Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12791,12662 13053,12925
+(Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12846,12598 13092,12841 13041,12950 12909,13231
+(Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12772,12682 13041,12950
 Ritterstr.: wg. Bauarbeiten eng und Fuﬂg‰nger	q3::inwork 9755,11152 9927,11072
 Elisenstr.: Fuﬂg‰nger	q2 5808,5332 5822,5388
 Mittelstr. (Steglitz): Fuﬂg‰nger	q2 5119,5332 5203,5278

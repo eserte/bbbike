@@ -1,6 +1,6 @@
 #: title.de: Abbiegevorschriften usw.
 #: title.en: Path instructions etc.
-#: version: $Id: comments_path-orig,v 4.40 2005/08/28 09:55:00 eserte Exp eserte $
+#: version: $Id: comments_path-orig,v 4.41 2005/08/30 20:54:45 eserte Exp eserte $
 #:
 # Verwendete Kategorien:
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C; Bei entweder A oder C kann statt einer Koordinate 
@@ -45,8 +45,8 @@ Zossener - Brachvogelstr.: bereits an der Fußgängerampel Waterlooufer Straßensei
 Wendeschleife der Straßenbahn umfahren	CP; 22967,4144 23368,3894 24984,2928
 Potsdamer Str. - Am Karlsbad: auf linken Gehweg wechseln	PI; 7980,11070 7968,11048 8011,11014
 Am Karlsbad - Potsdamer Str.: entweder Fußgängerampel am Schöneberger Ufer oder an der Lützowstr. benutzen	PI; 8011,11014 7968,11048 7912,10945
-Otto-Braun-Str. - Wadzeckstr.: bereits am Alexanderplatz die Straßenseite wechseln	PI; 11236,12946 11283,13021 11307,13057 11378,13166 11291,13218
-Wadzeckstr. - Otto-Braun-Str.: zunächst auf linken Gehweg weiter fahren	PI; 11291,13218 11378,13166 11456,13286
+Otto-Braun-Str. - Wadzeckstr.: bereits am Alexanderplatz die Straßenseite wechseln	PI; 11228,12951 11275,13026 11298,13063 11368,13170 11291,13218
+Wadzeckstr. - Otto-Braun-Str.: zunächst auf linken Gehweg weiter fahren	PI; 11291,13218 11368,13170 11446,13294
 Sachsendamm - Naumannstr.: frühzeitig (z.B. am Vorarlberger Damm) auf den linken Radweg wechseln	PI; 7606,7611 7717,7564 7718,7641
 Naumannstr. - Sachsendamm: auf dem Sachsendamm zunächst den linken Radweg benutzen	PI; 7718,7641 7717,7564 7859,7486
 # XXX leider geht * nicht
@@ -91,7 +91,7 @@ Jerusalemer => Leipziger Str.: zunächst linken Gehweg benutzen (schlecht passier
 hinter dem "Alten Zollhaus" halbrechts abbiegen	PI; 10313,10084 10168,10085 10059,10147
 Frankfurter Allee - Kreutzigerstr.: Einfahrt in Hausdurchgang	CP; 14208,12235 14291,12220 14285,12190
 Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8172,11679 8223,11700 8326,11732 8436,11766 8489,11782 8571,11846
-Jüdenstr.: unbequemes Passieren der Grunerstr.	CS 10778,12493 10810,12448 10831,12371
+Jüdenstr.: unbequemes Passieren der Grunerstr.	CS 10778,12493 10800,12461 10831,12371
 Ausgeschildert: Panorama-Hotel Oberuckersee	CP; * 42509,91443 42546,91203
 Ausgeschildert: zum Golfplatz	CP; * 48923,171834 48858,172027
 Ausgeschildert: zum Golfplatz	CP; * 50181,171331 49996,171392 49668,171500
@@ -177,13 +177,13 @@ Kehlheimer/Würzburger: Queren der Lietzenburger über Kfz-Furt möglich	CP 5880,10
 #: XXX sollte nicht notwendig sein!
 Gottlieb-Dunkel-Str. - Carl-Weder-Park: halbrechts abbiegen	CP; 11322,5989 11456,6103 11655,6189
 rechts am Portal des Anhalter Bahnhofs vorbei	CP2; 8938,10872 8912,10846
-(Geßlerstr. - Monumentenstr.): Zufahrt neben der ehem. Tankstelle	CP2; 7972,8841 7964,9053
-(Geßlerstr. - Monumentenstr.): Zufahrt über den Parkplatz an der Sportanlage	CP2; 7990,9129 7992,9055
+(Geßlerstr. - Monumentenstr.): Zufahrt neben der ehem. Tankstelle	CP2; 7970,8886 7964,9060
+(Geßlerstr. - Monumentenstr.): Zufahrt über den Parkplatz an der Sportanlage	CP2; 8014,9126 8009,9063
 (Wintgensstr. - General-Pape-Str.): Zufahrt durch Tor im Wohnhaus, seitlich am Torgitter vorbei	CP2 8262,7945 8164,7946
 (Wintgensstr. - General-Pape-Str.): eine mögliche Route über das ehem. Werksgelände	CS 7945,7789 8164,7789 8164,7946
 rechts an der Tiefgarageneinfart vorbei, Vorsicht Kette!	CP; 13375,13986 13446,14030 13585,14117
 Vorsicht Kette! (auf Höhe der Tiefgarageneinfahrt)	CP; 13375,13986 13446,14030 13585,14117
-bereits an der Kirche auf den Gehweg wechseln	CP; 12649,12627 12509,12675 12609,12851
+bereits an der Kirche auf den Gehweg wechseln	CP; 12635,12629 12483,12682 12594,12866
 Etwa in Höhe Kino Kosmos abbiegen	CP2; 13563,12324 13555,12259
 Ludwig-Pick-Str. beginnt an der Zufahrt zur Tiefgarage Kosmos-Kino	CP2; 13563,12324 13568,12439
 Fritz-Schiff-Str. beginnt am Ende der Parallelstraße zur Karl-Marx-Allee	CP2; 13472,12337 13484,12436

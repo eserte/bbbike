@@ -1,10 +1,10 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.71 2005/08/26 23:26:08 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.74 2005/08/30 20:56:52 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
-Kanalstraßen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7873,11142 7993,11137 8124,11078 8241,11024
+Kanalstraßen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7873,11142 7993,11137 8092,11092 8241,11024
 Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8739,10404 8820,10379 9029,10366 9147,10359 9241,10324 9392,10260 9593,10238 9865,10286
 Gitschiner Str.	1 9865,10286 9948,10280
 Gitschiner Str.	1 9948,10280 9851,10219
@@ -125,7 +125,7 @@ An der Schillingbrücke	1 12056,11390 12055,11331
 An der Schillingbrücke	1 12026,11348 12056,11390
 Schulze-Delitzsch-Platz	1 11155,11750 11048,11745 11022,11782
 Schulze-Delitzsch-Platz	1 11022,11782 11155,11750
-Weydemeyerstr.	1 11905,13069 11910,13055 12062,12986 12052,12888
+Weydemeyerstr.	1 11905,13069 11910,13055 12062,12986 12054,12903
 Gipsstr.	1 10331,13397 10199,13446 10026,13521
 Dorotheenstr.	1 9867,12651 9723,12594 9574,12578 9454,12558 9323,12528
 Georgenstr.	1 9437,12662 9562,12679 9657,12694 9754,12775
@@ -393,14 +393,14 @@ Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3 19408,15007 
 Waterlooufer -> Brachvogelstr.: unbequem passierbarer Mittelstreifen	3 9812,10211 9849,10202 9884,10192
 Waterlooufer -> Zossener Str.: unbequem passierbarer Mittelstreifen	3 9812,10211 9849,10202 9851,10219
 Brachvogelstr. -> Zossener Str.: unbequem passierbarer Mittelstreifen	3 9884,10192 9849,10202 9827,10120
-Littenstr. -> Grunerstr.: Straßentunnelrampe	3 11056,12461 10959,12629 10887,12543
-Grunerstr. -> Littenstr.: Straßentunnelrampe	3 11062,12710 10959,12629 11056,12461
-Dircksenstr. -> Alexanderpl. [Dircksenstr./zur Grunerstr.]: Straßentunnelrampe	3 11156,12581 11062,12710 11030,12741
-Dircksenstr. -> Grunerstr.: Straßentunnelrampe	3 11156,12581 11062,12710 10959,12629
-Grunerstr. -> Dircksenstr.: Straßentunnelrampe	3 11134,12793 11062,12710 11156,12581
-Alexanderpl. [Dircksenstr./zur Grunerstr.] -> Dircksenstr.: Straßentunnelrampe	3 11030,12741 11062,12710 11156,12581
-Alexanderpl. [Dircksenstr./zur Grunerstr.] -> Grunerstr.: Straßentunnelrampe	3 11030,12741 11062,12710 11134,12793
-Grunerstr. -> Alexanderpl. [Dircksenstr./zur Grunerstr.]: Straßentunnelrampe	3 10959,12629 11062,12710 11030,12741
+Littenstr. -> Grunerstr.: Straßentunnelrampe	3 11056,12461 10954,12635 10878,12560
+Grunerstr. -> Littenstr.: Straßentunnelrampe	3 11057,12715 10954,12635 11056,12461
+Dircksenstr. -> Grunerstr.: Straßentunnelrampe	3 11156,12581 11057,12715 10954,12635
+Dircksenstr. -> Alexanderpl. [Dircksenstr./zur Grunerstr.]: Straßentunnelrampe	3 11156,12581 11057,12715 11030,12741
+Grunerstr. -> Dircksenstr.: Straßentunnelrampe	3 11134,12793 11057,12715 11156,12581
+Grunerstr. -> Alexanderpl. [Dircksenstr./zur Grunerstr.]: Straßentunnelrampe	3 10954,12635 11057,12715 11030,12741
+Alexanderpl. [Dircksenstr./zur Grunerstr.] -> Dircksenstr.: Straßentunnelrampe	3 11030,12741 11057,12715 11156,12581
+Alexanderpl. [Dircksenstr./zur Grunerstr.] -> Grunerstr.: Straßentunnelrampe	3 11030,12741 11057,12715 11134,12793
 Wilhelmsaue -> Bundesallee: Straßentunnelrampe	3 5346,8720 5510,8709 5505,8832
 Bundesallee -> Wilhelmsaue: Straßentunnelrampe	3 5513,8588 5510,8709 5346,8720
 Bundesallee -> Waghäuseler Str.: Absperrung auf dem Mittelstreifen	3 5510,8709 5513,8588 5660,8591
@@ -549,27 +549,31 @@ Südpark -> Heerstr.: schlecht passierbar	3 -3918,11803 -3894,11709 -3711,11659
 Thielallee -> Hittorfstr.: nicht passierbarer Mittelstreifens	3 2615,4885 2587,4965 2516,4936
 Hittorfstr. -> Thielallee: nicht passierbarer Mittelstreifens	3 2516,4936 2587,4965 2560,5044
 Mollstr. -> Mendelssohnstr.: Straßenbahntrasse	3 11275,13407 11300,13390 11322,13421
-Mendelssohnstr. -> Mollstr.: Straßenbahntrasse	3 11322,13421 11300,13390 11456,13286
-Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11613,13570 11654,13541 11723,13630
-Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Straßenbahntrasse	3 11559,13420 11654,13541 11613,13570
-Barnimstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11605,13387 11559,13420 11547,13403
-Otto-Braun-Str. -> Barnimstr.: Straßenbahntrasse	3 11654,13541 11559,13420 11605,13387
-Otto-Braun-Str. -> Mendelssohnstr.: Straßenbahntrasse	3 11477,13313 11547,13403 11511,13429
-Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11511,13429 11547,13403 11559,13420
-Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11444,13335 11477,13313 11547,13403
-Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Straßenbahntrasse	3 11456,13286 11477,13313 11444,13335
-Otto-Braun-Str. -> Berolinastr.: Mittelstreifen	3 11378,13166 11307,13057 11430,12984
-Berolinastr. -> Otto-Braun-Str.: Mittelstreifen	3 11430,12984 11307,13057 11283,13021
-Str.nbahntrasse -> Otto-Braun-Str.: Mittelstreifen	3 11191,13080 11283,13021 11307,13057
-Otto-Braun-Str. -> Str.nbahntrasse: Mittelstreifen	3 11236,12946 11283,13021 11191,13080
-Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Mittelstreifen	3 11444,13335 11477,13313 11547,13403
-Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Mittelstreifen	3 11456,13286 11477,13313 11444,13335
-Otto-Braun-Str. -> Mendelssohnstr.: Mittelstreifen	3 11477,13313 11547,13403 11511,13429
-Mendelssohnstr. -> Otto-Braun-Str.: Mittelstreifen	3 11511,13429 11547,13403 11559,13420
-Barnimstr. -> Otto-Braun-Str.: Mittelstreifen	3 11605,13387 11559,13420 11547,13403
-Otto-Braun-Str. -> Barnimstr.: Mittelstreifen	3 11654,13541 11559,13420 11605,13387
-Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Mittelstreifen	3 11613,13570 11654,13541 11723,13630
-Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Mittelstreifen	3 11559,13420 11654,13541 11613,13570
+Mendelssohnstr. -> Mollstr.: Straßenbahntrasse	3 11322,13421 11300,13390 11446,13294
+Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11613,13570 11646,13546 11723,13630
+Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Straßenbahntrasse	3 11550,13427 11646,13546 11613,13570
+Barnimstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11605,13387 11550,13427 11535,13411
+Otto-Braun-Str. -> Barnimstr.: Straßenbahntrasse	3 11646,13546 11550,13427 11605,13387
+Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11511,13429 11535,13411 11550,13427
+Otto-Braun-Str. -> Mendelssohnstr.: Straßenbahntrasse	3 11464,13321 11535,13411 11511,13429
+Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3 11444,13335 11464,13321 11535,13411
+Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Straßenbahntrasse	3 11446,13294 11464,13321 11444,13335
+Otto-Braun-Str. -> Berolinastr.: Mittelstreifen	3 11368,13170 11298,13063 11440,12976
+Berolinastr. -> Otto-Braun-Str.: Mittelstreifen	3 11440,12976 11298,13063 11275,13026
+Otto-Braun-Str. -> Str.nbahntrasse: Mittelstreifen	3 11228,12951 11275,13026 11191,13080
+Str.nbahntrasse -> Otto-Braun-Str.: Mittelstreifen	3 11191,13080 11275,13026 11298,13063
+Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Mittelstreifen	3 11444,13335 11464,13321 11535,13411
+Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Mittelstreifen	3 11446,13294 11464,13321 11444,13335
+Mendelssohnstr. -> Otto-Braun-Str.: Mittelstreifen	3 11511,13429 11535,13411 11550,13427
+Otto-Braun-Str. -> Mendelssohnstr.: Mittelstreifen	3 11464,13321 11535,13411 11511,13429
+Barnimstr. -> Otto-Braun-Str.: Mittelstreifen	3 11605,13387 11550,13427 11535,13411
+Otto-Braun-Str. -> Barnimstr.: Mittelstreifen	3 11646,13546 11550,13427 11605,13387
+Wohngebiet Mendelssohnstr. -> Otto-Braun-Str.: Mittelstreifen	3 11613,13570 11646,13546 11723,13630
+Otto-Braun-Str. -> Wohngebiet Mendelssohnstr.: Mittelstreifen	3 11550,13427 11646,13546 11613,13570
+Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3 11228,12951 11295,12915 11362,12964
+Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3 11362,12964 11295,12915 11540,12795
+Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3 11573,12860 11540,12795 11635,12745
+Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3 11295,12915 11540,12795 11573,12860
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9008,12485 9112,12499 9323,12528
 Dorotheenstr. -> Dorotheenstr.: An der US-Botschaft	3 9323,12528 9112,12499 9008,12485
 Mittelstr. -> Mittelstr.: An der US-Botschaft	3 9335,12442 9126,12413 9018,12400
@@ -579,6 +583,8 @@ Columbiadamm -> Am Rixdorfer Teich: unbequem zu überqueren (Bordsteine)	3 10796,
 Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4789,5079
 Birkbuschstr.: unbequem zu passieren	3 4789,5079 4807,5131 4839,5167
 Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4839,5167 4807,5131 4879,5017
+Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3 6815,8691 6912,8617 6990,8685
+Hauptstr. -> Parkweg Heinrich-Lassen-Park: Mittelstreifen	3 6765,8480 6912,8617 6815,8691
 tragen (Treppe)	0:30:-204 7945,12871
 tragen (zwei Mal, je fünf Stufen)	0:30:-149 5017,6387
 tragen (Treppen zur U-Bahnbrücke, je drei Stufen)	0:20:-40 2301,4917
@@ -690,7 +696,6 @@ Sperrung vor der amerikanischen Botschaft	2 9141,12320 9126,12413 9112,12499 910
 Naumannstr. unter der S-Bahn-Brücke: noch Bauarbeiten	2:inwork 7716,8048 7717,7759 7718,7641 7717,7564
 (Neue Naumannstr.) (noch in Bau)	2:inwork 7606,7611 7717,7759
 Französische Str. (Bauarbeiten)	1:inwork 9183,12076 9076,12054
-Gertrud-Kolmar-Str./Cora-Berliner-Str. (Bauarbeiten am Holocaust-Denkmal)	2:inwork 8804,11838 8770,11971 8737,12098
 Goethestr. (Bauarbeiten)	1:inwork 4896,11345 5053,11343
 Markgrafenstraße  Richtung Französische Straße zwischen Behrenstraße und Französische Straße, Bauarbeiten als Einbahnstraße eingerichtet, Dauer:  bis 01.07.2006	1:inwork 9636,12126 9626,12227
 Fußgängerbrücke über den Sachesendamm gesperrt, südliche Rampe ist aber befahrbar	2:inwork 7718,7641 7772,7610
@@ -748,20 +753,20 @@ Tübinger Str. -> Mainzer Str.: Queren nicht möglich	3 5420,8160 5359,8140 5177,8
 Tübinger Str. -> Bundesallee: Queren nicht möglich	3 5420,8160 5359,8140 5357,8005
 (Los-Angeles-Platz)	1s 5681,10696 5822,10609
 Bregenzer Str.	1 4278,10262 4227,10014
-Berolinastr. -> Mollstr.: Strassenbahn	3 11858,13056 11867,13076 11839,13083
-Mollstr. -> Berolinastr.: Strassenbahn	3 11905,13069 11867,13076 11858,13056
+Berolinastr. -> Mollstr.: Strassenbahn	3 11863,13053 11867,13076 11839,13083
+Mollstr. -> Berolinastr.: Strassenbahn	3 11905,13069 11867,13076 11863,13053
 Mollstr. -> Büschingstr.: Strassenbahn	3 11721,13142 11839,13083 11879,13133
 Büschingstr. -> Mollstr.: Strassenbahn	3 11879,13133 11839,13083 11867,13076
-(Berolinastr.): Tor zum Spielplatz	BNP:10:-240 11828,12995
-(Berolinastr.): Tor zum Spielplatz	BNP:10:-153 11858,13056
-(Berolinastr.): Tor zum Spielplatz	BNP:10:-242 11781,13019
+(Berolinastr.): Tor zum Spielplatz	BNP:10:-238 11858,13029
+(Berolinastr.): Tor zum Spielplatz	BNP:10:-168 11863,13053
+(Berolinastr.): Tor zum Spielplatz	BNP:10:-249 11815,13045
 Hedwigskirchgasse: wg. Bauarbeiten gesperrt	2::inwork 9743,12239 9756,12139
 (Parkweg Am Karlsbad): tragen (ca. 10 Stufen)	0:40:-140 8190,10960
 Matthäikirchplatz	1 7934,11264 7956,11340 7973,11354
 Matthäikirchplatz	1 7973,11354 7984,11334 7962,11257
 Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30 6920,11064 6882,11061
 Grunewaldstr. -> Klixstr.: queren schlecht möglich	3 6923,9266 6863,9254 6885,9132
-Klixstr. -> Grunewaldstr.: queren schlecht möglich	3 6885,9132 6863,9254 6727,9229
+Klixstr. -> Grunewaldstr.: queren schlecht möglich	3 6885,9132 6863,9254 6711,9225
 Adolf-Scheidt-Platz	1 8723,8100 8759,8071 8770,8018 8760,7976 8726,7944
 Rumeyplan	1 8682,7714 8799,7741 8894,7783 8940,7835
 Rumeyplan	1 8967,7821 8902,7763 8815,7722 8684,7688

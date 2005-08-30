@@ -1025,7 +1025,7 @@ EOF
        text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Kürbisfest, Straße gesperrt, Dauer: 09.10.2004 06:00 Uhr bis 10.10.2004 23:00 Uhr ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 6698,8385 6990,8685 7009,8705 7201,8870 7275,8960
+userdel	q4; 6687,8385 6765,8480 6912,8617 6990,8685 7009,8705 7105,8788 7201,8870 7275,8960
 EOF
      },
      { from  => 1097618400, # 2004-10-13 00:00
@@ -2417,10 +2417,10 @@ EOF
        text  => 'Eisenacher Str. (Schöneberg) in beiden Richtungen, zwischen Grunwaldstr. und Hauptstr. Veranstaltung, Straße vollständig gesperrt (bis 24.07.2005 23:00 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 6745,9106 6769,8996
-userdel	2 6745,9106 6727,9229
-userdel	2 7009,8705 6870,8872
-userdel	2 6769,8996 6870,8872
+userdel	2 6735,9103 6769,8996
+userdel	2 6735,9103 6711,9225
+userdel	2 7009,8705 6860,8878
+userdel	2 6769,8996 6860,8878
 EOF
      },
      { from  => 1122156000, # 2005-07-24 00:00
