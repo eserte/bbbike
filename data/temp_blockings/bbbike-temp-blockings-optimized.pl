@@ -201,7 +201,7 @@ push @temp_blocking,
          'until' => 1125525599,
          'text' => 'Hussitenstr. (Mitte) in Richtung Bernauer Str. zwischen Bernauer Str. und Usedomer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2005)',
          'from' => 1109365909,
-         'data' => 'userdel	q4; 9112,14771 9472,14478
+         'data' => 'userdel	q4; 9112,14771 9300,14615 9378,14553 9472,14478
 ',
          'type' => 'handicap'
        },

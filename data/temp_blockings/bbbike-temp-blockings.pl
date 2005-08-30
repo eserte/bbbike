@@ -1514,7 +1514,7 @@ EOF
        text  => 'Hussitenstr. (Mitte) in Richtung Bernauer Str. zwischen Bernauer Str. und Usedomer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 9112,14771 9472,14478
+userdel	q4; 9112,14771 9300,14615 9378,14553 9472,14478
 EOF
      },
      { from  => 1109628414, # 2005-02-28 23:06
@@ -2507,7 +2507,7 @@ EOF
      },
      { from  => 1123992000, # 2005-08-14 06:00
        until => 1132095600, # 2005-11-16 00:00 wurde am nächsten Tag wieder entfernt, aber im Tsp steht es drinnen
-       text  => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt (Swinemünder Brücke). Dauer: 15.08.2005, 06:00 Uhr bis ca. 15.11.2005 ',
+       text  => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist noch passierbar (Swinemünder Brücke). Dauer: 15.08.2005, 06:00 Uhr bis ca. 15.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 9494,15998 9583,15851
