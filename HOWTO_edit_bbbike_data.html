@@ -27,7 +27,7 @@ alink="#0000FF">
 
 <p class="COPYRIGHT">Copyright &copy; 2005 by Slaven Rezic</p>
 
-<p class="PUBDATE">$Date: 2005/08/28 21:21:30 $<br />
+<p class="PUBDATE">$Date: 2005/08/30 23:18:16 $<br />
 </p>
 
 <hr />
@@ -53,11 +53,11 @@ alink="#0000FF">
 
 <dt>8. <a href="#AEN149">Ein Exkurs über die verwendeten Attribute</a></dt>
 
-<dt>9. <a href="#AEN373">Alternative Editiermöglichkeiten</a></dt>
+<dt>9. <a href="#AEN376">Alternative Editiermöglichkeiten</a></dt>
 
-<dt>10. <a href="#AEN385">Neue Layer auf Basis der Berliner BBBike-Daten</a></dt>
+<dt>10. <a href="#AEN388">Neue Layer auf Basis der Berliner BBBike-Daten</a></dt>
 
-<dt>11. <a href="#AEN388">Eine komplett neue Datenbank aufbauen</a></dt>
+<dt>11. <a href="#AEN391">Eine komplett neue Datenbank aufbauen</a></dt>
 </dl>
 </div>
 
@@ -798,8 +798,9 @@ gekennzeichnet (Beispiel siehe unten).&#13;</p>
 
 <p>Es gibt einige vordefinierten Bilder wie <tt class="FILENAME">church.gif</tt> (für
 Kirchen), <tt class="FILENAME">monument.gif</tt> (für Denkmäler), <tt
-class="FILENAME">airport.gif</tt> (für Flughäfen) und <tt
-class="FILENAME">hospital.gif</tt> (für Krankenhäuser).&#13;</p>
+class="FILENAME">airport.gif</tt> (für Flughäfen), <tt class="FILENAME">hospital.gif</tt>
+(für Krankenhäuser) und <tt class="FILENAME">touristinfo.gif</tt> (für
+Touristenbüros).&#13;</p>
 
 <p>Beispiele:</p>
 
@@ -829,11 +830,13 @@ werden.&#13;<br />
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN338" name="AEN338">8.19. Fragezeichen</a></h2>
+<h2 class="SECT2"><a id="AEN339" name="AEN339">8.19. Fragezeichen</a></h2>
 
-<p>Zu den "Fragezeichen" gehören alle Strecken und Punkte, bei denen sich ein Autor nicht
-sicher ist. Bei den Datensätzen gibt es zwei Arten: öffentliche und nicht-öffentliche.
-Öffentliche Fragezeichen-Datensätze sind wie folgt sichtbar:</p>
+<p>Bei der Erfassung der Kartendaten kommt es häufiger vor, dass ein bestimmter Aspekt
+(z.B. die Strassenqualität oder eine Abbiegesituation) unklar bleibt. Der Autor kann dies
+kommentieren, indem er alle Strecken und Punkte einträgt, bei denen er sich nicht sicher
+ist. Bei den Einträgen gibt es zwei Arten: öffentliche und nicht-öffentliche. Öffentliche
+Fragezeichen-Datensätze sind wie folgt sichtbar:</p>
 
 <ul>
 <li>
@@ -880,8 +883,10 @@ stehen, werden nicht in die öffentliche <tt class="FILENAME">fragezeichen</tt>-D
         #: add_fragezeichen: ...
 </pre>
 
-übernimmt den nächsten Eintrag in die <tt class="FILENAME">fragezeichen</tt>-Datei. Diese
-sind aber im Edit-Modus nicht sichtbar.<br />
+in einer beliebigen Datendatei (<tt class="FILENAME">*-orig</tt>) übernimmt den
+nachfolgenden Eintrag in die <tt class="FILENAME">fragezeichen</tt>-Datei. Diese sind
+aber im Edit-Modus nicht sichtbar, da sie nicht auch in die Datei <tt
+class="FILENAME">fragezeichen-orig</tt> übernommen werden.<br />
 <br />
 </li>
 
@@ -927,11 +932,11 @@ angegeben werden.&#13;</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN373" name="AEN373">9. Alternative
+<h1 class="SECT1"><a id="AEN376" name="AEN376">9. Alternative
 Editiermöglichkeiten</a></h1>
 
 <div class="SECT2">
-<h2 class="SECT2"><a id="AEN375" name="AEN375">9.1. Schnelles Erfassen von Daten</a></h2>
+<h2 class="SECT2"><a id="AEN378" name="AEN378">9.1. Schnelles Erfassen von Daten</a></h2>
 
 <p>Es ist auch möglich, mit der Standardinstallation von BBBike (ohne CVS) Daten zu
 erfassen, die an der Daten-Maintainer geschickt werden können. Dazu muss einfach ein
@@ -952,7 +957,7 @@ BBBike-Datenformat verwendet wird, also</p>
 
 <div class="SECT2">
 <hr />
-<h2 class="SECT2"><a id="AEN380" name="AEN380">9.2. Direktes Editieren der Daten</a></h2>
+<h2 class="SECT2"><a id="AEN383" name="AEN383">9.2. Direktes Editieren der Daten</a></h2>
 
 <p>BBBike-Daten sind reine Textdateien und können mit einem normalen Texteditor
 bearbeitet werden. Allerdings wird dabei kein <tt class="FILENAME">datachange.log</tt>
@@ -965,7 +970,7 @@ BBBike-Datenformats siehe <a href="bbd.html" target="_top">hier</a>.&#13;</p>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN385" name="AEN385">10. Neue Layer auf Basis der Berliner
+<h1 class="SECT1"><a id="AEN388" name="AEN388">10. Neue Layer auf Basis der Berliner
 BBBike-Daten</a></h1>
 
 <p>TBD &#13;</p>
@@ -973,7 +978,7 @@ BBBike-Daten</a></h1>
 
 <div class="SECT1">
 <hr />
-<h1 class="SECT1"><a id="AEN388" name="AEN388">11. Eine komplett neue Datenbank
+<h1 class="SECT1"><a id="AEN391" name="AEN391">11. Eine komplett neue Datenbank
 aufbauen</a></h1>
 
 <p>Dazu sollte ein neues Datenverzeichnis parallel zu <tt

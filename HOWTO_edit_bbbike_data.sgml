@@ -9,7 +9,7 @@
 
 ]>
 
-<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.7 2005/08/28 21:21:30 eserte Exp $ -->
+<!-- $Id: HOWTO_edit_bbbike_data.sgml,v 1.8 2005/08/30 23:18:16 eserte Exp $ -->
 
 <article>
  <artheader>
@@ -28,7 +28,7 @@
    </author>
   </authorgroup>
 
-  <pubdate>$Date: 2005/08/28 21:21:30 $</pubdate>
+  <pubdate>$Date: 2005/08/30 23:18:16 $</pubdate>
 
   <copyright>
    <year>2005</year>
@@ -791,7 +791,8 @@ bzw. Transparenzkanal besitzen. Das Bild wird per
 <para>
 Es gibt einige vordefinierten Bilder wie <filename>church.gif</> (für
 Kirchen), <filename>monument.gif</> (für Denkmäler), <filename>airport.gif</>
-(für Flughäfen) und <filename>hospital.gif</> (für Krankenhäuser).
+(für Flughäfen), <filename>hospital.gif</> (für Krankenhäuser) und 
+<filename>touristinfo.gif</> (für Touristenbüros).
 
 <para>
 Beispiele:
@@ -823,10 +824,12 @@ Dateiname: <filename>sehenswuerdigkeit</>
 <title id="fragezeichen">Fragezeichen</>
 
 <para>
-Zu den "Fragezeichen" gehören alle Strecken und Punkte, bei denen sich
-ein Autor nicht sicher ist. Bei den Datensätzen gibt es zwei Arten:
-öffentliche und nicht-öffentliche. Öffentliche Fragezeichen-Datensätze
-sind wie folgt sichtbar:
+Bei der Erfassung der Kartendaten kommt es häufiger vor, dass ein 
+bestimmter Aspekt (z.B. die Strassenqualität oder eine Abbiegesituation) 
+unklar bleibt. Der Autor kann dies kommentieren, indem er alle Strecken 
+und Punkte einträgt, bei denen er sich nicht sicher ist. Bei den 
+Einträgen gibt es zwei Arten: öffentliche und nicht-öffentliche. 
+Öffentliche Fragezeichen-Datensätze sind wie folgt sichtbar:
 
 <itemizedlist>
 <listitem><para>Sie werden Benutzern des Web-Interfaces von BBBike in
@@ -867,8 +870,10 @@ Die Direktive
 <programlisting>
         #: add_fragezeichen: ...
 </programlisting>
-übernimmt den nächsten Eintrag in die <filename>fragezeichen</>-Datei.
-Diese sind aber im Edit-Modus nicht sichtbar.
+in einer beliebigen Datendatei (<filename>*-orig</>) übernimmt den 
+nachfolgenden Eintrag in die <filename>fragezeichen</>-Datei. 
+Diese sind aber im Edit-Modus nicht sichtbar, da sie nicht auch in 
+die Datei <filename>fragezeichen-orig</> übernommen werden.
 </>
 
 <listitem><para>
@@ -991,3 +996,4 @@ zu Konflikten führen.
 
 </sect1>
 </article>
+
