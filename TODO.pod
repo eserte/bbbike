@@ -16,6 +16,12 @@ Legend:
 
 =item * (M3)
 
+Hoehen-Layer reagiert nicht auf Reload. Workaround: Layer ausschalten,
+ptksh aufrufen, read_hoehe(-force => 1) aufrufen, Layer wieder
+einschalten.
+
+=item * (M3)
+
 Show more fields in route list (just like in web interface)
 
 =item * (H3)
