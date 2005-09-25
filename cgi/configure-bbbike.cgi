@@ -1,8 +1,8 @@
-#!/usr/bin/env perl
+#!/usr/bin/perl
 # -*- perl -*-
 
 #
-# $Id: configure-bbbike.cgi,v 1.5 2005/05/12 21:12:19 eserte Exp $
+# $Id: configure-bbbike.cgi,v 1.5 2005/05/12 21:12:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -12,6 +12,8 @@
 # Mail: slaven@rezic.de
 # WWW:  http://bbbike.sourceforge.net
 #
+
+use CGI::Carp qw(fatalsToBrowser);
 
 # NOTE: Should be same as in bbbike.cgi
 use FindBin;

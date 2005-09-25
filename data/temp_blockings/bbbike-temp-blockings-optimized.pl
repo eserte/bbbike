@@ -146,14 +146,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1125525600,
-         'text' => 'L 19; (Zechlinerhütte-Wesenberg (MVP)); zw. Abzw. Klein Zerlang u. LG (nö. Prebelowbrücke) Brückenneubau Vollsperrung 11.10.2004-31.08.2005 ',
-         'from' => 1097359200,
-         'data' => 'userdel	2 -26403,85177 -26316,84900
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -197,14 +190,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1125525599,
-         'text' => 'Hussitenstr. (Mitte) in Richtung Bernauer Str. zwischen Bernauer Str. und Usedomer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2005)',
-         'from' => 1109365909,
-         'data' => 'userdel	q4; 9112,14771 9300,14615 9378,14553 9472,14478
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1136069999,
          'text' => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
@@ -215,21 +201,13 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'until' => 1125525600,
-         'text' => 'K 6907; (B 1 Neuseddin-Ferch); OD Neuseddin, Kunersdorfer Str. Straßenbauarbeiten Vollsperrung 29.03.2005-31.08.2005 ',
-         'from' => 1111960800,
-         'data' => 'userdel	q4 -16605,-14239 -17374,-13449
-userdel	q4 -18080,-12637 -17374,-13449
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
-         'until' => 1128117600,
-         'text' => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt (Brücken- und Straßenarbeiten) (bis 30.09.2005)',
-         'from' => 1124742878,
+         'until' => 1127772000,
+         'text' => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt (Brücken- und Straßenarbeiten) (bis 26.09.2005)',
+         'from' => 1127503882,
          'data' => 'userdel	q4 25585,6050 25579,5980
 ',
          'type' => 'handicap'
@@ -336,14 +314,7 @@ userdel	q4 1916,-1090 1709,-953
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1126821599,
-         'text' => 'Danziger Str. (Prenzlauer Berg) Richtung Osten zwischen Schönhauser Allee und Knaackstr. Baustelle Fahrtrichtung gesperrt, Umleitung: Schönhauser Allee - Sredzkistr. - Knaackstr. (bis Mitte 09.2005)',
-         'from' => 1115589537,
-         'data' => 'userdel	q4; 10889,15045 11056,15009
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1141167600,
@@ -364,34 +335,13 @@ userdel	q4 1916,-1090 1709,-953
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1125525599,
-         'text' => 'L 15; (Fürstenberg-Rheinsberg); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-08.07.2005 ',
-         'from' => 1116194400,
-         'data' => 'userdel	q4 -15062,76937 -14623,77426
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1125525599,
-         'text' => 'L 222; (Gransee-Menz); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-08.07.2005 ',
-         'from' => 1116194400,
-         'data' => 'userdel	q4 -15062,76937 -14862,76637
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
        undef,
-       {
-         'until' => 1126821600,
-         'text' => 'K 7330; (L 23 nördl. Templin-Gandenitz); OD Gandenitz Kanal- und Straßenbau Vollsperrung 30.05.2005-15.09.2005 ',
-         'from' => 1117317600,
-         'data' => 'userdel	q4 11401,84932 11423,85183
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
+       undef,
        {
          'until' => 1136069999,
          'text' => 'Bouchéstraße (Treptow) in beiden Richtungen zwischen Kiefholzstraße und Am Treptower Park Fahrbahnerneuerung, Straße vollständig gesperrt (bis Ende 2005)',
@@ -454,23 +404,8 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1125698400,
-         'text' => 'L 793; (Schönhagen-Ludwigsfelde); zw. Abzw. Gröben und Siethen Straßenbauarbeiten Vollsperrung 29.06.2005-02.09.2005 ',
-         'from' => 1119909600,
-         'data' => 'userdel	2 -2542,-13926 -3801,-14252
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1125698400,
-         'text' => 'L 793; (Schönhagen-Ludwigsfelde); zw. OD Jütchendorf und Abzw. Gröben Straßenbauarbeiten Vollsperrung 29.06.2005-02.09.2005 ',
-         'from' => 1119909600,
-         'data' => 'userdel	2 -3694,-14508 -4077,-14595
-userdel	2 -4504,-14978 -4077,-14595
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => 1136069999,
@@ -484,22 +419,8 @@ userdel	2 -4504,-14978 -4077,-14595
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1125957600,
-         'text' => 'L 70; (Karl-Fiedler-Str.); OD Sperenberg, zw. Goethestr. u. Am Niederfließ Kompletter Straßenausbau Vollsperrung 25.04.2005-05.09.2005 ',
-         'from' => 1114293600,
-         'data' => '	q4 8576,-29378 8721,-29879
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1126796400,
-         'text' => 'Holzendorffstraße zwischen Rönnestraße und Gervinusstraße Brückenarbeiten, Straße gesperrt. Dauer: bis 15.09.2005, 17.00 Uhr ',
-         'from' => 1120088649,
-         'data' => 'userdel	2 3049,10719 3093,10594
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -557,23 +478,8 @@ userdel	2 -4504,-14978 -4077,-14595
        undef,
        undef,
        undef,
-       {
-         'until' => 1125439200,
-         'text' => 'B 112; (OU Neuzelle-OU Guben); Ber. Steinsdorf Vorwerk Bau Oder-Lausitz-Trasse Vollsperrung 29.08.2005-30.08.2005 ',
-         'from' => 1125180000,
-         'data' => 'userdel	2 98777,-43381 98337,-41604
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1125525600,
-         'text' => 'B96, Ortsdurchfahrt Altlüdersdorf gesperrt bis 31.08.2005 ',
-         'from' => 1123103274,
-         'data' => 'userdel	q4 -5146,69565 -5209,70040
-userdel	q4 -5209,70040 -4978,71109
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => 1128117600,
          'text' => 'K 6718; von OL Schernsdorf u. Kupferhammer in 3 Abschn. Straßenbauarbeiten Vollsperrung 03.08.2005-30.09.2005 ',
@@ -590,14 +496,7 @@ userdel	q4 -5209,70040 -4978,71109
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1126389600,
-         'text' => 'L 793; (Alfred-Kühne-Str.); OD Ludwigsfelde, am OA in Ri. A 10 Einbau Anschlussgleis Vollsperrung 24.08.2005-10.09.2005 ',
-         'from' => 1124748000,
-         'data' => 'userdel	2 2996,-10338 1764,-12480
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1132095600,
          'text' => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist noch passierbar (Swinemünder Brücke). Dauer: 15.08.2005, 06:00 Uhr bis ca. 15.11.2005 ',
@@ -606,14 +505,7 @@ userdel	q4 -5209,70040 -4978,71109
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1126303200,
-         'text' => 'Lauenburger Str. (Steglitz) in beiden Richtungen zwischen Lothar-Bucher-Str. und Lauenburger Platz Baustelle, Straße vollständig gesperrt (bis 09.09.2005)',
-         'from' => 1124137069,
-         'data' => 'userdel	2 6030,6165 6024,6080
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1128117600,
          'text' => 'B 179; (Spreewaldstr.); OD Zeesen, Kno. Karl-Liebknecht-Str. Straßenausbau Vollsperrung 15.08.2005-30.09.2005 ',
@@ -640,48 +532,11 @@ userdel	q4 -5209,70040 -4978,71109
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1125698400,
-         'text' => 'Luckauer Str. (Kreuzberg) in beiden Richtungen zwischen Oranienstr. und Waldemarstr. Baustelle, Straße vollständig gesperrt (bis02.09.2005)',
-         'from' => 1124486820,
-         'data' => 'userdel	2 11145,11042 11105,10945
-userdel	2 11105,10945 11039,10820
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1127512800,
-         'text' => 'Buschallee (Weißensee) in Richtung Berliner Allee zwischen Elsastr. und Hansastr. Baustelle, Fahrtrichtung gesperrt (bis 23.09.2005)',
-         'from' => 1124742735,
-         'data' => 'userdel	q4; 15918,16383 15871,16399 15432,16500
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1125871200,
-         'text' => 'K 7237; (L 40 Klein Kienitz-Rangsdorf); zw. Südringcenter Rangsdorf u. Klein Kienitz Straßenbauarbeiten Vollsperrung 22.08.2005-04.09.2005 ',
-         'from' => 1124575200,
-         'data' => 'userdel	2 26583,-15677 26612,-15094
-userdel	2 14327,-11767 15962,-10958
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1125784800,
-         'text' => 'B 167; (Frankfurter Str.); OD Seelow, zw. Breite Str. u. Berliner Str. Stadtfest Vollsperrung 03.09.2005-03.09.2005 ',
-         'from' => 1125612000,
-         'data' => 'userdel	q4 76771,15413 77081,14637
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1126044000,
-         'text' => 'K 6422; (Eggersdorfer Str.); OL Petershagen, unbeschrankter Bahnübergang Instandsetzungsarb. Vollsperrung 04.09.2005-06.09.2005 ',
-         'from' => 1125698400,
-         'data' => 'userdel	2 35900,13643 36716,13979
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        undef,
        {
          'until' => 1129413600,
@@ -691,11 +546,184 @@ userdel	2 14327,-11767 15962,-10958
 ',
          'type' => 'handicap'
        },
+       undef,
+       undef,
        {
-         'until' => 1125698400,
-         'text' => 'Fähre Cauth K 6910 Straße der Einheit bis 02.09.2005 außer Betrieb ',
-         'from' => 1125351382,
-         'data' => 'userdel	2 -17703,-6990 -17643,-7028
+         'until' => 1167605999,
+         'text' => 'Florastr. (Pankow) Berliner Str. in Richtung Mühlenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
+         'from' => 1125608201,
+         'data' => 'userdel	q4; 10459,17754 10722,17940 10846,17992
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1136069999,
+         'text' => 'Wegedornstraße (Adlershof) Richtung Rudow, zwischen Rudower Chaussee und Ernst-Ruska-Ufer Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
+         'from' => 1127508095,
+         'data' => 'userdel	q4 18927,2431 18925,2700
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1131750000,
+         'text' => 'B 102; zw. Kampehl und B 5, Bückwitz Bau Kreisverkehrsplatz Vollsperrung 07.09.2005-11.11.2005 ',
+         'from' => 1125957600,
+         'data' => 'userdel	2 -53139,50022 -54295,49682
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1204326000,
+         'text' => 'B 103; (Kyritzer Chaussee); OD Pritzwalk, zw. Fritz-Reuter-Str. u. Havelberger Str. Bau OU B189n halbseitig gesperrt; Einbahnstraße 15.09.2005-29.02.2008 ',
+         'from' => 1126648800,
+         'data' => 'userdel	q4 -74489,80545 -74038,78181
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1128031200,
+         'text' => 'B 112; (Beeskower Str.); OD Eisenhüttenstadt Asphaltarbeiten halbseitig gesperrt; Einbahnstraße 28.09.2005-29.09.2005 ',
+         'from' => 1127772000,
+         'data' => 'userdel	q4 94350,-26678 94796,-26727
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1129413600,
+         'text' => 'B 112; (Guben-Eisenhüttenstadt); OD Neuzelle Deckenerneurung Vollsperrung 04.10.2005-15.10.2005 ',
+         'from' => 1128290400,
+         'data' => 'userdel	q4 96492,-34347 95945,-34062
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1132959600,
+         'text' => 'B 166; (Zichow-Gramzow); OD Gramzow Kanal- und Straßenbau Vollsperrung 20.09.2005-25.11.2005 ',
+         'from' => 1127080800,
+         'data' => 'userdel	q4 50109,89725 49930,89857
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1130799600,
+         'text' => 'B 179; (Karl-Liebknecht-Str.); OD Zeesen, zw. Spreewaldstr. u. Weidendamm Straßenausbau Vollsperrung 19.09.2005-31.10.2005 ',
+         'from' => 1126994400,
+         'data' => 'userdel	2 26473,-14543 26612,-15094
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1128722400,
+         'text' => 'B 188; westl. Rathenow, zw. Kreisel u. Abzw. Großwudicke Straßenanbindung B188n Vollsperrung 19.09.2005-07.10.2005 ',
+         'from' => 1126994400,
+         'data' => 'userdel	2 -67681,19301 -67871,19214
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1134687600,
+         'text' => 'B 198; (Günterberg-Gramzow); bei Schmiedeberg, Brücke über Mühlengraben Brückenersatzneubau Vollsperrung 15.09.2005-15.12.2005 ',
+         'from' => 1126648800,
+         'data' => 'userdel	2 46677,82770 47081,83093
+userdel	2 47081,83093 47137,83456
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1130623200,
+         'text' => 'B 198; zw. Prenzlau und Bietikow grundh.Straßenbau Vollsperrung 10.10.2005-29.10.2005 ',
+         'from' => 1128808800,
+         'data' => 'userdel	2 42775,98487 43126,98186
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'until' => 1128204000,
+         'text' => 'B 87; OD Mittweide Straßenbauarbeiten Vollsperrung 19.09.2005-01.10.2005 ',
+         'from' => 1126994400,
+         'data' => 'userdel	q4 60430,-38587 62112,-36752
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1130886000,
+         'text' => 'B 96; (Neuhof-Wünsdorf); Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung 28.10.2005-01.11.2005 ',
+         'from' => 1130364000,
+         'data' => 'userdel	2 16407,-29400 16379,-29446
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1136070000,
+         'text' => 'K 6424; (Dahlwitzer Landstr.-Münchehofe-B 1); OD Münchehofe Straßenausbau Vollsperrung 12.09.2005-31.12.2005 ',
+         'from' => 1126389600,
+         'data' => 'userdel	q4 28605,9637 26851,9005
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1128031200,
+         'text' => 'K 7226; zw. Neuhof und Sperenberg Straßenbauarbeiten Vollsperrung 28.09.2005-29.09.2005 ',
+         'from' => 1127772000,
+         'data' => 'userdel	2 12690,-30392 14671,-30092
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1130799600,
+         'text' => 'L 19; (Zechlinerhütte-Wesenberg (MVP)); zw. Abzw. Klein Zerlang u. LG (nö. Prebelowbrücke) Ersatzneubau Brücke Prebelow Vollsperrung 02.09.2005-31.10.2005 ',
+         'from' => 1125525600,
+         'data' => 'userdel	2 -26403,85177 -26316,84900
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1128117600,
+         'text' => 'L 201; (Nauener Chaussee); OD Falkensee, zw. F.-Ludwig-Jahn-Str. u. Innstr. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 14.09.2005-30.09.2005 ',
+         'from' => 1126562400,
+         'data' => 'userdel	q4 -12601,19517 -12139,18985
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1134687600,
+         'text' => 'L 22; (Oranienburger Str.); OD Gransee grundh. Straßenbau Vollsperrung 19.09.2005-15.12.2005 ',
+         'from' => 1126994400,
+         'data' => 'userdel	q4 -7696,66033 -7851,66418
+userdel	q4 -7873,66589 -7851,66418
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1129932000,
+         'text' => 'L 39; (Kolberg-Friedersdorf); OD Blossin, Haupstr. Straßenbauarbeiten Vollsperrung 04.10.2005-21.10.2005 ',
+         'from' => 1128290400,
+         'data' => 'userdel	q4 37885,-16100 37888,-15635
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1129240800,
+         'text' => 'L 513; (Ringchaussee); Krz. Burg Kolonie/ Naundorf Deckenerneuerung Vollsperrung 13.10.2005-13.10.2005 ',
+         'from' => 1129068000,
+         'data' => 'userdel	2 59792,-61720 60404,-61710
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1129413600,
+         'text' => 'L 541; (Suschow-Burg Kolonie); Krz. Burg Kolonie/ Naundorf Deckenerneuerung Vollsperrung 15.10.2005-15.10.2005 ',
+         'from' => 1129240800,
+         'data' => 'userdel	2 59792,-61720 60404,-61710
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1133391600,
+         'text' => 'L 75; (Karl-Marx-Str.); OD Großziethen Straßenbauarbeiten Vollsperrung 06.09.2005-30.11.2005 ',
+         'from' => 1125871200,
+         'data' => 'userdel	2 13225,-681 12988,1006
 ',
          'type' => 'gesperrt'
        }

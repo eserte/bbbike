@@ -1567,9 +1567,9 @@ EOF
 userdel	1 9028,12307 8804,12280
 EOF
      },
-     { from  => 1124742878, # 2005-08-22 22:34
-       until => 1128117600, # 2005-10-01 00:00
-       text  => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt (Brücken- und Straßenarbeiten) (bis 30.09.2005)',
+     { from  => 1127503882, # 2005-09-23 21:31
+       until => 1127772000, # 2005-09-27 00:00
+       text  => 'Dahlwitzer Landstr. - Bölschestr. (Köpenick) in beiden Richtungen an der Bahnbrücke Bölschestr. Baustelle, Straße vollständig gesperrt (Brücken- und Straßenarbeiten) (bis 26.09.2005)',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 25585,6050 25579,5980
@@ -2641,6 +2641,202 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -17703,-6990 -17643,-7028
+EOF
+     },
+     { from  => 1125460800, # 2005-08-31 06:00
+       until => 1125864000, # 2005-09-04 22:00
+       text  => 'Weitlingstraße zwischen Sophienstraße und Frankfurter Allee in beiden Richtungen gesperrt, Veranstaltung, Dauer: 01.09.2005. 06.00 Uhr bis 04.09.2005, 22.00 Uhr ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 16653,11251 16786,11668
+userdel	q4 16958,11778 16821,11743
+userdel	q4 16821,11743 16786,11668
+EOF
+     },
+     { from  => 1125608201, # 2005-09-01 22:56
+       until => 1167605999, # 2006-12-31 23:59
+       text  => 'Florastr. (Pankow) Berliner Str. in Richtung Mühlenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 10459,17754 10722,17940 10846,17992
+EOF
+     },
+     { from  => 1127508095, # 2005-09-23 22:41
+       until => 1136069999, # 2005-12-31 23:59
+       text  => 'Wegedornstraße (Adlershof) Richtung Rudow, zwischen Rudower Chaussee und Ernst-Ruska-Ufer Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 18927,2431 18925,2700
+EOF
+     },
+     { from  => 1125957600, # 2005-09-06 00:00
+       until => 1131750000, # 2005-11-12 00:00
+       text  => 'B 102; zw. Kampehl und B 5, Bückwitz Bau Kreisverkehrsplatz Vollsperrung 07.09.2005-11.11.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -53139,50022 -54295,49682
+EOF
+     },
+     { from  => 1126648800, # 2005-09-14 00:00
+       until => 1204326000, # 2008-03-01 00:00
+       text  => 'B 103; (Kyritzer Chaussee); OD Pritzwalk, zw. Fritz-Reuter-Str. u. Havelberger Str. Bau OU B189n halbseitig gesperrt; Einbahnstraße 15.09.2005-29.02.2008 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -74489,80545 -74038,78181
+EOF
+     },
+     { from  => 1127772000, # 2005-09-27 00:00
+       until => 1128031200, # 2005-09-30 00:00
+       text  => 'B 112; (Beeskower Str.); OD Eisenhüttenstadt Asphaltarbeiten halbseitig gesperrt; Einbahnstraße 28.09.2005-29.09.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 94350,-26678 94796,-26727
+EOF
+     },
+     { from  => 1128290400, # 2005-10-03 00:00
+       until => 1129413600, # 2005-10-16 00:00
+       text  => 'B 112; (Guben-Eisenhüttenstadt); OD Neuzelle Deckenerneurung Vollsperrung 04.10.2005-15.10.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 96492,-34347 95945,-34062
+EOF
+     },
+     { from  => 1127080800, # 2005-09-19 00:00
+       until => 1132959600, # 2005-11-26 00:00
+       text  => 'B 166; (Zichow-Gramzow); OD Gramzow Kanal- und Straßenbau Vollsperrung 20.09.2005-25.11.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 50109,89725 49930,89857
+EOF
+     },
+     { from  => 1126994400, # 2005-09-18 00:00
+       until => 1130799600, # 2005-11-01 00:00
+       text  => 'B 179; (Karl-Liebknecht-Str.); OD Zeesen, zw. Spreewaldstr. u. Weidendamm Straßenausbau Vollsperrung 19.09.2005-31.10.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 26473,-14543 26612,-15094
+EOF
+     },
+     { from  => 1126994400, # 2005-09-18 00:00
+       until => 1128722400, # 2005-10-08 00:00
+       text  => 'B 188; westl. Rathenow, zw. Kreisel u. Abzw. Großwudicke Straßenanbindung B188n Vollsperrung 19.09.2005-07.10.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -67681,19301 -67871,19214
+EOF
+     },
+     { from  => 1126648800, # 2005-09-14 00:00
+       until => 1134687600, # 2005-12-16 00:00
+       text  => 'B 198; (Günterberg-Gramzow); bei Schmiedeberg, Brücke über Mühlengraben Brückenersatzneubau Vollsperrung 15.09.2005-15.12.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 46677,82770 47081,83093
+userdel	2 47081,83093 47137,83456
+EOF
+     },
+     { from  => 1128808800, # 2005-10-09 00:00
+       until => 1130623200, # 2005-10-30 00:00
+       text  => 'B 198; zw. Prenzlau und Bietikow grundh.Straßenbau Vollsperrung 10.10.2005-29.10.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 42775,98487 43126,98186
+EOF
+     },
+     { from  => 1122156000, # 2005-07-24 00:00
+       until => 1127599200, # 2005-09-25 00:00
+       text  => 'B 273; (Potsdamer Str.); OD Bornim, zw. Amundsenstr. u. Lindstedter Weg Kanalarbeiten halbseitig gesperrt; Einbahnstraße 25.07.2005-24.09.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -15527,795 -16640,1304
+EOF
+     },
+     { from  => 1126994400, # 2005-09-18 00:00
+       until => 1128204000, # 2005-10-02 00:00
+       text  => 'B 87; OD Mittweide Straßenbauarbeiten Vollsperrung 19.09.2005-01.10.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 60430,-38587 62112,-36752
+EOF
+     },
+     { from  => 1130364000, # 2005-10-27 00:00
+       until => 1130886000, # 2005-11-02 00:00
+       text  => 'B 96; (Neuhof-Wünsdorf); Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung 28.10.2005-01.11.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 16407,-29400 16379,-29446
+EOF
+     },
+     { from  => 1126389600, # 2005-09-11 00:00
+       until => 1136070000, # 2006-01-01 00:00
+       text  => 'K 6424; (Dahlwitzer Landstr.-Münchehofe-B 1); OD Münchehofe Straßenausbau Vollsperrung 12.09.2005-31.12.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 28605,9637 26851,9005
+EOF
+     },
+     { from  => 1127772000, # 2005-09-27 00:00
+       until => 1128031200, # 2005-09-30 00:00
+       text  => 'K 7226; zw. Neuhof und Sperenberg Straßenbauarbeiten Vollsperrung 28.09.2005-29.09.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 12690,-30392 14671,-30092
+EOF
+     },
+     { from  => 1125525600, # 2005-09-01 00:00
+       until => 1130799600, # 2005-11-01 00:00
+       text  => 'L 19; (Zechlinerhütte-Wesenberg (MVP)); zw. Abzw. Klein Zerlang u. LG (nö. Prebelowbrücke) Ersatzneubau Brücke Prebelow Vollsperrung 02.09.2005-31.10.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -26403,85177 -26316,84900
+EOF
+     },
+     { from  => 1126562400, # 2005-09-13 00:00
+       until => 1128117600, # 2005-10-01 00:00
+       text  => 'L 201; (Nauener Chaussee); OD Falkensee, zw. F.-Ludwig-Jahn-Str. u. Innstr. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 14.09.2005-30.09.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -12601,19517 -12139,18985
+EOF
+     },
+     { from  => 1126994400, # 2005-09-18 00:00
+       until => 1134687600, # 2005-12-16 00:00
+       text  => 'L 22; (Oranienburger Str.); OD Gransee grundh. Straßenbau Vollsperrung 19.09.2005-15.12.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -7696,66033 -7851,66418
+userdel	q4 -7873,66589 -7851,66418
+EOF
+     },
+     { from  => 1128290400, # 2005-10-03 00:00
+       until => 1129932000, # 2005-10-22 00:00
+       text  => 'L 39; (Kolberg-Friedersdorf); OD Blossin, Haupstr. Straßenbauarbeiten Vollsperrung 04.10.2005-21.10.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 37885,-16100 37888,-15635
+EOF
+     },
+     { from  => 1129068000, # 2005-10-12 00:00
+       until => 1129240800, # 2005-10-14 00:00
+       text  => 'L 513; (Ringchaussee); Krz. Burg Kolonie/ Naundorf Deckenerneuerung Vollsperrung 13.10.2005-13.10.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 59792,-61720 60404,-61710
+EOF
+     },
+     { from  => 1129240800, # 2005-10-14 00:00
+       until => 1129413600, # 2005-10-16 00:00
+       text  => 'L 541; (Suschow-Burg Kolonie); Krz. Burg Kolonie/ Naundorf Deckenerneuerung Vollsperrung 15.10.2005-15.10.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 59792,-61720 60404,-61710
+EOF
+     },
+     { from  => 1125871200, # 2005-09-05 00:00
+       until => 1133391600, # 2005-12-01 00:00
+       text  => 'L 75; (Karl-Marx-Str.); OD Großziethen Straßenbauarbeiten Vollsperrung 06.09.2005-30.11.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 13225,-681 12988,1006
 EOF
      },
     );
