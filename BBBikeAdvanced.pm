@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.127 2005/08/28 19:35:19 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.128 2005/09/26 21:09:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -572,6 +572,12 @@ sub additional_layer_dialog {
 			       $p_cb->($abk);
 			   })->pack(-anchor => "w");
 	    }
+	    if ($p_draw{"$abk-sperre"}) {
+		$f->Button(-text => "Sperrungen $abk (" . $p_file{"$abk-sperre"} . ")",
+			   -command => sub {
+			       $p_cb->($abk . "-sperre");
+			   })->pack(-anchor => "w");
+	    }
 	}
     };
     $fill_pane->();
@@ -639,7 +645,7 @@ sub select_layers_for_net_dialog {
     $t->destroy if Tk::Exists($t);
 }
 
-
+# XXX missing "sperre" layer types
 sub choose_from_additional_layer {
     additional_layer_dialog
 	(-title => M"Straßen/Punkte auswählen",
@@ -678,10 +684,11 @@ sub delete_additional_layer {
 	my $seen = 0;
 	for my $i (1..MAX_LAYERS) {
 	    my $abk = "L$i";
-	    if ($str_draw{$abk} || $p_draw{$abk}) {
+	    if ($str_draw{$abk} || $p_draw{$abk} || $p_draw{"$abk-sperre"}) {
 		my(@files);
 		push @files, $str_file{$abk} if $str_file{$abk};
 		push @files, $p_file{$abk}   if $p_file{$abk};
+		push @files, $p_file{"$abk-sperre"} if $p_file{"$abk-sperre"};
 		my $files = "";
 		if (@files) {
 		    $files = "(" .join(",", @files) . ")";
@@ -698,6 +705,12 @@ sub delete_additional_layer {
 			     $p_draw{$abk} = 0;
 			     plot('p',$abk);
 			     delete $p_file{$abk};
+			 }
+			 if ($p_draw{"$abk-sperre"}) {
+			     $p_draw{"$abk-sperre"} = 0;
+			     plot('p',"$abk-sperre");
+			     delete $p_file{"$abk-sperre"};
+			     # XXX This should also undo the net changes
 			 }
 			 $f->after(20, sub {
 				       $delete_pane->();

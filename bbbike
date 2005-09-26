@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.188 2005/08/28 19:27:51 eserte Exp eserte $
+# $Id: bbbike,v 3.189 2005/09/26 21:15:31 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -190,7 +190,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.188 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.189 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -8822,7 +8822,12 @@ sub plot_sperre {
 					-tags => [$abk,$sub_cat,$ret->[Strassen::NAME], $abk.'-'.$pos]);
 		    }
 
-		    ($icon_x, $icon_y, $icon_anchor) = ($xm, $ym, 'sw');
+		    if ($is_car && $car_photo) {
+			$c->createImage($xm, $ym,
+					-image => $car_photo,
+					-anchor => "sw",
+					-tags => [$abk, $sub_cat,$ret->[Strassen::NAME], $abk.'-'.$pos]);
+		    }
 		}
 	    }
 

@@ -206,7 +206,7 @@ Schubertstr.: sandig	Q3 21806,6545 21833,6418 21978,6330
 Pablo-Neruda-Str: mäßiges Kopfsteinpflaster	Q2 22967,4144 23435,4179
 Flemingstr.: Kopfsteinpflaster	Q2 7315,12723 7126,12721
 Werftstr.: Kopfsteinpflaster	Q2 7369,13013 7340,12870 7315,12723
-Melanchthonstr.: Kopfsteinpflaster	Q2 7126,12721 6818,12786
+Melanchthonstr.: Kopfsteinpflaster	Q2 7126,12721 6941,12760 6818,12786
 Albrechtstr.: Kopfsteinpflaster	Q2 6377,4490 6505,4363
 Rembrandtstr.: Kopfsteinpflaster	Q2 6077,6790 6121,6851 6143,6853
 Körnerstr.: Kopfsteinpflaster	Q2 5767,6376 5598,6136 5466,5950 5481,5721 5481,5622 5480,5519
@@ -643,8 +643,8 @@ Augustastr.: Kopfsteinpflaster, OK	Q1 4235,3999 4548,4025
 Maxstr.: mäßiges Kopfsteinpflaster	Q2 7786,15785 7744,15831
 Maxstr.: teilweise gutes Kopfsteinpflaster, teilweise Asphalt	Q1 7744,15831 7631,15937
 Maxstr.: mäßiges Kopfsteinpflaster	Q2 7631,15937 7543,16016 7491,16072
-Nazarethkirchstr.: einige Straßenwellen	Q0 7543,16016 7441,15909 7198,15656
-Genter Str.: mäßiges Kopfsteinpflaster	Q2 7270,15307 7162,15436 6809,15798 6681,15928
+Nazarethkirchstr.: einige Straßenwellen	Q0 7543,16016 7441,15909 7354,15817 7198,15656
+Genter Str.: mäßiges Kopfsteinpflaster	Q2 7270,15307 7162,15436 6926,15675 6809,15798 6681,15928
 Am Walde: Richtung Westen schlechtes Kopfsteinpflaster	Q3; 17775,7874 17678,7850
 Oskarstr.: Richtung Süden schlechtes Kopfsteinpflaster	Q3; 17762,7931 17775,7874
 Prager Platz: gutes Kopfsteinpflaster	Q1 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
@@ -2113,7 +2113,7 @@ Am Festungsgraben: Kopfsteinpflaster	Q1 9842,12506 9739,12489
 Kuppenheimerstr.: Schotterweg	Q1 5823,8107 5824,8035
 (Herkulesufer - Von-der-Heydtstr.): Kleinpflaster	Q2 7140,11156 7118,11209
 (Geßlerstr. - Monumentenstr.): Verbundpflaster	Q1 7970,8886 7964,9060 8009,9063 8014,9126
-(zur Depothalle): Kopfsteinplaster	Q2 8389,9087 8409,8904 8376,8859
+(zur Depothalle): schlechtes Kopfsteinplaster	Q3 8389,9087 8409,8904 8376,8859
 Fritz-Reuter-Str. (Schöneberg): Kopfsteinpflaster	Q2 6621,8221 6814,8268
 Gutzkowstr.: Kopfsteinpflaster	Q2 6827,8204 6636,8157
 Gustav-Freytag-Str.	Q2 6807,8309 6814,8268 6827,8204 6842,8146
@@ -2424,7 +2424,7 @@ Flemingstr.: Verbundsteine	Q1 7315,12723 7331,12713
 Joachim-Karnatz-Allee: Asphalt	Q0 7091,12554 7167,12573 7207,12590 7415,12590 7475,12590
 Joachim-Karnatz-Allee: Asphalt	Q0 7167,12573 7156,12604
 Joachim-Karnatz-Allee: Asphalt	Q0 7195,12620 7207,12590
-Alice-Berend-Str.: Asphalt	Q0 7207,12590 7266,12617 7354,12692 7388,12724 7420,12752
+Alice-Berend-Str.: Asphalt	Q0 7207,12590 7266,12617 7353,12692 7388,12724 7420,12752
 Ingeborg-Drewitz-Allee: Asphalt	Q0 7367,12747 7388,12724 7418,12725 7538,12729
 Ingeborg-Drewitz-Allee: Asphalt	Q0 7395,12774 7420,12752 7539,12754
 Ingeborg-Drewitz-Allee: Asphalt	Q0 7538,12729 7539,12754
@@ -2449,7 +2449,7 @@ Otto-Dibelius-Str.: Asphalt	Q0 5187,12165 5250,12296 5315,12439
 Hannah-Karminski-Str.: Asphalt	Q0 5253,12079 5325,12234 5383,12359
 (südliches Spreeufer): verwahrlost	Q3 5383,12359 5426,12299
 Schleswiger Ufer: Kopfsteinpflaster 	Q2 5726,12230 5815,12331 5862,12385
-Schleswiger Ufer: Kopfsteinpflaster 	Q1 5862,12385 5904,12438 5968,12524
+Schleswiger Ufer: Kopfsteinpflaster 	Q1 5862,12385 5904,12438 5967,12525
 Cuxhavener Str.: Asphalt	Q1 5904,12438 5931,12396
 Holsteiner Ufer: Verbundsteine	Q1 6580,12775 6495,12854 6452,12828
 (Zufahrt Parkplätze Bartningallee): Kopfsteinpflaster	Q2 6491,12607 6396,12607 6307,12595 6200,12548 6159,12505
@@ -2487,7 +2487,7 @@ Rauschener Allee: Asphalt	Q0 -328,10971 -346,11121
 Johannisburger Allee: Asphalt	Q1 -651,10781 -484,10792 -459,10854
 Johannisburger Allee: Kopsteinpflaster	Q2 -459,10854 -428,10956
 Tapiauer Allee: Kopfsteinpflaster	Q2 -651,10781 -648,10820 -573,10903 -526,10985
-(Parkeweg Ortelsurger Allee): fester Waldweg	Q1 50,10910 37,11014 23,11137 21,11167
+(Parkweg Ortelsburger Allee): fester Waldweg	Q1 50,10910 37,11014 23,11137 21,11167
 (Parkweg Kranzallee): Asphalt	Q2 -526,10985 -535,11096
 Miltonweg: Asphalt	Q1 -865,10906 -896,10826 -890,10785
 Grethe-Weiser-Weg: Beton	Q0 -753,10918 -748,10892 -818,10839 -814,10796
@@ -2619,7 +2619,7 @@ Wacholderweg: Beton	Q0 -233,12872 -365,12788
 Wacholderweg: Verbundsteine	Q1 -365,12788 -286,12663 -264,12656 -247,12667 -238,12689 -248,12718
 Machandelweg: Kleinpflaster	Q1 -248,12718 -217,12778 -185,12822
 (Wacholderweg - Rominterallee): Asphalt, Bordsteine	Q0 -365,12788 -396,12749
-(Machandelweg - Rossiter Weg): Verbundsteine	Q1 77,12260 -130,12171
+(Machandelweg - Rossiter Weg): Verbundsteine	Q1 77,12260 -125,12173
 Rüsternallee (Charlottenburg): rauher Asphalt	Q1 738,12025 789,12053 863,12039
 Rüsternallee (Charlottenburg): rauher Asphalt mit Löchern	Q2 941,12020 1105,11973 1307,11916 1519,11853 1673,11814
 Ratzeburger Allee: rauher Asphalt	Q1 783,12162 789,12053
@@ -2705,4 +2705,4 @@ Willenburger Pfad: Waldweg	Q1 576,10729 673,10724
 Willenburger Pfad: Kopfsteinpflaster	Q3 673,10724 771,10719
 Bismarckallee: Beton	Q0 1514,8637 1478,8596
 Flinsberger Platz: Gehwegplatten, Bordsteine	Q0 2919,8582 2973,8569
-Egerstr.: Gehwegplatten	Q0 2357,8055 2401,8048
+Egerstr.: Gehwegplatten	Q0 2357,8055 2406,8050
