@@ -320,7 +320,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 7043,15793 7198,15656
-userdel	2 7043,15793 6914,15908
+userdel	2 7043,15793 6957,15869 6914,15908
 userdel	2 7198,15656 7288,15579
 userdel	2 6790,16018 6914,15908
 EOF
@@ -361,7 +361,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 7043,15793 7198,15656
-userdel	2 7043,15793 6914,15908
+userdel	2 7043,15793 6957,15869 6914,15908
 userdel	2 7198,15656 7288,15579
 userdel	2 6790,16018 6914,15908
 EOF
@@ -649,7 +649,7 @@ EOF
        text  => 'Bachstraße: In beiden Richtungen Störungen durch Rohrbruch, gesperrt bis Do 12:00 ',
        type  => 'handicap',
       data  => <<EOF,
-userdel	q4 6040,12480 5874,12165 5798,12021
+userdel	q4 6020,12492 5951,12353 5938,12281 5874,12165 5798,12021
 userdel	q4 5771,11887 5787,11966 5798,12021
 EOF
      },
@@ -1630,7 +1630,7 @@ EOF
        text  => 'Nennhauser Damm (Spandau) stadteinwärts zwischen Heerstr. und Döberitzer Weg Baustelle, Fahrtrichtung gesperrt (bis 09.2007)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 -8749,13269 -8662,13322 -8365,13294 -8014,13292
+userdel	1 -8671,13312 -8643,13383 -8358,13340 -8011,13351
 EOF
      },
      { from  => 1111524913, # 2005-03-22 21:55
@@ -2084,13 +2084,13 @@ EOF
        text  => '300 Jahre Charlottenburg, 17.06.2005 bis 19.06.2005',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 3076,12192 3038,12482
+userdel	2 3076,12192 3061,12300 3050,12394 3038,12482
 userdel	2 3076,12192 3091,12071
-userdel	2 3038,12482 2647,12427
-userdel	2 3038,12482 3280,12512
+userdel	2 3038,12482 2788,12447 2647,12427
+userdel	2 3038,12482 3191,12502 3280,12512
 userdel	2 3103,11968 3091,12071
-userdel auto	3 3365,12231 3076,12192 2902,12183
-userdel auto	3 2902,12183 3076,12192 3365,12231
+userdel auto	3 3365,12231 3232,12210 3076,12192 2902,12165 2898,12197
+userdel auto	3 2898,12197 2902,12165 3076,12192 3232,12210 3365,12231
 EOF
      },
      { from  => 1120180333, # undef XXX 2005-07-07 00:00

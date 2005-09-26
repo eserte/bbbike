@@ -35,7 +35,7 @@ Erkelenzdamm etc.	1 11089,10276 11021,10242 10955,10105
 Überführung Daimlerstr.	1 8651,2197 8588,2176 8537,2286 8606,2376
 Großer Stern	1 6725,12113 6754,12108 6799,12083 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6653,12067 6690,12104 6725,12113
 Ernst-Reuter-Platz	1 4770,11820 4867,11835 4906,11772 4897,11727 4842,11679 4780,11702 4747,11751 4770,11820
-Theodor-Heuss-Platz	1 1381,11335 1391,11434 1574,11379 1532,11280 1381,11335
+Theodor-Heuss-Platz	1 1381,11335 1403,11428 1574,11379 1532,11280 1450,11309 1381,11335
 # Bis Zufahrt "Am Westkreuz" können Radfahrer den Radweg in entgegengesetzter Richtung benutzen: 5840,7964 5880,8012
 Halenseestr.	1 2112,10488 2069,10330 2268,9976 2300,9883 2410,9777
 # zwischen Trabener Steg und Zufahrt zum Rasthof Avus ausgelassen
@@ -96,7 +96,7 @@ Breite Str. Pankow	1 10240,18193 10281,18241 10562,18387 10609,18384
 Breite Str. Pankow	1 10680,18380 10669,18336 10327,18177 10240,18193
 Heinrich-Mann-Platz.	1 9590,18548 9527,18517 9469,18570 9475,18617 9526,18648 9588,18610 9590,18548
 Edelweißstr.	1 8251,19937 7966,19968 7772,20050
-Angerburger Allee	1 -1524,11108 -1608,11133 -1966,11466
+Angerburger Allee	1 -1524,11108 -1608,11133 -1829,11337 -1895,11400 -1966,11466
 Edelhofdamm	1 3200,25429 2938,25317 2702,25223 2730,25298 2907,25363 3211,25484
 Antonienstr./Eichborndamm	1 3927,17909 4003,18308 4081,18677 4098,18762 4162,18891 4240,19019 4228,18873 4179,18652 4097,18288 4013,17901
 Spreestr.	1 17898,6049 17939,5968 17812,5726 17779,5694
@@ -208,7 +208,7 @@ Schweidnitzer Str	1 3202,9583 3223,9837
 Mansfelder Str.	1 4102,9164 4158,9109 4228,9093 4325,9082
 Johann-Georg-Str.	1 3108,10069 3170,10041 3347,9793
 Damaschkestr.	1 3132,10499 3013,10553
-Wundtstr.	1 2386,11183 2352,11041
+Herbartstr.	1 2386,11183 2352,11041
 Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
 Gervinusstr.	1 3587,10768 3631,10784
 #: note während Veranstaltungen und nachts von ca. 22 bis 7 Uhr gesperrt, mit Anhänger wegen des engen Südeinganges nicht befahrbar:
@@ -224,7 +224,7 @@ Gierkeplatz	1 3450,12240 3460,12270 3484,12280 3516,12273 3531,12252 3524,12222 
 Knaackstr.	1 11056,15009 11030,14979 11101,14768
 (Brückenstr. - Holzmarktstr.)	1 11388,12202 11347,12181
 Hagenplatz	1 1149,8538 1094,8398
-Branitzer Platz	1 1351,12021 1323,12059 1320,12099 1346,12124 1388,12130 1413,12111 1426,12062 1400,12032 1351,12021
+Branitzer Platz	1 1346,12053 1311,12084 1311,12122 1334,12152 1374,12164 1407,12134 1414,12091 1386,12058 1346,12053
 Reutlinger Str.	1 7676,4216 7601,4485
 Sybelstr.	1 4006,10585 4256,10583
 Sybelstr.	1 4006,10585 3883,10577
@@ -292,7 +292,7 @@ Adolfstr.	1 7796,15590 7817,15418
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12980,7597 13100,7626
 Karl-Marx-Platz	1 13100,7626 12991,7549
-Olympischer Platz	1 -151,11911 -454,11885 -460,11951 -165,12020 -67,11989
+Olympischer Platz	1 -157,11943 -496,11884 -514,11991 -187,12047 -99,12019
 Aristotelessteig	1 18452,9744 18419,9622 18655,9576
 Markelstr.	1 5268,6305 5034,6425
 Berlinickestr.	1 5088,5495 5016,5401
@@ -371,7 +371,7 @@ Björnsonstr	1s 10229,16653 10215,16527
 Eichhornstr.	1s 8232,11414 8258,11254
 Paul-Junius-Str.	1s 15084,12975 15085,13105
 Ahornallee	1s 1589,11483 1574,11379
-Lindenallee	1s 1407,11516 1391,11434
+Lindenallee	1s 1429,11523 1403,11428
 Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
 Billerbecker Weg	1s 1231,18690 1231,18731
 Alt-Tegel	1s 1551,20106 1691,20129 1778,20178 1923,20255
@@ -451,14 +451,14 @@ Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10621,
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5229,10716 5351,10760 5484,10810
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15392,12135 15437,12225 15502,12367
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3 15350,12270 15437,12225 15502,12367
-Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6790,16018 6914,15908 7043,15793
+Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6790,16018 6914,15908 6957,15869 7043,15793
 #del: Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14576,16069 14550,16161 14499,16341
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14603,15971 14619,15920 14650,15750
 Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16738,11878 16858,11860 16964,11845
 #: by: Kerstin Pantos:
 Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8770 7642,8815 7570,8863
 #: by: Andreas Mühlhausen: vvv
-Heerstr.: schlecht passierbar	3nocross -4050,11752 -3894,11709 -3711,11659
+Heerstr.: schlecht passierbar	3nocross -4063,11805 -3919,11761 -3707,11693
 Thielallee: nicht passierbarer Mittelstreifens	3nocross 2560,5044 2587,4965 2615,4885
 Mollstr.: Straßenbahntrasse	3nocross 11446,13294 11300,13390 11275,13407
 Otto-Braun-Str.: Straßenbahntrasse	3nocross 11723,13630 11646,13546 11550,13427 11535,13411 11464,13321 11446,13294
@@ -484,7 +484,7 @@ Am Tierpark: Straßenbahntrasse	3nocross 18628,10177 18561,10341 18446,10620
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 #
-tragen (Treppe)	0:30 7945,12871
+tragen (12 Stufen)	0:30 7942,12879
 tragen (zwei Mal, je fünf Stufen)	0:30 5017,6387
 tragen (Treppen zur U-Bahnbrücke, je drei Stufen)	0:20 2301,4917
 tragen (Treppen zur U-Bahnbrücke, je drei Stufen)	0:20 2181,4835
@@ -747,13 +747,12 @@ An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3nocross 6242,13953 
 Rathenower Str.: schwierig zu querender Mittelstreifen	3nocross 7192,13036 7207,13118 7148,13245
 Eichkatzweg	1 1137,9943 1020,9786 934,9672
 Lärchenweg	1 1038,10018 1083,9984 1137,9943 1238,9869
-Kühler Weg	1 828,9924 745,9814 596,9613
-schieben - einzelne Stufen	0:20 1316,8110
+schieben - einzelne Stufen	0:20 1412,8033
 tragen (4 x 12 Stufen)	0:180 874,8205
 schieben (steile Treppe mit seitlicher Rampe)	0:180 1176,7922
 schieben (steile Treppe mit seitlicher Rampe)	0:180 1310,7417
 Clayallee: Mittlestreifen wg. Leitplanke nicht zu queren	3nocross 1979,7460 1983,7550 1995,7565 2053,7634
-Clayallee: Mittelstreifen schlecht zu queren	3nocross 2129,7728 2114,7709 2053,7634
+Clayallee: Mittelstreifen schlecht zu queren	3nocross 2129,7728 2098,7688 2053,7634
 Am Zirkus	1 9226,12909 9192,13032 9145,13020 9118,13070
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12748
 Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10 8565,13580
@@ -761,13 +760,56 @@ tragen (ca. 20 Stufen)	0:45 8536,12758
 tragen (ca. 20 Stufen)	0:45 8490,12869
 tragen (ca. 20 Stufen)	0:45 8471,12904
 Hufelandweg	1s 8627,13092 8657,13117 8628,13351
-Fröhner Str.	1 -4310,11609 -4468,11525 -4582,11453
-Bocksfeldstr.	1 -4306,11670 -4075,11658
-Roedeliusweg	1 -4468,11525 -4454,11750
-Bollmannweg	1 -4454,11750 -4303,11729
-Weinmeisterhornweg	1s -4773,11199 -4609,11160
-Heerstr.	3nocross -4482,11888 -4451,11878 -4364,11850
-Heerstr.	3nocross -4364,11850 -4296,11826 -4050,11752
-tragen/schieben (40 Stufen, Rampe)	0:120 -4775,10978 -4814,10982
+Fröhner Str.	1 -4294,11673 -4413,11628 -4573,11545
+Bocksfeldstr.	1 -4300,11720 -4090,11707
+Roedeliusweg	1 -4413,11628 -4431,11779
+Bollmannweg	1 -4431,11779 -4298,11769
+Weinmeisterhornweg	1s -4789,11225 -4564,11180
+Heerstr.	3nocross -4500,11937 -4437,11919 -4310,11882
+Heerstr.	3nocross -4310,11882 -4278,11873 -4063,11805
+tragen/schieben (40 Stufen, Rampe)	0:120 -4768,11016 -4836,11028
 Theodor-Heuss-Weg	1s 9246,14518 9095,14344
 tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:40 9271,14562
+Tor	BNP:5 3326,12730
+Herderstr. (Charlottenburg)	1 4451,11558 4435,11343
+tragen (Treppe)	0:30 7957,12864
+Joachim-Karnatz-Allee	1 7167,12573 7156,12604
+Joachim-Karnatz-Allee	1 7195,12620 7207,12590
+Ingeborg-Drewitz-Allee	1 7395,12774 7420,12752 7539,12754 7538,12729 7418,12725 7388,12724 7367,12747
+tragen (Treppe)	0:30 5730,12264
+Altonaer Str.: Mittelstreifen schlecht zu queren	3nocross 6020,12492 6086,12446 6178,12387
+tragen (Treppe)	0:30 8160,13028
+tragen (Treppe)	0:30 8252,13033
+Hanseatenweg	1 6444,12536 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
+Heerstr.	3nocross -1269,11008 -1039,11034 -831,11060 -776,11067 -731,11073 -572,11092
+Heerstr.	3nocross -572,11092 -535,11096 -420,11110 -346,11121 -68,11156
+Heerstr.	3nocross -68,11156 21,11167 232,11190 442,11215 467,11219
+tragen (20 Stufen)	0:30 23,11137
+Oldenburgallee	1 454,11670 461,11455
+Brixplatz	1 419,12397 335,12343 215,12307
+Lerschpfad	1 2181,12276 2160,12370
+Gottfried-Keller-Str.	1 1697,11911 1792,11889
+tragen (5 Stufen)	0:20 3795,13541
+Schranke	BNP:5 3981,13292
+Tor (meist offen, sonst Fußgängerweg nehmen)	BNP:5 3824,14179
+Wiebestr.: (Privatweg)	2 4556,13219 4490,12990
+Spandauer Damm: queren nur mit tragen möglich	3nocross 3038,12482 3191,12502 3280,12512
+Bonhoefferufer	1 3216,12994 3154,12936 3194,12830 3324,12784
+tragen (16 Stufen)	0:40 4135,12685
+tragen (16 Stufen)	0:40 4140,12594
+Kaiserdamm: queren schlecht möglich	3nocross 2110,11426 2193,11434 2234,11440 2417,11465 2612,11491
+Kleine Markusstr.	1 12037,12092 11974,12110 11969,12054 12021,12037
+tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30 6218,12975
+tragen (30 Stufen)	0:45 5896,12590
+mehrere einzelne Stufen	0:20 5717,12337
+Karolingerplatz	1 1278,11087 1181,11136
+Karolingerplatz	1 1209,11212 1315,11179
+Ubierstr.	1 1315,11179 1278,11087
+tragen (12 Stufen)	0:40 2234,11304
+tragen (12 Stufen)	0:40 2294,11300
+Thüringer Allee: Privatstr.	2 1454,11164 1342,11020
+Bismarkallee: queren nicht möglich	3nocross 1554,8638 1577,8655 1632,8716
+Drängelgitter	BNP:10 1456,8856
+Drängelgitter	BNP:10 1407,8931
+Drängelgitter	BNP:10 1366,8986
+Drängelgitter	BNP:10 1330,9038

@@ -222,7 +222,7 @@ push @temp_blocking,
          'until' => 1191189599,
          'text' => 'Nennhauser Damm (Spandau) stadteinwärts zwischen Heerstr. und Döberitzer Weg Baustelle, Fahrtrichtung gesperrt (bis 09.2007)',
          'from' => 1111439519,
-         'data' => 'userdel	1 -8749,13269 -8662,13322 -8365,13294 -8014,13292
+         'data' => 'userdel	1 -8671,13312 -8643,13383 -8358,13340 -8011,13351
 ',
          'type' => 'gesperrt'
        },

@@ -75,10 +75,10 @@ Mehringbrücke	Br 9392,10260 9395,10233 9401,10199
 Großbeerenbrücke	Br 9141,10292 9147,10359
 Möckernbrücke	Br 8820,10379 8804,10314
 Glockenturmbrücke	Br -1863,11559 -1792,11625
-Schirwindter Brücke	Br -1483,11283 -1447,11396
-Passenheimer Brücke	Br -1313,11350 -1302,11276
-Flatowalleebrücke	Br -677,11507 -660,11443
-Heerstraßenbrücke	Br 467,11221 589,11241
+Schirwindter Brücke	Br -1483,11283 -1457,11357
+Passenheimer Brücke	Br -1327,11376 -1315,11300
+Flatowalleebrücke	Br -688,11540 -668,11464
+Heerstraßenbrücke	Br 467,11219 589,11234
 Brücke am Heiligentalhügel	Br 968,10510 1103,10552
 Messedammbrücke	Br 1341,10007 1457,10168
 Koenigsalleebrücke	Br 1661,8992 1688,9058
@@ -149,22 +149,22 @@ Lutherbrücke	Br 7039,12314 7053,12364 7064,12419
 Gerickesteg	Br 6690,12637 6732,12660 6765,12683
 Lessingbrücke	Br 6168,12846 6177,12920 6185,12968
 Hansabrücke	Br 5876,12585 5920,12556 5951,12536
-Wullenwebersteg	Br 5683,12319 5719,12253
+Wullenwebersteg	Br 5676,12323 5719,12253
 Beusselbrücke	Br 5217,14255 5224,14031
 Finsterwalder Brücke	Br 6337,21774 6420,21828
 Eichwerdersteg	Br 5535,24016 5609,23986
 Sickingenbrücke	Br 4195,13695 4275,13711
 Kaiserin-Augusta-Brücke	Br 4301,13213 4397,13218
-Spandauer-Damm-Brücke	Br 2417,12395 2228,12371 2128,12359
-Knobelsdorffbrücke	Br 2451,11754 2326,11739
+Spandauer-Damm-Brücke	Br 2417,12395 2228,12371 2160,12370
+Knobelsdorffbrücke	Br 2446,11776 2330,11762
 Goerdelersteg	Br 3670,14122 3619,14183 3600,14278
-Gotzkowskybrücke	Br 5244,12864 5287,12900 5316,12928
-Schloßbrücke	Br 3288,12700 3306,12750 3344,12825
+Gotzkowskybrücke	Br 5244,12864 5287,12900 5298,12910 5316,12928
+Schloßbrücke	Br 3288,12700 3306,12750 3324,12784
 Weltlinger Brücke	Br 2861,14731 3006,14724
 Mäckeritzbrücke	Br 1254,15825 1257,15704
-Fürstenbrunner Brücke	Br 1488,13454 1610,13380
+Fürstenbrunner Brücke	Br 1488,13454 1545,13418 1610,13380
 Rohrdammbrücke	Br 1193,13485 1159,13541 1124,13599
-Olympische Brücke	Br 86,12016 286,12051
+Olympische Brücke	Br 83,12030 262,12085
 Saatwinkler Steg	Br -1036,16593 -964,16686
 Gartenfelder Brücke	Br -302,15602 -303,15526
 Tegeler Brücke	Br -247,15982 -236,16043 -220,16110
@@ -203,7 +203,7 @@ Hermann-Gladenbeck-Brücke	Br 16934,3215 16981,3255
 Hobrechtbrücke	Br 12093,9783 12105,9800 12119,9823
 Thielenbrücke	Br 12569,9547 12584,9572 12591,9584
 General-Ganeval-Brücke	Br 2996,15771 3033,15694
-Moabiter Brücke	Br 6597,12764 6614,12801
+Moabiter Brücke	Br 6580,12775 6603,12831
 Markgraffbrücke	Br 16659,6902 16713,6839
 Monbijoubrücke	Br 9661,12876 9680,12916 9707,12974
 Eiserne Brücke	Br 9912,12623 9943,12642
@@ -288,8 +288,8 @@ Volksparksteg	Br 5531,8458 5417,8519
 Bösebrücke	Br 9998,16547 9883,16557 9816,16565
 Hinckeldeybrücke	Br 3285,15787 3216,15644
 Hinckeldeybrücke	Br 3406,15792 3336,15644 3332,15587
-Stößenseebrücke	Br -2482,11282 -2422,11263 -2326,11228
-Freybrücke	Br -3316,11537 -3163,11492
+Stößenseebrücke	Br -2476,11301 -2413,11283 -2317,11254
+Freybrücke	Br -3308,11565 -3159,11519
 B96a	Br 21668,982 21563,782
 Adlergestell/B96a	Br 21541,1739 21998,1239
 Putlitzbrücke	Br 6242,13928 6242,13953 6248,14185 6255,14310 6314,14659
@@ -344,3 +344,7 @@ Knesebeckbrücke	Br 1455,-335 1460,-372 1473,-420
 Hermann-Blankenstein-Str.	Tu 13886,13668 13858,13719
 (Fußgängertunnel Sybelstr.)	Tu 3800,10580 3761,10563 3712,10566
 (Durchfahrt Böschung Spreeufer)	Tu 8032,12889 8053,12871
+Siemenssteg	Br 4142,12581 4140,12594 4135,12685 4135,12715
+(Unterführung Schloßbrücke)	Tu 3383,12720 3326,12730 3263,12720
+(Goslaer Ufer - Am Bahnhof Jungfernheide)	Tu 4156,13914 4151,13961
+(Fußgängertunnel S-Bhf Jungfernheide)	Tu 3320,13796 3354,13659

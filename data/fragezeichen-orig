@@ -10,7 +10,7 @@ Wiesenstr.	? 8607,15426 8518,15506 8283,15727 8179,15829 8140,15859 7960,15801
 #: next_check: 2005-08-01
 Mollstr.	? 11905,13069 11867,13076 11839,13083 11721,13142 11681,13161 11557,13228 11446,13294
 Stralauer Str.	? 11351,12221 11304,12234 11139,12243 11094,12243 10946,12241 10825,12271 10780,12297 10732,12355
-Alt-Moabit zwischen Kirch- und Paulstraße	? 7192,13036 6882,13088 6786,13106 6685,13126
+Alt-Moabit zwischen Kirch- und Paulstraße	? 7192,13036 7000,13067 6882,13088 6757,13112 6661,13130
 Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 10109,12238 10068,12222 9959,12180
 #: next_check: 2005-09-01
 Köpenicker Str. (in Mitte und/oder in Kreuzberg?)	? 11155,11750 11242,11720 11574,11594 11807,11479 11943,11398 12026,11348
@@ -22,7 +22,7 @@ Ostseestr.	? 13098,15592 12924,15702 12743,15811 12554,15925 12091,16209
 Storkower Straße zwischen Kniprode- und Greifswalder Straße	? 13453,14678 12722,15105
 Grellstr.	? 12722,15105 12434,15272 12252,15376 11941,15586
 Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 12188,14321 12338,14532 12384,14600 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941 12722,15105 12743,15138 12886,15346 12976,15483 13098,15592 13332,15765
-Richard-Wagner-Str.	? 3844,11649 3837,11760 3810,11843 3782,12104 3763,12279
+Richard-Wagner-Str.	? 3844,11649 3837,11760 3810,11843 3785,12028 3782,12104 3770,12202 3763,12279
 #: last_checked: 2005-07-13
 Martin-Luther-Straße (oder die gesamte Straße, wo jetzt schon die Busspur ist?)	? 6468,8109 6467,8187 6465,8326 6470,8464 6471,8639 6470,8681
 Gorkistr.	? 4423,20848 4265,20799 3569,20583 3329,20538 2621,20404 2348,20353 2311,20348
@@ -34,7 +34,7 @@ Saargemünder Straße	? 2005,4772 1934,4788 1744,4812 1495,4850
 Pacelliallee	? 2585,5696 2594,5923 2607,6285 2609,6348 2659,6499 2711,6698 2714,6857 2723,7029
 #: by ^^^
 #: by Tagesspiegel 2004-07-25 (obige waren auch dabei) vvv
-Reichsstr.	? 1391,11434 1239,11567 1053,11735 906,11870 836,11935 653,12109 504,12293 448,12361 269,12576 147,12640 50,12695 -112,12866 -120,12915
+Reichsstr.	? 1403,11428 1308,11506 1220,11583 1133,11664 1033,11754 881,11893 818,11954 738,12025 653,12109 628,12138 481,12319 419,12397 329,12503 269,12576 137,12668 23,12739 -112,12866 -129,12947
 #: by ^^^
 #: by Berliner Kurier: vvv
 #: next_check: 2005-08-01
@@ -53,7 +53,6 @@ Verlängerung Am Nordgraben: wo genau, wie weit? Brücke unter der S-Bahn ist in B
 #: next_check: 2006-01-01
 Grenzweg: Brücke über die Spree soll 2006 fertig werden	?::inwork 17131,7131 16993,6975
 Wiederaufbau des Kaiserstegs in Planung	?::inwork 18375,5900 18462,6087
-Uferweg an der Kongreßhalle noch in Bau	?::inwork 7775,12631 7670,12576
 Verlängerung der Paul-Löbe-Str. Richtung Kongreßhalle/Spree noch in Bau	?::inwork 7851,12590 7670,12576
 Mauerpark: unter Umständen wird ein Streifen des Mauerparkweges asphaltiert; der Weg wird Teil von Berlin-Usedom	? 10333,14983 10238,15316 10186,15463 10122,15647
 Schulzendorfer Str.: laut Tagesspiegel wird in Zukunft hier das Kopfsteinpflaster durch Asphalt ersetzt	? -596,23009 -862,22946 -1254,22853 -1484,22799
@@ -86,8 +85,6 @@ Drängelgitter/Schranke	? 8810,14373
 	?::inwork 7866,13009 7867,13106
 	?::inwork 7945,13107 7867,13106
 #: XXX ^^^
-#: ein anonymer Eintrag mit "mäßig", einer von Nicola mit Asphalt Q0:
-Straße am ULAP: wird demnächst in Clara-Jaschke-Straße umbenannt	? 7779,13012 7764,13236
 #: next_check: 2005-12-01
 Alexanderufer: in Bau	?::inwork 8257,13049 8312,13296 8378,13425 8337,13541
 #: last_checked: 2005-05-01
@@ -101,9 +98,8 @@ Spree: ist dieser Spreearm wiederhergestellt worden?	? 43394,-2017 43296,-2181 4
 # Hier kommen die Fragezeichen-Strecken herein, die nicht bei einer
 # erweiterten Suche aufgenommen werden sollen.
 #
-#: by: Felix Beutler
-#: last_checked: 2005-08-19
-Unterbaumstr.: bislang nur der Fußweg freigegeben	? 8486,12918 8581,13013
+#: by: http://www.berlinonline.de/berliner-zeitung/berlin/486071.html
+Straße 13: wird demnächst zur Frank-Zappa-Str. umbenannt	? 18598,14575 18932,14652
 #: by: Andreas Mühlhausen:
 Heinrich-von-Gagern-Str., Yitzhak-Rabin-Str.: möglicherweise schlechte Radwege (Kopfsteinpflaster)	? 8063,12182 8119,12414 8122,12600
 #: last_checked: 2005-07-26
@@ -344,7 +340,6 @@ Basdorf - Bernauer Heide: passierbar (Bahnstrecke), Qualität, Kfz-los?	? 12887,3
 Zugbrücke/Schleuse?	? 35066,4548
 Zugbrücke?	? 32737,183789
 Liebigstr. - Frankfurter Allee: existiert eine Verbindung?	? 13905,12374 13885,12279
-Schloßstr (Charlottenburg): gibt es hier auch Radstreifen?	? 3038,12482 3076,12192 3091,12071 3103,11968
 O-Grüneberg-Weg: existiert eine Verbindung?	? 3278,12021 3177,12100 3091,12071
 (Naturlehrpfad): unbekannte Qualität	? 5692,23948 5609,23986 5535,24016 5216,24157
 Falkenwalde - Neu-Kleinow: nach den Bauarbeiten wahrscheinlich bessere Qualität, von Falkenwalde aus: guter Asphalt	? 49480,96389 49576,95796 49681,95541 49872,95222
@@ -451,7 +446,7 @@ Oberjägerweg: laut "Berliner Umland" gut geeigneter Radweg, im Mittelteil ohne K
 #XXX siehe qualitaet-orig: Mauerweg Spandau: laut "Berliner Umland" witterungsabhängige Strecke	? -6968,17717 -6965,17565 -7151,17330 -7175,16968
 #: XXX laut Stephanie: Beton, Q1, viele Fußgänger?
 Mauerweg Spandau: laut "Berliner Umland" witterungsabhängige Strecke	? -7107,16186 -7178,16066 -7211,15865 -7147,15551
-Mauerweg Spandau: laut "Berliner Umland" gut geeigneter Radweg	? -7322,12806 -7337,12293 -7153,12081 -5618,11246 -5487,11212
+Mauerweg Spandau: laut "Berliner Umland" gut geeigneter Radweg	? -7312,12863 -7337,12293 -7153,12081 -5618,11246 -5549,11221
 Am Park - Gutsstr. - Privatstr.: Durchfahrt möglich? Qualität?	? -9364,7189 -9128,7275 -8968,7328 -8768,7338 -8367,7717
 Mauerweg am Groß-Glienicker See: laut "Berliner Umland" witterungsabhängige Strecke	? -9128,7275 -9178,7165 -9175,7037 -9437,6887 -9490,6650 -9668,6171 -9665,5840 -9725,5559 -9797,5374
 Mauerweg Groß-Glienicke - Sacrower Landstr.: laut "Berliner Umland" witterungsabhängige Strecke	? -9430,4935 -9543,4625
@@ -532,7 +527,6 @@ Bäkepromenade: Qualität? Existiert eine Verbindung?	? -2618,-1473 -2800,-1484 -2
 Krausnick - Brand: Durchfahrt möglich? (Laut lbvs Vollsperrung)	? 40398,-40989 35178,-41015 33108,-41767
 Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2034,55227 -285,58256
 Kramerstr.: Qualität (laut ADFC-Karte gut geeignet)? Ab Kramersteg Richtung SO nur für Radfahrer offen? Wie ist die Anbindung Kramersteg/Uferpromenade?	? 4534,3456 4801,3370 5015,3292
-Humboldtstr. (Grunewald): Qualität?	? 2444,8919 2453,9156 2467,9428 2477,9551 2481,9606
 Kühleweinstr.: Qualität etc.?	? 8037,17167 7975,17563 7940,17878
 Jan-Petersen-Str.: Radwege (unklare Eintragung existiert)? Zugang zur Landsberger Allee vorhanden?	? 21022,16244 21195,16148 21107,15982 21079,15913 21037,15793 20943,15787 20800,15692
 von Raoul-Wallenberg-Str. bis Mehrower Allee über Felsensteinstr.: laut ADFC-Karte geeignet für Radfahrer, Einbahnstraße auch für Radfahrer gültig?	? 20401,16189 20543,16488 20775,16977
@@ -562,7 +556,6 @@ Birkenallee (Pankow): Qualität?	? 9750,20492 9655,20703
 Nordendstr.: laut ADFC-Karte westlicher Teil mäßig, östlicher Teil gut geeignet	? 10026,20576 9750,20492 9174,20316 8409,19956 8415,19910
 Schillingweg: laut ADFC-Karte mäßig bis gut geeignet	? 11514,24284 11326,23923 10889,23381 10775,23253 10396,23128 9890,22932
 Wriezener/Osloer Str.: ist das Abbiegen wegen der Straßenbahn möglich?	? 9210,16638
-Treppe zwischen Siegmunds Hof und Spreeuferweg?	? 5737,12281 5719,12253
 Neuwedeller Str.: Qualität?	? 12313,7852 12335,7770
 Laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgänger begehbar, laut <cn2fr0taoncnlu6s84inbhgpo8lq0u0bh2@4ax.com> sogar offizieller Bestandteil des Elbe-Radwegs	? -92087,-49506 -91387,-49350
 Weg entlang der Elbe: Qualität?	? -91387,-49350 -91150,-49775 -90062,-50750 -89709,-51230
@@ -679,7 +672,7 @@ Am Heidekampgraben: zurzeit Bauarbeiten (Grünzugumgestaltung), Durchfahrt nicht 
 Polizei in der Friesenstr.: genaue Gebäude, genaue Funktion?	F:? 9828,8934 9828,8725 10183,8707 10228,8790 10230,8916
 #: XXX laut anonymen Eintrag Radweg; keine Verbindung zum restlichen Netz:
 Hermsdorfer Str. (Hohen Neuendorf): Qualität?	? 621,29356 625,29868
-(Dorfstr. (Tiefwerder) - Heerstr.): Qualität?	? -2878,12193 -2953,12015 -2918,11678 -2821,11456 -2850,11394
+(Dorfstr. (Tiefwerder) - Heerstr.): Qualität?	? -2878,12193 -2953,12015 -2918,11678 -2821,11456 -2850,11423
 Försterweg: Qualität (wahrscheinlich ein holpriger Waldweg)?	? -823,20184 -571,19834 -475,19746 -384,19740 -250,19815 -146,19806 -9,19775 55,19792
 #: XXX: zwischen Einbecker Str. und Irenenstr.: teils Asphalt, teils Kopfsteinpflaster Q1?
 Wönnichstr.: Qualität?	? 16585,10650 16697,10984 16777,11216 16848,11421 16917,11642 16958,11778
@@ -765,8 +758,6 @@ Freischützstr.: Qualität?	? 13268,22002 13340,21948 13612,21806
 Dachsteinweg: verkehrsberuhigt?	? 10481,2549 10446,2373 10493,2318
 Ringstr.: Qualität zwischen Spindelmühler Weg und Drakestr.: Kopfsteinpflaster?	? 2701,3064 3050,3316 3184,3413 3375,3544 3507,3635
 Kiepertplatz: Qualität?	? 8528,1846 8606,1875
-Elisabeth-Abegg-Str. bis Lüneburger Str.: Verbindung vorhanden? Qualität?	? 7793,12764 7409,12739 7327,12721
-Elisabeth-Abegg-Str.: noch immer nicht ausgeschildert?	? 7936,12906 7793,12764
 #: XXX Martin Barghoorn hat KS angegeben, aber gleichzeitig "nur Fußweg" eingetragen
 Lückhoffstr.: Qualität (Kopfsteinpflaster?)?	? -2847,2893 -3022,2696 -3162,2564 -3190,2467 -3210,2375
 Betckestr.: Qualität?	? -3614,12529 -3236,12533 -3150,12545
@@ -892,8 +883,7 @@ Bootsbauerstr.: Qualität, Wegführung, Verbindung zum Paul-und-Paula-Ufer?	? 1513
 Umgehungschaussee: Wegführung, Qualität (überall breiter fester Waldweg)?	? 1149,7205 1168,7047 1176,6938 1170,6654 1139,6538 1074,6449 866,6328 477,6488 441,6435
 (Hüttenweg - Jagdschloß Grunewald): Wegführung, Qualität (fester Waldweg)?	? 869,6085 866,6328 880,6645
 (Waldweg Grunewald): Wegführung, Qualität (fester Waldweg)?	? 1512,6553 1364,6691
-Bettinastr.: Qualität korrekt (Asphalt Q0)?	? 932,8787 982,8796 1028,8888
-Kronberger Str.: Qualität korrekt (Asphalt Q0)?	? 2003,7836 2020,8266
+Kronberger Str.: Qualität korrekt (Asphalt Q0)?	? 1984,7839 1978,8087 1975,8204
 Kernhofer Str.: Wird der Abschnitt nach den Bauarbeiten für Kfz gesperrt?	?::inwork 15369,10921 15351,10866
 Nördlich der Laskerstr.: von Westen her immer offen (trotz Tor), schlechtes Kopfsteinpflaster. Wie geht es weiter?	? 14671,10734 14043,10928
 #: note: hier geht es wohl zu einem Discounter...
@@ -905,5 +895,34 @@ Bersarinplatz: ist hier eine Fußgängerampel?	? 13742,12538
 #: XXX: laut anonymen Eintrag, entgegen allen Stadtplan-Einträgen
 Schriftsetzerweg: Einbahnstraße?	? 15849,1807 16194,1509
 (nördliches Spreeufer): Noch im Bau	?::inwork 8245,13016 8315,13005 8396,12968 8465,12887
-Max-Urich-Str.: Qualität?	? 9041,14896 8953,14758
-Gartenplatz: Name korrekt, Qualität	? 8870,14637 8953,14758
+
+#: section ignorieren vvv
+Ilmenauer Str.: neu	? 2551,8183 2552,8419
+Carl-Ludwig-Schleich-Promenade: neu	? 2315,8431 2317,8616
+Carl-Ludwig-Schleich-Promenade: neu	? 2279,8638 2317,8616 2353,8636
+(Zum Hubertussee): neu	? 2190,8903 2155,8793 2214,8752 2268,8746 2327,8717
+(Am Hubertussee): neu	? 2299,8675 2233,8670 2153,8693 1949,8788 1902,8814 1823,8906
+(Spandauer Damm - Fürstenbrunnerweg): neu	? 1459,12475 1601,12908 1551,13377 1545,13418
+Quellenweg: neu	? 1551,13377 1506,13376 1301,13338 1219,13310 1171,13320 1070,13309 919,13281 755,13281
+Heinrich-Zille-Weg: neu	? 815,12653 1070,13309
+(Zugang U-Bhf. Olympiastadion): neu	? 77,12260 -130,12171
+#: section ^^^
+(Sömmeringstr. - Bonhoefferufer): vorhanden?	? 3735,12705 3588,12754 3511,12763 3528,12849 3517,12874 3487,12876 3422,12770
+(Spreeuferweg am Moabiter Werder): korrekter Verlauf, Qualität?	?::inwork 7967,12860 8034,12964 8161,13006
+(nördliches Spreeufer): beginnt es hier?	?::inwork 8587,12642 8612,12620 8746,12596
+(Treppe zum nördlichen Spreeufer): im Bau	?::inwork 8245,13016 8252,13033 8257,13049
+(Treppe zum nördlichen Spreeufer): im Bau	?::inwork 8160,13053 8160,13028 8161,13006
+(Kapelleufer - nördliches Spreeufer): im Bau	?::inwork 8110,13042 8034,12964
+Tharauer Allee: Qualität korrekt, Einbahnstr.?	? -1483,11283 -1634,11346 -1731,11425 -1829,11337
+(Scottweg - Tharauer Allee): exitiert Verbindung?	? -1403,11279 -1483,11283
+wohin führt hier der Parkweg, derzeit im Bau?	? 4449,12985 4490,12990 4533,12990
+prüfen: hier ist doch eine enge Fußgängerwendel?	?3670,14122 3619,14183
+Hier ist doch ein Uferweg parallel zur Kaiserin-Augusta-Allee, wo genau?	? 5185,13078 5166,13034 4947,13130 4717,13118 4608,13218
+(Müllerstr. - Gerichtstr.): Qualität korrekt?	? 7611,15286 7723,15417
+Plantagenstr. (Wedding): Qualität?	? 7540,15566 7796,15590 7881,15577 7979,15569
+Pasewalker Str. (Wedding): Qualität, Einbahn für Radler?	? 7891,15417 7881,15577
+Treppe zw. Uferweg und Altonaer vorh.?	? 5962,12553 5967,12525
+Verbindung Stülpnagelstr. - Knobelsdorffstr. vorh.?	? 2185,11701 2154,11762
+(Machandelweg - Rossiter Weg): Qualität korrekt?	? 77,12260 -130,12171
+Waldschulalle: auf Radweg ausweichen	?::inwork 799,10410 863,10363 1047,10225
+Soorstr.: hier ist doch Kopsteinpflaster?	? 1916,12358 1792,11889
