@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cmdbbbike,v 4.7 2004/12/14 01:40:20 eserte Exp $
+# $Id: cmdbbbike,v 4.11 2005/10/01 23:05:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -17,27 +17,27 @@ package BBBikeRouting::Cmdline;
 use FindBin;
 use lib ($FindBin::RealBin, "$FindBin::RealBin/lib");
 use BBBikeRouting;
-@ISA = 'BBBikeRouting';
 use strict;
 
-sub cmdline_input {
-    my $self = shift;
-
+sub parse_options {
+    my %o = (vehicle => "bike");
     if (eval { require Getopt::Long; 1 }) {
 	if (!Getopt::Long::GetOptions
-	    ("vehicle=s" => sub { $self->Context->Vehicle($_[1]) },
-	     "algorithm=s" => sub { $self->Context->Algorithm($_[1]) },
-	     "xs!" => sub { $self->Context->UseXS($_[1]) },
-	     "cache!" => sub { $self->Context->UseCache($_[1]) },
-	     "scope=s" => sub { $self->Context->Scope($_[1]) },
-	     "v" => sub { require Strassen; Strassen::set_verbose(1);
-			  $self->Context->Verbose(1),
-		      },
-	     "dumproute" => sub { $self->{DumpRoute} = 1 },
+	    (\%o,
+	     "vehicle=s",
+	     "algorithm=s",
+	     "xs!",
+	     "cache!",
+	     "scope=s",
+	     "v",
+	     "dumproute",
+	     "dumppath",
+	     "dumpbbd",
 	    )) {
 	    die <<EOF;
 Usage: $0 [-vehicle vehicle] [-[no]cache] [-[no]xs]
-        [-algorithm ...] [-scope ...] [-v] [-dumproute] start goal
+        [-algorithm ...] [-scope ...] [-v]
+	[-dumproute | -dumppath | -dumpbbd] start goal
 
 start and goal may be prefixed with \"city:\" to force cities instead of
 streets. start and goal may also be "standard" coordinates instead.
@@ -46,28 +46,55 @@ EOF
     } else {
 	warn "No Getopt::Long installed...\n";
     }
+    \%o;
+}
 
+sub new {
+    my($class, $routing) = @_;
+    bless { R => $routing }, $class;
+}
+
+sub cmdline_input {
+    my($self, $o) = @_;
+
+    my $r = $self->{R};
+    my %o = %$o;
+
+    if (defined $o{vehicle}) { $r->Context->Vehicle($o{vehicle}) }
+    if (defined $o{algorithm}) { $r->Context->Algorithm($o{algorithm}) }
+    if (        $o{xs}) { $r->Context->UseXS($o{xs}) }
+    if (        $o{cache}) { $r->Context->UseCache($o{cache}) }
+    if (defined $o{scope}) { $r->Context->Scope($o{scope}) }
+    if (	$o{v}) {
+	require Strassen;
+	Strassen::set_verbose(1);
+	$r->Context->Verbose(1);
+    }
+    if (        $o{dumproute}) { $self->{DumpRoute} = 1 }
+    if (        $o{dumppath}) { $self->{DumpPath} = 1 }
+    if (        $o{dumpbbd}) { $self->{DumpBBD} = 1 }
+    
     if (@ARGV < 2) {
 	print "Zu wenige Argumente: mindestens Start- und Zielstraße angeben!\n";
 	exit 1;
     }
     if (@ARGV == 2) {
-	$self->set_city_or_street($self->Start, $ARGV[0]);
-	$self->set_city_or_street($self->Goal,  $ARGV[1]);
+	$self->set_city_or_street($r->Start, $ARGV[0]);
+	$self->set_city_or_street($r->Goal,  $ARGV[1]);
     } elsif (@ARGV == 4) {
-	$self->Start->Street  ($ARGV[0]);
-	$self->Start->Citypart($ARGV[1]);
-	$self->Goal->Street   ($ARGV[2]);
-	$self->Goal->Citypart ($ARGV[3]);
+	$r->Start->Street  ($ARGV[0]);
+	$r->Start->Citypart($ARGV[1]);
+	$r->Goal->Street   ($ARGV[2]);
+	$r->Goal->Citypart ($ARGV[3]);
     } elsif (@ARGV == 3) {
-	$self->set_city_or_street($self->Start, shift @ARGV);
+	$self->set_city_or_street($r->Start, shift @ARGV);
 	if ($ARGV[0] =~ /^\d+$/) {
-	    $self->Start->Citypart(shift @ARGV);
+	    $r->Start->Citypart(shift @ARGV);
 	} elsif ($ARGV[1] =~ /^\d+$/) {
-	    $self->Goal->Citypart(pop @ARGV);
+	    $r->Goal->Citypart(pop @ARGV);
 	}
 	if (@ARGV == 1) {
-	    $self->set_city_or_street($self->Goal, shift @ARGV);
+	    $self->set_city_or_street($r->Goal, shift @ARGV);
 	} else {
 	    require Geography;
 	    my $geo = Geography->new('Berlin', 'DE');
@@ -75,33 +102,45 @@ EOF
 	    my(@cityparts) = keys %{ $geo->subcitypart_to_citypart };
 	    foreach (@cityparts) {
 		if ($_ =~ /^\Q$ARGV[0]\E/i) {
-		    $self->Start->Citypart ($ARGV[0]);
-		    $self->set_city_or_street($self->Goal, $ARGV[1]);
+		    $r->Start->Citypart ($ARGV[0]);
+		    $self->set_city_or_street($r->Goal, $ARGV[1]);
 		    last;
 		} elsif ($_ =~ /^\Q$ARGV[1]\E/i) {
-		    $self->set_city_or_street($self->Goal, $ARGV[0]);
-		    $self->Goal->Citypart($ARGV[1]);
+		    $self->set_city_or_street($r->Goal, $ARGV[0]);
+		    $r->Goal->Citypart($ARGV[1]);
 		    last;
 		}
 	    }
-	    if (!$self->Goal->Street && !$self->Goal->City) {
-		$self->set_city_or_street($self->Goal, $ARGV[0]);
-		$self->Goal->Citypart($ARGV[1]);
+	    if (!$r->Goal->Street && !$r->Goal->City) {
+		$self->set_city_or_street($r->Goal, $ARGV[0]);
+		$r->Goal->Citypart($ARGV[1]);
 	    }
 	}
     }
 }
 
+sub search {
+    my $self = shift;
+    my $r = $self->{R};
+    $r->search;
+}
+
 sub cmdline_output {
     my $self = shift;
+    my $r = $self->{R};
 
-    print $self->Start->Street;
+    if ($self->{DumpBBD}) {
+	print $r->path_to_bbd;
+	return;
+    }
+
+    print $r->Start->Street;
 #XXX
 #      if ($multi_from) {
 #  	print " ($from_citypart)";
 #      }
     print " - ";
-    print $self->Goal->Street;
+    print $r->Goal->Street;
 #      if ($multi_to) {
 #  	print " ($to_citypart)";
 #      }
@@ -109,16 +148,21 @@ sub cmdline_output {
 
     if ($self->{DumpRoute}) {
 	require Data::Dumper;
-	print Data::Dumper->new([$self->RouteInfo],[])->Indent(1)->Useqq(1)->Dump;
+	print Data::Dumper->new([$r->RouteInfo],[])->Indent(1)->Useqq(1)->Dump;
+    } elsif ($self->{DumpPath}) {
+	require Data::Dumper;
+	print Data::Dumper->new([$r->Path],[])->Indent(1)->Useqq(1)->Dump;
     } else {
 	print
 	    join("\n", map { sprintf("%-40s %s", $_->{Street}, $_->{Whole}) }
-		 @{ $self->RouteInfo} ), "\n";
+		 @{ $r->RouteInfo} ), "\n";
     }
 }
 
 sub set_city_or_street {
     my($self, $o, $s) = @_;
+    my $r = $self->{R};
+
     if ($s =~ /^(?:city|ort):(.*)$/) {
 	$o->City($1);
 	$o->Street(undef);
@@ -130,7 +174,7 @@ sub set_city_or_street {
 	my($long,$lat) = map { [ Karte::Polar::ddd2dms($_) ] } $Karte::Polar::obj->standard2map(split /,/, $s);
 	$o->Street(Karte::Polar::dms_human_readable("lat", @$lat) . ", " .
 		   Karte::Polar::dms_human_readable("long", @$long));
-	$self->fix_position($o);
+	$r->fix_position($o);
     } else {
 	$o->Street($s);
     }
@@ -140,13 +184,25 @@ return 1 if caller() or keys %Devel::Trace::; # XXX Tracer bug
 
 ######################################################################
 
-package main;
-
-my $routing = BBBikeRouting->new->init_context;
-bless $routing, 'BBBikeRouting::Cmdline'; # 5.005 compat
-
-$routing->cmdline_input();
-$routing->search();
-$routing->cmdline_output();
+{
+    my $o = BBBikeRouting::Cmdline->parse_options;
+    my $routing = BBBikeRouting->factory($o->{vehicle})->init_context;
+    my $cmd = BBBikeRouting::Cmdline->new($routing);
+    $cmd->cmdline_input($o);
+    $cmd->search;
+    $cmd->cmdline_output;
+}
 
 __END__
+
+=head1 NAME
+
+cmdbbbike - a very simple command line tool to BBBike
+
+=head1 SYNOPSIS
+
+    cmdbbbike Startstr Zielstr
+
+  ./cmdbbbike startstr zielstr -dumpbbd | ./miscsrc/bbd2mapservhtml.pl -local > /tmp/mapserver_route.html
+
+=cut

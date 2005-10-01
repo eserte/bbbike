@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.189 2005/09/26 21:15:31 eserte Exp $
+# $Id: bbbike,v 3.190 2005/10/01 22:34:09 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -190,7 +190,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.189 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.190 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4469,7 +4469,7 @@ read_sperre_tragen() unless $lowmem;
 plot_sperre() if $p_draw{'sperre'};
 activate_temp_blockings(1) if $do_activate_temp_blockings;
 
-if ($net_type =~ /^(us|r|rus)$/) {
+if ($net_type =~ /^(us|r|rus|wr)$/) {
     make_net();
 }
 
@@ -4792,6 +4792,7 @@ sub define_item_attribs {
 	 'UB' => '#000080', 	# U-Bahn, Zone B
 	 'U0' => '#a0a0b0', 	# U-Bahn in Bau
 	 'W'  => '#bad5f7', 	# Gewässer
+	 'WR' => '#404080',	# Wasserrouten
 	 'P'  => '#76c48b', 	# Parks
 	 'Pabove'  => '#76c48b', 	# same, but for higher stacking
 	 'Forest'  => '#66b47b', 	# Wälder
@@ -5038,6 +5039,7 @@ sub define_item_attribs {
 	 'comm' => 'comments', # this is splitted into multiple files
 	 'mount' => 'mount',
 	 'fz' => "fragezeichen",
+	 'wr' => "wasserrouten",
 	);
     foreach my $type (@comments_types) {
 	$str_file{"comm-$type"} = "comments_$type";
@@ -5093,8 +5095,9 @@ sub define_item_attribs {
 	 'nl' => [M"Unbeleuchtete Straße", M"Unbeleuchtete Straßen", 0],
 	 'gr' => [M"Grüner Weg", M"Grüne Wege", 0],
 	 'comm' => [M"Kommentare", M"Kommentare", 0],
-	 'mount' => [M"Steigung", M"Steigungen", 0],
 	 # XXX specific comm types?
+	 'mount' => [M"Steigung", M"Steigungen", 0],
+	 'wr'   => [M"Wasserroute", M"Wasserrouten", undef],
 	);
     %p_attrib =
 	('lsa'  => [M"Ampel",       M"Ampeln",       undef],
@@ -5169,7 +5172,7 @@ sub define_item_attribs {
 	 '2'  => [M"Ortskategorie 2", M"Ortskategorie 2", undef],
 	 '1'  => [M"kleiner Ort", M"kleine Orte", undef],
 	 '0'  => [M"Ortsteil", M"Ortsteile", undef],
-
+	 'WR' => [M"Wasserroute", M"Wasserrouten", undef],
 	);
     foreach (@Radwege::category_order) {
 	if (defined $Radwege::category_code{$_}) {
@@ -5220,7 +5223,7 @@ sub define_item_attribs {
 	(qw(map f w-out w i-out i f-Pabove crosshairs e e-img
 	    gP gD z g gP gD
 	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB sBAB-BAB l v
-	    f-label-bg w-label-bg f-label w-label
+	    f-label-bg wr w-label-bg f-label w-label
 	    u sperre_u u-bg u-fg u_bg-img r sperre_r b sperre_b
 	    r-bg r-fg r_bg-img b-bg b-fg b_bg-img
 	    u-label r-label b-label
@@ -5948,7 +5951,7 @@ sub set_bindings {
 
     foreach (qw(s sBAB S l L u b r f v v-fg w W i e comm mount),
 	     (map { "comm-$_" } @comments_types),
-	     qw(gr qs hs ql hl fz nl ovl temp_sperre_s rw)) {
+	     qw(gr qs hs ql hl fz nl ovl temp_sperre_s rw wr)) {
 	std_str_binding($_);
     }
 
@@ -6383,6 +6386,11 @@ sub change_net_type {
 	*set_coords = \&set_coords_usbahn;
     } elsif ($net_type eq "rus") {
 	*set_coords = \&set_coords_bahn;
+    } elsif ($net_type eq 'wr') {
+	*set_coords = \&set_coords_wasserrouten;
+	if (!$str_draw{wr}) {
+	    plot("str", "wr", -draw => 1);
+	}
     } elsif ($net_type eq 'custom') {
 	if (!keys %custom_net_str) {
 	    require BBBikeAdvanced;
@@ -9572,7 +9580,10 @@ sub choose_ort {
 		    ($linetype eq 'p' && $type =~ /^[ubr]$/ &&
 		     $net_type eq 'rus')                     ||
 		    ($linetype eq 'p' && $type eq 'r' &&
-		     $net_type eq 'r')) {
+		     $net_type eq 'r')			     ||
+		    ($linetype eq 's' && $type =~ /^wr/ &&
+		     $net_type eq 'wr')
+		   ) {
 		    $args{-markstart} = 1;
 		}
 	    }
@@ -12620,12 +12631,13 @@ sub scale_width {
     my($c, $scale, $old_scale) = @_;
 
 # XXX scale obst (mehrere Icon-Größen)
-    foreach my $type (qw(s-BAB sBAB-BAB s-HH s-B s-H s-N s-NN
-			 SBAB-BAB-out s-HH-out s-B-out s-H-out s-N-out s-NN-out
-			 rw
-			 w-W w-W0 w-W1 w-W2 w-W-out w-W0-out w-W1-out w-W2-out
-			 l l-out u b r pp p z g gP gD fz
-			 sperre0 sperre1 sperre1s sperre2)) {
+    foreach my $type
+	(qw(s-BAB sBAB-BAB s-HH s-B s-H s-N s-NN
+	    SBAB-BAB-out s-HH-out s-B-out s-H-out s-N-out s-NN-out
+	    rw
+	    w-W w-W0 w-W1 w-W2 w-W-out w-W0-out w-W1-out w-W2-out wr
+	    l l-out u b r pp p z g gP gD fz
+	    sperre0 sperre1 sperre1s sperre2)) {
 	eval {
 	CHANGE: {
 		my $new_width = get_line_width($type, $scale);
@@ -14739,6 +14751,12 @@ sub make_net {
 		push @net_source,     $str_obj{$_};
 		push @net_source_abk, $_;
 	    }
+	} elsif ($net_type eq 'wr') {
+	    if (!$str_obj{'wr'}) {
+		$str_obj{'wr'} = Strassen->new($str_file{'wr'});
+	    }
+	    push @net_source, $str_obj{'wr'};
+	    push @net_source_abk, 'wr';
 	} elsif ($net_type eq 'custom') {
 	    add_custom_layers_to_net(\@net_source, \@net_source_abk);
 	} else {
@@ -14871,6 +14889,8 @@ sub make_net {
 			 my($self, $p1, $p2, $entf, $name) = @_;
 			 $h_net->{$p1}{$p2} = "q4"; # XXX just a hack to see some results... A best solution is to use the forthcoming penalty solution for the Marathon
 		     });
+	    } elsif ($net_type eq 'wr') {
+		# nothing special here...
 	    }
 	};
 
@@ -15118,6 +15138,29 @@ sub set_coords_bahn {
     }
 }
 
+### AutoLoad Sub
+sub set_coords_wasserrouten {
+    my($c, @tags) = @_;
+    if ($tags[0] eq 'wr') {
+	my($pos, @points) = nearest_line_points_mouse($c, @tags);
+	make_net() if !$net;
+	if ($net->can("adjust_to_nearest")) {
+	    $points[0] = [ split /,/,
+			   $net->adjust_to_nearest(join ",", @{$points[0]})
+			 ];
+	} else {
+	    $net->add_net($pos, @points);
+	}
+	my($x, $y) = @{$points[0]};
+	Route::_coord_as_string([$x,$y]);
+    } else {
+	my($item, @tags) = find_below($c, qw/wr/);
+	return if !defined $item;
+	set_coords($c, @tags); # hoffentlich keine Endlosrekursion...
+	#die "Tag [@tags] ist weder p, pp, s noch l sollte nicht vorkommen!";
+    }
+}
+
 # Return "x,y"
 ### AutoLoad Sub
 sub set_coords_custom {
@@ -15153,7 +15196,10 @@ sub user_edit_street {
 			? qw(s l)
 			: ($net_type =~ /^(r|us|rus)$/
 			   ? map { $_ eq 's' ? 'b' : $_ } split //, $net_type
-			   : warn "Unhandled net type $net_type"
+			   : ($net_type eq 'wr'
+			      ? qw(wr)
+			      : warn "Unhandled net type $net_type"
+			     )
 			  )
 		       );
     if ($net_type eq 's' && $use_faehre) {
@@ -15835,6 +15881,10 @@ die "too many loops, please report, line " . __LINE__ if ($safe_loop++ > 100);
 	    }
 	} elsif ($net_type eq "rus") {
 	    if ($tags[0] =~ /^[ubr]$/) {
+		return nearest_line_points($x, $y, @tags); # XXX
+	    }
+	} elsif ($net_type eq 'wr') {
+	    if ($tags[0] eq 'wr') {
 		return nearest_line_points($x, $y, @tags); # XXX
 	    }
 	} else {

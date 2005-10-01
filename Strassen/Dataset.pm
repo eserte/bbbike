@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Dataset.pm,v 1.12 2005/06/16 22:25:39 eserte Exp $
+# $Id: Dataset.pm,v 1.13 2005/10/01 22:33:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package Strassen::Dataset;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(%file %net %crossings %obj @comments_types);
 
@@ -41,6 +41,7 @@ use vars qw(%file %net %crossings %obj @comments_types);
       'h'  => ['handicap_s',	'handicap_l',		'handicap_l'],
       'nl' => ['nolighting',	undef,			undef],
       'comm' => 'comments',
+      'wr' =>  'wasserrouten',
      },
      'p' =>
      {
@@ -57,6 +58,7 @@ use vars qw(%file %net %crossings %obj @comments_types);
       'ki'     => ['kinos',	undef,		undef],
       'rest'   => ['restaurants',undef,		undef],
       'hoehe'  =>  'hoehe',
+      'wr'     =>  'anlegestellen',
      },
     );
 

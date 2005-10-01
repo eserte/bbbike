@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.59 2005/08/14 20:33:46 eserte Exp $
+# $Id: Core.pm,v 1.60 2005/10/01 22:00:57 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.59 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.60 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -962,7 +962,7 @@ sub all_crossings {
 }
 
 ### AutoLoad Sub
-sub strip_bezirk { Strasse::strip_bezirk(@_) }
+sub strip_bezirk { require Strassen::Strasse; Strasse::strip_bezirk(@_) }
 
 # Für Orte: trennt den Namen vom Zusatz (z.B. ("Frankfurt", "Oder")
 ### AutoLoad Sub

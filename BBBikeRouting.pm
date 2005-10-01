@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.34 2004/12/14 01:39:57 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.37 2005/10/01 22:59:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -92,6 +92,18 @@ sub BBBikeRouting::Context::ExpandedScope {
     elsif ($self->Scope eq 'wideregion') { [qw(city region wideregion)] }
     else {
 	die "Unknown scope: " . $self->Scope;
+    }
+}
+
+sub factory {
+    my($class, $vehicle, %args) = @_;
+    if ($vehicle =~ qr{^(bike|car|oepnv)$}) {
+	$class->new(%args);
+    } else {
+	my $new_class = "BBBikeRouting::" . ucfirst($vehicle);
+	eval 'use ' . $new_class;
+	die $@ if $@;
+	$new_class->new(%args);
     }
 }
 
@@ -284,18 +296,41 @@ sub init_net {
 sub init_crossings {
     my $self = shift;
     if (!$self->Crossings) {
-	require Strassen::Kreuzungen;
-	my $context = $self->Context;
-	if ($context->Vehicle eq 'oepnv') {
-	    $self->init_stations;
-	    $self->Crossings(Kreuzungen->new_from_strassen(Strassen => $self->Stations, WantPos => 1, Kurvenpunkte => 1, UseCache => $context->UseCache));
-	} else {
-	    $self->init_str;
-	    $self->Crossings(Kreuzungen->new(Strassen => $self->Streets, WantPos => 1, Kurvenpunkte => 1, UseCache => $context->UseCache));
-	}
-	$self->Crossings->make_grid(UseCache => $context->UseCache);
+	$self->do_init_crossings;
+	$self->Crossings->make_grid(UseCache => $self->Context->UseCache);
     }
     $self->Crossings;
+}
+
+sub do_init_crossings {
+    my $self = shift;
+    if ($self->Context->Vehicle eq 'oepnv') {
+	$self->do_init_crossings_with_stations;
+    } else {
+	$self->do_init_crossings_with_streets;
+    }
+}
+
+sub do_init_crossings_with_streets {
+    my $self = shift;
+    require Strassen::Kreuzungen;
+    $self->Crossings
+	(Kreuzungen->new(Strassen => $self->init_str,
+			 WantPos => 1,
+			 Kurvenpunkte => 1,
+			 UseCache => $self->Context->UseCache)
+	);
+}
+
+sub do_init_crossings_with_stations {
+    my $self = shift;
+    require Strassen::Kreuzungen;
+    $self->Crossings
+	(Kreuzungen->new_from_strassen(Strassen => $self->init_stations,
+				       WantPos => 1,
+				       Kurvenpunkte => 1,
+				       UseCache => $self->Context->UseCache)
+	);
 }
 
 sub init_stations {
@@ -694,6 +729,15 @@ use lib ("$FindBin::RealBin",
 	);
 EOF
     warn $@ if $@;
+}
+
+sub path_to_bbd {
+    my($self, %args) = @_;
+    my $name = $args{name};
+    $name = "Route" if !defined $name;
+    my $cat  = $args{cat};
+    $cat  = "X"     if !defined $cat;
+    "$name\t$cat " . join(" ", map { join ",", @$_ } @{ $self->Path }) . "\n";
 }
 
 1;

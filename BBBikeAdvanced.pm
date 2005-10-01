@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.128 2005/09/26 21:09:54 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.129 2005/10/01 22:34:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1197,6 +1197,7 @@ sub add_search_net_menu_entries {
 		     [M"U/S-Bahn", 'us'],
 		     [M"R-Bahn", 'r'],
 		     [M"Gesamtes Bahnnetz", 'rus'],
+		     [M"Wasserrouten", 'wr'],
 		     [M"Custom", 'custom'],
 		    ) {
 	my($label, $value) = @$def;

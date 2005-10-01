@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.36 2005/08/14 18:07:08 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.37 2005/10/01 22:33:27 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2004,2005 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -104,6 +104,7 @@ my $EXTMODPERL = join(" ", @EXTMODPERL);
 
 $bbbike_makefile_admin = <<'EOF'
 #### RSYNCS ###############################################################
+# XXX check which of the rsyncs are not obsolete!
 
 BBBIKE_CS_DEST=user.cs.tu-berlin.de:www/bbbike
 BBBIKE_CS_TEST_DEST=user.cs.tu-berlin.de:www/BBBike
@@ -178,11 +179,12 @@ ask-copy-to-cvs:
 do-copy-to-cvs:	MANIFEST.withcvs
 	perl "-MExtUtils::Manifest=manicopy,maniread" -e '$$fs=maniread(q{MANIFEST.withcvs}); while($$f=each %$$fs) { if (-e qq{${CVS_DIR}/$$f} && -M $$f >= -M qq{${CVS_DIR}/$$f}) { delete $$fs->{$$f} } } manicopy($$fs,q{${CVS_DIR}}, q{cp}); utime time,time,map { qq{${CVS_DIR}/$$_} } keys %$$fs'
 
-# Slow, aber gruendlich!
+# Slow, aber gruendlich! Problem with do-copy-to-cvs may be that
+# timestamps are incorrect.
 do-copy-to-cvs-slow: MANIFEST.withcvs
 	perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread('MANIFEST.withcvs'),'${CVS_DIR}', 'cp');"
 
-
+# Show the diffs between the source BBBike directory and the CVS directory.
 diff-with-cvs:	MANIFEST.withcvs
 	makepatch --verbose \
 	    -oldmanifest MANIFEST.withcvs -newmanifest MANIFEST.withcvs \
@@ -212,7 +214,7 @@ MANIFEST.withcvs:	MANIFEST MANIFEST.addtocvs
 	cat MANIFEST | grep -v -f MANIFEST.delfromcvs >> MANIFEST.withcvs
 	perl -nle 'print join("\n", glob("$$_"))' MANIFEST.addtocvs >> MANIFEST.withcvs
 
-# Manifest.addtocvs is *not* constant, so arrange that MANIFEST.withcvs
+# MANIFEST.addtocvs is *not* constant, so arrange that MANIFEST.withcvs
 # is always fired.
 .PHONY: MANIFEST.withcvs
 
@@ -650,6 +652,8 @@ mangle:
 		-exec perltidy -t -mangle -dac -dp {}~ -o {} \; \
 		-exec rm -f {}~ \;
 
+# Fix the permissions. Needed mainly for correct cgi/mod_perl
+# operation.
 permission:
 	perl -MExtUtils::Manifest=maniread -le 'print join "\n", sort keys %{ maniread("MANIFEST") }' | xargs chmod ugo+r
 	chmod ugo+rx bbbike cgi/*.cgi
@@ -657,13 +661,16 @@ permission:
 	chmod ugo+rx data/temp_blockings
 	chmod ugo+r  data/temp_blockings/*
 
+# Copy the current BBBike source first to CVS, and then to a USB
+# stick. The USB stick will be automatically mounter on FreeBSD, if
+# necessary, and optionally unmounted after copying.
 copy-cvs-to-stick:	copy-to-cvs
 	(mount | grep -q /mnt/stick) || sudo mount_msdos -u eserte /dev/da0s1 /mnt/stick
 	mount | grep -q /mnt/stick
-	-mv /mnt/stick/BBBike-CVS{,.old}
+	-mv /mnt/stick/BBBike-CVS /mnt/stick/BBBike-CVS.old
 	rsync -v -rlptoD $(CVS_DIR)/ /mnt/stick/BBBike-CVS/
-	echo Unmount stick?
-	read yn
+	@echo '*** Unmount stick? (y/CTRL-C)'
+	@read yn
 	sudo umount /mnt/stick
 
 .PHONY: data

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2mapservhtml.pl,v 1.11 2005/06/03 00:51:37 eserte Exp $
+# $Id: bbd2mapservhtml.pl,v 1.14 2005/10/01 23:05:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -40,7 +40,9 @@ my $save_cmdline = "$0 @ARGV";
 if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		"email=s" => \$email,
 		"local!" => sub {
-		    #$bbbike_url = "http://www/~eserte/bbbike/cgi/bbbike.cgi";
+		    $bbbike_url = "http://www/~eserte/bbbike/cgi/bbbike.cgi";
+		},
+		"local-radzeit!" => sub {
 		    $bbbike_url = "http://radzeit/cgi-bin/bbbike.cgi";
 		},
 		'layer=s@' => \@layers,
@@ -157,10 +159,11 @@ bbd2mapservhtml.pl - create a mapserver route from a bbd or bbr file
 
 =head1 SYNOPSIS
 
-    bbd2mapservhtml [-bbbikeurl url] [-email email] [-[no]local]
+    bbd2mapservhtml [-bbbikeurl url] [-email email]
+		    [-[no]local | -local-radzeit]
                     [-layer layername [-layer ...]]
                     [-initmapext {width}x{height}] [-mapscale scale]
-		    [-center x,y] file
+		    [-center x,y] [file]
 
 =head1 DESCRIPTION
 
@@ -169,6 +172,10 @@ bbd2mapservhtml.pl - create a mapserver route from a bbd or bbr file
 =item -local
 
 Use a local mapserver URL instead of the official one from BBBikeVar
+
+=item -local-radzeit
+
+Use another local mapserver URL (similar to the official at "radzeit").
 
 =item -layer
 
@@ -189,6 +196,18 @@ specified together.
 
 Center the map to the specified coordinate. If not given, then center
 to the first point in the bbd file.
+
+=back
+
+If I<file> is not given, then read from standard input.
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<cmdbbbike>, L<bbd>
 
 =cut
 
