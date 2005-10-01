@@ -1,5 +1,5 @@
 #: title: Radwege in Berlin
-#: version: $Id: radwege-orig,v 4.59 2005/08/30 20:56:58 eserte Exp eserte $
+#: version: $Id: radwege-orig,v 4.61 2005/10/01 12:21:13 eserte Exp eserte $
 #:
 # (für Radwege in Brandenburg siehe comments_cyclepath)
 	RW1;RW1 9227,8890 9235,9051
@@ -1621,7 +1621,7 @@ Radweg: kleinteiliges Pflaster	RW2;RW2 8119,12414 8063,12182
 	RW6;RW6 10979,10017 10955,10105
 	RW6;RW6 7490,9116 7441,9139
 	RW6;RW6 7441,9139 7381,9165
-	RW6;RW6 6274,8447 6173,8378 6074,8313
+# laut Dominik hier nur eine 30er-Zone:	RW6;RW6 6274,8447 6173,8378 6074,8313
 	RW6;RW6 6074,8313 5934,8220
 	RW6;RW6 9400,14400 9375,14419
 	RW6;RW6 9375,14419 9312,14471 9246,14518 9048,14681

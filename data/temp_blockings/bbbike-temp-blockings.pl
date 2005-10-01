@@ -2839,4 +2839,20 @@ EOF
 userdel	2 13225,-681 12988,1006
 EOF
      },
+     { from  => 1128290400, # 2005-10-03 00:00
+       until => 1132095600, # 2005-11-16 00:00
+       text  => 'B 112; zw. Abzw. Ziltendorf und Abzw. Pohlitz Deckenerneurung Vollsperrung 04.10.2005-15.11.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 93494,-21221 93192,-21578
+EOF
+     },
+     { from  => 1127772000, # 2005-09-27 00:00
+       until => 1151704800, # 2006-07-01 00:00
+       text  => 'L 382; (Birnbaumsmühle); OD Frankfurt (O), Bereich unter den Brücken DB grundh. Straßenbau Vollsperrung 28.09.2005-30.06.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 85403,-4497 85666,-3989
+EOF
+     },
     );

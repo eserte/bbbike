@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.59 2005/08/30 23:51:02 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.61 2005/10/01 12:24:39 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: XXX hier br‰uchte man keine zus‰tzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -305,7 +305,7 @@ H¸ttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 (S¸dpark): Fuﬂg‰nger	q1 -3919,11761 -3918,11803 -4064,11965 -4040,12050 -4085,12081 -4128,12196 -4143,12336
 (Gl¸hw¸rmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
 Schloﬂpark Charlottenburg: Fuﬂg‰nger	q1 3288,12700 3263,12720 3127,12793 3055,12973 2997,13402 2909,13542
-Spreeweg: eng und un¸bersichtlich	q2 2909,13542 2849,13638 2648,13638 2261,13526
+Spreeweg: eng und un¸bersichtlich	q2 2909,13542 2849,13638 2680,13679 2260,13540
 LefËvrestr.: enge Straﬂe	q1 4987,6902 4993,6812 5034,6745 5137,6651 5215,6643 5372,6663
 #: by: ^^^
 #: by: Michael Heckner:
@@ -491,3 +491,9 @@ Flinsberger Platz: Fuﬂg‰nger	q1 2919,8582 2973,8569
 (Machandelweg - Rossiter Weg): Fuﬂg‰nger	q2 77,12260 -125,12173
 Frauenburger Pfad: Fuﬂg‰nger, schmal	q2 474,10869 579,10864 677,10864 775,10864
 Willenburger Pfad: Fuﬂg‰nger, schmal	q2 576,10729 673,10724
+(Uferweg Hubertussee): Fuﬂg‰nger, schmal	q3 2190,8903 2170,8841 2155,8793 2214,8752 2268,8746 2298,8712 2279,8674 2233,8670 2153,8693 1949,8788 1902,8814 1834,8893 1809,8916 1761,8936
+(Zum Hubertussee): Fuﬂg‰nger, schmal	q3 2299,8675 2279,8674
+(Zum Hubertussee): Fuﬂg‰nger, schmal	q3 1834,8893 1807,8893
+(Zum Hubertussee): Fuﬂg‰nger, schmal	q3 1807,8893 1809,8916
+(Parkweg Reichsstr.): Fuﬂg‰nger	q2 -264,13009 -208,12938 -142,12850 -67,12779 23,12739
+(Machandelweg - Reichsstr.): Fuﬂg‰nger	Q2 -185,12822 -166,12849 -142,12850 -112,12866

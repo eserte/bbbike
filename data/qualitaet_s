@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.86 2005/08/30 20:56:57 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.90 2005/10/01 12:24:41 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
@@ -1633,7 +1633,7 @@ Hittorfstr.: Asphalt	Q1 2212,4600 2290,4709
 Hittorfstr: Kopfsteinpflaster	Q2 2290,4709 2381,4737 2442,4806 2469,4882 2516,4936 2587,4965
 Lefèvrestr.: Asphalt	Q0 4987,6902 4993,6812 5034,6745 5137,6651 5215,6643 5372,6663
 Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6711
-(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 3288,12700 3263,12720 3127,12793 3055,12973 2997,13402 2909,13542 2849,13638 2648,13638 2261,13526 1986,13650 1609,13487 1162,13484
+(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 3288,12700 3263,12720 3127,12793 3055,12973 2997,13402 2909,13542 2849,13638 2680,13679 2260,13540 1986,13650 1841,13662 1609,13487 1162,13484
 (Spreeufer): wassergebundene Decke	Q1 -288,13279 -193,13318 303,13287 700,13371 984,13475 1162,13484
 Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4596,3738 4487,3802 4235,3999
 Moltkestr.: eher schlechtes Kopfsteinpflaster	Q3 4235,3999 4092,4217 3926,4438
@@ -2664,7 +2664,7 @@ Karlsbader Str.: Asphalt	Q0 2215,8066 2219,8245 2223,8500
 Plöner Str.: Asphalt	Q0 2309,8058 2310,8160 2315,8431
 Gneiststr. (Grunewald): Asphalt	Q0 1408,9166 1580,9307
 Niersteiner Str.: Asphalt	Q0 1666,9418 1562,9436
-Hasensprung (Grunewald): Kleinpflaster	Q1 1476,8831 1456,8856 1407,8931 1366,8986 1330,9038 1316,9067
+Hasensprung (Grunewald): Kleinpflaster	Q1 1476,8831 1456,8856 1407,8931 1386,8959 1366,8986 1330,9038 1316,9067
 Herbertstr. (Grunewald): Asphalt	Q0 2130,9260 2046,9429
 Herbertstr. (Grunewald): Asphalt	Q0 2165,9155 2197,9091 2316,8857
 Schleinitzstr.: Asphalt	Q0 2197,9091 2059,8954
@@ -2706,3 +2706,11 @@ Willenburger Pfad: Kopfsteinpflaster	Q3 673,10724 771,10719
 Bismarckallee: Beton	Q0 1514,8637 1478,8596
 Flinsberger Platz: Gehwegplatten, Bordsteine	Q0 2919,8582 2973,8569
 Egerstr.: Gehwegplatten	Q0 2357,8055 2406,8050
+(Uferweg Hubertussee): fester Waldweg	Q1 2190,8903 2170,8841 2155,8793 2214,8752 2268,8746 2298,8712 2279,8674 2233,8670 2153,8693 1949,8788 1902,8814 1834,8893 1809,8916 1761,8936
+(Zum Hubertussee): fester Waldweg	Q1 2299,8675 2279,8674
+(Zum Hubertussee): fester Waldweg	Q1 1834,8893 1807,8893
+(Zum Hubertussee): fester Waldweg	Q1 1807,8893 1809,8916
+Ilmenauer Str.: Kopfsteinpflaster	Q2 2551,8183 2552,8419
+(Parkweg Reichsstr.): Parkweg	Q1 -264,13009 -208,12938 -142,12850 -67,12779 23,12739
+(Machandelweg - Reichsstr.): Kleinpflaster	Q1 -185,12822 -166,12849 -142,12850
+(Machandelweg - Reichsstr.): Parkweg	Q1 -142,12850 -112,12866

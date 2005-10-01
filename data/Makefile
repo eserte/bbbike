@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.67 2005/08/27 19:48:42 eserte Exp $
+# $Id: Makefile,v 2.67 2005/08/27 19:48:42 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -110,7 +110,9 @@ persistent-tmp:	${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
 		${PERSISTENTTMPDIR}/non-faked-strassen
 
 # even slower (about four minutes)
-really-slow-checks:	check-crossings check-nearest
+really-slow-checks:	check-crossings-important \
+			check-nearest \
+			check-crossings-less-important
 
 inaccessible_strassen: strassen gesperrt
 	-@$(WRITEABLE) $@
@@ -940,10 +942,14 @@ check-dates:	.check_dates
 	@${MISCSRCDIR}/check_dates -reldays 14 *-orig
 	@touch $@
 
-check-crossings:	${PERSISTENTTMPDIR}/crossings.bbd \
-			${PERSISTENTTMPDIR}/crossings_gewaesser.bbd \
-			${PERSISTENTTMPDIR}/crossings_bahn.bbd \
-			${PERSISTENTTMPDIR}/crossings_gewaesser_noignore.bbd
+check-crossings:	check-crossings-important \
+			check-crossings-less-important
+
+check-crossings-important:	${PERSISTENTTMPDIR}/crossings.bbd
+
+check-crossings-less-important:	${PERSISTENTTMPDIR}/crossings_gewaesser.bbd \
+				${PERSISTENTTMPDIR}/crossings_bahn.bbd \
+				${PERSISTENTTMPDIR}/crossings_gewaesser_noignore.bbd
 
 ${PERSISTENTTMPDIR}/crossings.bbd:	strassen landstrassen landstrassen2 \
 					brunnels

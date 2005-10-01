@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.75 2005/08/30 23:50:57 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.77 2005/10/01 12:24:39 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -238,7 +238,8 @@ Herbststr.	1 8465,18365 8634,18401
 Ruhwaldweg: Schranke gesperrt	2 830,13353 801,13323
 Alt-Reinickendorf	1 7003,18715 6734,18728 6567,18812 6766,18794 7003,18715
 Lauterstr.	1 5817,7223 5810,7337
-Friedrich-Wilhelm-Platz	1 5357,7381 5315,7376 5310,7325 5324,7205
+# laut Dominik hier keine Einbahnstraße: Friedrich-Wilhelm-Platz	1 5357,7381 5315,7376
+Friedrich-Wilhelm-Platz	1 5315,7376 5310,7325 5324,7205
 Stolbergstr.	1 8850,6421 8834,6639
 Richnowstr.	1 8946,6501 8850,6421
 Menzelstr.	1 6185,6469 6154,6734
@@ -351,7 +352,8 @@ Zionskirchstr.	1s 10389,14274 10426,14262
 Walsroder Str.	1s 6396,5125 6295,5132 6203,5138 6089,5145
 Hünensteig	1s 6415,5028 6393,5028 6396,5125
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s 12119,9823 11946,9913 11735,10022 11512,10105
-Vorbergstr.	1s 7315,9156 7137,9216 7022,9211
+#: note: Richtung von Dominik korrigiert:
+Vorbergstr.	1s 7022,9211 7137,9216 7315,9156
 Gubener Str.	1s 13411,11899 13362,12002
 Czeminskistr.	1s 7615,8927 7570,8863
 Stallschreiberstr.	1s 10489,11405 10678,11172
@@ -797,7 +799,8 @@ Spandauer Damm: queren nur mit tragen möglich	3nocross 3038,12482 3191,12502 328
 Bonhoefferufer	1 3216,12994 3154,12936 3194,12830 3324,12784
 tragen (16 Stufen)	0:40 4135,12685
 tragen (16 Stufen)	0:40 4140,12594
-Kaiserdamm: queren schlecht möglich	3nocross 2110,11426 2193,11434 2234,11440 2417,11465 2612,11491
+Kaiserdamm: queren schlecht möglich	3nocross 2110,11426 2193,11434 2234,11440
+Kaiserdamm: queren schlecht möglich	3nocross 2234,11440 2417,11465 2612,11491
 Kleine Markusstr.	1 12037,12092 11974,12110 11969,12054 12021,12037
 tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30 6218,12975
 tragen (30 Stufen)	0:45 5896,12590
@@ -813,3 +816,7 @@ Drängelgitter	BNP:10 1456,8856
 Drängelgitter	BNP:10 1407,8931
 Drängelgitter	BNP:10 1366,8986
 Drängelgitter	BNP:10 1330,9038
+Tor	BNP:15 1834,8893
+tragen (10 x 3 Stufen)	0:180 2170,8841
+tragen	0:40 2316,8593
+tragen	0:40 2316,8469
