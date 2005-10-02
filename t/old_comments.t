@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: old_comments.t,v 1.8 2005/07/02 12:00:22 eserte Exp $
+# $Id: old_comments.t,v 1.8 2005/07/02 12:00:22 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -90,6 +90,7 @@ EOF
 EOF
 
 	     # Franz-Mehring-Platz
+	     # XXX Nicht mehr --- ein anderes Beispiel suchen! XXX
 	     ["12811,12081", "12744,11904", <<EOF, "CP2; am Startpunkt"],
 - Als Franz-Mehring-Platz ausgeschildert: 1
 - ~

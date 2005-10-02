@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.11 2005/07/17 18:47:48 eserte Exp $
+# $Id: strassennetz.t,v 1.12 2005/10/02 21:25:49 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -132,7 +132,10 @@ if ($do_xxx) {
 
     {
 	# CS-Kommentar (beide Richtungen) Jüdenstr.
-	my $route = [[10704,12595], [10778,12493], [10810,12448], [10831,12371], [10825,12271]];
+	my $route =
+	    [ map { [ split /,/ ] } split / /,
+	      "10704,12595 10778,12493 10800,12461 10831,12371 10825,12271"
+	    ];
 	my $comment;
 
 	for my $pass (1, 2) {
