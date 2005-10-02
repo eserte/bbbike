@@ -2855,4 +2855,35 @@ EOF
 userdel	2 85403,-4497 85666,-3989
 EOF
      },
+     { from  => 1128117600, # 2005-10-01 00:00
+       until => 1128398400, # 2005-10-04 06:00
+       text  => 'Ebertstraße, Pariser Platz: Veranstaltung, Straße gesperrt bis Di 06:00 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 8581,11896 8595,12066
+userdel	2 8581,11896 8571,11846
+userdel	2 8595,12066 8600,12165
+userdel	2 8539,12286 8515,12242
+userdel	2 8539,12286 8560,12326
+userdel	2 8540,12420 8560,12326
+userdel	2 8600,12165 8515,12242
+userdel	2 8515,12242 8610,12254
+EOF
+     },
+     { from  => 1128808800, # 2005-10-09 00:00
+       until => 1131404400, # 2005-11-08 00:00
+       text  => 'B 87; (Beeskow-Lübben); zw. Abzw. Wittmannsdorf und Abzw. Dollgen Straßenbauarbeiten Vollsperrung 10.10.2005-07.11.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 58111,-41188 60430,-38587
+EOF
+     },
+     { from  => 1128290400, # 2005-10-03 00:00
+       until => 1128981600, # 2005-10-11 00:00
+       text  => 'B 87; (Beeskow-Lübben); zw. Trebatsch und Abzw. Wittmannsdorf Straßenbauarbeiten Vollsperrung 04.10.2005-10.10.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 62112,-36752 60430,-38587
+EOF
+     },
     );

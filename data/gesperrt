@@ -351,6 +351,7 @@ Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -
 Stephanstr.	1s 6526,4475 6377,4490
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
+Björnsonstr.	1s 10229,16653 10215,16527
 Flemmingstr. -> Oberspreestr.: Straßenbahn auf Mittelstreifen	3 21845,4875 21726,4537 21796,4517
 Oberspreestr. -> Flemmingstr.: Straßenbahn auf Mittelstreifen	3 21579,4579 21726,4537 21845,4875
 Hermannstr. -> Mahlower Str.: Gitter auf Mittelstreifen	3 11933,8198 11920,8252 11773,8231
@@ -485,6 +486,17 @@ Greifswalder Str. -> Chodowieckistr.: Mittelstreifen mit Straßenbahn	3 12239,143
 Chodowieckistr. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3 11992,14599 12285,14458 12578,14237
 Chodowieckistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 11992,14599 12285,14458 12338,14532
 Greifswalder Str. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3 12338,14532 12285,14458 12578,14237
+Olga-Benario-Prestes-Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 12653,14653 12488,14753 12437,14680
+Greifswalder Str. -> Olga-Benario-Prestes-Str.: Mittelstreifen mit Straßenbahn	3 12536,14827 12488,14753 12653,14653
+Greifswalder Str. -> Anton-Saefkow-Str.: Mittelstreifen mit Straßenbahn	3 12572,14836 12536,14827 12723,14714
+Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 12572,14836 12536,14827 12488,14753
+Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 12604,14927 12536,14827 12572,14836
+Greifswalder Str. -> Anton-Saefkow-Str.: Mittelstreifen mit Straßenbahn	3 12604,14927 12536,14827 12723,14714
+Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 12612,14904 12604,14927 12536,14827
+Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 12614,14941 12604,14927 12612,14904
+Greifswalder Str. -> Güterbahnhof Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 12614,14941 12604,14927 12734,14943
+Güterbahnhof Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 12734,14943 12604,14927 12612,14904
+Güterbahnhof Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3 12734,14943 12604,14927 12536,14827
 Jablonskistr. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3 11955,14531 11662,14695 11642,14625
 Prenzlauer Allee -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3 11681,14759 11662,14695 11955,14531
 Hiddenseer Str. -> Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3 11655,15253 11822,15193 11852,15281
@@ -705,7 +717,6 @@ Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10173,1249
 Sperrung vor der amerikanischen Botschaft	2 9141,12320 9126,12413 9112,12499 9100,12627
 Naumannstr. unter der S-Bahn-Brücke: noch Bauarbeiten	2:inwork 7716,8048 7717,7759 7718,7641 7717,7564
 (Neue Naumannstr.) (noch in Bau)	2:inwork 7606,7611 7717,7759
-Französische Str. (Bauarbeiten)	1:inwork 9183,12076 9076,12054
 Goethestr. (Bauarbeiten)	1:inwork 4896,11345 5053,11343
 Markgrafenstraße  Richtung Französische Straße zwischen Behrenstraße und Französische Straße, Bauarbeiten als Einbahnstraße eingerichtet, Dauer:  bis 01.07.2006	1:inwork 9636,12126 9626,12227
 Fußgängerbrücke über den Sachesendamm gesperrt, südliche Rampe ist aber befahrbar	2:inwork 7718,7641 7772,7610

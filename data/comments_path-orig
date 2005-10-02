@@ -1,6 +1,6 @@
 #: title.de: Abbiegevorschriften usw.
 #: title.en: Path instructions etc.
-#: version: $Id: comments_path-orig,v 4.43 2005/10/01 12:21:03 eserte Exp $
+#: version: $Id: comments_path-orig,v 4.43 2005/10/01 12:21:03 eserte Exp eserte $
 #:
 # Verwendete Kategorien:
 # CP;  : Kommentar an Punkt B bei Fahrt von A nach C; Bei entweder A oder C kann statt einer Koordinate 
@@ -202,3 +202,8 @@ zur Gustav-Heinemann-Brücke durch schmalen Durchbruch in der Böschung	CP; * 8032
 zum Spreeufer: den Garten hinunter, am Ende ist ein Durchbruch nach rechts	CP; * 8116,12938
 zum Fußgängertunnel S-Bhf Jungfernheide: Über den Parkplatz zum S-Bahn-Zugang	CP; * 3320,13796 3354,13659
 Zufahrt zu den Grundstücken direkt am Bahndamm nehmen	CP; * 3717,13743 3555,13705
+Zufahrt zur Kolonie ist schwierig zu finden (enges Tor)	CP2; 10198,16929 10229,16653
+#: XXX mit einer Punkt-Penalty versehen, wenn das möglich ist vvv
+Drängelgitter auf der linken Seite unter der Hochbahn	CP; 10619,16319 11013,16278 11306,16194
+Drängelgitter auf der rechten Seite unter der Hochbahn	CP; 11306,16194 11013,16278 10619,16319
+#: XXX ^^^

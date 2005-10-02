@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.61 2005/10/01 12:24:39 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.61 2005/10/01 12:24:39 eserte Exp eserte $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: XXX hier br‰uchte man keine zus‰tzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -231,8 +231,12 @@ F‰rberstr. - Uferweg: sehr eng	q2 21675,4989 21665,5035 21684,5079
 Uferweg, Mentzelpark: Fuﬂg‰nger	q1 21487,5425 21600,5221 21684,5079 21735,5003 21821,4918 21845,4875
 (Verl‰ngerte Franzˆsische Str.): nur langsam passierbar	q4 8892,12006 9076,12054
 Heinrich-Lassen-Park: Fuﬂg‰nger (aber Radfahren ist erlaubt!)	q1 6664,8787 6740,8682 6815,8691 6912,8617
+(Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7467,14633
+An der Malche: teilweise eng und kurvig	q1 1139,20420 1060,20557 995,20590 921,20562 864,20646 673,20800
+Am Friedhof: recht enger Radweg	q1 6391,17838 6376,17687 6347,17381
+Kolonie: enger Weg	q1 10198,16929 10229,16653
 Neustrelitzer Str.: kurvenreich	q1 16739,14733 16668,14765 16534,14740 16443,14825 16346,14750 16256,14828
-(Esplanade - Gr¸ntaler Str.): Zickzack-Kurs	q2 9984,16968 9811,17016
+(Esplanade - Gr¸ntaler Str.): Zickzack-Kurs	q2 9984,16968 9846,16981 9757,16912
 L¸nette: Fuﬂg‰nger	q1 -1055,15588 -1475,15441
 Gritznerstr.: enge Straﬂe	q1 4306,5865 4385,6045 4435,6154 4472,6242 4507,6320 4555,6403 4630,6534 4679,6620 4734,6716
 Im Jagen: Fuﬂg‰nger, Hundeauslaufgebiet	q1 905,6631 909,6584 1074,6449 1375,6138
@@ -318,7 +322,7 @@ Br¸der-Grimm-Gasse: Fuﬂg‰nger	q2 8351,11163 8343,11133
 (Anhalter Steg - Anhalter Bahnhof): Fuﬂg‰nger	q1 8773,10429 8776,10548 8854,10712 8912,10846 8938,10872
 (Linkstr. - Alte Potsdamer Str.): Fuﬂg‰nger, schmal	q3 8474,11350 8420,11385
 Voxstr.: Fuﬂg‰nger	q3 8309,11390 8390,11363
-Alice-Salomon-Park: Fuﬂg‰nger	q2 6851,9365 6743,9523
+Alice-Salomon-Park: Fuﬂg‰nger, Bordsteine	q2 6851,9365 6743,9523
 (Geﬂlerstr. - Monumentenstr.): Fuﬂg‰nger, Kinder	q2 7970,8886 7964,9060 8009,9063 8014,9126
 (Loewenhardtdamm - Hˆhndorfstr.): Fuﬂg‰nger, Bordsteine, Schranken	q2 8318,8692 8429,8692
 (Weg d. Kol. Papestr.): Fuﬂg‰nger	q1 8220,8596 8243,8596 8243,8321 8264,8289
@@ -328,9 +332,9 @@ Bautzener Platz: Fuﬂg‰nger, Bordsteine	q2 8182,9197 8098,9198
 Bautzener Platz: Fufg‰nger, Bordsteine	q2 8100,9228 8182,9227
 General-Pape-Str.: schieben; wg. Bauarbeiten nur enger Fuﬂweg	q4::inwork 7959,7609 7931,7746 7945,7789
 (Danziger Str. - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 12128,14640 12201,14770 12258,14779 12298,14846 12277,14859 12381,15034
-(Prenzlauer Allee - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 11891,15413 12133,15259 12238,15165 12381,15034
+(Prenzlauer Allee - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 11882,15384 11952,15374 12107,15229 12215,15115 12381,15034
 (Prenzlauer Allee - Lilly-Henoch-Str.): Fuﬂg‰nger	q2 11860,15309 11919,15314 11952,15374
-(Verl‰ngerte Diesterwegstr.): Fuﬂg‰nger	q2 12078,15160 12133,15259
+(Verl‰ngerte Diesterwegstr.): Fuﬂg‰nger	q2 12078,15160 12107,15229
 (Anton-Saefkow-Str. - John-Schehr-Str.): Fuﬂg‰nger, Schranken	q1 13084,14472 13009,14371 12949,14292
 Ernst-F¸rstenberg-Str.: Fuﬂg‰nger	q1 13014,14146 12996,14172
 An der Brauerei: Fuﬂg‰nger	q1 13291,13290 13283,13311 13378,13353
@@ -444,4 +448,5 @@ Willenburger Pfad: Fuﬂg‰nger, schmal	q2 576,10729 673,10724
 (Zum Hubertussee): Fuﬂg‰nger, schmal	q3 1834,8893 1807,8893
 (Zum Hubertussee): Fuﬂg‰nger, schmal	q3 1807,8893 1809,8916
 (Parkweg Reichsstr.): Fuﬂg‰nger	q2 -264,13009 -208,12938 -142,12850 -67,12779 23,12739
-(Machandelweg - Reichsstr.): Fuﬂg‰nger	Q2 -185,12822 -166,12849 -142,12850 -112,12866
+(Machandelweg - Reichsstr.): Fuﬂg‰nger	q2 -185,12822 -166,12849 -142,12850 -112,12866
+(zur Karl-Marx-Allee): Bordstein	q2 11362,12964 11295,12915

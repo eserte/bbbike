@@ -422,14 +422,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
        undef,
        undef,
        undef,
-       {
-         'until' => 1128204000,
-         'text' => 'B 96; (Clara-Zetkin-Str.); OD Birkenwerder, zw. Weimarerstr. u. E.-Mühsam-Str. grundh. Straßenausbau Vollsperrung 20.07.2005-01.10.2005 ',
-         'from' => 1121724000,
-         'data' => 'userdel	2 1772,31266 2257,31124
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1133391600,
          'text' => 'K 7207; (KG südl. Rinow-Weißen); Brücke bei Rinow Brückenbauarbeiten Vollsperrung 20.07.2005-30.11.2005 ',
@@ -589,14 +582,7 @@ userdel	2 47081,83093 47137,83456
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1128204000,
-         'text' => 'B 87; OD Mittweide Straßenbauarbeiten Vollsperrung 19.09.2005-01.10.2005 ',
-         'from' => 1126994400,
-         'data' => 'userdel	q4 60430,-38587 62112,-36752
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1130886000,
          'text' => 'B 96; (Neuhof-Wünsdorf); Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung 28.10.2005-01.11.2005 ',
@@ -677,6 +663,37 @@ userdel	q4 -7873,66589 -7851,66418
          'text' => 'L 382; (Birnbaumsmühle); OD Frankfurt (O), Bereich unter den Brücken DB grundh. Straßenbau Vollsperrung 28.09.2005-30.06.2006 ',
          'from' => 1127772000,
          'data' => 'userdel	2 85403,-4497 85666,-3989
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1128398400,
+         'text' => 'Ebertstraße, Pariser Platz: Veranstaltung, Straße gesperrt bis Di 06:00 ',
+         'from' => 1128117600,
+         'data' => 'userdel	2 8581,11896 8595,12066
+userdel	2 8581,11896 8571,11846
+userdel	2 8595,12066 8600,12165
+userdel	2 8539,12286 8515,12242
+userdel	2 8539,12286 8560,12326
+userdel	2 8540,12420 8560,12326
+userdel	2 8600,12165 8515,12242
+userdel	2 8515,12242 8610,12254
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1131404400,
+         'text' => 'B 87; (Beeskow-Lübben); zw. Abzw. Wittmannsdorf und Abzw. Dollgen Straßenbauarbeiten Vollsperrung 10.10.2005-07.11.2005 ',
+         'from' => 1128808800,
+         'data' => 'userdel	2 58111,-41188 60430,-38587
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1128981600,
+         'text' => 'B 87; (Beeskow-Lübben); zw. Trebatsch und Abzw. Wittmannsdorf Straßenbauarbeiten Vollsperrung 04.10.2005-10.10.2005 ',
+         'from' => 1128290400,
+         'data' => 'userdel	2 62112,-36752 60430,-38587
 ',
          'type' => 'gesperrt'
        }

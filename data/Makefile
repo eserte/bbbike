@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.67 2005/08/27 19:48:42 eserte Exp eserte $
+# $Id: Makefile,v 2.68 2005/10/02 07:36:00 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -238,7 +238,9 @@ landstrassen2: landstrassen2-orig
 
 strassen_bab: strassen_bab-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) strassen_bab-orig > $@~
+	cat strassen_bab-orig |\
+		${GREPSTRASSEN} -v -sectionrx "Autobahnen in Planung" |\
+	    $(CONVERT2HAFAS) -basefile strassen_bab-orig > $@~
 	cp $@~ $@
 	rm $@~
 	-@$(READONLY) $@
@@ -302,6 +304,7 @@ $(i)bahnhof_bg:	$(i)bahnhof-orig
 	(echo "#: title: Fahrradfreundliche Zugänge bei der $(i:U)-Bahn"; \
 	 echo "#: category_image.bg: behindertengerecht.gif"; \
 	 echo "#: category_image.bf: behindertenfreundlich.gif"; \
+	 [ "$(i)" = "s" ] && echo "#: note: http://www.s-bahn-berlin.de/fahrplanundnetz/sbahnhof_anzeige.php?ID=103"; \
 	 echo "#:") > $@
 	perl -I../lib -I.. -MStrassen::Core -MObject::Iterate=iterate -e '\
 	$$s=Strassen->new(shift, UseLocalDirectives => 1);\
@@ -765,8 +768,10 @@ check-disabled:	.check_label
 	$(CHECK_NEIGHBOUR) -type standard -data radwege_exact
 	@touch $@
 
-.check_qualitaet_s:	qualitaet_s strassen
-	$(CHECK_NEIGHBOUR) -type standard -data qualitaet_s
+.check_qualitaet_s:	qualitaet_s strassen fragezeichen ${PERSISTENTTMPDIR}/strassen_in_planung.bbd
+	$(CHECK_NEIGHBOUR) -type standard -data qualitaet_s \
+		-against strassen -against fragezeichen \
+		-against ${PERSISTENTTMPDIR}/strassen_in_planung.bbd
 	@touch $@
 
 .check_qualitaet_l:	qualitaet_l landstrassen landstrassen2

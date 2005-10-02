@@ -1,5 +1,5 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.38 2005/10/01 12:24:36 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.38 2005/10/01 12:24:36 eserte Exp eserte $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -1360,7 +1360,7 @@ nur Richtung O	X 8142,7221
 	X 8677,17154
 	X 9727,17804
 	X 11645,16616
-	X 11550,16068
+	F 11550,16068
 	X 12097,16263
 	X 12409,16475
 	X 12743,15811
@@ -1419,7 +1419,7 @@ nur Richtung O	X 8142,7221
 	X 7162,15436
 	X 7020,15314
 	X 7285,14854
-	X 8619,13689
+	F 8619,13689
 	X 8456,15235
 	X 9443,15430
 	X 9917,15613
