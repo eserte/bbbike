@@ -1,5 +1,5 @@
 #: title: Strassen-Koordinaten (standard coords)
-#: version: $Id: strassen-orig,v 4.102 2005/10/01 12:24:42 eserte Exp eserte $
+#: version: $Id: strassen-orig,v 4.104 2005/10/03 16:47:14 eserte Exp eserte $
 #: title.de: Straßen und Plätze in Berlin
 #: title.en: Streets and places in Berlin
 #:
@@ -2971,7 +2971,7 @@ Gosener Damm	H 28317,891 28543,675 28635,587 28673,548 28812,490
 Gosener Landstr.	H 28812,490 29372,561 29598,636 30217,398 30624,266 30839,106 31033,6 31127,-45 31219,-87 31320,-129 31656,-434
 Grünbergallee	N 20792,-576 20386,-555 20315,-653 20161,-651
 Grünbergallee	N 20146,-541 19834,-535 19742,-528
-Bahnübergang Grünbergallee	NN 20161,-651 20149,-575 20146,-541
+(Bahnübergang Grünbergallee)	NN 20161,-651 20149,-575 20146,-541
 Kirschweg	N 19742,-528 19367,-491
 Brigittenweg	N 19367,-491 19034,-405
 Siriusstr. (Altglienicke)	N 19034,-405 18683,-285
@@ -2989,7 +2989,7 @@ Ernst-Ruska-Ufer	N 20201,2392 20100,2373 19919,2384 19592,2403 19103,2442 18927,
 Albert-Einstein-Str.	N 19103,2442 19095,2479 19207,2592 19325,2701 19516,2877 19723,3068
 Rutherfordstr.	N 19207,2592 19071,2746
 Markomannenstr.	N 20348,580 20387,705 20552,903 20653,1179 20706,1328
-Am Seegraben	HH 19723,-1031 20161,-651
+Am Seegraben (Bohnsdorf, Altglienicke)	HH 19723,-1031 20161,-651
 (B96a)	HH 20161,-651 20237,-581 20602,-318 20761,-171 21315,454 21563,782 21668,982 21829,1351 21862,1532 21819,1595 21541,1739
 Drusenheimer Weg	H 11475,1404 11523,1292 11540,1253 11625,1203 11707,1128 11754,1021 11778,829
 Drusenheimer Weg	N 11778,829 11794,550
@@ -6124,7 +6124,7 @@ Spandauer Burgwall	N -3764,13270 -3706,13288 -3632,13304 -3575,13284 -3514,13205
 Brüderstr. (Spandau)	N -3974,12914 -3835,12856 -3713,12860 -3641,12861 -3372,12935
 Konkordiastr.	N -4065,12382 -4069,12558 -4039,12641 -4009,12735
 #: title: Plätze in Berlin
-#: version: $Id: plaetze-orig,v 4.39 2005/10/01 12:21:11 eserte Exp $
+#: version: $Id: plaetze-orig,v 4.40 2005/10/03 16:47:13 eserte Exp $
 #:
 Hackescher Markt	Pl 10264,13097
 Rosenthaler Platz	Pl 10177,13766

@@ -196,6 +196,13 @@ sub add_button {
 		   $main::top->bind("<F12>"=> \&find_nearest_hoehe);
 	       }
 	      ],
+	      [Button => "Add Berlin.coords.data",
+	       -command => sub {
+		   my $f = "$bbbike_rootdir/tmp/Berlin.coords.bbd";
+		   if ($main::coord_system ne 'standard') { $f .= "-orig" }
+		   add_new_layer("p", $f);
+	       }
+	      ],
 	      [Button => "Show vmz diff",
 	       -command => \&show_vmz_diff,
 	      ],

@@ -6178,6 +6178,7 @@ sub set_bindings {
 
     if (!$no_map) {
 	bind_nomod($top, '<Key-M>' => sub { $map_draw = 1; getmap() });
+	$top->bind('<Control-Key-M>' => sub { delete_map() });
     }
 
     $top->bind("<BackSpace>" => \&mouse_dellast);
