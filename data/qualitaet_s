@@ -1476,7 +1476,7 @@ Seelingstr.: Asphalt	Q0 3091,12071 2924,12047 2703,12015 2504,11990
 Claszeile: Kopfsteinpflaster	Q2 777,966 657,1524 644,1578 614,1576 537,1870
 Borstellstr.: mäßiges Kopfsteinpflaster	Q2 6244,4331 6410,4302 6505,4363 6544,4392 6526,4475 6655,4617 6780,4751 6862,4735
 Promenade am Teltowkanal: gut befahrbar	Q0 6645,4254 6224,4307 6144,4315 6013,4327
-Seecktstr.: Asphalt	Q0 -4259,13267 -3998,13138
+Seecktstr.: Asphalt	Q0 -4281,13310 -4007,13187
 Budsiner Str.: asphaltiert	Q0 19790,11445 20126,11356
 Schlochauer Str.: asphaltiert	Q0 19778,11260 19790,11445 19810,11585 19881,11591
 Arnold-Zweig-Str.: Asphalt	Q0 11870,17522 11492,17460 11243,17421 11100,17396
@@ -1664,10 +1664,10 @@ Eiskeller - Schönwalder Allee: Asphalt	Q0 -6791,20816 -7102,20371 -7586,20088 -7
 Radelandstr.: unbefestiger Weg	Q1 -6257,17330 -6445,17503 -6603,17532 -6968,17717
 Schönwalder Allee: asphaltiert	Q0 -6099,20718 -6459,20769 -6791,20816
 (Falkenseer Chaussee - Maikäferweg): Parkweg (Asphalt und Schotter)	Q0 -7107,16186 -7051,16316 -7049,16448 -7041,16712 -6960,16769 -6971,16889
-Melanchthonstr. (Spandau): grobes Kopfsteinpflaster	Q3 -4143,12336 -4160,12512
-(Weverstr. - Gatower Str.): asphaltiert	Q0 -4143,12336 -4334,12334
-(Südpark): wassergebundene Decke	Q1 -3707,11693 -3726,11773 -3826,11901 -3890,11992 -3985,12056 -4040,12050
-(Südpark): wassergebundene Decke	Q1 -3919,11761 -3918,11803 -4064,11965 -4040,12050 -4085,12081 -4128,12196 -4143,12336
+Melanchthonstr. (Spandau): grobes Kopfsteinpflaster	Q3 -4154,12379 -4167,12554
+(Weverstr. - Gatower Str.): asphaltiert	Q0 -4154,12379 -4340,12375
+(Südpark): wassergebundene Decke	Q1 -3707,11693 -3712,11714 -3732,11772 -3826,11901 -3883,12053 -3985,12056 -4040,12050
+(Südpark): wassergebundene Decke	Q1 -4009,11789 -4004,11814 -4070,12006 -4040,12050 -4085,12081 -4117,12199 -4154,12379
 (Heerstr. - Dorfstr.): fester Waldweg	Q2 -3159,11519 -3004,12251 -2870,12425 -2778,12407
 (Glühwürmchenweg - Pionierstr.): rauher Asphalt	Q1 -6187,16296 -6162,16287 -6018,16250 -5960,16441
 Maikäferweg: asphaltiert	Q0 -6478,16674 -6855,16873 -6971,16889 -7102,16895 -7257,16925
@@ -1941,7 +1941,7 @@ Brodowiner Ring: Asphalt	Q0 22215,16343 22192,16165 22290,16146 22400,16226 2240
 Parsteiner Ring: Asphalt	Q0 22406,16309 22428,16462 22321,16553 22250,16468 22215,16343
 Bauhüttenweg: Asphalt	Q0 12703,2454 13238,2521 13339,2611
 Elberfelder Str.: schlechtes Kopfsteinpflaster	Q3 5762,13155 5771,12972 5757,12770 5752,12662
-Zimmerstr. (Spandau): Kopfsteinpflaster	Q2 -3944,12929 -3819,12874 -3642,12886
+Zimmerstr. (Spandau): Kopfsteinpflaster	Q2 -3937,12971 -3820,12921 -3706,12926 -3650,12929
 Reiherbeize: Kopfsteinpflaster	Q2 593,4262 460,4479
 Im Fischtal: gutes Kopfsteinpflaster	Q1 744,4567 666,4339 593,4262 510,4202 354,4152
 Archenholdstr.: schlechtes Kopfsteinpflaster	Q3 16892,10731 16964,10902 17275,11626
@@ -2036,7 +2036,7 @@ Bernhard-Lichtenberg-Str.: Kopfsteinpflaster	Q2 12384,14600 12496,14515 12685,14
 Gemsenpfad: fester Sandweg	Q1 -757,22587 -700,22746 -606,22857
 Ludwig-Renn-Str.: Asphalt	Q0 20479,16155 20504,16204 20567,16320 20750,16226 20865,16440 20948,16612 21017,16737 20843,16829
 (Waldweg über den Beyschlagtunnel): mäßiger fester Sandweg	Q2 332,22372 742,22666
-Weverstr.: mäßiger Asphalt	Q1 -4143,12336 -4054,12337 -3867,12337 -3754,12339 -3609,12348 -3247,12362
+Weverstr.: mäßiger Asphalt	Q1 -4154,12379 -4065,12382 -3978,12385 -3867,12388 -3760,12392 -3617,12396 -3441,12402 -3245,12406
 Buggenhagenstr.: mäßiger Beton	Q2 14425,13780 14381,13615
 Karlstadter Str.: mäßiger Asphalt	Q1 11500,18335 11598,18169 11656,18013
 Utrechter Str.: Kopfsteinpflaster	Q2 7043,15793 7196,15964 7279,16057 7491,16072
@@ -2737,3 +2737,15 @@ Ilmenauer Str.: Kopfsteinpflaster	Q2 2551,8183 2552,8419
 (Parkweg Reichsstr.): Parkweg	Q1 -264,13009 -208,12938 -142,12850 -67,12779 23,12739
 (Machandelweg - Reichsstr.): Kleinpflaster	Q1 -185,12822 -166,12849 -142,12850
 (Machandelweg - Reichsstr.): Parkweg	Q1 -142,12850 -112,12866
+Rodensteinstr.: Asphalt	Q0 -4679,11489 -4821,11560 -4904,11601 -4996,11648 -5081,11690 -5164,11732 -5268,11795 -5332,11843
+Pfälzische Str.: Beton	Q0 -5003,11937 -4945,11904 -4876,11867 -4801,11826 -4726,11782 -4590,11709
+Winzerstr.: Beton	Q0 -4935,11273 -4821,11560 -4726,11782 -4687,11885
+Folkungerstr.: Beton	Q0 -5046,11311 -4904,11601 -4801,11826
+Falstaffweg: Beton	Q0 -5168,11354 -4996,11648 -4876,11867 -4836,11944
+Kattfußstr.: Asphalt	Q0 -5275,11392 -5081,11690
+Kattfußstr.: Beton	Q0 -5081,11690 -4945,11904
+Steinmeisterweg: Beton	Q0 -5499,11493 -5435,11573 -5268,11795 -5029,12107
+Fahremundstr.: Beton	Q0 -5435,11573 -5495,11618 -5332,11843 -5110,12134
+Börnicker Str.: Beton	Q0 -4310,11882 -4303,11925 -4095,11993
+Graetschelsteig: Beton	Q0 -4395,12178 -4226,12131 -4195,12139
+(Börnicker Str. - Südpark): Parkweg	Q1 -4095,11993 -4070,12006

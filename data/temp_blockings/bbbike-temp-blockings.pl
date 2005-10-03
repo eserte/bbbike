@@ -1694,9 +1694,9 @@ EOF
        text  => 'Wilhelmstraße, Straße gesperrt bis 03.04.2005 23:00 Uhr (Frühlingsfest zwischen Pichelsdorfer Straße und Adamstraße). ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -3880,13032 -3796,13312
-userdel	2 -3880,13032 -3944,12929 -4025,12801
-userdel	2 -4025,12801 -4137,12651
+userdel	2 -3887,13057 -3791,13357
+userdel	2 -3887,13057 -3937,12971 -3974,12914 -4028,12831
+userdel	2 -4028,12831 -4150,12689
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -2277,9 +2277,9 @@ EOF
        text  => 'Pichelsdorfer Straße, zwischen Kreuzung Wilhelmstraße und Kreuzung Betckestraße Straße gesperrt bis 03.07.2005 23:00 Uhr (Sommerfest Wilhelmstadt) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -3642,12886 -3796,13312
-userdel	2 -3642,12886 -3626,12739
-userdel	2 -3614,12529 -3626,12739
+userdel	2 -3650,12929 -3669,13015 -3764,13270 -3791,13357
+userdel	2 -3650,12929 -3641,12861 -3629,12781
+userdel	2 -3621,12575 -3624,12674 -3629,12781
 EOF
      },
      { from  => 1121032800, # 2005-07-11 00:00

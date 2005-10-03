@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.190 2005/10/01 22:34:09 eserte Exp $
+# $Id: bbbike,v 3.190 2005/10/01 22:34:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -2150,7 +2150,8 @@ sub do_iconframe {
 		(-label => M"Autobahnen/Kfz-Straßen",
 		 -variable => \$str_draw{'sBAB'},
 		 -command => sub {
-		     plot("str", "sBAB", -filename => "strassen_bab");
+		     plot("str", "sBAB",
+			  -filename => get_strassen_file("strassen_bab"));
 		 },
 		);
 	}

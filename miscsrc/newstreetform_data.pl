@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: newstreetform_data.pl,v 1.20 2005/07/19 23:28:35 eserte Exp $
+# $Id: newstreetform_data.pl,v 1.21 2005/10/03 16:45:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -145,6 +145,7 @@ if (!@ARGV && !$backup_file) {
 
 	my $indexfile = $destdir . "/newstreetindex.html";
 	open(my $index, "> $indexfile") or die "Can't write to $indexfile: $!";
+	print $index (my_html_header());
 	print $index "<table>\n";
 	foreach my $f (reverse @output_files) {
 	    my $date = $file2header{$f}{date};
@@ -155,11 +156,17 @@ if (!@ARGV && !$backup_file) {
 	    }
 	    my $base = basename $f;
 	    my $status = $file2status{$f};
-	    (my $status_html = $status) =~ s{\b(tick)\b}{<span style="color:red;">$1</span>};
 	    my $email = $file2data{$f}{email} || "";
-	    print $index qq{<tr><td><a href="$base">$base</a></td><td>$file2data{$f}{strname}</td><td>$date</td><td>$status_html</td><td>$email</td></tr>\n};
+	    my $css = ($status =~ /\b(tick)\b/  ? "rectick" :
+		       $status =~ /\b(reply)\b/ ? "recdone" :
+		       $status =~ /\b(read)\b/  ? "recmaybedone" :
+		       "recundone"
+		      );
+	    my $status_html = $status; # no HTML transform yet needed
+	    print $index qq{<tr class="$css"><td><a href="$base">$base</a></td><td>$file2data{$f}{strname}</td><td>$date</td><td>$status_html</td><td>$email</td></tr>\n};
 	}
 	print $index "</table>\n";
+	print $index (my_html_footer());
 	chmod 0644, $indexfile;
     }
 }
@@ -327,6 +334,30 @@ sub data_is_empty {
     }
     1;
 }
+
+sub my_html_header {
+    <<EOF;
+<html>
+<head>
+ <title>Neue Straﬂen</title>
+ <style type="text/css">
+.recdone   { color:#00b000; }
+.recmaybedone { color:#808000; }
+.recundone { color:#b00000; }
+.rectick   { color:#ff0000; }
+ </style>
+</head>
+<body>
+EOF
+}
+
+sub my_html_footer {
+    <<EOF;
+</body>
+</html>
+EOF
+}
+
 
 __END__
 
