@@ -14,6 +14,10 @@ Legend:
 
 =over
 
+=item * (H3)
+
+insert/delete etc. functionality: add an easy way to use custom layers
+
 =item * (M3)
 
 Hoehen-Layer reagiert nicht auf Reload. Workaround: Layer ausschalten,
@@ -1125,6 +1129,11 @@ einführen, um besseres Stacking zu machen (unterhalb von Straßen).
 
 =over
 
+=item * (E4)
+
+Check if Object::Iterate will really be available in the next
+windistro.
+
 =item * (M1)
 
 Maybe under Windows or for all click-to-focus systems: make bbbike
@@ -1434,6 +1443,11 @@ E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.
 =head2 Datenhandling (make, conversion ...)
 
 =over
+
+=item * (M3)
+
+Check the coordinates of Berlin.coords.data against the corresponding
+streets in strassen-orig.
 
 =item * (M3)
 
@@ -2139,6 +2153,11 @@ Only needed if my functions would be too slow one day.
 =head1 MapServer
 
 =over
+
+=item * (H3)
+
+Make it easy to show additional custom layers (with limited mapserver
+mapfile functionality???).
 
 =item * (M2)
 

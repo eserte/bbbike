@@ -285,6 +285,8 @@ sub show_lbvs_diff {
 sub show_any_diff {
     my $file = shift;
     # To pre-generate cache:
+    # XXX make sure that only ONE check_bbbike_temp_blockings process
+    # runs at a time...
     system("$bbbike_rootdir/miscsrc/check_bbbike_temp_blockings >/dev/null 2>1 &");
     require BBBikeAdvanced;
     require File::Basename;

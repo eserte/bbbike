@@ -372,14 +372,7 @@ userdel	q4 53252,-90440 53805,-90240
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1128376800,
-         'text' => 'L 17; (LG Berlin-Hennigsdorf); zw. Kreisverkehr und Hennigsdorf Straßenbau Vollsperrung 08.08.2005-03.10.2005 ',
-         'from' => 1123365600,
-         'data' => 'userdel	2 -2800,25478 -2446,25386
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1136069999,
@@ -666,21 +659,7 @@ userdel	q4 -7873,66589 -7851,66418
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1128398400,
-         'text' => 'Ebertstraße, Pariser Platz: Veranstaltung, Straße gesperrt bis Di 06:00 ',
-         'from' => 1128117600,
-         'data' => 'userdel	2 8581,11896 8595,12066
-userdel	2 8581,11896 8571,11846
-userdel	2 8595,12066 8600,12165
-userdel	2 8539,12286 8515,12242
-userdel	2 8539,12286 8560,12326
-userdel	2 8540,12420 8560,12326
-userdel	2 8600,12165 8515,12242
-userdel	2 8515,12242 8610,12254
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1131404400,
          'text' => 'B 87; (Beeskow-Lübben); zw. Abzw. Wittmannsdorf und Abzw. Dollgen Straßenbauarbeiten Vollsperrung 10.10.2005-07.11.2005 ',
