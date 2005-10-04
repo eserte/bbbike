@@ -4,7 +4,7 @@
 # $Id: Hooks.pm,v 1.6 2005/04/05 22:31:19 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2005 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -80,17 +80,20 @@ sub execute_except {
     my %except = (ref $except_ref eq 'ARRAY'
 		  ? map { ($_=>1) } @$except_ref
 		  : ($except_ref => 1));
+    my %ret;
     foreach my $hook_def (@{ $self->{Order} }) {
-	if ($except{$hook_def->{Label}}) {
-	    warn "Skip hook $hook_def->{Label} of $self->{Label}\n"
+	my $label = $hook_def->{Label};
+	if ($except{$label}) {
+	    warn "Skip hook $label of $self->{Label}\n"
 		if $VERBOSE;
 	    next;
 	}
 	if ($VERBOSE) {
-	    warn "Execute hook $hook_def->{Label} of $self->{Label}\n";
+	    warn "Execute hook $label of $self->{Label}\n";
 	}
-	$hook_def->{Code}->(@args);
+	$ret{$label} = $hook_def->{Code}->(@args);
     }
+    +{ReturnCodes => \%ret};
 }
 
 sub DESTROY {
