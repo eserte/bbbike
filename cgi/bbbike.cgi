@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.32 2005/08/08 22:52:53 eserte Exp $
+# $Id: bbbike.cgi,v 7.32 2005/08/08 22:52:53 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -92,6 +92,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $use_module
 	    $cannot_gif_png $cannot_jpeg $cannot_pdf $cannot_svg $can_gif
 	    $can_wbmp $can_palmdoc $can_berliner_stadtplan_post
+	    $can_google_maps
 	    $can_mapserver $mapserver_address_url
 	    $mapserver_init_url $no_berlinmap $max_plz_streets $with_comments
 	    $with_cat_display
@@ -3719,6 +3720,7 @@ EOF
 	    print " <option " . $imagetype_checked->("svg") . ">SVG\n" unless $cannot_svg;
 	    print " <option " . $imagetype_checked->("mapserver") . ">MapServer\n" if $can_mapserver;
 	    print " <option " . $imagetype_checked->("berlinerstadtplan") . ">www.berliner-stadtplan.com\n" if $can_berliner_stadtplan_post;
+	    print " <option " . $imagetype_checked->("googlemaps") . ">Google Maps (experimental!!!)\n" if $can_google_maps;
 	    print " </select></span>\n";
 	    print "<br>\n";
 
@@ -4152,6 +4154,13 @@ sub draw_route {
 	     defined $q->param("padx") ? (-padx => $q->param("padx")) : (),
 	     defined $q->param("pady") ? (-pady => $q->param("pady")) : (),
 	    );
+	return;
+    }
+
+    if (defined $q->param('imagetype') &&
+	$q->param('imagetype') eq 'googlemaps') {
+	my $q2 = CGI->new({coords => $q->param("coords")});
+	print $q->redirect("http://www.radzeit.de/cgi-bin/bbbikegooglemap.cgi?" . $q2->query_string);
 	return;
     }
 

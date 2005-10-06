@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.38 2005/07/30 23:17:09 eserte Exp $
+# $Id: GpsmanData.pm,v 1.39 2005/10/05 21:25:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005 Slaven Rezic. All rights reserved.
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.38 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.39 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -839,6 +839,34 @@ sub convert_to_route {
 	}
     }
     @res;
+}
+
+sub as_gpx {
+    my($self) = @_;
+    require XML::LibXML;
+    my $dom = XML::LibXML::Document->new('1.0', 'UTF8');
+    my $gpx = $dom->createElement("gpx");
+    $dom->setDocumentElement($gpx);
+    for my $chunk (@{ $self->Chunks }) {
+	if ($chunk->Type eq $chunk->TYPE_WAYPOINT) {
+	    for my $wpt (@{ $chunk->Waypoints }) {
+		my $wptxml = $gpx->addNewChild(undef, "wpt");
+		$wptxml->setAttribute("lat", $wpt->Latitude);
+		$wptxml->setAttribute("lon", $wpt->Longitude);
+		my $namexml = $wptxml->addNewChild(undef, "name");
+		$namexml->appendText($wpt->Ident);
+	    }
+	} elsif ($chunk->Type eq $chunk->TYPE_TRACK) {
+	    my $trkxml = $gpx->addNewChild(undef, "trk");
+	    my $trksegxml = $trkxml->addNewChild(undef, "trkseg");
+	    for my $wpt (@{ $chunk->Track }) {
+		my $trkptxml = $trksegxml->addNewChild(undef, "trkpt");
+		$trkptxml->setAttribute("lat", $wpt->Latitude);
+		$trkptxml->setAttribute("lon", $wpt->Longitude);
+	    }
+	}
+    }
+    $dom->toString;
 }
 
 1;

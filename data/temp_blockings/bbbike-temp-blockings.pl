@@ -2886,4 +2886,52 @@ EOF
 userdel	2 62112,-36752 60430,-38587
 EOF
      },
+     { from  => 1128808800, # 2005-10-09 00:00
+       until => 1131836400, # 2005-11-13 00:00
+       text  => 'B 198; OD Prenzlau, Dr.-Wilhelm-Külz-Str. grundh. Straßenbau Vollsperrung 10.10.2005-12.11.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 39720,101882 39312,101913
+EOF
+     },
+     { from  => 1128376800, # 2005-10-04 00:00
+       until => 1128722400, # 2005-10-08 00:00
+       text  => 'B 273; zw. Kremmen und Schwante Straßenbauarbeiten Vollsperrung 05.10.2005-07.10.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -14038,37008 -12791,36632
+EOF
+     },
+     { from  => 1128549600, # 2005-10-06 00:00
+       until => 1128895200, # 2005-10-10 00:00
+       text  => 'B 87; zw. Schlieben und Kolochau Deckeneinbau Vollsperrung 07.10.2005-09.10.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 7711,-74770 8300,-74790
+EOF
+     },
+     { from  => 1120341600, # 2005-07-03 00:00
+       until => 1130018400, # 2005-10-23 00:00
+       text  => 'K 6301; (Bötzow-Wansdorf-Pausin); OD Wansdorf Kanal- und Straßenbau Vollsperrung 04.07.2005-22.10.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -11337,25571 -11509,25591
+EOF
+     },
+     { from  => 1126562400, # 2005-09-13 00:00
+       until => 1130709600, # 2005-10-30 23:00
+       text  => 'L 201; (Nauener Chaussee); OD Falkensee, zw. F.-Ludwig-Jahn-Str. u. Innstr. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 14.09.2005-30.10.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -12601,19517 -12139,18985
+EOF
+     },
+     { from  => 1128549600, # 2005-10-06 00:00
+       until => 1128808800, # 2005-10-09 00:00
+       text  => 'L 96; (B 1 Neubensdorf-Rathenow); zw. Milow und Bützer Straßenbauarbeiten Vollsperrung 07.10.2005-08.10.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -64341,12416 -64162,11951
+EOF
+     },
     );

@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.92 2005/10/03 16:47:13 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.93 2005/10/06 07:18:04 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
@@ -160,7 +160,7 @@ Ackerstr.: Kopfsteinpflaster	Q2 9737,14126 9628,14215
 Gartenstr.: Kopfsteinpflaster	Q2 8870,14637 8686,14934 8570,15107
 Liesenstr.: Kopfsteinpflaster, OK	Q1 8686,14934 8562,14798
 Am Kupfergraben: teilweise schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 9529,12925 9614,12893 9661,12876
-Am Kupfergraben: Kopfsteinpflaster	Q2 9867,12651 9754,12775 9661,12876
+Am Kupfergraben: Kopfsteinpflaster	Q2 9867,12651 9810,12712 9754,12775 9661,12876
 Geschwister-Scholl-Str.: Kopfsteinpflaster	Q2 9529,12925 9550,12760
 Marchlewskistr.: Kopfsteinpflaster	Q2 13226,11934 13280,11834 13303,11791
 Pillauer Str.: Kopfsteinpflaster	Q2 13377,11644 13290,11581
@@ -787,7 +787,7 @@ Barther Str.: Radweg teilweise mit Schotter, Fahrbahn OK	Q1 16697,17695 16607,17
 Märchenweg: Feldweg, OK	Q1 15634,19060 15098,19112 14977,19129 14743,19174 14573,19281 14288,19459
 Am Bürgerpark: Kopfsteinfplaster	Q2 9365,18062 9410,18021
 Wilhelm-Kuhr-Str.: Kopfsteinfplaster	Q2 9410,18021 9343,17985
-Cantianstr.: mäßiges Kopfsteinfplaster	Q2 10713,15746 10759,15622 10896,15250
+Cantianstr.: mäßiges Kopfsteinfplaster	Q2 10713,15746 10759,15622 10786,15544 10896,15250
 Rosenthaler Str.: teilweise mäßiger Asphalt	Q1 12168,21218 12074,21243 11870,21574
 Lise-Meitner-Str.: Verbundsteine	Q1 3735,13618 3717,13743
 Lise-Meitner-Str.: Beton	Q0 3721,13274 3742,13416 3741,13495 3744,13537 3735,13618
@@ -1033,7 +1033,7 @@ Dubrowstr.: Kopfsteinpflaster	Q2 -1453,3166 -1187,3264
 Gabelsbergerstr.: Kopfsteinpflaster	Q2 14381,12205 14451,12396
 Hübnerstr.: Kopfsteinpflaster	Q2 13960,12866 13884,12679
 Heidenfeldstr.: Kopfsteinpflaster	Q2 13609,13427 13433,13346
-Neue Promenade: unebenes Pflaster	Q2 10294,13070 10132,12941
+Neue Promenade: unebenes Pflaster	Q2 10294,13070 10185,12982 10132,12941
 Griebnitzseepromenade: Waldweg	Q1 -7266,-450 -7318,-515 -7358,-605 -7495,-716 -7585,-736 -7759,-850 -7908,-989 -8071,-1144 -8119,-1211 -8207,-1240 -8253,-1241 -8294,-1163 -8404,-1074 -8495,-1054 -8605,-995 -8628,-959 -8652,-865 -8733,-751 -8770,-720 -8886,-708 -8927,-642 -9009,-582 -9138,-521 -9182,-515 -9183,-381 -9208,-357 -9261,-272 -9399,-139
 (Frankfurter Allee, Nebenfahrbahn): Kopfsteinpflaster, OK	Q1 16870,11920 16746,11921
 Nalepastr.: Betonstr., Eisenbahnschienen	Q1 17039,7685 17043,7617
@@ -1354,7 +1354,7 @@ Majakowskiring: schlechtes Kopfsteinpflaster	Q3 9987,18757 9951,18744
 Majakowskiring: asphaltiert mit den üblichen Schlaglöchern	Q1 10373,18889 10307,18915 10184,18875 10055,18831 9987,18757 10037,18715 10203,18762 10354,18814 10373,18889
 Majakowskiring: asphaltiert mit den üblichen Schlaglöchern	Q1 10440,18910 10373,18889
 Güllweg: mäßiges Kopfsteinpflaster	Q2 10128,19110 10068,19276 10059,19304 10018,19429
-Buchholzer Str.: Asphalt	Q0 10929,15516 11055,15504 11183,15485
+Buchholzer Str.: Asphalt	Q0 10930,15522 11055,15504 11183,15485
 Gneiststr.: Kopfsteinpflaster	Q2 11119,15385 11040,15398 10917,15418
 Anne-Frank-Str.: Asphalt	Q0 19518,502 19853,350
 Strelitzer Str.: Kopfsteinpflaster	Q2 9864,14181 9801,14288 9685,14495 9621,14624
@@ -2751,3 +2751,12 @@ Graetschelsteig: Beton	Q0 -4395,12178 -4226,12131 -4195,12139
 (Börnicker Str. - Südpark): Parkweg	Q1 -4095,11993 -4070,12006
 Am Omnibushof: Asphalt	Q0 -4626,12270 -4395,12178
 (Mauerweg Spandau): Asphalt	Q1 -5549,11221 -5738,11326 -6002,11475 -6076,11517 -6168,11581 -6390,11675 -6457,11723 -6498,11749 -6567,11790 -6930,12027 -6979,12089 -7169,12141 -7234,12309 -7330,12376 -7332,12557 -7266,12562 -7278,12598 -7300,12663 -7325,12801 -7312,12863
+Milastr.: Asphalt mit Löchern	Q1 10930,15522 10786,15544
+Zolastr.: Asphalt	Q1 10902,13604 10878,13565
+Am Zwirngraben: Gehwegplatten, Kopfsteinpflaster	Q1 10336,13037 10185,12982 10117,12966
+Heidereutergasse: Asphalt	Q0 10466,12827 10428,12799
+(Rosenstr. - Karl-Liebknecht-Str.): Gehwegplatten	Q0 10489,12803 10519,12768
+Museumstr.: Asphalt	Q0 9943,12642 9884,12712
+Hegelplatz: Asphalt mit Löchern	Q1 9682,12590 9671,12644
+Bauhofstr.: Asphalt mit Löchern	Q1 9810,12712 9671,12644
+Friedrichstr. [Zufahrt]: Asphalt	Q0 9384,12448 9394,12351
