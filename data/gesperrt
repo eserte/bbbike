@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.79 2005/10/03 16:47:11 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.81 2005/10/06 22:48:31 eserte Exp $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -547,7 +547,9 @@ Bödikerstr. -> Stralauer Allee: unbequem passierbare Straße	3 14439,10496 14396,
 Stralauer Allee -> Bödikerstr.: unbequem passierbare Straße	3 14210,10437 14396,10345 14439,10496
 Sonnenallee -> Schönstedtstr.: unbequemes Passieren des Mittelstreifens (parkende Autos)	3 12772,8612 12742,8635 12649,8535
 Schönstedtstr. -> Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3 12649,8535 12742,8635 12630,8722
-Rolandufer -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3 10583,12206 10621,12207 10675,12280
+Mühlendamm -> Poststr.: unbequemes Passieren des Mittelstreifens	3 10621,12207 10659,12259 10629,12293
+Poststr. -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3 10629,12293 10659,12259 10675,12280
+Rolandufer -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3 10583,12206 10621,12207 10659,12259
 Mühlendamm -> Rolandufer: unbequemes Passieren des Mittelstreifens	3 10567,12135 10621,12207 10583,12206
 Kurfürstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3 5484,10810 5351,10760 5329,10422
 Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3 5329,10422 5351,10760 5229,10716
@@ -980,3 +982,7 @@ Mittelstr.	1 9465,12460 9384,12448 9335,12442
 Friedrichstr. [Zufahrt]	1 9384,12448 9394,12351
 Museumstr.	2:inwork 9943,12642 9884,12712
 Bauhofstr.	1 9810,12712 9671,12644
+Kleine Jägerstr.	2:inwork 9976,11909 10055,11950
+Alte Leipziger Str.	2:inwork 10076,11840 10121,11906
+Jägerstr. (Mitte)	2:inwork 9907,12055 10006,12065
+Kleine Kurstr.	2:inwork 10182,11758 10249,11821

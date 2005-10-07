@@ -54,13 +54,13 @@ $minlength = $minlength*1000 if defined $minlength;
 
 my $datafile = shift || "-";
 
-my $s = Strassen->new($datafile, UseLocalDirectives => 1);
+my $s = Strassen->new($datafile, UseLocalDirectives => 1, PreserveLineInfo => 1);
 my $new_s = Strassen->new;
 $s->init;
 while(1) {
     my $r = $s->next;
     if (!$r->[1]) {
-	die "Empty coords array found in line " . $s->pos . ", file " . $datafile;
+	die "Empty coords array found in line " . $s->line . ", file " . $datafile;
     }
     last if !@{ $r->[1] };
     if (defined $name) { if ($r->[0] eq $name) { next if $v } else { next unless $v } }

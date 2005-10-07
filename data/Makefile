@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.69 2005/10/03 16:03:19 eserte Exp $
+# $Id: Makefile,v 2.70 2005/10/06 23:33:53 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -999,7 +999,7 @@ check-$(city).coords.data:	.check_$(city)_coords_data
 .check_$(city)_coords_data: $(city).coords.data
 	env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} -c $(city).coords.data || \
 	    ( env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} $(city).coords.data | diff -u - $(city).coords.data; false )
-	perl -nle '@l=split /\|/; if (++$$x{"@l[0..2]"} > 1) { die "@l" }' $(city).coords.data
+	perl -nle '@l=split /\|/; if (++$$x{"@l[0..2]"} > 1) { die "@l" } if (@l < 3 || @l > 4) { die "@l" } ' $(city).coords.data
 	@touch $@
 .endfor
 

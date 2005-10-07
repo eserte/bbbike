@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.93 2005/10/06 07:18:04 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.95 2005/10/06 22:48:42 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
@@ -802,7 +802,7 @@ Landecker Str.: Kopfsteinpflaster	Q2 3140,8525 2973,8569
 Kufsteiner Str.: glatter Parkweg	Q1 5919,8417 5934,8220
 Rolandufer: Kopfsteinpflaster, Ausweichen auf Uferweg möglich, dort unbefestigter Weg	Q2 11278,12185 11155,12184 10945,12150
 Rolandufer/Spreeufer: gutes Kopfsteinpflaster	Q1 10945,12150 10837,12158 10660,12176
-Spreeufer: Verbundsteine	Q1 10583,12206 10502,12280 10423,12353 10422,12395
+Spreeufer: Verbundsteine	Q1 10583,12206 10492,12289 10423,12353 10422,12395
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
 Treptower Park: Schotterweg	Q2 14242,9448 14304,9538
 Am Köllnischen Park: Kopfsteinpflaster	Q2 11197,11882 11155,11750
@@ -1051,7 +1051,7 @@ Löwestr.: teilweise schlechtes Kopfsteinpflaster	Q3 13279,12639 13362,12462
 Jacobystr.: Beton	Q1 11594,12662 11260,12809 11207,12706
 Parochialstr.: Asphalt mit Schadstellen	Q1 10831,12371 10954,12394 11040,12415
 Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11025,12450 11040,12415 11094,12243
-Propststr.: Kopfsteinpflaster	Q2 10502,12280 10642,12373
+Propststr.: Kopfsteinpflaster	Q2 10492,12289 10546,12335 10598,12375 10623,12395
 (Crellestr. - Julius-Leber-Brücke): Verbundsteinpflaster	Q1 7535,9087 7582,9010 7497,8916
 Naumannstr.: Asphalt	Q0 7707,8915 7709,8770
 Inselstr.: Kopfsteinpflaster	Q2 10869,11949 10824,11992
@@ -3431,3 +3431,16 @@ Museumstr.: Asphalt	Q0 9943,12642 9884,12712
 Hegelplatz: Asphalt mit Löchern	Q1 9682,12590 9671,12644
 Bauhofstr.: Asphalt mit Löchern	Q1 9810,12712 9671,12644
 Friedrichstr. [Zufahrt]: Asphalt	Q0 9384,12448 9394,12351
+Panoramastr.: Asphalt	Q0 10793,12906 10734,12850
+Spandauer Str. [Gehweg]: Gehwegplatten	Q0 10570,12498 10593,12468 10643,12410 10714,12332
+Poststr.: Kopfsteinpflaster	Q2 10476,12432 10520,12368 10546,12335 10565,12310 10596,12268 10629,12293 10659,12259
+Nikolaikirchplatz: Kopfsteinpflaster	Q2 10623,12395 10670,12340 10629,12293 10595,12328 10565,12310
+Eiergasse: Gehwegplatten	Q0 10670,12340 10700,12315
+Am Nußbaum: Verbundsteine	Q1 10593,12468 10573,12454 10571,12409 10598,12375
+(Am Nußbaum): Verbundsteine	Q1 10571,12409 10520,12368
+Jägerstr. (Mitte): Asphalt	Q0 9651,12020 9907,12055 10006,12065
+Kleine Kurstr.: Asphalt	Q0 10182,11758 10249,11821 10275,11856
+Kreuzstr.: Asphalt	Q0 10231,11940 10209,11918
+Kleine Jägerstr.: Asphalt	Q0 9976,11909 10055,11950
+Alte Leipziger Str.: Asphalt	Q0 10076,11840 10121,11906
+Kleine Gertraudenstr.: Gehwegplatten	Q1 10332,11929 10364,11896 10387,11901

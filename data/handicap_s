@@ -1,12 +1,12 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.63 2005/10/03 16:47:12 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.65 2005/10/06 22:48:40 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
 Bendastr.: Bauarbeiten (gesehen am 2005-07-03), danach vielleicht asphaltiert?	q4::inwork 12743,6645 12756,6578 12779,6478
 Oberwallstr.: Fahrbahn wegen Bauarbeiten gesperrt, Gehweg benutzen	q4::inwork 9907,12055 9925,11947
 Am Weidendamm: Fahrtrichtung wegen Bauarbeiten gesperrt, schieben	q4::inwork; 9283,12856 9383,12915
-Unter den Linden (Mitte) Richtung Westen zwischen Schadowstr. und Wilhelmstr. Baustelle, Straße für Autos gesperrt, Radfahrer können weiterhin passieren (bis 31.08.2005)	q1::inwork; 9028,12307 8804,12280
+Unter den Linden (Mitte) Richtung Westen zwischen Schadowstr. und Wilhelmstr. Baustelle, Straße für Autos gesperrt, Radfahrer können weiterhin passieren (bis 31.12.2005)	q1::inwork; 9028,12307 8804,12280
 Alexanderstr.: von 2005-01-03 bis 2005-10-31 für Autos gesperrt, Radfahrer können weiterhin passieren. Teilweise Sperren zu den kreuzenden Straßen errichtet. 	q2::inwork 11134,12793 11207,12706 11323,12484 11333,12437 11351,12221
 Behrenstr./Bebelplatz: Einbahnstraße	q3::inwork; 9626,12227 9700,12234 9743,12239 9801,12245
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
@@ -132,7 +132,7 @@ Damaschkestr.: Gehweg, Bordsteine	q4 3562,10264 3492,10307
 Brücke Schönfließer Str.: Fußgänger	q3 10592,16022 10581,15936
 (Kolonie Bornholm 1 und 2): Fußgänger	q2 10229,16653 10198,16929
 (zum Rolandufer): Gehweg	q2 11351,12221 11278,12185
-Rolandufer/Spreeufer: Gehweg, viele Fußgänger, im Sommer Straßencafe 	q4 10837,12158 10660,12176 10583,12206 10502,12280 10423,12353 10422,12395
+Rolandufer/Spreeufer: Gehweg, viele Fußgänger, im Sommer Straßencafe 	q4 10837,12158 10660,12176 10583,12206 10492,12289 10423,12353 10422,12395
 Herthastr.: Gehweg, Bordsteine	q4 1935,9239 1932,9263
 Fuggerstr.: Gehweg	q2 6128,10319 6020,10351
 Pfalzburger Str.: Gehweg	q2 4905,10069 4909,10119
@@ -459,3 +459,12 @@ Südpark): Fußgänger	q2 -3975,12229 -3968,12138 -3883,12053 -3786,11913
 (Südpark): Fußgänger	q2 -3968,12138 -3985,12056
 (Rosenstr. - Karl-Liebknecht-Str.): Fußgänger	Q2 10489,12803 10519,12768
 Am Zwirngraben: Tische auf der Strasse, Fußgänger	Q4 10336,13037 10185,12982
+Panoramastr.: Fußgänger	q2 10793,12906 10734,12850
+Spandauer Str. [Gehweg]: Touristen	q3 10570,12498 10593,12468 10643,12410 10714,12332
+Poststr.: Touristen	q3 10476,12432 10520,12368 10546,12335 10565,12310 10596,12268 10629,12293 10659,12259
+Nikolaikirchplatz: Touristen	q3 10623,12395 10670,12340 10629,12293 10595,12328 10565,12310
+Propststr.: Touristen	q3 10492,12289 10546,12335 10598,12375 10623,12395 10643,12410
+Eiergasse: Touristen	q3 10670,12340 10700,12315
+Am Nußbaum: Touristen	q3 10593,12468 10573,12454 10571,12409 10598,12375
+(Am Nußbaum): Touristen	q3 10571,12409 10520,12368
+Kleine Gertraudenstr.: Fußgänger	q1 10332,11929 10364,11896 10387,11901

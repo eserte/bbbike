@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.79 2005/10/03 16:47:11 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.81 2005/10/06 22:48:31 eserte Exp $
 #:
 ###################################################################
 #
@@ -452,7 +452,7 @@ Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13483,1076
 Stralauer Allee: unbequemes Abbiegen	3nocross 13605,10719 13678,10685 13779,10642
 Stralauer Allee: unbequem passierbare Straße	3nocross 14210,10437 14396,10345 14564,10262
 Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 12630,8722 12742,8635 12772,8612
-Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10621,12207 10567,12135
+Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,12259 10621,12207 10567,12135
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5229,10716 5351,10760 5484,10810
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15392,12135 15437,12225 15502,12367
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3 15350,12270 15437,12225 15502,12367
@@ -826,3 +826,7 @@ Mittelstr.	1 9465,12460 9384,12448 9335,12442
 Friedrichstr. [Zufahrt]	1 9384,12448 9394,12351
 Museumstr.	2:inwork 9943,12642 9884,12712
 Bauhofstr.	1 9810,12712 9671,12644
+Kleine Jägerstr.	2:inwork 9976,11909 10055,11950
+Alte Leipziger Str.	2:inwork 10076,11840 10121,11906
+Jägerstr. (Mitte)	2:inwork 9907,12055 10006,12065
+Kleine Kurstr.	2:inwork 10182,11758 10249,11821
