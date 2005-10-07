@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.4 2005/10/05 20:18:05 eserte Exp eserte $
+# $Id: bbbikegooglemap.cgi,v 1.5 2005/10/07 07:40:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ for my $coords (param("coords")) {
 for my $wpt (param("wpt")) {
     my($name,$coord) = split /[!;]/, $wpt;
     my($x,$y) = split /,/, $coord;
-    $coord = join ",", $Karte::Polar::obj->standard2map($x,$y);
+    ($x, $y) = $Karte::Polar::obj->standard2map($x,$y);
     push @wpt, [$x,$y,$name];
 }
 
@@ -50,7 +50,12 @@ print get_html(\@polylines_polar, \@wpt);
 sub get_html {
     my($paths_polar, $wpts) = @_;
 
-    my($centerx,$centery) = map { sprintf "%.5f", $_ } split /,/, $paths_polar->[0][0];
+    my($centerx,$centery);
+    if ($paths_polar && @$paths_polar) {
+	($centerx,$centery) = map { sprintf "%.5f", $_ } split /,/, $paths_polar->[0][0];
+    } elsif ($wpts && @$wpts) {
+	($centerx,$centery) = map { sprintf "%.5f", $_ } $wpts->[0][0], $wpts->[0][1];
+    }
 
     my $zoom = 3;
 

@@ -3726,6 +3726,7 @@ EOF
 
 	    if ($sess) {
 		$sess->{routestringrep} = $string_rep;
+		$sess->{route} = \@out_route;
 		print "<input type=hidden name=coordssession value=\"$sess->{_session_id}\">";
 		untie %$sess;
  	    } else {
@@ -4051,10 +4052,12 @@ sub draw_route {
     my @cache = (exists $args{-cache} ? @{ $args{-cache} } : @no_cache);
 
     my $draw;
+    my $route; # optional Route object
 
     if (defined $q->param('coordssession') &&
 	(my $sess = tie_session($q->param('coordssession')))) {
 	$q->param(coords => $sess->{routestringrep});
+	$route = $sess->{route};
     }
 
     my $cookie;
@@ -4159,7 +4162,14 @@ sub draw_route {
 
     if (defined $q->param('imagetype') &&
 	$q->param('imagetype') eq 'googlemaps') {
-	my $q2 = CGI->new({coords => $q->param("coords")});
+	my @wpt;
+	if ($route) {
+	    for my $wpt (@$route) {
+		push @wpt, join "!", $wpt->{Strname}, $wpt->{Coord};
+	    }
+	}
+	my $q2 = CGI->new({coords => $q->param("coords"),
+			   wpt    => \@wpt});
 	print $q->redirect("http://www.radzeit.de/cgi-bin/bbbikegooglemap.cgi?" . $q2->query_string);
 	return;
     }

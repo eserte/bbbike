@@ -11361,8 +11361,8 @@ sub show_info {
 	    push @bbbike_cgi_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/bbbike.cgi" : "http://www/~eserte/bbbike/cgi/bbbike.cgi", "BBBike im WWW, lokal"];
 	}
 
+	my $zielname = "";
 	{
-	    my $zielname = "";
 	    my $is_first = 1;
 	    for my $def (@bbbike_cgi_def) {
 		my $bbbike_cgi_url = $def->[0];
@@ -11390,6 +11390,20 @@ sub show_info {
 	}
 
 	my($mapscale_scale) = $mapscale =~ /:\s*(\d+)/;
+
+	{
+	    $info_text->insert("end", "Google Maps",
+			       "link$linkcount");
+	    $show_url->($linkcount, sub {
+			    require CGI;
+			    my $wpt = "$zielname!$sx,$sy";
+			    my $q2 = CGI->new({ wpt => $wpt });
+			    my $url = "http://www.radzeit.de/cgi-bin/bbbikegooglemap.cgi?" . $q2->query_string;
+			    $url;
+			});
+	    $info_text->insert("end", "\n");
+	    $linkcount++;
+	}
 
 	{
 	    my $y_wgs = (Karte::Polar::ddd2dmm($py))[1];

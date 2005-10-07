@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.68 2005/08/10 23:43:20 eserte Exp $
+# $Id: Makefile,v 1.69 2005/10/07 07:31:41 eserte Exp $
 #
 
 # Targets:
@@ -37,6 +37,7 @@ EXTRA_MISCSRC_FILES=	bbd2esri winter_optimization.pl
 EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html
 CGI_FILES=		bbbike.cgi \
 			bbbike-data.cgi \
+			bbbikegooglemap.cgi \
 			wapbbbike.cgi \
 			mapserver_address.cgi \
 			mapserver_comment.cgi \
