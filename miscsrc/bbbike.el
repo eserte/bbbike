@@ -184,4 +184,11 @@
 ;; (setq last-kbd-macro
 ;;    [?\C-s ?" left ?\C-  ?\C-s ?\C-s ?\C-s ?\M-x ?r ?e ?c ?o ?d ?e ?- ?p ?e ?r ?l ?s ?t ?r ?i ?n ?g ?- ?t ?o ?- ?l ?a ?t ?i ?n ?1 return ?\C-a])
 
+(defun bbbike-google-map ()
+  (interactive)
+  (let ((coords (buffer-substring (region-beginning) (region-end))))
+    (setq coords (replace-regexp-in-string " " "!" coords))
+    (browse-url (concat "http://www.radzeit.de/cgi-bin/bbbikegooglemap.cgi?coords=" coords)))
+  )
+
 (provide 'bbbike-mode)

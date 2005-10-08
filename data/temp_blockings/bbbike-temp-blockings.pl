@@ -1488,7 +1488,7 @@ EOF
        text  => 'Späthstraße (Treptow) In beiden Richtungen zwischen A113 und Königsheideweg Störungen durch geplatzte Wasserleitung, Straße gesperrt (bis 28.02.2005) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 14705,5176 14994,5193
+userdel	2 14687,5215 14994,5193
 userdel	2 14994,5193 15174,5463
 userdel	2 15174,5463 15382,5687
 EOF
@@ -2940,6 +2940,49 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 25095,35601 24915,35340
+EOF
+     },
+     { from  => 1128610800, # 2005-10-06 17:00
+       until => 1128916800, # 2005-10-10 06:00
+       text  => 'Drakestraße zwischen Knesebeckstraße und Hans-Sachs-Straße in beiden Richtungen Brückenabriss, Straße gesperrt, Dauer: 07.10.2005 17:00 Uhr bis 10.10.2005 06:00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 3259,4002 3128,4190
+EOF
+     },
+     { from  => 1128808800, # 2005-10-09 00:00
+       until => 1134774000, # 2005-12-17 00:00
+       text  => 'K 7228; (Zossener Allee); OL Sperenberg Straßenbau Vollsperrung 10.10.2005-16.12.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 8576,-29378 8725,-26812
+EOF
+     },
+     { from  => 1128754834, # 2005-10-08 09:00
+       until => 1130104800, # 2005-10-24 00:00
+       text  => 'Ehrlichstr. (Lichtenberg) in Richtung Treskowallee zwischen Wildensteiner Str. und Treskowallee Baustelle, Fahrtrichtung gesperrt (bis 23.10.2005)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 18147,8583 18672,8247
+EOF
+     },
+     { from  => undef, # 
+       until => 1128891600, # 2005-10-09 23:00
+       text  => 'Hermannstraße zwischen Flughafenstraße und Thomasstraße Veranstaltung, Straße gesperrt bis So 23:00 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 12090,7651 12075,7696
+userdel	2 12090,7651 12122,7553
+userdel	2 12180,7387 12122,7553
+userdel	2 11920,8252 11933,8198
+userdel	2 11920,8252 11892,8372
+userdel	2 12041,7788 12055,7751
+userdel	2 12041,7788 12025,7852
+userdel	2 11998,7948 12025,7852
+userdel	2 11998,7948 11979,8014
+userdel	2 11979,8014 11960,8090
+userdel	2 11933,8198 11960,8090
+userdel	2 12055,7751 12075,7696
 EOF
      },
     );

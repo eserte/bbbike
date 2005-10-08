@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.5 2005/10/07 07:40:00 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.6 2005/10/08 13:23:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -28,24 +28,45 @@ use Karte::Polar;
 my @polylines_polar;
 my @wpt;
 
+my $coordsystem = param("coordsystem") || "standard";
+my $converter;
+if ($coordsystem eq 'polar') {
+    $converter = \&polar_converter;
+} else {
+    $converter = \&standard_converter;
+}
+
 for my $coords (param("coords")) {
     my(@coords) = split /[!;]/, $coords;
     my(@coords_polar) = map {
 	my($x,$y) = split /,/, $_;
-	join ",", $Karte::Polar::obj->standard2map($x,$y);
+	join ",", $converter->($x,$y);
     } @coords;
     push @polylines_polar, \@coords_polar;
 }
 
 for my $wpt (param("wpt")) {
-    my($name,$coord) = split /[!;]/, $wpt;
+    my($name,$coord);
+    if ($wpt =~ /[!;]/) {
+	($name,$coord) = split /[!;]/, $wpt;
+    } else {
+	$name = "";
+	$coord = $wpt;
+    }
     my($x,$y) = split /,/, $coord;
-    ($x, $y) = $Karte::Polar::obj->standard2map($x,$y);
+    ($x, $y) = $converter->($x,$y);
     push @wpt, [$x,$y,$name];
 }
 
 print header;
 print get_html(\@polylines_polar, \@wpt);
+
+sub standard_converter {
+    my($x,$y) = @_;
+    $Karte::Polar::obj->standard2map($x,$y);
+}
+
+sub polar_converter { @_[0,1] }
 
 sub get_html {
     my($paths_polar, $wpts) = @_;
@@ -63,6 +84,7 @@ sub get_html {
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
   <head>
+    <link rel="stylesheet" type="text/css" href="/BBBike/html/bbbike.css"><!-- XXX only for radzeit -->
     <script src="http://maps.google.com/maps?file=api&v=1&key=ABQIAAAAidl4U46XIm-bi0ECbPGe5hR1DE4tk8nUxq5ddnsWMNnWMRHPuxTzJuNOAmRUyOC19LbqHh-nYAhakg" type="text/javascript"></script>
   </head>
   <body>
@@ -83,10 +105,20 @@ sub get_html {
         map.recenterOrPanToLatLng(new GPoint(x, y));
     }
     
+    function showCoords(point, message) {
+        var latLngStr = message + point.x + "," + point.y;
+        document.getElementById("message").innerHTML = latLngStr;
+    }
+
     var map = new GMap(document.getElementById("map"), [G_SATELLITE_TYPE]);
     map.addControl(new GLargeMapControl());
     map.addControl(new GMapTypeControl());
     map.centerAndZoom(new GPoint($centerx, $centery), $zoom);
+
+    GEvent.addListener(map, "moveend", function() {
+        var center = map.getCenterLatLng();
+	showCoords(center, 'Center of map: ');
+    });
 
 EOF
     for my $path_polar (@$paths_polar) {
@@ -121,14 +153,40 @@ EOF
 
     //]]>
     </script>
+    <div id="message"></div>
     <div id="wpt">
 EOF
     for my $wpt (@$wpts) {
 	my($x,$y,$name) = @$wpt;
+	next if $name eq '';
 	$html .= qq{<a href="#map" onclick="setwpt($x,$y);return true;">$name</a><br />\n};
     }
     $html .= <<EOF;
     </div>
+
+<form style="margin-top:1cm; border:1px solid black; padding:3px;">
+  Koordinatensystem:<br />
+  <label><input type="radio" name="coordsystem" value="standard" /> BBBike</label><br />
+  <label><input type="radio" name="coordsystem" value="polar" /> WGS84-Koordinaten (DDD)</label><br />
+  <br />
+  <label>Koordinate (x,y bzw. lon,lat): <input name="wpt" size="15" /></label><br />
+  <br />
+  <button>Zeigen</button>
+</form>
+
+<table width="100%">
+ <tr>
+  <td colspan="3">
+      <p class="ftr">
+       <a id="bbbikemail" href="mailto:slaven\@rezic.de">E-Mail</a> |
+       <a id="bbbikeurl" href="http://radzeit.herceg.de/cgi-bin/bbbike.cgi">BBBike</a> |
+       <a href="/cgi-bin/mapserver_address.cgi">Adresssuche</a>
+      </p>
+  </td>
+ </tr>
+
+</table>
+
   </body>
 </html>
 EOF

@@ -4974,6 +4974,7 @@ sub define_item_attribs {
 	 'z'    => [8,5,2,5],	# PLZ-Grenzen
 	 'sperre3' => [6,2],
 	 'fz'   => [8,5],
+	 'Tu'   => [4,4],	# Tunnel (addinfo)
 	);
     foreach (qw/gP gD/) {
 	$line_dash{$_} = [@{ $line_dash{"g"}}];
@@ -5223,7 +5224,7 @@ sub define_item_attribs {
     @normal_stack_order =
 	(qw(map f w-out w i-out i f-Pabove crosshairs e e-img
 	    gP gD z g gP gD
-	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB sBAB-BAB l v
+	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB sBAB sBAB-BAB l v
 	    f-label-bg wr w-label-bg f-label w-label
 	    u sperre_u u-bg u-fg u_bg-img r sperre_r b sperre_b
 	    r-bg r-fg r_bg-img b-bg b-fg b_bg-img
@@ -5542,6 +5543,14 @@ sub generate_plot_functions {
 						 @extra_tags],
 				      );
 		    } else {
+			my $line_dash = $line_dash{$abk};
+		        if (@addinfo_hin) { # ignore @addinfo_rueck for now
+			    for my $addinfo_hin (@addinfo_hin) {
+			        if ($addinfo_hin eq 'Tu') {
+				    $line_dash = $line_dash{"Tu"};
+				}
+			    }
+			}
 			if ($str_outline{$abk}) {
 			    # XXX no $cat_rueck support yet for outlines
 			    $c->createLine
@@ -5551,7 +5560,7 @@ sub generate_plot_functions {
 			       -joinstyle => 'bevel',
 			       -tags      => ["$abk-out",
 					      "$abk-$cat_hin-out"],
-                               ($use_stippleline ? (-dash => $line_dash{$abk}) : ()),
+                               ($use_stippleline ? (-dash => $line_dash) : ()),
 			       (exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
 			      );
 			}
@@ -5597,12 +5606,13 @@ sub generate_plot_functions {
 				     -tags  => [$abk, $strname,
 						"$abk-$cat", "$abk-" . ($i-1),
 						@extra_tags],
-				     ($use_stippleline ? (-dash => $line_dash{$abk}) : ()),
+				     ($use_stippleline ? (-dash => $line_dash) : ()),
 				     #(exists $line_arrow{$cat} ? (-arrow => $line_arrow{$cat}) : ()),
 				     -arrow => "last",
 				    );
 			    }
 			} else {
+warn "@$line_dash" if $line_dash;
 			    $c->createLine
 				(@coordlist,
 				 -fill      => $this_color_hin,
@@ -5611,7 +5621,7 @@ sub generate_plot_functions {
 				 -tags      => [$abk, $strname,
 						"$abk-$cat_hin", "$abk-" . ($i-1),
 						@extra_tags],
-				 ($use_stippleline ? (-dash => $line_dash{$abk}) : ()),
+				 ($use_stippleline ? (-dash => $line_dash) : ()),
 				 (exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
 				);
 			}
@@ -5647,8 +5657,10 @@ sub generate_plot_functions {
 			    $street_photo = $steigung_photo if $steigung_photo;
 			} elsif (@addinfo_hin # ignore @addinfo_rueck for now
 				) {
-			    if ($addinfo_hin[0] =~ /\binwork\b/ && $inwork_photo) {
-				$street_photo = $inwork_photo;
+			    for my $addinfo_hin (@addinfo_hin) {
+			        if ($addinfo_hin eq 'inwork' && $inwork_photo) {
+				    $street_photo = $inwork_photo;
+				}
 			    }
 			}
 			if ($street_photo) {
@@ -11450,7 +11462,7 @@ sub show_info {
 		    $grid = "750";
 		}
 		$grid = pack("c*", 100,101,100,97,116,108,97,115) . $grid;
-		warn $grid;
+		#warn $grid;
 	    }
 	    if ($grid) {
 		$url .= "&grid=$grid";

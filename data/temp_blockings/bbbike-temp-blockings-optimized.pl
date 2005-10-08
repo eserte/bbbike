@@ -549,14 +549,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1128722400,
-         'text' => 'B 188; westl. Rathenow, zw. Kreisel u. Abzw. Großwudicke Straßenanbindung B188n Vollsperrung 19.09.2005-07.10.2005 ',
-         'from' => 1126994400,
-         'data' => 'userdel	2 -67681,19301 -67871,19214
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1134687600,
          'text' => 'B 198; (Günterberg-Gramzow); bei Schmiedeberg, Brücke über Mühlengraben Brückenersatzneubau Vollsperrung 15.09.2005-15.12.2005 ',
@@ -684,14 +677,7 @@ userdel	q4 -7873,66589 -7851,66418
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1128722400,
-         'text' => 'B 273; zw. Kremmen und Schwante Straßenbauarbeiten Vollsperrung 05.10.2005-07.10.2005 ',
-         'from' => 1128376800,
-         'data' => 'userdel	2 -14038,37008 -12791,36632
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1128895200,
          'text' => 'B 87; zw. Schlieben und Kolochau Deckeneinbau Vollsperrung 07.10.2005-09.10.2005 ',
@@ -731,6 +717,49 @@ userdel	q4 -7873,66589 -7851,66418
          'data' => 'userdel	q4 25095,35601 24915,35340
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1128916800,
+         'text' => 'Drakestraße zwischen Knesebeckstraße und Hans-Sachs-Straße in beiden Richtungen Brückenabriss, Straße gesperrt, Dauer: 07.10.2005 17:00 Uhr bis 10.10.2005 06:00 Uhr ',
+         'from' => 1128610800,
+         'data' => 'userdel	2 3259,4002 3128,4190
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1134774000,
+         'text' => 'K 7228; (Zossener Allee); OL Sperenberg Straßenbau Vollsperrung 10.10.2005-16.12.2005 ',
+         'from' => 1128808800,
+         'data' => 'userdel	q4 8576,-29378 8725,-26812
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1130104800,
+         'text' => 'Ehrlichstr. (Lichtenberg) in Richtung Treskowallee zwischen Wildensteiner Str. und Treskowallee Baustelle, Fahrtrichtung gesperrt (bis 23.10.2005)',
+         'from' => 1128754834,
+         'data' => 'userdel	q4; 18147,8583 18672,8247
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1128891600,
+         'text' => 'Hermannstraße zwischen Flughafenstraße und Thomasstraße Veranstaltung, Straße gesperrt bis So 23:00 ',
+         'from' => undef,
+         'data' => 'userdel	2 12090,7651 12075,7696
+userdel	2 12090,7651 12122,7553
+userdel	2 12180,7387 12122,7553
+userdel	2 11920,8252 11933,8198
+userdel	2 11920,8252 11892,8372
+userdel	2 12041,7788 12055,7751
+userdel	2 12041,7788 12025,7852
+userdel	2 11998,7948 12025,7852
+userdel	2 11998,7948 11979,8014
+userdel	2 11979,8014 11960,8090
+userdel	2 11933,8198 11960,8090
+userdel	2 12055,7751 12075,7696
+',
+         'type' => 'gesperrt'
        }
      
 );
