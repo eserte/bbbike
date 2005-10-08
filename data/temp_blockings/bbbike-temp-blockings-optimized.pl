@@ -632,7 +632,7 @@ userdel	q4 -7873,66589 -7851,66418
          'until' => 1133391600,
          'text' => 'L 75; (Karl-Marx-Str.); OD Großziethen Straßenbauarbeiten Vollsperrung 06.09.2005-30.11.2005 ',
          'from' => 1125871200,
-         'data' => 'userdel	2 13225,-681 12988,1006
+         'data' => 'userdel	2 13225,-681 12968,1006
 ',
          'type' => 'gesperrt'
        },

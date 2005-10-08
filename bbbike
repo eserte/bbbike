@@ -4974,7 +4974,7 @@ sub define_item_attribs {
 	 'z'    => [8,5,2,5],	# PLZ-Grenzen
 	 'sperre3' => [6,2],
 	 'fz'   => [8,5],
-	 'Tu'   => [4,4],	# Tunnel (addinfo)
+	 'Tu'   => [2,5],	# Tunnel (addinfo)
 	);
     foreach (qw/gP gD/) {
 	$line_dash{$_} = [@{ $line_dash{"g"}}];
@@ -5551,6 +5551,9 @@ sub generate_plot_functions {
 				}
 			    }
 			}
+			if (!$use_stippleline) {
+			    undef $line_dash;
+			}
 			if ($str_outline{$abk}) {
 			    # XXX no $cat_rueck support yet for outlines
 			    $c->createLine
@@ -5560,7 +5563,7 @@ sub generate_plot_functions {
 			       -joinstyle => 'bevel',
 			       -tags      => ["$abk-out",
 					      "$abk-$cat_hin-out"],
-                               ($use_stippleline ? (-dash => $line_dash) : ()),
+                               ($line_dash ? (-dash => $line_dash) : ()),
 			       (exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
 			      );
 			}
@@ -5606,13 +5609,12 @@ sub generate_plot_functions {
 				     -tags  => [$abk, $strname,
 						"$abk-$cat", "$abk-" . ($i-1),
 						@extra_tags],
-				     ($use_stippleline ? (-dash => $line_dash) : ()),
+				     ($line_dash ? (-dash => $line_dash) : ()),
 				     #(exists $line_arrow{$cat} ? (-arrow => $line_arrow{$cat}) : ()),
 				     -arrow => "last",
 				    );
 			    }
 			} else {
-warn "@$line_dash" if $line_dash;
 			    $c->createLine
 				(@coordlist,
 				 -fill      => $this_color_hin,
@@ -5621,7 +5623,7 @@ warn "@$line_dash" if $line_dash;
 				 -tags      => [$abk, $strname,
 						"$abk-$cat_hin", "$abk-" . ($i-1),
 						@extra_tags],
-				 ($use_stippleline ? (-dash => $line_dash) : ()),
+				 ($line_dash ? (-dash => $line_dash) : ()),
 				 (exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
 				);
 			}
@@ -8410,6 +8412,10 @@ sub plotstr {
 	} else {
 	    $use_stippleline = 1;
 	    require Tk::StippleLine;
+	}
+    } else {
+	if ($Tk::VERSION >= 800.016) {
+	    $use_stippleline = 3; # signal that -dash exists
 	}
     }
 

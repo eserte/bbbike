@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.12 2005/08/19 05:54:20 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.13 2005/10/08 21:52:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -448,6 +448,10 @@ sub BBBikeLazy::plotstr_on_demand {
 		} else {
 		    $use_stippleline = 1;
 		    require Tk::StippleLine;
+		}
+	    } else {
+		if ($Tk::VERSION >= 800.016) {
+		    $use_stippleline = 3; # signal that -dash exists
 		}
 	    }
 

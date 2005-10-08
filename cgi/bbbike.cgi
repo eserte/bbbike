@@ -5452,7 +5452,8 @@ sub tie_session_counted {
     my $dirlevels = 0;
     my @l = localtime;
     my $date = sprintf "%04d-%02d-%02d", $l[5]+1900, $l[4]+1, $l[3];
-    my $directory = "/tmp/bbbike-sessions-$date";
+    # Make sure a different user for cgi-bin/mod_perl operation is used
+    my $directory = "/tmp/bbbike-sessions-" . $< . "-$date";
 
 #     require File::Spec;
 #     open(OLDOUT, ">&STDOUT") or die $!;
@@ -5464,7 +5465,7 @@ sub tie_session_counted {
     tie my %sess, $apache_session_module, $id,
 	{ Directory => $directory,
 	  DirLevels => $dirlevels,
-	  CounterFile => "/tmp/bbbike-counter-$date",
+	  CounterFile => "/tmp/bbbike-counter-" . $< . "-$date",
 	  AlwaysSave => 1,
 	  HostID => undef,
 	  HostURL => sub { undef },

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.6 2005/10/08 13:23:40 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.6 2005/10/08 13:23:40 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -34,6 +34,17 @@ if ($coordsystem eq 'polar') {
     $converter = \&polar_converter;
 } else {
     $converter = \&standard_converter;
+}
+
+if (param("wpt_or_trk")) {
+    if (param("wpt_or_trk") =~ / /) {
+	param("coords", join("!",
+			     param("coords"),
+			     split(/ /, param("wpt_or_trk")))
+	     );
+    } else {
+	param("wpt", param("wpt_or_trk"));
+    }
 }
 
 for my $coords (param("coords")) {
@@ -166,10 +177,10 @@ EOF
 
 <form style="margin-top:1cm; border:1px solid black; padding:3px;">
   Koordinatensystem:<br />
-  <label><input type="radio" name="coordsystem" value="standard" /> BBBike</label><br />
-  <label><input type="radio" name="coordsystem" value="polar" /> WGS84-Koordinaten (DDD)</label><br />
+  <label><input type="radio" name="coordsystem" value="standard" @{[ $coordsystem eq 'standard' ? 'checked' : '' ]} /> BBBike</label><br />
+  <label><input type="radio" name="coordsystem" value="polar" @{[ $coordsystem eq 'polar' ? 'checked' : '' ]} /> WGS84-Koordinaten (DDD)</label><br />
   <br />
-  <label>Koordinate (x,y bzw. lon,lat): <input name="wpt" size="15" /></label><br />
+  <label>Koordinate (x,y bzw. lon,lat): <input name="wpt_or_trk" size="15" /></label><br />
   <br />
   <button>Zeigen</button>
 </form>
