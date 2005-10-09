@@ -842,7 +842,7 @@ EOF
        text  => 'Straße des 17. Juni - Ebertstr. (Mitte) in beiden Richtungen zwischen Platz des 18. März und Entlastungsstr. sowie zwischen Behrenstr. und Dorotheenstr. Veranstaltung, Straße gesperrt (bis 12.09.2004) Jesustag 2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 8214,12205 8063,12182
+userdel	2 8214,12205 8089,12186 8063,12182
 userdel	2 8214,12205 8515,12242
 userdel	2 8539,12286 8560,12326
 userdel	2 8539,12286 8515,12242
@@ -933,7 +933,7 @@ EOF
        text  => 'Str. des 17. Juni / Ebertstr. (Tiergarten) in beiden Richtungen zwischen Entlastungsstr. und Brandenburger Tor Veranstaltung, Straße vollständig gesperrt (Vorbereitung Tag der Deutschen Einheit) (bis 04.10.2004, 6 Uhr) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 8063,12182 8214,12205
+userdel	2 8063,12182 8089,12186 8214,12205
 userdel	2 8214,12205 8515,12242
 userdel	2 8539,12286 8515,12242
 userdel	2 8600,12165 8515,12242
@@ -1365,7 +1365,7 @@ EOF
        text  => 'Str. des 17. Juni: Großer Stern - Brandenburger Tor (Mitte) in allen Richtungen sowie angrenzende Nebenstraßen Veranstaltung, Straße vollständig gesperrt (bis 01.01.2005 ca. 11:00 Uhr)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 8214,12205 8063,12182
+userdel	q4 8214,12205 8089,12186 8063,12182
 userdel	q4 8214,12205 8515,12242
 userdel	q4 6653,12067 6642,12010
 userdel	q4 6685,11954 6744,11936

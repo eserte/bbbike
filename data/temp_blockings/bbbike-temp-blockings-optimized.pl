@@ -702,14 +702,7 @@ userdel	q4 -7873,66589 -7851,66418
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1128808800,
-         'text' => 'L 96; (B 1 Neubensdorf-Rathenow); zw. Milow und Bützer Straßenbauarbeiten Vollsperrung 07.10.2005-08.10.2005 ',
-         'from' => 1128549600,
-         'data' => 'userdel	2 -64341,12416 -64162,11951
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1129500000,
          'text' => 'B 2; (Bernau-Biesenthal); B 2, OD Rüdnitz, Kreisverkehr grundh. Ausbau, Bau Kreisverk. Vollsperrung 10.10.2005-16.10.2005 ',

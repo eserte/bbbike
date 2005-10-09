@@ -38,7 +38,7 @@ Schulzendorfer Str.: laut Tagesspiegel wird in Zukunft hier das Kopfsteinpflaste
 Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
 Uferweg an der Kongreßhalle: laut Tsp im Frühjahr 2005 fertig	?::inwork 7753,12578
 Innenstadtring, Verlängerung der Bernauer zur Invalidenstr. (bereits vorhanden, aber nicht offiziell freigegeben)	?::inwork 9236,14157 9090,13890
-Autotunnel wird im Frühjahr 2005 zugeschüttet	?::inwork 5652,11004 5716,10978 5831,10978
+Autotunnel wird ab Frühjahr 2005 zugeschüttet	?::inwork 5652,11004 5716,10978 5831,10978
 Uferweg - Friedrich-Ebert-Str. an der Nikolaikirche: zurzeit wegen Bauarbeiten kein Durchgang möglich	? -12600,-1706 -12719,-1661
 Bernauer Str.: Bauarbeiten, nach den Bauarbeiten kein Kopfsteinpflaster	?::inwork 10351,14981 10333,14983 10176,14896 10094,14847 10011,14810 9805,14717 9621,14624 9472,14478 9400,14400 9267,14202 9236,14157
 Entlastungsstr.: wird voraussichtlich im September 2005 stillgelegt	? 8063,12182 8056,12061 8129,11735 8172,11679
@@ -63,8 +63,10 @@ Muspelsteig: falls Rübezahlweg oK, dann diesen Weg hier auch aufnemen	? 14052,18
 Hannah-Arendt-Str. zwischen Gertrud-Kolmar-Str. und Wilhelmstr.: Gehweg ist langsam befahrbar, Straße wird ab 2005-11-30 fertig sein	?::inwork 8783,11959 8892,12006
 Höhenpunkt Mendelssohnstr.?	? 11613,13570
 Bremer Weg (Tiergarten): genaue Wegführung, Qualität?	? 5901,11902 5923,11873 6296,11890 6342,11878 6409,11925 6573,11943 6642,12010
-Bremer Weg (Tiergarten): genaue Wegführung, Qualität?	? 6828,12031 6857,11992 7460,12054 8018,12131 8063,12182
+Bremer Weg (Tiergarten): genaue Wegführung, Qualität (wassergebundene Strecke)?	? 6828,12031 6857,11992 7460,12054 7827,12105 8018,12131 8063,12182
 (Bremer Weg - Fasanerieallee): genaue Wegführung, Qualität?	? 6342,11878 6379,11843 6406,11784 6540,11754
+Bremer Weg (Tiergarten): genaue Koordinaten, Qualität (Asphalt)?	? 8089,12186 8095,12142 8215,12156 8490,12192 8515,12242
+(Weg im Tiergarten von Großer Weg über Bellevuealle zum Bremer Weg/Große Querallee): genaue Wegführung, Qualität ist überwiegend gut (Asphalt)	? 7591,11639 7642,11717 7723,11717 7771,11804 7811,11868 7846,11989 7827,12105 7816,12150
 Pankeweg durch Wedding: Bau des Pankewegs zwischen Pankstr. und Gerichtstr. begonnen, allerdings fehlen noch wenige Meter bzw. eine Brücke	?? 8273,15311 8348,15474 8179,15601
 Laut eines bln.verkehr-Artikels wird es hier eine Straßenverbindung geben	? 7959,7609 7934,7621 7854,7572
 Alle Straßen hier (Wendenschloß) scheinen Kopfsteinpflaster (mäßiges bis schlechtes) zu haben. Für die GPS-Tracks bestätigt.	? 23126,2034 23506,2101 23670,1231 23326,1143
@@ -836,15 +838,7 @@ Cyclopstr.: nicht geeignet (laut ADFC-Karte)	? 4825,21718 5138,21358
 (Orankestr. - Orankesee): gut geeignet (laut ADFC-Karte)	? 15598,15793 15581,15846
 Gransee (Gehronsee (auch laut Regio-Atlas, Tsp), Geronsee (Tippfehler im Tsp?), Gransee (auch laut ALDI-Karte): was stimmt?)	? -7203,67185 -7245,67645 -6770,67990 -6533,68121 -6252,67950 -6014,67972 -5927,67800 -6360,67648 -6770,67411 -7030,67079
 Barthels Pfuhl (oder Barth*o*ls Pfuhl?)	? -23662,80950 -23775,80837 -23675,80725 -23587,80825 -23587,80912
-Eastgate (genaue Position?)	? 19788,15452
-Müncheberg, Turm (genaue Bezeichnung?)	? 60803,11559
-Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
 X (hat die Einbecker Str. tatsächlich Vorfahrt?)	? 17208,11658 17275,11626 17734,11408
-Hasenheide (ist der Weg entlang der Freilichtbühne beleuchtet?)	? 11627,8485 11253,8565
-Barsekowstr. (unbeleuchtet?)	? 5344,4672 5417,4647 5476,4626 5589,4617
-Stadtpark Steglitz (unbeleuchtet?)	? 5589,4617 5747,4697 5765,4693 5931,4659 6114,4709
-(Stadtpark Steglitz) (unbeleuchtet?)	? 5809,4828 5826,4819 5909,4798 5945,4828 6018,4850
-nördliches Ufer am Teltowkanal (unbeleuchtet?)	? 7921,4451 8162,4725 8249,4769
 Siegfriedstr.: (evtl. für Autofahrer in beide Richtungen gesperrt:)	? 12303,6937 12340,6947
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position ist vielleicht nicht ganz genau)	? -7533,24138 -7734,23796 -8777,22961 -8988,22668 -9060,22342
 Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position des südlichen Endes ist vielleicht nicht ganz genau)	? -10377,20973 -10581,19871 -10000,18629
