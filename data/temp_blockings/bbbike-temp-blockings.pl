@@ -2063,7 +2063,7 @@ EOF
        text  => '"Bridge Partie", Modersohnbrücke von 21.06.2005, 06.00 Uhr bis 22.06.2005, 06:00 Uhr gesperrt ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 14026,10869 14139,11269
+userdel	2 14026,10869 14043,10928 14139,11269
 EOF
      },
      { from  => 1118949539, # 2005-06-16 21:18

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.32 2005/08/08 22:52:53 eserte Exp eserte $
+# $Id: bbbike.cgi,v 7.33 2005/10/10 22:28:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -675,7 +675,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.32 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.33 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3581,10 +3581,28 @@ EOF
 		}
 		if ($has_fragezeichen_routelist && !$printmode) {
 		    if ($fragezeichen_comment ne "") {
+
+			# unbekannt oder unvollst‰ndig
+			my $is_unknown = 1;
+			my $rec;
+			if ($path_index < $#{ $r->path }) {
+			    $rec = $net->get_street_record(join(",", @{$r->path->[$path_index]}),
+							   join(",", @{$r->path->[$path_index+1]}));
+			}
+			if ($rec && $rec->[Strassen::CAT] !~ /^\?/) {
+			    $is_unknown = 0;
+			}			
+
 			my $qs = CGI->new({strname => $fragezeichen_comment,
 					   strname_html => CGI::escapeHTML($fragezeichen_comment),
 					  })->query_string;
-			print qq{<td>$fontstr<a target="newstreetform" href="$bbbike_html/fragezeichenform.html?$qs">Unbekannte Straﬂe, Kommentar eintragen</a>$fontend</td>};
+			print qq{<td>$fontstr<a target="newstreetform" href="$bbbike_html/fragezeichenform.html?$qs">};
+			if ($is_unknown) {
+			    print qq{Unbekannte Straﬂe};
+			} else {
+			    print qq{Unvollst‰ndige Daten};
+			}
+			print qq{, Kommentar eintragen</a>$fontend</td>};
 		    } else {
 			print qq{<td>&nbsp;</td>};
 		    }
@@ -5698,7 +5716,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/08/08 22:52:53 $';
+    my $cgi_date = '$Date: 2005/10/10 22:28:18 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

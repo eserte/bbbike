@@ -390,7 +390,7 @@ sub define_subs {
     package main;
     *show_info_ext = sub {
 	my($c, @tags) = @_;
-	warn "$c - $tags[3] - @tags ";
+	#warn "$c - $tags[3] - @tags ";
 	my $res;
 	if (defined $tags[3] && $tags[3] =~ /^(\d{4}-\d{2}-\d{2})$/ &&
 	    open(F, "$ENV{HOME}/private/docs/rad/radstat.data")) {

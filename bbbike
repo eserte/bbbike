@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.190 2005/10/01 22:34:09 eserte Exp eserte $
+# $Id: bbbike,v 3.191 2005/10/10 22:27:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -190,7 +190,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.190 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.191 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -8241,6 +8241,7 @@ sub plotstr {
 
     if (!defined $str) {
 	cache_decider_init();
+	# XXX use get_any_strassen_obj?
 	if ($abk eq 'w') {
 	    $str = _get_wasser_obj($filename);
 	} elsif ($abk eq 'l') {
@@ -9685,15 +9686,7 @@ sub choose_ort {
 		    $object = $str_obj{$type};
 		} else {
 		    cache_decider_init();
-		    if ($type eq 'w') {
-			$object = _get_wasser_obj(get_strassen_file($str_file{$type}));
-		    } elsif ($type eq 'l') {
-			$object = _get_landstr_obj();
-		    } elsif ($type eq 'comm') {
-			$object = _get_comments_obj();
-		    } else {
-			$object = get_strassen_obj($str_file{$type});
-		    }
+		    $object = get_any_strassen_obj("str", $type);
 		    if ($coord_system eq 'standard' && cache_decider()) {
 			$str_obj{$type} = $object;
 		    }
@@ -11096,6 +11089,7 @@ sub show_info {
     my(@tags) = $c->gettags('current');
     return if !@tags || !defined $tags[0];
     my $base_tag = $tags[0];
+    @tags = grep { $_ ne "current" } @tags;
     my $is_p = ($base_tag =~ /-(?:[fb]g|img)$/);
     $base_tag =~ s/-(?:[fb]g|img)$//;
     return if !exists $p_file{$base_tag} and !$str_file{$base_tag};
@@ -11156,22 +11150,19 @@ sub show_info {
     }
 
     my($area, $total_len);
-    if ($base_tag =~ /^[wf]$/ && defined $index) {
-	require Strassen::Stat;
-	my $s;
-	if ($base_tag eq 'w') {
-	    $s = _get_wasser_obj($str_file{'w'});
-	} else {
-	    $s = Strassen->new($str_file{'f'});
-	}
-	my $r = $s->get($index);
+    if (defined $index && $index =~ /^\d+/) {
+	my $s = get_any_strassen_obj("str", $base_tag); # XXX what about p?
+	if ($s) {
+	    require Strassen::Stat;
+	    my $r = $s->get($index);
 # XXX bei weitem noch nicht perfekt: statt des Indexes sollte der
 # NAME verwendet werden, um alle gleichnamigen Objekte zusammenzufassen
 # Außerdem sind manche Gewässer gleichzeitig Seen und Flüsse (Havel), bei
 # diesen sollten aus der Fläche eine vernünftige Länge berechnet werden
 # und diese zu der normalen Länge dazuaddiert werden.
-	if ($r->[Strassen::CAT()] =~ /^F:/) {
-	    $area = Strassen::area($r) / 1_000_000;
+	    if ($r) {
+		if ($r->[Strassen::CAT()] =~ /^F:/) {
+		    $area = Strassen::area($r) / 1_000_000;
 #XXX Noch nicht --- siehe Kommentare in wasserstrassen-orig und data/Makefile
 #  	    # Inseln abziehen
 #  	    $s->set_index($index + 1);
@@ -11181,15 +11172,11 @@ sub show_info {
 #  		last if $r->[Strassen::CAT] ne 'F:I';
 #  		$area - Strassen::area($r) / 1_000_000;
 #  	    }
-	} else {
-	    $total_len = Strassen::total_len($r) / 1_000;
+		} else {
+		    $total_len = Strassen::total_len($r) / 1_000;
+		}
+	    }
 	}
-    } elsif ($base_tag eq 's' && defined $index) {
-	# XXX siehe obigen Kommentar
-	require Strassen::Stat;
-	my $s = Strassen->new("strassen"); # XXX notwendig?
-	my $r = $s->get($index);
-	$total_len = Strassen::total_len($r) / 1_000;
     }
 
     my $show_info_sub = sub {
@@ -11274,12 +11261,12 @@ sub show_info {
 	if (defined $area) {
 	    $info_text->insert("end",
 			       "\n\n" . M("Fläche") . ":", "bold",
-			       sprintf("\t%.2f km²", $area), undef); # XXX Msg
+			       sprintf("\t%.2f km²", $area) . M(" (ungefähr)"), undef); # XXX Msg
 	}
 	if (defined $total_len) {
 	    $info_text->insert("end",
 			       "\n\n" . M("Länge") . ":", "bold",
-			       sprintf("\t%.2f km", $total_len), undef); # XXX Msg
+			       sprintf("\t%.2f km", $total_len) . M(" (ungefähr)"), undef); # XXX Msg
 	}
 
 	$info_text->insert("end", "\n\n" . M("Koordinaten") . "\n", "bold");
@@ -11561,7 +11548,7 @@ EOF
 		}
 		$show_info_sub->("$dbf_info\n", undef,
 				 "\nInterne Canvas-Tags:\n", "bold",
-				 join("\n", grep { !/^current$/ } @tags), undef);
+				 join("\n", @tags), undef);
 		return;
 	    }
 	}
@@ -11607,7 +11594,7 @@ EOF
 		}
 	    }
 	    $show_info_sub->("Interne Canvas-Tags:\n", "bold",
-			     join("\n", grep { !/^current$/ } @tags), undef);
+			     join("\n", @tags), undef);
 	}
 	untie %info;
     } else {
@@ -11617,7 +11604,7 @@ EOF
 		unshift @tags, $text, "";
 	    }
 	    $show_info_sub->("Interne Canvas-Tags:\n", "bold",
-			     join("\n", grep { !/^current$/ } @tags), undef);
+			     join("\n", @tags), undef);
 	} else {
 	    if ($tags[0] =~ /^L\d+-(fg|img)$/) {
 		$show_info_sub->($tags[2]); # show name
@@ -17509,6 +17496,25 @@ sub get_strassen_obj {
     }
     if (!$object) {
 	$object = Strassen->new($file); # fallback to non-orig file, if necessary
+    }
+    $object;
+}
+
+sub get_any_strassen_obj {
+    my($linetype, $type) = @_;
+    my $object;
+    if ($linetype =~ /^s/) {
+	if ($type eq 'w') {
+	    $object = _get_wasser_obj(get_strassen_file($str_file{$type}));
+	} elsif ($type eq 'l') {
+	    $object = _get_landstr_obj();
+	} elsif ($type eq 'comm') {
+	    $object = _get_comments_obj();
+	} else {
+	    $object = get_strassen_obj($str_file{$type});
+	}
+    } else {
+	$object = get_strassen_obj($p_file{$type});
     }
     $object;
 }
