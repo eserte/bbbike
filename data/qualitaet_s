@@ -1941,7 +1941,8 @@ Brodowiner Ring: Asphalt	Q0 22215,16343 22192,16165 22290,16146 22400,16226 2240
 Parsteiner Ring: Asphalt	Q0 22406,16309 22428,16462 22321,16553 22250,16468 22215,16343
 Bauhüttenweg: Asphalt	Q0 12703,2454 13238,2521 13339,2611
 Elberfelder Str.: schlechtes Kopfsteinpflaster	Q3 5762,13155 5771,12972 5757,12770 5752,12662
-Zimmerstr. (Spandau): Kopfsteinpflaster	Q2 -3937,12971 -3820,12921 -3706,12926 -3650,12929
+Zimmerstr. (Spandau): Gehwegplatten	Q0 -3937,12971 -3907,12958
+Zimmerstr. (Spandau): Kopfsteinpflaster	Q2 -3907,12958 -3820,12921 -3706,12926 -3650,12929
 Reiherbeize: Kopfsteinpflaster	Q2 593,4262 460,4479
 Im Fischtal: gutes Kopfsteinpflaster	Q1 744,4567 666,4339 593,4262 510,4202 354,4152
 Archenholdstr.: schlechtes Kopfsteinpflaster	Q3 16892,10731 16964,10902 17275,11626
@@ -2774,3 +2775,47 @@ Kleine Jägerstr.: Asphalt	Q0 9976,11909 10055,11950
 Alte Leipziger Str.: Asphalt	Q0 10076,11840 10118,11907
 Kleine Gertraudenstr.: Gehwegplatten	Q1 10332,11929 10364,11896 10387,11901
 Am Wriezener Bahnhof: Beton	Q1 12738,11878 12790,11840 12924,11731
+Tharauer Allee: Asphalt	Q0 -1483,11283 -1634,11346 -1731,11425 -1829,11337
+(Scottweg - Tharauer Allee): buckliger Asphalt	Q2 -1403,11279 -1483,11283
+Plathweg: Beton	Q1 -3669,11766 -3696,11771 -3714,11782 -3732,11809 -3786,11913
+Grimnitzstr. (Spandau): Beton	Q0 -3630,12037 -3739,12052 -3836,12066
+Baumertweg: Beton	Q0 -3836,12066 -3834,12237
+Kuhnertstr.: Beton	Q0 -3739,12052 -3733,12249
+Földerichstr.: Asphalt	Q0 -3870,12235 -3867,12388 -3872,12489 -3876,12567 -3876,12641 -3872,12684 -3854,12764 -3835,12856
+Földerichstr.: Kopfsteinpflaster	Q2 -3835,12856 -3820,12921 -3801,13013
+Genfenbergstr.: Asphalt mit Fugen	Q1 -3614,12177 -3425,12157
+Grimnitzseeweg: Asphalt mit Fugen	Q1 -3636,11988 -3511,11979
+Wachenheimer Weg: Beton	Q0 -3614,12253 -3437,12258
+Jordanstr.: Beton	Q0 -3975,12229 -3870,12235 -3834,12237 -3756,12248 -3733,12249 -3614,12253
+Am Südpark: Asphalt	Q0 -3975,12229 -3978,12385
+Jägerstr. (Spandau): Beton	Q0 -3756,12248 -3760,12392
+Jägerstr. (Spandau): Asphalt	Q0 -3760,12392 -3748,12491 -3738,12572
+Jägerstr. (Spandau): Verbundsteine	Q1 -3738,12572 -3729,12669
+Jägerstr. (Spandau): Kopfsteinpflaster	Q2 -3729,12669 -3724,12773 -3713,12860 -3706,12926 -3698,13015
+Beyerstr.: Asphalt	Q0 -3618,12494 -3748,12491 -3872,12489
+Ulmenstr. (Spandau): Kopfsteinpflaster	Q2 -3876,12641 -4039,12641 -4150,12689
+Sprengelstr. (Spandau): Kopfsteinpflaster	Q2 -3872,12684 -4009,12735
+Sprengelstr. (Spandau): Gehwegplatten	Q1 -4009,12735 -4081,12765
+Betckestr.: Kopfsteinpflaster	Q2 -3621,12575 -3430,12579 -3239,12581 -3154,12582
+Franzstr. (Spandau): Kopfsteinpflaster	Q2 -3624,12674 -3434,12728 -3261,12776
+Wörther Str. (Spandau): Asphalt	Q1 -3430,12579 -3434,12728 -3437,12834
+Metzer Str. (Spandau): Kopfsteinpflaster	Q2 -3669,13015 -3698,13015 -3801,13013 -3887,13057
+Krowelstr.: Asphalt	Q0 -3274,12879 -3372,12935 -3491,12987 -3688,13228 -3706,13288
+Straßburger Str. (Spandau): Asphalt	Q0 -3706,13288 -3668,13502 -3651,13603 -3595,13729 -3541,13832
+Spandauer Burgwall: Asphalt	Q0 -3764,13270 -3706,13288 -3632,13304 -3575,13284 -3514,13205 -3489,13169
+Brüderstr. (Spandau): Gehwegplatten	Q1 -3974,12914 -3937,12898
+Brüderstr. (Spandau): Kopfsteinpflaster	Q2 -3937,12898 -3835,12856 -3713,12860
+Brüderstr. (Spandau): Asphalt	Q0 -3713,12860 -3641,12861
+Brüderstr. (Spandau): Kopfsteinpflaster	Q2 -3641,12861 -3372,12935
+Konkordiastr.: Kopfsteinpflaster	Q2 -4065,12382 -4069,12558 -4039,12641 -4009,12735
+Weißenburger Str.: Asphalt	Q0 -3151,12966 -3202,12912 -3274,12879 -3437,12834 -3629,12781
+Weißenburger Str.: Kopfsteinpflaster	Q2 -3629,12781 -3724,12773 -3854,12764 -3984,12812
+Weißenburger Str.: Gehwegplatten	Q1 -3984,12812 -4028,12831
+Wilhelmstrasse [Parallelstrasse]: Kopfsteinpflaster	Q2 -3952,12866 -3937,12898 -3907,12958
+Götelstr.: Kopfsteinpflaster	Q2 -3274,12879 -3261,12776 -3239,12581
+Götelstr.: Asphalt	Q0 -3239,12581 -3245,12406 -3281,12297 -3349,12213 -3425,12157
+Sedanstr.: Kopfsteinpflaster	Q2 -3677,13769 -3595,13729 -3557,13710
+Diedenhofener Str.: Asphalt	Q0 -3746,13622 -3651,13603 -3618,13596
+Ziegelhof: wassergebundene Decke	Q1 -3774,13517 -3668,13502
+Ziegelhof: Kopfsteinpflaster	Q2 -3668,13502 -3555,13485
+(Wachheimer Weg - Götelstr.): Gehwegplatten	Q1 -3437,12258 -3350,12260 -3349,12213

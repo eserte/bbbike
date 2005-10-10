@@ -678,14 +678,7 @@ userdel	q4 -7873,66589 -7851,66418
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1128895200,
-         'text' => 'B 87; zw. Schlieben und Kolochau Deckeneinbau Vollsperrung 07.10.2005-09.10.2005 ',
-         'from' => 1128549600,
-         'data' => 'userdel	2 7711,-74770 8300,-74790
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1130018400,
          'text' => 'K 6301; (Bötzow-Wansdorf-Pausin); OD Wansdorf Kanal- und Straßenbau Vollsperrung 04.07.2005-22.10.2005 ',
@@ -711,14 +704,7 @@ userdel	q4 -7873,66589 -7851,66418
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1128916800,
-         'text' => 'Drakestraße zwischen Knesebeckstraße und Hans-Sachs-Straße in beiden Richtungen Brückenabriss, Straße gesperrt, Dauer: 07.10.2005 17:00 Uhr bis 10.10.2005 06:00 Uhr ',
-         'from' => 1128610800,
-         'data' => 'userdel	2 3259,4002 3128,4190
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1134774000,
          'text' => 'K 7228; (Zossener Allee); OL Sperenberg Straßenbau Vollsperrung 10.10.2005-16.12.2005 ',
@@ -734,25 +720,6 @@ userdel	q4 -7873,66589 -7851,66418
          'data' => 'userdel	q4; 18147,8583 18672,8247
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1128891600,
-         'text' => 'Hermannstraße zwischen Flughafenstraße und Thomasstraße Veranstaltung, Straße gesperrt bis So 23:00 ',
-         'from' => undef,
-         'data' => 'userdel	2 12090,7651 12075,7696
-userdel	2 12090,7651 12122,7553
-userdel	2 12180,7387 12122,7553
-userdel	2 11920,8252 11933,8198
-userdel	2 11920,8252 11892,8372
-userdel	2 12041,7788 12055,7751
-userdel	2 12041,7788 12025,7852
-userdel	2 11998,7948 12025,7852
-userdel	2 11998,7948 11979,8014
-userdel	2 11979,8014 11960,8090
-userdel	2 11933,8198 11960,8090
-userdel	2 12055,7751 12075,7696
-',
-         'type' => 'gesperrt'
        }
      
 );

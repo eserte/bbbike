@@ -79,6 +79,8 @@ Großziethen: Kopfsteinpflaster nur Richtung Süden, nach den Arbeiten kein Kopfst
 # In diesem Abschnitt kommen Straßen rein, die erst einmal nicht in
 # die Datenbank aufgenommen werden sollen.
 #
+#: next_check: 2006-06-01
+Burgwallgraben: neuer Weg wg. Renaturisierung durch DB - fertig Sommer 2006	? -3609,13492 -3632,13304 -3625,13241 -3550,13122 -3403,13024 -3360,13028 -3332,13054
 Französische Str.: Vorfahrt (kann ich das so ausdrücken, mit zwei Punkten?)	? 9183,12076 9076,12054
 #: XXX laut Detlef Hoge:
 auf der östlichen Seite der B101n: wo genau ist der Radweg hier?	? 6173,-2344 5957,-2575 5627,-2671
@@ -291,7 +293,7 @@ Skandinavische Str.: auf der westlichen Seite Suggestivstreifen (laut Radzeit)?	
 Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 Fähre Liepnitzsee zum Großen Werder: wo genau?	? 16050,38181 16455,37790
 Sputendorfer Str.: laut http://home.arcor.de/hoge-online/std_tlw/std_tlw00.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2049,-2165 -1853,-2412 -1809,-4235
-Spandau: Kurstr. - Galenstr. - Am Bahnhof Spandau - etc.: sieht als Umfahrung für Altstädter Ring etc. gut aus. Qualität, etc?	? -2834,15655 -2956,15575 -3195,15134 -3231,15096 -3453,14815 -3637,14628 -3723,14512 -3805,14138 -3873,13938 -3904,13944 -3971,13755 -4006,13478 -3996,13414
+Spandau: Kurstr. - Galenstr. - Am Bahnhof Spandau - etc.: sieht als Umfahrung für Altstädter Ring etc. gut aus. Qualität, etc?	? -2834,15655 -2956,15575 -3195,15134 -3231,15096 -3453,14815 -3637,14628 -3723,14512 -3805,14138 -3884,13980 -3904,13944 -3971,13755 -4006,13478 -3996,13414
 Tempelhofer Veloroutenpläne: Albulaweg - Hochspannungsweg: genaue Lage, Qualität etc.	? 10123,1996 10473,1900 11099,1758 11321,1936
 Tempelhofer Veloroutenpläne: Muschelkalkweg: genaue Lage, Qualität?	? 11099,1758 11112,1428 10699,1256 10759,1112
 Fortsetzung der Wolziger Zeile bis zur B101: Qualität? Kann die B101 gequert werden?	? 9608,-2642 9522,-2640 9117,-2636 8073,-2475 6651,-1299
@@ -764,8 +766,7 @@ Ringstr.: Qualität zwischen Spindelmühler Weg und Drakestr.: Kopfsteinpflaster?	
 Kiepertplatz: Qualität?	? 8528,1846 8606,1875
 #: XXX Martin Barghoorn hat KS angegeben, aber gleichzeitig "nur Fußweg" eingetragen
 Lückhoffstr.: Qualität (Kopfsteinpflaster?)?	? -2847,2893 -3022,2696 -3162,2564 -3190,2467 -3210,2375
-Betckestr.: Qualität?	? -3621,12575 -3430,12579 -3239,12581 -3154,12582
-Altonaer Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? -4900,13857 -4742,13839 -4298,13810 -3971,13755 -3689,13680
+Altonaer Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? -4900,13857 -4742,13839 -4298,13810 -3971,13755 -3701,13719
 Nauener Str. zur Altonaer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? -4731,13970 -4742,13839
 Staakener Str.: Qualität zwischen Seegefelder Str. und Nauener Str.? Einbahnstraße auch für Radfahrer gültig?	? -4112,14242 -4664,14154 -4709,14197
 Krumme Gärten: Qualität	? -4007,13187 -3996,13414
@@ -912,8 +913,8 @@ Heinrich-Zille-Weg: neu	? 815,12653 1070,13309
 (Treppe zum nördlichen Spreeufer): im Bau	?::inwork 8245,13016 8252,13033 8257,13049
 (Treppe zum nördlichen Spreeufer): im Bau	?::inwork 8160,13053 8160,13028 8161,13006
 (Kapelleufer - nördliches Spreeufer): im Bau	?::inwork 8110,13042 8034,12964
-Tharauer Allee: Qualität korrekt, Einbahnstr.?	? -1483,11283 -1634,11346 -1731,11425 -1829,11337
-(Scottweg - Tharauer Allee): exitiert Verbindung?	? -1403,11279 -1483,11283
+#: next_check: 2005-12-01
+Tharauer Allee: Bauarbeiten erledigt?	? -1483,11283 -1634,11346 -1731,11425 -1829,11337
 wohin führt hier der Parkweg, derzeit im Bau?	? 4449,12985 4490,12990 4533,12990
 prüfen: hier ist doch eine enge Fußgängerwendel?	?3670,14122 3619,14183
 Hier ist doch ein Uferweg parallel zur Kaiserin-Augusta-Allee, wo genau?	? 5185,13078 5166,13034 4947,13130 4717,13118 4608,13218
@@ -935,25 +936,3 @@ Grüntaler Str.: Verlauf des Mauerradweges in diesem Bereich unklar	? 9604,16760 
 Am Invalidenfriedhof - Scharnhorststr.: existiert hier auch eine Verbindung?	? 8114,13921 8216,13987
 #: by: Message-ID: <dhp2q6$fpm$00$1@news.t-online.com>
 Cora-Berliner-Str.: verkehrsberuhigte Zone?	? 8737,12098 8783,11959
-Plathweg: Qualität, Behinderungen?	? -3669,11766 -3696,11771 -3714,11782 -3732,11809 -3786,11913
-Grimnitzstr. (Spandau): Qualität, Behinderungen?	? -3630,12037 -3739,12052 -3836,12066
-Baumertweg: Qualität, Behinderungen?	? -3836,12066 -3834,12237
-Kuhnertstr.: Qualität, Behinderungen?	? -3739,12052 -3733,12249
-Földerichstr.: Qualität, Behinderungen?	? -3870,12235 -3867,12388 -3872,12489 -3876,12567 -3876,12641 -3872,12684 -3854,12764 -3835,12856 -3820,12921 -3801,13013
-Genfenbergstr.: Qualität, Behinderungen?	? -3614,12177 -3425,12157
-Grimnitzseeweg: Qualität, Behinderungen?	? -3636,11988 -3511,11979
-Wachenheimer Weg: Qualität, Behinderungen?	? -3614,12253 -3437,12258
-Jordanstr.: Qualität, Behinderungen?	? -3975,12229 -3870,12235 -3834,12237 -3756,12248 -3733,12249 -3614,12253
-Am Südpark: Qualität, Behinderungen?	? -3975,12229 -3978,12385
-Jägerstr. (Spandau): Qualität, Behinderungen?	? -3756,12248 -3760,12392 -3748,12491 -3738,12572 -3724,12773 -3713,12860 -3706,12926 -3698,13015
-Beyerstr.: Qualität, Behinderungen?	? -3618,12494 -3748,12491 -3872,12489
-Ulmenstr. (Spandau): Qualität, Behinderungen?	? -3876,12641 -4039,12641 -4150,12689
-Sprengelstr. (Spandau): Qualität, Behinderungen?	? -3872,12684 -4009,12735
-Franzstr. (Spandau): Qualität, Behinderungen?	? -3624,12674 -3434,12728 -3261,12776
-Wörther Str. (Spandau): Qualität, Behinderungen?	? -3430,12579 -3434,12728 -3437,12834
-Metzer Str. (Spandau): Qualität, Behinderungen?	? -3669,13015 -3698,13015 -3801,13013 -3887,13057
-Krowelstr.: Qualität, Behinderungen?	? -3274,12879 -3372,12935 -3491,12987 -3688,13228 -3706,13288
-Straßburger Str. (Spandau): Qualität, Behinderungen?	? -3706,13288 -3651,13603 -3597,13729 -3583,13767
-Spandauer Burgwall: Qualität, Behinderungen?	? -3764,13270 -3706,13288 -3632,13304 -3575,13284 -3514,13205 -3489,13169
-Brüderstr. (Spandau): Qualität, Behinderungen?	? -3974,12914 -3835,12856 -3713,12860 -3641,12861 -3372,12935
-Konkordiastr.: Qualität, Behinderungen?	? -4065,12382 -4069,12558 -4039,12641 -4009,12735
