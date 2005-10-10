@@ -661,14 +661,7 @@ userdel	q4 -7873,66589 -7851,66418
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1128981600,
-         'text' => 'B 87; (Beeskow-Lübben); zw. Trebatsch und Abzw. Wittmannsdorf Straßenbauarbeiten Vollsperrung 04.10.2005-10.10.2005 ',
-         'from' => 1128290400,
-         'data' => 'userdel	2 62112,-36752 60430,-38587
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1131836400,
          'text' => 'B 198; OD Prenzlau, Dr.-Wilhelm-Külz-Str. grundh. Straßenbau Vollsperrung 10.10.2005-12.11.2005 ',
@@ -715,11 +708,28 @@ userdel	q4 -7873,66589 -7851,66418
        },
        {
          'until' => 1130104800,
-         'text' => 'Ehrlichstr. (Lichtenberg) in Richtung Treskowallee zwischen Wildensteiner Str. und Treskowallee Baustelle, Fahrtrichtung gesperrt (bis 23.10.2005)',
+         'text' => 'Ehrlichstr. (Lichtenberg) zwischen Wildensteiner Str. und Treskowallee Baustelle, gesperrt (bis 23.10.2005)',
          'from' => 1128754834,
-         'data' => 'userdel	q4; 18147,8583 18672,8247
+         'data' => 'userdel	q4 18147,8583 18672,8247
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => 1130104800,
+         'text' => 'Josef-Orlopp-Str. (Lichtenberg) in Richtung Storkower Str. zwischen Siegfriedstr. und Vulkanstr. Fahrbahnerneuerung, Fahrtrichtung gesperrt (bis 23.10.2005)',
+         'from' => 1128985496,
+         'data' => 'userdel	1 16863,13138 15896,13158
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1131667773,
+         'text' => 'Prenzlauer Berg: Richtung Prenzlauer Allee gesperrt (Kopfsteinpflaster wird durch Asphalt ersetzt)',
+         'from' => 1128899379,
+         'data' => 'userdel	1 11723,13630 11538,13683 11257,13647
+',
+         'type' => 'gesperrt'
        }
      
 );

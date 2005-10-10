@@ -2958,12 +2958,12 @@ EOF
 userdel	q4 8576,-29378 8725,-26812
 EOF
      },
-     { from  => 1128754834, # 2005-10-08 09:00
+     { from  => 1128754834, # 2005-10-08 09:00 (by polizeifax und Tagesspiegel)
        until => 1130104800, # 2005-10-24 00:00
-       text  => 'Ehrlichstr. (Lichtenberg) in Richtung Treskowallee zwischen Wildensteiner Str. und Treskowallee Baustelle, Fahrtrichtung gesperrt (bis 23.10.2005)',
+       text  => 'Ehrlichstr. (Lichtenberg) zwischen Wildensteiner Str. und Treskowallee Baustelle, gesperrt (bis 23.10.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 18147,8583 18672,8247
+userdel	q4 18147,8583 18672,8247
 EOF
      },
      { from  => undef, # 
@@ -2983,6 +2983,22 @@ userdel	2 11998,7948 11979,8014
 userdel	2 11979,8014 11960,8090
 userdel	2 11933,8198 11960,8090
 userdel	2 12055,7751 12075,7696
+EOF
+     },
+     { from  => 1128985496, # 2005-10-11 01:04
+       until => 1130104800, # 2005-10-24 00:00
+       text  => 'Josef-Orlopp-Str. (Lichtenberg) in Richtung Storkower Str. zwischen Siegfriedstr. und Vulkanstr. Fahrbahnerneuerung, Fahrtrichtung gesperrt (bis 23.10.2005)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 16863,13138 15896,13158
+EOF
+     },
+     { from  => 1128899379, # 2005-10-10 01:09 (by Tagesspiegel)
+       until => 1131667773, # 2005-11-11 01:09
+       text  => 'Prenzlauer Berg: Richtung Prenzlauer Allee gesperrt (Kopfsteinpflaster wird durch Asphalt ersetzt)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 11723,13630 11538,13683 11257,13647
 EOF
      },
     );
