@@ -84,7 +84,8 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $comments_points $green_net
 	    $crossings $kr $plz $net $multi_bez_str
 	    $overview_map $city
-	    $use_umland $use_umland_jwd $use_special_destinations $use_fragezeichen
+	    $use_umland $use_umland_jwd $use_special_destinations
+	    $use_fragezeichen $use_fragezeichen_routelist
 	    $check_map_time $use_cgi_bin_layout
 	    $show_weather $show_start_ziel_url @weather_cmdline
 	    $bp_obj $bi $use_select
@@ -546,6 +547,14 @@ Set to true to allow the user to search unknown streets.
 =cut
 
 $use_fragezeichen = 0;
+
+=item $use_fragezeichen_routelist
+
+Set to true to show unknown streets in the route list.
+
+=cut
+
+$use_fragezeichen_routelist = 1;
 
 =back
 
@@ -2907,16 +2916,16 @@ sub search_coord {
 
     my $sess = tie_session(undef);
 
-    my $has_fragezeichen = defined $q->param("pref_fragezeichen") && $q->param("pref_fragezeichen") eq 'yes';
+    my $has_fragezeichen_routelist;
     my $fragezeichen_net;
-    if ($has_fragezeichen) {
+    if ($use_fragezeichen_routelist) {
 	eval {
 	    my $s = Strassen->new("fragezeichen");
 	    $fragezeichen_net = StrassenNetz->new($s);
 	    $fragezeichen_net->make_net;
 	};
 	warn $@ if $@;
-	$has_fragezeichen = 0 if !$fragezeichen_net;
+	$has_fragezeichen_routelist = 1 if $fragezeichen_net;
     }
 
     my(@power) = (50, 100, 200);
@@ -3201,7 +3210,7 @@ sub search_coord {
 		$etappe_comment = join("; ", @comments) if @comments;
 	    }
 
-	    if ($has_fragezeichen) {
+	    if ($has_fragezeichen_routelist) {
 		my @comments;
 		my %seen_comments_in_this_etappe;
 		for my $i ($strnames[$i]->[4][0] .. $strnames[$i]->[4][1]) {
@@ -3230,7 +3239,7 @@ sub search_coord {
 			      ($with_comments && $comments_net ?
 			       (Comment => $etappe_comment) : ()
 			      ),
-			      ($has_fragezeichen ?
+			      ($has_fragezeichen_routelist ?
 			       (FragezeichenComment => $fragezeichen_comment) : () # XXX key label may change!
 			      ),
 			      Coord => join(",", @{$r->path->[$route_inx->[0]]}),
@@ -3482,7 +3491,7 @@ EOF
 		$line_fmt = "%s %s %s (ges.:%s)\n";
 	    } else {
 		$line_fmt = "%-13s %-24s %-31s %-8s";
-		if ($has_fragezeichen && !$printmode) {
+		if ($has_fragezeichen_routelist && !$printmode) {
 		    $line_fmt .= " %s";
 		}
 		$line_fmt .= "\n";
@@ -3514,7 +3523,7 @@ EOF
 		print "<th" . ($with_cat_display && !$printmode ? " colspan=4" : "") .
 	              ">${fontstr}Bemerkungen$fontend</th>";
 	    }
-	    if ($has_fragezeichen && !$printmode) {
+	    if ($has_fragezeichen_routelist && !$printmode) {
 		print "<th></th>"; # no header for Fragezeichen
 	    }
 	    print "</tr>\n";
@@ -3570,7 +3579,7 @@ EOF
 		    }
 		    print "<td>$fontstr$etappe_comment$fontend</td>";
 		}
-		if ($has_fragezeichen && !$printmode) {
+		if ($has_fragezeichen_routelist && !$printmode) {
 		    if ($fragezeichen_comment ne "") {
 			my $qs = CGI->new({strname => $fragezeichen_comment,
 					   strname_html => CGI::escapeHTML($fragezeichen_comment),
@@ -3596,7 +3605,7 @@ EOF
 		if ($with_cat_display && !$printmode) {
 		    $cols += 3;
 		}
-		if ($has_fragezeichen && !$printmode) {
+		if ($has_fragezeichen_routelist && !$printmode) {
 		    $cols++;
 		}
 		print qq{$cols" style="background-color:white; text-align:right;">};

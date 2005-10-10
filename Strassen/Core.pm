@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.60 2005/10/01 22:00:57 eserte Exp $
+# $Id: Core.pm,v 1.61 2005/10/10 21:30:16 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.60 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.61 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -72,6 +72,8 @@ sub AUTOLOAD {
 # Arguments:
 #   NoRead
 #   PreserveLineInfo
+#   PreserveComments
+#   UseLocalDirectives
 #   CustomPush (only for MapInfo)
 sub new {
     my($class, $filename, %args) = @_;
@@ -163,6 +165,7 @@ sub new {
 	unless ($args{NoRead}) {
 	    $self->read_data(PreserveLineInfo   => $args{PreserveLineInfo},
 			     UseLocalDirectives => $args{UseLocalDirectives},
+			     PreserveComments   => $args{PreserveComments},
 			    );
 	}
     }
@@ -218,71 +221,75 @@ sub read_from_fh {
 	tie %global_directives, "Tie::IxHash";
     }
     my @block_directives;
-    if ($args{PreserveLineInfo}) {
-	while (<$fh>) {
+    my $preserve_line_info = $args{PreserveLineInfo} || 0;
+    my $preserve_comments  = $args{PreserveComments} || 0;
+
+    while (<$fh>) {
+	if (/^\#:\s*([^\s:]+):?\s*(.*)$/) {
+	    my($directive, $value_and_marker) = ($1, $2);
+	    $directive = $directive_aliases{$directive}
+		if exists $directive_aliases{$directive};
+	    my($value, $is_block_begin, $is_block_end);
+	    if ($value_and_marker =~ /^\^+\s*$/) {
+		$is_block_end = 1;
+		$value = "";
+	    } else {
+		$value_and_marker =~ /(.*?)(\s*vvv+\s*)?$/;
+		if ($2) {
+		    $is_block_begin = 1;
+		}
+		$value = $1;
+	    }
+
+	    if ($. == 1) {
+		$directives_stage = DIR_STAGE_GLOBAL;
+	    } elsif ($directives_stage eq DIR_STAGE_GLOBAL && $_ =~ /^\#:$/) {
+		$directives_stage = DIR_STAGE_LOCAL;
+	    }
+	    if ($directives_stage eq DIR_STAGE_GLOBAL) {
+		push @{ $global_directives{$directive} }, $value;
+	    } elsif ($use_local_directives) {
+		if ($is_block_begin) {
+		    push @block_directives, [$directive => $value];
+		} elsif ($is_block_end) {
+		    pop @block_directives;
+		} else {
+		    push @{ $line_directive{$directive} }, $value;
+		}
+	    }
+	    next;
+	}
+	$directives_stage = DIR_STAGE_LOCAL if $directives_stage eq DIR_STAGE_GLOBAL;
+	last if ($read_only_global_directives);
+	if ($preserve_comments) {
+	    next if m{^\#:}; # directives already handled
+	} else {
 	    next if m{^(\#|\s*$)};
-	    push @data, $_;
+	}
+
+	push @data, $_;
+	if ($preserve_line_info) {
 	    $self->{LineInfo}[$#data] = $.;
 	}
-    } else {
-	while (<$fh>) {
-	    if (/^\#:\s*([^\s:]+):?\s*(.*)$/) {
-		my($directive, $value_and_marker) = ($1, $2);
-		$directive = $directive_aliases{$directive}
-		    if exists $directive_aliases{$directive};
-		my($value, $is_block_begin, $is_block_end);
-		if ($value_and_marker =~ /^\^+\s*$/) {
-		    $is_block_end = 1;
-		    $value = "";
-		} else {
-		    $value_and_marker =~ /(.*?)(\s*vvv+\s*)?$/;
-		    if ($2) {
-			$is_block_begin = 1;
-		    }
-		    $value = $1;
-		}
 
-		if ($. == 1) {
-		    $directives_stage = DIR_STAGE_GLOBAL;
-		} elsif ($directives_stage eq DIR_STAGE_GLOBAL && $_ =~ /^\#:$/) {
-		    $directives_stage = DIR_STAGE_LOCAL;
+	if (keys %line_directive || @block_directives) {
+	    while(my($directive,$values) = each %line_directive) {
+		if ($has_tie_ixhash && !$directives[$#data]) {
+		    tie %{ $directives[$#data] }, 'Tie::IxHash';
 		}
-		if ($directives_stage eq DIR_STAGE_GLOBAL) {
-		    push @{ $global_directives{$directive} }, $value;
-		} elsif ($use_local_directives) {
-		    if ($is_block_begin) {
-			push @block_directives, [$directive => $value];
-		    } elsif ($is_block_end) {
-			pop @block_directives;
-		    } else {
-			push @{ $line_directive{$directive} }, $value;
-		    }
-		}
-		next;
+		push @{ $directives[$#data]{$directive} }, @$values;
 	    }
-	    $directives_stage = DIR_STAGE_LOCAL if $directives_stage eq DIR_STAGE_GLOBAL;
-	    last if ($read_only_global_directives);
-	    next if m{^(\#|\s*$)};
-	    push @data, $_;
-	    if (keys %line_directive || @block_directives) {
-		while(my($directive,$values) = each %line_directive) {
-		    if ($has_tie_ixhash && !$directives[$#data]) {
-			tie %{ $directives[$#data] }, 'Tie::IxHash';
-		    }
-		    push @{ $directives[$#data]{$directive} }, @$values;
+	    for (@block_directives) {
+		my($directive, $value) = @$_;
+		if ($has_tie_ixhash && !$directives[$#data]) {
+		    tie %{ $directives[$#data] }, 'Tie::IxHash';
 		}
-		for (@block_directives) {
-		    my($directive, $value) = @$_;
-		    if ($has_tie_ixhash && !$directives[$#data]) {
-			tie %{ $directives[$#data] }, 'Tie::IxHash';
-		    }
-		    push @{ $directives[$#data]{$directive} }, $value;
-		}
-		if (keys %line_directive) {
-		    %line_directive = ();
-		}
+		push @{ $directives[$#data]{$directive} }, $value;
 	    }
-        }
+	    if (keys %line_directive) {
+		%line_directive = ();
+	    }
+	}
     }
     if (@block_directives) {
 	die "The following block directives were not closed: `" . join(" ", map { "@$_" } @block_directives) . "'\n";

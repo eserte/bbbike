@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.5 2005/08/15 05:59:23 eserte Exp $
+# $Id: strassen.t,v 1.6 2005/10/10 21:43:21 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -37,9 +37,9 @@ GetOptions(get_std_opts("xxx"),
 	   "doit!" => \$doit,
 	  ) or die "usage";
 
-my $doit_tests = 1;
+my $doit_tests = 6;
 
-plan tests => 21 + $doit_tests;
+plan tests => 29 + $doit_tests;
 
 goto XXX if $do_xxx;
 
@@ -91,6 +91,7 @@ EOF
 
 {
     my $data = <<EOF;
+#: title: Testing global directives
 #:
 #: section projektierte Radstreifen der Verkehrsverwaltung vvv
 #: by http://www.berlinonline.de/berliner-zeitung/berlin/327989.html?2004-03-26 vvv
@@ -108,29 +109,36 @@ Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7477,12374
 Uferweg an der Kongreßhalle: laut Tsp im Frühjahr 2005 fertig	?::inwork 7684,12543 7753,12578
 #: section ^^^
 EOF
-    my $s = Strassen->new_from_data_string($data, UseLocalDirectives => 1);
-    is(scalar @{ $s->data }, 6, "Constructing from string data with directives");
-    $s->init_for_iterator("bla");
-    while(1) {
-	my $r = $s->next_for_iterator("bla");
-	last if !@{ $r->[Strassen::COORDS] };
-	my $dir = $s->get_directive_for_iterator("bla");
-	my $name = $r->[Strassen::NAME];
-	if ($name eq 'Heinrich-Heine') {
-	    ok(grep { /projektierte Radstreifen/ } @{ $dir->{section} });
-	    ok(grep { /berliner-zeitung/ } @{ $dir->{by} });
-	} elsif ($name eq 'Reichsstr.') {
-	    ok(grep { /projektierte Radstreifen/ } @{ $dir->{section} });
-	    ok(grep { /Tagesspiegel/ } @{ $dir->{by} } );
-	} elsif ($name =~ /^Magnus-Hirschfeld-Steg/) {
-	    ok(grep { /Straßen in Planung/ } @{ $dir->{section} });
-	    is($dir->{by}, undef);
+    for my $preserve_line_info (0, 1) {
+	my $s = Strassen->new_from_data_string
+	    ($data,
+	     UseLocalDirectives => 1,
+	     PreserveLineInfo => $preserve_line_info,
+	    );
+	is(scalar @{ $s->data }, 6, "Constructing from string data with directives (PreserveLineInfo=$preserve_line_info)");
+	$s->init_for_iterator("bla");
+	while(1) {
+	    my $r = $s->next_for_iterator("bla");
+	    last if !@{ $r->[Strassen::COORDS] };
+	    my $dir = $s->get_directive_for_iterator("bla");
+	    my $name = $r->[Strassen::NAME];
+	    if ($name eq 'Heinrich-Heine') {
+		ok(grep { /projektierte Radstreifen/ } @{ $dir->{section} });
+		ok(grep { /berliner-zeitung/ } @{ $dir->{by} });
+	    } elsif ($name eq 'Reichsstr.') {
+		ok(grep { /projektierte Radstreifen/ } @{ $dir->{section} });
+		ok(grep { /Tagesspiegel/ } @{ $dir->{by} } );
+	    } elsif ($name =~ /^Magnus-Hirschfeld-Steg/) {
+		ok(grep { /Straßen in Planung/ } @{ $dir->{section} });
+		is($dir->{by}, undef);
+	    }
 	}
     }
 }
 
 {
-    my $s = Strassen->new_from_data_string(<<EOF, UseLocalDirectives => 1);
+    for my $preserve_line_info (0, 1) {
+	my $s = Strassen->new_from_data_string(<<EOF, UseLocalDirectives => 1, PreserveLineInfo => $preserve_line_info);
 #:
 #: XXX block vvv
 1	1 1,1
@@ -153,7 +161,7 @@ EOF
 9	9 9,9
 EOF
 
-    eq_or_diff($s->as_string, <<EOF, "block directives are preserved");
+	eq_or_diff($s->as_string, <<EOF, "block directives are preserved (PreserveLineInfo=$preserve_line_info)");
 #:
 #: XXX: block vvv
 1	1 1,1
@@ -174,21 +182,28 @@ EOF
 #: XXX2: multiple
 9	9 9,9
 EOF
+    }
 }
 
 {
  SKIP: {
 	skip("Enable more tests with -doit option", $doit_tests) if !$doit;
 	skip("No diff", $doit_tests) if !is_in_path("diff");
+	my $preserve_comments = 1;
+	my $preserve_line_info = 1;
 	for my $file (qw(strassen landstrassen landstrassen2 fragezeichen qualitaet_s handicap_s)) {
 	    my $orig_file = "$datadir/$file-orig";
 	    if (-e $orig_file) {
-		my $s = Strassen->new($orig_file, UseLocalDirectives => 1);
+		my $s = Strassen->new($orig_file,
+				      UseLocalDirectives => 1,
+				      PreserveLineInfo => $preserve_line_info,
+				      PreserveComments => $preserve_comments,
+				     );
 		my($outfh,$outfilename) = tempfile(UNLINK => 1);					       
 		close $outfh;
 		$s->write($outfilename);
 		system("diff", "-u", $orig_file, $outfilename);
-		is($?, 0, "Roundtrip with $orig_file ok");
+		is($?, 0, "Roundtrip with $orig_file ok (PreserveLineInfo=$preserve_line_info, PreserveComments=$preserve_comments)");
 	    } else {
 		skip("No orig file", $doit_tests);
 	    }
