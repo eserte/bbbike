@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.191 2005/10/10 22:27:23 eserte Exp $
+# $Id: bbbike,v 3.191 2005/10/10 22:27:23 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -11402,7 +11402,19 @@ sub show_info {
 	    $show_url->($linkcount, sub {
 			    require CGI;
 			    my $wpt = "$zielname!$sx,$sy";
-			    my $q2 = CGI->new({ wpt => $wpt });
+			    my $zoom;
+			    if ($mapscale_scale < 4000) {
+				$zoom = 0;
+			    } elsif ($mapscale_scale < 8000) {
+				$zoom = 1;
+			    } elsif ($mapscale_scale < 16000) {
+				$zoom = 2;
+			    } else {
+				$zoom = 3;
+			    }
+			    my $q2 = CGI->new({ wpt => $wpt,
+						zoom => $zoom,
+					      });
 			    my $url = "http://www.radzeit.de/cgi-bin/bbbikegooglemap.cgi?" . $q2->query_string;
 			    $url;
 			});

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.7 2005/10/10 22:29:02 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.9 2005/10/11 22:05:38 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -69,8 +69,11 @@ for my $wpt (param("wpt")) {
     push @wpt, [$x,$y,$name];
 }
 
+my $zoom = param("zoom");
+$zoom = 3 if !defined $zoom;
+
 print header;
-print get_html(\@polylines_polar, \@wpt);
+print get_html(\@polylines_polar, \@wpt, $zoom);
 
 sub standard_converter {
     my($x,$y) = @_;
@@ -80,7 +83,7 @@ sub standard_converter {
 sub polar_converter { @_[0,1] }
 
 sub get_html {
-    my($paths_polar, $wpts) = @_;
+    my($paths_polar, $wpts, $zoom) = @_;
 
     my($centerx,$centery);
     if ($paths_polar && @$paths_polar) {
@@ -88,8 +91,6 @@ sub get_html {
     } elsif ($wpts && @$wpts) {
 	($centerx,$centery) = map { sprintf "%.5f", $_ } $wpts->[0][0], $wpts->[0][1];
     }
-
-    my $zoom = 3;
 
     my $html = <<EOF;
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -119,6 +120,10 @@ sub get_html {
     function showCoords(point, message) {
         var latLngStr = message + point.x + "," + point.y;
         document.getElementById("message").innerHTML = latLngStr;
+    }
+
+    function setZoomInForm() {
+	document.googlemap.zoom.value = map.getZoomLevel();
     }
 
     var map = new GMap(document.getElementById("map"), [G_SATELLITE_TYPE]);
@@ -175,7 +180,8 @@ EOF
     $html .= <<EOF;
     </div>
 
-<form style="margin-top:1cm; border:1px solid black; padding:3px;">
+<form name="googlemap" onsubmit='setZoomInForm()' style="margin-top:1cm; border:1px solid black; padding:3px;">
+  <input type="hidden" name="zoom" value="@{[ $zoom ]}" />
   Koordinatensystem:<br />
   <label><input type="radio" name="coordsystem" value="standard" @{[ $coordsystem eq 'standard' ? 'checked' : '' ]} /> BBBike</label><br />
   <label><input type="radio" name="coordsystem" value="polar" @{[ $coordsystem eq 'polar' ? 'checked' : '' ]} /> WGS84-Koordinaten (DDD)</label><br />

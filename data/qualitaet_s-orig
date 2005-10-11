@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.101 2005/10/11 20:44:07 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.101 2005/10/11 20:44:07 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
@@ -367,7 +367,7 @@ Schöneweider Str.: Kopfsteinpflaster	Q2 13134,7360 13345,7424
 Kannerstr.: gutes Kopfsteinpflaster	Q1 13345,7424 13373,7432
 Kannerstr.: Asphalt mit kleinen Schäden	Q1 13373,7432 13487,7337
 Unstrutstr.: Asphalt	Q0 13487,7337 13506,7257
-Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15382,5687
+Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15738,5369 15382,5687
 Uferweg: fester Sandweg	Q1 16604,8576 16529,8845 16449,9011 16319,9149 16259,9182 16129,9189 15969,9102 15793,8984
 Böcklinstr.: Kopfsteinpflaster	Q2 14676,11375 14598,11245
 Berliner Str.: Kopfsteinpflaster	Q2 12746,17981 12479,17811
@@ -716,7 +716,7 @@ Platanenstr.: mäßig geeignet	Q2 9355,19789 9177,19745 8977,19694 8704,19534 8496
 Feldstr. (Wedding): Kopfsteinpflaster	Q2 9048,14681 9112,14771
 #: unverified_by ADFC-Karte
 Schererstr.: mäßig geeignet	Q2 7786,15785 7960,15801
-Nibelungenstr. (Wannsee): sehr schlechtes Kopfsteinpflaster	Q3 -4578,1185 -4554,1391 -4121,1760 -4071,1739
+Nibelungenstr. (Wannsee): sehr schlechtes Kopfsteinpflaster	Q3 -4578,1185 -4559,1337 -4554,1391 -4121,1760 -4071,1739
 Seeuferstr.: mäßiges Kopfsteinpflaster	Q2 -4071,1739 -4044,1841
 #: unverified_by ADFC-Karte
 Nymphenufer: mäßig geeignet	Q2 -4044,1841 -3981,1764 -3806,1644 -3761,1576 -3654,1539
@@ -1239,6 +1239,7 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 #: by: kalkreuth
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 #: by: anonymous vvv
+Mechthildstr.: mäßiger Asphalt/Kopfsteinpflaster	Q2 23385,8217 23420,8265 23627,8543 23797,8814
 Am Faulen See: guter Asphalt	Q0 16515,16207 16623,16554 16639,16671 16617,16796 16559,16903 16487,17023
 Badeweg: guter Belag	Q0 -4171,2659 -4292,2762
 Badeweg: guter Belag	Q0 -4292,2762 -4471,2917
@@ -2717,6 +2718,14 @@ Ernst-Liesegang-Ufer: wassergebundener Weg	Q1 -5360,5897 -5249,5951 -4887,6107 -
 Hahns Mühle: schlechtes Kopfsteinpflaster	Q3 24681,4943 24667,4900 24765,4817 25001,4762
 #: by: Christian Uhrich:
 Beethovenstr.: Kopfsteinpflaster	Q2 7957,20182 8025,20327 8090,20371
+#: by: Ralf Schindofski:
+Rohrdommelweg: Beton	Q0 15336,3769 15220,3840 15179,3932
+#: by: bibo:
+Alsterweg: Asphalt	Q0 1955,618 1884,596 1826,648 1782,701 1829,1043 1895,1214 2114,1343
+#: by: michalk:
+Dreilindenstr.: Kopfsteinpflaster	Q2 -4559,1337 -4401,1357 -4025,1410 -3764,1446
+#: by: Anja Helling:
+Kameradenweg: Kopfsteinpflaster	Q2 6660,3049 6725,3051 6850,2964
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 (Bad Kissingen): wassergebunde Decke	Q1 3639,7590 3652,7795
 (Kolonieweg a. d. Forkenbeckstr.): wassergebunde Decke	Q1 3224,8217 3230,8194 3635,8099 3709,8082 3753,8073 3771,8094
