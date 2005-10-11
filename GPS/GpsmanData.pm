@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.39 2005/10/05 21:25:36 eserte Exp $
+# $Id: GpsmanData.pm,v 1.39 2005/10/05 21:25:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005 Slaven Rezic. All rights reserved.
@@ -808,7 +808,7 @@ sub load {
 	if ($old_gps_o) {
 	    # "sticky" attributes
 	    for my $member (qw(DatumFormat VersionXXX PositionFormat Creation CurrentConverter)) {
-		$gps_o->$member($old_gps_o->$member)
+		$gps_o->$member($old_gps_o->$member());
 	    }
 	}
 	my $old_begin = $begin;

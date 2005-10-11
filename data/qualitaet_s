@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.99 2005/10/10 21:33:27 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.101 2005/10/11 20:44:07 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
@@ -62,7 +62,7 @@ Herrfurthstr.: mäßiges Kopfsteinpflaster	Q2 11979,8014 11823,7980 11757,7965
 Herrfurthstr.: mäßiges Kopfsteinpflaster	Q2 11647,7940 11565,7921 11472,7899
 Herrfurthplatz: mäßiges Kopfsteinpflaster	Q2 11647,7940 11670,7911 11717,7895 11753,7930 11757,7965 11732,8001 11695,8005 11659,7982 11647,7940
 Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7497,8916 7467,8863 7391,8832
-Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7093,8574 6807,8309
+Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7093,8574 7018,8504 6807,8309
 Herbertstr.: Kopfsteinpflaster	Q2 7360,8918 7391,8832 7402,8783
 Ebersstr.: Kopfsteinpflaster	Q2 7395,8761 7346,8678 7252,8587
 Ebersstr.: Kopfsteinpflaster	Q2 7233,8557 7166,8487
@@ -167,7 +167,7 @@ Pillauer Str.: Kopfsteinpflaster	Q2 13377,11644 13290,11581
 Wriezener Karree: Beton	Q1 12686,11737 12778,11691 12819,11764 12726,11851
 Prenzlauer Promenade: Asphalt	Q0 12012,16752 12046,16568 12054,16517 12097,16263 12091,16209
 Engeldamm: Asphalt	Q0 12026,11348 11921,11185 11798,11128 11665,11118 11473,11180
-Ritterstr.: Kopfsteinpflaster	Q2 10572,10773 10389,10855 10094,10994
+Ritterstr.: Kopfsteinpflaster	Q2 10572,10773 10498,10806 10389,10855 10094,10994
 Adalbertstr.: Kopfsteinpflaster	Q2 11665,11118 11726,11265 11807,11479
 Oderstr.: Kopfsteinpflaster	Q2 11607,7145 11616,7089 11652,6879
 Friedelstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster (max. 16 km/h) 	Q2 12066,9558 12047,9429 12074,9217 12078,9065
@@ -1987,7 +1987,7 @@ Gerolsteiner Str.: Verbundsteinpflaster	Q1 4330,7497 4330,7375
 Am Fenn: Kopfsteinpflaster	Q2 6283,4565 6185,4429 6150,4340 6144,4315
 Ohmstr.: Asphalt	Q0 1442,14156 1504,14328
 Zühlsdorfer Str.: Asphalt	Q0 19976,16046 20214,15923 20262,16029 20170,16075
-Berchtesgadener Str.: Asphalt	Q0 6370,8922 6366,9033 6361,9164 6360,9194 6357,9322 6348,9535
+Berchtesgadener Str.: Asphalt	Q0 6370,8922 6366,9033 6361,9164 6360,9194 6357,9322 6351,9464 6348,9535
 Storchenweg: Beton	Q0 14605,3220 14761,3443
 Im Mühlenfelde: Asphalt	Q0 1268,2886 1320,2731 1324,2603
 Schwarzmeerstr.: Beton	Q1 17565,10782 17882,10708
@@ -2815,3 +2815,19 @@ Diedenhofener Str.: Asphalt	Q0 -3746,13622 -3651,13603 -3618,13596
 Ziegelhof: wassergebundene Decke	Q1 -3774,13517 -3668,13502
 Ziegelhof: Kopfsteinpflaster	Q2 -3668,13502 -3555,13485
 (Wachheimer Weg - Götelstr.): Gehwegplatten	Q1 -3437,12258 -3350,12260 -3349,12213
+Jakobikirchstr.: Kopfsteinpflaster	Q2 10498,10806 10538,10899
+(Neuenburger Str. - Lindenstr.): Gehwegplatten	Q0 9853,10543 9848,10526 9783,10508
+Enckestr.: Asphalt / Beton	Q0 9653,10950 9666,10848
+Fanny-Hensel-Weg: Kopfsteinpflaster / Gehwegplatten	Q2 8781,10827 8742,10868 8644,10914
+Hitzigallee: Asphalt	Q0 7687,11096 7741,11319
+Kielganstr.: Asphalt	Q0 7117,10611 7083,10516
+Maienstr.: Kleinpflaster	Q2 7003,10513 6877,10492
+Ahornstr. (Schöneberg): Kleinpflaster	Q2 6985,10597 6890,10581
+Habellandstr.: Asphalt	Q0 6056,9391 5985,9388 5937,9345
+Treuchtlinger Str.: Asphalt	Q0 5952,9518 5985,9388
+Penzberger Str.: Asphalt	Q0 6231,9461 6351,9464
+Nordsternstr.: Asphalt	Q0 6281,8914 6268,8884 6227,8796
+Prinz-Georg-Str.: Kopfsteinpflaster	Q2 7018,8504 7104,8413
+Bruchsaler Str. (Wilmersdorf): Kopfsteinpflaster	Q2 5573,8197 5520,8132 5522,8005
+Bernhardstr.: Asphalt	Q0 5570,8005 5570,7939
+Bernhardstr.: Asphalt	Q0 5472,8005 5471,7915 5356,7915

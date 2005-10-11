@@ -730,6 +730,46 @@ userdel	q4 -7873,66589 -7851,66418
          'data' => 'userdel	1 11723,13630 11538,13683 11257,13647
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1129413599,
+         'text' => 'Mahlsdorfer Str. (Köpenick) Richtung Köpenick, zwischen Hultischiner Damm und Genovevastr. Baustelle, Fahrtrichtung gesperrt (bis 15.10.)',
+         'from' => undef,
+         'data' => 'userdel	q4; 23799,7877 23774,7803 23701,7772 23190,7484 23066,7355
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1129413600,
+         'text' => 'L 15; (B109-Boitzenburg); zw. Abzw. Klein Sperrenwalde u. OL Gollmitz, Prenzlauer Str. Straßenbauarbeiten Vollsperrung 11.10.2005-15.10.2005 ',
+         'from' => 1128895200,
+         'data' => 'userdel	2 31882,98397 30743,99403
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1129413600,
+         'text' => 'L 165; (Manker-Garz); bei Garz, Bereich Brücke über Temnitz Asphaltsanierung Vollsperrung 12.10.2005-15.10.2005 ',
+         'from' => 1128981600,
+         'data' => 'userdel	2 -43343,47590 -42999,47684
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1131145200,
+         'text' => 'L 70; (Sperenberg-Trebbin); zw. Abzw.Chrisinend. u. Abzw.Kl.Schulzend.Ber.Brücke B101n Straßen- und Brückenbau Vollsperrung 17.10.2005-04.11.2005 ',
+         'from' => 1129413600,
+         'data' => 'userdel	2 1740,-23380 1079,-23181
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1143756000,
+         'text' => 'Rosenthaler Straße zwischen Hackescher Markt und Neue Schönhauser Straße Baustelle, als Einbahnstraße eingerichtet in Richtung Rosenthaler Platz, Dauer: 11.10.2005, 20.00 Uhr bis 30.03.2006 ',
+         'from' => 1128967200,
+         'data' => 'userdel	q4; 10305,13211 10264,13097
+',
+         'type' => 'handicap'
        }
      
 );

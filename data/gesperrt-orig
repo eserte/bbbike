@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.84 2005/10/10 21:44:34 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.86 2005/10/11 20:44:07 eserte Exp $
 #:
 ###################################################################
 #
@@ -10,7 +10,7 @@
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
-Kanalstraßen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7873,11142 7993,11137 8092,11092 8241,11024
+Kanalstraßen Nordufer	1 6880,11110 7118,11209 7160,11225 7251,11202 7333,11179 7595,11086 7687,11096 7873,11142 7993,11137 8092,11092 8241,11024
 # Hier kann ein kurzes Stück auf dem Gehweg überbrückt werden
 Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8739,10404 8820,10379 9029,10366 9147,10359 9241,10324 9392,10260 9593,10238 9865,10286
 Gitschiner Str.	1 9865,10286 9948,10280
@@ -834,3 +834,5 @@ Kleine Kurstr.	2:inwork 10182,11758 10249,11821
 Spittelmarkt	2:inwork 10182,11758 10274,11805
 Schicklerstr.: Bauarbeiten	2:inwork 11343,12300 11283,12278
 (Verlängerte Französische Str.): Tor kann verschlossen sein	2 8892,12006 9076,12054
+Hollmannstr.	2 9979,10639 9757,10708
+Nordsternstr.	1s 6268,8884 6281,8914
