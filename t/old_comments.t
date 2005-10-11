@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: old_comments.t,v 1.8 2005/07/02 12:00:22 eserte Exp eserte $
+# $Id: old_comments.t,v 1.9 2005/10/11 07:29:05 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -23,6 +23,16 @@ BEGIN {
 	exit;
     }
 }
+
+BEGIN {
+    if ($] < 5.006) {
+	$INC{"warnings.pm"} = 1;
+	*warnings::import = sub { };
+	*warnings::unimport = sub { };
+    }
+}
+
+no warnings 'qw';
 
 my @urls;
 if (defined $ENV{BBBIKE_TEST_CGIURL}) {
@@ -89,18 +99,18 @@ EOF
 - ~
 EOF
 
-	     # Franz-Mehring-Platz
-	     # XXX Nicht mehr --- ein anderes Beispiel suchen! XXX
-	     ["12811,12081", "12744,11904", <<EOF, "CP2; am Startpunkt"],
-- Als Franz-Mehring-Platz ausgeschildert: 1
+	     # Rathenauplatz
+	     [qw(2392,9715 2379,9665), <<EOF, "CP2; am Startpunkt"],
+- Als Rathenauplatz ausgeschildert: 1
 - ~
 EOF
-	     ["12744,11904", "12811,12081", <<EOF, "Rückweg ohne Kommentare"],
+	     [qw(2379,9665 2392,9715), <<EOF, "Rückweg ohne Kommentare"],
 - {}
 - ~
 EOF
-	     ["12852,12306", "12744,11904", <<EOF, "Franz-Mehring-Platz als Teilstrecke"],
-- Als Franz-Mehring-Platz ausgeschildert (Teilstrecke): 1
+	     # Bismarckplatz
+	     [qw(2316,9400 2380,9402), <<EOF, "Hubertusallee als Teilstrecke"],
+- als Hubertusallee ausgeschildert (Teilstrecke): 1
 - ~
 EOF
 
