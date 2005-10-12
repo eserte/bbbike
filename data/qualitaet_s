@@ -248,7 +248,7 @@ Thulestr.: Kopfsteinpflaster	Q2 11645,16616 11278,16609 11042,16605
 Granitzstr.: Asphalt	Q0 10859,17854 10907,17884 11264,18154 11500,18335 11606,18416 11950,18529
 Stargardtstr.: gut geeignet	Q0 7043,17667 7237,17729 7495,17814
 Windscheidstr.: Kopfsteinpflaster, OK	Q1 3283,11097 3344,10878
-Suarezstr.: Kopfsteinpflaster	Q2 2766,10750 2921,10928 2987,11055 3006,11093
+Suarezstr.: Kopfsteinpflaster	Q2 2766,10750 2845,10840 2921,10928 2987,11055 3006,11093
 Rˆnnestr.: Kopfsteinpflaster	Q2 2739,10645 3049,10719 3299,10816 3291,10853
 (Stuttgarter Platz/zur Leonhardtstr.): Kopfsteinpflaster	Q2 3291,10853 3344,10878
 Josef-Nawrocki-Str.: teils Kopfsteinpflaster, teils m‰ﬂiger Asphalt	Q2 25541,4845 25565,4764 25706,4723 25819,4688
@@ -270,7 +270,7 @@ An der Nordbahn: m‰ﬂiges Pflaster (?)	Q1 7528,19469 6708,20152 6368,20440 6372,2
 Pestalozzistr.: Kopfsteinpflaster	Q2 4433,11213 4556,11206 4728,11195 4782,11192
 Pestalozzistr.: Kopfsteinpflaster	Q2 4173,11225 4077,11226 3981,11226
 Goethestr.: teilweise Kopfsteinpflaster, teilweise Verbundsteine	Q2 4312,11341 4092,11338 3986,11337
-Knesebeckstr.: Kopfsteinpflaster	Q2 4868,10934 4847,10677 4847,10589 4828,10356
+Knesebeckstr.: Kopfsteinpflaster	Q2 4868,10934 4862,10881 4847,10677 4847,10589 4828,10356
 Mommsenstr.: Kopfsteinpflaster	Q2 4685,10689 4847,10677
 Linienstr.: m‰ﬂiger Asphalt	Q1 10432,13678 10597,13647 10718,13625
 Linienstr.: m‰ﬂiger Asphalt	Q1 9903,13646 9752,13575 9607,13507 9281,13374
@@ -673,7 +673,7 @@ Br¸nowplatz: Kopfsteinpflaster	Q2 1842,20048 1806,19991 1874,19955 1904,20018 18
 Borsigwalder Weg: m‰ﬂig geeignet	Q2 2852,19546 3028,19771
 Miraustr.: m‰ﬂig geeignet	Q2 3820,19688 4014,19433 4170,19079 4195,19043
 Schaperstr.: Asphalt	Q0 5706,10216 5597,10299 5471,10331
-Bleibtreustr.: Kopfsteinpflaster	Q2 4728,11195 4722,11030 4701,10837 4685,10689
+Bleibtreustr.: Kopfsteinpflaster	Q2 4728,11195 4722,11030 4714,10950 4701,10837 4685,10689
 Wilhelmsaue: Kopfsteinpflaster	Q2 5181,8731 5226,8729 5346,8720 5510,8709
 Werderstr.: Kopfsteinpflaster	Q2 8955,5549 8974,5708
 Werderstr.: asphaltiert	Q0 8974,5708 8988,5821
@@ -774,7 +774,7 @@ Lichtensteinallee: gutes Kopfsteinpflaster	Q1 6399,11558 6309,11443 6252,11367
 Storkwinkel: Kopfsteinpflaster	Q2 2489,9784 2492,9865
 Witzlebenplatz: Kopfsteinpflaster, OK	Q1 2766,11512 2801,11463 2920,11301
 Friedbergstr.: Kopfsteinpflaster, OK	Q1 2766,10750 2812,10753 3012,10812 3204,10895
-Am Berlin Museum: Hindernisse	Q2 10016,10755 9801,10807
+Am Berlin Museum: Asphalt und Hindernisse	Q2 10016,10755 9801,10807
 (Rad- und Wanderweg an Spree und Landwehrkanal): teilweise Parkweg, teilweise gutes Kopfsteinfplaster	Q1 3288,12700 3383,12720 3582,12704 3763,12624 3907,12619 4091,12617 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
 Monbijoupark - Henriette-Herz-Platz: holpriger Parkweg	Q2 9977,12912 10132,12941
 Spreeufer: teilweise holpriger Parkweg	Q2 10171,12769 10100,12876 9977,12912 9895,12936
@@ -2056,6 +2056,7 @@ Rohrdommelweg: Beton	Q0 15336,3769 15220,3840 15179,3932
 Alsterweg: Asphalt	Q0 1955,618 1884,596 1826,648 1782,701 1829,1043 1895,1214 2114,1343
 Dreilindenstr.: Kopfsteinpflaster	Q2 -4559,1337 -4401,1357 -4025,1410 -3764,1446
 Kameradenweg: Kopfsteinpflaster	Q2 6660,3049 6725,3051 6850,2964
+Mahonienweg: Asphalt	Q0 16004,4760 15540,5075 15737,5364
 (Bad Kissingen): wassergebunde Decke	Q1 3639,7590 3652,7795
 (Kolonieweg a. d. Forkenbeckstr.): wassergebunde Decke	Q1 3224,8217 3230,8194 3635,8099 3709,8082 3753,8073 3771,8094
 Claire-Waldoff-Weg: wassergebunde Decke	Q1 3635,8099 3596,7550

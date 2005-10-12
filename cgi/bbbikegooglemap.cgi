@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.9 2005/10/11 22:05:38 eserte Exp eserte $
+# $Id: bbbikegooglemap.cgi,v 1.10 2005/10/11 22:14:08 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -96,6 +96,7 @@ sub get_html {
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
   <head>
+    <title>BBBike data presented with Googlemap</title>
     <link rel="stylesheet" type="text/css" href="/BBBike/html/bbbike.css"><!-- XXX only for radzeit -->
     <script src="http://maps.google.com/maps?file=api&v=1&key=ABQIAAAAidl4U46XIm-bi0ECbPGe5hR1DE4tk8nUxq5ddnsWMNnWMRHPuxTzJuNOAmRUyOC19LbqHh-nYAhakg" type="text/javascript"></script>
   </head>
@@ -196,8 +197,9 @@ EOF
   <td colspan="3">
       <p class="ftr">
        <a id="bbbikemail" href="mailto:slaven\@rezic.de">E-Mail</a> |
-       <a id="bbbikeurl" href="http://radzeit.herceg.de/cgi-bin/bbbike.cgi">BBBike</a> |
-       <a href="/cgi-bin/mapserver_address.cgi">Adresssuche</a>
+       <a id="bbbikeurl" href="http://radzeit.herceg.de/cgi-bin/bbbike.cgi">BBBike</a> <!-- |
+       <a href="/cgi-bin/mapserver_address.cgi">Adresssuche</a>-->
+       | <a href="http://maps.google.com/maps?ll=52.515385,13.381004&spn=0.146083,0.229288&t=k">Google Maps</a>
       </p>
   </td>
  </tr>
