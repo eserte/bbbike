@@ -1129,6 +1129,11 @@ einführen, um besseres Stacking zu machen (unterhalb von Straßen).
 
 =over
 
+=item * (M5)
+
+Add Tk::Clipboard to @Tk::HList::ISA on Windows (or so). Then it would
+be possible to use Control-C for copying the selection.
+
 =item * (E4)
 
 Check if Object::Iterate will really be available in the next
@@ -2147,6 +2152,11 @@ crossing, or just a crossing) from normal text.
 
 Sometime take a look at L<http://search.cpan.org/dist/Geo-Shapelib/>
 Only needed if my functions would be too slow one day.
+
+=item * (M1)
+
+Maybe write an BBBikeAreaPlugin for displaying the current route's
+area (in a balloon or additional label/toplevel).
 
 =back
 

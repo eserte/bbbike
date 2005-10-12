@@ -697,7 +697,14 @@ userdel	q4 -7873,66589 -7851,66418
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'until' => 1129298400,
+         'text' => 'Drakestraße zwischen Hans-Sachs-Straße und Knesebeckstraße in beiden Richtungen Brückenabriss, Straße gesperrt, Dauer: 12.10.2005 02:00 Uhr bis 14.10.2005 16:00 Uhr',
+         'from' => 1128988800,
+         'data' => 'userdel	2 3259,4002 3128,4190
+',
+         'type' => 'gesperrt'
+       },
        {
          'until' => 1134774000,
          'text' => 'K 7228; (Zossener Allee); OL Sperenberg Straßenbau Vollsperrung 10.10.2005-16.12.2005 ',

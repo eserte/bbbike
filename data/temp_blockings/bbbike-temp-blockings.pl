@@ -2942,9 +2942,9 @@ EOF
 userdel	q4 25095,35601 24915,35340
 EOF
      },
-     { from  => 1128610800, # 2005-10-06 17:00
-       until => 1128916800, # 2005-10-10 06:00
-       text  => 'Drakestraße zwischen Knesebeckstraße und Hans-Sachs-Straße in beiden Richtungen Brückenabriss, Straße gesperrt, Dauer: 07.10.2005 17:00 Uhr bis 10.10.2005 06:00 Uhr ',
+     { from  => 1128988800, # 2005-10-11 02:00
+       until => 1129298400, # 2005-10-14 16:00
+       text  => 'Drakestraße zwischen Hans-Sachs-Straße und Knesebeckstraße in beiden Richtungen Brückenabriss, Straße gesperrt, Dauer: 12.10.2005 02:00 Uhr bis 14.10.2005 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 3259,4002 3128,4190
