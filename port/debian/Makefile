@@ -3,7 +3,7 @@
 #
 
 BUILDDIR=	/tmp/bbbike-debian
-BUILDBBBIKEROOT=$(BUILDDIR)/usr/local/BBBike
+BUILDBBBIKEROOT=$(BUILDDIR)/opt/BBBike
 BBBIKEROOT=	../..
 
 all:	debian-package
@@ -27,7 +27,7 @@ $(BUILDDIR)/DEBIAN/control:  $(BBBIKEROOT)/BBBikeVar.tpl \
 debian-copy-files:
 	mkdir -p $(BUILDBBBIKEROOT)
 	chmod 755 $(BUILDBBBIKEROOT)
-	cd $(BBBIKEROOT) && umask 022 && perl -MExtUtils::Manifest=manicopy,maniread -e '$$fs=maniread(q{MANIFEST}); manicopy($$fs,q{$(BUILDDIR)/usr/local/BBBike}, q{cp})'
+	cd $(BBBIKEROOT) && umask 022 && perl -MExtUtils::Manifest=manicopy,maniread -e '$$fs=maniread(q{MANIFEST}); manicopy($$fs,q{$(BUILDBBBIKEROOT)}, q{cp})'
 
 debian-compile:
 	cd $(BBBIKEROOT)/ext && umask 022 && make ext && make clean
@@ -35,7 +35,7 @@ debian-compile:
 debian-symlinks:
 	mkdir -p $(BUILDDIR)/usr/bin
 	rm -f $(BUILDDIR)/usr/bin/bbbike
-	ln -s ../local/BBBike/bbbike $(BUILDDIR)/usr/bin/bbbike
+	ln -s /opt/BBBike/bbbike $(BUILDDIR)/usr/bin/bbbike
 
 debian-build:
 	dpkg -b $(BUILDDIR)

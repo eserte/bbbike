@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.86 2005/10/11 20:44:07 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.87 2005/10/13 21:22:14 eserte Exp $
 #:
 ###################################################################
 #
@@ -836,3 +836,6 @@ Schicklerstr.: Bauarbeiten	2:inwork 11343,12300 11283,12278
 (Verlängerte Französische Str.): Tor kann verschlossen sein	2 8892,12006 9076,12054
 Hollmannstr.	2 9979,10639 9757,10708
 Nordsternstr.	1s 6268,8884 6281,8914
+tragen	0:60 -9394,-644 -9377,-625 -9365,-610
+tragen (ca. 60 Stufen)	0:120 -8120,-1500
+tragen	0:60 -8485,-1445 -8467,-1417 -8449,-1389
