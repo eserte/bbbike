@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.2 2005/05/02 23:28:50 eserte Exp $
+# $Id: Makefile,v 1.2 2005/05/02 23:28:50 eserte Exp eserte $
 #
 
 BUILDDIR=	/tmp/bbbike-debian
@@ -22,7 +22,7 @@ debian-prepare:
 
 $(BUILDDIR)/DEBIAN/control:  $(BBBIKEROOT)/BBBikeVar.tpl \
 			     control.tpl
-	tpage --debug=undef --eval_perl control.tpl > $(BUILDDIR)/DEBIAN/control
+	tpage --debug=undef --eval_perl control.tpl > $(BUILDDIR)/DEBIAN/control || rm -f $@
 
 debian-copy-files:
 	mkdir -p $(BUILDBBBIKEROOT)

@@ -948,7 +948,8 @@ Katzlerstr.: mäßiges Kopfsteinpflaster	Q2 8035,9437 8095,9639
 Derfflingerstr.: einige kurze Kopfsteinpflasterabschnitte, sonst Asphalt	Q0 7117,10611 7236,10936
 Weimarer Str.: gutes Kopfsteinpflaster	Q1 4092,11338 4077,11226
 Graudenzer Str.: Kopfsteinpflaster	Q2 13251,12221 13470,12190
-Neue Blumenstr.: gutes Kopfsteinpflaster	Q2 12006,12464 12118,12462 12341,12417
+Neue Blumenstr.: gutes Kopfsteinpflaster	Q2 12006,12464 12118,12462
+Blumenstr.: gutes Kopfsteinpflaster	Q2 12118,12462 12341,12417
 Fritschestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 3291,11832 3262,12003
 Hebbelstr.: gutes Pflaster	Q1 3117,11852 3262,12003 3278,12021 3304,12053
 Am Comeniusplatz: Kopfsteinpflaster	Q2 13280,11834 13411,11899
@@ -2911,7 +2912,7 @@ Ludwig-Pick-Str.: Gehwegplatten	Q0 13568,12439 13563,12324
 Alte Allee: Asphalt	Q0 896,9396 785,9476 733,9511 684,9549 657,9567 596,9613
 Kühler Weg: Asphalt	Q0 596,9613 745,9814 828,9924
 Falkensteiner Str.: Kopfsteinpflaster	Q3 4193,8088 4087,8204
-Emslebener Weg: Asphalt	Q0 4139,8485 4139,8356
+Ermslebener Weg: Asphalt	Q0 4139,8485 4139,8356
 Kahlstr.: Kopfsteinpflaster in südlicher Richtung	Q3; 4220,8482 4220,8260
 Kahlstr.: Asphalt in nördlicher Richtung	Q2; 4220,8260 4220,8482
 (Wallenbergstr. - Rudolstätter Str.): Wassergebundene Decke	Q1 4139,8485 4029,8482
@@ -3159,7 +3160,7 @@ Cuxhavener Str.: Kopfsteinpflaster	Q2 5931,12396 5951,12353 5999,12280
 (Cuxhavener Str. - Altonaer Str.): fester Sand	Q1 5999,12280 6086,12446
 Hanseatenweg: Kopfsteinpflaster	Q1 6444,12536 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
 Am Waldfriedhof: Asphalt	Q0 942,4900 953,4994
-Am Waldfriedhof: Beton	Q0 953,4994 986,5135 1017,5163 1065,5208 1120,5258 1181,5311 1234,5358
+Am Waldfriedhof: Beton	Q0 953,4994 986,5135 1017,5163 1098,5237 1120,5258 1150,5282 1234,5358
 Taylorstr.: Asphalt	Q0 1535,5155 1557,5187 1567,5228 1556,5327 1575,5433 1540,5475 1461,5475 1279,5406 1234,5358
 Flanaganstr.: Asphalt	Q0 1086,5491 1358,5618 1553,5710 1598,5718 1630,5710 1646,5687 1646,5663 1606,5525 1580,5496 1540,5475
 Flanaganstr.: Asphalt	Q0 1461,5475 1482,5525 1482,5573 1461,5599 1424,5613 1358,5618
@@ -3177,9 +3178,9 @@ Treibjagdweg: Kopfsteinpflaster	Q1 528,4970 528,5121
 Hochwildpfad: Kopfsteinpflaster	Q1 623,4999 623,5147
 Am Lappjagen: Kopfsteinpflaster	Q1 732,5005 734,5145
 #Pritchardstr.	N 1102,4978 1080,5066 1017,5163
-#Lohrbergweg	N 1181,5311 1231,5258
-#Löwenburgweg	N 1120,5258 1173,5206
-#Wolkenburgweg	N 1065,5208 1120,5153
+#Lohrbergweg  N	1150,5282 1218,5206
+#Löwenburgweg N	1120,5258 1193,5182
+#Wolkenburgweg        N	1098,5237 1167,5159
 Tom-Sawyer-Weg: Verbundsteine	Q1 1284,5105 1218,5147
 Tannenbergallee: Asphalt	Q1 265,10935 50,10910 -37,10901 -212,10881
 Tannenbergallee: Kopfsteinpflaster	Q2 -212,10881 -459,10854
@@ -3514,3 +3515,9 @@ Prinz-Georg-Str.: Kopfsteinpflaster	Q2 7018,8504 7104,8413
 Bruchsaler Str. (Wilmersdorf): Kopfsteinpflaster	Q2 5573,8197 5520,8132 5522,8005
 Bernhardstr.: Asphalt	Q0 5570,8005 5570,7939
 Bernhardstr.: Asphalt	Q0 5472,8005 5471,7915 5356,7915
+(Schulstr.): Asphalt	Q0 1506,5169 1493,5258 1437,5282 1368,5235
+Am Petersberg: Kopfsteinpflaster	Q2 990,5581 825,5420
+Pritchardstr.: Asphalt	Q0 1102,4978 1080,5066 1017,5163
+Lohrbergweg: Verbundsteine	Q1 1150,5282 1218,5206
+Löwenburgweg: Verbundsteine	Q1 1120,5258 1193,5182
+Wolkenburgweg: Verbundsteine	Q1 1098,5237 1167,5159
