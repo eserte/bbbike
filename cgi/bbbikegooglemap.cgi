@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.10 2005/10/11 22:14:08 eserte Exp eserte $
+# $Id: bbbikegooglemap.cgi,v 1.11 2005/10/13 07:13:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -90,6 +90,9 @@ sub get_html {
 	($centerx,$centery) = map { sprintf "%.5f", $_ } split /,/, $paths_polar->[0][0];
     } elsif ($wpts && @$wpts) {
 	($centerx,$centery) = map { sprintf "%.5f", $_ } $wpts->[0][0], $wpts->[0][1];
+    } else {
+	require Geography::Berlin_DE;
+	($centerx,$centery) = $converter->(split /,/, Geography::Berlin_DE->center());
     }
 
     my $html = <<EOF;
@@ -197,8 +200,8 @@ EOF
   <td colspan="3">
       <p class="ftr">
        <a id="bbbikemail" href="mailto:slaven\@rezic.de">E-Mail</a> |
-       <a id="bbbikeurl" href="http://radzeit.herceg.de/cgi-bin/bbbike.cgi">BBBike</a> <!-- |
-       <a href="/cgi-bin/mapserver_address.cgi">Adresssuche</a>-->
+       <a id="bbbikeurl" href="http://radzeit.herceg.de/cgi-bin/bbbike.cgi">BBBike</a> |
+       <a href="/cgi-bin/mapserver_address.cgi?usemap=googlemaps">Adresssuche</a>
        | <a href="http://maps.google.com/maps?ll=52.515385,13.381004&spn=0.146083,0.229288&t=k">Google Maps</a>
       </p>
   </td>

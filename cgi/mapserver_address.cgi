@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.23 2005/06/02 01:18:23 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.24 2005/10/13 07:13:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -50,12 +50,15 @@ use lib (defined $BBBIKE_ROOT ? ("$BBBIKE_ROOT",
 	 "/home/e/eserte/src/bbbike/miscsrc",
 	); # XXX do not hardcode
 
+if (!param("usemap")) {
+    param("usemap", "mapserver");
+}
 if (defined param("mapserver")) {
-    redirect_to_ms();
+    redirect_to_map();
 } elsif (defined param("street") && param("street") !~ /^\s*$/) {
     resolve_street();
 } elsif (defined param("coords") && param("coords") !~ /^\s*$/) {
-    redirect_to_ms(param("coords"));
+    redirect_to_map(param("coords"));
 } elsif (defined param("city") && param("city") !~ /^\s*$/) {
     resolve_city();
 } elsif (defined param("searchterm") && param("searchterm") !~ /^\s*$/) {
@@ -83,6 +86,7 @@ sub _form {
     print start_form(-action => url(-relative=>1));
     print hidden("layer", param("layer")) if param("layer");
     print hidden("mapext", param("mapext")) if param("mapext");
+    print hidden("usemap", param("usemap"));
 }
 
 sub show_form {
@@ -150,7 +154,9 @@ sub show_form {
 	       );
     print end_form, hr;
 
-    print start_form, submit("mapserver", "Zurück zum Mapserver"), end_form;
+    if (param("usemap") ne "googlemaps") {
+	print start_form, submit("mapserver", "Zurück zum Mapserver"), end_form;
+    }
 }
 
 sub resolve_street {
@@ -176,7 +182,8 @@ sub resolve_street {
 
 	splice @{$br->StartChoices}, 20 if @{$br->StartChoices} > 20;
 	print header, start_html("Auswahl nach Straßen und Orten"), h1("Auswahl nach Straßen und Orten");
-	print start_form;
+	#print start_form;
+	_form;
 	print h2("Mehrere Straßen gefunden");
 	print radio_group
 	    (-name=>"coords",
@@ -193,7 +200,7 @@ sub resolve_street {
     }
 
     my $xy = $start->Coord;
-    redirect_to_ms($xy);
+    redirect_to_map($xy);
 }
 
 sub resolve_city {
@@ -234,7 +241,7 @@ sub resolve_city {
 	print end_html;
     } elsif (@res == 1) {
 	my $xy = $res[0]->[Strassen::COORDS()]->[0];
-	redirect_to_ms($xy);
+	redirect_to_map($xy);
     } else {
 	splice @res, 20 if @res > 20;
 	print header, start_html("Auswahl nach Straßen und Orten"), h1("Auswahl nach Straßen und Orten");
@@ -378,7 +385,7 @@ sub resolve_fulltext {
     }
     if (@res == 1) {
 	my $xy = $res[0]->[Strassen::COORDS()]->[0];
-	redirect_to_ms($xy);
+	redirect_to_map($xy);
     }
 }
 
@@ -388,7 +395,25 @@ sub resolve_latlong {
     $Karte::Polar::obj = $Karte::Polar::obj; # cease -w
     Karte::preload("Standard", "Polar");
     my($x, $y) = map { int } $Karte::Polar::obj->map2standard($long, $lat);
-    redirect_to_ms("$x,$y");
+    redirect_to_map("$x,$y");
+}
+
+sub redirect_to_map {
+    my($coord, %args) = @_;
+    my $usemap = param("usemap") || "mapserver";
+    if ($usemap eq 'googlemaps') {
+	redirect_to_googlemaps($coord, %args);
+    } else {
+	redirect_to_ms($coord, %args);
+    }
+}
+
+sub redirect_to_googlemaps {
+    my($coord, %args) = @_;
+    my $q2 = CGI->new({wpt_or_trk => "!$coord"});
+    # XXX do not hardcode
+    print redirect("http://www.radzeit.de/cgi-bin/bbbikegooglemap.cgi?" . $q2->query_string);
+    return;
 }
 
 sub redirect_to_ms {

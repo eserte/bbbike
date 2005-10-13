@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.33 2005/10/10 22:28:18 eserte Exp $
+# $Id: bbbike.cgi,v 7.33 2005/10/10 22:28:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -4197,6 +4197,7 @@ sub draw_route {
 	}
 	my $q2 = CGI->new({coords => $q->param("coords"),
 			   wpt    => \@wpt});
+	# XXX do not hardcode
 	print $q->redirect("http://www.radzeit.de/cgi-bin/bbbikegooglemap.cgi?" . $q2->query_string);
 	return;
     }
