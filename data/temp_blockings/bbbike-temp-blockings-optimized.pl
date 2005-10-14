@@ -612,14 +612,7 @@ userdel	q4 -7873,66589 -7851,66418
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1129240800,
-         'text' => 'L 513; (Ringchaussee); Krz. Burg Kolonie/ Naundorf Deckenerneuerung Vollsperrung 13.10.2005-13.10.2005 ',
-         'from' => 1129068000,
-         'data' => 'userdel	2 59792,-61720 60404,-61710
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1129413600,
          'text' => 'L 541; (Suschow-Burg Kolonie); Krz. Burg Kolonie/ Naundorf Deckenerneuerung Vollsperrung 15.10.2005-15.10.2005 ',
@@ -775,6 +768,14 @@ userdel	q4 -7873,66589 -7851,66418
          'text' => 'Rosenthaler Straße zwischen Hackescher Markt und Neue Schönhauser Straße Baustelle, als Einbahnstraße eingerichtet in Richtung Rosenthaler Platz, Dauer: 11.10.2005, 20.00 Uhr bis 30.03.2006 ',
          'from' => 1128967200,
          'data' => 'userdel	q4; 10305,13211 10264,13097
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1133391600,
+         'text' => 'L 401; (Lindenallee); OD Zeuthen, zw. OE und An der Eisenbahn grundhafter Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
+         'from' => 1119996000,
+         'data' => 'userdel	q4 26790,-7918 26700,-7334 26581,-7087
 ',
          'type' => 'handicap'
        }

@@ -3041,4 +3041,12 @@ EOF
 userdel	q4; 10305,13211 10264,13097
 EOF
      },
+     { from  => 1119996000, # 2005-06-29 00:00
+       until => 1133391600, # 2005-12-01 00:00
+       text  => 'L 401; (Lindenallee); OD Zeuthen, zw. OE und An der Eisenbahn grundhafter Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 26790,-7918 26700,-7334 26581,-7087
+EOF
+     },
     );
