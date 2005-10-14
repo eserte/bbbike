@@ -1,5 +1,5 @@
 #: title: Einbahnstraﬂen und gesperrte Straﬂen
-#: version: $Id: gesperrt-orig,v 4.87 2005/10/13 21:22:14 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.89 2005/10/14 20:39:46 eserte Exp eserte $
 #:
 Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -282,6 +282,8 @@ Sella-Hasse-Str.	1 20948,16612 20771,16690 20843,16829
 Buggenhagenstr.	1 14425,13780 14381,13615
 Schollenhof	1 3247,21430 3196,21547 3265,21570 3297,21469
 Siegfried-Aufh‰user-Platz	1 13939,7504 13928,7529 13942,7556 13967,7556
+Saltykowstr.	1 12726,7887 12865,7923
+(Drorystr. - Braunschweiger Str., Spielplatz): nachts werden die Tore geschlossen	2 13520,7485 13601,7366
 Benkertstr.	1 -12685,-870 -12712,-734 -12727,-640
 Hans-Thoma-Str.	1 -12148,-784 -12190,-775 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
@@ -522,6 +524,7 @@ Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3 11929,12263 12006,12464 
 Suadicanistr. -> Sachsendamm: unbequem passierbarer Mittelstreifen	3 7854,7572 7859,7486 7924,7431
 Sachsendamm -> Suadicanistr.: unbequem passierbarer Mittelstreifen	3 7717,7564 7859,7486 7854,7572
 Boddinstr. -> Karl-Marx-Str.: Mittelstreifen	3 12368,8356 12582,8408 12540,8458
+Karl-Marx-Str. -> Saltykowstr.: unbequemes ‹berqueren wegen parkender Autos	3 12898,7832 12865,7923 12726,7887
 Flughafenstr. -> Weisestr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3 11892,8372 11763,8337 11770,8292
 Weisestr. -> Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3 11770,8292 11763,8337 11632,8302
 Stromstr. -> nˆrdliches Spreeufer: unpassierbarer Mittelstreifen	3 6201,13058 6185,12968 6218,12975
@@ -667,6 +670,10 @@ tragen (Treppe)	0:30:-114 1715,3257
 tragen (Treppe)	0:30:-104 6187,12851
 tragen (Treppe)	0:30:77 2943,13550
 tragen (Treppe)	0:30:62 3025,13568
+Schranke (Kopfstr.)	BNP:5:-101 12537,7899
+Dr‰ngelgitter (Parkweg)	BNP:5:37 14562,10079
+Dr‰ngelgitter (Parkweg)	BNP:5:41 14600,10128
+Dr‰ngelgitter (Parkweg)	BNP:5:37 14628,10160
 Dr‰ngelgitter (Gˆrlitzer Park)	BNP:5:13 12686,10045
 Dr‰ngelgitter (Gˆrlitzer Park)	BNP:5:22 12770,10210
 Dr‰ngelgitter (Gˆrlitzer Park)	BNP:5:-153 12904,10141
@@ -777,10 +784,10 @@ T¸binger Str. -> Mainzer Str.: Queren nicht mˆglich	3 5420,8160 5359,8140 5177,8
 T¸binger Str. -> Bundesallee: Queren nicht mˆglich	3 5420,8160 5359,8140 5357,8005
 (Los-Angeles-Platz)	1s 5681,10696 5822,10609
 Bregenzer Str.	1 4278,10262 4227,10014
-Berolinastr. -> Mollstr.: Strassenbahn	3 11863,13053 11867,13076 11839,13083
-Mollstr. -> Berolinastr.: Strassenbahn	3 11905,13069 11867,13076 11863,13053
-Mollstr. -> B¸schingstr.: Strassenbahn	3 11721,13142 11839,13083 11879,13133
-B¸schingstr. -> Mollstr.: Strassenbahn	3 11879,13133 11839,13083 11867,13076
+Berolinastr. -> Mollstr.: Straﬂenbahn	3 11863,13053 11867,13076 11839,13083
+Mollstr. -> Berolinastr.: Straﬂenbahn	3 11905,13069 11867,13076 11863,13053
+Mollstr. -> B¸schingstr.: Straﬂenbahn	3 11721,13142 11839,13083 11879,13133
+B¸schingstr. -> Mollstr.: Straﬂenbahn	3 11879,13133 11839,13083 11867,13076
 (Berolinastr.): Tor zum Spielplatz	BNP:10:-238 11858,13029
 (Berolinastr.): Tor zum Spielplatz	BNP:10:-168 11863,13053
 (Berolinastr.): Tor zum Spielplatz	BNP:10:-249 11815,13045

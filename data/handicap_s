@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.71 2005/10/13 21:22:15 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.72 2005/10/14 20:39:47 eserte Exp eserte $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -54,7 +54,7 @@ Tiergarten: Parkweg	q1 8006,11766 8022,12016 7999,12049 8006,12074 8034,12093 80
 Tiergarten: Parkweg	q1 8214,12205 8215,12156 8220,11844 8223,11700
 Tiergarten: Parkweg	q1 8021,11636 8006,11766
 Tiergarten: Parkweg	q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
-Parkweg: enge Brücke, Parkweg	q2 14310,9692 14452,9919 14656,10197
+Parkweg: enge Brücke, Parkweg	q2 14310,9692 14452,9919 14562,10079 14600,10128 14628,10160 14656,10197
 Spittelmarkt: Gehweg	q1 10154,11590 10135,11661 10222,11724
 Spittelmarkt: Gehweg	q1 10369,11728 10222,11724
 Beuthstr. - Spittelmarkt: Gehweg	q1 10239,11604 10222,11724
@@ -235,6 +235,8 @@ Heinrich-Lassen-Park: Fußgänger (aber Radfahren ist erlaubt!)	q1 6664,8787 6740,
 An der Malche: teilweise eng und kurvig	q1 1139,20420 1060,20557 995,20590 921,20562 864,20646 673,20800
 Am Friedhof: recht enger Radweg	q1 6391,17838 6376,17687 6347,17381
 Kolonie: enger Weg	q1 10198,16929 10229,16653
+Gerlachsheimer Weg: Fußgänger	q2 13151,7914 13251,7972
+Wanzlikpfad: eng und kurvig, Fußgänger 	q3 13268,7801 13311,7915
 Neustrelitzer Str.: kurvenreich	q1 16739,14733 16668,14765 16534,14740 16443,14825 16346,14750 16256,14828
 (Esplanade - Grüntaler Str.): Zickzack-Kurs	q2 9984,16968 9846,16981 9757,16912
 Lünette: Fußgänger	q1 -1055,15588 -1475,15441
@@ -458,7 +460,7 @@ Südpark): Fußgänger	q2 -4070,12006 -3990,11912 -3890,11775
 Südpark): Fußgänger	q2 -3975,12229 -3968,12138 -3883,12053 -3786,11913
 (Südpark): Fußgänger	q2 -3968,12138 -3985,12056
 (Rosenstr. - Karl-Liebknecht-Str.): Fußgänger	Q2 10489,12803 10519,12768
-Am Zwirngraben: Tische auf der Strasse, Fußgänger	Q4 10336,13037 10185,12982
+Am Zwirngraben: Tische auf der Straße, Fußgänger	Q4 10336,13037 10185,12982
 Panoramastr.: Fußgänger	q2 10793,12906 10734,12850
 Spandauer Str. [Gehweg]: Touristen	q3 10570,12498 10593,12468 10643,12410 10714,12332
 Poststr.: Touristen	q3 10476,12432 10520,12368 10546,12335 10565,12310 10596,12268 10629,12293 10659,12259

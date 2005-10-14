@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.87 2005/10/13 21:22:14 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.89 2005/10/14 20:39:46 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -311,6 +311,8 @@ Sella-Hasse-Str.	1 20948,16612 20771,16690 20843,16829
 Buggenhagenstr.	1 14425,13780 14381,13615
 Schollenhof	1 3247,21430 3196,21547 3265,21570 3297,21469
 Siegfried-Aufhäuser-Platz	1 13939,7504 13928,7529 13942,7556 13967,7556
+Saltykowstr.	1 12726,7887 12865,7923
+(Drorystr. - Braunschweiger Str., Spielplatz): nachts werden die Tore geschlossen	2 13520,7485 13601,7366
 #
 # Potsdam
 #
@@ -443,6 +445,7 @@ Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8188,9610 8095,9639 79
 Lichtenberger Str.: Mittelstreifen	3nocross 12047,12572 12006,12464 11929,12263
 Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7717,7564 7859,7486 7924,7431
 Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12540,8458
+Karl-Marx-Str.: unbequemes Überqueren wegen parkender Autos	3nocross 12830,8031 12865,7923 12898,7832
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11763,8337 11892,8372
 Stromstr.: unpassierbarer Mittelstreifen	3nocross 6201,13058 6185,12968 6177,12920 6168,12846
 #: add_fragezeichen: wahrscheinlich!
@@ -557,6 +560,10 @@ tragen (Treppe)	0:30 3025,13568
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+Schranke (Kopfstr.)	BNP:5 12537,7899
+Drängelgitter (Parkweg)	BNP:5 14562,10079
+Drängelgitter (Parkweg)	BNP:5 14600,10128
+Drängelgitter (Parkweg)	BNP:5 14628,10160
 Drängelgitter (Görlitzer Park)	BNP:5 12686,10045
 Drängelgitter (Görlitzer Park)	BNP:5 12770,10210
 # XXX eins von zwei Gittern fehlt zurzeit
@@ -697,8 +704,8 @@ Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6536,10520 6636,10485
 Bundesallee: Queren nicht möglich	3nocross 5360,8197 5359,8140 5357,8005
 (Los-Angeles-Platz)	1s 5681,10696 5822,10609
 Bregenzer Str.	1 4278,10262 4227,10014
-Mollstr.: Strassenbahn	3nocross 11839,13083 11867,13076 11905,13069
-Mollstr.: Strassenbahn	3nocross 11867,13076 11839,13083 11721,13142
+Mollstr.: Straßenbahn	3nocross 11839,13083 11867,13076 11905,13069
+Mollstr.: Straßenbahn	3nocross 11867,13076 11839,13083 11721,13142
 (Berolinastr.): Tor zum Spielplatz	BNP:10 11858,13029
 (Berolinastr.): Tor zum Spielplatz	BNP:10 11863,13053
 (Berolinastr.): Tor zum Spielplatz	BNP:10 11815,13045
