@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.193 2005/10/15 11:06:27 eserte Exp $
+# $Id: bbbike,v 3.193 2005/10/15 11:06:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -954,7 +954,8 @@ speicherplatzsparender.",
 	exit 0;
     }],
    ['plugins','=s',undef,
-    label => M"Plugins beim Starten laden", var => \$initial_plugins],
+    label => M"Plugins beim Starten laden", var => \$initial_plugins,
+    longhelp => M"Kommaseparierte Liste von Plugins, z.B. BBBikeThunder,BBBikeSalesman,BBBikeRuler"],
    ['layers','=s',undef,
     label => M"Zusätzliche Layer zeichnen", var => \$initial_layers],
    ['algorithm','=s','A*', var => \$global_search_args{Algorithm},
