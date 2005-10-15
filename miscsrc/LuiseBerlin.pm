@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.2 2005/10/15 11:06:13 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.2 2005/10/15 11:06:13 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -83,12 +83,13 @@ sub do_google_search {
     my $street = $args{street};
     my @cityparts = @{ $args{cityparts} };
     $street =~ s{(s)tr\.}{$1traße}ig;
+    $street =~ s{-}{ }g;
     my @results;
     for my $citypart (@cityparts) {
 	my $street_citypart = "$street in $citypart";
 	# usage of encode should not be necessary here!
 	my $query = encode("utf-8", "allintitle:$street_citypart site:luise-berlin.de");
-	#print STDERR $query, "\n";
+	print STDERR "Google query term: $query", "\n";
 	$search->native_query($query);
 	while(my $result = $search->next_result) {
 	    (my $cooked_title = $result->title) =~ s{<b>}{}g;

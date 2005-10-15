@@ -5544,11 +5544,15 @@ sub generate_plot_functions {
 						 @extra_tags],
 				      );
 		    } else {
+			my @std_tags = ($abk, $strname,"$abk-$cat_hin","$abk-" . ($i-1));
 			my $line_dash = $line_dash{$abk};
 		        if (@addinfo_hin) { # ignore @addinfo_rueck for now
 			    for my $addinfo_hin (@addinfo_hin) {
 			        if ($addinfo_hin eq 'Tu') {
 				    $line_dash = $line_dash{"Tu"};
+				    draw_tunnel_entrance(\@coordlist, width => $this_width_hin+4, tags => \@std_tags);
+				} elsif ($addinfo_hin eq 'Br') {
+				    draw_bridge(\@coordlist, width => $this_width_hin+4, tags => \@std_tags);
 				}
 			    }
 			}
@@ -5607,22 +5611,24 @@ sub generate_plot_functions {
 				     -fill  => $this_color,
 				     -width => $this_width,
 				     -joinstyle => 'bevel',
-				     -tags  => [$abk, $strname,
-						"$abk-$cat", "$abk-" . ($i-1),
+				     -tags  => [@std_tags,
 						@extra_tags],
 				     ($line_dash ? (-dash => $line_dash) : ()),
 				     #(exists $line_arrow{$cat} ? (-arrow => $line_arrow{$cat}) : ()),
 				     -arrow => "last",
 				    );
 			    }
+			} elsif ($cat_hin eq 'Br') {
+			    draw_bridge(\@coordlist, width => $this_width_hin+4, tags => \@std_tags);
+			} elsif ($cat_hin eq 'Tu') {
+			    draw_tunnel_entrance(\@coordlist, width => $this_width_hin+4, tags => \@std_tags);
 			} else {
 			    $c->createLine
 				(@coordlist,
 				 -fill      => $this_color_hin,
 				 -width     => $this_width_hin,
 				 -joinstyle => 'bevel',
-				 -tags      => [$abk, $strname,
-						"$abk-$cat_hin", "$abk-" . ($i-1),
+				 -tags      => [@std_tags,
 						@extra_tags],
 				 ($line_dash ? (-dash => $line_dash) : ()),
 				 (exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
@@ -10693,6 +10699,130 @@ sub plotobst {
     DecBusy($top);
 }
 
+### AutoLoad Sub
+sub draw_bridge {
+    my($cl,%args) = @_;
+    my $width = $args{width}||10;
+    my $color = '#808080';
+    my $thickness = 2; # make configurable XXX
+#XXX complicated code, make nicer!
+#XXX an den Enden etwas verkürzen
+    for(my $i = 0; $i < $#$cl/2-1; $i++) {
+	my($x1,$y1,$x2,$y2) = @{$cl}[$i*2..$i*2+3];
+	my $alpha = atan2($y2-$y1,$x2-$x1);
+	my $beta = $alpha - pi()/2;
+	my $delta = $width/2;
+	my($dx,$dy) = ($delta*cos($beta), $delta*sin($beta));
+	$c->createLine($x1+$dx,$y1+$dy,$x2+$dx,$y2+$dy,
+		       -width => $thickness,
+		       -tags => $args{tags},
+		       -fill => $color,
+		      );
+	$c->createLine($x1-$dx,$y1-$dy,$x2-$dx,$y2-$dy,
+		       -width => $thickness,
+		       -tags => $args{tags},
+		       -fill => $color,
+		      );
+    }
+    {
+	my $alpha = atan2($cl->[3]-$cl->[1],$cl->[2]-$cl->[0]);
+	my $beta  = $alpha - pi()/2;
+	my $knick = $alpha - pi()/4;
+	my $knick2 = $alpha + pi()/4;
+	my $delta = $width/2;
+	my $knick_length = $width/2;
+	my($dx, $dy) = ($delta*cos($beta), $delta*sin($beta));
+	my($kx, $ky) = ($knick_length*cos($knick), $knick_length*sin($knick));
+	my($k2x, $k2y) = ($knick_length*cos($knick2), $knick_length*sin($knick2));
+	$c->createLine($cl->[0]+$dx-$k2x, $cl->[1]+$dy-$k2y,
+		       $cl->[0]+$dx, $cl->[1]+$dy,
+		       -width => $thickness,
+		       -tags => $args{tags},
+		       -fill => $color,
+		      );
+	$c->createLine(
+		       $cl->[0]-$dx, $cl->[1]-$dy,
+		       $cl->[0]-$dx-$kx, $cl->[1]-$dy-$ky,
+		       -width => $thickness,
+		       -tags => $args{tags},
+		       -fill => $color,
+		      );
+    }
+
+    {
+	my $alpha = atan2($cl->[-1]-$cl->[-3],$cl->[-2]-$cl->[-4]);
+	my $beta  = $alpha - pi()/2;
+	my $knick = $alpha - pi()/4;
+	my $knick2 = $alpha + pi()/4;
+	my $delta = $width/2;
+	my $knick_length = $width/2;
+	my($dx, $dy) = ($delta*cos($beta), $delta*sin($beta));
+	my($kx, $ky) = ($knick_length*cos($knick), $knick_length*sin($knick));
+	my($k2x, $k2y) = ($knick_length*cos($knick2), $knick_length*sin($knick2));
+	$c->createLine($cl->[-2]+$dx+$kx, $cl->[-1]+$dy+$ky,
+		       $cl->[-2]+$dx, $cl->[-1]+$dy,
+		       -width => $thickness,
+		       -tags => $args{tags},
+		       -fill => $color,
+		      );
+	$c->createLine(
+		       $cl->[-2]-$dx, $cl->[-1]-$dy,
+		       $cl->[-2]-$dx+$k2x, $cl->[-1]-$dy+$k2y,
+		       -width => $thickness,
+		       -tags => $args{tags},
+		       -fill => $color,
+		      );
+    }
+    
+}
+
+### AutoLoad Sub
+sub draw_tunnel_entrance {
+    my($cl,%args) = @_;
+    my $width = $args{width}||20;
+    my $color = '#505050';
+    my $thickness = 3;
+#XXX complicated code, make nicer!
+    {
+	my $alpha = atan2($cl->[3]-$cl->[1],$cl->[2]-$cl->[0]);
+	my $beta  = $alpha - pi()/2;
+	my $knick = $alpha - pi()/4;
+	my $knick2 = $alpha + pi()/4;
+	my $delta = $width/2;
+	my $knick_length = $width/3;
+	my($dx, $dy) = ($delta*cos($beta), $delta*sin($beta));
+	my($kx, $ky) = ($knick_length*cos($knick), $knick_length*sin($knick));
+	my($k2x, $k2y) = ($knick_length*cos($knick2), $knick_length*sin($knick2));
+	$c->createLine($cl->[0]+$dx-$k2x, $cl->[1]+$dy-$k2y,
+		       $cl->[0]+$dx, $cl->[1]+$dy,
+		       $cl->[0]-$dx, $cl->[1]-$dy,
+		       $cl->[0]-$dx-$kx, $cl->[1]-$dy-$ky,
+		       -width => $thickness,
+		       -tags => $args{tags},
+		       -fill => $color,
+		      );
+    }
+    {
+	my $alpha = atan2($cl->[-1]-$cl->[-3],$cl->[-2]-$cl->[-4]);
+	my $beta  = $alpha - pi()/2;
+	my $knick = $alpha - pi()/4;
+	my $knick2 = $alpha + pi()/4;
+	my $delta = $width/2;
+	my $knick_length = $width/3;
+	my($dx, $dy) = ($delta*cos($beta), $delta*sin($beta));
+	my($kx, $ky) = ($knick_length*cos($knick), $knick_length*sin($knick));
+	my($k2x, $k2y) = ($knick_length*cos($knick2), $knick_length*sin($knick2));
+	$c->createLine($cl->[-2]+$dx+$kx, $cl->[-1]+$dy+$ky,
+		       $cl->[-2]+$dx, $cl->[-1]+$dy,
+		       $cl->[-2]-$dx, $cl->[-1]-$dy,
+		       $cl->[-2]-$dx+$k2x, $cl->[-1]-$dy+$k2y,
+		       -width => $thickness,
+		       -tags => $args{tags},
+		       -fill => $color,
+		      );
+    }
+}
+
 # Löscht alle derzeitig gezeichneten Straßen und Punkte und liefert
 # eine Subroutine zurück, mit der die gelöschten Objekte wieder
 # gezeichnet werden können.
@@ -11374,7 +11504,8 @@ sub show_info {
 	    my $is_first = 1;
 	    for my $def (@bbbike_cgi_def) {
 		my $bbbike_cgi_url = $def->[0];
-		$info_text->insert("end", $def->[1]." ", "link$linkcount");
+		$info_text->insert("end", $def->[1], "link$linkcount");
+		$info_text->insert("end", " ");
 		if ($is_first) {
 		    my $zielname_e = $info_text->Entry(-textvariable => \$zielname,
 						       -width => 10);
