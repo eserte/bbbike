@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.1 2005/10/15 10:54:42 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.2 2005/10/15 11:06:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 use FindBin;
 use lib ("$FindBin::RealBin/..",
@@ -73,7 +73,7 @@ sub launch_street_url {
     } elsif ($@) {
 	main::status_message($@, "err");
     } else {
-	main::status_message("Die Straße konnte nicht gefunden werden.", "err");
+	main::status_message("Die Straße konnte über Google nicht gefunden werden.", "err");
     }
 }
 

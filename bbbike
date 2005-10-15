@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.192 2005/10/15 10:56:03 eserte Exp $
+# $Id: bbbike,v 3.193 2005/10/15 11:06:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -190,7 +190,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.192 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.193 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -11088,11 +11088,24 @@ sub show_info {
     my($x, $y) = @_;
     my(@tags) = $c->gettags('current');
     return if !@tags || !defined $tags[0];
-    my $base_tag = $tags[0];
-    @tags = grep { $_ ne "current" } @tags;
-    my $is_p = ($base_tag =~ /-(?:[fb]g|img)$/);
-    $base_tag =~ s/-(?:[fb]g|img)$//;
-    return if !exists $p_file{$base_tag} and !$str_file{$base_tag};
+    my($base_tag, $is_p);
+
+    my $recursion_breaker=0;#XXX
+    while (1) {
+	if($recursion_breaker++>10){die}#XXX
+	$base_tag = $tags[0];
+	@tags = grep { $_ ne "current" } @tags;
+	$is_p = ($base_tag =~ /-(?:[fb]g|img)$/);
+	$base_tag =~ s/-(?:[fb]g|img)$//;
+	last unless !exists $p_file{$base_tag} and !$str_file{$base_tag};
+	my($below_item, @below_tags) = find_below($c, qw/s l u b r f w/);
+	if (!defined $below_item) {
+	    main::status_message("Es wurde kein Kartenelement an dieser Position gefunden.", "err");
+	    return;
+	}
+	@tags = @below_tags;
+    }
+
     my $index;
     if ($#tags >= 3) {
 	($index = $tags[3]) =~ s/^$base_tag-//;
