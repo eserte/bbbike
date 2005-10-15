@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.191 2005/10/10 22:27:23 eserte Exp eserte $
+# $Id: bbbike,v 3.192 2005/10/15 10:56:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -190,7 +190,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.191 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.192 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -11098,6 +11098,7 @@ sub show_info {
 	($index = $tags[3]) =~ s/^$base_tag-//;
 	#warn $index;
     }
+    my $strname = $tags[1];
 
     my(@coords) = $c->coords('current');
     if (!@coords || @coords > 2) {
@@ -11187,7 +11188,6 @@ sub show_info {
 				     -title => M"Information",
 				     -class => "BbbikePassive",
 				    );
-	my $max_links = 7;
 	if (defined $info_top) {
 	    require Tk::ROText;
 	    $info_text = $info_top->Scrolled('ROText',
@@ -11200,17 +11200,6 @@ sub show_info {
 					     )->pack(-expand => 1, -fill => "both");
 	    $info_text->tagConfigure("bold", -font => $font{'bold'});
 	    $info_text->tagConfigure("fixed", -font => $font{'fixed'});
-	    # XXX Das könnte doch eigentlich am Ende stehen, wenn $max_links bekannt ist?
-	    for (1 .. $max_links) {
-		$info_text->tagConfigure("link$_", -underline => 1,
-					 -foreground => "blue3");
-		$info_text->tagBind("link$_", "<Enter>" => sub {
-					$info_text->configure(-cursor => "hand2");
-				});
-		$info_text->tagBind("link$_", "<Leave>" => sub {
-					$info_text->configure(-cursor => undef);
-				    });
-	    }
 	    $info_top->Button(Name => 'close',
 			      -command => sub { $info_top->destroy },
 			     )->pack(-fill => "x");
@@ -11476,6 +11465,29 @@ sub show_info {
 			       "landienst\n", "link$linkcount");
 	    $show_url->($linkcount, $url);
 	    $linkcount++;
+	}
+
+	while(my($key, $plugin) = each %info_plugins) {
+	    $info_text->insert("end", $plugin->{name} . "\n",
+			       "link$linkcount");
+	    $info_text->tagBind
+		("link$linkcount", "<ButtonRelease-1>" => sub {
+		     $plugin->{callback}->(coords => $real_coords,
+					   street => $strname);
+		 });
+	    $linkcount++;
+	}
+
+	# Das war der letzte Link
+	for (1 .. $linkcount) {
+	    $info_text->tagConfigure("link$_", -underline => 1,
+				     -foreground => "blue3");
+	    $info_text->tagBind("link$_", "<Enter>" => sub {
+				    $info_text->configure(-cursor => "hand2");
+				});
+	    $info_text->tagBind("link$_", "<Leave>" => sub {
+				    $info_text->configure(-cursor => undef);
+				});
 	}
 
 	eval {
