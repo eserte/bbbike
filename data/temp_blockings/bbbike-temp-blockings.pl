@@ -3049,4 +3049,20 @@ EOF
 userdel	q4 26790,-7918 26700,-7334 26581,-7087
 EOF
      },
+     { from  => undef, # 
+       until => 1293836399, # 2010-12-31 23:59
+       text  => 'Universitätsstr., Richtung Dorotheenstr. gesperrt (bis 2010) ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 9603,12372 9574,12578
+EOF
+     },
+     { from  => undef, # 
+       until => 1293836399, # 2010-12-31 23:59
+       text  => 'Universitätsstr., Richtung Dorotheenstr. gesperrt (bis 2010)',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 9562,12679 9574,12578
+EOF
+     },
     );

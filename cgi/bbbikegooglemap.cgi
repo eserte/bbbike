@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.11 2005/10/13 07:13:52 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.13 2005/10/15 00:50:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -12,6 +12,8 @@
 # Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
 #
+
+package BBBikeGooglemap;
 
 use strict;
 use FindBin;
@@ -25,55 +27,92 @@ use CGI qw(:standard);
 use Karte;
 use Karte::Polar;
 
-my @polylines_polar;
-my @wpt;
+sub new { bless {}, shift }
 
-my $coordsystem = param("coordsystem") || "standard";
-my $converter;
-if ($coordsystem eq 'polar') {
-    $converter = \&polar_converter;
-} else {
-    $converter = \&standard_converter;
-}
+sub run {
+    my($self) = @_;
 
-if (param("wpt_or_trk")) {
-    if (param("wpt_or_trk") =~ / /) {
-	param("coords", join("!",
-			     param("coords"),
-			     split(/ /, param("wpt_or_trk")))
-	     );
+    local $CGI::POST_MAX = 2_000_000;
+
+    my @polylines_polar;
+    my @wpt;
+
+    my $coordsystem = param("coordsystem") || "standard";
+    my $converter;
+    if ($coordsystem eq 'polar') {
+	$converter = \&polar_converter;
     } else {
-	param("wpt", param("wpt_or_trk"));
+	$converter = \&standard_converter;
     }
-}
 
-for my $coords (param("coords")) {
-    my(@coords) = split /[!;]/, $coords;
-    my(@coords_polar) = map {
-	my($x,$y) = split /,/, $_;
-	join ",", $converter->($x,$y);
-    } @coords;
-    push @polylines_polar, \@coords_polar;
-}
-
-for my $wpt (param("wpt")) {
-    my($name,$coord);
-    if ($wpt =~ /[!;]/) {
-	($name,$coord) = split /[!;]/, $wpt;
-    } else {
-	$name = "";
-	$coord = $wpt;
+    if (param("wpt_or_trk")) {
+	if (param("wpt_or_trk") =~ / /) {
+	    param("coords", join("!",
+				 param("coords"),
+				 split(/ /, param("wpt_or_trk")))
+		 );
+	} else {
+	    param("wpt", param("wpt_or_trk"));
+	}
     }
-    my($x,$y) = split /,/, $coord;
-    ($x, $y) = $converter->($x,$y);
-    push @wpt, [$x,$y,$name];
+
+    my $filename = param("gpxfile");
+    if (defined $filename) {
+	(my $ext = $filename) =~ s{^.*\.}{.};
+	require Strassen::Core;
+	require File::Temp;
+	my $fh = upload("gpxfile");
+	my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1,
+						   SUFFIX => $ext);
+	while(<$fh>) {
+	    print $tmpfh $_;
+	}
+	close $fh;
+	close $tmpfh;
+
+	my $gpx = Strassen->new($tmpfile);
+	$gpx->init;
+	while(1) {
+	    my $r = $gpx->next;
+	    last if !@{ $r->[Strassen::COORDS()] };
+	    # XXX hack --- should append recognise self_or_default?
+	    $CGI::Q->append(-name   => 'coords',
+			    -values => [join "!", @{ $r->[Strassen::COORDS()] }],
+			   );
+	}
+    }
+
+    for my $coords (param("coords")) {
+	my(@coords) = split /[!;]/, $coords;
+	my(@coords_polar) = map {
+	    my($x,$y) = split /,/, $_;
+	    join ",", $converter->($x,$y);
+	} @coords;
+	push @polylines_polar, \@coords_polar;
+    }
+
+    for my $wpt (param("wpt")) {
+	my($name,$coord);
+	if ($wpt =~ /[!;]/) {
+	    ($name,$coord) = split /[!;]/, $wpt;
+	} else {
+	    $name = "";
+	    $coord = $wpt;
+	}
+	my($x,$y) = split /,/, $coord;
+	($x, $y) = $converter->($x,$y);
+	push @wpt, [$x,$y,$name];
+    }
+
+    my $zoom = param("zoom");
+    $zoom = 3 if !defined $zoom;
+
+    $self->{converter} = $converter;
+    $self->{coordsystem} = $coordsystem;
+
+    print header;
+    print $self->get_html(\@polylines_polar, \@wpt, $zoom);
 }
-
-my $zoom = param("zoom");
-$zoom = 3 if !defined $zoom;
-
-print header;
-print get_html(\@polylines_polar, \@wpt, $zoom);
 
 sub standard_converter {
     my($x,$y) = @_;
@@ -83,7 +122,10 @@ sub standard_converter {
 sub polar_converter { @_[0,1] }
 
 sub get_html {
-    my($paths_polar, $wpts, $zoom) = @_;
+    my($self, $paths_polar, $wpts, $zoom) = @_;
+
+    my $converter = $self->{converter};
+    my $coordsystem = $self->{coordsystem};
 
     my($centerx,$centery);
     if ($paths_polar && @$paths_polar) {
@@ -128,6 +170,10 @@ sub get_html {
 
     function setZoomInForm() {
 	document.googlemap.zoom.value = map.getZoomLevel();
+    }
+
+    function setZoomInUploadForm() {
+	document.upload.zoom.value = map.getZoomLevel();
     }
 
     var map = new GMap(document.getElementById("map"), [G_SATELLITE_TYPE]);
@@ -195,6 +241,13 @@ EOF
   <button>Zeigen</button>
 </form>
 
+<form name="upload" onsubmit='setZoomInUploadForm()' style="margin-top:1cm; border:1px solid black; padding:3px;" method="post" enctype="multipart/form-data">
+  <input type="hidden" name="zoom" value="@{[ $zoom ]}" />
+  Upload einer GPX-Datei: <input type="file" name="gpxfile" />
+  <br />
+  <button>Zeigen</button>
+</form>
+
 <table width="100%">
  <tr>
   <td colspan="3">
@@ -213,4 +266,15 @@ EOF
 </html>
 EOF
 }
-__END__
+
+return 1 if caller;
+
+my $o = BBBikeGooglemap->new;
+$o->run;
+
+=head1 NAME
+
+bbbikegooglemap.cgi - show BBBike data through Google maps
+
+=cut
+

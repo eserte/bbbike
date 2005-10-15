@@ -690,14 +690,7 @@ userdel	q4 -7873,66589 -7851,66418
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1129298400,
-         'text' => 'Drakestraße zwischen Hans-Sachs-Straße und Knesebeckstraße in beiden Richtungen Brückenabriss, Straße gesperrt, Dauer: 12.10.2005 02:00 Uhr bis 14.10.2005 16:00 Uhr',
-         'from' => 1128988800,
-         'data' => 'userdel	2 3259,4002 3128,4190
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1134774000,
          'text' => 'K 7228; (Zossener Allee); OL Sperenberg Straßenbau Vollsperrung 10.10.2005-16.12.2005 ',
@@ -776,6 +769,22 @@ userdel	q4 -7873,66589 -7851,66418
          'text' => 'L 401; (Lindenallee); OD Zeuthen, zw. OE und An der Eisenbahn grundhafter Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
          'from' => 1119996000,
          'data' => 'userdel	q4 26790,-7918 26700,-7334 26581,-7087
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1293836399,
+         'text' => 'Universitätsstr., Richtung Dorotheenstr. gesperrt (bis 2010) ',
+         'from' => undef,
+         'data' => 'userdel	q4; 9603,12372 9574,12578
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1293836399,
+         'text' => 'Universitätsstr., Richtung Dorotheenstr. gesperrt (bis 2010)',
+         'from' => undef,
+         'data' => 'userdel	q4; 9562,12679 9574,12578
 ',
          'type' => 'handicap'
        }
