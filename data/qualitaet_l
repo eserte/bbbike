@@ -121,7 +121,7 @@ Groß-Glienicke: Kopfsteinpflaster, OK	Q1 -9215,7517 -9364,7189 -9449,7005
 Werder, Am Bahnhof: Kopfsteinpflaster	Q2 -21462,-2657 -21636,-2101 -22042,-2060
 Golm, Weinmeisterstr.: sandige Straße	Q2 -19578,-674 -19044,-737 -18981,-566
 F XXX: fester Sandweg mit einigen Schlaglöchern	Q1 -21063,-2021 -20721,-1935 -20486,-1956 -20295,-1870 -20176,-525
-zur Eisenbahnbrücke: Feldweg	Q2 -21636,-2101 -21508,-2080 -21210,-2058
+zur Eisenbahnbrücke: Asphalt	Q0 -21636,-2101 -21508,-2080 -21210,-2058
 Borgsdorf - Summt: schlechtes Kopfsteinpflaster	Q3 7336,31464 7079,31614
 Borgsdorf - Summt: teilweise Kopfsteinpflaster	Q2 7079,31614 6377,31715
 Schöneiche - Rüdersdorf: Asphalt	Q0 34780,7980 34918,7990 35050,8150 35171,8203 35482,8027 35625,8093
@@ -1222,11 +1222,11 @@ Rosa-Luxemburg-Str. (Potsdam): mäßiges Kopfsteinpflaster	Q2 -9090,-1293 -9170,-1
 Wildenbruch: übles Kopfsteinpflaster	Q3 -12325,-13958 -12708,-14023
 Tremsdorf - Fresdorf: Plattenweg	Q2 -10871,-15518 -9886,-15119 -9567,-15010
 Emstal - Lehnin: Asphalt, sowohl Fahrbahn als auch Radweg	Q0 -31776,-12438 -32010,-12375 -32394,-12207 -32629,-12038 -32737,-11697 -33398,-11574 -33613,-11062 -33784,-11021 -33786,-10636 -33914,-10466
-Götz - Deetz: schlecht (Kopfsteinpflaster, Beton oder Asphalt)	Q1 -35606,300 -35150,381 -34843,875
+Götz - Deetz: Beton mit Löchern und Fugen	Q2 -35606,300 -35150,381 -34843,875
 Götz - Deetz: Asphalt	Q0 -34843,875 -34062,1237 -33762,1481 -33412,2600 -33225,2700 -33062,3106 -32555,3570
-B1 - Götz: buckliger Asphalt	Q1 -35379,-562 -35362,-87 -35512,193 -35606,300
 Trechwitz - B1: Asphalt	Q0 -36004,-5366 -35887,-4068 -35806,-3868 -36437,-3031 -36469,-2791 -36487,-2506 -36006,-418
-Nahmitz - Trechwitz: überteerte Betonstraße	Q1 -35324,-8427 -35331,-8375 -35256,-8256 -35000,-8268 -34681,-7893 -34718,-7800 -34943,-7856 -35200,-7525 -36325,-6450 -36275,-5493 -36206,-5350 -36004,-5366
+Nahmitz - Trechwitz: überteerte Betonstraße	Q1 -35324,-8427 -35331,-8375 -35256,-8256 -35000,-8268 -34681,-7893 -34718,-7800 -34943,-7856 -35200,-7525 -36325,-6450
+Nahmitz - Trechwitz: überteerte Betonstraße mit Löchern	Q2 -36325,-6450 -36275,-5493 -36206,-5350 -36004,-5366
 Lehnin - Nahmitz: Asphalt	Q0 -34985,-9383 -35324,-8427
 Siethen - Klein Beuthen: sehr guter Asphalt	Q0 -2029,-14437 -2287,-15550 -2629,-16083
 Werbelliner Str. (Finowfurt): Kopfsteinpflaster, aber gepflasterter Radweg	Q1 28589,49775 28537,50062 28525,50500
@@ -1287,3 +1287,4 @@ Johann-Strauß-Platz: Asphalt	Q0 -9410,-815 -9318,-714
 (Mauerweg am Griebnitzsee): Asphalt mit Fugen	Q2 -9365,-610 -9337,-668 -9239,-739 -9103,-813 -8934,-871 -8846,-993 -8693,-1115 -8646,-1206 -8385,-1451
 (Mauerweg am Griebnitzsee): wassergebundene Decke	Q1 -8385,-1451 -8250,-1503 -8128,-1490
 Rudolf-Breitscheid-Str. [Bahnhofsvorfahrt]: Asphalt	Q0 -8112,-1512 -8100,-1575 -8023,-1565 -8038,-1495
+Baumgartenbrück (Geltow): rauer Asphalt mit Löchern 	Q2 -18025,-6370 -18410,-6286 -18966,-5945

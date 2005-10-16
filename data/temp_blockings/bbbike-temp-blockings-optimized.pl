@@ -346,14 +346,7 @@ userdel	q4 1916,-1090 1709,-953
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1129327200,
-         'text' => 'L 216; (Gollin-Templin); OD Vietmannsdorf, Brücke über Mühlengraben Brückenneubau Vollsperrung 13.06.2005-14.10.2005 ',
-         'from' => 1118527200,
-         'data' => 'userdel	2 17636,72217 17653,71852
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -459,14 +452,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
        undef,
        undef,
        undef,
-       {
-         'until' => 1129413600,
-         'text' => 'L 171; (Hohen Neuendorf-Hennigsdorf); zw. Kreisverkehr bei Hennigsd. und AS Stolpe Straßenbau Vollsperrung 04.10.2005-15.10.2005 ',
-         'from' => 1128290400,
-         'data' => 'userdel	2 -2446,25386 -2118,26060
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1139094000,
@@ -482,14 +468,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
        undef,
        undef,
        undef,
-       {
-         'until' => 1129413600,
-         'text' => 'Glienicker Straße zwischen Grünauer Straße und Nipkowstraße Richtung Adlergestell wegen Bauarbeiten gesperrt bis 15.10.2005 ',
-         'from' => 1125350749,
-         'data' => 'userdel	q4; 21823,4210 21690,4057 21498,3837 21442,3774 21325,3644 21247,3536 21236,3496 21156,3452 20982,3325 20844,3159
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -525,14 +504,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1129413600,
-         'text' => 'B 112; (Guben-Eisenhüttenstadt); OD Neuzelle Deckenerneurung Vollsperrung 04.10.2005-15.10.2005 ',
-         'from' => 1128290400,
-         'data' => 'userdel	q4 96492,-34347 95945,-34062
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1132959600,
          'text' => 'B 166; (Zichow-Gramzow); OD Gramzow Kanal- und Straßenbau Vollsperrung 20.09.2005-25.11.2005 ',
@@ -613,14 +585,7 @@ userdel	q4 -7873,66589 -7851,66418
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1129413600,
-         'text' => 'L 541; (Suschow-Burg Kolonie); Krz. Burg Kolonie/ Naundorf Deckenerneuerung Vollsperrung 15.10.2005-15.10.2005 ',
-         'from' => 1129240800,
-         'data' => 'userdel	2 59792,-61720 60404,-61710
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1133391600,
          'text' => 'L 75; (Karl-Marx-Str.); OD Großziethen Straßenbauarbeiten Vollsperrung 06.09.2005-30.11.2005 ',
@@ -724,30 +689,9 @@ userdel	q4 -7873,66589 -7851,66418
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1129413599,
-         'text' => 'Mahlsdorfer Str. (Köpenick) Richtung Köpenick, zwischen Hultischiner Damm und Genovevastr. Baustelle, Fahrtrichtung gesperrt (bis 15.10.)',
-         'from' => undef,
-         'data' => 'userdel	q4; 23799,7877 23774,7803 23701,7772 23190,7484 23066,7355
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1129413600,
-         'text' => 'L 15; (B109-Boitzenburg); zw. Abzw. Klein Sperrenwalde u. OL Gollmitz, Prenzlauer Str. Straßenbauarbeiten Vollsperrung 11.10.2005-15.10.2005 ',
-         'from' => 1128895200,
-         'data' => 'userdel	2 31882,98397 30743,99403
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1129413600,
-         'text' => 'L 165; (Manker-Garz); bei Garz, Bereich Brücke über Temnitz Asphaltsanierung Vollsperrung 12.10.2005-15.10.2005 ',
-         'from' => 1128981600,
-         'data' => 'userdel	2 -43343,47590 -42999,47684
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
        {
          'until' => 1131145200,
          'text' => 'L 70; (Sperenberg-Trebbin); zw. Abzw.Chrisinend. u. Abzw.Kl.Schulzend.Ber.Brücke B101n Straßen- und Brückenbau Vollsperrung 17.10.2005-04.11.2005 ',

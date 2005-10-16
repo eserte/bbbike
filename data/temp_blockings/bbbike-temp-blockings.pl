@@ -2640,7 +2640,7 @@ EOF
        text  => 'Fähre Cauth K 6910 Straße der Einheit bis 02.09.2005 außer Betrieb ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -17703,-6990 -17643,-7028
+userdel	2 -17728,-6975 -17643,-7028
 EOF
      },
      { from  => 1125460800, # 2005-08-31 06:00
