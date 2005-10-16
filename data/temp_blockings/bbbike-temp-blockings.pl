@@ -2302,6 +2302,7 @@ EOF
        until => 1128117600, # 2005-10-01 00:00
        text  => 'Behrenstr. (Mitte) Richtung Gendarmenmarkt zwischen Glinkastr. und Charlottenstr. Baustelle, Fahrtrichtung gesperrt (bis 30.09.2005)',
        type  => 'handicap',
+       source_id => 'IM_002045',
        data  => <<EOF,
 userdel	q4; 9164,12172 9365,12196 9492,12214
 EOF

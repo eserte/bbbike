@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.16 2005/04/27 00:12:11 eserte Exp $
+# $Id: Berlin_DE.pm,v 1.17 2005/10/16 20:34:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -64,13 +64,13 @@ while(my($cp,$scp) = each %subcityparts) {
 %cityparts =
     ('Mitte'                            => [qw/Mitte Tiergarten Wedding/],
      # XXX wrong Alias?
-     'Mitte-Tiergarten-Wedding'         => [qw/Mitte Tiergarten Wedding/],
+     #'Mitte-Tiergarten-Wedding'         => [qw/Mitte Tiergarten Wedding/],
      'Friedrichshain-Kreuzberg'         => [qw/Friedrichshain Kreuzberg/],
      'Pankow-Prenzlauer Berg-Weißensee' => [qw/Pankow Weißensee/,
 					    'Prenzlauer Berg'],
      # XXX wrong Alias?
-     'Pankow-Prenzlauer Berg-Weissensee' => [qw/Pankow Weißensee/,
-					     'Prenzlauer Berg'],
+     #'Pankow-Prenzlauer Berg-Weissensee' => [qw/Pankow Weißensee/,
+     #'Prenzlauer Berg'],
      'Charlottenburg-Wilmersdorf'       => [qw/Charlottenburg Wilmersdorf/],
      'Spandau'                          => ['Spandau'],
      'Steglitz-Zehlendorf'              => [qw/Steglitz Zehlendorf/],
@@ -109,6 +109,22 @@ sub subcityparts   { map { (@$_) } values %subcityparts }
 
 sub citypart_to_subcitypart { \%subcityparts }
 sub subcitypart_to_citypart { \%subcitypart_to_citypart }
+
+sub get_supercitypart_for_citypart { 
+    shift; # object
+    my $given_citypart = shift;
+    keys %cityparts; # reset!!!
+    while(my($supercitypart, $cityparts) = each %cityparts) {
+	for my $citypart (@$cityparts) {
+warn $citypart;
+	    if ($citypart eq $given_citypart) {
+warn "ok! $supercitypart";
+		return $supercitypart;
+	    }
+	}
+    }
+    undef;
+}
 
 sub get_cityparts_for_supercitypart {
     exists $cityparts{$_[1]} ? @{ $cityparts{$_[1]} } : ()

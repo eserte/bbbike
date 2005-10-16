@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver.t,v 1.2 2005/06/03 01:25:05 eserte Exp $
+# $Id: mapserver.t,v 1.3 2005/10/16 15:54:19 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -62,7 +62,8 @@ my @layers = qw(
 # Get SCOPES from mapserver/brb/Makefile:
 my @scopes = qw(brb b inner-b wide p);
 
-plan tests => 211;
+my $core_tests = 210;
+plan tests => 1 + $core_tests;
 
 sub get_agent {
     my $agent = WWW::Mechanize->new;
@@ -117,25 +118,35 @@ my $ms = get_config();
     $agent->get($url);
     ok($agent->success, "$url is ok");
 
-    is_on_mapserver_page($agent, "...");
+    my $skip_not_useable = ($host eq "radzeit" && index($agent->content, 'Unable to access file. (/var/www/domains/radzeit.de/www/') > -1);
 
-    for my $layer (@layers) {
-	$agent->form(1) if $agent->forms and scalar @{$agent->forms};
-	{ local $^W; for ($layer) { $agent->tick('layer', $_); };}
-	$agent->submit;
-	is_on_mapserver_page($agent, "Layer $layer ticked");
-	$agent->back;
-    }
+    SKIP:
+    {
+	if ($skip_not_useable) {
+	    diag "To fix this, do: cd $FindBin::RealBin/../projects/www.radzeit.de && make deploy-local";
+	    skip("not setup for local operation", $core_tests)
+	}
 
-    for my $scope (@scopes) {
-	my $uri = $agent->response->request->uri;
-	($uri, my($qs)) = $uri =~ m{^(.*)\?(.*)};
-	my $q = CGI->new($qs);
-	my $map = $q->param("map");
-	$map =~ s{(/brb-)[^/]+(\.map)$}{$1$scope$2};
-	$q->param("map", $map);
-	$agent->get($uri."?".$q->query_string);
-	is_on_mapserver_page($agent, "Scope $scope for reference map");
+	is_on_mapserver_page($agent, "...");
+
+	for my $layer (@layers) {
+	    $agent->form(1) if $agent->forms and scalar @{$agent->forms};
+	    { local $^W; for ($layer) { $agent->tick('layer', $_); };}
+	    $agent->submit;
+	    is_on_mapserver_page($agent, "Layer $layer ticked");
+	    $agent->back;
+	}
+
+	for my $scope (@scopes) {
+	    my $uri = $agent->response->request->uri;
+	    ($uri, my($qs)) = $uri =~ m{^(.*)\?(.*)};
+	    my $q = CGI->new($qs);
+	    my $map = $q->param("map");
+	    $map =~ s{(/brb-)[^/]+(\.map)$}{$1$scope$2};
+	    $q->param("map", $map);
+	    $agent->get($uri."?".$q->query_string);
+	    is_on_mapserver_page($agent, "Scope $scope for reference map");
+	}
     }
 
 }

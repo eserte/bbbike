@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.2 2005/10/15 11:06:13 eserte Exp eserte $
+# $Id: LuiseBerlin.pm,v 1.3 2005/10/16 20:34:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 use FindBin;
 use lib ("$FindBin::RealBin/..",
@@ -38,38 +38,95 @@ my $api_key = "pqCq16BQFHJ5jvhg6osutPlLWeSkd9ke";
 
 sub register {
     $main::info_plugins{__PACKAGE__} =
-	{ name => "Luise-Berlin",
+	{ name => "Luise-Berlin, Straßenlexikon",
 	  callback => sub { launch_street_url(@_) },
+	};
+    $main::info_plugins{__PACKAGE__ . "_bezlex"} =
+	{ name => "Luise-Berlin, Bexirkslexikon",
+	  callback => sub { launch_bezlex_url(@_) },
 	};
     main::status_message("Das Luise-Berlin-Plugin wurde registriert. Im Info-Fenster erscheint jetzt immer ein neuer Link.", "info");
 }
 
-sub launch_street_url {
-    my(%args) = @_;
-    my $strname = $args{street};
+sub find_street {
+    my($strname) = @_;
     if ($strname =~ /^\(/ || $strname =~ /^\s*$/) {
 	main::status_message("Die Straße hat keinen offiziellen Namen", "err");
 	return;
     }
     $strname =~ s{\[.*\]}{}g; # remove special [...] parts
-    my($street, @cityparts) = Strasse::split_street_citypart($strname);
-    if (!@cityparts) {
+    my($street, @subcityparts) = Strasse::split_street_citypart($strname);
+    if (!@subcityparts) {
 	my $plz = PLZ->new;
 	my @res = $plz->look($street);
-	@cityparts = map { $_->[PLZ::LOOK_CITYPART] } @res;
+	@subcityparts = map { $_->[PLZ::LOOK_CITYPART] } @res;
     }
-    if (!@cityparts) {
+    if (!@subcityparts) {
 	main::status_message("Die Straße konnte in der BBBike-Datenbank nicht gefunden werden.", "err");
+	return;
+    }
+
+    require Geography::Berlin_DE;
+    my %cityparts = map { (Geography::Berlin_DE->subcitypart_to_citypart->{$_},1) } @subcityparts;
+
+    ($street, [ keys %cityparts ]);
+}
+
+sub launch_bezlex_url {
+    my(%args) = @_;
+    my($street, $cityparts) = find_street($args{street});
+    if (!defined $street) {
+	return;
+    }
+
+    require Geography::Berlin_DE;
+    my %supercityparts = map { (Geography::Berlin_DE->get_supercitypart_for_citypart($_),1) } @$cityparts;
+
+    my($supercitypart) = (keys %supercityparts)[0]; # use the first only
+    warn "Translated @$cityparts -> $supercitypart ...\n";
+
+    my $short = {"Friedrichshain-Kreuzberg" => "FrKr",
+		 'Charlottenburg-Wilmersdorf' => "Chawi",
+		 'Mitte' => 'Mitte',
+		}->{$supercitypart};
+    if (!$short) {
+	main::status_message("Für den Bezirk $supercitypart existieren noch keine Einträge im Bezirkslexikon", "err");
+	return;
+    }
+
+    $street =~ s{(s)tr\.}{$1traße}i;
+    my $kill_umlauts = {"ä" => "ae",
+			"ö" => "oe",
+			"ü" => "ue",
+			"ß" => "ss",
+			"Ä" => "Ae",
+			"Ö" => "Oe",
+			"Ü" => "Ue",
+			"é" => "_",
+			" " => "_",
+		       };
+    my $left_part = join "", keys %$kill_umlauts;
+    $street =~ s{([$left_part])}{$kill_umlauts->{$1}}ge;
+    my $url = "http://www.luise-berlin.de/lexikon/" . $short .
+	"/" . lc(substr($street,0,1)) .
+	    "/" . $street . ".htm";
+    start_browser($url);
+}
+
+sub launch_street_url {
+    my(%args) = @_;
+    my($street, $cityparts) = find_street($args{street});
+
+    if (!defined $street) {
 	return;
     }
 
     my $url = eval {
 	do_google_search(street => $street,
-			 cityparts => \@cityparts);
+			 cityparts => $cityparts);
     };
     if ($url) {
-	main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
-	WWWBrowser::start_browser($url);
+	start_browser($url);
     } elsif ($@) {
 	main::status_message($@, "err");
     } else {
@@ -89,7 +146,8 @@ sub do_google_search {
 	my $street_citypart = "$street in $citypart";
 	# usage of encode should not be necessary here!
 	my $query = encode("utf-8", "allintitle:$street_citypart site:luise-berlin.de");
-	print STDERR "Google query term: $query", "\n";
+	require Data::Dumper;
+	print STDERR "Google query term: ". Data::Dumper->new([$query],[qw()])->Indent(1)->Useqq(1)->Dump . "\n";
 	$search->native_query($query);
 	while(my $result = $search->next_result) {
 	    (my $cooked_title = $result->title) =~ s{<b>}{}g;
@@ -108,6 +166,12 @@ sub do_google_search {
         #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@results],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 
     $results[0]->{url};
+}
+
+sub start_browser {
+    my($url) = @_;
+    main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+    WWWBrowser::start_browser($url);
 }
 
 return 1 if caller;

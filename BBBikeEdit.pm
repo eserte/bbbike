@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.89 2005/07/29 20:28:49 eserte Exp eserte $
+# $Id: BBBikeEdit.pm,v 1.90 2005/10/16 19:21:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3270,6 +3270,14 @@ sub temp_blockings_editor {
 	(-text => "Fmt", -bd => 1, -padx => 0, -pady => 0
 	)->pack(-anchor => "w");
 
+    my $source_id;
+    Tk::grid($t->Label(-text => "Source-ID"),
+	     $t->Entry(-width => 20,
+		       -textvariable => \$source_id,
+		      ),
+	     -sticky => "w",
+	    );
+
     my($start_w, $end_w);
     my($start_undef, $end_undef);
     Tk::grid($t->Label(-text => M"Start"),
@@ -3362,7 +3370,17 @@ sub temp_blockings_editor {
     $paste_b->configure
 	(-command => sub {
 	     $real_txt->delete("1.0","end");
-	     $real_txt->insert("end", $real_txt->SelectionGet);
+	     my($selection) = $real_txt->SelectionGet;
+	     if ($selection =~ /\t/) {
+		 # very probably from choose_ort window
+		 chomp $selection;
+		 my($action, $content, $id) = split /\t/, $selection;
+		 $real_txt->insert("end", $content);
+		 $id =~ s{[^A-Za-z0-9_.-]}{}g;
+		 $source_id = $id;
+	     } else {
+		 $real_txt->insert("end", $selection);
+	     }
 	 });
 
     $act_b->configure
@@ -3479,6 +3497,11 @@ sub temp_blockings_editor {
        text  => '$blocking_text',
        type  => '$blocking_type',
 EOF
+		  if (defined $source_id && $source_id !~ /^\s*$/) {
+		      $pl_entry .= <<EOF;
+       source_id => '$source_id',
+EOF
+		  }
 		  if ($meta_data_handling eq 'replace_preserve_data') {
 		      $pl_entry .= "###PRESERVE DATA\n";
 		  } else {
@@ -3509,6 +3532,7 @@ EOF
 			      (-string => $pl_entry,
 			       -text   => $blocking_text,
 			       -preserve_data => $meta_data_handling eq 'replace_preserve_data',
+			       -source_id => $source_id,
 			      );
 			  if (!$ret) {
 			      return;
@@ -3612,6 +3636,7 @@ sub temp_blockings_editor_replace {
     my $new_string = $args{-string};
     my $new_text   = $args{-text};
     my $preserve_data = $args{-preserve_data};
+    my $source_id = $args{-source_id};
     if (!eval { require String::Similarity; 1 }) {
 	main::status_message($@, "die");
     }
@@ -3621,19 +3646,37 @@ sub temp_blockings_editor_replace {
     if (!@temp_blocking) {
 	main::status_message("Keine Einträge in <$pl_file> gefunden", "die");
     }
-    my $max_similarity;
+
     my $max_index;
-    for my $index (0 .. $#temp_blocking) {
-	my $record = $temp_blocking[$index];
-	my $similarity = String::Similarity::similarity(lc $record->{text}, lc $new_text);
-	if (!defined $max_similarity || $similarity > $max_similarity) {
-	    $max_index = $index;
-	    $max_similarity = $similarity;
+    my $max_similarity;
+    my $found_through_source_id;
+    # First find exactly matching records through source_id
+    if (defined $source_id && $source_id !~ /^\s*$/) {
+	for(my $index = $#temp_blocking; $index >= 0; $index--) {
+	    my $record = $temp_blocking[$index];
+	    if (defined $record->{source_id} &&
+		$record->{source_id} eq $source_id) {
+		$found_through_source_id = 1;
+		$max_index = $index;
+		last;
+	    }
 	}
     }
-    if ($max_similarity == 0) {
-	main::status_message("Keinen ähnlichen Eintrag gefunden", "info");
-	return $ret;
+
+    if (!defined $max_index) {
+	# Nothing found? Then try the best similar record.
+	for my $index (0 .. $#temp_blocking) {
+	    my $record = $temp_blocking[$index];
+	    my $similarity = String::Similarity::similarity(lc $record->{text}, lc $new_text);
+	    if (!defined $max_similarity || $similarity > $max_similarity) {
+		$max_index = $index;
+		$max_similarity = $similarity;
+	    }
+	}
+	if ($max_similarity == 0) {
+	    main::status_message("Keinen ähnlichen Eintrag gefunden", "info");
+	    return $ret;
+	}
     }
 
     open(PL_IN, "< $pl_file")
@@ -3677,7 +3720,13 @@ sub temp_blockings_editor_replace {
 	my $t2 = $d->add("Scrolled", "ROText", -width => 50, -height => 10,
 			 -scrollbars => "osoe")->pack(-fill => "x");
 	$t2->insert("end", $new_string);
-	$d->add("Label", -text => "? (index = $max_index, similarity factor = $max_similarity)")->pack(-fill => "x");
+	my $info_label = "? (index = $max_index, ";
+	if ($found_through_source_id) {
+	    $info_label .= "Found through same source id)";
+	} else {
+	    $info_label .= "similarity factor = $max_similarity)";
+	}
+	$d->add("Label", -text => $info_label)->pack(-fill => "x");
 	$yesno = $d->Show;
     }
 

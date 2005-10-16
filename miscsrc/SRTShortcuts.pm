@@ -270,8 +270,14 @@ sub set_layer_highlightning {
 
 sub _vmz_lbvs_splitter {
     my($line) = @_;
-    my($type, $rest) = split /:\s+/, $line, 2;
-    ($type, $rest);
+    my($type, $content, $id);
+    if ($line =~ m{¦}) {
+	# new style
+	($type, $content, $id) = split /¦/, $line, 3;
+    } else {
+	($type, $content) = split /:\s+/, $line, 2;
+    }
+    ($type, $content, $id);
 }
 
 sub show_vmz_diff {

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.18 2005/08/26 23:09:18 eserte Exp $
+# $Id: vmzrobot.pl,v 1.19 2005/10/16 19:01:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -129,7 +129,7 @@ if ($oldfile) {
 if (exists $output_as{'text'}) {
     my $fh = file_or_stdout($output_as{text});
     my $sep = "-"x50 . "\n";
-    print $fh join($sep, map { state_out($_) . $_->{text} } @detail_links);
+    print $fh join($sep, map { state_out_text($_) . $_->{text} } @detail_links);
 }
 
 if (exists $output_as{'bbd'}) {
@@ -144,7 +144,10 @@ EOF
     for my $info (@detail_links) {
 	(my $text = $info->{text}) =~ s/[\n\t]+/ /g;
 	$text =~ s/\[IMAGE\]//g; # XXX
-	$text = state_out($info) . $text;
+	## Old style:
+	#$text = state_out_text($info) . $text;
+	## New style:
+	$text = join "¦", state_out($info), $text, $info->{id};
 	my($x1, $y1) = map { int } $Karte::Polar::obj->map2standard
 	    ($info->{x1}, $info->{y1});
 	my($x2, $y2) = map { int } $Karte::Polar::obj->map2standard
@@ -332,13 +335,23 @@ sub mark_irrelevant_entry {
     }
 }
 
-sub state_out {
+# optimized for text output (with tabular view)
+sub state_out_text {
     my $detail = shift;
     my $text = "";
     if ($detail->{_state}) {
 	$text = join(", ", @{ $detail->{_state} }) . ": ";
     }
     sprintf "%-20s", $text;
+}
+
+sub state_out {
+    my $detail = shift;
+    my $text = "";
+    if ($detail->{_state}) {
+	$text = join(", ", @{ $detail->{_state} });
+    }
+    $text;
 }
 
 sub get_bbd_category {
@@ -366,7 +379,7 @@ cp -f /tmp/vmz.yaml /tmp/oldvmz.yaml
 ./vmzrobot.pl -f -outputas yaml:/tmp/newvmz.yaml || exit 1
 mv -f /tmp/newvmz.yaml /tmp/vmz.yaml
 ./vmzrobot.pl -old /tmp/oldvmz.yaml -i /tmp/vmz.yaml -diffcount || \
-   (./vmzrobot.pl -old ~/cache/misc/oldvmz.yaml -i ~/cache/misc/vmz.yaml -f -outputas bbd:/tmp/vmz.bbd; \
+   (./vmzrobot.pl -markirrelevant -old ~/cache/misc/oldvmz.yaml -i ~/cache/misc/vmz.yaml -f -outputas bbd:/tmp/vmz.bbd; \
     tkmessage -center -font "helvetica 18" -bg red -fg white "New VMZ data available" )
 
 Einzeiler: check mark_irrelevant_entry regexps
