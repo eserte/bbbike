@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.3 2005/10/16 20:34:02 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.4 2005/10/17 20:48:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 use FindBin;
 use lib ("$FindBin::RealBin/..",
@@ -145,7 +145,10 @@ sub do_google_search {
     for my $citypart (@cityparts) {
 	my $street_citypart = "$street in $citypart";
 	# usage of encode should not be necessary here!
-	my $query = encode("utf-8", "allintitle:$street_citypart site:luise-berlin.de");
+	my $query = qq{allintitle:"$street_citypart" site:luise-berlin.de OR site:berlin-chronik.de OR site:berlingeschichte.de};
+	use Devel::Peek; Dump $query;
+	my $query = encode("utf-8", $query);
+	Dump $query;
 	require Data::Dumper;
 	print STDERR "Google query term: ". Data::Dumper->new([$query],[qw()])->Indent(1)->Useqq(1)->Dump . "\n";
 	$search->native_query($query);

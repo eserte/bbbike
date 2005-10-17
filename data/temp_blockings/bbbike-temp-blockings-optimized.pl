@@ -647,14 +647,7 @@ userdel	q4 -7873,66589 -7851,66418
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1129500000,
-         'text' => 'B 2; (Bernau-Biesenthal); B 2, OD Rüdnitz, Kreisverkehr grundh. Ausbau, Bau Kreisverk. Vollsperrung 10.10.2005-16.10.2005 ',
-         'from' => 1128808800,
-         'data' => 'userdel	q4 25095,35601 24915,35340
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1134774000,
