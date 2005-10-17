@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.69 2005/10/07 07:31:41 eserte Exp $
+# $Id: Makefile,v 1.69 2005/10/07 07:31:41 eserte Exp eserte $
 #
 
 # Targets:
@@ -543,3 +543,7 @@ remote-cleanup:
 	    cd ${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/mapserver/brb && \
 	    ./cleanup -f -agehours 24 \
 	'
+
+# For quick deployment only:
+fast-rsync-googlemaps:
+	rsync -e "ssh -2" -av $(BBBIKE_ROOT_DIR)/cgi/bbbikegooglemap.cgi root@www.radzeit.de:/var/www/domains/radzeit.de/www/cgi-bin/

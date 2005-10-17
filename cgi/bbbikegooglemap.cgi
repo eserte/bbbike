@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.13 2005/10/15 00:50:42 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.13 2005/10/15 00:50:42 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -168,6 +168,11 @@ sub get_html {
         document.getElementById("message").innerHTML = latLngStr;
     }
 
+    function showLink(point, message) {
+        var latLngStr = message + "@{[ url(-full => 1) ]}?zoom=" + map.getZoomLevel() + "&wpt=" + point.x + "," + point.y + "&coordsystem=polar";
+        document.getElementById("permalink").innerHTML = latLngStr;
+    }
+
     function setZoomInForm() {
 	document.googlemap.zoom.value = map.getZoomLevel();
     }
@@ -184,6 +189,7 @@ sub get_html {
     GEvent.addListener(map, "moveend", function() {
         var center = map.getCenterLatLng();
 	showCoords(center, 'Center of map: ');
+	showLink(center, 'Link: ');
     });
 
 EOF
@@ -219,7 +225,8 @@ EOF
 
     //]]>
     </script>
-    <div id="message"></div>
+    <div style="font-size:x-small;" id="message"></div>
+    <div style="font-size:x-small;" id="permalink"></div>
     <div id="wpt">
 EOF
     for my $wpt (@$wpts) {
