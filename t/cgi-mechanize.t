@@ -53,8 +53,8 @@ plan tests => $tests * @browsers;
 
 for my $browser (@browsers) {
 
-    my $is_textbrowser = $browser =~ /lynx/i;
-    my $can_javascript = $browser !~ /lynx/i;
+    my $is_textbrowser = $browser =~ /^lynx/i;
+    my $can_javascript = $browser !~ /^(lynx|dillo)/i;
 
     my $agent;
     #XXX my $formfiller;

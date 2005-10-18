@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.30 2005/08/14 18:07:22 eserte Exp $
+# $Id: PDF.pm,v 2.31 2005/10/17 23:09:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,20 @@
 package BBBikeDraw::PDF;
 use strict;
 use base qw(BBBikeDraw);
-use PDF::Create 0.06; # for image support, get from SourceForge, see Makefile.PL
+use PDF::Create;
+BEGIN {
+    my $needed_version = "0.06";
+    if (!eval { PDF::Create->VERSION($needed_version) }) {
+	die <<EOF;
+You have PDF::Create $PDF::Create::VERSION installed, but at least version
+$needed_version is necessary to run @{[ __PACKAGE__ ]}. Unfortunately this module
+version is NOT available from CPAN, but only from SourceForge from the
+URL http://sourceforge.net/projects/perl-pdf/ or use the direct download link
+http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download
+
+EOF
+    }
+}
 use PDF::Create::MyPage; # additional methods
 use Strassen;
 # Strassen benutzt FindBin benutzt Carp, also brauchen wir hier nicht zu
@@ -30,7 +43,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.30 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.31 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;

@@ -137,6 +137,7 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
    'für geocode_images'],
   [qw/SVG	0	all	2	cgi/,
    'additional optional BBBikeDraw backend for SVG graphics'],
+  # also: GD::SVG, but this module currently doesn't even pass tests!
   [qw/Object::Iterate	0	all	2	base/,
    'Notwendig für die radzeit.de-Version (bbd2esri)'],
 

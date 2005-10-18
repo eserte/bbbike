@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.193 2005/10/15 11:06:27 eserte Exp eserte $
+# $Id: bbbike,v 3.194 2005/10/17 22:44:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -190,7 +190,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.193 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.194 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -243,6 +243,7 @@ $small_scale_edit  = 0.01;         # dasselbe für den Edit-Mode XXX remove?
 $medium_scale_edit = 0.02;
 set_canvas_scale(DEFAULT_SCALE);
 Karte::preload('Standard');
+my $init_scale_massstab; # in 1:x form
 $init_scrollregion = $Karte::Standard::init_scrollregion;
 $normal_scrollregion = $init_scrollregion*$scale;
 @scrollregion = ((-$normal_scrollregion) x 2,
@@ -677,21 +678,10 @@ eval { local $SIG{'__DIE__'};
     label => M"Skalierung", var => \$scaling],
    ['visual','=s',undef,
     label => M"Visual", var => \$visual],
-   ['scale','=f',undef,
+   ['scale','=s',undef,
     label => M"Skalierung", nogui => 1,
-    var => sub {
-	my $value = $_[1];
-	if (defined $value && $value > 0) {
-	    my $oldscale = $scale;
-	    set_canvas_scale($value);
-	    my $change_scale_factor = $scale/$oldscale;
-	    foreach (@scrollregion) {
-		$_ *= $change_scale_factor;
-	    }
-	} else {
-	    warn "Ungültiger Skalierungswert <$value> wird ignoriert\n";
-	}
-    }],
+    var => \$init_scale_massstab,
+   ],
    ['overviewwasser','!',1,
     label => M"Übersichtskarte mit Gewässern", var => \$overview_draw{'w'}],
    ['overviewsbahn','!',0,
@@ -1368,6 +1358,26 @@ if (@want_extends) {
 $top_dpmm = $top->screenwidth/$top->screenmmwidth;
 $top_dpi  = $top_dpmm*25.4;
 $ps_image_res = int($top_dpi) . "x" . int($top_dpi);
+
+if (defined $init_scale_massstab) {
+    if ($init_scale_massstab =~ m{^1:(\d+)$}) {
+	my $nenner = $1;
+	my $nenner_now = calc_mapscale_nenner();
+	# to the old $scale form:
+	$init_scale_massstab = ($scale*$nenner_now)/$nenner;
+    }
+
+    if ($init_scale_massstab > 0) {
+	my $oldscale = $scale;
+	set_canvas_scale($init_scale_massstab);
+	my $change_scale_factor = $scale/$oldscale;
+	foreach (@scrollregion) {
+	    $_ *= $change_scale_factor;
+	}
+    } else {
+	warn "Ungültiger Skalierungswert <$init_scale_massstab> wird ignoriert\n";
+    }
+}
 
 $srtbike_photo = load_photo($top, 'srtbike_solid.' . $default_img_fmt);
 if ($os eq 'win' || $^O eq 'cygwin') {
@@ -13320,12 +13330,18 @@ sub Tk::Canvas::smooth_scroll {
 # Diese Funktion geht von einer korrekten dpi-Einstellung für den
 # Bildschirm und quadratischen Dots aus.
 # Rückgabewert: Der Teil hinter dem Doppelpunkt.
-sub calc_mapscale {
+sub calc_mapscale_nenner {
     my($mx1) = transpose(0, 0);
     my($mx2) = transpose(1000, 1000);
     my $nenner = (($mx2-$mx1)/$top_dpmm/$scale_coeff);
     if ($nenner == 0) { $nenner = 0.00000001 }
     $nenner = abs(int(1_000_000 / $nenner));
+    $nenner;
+}
+
+# side-effect: this also sets $mapscale
+sub calc_mapscale {
+    my $nenner = calc_mapscale_nenner();
     $mapscale = "1:$nenner";
     $nenner;
 }

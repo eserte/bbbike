@@ -14,6 +14,19 @@ Legend:
 
 =over
 
+=item * (H5)
+
+Besseres Erkennen der Kreuzungssituation in der Straﬂenliste. Z.B. Bei
+Kreuzungen, wo beide Straﬂen nur einen kleinen Winkel zueinander
+haben, sollte immer (auch bei <30∞) die Richtung ausgegeben werden.
+Bei Situationen wie Falkensteinstr./Oberbaumstr. sollte trotz
+Geradeausfahrt die Nebenstraﬂe gekennzeichnet werden (z.B.
+E<quot>nicht der Hauptstraﬂe folgenE<quot>). Bei einfachen
+Kurvensituationen ohne Kreuzung (Neudecker Weg und Rudower Str.)
+braucht keine Richtungsangabe erfolgen. Wenn an so einer Stelle eine
+Kreuzung ist, dann kann die Angabe E<quot>Hauptstraﬂe folgenE<quot>
+zus‰tzlich angezeigt werden.
+
 =item * (M4)
 
 Bug: E<quot>Delete this menuE<quot> item in plugins does not work
