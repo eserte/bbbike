@@ -869,6 +869,14 @@ sub as_gpx {
     $dom->toString;
 }
 
+sub has_track {
+    my($self) = @_;
+    for my $chunk (@{ $self->Chunks }) {
+	return 1 if ($chunk->Type eq $chunk->TYPE_TRACK);
+    }
+    0;
+}
+
 1;
 
 __END__

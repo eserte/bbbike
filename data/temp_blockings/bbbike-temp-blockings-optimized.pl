@@ -397,7 +397,14 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1130277600,
+         'text' => 'L 23; OD Spreenhagen, Brücke über Oder-Spree-Kanal Sanierung Brücke Vollsperrung 24.10.2005-25.10.2005 ',
+         'from' => 1130018400,
+         'data' => 'userdel	2 42349,-5620 42647,-6368
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -683,7 +690,14 @@ userdel	q4 -7873,66589 -7851,66418
          'type' => 'gesperrt'
        },
        undef,
-       undef,
+       {
+         'until' => 1129759200,
+         'text' => 'L 15; (B109-Boitzenburg); zw. Abzw. Klein Sperrenwalde u. OL Gollmitz, Prenzlauer Str. Straßenbauarbeiten Vollsperrung 16.10.2005-19.10.2005 ',
+         'from' => 1129327200,
+         'data' => 'userdel	2 31882,98397 30743,99403
+',
+         'type' => 'gesperrt'
+       },
        undef,
        {
          'until' => 1131145200,
@@ -724,6 +738,23 @@ userdel	q4 -7873,66589 -7851,66418
          'data' => 'userdel	q4; 9562,12679 9574,12578
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1132959600,
+         'text' => 'B 109; (Zehdenick-Templin); zw. Hammelspring und Hindenburg Straßen-, Durchlass- u.Radweg. Vollsperrung 17.10.2005-25.11.2005 ',
+         'from' => 1129413600,
+         'data' => 'userdel	2 12311,76014 11771,74993
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002297',
+         'until' => 1130191200,
+         'text' => 'Zeltinger Str. Richtung Oranienburger Chaussee zwischen Zernsdorfer Weg und Zeltinger Platz Straßenarbeiten, Fahrtrichtung gesperrt (bis 24.10.2005)',
+         'from' => 1129705762,
+         'data' => 'userdel	1 2461,25270 2657,25486 2721,25576
+',
+         'type' => 'gesperrt'
        }
      
 );

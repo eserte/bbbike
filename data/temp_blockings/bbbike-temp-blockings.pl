@@ -2255,9 +2255,9 @@ EOF
 userdel	q4 24735,22556 24951,22681
 EOF
      },
-     { from  => 1120946400, # 2005-07-10 00:00
-       until => 1125266400, # 2005-08-29 00:00
-       text  => 'L 23; (Storkow-Grünheide); OD Spreenhagen, Brücke über Oder-Spree-Kanal Sanierung Brücke Vollsperrung 11.07.2005-28.08.2005 ',
+     { from  => 1130018400, # 2005-10-23 00:00
+       until => 1130277600, # 2005-10-26 00:00
+       text  => 'L 23; OD Spreenhagen, Brücke über Oder-Spree-Kanal Sanierung Brücke Vollsperrung 24.10.2005-25.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 42349,-5620 42647,-6368
@@ -3010,9 +3010,9 @@ EOF
 userdel	q4; 23799,7877 23774,7803 23701,7772 23190,7484 23066,7355
 EOF
      },
-     { from  => 1128895200, # 2005-10-10 00:00
-       until => 1129413600, # 2005-10-16 00:00
-       text  => 'L 15; (B109-Boitzenburg); zw. Abzw. Klein Sperrenwalde u. OL Gollmitz, Prenzlauer Str. Straßenbauarbeiten Vollsperrung 11.10.2005-15.10.2005 ',
+     { from  => 1129327200, # 2005-10-15 00:00
+       until => 1129759200, # 2005-10-20 00:00
+       text  => 'L 15; (B109-Boitzenburg); zw. Abzw. Klein Sperrenwalde u. OL Gollmitz, Prenzlauer Str. Straßenbauarbeiten Vollsperrung 16.10.2005-19.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 31882,98397 30743,99403
@@ -3064,6 +3064,23 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 9562,12679 9574,12578
+EOF
+     },
+     { from  => 1129413600, # 2005-10-16 00:00
+       until => 1132959600, # 2005-11-26 00:00
+       text  => 'B 109; (Zehdenick-Templin); zw. Hammelspring und Hindenburg Straßen-, Durchlass- u.Radweg. Vollsperrung 17.10.2005-25.11.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 12311,76014 11771,74993
+EOF
+     },
+     { from  => 1129705762, # 2005-10-19 09:09
+       until => 1130191200, # 2005-10-25 00:00
+       text  => 'Zeltinger Str. Richtung Oranienburger Chaussee zwischen Zernsdorfer Weg und Zeltinger Platz Straßenarbeiten, Fahrtrichtung gesperrt (bis 24.10.2005)',
+       type  => 'gesperrt',
+       source_id => 'IM_002297',
+       data  => <<EOF,
+userdel	1 2461,25270 2657,25486 2721,25576
 EOF
      },
     );

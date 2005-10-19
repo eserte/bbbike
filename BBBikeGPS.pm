@@ -454,15 +454,15 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	close $tmpfh;
 	$file = $tmpfile;
     }
-    my $gps = GPS::GpsmanData->new;
+    my $gps = GPS::GpsmanMultiData->new;
     $gps->load($file);
-    $gps->convert_all("DDD");
+#XXX not necessary?    $gps->convert_all("DDD");
     require Karte;
     Karte::preload(qw(Polar));
     require Strassen;
     $s = Strassen->new;
     my $s_speed;
-    if ($gps->Type eq GPS::GpsmanData::TYPE_TRACK() && $draw_gpsman_data_s) {
+    if ($gps->has_track && $draw_gpsman_data_s) {
 	$s_speed = Strassen->new;
     }
     my $whole_dist = 0;
@@ -471,8 +471,12 @@ sub BBBikeGPS::do_draw_gpsman_data {
     my @add_wpt_prop;
     require File::Basename;
     $base = File::Basename::basename($file);
+
     my $last_wpt;
-    foreach my $wpt (@{ $gps->Points }) {
+    my $is_new_chunk;
+foreach my $chunk (@{ $gps->Chunks }) {
+    $is_new_chunk = 1;
+    foreach my $wpt (@{ $chunk->Points }) {
 	my($x,$y) = map { int } $Karte::map{"polar"}->map2map($main::coord_system_obj, $wpt->Longitude, $wpt->Latitude);
 	my($x0,$y0) = ($main::coord_system eq 'standard' ? ($x,$y) : map { int } $Karte::map{"polar"}->map2standard($wpt->Longitude, $wpt->Latitude));
 	my $alt = $wpt->Altitude;
@@ -500,7 +504,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 		    my $legtime = $time-$last_time;
 		    # Do not check for $legtime==0 --- saved tracks do not
 		    # have any time at all!
-		    if (abs($legtime) < 60*$max_gap) {
+		    if (abs($legtime) < 60*$max_gap && !$is_new_chunk) {
 			my $dist = sqrt(($x0-$last_x0)**2 + ($y0-$last_y0)**2);
 			$whole_dist += $dist;
 			$whole_time += $legtime;
@@ -581,7 +585,10 @@ sub BBBikeGPS::do_draw_gpsman_data {
 		$last_wpt = [$x,$y,$x0,$y0,$time,$alt,$acc];
 	    }
 	}
+    } continue {
+	$is_new_chunk = 0;
     }
+}
 
     if ($s_speed) {
 	my $msg = "";
