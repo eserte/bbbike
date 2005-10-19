@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.4 2005/10/17 20:48:06 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.5 2005/10/19 23:10:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 use FindBin;
 use lib ("$FindBin::RealBin/..",
@@ -144,10 +144,12 @@ sub do_google_search {
     my @results;
     for my $citypart (@cityparts) {
 	my $street_citypart = "$street in $citypart";
-	# usage of encode should not be necessary here!
-	my $query = qq{allintitle:"$street_citypart" site:luise-berlin.de OR site:berlin-chronik.de OR site:berlingeschichte.de};
+	# Unfortunately there seems to be a lot of encoding issues
+	# Maybe best to use the ersatz notation for umlauts?
+	my $query = qq{allintitle:"}. $street_citypart . qq{" site:luise-berlin.de OR site:berlin-chronik.de OR site:berlingeschichte.de};
 	use Devel::Peek; Dump $query;
-	my $query = encode("utf-8", $query);
+	## Usage of encode should not be necessary here!
+	$query = encode("utf-8", $query) if $] == 5.008; # why only this perl version?
 	Dump $query;
 	require Data::Dumper;
 	print STDERR "Google query term: ". Data::Dumper->new([$query],[qw()])->Indent(1)->Useqq(1)->Dump . "\n";
@@ -177,10 +179,31 @@ sub start_browser {
     WWWBrowser::start_browser($url);
 }
 
+sub kill_umlauts {
+    my $s = shift;
+    my $kill_umlauts = {"ä" => "ae",
+			"ö" => "oe",
+			"ü" => "ue",
+			"ß" => "ss",
+			"Ä" => "Ae",
+			"Ö" => "Oe",
+			"Ü" => "Ue",
+			"é" => "e",
+		       };
+    my $left_part = join "", keys %$kill_umlauts;
+    $s =~ s{([$left_part])}{$kill_umlauts->{$1}}ge;
+    $s;
+}
+
 return 1 if caller;
 
-do_search(street => "Heerstr.",
-	  cityparts => ["Charlottenburg", "Spandau"],
-	 );
+{
+    my $street = shift @ARGV;
+    my @cityparts = @ARGV;
+    my $url = do_google_search(street => $street,
+			       cityparts => [@cityparts],
+			      );
+    print "$url\n";
+}
 
 __END__

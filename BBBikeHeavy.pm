@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.22 2005/08/19 21:48:19 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.22 2005/08/19 21:48:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -168,7 +168,7 @@ sub BBBikeHeavy::load_plugin {
     eval $mod.'::register(@plugin_args)';
     if ($@) {
 	my $err = $@;
-	status_message(Mfmt("Das Plugin %s konnte nicht registriert werden. Grund: %s", $mod, $err), "error");
+	status_message(Mfmt("Das Plugin %s konnte nicht registriert werden. Grund: %s", $mod, $err), "err");
 	warn $err;
 	return;
     }
