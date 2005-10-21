@@ -346,7 +346,14 @@ userdel	q4 1916,-1090 1709,-953
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'until' => 1135378800,
+         'text' => 'L 216; (Gollin-Templin); OD Vietmannsdorf, Brücke über Mühlengraben Brückenneubau Vollsperrung 13.06.2005-23.12.2005 ',
+         'from' => 1118527200,
+         'data' => 'userdel	2 17636,72217 17653,71852
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -521,8 +528,8 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
          'type' => 'handicap'
        },
        {
-         'until' => 1130799600,
-         'text' => 'B 179; (Karl-Liebknecht-Str.); OD Zeesen, zw. Spreewaldstr. u. Weidendamm Straßenausbau Vollsperrung 19.09.2005-31.10.2005 ',
+         'until' => 1130191200,
+         'text' => 'B 179; (Karl-Liebknecht-Str.); OD Zeesen, zw. Spreewaldstr. u. Weidendamm Straßenausbau Vollsperrung 19.09.2005-24.10.2005 ',
          'from' => 1126994400,
          'data' => 'userdel	2 26473,-14543 26612,-15094
 ',
@@ -690,14 +697,7 @@ userdel	q4 -7873,66589 -7851,66418
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1129759200,
-         'text' => 'L 15; (B109-Boitzenburg); zw. Abzw. Klein Sperrenwalde u. OL Gollmitz, Prenzlauer Str. Straßenbauarbeiten Vollsperrung 16.10.2005-19.10.2005 ',
-         'from' => 1129327200,
-         'data' => 'userdel	2 31882,98397 30743,99403
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1131145200,
@@ -753,6 +753,54 @@ userdel	q4 -7873,66589 -7851,66418
          'text' => 'Zeltinger Str. Richtung Oranienburger Chaussee zwischen Zernsdorfer Weg und Zeltinger Platz Straßenarbeiten, Fahrtrichtung gesperrt (bis 24.10.2005)',
          'from' => 1129705762,
          'data' => 'userdel	1 2461,25270 2657,25486 2721,25576
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002305',
+         'until' => 1130623200,
+         'text' => 'Scheidemannstr. Richtung Ebertstr. von Entlastungsstr. bis Ebertstr. Veranstaltung, Fahrtrichtung gesperrt (bis 29.10.2005)',
+         'from' => 1129879314,
+         'data' => 'userdel	q4 8119,12414 8374,12416
+userdel	q4 8400,12417 8540,12420
+userdel	q4 8400,12417 8374,12416
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1129996800,
+         'text' => 'Stadtgebiet Potsdam: auf Grund einer Bombenentschärfung sind folgende Strassen innerhalb folgender Begrenzung gesperrt: Am Kanal -- Kurfürstenstr. -- Berliner Strasse -- Friedrich-Ebert-Str., Dauer: 22.10.2005 09:00 Uhr bis 18:00 Uhr, ',
+         'from' => 1129878000,
+         'data' => 'userdel	2 -12306,-496 -12262,-612
+userdel	2 -12523,-839 -12575,-1031
+userdel	2 -12523,-839 -12190,-775
+userdel	2 -12523,-839 -12685,-870
+userdel	2 -12063,-784 -12148,-934
+userdel	2 -12148,-934 -12231,-1078
+userdel	2 -12148,-934 -12100,-962
+userdel	2 -11910,-945 -12100,-962
+userdel	2 -12296,-1190 -12231,-1078
+userdel	2 -12296,-1190 -12488,-999
+userdel	2 -12488,-999 -12553,-1025
+userdel	2 -12262,-612 -12190,-775
+userdel	2 -12262,-612 -12545,-698
+userdel	2 -12575,-1031 -12768,-1069
+userdel	2 -12575,-1031 -12553,-1025
+userdel	2 -12553,-1025 -12553,-1278
+userdel	2 -12078,-1068 -12070,-1153
+userdel	2 -12078,-1068 -12020,-1062
+userdel	2 -12078,-1068 -12231,-1078
+userdel	2 -12078,-1068 -12100,-962
+userdel	2 -12768,-1069 -12784,-956
+userdel	2 -12571,-581 -12545,-698
+userdel	2 -12190,-775 -12148,-784
+userdel	2 -12784,-956 -12797,-893
+userdel	2 -12545,-698 -12712,-734
+userdel	2 -12685,-870 -12797,-893
+userdel	2 -12712,-734 -12884,-769
+userdel	2 -12727,-640 -12712,-734
+userdel	2 -12797,-893 -12895,-913
+userdel	2 -12718,-1327 -12768,-1069
 ',
          'type' => 'gesperrt'
        }
