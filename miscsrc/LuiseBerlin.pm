@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.5 2005/10/19 23:10:22 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.5 2005/10/19 23:10:22 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -45,7 +45,7 @@ sub register {
 	{ name => "Luise-Berlin, Bexirkslexikon",
 	  callback => sub { launch_bezlex_url(@_) },
 	};
-    main::status_message("Das Luise-Berlin-Plugin wurde registriert. Im Info-Fenster erscheint jetzt immer ein neuer Link.", "info");
+    main::status_message("Das Luise-Berlin-Plugin wurde registriert. Der Link erscheint im Info-Fenster.", "info");
 }
 
 sub find_street {
