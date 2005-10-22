@@ -590,14 +590,7 @@ userdel	q4 -7873,66589 -7851,66418
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1129932000,
-         'text' => 'L 39; (Kolberg-Friedersdorf); OD Blossin, Haupstr. Straßenbauarbeiten Vollsperrung 04.10.2005-21.10.2005 ',
-         'from' => 1128290400,
-         'data' => 'userdel	q4 37885,-16100 37888,-15635
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -766,43 +759,6 @@ userdel	q4 8400,12417 8540,12420
 userdel	q4 8400,12417 8374,12416
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1129996800,
-         'text' => 'Stadtgebiet Potsdam: auf Grund einer Bombenentschärfung sind folgende Strassen innerhalb folgender Begrenzung gesperrt: Am Kanal -- Kurfürstenstr. -- Berliner Strasse -- Friedrich-Ebert-Str., Dauer: 22.10.2005 09:00 Uhr bis 18:00 Uhr, ',
-         'from' => 1129878000,
-         'data' => 'userdel	2 -12306,-496 -12262,-612
-userdel	2 -12523,-839 -12575,-1031
-userdel	2 -12523,-839 -12190,-775
-userdel	2 -12523,-839 -12685,-870
-userdel	2 -12063,-784 -12148,-934
-userdel	2 -12148,-934 -12231,-1078
-userdel	2 -12148,-934 -12100,-962
-userdel	2 -11910,-945 -12100,-962
-userdel	2 -12296,-1190 -12231,-1078
-userdel	2 -12296,-1190 -12488,-999
-userdel	2 -12488,-999 -12553,-1025
-userdel	2 -12262,-612 -12190,-775
-userdel	2 -12262,-612 -12545,-698
-userdel	2 -12575,-1031 -12768,-1069
-userdel	2 -12575,-1031 -12553,-1025
-userdel	2 -12553,-1025 -12553,-1278
-userdel	2 -12078,-1068 -12070,-1153
-userdel	2 -12078,-1068 -12020,-1062
-userdel	2 -12078,-1068 -12231,-1078
-userdel	2 -12078,-1068 -12100,-962
-userdel	2 -12768,-1069 -12784,-956
-userdel	2 -12571,-581 -12545,-698
-userdel	2 -12190,-775 -12148,-784
-userdel	2 -12784,-956 -12797,-893
-userdel	2 -12545,-698 -12712,-734
-userdel	2 -12685,-870 -12797,-893
-userdel	2 -12712,-734 -12884,-769
-userdel	2 -12727,-640 -12712,-734
-userdel	2 -12797,-893 -12895,-913
-userdel	2 -12718,-1327 -12768,-1069
-',
-         'type' => 'gesperrt'
        }
      
 );

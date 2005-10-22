@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.69 2005/10/07 07:31:41 eserte Exp eserte $
+# $Id: Makefile,v 1.71 2005/10/21 22:10:24 eserte Exp $
 #
 
 # Targets:
@@ -11,8 +11,9 @@
 #  rsync-temp-blockings: Do the rsync of just the "temp-blockings" part of
 #		the data. Also allowed if prepared for the local server.
 #  tkrsync:	Execute the "tkrsync" for manually syncing parts of the tree.
-#  test:	Test the remote server from the local host.
-#  test-on-remote:	Test the remote server from the remote host.
+#  test:	Test the remote server from the local host (and one test on
+#		the remote server).
+#  test-local:	Run all tests locally.
 #  deploy:	Do everything from preparing to rsync'ing and testing.
 #  deploy-local:	Prepare a local distribution for testing. Do not rsync.
 #  test-makefile:	Same as deploy-local, but each make command has to
@@ -42,11 +43,12 @@ CGI_FILES=		bbbike.cgi \
 			mapserver_address.cgi \
 			mapserver_comment.cgi \
 			mapserver_setcoord.cgi
-TESTS=			basic.t \
-			cgihead.t \
+TESTS_ON_REMOTE=	basic.t
+TESTS_FROM_LOCAL=	cgihead.t \
 			cgi-mechanize.t \
 			cgi.t \
 			wapcgi.t
+TESTS=			$(TESTS_ON_REMOTE) $(TESTS_FROM_LOCAL)
 TESTS_ADD=		BBBikeTest.pm
 HTDOCS=			public
 
@@ -58,13 +60,13 @@ DEPLOY_TARGETS=			prepare-bbbike-data \
 				prepare-mapserver-dist \
 				prepare-touren-dist \
 				rsync \
-				test-on-remote
+				test
 
 # only bbbike data, no program, no mapserver
 DEPLOY_DATA_TARGETS=		prepare-bbbike-data \
 				prepare-bbbike-dist \
 				rsync-bbbike-data \
-				test-on-remote
+				test
 
 # local deployment
 DEPLOY_LOCAL_TARGETS=		prepare-bbbike-data \
@@ -457,16 +459,7 @@ prepare-routopedia-dist:
 	cd ${BBBIKE_ROOT_DIR}/routopedia && ${MAKE} distcheck
 	(umask 022; cd ${BBBIKE_ROOT_DIR}/routopedia && perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread(),'${CURDIR}/routopedia', 'best');")
 
-test:
-	-@date >> .last/start-test
-	cd ${.CURDIR}/BBBike/t && \
-	BBBIKE_TEST_CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin \
-	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/bbbike.cgi \
-	BBBIKE_TEST_WAPURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/wapbbbike.cgi \
-	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
-	    perl -MTest::Harness -e 'runtests(@ARGV)' \
-		${TESTS}
-	-@date >> .last/test
+test:	test-on-remote test-from-local
 
 test-on-remote:
 	-@date >> .last/start-test-on-remote
@@ -477,9 +470,20 @@ test-on-remote:
 	BBBIKE_TEST_WAPURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/wapbbbike.cgi \
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
-		${TESTS} \
+		${TESTS_ON_REMOTE} \
 	'
 	-@date >> .last/test-on-remote
+
+test-from-local:
+	-@date >> .last/start-test-from-local
+	cd ${.CURDIR}/BBBike/t && \
+	BBBIKE_TEST_CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin \
+	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/bbbike.cgi \
+	BBBIKE_TEST_WAPURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/wapbbbike.cgi \
+	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
+	    perl -MTest::Harness -e "runtests(@ARGV)" \
+		${TESTS_FROM_LOCAL}
+	-@date >> .last/test-on-from-local
 
 test-on-remote-and-send-mail:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\

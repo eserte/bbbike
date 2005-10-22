@@ -164,6 +164,12 @@ specifies an additional comment. An alias for C<unsure:> is C<XXX>.
 Define another known name for the next line. For now, only one alias
 is allowed.
 
+=item C<oldname: I<when>: I<name>>
+
+An old name for the next line. I<when> is a time specification (best:
+some kind of ISO dates, but this is not yet specified). Multiple
+oldname directives are allowed for one record.
+
 =item C<section: I<section name>>
 
 The next block is part of a named section. Sections may be nested.
