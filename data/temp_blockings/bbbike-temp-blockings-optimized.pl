@@ -637,14 +637,7 @@ userdel	q4 -7873,66589 -7851,66418
        },
        undef,
        undef,
-       {
-         'until' => 1130018400,
-         'text' => 'K 6301; (Bötzow-Wansdorf-Pausin); OD Wansdorf Kanal- und Straßenbau Vollsperrung 04.07.2005-22.10.2005 ',
-         'from' => 1120341600,
-         'data' => 'userdel	q4 -11337,25571 -11509,25591
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1130709600,
          'text' => 'L 201; (Nauener Chaussee); OD Falkensee, zw. F.-Ludwig-Jahn-Str. u. Innstr. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 14.09.2005-30.10.2005 ',

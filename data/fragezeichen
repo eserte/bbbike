@@ -19,7 +19,6 @@ Verbindung zwischen Siegfriedstr. und Frankfurter Allee: Durchfahrt möglich? Ode
 Templerzeile - Götzstr.: existiert eine Verbindung? Qualität?	? 9665,6029 9708,6493
 Wuhlegartenweg: Durchfahrt unter Blumberger Damm möglich? Qualität?	? 20627,12162 21164,12091 21278,12131
 Lenbachstr. (Kaulsdorf): Qualität OK? Zugang zur Wuhle möglich?	? 21668,9885 21704,10036 21671,10289 21954,10700 22325,10707
-Lassaner Str.: Qualität OK?	? 22826,10614 22857,11009
 Schwanebeck: Kleist/Goethestr.: gute Umfahrunsgmöglichkeit für Zepernicker Str./Karower Chausee?	?? 17459,24340 17796,24584 17921,24943 17976,25276
 Röntgental, Buchenallee: Qualität?	?? 17689,27853 18418,29246
 Gamengrund: genauere Wegführung, Qualität, teilweise war es sehr sandig!. Geht es von der B 158 aus noch weiter in Richtung Norden?	?? 39337,22638 39383,22801 39165,23131 39033,23202 39114,23766 39180,23776 39266,23984 39241,24116 39089,24279 39063,24400 38997,24431 38880,24568 38824,24812 39002,25304 39221,25518 39205,25655 39124,25812 39089,26036 39241,26229 39282,26391 39378,26508 39561,27382 39602,27382 39678,27600 39535,27808 39561,27996 39657,28154 39988,28352 40231,28753 40135,28824 40267,28951 40282,29022 40236,29621 40206,30002 40302,30617 40331,30763 40546,30881 40750,31012 41300,31862 41200,31900 41003,31612 40820,31236 40562,31025 39783,31398
@@ -95,7 +94,6 @@ Elisenau - Börnicke: Privatgelände, ist die Durchfahrt uneingeschränkt möglich?	
 Potzlow - Fergitz: Gilt das hier noch immer: schlechtes Kopfsteinpflaster, breite Sandbanketten (von Potzlow aus sah es letztens gut aus!)	? 38475,90762 37937,90365 37674,90025
 Gotlindestr.: Qualität OK? [außerdem Atzpodienstr. verlängern]	? 15928,12625 16409,12612 16848,12614 17113,12623 17357,12566
 Bohnsdorfer Str.: Waldweg?	?? 21999,2171 21996,1683 22162,1183 22217,1108
-Am Kanal - Adlergestell: Verbindung scheint zu existieren, Qualität?	? 20928,2412 21242,2048
 Weg zwischen Tierpark und Bahntrasse: Qualität des Weges (Am westlichen Ende Beton, dann Feldweg Q2?), geht es weiter in Richtung Norden/Osten, vielleicht bis zur B1? Schranke am westlichen Ende	? 18690,10016 19641,10476 19734,10690 19713,10880
 Freystadter Weg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 20949,4775 21100,4192
 Aßmannstr.: Qualität für den abknickenden Teil (möglicherweise asphaltiert?); können Radfahrer gegen die Einbahnstr. fahren?	? 25030,5307 25039,5766
@@ -625,7 +623,6 @@ Waldschulallee: auf Radweg ausweichen	?::inwork 799,10410 863,10363 1047,10225
 Soorstr.: hier ist doch Kopsteinpflaster?	? 1916,12358 1792,11889
 Nordufer unter der S-Bahnbrücke: existiert die Verbindung noch?	? 7467,14633 7231,14749
 Uferweg am Berlin-Spandauer Schiffahrtskanal - Sellerstr.: ein kurzes Stück ist noch in Bau, unbefestigte Strecke	?::inwork 7807,14441 7753,14528 7741,14560
-Ab Gorkistr.: Hier führt ein ausgeschilderter Radweg entlang	? 2435,20370 2468,20232
 Koloniestr.: Qualität (zumindestens in Höhe Soldiner Str. Kopfsteinpflaster)	? 8503,16716 8677,17154 8983,17748
 Malmöstr.: ist auch der Abschnitt zwischen Bornholmer und Finnländische Str. Kopfsteinpflaster?	? 10215,16527 10242,16422
 Greifswalder Str./Lilli-Henoch-Str.: gibt es hier eine Überquerungsmöglichkeit über die Straßenbahntrasse?	? 12614,14941
@@ -649,6 +646,10 @@ Grenzweg (Lichtenrade): laut Googlemaps geht es hinter der Illigstraße weiter (P
 Semliner Str.: geht es nördlich der Kleinschewskystr. weiter?	? 22274,7378 22344,7659
 Gärtnereiring: Ist hier eine Fahrradstraße?	? -6671,12649 -6681,12702 -7192,12874 -7163,13142 -7161,13176
 Pfarrer-Theile-Str.: ist die Straße Richtung Gärtnereiring eine Sackgasse oder existiert eine Verbindung?	? -7105,12899 -7083,13152
+Weg Am Nordgraben: existiert eine Verbindung von der Straße "Am Nordgraben" bis zur Ziekowstr. für Radfahrer?	? 3569,20583 3475,20656 3350,20758 3062,20898 2580,20805
+Blesener Zeile: existiert eine Verbindung zum Weg am Nordgraben?	? 3426,20642 3475,20656
+Leuenburger Zeile: Qualität? Teil einer ausgeschilderten Radroute?	? 2716,19776 2818,19606 2852,19546
+Waidmannsluster Damm - Gorkistr. - Leuenburger Zeile: Teil einer ausgeschilderten Route?	? 2242,20908 2404,20469 2435,20370 2463,20295 2716,19776
 wirklich?	? 9215,3599
 Wirklich?	? -3755,17090
 geplante Ampel in der Johannisthaler	? 14196,2876
@@ -680,7 +681,6 @@ Cyclopstr.: nicht geeignet (laut ADFC-Karte)	? 4825,21718 5138,21358
 (Straße 54) (Keine Referenz auf den Straßennamen in Berlin.coords.data und in der ADFC-Karte:)	? 13011,17470 12965,17684 12856,17825
 (Pankeweg, Bürgerpark) (Verläuft der Pankeweg im Bürgerpark nördlich oder südlich der Panke?)	? 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9414,18278 9304,18165 9310,18108
 (Weg zur Krampenburg) (ist das ein offizieller Name mit Ausschilderung?)	? 27609,305 27571,262 27171,155 27273,-106 27407,-401 27552,-741 27559,-1365 27357,-1545 27323,-1671
-Achardstr. (laut einigen Stadtplänen führt die Achardstr. bis zur Kolonie Kaulsdorfer Busch; laut Luise-Berlin aber nur bis zur Lassaner Str.)	? 22325,10707 22826,10614
 Schwarzer Weg (Tegel) (ist der Abschnitt südlich vom Restaurant Toulouse auch für Autos geöffnet?)	? 6,19817 23,19677 -38,19605 -116,19576 -244,19494 -487,19210 -570,19070 -566,18984 -570,18865 -593,18795 -707,18630 -792,18564 -820,18524 -884,18325 -994,18204 -1070,18094
 Knollstr. (letztes Stück Privatstr.?)	? 17178,-101 17558,126 17740,214
 Roßlauer Str. (das letzte Stück zum Blumberger Damm nicht passierbar?)	? 20656,12415 21148,12365
@@ -716,7 +716,7 @@ Heegermühler Weg: schlechtes Kopfsteinpflaster (Hier wurde als Range "5-15" ange
 (Unter dem S-Bhf. Schichauweg): Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9693,-621 9518,-668
 Miethepfad: Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9518,-668 9557,-779 9585,-859
 Torweg: unbefestigter Weg (wird demnächst asphaltiert:)	? -8606,14696 -8264,14642
-Salzachstr.: teils Kopfsteinpfaster, teils Asphalt (wo genau sind die Kopfsteinpflaster-/Asphaltabschnitte?)	? -2146,3531 -1989,3569 -1860,3607 -1703,3574 -1495,3444 -1360,3314
+Salzachstr.: unbefestigt, fester Erdboden (wo genau sind die Kopfsteinpflaster-/Asphaltabschnitte?)	? -2146,3531 -1989,3569
 Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser (Richtung Süden sah es teilweise besser aus, wo genau?)	? 9772,-12194 9345,-11425 9472,-11297 9578,-10891 9598,-10356 9854,-9480 10023,-8859
 Sputendorf: teil Kopfsteinpflaster, OK (Stimmt das? Oder ist das Stück in Sputendorf auch asphaltiert?)	? -1316,-7721 -1734,-7716 -2500,-7557
 Fahlhorst: schlechtes Kopfsteinpflaster (Stimmt das noch immer?)	? -5709,-10987 -5452,-11456

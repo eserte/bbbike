@@ -1180,6 +1180,7 @@ Schwartzkopffstr.: Asphalt	Q0 8607,14253 8781,14357
 Pflugstr.: Asphalt	Q0 8781,14357 8662,14567
 Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
+Blesener Zeile: Asphalt	Q0 3241,20613 3426,20642 3475,20656
 Moorweg: Asphalt	Q0 3190,22049 3114,22010 2903,21918 2652,21511 2429,21415
 Kaunstr.: Kopfsteinpflaster	Q2 -1077,3206 -1070,2924 -999,2726
 Moselstr. (Friedenau): Asphalt	Q0 5684,6942 5824,6974
@@ -1307,7 +1308,7 @@ Spielhagenstr. Kopfsteinpflaster	Q2 3419,11756 3540,11771
 Wunnibaldstr.: Asphalt	Q0 19396,456 19509,745
 Tannenweg: mäßig	Q2 -2993,17856 -3003,17990
 Klüberstr.: Beton	Q0 7912,2690 7943,2834
-Dregerhoffstr.: Beton	Q0 22904,2675 23427,2812 24050,2968 24084,2925 24190,2987
+Dregerhoffstr.: Beton	Q0 22904,2675 23427,2812 23541,2841 24050,2968 24084,2925 24190,2987
 Sprengelstr. (Wedding): Asphalt	Q0 6756,14962 6959,15032 7144,15106 7292,15154
 Zum Großen Windkanal: Asphalt	Q0 19162,3087 19348,3253 19581,3495
 Elly-Heuss-Knapp-Str.: Asphalt	Q0 17475,-53 17565,-201 17665,-364
@@ -1493,7 +1494,7 @@ Schopenhauerstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -2162,3128 -2277,3
 Normannenstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -3309,2400 -3395,2403 -3579,2532 -3692,2549
 Wasgenstr.: Kopfsteinpflaster	Q2 -2481,2900 -2395,2600
 Wasgenstr.: asphaltiert	Q0 -2395,2600 -2321,2323 -2280,2164
-Breisgauer Str.: Teerstr.	Q0 -2320,3593 -2243,3371 -2162,3128 -2096,2929 -2026,2742
+Breisgauer Str.: Teerstr.	Q0 -2320,3593 -2283,3491 -2243,3371 -2162,3128 -2096,2929 -2026,2742
 Seelingstr.: Asphalt	Q0 3091,12071 2924,12047 2703,12015 2504,11990
 Claszeile: Kopfsteinpflaster	Q2 777,966 657,1524 644,1578 614,1576 537,1870
 Borstellstr.: mäßiges Kopfsteinpflaster	Q2 6244,4331 6410,4302 6505,4363 6544,4392 6526,4475 6655,4617 6780,4751 6862,4735
@@ -2086,6 +2087,7 @@ Seltersstr.: Asphalt	Q0 11440,195 11564,195
 Woermannkehre: Asphalt	Q0 13601,6258 13732,6314
 Behringstr.: gutes Kopfsteinpflaster	Q1 16262,6913 16416,6741 16474,6675
 Achardstr.: Asphalt	Q0 22325,10707 22826,10614
+Lassaner Str.: Betonplatten, gut verfugt	Q1 22826,10614 22876,10760 22947,11007
 Einbecker Str.: sehr guter Asphalt	Q0 16958,11778 17161,11681 17208,11658 17275,11626 17734,11408
 Cyanenstr.: schlechter Asphalt	Q2 14159,14495 14124,14227
 Seelower Str.: Kopfsteinpflaster	Q2 10765,16486 10754,16305 10753,16144 10749,16013
@@ -2093,7 +2095,9 @@ Semliner Str.: Beton	Q0 22180,6977 22274,7378
 Gärtnereiring: Asphalt	Q0 -6671,12649 -6681,12702 -7192,12874 -7163,13142 -7161,13176
 Hennensteig: Kopfsteinpflaster	Q2 15837,156 15723,274 15586,522
 Kirchblick: Kopfsteinpflaster	Q2 -1981,3353 -1957,3456 -1989,3569
-Salzachstr.: teils Kopfsteinpfaster, teils Asphalt	Q2 -2146,3531 -1989,3569 -1860,3607 -1703,3574 -1495,3444 -1360,3314
+Salzachstr.: unbefestigt, fester Erdboden	Q2 -2146,3531 -1989,3569
+Salzachstr.: schlechtes Kopfsteinpfaster	Q3 -1989,3569 -1860,3607 -1703,3574 -1578,3499
+Salzachstr.: Asphalt	Q0 -1578,3499 -1495,3444 -1360,3314
 (Weg am Waldfriedhof Dahlem): fester Sandweg, Wurzeln	Q2 1051,5525 825,5420 626,5322
 (Waldweg parallel zur Flanaganstr. zwischen Hüttenweg und Im Jagen): fester Sandweg, Wurzeln	Q2 1051,5525 1697,5938
 Hagenower Ring: Asphalt	Q0 16988,19048 17001,19198 17256,19230 17259,19177 17440,19169
@@ -2101,6 +2105,16 @@ Pfarrer-Theile-Str.: Asphalt	Q0 -7105,12899 -7083,13152 -7074,13211
 Arabisweg: Beton	Q0 17743,2356 17646,2210
 Resselsteig: Asphalt	Q0 5300,1124 5353,1046 5327,1026 5424,882
 Tillmannsweg: kleinteiliges Pflaster	Q1 -4368,1720 -4373,1910 -4287,2079
+(Am Kanal - Adlergestell): loser Beton	Q2 20928,2412 20933,2390 20937,2368
+Titusweg: Beton	Q0 2576,20995 2563,21039 2429,21415
+Hieronymusweg: Beton	Q0 2563,21039 2717,21107
+Köpenzeile: mäßiger Beton	Q1 23187,3773 23241,3705 23337,3500 23452,3205 23481,3107 23541,2841 23567,2739 23551,2531
+Tile-Brügge-Weg: schlechter Asphalt	Q2 2404,20469 2603,20505 2804,20539 2989,20572 3141,20600 3214,20610 3241,20613 3307,20717 3327,20758
+Eschachstr.: Verbundsteinpflaster	Q1 2404,20469 2435,20370 2463,20295
+(Waidmannsluster Damm - Eschachstr./Gorkistr.): Verbundsteinpflaster	Q1 2242,20908 2404,20469
+(Eschachstr./Gorkistr. - Leuenberger Zeile): Verbundsteinpflaster	Q1 2463,20295 2716,19776
+Im Erpelgrund: Verbundsteinpflaster	Q1 -1581,22233 -1485,22260 -1288,22210 -918,22105 -827,22039 -583,21960 -385,21921
+Im Erpelgrund: Verbundsteinpflaster	Q1 -354,21997 -540,22053 -735,22103 -918,22105
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934
