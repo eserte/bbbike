@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.26 2005/08/14 18:06:11 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.29 2005/10/24 22:32:48 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -309,7 +309,7 @@ sub copy_orig {
 	}
     }
     my $dest = $self->get_diff_file_name;
-    if ($self->write($dest)) {
+    if ($self->write($dest, IgnoreDirectives => 1)) {
 	$self->{OrigFile} = $dest;
 	1;
     } else {
@@ -367,25 +367,32 @@ sub diff_orig {
     }
 
     my $dest = "$origdir/" . File::Basename::basename($first_file) . ".new";
-    return unless $self->write($dest);
+    return unless $self->write($dest, IgnoreDirectives => 1);
 
-    my $curr_line = 1;
-    my(@del, @add);
-    open(DIFF, "diff -u $self->{OrigFile} $dest |");
+    my $old_line = 1;
+    my $new_line = 1;
+    my(@del, @add, %index_mapping);
+    my $diff_cmd = "diff -u $self->{OrigFile} $dest |";
+    #warn $diff_cmd;
+    open(DIFF, $diff_cmd);
     scalar <DIFF>; scalar <DIFF>; # overread header
     while(<DIFF>) {
 	chomp;
-	if (/^\@\@\s*-(\d+)/) {
-	    $curr_line = $1;
+	if (/^\@\@\s*-(\d+).*\+(\d+)/) {
+	    $old_line = $1;
+	    $new_line = $2;
 	} elsif (/^\+(.*)/) {
 	    CORE::push(@add, "$1\n");
+	    $index_mapping{$#add} = $new_line-1;
+	    $new_line++;
 	} elsif (/^-/) {
-	    CORE::push(@del, $curr_line-1); # warum -1?
-	    $curr_line++;
+	    CORE::push(@del, $old_line-1); # warum -1?
+	    $old_line++;
 	} elsif (!/^[ \\]/) {
 	    warn "Unknown diff line: $_";
 	} else {
-	    $curr_line++;
+	    $old_line++;
+	    $new_line++;
 	}
     }
     close DIFF;
@@ -395,7 +402,7 @@ sub diff_orig {
     if ($args{-clonefile}) {
 	$new_s->{File} = $self->{File};
     }
-    ($new_s, \@del);
+    ($new_s, \@del, \%index_mapping);
 }
 
 # Create array reference from Data property:

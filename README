@@ -1,13 +1,13 @@
 =head1 README
 
-  BBBike - ein Programm zum Suchen von Routen für Radfahrer in Berlin
+BBBike - ein Programm zum Suchen von Routen für Radfahrer in Berlin
 
 =head1 INSTALLATION
 
 =head2 Download
 
 Die aktuellste BBBike-Archivdatei findet man im Verzeichnis
-L<http://sourceforge.net/project/showfiles.php?group_id=19142> . Die aktuelle Sourcedatei ist
+L<http://sourceforge.net/project/showfiles.php?group_id=19142&package_id=14052> . Die aktuelle Sourcedatei ist
 L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz> .
 
 =head2 FreeBSD
@@ -43,16 +43,20 @@ installiert ist: in das Verzeichnis C<BBBike-3.14>
 wechseln und als Superuser
 
 
-	perl -I`pwd` -MCPAN -e "install Bundle::BBBike_small"
+	perl -I`pwd` -MCPAN -e shell
+	force install Bundle::BBBike_small
+	quit
 
 eingeben, damit Perl/Tk über das
-Internet geladen, compiliert und installiert wird. Wenn dabei Probleme
+Internet geladen, compiliert und installiert wird. "force" wird
+benötigt, da einige Module erwartete Fehler in der Test-Suite erzeugen
+und damit die Installation verhindern. Wenn weitere Probleme
 auftreten (insbesondere mit der Internet-Verbindung), dann sollten
 die Anweisungen in
 
 	perldoc perlmodinstall
 
-befolgt werden, um das Modul Tk zu installieren.
+befolgt werden, um das Modul Tk manuell zu installieren.
 
 Danach kann mit
 

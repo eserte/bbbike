@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.13 2005/10/08 21:52:32 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.14 2005/10/24 22:45:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -374,6 +374,12 @@ sub BBBikeLazy::bbbikelazy_clear {
     $BBBikeLazy::mode = 0;
 }
 
+# XXX This only works for data which is *changed*, but not added or
+# deleted data. The problem is that the grid is not rebuilt, which is
+# required to get the information about any new/outdated data. But:
+# rebuilding the grids would be so costly, that bbbikelazy_reload would
+# be no faster than deleting and adding the whole layer. Still
+# searching for a good solution...
 sub BBBikeLazy::bbbikelazy_reload {
     my $redraw_needed = 0;
 
@@ -468,7 +474,7 @@ sub BBBikeLazy::plotstr_on_demand {
 		    foreach my $strpos (@{ $lazy_str{$abk}->{Grid}{$grid} }) {
 			if (!$lazy_str_drawn{$abk}->{$strpos}) {
 			    my $r = $lazy_str{$abk}->get($strpos);
-			    $i = $strpos+1; # XXX warum +1?
+			    $i = $strpos;
 			    $draw_sub->($r);
 			    $lazy_str_drawn{$abk}->{$strpos}++;
 			}
@@ -528,7 +534,7 @@ sub BBBikeLazy::plotstr_on_demand {
 		    foreach my $strpos (@{ $lazy_p{$abk}->{Grid}{$grid} }) {
 			if (!$lazy_p_drawn{$abk}->{$strpos}) {
 			    my $r = $lazy_p{$abk}->get($strpos);
-			    $i = $strpos+1; # XXX warum +1?
+			    $i = $strpos;
 			    $draw_sub->($r);
 			    $lazy_p_drawn{$abk}->{$strpos}++;
 			}

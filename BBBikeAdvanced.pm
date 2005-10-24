@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.129 2005/10/01 22:34:23 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.130 2005/10/24 21:16:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2430,6 +2430,8 @@ sub switch_standard_mode {
 	# Special handling for hoehe (here also needed?)
 	delete $p_obj{hoehe};
 	%hoehe = ();
+	# ... and for ampeln
+	delete $p_obj{lsa};
 
 	$map_mode = MM_SEARCH();
 	gui_set_edit_mode(0);
@@ -2473,6 +2475,8 @@ sub switch_edit_standard_mode {
 	# Special handling for hoehe, because it's preloaded
 	delete $p_obj{hoehe};
 	%hoehe = ();
+	# ... and for ampeln
+	delete $p_obj{lsa};
 
 	$map_mode = MM_BUTTONPOINT();
 	$use_current_coord_prefix = 0;

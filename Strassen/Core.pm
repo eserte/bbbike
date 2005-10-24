@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.61 2005/10/10 21:30:16 eserte Exp $
+# $Id: Core.pm,v 1.62 2005/10/24 21:18:57 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.61 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.62 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -329,21 +329,17 @@ sub new_from_data_ref {
 ### AutoLoad Sub
 sub new_from_data_string {
     my($class, $string, %args) = @_;
-    if ($args{PreserveLineInfo} || $args{UseLocalDirectives}) {
-	my $self = { Pos => 0 };
-	bless $self, $class;
-	my $fh;
-	if ($] >= 5.008) {
-	    eval 'open($fh, "<", \$string)';
-	} else {
-	    require IO::String; # XXX add as prereq_pm for <5.008
-	    $fh = IO::String->new($string);
-	}
-	$self->read_from_fh($fh, %args);
-	$self;
+    my $self = { Pos => 0 };
+    bless $self, $class;
+    my $fh;
+    if ($] >= 5.008) {
+	eval 'open($fh, "<", \$string)';
     } else {
-	$class->new_from_data_ref([map { "$_\n" } split /\n/, $string], %args);
+	require IO::String; # XXX add as prereq_pm for <5.008
+	$fh = IO::String->new($string);
     }
+    $self->read_from_fh($fh, %args);
+    $self;
 }
 
 # Erzeugt ein neues Strassen-Objekt mit Restriktionen
@@ -467,10 +463,10 @@ sub id {
 
 ### AutoLoad Sub
 sub as_string {
-    my $self = shift;
+    my($self, %args) = @_;
     my $s = "";
     my $maybe_need_directive_separator = 1;
-    if ($self->{GlobalDirectives} && keys %{$self->{GlobalDirectives}}) {
+    if (!$args{IgnoreDirectives} && $self->{GlobalDirectives} && keys %{$self->{GlobalDirectives}}) {
 	$s = "";
 	while(my($k,$v) = each %{ $self->{GlobalDirectives} }) {
 	    $s .= join("\n", map { "#: $k: $_" } @$v) . "\n";
@@ -478,7 +474,7 @@ sub as_string {
 	$s .= "#:\n"; # end global directives
 	$maybe_need_directive_separator = 0;
     }
-    if ($self->{Directives}) {
+    if (!$args{IgnoreDirectives} && $self->{Directives}) {
 	if ($maybe_need_directive_separator && $self->{Directives}[0]) {
 	    $s .= "#:\n";
 	}
@@ -521,7 +517,7 @@ sub as_string {
 
 ### AutoLoad Sub
 sub write {
-    my($self, $filename) = @_;
+    my($self, $filename, %args) = @_;
     if (!defined $filename) {
 	$filename = $self->file;
     }
@@ -531,7 +527,7 @@ sub write {
     }
     if (open(COPY, ">$filename")) {
 	binmode COPY;
-	print COPY $self->as_string;
+	print COPY $self->as_string(%args);
 	close COPY;
 	1;
     } else {
@@ -542,10 +538,10 @@ sub write {
 
 ### AutoLoad Sub
 sub append {
-    my($self, $filename) = @_;
+    my($self, $filename, %args) = @_;
     open(COPY, ">>$filename") or die "Can't append to $filename: $!";
     binmode COPY;
-    print COPY $self->as_string;
+    print COPY $self->as_string(%args);
     close COPY;
 }
 
@@ -699,7 +695,7 @@ sub parse {
     return [undef, [], undef] if !$_[0];
     my $tab_inx = index($_[0], "\t");
     if ($tab_inx < 0) {
-	warn "Probably tab character is missing\n" if $VERBOSE;
+	warn "Probably tab character is missing (line <$_[0]>)\n" if $VERBOSE;
 	[$_[0]];
     } else {
 	my @s = split /\s+/, substr($_[0], $tab_inx+1);

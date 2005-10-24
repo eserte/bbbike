@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.30 2005/10/15 10:55:32 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.30 2005/10/15 10:55:32 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -22,7 +22,7 @@ package main;
 use strict;
 
 use vars
-  qw($bbbike_context $splash_screen
+  qw($bbbike_context $splash_screen $booting
      $coords_ref $realcoords_ref $search_route_points_ref @realcoords
      $VERSION $PROG_REVISION $tmpdir %tmpfiles $progname
      $os $use_clipboard $verbose $advanced $devel_host $public_test

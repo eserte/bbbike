@@ -527,14 +527,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1130191200,
-         'text' => 'B 179; (Karl-Liebknecht-Str.); OD Zeesen, zw. Spreewaldstr. u. Weidendamm Straßenausbau Vollsperrung 19.09.2005-24.10.2005 ',
-         'from' => 1126994400,
-         'data' => 'userdel	2 26473,-14543 26612,-15094
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1134687600,
@@ -657,23 +650,9 @@ userdel	q4 -7873,66589 -7851,66418
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1130104800,
-         'text' => 'Ehrlichstr. (Lichtenberg) zwischen Wildensteiner Str. und Treskowallee Baustelle, gesperrt (bis 23.10.2005)',
-         'from' => 1128754834,
-         'data' => 'userdel	q4 18147,8583 18672,8247
-',
-         'type' => 'handicap'
-       },
        undef,
-       {
-         'until' => 1130104800,
-         'text' => 'Josef-Orlopp-Str. (Lichtenberg) in Richtung Storkower Str. zwischen Siegfriedstr. und Vulkanstr. Fahrbahnerneuerung, Fahrtrichtung gesperrt (bis 23.10.2005)',
-         'from' => 1128985496,
-         'data' => 'userdel	1 16863,13138 15896,13158
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1131667773,
          'text' => 'Prenzlauer Berg: Richtung Prenzlauer Allee gesperrt (Kopfsteinpflaster wird durch Asphalt ersetzt)',
@@ -733,15 +712,7 @@ userdel	q4 -7873,66589 -7851,66418
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_002297',
-         'until' => 1130191200,
-         'text' => 'Zeltinger Str. Richtung Oranienburger Chaussee zwischen Zernsdorfer Weg und Zeltinger Platz Straßenarbeiten, Fahrtrichtung gesperrt (bis 24.10.2005)',
-         'from' => 1129705762,
-         'data' => 'userdel	1 2461,25270 2657,25486 2721,25576
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_002305',
          'until' => 1130623200,

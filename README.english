@@ -1,13 +1,13 @@
 =head1 README
 
-  BBBike - a route-finder for cyclists in Berlin and Brandenburg
+BBBike - a route-finder for cyclists in Berlin and Brandenburg
 
 =head1 INSTALLATION
 
 =head2 Download
 
 You can find the newest distribution file of BBBike in the directory
-L<http://sourceforge.net/project/showfiles.php?group_id=19142> . The current source version is
+L<http://sourceforge.net/project/showfiles.php?group_id=19142&package_id=14052> . The current source version is
 L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz> .
 
 =head2 FreeBSD
@@ -43,15 +43,20 @@ change to the directory
 C<BBBike-3.14> and type as super user:
 
 
-	perl -I`pwd` -MCPAN -e "install Bundle::BBBike_small"
+	perl -I`pwd` -MCPAN -e shell
+	force install Bundle::BBBike_small
+	quit
 
 Perl/Tk will be fetched over the internet, get compiled
-and installed. If you have problems, especially with the internet
+and installed. "force" is needed because some modules (especially Tk)
+have expected test failures and therefore would not be installed. If
+you have problems, especially with the internet 
 connection, then you should follow the instructions in
 
 	perldoc perlmodinstall
 
-on how to install a perl module (in this case: the Tk module).
+on how to install a perl module manually (in this case: the Tk
+module).
 
 After that, you can start the program with
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.194 2005/10/17 22:44:28 eserte Exp $
+# $Id: bbbike,v 3.197 2005/10/24 22:22:37 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -53,6 +53,7 @@ BEGIN {
     if ($nosplash) { $use_logo = 0 }
 
     eval 'use sigtrap qw(stack-trace USR1)'; warn $@ if $@;
+    $booting = 1;
 }
 
 use Config;
@@ -190,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.194 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.197 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4610,6 +4611,7 @@ if (defined $set_mode && $set_mode eq 'edit' && $lazy_plot) {
     $lazy_plot = 0;
 }
 
+$booting = 0;
 MainLoop unless $ENV{BBBIKE_TEST_PERFORMANCE};
 
 ##### Subs ### RELOADER_START ############################################
@@ -5407,7 +5409,7 @@ sub generate_plot_functions {
 			     -width => 5, # XXX skalieren
 			     -capstyle => 'round',
 			     -tags => [$abk, $strname, $kreuzungen[0],
-				       $abk."-".($i-1)
+				       $abk."-".$i
 				      ],
 			    );
 		    } else {
@@ -5416,7 +5418,7 @@ sub generate_plot_functions {
 			     -fill    => $color,
 			     ($stipple ? (-stipple => $stipple) : ()),
 			     -tags    => [$abk, $strname,
-					  "$abk-$category",$abk."-".($i-1)],
+					  "$abk-$category",$abk."-".$i],
 			    );
 		    }
 
@@ -5508,7 +5510,7 @@ sub generate_plot_functions {
 			$c->createImage(@coordlist[0..1], -image => $p,
 					-anchor => $anchor,
 					-tags => [$abk, $strname,
-						  "$abk-fg", "$abk-" . ($i-1)],
+						  "$abk-fg", "$abk-" . $i],
 				       );
 		    } else {
 			warn "Can't find photo $img (2)";
@@ -5524,7 +5526,7 @@ sub generate_plot_functions {
 		       -width => $this_width_hin,
 		       -joinstyle => 'bevel',
 		       -tags => [$abk, $strname,
-				 "$abk-$cat_hin", "$abk-" . ($i-1)],
+				 "$abk-$cat_hin", "$abk-" . $i],
 		      );
 
 		} else {
@@ -5550,11 +5552,11 @@ sub generate_plot_functions {
 				       -width => 5, # XXX skalieren
 				       -capstyle => 'round',
 				       -tags => [$abk, $strname,
-						 "$abk-$cat_hin", "$abk-" . ($i-1),
+						 "$abk-$cat_hin", "$abk-" . $i,
 						 @extra_tags],
 				      );
 		    } else {
-			my @std_tags = ($abk, $strname,"$abk-$cat_hin","$abk-" . ($i-1));
+			my @std_tags = ($abk, $strname,"$abk-$cat_hin","$abk-" . $i);
 			my $line_dash = $line_dash{$abk};
 		        if (@addinfo_hin) { # ignore @addinfo_rueck for now
 			    for my $addinfo_hin (@addinfo_hin) {
@@ -5690,7 +5692,7 @@ sub generate_plot_functions {
 					    -image => $street_photo,
 					    # $abk-img or $abk-fg ?
 					    -tags => [$abk,$strname,"$abk-img",
-						      "$abk-" . ($i-1)]);
+						      "$abk-" . $i]);
 			    if ($street_photo eq $steigung_photo) {
 				if ($strname =~ /([\d\.]+)\s*%/) {
 				    outline_text
@@ -5700,7 +5702,7 @@ sub generate_plot_functions {
 					 -text => "$1%",
 					 -font => $font{'small'},
 					 -tags => [$abk,$strname,"$abk-fg",
-						   "$abk-" . ($i-1)],
+						   "$abk-" . $i],
 					 -outlinewidth => 2,
 					);
 				}
@@ -5811,7 +5813,7 @@ EOF
 			     ),
 		   -tags => ["$abk-fg", "$xx,$yy", $pointname,
 			     "$abk-" . $category . "-fg",
-			     $abk."-".($i-1)],
+			     $abk."-".$i],
 		  );
 		$ampeln{"$xx,$yy"} = $category;
 	    } elsif ($abk eq 'pl') {
@@ -5844,16 +5846,16 @@ EOF
 		$c->createLine($x, $y, $x, $y,
 			       (defined $color ? (-fill => $color) : ()),
 			       -width => $width,
-			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "p-" . ($i-1), "L-fg"]);
+			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "p-" . $i, "L-fg"]);
 	    } elsif ($abk =~ /^(kn|ki|rest)$/) {
 		$c->createImage($x, $y,
-				-tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . ($i-1)]);
+				-tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $i]);
 	    } elsif ($abk =~ /^label/) {
 		# $category should contain font, anchor etc.
 		$c->createText($x, $y, -text => $pointname,
 			       -font => $font{'large'}, # XXX
 			       -anchor => "w", # XXX
-			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . ($i-1)]);
+			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $i]);
 	    } else {
 		# Else draw a generic point (broad, color from cat)
 		my $color = $category_color{$category} || ($category =~ /^\#/ ? $category : 'red');
@@ -5861,7 +5863,7 @@ EOF
 		$c->createLine($x, $y, $x, $y,
 			       -fill => $color, -capstyle => 'round',
 			       -width => $width,
-			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . ($i-1)]);
+			       -tags => ["$abk-fg", "$xx,$yy", $pointname, "$abk-" . $i]);
 	    }
 	    if ($name_draw) {
 		my %args = ((exists $category_font_color{$category} ? (-fill => $category_font_color{$category}) : ()),
@@ -8126,7 +8128,7 @@ sub plot {
 	plotstr($abk, %args);
     } elsif ($type eq 'p') {
 	if ($abk =~ /sperre/) {
-	    my $object_or_file = $args{-object} || $args{-filename};
+	    my $object_or_file = $args{-object} || $args{-filename} || $p_obj{$abk};
 	    $args{-abk} = $abk;
 	    plot_sperre($object_or_file, %args);
 	} else {
@@ -8321,8 +8323,10 @@ sub plotstr {
 
     my $complete_str = $str;
     my $diffed_str = 0;
+    my $indexmap;
     if ($args{FastUpdate}) {
-	my($new_str, $todelref) = $str->diff_orig(-clonefile => 1);
+	my($new_str, $todelref);
+	($new_str, $todelref, $indexmap) = $str->diff_orig(-clonefile => 1);
 	if (!defined $new_str) {
 	    warn M("Diff-Ausgabe wird nicht verwendet"), "\n" if $verbose;
 	    $c->delete($abk);		# evtl. alte Koordinaten löschen
@@ -8333,8 +8337,10 @@ sub plotstr {
 		warn Mfmt("Anzahl der neu zu zeichnenden Straßen: %d", scalar @{$new_str->data}), "\n";
 		warn Mfmt("Anzahl der zu löschenden Straßen: %d", scalar @$todelref), "\n";
 	    }
-	    foreach (@$todelref) {
-		$c->delete("$abk-$_");
+	    for my $id (@$todelref) {
+		for my $strdeladd ("", "-label") {
+		    $c->delete("$abk$strdeladd-$id");
+		}
 	    }
 	    $str = $new_str;
 	    $diffed_str = 1;
@@ -8495,7 +8501,8 @@ sub plotstr {
 	my $yadd_anchor = $yadd_anchor_type->{$abk};
 	my $label_spaceadd = $label_spaceadd{$abk};
 
-	my $i = ($diffed_str ? "" : 0);
+	my $real_i = 0;
+	my $i;
 	my $anzahl_eindeutig = $str->count;
 	$str->init;
 	$escape = 0;
@@ -8515,9 +8522,8 @@ sub plotstr {
 	    my $ret = $str->next;
 	    last if !@{$ret->[Strassen::COORDS]};
 	    if (!$diffed_str) {
-		$i++;
-		if ($i % 80 == 0) {
-		    $progress->Update($i/$anzahl_eindeutig);
+		if ($real_i % 80 == 0) {
+		    $progress->Update($real_i/$anzahl_eindeutig);
 		    # XXX Probleme mit diesem $top->update, falls
 		    # ein anderer plot-Vorgang damit gestartet wird
 		    #if ($progress) {
@@ -8532,7 +8538,9 @@ sub plotstr {
 	    }
 #last if $i > 100; # for Debugging XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+	    $i = $indexmap && exists $indexmap->{$real_i} ? $indexmap->{$real_i} : $real_i; 
 	    $draw_sub->($ret); # XXX evtl. den Code mit eval erzeugen
+	    $real_i++;
 	}
 # XXXXXX can this ever happen? XXXXXXXXXXXXXXXXXXXXXXXXXXX
 # XXX Yes: If a bbd file contains a half-valid line (with name and cat, but without coords)
@@ -8639,7 +8647,9 @@ sub plot_sperre {
     my %args = @_;
     my $abk = $args{-abk} || 'sperre';
     Hooks::get_hooks("before_plot")->execute;
-    $c->delete($abk);
+    if (!$args{FastUpdate}) {
+	$c->delete($abk);
+    }
     if (!$p_draw{$abk}) {
 	Hooks::get_hooks("after_plot")->execute; # XXX should not be here
 	return;
@@ -8692,16 +8702,22 @@ sub plot_sperre {
 	my $diffed_str = 0;
 	my $str = $gesperrt;
 	my $complete_str = $str;
+	my $indexmap;
 	#XXX Abfrage auf $edit_mode notwendig?
 	if (#XXX del: ($edit_mode || $edit_normal_mode) &&
 	    $args{FastUpdate}) {
-	    my($new_str, $todelref) = $str->diff_orig(-clonefile => 1);
+	    my($new_str, $todelref);
+	    ($new_str, $todelref, $indexmap) = $str->diff_orig(-clonefile => 1);
 	    if (!defined $new_str) {
 		warn M("Diff-Ausgabe wird nicht verwendet") if $verbose;
 		$c->delete($abk);		# evtl. alte Koordinaten löschen
 		$c->delete("pp-$abk");
 	    } else {
-		warn M("Diff-Ausgabe wird verwendet") if $verbose;
+		if ($verbose) {
+		    warn M("Diff-Ausgabe wird verwendet"), "\n";
+		    warn Mfmt("Anzahl der neu zu zeichnenden Objekte: %d", scalar @{$new_str->data}), "\n";
+		    warn Mfmt("Anzahl der zu löschenden Objekte: %d", scalar @$todelref), "\n";
+		}
 		foreach (@$todelref) {
 		    $c->delete("$abk-$_");
 		}
@@ -8712,9 +8728,10 @@ sub plot_sperre {
 	}
 
 	$gesperrt->init;
-	my $pos = -1;
+	my $real_pos = -1;
 	while (1) {
-	    $pos++;
+	    $real_pos++;
+	    my $pos = $indexmap && exists $indexmap->{$real_pos} ? $indexmap->{$real_pos} : $real_pos;
 	    my $ret = $gesperrt->next;
 	    my @kreuzungen = @{$ret->[Strassen::COORDS]};
 	    last if !@kreuzungen;
@@ -9355,8 +9372,10 @@ sub plot_point {
 		die "no-original-datadir" if $no_original_datadir;
 		die $@;
 	    }
-	    if ($coord_system eq 'standard' &&
-		(cache_decider() || $abk =~ /^L\d+/ || $abk eq 'kn') # 'L...' und 'kn' wegen Info
+	    if (($coord_system eq 'standard' &&
+		 (cache_decider() || $abk =~ /^L\d+/ || $abk eq 'kn') # 'L...' und 'kn' wegen Info
+		) ||
+		$edit_normal_mode # Always cache in edit mode to make "reload all" work
 	       ) {
 		$p_obj{$abk} = $bhf;
 	    }
@@ -9371,15 +9390,23 @@ sub plot_point {
 
 	my $complete_str = $bhf;
 	my $diffed_str = 0;
+	my $indexmap;
 	if ($args{FastUpdate}) {
-	    my($new_str, $todelref) = $bhf->diff_orig(-clonefile => 1);
+	    my($new_str, $todelref);
+	    ($new_str, $todelref, $indexmap) = $bhf->diff_orig(-clonefile => 1);
 	    if (!defined $new_str) {
 		warn M("Diff-Ausgabe wird nicht verwendet") if $verbose;
 		$c->delete($_) for (@del_tags);
 	    } else {
-		warn M("Diff-Ausgabe wird verwendet") if $verbose;
-		foreach (@$todelref) {
-		    $c->delete("$abk-$_");
+		if ($verbose) {
+		    warn M("Diff-Ausgabe wird verwendet"), "\n";
+		    warn Mfmt("Anzahl der neu zu zeichnenden Punkte: %d", scalar @{$new_str->data}), "\n";
+		    warn Mfmt("Anzahl der zu löschenden Punkte: %d", scalar @$todelref), "\n";
+		}
+		foreach my $id (@$todelref) {
+		    for my $ptagadd ("") { # XXX what's necessary of the following?, "-fg", "-bg", "-img", "-label") {
+			$c->delete("$abk$ptagadd-$id");
+		    }
 		}
 		$bhf = $new_str;
 		$diffed_str = 1;
@@ -9391,18 +9418,18 @@ sub plot_point {
 	    !$edit_mode &&
 #XXX?       !$edit_normal_mode &&
 	    $abk eq 'lsa' &&
+	    !$diffed_str &&
 	    defined &BBBike::fast_plot_point) {
 	    eval {
-		die if $filename =~ /\.st$/;
-		if (grep { /\.gz$/ } $filename) {
+		die if $bhf->isa("Strassen::Storable");
+		my(@files) = $bhf->file;
+		if (grep { /\.gz$/ } @files) {
 		    die "fast_plot_point can't handle gzipped files yet";
 		}
-		my $abs_path = file_name_is_absolute($filename)
-		    ? $filename
-			: "$datadir/$filename";
-		BBBike::fast_plot_point($c, 'lsa',
-					$abs_path,
-					$progress);
+		my(@args) = ($c, $abk,
+			     (@files > 1 ? \@files : @files),
+			     $progress);
+		BBBike::fast_plot_point(@args);
 	    };
 	    my $err = $@;
 	    if (!$err) {
@@ -9413,7 +9440,8 @@ sub plot_point {
 	    }
 	}
 
-	my $i = 0;
+	my $real_i = 0;
+	my $i;
 	my $anzahl_eindeutig = $bhf->count;
 	$bhf->init;
 	# XXX Duplikat in BBBikeLazy:
@@ -9445,14 +9473,15 @@ sub plot_point {
 	while(1) {
 	    my $ret = $bhf->next;
 	    last if !@{$ret->[Strassen::COORDS]};
-	    $progress->Update($i/$anzahl_eindeutig) if $i % 80 == 0;
-	    $i++;
+	    $progress->Update($real_i/$anzahl_eindeutig) if $real_i % 80 == 0;
+	    $i = $indexmap && exists $indexmap->{$real_i} ? $indexmap->{$real_i} : $real_i; 
 	    $draw_sub->($ret);
+	    $real_i++;
 	}
 	plot_symbol($c, $abk);
       PLOTPOINT_CONT:
 
-	if (($edit_mode || $edit_normal_mode || $abk eq 'relgps' || $args{FastUpdate}) and !$diffed_str) {
+	if (($edit_mode || $edit_normal_mode || $abk eq 'relgps' || $args{FastUpdate})) { # XXX? and !$diffed_str) {
 	    warn "Try to copy original data" if $verbose;
 	    my $r = $complete_str->copy_orig;
 	    warn "Returned $r" if $verbose;
@@ -11306,7 +11335,10 @@ sub show_info {
 
     my($area, $total_len);
     if (defined $index && $index =~ /^\d+/) {
-	my $s = get_any_strassen_obj("str", $base_tag); # XXX what about p?
+	my $s = eval { get_any_strassen_obj("str", $base_tag) };
+	if (!$s) {
+	    $s = get_any_strassen_obj("p", $base_tag);
+	}
 	if ($s) {
 	    require Strassen::Stat;
 	    my $r = $s->get($index);

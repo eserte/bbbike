@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.5 2005/10/19 23:10:22 eserte Exp eserte $
+# $Id: LuiseBerlin.pm,v 1.6 2005/10/24 22:43:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 use FindBin;
 use lib ("$FindBin::RealBin/..",
@@ -45,7 +45,8 @@ sub register {
 	{ name => "Luise-Berlin, Bexirkslexikon",
 	  callback => sub { launch_bezlex_url(@_) },
 	};
-    main::status_message("Das Luise-Berlin-Plugin wurde registriert. Der Link erscheint im Info-Fenster.", "info");
+    main::status_message("Das Luise-Berlin-Plugin wurde registriert. Der Link erscheint im Info-Fenster.", "info")
+	    if !$main::booting;
 }
 
 sub find_street {

@@ -23,12 +23,12 @@
 ## perlreplace #HTTPCVS#    $BBBike::BBBIKE_CVS_HTTP
 ## perlreplace #CVSREPO#    $BBBike::BBBIKE_CVS_ANON_REPOSITORY
 ## dnl
-## dnl $Id: README.spp,v 2.36 2005/06/21 21:28:53 eserte Exp $
+## dnl $Id: README.spp,v 2.37 2005/10/24 20:04:09 eserte Exp $
 ## dnl strpp source of README
 ## dnl
 =head1 README
 
-  BBBike - 
+BBBike - 
 ## only DE
 ein Programm zum Suchen von Routen für Radfahrer in Berlin
 ## but DE
@@ -135,28 +135,35 @@ C<BBBike-#BBBIKEVER#> and type as super user:
 
 
 
-	perl -I`pwd` -MCPAN -e "install Bundle::BBBike_small"
+	perl -I`pwd` -MCPAN -e shell
+	force install Bundle::BBBike_small
+	quit
 
 
 ## only DE
 eingeben, damit Perl/Tk über das
-Internet geladen, compiliert und installiert wird. Wenn dabei Probleme
+Internet geladen, compiliert und installiert wird. "force" wird
+benötigt, da einige Module erwartete Fehler in der Test-Suite erzeugen
+und damit die Installation verhindern. Wenn weitere Probleme
 auftreten (insbesondere mit der Internet-Verbindung), dann sollten
 die Anweisungen in
 
 	perldoc perlmodinstall
 
-befolgt werden, um das Modul Tk zu installieren.
+befolgt werden, um das Modul Tk manuell zu installieren.
 
 Danach kann mit
 ## but DE
 Perl/Tk will be fetched over the internet, get compiled
-and installed. If you have problems, especially with the internet
+and installed. "force" is needed because some modules (especially Tk)
+have expected test failures and therefore would not be installed. If
+you have problems, especially with the internet 
 connection, then you should follow the instructions in
 
 	perldoc perlmodinstall
 
-on how to install a perl module (in this case: the Tk module).
+on how to install a perl module manually (in this case: the Tk
+module).
 
 After that, you can start the program with
 ## yes

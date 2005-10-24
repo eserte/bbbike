@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.6 2005/10/10 21:43:21 eserte Exp $
+# $Id: strassen.t,v 1.7 2005/10/24 22:45:12 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -39,7 +39,7 @@ GetOptions(get_std_opts("xxx"),
 
 my $doit_tests = 6;
 
-plan tests => 29 + $doit_tests;
+plan tests => 30 + $doit_tests;
 
 goto XXX if $do_xxx;
 
@@ -77,6 +77,17 @@ goto XXX if $do_xxx;
 {
     my $ms = MultiStrassen->new(qw(strassen landstrassen landstrassen2));
     is($ms->id, "strassen_landstrassen_landstrassen2", "Checking id");
+}
+
+{
+    my $data = <<EOF;
+A	A 0,0
+#: global directive
+# should be ignored	B 1,1
+C	C 2,2
+EOF
+    my $s = Strassen->new_from_data_string($data);
+    is(scalar @{$s->data}, 2, "Constructing from string data (containing comments and directives)");
 }
 
 {

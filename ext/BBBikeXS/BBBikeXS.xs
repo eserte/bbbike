@@ -734,7 +734,7 @@ fast_plot_str(canvas, abk, fileref, ...)
 	    }
 
 	    p = strchr(buf, '\t');
-	    if (p) {
+	    if (p && buf[0] != '#') {
 	      *p = 0;
 #ifdef MYDEBUG
 	      fprintf(stderr, "%d: %s\n", count, buf);
@@ -1009,7 +1009,7 @@ fast_plot_point(canvas, abk, fileref, progress)
 #endif
 	    pointname = buf;
 	    p = strchr(buf, '\t');
-	    if (p) {
+	    if (p && buf[0] != '#') {
 	      *p = 0;
 	      cat = p+1;
 	      if (*cat != 'B' && *cat != 'X' && *cat != 'Z' /* br */ && *cat != 'F'
