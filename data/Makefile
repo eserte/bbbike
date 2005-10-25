@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.71 2005/10/16 11:34:40 eserte Exp $
+# $Id: Makefile,v 2.71 2005/10/16 11:34:40 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -58,11 +58,12 @@ SOURCE_TARGETS+=	gesperrt_$(i)
 .endfor
 SOURCE_TARGETS+=	${COMMENTS_PARTIAL} fragezeichen exits multi_bez_str
 
-# These do not have a -orig file of their own
+# These do not have a -orig file of their own, or another type of source file
 COMPUTED_TARGETS=	sbahnhof_bg ubahnhof_bg berlin
 COMPUTED_TARGETS+=	radwege_exact mount
 COMPUTED_TARGETS+=	temp_blockings/bbbike-temp-blockings-optimized.pl
 COMPUTED_TARGETS+=	wasserstrassen-lowres
+COMPUTED_TARGETS+=	kneipen
 
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COMPUTED_TARGETS} ${COOKED_TARGETS}
@@ -253,7 +254,7 @@ sbahn: sbahn-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) sbahn-orig > /tmp/sbahn
 .for cat in $(SBAHN_CATEGORIES)
-	$(GREPSTRASSEN) -cat $(cat) /tmp/sbahn | ../miscsrc/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/sbahn-$(cat)
+	$(GREPSTRASSEN) -cat $(cat) /tmp/sbahn | $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/sbahn-$(cat)
 .endfor
 	cat $(SBAHN_CATEGORIES:S/^/\/tmp\/sbahn-/) > sbahn
 	-@$(READONLY) $@
@@ -274,7 +275,7 @@ rbahn: rbahn-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) rbahn-orig > /tmp/rbahn
 .for cat in $(RBAHN_CATEGORIES)
-	$(GREPSTRASSEN) -cat $(cat) /tmp/rbahn | ../miscsrc/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/rbahn-$(cat)
+	$(GREPSTRASSEN) -cat $(cat) /tmp/rbahn | $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/rbahn-$(cat)
 .endfor
 	cat $(RBAHN_CATEGORIES:S/^/\/tmp\/rbahn-/) > rbahn
 	-@$(READONLY) $@
@@ -493,6 +494,11 @@ mount:	strassen hoehe
 exits:	exits-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT2HAFAS) $> > $@
+	-@$(READONLY) $@
+
+kneipen:	kneipen.yml
+	-@$(WRITEABLE) $@
+	$(MISCSRCDIR)/yaml2bbd $> > $@
 	-@$(READONLY) $@
 
 # The fragezeichen-PHONY and .create_fragezeichen stuff is necessary
@@ -1031,12 +1037,12 @@ do-check-nearest:	.check-do-check-nearest
 	     iterate { ($$dist) = $$_->[Strassen::NAME] =~ /^\S+\s+(\d+)/; die "Distance $$dist m found" if $$dist < 14 } $$s' ${PERSISTENTTMPDIR}/check_nearest.bbd
 
 .if 0
-GNUmakefile: Makefile ../miscsrc/b2gmake
-	../miscsrc/b2gmake < Makefile > GNUmakefile
+GNUmakefile: Makefile $(MISCRSRCDIR)/b2gmake
+	$(MISCRSRCDIR)/b2gmake < Makefile > GNUmakefile
 	chmod ugo+r GNUmakefile
 
-GNUmakefile.mapfiles: Makefile.mapfiles ../miscsrc/b2gmake
-	../miscsrc/b2gmake < Makefile.mapfiles > GNUmakefile.mapfiles
+GNUmakefile.mapfiles: Makefile.mapfiles $(MISCRSRCDIR)/b2gmake
+	$(MISCRSRCDIR)/b2gmake < Makefile.mapfiles > GNUmakefile.mapfiles
 	chmod ugo+r GNUmakefile.mapfiles
 .else
 GNUmakefile: Makefile
