@@ -404,14 +404,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
        undef,
        undef,
        undef,
-       {
-         'until' => 1130277600,
-         'text' => 'L 23; OD Spreenhagen, Brücke über Oder-Spree-Kanal Sanierung Brücke Vollsperrung 24.10.2005-25.10.2005 ',
-         'from' => 1130018400,
-         'data' => 'userdel	2 42349,-5620 42647,-6368
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -723,6 +716,48 @@ userdel	q4 8400,12417 8540,12420
 userdel	q4 8400,12417 8374,12416
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => 1130972400,
+         'text' => 'B 112; (Karl-Marx-Str.); OD Eisenhüttenstadt Deckenerneuerung Vollsperrung 27.10.2005-02.11.2005 ',
+         'from' => 1130277600,
+         'data' => 'userdel	q4 94863,-27943 94983,-28457
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1130972400,
+         'text' => 'B 112; zw. Lawitz und Eisenhüttenstadt Deckenerneuerung Vollsperrung 27.10.2005-02.11.2005 ',
+         'from' => 1130277600,
+         'data' => 'userdel	2 95829,-31753 95494,-29935
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1130972400,
+         'text' => 'B 246; (Bauptstr.); Bahnübergang in OL Bestensee Gleisbauarbeiten Vollsperrung 30.10.2005-02.11.2005 ',
+         'from' => 1130536800,
+         'data' => 'userdel	2 26639,-17861 26752,-17872
+userdel	2 26832,-17882 26752,-17872
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1134774000,
+         'text' => 'L 15; (B109 südl. Prenzlau-Boitzenburg); OD Gollmitz Leitungsverlegung Vollsperrung 27.10.2005-16.12.2005 ',
+         'from' => 1130277600,
+         'data' => 'userdel	q4 30743,99403 30504,99595
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1130972400,
+         'text' => 'L 402; (Forstweg); Bahnübergang in OL Zeuthen Gleisbauarbeiten Vollsperrung 29.10.2005-02.11.2005 ',
+         'from' => 1130450400,
+         'data' => 'userdel	2 26001,-6257 26146,-6218
+',
+         'type' => 'gesperrt'
        }
      
 );

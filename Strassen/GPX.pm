@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GPX.pm,v 1.1 2005/07/17 20:39:22 eserte Exp eserte $
+# $Id: GPX.pm,v 1.3 2005/10/26 00:52:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,9 +16,9 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
-require Strassen::Core;
+use Strassen::Core;
 
 use XML::LibXML;
 
@@ -94,8 +94,9 @@ sub xy2longlat {
 }
 
 sub bbd2gpx {
-    my($self) = @_;
+    my($self, %args) = @_;
     require XML::LibXML;
+    require Encode;
     $self->init;
     my @wpt;
     my @trkseg;
@@ -103,49 +104,62 @@ sub bbd2gpx {
 	my $r = $self->next;
 	last if !@{ $r->[Strassen::COORDS] };
 	if (@{ $r->[Strassen::COORDS] } == 1) {
-	    push @wpt, { name => $r->[Strassen::NAME],
+	    push @wpt, { name => Encode::decode("iso-8859-1", $r->[Strassen::NAME]),
 			 coords => [ xy2longlat($r->[Strassen::COORDS][0]) ],
 		       };
 	} else {
 	    push @trkseg,
 		{
-		 name => $r->[Strassen::NAME],
+		 name => Encode::decode("iso-8859-1", $r->[Strassen::NAME]),
 		 coords => [ map { [ xy2longlat($_) ] } @{ $r->[Strassen::COORDS] } ],
 		};
 	}
     }
-    my $dom = XML::LibXML::Document->new('1.0', 'UTF8');
+
+    my $dom = XML::LibXML::Document->new('1.0', 'utf-8');
     my $gpx = $dom->createElement("gpx");
     $dom->setDocumentElement($gpx);
     $gpx->setAttribute("version", "1.1");
-    $gpx->setAttribute("create", "http://www.bbbike.de");
-    for my $wpt (@wpt) {
-	my $wptxml = $gpx->addNewChild(undef, "wpt");
-	$wptxml->setAttribute("lat", $wpt->{coords}[1]);
-	$wptxml->setAttribute("lon", $wpt->{coords}[0]);
-	my $namexml = $wptxml->addNewChild(undef, "name");
-	$namexml->appendText($wpt->{name});
-    }
-    if (@trkseg) {
-	my $trkxml = $gpx->addNewChild(undef, "trk");
-	my $name_from = $trkseg[0]->{name};
-	my $name_to   = $trkseg[-1]->{name};
-	my $name = $name_from;
-	if ($name_from ne $name_to) {
-	    $name .= " - $name_to";
+    $gpx->setAttribute("creator", "Strassen::GPX $VERSION - http://www.bbbike.de");
+    $gpx->setNamespace("http://www.w3.org/2001/XMLSchema-instance","xsi");
+    $gpx->setNamespace("http://www.topografix.com/GPX/1/1");
+    $gpx->setAttribute("xsi:schemaLocation", "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd");
+
+    if ($args{-as} && $args{-as} eq 'route') {
+	my $rtexml = $gpx->addNewChild(undef, "rte");
+	for my $wpt (@wpt) {
+	    my $rteptxml = $rtexml->addNewChild(undef, "rtept");
+	    $rteptxml->setAttribute("lat", $wpt->{coords}[1]);
+	    $rteptxml->setAttribute("lon", $wpt->{coords}[0]);
+	    $rteptxml->appendTextChild("name", $wpt->{name});
 	}
-	my $namexml = $trkxml->addNewChild(undef, "name");
-	$namexml->appendText($name);
-	for my $trkseg (@trkseg) {
-	    my $trksegxml = $trkxml->addNewChild(undef, "trkseg");
-	    for my $wpt (@{ $trkseg->{coords} }) {
-                my $trkptxml = $trksegxml->addNewChild(undef, "trkpt");
-                $trkptxml->setAttribute("lat", $wpt->[1]);
-                $trkptxml->setAttribute("lon", $wpt->[0]);
-            }
+    } else {
+	for my $wpt (@wpt) {
+	    my $wptxml = $gpx->addNewChild(undef, "wpt");
+	    $wptxml->setAttribute("lat", $wpt->{coords}[1]);
+	    $wptxml->setAttribute("lon", $wpt->{coords}[0]);
+	    $wptxml->appendTextChild("name", $wpt->{name});
+	}
+	if (@trkseg) {
+	    my $trkxml = $gpx->addNewChild(undef, "trk");
+	    my $name_from = $trkseg[0]->{name};
+	    my $name_to   = $trkseg[-1]->{name};
+	    my $name = $name_from;
+	    if ($name_from ne $name_to) {
+		$name .= " - $name_to";
+	    }
+	    $trkxml->appendTextChild("name", $name);
+	    for my $trkseg (@trkseg) {
+		my $trksegxml = $trkxml->addNewChild(undef, "trkseg");
+		for my $wpt (@{ $trkseg->{coords} }) {
+		    my $trkptxml = $trksegxml->addNewChild(undef, "trkpt");
+		    $trkptxml->setAttribute("lat", $wpt->[1]);
+		    $trkptxml->setAttribute("lon", $wpt->[0]);
+		}
+	    }
 	}
     }
-    $dom->toString;
+    Encode::encode("utf-8", $dom->toString);
 }
 
 1;

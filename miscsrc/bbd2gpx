@@ -6,9 +6,19 @@ use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
+use Getopt::Long;
 use Strassen::Core;
 use Strassen::GPX;
 
-my $file = shift || die;
+sub usage {
+    die <<EOF;
+usage: $0 [-as route] bbdfile
+EOF
+}
+
+my $as = "track";
+GetOptions("as=s" => \$as) or usage();
+
+my $file = shift || usage();
 my $s = Strassen->new($file);
-print $s->Strassen::GPX::bbd2gpx();
+print $s->Strassen::GPX::bbd2gpx(-as => $as);

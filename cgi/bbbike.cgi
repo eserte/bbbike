@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.33 2005/10/10 22:28:18 eserte Exp eserte $
+# $Id: bbbike.cgi,v 7.34 2005/10/26 00:51:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -92,7 +92,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $graphic_format $use_mysql_db $use_exact_streetchooser
 	    $use_module
 	    $cannot_gif_png $cannot_jpeg $cannot_pdf $cannot_svg $can_gif
-	    $can_wbmp $can_palmdoc $can_berliner_stadtplan_post
+	    $can_wbmp $can_palmdoc $can_gpx $can_berliner_stadtplan_post
 	    $can_google_maps
 	    $can_mapserver $mapserver_address_url
 	    $mapserver_init_url $no_berlinmap $max_plz_streets $with_comments
@@ -362,11 +362,20 @@ $can_wbmp = 0;
 =item $can_palmdoc
 
 Set this to a true value if you can produce palmdoc documents with the
-Palm::PalmDoc module (possible viewer: CSpotRun). Default: false.
+L<Palm::PalmDoc> module (possible viewer: CSpotRun). Default: false.
 
 =cut
 
 $can_palmdoc = 0;
+
+=item $can_gpx
+
+Set this to a true value if you can produce GPX documents (needs
+L<XML::LibXML>. Default: false.
+
+=cut
+
+$can_gpx = 0;
 
 =item $can_mapserver
 
@@ -675,7 +684,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.33 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.34 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2899,6 +2908,19 @@ sub search_coord {
 	return;
     }
 
+    if (defined $output_as && $output_as eq 'gpx-track') {
+	require Strassen::GPX;
+	http_header
+	    (-type => "application/xml",
+	     -Content_Disposition => "attachment; filename=track.gpx",
+	    );
+	my $s = Strassen->new_from_data("$startname - $zielname\tX " .
+					join(" ", map { "$_->[0],$_->[1]" }
+					     @{ $r->path }) . "\n");
+	print $s->Strassen::GPX::bbd2gpx(-as => "track");
+	return;
+    }
+
     if (defined $output_as && $output_as eq 'mapserver') {
 	if ($r->path) {
 	    $q->param('coords', join("!", map { "$_->[0],$_->[1]" }
@@ -3262,7 +3284,7 @@ sub search_coord {
     }
 
  OUTPUT_DISPATCHER:
-    if (defined $output_as && $output_as =~ /^(xml|yaml|yaml-short|perldump)$/ && $r && $r->path) {
+    if (defined $output_as && $output_as =~ /^(xml|yaml|yaml-short|perldump|gpx-route)$/ && $r && $r->path) {
 	require Karte;
 	Karte::preload(qw(Polar Standard));
 	my $res = {
@@ -3299,6 +3321,18 @@ sub search_coord {
 	    } else {
 		print YAML::Dump($res);
 	    }
+	} elsif ($output_as eq 'gpx-route') {
+	    require Strassen::GPX;
+	    http_header
+		(-type => "application/xml",
+		 -Content_Disposition => "attachment; filename=route.gpx",
+		);
+	    my @data;
+	    for my $pt (@out_route) {
+		push @data, $pt->{Strname} . "\tX " . $pt->{Coord} . "\n";
+	    }
+	    my $s = Strassen->new_from_data(@data);
+	    print $s->Strassen::GPX::bbd2gpx(-as => "route");
 	} else { # xml
 	    require XML::Simple;
 	    http_header
@@ -3641,6 +3675,20 @@ EOF
 #			$href .= "/route.pdb";
 #		    }
 		    print qq{<a style="padding:0 0.5cm 0 0.5cm;" href="$href?} . $qq2->query_string . qq{">PalmDoc</a>};
+		}
+		if ($can_gpx) {
+		    {
+			my $qq2 = new CGI $q->query_string;
+			$qq2->param('output_as', "gpx-route");
+			my $href = $bbbike_script;
+			print qq{<a style="padding:0 0.5cm 0 0.5cm;" href="$href?} . $qq2->query_string . qq{">GPX (Route)</a>};
+		    }
+		    {
+			my $qq2 = new CGI $q->query_string;
+			$qq2->param('output_as', "gpx-track");
+			my $href = $bbbike_script;
+			print qq{<a style="padding:0 0.5cm 0 0.5cm;" href="$href?} . $qq2->query_string . qq{">GPX (Track)</a>};
+		    }
 		}
 		if (0) { # XXX not yet
 		    my $qq2 = CGI->new({});
@@ -5717,7 +5765,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/10/10 22:28:18 $';
+    my $cgi_date = '$Date: 2005/10/26 00:51:57 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

@@ -3131,4 +3131,45 @@ userdel	2 -12797,-893 -12895,-913
 userdel	2 -12718,-1327 -12768,-1069
 EOF
      },
+     { from  => 1130277600, # 2005-10-26 00:00
+       until => 1130972400, # 2005-11-03 00:00
+       text  => 'B 112; (Karl-Marx-Str.); OD Eisenhüttenstadt Deckenerneuerung Vollsperrung 27.10.2005-02.11.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 94863,-27943 94983,-28457
+EOF
+     },
+     { from  => 1130277600, # 2005-10-26 00:00
+       until => 1130972400, # 2005-11-03 00:00
+       text  => 'B 112; zw. Lawitz und Eisenhüttenstadt Deckenerneuerung Vollsperrung 27.10.2005-02.11.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 95829,-31753 95494,-29935
+EOF
+     },
+     { from  => 1130536800, # 2005-10-29 00:00
+       until => 1130972400, # 2005-11-03 00:00
+       text  => 'B 246; (Bauptstr.); Bahnübergang in OL Bestensee Gleisbauarbeiten Vollsperrung 30.10.2005-02.11.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 26639,-17861 26752,-17872
+userdel	2 26832,-17882 26752,-17872
+EOF
+     },
+     { from  => 1130277600, # 2005-10-26 00:00
+       until => 1134774000, # 2005-12-17 00:00
+       text  => 'L 15; (B109 südl. Prenzlau-Boitzenburg); OD Gollmitz Leitungsverlegung Vollsperrung 27.10.2005-16.12.2005 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 30743,99403 30504,99595
+EOF
+     },
+     { from  => 1130450400, # 2005-10-28 00:00
+       until => 1130972400, # 2005-11-03 00:00
+       text  => 'L 402; (Forstweg); Bahnübergang in OL Zeuthen Gleisbauarbeiten Vollsperrung 29.10.2005-02.11.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 26001,-6257 26146,-6218
+EOF
+     },
     );

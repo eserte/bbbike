@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.39 2005/10/05 21:25:36 eserte Exp eserte $
+# $Id: GpsmanData.pm,v 1.41 2005/10/26 00:52:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005 Slaven Rezic. All rights reserved.
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.39 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.41 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -844,9 +844,14 @@ sub convert_to_route {
 sub as_gpx {
     my($self) = @_;
     require XML::LibXML;
-    my $dom = XML::LibXML::Document->new('1.0', 'UTF8');
+    my $dom = XML::LibXML::Document->new('1.0', 'utf-8');
     my $gpx = $dom->createElement("gpx");
     $dom->setDocumentElement($gpx);
+    $gpx->setAttribute("version", "1.1");
+    $gpx->setAttribute("creator", "GPS::GpsmanData $GPS::GpsmanData::VERSION - http://www.bbbike.de");
+    $gpx->setNamespace("http://www.w3.org/2001/XMLSchema-instance","xsi");
+    $gpx->setNamespace("http://www.topografix.com/GPX/1/1");
+    $gpx->setAttribute("xsi:schemaLocation", "http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd");
     for my $chunk (@{ $self->Chunks }) {
 	if ($chunk->Type eq $chunk->TYPE_WAYPOINT) {
 	    for my $wpt (@{ $chunk->Waypoints }) {
@@ -866,7 +871,7 @@ sub as_gpx {
 	    }
 	}
     }
-    $dom->toString;
+    Encode::encode("utf-8", $dom->toString);
 }
 
 sub has_track {
