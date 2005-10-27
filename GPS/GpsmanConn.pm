@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanConn.pm,v 1.13 2004/09/25 22:25:22 eserte Exp $
+# $Id: GpsmanConn.pm,v 1.14 2005/10/27 01:00:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@
 package GPS::GpsmanConn;
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 use Config;
 
 # XXX should go away some day...

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePlugin.pm,v 1.8 2005/02/27 23:39:15 eserte Exp eserte $
+# $Id: BBBikePlugin.pm,v 1.9 2005/10/27 00:57:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.

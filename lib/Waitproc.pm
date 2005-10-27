@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Waitproc.pm,v 1.6 2005/03/28 23:02:10 eserte Exp $
+# $Id: Waitproc.pm,v 1.7 2005/10/27 01:01:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2004 Slaven Rezic. All rights reserved.

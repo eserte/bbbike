@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Hooks.pm,v 1.6 2005/04/05 22:31:19 eserte Exp $
+# $Id: Hooks.pm,v 1.7 2005/10/27 00:57:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2005 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@ package Hooks;
 use strict;
 use vars qw(%pool $VERBOSE $VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 sub get_hooks {
     my $label = shift;

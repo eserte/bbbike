@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.25 2005/05/13 22:40:54 eserte Exp eserte $
+# $Id: cgi-mechanize.t,v 1.26 2005/10/27 01:03:17 eserte Exp $
 # Author: Slaven Rezic
 #
 

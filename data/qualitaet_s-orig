@@ -712,8 +712,6 @@ Jupiterstr.: Kopfsteinpflaster	Q2 14850,6546 15043,6799
 #: unverified_by ADFC-Karte
 Grumbkowstr.: mäßig geeignet	Q2 11297,20686 11437,20341 11584,20058 11756,19694
 #: unverified_by ADFC-Karte
-Friesenstr. (Niederschönhausen): mäßig geeignet	Q2 8789,19278 9475,18862
-#: unverified_by ADFC-Karte
 Platanenstr.: mäßig geeignet	Q2 9355,19789 9177,19745 8977,19694 8704,19534 8496,19410
 Feldstr. (Wedding): Kopfsteinpflaster	Q2 9048,14681 9112,14771
 #: unverified_by ADFC-Karte
@@ -2165,7 +2163,7 @@ Pinnauweg: Asphalt	Q0 2219,1612 1943,1496 1962,1434
 Pinnauweg: Asphalt	Q0 1962,1434 1990,1360
 #: by: ^^^
 #: by: Roland Maier:
-Charlottenburger Str.: mäßiger Asphalt	Q1 13727,16085 13294,16256 13045,16368 12564,16591 12353,16687 12237,16741
+Charlottenburger Str.: mäßiger Asphalt	Q1 13727,16085 13294,16256 13045,16368 12804,16480 12564,16591 12353,16687 12237,16741
 #: by: Michaela (G.):
 Kurfürstenstr. (Lankwitz): Asphalt	Q0 6271,1684 6176,1876 6021,2071 5951,2182 5909,2307 5812,2604
 #: by: Axel Wappler:
@@ -2682,8 +2680,10 @@ Würtzstr.: gutes Kopfsteinpflaster	Q1 11567,19130 11620,18971
 Räuschstr.: Asphalt	Q0 3098,19867 3265,19641 3455,19389
 #: by: Michael (patgoody):
 Maximilianstr. (Lichtenberg): mäßiges Kopfsteinpflaster	Q2 16334,10958 16381,11080 16468,11297
-#: by: Felix Beutler:
+#: by: Felix Beutler: vvv
 Unterbaumstr.: Kopfsteinpflaster	Q2 8486,12918 8502,12935 8581,13013
+Nordufer: Verbundsteinpflaster	Q1 7231,14749 7467,14633
+#: by: ^^^
 #: by: Birgit Graffunder
 Ernst-Bloch-Str.: Beton	Q0 23014,12706 22985,12807 23017,13037 23132,13034 23165,13167
 #: by: lars (isenman):
@@ -2815,12 +2815,29 @@ Eschachstr.: Verbundsteinpflaster	Q1 2404,20469 2435,20370 2463,20295
 (Eschachstr./Gorkistr. - Leuenberger Zeile): Verbundsteinpflaster	Q1 2463,20295 2716,19776
 Im Erpelgrund: Verbundsteinpflaster	Q1 -1581,22233 -1485,22260 -1288,22210 -918,22105 -827,22039 -583,21960 -385,21921
 Im Erpelgrund: Verbundsteinpflaster	Q1 -354,21997 -540,22053 -735,22103 -918,22105
+(Weg am Nordgraben): mäßiger fester Sandweg	Q2 3569,20583 3475,20656 3327,20758 3062,20898 2580,20805
 #: by: ^^^
 #: by: Peter Störzel: vvv
 Goldregenstr.: asphaltiert	Q0 24448,10098 24340,10138 24154,10188 23726,10308
 Immortellenweg:: loser Sandweg	Q3 24069,9888 24198,9856 24244,9948 24340,10138 24370,10198
 Blausternweg: asphaltiert	Q0 24154,10188 24093,9978 24069,9888 24046,9817
 Phloxstr.: loser Sandweg	Q3 23659,10074 23775,10047 23881,10024 23988,10001 24093,9978 24244,9948
+#: by: ^^^
+#: by: Isa:
+Wunsiedeler Weg: Asphalt	Q0 7589,4008 7576,3774 7512,3423
+#: by: Ulf Sawallisch:
+Charlottenstr.: Asphalt	Q0 5763,2795 5929,2982 6218,3302 6538,3491
+#: by: Sandra (sspp):
+Magdalenenstr.: Kopfsteinpflaster	Q2 16129,11961 16156,12286
+#: by: Sebastian Scheller:
+Okertalstr.: gutes Kopfsteinpflaster	Q1 14827,20783 14910,21028
+#: by: Gerd Nötzel:
+Bacharacher Str.: Asphalt	Q0 11282,6148 11344,6572
+#: by: Johannes Nerger: vvv
+#: note: ADFC-Karte meint hier "mäßig geeignet"
+Friesenstr. (Niederschönhausen): schlechter Sandweg mit vielen Schlaglöchern	Q3 8789,19278 9475,18862
+(Schönholzer Heide, parallel zur Friesenstr.): hier keine Schlaglöcher	Q2 8789,19278 8784,19253 9446,18855 9475,18862
+Friesickestr.: Asphalt	Q0 12673,16209 12725,16321 12804,16480 12874,16631
 #: by: ^^^
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165

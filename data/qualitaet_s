@@ -685,7 +685,6 @@ Wikingerufer: Kopfsteinpflaster	Q2 5369,12529 5391,12626 5376,12781 5372,12818 5
 Beerenstr.: Kopfsteinpflaster	Q2 82,3166 -765,3253 -1117,3317
 Jupiterstr.: Kopfsteinpflaster	Q2 14850,6546 15043,6799
 Grumbkowstr.: mäßig geeignet	Q2 11297,20686 11437,20341 11584,20058 11756,19694
-Friesenstr. (Niederschönhausen): mäßig geeignet	Q2 8789,19278 9475,18862
 Platanenstr.: mäßig geeignet	Q2 9355,19789 9177,19745 8977,19694 8704,19534 8496,19410
 Feldstr. (Wedding): Kopfsteinpflaster	Q2 9048,14681 9112,14771
 Schererstr.: mäßig geeignet	Q2 7786,15785 7960,15801
@@ -1768,7 +1767,7 @@ Ufnaustr.: guter Asphalt	Q0 4429,13763 4455,13567
 Gewerbehof: Asphalt	Q0 -2643,13469 -2393,13414
 Pinnauweg: Asphalt	Q0 2219,1612 1943,1496 1962,1434
 Pinnauweg: Asphalt	Q0 1962,1434 1990,1360
-Charlottenburger Str.: mäßiger Asphalt	Q1 13727,16085 13294,16256 13045,16368 12564,16591 12353,16687 12237,16741
+Charlottenburger Str.: mäßiger Asphalt	Q1 13727,16085 13294,16256 13045,16368 12804,16480 12564,16591 12353,16687 12237,16741
 Kurfürstenstr. (Lankwitz): Asphalt	Q0 6271,1684 6176,1876 6021,2071 5951,2182 5909,2307 5812,2604
 Lansstr.: mäßiges Kopfsteinpflaster	Q2 3054,5677 2953,5606 2858,5535 2785,5482
 Krumme Str. (Bohnsdorf): Beton	Q0 21945,-431 22004,-489 22201,-503 22275,-461
@@ -2047,6 +2046,7 @@ Würtzstr.: gutes Kopfsteinpflaster	Q1 11567,19130 11620,18971
 Räuschstr.: Asphalt	Q0 3098,19867 3265,19641 3455,19389
 Maximilianstr. (Lichtenberg): mäßiges Kopfsteinpflaster	Q2 16334,10958 16381,11080 16468,11297
 Unterbaumstr.: Kopfsteinpflaster	Q2 8486,12918 8502,12935 8581,13013
+Nordufer: Verbundsteinpflaster	Q1 7231,14749 7467,14633
 Ernst-Bloch-Str.: Beton	Q0 23014,12706 22985,12807 23017,13037 23132,13034 23165,13167
 Breitensteinweg: Asphalt	Q0 545,334 940,376 1034,474
 Lübecker Str.: Asphalt	Q0 6402,13865 6401,13721 6403,13312
@@ -2115,10 +2115,19 @@ Eschachstr.: Verbundsteinpflaster	Q1 2404,20469 2435,20370 2463,20295
 (Eschachstr./Gorkistr. - Leuenberger Zeile): Verbundsteinpflaster	Q1 2463,20295 2716,19776
 Im Erpelgrund: Verbundsteinpflaster	Q1 -1581,22233 -1485,22260 -1288,22210 -918,22105 -827,22039 -583,21960 -385,21921
 Im Erpelgrund: Verbundsteinpflaster	Q1 -354,21997 -540,22053 -735,22103 -918,22105
+(Weg am Nordgraben): mäßiger fester Sandweg	Q2 3569,20583 3475,20656 3327,20758 3062,20898 2580,20805
 Goldregenstr.: asphaltiert	Q0 24448,10098 24340,10138 24154,10188 23726,10308
 Immortellenweg:: loser Sandweg	Q3 24069,9888 24198,9856 24244,9948 24340,10138 24370,10198
 Blausternweg: asphaltiert	Q0 24154,10188 24093,9978 24069,9888 24046,9817
 Phloxstr.: loser Sandweg	Q3 23659,10074 23775,10047 23881,10024 23988,10001 24093,9978 24244,9948
+Wunsiedeler Weg: Asphalt	Q0 7589,4008 7576,3774 7512,3423
+Charlottenstr.: Asphalt	Q0 5763,2795 5929,2982 6218,3302 6538,3491
+Magdalenenstr.: Kopfsteinpflaster	Q2 16129,11961 16156,12286
+Okertalstr.: gutes Kopfsteinpflaster	Q1 14827,20783 14910,21028
+Bacharacher Str.: Asphalt	Q0 11282,6148 11344,6572
+Friesenstr. (Niederschönhausen): schlechter Sandweg mit vielen Schlaglöchern	Q3 8789,19278 9475,18862
+(Schönholzer Heide, parallel zur Friesenstr.): hier keine Schlaglöcher	Q2 8789,19278 8784,19253 9446,18855 9475,18862
+Friesickestr.: Asphalt	Q0 12673,16209 12725,16321 12804,16480 12874,16631
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934
