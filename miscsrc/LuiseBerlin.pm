@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.6 2005/10/24 22:43:23 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.7 2005/10/29 10:08:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,12 +16,19 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
+BEGIN {
+    if (!caller(2)) {
+	eval <<'EOF';
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
+EOF
+    die $@ if $@;
+    }
+}
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';

@@ -240,23 +240,9 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1130623200,
-         'text' => 'B 101; (Berliner Str.); OD Trebbin, zw. Bahnhofstr. u. Luckenwalder Str., Straßenbauarbeiten, Vollsperrung, 09.08.2005-29.10.2005 ',
-         'from' => 1123452000,
-         'data' => 'userdel	q4 -1887,-21501 -1623,-21150
-',
-         'type' => 'handicap'
-       },
        undef,
-       {
-         'until' => 1130536800,
-         'text' => 'L 14; (Großderschau- Bahnhof Zernitz); Brücke über die Neue Jägelitz bei Zernitz Brückensanierung Vollsperrung 19.04.2005-28.10.2005 ',
-         'from' => 1113775200,
-         'data' => 'userdel	2 -63163,51264 -63375,50856
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -337,14 +323,7 @@ userdel	q4 1916,-1090 1709,-953
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1130709600,
-         'text' => 'K 6152; (Gussower Str.); OD Gräbendorf, ab B246 bis OA Kanal- und Straßenbau Vollsperrung 27.06.2005-30.10.2005 ',
-         'from' => 1119736800,
-         'data' => 'userdel	q4 31863,-18000 32922,-16523
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1135378800,
@@ -531,14 +510,7 @@ userdel	2 47081,83093 47137,83456
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1130623200,
-         'text' => 'B 198; zw. Prenzlau und Bietikow grundh.Straßenbau Vollsperrung 10.10.2005-29.10.2005 ',
-         'from' => 1128808800,
-         'data' => 'userdel	2 42775,98487 43126,98186
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -617,21 +589,14 @@ userdel	q4 -7873,66589 -7851,66418
          'until' => 1131836400,
          'text' => 'B 198; OD Prenzlau, Dr.-Wilhelm-Külz-Str. grundh. Straßenbau Vollsperrung 10.10.2005-12.11.2005 ',
          'from' => 1128808800,
-         'data' => 'userdel	q4 39720,101882 39312,101913
+         'data' => 'userdel	q4 39715,101866 39574,101863 39322,101924
 ',
          'type' => 'handicap'
        },
        undef,
        undef,
        undef,
-       {
-         'until' => 1130709600,
-         'text' => 'L 201; (Nauener Chaussee); OD Falkensee, zw. F.-Ludwig-Jahn-Str. u. Innstr. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 14.09.2005-30.10.2005 ',
-         'from' => 1126562400,
-         'data' => 'userdel	q4 -12601,19517 -12139,18985
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -706,17 +671,7 @@ userdel	q4 -7873,66589 -7851,66418
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_002305',
-         'until' => 1130623200,
-         'text' => 'Scheidemannstr. Richtung Ebertstr. von Entlastungsstr. bis Ebertstr. Veranstaltung, Fahrtrichtung gesperrt (bis 29.10.2005)',
-         'from' => 1129879314,
-         'data' => 'userdel	q4 8119,12414 8374,12416
-userdel	q4 8400,12417 8540,12420
-userdel	q4 8400,12417 8374,12416
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1130972400,

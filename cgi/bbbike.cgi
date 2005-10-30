@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.34 2005/10/26 00:51:57 eserte Exp $
+# $Id: bbbike.cgi,v 7.34 2005/10/26 00:51:57 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -2467,7 +2467,7 @@ EOF
 <tr>
  <td>Unbekannte Straﬂen mit einbeziehen:</td>
  <td><input type=checkbox name="pref_fragezeichen" value=yes @{[ $default_fragezeichen?"checked":"" ]}></td>
- <td style="vertical-align:bottom"><span class="experimental">Experimentell</span><small><a target="BBBikeHelp" href="$bbbike_html/help.html#fragezeichen" onclick="show_help('fragezeichen'); return false;">Was ist das?</a></small></td>
+ <td style="vertical-align:bottom"><small><a target="BBBikeHelp" href="$bbbike_html/help.html#fragezeichen" onclick="show_help('fragezeichen'); return false;">Was ist das?</a></small></td>
 </tr>
 EOF
     }
@@ -3649,7 +3649,9 @@ EOF
 	    if (!$bi->{'text_browser'} && !$printmode) {
 		my $qq = new CGI $q->query_string;
 		$qq->param('output_as', "print");
-		print qq{<tr bgcolor="white"><td colspan="};
+		print qq{<tr bgcolor="white">};
+		#print qq{<td tyle="text-align:left">Route als ...</td>};
+		print qq{<td colspan="};
 		my $cols = 4;
 		if ($with_comments && $comments_net) {
 		    $cols++;
@@ -3689,6 +3691,7 @@ EOF
 			my $href = $bbbike_script;
 			print qq{<a style="padding:0 0.5cm 0 0.5cm;" href="$href?} . $qq2->query_string . qq{">GPX (Track)</a>};
 		    }
+		    print qq{<span class="experimental">Experimentell</span>};
 		}
 		if (0) { # XXX not yet
 		    my $qq2 = CGI->new({});
@@ -3795,7 +3798,7 @@ EOF
 	    print " <option " . $imagetype_checked->("svg") . ">SVG\n" unless $cannot_svg;
 	    print " <option " . $imagetype_checked->("mapserver") . ">MapServer\n" if $can_mapserver;
 	    print " <option " . $imagetype_checked->("berlinerstadtplan") . ">www.berliner-stadtplan.com\n" if $can_berliner_stadtplan_post;
-	    print " <option " . $imagetype_checked->("googlemaps") . ">Google Maps (experimental!!!)\n" if $can_google_maps;
+	    print " <option " . $imagetype_checked->("googlemaps") . ">Google Maps (experimentell!!!)\n" if $can_google_maps;
 	    print " </select></span>\n";
 	    print "<br>\n";
 

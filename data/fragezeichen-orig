@@ -52,7 +52,7 @@ Verlängerung Am Nordgraben: wo genau, wie weit? Brücke unter der S-Bahn ist in B
 #: by: berliner-stadtplan.com
 #: next_check: 2006-01-01
 Grenzweg: Brücke über die Spree soll 2006 fertig werden	?::inwork 17131,7131 16993,6975
-Wiederaufbau des Kaiserstegs in Planung	?::inwork 18384,5914 18462,6087
+Wiederaufbau des Kaiserstegs	?::inwork 18384,5914 18462,6087
 Verlängerung der Paul-Löbe-Str. Richtung Kongreßhalle/Spree noch in Bau	?::inwork 7851,12590 7670,12576
 Mauerpark: unter Umständen wird ein Streifen des Mauerparkweges asphaltiert; der Weg wird Teil von Berlin-Usedom	? 10333,14983 10238,15316 10186,15463 10122,15647
 Schulzendorfer Str.: laut Tagesspiegel wird in Zukunft hier das Kopfsteinpflaster durch Asphalt ersetzt	? -596,23009 -862,22946 -1254,22853 -1484,22799
@@ -525,7 +525,6 @@ Luckow - Sommersdorf: Qualität?	? 63938,93631 63800,94250 62800,96175 62912,9680
 Bei Penkun: Qualität? Ausgeschildert?	? 68961,100161 67712,99425 65237,99575 64837,99262 64362,99087 63575,98375 62425,97375
 Laut "Berliner Umland" verläuft die R1 hier entlang, aber es gibt (noch) keine Ausschilderung	? 17527,7812 17678,7850 17775,7874 17987,7973 18387,7742
 Eberswalde - Spechthausen: Qualität? Genaue Wegführung, Straßennamen? Bahnübergang! Nördlich des Bahnübergangs asphaltiert!	? 35362,48503 35312,48225 35485,48132 35428,47961 35244,47675 35244,47453 35180,47123 35295,47041 35339,46996 35149,46710 35168,46488 35218,46368 35149,46126 35066,45479
-Dreesch - Damme: Qualität?	? 47043,99437 49971,99565
 Ludwigsburg: Qualität (von Süden aus gesehen: Feldweg; von Norden aus gesehen: Betonplatten/Kopfsteinpflaster)?	? 47587,106693 48762,104987
 Schönfeld - Neuenfeld: im Ort Schönfeld noch Betonplatten mit Spur (Q1), danach den Anschein nach Asphalt (Q0)	? 48060,112975 48800,113000 49137,113325 49537,113375 49887,113837
 Klockow - Züsedom: ab Klockow Asphalt, danach ungewiss	? 49412,111409 49887,113837 50187,114312 50025,115750 50148,115972
@@ -659,12 +658,12 @@ Schillingstr. (Reinickendorf): Qualität?	? 4687,18175 4581,17689
 Herzberg - Vielitz - Lindow: Qualität?	? -19761,54883 -18575,56837 -17019,58171 -16762,58037 -16350,58125 -15987,58387 -15950,58625 -16100,58837 -16583,58871 -16887,58862 -17800,61125 -18200,61425 -18762,61537 -19118,62087
 Calau - Werchow: Qualität?	? 48838,-72837 49300,-73237 49437,-74112 49425,-74550 49618,-75018
 Werchow - Cabel: Qualität?	? 49618,-75018 49412,-75175 49075,-75387 48818,-75806 48437,-75600 47821,-75451
-Weselitz - Neu-Kleinow: Qualität? (von Weselitz aus gesehen: guter Asphalt)	? 47682,95787 48825,94812 49872,95222
+Weselitz - Neu-Kleinow: Qualität? (von Weselitz aus gesehen: guter Asphalt)	? 47682,95787 49122,94737 49872,95222
 Baumgarten - Schenkenberg: Qualität? (von Baumgarten aus gesehen: Asphalt)	? 46581,105900 46275,106262 46200,106787 45512,107075 45406,107350
 Ludwigsburg - Schenkenberg: Qualität? (von Ludwigsburg aus gesehen: Asphalt)	? 47812,106862 47550,107125 45900,107675 45406,107350
 Potzlow - Strehlow: hier ist der Uckerseeweg und BU ausgeschildert, wie ist die genaue Route? (von Süden aus: Betonplatten)	? 39375,90456 39434,91129 39068,91189 39083,91639 38612,91950
 Badeweg Prenzlau: Name der Straße Badeweg oder -str.?	? 38956,101131 39106,101231
-Uckerpromenade - Straße nach Seelübbe: existiert hier eine Straßenverbindung? Von der Uckerpromenade her Kopfsteinpflaster und als Sackgasse ausgeschildert, auf der Uckermark-Karte existiert die Straße	? 40056,99762 41306,99542
+Uckerpromenade - Straße nach Seelübbe: existiert hier eine Straßenverbindung? Von der Uckerpromenade her Kopfsteinpflaster und als Sackgasse ausgeschildert, auf der Uckermark-Karte existiert die Straße, ein Bahnübergang existiert	? 40056,99762 40850,99777 41306,99542
 Wallmow - Grenz: zumindest von Wallmow aus sieht es so aus, als ob eine Verbindung existiert. Wahrscheinlich Feldweg Q2	? 53556,105150 51751,104213
 Carmzow - Hedwigshof: im weiteren Verlauf ebenfalls asphaltiert?	? 52635,109881 53437,109825 54050,109712 54450,109425
 Hedwigshof - Moor: existiert eine fahrbare Verbindung?	? 54450,109425 55250,109500 55293,109705
@@ -954,3 +953,4 @@ Blesener Zeile: existiert eine Verbindung zum Weg am Nordgraben?	? 3426,20642 34
 Leuenburger Zeile: Qualität? Teil einer ausgeschilderten Radroute?	? 2716,19776 2818,19606 2852,19546
 Waidmannsluster Damm - Gorkistr. - Leuenburger Zeile: Teil einer ausgeschilderten Route?	? 2242,20908 2404,20469 2435,20370 2463,20295 2716,19776
 Okertalstr. zwischen Lindenberger Weg und Bahnlinie: Qualität?	? 14910,21028 14977,21194
+Damme (am Gutshof): Qualität (wahrscheinlich Kopfsteinpflaster)?	? 49971,99565 49795,99704 49737,99646

@@ -1866,7 +1866,7 @@ EOF
        text  => 'B 198; (Schwedter Str.); OD Prenzlau, Kno. Uckermarkkaserne Ausbau Knotenpunkt Vollsperrung 30.04.2005-01.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 40864,100741 40507,100965
+userdel	q4 40682,100854 40507,100965
 EOF
      },
      { from  => 1114725600, # 2005-04-29 00:00
@@ -2892,7 +2892,7 @@ EOF
        text  => 'B 198; OD Prenzlau, Dr.-Wilhelm-Külz-Str. grundh. Straßenbau Vollsperrung 10.10.2005-12.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 39720,101882 39312,101913
+userdel	q4 39715,101866 39574,101863 39322,101924
 EOF
      },
      { from  => 1128376800, # 2005-10-04 00:00
