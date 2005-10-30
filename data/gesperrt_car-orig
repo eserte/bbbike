@@ -192,10 +192,9 @@ Schumannstr.	1 8581,13013 8615,13023 8703,13045 8963,13117
 Albrechtstr. (Mitte)	1 8963,13117 9001,13039 9046,12933 9106,12795
 Charitéstr.	1 8671,12945 8615,13023
 Spandauer Str. (Mitte)	3nocross 10732,12355 10676,12418 10596,12517
-#: add_fragezeichen: evtl. für Autofahrer in beide Richtungen gesperrt:
-Siegfriedstr.:	1 12303,6937 12340,6947
 #: XXX: evtl. links Einbiegen von Osten kommend aus Torstr. erlaubt:
 Torstr.	3nocross 9571,13590 9668,13629 9792,13681
+Siegfriedstr.	1 12340,6947 12477,6975 12664,7013 12810,7047 12872,7134
 #: XXX: Einbahnstraßenrichtung unklar
 Onkel-Herse-Str.	1 13670,4732 13922,4798
 Paulstr.	3nocross 7064,12419 7091,12554 7097,12590
@@ -215,3 +214,6 @@ Uthmannstr.	1 13150,7845 12914,7785
 Herrnhuter Str.	1 12898,7832 13103,7889
 Richardstr.	1 12870,8087 12792,8190
 Kirchblick	1 -1989,3569 -1957,3456 -1981,3353
+#: XXX nicht ganz sicher über die Richtung:
+Forddamm	1 9106,3703 9131,3571
+Hermannstr., am U/S-Bahnhof	3nocross 12317,7007 12340,6947 12362,6881
