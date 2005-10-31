@@ -713,6 +713,24 @@ userdel	2 26832,-17882 26752,-17872
          'data' => 'userdel	2 26001,-6257 26146,-6218
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LMS_1129024102795',
+         'until' => 1132354800,
+         'text' => 'Naumannstraße zwischen Torgauer Str. und Kolonnenstraße in Richtung Kolonnenstraße wegen Bauarbeiten gesperrt bis 18.11.2005 ',
+         'from' => 1130715720,
+         'data' => 'userdel	q4; 7713,8600 7709,8770
+userdel	q4; 7716,8048 7716,8356 7712,8560
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1131231600,
+         'text' => 'Brückensperrung zwischen Seehausen und Potzlow Die Brücke ist ab dem 5.9.2005 bis zum 5.11.2005 auch für Radfahrer nicht passierbar ',
+         'from' => 1130792769,
+         'data' => 'userdel	2 40230,90006 40938,90213
+',
+         'type' => 'gesperrt'
        }
      
 );

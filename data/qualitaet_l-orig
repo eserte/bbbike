@@ -95,7 +95,7 @@ Groß-Schönebeck: Kopfsteinpflaster	Q2 18409,55410 18216,55816 18487,56419
 Milmersdorf: Kopfsteinpflaster	Q1 25146,78471 25175,79103
 Nassenheide: schlechter Weg	Q2 -4008,44851 -4439,44595 -4758,42618
 Schildow: mäßiges Kopfsteinpflaster (bis Ortsgrenze Mühlenbeck)	Q2 8194,25966 8231,26584 8189,26883 8103,27587
-Ortsdurchfahrt Ladeburg: asphaltiert	Q0 22414,33559 22540,33318 22527,32200
+Ortsdurchfahrt Ladeburg: asphaltiert	Q0 22414,33559 22540,33318 22528,32937 22527,32200
 Schönow - Buch bis zur Kurve Hobrechtsfelder Chaussee: schlechtes Kopfsteinpflaster (13 km/h)	Q3 16843,30303 16540,29940 16301,29192 16107,28551 16022,28450 15745,28121 15757,28054
 Bötzow: Kopfsteinpflaster	Q2 -7640,26928 -8182,26706
 Hennigsdorf: Kopfsteinpflaster OK	Q1 -3450,26512 -3306,25887 -3018,25556
@@ -252,7 +252,10 @@ Prenzlau - Schenkenberg: Kopfsteinplaster	Q2 40944,103714 41120,103820 42568,105
 #: according_to: "Up na Prenzlow":
 Karlshof - Schönfeld: Kopfsteinplaster	Q2 47335,110888 47493,111289 47433,111713 47658,112367 47642,112620 47894,112908
 #: according_to: "Up na Prenzlow":
+#: according_to: Radzeit 4/2005:
 Schönwerder - B198: Plattenweg	Q1 38053,107093 38596,106902 38068,105307 37321,103264
+#: according_to: Radzeit 4/2005:
+Nieden - Schmarsow: asphaltiert	Q2 43502,115629 43584,116797 43767,117112 43838,117620 44142,117823
 Eickstedt Richtung Rollberg: Asphalt	Q0 52181,100846 51980,100625
 Horst - Gollmitz: mäßiger Asphalt	Q1 32535,101203 30898,99869
 Gollmitz: Fahrbahn Richtung S: mäßige Betonplatten	Q2; 30898,99869 30460,99702 30504,99595
@@ -1124,7 +1127,7 @@ Rüdnitz - Danenwitz: Asphalt	Q0 27303,37099 26687,36525 26372,36360
 Rüdnitz - Bahnhof: Asphalt	Q0 25095,35601 25737,35075
 # von der Zugstrecke aus gesehen (2x):
 nach Senftenhütte: Schotterstraße	Q2 43637,57787 43418,57899
-Nechlin - Nieden: überwiegend gute Betonplatten	Q0 41839,115987 42250,115925 42905,115846 43275,115703 43753,115606 44381,115768 44500,115859 44617,115833
+Nechlin - Nieden: überwiegend gute Betonplatten	Q0 41839,115987 42250,115925 42905,115846 43275,115703 43502,115629 43753,115606 44381,115768 44500,115859 44617,115833
 B109 - Damerow: überwiegend gute Betonplatten	Q0 44617,115833 44890,115896 45290,115871 45897,115900 46925,115721 47144,115705
 Damerow - Schönfeld: bis Landesgrenze sehr guter Asphalt, danach nur guter Asphalt	Q0 46925,115721 46843,115217 47781,113409 47953,113309 48060,112975
 Schönfeld: schlechter Asphalt, aber Ausweichen auf Gehweg möglich	Q3 48060,112975 47894,112908
@@ -1395,7 +1398,7 @@ Prenzlau, An der Freilichtbühne: große Gehwegplatten	Q1 39474,100982 39754,10095
 Prenzlau, Seeweg: Kopfsteinpflaster	Q2 39668,100787 39754,100955 39787,101031
 Prenzlau, Seeweg: Asphalt	Q0 39787,101031 39867,101104
 Stadtpark Prenzlau: wassergebundener Parkweg	Q1 39867,101104 39928,101357
-Stadtpark Prenzlau: asphaltierter Parkweg	Q1 39928,101357 39884,101572 39873,101780 39900,101931
+Stadtpark Prenzlau: asphaltierter Parkweg	Q0 39928,101357 39884,101572 39873,101780 39900,101931
 Gransee: asphaltiert	Q0 -6422,66247 -6557,66279 -7071,66471
 Virchowstr.: Asphalt	Q0 -8559,-1378 -8573,-1296 -8857,-1000 -8928,-912 -8993,-865 -9085,-829 -9107,-832 -9146,-867
 Robert-Koch-Str.: Asphalt (Kopfsteine kommen hervor)	Q1 -9062,-1293 -8903,-1089 -8862,-1037 -8857,-1000

@@ -3172,4 +3172,22 @@ EOF
 userdel	2 26001,-6257 26146,-6218
 EOF
      },
+     { from  => 1130715720, # 2005-10-31 00:42
+       until => 1132354800, # 2005-11-19 00:00
+       text  => 'Naumannstraße zwischen Torgauer Str. und Kolonnenstraße in Richtung Kolonnenstraße wegen Bauarbeiten gesperrt bis 18.11.2005 ',
+       type  => 'handicap',
+       source_id => 'LMS_1129024102795',
+       data  => <<EOF,
+userdel	q4; 7713,8600 7709,8770
+userdel	q4; 7716,8048 7716,8356 7712,8560
+EOF
+     },
+     { from  => 1130792769, # 2005-10-31 22:06
+       until => 1131231600, # 2005-11-06 00:00
+       text  => 'Brückensperrung zwischen Seehausen und Potzlow Die Brücke ist ab dem 5.9.2005 bis zum 5.11.2005 auch für Radfahrer nicht passierbar ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 40230,90006 40938,90213
+EOF
+     },
     );
