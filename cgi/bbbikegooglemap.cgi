@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.14 2005/10/27 01:00:40 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.17 2005/11/03 23:08:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -150,6 +150,9 @@ sub get_html {
     <script type="text/javascript">
     //<![CDATA[
 
+    var addRoute = [];
+    var addRouteOverlay;
+
     function createMarker(point, html_name) {
 	var marker = new GMarker(point);
         var html = "<b>" + html_name + "</b>";
@@ -166,6 +169,57 @@ sub get_html {
     function showCoords(point, message) {
         var latLngStr = message + point.x + "," + point.y;
         document.getElementById("message").innerHTML = latLngStr;
+    }
+
+    function addCoordsToRoute(point) {
+	if (!document.forms["addroute"].elements["addroute"].checked)
+	    return;
+	if (addRoute.length > 0) {
+	    var lastPoint = addRoute[addRoute.length-1];
+	    if (lastPoint.x == point.x && lastPoint.y == point.y)
+		return;
+	}
+	addRoute[addRoute.length] = point;
+	updateRouteDiv();
+	updateRouteOverlay();
+    }
+
+    function deleteLastPoint() {
+	if (addRoute.length > 0) {
+	    addRoute.length = addRoute.length-1;
+	    updateRouteDiv(); 
+	    updateRouteOverlay(); 
+	}
+    }
+
+    function resetRoute() {
+	addRoute = [];
+	updateRouteDiv();
+	updateRouteOverlay();
+    }
+
+    function updateRouteDiv() {
+	var addRouteText = "";
+	for(var i = 0; i < addRoute.length; i++) {
+	    if (i == 0) {
+		addRouteText = "Route: ";	
+	    } else if (i > 0) {
+		addRouteText += " ";
+	    }
+	    addRouteText += addRoute[i].x + "," + addRoute[i].y;
+	}
+        document.getElementById("addroutetext").innerHTML = addRouteText;
+    }
+
+    function updateRouteOverlay() {
+	if (addRouteOverlay) {
+	    map.removeOverlay(addRouteOverlay);
+	    addRouteOverlay = null;
+	}
+	if (!addRoute.length)
+	   return;
+	addRouteOverlay = new GPolyline(addRoute);
+	map.addOverlay(addRouteOverlay);
     }
 
     function showLink(point, message) {
@@ -190,6 +244,7 @@ sub get_html {
         var center = map.getCenterLatLng();
 	showCoords(center, 'Center of map: ');
 	showLink(center, 'Link: ');
+	addCoordsToRoute(center);
     });
 
 EOF
@@ -227,6 +282,7 @@ EOF
     </script>
     <div style="font-size:x-small;" id="message"></div>
     <div style="font-size:x-small;" id="permalink"></div>
+    <div style="font-size:x-small;" id="addroutetext"></div>
     <div id="wpt">
 EOF
     for my $wpt (@$wpts) {
@@ -248,7 +304,13 @@ EOF
   <button>Zeigen</button>
 </form>
 
-<form name="upload" onsubmit='setZoomInUploadForm()' style="margin-top:1cm; border:1px solid black; padding:3px;" method="post" enctype="multipart/form-data">
+<form name="addroute" style="margin-top:0.5cm; border:1px solid black; padding:3px;" method="post" enctype="multipart/form-data">
+  <label>Clicking adds to route <input type="checkbox" name="addroute"  /></label>
+  <a href="javascript:deleteLastPoint()">Delete last point</a>
+  <a href="javascript:resetRoute()">Delete route</a>
+</form>
+
+<form name="upload" onsubmit='setZoomInUploadForm()' style="margin-top:0.5cm; border:1px solid black; padding:3px;" method="post" enctype="multipart/form-data">
   <input type="hidden" name="zoom" value="@{[ $zoom ]}" />
   Upload einer GPX-Datei: <input type="file" name="gpxfile" />
   <br />
@@ -285,3 +347,4 @@ bbbikegooglemap.cgi - show BBBike data through Google maps
 
 =cut
 
+# rsync -e "ssh -2" -a ~/src/bbbike/cgi/bbbikegooglemap.cgi root@www.radzeit.de:/var/www/domains/radzeit.de/www/cgi-bin/bbbikegooglemap2.cgi

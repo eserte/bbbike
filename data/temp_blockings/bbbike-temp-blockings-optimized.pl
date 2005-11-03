@@ -1,121 +1,7 @@
 @temp_blocking = ();
-$#temp_blocking = 33;
+$#temp_blocking = 140;
 push @temp_blocking,
 (
-       {
-         'until' => 1130799599,
-         'text' => 'Schlichtallee Richtung Süden zwischen Hauptstraße und Lückstraße wegen Bauarbeiten gesperrt (bis 31.10.)',
-         'from' => undef,
-         'data' => 'userdel	q4; 16032,10842 15751,10582 15629,10481
-',
-         'type' => 'handicap'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'until' => 1136069999,
          'text' => 'Blankenburger Weg (Pankow) Richtung Süden zwischen Bahnhofstr. und Pasewalker Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
@@ -513,14 +399,7 @@ userdel	2 47081,83093 47137,83456
        undef,
        undef,
        undef,
-       {
-         'until' => 1130886000,
-         'text' => 'B 96; (Neuhof-Wünsdorf); Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung 28.10.2005-01.11.2005 ',
-         'from' => 1130364000,
-         'data' => 'userdel	2 16407,-29400 16379,-29446
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1136070000,
          'text' => 'K 6424; (Dahlwitzer Landstr.-Münchehofe-B 1); OD Münchehofe Straßenausbau Vollsperrung 12.09.2005-31.12.2005 ',
@@ -530,14 +409,7 @@ userdel	2 47081,83093 47137,83456
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1130799600,
-         'text' => 'L 19; (Zechlinerhütte-Wesenberg (MVP)); zw. Abzw. Klein Zerlang u. LG (nö. Prebelowbrücke) Ersatzneubau Brücke Prebelow Vollsperrung 02.09.2005-31.10.2005 ',
-         'from' => 1125525600,
-         'data' => 'userdel	2 -26403,85177 -26316,84900
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1134687600,
@@ -673,31 +545,9 @@ userdel	q4 -7873,66589 -7851,66418
        undef,
        undef,
        undef,
-       {
-         'until' => 1130972400,
-         'text' => 'B 112; (Karl-Marx-Str.); OD Eisenhüttenstadt Deckenerneuerung Vollsperrung 27.10.2005-02.11.2005 ',
-         'from' => 1130277600,
-         'data' => 'userdel	q4 94863,-27943 94983,-28457
-',
-         'type' => 'handicap'
-       },
-       {
-         'until' => 1130972400,
-         'text' => 'B 112; zw. Lawitz und Eisenhüttenstadt Deckenerneuerung Vollsperrung 27.10.2005-02.11.2005 ',
-         'from' => 1130277600,
-         'data' => 'userdel	2 95829,-31753 95494,-29935
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1130972400,
-         'text' => 'B 246; (Bauptstr.); Bahnübergang in OL Bestensee Gleisbauarbeiten Vollsperrung 30.10.2005-02.11.2005 ',
-         'from' => 1130536800,
-         'data' => 'userdel	2 26639,-17861 26752,-17872
-userdel	2 26832,-17882 26752,-17872
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
        {
          'until' => 1134774000,
          'text' => 'L 15; (B109 südl. Prenzlau-Boitzenburg); OD Gollmitz Leitungsverlegung Vollsperrung 27.10.2005-16.12.2005 ',
@@ -706,14 +556,7 @@ userdel	2 26832,-17882 26752,-17872
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1130972400,
-         'text' => 'L 402; (Forstweg); Bahnübergang in OL Zeuthen Gleisbauarbeiten Vollsperrung 29.10.2005-02.11.2005 ',
-         'from' => 1130450400,
-         'data' => 'userdel	2 26001,-6257 26146,-6218
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'LMS_1129024102795',
          'until' => 1132354800,
@@ -731,6 +574,27 @@ userdel	q4; 7716,8048 7716,8356 7712,8560
          'data' => 'userdel	2 40230,90006 40938,90213
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1132354800,
+         'text' => 'Eldenaer Str. zwischen Thaerstr. und Proskauer Str. Baustelle, wegen Bauarbeiten gesperrt. Dauer: bis 18.11.2005',
+         'from' => 1130831377,
+         'data' => 'userdel	q4 14363,12749 14336,12758
+userdel	q4 13960,12866 14096,12827
+userdel	q4 13960,12866 13844,12900
+userdel	q4 14096,12827 14336,12758
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_002329',
+         'until' => 1132095599,
+         'text' => 'Romain-Rolland-Straße (Weissensee) zwischen Straße 16 und Berliner Straße Straßenarbeiten, gesperrt (bis Mitte November 2005) ',
+         'from' => 1131050267,
+         'data' => 'userdel	q4 13300,17726 12856,17825
+userdel	q4 12856,17825 12746,17981
+',
+         'type' => 'handicap'
        }
      
 );

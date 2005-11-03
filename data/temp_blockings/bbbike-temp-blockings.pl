@@ -3190,4 +3190,25 @@ EOF
 userdel	2 40230,90006 40938,90213
 EOF
      },
+     { from  => 1130831377, # 2005-11-01 08:49
+       until => 1132354800, # 2005-11-19 00:00
+       text  => 'Eldenaer Str. zwischen Thaerstr. und Proskauer Str. Baustelle, wegen Bauarbeiten gesperrt. Dauer: bis 18.11.2005',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 14363,12749 14336,12758
+userdel	q4 13960,12866 14096,12827
+userdel	q4 13960,12866 13844,12900
+userdel	q4 14096,12827 14336,12758
+EOF
+     },
+     { from  => 1131050267, # 2005-11-03 21:37
+       until => 1132095599, # 2005-11-15 23:59
+       text  => 'Romain-Rolland-Straße (Weissensee) zwischen Straße 16 und Berliner Straße Straßenarbeiten, gesperrt (bis Mitte November 2005) ',
+       type  => 'handicap',
+       source_id => 'IM_002329',
+       data  => <<EOF,
+userdel	q4 13300,17726 12856,17825
+userdel	q4 12856,17825 12746,17981
+EOF
+     },
     );
