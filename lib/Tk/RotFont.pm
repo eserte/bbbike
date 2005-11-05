@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: RotFont.pm,v 1.14 2005/10/27 01:02:13 eserte Exp $
+# $Id: RotFont.pm,v 1.14 2005/10/27 01:02:13 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001 Slaven Rezic. All rights reserved.
@@ -33,8 +33,9 @@ BEGIN {
 #*canvas = \&rot_text_smart_compat;
 #*rot_text = \&rot_text_old;
 
-if ($Tk::VERSION >= 804) {
-    # irgendwas ist hier kaputt gegangen...
+if (1) {
+    # irgendwas ist hier kaputt gegangen... $Tk::VERSION >= 804
+    # nö, XFree86 4 ist der Schuldige!
     $Tk::RotFont::NO_X11 = 1;
 }
 
@@ -46,7 +47,7 @@ if (!$Tk::RotFont::NO_X11) { # XXX rot_text_newer ist wesentlich *langsamer* als
 	eval '
 	    require X11::Protocol;
 	    $main::x11 = X11::Protocol->new;
-	    use lib "XXX$ENV{HOME}/devel";
+	    #use lib "XXX$ENV{HOME}/devel";
 	    require Tk::RotX11Font;
 	    if ($main::use_font_rot) {
 		$use_rotx11font = 1;

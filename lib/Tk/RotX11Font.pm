@@ -149,16 +149,19 @@ sub get_x11font_resources {
     my $fid = $main::x11->new_rsrc;
     $main::x11->OpenFont($fid, $font);
     my(%res) = $main::x11->QueryFont($fid);
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\%res],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 
     my @x;
     foreach (keys %{$res{'properties'}}) {
-	if ($main::x11->atom_name($_) eq 'FONT') {
+	my $atom_name = $main::x11->atom_name($_);
+	warn "$atom_name $res{'properties'}->{$_} " . eval { $main::x11->atom_name($res{'properties'}->{$_}) };
+	if ($atom_name eq 'FONT') {
 	    my $realfont;
 	    $realfont = $main::x11->atom_name($res{'properties'}->{$_});
 	    my(@f) = split(/-/, $realfont);
 	    @x = split(/\s/, substr($f[7], 1, length($f[7])-2));
 	    foreach (@x) { s/~/-/g }
-	    last;
+#	    last;
 	}
     }
 
@@ -168,6 +171,7 @@ sub get_x11font_resources {
     $#font_yadd = 255;
     foreach (keys %$chars_used_ref) {
 	my $attr = $res{'char_infos'}->[$_-$res{'min_char_or_byte2'}]->[5];
+# XXX if $attr == 0 use SPACING instead???
 	my($x, $y) = ($attr/1000*$x[0], -$attr/1000*$x[1]);
 	$font_xadd[$_] = $x;
 	$font_yadd[$_] = $y;

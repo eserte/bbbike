@@ -494,14 +494,7 @@ userdel	q4 -7873,66589 -7851,66418
        undef,
        undef,
        undef,
-       {
-         'until' => 1131145200,
-         'text' => 'L 70; (Sperenberg-Trebbin); zw. Abzw.Chrisinend. u. Abzw.Kl.Schulzend.Ber.Brücke B101n Straßen- und Brückenbau Vollsperrung 17.10.2005-04.11.2005 ',
-         'from' => 1129413600,
-         'data' => 'userdel	2 1740,-23380 1079,-23181
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1143756000,
          'text' => 'Rosenthaler Straße zwischen Hackescher Markt und Neue Schönhauser Straße Baustelle, als Einbahnstraße eingerichtet in Richtung Rosenthaler Platz, Dauer: 11.10.2005, 20.00 Uhr bis 30.03.2006 ',
