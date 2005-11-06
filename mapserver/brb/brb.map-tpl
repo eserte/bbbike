@@ -1946,6 +1946,12 @@ LAYER
     NAME "Kirche"
     SYMBOL '[% IMAGE_DIR %]/church.[% IMAGE_SUFFIX %]'
   END
+## XXX Erst aktivieren, wenn sehenswuerdigkeit_polygon auch ..._point für den Mittelpunkt erzeugt
+#  CLASS
+#    EXPRESSION 'SW|IMG:hospital.[% IMAGE_SUFFIX %]'
+#    NAME "Krankenhaus"
+#    SYMBOL '[% IMAGE_DIR %]/hospital.[% IMAGE_SUFFIX %]'
+#  END
   CLASS
     EXPRESSION /./
     NAME "Sehenswürdigkeit"

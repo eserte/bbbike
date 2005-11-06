@@ -2187,12 +2187,21 @@ area (in a balloon or additional label/toplevel).
 =item * (H3)
 
 Make it easy to show additional custom layers (with limited mapserver
-mapfile functionality???).
+mapfile functionality???). E.g. integrate somehow
+miscsrc/bbd2mapservhtml.pl
 
 =item * (M2)
 
 Zurzeit werden innerhalb Berlins Radroutennummern angezeigt. Soll das
 so bleiben?
+
+=item * (H4)
+
+Fehlende Layer: Baustellenzeichen. Die Symbole von BLOCKED_CARRY/_BNP
+sind nicht gedreht. Keine Unterscheidung zwischen handicap und
+qualitaet. Spezieller Modus für das Erzeugen von Mittelpunkten (e.g.
+Schwerpunkt mit Zusatzregeln wie bei den Gewässern). Diese könnten für
+Sehenswürdigkeiten verwendet werden.
 
 =back
 
