@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.72 2005/10/26 00:53:27 eserte Exp $
+# $Id: Makefile,v 2.73 2005/11/05 23:59:08 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -108,7 +108,8 @@ persistent-tmp:	${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
 		${PERSISTENTTMPDIR}/Berlin.coords.bbd \
 		${PERSISTENTTMPDIR}/Potsdam.coords.bbd \
 		${PERSISTENTTMPDIR}/non-faked-plaetze \
-		${PERSISTENTTMPDIR}/non-faked-strassen
+		${PERSISTENTTMPDIR}/non-faked-strassen \
+		${PERSISTENTTMPDIR}/XXX.bbd
 
 # even slower (about four minutes)
 really-slow-checks:	check-crossings-important \
@@ -539,11 +540,20 @@ fragezeichen:	.create_fragezeichen
 	cp -f /tmp/fragezeichen_$(i)-orig.bbd $@
 .endfor
 
+.for i in ${SOURCE_TARGETS}
+${PERSISTENTTMPDIR}/.XXX-$(i):	$(i)-orig
+	${GREPSTRASSEN} -adddirectives XXX ${DATADIR}/$(i)-orig > /dev/null
+	cp -f /tmp/XXX_$(i)-orig.bbd $@
+.endfor
+
 ${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd:	fragezeichen-orig
 	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "projektierte Radstreifen" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
 
 ${PERSISTENTTMPDIR}/strassen_in_planung.bbd:	fragezeichen-orig
 	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "Straßen in Planung" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
+
+${PERSISTENTTMPDIR}/XXX.bbd:	${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.XXX-|}
+	cat ${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.XXX-|} > $@
 
 ${PERSISTENTTMPDIR}/Berlin.coords.bbd: Berlin.coords.data
 	perl -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Berlin.coords.data > $@

@@ -50,6 +50,9 @@ function init() {
         for(var i=0; i<arr.length/2; i++) {
           var key = arr[i*2];
 	  var val = arr[i*2+1];
+alert(val);
+	  val = val.replace(/%40/g, "@");
+alert(val);
   	  if (key == "email" || key == "author") {
 	    frm.elements[key].value = val;
 	  }
@@ -279,6 +282,15 @@ function init() {
 
 
       <tr>       <td>
+        <input id="qqdesc_1_keine Einschr‰nkung" style="margin-right:1em;" type="radio" name="qqdesc_1" value="keine Einschr‰nkung"
+ /></td>
+       <td><label for="qqdesc_1_keine Einschr‰nkung">keine Einschr‰nkung</label>
+
+       </td>
+      </tr>
+
+
+      <tr>       <td>
         <input id="qqdesc_1_viele Fuﬂg‰nger" style="margin-right:1em;" type="radio" name="qqdesc_1" value="viele Fuﬂg‰nger"
  /></td>
        <td><label for="qqdesc_1_viele Fuﬂg‰nger">viele Fuﬂg‰nger</label>
@@ -455,7 +467,7 @@ function init() {
       <tr>       <td>
         <input id="sperrecat_1_1" style="margin-right:1em;" type="radio" name="sperrecat_1" value="1"
  /></td>
-       <td><label for="sperrecat_1_1">Einbahnstraﬂe in Richtung</label>
+       <td><label for="sperrecat_1_1">Einbahnstraﬂe, offen in Richtung</label>
 <input name="sperre_oneway_1"  />
        </td>
       </tr>

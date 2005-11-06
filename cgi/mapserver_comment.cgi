@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.23 2005/05/12 21:12:35 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.23 2005/05/12 21:12:35 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -170,7 +170,7 @@ eval {
 	    start_html(-title=>"Neue Straße für BBBike",
 		       -style=>{'src'=>"$bbbike_html/bbbike.css"}),
 	    "Danke, die Angaben wurden an $to gesendet:",br(),br(),
-	    a({-href => $url}, "Weitere Straße"),
+	    a({-href => $url}, "Weitere Straße eintragen"),
 	    end_html;
     } else {
 	print header(-cookie => $cookie),
@@ -190,7 +190,7 @@ sub error_msg {
     print header,
 	  start_html(-title=>"Fehler beim Versenden",
 		     -style=>{'src'=>"$bbbike_html/bbbike.css"}),
-	  "Der Kommentar konnte wegen eines internen Fehlers ($_[0])nicht abgesandt werden. Bitte stattdessen eine Mail an ", a({-href=>"mailto:$to"},$to),
+	  "Der Kommentar konnte wegen eines internen Fehlers ($_[0]) nicht abgesandt werden. Bitte stattdessen eine Mail an ", a({-href=>"mailto:$to"},$to),
 	  " mit dem folgenden Inhalt versenden:",br(),br(),
 	  pre($comment),
 	  end_html;

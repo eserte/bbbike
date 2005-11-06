@@ -560,14 +560,7 @@ userdel	q4; 7716,8048 7716,8356 7712,8560
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1131231600,
-         'text' => 'Brückensperrung zwischen Seehausen und Potzlow Die Brücke ist ab dem 5.9.2005 bis zum 5.11.2005 auch für Radfahrer nicht passierbar ',
-         'from' => 1130792769,
-         'data' => 'userdel	2 40230,90006 40938,90213
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1132354800,
          'text' => 'Eldenaer Str. zwischen Thaerstr. und Proskauer Str. Baustelle, wegen Bauarbeiten gesperrt. Dauer: bis 18.11.2005',

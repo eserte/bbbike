@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: RotX11Font.pm,v 1.14 1999/08/30 20:39:30 eserte Exp eserte $
+# $Id: RotX11Font.pm,v 1.15 2005/11/05 22:42:55 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 1999 Slaven Rezic. All rights reserved.
@@ -149,19 +149,19 @@ sub get_x11font_resources {
     my $fid = $main::x11->new_rsrc;
     $main::x11->OpenFont($fid, $font);
     my(%res) = $main::x11->QueryFont($fid);
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\%res],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\%res],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 
     my @x;
     foreach (keys %{$res{'properties'}}) {
 	my $atom_name = $main::x11->atom_name($_);
-	warn "$atom_name $res{'properties'}->{$_} " . eval { $main::x11->atom_name($res{'properties'}->{$_}) };
+#	warn "$atom_name $res{'properties'}->{$_} " . eval { $main::x11->atom_name($res{'properties'}->{$_}) };
 	if ($atom_name eq 'FONT') {
 	    my $realfont;
 	    $realfont = $main::x11->atom_name($res{'properties'}->{$_});
 	    my(@f) = split(/-/, $realfont);
 	    @x = split(/\s/, substr($f[7], 1, length($f[7])-2));
 	    foreach (@x) { s/~/-/g }
-#	    last;
+	    last;
 	}
     }
 

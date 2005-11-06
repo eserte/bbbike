@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: grepstrassen,v 1.10 2005/07/19 23:29:53 eserte Exp eserte $
+# $Id: grepstrassen,v 1.11 2005/11/05 23:59:30 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -23,6 +23,7 @@ my($v, $cat, $catrx, $name, $namerx, $section, $sectionrx);
 my($minarea, $minlength);
 my %special;
 my %special_end;
+my %type_s;
 GetOptions("v" => \$v,
 	   "cat=s" => \$cat,
 	   "catrx=s" => \$catrx,
@@ -31,8 +32,13 @@ GetOptions("v" => \$v,
 	   "section=s" => \$section,
 	   "sectionrx=s" => \$sectionrx,
 	   "special=s" => sub {
+	       my $type = $_[1];
 	       no strict 'refs';
-	       &{"init_" . $_[1]}($_[1]);
+	       &{"init_" . $type}($type);
+	   },
+	   "adddirectives=s" => sub {
+	       my $type = $_[1];
+	       init_directive_handler($type);
 	   },
 	   "minarea=f" => \$minarea,
 	   "minlength=f" => \$minlength,
@@ -86,8 +92,42 @@ while(my($k,$v) = each %special_end) {
 # as a global directive.
 print "# filtered\n" . $new_s->as_string;
 
-# XXX make generic: init_directive_handler, special_directive_handler, end_directive_handler
-# XXX for fragezeichen/XXX etc.
+sub init_directive_handler {
+    my $type = shift;
+    $special{$type} = sub { special_directive_handler($type, @_) };
+    require Storable;
+    $type_s{$type} = Strassen->new;
+    $special_end{$type} = sub { end_directive_handler($type, @_) };
+}
+
+sub special_directive_handler {
+    my($type, $r, $dir) = @_;
+    my $new_r = Storable::dclone($r);
+    if (exists $dir->{$type}) {
+	my $name = $r->[Strassen::NAME] . " (";
+	my @add_names = grep { !/^\s*$/ } @{ $dir->{$type} };
+	if (!@add_names) {
+	    @add_names = $type eq 'fragezeichen' ? "unsicher" : $type;
+	}
+	$name .= join("; ", @add_names);
+	$name .= ")";
+	$new_r->[Strassen::NAME] = $name;
+	$new_r->[Strassen::CAT] = "?";
+	$type_s{$type}->push($new_r);
+    }
+    1;
+}
+
+sub end_directive_handler {
+    my($type) = @_;
+    require File::Basename;
+    $type_s{$type}->write("/tmp/" . $type . "_" . File::Basename::basename($datafile) . ".bbd");
+}
+
+######################################################################
+# XXX obsolete: could be replaced by -adddirectives add_fragezeichen
+# BUT! this would create files /tmp/add_fragezeichen... instead of
+# /tmp/fragezeichen...
 sub init_fragezeichen {
     my $val = shift;
     no strict 'refs';
