@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.23 2005/10/27 01:01:35 eserte Exp $
+# $Id: Makefile,v 1.24 2005/11/06 22:39:07 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -125,6 +125,11 @@ png-to-gif:	\
 		newlayer.gif \
 		car.gif \
 		touristinfo.gif \
+		legend_blocked.gif \
+		legend_blockedroute.gif \
+		legend_carry.gif \
+		legend_narrowpassage.gif \
+		legend_oneway.gif \
 
 png-to-xpm:	\
 		ampel.xpm \

@@ -1501,6 +1501,37 @@ LAYER
 END
 [% END -%]
 
+LAYER
+  NAME "Punktuelle Einschränkungen"
+  TYPE POINT
+  STATUS [% ON_BLOCKED %]
+  DATA gesperrt_point
+  GROUP blocked
+
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION 'BNP'
+    NAME "Drängelgitter, Schranken (bis 1:8000)"
+    SYMBOL '[% IMAGE_DIR %]/legend_narrowpassage.[% IMAGE_SUFFIX %]'
+    MAXSCALE 8000
+  END
+  CLASS
+    EXPRESSION '0'
+    NAME "Tragen erforderlich (bis 1:8000)"
+    SYMBOL '[% IMAGE_DIR %]/legend_carry.[% IMAGE_SUFFIX %]'
+    MAXSCALE 8000
+  END
+
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Punktuelle Einschränkungen"
+    WMS_ABSTRACT "Punktuelle Einschränkungen"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
 # Steigungen
 # XXX Suboptimal gezeichnet. Vielleicht mit (mehrfachen) Größer-Zeichen,
 # optional mit Prozentangabe, falls es große Steigungen sind?
