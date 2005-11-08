@@ -448,14 +448,7 @@ userdel	q4 -7873,66589 -7851,66418
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1131404400,
-         'text' => 'B 87; (Beeskow-Lübben); zw. Abzw. Wittmannsdorf und Abzw. Dollgen Straßenbauarbeiten Vollsperrung 10.10.2005-07.11.2005 ',
-         'from' => 1128808800,
-         'data' => 'userdel	2 58111,-41188 60430,-38587
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1131836400,
