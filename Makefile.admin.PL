@@ -405,15 +405,12 @@ EOF
 . $bbbike_html_rule . <<'EOF'
 
 HOWTO_edit_bbbike_data.html: HOWTO_edit_bbbike_data.sgml Makefile.doc
-	make -f Makefile.doc HOWTO_edit_bbbike_data.html
+	$(MAKE) -f Makefile.doc HOWTO_edit_bbbike_data.html
 
 clean_pod2html:
 
 EOF
 . "bbbikedoc:	README README.english $all_html HOWTO_edit_bbbike_data.html\n" . <<'EOF'
-
-HOWTO_edit_bbbike_data.html: HOWTO_edit_bbbike_data.sgml
-	$(MAKE) -f Makefile.doc HOWTO_edit_bbbike_data.html
 
 # XXX this will fail if there is no symlink to the original libexec position
 ChangeLog:
