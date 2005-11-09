@@ -102,9 +102,7 @@ sub unregister {
     my $subw = $mf->Subwidget($pkg . '_on');
     if (Tk::Exists($subw)) { $subw->destroy }
 
-    my $mmf = $main::top->Subwidget("ModeMenuPluginFrame");
-    my $subm = $mmf->Subwidget($pkg . "_menu");
-    if (Tk::Exists($subm)) { $subm->destroy }
+    BBBikePlugin::remove_menu_button($pkg."_menu");
 
     delete $BBBikePlugin::plugins{$pkg};
 }

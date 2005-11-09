@@ -157,6 +157,27 @@ sub place_menu_button {
     $frame->Advertise($advertised_name . "_menu" => $menu);
 }
 
+sub remove_menu_button {
+    my($advertised_name) = @_;
+    my $frame = $main::top->Subwidget("ModeMenuPluginFrame");
+    my $menu = $frame->Subwidget($advertised_name . "_menu");
+    if ($menu) { $menu->destroy }
+    my $menubutton = $frame->Subwidget($advertised_name);
+    my $mb_p = $menubutton->parent;
+    if ($menubutton) {
+	my(%place_info) = $menubutton->placeInfo;
+	my $mb_w = $menubutton->width;
+	my $mb_x = $place_info{"-x"};
+	$menubutton->placeForget;
+	$menubutton->destroy;
+	for my $other_mb ($mb_p->children) {
+	    my(%other_place_info) = $other_mb->placeInfo;
+	    next if $other_place_info{"-x"} <= $mb_x;
+	    $other_mb->place(-x => $other_place_info{"-x"} - $mb_w);
+	}
+    }
+}
+
 sub replace_plugin_widget {
     my($parent, $widget, $advertised_name) = @_;
 
