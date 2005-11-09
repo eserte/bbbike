@@ -574,6 +574,15 @@ userdel	q4 14096,12827 14336,12758
 userdel	q4 12856,17825 12746,17981
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_81917',
+         'until' => 1151704800,
+         'text' => 'Köthener Brücke in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis Mitte 2006)',
+         'from' => undef,
+         'data' => 'userdel	2 8443,10777 8430,10710
+',
+         'type' => 'gesperrt'
        }
      
 );

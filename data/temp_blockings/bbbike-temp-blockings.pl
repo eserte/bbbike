@@ -2260,7 +2260,7 @@ EOF
        text  => 'L 23; OD Spreenhagen, Brücke über Oder-Spree-Kanal Sanierung Brücke Vollsperrung 24.10.2005-25.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 42349,-5620 42647,-6368
+userdel	2 42349,-5620 42486,-5743 42769,-6313
 EOF
      },
      { from  => 1120946400, # 2005-07-10 00:00
@@ -3209,6 +3209,15 @@ EOF
        data  => <<EOF,
 userdel	q4 13300,17726 12856,17825
 userdel	q4 12856,17825 12746,17981
+EOF
+     },
+     { from  => undef, # 
+       until => Time::Local::timelocal(reverse(2006,7-1,1,0,0,0)), # 2006-07-01 00:00
+       text  => 'Köthener Brücke in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis Mitte 2006)',
+       type  => 'gesperrt',
+       source_id => 'INKO_81917',
+       data  => <<EOF,
+userdel	2 8443,10777 8430,10710
 EOF
      },
     );
