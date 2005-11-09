@@ -1375,6 +1375,8 @@ sub BBBikeHeavy::reload_all {
 	bbbikelazy_reload();
     }
 
+    my @changed_files;
+
     my %change;
     foreach my $type (keys %str_obj) {
 	my $o = $str_obj{$type};
@@ -1382,6 +1384,7 @@ sub BBBikeHeavy::reload_all {
 	if (!$o->is_current) {
 	    $o->reload;
 	    $change{"str"}->{$type} = 1;
+	    push @changed_files, $o->dependent_files;
 	}
     }
     foreach my $type (keys %p_obj) {
@@ -1390,6 +1393,7 @@ sub BBBikeHeavy::reload_all {
 	if (!$o->is_current) {
 	    $o->reload;
 	    $change{"p"}->{$type} = 1;
+	    push @changed_files, $o->dependent_files;
 	}
     }
 
@@ -1420,6 +1424,23 @@ sub BBBikeHeavy::reload_all {
 	    }
 	}
     }
+
+    if (!$edit_mode_flag) { # be fast in edit mode, do not rebuild net
+	my $need_to_rebuild_net = 0;
+	if ($net) {
+	    my %changed_files = map {($_,1)} @changed_files;
+	    for my $net_file ($net->sourcefiles) {
+		if (exists $changed_files{$net_file}) {
+		    $need_to_rebuild_net = 1;
+		    last;
+		}
+	    }
+	}
+	if ($need_to_rebuild_net) {
+	    make_net();
+	}
+    }
+    
 }
 
 1;
