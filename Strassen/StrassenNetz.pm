@@ -113,14 +113,16 @@ sub get_cachefile {
 # Markiert die angegebenen Objekte als Quell-Objekte für dieses StrassenNetz
 # Im Gegensatz dazu müssen dependent_files nicht unbedingt die direkten
 # Quellen sein.
+# Returns nothing meaningful
 ### AutoLoad Sub
 sub source {
     my($self, @source) = @_;
     push(@{$self->{Source}}, @source);
 }
 
-# markiert die angegebenen Straßen-Abkürzungen als Quell-Objekte für
+# Markiert die angegebenen Straßen-Abkürzungen als Quell-Objekte für
 # dieses StrassenNetz
+# Returns nothing meaningful
 ### AutoLoad Sub
 sub source_abk {
     my($self, @source_abk) = @_;
