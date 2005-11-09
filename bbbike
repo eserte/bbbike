@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.198 2005/10/26 00:53:53 eserte Exp $
+# $Id: bbbike,v 3.199 2005/11/09 21:26:17 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.198 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.199 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -11399,6 +11399,7 @@ sub show_info {
 					$url = $url->();
 				    }
 				    require WWWBrowser;
+				    main::status_message("URL: $url", "info");
 				    WWWBrowser::start_browser($url);
 				}
 			       );
@@ -11528,8 +11529,11 @@ sub show_info {
 	    my $mapserver_url = $def->[0];
 	    my $url = "$mapserver_url?coords=" . $real_coords;
 	    $url .= ";mapext=" . join("+",@mapext);
-	    $url .= ";" . join(";", map { "layer=$_" } @layers);
+	    if (@layers) {
+		$url .= ";" . join(";", map { "layer=$_" } @layers);
+	    }
 	    $info_text->insert("end", $def->[1], "link$linkcount");
+	    warn "Mapserver URL: $url\n";
 	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
