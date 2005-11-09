@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.130 2005/10/24 21:16:42 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.131 2005/11/09 00:01:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1308,6 +1308,9 @@ sub advanced_coord_menu {
 		   -command => sub { reload_all() },
 		   -accelerator => 'Ctrl-R',
 		  );
+    $bpcm->checkbutton(-label => M"Lazy drawing für alle Layer",
+		       -variable => \$lazy_plot,
+		      );
 ## XXX NYI:
 #    $bpcm->command(-label => M"Neuzeichnen aller Layer",
 #		   -command => sub { reload_all_unconditionally() },

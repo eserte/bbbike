@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.17 2005/11/03 23:08:07 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.18 2005/11/08 22:14:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -146,7 +146,7 @@ sub get_html {
     <script src="http://maps.google.com/maps?file=api&v=1&key=ABQIAAAAidl4U46XIm-bi0ECbPGe5hR1DE4tk8nUxq5ddnsWMNnWMRHPuxTzJuNOAmRUyOC19LbqHh-nYAhakg" type="text/javascript"></script>
   </head>
   <body>
-    <div id="map" style="width: 600px; height: 500px"></div>
+    <div id="map" style="width: 100%; height: 500px"></div>
     <script type="text/javascript">
     //<![CDATA[
 

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.24 2005/11/06 22:39:07 eserte Exp $
+# $Id: Makefile,v 1.25 2005/11/08 23:59:51 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -78,6 +78,10 @@ bbbike_splash_tkbabybike.xpm: srtbike.xpm
 	convert $< $@
 	chmod ugo+r $@
 
+# The following gifs are not generated automatically with ImageMagick
+# (quality would be too bad):
+#    mosque.gif
+#
 png-to-gif:	\
 		airport.gif \
 		ampelf.gif \
@@ -130,6 +134,7 @@ png-to-gif:	\
 		legend_carry.gif \
 		legend_narrowpassage.gif \
 		legend_oneway.gif \
+		synagogue.gif \
 
 png-to-xpm:	\
 		ampel.xpm \
@@ -170,6 +175,8 @@ png-to-xpm:	\
 		newlayer.xpm \
 		car.xpm \
 		touristinfo.xpm \
+		synagogue.xpm \
+		mosque.xpm \
 
 png-to-wbmp:	\
 		flag2_bl.wbmp \
