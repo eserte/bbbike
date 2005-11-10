@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.37 2005/10/01 22:33:27 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.38 2005/11/10 22:31:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -607,7 +607,13 @@ bundles:
 	if [ ! -h Bundle/make_small_bundle ] ; then \
 	    ln -s ../Makefile.PL Bundle/make_small_bundle; \
 	fi
-	cd Bundle; $(FULLPERL) make_bundle; $(FULLPERL) make_small_bundle
+	if [ ! -h Bundle/make_radzeit_bundle ] ; then \
+	    ln -s ../Makefile.PL Bundle/make_radzeit_bundle; \
+	fi
+	cd Bundle && \
+	    $(FULLPERL) make_bundle && \
+	    $(FULLPERL) make_small_bundle && \
+	    $(FULLPERL) make_radzeit_bundle
 
 # OSD bundles are not supported anymore
 bundles-osd:

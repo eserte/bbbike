@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.112 2005/11/10 22:27:10 eserte Exp $
+# $Id: Makefile.PL,v 1.113 2005/11/10 22:54:53 eserte Exp $
 
 use 5.005;
 
@@ -422,6 +422,7 @@ EOF
 
 sub MY::install {
     my $out = "";
+    my @bbbikeexe = qw(bbbike cbbbike bbbikeclient cmdbbbike smsbbbike);
     $out .= <<'EOF';
 install:
 	@echo "*** No installation process yet."
@@ -429,6 +430,48 @@ install:
 	@sleep 1
 
 EOF
+    my($INSTALL_PREFIX, $BBBIKE_DEST_DIR);
+    if (-f "/etc/debian-release") {
+	print STDERR "Choosing Debian layout (/usr/lib/BBBike, executable in /usr/bin)...\n";
+	$INSTALL_PREFIX = "/usr";
+	$BBBIKE_DEST_DIR = "/usr/lib/BBBike";
+    } elsif ($^O =~ /^(freebsd|netbsd|openbdf|bsdi|bsd386)$/) {
+	print STDERR "Choosing BSD layout (/usr/local/BBBike, executable in /usr/local/bin)...\n";
+	$INSTALL_PREFIX = "/usr/local"; # but better would be ${PREFIX}, which is unfortunately overriden in this Makefile
+	$BBBIKE_DEST_DIR = "${INSTALL_PREFIX}/BBBike";
+    } elsif (-d "/opt") {
+	print STDERR "Choosing /opt layout (/opt/BBBike, executable in /usr/bin)...\n";
+	$INSTALL_PREFIX = "/usr";
+	$BBBIKE_DEST_DIR = "/opt/BBBike";
+    } elsif (-d "/usr/local") {
+	print STDERR "Choosing /usr/local layout (/usr/local/BBBike, executable in /usr/bin)...\n";
+	$INSTALL_PREFIX = "/usr";
+	$BBBIKE_DEST_DIR = "/usr/local/BBBike";
+    } elsif ($^O eq 'MSWin32') {
+	die "No support for MSWin32 yet";
+    } else {
+	print STDERR "Choosing /usr layout (/usr/BBBike, executable in /usr/bin)...\n";
+	$INSTALL_PREFIX = "/usr";
+	$BBBIKE_DEST_DIR = "/usr/BBBike";
+    }
+    $out .= <<EOF;
+INSTALL_PREFIX?=	$INSTALL_PREFIX
+BBBIKE_DEST_DIR?=	$BBBIKE_DEST_DIR
+
+EOF
+    $out .= <<'EOF';
+install-to-usr-local:
+	-rm -rf ${BBBIKE_DEST_DIR}
+	cp -R . ${BBBIKE_DEST_DIR}
+	find ${BBBIKE_DEST_DIR} | xargs chmod ugo+r
+	find ${BBBIKE_DEST_DIR} -perm -u=x | xargs chmod go+x
+EOF
+    for my $f (@bbbikeexe) {
+	$out .= <<EOF;
+	-rm -f \${INSTALL_PREFIX}/bin/$f
+	ln -s \${BBBIKE_DEST_DIR}/$f \${INSTALL_PREFIX}/bin/$f
+EOF
+    }
     return $out;
 
     # XXX disabled for now --- the installer does not work with newer
