@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead.t,v 1.12 2005/05/10 06:35:52 eserte Exp $
+# $Id: cgihead.t,v 1.13 2005/11/10 22:29:53 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -64,7 +64,8 @@ if (defined $mapserver_prog_url) {
     diag("No URL for mapserv defined");
 }
 
-plan tests => scalar @prog + scalar @static;
+my $extra_tests = 2;
+plan tests => scalar(@prog) + scalar(@static) + $extra_tests;
 
 delete $ENV{PERL5LIB}; # override Test::Harness setting
 for my $prog (@prog) {
@@ -89,8 +90,13 @@ sub check_url {
     (my $safefile = $prog) =~ s/[^A-Za-z0-9._-]/_/g;
     my $ua = LWP::UserAgent->new;
     $ua->agent('BBBike-Test/1.0');
-    my $req = $ua->head($url);
-    ok($req->is_success, $url) or diag $req->content;
+    my $resp = $ua->head($url);
+    ok($resp->is_success, $url) or diag $resp->content;
+
+    if ($url =~ /bbbike-data.cgi/) {
+	is($resp->content_type, "application/zip", "Expected mime-type for bbbike-data.cgi");
+	like($resp->header("content-disposition"), qr{^attachment;\s*filename=bbbike_data.*\.zip$}, "Expected attachment marker");
+    }
 }
 
 __END__

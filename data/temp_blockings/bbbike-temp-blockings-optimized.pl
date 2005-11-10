@@ -577,12 +577,23 @@ userdel	q4 12856,17825 12746,17981
        },
        {
          'source_id' => 'INKO_81917',
-         'until' => 1151704800,
+         'until' => 1154296800,
          'text' => 'Köthener Brücke in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis Mitte 2006)',
          'from' => undef,
          'data' => 'userdel	2 8443,10777 8430,10710
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1131793200,
+         'text' => 'Behrenstraße, zwischen Kreuzung Ebertstraße und Kreuzung Glinkastraße in beiden Richtungen Veranstaltung, Straße gesperrt, Dauer: 10.11.2005 12:00 Uhr bis 12.11.2005 12:00 Uhr ',
+         'from' => 1131534000,
+         'data' => 'userdel	q4 8851,12123 9059,12155
+userdel	q4 8851,12123 8737,12098
+userdel	q4 8595,12066 8737,12098
+userdel	q4 9164,12172 9059,12155
+',
+         'type' => 'handicap'
        }
      
 );

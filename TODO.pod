@@ -552,7 +552,7 @@ Strassen-Objekte, Crossings, Netze etc. Caching bei Belieben
 einstellen, evtl. mit Ties arbeiten, die sich selbst umwandeln oder
 durchgE<auml>ngig mit Methoden. AutoLoading verwenden.
 
-=E<gt> Teilweise erledigt BBBikeRouting.pm einige dieser Sachen...
+Z<>=E<gt> Teilweise erledigt BBBikeRouting.pm einige dieser Sachen...
 
 =item * (H1)
 
@@ -596,7 +596,7 @@ Evtl. auch:
 3D-Darstellung von Berlin (z.B. vier versetzte FlE<auml>chen, die
 oberste in der Hintergrundfarbe und die anderen in der Schattenfarbe).
 
-=> Wo verwenden: overview-Fenster, overview-Button oder im CanvasMap
+Z<>=> Wo verwenden: overview-Fenster, overview-Button oder im CanvasMap
 anstelle der normalen Grenzen?
 
 =item * (H2)
@@ -1810,7 +1810,7 @@ Analyse einer Kreuzung:
 
 =back
 
-=E<gt> nicht unbedingt notwendig, die jetzige LE<ouml>sung reicht erst
+Z<>=E<gt> nicht unbedingt notwendig, die jetzige LE<ouml>sung reicht erst
 einmal aus...
 
 =item * (H3)
@@ -2282,10 +2282,6 @@ AbhE<auml>ngigkeit von HAVE_KDE angeben.
 
 =item * (M2)
 
-Test für cgi/bbbike-data.zip schreiben
-
-=item * (M2)
-
 Cgiinfo in cgi2.t funktioniert leider nicht, weil openURL als zweiten
 Parameter nur true oder false zulE<auml>E<szlig>t. Workaround:
 Schreiben eines Multiplexers, der per Javascript neue Fenster
@@ -2297,7 +2293,7 @@ E<ouml>ffnet.
  many warnings, sometimes even coredumps on RedHat (?). The 2nd pass is
  usually OK.
 
- => maybe the cache build should be done in a separate process. This
+Z<>=> maybe the cache build should be done in a separate process. This
  would save memory which probably can't be given back to the process.
 
  add another full-test rule which calls some tests with their
@@ -2308,10 +2304,6 @@ E<ouml>ffnet.
 =head1 Documentation
 
 =over 
-
-=item * (E2)
-
-pod2html: Pod::ProjectDocs hat gute Ratings bekommen, ausprobieren!
 
 =item * (M4)
 

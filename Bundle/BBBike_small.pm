@@ -1,6 +1,6 @@
 # -*- perl -*-
 
-package Bundle::BBBike;
+package Bundle::BBBike_small;
 
 $VERSION = sprintf("%d.%02d", q$Revision: 2.3 $ =~ /(\d+)\.(\d+)/);
 
@@ -10,25 +10,24 @@ __END__
 
 =head1 NAME
 
-Bundle::BBBike - A bundle to install all dependencies of BBBike
+Bundle::BBBike - A bundle to install only mandatory dependencies of BBBike
 
 =head1 SYNOPSIS
 
- perl -I`pwd` -MCPAN -e 'install Bundle::BBBike'
+ perl -I`pwd` -MCPAN -e 'install Bundle::BBBike_small'
 
 =head1 CONTENTS
+
 
 Tk 800.000	- das absolute Muss!
 
 
-
 =head1 DESCRIPTION
 
-Dieses BE<uuml>ndel listet alle erforderlichen und empfohlenen Module
-fE<uuml>r BBBike auf. Bis auf B<Tk> sind alle anderen Module optional.
+Dieses BE<uuml>ndel listet nur die notwendigen Module
+fE<uuml>r BBBike auf.
 
-This bundle lists all required and optional perl modules for BBBike.
-Only B<Tk> is really required, all other modules are optional.
+This bundle lists only mandatory perl modules for BBBike.
 
 =head1 AUTHOR
 

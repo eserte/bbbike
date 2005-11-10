@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Standard.pm,v 1.6 2001/11/07 23:16:24 eserte Exp $
+# $Id: Standard.pm,v 1.7 2005/11/10 21:03:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -29,7 +29,7 @@ sub new {
     my $class = shift;
     my $self =
       {
-       Name     => 'Standard',
+       Name     => 'Standard (BBBike)',
        Token    => 'standard',
        Coordsys => 'H',
 

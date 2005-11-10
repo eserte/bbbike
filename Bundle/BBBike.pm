@@ -18,6 +18,7 @@ Bundle::BBBike - A bundle to install all dependencies of BBBike
 
 =head1 CONTENTS
 
+
 Tk 800.000	- das absolute Muss!
 
 Tk::FireButton	- "Firebutton"-Funktionalität für die Windrose
@@ -42,11 +43,15 @@ Image::Magick	- für Bildmanipulationen beim Radar-Bild der FU
 
 Apache::Session::DB_File	- optionale Session-Verwaltung für das CGI-Programm, notwendig für wapbbbike
 
+Apache::Session::Counted	- optionale aber sehr zu empfehlende Session-Verwaltung für das CGI-Programm
+
 XML::SAX	- CPAN.pm kann XML::SAX nicht über XML::Simple automatisch installieren
 
 XML::Simple	- optional für XML-Dumps der BBBike-Route
 
 XML::Parser	- optional für UAProf parsing (alternative wäre XML::SAX::PurePerl)
+
+XML::LibXML	- optional für das Parsen von GPX-Dateien
 
 YAML	- optional für YAML-Dumps der BBBike-Route sowie fuer temp_blockings
 
@@ -115,7 +120,6 @@ Test::Differences
 Test::NoWarnings
 
 WWW::Mechanize	- Für Testen des CGI-Interfaces
-
 
 
 =head1 DESCRIPTION

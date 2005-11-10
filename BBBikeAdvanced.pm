@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.131 2005/11/09 00:01:40 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.132 2005/11/10 21:06:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -853,14 +853,35 @@ sub set_coord_interactive {
 			  -title => M"Punktkoordinaten setzen");
     return if !defined $t;
 
+    my $fill_coordsystem_list;
+    my $use_full_coordsystem_list = 0;
+
     my $coord_menu;
     my $coord_output = $coord_output;
     {
 	require Tk::Optionmenu;
-	my $f = $t->Frame->pack;
+	my $f = $t->Frame->pack(-anchor => "w", -fill => "x");
 	$f->Label(-text => M("Koordinatensystem").":")->pack(-side => "left");
 	$coord_menu = $f->Optionmenu(-variable => \$coord_output,
-				     -options => [ (map { [ $Karte::map{$_}->name, $_ ] } @Karte::map), "canvas" ])->pack(-side => "left");
+				    )->pack(-side => "left", -fill => "x");
+	$fill_coordsystem_list = sub {
+	    my @coordsystem_list = ((map { [ $Karte::map{$_}->name, $_ ] } @Karte::map), "canvas");
+	    if (!$use_full_coordsystem_list) {
+		@coordsystem_list = grep {
+		    ref $_ eq 'ARRAY' &&
+			$_->[1] =~ /^(polar|standard|gps|gdf)$/;
+		} @coordsystem_list;
+	    }
+	    $coord_menu->configure(-options => [ @coordsystem_list ]);
+	};
+	$fill_coordsystem_list->();
+    }
+    {
+	my $f = $t->Frame->pack(-anchor => "w", -fill => "x");
+	$f->Checkbutton(-text => "erweiterte Liste",
+			-variable => \$use_full_coordsystem_list,
+			-command => $fill_coordsystem_list,
+		       )->pack(-side => "right");
     }
 
     my($valx, $valy);

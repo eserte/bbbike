@@ -419,6 +419,10 @@ ChangeLog:
 clean_cache:
 	echo rm -rf cache/*
 
+# Alternative Pod generator using Pod::ProjectDocs, looks like CPAN docs
+pod-projdocs:
+	pod2projdocs -title BBBike -desc "Der Fahrradroutenplaner für Berlin und Brandenburg" -verbose -charset "iso-8859-1" -out /tmp/pods/ -lib `pwd`
+
 # PORTS, BINDISTS...####################################################
 
 fbsdport:

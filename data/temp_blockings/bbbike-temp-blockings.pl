@@ -3212,12 +3212,23 @@ userdel	q4 12856,17825 12746,17981
 EOF
      },
      { from  => undef, # 
-       until => Time::Local::timelocal(reverse(2006,7-1,1,0,0,0)), # 2006-07-01 00:00
+       until => Time::Local::timelocal(reverse(2006,7-1,31,0,0,0)), # 2006-07-31 00:00
        text  => 'Köthener Brücke in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis Mitte 2006)',
        type  => 'gesperrt',
        source_id => 'INKO_81917',
        data  => <<EOF,
 userdel	2 8443,10777 8430,10710
+EOF
+     },
+     { from  => 1131534000, # 2005-11-09 12:00
+       until => 1131793200, # 2005-11-12 12:00
+       text  => 'Behrenstraße, zwischen Kreuzung Ebertstraße und Kreuzung Glinkastraße in beiden Richtungen Veranstaltung, Straße gesperrt, Dauer: 10.11.2005 12:00 Uhr bis 12.11.2005 12:00 Uhr ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 8851,12123 9059,12155
+userdel	q4 8851,12123 8737,12098
+userdel	q4 8595,12066 8737,12098
+userdel	q4 9164,12172 9059,12155
 EOF
      },
     );

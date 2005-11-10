@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Polar.pm,v 1.15 2005/08/14 18:06:45 eserte Exp $
+# $Id: Polar.pm,v 1.16 2005/11/10 21:03:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ sub new {
     my $class = shift;
     my $self =
       {
-       Name     => 'Polare Koordinaten',
+       Name     => 'Polare Koordinaten (WGS-84)',
        Token    => 'polar',
        Coordsys => 'P',
 

@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.111 2005/10/27 00:58:23 eserte Exp $
+# $Id: Makefile.PL,v 1.112 2005/11/10 22:27:10 eserte Exp $
 
 use 5.005;
 
@@ -233,40 +233,50 @@ sub make_radzeit_bundle {
 }
 
 sub make_general_bundle {
-    my $type = shift;
-    my $file = shift;
-    open(TMPL, "BBBike.pm.tmpl") or die "Can't open template: $!";
-    open(BUNDLE, ">$file") or die "Can't write bundle $file: $!";
-    while(<TMPL>) {
-	print BUNDLE $_;
-	if (/^=head1\s+CONTENTS/) {
-	    print BUNDLE "\n";
-	    foreach my $prereq (@prereq) {
-		if ($type != 0) {
-		    next if ($prereq->[REQTABLE_REQ] & $type) == 0;
-		}
-		print BUNDLE $prereq->[REQTABLE_MODNAME];
-		if ($prereq->[REQTABLE_VERSION]) {
-		    print BUNDLE " " . $prereq->[REQTABLE_VERSION];
-		}
-		if (defined $prereq->[REQTABLE_LONGDESC]) {
-		    my $msg;
-		    # XXX some day, allow building german OR english
-		    # bundle files. For now, it's always german
-		    if (UNIVERSAL::isa($prereq->[REQTABLE_LONGDESC], "HASH")) {
-			$msg = $prereq->[REQTABLE_LONGDESC]->{'de'} ||
-			       $prereq->[REQTABLE_LONGDESC]->{'en'};
-		    } else {
-			$msg = $prereq->[REQTABLE_LONGDESC];
-		    }
-		    print BUNDLE "\t- " . $msg;
-		}
-		print BUNDLE "\n\n";
-	    }
+    my($type, $file, %args) = @_;
+
+    my $modules_string = "\n";
+    foreach my $prereq (@prereq) {
+	if ($type != 0) {
+	    next if ($prereq->[REQTABLE_REQ] & $type) == 0;
 	}
+	$modules_string .= $prereq->[REQTABLE_MODNAME];
+	if ($prereq->[REQTABLE_VERSION]) {
+	    $modules_string .= " " . $prereq->[REQTABLE_VERSION];
+	}
+	if (defined $prereq->[REQTABLE_LONGDESC]) {
+	    my $msg;
+	    # XXX some day, allow building german OR english
+	    # bundle files. For now, it's always german
+	    if (UNIVERSAL::isa($prereq->[REQTABLE_LONGDESC], "HASH")) {
+		$msg = $prereq->[REQTABLE_LONGDESC]->{'de'} ||
+		       $prereq->[REQTABLE_LONGDESC]->{'en'};
+	    } else {
+		$msg = $prereq->[REQTABLE_LONGDESC];
+	    }
+	    $modules_string .= "\t- " . $msg;
+	}
+	$modules_string .= "\n\n";
     }
+
+    require Template;
+    my $t = Template->new({ DEBUG => 1 });
+    my $out;
+    (my $bundle_module = $file) =~ s/\.pm$//;
+    $bundle_module = "Bundle::" . $bundle_module;
+    $t->process("BBBike.tpl.pm", { type_num => $type,
+				   type => {0,                  "full",
+					    REQ_BBBIKE_TK,      "small",
+					    REQ_BBBIKE_RADZEIT, "radzeit",
+					   }->{$type},
+				   file => $file,
+				   bundle_module => $bundle_module,
+				   modules_string => $modules_string,
+				   \%args,
+				 }, \$out) or die $t->error;
+    open(BUNDLE, ">$file") or die "Can't write bundle $file: $!";
+    print BUNDLE $out;
     close BUNDLE;
-    close TMPL;
     0;
 }
 
