@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.38 2005/10/27 21:56:57 eserte Exp $
+# $Id: Makefile,v 1.39 2005/11/12 11:34:18 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -63,6 +63,7 @@ IMAGECOLOR?=	225 225 225
 RADZEIT_HOST=		radzeit.herceg.de
 RADZEIT_APACHE_DIR=	/home/e/eserte/src/bbbike/projects/www.radzeit.de
 BBBIKE_MAPSERVER_URL=	http://radzeit.herceg.de/cgi-bin/mapserv
+BBBIKECGI_CONFIG=	$(RADZEIT_APACHE_DIR)/cgi-bin/bbbike.cgi.config
 
 .endif
 
@@ -74,6 +75,7 @@ MAPSERVER_PROG_FSPATH=	/home/slavenr/work2/mapserver/mapserv.cgi
 # XXX port number or not?
 LOCAL_HOST=		localhost:8080
 FONTS_LIST=		fonts-devpc01.list
+BBBIKECGI_CONFIG=	$(ABS_LOCAL_BBBIKE_DIR)/cgi/bbbike-icm.cgi.config
 .endif
 
 .if ${TARGET} == "local" || ${TARGET} == "devpc01"
@@ -99,6 +101,7 @@ IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
 BBBIKE_HTML_RELURL=	/~eserte/bbbike/html				# ***
 BBBIKE_CGI_RELURL=	/~eserte/bbbike/cgi				# ***
 BBBIKE_IMAGES_RELURL=	/~eserte/bbbike/images				# ***
+BBBIKECGI_CONFIG=	$(ABS_LOCAL_BBBIKE_DIR)/cgi/bbbike.cgi.config
 .elif ${TARGET} == "devpc01"
 BBBIKE_HTML_RELURL=	/bbbike/html					# ***
 BBBIKE_CGI_RELURL=	/bbbike/cgi					# ***
@@ -144,6 +147,7 @@ MAPSERVER_RELURL=	/mapserver/brb
 MAPSERVER_URL=		http://$(HOST)$(MAPSERVER_RELURL)
 #MAPSERVER_PROG_RELURL=	/cgi-bin/mapserv
 #MAPSERVER_PROG_URL=	http://$(HOST)$(MAPSERVER_PROG_RELURL)
+BBBIKECGI_CONFIG=	$(RADZEIT_APACHE_DIR)/cgi-bin/bbbike.cgi.config
 .if ${TARGET} == "radzeit.herceg.de"
 BBBIKE_MAPSERVER_URL=	http://radzeit.herceg.de/cgi-bin/mapserv
 .endif
@@ -268,6 +272,11 @@ ADD_BBBIKEVAR_VARS=\
 	BBBIKE_SF_WWW \
 	EMAIL \
 
+# Variables slurped in from bbbike.cgi.config (without sigil)
+ADD_BBBIKECGICONFIG_VARS=\
+	MAPSERVER_PROG_RELURL|mapserver_prog_relurl\
+	MAPSERVER_PROG_URL|mapserver_prog_url\
+
 MAPFILES=	$(SCOPES:S/^/brb-/:S/$/.map/)
 MAPFILES_EXTRA=	brb.map
 IPAQ_MAPFILES=	$(SCOPES:S/^/brb-ipaq-/:S/$/.map/)
@@ -327,7 +336,11 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile ${ABS_LOCAL_BBBIKE_DIR}
 	echo -n "$(bbbikevar_var)=	" >> $@
 	perl -I${ABS_LOCAL_BBBIKE_DIR} -MBBBikeVar -e 'print $$BBBike::$(bbbikevar_var), "\n"' >> $@
 .endfor
-	@echo -n "ALL_LAYERS=	" >> $@
+.for bbbikecgiconfig_var in $(ADD_BBBIKECGICONFIG_VARS)
+	echo -n "${bbbikecgiconfig_var:C/\\|.*//}=	" >> $@
+	perl -e 'require "${BBBIKECGI_CONFIG}"; print $$${bbbikecgiconfig_var:C/.*\\|//}, "\n"' >> $@
+.endfor
+	echo -n "ALL_LAYERS=	" >> $@
 	perl -I${ABS_LOCAL_BBBIKE_DIR} -MBBBikeMapserver -e 'print join(" ", BBBikeMapserver::all_layers()), "\n"' >> $@
 
 .SUFFIXES:	.html-tpl .html .map-tpl .map .js-tpl .js .conf-tpl

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MapServer.pm,v 1.24 2005/08/27 09:31:09 eserte Exp $
+# $Id: MapServer.pm,v 1.24 2005/08/27 09:31:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -363,6 +363,8 @@ sub draw_map {
     $im->BBox([$self->{Min_x}, $self->{Min_y},
 	       $self->{Max_x}, $self->{Max_y}]);
 
+    # I could also use the "-l" option of shp2img, but this works
+    # on the "NAME" of a layer, not a "GROUP"...
     foreach (@{$self->{Draw}}) {
 	if ($_ eq 'title') {
 	    # XXX never positively tested

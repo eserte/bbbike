@@ -1761,6 +1761,11 @@ LAYER
     EXPRESSION /^S[ABC]?$/
     SYMBOL '[% IMAGE_DIR %]/sbahn.[% IMAGE_SUFFIX %]'
     MAXSCALE 15000
+    ## XXX The next LABEL section seems to produce crashes with newer
+    ## Mapservers (4.x). Probably also the LABEL in ubahnhof.
+    ## Or maybe it's the regexp in EXPRESSION? If I leave LABEL as is
+    ## and replace the EXPRESSION with a string EXPRESSION or a much
+    ## simpler regexp, then it also works.
     LABEL
       POSITION auto
       TYPE truetype
