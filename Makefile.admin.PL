@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.38 2005/11/10 22:31:59 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.38 2005/11/10 22:31:59 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -221,6 +221,9 @@ MANIFEST.withcvs:	MANIFEST MANIFEST.addtocvs
 # XXX It would be nicer to use "cp" instead of "ln", but ExtUtils::Manifest is buggy
 full-cvs-dist:	MANIFEST.withcvs
 	perl -MExtUtils::Manifest=manicopy,maniread -e 'manicopy(maniread("MANIFEST.withcvs"), "/tmp/BBBike-CVS", "ln")'
+
+nightly-tarball-from-sourceforge:
+	DATE=`date +%Y%m%d`; wget -O $(HOME)/trash/bbbike-cvsroot.$$DATE.tar.bz2 http://cvs.sourceforge.net/cvstarballs/bbbike-cvsroot.tar.bz2
 
 # DISTRIBUTIONS ##########################################################
 
@@ -687,6 +690,12 @@ data:
 
 BBBikeVar.tpl: BBBikeVar.pm
 	./miscsrc/ttdump --package BBBike --prefix BBBike BBBikeVar.pm > BBBikeVar.tpl
+
+######################################################################
+# Tests
+
+test-with-protocol:
+	DATE=`date +%Y%m%d`; export HARNESS_NOTTY=1; script $(HOME)/trash/bbbike-test-$$DATE $(MAKE) test
 
 EOF
 ;

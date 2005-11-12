@@ -359,14 +359,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1131750000,
-         'text' => 'B 102; zw. Kampehl und B 5, Bückwitz Bau Kreisverkehrsplatz Vollsperrung 07.09.2005-11.11.2005 ',
-         'from' => 1125957600,
-         'data' => 'userdel	2 -53139,50022 -54295,49682
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1204326000,
          'text' => 'B 103; (Kyritzer Chaussee); OD Pritzwalk, zw. Fritz-Reuter-Str. u. Havelberger Str. Bau OU B189n halbseitig gesperrt; Einbahnstraße 15.09.2005-29.02.2008 ',
@@ -476,14 +469,7 @@ userdel	q4 -7873,66589 -7851,66418
        undef,
        undef,
        undef,
-       {
-         'until' => 1131667773,
-         'text' => 'Prenzlauer Berg: Richtung Prenzlauer Allee gesperrt (Kopfsteinpflaster wird durch Asphalt ersetzt)',
-         'from' => 1128899379,
-         'data' => 'userdel	1 11723,13630 11538,13683 11257,13647
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -583,17 +569,6 @@ userdel	q4 12856,17825 12746,17981
          'data' => 'userdel	2 8443,10777 8430,10710
 ',
          'type' => 'gesperrt'
-       },
-       {
-         'until' => 1131793200,
-         'text' => 'Behrenstraße, zwischen Kreuzung Ebertstraße und Kreuzung Glinkastraße in beiden Richtungen Veranstaltung, Straße gesperrt, Dauer: 10.11.2005 12:00 Uhr bis 12.11.2005 12:00 Uhr ',
-         'from' => 1131534000,
-         'data' => 'userdel	q4 8851,12123 9059,12155
-userdel	q4 8851,12123 8737,12098
-userdel	q4 8595,12066 8737,12098
-userdel	q4 9164,12172 9059,12155
-',
-         'type' => 'handicap'
        }
      
 );

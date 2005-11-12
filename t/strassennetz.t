@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassennetz.t,v 1.12 2005/10/02 21:25:49 eserte Exp $
+# $Id: strassennetz.t,v 1.14 2005/11/12 21:06:23 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -34,7 +34,9 @@ BEGIN {
     }
 }
 
-plan tests => 30;
+plan tests => 38;
+
+print "# Tests may fail if data changes\n";
 
 if (!GetOptions(get_std_opts(qw(xxx)))) {
     die "usage: $0 [-xxx]";
@@ -52,7 +54,8 @@ if ($do_xxx) {
 }
 
 {
-    # Bahnhofstr. (Hohenschönhausen): einseitiges Kopfsteinpflaster
+    pass("-- Bahnhofstr. (Hohenschönhausen): einseitiges Kopfsteinpflaster --");
+
     my $net = StrassenNetz->new($qs);
     $net->make_net_cat(-obeydir => 1, -net2name => 1);
     my $route = [[17014,15442],[16888,15462],[16819,15495]];
@@ -62,7 +65,8 @@ if ($do_xxx) {
 }
 
 {
-    # dito
+    pass("-- Bahnhofstr. (Hohenschönhausen): einseitiges Kopfsteinpflaster (dito) --");
+
     my $net = StrassenNetz->new($qs);
     $net->make_net_cat(-obeydir => 1, -net2name => 1, -multiple => 1);
     my $route = [[17014,15442],[16888,15462],[16819,15495]];
@@ -72,12 +76,17 @@ if ($do_xxx) {
 }
 
 {
-    # CP;-Kommentar Buchholzer/Schönhauser Allee
     my $net = StrassenNetz->new($comments_path);
     $net->make_net_cat(-obeydir => 1, -net2name => 1, -multiple => 1);
 
     {
-	my $route = [[11055,15504], [10929,15516], [10917,15418]];
+	pass("-- CP;-Kommentar Buchholzer/Schönhauser Allee --");
+
+	no warnings qw(qw);
+	my $route = [ map { [ split /,/ ] }
+		      qw(
+			 11055,15504 10930,15522 10917,15418
+			) ];
 	my $comment;
 	($comment) = $net->get_point_comment($route, 0, undef);
 	is($comment, undef, "No CP; comment for begin point")
@@ -91,8 +100,13 @@ if ($do_xxx) {
     }
 
     {
-	# CP-Kommentar (beide Richtungen) Sonnenallee/Treptower
-	my $route = [[13478,8095], [13459,8072], [13359,7949]];
+	pass("-- CP-Kommentar (beide Richtungen) Sonnenallee/Treptower --");
+
+	no warnings qw(qw);
+	my $route = [ map { [ split /,/ ] }
+		      qw(
+			 13478,8095 13459,8072 13376,7970
+			) ];
 	my $comment;
 
 	for my $pass (1, 2) {
@@ -113,7 +127,8 @@ if ($do_xxx) {
     }
 
     {
-	# CS;-Kommentar Henriettenplatz
+	pass("-- CS;-Kommentar Henriettenplatz --");
+
 	my $route = [[2702,10006], [2770,10024], [2770,9945], [3044,9621]];
 	my $comment;
 	($comment) = $net->get_point_comment($route, 0, undef);
@@ -131,7 +146,8 @@ if ($do_xxx) {
     }
 
     {
-	# CS-Kommentar (beide Richtungen) Jüdenstr.
+	pass("-- CS-Kommentar (beide Richtungen) Jüdenstr. --");
+
 	my $route =
 	    [ map { [ split /,/ ] } split / /,
 	      "10704,12595 10778,12493 10800,12461 10831,12371 10825,12271"
@@ -163,6 +179,8 @@ if ($do_xxx) {
 }
 
 {
+    pass("-- Scharnweber - Lichtenrader Damm --");
+
     my $c1 = "4695,17648"; # Scharnweberstr.
     my $c2 = "10524,655"; # Lichtenrader Damm
     my($path) = $s_net->search($c1, $c2);
@@ -176,7 +194,8 @@ if ($do_xxx) {
 
 XXX:
 {
-    # Bug reported by Dominik
+    pass("-- Bug reported by Dominik --");
+
     $TODO = "In some strange circumstances, angle may be undef";
     my $route = <<'EOF';
 #BBBike route
