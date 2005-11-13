@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.199 2005/11/09 21:26:17 eserte Exp eserte $
+# $Id: bbbike,v 3.200 2005/11/13 21:25:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.199 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.200 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -6268,8 +6268,7 @@ sub set_map_mode {
     if (@_) {
 	$map_mode = $_[0];
     }
-    $map_mode_deactivate->() if $map_mode_deactivate;
-    undef $map_mode_deactivate; # XXX do something useful...
+    execute_and_set_map_mode_deactivate(undef);
     if ($map_mode eq MM_SEARCH) {
 	if (defined $search_route_flag && $search_route_flag =~ /^ziel/) {
 	    set_cursor('ziel');
@@ -6287,6 +6286,17 @@ sub set_map_mode {
     } elsif (exists $map_mode_callback{$map_mode} &&
 	     ref $map_mode_callback{$map_mode} eq 'CODE') {
 	$map_mode_callback{$map_mode}->();
+    }
+}
+
+sub execute_and_set_map_mode_deactivate {
+    my($new_sub) = @_;
+    if ($map_mode_deactivate) {
+	$map_mode_deactivate->();
+	undef $map_mode_deactivate;
+    }
+    if ($new_sub) {
+	$map_mode_deactivate = $new_sub;
     }
 }
 

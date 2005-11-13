@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVia.pm,v 1.13 2004/06/10 22:57:51 eserte Exp $
+# $Id: BBBikeVia.pm,v 1.15 2005/11/13 21:54:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeVia;
 
 use strict;
 use vars qw($VERSION $move_index $add_point);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use BBBikeGlobalVars;
@@ -138,11 +138,13 @@ sub BBBikeVia::move_via {
     $set_route_point{$map_mode} = sub {
 	# do nothing
     };
-    $map_mode_deactivate = sub {
-	for (qw(start via ziel)) {
-	    $c->bind($_."flag", "<ButtonPress-1>", "");
-	}
-    };
+    execute_and_set_map_mode_deactivate
+	(sub {
+	     for (qw(start via ziel)) {
+		 $c->bind($_."flag", "<ButtonPress-1>", "");
+	     }
+	 }
+	);
     for (qw(start via ziel)) {
 	$c->bind($_."flag", "<ButtonPress-1>" => [\&BBBikeVia::move_via_2, $_]);
     }
@@ -210,12 +212,15 @@ sub BBBikeVia::move_via_cont {
 
 sub BBBikeVia::add_via {
     set_cursor("via_add");
-     $set_route_point{$map_mode} = \&BBBikeVia::add_via_2;
-    $map_mode_deactivate = sub {
-	for (qw(start via ziel)) {
-	    $c->bind($_."flag", "<ButtonPress-1>", "");
-	}
-    };
+    $set_route_point{$map_mode} = \&BBBikeVia::add_via_2;
+    execute_and_set_map_mode_deactivate
+	(sub {
+	     for (qw(start via ziel)) {
+		 $c->bind($_."flag", "<ButtonPress-1>", "");
+	     }
+	     BBBikeVia::unmark_all();
+	 }
+	);
     status_message(M"Neuen Via-Punkt wählen", "info");
 }
 
@@ -264,6 +269,8 @@ sub BBBikeVia::add_via_2 {
 	}
     }
 
+    BBBikeVia::mark_new_via_point();
+
     BBBikeVia::add_via_2_2();
 }
 
@@ -272,6 +279,7 @@ sub BBBikeVia::add_via_2_2 {
     for (qw(start via ziel)) {
 	$c->bind($_."flag", "<ButtonPress-1>" => \&BBBikeVia::add_via_3);
     }
+    BBBikeVia::unmark_neighbours();
     status_message(M"Ersten Nachbarn (Start, Via oder Ziel) wählen", "info");
 }
 
@@ -284,14 +292,58 @@ sub BBBikeVia::add_via_3 {
     }
     my $common = M"Zweiten Nachbarn (Start, Via oder Ziel) wählen";
     if ($BBBikeVia::add_nb1_index == 0) {
-	status_message($common . " " . M"bzw. Start für neuen Startpunkt",
+	status_message($common . " " . M"bzw. noch einmal Start für neuen Startpunkt",
 		       "info");
     } elsif ($BBBikeVia::add_nb1_index == $#search_route_points) {
-	status_message($common . " " . M"bzw. Ziel für neuen Zielpunkt",
+	status_message($common . " " . M"bzw. noch einmal Ziel für neuen Zielpunkt",
 		       "info");
     } else {
 	status_message($common, "info");
     }
+    BBBikeVia::mark_neighbours();
+}
+
+sub BBBikeVia::mark_neighbours {
+    BBBikeVia::unmark_neighbours();
+    my $mark_point = sub {
+	my($index) = @_;
+	my($x, $y) = transpose(split /,/, $search_route_points[$index]->[0]);
+	$c->createLine($x,$y,
+		       -capstyle => $capstyle_round,
+		       -width => 10,
+		       -fill => "red",
+		       -tags => "neighbourmarker",
+		      );
+    };
+    if ($BBBikeVia::add_nb1_index > 0) {
+	$mark_point->($BBBikeVia::add_nb1_index-1);
+    } else {
+	$mark_point->(0);
+    }
+    if ($BBBikeVia::add_nb1_index < $#search_route_points) {
+	$mark_point->($BBBikeVia::add_nb1_index+1);
+    } else {
+	$mark_point->($#search_route_points);
+    }
+}
+
+sub BBBikeVia::mark_new_via_point {
+    my($x, $y) = transpose(split /,/, $BBBikeVia::add_point);
+    $c->createLine($x,$y,
+		   -capstyle => $capstyle_round,
+		   -width => 10,
+		   -fill => "green",
+		   -tags => "vianewpoint",
+		  );
+}
+
+sub BBBikeVia::unmark_neighbours {
+    $c->delete("neighbourmarker");
+}
+
+sub BBBikeVia::unmark_all {
+    BBBikeVia::unmark_neighbours();
+    $c->delete("vianewpoint");
 }
 
 sub BBBikeVia::add_via_action {
@@ -338,9 +390,11 @@ sub BBBikeVia::delete_via {
     $set_route_point{$map_mode} = sub {
 	# do nothing
     };
-    $map_mode_deactivate = sub {
-	$c->bind("viaflag", "<ButtonPress-1>", "");
-    };
+    execute_and_set_map_mode_deactivate
+	(sub {
+	     $c->bind("viaflag", "<ButtonPress-1>", "");
+	 }
+	);
     $c->bind("viaflag", "<ButtonPress-1>" => \&BBBikeVia::delete_action);
     status_message(M"Zu löschenden Via-Punkt auswählen", "info");
 }
