@@ -42,7 +42,7 @@ Jüterboger Str.: mäßiges Kopfsteinpflaster	Q2 10287,8951 9958,8966 9799,8962
 Methfesselstr.: sehr gutes Kopfsteinpflaster, 40 km/h	Q0 9211,9354 9163,9209 9141,9142 9106,9038
 Methfesselstr.: Kopfsteinpflaster	Q2 9106,9038 9057,8936 8982,8781
 Wilhelmshöhe: Verbundsteinpflaster	Q1 9235,9111 9186,9107 9155,9029 9149,8961
-Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7231,7349 7222,6458 7217,6065 7216,5888 7175,5843
+Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7231,7349 7230,7264 7222,6458 7217,6065 7216,5888 7175,5843
 Großgörschenstr.: mäßiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8035,9437 7960,9466
 Waldemarstr.: Kopfsteinpflaster, OK	Q1 11556,10869 11328,10957
 Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11287,10976
@@ -680,8 +680,6 @@ Willdenowstr.: Kopfsteinpflaster	Q2 3826,4800 3684,4998 3426,5292
 Manteuffelstr.: Kopfsteinpflaster	Q2 4092,4217 4521,4484
 Haydnstr.: Kopfsteinpflaster	Q2 4521,4484 4681,4537 4846,4592 5004,4709 5076,4762
 Breite Str.: Kopfsteinpflaster	Q2 5048,4798 5087,4853 5169,4969 5201,5018 5245,5082 5327,5198 5397,5302
-#: unverified_by ADFC-Karte:
-Haynauer Str.: mäßig geeignet	Q2 8039,3242 8055,2885 8018,2657 7897,2380 7921,2302
 Schwedter Str.: Kopfsteinpflaster	Q2 10830,14183 10947,14114
 Schiffbauerdamm: Teilstück mit Kopfsteinpflaster, OK	Q1 9271,12952 9226,12909 9157,12843 9106,12795
 Albrechtstr.: teilweise mäßiger Asphalt	Q1 9106,12795 9046,12933 9001,13039
@@ -2841,6 +2839,13 @@ Friesenstr. (Niederschönhausen): schlechter Sandweg mit vielen Schlaglöchern	Q3 
 (Schönholzer Heide, parallel zur Friesenstr.): hier keine Schlaglöcher	Q2 8789,19278 8784,19253 9446,18855 9475,18862
 Friesickestr.: Asphalt	Q0 12673,16209 12725,16321 12804,16480 12874,16631
 #: by: ^^^
+#: by: Rolf (singar):
+#: note: ADFC-Karte meint hier "mäßig geeignet" (viel Autoverkehr?)
+Haynauer Str.: Asphalt	Q0 8039,3242 8055,2885 8018,2657 7897,2380 7921,2302
+#: by: Stefan Lieb:
+Calandrellistr.: gut befahrbar	Q0 5362,3612 5536,3685 5702,3762
+#: unverified_by ADFC-Karte
+Calandrellistr.: mäßig geeignet	Q2 5702,3762 5959,3875 6138,3956 6294,4021
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

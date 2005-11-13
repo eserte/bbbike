@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.113 2005/11/10 22:54:53 eserte Exp $
+# $Id: Makefile.PL,v 1.113 2005/11/10 22:54:53 eserte Exp eserte $
 
 use 5.005;
 
@@ -381,6 +381,7 @@ sub MY::top_targets {
 	@echo "or type"
 	@echo "    $(PERL) ./bbbike"
 	@echo "to start the program without installation"
+	false
 
 ext:
 	cd ext && ${MAKE} ext PERL="${FULLPERL}"

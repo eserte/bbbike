@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.132 2005/11/10 21:06:49 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.132 2005/11/10 21:06:49 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2708,6 +2708,7 @@ sub search_movie {
 
 use vars qw(@search_anything_history);
 
+# Full text search
 ### AutoLoad Sub
 sub search_anything {
     my($s) = @_;
@@ -2764,7 +2765,8 @@ sub search_anything {
     my $e;
     my @inx2match;
 
-    my $sort = "alpha"; # XXX make global or configurable
+    my $sort = "alpha"; # XXX make global and/or configurable
+    my $focus_transfer = 0; # XXX dito
 
     my $do_search = sub {
 	return if $s eq '';
@@ -2965,10 +2967,10 @@ sub search_anything {
     $e->bind("<Return>" => $do_search);
 
     {
-	package Tk::ListboxSearchAnything;
-	use base qw(Tk::Listbox);
-	Construct Tk::Widget 'ListboxSearchAnything';
-	sub UpDown {
+ 	package Tk::ListboxSearchAnything;
+ 	use base qw(Tk::Listbox);
+ 	Construct Tk::Widget 'ListboxSearchAnything';
+ 	*UpDown = sub {
 	    my($w, $amount) = @_;
 	    my $new_amount = $amount;
 	    my $new_inx = $w->index('active')+$amount;
@@ -2985,7 +2987,7 @@ sub search_anything {
 		}
 	    }
 	    $w->SUPER::UpDown($new_amount);
-	}
+ 	};
     }
 
     $lb = $t->Scrolled("ListboxSearchAnything", -scrollbars => "osoe",
@@ -3009,6 +3011,20 @@ sub search_anything {
 			   )->pack(-anchor => "w");
 	}
     }
+    {
+	my $f = $t->LabFrame(-label => M("Fokus nach Auswahl"),
+			     -labelside => "acrosstop",
+			    )->pack(-fill => "x");
+	$f->Radiobutton(-text => M("Suchfenster"),
+			-variable => \$focus_transfer,
+			-value => 0,
+		       )->pack(-anchor => "w");
+	$f->Radiobutton(-text => M("Karte"),
+			-variable => \$focus_transfer,
+			-value => 1,
+		       )->pack(-anchor => "w");
+    }
+
     my $cb;
     {
 	my $f = $t->Frame->pack(-fill => "x");
@@ -3023,7 +3039,7 @@ sub search_anything {
     }
     $t->protocol(WM_DELETE_WINDOW => sub { $cb->invoke });
 
-    my $select = sub {
+    my $_select = sub {
 	my($inx) = ($lb->curselection)[0];
 	return unless defined $inx;
 	my $match = $inx2match[$inx];
@@ -3052,6 +3068,7 @@ sub search_anything {
 	    my($xy) = $match->[1][0];
 	    mark_point(-coords => [[[ $transpose->(split /,/, $xy) ]]],
 		       -clever_center => 1);
+	    return 1;
 	} elsif (@{$match->[1]} > 1) {
 	    my @line_coords_array;
 	    foreach my $polyline ($match->[1], @{ $match->[3] }) {
@@ -3063,8 +3080,19 @@ sub search_anything {
 	    }
 	    mark_street(-coords => [@line_coords_array],
 			-clever_center => 1);
+	    return 1;
+	} else {
+	    return 0;
 	}
     };
+    my $select = sub {
+	my $ret = $_select->(@_);
+	if ($ret && $focus_transfer) {
+	    $top->focusForce;
+	}
+	$ret;
+    };
+
     $lb->bind("<Double-1>" => $select);
     $lb->bind("<Return>" => $select);
 

@@ -189,6 +189,11 @@ additional layers. An alias for C<attributes> is C<attrs>.
 
 A free text note, which shouldn't appear in the processed data.
 
+=item C<see_also: I<string>>
+
+A free text note, which refers to more information. This should be
+typically a URL.
+
 =item C<add_fragezeichen: I<string>>
 
 Some postprocessing code may add the following line with the

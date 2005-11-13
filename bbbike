@@ -11193,8 +11193,9 @@ sub find_below {
     my %allowed_tags;
     foreach (@allowed_tags) { $allowed_tags{$_} = 1 }
     my %res;
-    my $item;
-    foreach $item (@items) {
+    # Now using "reverse", so top-most items are preferred
+    # XXX Hopefully this change does not break anything.
+    foreach my $item (reverse @items) {
 	my(@tags) = $c->gettags($item);
 	if ($allowed_tags{$tags[0]} && !exists $res{$tags[0]}) {
 	    $res{$tags[0]} = $item;
@@ -11215,9 +11216,12 @@ sub find_below_rx {
     my $e = $c->XEvent;
     my($xx, $yy) = ($c->canvasx($e->x), $c->canvasy($e->y));
     my(@items) = $c->find(overlapping => $xx-1, $yy-1, $xx+1, $yy+1);
-    foreach my $item (@items) {
+    # Now using "reverse", so top-most items are preferred
+    # XXX Hopefully this change does not break anything.
+    foreach my $item (reverse @items) {
 	my(@tags) = $c->gettags($item);
-	for my $tag (@tags[@$tag_pos]) {
+	my @restricted_tags = $tag_pos ? @tags[@$tag_pos] : @tags;
+	for my $tag (@restricted_tags) {
 	    for my $rx (@$allowed_rx_tags) {
                 if ($tag =~ /$rx/) {
 		    return ($item, @tags);
@@ -11284,7 +11288,8 @@ sub show_info {
     my $strname = $tags[1];
 
     my(@coords) = $c->coords('current');
-    if (!@coords || @coords > 2) {
+    my $current_is_label = $c->type('current') eq 'text';
+    if (!@coords || @coords > 2 || $current_is_label) {
 	my($px,$py) = $c->pointerxy;
         $px -= $c->rootx;
         $py -= $c->rooty;
@@ -11293,7 +11298,7 @@ sub show_info {
     require Karte::Polar;
     require Karte::UTM;
     require Karte::ETRS89;
-    my($sx,$sy) = anti_transpose($coords[0], $coords[1]);
+    my($sx,$sy) = $Karte::Standard::obj->trim_accuracy(anti_transpose($coords[0], $coords[1]));
     my($px,$py) = $Karte::Polar::obj->trim_accuracy($coord_system_obj->map2map($Karte::Polar::obj, $sx, $sy));
     my @polarcoord = (Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($py)),
 		      Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($px)));
@@ -16146,6 +16151,9 @@ sub nearest_line_points_mouse {
     my $e = $c->XEvent;
     my($x, $y) = ($c->canvasx($e->x), $c->canvasy($e->y));
     @tags = $c->gettags('current') if !@tags;
+    if (grep { /-label/ } @tags) { # ignore labels
+	(undef, @tags) = find_below_rx($c, [q{.}]);
+    }
     nearest_line_points($x, $y, @tags);
 }
 

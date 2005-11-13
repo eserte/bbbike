@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.18 2005/11/08 22:14:20 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.18 2005/11/08 22:14:20 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -144,6 +144,7 @@ sub get_html {
     <title>BBBike data presented with Googlemap</title>
     <link rel="stylesheet" type="text/css" href="/BBBike/html/bbbike.css"><!-- XXX only for radzeit -->
     <script src="http://maps.google.com/maps?file=api&v=1&key=ABQIAAAAidl4U46XIm-bi0ECbPGe5hR1DE4tk8nUxq5ddnsWMNnWMRHPuxTzJuNOAmRUyOC19LbqHh-nYAhakg" type="text/javascript"></script>
+    <script src="/BBBike/html/sprintf.js" type="text/javascript"></script>
   </head>
   <body>
     <div id="map" style="width: 100%; height: 500px"></div>
@@ -167,8 +168,13 @@ sub get_html {
     }
     
     function showCoords(point, message) {
-        var latLngStr = message + point.x + "," + point.y;
+        var latLngStr = message + formatPoint(point);
         document.getElementById("message").innerHTML = latLngStr;
+    }
+
+    function formatPoint(point) {
+	var s = sprintf("%.6f,%.6f", point.x, point.y);
+	return s;
     }
 
     function addCoordsToRoute(point) {
@@ -206,7 +212,7 @@ sub get_html {
 	    } else if (i > 0) {
 		addRouteText += " ";
 	    }
-	    addRouteText += addRoute[i].x + "," + addRoute[i].y;
+	    addRouteText += formatPoint(addRoute[i]);
 	}
         document.getElementById("addroutetext").innerHTML = addRouteText;
     }
@@ -223,8 +229,17 @@ sub get_html {
     }
 
     function showLink(point, message) {
-        var latLngStr = message + "@{[ url(-full => 1) ]}?zoom=" + map.getZoomLevel() + "&wpt=" + point.x + "," + point.y + "&coordsystem=polar";
+        var latLngStr = message + "@{[ url(-full => 1) ]}?zoom=" + map.getZoomLevel() + "&wpt=" + formatPoint(point) + "&coordsystem=polar";
         document.getElementById("permalink").innerHTML = latLngStr;
+    }
+
+    function checkSetCoordForm() {
+	if (document.googlemap.wpt_or_trk.value == "") {
+	    alert("Bitte Koordinaten eingeben (z.B. im WGS84-Modus: 13.376431,52.516172)");
+	    return false;
+	}
+	setZoomInForm();
+	return true;	
     }
 
     function setZoomInForm() {
@@ -293,7 +308,7 @@ EOF
     $html .= <<EOF;
     </div>
 
-<form name="googlemap" onsubmit='setZoomInForm()' style="margin-top:1cm; border:1px solid black; padding:3px;">
+<form name="googlemap" onsubmit='return checkSetCoordForm()' style="margin-top:1cm; border:1px solid black; padding:3px;">
   <input type="hidden" name="zoom" value="@{[ $zoom ]}" />
   Koordinatensystem:<br />
   <label><input type="radio" name="coordsystem" value="standard" @{[ $coordsystem eq 'standard' ? 'checked' : '' ]} /> BBBike</label><br />
@@ -305,9 +320,9 @@ EOF
 </form>
 
 <form name="addroute" style="margin-top:0.5cm; border:1px solid black; padding:3px;" method="post" enctype="multipart/form-data">
-  <label>Clicking adds to route <input type="checkbox" name="addroute"  /></label>
-  <a href="javascript:deleteLastPoint()">Delete last point</a>
-  <a href="javascript:resetRoute()">Delete route</a>
+  <label>Mit Mausklicks eine Route erstellen <input type="checkbox" name="addroute"  /></label>
+  <a href="javascript:deleteLastPoint()">Letzten Punkt löschen</a>
+  <a href="javascript:resetRoute()">Route löschen</a>
 </form>
 
 <form name="upload" onsubmit='setZoomInUploadForm()' style="margin-top:0.5cm; border:1px solid black; padding:3px;" method="post" enctype="multipart/form-data">
