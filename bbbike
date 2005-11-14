@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.200 2005/11/13 21:25:05 eserte Exp $
+# $Id: bbbike,v 3.202 2005/11/14 22:13:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.200 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.202 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -7983,11 +7983,7 @@ sub load_save_route {
 		$c->center_view2($coords[0]->[0], $coords[0]->[1], $x2, $y2);
 	    }
 
-	    if ($net) {
-		for (@search_route_points) {
-		    add_new_point($net, $_->[SRP_COORD], -quiet => 1);
-		}
-	    }
+	    restore_search_route_points();
 
 	    redraw_path();
 	    updatekm();
@@ -12789,6 +12785,7 @@ sub get_route_from_register {
     @realcoords       = @{ $r->{RealCoords}     };
     realcoords2coords();
     @search_route_points = @{ $r->{SearchRoutePoints} };
+    restore_search_route_points();
 
     if ($bikepwr) {
 	for(my $i = 0; $i <= $#power; $i++) {
@@ -12805,8 +12802,17 @@ sub get_route_from_register {
     $nr = $r->{Nr};
 
     redraw_path();
+    update_route_strname();
 
     1;
+}
+
+sub restore_search_route_points {
+    if ($net) {
+	for (@search_route_points) {
+	    add_new_point($net, $_->[SRP_COORD], -quiet => 1);
+	}
+    }
 }
 
 sub set_canvas_scale {

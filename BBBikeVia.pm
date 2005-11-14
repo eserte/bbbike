@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVia.pm,v 1.15 2005/11/13 21:54:01 eserte Exp eserte $
+# $Id: BBBikeVia.pm,v 1.16 2005/11/14 22:04:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeVia;
 
 use strict;
 use vars qw($VERSION $move_index $add_point);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use BBBikeGlobalVars;
@@ -312,7 +312,7 @@ sub BBBikeVia::mark_neighbours {
 		       -capstyle => $capstyle_round,
 		       -width => 10,
 		       -fill => "red",
-		       -tags => "neighbourmarker",
+		       -tags => ["neighbourmarker", BBBikeVia::_get_tag_name_from_index($index)],
 		      );
     };
     if ($BBBikeVia::add_nb1_index > 0) {
@@ -425,6 +425,18 @@ sub BBBikeVia::_find_point_from_tags {
     warn "Can't find point in @tags";
     return undef;
 }
+
+sub BBBikeVia::_get_tag_name_from_index {
+    my($index) = @_;
+    if ($index == 0) {
+	"startflag";
+    } elsif ($index == $#search_route_points) {
+	"zielflag";
+    } else {
+	("viaflag", "via-$index");
+    }
+}
+
 
 1;
 

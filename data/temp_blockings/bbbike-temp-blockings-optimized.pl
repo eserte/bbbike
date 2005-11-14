@@ -443,14 +443,7 @@ userdel	q4 -7873,66589 -7851,66418
        undef,
        undef,
        undef,
-       {
-         'until' => 1131836400,
-         'text' => 'B 198; OD Prenzlau, Dr.-Wilhelm-Külz-Str. grundh. Straßenbau Vollsperrung 10.10.2005-12.11.2005 ',
-         'from' => 1128808800,
-         'data' => 'userdel	q4 39715,101866 39574,101863 39322,101924
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -569,6 +562,16 @@ userdel	q4 12856,17825 12746,17981
          'data' => 'userdel	2 8443,10777 8430,10710
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'source_id' => 'IM_002352',
+         'until' => 1167605999,
+         'text' => 'Siemensstr. (Köpenick) Richtung Karlshorst, zwischen Wattstr. und Deulstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
+         'from' => 1132003156,
+         'data' => 'userdel	q4; 17766,6616 17962,6674
+',
+         'type' => 'handicap'
        }
      
 );

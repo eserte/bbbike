@@ -1,5 +1,5 @@
 #: title: Strassen-Koordinaten (standard coords)
-#: version: $Id: strassen-orig,v 4.120 2005/10/16 11:36:38 eserte Exp eserte $
+#: version: $Id: strassen-orig,v 4.121 2005/11/14 22:05:51 eserte Exp $
 #: title.de: Straßen und Plätze in Berlin
 #: title.en: Streets and places in Berlin
 #:
@@ -1429,6 +1429,7 @@ Grünauer Str. (Altglienicke)	H 19771,1793 19913,1678 20145,1632 20315,1589 20455
 Am Falkenberg	H 20455,1577 20925,1397 21186,1250 21506,1006 21700,882 21847,794 22012,706
 Rosestr.	N 21506,1006 21317,772 21103,600 20990,518 20828,505 20672,560
 Rosestr.	NN 20672,560 20606,561 20487,512
+Bruno-Taut-Str.	N 21730,589 21847,794
 Bruno-Taut-Str.	H 21847,794 21894,881 21990,979 22092,999
 Richterstr. (Altglienicke, Bohnsdorf)	H 22012,706 22075,779 22105,888 22092,999 22162,1067
 Buntzelstr.	H 22075,779 22120,659 22171,459 22145,208
@@ -2076,6 +2077,8 @@ Seydlitzstr. (Lankwitz)	N 6116,2819 6304,2569 6465,2356
 Seydlitzstr. (Lankwitz)	NN 6465,2356 6519,2256
 Seydlitzstr. (Lankwitz)	N 6519,2256 6585,2171 6658,2079
 Charlottenstr. (Lankwitz)	N 5763,2795 5929,2982 6218,3302 6538,3491
+Dillgesstr.	N 6218,3302 6411,3092 6451,3034 6603,2803
+Barbarastr.	N 6325,2904 6451,3034
 Bellingstr.	N 6446,2111 6585,2171 6758,2217
 Morgensternstr.	H 5248,2376 4660,2116
 Wismarer Str.	H 3879,1211 3785,1354 3743,1385 3690,1436 3500,1587 3425,1647
@@ -4865,7 +4868,7 @@ Lansstr.	N 3054,5677 2953,5606 2858,5535 2785,5482
 Krumme Str. (Bohnsdorf)	N 21945,-431 22004,-489 22201,-503 22275,-461
 Prinz-Eugen-Str.	N 7542,15839 7649,15726 7796,15590
 Drei-Linien-Weg	N 16186,23189 15976,22801
-Paradiesstr.	N 21265,334 21168,212 21265,93 21343,-309 21281,-762
+Paradiesstr.	N 21265,334 21168,212 21265,93 21319,-178 21343,-309 21281,-762
 #: note: laut Hubert Fürther muss hier nicht getragen werden
 (Fußgängerbrücke)	NN 21265,334 21159,450
 (Englische Str. - Spreeufer)	NN 5535,12206 5579,12231

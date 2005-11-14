@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.19 2005/10/16 19:01:34 eserte Exp $
+# $Id: vmzrobot.pl,v 1.20 2005/11/14 22:05:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -326,6 +326,7 @@ sub mark_irrelevant_entry {
 	     | Ampeln\s+ausgefallen
 	     | Ampeln\s+in\s+Betrieb
 	     | auf\s+$zahl\s+$Fahrstreifen\s+$reduziert
+	     | Behinderungen\s+durch\s+Parkplatzsuchverkehr
 	    )/xs) {
 	    $ignore = 1;
 	}
