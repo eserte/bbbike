@@ -313,14 +313,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1132095600,
-         'text' => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist noch passierbar (Swinemünder Brücke). Dauer: 15.08.2005, 06:00 Uhr bis ca. 15.11.2005 ',
-         'from' => 1123992000,
-         'data' => 'userdel	q4 9494,15998 9583,15851
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -424,14 +417,7 @@ userdel	q4 -7873,66589 -7851,66418
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1132095600,
-         'text' => 'B 112; zw. Abzw. Ziltendorf und Abzw. Pohlitz Deckenerneurung Vollsperrung 04.10.2005-15.11.2005 ',
-         'from' => 1128290400,
-         'data' => 'userdel	2 93494,-21221 93192,-21578
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1151704800,
          'text' => 'L 382; (Birnbaumsmühle); OD Frankfurt (O), Bereich unter den Brücken DB grundh. Straßenbau Vollsperrung 28.09.2005-30.06.2006 ',
@@ -544,16 +530,7 @@ userdel	q4 14096,12827 14336,12758
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_002329',
-         'until' => 1132095599,
-         'text' => 'Romain-Rolland-Straße (Weissensee) zwischen Straße 16 und Berliner Straße Straßenarbeiten, gesperrt (bis Mitte November 2005) ',
-         'from' => 1131050267,
-         'data' => 'userdel	q4 13300,17726 12856,17825
-userdel	q4 12856,17825 12746,17981
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_81917',
          'until' => 1154296800,
@@ -572,6 +549,14 @@ userdel	q4 12856,17825 12746,17981
          'data' => 'userdel	q4; 17766,6616 17962,6674
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1146434400,
+         'text' => 'Stahnsdorf, Lindenstraße, Baustelle bis 30.04.2006, Der Verkehr wird an der Baustelle durch eine Lichtzeichenanlage halbseitig vorbeigeführt. ',
+         'from' => 1132097451,
+         'data' => 'userdel	1 -1668,-1709 -1752,-1823 -1921,-1931 -2049,-2165
+',
+         'type' => 'gesperrt'
        }
      
 );

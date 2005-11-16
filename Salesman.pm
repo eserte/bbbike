@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Salesman.pm,v 1.13 2005/04/05 22:33:04 eserte Exp $
+# $Id: Salesman.pm,v 1.15 2005/11/16 00:13:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2003 Slaven Rezic. All rights reserved.
@@ -113,6 +113,45 @@ sub _calculate_distances {
 		warn "No route between $points[$i] and $points[$j] found";
 	    }
 	}
+    }
+    $self->_dump_tsplib_file;
+}
+
+sub _dump_tsplib_file {
+    my $self = shift;
+    $main::devel_host = $main::devel_host;
+    if ($main::devel_host) {
+	## Use the generated file for upload at
+	# http://www-neos.mcs.anl.gov/neos/solvers/co:concorde/TSP.html
+	my @points = ($self->{Start}, @{ $self->{Points} }); # End should be == Start
+	my $distances = $self->{Distances};
+	open(FH, ">/tmp/test.tsplib") or die $!;
+	# ATSP geht leider nicht mit dem Service :-(
+	print FH <<EOF;
+NAME: test
+TYPE: TSP
+COMMENT: srt
+DIMENSION: @{[ scalar @points ]}
+NODE_COORD_TYPE: TWOD_COORDS
+DISPLAY_DATA_TYPE: COORD_DISPLAY
+EDGE_WEIGHT_TYPE: EXPLICIT
+EDGE_WEIGHT_FORMAT: FULL_MATRIX
+EOF
+
+	print FH <<EOF;
+DISPLAY_DATA_SECTION:
+EOF
+	for my $i (0 .. $#points) {
+	    print FH "$i " . join(" ", split /,/, $points[$i]) . "\n";
+	}
+
+	print FH <<EOF;
+EDGE_WEIGHT_SECTION:
+EOF
+	for my $i (0 .. $#points) {
+	    print FH join(" ", map { $distances->{$points[$i]}{$points[$_]}||0 } (0 .. $#points)) . "\n";
+	}
+	close FH;
     }
 }
 

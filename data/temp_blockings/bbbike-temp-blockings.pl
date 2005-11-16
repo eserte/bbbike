@@ -3240,4 +3240,12 @@ EOF
 userdel	q4; 17766,6616 17962,6674
 EOF
      },
+     { from  => 1132097451, # 2005-11-16 00:30
+       until => 1146434400, # 2006-05-01 00:00
+       text  => 'Stahnsdorf, Lindenstraße, Baustelle bis 30.04.2006, Der Verkehr wird an der Baustelle durch eine Lichtzeichenanlage halbseitig vorbeigeführt. ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 -1668,-1709 -1752,-1823 -1921,-1931 -2049,-2165
+EOF
+     },
     );

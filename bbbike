@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.202 2005/11/14 22:13:01 eserte Exp $
+# $Id: bbbike,v 3.202 2005/11/14 22:13:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -3336,7 +3336,7 @@ sub do_iconframe {
     $sb2m->checkbutton(-label => M"Steigungsoptimierung",
 		      -variable => \$steigung_optimierung,
 		     );
-    if ($advanced) {
+    if ($advanced && $devel_host) {
 	# sowieso vorerst sinnlos...
 	$sb2m->checkbutton(-label => M"Abbiege-Optimierung",
 			  -variable => \$abbiege_optimierung,
@@ -11218,21 +11218,33 @@ sub find_below {
 # Similar to find_below, but use a list of regexes and restrict to
 # a list of tag positions.
 sub find_below_rx {
-    my($c, $allowed_rx_tags, $tag_pos) = @_;
+    my($c, $allowed_rx_tags, $tag_pos, $forbidden_rx_tags) = @_;
     my $e = $c->XEvent;
     my($xx, $yy) = ($c->canvasx($e->x), $c->canvasy($e->y));
     my(@items) = $c->find(overlapping => $xx-1, $yy-1, $xx+1, $yy+1);
     # Now using "reverse", so top-most items are preferred
     # XXX Hopefully this change does not break anything.
+ ITEM:
     foreach my $item (reverse @items) {
 	my(@tags) = $c->gettags($item);
 	my @restricted_tags = $tag_pos ? @tags[@$tag_pos] : @tags;
+	my $ok = 0;
 	for my $tag (@restricted_tags) {
 	    for my $rx (@$allowed_rx_tags) {
                 if ($tag =~ /$rx/) {
-		    return ($item, @tags);
+		    if ($forbidden_rx_tags) {
+			for my $frx (@$forbidden_rx_tags) {
+			    if ($tag =~ /$frx/) {
+				next ITEM;
+			    }
+			}
+		    }
+		    $ok = 1;
 		}
 	    }
+	}
+	if ($ok) {
+	    return ($item, @tags);
 	}
     }
     undef;
@@ -16168,7 +16180,7 @@ sub nearest_line_points_mouse {
     my($x, $y) = ($c->canvasx($e->x), $c->canvasy($e->y));
     @tags = $c->gettags('current') if !@tags;
     if (grep { /-label/ } @tags) { # ignore labels
-	(undef, @tags) = find_below_rx($c, [q{.}]);
+	(undef, @tags) = find_below_rx($c, [q{.}], undef, [q{current}, q{-label}]);
     }
     nearest_line_points($x, $y, @tags);
 }

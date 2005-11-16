@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.107 2005/11/14 22:05:58 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.107 2005/11/14 22:05:58 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
@@ -1193,7 +1193,6 @@ Bröndbystr.: Asphalt	Q0 3500,1587 3261,1272 3315,1179
 Petkusser Str.: mäßiges Kopfsteinpflaster	Q2 10484,-2637 10609,-3098
 Kurpromenade: mäßiger Asphalt	Q1 -8890,5888 -8892,5946 -8831,6489 -8851,6736 -8542,6840
 Schriftsetzerweg: Asphalt	Q0 15849,1807 16194,1509
-Nicolaistr.: Asphalt	Q0 6171,3400 6110,3538 5959,3875 5879,4058 5780,4271
 Wodanstr.: Kopfsteinpflaster	Q2 8821,19331 8739,19475 8704,19534 8621,19683 8494,19899 8415,19910
 Tödiweg: Asphalt	Q0 9418,2038 9450,1846 9486,1662
 Ledebourstr.: mäßiger Asphalt	Q1 24448,10098 24827,9968 25413,9613 25476,9561
@@ -1868,7 +1867,7 @@ Urselweg: sehr guter Asphalt	Q0 -990,3160 -887,3081 -812,2915
 Achenseeweg: Asphalt	Q0 5913,1176 5878,787 5916,499 5993,243
 Mercatorweg: mäßiger Beton	Q1 4873,645 4703,534
 Andreezeile: Asphalt	Q0 1326,322 1225,309 1034,474 781,693 721,956
-Brucknerstr.: mäßiges Kopfsteinpflaster	Q2 6056,4138 6138,3956 6287,3616
+Brucknerstr.: mäßiges Kopfsteinpflaster	Q2 6056,4138 6138,3956 6221,3767 6287,3616
 Philippistr.: Asphalt	Q0 2516,11584 2450,11571
 Philippistr.: Kopfsteinpflaster	Q2 2589,11598 2516,11584
 Ernststr.: Kopfsteinpflaster	Q2 2497,19503 2700,19527
@@ -2133,7 +2132,12 @@ Friesenstr. (Niederschönhausen): schlechter Sandweg mit vielen Schlaglöchern	Q3 
 Friesickestr.: Asphalt	Q0 12673,16209 12725,16321 12804,16480 12874,16631
 Haynauer Str.: Asphalt	Q0 8039,3242 8055,2885 8018,2657 7897,2380 7921,2302
 Calandrellistr.: gut befahrbar	Q0 5362,3612 5536,3685 5702,3762
-Calandrellistr.: mäßig geeignet	Q2 5702,3762 5959,3875 6138,3956 6294,4021
+Calandrellistr.: schlechtes Kopfsteinpflaster	Q3 5702,3762 5959,3875 6138,3956 6294,4021
+Corneliusstr. (Lankwitz): gut asphaltiert	Q0 5787,3574 6042,3689 6221,3767 6376,3835
+Kaulbachstr. (Lankwitz): gut asphaltiert	Q0 5485,3259 5692,3353
+Kaulbachstr. (Lankwitz): gut asphaltiert	Q0 5692,3353 5854,3425
+Kaulbachstr. (Lankwitz): gut asphaltiert	Q0 5854,3425 6110,3538 6287,3616 6442,3685
+Nicolaistr.: Kopfsteinpflaster	Q2 6171,3400 6110,3538 6042,3689 5959,3875 5879,4058 5780,4271
 Barbarastr.: Asphalt	Q0 6325,2904 6451,3034
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
