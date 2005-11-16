@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.35 2005/11/09 00:03:07 eserte Exp $
+# $Id: bbbike.cgi,v 7.36 2005/11/16 01:25:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -80,7 +80,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    $q %persistent %c $got_cookie
 	    $g_str $orte $orte2 $multiorte
 	    $ampeln $qualitaet_net $handicap_net
-	    $strcat_net $radwege_strcat_net $routen_net $comments_net
+	    $strcat_net $radwege_strcat_net $radwege_net $routen_net $comments_net
 	    $comments_points $green_net
 	    $crossings $kr $plz $net $multi_bez_str
 	    $overview_map $city
@@ -684,7 +684,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.35 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.36 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3563,6 +3563,11 @@ EOF
 	    print "</tr>\n";
 	}
 
+	if ($with_cat_display && !$radwege_net) {
+	    $radwege_net = new StrassenNetz get_cyclepath_streets();
+	    $radwege_net->make_net_cat;
+	}
+
   	my $odd = 0;
 	my $etappe_i = -1;
 	for my $etappe (@out_route) {
@@ -3570,6 +3575,10 @@ EOF
 	    my($entf, $richtung, $strname, $ges_entf_s,
 	       $etappe_comment, $fragezeichen_comment, $path_index) =
 		   @{$etappe}{qw(DistString DirectionString Strname TotalDistString Comment FragezeichenComment PathIndex)};
+	    my $last_path_index;
+	    if ($etappe_i < $#out_route) {
+		$last_path_index = $out_route[$etappe_i+1]->{PathIndex} - 1;
+	    }
 	    if (!$bi->{'can_table'}) {
 		printf $line_fmt,
 		  $entf, $richtung, string_kuerzen($strname, 31), $ges_entf_s;
@@ -3586,27 +3595,70 @@ EOF
 		$odd = 1-$odd;
 		if ($with_comments && $comments_net) {
 		    if ($with_cat_display && !$printmode) {
-			# XXX ungenau, sollte alle teilstücke zwischen diesem und dem nächsten pathindex
-			# berückstichtigen und dann entweder die schlechteste und die längste kategorie
-			# verwenden
-			my $rec;
-			if ($path_index < $#{ $r->path }) {
-			    $rec = $net->get_street_record(join(",", @{$r->path->[$path_index]}),
-							   join(",", @{$r->path->[$path_index+1]}));
-			}
-			if ($rec) {
-			    my $cat = $rec ? $rec->[Strassen::CAT] : '';
-			    if ($cat =~ /^\?/) {
-				$cat = 'fz';
+			# Es wird jeweils die längste
+			# Straßen/Radwegekategorie für die Anzeige
+			# verwendet.
+			my($cat, $rw);
+			if (defined $last_path_index) {
+			    my($longest_cat, $cat_length);
+			    my($longest_rw,  $rw_length);
+			    for my $path_i ($path_index .. $last_path_index) {
+				my $p1 = join(",", @{$r->path->[$path_i]});
+				my $p2 = join(",", @{$r->path->[$path_i+1]});
+				my $len = Strassen::Util::strecke_s($p1, $p2);
+				if (!defined $cat_length || $cat_length < $len) {
+				    my $rec = $net->get_street_record($p1, $p2);
+				    if ($rec) {
+					my $cat = $rec ? $rec->[Strassen::CAT] : '';
+					if ($cat =~ /^\?/) {
+					    $cat = 'fz';
+					}
+					$longest_cat = $cat;
+					$cat_length = $len;
+				    }
+				}
+				if ($radwege_net &&
+				    (!defined $rw_length || $rw_length < $len)) {
+				    my $rw;
+				    my $rw_rec = $radwege_net->{Net}->{$p1}->{$p2};
+				    if ($rw_rec) {
+					if ($rw_rec =~ /^RW([1234789])?$/) {
+					    $rw = "RW";
+					} elsif ($rw_rec eq 'RW5') {
+					    $rw = "BS"; # Busspur
+					} elsif ($rw_rec eq 'RW10') {
+					    $rw = "NS"; # Nebenstraße
+					}
+				    }
+				    $longest_rw = $rw;
+				    $rw_length = $len;
+				}
 			    }
-			    my $title = { NN => "Nebenstraße ohne Kfz",
-					  N  => "Nebenstraße",
-					  H  => "Hauptstraße",
-					  HH => "wichtige Hauptstraße",
-					  B  => "Bundesstraße",
-					  fz => "unbekannte Strecke",
-					}->{$cat};
-			    print "<td></td><td title='$title' class='cat$cat catcell'></td><td></td>";
+			    if ($longest_cat) {
+				$cat = $longest_cat;
+			    }
+			    $rw = $longest_rw || "";
+			}
+			if ($cat) {
+			    my $cat_title = { NN => "Nebenstraße ohne Kfz",
+					      N  => "Nebenstraße",
+					      H  => "Hauptstraße",
+					      HH => "wichtige Hauptstraße",
+					      B  => "Bundesstraße",
+					      fz => "unbekannte Strecke",
+					    }->{$cat};
+			    my $rw_title;
+			    if ($rw) {
+				$rw_title = { RW => "Radweg/spur",
+					      BS => "Busspur",
+					      NS => "Nebenstraße",
+					    }->{$rw};
+			    }
+			    my $title = $cat_title;
+			    if ($rw_title) {
+				$title .= ", $rw_title";
+			    }
+			    print "<td></td><td title='$title' class='cat$cat catcell$rw'></td><td></td>";
 			} else {
 			    print "<td></td><td></td><td></td>";
 			}
@@ -5768,7 +5820,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/11/09 00:03:07 $';
+    my $cgi_date = '$Date: 2005/11/16 01:25:24 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

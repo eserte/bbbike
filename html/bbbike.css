@@ -105,7 +105,7 @@ a.ms:visited { color:#333333; }
   background-color:#fff800;
 }
 .catH {
-  background-color:#ffffa0;
+  background-color:#ffff70;
 }
 .catN {
   background-color:#ffffff; /* slightly different */
@@ -126,6 +126,23 @@ a.ms:visited { color:#333333; }
   border-style: solid;
   border-color: black;
   padding: 0px 2px 0px 2px;
+}
+
+.catcellRW,.catcellBS,.catcellNS {
+  width:10px;
+  border-width: 0px 2px 0px 4px;
+  border-style: solid;
+  border-right-color: black;
+  padding: 0px 2px 0px 2px;
+}
+.catcellRW {
+  border-left-color: blue;
+}
+.catcellBS {
+  border-left-color: orange;
+}
+.catcellNS {
+  border-left-color: white;
 }
 
 .pseudolink {
