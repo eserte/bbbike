@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: polizei-faxabruf-diff.pl,v 1.7 2005/04/05 21:26:19 eserte Exp eserte $
+# $Id: polizei-faxabruf-diff.pl,v 1.8 2005/11/16 01:28:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004, 2005 Slaven Rezic. All rights reserved.

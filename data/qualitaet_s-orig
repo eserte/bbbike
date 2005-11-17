@@ -1,10 +1,10 @@
 #: title: Qualit‰t von Straﬂen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.107 2005/11/14 22:05:58 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.108 2005/11/16 01:28:27 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Br¸cken, Straﬂen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
-Markgrafendamm/Hauptstr.: Kopfsteinpflaster, m‰ﬂig bis schlecht	Q2 14641,10552 14675,10693 14676,10731 14681,10847 14794,10844 15255,10751
+Markgrafendamm/Hauptstr.: Kopfsteinpflaster, m‰ﬂig bis schlecht	Q2 14641,10552 14675,10693 14680,10758 14681,10847 14794,10844 15255,10751
 Karlshorster Str.: m‰ﬂiges Kopfsteinpflaster	Q2 15267,10865 15266,10791 15255,10751
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1683,9847 1511,10051 1382,10124 1308,10031
 Werkst‰ttenweg: m‰ﬂiges Kopfsteinpflaster	Q2 2121,10089 1634,9668
@@ -57,8 +57,7 @@ Graefestr.: m‰ﬂiges Kopfsteinpflaster	Q2 11507,10004 11411,9810
 Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11512,10105 11735,10022 11946,9913 12119,9823 12276,9745 12439,9660 12591,9584 12712,9523
 Maybachufer: Kopfsteinpflaster	Q2 11543,10015 11880,9874 12093,9783 12257,9703 12416,9625 12569,9547 12785,9443 12841,9368 12870,9366
 Innstr.: Kopfsteinpflaster (m‰ﬂig bis schlecht)	Q2 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
-#: add_fragezeichen: nach den Bauarbeiten asphaltiert?
-Elsenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13504,8882 13657,9063
+Elsenstr.: Asphalt	Q0 13402,8741 13453,8812 13504,8882 13657,9063 13760,9188
 Herrfurthstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11979,8014 11823,7980 11757,7965
 Herrfurthstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11647,7940 11565,7921 11472,7899
 Herrfurthplatz: m‰ﬂiges Kopfsteinpflaster	Q2 11647,7940 11670,7911 11717,7895 11753,7930 11757,7965 11732,8001 11695,8005 11659,7982 11647,7940
@@ -153,7 +152,7 @@ Glatzer Str.: Kopfsteinpflaster	Q2 14576,11582 14645,11670
 Wiesenweg (Lichtenberg): Kopfsteinpflaster	Q2 15452,11330 15227,11429 15043,11511
 Revaler Str.: Kopfsteinpflaster	Q2 14139,11269 14211,11229 14286,11186 14357,11148 14442,11101 14509,11060
 Revaler Str.: Kopfsteinpflaster, Straﬂenbahn	Q2 13594,11489 13473,11456
-Prenzlauer Berg: Kopfsteinpflaster (teilweise schlecht)	Q2 11723,13630 11538,13683 11257,13647
+Prenzlauer Berg: Asphalt	Q0 11723,13630 11538,13683 11257,13647
 Bernauer Str.: Kopfsteinpflaster	Q2 9805,14717 10011,14810 10094,14847 10176,14896 10333,14983
 Alte Jakobstr.: Kopfsteinpflaster	Q2 10244,11160 10436,11344
 Ackerstr.: Kopfsteinpflaster	Q2 9400,14400 9375,14419 9312,14471 9246,14518 9048,14681 8953,14758 8741,14928
@@ -393,8 +392,8 @@ Ahornsteig: Parkweg	Q1 7669,11586 7706,11612 7742,11639 7852,11721 8006,11766
 Tiergarten: Parkweg	Q1 8021,11636 8006,11766 8022,12016 7999,12049 8006,12074 8034,12093 8063,12182
 Tiergarten: Parkweg	Q1 8214,12205 8215,12156 8220,11844 8223,11700
 Tiergarten: Parkweg	Q1 7663,11946 7570,11855 7223,11897 7073,11798 6778,11742 6540,11754
-Parkweg: teils sehr gutes Kopfsteinpflaster	Q1 14310,9692 14452,9919 14562,10079 14600,10128 14628,10160 14656,10197
-Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q0 14373,10046 14192,10145 13903,10237
+Parkweg: teils sehr gutes Kopfsteinpflaster	Q1 14310,9692 14351,9757 14452,9919 14562,10079 14600,10128 14628,10160 14656,10197
+Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q0 14373,10046 14192,10145 14111,10169 13903,10237
 Hasenheide: asphaltiert	Q0 11271,8325 11282,8428 11253,8565 11128,9100 11131,9189
 Hasenheide, zur Lilienthalstr.: Parkweg	Q1 10709,9192 11128,9100
 Carl-Herz-Ufer: Kopfsteinpflaster (kann auf Uferweg umgangen werden)	Q2 10601,9922 10490,10080
@@ -1188,6 +1187,8 @@ Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8823,11765 8804,11838 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10024,9993 10111,9942
 #: unverified_by ADFC-Karte
 Dillgesstr.: gut geeignet	Q0 6218,3302 6411,3092 6451,3034 6603,2803
+(Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): Beton	Q0 14680,10758 14564,10792 14558,10833
+(Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 14558,10833 14124,10932 14093,10909 14043,10928
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -3071,7 +3072,8 @@ Claire-Waldoff-Promenade: Asphalt und Kopsteipflasterabschnitte	Q1 7448,13058 73
 Bahrfeldtstr.: Kopfsteinpflaster	Q2 14852,10080 14929,10036 15071,9967 15142,9931
 Fanny-Zobel-Str.: Asphalt	Q0 13928,10053 13971,10182 14053,10157 14012,10029
 Fanny-Zobel-Str.: Asphalt	Q0 13971,10182 13891,10208
-(Hoffmannstr. - Puschkinallee): Verbundsteine	Q1 14042,10021 13998,9830
+(Hoffmannstr. - Puschkinallee): Verbundsteine	Q1 14058,10012 13976,9840
+(Hoffmannstr. - Uferweg an den Treptowers): Verbundsteine	Q1 14058,10012 14111,10169
 Dossestr. (Friedrichshain): Kopfsteinpflaster	Q2 15012,11644 15132,11849 15203,11807
 Eldenaer Str.: Asphalt	Q1 14096,12827 13960,12866 13844,12900
 Neue Welt: Asphalt	Q0 14705,12934 14431,13028

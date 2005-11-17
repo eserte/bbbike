@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.15 2005/10/19 21:14:09 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.16 2005/11/17 19:52:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -632,8 +632,8 @@ foreach my $chunk (@{ $gps->Chunks }) {
 				})
 	    if $show_track_graph;
 
-    if ($do_center_begin && @{ $gps->Points }) {
-	my $wpt = $gps->Points->[0];
+    if ($do_center_begin && $gps->Chunks && @{ $gps->Chunks } && @{ $gps->Chunks->[0]->Points }) {
+	my $wpt = $gps->Chunks->[0]->Points->[0];
 	my($x,$y) = map { int } $Karte::map{"polar"}->map2map($main::coord_system_obj, $wpt->Longitude, $wpt->Latitude);
 	my($x0,$y0) = ($main::coord_system eq 'standard' ? ($x,$y) : map { int } $Karte::map{"polar"}->map2standard($wpt->Longitude, $wpt->Latitude));
 	my $tcoords = [[]];
