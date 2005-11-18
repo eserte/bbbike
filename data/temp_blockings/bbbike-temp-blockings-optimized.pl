@@ -508,28 +508,9 @@ userdel	q4 -7873,66589 -7851,66418
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'LMS_1129024102795',
-         'until' => 1132354800,
-         'text' => 'Naumannstraße zwischen Torgauer Str. und Kolonnenstraße in Richtung Kolonnenstraße wegen Bauarbeiten gesperrt bis 18.11.2005 ',
-         'from' => 1130715720,
-         'data' => 'userdel	q4; 7713,8600 7709,8770
-userdel	q4; 7716,8048 7716,8356 7712,8560
-',
-         'type' => 'handicap'
-       },
        undef,
-       {
-         'until' => 1132354800,
-         'text' => 'Eldenaer Str. zwischen Thaerstr. und Proskauer Str. Baustelle, wegen Bauarbeiten gesperrt. Dauer: bis 18.11.2005',
-         'from' => 1130831377,
-         'data' => 'userdel	q4 14363,12749 14336,12758
-userdel	q4 13960,12866 14096,12827
-userdel	q4 13960,12866 13844,12900
-userdel	q4 14096,12827 14336,12758
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        {
          'source_id' => 'INKO_81917',

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.133 2005/11/16 01:44:47 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.134 2005/11/18 23:17:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1851,7 +1851,6 @@ sub penalty_menu {
 ### AutoLoad Sub
 sub _insert_points_and_co ($) {
     my $oper_name = shift;
-    my $vstr = ($verbose ? " -v" : "");
     my $ret = 0;
     eval {
 	require "$FindBin::RealBin/miscsrc/insert_points";
@@ -1861,7 +1860,8 @@ sub _insert_points_and_co ($) {
 		    -datadir => $datadir,
 		    -bbbikerootdir => $FindBin::RealBin,
 		    "-tk",
-		    ($vstr ne "" ? $vstr : ()),
+		    ($verbose ? "-v" : ()),
+		    @inslauf_selection,
 		   );
 #XXX:
 # 	if (!$SRTShortcuts::force_edit_mode) {
