@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman2bbd.pl,v 2.8 2004/06/13 09:12:49 eserte Exp $
+# $Id: gpsman2bbd.pl,v 2.9 2005/11/17 23:38:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.203 2005/11/16 01:26:51 eserte Exp $
+# $Id: bbbike,v 3.204 2005/11/17 23:28:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.203 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.204 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -717,7 +717,8 @@ eval { local $SIG{'__DIE__'};
    ['dialog','!',1,
     label => M"Verwendung von Dialog-Fenstern", var => \$use_dialog],
    ['transient','!',1,
-    label => M"Transiente Dialoge", var => \$transient],
+    label => M"Transiente Fenster", var => \$transient,
+    longhelp => M('Verwendung von transienten Fenster oder "Toolwindows"')],
    ($os eq 'unix' ?
     ['pathentrydialog','!',undef, nogui => 1,
      label => M"Alternative Dateiauswahl verwenden",
@@ -3705,7 +3706,7 @@ sub do_iconframe {
 			 }
 			 eval {
 			     my $bp = $bp_obj->tk_interface($top, %args);
-			     $bp->transient($top) if $transient;
+			     set_as_toolwindow($bp);
 			 };
 			 if ($@) { status_message($@, 'err') }
 		     }
@@ -9618,7 +9619,7 @@ sub choose_ort {
 	    } else {
 		$t = $top->Toplevel(-title => $attrib->[ATTRIB_PLURAL],
 				    -class => "Bbbike Chooser");
-		$t->transient($top) if $transient;
+		set_as_toolwindow($t);
 		if ($coord_system eq 'standard') {
 		    if ($ondestroy) {
 			$t->protocol('WM_DELETE_WINDOW', [$ondestroy, $t]);
@@ -10273,7 +10274,7 @@ sub choose_from_plz {
     } else { # interaktiv
 	my $t = $top->Toplevel(-title => M"Auswahl aus kompletter Straßenliste",
 			       -class => "Bbbike Extended Chooser");
-	$t->transient($top) if $transient;
+	set_as_toolwindow($t);
 	$toplevel{"chooseplz"} = $t;
 
 	my $bf   = $t->Frame->pack(-fill => 'x', -side => "bottom");
@@ -13508,7 +13509,7 @@ sub show_overview {
 				  );
     $overview_top->OnDestroy(sub { $show_overview = 0; });
     $toplevel{"overview"} = $overview_top;
-    $overview_top->transient($top) if $transient;
+    set_as_toolwindow($overview_top);
     $overview_top->{CoordSystem} = $coord_system;
     # Try to set the overview to the right bottom corner of the main
     # window:
@@ -14453,7 +14454,7 @@ sub show_route_strname {
     } else {
 	$toplevel{strlist} = $top->Toplevel(-title => M"Aktuelle Route",
 				      -class => "Bbbike Routeinfo");
-	$toplevel{strlist}->transient($top) if $transient;
+	set_as_toolwindow($toplevel{strlist});
 	$withdraw_sub = sub { $toplevel{strlist}->withdraw;
 			      $show_strlist = 0 };
 	$toplevel{strlist}->protocol('WM_DELETE_WINDOW', $withdraw_sub);
@@ -16879,7 +16880,7 @@ sub redisplay_top {
 	undef;
     } else {
 	$toplevel{$name} = $top->Toplevel(%args);
-	$toplevel{$name}->transient($top) if $transient;
+	set_as_toolwindow($toplevel{$name});
 	$toplevel{$name}->OnDestroy(sub { delete $toplevel{$name} });
 	$toplevel{$name};
     }
@@ -17819,6 +17820,20 @@ sub withdraw_toplevels {
 	     }
 	 });
     $deiconify_subs;
+}
+
+sub set_as_toolwindow {
+    my($win, $parent) = @_;
+    if ($transient) {
+        if (0 && $Tk::platform eq 'MSWin32' && $Tk::VERSION >= 804) {
+	    # XXX using -topmost seems to be mandatory, but is ugly,
+	    # because the window is also topmost to other apps
+	    $win->attributes(-toolwindow => 1, -topmost => 1);
+        } else {
+	    $parent = $top if !$parent;
+	    $win->transient($parent);
+        }
+    }
 }
 
 ## DEBUG_BEGIN
