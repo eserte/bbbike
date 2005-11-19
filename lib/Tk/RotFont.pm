@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: RotFont.pm,v 1.14 2005/10/27 01:02:13 eserte Exp eserte $
+# $Id: RotFont.pm,v 1.15 2005/11/19 00:11:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001 Slaven Rezic. All rights reserved.

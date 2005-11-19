@@ -2,18 +2,25 @@ BBBike (forthcoming) RELEASE 3.15
 
 bbbike (ptk)
 - added "draw additional layers" pseudo icon
-- reordered "edit" menu
+- reordered "edit" menu, some new features and fixes in editing
 - "fragezeichen" layer accessible with -advanced
+- new menu item Landstraßen > Radwege im Umland
+- new export formats: BBD, ESRI
 - add custom layers for searching
 - fixed DnD in layer reordering for Tk804
+- info window: link to Google Maps, show more coordinate systems
+- new Plugin for accessing Luise-Berlin information (only in CVS)
+- many bugfixes
 
 Data
+- Berlin, innerer S-Bahnring: komplett! (Thanks to Andreas Mühlhausen)
 - new layers: freeways (Autobahnen, rather complete in
   Berlin/Brandenburg) and comments_scenic (with no data yet)
 
 Install
 - Bugfix for Windows installer (shortcuts did not work for installations in
   "C:\Program files")
+- Support for building Debian packages (only in CVS)
 
 Misc
 - new documentation: HOWTO_edit_bbbike_data (only in CVS)

@@ -1,10 +1,9 @@
 #
-# $Id: Makefile,v 1.2 2005/05/02 23:28:50 eserte Exp eserte $
+# $Id: Makefile,v 1.3 2005/11/19 00:44:59 eserte Exp $
 #
 
 BUILDDIR=	/tmp/bbbike-debian
-BBBIKETARGETDIR=/opt/BBBike
-#BBBIKETARGETDIR=/usr/local/BBBike
+BBBIKETARGETDIR=/usr/lib/BBBike
 BUILDBBBIKEROOT=$(BUILDDIR)$(BBBIKETARGETDIR)
 BBBIKEROOT=	$(shell pwd)/../..
 BBBIKE_STABLE_VERSION=$(shell perl -I$(BBBIKEROOT) -MBBBikeVar -e 'print $$BBBike::STABLE_VERSION')

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.14 2005/06/19 18:58:05 eserte Exp $
+# $Id: BBBikeRuler.pm,v 1.15 2005/11/19 00:43:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.

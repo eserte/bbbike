@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.71 2005/10/21 22:10:24 eserte Exp eserte $
+# $Id: Makefile,v 1.71 2005/10/21 22:10:24 eserte Exp $
 #
 
 # Targets:

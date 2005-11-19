@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.204 2005/11/17 23:28:30 eserte Exp eserte $
+# $Id: bbbike,v 3.206 2005/11/19 01:15:20 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.204 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.206 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -1016,6 +1016,9 @@ sub pre_check_arguments {
 	}
     }
 }
+## DEBUG_BEGIN
+#mymstat("after getopt processing");
+## DEBUG_END
 
 my $city_obj;
 if (!defined $city) {
@@ -1048,6 +1051,9 @@ if ($environment ne "normal") {
 	   require $progname . "_" . $environment . ".config" };
 }
 
+## DEBUG_BEGIN
+#mymstat("before advanced");
+## DEBUG_END
 if ($advanced) {
     Karte::preload(':all');
     require BBBikeAdvanced;
@@ -3567,24 +3573,34 @@ sub do_iconframe {
 		  -state => "disabled",
 		  -font => $font{"bold"});
     foreach my $fmt (
+		     # vector oriented
 		     'PDF',
 		     'XFig',
+		     ($advanced ? ('SVG') : ()),
+		     # map/gis
 		     'bbd (BBBike data)',
-		     ($advanced
-		      ? ('ESRI',
-			 'SVG'
-			) : ()),
-		     #XXX not yet tested: 'OVL (TOP50)',
-		     #'-',
+		     ($advanced ? ('ESRI') : ()),
+		     # XXX not yet ready: ($devel_host ? ('OVL (TOP50)') : ()),
+		     # GPS
+		     ($advanced ?
+		      (
+		       # XXX not yet --- bbd2gpx only supports wpt based routes: 'GPX-Route',
+		       'GPX-Track',
+		      ) : ()),
 		     ['G7toWin (ASCII)', 'G7toWin_ASCII'],
 		     ['GPSMAN (Tracklog)', 'GpsmanData'],
 		     ['Waypoint+ (Track)', 'WaypointPlus'],
 		     '-',
+		     'GPS direkt',
 		     [M('Route zu einem Garmin senden'), 'DirectGarmin'],
 		     [M('Senden der Route zu einem Garmin simulieren'), 'DirectGarmin_Test'],
 		    ) {
 	if ($fmt eq '-') {
 	    $svm->separator;
+	} elsif ($fmt eq 'GPS direkt') {
+	    $svm->command(-label => M($fmt),
+			  -state => "disabled",
+			  -font => $font{"bold"});
 	} elsif ($fmt eq 'PDF') {
 	    $svm->command
 		(-label => $fmt,
@@ -3640,6 +3656,16 @@ sub do_iconframe {
 		     -command => \&save_route_as_esri
 		    );
 	    }
+	} elsif ($fmt eq 'GPX-Route') {
+	    $svm->command
+		(-label => $fmt,
+		 -command => sub { save_route_as_gpx(-as => "route") },
+		);
+	} elsif ($fmt eq 'GPX-Track') {
+	    $svm->command
+		(-label => $fmt,
+		 -command => sub { save_route_as_gpx(-as => "track") },
+		);
 	} elsif (ref $fmt eq 'ARRAY') {
 	    $svm->command
 		(-label => "$fmt->[0]",
@@ -8047,6 +8073,31 @@ sub save_route_as_esri {
     }; warn $@ if $@;
     unlink $tmpfile2;
     unlink $tmpfile1;
+}
+
+### AutoLoad Sub
+sub save_route_as_gpx {
+    my(%args) = @_;
+    if (!eval { require Strassen::GPX; 1 }) {
+	guess_perlmod_install_advice($@);
+    } else {
+	my $file = $top->getSaveFile(-defaultextension => '.gpx');
+	return unless defined $file;
+	my $tmpfile = "$tmpdir/bbbike-$$.bbr";
+	my $tmp2file = "$tmpdir/bbbike-$$.bbd";
+	load_save_route(1, $tmpfile);
+	system("$FindBin::RealBin/miscsrc/bbr2bbd", $tmpfile, $tmp2file);
+	my $s = Strassen->new($tmp2file);
+	my $out = $s->Strassen::GPX::bbd2gpx(%args);
+
+	open(FH, "> $file") or status_message("Can't write to $file: $!", "die");
+	binmode FH;
+	print FH $out;
+	close FH;
+
+	unlink $tmpfile;
+	unlink $tmp2file;
+    }
 }
 
 # weiter zur Druckfunktion...
@@ -17619,6 +17670,8 @@ sub export_visible_map {
 	if ((using_rotated_fonts() || 
 	     $use_xwd_if_possible
 	    ) and
+	    $Tk::platform eq 'unix'
+	    and
 	    is_in_path("xwd")
 	   ) {
 
@@ -17636,7 +17689,8 @@ sub export_visible_map {
 	    $tmpfiles{$tmpfile}++;
 
 	    my $deiconify_subs = withdraw_toplevels();
-	    $top->update; # XXX needed?
+	    $top->raise;
+	    $top->update;
 	    system("xwd", "-out", "$tmpfile", "-id", $c->id);
 	    $_->() for (@$deiconify_subs);
 	    $top->bell;
@@ -17787,7 +17841,7 @@ sub handle_global_directives {
     }
     return if !$glob_dir;
     my %accept_global_hash_directives = map{($_,1)}
-	qw(line_width line_length
+	qw(line_width line_length line_arrow
 	   str_color outline_color
 	   category_size category_color category_width category_image
 	   category_stipple);
@@ -17807,9 +17861,20 @@ sub handle_global_directives {
     }
 }
 
-# XXX Does not withdraw torn-off menus
+sub withdraw_tearoff_menus {
+    my($toplevel) = @_;
+    my @deiconify_subs;
+    for my $w ($toplevel->children) {
+	if (Tk::Exists($w) && $w->isa("Tk::Menu") && $w->state eq 'normal') {
+	    $w->withdraw;
+	    push @deiconify_subs, sub { $w->deiconify if Tk::Exists($w) };
+	}
+    }
+    @deiconify_subs;
+}
+
 sub withdraw_toplevels {
-    my $deiconify_subs = [];
+    my $deiconify_subs = [ withdraw_tearoff_menus($top) ];
     $top->Walk
 	(sub {
 	     my($w) = @_;
@@ -17817,6 +17882,7 @@ sub withdraw_toplevels {
 		 $w->state eq 'normal') {
 		 $w->withdraw;
 		 push @$deiconify_subs, sub { $w->deiconify if Tk::Exists($w) };
+		 push @$deiconify_subs, withdraw_tearoff_menus($w);
 	     }
 	 });
     $deiconify_subs;
