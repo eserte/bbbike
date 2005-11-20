@@ -28,7 +28,6 @@ http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=84&mode=small
 http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=12&mode=small	WC 2058,13813 2094,13761
 http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=94&mode=small	WC 8674,7081 8746,7085
 http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=6&mode=small	WC 2851,19244 2896,19184
-http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=91&mode=smallImage	WC 11785,9035 11707,9078
 #: section VMZ-Berlin ^^^
 http://www.dhm.de/webcams/WEB3.html	WC 9861,12489 9850,12522
 http://www.dhm.de/zcam/index.html	WC 9954,12437 10009,12443
@@ -41,15 +40,6 @@ http://www.cityscope.de/pp3n/index.html	WC 8441,11460 8433,11558
 http://www.cityscope.de/pp3s/index.html	WC 8443,11457 8443,11384
 http://www.cityscope.de/alex/index.html	WC 11205,12998 11165,12932
 #: note: ^^^
-#: section: Snafu vvv
-#: note: Alle Snafu-Kameras: http://www.snafu.de/content/snafu_extra/video/snafu_live/b_152263_artikel.shtml
-#: note: alternative URL: http://www.snafu.de/cgi-bin/dotnet/web/bild_refresh.cgi?url=/cgi-bin/no_cache_zoomimg2.sh&refresh=60&bildtext=Breitscheidplatz%2BBerlin&ueberschrift=Breitscheidplatz&typ=bild
-http://www.snafu.de/cgi-bin/no_cache_zoomimg2.sh	WC 5633,11060 5664,10984
-http://www.snafu.de/cgi-bin/dotnet/web/bild_refresh.cgi?url=/cgi-bin/no_cache_img4.sh&refresh=60&bildtext=Backstage%2BCam1&ueberschrift=Backstage%2BCam1&typ=bild	WC 5673,11072 5719,11017
-http://www.snafu.de/cgi-bin/dotnet/web/bild_refresh.cgi?url=/cgi-bin/no_cache_img.sh&refresh=60&bildtext=Hardenbergplatz,+Main+Railway+Station+Zoo&ueberschrift=Hardenbergplatz&typ=bild	WC 5607,11081 5521,11116
-http://www.snafu.de/cgi-bin/dotnet/web/bild_refresh.cgi?url=/cgi-bin/no_cache_img8_640.sh&refresh=120&bildtext=Testkamera+Hardenbergplatz&ueberschrift=Testkamera+Hardenbergplatz&typ=bild	WC 5607,11081 5521,11116
-http://www.snafu.de/cgi-bin/dotnet/web/bild_refresh.cgi?url=/cgi-bin/no_cache_zoomimg.sh&refresh=60&bildtext=Theater+des+Westens,+Kantdreieck,+Teufelsberg&ueberschrift=Theater+des+Westens&typ=bild	WC 5598,11067 5496,11031
-#: section: Snafu ^^^
 #: note: Kein Blick auf die Straße:
 http://www.tapu.de/webcam/	WC 9955,11649 9887,11712
 http://www.berlin.de/webcams/.html/alex.html	WC 10929,13174 10958,13156
@@ -68,16 +58,32 @@ http://www.rbb-online.de/_/wetter/webcam/index_jsp.html	WC   1674,11250 1712,111
 http://www.berlin-tourist-information.de/deutsch/spiel-spass/d_sp_webcam.php	WC 8226,10917 8284,10981
 http://www.berlin-webcam.illustriertestadt.de/index.php	WC 6692,11096 6787,11112
 http://home.versanet.de/~bajinsky/alternativ.htm	WC 11975,9187 12010,9235
+http://www.rbb-online.de/webcam/rathaus/fullsize_logo.jpg	WC 10687,12493 10531,12475
+#: note: direkt mit: http://www.rbb-online.de/webcam/fsz/fullsize_logo.jpg
+#: XXX: Standort noch einmal prüfen
+http://www.inforadio.de/webcam1.do	WC 1687,11306 1775,11337
+#: note: ebenso als Loop: http://www.met.fu-berlin.de/cgi-bin/webcam/Cam00_loop
+http://www.met.fu-berlin.de/de/wetter/webcam/	WC 4149,5755 4140,5796
 #: section Berlin ^^^
 #: section Potsdam vvv
 #: note: steuerbar!
 http://cam.disipos.de/main.php	WC -12588,-1534
 #: section Potsdam ^^^
+#: section Brandenburg vvv
+http://www.grosser-spreewaldhafen.de/livecam.html	WC 50962,-59025
+#: section Brandenburg ^^^
+#: section Usedom vvv
+#: XXX: alle Positionen und Richtungen prüfen! vvv
+http://www.usedom.de/typo3/index.php?id=381&no_cache=1&sword_list[]=webcam#544	WC 36078,191462 36170,191542
+http://www.usedom.de/typo3/index.php?id=386&no_cache=1&sword_list[]=webcam#558	WC 41528,186880 41574,186994
+http://www.usedom.de/typo3/index.php?id=387&no_cache=1&sword_list[]=webcam#562	WC 49389,182573 49492,182664
+#: XXX: alle Positionen und Richtungen prüfen! ^^^
+#: section Usedom ^^^
 #
 # IGNORIERT:
 # http://www.himmel-ueber-berlin.de/ --- schlechte Bilder/Ausschnitte, Lützowplatz
-# http://www.berlin.de/webcams/.html/dahlem.html --- Position unklar, Ausschnitt?
-# http://www.mc-wetter.de/news/webcam.html --- Dahlem (auch?)
+# http://www.berlin.de/webcams/.html/dahlem.html --- Position unklar, Ausschnitt? XXX kann weg?
+# http://www.mc-wetter.de/news/webcam.html --- Dahlem (auch?) XXX kann weg?
 # http://www.ipb.de/webcam/?imgsize= --- Position unklar, kein Blick auf die Straße
 # http://www.sfb.de/webcam/sfbdach1.jpg --- Dunkelheit?
 # http://www.wetter24.de/webcam.html --- Tempelhof, nur Blick auf den Himmel
@@ -96,6 +102,25 @@ http://cam.disipos.de/main.php	WC -12588,-1534
 # http://www.club-pix.de/kam3/live/ --- Java, Clausewitzstr.
 # http://www.adlershof.de/index.php?webcam --- Adlershof, seit 2005-10-24 nicht aktualisiert
 # http://berlinadmin.dlr.de/webcam/index.shtml --- Adlershof (es ist dunkel, ich kann es nicht überprüfen)
+# http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=91&mode=smallImage	WC 11785,9035 11707,9078 --- Hasenheide, inaktiv seit 2004-xx-xx
+## Alle Snafu-Kameras funktionieren nicht!
+##: section: Snafu vvv
+##: note: Alle Snafu-Kameras: http://www.snafu.de/content/snafu_extra/video/snafu_live/b_152263_artikel.shtml
+##: note: alternative URL: http://www.snafu.de/cgi-bin/dotnet/web/bild_refresh.cgi?url=/cgi-bin/no_cache_zoomimg2.sh&refresh=60&bildtext=Breitscheidplatz%2BBerlin&ueberschrift=Breitscheidplatz&typ=bild
+#http://www.snafu.de/cgi-bin/no_cache_zoomimg2.sh	WC 5633,11060 5664,10984
+#http://www.snafu.de/cgi-bin/dotnet/web/bild_refresh.cgi?url=/cgi-bin/no_cache_img4.sh&refresh=60&bildtext=Backstage%2BCam1&ueberschrift=Backstage%2BCam1&typ=bild	WC 5673,11072 5719,11017
+#http://www.snafu.de/cgi-bin/dotnet/web/bild_refresh.cgi?url=/cgi-bin/no_cache_img.sh&refresh=60&bildtext=Hardenbergplatz,+Main+Railway+Station+Zoo&ueberschrift=Hardenbergplatz&typ=bild	WC 5607,11081 5521,11116
+#http://www.snafu.de/cgi-bin/dotnet/web/bild_refresh.cgi?url=/cgi-bin/no_cache_img8_640.sh&refresh=120&bildtext=Testkamera+Hardenbergplatz&ueberschrift=Testkamera+Hardenbergplatz&typ=bild	WC 5607,11081 5521,11116
+#http://www.snafu.de/cgi-bin/dotnet/web/bild_refresh.cgi?url=/cgi-bin/no_cache_zoomimg.sh&refresh=60&bildtext=Theater+des+Westens,+Kantdreieck,+Teufelsberg&ueberschrift=Theater+des+Westens&typ=bild	WC 5598,11067 5496,11031
+##: section: Snafu ^^^
+# http://ubfile3.ub.tu-berlin.de/webcam/ --- uninteressant (TU-Berlin), seit 2004 nicht aktiv
+# http://www.pmc-berlin.de/camping/pdm.htm --- irgendwo in Potsdam (Platte)
+# http://www.pegafly.de/webcam.htm --- irgendwo in Strausberg
+# http://www.usedom.de/typo3/index.php?id=382&no_cache=1&sword_list[]=webcam#553 --- Usedom, Karlshagen, Strandstr., Geokodierung fehlt!
+# http://www.usedom.de/typo3/index.php?id=383&no_cache=1&sword_list[]=webcam#555 --- Usedom, Karlshagen, Hotel Dünenschloss, Geokodierung fehlt!
+# http://www.usedom.de/typo3/index.php?id=388&no_cache=1&sword_list[]=webcam#565 --- Wolgast Schlossinsel, seltene Aktualisierung
+# http://www.usedom.de/typo3/index.php?id=776&no_cache=1&sword_list[]=webcam#1840 --- Trassenheide, dunkel oder ausgefallen?
+# http://www.rangsdorf.org/ --- Rangsdorf, Clara-Zetkin-Str., Geokodierung fehlt!
 #
 # Linklisten:
 # http://www.camradar.de/webcams/europa/deutschland/berlin.php (ungefähr 40)
@@ -108,3 +133,11 @@ http://cam.disipos.de/main.php	WC -12588,-1534
 # http://search.earthcam.com/search.php?word=berlin (20 in Berlin)
 # http://www.didiswebcamworld.de/78-1-berlin.php (11 in Berlin)
 # http://germanien.net/Berlin/berliner.webcams.htm (ca. 10 Links in Berlin)
+# http://www.webcamlocator.com/capitals/berlin-germany.htm (3 in Berlin)
+# http://www.villa-kunterbunt2000.de/Deutschland/Brandenburg.htm (ca. 20 in Berlin & Brandenburg)
+# http://www.google.com/Top/World/Deutsch/Regional/Europa/Deutschland/Berlin/Karten_und_Bilder/Webcams/ (ca. 10 in Berlin)
+# http://www.goandroam.com/webcams/germany/berlin/ (4 in Berlin)
+# http://www.123cam.com/keywords2.php?city=panorama&maximum=5000 (ca. 8 in Berlin)
+# http://berlin.infocity.de/regionales/webcams.php (ca. 7 in B & BRB)
+# http://www.webcam-index.com/webcams/3505.html (1 in Berlin)
+# http://www.camvista.com/worldcams/section.php3?id=1&startlimit=20&pageno=2 (2 in Berlin)

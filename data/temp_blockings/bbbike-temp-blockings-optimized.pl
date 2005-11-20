@@ -52,7 +52,14 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1135551600,
+         'text' => 'Weihnachtsmarkt am Schloßplatz, bis 25.12.2005',
+         'from' => undef,
+         'data' => 'userdel	2 10170,12261 10083,12442
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,

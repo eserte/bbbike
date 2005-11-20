@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strasse.t,v 1.9 2005/04/18 23:58:02 eserte Exp $
+# $Id: strasse.t,v 1.10 2005/11/20 17:36:52 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -68,11 +68,18 @@ my @beautify_landstrasse =
      ["Alt-Golm - Saarow" =>
       "(Alt-Golm -) Saarow", "(Saarow -) Alt-Golm"],
      ["(Möllendorffstr. - Karl-Lade-Str.)" =>
-      "((Möllendorffstr. -) Karl-Lade-Str.)", "((Karl-Lade-Str. -) Möllendorffstr.)"],
+      "((Möllendorffstr. -) Karl-Lade-Str.)",
+      "((Karl-Lade-Str. -) Möllendorffstr.)"],
      ["Tiergarten (Hardenbergplatz - S-Bhf. Tiergarten)" =>
       "Tiergarten ((Hardenbergplatz -) S-Bhf. Tiergarten)",
       "Tiergarten ((S-Bhf. Tiergarten -) Hardenbergplatz)",
      ],
+     ["(Möllendorffstr. - Karl-Lade-Str., Extra-Kommentar)" =>
+      "((Möllendorffstr. -) Karl-Lade-Str., Extra-Kommentar)",
+      "((Karl-Lade-Str. -) Möllendorffstr., Extra-Kommentar)"],
+     ["Möllendorffstr. - Karl-Lade-Str., Extra-Kommentar" =>
+      "(Möllendorffstr. -) Karl-Lade-Str., Extra-Kommentar",
+      "(Karl-Lade-Str. -) Möllendorffstr., Extra-Kommentar"],
     );
 
 if ($] >= 5.008) {

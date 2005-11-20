@@ -1344,9 +1344,9 @@ userdel	2 9890,12161 9875,12254 9853,12402
 userdel	2 9801,12245 9782,12393
 EOF
      },
-     { from  => 1102980716, # 2004-12-14 00:31
-       until => 1104015600, # 2004-12-26 00:00
-       text  => 'Weihnachtsmarkt am Schloßplatz, bis 25.12.2004',
+     { from  => undef, #
+       until => 1135551600, # 2005-12-26 00:00
+       text  => 'Weihnachtsmarkt am Schloßplatz, bis 25.12.2005',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 10170,12261 10083,12442

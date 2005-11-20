@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.207 2005/11/19 22:55:35 eserte Exp eserte $
+# $Id: bbbike,v 3.208 2005/11/20 17:30:06 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.207 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.208 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -522,501 +522,8 @@ eval { local $SIG{'__DIE__'};
 #BEGIN{mymstat("before getopt BEGIN");} mymstat("before getopt");
 ## DEBUG_END
 
-@opttable =
-  (M"Strecken/Punkte",
-   ['','',M"Strecken und Punkte, die beim Start von BBBike\ngezeichnet werden sollen."],
-   ['str','!',1,	alias=>[qw(strasse strassen)],
-    label => M"Straßen",	var => \$init_str_draw{'s'}],
-   ['landstr','!',0,	alias=>[qw(landstrasse landstrassen)],
-    label => M"Landstraßen",	var => \$init_str_draw{'l'}],
-   ['landstrjwd','!',0,
-    label => M"Landstraßen jwd", var => \$str_far_away{'l'}], # XXX init_str_far_away?
-   ['sbahn','!',1,
-    label => M"S-Bahnlinien",	var => \$init_str_draw{'b'}],
-   ['sbahnhof','!',1,
-    label => M"S-Bahnhöfe",	var => \$init_p_draw{'b'}],
-   ['ubahn','!',1,
-    label => M"U-Bahnlinien",	var => \$init_str_draw{'u'}],
-   ['ubahnhof','!',1,
-    label => M"U-Bahnhöfe",	var => \$init_p_draw{'u'}],
-   ['rbahn','!',0,
-    label => M"R-Bahnlinien",	var => \$init_str_draw{'r'}],
-   ['rbahnhof','!',0,
-    label => M"R-Bahnhöfe",	var => \$init_p_draw{'r'}],
-   ['wasser','!',0,	alias=>[qw(gewaesser)],
-    label => M"Gewässer",	var =>\$init_str_draw{'w'}],
-   ['wasserstadt','!',1,
-    label => M"Gewässer in der Stadt", var => \$wasserstadt],
-   ['wasserumland','!',0,
-    label => M"Gewässer im Umland", var => \$wasserumland], # XXX auch init!
-   ['wasserjwd','!',0,
-    label => M"Gewässer jwd", var => \$str_far_away{'w'}],
-   ['faehre','!',0,	alias=>[qw(faehren)],
-    label => M"Fähren",	var => \$init_str_draw{'e'}],
-   ['flaeche','!',0,	alias=>[qw(flaechen)],
-    label => M"Flächen",	var => \$init_str_draw{'f'}],
-   ['ort','!',0,	alias=>[qw(orte)],
-    label => M"Orte",		var => \$init_p_draw{'o'}],
-   ['ortjwd','!',0,
-    label => M"Orte jwd",	var => \$p_far_away{'o'}],
-   ['sehenswuerdigkeiten','!',0,
-    label => M"Sehenswürdigkeiten", var => \$init_str_draw{'v'}],
-   ['fragezeichen','!',0,
-    label => M"Fragezeichen",	var => \$init_str_draw{'fz'}],
+handle_options();
 
-   M"Plot-Attribute",
-   ['outline','!',0,
-    label => M"Outline zeichnen", var => \$all_outline],
-   ['ampel','!',1,	alias=>[qw(ampeln|lsa)],
-    label => M"Ampeln zeichnen", var => \$init_p_draw{'lsa'}],
-   ['lsamaybe','!',undef, nogui => 1,
-    label => M"unsichere Ampeln", var => sub { $str_restrict{'lsa'} = {qw(? 1 X 0 B 0 F 0)} }],
-   ['plothoehe','!',0,
-    label => M"Höhenangaben zeichnen",	var => \$init_p_draw{'hoehe'}],
-   ['showgrade','!',1,
-    label => M"Anzeige der Steigungen/Gefälle", var => \$show_grade],
-   ['grademinimum','=f',0.01, # ab 1% Steigungen/Gefälle zeigen
-    label => M"minimal angezeigte Steigung",	var => \$grade_minimum],
-   ['grademinimumshort','=f',0.02, # kurze Stücke erst ab 2% zeigen
-    label => Mfmt("minimale Steigung (kurze Strecken bis %dm)", $grade_minimum_short_length),	var => \$grade_minimum_short],
-   ['strname','!',0,
-    label => M"Straßennamen plotten",	var => \$str_name_draw{'s'}],
-   ['ubahnname','!',1,
-    label => M"Namen von U-Bahnhöfen anzeigen", var => \$p_name_draw{'u'}],
-   ['sbahnname','!',1,
-    label => M"Namen von S-Bahnhöfen anzeigen", var => \$p_name_draw{'b'}],
-   ['ortname','!',1,
-    label => M"Ortsnamen plotten",	var => \$p_name_draw{'o'}],
-   ['ortkategorie','=s','auto',
-    label => M"Ortskategorie",
-    longhelp => M"Minimale Ortskategorie, die gezeichnet werden soll",
-    choices => [qw(auto), MIN_ORT_CAT .. MAX_ORT_CAT],
-    var =>  \$place_category],
-   ['wassername','!',1,		alias => [qw(gewaessername)],
-    label => M"Gewässernamen plotten",	var => \$str_name_draw{'w'}],
-   ['rbahnnetz','!',undef, nogui => 1,
-    label => M"R-Bahnnetz",	var => sub { $net_type = "r" }],
-   ['usbahnetz','!',undef, nogui => 1,
-    label => M"U/S-Bahnnetz",	var => sub { $net_type = "us" }],
-   ['bahnnetz','!',undef, nogui => 1,
-    label => M"Gesamtes Bahnnetz", var => sub { $net_type = "rus" }],
-   ['scope','=s',undef,
-    label => M"Scope", var => \$init_scope,
-    choices => ["", qw/city region jwd/]],
-   ['fast','!',undef,	nogui => 1, var => \&fast_settings],
-   ['turbo','!',undef,  nogui => 1, var => sub { fast_settings();
-						 $turbo = 1;
-					     },
-   ],
-   #XXX -nolazy geht nicht!
-   ['lazy','!',undef,   nogui => 1, var => sub {
-       $lazy_plot = 1;
-#        $p_far_away{'o'}   = 1;
-#        $str_far_away{'w'} = 1;
-#        $str_far_away{'l'} = 1;
-#        $wasserumland      = 1;
-#        $str_draw{'l'}     = $str_draw{'s'};
-#        $p_draw{'o'}       = 1;
-   }],
-   ['lowmem','!',undef, nogui => 1, var => sub {
-	fast_settings();
-	$lowmem = 1;
-	$use_contexthelp = 0;
-	$use_balloon = 0;
-	$use_c_balloon = 0;
-	$want_wind = 0;
-	$bikepwr = 0;
-	@speed = (20);
-	$init_p_draw{'lsa'} = 0;
-	$map_color = 'pixmap';
-	$show_grade = 0;
-	$use_hoehe = 0;
-    }],
-   ['slowcpu','!',undef, nogui => 1, var => sub {
-	$slowcpu = 1;
-	# XXX more
-    }],
-   ['center','=s',undef,
-    label => M"Beim Starten auf Straße zentrieren", var => \$center_on_str],
-   ['centerc','=s',undef,
-    label => M"Beim Starten auf Koordinaten zentrieren",
-    var => \$center_on_coord],
-   ['choosestreet','!',1,
-    label => M"Beim Starten Straßenauswahl zeigen",
-    var => \$init_choose_street],
-   ['autoshowlist','!',1,
-    label => M"Automatisches Anzeigen der Beschreibung",
-    var => \$auto_show_list],
-   ['city','=s',undef,
-    label => M"Stadt", var => \$city, nosave => 1],
-   ['country','=s',undef,
-    label => M"Land", var => \$country, nosave => 1],
-   ['datadir','=s',undef,
-    label => M"Verzeichnis mit Straßendaten",
-    subtype => 'dir', nosave => 1, var => \$datadir],
-
-   M"Anzeige",
-   ['','',M"Bei den meisten Optionen muss BBBike neu gestartet werden,\num die Änderungen sichtbar zu machen."],
-   ['fontrot','!',1,
-    label => M"Rotierte Zeichensätze", var => \$use_font_rot],
-   ['fontfamily','=s',undef, #'helvetica',#XXX no defaults!
-    label => M"Zeichensatz (Proportional)", var =>        \$font_family],
-   ['fixedfontfamily','=s','courier',
-    label => M"Zeichensatz (Fixed)", var =>   \$fixed_font_family],
-   ['fontheight','=i',undef, #12,#XXX no defaults!
-    alias => [qw(fontsize)],
-    label => M"Zeichensatzgröße", var => \$font_size],
-   ['labelfontheight','=i',10,
-    alias => [qw(labelfontsize)],
-    label => M"Zeichensatzgröße für Labels", var => \$label_font_size],
-   ['fontweight','=s',undef,
-    label => M"Zeichensatzform", var => \$font_weight],
-   ['geometry','=s',undef,
-    subtype => "geometry", # XXX use fix_geometry for tk::getopt editor
-    label => M"Geometry", var => \$geometry],
-   ['maximized','!',0,
-    label => M"immer maximiert öffnen", var => \$open_maximized],
-   ['scaling','=f',undef,
-    label => M"Skalierung", var => \$scaling],
-   ['visual','=s',undef,
-    label => M"Visual", var => \$visual],
-   ['scale','=s',undef,
-    label => M"Skalierung", nogui => 1,
-    var => \$init_scale_massstab,
-   ],
-   ['overviewwasser','!',1,
-    label => M"Übersichtskarte mit Gewässern", var => \$overview_draw{'w'}],
-   ['overviewsbahn','!',0,
-    label => M"Übersichtskarte mit S-Bahnen", var => \$overview_draw{'b'}],
-   ['overviewsbahn','!',0,
-    label => M"Übersichtskarte mit Hauptstraßen", var => \$overview_draw{'s'}],
-   ['coloring','=s','red',
-    label => M"Einfärben der Route", var => \$coloring,
-    choices => [qw(red blue black power wind)]],
-   ['handheld','!',undef,
-    label => M"Handheld", var => \$is_handheld],
-
-   M"GUI",
-   ['menu','!',1, # XXX hier stand mal "menu|stdmenu|standardmenu" => aber Aliase werden anscheinend von Tk::GetOpt nicht unterstützt?!
-    label => M"Standard-Menü", var => \$standard_menubar],
-   ['balloon','!',1,
-    label => M"Balloons", var => \$use_balloon],
-   ['cballoon','!',2,  # 0 = nie, 1 = auf der Route, 2 = immer
-    label => M"Canvas balloons", var => \$use_c_balloon],
-   ['cballoonwait','=i',350,
-    label => M"Wartezeit für Canvas balloons", var => \$c_balloon_wait],
-   ['flat','!',1,
-    label => M"Flaches Relief", var => \$flat_relief],
-   ['contexthelp','!',1,
-    label => M"Kontextsensitive Hilfe", var => \$use_contexthelp],
-   ['rightispopup','!',1,
-    label => M"Popup-Menü rechts", var => \$right_is_popup],
-   ['smoothscroll','!',0,
-    label => M"Weiches Scrollen", var => \$use_smooth_scroll],
-   ['followmouse','!',0,
-    label => M"Kartenausschnitt folgt Cursor", var => \$followmouse],
-   ['dialog','!',1,
-    label => M"Verwendung von Dialog-Fenstern", var => \$use_dialog],
-   ['transient','!',1,
-    label => M"Transiente Fenster", var => \$transient,
-    longhelp => M('Verwendung von transienten Fenster oder "Toolwindows"')],
-   ($os eq 'unix' ?
-    ['pathentrydialog','!',undef, nogui => 1,
-     label => M"Alternative Dateiauswahl verwenden",
-     var => sub {
-	 if (1) { # XXX determine current value --- Tk::GetOpt update necessary
-	     eval 'use Tk::PathEntry::Dialog qw(as_default)';
-	 } else {
-	     eval 'use Tk::FBox qw(as_default)';
-	 }
-	 warn $@ if $@;
-     },
-    ] : ()), # do not change dialog on Windows
-   ['askquit','!',1,
-    label => M"vor Beenden fragen", var => \$ask_quit],
-   ['b2mode','=i',B2M_FASTSCAN, nogui => 1,
-    var => \$b2_mode],
-   ['autoscroll','!',undef, # XXX make nogui => 0, choices!
-    label => M"Autoscrolling", nogui => 1, var => sub { $b2_mode = B2M_AUTOSCROLL }],
-   ['autoscrollspeed','=s','normal',
-    choices => [qw(slow normal fast)],
-    label => M"Autoscrolling-Geschwindigkeit", var =>   \$autoscroll_speed],
-   ['autoscrollmiddle','!',undef,
-    label => M"Autoscrollpunkt in der Mitte", var =>   \$autoscroll_middle],
-   ['focuspolicy','=s',undef,
-    label => M"Focus-Policy",
-    longhelp => 'click:'.M("Click-to-focus")."\n".
-                'follow:'.M("Focus-follows-mouse")."\n",
-    var => \$focus_policy,
-    choices => [qw(click follow)],
-   ],
-
-   M"Suchoptionen",
-   ['qualitaetoptimierung','!',0,
-    label => M"Straßenqualität beachten", var => \$qualitaet_s_optimierung],
-   ['qualitaetwerte','!',{Q0 => 100,
-			  Q1 => 25,
-			  Q2 => 18,
-			  Q3 => 13},
-    label => M"Straßenqualität konfigurieren", var => \%qualitaet_s_speed,
-    nogui => 1], # XXX Tk::Getopt can't handle this yet
-   ['kategorieoptimierung','!',0,
-    label => M"Straßenkategorien beachten", var => \$strcat_optimierung],
-   ['kategoriewerte','!',{B  => 100,
-			  HH => 100,
-			  #BAB => 100,
-			  H  => 100,
-			  N  => 100,
-			  NN => 100},
-    label => M"Straßenkategorien konfigurieren", var => \%strcat_speed,
-    nogui => 1], # XXX Tk::Getopt can't handle this yet
-   ['radwegeoptimierung','!',0, var => \$radwege_optimierung,
-    label => M"Radwege-Optimierung"],
-   ['N_RW_optimization', '!', 0, var => \$N_RW_optimization, nogui => 1],
-   ['greenoptimierung', '=i', 0, choices => [0,1,2],
-    longhelp => "0: ".M("egal")."\n".
-                "1: ".M("bevorzugen")."\n".
-                "2: ".M("stark bevorzugen")."\n",
-    label => M"Grüne Wege bevorzugen", var => \$green_optimization,
-   ],
-   ['unbeleuchtetoptimierung', '!', 0, var => \$unlit_streets_optimization,
-    label => M"Unbeleuchtete Straßen meiden"],
-   ['steigungoptimierung', '!', 0, var => \$steigung_optimierung,
-    label => M"Steigungsoptimierung"],
-   ['handicapoptimierung','!',0,
-    label => M"Sonstige Beeinträchtigungen beachten", var => \$handicap_s_optimierung],
-   ['handicapwerte','!',{q0 => 100,
-			 q1 => 25,
-			 q2 => 18,
-			 q3 => 13,
-			 q4 => 5, # z.B. Fußgängerzonen
-			},
-    label => M"Sonstige Beeinträchtigungen konfigurieren", var => \%handicap_s_speed,
-    nogui => 1], # XXX Tk::Getopt can't handle this yet
-   ['sperre','!',undef,		alias => [qw(gesperrt)],
-    label => M"Gesperrte Straßen beachten", nogui => 1,
-    var => sub {
-	$sperre{'einbahn'} = $sperre{'sperre'} = $sperre{'wegfuehrung'} = 1;
-    },
-    savevar => \$sperre{'einbahn'},
-   ],
-   ['einbahn-strict','!',undef,
-    label => M"Alle Einbahnstraßen *strikt* beachten", nogui => 1,
-    var => sub {
-	$sperre{'einbahn-strict'} = 1;
-    },
-    savevar => \$sperre{'einbahn-strict'},
-   ],
-   ['nichttragen','!',0,
-    label => M"Tragen strikt vermeiden", var => \$sperre{'tragen'}],
-   ['tempblockings','!',0,
-    label => M"Temporäre Sperrungen verwenden", var => \$do_activate_temp_blockings],
-   ['ampeloptimierung','!',0,
-    label => M"Ampeloptimierung verwenden", var => \$ampel_optimierung],
-   ['beschleunigung','=f',1,
-    label => M"Beschleunigung (m/s^2)", var => \$beschleunigung],
-   ['wind','!',1,
-    label => M"Windgeschwindigkeit beachten", var => \$want_wind],
-   ['faehre','!',0,
-    label => M"Fähren verwenden", var => \$use_faehre],
-   ['bikepwr','!',1,	alias => [qw(bikepower)],
-    label => M"Bikepower verwenden", var => \$bikepwr],
-   ['resetpower','!',undef, nogui => 1, var => sub { @power = () }],
-   ['power','=i@',undef, nogui => 1, var => \@power], # XXX gui => 1
-   ['resetspeed','!',undef, nogui => 1, var => sub { @speed = () }],
-   ['speed','=i@',[qw(15 20)], nogui => 1, var => => \@speed], # XXX gui => 1
-   ['speedpowerreference','=s',undef, nogui => 1, var => \$speed_power_reference_string],
-   ['from','=s',undef, nogui => 1, -var => \$init_from],
-   ['to','=s',undef, nogui => 1, -var => \$init_to],
-
-   M"WWW",
-   ['www','!',0,  # 1, wenn Wetterdaten vom Web geholt werden sollen
-    label => M"WWW verwenden", var => \$do_www],
-   ['wwwmap','!',undef,
-    label => M"Karten übers WWW holen", var => \$do_wwwmap],
-   ['wwwcache','!',0,
-    label => M"Cache für WWW-Karten verwenden", var => \$use_wwwcache],
-   ['cachedir','=s',undef,
-    label => M"Cacheverzeichnis", subtype => 'dir',
-    var => \$cache_root],
-   ['wwwslow','!',1,
-    label => M"WWW ist langsam", var => \$www_is_slow],
-   ['proxy','=s',undef,
-    label => M"HTTP-Proxy (Format: http://host:port/)", var => \$proxy],
-
-   M"GPS",
-   ['exporttxtmode','=i',EXPORT_TXT_SIMPLIFY_AUTO,
-    label => M"Export-Format bei Routen",
-    longhelp => EXPORT_TXT_FULL.":".M("Komplette Route")."\n".
-                EXPORT_TXT_SIMPLIFY_NAME.":".M("Unterschiedliche Straßennamen")."\n".
-                EXPORT_TXT_SIMPLIFY_ANGLE.":".M("Abbiegevorgänge")."\n".
-                EXPORT_TXT_SIMPLIFY_NAME_OR_ANGLE.":".M("Abbiegevorgänge/unterschiedliche Straßennamen")."\n".
-                EXPORT_TXT_SIMPLIFY_AUTO.":".M("automatisch")."\n".
-                '',
-    choices => [EXPORT_TXT_FULL,EXPORT_TXT_SIMPLIFY_NAME,
-		EXPORT_TXT_SIMPLIFY_ANGLE,EXPORT_TXT_SIMPLIFY_NAME_OR_ANGLE,
-		EXPORT_TXT_SIMPLIFY_AUTO], # XXX better choices
-    var =>  \$export_txt_mode],
-   ['exporttxtminangle','=s',30,
-    label => M"Minimalwinkel bei Route-Export",
-    longhelp => M"Minimalwinkel in Grad bei (GPS-)Export von Routen\n",
-    var => \$export_txt_min_angle],
-   ['gpswaypoints','=i',50,
-    label => M"Maximale Anzahl der GPS-Waypoints",
-    longhelp => M"Moderne Garmin-Geräte können 50 Waypoints pro Route verwenden,\nwährend ältere nur 20 Waypoints laden können\n",
-    var => \$gps_waypoints,
-   ],
-   ['gpsdevice','=s',($os eq 'win' ? "COM1" : ($^O =~ /bsd/i ? '/dev/cuaa0' : '/dev/ttyS0')),
-    #XXX check: subtype => 'file',
-    label => M"GPS-Device", var => \$gps_device],
-
-   M"Sonstiges",
-   ['kde','!',undef,
-    label => M"Für KDE optimieren", var => \$run_under_kde],
-   ['coordout','=s','standard',
-    label => M"Koordinatenausgabe", var => \$coord_output],
-   ['printcmd','=s',undef,
-    label => M"Druckerkommando", var => \$print_cmd],
-   ['printbackend','=s',undef,
-    label => M"Druck-Backend", var => \$print_backend,
-    choices => ["", qw(ps pdf)],
-   ],
-   ['ps_fixed_font','=s',"Courier7",
-    label => M"Druckerzeichensatz (fixed)", var => \$ps_fixed_font],
-   ['mapcolor','=s','color',
-    choices => [qw(mono pixmap gray color)],
-    label => M"Farbeinstellung beim Drucken", var => \$map_color],
-   ['gvreuse','!',0,  # 1: alten gv-Prozess wiederverwenden
-    label => M"GV-Fenster wiederverwenden", var => \$gv_reuse],
-   ['server','!',undef,
-    label => M"Server-Modus", var => \$use_server],
-   ['autosave','!',1,
-    label => M"Speichern beim Beenden", var => \$autosave_opts],
-   ['environment','=s','normal',
-    # "novacom" (für GDF-Daten als Standard)
-    # "onlineoffice" (für Onlineoffice-Präsentationen)
-    nogui => 1, var => \$environment],
-   ['mldbm','!',0,
-    label => M"Verwendung von MLDBM",
-    longhelp => M"Die interne Straßennetz-Struktur wird als MLDBM-Hash
-auf der Festplatte statt im RAM gehalten. Langsamer, aber
-speicherplatzsparender.",
-    var => \$use_mldbm],
-   ['palmdocfmt','=s','isilo',
-    choices => [qw(isilo pdbdoc)],
-    label => M"Palm-Doc-Format", var => \$palm_doc_format],
-   ['usexwd','!',undef,
-    label => M"xwd als Screengrabber", var => \$use_xwd_if_possible],
-
-   M"Advanced",
-    ['edit','!',undef,
-     label => M"Editmodus beim Starten",
-     nogui => 1, # XXX remove some day?
-     var => sub {
-	 $set_mode = "edit";
-     }
-    ],
-   ['stderr','!',0,
-    label => M"Fehlerausgabe auf stderr", var => \$stderr],
-   ['stderrwindow','!',undef,
-    label => M"STDERR in ein Fenster", var => \$stderr_window],
-   ['autoinstall','!',0,
-    label => M"Auto-Installation vom CPAN (experimentell!)", var => \$auto_install_cpan],
-   ['pp','!',0,
-    label => M"Kurvenpunkte und Kreuzungen zeichnen", var => \$init_p_draw{'pp'}],
-   ['advanced','!',undef, var => \$advanced,
-    label => M"Advanced mode"],
-   ['public','!',undef, nogui => 1,
-    var => sub { $public_test = 1;
-		 $advanced = 0;
-		 $devel_host = 0;
-		 $do_www = 0;
-		 $no_map = 1;
-		 $public = 1;
-		 $autosave_opts = 0;
-		 $lazy_plot = 0;
-		 undef $proxy;
-	     }],
-   ['v','!',0,	alias => [qw(verbose)],
-    label => M"Verbose", var => \$verbose],
-   ['version','!',undef,
-    nogui => 1, var => sub {
-	print
-	    "$progname $VERSION\n(file revision $PROG_REVISION)\n",
-		"perl $]\nTk $Tk::VERSION\n";
-	exit 0;
-    }],
-   ['plugins','=s',undef,
-    label => M"Plugins beim Starten laden", var => \$initial_plugins,
-    longhelp => M"Kommaseparierte Liste von Plugins, z.B. BBBikeThunder,BBBikeSalesman,BBBikeRuler"],
-   ['layers','=s',undef,
-    label => M"Zusätzliche Layer zeichnen", var => \$initial_layers],
-   ['algorithm','=s','A*', var => \$global_search_args{Algorithm},
-    longhelp => M"Nur A* (Perl-Implementation) und C-A* (C-Implementation) sind von Interesse",
-    choices => ['A*', 'C-A*', ($devel_host||$advanced ? ("C-A*-2", 'srt') : ())],
-    label => M"Suchalgorithmus",
-    strict => 1],
-   ['h','!',undef, nogui => 1, alias => [qw(help)],
-    var => sub {
-	if ($opt) {
-	    print STDERR $opt->usage;
-	} else {
-	    die M"Usage?";
-	}
-	exit(0);
-    }],
-   ['nosplash','!',undef, nogui => 1], # pseudo option, handled at BEGIN
-  );
-
-eval {
-    require Tk::Getopt;
-    Tk::Getopt->VERSION(0.49);
-};
-if ($@) { # XXX
-die "Please report to author: use opttable_to_getopt!!!! XXX";
-    warn __LINE__ . ": $@" if $verbose;
-    my @getopt_list;
-    foreach (@getopt) {
-	push @getopt_list, $_ unless /^=/;
-    }
-    # XXX '@' geht nur mit Getopt::Long
-    push @getopt_list, 'power=i@' => \@power, 'speed=i@' => \@speed;
-    require Getopt::Long;
-#XXX X11-Optionen durchschleifen...
-#    if (!Getopt::Long::GetOptions(@getopt_list)) { usage('', \@getopt_list) }
-    Getopt::Long::config('pass_through');
-    Getopt::Long::GetOptions(@getopt_list);
-#XXX    if (!GetOptions(@getopt_list)) { usage('', \@getopt_list) }
-} else {
-    $Tk::Getopt::x11_pass_through = 1;
-    $opt = new Tk::Getopt(-opttable => \@opttable,
-			  -filename => catfile($bbbike_configdir, "config"),
-			 );
-    $opt->set_defaults;
-    pre_check_arguments();
-    $opt->load_options unless $public; # force defaults
-    if (!$opt->get_options) {
-	print $opt->usage;
-	exit 1;
-    }
-    $opt->process_options;
-}
-Tk::CmdLine::SetArguments(); # XXX here correct position?
-if (@ARGV) {
-    require Getopt::Long;
-    Getopt::Long::config('nopass_through');
-    Getopt::Long::GetOptions() or die;
-}
-
-# Check for -public option --- in this case do not load the config file.
-sub pre_check_arguments {
-    foreach my $arg (@ARGV) {
-	if ($arg eq '-public') {
-	    $public = 1;
-	    last;
-	}
-    }
-}
 ## DEBUG_BEGIN
 #mymstat("after getopt processing");
 ## DEBUG_END
@@ -2882,6 +2389,7 @@ sub do_iconframe {
 	$cusm->radiobutton(-label => M"WWW-Klickmodus", # XXX bessere Bezeichnung
 			   -variable => \$map_mode,
 			   -value => MM_URL_SELECT,
+			   -command => \&set_map_mode,
 			  );
 	$cusm->separator;
 	$cusm->command(-label => M"Gpsman-Daten zeichnen",
@@ -4528,7 +4036,7 @@ $splash_screen->Update(0.7) if $splash_screen;
 set_bindings();
 
 foreach my $def (qw(start watch ziel addnet delnet info salesman xy
-		    movehand)) {
+		    movehand www)) {
     load_cursor($def);
 }
 
@@ -4643,6 +4151,504 @@ $booting = 0;
 MainLoop unless $ENV{BBBIKE_TEST_PERFORMANCE};
 
 ##### Subs ### RELOADER_START ############################################
+
+sub handle_options {
+    @opttable =
+	(M"Strecken/Punkte",
+	 ['','',M"Strecken und Punkte, die beim Start von BBBike\ngezeichnet werden sollen."],
+	 ['str','!',1,	alias=>[qw(strasse strassen)],
+	  label => M"Straßen",	var => \$init_str_draw{'s'}],
+	 ['landstr','!',0,	alias=>[qw(landstrasse landstrassen)],
+	  label => M"Landstraßen",	var => \$init_str_draw{'l'}],
+	 ['landstrjwd','!',0,
+	  label => M"Landstraßen jwd", var => \$str_far_away{'l'}], # XXX init_str_far_away?
+	 ['sbahn','!',1,
+	  label => M"S-Bahnlinien",	var => \$init_str_draw{'b'}],
+	 ['sbahnhof','!',1,
+	  label => M"S-Bahnhöfe",	var => \$init_p_draw{'b'}],
+	 ['ubahn','!',1,
+	  label => M"U-Bahnlinien",	var => \$init_str_draw{'u'}],
+	 ['ubahnhof','!',1,
+	  label => M"U-Bahnhöfe",	var => \$init_p_draw{'u'}],
+	 ['rbahn','!',0,
+	  label => M"R-Bahnlinien",	var => \$init_str_draw{'r'}],
+	 ['rbahnhof','!',0,
+	  label => M"R-Bahnhöfe",	var => \$init_p_draw{'r'}],
+	 ['wasser','!',0,	alias=>[qw(gewaesser)],
+	  label => M"Gewässer",	var =>\$init_str_draw{'w'}],
+	 ['wasserstadt','!',1,
+	  label => M"Gewässer in der Stadt", var => \$wasserstadt],
+	 ['wasserumland','!',0,
+	  label => M"Gewässer im Umland", var => \$wasserumland], # XXX auch init!
+	 ['wasserjwd','!',0,
+	  label => M"Gewässer jwd", var => \$str_far_away{'w'}],
+	 ['faehre','!',0,	alias=>[qw(faehren)],
+	  label => M"Fähren",	var => \$init_str_draw{'e'}],
+	 ['flaeche','!',0,	alias=>[qw(flaechen)],
+	  label => M"Flächen",	var => \$init_str_draw{'f'}],
+	 ['ort','!',0,	alias=>[qw(orte)],
+	  label => M"Orte",		var => \$init_p_draw{'o'}],
+	 ['ortjwd','!',0,
+	  label => M"Orte jwd",	var => \$p_far_away{'o'}],
+	 ['sehenswuerdigkeiten','!',0,
+	  label => M"Sehenswürdigkeiten", var => \$init_str_draw{'v'}],
+	 ['fragezeichen','!',0,
+	  label => M"Fragezeichen",	var => \$init_str_draw{'fz'}],
+
+	 M"Plot-Attribute",
+	 ['outline','!',0,
+	  label => M"Outline zeichnen", var => \$all_outline],
+	 ['ampel','!',1,	alias=>[qw(ampeln|lsa)],
+	  label => M"Ampeln zeichnen", var => \$init_p_draw{'lsa'}],
+	 ['lsamaybe','!',undef, nogui => 1,
+	  label => M"unsichere Ampeln", var => sub { $str_restrict{'lsa'} = {qw(? 1 X 0 B 0 F 0)} }],
+	 ['plothoehe','!',0,
+	  label => M"Höhenangaben zeichnen",	var => \$init_p_draw{'hoehe'}],
+	 ['showgrade','!',1,
+	  label => M"Anzeige der Steigungen/Gefälle", var => \$show_grade],
+	 ['grademinimum','=f',0.01, # ab 1% Steigungen/Gefälle zeigen
+	  label => M"minimal angezeigte Steigung",	var => \$grade_minimum],
+	 ['grademinimumshort','=f',0.02, # kurze Stücke erst ab 2% zeigen
+	  label => Mfmt("minimale Steigung (kurze Strecken bis %dm)", $grade_minimum_short_length),	var => \$grade_minimum_short],
+	 ['strname','!',0,
+	  label => M"Straßennamen plotten",	var => \$str_name_draw{'s'}],
+	 ['ubahnname','!',1,
+	  label => M"Namen von U-Bahnhöfen anzeigen", var => \$p_name_draw{'u'}],
+	 ['sbahnname','!',1,
+	  label => M"Namen von S-Bahnhöfen anzeigen", var => \$p_name_draw{'b'}],
+	 ['ortname','!',1,
+	  label => M"Ortsnamen plotten",	var => \$p_name_draw{'o'}],
+	 ['ortkategorie','=s','auto',
+	  label => M"Ortskategorie",
+	  longhelp => M"Minimale Ortskategorie, die gezeichnet werden soll",
+	  choices => [qw(auto), MIN_ORT_CAT .. MAX_ORT_CAT],
+	  var =>  \$place_category],
+	 ['wassername','!',1,		alias => [qw(gewaessername)],
+	  label => M"Gewässernamen plotten",	var => \$str_name_draw{'w'}],
+	 ['rbahnnetz','!',undef, nogui => 1,
+	  label => M"R-Bahnnetz",	var => sub { $net_type = "r" }],
+	 ['usbahnetz','!',undef, nogui => 1,
+	  label => M"U/S-Bahnnetz",	var => sub { $net_type = "us" }],
+	 ['bahnnetz','!',undef, nogui => 1,
+	  label => M"Gesamtes Bahnnetz", var => sub { $net_type = "rus" }],
+	 ['scope','=s',undef,
+	  label => M"Scope", var => \$init_scope,
+	  choices => ["", qw/city region jwd/]],
+	 ['fast','!',undef,	nogui => 1, var => \&fast_settings],
+	 ['turbo','!',undef,  nogui => 1, var => sub { fast_settings();
+						       $turbo = 1;
+						   },
+	 ],
+	 #XXX -nolazy geht nicht!
+	 ['lazy','!',undef,   nogui => 1, var => sub {
+	      $lazy_plot = 1;
+	      #        $p_far_away{'o'}   = 1;
+	      #        $str_far_away{'w'} = 1;
+	      #        $str_far_away{'l'} = 1;
+	      #        $wasserumland      = 1;
+	      #        $str_draw{'l'}     = $str_draw{'s'};
+	      #        $p_draw{'o'}       = 1;
+	  }],
+	 ['lowmem','!',undef, nogui => 1, var => sub {
+	      fast_settings();
+	      $lowmem = 1;
+	      $use_contexthelp = 0;
+	      $use_balloon = 0;
+	      $use_c_balloon = 0;
+	      $want_wind = 0;
+	      $bikepwr = 0;
+	      @speed = (20);
+	      $init_p_draw{'lsa'} = 0;
+	      $map_color = 'pixmap';
+	      $show_grade = 0;
+	      $use_hoehe = 0;
+	  }],
+	 ['slowcpu','!',undef, nogui => 1, var => sub {
+	      $slowcpu = 1;
+	      # XXX more
+	  }],
+	 ['center','=s',undef,
+	  label => M"Beim Starten auf Straße zentrieren", var => \$center_on_str],
+	 ['centerc','=s',undef,
+	  label => M"Beim Starten auf Koordinaten zentrieren",
+	  var => \$center_on_coord],
+	 ['choosestreet','!',1,
+	  label => M"Beim Starten Straßenauswahl zeigen",
+	  var => \$init_choose_street],
+	 ['autoshowlist','!',1,
+	  label => M"Automatisches Anzeigen der Beschreibung",
+	  var => \$auto_show_list],
+	 ['city','=s',undef,
+	  label => M"Stadt", var => \$city, nosave => 1],
+	 ['country','=s',undef,
+	  label => M"Land", var => \$country, nosave => 1],
+	 ['datadir','=s',undef,
+	  label => M"Verzeichnis mit Straßendaten",
+	  subtype => 'dir', nosave => 1, var => \$datadir],
+
+	 M"Anzeige",
+	 ['','',M"Bei den meisten Optionen muss BBBike neu gestartet werden,\num die Änderungen sichtbar zu machen."],
+	 ['fontrot','!',1,
+	  label => M"Rotierte Zeichensätze", var => \$use_font_rot],
+	 ['fontfamily','=s',undef, #'helvetica',#XXX no defaults!
+	  label => M"Zeichensatz (Proportional)", var =>        \$font_family],
+	 ['fixedfontfamily','=s','courier',
+	  label => M"Zeichensatz (Fixed)", var =>   \$fixed_font_family],
+	 ['fontheight','=i',undef, #12,#XXX no defaults!
+	  alias => [qw(fontsize)],
+	  label => M"Zeichensatzgröße", var => \$font_size],
+	 ['labelfontheight','=i',10,
+	  alias => [qw(labelfontsize)],
+	  label => M"Zeichensatzgröße für Labels", var => \$label_font_size],
+	 ['fontweight','=s',undef,
+	  label => M"Zeichensatzform", var => \$font_weight],
+	 ['geometry','=s',undef,
+	  subtype => "geometry", # XXX use fix_geometry for tk::getopt editor
+	  label => M"Geometry", var => \$geometry],
+	 ['maximized','!',0,
+	  label => M"immer maximiert öffnen", var => \$open_maximized],
+	 ['scaling','=f',undef,
+	  label => M"Skalierung", var => \$scaling],
+	 ['visual','=s',undef,
+	  label => M"Visual", var => \$visual],
+	 ['scale','=s',undef,
+	  label => M"Skalierung", nogui => 1,
+	  var => \$init_scale_massstab,
+	 ],
+	 ['overviewwasser','!',1,
+	  label => M"Übersichtskarte mit Gewässern", var => \$overview_draw{'w'}],
+	 ['overviewsbahn','!',0,
+	  label => M"Übersichtskarte mit S-Bahnen", var => \$overview_draw{'b'}],
+	 ['overviewsbahn','!',0,
+	  label => M"Übersichtskarte mit Hauptstraßen", var => \$overview_draw{'s'}],
+	 ['coloring','=s','red',
+	  label => M"Einfärben der Route", var => \$coloring,
+	  choices => [qw(red blue black power wind)]],
+	 ['handheld','!',undef,
+	  label => M"Handheld", var => \$is_handheld],
+
+	 M"GUI",
+	 ['menu','!',1,	# XXX hier stand mal "menu|stdmenu|standardmenu" => aber Aliase werden anscheinend von Tk::GetOpt nicht unterstützt?!
+	  label => M"Standard-Menü", var => \$standard_menubar],
+	 ['balloon','!',1,
+	  label => M"Balloons", var => \$use_balloon],
+	 ['cballoon','!',2,    # 0 = nie, 1 = auf der Route, 2 = immer
+	  label => M"Canvas balloons", var => \$use_c_balloon],
+	 ['cballoonwait','=i',350,
+	  label => M"Wartezeit für Canvas balloons", var => \$c_balloon_wait],
+	 ['flat','!',1,
+	  label => M"Flaches Relief", var => \$flat_relief],
+	 ['contexthelp','!',1,
+	  label => M"Kontextsensitive Hilfe", var => \$use_contexthelp],
+	 ['rightispopup','!',1,
+	  label => M"Popup-Menü rechts", var => \$right_is_popup],
+	 ['smoothscroll','!',0,
+	  label => M"Weiches Scrollen", var => \$use_smooth_scroll],
+	 ['followmouse','!',0,
+	  label => M"Kartenausschnitt folgt Cursor", var => \$followmouse],
+	 ['dialog','!',1,
+	  label => M"Verwendung von Dialog-Fenstern", var => \$use_dialog],
+	 ['transient','!',1,
+	  label => M"Transiente Fenster", var => \$transient,
+	  longhelp => M('Verwendung von transienten Fenster oder "Toolwindows"')],
+	 ($os eq 'unix' ?
+	  ['pathentrydialog','!',undef, nogui => 1,
+	   label => M"Alternative Dateiauswahl verwenden",
+	   var => sub {
+	       if (1) {	# XXX determine current value --- Tk::GetOpt update necessary
+		   eval 'use Tk::PathEntry::Dialog qw(as_default)';
+	       } else {
+		   eval 'use Tk::FBox qw(as_default)';
+	       }
+	       warn $@ if $@;
+	   },
+	  ] : ()),		# do not change dialog on Windows
+	 ['askquit','!',1,
+	  label => M"vor Beenden fragen", var => \$ask_quit],
+	 ['b2mode','=i',B2M_FASTSCAN, nogui => 1,
+	  var => \$b2_mode],
+	 ['autoscroll','!',undef, # XXX make nogui => 0, choices!
+	  label => M"Autoscrolling", nogui => 1, var => sub { $b2_mode = B2M_AUTOSCROLL }],
+	 ['autoscrollspeed','=s','normal',
+	  choices => [qw(slow normal fast)],
+	  label => M"Autoscrolling-Geschwindigkeit", var =>   \$autoscroll_speed],
+	 ['autoscrollmiddle','!',undef,
+	  label => M"Autoscrollpunkt in der Mitte", var =>   \$autoscroll_middle],
+	 ['focuspolicy','=s',undef,
+	  label => M"Focus-Policy",
+	  longhelp => 'click:'.M("Click-to-focus")."\n".
+	  'follow:'.M("Focus-follows-mouse")."\n",
+	  var => \$focus_policy,
+	  choices => [qw(click follow)],
+	 ],
+
+	 M"Suchoptionen",
+	 ['qualitaetoptimierung','!',0,
+	  label => M"Straßenqualität beachten", var => \$qualitaet_s_optimierung],
+	 ['qualitaetwerte','!',{Q0 => 100,
+				Q1 => 25,
+				Q2 => 18,
+				Q3 => 13},
+	  label => M"Straßenqualität konfigurieren", var => \%qualitaet_s_speed,
+	  nogui => 1],		# XXX Tk::Getopt can't handle this yet
+	 ['kategorieoptimierung','!',0,
+	  label => M"Straßenkategorien beachten", var => \$strcat_optimierung],
+	 ['kategoriewerte','!',{B  => 100,
+				HH => 100,
+				#BAB => 100,
+				H  => 100,
+				N  => 100,
+				NN => 100},
+	  label => M"Straßenkategorien konfigurieren", var => \%strcat_speed,
+	  nogui => 1],		# XXX Tk::Getopt can't handle this yet
+	 ['radwegeoptimierung','!',0, var => \$radwege_optimierung,
+	  label => M"Radwege-Optimierung"],
+	 ['N_RW_optimization', '!', 0, var => \$N_RW_optimization, nogui => 1],
+	 ['greenoptimierung', '=i', 0, choices => [0,1,2],
+	  longhelp => "0: ".M("egal")."\n".
+	  "1: ".M("bevorzugen")."\n".
+	  "2: ".M("stark bevorzugen")."\n",
+	  label => M"Grüne Wege bevorzugen", var => \$green_optimization,
+	 ],
+	 ['unbeleuchtetoptimierung', '!', 0, var => \$unlit_streets_optimization,
+	  label => M"Unbeleuchtete Straßen meiden"],
+	 ['steigungoptimierung', '!', 0, var => \$steigung_optimierung,
+	  label => M"Steigungsoptimierung"],
+	 ['handicapoptimierung','!',0,
+	  label => M"Sonstige Beeinträchtigungen beachten", var => \$handicap_s_optimierung],
+	 ['handicapwerte','!',{q0 => 100,
+			       q1 => 25,
+			       q2 => 18,
+			       q3 => 13,
+			       q4 => 5, # z.B. Fußgängerzonen
+			      },
+	  label => M"Sonstige Beeinträchtigungen konfigurieren", var => \%handicap_s_speed,
+	  nogui => 1],		# XXX Tk::Getopt can't handle this yet
+	 ['sperre','!',undef,		alias => [qw(gesperrt)],
+	  label => M"Gesperrte Straßen beachten", nogui => 1,
+	  var => sub {
+	      $sperre{'einbahn'} = $sperre{'sperre'} = $sperre{'wegfuehrung'} = 1;
+	  },
+	  savevar => \$sperre{'einbahn'},
+	 ],
+	 ['einbahn-strict','!',undef,
+	  label => M"Alle Einbahnstraßen *strikt* beachten", nogui => 1,
+	  var => sub {
+	      $sperre{'einbahn-strict'} = 1;
+	  },
+	  savevar => \$sperre{'einbahn-strict'},
+	 ],
+	 ['nichttragen','!',0,
+	  label => M"Tragen strikt vermeiden", var => \$sperre{'tragen'}],
+	 ['tempblockings','!',0,
+	  label => M"Temporäre Sperrungen verwenden", var => \$do_activate_temp_blockings],
+	 ['ampeloptimierung','!',0,
+	  label => M"Ampeloptimierung verwenden", var => \$ampel_optimierung],
+	 ['beschleunigung','=f',1,
+	  label => M"Beschleunigung (m/s^2)", var => \$beschleunigung],
+	 ['wind','!',1,
+	  label => M"Windgeschwindigkeit beachten", var => \$want_wind],
+	 ['faehre','!',0,
+	  label => M"Fähren verwenden", var => \$use_faehre],
+	 ['bikepwr','!',1,	alias => [qw(bikepower)],
+	  label => M"Bikepower verwenden", var => \$bikepwr],
+	 ['resetpower','!',undef, nogui => 1, var => sub { @power = () }],
+	 ['power','=i@',undef, nogui => 1, var => \@power], # XXX gui => 1
+	 ['resetspeed','!',undef, nogui => 1, var => sub { @speed = () }],
+	 ['speed','=i@',[qw(15 20)], nogui => 1, var => => \@speed], # XXX gui => 1
+	 ['speedpowerreference','=s',undef, nogui => 1, var => \$speed_power_reference_string],
+	 ['from','=s',undef, nogui => 1, -var => \$init_from],
+	 ['to','=s',undef, nogui => 1, -var => \$init_to],
+
+	 M"WWW",
+	 ['www','!',0, # 1, wenn Wetterdaten vom Web geholt werden sollen
+	  label => M"WWW verwenden", var => \$do_www],
+	 ['wwwmap','!',undef,
+	  label => M"Karten übers WWW holen", var => \$do_wwwmap],
+	 ['wwwcache','!',0,
+	  label => M"Cache für WWW-Karten verwenden", var => \$use_wwwcache],
+	 ['cachedir','=s',undef,
+	  label => M"Cacheverzeichnis", subtype => 'dir',
+	  var => \$cache_root],
+	 ['wwwslow','!',1,
+	  label => M"WWW ist langsam", var => \$www_is_slow],
+	 ['proxy','=s',undef,
+	  label => M"HTTP-Proxy (Format: http://host:port/)", var => \$proxy],
+
+	 M"GPS",
+	 ['exporttxtmode','=i',EXPORT_TXT_SIMPLIFY_AUTO,
+	  label => M"Export-Format bei Routen",
+	  longhelp => EXPORT_TXT_FULL.":".M("Komplette Route")."\n".
+	  EXPORT_TXT_SIMPLIFY_NAME.":".M("Unterschiedliche Straßennamen")."\n".
+	  EXPORT_TXT_SIMPLIFY_ANGLE.":".M("Abbiegevorgänge")."\n".
+	  EXPORT_TXT_SIMPLIFY_NAME_OR_ANGLE.":".M("Abbiegevorgänge/unterschiedliche Straßennamen")."\n".
+	  EXPORT_TXT_SIMPLIFY_AUTO.":".M("automatisch")."\n".
+	  '',
+	  choices => [EXPORT_TXT_FULL,EXPORT_TXT_SIMPLIFY_NAME,
+		      EXPORT_TXT_SIMPLIFY_ANGLE,EXPORT_TXT_SIMPLIFY_NAME_OR_ANGLE,
+		      EXPORT_TXT_SIMPLIFY_AUTO], # XXX better choices
+	  var =>  \$export_txt_mode],
+	 ['exporttxtminangle','=s',30,
+	  label => M"Minimalwinkel bei Route-Export",
+	  longhelp => M"Minimalwinkel in Grad bei (GPS-)Export von Routen\n",
+	  var => \$export_txt_min_angle],
+	 ['gpswaypoints','=i',50,
+	  label => M"Maximale Anzahl der GPS-Waypoints",
+	  longhelp => M"Moderne Garmin-Geräte können 50 Waypoints pro Route verwenden,\nwährend ältere nur 20 Waypoints laden können\n",
+	  var => \$gps_waypoints,
+	 ],
+	 ['gpsdevice','=s',($os eq 'win' ? "COM1" : ($^O =~ /bsd/i ? '/dev/cuaa0' : '/dev/ttyS0')),
+	  #XXX check: subtype => 'file',
+	  label => M"GPS-Device", var => \$gps_device],
+
+	 M"Sonstiges",
+	 ['kde','!',undef,
+	  label => M"Für KDE optimieren", var => \$run_under_kde],
+	 ['coordout','=s','standard',
+	  label => M"Koordinatenausgabe", var => \$coord_output],
+	 ['printcmd','=s',undef,
+	  label => M"Druckerkommando", var => \$print_cmd],
+	 ['printbackend','=s',undef,
+	  label => M"Druck-Backend", var => \$print_backend,
+	  choices => ["", qw(ps pdf)],
+	 ],
+	 ['ps_fixed_font','=s',"Courier7",
+	  label => M"Druckerzeichensatz (fixed)", var => \$ps_fixed_font],
+	 ['mapcolor','=s','color',
+	  choices => [qw(mono pixmap gray color)],
+	  label => M"Farbeinstellung beim Drucken", var => \$map_color],
+	 ['gvreuse','!',0,	# 1: alten gv-Prozess wiederverwenden
+	  label => M"GV-Fenster wiederverwenden", var => \$gv_reuse],
+	 ['server','!',undef,
+	  label => M"Server-Modus", var => \$use_server],
+	 ['autosave','!',1,
+	  label => M"Speichern beim Beenden", var => \$autosave_opts],
+	 ['environment','=s','normal',
+	  # "novacom" (für GDF-Daten als Standard)
+	  # "onlineoffice" (für Onlineoffice-Präsentationen)
+	  nogui => 1, var => \$environment],
+	 ['mldbm','!',0,
+	  label => M"Verwendung von MLDBM",
+	  longhelp => M"Die interne Straßennetz-Struktur wird als MLDBM-Hash
+auf der Festplatte statt im RAM gehalten. Langsamer, aber
+speicherplatzsparender.",
+	  var => \$use_mldbm],
+	 ['palmdocfmt','=s','isilo',
+	  choices => [qw(isilo pdbdoc)],
+	  label => M"Palm-Doc-Format", var => \$palm_doc_format],
+	 ['usexwd','!',undef,
+	  label => M"xwd als Screengrabber", var => \$use_xwd_if_possible],
+
+	 M"Advanced",
+	 ['edit','!',undef,
+	  label => M"Editmodus beim Starten",
+	  nogui => 1,		# XXX remove some day?
+	  var => sub {
+	      $set_mode = "edit";
+	  }
+	 ],
+	 ['stderr','!',0,
+	  label => M"Fehlerausgabe auf stderr", var => \$stderr],
+	 ['stderrwindow','!',undef,
+	  label => M"STDERR in ein Fenster", var => \$stderr_window],
+	 ['autoinstall','!',0,
+	  label => M"Auto-Installation vom CPAN (experimentell!)", var => \$auto_install_cpan],
+	 ['pp','!',0,
+	  label => M"Kurvenpunkte und Kreuzungen zeichnen", var => \$init_p_draw{'pp'}],
+	 ['advanced','!',undef, var => \$advanced,
+	  label => M"Advanced mode"],
+	 ['public','!',undef, nogui => 1,
+	  var => sub { $public_test = 1;
+		       $advanced = 0;
+		       $devel_host = 0;
+		       $do_www = 0;
+		       $no_map = 1;
+		       $public = 1;
+		       $autosave_opts = 0;
+		       $lazy_plot = 0;
+		       undef $proxy;
+		   }],
+	 ['v','!',0,	alias => [qw(verbose)],
+	  label => M"Verbose", var => \$verbose],
+	 ['version','!',undef,
+	  nogui => 1, var => sub {
+	      print
+		  "$progname $VERSION\n(file revision $PROG_REVISION)\n",
+		      "perl $]\nTk $Tk::VERSION\n";
+	      exit 0;
+	  }],
+	 ['plugins','=s',undef,
+	  label => M"Plugins beim Starten laden", var => \$initial_plugins,
+	  longhelp => M"Kommaseparierte Liste von Plugins, z.B. BBBikeThunder,BBBikeSalesman,BBBikeRuler"],
+	 ['layers','=s',undef,
+	  label => M"Zusätzliche Layer zeichnen", var => \$initial_layers],
+	 ['algorithm','=s','A*', var => \$global_search_args{Algorithm},
+	  longhelp => M"Nur A* (Perl-Implementation) und C-A* (C-Implementation) sind von Interesse",
+	  choices => ['A*', 'C-A*', ($devel_host||$advanced ? ("C-A*-2", 'srt') : ())],
+	  label => M"Suchalgorithmus",
+	  strict => 1],
+	 ['h','!',undef, nogui => 1, alias => [qw(help)],
+	  var => sub {
+	      if ($opt) {
+		  print STDERR $opt->usage;
+	      } else {
+		  die M"Usage?";
+	      }
+	      exit(0);
+	  }],
+	 ['nosplash','!',undef, nogui => 1], # pseudo option, handled at BEGIN
+	);
+
+    eval {
+	require Tk::Getopt;
+	Tk::Getopt->VERSION(0.49);
+    };
+    if ($@) {			# XXX
+	die "Please report to author: use opttable_to_getopt!!!! XXX";
+	warn __LINE__ . ": $@" if $verbose;
+	my @getopt_list;
+	foreach (@getopt) {
+	    push @getopt_list, $_ unless /^=/;
+	}
+	# XXX '@' geht nur mit Getopt::Long
+	push @getopt_list, 'power=i@' => \@power, 'speed=i@' => \@speed;
+	require Getopt::Long;
+	#XXX X11-Optionen durchschleifen...
+	#    if (!Getopt::Long::GetOptions(@getopt_list)) { usage('', \@getopt_list) }
+	Getopt::Long::config('pass_through');
+	Getopt::Long::GetOptions(@getopt_list);
+	#XXX    if (!GetOptions(@getopt_list)) { usage('', \@getopt_list) }
+    } else {
+	$Tk::Getopt::x11_pass_through = 1;
+	$opt = new Tk::Getopt(-opttable => \@opttable,
+			      -filename => catfile($bbbike_configdir, "config"),
+			     );
+	$opt->set_defaults;
+	pre_check_arguments();
+	$opt->load_options unless $public; # force defaults
+	if (!$opt->get_options) {
+	    print $opt->usage;
+	    exit 1;
+	}
+	$opt->process_options;
+    }
+    Tk::CmdLine::SetArguments(); # XXX here correct position?
+    if (@ARGV) {
+	require Getopt::Long;
+	Getopt::Long::config('nopass_through');
+	Getopt::Long::GetOptions() or die;
+    }
+}
+
+# Check for -public option --- in this case do not load the config file.
+sub pre_check_arguments {
+    foreach my $arg (@ARGV) {
+	if ($arg eq '-public') {
+	    $public = 1;
+	    last;
+	}
+    }
+}
 
 # For binding plain keybindings without modifiers
 sub bind_nomod {
@@ -6314,6 +6320,8 @@ sub set_map_mode {
     } elsif (exists $map_mode_callback{$map_mode} &&
 	     ref $map_mode_callback{$map_mode} eq 'CODE') {
 	$map_mode_callback{$map_mode}->();
+    } elsif ($map_mode eq MM_URL_SELECT) {
+	set_cursor('www');
     }
 }
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRuler.pm,v 1.15 2005/11/19 00:43:05 eserte Exp $
+# $Id: BBBikeRuler.pm,v 1.16 2005/11/20 19:49:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -33,7 +33,7 @@ use Hooks;
 sub register {
     my $pkg = __PACKAGE__;
 
-    $BBBikePlugins::plugins{$pkg} = $pkg;
+    $BBBikePlugin::plugins{$pkg} = $pkg;
 
     if (!defined $button_image) {
 	# ruler image is from tkruler

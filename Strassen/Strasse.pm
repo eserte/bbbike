@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.20 2005/04/18 23:57:55 eserte Exp $
+# $Id: Strasse.pm,v 1.21 2005/11/20 17:36:44 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -137,7 +137,7 @@ sub beautify_landstrasse {
     }
     if ($str =~ m/^ (.*:\s*)?
 		    (.*\s-\s.*?)
-		    (\s*:.*|\s*\(.*\)\s*)?
+		    (\s*[:,].*|\s*\(.*\)\s*)?
 		  $/x) {
 	(my($pre), $str, my($post)) = ($1, $2, $3);
 	$pre  = "" if !defined $pre;

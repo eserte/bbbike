@@ -14,15 +14,6 @@ Legend:
 
 =over
 
-=item * (M4)
-
-Umdrehen einer Straﬂe (A - B -> B - A): falls ein Teil mit Komma
-getrennt ist, sollte dieser Teil nicht gedreht werden.
-
-=item * (M2)
-
-WWW-Klickmodus: bei Mausover URL zeigen
-
 =item * (M2)
 
 Create nice anti-aliased and alpha-using PNG images and use it if
@@ -47,20 +38,9 @@ braucht keine Richtungsangabe erfolgen. Wenn an so einer Stelle eine
 Kreuzung ist, dann kann die Angabe E<quot>Hauptstraﬂe folgenE<quot>
 zus‰tzlich angezeigt werden.
 
-=item * (M4)
-
-Bug: E<quot>Delete this menuE<quot> item in plugins does not work
-reliably.
-
 =item * (H3)
 
 insert/delete etc. functionality: add an easy way to use custom layers
-
-=item * (M3)
-
-Hoehen-Layer reagiert nicht auf Reload. Workaround: Layer ausschalten,
-ptksh aufrufen, read_hoehe(-force => 1) aufrufen, Layer wieder
-einschalten.
 
 =item * (M3)
 

@@ -1,0 +1,1851 @@
+#
+# Start of map file
+#
+NAME sternfahrt2003
+STATUS ON
+SIZE 550 550
+#EXTENT -10836.000000 -6686.000000 33575.000000 28095.000000
+#EXTENT 7446 10397 9667 12620
+EXTENT 4658 7874 13542 16766
+UNITS METERS
+SHAPEPATH "[% MAPSERVER_DIR %]/data"
+IMAGECOLOR 225 225 225
+FONTSET "[% MAPSERVER_DIR %]/[% FONTS_LIST %]"
+
+# you may need to change this to match your MapServer build
+IMAGETYPE PNG
+
+#
+# Projection definition, consult the PROJ.4 documentation for parameter discussion
+#
+#PROJECTION
+#  "proj=utm"
+#  "ellps=GRS80"
+#  "zone=15"
+#  "north"
+#  "no_defs"
+#
+#  OR: 
+#
+#  "init=epsg:26915"
+#END
+
+#
+# Start of web interface definition (including WMS enabling metadata)
+#
+WEB
+  HEADER query_header.html
+  TEMPLATE sternfahrt2003.html
+  FOOTER query_footer.html
+  MINSCALE 1000
+  MAXSCALE 750000
+  IMAGEPATH "[% MAPSERVER_DIR %]/tmp/"
+  IMAGEURL "[% MAPSERVER_RELURL %]/tmp/"
+  EMPTY "[% MAPSERVER_RELURL %]/empty.html"
+  METADATA
+    WMS_TITLE "Sternfahrt 2003"
+#    WMS_ABSTRACT "Eine radfahrerorientierte Karte von Berlin und Brandenburg"
+    WMS_ACCESSCONSTRAINTS "none"
+
+    # change this value to match your setup
+#    WMS_ONLINERESOURCE "[% MAPSERVER_URL %]/brb_init.html"
+
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+QUERYMAP
+  SIZE 200 200
+  STATUS OFF
+  STYLE HILITE
+  COLOR 255 0 0
+END
+
+##
+## Start of reference map
+##
+#### BEGIN REFMAP REGION
+#REFERENCE
+#  IMAGE "[% MAPSERVER_DIR %]/graphics/reference.[% IMAGE_SUFFIX %]"
+#  EXTENT -80800 -95855 107255 92200
+#  SIZE 200 200
+#  STATUS ON
+#  COLOR -1 -1 -1
+#  OUTLINECOLOR 128 0 128
+#END
+#### END REFMAP REGION
+
+## BEGIN REFMAP CITY
+REFERENCE
+  IMAGE "[% MAPSERVER_DIR %]/graphics/reference-b.[% IMAGE_SUFFIX %]"
+  EXTENT -15700 -14985 37034 37749
+  SIZE 200 200
+  STATUS ON
+  COLOR -1 -1 -1
+  OUTLINECOLOR 128 0 128
+END
+## END REFMAP CITY
+
+### BEGIN REFMAP WIDEREGION
+#REFERENCE
+#  IMAGE "[% MAPSERVER_DIR %]/graphics/reference-wide.[% IMAGE_SUFFIX %]"
+#  EXTENT -251416 -148630 137301 240086
+#  SIZE 200 200
+#  STATUS ON
+#  COLOR -1 -1 -1
+#  OUTLINECOLOR 128 0 128
+#END
+### END REFMAP WIDEREGION
+
+#
+# Start of legend
+#
+LEGEND
+  KEYSIZE 18 12
+  LABEL
+#    TYPE BITMAP
+#    SIZE MEDIUM
+#    COLOR 0 0 89
+    TYPE truetype
+    FONT "lucida"
+    SIZE 10
+    COLOR 0 0 0
+  END
+  IMAGECOLOR 220 220 220
+  STATUS ON
+END
+
+#
+# Start of scalebar
+#
+SCALEBAR
+  IMAGECOLOR 255 255 255
+  LABEL
+    COLOR 255 255 255
+    SIZE tiny    
+  END
+  STYLE 1
+  SIZE 80 2
+  COLOR 255 255 255
+  UNITS KILOMETERS
+  INTERVALS 1
+  TRANSPARENT TRUE
+  STATUS TRUE
+END
+
+#
+# Start of symbol definitions (we're only using a few)
+#
+SYMBOL
+  NAME 'circle'
+  TYPE ELLIPSE
+  POINTS 1 1 END
+  FILLED TRUE
+END
+
+SYMBOL
+  NAME 'dotted'
+  TYPE ELLIPSE
+  POINTS 1 1 END
+  FILLED TRUE
+  STYLE 1 5 END
+END
+
+[% IF 0 && IMAGE_SUFFIX == "png" %]
+SYMBOL
+  NAME 'ring'
+  TYPE PIXMAP
+  IMAGE "[% IMAGE_DIR %]/hatched_ring.[% IMAGE_SUFFIX %]"
+  FILLED FALSE
+END
+[% ELSE %]
+SYMBOL
+  NAME 'ring'
+  TYPE ELLIPSE
+  POINTS 5 5 END
+  FILLED FALSE
+END
+[% END %]
+
+SYMBOL
+  NAME 'square'
+  TYPE VECTOR
+  POINTS 0 0 0 4 4 4 4 0 0 0 END
+  FILLED TRUE
+END
+
+SYMBOL
+  NAME 'width'
+  TYPE VECTOR
+  POINTS 0 0 0 1 1 1 1 0 0 0 END
+  FILLED TRUE
+END
+
+SYMBOL
+  NAME 'dashed1'
+  TYPE VECTOR
+  POINTS 0 0 2 2 END
+  FILLED true
+  STYLE 4 4 END
+END
+
+SYMBOL
+  NAME 'border'
+  TYPE VECTOR
+  POINTS 0 0 2 2 END
+  FILLED true
+  STYLE 5 4 1 4 END
+END
+
+SYMBOL
+  NAME raute
+  TYPE VECTOR
+  POINTS 0 2 2 0 4 2 2 4 0 2 END
+  STYLE 4 4 END
+  FILLED TRUE
+END
+
+SYMBOL
+  NAME 'strnrbox'
+  TYPE VECTOR
+  POINTS 0 0 0 40 80 40 80 0 0 0 END
+  FILLED TRUE
+END
+
+SYMBOL
+  NAME 'startflag'
+  TYPE PIXMAP
+  IMAGE "[% IMAGE_DIR %]/flag2_bl.[% IMAGE_SUFFIX %]"
+END
+
+SYMBOL
+  NAME 'goalflag'
+  TYPE PIXMAP
+  IMAGE "[% IMAGE_DIR %]/flag_ziel.[% IMAGE_SUFFIX %]"
+END
+
+SYMBOL
+  NAME 'blocked'
+  TYPE VECTOR
+  POINTS 0 1 1 0 4 3 7 0 8 1 5 4 8 7 7 8 4 5 1 8 0 7 3 4 0 1 END # cross
+  STYLE 1 20 END
+END
+
+SYMBOL
+  NAME 'cross'
+  TYPE VECTOR
+  POINTS 0 1 1 0 4 3 7 0 8 1 5 4 8 7 7 8 4 5 1 8 0 7 3 4 0 1 END # cross
+  FILLED TRUE
+  STYLE 1 20 END
+END
+
+## XXX geht nicht in mapserver-3.6.6!
+SYMBOL
+  NAME 'oneway_left'
+  TYPE TRUETYPE
+  FONT 'lucida'
+  FILLED true
+  GAP 20
+  ANTIALIAS true
+  CHARACTER "&#8592;" # left arrow, unicode codepoint
+END
+
+## XXX geht nicht in mapserver-3.6.6!
+SYMBOL
+  NAME 'oneway_right'
+  TYPE TRUETYPE
+  FONT 'lucida'
+  FILLED true
+  GAP 20
+  ANTIALIAS true
+  CHARACTER "&#8594;" # right arrow, unicode codepoint
+END
+
+SYMBOL
+  NAME 'oneway_left_small'
+  TYPE TRUETYPE
+  FONT 'lucida'
+  FILLED true
+  GAP 10
+  ANTIALIAS true
+  CHARACTER "&#8592;" # left arrow, unicode codepoint
+END
+
+## XXX geht nicht in mapserver-3.6.6!
+SYMBOL
+  NAME 'oneway_right_small'
+  TYPE TRUETYPE
+  FONT 'lucida'
+  FILLED true
+  GAP 10
+  ANTIALIAS true
+  CHARACTER "&#8594;" # right arrow, unicode codepoint
+END
+
+#
+# Start of layer definitions
+#
+
+LAYER
+  NAME Kommentare
+  TYPE QUERY
+  STATUS DEFAULT
+  DATA comments
+
+  CLASS
+  END
+
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+
+  METADATA
+    WMS_TITLE "Kommentare"
+    WMS_ABSTRACT "Kommentare"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Flächen"
+  TYPE POLYGON
+  STATUS ON
+  GROUP flaechen
+  DATA flaechen
+
+  LABELITEM "NAME"
+  
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION "F:P" 
+    NAME "Park, Wald"
+    COLOR 0 225 0
+  END
+  CLASS
+    EXPRESSION "F:Ae" 
+    NAME "Flughafen"
+    COLOR 255 255 255
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Flächen"
+    WMS_ABSTRACT "Sonstige Flächen (Parks, Wälder, Flughäfen)"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Gewässer"
+  GROUP gewaesser
+  TYPE LINE
+  STATUS ON
+  DATA wasserstrassen
+  
+  LABELITEM "NAME"
+
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION "W"
+    LABEL
+      MINFEATURESIZE 200
+      MINDISTANCE 150
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      MINSIZE 8
+      COLOR 0 0 255
+      ANGLE AUTO
+    END
+    SYMBOL "circle"
+    SIZE 1
+    COLOR 180 180 255
+  END
+  CLASS
+    EXPRESSION "W1"
+    LABEL
+      MINFEATURESIZE 40
+      MINDISTANCE 150
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      MINSIZE 8
+      COLOR 0 0 255
+      ANGLE AUTO
+    END
+    SYMBOL "circle"
+    SIZE 3
+    COLOR 180 180 255
+  END
+  CLASS
+    EXPRESSION "W2"
+    LABEL
+      MINFEATURESIZE 40
+      MINDISTANCE 150
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      MINSIZE 8
+      COLOR 0 0 255
+      ANGLE AUTO
+    END
+    SYMBOL "circle"
+    SIZE 6
+    COLOR 180 180 255
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Gewässer"
+    WMS_ABSTRACT "Gewässer in Liniendarstellung (Flüsse und Kanäle)"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Gewässer (Polygone)"
+  GROUP gewaesser
+  TYPE POLYGON
+  STATUS ON
+  DATA wasserstrassen_polygon
+
+  TOLERANCE 3
+  DUMP TRUE # allow GML export
+
+  LABELITEM "NAME"
+  
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /^W/ 
+    NAME "Gewässer"
+    LABEL
+#      MINFEATURESIZE 40
+      MINDISTANCE 150
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      MINSIZE 8
+      COLOR 0 0 255
+    END
+    COLOR 180 180 255
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Gewässer (Polygone)"
+    WMS_ABSTRACT "Gewässer in Polygondarstellung (Seen)"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Inseln"
+  GROUP gewaesser
+  TYPE POLYGON
+  STATUS ON
+  DATA wasserstrassen_polygon
+
+  LABELITEM "NAME"
+  
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION "I" 
+    COLOR 225 225 225
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+
+  METADATA
+    WMS_TITLE "Inseln"
+    WMS_ABSTRACT "Inseln"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Fähren"
+  TYPE LINE
+  STATUS ON
+  GROUP faehren
+  DATA faehren
+
+  LABELITEM "NAME"
+  
+  CLASS
+    COLOR 255 255 255
+    SYMBOL "raute"
+    SIZE 4
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+
+  METADATA
+    WMS_TITLE "Fähren"
+    WMS_ABSTRACT "Fähren"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Fähren (Annotations)"
+  GROUP faehren
+  MAXSCALE 75000
+  STATUS ON
+  DATA faehren
+  TYPE ANNOTATION
+
+  LABELITEM "STRNR" # dummy ... should be invisible i.e. one space
+  CLASS
+    NAME "Fähren"
+    COLOR 0 255 0
+    SYMBOL '[% IMAGE_DIR %]/ferry.[% IMAGE_SUFFIX %]'
+    LABEL
+      MINFEATURESIZE 10
+      MINDISTANCE 150
+      POSITION CC
+      SIZE TINY
+      COLOR 0 0 0
+    END
+  END
+END
+
+LAYER
+  NAME "Grenzen von Berlin"
+  GROUP grenzen
+  TYPE LINE
+  STATUS ON
+  DATA berlin
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /./ 
+    NAME "Grenze"
+    COLOR 128 128 128
+    SYMBOL "border"
+    SIZE 2
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Grenzen von Berlin"
+    WMS_ABSTRACT "Grenzen von Berlin"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Grenzen von Potsdam"
+  GROUP grenzen
+  TYPE LINE
+  STATUS ON
+  DATA potsdam
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /./ 
+#    NAME "Grenze" # not here, too avoid duplication in legend
+    COLOR 128 128 128
+    SYMBOL "border"
+    SIZE 2
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Grenzen von Potsdam"
+    WMS_ABSTRACT "Grenzen von Potsdam"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME sehenswuerdigkeit_polygon
+  TYPE POLYGON
+  STATUS ON
+  GROUP sehenswuerdigkeit
+  DATA sehenswuerdigkeit_polygon
+  
+  LABELITEM "NAME"
+
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /./
+#XXX core dump with symbol?!
+#    SYMBOL '[% IMAGE_DIR %]/star.[% IMAGE_SUFFIX %]'
+    COLOR 225 0 0
+  END
+
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Sehenswürdigkeiten"
+    WMS_ABSTRACT "Sehenswürdigkeiten"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Straßen (Outline)"
+  TYPE LINE
+  STATUS DEFAULT
+  DATA strassen
+  GROUP strassen
+  
+  DUMP FALSE
+
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION 'NN'
+    COLOR 210 210 210
+    SYMBOL 'width'
+    SIZE 6
+  END
+  CLASS
+    EXPRESSION 'N'
+    COLOR 210 210 210
+    SYMBOL 'width'
+    SIZE 6
+  END
+  CLASS
+    EXPRESSION 'H'
+    COLOR 210 210 210
+    SYMBOL 'width'
+    SIZE 6
+  END
+  # sligtly darker outline
+  CLASS
+    EXPRESSION 'HH'
+    COLOR 180 180 180
+    SYMBOL 'width'
+    SIZE 6
+  END
+  CLASS
+    EXPRESSION 'B'
+    COLOR 180 180 180
+    SYMBOL 'width'
+    SIZE 6
+  END
+  METADATA
+    WMS_TITLE "Straßen (Outline)"
+    WMS_ABSTRACT "Stadt- und Landstraßen"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME Radwege
+  GROUP radwege
+  TYPE LINE
+  STATUS ON
+  DATA radwege20
+
+  MINSCALE 10000
+  TOLERANCE 3
+
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /^RW[1234789]$/
+    NAME "Radweg"
+    COLOR 100 100 200
+    SYMBOL 'width'
+    SIZE 4
+  END
+  CLASS
+    EXPRESSION "RW5"
+    NAME "Busspur"
+    COLOR 128 128 255
+    SYMBOL 'dashed1'
+    SIZE 4
+  END
+  METADATA
+    WMS_TITLE "Radwege"
+    WMS_ABSTRACT "Radwege, verkehrsberuhigte Bereiche und Busspuren"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Radwege"
+  GROUP radwege
+  TYPE LINE
+  STATUS ON
+  DATA radwege10
+
+  MINSCALE 5000
+  MAXSCALE 10000
+  TOLERANCE 3
+
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /^RW[1234789]$/
+    NAME "Radweg"
+    COLOR 100 100 200
+    SYMBOL 'width'
+    SIZE 4
+  END
+  CLASS
+    EXPRESSION "RW5"
+    NAME "Busspur"
+    COLOR 128 128 255
+    SYMBOL 'dashed1'
+    SIZE 4
+  END
+  METADATA
+    WMS_TITLE "Radwege"
+    WMS_ABSTRACT "Radwege, verkehrsberuhigte Bereiche und Busspuren (Version für kleine Maßstäbe)"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME Radwege
+  GROUP radwege
+  TYPE LINE
+  STATUS ON
+  DATA radwege5
+
+  MAXSCALE 5000
+  TOLERANCE 3
+
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /^RW[1234789]$/
+    NAME "Radweg"
+    COLOR 100 100 200
+    SYMBOL 'width'
+    SIZE 4
+  END
+  CLASS
+    EXPRESSION "RW5"
+    NAME "Busspur"
+    COLOR 128 128 255
+    SYMBOL 'dashed1'
+    SIZE 4
+  END
+  METADATA
+    WMS_TITLE "Radwege"
+    WMS_ABSTRACT "Radwege, verkehrsberuhigte Bereiche und Busspuren (Version für sehr kleine Maßstäbe)"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Straßen"
+  TYPE LINE
+  STATUS DEFAULT
+  DATA strassen
+  GROUP strassen
+  
+  DUMP TRUE # allow GML export
+
+  LABELITEM "NAME"
+
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION 'NN'
+    NAME "Nebenstraße, für Kfz gesperrt"
+    LABEL
+#      MINFEATURESIZE 200
+      MINFEATURESIZE AUTO
+      MINDISTANCE 50
+      POSITION auto
+      TYPE truetype
+      FONT "street"
+      MINSIZE 8
+      COLOR 0 0 0
+      OUTLINECOLOR 225 225 225
+      ANGLE AUTO
+    END
+    COLOR 200 255 200
+    SYMBOL 'width'
+    SIZE 4
+  END
+  CLASS
+    EXPRESSION 'N'
+    NAME "Nebenstraße"
+    LABEL
+#      MINFEATURESIZE 200
+      MINFEATURESIZE AUTO
+      MINDISTANCE 50
+      POSITION auto
+      TYPE truetype
+      FONT "street"
+      MINSIZE 8
+      COLOR 0 0 0
+      OUTLINECOLOR 225 225 225
+      ANGLE AUTO
+    END
+    COLOR 255 255 255
+    SYMBOL 'width'
+    SIZE 4
+  END
+  CLASS
+    EXPRESSION 'H'
+    NAME "Hauptstraße"
+    LABEL
+#      MINFEATURESIZE 200
+      MINFEATURESIZE AUTO
+      MINDISTANCE 50
+      POSITION auto
+      TYPE truetype
+      FONT "street"
+      MINSIZE 8
+      COLOR 0 0 0
+      OUTLINECOLOR 225 225 225
+      ANGLE AUTO
+    END
+    COLOR 255 255 200
+    SYMBOL 'width'
+    SIZE 4
+  END
+  CLASS
+    EXPRESSION 'HH'
+    NAME "Wichtige Hauptstraße"
+    LABEL
+      MINFEATURESIZE 40
+      MINDISTANCE 50
+      POSITION auto
+      TYPE truetype
+      FONT "street"
+      MINSIZE 8
+      COLOR 0 0 0
+      OUTLINECOLOR 225 225 225
+      ANGLE AUTO
+    END
+    COLOR 255 255 0
+    SYMBOL 'width'
+    SIZE 4
+  END
+  CLASS
+    EXPRESSION 'B'
+    NAME "Bundesstraße"
+    LABEL
+      MINFEATURESIZE 40
+      MINDISTANCE 50
+      POSITION auto
+      TYPE truetype
+      FONT "street"
+      MINSIZE 8
+      COLOR 0 0 0
+      OUTLINECOLOR 225 225 225
+      ANGLE AUTO
+    END
+    COLOR 255 130 130
+    SYMBOL 'width'
+    SIZE 4
+  END
+  CLASS # should not happen
+    EXPRESSION /./ 
+    COLOR 200 200 200
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Straßen"
+    WMS_ABSTRACT "Stadt- und Landstraßen"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Straßen (Annotations)"
+  GROUP strassen
+#  MAXSCALE 600000
+  STATUS DEFAULT
+  DATA strassen
+  TYPE ANNOTATION
+  LABELITEM "STRNR"
+  CLASSITEM "CAT"
+  CLASS
+# XXX warum geht das nicht, aber B geht???
+    EXPRESSION /^[FR]/
+    COLOR 0 255 0
+    SYMBOL 'strnrbox'
+    SIZE 10
+    LABEL
+      MINFEATURESIZE 50
+      MINDISTANCE 150
+      POSITION CC
+      TYPE truetype
+      FONT "lucida"
+      SIZE 6
+      COLOR 0 0 0
+    END
+  END
+  CLASS
+    EXPRESSION /^B/
+    COLOR 255 255 0
+    SYMBOL 'strnrbox'
+    SIZE 10
+    LABEL
+      MINFEATURESIZE 50
+      MINDISTANCE 150
+      POSITION CC
+      TYPE truetype
+      FONT "lucida"
+      SIZE 6
+      COLOR 0 0 0
+    END
+  END
+
+  METADATA
+    WMS_TITLE "Straßennummern"
+    WMS_ABSTRACT "Straßennummern und Nummerierung von ausgeschilderten Radrouten"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+### BEGIN ROUTE
+#LAYER
+#  NAME Route
+#  GROUP route
+#  TYPE LINE
+#  STATUS ON
+#  DATA "### ROUTESHAPEFILE ###"
+#  FEATURE POINTS ### ROUTECOORDS ### END END
+#
+#  TOLERANCE 3
+#
+##  TEMPLATE "query.html"
+##  HEADER "query_header2.html"
+##  FOOTER "query_footer2.html"
+##TRANSPARENCY 50##XXX Wie am geschicktesten verwenden?
+#
+#  CLASS
+#    NAME "Route"
+#    COLOR 255 0 255
+#    SYMBOL 'width'
+#    SIZE 4
+#  END
+#  METADATA
+#    WMS_TITLE "Route"
+#    WMS_ABSTRACT "Berechnete Route"
+#    WMS_SRS "EPSG:4326"
+#  END
+#END
+### END ROUTE
+
+## BEGIN ROUTE
+LAYER
+  NAME Sternfahrt
+  GROUP sternfahrt
+  TYPE LINE
+  STATUS ON
+  DATA sternfahrt
+
+  TOLERANCE 3
+
+#  TEMPLATE "query.html"
+#  HEADER "query_header2.html"
+#  FOOTER "query_footer2.html"
+#TRANSPARENCY 50##XXX Wie am geschicktesten verwenden?
+
+  CLASSITEM "CAT" 
+  CLASS
+    NAME "Sternfahrt-Route"
+    EXPRESSION /./
+    COLOR 0 0 0
+    SYMBOL 'dotted'
+    SIZE 7
+  END
+END
+## END ROUTE
+
+LAYER
+  NAME Treffpunkte
+  GROUP treffpunkte
+  TYPE ANNOTATION
+  STATUS ON
+  DATA treffpunkte
+
+  LABELITEM "NAME"
+#LABELCACHE OFF
+
+  TOLERANCE 3
+
+  CLASSITEM "CAT" 
+  CLASS
+    EXPRESSION /./
+    LABEL
+      MINFEATURESIZE 50
+      MINDISTANCE 150
+      POSITION AUTO
+      TYPE truetype
+      FONT "lucida"
+      SIZE 10
+      COLOR 170 0 0
+      OUTLINECOLOR 225 225 225
+    END
+  END
+END
+
+LAYER
+  NAME "U-Bahn"
+  GROUP bahn
+  TYPE LINE
+  STATUS ON
+  DATA ubahn
+  
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /^U[ABC]?$/
+    COLOR 0 0 128
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "U-Bahnlinien"
+    WMS_ABSTRACT "U-Bahnlinien"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "S-Bahn"
+  GROUP bahn
+  TYPE LINE
+  STATUS ON
+  DATA sbahn
+  
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /^S[ABC]?$/
+    COLOR 0 128 0
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "S-Bahnlinien"
+    WMS_ABSTRACT "S-Bahnlinien"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Regionalbahn"
+  GROUP bahn
+  TYPE LINE
+  STATUS ON
+  DATA rbahn
+  
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /^R[ABC]?$/
+    COLOR 0 128 0
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Regionalbahnlinien"
+    WMS_ABSTRACT "Regionalbahnlinien"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Straßenqualität"
+  TYPE LINE
+  STATUS ON
+  GROUP qualitaet
+  DATA qualitaet
+  MAXSCALE 550000
+
+  DUMP TRUE # allow GML export
+  
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION 'Q0'
+    NAME "Sehr gute Fahrbahnqualität"
+    SYMBOL "raute"
+    SIZE 4
+    COLOR 0 160 0
+  END
+  CLASS
+    EXPRESSION 'Q1'
+    NAME "Gute Fahrbahnqualität"
+    SYMBOL "raute"
+    SIZE 4
+    COLOR 0 255 0
+  END
+  CLASS
+    EXPRESSION 'Q2'
+    NAME "Mäßige Fahrbahnqualität"
+    SYMBOL "raute"
+    SIZE 4
+    COLOR 255 200 0
+  END
+  CLASS
+    EXPRESSION 'Q3'
+    NAME "Schlechte Fahrbahnqualität"
+    SYMBOL "raute"
+    SIZE 4
+    COLOR 255 0 0
+  END
+  CLASS # should not happen
+    EXPRESSION /./ 
+    COLOR 200 200 200
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Fahrbahnqualität"
+    WMS_ABSTRACT "Fahrbahnqualität (Kopfsteinpflaster etc.). Auf diesen Strecken ist der Fahrkomfort beeinträchtigt und es können deshalb nur geringere Geschwindigkeiten gefahren werden."
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Sonstige Behinderungen"
+  TYPE LINE
+  STATUS ON
+  GROUP handicap
+  DATA handicap
+  MAXSCALE 550000
+
+  DUMP TRUE # allow GML export
+  
+  CLASSITEM 'CAT'
+# CLASS
+#   EXPRESSION 'q0'
+#   NAME "Keine sonstigen Behinderungen"
+#   SYMBOL "raute"
+#   SIZE 4
+#   COLOR 0 160 0
+# END
+  CLASS
+    EXPRESSION 'q1'
+#    NAME "auf 25 km/h" # not here, too avoid confusion in legend
+    SYMBOL "raute"
+    SIZE 4
+    COLOR 0 255 0
+  END
+  CLASS
+    EXPRESSION 'q2'
+#    NAME "auf 18 km/h" # not here, too avoid confusion in legend
+    SYMBOL "raute"
+    SIZE 4
+    COLOR 255 200 0
+  END
+  CLASS
+    EXPRESSION 'q3'
+#    NAME "auf 13 km/h" # not here, too avoid confusion in legend
+    SYMBOL "raute"
+    SIZE 4
+    COLOR 255 0 0
+  END
+  CLASS
+    EXPRESSION 'q4'
+    NAME "Schrittgeschwindigkeit"
+    SYMBOL "raute"
+    SIZE 4
+    COLOR 200 0 0
+  END
+  CLASS # should not happen
+    EXPRESSION /./ 
+    COLOR 200 200 200
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Sonstige Behinderungen"
+    WMS_ABSTRACT "Sonstige Behinderungen, die den Radfahrer auf niedrigere Geschwindigkeiten zwingen. In der Regel ist der Fahrkomfort auf diesen Strecken nicht beeinträchtigt."
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Gesperrte Straßen"
+  TYPE LINE
+  STATUS ON
+  DATA gesperrt30
+  GROUP blocked
+
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION '2'
+    NAME "für Radfahrer gesperrte Straße"
+    COLOR 200 0 0
+    SIZE 10
+    SYMBOL 'blocked'
+    MAXSCALE 30000
+  END
+  CLASS
+    EXPRESSION '2'
+    COLOR 200 0 0
+    SIZE 7
+    SYMBOL 'blocked'
+    MINSCALE 30000
+  END
+END
+
+LAYER
+  NAME "Einbahnstraßen"
+  TYPE LINE
+  STATUS ON
+  DATA gesperrt
+  GROUP blocked
+
+  CLASSITEM 'CAT'
+## XXX geht nicht in mapserver-3.6.6!
+## Hack 1_left/1_right notwendig, siehe -onewayhack in .../miscsrc/bbd2esri
+  CLASS
+    EXPRESSION '1_left'
+    NAME "Einbahnstraße"
+    COLOR 0 0 200
+    SYMBOL 'oneway_left'
+    SIZE 10
+    MAXSCALE 30000
+  END
+  CLASS
+    EXPRESSION '1_right'
+    COLOR 0 0 200
+    SYMBOL 'oneway_right'
+    SIZE 10
+    MAXSCALE 30000
+  END
+  CLASS
+    EXPRESSION '1_left'
+    COLOR 0 0 200
+    SYMBOL 'oneway_left_small'
+    SIZE 7
+    MINSCALE 30000
+    MAXSCALE 60000
+  END
+  CLASS
+    EXPRESSION '1_right'
+    COLOR 0 0 200
+    SYMBOL 'oneway_right_small'
+    SIZE 7
+    MINSCALE 30000
+    MAXSCALE 60000
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Gesperrte Straßen"
+    WMS_ABSTRACT "Gesperrte Straßen"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "Fragezeichen"
+  GROUP fragezeichen
+  TYPE LINE
+  STATUS OFF
+  DATA fragezeichen
+  
+  LABELITEM 'CAT'
+
+  CLASSITEM 'CAT'
+  CLASS
+    NAME "Fragezeichen"
+    SYMBOL 'raute'
+    SIZE 4
+    COLOR 0 0 0
+    LABEL
+      MINFEATURESIZE 20
+      MINDISTANCE 100
+      POSITION CC
+      TYPE truetype
+      FONT "lucida"
+      SIZE 10
+      COLOR 180 0 0
+      OUTLINECOLOR 225 225 225
+    END
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Fragezeichen"
+    WMS_ABSTRACT "Unsichere Daten"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "U-Bahnhof"
+  GROUP bahn
+  TYPE POINT
+  STATUS ON
+  DATA ubahnhof
+  MAXSCALE 300000
+  TOLERANCE 5
+
+  LABELITEM "NAME"
+
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /^U[ABC]?$/
+    COLOR 0 0 128
+    SYMBOL 'square'
+    SIZE 4
+    MINSCALE 75000
+  END
+  CLASS
+    EXPRESSION /^U[ABC]?$/
+    SYMBOL '[% IMAGE_DIR %]/ubahn_klein.[% IMAGE_SUFFIX %]'
+    MINSCALE 25000
+    MAXSCALE 75000
+  END
+  CLASS
+    EXPRESSION /^U[ABC]?$/
+    SYMBOL '[% IMAGE_DIR %]/ubahn.[% IMAGE_SUFFIX %]'
+    MAXSCALE 25000
+    MINSCALE 15000
+  END
+  CLASS
+    EXPRESSION /^U[ABC]?$/
+    SYMBOL '[% IMAGE_DIR %]/ubahn.[% IMAGE_SUFFIX %]'
+    MAXSCALE 15000
+    LABEL
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      SIZE 7
+      COLOR 0 0 128
+      OUTLINECOLOR 225 225 225
+    END
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "U-Bahnhöfe"
+    WMS_ABSTRACT "U-Bahnhöfe"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+# rbahnhof is below sbahnhof, because no funky sign yet...
+LAYER
+  NAME rbahnhof
+  GROUP bahn
+  TYPE POINT
+  STATUS ON
+  DATA rbahnhof
+  MAXSCALE 300000
+  TOLERANCE 3
+  
+  LABELITEM "NAME"
+
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /^R[ABC]?$/
+    COLOR 0 128 0
+    SYMBOL 'circle'
+    LABEL
+      MINFEATURESIZE 40
+      MINDISTANCE 150
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      SIZE 7
+      COLOR 0 128 0
+      OUTLINECOLOR 225 225 225
+    END
+    SIZE 6
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Regionalbahnhöfe"
+    WMS_ABSTRACT "Regionalbahnhöfe"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME "S-Bahnhof"
+  GROUP bahn
+  TYPE POINT
+  STATUS ON
+  DATA sbahnhof
+  MAXSCALE 300000
+  TOLERANCE 5
+ 
+  LABELITEM 'NAME'
+
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /^S[ABC]?$/
+    COLOR 0 128 0
+    SYMBOL 'circle'
+    SIZE 6
+    MINSCALE 75000
+  END
+  CLASS
+    EXPRESSION /^S[ABC]?$/
+    SYMBOL '[% IMAGE_DIR %]/sbahn_klein.[% IMAGE_SUFFIX %]'
+    MINSCALE 25000
+    MAXSCALE 75000
+  END
+  CLASS
+    EXPRESSION /^S[ABC]?$/
+    SYMBOL '[% IMAGE_DIR %]/sbahn.[% IMAGE_SUFFIX %]'
+    MINSCALE 15000
+    MAXSCALE 25000
+  END
+  CLASS
+    EXPRESSION /^S[ABC]?$/
+    SYMBOL '[% IMAGE_DIR %]/sbahn.[% IMAGE_SUFFIX %]'
+    MAXSCALE 15000
+    LABEL
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      SIZE 7
+      COLOR 0 128 0
+      OUTLINECOLOR 225 225 225
+    END
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "S-Bahnhöfe"
+    WMS_ABSTRACT "S-Bahnhöfe"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+
+LAYER
+  NAME Orte
+  TYPE POINT
+  STATUS ON
+  GROUP orte
+  DATA orte
+  
+  LABELITEM "NAME"
+
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION "0"
+    COLOR 0 0 0
+    SYMBOL 'circle'
+    LABEL
+      MINFEATURESIZE 40
+      MINDISTANCE 150
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      SIZE 6
+      COLOR 0 0 0
+    END
+    SIZE 2
+    MAXSCALE 300000
+  END
+  CLASS
+    EXPRESSION "1"
+    COLOR 0 0 0
+    SYMBOL 'circle'
+    LABEL
+      MINFEATURESIZE 40
+      MINDISTANCE 150
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      SIZE 7
+      COLOR 0 0 0
+    END
+    SIZE 4
+    MAXSCALE 450000
+  END
+  CLASS
+    EXPRESSION "2"
+    COLOR 0 0 0
+    SYMBOL 'circle'
+    LABEL
+      MINFEATURESIZE 40
+      MINDISTANCE 150
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      SIZE 8
+      COLOR 0 0 0
+    END
+    SIZE 6
+    MAXSCALE 600000
+  END
+  CLASS
+    EXPRESSION "3"
+    COLOR 0 0 0
+    SYMBOL 'circle'
+    LABEL
+      MINFEATURESIZE 40
+      MINDISTANCE 150
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      SIZE 9
+      COLOR 0 0 0
+    END
+    SIZE 8
+  END
+  CLASS
+    EXPRESSION "4"
+    COLOR 0 0 0
+    SYMBOL 'circle'
+    LABEL
+      FORCE true
+      MINFEATURESIZE 40
+      MINDISTANCE 150
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      SIZE 10
+      COLOR 0 0 0
+    END
+    SIZE 10
+  END
+  CLASS
+    EXPRESSION "5"
+    COLOR 0 0 0
+    SYMBOL 'circle'
+    LABEL
+      FORCE true
+      MINFEATURESIZE 40
+      MINDISTANCE 150
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      SIZE 11
+      COLOR 0 0 0
+    END
+    SIZE 12
+  END
+  CLASS
+    EXPRESSION "6"
+    COLOR 0 0 0
+    SYMBOL 'circle'
+    LABEL
+      FORCE true
+      MINFEATURESIZE 40
+      MINDISTANCE 150
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      SIZE 12
+      COLOR 0 0 0
+    END
+    SIZE 15
+  END
+  CLASS
+    EXPRESSION /./
+    COLOR 0 0 0
+    SYMBOL 'circle'
+    LABEL
+      MINFEATURESIZE 40
+      MINDISTANCE 150
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      SIZE 6
+      COLOR 0 0 0
+    END
+    SIZE 1
+  END
+  METADATA
+    WMS_TITLE "Ortschaften"
+    WMS_ABSTRACT "Dörfer, Stadtteile und Städte"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME Obst
+  TYPE POINT
+  STATUS ON
+  GROUP obst
+  DATA obst
+  MAXSCALE 300000
+  
+  CLASSITEM 'NAME'
+  CLASS
+    EXPRESSION "Pflaume"
+    SYMBOL '[% IMAGE_DIR %]/pflaume.[% IMAGE_SUFFIX %]'
+  END
+  CLASS
+    EXPRESSION "Apfel"
+    SYMBOL '[% IMAGE_DIR %]/apfel.[% IMAGE_SUFFIX %]'
+  END
+  CLASS
+    EXPRESSION "Kirsche"
+    SYMBOL '[% IMAGE_DIR %]/kirsche.[% IMAGE_SUFFIX %]'
+  END
+  CLASS
+    EXPRESSION "Birne"
+    SYMBOL '[% IMAGE_DIR %]/birne.[% IMAGE_SUFFIX %]'
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Obst"
+    WMS_ABSTRACT "Obst"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+### XXX hmmm... how to automatically map CAT_IMG to SYMBOL?
+#LAYER
+#  NAME sehenswuerdigkeit_point
+#  TYPE POINT
+#  STATUS ON
+#  GROUP sehenswuerdigkeit
+#  DATA sehenswuerdigkeit_point
+#  MAXSCALE 15000
+#  
+#  CLASSITEM 'CAT_IMG'
+#  CLASS
+#    EXPRESSION /brandenburger_tor/
+#XXX do not hardcode
+#    SYMBOL '/home/e/eserte/src/bbbike/data/sehenswuerdigkeit_img/brandenburger_tor.[% IMAGE_SUFFIX %]'
+#  END
+#  METADATA
+#    WMS_TITLE "Sehenswürdigkeiten"
+#    WMS_ABSTRACT "Sehenswürdigkeiten"
+#    WMS_SRS "EPSG:4326"
+#  END
+#END
+
+LAYER
+  NAME sehenswuerdigkeit_point
+  TYPE POINT
+  STATUS ON
+  GROUP sehenswuerdigkeit
+  DATA sehenswuerdigkeit_point
+  MAXSCALE 30000
+  
+  LABELITEM "NAME"
+
+  CLASSITEM "CAT"  
+  CLASS
+    EXPRESSION 'SW|IMG:church.[% IMAGE_SUFFIX %]'
+    NAME "Kirche"
+    SYMBOL '[% IMAGE_DIR %]/church.[% IMAGE_SUFFIX %]'
+  END
+  CLASS
+    EXPRESSION /./
+    NAME "Sehenswürdigkeit"
+    SYMBOL '[% IMAGE_DIR %]/star.[% IMAGE_SUFFIX %]'
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Sehenswürdigkeiten"
+    WMS_ABSTRACT "Sehenswürdigkeiten"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+LAYER
+  NAME Ampeln
+  TYPE POINT
+  STATUS ON
+  GROUP ampeln
+  DATA ampeln
+ 
+  CLASSITEM "CAT" 
+  CLASS
+    EXPRESSION /[FX]/
+    MAXSCALE 8000
+    SYMBOL '[% IMAGE_DIR %]/ampel.[% IMAGE_SUFFIX %]'
+  END
+  CLASS
+    NAME Ampel
+    EXPRESSION /[FX]/
+    MINSCALE 8000
+    MAXSCALE 16000
+    SYMBOL '[% IMAGE_DIR %]/ampel_klein.[% IMAGE_SUFFIX %]'
+  END
+  CLASS
+    EXPRESSION "B"
+    MAXSCALE 8000
+    SYMBOL '[% IMAGE_DIR %]/andreaskr.[% IMAGE_SUFFIX %]'
+  END
+  CLASS
+    NAME "Bahnübergang"
+    EXPRESSION "B"
+    MINSCALE 8000
+    MAXSCALE 16000
+    SYMBOL '[% IMAGE_DIR %]/andreaskr_klein.[% IMAGE_SUFFIX %]'
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Ampeln"
+    WMS_ABSTRACT "Ampeln, beschrankte Bahnübergänge"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+### BEGIN ADDITIONAL LAYERS
+### END ADDITIONAL LAYERS
+
+### BEGIN STARTFLAG
+#LAYER
+#  NAME startflag
+#  GROUP route
+#  TYPE POINT
+#  STATUS ON
+#  FEATURE
+#    POINTS ### STARTFLAGPOINTS ### END
+#  END
+#
+#  TOLERANCE 3
+#
+#  TEMPLATE "query.html"
+#  HEADER "query_header2.html"
+#  FOOTER "query_footer2.html"
+#
+#  CLASS
+#    NAME "Beginn der Route"
+#    COLOR 255 0 255
+#    SYMBOL 'startflag'
+#  END
+#  METADATA
+#    WMS_TITLE "Startflagge"
+#    WMS_ABSTRACT "Beginn der Route"
+#    WMS_SRS "EPSG:4326"
+#  END
+#END
+### END STARTFLAG
+
+### BEGIN GOALFLAG
+#LAYER
+#  NAME goalflag
+#  GROUP route
+#  TYPE POINT
+#  STATUS ON
+#  FEATURE
+#    POINTS ### GOALFLAGPOINTS ### END
+#  END
+#
+#  TOLERANCE 3
+#
+#  TEMPLATE "query.html"
+#  HEADER "query_header2.html"
+#  FOOTER "query_footer2.html"
+#
+#  CLASS
+#    NAME "Ende der Route"
+#    COLOR 255 0 255
+#    SYMBOL 'goalflag'
+#  END
+#  METADATA
+#    WMS_TITLE "Zielflagge"
+#    WMS_ABSTRACT "Ende der Route"
+#    WMS_SRS "EPSG:4326"
+#  END
+#END
+### END GOALFLAG
+
+### BEGIN MARKER
+#LAYER
+#  NAME markerlayer
+#  GROUP route
+#  TYPE POINT
+#  STATUS ON
+#  FEATURE
+#    POINTS ### MARKERPOINT ### END
+#  END
+#
+#  TOLERANCE 3
+#
+#  TEMPLATE "query.html"
+#  HEADER "query_header2.html"
+#  FOOTER "query_footer2.html"
+#
+#  CLASS
+#    NAME "Markierung"
+#    COLOR 255 180 200
+#    SYMBOL 'ring'
+#    SIZE 20
+#  END
+#  METADATA
+#    WMS_TITLE "Markierung"
+#    WMS_ABSTRACT "Markierung"
+#    WMS_SRS "EPSG:4326"
+#  END
+#END
+### END MARKER
+
+LAYER
+  NAME Treffpunkte
+  GROUP treffpunkte
+  TYPE POINT
+  STATUS ON
+  DATA treffpunkte
+
+  LABELITEM "NAME"
+
+  TOLERANCE 3
+
+  CLASSITEM "CAT" 
+  CLASS
+    EXPRESSION /./
+    COLOR 170 0 0
+    SYMBOL 'cross'
+    SIZE 20
+    NAME Treffpunkt
+  END
+END
+
+
+
+# Staatsgrenzen sind "undurchdringlich", deshalb ganz oben gezeichnet
+LAYER
+  NAME "Grenzen von Deutschland"
+  GROUP grenzen
+  TYPE LINE
+  STATUS ON
+  DATA deutschland
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /./ 
+#    NAME "Grenze" # not here, too avoid duplication in legend
+    COLOR 128 128 128
+    SYMBOL "border"
+    SIZE 2
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Grenzen von Deutschland"
+    WMS_ABSTRACT "Grenzen von Deutschland"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+END # Map File

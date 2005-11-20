@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.24 2005/11/14 22:03:54 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.24 2005/11/14 22:03:54 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -1397,8 +1397,10 @@ sub BBBikeHeavy::reload_all {
 	}
     }
 
-    #XXX del: seems to be wrong (as seen for fragezeichen)
-    #return if ($BBBikeLazy::mode);
+    # Special handling for hoehe layers
+    if ($change{"p"}->{"hoehe"}) {
+	read_hoehe(-force => 1);
+    }
 
     $progress->InitGroup;
     while(my($linetype, $v) = each %change) {
