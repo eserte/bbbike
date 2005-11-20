@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.206 2005/11/19 01:15:20 eserte Exp eserte $
+# $Id: bbbike,v 3.207 2005/11/19 22:55:35 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.206 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.207 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -656,6 +656,7 @@ eval { local $SIG{'__DIE__'};
     subtype => 'dir', nosave => 1, var => \$datadir],
 
    M"Anzeige",
+   ['','',M"Bei den meisten Optionen muss BBBike neu gestartet werden,\num die Änderungen sichtbar zu machen."],
    ['fontrot','!',1,
     label => M"Rotierte Zeichensätze", var => \$use_font_rot],
    ['fontfamily','=s',undef, #'helvetica',#XXX no defaults!
@@ -11342,7 +11343,7 @@ sub show_info {
 	$is_p = ($base_tag =~ /-(?:[fb]g|img)$/);
 	$base_tag =~ s/-(?:[fb]g|img)$//;
 	last unless !exists $p_file{$base_tag} and !$str_file{$base_tag};
-	my($below_item, @below_tags) = find_below($c, qw/s l u b r f w/);
+	my($below_item, @below_tags) = find_below($c, qw/s l u b r f w o/);
 	if (!defined $below_item) {
 	    main::status_message("Es wurde kein Kartenelement an dieser Position gefunden.", "err");
 	    return;

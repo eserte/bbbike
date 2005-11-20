@@ -538,6 +538,16 @@ userdel	q4 -7873,66589 -7851,66418
          'data' => 'userdel	1 -1668,-1709 -1752,-1823 -1921,-1931 -2049,-2165
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1136069999,
+         'text' => 'Weihnachtsmarkt an der Gedächtniskirche, bis 2005-12-31',
+         'from' => 1132411558,
+         'data' => 'userdel	q4 5831,10978 5797,10881
+userdel	q4 5657,10868 5652,11004
+userdel	q4; 5652,11004 5716,10978 5831,10978
+',
+         'type' => 'handicap'
        }
      
 );

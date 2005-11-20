@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.91 2005/11/14 22:06:04 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.92 2005/11/19 22:58:19 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -363,8 +363,6 @@ Stallschreiberstr.	1s 10489,11405 10620,11244 10678,11172
 Jahnstr.	1s 11493,9128 11509,9392
 Bayernring	1s 8616,8595 8437,8557 8371,8543
 Sredzkistr. (Kulturbrauerei)	1s 11101,14768 10909,14710
-# wild guess über das "Ignorieren"
-Lohmeyerstr.	1s 3348,12314 3409,12451
 Waldweg	1s 25496,2429 24972,2583
 Schulenburgring	1s 9019,8434 9013,8594
 Neue Schönhauser Str.	1s 10528,13243 10441,13195 10305,13211
@@ -625,6 +623,8 @@ Drängelgitter	BNP:5 8810,14373
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
+#: last_checked: 2005-11-19
+Budapester Str.: Bauarbeiten, Fußgängerüberweg gesperrt	3nocross::inwork 5716,10978 5831,10978 6135,10982
 Hedwigskirchgasse: Bauarbeiten	2::inwork 9743,12239 9756,12139
 #: last_checked: 2005-08-23
 Monbijoubrücke: die behelfsmäßige Brücke wurde abgerissen, der Neubar ist voraussichtlich 2006-06-01 fertig	2:inwork 9680,12916 9707,12974

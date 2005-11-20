@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.41 2005/11/17 20:53:39 eserte Exp $
+# $Id: Makefile,v 1.42 2005/11/20 17:20:07 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -15,6 +15,8 @@
 # It should be really absolute, because this directory may be replicated to
 # elsewhere.
 ABS_LOCAL_BBBIKE_DIR=	/home/e/eserte/src/bbbike		# ***
+BBBIKE_DATA_DIR=	$(ABS_LOCAL_BBBIKE_DIR)/data
+BBBIKE_MISCSRC_DIR=	$(ABS_LOCAL_BBBIKE_DIR)/miscsrc
 
 # BRBDIR is the current directory. Do not use .CURDIR, because it may be
 # called via "make -f" from another directory.
@@ -287,7 +289,9 @@ MAPFILES=	$(SCOPES:S/^/brb-/:S/$/.map/)
 MAPFILES_EXTRA=	brb.map
 IPAQ_MAPFILES=	$(SCOPES:S/^/brb-ipaq-/:S/$/.map/)
 IPAQ_MAPFILES_EXTRA=	brb-ipaq.map
-HTMLFILES=	brb.html brb_init.html brb.js help.html query_header.html query_footer.html index.html
+HTMLFILES=	brb.html brb_init.html brb.js help.html query_header.html query_footer.html index.html \
+		radroute.html
+TEMPORARIES=	radroute_body.html
 ######################################################################
 
 .MAIN: all
@@ -305,7 +309,7 @@ HTMLFILES=	brb.html brb_init.html brb.js help.html query_header.html query_foote
 all:	build-all
 
 clean:
-	rm -f ${MAPFILES} ${MAPFILES_EXTRA} ${IPAQ_MAPFILES} ${IPAQ_MAPFILES_EXTRA} ${HTMLFILES}
+	rm -f ${MAPFILES} ${MAPFILES_EXTRA} ${IPAQ_MAPFILES} ${IPAQ_MAPFILES_EXTRA} ${HTMLFILES} ${TEMPORARIES}
 
 build-all: Makefile.${TARGET}.inc .WAIT maps html misc .WAIT .built_for.${TARGET}
 
@@ -319,7 +323,10 @@ html:	${HTMLFILES}
 
 misc:	crontab httpd.conf
 
-Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile ${ABS_LOCAL_BBBIKE_DIR}/BBBikeVar.pm Makefile
+Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile \
+			${ABS_LOCAL_BBBIKE_DIR}/BBBikeVar.pm \
+			${ABS_LOCAL_BBBIKE_DIR}/BBBikeMapserver.pm \
+			Makefile
 	rm $@
 	touch $@
 	chmod ugo+r $@
@@ -354,6 +361,9 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile ${ABS_LOCAL_BBBIKE_DIR}
 .html-tpl.html:	Makefile Makefile.${TARGET}.inc
 	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
+
+# Additional dependency ("last updated date")
+brb.html:	data/strassen.shp
 
 .js-tpl.js:	Makefile Makefile.${TARGET}.inc
 	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
@@ -500,6 +510,24 @@ check-html:	brb.html brb_init.html help.html empty.html
 	    echo "*** $$html_file"; \
 	    tidy -eq $$html_file; \
 	done
+
+radroute.html:	radroute_header.html \
+		radroute_body.html \
+		radroute_footer.html
+	cat	radroute_header.html \
+		radroute_body.html \
+		radroute_footer.html > $@
+	chmod ugo+r $@
+
+radroute_body.html:	$(BBBIKE_DATA_DIR)/comments_route-orig \
+			$(BBBIKE_MISCSRC_DIR)/bbd2mapservhtml.pl \
+			$(BBBIKE_MISCSRC_DIR)/grepstrassen
+	$(BBBIKE_MISCSRC_DIR)/grepstrassen -v -sectionrx ignorieren $(BBBIKE_DATA_DIR)/comments_route-orig |\
+	    $(BBBIKE_MISCSRC_DIR)/bbd2mapservhtml.pl \
+		-bbbikeurl $(BBBIKE_URL) \
+		-email $(EMAIL) \
+		-linklist -preferalias -partialhtml \
+		-center city=Berlin_DE -centernearest > $@
 
 ######################################################################
 # misc

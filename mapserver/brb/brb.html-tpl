@@ -100,7 +100,8 @@
       <div class="lyrchk">
       <label><input type="checkbox" name="layer" value="qualitaet" [qualitaet_check]> Qualität</label><br>
       <label><input type="checkbox" name="layer" value="handicap" [handicap_check]> sonstige Behinderungen</label><br>
-      <label><input type="checkbox" name="layer" value="radwege" [radwege_check]> Radwege</label><br>
+      <label><input type="checkbox" name="layer" value="radwege" [radwege_check]> Radwege/Busspuren</label><br>
+      <label><input type="checkbox" name="layer" value="comments_route" [comments_route_check]> <a href="radroute.html">Radrouten</a> (in der Regel ausgeschildert)</label><br>
       <label><input type="checkbox" name="layer" value="blocked" [blocked_check]> gesperrte Straßen</label><br>
       <label><input type="checkbox" name="layer" value="bahn" [bahn_check]> Bahnlinien und Bahnhöfe</label><br>
       <label><input type="checkbox" name="layer" value="gewaesser" [gewaesser_check]> Gewässer</label><br>

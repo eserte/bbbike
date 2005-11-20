@@ -182,6 +182,14 @@ SYMBOL
 END
 
 SYMBOL
+  NAME 'dotted12'
+  TYPE ELLIPSE
+  POINTS 1 1 END
+  FILLED TRUE
+  STYLE 1 12 END
+END
+
+SYMBOL
   NAME 'dotted5'
   TYPE ELLIPSE
   POINTS 1 1 END
@@ -336,7 +344,7 @@ LAYER
   NAME Kommentare
   TYPE QUERY
   STATUS DEFAULT
-  DATA comments
+  DATA comments_without
 
   CLASS
   END
@@ -1173,10 +1181,10 @@ LAYER
 END
 
 LAYER
-  NAME "Straﬂen (Annotations)"
-  GROUP strassen
+  NAME "Radrouten (Annotations)"
+  GROUP comments_route
 #  MAXSCALE 600000
-  STATUS [% ON_STRASSEN %]
+  STATUS [% ON_RADROUTEN %]
   DATA comments_route
   TYPE ANNOTATION
   LABELITEM "STRNR"
@@ -1309,6 +1317,31 @@ END
 
 ### BEGIN AFTER REGIONALBAHN
 ### END AFTER REGIONALBAHN
+
+LAYER
+  NAME "Radrouten"
+  GROUP comments_route
+#  MAXSCALE 600000
+  STATUS [% ON_RADROUTEN %]
+  DATA comments_route
+  TYPE LINE
+  LABELITEM "STRNR"
+  CLASSITEM "CAT"
+  CLASS
+    Name "Ausgeschilderte Radroute"
+    COLOR [% COLOR_GREEN %]
+    SYMBOL 'dotted12'
+    SIZE 10
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Radrouten"
+    WMS_ABSTRACT "Ausgeschilderte Radrouten"
+    WMS_SRS "EPSG:4326"
+  END
+END
 
 LAYER
   NAME "Straﬂenqualit‰t"

@@ -1,5 +1,5 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.47 2005/11/16 01:44:52 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.48 2005/11/19 22:57:53 eserte Exp $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -28,7 +28,7 @@
 	X 8188,9610
 	X 7941,9686
 	X 7829,9723
-	X 7862,9893
+	F 7862,9893
 	X 9784,9519
 	X 9532,9600
 	F 9492,9311
@@ -1823,3 +1823,5 @@ Parkeisenbahn Wuhlheide	B 20561,7229
 Industriebahn	B -2223,13690
 #: by: http://www.th-billik.de/NME/20051030/
 	X 16766,3002
+#: note: Fußgängerampel nur in West-Ost-Richtung:
+	F 6931,10391

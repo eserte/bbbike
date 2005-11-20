@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.28 2005/07/01 20:25:00 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.29 2005/11/19 22:54:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2005 Slaven Rezic. All rights reserved.
@@ -95,7 +95,8 @@ sub has_more_than_one_coord {
 sub all_layers {
     qw(gewaesser flaechen grenzen bahn qualitaet radwege orte
        handicap ampeln obst faehren
-       fragezeichen blocked sehenswuerdigkeit route);
+       fragezeichen blocked sehenswuerdigkeit route
+       comments_route);
 }
 
 sub read_config {

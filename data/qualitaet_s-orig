@@ -1,5 +1,5 @@
 #: title: Qualit‰t von Straﬂen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.109 2005/11/17 23:35:34 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.110 2005/11/19 22:58:45 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Br¸cken, Straﬂen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
@@ -386,7 +386,8 @@ Tiergartenufer: Parkweg (Bodenwellen)	Q2 6292,11427 6128,11500 5976,11603 5835,1
 (Lichtensteinallee - Tiergartenufer): Parkweg	Q2 6309,11443 6128,11500
 Fasanerieallee: Parkweg	Q1 6435,11606 6459,11638 6540,11754 6685,11954
 Groﬂer Weg: Parkweg	Q1 5901,11902 5890,11865 5933,11775 6022,11757 6171,11790 6306,11771 6358,11724 6411,11678 6459,11638 6524,11583 6809,11570 6980,11583 7163,11738 7287,11763 7535,11677
-Groﬂe Sternallee: Parkweg	Q1 6809,11979 7073,11798 7163,11738 7504,11504
+Groﬂe Sternallee: Parkweg	Q1 6809,11979 7073,11798 7163,11738 7382,11588 7504,11504
+(Hiroshimastr. - Groﬂe Sternallee): Parkweg	Q1 7354,11513 7382,11588
 Bellevueallee: Parkweg	Q1 7039,12314 7383,12095 7460,12054 7663,11946 7811,11868 8006,11766 8172,11679
 Ahornsteig: Parkweg	Q1 7669,11586 7706,11612 7742,11639 7852,11721 8006,11766
 Tiergarten: Parkweg	Q1 8021,11636 8006,11766 8022,12016 7999,12049 8006,12074 8034,12093 8063,12182
@@ -938,7 +939,7 @@ Christinenstr.: Kopfsteinpflaster, teilweise OK	Q1 10569,13719 10593,13765 10649
 Angerm¸nder Str.: Kopfsteinpflaster	Q2 10640,13700 10703,13832
 (Schinkelplatz): m‰ﬂiges Kopfsteinpflaster	Q2 10008,12378 10084,12228
 Sorauer Str.: teilweise Kopfsteinpflaster	Q1 12829,10504 12689,10273
-am Beisheim-Center: sehr gutes Kopfsteinpflaster	Q0 8326,11732 8404,11629 8490,11526
+am Beisheim-Center: sehr gutes Kopfsteinpflaster	Q0 8326,11732 8404,11629 8462,11538
 Hans-B¸low-Str.: Asphalt	Q0 8553,11638 8473,11634
 Berliner Freiheit: sehr gutes Kopfsteinpflaster	Q0 8473,11634 8404,11629
 Katzlerstr.: m‰ﬂiges Kopfsteinpflaster	Q2 8035,9437 8095,9639
@@ -1181,7 +1182,7 @@ Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11013,16278 11306,16194 11550,16068
 Fritz-Riedel-Str.: Asphalt	Q0 13517,13778 13640,13597
 Hausburgstr.: Kopfsteinpflaster	Q2 13640,13597 13692,13475 13746,13352 13841,13135 13895,13017
 Konitzer Str.: Kopfsteinpflaster	Q2 14099,11505 14082,11450
-Auguste-Hauschner-Str.: asphaltiert	Q0 8436,11766 8473,11634 8513,11530
+Auguste-Hauschner-Str.: asphaltiert	Q0 8436,11766 8473,11634 8505,11544
 Cora-Berliner-Str.: asphaltiert	Q0 8737,12098 8783,11959
 Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8823,11765 8804,11838 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10024,9993 10111,9942

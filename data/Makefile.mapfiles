@@ -1,6 +1,10 @@
 #
-# $Id: Makefile.mapfiles,v 1.27 2005/11/06 22:38:43 eserte Exp $
+# $Id: Makefile.mapfiles,v 1.28 2005/11/19 21:05:01 eserte Exp $
 #
+
+.ifndef COMMENTS_PARTIAL
+.error "Do not use Makefile.mapfiles directly, use through the main Makefile!"
+.endif
 
 # should this be here?
 MAPFILES_ROOT_DIR?=	../mapserver/brb
@@ -193,6 +197,7 @@ MAPFILES=		$(MAPFILES_DATA_DIR)/strassen.shp \
 			$(MAPFILES_DATA_DIR)/radwege20.shp \
 			$(MAPFILES_DATA_DIR)/obst.shp \
 			$(MAPFILES_DATA_DIR)/comments.shp \
+			$(MAPFILES_DATA_DIR)/comments_without.shp \
 			$(MAPFILES_DATA_DIR)/comments_route.shp \
 			$(MAPFILES_DATA_DIR)/faehren.shp \
 			$(MAPFILES_DATA_DIR)/hoehe.shp \
@@ -316,6 +321,10 @@ $(MAPFILES_DATA_DIR)/obst.shp:	obst
 $(MAPFILES_DATA_DIR)/comments.shp:	$(COMMENTS_PARTIAL)
 	cat $(COMMENTS_PARTIAL) > /tmp/comments
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/comments /tmp/comments
+
+$(MAPFILES_DATA_DIR)/comments_without.shp:	$(COMMENTS_PARTIAL:Ncomments_route)
+	cat $(COMMENTS_PARTIAL:Ncomments_route) > /tmp/comments_without
+	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/comments_without /tmp/comments_without
 
 $(MAPFILES_DATA_DIR)/comments_route.shp:	comments_route
 	$(BBD2ESRI) -city Berlin -country DE -o $(MAPFILES_DATA_DIR)/comments_route comments_route

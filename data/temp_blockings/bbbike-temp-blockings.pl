@@ -3248,4 +3248,14 @@ EOF
 userdel	1 -1668,-1709 -1752,-1823 -1921,-1931 -2049,-2165
 EOF
      },
+     { from  => 1132411558, # 2005-11-19 15:45
+       until => 1136069999, # 2005-12-31 23:59
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, bis 2005-12-31',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 5831,10978 5797,10881
+userdel	q4 5657,10868 5652,11004
+userdel	q4; 5652,11004 5716,10978 5831,10978
+EOF
+     },
     );

@@ -104,12 +104,14 @@ mapserver/brb/brb-ipaq.map-tpl
 mapserver/brb/brb.css
 mapserver/brb/brb.html-tpl
 mapserver/brb/brb.js-tpl
-mapserver/brb/brb.map-tpl
 mapserver/brb/brb.map-inc
+mapserver/brb/brb.map-tpl
 mapserver/brb/brb_init.html-tpl
 mapserver/brb/cleanup
 mapserver/brb/crontab.tpl
 mapserver/brb/empty.html
+mapserver/brb/fonts-devpc01.list
+mapserver/brb/fonts-radzeit-old.list
 mapserver/brb/fonts-radzeit.list
 mapserver/brb/fonts-spiff.list
 mapserver/brb/fonts-vran.list
@@ -121,6 +123,11 @@ mapserver/brb/query_footer.html-tpl
 mapserver/brb/query_footer2.html
 mapserver/brb/query_header.html-tpl
 mapserver/brb/query_header2.html
+mapserver/brb/radroute_footer.html-tpl
+mapserver/brb/radroute_header.html-tpl
+mapserver/brb/sternfahrt2003/sternfahrt2003.html-tpl
+mapserver/brb/sternfahrt2003/sternfahrt2003.map-tpl
+mapserver/brb/sternfahrt2003/sternfahrt2003_init.html-tpl
 mapserver/brb/sternfahrt2004/after_marker.inc
 mapserver/brb/sternfahrt2004/after_strassen_annotations.inc
 mapserver/daemon/mapscript_daemon.pl

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2mapservhtml.pl,v 1.14 2005/10/01 23:05:19 eserte Exp $
+# $Id: bbd2mapservhtml.pl,v 1.16 2005/11/19 22:54:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -23,6 +23,7 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../data",
 	);
 use Strassen::Core;
+use Strassen::Util;
 use Object::Iterate qw(iterate);
 use Getopt::Long;
 use BBBikeVar;
@@ -33,7 +34,11 @@ my $email = $BBBike::EMAIL;
 my @layers;
 my($width, $height);
 my $mapscale;
-my $center;
+my $center_spec;
+my $do_center_nearest;
+my $partialhtml;
+my $do_linklist;
+my $preferalias;
 
 my $save_cmdline = "$0 @ARGV";
 
@@ -52,7 +57,11 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		'mapscale=i' => sub {
 		    $width = $height = $_[1]/5;
 		},
-		'center=s' => \$center,
+		'center=s' => \$center_spec,
+		'centernearest!' => \$do_center_nearest,
+		'partialhtml!' => \$partialhtml,
+		'linklist!' => \$do_linklist,
+		'preferalias!' => \$preferalias,
 	       )) {
     require Pod::Usage;
     Pod::Usage::pod2usage(2);
@@ -69,27 +78,33 @@ if ($bbd_file =~ /\.bbr$/) {
     require Route::Heavy;
     $s = Route::as_strassen($bbd_file);
 } else {
-    $s = Strassen->new($bbd_file);
+    $s = Strassen->new($bbd_file, UseLocalDirectives => 1);
 }
-my @lines;
-iterate {
-    push @lines, $_->[Strassen::COORDS()];
-} $s;
-# XXX instead of int() should something like best_accuracy be used
-my @coords =
-    map {
-	join "!", map {
-	    join ",", map { int } split /,/, $_
-	} @$_
-    } @lines; # "!" for older bbbike.cgi
 
-my $html = <<EOF;
+my $center;
+if (defined $center_spec && $center_spec ne "") {
+    if ($center_spec =~ /^city=(.*)/) {
+	my($city,$country) = split /_/, $1, 2;
+	require Geography;
+	my $geo = Geography->new($city, $country);
+	$center = $geo->center;
+    } elsif ($center_spec =~ /\d+,.*\d/) {
+	$center = $center_spec;
+    } else {
+	die "Cannot understand -center specification <$center_spec>";
+    }
+}
+
+my $html_header = <<EOF;
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <!-- -*-html-*- -->
 <html><head>
 <title>Mapserver/BBBike</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rev="made" href="mailto:$email" />
 <link rel="stylesheet" type="text/css" href="style.css" />
+EOF
+if (!$do_linklist) {
+    $html_header .= <<EOF;
 <script type="text/javascript"><!--
 function autosubmit() {
   var frm = document.forms[0];
@@ -104,52 +119,159 @@ function hidesubmitbutton() {
   }
 }
 // --></script>
+EOF
+}
+$html_header .= <<EOF;
 </head>
-<body onload="autosubmit()">
-<form action="$bbbike_url" method="post">
- <input type="hidden" name="imagetype" value="mapserver" />
+<body @{[ $do_linklist ? '' : 'onload="autosubmit()"' ]}>
 EOF
-for my $coords (@coords) {
-    $html .= <<EOF;
- <input type="hidden" name="coords" value="$coords" />
-EOF
-}
-for my $layer (@layers) {
-    $html .= <<EOF;
- <input type="hidden" name="draw" value="$layer" />
-EOF
-}
-if (defined $center) {
-    $html .= <<EOF;
- <input type="hidden" name="center" value="$center" />
-EOF
-}
-if (defined $width && defined $height) {
-    $html .= <<EOF;
- <input type="hidden" name="width" value="$width" />
- <input type="hidden" name="height" value="$height" />
-EOF
+
+my $html;
+
+if ($do_linklist) {
+    my @html;
+    $s->init;
+
+    my $current_display_name;
+    my @current_lines;
+    while(1) {
+	my $r = $s->next;
+	last if !@{ $r->[Strassen::COORDS] };
+	push @current_lines, $r->[Strassen::COORDS];
+
+	if (!defined $current_display_name) {
+	    $current_display_name = $s->get_directive->{alias}->[0] || $r->[Strassen::NAME];
+	}
+
+	my $next_r = $s->peek;
+	unless ($next_r && @{$next_r->[Strassen::COORDS]} &&
+		$r->[Strassen::NAME] eq $next_r->[Strassen::NAME]) {
+	    my @coords = lines_to_coords(@current_lines);
+
+	    push @html, generate_single_html(coords => \@coords,
+					     (defined $center ? (center => find_nearest_to_center(\@current_lines, $center)) : ()),
+					     label => $current_display_name,
+					     submitlabel => " >> ",
+					    );
+	    @current_lines = ();
+	    undef $current_display_name;
+	}
+    }
+
+    $html = join("\n", @html);
+} else {
+    my @lines;
+    iterate {
+	push @lines, $_->[Strassen::COORDS()];
+    } $s;
+
+    my @coords = lines_to_coords(@lines);
+
+    $html = generate_single_html(coords => \@coords,
+				 (defined $center ? (center => find_nearest_to_center(\@lines, $center)) : ()),
+				 label => undef,
+				 submitlabel => "Zum Mapserver",
+				);
+				 
 }
 
-$html .= <<EOF;
- <input id="submitbutton" type="submit" value="Zum Mapserver" />
- <script><!--
+my $html_footer = "";
+if (!$do_linklist) {
+    $html_footer .= <<EOF;
+<script><!--
   hidesubmitbutton();
  //--></script>
-</form>
+EOF
+}
+$html_footer .= <<EOF;
 </body></html>
 <!--
      This file was generated with
 
 EOF
-$html .= "  " . CGI::escapeHTML($save_cmdline) . "\n";
-$html .= <<EOF;
+$html_footer .= "  " . CGI::escapeHTML($save_cmdline) . "\n";
+$html_footer .= <<EOF;
 
      on @{[ scalar localtime ]}
 -->
 EOF
 
+print $html_header if !$partialhtml;
 print $html;
+print $html_footer if !$partialhtml;
+
+sub find_nearest_to_center {
+    my($lines_ref, $center) = @_;
+    my $nearest_c;
+    my $nearest_dist;
+    for my $c (map { @$_ } @$lines_ref) {
+	my $dist = Strassen::Util::strecke_s($center, $c);
+	if (!defined $nearest_dist || $dist < $nearest_dist) {
+	    $nearest_c = $c;
+	    $nearest_dist = $dist;
+	}
+    }
+    $nearest_c;
+}
+
+sub lines_to_coords {
+    my(@lines) = @_;
+    # XXX instead of int() should something like best_accuracy be used
+    my @coords =
+	map {
+	    join "!", map {
+		join ",", map { int } split /,/, $_
+	    } @$_
+	} @lines; # "!" for older bbbike.cgi
+    @coords;
+}
+
+sub generate_single_html {
+    my(%args) = @_;
+
+    my @coords = @{ delete $args{coords} };
+    my $center = delete $args{center};
+    my $label = delete $args{label};
+    my $submitlabel = delete $args{submitlabel};
+
+    die "usage? " . join(" ", %args) if keys %args;
+
+    my $html = <<EOF;
+<form style='margin-bottom:0px;' action="$bbbike_url" method="post">
+ <input type="hidden" name="imagetype" value="mapserver" />
+EOF
+    for my $coords (@coords) {
+	$html .= <<EOF;
+ <input type="hidden" name="coords" value="$coords" />
+EOF
+    }
+    for my $layer (@layers) {
+	$html .= <<EOF;
+ <input type="hidden" name="draw" value="$layer" />
+EOF
+    }
+    if (defined $center) {
+	$html .= <<EOF;
+ <input type="hidden" name="center" value="$center" />
+EOF
+    }
+    if (defined $width && defined $height) {
+	$html .= <<EOF;
+ <input type="hidden" name="width" value="$width" />
+ <input type="hidden" name="height" value="$height" />
+EOF
+    }
+
+    if (defined $label) {
+	$html .= "\n" . CGI::escapeHTML($label);
+    } 
+    $html .= <<EOF;
+ <input id="submitbutton" type="submit" value="@{[ CGI::escapeHTML($submitlabel) ]}" />
+</form>
+EOF
+
+    return $html;
+}
 
 __END__
 
@@ -163,7 +285,9 @@ bbd2mapservhtml.pl - create a mapserver route from a bbd or bbr file
 		    [-[no]local | -local-radzeit]
                     [-layer layername [-layer ...]]
                     [-initmapext {width}x{height}] [-mapscale scale]
-		    [-center x,y] [file]
+		    [-center x,y] [-centernearest]
+		    [-partialhtml] [-linklist] [-preferalias]
+		    [file]
 
 =head1 DESCRIPTION
 
@@ -192,10 +316,46 @@ Set the initial extents via a scale number (e.g. 1:20000, only the
 last part). Note that B<-mapscale> and B<-initmapext> cannot be
 specified together.
 
-=item -center I<x>,I<y>
+=item -center I<...>
 
-Center the map to the specified coordinate. If not given, then center
-to the first point in the bbd file.
+Center the map. The argument to center may be one of the following:
+
+=over
+
+=item I<x>,I<y>
+
+Center to the specified BBBike standard coordinate.
+
+=item C<city=>I<city_country>
+
+Center to the preferred center of the specified city. A sample city
+specification: C<Berlin_DE>. See the L<Geography> module/directory for
+available cities.
+
+=back
+
+If the C<-center> option is not given, then center to the first point
+in the bbd file resp. the first point of a street record in linklist
+more.
+
+=item -centernearest
+
+In conjunction with the C<-center> option: center to the nearest point
+in the route from the specified center.
+
+=item -partialhtml
+
+Output partial html without HTML head, body start and end tags. This
+option is useful for automatic inclusion into a pre-made html page.
+
+=item -linklist
+
+Create a link list with one street per line.
+
+=item -preferalias
+
+In a linklist, prefer the alias name (set in bbd files with the "#:
+alias" directive) over the street name.
 
 =back
 

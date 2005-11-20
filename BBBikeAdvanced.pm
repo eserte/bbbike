@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.134 2005/11/18 23:17:42 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.135 2005/11/19 20:26:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2766,10 +2766,21 @@ sub search_anything {
     my @inx2match;
 
     my $sort = "alpha"; # XXX make global and/or configurable
+    my $search_type = "rx"; # XXX make global and/or configurable
     my $focus_transfer = 0; # XXX dito
 
     my $do_search = sub {
 	return if $s eq '';
+
+	my $s_rx;
+	if ($search_type eq 'substr') {
+	    $s_rx = quotemeta($s);
+	} elsif ($search_type eq '^substr') {
+	    $s_rx = "^" . quotemeta($s);
+	} else {
+	    $s_rx = $s;
+	}
+
 ### fork in eval is evil ??? (check it, it seems to work for 5.8.0 + FreeBSD)
 	IncBusy($t);
 	eval {
@@ -2781,7 +2792,7 @@ sub search_anything {
 		if (0 && is_in_path("grep")) { # XXX do not fork
 		    $pid = open(GREP, "-|");
 		    if (!$pid) {
-			exec("grep", "-i", $s, $search_file) || warn "Can't exec program grep with $search_file: $!";
+			exec("grep", "-i", $s_rx, $search_file) || warn "Can't exec program grep with $search_file: $!";
 			CORE::exit();
 		    }
 		} else {
@@ -2793,8 +2804,8 @@ sub search_anything {
 		}
 		while(<GREP>) {
 		    chomp;
-		    if (!defined $pid) {
-			next unless /$s/i;
+		    if (!defined $pid) { # we have to do the grep ourselves
+			next unless /$s_rx.*\t/i;
 		    }
 		    push @matches, Strassen::parse($_);
 		    $matches[-1]->[3] = [];
@@ -2831,6 +2842,7 @@ sub search_anything {
 	    }
 
 	    # special case: PLZ files
+	    # XXX Hier wird $search_type noch ignoriert!
 	    for my $i (0 .. $#plz) {
 		my @plz_matches = $plz[$i]->look($s);
 		if (@plz_matches) {
@@ -2948,7 +2960,8 @@ sub search_anything {
 
     $t->transient($top) if $transient;
     my $f1 = $t->Frame->pack(-fill => 'x');
-    $f1->Label(-text => "Suchen:", -padx => 0, -pady => 0,
+    $f1->Label(-text => M("Nach").":", -padx => 0, -pady => 0,
+	       -underline => 0,
 	      )->pack(-side => "left");
     my $Entry = 'Entry';
     my @Entry_args;
@@ -2965,6 +2978,14 @@ sub search_anything {
     $t->Advertise(Entry => $e);
     $e->focus;
     $e->bind("<Return>" => $do_search);
+    $t->bind("<Alt-Key-n>" => sub { $e->focus });
+
+    $f1->Button(Name => 'search',
+		-command => $do_search,
+		-padx => 4,
+		-pady => 2,
+	       )->pack(-side => "left");
+
 
     {
  	package Tk::ListboxSearchAnything;
@@ -2994,9 +3015,24 @@ sub search_anything {
 		       -width => 32,
 		       -height => 12,
 		      )->pack(-fill => "both", -expand => 1);
+    {
+	my $f = $t->LabFrame(-label => M("Suchart"),
+			     -labelside => "acrosstop",
+			    )->pack(-fill => "x");
+	for my $cb_def (["Regulärer Ausdruck", "rx"],
+			["Teilstring", "substr"],
+			["Teilstring am Anfang", "^substr"],
+		       ) {
+	    my($text, $search_type_value) = @$cb_def;
+	    $f->Radiobutton(-text => M($text),
+			    -variable => \$search_type,
+			    -value => $search_type_value,
+			   )->pack(-anchor => "w");
+	}
+    }
     $lb->Subwidget("scrolled")->{SortTypeRef} = \$sort;
     {
-	my $f = $t->LabFrame(-label => M("Sortieren"),
+	my $f = $t->LabFrame(-label => M("Suchergebnis sortieren"),
 			     -labelside => "acrosstop",
 			    )->pack(-fill => "x");
 	for my $cb_def (["Alphabetisch",    "alpha"],
@@ -3033,9 +3069,6 @@ sub search_anything {
 			     $t->withdraw;
 			     #$t->destroy;
 			 })->pack(-side => "right");
-	$f->Button(Name => 'search',
-		   -command => $do_search,
-		  )->pack(-side => "right");
     }
     $t->protocol(WM_DELETE_WINDOW => sub { $cb->invoke });
 
@@ -3097,6 +3130,9 @@ sub search_anything {
     $lb->bind("<Return>" => $select);
 
     $t->bind('<<CloseWin>>' => sub { $cb->invoke });
+
+    if ($t->can('UnderlineAll')) { $t->UnderlineAll(-radiobutton => 1, -donotuse => ['N']) }
+
     $t->Popup(@popup_style);
 
     if (defined $s) {

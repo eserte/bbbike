@@ -58,8 +58,6 @@ http://www.berlin.de/webcams/.html/dahlem.html	WC 10907,13248 10880,13322
 http://www.kurfuerstendamm.de/cms/webcam/f_webcam.html	WC 5857,10871 5801,10894
 #: note: größer als http://www.berlin.de/webcams/.html/wannsee.html
 http://wind.met.fu-berlin.de/loops/webcam/Wannsee_prod.jpg	WC -4416,2664 -4497,2595
-#: note: steuerbar!
-http://cam.disipos.de/main.php	WC -12588,-1534
 #: XXX: Blickrichtung unklar
 http://www.bilder-netz.de/webcam.php	WC 13095,15591
 http://www.soost-berlin.de/web/livecam.html	WC 14663,1860 14747,1869
@@ -67,14 +65,23 @@ http://www.soost-berlin.de/web/livecam.html	WC 14663,1860 14747,1869
 http://www.marzahn-hellersdorf.net/index.php?/webcam.php	WC 22829,13324
 http://rudi-02.dyndns.org:8080/	WC 17163,17631 17207,17659
 http://www.rbb-online.de/_/wetter/webcam/index_jsp.html	WC   1674,11250 1712,11133
+http://www.berlin-tourist-information.de/deutsch/spiel-spass/d_sp_webcam.php	WC 8226,10917 8284,10981
+http://www.berlin-webcam.illustriertestadt.de/index.php	WC 6692,11096 6787,11112
+http://home.versanet.de/~bajinsky/alternativ.htm	WC 11975,9187 12010,9235
 #: section Berlin ^^^
+#: section Potsdam vvv
+#: note: steuerbar!
+http://cam.disipos.de/main.php	WC -12588,-1534
+#: section Potsdam ^^^
 #
 # IGNORIERT:
 # http://www.himmel-ueber-berlin.de/ --- schlechte Bilder/Ausschnitte, Lützowplatz
 # http://www.berlin.de/webcams/.html/dahlem.html --- Position unklar, Ausschnitt?
+# http://www.mc-wetter.de/news/webcam.html --- Dahlem (auch?)
 # http://www.ipb.de/webcam/?imgsize= --- Position unklar, kein Blick auf die Straße
 # http://www.sfb.de/webcam/sfbdach1.jpg --- Dunkelheit?
 # http://www.wetter24.de/webcam.html --- Tempelhof, nur Blick auf den Himmel
+# http://www.wetterspiegel.de/de/europa/deutschland/berlin/13342c27x6.html --- ebenfalls Tempelhof, gleiche Kamera?
 # http://www.peterguensel.de/index1.htm --- Tegel, nur Blick auf Dach und Himmel
 # http://www.igb-berlin.de/abt2/ms/ms_dat.shtml --- Müggelsee, unklare Position
 # http://www.deutschland-webcam.de/webcams/view-647.html --- Dunkelheit? Griebnitzsee
@@ -82,6 +89,13 @@ http://www.rbb-online.de/_/wetter/webcam/index_jsp.html	WC   1674,11250 1712,111
 # http://www.medizin.fu-berlin.de/medinf/ukbfcam/ --- Charite, steuerbar?, aber nur mit Java?
 # http://www.tstange.de/ --- Dennewitzstr.? Kein Blick auf die Straße
 # http://www.stune.de/webcam/indexcam.htm --- Steglitz (S-Bahn/Autobahn)?
+# http://www.berlinerzimmer.de/bezicam.htm --- Rosenthaler Platz, wird nur sporadisch erneuert (2003???)
+# http://www.daniel-moeller.de/html/index_frameset.html?http://www.daniel-moeller.de/html/livecam.html --- Nähe Flughafen Tempelhof?, seit Juni 2005 nicht aktualisiert
+# http://linpop.zdf.de/Berlin/webcam/index2.html --- kaputt
+# http://www.olympiastadion-berlin.de/webcam.php --- Olympiastadion, wegen Umbauarbeiten abgeschaltet
+# http://www.club-pix.de/kam3/live/ --- Java, Clausewitzstr.
+# http://www.adlershof.de/index.php?webcam --- Adlershof, seit 2005-10-24 nicht aktualisiert
+# http://berlinadmin.dlr.de/webcam/index.shtml --- Adlershof (es ist dunkel, ich kann es nicht überprüfen)
 #
 # Linklisten:
 # http://www.camradar.de/webcams/europa/deutschland/berlin.php (ungefähr 40)
@@ -91,3 +105,6 @@ http://www.rbb-online.de/_/wetter/webcam/index_jsp.html	WC   1674,11250 1712,111
 # http://dmoz.org/World/Deutsch/Computer/Internet/WWW/Webcams/ (Open Directory)
 # http://www.meinestadt.de/berlin/home/rell/100-115258-47457 (10)
 # http://www.city-webcams.de/cms/index.php?option=com_wrapper&Itemid=46 (38)
+# http://search.earthcam.com/search.php?word=berlin (20 in Berlin)
+# http://www.didiswebcamworld.de/78-1-berlin.php (11 in Berlin)
+# http://germanien.net/Berlin/berliner.webcams.htm (ca. 10 Links in Berlin)

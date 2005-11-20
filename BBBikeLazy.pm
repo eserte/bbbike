@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.14 2005/10/24 22:45:11 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.15 2005/11/20 17:20:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -547,71 +547,67 @@ sub BBBikeLazy::plotstr_on_demand {
 	}
 
 	if (0) {
-	my $municipality = 0;
-#	foreach my $abk (@defs_p_o_abk) {
-	foreach my $abk (@defs_p_abk) {
-	    next if $abk ne 'o';
-	    my $type = $abk;
-	    my $label_tag = uc($type);
-	    my $name_o = $p_name_draw{$abk};
-	    my %args;
-	    my %no_overlap_label;
-	    my @orte_coords_labeling;
-	    my $do_outline_text = 0;
- 	    my $coordsys = $coord_system_obj->coordsys;
+	    my $municipality = 0;
+	    foreach my $abk (@defs_p_abk) {
+		next if $abk ne 'o';
+		my $type = $abk;
+		my $label_tag = uc($type);
+		my $name_o = $p_name_draw{$abk};
+		my %args;
+		my %no_overlap_label;
+		my @orte_coords_labeling;
+		my $do_outline_text = 0;
+		my $coordsys = $coord_system_obj->coordsys;
 
-	    my $transpose = \&transpose;
-	    my $conv = $lazy_p{$abk}->get_conversion;
-	    my $draw_sub = eval $plotorte_draw_sub;
-	    die $@ if $@;
+		my $transpose = \&transpose;
+		my $conv = $lazy_p{$abk}->get_conversion;
+		my $draw_sub = eval $plotorte_draw_sub;
+		die $@ if $@;
 
-	    my $i = 0;
+		my $i = 0;
 
-	    foreach my $grid (@grids) {
-		if ($lazy_p{$abk}->{Grid}{$grid}) {
-		    warn "Drawing new grid: $grid\n" if $verbose;
-		    $something_new++;
-		    foreach my $strpos (@{ $lazy_p{$abk}->{Grid}{$grid} }) {
-			if (!$lazy_p_drawn{$abk}->{$strpos}) {
-			    my $r = $lazy_p{$abk}->get($strpos);
-			    $i = $strpos+1; # XXX warum +1?
-			    $draw_sub->($r);
-			    $lazy_p_drawn{$abk}->{$strpos}++;
+		foreach my $grid (@grids) {
+		    if ($lazy_p{$abk}->{Grid}{$grid}) {
+			warn "Drawing new grid: $grid\n" if $verbose;
+			$something_new++;
+			foreach my $strpos (@{ $lazy_p{$abk}->{Grid}{$grid} }) {
+			    if (!$lazy_p_drawn{$abk}->{$strpos}) {
+				my $r = $lazy_p{$abk}->get($strpos);
+				$i = $strpos+1; # XXX warum +1?
+				$draw_sub->($r);
+				$lazy_p_drawn{$abk}->{$strpos}++;
+			    }
 			}
 		    }
 		}
+
+		undef $draw_sub;
 	    }
+	} else {
+	    foreach my $abk (@defs_p_abk) {
+		next if $abk ne 'o';
+		next if !$lazy_p{$abk};	# should not happen, but it happens
+		plotplaces_pre_a(-type => $abk,
+				 -strdata => $lazy_p{$abk},
+				);
+		plotplaces_pre2();
+		my $i = 0;
 
-	    undef $draw_sub;
-	}
-    } else {
-#	foreach my $abk (@defs_p_o_abk) {
-	foreach my $abk (@defs_p_abk) {
-	    next if $abk ne 'o';
-	    next if !$lazy_p{$abk}; # should not happen, but it happens
-	    plotplaces_pre_a(-type => $abk,
-			     -strdata => $lazy_p{$abk},
-			    );
-	    plotplaces_pre2();
-	    my $i = 0;
-
-	    foreach my $grid (@grids) {
-		if ($lazy_p{$abk}->{Grid}{$grid}) {
-		    warn "Drawing new grid: $grid\n" if $verbose;
-		    #XXX del: $something_new++;
-		    foreach my $strpos (@{ $lazy_p{$abk}->{Grid}{$grid} }) {
-			if (!$lazy_p_drawn{$abk}->{$strpos}) {
-			    my $r = $lazy_p{$abk}->get($strpos);
-			    $i = $strpos+1; # XXX warum +1?
-			    plotplaces_draw($r);
-			    $lazy_p_drawn{$abk}->{$strpos}++;
-			    $places_new++;
+		foreach my $grid (@grids) {
+		    if ($lazy_p{$abk}->{Grid}{$grid}) {
+			warn "Drawing new grid: $grid\n" if $verbose;
+			foreach my $strpos (@{ $lazy_p{$abk}->{Grid}{$grid} }) {
+			    if (!$lazy_p_drawn{$abk}->{$strpos}) {
+				my $r = $lazy_p{$abk}->get($strpos);
+				plotplaces_draw($r, $strpos+1);
+				$lazy_p_drawn{$abk}->{$strpos}++;
+				$places_new++;
+			    }
 			}
 		    }
 		}
 	    }
 	}
-    }
 
 	foreach my $abk (@defs_p_subs_abk) {
 	    my $draw_sub = $lazy_p_subs{$abk}->{draw};
@@ -790,6 +786,7 @@ sub BBBikeLazy::plotstr_on_demand {
 
     sub plotplaces_draw {
 	my $ret = shift;
+	$i = shift;
 	my $cat = $ret->[Strassen::CAT];
 	my($name, $add) = split(/\|/, $ret->[Strassen::NAME]);
 	my($xx,$yy);
@@ -824,14 +821,14 @@ sub BBBikeLazy::plotstr_on_demand {
 	    if (!$municipality) {
 		$point_item = $c->createLine
 		    ($tx, $ty, $tx, $ty,
-		     -tags => [$type, "$xx,$yy", $fullname, $label_tag."P$cat"],
+		     -tags => [$type, "$xx,$yy", $fullname, $label_tag."P$cat", $type."-".($i-1)],
 		    );
 	    }
 	    if ($name_o) {
 		my $text = ($args{Shortname}
 			    ? $name
 			    : $fullname);
-		my(@tags) = ($label_tag, "$label_tag$cat");
+		my(@tags) = ($label_tag, "$label_tag$cat", $label_tag."-".($i-1));
 		if ($orientation eq 'portrait' && $Tk::VERSION >= 800) {
 		    require Tk::RotFont;
 		    # XXX geht nicht...

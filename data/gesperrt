@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.91 2005/11/14 22:06:04 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.92 2005/11/19 22:58:19 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -330,7 +330,6 @@ Stallschreiberstr.	1s 10489,11405 10620,11244 10678,11172
 Jahnstr.	1s 11493,9128 11509,9392
 Bayernring	1s 8616,8595 8437,8557 8371,8543
 Sredzkistr. (Kulturbrauerei)	1s 11101,14768 10909,14710
-Lohmeyerstr.	1s 3348,12314 3409,12451
 Waldweg	1s 25496,2429 24972,2583
 Schulenburgring	1s 9019,8434 9013,8594
 Neue Schönhauser Str.	1s 10528,13243 10441,13195 10305,13211
@@ -716,6 +715,7 @@ Schwingtor an der Luiseninsel	BNP:10:-125 7706,11612
 Schwingtor an der Luiseninsel	BNP:10:-126 7742,11639
 Schranke	BNP:5:12 25558,997
 Drängelgitter	BNP:5:-118 8810,14373
+Budapester Str.: Bauarbeiten, Fußgängerüberweg gesperrt	3nocross::inwork 5716,10978 5831,10978 6135,10982
 Hedwigskirchgasse: Bauarbeiten	2::inwork 9743,12239 9756,12139
 Monbijoubrücke: die behelfsmäßige Brücke wurde abgerissen, der Neubar ist voraussichtlich 2006-06-01 fertig	2:inwork 9680,12916 9707,12974
 Spreeufer vor dem Monbijoupark: gesperrt wegen Bauarbeiten	2:inwork 10100,12876 9977,12912
