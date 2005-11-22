@@ -5280,7 +5280,7 @@ sub define_item_attribs {
 	    fz route comm),
 	 (map { "comm-$_" } @comments_types),
 	 qw(comm-route-label-bg comm-route-label qs hs ql hl mount nl delnet
-	    O o p pl-fg lsas lsas-t lsa-bg lsa-fg
+	    O o p pl-fg lsas lsa-bg lsa-fg lsas-t
 	    vf-fg pp kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
 	    s-label-bg s-label l-label-bg l-label
 	    personal-fg personal-label ovl

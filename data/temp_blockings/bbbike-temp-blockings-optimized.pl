@@ -320,7 +320,14 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'until' => 1135378800,
+         'text' => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist möglicherweise noch passierbar (Swinemünder Brücke). Dauer: bis 23.12.2005 ',
+         'from' => 1123992000,
+         'data' => 'userdel	q4 9494,15998 9583,15851
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -555,6 +562,24 @@ userdel	q4 5657,10868 5652,11004
 userdel	q4; 5652,11004 5716,10978 5831,10978
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_77722',
+         'until' => 1143842399,
+         'text' => 'Pistoriusstr. (Pankow) Richtung Weißensee, zwischen Hamburger Platz und Roelckestr. Baustelle, Fahrtrichtung gesperrt (bis 03/2006)',
+         'from' => 1132606608,
+         'data' => 'userdel	1 12708,16699 12874,16631 13131,16525
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002359',
+         'until' => 1133650800,
+         'text' => 'Wilhelminenhofstr. (Treptow) in Richtung Edisonstr. zwischen Rathenaustr. und Firlstr. Baustelle Fahrtrichtung gesperrt (bis 03.12.2005)',
+         'from' => 1132606911,
+         'data' => 'userdel	1 18853,6009 18445,6287
+',
+         'type' => 'gesperrt'
        }
      
 );

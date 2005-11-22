@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Ampelschaltung.pm,v 1.8 2003/11/16 20:51:54 eserte Exp $
+# $Id: Ampelschaltung.pm,v 1.9 2005/11/22 01:48:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -17,13 +17,44 @@ use strict;
 package AmpelschaltungCommon;
 
 sub time2s {
-    my($t1) = @_;
+    my($t1,%args) = @_;
     return if $t1 eq '';
-    my($h1,$m1,$s1) = split(/:/, $t1);
+
+    my($h1,$m1,$s1);
+    if ($t1 =~ /^\+(\d+):(\d+)$/) {
+	my($rel_m,$rel_s) = ($1, $2);
+	if (!$args{-relstart}) {
+	    die "Relative time found, but no -relstart given!";
+	}
+	($h1,$m1,$s1) = @{ $args{-relstart} };
+	$s1+=$rel_s;
+	if ($rel_s >= 60) {
+	    $rel_s -= 60;
+	    $m1++;
+	}
+	$m1+=$rel_m;
+	if ($rel_m >= 60) {
+	    $rel_m -= 60;
+	    $h1++;
+	}
+	if ($h1 >= 24) {
+	    $h1 -= 24;
+	}
+    } else {
+	($h1,$m1,$s1) = split(/:/, $t1);
+    }
     $s1 =~ s/\D//g; # Fragezeichen etc. am Ende streichen
     $h1*60*60+$m1*60+$s1;
 }
 
+sub s2time {
+    my($s) = @_;
+    my $h = int($s / (60*60));
+    $s -= $h*(60*60);
+    my $m = int($s / 60);
+    $s -= $m*60;
+    ($h, $m, $s);
+}
 
 package Ampelschaltung::Point;
 
@@ -608,14 +639,19 @@ sub open {
 	# stimmen.
 	my $group_index = -1; # Index der Gruppe
 	my $index_in_group;   # Index innerhalb der Gruppe
+	my @rel_start;
 	while(<RW>) {
 	    next if (/^\s*\#/ || /^\s*$/); # Kommentare und Leerzeilen
 	    chomp;
-	    if (/^(\w{2}),\s+(\d+)\.(\d+)\.(\d+)/) {
+	    if (/^(\w{2}),\s+(\d+)\.(\d+)\.(\d+)(?:\s+\(00:00:00\s*=\s*(\d+):(\d+):(\d+)\))?/) {
 		$curr_day  = lc($1);
 		$curr_date = sprintf("%s, %02d.%02d.%04d", $1, $2, $3, $4);
 		$group_index++;
 		$index_in_group = 0;
+		@rel_start = ();
+		if (defined $5) {
+		    @rel_start = ($5, $6, $7);
+		}
 	    } elsif (/^([-+]?\d+,[-+]?\d+)/) {
 		my $point = $1;
 		$self->add_point(-date       => $curr_date,
@@ -623,7 +659,9 @@ sub open {
 				 -point      => $point,
 				 -group      => $group_index,
 				 -groupindex => $index_in_group,
-				 -line       => $_);
+				 -line       => $_,
+				 -relstart   => \@rel_start,
+				);
 		push @{$self->{Point2Index}{$point}}, $#{ $self->{Data} };
 		$index_in_group++;
 	    } elsif (/^\s+/) { # XXX spezielle Zeilen
@@ -646,6 +684,7 @@ sub add_point {
     my $line        = $args{-line};
     my $group       = $args{-group};
     my $group_index = $args{-groupindex};
+    my $rel_start   = $args{-relstart};
     if (!defined $date) {
 	warn "Datum für <$line> nicht definiert";
 	return;
@@ -672,8 +711,8 @@ sub add_point {
 
     my($green, $red);
     if ($green_time ne '' and $red_time ne '') {
-	my $gs = AmpelschaltungCommon::time2s($green_time);
-	my $rs = AmpelschaltungCommon::time2s($red_time);
+	my $gs = AmpelschaltungCommon::time2s($green_time, -relstart => $rel_start);
+	my $rs = AmpelschaltungCommon::time2s($red_time,   -relstart => $rel_start);
 	if ($gs < $rs) {
 	    $green = _adjust_green_red($rs-$gs, $zyklus_n);
 	} elsif ($zyklus_n ne '' and $zyklus_n > 0) {
@@ -685,7 +724,8 @@ sub add_point {
 	    $red = _adjust_green_red($zyklus_n - ($rs-$gs), $zyklus_n);
 	}
     }
-    if ($red_time =~ /^\+(\d+)/ and $green_time eq '' and $last_e) {
+    # length of red time in form +5s
+    if ($red_time =~ /^\+(\d+)/ and $green_time eq '' and $last_e and !@$rel_start) {
 	my $add = $1;
 	$green = $last_e->{Green}-$add
 	  if defined $last_e->{Green} && $last_e->{Green} ne '';
@@ -696,8 +736,17 @@ sub add_point {
     my $time;
     {
 	my @time;
-	foreach ($red_time, $green_time) {
-	    push @time, $_ if defined $_ and $_ !~ /^\+/;
+	if (@$rel_start) {
+	    foreach my $t ($red_time, $green_time) {
+		if (defined $t) {
+		    my $s = AmpelschaltungCommon::time2s($t, -relstart => $rel_start);
+		    push @time, sprintf "%02d:%02d:%02d", AmpelschaltungCommon::s2time($s);
+		}
+	    }
+	} else {
+	    foreach ($red_time, $green_time) {
+		push @time, $_ if defined $_ and $_ !~ /^\+/;
+	    }
 	}
 	if (@time) {
 	    $time = join(":", (split(/:/, (@time == 1 

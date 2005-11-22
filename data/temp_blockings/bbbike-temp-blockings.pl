@@ -2507,8 +2507,8 @@ userdel	2 2996,-10338 1764,-12480
 EOF
      },
      { from  => 1123992000, # 2005-08-14 06:00
-       until => 1132095600, # 2005-11-16 00:00 wurde am nächsten Tag wieder entfernt, aber im Tsp steht es drinnen
-       text  => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist noch passierbar (Swinemünder Brücke). Dauer: 15.08.2005, 06:00 Uhr bis ca. 15.11.2005 ',
+       until => 1135378800, # 2005-12-24 00:00
+       text  => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist möglicherweise noch passierbar (Swinemünder Brücke). Dauer: bis 23.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 9494,15998 9583,15851
@@ -3256,6 +3256,24 @@ EOF
 userdel	q4 5831,10978 5797,10881
 userdel	q4 5657,10868 5652,11004
 userdel	q4; 5652,11004 5716,10978 5831,10978
+EOF
+     },
+     { from  => 1132606608, # 2005-11-21 21:56
+       until => 1143842399, # 2006-03-31 23:59
+       text  => 'Pistoriusstr. (Pankow) Richtung Weißensee, zwischen Hamburger Platz und Roelckestr. Baustelle, Fahrtrichtung gesperrt (bis 03/2006)',
+       type  => 'gesperrt',
+       source_id => 'INKO_77722',
+       data  => <<EOF,
+userdel	1 12708,16699 12874,16631 13131,16525
+EOF
+     },
+     { from  => 1132606911, # 2005-11-21 22:01
+       until => 1133650800, # 2005-12-04 00:00
+       text  => 'Wilhelminenhofstr. (Treptow) in Richtung Edisonstr. zwischen Rathenaustr. und Firlstr. Baustelle Fahrtrichtung gesperrt (bis 03.12.2005)',
+       type  => 'gesperrt',
+       source_id => 'IM_002359',
+       data  => <<EOF,
+userdel	1 18853,6009 18445,6287
 EOF
      },
     );

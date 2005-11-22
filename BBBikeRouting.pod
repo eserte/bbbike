@@ -7,12 +7,13 @@ BBBikeRouting - frontend for using BBBike routing
 =head1 SYNOPSIS
 
     use BBBikeRouting;
+    use Data::Dumper;
     my $routing = BBBikeRouting->new;
     $routing->init_context;
     $routing->Start->Street("from street");
     $routing->Goal->Street("to street");
     $routing->search;
-    print @{ $routing->RouteInfo };
+    print Dumper $routing->RouteInfo;
 
 =head1 DESCRIPTION
 

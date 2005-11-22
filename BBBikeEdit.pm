@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.90 2005/10/16 19:21:59 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.92 2005/11/22 01:50:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -450,7 +450,7 @@ sub ampel_edit_modus {
     require Ampelschaltung;
     $special_edit = 'ampel';
 #XXX utilize $edit_normal_mode?
-    switch_edit_berlin_mode() if (!defined $edit_mode or $edit_mode ne 'b');
+#XXX    switch_edit_berlin_mode() if (!defined $edit_mode or $edit_mode ne 'b');
 
     IncBusy($top);
     $progress->Init(-dependents => $c,
@@ -519,11 +519,15 @@ sub ampel_undef_all {
 }
 
 sub ampel_edit_mouse1 {
-    unless (grep($_ =~ /^lsa/, $c->gettags('current'))) {
-	warn "lsa tag not found at current point";
-	return;
+    my @tags = $c->gettags('current');
+    unless (grep { $_ =~ /^lsa/ && $_ !~ /^lsas-t/ } @tags) {
+	(my($item), @tags) = find_below($c, "lsa-fg");
+	if (!defined $item) {
+	    warn "lsa tag not found at current point";
+	    return;
+	}	    
     }
-    my $p1 = ($c->gettags('current'))[1]; # XXX oder 2
+    my $p1 = $tags[1]; # XXX oder 2
     if (!exists $ampel_schaltung{$p1}) {
 	ampel_new_point($p1);
     }
@@ -1207,18 +1211,17 @@ sub ampel_draw_canvas {
 
 sub ampel_draw_canvas_cycle {
     while(my($k, $v) = each %ampel_all_cycle) {
-	my($x,$y) = split /,/, $k;
+	my($x,$y) = transpose(split /,/, $k);
 	my $zyklus = join(",", sort { $a <=> $b } keys %$v);
 	if ($zyklus ne "") {
-	    $c->createText($scale*($x+4), $scale*($y-5),
-			   -text => $zyklus,
-			   -tags => ["lsas-t"]);
+	    #$c->createText($x,$y, -text => $zyklus, -tags => ["lsas-t"]);
+	    draw_text_intelligent($c, $x, $y, -text => $zyklus, -font => $font{'tiny'}, -tags => ["lsas-t"]);
 	}
     }
-    $c->itemconfigure('lsas-t',
-		      -font => $font{'tiny'},
-		      -anchor => 'nw',
-		     );
+#     $c->itemconfigure('lsas-t',
+# 		      -font => $font{'tiny'},
+# 		      -anchor => 'nw',
+# 		     );
 }
 
 #XXX portabler, aber leider gibt es ab und zu X11-Fehler (X_TranslateCoords)
@@ -1707,7 +1710,7 @@ use vars qw($p_obj_vf);
 sub vorfahrt_edit_modus {
     $special_edit = 'vorfahrt';
 #XXX utilize $edit_normal_mode?
-    switch_edit_berlin_mode() if (!defined $edit_mode or $edit_mode ne 'b');
+#XXX    switch_edit_berlin_mode() if (!defined $edit_mode or $edit_mode ne 'b');
     unless ($str_draw{'s'}) {
 	plot('str','s', -draw => 1);
     }
