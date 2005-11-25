@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.92 2005/11/22 01:50:05 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.92 2005/11/22 01:50:05 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -780,6 +780,20 @@ sub ampel_display {
 	$butf->Checkbutton(-text => 'Alle zeigen',
 			   -variable => \$ampel_show_all,
 			  )->pack(-side => 'left');
+	$butf->Button(-text => 'Dump',
+		      -command => sub {
+			  if ($ampelschaltung2) {
+			      my $dump = $ampelschaltung2->dump;
+			      my $dump_file = "/tmp/ampelschaltung.dump";
+			      open(DUMP, "> $dump_file")
+				  or main::status_message("Kann nicht nach $dump_file schreiben: $!", "die");
+			      print DUMP $dump;
+			      close DUMP;
+			      main::status_message("Erfolgreich nach $dump_file geschrieben", "info");
+			  } else {
+			      main::status_message("Kein Ampelschaltung-Objekt vorhanden?!", "err");
+			  }
+		      })->pack(-side => "left");
 	my $closeb = $butf->Button
 	  (Name => 'close',
 	   -command => $close_sub)->pack(-side => 'left');

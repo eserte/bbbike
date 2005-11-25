@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.19 2005/11/13 22:54:46 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.20 2005/11/23 21:57:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -321,7 +321,7 @@ EOF
 </form>
 
 <form name="addroute" style="margin-top:0.5cm; border:1px solid black; padding:3px;" method="post" enctype="multipart/form-data">
-  <label>Mit Mausklicks eine Route erstellen <input type="checkbox" name="addroute"  /></label>
+  <label>Mit Maus-Doppelklicks eine Route erstellen <input type="checkbox" name="addroute"  /></label>
   <a href="javascript:deleteLastPoint()">Letzten Punkt löschen</a>
   <a href="javascript:resetRoute()">Route löschen</a>
 </form>

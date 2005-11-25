@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Ampelschaltung.pm,v 1.9 2005/11/22 01:48:07 eserte Exp $
+# $Id: Ampelschaltung.pm,v 1.9 2005/11/22 01:48:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -242,6 +242,12 @@ sub save {
 	print RW join("\n", map { $_->as_string } @{ $self->{Data} }), "\n";
 	close RW;
     }
+}
+
+sub dump {
+    my $self = shift;
+    require Data::Dumper;
+    Data::Dumper::Dumper($self->{Data});
 }
 
 # XXX
@@ -676,6 +682,12 @@ sub open {
     }
 }
 
+sub dump {
+    my $self = shift;
+    require Data::Dumper;
+    Data::Dumper::Dumper($self->{Data});
+}
+
 sub add_point {
     my($self, %args) = @_;
     my $date        = $args{-date}; # komplettes Datum: "wk, dd.mm.yyyy"
@@ -710,7 +722,21 @@ sub add_point {
     my $red_time   = _strip_blank_substr($line, 70, 10);
 
     my($green, $red);
-    if ($green_time ne '' and $red_time ne '') {
+    my $green_is_length;
+    my $red_is_length;
+
+    if ($green_time =~ /^\d+$/ || $red_time =~ /^\d+$/) {
+	if ($green_time =~ /^\d+$/) {
+	    $green = $green_time;
+	    $green_is_length = 1;
+	}
+	if ($red_time =~ /^\d+$/) {
+	    $red = $red_time;
+	    $red_is_length = 1;
+	}
+    }
+
+    if ($green_time ne '' and $red_time ne '' && !$green_is_length && !$red_is_length) {
 	my $gs = AmpelschaltungCommon::time2s($green_time, -relstart => $rel_start);
 	my $rs = AmpelschaltungCommon::time2s($red_time,   -relstart => $rel_start);
 	if ($gs < $rs) {
@@ -737,15 +763,19 @@ sub add_point {
     {
 	my @time;
 	if (@$rel_start) {
-	    foreach my $t ($red_time, $green_time) {
-		if (defined $t) {
+	    foreach my $t_def ([$red_time, $red_is_length],
+			       [$green_time, $green_is_length]) {
+		my($t, $is_length) = @$t_def;
+		if (defined $t && $t ne "" && !$is_length) {
 		    my $s = AmpelschaltungCommon::time2s($t, -relstart => $rel_start);
 		    push @time, sprintf "%02d:%02d:%02d", AmpelschaltungCommon::s2time($s);
 		}
 	    }
 	} else {
-	    foreach ($red_time, $green_time) {
-		push @time, $_ if defined $_ and $_ !~ /^\+/;
+	    foreach my $t_def ([$red_time, $red_is_length],
+			       [$green_time, $green_is_length]) {
+		my($t, $is_length) = @$t_def;
+		push @time, $t if defined $t && $t ne "" && !$is_length && $t !~ /^\+/;
 	    }
 	}
 	if (@time) {

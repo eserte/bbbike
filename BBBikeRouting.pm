@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.37 2005/10/01 22:59:41 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.37 2005/10/01 22:59:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -607,16 +607,18 @@ sub search {
     if (defined $context->Verbose && $context->Verbose > 1) {
 	Strassen::set_verbose(1);
     }
-    my($res) = $self->Net->search
-	($start_coord, $self->Goal->Coord,
+    my @search_args =
+	(
 	 Tragen => ($context->Vehicle eq 'bike'),
 	 $context->Velocity ? (Velocity => $context->Velocity) : (),
 	 $context->SearchArgs ? @{ $context->SearchArgs } : (),
 	 $context->Algorithm ? (Algorithm => $context->Algorithm) : (),
 	 $context->Verbose ? (Stat => 1) : (),
 	);
+    my($res) = $self->Net->search
+	($start_coord, $self->Goal->Coord, @search_args);
     if (!$res) {
-	die "No route found between $start_coord and " . $self->Goal->Coord;
+	die "No route found between $start_coord and " . $self->Goal->Coord . "\nusing search arguments: @search_args\n";
     }
 
     if ($continued && $self->Path) {
