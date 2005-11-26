@@ -2964,7 +2964,7 @@ EOF
        text  => 'Ehrlichstr. (Lichtenberg) zwischen Wildensteiner Str. und Treskowallee Baustelle, gesperrt (bis 23.10.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 18147,8583 18672,8247
+userdel	q4 18147,8583 18443,8394 18672,8247
 EOF
      },
      { from  => undef, # 

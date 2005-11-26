@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeWeather.pm,v 1.5 2005/04/05 22:30:30 eserte Exp $
+# $Id: BBBikeWeather.pm,v 1.6 2005/11/25 23:47:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeWeather;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -73,54 +73,65 @@ sub BBBikeWeather::update_weather {
 
     eval {
 	my @station;
-	if ($wetter_station eq 'uptodate') {
-	    # Dahlem2 hat keine mittlere Windgeschwindigkeit
-	    @station = ('dahlem1',
-			#'tempelhof'
-		       );
-	} else {
-	    @station = ($wetter_station);
-	}
-
-	my @source;
-	foreach (keys %wetter_source) {
-	    push @source, $_ if $wetter_source{$_};
-	}
-#  	if (!@source) {
-#  	    push @source, 'www' unless $really_no_www;
-#  	}
-	if (!@source) {
-	    die M("Es wurde keine Quelle für den Empfang der Wetterdaten angegeben.")."\n";
-	}
-
-	BBBikeWeather::require_wettermeldung();
-
 	my($act_line, $act_station);
-	my $station;
-	foreach $station (@station) {
-	    my $source;
-	    foreach $source (@source) {
-		warn Mfmt("Versuche %s mit %s...\n", $station, $source)
-		    if $verbose;
-		my $line;
-		if ($source eq 'www') {
-		    $wettermeldung2::local = 0;
-		    $line = wettermeldung2::parse($station);
-		} elsif ($source eq 'db') {
-		    my $file = "$wetter_dir/$wetter_zuordnung{$station}";
-		    next if !-r $file;
-		    $line = wettermeldung2::tail_1($file);
-		} elsif ($source eq 'local') {
-		    $wettermeldung2::local = 1;
-		    $line = wettermeldung2::parse($station);
-		} else {
-		    die Mfmt("Unbekannte Quelle %s", $source);
-		}
-		next if !defined $line || $line =~ /^\s*$/;
-		if (!defined $act_line ||
-		    &wettermeldung2::date_cmp($act_line, $line) < 0) {
-		    $act_line    = $line;
-		    $act_station = $station;
+	if ($wetter_station eq 'wetterkarte') {
+	    if (!eval { require "/home/e/eserte/devel/parse_wetterkarte.pl"; 1}) {
+		main::status_message("parse_wetterkarte.pl konnte nicht geladen werden", "die");
+	    }
+	    # only needed for indexes
+	    BBBikeWeather::require_wettermeldung();
+	    my %result = ParseWetterkarte::get_result();
+	    $act_line = ParseWetterkarte::formatline(\%result, windrichtung => "windrose");
+	    $act_station = $wetter_station;
+	} else {
+	    if ($wetter_station eq 'uptodate') {
+		# Dahlem2 hat keine mittlere Windgeschwindigkeit
+		@station = ('dahlem1',
+			    #'tempelhof'
+			   );
+	    } else {
+		@station = ($wetter_station);
+	    }
+
+	    my @source;
+	    foreach (keys %wetter_source) {
+		push @source, $_ if $wetter_source{$_};
+	    }
+	    #  	if (!@source) {
+	    #  	    push @source, 'www' unless $really_no_www;
+	    #  	}
+	    if (!@source) {
+		die M("Es wurde keine Quelle für den Empfang der Wetterdaten angegeben.")."\n";
+	    }
+
+	    BBBikeWeather::require_wettermeldung();
+
+	    my $station;
+	    foreach $station (@station) {
+		my $source;
+		foreach $source (@source) {
+		    warn Mfmt("Versuche %s mit %s...\n", $station, $source)
+			if $verbose;
+		    my $line;
+		    if ($source eq 'www') {
+			$wettermeldung2::local = 0;
+			$line = wettermeldung2::parse($station);
+		    } elsif ($source eq 'db') {
+			my $file = "$wetter_dir/$wetter_zuordnung{$station}";
+			next if !-r $file;
+			$line = wettermeldung2::tail_1($file);
+		    } elsif ($source eq 'local') {
+			$wettermeldung2::local = 1;
+			$line = wettermeldung2::parse($station);
+		    } else {
+			die Mfmt("Unbekannte Quelle %s", $source);
+		    }
+		    next if !defined $line || $line =~ /^\s*$/;
+		    if (!defined $act_line ||
+			&wettermeldung2::date_cmp($act_line, $line) < 0) {
+			$act_line    = $line;
+			$act_station = $station;
+		    }
 		}
 	    }
 	}
@@ -296,19 +307,25 @@ EOF
 sub BBBikeWeather::parse_wetterline {
     my($wetterline, $source) = @_;
     my $fullwetter = $wetter_full{$source};
+    my $wind_is_in_m_s = $fullwetter || $source eq 'wetterkarte';
     my(@wetterline) = split(/\|/, $wetterline);
     $wetterline[$wettermeldung2::FIELD_WIND_DIR] = lc($wetterline[$wettermeldung2::FIELD_WIND_DIR]);
-    if (!exists $BBBikeCalc::wind_dir{$wetterline[$wettermeldung2::FIELD_WIND_DIR]}
-	|| $wetterline[$wettermeldung2::FIELD_WIND_MAX] !~ /^\d+$/
-	|| ($fullwetter && $wetterline[$wettermeldung2::FIELD_WIND_AVG] !~ /^\d+$/)
-       ) {
+    if (!exists $BBBikeCalc::wind_dir{$wetterline[$wettermeldung2::FIELD_WIND_DIR]}) {
 	$wind = 0;
-	die "Can't parse wind: " . join("|", @wetterline);
+	die "Can't parse wind direction ($wetterline[$wettermeldung2::FIELD_WIND_DIR]) from " . join("|", @wetterline);
+    }
+    if ($wetterline[$wettermeldung2::FIELD_WIND_MAX] !~ /^[\d\.]+$/) {
+	$wind = 0;
+	die "Can't parse max wind speed ($wetterline[$wettermeldung2::FIELD_WIND_MAX]) from " . join("|", @wetterline);
+    }
+    if (($fullwetter||$source eq 'wetterkarte') && $wetterline[$wettermeldung2::FIELD_WIND_AVG] !~ /^[\d\.]+$/) {
+	$wind = 0;
+	die "Can't parse average wind speed ($wetterline[$wettermeldung2::FIELD_WIND_AVG]) from " . join("|", @wetterline);
     }
     status_message("");
     $temperature = $wetterline[$wettermeldung2::FIELD_TEMP];
     $act_value{Temp} = $temperature . "°C";
-    if (!$fullwetter) { # Windstärke ist in Beaufort statt m/s
+    if (!$wind_is_in_m_s) { # Windstärke ist in Beaufort statt m/s
 	require Met::Wind;
 	import Met::Wind;
 	$wetterline[$wettermeldung2::FIELD_WIND_AVG] = wind_velocity([$wetterline[$wettermeldung2::FIELD_WIND_MAX], 'beaufort'], 'm/s');

@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.110 2005/11/19 22:58:45 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.110 2005/11/19 22:58:45 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
@@ -469,7 +469,7 @@ Verl. Pücklerstr.: Waldweg	Q1 1558,6729 1364,6691 1170,6654 967,6620 905,6631 88
 Bismarckstr.: Kopfsteinpflaster	Q2 -4892,1267 -5028,1133 -5092,1130 -5417,878 -5482,820 -5616,780 -6009,559
 Stahnsdorfer Damm: Kopfsteinpflaster	Q2 -4803,1240 -4995,1075
 (Forst Düppel): Waldweg	Q1 -6009,559 -6306,251 -6353,189 -6485,70 -6627,-56 -7067,-36
-Hampsteadstr.: Kopfsteinpflaster	Q2 793,2632 1157,2818 1268,2886 1314,2915 1722,2887 1842,2880 1903,2903
+Hampsteadstr.: Kopfsteinpflaster	Q2 793,2632 1157,2818 1268,2886 1314,2915 1530,2900 1722,2887 1842,2880 1903,2903
 Reichstagufer: Kopfsteinpflaster	Q2 9091,12681 8892,12576 8766,12541 8665,12548
 # XXX fand ich letztens nicht so schlimm: Reichstagufer: mäßiger Asphalt	Q1 9283,12856 9209,12795 9091,12681
 Am Weidendamm: mäßiger Asphalt	Q1 9383,12915 9529,12925
@@ -1256,6 +1256,7 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 #: by: kalkreuth
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 #: by: anonymous vvv
+Belziger Ring: Asphalt	Q0 22215,17784 22059,17842 21931,17818 21882,17748 21968,17714 21995,17754 22148,17687
 Blesener Zeile: Asphalt	Q0 3241,20613 3426,20642 3475,20656
 Moorweg: Asphalt	Q0 3190,22049 3114,22010 2903,21918 2652,21511 2429,21415
 Kaunstr.: Kopfsteinpflaster	Q2 -1077,3206 -1070,2924 -999,2726
@@ -2046,7 +2047,7 @@ Justus-von-Liebig-Str.: Asphalt	Q0 19495,2535 19670,2701 19878,2899
 #: by: Reiner Wild:
 Braillestr.: Asphalt	Q0 4512,5199 4460,5274 4433,5315
 #: by: maja wegener:
-Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18703,8405 18320,8662 18273,8758 18243,8818 18010,8954
+Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18703,8405 18535,8518 18320,8662 18273,8758 18243,8818 18010,8954
 #: by: Torsten Fleischmann:
 Zepernicker Str.: Asphalt	Q0 18178,26668 17707,26410 17433,26288 17223,26153
 #: by: Thomas Specht:
@@ -2327,6 +2328,8 @@ Grafenwalder Weg: Asphalt	Q0 -3295,16392 -3326,16553
 Manksweg: Asphalt	Q0 20482,14892 20687,15193
 #: by: Peter (disco...):
 Schonensche Str.: Asphalt	Q0 11039,16553 11287,16515
+#: by: Gerhild Komander:
+Schonensche Str.: Kopfsteinpflaster	Q2 11287,16515 11450,16490 11673,16456
 #: by: Oliver Kraft: vvv
 Oertzenweg: Asphalt	Q0 -1248,2508 -1021,2595 -845,2664 -693,2720
 Wolzogenstr.: akzeptables Kopfsteinpflaster	Q2 -785,2492 -845,2664
@@ -2499,9 +2502,10 @@ Burgemeisterstr.: schlechtes holpriges Kopfsteinpflaster	Q3 9348,5665 9157,5689 
 Knesebeckstr. (Zehlendorf): Kopfsteinpflaster	Q2 1104,2328 1209,2371
 Knesebeckstr. (Zehlendorf): Asphalt	Q0 1209,2371 1320,2418 1392,2606
 #: by: ^^^
-#: by: anna (grieschen): vvv
+#: by: anna/peters (grieschen): vvv
 Schönerlinder Str.: Asphalt	Q0 21799,4319 21640,4368
 Wolfshagener Str.: mäßiger Beton	Q1 11233,18981 10920,18678 10825,18634 10721,18575 10565,18507 10439,18443
+Crusemarkstr.: guter Beton	Q0 10712,18975 10825,18634
 #: by: ^^^
 #: by: anna (flugahab):
 Sophie-Charlotte-Str. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 439,3900 653,3967 821,4108 1039,4179 1275,4283
@@ -2859,6 +2863,16 @@ Nicolaistr.: Kopfsteinpflaster	Q2 6171,3400 6110,3538 6042,3689 5959,3875 5879,4
 (Nicolaistr. - Dillgesstr.): gut geeignet	Q0 6171,3400 6218,3302
 #: by: Marco Schmidt
 Barbarastr.: Asphalt	Q0 6325,2904 6451,3034
+#: by: Thede:
+Heiligenberger Str.: schlechtes Kopfsteinpflaster	Q3 18251,8164 18340,8223 18443,8394 18535,8518
+#: by: Rasmus (pries):
+Katteweg: Beton	Q0 -3017,1056 -3222,1390
+#: by: qrty:
+Gounodstr.: schlechtes Kopfsteinpflaster	Q3 13601,15586 14133,15790 14216,15821 14366,15877 14603,15971
+#: by: U. Herbst:
+Kilstetter Str.: Asphalt	Q0 1842,2880 1694,3120 1537,3027 1530,2900
+#: by: Heike Fischer:
+Naturlehrpfad: fester Sandweg und enger Holzbohlenweg	Q2 5692,23948 5609,23986 5535,24016 5216,24157
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
