@@ -48,7 +48,7 @@ Waldemarstr.: Kopfsteinpflaster, OK	Q1 11556,10869 11328,10957
 Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11287,10976
 Waldemarstr.: Kopfsteinpflaster, OK	Q1 11287,10976 11145,11042
 Erkelenzdamm: Kopfsteinpflaster	Q2 11021,10242 11089,10276 11114,10338 11102,10442 11135,10519 11200,10678 11258,10682
-Leuschnerdamm: Kopfsteinpflaster	Q2 11269,10731 11302,10804 11270,10820 11328,10957 11365,11047 11421,11073 11461,11145
+Leuschnerdamm: Kopfsteinpflaster	Q2 11269,10731 11302,10804 11270,10820 11328,10957 11365,11047 11421,11073 11461,11145 11473,11180
 Legiendamm: Kopfsteinpflaster	Q2 11349,11227 11337,11197 11307,11125
 Legiendamm: Kopfsteinpflaster	Q2 11287,10976 11220,10839 11186,10843 11151,10781
 Segitzdamm: Kopfsteinpflaster	Q2 11151,10781 11133,10714 11157,10699 11134,10642 11090,10538 11062,10458 11009,10442 10971,10367 10962,10340 10974,10266 10910,10131
@@ -1190,6 +1190,11 @@ Am Johannistisch: Verbundsteinpflaster	Q1 10024,9993 10111,9942
 Dillgesstr.: gut geeignet	Q0 6218,3302 6411,3092 6451,3034 6603,2803
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Beton	Q0 14680,10758 14564,10792 14558,10833
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3 14558,10833 14124,10932 14093,10909 14043,10928
+Mehringplatz: Verbundsteinpflaster	Q0 9590,10262 9508,10320 9509,10391 9569,10427 9644,10404 9662,10345 9646,10301 9590,10262
+Mehringplatz - Friedrichstr.: Verbundsteinpflaster	Q0 9569,10427 9556,10565
+zum Mehringplatz: Verbundsteinpflaster	Q0 9865,10286 9646,10301
+Brommystr.: Kopfsteinpflaster	Q2 12509,11025 12567,11115
+(Mariannenplatz - Bethaniendamm): Kopfsteinpflaster	Q2 11996,11128 12012,11235
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -2829,6 +2834,7 @@ Goldregenstr.: asphaltiert	Q0 24448,10098 24340,10138 24154,10188 23726,10308
 Immortellenweg:: loser Sandweg	Q3 24069,9888 24198,9856 24244,9948 24340,10138 24370,10198
 Blausternweg: asphaltiert	Q0 24154,10188 24093,9978 24069,9888 24046,9817
 Phloxstr.: loser Sandweg	Q3 23659,10074 23775,10047 23881,10024 23988,10001 24093,9978 24244,9948
+Suttnerstr.: Asphalt	Q0 7659,5735 7667,5813 7728,5866 7730,5921 7730,5958
 #: by: ^^^
 #: by: Isa:
 Wunsiedeler Weg: Asphalt	Q0 7589,4008 7576,3774 7512,3423
@@ -2836,8 +2842,10 @@ Wunsiedeler Weg: Asphalt	Q0 7589,4008 7576,3774 7512,3423
 Charlottenstr.: Asphalt	Q0 5763,2795 5929,2982 6218,3302 6538,3491
 #: by: Sandra (sspp):
 Magdalenenstr.: Kopfsteinpflaster	Q2 16129,11961 16156,12286
-#: by: Sebastian Scheller:
+#: by: Sebastian Scheller: vvv
 Okertalstr.: gutes Kopfsteinpflaster	Q1 14827,20783 14910,21028
+Okertalstr.: Sandweg, kaum Löcher	Q2 14910,21028 14977,21194
+#: by: ^^^
 #: by: Gerd Nötzel:
 Bacharacher Str.: Asphalt	Q0 11282,6148 11344,6572
 #: by: Johannes Nerger: vvv
@@ -2873,6 +2881,21 @@ Gounodstr.: schlechtes Kopfsteinpflaster	Q3 13601,15586 14133,15790 14216,15821 
 Kilstetter Str.: Asphalt	Q0 1842,2880 1694,3120 1537,3027 1530,2900
 #: by: Heike Fischer:
 Naturlehrpfad: fester Sandweg und enger Holzbohlenweg	Q2 5692,23948 5609,23986 5535,24016 5216,24157
+#: by: Schneider?
+Steinhellenweg: Beton	Q0 9992,4595 9998,4837 9998,4876
+Steinhellenweg: Kolonieweg/Rasengittersteine	Q2 9998,4876 9998,5210 9997,5229
+#: by: Carsten Steglich:
+Bruno-Wille-Str.: Kopfsteinpflaster	Q2 26086,4861 26069,5280 26019,5851
+#: by: Jürgen Müller:
+Sondershauser Str.: Asphalt	Q0 6403,569 6358,795 6377,1041 6441,1444 6491,1658
+#: by: Petra Hennecke: vvv
+Ahrenshooper Str.: Beton	Q0 16764,18529 17184,17964
+Ahrenshooper Str.: Beton	Q0 17003,17830 17184,17964 17324,18053
+#: by: ^^^
+#: by: Tobias Kant:
+Wollankstr.: Kopfsteinpflaster	Q2 9624,17693 9727,17804 9832,17925 9870,17971 10004,18133 10089,18180
+#: by: Kleinke (honda):
+Havelstr.: Asphalt	Q0 -3151,14577 -3037,14509
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

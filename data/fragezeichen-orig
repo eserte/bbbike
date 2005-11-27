@@ -42,7 +42,7 @@ Max-Beer-Str.: Fahrradstraße geplant (2005)	? 10632,13199 10703,13467 10740,1362
 Linienstr.: Fahrradstraße geplant (nach der Sanierung)? Oder wird es eine Tempo-10-Zone (laut wosch)?	? 9281,13374 9607,13507 9752,13575 9903,13646 9944,13665 9964,13665 10020,13669 10081,13673 10214,13680 10308,13679 10432,13678 10597,13647 10718,13625 10740,13621 10777,13614 10878,13565 11059,13480 11104,13456
 #: by ^^^
 #: last_checked: 2005-11-07
-Bethaniendamm: vor den Bauarbeiten war hier ein Radstreifen, wird er wieder hergestellt?	? 11461,11145 11649,11075 11816,11084 11852,11102 11956,11166 12055,11331
+Bethaniendamm: vor den Bauarbeiten war hier ein Radstreifen, wird er wieder hergestellt?	? 11461,11145 11649,11075 11816,11084 11852,11102 11956,11166 12012,11235 12055,11331
 #: section ^^^
 #
 #: section Straßen in Planung vvv
@@ -71,7 +71,7 @@ Uferweg - Friedrich-Ebert-Str. an der Nikolaikirche: zurzeit wegen Bauarbeiten k
 Bernauer Str.: Bauarbeiten, nach den Bauarbeiten kein Kopfsteinpflaster	?::inwork 10351,14981 10333,14983 10176,14896 10094,14847 10011,14810 9805,14717 9621,14624 9472,14478 9400,14400 9267,14202 9236,14157
 Entlastungsstr.: wird voraussichtlich im September 2005 stillgelegt	? 8063,12182 8056,12061 8129,11735 8172,11679
 #: next_check: 2005-11-25
-Gramzow: Abschnitt wird saniert, danach kein Kopfsteinpflaster mehr?	? 50109,89725 49930,89857
+Gramzow: nach Abschluss der Bauarbeiten kein Kopfsteinpflaster mehr?	? 50109,89725 49930,89857
 #: next_check: 2005-11-30
 Großziethen: Kopfsteinpflaster nur Richtung Süden, nach den Arbeiten kein Kopfsteinpflaster mehr	?; 12968,1006 13225,-681 13309,-1268
 #: section ^^^
@@ -533,7 +533,7 @@ Ludwigsburg: Qualität (von Süden aus gesehen: Feldweg; von Norden aus gesehen: B
 Schönfeld - Neuenfeld: im Ort Schönfeld noch Betonplatten mit Spur (Q1), danach den Anschein nach Asphalt (Q0)	? 48060,112975 48800,113000 49137,113325 49537,113375 49887,113837
 Klockow - Züsedom: ab Klockow Asphalt, danach ungewiss	? 49412,111409 49887,113837 50187,114312 50025,115750 50148,115972
 Klockow - Kleptow (Feldweg): auf der Nordseite sandiger Feldweg (Q2?)	? 49487,110056 49381,107993
-Rüdickenstr. und Verlängerung: Qualität? Existiert eine Verbindung für Radfahrer?	? 17425,17281 17891,17097
+Rüdickenstr. und Verlängerung: Qualität? Existiert eine Verbindung für Radfahrer?	? 17501,17267 17891,17097
 Arnimstr.: Qualität? Wo ist die Verbindung zur Gehrenseestr.?	? 17891,17097 18500,16831 18313,16643
 Wuhlewanderweg - Alte/Hellerdorfer Str.: Durchfahrt für Radfahrer möglich? Qualität?	? 22827,14356 23172,14395
 Bäkepromenade: Qualität? Existiert eine Verbindung?	? -2618,-1473 -2800,-1484 -2802,-1636
@@ -949,7 +949,6 @@ Pfarrer-Theile-Str.: ist die Straße Richtung Gärtnereiring eine Sackgasse oder e
 Blesener Zeile: existiert eine Verbindung zum Weg am Nordgraben?	? 3426,20642 3475,20656
 Leuenburger Zeile: Qualität? Teil einer ausgeschilderten Radroute?	? 2716,19776 2818,19606 2852,19546
 Waidmannsluster Damm - Gorkistr. - Leuenburger Zeile: Teil einer ausgeschilderten Route?	? 2242,20908 2404,20469 2435,20370 2463,20295 2716,19776
-Okertalstr. zwischen Lindenberger Weg und Bahnlinie: Qualität?	? 14910,21028 14977,21194
 Damme (am Gutshof): Qualität (wahrscheinlich Kopfsteinpflaster)?	? 49971,99565 49795,99704 49737,99646
 Röntgentaler Weg (durch den Schloßpark): Qualität? Führt hier der Pankeweg entlang?	? 16154,25785 16537,26209
 Röntgentaler Weg: Qualität? Führt hier der Pankeweg entlang?	? 16537,26209 17335,26899

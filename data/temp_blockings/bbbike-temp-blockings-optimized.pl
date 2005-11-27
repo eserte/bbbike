@@ -235,15 +235,7 @@ userdel	q4 1916,-1090 1709,-953
        undef,
        undef,
        undef,
-       {
-         'until' => 1132959600,
-         'text' => 'L 53; (Seestr.); OL Großräschen, zw. B96 u. Ahornstr. Straßenbauarbeiten Vollsperrung 20.06.2005-25.11.2005 ',
-         'from' => 1119132000,
-         'data' => 'userdel	q4 53810,-90698 53805,-90240
-userdel	q4 53252,-90440 53805,-90240
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -377,14 +369,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
        },
        undef,
        undef,
-       {
-         'until' => 1132959600,
-         'text' => 'B 166; (Zichow-Gramzow); OD Gramzow Kanal- und Straßenbau Vollsperrung 20.09.2005-25.11.2005 ',
-         'from' => 1127080800,
-         'data' => 'userdel	q4 50109,89725 49930,89857
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -499,14 +484,7 @@ userdel	q4 -7873,66589 -7851,66418
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1132959600,
-         'text' => 'B 109; (Zehdenick-Templin); zw. Hammelspring und Hindenburg Straßen-, Durchlass- u.Radweg. Vollsperrung 17.10.2005-25.11.2005 ',
-         'from' => 1129413600,
-         'data' => 'userdel	2 12311,76014 11771,74993
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

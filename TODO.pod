@@ -1199,6 +1199,12 @@ An example how to programmatically make a screenshot on Windows ---
 maybe this can be of use somewhere (using instead of xwd?):
 L<http://www.perlmonks.org/index.pl?node_id=355073>
 
+=item * (H1)
+
+Drawing custom category images seems to not work in lazy mode (try:
+turn on lazy mode, draw E<quot>misc/zebrastreifenE<quot> as a point
+layer).
+
 =back
 
 =head1 Daten allgemein

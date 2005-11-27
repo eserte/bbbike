@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.209 2005/11/25 23:48:05 eserte Exp $
+# $Id: bbbike,v 3.209 2005/11/25 23:48:05 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -5803,17 +5803,20 @@ EOF
 		my $p = $images->{$base};
 		if (!$p) {
 		    eval {
+			#warn "Try $photo...\n";
 			$p = $c->Photo(-file => $photo);
 		    };
 		    if (!$p) {
 			eval {
 			    my $photo = Tk::findINC($photo);
+			    #warn "Try $photo...\n";
 			    $p = $c->Photo(-file => $photo)
 				if defined $photo;
 			};
 			if (!$p) {
 			    eval {
 				my $dir = dirname($p_file{$abk});
+			        #warn "Try $dir/$photo...\n";
 				$p = $c->Photo(-file => "$dir/$photo");
 			    };
 			}
