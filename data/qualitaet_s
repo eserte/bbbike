@@ -4,7 +4,10 @@
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Br¸cken, Straﬂen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
-Markgrafendamm/Hauptstr.: Kopfsteinpflaster, m‰ﬂig bis schlecht	Q2 14641,10552 14675,10693 14680,10758 14681,10847 14794,10844 15255,10751
+Markgrafendamm: m‰ﬂiges Kopfsteinpflaster	Q2 14641,10552 14675,10693 14680,10758
+Markgrafendamm: schlechtes Kopfsteinpflaster	Q3 14680,10758 14681,10847
+Markgrafendamm/Hauptstr.: asphaltiert	Q0 14681,10847 14794,10844 14890,10824
+Hauptstr.: m‰ﬂiges Kopfsteinpflaster	Q2 14890,10824 15255,10751
 Karlshorster Str.: m‰ﬂiges Kopfsteinpflaster	Q2 15267,10865 15266,10791 15255,10751
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1683,9847 1511,10051 1382,10124 1308,10031
 Werkst‰ttenweg: m‰ﬂiges Kopfsteinpflaster	Q2 2121,10089 1634,9668
@@ -927,8 +930,14 @@ Blumenthalstr.: Kopfsteinpflaster	Q2 8961,6126 8990,5950
 Kaiserin-Augusta-Str.: Kopfsteinpflaster	Q2 8990,5950 9177,5922
 (Teltowkanal, Nordufer): Parkweg	Q2 8750,5173 9118,5328 9145,5323 9182,5332
 Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
-(Kynaststr. - Uferwanderweg): Parkweg	Q1 14828,10628 14906,10587
-Paul-und-Paula-Ufer: Parkweg, teilweise auch Asphalt/Beton	Q1 15314,10121 15261,10167 15204,10201 15059,10289 14903,10403 14864,10451 14906,10587 14937,10598 14990,10581 15100,10637 15209,10581
+(Kynaststr. - Uferwanderweg): Parkweg	Q1 14828,10628 14843,10621 14906,10587
+Paul-und-Paula-Ufer: Kleinteiliges Kopfsteinpflaster	Q1 15314,10121 15261,10167
+Paul-und-Paula-Ufer: Parkweg, teilweise auch Asphalt/Beton	Q1 15261,10167 15204,10201 15059,10289 14903,10403 14864,10451 14906,10587 14937,10598 14990,10581 15100,10637 15209,10581
+Uferweg: Parkweg	Q1 15314,10121 15260,10048 15295,10022 15347,9922
+Uferweg: glatt gepflastert	Q0 15347,9922 15545,9818
+Uferweg: Parkweg	Q1 15545,9818 15583,9779 15626,9710
+(Kynaststr. - Hauptstr.): Parkweg	Q1 14843,10621 14890,10824
+Tunnelstr. - Bartholom‰usufer: Parkweg	Q1 15502,9693 15583,9779
 Am Rummelsburger See: glatt gepflastert	Q0 15209,10581 15453,10415
 Am Rummelsburger See: Parkweg	Q2 15453,10415 15456,10356 15518,10234 15625,10187 15828,9875 15931,9846
 Am Rummelsburger See: Betonweg	Q0 15931,9846 16046,9746 16262,9925
@@ -953,6 +962,7 @@ Fischzug: Kopfsteinpflaster, teilweise auch Verbundsteinpflaster	Q2 15090,10140 
 Am Speicher: Kopfsteinpflaster	Q2 15209,10087 15261,10167
 Palmkernzeile: Verbundsteinpflaster	Q0 15100,9831 15142,9931 15209,10087
 Friedrich-Junge-Str.: Asphalt	Q0 15020,9875 15071,9967 15153,10112 15181,10154
+Friedrich-Junge-Str.: Verbundsteinpflaster	Q0 15181,10154 15204,10201
 Schinkestr.: Kopfsteinpflaster	Q2 11623,9841 11734,9856 11880,9874
 (Weg zwischen S-Hohenschˆnhausen und S-Wartenberg): asphaltierer Radweg	Q0 17587,17965 16990,18694
 Tuchollaplatz: Kopfsteinpflaster	Q2 15628,10915 15554,10934
@@ -1145,6 +1155,10 @@ Mehringplatz - Friedrichstr.: Verbundsteinpflaster	Q0 9569,10427 9556,10565
 zum Mehringplatz: Verbundsteinpflaster	Q0 9865,10286 9646,10301
 Brommystr.: Kopfsteinpflaster	Q2 12509,11025 12567,11115
 (Mariannenplatz - Bethaniendamm): Kopfsteinpflaster	Q2 11996,11128 12012,11235
+(Tunnelstr. - Uferweg): Parkweg	Q1 15662,9501 15749,9558
+(Uferweg): glatt gepflastert	Q0 15741,9590 15749,9558 15819,9430
+(Uferweg): Parkweg	Q1 15819,9430 15787,9321
+(Fischzug - Uferweg): Holzbohlenweg	Q1 15209,10087 15260,10048
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
 Sch¸tzallee: m‰ﬂiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfl‰che	Q2 2230,3823 2151,3834 1952,3864 1918,3868 1815,3876
 Riemeisterstr.: m‰ﬂiges Kopfsteinpflaster	Q2 373,4816 319,4906 168,5092 103,5123
