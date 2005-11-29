@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Gpsman.pm,v 1.5 2005/05/20 23:12:22 eserte Exp $
+# $Id: Gpsman.pm,v 1.6 2005/11/29 08:36:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
@@ -54,7 +54,7 @@ sub new {
 sub read_gpsman {
     my($self, $filename, %args) = @_;
 
-    my $gpsman = GPS::GpsmanData->new();
+    my $gpsman = GPS::GpsmanMultiData->new();
 
     {
 	local $^W = 0;
@@ -75,25 +75,33 @@ sub read_gpsman {
 
     my $cat = $args{cat} || "X";
 
-    if ($gpsman->Type eq GPS::GpsmanData::TYPE_WAYPOINT()) {
-	for my $wpt (@{ $gpsman->Waypoints }) {
-	    my $name = $wpt->Ident;
-	    if (defined $wpt->Comment && $wpt->Comment ne "") {
-		$name .= " (" . $wpt->Comment . ")";
+    for my $chunk (@{ $gpsman->Chunks }) {
+	if ($chunk->Type eq GPS::GpsmanData::TYPE_WAYPOINT()) {
+	    for my $wpt (@{ $chunk->Waypoints }) {
+		my $name = $wpt->Ident;
+		if (defined $wpt->Comment && $wpt->Comment ne "") {
+		    $name .= " (" . $wpt->Comment . ")";
+		}
+		my @coords = $convert_coordinates->($wpt);
+		if (@coords) {
+		    $self->push([$name, \@coords, $cat]);
+		}
 	    }
-	    my @coords = $convert_coordinates->($wpt);
+	} else {
+	    my @coords;
+	    for my $wpt (@{ $chunk->Track }) {
+		push @coords, $convert_coordinates->($wpt);
+	    }
 	    if (@coords) {
+		my $name = $args{name} || $chunk->Name;
+		if (defined $name && $name =~ /^ACTIVE LOG$/i && $args{fallbackname}) {
+		    $name = $args{fallbackname};
+		}
+		if (!defined $name) {
+		    $name = "";
+		}
 		$self->push([$name, \@coords, $cat]);
 	    }
-	}
-    } else {
-	my @coords;
-	for my $wpt (@{ $gpsman->Track }) {
-	    push @coords, $convert_coordinates->($wpt);
-	}
-	if (@coords) {
-	    my $name = $gpsman->Name;
-	    $self->push([$name, \@coords, $cat]);
 	}
     }
 }

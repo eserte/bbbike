@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.41 2005/10/26 00:52:24 eserte Exp $
+# $Id: GpsmanData.pm,v 1.42 2005/11/29 08:35:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005 Slaven Rezic. All rights reserved.
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.41 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -433,6 +433,7 @@ sub parse_group {
     # nothing..., return empty list
 }
 
+my $current_track_name; # to be used in track segments
 sub parse {
     my($self, $buf, %args) = @_;
     my $multiple = delete $args{-multiple};
@@ -483,7 +484,17 @@ sub parse {
 		$parse_method = $parse{$type};
 	    } elsif (/^!(TS?:.*)/) {
 		my @l = split /\t/, $1;
-		$self->Name($l[1]);
+		if (/^!T:/) {
+		    $current_track_name = $l[1];
+		    $self->Name($l[1]);
+		} else {
+		    if (defined $l[1] && $l[1] ne "") {
+			warn "Should not happen: TS with name";
+			$self->Name($l[1]);
+		    } elsif (defined $current_track_name) {
+			$self->Name($current_track_name);
+		    }
+		}
 		$self->Type(TYPE_TRACK);
 		$type = TYPE_TRACK;
 		$parse_method = $parse{$type};
