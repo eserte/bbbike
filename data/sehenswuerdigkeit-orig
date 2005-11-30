@@ -61,7 +61,7 @@ Siegessäule	IMG:sehenswuerdigkeit_img/siegessaeule.gif|ANCHOR:s 6749,12015
 Haus der Kulturen der Welt (Kongreßhalle)	F:SW 7688,12557 7688,12490 7774,12489 7773,12557
 Schloß Bellevue	F:SW 6976,12317 6953,12342 6907,12299 6930,12275 6917,12263 6883,12301 6950,12365 6988,12328
 Gedenkstätte Deutscher Widerstand	F:SW 7492,11306 7566,11276 7545,11228 7471,11256
-Friedrchstadtpalast	F:SW 9275,13134 9282,13072 9381,13080 9368,13141
+Friedrichstadtpalast	F:SW 9275,13134 9282,13072 9381,13080 9368,13141
 Kalkscheune	SW 9424,13140
 Kanzleramt	F:SW 8094,12632 7826,12632 7933,12727 8093,12727
 #: XXX: Problem: das Dach überdeckt die Straße!
@@ -261,7 +261,7 @@ Heilige-Dreifaltigkeits-Kirche	SW|IMG:church.gif 14626,11267
 St.-Mauritius-Kirche	SW|IMG:church.gif 15402,11872
 Zwinglikirche	SW|IMG:church.gif 13865,10930
 	SW|IMG:church.gif 14312,11339
-Sophienkirch	SW|IMG:church.gif 10106,13310
+Sophienkirche	SW|IMG:church.gif 10106,13310
 #: XXX rough positions vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Oberbaumbruecke	IMG:sehenswuerdigkeit_img/oberbaumbruecke.gif 13300,10750
 Oberbaum City	IMG:sehenswuerdigkeit_img/oberbaumcity.gif 13600,11000
@@ -287,6 +287,23 @@ Eastgate	SW 19788,15452
 #: note: http://www.nikolai-spandau.de/
 St.-Nikolai-Kirche (Spandau)	SW|IMG:church.gif -3165,14523
 Ehem. Wasserturm am Fichtenberg	SW 4146,5758
+AEG-Montagehalle	F:SW 9046,14910 9095,14937 9008,15095 8954,15071
+AEG-Turbinenhalle	F:SW 4972,13482 4971,13627 4926,13625 4928,13482
+St.-Christophorus-Kirche (Neukölln)	SW|IMG:church.gif 12239,9242
+Deutschlandhaus	F:SW 8950,10976 8915,11022 8954,11051 8989,11005
+Europahaus	F:SW 8906,11032 8947,11061 8918,11101 8877,11074
+#: XXX Lichthöfe fehlen:
+Bundesfinanzministerium	F:SW 9046,11518 9073,11448 9043,11435 9058,11392 9088,11404 9134,11299 9044,11282 9040,11302 9005,11291 9002,11313 9031,11323 9020,11357 8991,11351 8983,11371 9008,11380 8999,11418 8965,11412 8954,11442 8986,11451 8976,11480 8947,11470 8939,11491
+Detlev-Rohwedder-Haus	F:SW 8991,11541 9003,11508 8976,11500 8971,11518 8901,11509 8894,11532
+Borsigturm	SW 2257,19532
+Telefunken-Hochhaus	F:SW 4689,11837 4696,11783 4675,11777 4670,11832
+Gesundbrunnen-Center	F:SW 9192,15993 9204,15968 9239,15947 9280,15944 9486,15981 9437,16039
+Herz-Jesu-Kirche	SW|IMG:church.gif 921,3552
+Internationales Handelszentrum	F:SW 9407,12640 9411,12580 9384,12577 9376,12635
+Kirche am Südstern	SW|IMG:church.gif 10635,9276
+Checkpoint Charlie	SW 9473,11316
+#: alias: Mauermuseum
+Museum Haus am Checkpoint Charlie	SW 9492,11287
 # Potsdam ##################################################
 Schloß Babelsberg	F:SW -10482,-195 -10488,-242 -10515,-242 -10511,-193
 Neues Palais	SW -15737,-1011
