@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.20 2005/11/14 22:05:32 eserte Exp $
+# $Id: vmzrobot.pl,v 1.20 2005/11/14 22:05:32 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -316,7 +316,12 @@ sub mark_irrelevant_entry {
 	my $last_index   = -1;
 	if ($comp[-1] =~
 	    /( Verkehrsbehinderung\s+erwartet
-	    )/xs) {
+	     | Staugefahr
+	     | Stau\s+zu\s+erwarten
+	     | Gefahr\s+durch\s+stockenden\s+Verkehr
+	     | stockender\s+Verkehr\s+zu\s+erwarten
+	     | bitte\s+umfahren\s+Sie\s+den\s+Bereich\s+weiträumig
+	    )/xsi) {
 	    $last_index = -2;
 	}
 	if ($comp[$last_index] =~
@@ -327,7 +332,8 @@ sub mark_irrelevant_entry {
 	     | Ampeln\s+in\s+Betrieb
 	     | auf\s+$zahl\s+$Fahrstreifen\s+$reduziert
 	     | Behinderungen\s+durch\s+Parkplatzsuchverkehr
-	    )/xs) {
+	     | veränderte\s+Verkehrsführung\s+im\s+Baustellenbereich
+	    )/xsi) {
 	    $ignore = 1;
 	}
     }

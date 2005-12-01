@@ -97,15 +97,15 @@ a.ms:visited { color:#333333; }
   margin-top:8px;
 }
 
-/* colors taken from bbbike.cgi, %category_color */
+/* colors taken from bbbike.cgi, %category_color, but slightly varied (because of the ffdead'ish background color in table) */
 .catB {
   background-color:#cd0000; /* red3 */
 }
 .catHH {
-  background-color:#fff800;
+  background-color:#ffff00;
 }
 .catH {
-  background-color:#ffff70;
+  background-color:#ffff40;
 }
 .catN {
   background-color:#ffffff; /* slightly different */

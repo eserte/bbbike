@@ -50,9 +50,8 @@ function init() {
         for(var i=0; i<arr.length/2; i++) {
           var key = arr[i*2];
 	  var val = arr[i*2+1];
-alert(val);
 	  val = val.replace(/%40/g, "@");
-alert(val);
+	  val = val.replace(/%20/g, " ");
   	  if (key == "email" || key == "author") {
 	    frm.elements[key].value = val;
 	  }

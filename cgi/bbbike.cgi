@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.36 2005/11/16 01:25:24 eserte Exp $
+# $Id: bbbike.cgi,v 7.38 2005/12/01 00:39:05 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -684,7 +684,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.36 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.38 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1492,7 +1492,7 @@ EOF
 <td valign="top">@{[ blind_image(420,1) ]}<br>
 EOF
  	print <<EOF;
-Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 4000 von 10000 Berliner Stra&szlig;en sowie ca. 150 Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
+Dieses Programm sucht (Fahrrad-)Routen in Berlin. Es sind ca. 5200 von 10000 Berliner Stra&szlig;en sowie ca. 180 Potsdamer Stra&szlig;en erfasst (alle Hauptstra&szlig;en und wichtige
 Nebenstra&szlig;en). Bei nicht erfassten Straßen wird automatisch die
 nächste bekannte verwendet. Hausnummern k&ouml;nnen nicht angegeben werden.<br><br>
 EOF
@@ -3476,6 +3476,12 @@ EOF
 	print
 	  "<tr><td>${fontstr}Fahrzeit:$fontend</td>";
 
+	my $ampel_count;
+	my $ampel_lost = 0;
+	if (defined $r->trafficlights) {
+	    $ampel_count = $r->trafficlights;
+	    $ampel_lost = 15*$ampel_count; # XXX do not hardcode!
+	}
 	{
 	    my $i = 0;
 	    my @speeds = sort { $a <=> $b } keys %speed_map;
@@ -3483,7 +3489,7 @@ EOF
 		my $def = $speed_map{$speed};
 		my $bold = $def->{Pref};
 		my $time = $def->{Time};
-		print "<td>$fontstr" . make_time($time)
+		print "<td>$fontstr" . make_time($time + $ampel_lost/3600)
 		    . "h (" . ($bold ? "<b>" : "") . "bei $speed km/h" . ($bold ? "</b>" : "") . ")";
 		print "," if $speed != $speeds[-1];
 		print "$fontend</td>";
@@ -3505,15 +3511,19 @@ EOF
 		} else {
 		    $is_first = 0;
 		}
-		print $fontstr,  make_time($power_map{$power}->{Time}/3600) . "h (bei $power W)", $fontend, "</td>"
+		print $fontstr,  make_time(($power_map{$power}->{Time} + $ampel_lost)/3600) . "h (bei $power W)", $fontend, "</td>"
 	    }
 	    print "</tr>\n";
 	}
 	print "</table>\n";
-	if (defined $r->trafficlights) {
-	    my $nr = $r->trafficlights;
-	    print $fontstr, $nr . " Ampel" . ($nr == 1 ? "" : "n") .
-		" auf der Strecke.$fontend<br>\n";
+	if (defined $ampel_count) {
+	    print $fontstr;
+	    if ($ampel_count == 0) {
+		print "Keine Ampeln";
+	    } else {
+		print $ampel_count . " Ampel" . ($ampel_count == 1 ? "" : "n");
+	    }
+	    print " auf der Strecke (in die Fahrzeit einbezogen).$fontend<br>\n";
 	}
 	print "</center>\n" unless $printmode;
 	print "<hr>";
@@ -5745,7 +5755,7 @@ Es besteht die experimentelle Möglichkeit, sich <a href="@{[ $bbbike_url ]}?uplo
 <h4>Diplomarbeit</h4>
 Das Programm wird auch in <a href="@{[ $BBBike::DIPLOM_URL ]}">meiner Diplomarbeit</a> behandelt.<p>
 EOF
-    if (0 && $bi->is_browser_version("Mozilla", 5)) {
+    if ($bi->is_browser_version("Mozilla", 5)) {
 	print <<EOF;
 <script type="text/javascript"><!--
 function addSidebar(frm) {
@@ -5769,9 +5779,11 @@ function addSidebar(frm) {
 // --></script>
 <h4>Mozilla-Sidebar</h4>
 <form name="bbbike_add_sidebar">
-<a href="#" onclick="return addSidebar(document.forms.bbbike_add_sidebar)"><img src="http://developer.netscape.com/docs/manuals/browser/sidebar/add-button.gif" alt="Add sidebar" border=0></a>, dabei folgende Adressen als Default verwenden:<br>
-<img src="$bbbike_images/flag2_bl.gif" border=0 alt="Start"> <input size=10 name="start"><br>
-<img src="$bbbike_images/flag_ziel.gif" border=0 alt="Ziel"> <input size=10 name="ziel"><br>
+<a href="#" onclick="return addSidebar(document.forms.bbbike_add_sidebar)"><!-- img src="http://developer.netscape.com/docs/manuals/browser/sidebar/add-button.gif" alt="Add sidebar" border=0 -->Add sidebar</a>, dabei folgende Adressen optional als Default verwenden:<br>
+<table>
+<tr><td><img src="$bbbike_images/flag2_bl.gif" border=0 alt="Start"> Start:</td><td> <input size=10 name="start"></td></tr>
+<tr><td><img src="$bbbike_images/flag_ziel.gif" border=0 alt="Ziel"> Ziel:</td><td> <input size=10 name="ziel"></td></tr>
+</table>
 </form>
 EOF
     }
@@ -5820,7 +5832,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/11/16 01:25:24 $';
+    my $cgi_date = '$Date: 2005/12/01 00:39:05 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {
@@ -5880,17 +5892,21 @@ EOF
 <li><a href="${scpan}Apache">Apache $Apache::VERSION</a> (auch bekannt als <a href="http://perl.apache.org">mod_perl</a>)
 EOF
     }
+    print <<EOF;
+<li><a href="${scpan}GD">GD</a> für das Erzeugen der GIF/PNG/JPEG-Grafik
+<li><a href="${scpan}PDF::Create">PDF::Create</a> für das Erzeugen der PDF-Grafik
+<li><a href="${scpan}SVG">SVG</a> für das Erzeugen von SVG-Dateien
+<li><a href="${scpan}Storable">Storable</a> für das Caching
+<li><a href="${scpan}String::Approx">String::Approx</a> für approximatives Suchen von Straßennamen (anstelle von <a href="ftp://ftp.cs.arizona.edu/agrep/">agrep</a>)
+<li><a href="${scpan}XML::LibXML">XML::LibXML</a> (und libxml2) zum Parsen und Erzeugen von XML
+EOF
     if ($can_palmdoc) {
 	print <<EOF;
 <li><a href="${scpan}Palm::PalmDoc">Palm::PalmDoc</a> für den PalmDoc-Export
 EOF
     }
     print <<EOF;
-<li><a href="${scpan}GD">GD</a> für das Erzeugen der GIF/PNG/JPEG-Grafik
-<li><a href="${scpan}PDF::Create">PDF::Create</a> für das Erzeugen der PDF-Grafik
-<li><a href="${scpan}SVG">SVG</a> für das Erzeugen von SVG-Dateien
-<li><a href="${scpan}Storable">Storable</a>
-<li><a href="${scpan}String::Approx">String::Approx</a> für approximatives Suchen von Straßennamen (anstelle von <a href="ftp://ftp.cs.arizona.edu/agrep/">agrep</a>)
+<li>u.v.a.
 </ul>
 EOF
     if ($can_mapserver) {
