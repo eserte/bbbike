@@ -1830,7 +1830,7 @@ userdel	q4; 13540,15928 13751,16009 14014,16106 14067,16127 14371,16252
 EOF
      },
      { from  => 1114468319, # 2005-04-26 00:31
-       until => 1136069999, # 2005-12-31 23:59
+       until => 1133477023, # früher zu Ende. 1136069999, # 2005-12-31 23:59
        text  => 'Vulkanstr. in Richtung Herzbergstr. Baustelle, Einbahnstraße in Richtung Landsberger Allee (bis Ende 2005)',
        type  => 'handicap',
        data  => <<EOF,

@@ -94,6 +94,7 @@ Amerika-Haus	SW 5436,11107
 Ludwig-Erhard-Haus	F:SW 5271,11195 5263,11092 5322,11093 5324,11131 5301,11194
 Kaiser-Wilhelm-Gedächtniskirche	IMG:sehenswuerdigkeit_img/gedaechtniskirche.gif|ANCHOR:s 5754,10934
 #: note: Reihenfolge Europa-Center -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
+#: alias: i-Punkt
 Europa-Center	F:SW 5882,10925 5868,10875 5992,10809 6020,10864 6021,10930 5984,10937 5941,10921
 Touristeninformation Berlin im Europa-Center	SW|IMG:touristinfo.gif 6137,10595
 Aquarium	F:SW 6177,11089 6187,11062 6105,11026 6085,11053 6148,11074
@@ -304,6 +305,15 @@ Kirche am Südstern	SW|IMG:church.gif 10635,9276
 Checkpoint Charlie	SW 9473,11316
 #: alias: Mauermuseum
 Museum Haus am Checkpoint Charlie	SW 9492,11287
+Estrel	F:SW 14183,7528 14203,7704 14287,7696 14284,7640
+#: XXX Lichthöfe fehlen:
+Rathaus Wilmersdorf	F:SW 4235,9099 4255,9198 4243,9226 4285,9243 4284,9249 4303,9258 4312,9250 4323,9241 4338,9232 4334,9216 4323,9217 4316,9175 4313,9130 4313,9092
+#: XXX Lichthöfe fehlen:
+#: oldname: Reichs-Getreidestelle
+Verwaltungsgebäude	F:SW 4336,9089 4425,9088 4428,9171 4393,9211 4397,9216 4387,9230 4368,9223 4349,9223 4341,9207 4349,9206 4338,9170
+#: oldname: Nordstern-Versicherungsbank
+Senatsverwaltung für Stadtentwicklung	F:SW 4402,9242 4411,9231 4430,9253 4438,9285 4437,9311 4430,9329 4417,9321 4423,9301 4424,9280 4414,9255
+Hotel Adlon	F:SW 8793,12249 8799,12215 8780,12206 8775,12222 8746,12216 8749,12205 8762,12207 8778,12119 8737,12107 8734,12118 8747,12122 8737,12186 8727,12186 8721,12236
 # Potsdam ##################################################
 Schloß Babelsberg	F:SW -10482,-195 -10488,-242 -10515,-242 -10511,-193
 Neues Palais	SW -15737,-1011
@@ -488,3 +498,5 @@ Paulinen Krankenhaus	SW|IMG:hospital.gif -1240,11165
 U-Bahn-Museum	SW 85,12232
 Stalin-Villa (Babelsberg)	SW -9392,-611
 Churchill-Villa (Babelsberg)	SW -8947,-882
+#: XXX: Lichthöfe fehlen
+Alte Pianofabrik (Hamburg)	F:SW -225919,124330 -225906,124303 -225895,124309 -225874,124276 -225822,124309 -225861,124367

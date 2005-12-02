@@ -113,14 +113,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1133391600,
-         'text' => 'B 2; (Leipziger Str.); OD Treuenbrietzen, zw. Krz.Leipz.-/Belziger Str. u. Hinter d.Mauer Straßenbau, KVK Vollsperrung 29.03.2005-30.11.2005 ',
-         'from' => 1111960800,
-         'data' => 'userdel	q4 -25472,-35585 -24967,-35112
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => undef,
@@ -150,14 +143,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1136069999,
-         'text' => 'Vulkanstr. in Richtung Herzbergstr. Baustelle, Einbahnstraße in Richtung Landsberger Allee (bis Ende 2005)',
-         'from' => 1114468319,
-         'data' => 'userdel	q4; 15838,14319 15873,14046 15880,13535
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1136070000,
          'text' => 'B 1; (Potsdamer Str.); OD Groß Kreutz Kanal- und Straßenbau Vollsperrung 27.04.2005-31.12.2005 ',
@@ -170,15 +156,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1133391600,
-         'text' => 'L 76; (Mahlower Str.); OL Teltow, zw. Ruhlsdorfer u. A.-Saefkow-Str. Kanal- und Straßenbau Vollsperrung 02.05.2005-30.11.2005 ',
-         'from' => 1114898400,
-         'data' => 'userdel	q4 1453,-746 1550,-761 1709,-953
-userdel	q4 1916,-1090 1709,-953
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -191,14 +169,7 @@ userdel	q4 1916,-1090 1709,-953
        },
        undef,
        undef,
-       {
-         'until' => 1133391600,
-         'text' => 'L 86; (Lehniner Str.); OD Damsdorf Kanal- und Straßenbau Vollsperrung 30.05.2005-30.11.2005 ',
-         'from' => 1117317600,
-         'data' => 'userdel	q4 -32682,-7140 -32645,-6220
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -280,14 +251,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
        undef,
        undef,
        undef,
-       {
-         'until' => 1133391600,
-         'text' => 'K 7207; (KG südl. Rinow-Weißen); Brücke bei Rinow Brückenbauarbeiten Vollsperrung 20.07.2005-30.11.2005 ',
-         'from' => 1121724000,
-         'data' => 'userdel	2 2362,-64075 3737,-64262
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -408,14 +372,7 @@ userdel	q4 -7873,66589 -7851,66418
        undef,
        undef,
        undef,
-       {
-         'until' => 1133391600,
-         'text' => 'L 75; (Karl-Marx-Str.); OD Großziethen Straßenbauarbeiten Vollsperrung 06.09.2005-30.11.2005 ',
-         'from' => 1125871200,
-         'data' => 'userdel	2 13225,-681 12968,1006
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1151704800,
@@ -460,14 +417,7 @@ userdel	q4 -7873,66589 -7851,66418
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1133391600,
-         'text' => 'L 401; (Lindenallee); OD Zeuthen, zw. OE und An der Eisenbahn grundhafter Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
-         'from' => 1119996000,
-         'data' => 'userdel	q4 26790,-7918 26700,-7334 26581,-7087
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1293836399,
          'text' => 'Universitätsstr., Richtung Dorotheenstr. gesperrt (bis 2010) ',

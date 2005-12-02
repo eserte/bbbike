@@ -11358,7 +11358,7 @@ sub show_info {
 	$is_p = ($base_tag =~ /-(?:[fb]g|img)$/);
 	$base_tag =~ s/-(?:[fb]g|img)$//;
 	last unless !exists $p_file{$base_tag} and !$str_file{$base_tag};
-	my($below_item, @below_tags) = find_below($c, qw/s l u b r f w o/);
+	my($below_item, @below_tags) = find_below($c, qw/s l u b r f w o v/);
 	if (!defined $below_item) {
 	    main::status_message("Es wurde kein Kartenelement an dieser Position gefunden.", "err");
 	    return;
