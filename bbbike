@@ -6076,10 +6076,16 @@ sub set_bindings {
 			   # XXX not Tk::Babybike!
 			   Tk::Babybike::handle_button1_scribble($c,$c->XEvent);
 		       } elsif ($map_mode eq MM_URL_SELECT) {
-			   my($url) = grep { $_ } map { m{(http://\S+)}; $1 } $c->gettags("current");
+			   my($url) = grep { $_ } map {
+			       my($url) = $_ =~ m{(http://\S+)};
+			       defined $url ? $url : undef;
+			   } $c->gettags("current");
 			   if ($url) {
 			       require WWWBrowser;
+			       main::status_message("URL: $url", "info");
 			       WWWBrowser::start_browser($url);
+			   } else {
+			       warn "Cannot get URL from " . join(", ", $c->gettags("current"));
 			   }
 		       }
 		       return unless $map_mode eq MM_DRAG;
