@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.24 2005/08/27 00:33:25 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.25 2005/12/02 23:08:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -237,14 +237,17 @@ sub get_street_details2 {
 	warn "Get URL $url...\n" if !$quiet;
 	my $resp = $ua->get($url);
 	if (!$resp->is_success) {
-	    warn "Can't fetch $url: " . $resp->content;
-	    next;
+	    die "Can't fetch $url: " . $resp->content;
+	}
+	if ($resp->content =~ /The requested application has timed out/i) {
+	    die $resp->content;
 	}
 	push @details, parse_details_content($resp->content);
     }
     @details;
 }
 
+# not used anymore...
 sub get_street_names {
     my @street_names;
     for my $ch ('L', 'B', 'K') {
@@ -277,8 +280,10 @@ sub get_street_details {
     warn "Get URL $url...\n" if !$quiet;
     my $resp = $ua->get($url);
     if (!$resp->is_success) {
-	warn "Can't fetch $url: " . $resp->content;
-	return;
+	die "Can't fetch $url: " . $resp->content;
+    }
+    if ($resp->content =~ /The following error has occurred/i) {
+	die $resp->content;
     }
     parse_details_content($resp->content);
 }

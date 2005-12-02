@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.38 2005/12/01 00:39:05 eserte Exp eserte $
+# $Id: bbbike.cgi,v 7.39 2005/12/02 22:49:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -684,7 +684,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.38 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.39 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -886,8 +886,8 @@ if (defined $q->param('detailmapx') and
 }
 
 # Ziel für stadtplandienst-kompatible Koordinaten setzen
-my $set_zielc = sub {
-    my $ll = shift;
+my $set_anyc = sub {
+    my($ll, $what) = @_;
     require Karte;
     Karte::preload("Standard", "Polar");
     # Ob die alte ...x...-Syntax noch unterstützt wird, ist fraglich...
@@ -897,9 +897,9 @@ my $set_zielc = sub {
 		     );
     if (defined $long && defined $lat) {
 	local $^W;
-	my($x, $y) = $Karte::Polar::obj->map2standard($lat, $long);
+	my($x, $y) = $Karte::Polar::obj->map2standard($long, $lat);
 	new_kreuzungen(); # XXX needed in munich, here too?
-	$q->param("zielc", get_nearest_crossing_coords($x,$y));
+	$q->param($what . "c", get_nearest_crossing_coords($x,$y));
     }
 };
 
@@ -912,7 +912,13 @@ if (defined $q->param('PLZ')) {
     $q->param('zielplz', $q->param('PLZ'));
 }
 if (defined $q->param('LL')) {
-    $set_zielc->($q->param('LL'));
+    $set_anyc->($q->param('LL'), "ziel");
+}
+if (defined $q->param('startpolar')) {
+    $set_anyc->($q->param('startpolar'), "start");
+}
+if (defined $q->param('zielpolar')) {
+    $set_anyc->($q->param('zielpolar'), "ziel");
 }
 
 if (defined $q->param('begin')) {
@@ -5832,7 +5838,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/12/01 00:39:05 $';
+    my $cgi_date = '$Date: 2005/12/02 22:49:11 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

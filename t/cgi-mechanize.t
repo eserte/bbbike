@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.26 2005/10/27 01:03:17 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.27 2005/12/02 22:05:06 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -45,7 +45,7 @@ if (!@browsers) {
 }
 @browsers = map { "$_ BBBikeTest/1.0" } @browsers;
 
-my $tests = 77;
+my $tests = 78;
 plan tests => $tests * @browsers;
 
 ######################################################################
@@ -376,7 +376,8 @@ for my $browser (@browsers) {
 	    like($agent->content, qr{\Qhtml/newstreetform.html?\E.*\Qstrname=Kleine%20Parkstr}i, "newstreetform link");
 	}
 	like($agent->content, qr{Lehrter Bahnhof.*?die nächste Kreuzung}is,  "S-Bhf.");
-	like($agent->content, qr{Invalidenstr./Heidestr.}i,  "S-Bhf., next crossing");
+	like($agent->content, qr{Invalidenstr.}i,  "S-Bhf., next crossing (Invalidenstr)");
+	like($agent->content, qr{Lehrter Str.}i,  "S-Bhf., next crossing (Lehrterstr)");
 
     }
 

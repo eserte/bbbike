@@ -226,11 +226,11 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
 userdel	q4; 16032,10842 15751,10582 15629,10481
 EOF
      },
-     { from  => 1070341200, # 2003-12-02 06:00
-       until => 1070924399, # 2003-12-08 23:59
-       file  => 'rixdorfer_weihnachtsmarkt.bbd',
-       text  => 'Rixdorfer Weihnachtsmarkt',
+     { from  => 1133420400, # 2005-12-01 08:00
+       until => 1133737200, # 2005-12-05 00:00
+       text  => 'Richardplatz Alt-Rixdorfer Weihnachtsmarkt, gesperrt. Dauer: 02.12.2005, 08:00 Uhr bis 04.12.2005, 24:00 Uhr. ',
        type  => 'gesperrt',
+       file  => 'rixdorfer_weihnachtsmarkt.bbd',
      },
      { from  => 1102672800, # 2004-12-10 11:00
        until => 1102805999, # 2004-12-11 23:59

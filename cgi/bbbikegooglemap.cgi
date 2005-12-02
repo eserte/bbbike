@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.20 2005/11/23 21:57:28 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.21 2005/12/02 22:48:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -251,6 +251,68 @@ sub get_html {
 	document.upload.zoom.value = map.getZoomLevel();
     }
 
+    function searchRoute(startPoint, goalPoint) {
+	var requestLine =
+	    "http://www.radzeit.de/cgi-bin/bbbike2.cgi?startpolar=" + startPoint.x + "x" + startPoint.y + "&zielpolar=" + goalPoint.x + "x" + goalPoint.y + "&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope=;output_as=xml";
+	var routeRequest = GXmlHttp.create();
+	routeRequest.open("GET", requestLine, true);
+	routeRequest.onreadystatechange = function() {
+	    showRouteResult(routeRequest);
+	};
+	routeRequest.send(null);
+    }
+
+    function showRouteResult(request) {
+	if (request.readyState == 4) {
+	    if (request.status != 200) {
+	        alert("Error calculating route: " + request.statusText);
+	        return;
+	    }
+	    resetRoute();
+	    var xml = request.responseXML;
+	    var line = xml.documentElement.getElementsByTagName("LongLatPath")[0];
+	    var pointElements = line.getElementsByTagName("XY");
+	    var points = new Array();
+	    for (var i = 0; i < pointElements.length; i++) {
+	    	var xy = pointElements[i].textContent.split(",");
+		if (i == 0) setwpt(xy[0],xy[1]);
+	    	var p = new GPoint(xy[0],xy[1]);
+	    	addRoute[addRoute.length] = p;
+            }
+	    //updateRouteDiv();
+	    updateRouteOverlay();
+	}
+    }
+
+    var searchStage = 0;
+    var startOverlay = null;
+    var startPoint = null;
+    var goalOverlay = null;
+    var goalPoint = null;
+
+    function onClick(overlay, point) {
+	if (searchStage == 0) { // set start
+	    if (startOverlay) {
+		map.removeOverlay(startOverlay);
+		startOverlay = null;
+	    }
+	    if (goalOverlay) {
+		map.removeOverlay(goalOverlay);
+		goalOverlay = null;
+	    }
+	    startPoint = point;
+	    startOverlay = new GMarker(startPoint);
+	    map.addOverlay(startOverlay);
+	    searchStage = 1;
+	} else if (searchStage == 1) { // set goal
+	    goalPoint = point;
+	    goalOverlay = new GMarker(goalPoint);
+	    map.addOverlay(goalOverlay);
+	    searchStage = 0;
+	    searchRoute(startPoint, goalPoint);
+	}
+    }
+
     var map = new GMap(document.getElementById("map"), [G_SATELLITE_TYPE]);
     map.addControl(new GLargeMapControl());
     map.addControl(new GMapTypeControl());
@@ -260,7 +322,7 @@ sub get_html {
         var center = map.getCenterLatLng();
 	showCoords(center, 'Center of map: ');
 	showLink(center, 'Link: ');
-	addCoordsToRoute(center);
+	addCoordsToRoute(center,true);
     });
 
 EOF
@@ -293,6 +355,8 @@ EOF
     }
 
     $html .= <<EOF;
+
+    GEvent.addListener(map, "click", onClick);
 
     //]]>
     </script>

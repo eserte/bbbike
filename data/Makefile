@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.73 2005/11/05 23:59:08 eserte Exp eserte $
+# $Id: Makefile,v 2.74 2005/12/02 21:58:23 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -561,7 +561,7 @@ ${PERSISTENTTMPDIR}/plz-b.bbd:	$(HOME)/trash/plz.sql
 	grep -i berlin $> | $(MISCSRCDIR)/parse_mapbender_plz.pl > $@
 
 $(HOME)/trash/plz.sql:	$(HOME)/trash/plz.zip
-	cd `dirname $>` && unzip `basename $>`
+	cd `dirname $>` && unzip -q `basename $>`
 
 ${PERSISTENTTMPDIR}/Berlin.coords.bbd: Berlin.coords.data
 	perl -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Berlin.coords.data > $@
