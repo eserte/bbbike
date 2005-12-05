@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Enscript.pm,v 1.7 2003/10/22 21:33:54 eserte Exp $
+# $Id: Enscript.pm,v 1.8 2005/10/10 20:21:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use vars qw(%media %postscript_to_x11_font
 @ISA = qw(Exporter);
 @EXPORT = qw(enscript);
 
-$VERSION = sprintf "%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/;
+$VERSION = sprintf "%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/;
 
 parse_cfg();
 

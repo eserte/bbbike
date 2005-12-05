@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.39 2005/11/16 01:46:40 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.40 2005/12/03 20:02:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -572,7 +572,7 @@ echoextmodperl:
 # XXX testen, ob man überhaupt einen X-Server hat
 #	alternative: Xnest -ac -geometry 640x400 :121 &
 extmod:
-	Xvfb -ac :121 & \
+	Xvfb -fp /usr/X11R6/lib/X11/fonts/misc -ac :121 & \
 	_XVFB_PID=$$!; \
 	DISPLAY=:121; \
 	for i in $(EXTMODCPAN); do \

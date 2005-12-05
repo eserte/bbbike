@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: FastSplash.pm,v 1.18 2003/11/21 18:30:56 eserte Exp eserte $
+# $Id: FastSplash.pm,v 1.20 2005/08/25 22:14:45 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2003,2005 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +14,7 @@
 
 package Tk::FastSplash;
 #use strict;use vars qw($TK_VERSION $VERSION);
-$VERSION = $VERSION = 0.14;
+$VERSION = $VERSION = "0.15";
 $TK_VERSION = 800 if !defined $TK_VERSION;
 
 sub Show {
@@ -181,12 +181,12 @@ Tk::FastSplash - create a fast starting splash screen
 This module creates a fast loading splash screen for Perl/Tk programs.
 It uses lowlevel Perl/Tk stuff, so upward compatibility is not given
 (the module should work at least for Tk800.015, .022, .024, .025 and
-Tk804.025).
+Tk804.025, but does not work with newer ActivePerl versions).
 
 The splash screen is created with the B<Show> function. Supplied
 arguments are: filename of the displayed image, width and height of
-the image and the string for the title bar. C<$width> and C<$height>
-may be left undefined. If C<$overrideredirect> is set to a true value,
+the image and the string for the title bar. I<$width> and I<$height>
+may be left undefined. If I<$overrideredirect> is set to a true value,
 then the splash screen will come without window manager decoration. If
 something goes wrong, then B<Show> will silently ignore all errors and
 continue without a splash screen. The splash screen can be destroyed
@@ -195,6 +195,12 @@ with the B<Destroy> method, best short before calling B<MainLoop>.
 If you want to run this module on a Tk402.xxx system, then you have to
 set the variable C<$Tk::FastSplash::TK_VERSION> to a value less than
 800.
+
+I<$image> should be one of the core Perl/Tk image types (gif, ppm,
+bmp). For jpegs and pngs, a C<use Tk::JPEG> or C<use Tk::PNG> prior to
+the call of the C<Show> method would be necessary, but calling one of
+these two would slurp the whole Tk module in, making the point of
+B<Fast>Splash useless.
 
 =head1 CAVEAT
 
@@ -210,6 +216,9 @@ L<Tk::Splash> or a vanilla L<Tk::Toplevel> window.
 =head1 BUGS
 
 Probably many.
+
+If used with newer ActivePerl (e.g. build 811), then it is possible
+that the application becomes unusable by using strange characters.
 
 You cannot call C<Tk::FastSplash> twice in one application.
 

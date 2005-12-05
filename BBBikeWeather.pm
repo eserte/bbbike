@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeWeather.pm,v 1.6 2005/11/25 23:47:25 eserte Exp $
+# $Id: BBBikeWeather.pm,v 1.7 2005/12/03 22:36:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeWeather;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -150,6 +150,11 @@ sub BBBikeWeather::update_weather {
 				 $wettermeldung2::FIELD_WIND_AVG],
 		     -station => $act_station);
 
+	if ($bp_obj &&
+	    defined $wetterline[$wettermeldung2::FIELD_TEMP] &&
+	    $wetterline[$wettermeldung2::FIELD_TEMP] !~ /^\s*$/) {
+	    $bp_obj->temperature($wetterline[$wettermeldung2::FIELD_TEMP]);
+	}
 	if ($wetter_route_update) {
 	    redraw_path();
 	    updatekm();

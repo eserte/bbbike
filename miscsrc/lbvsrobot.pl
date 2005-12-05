@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.25 2005/12/02 23:08:30 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.26 2005/12/05 08:30:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -234,7 +234,7 @@ sub get_street_details2 {
 	my $url = get_url('all_listing');
 	$url .= $ch if !$test;
 	sleep $delay if $delay;
-	warn "Get URL $url...\n" if !$quiet;
+	warn "Get $ch listing from URL $url...\n" if !$quiet;
 	my $resp = $ua->get($url);
 	if (!$resp->is_success) {
 	    die "Can't fetch $url: " . $resp->content;
@@ -243,6 +243,9 @@ sub get_street_details2 {
 	    die $resp->content;
 	}
 	push @details, parse_details_content($resp->content);
+    }
+    if (!@details) {
+	die "Could not parse any details, probably error on server";
     }
     @details;
 }
@@ -277,7 +280,7 @@ sub get_street_details {
 #     }
     my $url = get_url("str_listing");
     $url .= $street_name if !$test;
-    warn "Get URL $url...\n" if !$quiet;
+    warn "Get details for $street_name from URL $url...\n" if !$quiet;
     my $resp = $ua->get($url);
     if (!$resp->is_success) {
 	die "Can't fetch $url: " . $resp->content;
@@ -334,8 +337,7 @@ sub parse_details_content {
 	    warn "Get URL $this_map_url...\n" if !$quiet;
 	    my $resp_map = $ua->get($this_map_url);
 	    if (!$resp_map->is_success) {
-		warn "Can't fetch $this_map_url: " . $resp_map->content;
-		return;
+		die "Can't fetch $this_map_url: " . $resp_map->content;
 	    }
 
 	    my $p2 = HTML::TreeBuilder->new;

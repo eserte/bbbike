@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Splash.pm,v 1.11 2003/04/26 08:35:33 eserte Exp eserte $
+# $Id: Splash.pm,v 1.12 2005/08/25 22:15:09 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2003,2005 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ use Tk;
 use strict;
 use vars qw($VERSION @ISA);
 
-$VERSION = 0.06;
+$VERSION = 0.07;
 
 @ISA = qw(Tk::Widget);
 

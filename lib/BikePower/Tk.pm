@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Tk.pm,v 1.9 2004/10/02 08:21:47 eserte Exp $
+# $Id: Tk.pm,v 1.9 2004/10/02 08:21:47 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright: see BikePower.pm
@@ -61,6 +61,7 @@ my $lang_s =
     'Load...' => 'Laden...',
     'Save as default' => 'Als Voreinstellung sichern',
     'Save as...' => 'Sichern als...',
+    'Apply' => 'Anwenden',
     'Warning' => 'Warnung',
     'Overwrite existing file <%s>?' => 'Bereits vorhandene Datei <%s> überschreiben?',
     'No' => 'Nein',
@@ -139,6 +140,8 @@ sub tk_interface {
     my($self, $parent, %args) = @_;
 
     my $lang = $args{'-lang'} || 'en';
+    my $savedefaultshook = $args{'-savedefaultshook'};
+    my $applyhook = $args{'-applyhook'}; # also creates "Apply" menu entry
     my %s;
     tie %s, 'Tie::Lang', $lang_s, $lang;
 
@@ -231,7 +234,12 @@ sub tk_interface {
     $mb_set->command
       (-label => $s{'Save as default'},
        -underline => 5,
-       -command => sub { $self->save_defaults });
+       -command => sub {
+	   $self->save_defaults;
+	   if ($savedefaultshook) {
+	       $savedefaultshook->($self, "savedefaultshook");
+	   }
+       });
     $mb_set->command
       (-label => $s{'Save as...'},
        -underline => 0,
@@ -267,6 +275,13 @@ sub tk_interface {
 	       $self->save_defaults($file);
 	   }
        });
+    if ($applyhook) {
+	$mb_set->separator;
+	$mb_set->command
+	    (-label => $s{'Apply'},
+	     -command => sub { $applyhook->($self, "applyhook") },
+	    );
+    }
 
     my $mb_help = $menuframe->Menubutton(-text => $s{'Help'},
 					 -underline => 0);

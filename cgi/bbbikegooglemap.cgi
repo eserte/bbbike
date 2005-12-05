@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.21 2005/12/02 22:48:43 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.21 2005/12/02 22:48:43 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -253,7 +253,7 @@ sub get_html {
 
     function searchRoute(startPoint, goalPoint) {
 	var requestLine =
-	    "http://www.radzeit.de/cgi-bin/bbbike2.cgi?startpolar=" + startPoint.x + "x" + startPoint.y + "&zielpolar=" + goalPoint.x + "x" + goalPoint.y + "&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope=;output_as=xml";
+	    "http://www.radzeit.de/cgi-bin/bbbike.cgi?startpolar=" + startPoint.x + "x" + startPoint.y + "&zielpolar=" + goalPoint.x + "x" + goalPoint.y + "&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope=;output_as=xml;referer=bbbikegooglemap";
 	var routeRequest = GXmlHttp.create();
 	routeRequest.open("GET", requestLine, true);
 	routeRequest.onreadystatechange = function() {

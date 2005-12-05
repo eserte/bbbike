@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Getopt.pm,v 1.51 2005/06/26 12:07:08 eserte Exp eserte $
+# $Id: Getopt.pm,v 1.52 2005/06/30 00:47:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1997,1998,1999,2000,2003 Slaven Rezic. All rights reserved.

@@ -1141,6 +1141,35 @@ SehenswE<uuml>rdigkeiten: eine neue Kategorie für
 E<quot>flächigeE<quot> Sehenswürdigkeiten (z.B. Holländisches Viertel)
 einführen, um besseres Stacking zu machen (unterhalb von Straßen).
 
+=item * (M4)
+
+comments_kfzverkehr sollte nicht in E<quot>Aktuelle RouteE<quot> (und
+wahrscheinlich nicht in show_info) vorkommen, da viele Einträge ohne
+vernünftigen Namen existieren. Mögliches Problem:
+$comments_net/_get_comments_obj braucht vielleicht an einigen Stellen
+comments_kfzverkehr, an anderen nicht.
+
+=item * (M2)
+
+power and speed settings: allow to E<quot>chainE<quot> power settings
+to speed settings; or let the user set the power settings
+(distinguishing both needs option support). In the first case, if
+changing parameters in the BikePower interface and clicking
+E<quot>ApplyE<quot>, then the power should be recalculated in the
+applyhook.
+
+=item * (M2)
+
+BikePower: if some variable bikepower settings like steigung or
+gegenwind are set, then these are used in the initial calculation of
+the chained power values, which seems wrong.
+
+=item * (H1)
+
+Umluts get lost in fvwm2 titlebars (Debian, fvwm2.4.x and fvwm2.5.x,
+Tk800.024). No problem on FreeBSD with fvwm2.4.15. On Mac and
+Tk804.027, umlauts are shown as unicode escape sequences \x{....}
+
 =back
 
 =head2 Windows specific

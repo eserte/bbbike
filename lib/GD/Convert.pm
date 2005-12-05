@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Convert.pm,v 2.11 2004/04/15 23:25:16 eserte Exp $
+# $Id: Convert.pm,v 2.13 2005/10/10 20:14:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GD::Convert;
 
 use strict;
 use vars qw($VERSION $DEBUG %installed);
-$VERSION = sprintf("%d.%02d", q$Revision: 2.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.13 $ =~ /(\d+)\.(\d+)/);
 
 $DEBUG = 0 if !defined $DEBUG;
 
@@ -50,7 +50,7 @@ sub import {
 			# convert is a special command on MSWin32
 			$as = $f . "_imagemagick";
 		    } else {
-			die "Can't find any converter for $f in $ENV{PATH}";
+			die "Can't find any converter for $f (tried ppmtogif/giftopnm and convert from ImageMagick) in $ENV{PATH}";
 		    }
 		}
 	    }

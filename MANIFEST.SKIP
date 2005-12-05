@@ -51,7 +51,7 @@ patch\.gz$
 ^ext/VirtArray/VirtArray.(bs|c|o)$
 ^ext/VectorUtil-Inline/Inline.(bs|c|o)$
 ^BBBike-\d\.\d+/
-^Bundle/BBBike.pm.tmpl$
+^Bundle/BBBike.tpl.pm$
 ^Bundle/BBBike_radzeit.pm$
 ^Bundle/make_radzeit_bundle$
 ^Bundle/make_bundle$
@@ -85,10 +85,12 @@ cgi/bbbike-netbeat.cgi.config
 cgi/bbbike-sourceforge.cgi.config
 cgi/bbbike-ipaq.cgi.config$
 cgi/bbbike-radzeit.cgi.config$
+cgi/bbbike2-radzeit.cgi.config$
 cgi/bbbike-cs.cgi.config$
 cgi/bbbikesoapserver.cgi$
 cgi/global.asa$
 cgi/test.cgi$
+cgi/Makefile.local.inc$
 data/\.check_
 data/\.create_fragezeichen$
 data/\.fragezeichen_
@@ -119,6 +121,9 @@ data/qualitaet_s-info
 data/sbahn-info
 # for now
 data/relation_gps
+data/check_nearest_ignore$
+data/GNUmakefile$
+data/wasserstrassen-lowres$
 ext/.*/blib/
 ext/.*/pm_to_blib$
 ext/.*/.*\.inl$
@@ -241,3 +246,4 @@ BBBikeMapEditorPlugin.pm
 ^HOWTO_edit_bbbike_data\.
 ^docbook.css$
 ^bbbike-stick.bat$
+^BBBikeRouting/Boat.pm$

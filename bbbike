@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.210 2005/12/02 22:56:47 eserte Exp $
+# $Id: bbbike,v 3.210 2005/12/02 22:56:47 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ package main;
 ## This is list is not maintained anymore:
 #perl2exe_include Tk/Checkbutton.pm
 
-BEGIN { $Devel::Trace::TRACE = 0 }
+#BEGIN { $Devel::Trace::TRACE = 0 }
 
 use FindBin;
 use lib ("$FindBin::RealBin",
@@ -618,14 +618,7 @@ if ($bikepwr) {
 	$bp_obj->given('P');
 	$bp_obj->temperature($temperature);
 
-	@power = ();
-	for(my $i = 0; $i<=$#speed; $i++) {
-	    my $bp_speed = new BikePower;
-	    $bp_speed->given('v');
-	    $bp_speed->velocity($speed[$i]/3.6);
-	    $bp_speed->calc;
-	    push @power, int($bp_speed->power);
-	}
+	set_corresponding_power();
     }
 }
 if (!@power) {
@@ -633,7 +626,7 @@ if (!@power) {
 }
 
 TRY_SPEED_POWER_REFERENCE_STRING: {
-    $active_speed_power{Type} = 'power';
+    $active_speed_power{Type} = 'speed';
     $active_speed_power{Index} = 0;
     if (defined $speed_power_reference_string) {
 	my($type, $val) = split /:/, $speed_power_reference_string;
@@ -3243,6 +3236,9 @@ sub do_iconframe {
 			 unless (defined $ENV{LANG} && $ENV{LANG} !~ /^de/) {
 			     $args{-lang} = 'de';
 			 }
+			 $args{-applyhook} = $args{-savedefaultshook} = sub {
+			     # XXX
+			 };
 			 eval {
 			     my $bp = $bp_obj->tk_interface($top, %args);
 			     set_as_toolwindow($bp);
@@ -6901,11 +6897,7 @@ sub enter_power {
     my $apply_window = sub { IncBusy($t);
 			     eval {
 				 $power[$i] = $var;
-				 mk_power_txt($i);
-				 calc_ampel_optimierung()
-				     if $ampel_optimierung && $is_reference;
-				 recalc_bikepwr();
-				 updatekm();
+				 after_changed_power($i);
 			     };
 			     DecBusy($t);
 			 };
@@ -6929,6 +6921,17 @@ sub enter_power {
     $t->bind('<<CloseWin>>' => sub { $cb->invoke });
 
     my_popup($t);
+}
+
+sub after_changed_power {
+    my($i) = @_; # index
+    my $is_reference = ($active_speed_power{Type} eq 'power' &&
+			$active_speed_power{Index} eq $i);
+    mk_power_txt($i);
+    calc_ampel_optimierung()
+	if $ampel_optimierung && $is_reference;
+    recalc_bikepwr();
+    updatekm();
 }
 
 # Erzeugt den String für den Label der Geschwindigkeit
@@ -12416,6 +12419,21 @@ sub recalc_bikepwr {
 	}
     }
     undef $power_cache;
+}
+
+### AutoLoad Sub
+sub set_corresponding_power {
+    @power = ();
+    for(my $i = 0; $i<=$#speed; $i++) {
+	my $bp_speed = new BikePower;
+	$bp_speed->given('v');
+	$bp_speed->velocity($speed[$i]/3.6);
+	$bp_speed->calc;
+	push @power, int($bp_speed->power);
+    }
+    if (!@power) {
+	@power = (50, 100);
+    }
 }
 
 ### AutoLoad Sub
