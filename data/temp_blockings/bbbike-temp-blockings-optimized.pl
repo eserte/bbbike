@@ -115,14 +115,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'L 711; (Krausnick-AS Stakow); zw. Krausnick u. Bahnhof Brand Einschränkung Tragfähigkeit Vollsperrung, Dauer unbekannt ',
-         'from' => undef,
-         'data' => 'userdel	2 35178,-41015 37450,-41050 37950,-41275 38512,-41000 40398,-40989
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -333,7 +326,14 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
        },
        undef,
        undef,
-       undef,
+       {
+         'until' => 1135292400,
+         'text' => 'B 166 Zichow-Gramzow OD Gramzow Kanal- und Straßenbau Vollsperrung 26.11.2005-22.12.2005 ',
+         'from' => 1132873200,
+         'data' => 'userdel	q4 50109,89725 49930,89857
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        {
@@ -497,6 +497,181 @@ userdel	q4; 5652,11004 5716,10978 5831,10978
          'text' => 'Pistoriusstr. (Pankow) Richtung Weißensee, zwischen Hamburger Platz und Roelckestr. Baustelle, Fahrtrichtung gesperrt (bis 03/2006)',
          'from' => 1132606608,
          'data' => 'userdel	1 12708,16699 12874,16631 13131,16525
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'until' => 1134601200,
+         'text' => 'B 2 (Angermünde-OU Pinnow) OD Dobberzin grundh. Straßenbau Vollsperrung 02.11.2005-14.12.2005 ',
+         'from' => 1130799600,
+         'data' => 'userdel	q4 52316,69186 52711,69501
+userdel	q4 52316,69186 50891,68557
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1136847600,
+         'text' => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 07.01.2006-09.01.2006 ',
+         'from' => 1136502000,
+         'data' => 'userdel	2 16336,-29511 16379,-29446
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1134428400,
+         'text' => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 10.12.2005-12.12.2005 ',
+         'from' => 1134082800,
+         'data' => 'userdel	2 16336,-29511 16379,-29446
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1137020400,
+         'text' => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 11.01.2006-11.01.2006 ',
+         'from' => 1136847600,
+         'data' => 'userdel	2 16336,-29511 16379,-29446
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1135292400,
+         'text' => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 21.12.2005-22.12.2005 ',
+         'from' => 1135033200,
+         'data' => 'userdel	2 16336,-29511 16379,-29446
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1136070000,
+         'text' => 'B 167 (Herzberg-Neuruppin) OL Alt Ruppin, Rhinbrücke Brückenneubau Vollsperrung 02.03.2004-31.12.2005 ',
+         'from' => 1078095600,
+         'data' => 'userdel	2 -28866,59954 -28692,59635 -28477,59467
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1149026400,
+         'text' => 'B 169 OU Senftenberg Bau Ortsumfahrung Vollsperrung 06.11.2003-30.05.2006 ',
+         'from' => 1067986800,
+         'data' => 'userdel	q4 54357,-96691 54884,-96292
+userdel	q4 55158,-95910 54884,-96292
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1135983600,
+         'text' => 'B 198 Greiffenberger Str. OD Kerkow grundhafter Straßenbau Vollsperrung * 17.10.2005-30.12.2005 ',
+         'from' => 1129413600,
+         'data' => 'userdel	q4 48929,70947 49007,71214
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1135378800,
+         'text' => 'K 6419 zw. Rehfelde, R.-Luxemburg-Str. u. OE Strausberg Straßen-,Geh- u. Radwegbau Vollsperrung 26.09.2005-23.12.2005 ',
+         'from' => 1127599200,
+         'data' => 'userdel	2 42578,15750 42300,15756
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1135378800,
+         'text' => 'K 6753 von OL Braunsdorf bis OL Markgrafpieske grundhafter Ausbau Vollsp. 10.11.2005-23.12.2005 ',
+         'from' => 1131490800,
+         'data' => 'userdel	2 47692,-6364 47806,-6168
+userdel	2 47692,-6364 47514,-6402
+userdel	2 48136,-5051 48131,-4175
+userdel	2 48136,-5051 47885,-5561
+userdel	2 47885,-5561 47908,-5802
+userdel	2 47514,-6402 47354,-6584
+userdel	2 47806,-6168 47908,-5802
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1136070000,
+         'text' => 'K 6950 (Gohlitzstr.) OL Lehnin, zw. Belziger Str. u. Lindenstr. Straßenbau Vollsperrung 11.10.2005-31.12.2005 ',
+         'from' => 1128895200,
+         'data' => 'userdel	q4 -34655,-11263 -34337,-11047
+userdel	q4 -34232,-10832 -34337,-11047
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1135378800,
+         'text' => 'K 7220 Luckenwalde-Liebätz zw. Ruhlsdorf und Liebätz Straßen- und Radwegbau Vollsperrung 14.11.2005-23.12.2005 ',
+         'from' => 1131836400,
+         'data' => 'userdel	2 -4686,-30955 -4311,-30322
+userdel	2 -3607,-29164 -3733,-29501
+userdel	2 -4031,-30164 -3733,-29501
+userdel	2 -4031,-30164 -4311,-30322
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1135292400,
+         'text' => 'L 15 Fürstenberg-Menz OD Fürstenberg, Rheinsberger Str. grundhafter Straßenbau Vollsperrung; Umleitung 30.11.2005-22.12.2005 ',
+         'from' => 1133218800,
+         'data' => 'userdel	q4 -8787,85721 -8886,85737
+userdel	q4 -8886,85737 -9850,84800
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1133996400,
+         'text' => 'L 16 Bahnübergang bei Siedlung Schönwalde Gleisbauarbeiten Vollsperrung 05.12.2005-07.12.2005 ',
+         'from' => 1133650800,
+         'data' => 'userdel	2 -10559,23255 -10737,23418
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1134342000,
+         'text' => 'L 16 Bahnübergang bei Siedlung Schönwalde Gleisbauarbeiten Vollsperrung 10.12.2005-11.12.2005 ',
+         'from' => 1134082800,
+         'data' => 'userdel	2 -10559,23255 -10737,23418
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1134687600,
+         'text' => 'L 23 Töpferstr. OD Joachimsthal, Kno. Angermünder Str. Ausbau Kreisverkehrsplatz Vollsperrung 01.11.2005-15.12.2005 ',
+         'from' => 1130713200,
+         'data' => 'userdel	q4 33099,63917 33254,63446
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1134082800,
+         'text' => 'L 74 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung; Umleitung 07.12.2005-08.12.2005 ',
+         'from' => 1133823600,
+         'data' => 'userdel	2 15682,-26971 15229,-27157
+userdel	2 15682,-26971 15960,-26906
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1134601200,
+         'text' => 'L 201 Nauener Chaussee Bahnübegang bei Falkensee Gleisbauarbeiten Vollsperrung 11.12.2005-14.12.2005 ',
+         'from' => 1134169200,
+         'data' => 'userdel	2 -13941,20658 -13887,20543 -13743,20218
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1134255600,
+         'text' => 'L 201 Nauener Chaussee Bahnübergang bei Falkensee Gleisbauarbeiten Vollsperrung 09.12.2005-10.12.2005 ',
+         'from' => 1133996400,
+         'data' => 'userdel	2 -13941,20658 -13887,20543 -13743,20218
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1152568800,
+         'text' => 'L 202 Wustermark-Brieselang Brücke über Havelkanal bei Zeestow Brückenneubau Vollsperrung; Umleitung 07.11.2005-10.07.2006 ',
+         'from' => 1131231600,
+         'data' => 'userdel	2 -19904,17964 -18793,18169
 ',
          'type' => 'gesperrt'
        }
