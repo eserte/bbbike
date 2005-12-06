@@ -108,8 +108,8 @@ SV **x, **y;
     while(*p != ',' && *p != 0) p++;
     if (*p == 0) {
       warn("%s is expected to be of the format x,y\n", s);
-      *x = 0;
-      *y = 0;
+      *x = newSVsv(&PL_sv_undef);
+      *y = newSVsv(&PL_sv_undef);
       return;
     }
 	

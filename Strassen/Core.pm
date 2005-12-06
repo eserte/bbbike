@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.62 2005/10/24 21:18:57 eserte Exp $
+# $Id: Core.pm,v 1.62 2005/10/24 21:18:57 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -834,7 +834,7 @@ sub to_koord_slow {
 	} elsif (/(-?\d+(?:\.\d*)?),(-?\d+(?:\.\d*)?)$/) { # float numbers
 	    CORE::push(@res, [$1, $2]);
 	} else {
-	    warn "Unrecognized reference: $_";
+	    warn "Unrecognized reference in <@$resref>: <$_>";
 	    return [];
 	}
     }

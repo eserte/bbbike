@@ -178,9 +178,19 @@ sub get_html {
 	return s;
     }
 
+    function getCurrentMode() {
+	if (document.forms["addroute"].elements["addroute"].checked) {
+	    return "addroute";
+	} else {
+	    return "search";
+	}
+    }
+
     function addCoordsToRoute(point) {
-	if (!document.forms["addroute"].elements["addroute"].checked)
+	var currentMode = getCurrentMode();
+	if (currentMode != "addroute") {
 	    return;
+	}
 	if (addRoute.length > 0) {
 	    var lastPoint = addRoute[addRoute.length-1];
 	    if (lastPoint.x == point.x && lastPoint.y == point.y)
@@ -291,6 +301,10 @@ sub get_html {
     var goalPoint = null;
 
     function onClick(overlay, point) {
+	var currentMode = getCurrentMode();
+	if (currentMode != "search") {
+	    return;
+	}
 	if (searchStage == 0) { // set start
 	    if (startOverlay) {
 		map.removeOverlay(startOverlay);

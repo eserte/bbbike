@@ -500,8 +500,6 @@ Maienwerderweg: teils Waldweg (OK), teils mäßiger Asphalt	Q1 2239,18225 1549,177
 Sembritzkistr.: mäßiges Kopfsteinpflaster	Q2 6872,4940 6945,5060 7186,5453 7203,5488 7252,5583 7230,5696
 #: by: Benjamin Hersch:
 Sembritzkistr.: Asphalt	Q0 6860,4799 6872,4940
-#: unverified_by ADFC-Karte:
-(Am Bahndamm): mäßig geeignet	Q2 8173,3299 8103,3354 7784,4221 7757,4294
 Clauertstr.: Kopfsteinpflaster	Q2 -1088,2134 -755,1964 -613,1949
 Hanstedter Weg: Kopfsteinpflaster	Q2 6751,4985 6882,5027 6945,5060
 Alboinstr.: Kopfsteinpflaster (auf Fahrbahn)	Q2 8176,6065 8181,6341 8196,6775 8204,6958
@@ -652,8 +650,6 @@ Dieffenbachstr.: Kopfsteinpflaster	Q2 11083,9753 11148,9730
 Am Volkspark: mäßiges Kopfsteinpflaster mit großen Ritzen	Q2 5745,8194 5669,8207
 Am Volkspark: Parkweg	Q1 5745,8194 5934,8220
 Dircksenstr.: Kopfsteinpflaster	Q2 11283,12278 11209,12430 11156,12581 11057,12715
-#: unverified_by ADFC-Karte
-(Spreeuferweg): mäßig geeignet	Q2 4543,12516 4501,12544 4331,12538
 Ruhwaldweg: Kopfsteinpflaster	Q2 801,13323 830,13353
 Bahnhofvorplatz S-Bhf. Priesterweg: Kopfsteinpflaster	Q2 7217,6065 7251,6071
 Hegemeisterweg: Kopfsteinpflaster	Q2 17217,8377 17520,8219
@@ -880,8 +876,8 @@ Freiligrathstr.: Kopfsteinpflaster	Q2 10903,9475 10705,9555
 Südstern: gutes Kopfsteinpflaster	Q1 10747,9326 10629,9360
 Südstern: Kopfsteinpflaster	Q2 10629,9360 10567,9379
 Samariterstr.: Kopfsteinpflaster	Q2 14488,12189 14538,12371 14570,12478 14595,12557 14632,12681 14661,12798
-#: add_fragezeichen: Stimmt das?
-Fanningerstr.: Kopfsteinpflaster	Q2 16261,12224 16445,12193 16782,12154 16983,12124 17139,12100
+#: XXX: laut Juliane (no email), mein Eintrag war "Kopfsteinpflaster" mit einem Fragezeichen
+Fanningerstr.: Asphalt	Q0 16261,12224 16445,12193 16782,12154 16983,12124 17139,12100
 #: add_fragezeichen: mäßiges oder schlechtes Kopfsteinpflaster?
 Marienhöher Weg: Kopfsteinpflaster	Q2 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250
 Maulbronner Ufer: Parkweg	Q1 7161,4091 6904,4162
@@ -1274,7 +1270,10 @@ Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 #: by: ^^^
 #: by: kalkreuth
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
+#: by: Paul (no email):
+Eulerstr.: Asphalt	Q0 9268,16228 9494,16455
 #: by: anonymous vvv
+Zachertstr.: Beton	Q0 17070,11375 17153,11342 17242,11304 17588,11234 17725,11228 17888,11229
 Belziger Ring: Asphalt	Q0 22215,17784 22059,17842 21931,17818 21882,17748 21968,17714 21995,17754 22148,17687
 Blesener Zeile: Asphalt	Q0 3241,20613 3426,20642 3475,20656
 Moorweg: Asphalt	Q0 3190,22049 3114,22010 2903,21918 2652,21511 2429,21415
@@ -2550,7 +2549,7 @@ Reiherbeize: Kopfsteinpflaster	Q2 593,4262 460,4479
 Im Fischtal: gutes Kopfsteinpflaster	Q1 744,4567 666,4339 593,4262 510,4202 354,4152
 #: by: ^^^
 #: by: Nicole Steireif:
-Archenholdstr.: schlechtes Kopfsteinpflaster	Q3 16892,10731 16964,10902 17275,11626
+Archenholdstr.: schlechtes Kopfsteinpflaster	Q3 16892,10731 16964,10902 17153,11342 17275,11626
 #: by: Martin Peter:
 Kissinger Platz: Beton	Q0 3110,8052 2999,8060
 #: by: von Marene Effenberger vvv
@@ -2841,7 +2840,7 @@ Eschachstr.: Verbundsteinpflaster	Q1 2404,20469 2435,20370 2463,20295
 (Eschachstr./Gorkistr. - Leuenberger Zeile): Verbundsteinpflaster	Q1 2463,20295 2716,19776
 Im Erpelgrund: Verbundsteinpflaster	Q1 -1581,22233 -1485,22260 -1288,22210 -918,22105 -827,22039 -583,21960 -385,21921
 Im Erpelgrund: Verbundsteinpflaster	Q1 -354,21997 -540,22053 -735,22103 -918,22105
-(Weg am Nordgraben): mäßiger fester Sandweg	Q2 3569,20583 3475,20656 3327,20758 3062,20898 2580,20805
+(Weg am Nordgraben): mäßiger fester Sandweg	Q2 3569,20583 3475,20656 3327,20758 3062,20898 2916,20870 2580,20805
 #: by: ^^^
 #: by: Peter Störzel: vvv
 Goldregenstr.: asphaltiert	Q0 24448,10098 24340,10138 24154,10188 23726,10308
@@ -2900,8 +2899,12 @@ Steinhellenweg: Beton	Q0 9992,4595 9998,4837 9998,4876
 Steinhellenweg: Kolonieweg/Rasengittersteine	Q2 9998,4876 9998,5210 9997,5229
 #: by: Carsten Steglich:
 Bruno-Wille-Str.: Kopfsteinpflaster	Q2 26086,4861 26069,5280 26019,5851
-#: by: Jürgen Müller:
-Sondershauser Str.: Asphalt	Q0 6403,569 6358,795 6377,1041 6441,1444 6491,1658
+#: by: Jürgen Müller: vvv
+Sondershauser Str.: Asphalt	Q0 6403,569 6358,795 6377,1041 6441,1444
+Sondershauser Str.: teilweise Asphalt	Q0 6441,1444 6491,1658
+#: note: ADFC-Karte meint auch "mäßig geeignet":
+(Am Bahndamm): Feldweg	Q2 8173,3299 8103,3354 7784,4221 7757,4294 7662,4529
+#: by: ^^^
 #: by: Petra Hennecke: vvv
 Ahrenshooper Str.: Beton	Q0 16764,18529 17184,17964
 Ahrenshooper Str.: Beton	Q0 17003,17830 17184,17964 17324,18053
@@ -2912,6 +2915,20 @@ Wollankstr.: Kopfsteinpflaster	Q2 9624,17693 9727,17804 9832,17925 9870,17971 10
 Havelstr.: Asphalt	Q0 -3151,14577 -3037,14509
 #: by: Karl Schlicke:
 Klärwerkstr.: Asphalt	Q0 -1255,13304 -1243,13522
+#: by: Günter Lewanzik:
+Ringstr.: Kopfsteinpflaster	Q2 2701,3064 3050,3316 3184,3413 3375,3544 3507,3635
+#: by: Steffi Liebig:
+Herwarthstr.: Asphalt	Q0 4722,2771 4622,2787 4440,2752 4382,2658 4383,2613
+#: by: Patryk (bigoudi): vvv
+Fritzi-Massary-Str.: Asphalt	Q0 15131,6295 15147,6311 15386,6310 15428,6355 15426,6398
+#: by: ^^^
+#: by: Kai (1on1me):
+Erholungsweg: Asphalt	Q0 2763,21000 2861,21089 2961,21119 3042,21141 3117,21154 3206,21179 3304,21205 3450,21244
+#: by: Hartmut (eastgate):
+Buriger Weg: Beton	Q1 30088,4292 30216,4724
+#: by: Peter Held:
+#: note: ADFC-Karte meint "mäßig geeignet"
+(Spreeuferweg): Parkweg	Q2 4543,12516 4501,12544 4331,12538
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
