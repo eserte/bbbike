@@ -593,44 +593,14 @@ Schaltet das Zeichnen der Berliner Stadtgrenze ein oder aus.
 
 =back
 
-=item Kneipen-Symbol
+=item Sehenswürdigkeiten-Symbol
 
-=for html <img src="images/glas.gif">
+=for html <img src="images/star.gif">
 
-Schaltet das Zeichnen von Kneipen ein oder aus. Im MenE<uuml> gibt es
-die weiteren Punkte:
+Schaltet das Zeichnen von Sehenswürdigkeiten und anderen wichtigen
+Gebäuden ein oder aus. Im MenE<uuml> gibt es die weiteren Punkte:
 
 =over 4
-
-=item Kneipen
-
-Zeichnet genau wie die SchaltflE<auml>che Kneipen in Berlin.
-
-=item Kneipe auswE<auml>hlen
-
-Zeigt eine Listbox zum AuswE<auml>hlen einer Kneipe an.
-
-=item Restaturants
-
-Zeichnet Restaurants in Berlin.
-
-=item Restaurant auswE<auml>hlen
-
-Zeigt eine Listbox zum AuswE<auml>hlen eines Restaurants an.
-
-=item Kinos
-
-Zeichnet Kinos in Berlin.
-
-=item Kino auswE<auml>hlen
-
-Zeigt eine Listbox zum AuswE<auml>hlen eines Kinos an.
-
-=item PersE<ouml>nliche Orte
-
-Zeigt eine Listbox mit persE<ouml>nlich eingetragenen Orten ein. Die
-Punkte mE<uuml>ssen im C<bbd>-Format in der Datei
-C<$HOME/.bbbike/personal.bbd> vorhanden sein.
 
 =item SehenswE<uuml>rdigkeiten
 
@@ -642,10 +612,101 @@ markanten GebE<auml>uden in Berlin und Brandenburg ein oder aus.
 Zeigt eine Listbox zum AuswE<auml>hlen einer SehenswE<uuml>rdigkeit
 an.
 
+=item Kneipen
+
+Zeichnet genau wie die SchaltflE<auml>che Kneipen in Berlin.
+
+=item Kneipe auswE<auml>hlen
+
+Zeigt eine Listbox zum AuswE<auml>hlen einer Kneipe an.
+
+=item PersE<ouml>nliche Orte
+
+Zeigt eine Listbox mit persE<ouml>nlich eingetragenen Orten ein. Die
+Punkte mE<uuml>ssen im C<bbd>-Format in der Datei
+C<$HOME/.bbbike/personal.bbd> vorhanden sein.
+
 =item Obst
 
 Zeichnet Stellen mit E<ouml>ffentlich zugE<auml>nglichen
 ObstbE<auml>umen.
+
+=back
+
+=item Zusätzliche Kartenebenen-Symbol
+
+=for html <img src="images/newlayer.gif">
+
+Im MenE<uuml> gibt es die Punkte:
+
+=over 4
+
+=item Straßen-Layer zeichnen
+
+Zeichnet bbd- und andere GPS/GIS-Dateien als
+Straßen/Strecken/Flächen.
+
+=item Sperrungen-Layer zeichnen
+
+Zeichnet bbd-Dateien als E<quot>SperrungenE<quot> (gesperrte Straßen,
+Einbahnstraßen etc.). Das Straßennetz wird entsprechend der Sperrungen
+aktualisiert.
+
+=item Punkte-Layer zeichnen
+
+Zeichnet bbd- und andere GPS/GIS-Dateien als Punkte.
+
+=item Straßen/Punkte auswählen
+
+Auswahl eines Objekts aus einer neu gezeichneten Kartenebene anhand
+des Namens.
+
+=item Letzte geöffnete Layer
+
+Zeigt ein Menü der zuletzt geöffneten Kartenebenen/Layer.
+
+=item Umordnen
+
+Zeigt einen Dialog, in dem die Kartenebenen umgeordnet werden können.
+Zurzeit nur unter Unix/X11 möglich.
+
+=item Layer löschen
+
+Löschen einer zusätzlich gezeichneten Kartenebene.
+
+=item Ausschnitt an Layer anpassen
+
+Der sichtbare Ausschnitt wird so geändert, dass die gesamte neue
+Kartenebene sichtbar ist.
+
+=item Scrollregion an Layer anpassen
+
+Der Scrollbereich wird auf die Bounding Box der neuen Kartenebene
+gesetzt.
+
+=item Scrollregion für Layer vergrößern.
+
+Der Scrollbereich wird, falls notwendig, so vergrößert, dass die neue
+Kartenebene vollständig enthalten ist. Dieser Menüpunkt ist bevorzugt
+von den Scrollregion/Ausschnitt-Menüpunkten zu verwenden.
+
+=item Linienbreite 1 Punkt
+
+Die Linienbreite bei neuen Strecken wird auf einen Punkt gesetzt.
+
+=item WWW-Klickmodus
+
+Falls in den Namen der neuen Kartenobjekte URLs enthalten sind, können
+diese beim Klicken im Web-Browser geladen werden.
+
+=item Gpsman-Daten zeichnen
+
+Spezielles Zeichnen von Daten, die im gpsman-Format vorliegen.
+
+=item GPS-Track-Animation
+
+Animation von zuvor mit dem im Menüpunkt E<quot>Gpsman-Daten
+zeichnenE<quot> Tracks.
 
 =back
 
@@ -798,6 +859,100 @@ Schaltet das Zeichnen einer Zielflagge am Routenendpunkt ein oder aus.
 
 =back
 
+=item Sucheinstellungen
+
+=over
+
+=item Einbahn-/gesperrte Straßen beachten
+
+Einbahnstraßen und gesperrte Straßen werden bei der Suche gemieden.
+
+=item Einbahn-/gesperrte Straßen *strikt* beachten
+
+Einige Einbahnstraßen sind als für Radfahrer in der Gegenrichtung
+befahrbar gekennzeichnet, obwohl sie es offiziell nicht sind. Mit
+dieser Option werden alle Einbahnstraßen gemieden (außer für Radfahrer
+offiziell geöffnete).
+
+=item Benutzerdefinierte Sperrungen
+
+In diesem Menü kann man private Sperrungen definieren, laden und
+speichern. Wenn der E<quot>DefinierenE<quot>-Modus eingeschaltet wird,
+kann mit einem Klick auf eine Straße diese als E<quot>gesperrtE<quot>
+gekennzeichnet werden. Ein nochmaliger Klick auf eine Sperrungen hebt
+diese auf.
+
+Weiterhin können E<quot>Aktive SperrungenE<quot> geladen werden. Diese
+werden ca. wöchenlich (falls man Internet-Updates macht) oder täglich
+(falls man Updates über CVS macht) aktualisiert und enthalten
+beispielsweise Baustellen, Brückensperrungen oder Veranstaltungen, die
+auch Radfahrer betreffen könnten.
+
+=item Tragen strikt vermeiden
+
+Bei der normalen Suche werden Abschnitte, in denen getragen werden muß
+(Treppen) mit einer hohen Penalty versehen. Wenn E<quot>strikt
+vermeidenE<quot> gesetzt ist, dann werden solche Strecken komplett
+gemieden.
+
+=item Schlechte Wege vermeiden
+
+(Q3 strikt meiden? XXX)
+
+=item Fähren verwenden
+
+Erlaubt die Benutzung von Fähren bei der Suche. Eine Prüfung, ob die
+Fähre zum jeweiligen Zeitpunkt überhaupt fährt bzw. ob die Route
+dadurch schneller ist, wird nicht gemacht.
+
+=item Straßenqualität-Optimierung
+
+Optimiert nach der Straßenqualität (Asphalt, Kopfsteinpflaster etc.).
+Einstellungen werden unter E<quot>Optimierungsparameter
+einstellenE<quot> gesetzt.
+
+=item Straßenkategorie-Optimierung
+
+Optimiert nach der Straßenkategorie (Nebenstraße, Hauptstraße etc.).
+Einstellungen werden unter E<quot>Optimierungsparameter
+einstellenE<quot> gesetzt.
+
+=item Optimierung der sonstigen Behinderungen
+
+Optimiert nach sonstigen Behinderungen (Fußgänger auf der Straße,
+Bordsteine, sehr kurvige Strecken etc.). Einstellungen werden unter
+E<quot>Optimierungsparameter einstellenE<quot> gesetzt.
+
+=item Ampel-Optimierung
+
+Optimiert nach Anzahl der Ampeln. Einstellungen werden unter
+E<quot>Optimierungsparameter einstellenE<quot> gesetzt.
+
+=item Radwege-Optimierung
+
+Optimiert nach Vorhandensein von Radwegen. Einstellungen werden unter
+E<quot>Optimierungsparameter einstellenE<quot> gesetzt.
+
+=item Hauptstraßen ohne Radwege/Busspuren meiden
+
+=item Grüne Wege
+
+=item Unbeleuchtete Straßen meiden
+
+=item Steigungsoptimierung
+
+Hierbei werden die BikePower-Daten zur Berechnung verwendet.
+
+=item Abbiege-Optimierung
+
+Noch nicht implementiert.
+
+=item Optimierungsparameter einstellen
+
+=item Penalty
+
+=back
+
 =item Beschreibung der aktuellen Route
 
 =for html <img src="images/strlist.gif">
@@ -898,11 +1053,30 @@ Editieren der Koordinatendateien benE<ouml>tigt.
 
 Hiermit kann im Informationsmodus umgeschaltet werden. Beim Klick auf
 Kartenelemente wird jeweils ein Informationsfenster geE<ouml>ffnet.
-Diese Funktion kann nur intern verwendet werden.
+
+Mit der C<i>-Taste kann das Informationsfenster für das Kartenelement
+unter der Maus geöffnet werden.
+
+Im Informationsfenster befinden sich Informationen zu: berechnete
+Länge oder Fläche, Koordinaten in verschiedenen Koordinatensystemen
+(WGS, GKK, UTM ...), Links zu der Web-Version von BBBike,
+BBBike/Mapserver, Google Maps, Berliner Stadtplan (und weitere Links,
+die durch Plugins bereitgestellt werden, z.B. durch das
+LuiseBerlin-Plugin), Sonnenauf/untergang (benötigt das Perl-Modul
+L<Astro::Sunrise>).
+
+=item Karte verschieben
+
+=for html <img src="images/movehand.gif">
+
+Verschieben der Karte durch Ziehen der Maus
 
 =item Salesman-Symbol
 
 =for html <img src="images/salesman.gif">
+
+(Dieses Symbol ist nur sichtbar, wenn das Salesman-Plugin geladen
+wurde)
 
 In diesem Modus kann die kE<uuml>rzeste Rundreise berechnet werden.
 Dazu klickt man erst einmal in diesen Modus und wE<auml>hlt alle
@@ -1163,7 +1337,7 @@ angefordert werden.
 
 Hiermit wird B<BBBike> beendet. TemporE<auml>re Dateien werden
 gelE<ouml>scht und die Liste der zuletzt geE<ouml>ffnet Routen-Dateien
-in C<~/.bbbike/last> gespeichert. Tastatur: C<q> oder C<Ctrl-C>.
+in C<~/.bbbike/last> gespeichert. Tastatur: C<Ctrl-q> oder C<Ctrl-C>.
 
 =back
 

@@ -1,17 +1,3 @@
-Cannot find page `BikePower' at L<> on line 28
-Cannot find page `BikePower' at L<> on line 161
-Cannot find page `BikePower' at L<> on line 1030
-Cannot find page `Tk::Pod' at L<> on line 1121
-Cannot find page `Bundle::BBBike' at L<> on line 1243
-Cannot find page `TODO' at L<> on line 1328
-Cannot find page `Tk' at L<> on line 1358
-Cannot find page `Tk::FireButton' at L<> on line 1362
-Cannot find page `Tk::Pod' at L<> on line 1362
-Cannot find page `LWP::UserAgent' at L<> on line 1363
-Cannot find page `Mail::Send' at L<> on line 1363
-Cannot find page `BikePower' at L<> on line 1367
-Cannot find page `Tk' at L<> on line 1367
-Cannot find page `perl' at L<> on line 1367
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
@@ -590,35 +576,12 @@ Zeigt eine Listbox zum Ausw&auml;hlen einer Berliner Postleitzahl an.
 <dd>
 Schaltet das Zeichnen der Berliner Stadtgrenze ein oder aus.
 </dl>
-<dt class="POD_ITEM"><a name="Kneipen_Symbol">Kneipen-Symbol</a>
-<dd><p class="POD_RAW"><img src="images/glas.gif">
-Schaltet das Zeichnen von Kneipen ein oder aus. Im Men&uuml; gibt es
-die weiteren Punkte:
+<dt class="POD_ITEM"><a name="Sehensw_rdigkeiten_S">Sehensw&uuml;rdigkeiten-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/star.gif">
+Schaltet das Zeichnen von Sehensw&uuml;rdigkeiten und anderen wichtigen
+Geb&auml;uden ein oder aus. Im Men&uuml; gibt es die weiteren Punkte:
 </p>
 <dl class="POD_LIST">
-<dt class="POD_ITEM"><a name="Kneipen">Kneipen</a>
-<dd>
-Zeichnet genau wie die Schaltfl&auml;che Kneipen in Berlin.
-<dt class="POD_ITEM"><a name="Kneipe_ausw_hlen">Kneipe ausw&auml;hlen</a>
-<dd>
-Zeigt eine Listbox zum Ausw&auml;hlen einer Kneipe an.
-<dt class="POD_ITEM"><a name="Restaturants">Restaturants</a>
-<dd>
-Zeichnet Restaurants in Berlin.
-<dt class="POD_ITEM"><a name="Restaurant_ausw_hlen">Restaurant ausw&auml;hlen</a>
-<dd>
-Zeigt eine Listbox zum Ausw&auml;hlen eines Restaurants an.
-<dt class="POD_ITEM"><a name="Kinos">Kinos</a>
-<dd>
-Zeichnet Kinos in Berlin.
-<dt class="POD_ITEM"><a name="Kino_ausw_hlen">Kino ausw&auml;hlen</a>
-<dd>
-Zeigt eine Listbox zum Ausw&auml;hlen eines Kinos an.
-<dt class="POD_ITEM"><a name="Pers_nliche_Orte">Pers&ouml;nliche Orte</a>
-<dd>
-Zeigt eine Listbox mit pers&ouml;nlich eingetragenen Orten ein. Die
-Punkte m&uuml;ssen im <code>bbd</code>-Format in der Datei
-<code>$HOME/.bbbike/personal.bbd</code> vorhanden sein.
 <dt class="POD_ITEM"><a name="Sehensw_rdigkeiten">Sehensw&uuml;rdigkeiten</a>
 <dd>
 Schaltet das Zeichnen von Sehensw&uuml;rdigkeiten und anderen
@@ -627,10 +590,80 @@ markanten Geb&auml;uden in Berlin und Brandenburg ein oder aus.
 <dd>
 Zeigt eine Listbox zum Ausw&auml;hlen einer Sehensw&uuml;rdigkeit
 an.
+<dt class="POD_ITEM"><a name="Kneipen">Kneipen</a>
+<dd>
+Zeichnet genau wie die Schaltfl&auml;che Kneipen in Berlin.
+<dt class="POD_ITEM"><a name="Kneipe_ausw_hlen">Kneipe ausw&auml;hlen</a>
+<dd>
+Zeigt eine Listbox zum Ausw&auml;hlen einer Kneipe an.
+<dt class="POD_ITEM"><a name="Pers_nliche_Orte">Pers&ouml;nliche Orte</a>
+<dd>
+Zeigt eine Listbox mit pers&ouml;nlich eingetragenen Orten ein. Die
+Punkte m&uuml;ssen im <code>bbd</code>-Format in der Datei
+<code>$HOME/.bbbike/personal.bbd</code> vorhanden sein.
 <dt class="POD_ITEM"><a name="Obst">Obst</a>
 <dd>
 Zeichnet Stellen mit &ouml;ffentlich zug&auml;nglichen
 Obstb&auml;umen.
+</dl>
+<dt class="POD_ITEM"><a name="Zus_tzliche_Karteneb">Zus&auml;tzliche Kartenebenen-Symbol</a>
+<dd><p class="POD_RAW"><img src="images/newlayer.gif">
+Im Men&uuml; gibt es die Punkte:
+</p>
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Stra_en_Layer_zeichn">Stra&szlig;en-Layer zeichnen</a>
+<dd>
+Zeichnet bbd- und andere GPS/GIS-Dateien als
+Stra&szlig;en/Strecken/Fl&auml;chen.
+<dt class="POD_ITEM"><a name="Sperrungen_Layer_zei">Sperrungen-Layer zeichnen</a>
+<dd>
+Zeichnet bbd-Dateien als &quot;Sperrungen&quot; (gesperrte Stra&szlig;en,
+Einbahnstra&szlig;en etc.). Das Stra&szlig;ennetz wird entsprechend der Sperrungen
+aktualisiert.
+<dt class="POD_ITEM"><a name="Punkte_Layer_zeichne">Punkte-Layer zeichnen</a>
+<dd>
+Zeichnet bbd- und andere GPS/GIS-Dateien als Punkte.
+<dt class="POD_ITEM"><a name="Stra_en_Punkte_ausw_">Stra&szlig;en/Punkte ausw&auml;hlen</a>
+<dd>
+Auswahl eines Objekts aus einer neu gezeichneten Kartenebene anhand
+des Namens.
+<dt class="POD_ITEM"><a name="Letzte_ge_ffnete_Lay">Letzte ge&ouml;ffnete Layer</a>
+<dd>
+Zeigt ein Men&uuml; der zuletzt ge&ouml;ffneten Kartenebenen/Layer.
+<dt class="POD_ITEM"><a name="Umordnen">Umordnen</a>
+<dd>
+Zeigt einen Dialog, in dem die Kartenebenen umgeordnet werden k&ouml;nnen.
+Zurzeit nur unter Unix/X11 m&ouml;glich.
+<dt class="POD_ITEM"><a name="Layer_l_schen">Layer l&ouml;schen</a>
+<dd>
+L&ouml;schen einer zus&auml;tzlich gezeichneten Kartenebene.
+<dt class="POD_ITEM"><a name="Ausschnitt_an_Layer_">Ausschnitt an Layer anpassen</a>
+<dd>
+Der sichtbare Ausschnitt wird so ge&auml;ndert, dass die gesamte neue
+Kartenebene sichtbar ist.
+<dt class="POD_ITEM"><a name="Scrollregion_an_Laye">Scrollregion an Layer anpassen</a>
+<dd>
+Der Scrollbereich wird auf die Bounding Box der neuen Kartenebene
+gesetzt.
+<dt class="POD_ITEM"><a name="Scrollregion_f_r_Lay">Scrollregion f&uuml;r Layer vergr&ouml;&szlig;ern.</a>
+<dd>
+Der Scrollbereich wird, falls notwendig, so vergr&ouml;&szlig;ert, dass die neue
+Kartenebene vollst&auml;ndig enthalten ist. Dieser Men&uuml;punkt ist bevorzugt
+von den Scrollregion/Ausschnitt-Men&uuml;punkten zu verwenden.
+<dt class="POD_ITEM"><a name="Linienbreite_1_Punkt">Linienbreite 1 Punkt</a>
+<dd>
+Die Linienbreite bei neuen Strecken wird auf einen Punkt gesetzt.
+<dt class="POD_ITEM"><a name="WWW_Klickmodus">WWW-Klickmodus</a>
+<dd>
+Falls in den Namen der neuen Kartenobjekte URLs enthalten sind, k&ouml;nnen
+diese beim Klicken im Web-Browser geladen werden.
+<dt class="POD_ITEM"><a name="Gpsman_Daten_zeichne">Gpsman-Daten zeichnen</a>
+<dd>
+Spezielles Zeichnen von Daten, die im gpsman-Format vorliegen.
+<dt class="POD_ITEM"><a name="GPS_Track_Animation">GPS-Track-Animation</a>
+<dd>
+Animation von zuvor mit dem im Men&uuml;punkt &quot;Gpsman-Daten
+zeichnen&quot; Tracks.
 </dl>
 </dl>
 <h3 class="POD_HEAD2"><a name="NAVIGATION">NAVIGATION</a></h3>
@@ -744,6 +777,80 @@ aus.
 <dd>
 Schaltet das Zeichnen einer Zielflagge am Routenendpunkt ein oder aus.
 </dl>
+<dt class="POD_ITEM"><a name="Sucheinstellungen">Sucheinstellungen</a>
+<dd><dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="Einbahn_gesperrte_St1">Einbahn-/gesperrte Stra&szlig;en beachten</a>
+<dd>
+Einbahnstra&szlig;en und gesperrte Stra&szlig;en werden bei der Suche gemieden.
+<dt class="POD_ITEM"><a name="Einbahn_gesperrte_St2">Einbahn-/gesperrte Stra&szlig;en *strikt* beachten</a>
+<dd>
+Einige Einbahnstra&szlig;en sind als f&uuml;r Radfahrer in der Gegenrichtung
+befahrbar gekennzeichnet, obwohl sie es offiziell nicht sind. Mit
+dieser Option werden alle Einbahnstra&szlig;en gemieden (au&szlig;er f&uuml;r Radfahrer
+offiziell ge&ouml;ffnete).
+<dt class="POD_ITEM"><a name="Benutzerdefinierte_S">Benutzerdefinierte Sperrungen</a>
+<dd>
+In diesem Men&uuml; kann man private Sperrungen definieren, laden und
+speichern. Wenn der &quot;Definieren&quot;-Modus eingeschaltet wird,
+kann mit einem Klick auf eine Stra&szlig;e diese als &quot;gesperrt&quot;
+gekennzeichnet werden. Ein nochmaliger Klick auf eine Sperrungen hebt
+diese auf.
+<p class="POD_TEXT">
+Weiterhin k&ouml;nnen &quot;Aktive Sperrungen&quot; geladen werden. Diese
+werden ca. w&ouml;chenlich (falls man Internet-Updates macht) oder t&auml;glich
+(falls man Updates &uuml;ber CVS macht) aktualisiert und enthalten
+beispielsweise Baustellen, Br&uuml;ckensperrungen oder Veranstaltungen, die
+auch Radfahrer betreffen k&ouml;nnten.
+</p>
+<dt class="POD_ITEM"><a name="Tragen_strikt_vermei">Tragen strikt vermeiden</a>
+<dd>
+Bei der normalen Suche werden Abschnitte, in denen getragen werden mu&szlig;
+(Treppen) mit einer hohen Penalty versehen. Wenn &quot;strikt
+vermeiden&quot; gesetzt ist, dann werden solche Strecken komplett
+gemieden.
+<dt class="POD_ITEM"><a name="Schlechte_Wege_verme">Schlechte Wege vermeiden</a>
+<dd>
+(Q3 strikt meiden? XXX)
+<dt class="POD_ITEM"><a name="F_hren_verwenden1">F&auml;hren verwenden</a>
+<dd>
+Erlaubt die Benutzung von F&auml;hren bei der Suche. Eine Pr&uuml;fung, ob die
+F&auml;hre zum jeweiligen Zeitpunkt &uuml;berhaupt f&auml;hrt bzw. ob die Route
+dadurch schneller ist, wird nicht gemacht.
+<dt class="POD_ITEM"><a name="Stra_enqualit_t_Opti">Stra&szlig;enqualit&auml;t-Optimierung</a>
+<dd>
+Optimiert nach der Stra&szlig;enqualit&auml;t (Asphalt, Kopfsteinpflaster etc.).
+Einstellungen werden unter &quot;Optimierungsparameter
+einstellen&quot; gesetzt.
+<dt class="POD_ITEM"><a name="Stra_enkategorie_Opt">Stra&szlig;enkategorie-Optimierung</a>
+<dd>
+Optimiert nach der Stra&szlig;enkategorie (Nebenstra&szlig;e, Hauptstra&szlig;e etc.).
+Einstellungen werden unter &quot;Optimierungsparameter
+einstellen&quot; gesetzt.
+<dt class="POD_ITEM"><a name="Optimierung_der_sons">Optimierung der sonstigen Behinderungen</a>
+<dd>
+Optimiert nach sonstigen Behinderungen (Fu&szlig;g&auml;nger auf der Stra&szlig;e,
+Bordsteine, sehr kurvige Strecken etc.). Einstellungen werden unter
+&quot;Optimierungsparameter einstellen&quot; gesetzt.
+<dt class="POD_ITEM"><a name="Ampel_Optimierung1">Ampel-Optimierung</a>
+<dd>
+Optimiert nach Anzahl der Ampeln. Einstellungen werden unter
+&quot;Optimierungsparameter einstellen&quot; gesetzt.
+<dt class="POD_ITEM"><a name="Radwege_Optimierung">Radwege-Optimierung</a>
+<dd>
+Optimiert nach Vorhandensein von Radwegen. Einstellungen werden unter
+&quot;Optimierungsparameter einstellen&quot; gesetzt.
+<dt class="POD_ITEM"><a name="Hauptstra_en_ohne_Ra">Hauptstra&szlig;en ohne Radwege/Busspuren meiden</a>
+<dt><a name="Gr_ne_Wege">Gr&uuml;ne Wege</a>
+<dt><a name="Unbeleuchtete_Stra_e">Unbeleuchtete Stra&szlig;en meiden</a>
+<dt><a name="Steigungsoptimierung">Steigungsoptimierung</a>
+<dd>
+Hierbei werden die BikePower-Daten zur Berechnung verwendet.
+<dt class="POD_ITEM"><a name="Abbiege_Optimierung">Abbiege-Optimierung</a>
+<dd>
+Noch nicht implementiert.
+<dt class="POD_ITEM"><a name="Optimierungsparamete">Optimierungsparameter einstellen</a>
+<dt><a name="Penalty">Penalty</a>
+<dd></dl>
 <dt class="POD_ITEM"><a name="Beschreibung_der_akt">Beschreibung der aktuellen Route</a>
 <dd><p class="POD_RAW"><img src="images/strlist.gif">
 Es wird eine Routenbeschreibung in der folgenden Form angezeigt:
@@ -818,10 +925,30 @@ Editieren der Koordinatendateien ben&ouml;tigt.
 <dd><p class="POD_RAW"><img src="images/info.gif">
 Hiermit kann im Informationsmodus umgeschaltet werden. Beim Klick auf
 Kartenelemente wird jeweils ein Informationsfenster ge&ouml;ffnet.
-Diese Funktion kann nur intern verwendet werden.
+</p>
+<p class="POD_TEXT">
+Mit der <code>i</code>-Taste kann das Informationsfenster f&uuml;r das Kartenelement
+unter der Maus ge&ouml;ffnet werden.
+</p>
+<p class="POD_TEXT">
+Im Informationsfenster befinden sich Informationen zu: berechnete
+L&auml;nge oder Fl&auml;che, Koordinaten in verschiedenen Koordinatensystemen
+(WGS, GKK, UTM ...), Links zu der Web-Version von BBBike,
+BBBike/Mapserver, Google Maps, Berliner Stadtplan (und weitere Links,
+die durch Plugins bereitgestellt werden, z.B. durch das
+LuiseBerlin-Plugin), Sonnenauf/untergang (ben&ouml;tigt das Perl-Modul
+<u>Astro::Sunrise</u>).
+</p>
+<dt class="POD_ITEM"><a name="Karte_verschieben">Karte verschieben</a>
+<dd><p class="POD_RAW"><img src="images/movehand.gif">
+Verschieben der Karte durch Ziehen der Maus
 </p>
 <dt class="POD_ITEM"><a name="Salesman_Symbol">Salesman-Symbol</a>
 <dd><p class="POD_RAW"><img src="images/salesman.gif">
+(Dieses Symbol ist nur sichtbar, wenn das Salesman-Plugin geladen
+wurde)
+</p>
+<p class="POD_TEXT">
 In diesem Modus kann die k&uuml;rzeste Rundreise berechnet werden.
 Dazu klickt man erst einmal in diesen Modus und w&auml;hlt alle
 gew&uuml;nschten Stationen der Rundreise an. Der erste und letzte
@@ -1044,7 +1171,7 @@ angefordert werden.
 <dd>
 Hiermit wird <b>BBBike</b> beendet. Tempor&auml;re Dateien werden
 gel&ouml;scht und die Liste der zuletzt ge&ouml;ffnet Routen-Dateien
-in <code>~/.bbbike/last</code> gespeichert. Tastatur: <code>q</code> oder <code>Ctrl-C</code>.
+in <code>~/.bbbike/last</code> gespeichert. Tastatur: <code>Ctrl-q</code> oder <code>Ctrl-C</code>.
 </dl>
 <h2 class="POD_HEAD1"><a name="OPTIONEN">OPTIONEN</a></h2>
 <p class="POD_TEXT">
@@ -1241,7 +1368,7 @@ Slaven Rezic - <a class="POD_LINK" href="mailto:slaven@rezic.de">slaven@rezic.de
 </p>
 <hr>
 <a class="POD_NAVLINK" href="#Pod_TOP_OF_PAGE">[Top]</a>
-Generated by Marek::Pod::HTML 0.49 on Sun Nov 13 10:09:46 2005
+Generated by Marek::Pod::HTML 0.49 on Thu Dec  8 00:48:07 2005
 </body>
 </html>
 

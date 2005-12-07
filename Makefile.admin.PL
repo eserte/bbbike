@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.40 2005/12/03 20:02:17 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.40 2005/12/03 20:02:17 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -17,7 +17,7 @@
 #
 # grab a good pod2html XXX this is somewhat hacky
 my $bbbike_html_rule;
-$ENV{PATH} .= ":/usr/local/src/CPAN/new.build/new.MarekPodHtml-0.43/scripts";
+#XXX del: $ENV{PATH} .= ":/usr/local/src/CPAN/new.build/new.MarekPodHtml-0.43/scripts";
 my $pod2html = is_in_path("mpod2html");
 #if (defined $pod2html) {
 #    $pod2html = "$^X -Mblib=/usr/local/src/CPAN/new.build/new.MarekPodHtml-0.43/ $pod2html";
@@ -43,9 +43,9 @@ my $all_html = join " ", map { $_->[POD_HTML] } @pods;
 if (defined $pod2html) {
     # XXX here no $htmlroot
     $bbbike_html_rule = <<EOF;
-$all_html:	$all_pods
-	$pod2html -stylesheet html/bbbikepod.css -tocname http://bbbike.sourceforge.net/index -notoc $all_pods
-	\$(CLEAN_POD2HTML)
+$all_html:	$all_pods Makefile
+	$pod2html -stylesheet html/bbbikepod.css -tocname http://bbbike.sourceforge.net/index -notoc -nowarnings $all_pods
+	\$(CLEAN_AFTER_POD2HTML)
 	chmod ugo+r $all_html podindex.html
 EOF
 } else {
@@ -65,7 +65,7 @@ EOF
 	$bbbike_html_rule .= <<EOF
 $poddef->[POD_HTML]: $poddef->[POD_POD]
 	$pod2html --title "$poddef->[POD_TITLE]" $poddef->[POD_POD] > $poddef->[POD_HTML]
-	\$(CLEAN_POD2HTML)
+	\$(CLEAN_ADTER_POD2HTML)
 
 EOF
     }
@@ -397,7 +397,7 @@ predist:
 
 # DOCUMENTATION ##########################################################
 
-CLEAN_POD2HTML=$(RM_F) pod2html-*cache pod2htm?.?~~
+CLEAN_AFTER_POD2HTML=$(RM_F) pod2html-*cache pod2htm?.?~~
 
 STRPP=	strpp
 

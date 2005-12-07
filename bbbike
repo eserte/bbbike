@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.211 2005/12/07 22:28:21 eserte Exp $
+# $Id: bbbike,v 3.212 2005/12/07 23:29:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.211 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.212 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -2673,7 +2673,8 @@ sub do_iconframe {
        -command => \&toggle_enter_opt_preferences,
       )->grid(-row => $curr_row, -column => $col, -sticky => 's');
     $balloon->attach($search_pref_button, -msg => M"Sucheinstellungen");
-#XXX    $ch->attach($search_button, -pod => "^\\s*Route suchen");
+    $ch->attach($search_pref_button,
+                -pod => "^\\s*Sucheinstellungen");
 
     my $sb2mb = $misc_frame2->Menubutton;
     my $sb2m = $sb2mb->Menu(-title => M"Sucheinstellungen");
