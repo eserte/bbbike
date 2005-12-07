@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Getopt.pm,v 1.52 2005/06/30 00:47:03 eserte Exp $
+# $Id: Getopt.pm,v 1.53 2005/12/07 22:22:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1997,1998,1999,2000,2003 Slaven Rezic. All rights reserved.
@@ -401,10 +401,18 @@ sub process_options {
 	    my $v = $ {$self->_varref($_)};
 	    my @choices = @{$_->[OPTEXTRA]{'choices'}};
 	    push(@choices, $_->[DEFVAL]) if defined $_->[DEFVAL];
-	    if (!grep($_ eq $v, @choices)) {
+	    my $seen;
+	    for my $choice (@choices) {
+		my $value = (ref $choice eq 'ARRAY' ? $choice->[1] : $choice);
+		if ($value eq $v) {
+		    $seen = 1;
+		    last;
+		}
+	    }
+	    if (!$seen) {
 		if (defined $former) {
 		    warn "Not allowed: " . $ {$self->_varref($_)}
-		    . " for -$opt. Using old value $former->{$opt}";
+		       . " for -$opt. Using old value $former->{$opt}";
 		    $ {$self->_varref($_)} = $former->{$opt};
 		} else {
 		    die "Not allowed: "
@@ -481,14 +489,24 @@ sub _float_widget {
 
 sub _list_widget {
     my($self, $frame, $opt) = @_;
+    if ($opt->[OPTEXTRA]{'strict'} && grep { ref $_ eq 'ARRAY' } @{$opt->[OPTEXTRA]{'choices'}}) {
+	$self->_optionmenu_widget($frame, $opt);
+    } else {
+	$self->_browseentry_widget($frame, $opt);
+    }
+}
+
+sub _browseentry_widget {
+    my($self, $frame, $opt) = @_;
     require Tk::BrowseEntry;
     my %args = (-variable => $self->_varref($opt));
     if ($opt->[OPTEXTRA]{'strict'}) {
 	$args{-state} = "readonly";
     }
     my $w = $frame->BrowseEntry(%args);
+    my %mapping;
     my @optlist = @{$opt->[OPTEXTRA]{'choices'}};
-    unshift(@optlist, $opt->[DEFVAL]) if defined $opt->[DEFVAL];
+    unshift @optlist, $opt->[DEFVAL] if defined $opt->[DEFVAL];
     my $o;
     my %seen;
     foreach $o (@optlist) {
@@ -496,6 +514,28 @@ sub _list_widget {
 	    $w->insert("end", $o);
 	    $seen{$o}++;
 	}
+    }
+    $w;
+}
+
+sub _optionmenu_widget {
+    my($self, $frame, $opt) = @_;
+    require Tk::Optionmenu;
+    my $varref = $self->_varref($opt);
+    # Have to remember value, otherwise Optionmenu would overwrite it...
+    my $value = $$varref;
+    my %args = (-variable => $varref,
+		-options => $opt->[OPTEXTRA]{'choices'},
+	       );
+    my $w = $frame->Optionmenu(%args);
+    if (defined $value) {
+	my $label = $value;
+	for my $choice (@{ $opt->[OPTEXTRA]{'choices'} }) {
+	    if (ref $choice eq 'ARRAY' && $choice->[1] eq $value) {
+		$label = $choice->[0];
+	    }
+	}
+	$w->setOption($label, $value);
     }
     $w;
 }
@@ -926,6 +966,7 @@ sub option_editor {
     my $delay_page_create = (exists $a{'-delaypagecreate'}
 			     ? delete $a{'-delaypagecreate'}
 			     : 1);
+    my $page      = delete $a{'-page'};
     if (!defined $string) {
 	$string = {'optedit'    => 'Option editor',
 		   'undo'       => 'Undo',
@@ -940,6 +981,10 @@ sub option_editor {
 	          };
     }
     $self->{_string} = $string;
+
+    if (defined $page) {
+	$self->{'raised'} = $page;
+    }
 
     # store old values for undo
     my %undo_options;
@@ -981,9 +1026,12 @@ sub option_editor {
     die "$@ while evaling $cmd" if $@;
     $opt_editor->transient($transient) if $transient;
     eval { $opt_editor->configure(-title => $string->{optedit}) };
+
     my $opt_notebook = ($dont_use_notebook ?
 			$opt_editor->Frame :
 			$opt_editor->NoteBook(-ipadx => 6, -ipady => 6));
+    $self->{Frame} = $opt_notebook;
+
     my($statusbar, $balloon);
     if (!$dont_use_balloon) {
 	if ($use_statusbar) {
@@ -1206,7 +1254,7 @@ sub option_editor {
     &$callback($self, $opt_editor) if $callback;
 
     if (!$dont_use_notebook && defined $self->{'raised'}) {
-	$opt_notebook->raise($self->{'raised'});
+	$self->raise_page($self->{'raised'});
     }
 
     $opt_editor->bind('<Escape>' => sub { $cancel_button->invoke });
@@ -1275,6 +1323,13 @@ sub _get_curr_geometry_args {
     } else {
 	(-text => "Geom.");
     }
+}
+
+sub raise_page {
+    my($self, $page) = @_;
+    my $opt_notebook = $self->{Frame};
+    $page = lc $page; # always lowercase in NoteBook internals
+    $opt_notebook->raise($page);
 }
 
 1;
@@ -1521,6 +1576,12 @@ least the OK and Cancel buttons. The default set looks like this:
 
     -buttons => [qw/ok apply cancel undo lastsaved save defaults/]
 
+A minimal set could look like (here OK means accept and save)
+
+    -buttons => [qw/oksave cancel/]
+
+(and using less buttons is recommended).
+
 =item -toplevel
 
 Use another widget class instead of B<Toplevel> for embedding the
@@ -1559,6 +1620,10 @@ C<ok>, C<cancel>, C<helpfor>.
 =item -wait
 
 Do not return immediately, but rather wait for the user pressing OK or Cancel.
+
+=item -page
+
+Raise the named notebook page (if grouping is used, see below).
 
 =back
 
@@ -1657,6 +1722,19 @@ A long help string used by B<option_editor>.
 =item choices
 
 An array of additional choices for the option editor.
+
+If C<-strict> is set to a true value, then the elements of choices may
+also contain array references. In this case the first value of the
+"sub" array references are the display lavbels and the second value
+the used value. This is similar to L<Tk::Optionmenu> (in fact, for
+displaying this option an Optionmenu is used).
+
+    -choices => ["one", "two", "three"]
+
+    -choices => [["english"  => "en"],
+		 ["deutsch"  => "de"],
+		 ["hrvatski" => "hr"]]
+
 
 =item range
 

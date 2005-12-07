@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.210 2005/12/02 22:56:47 eserte Exp eserte $
+# $Id: bbbike,v 3.211 2005/12/07 22:28:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.210 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.211 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -200,6 +200,8 @@ $devel_host = ($ENV{HOST} && $ENV{HOST} =~ /^(vran|cabulja|cvrsnica|spiff|devpc0
 $os =   $^O eq 'MSWin32' || $^O eq 'os2' || $^O eq 'dos' ? 'win'
       : $^O eq 'MacOS'				    	 ? 'mac'
       : 						   'unix';
+$os_bsd = $^O =~ /bsd/i;
+
 if (!defined $is_handheld) {
     $is_handheld = $Config{"archname"} =~ /^arm-linux$/i;
 }
@@ -4477,28 +4479,35 @@ sub handle_options {
 
 	 M"GPS",
 	 ['exporttxtmode','=i',EXPORT_TXT_SIMPLIFY_AUTO,
-	  label => M"Export-Format bei Routen",
-	  longhelp => EXPORT_TXT_FULL.":".M("Komplette Route")."\n".
-	  EXPORT_TXT_SIMPLIFY_NAME.":".M("Unterschiedliche Straßennamen")."\n".
-	  EXPORT_TXT_SIMPLIFY_ANGLE.":".M("Abbiegevorgänge")."\n".
-	  EXPORT_TXT_SIMPLIFY_NAME_OR_ANGLE.":".M("Abbiegevorgänge/unterschiedliche Straßennamen")."\n".
-	  EXPORT_TXT_SIMPLIFY_AUTO.":".M("automatisch")."\n".
-	  '',
-	  choices => [EXPORT_TXT_FULL,EXPORT_TXT_SIMPLIFY_NAME,
-		      EXPORT_TXT_SIMPLIFY_ANGLE,EXPORT_TXT_SIMPLIFY_NAME_OR_ANGLE,
-		      EXPORT_TXT_SIMPLIFY_AUTO], # XXX better choices
+	  label => M"Vereinfachung von Routen",
+	  longhelp => M"GPS-Geräte können nur eine begrenzte Anzahl von Waypoints pro Route verwenden.
+Eine von BBBike berechnete Route erzeugt meist mehr Waypoints.
+Mit dieser Option kann eingestellt werden, welche Strategie
+dazu verwendet wird",
+	  choices => [[M("Komplette Route"), EXPORT_TXT_FULL],
+		      [M("Unterschiedliche Straßennamen"), EXPORT_TXT_SIMPLIFY_NAME],
+		      [M("Abbiegevorgänge"), EXPORT_TXT_SIMPLIFY_ANGLE],
+		      [M("Abbiegevorgänge/unterschiedliche Straßennamen"), EXPORT_TXT_SIMPLIFY_NAME_OR_ANGLE],
+		      [M("automatisch"), EXPORT_TXT_SIMPLIFY_AUTO],
+		     ],
+	  strict => 1,
 	  var =>  \$export_txt_mode],
 	 ['exporttxtminangle','=s',30,
-	  label => M"Minimalwinkel bei Route-Export",
-	  longhelp => M"Minimalwinkel in Grad bei (GPS-)Export von Routen\n",
+	  choices => [5,15,30,45,60],
+	  label => M"Minimalwinkel bei Route-Vereinfachung",
+	  longhelp => M"Minimalwinkel in Grad bei der Vereinfachung von Routen\n",
 	  var => \$export_txt_min_angle],
 	 ['gpswaypoints','=i',50,
+	  choices => [20,50],
 	  label => M"Maximale Anzahl der GPS-Waypoints",
 	  longhelp => M"Moderne Garmin-Geräte können 50 Waypoints pro Route verwenden,\nwährend ältere nur 20 Waypoints laden können\n",
 	  var => \$gps_waypoints,
 	 ],
-	 ['gpsdevice','=s',($os eq 'win' ? "COM1" : ($^O =~ /bsd/i ? '/dev/cuaa0' : '/dev/ttyS0')),
-	  #XXX check: subtype => 'file',
+	 ['gpsdevice','=s',($os eq 'win' ? "COM1" : ($os_bsd ? '/dev/cuaa0' : '/dev/ttyS0')),
+	  choices => (  $os eq 'win' ? [map {  "COM$_" 			       } (1..4) ]
+		      : $os_bsd      ? [map {  "/dev/cuaa$_"		       } (0..3) ]
+		      :                [map { ("/dev/ttyS$_", "/dev/ttyUSB$_") } (0..3) ]
+		     ),
 	  label => M"GPS-Device", var => \$gps_device],
 
 	 M"Sonstiges",
@@ -4601,7 +4610,7 @@ speicherplatzsparender.",
 
     eval {
 	require Tk::Getopt;
-	Tk::Getopt->VERSION(0.49);
+	Tk::Getopt->VERSION(0.50);
     };
     if ($@) {			# XXX
 	die "Please report to author: use opttable_to_getopt!!!! XXX";
@@ -17647,9 +17656,13 @@ sub my_popup {
 }
 
 sub optedit {
+    my(%args) = @_;
     my $opt_edit = $top->{GetoptEditor};
     if (Tk::Exists($opt_edit)) {
 	$opt_edit->raise;
+	if ($args{-page}) {
+	    $opt->raise_page($args{-page});
+	}
 	return;
     }
     $opt_edit =	$opt->option_editor
@@ -17668,7 +17681,12 @@ sub optedit {
 		       helpfor => "Hilfe für",
 		      }
 	  ) : ()),
-	 -buttons => ['oksave', 'defaults', 'cancel'],
+	 -buttons => ['oksave',
+		      #'defaults', # XXX defaults or not defaults???
+		      #could be misleading, users might think that the
+		      #defaults just apply to the displayed page
+		      'cancel'],
+	 %args, # e.g. -page
 	);
     $top->{GetoptEditor} = $opt_edit;
 }

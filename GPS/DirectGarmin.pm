@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.25 2005/04/05 22:36:35 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.26 2005/12/07 22:26:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -204,6 +204,13 @@ sub tk_interface {
 			    %waypoints = ();
 			}),
 	     -sticky => "w", -columnspan => 2);
+    if (defined &main::optedit) {
+	Tk::grid($t->Button(-text => M"GPS-Einstellungen",
+			    -command => sub {
+				main::optedit(-page => M"GPS");
+			    }),
+		 -sticky => "w", -columnspan => 2);
+    }
     my $weiter = 0;
     {
 	my $f = $t->Frame->grid(-columnspan => 2, -sticky => "ew");

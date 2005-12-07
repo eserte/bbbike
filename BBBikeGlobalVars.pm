@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.31 2005/10/26 00:53:44 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.32 2005/12/07 22:25:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.31 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -25,7 +25,7 @@ use vars
   qw($bbbike_context $splash_screen $booting
      $coords_ref $realcoords_ref $search_route_points_ref @realcoords
      $VERSION $PROG_REVISION $tmpdir %tmpfiles $progname
-     $os $use_clipboard $verbose $advanced $devel_host $public_test
+     $os $os_bsd $use_clipboard $verbose $advanced $devel_host $public_test
      $datadir $no_original_datadir $city $country
      $top %toplevel %processes $transient $c $sx $sy $top_dpi $top_dpmm @want_extends
      $small_icons $is_handheld
