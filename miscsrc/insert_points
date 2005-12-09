@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.60 2005/11/18 23:17:27 eserte Exp $
+# $Id: insert_points,v 1.61 2005/12/09 00:11:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -236,10 +236,12 @@ sub process {
 
     if (defined $extra) {
 	if ($use_tk) {
-	    $top->Dialog(-title => $0,
-			 -text => 'Zu viele Punkte markiert!',
-			 -bitmap => 'error',
-			 -buttons => ['OK'])->Show;
+	    my $d = $top->Dialog(-title => $0,
+				 -text => 'Zu viele Punkte markiert!',
+				 -bitmap => 'error',
+				 -buttons => ['OK']);
+	    $d->Show;
+	    $d->destroy;
 	    $my_top->destroy if Tk::Exists($my_top);
 	}
 	warn "Too many points ($extra)";
@@ -248,10 +250,12 @@ sub process {
 
     if ($operation eq 'change' && $from eq $to) {
 	if ($use_tk) {
-	    $top->Dialog(-title => $0,
-			 -text => 'Gleicher Punkt, keine Aktion notwendig!',
-			 -bitmap => 'info',
-			 -buttons => ['OK'])->Show;
+	    my $d = $top->Dialog(-title => $0,
+				 -text => 'Gleicher Punkt, keine Aktion notwendig!',
+				 -bitmap => 'info',
+				 -buttons => ['OK']);
+	    $d->Show;
+	    $d->destroy;
 	    $my_top->destroy if Tk::Exists($my_top);
 	}
 	warn "Same point $from eq $to";
@@ -286,10 +290,12 @@ sub process {
 				 )
 			      )
 			   );
-	    $top->Dialog(-title => $0,
-			 -text => 'In der Auswahl ' . $var_text . ' sein!',
-			 -bitmap => 'error',
-			 -buttons => ['OK'])->Show;
+	    my $d = $top->Dialog(-title => $0,
+				 -text => 'In der Auswahl ' . $var_text . ' sein!',
+				 -bitmap => 'error',
+				 -buttons => ['OK']);
+	    $d->Show;
+	    $d->destroy;
 	    warn "Found operation=$operation from=$from middle=@middle to=$to";
 	    $my_top->destroy if Tk::Exists($my_top);
 	    return RET_ERROR;
@@ -615,10 +621,12 @@ sub process {
     }
     if (!_interpolate(@change_files)) {
 	if ($use_tk) {
-	    $top->Dialog(-title => $0,
-			 -text  => $dialog_text,
-			 -bitmap => 'info',
-			 -buttons => ['OK'])->Show;
+	    my $d = $top->Dialog(-title => $0,
+				 -text  => $dialog_text,
+				 -bitmap => 'info',
+				 -buttons => ['OK']);
+	    $d->Show;
+	    $d->destroy;
 	    $my_top->destroy if Tk::Exists($my_top);
 	} else {
 	    print STDERR "$dialog_text.\n";
@@ -698,6 +706,7 @@ sub process {
 	}
 
 	$ans = $dia->Show;
+	$dia->destroy;
 	for (my $type = 0; $type <= $#check_files; $type++) {
 	    foreach my $file (@{$orig_change_files[$type]}) {
 		push @{$change_files[$type]}, $file
