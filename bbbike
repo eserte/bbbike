@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.212 2005/12/07 23:29:15 eserte Exp $
+# $Id: bbbike,v 3.213 2005/12/09 00:04:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.212 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.213 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -16161,14 +16161,28 @@ sub status_message {
 	if (!$top) {
 	    warn "$msg\n";
 	} else {
+	    my %args = (-title  => ($err eq 'warn' ? 'Warnung' : 'Fehler'),
+			-text   => $msg,
+			-bitmap => ($err eq 'warn' ? 'warning' : 'error'),
+			-background => Tk::NORMAL_BG,
+			-highlightbackground => Tk::NORMAL_BG,
+		       );
 	    $splash_screen->Destroy if $splash_screen; undef $splash_screen;
-	    require Tk::Dialog;
-	    my $d = $top->Dialog
-	      (-title  => ($err eq 'warn' ? 'Warnung' : 'Fehler'),
-	       -text   => $msg,
-	       -bitmap => ($err eq 'warn' ? 'warning' : 'error'),
-	      );
-	    $d->Show;
+	    if ($status_message_dialog && Tk::Exists($status_message_dialog)) {
+		## Do not reconfigure existing dialog because of the
+		## (still!) two-seconds hang
+		#$status_message_dialog->configure(%args);
+		$status_message_dialog->destroy;
+	    }# else {
+		my $Dialog = "Dialog";
+		if (eval { require Tk::LongDialog; 1 }) {
+		    $Dialog = "LongDialog";
+		} else {
+		    require Tk::Dialog;
+		}
+		$status_message_dialog = $top->$Dialog(%args);
+	    #}
+	    $status_message_dialog->Show;
 	}
     }
     if (defined $err && $err eq 'die') { # also die

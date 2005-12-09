@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: UnderlineAll.pm,v 1.15 2005/11/19 20:23:28 eserte Exp $
+# $Id: UnderlineAll.pm,v 1.16 2005/12/08 23:17:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright © 1997,2001,2005 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ package
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 =head1 NAME
 
@@ -86,7 +86,8 @@ the C<-donotuse> option as a workaround.
 
 =head1 SEE ALSO
 
-L<Tk::Menu>, L<Tk::Button>, L<Tk::Widget>.
+L<Tk::Menu>, L<Tk::Button>, L<Tk::Widget>, L<Tk::autobind> (which
+seems to implement a subset of Tk::UnderlineAll's capabilities).
 
 =head1 AUTHOR
 

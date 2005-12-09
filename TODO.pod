@@ -2251,6 +2251,12 @@ LANG gesetzt) lösen.
 
 =over
 
+=item * (H2)
+
+Marek::Pod::HTML seams to have a problem, maybe inherited from
+Pod::Checker: 2nd argument set to \*STDERR for parse_from_file does
+not work. See my hack in Marek/Pod/HTML.pm in the perl5.8.0 tree.
+
 =item * (M3)
 
 bbbike/html: add bbbike_small.html.spp to CVS, but maybe first convert

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Update.pm,v 1.19 2005/05/09 22:58:46 eserte Exp $
+# $Id: Update.pm,v 1.19 2005/05/09 22:58:46 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2003,2005 Slaven Rezic. All rights reserved.
@@ -166,17 +166,16 @@ sub update_http {
 		if ($res->is_error) {
 		    print STDERR "\n", $res->as_string;
 		    my $text = $res->error_as_HTML;
-		    if (eval {
+		    eval {
 			local $SIG{__DIE__};
 			local $SIG{__WARN__};
 			require HTML::FormatText;
 			require HTML::TreeBuilder;
-			1;
-		    }) {
 			my $tree = HTML::TreeBuilder->new->parse($text);
 			$text = HTML::FormatText->new(leftmargin => 0, rightmargin => 50)->format($tree);
-		    }
-		    push @errors, "Fehler beim Übertragen der Datei $src_file: " . $text;
+		    };
+		    warn $@ if $@;
+		    push @errors, "Fehler beim Übertragen der Datei $src_file:\n" . $text . "\n";
 		} else {
 		    print STDERR " keine Änderung\n" if $main::verbose;
 		}
