@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.213 2005/12/09 00:04:43 eserte Exp $
+# $Id: bbbike,v 3.214 2005/12/09 21:48:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.213 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.214 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -11732,39 +11732,6 @@ sub show_info {
 			       "link$linkcount");
 	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");
-	    $linkcount++;
-	}
-
-	if ($devel_host && $ENV{HOST} !~ /^devpc01/) {
-	    my $url = sprintf "http://www.stad".
-		"tpland".
-		    "ienst.de/tpl/vm005/map.asp?ll=%.5fx%.5f", $px, $py;
-	    my $grid;
-	    if ($mapscale_scale) {
-		if ($mapscale_scale < 15000) {
-		    $grid = "10";
-		} elsif ($mapscale_scale < 30000) {
-		    $grid = "20";
-		} elsif ($mapscale_scale < 50000) {
-		    $grid = "40";
-		} elsif ($mapscale_scale < 80000) {
-		    $grid = "";
-		} elsif ($mapscale_scale < 250000) {
-		    $grid = "66";
-		} elsif ($mapscale_scale < 625000) {
-		    $grid = "400";
-		} else {
-		    $grid = "750";
-		}
-		$grid = pack("c*", 100,101,100,97,116,108,97,115) . $grid;
-		#warn $grid;
-	    }
-	    if ($grid) {
-		$url .= "&grid=$grid";
-	    }
-	    $info_text->insert("end", "Stadtp".
-			       "landienst\n", "link$linkcount");
-	    $show_url->($linkcount, $url);
 	    $linkcount++;
 	}
 

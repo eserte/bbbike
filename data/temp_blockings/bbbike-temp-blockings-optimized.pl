@@ -618,14 +618,7 @@ userdel	q4 -8886,85737 -9850,84800
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1133996400,
-         'text' => 'L 16 Bahnübergang bei Siedlung Schönwalde Gleisbauarbeiten Vollsperrung 05.12.2005-07.12.2005 ',
-         'from' => 1133650800,
-         'data' => 'userdel	2 -10559,23255 -10737,23418
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1134342000,
          'text' => 'L 16 Bahnübergang bei Siedlung Schönwalde Gleisbauarbeiten Vollsperrung 10.12.2005-11.12.2005 ',
@@ -642,15 +635,7 @@ userdel	q4 -8886,85737 -9850,84800
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1134082800,
-         'text' => 'L 74 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung; Umleitung 07.12.2005-08.12.2005 ',
-         'from' => 1133823600,
-         'data' => 'userdel	2 15682,-26971 15229,-27157
-userdel	2 15682,-26971 15960,-26906
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1134601200,
          'text' => 'L 201 Nauener Chaussee Bahnübegang bei Falkensee Gleisbauarbeiten Vollsperrung 11.12.2005-14.12.2005 ',

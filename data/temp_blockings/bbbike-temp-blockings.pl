@@ -1560,8 +1560,8 @@ userdel	1 17518,4644 17428,4503
 EOF
      },
      { from  => 1110235074, # 2005-03-07 23:37
-       until => 1110317384, # XXX handicap now, was: 1125525600 2005-09-01 00:00
-       text  => 'Unter den Linden (Mitte) Richtung Westen zwischen Schadowstr. und Wilhelmstr. Baustelle, Straße vollständig gesperrt (bis August 2005)',
+       until => 1110317384, # XXX from 2005-12-09 marked as removed, check!
+       text  => 'Unter den Linden (Mitte) Richtung Westen zwischen Schadowstr. und Wilhelmstr. Baustelle, Straße vollständig gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	1 9028,12307 8804,12280

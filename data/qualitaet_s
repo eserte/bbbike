@@ -12,7 +12,7 @@ Karlshorster Str.: m‰ﬂiges Kopfsteinpflaster	Q2 15267,10865 15266,10791 15255,10
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1683,9847 1511,10051 1382,10124 1308,10031
 Werkst‰ttenweg: m‰ﬂiges Kopfsteinpflaster	Q2 2121,10089 1634,9668
 Schˆnwalder Allee: gutes Kopfsteinpflaster, 2-Richtungs-Radweg mit m‰ﬂigen bis guten Asphalt	Q1 -3755,17090 -3804,17202 -4105,17691 -4490,18341 -4898,18801 -5204,19226 -5228,19403 -5160,19649 -5218,19835 -5651,20200 -6099,20718
-Kopenhagener Str.: m‰ﬂiger Radweg auf beiden Seiten (gepflastert), Straﬂe OK	Q0 7217,18681 7338,18992 7528,19469 7660,19810
+Kopenhagener Str.: m‰ﬂiger Radweg auf beiden Seiten (gepflastert), Straﬂe OK	Q0 7217,18681 7338,18992 7496,19388 7528,19469 7660,19810
 Hauptstr. (Rosenthal): Asphalt	Q0 7660,19810 7690,19885 7726,19952 7772,20050 7852,20231 7929,20386 7992,20515 8078,20732 8167,21020
 Hauptstr. (Rosenthal): Kopfsteinpflaster auf der Straﬂe, Radwege OK	Q1 8277,21257 8167,21020
 Hauptstr. (Rosenthal)/Mˆnchm¸hler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8277,21257 8460,21602 8591,21906 8426,22015 8504,22281 8900,23274 8909,23506
@@ -265,7 +265,7 @@ Gabriel-Max-Str.: Kopfsteinpflaster	Q2 14102,11715 14065,11605 14049,11553
 Kurf¸rstenstr.: Kopfsteinpflaster	Q2 7633,10394 7744,10372 7850,10351 8061,10310
 (Im Jagen, Verl‰ngerung): Waldweg	Q1 1375,6138 1074,6449 909,6584 905,6631
 Jahnstr: Kopfsteinpflaster	Q2 11509,9392 11493,9128
-Mauerweg: teilweise nur m‰ﬂiger Asphalt	Q1 7725,21247 7303,20639 7083,20584 6601,20542 6372,20467
+Mauerweg: teilweise nur m‰ﬂiger Asphalt	Q1 7725,21247 7303,20639 7083,20584 6601,20542 6488,20505 6372,20467
 An der Nordbahn: m‰ﬂiges Pflaster (?)	Q1 6985,19859 6679,20122 6289,20468
 An der Nordbahn: teilweise m‰ﬂiger Asphalt (Wellen, Schlaglˆcher)	Q1 8665,18570 8476,18773
 An der Nordbahn: teilweise m‰ﬂiger Asphalt (Wellen, Schlaglˆcher)	Q1 8361,18778 7528,19469
@@ -2186,6 +2186,16 @@ Kl‰rwerkstr.: Asphalt	Q0 -1255,13304 -1243,13522
 Ringstr.: Kopfsteinpflaster	Q2 2701,3064 3050,3316 3184,3413 3375,3544 3507,3635
 Herwarthstr.: Asphalt	Q0 4722,2771 4622,2787 4440,2752 4382,2658 4383,2613
 Fritzi-Massary-Str.: Asphalt	Q0 15131,6295 15147,6311 15386,6310 15428,6355 15426,6398
+Eibenweg: m‰ﬂiger Asphalt mit Schlaglˆchern	Q1 17362,5086 17378,5195 17365,5271 17355,5322
+Weststr.: m‰ﬂiger Asphalt	Q1 17173,4902 17291,5045 17309,5100
+Oststr.: m‰ﬂiger Asphalt	Q1 17428,4792 17463,4964 17484,5073 17493,5112 17495,5220 17472,5216 17464,5297
+Am Alten Fenn: m‰ﬂiger Asphalt	Q1 17309,5100 17362,5086 17484,5073
+Staudenweg: m‰ﬂiger Asphalt	Q1 17493,5112 17601,5090
+Birkenwerderstr.: Asphalt/Beton	Q0 6470,20761 6945,20805
+Tornower Weg: Asphalt/Beton	Q0 6461,20642 6457,20717 6470,20761 6496,20869 6523,20987 6544,21083
+Borgsdorfer Str.: Asphalt/Beton	Q0 6496,20869 6962,20895
+Germendorfer Str.: Asphalt/Beton	Q0 6383,20975 6523,20987 6982,21013 7036,21017
+Wentowsteig: Asphalt/Beton	Q0 6924,20695 6945,20805 6962,20895 6982,21013
 Erholungsweg: Asphalt	Q0 2763,21000 2861,21089 2961,21119 3042,21141 3117,21154 3206,21179 3304,21205 3450,21244
 Buriger Weg: Beton	Q1 30088,4292 30216,4724
 (Spreeuferweg): Parkweg	Q2 4543,12516 4501,12544 4331,12538
