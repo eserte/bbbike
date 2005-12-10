@@ -466,9 +466,9 @@ userdel	q4 -7873,66589 -7851,66418
        undef,
        {
          'source_id' => 'IM_002352',
-         'until' => 1167605999,
-         'text' => 'Siemensstr. (Köpenick) Richtung Karlshorst, zwischen Wattstr. und Deulstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
-         'from' => 1132003156,
+         'until' => 1149112800,
+         'text' => 'Siemensstr. (Köpenick) Richtung Karlshorst, zwischen Wattstr. und Deulstr. Baustelle, Fahrtrichtung gesperrt (bis 31.05.2006) ',
+         'from' => 1134171245,
          'data' => 'userdel	q4; 17766,6616 17962,6674
 ',
          'type' => 'handicap'
