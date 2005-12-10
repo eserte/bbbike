@@ -659,6 +659,16 @@ userdel	q4 -8886,85737 -9850,84800
          'data' => 'userdel	2 -19904,17964 -18793,18169
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1134345600,
+         'text' => 'Bahnhofstraße zwischen Goltzstraße und Steinstraße, Weihnachtsmarkt, Straße gesperrt. Dauer: 10.12.2005 06:00 Uhr bis 12.12.2005 01:00 Uhr. ',
+         'from' => 1134104400,
+         'data' => 'userdel	2 10945,-2124 10747,-2129
+userdel	2 10310,-2136 10453,-2133
+userdel	2 10453,-2133 10747,-2129
+',
+         'type' => 'gesperrt'
        }
      
 );
