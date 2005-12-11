@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.41 2005/12/10 23:24:19 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.44 2005/12/11 21:20:13 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2005 Slaven Rezic. All rights reserved.
@@ -16,9 +16,9 @@
 
 package BBBike;
 
-$VERSION	   = '3.15'; # remove "-DEVEL" for releases
+$VERSION	   = '3.16-DEVEL'; # remove "-DEVEL" for releases
 $STABLE_VERSION	   = '3.15';
-$WINDOWS_VERSION   = '3.14'; # Windows distribution
+$WINDOWS_VERSION   = '3.15'; # Windows distribution
 
 $EMAIL_OLD	   = 'eserte@cs.tu-berlin.de';
 $EMAIL		   = 'slaven@rezic.de';
@@ -52,7 +52,7 @@ $BBBIKE_DIRECT_WAP = 'http://www.radzeit.de/cgi-bin/wapbbbike.cgi';
 # Sourceforge IDs
 $SF_BBBIKE_GROUP_ID = 19142;
 $SF_BBBIKE_PACKAGE_ID = 14052;
-$SF_BBBIKE_LATEST_RELEASE_ID = 324253; # change for new releases
+$SF_BBBIKE_LATEST_RELEASE_ID = 377515; # change for new releases
 
 # Distribution directory for scripts. Unfortunately there's no directory
 # index available anymore at sourceforge...
@@ -62,6 +62,13 @@ $DISTFILE_WINDOWS  = "$DISTDIR/BBBike-$WINDOWS_VERSION-Windows.exe";
 # Distribution directory for humans (link to 'show files' at sourceforge, and restricted to BBBike)
 $DISPLAY_DISTDIR   = 'http://sourceforge.net/project/showfiles.php?group_id=' . $SF_BBBIKE_GROUP_ID . '&package_id=' . $SF_BBBIKE_PACKAGE_ID;
 $LATEST_RELEASE_DISTDIR  = 'http://sourceforge.net/project/showfiles.php?group_id=' . $SF_BBBIKE_GROUP_ID . '&package_id=' . $SF_BBBIKE_PACKAGE_ID . '&release_id=' . $SF_BBBIKE_LATEST_RELEASE_ID;
+# Contains all BBBike project releases:
+$DISPLAY_BBBIKE_PROJECT_DISTDIR   = 'http://sourceforge.net/project/showfiles.php?group_id=' . $SF_BBBIKE_GROUP_ID;
+# These link to the intermediate SourceForge download page (only for humans)
+$SF_DISTDIR	      = 'http://prdownloads.sourceforge.net/bbbike';
+$SF_DISTFILE_SOURCE   = "$SF_DISTDIR/BBBike-$STABLE_VERSION.tar.gz?download";
+$SF_DISTFILE_WINDOWS  = "$SF_DISTDIR/BBBike-$WINDOWS_VERSION-Windows.exe?download";
+
 
 # URL auf die Diplomarbeit
 $DIPLOM_URL        = 'http://user.cs.tu-berlin.de/~eserte/diplom/';

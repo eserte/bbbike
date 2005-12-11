@@ -23,7 +23,7 @@
 ## perlreplace #HTTPCVS#    $BBBike::BBBIKE_CVS_HTTP
 ## perlreplace #CVSREPO#    $BBBike::BBBIKE_CVS_ANON_REPOSITORY
 ## dnl
-## dnl $Id: README.spp,v 2.37 2005/10/24 20:04:09 eserte Exp $
+## dnl $Id: README.spp,v 2.38 2005/12/11 21:37:40 eserte Exp $
 ## dnl strpp source of README
 ## dnl
 =head1 README
@@ -39,6 +39,15 @@ a route-finder for cyclists in Berlin and Brandenburg
 =head1 INSTALLATION
 
 =head2 
+## only DE
+Alle Systeme außer Windows
+## but DE
+All systems except Windows
+## yes
+
+
+
+=head3 
 ## only DE
 Download
 ## but DE
@@ -58,16 +67,16 @@ L<#BBBIKEVAR_DISTFILE_SOURCE#> .
 ## yes
 
 
-=head2 FreeBSD
+=head3 FreeBSD
 
 
 ## only DE
-Für FreeBSD existiert seit 3.0-RELEASE ein I<Port> für BBBike in der
+Für FreeBSD existiert ein I<Port> für BBBike in der
 Kategorie B<german>. Besitzer älterer FreeBSD-Versionen können den
 I<Port> über L<http://www.freebsd.org/cgi/ports.cgi?query=bbbike&stype=all>
 finden. Die Installation über das Ports-System erfolgt wie folgt:
 ## but DE
-For FreeBSD, since 3.0-RELEASE there is a I<port> for BBBike in the
+For FreeBSD there is a I<port> for BBBike in the
 category B<german>. For older versions of FreeBSD, you can find the
 I<port> at L<http://www.freebsd.org/cgi/ports.cgi?query=bbbike&stype=all>.
 To install the application via the ports system type:
@@ -86,7 +95,7 @@ UNIX's|/Linux, Solaris, other UNIX operating systems>.
 ## yes
 
 
-=head2 
+=head3 
 ## only DE
 Linux, Solaris, andere Unices
 ## but DE
@@ -224,228 +233,7 @@ This requires the perl module L<Inline::C>.
 
 ## yes
 
-=head2 Windows 95/98/2000/NT/XP
-
-## only DE
-
-BBBike und Perl benötigen ca. 32 MB an Festplattenspeicher.
-
-Die Datei L<#BBBIKEVAR_DISTFILE_WINDOWS#>
-laden und mit WinZip an einer
-beliebigen Stelle auf der Festplatte auspacken. Zum Starten von BBBike
-muss das Icon C<bbbike.bat> im Verzeichnis BBBike-#BBBIKEWINVER#-Windows
-angeklickt werden.
-
-Mit C<setup.bat> kann man optional BBBike nach C<C:\BBBike>
-installieren und enthält dann auch einen Eintrag im Startmenü. Nach
-der Installation mit C<setup.bat> kann das alte extrahierte Verzeichnis
-gelöscht werden.
-## but DE
-BBBike and Perl need approx. 32 MB hard disk space.
-
-
-Download the file
-L<#BBBIKEVAR_DISTFILE_WINDOWS#> and 
-extract this file
-with WinZip. To start BBBike just click on the icon C<bbbike.bat> in
-the directory BBBike-#BBBIKEWINVER#-Windows.
-
-Optionally you can install BBBike in C<C:\BBBike> with C<setup.bat>.
-This will also create an entry in the start menu. After the
-installation with C<setup.bat> you can delete the old extracted
-directory.
-## yes
-
-
-=head2 Alternative Windows Installation (1)
-
-
-## only DE
-Alternativ kann BBBike auch nur mit den Sourcen installiert werden.
-Arbeitsschritte für Windows-95/98/2000/NT/XP-Benutzer:
-## but DE
-As an alternative, you can install BBBike just with the sources. Steps
-for Windows 95/98/2000/NT/XP users:
-## yes
-
-
-=over 4
-
-=item *
-
-
-## only DE
-Aus dem WWW die perl-Distribution downloaden. Perl kann
-von der ActiveState Webpage geladen werden:
-## but DE
-Download the perl distribution from the ActiveState webpage:
-## yes
-
-
-L<http://www.activestate.com/Products/ActivePerl/Download.html>
-
-
-## only DE
-
-
-In der Regel werden zwei Dateien zum Installieren benötigt, den
-Windows Installer und die eigentliche Perl-Distribution für Windows
-Intel. Beide Dateien müssen nacheinander ausgeführt werden. Die
-Installation ist normalerweise mit einigen Reboots verbunden.
-
-Nach der Installation von perl muss in der MSDOS-Eingabeafforderung das
-Programm
-## but DE
-
-
-Usually, there are two files needed for the installation: the Windows
-Installer and the Perl distribution for Windows Intel. You have to
-execute both files. While installing Perl, you will have to reboot
-your computer.
-
-=item *
-
-After the perl installation you have to open the MSDOS prompt and type
-## yes
-
-
-
-	ppm
-
-
-## only DE
-aufgerufen werden und mit
-## but DE
-to start the Perl Package Manager. Inside ppm, type
-## yes
-
-
-
-	install Tk
-
-
-## only DE
-über das Internet perl/Tk installiert werden. Mit 
-## but DE
-to download and install perl/Tk. To leave the ppm program, type
-## yes
-
-
-
-	quit
-
-
-## only DE
-wird das ppm-Programm verlassen.
-## yes
-
-
-=item *
-
-
-## only DE
-L<BBBike-#BBBIKEWINVER#.tar.gz|#BBBIKEVAR_DISTFILE_WINDOWS#>
-downloaden und mit WinZip auspacken. Das
-ausgepackte Verzeichnis wird später nicht mehr verschoben.
-## but DE
-Download
-C<BBBike-#BBBIKEWINVER#.tar.gz|#BBBIKEVAR_DISTFILE_WINDOWS#>
-and extract this file with 
-WinZip. The unpacked directory will not move in the later
-installation.
-## yes
-
-
-=item *
-
-
-## only DE
-In der Eingabeaufforderung oder im Explorer zum Verzeichnis BBBike-#BBBIKEWINVER#
-wechseln und
-
-
-	install.pl
-
-aufrufen. Das Installationsskript erstellt
-Einträge für BBBike im Startmenü und erzeugt ein Icon auf dem Desktop.
-## but DE
-Open the explorer, change to the BBBike-#BBBIKEVER# directory and call
-
-
-	install.pl.
-
-The installation program creates entries in the start
-menu and a desktop icon.
-## yes
-
-
-=back
-
-=head2 Alternative Windows Installation (2)
-
-
-## only DE
-Wenn Cygwin (L<http://www.cygwin.org/>) installiert ist, können aus einer
-cygwin-Shell heraus die Anweisungen wie bei einer
-L<UNIX-Installation|/Linux, Solaris, andere Unices>
-befolgt werden.
-## but DE
-If you have Cygwin (L<http://www.cygwin.org/>) installed, you can start
-a cygwin shell and follow the
-L<UNIX instructions|/Linux, Solaris, other UNIX operating systems>.
-## yes
-
-
-=head2 Alternative Windows Installation (3)
-
-
-## only DE
-Als weitere Alternative kann eine ältere perl-Distribution, die allerdings Tk
-bereits enthält, geladen werden:
-## but DE
-As an further alternative, you can download an older distribution with Tk
-included:
-## yes
-
-
-L<http://www.perl.com/CPAN/ports/win32/Standard/x86/perl5.00402-bindist04-bc.tar.gz>
-
-
-## only DE
-Die geladene Datei muss mit WinZip oder gunzip+tar ausgepackt werden.
-Im ausgepackten Verzeichnis befindet sich das Installationsprogramm
-C<install.bat>. Das Programm in der Eingabeaufforderungen aufrufen und
-die Anweisungen befolgen.
-
-Mit dieser alten Version (5.004_02) von Perl benötigt man auch eine
-relativ alte Version von BBBike (älter als 3.00).
-
-## but DE
-You have to extract this file with WinZip or gunzip+tar. In the
-extracted directory, there will be the installation program
-C<install.bat>. Call this program in the MSDOS prompt and follow the
-instructions.
-
-If you're using this old version of perl (5.004_02), you also need an
-old version of BBBike, at least older than version 3.00.
-
-## yes
-
-=head2 Windows 3.1
-
-
-## only DE
-Windows 3.1 wird nicht mehr unterstützt. Ältere Versionen von BBBike
-(z.B. 2.x) haben noch eine Anleitung, wie man BBBike unter Windows 3.1
-nutzen kann.
-## but DE
-Windows 3.1 is not supported anymore. Older BBBike versions (for
-example 2.x) have instructions on how to use BBBike under Windows 3.1.
-## yes
-
-
-
-=head2 Mac OS X
+=head3 Mac OS X
 
 
 ## only DE
@@ -564,6 +352,192 @@ Mac OS Classic is not supported.
 
 
 
+=head2 Windows 95/98/2000/NT/XP
+
+=head3 
+## only DE
+Normale Installation
+## but DE
+Normal installation
+## yes
+
+
+
+## only DE
+
+BBBike und Perl benötigen ca. 32 MB an Festplattenspeicher.
+
+Einfach die Datei L<#BBBIKEVAR_DISTFILE_WINDOWS#> laden und starten.
+Damit wird das Installationsprogramm gestartet.
+## but DE
+BBBike and Perl need approx. 32 MB hard disk space.
+
+Download the file
+L<#BBBIKEVAR_DISTFILE_WINDOWS#> and just start it for the installation
+program.
+## yes
+
+
+=head3 Alternative Windows Installation (1)
+
+
+## only DE
+Alternativ kann BBBike auch nur mit den Sourcen installiert werden.
+Arbeitsschritte für Windows-95/98/2000/NT/XP-Benutzer:
+## but DE
+As an alternative, you can install BBBike just with the sources. Steps
+for Windows 95/98/2000/NT/XP users:
+## yes
+
+
+=over 4
+
+=item *
+
+
+## only DE
+Aus dem WWW die perl-Distribution downloaden. Perl kann
+von der ActiveState Webpage geladen werden:
+## but DE
+Download the perl distribution from the ActiveState webpage:
+## yes
+
+
+L<http://www.activestate.com/Products/ActivePerl/Download.html>
+
+
+## only DE
+
+
+In der Regel werden zwei Dateien zum Installieren benötigt, den
+Windows Installer und die eigentliche Perl-Distribution für Windows
+Intel. Beide Dateien müssen nacheinander ausgeführt werden. Die
+Installation ist normalerweise mit einigen Reboots verbunden.
+
+In den aktuellen Versionen von ActivePerl ist das Tk-Modul bereits
+enthalten und muss nicht separat installiert werden.
+## but DE
+
+
+Usually, there are two files needed for the installation: the Windows
+Installer and the Perl distribution for Windows Intel. You have to
+execute both files. While installing Perl, you will have to reboot
+your computer.
+
+In current ActivePerl versions the Tk module is already included and
+does not need to be installed.
+## yes
+
+
+
+=item *
+
+
+## only DE
+L<BBBike-#BBBIKEWINVER#.tar.gz|#BBBIKEVAR_DISTFILE_WINDOWS#>
+downloaden und mit WinZip auspacken. Das
+ausgepackte Verzeichnis wird später nicht mehr verschoben.
+## but DE
+Download
+C<BBBike-#BBBIKEWINVER#.tar.gz|#BBBIKEVAR_DISTFILE_WINDOWS#>
+and extract this file with 
+WinZip. The unpacked directory will not move in the later
+installation.
+## yes
+
+
+=item *
+
+
+## only DE
+In der Eingabeaufforderung oder im Explorer zum Verzeichnis BBBike-#BBBIKEWINVER#
+wechseln und
+
+
+	install.pl
+
+aufrufen. Das Installationsskript erstellt
+Einträge für BBBike im Startmenü und erzeugt ein Icon auf dem Desktop.
+## but DE
+Open the explorer, change to the BBBike-#BBBIKEVER# directory and call
+
+
+	install.pl.
+
+The installation program creates entries in the start
+menu and a desktop icon.
+## yes
+
+
+=back
+
+=head3 Alternative Windows Installation (2)
+
+
+## only DE
+Wenn Cygwin (L<http://www.cygwin.org/>) installiert ist, können aus einer
+cygwin-Shell heraus die Anweisungen wie bei einer
+L<UNIX-Installation|/Linux, Solaris, andere Unices>
+befolgt werden. Achtung: Tk 804.027 lässt sich (noch) nicht unter
+Cygwin installieren. Stattdessen muss Tk 800.025 verwendet werden.
+## but DE
+If you have Cygwin (L<http://www.cygwin.org/>) installed, you can start
+a cygwin shell and follow the
+L<UNIX instructions|/Linux, Solaris, other UNIX operating systems>.
+Note that Tk 804.027 does not run under Cygwin (yet). Use Tk 800.025
+instead.
+## yes
+
+
+=head3 Alternative Windows Installation (3)
+
+
+## only DE
+Als weitere Alternative kann eine ältere perl-Distribution, die allerdings Tk
+bereits enthält, geladen werden:
+## but DE
+As an further alternative, you can download an older distribution with Tk
+included:
+## yes
+
+
+L<http://www.perl.com/CPAN/ports/win32/Standard/x86/perl5.00402-bindist04-bc.tar.gz>
+
+
+## only DE
+Die geladene Datei muss mit WinZip oder gunzip+tar ausgepackt werden.
+Im ausgepackten Verzeichnis befindet sich das Installationsprogramm
+C<install.bat>. Das Programm in der Eingabeaufforderungen aufrufen und
+die Anweisungen befolgen.
+
+Mit dieser alten Version (5.004_02) von Perl benötigt man auch eine
+relativ alte Version von BBBike (älter als 3.00).
+
+## but DE
+You have to extract this file with WinZip or gunzip+tar. In the
+extracted directory, there will be the installation program
+C<install.bat>. Call this program in the MSDOS prompt and follow the
+instructions.
+
+If you're using this old version of perl (5.004_02), you also need an
+old version of BBBike, at least older than version 3.00.
+
+## yes
+
+=head3 Windows 3.1
+
+
+## only DE
+Windows 3.1 wird nicht mehr unterstützt. Ältere Versionen von BBBike
+(z.B. 2.x) haben noch eine Anleitung, wie man BBBike unter Windows 3.1
+nutzen kann.
+## but DE
+Windows 3.1 is not supported anymore. Older BBBike versions (for
+example 2.x) have instructions on how to use BBBike under Windows 3.1.
+## yes
+
+
+
 =head1 
 ## only DE
 AUSFÜHREN
@@ -649,9 +623,9 @@ L<#DIRECTCGIURL#/info=1>
 
 =head2 
 ## only DE
-Kommandozeilen-Version
+Nicht-GUI-Version
 ## but DE
-Command line version
+Non GUI version
 ## yes
 
 
@@ -781,8 +755,7 @@ Zenin, C<ext/Strassen-Inline/heap.[ch]> der Internet Software
 Consortium, C<ext/BBBikeXS/sqrt.c> von Eyal Lebedinsky.
 
 C<BBBike-#BBBIKEWINVER#-Windows.zip> enthält einen Teil der
-C<SiePerl>-Distribution.
-
+C<SiePerl>-Distribution, siehe
 ## but DE
 The most important parts of the application (C<bbbike>, C<cgi/bbbike.cgi>,
 C<Strassen.pm> and C<Strassen/Inline.pm>) and the data in the
@@ -799,11 +772,10 @@ Zenin, C<ext/Strassen-Inline/heap.[ch]> by Internet Software
 Consortium, C<ext/BBBikeXS/sqrt.c> by Eyal Lebedinsky.
 
 C<BBBike-#BBBIKEWINVER#-Windows.zip> contains a partial C<SiePerl>
-distribution.
-
+distribution, see
 ## yes
 
-
+L<http://www.cpan.org/authors/id/G/GR/GRAHAMC/>
 
 =head1 
 ## only DE

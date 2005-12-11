@@ -4,15 +4,18 @@ BBBike - a route-finder for cyclists in Berlin and Brandenburg
 
 =head1 INSTALLATION
 
-=head2 Download
+=head2 All systems except Windows
+
+
+=head3 Download
 
 You can find the newest distribution file of BBBike in the directory
 L<http://sourceforge.net/project/showfiles.php?group_id=19142&package_id=14052> . The current source version is
 L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.15.tar.gz> .
 
-=head2 FreeBSD
+=head3 FreeBSD
 
-For FreeBSD, since 3.0-RELEASE there is a I<port> for BBBike in the
+For FreeBSD there is a I<port> for BBBike in the
 category B<german>. For older versions of FreeBSD, you can find the
 I<port> at L<http://www.freebsd.org/cgi/ports.cgi?query=bbbike&stype=all>.
 To install the application via the ports system type:
@@ -23,7 +26,7 @@ To install the application via the ports system type:
 If you don't have the BBBike I<port>, you can install BBBike like L<in other
 UNIX's|/Linux, Solaris, other UNIX operating systems>.
 
-=head2 Linux, Solaris, other UNIX operating systems
+=head3 Linux, Solaris, other UNIX operating systems
 
 First, you have to install perl5. Most operating systems have perl
 already bundled. You can check with
@@ -83,108 +86,7 @@ execute
 
 This requires the perl module L<Inline::C>.
 
-=head2 Windows 95/98/2000/NT/XP
-BBBike and Perl need approx. 32 MB hard disk space.
-
-
-Download the file
-L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.exe> and 
-extract this file
-with WinZip. To start BBBike just click on the icon C<bbbike.bat> in
-the directory BBBike-3.14-Windows.
-
-Optionally you can install BBBike in C<C:\BBBike> with C<setup.bat>.
-This will also create an entry in the start menu. After the
-installation with C<setup.bat> you can delete the old extracted
-directory.
-
-=head2 Alternative Windows Installation (1)
-
-As an alternative, you can install BBBike just with the sources. Steps
-for Windows 95/98/2000/NT/XP users:
-
-=over 4
-
-=item *
-
-Download the perl distribution from the ActiveState webpage:
-
-L<http://www.activestate.com/Products/ActivePerl/Download.html>
-
-
-
-Usually, there are two files needed for the installation: the Windows
-Installer and the Perl distribution for Windows Intel. You have to
-execute both files. While installing Perl, you will have to reboot
-your computer.
-
-=item *
-
-After the perl installation you have to open the MSDOS prompt and type
-
-
-	ppm
-
-to start the Perl Package Manager. Inside ppm, type
-
-
-	install Tk
-
-to download and install perl/Tk. To leave the ppm program, type
-
-
-	quit
-
-
-
-=item *
-
-Download
-C<BBBike-3.14.tar.gz|http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14-Windows.exe>
-and extract this file with 
-WinZip. The unpacked directory will not move in the later
-installation.
-
-=item *
-
-Open the explorer, change to the BBBike-3.15 directory and call
-
-
-	install.pl.
-
-The installation program creates entries in the start
-menu and a desktop icon.
-
-=back
-
-=head2 Alternative Windows Installation (2)
-
-If you have Cygwin (L<http://www.cygwin.org/>) installed, you can start
-a cygwin shell and follow the
-L<UNIX instructions|/Linux, Solaris, other UNIX operating systems>.
-
-=head2 Alternative Windows Installation (3)
-
-As an further alternative, you can download an older distribution with Tk
-included:
-
-L<http://www.perl.com/CPAN/ports/win32/Standard/x86/perl5.00402-bindist04-bc.tar.gz>
-
-You have to extract this file with WinZip or gunzip+tar. In the
-extracted directory, there will be the installation program
-C<install.bat>. Call this program in the MSDOS prompt and follow the
-instructions.
-
-If you're using this old version of perl (5.004_02), you also need an
-old version of BBBike, at least older than version 3.00.
-
-=head2 Windows 3.1
-
-Windows 3.1 is not supported anymore. Older BBBike versions (for
-example 2.x) have instructions on how to use BBBike under Windows 3.1.
-
-
-=head2 Mac OS X
+=head3 Mac OS X
 
 Mac OS X comes already with perl 5.6.0 oder 5.8.x. Now you just need XDarwin and Perl/Tk
 to get BBBike running. For instructions how to setup Perl/Tk on Mac OS X
@@ -234,6 +136,89 @@ An X11 environment or Darwin environment is also required (package X11SDK).
 Mac OS Classic is not supported.
 
 
+=head2 Windows 95/98/2000/NT/XP
+
+=head3 Normal installation
+
+BBBike and Perl need approx. 32 MB hard disk space.
+
+Download the file
+L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.15-Windows.exe> and just start it for the installation
+program.
+
+=head3 Alternative Windows Installation (1)
+
+As an alternative, you can install BBBike just with the sources. Steps
+for Windows 95/98/2000/NT/XP users:
+
+=over 4
+
+=item *
+
+Download the perl distribution from the ActiveState webpage:
+
+L<http://www.activestate.com/Products/ActivePerl/Download.html>
+
+
+
+Usually, there are two files needed for the installation: the Windows
+Installer and the Perl distribution for Windows Intel. You have to
+execute both files. While installing Perl, you will have to reboot
+your computer.
+
+In current ActivePerl versions the Tk module is already included and
+does not need to be installed.
+
+
+=item *
+
+Download
+C<BBBike-3.15.tar.gz|http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.15-Windows.exe>
+and extract this file with 
+WinZip. The unpacked directory will not move in the later
+installation.
+
+=item *
+
+Open the explorer, change to the BBBike-3.15 directory and call
+
+
+	install.pl.
+
+The installation program creates entries in the start
+menu and a desktop icon.
+
+=back
+
+=head3 Alternative Windows Installation (2)
+
+If you have Cygwin (L<http://www.cygwin.org/>) installed, you can start
+a cygwin shell and follow the
+L<UNIX instructions|/Linux, Solaris, other UNIX operating systems>.
+Note that Tk 804.027 does not run under Cygwin (yet). Use Tk 800.025
+instead.
+
+=head3 Alternative Windows Installation (3)
+
+As an further alternative, you can download an older distribution with Tk
+included:
+
+L<http://www.perl.com/CPAN/ports/win32/Standard/x86/perl5.00402-bindist04-bc.tar.gz>
+
+You have to extract this file with WinZip or gunzip+tar. In the
+extracted directory, there will be the installation program
+C<install.bat>. Call this program in the MSDOS prompt and follow the
+instructions.
+
+If you're using this old version of perl (5.004_02), you also need an
+old version of BBBike, at least older than version 3.00.
+
+=head3 Windows 3.1
+
+Windows 3.1 is not supported anymore. Older BBBike versions (for
+example 2.x) have instructions on how to use BBBike under Windows 3.1.
+
+
 =head1 EXECUTION
 
 To execute BBBike on Unix, change to the bbbike directory and type
@@ -271,7 +256,7 @@ More information for the CGI version at:
 L<http://www.radzeit.de/cgi-bin/bbbike.cgi/info=1>
 
 
-=head2 Command line version
+=head2 Non GUI version
 
 C<cbbbike> and C<cmdbbbike> are simpler command line versions of the program.
 
@@ -320,10 +305,9 @@ C<lib/Text/ScriptTemplate.pm> by Taisuke Yamada, C<lib/enum.pm> by
 Zenin, C<ext/Strassen-Inline/heap.[ch]> by Internet Software
 Consortium, C<ext/BBBikeXS/sqrt.c> by Eyal Lebedinsky.
 
-C<BBBike-3.14-Windows.zip> contains a partial C<SiePerl>
-distribution.
-
-
+C<BBBike-3.15-Windows.zip> contains a partial C<SiePerl>
+distribution, see
+L<http://www.cpan.org/authors/id/G/GR/GRAHAMC/>
 
 =head1 AUTHOR
 

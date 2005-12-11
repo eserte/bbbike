@@ -49,10 +49,10 @@ PLIST=		${WRKDIR}/pkg-plist
 
 pre-install:
 .if !defined(PERL_VER) || ${PERL_VER} == 5.005
-	LOCAL_PERL_ARCH=`${PERL5} -MConfig -e 'print $$Config{archname}'`; \
+	LOCAL_PERL_ARCH=`${PERL5} -MConfig -e '$$x = qq{$$Config{archname}}; $$x =~ s{/}{\\\\/}g; print $$x'`; \
 	${SED} -e "s/%%LOCAL_PERL_ARCH%%/$$LOCAL_PERL_ARCH/g" < ${PLIST_IN} > ${PLIST}
 .else
-	LOCAL_PERL_ARCH=`${PERL5} -MConfig -e 'print $$Config{version}/$$Config{archname}'`; \
+	LOCAL_PERL_ARCH=`${PERL5} -MConfig -e '$$x = qq{$$Config{version}/$$Config{archname}}; $$x =~ s{/}{\\\\/}g; print $$x'`; \
 	${SED} -e "s/%%LOCAL_PERL_ARCH%%/$$LOCAL_PERL_ARCH/g" < ${PLIST_IN} > ${PLIST}
 .endif
 

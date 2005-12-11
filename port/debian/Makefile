@@ -1,13 +1,19 @@
 #
-# $Id: Makefile,v 1.3 2005/11/19 00:44:59 eserte Exp $
+# $Id: Makefile,v 1.4 2005/12/11 22:46:44 eserte Exp $
 #
+
+# Run on a Debian system
 
 BUILDDIR=	/tmp/bbbike-debian
 BBBIKETARGETDIR=/usr/lib/BBBike
 BUILDBBBIKEROOT=$(BUILDDIR)$(BBBIKETARGETDIR)
 BBBIKEROOT=	$(shell pwd)/../..
 BBBIKE_STABLE_VERSION=$(shell perl -I$(BBBIKEROOT) -MBBBikeVar -e 'print $$BBBike::STABLE_VERSION')
-MANPAGE=	/usr/local/man/man1/bbbike.1
+BBBIKE_DEBIAN_REVISION?=	1
+#MANPAGE=	/usr/local/man/man1/bbbike.1
+MANPAGE=	/usr/share/man/man1/bbbike.1
+BBBIKEDOCDIR=	/usr/share/doc/bbbike
+BBBIKEDEBIAN=	BBBike-$(BBBIKE_STABLE_VERSION)-$(BBBIKE_DEBIAN_REVISION).deb
 
 all:	debian-package
 
@@ -30,7 +36,7 @@ debian-prepare:
 $(BUILDDIR)/DEBIAN/control:  $(BBBIKEROOT)/BBBikeVar.tpl \
 			     control.tpl
 	umask 022
-	tpage --debug=undef --eval_perl control.tpl > $(BUILDDIR)/DEBIAN/control || rm -f $@
+	tpage --debug=undef --eval_perl --define BBBIKE_DEBIAN_REVISION=$(BBBIKE_DEBIAN_REVISION) control.tpl > $(BUILDDIR)/DEBIAN/control || rm -f $@
 
 debian-copy-files:
 	umask 022
@@ -52,24 +58,29 @@ debian-compile:
 
 debian-man:
 	umask 022
-	mkdir -p `dirname $(BUILDBBBIKEROOT)$(MANPAGE)`
-	pod2man $(BBBIKEROOT)/bbbike.pod > $(BUILDBBBIKEROOT)$(MANPAGE)
+	mkdir -p `dirname $(BUILDDIR)$(MANPAGE)`
+	pod2man $(BBBIKEROOT)/bbbike.pod > $(BUILDDIR)$(MANPAGE)
 
 debian-copyright:
 	umask 022
-	mkdir -p $(BUILDDIR)/usr/share/doc/bbbike
-	perl > $(BUILDDIR)/usr/share/doc/bbbike/copyright -e \
+	mkdir -p $(BUILDDIR)$(BBBIKEDOCDIR)
+	perl > $(BUILDDIR)$(BBBIKEDOCDIR)/copyright -e \
 	'print qq{Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.\nThis is free software; you can redistribute it and/or modify it under the\nterms of the GNU General Public License, see the file\n/usr/share/common-licenses/GPL\n}'
 
 debian-symlinks:
 	umask 022
 	mkdir -p $(BUILDDIR)/usr/bin
-	rm -f $(BUILDDIR)/usr/bin/bbbike
-	ln -s $(BBBIKETARGETDIR)/bbbike $(BUILDDIR)/usr/bin/bbbike
+	ln -sf $(BBBIKETARGETDIR)/bbbike $(BUILDDIR)/usr/bin/bbbike
+	mkdir -p $(BUILDDIR)$(BBBIKEDOCDIR)
+	for i in README README.english README.english.html README.html bbbike.html bbbike_internals.html bbd.html podindex.html; do \
+	    echo "Symlink $(BBBIKETARGETDIR)/$$i ..."; \
+	    ln -sf $(BBBIKETARGETDIR)/$$i $(BUILDDIR)$(BBBIKEDOCDIR)/$$i; \
+	done
 
 debian-build:
 	umask 022
-	dpkg -b $(BUILDDIR)
+	dpkg -b $(BUILDDIR) /tmp/$(BBBIKEDEBIAN)
+	@echo "Debian package available at /tmp/$(BBBIKEDEBIAN)"
 
 debian-clean:
 	rm -rf $(BUILDDIR)
