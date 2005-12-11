@@ -1,4 +1,4 @@
-BBBike (forthcoming) RELEASE 3.15
+BBBike RELEASE 3.15 (2005-12-11)
 
 bbbike (ptk)
 - added "draw additional layers" pseudo icon
@@ -10,20 +10,38 @@ bbbike (ptk)
 - fixed DnD in layer reordering for Tk804
 - info window: link to Google Maps, show more coordinate systems
 - new Plugin for accessing Luise-Berlin information (only in CVS)
+- using better (?) Dialog implementation and avoid some memory leaks
+- removed plethora of buttons in Tk::Getopt option editor
+- fixed problem in perl-GPS interface where only one upload could be
+  done (Windows, Linux USB connections) 
+- WWW click mode (for map objects with URLs)
+- more options in full search dialog (regexp/glob, focus handling,
+  category/dist/normal sorting)
 - many bugfixes
 
 Data
 - Berlin, innerer S-Bahnring: komplett! (Thanks to Andreas Mühlhausen)
 - new layers: freeways (Autobahnen, rather complete in
   Berlin/Brandenburg) and comments_scenic (with no data yet)
+- new map signatures: orchards, industrial, mosques, cemeteries ...
+
+Modules
+- Salesman: support for tsplib files
+- various modules have GPX support now
 
 Install
 - Bugfix for Windows installer (shortcuts did not work for installations in
   "C:\Program files")
 - Support for building Debian packages (only in CVS)
 
+CGI
+- links to "beta" version of bbbike.cgi
+- Google Maps support (only in beta)
+- Mapserver: Radrouten layer (with a linked list)
+
 Misc
 - new documentation: HOWTO_edit_bbbike_data (only in CVS)
+- update of old bbbike, bbd etc. documentation
 
 ----------------------------------------------------------------------
 
