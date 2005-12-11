@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.4 2005/12/11 22:46:44 eserte Exp $
+# $Id: Makefile,v 1.3 2005/11/19 00:44:59 eserte Exp eserte $
 #
 
 # Run on a Debian system
@@ -36,7 +36,7 @@ debian-prepare:
 $(BUILDDIR)/DEBIAN/control:  $(BBBIKEROOT)/BBBikeVar.tpl \
 			     control.tpl
 	umask 022
-	tpage --debug=undef --eval_perl --define BBBIKE_DEBIAN_REVISION=$(BBBIKE_DEBIAN_REVISION) control.tpl > $(BUILDDIR)/DEBIAN/control || rm -f $@
+	tpage --debug=undef --eval_perl control.tpl > $(BUILDDIR)/DEBIAN/control || rm -f $@
 
 debian-copy-files:
 	umask 022

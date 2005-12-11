@@ -1,6 +1,6 @@
 [% PROCESS "../../BBBikeVar.tpl" -%]
 Package: bbbike
-Version: [% BBBike.STABLE_VERSION %]-[% BBBIKE_DEBIAN_REVISION %]
+Version: [% BBBike.STABLE_VERSION %]
 Section: misc
 Priority: optional
 Architecture: i386
