@@ -8,7 +8,7 @@ BBBike - ein Programm zum Suchen von Routen für Radfahrer in Berlin
 
 Die aktuellste BBBike-Archivdatei findet man im Verzeichnis
 L<http://sourceforge.net/project/showfiles.php?group_id=19142&package_id=14052> . Die aktuelle Sourcedatei ist
-L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz> .
+L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.15.tar.gz> .
 
 =head2 FreeBSD
 
@@ -36,10 +36,10 @@ mindestens die Version 5.005 benötigt.
 Danach kann BBBike ausgepackt werden:
 
 
-	zcat BBBike-3.14.tar.gz | tar xfv -
+	zcat BBBike-3.15.tar.gz | tar xfv -
 
 Falls perl/Tk (eine möglichst neue Version, z.B. 800.025 order 804.027) nicht
-installiert ist: in das Verzeichnis C<BBBike-3.14>
+installiert ist: in das Verzeichnis C<BBBike-3.15>
 wechseln und als Superuser
 
 
@@ -196,7 +196,7 @@ von Perl/Tk auf Mac OS X bekommt man in der comp.lang.perl.tk Newsgroup
 
 Folgende Anleitung habe ich von Wolfram Kroll erhalten:
 
-L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.14.tar.gz> und (von
+L<http://heanet.dl.sourceforge.net/sourceforge/bbbike/BBBike-3.15.tar.gz> und (von
 L<http://www.cpan.org>) perl-5.8.4-stable.tar.gz, Tk-804.027.tar.gz
 besorgt.
 

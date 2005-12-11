@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.61 2005/12/09 00:11:40 eserte Exp $
+# $Id: insert_points,v 1.62 2005/12/10 23:28:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -144,7 +144,7 @@ sub process {
 	die "Usage!";
     }
 
-    $top = $main::top; # unfortunately I cannot use Getopt::Long to provide $top
+    $top = $main::top = $main::top; # unfortunately I cannot use Getopt::Long to provide $top
     $datadir = "$bbbikerootdir/data" if !defined $datadir;
     $tempblockingdir = "$bbbikerootdir/data/temp_blockings" if !defined $tempblockingdir; # XXX was misc
 
@@ -198,7 +198,7 @@ sub process {
     my($from, @middle, $to, $new_to);
     my $extra;
     my @coords = @ARGV;
-    if (!@coords && Tk::Exists($top)) {
+    if (!@coords && defined &Tk::Exists && Tk::Exists($top)) {
 	my $sel_str = ($^O eq 'MSWin32'
 		       ? do { require Tk::Clipboard;
 			      $top->Tk::Clipboard::clipboardGet;

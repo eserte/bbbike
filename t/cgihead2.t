@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.11 2005/05/11 23:41:01 eserte Exp $
+# $Id: cgihead2.t,v 1.12 2005/12/11 08:01:13 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -75,21 +75,21 @@ for my $var (@var) {
 	    skip("No internet available", $no_tests)
 		if ($req->code == 500 && $req->message =~ /Bad hostname|No route to host/i);
 	    #warn $req->content;
-	    ok($req->is_success) or diag $req->content;
+	    ok($req->is_success, "Successful request of $url") or diag $req->content;
 	    my $content_type = $req->content_type;
 	    if ($url eq $BBBike::BBBIKE_UPDATE_DATA_CGI ||
 		$url =~ m{\.zip$}) {
-		is($content_type, "application/zip");
+		is($content_type, "application/zip", "Expected type (zip)");
 	    } elsif ($url =~ m{\.tar\.gz$}) {
-		is($content_type, "application/x-gzip");
+		is($content_type, "application/x-gzip", "Expected type (gzip)");
 	    } elsif ($url =~ m{/\.modified$}) {
-		is($content_type, "text/plain");
+		is($content_type, "text/plain", "Expected type (plain text)");
 	    } elsif ($url =~ m{wap}) {
-		is($content_type, "text/vnd.wap.wml");
+		is($content_type, "text/vnd.wap.wml", "Expected type (wml)");
 	    } elsif ($url =~ m{\.exe$}) {
-		is($content_type, "application/octet-stream");
+		is($content_type, "application/octet-stream", "Expected type (binary)");
 	    } else {
-		is($content_type, "text/html");
+		is($content_type, "text/html", "Expected type (html)");
 	    }
 	}
     }

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.20 2005/11/14 22:05:32 eserte Exp eserte $
+# $Id: vmzrobot.pl,v 1.21 2005/12/10 23:50:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.

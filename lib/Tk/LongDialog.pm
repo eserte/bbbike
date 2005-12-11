@@ -1,7 +1,7 @@
 package Tk::LongDialog;
 
 use vars qw($VERSION);
-$VERSION = '4.004'; # $Id: LongDialog.pm,v 1.1 2005/12/08 23:42:55 eserte Exp eserte $
+$VERSION = '4.004'; # $Id: LongDialog.pm,v 1.3 2005/12/10 21:49:45 eserte Exp $
 
 # Dialog - a translation of `tk_dialog' from Tcl/Tk to TkPerl (based on
 # John Stoffel's idea).
@@ -82,6 +82,30 @@ sub text {
 	$w_msg->delete("1.0", "end");
 	$w_msg->insert("end", $val);
 	$val;
+    }
+}
+
+# Override to "release" variable for destroyed windows.
+sub Wait {
+    my $cw = shift;
+    $cw->Callback(-showcommand => $cw);
+    my $aborted = 0;
+    if (!$cw->{HasOnDestroy}) {
+	$cw->{HasOnDestroy} = sub {
+	    $aborted = 1;
+	    $cw->{'selected_button'} = "ignore";
+	};
+	$cw->OnDestroy($cw->{HasOnDestroy});
+    }
+    $cw->waitVariable(\$cw->{'selected_button'});
+    if (Tk::Exists($cw)) { # may not exist if closed or destroyed
+	$cw->grabRelease;
+	$cw->withdraw;
+    }
+    if ($aborted) {
+	$cw->{'selected_button'} = undef;
+    } else {
+	$cw->Callback(-command => $cw->{'selected_button'});
     }
 }
 

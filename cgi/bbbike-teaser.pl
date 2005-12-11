@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.11 2005/06/16 22:34:37 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.12 2005/12/10 19:44:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -20,14 +20,16 @@ sub teaser {
     my @teasers_optional  = (
 			     'link',
 			     'wap',
+			     'routen',
 			     #'dobli',
 			    );
     my @teasers_mandatory = (
 			     $ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
 			     #teaser_perltk_newrelease(),
+			     teaser_beta(),
 			     teaser_perltk(),
 			     teaser_mapserver(),
-			     teaser_routen(),
+			     #teaser_routen(),
 			     #teaser_sternfahrt(),
 			     #teaser_dobli(),
 			    );
@@ -52,13 +54,13 @@ EOF
 
 sub teaser_perltk_newrelease {
     <<EOF;
-<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> der Perl/Tk-Version von BBBike mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.<br /><a class="new" href="@{[ $BBBike::LATEST_RELEASE_DISTDIR ]}"><span style="font-weight:bold;">NEU: Version $BBBike::STABLE_VERSION</a></span></div>
+<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> der Offline-Version von BBBike (Perl/Tk) mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.<br /><a class="new" href="@{[ $BBBike::LATEST_RELEASE_DISTDIR ]}"><span style="font-weight:bold;">NEU: Version $BBBike::STABLE_VERSION</a></span></div>
 EOF
 }
 
 sub teaser_perltk {
     <<EOF;
-<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> der Perl/Tk-Version von BBBike mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.</div>
+<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> der Offline-Version von BBBike (Perl/Tk) mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.</div>
 EOF
 }
 
@@ -105,6 +107,16 @@ sub teaser_radzeit {
     <<EOF;
 <div class="teaser"><a href="http://www.radzeit.de"><!--img src="http://www.radzeit.de/uploads/images/1/thumb-RadZeit_Logo2.gif" width="100" height="21"--><b>Radzeit.de</b></a></div>
 EOF
+}
+
+sub teaser_beta {
+    if (!$is_beta) {
+	<<EOF;
+<div class="teaser">Was gibt es in der <a href="$bbbike_url?info=1#beta" style="font-weight:bold;">nächsten Version</a> von www.bbbike.de?</div>
+EOF
+    } else {
+	();
+    }
 }
 
 1;

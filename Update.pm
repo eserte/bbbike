@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Update.pm,v 1.19 2005/05/09 22:58:46 eserte Exp eserte $
+# $Id: Update.pm,v 1.20 2005/12/10 23:46:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2003,2005 Slaven Rezic. All rights reserved.
@@ -121,20 +121,24 @@ sub update_http {
 	if ($main::verbose) {
 	    print STDERR "$src_file => $dest_file...";
 	}
-	my($res, $success);
+	my($res, $success, $modified);
 	my $code;
 	if ($ua) {
 	    $res = $ua->request(new HTTP::Request('GET', $src_file, $h),
 				$dest_file);
 	    $code = $res->code;
 	    $success = $res->is_success;
+	    if ($code == 200) {
+		$modified = 1;
+	    }
 	} else {
 	    my(%res) = Http::get('url' => $src_file,
 				 %$h,
 				);
 	    $code = $res{'error'};
-	    $success = ($code <= 304); # OK or Not-modified
-	    if ($code == 200) { # OK
+	    $success = ($code <  400); # OK or Not-modified
+	    $modified = ($code == 200); # OK
+	    if ($modified) { # OK
 		eval {
 		    open(OUT, ">$dest_file~") or die $!;
 		    print OUT $res{'content'} or die $!;
@@ -153,7 +157,7 @@ sub update_http {
 	    }
 	}
 	my $fatal = $code >= 500;
-	if ($success) {
+	if ($modified) {
 	    my $tmp = $dest_file . "~~";
 	    rename $real_dest_file, $tmp;
 	    rename $dest_file, $real_dest_file;
@@ -180,7 +184,9 @@ sub update_http {
 		    print STDERR " keine Änderung\n" if $main::verbose;
 		}
 	    } else {
-		push @errors, "Fehler beim Übertragen der Datei $src_file";
+		if (!$success) {
+		    push @errors, "Fehler beim Übertragen der Datei $src_file";
+		}
 	    }
 	}
 	last if $fatal;
@@ -251,12 +257,18 @@ sub create_modified {
     my(%modified) = %{$args{-modified}};
     eval {
 	open(MOD, ">$datadir/.modified~") or die $!;
+	my @errors;
 	foreach my $file (@files) {
 	    my(@stat) = stat("$destdir/$file");
 	    if (!@stat) {
-		die "Cannot stat $destdir/$file: $!";
+		push @errors, "$destdir/$file: $!";
+		next;
 	    }
 	    print MOD "$file\t$stat[9]\n" or die $!;
+	}
+	if (@errors) {
+	    main::status_message(M("Die folgenden Dateien haben Fehler erzeugt:\n") . join("\n", @errors),
+				 "die");
 	}
 	close MOD or die $!;
     };

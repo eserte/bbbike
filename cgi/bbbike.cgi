@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.39 2005/12/02 22:49:11 eserte Exp $
+# $Id: bbbike.cgi,v 7.41 2005/12/10 23:46:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -75,7 +75,8 @@ use BrowserInfo 1.31;
 use strict;
 use vars qw($VERSION $VERBOSE $WAP_URL
 	    $debug $tmp_dir $mapdir_fs $mapdir_url $local_route_dir
-	    $bbbike_root $bbbike_images $bbbike_url $bbbike_html
+	    $bbbike_root $bbbike_images $bbbike_url $bbbike2_url $is_beta
+	    $bbbike_html
 	    $modperl_lowmem $use_imagemap $create_imagemap $detailmap_module
 	    $q %persistent %c $got_cookie
 	    $g_str $orte $orte2 $multiorte
@@ -684,7 +685,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.39 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.41 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -771,6 +772,11 @@ if (!defined $bbbike_images) {
 if (!defined $bbbike_html) {
     $bbbike_html   = "$bbbike_root/" . ($use_cgi_bin_layout ? "BBBike/" : "") .
 	"html";
+}
+$is_beta = $q->url =~ m{bbbike\d\.cgi}; # bbbike2.cgi ...
+$bbbike2_url = $q->url;
+if (!$is_beta) {
+    $bbbike2_url =~ s{bbbike\.cgi}{bbbike2.cgi};
 }
 
 #XXX ! stay shared: my($fontstr, $fontend);
@@ -5109,7 +5115,11 @@ sub header {
 	    print "<img alt=\"\" src=\"$bbbike_images/srtbike.gif\" hspace=10>";
 	} else {
 	    my $use_css = !$bi->{'css_buggy'};
-	    print "<a href='$bbbike_url?begin=1' title='Zurück zur Hauptseite' style='text-decoration:none; color:black;'>$args{-title}";
+	    my $title = $args{-title};
+	    if ($is_beta) {
+		$title = "BB<span style='font-style:italic;'>&#x03B2;</span>ike</a>";
+	    }
+	    print "<a href='$bbbike_url?begin=1' title='Zurück zur Hauptseite' style='text-decoration:none; color:black;'>$title";
 	    print "<img";
 	    if ($use_css) {
 		print ' style="position:relative; top:15px; left:-15px;"';
@@ -5657,6 +5667,7 @@ sub show_info {
  <li><a href="#resourcen">Weitere Möglichkeiten mit BBBike</a>
   <ul>
    <li><a href="#perltk">Perl/Tk-Version</a>
+   <li><a href="#beta">Beta-Version</a>
    <li><a href="#pda">PDA-Version</a>
    <li><a href="#wap">WAP</a>
    <li><a href="#gpsupload">GPS-Upload</a>
@@ -5751,6 +5762,8 @@ Es gibt eine wesentlich komplexere Version von BBBike mit interaktiver Karte, me
 <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">Hier</a>
 bekommt man dazu mehr Informationen. Als Beispiel kann man sich
 <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}/screenshots.de.html">Screenshots</a> der Perl/Tk-Version angucken.
+<a name="beta"><h4>Beta-Version</h4></a>
+Zukünftige BBBike-Features können <a href="$bbbike2_url">hier</a> getestet werden.
 <a name="pda"><h4>PDA-Version für iPAQ/Linux</h4></a>
 Für iPAQ-Handhelds mit Familiar Linux gibt es eine kleine Version von BBBike: <a href="@{[ $BBBike::BBBIKE_SF_WWW ]}">tkbabybike</a>.
 <a name="wap"><h4>WAP</h4></a>
@@ -5838,7 +5851,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/12/02 22:49:11 $';
+    my $cgi_date = '$Date: 2005/12/10 23:46:45 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {
