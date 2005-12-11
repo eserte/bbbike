@@ -158,7 +158,6 @@ Galileistr.: Qualität? Name westl. der Neuendorfer Str. noch immer Galileistr?	?
 Im Schäferfeld: Qualität?	? -8114,-3675 -8475,-3861
 Im Schäferfeld - Nuthe: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)? genaue Wegführung? Durchfahrt möglich?	? -8475,-3861 -8813,-3912 -8915,-4069 -9306,-4259
 Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? -6983,-3886 -7077,-4186 -6902,-4397 -6775,-4326 -6671,-6390 -6516,-6520 -6508,-6969 -6183,-7600 -6319,-7823 -5766,-8911 -5387,-8896
-Puschkinallee: Einbahnstraße Richtung Nord/West auch für Radfahrer?	? -12811,533 -12922,762 -13052,775
 F3 nach Marquardt: genaue Wegführung? Qualität?	? -19309,4359 -19403,4631 -18693,4568
 F3 nach Marquardt: genaue Wegführung? Laut "mobil-potsdam.de" Kopfsteinpflaster	? -18693,4568 -18825,4750
 Schwarzer Weg: Durchfahrt Richtung Marquardt möglich?	? -18513,4458 -18693,4568
@@ -411,7 +410,6 @@ Lange Str. (Lichterfelde): Qualität?	? 5865,1975 5791,1927 5656,1882 5519,1831 5
 Gabelberger Str.: Linksabbiegen in die Frankfurter Allee möglich?	? 14381,12205
 Matternstr.: Linksabbiegen in die Petersburger Str. möglich?	? 13579,12904
 Gransee - Meseberg: Qualität?	? -7696,66033 -8112,65637 -8762,65250 -9437,65037 -9912,64300 -10287,64175 -10675,63237 -11088,62914
-Busseeallee: Qualität, wahrscheinlich Kopfsteinpflaster?	? 166,3040 82,3166 -249,3632
 Am Heidekampgraben: zurzeit Bauarbeiten (Grünzugumgestaltung), Durchfahrt nicht möglich	? 15053,7966 14969,7580 15162,7281 15342,7013 15563,6683 15577,6518
 Polizei in der Friesenstr.: genaue Gebäude, genaue Funktion?	F:? 9828,8934 9828,8725 10183,8707 10228,8790 10230,8916
 Hermsdorfer Str. (Hohen Neuendorf): Qualität?	? 621,29356 625,29868
@@ -667,6 +665,8 @@ Sandgrasweg - Havelmüllerweg: Qualität?	? 2896,21031 2914,20944 2916,20870
 Tornower Weg - Mauerweg am Nordgraben: Durchfahrt für Radfahrer möglich, Qualität?	? 6461,20642 6488,20505
 Schlesische Str.: Radspur zwischen U-Bahnhof und Falckensteinstr. fehlt noch	?; 13035,10635 13135,10551
 Schlesische Str./Puschkinallee: wie weicht reicht die Radspur bzw. der Suggestivstreifen?	? 13579,10146 13540,10190 13493,10234 13440,10284 13375,10344
+Russische Kolonie: ist der Abschnitt von Friedrich-Ebert-Str./Alleestr. für Autofahrer gesperrt?	? -13091,-8 -12947,106
+Krughorn - Klein-Glienicke: Bauarbeiten, aber Durchfahrt noch möglich. Wie sieht es nach den Bauarbeiten aus?	? -10587,471 -10573,564 -10512,683 -10430,848 -10273,1088 -10209,1161 -10163,1288 -10078,1551
 wirklich?	? 9215,3599
 Wirklich?	? -3755,17090
 geplante Ampel in der Johannisthaler	? 14196,2876
@@ -706,7 +706,6 @@ Tivoliplatz (Qualität? Zur Zeit Zugang nur über Treppe.)	? 8949,8989 8950,8954
 (Park am Hochmeisterplatz) (geht der Platz offiziell bis zu diesem Weg)	? 3361,10000 3474,9990
 Bambachstr. (Qualität? Behinderungen?)	? 12037,6706 12046,6645
 Borkheide - Neuendorf (ungenaue Koordinaten!)	? -26338,-21122 -27908,-22935 -28547,-22981 -29244,-23127
-Russ. Kolonie (dieser Abschnitt von Alexandrowka tatsächlich für Autofahrer gesperrt?)	? -12855,-72 -12947,106 -13050,337
 Görlsdorf - Peetzig (Qualität?)	? 45584,72614 45209,73684 45124,74047 44996,74261 44200,74890
 Kanalstr. (Bansin) (Qualität: wahrscheinlich Asphalt?)	? 57343,173415 57537,173587 57668,173750
 Gransee (Gehronsee (auch laut Regio-Atlas, Tsp), Geronsee (Tippfehler im Tsp?), Gransee (auch laut ALDI-Karte): was stimmt?)	? -7203,67185 -7245,67645 -6770,67990 -6533,68121 -6252,67950 -6014,67972 -5927,67800 -6360,67648 -6770,67411 -7030,67079
@@ -725,6 +724,7 @@ Nalepastr.: Betonstr., Eisenbahnschienen (stimmt das?)	? 17043,7512 17211,7265
 Braunschweiger Ufer: asphaltiert (zumindest Richtung Osten von der Rungiusstr. aus:)	? 13077,5893 13483,5973
 Braunschweiger Ufer: Parkweg (zumindest Richtung Westen von der Rungiusstr. aus:)	? 13077,5893 12718,5845
 Invalidenfriedhof: Asphalt (tatsächlich asphaltiert?)	? 8114,13921 8015,14109
+Busseallee: Kopfsteinpflaster (ist der Abschnitt zwischen Fischerhüttenstr. und Beerenstr. auch Kopfsteinpflaster?)	? 166,3040 82,3166 -249,3632
 Margueritenring: Kopfsteinpflaster (Hier widerspricht die ADFC-Karte und meint "gut geeignet")	? 16491,2239 16807,2245 16898,2239 17009,2095 17060,2087 17382,2064 17421,2090
 Heegermühler Weg: schlechtes Kopfsteinpflaster (Hier wurde als Range "5-15" angegegeben. Hausnummern?)	? 7966,19968 8043,19725 8231,19806 8415,19910
 (Unter dem S-Bhf. Schichauweg): Verbundsteinpflaster (tatsächlich Verbundsteinpflaster?)	? 9693,-621 9518,-668

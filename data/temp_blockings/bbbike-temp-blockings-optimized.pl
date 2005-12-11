@@ -644,14 +644,7 @@ userdel	q4 -8886,85737 -9850,84800
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1134255600,
-         'text' => 'L 201 Nauener Chaussee Bahnübergang bei Falkensee Gleisbauarbeiten Vollsperrung 09.12.2005-10.12.2005 ',
-         'from' => 1133996400,
-         'data' => 'userdel	2 -13941,20658 -13887,20543 -13743,20218
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1152568800,
          'text' => 'L 202 Wustermark-Brieselang Brücke über Havelkanal bei Zeestow Brückenneubau Vollsperrung; Umleitung 07.11.2005-10.07.2006 ',
