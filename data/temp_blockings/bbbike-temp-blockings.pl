@@ -3460,4 +3460,12 @@ userdel	2 10310,-2136 10453,-2133
 userdel	2 10453,-2133 10747,-2129
 EOF
      },
+     { from  => 1134255600, # 2005-12-11 00:00
+       until => 1134752400, # 2005-12-16 18:00
+       text  => 'Tietzenweg zwischen Margaretenstraße und Unter den Eichen, Baustelle, Straße gesperrt. Dauer: 12.12.2005 bis 16.12.2005,18.00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 3490,4449 3425,4541
+EOF
+     },
     );

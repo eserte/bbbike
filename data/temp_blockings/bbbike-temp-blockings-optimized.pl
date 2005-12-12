@@ -619,14 +619,7 @@ userdel	q4 -8886,85737 -9850,84800
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1134342000,
-         'text' => 'L 16 Bahnübergang bei Siedlung Schönwalde Gleisbauarbeiten Vollsperrung 10.12.2005-11.12.2005 ',
-         'from' => 1134082800,
-         'data' => 'userdel	2 -10559,23255 -10737,23418
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1134687600,
          'text' => 'L 23 Töpferstr. OD Joachimsthal, Kno. Angermünder Str. Ausbau Kreisverkehrsplatz Vollsperrung 01.11.2005-15.12.2005 ',
@@ -653,13 +646,12 @@ userdel	q4 -8886,85737 -9850,84800
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'until' => 1134345600,
-         'text' => 'Bahnhofstraße zwischen Goltzstraße und Steinstraße, Weihnachtsmarkt, Straße gesperrt. Dauer: 10.12.2005 06:00 Uhr bis 12.12.2005 01:00 Uhr. ',
-         'from' => 1134104400,
-         'data' => 'userdel	2 10945,-2124 10747,-2129
-userdel	2 10310,-2136 10453,-2133
-userdel	2 10453,-2133 10747,-2129
+         'until' => 1134752400,
+         'text' => 'Tietzenweg zwischen Margaretenstraße und Unter den Eichen, Baustelle, Straße gesperrt. Dauer: 12.12.2005 bis 16.12.2005,18.00 Uhr ',
+         'from' => 1134255600,
+         'data' => 'userdel	2 3490,4449 3425,4541
 ',
          'type' => 'gesperrt'
        }

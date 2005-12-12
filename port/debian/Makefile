@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.3 2005/11/19 00:44:59 eserte Exp eserte $
+# $Id: Makefile,v 1.5 2005/12/12 23:19:52 eserte Exp $
 #
 
 # Run on a Debian system
@@ -10,19 +10,19 @@ BUILDBBBIKEROOT=$(BUILDDIR)$(BBBIKETARGETDIR)
 BBBIKEROOT=	$(shell pwd)/../..
 BBBIKE_STABLE_VERSION=$(shell perl -I$(BBBIKEROOT) -MBBBikeVar -e 'print $$BBBike::STABLE_VERSION')
 BBBIKE_DEBIAN_REVISION?=	1
-#MANPAGE=	/usr/local/man/man1/bbbike.1
 MANPAGE=	/usr/share/man/man1/bbbike.1
 BBBIKEDOCDIR=	/usr/share/doc/bbbike
-BBBIKEDEBIAN=	BBBike-$(BBBIKE_STABLE_VERSION)-$(BBBIKE_DEBIAN_REVISION).deb
+BBBIKEDEBIAN=	bbbike-$(BBBIKE_STABLE_VERSION)-$(BBBIKE_DEBIAN_REVISION).deb
 
 all:	debian-package
 
 debian-package: debian-prepare \
-		$(BUILDDIR)/DEBIAN/control \
+		debian-control \
 		debian-copy-files \
 		debian-compile \
 		debian-man \
 		debian-copyright \
+		debian-menu \
 		debian-symlinks \
 		debian-build
 
@@ -32,11 +32,15 @@ debian-prepare:
 	mkdir $(BUILDDIR)/DEBIAN
 	chmod 755 $(BUILDDIR)
 	chmod 755 $(BUILDDIR)/DEBIAN
+	ln -s $(BUILDDIR) bbbike
+
+debian-control: $(BUILDDIR)/DEBIAN/control
 
 $(BUILDDIR)/DEBIAN/control:  $(BBBIKEROOT)/BBBikeVar.tpl \
 			     control.tpl
 	umask 022
-	tpage --debug=undef --eval_perl control.tpl > $(BUILDDIR)/DEBIAN/control || rm -f $@
+	tpage --debug=undef --eval_perl --define BBBIKE_DEBIAN_REVISION=$(BBBIKE_DEBIAN_REVISION) control.tpl > $(BUILDDIR)/DEBIAN/control || rm -f $@
+	cp -f $(BUILDDIR)/DEBIAN/control control
 
 debian-copy-files:
 	umask 022
@@ -45,12 +49,6 @@ debian-copy-files:
 	cd $(BUILDBBBIKEROOT)/.. && tar xfvzp $(BBBIKEROOT)/distfiles/BBBike-$(BBBIKE_STABLE_VERSION).tar.gz
 	rmdir $(BUILDBBBIKEROOT)
 	cd `dirname $(BUILDBBBIKEROOT)` && mv BBBike-$(BBBIKE_STABLE_VERSION) BBBike
-
-# debian-copy-files:
-#	umask 022
-# 	mkdir -p $(BUILDBBBIKEROOT)
-# 	chmod 755 $(BUILDBBBIKEROOT)
-# 	cd $(BBBIKEROOT) && umask 022 && perl -MExtUtils::Manifest=manicopy,maniread -e '$$fs=maniread(q{MANIFEST}); manicopy($$fs,q{$(BUILDBBBIKEROOT)}, q{cp})'
 
 debian-compile:
 	umask 022
@@ -77,10 +75,18 @@ debian-symlinks:
 	    ln -sf $(BBBIKETARGETDIR)/$$i $(BUILDDIR)$(BBBIKEDOCDIR)/$$i; \
 	done
 
+debian-menu:
+	cd .. && dh_installmenu
+
 debian-build:
 	umask 022
-	dpkg -b $(BUILDDIR) /tmp/$(BBBIKEDEBIAN)
-	@echo "Debian package available at /tmp/$(BBBIKEDEBIAN)"
+	cd .. && dh_compress
+	cd .. && sudo dh_fixperms
+	cd .. && sudo dh_installdeb
+	cd .. && sudo dh_md5sums
+	cd .. && dh_builddeb --destdir /tmp
 
 debian-clean:
 	rm -rf $(BUILDDIR)
+	cd .. && dh_clean
+	rm -f control
