@@ -1,0 +1,2 @@
+application/x-bbbike-data; bbbike '%s'; description=BBBike data; test=test -n "$DISPLAY"; priority=5
+application/x-bbbike-route; bbbike '%s'; description=BBBike route; test=test -n "$DISPLAY"; priority=5

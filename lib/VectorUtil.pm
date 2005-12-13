@@ -1,8 +1,7 @@
-#!/usr/local/bin/perl -w
 # -*- perl -*-
 
 #
-# $Id: VectorUtil.pm,v 1.16 2004/05/09 11:56:50 eserte Exp $
+# $Id: VectorUtil.pm,v 1.17 2005/12/13 22:43:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001,2004 Slaven Rezic. All rights reserved.
@@ -17,7 +16,7 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.17 $ =~ /(\d+)\.(\d+)/);
 
 require Exporter;
 @ISA = 'Exporter';

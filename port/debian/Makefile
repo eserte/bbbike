@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.5 2005/12/12 23:19:52 eserte Exp $
+# $Id: Makefile,v 1.5 2005/12/12 23:19:52 eserte Exp eserte $
 #
 
 # Run on a Debian system
@@ -12,7 +12,8 @@ BBBIKE_STABLE_VERSION=$(shell perl -I$(BBBIKEROOT) -MBBBikeVar -e 'print $$BBBik
 BBBIKE_DEBIAN_REVISION?=	1
 MANPAGE=	/usr/share/man/man1/bbbike.1
 BBBIKEDOCDIR=	/usr/share/doc/bbbike
-BBBIKEDEBIAN=	bbbike-$(BBBIKE_STABLE_VERSION)-$(BBBIKE_DEBIAN_REVISION).deb
+PACKAGEDIR=	$(BBBIKEROOT)/distfiles
+SKIPCOMPILE?=
 
 all:	debian-package
 
@@ -27,64 +28,63 @@ debian-package: debian-prepare \
 		debian-build
 
 debian-prepare:
-	umask 022
-	mkdir $(BUILDDIR)
-	mkdir $(BUILDDIR)/DEBIAN
+	umask 022; mkdir $(BUILDDIR)
+	umask 022; mkdir $(BUILDDIR)/DEBIAN
 	chmod 755 $(BUILDDIR)
 	chmod 755 $(BUILDDIR)/DEBIAN
-	ln -s $(BUILDDIR) bbbike
+	umask 022; ln -s $(BUILDDIR) bbbike
 
 debian-control: $(BUILDDIR)/DEBIAN/control
 
 $(BUILDDIR)/DEBIAN/control:  $(BBBIKEROOT)/BBBikeVar.tpl \
 			     control.tpl
-	umask 022
-	tpage --debug=undef --eval_perl --define BBBIKE_DEBIAN_REVISION=$(BBBIKE_DEBIAN_REVISION) control.tpl > $(BUILDDIR)/DEBIAN/control || rm -f $@
-	cp -f $(BUILDDIR)/DEBIAN/control control
+	umask 022; tpage --debug=undef --eval_perl --define BBBIKE_DEBIAN_REVISION=$(BBBIKE_DEBIAN_REVISION) control.tpl > $(BUILDDIR)/DEBIAN/control || rm -f $@
+	umask 022; cp -f $(BUILDDIR)/DEBIAN/control control
 
 debian-copy-files:
-	umask 022
-	mkdir -p $(BUILDBBBIKEROOT)
+	umask 022; mkdir -p $(BUILDBBBIKEROOT)
 	chmod 755 $(BUILDBBBIKEROOT)
-	cd $(BUILDBBBIKEROOT)/.. && tar xfvzp $(BBBIKEROOT)/distfiles/BBBike-$(BBBIKE_STABLE_VERSION).tar.gz
+	umask 022; cd $(BUILDBBBIKEROOT)/.. && tar xfvzp $(BBBIKEROOT)/distfiles/BBBike-$(BBBIKE_STABLE_VERSION).tar.gz
 	rmdir $(BUILDBBBIKEROOT)
-	cd `dirname $(BUILDBBBIKEROOT)` && mv BBBike-$(BBBIKE_STABLE_VERSION) BBBike
+	umask 022; cd `dirname $(BUILDBBBIKEROOT)` && mv BBBike-$(BBBIKE_STABLE_VERSION) BBBike
 
 debian-compile:
-	umask 022
+ifndef SKIPCOMPILE
 	cd $(BBBIKEROOT)/ext && umask 022 && make ext && make clean
+endif
 
 debian-man:
-	umask 022
-	mkdir -p `dirname $(BUILDDIR)$(MANPAGE)`
-	pod2man $(BBBIKEROOT)/bbbike.pod > $(BUILDDIR)$(MANPAGE)
+	umask 022; mkdir -p `dirname $(BUILDDIR)$(MANPAGE)`
+	umask 022; pod2man $(BBBIKEROOT)/bbbike.pod > $(BUILDDIR)$(MANPAGE)
 
 debian-copyright:
-	umask 022
-	mkdir -p $(BUILDDIR)$(BBBIKEDOCDIR)
-	perl > $(BUILDDIR)$(BBBIKEDOCDIR)/copyright -e \
+	umask 022; mkdir -p $(BUILDDIR)$(BBBIKEDOCDIR)
+	umask 022; perl > $(BUILDDIR)$(BBBIKEDOCDIR)/copyright -e \
 	'print qq{Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.\nThis is free software; you can redistribute it and/or modify it under the\nterms of the GNU General Public License, see the file\n/usr/share/common-licenses/GPL\n}'
+	umask 022; piconv -f iso-8859-1 -t utf-8 < $(BUILDBBBIKEROOT)/CHANGES | gzip -9f > $(BUILDDIR)$(BBBIKEDOCDIR)/changelog.gz
+	umask 022; gzip -9f < changelog.Debian > $(BUILDDIR)$(BBBIKEDOCDIR)/changelog.Debian.gz
 
 debian-symlinks:
-	umask 022
-	mkdir -p $(BUILDDIR)/usr/bin
-	ln -sf $(BBBIKETARGETDIR)/bbbike $(BUILDDIR)/usr/bin/bbbike
-	mkdir -p $(BUILDDIR)$(BBBIKEDOCDIR)
-	for i in README README.english README.english.html README.html bbbike.html bbbike_internals.html bbd.html podindex.html; do \
+	umask 022; mkdir -p $(BUILDDIR)/usr/bin
+	umask 022; ln -sf ../lib/BBBike/bbbike $(BUILDDIR)/usr/bin/bbbike
+	umask 022; mkdir -p $(BUILDDIR)$(BBBIKEDOCDIR)
+	umask 022; for i in README README.english README.english.html README.html bbbike.html bbbike_internals.html bbd.html podindex.html; do \
 	    echo "Symlink $(BBBIKETARGETDIR)/$$i ..."; \
-	    ln -sf $(BBBIKETARGETDIR)/$$i $(BUILDDIR)$(BBBIKEDOCDIR)/$$i; \
+	    ln -sf ../../../lib/BBBike/$$i $(BUILDDIR)$(BBBIKEDOCDIR)/$$i; \
 	done
 
 debian-menu:
-	cd .. && dh_installmenu
+	cd .. && umask 022 && dh_installmenu
 
 debian-build:
-	umask 022
-	cd .. && dh_compress
-	cd .. && sudo dh_fixperms
-	cd .. && sudo dh_installdeb
-	cd .. && sudo dh_md5sums
-	cd .. && dh_builddeb --destdir /tmp
+	cd .. && umask 022 && dh_compress
+	cd .. && umask 022 && sudo dh_fixperms
+	find $(BUILDDIR) | xargs chmod ugo+r
+	find $(BUILDDIR) -perm -u=x | xargs chmod go+x
+	find $(BUILDDIR) | sudo xargs chown root:root
+	cd .. && umask 022 && sudo dh_installdeb
+	cd .. && umask 022 && sudo dh_md5sums
+	cd .. && umask 022 && dh_builddeb --destdir $(PACKAGEDIR)
 
 debian-clean:
 	rm -rf $(BUILDDIR)

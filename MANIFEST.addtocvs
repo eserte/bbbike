@@ -323,6 +323,10 @@ port/ipk/mkipk.pl
 port/MetaPort.pm
 port/debian/Makefile
 port/debian/control.tpl
+port/debian/bbbike.menu
+port/debian/bbbike.mime
+port/debian/compat
+port/debian/changelog.Debian
 lib/.cvsignore
 miscsrc/geocode_images
 miscsrc/BBBikeViewImages.pm

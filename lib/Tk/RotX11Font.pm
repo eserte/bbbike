@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: RotX11Font.pm,v 1.15 2005/11/05 22:42:55 eserte Exp eserte $
+# $Id: RotX11Font.pm,v 1.15 2005/11/05 22:42:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 1999 Slaven Rezic. All rights reserved.
