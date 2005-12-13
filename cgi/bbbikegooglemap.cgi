@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.22 2005/12/10 23:47:01 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.23 2005/12/13 00:03:03 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -74,11 +74,22 @@ sub run {
 	$gpx->init;
 	while(1) {
 	    my $r = $gpx->next;
+	    if (!$r || !UNIVERSAL::isa($r->[Strassen::COORDS()], "ARRAY")) {
+		warn "Parse error in line " . $gpx->pos . ", skipping...";
+		next;
+	    }
 	    last if !@{ $r->[Strassen::COORDS()] };
-	    # XXX hack --- should append recognise self_or_default?
-	    $CGI::Q->append(-name   => 'coords',
-			    -values => [join "!", @{ $r->[Strassen::COORDS()] }],
-			   );
+	    if (@{ $r->[Strassen::COORDS()] } == 1) { # treat as waypoint
+		# XXX hack --- should append recognise self_or_default?
+		$CGI::Q->append(-name   => 'wpt',
+				-values => $r->[Strassen::NAME()] . "!" . $r->[Strassen::COORDS()][0]
+			       );
+	    } else {
+		# XXX hack --- should append recognise self_or_default?
+		$CGI::Q->append(-name   => 'coords',
+				-values => [join "!", @{ $r->[Strassen::COORDS()] }],
+			       );
+	    }
 	}
     }
 
@@ -360,10 +371,11 @@ EOF
 
     for my $wpt (@$wpts) {
 	my($x,$y,$name) = @$wpt;
-	my $html_name = escapeHTML($name);
+	#my $html_name = escapeHTML($name);
+	my $html_name = hrefify($name);
 	$html .= <<EOF;
     var point = new GPoint($x,$y);
-    var marker = createMarker(point, "$html_name");
+    var marker = createMarker(point, '$html_name');
     map.addOverlay(marker);
 EOF
     }
@@ -429,6 +441,42 @@ EOF
 </html>
 EOF
 }
+
+# REPO BEGIN
+# REPO NAME hrefify /home/e/eserte/work/srezic-repository 
+# REPO MD5 10b14ef52873d9c6b53d959919cbcf54
+
+=head2 hrefify($text)
+
+Create <a href="...">...</a> tags around things which look like URLs
+and HTML-escape everything else.
+
+=cut
+
+sub hrefify {
+    my($text) = @_;
+
+    require HTML::Entities;
+    my $enc = sub {
+	HTML::Entities::encode_entities_numeric($_[0], q{<>&"'\\\\\177-\x{fffd}});
+    };
+
+    my $lastpos;
+    my $ret = "";
+    while($text =~ m{(.*)((?:https?|ftp)://\S+)}g) {
+	my($plain, $href) = ($1, $2);
+	$ret .= $enc->($plain);
+	$ret .= qq{<a href="} . $enc->($href) . qq{">} . $enc->($href) . qq{</a>};
+	$lastpos = pos($text);
+    }
+    if (!defined $lastpos) {
+	$ret .= $enc->($text);
+    } else {
+	$ret .= $enc->(substr($text, $lastpos));
+    }
+    $ret;
+}
+# REPO END
 
 return 1 if caller;
 

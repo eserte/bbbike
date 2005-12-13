@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mkport.pl,v 1.26 2005/04/30 09:09:26 eserte Exp $
+# $Id: mkport.pl,v 1.28 2005/12/13 00:51:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2004 Slaven Rezic. All rights reserved.
@@ -127,23 +127,32 @@ mkdir $portdir, 0755 or die $!;
 substitute("Makefile.tmpl", "$portdir/Makefile");
 
 my $plist = "$portdir/pkg-plist.in";
-#my $plist5005 = "$portdir/pkg-plist.5005";
 open(PLIST, ">$plist") or die "Can't write to $plist: $!";
-#open(PLIST_5005, ">$plist5005") or die "Can't write to $plist5005: $!";
 foreach (sort @files) {
     plist_line($_);
-#    plist_line($_, \*PLIST_5005);
 }
+
+my %insert_after;
+my $in_insert_after;
 
 if (open(PLISTADD, "pkg-plist.add")) {
     while(<PLISTADD>) {
 	chomp;
-#	plist_line($_, \*PLIST_5005);
 	my $l = $_;
-# 	if ($l =~ m|^lib/|) {
-# 	    $l =~ s|^lib|lib/%%PERL_VER%%|;
-	    plist_line($l);
-#	}
+	if ($l =~ /^#/) {
+	    if ($l =~ /^# after:\s*(.*)/) {
+		$in_insert_after = $1;
+	    } else {
+		die "Unknown # directive $l";
+	    }
+	} else {
+	    if (defined $in_insert_after) {
+		$insert_after{$in_insert_after} = $l;
+		undef $in_insert_after;
+	    } else {
+		plist_line($l);
+	    }
+	}
     }
     close PLISTADD;
 }
@@ -159,11 +168,18 @@ foreach my $dir (keys %dir) {
     }
 }
 foreach (sort { dircmp($a, $b) } keys %dir) {
-    print PLIST "\@dirrm $_\n";
-#    print PLIST_5005 "\@dirrm $_\n";
+    my $line = "\@dirrm $_";
+    print PLIST "$line\n";
+    if (exists $insert_after{$line}) {
+	print PLIST $insert_after{$line}, "\n";
+	delete $insert_after{$line};
+    }
 }
-#close PLIST_5005;
 close PLIST;
+
+if (keys %insert_after) {
+    die "Following insert afters were unhandled: " . keys(%insert_after);
+}
 
 warn "Get MD5 of $bbbike_archiv_dir/$bbbike_archiv:\n";
 my $md5 = `cd $bbbike_archiv_dir; md5 $bbbike_archiv`;
