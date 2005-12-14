@@ -518,14 +518,7 @@ userdel	q4 52316,69186 50891,68557
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1134428400,
-         'text' => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 10.12.2005-12.12.2005 ',
-         'from' => 1134082800,
-         'data' => 'userdel	2 16336,-29511 16379,-29446
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1137020400,
          'text' => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 11.01.2006-11.01.2006 ',
@@ -652,6 +645,30 @@ userdel	q4 -8886,85737 -9850,84800
          'text' => 'Tietzenweg zwischen Margaretenstraße und Unter den Eichen, Baustelle, Straße gesperrt. Dauer: 12.12.2005 bis 16.12.2005,18.00 Uhr ',
          'from' => 1134255600,
          'data' => 'userdel	2 3490,4449 3425,4541
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1134774000,
+         'text' => 'B 167 Eisenbahn- u. Heegermühler Str. OD Eberswalde, Eisenbahnbrücke Ersatzneubau Brücke Vollsperrung; Umleitung 14.12.2005-16.12.2005 ',
+         'from' => 1134428400,
+         'data' => 'userdel	2 36913,48088 36403,48168
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1136588400,
+         'text' => 'L 074 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung; Umleitung 04.01.2006-06.01.2006 ',
+         'from' => 1136242800,
+         'data' => 'userdel	2 15682,-26971 15960,-26906
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1137798000,
+         'text' => 'L 074 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung; Umleitung 19.01.2006-20.01.2006 ',
+         'from' => 1137538800,
+         'data' => 'userdel	2 15682,-26971 15960,-26906
 ',
          'type' => 'gesperrt'
        }

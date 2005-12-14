@@ -3468,4 +3468,28 @@ EOF
 userdel	2 3490,4449 3425,4541
 EOF
      },
+     { from  => 1134428400, # 2005-12-13 00:00
+       until => 1134774000, # 2005-12-17 00:00
+       text  => 'B 167 Eisenbahn- u. Heegermühler Str. OD Eberswalde, Eisenbahnbrücke Ersatzneubau Brücke Vollsperrung; Umleitung 14.12.2005-16.12.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 36913,48088 36403,48168
+EOF
+     },
+     { from  => 1136242800, # 2006-01-03 00:00
+       until => 1136588400, # 2006-01-07 00:00
+       text  => 'L 074 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung; Umleitung 04.01.2006-06.01.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 15682,-26971 15960,-26906
+EOF
+     },
+     { from  => 1137538800, # 2006-01-18 00:00
+       until => 1137798000, # 2006-01-21 00:00
+       text  => 'L 074 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung; Umleitung 19.01.2006-20.01.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 15682,-26971 15960,-26906
+EOF
+     },
     );
