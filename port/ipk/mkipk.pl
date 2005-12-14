@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mkipk.pl,v 1.5 2003/01/12 20:02:15 eserte Exp $
+# $Id: mkipk.pl,v 1.6 2005/12/14 20:17:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -12,6 +12,8 @@
 # Mail: slaven@rezic.de
 # WWW:  http://www.rezic.de/eserte/
 #
+
+# Create a ipk (iPAQ package) for tkbabybike or babybike.
 
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../..");

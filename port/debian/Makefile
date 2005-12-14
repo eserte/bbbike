@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.6 2005/12/14 00:16:27 eserte Exp $
+# $Id: Makefile,v 1.6 2005/12/14 00:16:27 eserte Exp eserte $
 #
 
 # Run on a Debian system
@@ -50,7 +50,7 @@ debian-copy-files:
 
 debian-compile:
 ifndef SKIPCOMPILE
-	cd $(BBBIKEROOT)/ext && umask 022 && make ext && make clean
+	cd $(BUILDBBBIKEROOT)/ext && umask 022 && make ext && make clean
 endif
 
 debian-man:

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.41 2005/12/10 23:24:50 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.41 2005/12/10 23:24:50 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -185,6 +185,8 @@ do-copy-to-cvs-slow: MANIFEST.withcvs
 	perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread('MANIFEST.withcvs'),'${CVS_DIR}', 'cp');"
 
 # Show the diffs between the source BBBike directory and the CVS directory.
+# This can also be used to get a list of removed files which are still
+# in the CVS repository.
 diff-with-cvs:	MANIFEST.withcvs
 	makepatch --verbose \
 	    -oldmanifest MANIFEST.withcvs -newmanifest MANIFEST.withcvs \

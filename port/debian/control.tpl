@@ -22,7 +22,6 @@ Description: A route planner for cyclists in Berlin-Brandenburg
  .
   * A bike power calculator
  .
-
   * Automatically fetch current Berlin weather data
  .
  Web page: http://bbbike.sourceforge.net

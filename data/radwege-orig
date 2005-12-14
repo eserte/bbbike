@@ -1,5 +1,5 @@
 #: title: Radwege in Berlin
-#: version: $Id: radwege-orig,v 4.79 2005/12/10 23:41:13 eserte Exp $
+#: version: $Id: radwege-orig,v 4.79 2005/12/10 23:41:13 eserte Exp eserte $
 #:
 # (für Radwege in Brandenburg siehe comments_cyclepath)
 	RW1;RW1 9227,8890 9235,9051
@@ -3794,5 +3794,6 @@ Utrechter Str.	RW6;RW6 7279,16057 7491,16072
 	RW4;RW4 12190,11665 11963,11813
 	RW4;RW4 11963,11813 11908,11868 11773,12006
 	RW4;RW4 3763,12279 3770,12202 3782,12104 3785,12028 3810,11843 3837,11760 3844,11649
-	RW3;RW3 13440,10284 13375,10344 13250,10452 13135,10551
+#: note: durchgehend markiert, aber einige Schilder fehlen (noch?)
+	RW4;RW4 13579,10146 13540,10190 13493,10234 13440,10284 13375,10344 13250,10452 13135,10551
 	RW4;RW0 13135,10551 13035,10635
