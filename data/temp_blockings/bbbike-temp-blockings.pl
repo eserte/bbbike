@@ -2679,7 +2679,7 @@ userdel	2 -53139,50022 -54295,49682
 EOF
      },
      { from  => 1126648800, # 2005-09-14 00:00
-       until => 1204326000, # 2008-03-01 00:00
+       until => 1134601627, # aufgehoben, was 1204326000 2008-03-01 00:00
        text  => 'B 103; (Kyritzer Chaussee); OD Pritzwalk, zw. Fritz-Reuter-Str. u. Havelberger Str. Bau OU B189n halbseitig gesperrt; Einbahnstraße 15.09.2005-29.02.2008 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -3490,6 +3490,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 15682,-26971 15960,-26906
+EOF
+     },
+     { from  => 1130799600, # 2005-11-01 00:00
+       until => 1151704800, # 2006-07-01 00:00
+       text  => 'B 122 Schloßstr. OD Rheinsberg, zw. Königstr. und Lange Str. Kanalarbeiten Vollsperrung; 02.11.2005-30.06.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -25679,76561 -25764,76324
 EOF
      },
     );
