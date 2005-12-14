@@ -300,8 +300,6 @@ cdrom/windows/perl.bat
 cdrom/windows/setup.bat
 ##_Never_copied_to_CVS?!
 #cdrom/windows/setup.exe
-cdrom/windows/bbbike.tpl.iss
-cdrom/windows/BBBikeWinDistFiles.tpl
 cdrom/freebsd/startup.sh
 cdrom/mac/afpfile
 cdrom/cdrom.pl
@@ -310,6 +308,9 @@ cdrom/Makefile
 cdrom/perlinstall.pl
 cdrom/PerlInstall.pm
 cdrom/README
+port/windows/Makefile
+port/windows/bbbike.tpl.iss
+port/windows/BBBikeWinDistFiles.tpl
 port/freebsd/Makefile.tmpl
 port/freebsd/pkg-message
 port/freebsd/mkport.pl

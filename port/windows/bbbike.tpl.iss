@@ -6,8 +6,8 @@
 
 [Setup]
 AppName=BBBike
-AppVerName=BBBike version [% BBBike.VERSION %]
-AppVersion=[% BBBike.VERSION %]
+AppVerName=BBBike version [% BBBike.WINDOWS_VERSION %]
+AppVersion=[% BBBike.WINDOWS_VERSION %]
 AppPublisherURL=http://bbbike.sourceforge.net
 DefaultDirName={pf}\BBBike
 DefaultGroupName=BBBike
@@ -15,7 +15,7 @@ UninstallDisplayIcon={app}\bbbike\images\srtbike.ico
 Compression=lzma
 SolidCompression=yes
 OutputDir=..\BBBike-Setup-Files
-OutputBaseFilename=BBBike-[% BBBike.VERSION %]-Windows
+OutputBaseFilename=BBBike-[% BBBike.WINDOWS_VERSION %]-Windows
 OutputManifestFile=SETUP-MANIFEST
 
 [Files]
