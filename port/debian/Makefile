@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.5 2005/12/12 23:19:52 eserte Exp eserte $
+# $Id: Makefile,v 1.6 2005/12/14 00:16:27 eserte Exp $
 #
 
 # Run on a Debian system
