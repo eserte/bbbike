@@ -2837,7 +2837,7 @@ EOF
        text  => 'L 75; (Karl-Marx-Str.); OD Großziethen Straßenbauarbeiten Vollsperrung 06.09.2005-30.11.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13225,-681 12968,1006
+userdel	2 13225,-681 13090,205 12968,1006
 EOF
      },
      { from  => 1128290400, # 2005-10-03 00:00

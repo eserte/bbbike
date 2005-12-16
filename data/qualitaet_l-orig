@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Brandenburg und weiterer Umgebung
-#: version: $Id: qualitaet_l-orig,v 4.45 2005/12/11 16:19:56 eserte Exp $
+#: version: $Id: qualitaet_l-orig,v 4.45 2005/12/11 16:19:56 eserte Exp eserte $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen; schlechte Straße; 01.11.96-unbekannt	Q3 -50149,24689 -50016,24414 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
@@ -57,7 +57,7 @@ Kremmen - Fehrbellin: OK	Q0 -16173,38465 -16858,37991 -17114,37670 -18768,37659 
 Fehrbellin - Neuruppin: OK	Q0 -33806,44569 -33807,44932 -33506,45278 -32778,47235 -33036,47338 -32995,48857 -33107,50053 -33002,50632 -32597,51254 -31915,52627 -31766,53120 -31767,53525 -31706,53974 -31532,54747 -31514,55283
 Neuruppin - Wuthenow - Gnewikow - Wustrau-Altfriesack: teilweise gut, teilweise mäßiges Kopfsteinpflaster	Q2 -29902,57202 -29816,57117 -29490,56714 -29243,56187 -29198,55801 -29109,55374 -28677,55014 -28288,54212 -28911,54055 -29276,53427 -29210,52915 -28736,52387 -28368,51517 -28001,50966 -27421,50349 -27225,49988 -26967,49927 -26257,49763 -25656,49471 -25159,48922
 Kleinziethen: Kopfsteinpflaster	Q2 13348,-3283 13506,-2809 13553,-2643
-Großziethen: Kopfsteinpflaster nur Richtung Süden	Q2; 12968,1006 13225,-681 13309,-1268
+Großziethen: Kopfsteinpflaster nur Richtung Süden	Q2; 12968,1006 13090,205 13225,-681 13309,-1268
 Brusendorf: schlechtes Kopfsteinpflaster	Q3 18213,-10597 17474,-10614
 Mittenwalde: Kopfsteinpflaster	Q2 19893,-15274 20070,-15807
 #: add_fragezeichen: Richtung Süden sah es teilweise besser aus, wo genau?
@@ -1298,6 +1298,8 @@ Goethestr.: Asphalt	Q0 40507,100965 40709,100228
 #: last_checked: 2005-10-30
 Goethestr./Prenzlau - Seelübbe: Feldweg	Q2 40709,100228 40850,99777
 ######################### User Contributions #################################
+#: by: Stefanie (Klotz)
+Ahornweg (Großziethen): Beton	Q0 13225,-681 13080,-719 13042,-615
 #: by: Robert Joop:
 Prenden - Sophienstädt - Marienwerder: Asphalt	Q0 20100,42837 20306,43093 20418,43368 20943,43393 21685,44057 21882,44123 22271,44578 23018,45612 23062,46171 22947,46423 22712,46718 22781,47737 23009,48053 23056,48378 22897,48799
 #: by: Janes Huff: vvv

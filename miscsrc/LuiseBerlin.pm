@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.7 2005/10/29 10:08:50 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.8 2005/12/16 08:47:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!caller(2)) {
@@ -144,7 +144,15 @@ sub launch_street_url {
 
 sub do_google_search {
     my(%args) = @_;
-    my $search = WWW::Search->new("Google", key => $api_key);
+    my $my_api_key = $api_key;
+    my $google_api_key_file = "$ENV{HOME}/.googleapikey";
+    if (open(APIKEY, $google_api_key_file)) {
+	$my_api_key = <APIKEY>;
+	s{[\r\n\s+]}{}g;
+	close APIKEY;
+	warn "Loaded Google API key from $google_api_key_file...\n";
+    }
+    my $search = WWW::Search->new("Google", key => $my_api_key);
     my $street = $args{street};
     my @cityparts = @{ $args{cityparts} };
     $street =~ s{(s)tr\.}{$1traﬂe}ig;
