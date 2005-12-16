@@ -316,14 +316,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1204326000,
-         'text' => 'B 103; (Kyritzer Chaussee); OD Pritzwalk, zw. Fritz-Reuter-Str. u. Havelberger Str. Bau OU B189n halbseitig gesperrt; Einbahnstraße 15.09.2005-29.02.2008 ',
-         'from' => 1126648800,
-         'data' => 'userdel	q4 -74489,80545 -74038,78181
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -336,15 +329,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
        },
        undef,
        undef,
-       {
-         'until' => 1134687600,
-         'text' => 'B 198; (Günterberg-Gramzow); bei Schmiedeberg, Brücke über Mühlengraben Brückenersatzneubau Vollsperrung 15.09.2005-15.12.2005 ',
-         'from' => 1126648800,
-         'data' => 'userdel	2 46677,82770 47081,83093
-userdel	2 47081,83093 47137,83456
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -360,15 +345,7 @@ userdel	2 47081,83093 47137,83456
        undef,
        undef,
        undef,
-       {
-         'until' => 1134687600,
-         'text' => 'L 22; (Oranienburger Str.); OD Gransee grundh. Straßenbau Vollsperrung 19.09.2005-15.12.2005 ',
-         'from' => 1126994400,
-         'data' => 'userdel	q4 -7696,66033 -7851,66418
-userdel	q4 -7873,66589 -7851,66418
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -501,15 +478,7 @@ userdel	q4; 5652,11004 5716,10978 5831,10978
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1134601200,
-         'text' => 'B 2 (Angermünde-OU Pinnow) OD Dobberzin grundh. Straßenbau Vollsperrung 02.11.2005-14.12.2005 ',
-         'from' => 1130799600,
-         'data' => 'userdel	q4 52316,69186 52711,69501
-userdel	q4 52316,69186 50891,68557
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1136847600,
          'text' => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 07.01.2006-09.01.2006 ',
@@ -613,23 +582,9 @@ userdel	q4 -8886,85737 -9850,84800
        },
        undef,
        undef,
-       {
-         'until' => 1134687600,
-         'text' => 'L 23 Töpferstr. OD Joachimsthal, Kno. Angermünder Str. Ausbau Kreisverkehrsplatz Vollsperrung 01.11.2005-15.12.2005 ',
-         'from' => 1130713200,
-         'data' => 'userdel	q4 33099,63917 33254,63446
-',
-         'type' => 'handicap'
-       },
        undef,
-       {
-         'until' => 1134601200,
-         'text' => 'L 201 Nauener Chaussee Bahnübegang bei Falkensee Gleisbauarbeiten Vollsperrung 11.12.2005-14.12.2005 ',
-         'from' => 1134169200,
-         'data' => 'userdel	2 -13941,20658 -13887,20543 -13743,20218
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => 1152568800,
@@ -671,6 +626,14 @@ userdel	q4 -8886,85737 -9850,84800
          'data' => 'userdel	2 15682,-26971 15960,-26906
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1151704800,
+         'text' => 'B 122 Schloßstr. OD Rheinsberg, zw. Königstr. und Lange Str. Kanalarbeiten Vollsperrung; 02.11.2005-30.06.2006 ',
+         'from' => 1130799600,
+         'data' => 'userdel	q4 -25679,76561 -25764,76324
+',
+         'type' => 'handicap'
        }
      
 );

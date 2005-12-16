@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.214 2005/12/09 21:48:14 eserte Exp $
+# $Id: bbbike,v 3.215 2005/12/16 02:38:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.214 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.215 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -11494,6 +11494,19 @@ sub show_info {
 					     -width => 40,
 					     -height => 10,
 					     )->pack(-expand => 1, -fill => "both");
+	    # Hack as described in http://wiki.tcl.tk/6101
+	    my $info_real_text = $info_text->Subwidget("scrolled");
+	    $info_real_text->bindtags(["myTextTag", $info_real_text->bindtags]);
+	    $info_real_text->bind
+		("myTextTag",
+		 "<Button-3>",
+		 [sub {
+		      my($w,$x,$y) = @_;
+		      if (grep { /^link/ } $w->tagNames("\@$x,$y")) {
+			  Tk->break;
+		      }
+		  }, Ev("x"), Ev("y")]);
+
 	    $info_text->tagConfigure("bold", -font => $font{'bold'});
 	    $info_text->tagConfigure("fixed", -font => $font{'fixed'});
 	    $info_top->Button(Name => 'close',
@@ -11501,18 +11514,33 @@ sub show_info {
 			     )->pack(-fill => "x");
 	    toplevel_checker($info_top);
 	}
-
+	
+	my $current_link_url;
+	my $link_menu = $info_text->Menu(-title => M"Linkmenü",
+					 -tearoff => 0);
+	$link_menu->command
+	    (-label => M"Link kopieren",
+	     -command => sub {
+		 $info_top->SelectionOwn;
+		 $info_top->SelectionHandle(sub { $current_link_url });
+	     });
 	my $show_url = sub {
 	    my($linkcount, $url) = @_;
-	    $info_text->tagBind("link$linkcount", "<ButtonRelease-1>" => sub {
-				    if (ref $url eq 'CODE') {
-					$url = $url->();
-				    }
-				    require WWWBrowser;
-				    main::status_message("URL: $url", "info");
-				    WWWBrowser::start_browser($url);
-				}
-			       );
+	    $info_text->tagBind
+		("link$linkcount", "<ButtonRelease-1>" => sub {
+		     my $url = ref $url eq 'CODE' ? $url->() : $url;
+		     require WWWBrowser;
+		     main::status_message("URL: $url", "info");
+		     WWWBrowser::start_browser($url);
+		 }
+		);
+	    $info_text->tagBind
+		("link$linkcount", "<Button-3>" => sub {
+		     my $e = $_[0]->XEvent;
+		     $current_link_url = ref $url eq 'CODE' ? $url->() : $url;
+		     $link_menu->Post($e->X, $e->Y);
+		     Tk->break;
+		 });
 	};
 
 	# Longest text for first column:
@@ -11643,7 +11671,6 @@ sub show_info {
 		$url .= ";" . join(";", map { "layer=$_" } @layers);
 	    }
 	    $info_text->insert("end", $def->[1], "link$linkcount");
-	    warn "Mapserver URL: $url\n";
 	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
