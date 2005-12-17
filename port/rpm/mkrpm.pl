@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mkrpm.pl,v 1.7 2001/07/25 21:43:31 eserte Exp $
+# $Id: mkrpm.pl,v 1.8 2005/12/17 00:33:58 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
@@ -75,13 +75,8 @@ print RPM "Prefix: %{__prefix}\n";
 print RPM "URL: $BBBike::BBBIKE_SF_WWW\n";
 print RPM "Packager: $BBBike::EMAIL\n";
 print RPM "Source: $BBBike::DISTDIR/BBBike-$bbbike_version.tar.gz\n";
-print RPM "Summary: ";
-if (open(COMMENT, "$bbbike_comment")) {
-    chomp($_ = <COMMENT>);
-    print RPM $_;
-    close COMMENT;
-}
-print RPM "\n\n";
+print RPM "Summary: $bbbike_comment";
+print RPM "\n";
 
 print RPM "%description\n";
 if (open(COMMENT, "$bbbike_descr")) {

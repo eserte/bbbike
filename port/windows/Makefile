@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.2 2005/12/14 19:35:24 eserte Exp eserte $
+# $Id: Makefile,v 1.3 2005/12/17 00:34:39 eserte Exp $
 #
 
 BBBIKEVER!=	perl -I../.. -MBBBikeVar -e 'print $$BBBike::WINDOWS_VERSION'

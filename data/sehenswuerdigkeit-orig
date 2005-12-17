@@ -1,6 +1,6 @@
 #: title.de: Sehenswürdigkeiten und andere wichtige Gebäude
 #: title.en: Sights and points of interest
-#: version: $Id: sehenswuerdigkeit-orig,v 4.45 2005/12/10 23:41:14 eserte Exp $
+#: version: $Id: sehenswuerdigkeit-orig,v 4.46 2005/12/17 01:03:08 eserte Exp $
 #:
 # Berlin ##################################################
 Brandenburger Tor	IMG:sehenswuerdigkeit_img/brandenburger_tor.gif|ANCHOR:s 8593,12243
@@ -75,16 +75,16 @@ Deutsches Theater	F:SW 8894,13136 8814,13116 8806,13144 8887,13165
 Museum für Naturkunde und Zoologisches Museum	F:SW 8713,13790 8667,13762 8646,13801 8605,13785 8582,13832 8676,13876 8687,13849 8723,13857 8729,13842 8697,13827
 Museum für Naturkunde und Zoologisches Museum	F:SW 8729,13815 8750,13779 8810,13800 8782,13846
 Neue Synagoge	SW|IMG:synagogue.gif 9736,13221
-#: note: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
+#: internal_note: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
 Flughafen Tempelhof	F:SW|IMG:airport.gif 9297,8095 9352,8244 9437,8377 9377,8445 9331,8429 9262,8420 9261,8560 9327,8574 9403,8492 9468,8550 9385,8625 9401,8692 9531,8675 9523,8618 9504,8571 9582,8496 9723,8546 9884,8562 10027,8548 10020,8526 9875,8542 9733,8519 9590,8459 9481,8378 9391,8255 9333,8130 9303,8019 9274,8021 9301,8115
 Touristeninformation Berlin im Flughafen Tempelhof: Eingang Haupthalle	SW|IMG:touristinfo.gif 9459,8503
 #: XXX Namen fehlen!
 	F:SW 9247,8857 9247,8812 9312,8802 9377,8757 9562,8733 9574,8863 9552,8865 9546,8757 9464,8765 9466,8859 9440,8861 9440,8774 9385,8776 9318,8824 9271,8828 9269,8869
 	F:SW 9249,8871 9568,8877 9572,8855 9249,8851
-#: note: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
+#: internal_note: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
 Flughafen Schönefeld	F:SW|IMG:airport.gif 18581,-1760 18594,-1810 18359,-1889 18335,-1843
 Touristeninformation Berlin im Flughafen Schönefeld: Terminal B, EG, Mitte	SW|IMG:touristinfo.gif 18443,-1787
-#: note: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
+#: internal_note: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
 Flughafen Tegel	F:SW|IMG:airport.gif 2752,16408 2770,16371 2721,16343 2695,16308 2694,16274 2704,16244 2671,16278 2552,16258 2478,16353 2513,16459 2632,16482 2710,16395
 Touristeninformation Berlin im Flughafen Tegel: Gate 3	SW|IMG:touristinfo.gif 2675,16393
 Luftbrückendenkmal	IMG:sehenswuerdigkeit_img/luftbrueckendenkmal.gif|ANCHOR:s 9317,8702
@@ -93,7 +93,7 @@ Rathaus Schöneberg	F:SW 6419,8754 6421,8667 6358,8654 6353,8757
 Amerika-Haus	SW 5436,11107
 Ludwig-Erhard-Haus	F:SW 5271,11195 5263,11092 5322,11093 5324,11131 5301,11194
 Kaiser-Wilhelm-Gedächtniskirche	IMG:sehenswuerdigkeit_img/gedaechtniskirche.gif|ANCHOR:s 5754,10934
-#: note: Reihenfolge Europa-Center -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
+#: internal_note: Reihenfolge Europa-Center -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
 #: alias: i-Punkt
 Europa-Center	F:SW 5882,10925 5868,10875 5992,10809 6020,10864 6021,10930 5984,10937 5941,10921
 Touristeninformation Berlin im Europa-Center	SW|IMG:touristinfo.gif 6137,10595
@@ -102,9 +102,8 @@ Theater des Westens	F:SW 5304,11072 5298,11008 5341,11000 5344,11072
 Kudamm-Karree	SW 4970,10554
 Schloß Charlottenburg	F:SW 3244,12665 3247,12650 3079,12624 3082,12575 3072,12574 3064,12638 2993,12632 3001,12565 2982,12560 2978,12614 2758,12585 2755,12604 2958,12624 2956,12641 3090,12666 3098,12646
 ICC	F:SW 2031,10935 2085,10922 2043,10721 2030,10630 1973,10685 1997,10824
+#: internal_note: Reihenfolge Messegelände -> Funkturm beibehalten, da sonst das Icon der Information überdeckt wird.
 Messegelände	F:SW 1202,10707 1292,10640 1261,10595 1333,10550 1383,10605 1565,10484 1661,10607 1730,10571 1797,10654 1727,10709 1774,10779 1888,10737 1917,10743 1968,10986 1924,10990 1887,10784 1788,10824 1820,10948 1917,10955 1924,10987 1802,10972 1705,11024 1707,11039 1667,11058 1653,11031 1537,11070 1310,10818 1202,10907 1174,10874 1187,10821 1209,10846 1239,10822 1196,10766 1197,10717 1279,10795 1357,10814 1378,10835 1413,10826 1496,10936 1464,10960 1540,11045 1627,10998 1608,10963 1675,10930 1696,10972 1775,10947 1761,10831 1586,10561 1356,10726 1325,10681 1295,10712 1364,10797 1310,10818
-# XXX Der Funkturm muss hinter dem Messegelände kommen, ansonsten wird es
-# überzeichnet!
 Funkturm	IMG:sehenswuerdigkeit_img/funkturm.gif|ANCHOR:s 1877,10888
 Deutschlandhalle	F:SW 1451,10343 1409,10236 1330,10271 1369,10373
 Olympiastadion	F:SW -913,11880 -900,11943 -857,11992 -719,12012 -664,11984 -640,11929 -644,11871 -687,11831 -825,11807 -881,11830
@@ -263,10 +262,10 @@ St.-Mauritius-Kirche	SW|IMG:church.gif 15402,11872
 Zwinglikirche	SW|IMG:church.gif 13865,10930
 	SW|IMG:church.gif 14312,11339
 Sophienkirche	SW|IMG:church.gif 10106,13310
-#: XXX rough positions vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Oberbaumbruecke	IMG:sehenswuerdigkeit_img/oberbaumbruecke.gif 13300,10750
 Oberbaum City	IMG:sehenswuerdigkeit_img/oberbaumcity.gif 13600,11000
 Schultheissbrauerei	IMG:sehenswuerdigkeit_img/schultheiss.gif|ANCHOR:s 9050,8975
+#: XXX rough positions vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Museumsdorf Düppel	SW -1027,1922
 #: XXX ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 BVG	F:SW 7482,9444 7459,9369 7425,9371 7453,9450
@@ -283,9 +282,9 @@ Halle 1 (Deutsches Technikmuseum)	F:SW 8324,8864 8302,8864 8302,8952 8323,8952
 Haltestelle Depot DTM	F:SW 8334,8910
 St.-Michael-Kirche	SW|IMG:church.gif 11448,11285
 #: add_fragezeichen: genaue Position?
-#: note: http://www.eastgateberlin.de
+#: see_also: http://www.eastgateberlin.de
 Eastgate	SW 19788,15452
-#: note: http://www.nikolai-spandau.de/
+#: see_also: http://www.nikolai-spandau.de/
 St.-Nikolai-Kirche (Spandau)	SW|IMG:church.gif -3165,14523
 Ehem. Wasserturm am Fichtenberg	SW 4146,5758
 AEG-Montagehalle	F:SW 9046,14910 9095,14937 9008,15095 8954,15071
@@ -309,9 +308,9 @@ Estrel	F:SW 14183,7528 14203,7704 14287,7696 14284,7640
 #: XXX Lichthöfe fehlen:
 Rathaus Wilmersdorf	F:SW 4235,9099 4255,9198 4243,9226 4285,9243 4284,9249 4303,9258 4312,9250 4323,9241 4338,9232 4334,9216 4323,9217 4316,9175 4313,9130 4313,9092
 #: XXX Lichthöfe fehlen:
-#: oldname: Reichs-Getreidestelle
+#: oldname: ?: Reichs-Getreidestelle
 Verwaltungsgebäude	F:SW 4336,9089 4425,9088 4428,9171 4393,9211 4397,9216 4387,9230 4368,9223 4349,9223 4341,9207 4349,9206 4338,9170
-#: oldname: Nordstern-Versicherungsbank
+#: oldname: ?: Nordstern-Versicherungsbank
 Senatsverwaltung für Stadtentwicklung	F:SW 4402,9242 4411,9231 4430,9253 4438,9285 4437,9311 4430,9329 4417,9321 4423,9301 4424,9280 4414,9255
 Hotel Adlon	F:SW 8793,12249 8799,12215 8780,12206 8775,12222 8746,12216 8749,12205 8762,12207 8778,12119 8737,12107 8734,12118 8747,12122 8737,12186 8727,12186 8721,12236
 St.-Sebastians-Kirche	SW|IMG:church.gif 8986,14613
@@ -342,7 +341,6 @@ St.-Peter und Paul-Kirche	SW|IMG:church.gif -12766,-998
 Französische Kirche	SW|IMG:church.gif -12511,-955
 Friedenskirche	SW|IMG:church.gif -13856,-963
 Belvedere (Pfingstberg)	SW -12825,1046
-#: XXX spelling?
 Pomonatempel	SW -12775,978
 Russ.-Orth. Kirche/Kapellenberg	SW|IMG:church.gif -12943,670
 Flatowturm (Babelsberg)	SW -10933,-679
@@ -429,6 +427,7 @@ Deutsches Hygienemuseum	SW 37068,-151040
 Frauenkirche	SW|IMG:church.gif 36709,-150153
 Zwinger	SW 36206,-150134
 Zoologischer Garten Dresden	SW 37456,-151803
+##############################################################
 Stadtbad Wilmersdorf II	SW 3478,8782
 Hort-Dohm-Eisstadion	F:SW 3448,8719 3405,8633 3405,8619 3423,8607 3442,8614 3486,8701 3482,8719 3466,8727
 Stadion Wilmersdorf	F:SW 3537,8692 3494,8606 3494,8592 3512,8580 3531,8587 3575,8674 3571,8692 3555,8700

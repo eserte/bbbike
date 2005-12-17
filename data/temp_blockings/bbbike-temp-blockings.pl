@@ -218,11 +218,11 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Hermannstraße, zwischen Emserstraße und Thomasstraße gesperrt. Grund: Straßenfest. Dauer: 11.10.2003, 06.00 Uhr bis 12.10.2003, 24.00 Uhr',
        type  => 'handicap',
      },
-     { from  => 1134724749, # 2005-12-16 10:19
-       until => 1135378800, # 2005-12-24 00:00
-       text  => 'Schlichtallee (Lichtenberg ) in beiden Richtungen zwischen Hauptstr. und Lückstr. Straße vollständig gesperrt (bis 23.12.2005)',
+     { from  => 1134766980, # 2005-12-16 22:03
+       until => 1138057200, # 2006-01-24 00:00
+       text  => 'L137 Schlichtallee Hauptstraße - Lückstraße in beiden Richtungen Zwischen Hauptstraße und Lückstraße beidseitig wegen Bauarbeiten gesperrt bis 23.01.06 ',
        type  => 'gesperrt',
-       source_id => 'INKO_81850_COPY_12',
+       source_id => 'LMS_1134638526559',
        data  => <<EOF,
 userdel	2 15751,10582 16032,10842
 userdel	2 15751,10582 15629,10481
@@ -3463,8 +3463,8 @@ userdel	2 10453,-2133 10747,-2129
 EOF
      },
      { from  => 1134255600, # 2005-12-11 00:00
-       until => 1134752400, # 2005-12-16 18:00
-       text  => 'Tietzenweg zwischen Margaretenstraße und Unter den Eichen, Baustelle, Straße gesperrt. Dauer: 12.12.2005 bis 16.12.2005,18.00 Uhr ',
+       until => 1137776400, # 2006-01-20 18:00
+       text  => 'Tietzenweg zwischen Margaretenstraße und Unter den Eichen, Baustelle, Straße gesperrt. Dauer: 12.12.2005 bis 20.01.2006,18.00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 3490,4449 3425,4541

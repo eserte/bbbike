@@ -3,10 +3,10 @@ $#temp_blocking = 33;
 push @temp_blocking,
 (
        {
-         'source_id' => 'INKO_81850_COPY_12',
-         'until' => 1135378800,
-         'text' => 'Schlichtallee (Lichtenberg ) in beiden Richtungen zwischen Hauptstr. und Lückstr. Straße vollständig gesperrt (bis 23.12.2005)',
-         'from' => 1134724749,
+         'source_id' => 'LMS_1134638526559',
+         'until' => 1138057200,
+         'text' => 'L137 Schlichtallee Hauptstraße - Lückstraße in beiden Richtungen Zwischen Hauptstraße und Lückstraße beidseitig wegen Bauarbeiten gesperrt bis 23.01.06 ',
+         'from' => 1134766980,
          'data' => 'userdel	2 15751,10582 16032,10842
 userdel	2 15751,10582 15629,10481
 ',
@@ -712,8 +712,8 @@ userdel	q4 -8886,85737 -9850,84800
        },
        undef,
        {
-         'until' => 1134752400,
-         'text' => 'Tietzenweg zwischen Margaretenstraße und Unter den Eichen, Baustelle, Straße gesperrt. Dauer: 12.12.2005 bis 16.12.2005,18.00 Uhr ',
+         'until' => 1137776400,
+         'text' => 'Tietzenweg zwischen Margaretenstraße und Unter den Eichen, Baustelle, Straße gesperrt. Dauer: 12.12.2005 bis 20.01.2006,18.00 Uhr ',
          'from' => 1134255600,
          'data' => 'userdel	2 3490,4449 3425,4541
 ',

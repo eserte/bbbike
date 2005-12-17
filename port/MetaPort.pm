@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MetaPort.pm,v 1.7 2004/03/15 21:41:30 eserte Exp $
+# $Id: MetaPort.pm,v 1.8 2005/12/17 00:33:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2000 Slaven Rezic. All rights reserved.
@@ -38,7 +38,9 @@ my $fbsdpkg = "$FindBin::RealBin/../freebsd";
 if (!-d $fbsdpkg) {
     die "Can't find freebsd directory";
 }
-$bbbike_comment = "$fbsdpkg/pkg-comment";
+$bbbike_comment = `grep ^COMMENT= $fbsdpkg/Makefile.tmpl`;
+$bbbike_comment =~ s{^COMMENT=\s*}{};
+die "No comment found" if !$bbbike_comment;
 $bbbike_descr   = "$fbsdpkg/pkg-descr";
 
 if (!defined $bbbike_version) {

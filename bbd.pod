@@ -107,7 +107,7 @@ times, but at least three times.
 
 An colon (:) after the directive_name is always optional.
 
-The following directives are defined:
+=head3 Global directives
 
 =over
 
@@ -134,12 +134,21 @@ file.
 
 This global directive introduces an RCS/CVS Id string.
 
+=back
+
+=head3 Line/block directives
+
+=over
+
 =item C<by: I<source>>
+
+=item C<according_to: I<source>>
 
 Denotes that the information in the next block or line was provided by
 I<source>. This may be an email address or full name of an author, an
 URL providing more information, a Message-Id of a mail or posting, a
-date, or a combination of all. An alias for C<by:> is C<according_to:>.
+date, or a combination of all. C<according_to:> is an alias for
+C<by:>.
 
 =item C<unverified_by: I<source>>
 
@@ -156,19 +165,27 @@ starting and an end date).
 
 =item C<unsure: I<why>>
 
-The next block or line is unsure information. The I<why> text
-specifies an additional comment. An alias for C<unsure:> is C<XXX>.
+=item C<XXX: I<why>>
+
+The next block or line is unsure or unclear information. The I<why>
+text specifies an additional comment. This note should not appear in
+the processed data. C<XXX> is an alias for C<unsure:>.
 
 =item C<alias: I<name>>
 
-Define another known name for the next line. For now, only one alias
-is allowed.
+Define another known name for the next line.
 
 =item C<oldname: I<when>: I<name>>
 
 An old name for the next line. I<when> is a time specification (best:
-some kind of ISO dates, but this is not yet specified). Multiple
-oldname directives are allowed for one record.
+some kind of ISO dates, but this is not yet specified). Unknown dates
+in I<when> should be marked with a question mark. Multiple oldname
+directives are allowed for one record.
+
+Examples:
+
+    #: oldname: ?-20001001: Oldname street
+    #: oldname: 20001001-2005: Not-so-old-name street
 
 =item C<section: I<section name>>
 
@@ -181,13 +198,21 @@ record in the block.
 
 =item C<attributes: I<attribute>, ...>
 
+=item C<attrs: I<attribute>, ...>
+
 Define additional attributes for the following line or block. The
 attributes may be used in a preprocessing script to generate
-additional layers. An alias for C<attributes> is C<attrs>.
+additional layers. C<attrs> is an alias for C<attributes>.
 
 =item C<note: I<string>>
 
-A free text note, which shouldn't appear in the processed data.
+A free text note, which shouldn't (but may) appear in the processed
+data.
+
+=item C<internal_note: I<string>>
+
+A free text note, which must not appear in the processed data. It is
+just a note for editors.
 
 =item C<see_also: I<string>>
 
@@ -198,10 +223,6 @@ typically a URL.
 
 Some postprocessing code may add the following line with the
 descriptive text I<string> to the F<fragezeichen> file.
-
-=item C<XXX: I<string>>
-
-A note if something is unclear about the following line.
 
 =back
 
