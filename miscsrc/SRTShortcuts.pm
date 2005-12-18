@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.25 2005/11/17 23:36:31 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.26 2005/12/18 22:58:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.25 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.26 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -281,6 +281,10 @@ sub _vmz_lbvs_splitter {
     ($type, $content, $id);
 }
 
+sub _vmz_lbvs_columnwidths {
+    (200, 900, 200);
+}
+
 sub show_vmz_diff {
     show_any_diff("$ENV{HOME}/cache/misc/diffvmz.bbd");
 }
@@ -330,6 +334,7 @@ sub show_any_diff {
     $f = $t->Frame->pack(-fill => "both", -expand => 1);
     main::choose_ort("str", $abk,
 		     -splitter => \&_vmz_lbvs_splitter,
+		     -columnwidths => [ _vmz_lbvs_columnwidths() ],
 		     -container => $f,
 		     -ondestroy => sub { $t->destroy },
 		    );

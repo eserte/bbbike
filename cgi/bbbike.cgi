@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 7.41 2005/12/10 23:46:45 eserte Exp $
+# $Id: bbbike.cgi,v 7.44 2005/12/17 15:35:55 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -71,7 +71,7 @@ use BBBikeUtil qw(is_in_path min max);
 use File::Basename qw(dirname);
 use CGI;
 use CGI::Carp; # Nur zum Debuggen verwenden --- manche Web-Server machen bei den kleinsten Kleinigkeiten Probleme damit: qw(fatalsToBrowser);
-use BrowserInfo 1.31;
+use BrowserInfo 1.47;
 use strict;
 use vars qw($VERSION $VERBOSE $WAP_URL
 	    $debug $tmp_dir $mapdir_fs $mapdir_url $local_route_dir
@@ -107,6 +107,7 @@ use vars qw($VERSION $VERBOSE $WAP_URL
 	    @temp_blocking
 	    $use_cgi_compress_gzip $max_matches
 	    $use_winter_optimization
+	    $with_fullsearch_radio
 	   );
 # XXX This may be removed one day
 use vars qw($use_cooked_street_data);
@@ -544,7 +545,7 @@ $use_umland_jwd = 0;
 =item $use_special_destinations
 
 Set to a true value if special destinations like bikeshops, bankomats etc.
-may be used.
+may be used. NOT YET USED.
 
 =cut
 
@@ -685,7 +686,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 7.41 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 7.44 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1073,6 +1074,26 @@ EOF
     }
 }
 
+# XXX fullsearch is NYI
+sub fullsearch_radio {
+    my($type, %args) = @_;
+
+    # XXX default/checked?
+    print <<EOF;
+<div style="font-size:smaller;">
+<label>
+  <input type="radio" name="${type}_searchin" value="b">
+  Berliner Straﬂen
+</label>
+&nbsp;&nbsp;&nbsp;
+<label>
+  <input type="radio" name="${type}_searchin" value="fulltext">
+  Volltext
+</label>
+</div>
+EOF
+}
+
 sub _potsdam_hack {
     my $street = shift;
     my $potsdam_file = "$tmp_dir/" . $Strassen::Util::cacheprefix . "_" . $< . "_potsdam_strassen";
@@ -1261,6 +1282,9 @@ sub choose_form {
 	    $nice_berlinmap = $nice_abcmap = 1;
 	}
 	if ($bi->is_browser_version("MSIE", 5.0, 5.4999)) {
+	    $nice_berlinmap = $nice_abcmap = 1;
+	}
+	if ($bi->is_browser_version("Opera", 7.0, 9.0)) {
 	    $nice_berlinmap = $nice_abcmap = 1;
 	}
     }
@@ -1476,10 +1500,18 @@ sub choose_form {
     if ($bi->{'text_browser'} && !$bi->{'mobile_device'}) {
 	push @extra_headers, -up => $BBBike::HOMEPAGE;
     }
+    my $onloadscript = "";
     if ($nice_berlinmap || $nice_abcmap) {
-	push @extra_headers, -onLoad => "init_hi(); window.onResize = init_hi;",
-	     -script => {-src => $bbbike_html . "/bbbike_start.js",
-			},
+	$onloadscript .= "init_hi(); window.onResize = init_hi; "
+    }
+    if ($nice_berlinmap || $nice_abcmap) {
+	push @extra_headers, -onLoad => $onloadscript,
+	     -script => [{-src => $bbbike_html . "/bbbike_start.js?v=1.11"},
+			 ($nice_berlinmap
+			  ? {-code => qq{set_bbbike_images_dir('$bbbike_images')}}
+			  : ()
+			 ),
+			],
     }
     header(@extra_headers, -from => "chooseform");
 
@@ -1511,11 +1543,10 @@ EOF
 	print <<EOF if ($bi->{'can_table'});
 </td>
 <td rowspan="3" valign="top" @{[ $start_bgcolor ? "bgcolor=$start_bgcolor" : "" ]}>@{[ defined &teaser && !$bi->{'css_buggy'} ? teaser() : "" ]}</td>
-</tr>
-<p>
+</tr><tr>
 EOF
 
-	print "<tr><td>" if ($bi->{'can_table'});
+	print "<td>" if ($bi->{'can_table'});
 
         if ($bi->{'text_browser'}) {
             print q{<a name="navig"></a><a href="#start">Start-</a>};
@@ -1535,7 +1566,7 @@ EOF
 	    print ": <p>\n";
         }
 
-	print "</td></tr>" if ($bi->{'can_table'});
+	print "</td></tr><tr>" if ($bi->{'can_table'});
 
     }
 
@@ -1715,7 +1746,7 @@ EOF
 		last if ++$out_i > $max_matches;
 		my $strasse2val;
 		my $is_ort = $s->[MATCHREF_ISORT_INDEX];
-		print "<label><input type=radio name=" . $type . "2";
+		print "<label><input onclick='set_street_in_berlinmap(\"$type\", $out_i);' type=radio name=" . $type . "2";
 		if ($is_ort && $multiorte) {
 		    my($ret) = $multiorte->get_by_name($s->[0]);
 		    my $xy;
@@ -1772,6 +1803,10 @@ EOF
 	    }
 	    print "<br>";
 	    if (!$smallform) {
+		if ($with_fullsearch_radio) {
+		    fullsearch_radio();
+		}
+
 		abc_link($type, -nice => 1);
 
 		if ($use_special_destinations) {
@@ -1846,9 +1881,13 @@ function " . $type . "char_init() {}
 	     $via2 ne "" || $vianame ne "" ||
 	     $ziel2 ne "" || $zielname ne "") &&
 	    $bi->{'can_javascript'}) {
-	    $button_str .= "<input type=button value=\"&lt;&lt; Zur¸ck\" onclick=\"history.back(1);\">&nbsp;&nbsp;";
+	    $button_str .= qq{<input type=button value="&lt;&lt; Zur¸ck" onclick="history.back(1);">&nbsp;&nbsp;};
 	}
-	$button_str .= "<a name=\"weiter\"><input type=submit value=\"Weiter &gt;&gt;\"></a>";
+	$button_str .= qq{<a name="weiter"><input};
+	if ($nice_berlinmap || $nice_abcmap) {
+	    $button_str .= qq{ onclick='cleanup_special_click()'};
+	}
+	$button_str .= qq{ type=submit value="Weiter &gt;&gt;"></a>};
 	$tbl_center->($button_str);
     }
 
@@ -1894,22 +1933,27 @@ sub berlinmap_with_choices {
 	my($tx,$ty) = map { int $_ } overview_map()->{Transpose}->(split /,/, $xy);
 	$tx -= 4; $ty -= 4; # center reddot.gif
 	my $divid = $type . "match" . $match_nr;
+	my $matchimgid = $type . "matchimg" . $match_nr;
 	my($a_start, $a_end) = ("", "");
 	if (@$matchref > 1) {
 	    $a_start = <<EOF;
-<a href="#" onclick="document.BBBikeForm.${type}2[@{[ ($match_nr-1) ]}].checked = true; return false;">
+<a href="#" onclick="return set_street_from_berlinmap('${type}', $match_nr);">
 EOF
 	    $a_end   = "</a>";
 	}
 	print <<EOF;
-<div id="$divid" style="position:absolute; visibility:show; background-color:#ff6060;">$a_start<img src="$bbbike_images/reddot.gif" border=0 width=8 height=8 alt="$s->[0] ($s->[1])">$a_end</div>
+<div id="$divid" style="position:absolute; visibility:show;">$a_start<img id="$matchimgid" src="$bbbike_images/bluedot.png" border=0 width=8 height=8 alt="$s->[0] ($s->[1])">$a_end</div>
 EOF
 	$js .= "pos_rel(\"$divid\", \"${type}mapbelow\", $tx, $ty);\nvis(\"$divid\", \"show\");\n";
     }
 
     print <<EOF;
 <script type="text/javascript"><!--
-function $ {type}map_init() { vis("${type}mapbelow", "show"); $js }
+function $ {type}map_init() {
+  vis("${type}mapbelow", "show");
+  $js
+  set_street_in_berlinmap("$type", 1);
+}
 // --></script>
 EOF
 }
@@ -2558,9 +2602,6 @@ sub search_coord {
     my $printmode   = defined $output_as && $output_as eq 'print';
 
     my $printwidth  = 400;
-    my $fontstr     = ($printmode
-		       ? "<font face=\"$font\" size=\"-2\">"
-		       : $fontstr);
 
     make_netz();
 
@@ -3511,8 +3552,7 @@ EOF
 		$i++;
 	    }
 	}
-	print "<tr>\n";
-	print "$fontend</td></tr>";
+	print "</tr>\n";
 	if (%power_map) {
 	    print "<tr><td></td>";
 	    my $is_first = 1;
@@ -3564,8 +3604,8 @@ EOF
 	    }
 	    print "' id='routelist' ";
 	    if ($printmode) {
-		print ' style="border: 1px solid black;"';
-		print " border=1"; # XXX ohne geht's leider nicht
+#		print ' style="border: 1px solid black;"';
+#		print " border=1"; # XXX ohne geht's leider nicht
 		print " width=$printwidth";
 	    } else {
 		print " align=center";
@@ -4110,6 +4150,7 @@ EOF
 sub user_agent_info {
     $bi = new BrowserInfo $q;
 #    $bi->emulate("wap"); # XXX put your favourite emulation
+    $bi->emulate_if_validator("mozilla");
     $fontstr = ($bi->{'can_css'} || $bi->{'text_browser'} ? '' : "<font face=\"$font\">");
     $fontend = ($bi->{'can_css'} || $bi->{'text_browser'} ? '' : "</font>");
     $bi->{'hfill'} = ($bi->is_browser_version("Mozilla", 5, 5.0999) ?
@@ -4580,7 +4621,8 @@ EOF
 	    print "</tr>\n";
  	}
 	print "</table>";
-	print "<input type=submit name=Dummy value=\"&lt;&lt; Zur&uuml;ck\">";
+	#print "<input type=submit name=Dummy value=\"&lt;&lt; Zur&uuml;ck\">";
+	print qq{<input type=button value="&lt;&lt; Zur¸ck" onclick="history.back(1);">};
 	print "</center>";
 	print <<EOF;
 <script type="text/javascript">
@@ -4718,19 +4760,27 @@ sub get_streets_rebuild_dependents {
 	make_netz();
     }
 
+    if ($use_umland || $use_umland_jwd) {
+	get_orte();
+    }
+
     $g_str;
 }
 
-###XXX do not delete this ---
-#  	# Orte
-#  	my @o;
-#  	$orte = new Strassen "orte" unless defined $orte;
-#  	push @o, $orte;
-#  	if ($use_umland_jwd) {
-#  	    $orte2 = new Strassen "orte2" unless defined $orte2;
-#  	    push @o, $orte2;
-#  	}
-#  	$multiorte = new MultiStrassen @o;
+sub get_orte {
+    return $multiorte if $multiorte;
+
+    # Orte
+    my @o;
+    $orte = new Strassen "orte" unless defined $orte;
+    push @o, $orte;
+    if ($use_umland_jwd) {
+	$orte2 = new Strassen "orte2" unless defined $orte2;
+	push @o, $orte2;
+    }
+    $multiorte = new MultiStrassen @o;
+    $multiorte;
+}
 
 sub all_crossings {
     if (scalar keys %$crossings == 0) {
@@ -5359,7 +5409,7 @@ sub choose_all_form {
 		       @strlist;
     }
     my $last = "";
-    my $last_initial = "A";
+    my $last_initial = "";
 
     print "<center>";
     for my $ch ('A' .. 'Z') {
@@ -5851,7 +5901,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2005/12/10 23:46:45 $';
+    my $cgi_date = '$Date: 2005/12/17 15:35:55 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

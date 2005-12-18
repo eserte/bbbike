@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BrowserInfo.pm,v 1.46 2005/07/17 21:31:37 eserte Exp $
+# $Id: BrowserInfo.pm,v 1.49 2005/12/18 21:23:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2005 Slaven Rezic. All rights reserved.
@@ -18,7 +18,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.46 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.49 $ =~ /(\d+)\.(\d+)/);
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 
@@ -41,10 +41,22 @@ sub emulate {
 	$ENV{HTTP_USER_AGENT} = "Lynx/2.8rel.2 libwww-FM/2.14";
     } elsif ($browser =~ /^wap$/i) {
 	$ENV{HTTP_USER_AGENT} = "SIE-C3I/1.0 UP/4.1.8c UP.Browser/4.1.8c-XXXX UP.Link/4.1.0.6";
+    } elsif ($browser =~ /^mozilla/i) {
+	$ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.12) Gecko/20051016";
     } else {
 	die "Unknown emulation: $browser";
     }
     $self->set_info;
+}
+
+sub emulate_if_validator {
+    my($self, $browser) = @_;
+    if ($ENV{HTTP_USER_AGENT} =~ m{^W3C_Validator/}i
+	|| $ENV{HTTP_USER_AGENT} =~ m{^.*W3C_CSS_Validator.*/}i
+	|| $ENV{HTTP_USER_AGENT} =~ m{^W3C-checklink/}i
+       ) {
+	$self->emulate($browser);
+    }
 }
 
 sub set_info {
@@ -305,7 +317,10 @@ sub set_info {
 			    ($self->{'user_agent_name'} eq 'MSIE' &&
 			     $self->{'user_agent_version'} >= 4.0) ||
 			    ($self->{'user_agent_name'} eq 'Konqueror' &&
-			     $self->{'user_agent_version'} >= 2.0));
+			     $self->{'user_agent_version'} >= 2.0) ||
+			    ($self->{'user_agent_name'} eq 'Opera' &&
+			     $self->{'user_agent_version'} >= 7.0)
+			   );
 
     my $can_table;
     if ($get_uaprof->()) {

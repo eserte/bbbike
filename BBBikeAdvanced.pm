@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.135 2005/11/19 20:26:28 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.135 2005/11/19 20:26:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2725,6 +2725,8 @@ sub search_anything {
 
     require File::Basename;
 
+    require Tk::LabFrame;
+
     require PLZ;
     my @plz = PLZ->new;
     my @plz_labels = "PLZ-Datenbank (Berlin)";
@@ -3202,6 +3204,7 @@ sub gps_animation {
 		    );
     # XXX ist LogScale hier eine gute Idee?
     eval {
+	# XXX LogScale und -variable sollte wieder gehen, check!
 	die "Ich kriege LogScale und -variable hier nicht zum Laufen XXX";
 	require Tk::LogScale;
 	require Tie::Watch;

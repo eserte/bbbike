@@ -1,8 +1,13 @@
-// $Id: bbbike_start.js,v 1.9 2003/05/31 20:58:04 eserte Exp $
+// $Id: bbbike_start.js,v 1.13 2005/12/18 21:46:13 eserte Exp $
 // (c) 2001-2002 Slaven Rezic. All rights reserved.
 // See comment in bbbike.cgi regarding x/ygridwidth
 
 var all_above_layer = new Array();
+var bbbike_images_dir;
+
+function set_bbbike_images_dir(path) {
+  bbbike_images_dir = path;
+}
 
 function init_hi() {
   if (typeof startmap_init  == "function")  startmap_init();
@@ -46,23 +51,36 @@ function vis(x,val) {
 }
 
 function pos_rel(lay,rel_lay,x,y) {
-  if (document.layers) {
+  if (document.implementation && document.implementation.hasFeature("CSS2","2.0")) { // Mozilla 1.1+, Galeon, Firefox
+    var pos_layer   = find_layer(lay);
+    var below_layer = find_layer(rel_lay);
+    pos_layer.style.left = (getOffsetLeft(below_layer)+x) + "px";
+    pos_layer.style.top = (getOffsetTop(below_layer)+y) + "px";
+  } else if (document.layers) { // Netscape 4
     document.layers[lay].pageX = document.layers[rel_lay].pageX+x;
     document.layers[lay].pageY = document.layers[rel_lay].pageY+y;
     //alert(document.layers[lay].pageX + "/" + document.layers[lay].pageY);
   } else if (document.all) {
     document.all[lay].style.left = getOffsetLeft(document.all[rel_lay])+x;
     document.all[lay].style.top = getOffsetTop(document.all[rel_lay])+y;
-  } else if (document.implementation && document.implementation.hasFeature("CSS2","2.0")) { // Mozilla 1.1, Galeon
-    var pos_layer   = find_layer(lay);
-    var below_layer = find_layer(rel_lay);
-    pos_layer.style.left = (getOffsetLeft(below_layer)+x) + "px";
-    pos_layer.style.top = (getOffsetTop(below_layer)+y) + "px";
   }
 }
 
 function any_init(type) {
-  if (document.layers) {
+  if (document.implementation && document.implementation.hasFeature("CSS2","2.0")) { // Mozilla 1.1+, Galeon, Firefox
+    var below_layer = find_layer(type + "below");
+    var above_layer = find_layer(type + "above");
+    above_layer.style.visibility = 'hidden';
+    below_layer.style.visibility = 'visible';
+    above_layer.style.left
+        = getOffsetLeft(below_layer) + "px";
+    above_layer.style.top
+        = getOffsetTop(below_layer) + "px";
+    below_layer.onmousemove = eval(type + "_highlight");
+    above_layer.onmouseout = eval(type + "_byebye");
+    above_layer.onmouseup = eval(type + "_detail");
+    all_above_layer[all_above_layer.length] = above_layer;
+  } else if (document.layers) { // Netscape 4
     if (!document.layers[type + "above"]) return;
     document.layers[type + "above"].visibility = 'hide';
     document.layers[type + "below"].visibility = 'show';
@@ -76,7 +94,7 @@ function any_init(type) {
     document.layers[type + "above"].captureEvents(Event.MOUSEUP);
     document.layers[type + "above"].onmouseup = eval(type + "_detail");
     all_above_layer[all_above_layer.length] = document.layers[type + "above"];
-  } else if (document.all) {
+  } else if (document.all) { // MSIE, Opera
     document.all[type + "above"].style.visibility = 'hidden';
     document.all[type + "below"].style.visibility = 'visible';
     document.all[type + "above"].style.left
@@ -87,19 +105,6 @@ function any_init(type) {
     document.all[type + "above"].onmouseout = eval(type + "_byebye");
     document.all[type + "above"].onmouseup = eval(type + "_detail");
     all_above_layer[all_above_layer.length] = document.all[type + "above"];
-  } else if (document.implementation && document.implementation.hasFeature("CSS2","2.0")) { // Mozilla 1.1, Galeon
-    var below_layer = find_layer(type + "below");
-    var above_layer = find_layer(type + "above");
-    above_layer.style.visibility = 'hidden';
-    below_layer.style.visibility = 'visible';
-    above_layer.style.left
-        = getOffsetLeft(below_layer) + "px";
-    above_layer.style.top
-        = getOffsetTop(below_layer) + "px";
-    below_layer.onmousemove = eval(type + "_highlight");
-    above_layer.onmouseout = eval(type + "_byebye");
-    above_layer.onmouseup = eval(type + "_detail");
-    all_above_layer[all_above_layer.length] = above_layer;
   } else if (document.body) { // NS6.0
     var below_layer = find_layer(type + "below");
     var above_layer = find_layer(type + "above");
@@ -176,6 +181,7 @@ function any_byebye(type, Evt) {
 }
 
 function any_detail(type, Evt) {
+  cleanup_special_click();
   if (document.layers) {
     document.BBBikeForm[type + "img.x"].value = Evt.layerX;
     document.BBBikeForm[type + "img.y"].value = Evt.layerY;
@@ -226,6 +232,45 @@ function all_streets_set_input(type, label) {
       window.opener.document.forms.BBBikeForm.elements[type]) {
     window.opener.document.forms.BBBikeForm.elements[type].value = unescape(label);
   }
+}
+
+// Reset variables which are set from clicking on detail or char maps
+function cleanup_special_click() {
+  var guielems = ["char","map"];
+  for(var guielem_i in guielems) {
+    var types = ["start","via","ziel"];
+    for(var type_i in types) {
+      var xy = ["x", "y"];
+      for (var xy_i in xy) {
+	var name = types[type_i] + guielems[guielem_i] + "img." + xy[xy_i];
+	var elem = document.BBBikeForm[name];
+	if (elem) {
+	  elem.value = "";
+	}
+      }
+    }
+  }
+}
+
+function set_street_in_berlinmap(type, inx) {
+  for(var i = 1; i < 10000; i++) {
+    var img = find_layer(type + "matchimg" + i);
+    if (img) {
+      if (i == inx) {
+	img.src = bbbike_images_dir + "/reddot.png";
+      } else {
+	img.src = bbbike_images_dir + "/bluedot.png";
+      }
+    } else {
+      break;
+    }
+  }
+}
+
+function set_street_from_berlinmap(type, inx) {
+  document.BBBikeForm[type + "2"][inx-1].checked = true;
+  set_street_in_berlinmap(type, inx);
+  return false;
 }
 
 // Local variables:

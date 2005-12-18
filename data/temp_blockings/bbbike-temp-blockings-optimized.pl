@@ -376,14 +376,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
        undef,
        undef,
        undef,
-       {
-         'until' => 1134774000,
-         'text' => 'K 6917; (B246 Borkheide-Kanin); OD Borkwalde Straßenbauarbeiten Vollsperrung 08.08.2005-16.12.2005 ',
-         'from' => 1123365600,
-         'data' => 'userdel	q4 -26809,-18383 -27757,-17707
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1135378800,
@@ -486,14 +479,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
        undef,
        undef,
        undef,
-       {
-         'until' => 1134774000,
-         'text' => 'K 7228; (Zossener Allee); OL Sperenberg Straßenbau Vollsperrung 10.10.2005-16.12.2005 ',
-         'from' => 1128808800,
-         'data' => 'userdel	q4 8576,-29378 8725,-26812
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -534,14 +520,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
        undef,
        undef,
        undef,
-       {
-         'until' => 1134774000,
-         'text' => 'L 15; (B109 südl. Prenzlau-Boitzenburg); OD Gollmitz Leitungsverlegung Vollsperrung 27.10.2005-16.12.2005 ',
-         'from' => 1130277600,
-         'data' => 'userdel	q4 30743,99403 30504,99595
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -719,14 +698,7 @@ userdel	q4 -8886,85737 -9850,84800
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1134774000,
-         'text' => 'B 167 Eisenbahn- u. Heegermühler Str. OD Eberswalde, Eisenbahnbrücke Ersatzneubau Brücke Vollsperrung; Umleitung 14.12.2005-16.12.2005 ',
-         'from' => 1134428400,
-         'data' => 'userdel	2 36913,48088 36403,48168
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1136588400,
          'text' => 'L 074 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung; Umleitung 04.01.2006-06.01.2006 ',
@@ -750,6 +722,14 @@ userdel	q4 -8886,85737 -9850,84800
          'data' => 'userdel	q4 -25679,76561 -25764,76324
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1135105200,
+         'text' => 'Säntisstraße zwischen Daimlerstraße und Nahmitzer Damm Bahnübergang gesperrt bzw. halbseitig gesperrt, Dauer: 17.12.05 04:00 Uhr bis 20.12.05 20:00 Uhr ',
+         'from' => 1134702000,
+         'data' => 'userdel	2 9024,906 9241,1073
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -1864,11 +1864,15 @@ points if delta exceeds 128/128 meters.
 
 =over
 
-=item * (H2)
+=item * (M3)
 
-Make an interface to Google Maps. See
-L<http://perl-hackers.net/bragamap.html> or
-L<http://maps.google.com/maps?ll=37.774548,-122.424474&spn=0.021688,0.029232&t=h&\saddr=eddy+st,+San+Francisco,+CA&daddr=Market+St,+San+Francisco,+CA&hl=en>
+Opera 7.11: nice_berlinmap seems to work, but nice_abcmap has problems
+(only the first character is highlighted?). Check on newer Operas.
+
+Another problem with abcmap and berlinmap: if the E<quot>niceE<quot>
+code is disabled, then <Return> will fire the wrong button (that is,
+the image maps...). Unfortunately the hidden submit hack does not work
+on Opera...
 
 =item * (M3)
 
@@ -1877,7 +1881,7 @@ Schopenhauer Str." akzeptieren. Frage: nur fuer Orte oder auch fuer
 Bezirke, also "Kreuzberg, Bahnhofstr."? Kommt auch vor, dass die Leute
 E<quot>Berlin, ...E<quot> schreiben.
 
-=item * (E3)
+=item * (E2)
 
 /robots.txt einrichten, um das Indexieren von temporären Dateien bei
 bbbike und mapserver zu verhindern. -> Hmmm, es existiert schon ein
@@ -1926,7 +1930,8 @@ Safari, same for MSIE!)
 
 =item * (H1)
 
-On resize, the reddot points for multiple choices become displaced.
+On resize, the reddot/bluedot points for multiple choices become
+displaced.
 
 =item * (M2)
 
@@ -1943,20 +1948,22 @@ U/S-Bahnstationen ... Kommentare sind schon drinnen.
 cgi-Version: Linux+Netscape: Probleme mit Cookies (Einstellungen)
 =E<gt> noch immer? -> ein Problem habe ich gelöst, war es das?
 
+
+=back
+
+=head1 BBBike and Googlemaps/similar
+
+=over
+
+=item * (H2)
+
+Use the googlemaps clone on mapserver basis.
+
 =item * (M2)
 
-Automatisches HTML-Validieren in der Test-Suite. Man koennte
-
-http://validator.w3.org/check?output=xml;uri=http%3A%2F%2Fwww.iconmobile.com%2F&doctype=%28detect+automatically%29&charset=iso-8859-1+%28Western+Europe%29
-
-verwenden, aber die XML-Ausgabe ist als "experimentell" markiert.
-
-Links auf bbbike:
-
-http://validator.w3.org/check?uri=http%3A%2F%2Fwww.radzeit.de%2Fcgi-bin%2Fbbbike.cgi
-
-http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.radzeit.de%2Fcgi-bin%2Fbbbike.cgi
-
+Show a notice to users from E<quot>unknownE<quot> browsers that
+googlemaps does not work on every browser. Maybe with a backlink to
+me?
 
 =back
 
@@ -2228,6 +2235,12 @@ area (in a balloon or additional label/toplevel).
 
 =over
 
+=item * (H1)
+
+Legend: start/goal flags are to high and may overlap the
+E<quot>MarkierungE<quot> circle. Maybe a mapserver problem, fixed in a
+new version?
+
 =item * (H3)
 
 Make it easy to show additional custom layers (with limited mapserver
@@ -2236,7 +2249,7 @@ miscsrc/bbd2mapservhtml.pl
 
 =item * (M2)
 
-Zurzeit werden innerhalb Berlins Radroutennummern angezeigt. Soll das
+Zurzeit werden innerhalb Berlin Radroutennummern angezeigt. Soll das
 so bleiben?
 
 =item * (H4)

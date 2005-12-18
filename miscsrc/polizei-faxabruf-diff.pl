@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: polizei-faxabruf-diff.pl,v 1.8 2005/11/16 01:28:10 eserte Exp $
+# $Id: polizei-faxabruf-diff.pl,v 1.8 2005/11/16 01:28:10 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004, 2005 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 
 use strict;
 
-use constant SIMILARITY_THRESHOLD => 0.5;
+use constant SIMILARITY_THRESHOLD => 0.6;
 
 my $old_file = shift || "/home/e/eserte/cache/misc/polizei-faxabruf.php~";
 my $new_file = shift || "/home/e/eserte/cache/misc/polizei-faxabruf.php";
@@ -88,7 +88,7 @@ print "Changed:\n";
 for (@flat) {
     my($factor, $index_old, $index_new) = @$_;
     next if $seen_old{$index_old} || $seen_new{$index_new};
-    if ($factor < 1) {
+    if ($factor < 1 && $factor > SIMILARITY_THRESHOLD) {
 	my @lines_new = expand split /\n/, wrap("", "", as_string($index_new, "new"));
 	my @lines_old = expand split /\n/, wrap("", "", as_string($index_old, "old"));
 	if (@lines_new < @lines_old) {

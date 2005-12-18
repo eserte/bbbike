@@ -4,6 +4,7 @@
  */
 body {
   background-color:#ffffff;
+  color:#000000;
   font-family:sans-serif,helvetica,verdana,arial;
 }
 td,th,p,h2,li,input {
@@ -15,17 +16,11 @@ table.desc {
 table.routelist td {
   vertical-align:top;
 }
-table.print {
-  border: 1px solid black;
-}
-table.print td {
-  border: 1px solid black;
-}
 table.detailmap td {
   vertical-align:middle;
 }
 tt,pre {
-  font-family:courier,fixed;
+  font-family:courier,monospace;
 }
 dt {
   font-weight:bold;
@@ -34,20 +29,20 @@ dt {
 /* not interpreted by Gecko, wrong interpretation by IE 5.0 */
 /* table.routelist > td { background-color:#ffcc66; } */
 input.charmap {
-  width: 270;
-  height: 94;
+  width: 270px;
+  height: 94px;
   border: 0;
 }
 input.citymap {
-  width: 200;
-  height: 200;
+  width: 200px;
+  height: 200px;
   border: 0;
 }
 .nobr {
   white-space: nowrap;
 }
-tr.odd  { background-color: #ffcc66; }
-tr.even { background-color: #ffdd88; }
+tr.odd  { color: #000000; background-color: #ffcc66; }
+tr.even { color: #000000; background-color: #ffdd88; }
 
 a.ms:hover   { background-color:#FFFFFF; color:#000000; }
 a.ms:link    { color:#000000; }
@@ -57,6 +52,7 @@ a.ms:visited { color:#333333; }
 
 .teaserbox {
   width:100%;
+  color: #000000;
   background-color:#ffdead;
   padding:4px;
   margin-bottom:4px;
@@ -66,7 +62,7 @@ a.ms:visited { color:#333333; }
   font-size:small;
 }
 
-.ftr  { text-align:center; background-color: #ffcc66; padding: 3; }
+.ftr  { text-align:center; background-color: #ffcc66; padding: 3px; }
 
 .experimental {
   border:1px red solid;
@@ -139,7 +135,7 @@ a.ms:visited { color:#333333; }
   border-left-color: blue;
 }
 .catcellBS {
-  border-left-color: orange;
+  border-left-color: rgb(255,165,0);
 }
 .catcellNS {
   border-left-color: white;

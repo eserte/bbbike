@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.215 2005/12/16 02:38:55 eserte Exp $
+# $Id: bbbike,v 3.216 2005/12/18 22:58:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.215 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.216 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -9625,6 +9625,7 @@ sub choose_ort {
     my $additionalframe = $args{-additionalframe};
     my $sorted = exists $args{-unsorted} ? !$args{-unsorted} : 1;
     my $splitter = $args{-splitter};
+    my $columnwidths = $args{-columnwidths};
     my $container = $args{-container};
     my $do_popup = exists $args{-popup} ? $args{-popup} : 1;
 
@@ -9873,20 +9874,35 @@ sub choose_ort {
 	    $t->Advertise(Listbox => $lb->Subwidget("scrolled"));
 
 	    if ($splitter) {
-		my $wraplength = $max_cols > 1 ? int(800/($max_cols-1)) : 800; # XXX don't hardcode 800px
-		my $text_style = $lb->ItemStyle('text', -wraplength => $wraplength);
+		my @wraplength;
+		if ($columnwidths) {
+		    @wraplength = @$columnwidths;
+		} else {
+		    my $wraplength = $max_cols > 1 ? int($top->screenwidth/($max_cols)) : $top->screenwidth;
+		    @wraplength = ($wraplength) x $max_cols;
+		}
+		my @text_style;
+		for my $col (0 .. $max_cols-1) {
+		    push @text_style, $lb->ItemStyle('text', -wraplength => $wraplength[$col] || 100);
+		}
 		my $inx = 0;
 		for my $ort (sort keys %orte) {
 		    my(@cols) = $splitter->($ort);
-		    $lb->add($inx, -text => shift @cols, -data => $ort);
-		    for my $col (1 .. @cols) {
-			next if $col >= $max_cols; # XXX off by one?
-			$lb->itemCreate($inx, $col, -text => $cols[$col-1],
-					-style => $text_style,
+		    $lb->add($inx,
+			     -text => $cols[0],
+			     -data => $ort,
+			     -style => $text_style[0],
+			    );
+		    for my $col (1 .. $#cols) {
+			next if $col > $max_cols; # XXX off by one?
+			$lb->itemCreate($inx, $col,
+					-text => $cols[$col],
+					-style => $text_style[$col],
 				       );
 		    }
 		    $inx++;
 		}
+		# XXX destroy text_styles?
 	    } else {
 		if (!$sorted) {
 		    $lb->insert('end',

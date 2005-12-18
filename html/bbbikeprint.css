@@ -2,6 +2,7 @@
 body {
   background-color:#ffffff;
   font-family:sans-serif,helvetica,verdana,arial;
+  font-size:x-small;
 }
 td,th,p,h2,li,input {
   font-family:sans-serif,helvetica,verdana,arial;
@@ -21,4 +22,11 @@ dt {
 .hfill { width:100%; }
 .nobr {
   white-space: nowrap;
+}
+table.print {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table.print td, table.print th {
+  border: 1px solid black;
 }
