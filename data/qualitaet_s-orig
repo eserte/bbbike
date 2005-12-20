@@ -4,10 +4,11 @@
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Br¸cken, Straﬂen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7210,-1060 -7498,-1355 -7592,-1402
-Markgrafendamm: m‰ﬂiges Kopfsteinpflaster	Q2 14641,10552 14675,10693 14680,10758
-Markgrafendamm: schlechtes Kopfsteinpflaster	Q3 14680,10758 14681,10847
+Markgrafendamm: m‰ﬂiges Kopfsteinpflaster	Q2 14641,10552 14675,10693
+Markgrafendamm: m‰ﬂiges Kopfsteinpflaster	Q2; 14675,10693 14680,10758
+Markgrafendamm: schlechtes Kopfsteinpflaster	Q3; 14680,10758 14681,10847
 Markgrafendamm/Hauptstr.: asphaltiert	Q0 14681,10847 14794,10844 14890,10824
-Hauptstr.: m‰ﬂiges Kopfsteinpflaster	Q2 14890,10824 15255,10751
+Hauptstr.: m‰ﬂiges Kopfsteinpflaster	Q2 14890,10824 15181,10766 15255,10751
 Karlshorster Str.: m‰ﬂiges Kopfsteinpflaster	Q2 15267,10865 15266,10791 15255,10751
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1683,9847 1511,10051 1382,10124 1308,10031
 Werkst‰ttenweg: m‰ﬂiges Kopfsteinpflaster	Q2 2121,10089 1634,9668
@@ -298,7 +299,7 @@ Kˆnigstr.: schlechtes Kopfsteinpflaster	Q3 525,3008 -141,2648 -267,2576
 Kˆnigsweg: Waldweg, m‰ﬂig bis OK	Q1 -3161,975 -3404,828 -3507,767 -4257,328 -5983,-648 -6395,-887 -6807,-1093 -6928,-1076
 Kˆnigsweg: Waldweg, m‰ﬂig bis OK	Q1 -1088,2134 -1303,2003 -1581,1850 -2043,1596 -2618,1281
 Sonntagstr.: Kopfsteinpflaster	Q2 14434,11465 14535,11327 14598,11245 14669,11152 14752,11041 14798,10985
-Simplonstr.: Kopfsteinpflaster	Q2 13954,11647 14032,11570 14049,11553 14099,11505 14180,11428 14252,11368 14327,11308 14367,11276 14394,11254 14459,11200 14530,11137 14597,11069 14677,11027 14752,11041
+Simplonstr.: Kopfsteinpflaster	Q2 13996,11631 13992,11605 14032,11570 14049,11553 14099,11505 14180,11428 14252,11368 14327,11308 14367,11276 14394,11254 14459,11200 14530,11137 14597,11069 14677,11027 14752,11041
 Helenenhof: kleinteiliges Pflaster	Q1 14495,11261 14395,11356
 Matkowskystr.: Kopfsteinpflaster	Q2 14530,11137 14509,11060
 Neue Bahnhofstr.: Kopfsteinpflaster	Q2 14752,11041 14811,11067 14912,11252
@@ -1207,6 +1208,8 @@ Brommystr.: Kopfsteinpflaster	Q2 12509,11025 12567,11115
 (Fischzug - Uferweg): Holzbohlenweg	Q1 15209,10087 15260,10048
 #: add_fragezeichen: ist der Abschnitt zwischen Fischerh¸ttenstr. und Beerenstr. auch Kopfsteinpflaster?
 Busseallee: Kopfsteinpflaster	Q2 166,3040 82,3166 -249,3632
+(Hauptstr. - Kynaststr.): schlechtes Kopfsteinpflaster	Q3 15181,10766 15030,10819 14881,10864
+Hallesches Tor: Beton	Q0 9593,10238 9592,10174
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: m‰ﬂiges Kopfsteinpflaster	Q2 3489,4115 3768,4045

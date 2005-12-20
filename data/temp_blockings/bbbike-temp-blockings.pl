@@ -218,9 +218,9 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Hermannstraße, zwischen Emserstraße und Thomasstraße gesperrt. Grund: Straßenfest. Dauer: 11.10.2003, 06.00 Uhr bis 12.10.2003, 24.00 Uhr',
        type  => 'handicap',
      },
-     { from  => 1134766980, # 2005-12-16 22:03
-       until => 1138057200, # 2006-01-24 00:00
-       text  => 'L137 Schlichtallee Hauptstraße - Lückstraße in beiden Richtungen Zwischen Hauptstraße und Lückstraße beidseitig wegen Bauarbeiten gesperrt bis 23.01.06 ',
+     { from  => 1135045277, # 2005-12-20 03:21
+       until => 1135378800, # 2005-12-24 00:00
+       text  => 'Schlichtallee zwischen Hauptstraße und Lückstraße beidseitig wegen Bauarbeiten gesperrt bis 23.12.05 ',
        type  => 'gesperrt',
        source_id => 'LMS_1134638526559',
        data  => <<EOF,
@@ -2729,8 +2729,8 @@ userdel	2 -67681,19301 -67871,19214
 EOF
      },
      { from  => 1126648800, # 2005-09-14 00:00
-       until => 1134687600, # 2005-12-16 00:00
-       text  => 'B 198; (Günterberg-Gramzow); bei Schmiedeberg, Brücke über Mühlengraben Brückenersatzneubau Vollsperrung 15.09.2005-15.12.2005 ',
+       until => 1142463600, # 2006-03-16 00:00
+       text  => 'B 198 Günterberg-Gramzow bei Schmiedeberg, Brücke über Mühlengraben Brückenersatzneubau Vollsperrung 15.09.2005-15.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 46677,82770 47081,83093
@@ -3508,6 +3508,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 9024,906 9241,1073
+EOF
+     },
+     { from  => 1136070000, # 2006-01-01 00:00
+       until => 1138057200, # 2006-01-24 00:00
+       text  => 'B 179 Cottbuser-/ Fichtestr. OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsperrung 02.01.2006-23.01.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 26313,-13049 26028,-12312
+EOF
+     },
+     { from  => 1134860400, # 2005-12-18 00:00
+       until => 1135206000, # 2005-12-22 00:00
+       text  => 'L 030 Karl-Marx-Str. OD Niederlehme, Autobahnbrücke A 10 Brückenneubau Vollsperrung; Umleitung 19.12.2005-21.12.2005 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 27547,-9965 27485,-10246
 EOF
      },
     );

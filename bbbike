@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.216 2005/12/18 22:58:04 eserte Exp $
+# $Id: bbbike,v 3.216 2005/12/18 22:58:04 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -15399,7 +15399,7 @@ sub save_user_dels {
     my(%args) = @_;
     _save_umask {
 	umask 022;
-	$net->save_user_deletions($file, %args);
+	$net->save_user_deletions($file, %args) if $net;
     };
 }
 

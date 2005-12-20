@@ -4,9 +4,9 @@ push @temp_blocking,
 (
        {
          'source_id' => 'LMS_1134638526559',
-         'until' => 1138057200,
-         'text' => 'L137 Schlichtallee Hauptstraße - Lückstraße in beiden Richtungen Zwischen Hauptstraße und Lückstraße beidseitig wegen Bauarbeiten gesperrt bis 23.01.06 ',
-         'from' => 1134766980,
+         'until' => 1135378800,
+         'text' => 'Schlichtallee zwischen Hauptstraße und Lückstraße beidseitig wegen Bauarbeiten gesperrt bis 23.12.05 ',
+         'from' => 1135045277,
          'data' => 'userdel	2 15751,10582 16032,10842
 userdel	2 15751,10582 15629,10481
 ',
@@ -438,7 +438,15 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
        },
        undef,
        undef,
-       undef,
+       {
+         'until' => 1142463600,
+         'text' => 'B 198 Günterberg-Gramzow bei Schmiedeberg, Brücke über Mühlengraben Brückenersatzneubau Vollsperrung 15.09.2005-15.03.2006 ',
+         'from' => 1126648800,
+         'data' => 'userdel	2 46677,82770 47081,83093
+userdel	2 47081,83093 47137,83456
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -728,6 +736,22 @@ userdel	q4 -8886,85737 -9850,84800
          'text' => 'Säntisstraße zwischen Daimlerstraße und Nahmitzer Damm Bahnübergang gesperrt bzw. halbseitig gesperrt, Dauer: 17.12.05 04:00 Uhr bis 20.12.05 20:00 Uhr ',
          'from' => 1134702000,
          'data' => 'userdel	2 9024,906 9241,1073
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1138057200,
+         'text' => 'B 179 Cottbuser-/ Fichtestr. OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsperrung 02.01.2006-23.01.2006 ',
+         'from' => 1136070000,
+         'data' => 'userdel	2 26313,-13049 26028,-12312
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1135206000,
+         'text' => 'L 030 Karl-Marx-Str. OD Niederlehme, Autobahnbrücke A 10 Brückenneubau Vollsperrung; Umleitung 19.12.2005-21.12.2005 ',
+         'from' => 1134860400,
+         'data' => 'userdel	2 27547,-9965 27485,-10246
 ',
          'type' => 'gesperrt'
        }
