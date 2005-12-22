@@ -868,8 +868,6 @@ Schröderstr.: Kopfsteinpflaster	Q2 9531,13797 9718,13885
 Lepsiusstr.: Kopfsteinpflaster	Q2 4981,6642 4948,6582 4922,6537
 #: add_fragezeichen: mindestens im Süden:
 Artemisstr.: kleinteiliges Kopfsteinpflaster	Q1 4387,22222 4293,22365 4140,22623
-#: add_fragezeichen: Stimmt das?
-Bohnsdorfer Str.: Waldweg??	Q2 21999,2171 21996,1683 22162,1183 22217,1108
 Nostitzstr.: Kopfsteinpflaster	Q2 9477,9214 9492,9311 9506,9434 9532,9600
 Riemannstr.: gutes Kopfsteinpflaster, etwas erhöhte Bordsteine zu passieren	Q1 9642,9405 9578,9419
 Fontanepromenade: Kopfsteinpflaster	Q2 10752,9662 10705,9555 10629,9360
@@ -2458,7 +2456,7 @@ Torweg: asphaltiert	Q0 -7385,14530 -7154,14532 -6876,14529 -6398,14486
 #: by: Snoopsoul: vvv
 #: XXX etwas widersprüchlich: Snoopsoul schreibt "schlechtes Kopfsteinpflaster", die ADFC-Karte vergibt für den nördlichen Abschnitt "gut befahrbar", außerdem werden Teilstücke vom Bus befahren
 Pilgramer Str.: schlechtes Kopfsteinpflaster	Q3 25115,11244 25125,10475 25028,10312 24827,9968 24688,9730 24540,9478
-Pilgramer Str.: Asphalt	Q0 24540,9478 24334,9000 24221,8731
+Pilgramer Str.: Asphalt	Q0 24540,9478 24444,9256 24334,9000 24221,8731
 Pilgramer Str.: schlechtes Kopfsteinpflaster	Q3 24221,8731 24165,8375 24043,7718
 #: by: ^^^
 #: by: Jörg krummholz:
@@ -2598,7 +2596,7 @@ Leuthener Str.: Asphalt	Q0 7411,8364 7494,8364 7578,8358 7640,8359 7716,8356
 #: by: Gregor Pickert:
 Magnusstr.: Asphalt	Q0 19592,2403 19495,2535 19325,2701 19170,2828
 #: by: Regine Lindner: vvv
-Summter Str.: mäßiger Beton	Q1 24635,8007 24729,8659 25095,9159 25269,9408 25413,9613 25678,9992
+Summter Str.: mäßiger Beton	Q1 24635,8007 24729,8659 24947,8957 25095,9159 25269,9408 25413,9613 25678,9992
 Ahornallee: asphaltiert	Q0 24337,9835 24688,9730 25269,9408 25329,9375
 #: by: ^^^
 #: by: Florian Schintke:
@@ -2953,6 +2951,12 @@ Schillerstr. (Rosenthal): extrem schlechtes Kopfsteinpflaster	Q3 7137,20270 7262
 #: by: ^^^
 #: by: Heike Siewert:
 Nüßlerstr.: Asphalt	Q0 14739,17625 14178,17690
+#: by: Tino Knauth:
+Watzmannweg: Beton	Q0 10336,2182 10294,2234 10365,2572
+#: by: Henrik (hja)
+Paul-Wegener-Str.: Beton	Q0 24149,9387 24444,9256 24611,9181 24947,8957 25089,8855
+#: by: Stefan (mail2...)
+Bohnsdorfer Str.: Waldweg, nur nach starkem Regen schlammig	Q1 21999,2171 21996,1683 22162,1183 22217,1108
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
