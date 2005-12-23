@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SVG.pm,v 1.14 2005/10/27 00:59:35 eserte Exp $
+# $Id: SVG.pm,v 1.15 2005/12/23 22:59:39 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -28,7 +28,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -111,48 +111,33 @@ sub cat2svgrgb {
 
 sub set_category_styles {
     my($self) = @_;
-    %style =
-	(
-	 'B'  => {'stroke' => cat2svgrgb('B'),    'stroke-width' => 2},
-	 'HH' => {'stroke' => cat2svgrgb('HH'), 'stroke-width' => 2},
-	 'H'  => {'stroke' => cat2svgrgb('H'), 'stroke-width' => 2},
-	 #default: 'N'  => {'stroke' => cat2svgrgb('N')}, # default: 'stroke-width' => 1
-	 'NN' => {'stroke' => cat2svgrgb('NN')}, # defaukt: 'stroke-width' => 1},
-	 S  => {'stroke' => cat2svgrgb('S')},
-	 SA => {'stroke' => cat2svgrgb('SA')},
-	 SB => {'stroke' => cat2svgrgb('SB')},
-	 SC => {'stroke' => cat2svgrgb('SC')},
-	 R  => {'stroke' => cat2svgrgb('R')},
-	 RA => {'stroke' => cat2svgrgb('RA')},
-	 RB => {'stroke' => cat2svgrgb('RB')},
-	 RC => {'stroke' => cat2svgrgb('RC')},
-	 U  => {'stroke' => cat2svgrgb('U')},
-	 UA => {'stroke' => cat2svgrgb('UA')},
-	 UB => {'stroke' => cat2svgrgb('UB')},
-	 W  => {'stroke' => cat2svgrgb('W')},
-	 W0 => {'stroke' => cat2svgrgb('W0'), 'stroke-width' => 1},
-	 W1 => {'stroke' => cat2svgrgb('W1'), 'stroke-width' => 2},
-	 W2 => {'stroke' => cat2svgrgb('W2'), 'stroke-width' => 3},
-	 'F:W'  => {'fill' => cat2svgrgb('W')},
-	 'F:W1' => {'fill' => cat2svgrgb('W1')},
-	 'F:W2' => {'fill' => cat2svgrgb('W2')},
-	 I  => {'fill' => 'none'},
-#  	 F  => $white,
-  	 'F:Ae' => {'fill' => cat2svgrgb('Ae')},
-  	 'F:P'  => {'fill' => cat2svgrgb('P')},
-	 'F:Pabove' => {'fill' => cat2svgrgb('Pabove')},
-	 'F:Forest'  => {'fill' => cat2svgrgb('Forest')},
-	 'F:Forestabove' => {'fill' => cat2svgrgb('Forestabove')},
-	 'F:Cemetery'  => {'fill' => cat2svgrgb('Cemetery')},
-	 'F:Green'  => {'fill' => cat2svgrgb('Green')},
-	 'F:Orchard'  => {'fill' => cat2svgrgb('Orchard')},
-	 'F:Sport'  => {'fill' => cat2svgrgb('Sport')},
-	 'F:Industrial'  => {'fill' => cat2svgrgb('Industrial')},
-  	 Z  => {'stroke' => cat2svgrgb('Z')},
-#  	 '?' => $black,
-#  	 '??' => $black,
-  	 Route => {'stroke' => cat2svgrgb('Route')}, # alternierend
-	);
+    %style = ();
+    for my $cat (qw(B HH H N NN
+		    S SA SB SC S0 SBau
+		    R RA RB RC R0 RBau
+		    U UA UB    U0 UBau
+		    W W0 W1 W2
+		    F:W F:W1 F:W2
+		    F:Ae F:P F:Pabove F:Forest F:Forestabove
+		    F:Cemetery F:Green F:Orchard F:Sport F:Industrial
+		    Z Route
+		   )) {
+	if ($cat =~ m{^F:(.*)}) {
+	    my $plain_cat = $1;
+	    $style{$cat} = {'fill' => cat2svgrgb($plain_cat) };
+	} else {
+	    $style{$cat} = {'stroke' => cat2svgrgb($cat) };
+	}
+    }
+    for my $cat (qw(W0)) {
+	$style{$cat}->{'stroke-width'} = 1;
+    }
+    for my $cat (qw(B HH H W1)) {
+	$style{$cat}->{'stroke-width'} = 2;
+    }
+    for my $cat (qw(W2)) {
+	$style{$cat}->{'stroke-width'} = 3;
+    }
 }
 
 sub allocate_fonts {
@@ -317,7 +302,7 @@ sub draw_map {
 			    (defined $style ? (style => $style) : ()),
 			   );
 
-	    } elsif ($cat !~ /^[SRU]0$/) { # Ausnahmen: in Bau
+	    } elsif ($cat !~ $BBBikeDraw::bahn_bau_rx) { # Ausnahmen: in Bau
 		my $style = $style{$cat};
 
 #  		$im->set_line_width(($width{$cat} || 1) * 1);

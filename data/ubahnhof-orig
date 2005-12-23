@@ -1,6 +1,6 @@
 #: title.de: U-Bahnhöfe
 #: title.en: Underground stations
-#: version: $Id: ubahnhof-orig,v 4.6 2005/08/15 21:40:51 eserte Exp $
+#: version: $Id: ubahnhof-orig,v 4.7 2005/12/23 23:02:01 eserte Exp $
 #:
 # U1
 #: attrs bg
@@ -125,9 +125,9 @@ Louis-Lewin-Str.	UB 24946,15113
 #: attrs bf
 Hönow	UB 25965,15030
 # U5 in Bau/geplant
-Unter den Linden	U0 8852,12293
-Reichstag	U0 8272,12685
-Lehrter Bahnhof (Hauptbahnhof)	U0 8030,13294
+Unter den Linden	UBau 8852,12293
+Reichstag	UBau 8272,12685
+Lehrter Bahnhof (Hauptbahnhof)	UBau 8030,13294
 # U6
 #: attrs bg
 Alt-Mariendorf	UB 9472,3641

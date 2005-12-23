@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeDraw.pm,v 3.46 2005/08/10 23:43:56 eserte Exp $
+# $Id: BBBikeDraw.pm,v 3.47 2005/12/23 23:00:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2001 Slaven Rezic. All rights reserved.
@@ -19,9 +19,11 @@ use Strassen;
 # sparen:
 use Carp qw(confess);
 
-use vars qw($images_dir $VERSION);
+use vars qw($images_dir $VERSION $bahn_bau_rx);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 3.46 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 3.47 $ =~ /(\d+)\.(\d+)/);
+
+$bahn_bau_rx = qr{^[SRU](0|Bau|G)$};
 
 sub new {
     my($pkg, %args) = @_;
@@ -468,13 +470,20 @@ sub set_category_colors {
 	      SA => $darkgreen,
 	      SB => $darkgreen,
 	      SC => $darkgreen,
+	      SBau => $green,
+	      S0 => $green,
 	      R  => $darkgreen,
 	      RA => $darkgreen,
 	      RB => $darkgreen,
 	      RC => $darkgreen,
+	      RG => $darkgreen,
+	      RBau => $green,
+	      R0 => $green,
 	      U  => $darkblue,
 	      UA => $darkblue,
 	      UB => $darkblue,
+	      UBau => $lightblue,
+	      U0 => $lightblue,
 	      W  => $lightblue,
 	      W0 => $lightblue,
 	      W1 => $lightblue,

@@ -404,7 +404,15 @@ Regionalbahnen Zone C.
 
 =item C<R0>
 
-Regionalbahnen außer Betrieb oder in Bau.
+Regionalbahnen außer Betrieb oder ohne regelmäßigen Betrieb.
+
+=item C<RBau>
+
+Regionalbahnen in Bau.
+
+=item C<RG>
+
+Güterbahnen, Verbindungskurven.
 
 =item C<S>
 
@@ -424,7 +432,11 @@ S-Bahnen Zone C.
 
 =item C<S0>
 
-S-Bahnen außer Betrieb oder in Bau.
+S-Bahnen außer Betrieb.
+
+=item C<SBau>
+
+S-Bahnlinien in Bau.
 
 =item C<U>
 
@@ -444,7 +456,11 @@ U-Bahnen Zone C.
 
 =item C<U0>
 
-U-Bahnen außer Betrieb oder in Bau.
+U-Bahnen außer Betrieb.
+
+=item C<UBau>
+
+U-Bahnlinien in Bau.
 
 =back
 

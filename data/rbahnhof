@@ -16,6 +16,7 @@ Berlin Friedrichstr.	RA 9181,12732
 Berlin Alexanderplatz	RA 10847,12890
 Berlin Ostbahnhof	RA 12609,11662
 Berlin-Karlshorst	RB 18801,8501
+Berlin-Lichterfelde Ost	RBau 5378,2507
 Erkner	RC 34218,2881
 Fangschleuse	RC 39095,573
 Hangelsberg	R 46013,-87
@@ -128,9 +129,9 @@ Uebigau	R 5165,-91360
 Beutersitz	R 9534,-90687
 Schönborn	R 16901,-89222
 Ludwigsfelde	RC 1678,-12074
-Teltow	R0 3620,-2183
-Großbeeren	R0 2735,-6109
-Birkengrund	R0 2162,-8565
+Teltow	RBau 3620,-2183
+Großbeeren	RBau 2735,-6109
+Birkengrund	RBau 2162,-8565
 Thyrow	RC 1071,-18033
 Trebbin	R -666,-21019
 Woltersdorf (b Luckenwalde)	R -2833,-32291
@@ -363,7 +364,7 @@ Ahlbeck	R 60212,171187
 Ahlbeck Grenze	R 61837,169750
 Hosena	R 49344,-99923
 Hoyerswerda	R 69470,-107134
-Jungfernheide	R0 3352,13752
+Berlin Jungfernheide	RBau 3352,13752
 Leuenberg	R0 42871,31955
 Sternebeck	R0 50247,30933
 Schulzendorf	R0 55569,30484
@@ -385,5 +386,7 @@ Spremberg	R 80105,-91209
 Bagenz	R 81908,-82220
 Neuhausen (bei Cottbus)	R 81298,-79351
 Kiekebusch (bei Cottbus)	R 78125,-75187
-Hauptbahnhof (Lehrter Bahnhof)	R0 7996,13271
-Potsdamer Platz	R0 8522,11503
+Berlin Hauptbahnhof (Lehrter Bahnhof)	RBau 7996,13271
+Potsdamer Platz	RBau 8522,11503
+Berlin Südkreuz (Papestr.)	RBau 7869,7674
+Berlin Nordkreuz (Gesundbrunnen)	RBau 9299,15930

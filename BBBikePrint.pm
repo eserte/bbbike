@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.33 2005/08/25 22:16:27 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.34 2005/12/23 23:03:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -385,10 +385,10 @@ sub draw_legend {
 	$start_width = $width;
 	$left = $c->canvasx($c->width-10-$start_width);
     }
-    my %str_category = ('u' => [qw(UA UB)],
+    my %str_category = ('u' => [qw(UA UB U0 UBau)],
 			's' => [qw(HH H N NN)], # XXX BAB
-			'r' => [qw(RA RB RC R)],
-			'b' => [qw(SA SB SC)],
+			'r' => [qw(RA RB RC R RG R0 RBau)],
+			'b' => [qw(SA SB SC S0 SBau)],
 			'l' => [qw(B HH H N NN)], # XXX BAB
 			'w' => 'W',
 			'f' => [qw(P Forest Cemetery Ae)], # Pabove not needed # XXX geht nicht fürs Anklicken

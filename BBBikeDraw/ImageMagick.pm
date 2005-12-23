@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ImageMagick.pm,v 1.12 2005/10/27 00:59:08 eserte Exp $
+# $Id: ImageMagick.pm,v 1.13 2005/12/23 22:59:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -36,7 +36,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -260,7 +260,7 @@ sub draw_map {
 			  points => join(" ", @poly),
 			  fill => $c,
 			  stroke => $oc);
-	    } elsif ($cat !~ /^[SRU]0$/) { # Ausnahmen: in Bau
+	    } elsif ($cat !~ $BBBikeDraw::bahn_bau_rx) { # Ausnahmen: in Bau
 		next if $restrict && !$restrict->{$cat};
 		my $color = defined $color{$cat} ? $color{$cat} : $white;
 		my $width = defined $width{$cat} ? $width{$cat} : 1;

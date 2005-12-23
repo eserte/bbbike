@@ -1,6 +1,6 @@
 #: title.de: S-Bahnhöfe
 #: title.en: Railway stations (S-Bahn)
-#: version: $Id: sbahnhof-orig,v 4.18 2005/12/10 23:41:14 eserte Exp $
+#: version: $Id: sbahnhof-orig,v 4.19 2005/12/23 23:10:48 eserte Exp eserte $
 #:
 Yorckstr.	SA 8280,9528
 Yorckstr. (Großgörschenstr.)	SA 7985,9576
@@ -56,9 +56,8 @@ Buckower Chaussee	SB 9173,512
 Schichauweg	SB 9660,-833
 #: attrs bf
 Lichtenrade	SB 10151,-2046
-#: XXX: oder ohne Bindestrich?
 #: attrs bg
-Lichterfelde-Ost	SB 5378,2507
+Lichterfelde Ost	SB 5378,2507
 #: attrs bf
 Lankwitz	SB 6371,3590
 #: attrs bg
@@ -296,3 +295,9 @@ Hennigsdorf	SC -3381,25591
 Stresow	SB -2901,13742
 #: attrs bg
 Spandau	SB -3643,14016
+Zehlendorf Süd	S0 -509,1987
+Düppel	S0 -1501,1486
+Gartenfeld	S0 -235,15477
+Siemensstadt	S0 737,14670
+Wernerwerk	S0 1667,14025
+Siemensstadt-Fürstenbrunn	S0 1204,13374

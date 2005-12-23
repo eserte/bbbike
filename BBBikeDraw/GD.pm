@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.48 2005/08/08 22:51:47 eserte Exp $
+# $Id: GD.pm,v 1.49 2005/12/23 22:59:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -40,7 +40,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.48 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.49 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush, %thickness, %outline_thickness);
 
@@ -335,7 +335,7 @@ sub draw_map {
 		    $im->setThickness(1);
 		}
 		$im->filledPolygon($poly, $c);
-	    } elsif ($cat !~ /^[SRU]0$/) { # Ausnahmen: in Bau
+	    } elsif ($cat !~ $BBBikeDraw::bahn_bau_rx) { # Ausnahmen: in Bau, stillgelegt, Güterstrecken ...
 		next if $restrict && !exists $restrict->{$cat};
 		my $color;
 		if (defined $thickness{$cat}) {

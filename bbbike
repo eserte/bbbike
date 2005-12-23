@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.216 2005/12/18 22:58:04 eserte Exp eserte $
+# $Id: bbbike,v 3.217 2005/12/23 23:00:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.216 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.217 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -263,9 +263,9 @@ for (qw(s l r b u w f v e z fz)) { $p_draw{"pp-$_"} = 1} # this list should cove
 $p_draw{'lsa'} = 1;
 $p_far_away{'o'} = 0;
 $str_restrict{'s'}  = {qw(BAB 0 B 1 HH 1 H 1 N 1 NN 1 Pl 0 Br 0)}; # Pl = places, Br = bridges
-$str_restrict{'r'}  = {qw(RA 1 RB 1 RC 1 R 1 R0 0)};
-$str_restrict{'b'}  = {qw(S 1 SA 1 SB 1 SC 1 S0 0)};
-$str_restrict{'u'}  = {qw(U 1 UA 1 UB 1 U0 0)};
+$str_restrict{'r'}  = {qw(RA 1 RB 1 RC 1 R 1 R0 0 RBau RG 1)};
+$str_restrict{'b'}  = {qw(S 1 SA 1 SB 1 SC 1 S0 0 SBau 0)};
+$str_restrict{'u'}  = {qw(U 1 UA 1 UB 1 U0 0 UBau 0)};
 $str_restrict{'qs'} = {qw(Q0 0 Q1 1 Q2 1 Q3 1)};
 $str_restrict{'ql'} = {qw(Q0 0 Q1 1 Q2 1 Q3 1)};
 $str_restrict{'hs'} = {qw(q0 0 q1 1 q2 1 q3 1 q4 1)};
@@ -2022,7 +2022,8 @@ sub do_iconframe {
     $ubcm->separator;
     foreach ([M"VBB-Zone Berlin A", 'UA'],
 	     [M"VBB-Zone Berlin B", 'UB'],
-	     [M"in Bau", 'U0'],
+	     [M"in Bau", 'UBau'],
+	     [M"stillgelegt", 'U0'],
 	    ) {
 	$ubcm->checkbutton(-label => $_->[0],
 			   -variable => \$str_restrict{'u'}->{$_->[ATTRIB_PLURAL]},
@@ -2076,7 +2077,8 @@ sub do_iconframe {
     foreach ([M"VBB-Zone Berlin A", 'SA'],
 	     [M"VBB-Zone Berlin B", 'SB'],
 	     [M"VBB-Zone Berlin C", 'SC'],
-	     [M"in Bau/stillgelegt", 'S0'],
+	     [M"in Bau", 'SBau'],
+	     [M"stillgelegt", 'S0'],
 	    ) {
 	$sbcm->checkbutton(-label => $_->[0],
 			   -variable => \$str_restrict{'b'}->{$_->[ATTRIB_PLURAL]},
@@ -2124,7 +2126,9 @@ sub do_iconframe {
     foreach ([M"VBB-Zonen Berlin A und B", 'RB'],
 	     [M"VBB-Zone Berlin C", 'RC'],
 	     [M"auﬂerhalb Berlin ABC", 'R'],
-	     [M"in Bau/stillgelegt", 'R0'],
+	     [M"stillgelegt", 'R0'],
+	     [M"in Bau", 'RBau'],
+	     [M"G¸terbahnen/Verbindungsstrecken", 'RG'],
 	    ) {
 	$rbcm->checkbutton(-label => $_->[0],
 			   -variable => \$str_restrict{'r'}->{$_->[ATTRIB_PLURAL]},
@@ -4831,7 +4835,8 @@ sub define_item_attribs {
 	 'SA' => 'green3',	# S-Bahn, Zone A
 	 'SB' => 'green3',	# S-Bahn, Zone B
 	 'SC' => '#008000', 	# S-Bahn, Zone C
-	 'S0' => '#a0b0a0', 	# stillgelegte S-Bahn bzw. in Bau
+	 'S0' => '#a0b0a0', 	# stillgelegte S-Bahn
+	 'SBau' => '#a0b0a0', 	# S-Bahn in Bau
 	 ## neues Farbschema an DB-Farben orientiert
 	 ## nicht gut, da nicht gut von Bundesstraﬂen unterscheidbar
 	 #     'RA' => '#bb171d',  # R-Bahn, Zone A
@@ -4844,11 +4849,14 @@ sub define_item_attribs {
 	 'RB' => 'green3',	# R-Bahn, Zone B
 	 'RC' => '#008000', 	# R-Bahn, Zone C
 	 'R'  => '#006400', 	# R-Bahn, auﬂerhalb
-	 'R0' => '#a0b0a0', 	# stillgelegte R-Bahn bzw. in Bau
+	 'R0' => '#a0b0a0', 	# stillgelegte R-Bahn
+	 'RBau' => '#a0b0a0', 	# in Bau
+	 'RG' => '#a0c8a0',	# G¸terbahnen
 	 'U'  => '#000080', 	# U-Bahn
 	 'UA' => '#000080', 	# U-Bahn, Zone A
 	 'UB' => '#000080', 	# U-Bahn, Zone B
-	 'U0' => '#a0a0b0', 	# U-Bahn in Bau
+	 'U0' => '#a0a0b0', 	# stillgelegte U-Bahn
+	 'UBau' => '#a0a0b0', 	# U-Bahn in Bau
 	 'W'  => '#bad5f7', 	# Gew‰sser
 	 'WR' => '#404080',	# Wasserrouten
 	 'P'  => '#76c48b', 	# Parks
@@ -4932,7 +4940,7 @@ sub define_item_attribs {
 	);
     for (qw(UA UB U0)) { $category_font_color{$_} = $category_font_color{"U"} }
     for (qw(SA SB SC S0)) { $category_font_color{$_} = $category_font_color{"S"} }
-    for (qw(RA RB RC R0)) { $category_font_color{$_} = $category_font_color{"R"} }
+    for (qw(RA RB RC R0 RBau RG)) { $category_font_color{$_} = $category_font_color{"R"} }
     %category_font =
 	(
 	 'W'  => 'helvetica %d italic',
@@ -5032,6 +5040,11 @@ sub define_item_attribs {
 	 'sperre3' => [6,2],
 	 'fz'   => [8,5],
 	 'Tu'   => [2,5],	# Tunnel (addinfo)
+	);
+    %category_dash =
+	('R0'   => [2,5],
+	 'U0'   => [2,5],
+	 'S0'   => [2,5],
 	);
     foreach (qw/gP gD/) {
 	$line_dash{$_} = [@{ $line_dash{"g"}}];
@@ -5181,13 +5194,20 @@ sub define_item_attribs {
     %category_attrib =
 	('UA' => [M"U-Bahn Zone A", undef, undef],
 	 'UB' => [M"U-Bahn Zone B", undef, undef],
+	 'U0' => [M"stillgelegte U-Bahn", undef, undef],
+	 'UBau' => [M"U-Bahn in Bau", undef, undef],
 	 'SA' => [M"S-Bahn Zone A", undef, undef],
 	 'SB' => [M"S-Bahn Zone B", undef, undef],
 	 'SC' => [M"S-Bahn Zone C", undef, undef],
+	 'S0' => [M"stillgelegte S-Bahn", undef, undef],
+	 'SBau' => [M"S-Bahn in Bau", undef, undef],
 	 'RA' => [M"R-Bahn Zone A", undef, undef],
 	 'RB' => [M"R-Bahn Zone B", undef, undef],
 	 'RC' => [M"R-Bahn Zone C", undef, undef],
 	 'R'  => [M"R-Bahn auﬂerhalb Berlin ABC", undef, undef],
+	 'R0' => [M"stillgelegte Bahnstrecke", M"stillgelegte Bahnstrecken", undef],
+	 'RBau' => [M"Bahnstrecke in Bau", M"Bahnstrecken in Bau", undef],
+	 'RG' => [M"G¸terbahn/Verbindungsstrecke", M"G¸terbahnen/Verbindungsstrecken", undef],
 	 'HH' => [M"wichtige Hauptstraﬂe", M"wichtige Hauptstraﬂen", undef],
 	 'B'  => [M"Bundesstraﬂe", M"Bundesstraﬂen", undef],
 	 'H'  => [M"Hauptstraﬂe", M"Hauptstraﬂen", undef],
@@ -5601,7 +5621,7 @@ sub generate_plot_functions {
 				      );
 		    } else {
 			my @std_tags = ($abk, $strname,"$abk-$cat_hin","$abk-" . $i);
-			my $line_dash = $line_dash{$abk};
+			my $line_dash = $category_dash{$cat_hin} || $line_dash{$abk};
 		        if (@addinfo_hin) { # ignore @addinfo_rueck for now
 			    for my $addinfo_hin (@addinfo_hin) {
 			        if ($addinfo_hin eq 'Tu') {

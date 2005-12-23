@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PDF.pm,v 2.31 2005/10/17 23:09:47 eserte Exp $
+# $Id: PDF.pm,v 2.32 2005/12/23 22:59:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -43,7 +43,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.31 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.32 $ =~ /(\d+)\.(\d+)/);
 
 sub init {
     my $self = shift;
@@ -231,7 +231,7 @@ sub draw_map {
 		    $im->lineto(@$xy);
 		}
 		$im->fill;
-	    } elsif ($cat !~ /^[SRU]0$/) { # Ausnahmen: in Bau
+	    } elsif ($cat !~ $BBBikeDraw::bahn_bau_rx) { # Ausnahmen: in Bau
 		next if $restrict && !$restrict->{$cat};
 		$im->set_line_width(($width{$cat} || 1) * 1);
 		$im->set_stroke_color(@{ $color{$cat} || [0,0,0] });

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.33 2005/12/10 23:23:55 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.34 2005/12/23 23:00:40 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -15,7 +15,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.33 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 
@@ -63,8 +63,8 @@ use vars qw(
      @wetter_dir $wetter_dir %wetter_zuordnung %wetter_name
      $x11 $special_edit $edit_mode $edit_mode_flag $edit_normal_mode
      $customchoosecmd $b2m_customcmd
-     %line_width %line_length %line_dash %line_arrow $default_line_width
-     %line_shorten
+     %line_width %line_length %line_dash %category_dash %line_arrow
+     $default_line_width %line_shorten
      %category_size %outline_color %category_color %category_stipple
      %str_color %p_color %p_width
      %category_font_color %category_font %category_width %category_image

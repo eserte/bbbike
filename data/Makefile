@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.75 2005/12/10 23:38:12 eserte Exp $
+# $Id: Makefile,v 2.76 2005/12/23 23:02:57 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -249,8 +249,8 @@ strassen_bab: strassen_bab-orig
 	-@$(READONLY) $@
 
 # Get categories with:
-# perl -nle '/\t(\S+)/ && print $1' sbahn | sort -u
-SBAHN_CATEGORIES=	SA SB SC S0
+# perl -nle '/\t(\S+)/ && print $1' sbahn-orig | sort -u
+SBAHN_CATEGORIES=	SA SB SC S0 SBau
 
 sbahn: sbahn-orig
 	-@$(WRITEABLE) $@
@@ -271,7 +271,7 @@ sbahnhof:	sbahnhof-orig
 # perl -Ilib -MObject::Iterate=iterate -MStrassen::Core -MTie::File -e '$s = Strassen->new("sbahnhof"); iterate { $p{$_->[Strassen::NAME]} = $_->[Strassen::COORDS][0] } $s; tie @f, "Tie::File", "/tmp/Berlin.coords.data" or die ; for (@f) { if (/^S-Bhf (.*?)\|.*\|$/ && $p{$1}) { $_ .= $p{$1}; warn "$1 $p{$1}" } }'
 
 # See SBAHN_CATEGORIES comment
-RBAHN_CATEGORIES=	RA RB RC R R0
+RBAHN_CATEGORIES=	RA RB RC R R0 RBau
 
 rbahn: rbahn-orig
 	-@$(WRITEABLE) $@

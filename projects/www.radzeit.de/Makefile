@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.71 2005/10/21 22:10:24 eserte Exp $
+# $Id: Makefile,v 1.73 2005/12/23 22:58:36 eserte Exp $
 #
 
 # Targets:
@@ -43,7 +43,7 @@ CGI_FILES=		bbbike.cgi \
 			mapserver_address.cgi \
 			mapserver_comment.cgi \
 			mapserver_setcoord.cgi
-TESTS_ON_REMOTE=	basic.t
+TESTS_ON_REMOTE?=	basic.t
 TESTS_FROM_LOCAL=	cgihead.t \
 			cgi-mechanize.t \
 			cgi.t \
@@ -131,6 +131,8 @@ TARGET=radzeit.herceg.de
       make(check)		     || \
       make(backup) 		     || \
       make(test)		     || \
+      make(test-on-remote)	     || \
+      make(test-on-remote-full)	     || \
       make(prepare-bbbike-dist-data) || \
       make(rsync)		     || \
       make(rsync-bbbike-data)	     || \
@@ -221,7 +223,7 @@ do-rsync-routopedia:
 check-rsync-data-ok:
 	true
 
-RSYNC_BBBIKE_DATA_RULES:check-rsync-data-ok \
+RSYNC_BBBIKE_DATA_RULES=check-rsync-data-ok \
 			clean-cache-files-on-remote \
 			do-rsync-bbbike-data \
 			show-rsync-message \
@@ -473,6 +475,9 @@ test-on-remote:
 		${TESTS_ON_REMOTE} \
 	'
 	-@date >> .last/test-on-remote
+
+test-on-remote-full:
+	$(MAKE) test-on-remote TESTS_ON_REMOTE="$(TESTS)"
 
 test-from-local:
 	-@date >> .last/start-test-from-local
