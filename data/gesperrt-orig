@@ -319,6 +319,7 @@ Leipziger Platz	1 8572,11506 8580,11468 8624,11436 8703,11441 8735,11474 8733,11
 Crusemarkstr.	1 10825,18634 10712,18975
 Brommystr.: Privatstr.	2 12509,11025 12567,11115
 (Hauptstr. - Kynaststr.)	1 15181,10766 15030,10819 14881,10864
+Luitpoldstr., Verlängerung über Schulhof, nicht immer geöffnet!	2 6611,9879 6670,9887
 #
 # Potsdam
 #
@@ -407,6 +408,7 @@ Björnsonstr.	1s 10229,16653 10215,16527
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+Martin-Luther-Str.: Mittelstreifen	3nocross 6514,9775 6520,9867 6522,9948
 # (in Erwartung auf den mittleren Punkt) Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 11013,16278 10994,16120
 Oberspreestr.: Straßenbahn auf Mittelstreifen	3nocross 21579,4579 21726,4537 21796,4517
 Hermannstr.: Gitter auf Mittelstreifen	3nocross 11892,8372 11920,8252 11933,8198
@@ -632,6 +634,9 @@ Drängelgitter	BNP:5 8810,14373
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
+#: last_checked: 2005-12-23
+#: XXX: Ist das Passieren nach den Bauarbeiten weiterhin möglich?
+Köbisdreieck: Bauarbeiten	2 7160,11225 6853,11336
 #: last_checked: 2005-11-19
 Budapester Str.: Bauarbeiten, Fußgängerüberweg gesperrt	3nocross::inwork 5716,10978 5831,10978 6135,10982
 Hedwigskirchgasse: Bauarbeiten	2::inwork 9743,12239 9756,12139
@@ -657,7 +662,7 @@ Naumannstr. unter der S-Bahn-Brücke: noch Bauarbeiten	2:inwork 7716,8048 7717,77
 #: next_check: 2005-12-01
 #: see_also: http://www.eyth16.de/weblog/2005/11/04/145/
 (Neue Naumannstr.) (noch in Bau, Fertigstellung Ende 2005 (2005-12-31))	2:inwork 7606,7611 7717,7759
-Goethestr. (Bauarbeiten)	1:inwork 4896,11345 5053,11343
+# XXX del??? Goethestr. (Bauarbeiten)	1:inwork 4896,11345 5053,11343
 # als "Mitte 2006" gekennzeichnet
 Markgrafenstraße  Richtung Französische Straße zwischen Behrenstraße und Französische Straße, Bauarbeiten als Einbahnstraße eingerichtet, Dauer:  bis 01.07.2006	1:inwork 9636,12126 9626,12227
 #: last_checked: 2005-07-31

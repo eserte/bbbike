@@ -379,9 +379,9 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
        undef,
        undef,
        {
-         'until' => 1135378800,
-         'text' => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist möglicherweise noch passierbar (Swinemünder Brücke). Dauer: bis 23.12.2005 ',
-         'from' => 1123992000,
+         'until' => 1146434400,
+         'text' => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist möglicherweise noch passierbar (Swinemünder Brücke). Dauer: bis 30.04.2006 ',
+         'from' => 1135370995,
          'data' => 'userdel	q4 9494,15998 9583,15851
 ',
          'type' => 'handicap'
@@ -428,14 +428,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
        undef,
        undef,
        undef,
-       {
-         'until' => 1135292400,
-         'text' => 'B 166 Zichow-Gramzow OD Gramzow Kanal- und Straßenbau Vollsperrung 26.11.2005-22.12.2005 ',
-         'from' => 1132873200,
-         'data' => 'userdel	q4 50109,89725 49930,89857
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -599,14 +592,7 @@ userdel	q4; 5652,11004 5716,10978 5831,10978
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1135292400,
-         'text' => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 21.12.2005-22.12.2005 ',
-         'from' => 1135033200,
-         'data' => 'userdel	2 16336,-29511 16379,-29446
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1136070000,
          'text' => 'B 167 (Herzberg-Neuruppin) OL Alt Ruppin, Rhinbrücke Brückenneubau Vollsperrung 02.03.2004-31.12.2005 ',
@@ -674,15 +660,7 @@ userdel	2 -4031,-30164 -4311,-30322
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1135292400,
-         'text' => 'L 15 Fürstenberg-Menz OD Fürstenberg, Rheinsberger Str. grundhafter Straßenbau Vollsperrung; Umleitung 30.11.2005-22.12.2005 ',
-         'from' => 1133218800,
-         'data' => 'userdel	q4 -8787,85721 -8886,85737
-userdel	q4 -8886,85737 -9850,84800
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,

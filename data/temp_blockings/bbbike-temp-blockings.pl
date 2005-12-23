@@ -2508,9 +2508,9 @@ EOF
 userdel	2 2996,-10338 1764,-12480
 EOF
      },
-     { from  => 1123992000, # 2005-08-14 06:00
-       until => 1135378800, # 2005-12-24 00:00
-       text  => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist möglicherweise noch passierbar (Swinemünder Brücke). Dauer: bis 23.12.2005 ',
+     { from  => 1135370995, # 2005-12-23 21:49
+       until => 1146434400, # 2006-05-01 00:00
+       text  => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist möglicherweise noch passierbar (Swinemünder Brücke). Dauer: bis 30.04.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 9494,15998 9583,15851
