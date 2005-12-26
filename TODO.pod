@@ -1196,11 +1196,6 @@ Tk804.027, umlauts are shown as unicode escape sequences \x{....}
 Add Tk::Clipboard to @Tk::HList::ISA on Windows (or so). Then it would
 be possible to use Control-C for copying the selection.
 
-=item * (E4)
-
-Check if Object::Iterate will really be available in the next
-windistro.
-
 =item * (M1)
 
 Maybe under Windows or for all click-to-focus systems: make bbbike
@@ -1260,6 +1255,9 @@ layer).
 =item * (E3)
 
 Bahntrassenradeln: L<http://www.achim-bartoschek.de/bahn_bb.htm>
+
+ BBN1: ignore
+ BBO1: eingepflegt (Qualität vielleicht mit aufnehmen)
 
 =item * (E3)
 
@@ -2367,7 +2365,7 @@ Z<>=> maybe the cache build should be done in a separate process. This
 
 Diese TODO-Liste aktualisieren.
 
-=item * (E4)
+=item *
 
 Alle Anregungen von anderen Leuten (z.B. per Mail) hier eintragen.
 

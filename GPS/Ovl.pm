@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Ovl.pm,v 1.3 2005/05/31 00:29:15 eserte Exp $
+# $Id: Ovl.pm,v 1.5 2005/12/24 22:22:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -15,14 +15,15 @@
 package GPS::Ovl;
 
 use strict;
-use vars qw($VERSION @ISA $OVL_MAGIC $OVL_MAGIC_3_0);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+use vars qw($VERSION @ISA $OVL_MAGIC $OVL_MAGIC_3_0 $OVL_MAGIC_4_0);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 require GPS;
 push @ISA, 'GPS';
 
 $OVL_MAGIC     = "DOMGVCRD Ovlfile V2.0:";
-$OVL_MAGIC_3_0 = "XXX NOT YET SUPPORTED XXX DOMGVCRD Ovlfile V3.0:"; # XXX
+$OVL_MAGIC_3_0 = "DOMGVCRD Ovlfile V3.0:";
+$OVL_MAGIC_4_0 = "DOMGVCRD Ovlfile V4.0:";
 
 BEGIN {
     if (!eval '
@@ -53,6 +54,11 @@ sub check {
 	$self->{FileFormat} = "binary";
     } elsif (index($first_line, $OVL_MAGIC_3_0) == 0) {
 	$self->{FileFormat} = "binary_3_0";
+    } elsif (index($first_line, $OVL_MAGIC_4_0) == 0) {
+	die "No support for OVL file format 4.0";
+	$self->{FileFormat} = "binary_4_0";
+    } else {
+	warn "Cannot determine file format. First bytes: " . unpack("H*", $first_line) . "\n";
     }
     close F;
     defined $self->{FileFormat};
@@ -242,6 +248,17 @@ sub as_string_ascii {
 	@coords;
     };
 
+    my $_read_coords_3_0 = sub {
+	my $len = &$_read_short;
+	my @coords;
+	for (1..$len) {
+	    my($x, $y, $z) = (&$_read_float, &$_read_float, &$_read_float);
+	    #warn $z; # XXX tatsächlich die Höhe?
+	    push @coords, [$x,$y];
+	}
+	@coords;
+    };
+
     my $_read_coord = sub {
 	[&$_read_float, &$_read_float];
     };
@@ -302,7 +319,7 @@ sub as_string_ascii {
 	$_seek_to->(0x3d);
 	my $DimmFc = &$_read_long;
 	my $ZoomFc = &$_read_long;
-	my $CenterLat  = &$_read_float;
+	my $CenterLat  = &$_read_float; # XXX verdrehen? siehe binary_3_0
 	my $CenterLong = &$_read_float;
 	warn "Center=$CenterLat/$CenterLong\n";
 	$_seek_to->(0xa9);
@@ -389,7 +406,47 @@ sub as_string_ascii {
 	my $MapName = &$_read_string;
 	warn "Description: $MapName\n";
 
-	# XXX TBD...
+	$_seek_to->(0x163);
+	my $DimmFc = &$_read_long;
+	my $ZoomFc = &$_read_long;
+	my $CenterLong  = &$_read_float;
+	my $CenterLat = &$_read_float;
+	warn "Center (long/lat)=$CenterLong/$CenterLat\n";
+
+	$_seek_to->(0x1a1);
+	my @symbols;
+	while($p < length $buf) {
+#if($trace){while(!$abort){sleep 1}$abort=0}
+	    my $sym = {};
+	    my $typ = &$_read_short;
+	    $sym->{Typ} = $typ;
+	    if ($typ == 0x1) {
+		&$_read_short for 1..9;
+		$sym->{Text} = &$_read_fixed_string;
+		&$_read_short for 1..10;
+		$sym->{Coords} = [&$_read_coords_3_0];
+		#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$sym],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+	    } elsif ($typ == 3) {
+		&$_read_short for 1..10;
+		$sym->{Text} = &$_read_fixed_string;
+		&$_read_short for 1..11;
+		$sym->{Coords} = [&$_read_coord];
+		#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$sym],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+	    } elsif ($typ == 180) {
+		&$_read_short for 1..14;
+		$sym->{Text} = &$_read_fixed_string;
+		&$_read_short for 1..10;
+		$sym->{Coords} = [&$_read_coords_3_0];
+require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$sym],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+		
+	    } else {
+		warn sprintf "%x\n", $p;
+		die "unhandled type <$typ>";
+	    }
+	    push @symbols, $sym;
+	}
+
+	$self->{Symbols} = \@symbols;
     }
 }
 

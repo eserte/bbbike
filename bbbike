@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.217 2005/12/23 23:00:19 eserte Exp $
+# $Id: bbbike,v 3.217 2005/12/23 23:00:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -263,7 +263,7 @@ for (qw(s l r b u w f v e z fz)) { $p_draw{"pp-$_"} = 1} # this list should cove
 $p_draw{'lsa'} = 1;
 $p_far_away{'o'} = 0;
 $str_restrict{'s'}  = {qw(BAB 0 B 1 HH 1 H 1 N 1 NN 1 Pl 0 Br 0)}; # Pl = places, Br = bridges
-$str_restrict{'r'}  = {qw(RA 1 RB 1 RC 1 R 1 R0 0 RBau RG 1)};
+$str_restrict{'r'}  = {qw(RA 1 RB 1 RC 1 R 1 R0 0 RBau 0 RG 1)};
 $str_restrict{'b'}  = {qw(S 1 SA 1 SB 1 SC 1 S0 0 SBau 0)};
 $str_restrict{'u'}  = {qw(U 1 UA 1 UB 1 U0 0 UBau 0)};
 $str_restrict{'qs'} = {qw(Q0 0 Q1 1 Q2 1 Q3 1)};
@@ -400,25 +400,15 @@ for(0..$#Radwege::category_order, "") {
     $radwege_speed{"RW$_"} = 100;
 }
 
-%strcat_bez =
-  (
-   B  => M"Bundesstraßen",
-   HH => M"wichtige Hauptstraßen",
-   H  => M"Hauptstraßen",
-   N  => M"Nebenstraßen",
-   NN => M"für Kfz gesperrte Straßen",
-  );
 @strcat_order = qw(B HH H N NN);
-
 if (0) { # not enabled by default
     unshift @strcat_order, "BAB";
-    $strcat_bez{BAB} = M"Autobahnen";
 }
 
 $steigung_penalty = {};
 $strecke = 0;
 $dim_color = '#999999';
-$unit_km = 'km';
+$unit_s = 'km';
 $next_is_undo = 0;
 # kontrolliert das Zeichnen der Start/Zielflagge:
 @do_flag{qw(start via ziel)} = (1, 1, 1);
@@ -1150,9 +1140,9 @@ $ch->attach($str_label, -pod => "^Straße/Strecke");
 $km_frame = $top_frame->Frame(-relief => 'raised',
 			      -bd => 1);
 my $kmcb = $km_frame->Button
-    (-textvariable => \$unit_km,
+    (-textvariable => \$unit_s,
      -class => 'FlatBut',
-     -command => \&change_unit,
+     -command => sub { change_unit() },
     )->pack;
 if ($km_frame->can('UnderlineAll')) { $km_frame->UnderlineAll }
 
@@ -4682,9 +4672,18 @@ sub bind_nomod {
 	 });
 }
 
-# km <=> m
+# km <=> m (<=> mi)
 sub change_unit {
-    $unit_km = ($unit_km eq 'km' ? 'm' : 'km');
+    my $new_unit = shift;
+    if (defined $new_unit) {
+	$unit_s = $new_unit;
+    } elsif ($Msg::lang eq 'en') {
+	$unit_s = ($unit_s eq 'km' ? 'mi' :
+		   $unit_s eq 'mi' ? 'm' :
+		   'km');
+    } else {
+	$unit_s = ($unit_s eq 'km' ? 'm' : 'km');
+    }
     updatekm();
 }
 
@@ -11611,12 +11610,12 @@ sub show_info {
 	if (defined $area) {
 	    $info_text->insert("end",
 			       "\n\n" . M("Fläche") . ":", "bold",
-			       sprintf("\t%.2f km²", $area) . M(" (ungefähr)"), undef); # XXX Msg
+			       sprintf("\t%.2f km²", $area) . M(" (dieses Teilstück)"), undef); # XXX Msg
 	}
 	if (defined $total_len) {
 	    $info_text->insert("end",
 			       "\n\n" . M("Länge") . ":", "bold",
-			       sprintf("\t%.2f km", $total_len) . M(" (ungefähr)"), undef); # XXX Msg
+			       sprintf("\t%.2f km", $total_len) . M(" (dieses Teilstück)"), undef); # XXX Msg
 	}
 
 	$info_text->insert("end", "\n\n" . M("Koordinaten") . "\n", "bold");
@@ -12794,8 +12793,10 @@ sub updatekm {
     my $dir_strecke =
       sqrt(sqr($realcoords[0]->[0] - $realcoords[-1]->[0]) +
 	   sqr($realcoords[0]->[1] - $realcoords[-1]->[1]));
-    if ($unit_km eq 'm') {
+    if ($unit_s eq 'm') {
 	$act_value{Km} = sprintf "%d", $scale_coeff * $strecke;
+    } elsif ($unit_s eq 'mi') {
+	$act_value{Km} = float_prec($scale_coeff * $strecke/1609.344, 1);
     } else {
 	$act_value{Km} = float_prec($scale_coeff * $strecke/1000, 1);
     }

@@ -1,123 +1,7 @@
 @temp_blocking = ();
-$#temp_blocking = 33;
+$#temp_blocking = 140;
 push @temp_blocking,
 (
-       {
-         'source_id' => 'LMS_1134638526559',
-         'until' => 1135378800,
-         'text' => 'Schlichtallee zwischen Hauptstraße und Lückstraße beidseitig wegen Bauarbeiten gesperrt bis 23.12.05 ',
-         'from' => 1135045277,
-         'data' => 'userdel	2 15751,10582 16032,10842
-userdel	2 15751,10582 15629,10481
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'until' => 1136069999,
          'text' => 'Blankenburger Weg (Pankow) Richtung Süden zwischen Bahnhofstr. und Pasewalker Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
@@ -168,14 +52,6 @@ userdel	2 15751,10582 15629,10481
        undef,
        undef,
        undef,
-       {
-         'until' => 1135551600,
-         'text' => 'Weihnachtsmarkt am Schloßplatz, bis 25.12.2005',
-         'from' => undef,
-         'data' => 'userdel	2 10170,12261 10083,12442
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -193,14 +69,8 @@ userdel	2 15751,10582 15629,10481
        undef,
        undef,
        undef,
-       {
-         'until' => 1136069999,
-         'text' => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
-         'from' => 1109628414,
-         'data' => 'userdel	q4; 3507,3635 3375,3544 3184,3413 3050,3316 2701,3064 2639,2989 2638,2843
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -298,14 +168,7 @@ userdel	2 15751,10582 15629,10481
        undef,
        undef,
        undef,
-       {
-         'until' => 1135378800,
-         'text' => 'L 216; (Gollin-Templin); OD Vietmannsdorf, Brücke über Mühlengraben Brückenneubau Vollsperrung 13.06.2005-23.12.2005 ',
-         'from' => 1118527200,
-         'data' => 'userdel	2 17636,72217 17653,71852
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -618,28 +481,8 @@ userdel	q4 55158,-95910 54884,-96292
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1135378800,
-         'text' => 'K 6419 zw. Rehfelde, R.-Luxemburg-Str. u. OE Strausberg Straßen-,Geh- u. Radwegbau Vollsperrung 26.09.2005-23.12.2005 ',
-         'from' => 1127599200,
-         'data' => 'userdel	2 42578,15750 42300,15756
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1135378800,
-         'text' => 'K 6753 von OL Braunsdorf bis OL Markgrafpieske grundhafter Ausbau Vollsp. 10.11.2005-23.12.2005 ',
-         'from' => 1131490800,
-         'data' => 'userdel	2 47692,-6364 47806,-6168
-userdel	2 47692,-6364 47514,-6402
-userdel	2 48136,-5051 48131,-4175
-userdel	2 48136,-5051 47885,-5561
-userdel	2 47885,-5561 47908,-5802
-userdel	2 47514,-6402 47354,-6584
-userdel	2 47806,-6168 47908,-5802
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'until' => 1136070000,
          'text' => 'K 6950 (Gohlitzstr.) OL Lehnin, zw. Belziger Str. u. Lindenstr. Straßenbau Vollsperrung 11.10.2005-31.12.2005 ',
@@ -649,17 +492,7 @@ userdel	q4 -34232,-10832 -34337,-11047
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1135378800,
-         'text' => 'K 7220 Luckenwalde-Liebätz zw. Ruhlsdorf und Liebätz Straßen- und Radwegbau Vollsperrung 14.11.2005-23.12.2005 ',
-         'from' => 1131836400,
-         'data' => 'userdel	2 -4686,-30955 -4311,-30322
-userdel	2 -3607,-29164 -3733,-29501
-userdel	2 -4031,-30164 -3733,-29501
-userdel	2 -4031,-30164 -4311,-30322
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

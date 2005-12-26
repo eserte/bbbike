@@ -1520,7 +1520,7 @@ userdel	q4; 9112,14771 9300,14615 9378,14553 9472,14478
 EOF
      },
      { from  => 1109628414, # 2005-02-28 23:06
-       until => 1136069999, # 2005-12-31 23:59
+       until => 1135591662, # was 1136069999 2005-12-31 23:59
        text  => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
        type  => 'handicap',
        data  => <<EOF,
@@ -2065,7 +2065,7 @@ EOF
        text  => '"Bridge Partie", Modersohnbrücke von 21.06.2005, 06.00 Uhr bis 22.06.2005, 06:00 Uhr gesperrt ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 14026,10869 14043,10928 14139,11269
+userdel	2 14026,10869 14043,10928 14081,11057 14102,11133 14139,11269
 EOF
      },
      { from  => 1118949539, # 2005-06-16 21:18

@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+# greppt in den BBBike-Dateien
+use strict;
+use FindBin;
+chdir "$FindBin::RealBin/.." or die "Can't chdir to bbbike directory: $!";
+die "No arguments" if !@ARGV;
+my @files;
+open my $fh, "MANIFEST.withcvs" or die $!;
+while(<$fh>) {
+    chomp;
+    next if /^#/ || /^\s*$/;
+    my($file) = split /\s+/, $_;
+    push @files, $file;
+}
+system("grep", @ARGV, @files); # use xargs?

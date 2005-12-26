@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePrint.pm,v 1.34 2005/12/23 23:03:28 eserte Exp $
+# $Id: BBBikePrint.pm,v 1.34 2005/12/23 23:03:28 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -386,12 +386,13 @@ sub draw_legend {
 	$left = $c->canvasx($c->width-10-$start_width);
     }
     my %str_category = ('u' => [qw(UA UB U0 UBau)],
-			's' => [qw(HH H N NN)], # XXX BAB
+			's' => [qw(HH H N NN)],
+			'sBAB' => [qw(BAB)],
 			'r' => [qw(RA RB RC R RG R0 RBau)],
 			'b' => [qw(SA SB SC S0 SBau)],
-			'l' => [qw(B HH H N NN)], # XXX BAB
+			'l' => [qw(B HH H N NN)],
 			'w' => 'W',
-			'f' => [qw(P Forest Cemetery Ae)], # Pabove not needed # XXX geht nicht fürs Anklicken
+			'f' => [qw(P Forest Cemetery Green Orchard Sport Industrial Ae)], # Pabove not needed # XXX geht nicht fürs Anklicken
 			'v' => 'F', # XXX ???
 			'qs' => [qw(Q0 Q1 Q2 Q3)],
 			'ql' => [qw(Q0 Q1 Q2 Q3)],
@@ -486,6 +487,7 @@ sub draw_legend {
 	    $height += $baselineskip;
 
 	    foreach my $cat (@{ $str_category{$abk} }) {
+		next if ($str_restrict{$abk} && !$str_restrict{$abk}->{$cat});
 		my $width = ($abk eq 'rw' ? 7 : 5); # Sonderregelung für Radwege
 		my $item =
 		    $c->createLine($left+$start_symbol, $top+$height+$lower_symbol,

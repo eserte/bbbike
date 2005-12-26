@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeOvlPlugin.pm,v 2.10 2004/12/30 13:32:19 eserte Exp $
+# $Id: BBBikeOvlPlugin.pm,v 2.10 2004/12/30 13:32:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -175,7 +175,12 @@ my $top = MainWindow->new;
 $c = $top->Scrolled("Canvas")->pack(-expand => 1, -fill => "both");
 $c->update;
 BBBikeOvlPlugin::bbbike_draw_symbols($file);
-$c->configure(-scrollregion => [$c->bbox("all")]);
+my @bbox = $c->bbox("all");
+if (@bbox) {
+    $c->configure(-scrollregion => \@bbox);
+} else {
+    warn "Nothing drawn?";
+}
 Tk::MainLoop();
 
 __END__

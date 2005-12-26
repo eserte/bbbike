@@ -1,6 +1,6 @@
 #: title.de: Orte im weiteren Umland
 #: title.en: Places far away
-#: version: $Id: orte2-orig,v 4.17 2005/11/19 22:55:48 eserte Exp $
+#: version: $Id: orte2-orig,v 4.17 2005/11/19 22:55:48 eserte Exp eserte $
 #:
 # Mecklenburg-Vorpommern, Brandenburg
 Rostock	5 -79160,185302
@@ -126,6 +126,7 @@ Hammelstall|(Brüssow)	0 56821,109071
 Woddow	1 61091,109037
 Bagemühl	1 62608,106744
 Damme|(Uckermark)	1 49971,99565
+#: XXX: Randowtal: besteht aus Eickstedt, Schmölln und Ziemkendorf.
 Eickstedt	1 51860,100659
 Warnitz	2 40978,86915
 Neuhof|(Warnitz)	0 42210,88596
@@ -881,6 +882,9 @@ Altwriezen-Beauregard	1 64770,37841
 Neureetz	1 59730,42362
 Neuküstrinchen	1 60992,43905
 Neuranft	1 59375,45180
+Lanz	2 -113555,72198
+Eldenburg	1 -124707,76243
+Polz	1 -130009,77020
 # Polen
 Cedinya|(Polen)	3 63744,53664
 Swinoujscie	4 64415,168163

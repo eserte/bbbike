@@ -2516,8 +2516,8 @@ sub switch_edit_standard_mode {
 	$c->center_view
 	    (transpose($coord_system_obj->standard2map($oldx, $oldy)),
 	     NoSmoothScroll => 1);
-	if ($unit_km eq 'km') {
-	    change_unit();
+	if ($unit_s eq 'km') {
+	    change_unit('m');
 	}
     };
     my $err = $@;
