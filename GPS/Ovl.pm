@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Ovl.pm,v 1.5 2005/12/24 22:22:54 eserte Exp $
+# $Id: Ovl.pm,v 1.8 2005/12/26 19:52:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::Ovl;
 
 use strict;
 use vars qw($VERSION @ISA $OVL_MAGIC $OVL_MAGIC_3_0 $OVL_MAGIC_4_0);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 require GPS;
 push @ISA, 'GPS';
@@ -58,7 +58,8 @@ sub check {
 	die "No support for OVL file format 4.0";
 	$self->{FileFormat} = "binary_4_0";
     } else {
-	warn "Cannot determine file format. First bytes: " . unpack("H*", $first_line) . "\n";
+	warn "Cannot determine file format. First bytes: " . unpack("H*", $first_line) . "\n"
+	    if $args{debug};
     }
     close F;
     defined $self->{FileFormat};
@@ -126,7 +127,7 @@ sub new {
 }
 
 sub read {
-    my $self = shift;
+    my($self, %args) = @_;
 
     if (!UNIVERSAL::isa($self, "HASH") || !defined $self->{FileFormat}) {
 	my $ret = $self->check($self->{File});
@@ -135,18 +136,8 @@ sub read {
 
     if (defined $self->{FileFormat}) {
 	my $method = "read_" . $self->{FileFormat};
-	return $self->$method();
+	return $self->$method(%args);
     }
-#XXX del:
-#     my $file = $self->{File};
-#     if (open(F, $file)) {
-# 	if (scalar <F> =~ /^\[Symbol/) {
-# 	    close F;
-# 	    return $self->read_ascii;
-# 	}
-# 	close F;
-#     }
-#     return $self->read_binary;
 }
 
 sub read_ascii {
@@ -300,7 +291,9 @@ sub as_string_ascii {
 	};
 
     sub read_binary {
-	my($self) = @_;
+	my($self, %args) = @_;
+	my $d = $args{debug};
+
 	open(F, $self->{File}) or die "Can't open file $self->{File}: $!";
 	binmode F;
 	local $/ = undef;
@@ -315,13 +308,13 @@ sub as_string_ascii {
 	}
 	$_forward->(6);
 	my $MapName = &$_read_string;
-	warn "Description: $MapName\n";
+	warn "Description: $MapName\n" if $d;
 	$_seek_to->(0x3d);
 	my $DimmFc = &$_read_long;
 	my $ZoomFc = &$_read_long;
 	my $CenterLat  = &$_read_float; # XXX verdrehen? siehe binary_3_0
 	my $CenterLong = &$_read_float;
-	warn "Center=$CenterLat/$CenterLong\n";
+	warn "Center=$CenterLat/$CenterLong\n" if $d;
 	$_seek_to->(0xa9);
 
 	my @symbols;
@@ -389,7 +382,9 @@ sub as_string_ascii {
     }
 
     sub read_binary_3_0 {
-	my($self) = @_;
+	my($self, %args) = @_;
+	my $d = $args{debug};
+
 	open(F, $self->{File}) or die "Can't open file $self->{File}: $!";
 	binmode F;
 	local $/ = undef;
@@ -402,16 +397,23 @@ sub as_string_ascii {
 	if ($magic ne $OVL_MAGIC_3_0) {
 	    die "Wrong magic: $magic\n";
 	}
+	$_seek_to->(0x27);
+	my $ArbeitsLage = &$_read_fixed_string;
+	warn "Arbeitslage: $ArbeitsLage\n" if $d;
+
 	$_seek_to->(0x44);
 	my $MapName = &$_read_string;
-	warn "Description: $MapName\n";
+	warn "MapName: $MapName\n" if $d;
 
 	$_seek_to->(0x163);
 	my $DimmFc = &$_read_long;
 	my $ZoomFc = &$_read_long;
 	my $CenterLong  = &$_read_float;
 	my $CenterLat = &$_read_float;
-	warn "Center (long/lat)=$CenterLong/$CenterLat\n";
+	if ($d) {
+	    warn "Center (long/lat)=$CenterLong/$CenterLat\n";
+	    warn "DimmFC=$DimmFc, ZoomFC=$ZoomFc\n";
+	}
 
 	$_seek_to->(0x1a1);
 	my @symbols;
@@ -426,24 +428,48 @@ sub as_string_ascii {
 		&$_read_short for 1..10;
 		$sym->{Coords} = [&$_read_coords_3_0];
 		#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$sym],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
-	    } elsif ($typ == 3) {
+	    } elsif ($typ == 2) { # found in: mv13.ovl
+		&$_read_short for 1..10;
+		$sym->{Type} = &$_read_fixed_string;
+		&$_read_short for 1..12;
+		$sym->{Coords} = [&$_read_coord];
+		&$_read_short for 1..4;
+		$sym->{Text} = &$_read_fixed_string;
+	    } elsif ($typ == 3) { # found in: mv14.ovl
 		&$_read_short for 1..10;
 		$sym->{Text} = &$_read_fixed_string;
-		&$_read_short for 1..11;
-		$sym->{Coords} = [&$_read_coord];
+		#&$_read_short for 1..11;
+		#$sym->{Coords} = [&$_read_coord];
+		&$_read_short for 1..10;
+		$sym->{Coords} = [&$_read_coords_3_0];
 		#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$sym],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 	    } elsif ($typ == 180) {
 		&$_read_short for 1..14;
 		$sym->{Text} = &$_read_fixed_string;
 		&$_read_short for 1..10;
 		$sym->{Coords} = [&$_read_coords_3_0];
-require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$sym],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
-		
+	
+	    } elsif ($typ == 20) {
+		&$_read_short for 1..12;
+		my $text1 = &$_read_fixed_string;
+		warn "$text1\n" if $d;
+		&$_read_short for 1..13;
+		my $text2 = &$_read_fixed_string;
+		warn "$text2\n" if $d;
+		my $sym_nr = &$_read_short;
+		warn "SymNr?=$sym_nr\n" if $d;
+		&$_read_short for 1..9;
+		$sym->{Coords} = [&$_read_coords_3_0];
+	    } elsif ($typ == 23) {
+		# do nothing...
 	    } else {
-		warn sprintf "%x\n", $p;
-		die "unhandled type <$typ>";
+		warn sprintf "Position=0x%x\n", $p;
+		warn "unhandled type <$typ>"; # XXX
 	    }
 	    push @symbols, $sym;
+	    if ($d) {
+		require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$sym],[qw()])->Indent(1)->Useqq(1)->Dump
+	    }
 	}
 
 	$self->{Symbols} = \@symbols;

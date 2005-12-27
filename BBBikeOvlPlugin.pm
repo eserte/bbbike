@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeOvlPlugin.pm,v 2.10 2004/12/30 13:32:19 eserte Exp eserte $
+# $Id: BBBikeOvlPlugin.pm,v 2.11 2005/12/26 13:58:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2004 Slaven Rezic. All rights reserved.
@@ -119,12 +119,15 @@ sub draw_symbols {
 			   @create_args,
 			   (@tags ? (-tags => \@tags) : ()),
 			  );
-	} elsif (@{$sym->{Coords}} == 1) {
-	    my($tx,$ty) = $transpose->(@{$sym->{Coords}[0]});
-	    $c->createLine($tx,$ty,$tx+1,$ty,-width => 3,
-			   @create_args,
-			   (@tags ? (-tags => \@tags) : ()),
-			  );
+	}
+	if (@{$sym->{Coords}} == 1) {
+	    if (!$sym->{Text} && !$sym->{Label}) {
+		my($tx,$ty) = $transpose->(@{$sym->{Coords}[0]});
+		$c->createLine($tx,$ty,$tx+1,$ty,-width => 3,
+			       @create_args,
+			       (@tags ? (-tags => \@tags) : ()),
+			      );
+	    }
 	} else {
 	    my @tc;
 	    foreach (@{$sym->{Coords}}) {
@@ -147,9 +150,9 @@ sub bbbike_del_ovl {
 }
 
 sub bbbike_draw_symbols {
-    my($file) = @_;
+    my($file, %args) = @_;
     my $ovl = GPS::Ovl->new($file);
-    $ovl->read;
+    $ovl->read(%args);
     require Karte;
     require Karte::Polar;
     $Karte::Polar::obj=$Karte::Polar::obj;
@@ -168,13 +171,16 @@ package main;
 
 require Tk;
 require Tk::CanvasUtil;
+require Getopt::Long;
 use vars qw($c);
+my %opt;
+Getopt::Long::GetOptions(\%opt, "debug!"); # pass options to Tk
 my $file = shift || die "ovl file is missing";
 my $top = MainWindow->new;
 *transpose = sub { ($_[0], -$_[1]) };
 $c = $top->Scrolled("Canvas")->pack(-expand => 1, -fill => "both");
 $c->update;
-BBBikeOvlPlugin::bbbike_draw_symbols($file);
+BBBikeOvlPlugin::bbbike_draw_symbols($file, %opt);
 my @bbox = $c->bbox("all");
 if (@bbox) {
     $c->configure(-scrollregion => \@bbox);
