@@ -3366,9 +3366,9 @@ userdel	2 47514,-6402 47354,-6584
 userdel	2 47806,-6168 47908,-5802
 EOF
      },
-     { from  => 1128895200, # 2005-10-10 00:00
-       until => 1136070000, # 2006-01-01 00:00
-       text  => 'K 6950 (Gohlitzstr.) OL Lehnin, zw. Belziger Str. u. Lindenstr. Straßenbau Vollsperrung 11.10.2005-31.12.2005 ',
+     { from  => 1135983600, # 2005-12-31 00:00
+       until => 1143842400, # 2006-04-01 00:00
+       text  => 'K 6950 Gohlitzstr. OL Lehnin, zw. Belziger Str. u. Lindenstr. Straßenbau; Herst.Umleit.stre. Vollsperrung 11.10.2005-31.03.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -34655,-11263 -34337,-11047

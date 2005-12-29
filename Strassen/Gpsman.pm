@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Gpsman.pm,v 1.6 2005/11/29 08:36:03 eserte Exp $
+# $Id: Gpsman.pm,v 1.8 2005/12/28 19:24:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 2004 Slaven Rezic. All rights reserved.
@@ -51,17 +51,16 @@ sub new {
     $self;
 }
 
-sub read_gpsman {
-    my($self, $filename, %args) = @_;
+sub new_from_string {
+    my($class, $string, %args) = @_;
+    my $self = {};
+    bless $self, $class;
+    $self->read_gpsman_from_string($string, %args);
+    $self;
+}
 
-    my $gpsman = GPS::GpsmanMultiData->new();
-
-    {
-	local $^W = 0;
-	$gpsman->load($filename);
-	## XXX del:
-	#$gpsman->convert_all("DDD");
-    }
+sub _read_gpsman {
+    my($self, $gpsman, %args) = @_;
 
     # Options for this? XXX
     my $in_map = $Karte::Polar::obj = $Karte::Polar::obj;
@@ -72,6 +71,7 @@ sub read_gpsman {
     };
 
     $self->{Data} = [];
+    $self->{DependentFiles} = [ $gpsman->File ];
 
     my $cat = $args{cat} || "X";
 
@@ -104,6 +104,33 @@ sub read_gpsman {
 	    }
 	}
     }
+}
+
+sub read_gpsman {
+    my($self, $filename, %args) = @_;
+
+    my $gpsman = GPS::GpsmanMultiData->new();
+
+    {
+	local $^W = 0;
+	$gpsman->load($filename); # setting File
+	## XXX del:
+	#$gpsman->convert_all("DDD");
+    }
+
+    $self->_read_gpsman($gpsman, %args);
+}
+
+sub read_gpsman_from_string {
+    my($self, $string, %args) = @_;
+    my $gpsman = GPS::GpsmanMultiData->new();
+    $gpsman->parse($string);
+    $gpsman->File($args{File}) if defined $args{File};
+    $self->_read_gpsman($gpsman, %args);
+}
+
+sub reload {
+    # NYI
 }
 
 1;

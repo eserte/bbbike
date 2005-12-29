@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: read-gps-formats.t,v 1.4 2005/05/19 00:05:31 eserte Exp $
+# $Id: read-gps-formats.t,v 1.5 2005/12/28 19:04:40 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -40,7 +40,10 @@ my @gps_formats       = (
 			 ["$miscdir/gps_examples/G7toWin_ASCII.txt", "G7toWin_ASCII"],
 			 ["$miscdir/gps_examples/20000510.tracks", "Unknown1"],
 			 
-			 ["$miscdir/ovl_resources/ulamm/berlin-dresden1.ovl", "Ovl"],
+			 ["$miscdir/ovl_resources/ulamm/berlin-dresden1.ovl", "Ovl", "ASCII"],
+			 ["$miscdir/ovl_resources/d2_obdg.ovl", "Ovl", "Binary 2.0"],
+			 ["$miscdir/ovl_resources/various_from_net/bb02.ovl", "Ovl", "Binary 3.0"],
+			 # TODO: ["$miscdir/ovl_resources/various_from_net/10_um_die_hohe_reuth.ovl", "Ovl", "Binary 4.0"],
 			);
 my @strassen_formats  = (
 			 ["$gpsmandir/20040114.trk", "GPSman track"],
@@ -49,12 +52,14 @@ my @strassen_formats  = (
 			 ["$mapserverdir/strassen.shp", "ESRI"],
 			 ["$datadir/strassen", "bbd"],
 			 ["$miscdir/e00/germany/hsline.e00", "e00"],
+			 ["$miscdir/ovl_resources/ulamm/berlin-dresden1.ovl", "Ovl"], # may be used as route or strassen
 			);
 
 plan tests => 2*@gps_formats + @strassen_formats;
 
 for my $def (@gps_formats) {
-    my($file, $fmt) = @$def;
+    my($file, $fmt, $extra_info) = @$def;
+    $extra_info = !$extra_info ? "" : " ($extra_info)";
     print STDERR "$file ($fmt)...\n" if $v;
  SKIP: {
 	my $tests = 2;
@@ -63,7 +68,7 @@ for my $def (@gps_formats) {
 	ok($ret && $ret->{RealCoords} &&
 	   ref $ret->{RealCoords} eq 'ARRAY' &&
 	   ref $ret->{RealCoords}->[0] eq 'ARRAY',
-	   "Format $fmt with file $file");
+	   "Format $fmt$extra_info with file $file (Route)");
 	is($ret->{Type}, $fmt);
     }
 }
@@ -75,7 +80,7 @@ for my $def (@strassen_formats) {
 	my $tests = 1;
 	skip("File $file not available", $tests) if !-f $file;
 	my $s = eval { Strassen->new($file) };
-	ok($s && scalar @{ $s->data }, "Format $fmt with file $file");
+	ok($s && scalar @{ $s->data }, "Format $fmt with file $file (Strassen)");
     }
 }
 

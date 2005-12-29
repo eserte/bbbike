@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GpsmanData.pm,v 1.42 2005/11/29 08:35:26 eserte Exp $
+# $Id: GpsmanData.pm,v 1.43 2005/12/28 19:05:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2005 Slaven Rezic. All rights reserved.
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%03d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.43 $ =~ /(\d+)\.(\d+)/);
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -799,6 +799,22 @@ sub _eliminate_illegal_characters {
 package GPS::GpsmanMultiData;
 # holds multiple GPS tracks/routes
 
+BEGIN {
+    # This used Class::Accessor, but unfortunately I don't want to
+    # depend on a non-core module.
+    no strict 'refs';
+    for (qw(File)) {
+	my $acc = $_;
+	*{$acc} = sub {
+	    my $self = shift;
+	    if (@_) {
+		$self->{$acc} = $_[0];
+	    }
+	    $self->{$acc};
+	};
+    }
+}
+
 sub new {
     my $self = { Chunks => [] };
     bless $self, shift;
@@ -812,6 +828,13 @@ sub load {
     my $buf = <F>;
     close F;
 
+    $self->parse($buf);
+    $self->File($file);
+    1;
+}
+
+sub parse {
+    my($self, $buf) = @_;
     my $begin = 0;
     my $old_gps_o;
     while(1) {

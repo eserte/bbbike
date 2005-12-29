@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman2bbd.pl,v 2.9 2005/11/17 23:38:10 eserte Exp $
+# $Id: gpsman2bbd.pl,v 2.10 2005/12/28 19:06:11 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
@@ -252,6 +252,9 @@ EOF
 			    push @street_coords, "$prefix$x,$y";
 		        }
 		        $last_is_inaccurate = $inaccurate;
+		    } else { # first point
+			push @street_coords, "$prefix$x,$y";
+			$last_is_inaccurate = $inaccurate;
 		    }
 		    $last_wpt = [$x,$y,$time];
 	        }

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: ovl.t,v 1.1 2005/12/26 13:10:24 eserte Exp $
+# $Id: ovl.t,v 1.3 2005/12/29 00:20:03 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -14,6 +14,9 @@ use lib ("$FindBin::RealBin/..",
 	);
 use GPS::Ovl;
 use File::Temp qw(tempfile);
+use Data::Dumper qw(Dumper);
+use File::Glob qw(bsd_glob);
+use File::Basename qw(basename);
 
 BEGIN {
     if (!eval q{
@@ -29,13 +32,18 @@ BEGIN {
 my $ovlresdir = "$FindBin::RealBin/../misc/ovl_resources";
 my $ovl2dir = "$ovlresdir/various_from_net";
 
+my @ovl_files = bsd_glob("$ovl2dir/*.[oO][vV][lL]");
+
 my $tests_per_file = 1;
-plan tests => 4 * $tests_per_file;
+my $simple_tests_per_file = 1;
+plan tests => 4 * $tests_per_file + scalar(@ovl_files) * $simple_tests_per_file;
 
 my $zip = Archive::Zip->new;
 $zip->read("$ovl2dir/bahn_mv.zip");
 
 for my $basename (qw(mv01 mv02 mv04 mv08)) {
+    diag $basename;
+
  SKIP: {
 	skip("mv08 not the same file?", $tests_per_file)
 	    if ($basename eq 'mv08');
@@ -64,7 +72,28 @@ for my $basename (qw(mv01 mv02 mv04 mv08)) {
 		$errors++;
 	    }
 	}
-	is($errors, 0, "Coord mismatches found for $basename");
+	is($errors, 0, "Coord mismatches not found for $basename")
+	    or diag Dumper([$res_binary->[0]{Coords}, $res_ascii->[0]{Coords}]);
+    }
+}
+
+for my $ovl_file (@ovl_files) {
+    my $basename = basename $ovl_file;
+    diag $basename;
+
+    my $ovl = GPS::Ovl->new;
+ SKIP: {
+# 	skip("Can't handle $basename", $simple_tests_per_file)
+# 	    if $basename =~ m{^(DorGS|ErlGS|mtbstrecke2003msymbol|RkRg-EPR|strfrankenfels2005tats).ovl$};
+
+	eval { $ovl->check($ovl_file) };
+	if ($@) {
+	    chomp $@;
+	    skip($@, $simple_tests_per_file);
+	}
+
+	$ovl->read;
+	cmp_ok(scalar(@{$ovl->{Symbols}}), ">", 0, "Can read symbols from $basename");
     }
 }
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.63 2005/12/10 23:46:27 eserte Exp $
+# $Id: Core.pm,v 1.66 2005/12/28 19:36:14 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.63 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.66 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -93,6 +93,13 @@ sub new {
 	} elsif ($filename =~ /waypoint\.txt$/) {
 	    require Strassen::WaypointPlus;
 	    return Strassen::WaypointPlus->new($filename, %args);
+	} elsif ($filename =~ /\.ovl$/i) {
+	    require Strassen::Gpsman;
+	    require GPS::Ovl;
+	    my $ovl = GPS::Ovl->new;
+	    $ovl->check($filename);
+	    my $gpsman_data = $ovl->convert_to_gpsman;
+	    return Strassen::Gpsman->new_from_string($gpsman_data, File => $filename, %args);
 	} elsif ($filename =~ /\.(mps|gpx|g7t)$/i) {
 	    if ($filename =~ /\.gpx$/ && eval { require Strassen::GPX; 1 }) {
 		return Strassen::GPX->new($filename, %args);
@@ -516,7 +523,7 @@ sub as_string {
 }
 
 ### AutoLoad Sub
-sub write {
+sub _write {
     my($self, $filename, %args) = @_;
     if (!defined $filename) {
 	$filename = $self->file;
@@ -525,24 +532,28 @@ sub write {
 	warn "No filename specified";
 	return 0;
     }
-    if (open(COPY, ">$filename")) {
+    my $mode = delete $args{mode};
+    if (open(COPY, "$mode $filename")) {
 	binmode COPY;
 	print COPY $self->as_string(%args);
 	close COPY;
 	1;
     } else {
-	warn "Can't write to $filename: $!" if $VERBOSE;
+	warn "Can't write/append to $filename: $!" if $VERBOSE;
 	0;
     }
 }
 
 ### AutoLoad Sub
+sub write {
+    my($self, $filename, %args) = @_;
+    $self->_write($filename, mode => ">", %args);
+}
+
+### AutoLoad Sub
 sub append {
     my($self, $filename, %args) = @_;
-    open(COPY, ">>$filename") or die "Can't append to $filename: $!";
-    binmode COPY;
-    print COPY $self->as_string(%args);
-    close COPY;
+    $self->_write($filename, mode => ">>", %args);
 }
 
 sub get {

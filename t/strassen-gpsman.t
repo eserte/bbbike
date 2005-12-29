@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpsman.t,v 1.4 2005/04/05 22:54:32 eserte Exp $
+# $Id: strassen-gpsman.t,v 1.5 2005/12/28 19:04:49 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -34,7 +34,7 @@ BEGIN {
     }
 }
 
-my $tests = 4;
+my $tests = 4 + 3;
 plan tests => $tests + $have_nowarnings;
 
 my $gpsman_dir = "$FindBin::RealBin/../misc/gps_data";
@@ -64,6 +64,35 @@ SKIP: {
 
     #require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$s1, $s2],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 
+}
+
+{
+    my $trk_sample = <<'EOF';
+% Written by /home/e/eserte/src/bbbike/bbbike Wed Dec 28 19:10:26 2005
+% Edit at your own risk!
+
+!Format: DDD 1 WGS 84
+!Creation: yes
+
+!T:	TRACK
+	31-Dec-1989 01:00:00	N53.0945536138593	E12.8748931621168	0
+	31-Dec-1989 01:00:00	N53.0943054383567	E12.8761002946735	0
+!T:	TRACK
+	31-Dec-1989 01:00:00	N53.0940612438672	E12.877531259314	0
+	31-Dec-1989 01:00:00	N53.0933655007711	E12.8813741665033	0
+	31-Dec-1989 01:00:00	N53.0931727960854	E12.8831759358179	0
+	31-Dec-1989 01:00:00	N53.0930156939216	E12.8844531899105	0
+	31-Dec-1989 01:00:00	N53.0929946513017	E12.8857984410851	0
+	31-Dec-1989 01:00:00	N53.0929775683148	E12.8873675328466	0
+	31-Dec-1989 01:00:00	N53.0931440997843	E12.8891516695014	0
+	31-Dec-1989 01:00:00	N53.0933489067498	E12.8905605502346	0
+	31-Dec-1989 01:00:00	N53.0933013449282	E12.8904135187235	0
+
+EOF
+    my $s = Strassen::Gpsman->new_from_string($trk_sample);
+    isa_ok($s, "Strassen");
+    isa_ok($s, "Strassen::Gpsman");
+    cmp_ok(scalar(@{$s->data}), "==", 2, "Track sample has two lines");
 }
 
 __END__

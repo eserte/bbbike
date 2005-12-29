@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.7 2005/10/24 22:45:12 eserte Exp $
+# $Id: strassen.t,v 1.8 2005/12/29 00:50:14 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -39,7 +39,7 @@ GetOptions(get_std_opts("xxx"),
 
 my $doit_tests = 6;
 
-plan tests => 30 + $doit_tests;
+plan tests => 31 + $doit_tests;
 
 goto XXX if $do_xxx;
 
@@ -235,6 +235,15 @@ XXX: {
     is_deeply($s->{GlobalDirectives}, $glob_dir, "Expected global directives");
 
     like(join(",", @{$glob_dir->{"title.de"}}), qr{stra.*en.*berlin}i, "German title");
+
+    # test write and append
+    my($outfh,$outfilename) = tempfile(UNLINK => 1);					       
+    close $outfh;
+    $s->write($outfilename);
+    my $size1 = -s $outfilename;
+    $s->append($outfilename);
+    my $size2 = -s $outfilename;
+    is($size1*2, $size2, "write and append");
 }
 
 __END__
