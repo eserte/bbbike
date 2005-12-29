@@ -126,6 +126,7 @@ sub add_button {
                            );
 		   my $return = sub {
 		       stop_parse_tail_log();
+		       warn "Stopped parsing log...\n";
 		       #parse_tail_log();
 		       $t->destroy;
 		   };
@@ -155,6 +156,7 @@ sub add_button {
 		       parse_tail_log();
 		   } else {
 		       stop_parse_tail_log();
+		       warn "Stopped parsing log...\n";
 		   }
                }],
               [Checkbutton => "Error checks",
@@ -381,7 +383,7 @@ sub kill_tail {
 }
 
 sub parse_tail_log {
-    kill_tail();
+    stop_parse_tail_log();
     $tail_pid = open FH, "-|";
     if (!$tail_pid) {
 	_tail_log();
@@ -396,10 +398,11 @@ sub parse_tail_log {
 
 sub stop_parse_tail_log {
     $tracking = 0;
+    if (fileno(FH)) {
+	$main::top->fileevent(\*FH, "readable", "");
+	close FH;
+    }
     kill_tail();
-    $main::top->fileevent(\*FH, "readable", "");
-    close FH;
-    warn "Stopped parsing log...\n";
 }
 
 sub _tail_log {
@@ -449,9 +452,7 @@ sub _open_log {
 sub fileevent_read_line {
     if (eof(FH)) {
 	$tracking = 0;
-	kill_tail();
-        $main::top->fileevent(\*FH, "readable", "");
-	close FH;
+	stop_parse_tail_log();
         return;
     }
 #XXXXXXXXXXX Blocks on FreeBSD?!
@@ -930,7 +931,7 @@ sub worst_routes_of_the_day {
 
 
 END {
-    kill_tail();
+    stop_parse_tail_log();
 }
 
 return 1 if caller;
