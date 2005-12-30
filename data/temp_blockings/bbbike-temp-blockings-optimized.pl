@@ -484,9 +484,9 @@ userdel	q4 55158,-95910 54884,-96292
        undef,
        undef,
        {
-         'until' => 1136070000,
-         'text' => 'K 6950 (Gohlitzstr.) OL Lehnin, zw. Belziger Str. u. Lindenstr. Straßenbau Vollsperrung 11.10.2005-31.12.2005 ',
-         'from' => 1128895200,
+         'until' => 1143842400,
+         'text' => 'K 6950 Gohlitzstr. OL Lehnin, zw. Belziger Str. u. Lindenstr. Straßenbau; Herst.Umleit.stre. Vollsperrung 11.10.2005-31.03.2006 ',
+         'from' => 1135983600,
          'data' => 'userdel	q4 -34655,-11263 -34337,-11047
 userdel	q4 -34232,-10832 -34337,-11047
 ',
