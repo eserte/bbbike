@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: basic.t,v 1.10 2005/07/19 00:33:16 eserte Exp $
+# $Id: basic.t,v 1.11 2005/12/31 17:02:54 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 
@@ -75,7 +75,11 @@ for my $f (@files) {
 	skip "$f needs X11::Protocol", $tests_per_file
 	    if $f eq 'lib/Tk/RotX11Font.pm' && !eval { require X11::Protocol };
 	skip "$f needs XML::LibXML", $tests_per_file
-	    if $f eq 'Strassen/GPX.pm' && !eval { require XML::LibXML };
+	    if $f =~ m{^( Strassen/GPX.pm
+			| Strassen/Touratech.pm
+			)$}x && !eval { require XML::LibXML };
+	skip "$f needs XML::LibXSLT", $tests_per_file
+	    if $f eq 'Strassen/Touratech.pm' && !eval { require XML::LibXSLT };
 	skip "$f needs Class::Accessor", $tests_per_file
 	    if $f =~ m{^( BBBikeDraw/MapServer.pm
 		        | ESRI/Shapefile.pm

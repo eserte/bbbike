@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.66 2005/12/28 19:36:14 eserte Exp $
+# $Id: Core.pm,v 1.66 2005/12/28 19:36:14 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -107,6 +107,9 @@ sub new {
 		require Strassen::FromRoute;
 		return Strassen::FromRoute->new($filename, %args);
 	    }
+	} elsif ($filename =~ /\.xml$/ && eval { require Strassen::Touratech; 1 }) {
+	    # XXX Maybe really check for touratech files
+	    return Strassen::Touratech->new($filename, %args);
 	}
     }
 

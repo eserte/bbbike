@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Ovl.pm,v 1.13 2005/12/29 00:46:08 eserte Exp $
+# $Id: Ovl.pm,v 1.15 2005/12/31 11:17:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package GPS::Ovl;
 
 use strict;
 use vars qw($VERSION @ISA $OVL_MAGIC $OVL_MAGIC_3_0 $OVL_MAGIC_4_0);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 require File::Basename;
 
@@ -100,6 +100,7 @@ EOF
 	if ($sym->{Coords} == 1) {
 	    if (!defined $last_type || $last_type ne "W") {
 		$out .= "!W:\n";
+		$last_type = "W";
 	    }
 	    my($long, $lat) = $sym->{Coords}[0];
 	    $lat  = ($lat < 0 ? "S" : "N") . $lat;
@@ -111,7 +112,10 @@ EOF
 	    my $filename = $self->{File} ? File::Basename::basename($self->{File}) : "unknown";
 	    my $name = $sym->{Label} || $sym->{Text} || "TRACK ($filename)";
 	    $name = $filename if $name =~ m{^Linie$};
-	    $out .= "!T:\t$name\n";
+	    if (!defined $last_type || $last_type ne 'T') {
+		$out .= "!T:\t$name\n";
+		$last_type = "T";
+	    }
 	    for my $c (@{ $sym->{Coords} }) {
 		my($long, $lat) = @$c;
 		$lat  = ($lat < 0 ? "S" : "N") . $lat;
@@ -418,9 +422,10 @@ sub as_string_ascii {
 		warn "Unknown type=$type p=".sprintf("%x",$p);
 		last;
 	    }
-#use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->Dumpxs([$sym],[]); # XXX
-#if($sym->{Text}=~ /ZollamtXXX/){last;$trace++;$SIG{USR1}=sub{$abort=1}}
 	    push @symbols, $sym;
+	    if ($d) {
+		require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$sym],[qw()])->Indent(1)->Useqq(1)->Dump
+	    }
 	}
 
 	$self->{Symbols} = \@symbols;
@@ -466,114 +471,113 @@ sub as_string_ascii {
 	#   ff 00 00 00 3a 00 06 00 01 00 05 00 00 00 00 00
 	# following six varying bytes  (from 0x019b)
 
-# Second try, seems to work better...
-$_seek_to->(0x19f);
-my @symbols;
-my %group_numbers;
-while ($p < length $buf) {
-    my $sym = {};
-    my $type = &$_read_ushort;
-    $sym->{Type} = $type;
-    $sym->{Pos} = $p-2;
-    if ($type == 0xbae4 || # ?
-	$type == 0xb91c || # ?
-	$type == 0xb55c || # ?
-	$type == 0xbb2c || # mtbstrecke2003msymbol.ovl
-	$type == 0xbae0 || # strfrankenfels2005tats.ovl
-	0) {
-	my @x;
-	push @x, &$_read_short for 1..13;
-	warn "$x[0] != 0x14" if $x[0] != 0x14;
-	warn "$x[1] != 0" if $x[1] != 0;
-	warn "$x[2] != 0x1e" if $x[2] != 0x1e;
-	$sym->{GroupNumber} = $x[3];
-	$group_numbers{$x[3]}++; if ($group_numbers{$x[3]} > 1) { warn "Multiple group number $x[3]?" }
-	$sym->{Text} = &$_read_fixed_string;
-	&$_read_short for 1..2;
-    } elsif ($type == 23|| # 0x17, found in mv01.ovl
-	     $type == 3||
-	     0) {
-	my @x;
-	push @x, &$_read_short for 1..9;
-	if (0) {
-	    warn "$x[0] != 0x24/1/2/3/6/7/22/26/42" if $x[0] != 0x24 && $x[0] !~ /^(1|2|3|6|7|22|26|42)$/; # Gruppe? ja, scheint so, weil die nächste Abfrage funktioniert
-	}
-	warn "$x[0] is not a group number" if !exists $group_numbers{$x[0]} && $x[0] != 1; # 1 is special???
-	warn "$x[8] != 2/1/2050" if $x[8] !~ /^(1|2|2050)$/;
-	my $string_type = &$_read_short;
-	($sym->{TypeText}, $type) = &$_read_short_or_long_fixed_string;
-	if ($type eq 'short') {
-	    &$_read_short for 1..10;
-	} elsif ($type eq 'long') {
-	    &$_read_short for 1..9;
-	} else {
-	    die "unknown type $type";
-	}
-	$sym->{Coords} = [&$_read_coords_3_0];
-    } elsif ($type == 2|| # found in mv13.ovl
-	     0) {
-	my @x;
-	push @x, &$_read_short for 1..10;
-	warn "$x[0] != 1" if $x[0] !~ /^(1)$/;
-	warn "$x[8] != 1/4098/4097" if $x[8] !~ /^(1|4098|4097)$/;
-	$sym->{TypeText} = &$_read_fixed_string;
-	&$_read_short for 1..12;
-	$sym->{Coords} = [&$_read_coord];
-	my @z;
-	push @z, &$_read_uchar for 1..8;
-	if (0) { # zu viele Ausnahmen ...
-	    my $z_str = join(" ", map { sprintf "%02x", $_ } @z);
-	    warn "$z_str != 20 04 00 00 2c 00 76 81
+	$_seek_to->(0x19f);
+	my @symbols;
+	my %group_numbers;
+	while ($p < length $buf) {
+	    my $sym = {};
+	    my $type = &$_read_ushort;
+	    $sym->{Type} = $type;
+	    $sym->{Pos} = $p-2;
+	    if ($type == 0xbae4 || # ?
+		$type == 0xb91c || # ?
+		$type == 0xb55c || # ?
+		$type == 0xbb2c || # mtbstrecke2003msymbol.ovl
+		$type == 0xbae0 || # strfrankenfels2005tats.ovl
+		0) {
+		my @x;
+		push @x, &$_read_short for 1..13;
+		warn "$x[0] != 0x14" if $x[0] != 0x14;
+		warn "$x[1] != 0" if $x[1] != 0;
+		warn "$x[2] != 0x1e" if $x[2] != 0x1e;
+		$sym->{GroupNumber} = $x[3];
+		$group_numbers{$x[3]}++; if ($group_numbers{$x[3]} > 1) { warn "Multiple group number $x[3]?" }
+		$sym->{Text} = &$_read_fixed_string;
+		&$_read_short for 1..2;
+	    } elsif ($type == 23|| # 0x17, found in mv01.ovl
+		     $type == 3||
+		     0) {
+		my @x;
+		push @x, &$_read_short for 1..9;
+		if (0) {
+		    warn "$x[0] != 0x24/1/2/3/6/7/22/26/42" if $x[0] != 0x24 && $x[0] !~ /^(1|2|3|6|7|22|26|42)$/; # Gruppe? ja, scheint so, weil die nächste Abfrage funktioniert
+		}
+		warn "$x[0] is not a group number" if !exists $group_numbers{$x[0]} && $x[0] != 1; # 1 is special???
+		warn "$x[8] != 2/1/2050" if $x[8] !~ /^(1|2|2050)$/;
+		my $string_type = &$_read_short;
+		($sym->{TypeText}, $type) = &$_read_short_or_long_fixed_string;
+		if ($type eq 'short') {
+		    &$_read_short for 1..10;
+		} elsif ($type eq 'long') {
+		    &$_read_short for 1..9;
+		} else {
+		    die "unknown type $type";
+		}
+		$sym->{Coords} = [&$_read_coords_3_0];
+	    } elsif ($type == 2|| # found in mv13.ovl
+		     0) {
+		my @x;
+		push @x, &$_read_short for 1..10;
+		warn "$x[0] != 1" if $x[0] !~ /^(1)$/;
+		warn "$x[8] != 1/4098/4097" if $x[8] !~ /^(1|4098|4097)$/;
+		$sym->{TypeText} = &$_read_fixed_string;
+		&$_read_short for 1..12;
+		$sym->{Coords} = [&$_read_coord];
+		my @z;
+		push @z, &$_read_uchar for 1..8;
+		if (0) {	# zu viele Ausnahmen ...
+		    my $z_str = join(" ", map { sprintf "%02x", $_ } @z);
+		    warn "$z_str != 20 04 00 00 2c 00 76 81
                         30 00 00 00 02 00 e7 77
                         d1 d3 fc 08 ae d8 49 40
                         00 00 90 1d a5 de 49 40
                         08 25 00 00 8b 01 e8 77
 			6d a7 44 d5 1c fd 47 40
                         "
-		if $z_str !~ /^(20 04 00 00 2c 00 76 81|30 00 00 00 02 00 e7 77|d1 d3 fc 08 ae d8 49 40|00 00 90 1d a5 de 49 40|08 25 00 00 8b 01 e8 77|6d a7 44 d5 1c fd 47 40)$/;
-	}
-	$sym->{Label} = &$_read_fixed_string;
-    } elsif ($type == 6|| # found in Dors.ovl (gps track/waypoints?)
-	     0) {
-	my @x;
-	push @x, &$_read_short for 1..10;
-	my $x_str = join(" ", map { sprintf "%04x", $_ } @x);
-	warn "$x_str != 0001 0000 0000 0000 0000 0000 0000 0000 1001 0000/0001 0000 0000 0000 0000 0000 0000 0000 0001 0000"
-	    if $x_str !~ /^(0001 0000 0000 0000 0000 0000 0000 0000 1001 0000|0001 0000 0000 0000 0000 0000 0000 0000 0001 0000)$/;
-	my $string_type = $x[8];
-	if ($string_type == 0x1001) { # only high nibble significant???
-	    &$_read_short for 1..2;
-	    $sym->{Label} = &$_read_long_fixed_string;
-	} else { # 0x0001
-	    $sym->{Label} = &$_read_fixed_string;
-	    &$_read_short for 1..1;
-	}
-	my @y;
-	push @y, &$_read_uchar for 1..30;
-	my $y_str = join(" ", map { sprintf "%02x", $_ } @y);
-	warn "$y_str != 01 00 00 00 2c 00 00 00 1e 00 ff 00 00 80 10 00 00 00 10 00 00 00 01 00 00 00 65 00 02 00
+			if $z_str !~ /^(20 04 00 00 2c 00 76 81|30 00 00 00 02 00 e7 77|d1 d3 fc 08 ae d8 49 40|00 00 90 1d a5 de 49 40|08 25 00 00 8b 01 e8 77|6d a7 44 d5 1c fd 47 40)$/;
+		}
+		$sym->{Label} = &$_read_fixed_string;
+	    } elsif ($type == 6|| # found in Dors.ovl (gps track/waypoints?)
+		     0) {
+		my @x;
+		push @x, &$_read_short for 1..10;
+		my $x_str = join(" ", map { sprintf "%04x", $_ } @x);
+		warn "$x_str != 0001 0000 0000 0000 0000 0000 0000 0000 1001 0000/0001 0000 0000 0000 0000 0000 0000 0000 0001 0000"
+		    if $x_str !~ /^(0001 0000 0000 0000 0000 0000 0000 0000 1001 0000|0001 0000 0000 0000 0000 0000 0000 0000 0001 0000)$/;
+		my $string_type = $x[8];
+		if ($string_type == 0x1001) { # only high nibble significant???
+		    &$_read_short for 1..2;
+		    $sym->{Label} = &$_read_long_fixed_string;
+		} else {	# 0x0001
+		    $sym->{Label} = &$_read_fixed_string;
+		    &$_read_short for 1..1;
+		}
+		my @y;
+		push @y, &$_read_uchar for 1..30;
+		my $y_str = join(" ", map { sprintf "%02x", $_ } @y);
+		warn "$y_str != 01 00 00 00 2c 00 00 00 1e 00 ff 00 00 80 10 00 00 00 10 00 00 00 01 00 00 00 65 00 02 00
                         01 00 00 00 2c 00 00 00 1e 00 80 00 00 80 10 00 00 00 10 00 00 00 01 00 00 00 65 00 02 00"
-	    if $y_str !~ /^(01 00 00 00 2c 00 00 00 1e 00 ff 00 00 80 10 00 00 00 10 00 00 00 01 00 00 00 65 00 02 00|01 00 00 00 2c 00 00 00 1e 00 80 00 00 80 10 00 00 00 10 00 00 00 01 00 00 00 65 00 02 00)$/;
-	$sym->{Coords} = [&$_read_coord];
+		    if $y_str !~ /^(01 00 00 00 2c 00 00 00 1e 00 ff 00 00 80 10 00 00 00 10 00 00 00 01 00 00 00 65 00 02 00|01 00 00 00 2c 00 00 00 1e 00 80 00 00 80 10 00 00 00 10 00 00 00 01 00 00 00 65 00 02 00)$/;
+		$sym->{Coords} = [&$_read_coord];
 
-	my @z;
-	push @z, &$_read_uchar for 1..8;
-	my $z_str = join(" ", map { sprintf "%02x", $_ } @z);
-	warn "$z_str != 00 00 00 00 b0 b8 e7 00" if $z_str ne "00 00 00 00 b0 b8 e7 00";
-    } elsif ($type == 9|| # Bitmap, found in mtbstrecke2003msymbol.ovl
-	     0) {
-	my @x;
-	push @x, &$_read_uchar for 1..20;
-	my $x_str = join(" ", map { sprintf "%02x", $_ } @x);
-	warn "$x_str != 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 00 00"
-	    if $x_str !~ /^(01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 00 00)$/;
-	$sym->{TypeText} = &$_read_fixed_string;
-	my @y;
-	push @y, &$_read_uchar for 1..24;
-	if (0) { # zu viele Ausnahmen
-	    my $y_str = join(" ", map { sprintf "%02x", $_ } @y);
-	    # XXX hier breite/höhe kodiert?
-	    warn "$y_str != 01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 0f 00 00 00 0f 00 00 00
+		my @z;
+		push @z, &$_read_uchar for 1..8;
+		my $z_str = join(" ", map { sprintf "%02x", $_ } @z);
+		warn "$z_str != 00 00 00 00 b0 b8 e7 00" if $z_str ne "00 00 00 00 b0 b8 e7 00";
+	    } elsif ($type == 9|| # Bitmap, found in mtbstrecke2003msymbol.ovl
+		     0) {
+		my @x;
+		push @x, &$_read_uchar for 1..20;
+		my $x_str = join(" ", map { sprintf "%02x", $_ } @x);
+		warn "$x_str != 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 00 00"
+		    if $x_str !~ /^(01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 00 00)$/;
+		$sym->{TypeText} = &$_read_fixed_string;
+		my @y;
+		push @y, &$_read_uchar for 1..24;
+		if (0) {	# zu viele Ausnahmen
+		    my $y_str = join(" ", map { sprintf "%02x", $_ } @y);
+		    # XXX hier breite/höhe kodiert?
+		    warn "$y_str != 01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 0f 00 00 00 0f 00 00 00
 	                01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 10 00 00 00 0f 00 00 00
 			01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 0b 00 00 00 0d 00 00 00
                         01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 0b 00 00 00 0d 00 00 00
@@ -581,193 +585,97 @@ while ($p < length $buf) {
 			01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 0c 00 00 00 0f 00 00 00
 			01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 12 00 00 00 11 00 00 00
             "
-		if $y_str !~ /^(01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 0f 00 00 00 0f 00 00 00|01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 10 00 00 00 0f 00 00 00|01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 0b 00 00 00 0d 00 00 00|01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 0e 00 00 00 0e 00 00 00|01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 0c 00 00 00 0f 00 00 00|01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 12 00 00 00 11 00 00 00)$/;
-	}
+			if $y_str !~ /^(01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 0f 00 00 00 0f 00 00 00|01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 10 00 00 00 0f 00 00 00|01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 0b 00 00 00 0d 00 00 00|01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 0e 00 00 00 0e 00 00 00|01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 0c 00 00 00 0f 00 00 00|01 00 01 00 a0 cf 2a 00 00 00 1e 00 02 00 05 00 12 00 00 00 11 00 00 00)$/;
+		}
 
-	$sym->{Coords} = [&$_read_coord];
+		$sym->{Coords} = [&$_read_coord];
 
-	my @z;
-	push @z, &$_read_uchar for 1..8;
-	my $z_str = join(" ", map { sprintf "%02x", $_ } @z);
-	warn "$z_str != 08 25 00 00 8b 01 e8 77
+		my @z;
+		push @z, &$_read_uchar for 1..8;
+		my $z_str = join(" ", map { sprintf "%02x", $_ } @z);
+		warn "$z_str != 08 25 00 00 8b 01 e8 77
 			9a 16 7b 40 3a ff 47 40
 			7c a6 37 60 a8 fd 47 40
 			72 00 f8 82 06 fd 47 40
 			a2 37 00 3d fc fe 47 40
 			f0 27 00 00 aa 01 83 7c
 			d0 1a 00 00 1e 01 83 7c"
-	    if $z_str !~ /^(08 25 00 00 8b 01 e8 77|9a 16 7b 40 3a ff 47 40|7c a6 37 60 a8 fd 47 40|72 00 f8 82 06 fd 47 40|a2 37 00 3d fc fe 47 40|f0 27 00 00 aa 01 83 7c|d0 1a 00 00 1e 01 83 7c)$/;
+		    if $z_str !~ /^(08 25 00 00 8b 01 e8 77|9a 16 7b 40 3a ff 47 40|7c a6 37 60 a8 fd 47 40|72 00 f8 82 06 fd 47 40|a2 37 00 3d fc fe 47 40|f0 27 00 00 aa 01 83 7c|d0 1a 00 00 1e 01 83 7c)$/;
 
-	my $bitmap_length = &$_read_long;
-	&$_read_uchar for 1 .. $bitmap_length + 2; # XXX why +2?
-    } elsif ($type == 7|| # Dreieck, found in mtbstrecke2003msymbol.ovl
-	     0) {
-	my @x;
-	push @x, &$_read_uchar for 1..20;
-	my $x_str = join(" ", map { sprintf "%02x", $_ } @x);
-	warn "$x_str != 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 10 00 00"
-	    if $x_str !~ /^(01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 10 00 00)$/;
-	$sym->{TypeText} = &$_read_fixed_string;
-	my @y;
-	push @y, &$_read_uchar for 1..26;
-	if (0) { # zu viele Ausnahmen
-	    my $y_str = join(" ", map { sprintf "%02x", $_ } @y);
-	    warn "$y_str != 01 00 01 00 00 00 2c 00 00 00 1e 00 ff 00 00 80 1b 00 00 00 08 00 00 00 01 00
+		my $bitmap_length = &$_read_long;
+		&$_read_uchar for 1 .. $bitmap_length + 2; # XXX why +2?
+	    } elsif ($type == 7|| # Dreieck, found in mtbstrecke2003msymbol.ovl
+		     0) {
+		my @x;
+		push @x, &$_read_uchar for 1..20;
+		my $x_str = join(" ", map { sprintf "%02x", $_ } @x);
+		warn "$x_str != 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 10 00 00"
+		    if $x_str !~ /^(01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 10 00 00)$/;
+		$sym->{TypeText} = &$_read_fixed_string;
+		my @y;
+		push @y, &$_read_uchar for 1..26;
+		if (0) {	# zu viele Ausnahmen
+		    my $y_str = join(" ", map { sprintf "%02x", $_ } @y);
+		    warn "$y_str != 01 00 01 00 00 00 2c 00 00 00 1e 00 ff 00 00 80 1b 00 00 00 08 00 00 00 01 00
 			01 00 01 00 00 00 2c 00 00 00 1e 00 ff 00 00 80 1b 00 00 00 07 00 00 00 01 00
 			01 00 01 00 00 00 2c 00 00 00 1e 00 ff 00 00 80 1b 00 00 00 05 00 00 00 01 00
 			01 00 01 00 00 00 2c 00 00 00 1e 00 00 00 ff 80 0c 00 00 00 03 00 00 00 01 00
 			01 00 01 00 00 00 2c 00 00 00 1e 00 00 00 ff 80 0c 00 00 00 03 00 00 00 01 00
 "
-		if $y_str !~ /^(01 00 01 00 00 00 2c 00 00 00 1e 00 ff 00 00 80 1b 00 00 00 08 00 00 00 01 00|01 00 01 00 00 00 2c 00 00 00 1e 00 ff 00 00 80 1b 00 00 00 07 00 00 00 01 00|01 00 01 00 00 00 2c 00 00 00 1e 00 ff 00 00 80 1b 00 00 00 05 00 00 00 01 00|01 00 01 00 00 00 2c 00 00 00 1e 00 00 00 ff 80 0c 00 00 00 03 00 00 00 01 00|01 00 01 00 00 00 2c 00 00 00 1e 00 00 00 ff 80 0c 00 00 00 03 00 00 00 01 00)$/;
-	}
+			if $y_str !~ /^(01 00 01 00 00 00 2c 00 00 00 1e 00 ff 00 00 80 1b 00 00 00 08 00 00 00 01 00|01 00 01 00 00 00 2c 00 00 00 1e 00 ff 00 00 80 1b 00 00 00 07 00 00 00 01 00|01 00 01 00 00 00 2c 00 00 00 1e 00 ff 00 00 80 1b 00 00 00 05 00 00 00 01 00|01 00 01 00 00 00 2c 00 00 00 1e 00 00 00 ff 80 0c 00 00 00 03 00 00 00 01 00|01 00 01 00 00 00 2c 00 00 00 1e 00 00 00 ff 80 0c 00 00 00 03 00 00 00 01 00)$/;
+		}
 
-	my @y2;
-	push @y2, &$_read_short for 1..3;
-	if (0) {
-	    warn "$y2[0] != 137|64|70|267" if $y2[0] !~ /^(137|64|70|267)$/; # etc. ...
-	}
+		my @y2;
+		push @y2, &$_read_short for 1..3;
+		if (0) {
+		    warn "$y2[0] != 137|64|70|267" if $y2[0] !~ /^(137|64|70|267)$/; # etc. ...
+		}
 
-	my $y2_str = join(" ", map { sprintf "%04x", $_ } @y2[1..$#y2]);
-	warn "$y2_str != 0066 0002"
-	    if $y2_str !~ /^(0066 0002)$/;
+		my $y2_str = join(" ", map { sprintf "%04x", $_ } @y2[1..$#y2]);
+		warn "$y2_str != 0066 0002"
+		    if $y2_str !~ /^(0066 0002)$/;
 
-	$sym->{Coords} = [&$_read_coord];
+		$sym->{Coords} = [&$_read_coord];
 
-	my @z;
-	push @z, &$_read_uchar for 1..8;
-	if (0) { # zu viele Ausnahmen
-	    my $z_str = join(" ", map { sprintf "%02x", $_ } @z);
-	    warn "$z_str != 5c 09 00 00 00 00 00 00
+		my @z;
+		push @z, &$_read_uchar for 1..8;
+		if (0) {	# zu viele Ausnahmen
+		    my $z_str = join(" ", map { sprintf "%02x", $_ } @z);
+		    warn "$z_str != 5c 09 00 00 00 00 00 00
 			18 00 00 00 18 00 00 00
 			05 00 00 00 05 00 00 00
 			58 06 00 00 00 00 00 00
 			11 00 00 00 11 00 00 00
 			07 00 00 00 07 00 00 00"
-		if $z_str !~ /^(5c 09 00 00 00 00 00 00|18 00 00 00 18 00 00 00|05 00 00 00 05 00 00 00|58 06 00 00 00 00 00 00|11 00 00 00 11 00 00 00|07 00 00 00 07 00 00 00)$/;
-	}
-    } elsif ($type == 5|| # Rechteck, found in mtbstrecke2003msymbol.ovl
-	     0) {
-	my @x;
-	push @x, &$_read_uchar for 1..20;
-	my $x_str = join(" ", map { sprintf "%02x", $_ } @x);
-	warn "$x_str != 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 10 00 00"
-	    if $x_str !~ /^(01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 10 00 00)$/;
-
-	$sym->{TypeText} = &$_read_fixed_string;
-
-	my @y;
-	push @y, &$_read_uchar for 1..32;
-
-	$sym->{Coords} = [&$_read_coord];
-
-	my @z;
-	push @z, &$_read_uchar for 1..8;
-
-
-    } else {
-	warn "$type ???";
-    }
-    push @symbols, $sym;
-    if ($d) {
-	require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$sym],[qw()])->Indent(1)->Useqq(1)->Dump
-    }
-}
-$self->{Symbols} = \@symbols;
-return;
-
-
-	######################################################################
-	# First try, not so good...
-	$_seek_to->(0x1a1);
-	#my @symbols;
-	while($p < length $buf) {
-#if($trace){while(!$abort){sleep 1}$abort=0}
-	    my $sym = {};
-	    my $type = &$_read_short;
-	    $sym->{Type} = $type;
-	    $sym->{Pos} = $p-2;
-
-# 	    if ($type == 0x1) {
-# 		&$_read_short for 1..9;
-# 		$sym->{Text} = &$_read_fixed_string;
-#  		&$_read_short for 1..10;
-# 		$sym->{Coords} = [&$_read_coords_3_0];
-# 		#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$sym],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
-# 	    } els
-	    if ($type == 2 || # found in: mv13.ovl
-		$type == 1 || # found in: 2004-06-20_hintertaunus.ovl
-		$type == 7 ||
-		$type == 22 || # found in: Bike Alpencross_Overlay neu.ovl
-		$type == 26 || # found in: Bike Alpencross_Overlay neu.ovl
-		$type == 36 || # found in: 2004-06-20_hintertaunus.ovl
-		$type == 42 || # found in: Bike Alpencross_Overlay neu.ovl
-		0
-	       ) {
-		my $subtype = &$_read_short;
-		$sym->{SubType} = $subtype;
-		if ($subtype == 0) {
-		    &$_read_short for 1..7;
-		} elsif ($subtype == 1) {
-		    &$_read_short for 1..8;
-		} else {
-		    die "Unknown subtype <$subtype> for type <$type>";
+			if $z_str !~ /^(5c 09 00 00 00 00 00 00|18 00 00 00 18 00 00 00|05 00 00 00 05 00 00 00|58 06 00 00 00 00 00 00|11 00 00 00 11 00 00 00|07 00 00 00 07 00 00 00)$/;
 		}
-		my $string_type = &$_read_short;
-		if ($string_type == 10) {
-		    $sym->{TypeText} = &$_read_long_fixed_string;
-		} else {
-		    $sym->{TypeText} = &$_read_fixed_string;
-		}
-		if ($subtype == 1) {
-		    &$_read_short for 1..12;
-		    $sym->{Coords} = [&$_read_coord];
-		    &$_read_short for 1..4;
-		    $sym->{Label} = &$_read_fixed_string;
-		} elsif ($subtype == 0) {
-		    &$_read_short for 1..10;
-		    $sym->{Coords} = [&$_read_coords_3_0];
-		}
-	    } elsif ($type == 3) { # found in: mv14.ovl
-		&$_read_short for 1..10;
-		$sym->{Text} = &$_read_fixed_string;
-		#&$_read_short for 1..11;
-		#$sym->{Coords} = [&$_read_coord];
-		&$_read_short for 1..10;
-		$sym->{Coords} = [&$_read_coords_3_0];
-		#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$sym],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
-	    } elsif ($type == 180) {
-		&$_read_short for 1..14;
-		$sym->{Text} = &$_read_fixed_string;
-		&$_read_short for 1..10;
-		$sym->{Coords} = [&$_read_coords_3_0];
-	
-	    } elsif ($type == 20) { # 0x14, Gruppe
+	    } elsif ($type == 5|| # Rechteck, found in mtbstrecke2003msymbol.ovl
+		     0) {
 		my @x;
-		push @x, &$_read_short for 1..12;
-		warn "$x[0] != 0" if $x[0] != 0;
-		warn "$x[1] != 0x1e" if $x[1] != 0x1e;
-		$sym->{GroupNumber} = $x[2];
-		$sym->{Text} = &$_read_fixed_string;
- 		&$_read_short for 1..3;
-# 		&$_read_short for 1..13;
-# 		my $text2 = &$_read_fixed_string;
-# 		warn "$text2\n" if $d;
-# 		my $sym_nr = &$_read_short;
-# 		warn "SymNr?=$sym_nr\n" if $d;
-# 		&$_read_short for 1..9;
-# 		$sym->{Coords} = [&$_read_coords_3_0];
-	    } elsif ($type == 23) {
-		# do nothing...
+		push @x, &$_read_uchar for 1..20;
+		my $x_str = join(" ", map { sprintf "%02x", $_ } @x);
+		warn "$x_str != 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 10 00 00"
+		    if $x_str !~ /^(01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 10 00 00)$/;
+
+		$sym->{TypeText} = &$_read_fixed_string;
+
+		my @y;
+		push @y, &$_read_uchar for 1..32;
+
+		$sym->{Coords} = [&$_read_coord];
+
+		my @z;
+		push @z, &$_read_uchar for 1..8;
+
+
 	    } else {
-		warn sprintf "Position=0x%x\n", $p;
-		warn "unhandled type <$type>"; # XXX
+		warn "$type ???";
 	    }
 	    push @symbols, $sym;
 	    if ($d) {
 		require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$sym],[qw()])->Indent(1)->Useqq(1)->Dump
 	    }
 	}
-
 	$self->{Symbols} = \@symbols;
     }
 }

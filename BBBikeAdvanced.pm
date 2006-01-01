@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.135 2005/11/19 20:26:28 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.136 2005/12/31 16:22:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -154,6 +154,7 @@ sub custom_draw {
     my $fileref   = eval '\%' . $linetype . "_file";
     my $name_draw = eval '\%' . $linetype . "_name_draw";
     my $coord_input;
+    my $center_beginning = 0;
 
     require File::Basename;
 
@@ -236,7 +237,7 @@ sub custom_draw {
 			 -sticky => "w",
 			);
 	    }
-	    Tk::grid($f->Label(-text => "Kartenkoordinaten"),
+	    Tk::grid($f->Label(-text => M"Kartenkoordinaten"),
 		     my $om = $f->Optionmenu
 		     (-variable => \$coord_input,
 #XXX this causes -width to be ignored?		      -anchor => "w",
@@ -245,6 +246,10 @@ sub custom_draw {
 		     -sticky => "w",
 		    );
 	    $coord_input = "Standard";
+
+	    Tk::grid($f->Label(-text => M"Auf Anfang zentrieren"),
+		     $f->Checkbutton(-variable => \$center_beginning),
+		     -sticky => "w");
 
 	    $f = $t->Frame->pack(-fill => "x");
 	    Tk::grid($f->Button(Name => "ok",
@@ -340,8 +345,20 @@ sub custom_draw {
 	delete $str_attrib{$abk};
     }
 
+    my $coord;
     if (defined $BBBike::ExtFile::center_on_coord) {
-	choose_from_plz(-coord => $BBBike::ExtFile::center_on_coord);
+	$coord = $BBBike::ExtFile::center_on_coord;
+    } elsif ($center_beginning) {
+	my $obj = $linetype eq 'p' ? \%p_obj : \%str_obj;
+	if ($obj->{$abk}) {
+	    my $r = $obj->{$abk}->get(0);
+	    if ($r) {
+		$coord = $r->[Strassen::COORDS()]->[0];
+	    }
+	}
+    }
+    if (defined $coord) {
+	choose_from_plz(-coord => $coord);
     }
 
     $toplevel{"chooseort-$abk-$linetype"}->destroy

@@ -14,6 +14,17 @@ Legend:
 
 =over
 
+=item * (M4)
+
+Konverter vom E<quot>TouratechE<quot>-Format nach bbd schreiben. Beispieldatei:
+http://www.arur.de/fileadmin/reisenotizen/reisenotizen_roland/images/berlin-ffo/bl-ffo.xml
+
+=item * (H2)
+
+Daten direkt von einer Postgres/Mysql-Datenbank auslesen und
+darstellen (Strassen::Pg weiterschreiben, Strassen::Mysql neu
+schreiben, oder sogar Strassen::DBI?).
+
 =item * (H1)
 
 Routenprofil schöner machen, z.B. so wie hier:

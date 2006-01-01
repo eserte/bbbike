@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: ovl.t,v 1.3 2005/12/29 00:20:03 eserte Exp $
+# $Id: ovl.t,v 1.4 2005/12/31 10:55:13 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -17,6 +17,7 @@ use File::Temp qw(tempfile);
 use Data::Dumper qw(Dumper);
 use File::Glob qw(bsd_glob);
 use File::Basename qw(basename);
+use Getopt::Long;
 
 BEGIN {
     if (!eval q{
@@ -29,8 +30,11 @@ BEGIN {
     }
 }
 
+my $v;
 my $ovlresdir = "$FindBin::RealBin/../misc/ovl_resources";
 my $ovl2dir = "$ovlresdir/various_from_net";
+
+GetOptions("v!" => \$v) or die "usage!";
 
 my @ovl_files = bsd_glob("$ovl2dir/*.[oO][vV][lL]");
 
@@ -42,7 +46,7 @@ my $zip = Archive::Zip->new;
 $zip->read("$ovl2dir/bahn_mv.zip");
 
 for my $basename (qw(mv01 mv02 mv04 mv08)) {
-    diag $basename;
+    diag $basename if $v;
 
  SKIP: {
 	skip("mv08 not the same file?", $tests_per_file)

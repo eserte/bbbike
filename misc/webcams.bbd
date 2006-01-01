@@ -29,6 +29,23 @@ http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=12&mode=small
 http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=94&mode=small	WC 8674,7081 8746,7085
 http://www.vmzberlin.de/vmz/vmz.jsp?pageURL=/cameradetail.do?camId=6&mode=small	WC 2851,19244 2896,19184
 #: section VMZ-Berlin ^^^
+#: section Mobil in Potsdam vvv
+# Startseite ist http://www.mobil-potsdam.de/webcams.htm
+# Das Flash dort funktioniert bei mir nicht. Die Bilder sind sehr klein (120x100)
+http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=39	WC -10041,-5449 -10016,-5493
+http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=33	WC -12060,-780 -12032,-742
+http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=32	WC -12062,-780 -12019,-816
+http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=35	WC -12072,-803 -12090,-838
+#: note: wie camid=35, nur kleinerer Ausschnitt
+http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=34	WC -12072,-803 -12090,-838
+http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=38	WC -12260,-422 -12225,-458
+http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=28	WC -12877,-666 -12872,-602
+http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=29	WC -13870,-1445 -13824,-1400
+http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=30	WC -13868,-1448 -13817,-1463
+http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=31	WC -13878,-1448 -13916,-1488
+http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=36	WC -12263,-422 -12319,-397
+http://mobil-potsdam.dyndns.org/eyemotion/scripts/lastpic.php?camid=37	WC -12067,-785 -12131,-783
+#: section Mobil in Potsdam ^^^
 http://www.dhm.de/webcams/WEB3.html	WC 9861,12489 9850,12522
 http://www.dhm.de/zcam/index.html	WC 9954,12437 10009,12443
 http://www.dhm.de/lindencam/index.html	WC 9875,12425 9814,12416

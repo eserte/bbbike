@@ -1,88 +1,7 @@
 @temp_blocking = ();
-$#temp_blocking = 140;
+$#temp_blocking = 207;
 push @temp_blocking,
 (
-       {
-         'until' => 1136069999,
-         'text' => 'Blankenburger Weg (Pankow) Richtung Süden zwischen Bahnhofstr. und Pasewalker Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
-         'from' => 1119904102,
-         'data' => 'userdel	1 12442,20805 12030,20490
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       {
-         'until' => 1135983600,
-         'text' => 'L 302; (Schöneicher Str.); OL Schöneiche, Dorfaue und Rüdersdorfer Str. Kanal- und Straßenbau Vollsperrung 12.04.2005-30.12.2005 ',
-         'from' => 1113170400,
-         'data' => 'userdel	q4 31221,8312 30700,8462
-',
-         'type' => 'handicap'
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'until' => 1191189599,
          'text' => 'Nennhauser Damm (Spandau) stadteinwärts zwischen Heerstr. und Döberitzer Weg Baustelle, Fahrtrichtung gesperrt (bis 09.2007)',
@@ -114,23 +33,9 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1136069999,
-         'text' => 'Berliner Allee Richtung stadtauwärts, zwischen Langhanstr. und Lindenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
-         'from' => 1114468172,
-         'data' => 'userdel	q4; 13540,15928 13751,16009 14014,16106 14067,16127 14371,16252
-',
-         'type' => 'handicap'
-       },
        undef,
-       {
-         'until' => 1136070000,
-         'text' => 'B 1; (Potsdamer Str.); OD Groß Kreutz Kanal- und Straßenbau Vollsperrung 27.04.2005-31.12.2005 ',
-         'from' => 1114466400,
-         'data' => 'userdel	q4	-28793,-1618 -31991,-1024
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -157,14 +62,6 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1136069999,
-         'text' => 'Bouchéstraße (Treptow) in beiden Richtungen zwischen Kiefholzstraße und Am Treptower Park Fahrbahnerneuerung, Straße vollständig gesperrt (bis Ende 2005)',
-         'from' => 1118091230,
-         'data' => 'userdel	2 13867,9864 13601,9572
-',
-         'type' => 'gesperrt'
-       },
        undef,
        undef,
        undef,
@@ -181,30 +78,12 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1136069999,
-         'text' => 'Dorotheenstr. Richtung Osten zwischen Wilhelmstr. und Schadowstr. sowie Schadowstr. Richtung Unter den Linden gesperrt (bis Ende 2005)',
-         'from' => 1119697095,
-         'data' => 'userdel	q4; 8775,12457 8907,12472 9008,12485
-userdel	q4; 9008,12485 9018,12400 9028,12307
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
-       {
-         'until' => 1136069999,
-         'text' => 'Rosa-Luxemburg-Str. zwischen Torstr. und Memhardstr. Baustelle, Einbahnstraße in Richtung Alexanderplatz, (bis Ende 2005) ',
-         'from' => 1120086052,
-         'data' => 'userdel	1 10846,13362 10790,13565
-	3 10757,13401 10846,13362 10923,13317
-	3 10923,13317 10846,13362 10757,13401
-	3 10969,13430 10846,13362 10757,13401
-	3 10757,13401 10846,13362 10969,13430
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -279,14 +158,7 @@ userdel	q4; 9008,12485 9018,12400 9028,12307
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1136069999,
-         'text' => 'Wegedornstraße (Adlershof) Richtung Rudow, zwischen Rudower Chaussee und Ernst-Ruska-Ufer Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
-         'from' => 1127508095,
-         'data' => 'userdel	q4 18927,2431 18925,2700
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -307,14 +179,7 @@ userdel	2 47081,83093 47137,83456
        undef,
        undef,
        undef,
-       {
-         'until' => 1136070000,
-         'text' => 'K 6424; (Dahlwitzer Landstr.-Münchehofe-B 1); OD Münchehofe Straßenausbau Vollsperrung 12.09.2005-31.12.2005 ',
-         'from' => 1126389600,
-         'data' => 'userdel	q4 28605,9637 26851,9005
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -417,16 +282,7 @@ userdel	2 47081,83093 47137,83456
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1136069999,
-         'text' => 'Weihnachtsmarkt an der Gedächtniskirche, bis 2005-12-31',
-         'from' => 1132411558,
-         'data' => 'userdel	q4 5831,10978 5797,10881
-userdel	q4 5657,10868 5652,11004
-userdel	q4; 5652,11004 5716,10978 5831,10978
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'INKO_77722',
          'until' => 1143842399,
@@ -456,14 +312,7 @@ userdel	q4; 5652,11004 5716,10978 5831,10978
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1136070000,
-         'text' => 'B 167 (Herzberg-Neuruppin) OL Alt Ruppin, Rhinbrücke Brückenneubau Vollsperrung 02.03.2004-31.12.2005 ',
-         'from' => 1078095600,
-         'data' => 'userdel	2 -28866,59954 -28692,59635 -28477,59467
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1149026400,
          'text' => 'B 169 OU Senftenberg Bau Ortsumfahrung Vollsperrung 06.11.2003-30.05.2006 ',
@@ -473,14 +322,7 @@ userdel	q4 55158,-95910 54884,-96292
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1135983600,
-         'text' => 'B 198 Greiffenberger Str. OD Kerkow grundhafter Straßenbau Vollsperrung * 17.10.2005-30.12.2005 ',
-         'from' => 1129413600,
-         'data' => 'userdel	q4 48929,70947 49007,71214
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
