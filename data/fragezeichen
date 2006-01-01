@@ -226,11 +226,11 @@ Blankensee - Stangenhagen: laut "Berliner Umland" witterungsabhängige Strecke	? 
 Stangenhagen - Hennickendorf: Qualität? genaue Wegführung?	? -9710,-22155 -9815,-22769 -9453,-23518 -9291,-23955 -9853,-25278 -9403,-26688 -9375,-27159
 Kammerode - Elisabethhöhe: laut "Berliner Umland" witterungsabhängige Strecke	? -24174,-8751 -24541,-7940
 Glindow - Pertzow: laut "Berliner Umland" witterungsabhängige Strecke	? -22914,-5137 -22559,-5382 -22122,-5981 -21798,-6293 -21311,-6468 -21086,-7142 -20740,-7375
-Pfad am Sacrow-Paretzer-Kanal: genaue Wegführung? Qualität?	? -15034,3150 -15042,3314 -15217,3329 -15357,3538 -15781,3663 -15950,3654 -16187,3722 -17557,4296 -18210,4505
+Pfad am Sacrow-Paretzer-Kanal: genaue Wegführung? Qualität?	? -15034,3150 -15042,3314 -15217,3329 -15357,3538 -15781,3663 -15950,3654 -16187,3722 -17557,4296 -18233,4501
 Werder - zum Plessower See: genaue Wegführung? Qualität?	? -22042,-2060 -22734,-2249 -22933,-2411 -23320,-2574
 Alt-Brieselang - Brieselang: Qualität? genaue Wegführung?	? -16914,22393 -18103,22064 -17978,21602 -18415,21465 -18378,20766 -18817,19637
 Marquardt, Hauptstr.: Laut mobil-potsdam.de: Asphaltiert	? -18683,4751 -18825,4750
-B273 - Schwarzer Weg: Laut "mobil-potsdam.de" Waldweg	? -18693,4568 -18210,4505
+B273 - Schwarzer Weg: Laut "mobil-potsdam.de" Waldweg	? -18693,4568 -18233,4501
 Goethestr./Fontanestr.: laut "mobil-potsdam.de" asphaltiert	? -9868,-1425 -9775,-1431 -9506,-1431 -9215,-1431 -9219,-1590 -9224,-1727
 Geltow - Pirschheide am Templiner See: Laut "mobil-potsdam.de" überwiegend Waldweg mit kurzen asphaltierten Stellen	? -16912,-5690 -16558,-5727 -16323,-5706 -16072,-4894 -16010,-4509 -15886,-4339
 Am Templiner See zwischen Damm und R-Bhf. Charlottenhof: laut "mobil-potsdam.de" unterschiedliche Qualität ("Promenade", betoniert, Waldweg)	? -15886,-4339 -15750,-4196 -15765,-3990 -15431,-3618 -15340,-3406 -15203,-2931 -14912,-2884 -14734,-2471 -14859,-2384
@@ -662,6 +662,17 @@ Sandgrasweg - Havelmüllerweg: Qualität?	? 2896,21031 2914,20944 2916,20870
 Tornower Weg - Mauerweg am Nordgraben: Durchfahrt für Radfahrer möglich, Qualität?	? 6461,20642 6488,20505
 Russische Kolonie: ist der Abschnitt von Friedrich-Ebert-Str./Alleestr. für Autofahrer gesperrt?	? -13091,-8 -12947,106
 Krughorn - Klein-Glienicke: Bauarbeiten, aber Durchfahrt noch möglich. Wie sieht es nach den Bauarbeiten aus?	? -10587,471 -10573,564 -10512,683 -10430,848 -10273,1088 -10209,1161 -10163,1288 -10078,1551
+Radewege - Brielow: Qualität?	? -46098,7170 -46447,6966 -46675,6078 -47386,5139 -47804,5025 -48365,5136
+Brielow - Hohenferchesar: Qualität?	? -48390,5412 -49416,7055 -49898,7487 -50089,8223 -50533,8629 -50660,8921 -50856,8901 -51205,9530 -51535,9758 -51829,10290
+Radewege - Hohenferchesar: Qualität?	? -48325,7450 -48693,7461 -49378,7626 -49809,8261 -50089,8223
+Hohenferchesar - Fohrde: Qualität?	? -50533,8629 -50622,8172 -50749,7956 -51434,7677 -51827,7258 -52233,7271 -52436,7487 -52855,7334 -53058,7005
+Am Zernsee bis zur Eisenbahnbrücke: Qualität? Nur für Radfahrer offen? Ausschilderung vorhanden?	? -20189,-677 -20399,-666 -20526,-1097 -20704,-1561 -20913,-1859 -20937,-1989
+Töplitz - Neu-Töplitz - Leest: Qualität? Ausschilderung (F3.1?)?	? -23518,2861 -23286,3531 -23229,3692 -23207,3778 -22903,3848 -22909,4076 -21611,3984 -21437,3937 -21288,3807 -20898,3308 -20790,3007 -20745,2702 -20764,2582
+Töplitz - Göttin: Qualität? Ausschilderung?	? -23694,2739 -23826,2871 -23975,2925 -24013,2975 -24073,2959 -24121,3026 -24076,3347 -24359,3569 -24613,3867 -24464,3972 -24362,3987 -24308,4092 -24368,4124 -24276,4282 -24191,4349 -24098,4329
+Göttin - Neu-Töplitz: Qualität? Ausschilderung?	? -24098,4329 -23819,4206 -23597,4083 -23423,3918 -23353,3762 -23229,3692
+Göttin - Neu-Töplitz (längere Alternativstrecke): Qualität? Ausschilderung?	? -24098,4329 -23927,4682 -23439,4685 -22782,4597 -22836,4190 -22906,4136 -22909,4076
+Beelitz - Schlunkendorf - Kähnsdorf: Qualität? Nur für Radfahrer offen (von Schlunkendorf bis Kähnsdorf)?	? -15829,-19885 -15820,-18897 -15477,-18643 -15211,-18664 -15160,-18324 -15198,-18059 -14322,-17043 -14233,-16484 -14637,-16112
+Siedlung Schönwalde - Wansdorf/Pausin: Qualität?	? -10313,21144 -10336,21462 -10425,22139 -10425,22503 -10564,22896 -10590,23112 -10559,23255
 wirklich?	? 9215,3599
 Wirklich?	? -3755,17090
 geplante Ampel in der Johannisthaler	? 14196,2876
@@ -729,7 +740,7 @@ Salzachstr.: unbefestigt, fester Erdboden (wo genau sind die Kopfsteinpflaster-/
 Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser (Richtung Süden sah es teilweise besser aus, wo genau?)	? 9772,-12194 9345,-11425 9472,-11297 9578,-10891 9598,-10356 9854,-9480 10023,-8859
 Sputendorf: teil Kopfsteinpflaster, OK (Stimmt das? Oder ist das Stück in Sputendorf auch asphaltiert?)	? -1316,-7721 -1734,-7716 -2500,-7557
 Fahlhorst: schlechtes Kopfsteinpflaster (Stimmt das noch immer?)	? -5709,-10987 -5452,-11456
-F XXX: fester Sandweg mit einigen Schlaglöchern (welche Nummer des F-Wegs?)	? -21063,-2021 -20721,-1935 -20486,-1956 -20295,-1870 -20176,-525
+F XXX: fester Sandweg mit einigen Schlaglöchern (welche Nummer des F-Wegs?)	? -21063,-2021 -20937,-1989 -20721,-1935 -20486,-1956 -20295,-1870 -20189,-677 -20176,-525
 Usedom - Stolpe: Asphalt (Strecke zwischen Usedom und Abzweig Welzin nicht abgefahren, aber beide Enden sehen gut aus:)	? 43164,164582 44868,163300 45368,163284 46068,163106 47071,163315
 Seelübbe - Prenzlau: asphaltiert (aus der Bahn heraus gesehen)	? 40682,100854 40754,100635 40954,100113
 Trebbin: Kopfsteinpflaster, OK (Hier sind Bauarbeiten in Gange, danach kein Kopfsteinpflaster mehr?)	? -1623,-21150 -1887,-21501 -1992,-21489
@@ -780,10 +791,16 @@ Zweirichtungsradweg auf der östl. Seite, Qualität unbekannt (Position des südlic
 Radwege unterschiedlicher Form und Qualtität (genauer spezifizieren:)	? -9753,-2474 -8493,-2870 -8428,-2886 -8278,-2928 -7873,-3094 -7060,-3124 -6810,-3151
 Radweg, nördliche Seite (nicht ganz sicher)	? 7981,-7165 9170,-7708 9828,-8106
 Bansin - Ückeritz: asphaltierter Zweirichtungsradweg auf der südlichen Seite (letztes Stück ab Schmollensee bis Bansin war 2004-06 noch in Bau:)	? 55741,174692 55541,175016 55388,175169 55012,175498 54704,175615 54331,175874 52866,176160 52713,176237 52093,178063 51723,178269 51569,178497 51251,179173
-Zweirichtungsradweg auf der östlichen Seite (am Gutsgartenweg sicher, nördl. und südl. davon aus "Berliner Umland" entnommen:)	? -18304,4749 -18210,4505 -18025,4018 -17956,3840 -17588,2815 -17309,2517 -16686,1900
+Zweirichtungsradweg auf der östlichen Seite (am Gutsgartenweg sicher, nördl. und südl. davon aus "Berliner Umland" entnommen:)	? -18340,4742 -18233,4501 -18025,4018 -17956,3840 -17588,2815 -17309,2517 -16686,1900
 Radweg (andere Straßenseite auch?)	? 37093,-151665 37375,-151190
 Radweg (andere Straßenseite auch?)	? 37628,-150734 37756,-150359
 Lessingstr.: optionaler Radweg (nicht ganz sicher:)	? -13749,105474 -12659,104581 -12122,104267 -12062,104131
-F2.2 (Potsdam) (Stimmt der Verlauf der F2.2 zwischen Nattwerder und Bornim?)	? -20176,-525 -21063,769 -20829,1047 -20766,1326 -20959,1539 -20959,1753 -20064,1906 -19990,2131 -20009,2396 -19656,2362 -19438,2244 -18728,2153 -18712,1225 -18678,1168 -18135,1580 -17730,1580 -17067,1388 -16894,1485
-F3 (Potsdam) (Wie ist der genaue Verlauf der F3?)	? -21636,-2101 -22042,-2060 -22206,-1693 -22683,-1521 -23133,-1244 -23199,-903 -23175,-350 -23411,15 -23896,653 -24509,1607 -24680,1670 -24894,1733 -24895,1903 -24853,2031 -24983,2265 -25110,2303 -25453,2418 -25539,2641 -25662,2746 -25669,2939 -25787,3228 -26196,4769 -27127,5270 -26965,5390 -26840,5684 -26784,5756 -26794,5867 -26689,6111 -26525,6519 -25978,6441 -25531,6634 -25318,6593 -25187,6468 -25060,6338 -24240,6075 -23599,5864 -21067,6503 -21110,6589 -20771,6952 -20301,7082 -20023,6826 -19787,6551 -19616,6466 -19303,5325 -19253,5109 -18825,4750 -18693,4568 -19403,4631 -19309,4359 -19339,3792 -19634,3593 -19766,3346 -19868,3159 -19928,2706 -19987,2459 -20009,2396 -19990,2131 -20064,1906 -20959,1753 -20959,1539 -20766,1326 -20829,1047 -21063,769 -20176,-525 -20295,-1870 -20486,-1956 -20721,-1935 -21063,-2021 -21210,-2058 -21508,-2080 -21636,-2101
+F2.2 (Potsdam) (Stimmt der Verlauf der F2.2 zwischen Nattwerder und Bornim?)	? -20176,-525 -21221,764 -20955,978 -20807,1383 -21043,1586 -21002,1770 -20064,1906 -19990,2131 -20009,2396 -19656,2362 -19438,2244 -18728,2153 -18712,1225 -18678,1168 -18135,1580 -17730,1580 -17067,1388 -16894,1485
+F3 (Potsdam) (Wie ist der genaue Verlauf der F3?)	? -21636,-2101 -22042,-2060 -22206,-1693 -22683,-1521 -23133,-1244 -23199,-903 -23175,-350 -23411,15 -23896,653 -24509,1607 -24680,1670 -24894,1733 -24895,1903 -24853,2031 -24983,2265 -25110,2303 -25453,2418 -25539,2641 -25662,2746 -25669,2939 -25787,3228 -26196,4769 -27127,5270 -26965,5390 -26840,5684 -26784,5756 -26794,5867 -26689,6111 -26525,6519 -25978,6441 -25531,6634 -25318,6593 -25187,6468 -25060,6338 -24240,6075 -23599,5864 -21067,6503 -21110,6589 -20771,6952 -20301,7082 -20023,6826 -19787,6551 -19616,6466 -19303,5325 -19253,5109 -18825,4750 -18693,4568 -19403,4631 -19309,4359 -19339,3792 -19634,3593 -19766,3346 -19868,3159 -19928,2706 -19987,2459 -20009,2396 -19990,2131 -20064,1906 -21002,1770 -21043,1586 -20807,1383 -20955,978 -21221,764 -20176,-525 -20189,-677 -20295,-1870 -20486,-1956 -20721,-1935 -20937,-1989 -21063,-2021 -21210,-2058 -21508,-2080 -21636,-2101
+F3.1 (Havelland) (kompletter Verlauf fehlt!)	? -23207,2284
+F3.2 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
+F3.3 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
+F3.4 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
+F3.5 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
+F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 Uckermärkischer Rundweg (genauer Name der Radroute? wo geht es weiter?)	? 49007,71214 49512,70978 49950,70956 50387,70821 50406,70709 50412,70684 50209,70365 50490,70053 50318,69893 50303,69837 50128,69775 50078,69706 49903,69643 49959,69425 49893,69284 49837,69175 49821,69093

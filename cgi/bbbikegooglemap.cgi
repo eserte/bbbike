@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.23 2005/12/13 00:03:03 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.23 2005/12/13 00:03:03 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -190,11 +190,13 @@ sub get_html {
     }
 
     function getCurrentMode() {
-	if (document.forms["addroute"].elements["addroute"].checked) {
-	    return "addroute";
-	} else {
-	    return "search";
+	var rb = document.forms["mapmode"].elements["mapmode"];
+	for (var i = 0; i < rb.length; i++) {
+	    if (rb[i].checked) {
+		return rb[i].value;
+	    }
 	}
+	return "browse"; // fallback
     }
 
     function addCoordsToRoute(point) {
@@ -410,8 +412,10 @@ EOF
   <button>Zeigen</button>
 </form>
 
-<form name="addroute" style="margin-top:0.5cm; border:1px solid black; padding:3px;" method="post" enctype="multipart/form-data">
-  <label>Mit Maus-Doppelklicks eine Route erstellen <input type="checkbox" name="addroute"  /></label>
+<form name="mapmode" style="margin-top:0.5cm; border:1px solid black; padding:3px;" method="get">
+  <label> <input type="radio" name="mapmode" value="browse" checked /> Scrollen/Bewegen/Zoomen</label><br/>
+  <label> <input type="radio" name="mapmode" value="search"         /> Mit Maus-Klicks Start- und Zielpunkt festlegen</label><br/>
+  <label> <input type="radio" name="mapmode" value="addroute"       /> Mit Maus-Doppelklicks eine Route erstellen</label>
   <a href="javascript:deleteLastPoint()">Letzten Punkt löschen</a>
   <a href="javascript:resetRoute()">Route löschen</a>
 </form>

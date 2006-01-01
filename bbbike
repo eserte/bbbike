@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.218 2005/12/31 19:21:46 eserte Exp $
+# $Id: bbbike,v 3.218 2005/12/31 19:21:46 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -16326,8 +16326,8 @@ sub nearest_line_points_mouse {
     my $e = $c->XEvent;
     my($x, $y) = ($c->canvasx($e->x), $c->canvasy($e->y));
     @tags = $c->gettags('current') if !@tags;
-    if (grep { /-label/ } @tags) { # ignore labels
-	(undef, @tags) = find_below_rx($c, [q{.}], undef, [q{current}, q{-label}]);
+    if (grep { /-label/ || $_ eq 'show' } @tags) { # ignore labels and show marker
+	(undef, @tags) = find_below_rx($c, [q{.}], undef, [q{current}, q{show}, q{-label}]);
     }
     nearest_line_points($x, $y, @tags);
 }
