@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: ovl.t,v 1.4 2005/12/31 10:55:13 eserte Exp $
+# $Id: ovl.t,v 1.5 2006/01/02 22:38:21 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -31,8 +31,7 @@ BEGIN {
 }
 
 my $v;
-my $ovlresdir = "$FindBin::RealBin/../misc/ovl_resources";
-my $ovl2dir = "$ovlresdir/various_from_net";
+my $ovl2dir = "$FindBin::RealBin/../misc/download_tracks";
 
 GetOptions("v!" => \$v) or die "usage!";
 

@@ -5731,8 +5731,7 @@ sub show_info {
 <hr>
 
 <a name="tipps"><h3>Die Routensuche</h3></a>
-Das Programm versucht, den kürzesten Weg zwischen den gewählten Berliner
-Straßen zu finden. Die Auswahl erfolgt entweder durch das Eintippen
+Das Programm sucht den kürzesten oder schnellsten Weg zwischen den gewählten Berliner Straßen. Die Auswahl erfolgt entweder durch das Eintippen
 in die Eingabefelder für Start und Ziel (Via ist optional), durch Auswahl
 aus der Buchstabenliste oder durch Auswahl über die Berlin-Karte.
 Straßennamen müssen nicht völlig korrekt eingegeben werden. Groß- und

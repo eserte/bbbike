@@ -1873,6 +1873,11 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (M5)
+
+Add a search option: E<quot>Unbeleuchtete Straﬂen vermeidenE<quot>
+(due to user request, but I always thought of it).
+
 =item * (M3)
 
 Opera 7.11: nice_berlinmap seems to work, but nice_abcmap has problems
@@ -1882,6 +1887,10 @@ Another problem with abcmap and berlinmap: if the E<quot>niceE<quot>
 code is disabled, then <Return> will fire the wrong button (that is,
 the image maps...). Unfortunately the hidden submit hack does not work
 on Opera...
+
+Also: the clicking on the <label>...</label> part does not fire the
+onClick function (seen on Opera 7.xx) (maybe I should just remove
+<label> for Opera?).
 
 =item * (M3)
 
