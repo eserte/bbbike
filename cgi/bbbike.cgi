@@ -742,6 +742,13 @@ if (!$use_background_image) {
 use vars qw($speed_default);
 $speed_default = 20;
 
+use vars qw(%handicap_speed);
+%handicap_speed = ("q4" => 5, # hardcoded für Fußgängerzonen
+		   "q3" => 13,
+		   "q2" => 18,
+		   "q1" => 25,
+		  );
+
 @pref_keys = qw/speed cat quality ampel green winter fragezeichen/;
 
 CGI->import('-no_xhtml');
@@ -2755,12 +2762,13 @@ sub search_coord {
 	    }
 	    $handicap_net->make_net_cat;
 	}
-	my $penalty;
-	# XXX also other categories?
-	$penalty = { "q4" => $velocity_kmh/5, # hardcoded für Fußgängerzonen
-		   };
+	my $penalty = {};
+	for my $q_cat (keys %handicap_speed) {
+	    $penalty->{$q_cat} = $velocity_kmh/$handicap_speed{$q_cat};
+	}
 	for my $q (0 .. 3) {
-	    $penalty->{"q$q"} = 1;
+	    my $q_cat = "q$q";
+	    $penalty->{$q_cat} = 1 if !exists $penalty->{$q_cat};
 	}
 	$extra_args{Handicap} =
 	    {Net => $handicap_net,
@@ -3071,8 +3079,6 @@ sub search_coord {
 	    $def->{Pref} = ($q->param('pref_speed') && $speed == $q->param('pref_speed'));
 	    my $time;
 	    if ($handicap_net) {
-		# XXX should also have values for other categories?
-		my %handicap_speed = ("q4" => 5); # hardcoded für Fußgängerzonen
 		$time = 0;
 		my @realcoords = @{ $r->path };
 		for(my $ii=0; $ii<$#realcoords; $ii++) {

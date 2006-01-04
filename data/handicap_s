@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.76 2005/12/28 19:06:40 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.78 2006/01/04 00:54:52 eserte Exp eserte $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: XXX hier br‰uchte man keine zus‰tzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -20,7 +20,9 @@ Georgenstr.: Fuﬂg‰nger	q1 9437,12662 9308,12649
 Neue Promenade: Fuﬂg‰nger	q2 10294,13070 10185,12982 10132,12941
 Pariser Platz/Brandenburger Tor: Fuﬂg‰nger	q2 8804,12280 8610,12254 8515,12242
 Potsdamer Platz: Fuﬂg‰nger	q3 8542,11502 8462,11538
-Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3 9590,10262 9593,10238 9592,10174 9579,10122
+Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3 9579,10122 9592,10174
+Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3; 9592,10174 9593,10238
+Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3 9593,10238 9590,10262
 Mehringplatz: Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9590,10262 9508,10320 9509,10391 9569,10427 9644,10404 9662,10345 9646,10301 9590,10262
 Friedrichstr. (am Mehringplatz): Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9569,10427 9556,10565
 Gorkistr.: reger Fuﬂg‰ngerverkehr	q3 2055,20280 2116,20314 2311,20348
@@ -149,7 +151,7 @@ Monbijoubr¸cke: eng, Fuﬂg‰nger	q2 9707,12974 9680,12916 9661,12876
 Garnisonkirchplatz: Straﬂenbahn	q2 10309,12854 10255,12959
 F¸rther Str.: Gehweg	q2 5773,10318 5808,10284
 (Zossener Br¸cke - Mehringplatz): Gehweg	q1 9865,10286 9646,10301
-(Richard-Wagner-Platz - Schustehrusstr.): Gehweg	q2 3763,12279 3700,12265
+(Richard-Wagner-Platz - Schustehrusstr.): Gehweg	q3 3763,12279 3700,12265
 Goerdelersteg: enge scheckenfˆrmige Rampen	q3 3619,14183 3600,14278
 Goerdelerdamm: enger Zweirichtungsradweg	q1 3600,14278 4676,14534
 Radweg eng und bewachsen	q1 5071,14614 5264,14671 5440,14840
@@ -271,8 +273,8 @@ Im Jagen: Fuﬂg‰nger, Hundeauslaufgebiet	q1 905,6631 909,6584 1074,6449 1375,6138
 Worpsweder Str.: eng mit ein- und ausparkenden Autos	q1 6191,4923 6203,5138
 Wilseder Str.: eng mit ein- und ausparkenden Autos	q1 6295,5132 6288,4906
 H¸nensteig: Fuﬂg‰nger	q2 6396,5125 6406,5223 6108,5253
-(Ringstr. - Gersdorfstr. (Kolonie Marienhˆhe)): Kleingartenanlage, tiefe Steinregenabl‰ufe quer zum Weg	q2 7921,4451 8162,4725
 (Gˆtzstr. - Albrechtstr.): Fuﬂg‰nger	q2 9460,6519 9453,6415 9371,6350 9321,6079
+(Ringstr. - Gersdorfstr. (Kolonie Marienhˆhe)): Kleingartenanlage, Fuﬂg‰nger (schieben!), tiefe Steinregenabl‰ufe quer zum Weg	q4 7921,4451 7935,4466 8162,4725
 M¸hlenbecker Weg: Fuﬂg‰nger	q1 20150,15678 20334,16043
 (Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger, Kleingartenweg	q1 6807,7262 7231,7394
 Groﬂ-Berliner Damm: teilweise noch Baustelle	q3::inwork 17645,5328 17700,5272 17778,5077 18058,4627
