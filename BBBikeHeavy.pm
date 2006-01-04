@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.25 2005/12/07 22:24:54 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.26 2006/01/04 01:30:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.25 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.26 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -1371,7 +1371,10 @@ Achtung:
 
 ### AutoLoad Sub
 sub BBBikeHeavy::reload_all {
+    my(%args) = @_;
+
     if ($BBBikeLazy::mode) {
+	# XXX files reloaded here are not in @changed_files, so nets cannot be rebuild!
 	bbbikelazy_reload();
     }
 
@@ -1427,12 +1430,37 @@ sub BBBikeHeavy::reload_all {
 	}
     }
 
-    if (!$edit_mode_flag) { # be fast in edit mode, do not rebuild net
+    if (!$edit_mode_flag || $args{force}) { # be fast in edit mode, do not rebuild nets
+
+	my %changed_files = map {($_,1)} @changed_files;
+
+	if ($handicap_s_net) {
+	    for my $src ($handicap_s_net->sourcefiles) {
+		if (exists $changed_files{$src}) {
+		    warn "Need to rebuild handicap net (because of $src)...\n" if $verbose;
+		    undef $handicap_s_net;
+		    make_handicap_net();
+		    last;
+		}
+	    }
+	}
+
+	if ($qualitaet_s_net) {
+	    for my $src ($qualitaet_s_net->sourcefiles) {
+		if (exists $changed_files{$src}) {
+		    warn "Need to rebuild qualitaet net (because of $src)...\n" if $verbose;
+		    undef $qualitaet_s_net;
+		    make_qualitaet_net();
+		    last;
+		}
+	    }
+	}
+
 	my $need_to_rebuild_net = 0;
 	if ($net) {
-	    my %changed_files = map {($_,1)} @changed_files;
 	    for my $net_file ($net->sourcefiles) {
 		if (exists $changed_files{$net_file}) {
+		    warn "Need to rebuild net (because of $net_file)...\n" if $verbose;
 		    $need_to_rebuild_net = 1;
 		    last;
 		}
