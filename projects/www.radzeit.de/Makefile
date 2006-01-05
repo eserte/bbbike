@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.73 2005/12/23 22:58:36 eserte Exp $
+# $Id: Makefile,v 1.74 2006/01/05 00:11:59 eserte Exp $
 #
 
 # Targets:
@@ -83,6 +83,7 @@ DEPLOY_LOCAL_DATA_TARGETS=	prepare-bbbike-data \
 SSH_PROG_AND_ARGS?=	ssh -2
 RSYNC_PROG?=	rsync
 RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --exclude-from .rsync.exclude
+RSYNC_ARGS_MS=	${RSYNC_ARGS:S/.rsync.exclude/\/tmp\/mapserver.rsync.exclude/}
 RSYNC_DEST?=	${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_HOST}:${BBBIKE_RADZEIT_APACHE_DIR}
 RSYNC_SRCDEST?=	. ${RSYNC_DEST}
 
@@ -136,6 +137,7 @@ TARGET=radzeit.herceg.de
       make(prepare-bbbike-dist-data) || \
       make(rsync)		     || \
       make(rsync-bbbike-data)	     || \
+      make(rsync-mapserver)	     || \
       make(rsync-temp-blockings)     || \
       make(rsync-routopedia)	     || \
       make(clean-cache-files-on-remote)
@@ -204,9 +206,14 @@ rsync-bbbike:
 	@echo NYI
 	false
 
-rsync-mapserver:
-	@echo NYI
-	false
+rsync-mapserver:	check-rsync-ok check-rsync-mapserver /tmp/mapserver.rsync.exclude
+	${RSYNC_PROG} ${RSYNC_ARGS_MS} ${CURDIR}/public/mapserver/ ${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_HOST}:${BBBIKE_RADZEIT_APACHE_DIR}/${HTDOCS}/mapserver/
+
+/tmp/mapserver.rsync.exclude: .rsync.exclude
+	perl -pe 's{^public/mapserver/}{}' $> > $@
+
+check-rsync-mapserver:
+	fgrep -q -s 'SHAPEPATH "/var/www/domains/radzeit.de/www//public/mapserver/brb/data"' ${CURDIR}/$(HTDOCS)/mapserver/brb/brb.map
 
 RSYNC_ROUTOPEDIA_RULES=	do-rsync-routopedia \
 			show-rsync-message

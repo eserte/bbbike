@@ -11548,7 +11548,9 @@ sub show_info {
 			      -command => sub { $info_top->destroy },
 			     )->pack(-fill => "x");
 	    toplevel_checker($info_top);
-	}
+	} else {
+	    $info_top = $toplevel{$tl_tag}
+	};
 	
 	my $current_link_url;
 	my $link_menu = $info_text->Menu(-title => M"Linkmenü",

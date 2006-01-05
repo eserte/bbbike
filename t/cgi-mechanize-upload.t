@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize-upload.t,v 1.4 2005/03/23 22:01:56 eserte Exp $
+# $Id: cgi-mechanize-upload.t,v 1.5 2006/01/04 08:48:40 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -10,7 +10,7 @@ use strict;
 
 BEGIN {
     if (!eval q{
-	use WWW::Mechanize 1.08; # images method
+	use WWW::Mechanize 1.12; # images method (1.08), _image_from_token fix (1.12)
 	use Test::More;
 	1;
     }) {
@@ -26,33 +26,6 @@ use lib ("$FindBin::RealBin",
 	);
 use BBBikeTest;
 use File::Temp qw(tempfile);
-
-# See also: https://rt.cpan.org/NoAuth/Bug.html?id=9268
-sub WWW::Mechanize::_image_from_token {
-    my $self = shift;
-    my $token = shift;
-    my $parser = shift;
-
-    my $tag = $token->[0];
-    my $attrs = $token->[1];
-
-    if ( $tag eq "input" ) {
-        my $type = $attrs->{type} or return;
-        return unless $type =~ /^(?:submit|image)$/;
-    }
-
-    require WWW::Mechanize::Image;
-    return
-        WWW::Mechanize::Image->new({
-            tag     => $tag,
-            base    => $self->base,
-            url     => $attrs->{src},
-            name    => $attrs->{name},
-            height  => $attrs->{height},
-            width   => $attrs->{width},
-            alt     => $attrs->{alt},
-        });
-}
 
 my @gps_types = ("trk", "ovl", "bbr",
 		 "bbr-generated", "ovl-generated", "trk-generated",

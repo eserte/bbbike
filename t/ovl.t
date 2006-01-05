@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: ovl.t,v 1.5 2006/01/02 22:38:21 eserte Exp $
+# $Id: ovl.t,v 1.6 2006/01/04 08:40:14 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -82,7 +82,7 @@ for my $basename (qw(mv01 mv02 mv04 mv08)) {
 
 for my $ovl_file (@ovl_files) {
     my $basename = basename $ovl_file;
-    diag $basename;
+    diag $basename if $v;
 
     my $ovl = GPS::Ovl->new;
  SKIP: {
