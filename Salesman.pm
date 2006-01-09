@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Salesman.pm,v 1.15 2005/11/16 00:13:47 eserte Exp $
+# $Id: Salesman.pm,v 1.16 2006/01/08 20:17:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2003 Slaven Rezic. All rights reserved.
@@ -316,3 +316,6 @@ if (defined &Algorithm::Permute::permute) {
 1;
 
 __END__
+
+# More references to TSP:
+# - http://www.jochen-pleines.de/index.htm

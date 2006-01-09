@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.8 2005/12/16 08:47:06 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.8 2005/12/16 08:47:06 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -44,7 +44,7 @@ use WWWBrowser;
 my $api_key = "pqCq16BQFHJ5jvhg6osutPlLWeSkd9ke";
 
 sub register {
-    $main::info_plugins{__PACKAGE__} =
+    $main::info_plugins{__PACKAGE__ . ""} =
 	{ name => "Luise-Berlin, Straßenlexikon",
 	  callback => sub { launch_street_url(@_) },
 	};

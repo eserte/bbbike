@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: read-gps-formats.t,v 1.5 2005/12/28 19:04:40 eserte Exp $
+# $Id: read-gps-formats.t,v 1.6 2006/01/07 14:25:58 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -42,7 +42,8 @@ my @gps_formats       = (
 			 
 			 ["$miscdir/ovl_resources/ulamm/berlin-dresden1.ovl", "Ovl", "ASCII"],
 			 ["$miscdir/ovl_resources/d2_obdg.ovl", "Ovl", "Binary 2.0"],
-			 ["$miscdir/ovl_resources/various_from_net/bb02.ovl", "Ovl", "Binary 3.0"],
+			 ## Other ovl files tested seperately in ovl.t
+			 #["$miscdir/ovl_resources/various_from_net/bb02.ovl", "Ovl", "Binary 3.0"],
 			 # TODO: ["$miscdir/ovl_resources/various_from_net/10_um_die_hohe_reuth.ovl", "Ovl", "Binary 4.0"],
 			);
 my @strassen_formats  = (

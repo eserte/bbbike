@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.25 2005/11/08 23:59:51 eserte Exp $
+# $Id: Makefile,v 1.28 2006/01/09 00:33:10 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -20,16 +20,16 @@ small-berlinmap:
 	cp -f /tmp/berlin_small_hi.xpm .
 	chmod ogu+r berlin_small*.*
 
-favicon.ico:	/tmp/bbbike_favicon1.ppm /tmp/bbbike_favicon2.ppm
-	ppmtowinicon -andppms -output /tmp/favicon.ico~ \
-	    /tmp/bbbike_favicon1.ppm /tmp/bbbike_favicon2.ppm
+favicon.ico:	/tmp/bbbike_favicon1.ppm /tmp/bbbike_favicon2.pgm
+	ppmtowinicon -andpgms -output /tmp/favicon.ico~ \
+	    /tmp/bbbike_favicon1.ppm /tmp/bbbike_favicon2.pgm
 
-srtbike.ico:	/tmp/bbbike_favicon1.ppm /tmp/bbbike_favicon2.ppm
+srtbike.ico:	/tmp/bbbike_favicon1.ppm /tmp/bbbike_favicon2.pgm
 	giftopnm srtbike32.gif > /tmp/bbbike_favicon3.ppm
-	ppmcolormask white /tmp/bbbike_favicon3.ppm > /tmp/bbbike_favicon4.ppm
-	ppmtowinicon -andppms -output /tmp/srtbike.ico~ \
-	    /tmp/bbbike_favicon1.ppm /tmp/bbbike_favicon2.ppm \
-	    /tmp/bbbike_favicon3.ppm /tmp/bbbike_favicon4.ppm
+	ppmcolormask white /tmp/bbbike_favicon3.ppm | ppmtopgm > /tmp/bbbike_favicon4.pgm
+	ppmtowinicon -andpgms -output /tmp/srtbike.ico~ \
+	    /tmp/bbbike_favicon1.ppm /tmp/bbbike_favicon2.pgm \
+	    /tmp/bbbike_favicon3.ppm /tmp/bbbike_favicon4.pgm
 
 bbbike_splash.xpm: srtbike.xpm
 	../miscsrc/splash_logo.pl
@@ -45,8 +45,8 @@ bbbike_splash_tkbabybike.xpm: srtbike.xpm
 /tmp/bbbike_favicon1.ppm:
 	giftopnm srtbike16.gif > /tmp/bbbike_favicon1.ppm
 
-/tmp/bbbike_favicon2.ppm:
-	ppmcolormask white /tmp/bbbike_favicon1.ppm > /tmp/bbbike_favicon2.ppm
+/tmp/bbbike_favicon2.pgm:
+	ppmcolormask white /tmp/bbbike_favicon1.ppm | ppmtopgm > /tmp/bbbike_favicon2.pgm
 
 .SUFFIXES: .gif .xpm .png .wbmp .jpg
 
@@ -135,6 +135,10 @@ png-to-gif:	\
 		legend_narrowpassage.gif \
 		legend_oneway.gif \
 		synagogue.gif \
+		bundesstrasse_table_32.gif \
+		bab_table_32.gif \
+		bundesstrasse_table_16.gif \
+		bab_table_16.gif \
 
 png-to-xpm:	\
 		ampel.xpm \
@@ -192,3 +196,15 @@ png-to-jpg:	\
 
 
 #XXX .PHONY: favicon.ico srtbike.ico
+
+# Creation of bundesstrasse_table_32.png:
+#   Fetched http://upload.wikimedia.org/wikipedia/commons/8/80/Bundesstra%C3%9Fe_1_number.svg
+#     convert -background none -scale 32 Bundesstraﬂe_1_number.svg /tmp/bundesstrasse_table_32.png
+#   Removed the number with GIMP
+
+# Creation of bab_table_32.png:
+#   Fetched http://upload.wikimedia.org/wikipedia/commons/a/a6/Bundesautobahn_10_number.svg
+#     convert -background none -scale 32 Bundesautobahn_10_number.svg  /tmp/bab_table_32.png
+#   Removed the number with GIMP
+
+# 16 version: same procedure, only with -scale 16

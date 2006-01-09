@@ -360,14 +360,7 @@ userdel	q4 -34232,-10832 -34337,-11047
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1136588400,
-         'text' => 'L 074 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung; Umleitung 04.01.2006-06.01.2006 ',
-         'from' => 1136242800,
-         'data' => 'userdel	2 15682,-26971 15960,-26906
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1137798000,
          'text' => 'L 074 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung; Umleitung 19.01.2006-20.01.2006 ',
@@ -378,7 +371,7 @@ userdel	q4 -34232,-10832 -34337,-11047
        },
        {
          'until' => 1151704800,
-         'text' => 'B 122 Schloßstr. OD Rheinsberg, zw. Königstr. und Lange Str. Kanalarbeiten Vollsperrung; 02.11.2005-30.06.2006 ',
+         'text' => 'B 122 Schloßstr. OD Rheinsberg, zw. Königstr. und Lange Str. Kanalarbeiten halbseitige Sperrung; 02.11.2005-30.06.2006 ',
          'from' => 1130799600,
          'data' => 'userdel	q4 -25679,76561 -25764,76324
 ',

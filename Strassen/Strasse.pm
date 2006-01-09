@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.21 2005/11/20 17:36:44 eserte Exp $
+# $Id: Strasse.pm,v 1.22 2006/01/08 23:51:08 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -195,6 +195,12 @@ sub parse_street_type_nr {
     my($type,$nr) = $strname =~ /\((B|L|BAB|F|R|ZR|RR)\s*([\d\.]+)\)/;
     if (!defined $type) {
 	($type,$nr) = $strname =~ /^(B|L|BAB|F|R|ZR|RR)\s*([\d\.]+)(?::|$|\s*\()/;
+	if (!defined $type) { # B101n
+	    ($type,$nr) = $strname =~ /\((B|L)\s*(\d+(?:n|neu|a|b))\)/;
+	    if (!defined $type) {
+		($type,$nr) = $strname =~ /^(B|L)\s*(\d+(?:n|neu|a|b))(?::|$|\s*\()/;
+	    }
+	}
     }
     ($type, $nr);
 }

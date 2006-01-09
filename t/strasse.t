@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strasse.t,v 1.10 2005/11/20 17:36:52 eserte Exp $
+# $Id: strasse.t,v 1.11 2006/01/08 23:51:22 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -93,8 +93,29 @@ push @beautify_landstrasse,
     die $@ if $@;
 }
 
+my @street_type_nr =
+    (["B1: Potsdam - Brandenburg",	"B", "1"],
+     ["B96a: Birkenwerder - Berlin",	"B", "96a"],
+     ["B107 (Pritzwalk - Genthin)",	"B", "107"],
+     ["Müncheberg - Prötzel (B168)",	"B", "168"],
+     ["BAB100",				"BAB", "100"],
+     ["BAB100 (Britzer Tunnel)",	"BAB", "100"],
+     ["B101n",				"B", "101n"],
+     #["Ortsumfahrung Müncheberg (B1/B5)" -> ?
+     ["B96neu",				"B", "96neu"],
+     ["F1 (Potsdam)",			"F", "1"],
+     ["F2.2 (Potsdam)",			"F", "2.2"],
+     ["Straße 645",			undef, undef],
+     ["Straße des 17. Juni",		undef, undef],
+     ["(Kolonie Bornholm 1 und 2)",	undef, undef],
+     ["Straße 229 (Mariendorf)",	undef, undef],
+    );
+
 my $strip_bezirk_tests = 6;
-plan tests => scalar(@split_street_citypart) + scalar(@beautify_landstrasse)*2 + $strip_bezirk_tests;
+plan tests => (scalar(@split_street_citypart) +
+	       scalar(@beautify_landstrasse)*2 +
+	       scalar(@street_type_nr)*2 +
+	       $strip_bezirk_tests);
 
 for my $s (@split_street_citypart) {
     my($str, @expected) = ($s->[0], @{ $s->[1] });
@@ -132,5 +153,12 @@ is(Strasse::strip_bezirk("Dudenstr. (foobar)"), "Dudenstr.",
 is(Strasse::strip_bezirk_perfect("Dudenstr. (foobar)", $city),
    "Dudenstr. (foobar)",
    "non-bezirk not stripped");
+
+for my $s (@street_type_nr) {
+    my($str, $type, $nr) = @$s;
+    my($got_type, $got_nr) = Strasse::parse_street_type_nr($str);
+    is($got_type, $type, "Type for $str");
+    is($got_nr, $nr, "Number for $str");
+}
 
 __END__

@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.19 2005/11/17 23:36:24 eserte Exp $
+# $Id: LogTracker.pm,v 1.20 2006/01/09 00:00:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -30,9 +30,9 @@ use vars qw($VERSION $lastcoords
             @types %layer @colors $colors_i %accesslog_data
 	    $do_search_route %show
 	    $error_checks $ua $safe
-            $remoteuser $remotehost $logfile $tracking $tail_pid $bbbike_cgi
+            $remoteuser $remotehost $logfile $ssh_cmd $tracking $tail_pid $bbbike_cgi
 	    $last_parselog_call);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
 
 # XXX replace all %layer, %show etc. with @layer, @show...
 use constant ROUTES => 0;
@@ -50,6 +50,8 @@ $show{routes} = 1
     if !defined $show{routes};
 $show{mapserver} = 1
     if !defined $show{mapserver};
+$ssh_cmd = "ssh"
+    if !defined $ssh_cmd;
 
 @types = qw(routes mapserver);
 
@@ -110,19 +112,28 @@ sub add_button {
               [Button => "Set preferences",
                -command => sub {
                    my $t = $main::top->Toplevel(-title => "LogTracker");
+		   $t->gridColumnconfigure($_, -weight => 1) for 0..1;
                    require Tk::PathEntry;
 		   my $e;
                    Tk::grid($t->Label(-text => "Logfile"),
                             $e = $t->PathEntry(-textvariable => \$logfile),
+			    -sticky => "ew",
                            );
 		   Tk::grid($t->Label(-text => "Remote SSH user"),
 			    $e = $t->Entry(-textvariable => \$remoteuser),
+			    -sticky => "ew",
                            );
 		   Tk::grid($t->Label(-text => "Remote host"),
 			    $e = $t->Entry(-textvariable => \$remotehost),
+			    -sticky => "ew",
+                           );
+		   Tk::grid($t->Label(-text => "SSH command"),
+			    $e = $t->Entry(-textvariable => \$ssh_cmd),
+			    -sticky => "ew",
                            );
                    Tk::grid($t->Label(-text => "BBBike CGI"),
                             $t->PathEntry(-textvariable => \$bbbike_cgi),
+			    -sticky => "ew",
                            );
 		   my $return = sub {
 		       stop_parse_tail_log();
@@ -410,9 +421,15 @@ sub _tail_log {
 	exec "tail", "-f", $logfile;
 	die $!;
     } else {
-	exec "ssh", "-n", (defined $remoteuser && $remoteuser ne ""
-			   ? ("-l", $remoteuser) : ()
-			  ), $remotehost, "tail", "-f", $logfile;
+	my @ssh_cmd;
+	if ($ssh_cmd =~ /\s+/) {
+	    @ssh_cmd = split /\s+/, $ssh_cmd;
+	} else {
+	    @ssh_cmd = $ssh_cmd;
+	}
+	exec @ssh_cmd, "-n", (defined $remoteuser && $remoteuser ne ""
+			      ? ("-l", $remoteuser) : ()
+			     ), $remotehost, "tail", "-f", $logfile;
 	die $!;
     }
 }
@@ -441,7 +458,7 @@ sub _open_log {
 	    or main::status_message(Mfmt("Kann die Datei %s nicht öffnen: %s",
 					 $logfile, $!), "die");
     } else {
-	open($fh, "ssh " . (defined $remoteuser && $remoteuser ne ""
+	open($fh, "$ssh_cmd " . (defined $remoteuser && $remoteuser ne ""
 			    ? "-l $remoteuser " : "")
 	     . "$remotehost cat $logfile | ");
     }

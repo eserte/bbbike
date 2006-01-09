@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.115 2005/12/11 22:35:32 eserte Exp $
+# $Id: Makefile.PL,v 1.116 2006/01/09 00:45:30 eserte Exp $
 
 use 5.005;
 
@@ -56,6 +56,8 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
   [qw/Tk::Stderr	0	all	0	gui/,
    'optionales Redirect von Fehlermeldungen in ein Tk-Fenster'],
   [qw/Tk::DateEntry	1.38	all	0	gui/],
+  [qw/Tk::PNG		0	all	0	gui/,
+   'Für Icons mit besserer Alpha-Unterstützung'],
 
   [qw/LWP::UserAgent	0	all	2	www/,
    'für die WWW-Verbindungen (z.B. Wetterbericht)'],

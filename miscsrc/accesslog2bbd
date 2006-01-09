@@ -1,0 +1,74 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: accesslog2bbd,v 1.1 2006/01/08 10:56:07 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2006 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+# Beispiel:
+# tail -r ~/www/log/radzeit.de-access_log | grep -i sylter | grep -i windows | ~/src/bbbike/miscsrc/accesslog2bbd > /tmp/a.bbd
+
+use strict;
+use CGI;
+use LWP::UserAgent;
+use Safe;
+
+$| = 1;
+
+my $apache_rx = qr{^      (\S+) # host or ip
+                   \s+    (\S+) # user ?
+                   \s+    (\S+) # ?
+                   \s+ \[ (\d{2})/([^/]+)/(\d{4}) # date
+                       :  (\d{2}):(\d{2}):(\d{2}) # time
+                   \s+    ([+-]\d+) \] # timezone
+                   \s+ "  (\S+) # method
+                   \s+    (\S+) # url
+                   \s+    (\S+) " # protocol
+                   \s+    (\d+) # code
+                   \s+    (\S+) # bytes or -
+                  }x;
+my @apache_fields = qw(host user unknown y m d H M D timezone method url protocol code bytes);
+
+my $url_prefix = "http://radzeit";
+
+my $ua = LWP::UserAgent->new;
+my $cpt = Safe->new;
+
+while(<>) {
+    chomp;
+    my(@fields) = $_ =~ $apache_rx;
+    next if !@fields; # can't parse?
+    my %fields;
+    @fields{ @apache_fields } = @fields;
+    if ($fields{url} =~ m{^(.*)\?(.*)}) {
+	my($plain_url, $qs) = ($1, $2);
+	my $q = CGI->new($qs);
+	if ($q->param("startc") && $q->param("zielc") && $q->param("pref_seen")) {
+	    $q->param("output_as", "perldump");
+	    my $url = $url_prefix . $plain_url . "?" . $q->query_string;
+	    warn "$url...\n";
+	    my $resp = $ua->get($url);
+	    if (!$resp->is_success) {
+		warn $resp->status_line;
+		next;
+	    }
+	    my $data = $cpt->reval($resp->content);
+	    if (!$data) {
+		warn "Can't get data from $url, skipping...\n";
+		next;
+	    }
+	    my $path = $data->{Path};
+	    print "$url\tX @$path\n";
+	}
+    }    
+}
+
+__END__

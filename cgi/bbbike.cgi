@@ -2766,9 +2766,9 @@ sub search_coord {
 	for my $q_cat (keys %handicap_speed) {
 	    $penalty->{$q_cat} = $velocity_kmh/$handicap_speed{$q_cat};
 	}
-	for my $q (0 .. 3) {
+	for my $q (0 .. 4) {
 	    my $q_cat = "q$q";
-	    $penalty->{$q_cat} = 1 if !exists $penalty->{$q_cat};
+	    $penalty->{$q_cat} = 1 if !exists $penalty->{$q_cat} || $penalty->{$q_cat} < 1;
 	}
 	$extra_args{Handicap} =
 	    {Net => $handicap_net,
@@ -6061,3 +6061,4 @@ terms of the GNU General Public License, see the file COPYING.
 bbbike(1).
 
 =cut
+

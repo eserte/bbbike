@@ -3496,7 +3496,7 @@ EOF
      },
      { from  => 1130799600, # 2005-11-01 00:00
        until => 1151704800, # 2006-07-01 00:00
-       text  => 'B 122 Schloßstr. OD Rheinsberg, zw. Königstr. und Lange Str. Kanalarbeiten Vollsperrung; 02.11.2005-30.06.2006 ',
+       text  => 'B 122 Schloßstr. OD Rheinsberg, zw. Königstr. und Lange Str. Kanalarbeiten halbseitige Sperrung; 02.11.2005-30.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -25679,76561 -25764,76324

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.137 2006/01/04 01:31:02 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.138 2006/01/06 02:00:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1061,8 +1061,7 @@ sub set_coord_interactive {
 
     {
 	# combined:
-	# www.berliner-stadtplan.com, www.berlinonline.de, old Stadtplan-
-	# dienst
+	# www.berliner-stadtplan.com, www.berlinonline.de
 
 	my $f = $t->Frame->pack(-anchor => "w", -fill => "x");
 	$f->Label(-text => M"Stadtplan-URL")->pack(-side => "left");
@@ -1082,26 +1081,21 @@ sub set_coord_interactive {
 	$f->Button
 	    (-text => M"Setzen",
 	     -command => sub {
+		 my($x_ddd, $y_ddd);
 		 if (0 && $url =~ m{gps=(\d+)%7C(\d+)}) {
 		     # XXX passt nicht ...
 		     my($x, $y) = ($1, $2);
 		     require Karte::Polar;
-		     my $x_ddd = 13 + $x/10000;
-		     my $y_ddd = 52 + $y/10000;
-warn "$x $y $x_ddd $y_ddd";
-		     my($tx,$ty) = transpose($Karte::Polar::obj->map2standard($x_ddd, $y_ddd));
-		     mark_point('-x' => $tx, '-y' => $ty,
-				-clever_center => 1);
+		     $x_ddd = 13 + $x/10000;
+		     $y_ddd = 52 + $y/10000;
+		     warn "$x $y $x_ddd $y_ddd";
 		 } elsif ($url =~ m{x_wgs/(.*?)/y_wgs/(.*?)/}    ||
 			  $url =~ m{x_wgs=(.*?)[&;]y_wgs=([\.\d]+)}
 			 ) {
 		     my($x, $y) = ($1, $2);
 		     require Karte::Polar;
-		     my $x_ddd = Karte::Polar::dmm2ddd(13, $x);
-		     my $y_ddd = Karte::Polar::dmm2ddd(52, $y);
-		     my($tx,$ty) = transpose($Karte::Polar::obj->map2standard($x_ddd, $y_ddd));
-		     mark_point('-x' => $tx, '-y' => $ty,
-				-clever_center => 1);
+		     $x_ddd = Karte::Polar::dmm2ddd(13, $x);
+		     $y_ddd = Karte::Polar::dmm2ddd(52, $y);
 		 } elsif ($url =~ /ADR_ZIP=(\d+)&ADR_STREET=(.+?)&ADR_HOUSE=(.*)/) {
 		     my($zip, $street, $hnr) = ($1, $2, $3);
 		     local @INC = @INC;
@@ -1122,8 +1116,19 @@ warn "$x $y $x_ddd $y_ddd";
  		     $coord_menu->setOption('polar'); # XXX $Karte::map{'polar'}->name); #XXX should be better in Tk
  		     $set_sub->(1);
 
+		 } elsif ($url =~ /params=(\d+)_(\d+)_([\d\.]+)_([NS])_(\d+)_(\d+)_([\d\.]+)_([EW])/) {
+		     $y_ddd = $1 + $2/60 + $3/3600;
+		     $y_ddd *= -1 if $4 eq 'S';
+		     $x_ddd = $5 + $6/60 + $7/3600;
+		     $x_ddd *= -1 if $8 eq 'W';
 		 } else {
 		     status_message("Can't parse <$url>", "die");
+		 }
+
+		 if (defined $x_ddd && defined $y_ddd) {
+		     my($tx,$ty) = transpose($Karte::Polar::obj->map2standard($x_ddd, $y_ddd));
+		     mark_point('-x' => $tx, '-y' => $ty,
+				-clever_center => 1);
 		 }
 	     })->pack(-side => "left");
     }

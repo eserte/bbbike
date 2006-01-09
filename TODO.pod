@@ -14,6 +14,23 @@ Legend:
 
 =over
 
+=item * (M2)
+
+Kleinere Version für Straßennummerierungsschilder (+ Font) erzeugen.
+
+=item * (H5)
+
+Die Optimierungsparameter des CGIs (textuell) in die Tk-Version
+sollten verwendet werden können. Plan: Geschwindigkeitsbasierte
+Parameter und die E<quot>textuellenE<quot> Parameter werden getrennt
+(entweder eins oder das andere); die Faktoren werden vom CGI
+übernommen. Vor dem Aufrufen der Suche muss entweder das eine oder
+andere genommen werden. Evtl. Modul schreiben, wo die Parameter für
+CGI und Tk-Version ge-sharet werden können (-> make cgidist anpassen?
+wird das noch für die SF-Version verwendet? Vielleicht sollte die
+SF-Version grundsätzlich alle Module außer Tk/* bekommen?). Manuelle
+Tests machen, ob bei beiden das gleiche herauskommt.
+
 =item * (M4)
 
 Konverter vom E<quot>TouratechE<quot>-Format nach bbd schreiben. Beispieldatei:
@@ -2252,6 +2269,10 @@ area (in a balloon or additional label/toplevel).
 =head1 MapServer
 
 =over
+
+=item * (M2)
+
+bundesstrasse_table_32.png auch hier verwenden.
 
 =item * (H1)
 

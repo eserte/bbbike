@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.218 2005/12/31 19:21:46 eserte Exp eserte $
+# $Id: bbbike,v 3.220 2006/01/09 00:45:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.218 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.220 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -279,13 +279,15 @@ foreach (@Radwege::category_order) {
         if defined $Radwege::category_code{$_};
 }
 $str_nr_draw{'comm-route'} = 1;
+$str_nr_draw{'sBAB'} = 1; # XXX sollte vielleicht umschaltbar sein?
 
 %tag_group = # group related tags (for stacking)
   ('str_s' => ['s-out', 'gr', 'rw',
 	       's-NN', 's-N', 's-H', 's-HH', 's-B', 's-BAB', 'sBAB-BAB',
 	       'comm', (map { "comm-$_" } @comments_types),
 	       'nl', 'qs', 'hs', 'mount',
-	       's-label-bg', 's-label', 'hoehe', 'vf-bg',
+	       's-label-bg', 'sBAB-label-bg', 's-label', 'sBAB-label',
+	       'hoehe', 'vf-bg',
 	       'sperre', 'temp_sperre_s', 'temp_sperre',
 	       'delnet', 'pl-fg', 'lsa-bg', 'vf-fg', 'lsa-fg'],
    'str_l' => ['l-out', 'l', 'comm',
@@ -5241,7 +5243,7 @@ sub define_item_attribs {
 	 'q3' => [M"auf ca. 13 km/h", undef, undef,
 		  M"Beeinträchtigungen auf ca. 13 km/h"],
 	 'q4' => [M"auf Schrittgeschwidigkeit", undef, undef,
-		  M"Beeinträchtigungen auf Schrittgeschwidigkeit"],
+		  M"Beeinträchtigungen auf Schrittgeschwindigkeit"],
 
 	 '6'  => [M"Groß- oder Millionenstadt", M"Groß- oder Millionenstädte", undef],
 	 '5'  => [M"Großstadt", M"Großstädte", undef],
@@ -5311,7 +5313,7 @@ sub define_item_attribs {
 	 qw(comm-route-label-bg comm-route-label qs hs ql hl mount nl delnet
 	    O o p pl-fg lsas lsa-bg lsa-fg lsas-t
 	    vf-fg pp kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
-	    s-label-bg s-label l-label-bg l-label
+	    s-label-bg sBAB-label-bg s-label sBAB-label l-label-bg l-label
 	    personal-fg personal-label ovl
 	    gpsanimrect zoomrect),
 	);
@@ -5713,6 +5715,7 @@ sub generate_plot_functions {
 			# no $cat_rueck support for names
 			if ($str_name_draw{$abk}
 			    && (($abk =~ /^[ls]/ &&
+				 $abk ne 'sBAB' &&
 				 ($cat_hin =~ /^[BH]/ ||
 				  ($lazy_str{$abk} && $scale >= 10)
 				 )) || 0) # nur Hauptstraßen zeichnen (wg. Performance
@@ -5824,32 +5827,7 @@ EOF
 		my $anchor = ($2 ? $2 : "c");
 		my($base) = ($photo =~ m|/| ? $photo =~ /([^\/]+)$/ : $photo);
 		$base = "p_$base";
-		my $images = ($top->{'MapImages'} ||= {});
-		my $p = $images->{$base};
-		if (!$p) {
-		    eval {
-			#warn "Try $photo...\n";
-			$p = $c->Photo(-file => $photo);
-		    };
-		    if (!$p) {
-			eval {
-			    my $photo = Tk::findINC($photo);
-			    #warn "Try $photo...\n";
-			    $p = $c->Photo(-file => $photo)
-				if defined $photo;
-			};
-			if (!$p) {
-			    eval {
-				my $dir = dirname($p_file{$abk});
-			        #warn "Try $dir/$photo...\n";
-				$p = $c->Photo(-file => "$dir/$photo");
-			    };
-			}
-		    }
-		    if ($p) {
-			$images->{$base} = $p;
-		    }
-		}
+		my $p = get_image_for_p($base, $photo);
 		if ($p) {
 		    $c->createImage($x, $y, -image => $p,
 				    -anchor => $anchor,
@@ -6610,7 +6588,9 @@ sub draw_street_numbers {
 	    my $coord_i = shift;
 	    my($midx,$midy) = Strassen::Util::middle(@{$coordlist_ref}[$coord_i..$coord_i+3]);
 	    my $item = $c->createText
-		($midx,$midy,-text => ($type =~ /^(B|BAB)$/ ? "" : $type) . $nr,
+		($midx,$midy,
+		 -text => ($type =~ /^(B|BAB)$/ ? "" : $type) . $nr,
+		 -font => $scale < 0.5 ? $font{'tiny'} : $font{'normal'},
 		 -fill => ($do_round          ? 'white'  :
 			   $type eq 'BAB'     ? 'white'  :
 			   $type =~ /^(F|R)$/ ? 'green4' :
@@ -6626,6 +6606,38 @@ sub draw_street_numbers {
 		     -width => 1,
 		     -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
 		    );
+	    } elsif ($devel_host && $type eq 'B') {
+		# XXX make public if it works well (size ok for non-X11-Fonts?)
+		my $size = $scale < 0.5 ? 16 : 32;
+		my $p = get_image("strnr_B$size", "bundesstrasse_table_$size.png"); # prefer png because of alpha
+		if ($p) {
+		    # Manually corrected (-1/-1) to look with my standard font
+		    # (lucida sans ...)
+		    $r_item = $c->createImage(int(($bbox[2]+$bbox[0])/2) - ($size > 16 ? 1 : 0),
+					      int(($bbox[3]+$bbox[1])/2) - ($size > 16 ? 1 : 0),
+					      -image => $p,
+					      -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
+					     );
+		} else {
+		    # XXX fallback to createRectangle below
+		    warn "Cannot get image for strnr_B32";
+		}
+	    } elsif ($devel_host && $type eq 'BAB') {
+		# XXX make public if it works well (size ok for non-X11-Fonts?)
+		my $size = $scale < 0.5 ? 16 : 32;
+		my $p = get_image("strnr_BAB$size", "bab_table_$size.png"); # prefer png because of alpha
+		if ($p) {
+		    # Manually corrected (-1/-1) to look with my standard font
+		    # (lucida sans ...)
+		    $r_item = $c->createImage(int(($bbox[2]+$bbox[0])/2) - ($size > 16 ? 1 : 0),
+					      int(($bbox[3]+$bbox[1])/2) - ($size > 16 ? 1 : 0),
+					      -image => $p,
+					      -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
+					     );
+		} else {
+		    # XXX fallback to createRectangle below
+		    warn "Cannot get image for strnr_BAB32";
+		}
 	    } else {
 		$r_item = $c->createRectangle
 		    ($bbox[0]-2,$bbox[1]-2,$bbox[2]+2,$bbox[3]+2,
@@ -11799,13 +11811,30 @@ sub show_info {
 	    $linkcount++;
 	}
 
+	{
+	    my(@x) = Karte::Polar::ddd2dms($px);
+	    my(@y) = Karte::Polar::ddd2dms($py);
+	    push @x, $x[0] < 0 ? "W" : "E";
+	    push @y, $y[0] < 0 ? "S" : "N";
+	    my $url = "http://kvaleberg.com/extensions/mapsources/?params=" . join("_", @y, @x) . "_type:landmark_region:DE-BE";
+	    $info_text->insert("end", "Wikipedia Mapsources",
+			       "link$linkcount");
+	    $show_url->($linkcount, $url);
+	    $info_text->insert("end", "\n");
+	    $linkcount++;
+	}
+
 	while(my($key, $plugin) = each %info_plugins) {
 	    $info_text->insert("end", $plugin->{name} . "\n",
 			       "link$linkcount");
 	    $info_text->tagBind
 		("link$linkcount", "<ButtonRelease-1>" => sub {
 		     $plugin->{callback}->(coords => $real_coords,
-					   street => $strname);
+					   street => $strname,
+					   px => $px,
+					   py => $py,
+					   mapscale_scale => $mapscale_scale,
+					  );
 		 });
 	    $linkcount++;
 	}
@@ -13176,7 +13205,11 @@ sub scale_width {
 	my $master = ($c->gettags($item))[2];
 	$master =~ s/^strnr-//;
 	my(@bbox) = $c->bbox($master);
-	$c->coords($item, $bbox[0]-2,$bbox[1]-2,$bbox[2]+2,$bbox[3]+2);
+	if ($c->type($item) eq 'image') {
+	    $c->coords($item, ($bbox[0]+$bbox[2])/2, ($bbox[1]+$bbox[3])/2); # XXX this is duplicated from draw_street_numbers!
+	} else {
+	    $c->coords($item, $bbox[0]-2,$bbox[1]-2,$bbox[2]+2,$bbox[3]+2);
+	}
     }
 
     for my $o_cat (MIN_ORT_CAT .. MAX_ORT_CAT) {
@@ -18006,6 +18039,51 @@ sub set_as_toolwindow {
 	    $win->transient($parent);
         }
     }
+}
+
+sub get_image {
+    my($base, $file) = @_;
+
+    my $images = ($top->{'MapImages'} ||= {});
+    my $p = $images->{$base};
+    if (!$p) {
+	eval {
+	    if ($file =~ /\.png$/ && !exists $INC{"Tk/PNG.pm"}) {
+		require Tk::PNG;
+	    }
+	    if ($file =~ /\.jpe?g$/ && !exists $INC{"Tk/JPEG.pm"} && !exists $INC{"Tk/JPEG/Lite.pm"}) {
+		require Tk::JPEG; # fallback to Tk::JPEG::Lite? XXX
+	    }
+
+	    #warn "Try $file...\n";
+	    $p = $c->Photo(-file => $file);
+	};
+	if (!$p) {
+	    eval {
+		my $file = Tk::findINC($file);
+		#warn "Try $file...\n";
+		$p = $c->Photo(-file => $file)
+		    if defined $file;
+	    };
+	}
+	if ($p) {
+	    $images->{$base} = $p;
+	}
+    }
+    $p;
+}
+
+sub get_image_for_p {
+    my($base, $file, $abk) = @_;
+    my $p = get_image($base, $file);
+    if (!$p) {
+	eval {
+	    my $dir = dirname($p_file{$abk});
+	    #warn "Try $dir/$file...\n";
+	    $p = $c->Photo(-file => "$dir/$file");
+	};
+    }
+    $p;
 }
 
 ## DEBUG_BEGIN
