@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.138 2006/01/06 02:00:07 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.138 2006/01/06 02:00:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1357,6 +1357,23 @@ sub advanced_coord_menu {
     $bpcm->checkbutton(-label => M"Lazy drawing für alle Layer",
 		       -variable => \$lazy_plot,
 		      );
+    $bpcm->cascade(-label => M"Markierungen");
+    {
+	my $c_bpcm = $bpcm->Menu(-title => M"Markierungen");
+	$bpcm->entryconfigure("last", -menu => $c_bpcm);
+	$c_bpcm->command
+	    (-label => M"Verschieben der Markierung",
+	     -command => sub { require BBBikeEdit;
+			       BBBikeEdit::move_marks_by_delta();
+			   },
+	    );
+	$c_bpcm->command
+	    (-label => M"Reset mark_adjusted-Tag",
+	     -command => sub { require BBBikeEdit;
+			       BBBikeEdit::reset_map_adjusted_tag();
+			   },
+	    );
+    }
 ## XXX NYI:
 #    $bpcm->command(-label => M"Neuzeichnen aller Layer",
 #		   -command => sub { reload_all_unconditionally() },
@@ -3497,7 +3514,7 @@ sub active_temp_blockings_for_date_dialog {
 
 sub adjust_map_by_delta {
     if (@coords != 2) {
-	status_message("Genau zwei Koordinaten erwartet!", "error");
+	status_message(M"Genau zwei Koordinaten erwartet!", "error");
 	return;
     }
     my $dx = $coords[1]->[0] - $coords[0]->[0];

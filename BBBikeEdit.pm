@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.93 2005/12/10 23:23:37 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.93 2005/12/10 23:23:37 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -4063,5 +4063,32 @@ sub draw_pp {
     main::DecBusy($top);
     main::status_message($err, "die") if $err;
 }
+
+sub move_marks_by_delta {
+    my @coords = @main::coords;
+    my $c = $main::c;
+
+    if (@coords != 2) {
+	main::status_message(M"Genau zwei Koordinaten erwartet!", "error");
+	return;
+    }
+    my $dx = $coords[1]->[0] - $coords[0]->[0];
+    my $dy = $coords[1]->[1] - $coords[0]->[1];
+ MARKITEMS:
+    for my $i ($c->find("withtag" => "show")) {
+	my @t = $c->gettags($i);
+	for (@t) {
+	    next MARKITEMS if ($_ eq 'show_adjusted');
+	}
+	$c->move($i, $dx, $dy);
+	$c->addtag("show_adjusted", withtag => $i);
+    }
+}
+
+sub reset_mark_adjusted_tag {
+    my $c = $main::c;
+    $c->dtag("show_adjusted");
+}
+
 
 1;

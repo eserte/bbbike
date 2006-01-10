@@ -1095,8 +1095,8 @@ userdel	q4 90062,-33160 90271,-33398
 EOF
      },
      { from  => 1113170400, # 2005-04-11 00:00
-       until => 1135983600, # 2005-12-31 00:00
-       text  => 'L 302; (Schöneicher Str.); OL Schöneiche, Dorfaue und Rüdersdorfer Str. Kanal- und Straßenbau Vollsperrung 12.04.2005-30.12.2005 ',
+       until => 1143842400, # 2006-04-01 00:00
+       text  => 'L 302 Schöneicher Str. OL Schöneiche, Dorfaue und Rüdersdorfer Str. Kanal- und Straßenbau Vollsperrung 12.04.2005-31.03.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 31221,8312 30700,8462
@@ -1354,12 +1354,12 @@ EOF
 userdel	2 10170,12261 10083,12442
 EOF
      },
-     { from  => undef, # 
-       until => 1105275551, # wann wurde das hier aufgehoben?
-       text  => 'Aufgrund eines Motorschaden ist der Fährverkehr zwischen Ketzin und Schmergow bis auf weiteres eingestellt ',
+     { from  => 1136837576, # 2006-01-09 21:12
+       until => 1137016800, # 2006-01-11 23:00
+       text  => 'Fähre (Ketzin) außer Betrieb bis 11.01.2006 23:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -26784,5756 -26840,5684
+userdel	2 -17728,-6975 -17643,-7028
 EOF
      },
      { from  => 1104409481, # 2004-12-30 13:24
@@ -1840,8 +1840,8 @@ userdel	q4; 15838,14319 15873,14046 15880,13535
 EOF
      },
      { from  => 1114466400, # 2005-04-26 00:00
-       until => 1136070000, # 2006-01-01 00:00
-       text  => 'B 1; (Potsdamer Str.); OD Groß Kreutz Kanal- und Straßenbau Vollsperrung 27.04.2005-31.12.2005 ',
+       until => 1146434400, # 2006-05-01 00:00
+       text  => 'B 001 Potsdamer Str. OD Groß Kreutz Kanal- und Straßenbau Vollsperrung 27.04.2005-30.04.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4	-28793,-1618 -31991,-1024
