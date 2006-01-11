@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.220 2006/01/09 00:45:17 eserte Exp $
+# $Id: bbbike,v 3.221 2006/01/11 22:23:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -191,7 +191,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.220 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.221 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -11827,15 +11827,30 @@ sub show_info {
 	while(my($key, $plugin) = each %info_plugins) {
 	    $info_text->insert("end", $plugin->{name} . "\n",
 			       "link$linkcount");
+	    my @args = (coords => $real_coords,
+			street => $strname,
+			px => $px,
+			py => $py,
+			mapscale_scale => $mapscale_scale,
+		       );
 	    $info_text->tagBind
 		("link$linkcount", "<ButtonRelease-1>" => sub {
-		     $plugin->{callback}->(coords => $real_coords,
-					   street => $strname,
-					   px => $px,
-					   py => $py,
-					   mapscale_scale => $mapscale_scale,
-					  );
+		     $plugin->{callback}->(@args);
 		 });
+	    if ($plugin->{callback_3_std}) {
+		$info_text->tagBind
+		    ("link$linkcount", "<Button-3>" => sub {
+			 my $e = $_[0]->XEvent;
+			 $current_link_url = $plugin->{callback_3_std}->(@args);
+			 $link_menu->Post($e->X, $e->Y);
+			 Tk->break;
+		     });
+	    } elsif ($plugin->{callback_3}) {
+		$info_text->tagBind
+		    ("link$linkcount", "<Button-3>" => sub {
+			 $plugin->{callback_3}->(@args, widget => $_[0]);
+		     });
+	    }
 	    $linkcount++;
 	}
 
