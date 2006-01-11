@@ -112,8 +112,8 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1146434400,
-         'text' => 'B 001 Potsdamer Str. OD Groß Kreutz Kanal- und Straßenbau Vollsperrung 27.04.2005-30.04.2006 ',
+         'until' => 1143756000,
+         'text' => 'B 001 Potsdamer Str. OD Groß Kreutz Kanal- und Straßenbau; Vollsperrung 27.04.2005-30.03.2006 ',
          'from' => 1114466400,
          'data' => 'userdel	q4	-28793,-1618 -31991,-1024
 ',

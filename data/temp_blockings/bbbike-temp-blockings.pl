@@ -1840,8 +1840,8 @@ userdel	q4; 15838,14319 15873,14046 15880,13535
 EOF
      },
      { from  => 1114466400, # 2005-04-26 00:00
-       until => 1146434400, # 2006-05-01 00:00
-       text  => 'B 001 Potsdamer Str. OD Groß Kreutz Kanal- und Straßenbau Vollsperrung 27.04.2005-30.04.2006 ',
+       until => 1143756000, # 2006-03-31 00:00
+       text  => 'B 001 Potsdamer Str. OD Groß Kreutz Kanal- und Straßenbau; Vollsperrung 27.04.2005-30.03.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4	-28793,-1618 -31991,-1024
