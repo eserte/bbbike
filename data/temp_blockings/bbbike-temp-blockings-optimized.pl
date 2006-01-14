@@ -41,14 +41,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1137016800,
-         'text' => 'Fähre (Ketzin) außer Betrieb bis 11.01.2006 23:00 Uhr ',
-         'from' => 1136837576,
-         'data' => 'userdel	2 -17728,-6975 -17643,-7028
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -379,14 +372,7 @@ userdel	2 47081,83093 47137,83456
        undef,
        undef,
        undef,
-       {
-         'until' => 1137020400,
-         'text' => 'B 96 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 11.01.2006-11.01.2006 ',
-         'from' => 1136847600,
-         'data' => 'userdel	2 16336,-29511 16379,-29446
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -461,6 +447,15 @@ userdel	q4 -34232,-10832 -34337,-11047
          'data' => 'userdel	2 26313,-13049 26028,-12312
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'until' => 1137301200,
+         'text' => 'Bellevuestraße, Presseball, Straße in beide Richtungen gesperrt, Dauer: 13.01.2006 19:00 Uhr bis 15.01.2006 06:00 Uhr ',
+         'from' => 1137088800,
+         'data' => 'userdel	q4 8462,11538 8172,11679
+',
+         'type' => 'handicap'
        }
      
 );

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.138 2006/01/06 02:00:07 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.139 2006/01/11 22:44:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1109,20 +1109,29 @@ sub set_coord_interactive {
 		     my($x,$y) = transpose(split /,/, $res[0]->{Coord});
 		     mark_point('-x' => $x, '-y' => $y,
 				-clever_center => 1);
-		 } elsif ($url =~ /LL=%2B([0-9.]+)%2B([0-9.]+)/) {
- 		     $valx = $2;
- 		     $valy = $1;
- 		     $coord_output = 'polar';
- 		     $coord_menu->setOption('polar'); # XXX $Karte::map{'polar'}->name); #XXX should be better in Tk
- 		     $set_sub->(1);
-
 		 } elsif ($url =~ /params=(\d+)_(\d+)_([\d\.]+)_([NS])_(\d+)_(\d+)_([\d\.]+)_([EW])/) {
 		     $y_ddd = $1 + $2/60 + $3/3600;
 		     $y_ddd *= -1 if $4 eq 'S';
 		     $x_ddd = $5 + $6/60 + $7/3600;
 		     $x_ddd *= -1 if $8 eq 'W';
 		 } else {
-		     status_message("Can't parse <$url>", "die");
+		     my $handled = 0;
+		     if ($url =~ /LL=%2B([0-9.]+)%2B([0-9.]+)/) {
+			 $valx = $2;
+			 $valy = $1;
+			 $handled++;
+		     } elsif ($url =~ /lat=([0-9.]+).*lon=([0-9.]+)/) {
+			 $valx = $2;
+			 $valy = $1;
+			 $handled++;
+		     }
+		     if ($handled) {
+			 $coord_output = 'polar';
+			 $coord_menu->setOption('polar'); # XXX $Karte::map{'polar'}->name); #XXX should be better in Tk
+			 $set_sub->(1);
+		     } else {
+			 status_message("Can't parse <$url>", "die");
+		     }
 		 }
 
 		 if (defined $x_ddd && defined $y_ddd) {

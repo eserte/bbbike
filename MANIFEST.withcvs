@@ -496,6 +496,7 @@ images/srtbike16.gif
 images/srtbike32.gif
 images/strlist.gif
 images/start.gif
+images/start.png
 images/start_ptr.xbm
 images/start_ptr_mask.xbm
 images/star.gif
@@ -518,6 +519,7 @@ images/ubahn_mini.xpm
 images/usercross.gif
 images/usercross.xpm
 images/via.gif
+images/via.png
 images/via_move_2_ptr.xbm
 images/via_move_2_ptr_mask.xbm
 images/viewmag-.gif
@@ -533,6 +535,8 @@ images/www_ptr_mask.xbm
 images/xy_ptr.xbm
 images/xy_ptr_mask.xbm
 images/ziel.gif
+images/ziel.png
+images/dest.png
 images/ziel_ptr.xbm
 images/ziel_ptr_mask.xbm
 images/abc.xpm
@@ -773,6 +777,7 @@ GPS/t/gpsmandata.t
 Geography/Muenchen_DE.pm
 msg/bbbike/en
 msg/install/en
+cgi/msg/en
 Makefile.PL
 podindex.html
 BBBikeDraw/GDHeavy.pm
@@ -1286,6 +1291,7 @@ miscsrc/gpsman2gpx
 data/.cvsignore
 miscsrc/LuiseBerlin.pm
 miscsrc/AltBerlin.pm
+miscsrc/MultiMap.pm
 miscsrc/yaml2bbd
 data/kneipen.yml
 miscsrc/parse_mapbender_plz.pl

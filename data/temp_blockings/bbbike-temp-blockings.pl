@@ -3526,4 +3526,12 @@ EOF
 userdel	2 27547,-9965 27485,-10246
 EOF
      },
+     { from  => 1137088800, # 2006-01-12 19:00
+       until => 1137301200, # 2006-01-15 06:00
+       text  => 'Bellevuestraße, Presseball, Straße in beide Richtungen gesperrt, Dauer: 13.01.2006 19:00 Uhr bis 15.01.2006 06:00 Uhr ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 8462,11538 8172,11679
+EOF
+     },
     );

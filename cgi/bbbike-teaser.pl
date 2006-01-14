@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.14 2005/12/17 15:39:54 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.15 2006/01/14 00:07:05 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -17,28 +17,47 @@
 # Teaser for bbbike.cgi
 #
 sub teaser {
-    my @teasers_optional  = (
-			     'link',
-			     'wap',
-			     'routen',
-			     #'dobli',
-			    );
-    my @teasers_mandatory = (
-			     $ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
-			     teaser_perltk_newrelease(),
-			     teaser_beta(),
-			     #teaser_perltk(),
-			     teaser_mapserver(),
-			     #teaser_routen(),
-			     #teaser_sternfahrt(),
-			     #teaser_dobli(),
-			    );
-    my $sub = "teaser_" . $teasers_optional[int(rand(@teasers_optional))];
-    my $t = eval $sub . '()';
+    my %teasers_optional;
+    my %teasers_mandatory;
+
+    $teasers_optional{"de"}  = [
+				'link',
+				'wap',
+				'routen',
+				#'dobli',
+			       ];
+    $teasers_mandatory{"de"} = [
+				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
+				teaser_perltk_newrelease(),
+				teaser_beta(),
+				#teaser_perltk(),
+				teaser_mapserver(),
+				#teaser_routen(),
+				#teaser_sternfahrt(),
+				#teaser_dobli(),
+			       ];
+    $teasers_optional{"en"} = [],
+    $teasers_mandatory{"en"} = [
+				$ENV{SERVER_NAME} =~ /radzeit/i ? teaser_radzeit() : (),
+				teaser_perltk_newrelease(),
+				#teaser_perltk(),
+				teaser_mapserver(),
+				#teaser_routen(),
+				#teaser_sternfahrt(),
+				#teaser_dobli(),
+			       ];
+
+    my $use_lang = $lang eq 'en' ? "en" : "de";
+    my $teaser_optional = $teasers_optional{$use_lang}->[int(rand(@{$teasers_optional{$use_lang}}))];
+    my $t;
+    if ($teaser_optional) {
+	my $sub = "teaser_" . $teaser_optional;
+	$t = eval $sub . '()';
+    }
     join("",
 	 map {
 	     '<div class="teaserbox">' . $_ . '</div>'
-	 } (@teasers_mandatory,
+	 } (@{ $teasers_mandatory{$use_lang} },
 	    defined $t ? $t : (),
 	   )
 	);
@@ -53,9 +72,15 @@ EOF
 }
 
 sub teaser_perltk_newrelease {
-    <<EOF;
+    if ($lang eq 'en') {
+    	<<EOF;
+<div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> the offline version of BBBike (Perl/Tk) with interactive map. Runs on Linux, Un*x, Mac OS X and Windows.<br /><a class="new" href="@{[ CGI::escapeHTML($BBBike::LATEST_RELEASE_DISTDIR) ]}" style="font-weight:bold;">NEW: Version @{[ CGI::escapeHTML($BBBike::STABLE_VERSION) ]}</a></div>
+EOF
+} else {
+	<<EOF;
 <div class="teaser"><a href="@{[ CGI::escapeHTML($BBBike::BBBIKE_SF_WWW) ]}">Download</a> der Offline-Version von BBBike (Perl/Tk) mit interaktiver Karte. Läuft auf Linux, Un*x, Mac OS X und Windows.<br /><a class="new" href="@{[ CGI::escapeHTML($BBBike::LATEST_RELEASE_DISTDIR) ]}" style="font-weight:bold;">NEU: Version @{[ CGI::escapeHTML($BBBike::STABLE_VERSION) ]}</a></div>
 EOF
+    }
 }
 
 sub teaser_perltk {
@@ -86,9 +111,15 @@ sub teaser_mapserver {
         $mapserver_url = $mapserver_init_url;
     }
     return undef if !$mapserver_url;
-    <<EOF;
+    if ($lang eq 'en') {
+	<<EOF;
+<div class="teaser">The BBBike map data visualized with <a href="@{[ CGI::escapeHTML($mapserver_url) ]}">Mapserver</a>.</div>
+EOF
+    } else {
+	<<EOF;
 <div class="teaser">Die BBBike-Kartendaten mit <a href="@{[ CGI::escapeHTML($mapserver_url) ]}">Mapserver</a> visualisiert.</div>
 EOF
+    }
 }
 
 sub teaser_dobli {

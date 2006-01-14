@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeUtil.pm,v 1.20 2004/06/10 22:28:18 eserte Exp $
+# $Id: BBBikeUtil.pm,v 1.22 2006/01/14 00:17:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeUtil;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -40,6 +40,8 @@ sub is_in_path {
     my($prog) = @_;
     return $prog if (file_name_is_absolute($prog) and -f $prog and -x $prog);
     require Config;
+    # This does not work! %Config::Config = %Config::Config; # cease -w
+    my $foo = $Config::Config{'path_sep'}; # cease -w ...
     my $sep = $Config::Config{'path_sep'} || ':';
     foreach (split(/$sep/o, $ENV{PATH})) {
 	if ($^O eq 'MSWin32') {
