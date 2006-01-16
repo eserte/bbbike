@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead.t,v 1.13 2005/11/10 22:29:53 eserte Exp $
+# $Id: cgihead.t,v 1.14 2006/01/16 00:01:42 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -35,6 +35,9 @@ if (!defined $html_dir) {
 }
 
 my @prog = qw(bbbike.cgi
+	      bbbike.en.cgi
+	      bbbike2.cgi
+	      bbbike2.en.cgi
 	      mapserver_address.cgi
 	      mapserver_comment.cgi
 	      wapbbbike.cgi

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.17 2005/10/16 20:34:22 eserte Exp $
+# $Id: Berlin_DE.pm,v 1.18 2006/01/15 17:53:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -35,8 +35,8 @@ use vars qw(%subcityparts %cityparts %subcitypart_to_citypart %properties);
      'Marzahn'		 => [qw/Biesdorf/],
      'Mitte'		 => [],
      'Neukölln'		 => [qw/Britz Buckow Rudow/],
-     'Pankow'		 => [qw/Blankenfelde Buchholz Buch Niederschönhausen
-			        Rosenthal Französisch-Buchholz/],
+     'Pankow'		 => [qw/Blankenfelde Buch Niederschönhausen
+			        Rosenthal Buchholz/, 'Französisch Buchholz'], # Buchholz heißt heute "Französisch Buchholz"
      'Prenzlauer Berg'	 => [],
      'Reinickendorf'	 => [qw/Borsigwalde Frohnau Heiligensee Hermsdorf
 			        Konradshöhe Lübars Tegel Waidmannslust

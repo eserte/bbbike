@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.28 2006/01/09 00:33:10 eserte Exp $
+# $Id: Makefile,v 1.29 2006/01/14 00:45:31 eserte Exp $
 #
 
 # XXX needs MORE work
@@ -208,3 +208,6 @@ png-to-jpg:	\
 #   Removed the number with GIMP
 
 # 16 version: same procedure, only with -scale 16
+
+# start.png, via.png, ziel.png should NOT be used to create corresponding gifs
+# dest.png was used to create dest.gif (by GIMP), but looks ugly

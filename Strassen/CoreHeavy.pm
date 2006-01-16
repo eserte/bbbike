@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.29 2005/10/24 22:32:48 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.29 2005/10/24 22:32:48 eserte Exp eserte $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -336,7 +336,7 @@ sub get_diff_file_name {
     my @file = $self->file;
     my $origdir = get_diff_orig_dir;
     require File::Basename;
-    my $dest = "$origdir/" . join("_", map { File::Basename::basename($_) } @file);
+    my $dest = "$origdir/" . join("_", map { defined $_ ? File::Basename::basename($_) : "???" } @file);
     $dest;
 }
 

@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.1 2006/01/14 00:06:45 eserte Exp $
+# $Id: bbbike.cgi,v 8.2 2006/01/14 00:44:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -693,7 +693,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.2 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1302,6 +1302,7 @@ sub choose_form {
 	}
 	if ($bi->is_browser_version("Opera", 7.0, 9.0)) {
 	    $nice_berlinmap = $nice_abcmap = 1;
+	    $prefer_png = 1;
 	}
     }
 
@@ -1529,13 +1530,6 @@ sub choose_form {
 			 ),
 			],
     }
-    header(@extra_headers, -from => "chooseform");
-
-    print <<EOF if ($bi->{'can_table'});
-<table>
-<tr>
-EOF
-
     my $show_introduction;
     {
 	local $^W = 0;
@@ -1545,6 +1539,13 @@ EOF
 			      $startc eq '' && $zielc eq '' &&
 			      !$smallform);
     }
+    header(@extra_headers, -from => $show_introduction ? "chooseform-start" : "chooseform");
+
+    print <<EOF if ($bi->{'can_table'});
+<table>
+<tr>
+EOF
+
     if ($show_introduction) {
 	load_teaser();
 	# use "make count-streets" in ../data
@@ -4608,8 +4609,11 @@ EOF
 	header(#-script => $script,
 	       #-onLoad => 'jump_to_map()'
 	      );
-	print "<b><a name='mapbegin'>" .
-	      ucfirst($type) . "-Kreuzung</a></b> ausw&auml;hlen:<br>\n";
+	if ($lang eq 'en') {
+	    print "Choose <b><a name='mapbegin'>" . M(ucfirst($type)) . "</a></b>:<br>\n";
+	} else {
+	    print "<b><a name='mapbegin'>" . ucfirst($type) . "-Kreuzung</a></b> ausw&auml;hlen:<br>\n";
+	}
 	print "<form action=\"$bbbike_script\">\n";
 
 	foreach ($q->param) {
@@ -4627,11 +4631,11 @@ EOF
 	if ($y > 0) {
 	    print "<tr><td align=right>";
 	    if ($x > 0) {
-		print "<input type=submit name=movemap value=\"Nordwest\">";
+		print qq{<input type=submit name=movemap value="} . M("Nordwest") . qq{">};
 	    }
-	    print "</td><td align=center><input type=submit name=movemap value=\"Nord\"></td>\n";
+	    print qq{</td><td align=center><input type=submit name=movemap value="} . M("Nord") . qq{"></td>\n};
 	    if ($x < $xgridnr-1) {
-		print "<td align=left><input type=submit name=movemap value=\"Nordost\"></td>";
+		print qq{<td align=left><input type=submit name=movemap value="} . M("Nordost") . qq{"></td>};
 	    }
 	    print "</tr>\n";
 	}
@@ -4639,7 +4643,7 @@ EOF
 	# mittlere Zeile
 	print "<tr><td align=right>";
 	if ($x > 0) {
-	    print "<input type=submit name=movemap value=\"West\">";
+	    print qq{<input type=submit name=movemap value="} . M("West") . qq{">};
  	}
 	print
 	  "</td><td><input type=image title='' name=detailmap ",
@@ -4648,7 +4652,7 @@ EOF
 	  "align=middle width=$detailwidth height=$detailheight>",
 	  "</td>\n";
 	if ($x < $xgridnr-1) {
-	    print "<td align=left><input type=submit name=movemap value=\"Ost\"></td>";
+	    print qq{<td align=left><input type=submit name=movemap value="} . M("Ost") . qq{"></td>};
  	}
 	print "</tr>\n";
 
@@ -4656,11 +4660,11 @@ EOF
 	if ($y < $ygridnr-1) {
 	    print "<tr><td align=right>";
 	    if ($x > 0) {
-		print "<input type=submit name=movemap value=\"Südwest\">";
+		print qq{<input type=submit name=movemap value="} . M("Südwest") . qq{">};
 	    }
-	    print "</td><td align=center><input type=submit name=movemap value=\"Süd\"></td>";
+	    print qq{</td><td align=center><input type=submit name=movemap value="} . M("Süd") . qq{"></td>};
 	    if ($x < $xgridnr-1) {
-		print "<td align=left><input type=submit name=movemap value=\"Südost\"></td>";
+		print qq{<td align=left><input type=submit name=movemap value="} . M("Südost") . qq{"></td>};
 	    }
 	    print "</tr>\n";
  	}
@@ -5134,7 +5138,7 @@ sub http_header {
 
 sub header {
     my(%args) = @_;
-    delete $args{-from}; # XXX
+    my $from = delete $args{-from};
     if (!exists $args{-title}) {
 	$args{-title} = "BBBike";
     }
@@ -5226,7 +5230,7 @@ sub header {
 	print $q->start_html;
 	print "<h1>BBBike</h1>";
     }
-    if ($with_lang_switch) {
+    if ($with_lang_switch && defined $from && $from eq 'chooseform-start') {
 	print qq{<div style="text-align:right; position:absolute; top:5px; width:100%">};
 	if ($lang eq 'en') {
 	    (my $de_script = $bbbike_script) =~ s{\.en\.cgi}{.cgi};
@@ -5955,7 +5959,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/01/14 00:06:45 $';
+    my $cgi_date = '$Date: 2006/01/14 00:44:48 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

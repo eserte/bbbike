@@ -1,6 +1,6 @@
 #: title.de: Sehenswürdigkeiten und andere wichtige Gebäude
 #: title.en: Sights and points of interest
-#: version: $Id: sehenswuerdigkeit-orig,v 4.46 2005/12/17 01:03:08 eserte Exp eserte $
+#: version: $Id: sehenswuerdigkeit-orig,v 4.47 2006/01/15 23:57:54 eserte Exp $
 #:
 # Berlin ##################################################
 Brandenburger Tor	IMG:sehenswuerdigkeit_img/brandenburger_tor.gif|ANCHOR:s 8593,12243
@@ -18,7 +18,8 @@ Französischer Dom	F:SW|IMG:church.gif 9552,12062 9610,12073 9618,12044 9550,1203
 Deutscher Dom	F:SW|IMG:church.gif 9644,11894 9647,11855 9583,11851 9578,11890
 Staatsoper	F:SW 9731,12356 9743,12261 9777,12264 9766,12361
 Neue Wache	F:SW 9781,12453 9784,12428 9819,12433 9816,12458
-Zeughaus (Deutsches Historisches Museum)	F:SW 9849,12501 9860,12412 9976,12427 9942,12512
+#: oldname: Zeughaus
+Deutsches Historisches Museum	F:SW 9849,12501 9860,12412 9976,12427 9942,12512
 Pei-Bau (Deutsches Historisches Museum)	F:SW 9850,12514 9936,12526 9909,12605 9845,12551
 Palast der Republik	F:SW 10185,12489 10271,12319 10346,12357 10256,12533
 Auswärtiges Amt	F:SW 9988,12163 10066,12192 10159,12004 10067,11960
@@ -43,7 +44,7 @@ Amerika-Gedenkbibliothek	F:SW 9696,10072 9574,10043 9568,10092 9567,10092 9677,1
 Friedenssäule	SW 9581,10350
 #: alias: Technisches Informationszentrum Berlin
 Patentamt	F:SW 9876,10299 10102,10302 10128,10358 10099,10368 10081,10332 10030,10331 10028,10392 9969,10394 9969,10393 9968,10409 9954,10408 9956,10379 10010,10378 10012,10364 9936,10358 9910,10363 9923,10391 9908,10397 9873,10315
-#: oldname: früher: Museum für Verkehr und Technik
+#: oldname: -1996: Museum für Verkehr und Technik
 Deutsches Technikmuseum Berlin	F:SW 8659,10353 8670,10346 8654,10300 8654,10254 8617,10239 8596,10210 8540,10215 8525,10240
 #: section: Deutsches Technikmuseum Berlin vvv
 Lokschuppen 1	F:SW 8532,10145 8521,10157 8518,10178 8535,10196 8564,10203 8576,10195 8570,10184 8557,10190 8540,10184 8535,10170 8545,10154
