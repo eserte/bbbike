@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.114 2006/01/15 23:58:21 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.114 2006/01/15 23:58:21 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
@@ -252,7 +252,7 @@ Mannheimer Str.: Kopfsteinpflaster, (enge) Gehwege sind für Radfahrer freigegebe
 Mannheimer Str.: Kopfsteinpflaster	Q2 4456,8703 4456,8584
 Thulestr.: Kopfsteinpflaster	Q2 11645,16616 11278,16609 11042,16605
 # ADFC-Karte sagt hier: mäßig geeignet
-Granitzstr.: Asphalt	Q0 10859,17854 10907,17884 11264,18154 11500,18335 11606,18416 11950,18529
+Granitzstr.: Asphalt	Q0 10859,17854 10907,17884 11264,18154 11500,18335 11606,18416 11812,18484 11950,18529
 #: note: ADFC-Karte, Joern (js) widerspricht nicht:
 Stargardtstr.: gut geeignet	Q0 7043,17667 7237,17729 7495,17814
 Windscheidstr.: Kopfsteinpflaster, OK	Q1 3283,11097 3344,10878
@@ -1276,6 +1276,10 @@ Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068
 #: by: Paul (no email):
 Eulerstr.: Asphalt	Q0 9268,16228 9494,16455
 #: by: anonymous vvv
+Riedemannweg: Asphalt	Q0 4248,15647 4408,15297
+#: add_fragezeichen: Kopfsteinpflaster oder Asphalt?
+#: note: widersprüchliche Angaben!
+Haßfurter Weg: mäßiger Asphalt	Q1 11847,18338 11812,18484
 Erlenweg: mäßiger Asphalt	Q1 -3301,17976 -3187,18077
 Zachertstr.: Beton	Q0 17070,11375 17153,11342 17242,11304 17588,11234 17725,11228 17888,11229
 Belziger Ring: Asphalt	Q0 22215,17784 22059,17842 21931,17818 21882,17748 21968,17714 21995,17754 22148,17687
@@ -2967,6 +2971,10 @@ Eiswaldtstr.: Beton	Q0 6733,2433 6834,2449 6937,2417 7052,2353 7154,2341 7282,23
 Scabellstr.: mäßiger Asphalt	Q1 -4290,2304 -4421,2350
 #: by: Michael Pravida:
 Rieflerstr.: Beton	Q0 9978,-1275 10131,-1273
+#: by: Michael Wedel:
+Luise-Henriette-Str.: Asphalt	Q0 9235,6481 9134,6467
+#: by: Manfred Köhnen:
+Otto-Wels-Ring: Asphalt	Q0 13906,3340 13841,3213 13858,2934 13894,2906 13935,2908 13965,2926 13990,2998 14056,3106 14117,3224
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

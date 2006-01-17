@@ -1,5 +1,5 @@
 #: title: Qualit‰t von Straﬂen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.113 2005/12/23 23:55:05 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.114 2006/01/15 23:58:21 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Br¸cken, Straﬂen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1834,15657
@@ -249,7 +249,7 @@ Kalischer Str.: gutes Kopfsteinpflaster	Q1 3964,8559 3982,8750 4006,8967
 Mannheimer Str.: Kopfsteinpflaster, (enge) Gehwege sind f¸r Radfahrer freigegeben	Q2 4456,8584 4319,8584
 Mannheimer Str.: Kopfsteinpflaster	Q2 4456,8703 4456,8584
 Thulestr.: Kopfsteinpflaster	Q2 11645,16616 11278,16609 11042,16605
-Granitzstr.: Asphalt	Q0 10859,17854 10907,17884 11264,18154 11500,18335 11606,18416 11950,18529
+Granitzstr.: Asphalt	Q0 10859,17854 10907,17884 11264,18154 11500,18335 11606,18416 11812,18484 11950,18529
 Stargardtstr.: gut geeignet	Q0 7043,17667 7237,17729 7495,17814
 Windscheidstr.: Kopfsteinpflaster, OK	Q1 3283,11097 3344,10878
 Suarezstr.: Kopfsteinpflaster	Q2 2766,10750 2845,10840 2921,10928 2987,11055 3006,11093
@@ -1204,6 +1204,8 @@ Pflugstr.: Asphalt	Q0 8781,14357 8662,14567
 Wˆhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 Eulerstr.: Asphalt	Q0 9268,16228 9494,16455
+Riedemannweg: Asphalt	Q0 4248,15647 4408,15297
+Haﬂfurter Weg: m‰ﬂiger Asphalt	Q1 11847,18338 11812,18484
 Erlenweg: m‰ﬂiger Asphalt	Q1 -3301,17976 -3187,18077
 Zachertstr.: Beton	Q0 17070,11375 17153,11342 17242,11304 17588,11234 17725,11228 17888,11229
 Belziger Ring: Asphalt	Q0 22215,17784 22059,17842 21931,17818 21882,17748 21968,17714 21995,17754 22148,17687
@@ -2214,6 +2216,8 @@ Erich-Kuttner-Str.: m‰ﬂiger Asphalt	Q1 14584,13547 14532,13563 14424,13587 14378
 Eiswaldtstr.: Beton	Q0 6733,2433 6834,2449 6937,2417 7052,2353 7154,2341 7282,2386
 Scabellstr.: m‰ﬂiger Asphalt	Q1 -4290,2304 -4421,2350
 Rieflerstr.: Beton	Q0 9978,-1275 10131,-1273
+Luise-Henriette-Str.: Asphalt	Q0 9235,6481 9134,6467
+Otto-Wels-Ring: Asphalt	Q0 13906,3340 13841,3213 13858,2934 13894,2906 13935,2908 13965,2926 13990,2998 14056,3106 14117,3224
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934

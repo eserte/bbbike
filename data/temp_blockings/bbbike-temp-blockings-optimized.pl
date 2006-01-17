@@ -341,15 +341,7 @@ userdel	2 47081,83093 47137,83456
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_002352',
-         'until' => 1149112800,
-         'text' => 'Siemensstr. (Köpenick) Richtung Karlshorst, zwischen Wattstr. und Deulstr. Baustelle, Fahrtrichtung gesperrt (bis 31.05.2006) ',
-         'from' => 1134171245,
-         'data' => 'userdel	q4; 17766,6616 17962,6674
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1146434400,
          'text' => 'Stahnsdorf, Lindenstraße, Baustelle bis 30.04.2006, Der Verkehr wird an der Baustelle durch eine Lichtzeichenanlage halbseitig vorbeigeführt. ',
