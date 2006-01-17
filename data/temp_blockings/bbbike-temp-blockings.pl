@@ -3234,7 +3234,7 @@ userdel	q4 9164,12172 9059,12155
 EOF
      },
      { from  => 1134171245, # 2005-12-10 00:34
-       until => 1149112800, # 2006-06-01 00:00
+       until => 1137399489, # 1149112800, # 2006-06-01 00:00 # XXX bereits aufgehoben?
        text  => 'Siemensstr. (Köpenick) Richtung Karlshorst, zwischen Wattstr. und Deulstr. Baustelle, Fahrtrichtung gesperrt (bis 31.05.2006) ',
        type  => 'handicap',
        source_id => 'IM_002352',

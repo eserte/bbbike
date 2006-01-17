@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.2 2006/01/14 00:44:48 eserte Exp $
+# $Id: bbbike.cgi,v 8.2 2006/01/14 00:44:48 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -653,8 +653,8 @@ unshift(@Strassen::datadirs,
 	"$FindBin::RealBin/../BBBike/data",
        );
 
-my $config_master = $0;
-use vars qw($lang);
+use vars qw($lang $config_master $msg);
+$config_master = $0;
 $lang = "";
 if ($config_master =~ s{^(.*)\.(en)(\.cgi)$}{$1$3}) {
     $lang = $2;
@@ -664,7 +664,7 @@ eval { local $SIG{'__DIE__'};
        #warn "$config_master.config";
        do "$config_master.config" };
 
-my $msg;
+undef $msg;
 if ($lang ne "") {
     $msg = eval { do "$FindBin::RealBin/msg/$lang" };
     if ($msg && ref $msg ne 'HASH') {

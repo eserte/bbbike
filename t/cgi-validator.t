@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-validator.t,v 1.2 2005/12/17 15:33:20 eserte Exp $
+# $Id: cgi-validator.t,v 1.4 2006/01/16 23:19:28 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -15,6 +15,7 @@ BEGIN {
 	use Test::More;
         use W3C::LogValidator::HTMLValidator;
         use W3C::LogValidator::CSSValidator;
+	use W3C::LogValidator::LinkChecker 1.005;
 	1;
     }) {
 	print "1..0 # skip: no Test::More and/or W3C::LogValidator modules\n";
@@ -22,7 +23,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 2 }
+BEGIN { plan tests => 3 }
 
 my %config = ("verbose" => 0,
 	      AuthorizedExtensions => ".html .xhtml .phtml .htm .shtml .php .svg .xml / .cgi",
@@ -39,10 +40,19 @@ my @uris = ("$rooturl/bbbike/cgi/bbbike.cgi",
 	   );
 
 {
+    local $TODO = "A test fails --- why?";
+    my $validator = W3C::LogValidator::LinkChecker->new(\%config);
+    $validator->uris(@uris);
+    my %results = $validator->process_list;
+    is(scalar(@{$results{trows}}), 0, "Link checking")
+	or diag Dumper(\%results);
+}
+
+{
     my $validator = W3C::LogValidator::CSSValidator->new(\%config);
     $validator->uris(@uris);
     my %results = $validator->process_list;
-    ok($validator->valid)
+    ok($validator->valid, "CSS validation")
 	or diag Dumper(\%results);
 }
 
@@ -50,7 +60,7 @@ my @uris = ("$rooturl/bbbike/cgi/bbbike.cgi",
     my $validator = W3C::LogValidator::HTMLValidator->new(\%config);
     $validator->uris(@uris);
     my %results = $validator->process_list;
-    ok($validator->valid)
+    ok($validator->valid, "HTML validation")
 	or diag Dumper(\%results);
 }
 
