@@ -439,6 +439,17 @@ userdel	q4 -34232,-10832 -34337,-11047
          'data' => 'userdel	2 26313,-13049 26028,-12312
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       {
+         'source_id' => 'IM_002419',
+         'until' => 1149112799,
+         'text' => 'Voßstr. (Mitte) in Richtung Wilhelmstr. zwischen Ebertstr. und Gertrud-Kolmar-Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2006)',
+         'from' => 1137548634,
+         'data' => 'userdel	q4; 8553,11638 8837,11676
+',
+         'type' => 'handicap'
        }
      
 );

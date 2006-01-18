@@ -3534,4 +3534,13 @@ EOF
 userdel	q4 8462,11538 8172,11679
 EOF
      },
+     { from  => 1137548634, # 2006-01-18 02:43
+       until => 1149112799, # 2006-05-31 23:59
+       text  => 'Voßstr. (Mitte) in Richtung Wilhelmstr. zwischen Ebertstr. und Gertrud-Kolmar-Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2006)',
+       type  => 'handicap',
+       source_id => 'IM_002419',
+       data  => <<EOF,
+userdel	q4; 8553,11638 8837,11676
+EOF
+     },
     );
