@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plzlogfile.t,v 1.10 2004/12/28 22:56:19 eserte Exp $
+# $Id: plzlogfile.t,v 1.11 2006/01/18 01:13:14 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -15,6 +15,7 @@ use PLZ::Multi;
 use Getopt::Long;
 use CGI;
 use BBBikeTest;
+use Strassen::Strasse;
 
 BEGIN {
     if (!eval q{
@@ -49,10 +50,12 @@ SKIP: {
 skip("Call this test script with -doit", 1) unless $doit;
 
 my $plz = ($potsdam
-	   ? PLZ::Multi->new("Berlin.coords.data", "Potsdam.coords.data",
-			     Strassen->new("strassen"), # XXX <-- experminetell!
-			     -cache => 1,
-			    )
+	   ? # as used in bbbike.cgi:
+	   PLZ::Multi->new("Berlin.coords.data",
+			   "Potsdam.coords.data",
+			   Strassen->new("plaetze"), # because there are also some "sehenswuerdigkeiten" in
+			   -cache => 1,
+			  )
 	   : PLZ->new
 	  );
 
@@ -104,6 +107,7 @@ my $lastdate;
 	my($thisdate) = $_ =~ m{\[(\d{2}/.{3}/\d{4}):};
 	for my $param (qw(start via ziel)) {
 	    my $s = $q->param($param);
+	    ($s) = Strasse::split_crossing($s);
 	    if (defined $s && ((!$hnr && $s ne "") ||
 			       ( $hnr && $s =~ /\s+\d+\s*$/))) {
 		my @res = lookup($s);

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.22 2006/01/08 23:51:08 eserte Exp $
+# $Id: Strasse.pm,v 1.24 2006/01/18 00:44:30 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.22 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.24 $ =~ /(\d+)\.(\d+)/);
 
 package Strasse;
 use strict;
@@ -263,6 +263,15 @@ sub get_crossing_streets {
 			} @cross_streets;
 
     @cross_streets;
+}
+
+sub split_crossing {
+    my($street) = @_;
+    return if !defined $street;
+    if ($street =~ m{[/\\]}) {
+	return split m{\s*[/\\]\s*}, $street, 2;
+    }
+    $street;
 }
 
 1;

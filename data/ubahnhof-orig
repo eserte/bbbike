@@ -1,6 +1,6 @@
 #: title.de: U-Bahnhöfe
 #: title.en: Underground stations
-#: version: $Id: ubahnhof-orig,v 4.7 2005/12/23 23:02:01 eserte Exp $
+#: version: $Id: ubahnhof-orig,v 4.8 2006/01/17 23:05:09 eserte Exp $
 #:
 # U1
 #: attrs bg
@@ -76,6 +76,7 @@ Kaiserdamm	UA 2216,11433
 Theodor-Heuss-Platz	UB 1478,11392
 Neu-Westend	UB 656,12077
 #: XXX ab 2006-??-?? bg
+#: note: Unterschiedliche Schreibweise bei U- und S-Bhf!
 Olympia-Stadion	UB -19,12148
 #: attrs bg
 Ruhleben	UB -649,13096

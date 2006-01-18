@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.60 2005/06/14 22:30:45 eserte Exp $
+# $Id: PLZ.pm,v 1.61 2006/01/17 23:51:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use locale;
 use BBBikeUtil;
 use Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.60 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.61 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)
@@ -60,6 +60,9 @@ use constant FILE_COORD    => 3;
 use constant FILE_ZIP_FMT_NORMAL => 4; # this is only valid for FMT_NORMAL
 
 $sep = '|';
+
+use constant SA_ANCHOR_LENGTH => 3; # use 0 to turn off String::Approx anchor hack
+use constant SA_ANCHOR_HACK   => "ÿ" x SA_ANCHOR_LENGTH; # use a rare character
 
 sub new {
     my($class, $file) = @_;
@@ -289,8 +292,10 @@ sub look {
 	    chomp(my @data = <PLZ>);
 	    close PLZ;
 	    my %res;
-	    foreach (String::Approx::amatch($str,
-					    ['i', $args{Agrep}], @data)) {
+	    foreach (map { substr $_, SA_ANCHOR_LENGTH }
+		     String::Approx::amatch(SA_ANCHOR_HACK . $str,
+					    ['i', $args{Agrep}],
+					    map { SA_ANCHOR_HACK . $_ } @data)) {
 		$push_sub->($_);
 	    }
 	} elsif ($grep_type eq 'grep-umlaut') {

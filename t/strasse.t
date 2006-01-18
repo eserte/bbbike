@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strasse.t,v 1.11 2006/01/08 23:51:22 eserte Exp $
+# $Id: strasse.t,v 1.13 2006/01/18 00:44:28 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -111,11 +111,22 @@ my @street_type_nr =
      ["Straße 229 (Mariendorf)",	undef, undef],
     );
 
+my @crossing_tests =
+    (
+     ["Nocrossing" => "Nocrossing"],
+     ['Schönhauser/Bornholmer' => "Schönhauser", "Bornholmer"],
+     ['Schönhauser  /  Bornholmer' => "Schönhauser", "Bornholmer"],
+     ['Schönhauser\Bornholmer' => "Schönhauser", "Bornholmer"],
+     [undef, ()],
+    );
+	    
 my $strip_bezirk_tests = 6;
 plan tests => (scalar(@split_street_citypart) +
 	       scalar(@beautify_landstrasse)*2 +
 	       scalar(@street_type_nr)*2 +
-	       $strip_bezirk_tests);
+	       $strip_bezirk_tests +
+	       scalar(@crossing_tests)
+	      );
 
 for my $s (@split_street_citypart) {
     my($str, @expected) = ($s->[0], @{ $s->[1] });
@@ -161,4 +172,11 @@ for my $s (@street_type_nr) {
     is($got_nr, $nr, "Number for $str");
 }
 
+for my $def (@crossing_tests) {
+    my($text, @exp_crossings) = @$def;
+    my $display_text = $text || "(undef)";
+    my @crossings = Strasse::split_crossing($text);
+    is_deeply(\@crossings, \@exp_crossings, "Crossing split on $display_text");
+}
+	     
 __END__

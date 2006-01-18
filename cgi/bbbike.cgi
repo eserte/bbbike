@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.2 2006/01/14 00:44:48 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.3 2006/01/18 00:37:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -693,7 +693,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.3 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1337,10 +1337,9 @@ sub choose_form {
 
 	    # check for given crossings
 	    my $crossing_street;
-	    if ($$oneref =~ m|/|) {
-		# XXX is it OK to change the referred value?
-		($$oneref, $crossing_street) = split /\s*\/\s*/, $$oneref, 2;
-	    }
+	    # XXX is it OK to change the referred value?
+	    ($$oneref, $crossing_street) = Strasse::split_crossing($$oneref);
+
 	    my @extra;
 	    if ($$zipref ne '') {
 		push @extra, Citypart => $$zipref;
@@ -4871,7 +4870,7 @@ sub init_plz {
 	require PLZ::Multi;
 	$plz = PLZ::Multi->new("Berlin.coords.data",
 			       "Potsdam.coords.data",
-			       Strassen->new("plaetze"), # XXX why?
+			       Strassen->new("plaetze"), # because there are also some "sehenswuerdigkeiten" in
 			       -cache => 1,
 			      );
     } else {
@@ -5959,7 +5958,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/01/14 00:44:48 $';
+    my $cgi_date = '$Date: 2006/01/18 00:37:07 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

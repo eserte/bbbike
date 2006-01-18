@@ -1901,6 +1901,7 @@ Corneliusstr.|Tiergarten|10787|6608,11245
 Corrensplatz|Dahlem|14195|2532,4465
 Cosimaplatz|Friedenau|12159|5483,7710
 Cosmarweg|Spandau|13591|-6349,12913
+Coswiger Str.|Marzahn|12681|19152,13893
 Cotheniusstr.|Prenzlauer Berg|10407|13410,13713
 Cottastr.|Niederschönhausen|13156|9553,18275
 Cottbusser Platz|Hellersdorf|12629|23216,14736
@@ -6837,6 +6838,7 @@ Naumburger Ring|Hellersdorf|12627|24394,14993
 Naumburger Str.|Neukölln|12057|13374,6791
 Naunynstr.|Kreuzberg|10997|11347,10787
 Naunynstr.|Kreuzberg|10999|11347,10787
+Navarraplatz|Französisch Buchholz|13127|11940,22587
 Nazarethkirchstr.|Wedding|13347|7443,15800
 Neanderstr.|Lichtenrade|12305|9719,-662
 Nebelhornweg|Mariendorf|12107|10418,3414
@@ -7188,6 +7190,7 @@ Oranienburger Str.|Lichtenrade|12305|11268,728
 Oranienburger Str.|Mitte|10117|9377,13315
 Oranienburger Str.|Mitte|10178|9377,13315
 Oranienburger Str.|Wittenau|13437|5223,21646
+Oranienburger Tor|Mitte|10115|9215,13392
 Oranienburger Tor|Spandau|13585|-2981,14621
 Oraniendamm|Waidmannslust|13469|4353,22687
 Oranienplatz|Kreuzberg|10999|11218,10817
@@ -7404,7 +7407,8 @@ Paul-Oestreich-Str.|Weißensee|13086|13673,16534
 Paul-Robeson-Str.|Prenzlauer Berg|10439|10360,16317
 Paul-Schmidt-Str.|Tempelhof|12105|8232,5430
 Paul-Schneider-Str.|Lankwitz|12247|6849,3170
-Paul-Schwarz-Promenade|||5093,3912
+Paul-Schwarz-Promenade|Lichterfelde|12207|5093,3912
+Paul-Schwarz-Promenade|Steglitz|12167|5093,3912
 Paul-Schwenk-Str.|Marzahn|12685|19669,14878
 Paul-Wegener-Str.|Mahlsdorf|12623|24451,9277
 Paul-Zobel-Str.|Lichtenberg|10367|15698,13300
@@ -7774,6 +7778,7 @@ Räcknitzer Steig|Spandau|13593|-5420,12569
 Rackwitzer Str.|Hohenschönhausen|13053|16641,16787
 Radduscher Weg|Karolinenhof|12527|26010,-1561
 Radeberger Weg|Rudow|12355|15862,1062
+Radebeuler Str.|Marzahn|12681|19152,13893
 Radelandstr.|Spandau|13589|-4442,16498
 Rademeierweg|Buckow|12305|11159,847
 Rademeierweg|Lichtenrade|12305|11207,793
@@ -8343,6 +8348,9 @@ Ruwersteig|Marzahn|12681|18995,13108
 Rybniker Str.|Karow|13125|14663,22727
 Rykestr.|Prenzlauer Berg|10405|11635,14767
 S-Bhf Adlershof|Adlershof|12489|19944,3344
+S-Bhf Ahrensfelde|Marzahn|12689|21199,18617
+S-Bhf Alexanderplatz|Mitte|10178|10847,12890
+S-Bhf Alt-Reinickendorf|Reinickendorf|13407|6583,19093
 S-Bhf Altglienicke|Altglienicke|12524|21110,282
 S-Bhf Anhalter Bahnhof|Kreuzberg|10963|8880,10853
 S-Bhf Attilastr.|Tempelhof|12105|7615,4609
@@ -8351,51 +8359,72 @@ S-Bhf Bellevue|Tiergarten|10557|6603,12609
 S-Bhf Betriebsbahnhof Rummelsburg|Friedrichsfelde|10317|16877,9840
 S-Bhf Betriebsbahnhof Schöneweide|Niederschöneweide|12439|18866,4489
 S-Bhf Beusselstr.|Tiergarten|10551|5299,14185
+S-Bhf Biesdorf|Biesdorf|12683|20766,12124
 S-Bhf Blankenburg|Blankenburg|13129|12918,20692
+S-Bhf Bornholmer Str.|Prenzlauer Berg|10439|9860,16507
 S-Bhf Botanischer Garten|Lichterfelde|12203|3926,4532
 S-Bhf Buch|Buch|13125|16101,25760
 S-Bhf Buckower Chaussee|Marienfelde|12277|9173,512
+S-Bhf Bundesplatz|Wilmersdorf|10715|5404,7902
 S-Bhf Charlottenburg|Charlottenburg|10627|3468,10839
+S-Bhf Eichborndamm|Reinickendorf|13403|4365,18997
 S-Bhf Feuerbachstr.|Steglitz|12163|5663,6312
 S-Bhf Frankfurter Allee|Friedrichshain|10247|15205,12156
 S-Bhf Friedenau|Friedenau|12159|6252,7147
 S-Bhf Friedrichsfelde Ost|Friedrichsfelde|10315|18295,12195
 S-Bhf Friedrichshagen|Friedrichshagen|12587|25489,6023
+S-Bhf Friedrichstr.|Mitte|10117|9181,12732
 S-Bhf Frohnau|Frohnau|13465|2412,25061
-S-Bhf Fürstenbrunn|Charlottenburg|14050|
+S-Bhf Fürstenbrunn|Charlottenburg|14050|1204,13374
+S-Bhf Gehrenseestr.|Hohenschönhausen|13053|18518,16904
 S-Bhf Gesundbrunnen|Wedding|13355|9299,15930
 S-Bhf Greifswalder Str.|Prenzlauer Berg|10405|12732,14995
 S-Bhf Grünau|Grünau|12527|22166,986
 S-Bhf Grünbergallee|Bohnsdorf|12526|20117,-578
 S-Bhf Grunewald|Grunewald|14193|806,9026
+S-Bhf Hackescher Markt|Mitte|10178|10295,12996
 S-Bhf Halensee|Wilmersdorf|10711|2706,9927
 S-Bhf Heerstr.|Charlottenburg|14055|523,11223
 S-Bhf Heidelberger Platz|Wilmersdorf|10713|4182,8142
+S-Bhf Heiligensee|Heiligensee|13503|-1623,24049
 S-Bhf Hermannstr.|Neukölln|12051|12309,6899
 S-Bhf Hermsdorf|Hermsdorf|13467|3651,23416
 S-Bhf Hirschgarten|Friedrichshagen|12587|23963,6063
+S-Bhf Hohenschönhausen|Hohenschönhausen|13051|17607,18021
 S-Bhf Hohenzollerndamm|Wilmersdorf|10709|3405,9059
 S-Bhf Humboldthain|Wedding|13357|8658,15442
 S-Bhf Innsbrucker Platz|Schöneberg|10827|6263,7956
+S-Bhf Jannowitzbrücke|Mitte|10179|11398,12103
 S-Bhf Jungfernheide|Charlottenburg|10589|3352,13752
+S-Bhf Karl-Bonhoeffer-Nervenklinik|Reinickendorf|13403|5171,19057
 S-Bhf Karlshorst|Friedrichsfelde|10318|18801,8501
 S-Bhf Karow|Karow|13125|14608,23364
+S-Bhf Kaulsdorf|Kaulsdorf|12621|23002,12073
 S-Bhf Köllnische Heide|Neukölln|12057|14882,7205
 S-Bhf Köpenick|Köpenick|12555|22530,6100
 S-Bhf Landsberger Allee|Prenzlauer Berg|10407|13839,13778
+S-Bhf Lankwitz|Lankwitz|12247|6371,3590
 S-Bhf Lehrter Bahnhof (Hauptbahnhof)|Tiergarten|10557|7996,13271
 S-Bhf Lichtenberg|Friedrichsfelde|10317|16796,11777
 S-Bhf Lichtenrade|Lichtenrade|12307|10151,-2046
+S-Bhf Lichterfelde Ost|Lichterfelde|12209|5378,2507
+S-Bhf Lichterfelde Süd|Lichterfelde|12207|4146,385
 S-Bhf Lichterfelde-West|Lichterfelde|12205|2994,3988
+S-Bhf Mahlsdorf|Mahlsdorf|12623|24482,12106
 S-Bhf Marienfelde|Marienfelde|12277|8614,1994
+S-Bhf Marzahn|Marzahn|12681|19623,15444
+S-Bhf Mehrower Allee|Marzahn|12681|20458,17110
 S-Bhf Messe Nord/ICC (Witzleben)|Charlottenburg|14057|2189,11092
 S-Bhf Messe Süd (Eichkamp)|Charlottenburg|14055|1208,10234
 S-Bhf Mexikoplatz|Zehlendorf|14163|-1079,3232
 S-Bhf Neukölln|Neukölln|12055|13130,7132
 S-Bhf Nikolassee|Nikolassee|14129|-3736,2625
 S-Bhf Nöldnerplatz|Friedrichsfelde|10317|15829,10932
+S-Bhf Nordbahnhof|Mitte|10115|9264,14032
 S-Bhf Oberspree|Niederschöneweide|12439|19583,5304
 S-Bhf Olympiastadion|Charlottenburg|14055|-612,11484
+S-Bhf Oranienburger Str.|Mitte|10117|9610,13258
+S-Bhf Osdorfer Str.|Lichterfelde|12209|4502,1316
 S-Bhf Ostbahnhof|Friedrichshain|10243|12609,11662
 S-Bhf Ostkreuz|Friedrichshain|10245|14847,10892
 S-Bhf Pankow-Heinersdorf|Heinersdorf|13089|12076,19329
@@ -8403,26 +8432,40 @@ S-Bhf Pankow|Pankow|13187|10796,17924
 S-Bhf Papestr.|Schöneberg|10829|7806,7623
 S-Bhf Pichelsberg|Charlottenburg|14055|-1638,11411
 S-Bhf Plänterwald|Treptow|12435|15174,8154
+S-Bhf Poelchaustr.|Marzahn|12681|19221,14465
+S-Bhf Potsdamer Platz|Mitte|10117|8540,11480
 S-Bhf Prenzlauer Allee|Prenzlauer Berg|10405|11818,15492
 S-Bhf Priesterweg|Steglitz|12157|7275,5975
 S-Bhf Rahnsdorf|Rahnsdorf|12589|30020,5477
+S-Bhf Raoul-Wallenberg-Str.|Marzahn|12681|20069,16334
+S-Bhf Rathaus Steglitz|Steglitz|12165|5002,5412
 S-Bhf Rummelsburg|Friedrichsfelde|10317|15454,10711
 S-Bhf Savignyplatz|Charlottenburg|10623|4670,10930
+S-Bhf Schichauweg|Lichtenrade|12307|9660,-833
 S-Bhf Schlachtensee|Nikolassee|14129|-2275,3548
 S-Bhf Schöneberg|Schöneberg|10827|6954,8114
 S-Bhf Schöneweide|Niederschöneweide|12439|17711,5556
 S-Bhf Schönhauser Allee|Prenzlauer Berg|10437|11064,15971
 S-Bhf Schönholz|Niederschönhausen|13158|8692,18430
+S-Bhf Schulzendorf|Heiligensee|13503|-537,22867
 S-Bhf Sonnenallee|Neukölln|12055|13999,7541
+S-Bhf Spandau|Spandau|13581|-3643,14016
 S-Bhf Spindlersfeld|Köpenick|12555|21258,4787
+S-Bhf Springpfuhl|Marzahn|12681|19367,13687
 S-Bhf Storkower Str.|Lichtenberg|10369|14557,13168
+S-Bhf Stresow|Spandau|13597|-2901,13742
+S-Bhf Südende|Lankwitz|12167|7153,4673
 S-Bhf Sundgauer Str.|Zehlendorf|14167|1763,3213
+S-Bhf Tegel|Tegel|13509|2471,20090
 S-Bhf Tempelhof|Tempelhof|12099|9120,7225
 S-Bhf Tiergarten|Tiergarten|10557|5814,11967
 S-Bhf Treptower Park|Treptow|12435|14325,9793
+S-Bhf Unter den Linden|Mitte|10117|8838,12259
 S-Bhf Waidmannslust|Waidmannslust|13469|4544,22215
 S-Bhf Wannsee|Wannsee|14109|-4677,1420
 S-Bhf Warschauer Str.|Friedrichshain|10243|13571,11234
+S-Bhf Wartenberg|Wartenberg|13051|16997,18750
+S-Bhf Wedding|Wedding|13347|7842,15194
 S-Bhf Westend|Charlottenburg|14059|2256,12334
 S-Bhf Westhafen|Tiergarten|10559|6329,14428
 S-Bhf Westkreuz|Charlottenburg|14055|2268,10413
@@ -8430,7 +8473,10 @@ S-Bhf Wilhelmshagen|Wilhelmshagen|12589|32189,4124
 S-Bhf Wilhelmsruh|Rosenthal|13158|7452,19487
 S-Bhf Wittenau|Wittenau|13435|5468,21190
 S-Bhf Wollankstr.|Wedding|13359|9472,17700
+S-Bhf Wuhletal|Kaulsdorf|12621|22121,12080
 S-Bhf Wuhlheide|Oberschöneweide|12459|20705,7189
+S-Bhf Yorckstr. (Großgörschenstr.)|Schöneberg|10823|7985,9576
+S-Bhf Yorckstr.|Schöneberg|10965|8280,9528
 S-Bhf Zehlendorf|Zehlendorf|14165|718,2601
 S-Bhf Zoologischer Garten|Charlottenburg|10623|5520,11186
 Saalburgstr.|Tempelhof|12099|11501,5425
@@ -10354,13 +10400,17 @@ Tutzinger Str.|Lichtenrade|12309|12023,-2400
 Tuxer Steig|Lichterfelde|12209|5738,728
 U-Bhf Adenauerplatz|Charlottenburg|10629|3853,10396
 U-Bhf Afrikanische Str.|Wedding|13349|5594,17068
+U-Bhf Alexanderplatz|Mitte|10178|3853,10396
 U-Bhf Alt-Mariendorf|Mariendorf|12107|9472,3641
 U-Bhf Alt-Tegel|Tegel|13507|2067,20278
 U-Bhf Alt-Tempelhof|Tempelhof|12099|9240,6599
+U-Bhf Altstadt Spandau|Spandau|13597|-3019,14499
 U-Bhf Amrumer Str.|Wedding|13353|6647,15084
 U-Bhf Augsburger Str.|Charlottenburg|10789|5877,10486
 U-Bhf Bayerischer Platz|Schöneberg|10779|6126,9130
 U-Bhf Berliner Str.|Wilmersdorf|10715|5505,8963
+U-Bhf Bernauer Str.|Mitte|10115|9828,14659
+U-Bhf Biesdorf-Süd|Biesdorf|12683|20172,10636
 U-Bhf Birkenstr.|Tiergarten|10551|6112,13947
 U-Bhf Bismarckstr.|Charlottenburg|10627|3683,11621
 U-Bhf Blaschkoallee|Britz|12359|13592,5253
@@ -10371,35 +10421,52 @@ U-Bhf Breitenbachplatz|Schmargendorf|14195|3998,6655
 U-Bhf Britz-Süd|Britz|12351|13582,3543
 U-Bhf Bülowstr.|Schöneberg|10783|7658,10160
 U-Bhf Bundesplatz|Wilmersdorf|10715|5355,7985
+U-Bhf Cottbusser Platz|Hellersdorf|12619|23395,14489
 U-Bhf Dahlem-Dorf|Dahlem|14195|2768,5624
 U-Bhf Deutsche Oper|Charlottenburg|10627|3971,11655
 U-Bhf Eberswalder Str.|Prenzlauer Berg|10437|10890,15097
 U-Bhf Eisenacher Str.|Schöneberg|10781|6805,9248
+U-Bhf Elsterwerdaer Platz|Biesdorf|12683|21092,11261
 U-Bhf Ernst-Reuter-Platz|Charlottenburg|10587|4866,11699
 U-Bhf Fehrbelliner Platz|Wilmersdorf|10707|4381,9276
 U-Bhf Frankfurter Allee|Friedrichshain|10247|15177,12089
 U-Bhf Frankfurter Tor|Friedrichshain|10243|13792,12290
 U-Bhf Franz-Neumann-Platz|Reinickendorf|13409|7582,17534
+U-Bhf Französische Str.|Mitte|10117|9383,12049
 U-Bhf Friedrich-Wilhelm-Platz|Friedenau|12161|5381,7305
 U-Bhf Friedrichsfelde|Friedrichsfelde|10315|17802,11316
+U-Bhf Friedrichstr.|Mitte|10117|9306,12725
 U-Bhf Gesundbrunnen|Wedding|13355|9226,15911
 U-Bhf Gleisdreieck|Kreuzberg|10963|8395,10394
 U-Bhf Gneisenaustr.|Kreuzberg|10961|9883,9494
 U-Bhf Görlitzer Bahnhof|Kreuzberg|10997|12076,10426
 U-Bhf Grenzallee|Britz|12359|13262,6390
 U-Bhf Güntzelstr.|Wilmersdorf|10717|5493,9481
+U-Bhf Halemweg|Charlottenburg|13627|2354,14384
 U-Bhf Hallesches Tor|Kreuzberg|10969|9582,10220
 U-Bhf Hansaplatz|Tiergarten|10557|6186,12424
+U-Bhf Haselhorst|Spandau|13599|-1288,14532
+U-Bhf Hausvogteiplatz|Mitte|10117|9829,11957
 U-Bhf Heidelberger Platz|Schmargendorf|14195|4295,8137
+U-Bhf Heinrich-Heine-Str.|Mitte|10179|11203,11611
+U-Bhf Hellersdorf|Hellersdorf|12627|24067,14820
+U-Bhf Hermannplatz|Neukölln|10967|11837,8980
+U-Bhf Hermannstr.|Neukölln|12051|12358,6895
 U-Bhf Hohenzollernplatz|Wilmersdorf|10717|5070,9723
 U-Bhf Holzhauser Str.|Tegel|13509|2898,18814
+U-Bhf Hönow|Hellersdorf|12627|25965,15030
 U-Bhf Innsbrucker Platz|Schöneberg|10827|6386,8065
+U-Bhf Jakob-Kaiser-Platz|Charlottenburg|13627|2823,14355
+U-Bhf Jannowitzbrücke|Mitte|10179|11362,12172
 U-Bhf Johannisthaler Chaussee|Buckow|12351|13933,2673
 U-Bhf Jungfernheide|Charlottenburg|10589|3352,13752
 U-Bhf Kaiserdamm|Charlottenburg|14057|2216,11433
 U-Bhf Kaiserin-Augusta-Str.|Tempelhof|12099|9186,5979
+U-Bhf Karl-Bonhoeffer-Nervenklinik|Wittenau|13437|5448,19169
 U-Bhf Karl-Marx-Str.|Neukölln|12043|12871,7943
+U-Bhf Kaulsdorf-Nord|Kaulsdorf|12619|22933,13159
 U-Bhf Kleistpark|Schöneberg|10783|7451,9347
+U-Bhf Klosterstr.|Mitte|10179|10954,12399
 U-Bhf Kochstr.|Kreuzberg|10969|9491,11089
 U-Bhf Konstanzer Str.|Wilmersdorf|10707|4072,9636
 U-Bhf Kottbusser Tor|Kreuzberg|10997|11370,10398
@@ -10407,48 +10474,73 @@ U-Bhf Krumme Lanke|Zehlendorf|14163|-521,3925
 U-Bhf Kurfürstendamm|Charlottenburg|10719|5512,10786
 U-Bhf Kurfürstenstr.|Tiergarten|10785|7579,10400
 U-Bhf Kurt-Schumacher-Platz|Reinickendorf|13405|5063,17424
+U-Bhf Lehrter Bahnhof (Hauptbahnhof)|Tiergarten|10557|8030,13294
 U-Bhf Leinestr.|Neukölln|12049|12126,7596
 U-Bhf Leopoldplatz|Wedding|13353|7279,15571
 U-Bhf Lichtenberg|Friedrichsfelde|10317|16866,11820
+U-Bhf Lindauer Allee|Reinickendorf|13407|6056,18753
 U-Bhf Lipschitzallee|Buckow|12353|14600,2157
+U-Bhf Louis-Lewin-Str.|Hellersdorf|12627|24946,15113
 U-Bhf Magdalenenstr.|Lichtenberg|10365|16076,11953
+U-Bhf Märkisches Museum|Mitte|10179|10827,11864
 U-Bhf Mehringdamm|Kreuzberg|10965|9396,9871
+U-Bhf Mendelssohn-Bartholdy-Park|Tiergarten|10785|8444,10854
 U-Bhf Mierendorffplatz|Charlottenburg|10589|3643,13248
 U-Bhf Möckernbrücke|Kreuzberg|10963|8985,10360
+U-Bhf Mohrenstr.|Mitte|10117|9098,11754
+U-Bhf Moritzplatz|Kreuzberg|10179|10870,10915
 U-Bhf Nauener Platz|Wedding|13347|7829,16158
 U-Bhf Neu-Westend|Charlottenburg|14052|656,12077
+U-Bhf Neue Grottkauer Str.|Kaulsdorf|12619|22992,13762
 U-Bhf Neukölln|Neukölln|12055|13049,7140
 U-Bhf Nollendorfplatz|Schöneberg|10777|7000,10370
-U-Bhf Olympiastadion|Charlottenburg|14052|-19,12148
+U-Bhf Olympia-Stadion|Charlottenburg|14052|-19,12148
 U-Bhf Onkel Toms Hütte|Zehlendorf|14169|307,4706
+U-Bhf Oranienburger Tor|Mitte|10117|9239,13286
 U-Bhf Oskar-Helene-Heim|Zehlendorf|14169|1411,4770
 U-Bhf Osloer Str.|Wedding|13359|8210,16788
 U-Bhf Otisstr.|Reinickendorf|13403|3389,18248
+U-Bhf Pankow|Pankow|13189|10843,18001
 U-Bhf Pankstr.|Wedding|13357|8796,16239
 U-Bhf Paracelsus-Bad|Reinickendorf|13407|6509,18665
 U-Bhf Paradestr.|Tempelhof|12101|9264,8033
 U-Bhf Parchimer Allee|Britz|12359|13643,4410
+U-Bhf Paulsternstr.|Spandau|13599|-267,14501
 U-Bhf Platz der Luftbrücke|Tempelhof|12101|9217,8888
 U-Bhf Podbielskiallee|Dahlem|14195|3158,6358
+U-Bhf Potsdamer Platz|Mitte|10117|8667,11478
 U-Bhf Prinzenstr.|Kreuzberg|10969|10529,10306
 U-Bhf Rathaus Neukölln|Neukölln|12043|12518,8482
+U-Bhf Rathaus Reinickendorf|Wittenau|13437|4934,20186
 U-Bhf Rathaus Schöneberg|Schöneberg|10825|6260,8516
+U-Bhf Rathaus Spandau|Spandau|13597|-3560,14235
 U-Bhf Rathaus Steglitz|Steglitz|12165|4841,5591
 U-Bhf Rehberge|Wedding|13349|6112,16621
+U-Bhf Reichstag|Tiergarten|10557|8272,12685
 U-Bhf Reinickendorfer Str.|Wedding|13353|8030,14905
 U-Bhf Residenzstr.|Reinickendorf|13409|7325,18276
 U-Bhf Richard-Wagner-Platz|Charlottenburg|10585|3770,12208
+U-Bhf Rohrdamm|Siemensstadt|13629|863,14383
+U-Bhf Rosa-Luxemburg-Platz|Mitte|10178|10818,13516
+U-Bhf Rosenthaler Platz|Mitte|10119|10157,13817
+U-Bhf Rüdesheimer Platz|Wilmersdorf|14197|4399,7342
 U-Bhf Rudow|Rudow|12357|16821,1252
 U-Bhf Ruhleben|Charlottenburg|14052|-649,13096
 U-Bhf Samariterstr.|Friedrichshain|10247|14508,12185
 U-Bhf Scharnweberstr.|Reinickendorf|13405|4064,17787
+U-Bhf Schillingstr.|Mitte|10178|11640,12743
 U-Bhf Schlesisches Tor|Kreuzberg|10997|12986,10636
 U-Bhf Schloßstr.|Steglitz|12163|5120,6066
 U-Bhf Schönhauser Allee|Prenzlauer Berg|10437|10983,15984
+U-Bhf Schönleinstr.|Kreuzberg|10967|11651,9729
+U-Bhf Schwartzkopffstr.|Mitte|10115|8543,14346
 U-Bhf Seestr.|Wedding|13353|6828,15983
 U-Bhf Senefelderplatz|Prenzlauer Berg|10435|10936,14074
+U-Bhf Siemensdamm|Siemensstadt|13629|1429,14388
 U-Bhf Sophie-Charlotte-Platz|Charlottenburg|14059|3147,11552
 U-Bhf Spichernstr.|Wilmersdorf|10777|5474,9961
+U-Bhf Spittelmarkt|Mitte|10179|10337,11730
+U-Bhf Stadtmitte|Mitte|10117|9452,11808
 U-Bhf Strausberger Platz|Friedrichshain|10243|12192,12538
 U-Bhf Südstern|Kreuzberg|10961|10684,9295
 U-Bhf Tempelhof|Tempelhof|12099|9231,7085
@@ -10458,18 +10550,25 @@ U-Bhf Tierpark|Friedrichsfelde|10319|18481,10468
 U-Bhf Turmstr.|Tiergarten|10551|6122,13261
 U-Bhf Uhlandstr.|Charlottenburg|10719|5157,10657
 U-Bhf Ullsteinstr.|Mariendorf|12109|9180,5376
+U-Bhf Unter den Linden|Mitte|10117|8852,12293
 U-Bhf Viktoria-Luise-Platz|Schöneberg|10777|6270,9939
 U-Bhf Vinetastr.|Pankow|13189|10934,17049
 U-Bhf Voltastr.|Wedding|13355|9602,15110
 U-Bhf Walther-Schreiber-Platz|Steglitz|12161|5369,6535
+U-Bhf Warschauer Str.|Friedrichshain|10245|13506,11159
 U-Bhf Weberwiese|Friedrichshain|10243|13054,12397
 U-Bhf Wedding|Wedding|13353|7739,15167
+U-Bhf Weinmeisterstr.|Mitte|10178|10386,13334
 U-Bhf Westhafen|Tiergarten|13353|6197,14494
 U-Bhf Westphalweg|Mariendorf|12109|9298,4471
 U-Bhf Wilmersdorfer Str.|Charlottenburg|10627|3809,11037
+U-Bhf Wittenau|Wittenau|13437|5501,21018
 U-Bhf Wittenbergplatz|Schöneberg|10789|6301,10601
+U-Bhf Wuhletal|Kaulsdorf|12621|22121,12080
 U-Bhf Wutzkyallee|Rudow|12353|15373,2039
 U-Bhf Yorckstr.|Kreuzberg|10965|8238,9660
+U-Bhf Zinnowitzer Str.|Mitte|10115|8899,13915
+U-Bhf Zitadelle|Spandau|13599|-2320,14423
 U-Bhf Zoologischer Garten|Charlottenburg|10623|5586,11074
 U-Bhf Zwickauer Damm|Rudow|12357|16013,2050
 Übergang|Spandau|13591|-6129,14739

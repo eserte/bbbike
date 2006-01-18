@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.76 2005/12/23 23:02:57 eserte Exp $
+# $Id: Makefile,v 2.77 2006/01/17 23:49:56 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -76,6 +76,8 @@ WRITEABLE=	chmod u+w,ugo+r
 READONLY=	chmod ugo+r,ugo-w
 READABLE=	chmod ugo+r
 
+SORT_NO_LOCALE=	env LC_ALL=de_DE.ISO_8859-1 sort
+
 ## XXX what is write, what is wrong?
 #COORDS_DATA_SORT_OPTS=	-f -t "|" -k 1,3
 COORDS_DATA_SORT_OPTS=
@@ -98,7 +100,7 @@ targets-clean:
 # XXX merge with sort-Berlin.coords.data rule below?
 slow-checks:	inaccessible_strassen inaccessible_landstrassen \
 		check-line-lengths check-dates \
-		check-Berlin.coords.data check-Potsdam.coords.data \
+		check-coords.data \
 		persistent-tmp
 
 persistent-tmp:	${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
@@ -692,7 +694,8 @@ do-checks:	.check_empty_lines \
 	.check_ampeln .check_gesperrt1 .check_gesperrt2 \
 	.check_gesperrt_u2 .check_gesperrt_s2 .check_gesperrt_r2 \
 	.check_gesperrt_car1 .check_gesperrt_car2 \
-	.check_ubahnhof .check_sbahnhof .check_rbahnhof .check_orte \
+	.check_ubahnhof .check_ubahnhof2 .check_sbahnhof .check_sbahnhof2 \
+	.check_rbahnhof .check_orte \
 	.check_radwege .check_ampelschaltung \
 	.check_qualitaet_s .check_qualitaet_l \
 	.check_handicap_s .check_handicap_l \
@@ -783,6 +786,20 @@ check-disabled:	.check_label
 .check_sbahnhof:	sbahnhof sbahn
 	$(CHECK_STATION_CATEGORY) sbahnhof sbahn
 	@touch $@
+
+.for i in u s
+.check_$(i)bahnhof2:	$(i)bahnhof Berlin.coords.data
+	grep -i '	$(i)[AB] ' $(i)bahnhof |\
+	    sed -e 's/ *(.*)//' -e 's/	.*//' -e 's/bhf\./bahnhof/' -e 's/Bhf\./Bahnhof/' |\
+	    $(SORT_NO_LOCALE) -u > /tmp/$(i)bahnhof1
+	grep -i '^$(i)-Bhf' Berlin.coords.data |\
+	    egrep -v 'S-Bhf (Fürstenbrunn)' |\
+	    egrep -v 'U-Bhf (Lehrter Bahnhof|Unter den Linden|Reichstag)' |\
+	    sed -e 's/ *(.*)//' -e 's/S-Bhf //' -e 's/U-Bhf //' -e 's/|.*//' |\
+	    $(SORT_NO_LOCALE) -u > /tmp/$(i)bahnhof2
+	diff /tmp/$(i)bahnhof1 /tmp/$(i)bahnhof2
+	@touch $@
+.endfor
 
 .check_rbahnhof:	rbahnhof rbahn
 	$(CHECK_STATION_CATEGORY) -special rbahnhof rbahnhof-orig rbahn
@@ -942,7 +959,7 @@ sort-coords.data:	sort-Berlin.coords.data sort-Potsdam.coords.data
 sort-$(city).coords.data:
 	-@$(WRITEABLE) $(city).coords.data~
 	mv $(city).coords.data $(city).coords.data~
-	env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} < $(city).coords.data~ > $(city).coords.data
+	$(SORT_NO_LOCALE) ${COORDS_DATA_SORT_OPTS} < $(city).coords.data~ > $(city).coords.data
 	@$(READABLE) $(city).coords.data
 	touch .check_$(city)_coords_data
 .endfor
@@ -1024,12 +1041,25 @@ check-coords.data:	check-Berlin.coords.data check-Potsdam.coords.data
 check-$(city).coords.data:	.check_$(city)_coords_data
 
 # Check for sortedness and unique records:
-.check_$(city)_coords_data: $(city).coords.data
-	env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} -c $(city).coords.data || \
-	    ( env LC_ALL=de_DE.ISO_8859-1 sort ${COORDS_DATA_SORT_OPTS} $(city).coords.data | diff -u - $(city).coords.data; false )
+.check_$(city)_coords_data:: $(city).coords.data
+	$(SORT_NO_LOCALE) ${COORDS_DATA_SORT_OPTS} -c $(city).coords.data || \
+	    ( $(SORT_NO_LOCALE) ${COORDS_DATA_SORT_OPTS} $(city).coords.data | diff -u - $(city).coords.data; false )
 	perl -nle '@l=split /\|/; if (++$$x{"@l[0..2]"} > 1) { die "@l" } if (@l < 3 || @l > 4) { die "@l" } ' $(city).coords.data
 	@touch $@
 .endfor
+
+check-Berlin.coords.data: .check_Berlin_coords_data_cityparts .check_Berlin_coords_data_zip
+
+.check_Berlin_coords_data_cityparts: Berlin.coords.data
+	cut -d'|' -f2 Berlin.coords.data | sort -u |\
+	    perl -I.. -MGeography::Berlin_DE -nle \
+		'BEGIN { %cp = map {($$_,1)} Geography::Berlin_DE->get_all_subparts } !exists $$cp{$$_} and die "<$$_> not a citypart of Berlin"'
+	@touch $@
+
+.check_Berlin_coords_data_zip: Berlin.coords.data
+	cut -d'|' -f3 Berlin.coords.data | sort -u |\
+	    perl -nle '($$_ < 10000 || $$_ > 15000) and die "<$$_> unexpected ZIP in Berlin"'
+	@touch $@
 
 check-nearest:	${PERSISTENTTMPDIR}/check_nearest.bbd do-check-nearest
 

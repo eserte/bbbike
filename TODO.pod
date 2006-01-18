@@ -1890,6 +1890,17 @@ points if delta exceeds 128/128 meters.
 
 =over
 
+=item * (H4)
+
+Crop (or use?) the E<quot>ortE<quot> part of a street, i.e.
+E<quot>robert-rössle-str. 10, 13125 berlinE<quot>. Split against the
+E<quot>,E<quot> and filter (or use?) the part with berlin or without
+str or ...
+
+In real data (Berlin.coords.data) there are no streets containing a
+E<quot>,E<quot> (just a few Siedlungen with E<quot>I,IIE<quot> and
+Gaststätten).
+
 =item * (M5)
 
 Add a search option: E<quot>Unbeleuchtete Straßen vermeidenE<quot>

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.11 2005/07/02 22:30:41 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.13 2006/01/17 21:54:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -36,7 +36,9 @@ use BBBikeUtil qw(is_in_path);
 # Old logfile
 #$logfile = "$ENV{HOME}/www/log/radzeit.de-access_log";
 # New logfile since 2004-09-28 ca.
-$logfile = "$ENV{HOME}/www/log/radzeit.combined_log";
+#$logfile = "$ENV{HOME}/www/log/radzeit.combined_log";
+# Again the old name since 2005-06-XX ca.
+$logfile = "$ENV{HOME}/www/log/radzeit.de-access_log";
 
 if (defined $ENV{BBBIKE_TEST_CGIURL}) {
     $cgiurl = $ENV{BBBIKE_TEST_CGIURL};
@@ -195,9 +197,9 @@ if (!eval {
 	    }
 
 	    local $Data::Dumper::Sortkeys = $Data::Dumper::Sortkeys = 1;
-	    is(Data::Dumper->new([$a],[])->Useqq(1)->Dump,
-	       Data::Dumper->new([$b],[])->Useqq(1)->Dump,
-	       $info);
+	    Test::More::is(Data::Dumper->new([$a],[])->Useqq(1)->Dump,
+			   Data::Dumper->new([$b],[])->Useqq(1)->Dump,
+			   $info);
 	}
     };
 }
