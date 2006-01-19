@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.24 2006/01/14 00:07:34 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.26 2006/01/18 23:42:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -401,7 +401,40 @@ EOF
     $html .= <<EOF;
     </div>
 
-<form name="googlemap" onsubmit='return checkSetCoordForm()' style="margin-top:1cm; border:1px solid black; padding:3px;">
+<div style="float:left; width:45%; margin-top:0.5cm; ">
+
+<form name="mapmode" style="border:1px solid black; padding:3px; " method="get">
+ <table border="0">
+   <tr style="vertical-align:top;">
+    <td><input id="mapmode_browse"
+               type="radio" name="mapmode" value="browse" checked /></td>
+    <td><label for="mapmode_browse">Scrollen/Bewegen/Zoomen</label></td>
+   </tr>
+   <tr style="vertical-align:top;">
+    <td><input id="mapmode_search"
+               type="radio" name="mapmode" value="search" /></td>
+    <td><label for="mapmode_search">Mit Maus-Klicks Start- und Zielpunkt festlegen</label></td>
+   </tr>
+   <tr style="vertical-align:top;">
+    <td><input id="mapmode_addroute"
+               type="radio" name="mapmode" value="addroute" /></td>
+    <td><label for="mapmode_addroute">Mit Maus-Doppelklicks eine Route erstellen</label><br/>
+        <a href="javascript:deleteLastPoint()">Letzten Punkt löschen</a>
+        <a href="javascript:resetRoute()">Route löschen</a></td>
+   </tr>
+ </table>
+</form>
+
+<form name="upload" onsubmit='setZoomInUploadForm()' style="margin-top:0.3cm; border:1px solid black; padding:3px; " method="post" enctype="multipart/form-data">
+  <input type="hidden" name="zoom" value="@{[ $zoom ]}" />
+  Upload einer GPX-Datei: <input type="file" name="gpxfile" />
+  <br />
+  <button>Zeigen</button>
+</form>
+
+</div>
+
+<form name="googlemap" onsubmit='return checkSetCoordForm()' style="margin-top:0.5cm; margin-left:10px; border:1px solid black; padding:3px; width:45%; float:left;">
   <input type="hidden" name="zoom" value="@{[ $zoom ]}" />
   Koordinatensystem:<br />
   <label><input type="radio" name="coordsystem" value="standard" @{[ $coordsystem eq 'standard' ? 'checked' : '' ]} /> BBBike</label><br />
@@ -412,29 +445,14 @@ EOF
   <button>Zeigen</button>
 </form>
 
-<form name="mapmode" style="margin-top:0.5cm; border:1px solid black; padding:3px;" method="get">
-  <label> <input type="radio" name="mapmode" value="browse" checked /> Scrollen/Bewegen/Zoomen</label><br/>
-  <label> <input type="radio" name="mapmode" value="search"         /> Mit Maus-Klicks Start- und Zielpunkt festlegen</label><br/>
-  <label> <input type="radio" name="mapmode" value="addroute"       /> Mit Maus-Doppelklicks eine Route erstellen</label>
-  <a href="javascript:deleteLastPoint()">Letzten Punkt löschen</a>
-  <a href="javascript:resetRoute()">Route löschen</a>
-</form>
-
-<form name="upload" onsubmit='setZoomInUploadForm()' style="margin-top:0.5cm; border:1px solid black; padding:3px;" method="post" enctype="multipart/form-data">
-  <input type="hidden" name="zoom" value="@{[ $zoom ]}" />
-  Upload einer GPX-Datei: <input type="file" name="gpxfile" />
-  <br />
-  <button>Zeigen</button>
-</form>
-
-<table width="100%">
+<table width="100%" style="clear:left;">
  <tr>
   <td colspan="3">
       <p class="ftr">
        <a id="bbbikemail" href="mailto:slaven\@rezic.de">E-Mail</a> |
        <a id="bbbikeurl" href="http://radzeit.herceg.de/cgi-bin/bbbike.cgi">BBBike</a> |
        <a href="/cgi-bin/mapserver_address.cgi?usemap=googlemaps">Adresssuche</a>
-       | <a href="http://maps.google.com/maps?ll=52.515385,13.381004&spn=0.146083,0.229288&t=k">Google Maps</a>
+       | <a href="http://maps.google.com/maps?ll=52.515385,13.381004&amp;spn=0.146083,0.229288&amp;t=k">Google Maps</a>
       </p>
   </td>
  </tr>

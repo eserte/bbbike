@@ -1273,6 +1273,7 @@ sub get_conversion {
     my $convsub;
     my $frommap = $self->{GlobalDirectives}{map} || $args{Map};
     if ($frommap) {
+	$frommap = $frommap->[0];
 	require Karte;
 	Karte::preload(":all"); # Can't preload specific maps, because $map is a token, not a map module name
 	my $tomap = $args{-tomap} || "standard";

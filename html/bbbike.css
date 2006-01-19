@@ -152,3 +152,12 @@ a.ms:visited { color:#333333; }
 .pseudolink span:hover {
   background-color:yellow;
 }
+
+.selectedflag {
+  padding:2px;
+  border:2px solid black;
+}
+
+.unselectedflag {
+  padding:4px;
+}

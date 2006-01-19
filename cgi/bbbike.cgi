@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.3 2006/01/18 00:37:07 eserte Exp $
+# $Id: bbbike.cgi,v 8.4 2006/01/19 00:14:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -693,7 +693,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.4 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1300,7 +1300,7 @@ sub choose_form {
 	if ($bi->is_browser_version("MSIE", 5.0, 5.4999)) {
 	    $nice_berlinmap = $nice_abcmap = 1;
 	}
-	if ($bi->is_browser_version("Opera", 7.0, 9.0)) {
+	if ($bi->is_browser_version("Opera", 7.0, 7.9999)) { # Mit 8.x wird nur einmalig beim Enter gehighlighted
 	    $nice_berlinmap = $nice_abcmap = 1;
 	    $prefer_png = 1;
 	}
@@ -5230,13 +5230,19 @@ sub header {
 	print "<h1>BBBike</h1>";
     }
     if ($with_lang_switch && defined $from && $from eq 'chooseform-start') {
-	print qq{<div style="text-align:right; position:absolute; top:5px; width:100%">};
+	print qq{<div style="position:absolute; top:5px; right:10px;">};
 	if ($lang eq 'en') {
 	    (my $de_script = $bbbike_script) =~ s{\.en\.cgi}{.cgi};
-	    print qq{<a href="$de_script"><img style="margin-right:20px;" src="http://bbbike.sourceforge.net/images/de_flag.png" alt="Deutsch" border="0"></a>};
+	    print <<EOF;
+<a href="$de_script"><img class="unselectedflag" src="http://bbbike.sourceforge.net/images/de_flag.png" alt="Deutsch" border="0"></a>
+<img class="selectedflag" src="http://bbbike.sourceforge.net/images/gb_flag.png" alt="English" border="0">
+EOF
 	} else {
 	    (my $en_script = $bbbike_script) =~ s{\.cgi}{.en.cgi};
-	    print qq{<a href="$en_script"><img style="margin-right:20px;" src="http://bbbike.sourceforge.net/images/gb_flag.png" alt="English" border="0"></a>};
+	    print <<EOF;
+<img class="selectedflag" src="http://bbbike.sourceforge.net/images/de_flag.png" alt="Deutsch" border="0">
+<a href="$en_script"><img class="unselectedflag" src="http://bbbike.sourceforge.net/images/gb_flag.png" alt="English" border="0"></a>
+EOF
 	}
 	print qq{</div>\n};
     }
@@ -5747,12 +5753,12 @@ sub tie_session_counted {
 sub load_teaser {
     eval { local $SIG{'__DIE__'};
 	   my $teaser_file = "$FindBin::RealBin/bbbike-teaser.pl";
-	   if (defined $BBBikeCGI::teaser_file_modtime &&
-	       (stat($teaser_file))[9] > $BBBikeCGI::teaser_file_modtime) {
-	       delete $INC{$teaser_file};
+	   if ((defined $BBBikeCGI::teaser_file_modtime &&
+		(stat($teaser_file))[9] > $BBBikeCGI::teaser_file_modtime) ||
+	       !defined &teaser) {
+	       do $teaser_file;
+	       $BBBikeCGI::teaser_file_modtime = (stat($teaser_file))[9];
 	   }
-	   require $teaser_file;
-	   $BBBikeCGI::teaser_file_modtime = (stat($teaser_file))[9];
        }; warn $@ if $@;
 }
 
@@ -5958,7 +5964,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/01/18 00:37:07 $';
+    my $cgi_date = '$Date: 2006/01/19 00:14:36 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {
