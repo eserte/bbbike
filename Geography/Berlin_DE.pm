@@ -1,16 +1,19 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.18 2006/01/15 17:53:51 eserte Exp $
+# $Id: Berlin_DE.pm,v 1.22 2006/01/20 00:03:55 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2006 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: srezic@cpan.org
+# WWW:  http://www.bbbike.de
 #
+
+# Überarbeiten anhand http://de.wikipedia.org/wiki/Berlin!
+# U.U. "Ortslagen" (subsubcityparts) einführen
 
 package Geography::Berlin_DE;
 
@@ -63,14 +66,10 @@ while(my($cp,$scp) = each %subcityparts) {
 # (neue) Bezirke => (alte) Bezirke
 %cityparts =
     ('Mitte'                            => [qw/Mitte Tiergarten Wedding/],
-     # XXX wrong Alias?
-     #'Mitte-Tiergarten-Wedding'         => [qw/Mitte Tiergarten Wedding/],
      'Friedrichshain-Kreuzberg'         => [qw/Friedrichshain Kreuzberg/],
-     'Pankow-Prenzlauer Berg-Weißensee' => [qw/Pankow Weißensee/,
+     # war: Pankow-Prenzlauer Berg-Weißensee, aber das ist nicht korrekt
+     'Pankow'				=> [qw/Pankow Weißensee/,
 					    'Prenzlauer Berg'],
-     # XXX wrong Alias?
-     #'Pankow-Prenzlauer Berg-Weissensee' => [qw/Pankow Weißensee/,
-     #'Prenzlauer Berg'],
      'Charlottenburg-Wilmersdorf'       => [qw/Charlottenburg Wilmersdorf/],
      'Spandau'                          => ['Spandau'],
      'Steglitz-Zehlendorf'              => [qw/Steglitz Zehlendorf/],
@@ -78,7 +77,7 @@ while(my($cp,$scp) = each %subcityparts) {
      'Neukölln'                         => [qw/Neukölln/],
      'Treptow-Köpenick'                 => [qw/Treptow Köpenick/],
      'Marzahn-Hellersdorf'              => [qw/Marzahn Hellersdorf/],
-     'Lichtenberg-Hohenschönhausen'     => [qw/Lichtenberg Hohenschönhausen/],
+     'Lichtenberg' 			=> [qw/Lichtenberg Hohenschönhausen/],
      'Reinickendorf'                    => [qw/Reinickendorf/],
     );
 
@@ -116,14 +115,28 @@ sub get_supercitypart_for_citypart {
     keys %cityparts; # reset!!!
     while(my($supercitypart, $cityparts) = each %cityparts) {
 	for my $citypart (@$cityparts) {
-warn $citypart;
 	    if ($citypart eq $given_citypart) {
-warn "ok! $supercitypart";
 		return $supercitypart;
 	    }
 	}
     }
     undef;
+}
+
+sub get_supercitypart_for_any {
+    my $class = shift;
+    my $given_part = shift;
+    my $subcitypart_to_citypart = $class->subcitypart_to_citypart;
+    if (exists $subcitypart_to_citypart->{$given_part}) {
+	return $class->get_supercitypart_for_citypart($subcitypart_to_citypart->{$given_part});
+    } else {
+	my $ret = $class->get_supercitypart_for_citypart($given_part);
+	return $ret if defined $ret;
+	if (exists $cityparts{$given_part}) {
+	    return $given_part;
+	}
+	return undef;
+    }
 }
 
 sub get_cityparts_for_supercitypart {

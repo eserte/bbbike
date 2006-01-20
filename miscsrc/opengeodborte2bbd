@@ -1,0 +1,66 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+#
+# $Id: opengeodborte2bbd,v 1.2 2006/01/20 00:29:30 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2006 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+# Beispiel:
+# ./opengeodborte2bbd -restrictland BB -restrictcountry DE > /tmp/a.bbd
+
+use 5.8.1; # utf8 bugs?
+use strict;
+use warnings;
+no warnings 'once';
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+use Karte;
+Karte::preload(qw(Polar Standard));
+
+use Getopt::Long;
+
+my $restrictland;
+my $restrictcountry;
+
+GetOptions("restrictland=s" => \$restrictland,
+	   "restrictcountry=s" => \$restrictcountry,
+	  )
+    or die "usage?";
+
+my $infile = shift || "/usr/ports/distfiles/opengeodb/opengeodb-0.2.4a-UTF8-text-orte.txt";
+
+open my $fh, $infile
+    or die "Can't open $infile: $!";
+binmode $fh, ":encoding(utf-8)";
+while(<$fh>) {
+    next if /^#/;
+    chomp;
+    my($key, $country, $land, $regbez, $landkreis, $verwalt, $ort, $ortsteil,
+       $gemeindeteil, $otherort, $lon, $lat, $kfz, $plz) = split /;/;
+    next if (defined $restrictland    && $land ne $restrictland);
+    next if (defined $restrictcountry && $country ne $restrictcountry);
+    my($x, $y) = map { int } $Karte::Polar::obj->map2standard($lon, $lat);
+    my $display_ort = $ort;
+    my $cat;
+    if ($ortsteil ne $gemeindeteil && $gemeindeteil ne "-") {
+	$display_ort = $gemeindeteil; # keep it short
+	$cat = 0;
+    } elsif ($ort ne $ortsteil && $ortsteil ne "-") {
+	$display_ort = "$ortsteil ($ort)";
+	$cat = 1;
+    }
+    $cat = 2 if !defined $cat;
+    print "$display_ort\t$cat $x,$y\n";
+}
+
+__END__

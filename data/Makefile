@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.77 2006/01/17 23:49:56 eserte Exp $
+# $Id: Makefile,v 2.78 2006/01/20 00:01:04 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1048,7 +1048,8 @@ check-$(city).coords.data:	.check_$(city)_coords_data
 	@touch $@
 .endfor
 
-check-Berlin.coords.data: .check_Berlin_coords_data_cityparts .check_Berlin_coords_data_zip
+check-Berlin.coords.data: .check_Berlin_coords_data_cityparts \
+			  .check_Berlin_coords_data_zip
 
 .check_Berlin_coords_data_cityparts: Berlin.coords.data
 	cut -d'|' -f2 Berlin.coords.data | sort -u |\
@@ -1059,6 +1060,18 @@ check-Berlin.coords.data: .check_Berlin_coords_data_cityparts .check_Berlin_coor
 .check_Berlin_coords_data_zip: Berlin.coords.data
 	cut -d'|' -f3 Berlin.coords.data | sort -u |\
 	    perl -nle '($$_ < 10000 || $$_ > 15000) and die "<$$_> unexpected ZIP in Berlin"'
+	@touch $@
+
+# Heavy check, fails for now:
+.check_Berlin_coords_data_zip2: Berlin.coords.data
+	unzip -c $(MISCDIR)/opengeodb/Berlin_I.zip D_Berlin_Postleitzahlen > /tmp/D_Berlin_Postleitzahlen
+	cat /tmp/D_Berlin_Postleitzahlen |\
+	    perl -nle '/^(\d{5}) .. (.*)/ && print "$$1 .. $$2"' |\
+	    sort -u > /tmp/plz1
+	perl -I $(BBBIKEDIR) -MGeography::Berlin_DE -F'\|' -nale \
+	    'BEGIN {$$g=Geography::Berlin_DE->new } print "$$F[2] .. " . $$g->get_supercitypart_for_any($$F[1]) ' Berlin.coords.data |\
+	    sort -u > /tmp/plz2
+	diff -u /tmp/plz1 /tmp/plz2
 	@touch $@
 
 check-nearest:	${PERSISTENTTMPDIR}/check_nearest.bbd do-check-nearest

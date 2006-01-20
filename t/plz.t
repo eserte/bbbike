@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.23 2006/01/18 01:43:53 eserte Exp $
+# $Id: plz.t,v 1.24 2006/01/20 00:30:34 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -41,6 +41,8 @@ use strict;
 
 my @approx_tests = (
 		    #["anhalterbahnho", "Anhalter Bahnhof"], # fails, because "plaetze" is not in PLZ.pm object
+		    ["kreutzbergstr" => "Kreuzbergstr."],
+		    ["Karl-Herz-Ufer" => "Carl-Herz-Ufer"],
 		    ["Simon dach" => "Simon-Dach-Str."],
 		    ["yorkstraße" => "Yorckstr."],
 		    ["Gräfestr." => "Graefestr."],
@@ -198,7 +200,8 @@ for my $noextern (@extern_order) {
 	    my($wrong, $correct) = @$def;
 	    my @res = $plz->look_loop(PLZ::split_street($wrong),
 				      @standard_look_loop_args);
-	    cmp_ok(scalar @{$res[0]}, "<=", 20, "Not too much hits")
+	    my $hits = scalar @{$res[0]};
+	    cmp_ok($hits, "<=", 20, "$wrong - not too much hits ($hits)")
 		or diag $dump->(\@res);
 	    ok((grep { $_->[PLZ::LOOK_NAME] eq $correct } @{$res[0]}),
 	       "And $correct is amongst them")
