@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.4 2006/01/19 00:14:36 eserte Exp $
+# $Id: bbbike.cgi,v 8.5 2006/01/21 02:17:32 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -693,7 +693,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.5 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -830,6 +830,8 @@ if (0 && $bi->{'wap_browser'}) {
 undef $bp_obj;
 init_bikepower($q);
 
+use vars qw($wettermeldung_file);
+$wettermeldung_file = "$tmp_dir/wettermeldung-$<";
 # Wettermeldungen so früh wie möglich versuchen zu holen
 if ($show_weather || $bp_obj) {
     start_weather_proc();
@@ -5042,14 +5044,14 @@ sub fix_coords {
 }
 
 sub start_weather_proc {
-    my(@stat) = stat("$tmp_dir/wettermeldung");
+    my(@stat) = stat($wettermeldung_file);
     if (!defined $stat[9] or $stat[9]+30*60 < time()) {
 	my @weather_cmdline = (@weather_cmdline,
-			       '-o', "$tmp_dir/wettermeldung");
+			       '-o', $wettermeldung_file);
 	if ($^O eq 'MSWin32') { # XXX Austesten
 	    eval q{
 		require Win32::Process;
-		unlink "$tmp_dir/wettermeldung";
+		unlink $wettermeldung_file;
 		my $proc;
 		Win32::Process::Create($proc,
 				       $weather_cmdline[0],
@@ -5072,7 +5074,7 @@ sub start_weather_proc {
 			# Can't use `exists' (for 5.00503 compat):
 			POSIX::setsid() if defined &POSIX::setsid;
 		    }; warn $@ if $@;
-		    unlink "$tmp_dir/wettermeldung";
+		    unlink $wettermeldung_file;
 		    exec @weather_cmdline or my_exit 1;
 		}
 	    };
@@ -5082,9 +5084,9 @@ sub start_weather_proc {
 
 sub gather_weather_proc {
     my @res;
-    my(@stat) = stat("$tmp_dir/wettermeldung");
+    my(@stat) = stat($wettermeldung_file);
     if (defined $stat[9] and $stat[9]+30*60 > time()) { # Aktualität checken
-	if (open(W, "$tmp_dir/wettermeldung")) {
+	if (open(W, $wettermeldung_file)) {
 	    chomp(my $line = <W>);
 	    @res = split(/\|/, $line);
 	    close W;
@@ -5312,7 +5314,8 @@ sub complete_link_to_einstellungen {
 }
 
 sub link_to_met {
-    "<a href=\"http://www.met.fu-berlin.de/deutsch/Wetter/meldungen.html\">";
+    #qq{<a href="http://www.met.fu-berlin.de/deutsch/Wetter/meldungen.html">};
+    qq{<a href="http://www.met.fu-berlin.de/de/wetter/">};
 }
 
 sub window_open {
@@ -5964,7 +5967,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/01/19 00:14:36 $';
+    my $cgi_date = '$Date: 2006/01/21 02:17:32 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

@@ -1,0 +1,159 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: parse_wetterkarte,v 1.8 2006/01/21 02:14:52 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+package ParseWetterkarte;
+
+use strict;
+use LWP::UserAgent;
+use HTML::TreeBuilder;
+use Time::Local qw(timelocal);
+use File::ReadBackwards;
+
+my $wetterdir = "$ENV{HOME}/doc/met";
+
+sub fetch_and_store {
+    my($storefile, %args) = @_;
+    my %result = get_result();
+    my $lastline = "";
+    $storefile = "$wetterdir/wetter2-$result{year}" if !defined $storefile;
+    if (tie *BW, "File::ReadBackwards", $storefile) {
+	$lastline = <BW>;
+    }
+    my $newline = formatline(\%result, %args);
+    $newline .= "\n";
+    if ($newline eq $lastline) {
+	#warn "Same line...";
+    } else {
+	open my $fh, ">>", $storefile
+	    or die "Can't store <$newline> to <$storefile>: $!";
+	print $fh $newline;
+    }
+}
+
+sub get_result {
+    my $content = fetch();
+    my %result = parse($content);
+    %result;
+}
+
+sub fetch {
+    my $ua = LWP::UserAgent->new;
+    my $resp = $ua->get("http://wkserv.met.fu-berlin.de/Wetter/mainframe.php");
+    die $resp->content if !$resp->is_success;
+    $resp->content;
+}
+
+sub parse {
+    my $content = shift;
+    my $tree = HTML::TreeBuilder->new;
+    $tree->parse($content);
+    my $text = $tree->as_trimmed_text;
+    my $err = 0;
+    my($Y,$M,$D,$h,$m,$tz) = $text =~ /(\d{4})-(\d{2})-(\d{2})\s+(\d{1,2}):(\d{2})\s+(\S+)/;
+    warn "Cannot parse date/time", $err++ if (!defined $Y);
+    my($windrichtung) = $text =~ /Windrichtung:\s+(\d+)/;
+    warn "Cannot parse windrichtung", $err++ if (!defined $windrichtung);
+    my($windgeschwindigkeit) = $text =~ /Windgeschw.*?:\s+([\d+\.]+)/;
+    warn "Cannot parse windgeschwindigkeit", $err++ if (!defined $windgeschwindigkeit);
+    my($windspitze) = $text =~ /Windspitze:\s+([\d+\.]+)/;
+    warn "Cannot parse windspitze", $err++ if (!defined $windspitze);
+    my($luftdruck) = $text =~ /Luftdruck:\s+([\d+\.]+)\s+hPa/;
+    warn "Cannot parse luftdruck", $err++ if (!defined $luftdruck);
+    my($luftfeuchte) = $text =~ /Luftfeuchtigkeit:\s+([\d+\.]+)/;
+    warn "Cannot parse luftfeuchte", $err++ if (!defined $luftfeuchte);
+    my($temperatur) = $text =~ /[Tt]emperatur:\s+([-+]?[\d+\.]+)/;
+    warn "Cannot parse temperatur", $err++ if (!defined $temperatur);
+
+    if ($err) {
+	die "Content: <$text>";
+    } else {
+	my $epoch = timelocal(0,$m,$h,$D,$M-1,$Y);
+	my $date = sprintf "%s.%s.%s", $D,$M,$Y;
+	my $time = sprintf "%s.%02s", $h,$m;
+	return (epoch => $epoch,
+		date => $date,
+		time => $time,
+		year => $Y,
+		temperatur => $temperatur,
+		luftdruck => $luftdruck,
+		windrichtung => $windrichtung,
+		windgeschwindigkeit => $windgeschwindigkeit,
+		luftfeuchte => $luftfeuchte,
+		windspitze => $windspitze,
+	       );
+    }
+}
+
+sub formatline {
+    my($r, %args) = @_;
+    my %r = %$r;
+    if ($args{windrichtung} && $args{windrichtung} eq 'windrose') {
+	$r{windrichtung} = wind_degrees_to_direction($r{windrichtung});
+    }
+    join("|", @r{qw(date time temperatur luftdruck windrichtung windgeschwindigkeit luftfeuchte windspitze)});
+}
+
+sub get_current_from_file {
+    my(%args) = @_;
+    my $lastline = "";
+    my $year = ((localtime)[5])+1900;
+    my $storefile = "$wetterdir/wetter2-$year";
+    if (tie *BW, "File::ReadBackwards", $storefile) {
+	$lastline = <BW>;
+    }
+    return () if $lastline eq "";
+    chomp $lastline;
+    my(@w) = split /\|/, $lastline;
+    my %result;
+    @result{qw(date time temperatur luftdruck windrichtung windgeschwindigkeit luftfeuchte windspitze)} = @w;
+    if ($args{windrichtung} && $args{windrichtung} eq 'windrose') {
+	$result{windrichtung} = wind_degrees_to_direction($result{windrichtung});
+    }
+    %result;
+}
+
+sub wind_degrees_to_direction {
+    my $w = shift;
+    if    ($w < 22.5)      { $w = "N"  }
+    elsif ($w < 22.5+45)   { $w = "NE" }
+    elsif ($w < 22.5+45*2) { $w = "E"  }
+    elsif ($w < 22.5+45*3) { $w = "SE" }
+    elsif ($w < 22.5+45*4) { $w = "S"  }
+    elsif ($w < 22.5+45*5) { $w = "SW" }
+    elsif ($w < 22.5+45*6) { $w = "W"  }
+    elsif ($w < 22.5+45*7) { $w = "NW" }
+    else                   { $w = "N"  }
+    $w;
+}
+
+return 1 if caller;
+
+require Getopt::Long;
+my %opt;
+Getopt::Long::GetOptions(\%opt, "o=s", "windrose!") or die "usage?";
+$opt{windrose} = "windrose" if $opt{windrose};
+my $cmd = shift || "fetch_and_print";
+
+if ($cmd eq 'fetch_and_store') {
+    fetch_and_store($opt{o}, windrichtung => $opt{windrose});
+} elsif ($cmd eq 'fetch_and_print') {
+    my %result = get_result();
+    my $newline = formatline(\%result, windrichtung => $opt{windrose});
+    print "$newline\n";
+} else {
+    die "Unknown cmd $cmd";
+}
+
+__END__

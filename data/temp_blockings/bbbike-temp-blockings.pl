@@ -1054,10 +1054,11 @@ EOF
 userdel	2 375,28109 524,28171 938,28349
 EOF
      },
-     { from  => 1119904102, # 2005-06-27 22:28
-       until => 1136069999, # 2005-12-31 23:59
-       text  => 'Blankenburger Weg (Pankow) Richtung Süden zwischen Bahnhofstr. und Pasewalker Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
+     { from  => 1137804913, # 2006-01-21 01:55
+       until => 1157061599, # 2006-08-31 23:59
+       text  => 'Blankenburger Weg (Pankow) von Bahnhofstr. bis Pasewalker Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2006)',
        type  => 'gesperrt',
+       source_id => 'INKO_82',
        data  => <<EOF,
 userdel	1 12442,20805 12030,20490
 EOF
@@ -3486,9 +3487,9 @@ EOF
 userdel	2 15682,-26971 15960,-26906
 EOF
      },
-     { from  => 1137538800, # 2006-01-18 00:00
-       until => 1137798000, # 2006-01-21 00:00
-       text  => 'L 074 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung; Umleitung 19.01.2006-20.01.2006 ',
+     { from  => 1138143600, # 2006-01-25 00:00
+       until => 1138402800, # 2006-01-28 00:00
+       text  => 'L 074 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung 26.01.2006-27.01.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 15682,-26971 15960,-26906

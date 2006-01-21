@@ -1,7 +1,20 @@
 @temp_blocking = ();
-$#temp_blocking = 145;
+$#temp_blocking = 140;
 push @temp_blocking,
 (
+       {
+         'source_id' => 'INKO_82',
+         'until' => 1157061599,
+         'text' => 'Blankenburger Weg (Pankow) von Bahnhofstr. bis Pasewalker Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 08.2006)',
+         'from' => 1137804913,
+         'data' => 'userdel	1 12442,20805 12030,20490
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'until' => 1143842400,
          'text' => 'L 302 Schöneicher Str. OL Schöneiche, Dorfaue und Rüdersdorfer Str. Kanal- und Straßenbau Vollsperrung 12.04.2005-31.03.2006 ',
@@ -405,20 +418,13 @@ userdel	q4 -34232,-10832 -34337,-11047
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1137776400,
-         'text' => 'Tietzenweg zwischen Margaretenstraße und Unter den Eichen, Baustelle, Straße gesperrt. Dauer: 12.12.2005 bis 20.01.2006,18.00 Uhr ',
-         'from' => 1134255600,
-         'data' => 'userdel	2 3490,4449 3425,4541
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
-         'until' => 1137798000,
-         'text' => 'L 074 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung; Umleitung 19.01.2006-20.01.2006 ',
-         'from' => 1137538800,
+         'until' => 1138402800,
+         'text' => 'L 074 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung 26.01.2006-27.01.2006 ',
+         'from' => 1138143600,
          'data' => 'userdel	2 15682,-26971 15960,-26906
 ',
          'type' => 'gesperrt'
