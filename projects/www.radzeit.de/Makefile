@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.74 2006/01/05 00:11:59 eserte Exp $
+# $Id: Makefile,v 1.74 2006/01/05 00:11:59 eserte Exp eserte $
 #
 
 # Targets:
@@ -169,6 +169,12 @@ RADZEIT_OLD_URL=	http://www.radzeit.de
 SSH_PROG_AND_ARGS=	ssh
 HTDOCS=			htdocs
 LOCAL_URL=		http://radzeit-old.herceg.de
+.endif
+
+# The bbbike.cgi to test (stable or beta)
+BBBIKECGI=		bbbike.cgi
+.ifdef ${TEST_BETA}
+BBBIKECGI=		bbbike2.cgi
 .endif
 
 .include "${BBBIKE_ROOT_DIR}/mapserver/brb/Makefile.${TARGET}.inc"
@@ -475,7 +481,7 @@ test-on-remote:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
 	cd ${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin \
-	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/bbbike.cgi \
+	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/${BBBIKECGI} \
 	BBBIKE_TEST_WAPURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/wapbbbike.cgi \
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
@@ -490,7 +496,7 @@ test-from-local:
 	-@date >> .last/start-test-from-local
 	cd ${.CURDIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin \
-	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/bbbike.cgi \
+	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/${BBBIKECGI} \
 	BBBIKE_TEST_WAPURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/wapbbbike.cgi \
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
@@ -501,7 +507,7 @@ test-on-remote-and-send-mail:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
 	cd ${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin \
-	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/bbbike.cgi \
+	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/${BBBIKECGI} \
 	BBBIKE_TEST_WAPURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/wapbbbike.cgi \
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
 	    (perl -MTest::Harness -e "runtests(@ARGV)" \
@@ -511,7 +517,7 @@ test-on-remote-and-send-mail:
 test-local:
 	cd ${.CURDIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=${LOCAL_CGI_URL} \
-	BBBIKE_TEST_CGIURL=${LOCAL_CGI_URL}/bbbike.cgi \
+	BBBIKE_TEST_CGIURL=${LOCAL_CGI_URL}/${BBBIKECGI} \
 	BBBIKE_TEST_WAPURL=${LOCAL_CGI_URL}/wapbbbike.cgi \
 	BBBIKE_TEST_MAPSERVERURL=http://localhost/~eserte/cgi/mapserv.cgi \
 	BBBIKE_TEST_HTMLDIR=${LOCAL_HTML_URL} \
@@ -521,7 +527,7 @@ test-local:
 test-radzeit-old:
 	cd ${.CURDIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=${RADZEIT_OLD_URL}/cgi-bin \
-	BBBIKE_TEST_CGIURL=${RADZEIT_OLD_URL}/cgi-bin/bbbike.cgi \
+	BBBIKE_TEST_CGIURL=${RADZEIT_OLD_URL}/cgi-bin/${BBBIKECGI} \
 	BBBIKE_TEST_WAPURL=${RADZEIT_OLD_URL}/cgi-bin/wapbbbike.cgi \
 	BBBIKE_TEST_HTMLDIR=${RADZEIT_OLD_URL}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
