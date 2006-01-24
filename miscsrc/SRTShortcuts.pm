@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.26 2005/12/18 22:58:26 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.26 2005/12/18 22:58:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -310,9 +310,12 @@ sub show_any_diff {
     } else {
 	$t->geometry($t->screenwidth-20 . "x" . 260 . "+0-20");
     }
-    $t->Label(-text => "Modtime: " . scalar(localtime((stat($file))[9])) .
-	      sprintf " (%.1f days ago)", -(-M $file)
-	     )->pack(-anchor => "w");
+    {
+	local $^T = time;
+	$t->Label(-text => "Modtime: " . scalar(localtime((stat($file))[9])) .
+		  sprintf " (%.1f days ago)", -(-M $file)
+		 )->pack(-anchor => "w");
+    }
     my $f;
     my $hide_ignored;
     $t->Checkbutton(-text => "Hide ignored and unchanged",

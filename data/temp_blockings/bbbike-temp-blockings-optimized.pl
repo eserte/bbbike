@@ -1,7 +1,17 @@
 @temp_blocking = ();
-$#temp_blocking = 140;
+$#temp_blocking = 138;
 push @temp_blocking,
 (
+       {
+         'source_id' => 'IM_002432',
+         'until' => 1142463599,
+         'text' => 'Naumannstraße in beiden Richtungen zwischen Torgauer Str. und Tempelhofer Weg Straße vollständig gesperrt, für Radfahrer u.U. passierbar (bis Mitte März 2006)',
+         'from' => 1138133685,
+         'data' => 'userdel	q4 7717,7759 7716,8048
+',
+         'type' => 'handicap'
+       },
+       undef,
        {
          'source_id' => 'INKO_82',
          'until' => 1157061599,
@@ -438,14 +448,7 @@ userdel	q4 -34232,-10832 -34337,-11047
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1138057200,
-         'text' => 'B 179 Cottbuser-/ Fichtestr. OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsperrung 02.01.2006-23.01.2006 ',
-         'from' => 1136070000,
-         'data' => 'userdel	2 26313,-13049 26028,-12312
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {

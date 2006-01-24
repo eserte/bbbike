@@ -1038,12 +1038,13 @@ EOF
 userdel	q4 32100,18012 31887,17453
 EOF
      },
-     { from  => 1109025830, # 2005-02-21 23:43
-       until => 1113944974, # aufgehoben! 2005-04-30 23:59
-       text  => 'Naumannstraße zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße vollständig gesperrt (bis Ende 04/2005)',
-       type  => 'gesperrt',
+     { from  => 1138133685, # 2006-01-24 21:14
+       until => 1142463599, # 2006-03-15 23:59
+       text  => 'Naumannstraße in beiden Richtungen zwischen Torgauer Str. und Tempelhofer Weg Straße vollständig gesperrt, für Radfahrer u.U. passierbar (bis Mitte März 2006)',
+       type  => 'handicap',
+       source_id => 'IM_002432',
        data  => <<EOF,
-userdel	2 7716,8048 7717,7759
+userdel	q4 7717,7759 7716,8048
 EOF
      },
      { from  => 1097964000, # 2004-10-17 00:00
