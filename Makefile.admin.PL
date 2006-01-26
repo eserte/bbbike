@@ -276,7 +276,7 @@ cgidistdir-berlin-potsdam:   MANIFEST.bbbikecgi
 		      if (m|^data/(.*)|) { $$data->{$$1}=""; delete $$files->{$$_} } \
 		    } \
 		    manicopy($$files,q{$(BBBIKE_TMP)/$(DISTNAME)}, q{$(DIST_CP)}); \
-		    chdir "data_berlin_and_potsdam" or die; \
+		    chdir "data" or die "Cannot change to data directory: $$!"; \
 		    manicopy($$data,q{$(BBBIKE_TMP)/$(DISTNAME)/data}, q{$(DIST_CP)}); \
 '
 

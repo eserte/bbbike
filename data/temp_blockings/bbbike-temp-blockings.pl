@@ -3545,4 +3545,12 @@ EOF
 userdel	q4; 8553,11638 8837,11676
 EOF
      },
+     { from  => 1137279600, # 2006-01-15 00:00
+       until => 1142636400, # 2006-03-18 00:00
+       text  => 'L 088 Bahnhofstr. OD Lehnin, Höhe Marktplatz Umgestaltung Marktplatz Vollsperrung 16.01.2006-17.03.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -34063,-10552 -34488,-10578
+EOF
+     },
     );

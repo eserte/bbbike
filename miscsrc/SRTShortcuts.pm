@@ -313,7 +313,7 @@ sub show_any_diff {
     {
 	local $^T = time;
 	$t->Label(-text => "Modtime: " . scalar(localtime((stat($file))[9])) .
-		  sprintf " (%.1f days ago)", -(-M $file)
+		  sprintf " (%.1f days ago)", (-M $file)
 		 )->pack(-anchor => "w");
     }
     my $f;

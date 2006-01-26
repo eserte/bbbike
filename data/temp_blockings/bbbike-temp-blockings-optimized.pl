@@ -459,6 +459,14 @@ userdel	q4 -34232,-10832 -34337,-11047
          'data' => 'userdel	q4; 8553,11638 8837,11676
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1142636400,
+         'text' => 'L 088 Bahnhofstr. OD Lehnin, Höhe Marktplatz Umgestaltung Marktplatz Vollsperrung 16.01.2006-17.03.2006 ',
+         'from' => 1137279600,
+         'data' => 'userdel	q4 -34063,-10552 -34488,-10578
+',
+         'type' => 'handicap'
        }
      
 );

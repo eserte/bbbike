@@ -634,7 +634,8 @@ Hauptstr: sandiger und hoplriger Fahrweg	Q3 9686,26977 9577,26725 9713,26457
 Hauptstr.: Betonplatten, OK	Q1 9713,26457 9835,26176 9908,25864
 Bauernweg: sandig	Q2 9835,26176 10120,26363
 Hinter dem Gießhaus: mäßiger Asphalt	Q1 9837,12552 9842,12506 9853,12402
-Oberwallstr.: mäßiger Asphalt, teils gutes Kopfsteinpflaster	Q1 9890,12161 9875,12254 9853,12402
+Oberwallstr.: mäßiger Asphalt, teils gutes Kopfsteinpflaster	Q1 9890,12161 9875,12254
+Oberwallstr.: mäßiger Asphalt	Q1 9875,12254 9853,12402
 Trautenaustr.: Kopfsteinpflaster, OK	Q1 5374,9619 5321,9583
 Krumme Str.: Kopfsteinpflaster	Q2 3981,11226 3986,11337 3990,11490
 Fehrbelliner Str.: Kopfsteinpflaster	Q2 10041,14370 10282,14212
@@ -670,7 +671,7 @@ Am Walde: Richtung Westen schlechtes Kopfsteinpflaster	Q3; 17775,7874 17678,7850
 Oskarstr.: Richtung Süden schlechtes Kopfsteinpflaster	Q3; 17762,7931 17775,7874
 Prager Platz: gutes Kopfsteinpflaster	Q1 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
 Normannenstr.: Kopfsteinpflaster	Q2 16156,12286 16270,12261
-Rüdigerstr. (Lichtenberg): Kopfsteinpflaster	Q2 17487,12244 17010,12313 16810,12342
+Rüdigerstr. (Lichtenberg): Kopfsteinpflaster	Q2 17487,12244 17163,12291 17010,12313 16810,12342
 Barbarossastr.: Kopfsteinpflaster	Q2 7128,9512 7010,9535
 Prühßstr.: Kopfsteinpflaster	Q2 8766,4038 8967,4082 9107,4103 9338,4129 9455,4159 9848,4254
 Marienburger Str.: Kopfsteinpflaster	Q2 11582,14448 11835,14309 12091,14179
@@ -1208,6 +1209,9 @@ Brommystr.: Kopfsteinpflaster	Q2 12509,11025 12567,11115
 Busseallee: Kopfsteinpflaster	Q2 166,3040 82,3166 -249,3632
 (Hauptstr. - Kynaststr.): schlechtes Kopfsteinpflaster	Q3 15181,10766 15030,10819 14881,10864
 Hallesches Tor: Beton	Q0 9593,10238 9592,10174
+Bebelplatz: Kopfsteinpflaster, OK	Q1 9801,12245 9875,12254
+Metzer Str.: Kopfsteinpflaster	Q2 10947,14114 11016,14081
+Kollwitzplatz: Kopfsteinpflaster	Q2 11284,14488 11329,14559
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -2976,6 +2980,8 @@ Rieflerstr.: Beton	Q0 9978,-1275 10131,-1273
 Luise-Henriette-Str.: Asphalt	Q0 9235,6481 9134,6467
 #: by: Manfred Köhnen:
 Otto-Wels-Ring: Asphalt	Q0 13906,3340 13841,3213 13858,2934 13894,2906 13935,2908 13965,2926 13990,2998 14056,3106 14117,3224
+#: by: Christian (cm-germany)
+Dankwartstr.: Asphalt	Q0 17163,12291 17197,12488
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

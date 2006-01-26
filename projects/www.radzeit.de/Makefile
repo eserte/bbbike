@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.74 2006/01/05 00:11:59 eserte Exp eserte $
+# $Id: Makefile,v 1.75 2006/01/24 21:54:43 eserte Exp $
 #
 
 # Targets:
@@ -173,7 +173,7 @@ LOCAL_URL=		http://radzeit-old.herceg.de
 
 # The bbbike.cgi to test (stable or beta)
 BBBIKECGI=		bbbike.cgi
-.ifdef ${TEST_BETA}
+.ifdef TEST_BETA
 BBBIKECGI=		bbbike2.cgi
 .endif
 
