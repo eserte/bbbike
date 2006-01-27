@@ -126,7 +126,15 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'INKO_77420',
+         'until' => 1146434399,
+         'text' => 'Vulkanstr. (Lichtenberg) von Landsberger Allee bis Herzbergstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2006)',
+         'from' => 1138319749,
+         'data' => 'userdel	q4; 15838,14319 15873,14046 15880,13535
+',
+         'type' => 'handicap'
+       },
        {
          'until' => 1143756000,
          'text' => 'B 001 Potsdamer Str. OD Groß Kreutz Kanal- und Straßenbau; Vollsperrung 27.04.2005-30.03.2006 ',
@@ -182,7 +190,14 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => undef,
+         'text' => 'Rosa-Luxemburg-Str. Richtung Schönhauser Tor wegen Bauarbeiten gesperrt',
+         'from' => undef,
+         'data' => 'userdel	1 10846,13362 10790,13565 10777,13614 10746,13673
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -383,7 +398,15 @@ userdel	2 47081,83093 47137,83456
 ',
          'type' => 'gesperrt'
        },
-       undef,
+       {
+         'source_id' => 'IM_002441',
+         'until' => 1149199199,
+         'text' => 'Siemensstr. (Treptow) Richtung Edisonstr. zwischen Wilhelminenhofstr. und Edisonstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 06.2006)',
+         'from' => 1138319651,
+         'data' => 'userdel	1 17614,6571 17766,6616 17962,6674
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -467,6 +490,32 @@ userdel	q4 -34232,-10832 -34337,-11047
          'data' => 'userdel	q4 -34063,-10552 -34488,-10578
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_002437',
+         'until' => undef,
+         'text' => 'Pistoriusstr. (Weißensee) in Richtung Mirbachplatz zwischen Berliner Allee und Parkstr. Baustelle, Fahrtrichtung gesperrt',
+         'from' => undef,
+         'data' => 'userdel	q4; 14067,16127 13797,16237
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_75621',
+         'until' => 1141167599,
+         'text' => 'Rosa-Luxemburg-Str. (Mitte) in Richtung Memhardtstr. zwischen Karl-Liebknecht-Str. und Memhardtstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende Februar 2006)',
+         'from' => 1138319443,
+         'data' => 'userdel	q4; 10706,13043 10755,13152
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1138575600,
+         'text' => 'B 096 a Brücke über DB AG zw. Glasower Str. u. Waßmannsdorfer Ch. Brückenneubau Vollsperrung * 29.01.2006-29.01.2006 ',
+         'from' => 1138402800,
+         'data' => '	2 13289,-4660 13655,-4831
+',
+         'type' => 'gesperrt'
        }
      
 );

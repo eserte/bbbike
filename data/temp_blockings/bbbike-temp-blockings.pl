@@ -1833,10 +1833,11 @@ EOF
 userdel	q4; 13540,15928 13751,16009 14014,16106 14067,16127 14371,16252
 EOF
      },
-     { from  => 1114468319, # 2005-04-26 00:31
-       until => 1133477023, # früher zu Ende. 1136069999, # 2005-12-31 23:59
-       text  => 'Vulkanstr. in Richtung Herzbergstr. Baustelle, Einbahnstraße in Richtung Landsberger Allee (bis Ende 2005)',
+     { from  => 1138319749, # 2006-01-27 00:55
+       until => 1146434399, # 2006-04-30 23:59
+       text  => 'Vulkanstr. (Lichtenberg) von Landsberger Allee bis Herzbergstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2006)',
        type  => 'handicap',
+       source_id => 'INKO_77420',
        data  => <<EOF,
 userdel	q4; 15838,14319 15873,14046 15880,13535
 EOF
@@ -2199,16 +2200,12 @@ userdel auto	3 7663,11946 7460,12054 7383,12095 7039,12314
 userdel auto	3 7039,12314 7383,12095 7460,12054 7663,11946
 EOF
      },
-     { from  => 1120086052, # 2005-06-30 01:00
-       until => 1136069999, # 2005-12-31 23:59
-       text  => 'Rosa-Luxemburg-Str. zwischen Torstr. und Memhardstr. Baustelle, Einbahnstraße in Richtung Alexanderplatz, (bis Ende 2005) ',
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rosa-Luxemburg-Str. Richtung Schönhauser Tor wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 10846,13362 10790,13565
-	3 10757,13401 10846,13362 10923,13317
-	3 10923,13317 10846,13362 10757,13401
-	3 10969,13430 10846,13362 10757,13401
-	3 10757,13401 10846,13362 10969,13430
+userdel	1 10846,13362 10790,13565 10777,13614 10746,13673
 EOF
      },
      { from  => 1114293600, # 2005-04-24 00:00
@@ -3271,13 +3268,13 @@ EOF
 userdel	1 12708,16699 12874,16631 13131,16525
 EOF
      },
-     { from  => 1132606911, # 2005-11-21 22:01
-       until => 1133650800, # 2005-12-04 00:00
-       text  => 'Wilhelminenhofstr. (Treptow) in Richtung Edisonstr. zwischen Rathenaustr. und Firlstr. Baustelle Fahrtrichtung gesperrt (bis 03.12.2005)',
+     { from  => 1138319651, # 2006-01-27 00:54
+       until => 1149199199, # 2006-06-01 23:59
+       text  => 'Siemensstr. (Treptow) Richtung Edisonstr. zwischen Wilhelminenhofstr. und Edisonstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 06.2006)',
        type  => 'gesperrt',
-       source_id => 'IM_002359',
+       source_id => 'IM_002441',
        data  => <<EOF,
-userdel	1 18853,6009 18445,6287
+userdel	1 17614,6571 17766,6616 17962,6674
 EOF
      },
      { from  => 1130799600, # 2005-11-01 00:00
@@ -3551,6 +3548,32 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -34063,-10552 -34488,-10578
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Pistoriusstr. (Weißensee) in Richtung Mirbachplatz zwischen Berliner Allee und Parkstr. Baustelle, Fahrtrichtung gesperrt',
+       type  => 'handicap',
+       source_id => 'IM_002437',
+       data  => <<EOF,
+userdel	q4; 14067,16127 13797,16237
+EOF
+     },
+     { from  => 1138319443, # 2006-01-27 00:50
+       until => 1141167599, # 2006-02-28 23:59
+       text  => 'Rosa-Luxemburg-Str. (Mitte) in Richtung Memhardtstr. zwischen Karl-Liebknecht-Str. und Memhardtstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende Februar 2006)',
+       type  => 'handicap',
+       source_id => 'INKO_75621',
+       data  => <<EOF,
+userdel	q4; 10706,13043 10755,13152
+EOF
+     },
+     { from  => 1138402800, # 2006-01-28 00:00
+       until => 1138575600, # 2006-01-30 00:00
+       text  => 'B 096 a Brücke über DB AG zw. Glasower Str. u. Waßmannsdorfer Ch. Brückenneubau Vollsperrung * 29.01.2006-29.01.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2 13289,-4660 13655,-4831
 EOF
      },
     );

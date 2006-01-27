@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEditUtil.pm,v 1.14 2004/12/08 22:33:35 eserte Exp $
+# $Id: BBBikeEditUtil.pm,v 1.15 2006/01/26 23:50:55 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -325,6 +325,25 @@ sub month_days {
     my $d = [31,28,31,30,31,30,31,31,30,31,30,31]->[$m-1];
     $d++ if $m == 2 && leapyear($y);
     $d;
+}
+# REPO END
+
+# REPO BEGIN
+# REPO NAME leapyear /home/e/eserte/work/srezic-repository 
+# REPO MD5 22fe07ae80911c135aeee23d4dce1e89
+
+=head2 leapyear($year)
+
+=for category Date
+
+Return true if the given year is a leap year.
+
+=cut
+
+sub leapyear {
+    my $year = $_[0];
+    ($year % 4 == 0 &&
+     (($year % 100 != 0) || ($year % 400 == 0)));
 }
 # REPO END
 
