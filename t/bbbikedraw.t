@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikedraw.t,v 1.16 2005/08/08 22:52:12 eserte Exp $
+# $Id: bbbikedraw.t,v 1.17 2006/01/28 16:25:50 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -43,6 +43,10 @@ BEGIN {
 
     if (eval { require BBBikeDraw::BerlinerStadtplan; 1 }) {
 	push @modules, "BerlinerStadtplan";
+    }
+
+    if (!eval { require GD::SVG; 1 }) { # Module does not pass tests anymore
+	@modules = grep { $_ ne "GD::SVG" } @modules;
     }
 }
 

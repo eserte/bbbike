@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.116 2006/01/09 00:45:30 eserte Exp $
+# $Id: Makefile.PL,v 1.119 2006/01/28 17:05:12 eserte Exp eserte $
 
 use 5.005;
 
@@ -128,7 +128,7 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
   [qw/File::ReadBackwards 0	all	0	devel/,
    'LogTracker plugin, Edititeren'],
   [qw/Date::Pcalc	0	all	0	devel/,
-   'LogTracker plugin (Alternative wäre Date::Calc)'],
+   'LogTracker plugin (mögliche Alternative ist Date::Calc)'],
   [qw/XBase		0	all	2	devel/,
    'Erzeugen der Mapserver- oder anderer ESRI-Dateien, notwendig für radzeit.de'],
   [qw/IPC::Run		0	all	0	base/,
@@ -142,6 +142,24 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
   # also: GD::SVG, but this module currently doesn't even pass tests!
   [qw/Object::Iterate	0	all	2	base/,
    'Notwendig für die radzeit.de-Version (bbd2esri)'],
+  [qw/Object::Realize::Later	0	all	0	base/,
+   'Notwendig für Strassen::Lazy, selten benötigt'],
+  [qw/Archive::Zip	0	all	2	cgi/,
+   'Zum Zippen der BBBike-Daten in bbbike-data.cgi'],
+  [qw/Text::CSV_XS	0	all	0	base/,
+   'Für das Parsen des MapInfo-Formats'],
+  [qw/DBI	0	all	0	base/,
+   'Für XBase/MySQL, siehe unten'],
+  [qw/DBD::XBase	0	all	0	base/,
+   'Für das Parsen des ESRI-Shapefile-Formats'],
+  [qw/XBase	0	all	0	base/,
+   'Ebenfalls für das Parsen des ESRI-Shapefile-Formats'],
+  [qw/DBD::mysql	0	all	0	base/,
+   'Für den Zugriff auf die Hausnummerdatenbank'],
+  [qw/Tie::IxHash	0	all	0	base/,
+   'Damit Direktiven in Straßen-Daten geordnet bleiben'],
+  [qw/CDB_File		0	all	0	base/,
+   'Für die alternative A*-Optimierung in XS/C'],
 
   [qw/Image::Info	0	all	0	test/],
   [qw/Test::More	0	all	0	test/],

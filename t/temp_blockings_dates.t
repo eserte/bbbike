@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: temp_blockings_dates.t,v 1.7 2004/12/08 21:07:08 eserte Exp $
+# $Id: temp_blockings_dates.t,v 1.8 2006/01/28 16:30:40 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -13,14 +13,14 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
 require BBBikeEdit;
-use Date::Calc qw(Mktime Today_and_Now);
 
 BEGIN {
     if (!eval q{
 	use Test::More qw(no_plan);
+	use Date::Calc qw(Mktime Today_and_Now); # fallback to Date::PCalc?
 	1;
     }) {
-	print "1..0 # skip: no Test module\n";
+	print "1..0 # skip: no Test::More and/or Date::Calc modules\n";
 	exit;
     }
 }

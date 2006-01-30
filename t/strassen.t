@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.8 2005/12/29 00:50:14 eserte Exp $
+# $Id: strassen.t,v 1.9 2006/01/30 08:06:46 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -149,7 +149,7 @@ EOF
 
 {
     for my $preserve_line_info (0, 1) {
-	my $s = Strassen->new_from_data_string(<<EOF, UseLocalDirectives => 1, PreserveLineInfo => $preserve_line_info);
+	my $s = Strassen->new_from_data_string(<<EOF, UseLocalDirectives => 1, PreserveLineInfo => $preserve_line_info)
 #:
 #: XXX block vvv
 1	1 1,1
@@ -171,8 +171,9 @@ EOF
 #: XXX2 multiple
 9	9 9,9
 EOF
+	    or diag "This test may fail if Tie::IxHash is not installed; then the ordering of directives cannot be preserved";
 
-	eq_or_diff($s->as_string, <<EOF, "block directives are preserved (PreserveLineInfo=$preserve_line_info)");
+	eq_or_diff($s->as_string, <<EOF, "block directives are preserved (PreserveLineInfo=$preserve_line_info)")
 #:
 #: XXX: block vvv
 1	1 1,1
@@ -193,6 +194,7 @@ EOF
 #: XXX2: multiple
 9	9 9,9
 EOF
+	    or diag "This test may fail if Tie::IxHash is not installed; then the ordering of directives cannot be preserved";
     }
 }
 

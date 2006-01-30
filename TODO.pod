@@ -16,7 +16,11 @@ Legend:
 
 =item * (M2)
 
-Kleinere Version für Straßennummerierungsschilder (+ Font) erzeugen.
+String::Approx/agrep/String::Similarity-Variante für die Volltextsuche anbieten.
+
+=item * (M2)
+
+Straßennummerierungsschilder (+ Font) werden nicht korrekt gezoomt.
 
 =item * (H5)
 

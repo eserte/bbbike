@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: read-gps-formats.t,v 1.6 2006/01/07 14:25:58 eserte Exp $
+# $Id: read-gps-formats.t,v 1.7 2006/01/28 16:57:53 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -81,7 +81,9 @@ for my $def (@strassen_formats) {
 	my $tests = 1;
 	skip("File $file not available", $tests) if !-f $file;
 	my $s = eval { Strassen->new($file) };
-	ok($s && scalar @{ $s->data }, "Format $fmt with file $file (Strassen)");
+	my $err = $@;
+	ok($s && scalar @{ $s->data }, "Format $fmt with file $file (Strassen)")
+	    or diag "Exception: $@";
     }
 }
 

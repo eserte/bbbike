@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.13 2006/01/17 21:54:01 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.14 2006/01/28 17:00:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -193,7 +193,7 @@ if (!eval {
 		Data::Dumper->VERSION(2.12); # Sortkeys
 	    };
 	    if ($@) {
-		skip("Need recent Data::Dumper (2.12, Sortkeys)", 1);
+		Test::More::skip("Need recent Data::Dumper (2.12, Sortkeys)", 1);
 	    }
 
 	    local $Data::Dumper::Sortkeys = $Data::Dumper::Sortkeys = 1;

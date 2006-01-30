@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: get_and_store_synop,v 1.6 2003/08/19 20:49:19 eserte Exp eserte $
+# $Id: get_and_store_synop,v 1.8 2006/01/29 20:26:40 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -40,6 +40,7 @@ my %stations = (
 		10384 => 'berlin_tempelhof',
 		10385 => 'berlin_schoenefeld',
 		10389 => 'berlin_alexanderplatz',
+		10289 => 'prenzlau', # Grünow - #10289 (53°19'N 13°56'E)
 	       );
 
 my $has_getopt_long = 1;
@@ -61,7 +62,7 @@ if (@ARGV) {
 	die "-station is missing";
     }
 
-    if (!exists $stations{$station}) {
+    if ($station !~ m{^\d+$} && !exists $stations{$station}) {
 	my %station_to_code = reverse %stations;
 	my $orig_station = $station;
 	$station = $station_to_code{$station};

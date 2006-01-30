@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: TkChange.pm,v 1.12 2005/06/30 00:46:49 eserte Exp $
+# $Id: TkChange.pm,v 1.13 2006/01/28 16:37:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999 Slaven Rezic. All rights reserved.
@@ -384,7 +384,7 @@ sub LocalisedMessageBox {
     BEGIN { if ($] < 5.006) { $INC{"warnings.pm"} = 1; *warnings::unimport = sub {} } }
     no warnings 'redefine';
     my $code = \&{"LocalisedMessageBox"};
-    *Tk::tk_messageBox = sub { &$code($kind,@_) };
+    *Tk::tk_messageBox = sub { &$code("tk_messageBox",@_) };
 }
 
 1;

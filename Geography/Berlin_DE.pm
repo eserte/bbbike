@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.22 2006/01/20 00:03:55 eserte Exp $
+# $Id: Berlin_DE.pm,v 1.23 2006/01/28 21:43:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2006 Slaven Rezic. All rights reserved.
@@ -25,36 +25,43 @@ use vars qw(%subcityparts %cityparts %subcitypart_to_citypart %properties);
 %subcityparts =
     (
      'Charlottenburg'	 => [qw/Charlottenburg-Nord Pichelsberg Westend
-			        Witzleben Halensee/],
+			        Witzleben/],
      'Friedrichshain'	 => [],
      'Hellersdorf'	 => [qw/Kaulsdorf Mahlsdorf/],
-     'Hohenschönhausen'	 => [qw/Falkenberg Margaretenhöhe Wartenberg Malchow/],
+     'Hohenschönhausen'	 => [qw/Falkenberg Margaretenhöhe Wartenberg Malchow/,
+			     "Alt-Hohenschönhausen", "Neu-Hohenschönhausen"],
      'Kreuzberg'	 => [],
      'Köpenick'		 => [qw/Friedrichshagen Grünau Hessenwinkel
 			        Karolinenhof
 			        Müggelheim Oberschöneweide Rahnsdorf
 			        Schmöckwitz Wilhelmshagen/],
-     'Lichtenberg'	 => [qw/Friedrichsfelde Karlshorst/],
+     'Lichtenberg'	 => [qw/Friedrichsfelde Karlshorst Rummelsburg
+				Fennpfuhl/],
      'Marzahn'		 => [qw/Biesdorf/],
      'Mitte'		 => [],
-     'Neukölln'		 => [qw/Britz Buckow Rudow/],
+     'Neukölln'		 => [qw/Britz Buckow Rudow Gropiusstadt/],
      'Pankow'		 => [qw/Blankenfelde Buch Niederschönhausen
-			        Rosenthal Buchholz/, 'Französisch Buchholz'], # Buchholz heißt heute "Französisch Buchholz"
+			        Rosenthal Buchholz Wilhelmsruh/,
+			     'Französisch Buchholz',
+			     'Stadtrandsiedlung Malchow',
+			    ], # Buchholz heißt heute "Französisch Buchholz"
      'Prenzlauer Berg'	 => [],
      'Reinickendorf'	 => [qw/Borsigwalde Frohnau Heiligensee Hermsdorf
 			        Konradshöhe Lübars Tegel Waidmannslust
 			        Wittenau/, 'Märkisches Viertel'],
      'Schöneberg'	 => [qw/Friedenau Schöneberg-Nord/],
-     'Spandau'		 => [qw/Gatow Kladow Siemensstadt Haselhorst Staaken/],
+     'Spandau'		 => [qw/Gatow Kladow Siemensstadt Haselhorst Staaken
+				Wilhelmstadt Hakenfelde/,
+			     'Falkenhagener Feld'],
      'Steglitz'		 => [qw/Lankwitz Lichterfelde/],
      'Tempelhof'	 => [qw/Lichtenrade Mariendorf Marienfelde/],
      'Tiergarten'	 => [qw/Tiergarten-Süd Hansaviertel Moabit/],
      'Treptow'		 => [qw/Adlershof Altglienicke Baumschulenweg
 			        Bohnsdorf Johannisthal
-			        Niederschöneweide/],
+			        Niederschöneweide Plänterwald/, 'Alt-Treptow'],
      'Wedding'		 => [qw/Gesundbrunnen/],
      'Weißensee'	 => [qw/Blankenburg Heinersdorf Karow/],
-     'Wilmersdorf'	 => [qw/Grunewald Schmargendorf/],
+     'Wilmersdorf'	 => [qw/Grunewald Schmargendorf Halensee/],
      'Zehlendorf'	 => [qw/Dahlem Nikolassee Wannsee/],
     );
 
