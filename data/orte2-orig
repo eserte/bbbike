@@ -1,42 +1,44 @@
+#:# -*- coding: utf-8 -*-
+#: encoding: utf-8
 #: title.de: Orte im weiteren Umland
 #: title.en: Places far away
-#: version: $Id: orte2-orig,v 4.17 2005/11/19 22:55:48 eserte Exp eserte $
+#: version: $Id: orte2-orig,v 4.18 2006/02/01 23:38:19 eserte Exp $
 #:
 # Mecklenburg-Vorpommern, Brandenburg
 Rostock	5 -79160,185302
-Warnemünde	0 -83112,195145
+WarnemÃ¼nde	0 -83112,195145
 Schwerin	5 -127134,133359
 Wismar	5 -124516,162827
 Dorf Mecklenburg	2 -124041,157272
 Bad Doberan	4 -95364,186923
 Ostseebad Heiligendamm	0 -99712,191131
 Ostseebad Rerik	3 -114327,186494
-Kühlungsborn	3 -106940,191400
+KÃ¼hlungsborn	3 -106940,191400
 Jakobshagen	1 19529,89093
 Boitzenburg	2 22448,95808
 Hardenbeck	1 18843,95122
-Fürstenwerder	2 20631,109980
+FÃ¼rstenwerder	2 20631,109980
 Woldegk	3 20839,117478
 Canzow	0 18200,117892
 Hinrichshagen	1 15524,116146
 Rehberg	1 12439,114668
-Quadenschönfeld	0 4846,113002
+QuadenschÃ¶nfeld	0 4846,113002
 Warbende	0 1978,111942
 Brohm	1 21021,134071
 Rattey	0 22303,130287
 Voigtsdorf	1 24678,128434
-Groß Daberkow	1 24830,122277
+GroÃŸ Daberkow	1 24830,122277
 Klein Daberkow	0 25109,125933
-Groß Miltzow	2 21339,125641
+GroÃŸ Miltzow	2 21339,125641
 Mildenitz	1 24153,118737
-Schönbeck	1 19430,131043
+SchÃ¶nbeck	1 19430,131043
 Friedland|(Vorpommern)	3 17403,140308
 Anklam	4 26981,161601
 Pinnow|bei Anklam	0 33116,166807
 Relzow	0 27848,165204
 Karnin	0 38537,160709
-Westklüne	0 42418,161106
-Ostklüne	0 42587,161025
+WestklÃ¼ne	0 42418,161106
+OstklÃ¼ne	0 42587,161025
 Zecherin	0 36892,162044
 Selenthin	0 38508,162341
 Morgenitz	1 45725,169643
@@ -62,12 +64,12 @@ Benz	2 52668,171487
 Sellin|(bei Benz)	0 53943,173459
 Sallenthin	1 55704,172720
 Neu Sallenthin	0 55690,173671
-Züssow	2 16863,174737
+ZÃ¼ssow	2 16863,174737
 Sarnow	2 22586,149952
-Götschendorf	0 27309,76652
-Böckenberg	0 33059,81496
-Suckow|am Oberückersee	0 38986,84365
-Groß Friedenwalde	1 35554,80921
+GÃ¶tschendorf	0 27309,76652
+BÃ¶ckenberg	0 33059,81496
+Suckow|am OberÃ¼ckersee	0 38986,84365
+GroÃŸ Friedenwalde	1 35554,80921
 Klein Friedenwalde	0 33769,80829
 Friedenfelde	1 31236,81841
 Neudorf|(Friedenfelde)	0 30311,82061
@@ -81,21 +83,21 @@ Temmen	2 33290,77277
 Neu Temmen	0 34287,76273
 Kaakstedt	1 34050,85844
 Flieth	1 36807,84506
-Fergitz|am Oberückersee	0 38674,86779
-Görlsdorf|bei Angermünde	1 45864,72724
+Fergitz|am OberÃ¼ckersee	0 38674,86779
+GÃ¶rlsdorf|bei AngermÃ¼nde	1 45864,72724
 Poratz	0 35469,73594
-Steinhöfel|b. Angermünde	1 41299,77101
-Friedrichsfelde|(Steinhöfel)	0 38853,77099
-Neuhaus|bei Steinhöfel	0 38103,75222
+SteinhÃ¶fel|b. AngermÃ¼nde	1 41299,77101
+Friedrichsfelde|(SteinhÃ¶fel)	0 38853,77099
+Neuhaus|bei SteinhÃ¶fel	0 38103,75222
 Peetzig	0 43778,74590
 Gerswalde	2 32311,85560
 Stegelitz	1 39303,80853
 Pfingstberg|bei Stegelitz	0 40700,81012
 Ausbau (Afrika)|bei Stegelitz	0 37428,79238
 Wilmersdorf|(Uckermark)	1 43151,79054
-Günterberg	1 47124,77624
+GÃ¼nterberg	1 47124,77624
 Welsow	1 49911,74427
-Mürow	1 51978,72803
+MÃ¼row	1 51978,72803
 Henriettenhof	0 54025,69287
 Dobberzin	1 52316,69186
 Bruchhagen	1 47872,75827
@@ -103,16 +105,16 @@ Frauenhagen	1 52218,75821
 Pinnow|(Uckermark)	2 55594,73546
 Landin|(Uckermark)	1 59336,75763
 Hohenlandin	0 58561,76772
-Schönermark|(Uckermark)	1 54924,78764
+SchÃ¶nermark|(Uckermark)	1 54924,78764
 Schapow	1 29003,106256
-Grünow|(Uckermark)	1 54326,80597
+GrÃ¼now|(Uckermark)	1 54326,80597
 Briest	1 53387,83859
 Stendell	1 60818,83099
 Jamikow	1 61483,85226
-Schönow|(Uckermark)	1 59749,87039
-Zechlinerhütte	1 -27024,82802
+SchÃ¶now|(Uckermark)	1 59749,87039
+ZechlinerhÃ¼tte	1 -27024,82802
 Adamswalde	0 -22743,84940
-Großzerlang	1 -22148,86587
+GroÃŸzerlang	1 -22148,86587
 Kleinzerlang	0 -24423,86440
 Canow	1 -25192,87735
 Luhme	1 -29126,86083
@@ -125,21 +127,21 @@ Weggun	1 20367,102950
 Arendsee	1 23320,103731
 Bergfeld	0 93,105239
 Wittenhagen	0 13185,104051
-Fürstenhagen	1 15430,103770
-Gützkow	3 7587,170583
-Möllenbeck	2 4003,109246
-Karstädt	2 -103780,81363
+FÃ¼rstenhagen	1 15430,103770
+GÃ¼tzkow	3 7587,170583
+MÃ¶llenbeck	2 4003,109246
+KarstÃ¤dt	2 -103780,81363
 Prenzlau	4 39682,101543
-Bündigershof	0 42981,101756
+BÃ¼ndigershof	0 42981,101756
 Wollenthin	0 43200,102737
-Seelübbe	0 42437,96300
-Brüssow	3 57405,111424
-Moor|(Brüssow)	0 55287,109712
-Hammelstall|(Brüssow)	0 56821,109071
+SeelÃ¼bbe	0 42437,96300
+BrÃ¼ssow	3 57405,111424
+Moor|(BrÃ¼ssow)	0 55287,109712
+Hammelstall|(BrÃ¼ssow)	0 56821,109071
 Woddow	1 61091,109037
-Bagemühl	1 62608,106744
+BagemÃ¼hl	1 62608,106744
 Damme|(Uckermark)	1 49971,99565
-#: XXX: Randowtal: besteht aus Eickstedt, Schmölln und Ziemkendorf.
+#: XXX: Randowtal: besteht aus Eickstedt, SchmÃ¶lln und Ziemkendorf.
 Eickstedt	1 51860,100659
 Warnitz	2 40978,86915
 Neuhof|(Warnitz)	0 42210,88596
@@ -158,8 +160,8 @@ Cremzow	0 51391,106540
 Kleptow	0 49112,107575
 Carmzow	2 52173,109779
 Hedwigshof|(bei Carmzow)	0 54450,109425
-Grünberg	2 59136,106775
-Trampe|bei Grünberg	0 57498,107476
+GrÃ¼nberg	2 59136,106775
+Trampe|bei GrÃ¼nberg	0 57498,107476
 Schwaneberg	0 57125,102912
 Battin	0 59774,105301
 Wollin|(Eickstedt)	0 53952,97760
@@ -168,8 +170,8 @@ Berghausen|bei Seehausen	0 42081,92815
 Siefertshof|(bei Seehausen)	0 40981,94200
 Pinnow|bei Gerswalde	0 34805,90367
 Buchholz|bei Gerswalde	0 31796,89304
-Blankensee|bei Haßleben	0 28994,87995
-Kuhz|bei Haßleben	0 26263,91234
+Blankensee|bei HaÃŸleben	0 28994,87995
+Kuhz|bei HaÃŸleben	0 26263,91234
 Wichmannsdorf|bei Boitzenburg	1 24878,93441
 Lindenhagen	0 33342,94000
 Beenz	1 30510,95194
@@ -177,41 +179,41 @@ Sternhagen	1 35791,93615
 Schmachtenhagen|(Uckermark)	0 34595,96512
 Zollchow	0 38900,95643
 Neu Zollchow	0 36544,95193
-Röpersdorf	1 38562,97687
+RÃ¶persdorf	1 38562,97687
 Fergitz	0 38674,86779
 Melzow	0 41882,85331
 Dreesch	0 46093,99430
 Falkenwalde|(Uckermark)	1 49834,96903
-Mattheshöhe|(bei Falkenwalde)	0 48318,97450
+MattheshÃ¶he|(bei Falkenwalde)	0 48318,97450
 Kleinow|(Falkenwalde)	0 50846,97187
 Neu-Kleinow	0 49872,95222
 Weselitz	0 47542,95568
 Bertikow	1 45239,93930
 Bertikow Ausbau	0 43295,94461
 Bietikow	1 44920,96794
-Hohengüstow	1 48068,93338
-Lützlow	1 52103,93487
+HohengÃ¼stow	1 48068,93338
+LÃ¼tzlow	1 52103,93487
 Biesenbrow	1 50593,80084
 Schmiedeberg	1 46191,82616
-Polßen	1 47579,85189
+PolÃŸen	1 47579,85189
 Meichow	1 48404,87292
 Neumeichow	0 47090,88237
 Fredersdorf|(Uckermark)	1 51540,85957
 Zichow	1 51884,87559
 Golm|(Uckermark)	1 51689,83925
 Blankenburg|(Uckermark)	1 44965,90806
-Schmölln	1 55984,100093
-Grünow	2 45189,101514
-Mönchehof|(Grünow)	0 47871,103089
+SchmÃ¶lln	1 55984,100093
+GrÃ¼now	2 45189,101514
+MÃ¶nchehof|(GrÃ¼now)	0 47871,103089
 Dedelow	2 35175,106764
-Schönermark|(bei Prenzlau)	2 29110,103270
+SchÃ¶nermark|(bei Prenzlau)	2 29110,103270
 Naugarten	0 27142,100908
 Wilhelmshof	0 30734,103253
 Neustrelitz	4 -14770,105941
 Wesenberg	3 -21335,96890
 Ducherow	2 33001,151572
 Jarmen	3 3419,168376
-Ückeritz	2 50798,179470
+Ãœckeritz	2 50798,179470
 Ludwigslust	4 -120795,100343
 Grabow|(Mecklenburg)	3 -116692,94946
 Schwedt	5 69359,73390
@@ -227,58 +229,58 @@ Neubrandenburg	4 -1725,127713
 Altentreptow	3 -2694,142835
 Burow	2 -1737,151716
 Lassen	3 37037,171747
-Peenemünde	1 31807,193274
+PeenemÃ¼nde	1 31807,193274
 Greiffenberg	3 46563,76471
 Gramzow	2 49779,90206
 Zehnebeck	0 52723,90807
-Randowhöhe	0 53956,95685
+RandowhÃ¶he	0 53956,95685
 Neustadt-Glewe	3 -115372,106534
 Wittstock|a.d. Dosse	4 -53744,82975
 Mirow	3 -31370,95842
 Pritzwalk	4 -74653,81289
-#: alias: Ückermünde
-Ueckermünde	4 51049,148745
+#: alias: ÃœckermÃ¼nde
+UeckermÃ¼nde	4 51049,148745
 Grambin	1 49343,150632
 Stralsund	5 -15329,211585
 Brandshagen	2 -9220,203447
 Stahlbrode	0 -1660,202898
 Reinberg	1 -3855,200851
-Garz|(Rügen)	3 2384,212247
+Garz|(RÃ¼gen)	3 2384,212247
 Poseritz	2 -2524,210079
 Losentitz	0 2110,204705
 Putbus	3 10574,216684
 Pasewalk	3 47819,122867
 Ostseebad Binz	2 19789,222004
-Bergen|auf Rügen	4 7796,223783
+Bergen|auf RÃ¼gen	4 7796,223783
 Prohn	2 -19939,217939
 Rambin	1 -7477,216462
 Lychen	3 2788,89447
-Haßleben	1 28544,90574
+HaÃŸleben	1 28544,90574
 Petznick	1 23701,84425
 Klosterwalde	1 19685,85251
 Gollmitz	1 30504,99595
 Horst|bei Golmitz	0 32535,101203
-Güstow	1 34589,102405
+GÃ¼stow	1 34589,102405
 Klinkow	1 35971,104165
 Rathsberge	0 37230,100007
 Blindow	1 41165,106483
-Schönwerder	1 38489,108154
+SchÃ¶nwerder	1 38489,108154
 Ellingen	0 37437,105478
 Berkholz	1 26128,97916
 Carpin	1 -2570,105293
-Grünow|(bei Feldberg)	1 2226,104245
+GrÃ¼now|(bei Feldberg)	1 2226,104245
 Koldenhof	0 3988,102399
 Gandenitz	1 11314,85183
 Penzlin	3 -13583,121711
 Boizenburg|/Elbe	3 -173946,104334
 Pritzier	1 -149676,105337
-Röbel	3 -45801,107049
-Waren|(Müritz)	4 -41163,123047
+RÃ¶bel	3 -45801,107049
+Waren|(MÃ¼ritz)	4 -41163,123047
 Diemitz	1 -29888,88105
 Dorf Zechlin	1 -33491,80874
 Flecken Zechlin	1 -34304,82987
-Saßnitz	3 21077,234661
-Ostseebad Göhren	2 28435,215851
+SaÃŸnitz	3 21077,234661
+Ostseebad GÃ¶hren	2 28435,215851
 Middelhagen	1 26389,214433
 Lobbe	0 27178,213178
 Ostseebad Sellin	2 25320,219781
@@ -302,7 +304,7 @@ Neppermin	1 50393,171375
 Katschow	0 51604,167865
 Plau|am See	3 -69253,115567
 Schwarzenbek	3 -190739,118747
-Lütau	2 -185764,110900
+LÃ¼tau	2 -185764,110900
 Escheburg	2 -202042,114175
 Glinde	3 -209252,122140
 Reinbek	3 -206074,119025
@@ -316,7 +318,7 @@ Wollschow	1 61885,112074
 Sonnenberg|(bei Retzin)	0 70127,111146
 Retzin	0 66800,112881
 Ramin	0 68603,113156
-Löcknitz|(Vorpommern)	2 63107,117496
+LÃ¶cknitz|(Vorpommern)	2 63107,117496
 Betzin	1 -33911,38631
 Brunne	1 -36131,39797
 Blumenholz	1 -10837,111699
@@ -346,7 +348,7 @@ Himmelpfort	1 -3067,85696
 Carwitz	0 10913,99605
 Rodlin-Thurow	2 -3405,109756
 Loitz	3 -11407,173953
-Görmin	2 -1917,176283
+GÃ¶rmin	2 -1917,176283
 Bentzin	2 -1748,171034
 Reuterstadt Stavenhagen	3 -26102,142842
 Rosenow	1 -17298,135336
@@ -377,11 +379,11 @@ Dannenwalde	2 -69696,67716
 Blandikow	1 -60087,77692
 Speck	0 -30045,114237
 Ribnitz-Damgarten	3 -59747,203032
-Ostseebad Graal-Müritz	2 -72052,203678
+Ostseebad Graal-MÃ¼ritz	2 -72052,203678
 Ostseebad Diehagen	2 -64584,208371
 Ostseebad Wustrow	2 -62126,214374
 Ostseebad Boltenhagen	1 -142363,172981
-Löbnitz|(Mecklenburg)	1 -40206,209238
+LÃ¶bnitz|(Mecklenburg)	1 -40206,209238
 Steinhagen	2 -21703,201908
 Grimmen	3 -17922,189042
 Neukalen	3 -34181,156880
@@ -389,28 +391,28 @@ Dargun	3 -29936,164984
 Malchin	3 -35961,147383
 Hitzacker	3 -151317,79834
 Neu Darchau	2 -162755,88202
-Dömitz	3 -137773,79328
+DÃ¶mitz	3 -137773,79328
 Ahrensburg	3 -207119,137428
-Großensee	2 -200289,130660
+GroÃŸensee	2 -200289,130660
 Richtenberg	3 -28339,199046
 Franzburg	3 -28877,197510
 Teterow	3 -49199,151164
 Gnoien	3 -40134,172956
-Bad Sülze	3 -43797,188545
+Bad SÃ¼lze	3 -43797,188545
 Tribsees	3 -37079,186986
 Dassow	3 -157242,164522
-Travemünde	0 -164551,170069
+TravemÃ¼nde	0 -164551,170069
 Neustadt|i. Holstein	4 -168532,185715
-Lübeck	5 -177268,158951
+LÃ¼beck	5 -177268,158951
 Burg|a. Fehmarn	4 -141926,222560
 Puttgarden	0 -140707,228954
 Landkirchen|a. Fehmarn	3 -145249,223995
-Großenbrode	3 -149473,215268
+GroÃŸenbrode	3 -149473,215268
 Oldenburg|i. Holstein	3 -164504,205797
 Heiligenhafen	4 -158722,214977
-Lütjenburg	3 -185716,205664
+LÃ¼tjenburg	3 -185716,205664
 Kiel	5 -215604,208878
-Eckernförde	4 -236318,224563
+EckernfÃ¶rde	4 -236318,224563
 Damp	2 -228311,236666
 Warenthin	0 -27980,78149
 Pelzkuhl	0 -19245,86846
@@ -419,7 +421,7 @@ Tessin	3 -57072,179343
 Sanitz	2 -62304,184777
 Gresenhorst	2 -60122,192991
 Marlow	3 -50124,193500
-# Süden
+# SÃ¼den
 Leipzig	6 -57083,-119556
 Schkeuditz	4 -67652,-114176
 Dresden	6 36012,-150175
@@ -429,7 +431,7 @@ Nienburg	3 -99329,-65133
 Bernburg	3 -100606,-69760
 Aschersleben	4 -120131,-74464
 Ermsleben	3 -128061,-77502
-Köthen	4 -85143,-74737
+KÃ¶then	4 -85143,-74737
 Quellendorf	2 -74525,-74893
 Prosigk	2 -79460,-80066
 Libbesdorf	1 -75991,-72165
@@ -444,40 +446,40 @@ Reppichau	1 -77937,-67763
 Grossbadegast	1 -81506,-76736
 Chorau	1 -75093,-67200
 Osternienburg	2 -81406,-69725
-Elsdorf (Köthen)	0 -84643,-71312
+Elsdorf (KÃ¶then)	0 -84643,-71312
 Micheln	1 -85300,-68006
-Porst (Köthen)	0 -83331,-72431
+Porst (KÃ¶then)	0 -83331,-72431
 Dohndorf	1 -92206,-77781
 Biendorf	1 -93381,-74606
-Preußlitz	1 -96035,-76870
+PreuÃŸlitz	1 -96035,-76870
 Lebendorf	2 -97750,-78712
 Kleinzerbst	1 -79550,-67705
 Wulfen	2 -87975,-66985
 Baasdorf	1 -84814,-79401
-Wörbzig	2 -90463,-78398
+WÃ¶rbzig	2 -90463,-78398
 Vockerode	1 -59497,-63470
 Gerbstedt	3 -108380,-88265
 Dommitzsch	3 -23071,-86116
 Schlieben	3 10891,-76044
 Hohenleipisch	2 23261,-100939
-Schönborn	2 19368,-90090
+SchÃ¶nborn	2 19368,-90090
 Trebbus	1 19602,-79700
 Hohenbucko	1 16490,-71081
-Weißenfels	4 -84670,-135807
+WeiÃŸenfels	4 -84670,-135807
 Grimma	4 -33243,-131655
 Torgau	4 -15339,-94982
 Riesa	5 6224,-123089
-Mühlberg	3 387,-108214
+MÃ¼hlberg	3 387,-108214
 Schilda	1 11423,-88891
 Radebeul	4 31915,-144447
-Meißen	4 18257,-138004
+MeiÃŸen	4 18257,-138004
 Elster	2 -27223,-65150
 Pretzsch	3 -28379,-77895
 Dahme	3 13308,-59619
 Forst	4 96181,-72790
-Döbern	3 93670,-86458
+DÃ¶bern	3 93670,-86458
 Seyda	2 -22274,-59090
-Kropstädt	2 -33166,-50007
+KropstÃ¤dt	2 -33166,-50007
 Marzahna	1 -31155,-45913
 Luckau	3 32174,-61385
 Uckro	1 26261,-61447
@@ -491,9 +493,9 @@ Falkenberg|(Elster)	3 1142,-91254
 Uebigau	3 5358,-90502
 Herzberg|(Elster)	3 717,-79591
 Bad Liebenwerda	3 11943,-99051
-Wahrenbrück	2 9904,-95170
+WahrenbrÃ¼ck	2 9904,-95170
 Elsterwerda	4 20812,-105130
-Gröditz	3 15729,-110682
+GrÃ¶ditz	3 15729,-110682
 Lauchhammer	4 37087,-100932
 Doberlug-Kirchhain	3 23255,-86184
 Finsterwalde	4 32941,-85970
@@ -522,35 +524,35 @@ Klieken	2 -58072,-59096
 Buro	0 -56002,-59625
 Zieko	1 -55692,-56061
 Waldersee|(Dessau)	0 -64834,-64089
-Blönsdorf	2 -23682,-50610
+BlÃ¶nsdorf	2 -23682,-50610
 Spremberg	4 78180,-91998
 Welzow	3 64833,-91449
-Großräschen	3 53805,-90240
+GroÃŸrÃ¤schen	3 53805,-90240
 Senftenberg	4 53617,-97834
 Lauta	3 60676,-104172
 Sonnewalde	2 28889,-78672
 Coswig	4 -52365,-59430
-Roßlau	4 -67286,-59097
+RoÃŸlau	4 -67286,-59097
 Zahna	3 -30177,-55700
-Großenhain	4 22065,-123421
-Nünchritz	2 12075,-123275
-Röderau	2 9279,-119706
+GroÃŸenhain	4 22065,-123421
+NÃ¼nchritz	2 12075,-123275
+RÃ¶derau	2 9279,-119706
 Hoyerswerda	4 71139,-106342
 Schwarzheide	3 41798,-101715
 Ruhland	3 44238,-104788
 Kemberg	3 -40263,-71457
-Bad Düben	3 -43359,-91598
-Söllichau	2 -39401,-86738
+Bad DÃ¼ben	3 -43359,-91598
+SÃ¶llichau	2 -39401,-86738
 Eutzsch	1 -40094,-66390
 Jessen	3 -18500,-69085
 Bernsdorf	3 58390,-113738
-Niedergörsdorf	1 -17070,-48181
-Damsdorf|(Niederer Fläming)	0 13763,-49203
-Buckow|(Niederer Fläming)	1 11088,-51107
+NiedergÃ¶rsdorf	1 -17070,-48181
+Damsdorf|(Niederer FlÃ¤ming)	0 13763,-49203
+Buckow|(Niederer FlÃ¤ming)	1 11088,-51107
 Petkus	1 8409,-46243
-Groß Ziescht	1 17332,-46325
+GroÃŸ Ziescht	1 17332,-46325
 Niebendorf-Heinsdorf	2 7032,-53095
-Altgolßen	0 22225,-48133
+AltgolÃŸen	0 22225,-48133
 Wahlsdorf	1 6378,-50208
 Liepe|(b. Dahme)	1 8810,-50414
 Jetsch	1 27841,-53194
@@ -561,60 +563,60 @@ Lebusa	2 13073,-67846
 Oelsig	1 10200,-80378
 Nexdorf	1 10166,-85566
 Langennaundorf	1 8339,-89195
-Schönewalde	3 67,-66097
-Brandis|(b. Schönewalde)	1 -3223,-68180
+SchÃ¶newalde	3 67,-66097
+Brandis|(b. SchÃ¶newalde)	1 -3223,-68180
 Illmersdorf	1 7949,-58463
 Meinsdorf	1 2652,-62332
 Hohenseefeld	2 5061,-57527
 Hohennahlsdorf	1 -7465,-53204
 Markendorf	1 -4249,-47129
-Jänickendorf|b. Luckenwalde	1 -565,-39268
-Stülpe	1 5962,-40029
+JÃ¤nickendorf|b. Luckenwalde	1 -565,-39268
+StÃ¼lpe	1 5962,-40029
 Kummersdorf Gut	1 8259,-34363
 Woltersdorf|b. Luckenwalde	1 -2319,-32806
 Oehna	2 -13435,-53458
 Gentha	1 -22474,-62608
 Plessa	2 27775,-104430
 Wormlage	2 46570,-88820
-Tröbitz	2 14131,-90080
+TrÃ¶bitz	2 14131,-90080
 Bad Muskau	3 102252,-94136
-Königsbrück	3 47102,-126498
+KÃ¶nigsbrÃ¼ck	3 47102,-126498
 Radeburg	3 35239,-132032
 Klotzsche	0 39071,-143285
 Weixdorf	1 40431,-139079
 Bautzen	4 82740,-135185
 Heidenau	4 44905,-158725
 Schirgiswalde	3 83573,-146598
-Weißwasser	4 96690,-98895
+WeiÃŸwasser	4 96690,-98895
 Wittichenau	3 70116,-112268
 Bad Schandau	3 65176,-164757
-Königstein	3 59496,-164832
+KÃ¶nigstein	3 59496,-164832
 Pirna	4 49664,-160444
 Wettin	3 -96278,-93492
 Halle	5 -84779,-105018
 Merseburg	4 -83046,-118127
 Leuna	3 -80886,-122287
-Bad Dürrenberg	3 -78075,-124814
-Lützen	3 -72753,-129684
+Bad DÃ¼rrenberg	3 -78075,-124814
+LÃ¼tzen	3 -72753,-129684
 Taucha	3 -48429,-115046
-Könnern	3 -98707,-84038
+KÃ¶nnern	3 -98707,-84038
 Alsleben	3 -104794,-80512
 Delitzsch	4 -59905,-99645
-Jeßnitz	3 -62910,-81813
+JeÃŸnitz	3 -62910,-81813
 Wolfen	4 -64444,-84108
 Bitterfeld	4 -60894,-88195
 Raguhn	3 -64086,-78442
 Eilenburg	3 -40564,-106557
 Brehna	3 -68505,-95874
-Gräfenhainichen	3 -52274,-76482
+GrÃ¤fenhainichen	3 -52274,-76482
 Oranienbaum	3 -55894,-68921
-Wörlitz	3 -55109,-64031
+WÃ¶rlitz	3 -55109,-64031
 Radis	1 -48347,-74032
 Seegrehna	2 -45877,-64834
 Pratau	1 -39691,-63580
-Schköna	1 -46410,-81732
+SchkÃ¶na	1 -46410,-81732
 Pouch	1 -55331,-88573
-Löbnitz|(Sachsen)	2 -51531,-91717
+LÃ¶bnitz|(Sachsen)	2 -51531,-91717
 Reibitz	1 -51683,-95589
 Brinnis	1 -52872,-100139
 Hohenroda	1 -53606,-102338
@@ -624,7 +626,7 @@ Landsberg	3 -72138,-99544
 Brandis	3 -40748,-120147
 Wurzen	4 -32262,-116410
 Kamenz	4 60752,-124811
-Görlitz	5 121442,-138202
+GÃ¶rlitz	5 121442,-138202
 Zgorzelec	3 122653,-137792
 Ostritz	3 117771,-152973
 # Westen
@@ -639,23 +641,23 @@ Derenburg	3 -157657,-62566
 Lindau	2 -76907,-42769
 Quedlinburg	3 -141338,-71221
 Hoym	3 -130310,-71988
-Güsten	3 -110187,-70353
+GÃ¼sten	3 -110187,-70353
 Hecklingen	3 -115298,-64647
 Stassfurt	4 -111971,-63365
 Osterburg	3 -101651,40695
 Gommern	3 -95650,-38950
-Möckern	3 -87458,-31318
+MÃ¶ckern	3 -87458,-31318
 Ziesar	3 -64739,-16816
 Tucheim	2 -72304,-14275
-Görzke	2 -58799,-27258
+GÃ¶rzke	2 -58799,-27258
 Zerbst	4 -78034,-50355
 Leitzkau	2 -87426,-40487
 Magdeburg	6 -108962,-31703
 Wolmirstedt	3 -108659,-19330
-Schönebeck	4 -101869,-44835
+SchÃ¶nebeck	4 -101869,-44835
 Burg|bei Magdeburg	4 -94356,-16746
 Haldensleben	3 -122840,-14896
-Möser	2 -98297,-23053
+MÃ¶ser	2 -98297,-23053
 Parey	2 -85686,-4539
 Torfhaus	0 -182998,-70896
 Barby	3 -91709,-50815
@@ -677,31 +679,31 @@ Gladau	2 -78364,-12779
 Karow|b. Genthin	2 -66668,-8356
 Bergzow	2 -81235,-2890
 Zitz	2 -62793,-10268
-Rogäsen	2 -60468,-10637
+RogÃ¤sen	2 -60468,-10637
 Viesen	1 -58228,-10328
 Mahlenzien	0 -54749,-9973
 Wenzlow	1 -53700,-13146
 Grabow|b. Burg	3 -86998,-19206
 Stresow	2 -83372,-18171
-Krüssau	2 -80313,-16304
+KrÃ¼ssau	2 -80313,-16304
 Drewitz|b. Ziesar	1 -73061,-22921
 Mageburgerforth	1 -70981,-21078
 Hohenziatz	2 -80783,-26580
 Wollin	2 -52699,-15079
-Groß Briesen	1 -51495,-18688
-Gräben	2 -55228,-20440
+GroÃŸ Briesen	1 -51495,-18688
+GrÃ¤ben	2 -55228,-20440
 Dahlen	0 -55857,-23054
 Hohenlobesse	1 -65441,-27992
-Klein Lübars	0 -77362,-27564
-Lübars|b. Möckern	2 -75775,-28011
-Theeßen	2 -81120,-19900
-Küsel	2 -79428,-21374
-Bücknitz	1 -62153,-15009
+Klein LÃ¼bars	0 -77362,-27564
+LÃ¼bars|b. MÃ¶ckern	2 -75775,-28011
+TheeÃŸen	2 -81120,-19900
+KÃ¼sel	2 -79428,-21374
+BÃ¼cknitz	1 -62153,-15009
 Glienecke|b. Ziesar	2 -59014,-15413
 Plaue	0 -56732,-1070
 Lostau	2 -102150,-23937
 Wusterwitz	2 -58606,-5512
-Kirchmöser Dorf	0 -55628,-4672
+KirchmÃ¶ser Dorf	0 -55628,-4672
 Kade	1 -66484,-4328
 Oschersleben	3 -136861,-44762
 Schwanebeck|b. Halberstadt	3 -143725,-51566
@@ -709,16 +711,16 @@ Hadmersleben	3 -131583,-48946
 Wanzleben	3 -122308,-41028
 Blumenberg	0 -120964,-43699
 Osterweddingen	1 -112727,-43035
-Gröningen	3 -136910,-54468
+GrÃ¶ningen	3 -136910,-54468
 Kroppenstedt	3 -130834,-54265
 Harsleben	2 -144837,-62705
-Tangermünde	4 -86172,13797
-Tangerhütte	3 -97328,1281
+TangermÃ¼nde	4 -86172,13797
+TangerhÃ¼tte	3 -97328,1281
 Stendal	4 -94596,20606
 Jerichow	3 -83453,8828
 Arneburg	3 -84879,28408
 Klietz	2 -81031,27394
-Schönhausen	2 -82584,18099
+SchÃ¶nhausen	2 -82584,18099
 Wernigerode	4 -166324,-67061
 Elbingerode|(Harz)	3 -164748,-74000
 Benzigerode	2 -160632,-66740
@@ -727,22 +729,22 @@ Ilsenburg|(Harz)	3 -173296,-63682
 Calbe	4 -99042,-57415
 Frankenfelde|b. Luckenwalde	1 -8812,-33517
 Gottsdorf	0 -11218,-31357
-Frankenförde	1 -11274,-34084
+FrankenfÃ¶rde	1 -11274,-34084
 Felgentreu	1 -14821,-35276
-Zülichendorf	1 -14657,-32531
+ZÃ¼lichendorf	1 -14657,-32531
 Ruhlsdorf|b. Luckenwalde	1 -4835,-31548
 Niebelhorst	1 -18933,-31794
 Niebel	1 -21565,-30889
 # Osten
 Weichensdorf	1 76179,-34273
-Möbiskruge	1 92006,-32229
+MÃ¶biskruge	1 92006,-32229
 Schernsdorf	1 83338,-22806
 Viereck	2 51322,127931
 Fahrenwalde	1 53340,115664
 Damerow	1 47144,115705
-Schönfeld|(Uckermark)	1 47894,112908
-Tornow|(bei Schönfeld, Uckermark)	0 45810,110576
-Neuenfeld|(bei Schönfeld, Uckermark)	0 49887,113837
+SchÃ¶nfeld|(Uckermark)	1 47894,112908
+Tornow|(bei SchÃ¶nfeld, Uckermark)	0 45810,110576
+Neuenfeld|(bei SchÃ¶nfeld, Uckermark)	0 49887,113837
 Wittenhof	0 43199,105408
 Schenkenberg|(bei Prenzlau)	1 45406,107350
 Ludwigsburg	1 47587,106693
@@ -752,14 +754,14 @@ Werbelow	0 39980,117080
 Trebenow	0 38608,115822
 Bandelow	0 38676,112636
 Klockow	0 49578,110877
-Bröllin	0 51891,118057
-Züsedom	1 50148,115972
+BrÃ¶llin	0 51891,118057
+ZÃ¼sedom	1 50148,115972
 Nieden	1 43275,115703
 Schmarsow	0 44142,117823
 Nechlin	1 41182,115991
-Torgelow-Holländerei	1 50935,142656
+Torgelow-HollÃ¤nderei	1 50935,142656
 Liepgarten	2 50312,146948
-Mönkebude	2 45649,151924
+MÃ¶nkebude	2 45649,151924
 Leopoldshagen	2 40958,152758
 Bugewitz	2 36594,153973
 Kamp	0 37642,160110
@@ -776,8 +778,8 @@ Krummin	1 36973,183302
 Sauzin	0 32808,181821
 Ziemitz	0 32639,180129
 Netzelkow	0 40874,180778
-Grüssow	0 44766,175673
-Mölschow	1 36112,186478
+GrÃ¼ssow	0 44766,175673
+MÃ¶lschow	1 36112,186478
 Trassenheide	2 37881,187596
 Bannemin	0 37278,185225
 Karlshagen	2 35595,190464
@@ -785,76 +787,76 @@ Neuendorf	0 39755,181509
 Zemnin	2 44291,185477
 Koserow	2 47391,183243
 Loddin	2 47869,180496
-Kölpinsee	0 49060,182334
+KÃ¶lpinsee	0 49060,182334
 Pudagla	1 52328,174629
 Stolpe|(Usedom)	1 47071,163315
 Welzin|bei Stolpe	0 45028,161679
 Dargen	1 52228,165503
 Gummlin	0 49188,164029
-Görke	0 54147,165600
+GÃ¶rke	0 54147,165600
 Kachlin	0 52616,166814
 Reetzow	0 54252,170649
 Gothen	0 56858,172064
 Ulrichshorst	0 57551,168448
 Korswandt	1 58775,169081
-Grüna	1 -10396,-42142
+GrÃ¼na	1 -10396,-42142
 Neuhof|b. Zinna	1 -6565,-41080
 Kloster Zinna	2 -8847,-42819
 Neuheim	1 -12106,-43516
-Werder|b. Jüterbog	1 -7126,-44434
-Fröhden|b. Markendorf	0 -4182,-48323
+Werder|b. JÃ¼terbog	1 -7126,-44434
+FrÃ¶hden|b. Markendorf	0 -4182,-48323
 Kolzenburg	1 -4815,-38824
 Gottow	1 1870,-35490
-Scharfenbrück	1 398,-32056
-Schöneweide|b. Luckenwalde	1 2376,-33377
-Moldenhütten	0 -976,-35557
+ScharfenbrÃ¼ck	1 398,-32056
+SchÃ¶neweide|b. Luckenwalde	1 2376,-33377
+MoldenhÃ¼tten	0 -976,-35557
 Lindenberg|(Kolzenburg)	0 -5474,-38548
-Schönefeld|bei Luckenwalde	1 5993,-36340
-Dümde	1 5314,-36831
+SchÃ¶nefeld|bei Luckenwalde	1 5993,-36340
+DÃ¼mde	1 5314,-36831
 Holbeck	1 2981,-40016
 Lynow	1 10531,-39798
 Horstwalde	1 11224,-35836
-Schöbendorf	1 13114,-39180
+SchÃ¶bendorf	1 13114,-39180
 Merzdorf	1 12078,-45032
-Ließen	1 7334,-45199
+LieÃŸen	1 7334,-45199
 Charlottenfelde|(Petkus)	0 4784,-46940
 Schlenzer	1 1131,-49511
 Riesdorf	1 68,-50627
 Sernow	1 -273,-52404
-Hohengörsdorf	1 -6290,-50552
-Werbig|b. Jüterbog	2 -2603,-52858
+HohengÃ¶rsdorf	1 -6290,-50552
+Werbig|b. JÃ¼terbog	2 -2603,-52858
 Lichterfelde|(Werbig)	0 -1757,-52833
 Borgisdorf	1 -6384,-53390
-Höfgen	0 -5659,-54987
+HÃ¶fgen	0 -5659,-54987
 Welsickendorf	2 -6124,-56236
-Reinsdorf|b. Jüterbog	1 -634,-56034
+Reinsdorf|b. JÃ¼terbog	1 -634,-56034
 Nonnendorf	1 1769,-55976
 Wiepersdorf	1 834,-58410
-Gräfendorf	1 -2847,-55186
+GrÃ¤fendorf	1 -2847,-55186
 Dennewitz	1 -15180,-49026
-Rohrbeck|b. Jüterbog	1 -12905,-49352
-Bochow|b. Jüterbog	1 -9985,-51340
+Rohrbeck|b. JÃ¼terbog	1 -12905,-49352
+Bochow|b. JÃ¼terbog	1 -9985,-51340
 Altes Lager	2 -16499,-43776
-Neues Lager|(Jüterbog)	0 -14256,-45407
+Neues Lager|(JÃ¼terbog)	0 -14256,-45407
 Malterhausen	1 -20162,-44912
 Bardenitz	2 -19967,-37369
 Tiefenbrunn	0 -20061,-41732
-Körbitz	0 -7959,-56948
+KÃ¶rbitz	0 -7959,-56948
 Zellendorf	1 -10956,-57412
 Langenlipsdorf	1 -9805,-54625
-Gölsdorf|b. Jüterbog	0 -17227,-50446
-Wölmsdorf	0 -18167,-48764
+GÃ¶lsdorf|b. JÃ¼terbog	0 -17227,-50446
+WÃ¶lmsdorf	0 -18167,-48764
 Friedrichshof|(Rietzenneuendorf-Friedrichshof)	1 27889,-42878
 Rietzenneuendorf	1 29437,-43454
 Staakow	1 31262,-41500
-Staakowmühle	0 31912,-40225
+StaakowmÃ¼hle	0 31912,-40225
 Brand	0 35178,-41015
 Waldow	1 31312,-46287
-Glashütte|(Baruth)	0 23377,-41756
+GlashÃ¼tte|(Baruth)	0 23377,-41756
 Klasdorf	1 21661,-42175
 Radeland	1 21448,-38755
 Dornswalde	1 24749,-39659
-Mückendorf	1 17021,-36490
+MÃ¼ckendorf	1 17021,-36490
 Kemlitz	0 15912,-43922
 Hohenfelde	1 68737,82062
 Kunow	1 66925,82537
@@ -865,14 +867,14 @@ Luckow|(Luckow-Petershagen)	2 63888,93681
 Petershagen|(Luckow-Petershagen)	1 66462,94275
 Blumberg|bei Casekow	1 59648,89982
 Hohenselchow	2 68362,89958
-Groß Pinnow	2 68212,87748
+GroÃŸ Pinnow	2 68212,87748
 Sommersdorf	1 61351,98696
-Grünz	1 58485,98577
+GrÃ¼nz	1 58485,98577
 Celle	4 -215735,20890
-Groß Rietz	1 65774,-20483
+GroÃŸ Rietz	1 65774,-20483
 Bornow	1 64929,-25152
 Birkholz|bei Beeskow	0 65076,-22519
-Görzig	1 65558,-17515
+GÃ¶rzig	1 65558,-17515
 Sauen	1 66048,-15160
 Grunow|bei Beelitz	1 78524,-26540
 Schneeberg|bei Beelitz	1 74134,-25427
@@ -884,32 +886,32 @@ Wittwien	0 -23725,81512
 Sellenwalde	0 -21621,77313
 Vogelberg	0 -32862,82400
 Reiherholz	0 -28187,83162
-Pälitzhof	0 -20362,88200
+PÃ¤litzhof	0 -20362,88200
 Dagow	0 -14200,82637
 Hohenelse	0 -26450,79325
 Schlaborn	0 -26825,80762
 Charlottenau	0 -28819,76060
 Prebelow	0 -26316,84900
 Neulewin	2 69249,37090
-Mädewitz	1 61546,39041
+MÃ¤dewitz	1 61546,39041
 Altwriezen-Beauregard	1 64770,37841
 Neureetz	1 59730,42362
-Neuküstrinchen	1 60992,43905
+NeukÃ¼strinchen	1 60992,43905
 Neuranft	1 59375,45180
 Lanz	2 -113555,72198
 Eldenburg	1 -124707,76243
 Polz	1 -130009,77020
 # Polen
-Cedinya|(Polen)	3 63744,53664
-Swinoujscie	4 64415,168163
+Cedynia|(Polen)	3 63744,53664
+ÅšwinoujÅ›cie	4 64415,168163
 Police	3 87325,128182
 Wolin	3 89294,161267
-Miedzyzdroje	3 78052,170681
+MiÄ™dzyzdroje	3 78052,170681
 Szczecin	5 86292,115232
-Dabie	0 94357,111566
+DÄ…bie	0 94357,111566
 Stepnica	2 90980,140464
-Kamien Pomorski	3 99437,175872
-Leknica	3 103457,-94854
+KamieÅ„ Pomorski	3 99437,175872
+ÅÄ™knica	3 103457,-94854
 # Tschechien
-Usti|nad Labem	3 57794,-192950
-Decin	3 69643,-179726
+ÃšstÃ­|nad Labem	3 57794,-192950
+DÄ›ÄÃ­n	3 69643,-179726

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.80 2006/02/01 23:22:09 eserte Exp $
+# $Id: Makefile,v 2.81 2006/02/01 23:38:06 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -348,7 +348,7 @@ orte: orte-orig
 
 orte2: orte2-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) orte2-orig | $(SORTBYCAT) > orte2
+	$(CONVERT2HAFAS) -unutf8ify orte2-orig | $(SORTBYCAT) > orte2
 	-@$(READONLY) $@
 
 orte_city: orte_city-orig
