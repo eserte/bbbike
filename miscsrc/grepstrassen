@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: grepstrassen,v 1.11 2005/11/05 23:59:30 eserte Exp $
+# $Id: grepstrassen,v 1.12 2006/02/01 23:18:13 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -88,6 +88,17 @@ while(my($k,$v) = each %special_end) {
     $v->();
 }
 
+# Preserve some importing global directives:
+my $comment_directives = $s->get_global_directives->{'#'};
+if ($comment_directives) {
+    print join("", map { "#:# $_\n" } @$comment_directives);
+}
+my $encoding_directive = $s->get_global_directives->{'encoding'}->[0];
+if ($encoding_directive) {
+    print "#: encoding: $encoding_directive\n";
+    binmode STDOUT, ":encoding($encoding_directive)";
+}
+
 # XXX The "# filtered" is a hack to prevent the first line being interpreted
 # as a global directive.
 print "# filtered\n" . $new_s->as_string;
@@ -128,6 +139,7 @@ sub end_directive_handler {
 # XXX obsolete: could be replaced by -adddirectives add_fragezeichen
 # BUT! this would create files /tmp/add_fragezeichen... instead of
 # /tmp/fragezeichen...
+# XXX Cannot handle encoding directive
 sub init_fragezeichen {
     my $val = shift;
     no strict 'refs';

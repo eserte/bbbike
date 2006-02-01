@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.26 2005/12/18 22:58:26 eserte Exp eserte $
+# $Id: SRTShortcuts.pm,v 1.27 2006/01/31 20:19:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.26 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -204,11 +204,18 @@ sub add_button {
 		   add_new_layer("p", $f);
 	       }
 	      ],
-	      [Button => "Show vmz diff",
-	       -command => \&show_vmz_diff,
+	      [Button => "Show VMZ diff",
+	       -command => sub { show_vmz_diff() },
 	      ],
-	      [Button => "Show lbvs diff",
-	       -command => \&show_lbvs_diff,
+	      [Button => "Show LBVS diff",
+	       -command => sub { show_lbvs_diff() },
+	      ],
+	      [Cascade => "Archive", -menuitems =>
+	       [
+		(map { [Button => "VMZ version $_", -command => [sub { show_vmz_diff($_[0]) }, $_] ] } (0 .. 5)),
+		"-",
+		(map { [Button => "LBVS version $_", -command => [sub { show_lbvs_diff($_[0]) }, $_] ] } (0 .. 5)),
+	       ],
 	      ],
 	      ($main::devel_host ? [Cascade => "Karte"] : ()),
 	      "-",
@@ -286,11 +293,15 @@ sub _vmz_lbvs_columnwidths {
 }
 
 sub show_vmz_diff {
-    show_any_diff("$ENV{HOME}/cache/misc/diffvmz.bbd");
+    my($version) = @_;
+    if (defined $version) { $version = ".$version" }
+    show_any_diff("$ENV{HOME}/cache/misc/diffvmz.bbd$version");
 }
 
 sub show_lbvs_diff {
-    show_any_diff("$ENV{HOME}/cache/misc/difflbvs.bbd");
+    my($version) = @_;
+    if (defined $version) { $version = ".$version" }
+    show_any_diff("$ENV{HOME}/cache/misc/difflbvs.bbd$version");
 }
 
 sub show_any_diff {

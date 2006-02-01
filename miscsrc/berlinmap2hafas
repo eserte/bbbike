@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: berlinmap2hafas,v 1.54 2005/08/14 20:29:22 eserte Exp $
+# $Id: berlinmap2hafas,v 1.56 2006/02/01 23:10:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2004,2005 Slaven Rezic. All rights reserved.
@@ -129,6 +129,7 @@ my $cr;
 my $do_nocross = 1;
 my $errors = 0;
 my $max_errors = 20; # maximum number of errors before giving up
+my $un_utf8_ify = 0;
 if (!GetOptions("bahnhof=s"        => \$bahnhof,
 		"specborder=s"     => \$specborder,
 		"specsperre=s"     => \$specsperre,
@@ -153,6 +154,7 @@ if (!GetOptions("bahnhof=s"        => \$bahnhof,
 		"basefile=s"       => \$base_file,
 		"nc!"              => \$do_nocross,
 		"maxerrors=i"	   => \$max_errors,
+		"unutf8ify"        => \$un_utf8_ify,
 	       )) {
     usage("Wrong option");
 }
@@ -279,8 +281,22 @@ if ($f eq '-') {
     open(F, $f) or die "Can't open file $f: $!";
 }
 my $at_beginning = 1;
+my $is_utf8 = 0;
 LINES: while(defined($_ = nextline())) {
     chomp;
+
+    if ($at_beginning && $un_utf8_ify) {
+	if (/^#:\s*encoding:\s*utf-8/) {
+	    $is_utf8 = 1;
+	    binmode(F, ":utf8");
+	    next;
+	} elsif (/#:#\s*-\*- coding: utf-8 -\*-/) {
+	    next;
+	}
+    }
+    if ($un_utf8_ify && $is_utf8) {
+	$_ = unidecode_any($_, "iso-8859-1");
+    }
 
     if ($keep_global_directives && $at_beginning && /^#:/) {
 	print W "$_\n";
@@ -857,3 +873,36 @@ sub add_error ($) {
 	}
     }
 }
+
+# REPO BEGIN
+# REPO NAME unidecode_any /home/e/eserte/work/srezic-repository 
+# REPO MD5 bd47157f30dee711682b6a173fb1cb02
+
+=head2 unidecode_any($text, $encoding)
+
+Similar to Text::Unidecode::unidecode, but convert to the given
+$encoding.
+
+=cut
+
+sub unidecode_any {
+    my($text, $encoding) = @_;
+
+    require Text::Unidecode;
+    require Encode;
+
+    my $res = "";
+
+    for (split //, $text) {
+	my $conv = eval { Encode::encode($encoding, $_, Encode::FB_CROAK()) };
+	if ($@) {
+	    $res .= Text::Unidecode::unidecode($_);
+	} else {
+	    $res .= $conv;
+	}
+    }
+
+    $res;
+}
+# REPO END
+

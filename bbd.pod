@@ -134,6 +134,11 @@ file.
 
 This global directive introduces an RCS/CVS Id string.
 
+=item C<encoding: I<encoding name>
+
+Treat this file as encoded in the given encoding (all names accepted
+by Perl/Encode may be used). If not set, then iso-8859-1 is assumed.
+
 =back
 
 =head3 Line/block directives

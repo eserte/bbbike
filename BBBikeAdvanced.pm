@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.139 2006/01/11 22:44:22 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.140 2006/02/01 22:28:33 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2822,14 +2822,26 @@ sub search_anything {
     my $search_type = "rx"; # XXX make global and/or configurable
     my $focus_transfer = 0; # XXX dito
 
+    my $probably_can_string_similarity = module_exists("String::Similarity");
+    use constant STRING_SIMILARITY_LEVEL => 0.75;
+
     my $do_search = sub {
 	return if $s eq '';
 
+	if ($search_type eq 'similarity' && !eval { require String::Similarity; 1 }) {
+	    perlmod_install_advice("String::Similarity");
+	    $search_type = 'substr';
+	    return;
+	}
+
 	my $s_rx;
+	my $s_munged;
 	if ($search_type eq 'substr') {
 	    $s_rx = quotemeta($s);
 	} elsif ($search_type eq '^substr') {
 	    $s_rx = "^" . quotemeta($s);
+	} elsif ($search_type eq 'similarity') {
+	    $s_munged = lc $s;
 	} else {
 	    $s_rx = $s;
 	}
@@ -2842,9 +2854,10 @@ sub search_anything {
 	    foreach my $search_file (@search_files) {
 		my @matches;
 		my $pid;
-		if (0 && is_in_path("grep")) { # XXX do not fork
+		if (0 && !defined $s_munged && is_in_path("grep")) { # XXX do not fork
 		    $pid = open(GREP, "-|");
 		    if (!$pid) {
+			# No String::Similarity support
 			exec("grep", "-i", $s_rx, $search_file) || warn "Can't exec program grep with $search_file: $!";
 			CORE::exit();
 		    }
@@ -2857,11 +2870,19 @@ sub search_anything {
 		}
 		while(<GREP>) {
 		    chomp;
-		    if (!defined $pid) { # we have to do the grep ourselves
-			next unless /$s_rx.*\t/i;
+		    if (defined $s_munged) {
+			next if /^\#/;
+			my($rec) = Strassen::parse($_);
+			next if String::Similarity::similarity(lc($rec->[Strassen::NAME()]), $s_munged, STRING_SIMILARITY_LEVEL) < STRING_SIMILARITY_LEVEL;
+			push @matches, $rec;
+			$matches[-1]->[3] = [];
+		    } else {
+			if (!defined $pid) { # we have to do the grep ourselves
+			    next unless /$s_rx.*\t/i;
+			}
+			push @matches, Strassen::parse($_);
+			$matches[-1]->[3] = [];
 		    }
-		    push @matches, Strassen::parse($_);
-		    $matches[-1]->[3] = [];
 		}
 		close GREP;
 		if (@matches) {
@@ -3075,6 +3096,7 @@ sub search_anything {
 	for my $cb_def (["Regulärer Ausdruck", "rx"],
 			["Teilstring", "substr"],
 			["Teilstring am Anfang", "^substr"],
+			($probably_can_string_similarity ? ["Ungenaue Suche", "similarity"] : ()),
 		       ) {
 	    my($text, $search_type_value) = @$cb_def;
 	    $f->Radiobutton(-text => M($text),
@@ -3640,6 +3662,31 @@ sub get_map_button_menu {
 
     $kcm;
 }
+
+# REPO BEGIN
+# REPO NAME module_exists /home/e/eserte/work/srezic-repository 
+# REPO MD5 c80b6d60e318450d245a0f78d516153b
+
+=head2 module_exists($module)
+
+Return true if the module exists in @INC
+
+=cut
+
+sub module_exists {
+    my($filename) = @_;
+    $filename =~ s{::}{/}g;
+    $filename .= ".pm";
+    return 1 if $INC{$filename};
+    foreach my $prefix (@INC) {
+	my $realfilename = "$prefix/$filename";
+	if (-r $realfilename) {
+	    return 1;
+	}
+    }
+    return 0;
+}
+# REPO END
 
 1;
 

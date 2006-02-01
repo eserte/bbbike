@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.119 2006/01/28 17:05:12 eserte Exp eserte $
+# $Id: Makefile.PL,v 1.120 2006/02/01 22:29:47 eserte Exp $
 
 use 5.005;
 
@@ -84,8 +84,8 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
 
   [qw/String::Approx	2.7	all	2	base/,
    'oder man verwendet agrep (mindestens Version 3.0)'],
-  [qw/String::Similarity 0	all	0	devel/,
-   'optional für den temp_blockings-Editor'],
+  [qw/String::Similarity 0	all	0	base/,
+   'optional für den temp_blockings-Editor und ungenaue Suche in der Perl/Tk-Applikation'],
   [qw/Storable		0	all	0	base/,
    'für das Caching beim CGI-Programm'],
   [qw/MLDBM		0	all	0	base/],

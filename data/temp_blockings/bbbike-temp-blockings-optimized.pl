@@ -501,14 +501,6 @@ userdel	q4 -34232,-10832 -34337,-11047
          'data' => 'userdel	q4; 10706,13043 10755,13152
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1138575600,
-         'text' => 'B 096 a Brücke über DB AG zw. Glasower Str. u. Waßmannsdorfer Ch. Brückenneubau Vollsperrung * 29.01.2006-29.01.2006 ',
-         'from' => 1138402800,
-         'data' => '	2 13289,-4660 13655,-4831
-',
-         'type' => 'gesperrt'
        }
      
 );

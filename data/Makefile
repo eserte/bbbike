@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.78 2006/01/20 00:01:04 eserte Exp $
+# $Id: Makefile,v 2.80 2006/02/01 23:22:09 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -33,6 +33,8 @@ SORTBYCAT=		${MISCSRCDIR}/sortbycat
 SEARCH_INACCESSIBLE=	${MISCSRCDIR}/search_inaccessible_points
 STEIGUNG_STAT=		${MISCSRCDIR}/steigung_stat
 GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
+# perl5.8.0 has utf8 bugs
+GREPSTRASSEN_UTF8=	perl5.8.8 ${MISCSRCDIR}/grepstrassen
 COMBINE_STREETS=	${MISCSRCDIR}/combine_streets.pl
 
 COMMENTS_PARTIAL=	comments_cyclepath comments_ferry comments_misc \
@@ -341,7 +343,7 @@ hoehe: hoehe-orig
 
 orte: orte-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) orte-orig | $(SORTBYCAT) > orte
+	$(CONVERT2HAFAS) -unutf8ify orte-orig | $(SORTBYCAT) > orte
 	-@$(READONLY) $@
 
 orte2: orte2-orig
@@ -539,7 +541,7 @@ fragezeichen:	.create_fragezeichen
 
 .for i in ${SOURCE_TARGETS}
 .fragezeichen-$(i):	$(i)-orig
-	${GREPSTRASSEN} -special fragezeichen ${DATADIR}/$(i)-orig > /dev/null
+	${GREPSTRASSEN_UTF8} -special fragezeichen ${DATADIR}/$(i)-orig > /dev/null
 	cp -f /tmp/fragezeichen_$(i)-orig.bbd $@
 .endfor
 
@@ -986,11 +988,11 @@ count-streets:
 check-dates:	.check_dates
 
 .check_dates:	*-orig ${MISCSRCDIR}/check_dates
-	@echo Expired today:
-	@${MISCSRCDIR}/check_dates *-orig
-	@echo Expired in the next two weeks:
-	@${MISCSRCDIR}/check_dates -reldays 14 *-orig
-	@touch $@
+	@(echo "Expired today (`date`)": ;\
+	 ${MISCSRCDIR}/check_dates *-orig ;\
+	 echo "Expired in the next two weeks:" ;\
+	 ${MISCSRCDIR}/check_dates -reldays 14 *-orig ) 2>&1 | tee $@~
+	mv $@~ $@
 
 check-crossings:	check-crossings-important \
 			check-crossings-less-important
