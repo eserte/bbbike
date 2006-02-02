@@ -11439,6 +11439,9 @@ sub show_info {
 	#warn $index;
     }
     my $strname = $tags[1];
+    if ($tags[0] =~ /^[ub]-fg/) {
+	$strname = $tags[2];
+    }
 
     my(@coords) = $c->coords('current');
     my $current_is_label = $c->type('current') eq 'text';
@@ -11828,15 +11831,22 @@ sub show_info {
 	    $linkcount++;
 	}
 
-	while(my($key, $plugin) = each %info_plugins) {
-	    $info_text->insert("end", $plugin->{name} . "\n",
-			       "link$linkcount");
+	for my $key (sort keys %info_plugins) {
+	    my $plugin = $info_plugins{$key};
+
 	    my @args = (coords => $real_coords,
 			street => $strname,
 			px => $px,
 			py => $py,
 			mapscale_scale => $mapscale_scale,
+			tags => \@tags,
 		       );
+	    if ($plugin->{visibility} && !$plugin->{visibility}->(@args)) {
+		next;
+	    }
+
+	    $info_text->insert("end", $plugin->{name} . "\n",
+			       "link$linkcount");
 	    $info_text->tagBind
 		("link$linkcount", "<ButtonRelease-1>" => sub {
 		     $plugin->{callback}->(@args);
