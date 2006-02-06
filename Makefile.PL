@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.120 2006/02/01 22:29:47 eserte Exp $
+# $Id: Makefile.PL,v 1.120 2006/02/01 22:29:47 eserte Exp eserte $
 
 use 5.005;
 
@@ -167,6 +167,8 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
   [qw/Test::NoWarnings	0	all	0	test/],
   [qw/WWW::Mechanize	0	all	2	test/,
    'Für Testen des CGI-Interfaces'],
+  [qw/Devel::Leak	0	all	0	test/,
+   'Für Memory-Leak-Tests'],
  );
 
 # EXE corequisites ####################################################

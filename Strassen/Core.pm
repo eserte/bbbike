@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.67 2006/02/01 22:51:15 eserte Exp $
+# $Id: Core.pm,v 1.68 2006/02/05 22:37:01 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.67 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.68 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -260,7 +260,10 @@ sub read_from_fh {
 		push @{ $global_directives{$directive} }, $value;
 		if ($directive eq 'encoding') {
 		    # The encoding directive is executed immediately
-		    eval q{binmode($fh, ":encoding($value)")};
+		    eval q{
+			die "UTF-8 bugs with perl 5.8.0" if $] < 5.008001;
+			binmode($fh, ":encoding($value)")
+		    };
 		    if ($@) {
 			warn "Cannot execute encoding <$value> directive: $@";
 		    }

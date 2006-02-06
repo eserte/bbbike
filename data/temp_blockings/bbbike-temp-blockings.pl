@@ -2572,8 +2572,8 @@ userdel auto	3 6135,10982 6040,10751 5877,10486
 EOF
      },
      { from  => 1124575200, # 2005-08-21 00:00
-       until => 1139094000, # 2006-02-05 00:00
-       text  => 'B 101; (Herzberg-Jüterbog); Brücke über Kremnitzbach u. über Rad-u.Gehweg bei Bernsdorf Brückenbau Vollsperrung 22.08.2005-04.02.2006 ',
+       until => 1146261599, # 28.04.2006, was: 1139094000 2006-02-05 00:00
+       text  => 'B 101; (Herzberg-Jüterbog); Brücke über Kremnitzbach u. über Rad-u.Gehweg bei Bernsdorf Brückenbau Vollsperrung 22.08.2005-28.04.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -1307,-73252 -1245,-72696

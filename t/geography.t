@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: geography.t,v 1.2 2006/01/19 23:52:14 eserte Exp $
+# $Id: geography.t,v 1.3 2006/02/04 16:45:02 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -41,7 +41,7 @@ is($geo->get_supercitypart_for_any("Kreuzberg"), "Friedrichshain-Kreuzberg");
 is($geo->get_supercitypart_for_any("Friedrichshain-Kreuzberg"), "Friedrichshain-Kreuzberg");
 
 my @sp = $geo->get_all_subparts("Pankow");
-is(scalar(@sp), 12)
+is(scalar(@sp), 14)
     or diag "@sp";
 
 __END__

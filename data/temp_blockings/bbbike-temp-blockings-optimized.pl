@@ -248,8 +248,8 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1139094000,
-         'text' => 'B 101; (Herzberg-Jüterbog); Brücke über Kremnitzbach u. über Rad-u.Gehweg bei Bernsdorf Brückenbau Vollsperrung 22.08.2005-04.02.2006 ',
+         'until' => 1146261599,
+         'text' => 'B 101; (Herzberg-Jüterbog); Brücke über Kremnitzbach u. über Rad-u.Gehweg bei Bernsdorf Brückenbau Vollsperrung 22.08.2005-28.04.2006 ',
          'from' => 1124575200,
          'data' => 'userdel	2 -1307,-73252 -1245,-72696
 ',
