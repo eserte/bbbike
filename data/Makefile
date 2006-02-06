@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.81 2006/02/01 23:38:06 eserte Exp $
+# $Id: Makefile,v 2.82 2006/02/06 21:11:26 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -34,7 +34,8 @@ SEARCH_INACCESSIBLE=	${MISCSRCDIR}/search_inaccessible_points
 STEIGUNG_STAT=		${MISCSRCDIR}/steigung_stat
 GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
 # perl5.8.0 has utf8 bugs
-GREPSTRASSEN_UTF8=	perl5.8.8 ${MISCSRCDIR}/grepstrassen
+PERL_UTF8=		perl5.8.8
+GREPSTRASSEN_UTF8=	${PERL_UTF8} ${MISCSRCDIR}/grepstrassen
 COMBINE_STREETS=	${MISCSRCDIR}/combine_streets.pl
 
 COMMENTS_PARTIAL=	comments_cyclepath comments_ferry comments_misc \
@@ -114,7 +115,8 @@ persistent-tmp:	${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
 		${PERSISTENTTMPDIR}/non-faked-plaetze \
 		${PERSISTENTTMPDIR}/non-faked-strassen \
 		${PERSISTENTTMPDIR}/XXX.bbd \
-		${PERSISTENTTMPDIR}/plz-b.bbd
+		${PERSISTENTTMPDIR}/plz-b.bbd \
+		persistent-tmp-from-opengeodb
 
 # even slower (about four minutes)
 really-slow-checks:	check-crossings-important \
@@ -572,6 +574,24 @@ ${PERSISTENTTMPDIR}/Berlin.coords.bbd: Berlin.coords.data
 
 ${PERSISTENTTMPDIR}/Potsdam.coords.bbd: Potsdam.coords.data
 	perl -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Potsdam.coords.data > $@
+
+OPENGEODB_REGION=BB MV
+OPENGEODB_ORTE_SOURCE=/usr/ports/distfiles/opengeodb/opengeodb-0.2.4a-UTF8-text-orte.txt
+
+persistent-tmp-from-opengeodb:	${OPENGEODB_REGION:S/^/${PERSISTENTTMPDIR}\/opengeodb-orte-/:S/$/-DE.bbd/}
+
+.for region in BB MV
+${PERSISTENTTMPDIR}/opengeodb-orte-${region}-DE.bbd:	${OPENGEODB_ORTE_SOURCE} ${MISCSRCDIR}/opengeodborte2bbd
+	${PERL_UTF8} ${MISCSRCDIR}/opengeodborte2bbd -restrictland ${region} -restrictcountry DE $^ > $@
+.endfor
+
+# About 70 failures for now. If I correct them all, enlarge the bbox.
+.check_orte_opengeodb:	orte orte2 ${PERSISTENTTMPDIR}/opengeodb-orte-BB-DE.bbd
+	cat orte orte2 | grep -v '^#' | perl -pe 's{^([^\|\t]+).*}{$$1}' | sort > /tmp/orte_bbbike
+	cat ${PERSISTENTTMPDIR}/opengeodb-orte-BB-DE.bbd | \
+	    ${MISCSRCDIR}/restrict_bbd_data.pl -bbox -59700,60100,116500,-44900 -strdata=- -o=- | \
+	    perl -pe 's{(\s*\(.*\))?\t.*}{}' | sort > /tmp/orte_opengeodb
+	diff -u /tmp/orte_bbbike /tmp/orte_opengeodb | grep '^\+'
 
 # Die mit "laut adfc-karte" u.ä. gekennzeichneten Straßen extrahieren und
 # nach .fragezeichen-other-source schreiben.
@@ -1069,11 +1089,25 @@ check-Berlin.coords.data: .check_Berlin_coords_data_cityparts \
 	unzip -c $(MISCDIR)/opengeodb/Berlin_I.zip D_Berlin_Postleitzahlen > /tmp/D_Berlin_Postleitzahlen
 	cat /tmp/D_Berlin_Postleitzahlen |\
 	    perl -nle '/^(\d{5}) .. (.*)/ && print "$$1 .. $$2"' |\
-	    sort -u > /tmp/plz1
+	    sort -u > /tmp/plz_opengeodb
 	perl -I $(BBBIKEDIR) -MGeography::Berlin_DE -F'\|' -nale \
 	    'BEGIN {$$g=Geography::Berlin_DE->new } print "$$F[2] .. " . $$g->get_supercitypart_for_any($$F[1]) ' Berlin.coords.data |\
-	    sort -u > /tmp/plz2
-	diff -u /tmp/plz1 /tmp/plz2
+	    sort -u > /tmp/plz_bbbike
+# Ausnahmen (der Reihe nach):
+# - Str. 106 (bei mir)
+# - hinter dem Ringcenter (opengeodb, folgende ebenso)
+# - Nähe S-Bhf. Landsberger Allee
+# - Nähe Müller-Breslau-Str.
+# - Alexandrinenstr.?
+# - Insulaner
+	diff -u \
+	    -I'13088.*Lichtenberg' \
+	    -I'10367.*Friedrichshain-Kreuzberg' \
+	    -I'10407.*Friedrichshain-Kreuzberg' \
+	    -I'10623.*Mitte' \
+	    -I'10969.*Mitte' \
+	    -I'12169.*Tempelhof-Schöneberg' \
+	    /tmp/plz_opengeodb /tmp/plz_bbbike
 	@touch $@
 
 check-nearest:	${PERSISTENTTMPDIR}/check_nearest.bbd do-check-nearest

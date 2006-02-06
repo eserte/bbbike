@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.15 2005/11/20 17:20:01 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.16 2006/02/06 23:05:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -507,7 +507,7 @@ sub BBBikeLazy::plotstr_on_demand {
  	    my $i;
  	    my $restrict = undef; #XXX
  	    my $coordsys = $coord_system_obj->coordsys;
-	    my $name_draw = 0;
+	    my $name_draw = $p_name_draw{$abk};
 	    my($name_draw_tag, $name_draw_other);
 	    my %no_overlap_label;
 	    my $no_overlap_label;

@@ -32,6 +32,7 @@ Breddin	2 -70922,51604
 Zernitz	2 -60736,51696
 Stüdenitz	2 -66831,52431
 Nitzow	2 -82250,50568
+#: alias: Brandenburg an der Havel
 Brandenburg	5 -46482,-737
 Belzig	3 -44165,-30318
 Neuruppin	4 -30969,56746
@@ -69,13 +70,17 @@ Werneuchen	3 32444,25291
 Bernau|b. Berlin	4 22541,30476
 Buckow|(Märkische Schweiz)	3 55920,18769
 Seelow	3 76771,15413
+#: XXX Großgemeinde ohne Ortskern?
+Vierlinden	1 73367,12818
+Diedersdorf (Vierlinden)	1 73367,12818
 Müncheberg	3 60197,12001
+#: alias: Fürstenwalde/Spree
 Fürstenwalde	4 55562,-4726
 Erkner	2 34142,2742
 Karutzhöhe	0 34993,630
 Neu-Buchhorst	0 33983,1418
 Woltersdorf	2 34535,5319
-Rüdersdorf|b. Berlin	2 35591,8683
+Rüdersdorf|bei Berlin	2 35591,8683
 Petershagen|b. Berlin	2 35427,13624
 Strausberg	4 42709,19940
 Altlandsberg	3 32293,18093
@@ -135,6 +140,7 @@ Wüste Kunersdorf	0 86180,1116
 Rheinsberg	3 -25679,76561
 Zechow	0 -24687,71412
 Kramnitz	0 -21237,64885
+#: alias: Baruth/Mark
 Baruth	3 18042,-39923
 Brück	3 -32505,-24207
 Lieberose	3 72499,-45463
@@ -295,6 +301,8 @@ Treskow	0 -31101,53235
 Bollersdorf	1 54169,20358
 Grunow	1 53014,23097
 Klosterdorf	1 47334,21218
+#: XXX: zugehörige Großgemeinde: Garzau-Garzin
+Garzau	1 47381,14731
 Garzin	1 49437,16565
 Hohenstein	1 48709,18618
 Ruhlsdorf|(Hohenstein)	0 50418,19010
@@ -320,7 +328,9 @@ Platkow	2 72454,20776
 Wulkow	1 66555,19582
 Hermersdorf	1 63286,18968
 Obersdorf	1 62444,15991
-Altrosenthal	0 69731,16901
+#: XXX: Schreibweise (laut opengeodb) Alt Rosenthal, andere Quellen nennen Altrosenthal. Siehe auch: http://www.vierlinden.org/gemeinde/altrosenthal.htm
+#: alias: Altrosenthal
+Alt Rosenthal	0 69731,16901
 Gusow	2 74810,19707
 Neulangsow	0 78129,19465
 Werbig	1 76876,18431
@@ -328,6 +338,10 @@ Friedersdorf|b. Seelow	1 77759,12767
 Dolgelin	2 78837,11306
 Lietzen	1 74262,8140
 Libbenichen	1 80731,9206
+#: XXX: Großgemeinde ohne Ortskern?
+Fichtenhöhe	1 79462,7750
+Alt Mahlisch	1 79462,7750
+Neu Mahlisch	1 77250,9375
 Falkenhagen|bei Seelow	2 72616,3728
 Petershagen	1 74246,584
 Treplin	1 78034,231
@@ -372,7 +386,6 @@ Petersdorf|(bei Briesen)	1 74606,-3837
 Sieversdorf	1 76665,-1850
 Pillgram	1 78196,-7189
 Biegen	1 76206,-9473
-Garzau	1 47381,14731
 Werder|b. Rehfelde	1 47216,13439
 Zinndorf	1 45747,11268
 Rehfelde	2 45754,14207
@@ -440,9 +453,10 @@ Mixdorf	1 79281,-22168
 Merz	1 74961,-21982
 Ragow	1 72241,-22306
 # westlich von Berlin
+#: XXX: zugehörige Großgemeinde: Dallgow-Döberitz
 Dallgow	2 -11237,13995
-Seeburg	1 -8899,11121
 Döberitz	0 -13330,13857
+Seeburg	1 -8899,11121
 Groß Glienicke	2 -10090,6868
 Neu Fahrland	1 -13351,4201
 Krampnitz	0 -13287,5556
@@ -453,9 +467,10 @@ Töplitz	2 -23207,2284
 Leest	0 -21038,2554
 Grube	1 -20009,2396
 Bornim	0 -16894,1485
+#: XXX: zugehörige Großgemeinde: Uetz-Paaren
 Uetz	0 -21067,6503
-Göttin|(Töplitz)	0 -24100,4331
 Paaren	1 -21480,8422
+Göttin|(Töplitz)	0 -24100,4331
 Falkenrehde	1 -22215,9500
 Neu Falkenrehde	0 -24319,9296
 Kartzow	0 -18253,9165
@@ -591,6 +606,7 @@ Zernikow	1 -12231,75778
 Menz	2 -15062,76937
 Kagar	1 -31410,79626
 Wallitz	1 -34013,78445
+Basdorf|(bei Wallitz)	0 -36539,76393
 Zermützel	0 -29581,66142
 Rägelin	1 -42244,66655
 Frankendorf	1 -38604,66680
@@ -915,9 +931,11 @@ Raßmannsdorf	0 68961,-15535
 Tauche	1 62742,-27242
 Giesensdorf	1 60565,-29039
 Stremmen	1 62837,-29785
+#: XXX zugehörige Großgemeinde: Dahlwitz-Hoppegarten
 Dahlwitz	2 27036,11142
 Hoppegarten|(Mark)	2 28510,12507
 Münchehofe|b. Dahlwitz	1 28660,9920
+#: alias: Schöneiche bei Berlin
 Schöneiche	2 30290,8562
 Vogelsdorf	1 32900,10962
 Bollensdorf	0 30971,11749

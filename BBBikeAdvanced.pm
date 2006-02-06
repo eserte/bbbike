@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.141 2006/02/05 22:38:44 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.142 2006/02/06 21:59:36 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -118,6 +118,13 @@ sub advanced_option_menu {
 		       -command => \&destroy_all_toplevels);
 	$opbm->command(-label => 'Re-call some subs',
 		       -command => sub {
+			   while(my($k,$v) = each %autouse_func) {
+			       (my $module = $k) =~ s{::}{/}g;
+			       $module .= ".pm";
+			       delete $INC{$module};
+			       eval "use autouse $k => qw(" . join(" ", @$v) . ");";
+			       die "Can't autouse $k: $@" if $@;
+			   }
 			   define_item_attribs();
 			   generate_plot_functions();
 			   set_bindings();
@@ -2845,6 +2852,8 @@ sub search_anything {
 	} else {
 	    $s_rx = $s;
 	}
+	my $need_utf8_upgrade = $] >= 5.008 && ((defined $s_munged && eval { require Encode; Encode::is_utf8($s_munged) }) ||
+						(defined $s_rx     && eval { require Encode; Encode::is_utf8($s_rx) }));
 
 ### fork in eval is evil ??? (check it, it seems to work for 5.8.0 + FreeBSD)
 	IncBusy($t);
@@ -2858,6 +2867,7 @@ sub search_anything {
 		    $pid = open(GREP, "-|");
 		    if (!$pid) {
 			# No String::Similarity support
+			# No encoding support
 			exec("grep", "-i", $s_rx, $search_file) || warn "Can't exec program grep with $search_file: $!";
 			CORE::exit();
 		    }
@@ -2868,9 +2878,14 @@ sub search_anything {
 			next;
 		    }
 		}
+		binmode GREP;
 		while(<GREP>) {
 		    chomp;
+		    utf8::upgrade($_) if $need_utf8_upgrade;
 		    if (defined $s_munged) {
+			if (/^#:\s*encoding:\s*(.*)/) {
+			    Strassen::Core::switch_encoding(\*GREP, $1);
+			}
 			next if /^\#/;
 			my($rec) = Strassen::parse($_);
 			next if String::Similarity::similarity(lc($rec->[Strassen::NAME()]), $s_munged, STRING_SIMILARITY_LEVEL) < STRING_SIMILARITY_LEVEL;
@@ -2878,6 +2893,9 @@ sub search_anything {
 			$matches[-1]->[3] = [];
 		    } else {
 			if (!defined $pid) { # we have to do the grep ourselves
+			    if (/^#:\s*encoding:\s*(.*)/) {
+				Strassen::Core::switch_encoding(\*GREP, $1);
+			    }
 			    next unless /$s_rx.*\t/i;
 			}
 			push @matches, Strassen::parse($_);

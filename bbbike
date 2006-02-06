@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.223 2006/02/05 22:38:19 eserte Exp $
+# $Id: bbbike,v 3.224 2006/02/06 21:59:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -65,34 +65,45 @@ use Config;
 # Call "autouse" as early as possible. Otherwise there will be errors,
 # if any other module requires theses modules.
 # "autouse" cannot be used on modules with non-standard import functions
-use autouse 'BBBikeMail'	=> qw(enter_send_mail enter_send_fax);
-use autouse 'Text::Wrap'	=> qw(wrap);
-use autouse 'File::Copy'	=> qw(copy mv);
-use autouse 'BBBikeGPS'
-    => qw(gps_interface draw_gpsman_data do_draw_gpsman_data);
-use autouse 'BBBikeWeather'
-    => qw(wetter_dir_exists ignore_weather reset_wind update_weather
-	  show_weather_db parse_wetterline analyze_wind);
-use autouse 'BBBikeHeavy'
-    => qw(start_followmouse stop_followmouse
-	  string_eval_die load_plugin layer_editor
-	  getmap get_file_or_url get_user_agent delete_map
-	  pdf_export svg_export perlmod_install_advice
-	  show_register save_register_routes load_register_routes
-	  show_calories check_available_memory
-	  reload_all);
-#XXX problems with autouse! -> what problems?
-use autouse 'BBBikeEdit'
-    => qw(insert_point_from_canvas create_relation_from_canvas
-	  ampeln_on_route radweg_open radweg_draw_canvas
-	 );
-use autouse 'BBBikeLazy'
-    => qw(bbbikelazy_setup bbbikelazy_init bbbikelazy_clear
-	  bbbikelazy_reload bbbikelazy_reload_all bbbikelazy_redraw_current_view
-	  bbbikelazy_add_data bbbikelazy_remove_data plotstr_on_demand);
-use autouse 'BBBikePrint'
-    => qw(create_postscript print_postscript toggle_legend
-	  print_text_postscript print_text_pdflatex print_route_pdf view_pdf);
+use vars qw(%autouse_func);
+BEGIN {
+    %autouse_func =
+	('BBBikeMail'	=> [qw(enter_send_mail enter_send_fax)],
+	 'Text::Wrap'	=> [qw(wrap)],
+	 'File::Copy'	=> [qw(copy mv)],
+	 'BBBikeGPS'
+	 => [qw(gps_interface draw_gpsman_data do_draw_gpsman_data)],
+	 'BBBikeWeather'
+	 => [qw(wetter_dir_exists ignore_weather reset_wind update_weather
+		show_weather_db parse_wetterline analyze_wind)],
+	 'BBBikeHeavy'
+	 => [qw(start_followmouse stop_followmouse
+		string_eval_die load_plugin layer_editor
+		getmap get_file_or_url get_user_agent delete_map
+		pdf_export svg_export perlmod_install_advice
+		show_register save_register_routes load_register_routes
+		show_calories check_available_memory
+		reload_all)],
+	 #XXX problems with autouse! -> what problems?
+	 'BBBikeEdit'
+	 => [qw(insert_point_from_canvas create_relation_from_canvas
+		ampeln_on_route radweg_open radweg_draw_canvas
+	       )],
+	 'BBBikeLazy'
+	 => [qw(bbbikelazy_setup bbbikelazy_init bbbikelazy_clear
+		bbbikelazy_reload bbbikelazy_reload_all
+		bbbikelazy_redraw_current_view
+		bbbikelazy_add_data bbbikelazy_remove_data plotstr_on_demand)],
+	 'BBBikePrint'
+	 => [qw(create_postscript print_postscript toggle_legend
+		print_text_postscript print_text_pdflatex print_route_pdf
+		view_pdf)],
+	);
+    while(my($k,$v) = each %autouse_func) {
+	eval "use autouse $k => qw(" . join(" ", @$v) . ");";
+	die "Can't autouse $k: $@" if $@;
+    }
+}
 
 ## This is only for the Autoloader-Hack (see "make autoload")
 #use AutoLoader 'AUTOLOAD';
@@ -191,7 +202,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.223 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.224 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related

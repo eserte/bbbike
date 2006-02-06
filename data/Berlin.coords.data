@@ -59,7 +59,7 @@ Agavensteig|Baumschulenweg|12437|15769,4824
 Agavensteig|Karlshorst|10318|19597,8110
 Agnes-Hacker-Str.|Altglienicke|12524|19987,268
 Agnes-Straub-Weg|Rudow|12353|15822,2121
-Agnes-Wabnitz-Str.|Lichtenberg|10249|13826,13340
+Agnes-Wabnitz-Str.|Prenzlauer Berg|10249|13826,13340
 Agricolastr.|Tiergarten|10555|5836,12475
 Ahlbecker Str.|Prenzlauer Berg|10437|11701,15453
 Ahlbeerensteig|Spandau|13591|-7393,14358
@@ -3827,15 +3827,14 @@ Gutenbergstr.|Köpenick|12557|21777,4946
 Gutenfelsstr.|Blankenburg|13129|13312,21648
 Guter Wille|Britz|12347|
 Güterbahnhof Friedenau|Friedenau|12157|
-Güterbahnhof Halensee|Wilmersdorf|10711|
+Güterbahnhof Halensee|Wilmersdorf|10711|2699,9902
+Güterbahnhof Hermsdorf|Hermsdorf|13467|
+Güterbahnhof Lübars|Lübars|13469|6759,22402
 Güterbahnhof Spandau West|Spandau|13581|
 Güterbahnhof Steglitz|Steglitz|12157|
-Güterbahnhof Tempelhof|Tempelhof|12103|
-Güterbahnhof Westend|Charlottenburg|14059|
-Güterbahnhof Wilmersdorf|Friedenau|12159|
-Güterbhf Hermsdorf|Hermsdorf|13467|
-Güterbhf Lübars|Lübars|13469|
-Güterbhf der Nordbahn|Lübars|13355|
+Güterbahnhof Tempelhof|Tempelhof|12103|8424,7291
+Güterbahnhof Westend|Charlottenburg|14059|2212,12992
+Güterbahnhof Wilmersdorf|Friedenau|12159|6028,7905
 Gütergotzer Str.|Zehlendorf|14165|-594,1747
 Gütersloher Weg|Spandau|13583|-5339,15297
 Gütlandring|Heiligensee|13503|
@@ -5666,7 +5665,7 @@ Kurstr.|Mitte|10117|10254,11800
 Kurstr.|Nikolassee|14129|-2081,2476
 Kurstr.|Spandau|13585|-2895,15340
 Kurt Pöthig|Britz|12349|
-Kurt-Exner-Str.|Lichtenberg|10249|13964,13306
+Kurt-Exner-Str.|Prenzlauer Berg|10249|13964,13306
 Kurt-Schumacher-Damm|Reinickendorf|13405|3868,16605
 Kurt-Schumacher-Platz|Reinickendorf|13405|5126,17487
 Kurze Str.|Friedrichsfelde|10315|17964,11330
@@ -5971,8 +5970,9 @@ Lietzenseeufer|Charlottenburg|14057|2828,11128
 Ligusterweg|Baumschulenweg|12437|15233,4811
 Liliencronstr.|Steglitz|12167|6358,4627
 Lilienstr.|Lichterfelde|12203|4034,4730
-Lilienthalstr.|Kreuzberg|10961|10706,9072
-Lilienthalstr.|Neukölln|10961|10714,8984
+Lilienthalstr.|Kreuzberg|10965|10741,9072
+Lilienthalstr.|Neukölln|10965|10741,9072
+Lilienthalstr.|Tempelhof|10965|10675,8940
 Lilienweg|Blankenfelde|13159|
 Lilli-Henoch-Str.|Prenzlauer Berg|10405|12368,15015
 Lily-Braun-Str.|Kaulsdorf|12619|23250,13025
@@ -7279,7 +7279,7 @@ Otto-Krüger-Zeile|Oberschöneweide|12459|17436,7057
 Otto-Ludwig-Str.|Charlottenburg|10623|4951,10855
 Otto-Marquardt-Str.|Lichtenberg|10369|15016,14389
 Otto-Nagel-Str.|Biesdorf|12683|20498,13892
-Otto-Ostrowski-Str.|Lichtenberg|10249|13760,13503
+Otto-Ostrowski-Str.|Prenzlauer Berg|10249|13760,13503
 Otto-Schmirgal-Str.|Friedrichsfelde|10319|18382,10313
 Otto-Suhr-Allee|Charlottenburg|10585|4112,12128
 Otto-Wels-Ring|Buckow|12351|13773,2947
@@ -9104,6 +9104,7 @@ Sibyllenstr.|Lankwitz|12247|6368,3347
 Sichelsteig|Blankenfelde|13159|9106,24878
 Sickingenplatz|Tiergarten|10553|4686,13764
 Sickingenstr.|Tiergarten|10553|4598,13784
+Sickingenstr.|Charlottenburg|10553|4598,13784
 Sieben-Raben-Weg|Malchow|13088|
 Siebenendenweg|Zehlendorf|14163|0,4520
 Sieboldstr.|Altglienicke|12524|19918,134
@@ -9164,7 +9165,7 @@ Simonring|Spandau|13599|-816,14823
 Simplonstr.|Friedrichshain|10245|14346,11261
 Simpsonweg|Lichtenrade|12305|9894,-637
 Simrockplatz|Mahlsdorf|12623|
-Singdrosselsteig|Tegel|13627|1379,15843
+Singdrosselsteig|Tegel|13629|1379,15843
 Singener Weg|Zehlendorf|14163|-479,2324
 Singerstr.|Friedrichshain|10243|12505,12115
 Singerstr.|Mitte|10179|11813,12364
@@ -10157,6 +10158,7 @@ Tempelhofer Weg|Tempelhof|12099|11526,6088
 Templerzeile|Tempelhof|12099|9628,6156
 Templiner Str.|Mitte|10119|10667,14107
 Tennstedter Str.|Lankwitz|12249|6823,1425
+Tennstedter Str.|Marienfelde|12249|6823,1425
 Teplitzer Str.|Grunewald|14193|2131,7934
 Terrassenstr.|Zehlendorf|14129|-1646,3887
 Terwestenstr.|Mahlsdorf|12623|26660,13056
@@ -10878,7 +10880,7 @@ Walsroder Str.|Steglitz|12169|6230,5154
 Walter-Benjamin-Platz|Charlottenburg|10629|4307,10515
 Walter-Felsenstein-Str.|Marzahn|12687|20625,16754
 Walter-Franck-Zeile|Rudow|12353|14993,1992
-Walter-Friedländer-Str.|Lichtenberg|10249|13898,13463
+Walter-Friedländer-Str.|Prenzlauer Berg|10249|13898,13463
 Walter-Friedrich-Str.|Buch|13125|16281,25114
 Walter-Huth-Str.|Johannisthal|12487|17976,3735
 Walter-Leistikow-Weg|Mahlsdorf|12623|25809,13071
@@ -11130,6 +11132,7 @@ Weserstr.|Neukölln|12045|13553,8186
 Weserstr.|Neukölln|12047|13553,8186
 Weserstr.|Neukölln|12059|13553,8186
 Wesertal|Neukölln|12059|
+Weskammstr.|Marienfelde|12249|6977,1009
 Weskammstr.|Marienfelde|12279|6977,1009
 Wespenweg|Spandau|13589|-6541,16397
 Wesselburer Weg|Tegel|13503|-1896,21952

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.68 2006/02/05 22:37:01 eserte Exp $
+# $Id: Core.pm,v 1.69 2006/02/06 21:59:48 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.68 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.69 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -259,14 +259,7 @@ sub read_from_fh {
 	    if ($directives_stage eq DIR_STAGE_GLOBAL) {
 		push @{ $global_directives{$directive} }, $value;
 		if ($directive eq 'encoding') {
-		    # The encoding directive is executed immediately
-		    eval q{
-			die "UTF-8 bugs with perl 5.8.0" if $] < 5.008001;
-			binmode($fh, ":encoding($value)")
-		    };
-		    if ($@) {
-			warn "Cannot execute encoding <$value> directive: $@";
-		    }
+		    switch_encoding($fh, $value);
 		}
 	    } elsif ($use_local_directives) {
 		if ($is_block_begin) {
@@ -1321,6 +1314,18 @@ sub get_global_directives {
 	my $tmp_s = $self->new($file, NoRead => 1);
 	$tmp_s->read_data(ReadOnlyGlobalDirectives => 1);
 	$tmp_s->{GlobalDirectives};
+    }
+}
+
+sub switch_encoding {
+    my($fh, $value) = @_;
+    # The encoding directive is executed immediately
+    eval q{
+	die "UTF-8 bugs with perl 5.8.0" if $] < 5.008001;
+	binmode($fh, ":encoding($value)")
+    };
+    if ($@) {
+	warn "Cannot execute encoding <$value> directive: $@";
     }
 }
 
