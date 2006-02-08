@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.35 2005/12/31 19:21:11 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.35 2005/12/31 19:21:11 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -27,7 +27,7 @@ use vars
      $VERSION $PROG_REVISION $tmpdir %tmpfiles $progname
      $os $os_bsd $use_clipboard $verbose $advanced $devel_host $public_test
      $datadir $no_original_datadir $city $country
-     $top %toplevel %processes $transient $c $sx $sy $top_dpi $top_dpmm @want_extends
+     $top %toplevel %processes $transient $c $sx $sy $top_dpi $top_dpmm @want_extends %autouse_func
      $small_icons $is_handheld
      @scrollregion $init_scrollregion $normal_scrollregion $scrollre
      $K2Listbox

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeWeather.pm,v 1.7 2005/12/03 22:36:44 eserte Exp $
+# $Id: BBBikeWeather.pm,v 1.8 2006/02/07 22:09:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeWeather;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -75,8 +75,8 @@ sub BBBikeWeather::update_weather {
 	my @station;
 	my($act_line, $act_station);
 	if ($wetter_station eq 'wetterkarte') {
-	    if (!eval { require "/home/e/eserte/devel/parse_wetterkarte.pl"; 1}) {
-		main::status_message("parse_wetterkarte.pl konnte nicht geladen werden", "die");
+	    if (!eval { require "$FindBin::RealBin/lib/parse_wetterkarte"; 1}) {
+		main::status_message("parse_wetterkarte konnte nicht geladen werden", "die");
 	    }
 	    # only needed for indexes
 	    BBBikeWeather::require_wettermeldung();

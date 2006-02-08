@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.224 2006/02/06 21:59:14 eserte Exp $
+# $Id: bbbike,v 3.225 2006/02/07 22:09:34 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -62,10 +62,11 @@ use Config;
 #BEGIN{mymstat("before autouse BBBikeMail, Text::Wrap, File::Copy");}
 ## DEBUG_END
 
+use BBBikeGlobalVars 1.012;
+
 # Call "autouse" as early as possible. Otherwise there will be errors,
 # if any other module requires theses modules.
 # "autouse" cannot be used on modules with non-standard import functions
-use vars qw(%autouse_func);
 BEGIN {
     %autouse_func =
 	('BBBikeMail'	=> [qw(enter_send_mail enter_send_fax)],
@@ -162,8 +163,6 @@ use Msg; # This call has to be in bbbike!
     }
 }
 
-use BBBikeGlobalVars 1.012;
-
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before use your");}
 ## DEBUG_END
@@ -172,6 +171,7 @@ use your qw($Karte::Standard::obj $Karte::Standard::init_scrollregion
 	    $Karte::GISmap::obj $Karte::Polar::obj
 	    $Tk::Getopt::x11_pass_through
 	    $wettermeldung2::proxy $wettermeldung2::module
+	    %wettermeldung2::loc %wettermeldung2::www_site
 	    $wettermeldung2::FIELD_TEMP $wettermeldung2::tk_widget
 	    $Http::tk_widget
 	    %GfxConvert::tmpfiles
@@ -202,7 +202,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.224 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.225 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -1445,7 +1445,9 @@ $temp_frame->Button
      -class => 'FlatBut',
      -command => sub {
 	 require WWWBrowser;
-	 WWWBrowser::start_browser('http://www.met.fu-berlin.de/deutsch/Wetter/beobachtung.html');
+	 require BBBikeWeather;
+	 BBBikeWeather::require_wettermeldung();
+	 WWWBrowser::start_browser("http://$wettermeldung2::www_site{dahlem1}$wettermeldung2::loc{dahlem1}");
      }
     )->pack;
 $temp_frame->Label(-textvariable => \$act_value{Temp},

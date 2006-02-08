@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.61 2006/01/17 23:51:02 eserte Exp $
+# $Id: PLZ.pm,v 1.62 2006/02/07 21:45:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use locale;
 use BBBikeUtil;
 use Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.61 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.62 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)
@@ -98,6 +98,7 @@ sub new {
 	return undef;
     }
 
+    binmode DATA;
     my($line) = <DATA>;
     $line =~ s/[\015\012]//g;
 # Automatic detection of format. Caution: this means that the first line
@@ -129,6 +130,7 @@ sub load {
 	my @data;
 	open(PLZ, $file)
 	  or die "Die Datei $file kann nicht geöffnet werden: $!";
+	binmode PLZ;
 
 	my $code = <<'EOF';
 	while(<PLZ>) {
@@ -191,7 +193,7 @@ sub look {
     my $file = $args{File} || $self->{File};
     my @res;
 
-    warn "->look($str, " . join(" ", %args) .") in `$file'\n" if $VERBOSE;
+    print STDERR "->look($str, " . join(" ", %args) .") in `$file'\n" if $VERBOSE;
 
     #XXX use fgrep instead of grep? slightly faster, no quoting needed!
     my $grep_type = ($args{Agrep} ? 'agrep' : ($args{GrepType} || 'grep'));
@@ -267,6 +269,9 @@ sub look {
 	    # XXX but this will be wrong if it's really a \\
 	}
 
+	if (eval { require Encode; Encode::is_utf8($str) }) {
+	    $str = Encode::encode("iso-8859-1", $str);
+	}
 	my(@grep_args) = ('-i', $str, $file);
 	if ($grep_type eq 'agrep' && $args{Agrep}) {
 	    unshift @grep_args, "-$args{Agrep}";
@@ -280,6 +285,7 @@ sub look {
 	    POSIX::_exit(1); # avoid running any END blocks
 	};
 	my %res;
+	binmode PLZ;
 	while(<PLZ>) {
 	    chomp;
 	    $push_sub->($_);
@@ -288,6 +294,7 @@ sub look {
     } else {
 	CORE::open(PLZ, $file)
 	  or die "Die Datei $file kann nicht geöffnet werden: $!";
+	binmode PLZ;
 	if ($grep_type eq 'agrep') {
 	    chomp(my @data = <PLZ>);
 	    close PLZ;
@@ -640,6 +647,7 @@ sub as_streets {
 	die "Only PLZ format FMT_COORDS (".FMT_COORDS.") is supported, not " . $self->{DataFmt};
     }
     CORE::open(F, $self->{File}) or die "Can't open $self->{File}: $!";
+    binmode F;
     while(<F>) {
 	chomp;
 	my(@f) = split /\|/;
@@ -693,6 +701,7 @@ sub zip_to_cityparts_hash {
     my $hh;
     open(PLZ, $self->{File})
 	or die "Die Datei $self->{File} kann nicht geöffnet werden: $!";
+    binmode PLZ;
     while(<PLZ>) {
 	chomp;
 	my(@l) = split(/\|/, $_);
@@ -726,6 +735,7 @@ sub streets_hash {
     my $self = shift;
     my %hash;
     open(D, $self->{File}) or die "Can't open $self->{File}: $!";
+    binmode D;
     my $pos = tell(D);
     while(<D>) {
 	chomp;
@@ -744,6 +754,7 @@ sub street_words_hash {
     my $self = shift;
     my %hash;
     open(D, $self->{File}) or die "Can't open $self->{File}: $!";
+    binmode D;
     my $pos = tell(D);
     while(<D>) {
 	chomp;

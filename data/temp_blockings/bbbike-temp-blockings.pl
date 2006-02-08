@@ -956,7 +956,7 @@ EOF
        text  => 'L 743; (Motzener Str.); OL Bestensee, zw. Eichhornstr. u. Fasanenstr. SW-Leitung Vollsperrung 04.10.2004-19.11.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 26650,-18150 26343,-18775
+userdel	q4 26650,-18150 26437,-18650 26343,-18775
 EOF
      },
      { from  => 1096754400, # 2004-10-03 00:00
@@ -3574,6 +3574,42 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2 13289,-4660 13655,-4831
+EOF
+     },
+     { from  => 1141340400, # 2006-03-03 00:00
+       until => 1141599600, # 2006-03-06 00:00
+       text  => 'B 096 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 04.03.2006-05.03.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 16407,-29400 16379,-29446
+userdel	2 16336,-29511 16379,-29446
+EOF
+     },
+     { from  => 1139094000, # 2006-02-05 00:00
+       until => 1139612400, # 2006-02-11 00:00
+       text  => 'B 112 Frankfurt (O)-Eisenhüttenstadt OD Wiesenau Havarie Gasleitung Vollsperrung 06.02.2006-10.02.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 91858,-18170 90698,-16886
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Elsenstr. (Kaulsdorf) in beiden Richtungen zwischen Kressenweg und Hornungsweg Wasser auf der Fahrbahn, Straße vollständig gesperrt ',
+       type  => 'gesperrt',
+       source_id => 'LMS_1138607956237',
+       data  => <<EOF,
+userdel	2 23571,10990 24389,10836
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'L137 Schlichtallee Hauptstraße Richtung Lückstraße Zwischen Hauptstraße und Lückstraße gesperrt, Wasser auf der Fahrbahn',
+       type  => 'gesperrt',
+       source_id => 'LMS_1138607956673',
+       data  => <<EOF,
+userdel	2 15751,10582 16032,10842
+userdel	2 15751,10582 15629,10481
 EOF
      },
     );

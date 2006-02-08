@@ -2376,6 +2376,7 @@ sub addnew {
 			   main::status_message(Mfmt("Kann auf %s nicht schreiben: %s", $file, $!),"err");
 			   return;
 		       }
+		       binmode ADD;
 		       print ADD $line;
 		       close ADD;
 
@@ -2594,6 +2595,7 @@ sub do_create_relation {
     my $file = "$main::str_file{'relgps'}-orig";
     ask_for_co($main::top, $file);
     open(RELFILE, ">>$file") or main::status_message("Can't write to $file: $!", "die");
+    binmode RELFILE;
     my @order = (1,2);
     if ($points[2]->{Type} eq 'GPS') {
 	@order = (2,1);
@@ -3541,6 +3543,7 @@ EOF
 			  ask_for_co($t, $pl_file);
 			  open(PL_OUT, "> $pl_file")
 			      or main::status_message("Kann auf $pl_file nicht schreiben: $!", "die");
+			  binmode PL_OUT;
 			  print PL_OUT join "", @old_contents;
 			  close PL_OUT;
 		      } elsif ($meta_data_handling eq 'replace' ||
@@ -3750,6 +3753,7 @@ sub temp_blockings_editor_replace {
     if ($yesno eq M"Ja") {
 	ask_for_co($main::top, $pl_file);
 	open PL_OUT, "> $pl_file" or main::status_message($!, "die");
+	binmode PL_OUT;
 	print PL_OUT $s{pre} . $new_string . $s{post};
 	close PL_OUT;
 	$ret = 1;
@@ -3832,6 +3836,7 @@ sub temp_blockings_editor_replace {
 
 	    ask_for_co($t, $pl_file);
 	    open PL_OUT, "> $pl_file" or main::status_message($!, "die");
+	    binmode PL_OUT;
 	    print PL_OUT $s{pre};
 	    if ($sel > 0) {
 		print PL_OUT join("", @records[0 .. $sel-1]);

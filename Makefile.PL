@@ -56,6 +56,7 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
   [qw/Tk::Stderr	0	all	0	gui/,
    'optionales Redirect von Fehlermeldungen in ein Tk-Fenster'],
   [qw/Tk::DateEntry	1.38	all	0	gui/],
+  [qw/Tk::Date		0	all	0	gui/],
   [qw/Tk::PNG		0	all	0	gui/,
    'Für Icons mit besserer Alpha-Unterstützung'],
 

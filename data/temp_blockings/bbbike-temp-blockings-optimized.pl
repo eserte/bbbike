@@ -501,6 +501,43 @@ userdel	q4 -34232,-10832 -34337,-11047
          'data' => 'userdel	q4; 10706,13043 10755,13152
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => 1141599600,
+         'text' => 'B 096 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 04.03.2006-05.03.2006 ',
+         'from' => 1141340400,
+         'data' => 'userdel	2 16407,-29400 16379,-29446
+userdel	2 16336,-29511 16379,-29446
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1139612400,
+         'text' => 'B 112 Frankfurt (O)-Eisenhüttenstadt OD Wiesenau Havarie Gasleitung Vollsperrung 06.02.2006-10.02.2006 ',
+         'from' => 1139094000,
+         'data' => 'userdel	2 91858,-18170 90698,-16886
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LMS_1138607956237',
+         'until' => undef,
+         'text' => 'Elsenstr. (Kaulsdorf) in beiden Richtungen zwischen Kressenweg und Hornungsweg Wasser auf der Fahrbahn, Straße vollständig gesperrt ',
+         'from' => undef,
+         'data' => 'userdel	2 23571,10990 24389,10836
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LMS_1138607956673',
+         'until' => undef,
+         'text' => 'L137 Schlichtallee Hauptstraße Richtung Lückstraße Zwischen Hauptstraße und Lückstraße gesperrt, Wasser auf der Fahrbahn',
+         'from' => undef,
+         'data' => 'userdel	2 15751,10582 16032,10842
+userdel	2 15751,10582 15629,10481
+',
+         'type' => 'gesperrt'
        }
      
 );

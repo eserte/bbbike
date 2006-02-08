@@ -16,10 +16,6 @@ Legend:
 
 =item * (M2)
 
-utf8-ify PLZ.pm and make sure that search_anything works again.
-
-=item * (M2)
-
 Straßennummerierungsschilder (+ Font) werden nicht korrekt gezoomt.
 
 =item * (H5)
@@ -497,12 +493,12 @@ Kurzhilfe: kann man feststellen, ob man eine 2/3-Tastenmaus hat? Und
 wenn es nur eine 2-Tasten-Maus ist, dann existiert vielleicht eine
 Emulation fuer die mittlere Taste?
 
-=item * (E2)
+=item * (M1)
 
 Vielleicht Windchill-Temperatur zusE<auml>tzlich anzeigen. See
-windchill program in bin/sh or devel.
-
-New formula: L<http://www.nws.noaa.gov/om/windchill/>
+windchill program in bin/sh or devel. Frage: wie und wo soll die
+Temperatur angezeigt werden? Im CGI? In der Perl/Tk-Version als Plugin
+oder Standard?
 
 =item * (H1)
 
@@ -781,17 +777,10 @@ dafE<uuml>r gibt es aber ein neues Tk::MDI-Widget. Aber: MDI is evil!
 
 Andreas' Labeling-Algorithmus verwenden
 
-=item * (E2)
-
--font/-fontfamily/-fontheight handling verbessern. -font in der
-Kommandozeile sollte Einstellungen in der Config-Datei überschreiben.
-Das Verwenden von -fontfamily lucida -fontheight 7 führt nicht zum
-gewünschten Ergebnis.
-
 =item * (M2)
 
-You Tk::Icon (see L<http://www.schmuker.de/perl/modules/>) to
-optionally display the bbbike icon (avoid transparency problem!).
+Tk::Icon (see L<http://www.schmuker.de/perl/modules/>) to optionally
+display the bbbike icon (avoid transparency problem!) (Windows only).
 
 =back
 
@@ -1378,11 +1367,6 @@ GPS-Tracks zusammenfassen.
 
 =over
 
-=item * (E2)
-
-Ostsee Richtung Osten so weit erweitern, dass kein haesslicher Rand in
-der Übersichtskarte bleibt.
-
 =item * (H2)
 
 Potsdam ist größer geworden (Golm, Marquardt ...). Potsdam.coords.data
@@ -1435,10 +1419,6 @@ erreichbar. Das Problem ist, dass der Flughafen außerhalb des Berliner
 Stadtgebietes liegt. Man könnte vielleicht einen Hack für Schönefeld
 analog zu potsdam_hack programmieren? Dann bräuchte man aber
 eigentlich ein Schönefeld.coords.data --- lieber nicht...
-
-=item * (E1)
-
-Recherchieren (und aus fragezeichen herausnehmen): Neuendorf (Nl) wird ab 2002-08-18 geschlossen; neu: 'Cottbus-Willmersdorf Nord' und 'Teichland'. Grund: Umverlegung der Trasse (betr. RE1 und RE18)	?? 80691,-66664 80603,-64961 81213,-63504 82460,-63229
 
 =item * (E1)
 
