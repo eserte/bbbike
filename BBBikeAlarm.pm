@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAlarm.pm,v 1.32 2005/06/21 21:24:21 eserte Exp $
+# $Id: BBBikeAlarm.pm,v 1.33 2006/02/08 22:21:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -41,7 +41,7 @@ my $install_datebook_additions = 1;
 
 use Time::Local;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.32 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.33 $ =~ /(\d+)\.(\d+)/);
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
@@ -590,6 +590,17 @@ sub tk_interface {
     my $top = MainWindow->new;
 #    my $balloon = $top->Balloon;
     $top->title($text);
+
+    if ($Tk::platform eq 'unix') {
+	my($wrapper) = $top->wrapper;
+	# set sticky flag for gnome and fvwm2
+	eval q{
+	    $top->property('set','_WIN_STATE','CARDINAL',32,[1],$wrapper); # sticky
+	    $top->property('set','_WIN_LAYER','CARDINAL',32,[6],$wrapper); # ontop
+	};
+	warn $@ if $@;
+    }
+
     $top->withdraw;
 
     $top->optionAdd("*font", "Helvetica 24 bold");

@@ -2223,7 +2223,9 @@ Alternative implementation of nearest_point with Strassen::QuadTree
 
 Strassen::QuadTree could also be used in BBBikeExp.
 
-=item * (E2)
+=item * (H2)
+
+[Do I really need this?]
 
 Mapinfo.pm converter: add new attributes Author, AcquireAuthor,
 CreationDate, AcquireDate (maybe better names for AcquireDate?) (from

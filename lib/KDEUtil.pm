@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: KDEUtil.pm,v 2.14 2005/03/28 23:02:01 eserte Exp $
+# $Id: KDEUtil.pm,v 2.15 2006/02/08 22:27:56 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2004 Slaven Rezic. All rights reserved.
@@ -108,10 +108,13 @@ sub window_region {
     if ($self->{KDE_VERSION} == 1) {
 	$self->get_property("KWM_WINDOW_REGION_$desktop");
     } else {
-	my(@vals) = ($self->get_property("_NET_WORKAREA"))[$desktop*4 .. $desktop*4+3];
-	if (@vals && defined $vals[0]) {
-	    @vals;
-	} elsif ($self->{-top} && defined &Tk::Exists && Tk::Exists $self->{-top}) {
+	for my $prop ("_NET_WORKAREA") { # does "_WIN_AREA" work, too?
+	    my(@vals) = ($self->get_property($prop))[$desktop*4 .. $desktop*4+3];
+	    if (@vals && defined $vals[0]) {
+		return @vals;
+	    }
+	}
+	if ($self->{-top} && defined &Tk::Exists && Tk::Exists $self->{-top}) {
 	    (0, 0, $self->{-top}->screenwidth, $self->{-top}->screenheight);
 	} else {
 	    (0, 0, 800, 600); # provide reasonable values as fallback
