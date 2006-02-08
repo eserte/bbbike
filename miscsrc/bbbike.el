@@ -185,10 +185,16 @@
 ;;    [?\C-s ?" left ?\C-  ?\C-s ?\C-s ?\C-s ?\M-x ?r ?e ?c ?o ?d ?e ?- ?p ?e ?r ?l ?s ?t ?r ?i ?n ?g ?- ?t ?o ?- ?l ?a ?t ?i ?n ?1 return ?\C-a])
 
 (defun bbbike-google-map ()
+  "Open a browse with my googlemap implementation for the coordinates under cursor"
   (interactive)
   (let ((coords (buffer-substring (region-beginning) (region-end))))
     (setq coords (replace-regexp-in-string " " "!" coords))
     (browse-url (concat "http://www.radzeit.de/cgi-bin/bbbikegooglemap.cgi?coords=" coords)))
   )
+
+(defun bbbike-now ()
+  "Insert the current date in bbbike-temp-blockings.pl"
+  (interactive)
+  (shell-command "date +%s" t))
 
 (provide 'bbbike-mode)

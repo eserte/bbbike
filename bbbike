@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.225 2006/02/07 22:09:34 eserte Exp eserte $
+# $Id: bbbike,v 3.226 2006/02/08 21:15:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -202,7 +202,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.225 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.226 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -534,7 +534,7 @@ handle_options();
 ## DEBUG_END
 
 my $city_obj;
-if (!defined $city) {
+if (!defined $city && !defined $datadir) {
     $city = "Berlin";
     $country = "DE";
 }

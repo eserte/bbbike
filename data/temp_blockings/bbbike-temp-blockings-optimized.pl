@@ -520,22 +520,13 @@ userdel	2 16336,-29511 16379,-29446
 ',
          'type' => 'gesperrt'
        },
+       undef,
+       undef,
        {
-         'source_id' => 'LMS_1138607956237',
          'until' => undef,
-         'text' => 'Elsenstr. (Kaulsdorf) in beiden Richtungen zwischen Kressenweg und Hornungsweg Wasser auf der Fahrbahn, Straße vollständig gesperrt ',
+         'text' => 'Berlin-Lübars: Am Freibad in beiden Richtungen Wasser auf der Fahrbahn, gesperrt',
          'from' => undef,
-         'data' => 'userdel	2 23571,10990 24389,10836
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'LMS_1138607956673',
-         'until' => undef,
-         'text' => 'L137 Schlichtallee Hauptstraße Richtung Lückstraße Zwischen Hauptstraße und Lückstraße gesperrt, Wasser auf der Fahrbahn',
-         'from' => undef,
-         'data' => 'userdel	2 15751,10582 16032,10842
-userdel	2 15751,10582 15629,10481
+         'data' => 'userdel	2 5727,23485 5333,23636
 ',
          'type' => 'gesperrt'
        }

@@ -23,7 +23,7 @@
 ## perlreplace #HTTPCVS#    $BBBike::BBBIKE_CVS_HTTP
 ## perlreplace #CVSREPO#    $BBBike::BBBIKE_CVS_ANON_REPOSITORY
 ## dnl
-## dnl $Id: README.spp,v 2.38 2005/12/11 21:37:40 eserte Exp eserte $
+## dnl $Id: README.spp,v 2.39 2006/02/08 21:11:01 eserte Exp $
 ## dnl strpp source of README
 ## dnl
 =head1 README
@@ -478,14 +478,11 @@ menu and a desktop icon.
 Wenn Cygwin (L<http://www.cygwin.org/>) installiert ist, können aus einer
 cygwin-Shell heraus die Anweisungen wie bei einer
 L<UNIX-Installation|/Linux, Solaris, andere Unices>
-befolgt werden. Achtung: Tk 804.027 lässt sich (noch) nicht unter
-Cygwin installieren. Stattdessen muss Tk 800.025 verwendet werden.
+befolgt werden.
 ## but DE
 If you have Cygwin (L<http://www.cygwin.org/>) installed, you can start
 a cygwin shell and follow the
 L<UNIX instructions|/Linux, Solaris, other UNIX operating systems>.
-Note that Tk 804.027 does not run under Cygwin (yet). Use Tk 800.025
-instead.
 ## yes
 
 
