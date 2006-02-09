@@ -195,6 +195,9 @@
 (defun bbbike-now ()
   "Insert the current date in bbbike-temp-blockings.pl"
   (interactive)
-  (shell-command "date +%s" t))
+  (shell-command "date +%s" t)
+  (forward-word 1)
+  (delete-char 1)
+  )
 
 (provide 'bbbike-mode)

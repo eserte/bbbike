@@ -3613,7 +3613,7 @@ userdel	2 15751,10582 15629,10481
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1139470769, # XXX
        text  => 'Berlin-Lübars: Am Freibad in beiden Richtungen Wasser auf der Fahrbahn, gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,

@@ -2183,9 +2183,13 @@ Check: wird das richtige gemacht, wenn die Route Landscape und die
 Routenliste weiterhin Portrait ist? Veraenderungen bei Route::PDF
 notwendig?
 
-=item * (E2)
+=item * (M2)
 
 E<quot>(A -) BE<quot> zu E<quot>-> BE<quot> optimieren (mit leftarrow)
+
+But: it seems that PDF does not know anything about Unicode
+characters; and the PDF::Create documentation states that the ZingBats
+and Symbol fonts are not useable.
 
 =item * (H4)
 

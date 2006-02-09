@@ -519,16 +519,6 @@ userdel	2 16336,-29511 16379,-29446
          'data' => 'userdel	2 91858,-18170 90698,-16886
 ',
          'type' => 'gesperrt'
-       },
-       undef,
-       undef,
-       {
-         'until' => undef,
-         'text' => 'Berlin-Lübars: Am Freibad in beiden Richtungen Wasser auf der Fahrbahn, gesperrt',
-         'from' => undef,
-         'data' => 'userdel	2 5727,23485 5333,23636
-',
-         'type' => 'gesperrt'
        }
      
 );
