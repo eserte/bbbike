@@ -2655,10 +2655,11 @@ userdel	q4 16958,11778 16821,11743
 userdel	q4 16821,11743 16786,11668
 EOF
      },
-     { from  => 1125608201, # 2005-09-01 22:56
-       until => 1167605999, # 2006-12-31 23:59
-       text  => 'Florastr. (Pankow) Berliner Str. in Richtung Mühlenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
+     { from  => 1139555958, # 2006-02-10 08:19
+       until => 1191189600, # 2007-10-01 00:00
+       text  => 'Florastr. (Pankow) Berliner Str. in Richtung Mühlenstr. Baustelle, Fahrtrichtung gesperrt (bis September 2007)',
        type  => 'handicap',
+       source_id => 'IM_002176',
        data  => <<EOF,
 userdel	q4; 10459,17754 10722,17940 10846,17992
 EOF
@@ -3618,6 +3619,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 5727,23485 5333,23636
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Tempelhofer Weg (Tempelhof) von Gottlieb-Dunkel-Str. bis Hattenheimer Str. Baustelle, Fahrtrichtung gesperrt',
+       type  => 'handicap',
+       source_id => 'IM_002431',
+       data  => <<EOF,
+userdel	q4; 11456,6103 11590,6026
 EOF
      },
     );

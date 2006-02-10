@@ -265,9 +265,10 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1167605999,
-         'text' => 'Florastr. (Pankow) Berliner Str. in Richtung Mühlenstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
-         'from' => 1125608201,
+         'source_id' => 'IM_002176',
+         'until' => 1191189600,
+         'text' => 'Florastr. (Pankow) Berliner Str. in Richtung Mühlenstr. Baustelle, Fahrtrichtung gesperrt (bis September 2007)',
+         'from' => 1139555958,
          'data' => 'userdel	q4; 10459,17754 10722,17940 10846,17992
 ',
          'type' => 'handicap'
@@ -519,6 +520,18 @@ userdel	2 16336,-29511 16379,-29446
          'data' => 'userdel	2 91858,-18170 90698,-16886
 ',
          'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       {
+         'source_id' => 'IM_002431',
+         'until' => undef,
+         'text' => 'Tempelhofer Weg (Tempelhof) von Gottlieb-Dunkel-Str. bis Hattenheimer Str. Baustelle, Fahrtrichtung gesperrt',
+         'from' => undef,
+         'data' => 'userdel	q4; 11456,6103 11590,6026
+',
+         'type' => 'handicap'
        }
      
 );
