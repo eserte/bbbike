@@ -128,7 +128,7 @@ Glambeck - Wolletz: Qualität etc.	? 37575,69168 38096,68983 38424,69181 38858,69
 Wolletz - Blumberger Mühle: Qualität etc.	? 43116,69546 44693,70057 45761,70992
 Blumberger Mühle - Gorlsdorf: Qualität etc.	? 45761,70992 45584,72614
 Peetzig - Steinhöfel: Qualität etc.	? 44200,74890 42992,76027 41901,77034 41472,77229
-Potsdam, Burgstr.: Qualität?	? -12553,-1278 -12500,-1437 -12281,-1378 -12265,-1434
+Potsdam, Burgstr.: Qualität?	? -12500,-1437 -12281,-1378 -12265,-1434
 Mauerweg am Teltowkanal: Qualität (laut "Berliner Umland" größtenteils gut geeigneter Radweg)?	? 15573,4122 14625,4881 14457,5097
 Mauerweg zwischen Späthstr. und Britzer Allee: laut "Berliner Umland" gut geeigneter Radweg	? 14546,5495 14659,5853 15142,5889
 Leipe - Lübbenau: Waldweg, teilweise muss getragen werden	? 55335,-60336 55150,-60225 54925,-60300 54337,-60275 52537,-60162 52137,-60387 51162,-59762 50725,-59237 50575,-59287
@@ -143,7 +143,7 @@ Fährweg - Niederneuendorfer Allee: Kleingartenanlage, Qualität?	? -1800,17710 -1
 Mauerweg Spandau: Qualität?	? -2742,19975 -2821,19740 -3497,20003
 Steinhöfel - Poratz - Ringenwalde: Qualität?	? 37482,74476 37025,74400 36800,74137 36612,74162 35775,73750 35469,73594 35125,73487 33687,73037 33075,72750 32750,72787 32600,73062 31862,73112 30712,72625 30244,72598
 Glambeck - Templin: ist das hier die in Glambeck ausgeschilderte Strecke? Qualität?	? 37273,68606 36000,69075 35962,70325 35600,70962 35112,70912 35080,71176
-Am Neuen Garten: Qualität, anscheinend (zumindest im südlichen Abschnitt) Kopfsteinpflaster (Q2)? Einbahnstraße im nördlichen Abschnitt für Radfahrer?	? -12576,107 -12323,635 -12276,831 -12212,1201
+Am Neuen Garten: Qualität, anscheinend (zumindest im südlichen Abschnitt) Kopfsteinpflaster (Q2)? Einbahnstraße im nördlichen Abschnitt für Radfahrer?	? -12576,107 -12341,594 -12323,635 -12302,718 -12276,831 -12212,1201
 Bertinistr./Bertiniweg: Durchfahrt möglich? Qualität?	? -12185,1388 -12153,1787 -12275,1875 -12731,2009 -12893,1915
 Viereckremise/Grenzallee Potsdam: Durchfahrt möglich? Qualität?	? -13418,1668 -13854,2025 -14315,2135
 Katharinenholzstr.: laut "Berliner Umland" gut geeignet, laut "mobil-potsdam.de" asphaltiert	? -15577,397 -14969,-50
@@ -175,7 +175,7 @@ Normannenstr. (Treptow): Qualität?	? 19913,1678 19965,1462 19963,1238
 Lianenweg: Qualität? Durchfahrt möglich?	? 19686,1542 19965,1462
 Germanenstr.: Qualität (laut ADFC-Karte mäßig geeignet)? Brücke über Fernbahnstrecke vorhanden? 	? 19965,1462 20387,1359 20696,1134 21103,600 21159,450
 Ewaldstr.: Qualität? (laut ADFC-Karte mäßig geeignet)	? 21303,621 21159,450 20906,200 20690,175 20671,87 20689,-68 20495,-331 20146,-541
-Böcklinstr. (Potsdam): Qualität? (wahrscheinlich Kopfsteinpflaster)	? -11231,696 -11609,400
+Böcklinstr. (Potsdam): Qualität? (wahrscheinlich Kopfsteinpflaster)	? -11231,696 -11308,636 -11403,562 -11483,499 -11609,400
 Freiheitstr., Wildau: Qualität?	? 25187,-8934 25875,-8746 26568,-8593 26755,-8553
 Str. der Freiheit, Zeuthen: Qualität?	? 25281,-6921 25981,-7196
 Westkorso, Zeuthen: Qualität?	? 25981,-7196 26244,-7147 26581,-7087
@@ -338,7 +338,7 @@ Bornholmer Str.: Überqueren der Straßenbahntrasse möglich?	? 10215,16527 10300,1
 nördlicher Radweg auf der Bulgarischen Str.: siehe Message-ID: <1kl0p5nkwlmb1.dlg@tebe.my-fqdn.de>	? 15166,8489 15383,8662 15580,8839
 Lindenstr. (Potsdam): Qualität (sehr wahrscheinlich: Kopfsteinpflaster)? Einbahnstraße im Süden auch für Radfahrer relevant? Zugang zur Breiten Str.?	? -13237,-796 -13272,-983 -13289,-1071 -13314,-1178 -13381,-1496
 Gutenbergstr. (Potsdam): Einbahnstraße auch für Radfahrer relevant?	?; -13568,-1062 -13427,-1024 -13272,-983
-Yorckstr. (Potsdam): Kopfsteinpflaster?	? -12834,-1362 -13234,-1320
+Yorckstr. (Potsdam): Kopfsteinpflaster?	? -12834,-1362 -13003,-1343 -13088,-1333 -13234,-1320
 Benkertstr. (Potsdam): Kopfsteinpflaster?	? -12727,-640 -12712,-734 -12685,-870
 Teerofenweg: Waldweg? Qualität?	? -7067,-36 -6395,-887
 Fresdorf - Kähnsdorf: Qualität?	? -11617,-15497 -12187,-15175 -12887,-15425 -13654,-15506
@@ -793,6 +793,58 @@ Neuhardenberg - Letschin: Qualität?	? 68139,21885 68350,22134 68604,23658 69163,
 Hermann-Piper-Str./Olbendorfer Weg - Rathauspromenade: existiert eine Verbindung für Radfahrer?	? 5001,19832 5254,19931
 Bestensee - Hintersiedlung: Qualität?	? 26437,-18650 26650,-18912 26987,-19262 26562,-20162 26037,-20825
 Hanielweg - Malteserstr.: existiert hier eine Verbindung, die für Radfahrer befahrbar ist?	? 7576,1774 7451,1818
+Mühlenweg: Qualität, wahrscheinlich unbefestigter Weg?	? -11751,-58 -11893,53
+Rubensstr.: Qualität?	? -11568,-83 -11716,133 -11796,240
+Ludwig-Richter-Str.: Qualität, wahrscheinlich Kopfsteinpflaster?	? -11467,-9 -11626,191 -11707,315 -11721,345
+Dürerstr.: Qualität?	? -11716,133 -11626,191
+Tizianstr.: Qualität? Ist das letzte Stück Seestr. auch schon Tizianstr.?	? -11581,559 -11483,499 -11382,350
+Rembrandtstr.: Qualität?	? -11403,562 -11080,265
+Menzelstr.: Qualität?	? -11308,636 -11000,329
+Glienicker Horn: ist diese Sackgasse für die Öffentlichkeit zugänglich und für Radfahrer befahrbar? Qualität? Existiert vielleicht auch eine Verbindung zur Glienicker Brücke?	? -11000,329 -10857,128
+Kolonieweg (Kleingärten am Pfingstberg): Qualität, wahrscheinlich unbefestiger Weg?	? -12633,1484 -12665,1665
+Höhenweg: Qualität (wahrscheinlich Kopfsteinpflaster), Steigung?	? -12334,1324 -12421,1601 -12511,1680 -12665,1665
+Glumestr.: Qualität?	? -12506,607 -12341,594
+Leistikowstr.: Qualität?	? -12518,774 -12302,718
+Langhansstr.: Qualität?	? -12276,831 -12394,870 -12325,1145 -12410,1159
+Kleine Weinmeisterstr.: Qualität?	? -12618,296 -12655,385 -12717,440 -12807,441
+Persiusstr.: Qualität?	? -12519,575 -12659,599 -12744,573 -12811,533
+Hessestr.: Qualität?	? -12655,385 -12649,472 -12744,573 -12781,663
+Birkenstr.: Qualität?	? -12625,-4 -12723,80
+Am Hang: Qualität?	? -13087,1289 -12977,1299 -12861,1357
+Am Reiherbusch: Qualität?	? -13094,1373 -13057,1384 -12977,1394
+Bruno-Taut-Str.: Qualität	? -13105,1495 -13067,1506 -12912,1511
+Friedrich-Klausing-Str.: Qualität	? -13125,1700 -13089,1707 -12983,1712 -12988,1771 -13089,1771
+Viereckremise: Qualität?	? -13316,1679 -13322,1760 -13332,1903 -13274,1908 -13211,1903 -13140,1900
+Fritz-von-der-Lancken-Str.: Qualität?	? -13140,1900 -13099,1903 -13009,1908
+Graf-von-Schwerin-Str.: Qualität?	? -13057,1384 -13067,1506 -13089,1707 -13089,1771 -13099,1903
+Angermannstr.: Qualität?	? -13087,1289 -13147,1278 -13189,1368 -13094,1373
+Peter-Hund-Str.: Qualität?	? -13242,1405 -13248,1490 -13252,1686
+Erich-Arendt-Str.: Qualität?	? -13248,1490 -13105,1495
+Nedlitzer Holz: Qualität?	? -13252,1686 -13264,1765 -13274,1908
+Am Golfplatz: Qualität?	? -13190,1693 -13205,1776 -13211,1903
+An der Roten Kaserne: Qualität?	? -13322,1760 -13264,1765 -13205,1776 -13129,1772
+Hebbelstr.: Qualität?	? -12607,-434 -12633,-311 -12511,-75
+Bettina-von-Suttner-Str.: Qualität?	? -12422,-248 -12633,-311 -12744,-306
+Eisenhartstr.: Qualität?	? -12813,-480 -12744,-306 -12625,-4
+Reiterweg: Verlängerung! Qualität?	? -12961,-136 -12857,-168
+Helene-Lange-Str.: Qualität?	? -12863,-364 -13142,-303
+Posthofstr.: Qualität?	? -12552,-1233 -12362,-1122
+Joliot-Curie-Str.: Qualität?	? -12553,-1278 -12500,-1437
+Burgstr.: Verlängerung! Qualität?	? -12500,-1437 -12617,-1457
+Neuer Markt: genaue Straßenführung und -namen? Qualität: Kopfsteinpflaster Q2 oder Q3	? -12762,-1545 -12914,-1477 -13088,-1333
+Zusätzlich: Überqueren der Straßenbahntrasse an dieser Stelle möglich (wahrscheinlich nicht)?	?? -12914,-1477 -12762,-1545
+Straßen: Siefertstr., Am Neuen Markt, Schwertfegerstr., Schloßstr.	? -13088,-1333 -12914,-1477 -12762,-1545
+Wall am Kiez: Qualität?	? -13531,-1534 -13523,-1621 -13476,-1658 -13460,-1764 -13412,-1780 -13401,-1854 -13356,-1878
+Kiezstr.: Qualität?	? -13356,-1878 -13476,-1658
+Am Lustgartenwall: Qualität?	? -13356,-1878 -13317,-1875 -12977,-1923
+Hoffbauerstr.: Qualität?	? -13317,-1875 -13248,-1626 -13230,-1582
+H.-von-Treschkow-Str.: Qualität? Wofür steht das H? Spelling?	? -13286,-1620 -13248,-1626 -12940,-1668
+Schloßstr.: Qualität?	? -12940,-1668 -12781,-1689
+Unbenannte Straße: Qualität? Straßenname?	? -12940,-1668 -12923,-1628 -12924,-1562
+Werner-Seelenbinder-Str.: Qualität?	? -12924,-1562 -13152,-1525
+Parkplätze? Straßennamen?	? -12781,-1689 -12787,-1780 -12656,-1820
+Am Hinzenberg: Qualität?	? -12656,-1820 -12776,-1997 -12935,-2082
+Wilhelm-Staab-Str./Yorckstr.: Überqueren des Kanals möglich?	? -13003,-1343
 wirklich?	? 9215,3599
 Wirklich?	? -3755,17090
 geplante Ampel in der Johannisthaler	? 14196,2876

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: datachangelog2bbd,v 1.3 2005/07/17 21:29:05 eserte Exp $
+# $Id: datachangelog2bbd,v 1.5 2006/02/12 23:09:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -20,14 +20,13 @@ use lib ("$FindBin::RealBin/..",
 	);
 use Strassen::Core;
 use Getopt::Long;
+use DataChangeLog;
 
 my $start;
 
 GetOptions("start=s" => \$start) or die "usage!";
 
 my $datachange_log = shift || "$FindBin::RealBin/../data/datachange.log";
-
-my $coordrx = qr/^[0-9+-]/;
 
 my %oper_cat = ('add' => '#008000',
 		'change' => '#808000',
@@ -37,68 +36,20 @@ my %oper_cat = ('add' => '#008000',
 		'insertmulti' => '#0000a0',
 	       );
 
-open(LOG, $datachange_log) or die "Can't open $datachange_log: $!";
-while(<LOG>) {
+DataChangeLog::parse($datachange_log, \&output, start => $start);
 
-    if (defined $start) {
-	if (/\Q$start/) {
-	    undef $start;
-	} else {
-	    next;
-	}
+sub output {
+    my(%args) = @_;
+
+    my($oper, $name, $files, $cat, $coords, $comment) = @args{qw(operation name files cat coords comment)};
+    my @files = @$files;
+    my @coords = @$coords;
+
+    if (defined $comment) {
+	print $comment;
+	return;
     }
 
-    if (/^#/ || /^$/) {
-	print $_;
-	next;
-    }
-
-    chomp;
-    my(@coords, @files);
-    my($oper, $name, $cat, $rest) = $_ =~ /^(add)\s+([^\t]+)\t(\S+)\s+(.*)$/;
-    if (!defined $oper) {
-	my(@rest) = split /\s+/, $_;
-	$oper = shift @rest;
-	while ($rest[-1] !~ $coordrx) {
-	    unshift @files, pop @rest;
-	}
-	@coords = @rest;
-	# check sanity:
-	if ($oper eq 'change') {
-	    if (@coords != 2) {
-		warn "Expected two coords for 'change' operation in $_";
-	    }
-	} elsif ($oper eq 'delete') {
-	    if (@coords != 1) {
-		warn "Expected one coord for 'delete' operation in $_";
-	    }
-	} elsif ($oper eq 'changeline') {
-	    if (@coords != 3) {
-		warn "Expected three coords for 'changeline' operation in $_";
-	    }
-	} elsif ($oper eq 'insert') {
-	    if (@coords != 3) {
-		warn "Expected three coords for 'insert' operation in $_";
-	    }
-	} elsif ($oper eq 'insertmulti') {
-	    if (@coords < 3) {
-		warn "Expected at least three coords for 'insertmulti' operation in $_";
-	    }
-	} else {
-	    warn "Unknown operation '$oper' in $_";
-	}
-    } else {
-	my(@rest) = split /\s+/, $rest;
-	for my $i (0 .. $#rest) {
-	    if ($rest[$i] =~ $coordrx) {
-		push @coords, $rest[$i];
-	    } else {
-		push @files, @rest[$i .. $#rest];
-		last;
-	    }
-	}
-	undef $cat; # XXX use the oper_cat value
-    }
     my $out = "oper=$oper";
     if (defined $name) {
 	$out .= " name=$name";
@@ -115,5 +66,85 @@ while(<LOG>) {
     $out .= " " . join(" ", @coords) . "\n";
     print $out;
 }
+
+## XXX del:
+# open(LOG, $datachange_log) or die "Can't open $datachange_log: $!";
+# while(<LOG>) {
+
+#     if (defined $start) {
+# 	if (/\Q$start/) {
+# 	    undef $start;
+# 	} else {
+# 	    next;
+# 	}
+#     }
+
+#     if (/^#/ || /^$/) {
+# 	print $_;
+# 	next;
+#     }
+
+#     chomp;
+#     my(@coords, @files);
+#     my($oper, $name, $cat, $rest) = $_ =~ /^(add)\s+([^\t]+)\t(\S+)\s+(.*)$/;
+#     if (!defined $oper) {
+# 	my(@rest) = split /\s+/, $_;
+# 	$oper = shift @rest;
+# 	while ($rest[-1] !~ $coordrx) {
+# 	    unshift @files, pop @rest;
+# 	}
+# 	@coords = @rest;
+# 	# check sanity:
+# 	if ($oper eq 'change') {
+# 	    if (@coords != 2) {
+# 		warn "Expected two coords for 'change' operation in $_";
+# 	    }
+# 	} elsif ($oper eq 'delete') {
+# 	    if (@coords != 1) {
+# 		warn "Expected one coord for 'delete' operation in $_";
+# 	    }
+# 	} elsif ($oper eq 'changeline') {
+# 	    if (@coords != 3) {
+# 		warn "Expected three coords for 'changeline' operation in $_";
+# 	    }
+# 	} elsif ($oper eq 'insert') {
+# 	    if (@coords != 3) {
+# 		warn "Expected three coords for 'insert' operation in $_";
+# 	    }
+# 	} elsif ($oper eq 'insertmulti') {
+# 	    if (@coords < 3) {
+# 		warn "Expected at least three coords for 'insertmulti' operation in $_";
+# 	    }
+# 	} else {
+# 	    warn "Unknown operation '$oper' in $_";
+# 	}
+#     } else {
+# 	my(@rest) = split /\s+/, $rest;
+# 	for my $i (0 .. $#rest) {
+# 	    if ($rest[$i] =~ $coordrx) {
+# 		push @coords, $rest[$i];
+# 	    } else {
+# 		push @files, @rest[$i .. $#rest];
+# 		last;
+# 	    }
+# 	}
+# 	undef $cat; # XXX use the oper_cat value
+#     }
+#     my $out = "oper=$oper";
+#     if (defined $name) {
+# 	$out .= " name=$name";
+#     }
+#     if (@files) {
+# 	$out .= " files=@files";
+#     }
+#     $out .= "\t";
+#     if (defined $cat) {
+# 	$out .= $cat;
+#     } else {
+# 	$out .= $oper_cat{$oper} || "#000000";
+#     }
+#     $out .= " " . join(" ", @coords) . "\n";
+#     print $out;
+# }
 
 __END__

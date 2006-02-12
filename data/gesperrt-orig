@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.94 2005/12/11 16:20:05 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.95 2006/02/12 22:05:12 eserte Exp $
 #:
 ###################################################################
 #
@@ -327,6 +327,7 @@ Haßfurter Weg	1 11812,18484 11847,18338
 #
 # Potsdam
 #
+Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12685,-870 -12712,-734 -12727,-640
 Hans-Thoma-Str.	1 -12148,-784 -12190,-775 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
@@ -338,7 +339,7 @@ Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12063,-784 -11875,-925 -1
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
 Geschwister-Scholl-Str.	1 -14366,-1728 -14234,-1646 -14193,-1621 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13884,-1243
-Platz der Einheit	1 -12768,-1069 -12718,-1327
+Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
 Puschkinallee	1 -13052,775 -12922,762 -12811,533
 # 
 # elsewhere in Brandenburg
@@ -678,7 +679,7 @@ Fußgängerbrücke über den Sachesendamm gesperrt, südliche Rampe ist aber befahrba
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Behlertstr.	1 -12362,-370 -12607,-434 -12868,-493
+Behlertstr.	1 -12362,-370 -12607,-434 -12813,-480 -12868,-493
 tragen (Treppe)	0:30 2247,5068
 tragen (Treppe)	0:15 2204,5081
 Drängelgitter (Herderstr.)	BNP:5 4386,6288

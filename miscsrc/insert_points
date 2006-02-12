@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.62 2005/12/10 23:28:45 eserte Exp $
+# $Id: insert_points,v 1.63 2006/02/12 23:08:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -113,6 +113,7 @@ my @special_post_handling_files;
 my $topref;
 my $top;
 my $my_top;
+my @infiles;
 
 my $operation;
 
@@ -121,8 +122,11 @@ sub process {
 
     local @ARGV = @argv;
 
-    @custom_check_files = (); # reset
-    @add_custom_check_files = (); # reset
+    # reset all array options:
+    @custom_check_files     = ();
+    @add_custom_check_files = ();
+    @infiles                = ();
+
     if (!GetOptions('tk!'        => \$use_tk,
 		    'bbbikerootdir=s' => \$bbbikerootdir,
 		    'datadir=s'  => \$datadir,
@@ -140,13 +144,14 @@ sub process {
 		    'orig!'      => \$orig,
 		    "report!"    => \$report,
 		    "ask!"       => \$ask,
+		    'infiles=s@' => \@infiles,
 		   )) {
 	die "Usage!";
     }
 
     $top = $main::top = $main::top; # unfortunately I cannot use Getopt::Long to provide $top
     $datadir = "$bbbikerootdir/data" if !defined $datadir;
-    $tempblockingdir = "$bbbikerootdir/data/temp_blockings" if !defined $tempblockingdir; # XXX was misc
+    $tempblockingdir = "$datadir/temp_blockings" if !defined $tempblockingdir;
 
     for my $def ([$custom_file_list, \@custom_check_files],
 		 [$add_custom_file_list, \@add_custom_check_files],
@@ -656,6 +661,23 @@ sub process {
     if ($n) {
 	$dialog_text .= " (no-clobber mode)";
     }
+
+    if (@infiles) {
+	my %infiles = map {($_,1)} @infiles;
+	my @change_files =  _interpolate(@change_files);
+	my %change_files = map {($_,1)} @change_files;
+	for my $infile (keys %infiles) {
+	    if (!exists $change_files{$infile}) {
+		die "Unexpected: $infile exists in datachange.log, but not in files actually to change: @change_files ($operation on @coords)\n";
+	    }
+	}
+	for my $change_file (keys %change_files) {
+	    if (!exists $infiles{$change_file}) {
+		die "Unexpected: $change_file should be actually changed, but does not exist in datachange.log: @infiles ($operation on @coords)\n";
+	    }
+	}
+    }
+
     my $ans;
     if (!$ask) {
 	print STDERR "Doing $operation...\n" if $verbose;
@@ -967,7 +989,9 @@ sub do_log {
 	close BW;
     }
 
-    BBBikeEdit::ask_for_co($top, $logfile);
+    if (defined &BBBikeEdit::ask_for_co) {
+	BBBikeEdit::ask_for_co($top, $logfile);
+    }
     if (open(LOG, ">>$logfile")) {
 	if ($date_line_needed) {
 	    print LOG "# EDIT: $this_date_line\n";

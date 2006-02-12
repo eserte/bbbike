@@ -513,14 +513,7 @@ userdel	2 16336,-29511 16379,-29446
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1139612400,
-         'text' => 'B 112 Frankfurt (O)-Eisenhüttenstadt OD Wiesenau Havarie Gasleitung Vollsperrung 06.02.2006-10.02.2006 ',
-         'from' => 1139094000,
-         'data' => 'userdel	2 91858,-18170 90698,-16886
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,

@@ -1,5 +1,5 @@
 #: title: Qualit‰t von Straﬂen in Brandenburg und weiterer Umgebung
-#: version: $Id: qualitaet_l-orig,v 4.45 2005/12/11 16:19:56 eserte Exp eserte $
+#: version: $Id: qualitaet_l-orig,v 4.46 2006/02/12 22:05:16 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen; schlechte Straﬂe; 01.11.96-unbekannt	Q3 -50149,24689 -50016,24414 -49883,24097 -50010,23562 -50201,23411 -50255,22794 -50938,21256
@@ -313,11 +313,12 @@ Am Pfingstberg (Potsdam): Kopfsteinpflaster, OK	Q1 -13074,1136 -12825,1284
 (B2 - Pfingstberg): Asphalt	Q0 -13053,919 -12919,953 -12905,1000 -12926,1081 -12865,1140
 (B2 - Pfingstberg): Parkweg	Q1 -12865,1140 -12796,1037
 Am Waldessaum: Parkweg	Q1 -12825,1284 -12709,1106
-Vogelweide: schlechtes Kopfsteinpflaster	Q3 -12825,1284 -12906,1446
-Vogelweide: Schotter	Q2 -12906,1446 -12928,1646 -12934,1813 -12893,1915 -12731,2009
-Gr. Weinmeisterstr (Potsdam): m‰ﬂiger Asphalt	Q1 -12524,918 -12515,651 -12518,587 -12618,296
+Vogelweide: schlechtes Kopfsteinpflaster	Q3 -12825,1284 -12861,1357 -12906,1446
+Vogelweide: Schotter	Q2 -12906,1446 -12912,1511 -12928,1646 -12934,1813 -12893,1915 -12731,2009
+Gr. Weinmeisterstr (Potsdam): m‰ﬂiger Asphalt	Q1 -12524,918 -12518,774 -12506,607 -12519,575 -12618,296
 Gr. Weinmeisterstr (Potsdam): guter Asphalt	Q0 -12618,296 -12576,107 -12557,11
 (Groﬂe Weinmeisterstr. - Alleestr.): Asphalt	Q0 -12576,107 -12625,-4
+(Groﬂe Weinmeisterstr. - Pfingstberg): Parkweg	Q2 -12518,774 -12624,830 -12698,798 -12813,909 -12798,958 -12830,1011 -12796,1037
 Am Kanal (Potsdam): Kopfsteinpflaster, nˆrdliche Fahrbahn bevorzugt nutzen	Q2 -12317,-1212 -12070,-1153 -12040,-1169
 Groﬂe Fischerstr. (Potsdam): Kopfsteinpflaster	Q2 -12040,-1169 -12011,-1273 -11981,-1390
 Kleine Fischerstr.: Kopfsteinpflaster	Q2 -12070,-1269 -12011,-1273
@@ -671,7 +672,7 @@ Kopfsteinpflaster	Q2 -19190,7296 -19187,6709 -19530,6615
 	Q0 1346,-762 1276,-1268 1222,-1732 1137,-1989 956,-2890 935,-3275 1084,-3678
 Ruhlsdorf - G¸terfelde: m‰ﬂiger/schlechter Feldweg	Q2 1084,-3678 -256,-3961 -1809,-4235 -2493,-4385 -2534,-4606
 	Q0 2471,-6025 2031,-5468 1663,-5427 296,-5328 -1781,-4803 -2534,-4606 -3368,-4430 -3418,-4525 -3446,-4709 -3596,-4687 -3796,-4612 -3871,-4437 -4457,-4197 -4819,-4154 -5736,-3629 -6285,-3363 -6553,-3235 -6810,-3151 -7060,-3124 -7873,-3094 -8278,-2928 -8428,-2886 -8493,-2870
-	Q0 -13050,337 -13062,535 -13052,775 -13049,865 -13053,919 -13074,1136 -13125,1700 -13140,1900 -13152,2169 -13375,2950 -13387,2987 -13784,3900 -13778,4492 -13690,5212 -13578,5396 -13287,5556 -13143,5587 -12865,5567 -12181,5611 -10923,6318 -10206,6756 -10090,6868 -9996,7037 -9928,7459 -8644,9593 -8693,10340 -8697,10653 -8899,11121 -9262,11890 -9494,12168 -9581,12254
+	Q0 -13050,337 -13062,535 -13052,775 -13049,865 -13053,919 -13074,1136 -13087,1289 -13094,1373 -13105,1495 -13125,1700 -13129,1772 -13140,1900 -13152,2169 -13375,2950 -13387,2987 -13784,3900 -13778,4492 -13690,5212 -13578,5396 -13287,5556 -13143,5587 -12865,5567 -12181,5611 -10923,6318 -10206,6756 -10090,6868 -9996,7037 -9928,7459 -8644,9593 -8693,10340 -8697,10653 -8899,11121 -9262,11890 -9494,12168 -9581,12254
 	Q0 -13561,117 -13456,500 -14046,684 -13820,1095 -13907,1223 -13801,1414 -14016,1563
 	Q0 -14016,1563 -13854,2025 -13856,2472 -13918,2534
 	Q0 -13918,2534 -13375,2950
@@ -880,7 +881,7 @@ Neuer Garten: Parkweg	Q1 -12331,-131 -12412,-118 -12450,-34 -12557,11
 Neuer Garten: Parkweg	Q1 -11615,853 -11510,810 -11231,696
 Zum Pfingstberg: Parkweg	Q1 -12621,1162 -12709,1106 -12796,1037
 Russ. Kolonie: Parkweg	Q1 -13050,337 -13000,379 -12918,431 -12812,371
-Charlottenstr. (Potsdam): Kopfsteinpflaster	Q2 -12296,-1190 -12488,-999
+Charlottenstr. (Potsdam): Kopfsteinpflaster	Q2 -12296,-1190 -12362,-1122 -12488,-999
 Waidmannsweg (Hennigsdorf): Asphalt	Q0 -4293,27146 -4600,26443 -4856,25803
 Brandenburgische Str. (Hennigsdorf): Asphalt	Q0 -4642,25672 -4359,26315 -4048,26914
 Heideweg (Hennigsdorf): Asphalt	Q0 -3738,26172 -4121,26209 -4359,26315 -4600,26443
@@ -1122,6 +1123,9 @@ bei Zechow: Asphalt	Q0 -26350,70262 -24687,71412 -24162,71612
 dt. Alleenstraﬂe: Asphalt	Q0 -24335,65501 -22567,67134 -21150,67860
 An der Alten Fahrt: Parkweg	Q1 -12600,-1706 -12437,-1506 -12265,-1434 -12114,-1409 -12110,-1379
 Burgstr.: Kopfsteinpflaster	Q2 -12110,-1379 -12062,-1378
+Am Alten Markt: Asphalt	Q0 -12666,-1311 -12617,-1457 -12589,-1556
+Ebr‰erstr.: Kopfsteinpflaster, evtl. OK	Q2 -12992,-1222 -12854,-1243
+Wilhelm-Staab-Str.: Kopfsteinpflaster	Q2 -13003,-1343 -12992,-1222 -12984,-1110
 Eltesterstr.: Kopfsteinpflaster	Q2 -12062,-1378 -11981,-1390
 Daimlerstr. (Potsdam): Betonplatten, unbenutzte Straﬂenbahnschienen auf Fahrbahn	Q1 -10793,-2157 -10712,-1942 -10678,-1860
 Voltastr. (Potsdam): Kopfsteinpflaster, OK	Q1 -10588,-1975 -10712,-1942
@@ -1315,3 +1319,4 @@ Johann-Strauﬂ-Platz: Asphalt	Q0 -9410,-815 -9318,-714
 Rudolf-Breitscheid-Str. [Bahnhofsvorfahrt]: Asphalt	Q0 -8112,-1512 -8100,-1575 -8023,-1565 -8038,-1495
 Baumgartenbr¸ck (Geltow): rauer Asphalt mit Lˆchern 	Q2 -18025,-6370 -18410,-6286 -18966,-5945
 Russische Kolonie (Potsdam): Kopfsteinpflaster	Q2 -13068,-115 -13091,-8
+Kolonieweg: unbefestiger holpriger Weg	Q3 -12603,1443 -12633,1484 -12928,1646

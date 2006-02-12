@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.94 2005/12/11 16:20:05 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.95 2006/02/12 22:05:12 eserte Exp $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -292,6 +292,7 @@ Brommystr.: Privatstr.	2 12509,11025 12567,11115
 (Hauptstr. - Kynaststr.)	1 15181,10766 15030,10819 14881,10864
 Luitpoldstr., Verlängerung über Schulhof, nicht immer geöffnet!	2 6611,9879 6670,9887
 Haßfurter Weg	1 11812,18484 11847,18338
+Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12685,-870 -12712,-734 -12727,-640
 Hans-Thoma-Str.	1 -12148,-784 -12190,-775 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
@@ -311,7 +312,7 @@ Nuthestr. -> Am Babelsberger Park: nicht passierbarer Mittelstreifen	3 -11613,-1
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11142,-1675
 Geschwister-Scholl-Str.	1 -14366,-1728 -14234,-1646 -14193,-1621 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13884,-1243
-Platz der Einheit	1 -12768,-1069 -12718,-1327
+Platz der Einheit	1 -12768,-1069 -12755,-1131 -12718,-1327
 Puschkinallee	1 -13052,775 -12922,762 -12811,533
 Altlandsberger Chaussee	1 40487,16703 40712,16743
 Bernau, Bahnhofstr.	1 22864,30560 22907,30433
@@ -748,7 +749,7 @@ Naumannstr. unter der S-Bahn-Brücke: noch Bauarbeiten	2:inwork 7716,8048 7717,77
 (Neue Naumannstr.) (noch in Bau, Fertigstellung Ende 2005 (2005-12-31))	2:inwork 7606,7611 7717,7759
 Markgrafenstraße  Richtung Französische Straße zwischen Behrenstraße und Französische Straße, Bauarbeiten als Einbahnstraße eingerichtet, Dauer:  bis 01.07.2006	1:inwork 9636,12126 9626,12227
 Fußgängerbrücke über den Sachesendamm gesperrt, südliche Rampe ist aber befahrbar	2:inwork 7718,7641 7772,7610
-Behlertstr.	1 -12362,-370 -12607,-434 -12868,-493
+Behlertstr.	1 -12362,-370 -12607,-434 -12813,-480 -12868,-493
 tragen (Treppe)	0:30:-73 2247,5068
 tragen (Treppe)	0:15 2204,5081
 Drängelgitter (Herderstr.)	BNP:5:-241 4386,6288
