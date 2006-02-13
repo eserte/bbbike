@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.19 2005/05/08 22:04:47 eserte Exp $
+# $Id: Util.pm,v 1.20 2006/02/13 08:05:45 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Util;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
 
 use strict;
 use Config;
@@ -255,6 +255,17 @@ sub try_cache {
     foreach $cache_type (@cacheable) {
 	my $filename = $filename .
 	    ($cache_type =~ /^(Storable|CDB_File)$/ ? "_$Config{byteorder}" : "") . cache_ext($cache_type);
+
+	if (($^O =~ /^(MSWin32|cygwin)$/ || $main::devel_host)
+	    && eval {
+		require Digest::MD5;
+		require File::Basename;
+		1;
+	    }) {
+	    # Prevent long filenames
+	    $filename = File::Basename::dirname($filename). "/" . Digest::MD5::md5_hex(File::Basename::basename($filename));
+	}
+
 	warn "Try $rw_text cache type $cache_type $rw_text_2 $filename ...\n"
 	    if $VERBOSE;
 	if ($cache_type eq 'VirtArray') {
