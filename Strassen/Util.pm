@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.20 2006/02/13 08:05:45 eserte Exp $
+# $Id: Util.pm,v 1.20 2006/02/13 08:05:45 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -263,7 +263,7 @@ sub try_cache {
 		1;
 	    }) {
 	    # Prevent long filenames
-	    $filename = File::Basename::dirname($filename). "/" . Digest::MD5::md5_hex(File::Basename::basename($filename));
+	    $filename = File::Basename::dirname($filename). "/" . Digest::MD5::md5_hex(File::Basename::basename($filename)) . ".cache";
 	}
 
 	warn "Try $rw_text cache type $cache_type $rw_text_2 $filename ...\n"

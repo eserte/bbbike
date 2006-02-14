@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.26 2005/12/07 22:26:18 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.26 2005/12/07 22:26:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -17,10 +17,6 @@ require GPS;
 push @ISA, 'GPS';
 
 BEGIN {
-    # XXX This should go away some day...
-    if (-e "/home/e/eserte/work/perl-GPS") {
-	eval 'use blib "/home/e/eserte/work/perl-GPS"'; warn $@ if $@;
-    }
     eval 'use GPS::Garmin 0.13'; die $@ if $@;
 }
 

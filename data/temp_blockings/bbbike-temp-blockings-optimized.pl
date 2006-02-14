@@ -525,6 +525,14 @@ userdel	2 16336,-29511 16379,-29446
          'data' => 'userdel	q4; 11456,6103 11590,6026
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1162335600,
+         'text' => 'B 96 Gransee-Fürstenberg Brücke über Wentowkanal bei Dannenwalde Brückenabriß- u. -neubau Vollsperrung 20.02.2006-31.10.2006 ',
+         'from' => 1140303600,
+         'data' => 'userdel	2 -5962,74421 -6037,73865
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -3630,4 +3630,12 @@ EOF
 userdel	q4; 11456,6103 11590,6026
 EOF
      },
+     { from  => 1140303600, # 2006-02-19 00:00
+       until => 1162335600, # 2006-11-01 00:00
+       text  => 'B 96 Gransee-Fürstenberg Brücke über Wentowkanal bei Dannenwalde Brückenabriß- u. -neubau Vollsperrung 20.02.2006-31.10.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -5962,74421 -6037,73865
+EOF
+     },
     );
