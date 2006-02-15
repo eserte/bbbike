@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.83 2006/02/12 22:04:31 eserte Exp $
+# $Id: Makefile,v 2.85 2006/02/14 23:26:13 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -400,8 +400,20 @@ gesperrt_car:	gesperrt_car-orig
 
 plz berlin:	plz-orig
 	-@$(WRITEABLE) plz berlin
-	$(CONVERT2HAFAS) -specborder=berlin plz-orig > plz
+	cat plz-orig | \
+	    ${GREPSTRASSEN} -v -sectionrx "ortsteile" -preserveglobaldirectives | \
+	    $(CONVERT2HAFAS) -basefile plz-orig -specborder=berlin - > plz~
+	mv -f plz~ plz
 	-@$(READONLY) plz berlin
+
+# not a default rule:
+berlin_ortsteile:	plz-orig
+	-@$(WRITEABLE) $@
+	cat plz-orig | \
+	    ${GREPSTRASSEN} -sectionrx "ortsteile" | \
+	    $(CONVERT2HAFAS) -basefile plz-orig - > $@~
+	mv -f $@~ $@
+	-@$(READONLY) $@
 
 potsdam:	potsdam-orig
 	-@$(WRITEABLE) $@

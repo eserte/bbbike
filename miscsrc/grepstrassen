@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: grepstrassen,v 1.12 2006/02/01 23:18:13 eserte Exp $
+# $Id: grepstrassen,v 1.13 2006/02/14 20:09:15 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -21,6 +21,7 @@ use strict;
 use Getopt::Long;
 my($v, $cat, $catrx, $name, $namerx, $section, $sectionrx);
 my($minarea, $minlength);
+my $preserveglobaldirectives;
 my %special;
 my %special_end;
 my %type_s;
@@ -40,6 +41,7 @@ GetOptions("v" => \$v,
 	       my $type = $_[1];
 	       init_directive_handler($type);
 	   },
+	   "preserveglobaldirectives!" => \$preserveglobaldirectives,
 	   "minarea=f" => \$minarea,
 	   "minlength=f" => \$minlength,
 	  ) or die <<EOF;
@@ -47,6 +49,7 @@ usage: $0 [-v] [-cat category] [-catrx regexp]
        [-name name] [-namerx regexp]
        [-section section] [-sectionrx regexp]
        [-special name] [-minarea ...km²] [-minlength ...km]
+       [-preserveglobaldirectives]
 
 section is a region marked with the "section" directive in a bbd file.
 
@@ -88,15 +91,28 @@ while(my($k,$v) = each %special_end) {
     $v->();
 }
 
-# Preserve some importing global directives:
-my $comment_directives = $s->get_global_directives->{'#'};
-if ($comment_directives) {
-    print join("", map { "#:# $_\n" } @$comment_directives);
-}
-my $encoding_directive = $s->get_global_directives->{'encoding'}->[0];
-if ($encoding_directive) {
-    print "#: encoding: $encoding_directive\n";
-    binmode STDOUT, ":encoding($encoding_directive)";
+if ($preserveglobaldirectives) {
+    my $global_directives = $s->get_global_directives;
+    if ($global_directives && keys %$global_directives) {
+	for my $directive (keys %$global_directives) {
+	    print join("", map { "#: $directive $_\n" } @{ $global_directives->{$directive} });
+	    if ($directive eq 'encoding') {
+		binmode STDOUT, ":encoding(" . $global_directives->{$directive}->[0] . ")";
+	    }
+	}
+	print "#:\n"; # end
+    }
+} else {
+    # Only preserve some importing global directives:
+    my $comment_directives = $s->get_global_directives->{'#'};
+    if ($comment_directives) {
+	print join("", map { "#:# $_\n" } @$comment_directives);
+    }
+    my $encoding_directive = $s->get_global_directives->{'encoding'}->[0];
+    if ($encoding_directive) {
+	print "#: encoding: $encoding_directive\n";
+	binmode STDOUT, ":encoding($encoding_directive)";
+    }
 }
 
 # XXX The "# filtered" is a hack to prevent the first line being interpreted

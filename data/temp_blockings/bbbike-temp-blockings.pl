@@ -3638,4 +3638,21 @@ EOF
 userdel	2 -5962,74421 -6037,73865
 EOF
      },
+     { from  => 1140994800, # 2006-02-27 00:00
+       until => 1141426800, # 2006-03-04 00:00
+       text  => 'B 122 Alt Ruppin-Dierberg Bahnübergang bei Dierberg Gleisbauarbeiten Vollsperrrung 28.02.2006-03.03.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -22567,67134 -21150,67860
+userdel	2 -21150,67860 -20726,68037
+EOF
+     },
+     { from  => 1139871600, # 2006-02-14 00:00
+       until => 1141426800, # 2006-03-04 00:00
+       text  => 'B 179 Berliner Str. OL Königs Wusterhausen, zw. Schloßplatz u. Gartenweg Havarie SW-Schacht Vollsperrung 15.02.2006-03.03.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 25859,-11559 25640,-11357
+EOF
+     },
     );
