@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: get_and_store_synop,v 1.9 2006/02/14 23:42:01 eserte Exp eserte $
+# $Id: get_and_store_synop,v 1.11 2006/02/15 23:57:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -140,17 +140,58 @@ if (@ARGV) {
 	    exit 1;
 	}
     } else {
-	my $ret = get_synop($station);
-	if ($ret && defined $ret->{synop} && $ret->{synop} ne "") {
+	my $ret = get_synop_from_fu();
+	if ($ret && $ret->{synops} && $ret->{synops}{$station}) {
 	    print "# $ret->{real_time}\n";
-	    print $ret->{synop};
+	    print "$ret->{wmo_header}\n";
+	    print "$ret->{synops}{$station}\n\n";
 	    exit 0;
 	} else {
 	    exit 1;
 	}
+
+# 	# old site:
+# 	my $ret = get_synop($station);
+# 	if ($ret && defined $ret->{synop} && $ret->{synop} ne "") {
+# 	    print "# $ret->{real_time}\n";
+# 	    print $ret->{synop};
+# 	    exit 0;
+# 	} else {
+# 	    exit 1;
+# 	}
     }
 }
 
+my $ret = get_synop_from_fu();
+if ($ret && $ret->{synops}) {
+    my $real_time = $ret->{real_time};
+ STATION:
+    while(my($wmo_code, $synop) = each %{ $ret->{synops} }) {
+	my $station_name = $stations{$wmo_code};
+	if ($station_name && $synop ne "") {
+	    my $store_file = "$store_dir/synop_$station_name";
+	    #$store_file = "/tmp/synop_$station_name";
+	    if (-e $store_file) {
+		if (!changed_something($store_file, $real_time)) {
+		    next STATION;
+		}
+	    }
+
+	    if (!open(STORE, ">>$store_file")) {
+		warn "Can't write to $store_file: $!";
+		next STATION;
+	    } else {
+		print STORE "#$real_time\n";
+		print STORE "$ret->{wmo_header}\n";
+		print STORE "$synop\n\n";
+		close STORE;
+	    }
+	}
+    }
+}
+exit; 
+
+# old code, site not working anymore
 STATION:
 while(my($station_code, $station_name) = each %stations) {
     warn "Trying station $station_name...\n";
@@ -167,13 +208,8 @@ while(my($station_code, $station_name) = each %stations) {
     }
 
     if (-e $store_file) {
-	my(@last_lines) = split /\n/, `tail -20 $store_file`;
-	foreach (reverse @last_lines) {
-	    my($last_time) = $_ =~ /^\#(.*)/;
-	    if (defined $last_time && $last_time eq $real_time) {
-		warn "No change, last line: $_, this synop: $synop";
-		next STATION;
-	    }
+	if (!changed_something($store_file, $real_time)) {
+	    next STATION;
 	}
     }
 
@@ -185,6 +221,19 @@ while(my($station_code, $station_name) = each %stations) {
 	print STORE "$synop\n";
 	close STORE;
     }
+}
+
+sub changed_something {
+    my($store_file, $real_time) = @_;
+    my(@last_lines) = split /\n/, `tail -20 $store_file`;
+    foreach (reverse @last_lines) {
+	my($last_time) = $_ =~ /^\#(.*)/;
+	if (defined $last_time && $last_time eq $real_time) {
+	    warn "No change, last line: $_, this time: $real_time";
+	    return 0;
+	}
+    }
+    1;
 }
 
 sub get_last_from_file {
@@ -199,6 +248,34 @@ sub get_last_from_file {
 	}
     }
     undef;
+}
+
+sub get_synop_from_fu {
+    my $ret = {};
+    my %synops;
+    #my $html = `GET file:/tmp/synops.php.html`;
+    my $html = `GET http://prognose.met.fu-berlin.de/synops.php`;
+    my $wmo_header;
+    if ($html =~ m{(ZCZC[^<]+)}) {
+	$wmo_header = $1;
+    } else {
+	die "Cannot parse wmo header from html <$html>";
+    }
+    while($html =~ m{<font.*?>\s*((\d{5})\s.*?)</font>}gs) {
+	my($synop, $wmo_code) = ($1, $2);
+	$synops{$wmo_code} = $synop;
+    }
+
+    my($time) = $wmo_header =~ /\S+\s+\S+\s+(\d{6})/;
+    my $real_time = synop_time_to_real($time);
+
+    return +{
+	     time      => $time,
+	     real_time => $real_time,
+	     synops    => \%synops,
+	     html      => $html,
+	     wmo_header => $wmo_header,
+	    };
 }
 
 sub get_synop {
@@ -235,7 +312,7 @@ sub get_synop {
 	return;
     }
 
-    my($time) = $synop =~ /\S+\s+\S+\s+(\S+)/;
+    my($time) = $synop =~ /\S+\s+\S+\s+(\d{6})/;
     my $real_time = synop_time_to_real($time);
 
     return +{

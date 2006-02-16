@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wettermeldung2,v 1.65 2005/07/12 05:16:12 eserte Exp $
+# $Id: wettermeldung2,v 1.66 2006/02/16 00:05:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1997, 1998, 1999, 2000, 2002 Slaven Rezic. All rights reserved.
@@ -80,7 +80,7 @@ $FIELD_WIND_AVG      = 7;
 $FIELD_PRECIPITATION = 8;
 $FIELD_WEATHER       = 9;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.65 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.66 $ =~ /(\d+)\.(\d+)/);
 
 $mailto = 'eserte@cs.tu-berlin.de';
 $user_agent = "wettermeldung2/$VERSION";
@@ -354,8 +354,17 @@ sub parse_synop {
     } else {
 	local($time_line) = shift(@synop);
 	local($line);
+
+	local $i = 1;
+	while ($i < $#synop) {
+	    if ($synop[$i] =~ /^\d/) {
+		last;
+	    }
+	    $i++;
+	}
+
 	open(PIPE, "-|") || do {
-	    exec("parse_synop", "-synop", @synop[2..$#synop],
+	    exec("parse_synop", "-synop", @synop[$i..$#synop],
 		 "-date", $time_line,
 		 "-wettermeldung2");
 	    die $!;

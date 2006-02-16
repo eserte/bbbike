@@ -14,6 +14,25 @@ Legend:
 
 =over
 
+=item * (H2)
+
+category_* directives in bbd files have side effects: the global
+%category_... is set and not per-file variants. Should be fixed.
+
+=item * (H2)
+
+There's no (easy) way to draw only outlined polygons from custom bbd
+files. (Maybe it can be done with category_stipple.cat:
+Tk/trans_cur.xbm and some outline directive?)
+
+=item * (H2)
+
+If E<quot>Namen zeichnenE<quot> is turned on in custom street draw and
+filled areas are drawn, then it's visible that the labels are not
+above the are layer. Will probably be fixed if all labels are drawn in
+an own layer (quite on the top), which will also get a nice label
+positioning algorithm.
+
 =item * (M2)
 
 Straﬂennummerierungsschilder (+ Font) werden nicht korrekt gezoomt.

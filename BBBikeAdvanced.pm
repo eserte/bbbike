@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.142 2006/02/06 21:59:36 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.142 2006/02/06 21:59:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -216,11 +216,11 @@ sub custom_draw {
 		    );
 	    $pe->focus;
 	    $f = $t->Frame->pack(-fill => "x");
+	    Tk::grid($f->Checkbutton(-text => M"Namen zeichnen",
+				     -variable => \$args{-namedraw}),
+		     -sticky => "w",
+		    );
 	    if ($linetype eq "p") {
-		Tk::grid($f->Checkbutton(-text => M"Namen zeichnen",
-					 -variable => \$args{-namedraw}),
-			 -sticky => "w",
-			);
 		Tk::grid($f->Checkbutton(-text => M"Überlappungen vermeiden",
 					 -variable => \$args{-nooverlaplabel}),
 			 -sticky => "w",

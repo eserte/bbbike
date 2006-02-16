@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: parse_synop,v 1.11 2006/02/14 23:44:31 eserte Exp eserte $
+# $Id: parse_synop,v 1.13 2006/02/15 23:39:49 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -87,10 +87,11 @@ use vars @data;
 
 use vars qw(@token);
 
-my($isodate, $synop, $wettermeldung2, $convert_whole_file, $outfile, $d);
+my($isodate, $synop, $wmoheader, $wettermeldung2, $convert_whole_file, $outfile, $d);
 use Getopt::Long;
 if (!GetOptions("date=s" => \$isodate,
 		"synop=s" => \$synop,
+		"wmoheader=s" => \$wmoheader,
 		"wettermeldung2" => \$wettermeldung2,
 		"wholefile!" => \$convert_whole_file,
 		"o=s" => \$outfile,
@@ -103,6 +104,13 @@ my $file = shift @ARGV;
 
 if ($convert_whole_file) {
     convert_whole_file($file, $outfile);
+}
+
+if (defined $wmoheader) {
+    my($date, $time) = get_date_time($wmoheader);
+    print "Date: $date\n";
+    print "Time: $time\n";
+    exit;
 }
 
 doit($file, $isodate,
@@ -130,7 +138,14 @@ sub doit {
 			$synop = "";
 			#($date, $time) = get_date_time($lines[$i+1]);
 			($date, $time) = get_date_time2($lines[$i]);
-			foreach my $j ($i+3 .. $#lines) {
+			while ($i < $#lines) {
+			    if ($lines[$i] =~ /^\d/) {
+				$synop = $lines[$i];
+				last;
+			    }
+			    $i++;
+			}
+			foreach my $j ($i+1 .. $#lines) {
 			    if ($lines[$j] =~ /^\s*$/) {
 				last SEARCH;
 			    }
@@ -150,8 +165,15 @@ sub doit {
 		if (/^\#$isodate/) {
 		    ($date, $time) = get_date_time2($_);scalar <F>;
 		    #($date, $time) = get_date_time(scalar <F>); # WMO header
-		    scalar <F>; # ???
-		    chomp($synop = scalar <F>);
+		    while (!eof F) {
+			my $line = scalar <F>;
+			if ($line =~ /^\d/) {
+			    chomp($synop = $line);
+			    last;
+			}
+		    }
+		    #scalar <F>; # ???
+		    #chomp($synop = scalar <F>);
 		    while (<F>) {
 			chomp;
 			if (/^\s*$/) {
@@ -172,6 +194,9 @@ sub doit {
 	    ($date, $time) = get_date_time2($isodate);
 	}
     }
+
+    $synop =~ s{^\s*}{};
+    $synop =~ s{\s*$}{};
 
     @token = split /\s+/, $synop;
 
@@ -808,9 +833,22 @@ sub special_climatology_data {
 }
 
 # XXX funktioniert nicht korrekt, wenn der Monat nicht stimmt!
+# better: use synop_time_to_real from get_and_store_synop
 sub get_date_time {
     my($wmo_header) = @_;
-    my($wmo_time) = $wmo_header =~ /\S+\s+\S+\s+(\S+)/;
+    $wmo_header =~ s{^\s*}{};
+    $wmo_header =~ s{\s*$}{};
+    my(@token) = split /\s+/, $wmo_header;
+    my $wmo_time;
+    for my $token (@token) {
+	if ($token =~ m{^\d{6}}) {
+	    $wmo_time = $token;
+	}
+    }
+    if (!defined $wmo_time) {
+	die "Can't parse time from <$wmo_header>";
+    }
+    #my($wmo_time) = $wmo_header =~ /\S+\s+\S+\s+(\S+)/;
     my($day,$h,$m) = $wmo_time =~ /^(..)(..)(..)$/;
     if (!defined $day) {
 	die "Can't parse synop time $wmo_time";
