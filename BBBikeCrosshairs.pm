@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeCrosshairs.pm,v 1.5 2005/10/27 00:57:11 eserte Exp $
+# $Id: BBBikeCrosshairs.pm,v 1.6 2006/02/16 20:46:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package BBBikeCrosshairs;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw(@old_bindings $angle $pd $angle_steps $pd_steps $show_info);
 $angle = 0       if !defined $angle;
@@ -47,10 +47,10 @@ sub activate {
 
 	my $sw = $c->screenwidth > $c->screenheight ? $c->screenwidth : $c->screenheight;
 
-	my $ch1  = $c->createLine(0,0,-tags => ["crosshairs", "crosshairs1"]);
-	my $ch2  = $c->createLine(0,0,-tags => ["crosshairs", "crosshairs2"]);
-	my $chp  = $c->createLine(0,0,-tags => ["crosshairs", "crosshairs-parallel"], -dash => ".-");
-	my $chlp = $c->createLine(0,0,-tags => ["crosshairs", "crosshairs-lastpoint"], -dash => "..");
+	my $ch1  = $c->createLine(0,0,0,0,-tags => ["crosshairs", "crosshairs1"]);
+	my $ch2  = $c->createLine(0,0,0,0,-tags => ["crosshairs", "crosshairs2"]);
+	my $chp  = $c->createLine(0,0,0,0,-tags => ["crosshairs", "crosshairs-parallel"], -dash => ".-");
+	my $chlp = $c->createLine(0,0,0,0,-tags => ["crosshairs", "crosshairs-lastpoint"], -dash => "..");
 
 	my $change_coords = sub {
 	    my($x, $y) = @_;
@@ -108,7 +108,7 @@ sub activate {
 				   main::status_message("Distance: ${dist}m", "info");
 			       }
 			   } else {
-			       $c->coords($chlp,0,0);
+			       $c->coords($chlp,0,0,0,0);
 			       if ($show_info) {
 				   main::status_message("", "info");
 			       }

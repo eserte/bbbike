@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.226 2006/02/08 21:15:15 eserte Exp $
+# $Id: bbbike,v 3.227 2006/02/16 21:44:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -79,7 +79,7 @@ BEGIN {
 		show_weather_db parse_wetterline analyze_wind)],
 	 'BBBikeHeavy'
 	 => [qw(start_followmouse stop_followmouse
-		string_eval_die load_plugin layer_editor
+		string_eval_die load_plugins load_plugin layer_editor
 		getmap get_file_or_url get_user_agent delete_map
 		pdf_export svg_export perlmod_install_advice
 		show_register save_register_routes load_register_routes
@@ -202,7 +202,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.226 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.227 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -4130,9 +4130,7 @@ if ($turbo) {
 }
 
 if (defined $initial_plugins && $initial_plugins ne "") {
-    foreach my $plugin (split /,/, $initial_plugins) {
-	load_plugin($plugin);
-    }
+    load_plugins([split /,/, $initial_plugins]);
 }
 
 if (defined $initial_layers && $initial_layers ne "") {
@@ -12075,7 +12073,7 @@ sub show_statistics {
     my $err = $@;
     DecBusy($top);
     if ($err) {
-        return status_message(Mfmt("Fehler: %s", $err), "error");
+        return status_message(Mfmt("Fehler: %s", $err), "err");
     }
 }
 

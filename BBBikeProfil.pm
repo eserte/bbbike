@@ -1,16 +1,22 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeProfil.pm,v 1.12 2005/04/27 22:37:40 eserte Exp $
+# $Id: BBBikeProfil.pm,v 1.16 2006/02/16 21:53:49 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2002,2006 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
 # Mail: slaven@rezic.de
 # WWW:  http://bbbike.sourceforge.net
 #
+
+# Draw route profile.
+
+# TODO:
+# * Maybe do it as nice as in: http://www.klimb.org/screenshot.html
+# * use make_tics from Tk-Plot
 
 package BBBikeProfil;
 use BBBikeUtil;
@@ -41,8 +47,13 @@ sub Show {
 	$toplevel = $context->{ProfilToplevel};
     } else {
 	$toplevel = $top->Toplevel(-title => M"Profil");
+	$main::toplevel{Profil} = $toplevel;
 	$toplevel->OnDestroy(sub { $self->{Destroyed} = 1});
 	$toplevel->transient($top) if $context->{Transient};
+	my($w, $h) = (int($top->screenwidth/3*2),
+		      int($top->screenheight/6));
+	$toplevel->geometry($w."x".$h);
+	$toplevel->bind("<Configure>" => sub { $self->Redraw($context, %args) });
 	$context->{ProfilToplevel} = $toplevel;
 
 	my @hooks = qw/new_route del_route/;
@@ -63,9 +74,7 @@ sub Show {
 	Tk::Exists($context->{ProfilCanvas})) {
 	# nop
     } else {
-	my($w, $h) = (int($top->screenwidth/3*2),
-		      int($top->screenheight/6));
-	$context->{ProfilCanvas} = $toplevel->Canvas(-height => $h, -width => $w)->pack;
+	$context->{ProfilCanvas} = $toplevel->Canvas(-background => "white")->pack(qw(-fill both));
     }
 
     if ($context->{ProfilLabel} &&
@@ -90,7 +99,12 @@ sub Redraw {
 	$self->MessageText($context, M"Keine Route");
 	return;
     }
-    my($w, $h) = ($c->cget(-width), $c->cget(-height));
+    my($cw, $ch) = ($t->width, $t->height - $label->reqheight);
+    $c->configure(-width => $cw, -height => $ch);
+    my $padx = 20;
+    my $pady = 0;
+    my $w = $cw - $padx*2;
+    my $h = $ch;
     my(@dist) = (0);
     for(my $i=0; $i<$#coords; $i++) {
 	my($x1,$y1, $x2,$y2) = (@{ $coords[$i] },
@@ -119,13 +133,14 @@ sub Redraw {
 	return;
     }
 
-    my $x_sub = sub { int($_[0]/$dist[$#dist]*$w) };
-    my $y_sub = sub { $h - int($_[0]/($max_h+10)*$h) };
+    my $x_sub = sub { int($_[0]/$dist[$#dist]*$w) + $padx };
+    my $y_sub = sub { $h - int($_[0]/($max_h+10)*$h) + $pady };
 
     my $hoehen_meter = 0;
 
     my($lastx, $lasty, $last_hoehe);
     my @etappe_coords;
+    my @poly_coords = ($x_sub->(0), $y_sub->(0));
     for(my $i=0; $i<=$#dist; $i++) {
 	my($d) = $dist[$i];
 	my($x,$y) = @{ $coords[$i] };
@@ -134,10 +149,11 @@ sub Redraw {
 	    my($thisx, $thisy);
 	    $thisx = $x_sub->($d);
 	    $thisy = $y_sub->($hoehe->{"$x,$y"});
+	    push @poly_coords, $thisx, $thisy;
 	    if (defined $lastx) {
 		$c->createLine
 		    ($lastx, $lasty, $thisx, $thisy,
-		     -activefill => 'blue',
+		     -activefill => 'red',
 		     -tags => ["alt",
 			       "alt-" . join(",",@etappe_coords),
 			      ]
@@ -151,10 +167,12 @@ sub Redraw {
 	    $last_hoehe = $hoehe->{"$x,$y"};
 	}
     }
+    push @poly_coords, ($x_sub->($dist[-1]), $y_sub->(0));
 
     for(my $i=0; $i<=10; $i++) {
-	my $thisx = int(($i/10)*$w);
-	$c->createText($thisx, $h-7,
+	my $thisx = $x_sub->($i*$dist[-1]/10);
+	my $thisy = $y_sub->(0);
+	$c->createText($thisx, $thisy - 7,
 		       -text => m2km(($i/10)*$dist[$#dist], 1, 1));
     }
 
@@ -169,7 +187,7 @@ sub Redraw {
 
     if ($Tk::VERSION > 800.018) { # dash patches, ca.
 	for my $y ($max_y, $min_y) {
-	    $c->createLine(25, $y, $w, $y, -dash => "..");
+	    $c->createLine(25+$padx, $y, $w, $y, -dash => "..");
 	}
     }
 
@@ -180,6 +198,12 @@ sub Redraw {
     }
 
     $c->raise("alt");
+
+    if (@poly_coords) {
+	my $poly = $c->createPolygon(@poly_coords, -outline => undef, -fill => "green3");
+	$c->lower($poly);
+    }
+
     # bind <1> to mark point
     $c->bind("alt", "<1>" => sub {
 		 my(@tags) = $c->gettags("current");

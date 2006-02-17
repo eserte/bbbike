@@ -61,15 +61,6 @@ Daten direkt von einer Postgres/Mysql-Datenbank auslesen und
 darstellen (Strassen::Pg weiterschreiben, Strassen::Mysql neu
 schreiben, oder sogar Strassen::DBI?).
 
-=item * (H1)
-
-Routenprofil schöner machen, z.B. so wie hier:
-http://www.klimb.org/screenshot.html
-
-=item * (M1)
-
-Loading plugins: show multiple errors in one dialog.
-
 =item * (M2)
 
 Replace all dialogs with longdialog (maybe) through a common
@@ -2101,7 +2092,7 @@ list with generated shorter waypoint names
 =item * (M3)
 
 unclosedPolygon anstelle von mehreren line-Aufrufen verwenden
-(benötigt gd 2.0.33!)
+(benötigt gd 2.0.33!), aber nur, wenn es sich als effizienter erweist.
 
 =item * (M5)
 

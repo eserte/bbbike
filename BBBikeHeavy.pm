@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.26 2006/01/04 01:30:51 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.27 2006/02/16 21:44:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.26 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -118,8 +118,23 @@ sub BBBikeHeavy::string_eval_die {
 }
 
 ### AutoLoad Sub
+sub BBBikeHeavy::load_plugins {
+    my($pluginref) = @_;
+    my @plugins = @$pluginref;
+    my @errors;
+    foreach my $plugin (@plugins) {
+	load_plugin($plugin, \@errors);
+    }
+    if (@errors) {
+	my $text = join("\n", map {$_->[0]} @errors);
+	my $type = $errors[0]->[1]; # should use the highest severity, but in this case everything's "err"
+	main::status_message($text, $type);
+    }
+}
+
+### AutoLoad Sub
 sub BBBikeHeavy::load_plugin {
-    my $file = shift;
+    my($file, $errorref) = @_;
     my @plugin_args;
     if ($file =~ /^(.*)=(.*)$/) {
 	$file = $1;
@@ -128,18 +143,23 @@ sub BBBikeHeavy::load_plugin {
     $file .= ".pm" if ($file !~ /\.pm$/);
     my($mod) = fileparse($file, '\..*');
     my $loading_error = 0;
+    my $add_error = sub {
+	my($text, $type) = @_;
+	if ($errorref) {
+	    push @$errorref, [$text,$type];
+	} else {
+	    main::status_message($text, $type);
+	}
+	undef;
+    };
     if (-r $file) {
 	do $file or do {
-	    # XXX use status_message etc.
-	    warn "Die Datei $file konnte nicht geladen werden: $@";
-	    return;
+	    return $add_error->(Mfmt("Die Datei %s konnte nicht geladen werden: %s", $file, $@), "err");
 	};
 	$INC{"$mod.pm"} = $file;
     } elsif (-r "$FindBin::RealBin/$file") {
 	do "$FindBin::RealBin/$file" or do {
-	    # XXX use status_message etc.
-	    warn "Die Datei $FindBin::RealBin/$file konnte nicht geladen werden: $@";
-	    return;
+	    return $add_error->(Mfmt("Die Datei %s konnte nicht geladen werden: %s", "$FindBin::RealBin/$file", $@), "err");
 	};
 	$INC{"$mod.pm"} = "$FindBin::RealBin/$file";
     } else {
@@ -159,19 +179,15 @@ sub BBBikeHeavy::load_plugin {
 	    eval 'require $file';
 	    if ($@) {
 		my $err = $@;
-		status_message(Mfmt("Die Datei %s konnte nicht geladen werden. Grund: %s", $file, $err), "error");
-		warn $err;
-		return;
+		return $add_error->(Mfmt("Die Datei %s konnte nicht geladen werden. Grund: %s", $file, $@), "err");
 	    }
 	}
     }
     eval $mod.'::register(@plugin_args)';
     if ($@) {
-	my $err = $@;
-	status_message(Mfmt("Das Plugin %s konnte nicht registriert werden. Grund: %s", $mod, $err), "err");
-	warn $err;
-	return;
+	return $add_error->(Mfmt("Das Plugin %s konnte nicht registriert werden. Grund: %s", $mod, $@), "err");
     }
+    1;
 }
 
 sub BBBikeHeavy::layer_editor {
@@ -1148,7 +1164,7 @@ sub BBBikeHeavy::any_bbbikedraw_export {
     close OUT;
     if ($err) {
 	unlink $file;
-	status_message(Mfmt("Die %s-Datei konnte nicht erstellt werden. Grund: %s", $args{-imagetype}, $err), "error");
+	status_message(Mfmt("Die %s-Datei konnte nicht erstellt werden. Grund: %s", $args{-imagetype}, $err), "err");
 	return;
     }
 }
