@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: MultiMap.pm,v 1.1 2006/01/11 22:39:22 eserte Exp $
+# $Id: MultiMap.pm,v 1.2 2006/02/17 22:51:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -12,20 +12,25 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
-package MultiMap;
+package MultiMap; # and other maps: GoYellow
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 sub register {
-    $main::info_plugins{__PACKAGE__ . ""} =
+    $main::info_plugins{__PACKAGE__ . "_MultiMap"} =
 	{ name => "MultiMap",
 	  callback => sub { showmap(@_) },
 	  callback_3_std => sub { showmap_url(@_) },
+	};
+    $main::info_plugins{__PACKAGE__ . "_GoYellow"} =
+	{ name => "GoYellow",
+	  callback => sub { showmap_goyellow(@_) },
+	  callback_3_std => sub { showmap_url_goyellow(@_) },
 	};
 }
 
@@ -54,6 +59,22 @@ sub showmap_url {
 sub showmap {
     my(%args) = @_;
     my $url = showmap_url(%args);
+    start_browser($url);
+}
+
+sub showmap_url_goyellow {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "http://www.goyellow.de/map?lat=%f&lon=%f&z=%d&mt=1",
+	$py, $px, $scale;
+}
+
+sub showmap_goyellow {
+    my(%args) = @_;
+    my $url = showmap_url_goyellow(%args);
     start_browser($url);
 }
 
