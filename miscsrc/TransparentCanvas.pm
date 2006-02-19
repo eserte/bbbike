@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: TransparentCanvas.pm,v 1.3 2006/02/18 00:44:29 eserte Exp $
+# $Id: TransparentCanvas.pm,v 1.4 2006/02/18 01:17:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -14,13 +14,22 @@
 
 package TransparentCanvas;
 
+use BBBikePlugin;
+push @ISA, 'BBBikePlugin';
+
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 use X11::Protocol;
 
 our $shape_pixmap;
+
+sub register {
+    my $top = $main::top;
+    $top->bind("<Control-t>" => sub { doit() });
+    $top->bind("<Control-T>" => sub { remove() });
+}
 
 sub remove {
     my $x11 = new X11::Protocol;

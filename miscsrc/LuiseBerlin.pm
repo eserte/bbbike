@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.9 2006/02/05 22:38:30 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.11 2006/02/19 20:55:52 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!caller(2)) {
@@ -162,7 +162,7 @@ sub do_google_search {
 	my $street_citypart = "$street in $citypart";
 	# Unfortunately there seems to be a lot of encoding issues
 	# Maybe best to use the ersatz notation for umlauts?
-	my $query = qq{allintitle:"}. $street_citypart . qq{" site:luise-berlin.de OR site:berlin-chronik.de OR site:berlingeschichte.de};
+	my $query = qq{allintitle:"}. $street_citypart . qq{" site:luise-berlin.de OR site:berlin-chronik.de OR site:berlingeschichte.de OR site:berliner-lesezeichen.de};
 	use Devel::Peek; Dump $query;
 	## Usage of encode should not be necessary here!
 	$query = encode("utf-8", $query) if $] == 5.008; # why only this perl version?
@@ -213,13 +213,78 @@ sub kill_umlauts {
 
 return 1 if caller;
 
+sub batch {
+    my($file) = @_;
+    require LWP::UserAgent;
+    require File::Temp;
+    my $tempdir = File::Temp::tempdir("luiseberlin_XXXXXXXX", TMPDIR => 1); # no cleanup
+    my @urls;
+    my @failures;
+    open my $fh, "<", $file
+	or die "Can't open $file: $!";
+    binmode $fh; # assume iso-8859-1
+    while(<$fh>) {
+	chomp;
+	my($str,$citypart) = split /[\t\|]/, $_;
+	if (defined $citypart && $citypart ne "") {
+	    $str .= " ($citypart)";
+	}
+
+	my($street, $cityparts) = find_street($str);
+	if (defined $street) {
+	    print STDERR "Do google search for $street/$cityparts...\n";
+	    my $url = eval {
+		do_google_search(street => $street,
+				 cityparts => $cityparts);
+	    };
+	    if ($url) {
+		push @urls, [$str, $url];
+	    } else {
+		push @failures, [$str, "Not found via Google"];
+	    }
+	} else {
+	    push @failures, [$str, "No citypart match"];
+	}
+    }
+    close $fh;
+
+    my $ua = LWP::UserAgent->new;
+    my $i = 0;
+    for my $urldef (@urls) {
+	my($str, $url) = @$urldef;
+	print STDERR "Street: $str, URL: $url...\n";
+	my $resp = $ua->get($url);
+	if ($resp->is_success) {
+	    $i++;
+	    open my $ofh, ">", "$tempdir/$i.html"
+		or die "Cannot write to $tempdir/$i.html";
+	    binmode $ofh;
+	    print $ofh $resp->content;
+	    close $ofh or die $!;
+	}
+    }
+
+    if (@failures) {
+	require Data::Dumper;
+	print STDERR Data::Dumper->new([\@failures],[qw(failures)])->Indent(1)->Useqq(1)->Dump;
+    }
+}
+
 {
-    my $street = shift @ARGV;
-    my @cityparts = @ARGV;
-    my $url = do_google_search(street => $street,
-			       cityparts => [@cityparts],
-			      );
-    print "$url\n";
+    require Getopt::Long;
+    my $file;
+    Getopt::Long::GetOptions("f|file=s" => \$file)
+	    or die "usage: $0 [-f file | street cityparts]";
+    if ($file) {
+	batch($file);
+    } else {
+	my $street = shift @ARGV;
+	my @cityparts = @ARGV;
+	my $url = do_google_search(street => $street,
+				   cityparts => [@cityparts],
+				  );
+	print "$url\n";
+    }
 }
 
 __END__

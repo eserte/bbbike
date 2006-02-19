@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeProfil.pm,v 1.16 2006/02/16 21:53:49 eserte Exp $
+# $Id: BBBikeProfil.pm,v 1.16 2006/02/16 21:53:49 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2002,2006 Slaven Rezic. All rights reserved.
@@ -47,6 +47,7 @@ sub Show {
 	$toplevel = $context->{ProfilToplevel};
     } else {
 	$toplevel = $top->Toplevel(-title => M"Profil");
+	%main::toplevel = %main::toplevel; # peacify -w
 	$main::toplevel{Profil} = $toplevel;
 	$toplevel->OnDestroy(sub { $self->{Destroyed} = 1});
 	$toplevel->transient($top) if $context->{Transient};

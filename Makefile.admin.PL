@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Makefile.admin.PL,v 1.42 2006/01/28 15:17:47 eserte Exp $
+# $Id: Makefile.admin.PL,v 1.42 2006/01/28 15:17:47 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -696,8 +696,15 @@ BBBikeVar.tpl: BBBikeVar.pm
 ######################################################################
 # Tests
 
+# Why this does not work with -j 2? Empty script files, immeditaly finished?
+#test-with-protocol:	test-with-protocol-code \
+#			test-with-protocol-data
+#test-with-protocol-code:
+#test-with-protocol-data:
+
 test-with-protocol:
 	DATE=`date +%Y%m%d`; export HARNESS_NOTTY=1; script $(HOME)/trash/bbbike-test-$$DATE $(MAKE) test
+	DATE=`date +%Y%m%d`; cd data && script $(HOME)/trash/bbbike-test-data-$$DATE $(MAKE) all slow-checks really-slow-checks
 
 EOF
 ;
