@@ -3672,4 +3672,12 @@ EOF
 userdel	q4 -2687,-21261 -2815,-20920
 EOF
      },
+     { from  => 1140509431, # 2006-02-21 09:10
+       until => 1142031600, # 2006-03-11 00:00
+       text  => 'Peschkestraße zwischen Rheinstraße und Holsteinische Straße wegen Tiefbauarbeiten bis voraussichtlich 10.03.06 gesperrt. ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 5532,6525 5424,6584
+EOF
+     },
     );

@@ -527,8 +527,8 @@ userdel	2 16336,-29511 16379,-29446
          'type' => 'handicap'
        },
        {
-         'until' => 1162335600,
-         'text' => 'B 96 Gransee-Fürstenberg Brücke über Wentowkanal bei Dannenwalde Brückenabriß- u. -neubau Vollsperrung 20.02.2006-31.10.2006 ',
+         'until' => 1164927600,
+         'text' => 'B 096 Gransee-Fürstenberg Brücke über Wentowkanal bei Dannenwalde Brückenabriß- u. -neubau Vollsperrung 20.02.2006-30.11.2006 ',
          'from' => 1140303600,
          'data' => 'userdel	2 -5962,74421 -6037,73865
 ',
@@ -550,6 +550,23 @@ userdel	2 -21150,67860 -20726,68037
          'data' => 'userdel	q4 25859,-11559 25640,-11357
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => 1148076000,
+         'text' => 'B 246 Trebbin-Beelitz OD Löwendorf, zw. Ahrensdorfer Str. u. Schillerstr. Straßen- und Kanalbau Vollsperrung 20.02.2006-19.05.2006 ',
+         'from' => 1140303600,
+         'data' => 'userdel	q4 -2687,-21261 -2815,-20920
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1142031600,
+         'text' => 'Peschkestraße zwischen Rheinstraße und Holsteinische Straße wegen Tiefbauarbeiten bis voraussichtlich 10.03.06 gesperrt. ',
+         'from' => 1140509431,
+         'data' => 'userdel	2 5532,6525 5424,6584
+',
+         'type' => 'gesperrt'
        }
      
 );

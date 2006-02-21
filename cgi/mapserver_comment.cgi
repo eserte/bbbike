@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.24 2005/11/19 00:43:34 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.25 2006/02/21 08:09:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -40,10 +40,11 @@ eval {
 };
 warn $@ if $@;
 
-use vars qw($to $comment);
+use vars qw($to $cc $comment);
 
 eval {
     undef $to;
+    undef $cc;
     undef $comment;
 
     # from bbbike.cgi:
@@ -55,6 +56,7 @@ eval {
     }
 
     $to = $BBBike::EMAIL;
+    $cc = 'eserte@web.de'; # a fallback address to prevent mail problems
     my $mscgi_remote = $BBBike::BBBIKE_MAPSERVER_URL;
     my $mscgi_local  = "http://www/~eserte/cgi/mapserv.cgi";
     my $msadrcgi_remote = dirname($BBBike::BBBIKE_MAPSERVER_URL) . "/mapserver_address.cgi";
@@ -64,6 +66,7 @@ eval {
 	require Sys::Hostname;
 	if (Sys::Hostname::hostname() =~ /herceg\.de$/) {
 	    $to = "eserte\@vran.herceg.de";
+	    $cc = "slaven\@vran.herceg.de";
 	}
     }
 
@@ -78,6 +81,7 @@ eval {
     $subject = substr($subject, 0, 70) . "..." if length $subject > 70;
     my $msg = Mail::Send->new(Subject => $subject,
 			      To      => $to,
+			      (defined $cc ? (Cc => $cc) : ()),
 			     );
     die "Kann kein Mail::Send-Objekt erstellen" if !$msg;
 
