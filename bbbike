@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.227 2006/02/16 21:44:52 eserte Exp $
+# $Id: bbbike,v 3.227 2006/02/16 21:44:52 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -11778,7 +11778,26 @@ sub show_info {
 	my($mapscale_scale) = $mapscale =~ /:\s*(\d+)/;
 
 	{
-	    $info_text->insert("end", "Google Maps",
+	    # These are the areas with high density photos:
+	    my @good_quality =
+		([qw(1354,13328 19812,14959 20024,71 32343,477 31687,23342 31238,45180 48878,45679 49252,22913 49631,-52 50188,-18068 32921,-18563 32877,-16412 20280,-16918 20305,-18134 2221,-19767)],
+		 [qw(-8942,-8189 -25841,-8397 -26312,14506 -26310,23512 -9321,23908)],
+		 [qw(-29283,-13596 -41607,-13723 -41701,-13724 -41757,-11016 -59583,-11521 -59428,-28173 -46261,-28125 -46201,-31030 -29015,-31192)],
+		 [qw(-21638,-31154 -3619,-30926 -3526,-49060 -3619,-49062 -21261,-49471)],
+		 [qw(45955,56144 63315,56639 63317,56546 63132,70071 79553,70823 79242,85955 93525,86210 93527,86118 93530,108689 93218,119338 93126,119245 75755,119299 75629,107276 61065,107015 61063,107106 60935,104277 45067,103902)],
+		 [qw(-47007,58168 -64464,57857 -64463,57765 -64270,39316 -46622,39446)],
+		 [qw(-77898,188936 -60161,189253 -59987,167173 -59959,156724 -77517,156772)],
+		);
+	    my $good_quality;
+	    for my $polygon_def (@good_quality) {
+		my $polygon = [ map { [split/,/,$_] } @$polygon_def ];
+		if (point_in_polygon([$sx,$sy], $polygon)) {
+		    $good_quality = 1;
+		    last;
+		}
+	    }
+
+	    $info_text->insert("end", "Google Maps" . ($good_quality ? " (hohe Auflösung)" : " (niedrige/unbekannte Auflösung)"),
 			       "link$linkcount");
 	    $show_url->($linkcount, sub {
 			    require CGI;

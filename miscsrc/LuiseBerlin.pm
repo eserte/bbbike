@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: LuiseBerlin.pm,v 1.11 2006/02/19 20:55:52 eserte Exp $
+# $Id: LuiseBerlin.pm,v 1.11 2006/02/19 20:55:52 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -42,6 +42,9 @@ use Strassen::Strasse;
 use WWWBrowser;
 
 my $api_key = "pqCq16BQFHJ5jvhg6osutPlLWeSkd9ke";
+
+use vars qw($DEBUG);
+$DEBUG = 1;
 
 sub register {
     $main::info_plugins{__PACKAGE__ . ""} =
@@ -91,7 +94,7 @@ sub launch_bezlex_url {
     my %supercityparts = map { (Geography::Berlin_DE->get_supercitypart_for_citypart($_),1) } @$cityparts;
 
     my($supercitypart) = (keys %supercityparts)[0]; # use the first only
-    warn "Translated @$cityparts -> $supercitypart ...\n";
+    warn "Translated @$cityparts -> $supercitypart ...\n" if $DEBUG;
 
     my $short = {"Friedrichshain-Kreuzberg" => "FrKr",
 		 'Charlottenburg-Wilmersdorf' => "Chawi",
@@ -150,7 +153,7 @@ sub do_google_search {
 	$my_api_key = <APIKEY>;
 	s{[\r\n\s+]}{}g;
 	close APIKEY;
-	warn "Loaded Google API key from $google_api_key_file...\n";
+	warn "Loaded Google API key from $google_api_key_file...\n" if $DEBUG;
     }
     my $search = WWW::Search->new("Google", key => $my_api_key);
     my $street = $args{street};
@@ -163,12 +166,16 @@ sub do_google_search {
 	# Unfortunately there seems to be a lot of encoding issues
 	# Maybe best to use the ersatz notation for umlauts?
 	my $query = qq{allintitle:"}. $street_citypart . qq{" site:luise-berlin.de OR site:berlin-chronik.de OR site:berlingeschichte.de OR site:berliner-lesezeichen.de};
-	use Devel::Peek; Dump $query;
+	if ($DEBUG) {
+	    use Devel::Peek; Dump $query;
+	}
 	## Usage of encode should not be necessary here!
 	$query = encode("utf-8", $query) if $] == 5.008; # why only this perl version?
-	Dump $query;
-	require Data::Dumper;
-	print STDERR "Google query term: ". Data::Dumper->new([$query],[qw()])->Indent(1)->Useqq(1)->Dump . "\n";
+	if ($DEBUG) {
+	    Dump $query;
+	    require Data::Dumper;
+	    print STDERR "Google query term: ". Data::Dumper->new([$query],[qw()])->Indent(1)->Useqq(1)->Dump . "\n";
+	}
 	$search->native_query($query);
 	while(my $result = $search->next_result) {
 	    (my $cooked_title = $result->title) =~ s{<b>}{}g;
@@ -256,8 +263,9 @@ sub batch {
 	my $resp = $ua->get($url);
 	if ($resp->is_success) {
 	    $i++;
-	    open my $ofh, ">", "$tempdir/$i.html"
-		or die "Cannot write to $tempdir/$i.html";
+	    my $outfile = sprintf "%s/%04d.html", $tempdir, $i;
+	    open my $ofh, ">", $outfile
+		or die "Cannot write to $outfile";
 	    binmode $ofh;
 	    print $ofh $resp->content;
 	    close $ofh or die $!;
@@ -272,9 +280,22 @@ sub batch {
 
 {
     require Getopt::Long;
+
+    no strict 'refs';
+    *{"main::status_message"} = sub {
+	my($msg, $severity) = @_;
+	if ($severity eq 'die') {
+	    die "$msg\n";
+	} else {
+	    warn "$msg\n";
+	}
+    };
+
     my $file;
-    Getopt::Long::GetOptions("f|file=s" => \$file)
-	    or die "usage: $0 [-f file | street cityparts]";
+    Getopt::Long::GetOptions("f|file=s" => \$file,
+			     "q" => sub { $DEBUG = 0 },
+			    )
+	    or die "usage: $0 [-q] [-f file | street cityparts]";
     if ($file) {
 	batch($file);
     } else {
