@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: TelbuchDBApprox.pm,v 1.25 2004/05/08 09:33:18 eserte Exp $
+# $Id: TelbuchDBApprox.pm,v 1.25 2004/05/08 09:33:18 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
@@ -97,7 +97,8 @@ sub new {
 	die "Unknown parameters: " . join(",", keys %args);
     }
 
-    my $dbh = DBI->connect($self->dsn) or die $!;
+    my $dbh = DBI->connect($self->dsn)
+	or die "Cannot connect to " . $self->dsn . ": " . $DBI::error;
     $self->{Dbh} = $dbh;
 
     my $sel = " select street.name, citypart.name, street_hnr.hnr, street_hnr.longitude, street_hnr.latitude from street";

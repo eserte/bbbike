@@ -3622,7 +3622,7 @@ userdel	2 5727,23485 5333,23636
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1140727101, # XXX
        text  => 'Tempelhofer Weg (Tempelhof) von Gottlieb-Dunkel-Str. bis Hattenheimer Str. Baustelle, Fahrtrichtung gesperrt',
        type  => 'handicap',
        source_id => 'IM_002431',
@@ -3673,7 +3673,7 @@ userdel	q4 -2687,-21261 -2815,-20920
 EOF
      },
      { from  => 1140509431, # 2006-02-21 09:10
-       until => 1142031600, # 2006-03-11 00:00
+       until => 1140560993, # expired ... 2006-03-11 00:00
        text  => 'Peschkestraße zwischen Rheinstraße und Holsteinische Straße wegen Tiefbauarbeiten bis voraussichtlich 10.03.06 gesperrt. ',
        type  => 'gesperrt',
        data  => <<EOF,

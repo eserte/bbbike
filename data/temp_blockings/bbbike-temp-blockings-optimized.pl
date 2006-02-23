@@ -559,14 +559,6 @@ userdel	2 -21150,67860 -20726,68037
          'data' => 'userdel	q4 -2687,-21261 -2815,-20920
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1142031600,
-         'text' => 'Peschkestraße zwischen Rheinstraße und Holsteinische Straße wegen Tiefbauarbeiten bis voraussichtlich 10.03.06 gesperrt. ',
-         'from' => 1140509431,
-         'data' => 'userdel	2 5532,6525 5424,6584
-',
-         'type' => 'gesperrt'
        }
      
 );
