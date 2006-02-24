@@ -3680,4 +3680,20 @@ EOF
 userdel	2 5532,6525 5424,6584
 EOF
      },
+     { from  => 1140908400, # 2006-02-26 00:00
+       until => 1156716000, # 2006-08-28 00:00
+       text  => 'L 029 Eberswalder Chaussee OD Oderberg, von Berliner Str. in Ri. Eberswalde Beseit. Tragfähigkeitsschäden Vollsperrung 27.02.2006-27.08.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 52671,51846 51496,51542
+EOF
+     },
+     { from  => 1141426800, # 2006-03-04 00:00
+       until => 1142031600, # 2006-03-11 00:00
+       text  => 'L 401 Richard-Sorge-Str./ Bergstr. OL Wildau, Bahnübergang Bergstr. Gleisbauarbeiten Einmünd. gesp. 05.03.2006-10.03.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 26381,-9962 25700,-9502
+EOF
+     },
     );

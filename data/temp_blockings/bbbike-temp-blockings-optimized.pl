@@ -517,15 +517,7 @@ userdel	2 16336,-29511 16379,-29446
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_002431',
-         'until' => undef,
-         'text' => 'Tempelhofer Weg (Tempelhof) von Gottlieb-Dunkel-Str. bis Hattenheimer Str. Baustelle, Fahrtrichtung gesperrt',
-         'from' => undef,
-         'data' => 'userdel	q4; 11456,6103 11590,6026
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1164927600,
          'text' => 'B 096 Gransee-Fürstenberg Brücke über Wentowkanal bei Dannenwalde Brückenabriß- u. -neubau Vollsperrung 20.02.2006-30.11.2006 ',
@@ -559,6 +551,23 @@ userdel	2 -21150,67860 -20726,68037
          'data' => 'userdel	q4 -2687,-21261 -2815,-20920
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => 1156716000,
+         'text' => 'L 029 Eberswalder Chaussee OD Oderberg, von Berliner Str. in Ri. Eberswalde Beseit. Tragfähigkeitsschäden Vollsperrung 27.02.2006-27.08.2006 ',
+         'from' => 1140908400,
+         'data' => 'userdel	q4 52671,51846 51496,51542
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1142031600,
+         'text' => 'L 401 Richard-Sorge-Str./ Bergstr. OL Wildau, Bahnübergang Bergstr. Gleisbauarbeiten Einmünd. gesp. 05.03.2006-10.03.2006 ',
+         'from' => 1141426800,
+         'data' => 'userdel	2 26381,-9962 25700,-9502
+',
+         'type' => 'gesperrt'
        }
      
 );

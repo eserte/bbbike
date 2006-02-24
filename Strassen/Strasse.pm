@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Strasse.pm,v 1.24 2006/01/18 00:44:30 eserte Exp $
+# $Id: Strasse.pm,v 1.24 2006/01/18 00:44:30 eserte Exp eserte $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -64,7 +64,7 @@ sub de_artikel {
 	"=>";
     } elsif ($strasse =~ /^rue\b/i) { # oh la la
 	"in die";
-    } elsif ($strasse =~ /(str\.|straße\b|allee\b|chaussee\b|promenade\b|zeile\b|gasse\b)/i) {
+    } elsif ($strasse =~ /(str\.|straße\b|allee\b|chaussee\b|promenade\b|zeile\b|gasse\b|kehre\b)/i) {
 	"in die";
     } elsif ($strasse =~ /(park\b|garten\b|ring\b)/i) {
 	"in den";
