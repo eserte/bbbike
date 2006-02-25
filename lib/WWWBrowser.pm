@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: WWWBrowser.pm,v 2.29 2005/10/19 22:36:10 eserte Exp $
+# $Id: WWWBrowser.pm,v 2.29 2005/10/19 22:36:10 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2000,2001,2003,2005 Slaven Rezic. All rights reserved.
@@ -130,6 +130,8 @@ sub start_browser {
 	    return 1 if open_in_galeon($url, %args);
 	} elsif ($browser eq 'mozilla') {
 	    return 1 if open_in_mozilla($url, %args);
+	} elsif ($browser eq 'opera') {
+	    return 1 if open_in_opera($url, %args);
 	} elsif ($browser =~ /^mosaic$/i &&
 	    $url =~ /^file:/ && $url !~ m|file://|) {
 	    $url =~ s|file:/|file://localhost/|;
@@ -247,6 +249,20 @@ sub open_in_mozilla {
 	# otherwise start a new mozilla process
 	exec_bg("mozilla", $url);
 	return 1; # if ($?/256 == 0);
+    }
+    0;
+}
+
+sub open_in_opera {
+    my $url = shift;
+    my(%args) = @_;
+    if (is_in_path("opera")) {
+	if ($args{-oldwindow}) {
+	    system("opera", $url);
+	} else {
+	    system("opera", "-newpage", $url);
+	}
+	return 1 if ($?/256 == 0);
     }
     0;
 }

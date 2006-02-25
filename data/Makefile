@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.85 2006/02/14 23:26:13 eserte Exp $
+# $Id: Makefile,v 2.87 2006/02/25 14:14:35 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -85,6 +85,9 @@ SORT_NO_LOCALE=	env LC_ALL=de_DE.ISO_8859-1 sort
 #COORDS_DATA_SORT_OPTS=	-f -t "|" -k 1,3
 COORDS_DATA_SORT_OPTS=
 
+######################################################################
+# META TARGETS
+
 .ORDER: targets check .modified .rsync_include make_misc
 all:	targets check .modified .rsync_include make_misc
 
@@ -123,29 +126,11 @@ really-slow-checks:	check-crossings-important \
 			check-nearest \
 			check-crossings-less-important
 
-inaccessible_strassen: strassen gesperrt
-	-@$(WRITEABLE) $@
-	-cp -f $@ /tmp/old_inaccessible_strassen
-	${SEARCH_INACCESSIBLE} -street strassen -blocked gesperrt \
-	    -blockedtype einbahn -blockedtype sperre \
-	    > inaccessible_strassen~ && mv inaccessible_strassen~ inaccessible_strassen
-	@if [ -e /tmp/old_inaccessible_strassen ] ; then \
-	    diff -u /tmp/old_inaccessible_strassen $@; \
-	fi
-	-@$(READONLY) $@
+######################################################################
+# DATA FILE TARGETS
 
-inaccessible_landstrassen: strassen landstrassen landstrassen2 gesperrt
-	-@$(WRITEABLE) $@
-	-cp -f $@ /tmp/old_inaccessible_landstrassen
-	${SEARCH_INACCESSIBLE} -street strassen -street landstrassen \
-	    -street landstrassen2 -blocked gesperrt \
-	    -blockedtype einbahn -blockedtype sperre \
-	    > inaccessible_landstrassen~ && mv inaccessible_landstrassen~ inaccessible_landstrassen
-	@if [ -e /tmp/old_inaccessible_landstrassen ] ; then \
-	    diff -u /tmp/old_inaccessible_landstrassen $@; \
-	fi
-	-@$(READONLY) $@
-
+######################################################################
+# STRASSEN UND PLÄTZE
 strassen:	.strassen.tmp plaetze
 	-@$(WRITEABLE) $@
 	cat $> > $@
@@ -183,6 +168,32 @@ ${PERSISTENTTMPDIR}/non-faked-strassen: .strassen.tmp ${PERSISTENTTMPDIR}/non-fa
 	-@$(WRITEABLE) $@
 	cat $> > $@
 	-@$(READONLY) $@
+
+inaccessible_strassen: strassen gesperrt
+	-@$(WRITEABLE) $@
+	-cp -f $@ /tmp/old_inaccessible_strassen
+	${SEARCH_INACCESSIBLE} -street strassen -blocked gesperrt \
+	    -blockedtype einbahn -blockedtype sperre \
+	    > inaccessible_strassen~ && mv inaccessible_strassen~ inaccessible_strassen
+	@if [ -e /tmp/old_inaccessible_strassen ] ; then \
+	    diff -u /tmp/old_inaccessible_strassen $@; \
+	fi
+	-@$(READONLY) $@
+
+inaccessible_landstrassen: strassen landstrassen landstrassen2 gesperrt
+	-@$(WRITEABLE) $@
+	-cp -f $@ /tmp/old_inaccessible_landstrassen
+	${SEARCH_INACCESSIBLE} -street strassen -street landstrassen \
+	    -street landstrassen2 -blocked gesperrt \
+	    -blockedtype einbahn -blockedtype sperre \
+	    > inaccessible_landstrassen~ && mv inaccessible_landstrassen~ inaccessible_landstrassen
+	@if [ -e /tmp/old_inaccessible_landstrassen ] ; then \
+	    diff -u /tmp/old_inaccessible_landstrassen $@; \
+	fi
+	-@$(READONLY) $@
+
+######################################################################
+# OTHER DATA LAYERS
 
 # sortbycat does not change the sort order of islands
 wasserstrassen: wasserstrassen-orig
@@ -273,6 +284,7 @@ sbahnhof:	sbahnhof-orig
 	-@$(READONLY) $@
 
 ## Execute from bbbike root directory (evtl. mehrmals):
+## XXX What for?
 # cp -f data/Berlin.coords.data /tmp
 # perl -Ilib -MObject::Iterate=iterate -MStrassen::Core -MTie::File -e '$s = Strassen->new("sbahnhof"); iterate { $p{$_->[Strassen::NAME]} = $_->[Strassen::COORDS][0] } $s; tie @f, "Tie::File", "/tmp/Berlin.coords.data" or die ; for (@f) { if (/^S-Bhf (.*?)\|.*\|$/ && $p{$1}) { $_ .= $p{$1}; warn "$1 $p{$1}" } }'
 
@@ -304,6 +316,7 @@ ubahnhof:	ubahnhof-orig
 	-@$(READONLY) $@
 
 ## Execute from bbbike root directory (evtl. mehrmals):
+## XXX What for?
 # cp -f data/Berlin.coords.data /tmp
 # perl -Ilib -MObject::Iterate=iterate -MStrassen::Core -MTie::File -e '$s = Strassen->new("ubahnhof"); iterate { $p{$_->[Strassen::NAME]} = $_->[Strassen::COORDS][0] } $s; tie @f, "Tie::File", "/tmp/Berlin.coords.data" or die $!; for (@f) { if (/^U-Bhf (.*?)\|.*\|$/ && $p{$1}) { $_ .= $p{$1}; warn "$1 $p{$1}" } }'
 
@@ -406,7 +419,7 @@ plz berlin:	plz-orig
 	mv -f plz~ plz
 	-@$(READONLY) plz berlin
 
-# not a default rule:
+# Not a default rule yet:
 berlin_ortsteile:	plz-orig
 	-@$(WRITEABLE) $@
 	cat plz-orig | \
@@ -521,6 +534,33 @@ kneipen:	kneipen.yml
 	$(MISCSRCDIR)/yaml2bbd $> > $@
 	-@$(READONLY) $@
 
+######################################################################
+# MORE HELPER TARGETS
+
+# This also creates .rsync_include
+.modified:	${TARGETS}
+	${MISCSRCDIR}/create_modified
+
+multi_bez_str:	multi_bez_str-orig
+	-@$(WRITEABLE) $@
+	${MISCSRCDIR}/complete_multi_bez_str > $@
+	-@$(READONLY) $@
+
+# Makefile in ../misc ausführen
+# drat ... ich möchte nicht gmake verwenden :-(
+make_misc:
+	cd $(MISCDIR) && ${MAKE} ${MAKEFLAGS} 
+
+# create Storable versions of data files
+# handling of Storable files is slower, so it is not done by default
+storable:
+	for i in $(TARGETS); do \
+	    perl -I.. -I../lib ../Strassen/Storable.pm -v -u -f $$i $$i.st; \
+	done
+
+######################################################################
+# FRAGEZEICHEN LAYER
+
 # The fragezeichen-PHONY and .create_fragezeichen stuff is necessary
 # to minimize dependencies (well...)
 
@@ -558,6 +598,12 @@ fragezeichen:	.create_fragezeichen
 	${GREPSTRASSEN_UTF8} -special fragezeichen ${DATADIR}/$(i)-orig > /dev/null
 	cp -f /tmp/fragezeichen_$(i)-orig.bbd $@
 .endfor
+
+######################################################################
+# OTHER HELPER LAYERS, NOT INCLUDED IN STANDARD DIST
+
+######################################################################
+# PERSISTENT TEMPORARY DIRECTORY TARGETS
 
 .for i in ${SOURCE_TARGETS}
 ${PERSISTENTTMPDIR}/.XXX-$(i):	$(i)-orig
@@ -679,6 +725,9 @@ ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd:	fragezeichen ${DATADIR}/strassen $
 	mv /tmp/fragezeichen-matches.bbd ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd
 
 
+######################################################################
+# CHECKS
+
 .OPTIONAL: .check_bbbike-temp-blockings-optimized
 
 # It is legal for fragezeichen points to not be on strassen, so this is
@@ -692,23 +741,6 @@ check-fragezeichen:	/tmp/check-fragezeichen.bbd \
 # This collects *all* inaccessible points, not only for fragezeichen
 /tmp/inaccessible-fragezeichen.bbd: fragezeichen strassen landstrassen landstrassen2
 	${SEARCH_INACCESSIBLE} -street strassen,landstrassen,landstrassen2,fragezeichen > $@
-
-multi_bez_str:	multi_bez_str-orig
-	-@$(WRITEABLE) $@
-	${MISCSRCDIR}/complete_multi_bez_str > $@
-	-@$(READONLY) $@
-
-# Makefile in ../misc ausführen
-# drat ... ich möchte nicht gmake verwenden :-(
-make_misc:
-	cd $(MISCDIR) && ${MAKE} ${MAKEFLAGS} 
-
-# create Storable versions of data files
-# handling of Storable files is slower, so it is not done by default
-storable:
-	for i in $(TARGETS); do \
-	    perl -I.. -I../lib ../Strassen/Storable.pm -v -u -f $$i $$i.st; \
-	done
 
 force_check: remove_checks check
 
@@ -947,56 +979,9 @@ check-disabled:	.check_label
 	rm -f /tmp/all_temp_blockings.bbd
 	@touch $@
 
-temp_blockings/bbbike-temp-blockings.yml: temp_blockings/bbbike-temp-blockings.pl
-	perl -MYAML -e '\
-	    $$YAML::UseBlock = 1;\
-	    do $$ARGV[0];\
-	    die 1 if not @temp_blocking;\
-	    YAML::DumpFile($$ARGV[1], \@temp_blocking);\
-	' $> $@~
-	perl -MData::Compare -MData::Dumper -MYAML -e '\
-	    do $$ARGV[0];\
-	    $$y = YAML::LoadFile($$ARGV[1]);\
-	    die 2 if not @temp_blocking;\
-	    $$Data::Dumper::Sortkeys = 1;\
-	    if (not Compare(\@temp_blocking, $$y)) {\
-	        open(F1, "> /tmp/1"); print F1 Data::Dumper->new([\@temp_blocking],[])->Dump; \
-	        open(F2, "> /tmp/2"); print F2 Data::Dumper->new([$$y],[])->Dump; \
-		system("diff -u /tmp/1 /tmp/2 | less"); \
-	    }\
-	' $> $@~
-	mv -f $@~ $@
-	@$(READABLE) $@
-
-$(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blockings.yml
-	perl -MYAML -e '\
-		$$x = YAML::LoadFile($$ARGV[0]);\
-		for (@$$x) {\
-		    $$d = $$_->{data};\
-		    next if not $$d;\
-		    $$t = $$_->{text};\
-		    $$t =~ s/[\n\t]/ /g;\
-		    $$d =~ s/^/$$t /gm;\
-		    print $$d;\
-		}\
-	' $> > $@
-
-#.PHONY: .modified
-
-# This also creates .rsync_include
-.modified:	${TARGETS}
-	${MISCSRCDIR}/create_modified
-
-sort-coords.data:	sort-Berlin.coords.data sort-Potsdam.coords.data
-
-.for city in Berlin Potsdam
-sort-$(city).coords.data:
-	-@$(WRITEABLE) $(city).coords.data~
-	mv $(city).coords.data $(city).coords.data~
-	$(SORT_NO_LOCALE) ${COORDS_DATA_SORT_OPTS} < $(city).coords.data~ > $(city).coords.data
-	@$(READABLE) $(city).coords.data
-	touch .check_$(city)_coords_data
-.endfor
+.check_add_str:	strassen add_str Berlin.coords.data
+	false
+	@touch $@
 
 # For adjusting the buffer in BBBikeXS.xs.
 # Please adjust the number according to MAXBUF and MAXPOINTS in BBBikeXS.xs.
@@ -1159,6 +1144,59 @@ GNUmakefile: Makefile
 .endif
 
 ######################################################################
+# Berlin.coords.data etc. targets
+
+sort-coords.data:	sort-Berlin.coords.data sort-Potsdam.coords.data
+
+.for city in Berlin Potsdam
+sort-$(city).coords.data:
+	-@$(WRITEABLE) $(city).coords.data~
+	mv $(city).coords.data $(city).coords.data~
+	$(SORT_NO_LOCALE) ${COORDS_DATA_SORT_OPTS} < $(city).coords.data~ > $(city).coords.data
+	@$(READABLE) $(city).coords.data
+	touch .check_$(city)_coords_data
+.endfor
+
+
+######################################################################
+# TEMPORARY BLOCKINGS LAYER
+
+temp_blockings/bbbike-temp-blockings.yml: temp_blockings/bbbike-temp-blockings.pl
+	perl -MYAML -e '\
+	    $$YAML::UseBlock = 1;\
+	    do $$ARGV[0];\
+	    die 1 if not @temp_blocking;\
+	    YAML::DumpFile($$ARGV[1], \@temp_blocking);\
+	' $> $@~
+	perl -MData::Compare -MData::Dumper -MYAML -e '\
+	    do $$ARGV[0];\
+	    $$y = YAML::LoadFile($$ARGV[1]);\
+	    die 2 if not @temp_blocking;\
+	    $$Data::Dumper::Sortkeys = 1;\
+	    if (not Compare(\@temp_blocking, $$y)) {\
+	        open(F1, "> /tmp/1"); print F1 Data::Dumper->new([\@temp_blocking],[])->Dump; \
+	        open(F2, "> /tmp/2"); print F2 Data::Dumper->new([$$y],[])->Dump; \
+		system("diff -u /tmp/1 /tmp/2 | less"); \
+	    }\
+	' $> $@~
+	mv -f $@~ $@
+	@$(READABLE) $@
+
+$(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blockings.yml
+	perl -MYAML -e '\
+		$$x = YAML::LoadFile($$ARGV[0]);\
+		for (@$$x) {\
+		    $$d = $$_->{data};\
+		    next if not $$d;\
+		    $$t = $$_->{text};\
+		    $$t =~ s/[\n\t]/ /g;\
+		    $$d =~ s/^/$$t /gm;\
+		    print $$d;\
+		}\
+	' $> > $@
+
+######################################################################
+# CGPSMAPPER TARGETS
 
 CGPSMAPPER?=	/usr/ports/distfiles/cgpsmapper/cgpsmapper0081static
 SENDMAP?=	/usr/ports/distfiles/cgpsmapper/sendmap17Lstatic
