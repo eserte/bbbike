@@ -723,8 +723,6 @@ Nymphenufer: mäßig geeignet	Q2 -4044,1841 -3981,1764 -3806,1644 -3761,1576 -3654
 #: unverified_by ADFC-Karte
 Dolomitenstr.: mäßig geeignet	Q2 10596,17554 10473,17446 10305,17299
 #: unverified_by ADFC-Karte
-Cyclopstr.: nicht geeignet	Q3 4825,21718 5138,21358
-#: unverified_by ADFC-Karte
 (Orankestr. - Orankesee): gut geeignet	Q0 15598,15793 15581,15846
 Peter-Vischer-Str.: Asphalt	Q0 6185,6469 6324,6480 6473,6493 6706,6513 6826,6523
 Riemenschneiderweg: mäßiger Asphalt	Q1 6826,6523 6811,6737 6802,6816 6773,7116
@@ -1281,6 +1279,7 @@ Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068
 #: by: Paul (no email):
 Eulerstr.: Asphalt	Q0 9268,16228 9494,16455
 #: by: anonymous vvv
+Maselakeweg: Verbundsteinpflaster	Q1 -2441,16996 -2391,16607 -2340,16590
 Sellinstr.: mäßiger Asphalt	Q1 11215,17927 11238,17785
 Riedemannweg: Asphalt	Q0 4248,15647 4408,15297
 #: add_fragezeichen: Kopfsteinpflaster oder Asphalt?
@@ -2444,7 +2443,7 @@ Am Espenpfuhl: gutes Kopfsteinpflaster	Q1 17719,683 18075,128
 #: by: Nicolas Jost: vvv
 Boothstr.: Asphalt	Q0 4959,3194 5108,3104 5244,3041 5503,2922
 #: XXX: laut ADFC-Karte aber gut befahrbar?
-Marienstr.: schlechtes Kopfsteinpflaster	Q3 4962,2532 5115,2803
+Marienstr.: schlechtes Kopfsteinpflaster	Q3 4962,2532 5058,2702 5115,2803
 Marienstr.: schlechtes Kopfsteinpflaster	Q3 5193,2953 5244,3041
 Marienplatz: schlechtes Kopfsteinpflaster	Q3 5115,2803 5209,2837 5193,2953 5084,2918 5115,2803
 #: by: ^^^
@@ -2680,7 +2679,7 @@ Caroline-Michaelis-Str.: Asphalt	Q0 8810,14373 8830,14350 9075,14032 9148,13948
 Machonstr.: gute Qualität	Q0 9025,4871 9044,4667 9067,4495 9080,4371
 #: by: ^^^
 #: by: Saatz:
-Jungfernstieg: schlechtes Kopfsteinpflaster	Q3 5564,3032 5503,2922 5516,2873 5226,2390
+Jungfernstieg: schlechtes Kopfsteinpflaster	Q3 5564,3032 5503,2922 5516,2873 5324,2553 5226,2390
 #: by: Jürgen Solms: vvv
 Traunsteiner Str.: Asphalt	Q0 6550,9537 6553,9600 6458,9655
 Marinesteig: Asphalt	Q0 -2741,3409 -2784,3485
@@ -3015,6 +3014,13 @@ Heinrichstr. (Lichtenberg): Kopfsteinpflaster	Q2 16790,10955 16869,11190 16936,1
 Buttmannstr.: schlechtes Kopfsteinpflaster	Q3 8481,16136 8659,16327
 #: by: Friedemann:
 Klingerstr.: Asphalt	Q0 14853,8670 14922,8730
+#: by: Tom Bschor
+#: note: laut ADFC-Karte "nicht geeignet"
+Cyclopstr.: schlechtes Kopfsteinpflaster, stark wellig und Schlaglöcher	Q3 4825,21718 5138,21358 5312,21228 5354,21232
+#: by: Steini vvv
+Lange Str. (Lichterfelde): Asphalt	Q0 5250,1725 5403,1779 5519,1831 5656,1882 5781,1936 5865,1975
+Bahnhofstr. (Lichterfelde): Asphalt	Q0 4767,2853 5058,2702 5324,2553 5367,2528
+#: by: ^^^
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
