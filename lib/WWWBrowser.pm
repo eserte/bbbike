@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: WWWBrowser.pm,v 2.29 2005/10/19 22:36:10 eserte Exp eserte $
+# $Id: WWWBrowser.pm,v 2.30 2006/02/25 20:03:06 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2000,2001,2003,2005 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ use strict;
 use vars qw(@unix_browsers $VERSION $VERBOSE $initialized $os $fork
 	    $got_from_config $ignore_config);
 
-$VERSION = sprintf("%d.%02d", q$Revision: 2.29 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 2.30 $ =~ /(\d+)\.(\d+)/);
 
 @unix_browsers = qw(_internal_htmlview
 		    _default_gnome _default_kde
@@ -258,11 +258,11 @@ sub open_in_opera {
     my(%args) = @_;
     if (is_in_path("opera")) {
 	if ($args{-oldwindow}) {
-	    system("opera", $url);
+	    exec_bg("opera", $url);
 	} else {
-	    system("opera", "-newpage", $url);
+	    exec_bg("opera", "-newpage", $url);
 	}
-	return 1 if ($?/256 == 0);
+	return 1; # if ($?/256 == 0);
     }
     0;
 }
