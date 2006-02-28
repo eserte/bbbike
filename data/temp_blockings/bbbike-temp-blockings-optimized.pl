@@ -151,8 +151,8 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1141167600,
-         'text' => 'B 115; (Forster Str.); OD Döbern grundhafter Straßenausbau Vollsperrung 18.05.2005-28.02.2006 ',
+         'until' => 1149112800,
+         'text' => 'B 115 Forster Str. OD Döbern grundhafter Straßenausbau Vollsperrung; Umleitung 18.05.2005-31.05.2006 ',
          'from' => 1116280800,
          'data' => 'userdel	q4 93524,-86350 93217,-85769
 ',
@@ -566,6 +566,14 @@ userdel	2 -21150,67860 -20726,68037
          'text' => 'L 401 Richard-Sorge-Str./ Bergstr. OL Wildau, Bahnübergang Bergstr. Gleisbauarbeiten Einmünd. gesp. 05.03.2006-10.03.2006 ',
          'from' => 1141426800,
          'data' => 'userdel	2 26381,-9962 25700,-9502
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1141686000,
+         'text' => 'L 090 Phöbener Str. Bahnübergang in OL Werder Gleisbauarbeiten Vollsperrung; Umleitung 03.03.2006-06.03.2006 ',
+         'from' => 1141254000,
+         'data' => 'userdel	2 -22206,-1693 -22042,-2060
 ',
          'type' => 'gesperrt'
        }

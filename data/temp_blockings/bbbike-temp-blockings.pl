@@ -1908,8 +1908,8 @@ userdel	q4; 17363,11972 17249,11802
 EOF
      },
      { from  => 1116280800, # 2005-05-17 00:00
-       until => 1141167600, # 2006-03-01 00:00
-       text  => 'B 115; (Forster Str.); OD Döbern grundhafter Straßenausbau Vollsperrung 18.05.2005-28.02.2006 ',
+       until => 1149112800, # 2006-06-01 00:00
+       text  => 'B 115 Forster Str. OD Döbern grundhafter Straßenausbau Vollsperrung; Umleitung 18.05.2005-31.05.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 93524,-86350 93217,-85769
@@ -3694,6 +3694,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 26381,-9962 25700,-9502
+EOF
+     },
+     { from  => 1141254000, # 2006-03-02 00:00
+       until => 1141686000, # 2006-03-07 00:00
+       text  => 'L 090 Phöbener Str. Bahnübergang in OL Werder Gleisbauarbeiten Vollsperrung; Umleitung 03.03.2006-06.03.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -22206,-1693 -22042,-2060
 EOF
      },
     );
