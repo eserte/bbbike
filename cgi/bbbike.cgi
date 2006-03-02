@@ -142,7 +142,7 @@ be writable for the owner of the httpd process.
 
 =cut
 
-$mapdir_url = '/~eserte/bbbike-tmp';
+#$mapdir_url = '/~eserte/bbbike-tmp';
 
 =item $mapdir_fs
 
@@ -150,7 +150,7 @@ The C<$mapdir_url> path in filesystem space.
 
 =cut
 
-$mapdir_fs  = '/home/e/eserte/www/bbbike-tmp';
+#$mapdir_fs  = '/home/e/eserte/www/bbbike-tmp';
 
 =item $tmp_dir
 
@@ -775,8 +775,6 @@ $max_plz_streets = 25;
 
 # die originale URL (für den Kaltstart)
 $bbbike_url = $q->url;
-# $mapdir_url absolut machen
-$mapdir_url = "http://" . $q->server_name . ($q->server_port != 80 ? ":" . $q->server_port : "") . $mapdir_url;
 # Root-Verzeichnis und Bilder-Verzeichnis von bbbike
 ($bbbike_root = $bbbike_url) =~ s|[^/]*/[^/]*$|| if !defined $bbbike_root;
 $bbbike_root =~ s|/$||; # letzten Slash abschneiden
@@ -794,17 +792,27 @@ if (!$is_beta) {
     $bbbike2_url =~ s{bbbike\.cgi}{bbbike2.cgi};
 }
 
-#XXX ! stay shared: my($fontstr, $fontend);
-#XXX ! stay shared: my $smallform = 0;
-use vars qw($smallform $fontstr $fontend);
-$smallform = 0;
+$bbbike_script = $q->url;
 
-if (!-d $mapdir_fs) {
+if (!$mapdir_url && !$mapdir_fs) {
+    $mapdir_url = "$bbbike_script?tmp=";
+    $mapdir_fs  = "$FindBin::RealBin/../tmp/www"; # hmmm, too much assuming about position of cgi
+}
+
+if (defined $mapdir_fs && !-d $mapdir_fs) {
     # unter der Voraussetzung, dass das Parent-Verzeichnis schon existiert
     mkdir $mapdir_fs, 0755;
 }
 
-$bbbike_script = $q->url;
+# $mapdir_url absolut machen
+if (defined $mapdir_url && $mapdir_url !~ m{^https?://}) {
+    $mapdir_url = "http://" . $q->server_name . ($q->server_port != 80 ? ":" . $q->server_port : "") . $mapdir_url;
+}
+
+#XXX ! stay shared: my($fontstr, $fontend);
+#XXX ! stay shared: my $smallform = 0;
+use vars qw($smallform $fontstr $fontend);
+$smallform = 0;
 
 $header_written = 0;
 
@@ -813,6 +821,21 @@ if ($q->path_info ne "") {
     foreach my $k ($q2->param) {
 	$q->param($k, $q2->param($k));
     }
+}
+
+if ($q->param("tmp")) {
+    my $file = $mapdir_fs . "/" . $q->param("tmp");
+    my($ext) = $file =~ m{\.([^\.]+)$};
+    http_header(-type => "image/$ext",
+		@no_cache);
+    binmode STDOUT;
+    open TMP, $file or die "Can't open file $file: $!";
+    local $/ = \8192;
+    while(<TMP>) {
+	print $_;
+    }
+    close TMP;
+    my_exit(0);
 }
 
 # Bei Verwendung von Apache muß die User-Info immer neu
@@ -1298,12 +1321,12 @@ sub choose_form {
 	   ) {
 	    $nice_berlinmap = $nice_abcmap = 1;
 	    $prefer_png = 1;
-	}
-	if ($bi->is_browser_version("MSIE", 5.0, 5.4999)) {
+	} elsif ($bi->is_browser_version("MSIE", 5.0, 5.4999)) {
 	    $nice_berlinmap = $nice_abcmap = 1;
-	}
-	if ($bi->is_browser_version("Opera", 7.0, 7.9999)) { # Mit 8.x wird nur einmalig beim Enter gehighlighted
-	    $nice_berlinmap = $nice_abcmap = 1;
+	} elsif ($bi->is_browser_version("Opera", 7.0, 7.9999)) { # Mit 8.x wird nur einmalig beim Enter gehighlighted $nice_berlinmap = $nice_abcmap = 1;
+	    $prefer_png = 1;
+	} elsif ($bi->is_browser_version("Konqueror", 3.0, 3.9999)) { # andere nicht getestet
+	    $nice_berlinmap = $nice_abcmap = 0;
 	    $prefer_png = 1;
 	}
     }
