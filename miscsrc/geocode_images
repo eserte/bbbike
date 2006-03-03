@@ -4,7 +4,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
 
 use File::Spec;
 use File::Basename;
@@ -214,3 +214,5 @@ plugin is located in the F<miscsrc> subdirectory of bbbike.
 thumbnails to get the larger version
 
 =back
+
+=cut
