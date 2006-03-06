@@ -95,9 +95,10 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1191189599,
-         'text' => 'Nennhauser Damm (Spandau) stadteinwärts zwischen Heerstr. und Döberitzer Weg Baustelle, Fahrtrichtung gesperrt (bis 09.2007)',
-         'from' => 1111439519,
+         'source_id' => 'IM_002500',
+         'until' => 1167605999,
+         'text' => 'Nennhauser Damm (Spandau) stadteinwärts zwischen Heerstr. und Döberitzer Weg Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
+         'from' => 1141499463,
          'data' => 'userdel	1 -8671,13312 -8643,13383 -8358,13340 -8011,13351
 ',
          'type' => 'gesperrt'
@@ -494,15 +495,7 @@ userdel	q4 -34232,-10832 -34337,-11047
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'INKO_75621',
-         'until' => 1141167599,
-         'text' => 'Rosa-Luxemburg-Str. (Mitte) in Richtung Memhardtstr. zwischen Karl-Liebknecht-Str. und Memhardtstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende Februar 2006)',
-         'from' => 1138319443,
-         'data' => 'userdel	q4; 10706,13043 10755,13152
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1141599600,
@@ -526,23 +519,8 @@ userdel	2 16336,-29511 16379,-29446
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1141426800,
-         'text' => 'B 122 Alt Ruppin-Dierberg Bahnübergang bei Dierberg Gleisbauarbeiten Vollsperrrung 28.02.2006-03.03.2006 ',
-         'from' => 1140994800,
-         'data' => 'userdel	2 -22567,67134 -21150,67860
-userdel	2 -21150,67860 -20726,68037
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1141426800,
-         'text' => 'B 179 Berliner Str. OL Königs Wusterhausen, zw. Schloßplatz u. Gartenweg Havarie SW-Schacht Vollsperrung 15.02.2006-03.03.2006 ',
-         'from' => 1139871600,
-         'data' => 'userdel	q4 25859,-11559 25640,-11357
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => 1148076000,
@@ -561,19 +539,37 @@ userdel	2 -21150,67860 -20726,68037
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1142031600,
-         'text' => 'L 401 Richard-Sorge-Str./ Bergstr. OL Wildau, Bahnübergang Bergstr. Gleisbauarbeiten Einmünd. gesp. 05.03.2006-10.03.2006 ',
-         'from' => 1141426800,
-         'data' => 'userdel	2 26381,-9962 25700,-9502
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1141686000,
          'text' => 'L 090 Phöbener Str. Bahnübergang in OL Werder Gleisbauarbeiten Vollsperrung; Umleitung 03.03.2006-06.03.2006 ',
          'from' => 1141254000,
          'data' => 'userdel	2 -22206,-1693 -22042,-2060
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1144965600,
+         'text' => 'B 101 Trebbiner Str. OL Luckenwalde, zw. Beelitzer Str. u. Potsdamer Str. Anschluß Gewerbehof Vollsperrung; Umleitung 13.03.2006-13.04.2006 ',
+         'from' => 1142118000,
+         'data' => 'userdel	q4 -4355,-35264 -4204,-35072
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1143068400,
+         'text' => 'L 070 Sperenberg-Trebbin zw. Abzw.Chrisinend. u. Abzw.Kl.Schulzend.Ber.Brücke B101n Brückenbau Vollsperrung 13.03.2006-22.03.2006 ',
+         'from' => 1142118000,
+         'data' => 'userdel	2 1740,-23380 1079,-23181
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1193871599,
+         'text' => 'Die Kaulsdorfer Brücke ist ab Montag 06.03.2006, 6.00 Uhr bis voraussichtlich Herbst 2007 gesperrt.',
+         'from' => 1141561135,
+         'data' => 'userdel	2 22691,12044 22668,12080
+userdel	2 22668,12080 22701,12115
 ',
          'type' => 'gesperrt'
        }

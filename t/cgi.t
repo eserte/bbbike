@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.29 2005/03/03 22:43:00 eserte Exp $
+# $Id: cgi.t,v 1.30 2006/03/06 07:12:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004 Slaven Rezic. All rights reserved.
@@ -338,9 +338,12 @@ for my $cgiurl (@urls) {
     ok($res->is_success, "Click on overview map")
 	or diag $res->as_string;
     $content = uncompr($res);
-    if ($content !~ qr|(http://.*/bbbike.*tmp/berlin_map_04-05.png)|i) {
+    my $map_qr1 = qr|(http://.*/bbbike.*tmp/berlin_map_04-05.png)|i;
+    my $map_qr2 = qr|(http://.*/bbbike.*\?tmp=/berlin_map_04-05.png)|i;
+    if ($content !~ $map_qr1 &&
+	$content !~ $map_qr2) {
 	ok(0) for 1..4; # really skip
-	diag("Cannot get tile image reference");
+	diag("Cannot get tile image reference, expected something like $map_qr1 or $map_qr2");
     } else {
 	my $image_url = $1;
 	ok(1);

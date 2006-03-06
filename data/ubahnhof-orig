@@ -1,6 +1,6 @@
 #: title.de: U-Bahnhöfe
 #: title.en: Underground stations
-#: version: $Id: ubahnhof-orig,v 4.8 2006/01/17 23:05:09 eserte Exp $
+#: version: $Id: ubahnhof-orig,v 4.8 2006/01/17 23:05:09 eserte Exp eserte $
 #:
 # U1
 #: attrs bg
@@ -96,6 +96,8 @@ Strausberger Platz	UA 12192,12538
 #: XXX ab 2010-??-?? bg
 Weberwiese	UA 13054,12397
 #: XXX ab 2007-??-?? bg
+#: oldname: -19960904: Rathaus Friedrichshain
+#: oldname: 19960904-19980520: Petersburger Str.
 Frankfurter Tor	UA 13792,12290
 #: XXX ab 2010-??-?? bg
 Samariterstr.	UA 14508,12185
@@ -167,6 +169,7 @@ Afrikanische Str.	UB 5594,17068
 #: XXX ab 2007-??-?? bg
 Kurt-Schumacher-Platz	UB 5063,17424
 Scharnweberstr.	UB 4064,17787
+#: oldname: -20030212: Seidelstr.
 Otisstr.	UB 3389,18248
 Holzhauser Str.	UB 2898,18814
 Borsigwerke	UB 2586,19374
@@ -224,6 +227,7 @@ Rathaus Spandau	UB -3560,14235
 Hermannstr.	UA 12358,6895
 Leinestr.	UA 12126,7596
 Boddinstr.	UA 11942,8248
+#: oldname: -19980521: Kottbusser Damm
 Schönleinstr.	UA 11651,9729
 Moritzplatz	UA 10870,10915
 Heinrich-Heine-Str.	UA 11203,11611
@@ -255,6 +259,7 @@ Wittenau	UB 5501,21018
 Nauener Platz	UB 7829,16158
 Amrumer Str.	UB 6647,15084
 #: attrs bg
+#: oldname: -19930125: Putlitzstr.
 Westhafen	UA 6197,14494
 Birkenstr.	UA 6112,13947
 Turmstr.	UA 6122,13261

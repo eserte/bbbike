@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: get_and_store_synop,v 1.11 2006/02/15 23:57:16 eserte Exp $
+# $Id: get_and_store_synop,v 1.12 2006/03/05 10:10:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -116,7 +116,9 @@ if (@ARGV) {
     my $getlast;
     Getopt::Long::GetOptions("station=s" => \$station,
 			     "getlast!" => \$getlast,
-			    ) or die "usage!";
+			    ) or die "usage: $0 [-station station] [-getlast]
+station is any of @{[ values %stations ]}
+";
 
     if (!defined $station) {
 	die "-station is missing";

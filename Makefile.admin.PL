@@ -702,7 +702,7 @@ BBBikeVar.tpl: BBBikeVar.pm
 #test-with-protocol-code:
 #test-with-protocol-data:
 
-test-with-protocol:
+test-with-protocol: permission
 	DATE=`date +%Y%m%d`; export HARNESS_NOTTY=1; script $(HOME)/trash/bbbike-test-$$DATE $(MAKE) test
 	DATE=`date +%Y%m%d`; cd data && script $(HOME)/trash/bbbike-test-data-$$DATE $(MAKE) all slow-checks really-slow-checks
 

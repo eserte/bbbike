@@ -824,7 +824,9 @@ if ($q->path_info ne "") {
 }
 
 if ($q->param("tmp")) {
-    my $file = $mapdir_fs . "/" . $q->param("tmp");
+    my $file = $q->param("tmp");
+    $file =~ s{/+}{}g; # one leading slash is expected
+    $file = $mapdir_fs . "/" . $file;
     my($ext) = $file =~ m{\.([^\.]+)$};
     http_header(-type => "image/$ext",
 		@no_cache);

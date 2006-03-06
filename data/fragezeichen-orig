@@ -39,9 +39,12 @@ Reichsstr.	? 1403,11428 1308,11506 1220,11583 1133,11664 1033,11754 881,11893 81
 #: by Berliner Kurier: vvv
 #: next_check: 2005-08-01
 Max-Beer-Str.: Fahrradstraße geplant (2005)	? 10632,13199 10703,13467 10740,13621
-#: next_check: 2005-08-01
-#: note: laut http://www.berlinonline.de/berliner-zeitung/berlin/505160.html Fertigstellung bis 2008
-Linienstr.: Fahrradstraße geplant (nach der Sanierung)?	? 9281,13374 9607,13507 9752,13575 9903,13646 9944,13665 9964,13665 10020,13669 10081,13673 10214,13680 10308,13679 10432,13678 10597,13647 10718,13625 10740,13621 10777,13614 10878,13565 11059,13480 11104,13456
+#: note: laut http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0511/nachricht2119.html Fertigstellung bis 2008-02-28 (genau: bis zur Feuerwache)
+Linienstr.: Fahrradstraße geplant (nach der Sanierung)?	? 9281,13374 9607,13507
+#: note: laut http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0511/nachricht2119.html Fertigstellung bis 2006-10-31
+Linienstr.: Fahrradstraße geplant (nach der Sanierung)?	? 9607,13507 9752,13575 9903,13646
+#: note: laut http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0511/nachricht2119.html Fertigstellung bis 2007-11-30
+Linienstr.: Fahrradstraße geplant (nach der Sanierung)?	? 9903,13646 9944,13665 9964,13665 10020,13669 10081,13673 10214,13680 10308,13679 10432,13678 10597,13647 10718,13625
 #: by ^^^
 #: last_checked: 2005-11-07
 Bethaniendamm: vor den Bauarbeiten war hier ein Radstreifen, wird er wieder hergestellt?	? 11461,11145 11649,11075 11816,11084 11852,11102 11956,11166 12012,11235 12055,11331
@@ -928,7 +931,8 @@ Am Invalidenfriedhof - Scharnhorststr.: existiert hier auch eine Verbindung?	? 8
 Trendelenburgstr.: Qualität (vermutlich Asphalt), Behinderungen?	? 2740,11076 2845,10840
 Jeanne-Mammen-Bogen: Qualität, verkehrsberuhigt?	? 4954,10876 5090,10868
 Lotte-Lenya-Bogen: Qualität, Fußgänger?	? 5242,10918 5264,10921 5348,10960 5373,10981
-(Mauerradweg am Teltowkanal):  genauer Verlauf? Eröffnung  Apr. '06, aber berits befahrbar	? 14184,6009 14112,6009 14370,5453 14540,5140 14715,4928 15631,4215 16934,3215 17646,2712 17921,2553 18037,2500 18465,2450
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0509/nachricht2030.html
+(Mauerradweg am Teltowkanal): genauer Verlauf? Qualität? Erreichbar über Rampen/Treppen (per Luftbild nur bei der Neuen Späthstr. gesehen)	? 14659,5853 14314,5786 14184,6009 14112,6009 14370,5453 14540,5140 14715,4928 15631,4215 16934,3215 17646,2712 17921,2553 18037,2500 18465,2450
 #: next_check: 2005-11-01
 Caputh - Michendorf: Asphaltierter Zweiwegeradweg im Bau, fertig vorausichtlich Nov. 2005	?::inwork -14279,-9832 -14518,-9621 -14790,-9271 -15120,-8806 -15805,-7964 -15951,-7768
 Spanische Allee: hier ist noch eine weitere Ampel. Wo?	? -2026,2742 -2249,2818
@@ -948,6 +952,7 @@ Blesener Zeile: existiert eine Verbindung zum Weg am Nordgraben?	? 3426,20642 34
 Leuenburger Zeile: Qualität? Teil einer ausgeschilderten Radroute?	? 2716,19776 2818,19606 2852,19546
 Waidmannsluster Damm - Gorkistr. - Leuenburger Zeile: Teil einer ausgeschilderten Route?	? 2242,20908 2404,20469 2435,20370 2463,20295 2716,19776
 Damme (am Gutshof): Qualität (wahrscheinlich Kopfsteinpflaster)?	? 49971,99565 49795,99704 49737,99646
+#: XXX laut http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0511/nachricht2116.html "Asphaltbauweise mit kiesfarbener Splittoberfläche"
 Röntgentaler Weg (durch den Schloßpark): Qualität? Führt hier der Pankeweg entlang?	? 16154,25785 16537,26209
 Röntgentaler Weg: Qualität? Führt hier der Pankeweg entlang?	? 16537,26209 17335,26899
 Brückenstr.: Qualität? Führt hier der Pankeweg entlang?	? 17335,26899 17417,26948
@@ -1256,3 +1261,10 @@ Wrightallee: Streckenführung zwischen Melli-Besse-Ring und Gorissenstr. bereits 
 Kyllmannstr.: Qualität?	? 3456,4244 3572,4012 3616,3944 3724,3799
 #: XXX: unklare Angaben von Nils Fiedler, leider keine Rückfrage möglich: Q1 (Asphalt); q2 (Fußgängerzone); RW1 (Radweg); Gefälle "5°"?
 Mühlenfeldstr.: Qualität? Steigung, wenn ja, wo genau?	? 3727,22868 3747,22582 3243,22311 2587,22332
+Wackenbergstr.: Qualität?	? 10218,19742 10543,19872
+Wackenbergstr.: Qualität?	? 10657,19931 10999,20109 11437,20341 11774,20591
+Dorfstr. (Malchow): seit November 2005 Bauarbeiten für neuen Radweg, bereits fertig?	? 15606,19839 15656,19946 15686,20100 15778,20350 15900,20531 16025,20631
+#: XXX: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0511/nachricht2116.html
+Ossietkystr.: Teil zwischen Majakowskiring und Parkstr. mit Asphaltüberzug versehen?	? 10440,18910 10496,18704
+#: XXX: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0510/nachricht2092.html
+Wuhlewanderweg zwischen Lindenstr. und Heesestr.: Durchgängig befahrbar? Qualität?	? 21386,9052 21462,9216 21514,9494 21581,9616 21620,9737 21669,9826 21668,9885
