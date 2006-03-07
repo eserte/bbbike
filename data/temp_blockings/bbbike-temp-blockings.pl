@@ -3730,4 +3730,33 @@ userdel	2 22691,12044 22668,12080
 userdel	2 22668,12080 22701,12115
 EOF
      },
+     { from  => 1141765672, # 2006-03-07 22:07
+       until => 1150408799, # 2006-06-15 23:59
+       text  => 'Niedstr. (Friedenau) in beiden Richtungen zwischen Lauterstr. und Handjerystr. Baustelle Straße vollständig gesperrt (bis Mitte 06.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_002505',
+       data  => <<EOF,
+userdel	2 5810,7337 5653,7333
+EOF
+     },
+     { from  => 1141765814, # 2006-03-07 22:10
+       until => 1150408799, # 2006-06-15 23:59
+       text  => 'Niedstr. (Friedenau) von Handjerystr. bis Friedrich-Wilhelmplatz Einbahnstr. (bis Mitte 06.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_002505',
+       data  => <<EOF,
+userdel	1 5364,7330 5653,7333
+EOF
+     },
+     { from  => 1142118000, # 2006-03-12 00:00
+       until => 1157061600, # 2006-09-01 00:00
+       text  => 'L 745 Motzen-B246 Gallun zw. OA Motzen und OE Gallun Straßenbauarbeiten Vollsperrung 13.03.2006-31.08.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 22476,-19219 22338,-19081
+userdel	2 22476,-19219 22599,-19785
+userdel	2 22324,-18950 22338,-19081
+userdel	2 23356,-20982 22599,-19785
+EOF
+     },
     );

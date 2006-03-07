@@ -497,15 +497,7 @@ userdel	q4 -34232,-10832 -34337,-11047
        },
        undef,
        undef,
-       {
-         'until' => 1141599600,
-         'text' => 'B 096 Neuhof-Wünsdorf Bahnübergang in OL Neuhof Gleisbauarbeiten Vollsperrung; Umleitung 04.03.2006-05.03.2006 ',
-         'from' => 1141340400,
-         'data' => 'userdel	2 16407,-29400 16379,-29446
-userdel	2 16336,-29511 16379,-29446
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -540,14 +532,7 @@ userdel	2 16336,-29511 16379,-29446
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1141686000,
-         'text' => 'L 090 Phöbener Str. Bahnübergang in OL Werder Gleisbauarbeiten Vollsperrung; Umleitung 03.03.2006-06.03.2006 ',
-         'from' => 1141254000,
-         'data' => 'userdel	2 -22206,-1693 -22042,-2060
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1144965600,
          'text' => 'B 101 Trebbiner Str. OL Luckenwalde, zw. Beelitzer Str. u. Potsdamer Str. Anschluß Gewerbehof Vollsperrung; Umleitung 13.03.2006-13.04.2006 ',
@@ -570,6 +555,35 @@ userdel	2 16336,-29511 16379,-29446
          'from' => 1141561135,
          'data' => 'userdel	2 22691,12044 22668,12080
 userdel	2 22668,12080 22701,12115
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002505',
+         'until' => 1150408799,
+         'text' => 'Niedstr. (Friedenau) in beiden Richtungen zwischen Lauterstr. und Handjerystr. Baustelle Straße vollständig gesperrt (bis Mitte 06.2006)',
+         'from' => 1141765672,
+         'data' => 'userdel	2 5810,7337 5653,7333
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002505',
+         'until' => 1150408799,
+         'text' => 'Niedstr. (Friedenau) von Handjerystr. bis Friedrich-Wilhelmplatz Einbahnstr. (bis Mitte 06.2006)',
+         'from' => 1141765814,
+         'data' => 'userdel	1 5364,7330 5653,7333
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1157061600,
+         'text' => 'L 745 Motzen-B246 Gallun zw. OA Motzen und OE Gallun Straßenbauarbeiten Vollsperrung 13.03.2006-31.08.2006 ',
+         'from' => 1142118000,
+         'data' => 'userdel	2 22476,-19219 22338,-19081
+userdel	2 22476,-19219 22599,-19785
+userdel	2 22324,-18950 22338,-19081
+userdel	2 23356,-20982 22599,-19785
 ',
          'type' => 'gesperrt'
        }
