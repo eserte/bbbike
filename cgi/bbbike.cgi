@@ -5480,22 +5480,27 @@ sub choose_all_form {
 	last if !@{$ret->[1]};
 	push(@strlist, $ret->[0]);
     }
-    my %trans = ('Ä' => 'A',
-		 'Ö' => 'O',
-		 'Ü' => 'U',
-		 'ä' => 'a',
-		 'ö' => 'o',
-		 'ü' => 'u',
-		 'ß' => 'ss',
-		 'é' => 'e',
-		);
-    my $trans_rx = "[".join("",keys %trans)."]";
+#XXX del:
+#     my %trans = ('Ä' => 'A',
+# 		 'Ö' => 'O',
+# 		 'Ü' => 'U',
+# 		 'ä' => 'a',
+# 		 'ö' => 'o',
+# 		 'ü' => 'u',
+# 		 'ß' => 'ss',
+# 		 'é' => 'e',
+# 		 'è' => 'e',
+# 		 'á' => 'a',
+# 		);
+#    my $trans_rx = "[".join("",keys %trans)."]";
+    my %trans = %BBBikeUtil::uml_german_locale;
     if ($locale_set) {
 	@strlist = sort @strlist;
     } else {
 	@strlist = map  { $_->[1] }
 	           sort { $a->[0] cmp $b->[0] }
-		   map  { (my $s = $_) =~ s/($trans_rx)/$trans{$1}/ge;
+		   map  { #XXX del:(my $s = $_) =~ s/($trans_rx)/$trans{$1}/ge;
+		          (my $s = $_) =~ s/($BBBikeUtil::uml_german_locale_keys_rx)/$BBBikeUtil::uml_german_locale{$1}/ge;
 			  [ $s, $_]
 		      }
 		       @strlist;

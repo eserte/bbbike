@@ -3376,13 +3376,7 @@ sub do_iconframe {
 		       -variable => \$steady_mark,
 		      );
     $opbm->command(-label => M"Markierung löschen",
-		   -command => sub {
-		       $c->delete('show');
-		       if ($showmark_after) {
-			   $showmark_after->cancel;
-			   undef $showmark_after;
-		       }
-		   },
+		   -command => \&delete_markers,
 		  );
     $opbm->cascade(-label => M"Mittlere Maustaste");
     {
@@ -10273,6 +10267,14 @@ sub mark_street {
 	}
     }
     eval { local $SIG{__DIE__}; $c->lower('show', $args{'-type'}) };
+}
+
+sub delete_markers {
+    $c->delete('show');
+    if ($showmark_after) {
+	$showmark_after->cancel;
+	undef $showmark_after;
+    }
 }
 
 sub find_visible_point {

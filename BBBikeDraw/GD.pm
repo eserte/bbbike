@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GD.pm,v 1.49 2005/12/23 22:59:36 eserte Exp $
+# $Id: GD.pm,v 1.49 2005/12/23 22:59:36 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2003 Slaven Rezic. All rights reserved.
@@ -1244,16 +1244,9 @@ sub patch_string {
     if (defined $gd_version and $gd_version >= 1.16) {
 	shift;
     } else {
-	$_ = shift;
-	s/δ/ae/g;
-	s/φ/oe/g;
-	s/ό/ue/g;
-	s/Δ/Ae/g;
-	s/Φ/Oe/g;
-	s/ά/Ue/g;
-	s/ί/ss/g;
-	s/[ιθ]/e/g;
-	$_;
+	my $s = shift;
+	require BBBikeUtil;
+	BBBikeUtil::umlauts_to_german($s);
     }
 }
 

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.75 2006/01/24 21:54:43 eserte Exp $
+# $Id: Makefile,v 1.76 2006/03/11 13:47:36 eserte Exp $
 #
 
 # Targets:
@@ -151,6 +151,10 @@ TARGET=devpc01
 .else
 TARGET=radzeit.herceg.de
 .endif
+.elif make(test-from-local-ixls-de) || \
+      make(deploy-ixls-de)          || \
+      make(rsync-ixls-de)
+TARGET=radzeit
 .else
 .error "Please set TARGET to radzeit or radzeit.herceg.de"
 .endif
@@ -569,3 +573,18 @@ remote-cleanup:
 # For quick deployment only:
 fast-rsync-googlemaps:
 	rsync -e "ssh -2" -av $(BBBIKE_ROOT_DIR)/cgi/bbbikegooglemap.cgi root@www.radzeit.de:/var/www/domains/radzeit.de/www/cgi-bin/
+
+######################################################################
+# Preliminary ixls.de rules
+test-on-remote-ixls-de:
+	make SSH_PROG_AND_ARGS="ssh -2 -p 5022" BBBIKE_RADZEIT_HOST=radzeit.ixls.de test-on-remote
+
+test-from-local-ixls-de:
+	make BBBIKE_RADZEIT_HOST=radzeit.ixls.de test-from-local TARGET=radzeit
+
+deploy-ixls-de:
+	@echo "*** Remove -n to make this rule operable ***"
+	make -n SSH_PROG_AND_ARGS="ssh -2 -p 5022" BBBIKE_RADZEIT_HOST=radzeit.ixls.de deploy
+
+rsync-ixls-de:
+	make SSH_PROG_AND_ARGS="ssh -2 -p 5022" BBBIKE_RADZEIT_HOST=radzeit.ixls.de rsync

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.62 2006/02/07 21:45:17 eserte Exp $
+# $Id: PLZ.pm,v 1.62 2006/02/07 21:45:17 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -45,11 +45,6 @@ $OLD_AGREP = 0 unless defined $OLD_AGREP;
 # on FreeBSD is
 #    ports/textproc/agrep => agrep 2.04 with buggy handling of umlauts
 #    ports/textproc/glimpse => agrep 3.0
-
-my %uml = ('ä' => 'ae', 'ö' => 'oe', 'ü' => 'ue', 'ß' => 'ss',
-	   'Ä' => 'Ae', 'Ö' => 'Öe', 'Ü' => 'Ue', 'é' => 'e', 'è' => 'e');
-my $umlkeys = join("",keys %uml);
-my $umlkeys_rx = qr{[$umlkeys]};
 
 # indexes of file fields
 use constant FILE_NAME     => 0;
@@ -306,21 +301,21 @@ sub look {
 		$push_sub->($_);
 	    }
 	} elsif ($grep_type eq 'grep-umlaut') {
-	    $str = '(?i:^' . quotemeta(kill_umlauts($str)) . ')';
+	    $str = '(?i:^' . quotemeta(BBBikeUtil::umlauts_to_german($str)) . ')';
 	    $str = qr{$str};
 	    while(<PLZ>) {
 		chomp;
-		if (kill_umlauts($_) =~ $str) {
+		if (BBBikeUtil::umlauts_to_german($_) =~ $str) {
 		    $push_sub->($_);
 		}
 	    }
 	    close PLZ;
 	} elsif ($grep_type eq 'grep-inword') {
-	    $str = '(?i:\b' . quotemeta(kill_umlauts($str)) . '\b)';
+	    $str = '(?i:\b' . quotemeta(BBBikeUtil::umlauts_to_german($str)) . '\b)';
 	    $str = qr{$str};
 	    while(<PLZ>) {
 		chomp;
-		if (kill_umlauts($_) =~ $str) {
+		if (BBBikeUtil::umlauts_to_german($_) =~ $str) {
 		    $push_sub->($_);
 		}
 	    }
@@ -628,12 +623,6 @@ sub make_any_hash {
 	$i++;
     }
     \%hash;
-}
-
-sub kill_umlauts {
-    my $s = shift;
-    $s =~ s/($umlkeys_rx)/$uml{$1}/go;
-    $s;
 }
 
 sub as_streets {

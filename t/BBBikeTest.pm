@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.14 2006/01/28 17:00:51 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.15 2006/03/11 14:58:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -163,6 +163,10 @@ sub tidy_check {
 	require File::Temp;
 	my($fh, $filename) = File::Temp::tempfile(SUFFIX => ".html",
 						  UNLINK => 1);
+	if ($args{-charset}) {
+	    eval 'binmode($fh, ":encoding($args{-charset})");';
+	    warn $@ if $@;
+	}
 	print $fh $content;
 	system("tidy", "-f", "/tmp/tidy.err", "-q", "-e", $filename);
 	Test::More::cmp_ok($?>>8, "<", 2, $test_name)

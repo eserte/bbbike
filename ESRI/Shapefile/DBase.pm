@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DBase.pm,v 1.12 2005/01/08 11:09:41 eserte Exp $
+# $Id: DBase.pm,v 1.12 2005/01/08 11:09:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001,2002,2004,2005 Slaven Rezic. All rights reserved.

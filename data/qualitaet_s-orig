@@ -251,7 +251,7 @@ Kalischer Str.: gutes Kopfsteinpflaster	Q1 3964,8559 3982,8750 4006,8967
 Mannheimer Str.: Kopfsteinpflaster, (enge) Gehwege sind für Radfahrer freigegeben	Q2 4456,8584 4319,8584
 Mannheimer Str.: Kopfsteinpflaster	Q2 4456,8703 4456,8584
 Thulestr.: Kopfsteinpflaster	Q2 11645,16616 11278,16609 11042,16605
-# ADFC-Karte sagt hier: mäßig geeignet
+#: note: ADFC-Karte sagt hier: mäßig geeignet
 Granitzstr.: Asphalt	Q0 10859,17854 10907,17884 11264,18154 11500,18335 11606,18416 11812,18484 11950,18529
 #: note: ADFC-Karte, Joern (js) widerspricht nicht:
 Stargardtstr.: gut geeignet	Q0 7043,17667 7237,17729 7495,17814
@@ -461,6 +461,8 @@ Wilmsstr.: Kopfsteinpflaster	Q2 10244,9981 10397,9962
 Boppstr.: Kopfsteinpflaster	Q2 11560,9524 11794,9438
 #: unverified_by ADFC-Karte
 Rufacher Weg: bedingt geeignet	Q2 12255,2058 12582,2129 12738,2162
+#: unverified_by ADFC-Karte
+Bärenlauchstr.: gut geeignet	Q0 19722,5179 19745,4972 19760,4875
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9355,19789 9266,20048 9174,20316 9142,20411 8915,20605 8714,20907 8526,21110 8321,21258 8277,21257
 Quickborner Str.: Kopfsteinpflaster	Q2 8170,21304 8022,21476
 Quickborner Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7072,22905 6779,23392
@@ -1212,6 +1214,8 @@ Hallesches Tor: Beton	Q0 9593,10238 9592,10174
 Bebelplatz: Kopfsteinpflaster, OK	Q1 9801,12245 9875,12254
 Metzer Str.: Kopfsteinpflaster	Q2 10947,14114 11016,14081
 Kollwitzplatz: Kopfsteinpflaster	Q2 11284,14488 11329,14559
+#: unverified_by ADFC-Karte
+Rudower Str. (Niederschöneweide): mäßig geeignet	Q2 18702,5060 18641,5260 18680,5413 18695,5453
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -3024,6 +3028,13 @@ Cyclopstr.: schlechtes Kopfsteinpflaster, stark wellig und Schlaglöcher	Q3 4825,
 Lange Str. (Lichterfelde): Asphalt	Q0 5250,1725 5403,1779 5519,1831 5656,1882 5781,1936 5865,1975
 Bahnhofstr. (Lichterfelde): Asphalt	Q0 4767,2853 5058,2702 5324,2553 5367,2528
 #: by: ^^^
+#: by: rainer (0deon): vvv
+#: note: laut ADFC-Karte mäßig geeignet
+Hartriegelstr.: schlechter Asphalt	Q2 18702,5060 18711,5036 19180,4899 19251,4888 19489,4928 19745,4972
+Allendeweg: Asphalt	Q0 23001,4382 22893,4532
+#: by: ^^^
+#: by: Thomas Köhler:
+Paul-Schwenk-Str.: Beton	Q0 19800,14726 19765,14737 19613,14728 19579,14783 19588,14847 19646,14917 19856,14926 19872,14954 19902,14945
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.26 2005/06/20 07:33:59 eserte Exp $
+# $Id: bbbikerouting.t,v 1.27 2006/03/13 06:50:32 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -66,7 +66,10 @@ if (defined $v && $v > 1) {
     Strassen::set_verbose(1);
 }
 
-system($^X, "$FindBin::RealBin/../miscsrc/bbbikestrserver", "-restart");
+my $bbbikestrserver = "$FindBin::RealBin/../miscsrc/bbbikestrserver";
+if (-r $bbbikestrserver) {
+    system($^X, $bbbikestrserver, "-restart");
+}
 
 my @runs;
 
@@ -103,6 +106,7 @@ if ($common) {
 
     for $usexs (0, 1) {
 	for $usenetserver (0, 1) {
+	    next if ($usenetserver && !-r $bbbikestrserver);
 	    for $usecache (0, 1) {
 		my @trycache = $usecache ? @cachetypes : undef;
 		for $cachetype (@trycache) {
@@ -139,7 +143,9 @@ for my $rundef (@runs) {
 }
 
 
-system($^X, "$FindBin::RealBin/../miscsrc/bbbikestrserver", "-stop");
+if (-r $bbbikestrserver) {
+    system($^X, $bbbikestrserver, "-stop");
+}
 
 if ($bench) {
     print STDERR join("\n",

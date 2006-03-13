@@ -106,6 +106,8 @@ sub launch_bezlex_url {
     }
 
     $street =~ s{(s)tr\.}{$1traße}i;
+    # Cannot use BBBikeUtil::umlauts_* here, because of special rules
+    # used in the LuiseBerlin html filename generation
     my $kill_umlauts = {"ä" => "ae",
 			"ö" => "oe",
 			"ü" => "ue",
@@ -114,6 +116,8 @@ sub launch_bezlex_url {
 			"Ö" => "Oe",
 			"Ü" => "Ue",
 			"é" => "_",
+			"è" => "_",
+			"á" => "_",
 			" " => "_",
 		       };
     my $left_part = join "", keys %$kill_umlauts;

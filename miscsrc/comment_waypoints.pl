@@ -2,15 +2,15 @@
 # -*- perl -*-
 
 #
-# $Id: comment_waypoints.pl,v 1.2 2002/02/05 22:27:24 eserte Exp $
+# $Id: comment_waypoints.pl,v 1.2 2002/02/05 22:27:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2006 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven.rezic@berlin.de
-# WWW:  http://www.rezic.de/eserte/
+# Mail: eserte@users.sourceforge.net
+# WWW:  http://bbbike.sourceforge.net
 #
 
 # given a gpsman waypoint file, comment the waypoints with approximate
@@ -25,6 +25,7 @@ use GPS::GpsmanData;
 use Strassen;
 use Karte; Karte::preload(qw(Standard Polar));
 use locale;
+use BBBikeUtil qw();
 
 use constant MAX_COMMENT => 45; # XXX don't duplicate
 use constant MAX_DIST => 50; # maximum allowed distance in m
@@ -107,15 +108,7 @@ sub make_comment {
 
 sub eliminate_umlauts {
     my $s = shift;
-    $s =~ s/ä/ae/g;
-    $s =~ s/ö/oe/g;
-    $s =~ s/ü/ue/g;
-    $s =~ s/ß/ss/g;
-    $s =~ s/Ä/Ae/g;
-    $s =~ s/Ö/Oe/g;
-    $s =~ s/Ü/Ue/g;
-    $s =~ s/é/e/g;
-    $s;
+    BBBikeUtil::umlauts_to_german($s);
 }
 
 __END__

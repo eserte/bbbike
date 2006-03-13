@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.3 2003/01/08 20:12:34 eserte Exp $
+# $Id: Util.pm,v 1.3 2003/01/08 20:12:34 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2006 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -22,12 +22,13 @@ use base qw(Exporter);
 
 @EXPORT = qw(eliminate_umlauts);
 
+use BBBikeUtil qw();
+
 sub eliminate_umlauts {
     my $s = shift;
-    $s =~ tr/‰ˆ¸ƒ÷‹/aouAOU/;
-    $s =~ s/ﬂ/ss/g;
-    $s =~ s/[ÈË]/e/g;
-    $s =~ s/[\200-\377]/_/g;
+    $s = BBBikeUtil::umlauts_for_german_locale($s);
+    $s =~ s/[\200-\377]/_/g; # Ignore everything else. Maybe I should
+                             # use Text::Unidecode if available?
     $s;
 }
 

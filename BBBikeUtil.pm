@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeUtil.pm,v 1.22 2006/01/14 00:17:55 eserte Exp $
+# $Id: BBBikeUtil.pm,v 1.22 2006/01/14 00:17:55 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998 Slaven Rezic. All rights reserved.
@@ -235,6 +235,42 @@ BEGIN {
 	    $max;
 	};
     }
+}
+
+use vars qw(%uml $uml_keys $uml_keys_rx
+	    %uml_german_locale $uml_german_locale_keys $uml_german_locale_keys_rx
+	   );
+BEGIN {
+    %uml = ('ä' => 'ae', 'ö' => 'oe', 'ü' => 'ue', 'ß' => 'ss',
+	    'Ä' => 'Ae', 'Ö' => 'Oe', 'Ü' => 'Ue',
+	    'é' => 'e', 'è' => 'e', 'á' => 'a',
+	   );
+    $uml_keys = join("",keys %uml);
+    $uml_keys_rx = qr{[$uml_keys]};
+
+    %uml_german_locale = ('ä' => 'a', 'ö' => 'o', 'ü' => 'u', 'ß' => 'ss',
+			  'Ä' => 'A', 'Ö' => 'O', 'Ü' => 'U',
+			  'é' => 'e', 'è' => 'e', 'á' => 'a',
+			 );
+    $uml_german_locale_keys = join("",keys %uml_german_locale);
+    $uml_german_locale_keys_rx = qr{[$uml_german_locale_keys]};
+}
+
+# Convert umlauts so that sorting with german locale is correct, i.e.
+# ä => a, ß => ss, ...
+# Also used for shortening labels for GPS devices, where converting
+# a => ae is wasteful
+sub umlauts_for_german_locale {
+    my $s = shift;
+    $s =~ s/($uml_german_locale_keys_rx)/$uml_german_locale{$1}/go;
+    $s;
+}
+
+# Convert according to german rules e.g. ä => ae
+sub umlauts_to_german {
+    my $s = shift;
+    $s =~ s/($uml_keys_rx)/$uml{$1}/go;
+    $s;
 }
 
 1;

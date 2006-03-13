@@ -20,6 +20,8 @@ BEGIN {
     eval 'use GPS::Garmin 0.13'; die $@ if $@;
 }
 
+use GPS::Util qw(eliminate_umlauts);
+
 BEGIN {
     if (!eval '
 use Msg qw(frommain);
@@ -540,12 +542,10 @@ sub convert_from_route {
 }
 
 # ... and more
-# XXX use version from GPS::Util?
 sub _eliminate_umlauts {
     my $s = shift;
-    $s =~ tr/הצüִײÜיט/aouAOUee/;
-    $s =~ s/ß/ss/g;
-    $s =~ s/[\200-\377]/_/g;
+    $s = GPS::Util::eliminate_umlauts($s);
+    # And more shortenings:
     $s =~ s/[\(\)]//g;
     $s =~ s/str\./str/g;
     $s =~ s/\./ /g;

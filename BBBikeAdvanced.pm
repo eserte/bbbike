@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.143 2006/02/17 00:15:22 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.144 2006/03/12 21:35:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1088,63 +1088,17 @@ sub set_coord_interactive {
 	$f->Button
 	    (-text => M"Setzen",
 	     -command => sub {
-		 my($x_ddd, $y_ddd);
-		 if (0 && $url =~ m{gps=(\d+)%7C(\d+)}) {
-		     # XXX passt nicht ...
-		     my($x, $y) = ($1, $2);
-		     require Karte::Polar;
-		     $x_ddd = 13 + $x/10000;
-		     $y_ddd = 52 + $y/10000;
-		     warn "$x $y $x_ddd $y_ddd";
-		 } elsif ($url =~ m{x_wgs/(.*?)/y_wgs/(.*?)/}    ||
-			  $url =~ m{x_wgs=(.*?)[&;]y_wgs=([\.\d]+)}
-			 ) {
-		     my($x, $y) = ($1, $2);
-		     require Karte::Polar;
-		     $x_ddd = Karte::Polar::dmm2ddd(13, $x);
-		     $y_ddd = Karte::Polar::dmm2ddd(52, $y);
-		 } elsif ($url =~ /ADR_ZIP=(\d+)&ADR_STREET=(.+?)&ADR_HOUSE=(.*)/) {
-		     my($zip, $street, $hnr) = ($1, $2, $3);
-		     local @INC = @INC;
-		     push @INC, "$FindBin::RealBin/miscsrc";
-		     require TelbuchDBApprox;
-		     my $tb = TelbuchDBApprox->new(-approxhnr => 1);
-		     my(@res) = $tb->search("$street $hnr", $zip);
-		     if (!@res) {
-			 status_message(M("Kein Ergebnis gefunden"), "die");
-		     }
-		     my($x,$y) = transpose(split /,/, $res[0]->{Coord});
-		     mark_point('-x' => $x, '-y' => $y,
-				-clever_center => 1);
-		 } elsif ($url =~ /params=(\d+)_(\d+)_([\d\.]+)_([NS])_(\d+)_(\d+)_([\d\.]+)_([EW])/) {
-		     $y_ddd = $1 + $2/60 + $3/3600;
-		     $y_ddd *= -1 if $4 eq 'S';
-		     $x_ddd = $5 + $6/60 + $7/3600;
-		     $x_ddd *= -1 if $8 eq 'W';
-		 } else {
-		     my $handled = 0;
-		     if ($url =~ /LL=%2B([0-9.]+)%2B([0-9.]+)/) {
-			 $valx = $2;
-			 $valy = $1;
-			 $handled++;
-		     } elsif ($url =~ /lat=([0-9.]+).*lon=([0-9.]+)/) {
-			 $valx = $2;
-			 $valy = $1;
-			 $handled++;
-		     }
-		     if ($handled) {
-			 $coord_output = 'polar';
-			 $coord_menu->setOption('polar'); # XXX $Karte::map{'polar'}->name); #XXX should be better in Tk
-			 $set_sub->(1);
-		     } else {
-			 status_message("Can't parse <$url>", "die");
-		     }
+		 my $ret = parse_url_for_coords($url);
+		 my($x_s, $y_s, $x_ddd, $y_ddd) = @{$ret}{qw(x_s y_s x_ddd y_ddd)};
+		 if (defined $x_s) {
+		     my($tx,$ty) = transpose($x_s, $y_s);
+		     mark_point('-x' => $tx, '-y' => $ty, -clever_center => 1);
 		 }
-
-		 if (defined $x_ddd && defined $y_ddd) {
-		     my($tx,$ty) = transpose($Karte::Polar::obj->map2standard($x_ddd, $y_ddd));
-		     mark_point('-x' => $tx, '-y' => $ty,
-				-clever_center => 1);
+		 if (defined $x_ddd) {
+		     $coord_output = "polar";
+		     $coord_menu->setOption('polar'); # XXX $Karte::map{'polar'}->name); #XXX should be better in Tk
+		     $valx = $x_ddd;
+		     $valy = $y_ddd;
 		 }
 	     })->pack(-side => "left");
     }
@@ -1161,6 +1115,67 @@ sub set_coord_interactive {
     $coord_menu_sub->();
 
     $t->Popup(@popup_style);
+}
+
+sub parse_url_for_coords {
+    my($url, %args) = @_;
+    my $q = $args{quiet};
+    my($x_ddd, $y_ddd); # polar/DDD
+    my($x_s, $y_s); # BBBike coordinates
+    if (0 && $url =~ m{gps=(\d+)%7C(\d+)}) {
+	# XXX passt nicht ...
+	my($x, $y) = ($1, $2);
+	require Karte::Polar;
+	$x_ddd = 13 + $x/10000;
+	$y_ddd = 52 + $y/10000;
+	warn "$x $y $x_ddd $y_ddd";
+    } elsif ($url =~ m{x_wgs/(.*?)/y_wgs/(.*?)/}    ||
+	     $url =~ m{x_wgs=(.*?)[&;]y_wgs=([\.\d]+)}
+	    ) {
+	my($x, $y) = ($1, $2);
+	require Karte::Polar;
+	$x_ddd = Karte::Polar::dmm2ddd(13, $x);
+	$y_ddd = Karte::Polar::dmm2ddd(52, $y);
+    } elsif ($url =~ /ADR_ZIP=(\d+)&ADR_STREET=(.+?)&ADR_HOUSE=(.*)/) {
+	my($zip, $street, $hnr) = ($1, $2, $3);
+	local @INC = @INC;
+	push @INC, "$FindBin::RealBin/miscsrc";
+	require TelbuchDBApprox;
+	my $tb = TelbuchDBApprox->new(-approxhnr => 1);
+	my(@res) = $tb->search("$street $hnr", $zip);
+	if (!@res) {
+	    return if $q;
+	    status_message(M("Kein Ergebnis gefunden"), "die");
+	}
+	($x_s,$y_s) = split /,/, $res[0]->{Coord};
+    } elsif ($url =~ /params=(\d+)_(\d+)_([\d\.]+)_([NS])_(\d+)_(\d+)_([\d\.]+)_([EW])/) {
+	$y_ddd = $1 + $2/60 + $3/3600;
+	$y_ddd *= -1 if $4 eq 'S';
+	$x_ddd = $5 + $6/60 + $7/3600;
+	$x_ddd *= -1 if $8 eq 'W';
+    } else {
+	if ($url =~ /LL=%2B([0-9.]+)%2B([0-9.]+)/) {
+	    $x_ddd = $2;
+	    $y_ddd = $1;
+	} elsif ($url =~ /lat=([0-9.]+).*lon=([0-9.]+)/) { # e.g. goyellow.de
+	    $x_ddd = $2;
+	    $y_ddd = $1;
+	}
+    }
+
+    if (defined $x_ddd && defined $y_ddd) {
+	($x_s,$y_s) = $Karte::Polar::obj->map2standard($x_ddd, $y_ddd);
+    } elsif (defined $x_s && defined $y_s) {
+	($x_ddd,$y_ddd) = $Karte::Polar::obj->standard2map($x_s, $y_s);
+    }
+
+    return if (!defined $x_s);
+
+    return { x_ddd => $x_ddd,
+	     y_ddd => $y_ddd,
+	     x_s   => $x_s,
+	     y_s   => $y_s,
+	   };
 }
 
 sub set_line_coord_interactive {
@@ -1203,6 +1218,80 @@ sub set_line_coord_interactive {
     $b->bind("<3>" => sub {
 		 $set_sub->(-dont_center => 1);
 	     });
+}
+
+sub coord_to_markers_dialog {
+    my $t = redisplay_top($top, 'coord_to_markers_dialog',
+			  -title => M"Koordinaten aus Selection");
+    return if !defined $t;
+
+    my @marker_points;
+    my $marker_points_no = 0;
+
+    my $update_marker_points = sub {
+	$marker_points_no = scalar @marker_points;
+	if ($marker_points_no == 0) {
+	    delete_markers();
+	} else {
+	    mark_street(-coords => [@marker_points],
+			-clever_center => 1);
+	}
+    };
+
+    my $repeater;
+    my $last_sel;
+    $repeater = $t->repeat
+	(1000, sub {
+	     if (!Tk::Exists($t)) {
+		 $repeater->cancel;
+		 return;
+	     }
+	     my $s;
+	     Tk::catch {
+		 $s = $t->SelectionGet('-selection' => ($os eq 'win'
+							 ? "CLIPBOARD"
+							 : "PRIMARY"));
+	     };
+	     if (defined $s) {
+		 return if (defined $last_sel && $s eq $last_sel);
+		 $last_sel = $s;
+		 my $ret = parse_url_for_coords($s, quiet => 1);
+		 if ($ret) {
+		     my($tx,$ty) = transpose($ret->{x_s}, $ret->{y_s});
+		     push @marker_points, [[$tx,$ty]];
+		     $update_marker_points->();
+		 } else {
+		     warn "Can't parse coords in url <$s>\n";
+		 }
+	     }
+	 });
+
+    Tk::grid($t->Label(-text => M"Punkte erkannt:"),
+	     $t->Label(-textvariable => \$marker_points_no),
+	     -sticky => "w");
+    Tk::grid($t->Button(-text => M"Letzten Punkt löschen",
+			-command => sub {
+			    pop @marker_points if @marker_points;
+			    $update_marker_points->();
+			},
+		       ),
+	     -columnspan => 2,
+	     -sticky => "w");
+    Tk::grid($t->Button(-text => M"Reset",
+			-command => sub {
+			    @marker_points = ();
+			    $update_marker_points->();
+			},
+		       ),
+	     -columnspan => 2,
+	     -sticky => "w");
+    Tk::grid($t->Button(Name => "close",
+			-command => sub {
+			    $t->destroy;
+			},
+		       ),
+	     -columnspan => 2,
+	     -sticky => "w");
 }
 
 sub add_search_menu_entries {
@@ -1295,14 +1384,17 @@ sub advanced_coord_menu {
 	   BBBikeEdit::editmenu($top);
        });
     $bpcm->separator;
-    $bpcm->command(-label => M"Koordinatenliste zeigen",
-		   -command => \&show_coord_list);
-    $bpcm->command(-label => M"Path to Selection",
-		   -command => \&path_to_selection);
     $bpcm->command(-label => M"Koordinaten setzen",
 		   -command => \&set_coord_interactive);
     $bpcm->command(-label => M"Linienkoordinaten setzen",
 		   -command => \&set_line_coord_interactive);
+    $bpcm->command(-label => M"Koordinaten aus Selection",
+		   -command => \&coord_to_markers_dialog);
+    $bpcm->separator;
+    $bpcm->command(-label => M"Koordinatenliste zeigen",
+		   -command => \&show_coord_list);
+    $bpcm->command(-label => M"Path to Selection",
+		   -command => \&path_to_selection);
     $bpcm->separator;
     {
 	$bpcm->checkbutton(-label => M"Kreuzungen/Kurvenpunkte (pp) zeichnen (zukünftige Layer)",

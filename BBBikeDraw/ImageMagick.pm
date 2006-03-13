@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: ImageMagick.pm,v 1.13 2005/12/23 22:59:36 eserte Exp $
+# $Id: ImageMagick.pm,v 1.14 2006/03/12 13:56:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -36,7 +36,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
 my(%brush, %outline_brush);
 
@@ -855,23 +855,6 @@ sub flush {
     unlink $file;
     unlink "$file.0";
 }
-
-#  sub patch_string {
-#      if (defined $gd_version and $gd_version >= 1.16) {
-#  	shift;
-#      } else {
-#  	$_ = shift;
-#  	s/ä/ae/g;
-#  	s/ö/oe/g;
-#  	s/ü/ue/g;
-#  	s/Ä/Ae/g;
-#  	s/Ö/Oe/g;
-#  	s/Ü/Ue/g;
-#  	s/ß/ss/g;
-#  	s/é/e/g;
-#  	$_;
-#      }
-#  }
 
 #  sub empty_image_error {
 #      my $self = shift;
