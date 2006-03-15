@@ -1214,8 +1214,6 @@ Hallesches Tor: Beton	Q0 9593,10238 9592,10174
 Bebelplatz: Kopfsteinpflaster, OK	Q1 9801,12245 9875,12254
 Metzer Str.: Kopfsteinpflaster	Q2 10947,14114 11016,14081
 Kollwitzplatz: Kopfsteinpflaster	Q2 11284,14488 11329,14559
-#: unverified_by ADFC-Karte
-Rudower Str. (Niederschöneweide): mäßig geeignet	Q2 18702,5060 18641,5260 18680,5413 18695,5453
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -3032,6 +3030,14 @@ Bahnhofstr. (Lichterfelde): Asphalt	Q0 4767,2853 5058,2702 5324,2553 5367,2528
 #: note: laut ADFC-Karte mäßig geeignet
 Hartriegelstr.: schlechter Asphalt	Q2 18702,5060 18711,5036 19180,4899 19251,4888 19489,4928 19745,4972
 Allendeweg: Asphalt	Q0 23001,4382 22893,4532
+#: note: laut ADFC-Karte schlecht geeignet
+Kattunsteig: sandiger Waldweg	Q3 19760,4875 19765,4760 19710,4760 19715,4410 19731,4329 19771,4273 19765,4195
+#: note: "Note 3":
+#: note: laut ADFC-Karte gut geeignet
+Bärenlauchstr.: einige Schlaglöcher	Q1 19722,5179 19745,4972 19760,4875
+#: note: "Note 3":
+#: note: laut ADFC-Karte mäßig geeignet
+Rudower Str. (Niederschöneweide): einige Schlaglöcher	Q1 18702,5060 18641,5260 18680,5413 18695,5453
 #: by: ^^^
 #: by: Thomas Köhler:
 Paul-Schwenk-Str.: Beton	Q0 19800,14726 19765,14737 19613,14728 19579,14783 19588,14847 19646,14917 19856,14926 19872,14954 19902,14945
