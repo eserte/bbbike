@@ -26,8 +26,8 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1143842400,
-         'text' => 'L 302 Schöneicher Str. OL Schöneiche, Dorfaue und Rüdersdorfer Str. Kanal- und Straßenbau Vollsperrung 12.04.2005-31.03.2006 ',
+         'until' => 1149026400,
+         'text' => 'L 302 Schöneicher Str. OL Schöneiche, Dorfaue und Rüdersdorfer Str. Kanal- und Straßenbau Vollsperrung 12.04.2005-30.05.2006 ',
          'from' => 1113170400,
          'data' => 'userdel	q4 31221,8312 30700,8462
 ',
@@ -382,14 +382,7 @@ userdel	2 47081,83093 47137,83456
        },
        undef,
        undef,
-       {
-         'until' => 1146434400,
-         'text' => 'Stahnsdorf, Lindenstraße, Baustelle bis 30.04.2006, Der Verkehr wird an der Baustelle durch eine Lichtzeichenanlage halbseitig vorbeigeführt. ',
-         'from' => 1132097451,
-         'data' => 'userdel	1 -1668,-1709 -1752,-1823 -1921,-1931 -2049,-2165
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'INKO_77722',
@@ -586,6 +579,24 @@ userdel	2 22324,-18950 22338,-19081
 userdel	2 23356,-20982 22599,-19785
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002513',
+         'until' => 1159653599,
+         'text' => 'Wiesbadener Str. (Wilmersdorf) in Richtung Bundesallee zwischen Geisenheimer und Südwestkorso Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2006)',
+         'from' => 1142424201,
+         'data' => 'userdel	q4; 4391,7258 4618,7231 4743,7212
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1151704800,
+         'text' => 'K 7219 Zülichendorf-Dobbrikow OD Nettgendorf, zw. OE und Klinkenmühler Str. Kanal- und Straßenbau Vollsperrung; 14.03.2006-30.06.2006 ',
+         'from' => 1142204400,
+         'data' => 'userdel	q4 -12904,-28790 -12925,-29046
+userdel	q4 -12904,-28790 -12713,-28704
+',
+         'type' => 'handicap'
        }
      
 );
