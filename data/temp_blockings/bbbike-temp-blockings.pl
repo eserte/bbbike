@@ -3777,4 +3777,12 @@ userdel	q4 -12904,-28790 -12925,-29046
 userdel	q4 -12904,-28790 -12713,-28704
 EOF
      },
+     { from  => 1146002400, # 2006-04-26 00:00
+       until => 1147471200, # 2006-05-13 00:00
+       text  => 'B 087 Beeskow-Lübben OD Ranzig Straßenbauarbeiten Vollsperrung 27.04.2006-12.05.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 64853,-30986 65386,-29479
+EOF
+     },
     );

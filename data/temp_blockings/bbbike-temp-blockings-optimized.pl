@@ -1,17 +1,7 @@
 @temp_blocking = ();
-$#temp_blocking = 138;
+$#temp_blocking = 140;
 push @temp_blocking,
 (
-       {
-         'source_id' => 'IM_002432',
-         'until' => 1142463599,
-         'text' => 'Naumannstraße in beiden Richtungen zwischen Torgauer Str. und Tempelhofer Weg Straße vollständig gesperrt, für Radfahrer u.U. passierbar (bis Mitte März 2006)',
-         'from' => 1138133685,
-         'data' => 'userdel	q4 7717,7759 7716,8048
-',
-         'type' => 'handicap'
-       },
-       undef,
        {
          'source_id' => 'INKO_82',
          'until' => 1157061599,
@@ -282,15 +272,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1142463600,
-         'text' => 'B 198 Günterberg-Gramzow bei Schmiedeberg, Brücke über Mühlengraben Brückenersatzneubau Vollsperrung 15.09.2005-15.03.2006 ',
-         'from' => 1126648800,
-         'data' => 'userdel	2 46677,82770 47081,83093
-userdel	2 47081,83093 47137,83456
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -595,6 +577,14 @@ userdel	2 23356,-20982 22599,-19785
          'from' => 1142204400,
          'data' => 'userdel	q4 -12904,-28790 -12925,-29046
 userdel	q4 -12904,-28790 -12713,-28704
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1147471200,
+         'text' => 'B 087 Beeskow-Lübben OD Ranzig Straßenbauarbeiten Vollsperrung 27.04.2006-12.05.2006 ',
+         'from' => 1146002400,
+         'data' => 'userdel	q4 64853,-30986 65386,-29479
 ',
          'type' => 'handicap'
        }

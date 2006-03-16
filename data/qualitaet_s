@@ -24,7 +24,7 @@ Berliner Str. (Blankenfelde): m‰ﬂiges Kopfsteinpflaster	Q2 9490,23531 9528,23240
 B96a: Radweg Richtung N, OK	Q0 9228,23643 9146,23843 8984,24078 8891,24330 8710,24821 8659,24959 8493,25378
 Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15586,27150 15231,26587 14859,26029 14183,25020
 Hobrechtsfelder Chaussee (ab Kurve): schlechtes Kopfsteinpflaster, 13 km/h	Q3 15586,27150 15709,27984 15757,28054
-Wisbyer Str.: m‰ﬂiges Kopfsteinpflaster	Q2 11033,16464 11289,16423 11397,16405 11688,16365 11727,16358
+Wisbyer Str.: m‰ﬂiges Kopfsteinpflaster	Q2 11033,16464 11289,16423 11397,16405 11632,16373 11688,16365 11727,16358
 Weserstr.: Kopfsteinpflaster, schmale Radwege	Q1 11888,9203 11993,9211 12074,9217 12148,9209 12180,9193 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Stuttgarter Str.: m‰ﬂiger Asphalt	Q1 13663,8011 13510,8138 13331,8283
 Stuttgarter Str.: Kopfsteinpflaster	Q2 13331,8283 13166,8423
@@ -1311,8 +1311,8 @@ Nauheimer Str.: Asphalt	Q0 3964,7742 4061,7742 4164,7742 4341,7745
 Homburger Str.: Asphalt	Q0 3964,7515 4061,7494 4162,7494 4330,7497 4403,7498 4628,7470 4785,7438
 Claudiusstr.: Asphalt	Q0 6396,12607 6400,12662 6354,12870
 Walzelstr.: Beton	Q1 -5528,13393 -5228,13493
-Hortensienstr.: schlechtes Kopfsteinpflaster	Q3 3590,4490 3650,4468 3826,4579 4156,4784
-Enzianstr.: m‰ﬂiges Kopfsteinpflaster	Q2 3926,4438 3898,4477 3859,4531 3826,4579 3794,4625
+Hortensienstr.: schlechtes Kopfsteinpflaster	Q3 3584,4504 3650,4468 3826,4579 4156,4784
+Enzianstr.: m‰ﬂiges Kopfsteinpflaster	Q2 3926,4438 3898,4477 3859,4531 3826,4579 3785,4637
 Wilhelmshavener Str.: Kopfsteinpflaster	Q2 6097,14184 6111,13979 6115,13684 6118,13499 6113,13313
 Vionvillestr.: Asphalt	Q0 5464,4373 5546,4534
 Stadtpark Steglitz: Parkweg	Q1 5838,4454 5931,4659 6018,4850
@@ -1738,7 +1738,7 @@ Gritznerstr.: asphaltiert	Q0 4507,6320 4472,6242
 Gritznerstr.: Kopfsteinpflaster	Q2 4472,6242 4435,6154
 Gritznerstr.: asphaltiert	Q0 4435,6154 4385,6045 4306,5865
 Abbestr.: Kopfsteinpflaster	Q2 4683,12072 4757,12219 4819,12338 4829,12357
-Kuglerstr.: schlechtes Kopfsteinpflaster	Q3 11618,16183 11341,16273 11253,16296 11018,16358
+Kuglerstr.: schlechtes Kopfsteinpflaster	Q3 11618,16183 11543,16207 11341,16273 11253,16296 11018,16358
 Justus-von-Liebig-Str.: Asphalt	Q0 19495,2535 19670,2701 19878,2899
 Braillestr.: Asphalt	Q0 4512,5199 4460,5274 4433,5315
 Wandlitzstr.: m‰ﬂiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18703,8405 18535,8518 18320,8662 18273,8758 18243,8818 18010,8954
@@ -2252,6 +2252,16 @@ Kattunsteig: sandiger Waldweg	Q3 19760,4875 19765,4760 19710,4760 19715,4410 197
 B‰renlauchstr.: einige Schlaglˆcher	Q1 19722,5179 19745,4972 19760,4875
 Rudower Str. (Niederschˆneweide): einige Schlaglˆcher	Q1 18702,5060 18641,5260 18680,5413 18695,5453
 Paul-Schwenk-Str.: Beton	Q0 19800,14726 19765,14737 19613,14728 19579,14783 19588,14847 19646,14917 19856,14926 19872,14954 19902,14945
+Kattegatstr.: Asphalt	Q0 9475,17557 9331,17658 9197,17762
+B¸rgipfad: schlechtes Kopfsteinpflaster	Q3 5484,439 5495,390 5591,240
+Gotlandstr.: m‰ﬂiges Kopfsteinpflaster	Q2 10765,16486 10773,16628 10783,16760
+Treseburger Ufer: Kopfsteinpflaster	Q2 12052,5710 12301,5783
+Treseburger Ufer: Kopfsteinpflaster	Q2 12301,5783 12699,5909
+Glaﬂbrennerstr.: Kopfsteinpflaster	Q2 11543,16207 11632,16373
+Grabertstr.: Asphalt	Q0 7110,4747 7087,4887 6945,5060
+Tulpenstr.: Kopfsteinpflaster	Q2 3584,4504 3785,4637 3991,4773 4210,4907
+Kanzowstr.: schlechter Asphalt	Q2 11698,15627 11914,15490
+Am Priesterberg: m‰ﬂiges Kopfsteinpflaster	Q2 830,25278 917,25324 1056,25332
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934
