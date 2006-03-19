@@ -301,7 +301,7 @@ for my $browser (@browsers) {
     ######################################################################
     # A street in Potsdam but not in "landstrassen"
 
- XXX: {
+    {
 
 	$get_agent->();
 
@@ -356,7 +356,7 @@ for my $browser (@browsers) {
     ######################################################################
     # test for a street in Berlin.coords.data but not in strassen
 
-    {
+ XXX: {
 
 	$get_agent->();
 
@@ -380,7 +380,7 @@ for my $browser (@browsers) {
 	}
 	like(get_ct($agent), qr{Lehrter Bahnhof.*?die nächste Kreuzung}is,  "S-Bhf.");
 	like(get_ct($agent), qr{Invalidenstr.}i,  "S-Bhf., next crossing (Invalidenstr)");
-	like(get_ct($agent), qr{Lehrter Str.}i,  "S-Bhf., next crossing (Lehrterstr)");
+	like(get_ct($agent), qr{Minna-Cauer-Str.}i,  "S-Bhf., next crossing (Minna-Cauer-Str)");
 
     }
 

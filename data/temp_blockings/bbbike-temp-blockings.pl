@@ -2202,11 +2202,11 @@ userdel auto	3 7039,12314 7383,12095 7460,12054 7663,11946
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => undef, # XXX zuletzt gesehen: 2006-03-19
        text  => 'Rosa-Luxemburg-Str. Richtung Schönhauser Tor wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 10846,13362 10790,13565 10777,13614 10746,13673
+userdel	1 10755,13152 10846,13362 10790,13565 10777,13614 10746,13673
 EOF
      },
      { from  => 1114293600, # 2005-04-24 00:00
@@ -3532,7 +3532,7 @@ EOF
        text  => 'Bellevuestraße, Presseball, Straße in beide Richtungen gesperrt, Dauer: 13.01.2006 19:00 Uhr bis 15.01.2006 06:00 Uhr ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 8462,11538 8172,11679
+userdel	q4 8462,11538 8209,11671 8202,11691
 EOF
      },
      { from  => 1137548634, # 2006-01-18 02:43
@@ -3713,9 +3713,9 @@ EOF
 userdel	q4 -4355,-35264 -4204,-35072
 EOF
      },
-     { from  => 1142118000, # 2006-03-12 00:00
-       until => 1143068400, # 2006-03-23 00:00
-       text  => 'L 070 Sperenberg-Trebbin zw. Abzw.Chrisinend. u. Abzw.Kl.Schulzend.Ber.Brücke B101n Brückenbau Vollsperrung 13.03.2006-22.03.2006 ',
+     { from  => 1142809200, # 2006-03-20 00:00
+       until => 1143842400, # 2006-04-01 00:00
+       text  => 'L 070 Sperenberg-Trebbin zw. Abzw.Chrisinend. u. Abzw.Kl.Schulzend.Ber.Brücke B101n Brückenbau Vollsperrung 21.03.2006-31.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 1740,-23380 1079,-23181
@@ -3749,7 +3749,7 @@ userdel	1 5364,7330 5653,7333
 EOF
      },
      { from  => 1142118000, # 2006-03-12 00:00
-       until => 1157061600, # 2006-09-01 00:00
+       until => 1142632779, # 1157061600 2006-09-01 00:00
        text  => 'L 745 Motzen-B246 Gallun zw. OA Motzen und OE Gallun Straßenbauarbeiten Vollsperrung 13.03.2006-31.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -3783,6 +3783,35 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 64853,-30986 65386,-29479
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Bötzowstr. (Prenzlauer Berg) in beiden Richtungen, zwischen Danziger Str. und Hufelandstr. Baustelle, Straße vollständig gesperrt',
+       type  => 'handicap',
+       source_id => 'IM_002530',
+       data  => <<EOF,
+userdel	q4 12438,14054 12499,14136
+userdel	q4 12438,14054 12380,13975
+userdel	q4 12578,14237 12630,14306
+userdel	q4 12578,14237 12499,14136
+EOF
+     },
+     { from  => 1142632575, # 2006-03-17 22:56
+       until => 1142895600, # 2006-03-21 00:00
+       text  => 'Charlottenstr. (Mitte) in Richtung Unter den Linden zwischen Mittelstr. und Unter den Linden Baustelle, Straße vollständig gesperrt (bis 20.03.2006)',
+       type  => 'handicap',
+       source_id => 'IM_002531',
+       data  => <<EOF,
+userdel	q4; 9465,12460 9476,12359
+EOF
+     },
+     { from  => 1143410400, # 2006-03-27 00:00
+       until => 1143842400, # 2006-04-01 00:00
+       text  => 'B 122 Alt Ruppin-Dierberg Bahnübergang bei Dierberg Gleisbauarbeiten Vollsperrrung 28.03.2006-31.03.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -28116,60092 -27347,60616
 EOF
      },
     );

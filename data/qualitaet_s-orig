@@ -86,7 +86,7 @@ Zobtener Str.: sandig	Q2 16734,9990 16811,9937
 Wielandstr.: schlechtes Kopfsteinpflaster	Q3 23171,8835 23003,8582
 Fischerstr.: Kopfsteinpflaster	Q2 16032,10842 16187,10587
 Wallensteinstr./Neuer Feldweg: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2 17378,9715 17360,9629 17456,9594 17549,9529 18037,9195 18120,9100 18124,9056
-Halker Zeile: schlechtes Kopfsteinpflaster	Q3 9940,559 10161,3 10273,-301 10467,-822
+Halker Zeile: schlechtes Kopfsteinpflaster	Q3 9940,559 10063,251 10161,3 10273,-301 10467,-822
 (Am Bahndamm): schlechtes Pflaster, teilweise grober Schotter	Q2 18698,9996 19675,10410 19711,10426
 Alemannenstr.: gutes Kopfsteinpflaster	Q1 -3360,2917 -3452,2868 -3509,2817 -3686,2579
 Alemannenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 -3686,2579 -3692,2549 -3709,2517 -3725,2475
@@ -1121,8 +1121,8 @@ Kietz: m‰ﬂiges Kopfsteinpflaster	Q2 22292,4279 22364,4429 22396,4464
 Gr¸nstr.: asphaltiert	Q0 22111,4562 22162,4546 22312,4593
 (Weg im Park Adlershof): Gehwegplatten	Q0 18882,3750 18442,3740 18293,3890 18126,4071
 (Weg im Park Adlershof): Gehwegplatten	Q0 18293,3890 18031,3737 17976,3735
-Bergiusstr.: Betonstraﬂe	Q0 14153,6795 14193,6718 14154,6629 14193,6556 14396,6298 14398,6184
-Nobelstr.: Betonstraﬂe	Q0 14133,6187 14398,6184 15146,6154
+Bergiusstr.: Betonstraﬂe	Q0 14153,6795 14193,6718 14154,6629 14193,6556 14366,6337 14396,6298 14398,6184
+Nobelstr.: Betonstraﬂe	Q0 14133,6187 14398,6184 14784,6169 15146,6154
 (Karlsgartenstr. - Hasenheide): asphaltiert	Q0 11627,8485 11253,8565
 (Am Rixdorfer Teich): guter Parkweg	Q1 11253,8565 11104,8559 11020,8596 10957,8573 10911,8457
 Schmiedehof: Kopfsteinpflaster	Q2 8988,8958 8988,8990 8990,8915
@@ -1282,6 +1282,7 @@ Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068
 #: by: Paul (no email):
 Eulerstr.: Asphalt	Q0 9268,16228 9494,16455
 #: by: anonymous vvv
+Boschweg: Beton	Q0 14784,6169 14788,6261 14760,6319 14564,6496
 Maselakeweg: Verbundsteinpflaster	Q1 -2441,16996 -2391,16607 -2340,16590
 Sellinstr.: m‰ﬂiger Asphalt	Q1 11215,17927 11238,17785
 Riedemannweg: Asphalt	Q0 4248,15647 4408,15297
@@ -3062,6 +3063,10 @@ Tulpenstr.: Kopfsteinpflaster	Q2 3584,4504 3785,4637 3991,4773 4210,4907
 Kanzowstr.: schlechter Asphalt	Q2 11698,15627 11914,15490
 #: by: ulfert030:
 Am Priesterberg: m‰ﬂiges Kopfsteinpflaster	Q2 830,25278 917,25324 1056,25332
+#: by: Martin Lohner:
+Culemeyerstr.: asphaltiert	Q0 9847,1274 9808,1264 9734,1235
+#: by: Jan Dinter:
+Raabestr.: Kopfsteinpflaster	Q2 9762,155 9789,150 10063,251 10602,438
 #: by: Andreas M¸hlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
@@ -3454,7 +3459,7 @@ Sesenheimer Str.: Asphalt	Q0 3844,11649 3866,11473
 Sesenheimer Str.: Asphalt	Q0 3866,11473 3874,11380
 Sesenheimer Str.: Kopfsteinpflaster	Q2 3874,11380 3877,11337
 Herderstr. (Charlottenburg): Asphalt	Q0 4451,11558 4435,11343
-Clara-Jaschke-Str.: Asphalt	Q0 7764,13236 7779,13012
+Clara-Jaschke-Str.: Asphalt	Q0 7764,13236 7768,13175 7779,13012
 Berta-Benz-Str.: Asphalt	Q0 7779,13012 7866,13009
 Katharina-Paulus-Str.: Asphalt	Q0 7866,13009 7863,12927
 Flemingstr.: Verbundsteine	Q1 7315,12723 7331,12713
