@@ -583,15 +583,7 @@ userdel	q4 12578,14237 12499,14136
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_002531',
-         'until' => 1142895600,
-         'text' => 'Charlottenstr. (Mitte) in Richtung Unter den Linden zwischen Mittelstr. und Unter den Linden Baustelle, Straße vollständig gesperrt (bis 20.03.2006)',
-         'from' => 1142632575,
-         'data' => 'userdel	q4; 9465,12460 9476,12359
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1143842400,
          'text' => 'B 122 Alt Ruppin-Dierberg Bahnübergang bei Dierberg Gleisbauarbeiten Vollsperrrung 28.03.2006-31.03.2006 ',
