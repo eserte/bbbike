@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.228 2006/03/20 22:40:40 eserte Exp $
+# $Id: bbbike,v 3.228 2006/03/20 22:40:40 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -17998,7 +17998,16 @@ warn "do action";
 
 sub get_strassen_file {
     my $file = shift;
-    $file . ($edit_mode_flag ? "-orig" : "");
+    if ($file =~ /-orig$/) {
+	# XXX The need to check for this condition seems to be a bug.
+	# In BBBikeLazy.pm, there are lines like
+	#     $p_file{$abk} = $file;
+	# which set the $p_file{...} filename to the -orig version
+	# in edit mode, and this every time!
+	$file;
+    } else {
+	$file . ($edit_mode_flag ? "-orig" : "");
+    }
 }
 
 sub get_strassen_obj {

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.76 2006/03/11 13:47:36 eserte Exp $
+# $Id: Makefile,v 1.78 2006/03/24 07:47:37 eserte Exp $
 #
 
 # Targets:
@@ -80,7 +80,7 @@ DEPLOY_LOCAL_DATA_TARGETS=	prepare-bbbike-data \
 				prepare-bbbike-dist \
 				test-local
 
-SSH_PROG_AND_ARGS?=	ssh -2
+SSH_PROG_AND_ARGS?=	ssh -2 -p 5022
 RSYNC_PROG?=	rsync
 RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --exclude-from .rsync.exclude
 RSYNC_ARGS_MS=	${RSYNC_ARGS:S/.rsync.exclude/\/tmp\/mapserver.rsync.exclude/}
@@ -104,6 +104,9 @@ MAPSERVER_EXE?=	$(HOME)/www/cgi/mapserv.cgi
 TARGET=radzeit-old
 .endif
 .endif
+
+# This is used in the tests for link compatiblity reasons
+BBBIKE_OLD_RADZEIT_HOST=www.radzeit.de
 
 .ifndef TARGET
 .for t in ${DEPLOY_TARGETS}
@@ -203,7 +206,6 @@ RSYNC_RULES=		check-rsync-ok \
 rsync:	$(RSYNC_RULES)	
 
 check-rsync-ok:
-	#perl -nle '/^(.*)www.radzeit.de/ && $$1 !~ /\#/ && print "Using new radzeit server"' /etc/hosts
 	[ ! -e ${CURDIR}/.not_rsyncable ] || ( echo "Not rsyncable!"; false )
 	[ ! -e ${CURDIR}/.rsync_block ] || ( echo "Not rsyncable because:"; cat ${CURDIR}/.rsync_block; false )
 
@@ -478,7 +480,7 @@ prepare-routopedia-dist:
 	cd ${BBBIKE_ROOT_DIR}/routopedia && ${MAKE} distcheck
 	(umask 022; cd ${BBBIKE_ROOT_DIR}/routopedia && perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread(),'${CURDIR}/routopedia', 'best');")
 
-test:	test-on-remote test-from-local
+test:	test-on-remote test-from-local test-from-local-compat
 
 test-on-remote:
 	-@date >> .last/start-test-on-remote
@@ -506,6 +508,17 @@ test-from-local:
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS_FROM_LOCAL}
 	-@date >> .last/test-on-from-local
+
+test-from-local-compat:
+	-@date >> .last/start-test-from-local-compat
+	cd ${.CURDIR}/BBBike/t && \
+	BBBIKE_TEST_CGIDIR=http://${BBBIKE_OLD_RADZEIT_HOST}/cgi-bin \
+	BBBIKE_TEST_CGIURL=http://${BBBIKE_OLD_RADZEIT_HOST}/cgi-bin/${BBBIKECGI} \
+	BBBIKE_TEST_WAPURL=http://${BBBIKE_OLD_RADZEIT_HOST}/cgi-bin/wapbbbike.cgi \
+	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_OLD_RADZEIT_HOST}/BBBike \
+	    perl -MTest::Harness -e "runtests(@ARGV)" \
+		${TESTS_FROM_LOCAL}
+	-@date >> .last/test-on-from-local-compat
 
 test-on-remote-and-send-mail:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
@@ -572,19 +585,19 @@ remote-cleanup:
 
 # For quick deployment only:
 fast-rsync-googlemaps:
-	rsync -e "ssh -2" -av $(BBBIKE_ROOT_DIR)/cgi/bbbikegooglemap.cgi root@www.radzeit.de:/var/www/domains/radzeit.de/www/cgi-bin/
+	rsync -e "${SSH_PROG_AND_ARGS}" -av $(BBBIKE_ROOT_DIR)/cgi/bbbikegooglemap.cgi ${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_HOST}:/var/www/domains/radzeit.de/www/cgi-bin/
 
-######################################################################
-# Preliminary ixls.de rules
-test-on-remote-ixls-de:
-	make SSH_PROG_AND_ARGS="ssh -2 -p 5022" BBBIKE_RADZEIT_HOST=radzeit.ixls.de test-on-remote
-
-test-from-local-ixls-de:
-	make BBBIKE_RADZEIT_HOST=radzeit.ixls.de test-from-local TARGET=radzeit
-
-deploy-ixls-de:
-	@echo "*** Remove -n to make this rule operable ***"
-	make -n SSH_PROG_AND_ARGS="ssh -2 -p 5022" BBBIKE_RADZEIT_HOST=radzeit.ixls.de deploy
-
-rsync-ixls-de:
-	make SSH_PROG_AND_ARGS="ssh -2 -p 5022" BBBIKE_RADZEIT_HOST=radzeit.ixls.de rsync
+#######################################################################
+## Preliminary ixls.de rules, not needed anymore?
+#test-on-remote-ixls-de:
+#	make SSH_PROG_AND_ARGS="ssh -2 -p 5022" BBBIKE_RADZEIT_HOST=radzeit.ixls.de test-on-remote
+#
+#test-from-local-ixls-de:
+#	make BBBIKE_RADZEIT_HOST=radzeit.ixls.de test-from-local TARGET=radzeit
+#
+#deploy-ixls-de:
+#	@echo "*** Remove -n to make this rule operable ***"
+#	make -n SSH_PROG_AND_ARGS="ssh -2 -p 5022" BBBIKE_RADZEIT_HOST=radzeit.ixls.de deploy
+#
+#rsync-ixls-de:
+#	make SSH_PROG_AND_ARGS="ssh -2 -p 5022" BBBIKE_RADZEIT_HOST=radzeit.ixls.de rsync

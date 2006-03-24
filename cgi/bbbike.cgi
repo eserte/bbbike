@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.5 2006/01/21 02:17:32 eserte Exp $
+# $Id: bbbike.cgi,v 8.7 2006/03/24 07:37:46 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -68,6 +68,7 @@ use Strassen::Dataset;
 use BBBikeCalc;
 use BBBikeVar;
 use BBBikeUtil qw(is_in_path min max);
+use BBBikeCGIUtil;
 use File::Basename qw(dirname);
 use CGI;
 use CGI::Carp; # Nur zum Debuggen verwenden --- manche Web-Server machen bei den kleinsten Kleinigkeiten Probleme damit: qw(fatalsToBrowser);
@@ -693,7 +694,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.7 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -761,6 +762,9 @@ use vars qw(%handicap_speed);
 CGI->import('-no_xhtml');
 
 $q = new CGI;
+# XXX Hack for proxy_html problems on bbbike.radzeit.de
+eval{BBBikeCGIUtil::encode_possible_utf8_params($q);};warn $@ if $@;
+
 undef $g_str; # XXX because it may already contain landstrassen etc.
 undef $net; # dito
 
@@ -774,7 +778,7 @@ $cookiename = "bbbike";
 $max_plz_streets = 25;
 
 # die originale URL (für den Kaltstart)
-$bbbike_url = $q->url;
+$bbbike_url = BBBikeCGIUtil::my_url($q);
 # Root-Verzeichnis und Bilder-Verzeichnis von bbbike
 ($bbbike_root = $bbbike_url) =~ s|[^/]*/[^/]*$|| if !defined $bbbike_root;
 $bbbike_root =~ s|/$||; # letzten Slash abschneiden
@@ -786,13 +790,13 @@ if (!defined $bbbike_html) {
     $bbbike_html   = "$bbbike_root/" . ($use_cgi_bin_layout ? "BBBike/" : "") .
 	"html";
 }
-$is_beta = $q->url =~ m{bbbike\d\.cgi}; # bbbike2.cgi ...
-$bbbike2_url = $q->url;
+$is_beta = $bbbike_url =~ m{bbbike\d\.cgi}; # bbbike2.cgi ...
+$bbbike2_url = $bbbike_url;
 if (!$is_beta) {
     $bbbike2_url =~ s{bbbike\.cgi}{bbbike2.cgi};
 }
 
-$bbbike_script = $q->url;
+$bbbike_script = $bbbike_url;
 
 if (!$mapdir_url && !$mapdir_fs) {
     $mapdir_url = "$bbbike_script?tmp=";
@@ -1975,7 +1979,7 @@ function " . $type . "char_init() {}
 	print window_open("$bbbike_script?all=1", "BBBikeAll",
 			  "dependent,height=500,resizable," .
 			  "screenX=500,screenY=30,scrollbars,width=250")
-	    . M("Liste aller bekannten Stra&szlig;en") . "</a> (ca. 75 kB)";
+	    . M("Liste aller bekannten Stra&szlig;en") . "</a> (ca. 100 kB)";
 	print "<hr>";
     }
 
@@ -2446,7 +2450,7 @@ sub get_cookie {
     $q->cookie(-name => $cookiename,
 # XXX cookie seems only to be set if doing some action from the search site, not a page before. Check it!
 # XXX dirname okay with backward compatibility?
-	       -path => dirname($q->url(-absolute => 1)),
+	       -path => dirname(BBBikeCGIUtil::my_url($q, -absolute => 1)),
 	      );
 }
 
@@ -2457,13 +2461,13 @@ sub set_cookie {
      (-name => "$cookiename-dir",
       -value => $href,
       -expires => '+1y',
-      -path => dirname($q->url(-absolute => 1)),
+      -path => dirname(BBBikeCGIUtil::my_url($q, -absolute => 1)),
      ),
      $q->cookie
      (-name => $cookiename,
       -value => $href,
       -expires => '+1y',
-      -path => $q->url(-absolute => 1),
+      -path => BBBikeCGIUtil::my_url($q, -absolute => 1),
      ),
     ];
 }
@@ -3537,7 +3541,7 @@ sub search_coord {
 		    $hidden .= $q->hidden(-name => $key,
 					  -default => [$q->param($key)]);
 		}
-		print qq{<center><form name="Ausweichroute" action="} . $q->self_url . qq{" } . (@affecting_blockings > 1 ? qq{onSubmit="return test_temp_blockings_set()"} : "") . qq{>};
+		print qq{<center><form name="Ausweichroute" action="} . BBBikeCGIUtil::my_self_url($q) . qq{" } . (@affecting_blockings > 1 ? qq{onSubmit="return test_temp_blockings_set()"} : "") . qq{>};
 		print $hidden;
 		print M("Ereignisse, die die Route betreffen k&ouml;nnen") . ":<br>";
 		for my $tb (@affecting_blockings) {
@@ -4091,7 +4095,7 @@ EOF
 
 	#print "<hr>";
 	print qq{<div class="box">};
-	print "<form name=settings action=\"" . $q->self_url . "\">\n";
+	print "<form name=settings action=\"" . BBBikeCGIUtil::my_self_url($q) . "\">\n";
 	foreach my $key ($q->param) {
 	    next if $key =~ /^(pref_.*)$/;
 	    print $q->hidden(-name=>$key,
@@ -4435,7 +4439,7 @@ sub draw_route {
 	my $q2 = CGI->new({coords => $q->param("coords"),
 			   wpt    => \@wpt});
 	# XXX do not hardcode
-	print $q->redirect("http://www.radzeit.de/cgi-bin/bbbikegooglemap.cgi?" . $q2->query_string);
+	print $q->redirect("http://bbbike.radzeit.de/cgi-bin/bbbikegooglemap.cgi?" . $q2->query_string);
 	return;
     }
 
@@ -5134,6 +5138,11 @@ sub etag {
 # Write a HTTP header (always with Etag and Vary) and maybe enabled compression
 sub http_header {
     my(@header_args) = @_;
+## utf-8 experiments
+#     my %header_args = @header_args;
+#     if (!$header_args{"-type"}) {
+# 	unshift @header_args, "-type" => "text/html;charset=utf-8";
+#     }
     push @header_args, etag(), (-Vary => "User-Agent");
     if ($q->param("as_attachment")) {
 	push @header_args, -Content_Disposition => "attachment;file=" . $q->param("as_attachment");
@@ -5997,7 +6006,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/01/21 02:17:32 $';
+    my $cgi_date = '$Date: 2006/03/24 07:37:46 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

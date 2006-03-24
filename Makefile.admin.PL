@@ -112,7 +112,7 @@ BBBIKE_SF_DEST=bbbike.sourceforge.net:/home/groups/b/bb/bbbike
 BBBIKE_SF_DIR=$(HOME)/www/bbbike.sourceforge.net
 
 BBBIKE_RADZEIT_USER=		root
-BBBIKE_RADZEIT_HOST=		www.radzeit.de
+BBBIKE_RADZEIT_HOST=		bbbike.radzeit.de
 BBBIKE_RADZEIT_OLD_APACHE_DIR=	/usr/local/apache/radzeit
 BBBIKE_RADZEIT_APACHE_DIR=	/var/www/domains/radzeit.de/www/
 BBBIKE_RADZEIT_CGI_DIR=		$(BBBIKE_RADZEIT_APACHE_DIR)/cgi-bin

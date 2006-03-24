@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.31 2006/03/13 06:50:32 eserte Exp $
+# $Id: cgi.t,v 1.32 2006/03/24 20:54:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -207,7 +207,7 @@ for my $cgiurl (@urls) {
 	ok($content =~ qr/Start.*startc.*startname.*Heinrichplatz/,
 	   "Start is Heinrichplatz");
 	ok($content =~ qr/Ziel.*zielc.*zielname.*Innsbrucker.*Platz/,
-	   "Goal is Inssbrucker Platz");
+	   "Goal is Innsbrucker Platz");
 
 	# search_coord in and to Potsdam
 	$req = new HTTP::Request

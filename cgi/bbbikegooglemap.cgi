@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.26 2006/01/18 23:42:43 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.28 2006/03/24 07:43:24 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -155,7 +155,8 @@ sub get_html {
     <title>BBBike data presented with Googlemap</title>
     <link rel="stylesheet" type="text/css" href="/BBBike/html/bbbike.css"><!-- XXX only for radzeit -->
     <link type="image/gif" rel="shortcut icon" href="/BBBike/images/srtbike16.gif"><!-- XXX only for radzeit -->
-    <script src="http://maps.google.com/maps?file=api&v=1&key=ABQIAAAAidl4U46XIm-bi0ECbPGe5hR1DE4tk8nUxq5ddnsWMNnWMRHPuxTzJuNOAmRUyOC19LbqHh-nYAhakg" type="text/javascript"></script>
+    <!-- This is valid on www.radzeit.de: script src="http://maps.google.com/maps?file=api&v=1&key=ABQIAAAAidl4U46XIm-bi0ECbPGe5hR1DE4tk8nUxq5ddnsWMNnWMRHPuxTzJuNOAmRUyOC19LbqHh-nYAhakg" type="text/javascript"></script -->
+    <script src="http://maps.google.com/maps?file=api&v=1&key=ABQIAAAAidl4U46XIm-bi0ECbPGe5hS6wT240HZyk82lqsABWbmUCmE0QhQkWx8v-NluR6PNjW3O3dGEjh16GA" type="text/javascript"></script>
     <script src="/BBBike/html/sprintf.js" type="text/javascript"></script>
   </head>
   <body>
@@ -276,7 +277,7 @@ sub get_html {
 
     function searchRoute(startPoint, goalPoint) {
 	var requestLine =
-	    "http://www.radzeit.de/cgi-bin/bbbike.cgi?startpolar=" + startPoint.x + "x" + startPoint.y + "&zielpolar=" + goalPoint.x + "x" + goalPoint.y + "&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope=;output_as=xml;referer=bbbikegooglemap";
+	    "http://bbbike.radzeit.de/cgi-bin/bbbike.cgi?startpolar=" + startPoint.x + "x" + startPoint.y + "&zielpolar=" + goalPoint.x + "x" + goalPoint.y + "&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope=;output_as=xml;referer=bbbikegooglemap";
 	var routeRequest = GXmlHttp.create();
 	routeRequest.open("GET", requestLine, true);
 	routeRequest.onreadystatechange = function() {
@@ -450,7 +451,7 @@ EOF
   <td colspan="3">
       <p class="ftr">
        <a id="bbbikemail" href="mailto:slaven\@rezic.de">E-Mail</a> |
-       <a id="bbbikeurl" href="http://radzeit.herceg.de/cgi-bin/bbbike.cgi">BBBike</a> |
+       <a id="bbbikeurl" href="http://bbbike.radzeit.de/cgi-bin/bbbike.cgi">BBBike</a> |
        <a href="/cgi-bin/mapserver_address.cgi?usemap=googlemaps">Adresssuche</a>
        | <a href="http://maps.google.com/maps?ll=52.515385,13.381004&amp;spn=0.146083,0.229288&amp;t=k">Google Maps</a>
       </p>
@@ -511,4 +512,4 @@ bbbikegooglemap.cgi - show BBBike data through Google maps
 
 =cut
 
-# rsync -e "ssh -2" -a ~/src/bbbike/cgi/bbbikegooglemap.cgi root@www.radzeit.de:/var/www/domains/radzeit.de/www/cgi-bin/bbbikegooglemap2.cgi
+# rsync -e "ssh -2 -p 5022" -a ~/src/bbbike/cgi/bbbikegooglemap.cgi root@www.radzeit.de:/var/www/domains/radzeit.de/www/cgi-bin/bbbikegooglemap2.cgi

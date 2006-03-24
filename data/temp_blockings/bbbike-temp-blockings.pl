@@ -3038,7 +3038,7 @@ userdel	2 1740,-23380 1079,-23181
 EOF
      },
      { from  => 1128967200, # 2005-10-10 20:00
-       until => 1143756000, # 2006-03-31 00:00
+       until => 1143227474, # 1143756000 2006-03-31 00:00
        text  => 'Rosenthaler Straße zwischen Hackescher Markt und Neue Schönhauser Straße Baustelle, als Einbahnstraße eingerichtet in Richtung Rosenthaler Platz, Dauer: 11.10.2005, 20.00 Uhr bis 30.03.2006 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -3768,9 +3768,9 @@ EOF
 userdel	q4; 4391,7258 4618,7231 4743,7212
 EOF
      },
-     { from  => 1142204400, # 2006-03-13 00:00
+     { from  => 1143068400, # 2006-03-23 00:00
        until => 1151704800, # 2006-07-01 00:00
-       text  => 'K 7219 Zülichendorf-Dobbrikow OD Nettgendorf, zw. OE und Klinkenmühler Str. Kanal- und Straßenbau Vollsperrung; 14.03.2006-30.06.2006 ',
+       text  => 'K 7219 Zülichendorf-Dobbrikow OD Nettgendorf, zw. OE und Klinkenmühler Str. Kanal- und Straßenbau Vollsperrung 24.03.2006-30.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -12904,-28790 -12925,-29046
@@ -3812,6 +3812,70 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -28116,60092 -27347,60616
+EOF
+     },
+     { from  => 1146434400, # 2006-05-01 00:00
+       until => 1146607200, # 2006-05-03 00:00
+       text  => 'L 074 Chausseestraße OL Wünsdorf, Bahnbrücke Brückenbauarbeiten Vollsperrung 02.05.2006-02.05.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 15682,-26971 15229,-27157
+userdel	2 15682,-26971 15960,-26906
+EOF
+     },
+     { from  => 1143583200, # 2006-03-29 00:00
+       until => 1143756000, # 2006-03-31 00:00
+       text  => 'L 074 Chausseestraße OL Wünsdorf, Bahnbrücke Brückenbauarbeiten Vollsperrung 30.03.2006-30.03.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 15682,-26971 15229,-27157
+userdel	2 15682,-26971 15960,-26906
+EOF
+     },
+     { from  => 1143154477, # 2006-03-23 23:54
+       until => 1143227432, # 1155679200 2006-08-16 00:00
+       text  => 'Fürstenwalder Damm in beiden Richtungen zwischen Dahlwitzer Landstraße und Müggelseedamm (West) beidseitig Baustelle, gesperrt bis 15.08.2006',
+       type  => 'handicap',
+       source_id => 'LMS_1142967727545',
+       data  => <<EOF,
+userdel	q4 25039,5766 23950,5342
+userdel	q4 25039,5766 25121,5799
+userdel	q4 25579,5980 25121,5799
+EOF
+     },
+     { from  => 1146520800, # 2006-05-02 00:00
+       until => 1146693600, # 2006-05-04 00:00
+       text  => 'B 096 OD Neuhof BÜ Neuhof Gleisbau Vollsperrung 03.05.2006-03.05.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 16407,-29400 16379,-29446
+userdel	2 16336,-29511 16379,-29446
+EOF
+     },
+     { from  => 1146693600, # 2006-05-04 00:00
+       until => 1147471200, # 2006-05-13 00:00
+       text  => 'B 096 OD Neuhof BÜ Neuhof Gleisbau Vollsperrung 05.05.2006-12.05.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 16407,-29400 16379,-29446
+userdel	2 16336,-29511 16379,-29446
+EOF
+     },
+     { from  => 1144965600, # 2006-04-14 00:00
+       until => 1145138400, # 2006-04-16 00:00
+       text  => 'B 096 OD Neuhof BÜ Neuhof Gleisbau Vollsperrung 15.04.2006-15.04.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 16407,-29400 16379,-29446
+userdel	2 16336,-29511 16379,-29446
+EOF
+     },
+     { from  => 1142895600, # 2006-03-21 00:00
+       until => 1149112800, # 2006-06-01 00:00
+       text  => 'B 198 OD Kerkow Greiffenbg.Str. Kerkow Neubau Straße Vollsperrung 22.03.2006-31.05.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 48929,70947 49007,71214
 EOF
      },
     );

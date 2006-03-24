@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.19 2005/07/17 21:31:20 eserte Exp $
+# $Id: wapbbbike.cgi,v 2.20 2006/03/24 06:47:28 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003,2004 Slaven Rezic. All rights reserved.
@@ -467,7 +467,7 @@ sub wap_surrounding_image_page {
 	    local $" = ",";
 	    my $hop = $path->[$i];
 	    if ($center eq "@{$hop}") {
-		for (0 .. 3) { # no PREVDIR and NEXTDIR
+		for (FIRST, PREV, NEXT, LAST) {
 		    push @q, CGI->new($q2->query_string);
 		}
 		if ($i == 0) {
@@ -503,6 +503,8 @@ EOF
   </p>
   <p>
 EOF
+    # As we use here -absolute => 1 in the url() call, we don't need to
+    # worry about hostnames.
     if ($q[FIRST]) {
 	print "<a href=\"" . $q[FIRST]->url(-absolute => 1,-path_info=>1,-query=>1) . "\">|&lt;</a> ";
     }

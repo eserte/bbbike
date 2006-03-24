@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.25 2006/02/21 08:09:12 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.25 2006/02/21 08:09:12 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -117,7 +117,11 @@ eval {
     }
 
     my $fh = $msg->open(@Mail_Send_open);
-    die "Kann open mit @Mail_Send_open nicht durchführen" if !$fh;
+    my $die_later;
+    if (!$fh) {
+	$die_later = 1;
+	$fh = \*STDERR;
+    }
 
     if (param("formtype") && param("formtype") =~ /^(newstreetform|fragezeichenform)$/) {
 	open(BACKUP, ">>/tmp/newstreetform-backup")
@@ -158,6 +162,7 @@ eval {
 	print $fh "Remote: ", $link1, "\n" if defined $link1;
 	print $fh "Lokal:  ", $link2, "\n" if defined $link2;
     }
+    die "Kann open mit @Mail_Send_open nicht durchführen" if !$die_later;
     $fh->close or die "Can't close mail filehandle";
 
     my $cookie = cookie(-name => 'mapserver_comment',

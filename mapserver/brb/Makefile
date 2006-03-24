@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.42 2005/11/20 17:20:07 eserte Exp $
+# $Id: Makefile,v 1.43 2006/03/24 20:53:59 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -337,7 +337,7 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile \
 	echo "BBBIKE_RADZEIT_USER=	root" >> $@
 #	echo "BBBIKE_RADZEIT_HOST=	130.149.231.37" >> $@
 ## Only with faked /etc/hosts entry:
-	echo "BBBIKE_RADZEIT_HOST=	www.radzeit.de" >> $@
+	echo "BBBIKE_RADZEIT_HOST=	bbbike.radzeit.de" >> $@
 	echo "BBBIKE_RADZEIT_APACHE_DIR=	/var/www/domains/radzeit.de/www/" >> $@
 .else
 .for makefile_var in $(ADD_MAKEFILE_VARS)
@@ -607,9 +607,9 @@ dist-spiff:
 # vran:/usr/local/src/mapserver/private-patches* vorhanden
 
 # Um mapserver zu bauen, sind folgende configure-Aufrufe notwendig:
-# vran:           sh configure --with-freetype=/usr/local --with-jpeg=/usr/local --with-gd=/usr/local
-# www.radzeit.de: sh configure --with-jpeg=/usr/src/jpeg-6b --with-freetype=/usr/X11R6
-# spiff:          sh configure
+# vran:              sh configure --with-freetype=/usr/local --with-jpeg=/usr/local --with-gd=/usr/local
+# bbbike.radzeit.de: sh configure --with-jpeg=/usr/src/jpeg-6b --with-freetype=/usr/X11R6
+# spiff:             sh configure
 
 # GD 2.0.x ist bevorzugt zu verwenden, da die Textausgabe dort
 # wesentlich besser funktioniert.
@@ -631,7 +631,7 @@ dist-spiff:
 # Another problem is the single .cpp file in the code. I just renamed it to .c and
 # removed the mapogr.cpp rule from the Makefile.
 
-# On www.radzeit.de, use the mapserv-3.6.6 binary instead of the
+# On bbbike.radzeit.de, use the mapserv-3.6.6 binary instead of the
 # mapserv-3.6.4 binary. The latter seems to segfault more often.
 # But the 3.6.6 version has other problems: no transparency with pngs (see
 # the S-Bahn symbol), wrong rendering of oneway symbols (lines instead of
