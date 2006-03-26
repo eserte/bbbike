@@ -11817,7 +11817,7 @@ sub show_info {
 			    my $q2 = CGI->new({ wpt => $wpt,
 						zoom => $zoom,
 					      });
-			    my $url = "http://www.radzeit.de/cgi-bin/bbbikegooglemap.cgi?" . $q2->query_string;
+			    my $url = $BBBike::BBBIKE_GOOGLEMAP_URL . "?" . $q2->query_string;
 			    $url;
 			});
 	    $info_text->insert("end", "\n");

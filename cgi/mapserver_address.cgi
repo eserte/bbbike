@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.24 2005/10/13 07:13:27 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.24 2005/10/13 07:13:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -83,7 +83,7 @@ if (defined param("mapserver")) {
 }
 
 sub _form {
-    print start_form(-action => url(-relative=>1));
+    print start_form(-action => url(-relative=>1)); # url -relative is safe, no my_url necessary
     print hidden("layer", param("layer")) if param("layer");
     print hidden("mapext", param("mapext")) if param("mapext");
     print hidden("usemap", param("usemap"));

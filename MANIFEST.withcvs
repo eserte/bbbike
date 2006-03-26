@@ -1103,6 +1103,7 @@ t/abbiegen.t
 t/basic.t
 t/bbbikedraw-loop.t
 t/bbbikedraw.t
+t/bbbikegooglemap.t
 t/bbbikerouting.t
 t/bbbikesoap.t
 t/bbbikevar.t
@@ -1316,3 +1317,4 @@ images/bundesstrasse_table_16.gif
 images/bab_table_16.gif
 miscsrc/opengeodborte2bbd
 miscsrc/TransparentCanvas.pm
+miscsrc/FixRemoteAddrHandler.pm

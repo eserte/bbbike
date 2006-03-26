@@ -1533,6 +1533,10 @@ E<quot>... am Besten bei der Kundenbetreuung 297-4 33 33E<quot>.
 =item * SpielplE<auml>ze aufnehmen? Z.B.
   L<http://www.stadtentwicklung.berlin.de/umwelt/stadtgruen/kinderspielplaetze/de/spielplaetze/>
 
+=item * Radtouren um FF herum
+
+L<http://www.adfc-frankfurt-oder.de/radtour/>
+
 =back
 
 =head2 Datenhandling (make, conversion ...)
@@ -2281,6 +2285,27 @@ area (in a balloon or additional label/toplevel).
 =head1 MapServer
 
 =over
+
+=item * (M4)
+
+Ich sollte maptemplate durch TT oder ähnliches ersetzen können. Ein
+erster Schritt wird gerade gemacht: jeder maptemplate-Platzhalter wird
+durch [% t(...) %] ersetzt. Dann kann ich mit
+
+   --define template_type=TT
+
+entscheiden, ob ich TT-Templates direkt verwenden oder Maptemplates
+bauen will. Die Platzhalter bekommen im TT-Modus ein
+E<quot>msE<quot>-Prefix, also aus
+
+   [program]
+
+wird
+
+   [% msprogram %]
+
+(Theoretisch wäre ms.program schöner, aber das kann man (noch) nicht
+mit tpage setzen!)
 
 =item * (M2)
 

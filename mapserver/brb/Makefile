@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.43 2006/03/24 20:53:59 eserte Exp $
+# $Id: Makefile,v 1.44 2006/03/26 20:31:25 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -358,7 +358,7 @@ Makefile.${TARGET}.inc:	${ABS_LOCAL_BBBIKE_DIR}/Makefile \
 
 .SUFFIXES:	.html-tpl .html .map-tpl .map .js-tpl .js .conf-tpl
 
-.html-tpl.html:	Makefile Makefile.${TARGET}.inc
+.html-tpl.html:	Makefile Makefile.${TARGET}.inc std.inc
 	$(TPAGE) $(ALL_TPL_DEFINES) ${.ALLSRC:M*tpl} > $@
 	chmod ugo+r $@
 

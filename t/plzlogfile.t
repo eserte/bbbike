@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plzlogfile.t,v 1.11 2006/01/18 01:13:14 eserte Exp $
+# $Id: plzlogfile.t,v 1.12 2006/03/26 17:44:17 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -37,6 +37,7 @@ my $seek = 0;
 my $potsdam = 1;
 my $extern = 1;
 my $forward = 0;
+my $v;
 
 GetOptions("doit!" => \$doit,
 	   "hnr!"  => \$hnr,
@@ -45,7 +46,11 @@ GetOptions("doit!" => \$doit,
 	   "forward" => \$forward,
 	   "potsdam!" => \$potsdam,
 	   "extern!" => \$extern,
-	  ) or die "usage?";
+	   "v" => \$v,
+	  ) or die <<EOF;
+usage: $0 -doit [-hnr] [-logfile file] [-seek pos]
+          [-nopotsdam] [-noextern] [-forward] [-v]
+EOF
 SKIP: {
 skip("Call this test script with -doit", 1) unless $doit;
 
@@ -104,7 +109,7 @@ my $lastdate;
 	next if m{"BBBike-Test/\d};
 	chomp;
 	my $q = CGI->new($1);
-	my($thisdate) = $_ =~ m{\[(\d{2}/.{3}/\d{4}):};
+	my($thisdate, $thistime) = $_ =~ m{\[(\d{2}/.{3}/\d{4}):([0-9:]+)};
 	for my $param (qw(start via ziel)) {
 	    my $s = $q->param($param);
 	    ($s) = Strasse::split_crossing($s);
@@ -115,9 +120,13 @@ my $lastdate;
 		    print "# $thisdate " . ("#"x60) . "\n";
 		    $lastdate = $thisdate;
 		}
-		printf "# %-35s => %2d %-35s\n",
+		printf "# %-35s => %2d %-35s",
 		    $s, scalar @{$res[0]},
 			(!@{$res[0]} ? "-"x30 : $res[0]->[0]->[PLZ::LOOK_NAME]);
+		if ($v) {
+		    print " ($thistime)";
+		}
+		print "\n";
 	    }
 	}
     }

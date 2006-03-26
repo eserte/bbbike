@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAlarm.pm,v 1.34 2006/02/09 08:12:12 eserte Exp $
+# $Id: BBBikeAlarm.pm,v 1.36 2006/03/25 15:55:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000 Slaven Rezic. All rights reserved.
@@ -41,7 +41,7 @@ my $install_datebook_additions = 1;
 
 use Time::Local;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.34 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.36 $ =~ /(\d+)\.(\d+)/);
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
@@ -310,20 +310,21 @@ sub enter_alarm_small_dialog {
     my $text = "Leave";
     $t->Label(-text => "Time (HH:MM)")->grid(-column => 0, -row => $row,
 					     -sticky => "w");
-    my $e = $t->Entry(-textvariable => \$time,
-		      -width => 6,
-		     )->grid(-row => $row, -column => 1,
-			     -sticky => "we");
-    $e->focus;
+    my @e;
+    push @e, $t->Entry(-textvariable => \$time,
+		       -width => 6,
+		      )->grid(-row => $row, -column => 1,
+			      -sticky => "we");
+    $e[0]->focus;
     $row++;
 
     if ($args{-withtext}) {
 	$t->Label(-text => "Alarm text")->grid(-column => 0, -row => $row,
 					       -sticky => "w");
-	$t->Entry(-textvariable => \$text,
-		  -width => 20,
-		 )->grid(-row => $row, -column => 1,
-			 -sticky => "we");
+	push @e, $t->Entry(-textvariable => \$text,
+			   -width => 20,
+			  )->grid(-row => $row, -column => 1,
+				  -sticky => "we");
 	$row++;
     }
 
@@ -337,17 +338,22 @@ sub enter_alarm_small_dialog {
 			    $top->messageBox(-message => "Wrong time format, should be HH:MM",
 					     -icon => "error",
 					     -type => "OK");
+			    $e[0]->focus;
 			    return undef;
 			}
 			tk_leave(sprintf("%02d%02d", $h_a, $m_a),
 				 -text => $text);
 			$weiter = 1;
 		    })->grid(-row => 0, -column => 0);
-    $e->bind("<Return>" => sub { $okb->invoke });
-    $bf->Button(-text => "Cancel",
-		-command => sub {
-		    $weiter = 1;
-		})->grid(-row => 0, -column => 1);
+    for my $e_i (0 .. $#e-1) {
+	$e[$e_i]->bind("<Return>" => [ sub { my $i = $_[1]; $e[$i]->focus }, $e_i+1]);
+    }
+    $e[-1]->bind("<Return>" => sub { $okb->invoke });
+    my $cb = $bf->Button(-text => "Cancel",
+			 -command => sub {
+			     $weiter = 1;
+			 })->grid(-row => 0, -column => 1);
+    $t->bind("<Escape>" => sub { $cb->invoke });
     $t->Popup(-popover => "cursor");
     $t->OnDestroy(sub { $weiter = 1 });
     $t->waitVariable(\$weiter);
@@ -697,8 +703,9 @@ sub get_alarms_file {
 use constant LIST_HOST    => 0;
 use constant LIST_PID     => 1;
 use constant LIST_TIME    => 2;
-use constant LIST_DESC    => 3;
-use constant LIST_STATE   => 4;
+use constant LIST_RELTIME => 3;
+use constant LIST_DESC    => 4;
+use constant LIST_STATE   => 5;
 
 use constant COL_HOST    => 0;
 use constant COL_PID     => 1;
@@ -712,7 +719,7 @@ sub _get_host {
 }
 
 {
-    my($w, $this_host, $top);
+    my($w, $this_host, $top, $show_all_timer);
 
     sub tk_show_all_init {
 	$w = shift;
@@ -728,12 +735,11 @@ sub _get_host {
     }
 
     sub tk_show_all_do {
-	my @result = show_all();
 	my $hl;
 	$this_host = $this_host; # hmmm ... needed so the hlist command closure may see this lexical...
 	$hl = $top->Scrolled("HList", -header => 1,
 			     -columns => 6, -scrollbars => "osoe",
-			     -width => 50,
+			     -width => 65,
 			     -command => sub {
 				 my $entry = shift;
 				 my $data = $hl->entrycget($entry, -data);
@@ -755,21 +761,36 @@ sub _get_host {
 	$hl->headerCreate(COL_DESC,    -text => M"Beschr.");
 	$hl->headerCreate(COL_STATE,   -text => M"Status");
 
-	my $i=0;
+	if ($show_all_timer) {
+	    $show_all_timer->cancel;
+	}
+	$show_all_timer = $hl->repeat(60*1000, sub { tk_show_all_update($hl) });
+	tk_show_all_update($hl);
+    }
+
+    sub tk_show_all_update {
+	my($hl) = @_;
+	if (!Tk::Exists($hl)) {
+	    if ($show_all_timer) {
+		$show_all_timer->cancel;
+		undef $show_all_timer;
+	    }
+	    return;
+	}
+
+	my @result = show_all();
+	my $i = 0;
+	$hl->delete("all");
 	foreach my $result (@result) {
 	    $hl->add($i, -text => $result->[LIST_HOST], -data => $result);
 	    $hl->itemCreate($i, COL_PID, -text => $result->[LIST_PID]);
 	    $hl->itemCreate($i, COL_TIME, -text => scalar localtime $result->[LIST_TIME]);
-	    my $min = ($result->[LIST_TIME]-time)/60;
-	    if ($min < 0) {
-		$hl->itemCreate($i, COL_RELTIME, -text => M"überfällig");
-	    } else {
-		$hl->itemCreate($i, COL_RELTIME, -text => sprintf "%d:%02d h", $min/60, abs($min)%60);
-	    }
+	    $hl->itemCreate($i, COL_RELTIME, -text => $result->[LIST_RELTIME]);
 	    $hl->itemCreate($i, COL_DESC, -text => $result->[LIST_DESC]);
 	    $hl->itemCreate($i, COL_STATE, -text => $result->[LIST_STATE]);
 	    $i++;
 	}
+
     }
 
     sub tk_show_all {
@@ -838,7 +859,19 @@ sub show_all {
 	    if ($host eq $this_host) {
 		$state = (kill(0 => $pid) ? M("läuft") : M("läuft nicht"));
 	    }
-	    push @result, [@l, $state];
+	    push @l, $state;
+
+	    my $reltime;
+	    my $min = ($time-time)/60;
+	    if ($min < 0) {
+		$reltime = M"überfällig";
+	    } else {
+		$reltime = sprintf "%d:%02d h", $min/60, abs($min)%60;
+	    }
+
+	    splice @l, LIST_RELTIME, 0, $reltime;
+
+	    push @result, [@l];
 	}
 	untie %$pids;
     };
@@ -1038,6 +1071,7 @@ my $use_tk;
 my $time;
 my $text;
 my $interactive;
+my $interactive_small;
 my $ask;
 my $show_all;
 my $restart;
@@ -1046,23 +1080,29 @@ if (!Getopt::Long::GetOptions("-tk!" => \$use_tk,
 			      "-time=s" => \$time,
 			      "-text=s" => \$text,
 			      "-interactive!" => \$interactive,
+			      "-interactive-small!" => \$interactive_small,
 			      "-ask!" => \$ask,
 			      "showall|list" => \$show_all,
 			      "restart" => \$restart,
 			     )) {
-    die "Usage $0 [-tk [-ask]] [-time hh:mm] [-text message] [-interactive]
+    die "Usage $0 [-tk [-ask]] [-time hh:mm] [-text message]
+		  [-interactive | -interactive-small]
                   [-showall|-list] [-restart]
 ";
 }
 
 $time = BBBikeAlarm::time2epoch($time) if defined $time;
 
-if ($interactive) {
+if ($interactive || $interactive_small) {
     require Tk;
     my $mw = MainWindow->new;
     $mw->withdraw;
-    $time = do { @_ = localtime; sprintf "%02d:%02d", $_[3], $_[2] };
-    BBBikeAlarm::enter_alarm($mw, \$time, -dialog => 1);
+    if ($interactive_small) {
+	BBBikeAlarm::enter_alarm_small_dialog($mw, -withtext => 1);
+    } else {
+	$time = do { @_ = localtime; sprintf "%02d:%02d", $_[3], $_[2] };
+	BBBikeAlarm::enter_alarm($mw, \$time, -dialog => 1);
+    }
 } elsif ($use_tk) {
     if ($show_all) {
 	BBBikeAlarm::tk_show_all();

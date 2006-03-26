@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead.t,v 1.14 2006/01/16 00:01:42 eserte Exp $
+# $Id: cgihead.t,v 1.15 2006/03/26 20:31:25 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -26,15 +26,17 @@ my $cgi_dir = $ENV{BBBIKE_TEST_CGIDIR} || "http://localhost/~eserte/bbbike/cgi";
 my $html_dir = $ENV{BBBIKE_TEST_HTMLDIR};
 
 if (!GetOptions("cgidir=s" => \$cgi_dir,
+		"htmldir=s" => \$html_dir,
 	       )) {
-    die "usage: $0 [-cgidir url]";
+    die "usage: $0 [-cgidir url] [-htmldir url]";
 }
 
 if (!defined $html_dir) {
     $html_dir = dirname $cgi_dir;
 }
 
-my @prog = qw(bbbike.cgi
+my @prog = qw(
+	      bbbike.cgi
 	      bbbike.en.cgi
 	      bbbike2.cgi
 	      bbbike2.en.cgi
@@ -42,9 +44,12 @@ my @prog = qw(bbbike.cgi
 	      mapserver_comment.cgi
 	      wapbbbike.cgi
 	      bbbike-data.cgi
+	      bbbikegooglemap.cgi
+	      bbbikegooglemap2.cgi
 	     );
 
-my @static = qw(html/bbbike.css
+my @static = qw(
+		html/bbbike.css
 		html/bbbikepod.css
 		html/bbbikeprint.css
 		html/bbbike_start.js

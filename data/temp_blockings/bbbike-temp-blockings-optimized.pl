@@ -315,14 +315,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1143756000,
-         'text' => 'Rosenthaler Straße zwischen Hackescher Markt und Neue Schönhauser Straße Baustelle, als Einbahnstraße eingerichtet in Richtung Rosenthaler Platz, Dauer: 11.10.2005, 20.00 Uhr bis 30.03.2006 ',
-         'from' => 1128967200,
-         'data' => 'userdel	q4; 10305,13211 10264,13097
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1293836399,
@@ -556,8 +549,8 @@ userdel	2 22668,12080 22701,12115
        },
        {
          'until' => 1151704800,
-         'text' => 'K 7219 Zülichendorf-Dobbrikow OD Nettgendorf, zw. OE und Klinkenmühler Str. Kanal- und Straßenbau Vollsperrung; 14.03.2006-30.06.2006 ',
-         'from' => 1142204400,
+         'text' => 'K 7219 Zülichendorf-Dobbrikow OD Nettgendorf, zw. OE und Klinkenmühler Str. Kanal- und Straßenbau Vollsperrung 24.03.2006-30.06.2006 ',
+         'from' => 1143068400,
          'data' => 'userdel	q4 -12904,-28790 -12925,-29046
 userdel	q4 -12904,-28790 -12713,-28704
 ',
@@ -591,6 +584,60 @@ userdel	q4 12578,14237 12499,14136
          'data' => 'userdel	2 -28116,60092 -27347,60616
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1146607200,
+         'text' => 'L 074 Chausseestraße OL Wünsdorf, Bahnbrücke Brückenbauarbeiten Vollsperrung 02.05.2006-02.05.2006 ',
+         'from' => 1146434400,
+         'data' => 'userdel	2 15682,-26971 15229,-27157
+userdel	2 15682,-26971 15960,-26906
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1143756000,
+         'text' => 'L 074 Chausseestraße OL Wünsdorf, Bahnbrücke Brückenbauarbeiten Vollsperrung 30.03.2006-30.03.2006 ',
+         'from' => 1143583200,
+         'data' => 'userdel	2 15682,-26971 15229,-27157
+userdel	2 15682,-26971 15960,-26906
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'until' => 1146693600,
+         'text' => 'B 096 OD Neuhof BÜ Neuhof Gleisbau Vollsperrung 03.05.2006-03.05.2006 ',
+         'from' => 1146520800,
+         'data' => 'userdel	2 16407,-29400 16379,-29446
+userdel	2 16336,-29511 16379,-29446
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1147471200,
+         'text' => 'B 096 OD Neuhof BÜ Neuhof Gleisbau Vollsperrung 05.05.2006-12.05.2006 ',
+         'from' => 1146693600,
+         'data' => 'userdel	2 16407,-29400 16379,-29446
+userdel	2 16336,-29511 16379,-29446
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1145138400,
+         'text' => 'B 096 OD Neuhof BÜ Neuhof Gleisbau Vollsperrung 15.04.2006-15.04.2006 ',
+         'from' => 1144965600,
+         'data' => 'userdel	2 16407,-29400 16379,-29446
+userdel	2 16336,-29511 16379,-29446
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1149112800,
+         'text' => 'B 198 OD Kerkow Greiffenbg.Str. Kerkow Neubau Straße Vollsperrung 22.03.2006-31.05.2006 ',
+         'from' => 1142895600,
+         'data' => 'userdel	q4 48929,70947 49007,71214
+',
+         'type' => 'handicap'
        }
      
 );

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.144 2006/03/12 21:35:01 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.144 2006/03/12 21:35:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -3103,7 +3103,13 @@ sub search_anything {
 		    } @$matches;
 		    $indent = " "x4;
 		} else { # $sort eq 'alpha'
-		    @sorted_matches = sort { $a->[0] cmp $b->[0] } @$matches;
+		    @sorted_matches =
+			map  { $_->[1] }
+			sort { $a->[0] cmp $b->[0] }
+			map  {
+			    (my $sortname = $_->[0]) =~ s{^\(}{};
+			    [$sortname, $_];
+			} @$matches;
 		}
 
 		my $last_name;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.22 2006/01/11 21:28:26 eserte Exp $
+# $Id: vmzrobot.pl,v 1.23 2006/03/26 11:33:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -267,14 +267,19 @@ sub diff {
     my %old_detail_links = map {($_->{id} => $_)} @old_detail_links;
     my @diff_detail_links;
     for my $orig_detail_link (@detail_links) {
-	my $detail_link = dclone $orig_detail_link;
+	my $detail_link     = dclone $orig_detail_link;
+	my $cmp_detail_link = dclone $orig_detail_link;
 	my $old_detail_link = $old_detail_links{$detail_link->{id}};
 	if (!$old_detail_link) {
 	    push @{ $detail_link->{_state} }, "NEW";
 	} else {
-	    if (Compare($detail_link, $old_detail_link) == 0) {
+	    $old_detail_link = dclone $old_detail_link;
+	    for my $textref (\$cmp_detail_link->{text}, \$old_detail_link->{text}) {
+		$$textref =~ s{\s*\(\d{1,2}:\d{2}\)\s*$}{}; # remove the superfluous timestamp
+	    }
+	    if (Compare($cmp_detail_link, $old_detail_link) == 0) {
 		push @{ $detail_link->{_state} }, "CHANGED";
-		if (Compare($detail_link->{text}, $old_detail_link->{text}) == 0) {
+		if (Compare($cmp_detail_link->{text}, $old_detail_link->{text}) == 0) {
 		    push @{ $detail_link->{_state} }, "(text)";
 		} else {
 		    push @{ $detail_link->{_state} }, "(coords)";

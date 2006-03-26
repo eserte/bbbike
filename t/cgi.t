@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.32 2006/03/24 20:54:04 eserte Exp $
+# $Id: cgi.t,v 1.33 2006/03/26 20:31:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -69,7 +69,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (138 + $ortsuche_tests) * scalar @urls;
+plan tests => (142 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip) {
@@ -146,7 +146,6 @@ for my $cgiurl (@urls) {
     }
 
     # search_coord
- XXX:
     for my $output_as ("", qw(xml gpx-track gpx-route print perldump
 			      yaml yaml-short palmdoc mapserver)) {
     SKIP: {
@@ -350,6 +349,7 @@ for my $cgiurl (@urls) {
 	    or diag("Can't find Guben in " . $content);
     }
 
+ XXX:
     # Klick on "D" in Start A..Z
     $req = new HTTP::Request
 	(GET => "$action?start=&startcharimg.x=107&startcharimg.y=15&startmapimg.x=&startmapimg.y=&via=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=", $hdrs);
@@ -359,6 +359,17 @@ for my $cgiurl (@urls) {
     $content = uncompr($res);
     like($content, qr/Anfangsbuchstabe.*D/, "Initial letter is D");
     like($content, qr/Dudenstr/, "Dudenstr. is in D section");
+    like($content, qr/\QDortustr. (Potsdam)/, "There are also Potsdam streets");
+    unlike($content, qr/\QDorfstr. (Heinersdorf)/, "But no other streets in Brandenburg");
+
+    # Klick on "B" in Start A..Z
+    $req = new HTTP::Request
+	(GET => "$action?start=&startcharimg.x=44&startcharimg.y=15&startmapimg.x=&startmapimg.y=&via=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=", $hdrs);
+    $res = $ua->request($req);
+    ok($res->is_success, "Click on B in A..Z")
+	or diag $res->as_string;
+    $content = uncompr($res);
+    like($content, qr/\QBerliner Str. (Potsdam)/, "Stripped `B1' from street name");
 
     # Klick on Start berlin map (Kreuzberg)
     $req = new HTTP::Request

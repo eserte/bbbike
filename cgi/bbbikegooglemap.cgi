@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.28 2006/03/24 07:43:24 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.29 2006/03/25 13:45:21 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -24,6 +24,8 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../BBBike/lib",
 	);
 use CGI qw(:standard);
+use BBBikeCGIUtil qw();
+use BBBikeVar;
 use Karte;
 use Karte::Polar;
 
@@ -254,7 +256,7 @@ sub get_html {
     }
 
     function showLink(point, message) {
-        var latLngStr = message + "@{[ url(-full => 1) ]}?zoom=" + map.getZoomLevel() + "&wpt=" + formatPoint(point) + "&coordsystem=polar";
+        var latLngStr = message + "@{[ BBBikeCGIUtil::my_url(CGI->new(), -full => 1) ]}?zoom=" + map.getZoomLevel() + "&wpt=" + formatPoint(point) + "&coordsystem=polar";
         document.getElementById("permalink").innerHTML = latLngStr;
     }
 
@@ -450,8 +452,8 @@ EOF
  <tr>
   <td colspan="3">
       <p class="ftr">
-       <a id="bbbikemail" href="mailto:slaven\@rezic.de">E-Mail</a> |
-       <a id="bbbikeurl" href="http://bbbike.radzeit.de/cgi-bin/bbbike.cgi">BBBike</a> |
+       <a id="bbbikemail" href="mailto:$BBBike::EMAIL">E-Mail</a> |
+       <a id="bbbikeurl" href="$BBBike::BBBIKE_DIRECT_WWW">BBBike</a> |
        <a href="/cgi-bin/mapserver_address.cgi?usemap=googlemaps">Adresssuche</a>
        | <a href="http://maps.google.com/maps?ll=52.515385,13.381004&amp;spn=0.146083,0.229288&amp;t=k">Google Maps</a>
       </p>

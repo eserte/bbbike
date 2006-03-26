@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.7 2006/03/24 07:37:46 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.9 2006/03/26 19:09:38 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -694,7 +694,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.9 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -2081,16 +2081,39 @@ sub choose_ch_form {
 				  ? '[UÜ]'
 				  : $search_char)));
     my @strlist;
-    my $str = get_streets();
-    $str->init;
-    eval q{ # eval wegen /o
-	while(1) {
-	    my $ret = $str->next;
-	    last if !@{$ret->[1]};
-	    my $name = $ret->[0];
-	    push(@strlist, $name) if $name =~ /$regex_char/oi;
-	}
+    {
+	my $str = get_streets();
+	$str->init;
+	eval q{ # eval wegen /o
+	    while(1) {
+	        my $ret = $str->next;
+	        last if !@{$ret->[1]};
+	        my $name = $ret->[0];
+	        push(@strlist, $name) if $name =~ /$regex_char/oi;
+	    }
+        };
+    }
+    eval {
+	# Include Potsdam streets
+	# XXX Special case, look for another solution in other cities!
+	my $landstr = Strassen->new("landstrassen");
+	$landstr->init;
+	eval q{ # eval wegen /o
+	    while(1) {
+		my $ret = $landstr->next;
+	        last if !@{$ret->[1]};
+	        my $name = $ret->[0];
+		next if $name !~ m{\(Potsdam\)};
+		if ($name =~ /$regex_char/oi) {
+		    # remove Bundesstraßen name here:
+		    $name =~ s{\s+\(B\d+\)}{};
+		    push(@strlist, $name);
+		}
+	    }
+	};
     };
+    warn $@ if $@;
+
     @strlist = sort @strlist;
 
     print
@@ -4438,8 +4461,7 @@ sub draw_route {
 	}
 	my $q2 = CGI->new({coords => $q->param("coords"),
 			   wpt    => \@wpt});
-	# XXX do not hardcode
-	print $q->redirect("http://bbbike.radzeit.de/cgi-bin/bbbikegooglemap.cgi?" . $q2->query_string);
+	print $q->redirect($BBBike::BBBIKE_GOOGLEMAP_URL . "?" . $q2->query_string);
 	return;
     }
 
@@ -6006,7 +6028,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/03/24 07:37:46 $';
+    my $cgi_date = '$Date: 2006/03/26 19:09:38 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

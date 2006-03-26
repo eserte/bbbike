@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.25 2006/02/21 08:09:12 eserte Exp eserte $
+# $Id: mapserver_comment.cgi,v 1.27 2006/03/25 13:55:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -27,6 +27,7 @@ use lib (#"/home/e/eserte/src/bbbike",
 	 "$realbin/BBBike", # weitere Alternative
 	);
 use BBBikeVar;
+use BBBikeCGIUtil qw();
 use Mail::Send;
 use File::Basename;
 use CGI qw(:standard -no_xhtml);
@@ -48,7 +49,7 @@ eval {
     undef $comment;
 
     # from bbbike.cgi:
-    $bbbike_url = url;
+    $bbbike_url = BBBikeCGIUtil::my_url(CGI->new);
     ($bbbike_root = $bbbike_url) =~ s|[^/]*/[^/]*$|| if !defined $bbbike_root;
     if (!defined $bbbike_html) {
 	$bbbike_html   = "$bbbike_root/" . ($use_cgi_bin_layout ? "BBBike/" : "") .
@@ -148,7 +149,7 @@ eval {
 	    "Query: " . param("query") . "\n",
 	print $fh $comment . "\n";
 	$link1 = $bbbike_url . "?" . param("query");
-	$link2 = "http://www/bbbike/cgi/bbbile.cgi?" . param("query");
+	$link2 = "http://www/bbbike/cgi/bbbike.cgi?" . param("query");
 	print $fh "Remote: ", $link1, "\n";
 	print $fh "Lokal:  ", $link2, "\n";
     } else {
@@ -162,7 +163,7 @@ eval {
 	print $fh "Remote: ", $link1, "\n" if defined $link1;
 	print $fh "Lokal:  ", $link2, "\n" if defined $link2;
     }
-    die "Kann open mit @Mail_Send_open nicht durchführen" if !$die_later;
+    die "Kann open mit Mail::Send->open(@Mail_Send_open) nicht durchführen" if $die_later;
     $fh->close or die "Can't close mail filehandle";
 
     my $cookie = cookie(-name => 'mapserver_comment',
