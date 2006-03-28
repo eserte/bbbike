@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.78 2006/03/24 07:47:37 eserte Exp $
+# $Id: Makefile,v 1.79 2006/03/27 21:27:51 eserte Exp $
 #
 
 # Targets:
@@ -480,7 +480,7 @@ prepare-routopedia-dist:
 	cd ${BBBIKE_ROOT_DIR}/routopedia && ${MAKE} distcheck
 	(umask 022; cd ${BBBIKE_ROOT_DIR}/routopedia && perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread(),'${CURDIR}/routopedia', 'best');")
 
-test:	test-on-remote test-from-local test-from-local-compat
+test:	test-on-remote test-from-local
 
 test-on-remote:
 	-@date >> .last/start-test-on-remote
@@ -509,6 +509,8 @@ test-from-local:
 		${TESTS_FROM_LOCAL}
 	-@date >> .last/test-on-from-local
 
+# This rule is just for testing the redirects from www.radzeit.de to
+# bbbike.radzeit.de
 test-from-local-compat:
 	-@date >> .last/start-test-from-local-compat
 	cd ${.CURDIR}/BBBike/t && \

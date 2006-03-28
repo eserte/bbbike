@@ -638,6 +638,14 @@ userdel	2 16336,-29511 16379,-29446
          'data' => 'userdel	q4 48929,70947 49007,71214
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1143820800,
+         'text' => 'Hirtenstr. Arbeiten an Wasserleitungen, Straße in beiden Richtungen gesperrt. (zwischen Rosa-Luxemburg-Str. und Kleine Alexanderstr.) bis 31.03.06, 18:00 Uhr ',
+         'from' => 1143575024,
+         'data' => 'userdel	q4 10846,13362 10923,13317
+',
+         'type' => 'handicap'
        }
      
 );

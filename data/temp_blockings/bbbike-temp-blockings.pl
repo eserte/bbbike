@@ -3878,4 +3878,12 @@ EOF
 userdel	q4 48929,70947 49007,71214
 EOF
      },
+     { from  => 1143575024, # 2006-03-28 21:43
+       until => 1143820800, # 2006-03-31 18:00
+       text  => 'Hirtenstr. Arbeiten an Wasserleitungen, Straße in beiden Richtungen gesperrt. (zwischen Rosa-Luxemburg-Str. und Kleine Alexanderstr.) bis 31.03.06, 18:00 Uhr ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 10846,13362 10923,13317
+EOF
+     },
     );

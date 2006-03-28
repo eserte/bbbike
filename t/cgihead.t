@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead.t,v 1.15 2006/03/26 20:31:25 eserte Exp $
+# $Id: cgihead.t,v 1.16 2006/03/28 20:55:40 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -45,8 +45,10 @@ my @prog = qw(
 	      wapbbbike.cgi
 	      bbbike-data.cgi
 	      bbbikegooglemap.cgi
-	      bbbikegooglemap2.cgi
 	     );
+if ($cgi_dir !~ m{\Qradzeit.herceg.de}) {
+    push @prog, "bbbikegooglemap2.cgi";
+}
 
 my @static = qw(
 		html/bbbike.css

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: vmzrobot.pl,v 1.23 2006/03/26 11:33:51 eserte Exp $
+# $Id: vmzrobot.pl,v 1.24 2006/03/27 20:59:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -97,6 +97,10 @@ if ($inputfile) {
     print STDERR "Get listing..." if !$quiet;
     @detail_links = get_listing();
     print STDERR " OK\n" if !$quiet;
+}
+
+if (!@detail_links) {
+    die "Can't find any detail links in VMZ";
 }
 
 if ($oldfile) {
@@ -222,7 +226,7 @@ sub get_listing {
 	}
 		      );
     if (!@detail_links) {
-	warn "No detail links in listing page found!\n";
+	warn "No detail links in listing page <" . $listing_url . "> found!\n";
     }
     @detail_links;
 }

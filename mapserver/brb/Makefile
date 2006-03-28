@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.44 2006/03/26 20:31:25 eserte Exp $
+# $Id: Makefile,v 1.45 2006/03/28 20:55:40 eserte Exp $
 #
 
 # Please run this file with BSD make (often called pmake).
@@ -249,6 +249,7 @@ DISTFILES=\
 	query_footer2.html \
 	query_header.html-tpl \
 	query_header2.html \
+	std.inc
 
 
 #XXX should not hardcode the year
