@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.82 2006/03/27 21:35:28 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.83 2006/03/29 23:28:18 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -10,11 +10,12 @@ Linienstr.: Bauarbeiten, Einbahnstraße Richtung Osten (bis 2006-10-31)	q4::inwor
 Bendastr.: Bauarbeiten, danach vielleicht asphaltiert?	q4::inwork 12743,6645 12756,6578 12779,6478
 Oberwallstr.: Fahrbahn wegen Bauarbeiten gesperrt, Gehweg benutzen	q4::inwork 9907,12055 9925,11947
 Am Weidendamm: Fahrtrichtung wegen Bauarbeiten gesperrt, schieben	q4::inwork; 9283,12856 9383,12915
-Unter den Linden (Mitte) Richtung Westen zwischen Schadowstr. und Wilhelmstr. Baustelle, Straße für Autos gesperrt, Radfahrer können weiterhin passieren (bis 2006-03-31)	q3::inwork; 9028,12307 8804,12280
+#XXX del Unter den Linden (Mitte) Richtung Westen zwischen Schadowstr. und Wilhelmstr. Baustelle, Straße für Autos gesperrt, Radfahrer können weiterhin passieren (bis 2006-03-31)	q3::inwork; 9028,12307 8804,12280
 #: last_checked: 2006-03-18
 #: note: komplette Eröffnung Herbst 2006, die Fahrbahn Richtungen Norden soll 2006-06-15 freigegeben werden
 Alexanderstr.: von 2005-01-03 bis 2006-05-31 für Autos gesperrt, Radfahrer können weiterhin passieren. Teilweise Sperren zu den kreuzenden Straßen errichtet. 	q2::inwork 11134,12793 11207,12706 11323,12484 11333,12437 11343,12300 11351,12221
-#XXX del: Naumannstraße: zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße für Autofahrer gesperrt, Radfahrer können passieren (bis Ende 04/2005)	q2::inwork 7716,8048 7717,7759
+#: last_checked: 2006-03-29
+Naumannstraße: zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße für Autofahrer gesperrt, Radfahrer können passieren	q2::inwork 7716,8048 7717,7759
 Behrenstr./Bebelplatz: Einbahnstraße	q3::inwork; 9626,12227 9700,12234 9743,12239 9801,12245
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
 #XXX del? Prenzlauer Promenade, zw. Am Steinberg und Ostseestr. Baustelle, Sperrung stadteinwärts an Elsa-Brandström-Straße. Umleitung: Elsa-Brandström -Straße - Neumannstraße - Wisbyer Straße bis 15.06.2005	q4::inwork; 12012,16752 12046,16568 12054,16517 12097,16263 12091,16209
@@ -26,6 +27,7 @@ Segelfliegerdamm: letzte Bauarbeiten	q3::inwork 17797,4441 18058,4627
 #: last_checked: 2006-03-22
 Columbiadamm: Bauarbeiten, Behinderungen möglich (bis 2006-12-31)	q1::inwork 10213,8665 10598,8563 10796,8498
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(Frankfurter Allee - Liebigstr.): Fußgänger	q2 13885,12279 13905,12374
 Otto-Ludwig-Str.: Fußgängerzone	q2 4862,10881 4954,10876
 Schützenstr. (Mitte): Fußgänger, Bordsteine	q3 9405,11413 9461,11412
 Georgenstr.: Fußgänger	q1 9437,12662 9308,12649

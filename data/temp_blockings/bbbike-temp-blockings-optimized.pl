@@ -646,6 +646,15 @@ userdel	2 16336,-29511 16379,-29446
          'data' => 'userdel	q4 10846,13362 10923,13317
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_002552',
+         'until' => undef,
+         'text' => 'Zoppoter Str. (Wilmersdorf) in beiden Richtungen zwischen Heiligendammer Str. und Breitestr. Tiefbauarbeiten, Straße vollständig gesperrt',
+         'from' => undef,
+         'data' => 'userdel	q4 3349,7361 3314,7269
+',
+         'type' => 'handicap'
        }
      
 );

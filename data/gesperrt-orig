@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.95 2006/02/12 22:05:12 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.96 2006/03/29 23:28:51 eserte Exp $
 #:
 ###################################################################
 #
@@ -447,6 +447,7 @@ Lewishamstr: Straßentunnelrampe	3nocross 3644,10759 3739,10576 3771,10511 3813,1
 Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6853,11336 6880,11110
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 10215,16527 9998,16547 9883,16557 9816,16565
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 14208,12235 14291,12220 14381,12205 14434,12196 14488,12189
+Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13792,12292 13885,12279 14208,12235
 Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11649 9899,11670 9982,11680
 #Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13241,13405 13334,13459
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12188,14321 12239,14393 12285,14458 12338,14532
@@ -475,7 +476,6 @@ Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,12259 10621,12207 10567,12135
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5229,10716 5351,10760 5484,10810
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15392,12135 15437,12225 15502,12367
-Möllendorffstr.: Mittelstreifen mit Straßenbahn	3 15350,12270 15437,12225 15502,12367
 Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6790,16018 6914,15908 6957,15869 7043,15793
 #del: Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14576,16069 14550,16161 14499,16341
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14603,15971 14619,15920 14650,15750
@@ -667,12 +667,7 @@ Ernst-Ruska-Ufer: noch in Bau	2:inwork 19103,2442 18927,2431
 #XXX del für Radfahrer nicht relevant: Malchower Chaussee (Pankow) Richtung stadteinwärts zwischen Ortnitstr. und Nachtalbenweg Baustelle, veränderte Verkehrsführung. Für die Arbeiten im Abschnitt von Darßer str. bis Nachtalbenweg wird der Verkehr über Darßer Str. - Nachtalbenw. umgeleitet (bis 30.04.2005)	1:inwork 15181,18137 14828,17856
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10173,12492
 Sperrung vor der amerikanischen Botschaft	2 9141,12320 9126,12413 9112,12499 9100,12627
-##: last_checked: 2005-07-31
-#XXX del? Naumannstr. unter der S-Bahn-Brücke: noch Bauarbeiten	2:inwork 7716,8048 7717,7759 7718,7641 7717,7564
-#: last_checked: 2005-07-31
-#: next_check: 2005-12-01
-#: see_also: http://www.eyth16.de/weblog/2005/11/04/145/
-(Neue Naumannstr.) (noch in Bau, Fertigstellung Ende 2005 (2005-12-31))	2:inwork 7606,7611 7717,7759
+Alte Naumannstr.: komplett gesperrt, Bauarbeiten am neuen Vorplatz vom Bahnhof Südkreuz	2 7717,7759 7718,7641 7717,7564
 # XXX del??? Goethestr. (Bauarbeiten)	1:inwork 4896,11345 5053,11343
 # als "Mitte 2006" gekennzeichnet
 Markgrafenstraße  Richtung Französische Straße zwischen Behrenstraße und Französische Straße, Bauarbeiten als Einbahnstraße eingerichtet, Dauer:  bis 01.07.2006	1:inwork 9636,12126 9626,12227

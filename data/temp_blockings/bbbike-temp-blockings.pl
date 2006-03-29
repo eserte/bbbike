@@ -3886,4 +3886,13 @@ EOF
 userdel	q4 10846,13362 10923,13317
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Zoppoter Str. (Wilmersdorf) in beiden Richtungen zwischen Heiligendammer Str. und Breitestr. Tiefbauarbeiten, Straße vollständig gesperrt',
+       type  => 'handicap',
+       source_id => 'IM_002552',
+       data  => <<EOF,
+userdel	q4 3349,7361 3314,7269
+EOF
+     },
     );

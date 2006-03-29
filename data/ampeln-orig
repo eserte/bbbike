@@ -1,5 +1,5 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.51 2006/02/12 22:05:08 eserte Exp eserte $
+#: version: $Id: ampeln-orig,v 4.52 2006/03/29 23:29:28 eserte Exp $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -1834,3 +1834,6 @@ Industriebahn	B -2223,13690
 	X 8017,13629
 #: XXX: Bahnübergang oder Treppen?
 	B 15580,-26698
+#: XXX: Ampelanlage vorbereitet
+#: last_checked: 2006-03-30
+	X 7717,7759
