@@ -655,6 +655,23 @@ userdel	2 16336,-29511 16379,-29446
          'data' => 'userdel	q4 3349,7361 3314,7269
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1147471200,
+         'text' => 'B 087 OL Ranzig Deckenerneuerung Vollsperrung 03.04.2006-12.05.2006 ',
+         'from' => 1143928800,
+         'data' => 'userdel	q4 63609,-34428 64853,-30986
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1152914400,
+         'text' => 'L 019 Kremmen, Schloßdamm, Ruppiner Str. Kremmen Neubau Fahrbahn Vollsperrung 27.03.2006-14.07.2006 ',
+         'from' => 1143324000,
+         'data' => 'userdel	2 -15302,43177 -15278,42709
+userdel	2 -14998,42541 -15278,42709
+',
+         'type' => 'gesperrt'
        }
      
 );

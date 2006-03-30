@@ -3895,4 +3895,21 @@ EOF
 userdel	q4 3349,7361 3314,7269
 EOF
      },
+     { from  => 1143928800, # 2006-04-02 00:00
+       until => 1147471200, # 2006-05-13 00:00
+       text  => 'B 087 OL Ranzig Deckenerneuerung Vollsperrung 03.04.2006-12.05.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 63609,-34428 64853,-30986
+EOF
+     },
+     { from  => 1143324000, # 2006-03-25 23:00
+       until => 1152914400, # 2006-07-15 00:00
+       text  => 'L 019 Kremmen, Schloßdamm, Ruppiner Str. Kremmen Neubau Fahrbahn Vollsperrung 27.03.2006-14.07.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -15302,43177 -15278,42709
+userdel	2 -14998,42541 -15278,42709
+EOF
+     },
     );
