@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.87 2006/02/25 14:14:35 eserte Exp $
+# $Id: Makefile,v 2.88 2006/04/03 21:46:01 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -214,13 +214,17 @@ wasserumland2: wasserumland2-orig
 	    || (rm -f $@; false)
 	-@$(READONLY) $@
 
-wasserstrassen-lowres: wasserstrassen wasserumland wasserumland2
+# The output is not the prettiest, but we save some 100k
+wasserstrassen-lowres:  wasserstrassen wasserumland wasserumland2 \
+			Makefile $(MISCSRCDIR)/simplify_streets
 	-@$(WRITEABLE) $@
 	cat wasserstrassen wasserumland wasserumland2 |\
 	    $(GREPSTRASSEN) --catrx '^(F:W1)$$' > $@~
 	cat wasserstrassen wasserumland wasserumland2 |\
 	    $(GREPSTRASSEN) --catrx '^(W1|W2|F:W)$$' --minarea 3 >> $@~
-	mv -f $@~ $@
+	$(MISCSRCDIR)/simplify_streets -simplify-coefficient 0.04 $@~ > $@~~
+	rm $@~
+	mv -f $@~~ $@
 	-@$(READONLY) $@
 
 flaechen: flaechen-orig

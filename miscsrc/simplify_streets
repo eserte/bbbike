@@ -1,0 +1,51 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: simplify_streets,v 1.1 2006/04/03 21:42:09 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2006 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+use BBBikeTrans;
+use Strassen::Core;
+use Getopt::Long;
+
+our $medium_scale = 0.13; # same as in bbbike
+
+GetOptions("simplify-coefficient=f" => \$medium_scale)
+    or die "usage?";
+
+*create_transpose_subs = \&old_create_transpose_subs_no_int;
+create_transpose_subs();
+
+my $s = Strassen->new($ARGV[0]);
+$s->init;
+while() {
+    my $ret = $s->next;
+    last if !@{ $ret->[Strassen::COORDS] };
+    my @new_c;
+    my($last_c);
+    for my $c (@{ $ret->[Strassen::COORDS] }) {
+	my($x,$y) = split/,/,$c;
+	my($new_c) = join(",", map { int } anti_transpose_ls_medium(map { int } transpose_ls_medium($x,$y)));
+	if (!defined $last_c || $new_c ne $last_c) {
+	    push @new_c, $new_c;
+	}
+	$last_c = $new_c;
+    }
+    $ret->[Strassen::COORDS] = \@new_c;
+    print Strassen::arr2line2($ret), "\n";
+}
+
+__END__

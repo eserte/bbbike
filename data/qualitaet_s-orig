@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.118 2006/03/29 23:29:50 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.118 2006/03/29 23:29:50 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1872,15676
@@ -1281,6 +1281,10 @@ Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068
 #: by: Paul (no email):
 Eulerstr.: Asphalt	Q0 9268,16228 9494,16455
 #: by: anonymous vvv
+#: XXX: hier hat der Poster handicap=q0 angegeben
+Wilhelmshavener Str.: Kopfsteinpflaster	Q2 -3866,13761 -3839,13845 -3802,13954
+#: XXX: hier hat der Poster handicap=q2 angegeben (vielleicht weil die Straße eng ist?)
+Meyerheimstr.: Asphalt	Q0 11849,15760 11905,15878 11961,16002
 Boschweg: Beton	Q0 14784,6169 14788,6261 14760,6319 14564,6496
 Maselakeweg: Verbundsteinpflaster	Q1 -2441,16996 -2391,16607 -2340,16590
 Sellinstr.: mäßiger Asphalt	Q1 11215,17927 11238,17785
@@ -1693,7 +1697,7 @@ Holsteinische Str.: Asphalt	Q0 5070,9720 5066,9645 5065,9407 5046,8940
 #: by: Winfried Gravenstein: vvv
 Eisnerstr.: Asphalt	Q0 9500,-115 9693,-621
 # Korrektur eines anonymen Eintrags:
-Dörfelweg	Q0 9716,-55 9500,-115
+Dörfelweg	Q0 9716,-55 9578,-92 9500,-115
 Eisnerstr. - S.Bhf Buckower Chaussee: asphaltiert, allerdings an einigen Stellen Beschädigungen durch Baumwurzeln	Q0 9500,-115 9178,556
 #: add_fragezeichen: tatsächlich Verbundsteinpflaster? vvv
 (Unter dem S-Bhf. Schichauweg): Verbundsteinpflaster	Q1 9693,-621 9518,-668
@@ -1859,6 +1863,7 @@ Brennerstr.: Asphalt	Q0 10927,17022 10665,17023
 #: note: Ich erinnere mich auch an Kopfsteinpflaster:
 Viktoriastr.: Kopfsteinpflaster	Q2 9171,5397 8943,5428
 #: by: Sissy (Rabefranziska)
+#: XXX: Widerspruch von Niels (makanamail): Kopfsteinpflaster Q2 zwischen Mahlsdorfer und Dornröschenstr.
 Genovevastr.: Asphalt	Q0 23066,7355 23312,7078 23603,6906
 #: by: Johannes Krugel: vvv
 Schmarjestr.: Asphalt	Q0 511,3532 971,3534
@@ -3049,7 +3054,7 @@ Bürgipfad: schlechtes Kopfsteinpflaster	Q3 5484,439 5495,390 5591,240
 Gotlandstr.: mäßiges Kopfsteinpflaster	Q2 10765,16486 10773,16628 10783,16760
 #: by: Doreen Borgwardt: vvv
 #: note: laut ADFC-Karte ebenfalls nur mäßig geeignet:
-Treseburger Ufer: Kopfsteinpflaster	Q2 12052,5710 12301,5783
+Treseburger Ufer: Kopfsteinpflaster	Q2 12052,5710 12144,5737 12301,5783
 Treseburger Ufer: Kopfsteinpflaster	Q2 12301,5783 12699,5909
 #: by: ^^^
 #: by: Johannes (butt):
@@ -3070,6 +3075,18 @@ Raabestr.: Kopfsteinpflaster	Q2 9762,155 9789,150 10063,251 10602,438
 Teltower Weg: Waldweg	Q1 -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -174,5941 -107,5880
 #: by: Helm Dirk:
 Holzmannstr.: Kopfsteinpflaster	Q2 11436,6588 11479,6319 11502,6194 11522,6160
+#: by: Bernd (webworld):
+Filehner Str.: Asphalt	Q0 22398,6829 22439,6892 22526,7329 22551,7428
+#: by: Olaf (hoehne):
+Rapstedter Weg: Beton	Q0 9578,-92 9573,-3 9626,185 9832,658 9870,677
+#: by: Oliver Hauf:
+Symeonstr.: Asphalt	Q0 7630,1297 7501,1246
+#: by: Hans Müller (aol):
+Illstr.: Asphalt	Q0 5674,6834 5654,6941
+#: by: Viviane Klee:
+Lauterberger Str.: Kopfsteinpflaster	Q2 12144,5737 12132,5993 12099,6198
+#: by: Sven Voss:
+Waldkraiburger Str.: Asphalt	Q0 12608,5046 12492,4995 12283,4971
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

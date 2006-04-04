@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.145 2006/03/29 23:31:12 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.146 2006/04/02 20:46:50 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1227,6 +1227,8 @@ sub coord_to_markers_dialog {
 
     my @marker_points;
     my $marker_points_no = 0;
+    my $orig_steady_mark = $steady_mark;
+    $steady_mark = 1;
 
     my $update_marker_points = sub {
 	$marker_points_no = scalar @marker_points;
@@ -1266,7 +1268,7 @@ sub coord_to_markers_dialog {
 	     }
 	 });
 
-    Tk::grid($t->Label(-text => M"Punkte erkannt:"),
+    Tk::grid($t->Label(-text => M("Punkte erkannt").":"),
 	     $t->Label(-textvariable => \$marker_points_no),
 	     -sticky => "w");
     Tk::grid($t->Button(-text => M"Letzten Punkt löschen",
@@ -1292,6 +1294,7 @@ sub coord_to_markers_dialog {
 		       ),
 	     -columnspan => 2,
 	     -sticky => "w");
+    $t->OnDestroy(sub { $steady_mark = $orig_steady_mark; });
 }
 
 sub add_search_menu_entries {

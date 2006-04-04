@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.118 2006/03/29 23:29:50 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.118 2006/03/29 23:29:50 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1872,15676
@@ -1208,6 +1208,8 @@ Pflugstr.: Asphalt	Q0 8781,14357 8662,14567
 Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 Eulerstr.: Asphalt	Q0 9268,16228 9494,16455
+Wilhelmshavener Str.: Kopfsteinpflaster	Q2 -3866,13761 -3839,13845 -3802,13954
+Meyerheimstr.: Asphalt	Q0 11849,15760 11905,15878 11961,16002
 Boschweg: Beton	Q0 14784,6169 14788,6261 14760,6319 14564,6496
 Maselakeweg: Verbundsteinpflaster	Q1 -2441,16996 -2391,16607 -2340,16590
 Sellinstr.: mäßiger Asphalt	Q1 11215,17927 11238,17785
@@ -1466,7 +1468,7 @@ Nordmannzeile: sehr gute Qualität	Q0 6773,7116 6807,7262
 Bornemannstr.: Asphalt	Q0 8187,15965 8003,16098
 Holsteinische Str.: Asphalt	Q0 5070,9720 5066,9645 5065,9407 5046,8940
 Eisnerstr.: Asphalt	Q0 9500,-115 9693,-621
-Dörfelweg	Q0 9716,-55 9500,-115
+Dörfelweg	Q0 9716,-55 9578,-92 9500,-115
 Eisnerstr. - S.Bhf Buckower Chaussee: asphaltiert, allerdings an einigen Stellen Beschädigungen durch Baumwurzeln	Q0 9500,-115 9178,556
 (Unter dem S-Bhf. Schichauweg): Verbundsteinpflaster	Q1 9693,-621 9518,-668
 Miethepfad: Verbundsteinpflaster	Q1 9518,-668 9557,-779 9585,-859
@@ -2255,7 +2257,7 @@ Paul-Schwenk-Str.: Beton	Q0 19800,14726 19765,14737 19613,14728 19579,14783 1958
 Kattegatstr.: Asphalt	Q0 9475,17557 9331,17658 9197,17762
 Bürgipfad: schlechtes Kopfsteinpflaster	Q3 5484,439 5495,390 5591,240
 Gotlandstr.: mäßiges Kopfsteinpflaster	Q2 10765,16486 10773,16628 10783,16760
-Treseburger Ufer: Kopfsteinpflaster	Q2 12052,5710 12301,5783
+Treseburger Ufer: Kopfsteinpflaster	Q2 12052,5710 12144,5737 12301,5783
 Treseburger Ufer: Kopfsteinpflaster	Q2 12301,5783 12699,5909
 Glaßbrennerstr.: Kopfsteinpflaster	Q2 11543,16207 11632,16373
 Grabertstr.: Asphalt	Q0 7110,4747 7087,4887 6945,5060
@@ -2266,6 +2268,12 @@ Culemeyerstr.: asphaltiert	Q0 9847,1274 9808,1264 9734,1235
 Raabestr.: Kopfsteinpflaster	Q2 9762,155 9789,150 10063,251 10602,438
 Teltower Weg: Waldweg	Q1 -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -174,5941 -107,5880
 Holzmannstr.: Kopfsteinpflaster	Q2 11436,6588 11479,6319 11502,6194 11522,6160
+Filehner Str.: Asphalt	Q0 22398,6829 22439,6892 22526,7329 22551,7428
+Rapstedter Weg: Beton	Q0 9578,-92 9573,-3 9626,185 9832,658 9870,677
+Symeonstr.: Asphalt	Q0 7630,1297 7501,1246
+Illstr.: Asphalt	Q0 5674,6834 5654,6941
+Lauterberger Str.: Kopfsteinpflaster	Q2 12144,5737 12132,5993 12099,6198
+Waldkraiburger Str.: Asphalt	Q0 12608,5046 12492,4995 12283,4971
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934

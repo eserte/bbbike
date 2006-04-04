@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_comment.cgi,v 1.27 2006/03/25 13:55:44 eserte Exp $
+# $Id: mapserver_comment.cgi,v 1.27 2006/03/25 13:55:44 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -28,6 +28,7 @@ use lib (#"/home/e/eserte/src/bbbike",
 	);
 use BBBikeVar;
 use BBBikeCGIUtil qw();
+use Data::Dumper;
 use Mail::Send;
 use File::Basename;
 use CGI qw(:standard -no_xhtml);
@@ -130,7 +131,6 @@ eval {
 	print BACKUP "-" x 70, "\n";
 	print BACKUP scalar localtime;
 	print BACKUP "\n";
-	require Data::Dumper;
 	for my $param (param) {
 	    my $dump = Data::Dumper->new([param($param)],[$param])->Indent(1)->Useqq(1)->Dump;
 	    print BACKUP $dump;
@@ -152,6 +152,7 @@ eval {
 	$link2 = "http://www/bbbike/cgi/bbbike.cgi?" . param("query");
 	print $fh "Remote: ", $link1, "\n";
 	print $fh "Lokal:  ", $link2, "\n";
+	print $fh "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
     } else {
 	$comment =
 	    "Von: " . ($by || "anonymous\@bbbike.de") . "\n" .
@@ -162,7 +163,9 @@ eval {
 	print $fh $comment . "\n";
 	print $fh "Remote: ", $link1, "\n" if defined $link1;
 	print $fh "Lokal:  ", $link2, "\n" if defined $link2;
+	print $fh "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
     }
+
     die "Kann open mit Mail::Send->open(@Mail_Send_open) nicht durchführen" if $die_later;
     $fh->close or die "Can't close mail filehandle";
 

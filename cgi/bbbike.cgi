@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.9 2006/03/26 19:09:38 eserte Exp $
+# $Id: bbbike.cgi,v 8.9 2006/03/26 19:09:38 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -2881,7 +2881,7 @@ sub search_coord {
 	    $qualitaet_net->make_net_cat;
 	}
 	my $penalty;
-	if ($q->param('pref_quality') eq 'Q2') {
+	if ($q->param('pref_quality') eq 'Q0') {
 	    $penalty = { "Q0" => 1,
 			 "Q1" => 1.2,
 			 "Q2" => 1.6,

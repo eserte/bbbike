@@ -2510,7 +2510,7 @@ EOF
      },
      { from  => 1135370995, # 2005-12-23 21:49
        until => 1146434400, # 2006-05-01 00:00
-       text  => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist möglicherweise noch passierbar (Swinemünder Brücke). Dauer: bis 30.04.2006 ',
+       text  => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist passierbar (Swinemünder Brücke). Dauer: bis 30.04.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 9494,15998 9583,15851
@@ -3714,8 +3714,8 @@ userdel	q4 -4355,-35264 -4204,-35072
 EOF
      },
      { from  => 1142809200, # 2006-03-20 00:00
-       until => 1143842400, # 2006-04-01 00:00
-       text  => 'L 070 Sperenberg-Trebbin zw. Abzw.Chrisinend. u. Abzw.Kl.Schulzend.Ber.Brücke B101n Brückenbau Vollsperrung 21.03.2006-31.03.2006 ',
+       until => 1144187940, # 2006-04-04 23:59
+       text  => 'L 070 Sperenberg-Trebbin zw. Abzw.Chrisinend. u. Abzw.Kl.Schulzend.Ber.Brücke B101n Brückenbau Vollsperrung 21.03.2006-04.04.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 1740,-23380 1079,-23181
@@ -3910,6 +3910,56 @@ EOF
        data  => <<EOF,
 userdel	2 -15302,43177 -15278,42709
 userdel	2 -14998,42541 -15278,42709
+EOF
+     },
+     { from  => 1143928800, # 2006-04-02 00:00
+       until => 1157148000, # 2006-09-02 00:00
+       text  => 'B 198 Dr. Wilhelm Külz Str. Straßenbau Vollsperrung 03.04.2006-01.09.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 39322,101924 39574,101863
+userdel	q4 39715,101866 39574,101863
+EOF
+     },
+     { from  => 1142377200, # 2006-03-15 00:00
+       until => 1151704800, # 2006-07-01 00:00
+       text  => 'B 198 bei Schmiedeberg Neubau Brücke Vollsperrung 16.03.2006-30.06.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 46677,82770 47081,83093
+EOF
+     },
+     { from  => 1133046000, # 2005-11-27 00:00
+       until => 1151704800, # 2006-07-01 00:00
+       text  => 'K 6422 Ernst-Thälmann-Str. OL Fredersdorf, Kno.. Bollensdorfer Allee u. Kno. Fließstr. Errichtung Lichtsignalanlage Vollsperrung 28.11.2005-30.06.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 34139,13113 33644,12458
+EOF
+     },
+     { from  => 1143410400, # 2006-03-27 00:00
+       until => 1159653600, # 2006-10-01 00:00
+       text  => 'L 220 OD Joachimsthal Bau Kreisverkehr Vollsperrung 28.03.2006-30.09.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 33787,63026 33254,63446
+EOF
+     },
+     { from  => 1143583200, # 2006-03-29 00:00
+       until => 1144447200, # 2006-04-08 00:00
+       text  => 'L 745 Motzen- Gallun zw. OA Motzen und OE Gallun Straßenbau Vollsperrung 30.03.2006-07.04.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 22476,-19219 22338,-19081
+userdel	2 22476,-19219 22599,-19785
+EOF
+     },
+     { from  => 1144015200, # 2006-04-03 00:00
+       until => 1148162400, # 2006-05-21 00:00
+       text  => 'B 112 Steinsdorf, Einmündung L45/B112 Herstellung Anbindung L45 Vollsperrung 04.04.2006-20.05.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 98052,-40791 98091,-41089
 EOF
      },
     );

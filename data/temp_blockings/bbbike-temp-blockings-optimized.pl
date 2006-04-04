@@ -126,14 +126,7 @@ push @temp_blocking,
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1143756000,
-         'text' => 'B 001 Potsdamer Str. OD Groß Kreutz Kanal- und Straßenbau; Vollsperrung 27.04.2005-30.03.2006 ',
-         'from' => 1114466400,
-         'data' => 'userdel	q4	-28793,-1618 -31991,-1024
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -227,7 +220,7 @@ push @temp_blocking,
        undef,
        {
          'until' => 1146434400,
-         'text' => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist möglicherweise noch passierbar (Swinemünder Brücke). Dauer: bis 30.04.2006 ',
+         'text' => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist passierbar (Swinemünder Brücke). Dauer: bis 30.04.2006 ',
          'from' => 1135370995,
          'data' => 'userdel	q4 9494,15998 9583,15851
 ',
@@ -359,15 +352,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_77722',
-         'until' => 1143842399,
-         'text' => 'Pistoriusstr. (Pankow) Richtung Weißensee, zwischen Hamburger Platz und Roelckestr. Baustelle, Fahrtrichtung gesperrt (bis 03/2006)',
-         'from' => 1132606608,
-         'data' => 'userdel	1 12708,16699 12874,16631 13131,16525
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_002441',
          'until' => 1149199199,
@@ -395,15 +380,7 @@ userdel	q4 55158,-95910 54884,-96292
        undef,
        undef,
        undef,
-       {
-         'until' => 1143842400,
-         'text' => 'K 6950 Gohlitzstr. OL Lehnin, zw. Belziger Str. u. Lindenstr. Straßenbau; Herst.Umleit.stre. Vollsperrung 11.10.2005-31.03.2006 ',
-         'from' => 1135983600,
-         'data' => 'userdel	q4 -34655,-11263 -34337,-11047
-userdel	q4 -34232,-10832 -34337,-11047
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -503,8 +480,8 @@ userdel	q4 -34232,-10832 -34337,-11047
          'type' => 'handicap'
        },
        {
-         'until' => 1143842400,
-         'text' => 'L 070 Sperenberg-Trebbin zw. Abzw.Chrisinend. u. Abzw.Kl.Schulzend.Ber.Brücke B101n Brückenbau Vollsperrung 21.03.2006-31.03.2006 ',
+         'until' => 1144187940,
+         'text' => 'L 070 Sperenberg-Trebbin zw. Abzw.Chrisinend. u. Abzw.Kl.Schulzend.Ber.Brücke B101n Brückenbau Vollsperrung 21.03.2006-04.04.2006 ',
          'from' => 1142809200,
          'data' => 'userdel	2 1740,-23380 1079,-23181
 ',
@@ -577,14 +554,7 @@ userdel	q4 12578,14237 12499,14136
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1143842400,
-         'text' => 'B 122 Alt Ruppin-Dierberg Bahnübergang bei Dierberg Gleisbauarbeiten Vollsperrrung 28.03.2006-31.03.2006 ',
-         'from' => 1143410400,
-         'data' => 'userdel	2 -28116,60092 -27347,60616
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1146607200,
          'text' => 'L 074 Chausseestraße OL Wünsdorf, Bahnbrücke Brückenbauarbeiten Vollsperrung 02.05.2006-02.05.2006 ',
@@ -594,15 +564,7 @@ userdel	2 15682,-26971 15960,-26906
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1143756000,
-         'text' => 'L 074 Chausseestraße OL Wünsdorf, Bahnbrücke Brückenbauarbeiten Vollsperrung 30.03.2006-30.03.2006 ',
-         'from' => 1143583200,
-         'data' => 'userdel	2 15682,-26971 15229,-27157
-userdel	2 15682,-26971 15960,-26906
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1146693600,
@@ -639,14 +601,7 @@ userdel	2 16336,-29511 16379,-29446
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1143820800,
-         'text' => 'Hirtenstr. Arbeiten an Wasserleitungen, Straße in beiden Richtungen gesperrt. (zwischen Rosa-Luxemburg-Str. und Kleine Alexanderstr.) bis 31.03.06, 18:00 Uhr ',
-         'from' => 1143575024,
-         'data' => 'userdel	q4 10846,13362 10923,13317
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_002552',
          'until' => undef,
@@ -672,6 +627,56 @@ userdel	2 16336,-29511 16379,-29446
 userdel	2 -14998,42541 -15278,42709
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1157148000,
+         'text' => 'B 198 Dr. Wilhelm Külz Str. Straßenbau Vollsperrung 03.04.2006-01.09.2006 ',
+         'from' => 1143928800,
+         'data' => 'userdel	q4 39322,101924 39574,101863
+userdel	q4 39715,101866 39574,101863
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1151704800,
+         'text' => 'B 198 bei Schmiedeberg Neubau Brücke Vollsperrung 16.03.2006-30.06.2006 ',
+         'from' => 1142377200,
+         'data' => 'userdel	2 46677,82770 47081,83093
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1151704800,
+         'text' => 'K 6422 Ernst-Thälmann-Str. OL Fredersdorf, Kno.. Bollensdorfer Allee u. Kno. Fließstr. Errichtung Lichtsignalanlage Vollsperrung 28.11.2005-30.06.2006 ',
+         'from' => 1133046000,
+         'data' => 'userdel	q4 34139,13113 33644,12458
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1159653600,
+         'text' => 'L 220 OD Joachimsthal Bau Kreisverkehr Vollsperrung 28.03.2006-30.09.2006 ',
+         'from' => 1143410400,
+         'data' => 'userdel	q4 33787,63026 33254,63446
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1144447200,
+         'text' => 'L 745 Motzen- Gallun zw. OA Motzen und OE Gallun Straßenbau Vollsperrung 30.03.2006-07.04.2006 ',
+         'from' => 1143583200,
+         'data' => 'userdel	2 22476,-19219 22338,-19081
+userdel	2 22476,-19219 22599,-19785
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1148162400,
+         'text' => 'B 112 Steinsdorf, Einmündung L45/B112 Herstellung Anbindung L45 Vollsperrung 04.04.2006-20.05.2006 ',
+         'from' => 1144015200,
+         'data' => 'userdel	q4 98052,-40791 98091,-41089
+',
+         'type' => 'handicap'
        }
      
 );

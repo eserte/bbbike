@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.228 2006/03/20 22:40:40 eserte Exp eserte $
+# $Id: bbbike,v 3.230 2006/04/02 21:38:49 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -202,7 +202,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.228 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.230 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -311,7 +311,7 @@ $str_nr_draw{'sBAB'} = 1; # XXX sollte vielleicht umschaltbar sein?
    'str_r' => ['r', 'sperre_r', 'r-bg', 'r-fg', 'r_bg-img', 'r-label'],
    'str_w' => ['w-out', 'w', 'i-out', 'i', 'w-label-bg', 'w-label'],
    'str_f' => ['f', 'f-label-bg', 'f-label', 'f-Pabove'],
-   'str_g' => ['z', 'g', 'gP', 'gD'],
+   'str_g' => ['z', 'g', 'gBO', 'gP', 'gD', 'gBO-label-bg', 'gBO-label'],
    'p_kn'  => ['kn', 'ki', 'rest'],
    'map'   => ['map'],
    'route' => ['route'],
@@ -2227,6 +2227,18 @@ sub do_iconframe {
     $fcm->checkbutton(-label => M"Grenzen von Berlin",
 		      -variable => \$str_draw{'g'},
 		      -command => sub { plot('str','g') });
+    if ($advanced && $devel_host) {
+	$fcm->checkbutton(-label => M"Berliner Ortsteile",
+			  -variable => \$str_draw{'gBO'},
+			  -command => sub { plot('str', 'gBO') });
+	$str_name_draw{"gBO"} = 1; # force drawing of labels
+	$fcm->checkbutton(-label => M"Berliner Ortsteilnamen",
+			  -variable => \$str_name_draw{'gBO'},
+			  -command => sub {
+			      pending(1, 'replot-str-gBO');
+			  },
+			 );
+    }
     $fcm->checkbutton(-label => M"Grenzen von Potsdam",
 		      -variable => \$str_draw{'gP'},
 		      -command => sub { plot('str','gP') });
@@ -5024,7 +5036,7 @@ sub define_item_attribs {
     foreach (qw/sperre1s/) {
 	$line_width{$_} = [@{ $line_width{"sperre1"}}];
     }
-    foreach (qw/gP gD/) {
+    foreach (qw/gBO gP gD/) {
 	$line_width{$_} = [@{ $line_width{"g"}}];
     }
     foreach (@comments_types) {
@@ -5052,7 +5064,7 @@ sub define_item_attribs {
 	 'U0'   => [2,5],
 	 'S0'   => [2,5],
 	);
-    foreach (qw/gP gD/) {
+    foreach (qw/gBO gP gD/) {
 	$line_dash{$_} = [@{ $line_dash{"g"}}];
     }
     foreach (@comments_types) {
@@ -5106,6 +5118,7 @@ sub define_item_attribs {
 	 'g'  => 'berlin',
 	 'gP' => "potsdam",
 	 'gD' => "deutschland",
+	 'gBO'=> "berlin_ortsteile",
 	 'e'  => 'faehren',
 	 'rw' => 'radwege',
 	 'qs' => 'qualitaet_s',
@@ -5164,6 +5177,7 @@ sub define_item_attribs {
 	 'g' => [M"Grenze von Berlin", M"Grenze von Berlin",       0],
 	 'gP' => [M"Grenze von Potsdam", M"Grenze von Potsdam",       0],
 	 'gD' => [M"Staatsgrenze", M"Staatsgrenze",       0],
+	 'gBO' => [M"Berliner Ortsteil", M"Berliner Ortsteile", 0],
 	 'e' => [M"Fähre",       M"Fähren",       0],
 	 'rw' => [M"Radweg",     M"Radwege", 0],
 	 'qs' => [M"Straßenqualität", M"Straßenqualität", 0],
@@ -5306,9 +5320,9 @@ sub define_item_attribs {
     #XXX labels sollten grundsätzlich immer oben sein. Problematisch bei tag_groups
     @normal_stack_order =
 	(qw(map f w-out w i-out i f-Pabove crosshairs e e-img
-	    gP gD z g gP gD
+	    gP gD z g gP gD gBO
 	    s-out l-out show gr rw s-NN s-N s-H s-HH s-B s-BAB sBAB sBAB-BAB l v
-	    f-label-bg wr w-label-bg f-label w-label
+	    f-label-bg wr w-label-bg gBO-label-bg f-label w-label gBO-label
 	    u sperre_u u-bg u-fg u_bg-img r sperre_r b sperre_b
 	    r-bg r-fg r_bg-img b-bg b-fg b_bg-img
 	    u-label r-label b-label
@@ -5408,6 +5422,8 @@ sub generate_plot_functions {
 		my($mx,$my);
 		my $image;
 		my $anchor = "c";
+		my $category = $cat_hin; # used for undirected things
+		my $item; # canvas item drawn
 
 		if (exists $line_shorten{$cat_hin}) { # XXX no $cat_rueck handling
 		    line_shorten(\@coordlist);
@@ -5445,9 +5461,80 @@ sub generate_plot_functions {
 		    }
 		};
 
+		my $draw_strname_for_area = sub {
+		    my($name, $add) = split(/\|/, $strname);
+		    $name = "" if !defined $name;
+		    if ($add) {
+		        $name .= " $add";
+		    }
+		    $name =~ s/\cK/\n/g; # vert tab -> newline
+		    ($mx,$my) = get_polygon_center(@coordlist);
+		    if (!defined $mx || ! do {
+		        my @zipped_coordlist;
+		        for(my $i = 0; $i < $#coordlist; $i+=2) {
+		    	push @zipped_coordlist, [$coordlist[$i], $coordlist[$i+1]];
+		        }
+		        point_in_polygon([$mx,$my], \@zipped_coordlist);
+		    }) {
+		        my $middle = int $#coordlist/2;
+		        if ($middle%2 != 0) {
+		    	$middle--;
+		        }
+		        ($mx,$my) = @coordlist[$middle,$middle+1];
+		    }
+		    
+		    my $abk_fg = $abk;
+		    if ($abk eq 'v') {
+		        $abk_fg = 'v-fg';
+		    } elsif ($abk =~ /^(?:[fw]|gBO)$/) {
+		        $abk_fg = $abk."-label";
+		    }
+		    my $tags = [$abk_fg, $strname];
+		    my %args = (-text => $name,
+		    	    -tags => $tags,
+		    	    -outlinewidth => 2,
+		    	    (exists $category_font_color{$category} ? (-fill => $category_font_color{$category}) : ()),
+		    	    (exists $category_font{$category} ? (-font => $category_font{$category}) : ()),
+		    	   );
+		    if (exists $category_font{$category} &&
+		        $category_font{$category} =~ /%d/) {
+		        my $bbox_area = get_bbox_area($item);
+		        # XXX bessere Abstufungen
+		        if ($bbox_area < 1500) {
+		    	$args{-font} = sprintf $category_font{$category}, 7;
+		        } elsif ($bbox_area > 5000) {
+		    	$args{-font} = sprintf $category_font{$category}, 12;
+		        } else {
+		    	$args{-font} = sprintf $category_font{$category}, 10;
+		        }
+		    }
+		    
+		    if (!$no_overlap_label{$abk} ||
+		        !draw_text_intelligent
+		            ($c, $mx, $my,
+		    	 %args,
+		    	 -abk  => $abk_fg,
+		    	 -xadd => $xadd_anchor,
+		    	 -yadd => $yadd_anchor,
+		    	 -outline => 1,
+		    	)) {
+		        my($mx,$my) = ($mx,$my);
+		        if (defined $label_spaceadd) {
+		            $args{-text} = $label_spaceadd . $args{-text};
+		    	$args{-anchor} = "w";
+		        } elsif (# shift to right for points,
+		    	     # center for polygons
+		    	     @coordlist == 2 || $abk eq 'v') {
+		            $mx += $xadd_anchor->{'w'};
+		            $my += $yadd_anchor->{'w'};
+		    	$args{-anchor} = "w";
+		        }
+		        outline_text($c, $mx, $my, %args);
+		    }
+		};
+
 		if ($cat_hin =~ /^F:(.*)$/) { # Fläche, no $cat_rueck handling here
-		    my $item;
-		    my $category = $1;
+		    $category = $1;
 		    my($color, $rest) = split(/\|/, $category);
 		    my $stipple = $category_stipple{$category};
 		    if (defined $rest && $rest ne "") {
@@ -5493,75 +5580,7 @@ sub generate_plot_functions {
 		    }
 
 		    if ($str_name_draw{$abk}) {
-			my($name, $add) = split(/\|/, $strname);
-			$name = "" if !defined $name;
-			if ($add) {
-			    $name .= " $add";
-			}
-			$name =~ s/\cK/\n/g; # vert tab -> newline
-			($mx,$my) = get_polygon_center(@coordlist);
-			if (!defined $mx || ! do {
-			    my @zipped_coordlist;
-			    for(my $i = 0; $i < $#coordlist; $i+=2) {
-				push @zipped_coordlist, [$coordlist[$i], $coordlist[$i+1]];
-			    }
-			    point_in_polygon([$mx,$my], \@zipped_coordlist);
-			}) {
-			    my $middle = int $#coordlist/2;
-			    if ($middle%2 != 0) {
-				$middle--;
-			    }
-			    ($mx,$my) = @coordlist[$middle,$middle+1];
-			}
-
-			my $abk_fg = $abk;
-			if ($abk eq 'v') {
-			    $abk_fg = 'v-fg';
-			} elsif ($abk =~ /^[fw]$/) {
-			    $abk_fg = $abk."-label";
-			}
-			my $tags = [$abk_fg, $strname];
-			my %args = (-text => $name,
-				    -tags => $tags,
-				    -outlinewidth => 2,
-				    (exists $category_font_color{$category} ? (-fill => $category_font_color{$category}) : ()),
-				    (exists $category_font{$category} ? (-font => $category_font{$category}) : ()),
-				   );
-			if (exists $category_font{$category} &&
-			    $category_font{$category} =~ /%d/) {
-			    my $bbox_area = get_bbox_area($item);
-			    # XXX bessere Abstufungen
-			    if ($bbox_area < 1500) {
-				$args{-font} = sprintf $category_font{$category}, 7;
-			    } elsif ($bbox_area > 5000) {
-				$args{-font} = sprintf $category_font{$category}, 12;
-			    } else {
-				$args{-font} = sprintf $category_font{$category}, 10;
-			    }
-			}
-
-			if (!$no_overlap_label{$abk} ||
-			    !draw_text_intelligent
-			        ($c, $mx, $my,
-				 %args,
-				 -abk  => $abk_fg,
-				 -xadd => $xadd_anchor,
-				 -yadd => $yadd_anchor,
-				 -outline => 1,
-				)) {
-			    my($mx,$my) = ($mx,$my);
-			    if (defined $label_spaceadd) {
-			        $args{-text} = $label_spaceadd . $args{-text};
-				$args{-anchor} = "w";
-			    } elsif (# shift to right for points,
-				     # center for polygons
-				     @coordlist == 2 || $abk eq 'v') {
-			        $mx += $xadd_anchor->{'w'};
-			        $my += $yadd_anchor->{'w'};
-				$args{-anchor} = "w";
-			    }
-			    outline_text($c, $mx, $my, %args);
-			}
+			$draw_strname_for_area->();
 		    }
 
 		    if (($abk eq 'v' && $star_photo) || $image) {
@@ -5577,7 +5596,8 @@ sub generate_plot_functions {
 		    # XXX $abk-XXX => $abk-fg or $abk-img ?
 		    # XXX use $abk-fg for now (scaling works!)
 		    if ($p) {
-			$c->createImage(@coordlist[0..1], -image => $p,
+			$item = $c->createImage(@coordlist[0..1],
+					-image => $p,
 					-anchor => $anchor,
 					-tags => [$abk, $strname,
 						  "$abk-fg", "$abk-" . $i],
@@ -5617,7 +5637,7 @@ sub generate_plot_functions {
 			}
 
 			# dicken Punkt zeichnen
-			$c->createLine(@coordlist, @coordlist,
+			$item = $c->createLine(@coordlist, @coordlist,
 				       -fill => $this_color_hin,
 				       -width => 5, # XXX skalieren
 				       -capstyle => 'round',
@@ -5705,7 +5725,7 @@ sub generate_plot_functions {
 			} elsif ($cat_hin eq 'Tu') {
 			    draw_tunnel_entrance(\@coordlist, width => $this_width_hin+4, tags => \@std_tags);
 			} else {
-			    $c->createLine
+			    $item = $c->createLine
 				(@coordlist,
 				 -fill      => $this_color_hin,
 				 -width     => $this_width_hin,
@@ -5715,6 +5735,10 @@ sub generate_plot_functions {
 				 ($line_dash ? (-dash => $line_dash) : ()),
 				 (exists $line_arrow{$cat_hin} ? (-arrow => $line_arrow{$cat_hin}) : ()),
 				);
+			}
+
+		        if ($str_name_draw{$abk} && $category eq 'Z' && $item) {
+			    $draw_strname_for_area->();
 			}
 
 			# no $cat_rueck support for names
@@ -6043,7 +6067,7 @@ sub set_bindings {
     # XXX route: no!
     foreach (qw(lsa-bg lsa-fg vf-bg vf-fg
 		s-label-bg s-label sBAB-label-bg sBAB-label
-		w-label-bg w-label f-label-bg f-label
+		w-label-bg w-label f-label-bg f-label gBO-label-bg gBO-label
 		l-label-bg l-label
 		u-label b-label r-label show O)) {
 	std_transparent_binding($_);
@@ -7355,9 +7379,11 @@ sub enter_opt_preferences {
     my %var2 = %strcat_speed;
     my %var3 = %radwege_speed;
     my $Entry = 'Entry';
+    my @EntryArgs = ();
     eval {
 	require Tk::NumEntry;
 	$Entry = 'NumEntry';
+	@EntryArgs = (-minvalue => 1);
     };
     my @act_page;
     $act_page[0] = $nb->add("q", -label => M"Straßenqualität");
@@ -7387,13 +7413,59 @@ sub enter_opt_preferences {
 			)->grid(-row => $gridy, -column => 0, -sticky => 'w');
 	my $w;
 	$w = $e[$i] = $act_page[0]->$Entry(-textvariable => \$var{"Q$i"},
-					-width => 3);
+					   -width => 3,
+					   @EntryArgs,
+					  );
 	$w->grid(-row => $gridy, -column => 1, -sticky => 'e');
 	$act_page[0]->Label(-text => 'km/h')->grid(-row => $gridy, -column => 2,
 						-sticky => 'w');
 	$gridy++;
     }
     $e[0]->tabFocus;
+
+    {
+	require Tk::Optionmenu;
+	my $name2inx =
+	    {M"egal" => 0,
+	     M"Kopfsteinpflaster vermeiden" => 1,
+	     M"nur sehr gute Beläge bevorzugen (rennradtauglich)" => 2,
+	     M"freie Eingabe" => 3,
+	    };
+	my $default = M"freie Eingabe";
+	my $o = $act_page[0]->Optionmenu
+	    (-options => [sort { $name2inx->{$a} <=> $name2inx->{$b} } keys %$name2inx],
+	     -variable => \$default,
+	     -command => sub {
+		 my $inx = $name2inx->{$default};
+		 my $speed = get_active_speed();
+		 if ($inx == 0) {
+		     while(my($k,$v) = each %var) {
+			 $var{$k} = $speed;
+		     }
+		 } elsif ($inx == 3) {
+		     # no op
+		 } else {
+		     my $penalty;
+		     if ($inx == 1) { # Kopfsteinpflaster
+			 $penalty = { "Q0" => 1,
+				      "Q1" => 1,
+				      "Q2" => 1.5,
+				      "Q3" => 1.8 };
+		     } else { # rennradtauglich
+			 $penalty = { "Q0" => 1,
+				      "Q1" => 1.2,
+				      "Q2" => 1.6,
+				      "Q3" => 2 };
+		     }
+		     while(my($k,$v) = each %$penalty) {
+			 $var{$k} = int($speed/$v);
+		     }
+		 }
+	     }
+	    )->grid(-row => $gridy,
+		    -column => 0,
+		    -sticky => 'w');
+    }
 
     my $cb1;
     $cb1 = $act_page[0]->Checkbutton
@@ -7419,14 +7491,16 @@ sub enter_opt_preferences {
 						   -columnspan => 2,
 						  );
     $gridy++;
-    # XXX BAB
+    # XXX no BAB here!
     for (qw(HH H N NN)) {
 	my $i = $_;
 	$act_page[1]->Label(-text => $category_attrib{$i}->[ATTRIB_PLURAL] . ": "
 			)->grid(-row => $gridy, -column => 0,
 				-sticky => 'w');
 	my $w = $act_page[1]->$Entry(-textvariable => \$var2{$i},
-				  -width => 3);
+				     -width => 3,
+				     @EntryArgs,
+				    );
 	# bind return XXX
 	$w->grid(-row => $gridy, -column => 1, -sticky => 'e');
 	$act_page[1]->Label(-text => 'km/h')->grid(-row => $gridy, -column => 2,
@@ -7498,7 +7572,9 @@ sub enter_opt_preferences {
 			)->grid(-row => $gridy, -column => 0,
 				-sticky => 'w');
 	my $w = $act_page[2]->$Entry(-textvariable => \$var3{$i},
-				  -width => 3);
+				     -width => 3,
+				     @EntryArgs,
+				    );
 	# bind return XXX
 	$w->grid(-row => $gridy, -column => 1, -sticky => 'e');
 	$act_page[2]->Label(-text => 'km/h')->grid(-row => $gridy, -column => 2,
@@ -7651,7 +7727,9 @@ sub enter_opt_preferences {
 			)->grid(-row => $gridy, -column => 0, -sticky => 'w');
 	my $w;
 	$w = $e[$i] = $act_page[4]->$Entry(-textvariable => \$var4{"q$i"},
-					-width => 3);
+					   -width => 3,
+					   @EntryArgs,
+					  );
 	$w->grid(-row => $gridy, -column => 1, -sticky => 'e');
 	$act_page[4]->Label(-text => 'km/h')->grid(-row => $gridy, -column => 2,
 						-sticky => 'w');
@@ -7920,6 +7998,7 @@ sub speed2power {
 sub max_speed {
     my($speed_belag) = @_;
     my $speed_radler = get_active_speed();
+    return $speed_radler if $speed_belag <= 0; # division by zero protection
     ($speed_belag >= $speed_radler
      ? 1
      : $speed_radler/$speed_belag);
@@ -11690,7 +11769,7 @@ sub show_info {
 	# XXX move mapping or this function to a config-like module
 	my @str_draw_mapping = ([w => "gewaesser"],
 				[f => "flaechen"],
-				[[qw(g gP gD)] => "grenzen"],
+				[[qw(g gP gD gBO)] => "grenzen"],
 				[[qw(u b r)] => "bahn"],
 				[[qw(qs ql)] => "qualitaet"],
 				[[qw(hs hl)] => "handicap"],
@@ -13130,7 +13209,7 @@ sub scale_width {
 	    SBAB-BAB-out s-HH-out s-B-out s-H-out s-N-out s-NN-out
 	    rw
 	    w-W w-W0 w-W1 w-W2 w-W-out w-W0-out w-W1-out w-W2-out wr
-	    l l-out u b r pp p z g gP gD fz
+	    l l-out u b r pp p z g gP gD gBO fz
 	    sperre0 sperre1 sperre1s sperre2)) {
 	eval {
 	CHANGE: {
@@ -13957,7 +14036,7 @@ sub show_overview_populate {
 			($xoff, $yoff,
 			 -image => $radar_image,
 			 -tags => 'radarimage');
-		    foreach my $raise (qw(g gP gD O o)) { # XXX evtl. andere Tags auch raisen
+		    foreach my $raise (qw(g gP gD gBO O o)) { # XXX evtl. andere Tags auch raisen
 			$overview_canvas->raise($raise);
 		    }
 		}

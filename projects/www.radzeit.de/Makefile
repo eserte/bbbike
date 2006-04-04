@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.79 2006/03/27 21:27:51 eserte Exp $
+# $Id: Makefile,v 1.80 2006/04/02 18:14:38 eserte Exp $
 #
 
 # Targets:
@@ -298,9 +298,15 @@ test-makefile:
 # Sub targets
 # Reihenfolge sollte hoffentlich richtig sein
 
-prepare-bbbike-data:
+prepare-bbbike-data:	prepare-bbbike-data-parallel
+
+prepare-bbbike-data-serial:
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} all
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} slow-checks
+
+prepare-bbbike-data-parallel:
+	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && \
+		(${MAKE} -j4 all slow-checks; ${MAKE} all slow-checks)
 
 # I used "mapfiles-without-reference-maps" instead of "mapfiles" here
 # This was because the "mapfiles-reference-maps" rule took a lot of time
@@ -533,7 +539,9 @@ test-on-remote-and-send-mail:
 		${TESTS} | mail slaven@rezic.de ) & \
 	'
 
-test-local:
+test-local: test-local-parallel
+
+test-local-serial:
 	cd ${.CURDIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=${LOCAL_CGI_URL} \
 	BBBIKE_TEST_CGIURL=${LOCAL_CGI_URL}/${BBBIKECGI} \
@@ -541,6 +549,18 @@ test-local:
 	BBBIKE_TEST_MAPSERVERURL=http://localhost/~eserte/cgi/mapserv.cgi \
 	BBBIKE_TEST_HTMLDIR=${LOCAL_HTML_URL} \
 	    perl -MTest::Harness -e 'runtests(@ARGV)' \
+		${TESTS}
+
+# Very experimental! Seems to be somewhat faster on my machine:
+# 11 1/2 minutes vs. 16 minutes for test-local-serial
+test-local-parallel:
+	cd ${.CURDIR}/BBBike/t && \
+	BBBIKE_TEST_CGIDIR=${LOCAL_CGI_URL} \
+	BBBIKE_TEST_CGIURL=${LOCAL_CGI_URL}/${BBBIKECGI} \
+	BBBIKE_TEST_WAPURL=${LOCAL_CGI_URL}/wapbbbike.cgi \
+	BBBIKE_TEST_MAPSERVERURL=http://localhost/~eserte/cgi/mapserv.cgi \
+	BBBIKE_TEST_HTMLDIR=${LOCAL_HTML_URL} \
+	    perl $(HOME)/work/Test-Harness-Parallel/Test-Harness-Parallel.pm \
 		${TESTS}
 
 test-radzeit-old:

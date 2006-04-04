@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikegooglemap.cgi,v 1.29 2006/03/25 13:45:21 eserte Exp $
+# $Id: bbbikegooglemap.cgi,v 1.30 2006/04/04 21:29:15 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005,2006 Slaven Rezic. All rights reserved.
@@ -514,4 +514,4 @@ bbbikegooglemap.cgi - show BBBike data through Google maps
 
 =cut
 
-# rsync -e "ssh -2 -p 5022" -a ~/src/bbbike/cgi/bbbikegooglemap.cgi root@www.radzeit.de:/var/www/domains/radzeit.de/www/cgi-bin/bbbikegooglemap2.cgi
+# rsync -e "ssh -2 -p 5022" -a ~/src/bbbike/cgi/bbbikegooglemap.cgi root@bbbike.radzeit.de:/var/www/domains/radzeit.de/www/cgi-bin/bbbikegooglemap2.cgi
