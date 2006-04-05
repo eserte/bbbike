@@ -3861,8 +3861,8 @@ userdel	2 16407,-29400 16379,-29446
 userdel	2 16336,-29511 16379,-29446
 EOF
      },
-     { from  => 1144965600, # 2006-04-14 00:00
-       until => 1145138400, # 2006-04-16 00:00
+     { from  => 1144262992, # 1144965600 2006-04-14 00:00
+       until => 1144263001, # Cancelled 1145138400 2006-04-16 00:00
        text  => 'B 096 OD Neuhof BÜ Neuhof Gleisbau Vollsperrung 15.04.2006-15.04.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -3904,7 +3904,7 @@ userdel	q4 63609,-34428 64853,-30986
 EOF
      },
      { from  => 1143324000, # 2006-03-25 23:00
-       until => 1152914400, # 2006-07-15 00:00
+       until => 1144263353, # 1152914400 2006-07-15 00:00
        text  => 'L 019 Kremmen, Schloßdamm, Ruppiner Str. Kremmen Neubau Fahrbahn Vollsperrung 27.03.2006-14.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -3960,6 +3960,57 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 98052,-40791 98091,-41089
+EOF
+     },
+     { from  => 1144176662, # 2006-04-04 20:51
+       until => 1144263062, # 2006-04-05 20:51
+       text  => ' ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 16407,-29400 16379,-29446
+userdel	2 16336,-29511 16379,-29446
+EOF
+     },
+     { from  => 1144015200, # 2006-04-03 00:00
+       until => 1151704800, # 2006-07-01 00:00
+       text  => 'K 6419 zw. Rehfelde, R.-Luxemburg-Str. u. OE Strausberg Straßen-,Geh- u. Radwegbau Vollsperrung 04.04.2006-30.06.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 42996,14793 42578,15750
+userdel	2 42578,15750 42300,15756
+userdel	2 41681,15915 42300,15756
+EOF
+     },
+     { from  => 1143324000, # 2006-03-25 23:00
+       until => 1152914400, # 2006-07-15 00:00
+       text  => 'L 019 Schloßdamm, Ruppiner Str. OD Kremmen grundhafter Straßenbau Vollsperrung 27.03.2006-14.07.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -15961,38892 -16173,38465
+EOF
+     },
+     { from  => 1143928800, # 2006-04-02 00:00
+       until => 1153087200, # 2006-07-17 00:00
+       text  => 'L 075 Mahlow-Berlin Karl-Marx-Str. in OD Großziethen zw. Erlenweg und Querweg Straßenbauarbeiten Vollsperrung 03.04.2006-16.07.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 13225,-681 13090,205
+EOF
+     },
+     { from  => 1143928800, # 2006-04-02 00:00
+       until => 1155938400, # 2006-08-19 00:00
+       text  => 'L 077 Lindenstr. OD Stahnsdorf, zw. Streuobsthang u. Ruhlsdorfer Str. Geh- und Radwegbau halbseitig gesperrt; Einbahnstraße 03.04.2006-18.08.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 -2049,-2165 -1921,-1931 -1752,-1823
+EOF
+     },
+     { from  => 1144706400, # 2006-04-11 00:00
+       until => 1145829600, # 2006-04-24 00:00
+       text  => 'L 079 Ludwigsfelde-Ahrensdorf zw. Ludwigsfelde und Ahrensdorf Straßenbauarbeiten Vollsperrung 12.04.2006-23.04.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -2086,-9891 -1245,-9999
 EOF
      },
     );

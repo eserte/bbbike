@@ -479,14 +479,7 @@ userdel	q4 55158,-95910 54884,-96292
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1144187940,
-         'text' => 'L 070 Sperenberg-Trebbin zw. Abzw.Chrisinend. u. Abzw.Kl.Schulzend.Ber.Brücke B101n Brückenbau Vollsperrung 21.03.2006-04.04.2006 ',
-         'from' => 1142809200,
-         'data' => 'userdel	2 1740,-23380 1079,-23181
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1193871599,
          'text' => 'Die Kaulsdorfer Brücke ist ab Montag 06.03.2006, 6.00 Uhr bis voraussichtlich Herbst 2007 gesperrt.',
@@ -584,15 +577,7 @@ userdel	2 16336,-29511 16379,-29446
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1145138400,
-         'text' => 'B 096 OD Neuhof BÜ Neuhof Gleisbau Vollsperrung 15.04.2006-15.04.2006 ',
-         'from' => 1144965600,
-         'data' => 'userdel	2 16407,-29400 16379,-29446
-userdel	2 16336,-29511 16379,-29446
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1149112800,
          'text' => 'B 198 OD Kerkow Greiffenbg.Str. Kerkow Neubau Straße Vollsperrung 22.03.2006-31.05.2006 ',
@@ -619,15 +604,7 @@ userdel	2 16336,-29511 16379,-29446
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1152914400,
-         'text' => 'L 019 Kremmen, Schloßdamm, Ruppiner Str. Kremmen Neubau Fahrbahn Vollsperrung 27.03.2006-14.07.2006 ',
-         'from' => 1143324000,
-         'data' => 'userdel	2 -15302,43177 -15278,42709
-userdel	2 -14998,42541 -15278,42709
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1157148000,
          'text' => 'B 198 Dr. Wilhelm Külz Str. Straßenbau Vollsperrung 03.04.2006-01.09.2006 ',
@@ -677,6 +654,49 @@ userdel	2 22476,-19219 22599,-19785
          'data' => 'userdel	q4 98052,-40791 98091,-41089
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => 1151704800,
+         'text' => 'K 6419 zw. Rehfelde, R.-Luxemburg-Str. u. OE Strausberg Straßen-,Geh- u. Radwegbau Vollsperrung 04.04.2006-30.06.2006 ',
+         'from' => 1144015200,
+         'data' => 'userdel	2 42996,14793 42578,15750
+userdel	2 42578,15750 42300,15756
+userdel	2 41681,15915 42300,15756
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1152914400,
+         'text' => 'L 019 Schloßdamm, Ruppiner Str. OD Kremmen grundhafter Straßenbau Vollsperrung 27.03.2006-14.07.2006 ',
+         'from' => 1143324000,
+         'data' => 'userdel	2 -15961,38892 -16173,38465
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1153087200,
+         'text' => 'L 075 Mahlow-Berlin Karl-Marx-Str. in OD Großziethen zw. Erlenweg und Querweg Straßenbauarbeiten Vollsperrung 03.04.2006-16.07.2006 ',
+         'from' => 1143928800,
+         'data' => 'userdel	q4 13225,-681 13090,205
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1155938400,
+         'text' => 'L 077 Lindenstr. OD Stahnsdorf, zw. Streuobsthang u. Ruhlsdorfer Str. Geh- und Radwegbau halbseitig gesperrt; Einbahnstraße 03.04.2006-18.08.2006 ',
+         'from' => 1143928800,
+         'data' => 'userdel	1 -2049,-2165 -1921,-1931 -1752,-1823
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1145829600,
+         'text' => 'L 079 Ludwigsfelde-Ahrensdorf zw. Ludwigsfelde und Ahrensdorf Straßenbauarbeiten Vollsperrung 12.04.2006-23.04.2006 ',
+         'from' => 1144706400,
+         'data' => 'userdel	2 -2086,-9891 -1245,-9999
+',
+         'type' => 'gesperrt'
        }
      
 );

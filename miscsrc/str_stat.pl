@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: str_stat.pl,v 1.10 2004/12/22 00:45:47 eserte Exp $
+# $Id: str_stat.pl,v 1.11 2006/04/04 22:02:42 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2004,2006 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -27,8 +27,14 @@ my %str;
 my $do_wasserstrassen = 0;
 
 my $do_area;
-if (!GetOptions("area!" => \$do_area)) {
-    die "usage: $0 [-area] file ...";
+my $splitlines;
+if (!GetOptions("area!" => \$do_area,
+		"splitlines" => \$splitlines,
+	       )) {
+    die "usage: $0 [-area] [-splitlines] file ...
+-area: calculate areas instead of lines
+-splitlines: split lines like in railways and undergrounds
+";
 }
 
 my @strfile = @ARGV;
@@ -53,21 +59,29 @@ my $str_total_total_len = 0;
     while(1) {
 	my $r = $s->next;
 	last if !@{$r->[1]};
+	my @name = $r->[Strassen::NAME];
+	if ($splitlines) {
+	    @name = split /,/, $name[0];
+	}
+	my($total_area, $total_len);
 	if ($do_area) {
-	    my $total_area = Strassen::area($r);
-	    $str{$r->[Strassen::NAME]} += $total_area/1_000_000;
+	    $total_area = Strassen::area($r);
 	    $str_total_total_len += $total_area/1_000_000;
 	} else {
-	    my $total_len = Strassen::total_len($r);
-	    $str{$r->[Strassen::NAME]} += $total_len/1_000;
+	    $total_len = Strassen::total_len($r);
 	    $str_total_total_len += $total_len/1_000;
+	}
+	for my $name (@name) {
+	    if (defined $total_area) {
+		$str{$name} += $total_area/1_000_000;
+	    } else {
+		$str{$name} += $total_len/1_000;
+	    }
 	}
     }
 }
 
 
-# * Die Auflösung der GIS-Karten ist für eine genaue Flächenberechnung
-#   zu gering. Die stadtinfo-Karten reichen aus.
 if (%seen) {
     print "Seen:\n";
     print join("\n",
