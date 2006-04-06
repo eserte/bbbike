@@ -519,7 +519,9 @@ sub convert_from_route {
 
 	print STDERR $ident, "\n";
 	$idents{$ident}++;
-	$waypoints{$ident}++;
+	if (!$args{-test}) {
+	    $waypoints{$ident}++;
+	}
 
 	if ($n > 0) {
 	    push @d, [$gps->GRMN_RTE_LINK_DATA, $handler->pack_Rte_link_data];

@@ -3524,7 +3524,7 @@ EOF
        text  => 'L 030 Karl-Marx-Str. OD Niederlehme, Autobahnbrücke A 10 Brückenneubau Vollsperrung; Umleitung 19.12.2005-21.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 27547,-9965 27485,-10246
+userdel	2 27535,-10033 27485,-10246
 EOF
      },
      { from  => 1137088800, # 2006-01-12 19:00

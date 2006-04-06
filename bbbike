@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.231 2006/04/05 20:00:54 eserte Exp $
+# $Id: bbbike,v 3.231 2006/04/05 20:00:54 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
@@ -10004,6 +10004,7 @@ sub choose_ort {
 		    @wraplength = ($wraplength) x $max_cols;
 		}
 		my @text_style;
+		require Tk::ItemStyle;
 		for my $col (0 .. $max_cols-1) {
 		    push @text_style, $lb->ItemStyle('text', -wraplength => $wraplength[$col] || 100);
 		}
@@ -10047,7 +10048,9 @@ sub choose_ort {
 	    }
 
 	    eval {
-		$lb->Cache(1);
+		if ($lb->can("Cache")) {
+		    $lb->Cache(1);
+		}
 	    };
 
 	    my $show_sub =  sub {
