@@ -3946,8 +3946,8 @@ userdel	q4 33787,63026 33254,63446
 EOF
      },
      { from  => 1143583200, # 2006-03-29 00:00
-       until => 1144447200, # 2006-04-08 00:00
-       text  => 'L 745 Motzen- Gallun zw. OA Motzen und OE Gallun Straßenbau Vollsperrung 30.03.2006-07.04.2006 ',
+       until => 1144965600, # 2006-04-14 00:00
+       text  => 'L 745 Motzen- Gallun zw. OA Motzen und OE Gallun Straßenbau Vollsperrung 30.03.2006-13.04.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 22476,-19219 22338,-19081
@@ -4011,6 +4011,31 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -2086,-9891 -1245,-9999
+EOF
+     },
+     { from  => 1145570400, # 2006-04-21 00:00
+       until => 1145829600, # 2006-04-24 00:00
+       text  => 'B 001 zw. Abzw. Hennickendorf und Tasdorf Deckenerneuerung Vollsperrung 22.04.2006-23.04.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 36874,10046 37154,10022
+userdel	2 37154,10022 37670,9871
+EOF
+     },
+     { from  => 1144274400, # 2006-04-06 00:00
+       until => 1144620000, # 2006-04-10 00:00
+       text  => 'B 112 Ziltendorf-Brieskow Finkenheerd OD Wiesenau Straßenbauarbeiten Vollsperrung; Umleitung 07.04.2006-09.04.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 91858,-18170 90698,-16886
+EOF
+     },
+     { from  => 1145743200, # 2006-04-23 00:00
+       until => 1146261600, # 2006-04-29 00:00
+       text  => 'L 216 Gollin-Templin OD Vietmannsdorf, Brücke über Mühlengraben Einbau Decke Vollsperrung 24.04.2006-28.04.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 17636,72217 17653,71852
 EOF
      },
     );
