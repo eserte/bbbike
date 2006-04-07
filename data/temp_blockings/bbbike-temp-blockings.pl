@@ -3215,7 +3215,7 @@ userdel	q4 12856,17825 12746,17981
 EOF
      },
      { from  => undef, # 
-       until => Time::Local::timelocal(reverse(2006,7-1,31,0,0,0)), # 2006-07-31 00:00
+       until => 1144438894, # Time::Local::timelocal(reverse(2006,7-1,31,0,0,0)) 2006-07-31 00:00
        text  => 'Köthener Brücke in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis Mitte 2006)',
        type  => 'gesperrt',
        source_id => 'INKO_81917',
@@ -3887,7 +3887,7 @@ userdel	q4 10846,13362 10923,13317
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1144438933, # XXX
        text  => 'Zoppoter Str. (Wilmersdorf) in beiden Richtungen zwischen Heiligendammer Str. und Breitestr. Tiefbauarbeiten, Straße vollständig gesperrt',
        type  => 'handicap',
        source_id => 'IM_002552',
@@ -4036,6 +4036,42 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 17636,72217 17653,71852
+EOF
+     },
+     { from  => 1144438665, # 2006-04-07 21:37
+       until => 1146434400, # 2006-05-01 00:00
+       text  => 'Brücke über den Nordgraben (Reinickendorf) in beiden Richtungen, in Höhe Schorfheidestr. Baustelle, Straße vollständig gesperrt (bis 30.04.06)',
+       type  => 'gesperrt',
+       source_id => 'INKO_82299',
+       data  => <<EOF,
+userdel	2 6281,20369 6289,20468
+EOF
+     },
+     { from  => 1144438729, # 2006-04-07 21:38
+       until => 1144706400, # 2006-04-11 00:00
+       text  => 'Charlottenstr. (Mitte) in beiden Richtungen, in Höhe Mittelstr. Baustelle, Straße vollständig gesperrt (bis 10.04.06)',
+       type  => 'gesperrt',
+       source_id => 'IM_002607',
+       data  => <<EOF,
+userdel	2 9454,12558 9465,12460
+userdel	2 9476,12359 9465,12460
+EOF
+     },
+     { from  => 1144438828, # 2006-04-07 21:40
+       until => 1151704800, # 2006-07-01 00:00
+       text  => 'Roelckestr. (Weissensee) in beiden Richtungen zwischen Charlottenburger Str. und Pistoriusstr. Baustelle, Straße bis 30.06.2006 vollständig gesperrt',
+       type  => 'gesperrt',
+       source_id => 'IM_002598',
+       data  => <<EOF,
+userdel	2 13131,16525 13045,16368
+EOF
+     },
+     { from  => 1144339200, # 2006-04-06 18:00
+       until => 1148745600, # 2006-05-27 18:00
+       text  => 'Herzbergstraße, zwischen Siegfriedstraße und Vulkanstraße gesperrt, die Gegenrichtung ist als Einbahnstraße ausgeschildert, Straße am Wasserwerk, zwischen Herzbergstraße und Landsberger Allee gesperrt, Baustelle. Dauer: 07.04.2006 , 18:00 Uhr bis 27.05.2006, 18:00 Uhr. ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 16866,13532 15880,13535
 EOF
      },
     );

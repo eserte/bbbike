@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.27 2006/03/29 23:35:13 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.28 2006/04/07 20:40:50 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -52,6 +52,13 @@ my $detail_url      = "$base_url/HS_BauBlatt?BaustRowNr="; # . Rownumber
 my $map_url         = "$base_url/ZeigeBaustelle?baust=" ; # . Rownumber
 my @output_as;
 my $delay = 0;
+
+## XXX DEL:
+# open my $fh, "$ENV{HOME}/trash/lbvs_more_details_content.html" or die $!;
+# my $buf = do{local$/=undef;<$fh>;};
+# my $ret = parse_more_details_content($buf);
+# require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$ret],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+# die;
 
 if (!GetOptions("test" => \$test,
 		"i|inputfile=s" => \$inputfile,
@@ -355,8 +362,43 @@ sub parse_details_content {
 			$details{$row_number}{$xy} = $val;
 		    }
 		});
+
+	    my $this_more_info_url = get_url('detail');
+	    $this_more_info_url .= $row_number if !$test;
+	    sleep $delay if $delay;
+	    warn "Get URL $this_more_info_url...\n" if !$quiet;
+	    my $resp_more_info = $ua->get($this_more_info_url);
+	    if (!$resp_more_info->is_success) {
+		warn "Can't fetch $this_more_info_url: " . $resp_more_info->content . ", ignoring...\n";
+	    } else {
+		my %more_details = parse_more_details_content($resp_more_info->content);
+		$details{$row_number}{details} = \%more_details;
+	    }
+
 	});
     values %details;
+}
+
+sub parse_more_details_content {
+    my $content = shift;
+    require Tie::IxHash;
+    tie my %details, 'Tie::IxHash';
+    my $p = HTML::TreeBuilder->new;
+    $p->parse($content);
+    $p->eof;
+    () = $p->look_down(
+	'_tag', 'th',
+	sub {
+	    my $key = HTML::FormatText->new->format($_[0]);
+	    $key =~ s{^\s+}{}; $key =~ s{\s+$}{};
+	    $key =~ s{:$}{};
+	    my $td = $_[0]->right;
+	    my $val = HTML::FormatText->new->format($td);
+	    $val =~ s{^\s+}{}; $val =~ s{\s+$}{};
+	    $val =~ s{\s+}{ }g;
+	    $details{$key} = $val;
+	});
+    \%details;
 }
 
 sub file_or_stdout {
@@ -412,7 +454,9 @@ sub diff {
 	    my $c1 = dclone $detail;
 	    my $c2 = dclone $old_detail;
 	    delete $c1->{"row"};
+	    delete $c1->{"details"};
 	    delete $c2->{"row"};
+	    delete $c2->{"details"};
 	    if (Compare($c1, $c2) == 0) {
 		if ($detail->{$infocol} eq $old_detail->{$infocol}) {
 		    my($x1,$y1) = $Karte::Polar::obj->map2standard(@{$detail}{qw(x y)});

@@ -339,15 +339,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_81917',
-         'until' => 1154296800,
-         'text' => 'Köthener Brücke in beiden Richtungen Baustelle, Straße vollständig gesperrt (bis Mitte 2006)',
-         'from' => undef,
-         'data' => 'userdel	2 8443,10777 8430,10710
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -587,15 +579,7 @@ userdel	2 16336,-29511 16379,-29446
          'type' => 'handicap'
        },
        undef,
-       {
-         'source_id' => 'IM_002552',
-         'until' => undef,
-         'text' => 'Zoppoter Str. (Wilmersdorf) in beiden Richtungen zwischen Heiligendammer Str. und Breitestr. Tiefbauarbeiten, Straße vollständig gesperrt',
-         'from' => undef,
-         'data' => 'userdel	q4 3349,7361 3314,7269
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1147471200,
          'text' => 'B 087 OL Ranzig Deckenerneuerung Vollsperrung 03.04.2006-12.05.2006 ',
@@ -720,6 +704,42 @@ userdel	2 37154,10022 37670,9871
          'text' => 'L 216 Gollin-Templin OD Vietmannsdorf, Brücke über Mühlengraben Einbau Decke Vollsperrung 24.04.2006-28.04.2006 ',
          'from' => 1145743200,
          'data' => 'userdel	2 17636,72217 17653,71852
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_82299',
+         'until' => 1146434400,
+         'text' => 'Brücke über den Nordgraben (Reinickendorf) in beiden Richtungen, in Höhe Schorfheidestr. Baustelle, Straße vollständig gesperrt (bis 30.04.06)',
+         'from' => 1144438665,
+         'data' => 'userdel	2 6281,20369 6289,20468
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002607',
+         'until' => 1144706400,
+         'text' => 'Charlottenstr. (Mitte) in beiden Richtungen, in Höhe Mittelstr. Baustelle, Straße vollständig gesperrt (bis 10.04.06)',
+         'from' => 1144438729,
+         'data' => 'userdel	2 9454,12558 9465,12460
+userdel	2 9476,12359 9465,12460
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002598',
+         'until' => 1151704800,
+         'text' => 'Roelckestr. (Weissensee) in beiden Richtungen zwischen Charlottenburger Str. und Pistoriusstr. Baustelle, Straße bis 30.06.2006 vollständig gesperrt',
+         'from' => 1144438828,
+         'data' => 'userdel	2 13131,16525 13045,16368
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1148745600,
+         'text' => 'Herzbergstraße, zwischen Siegfriedstraße und Vulkanstraße gesperrt, die Gegenrichtung ist als Einbahnstraße ausgeschildert, Straße am Wasserwerk, zwischen Herzbergstraße und Landsberger Allee gesperrt, Baustelle. Dauer: 07.04.2006 , 18:00 Uhr bis 27.05.2006, 18:00 Uhr. ',
+         'from' => 1144339200,
+         'data' => 'userdel	1 16866,13532 15880,13535
 ',
          'type' => 'gesperrt'
        }
