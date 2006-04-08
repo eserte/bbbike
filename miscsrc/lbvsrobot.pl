@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.28 2006/04/07 20:40:50 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.29 2006/04/08 08:44:47 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
@@ -371,8 +371,8 @@ sub parse_details_content {
 	    if (!$resp_more_info->is_success) {
 		warn "Can't fetch $this_more_info_url: " . $resp_more_info->content . ", ignoring...\n";
 	    } else {
-		my %more_details = parse_more_details_content($resp_more_info->content);
-		$details{$row_number}{details} = \%more_details;
+		my $more_details = parse_more_details_content($resp_more_info->content);
+		$details{$row_number}{details} = $more_details;
 	    }
 
 	});

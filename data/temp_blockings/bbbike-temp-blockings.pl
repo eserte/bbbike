@@ -4074,4 +4074,25 @@ EOF
 userdel	1 16866,13532 15880,13535
 EOF
      },
+     { from  => 1144483509, # 2006-04-08 10:05
+       until => 1144706400, # 2006-04-11 00:00
+       text  => 'Möllendorffstr. (Lichtenberg) in Richtung Süden, zwischen Am Containerbahnhof und Frankfurter Allee Baustelle, Straße vollständig gesperrt, Radweg womöglich noch nutzbar (bis 10.04.06)',
+       type  => 'handicap',
+       source_id => 'IM_002605',
+       data  => <<EOF,
+userdel	q4; 15392,12135 15349,12073
+EOF
+     },
+     { from  => undef, # 
+       until => 1144619999, # 2006-04-09 23:59
+       text  => 'Scharnweberstr. (Reinickendorf) in beiden Richtungen zwischen Eichborndamm und Hechelstr. Veranstaltung, Straße vollständig gesperrt (Straßenfest)',
+       type  => 'handicap',
+       source_id => 'IM_002611',
+       data  => <<EOF,
+userdel	q4 4386,17760 4581,17689
+userdel	q4 4386,17760 4324,17782
+userdel	q4 4581,17689 4695,17648
+userdel	q4 4324,17782 4013,17901
+EOF
+     },
     );

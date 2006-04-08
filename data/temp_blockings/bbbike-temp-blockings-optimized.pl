@@ -742,6 +742,27 @@ userdel	2 9476,12359 9465,12460
          'data' => 'userdel	1 16866,13532 15880,13535
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002605',
+         'until' => 1144706400,
+         'text' => 'Möllendorffstr. (Lichtenberg) in Richtung Süden, zwischen Am Containerbahnhof und Frankfurter Allee Baustelle, Straße vollständig gesperrt, Radweg womöglich noch nutzbar (bis 10.04.06)',
+         'from' => 1144483509,
+         'data' => 'userdel	q4; 15392,12135 15349,12073
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_002611',
+         'until' => 1144619999,
+         'text' => 'Scharnweberstr. (Reinickendorf) in beiden Richtungen zwischen Eichborndamm und Hechelstr. Veranstaltung, Straße vollständig gesperrt (Straßenfest)',
+         'from' => undef,
+         'data' => 'userdel	q4 4386,17760 4581,17689
+userdel	q4 4386,17760 4324,17782
+userdel	q4 4581,17689 4695,17648
+userdel	q4 4324,17782 4013,17901
+',
+         'type' => 'handicap'
        }
      
 );
