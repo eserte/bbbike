@@ -582,7 +582,7 @@ Schwarzer Weg: Schotter, abschüssige Strecke	Q2 -3877,5570 -4003,5621
 Fischerhüttenweg: Waldweg, mäßig (Wurzeln, eng) bis OK	Q2 -2235,5128 -2834,5578 -3129,5798 -3226,5870
 Fischerhüttenweg: Waldweg, sandig	Q3 -3723,6254 -3443,6036
 Curtiusstr.: Kopfsteinpflaster	Q2 3024,3863 3201,3968 3259,4002
-Rominter Allee: Kopfsteinpflaster (Q2, vielleicht aber Q1?)	Q2 -99,12019 -95,12038 -125,12173 -163,12303 -287,12460 -328,12654 -396,12749 -469,12947 -435,12997 -426,13030 -421,13050
+Rominter Allee: Kopfsteinpflaster (Q2, vielleicht aber Q1?)	Q2 -99,12019 -95,12038 -125,12173 -163,12303 -287,12460 -328,12654 -396,12749 -410,12792 -472,12961 -435,12997 -426,13030 -421,13050
 Waldemarstr.: teilweise Kopfsteinpflaster/Asphalt	Q1 12180,10604 12145,10618 12056,10655
 Sebastianstr.: Bordsteine	Q3 10918,11084 10939,11045
 Wuhlheide/R1: Parkweg, OK	Q1 20021,6402 18186,7200 18052,7148 18003,7144
@@ -1129,8 +1129,8 @@ Am Berlin-Spandauer Schiffahrtskanal: glatter Belag	Q0 8248,13659 8101,13901 811
 Invalidenfriedhof: Asphalt	Q0 8114,13921 8015,14109
 Uferweg: Asphalt für Radfahrer, Kopfsteinpflaster für Fußgänger	Q0 8015,14109 7993,14114 7954,14187 7807,14441
 (Uferweg am Nordhafen): Asphalt	Q0 7753,14528 7695,14545 7467,14633
-Gabrielenstr.: überwiegend mäßiger Asphalt	Q1 1715,20766 1552,20607 1139,20420 1067,20382
-An der Malche: fester Waldweg	Q1 1139,20420 1060,20557 995,20590 921,20562 864,20646 673,20800
+Gabrielenstr.: überwiegend mäßiger Asphalt	Q1 1715,20766 1518,20615 1127,20434 1060,20403
+An der Malche: fester Waldweg	Q1 1127,20434 1060,20557 995,20590 921,20562 864,20646 673,20800
 Avenue Jean Mermoz: asphaltiert	Q0 3333,18034 3160,17756
 Am Friedhof: mäßiger asphaltiert	Q1 6391,17838 6376,17687 6347,17381
 Soldiner Str.: Kopfsteinpflaster	Q2 8466,17194 8561,17198 8677,17154
@@ -1858,7 +1858,7 @@ Alte Spandauer Poststr.: Waldweg (fester Sandweg)	Q1 -1415,9144 -1482,9276 -1512
 Teltower Weg: fester Waldweg, gut befahrbar	Q1 -903,6923 -1008,7427 -1112,7891 -1317,8836 -1336,9001 -1415,9144
 Alemannenallee: Asphalt	Q0 968,11283 1065,11216 1181,11136
 Kuckhoffstr.: guter Asphalt	Q0 10200,19807 9906,19718 9677,19651 9482,19594 9064,19456 8821,19331 8789,19278
-Lemkestr.: schlechtes Kopfsteinpflaster	Q3 26615,14054 26455,13925 25984,13328 25525,12750 25143,12284 25053,12156
+Lemkestr.: schlechtes Kopfsteinpflaster	Q3 26615,14054 26455,13925 25984,13328 25525,12750 25143,12284 25021,12090
 Stirnerstr.: guter Asphalt	Q0 5909,5072 6068,5028
 Hammersteinstr.: schlechtes grobes Kopfsteinpflaster	Q3 2750,7416 2654,7324 2555,7238 2458,7156 2376,7089
 Hackerstr.: guter Asphalt	Q0 5017,6387 5034,6425 5075,6509 5101,6579 5137,6651 5184,6723
@@ -2022,7 +2022,7 @@ Malchower Str.: mäßig geeignet	Q2 13631,18041 13732,18026 13901,18124
 Wißlerstr.: Asphalt	Q0 23950,5342 23956,5213 23775,5258
 Kloster-Zinna-Str.: Asphalt	Q0 11218,-350 11704,-303
 Mauerweg Lichtenrade - Buckow: unbefestigte Strecke	Q2 11646,-3251 11803,-3250 12232,-2281 12265,-2147 11980,-1197 11736,-293 11581,281 11618,506 11794,550
-Campestr.: Asphalt	Q0 1139,20420 1159,20494 1130,20583
+Campestr.: Asphalt	Q0 1127,20434 1128,20525 1080,20617
 Willdenowstr. (Wedding): Kopfsteinpflaster	Q2 7356,15350 7525,15186 7629,15078
 Lothar-Bucher-Str.: Asphalt	Q0 5598,6136 5748,6067 5845,6062 6024,6080
 Buchhorster Str.: Asphalt	Q0 7992,20515 7637,20614
@@ -2199,7 +2199,7 @@ Ahrenshooper Str.: Beton	Q0 16764,18529 17184,17964
 Ahrenshooper Str.: Beton	Q0 17003,17830 17184,17964 17324,18053
 Wollankstr.: Kopfsteinpflaster	Q2 9624,17693 9727,17804 9832,17925 9870,17971 10004,18133 10089,18180
 Havelstr.: Asphalt	Q0 -3151,14577 -3037,14509
-Klärwerkstr.: Asphalt	Q0 -1255,13304 -1243,13522
+Klärwerkstr.: Asphalt	Q0 -1252,13330 -1243,13522
 Ringstr.: Kopfsteinpflaster	Q2 2701,3064 3050,3316 3184,3413 3375,3544 3507,3635
 Herwarthstr.: Asphalt	Q0 4722,2771 4622,2787 4440,2752 4382,2658 4383,2613
 Fritzi-Massary-Str.: Asphalt	Q0 15131,6295 15147,6311 15386,6310 15428,6355 15426,6398
@@ -2277,6 +2277,11 @@ Lauterberger Str.: Kopfsteinpflaster	Q2 12144,5737 12132,5993 12099,6198
 Waldkraiburger Str.: Asphalt	Q0 12608,5046 12492,4995 12283,4971
 Illerzeile: mäßiger Asphalt	Q1 2704,20031 2659,20080 2567,20239 2517,20385
 Herkomerstr.: guter Asphalt	Q0 14563,9106 14446,8983
+Beckumer Str.: mäßiges Kopfsteinpflaster	Q2 2460,19083 2358,19209 2294,19328 2268,19402
+Donizettistr.: guter Asphalt	Q0 24727,12027 24936,12071 25021,12090 25167,12119 25290,12088 25455,12047 25524,12062 25863,11965
+Tiniusstr.: guter Asphalt	Q0 12570,18351 11984,18650
+Hannemannstr.: guter Asphalt	Q0 12789,5402 12841,5416 13011,5455 13158,5490 13265,5519 13441,5553 13646,5598
+Brombeerweg (Charlottenburg): gutes Verbundsteinpflaster	Q1 -1098,12546 -976,12608 -827,12669 -647,12754
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934

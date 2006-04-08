@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.146 2006/04/02 20:46:50 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.147 2006/04/08 11:58:25 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1236,7 +1236,9 @@ sub coord_to_markers_dialog {
 	    delete_markers();
 	} else {
 	    mark_street(-coords => [@marker_points],
-			-clever_center => 1);
+			## I think I prefer centering to the last point
+			#-clever_center => 1,
+		       );
 	}
     };
 
@@ -3029,9 +3031,16 @@ sub search_anything {
 	    }
 
 	    # special case: PLZ files
-	    # XXX Hier wird $search_type noch ignoriert!
+	    my %plz_search_args;
+	    if ($search_type eq 'similarity') {
+		$plz_search_args{Agrep} = 1;
+	    } elsif ($search_type eq 'substr' || $search_type eq 'rx') {
+		# für rx: Notlösung XXX
+		$plz_search_args{GrepType} = "grep-inword";
+	    }
+
 	    for my $i (0 .. $#plz) {
-		my @plz_matches = $plz[$i]->look($s);
+		my @plz_matches = $plz[$i]->look($s, %plz_search_args);
 		if (@plz_matches) {
 		    # in Strassen-Format umwandeln
 		    my @matches;

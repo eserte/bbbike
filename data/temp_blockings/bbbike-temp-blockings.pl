@@ -2372,7 +2372,7 @@ EOF
        text  => 'Hönower Str. (Mahlsdorf) in Richtung Alt-Mahlsdorf zwischen Wilhelmsmühlenweg und Alt-Mahlsdorf Baustelle, Fahrtrichtung gesperrt (bis 12.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 24631,11719 24591,11625 24603,11450 24658,11293
+userdel	q4; 24623,11684 24591,11625 24603,11450 24658,11293
 EOF
      },
      { from  => 1121724000, # 2005-07-19 00:00

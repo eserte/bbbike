@@ -11644,7 +11644,7 @@ sub show_info {
 					     -highlightthickness => 0,
 					     -borderwidth => 0,
 					     -width => 40,
-					     -height => 10,
+					     -height => 30,
 					     )->pack(-expand => 1, -fill => "both");
 	    # Hack as described in http://wiki.tcl.tk/6101
 	    my $info_real_text = $info_text->Subwidget("scrolled");
