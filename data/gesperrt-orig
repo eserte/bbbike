@@ -387,7 +387,7 @@ Paul-Junius-Str.	1s 15084,12975 15085,13105
 Ahornallee	1s 1589,11483 1574,11379
 Lindenallee	1s 1429,11523 1403,11428
 Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
-Billerbecker Weg	1s 1231,18690 1231,18731
+Billerbecker Weg	1s 1230,18698 1229,18750
 Alt-Tegel	1s 1551,20106 1691,20129 1778,20178 1923,20255
 Am Treptower Park	1s 14529,9141 14390,9291 14242,9448 14179,9515 14089,9610
 Groebenufer	1s 13206,10651 13077,10747
@@ -466,8 +466,8 @@ Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12540,8458
 Karl-Marx-Str.: unbequemes Überqueren wegen parkender Autos	3nocross 12830,8031 12865,7923 12898,7832
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11763,8337 11892,8372
 Stromstr.: unpassierbarer Mittelstreifen	3nocross 6201,13058 6185,12968 6177,12920 6168,12846
-#: add_fragezeichen: wahrscheinlich!
-Märkische Allee: Linksabbiegen wahrscheinlich verboten	3nocross 20512,17101 20691,17463 20717,17516 20834,17752 20878,17842 21218,18536
+#: XXX: wahrscheinlich (ich wurde durch einen anonymen Kommentar bestätigt)
+Märkische Allee: Linksabbiegen verboten	3nocross 20512,17101 20691,17463 20717,17516 20834,17752 20878,17842 21218,18536
 Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17412,17800 17703,17990 17843,18078
 Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13483,10769 13605,10719
 Stralauer Allee: unbequemes Abbiegen	3nocross 13605,10719 13678,10685 13779,10642
@@ -575,10 +575,16 @@ tragen (Treppe)	0:30 3025,13568
 #: by: ^^^
 #: by: Sirko:
 tragen (Treppe, ca. 10 Stufen)	0:30 20933,2390
+#: by: Sabine Stock
+tragen (Treppe)	0:30 -633,12739
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+#: by: popanne: vvv
+Drängelgitter	BNP:5 24759,11666
+Drängelgitter	BNP:5 24815,11329
+#: by: ^^^
 #: by: Christian (chrispan):
 Drängelgitter	BNP:5 7935,4466
 Drängelgitter	BNP:5 6560,21084

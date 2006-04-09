@@ -351,7 +351,7 @@ Paul-Junius-Str.	1s 15084,12975 15085,13105
 Ahornallee	1s 1589,11483 1574,11379
 Lindenallee	1s 1429,11523 1403,11428
 Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
-Billerbecker Weg	1s 1231,18690 1231,18731
+Billerbecker Weg	1s 1230,18698 1229,18750
 Alt-Tegel	1s 1551,20106 1691,20129 1778,20178 1923,20255
 Am Treptower Park	1s 14529,9141 14390,9291 14242,9448 14179,9515 14089,9610
 Groebenufer	1s 13206,10651 13077,10747
@@ -554,12 +554,12 @@ nördliches Spreeufer -> Bundesratufer: unpassierbarer Mittelstreifen	3 6218,1297
 Stromstr. -> Bundesratufer: unpassierbarer Mittelstreifen	3 6177,12920 6185,12968 6131,12978
 Bundesratufer -> Stromstr.: unpassierbarer Mittelstreifen	3 6131,12978 6185,12968 6201,13058
 Bundesratufer -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3 6131,12978 6185,12968 6218,12975
-zur Märkischen Allee -> Märkische Allee: Linksabbiegen wahrscheinlich verboten	3 20675,17515 20691,17463 20717,17516
-Wuhletalstr. -> Märkische Allee: Linksabbiegen wahrscheinlich verboten	3 20853,17528 20717,17516 20691,17463
-Märkische Allee -> Wuhletalstr.: Linksabbiegen wahrscheinlich verboten	3 20834,17752 20717,17516 20853,17528
-Märkische Allee -> Wuhletalstr.: Linksabbiegen wahrscheinlich verboten	3 20878,17842 20834,17752 20912,17678
-Wuhletalstr. -> Märkische Allee: Linksabbiegen wahrscheinlich verboten	3 20912,17678 20834,17752 20717,17516
-Märkische Allee -> Wuhletalstr.: Linksabbiegen wahrscheinlich verboten	3 20834,17752 20878,17842 20832,17824
+zur Märkischen Allee -> Märkische Allee: Linksabbiegen verboten	3 20675,17515 20691,17463 20717,17516
+Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3 20853,17528 20717,17516 20691,17463
+Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3 20834,17752 20717,17516 20853,17528
+Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3 20878,17842 20834,17752 20912,17678
+Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3 20912,17678 20834,17752 20717,17516
+Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3 20834,17752 20878,17842 20832,17824
 Falkenberger Chaussee -> Grünanlage Egon-Erwin-Kisch-Str.: Linksabbiegen wegen Straßenbahn nicht möglich	3 17412,17800 17703,17990 17678,18171
 Grünanlage Egon-Erwin-Kisch-Str. -> Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3 17678,18171 17703,17990 17843,18078
 Warschauer Pl. -> Stralauer Allee: unbequemes Abbiegen	3 13471,10983 13389,10808 13483,10769
@@ -691,6 +691,9 @@ tragen (Treppe)	0:30:-104 6187,12851
 tragen (Treppe)	0:30:77 2943,13550
 tragen (Treppe)	0:30:62 3025,13568
 tragen (Treppe, ca. 10 Stufen)	0:30:-12 20933,2390
+tragen (Treppe)	0:30:-43 -633,12739
+Drängelgitter	BNP:5:3 24759,11666
+Drängelgitter	BNP:5:-17 24815,11329
 Drängelgitter	BNP:5:-136 7935,4466
 Drängelgitter	BNP:5:-93 6560,21084
 Drängelgitter	BNP:5:-186 6613,21116

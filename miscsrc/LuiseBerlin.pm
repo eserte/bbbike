@@ -299,7 +299,12 @@ sub batch {
     Getopt::Long::GetOptions("f|file=s" => \$file,
 			     "q" => sub { $DEBUG = 0 },
 			    )
-	    or die "usage: $0 [-q] [-f file | street cityparts]";
+	    or die <<EOF;
+usage: $0 [-q] [-f file | street cityparts]
+
+-f file: batch processing, where file is a Berlin.coords.data-styled
+         file (street "|" citypath ...) 
+EOF
     if ($file) {
 	batch($file);
     } else {
