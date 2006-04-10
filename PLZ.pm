@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.62 2006/02/07 21:45:17 eserte Exp eserte $
+# $Id: PLZ.pm,v 1.63 2006/04/10 20:39:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use locale;
 use BBBikeUtil;
 use Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.62 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.63 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)
@@ -300,18 +300,15 @@ sub look {
 					    map { SA_ANCHOR_HACK . $_ } @data)) {
 		$push_sub->($_);
 	    }
-	} elsif ($grep_type eq 'grep-umlaut') {
-	    $str = '(?i:^' . quotemeta(BBBikeUtil::umlauts_to_german($str)) . ')';
-	    $str = qr{$str};
-	    while(<PLZ>) {
-		chomp;
-		if (BBBikeUtil::umlauts_to_german($_) =~ $str) {
-		    $push_sub->($_);
-		}
+	} elsif ($grep_type =~ m{^grep-(umlaut|inword|substr)$}) {
+	    my $sub_type = $1;
+	    if ($sub_type eq 'umlaut') {
+		$str = '(?i:^' . quotemeta(BBBikeUtil::umlauts_to_german($str)) . ')';
+	    } elsif ($sub_type eq 'inword') {
+		$str = '(?i:\b' . quotemeta(BBBikeUtil::umlauts_to_german($str)) . '\b)';
+	    } elsif ($sub_type eq 'substr') {
+		$str = '(?i:' . quotemeta(BBBikeUtil::umlauts_to_german($str)) . ')';
 	    }
-	    close PLZ;
-	} elsif ($grep_type eq 'grep-inword') {
-	    $str = '(?i:\b' . quotemeta(BBBikeUtil::umlauts_to_german($str)) . '\b)';
 	    $str = qr{$str};
 	    while(<PLZ>) {
 		chomp;
@@ -840,6 +837,7 @@ my $extern = 1;
 my $citypart;
 my $multi_citypart = 0;
 my $multi_zip = 0;
+my $grep_type;
 
 if (!Getopt::Long::GetOptions
     ("agrep=i" => \$agrep,
@@ -847,9 +845,12 @@ if (!Getopt::Long::GetOptions
      "citypart=s" => \$citypart,
      "multicitypart!" => \$multi_citypart,
      "multizip!" => \$multi_zip,
+     "greptype=s" => \$grep_type,
+     "v!" => \$PLZ::VERBOSE,
      )
    ) {
-    die "Usage: $0 [-agrep errors] [-extern] [-citypart citypart]
+    die "Usage: $0 [-v] [-agrep errors] [-greptype grep-inword|grep-umlaut|...]
+	      [-extern] [-citypart citypart]
               [-multicitypart] [-multizip] street
 ";
 }
@@ -860,6 +861,9 @@ my $plz = PLZ->new;
 
 my @args;
 push @args, "Agrep", $agrep;
+if ($grep_type) {
+    push @args, "GrepType", $grep_type;
+}
 if (!$extern) {
     push @args, "Noextern", 1;
 }

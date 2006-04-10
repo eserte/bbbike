@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.147 2006/04/08 11:58:25 eserte Exp eserte $
+# $Id: BBBikeAdvanced.pm,v 1.148 2006/04/10 20:39:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -3036,7 +3036,7 @@ sub search_anything {
 		$plz_search_args{Agrep} = 1;
 	    } elsif ($search_type eq 'substr' || $search_type eq 'rx') {
 		# für rx: Notlösung XXX
-		$plz_search_args{GrepType} = "grep-inword";
+		$plz_search_args{GrepType} = "grep-substr";
 	    }
 
 	    for my $i (0 .. $#plz) {

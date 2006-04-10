@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.24 2006/01/20 00:30:34 eserte Exp $
+# $Id: plz.t,v 1.25 2006/04/10 21:51:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -59,7 +59,7 @@ my @approx_tests = (
 		    # Ku'damm => Kurfürstendamm, fails, maybe an extra rule?
 		   );
 		    
-plan tests => 108 + scalar(@approx_tests)*4;
+plan tests => 120 + scalar(@approx_tests)*4;
 
 my $tmpdir = "$FindBin::RealBin/tmp/plz";
 my $create;
@@ -195,7 +195,6 @@ for my $noextern (@extern_order) {
     {
 	my @res;
     
-    XXX:
 	for my $def (@approx_tests) {
 	    my($wrong, $correct) = @$def;
 	    my @res = $plz->look_loop(PLZ::split_street($wrong),
@@ -403,6 +402,24 @@ for my $noextern (@extern_order) {
 	   "split_street with city, street syntax, street part")
 	    or diag $dump->(\@res);
 
+    XXX:
+	@res = $plz_multi->look("herz", GrepType => "grep-inword");
+	for my $test (
+		      "Alice-Herz-Platz",
+		      "Carl-Herz-Ufer",
+		      "Henriette-Herz-Platz",
+		     ) {
+	    ok((grep { $_->[PLZ::LOOK_NAME] eq $test } @res), "grep-inword: Matched $test");
+	}
+	ok((!grep { $_->[PLZ::LOOK_NAME] =~ /herzberg/i } @res), "Does not match Herzberg");
+
+	@res = $plz_multi->look("herz", GrepType => "grep-substr");
+	for my $test (
+		      "Alice-Herz-Platz",
+		      "Herzbergstr.",
+		     ) {
+	    ok((grep { $_->[PLZ::LOOK_NAME] eq $test } @res), "grep-substr: Matched $test");
+	}
     }
 }
 

@@ -133,7 +133,7 @@ S-Bahn-Unterführung	Q2 7854,7572 7934,7621 7959,7609
 Garibaldistr.: schlechtes Kopfsteinpflaster	Q3 7366,19920 7376,19989 7427,20022 7498,20021 7726,19952 7864,19891
 Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6737,23290 6779,23392 6819,23549 6765,23685 6879,23816 6992,23814 7111,23873 7164,23825 7185,23749
 Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 7111,23873 7051,23924 6879,23816
-Alt-Tegel: Kopfsteinpflaster	Q2 1923,20255 1778,20178 1691,20129 1551,20106
+Alt-Tegel: Kopfsteinpflaster	Q2 1907,20265 1753,20191 1668,20156 1529,20131
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1 11512,10105 11610,10305 11660,10402
 Hochstr.: Kopfsteinpflaster	Q2 9059,16038 8923,15850
 Böttgerstr.: Kopfsteinpflaster	Q2 9134,15953 8923,15850 8720,15914 8655,15979 8582,16052
@@ -695,9 +695,9 @@ Alt-Hermsdorf: mäßig geeignet	Q2 4347,23205 4405,23149 4445,23128 4582,23035
 #Dianastr.: mäßig geeignet laut ADFC-Karte; ist aber asphaltiert!	Q2 6698,3477 6792,3318 6820,3245
 #: unverified_by ADFC-Karte
 (Alt-Hermsdorf - Zehntwerderweg): mäßig geeignet	Q2 4582,23035 4679,22766
-Medebacher Weg: Kopfsteinpflaster	Q2 1778,20178 1842,20048
-Medebacher Weg: Kopfsteinpflaster	Q2 1874,19955 1883,19913 1904,19820
-Brünowplatz: Kopfsteinpflaster	Q2 1842,20048 1806,19991 1874,19955 1904,20018 1842,20048
+Medebacher Weg: Kopfsteinpflaster	Q2 1753,20191 1825,20047
+Medebacher Weg: Kopfsteinpflaster	Q2 1849,19961 1863,19925 1886,19835
+Brünowplatz: Kopfsteinpflaster	Q2 1825,20047 1806,19991 1849,19961 1866,20013 1825,20047
 #: unverified_by ADFC-Karte
 Borsigwalder Weg: mäßig geeignet	Q2 2852,19546 3028,19771
 #: unverified_by ADFC-Karte
@@ -2129,7 +2129,7 @@ Adolf-Martens-Str.: Asphalt	Q0 2712,4091 2787,3975 3025,4123
 #: by: rüvo
 Zwinglistr.: Asphalt	Q0 5212,13211 5358,13207 5699,13184
 #: by: Petra (psf):
-Schlieperstr.: Kopfsteinpflaster	Q2 1620,19854 1883,19913 2237,19992 2450,20028
+Schlieperstr.: Kopfsteinpflaster	Q2 1585,19862 1863,19925 2029,19963 2224,20007 2450,20028
 #: by: Ulfert (030):
 #: XXX "mit ein paar Macken"
 Kulmbacher Str.: Asphalt	Q1 5799,9939 5853,10168
@@ -2207,7 +2207,7 @@ Pinnauweg: Asphalt	Q0 2219,1612 1943,1496 1962,1434
 Pinnauweg: Asphalt	Q0 1962,1434 1990,1360
 #: by: ^^^
 #: by: Roland Maier:
-Charlottenburger Str.: mäßiger Asphalt	Q1 13727,16085 13294,16256 13045,16368 12804,16480 12642,16555 12564,16591 12353,16687 12237,16741
+Charlottenburger Str.: mäßiger Asphalt	Q1 13727,16085 13404,16212 13294,16256 13045,16368 12804,16480 12642,16555 12564,16591 12353,16687 12237,16741
 #: by: Michaela (G.):
 Kurfürstenstr. (Lankwitz): Asphalt	Q0 6271,1684 6176,1876 6021,2071 5951,2182 5909,2307 5812,2604
 #: by: Axel Wappler:
@@ -2846,7 +2846,7 @@ Arabisweg: Beton	Q0 17743,2356 17646,2210
 #: by: Robert Quint:
 Resselsteig: Asphalt	Q0 5300,1124 5353,1046 5327,1026 5424,882
 #: by: Suse Andersen:
-Tillmannsweg: kleinteiliges Pflaster	Q1 -4368,1720 -4373,1910 -4287,2079
+Tillmannsweg: kleinteiliges Pflaster	Q1 -4368,1720 -4373,1910 -4287,2079 -4326,2141
 #: by: Sirko:
 (Am Kanal - Adlergestell): loser Beton	Q2 20928,2412 20933,2390 20937,2368
 #: by: Jan (Flauschm...): vvv
@@ -2859,7 +2859,7 @@ Köpenzeile: mäßiger Beton	Q1 23187,3773 23241,3705 23337,3500 23452,3205 23481,3
 Tile-Brügge-Weg: schlechter Asphalt	Q2 2404,20469 2603,20505 2804,20539 2989,20572 3141,20600 3214,20610 3241,20613 3307,20717 3327,20758
 Eschachstr.: Verbundsteinpflaster	Q1 2404,20469 2435,20370 2463,20295
 (Waidmannsluster Damm - Eschachstr./Gorkistr.): Verbundsteinpflaster	Q1 2242,20908 2404,20469
-(Eschachstr./Gorkistr. - Leuenberger Zeile): Verbundsteinpflaster	Q1 2463,20295 2716,19776
+(Eschachstr./Gorkistr. - Leuenberger Zeile): Verbundsteinpflaster	Q1 2463,20295 2596,20022 2716,19776
 Im Erpelgrund: Verbundsteinpflaster	Q1 -1581,22233 -1485,22260 -1288,22210 -918,22105 -827,22039 -583,21960 -385,21921
 Im Erpelgrund: Verbundsteinpflaster	Q1 -354,21997 -540,22053 -735,22103 -918,22105
 (Weg am Nordgraben): mäßiger fester Sandweg	Q2 3569,20583 3475,20656 3327,20758 3062,20898 2916,20870 2580,20805
@@ -3127,6 +3127,16 @@ Straße 26: guter Asphalt	Q0 14977,21194 14771,21253 14684,21284 14495,21345
 Wasserkäfersteig: mäßiges Kopfsteinpflaster	Q2 -1010,4751 -917,4619 -853,4517 -754,4361
 #: by: ked (schwabe):
 Lütticher Str.: mäßiges Kopfsteinpflaster	Q2 6431,15700 6539,15548 6650,15409 6730,15316
+#: by: Helge Martinlöwitz:
+Börnestr.: guter Asphalt	Q0 13214,15830 13269,15927 13316,16036 13404,16212
+#: by: Jan (Groscurth):
+Am Sandwerder: guter Asphalt	Q0 -4645,1506 -4638,1579 -4469,1921 -4326,2141
+#: by: Marion Kaminsky:
+Am Oberhafen (Spandau): Beton	Q0 -2935,13213 -3053,13179 -3270,13307
+#: by: thomasraddatz:
+Sadowastr.: mäßiger Asphalt	Q1 17852,8155 17925,8101 17976,8106 18078,8112
+#: by: Scheu:
+Treskowstr. (Tegel): gutes Kopfsteinpflaster	Q1 2064,19874 2029,19963 1989,20053 1953,20149 1907,20265
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

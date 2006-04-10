@@ -691,14 +691,7 @@ userdel	2 37154,10022 37670,9871
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1144620000,
-         'text' => 'B 112 Ziltendorf-Brieskow Finkenheerd OD Wiesenau Straßenbauarbeiten Vollsperrung; Umleitung 07.04.2006-09.04.2006 ',
-         'from' => 1144274400,
-         'data' => 'userdel	q4 91858,-18170 90698,-16886
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1146261600,
          'text' => 'L 216 Gollin-Templin OD Vietmannsdorf, Brücke über Mühlengraben Einbau Decke Vollsperrung 24.04.2006-28.04.2006 ',
@@ -749,18 +742,6 @@ userdel	2 9476,12359 9465,12460
          'text' => 'Möllendorffstr. (Lichtenberg) in Richtung Süden, zwischen Am Containerbahnhof und Frankfurter Allee Baustelle, Straße vollständig gesperrt, Radweg womöglich noch nutzbar (bis 10.04.06)',
          'from' => 1144483509,
          'data' => 'userdel	q4; 15392,12135 15349,12073
-',
-         'type' => 'handicap'
-       },
-       {
-         'source_id' => 'IM_002611',
-         'until' => 1144619999,
-         'text' => 'Scharnweberstr. (Reinickendorf) in beiden Richtungen zwischen Eichborndamm und Hechelstr. Veranstaltung, Straße vollständig gesperrt (Straßenfest)',
-         'from' => undef,
-         'data' => 'userdel	q4 4386,17760 4581,17689
-userdel	q4 4386,17760 4324,17782
-userdel	q4 4581,17689 4695,17648
-userdel	q4 4324,17782 4013,17901
 ',
          'type' => 'handicap'
        }

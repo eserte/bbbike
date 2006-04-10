@@ -388,7 +388,7 @@ Ahornallee	1s 1589,11483 1574,11379
 Lindenallee	1s 1429,11523 1403,11428
 Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
 Billerbecker Weg	1s 1230,18698 1229,18750
-Alt-Tegel	1s 1551,20106 1691,20129 1778,20178 1923,20255
+Alt-Tegel	1s 1529,20131 1668,20156 1753,20191 1907,20265
 Am Treptower Park	1s 14529,9141 14390,9291 14242,9448 14179,9515 14089,9610
 Groebenufer	1s 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26243,-12300 26028,-12312
@@ -523,8 +523,8 @@ tragen (Elsenbrücke, ungefähr 15 Stufen auf jeder Seite)	0:60 13383,8716
 tragen (Gerickesteg, ungefähr 20 Stufen auf jeder Seite)	0:60 6732,12660
 tragen (Spreetunnel)	0:60 25658,4619
 tragen (Spreetunnel)	0:60 25565,4549
-tragen (Brücke Tegeler Hafen)	0:60 1250,20284
-tragen (Brücke Tegeler Hafen)	0:60 1195,20342
+tragen (Brücke Tegeler Hafen)	0:60 1227,20281
+tragen (Brücke Tegeler Hafen)	0:60 1166,20330
 tragen (S-Bahn-Zugang, insgesamt drei Treppen á 12 Stufen)	0:120 7854,7572
 tragen? (Fußgängerbrücke)	0:120 20445,536
 tragen? (Fußgängerbrücke)	0:120 19770,-213
@@ -581,6 +581,8 @@ tragen (Treppe)	0:30 -633,12739
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+#: by: Charly Huber:
+Kurzschranke	BNP:5 6739,15307
 #: by: popanne: vvv
 Drängelgitter	BNP:5 24759,11666
 Drängelgitter	BNP:5 24815,11329
