@@ -4095,4 +4095,37 @@ userdel	q4 4581,17689 4695,17648
 userdel	q4 4324,17782 4013,17901
 EOF
      },
+     { from  => 1144706400, # 2006-04-11 00:00
+       until => 1147298400, # 2006-05-11 00:00
+       text  => 'B 096 Hauptstr. OD Baruth Einbau Spundwände Vollsperrung 12.04.2006-10.05.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 18307,-38801 18042,-39923
+EOF
+     },
+     { from  => 1144792800, # 2006-04-12 00:00
+       until => 1144965600, # 2006-04-14 00:00
+       text  => 'B 320 Birkenhainichener Str. zw. OL Groß Leine und Birkenhainichen Deckenerneuerung Vollsperrung 13.04.2006-13.04.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 55628,-43569 56193,-44322
+userdel	2 56193,-44322 56510,-44474
+EOF
+     },
+     { from  => 1145224800, # 2006-04-17 00:00
+       until => 1145743200, # 2006-04-23 00:00
+       text  => 'K 7220 Potsdamer Str. OL Luckenwalde, zw. Buchtstr. u. Feldstr. Abbrucharbeiten Vollsperrung 18.04.2006-22.04.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -4173,-34910 -4129,-34535
+EOF
+     },
+     { from  => 1145743200, # 2006-04-23 00:00
+       until => 1146175200, # 2006-04-28 00:00
+       text  => 'L 030 Tiergartenstr. OL Königs Wusterhausen, Schleusenbrücke Brückenreparatur Vollsperrung 24.04.2006-27.04.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 27543,-11912 27657,-11741
+EOF
+     },
     );

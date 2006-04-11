@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.29 2006/04/08 08:44:47 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.30 2006/04/11 21:25:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
@@ -30,6 +30,8 @@ use URI::Escape qw(uri_unescape);
 use Text::Balanced qw(extract_delimited);
 use Data::Compare qw(Compare);
 use Storable qw(dclone);
+use DB_File;
+use Fcntl;
 
 use Karte;
 Karte::preload(qw(Standard Polar));
@@ -52,6 +54,7 @@ my $detail_url      = "$base_url/HS_BauBlatt?BaustRowNr="; # . Rownumber
 my $map_url         = "$base_url/ZeigeBaustelle?baust=" ; # . Rownumber
 my @output_as;
 my $delay = 0;
+my $create_info_file;
 
 ## XXX DEL:
 # open my $fh, "$ENV{HOME}/trash/lbvs_more_details_content.html" or die $!;
@@ -69,9 +72,10 @@ if (!GetOptions("test" => \$test,
 		'outputas=s@' => \@output_as,
 		'irrelevant|markirrelevant!' => \$do_irrelevant,
 		'delay=i' => \$delay,
+		"with-info!" => \$create_info_file,
 	       )) {
     die <<EOF;
-usage: $0 [-test] [-i|-inputfile file] [-old|-oldfile file]
+usage: $0 [-test] [-i|-inputfile file] [-old|-oldfile file] [-with-info]
           [-diffcount] [-irrelevant] [-delay sec] [-q] [-outputas type] ...
 
 Multiple -outputas options are possible, default is "text". -outputas
@@ -80,6 +84,10 @@ to stdout. file must not exist. type may be text, bbd, dump (perl
 dump) and yaml.
 
 -inputfile and -oldfile have to be YAML files.
+
+-with-info: if set, then create an info file along to the output file.
+Works only for bbd files, and only if not a real file, not stdout is
+specified.
 EOF
 }
 
@@ -194,6 +202,21 @@ EOF
 #	($x1, $y1) = BBBike::CorrectData::convert_record_for_x_y($x1, $y1);
 	my $cat = get_bbd_category($info);
 	print $fh "$text\t$cat $x1,$y1\n";
+    }
+}
+
+if ($create_info_file) {
+    my $info_file = get_output_filename($output_as{"bbd"} . "-info");
+    tie my %info, "DB_File", $info_file, O_RDWR|O_CREAT, 0644
+	or die "Can't create $info_file: $!";
+    my $index = 0;
+    for my $info (@details) {
+	my $details_text = "";
+	while(my($k,$v) = each %{ $info->{details} }) {
+	    $details_text .= "$k: $v\n";
+	}
+	$info{$index} = $details_text;
+	$index++;
     }
 }
 
@@ -414,6 +437,15 @@ sub file_or_stdout {
 	$fh = \*STDOUT;
     }
     $fh;
+}
+
+sub get_output_filename {
+    my($output_as) = @_;
+    if (defined $output_as) {
+	return $output_as;
+    } else {
+	die "Cannot dump info to STDOUT";
+    }
 }
 
 sub get_url {

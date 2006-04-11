@@ -1281,6 +1281,8 @@ Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068
 #: by: Paul (no email):
 Eulerstr.: Asphalt	Q0 9268,16228 9494,16455
 #: by: anonymous vvv
+Hannaweg: Beton	Q0 20923,13960 20938,14066
+Boskoopweg: mäßiger Asphalt	Q1 20755,15450 20617,15239
 Tiergartenstr. (Biesdorf): fester Sandweg	Q2 21037,7751 21179,7754 21304,7783 21408,7841
 #: XXX: hier hat der Poster handicap=q0 angegeben
 Wilhelmshavener Str.: Kopfsteinpflaster	Q2 -3866,13761 -3839,13845 -3802,13954
@@ -1458,7 +1460,7 @@ Marchwitzastr.: Asphalt	Q0 19934,13318 19918,13459
 #: by: Elke Ortloff: vvv
 Sterckmannweg: Beton	Q0 20240,15004 20434,15293 20593,15515
 Kiebitzgrund: Beton	Q0 20434,15293 20287,15397
-Rebhuhnweg: Beton	Q0 20551,15582 20593,15515 20890,15365 20893,15178
+Rebhuhnweg: Beton	Q0 20551,15582 20593,15515 20755,15450 20890,15365 20893,15178
 #: by: ^^^
 #: by: Jörg Felgentreu:
 Paul-Heyse-Str.: Asphalt	Q0 13100,13803 13202,13873 13292,13931 13375,13986 13446,14030
@@ -3137,6 +3139,12 @@ Am Oberhafen (Spandau): Beton	Q0 -2935,13213 -3053,13179 -3270,13307
 Sadowastr.: mäßiger Asphalt	Q1 17852,8155 17925,8101 17976,8106 18078,8112
 #: by: Scheu:
 Treskowstr. (Tegel): gutes Kopfsteinpflaster	Q1 2064,19874 2029,19963 1989,20053 1953,20149 1907,20265
+#: by: Tim Misiewicz:
+Wernitzer Str.: mäßiger Beton	Q1 22253,10412 22365,10386 22469,10362 22519,10339 22574,10300 22687,10210
+#: by: Ersoy:
+Wankstr.: sehr guter Asphalt	Q0 10427,3509 10403,3295
+#: by: Marcus Heinrich:
+Kunigundenstr.: Kopfsteinpflaster	Q2 8943,5428 8865,5468
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

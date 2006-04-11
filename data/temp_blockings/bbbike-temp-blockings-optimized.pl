@@ -709,16 +709,7 @@ userdel	2 37154,10022 37670,9871
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_002607',
-         'until' => 1144706400,
-         'text' => 'Charlottenstr. (Mitte) in beiden Richtungen, in Höhe Mittelstr. Baustelle, Straße vollständig gesperrt (bis 10.04.06)',
-         'from' => 1144438729,
-         'data' => 'userdel	2 9454,12558 9465,12460
-userdel	2 9476,12359 9465,12460
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_002598',
          'until' => 1151704800,
@@ -736,14 +727,40 @@ userdel	2 9476,12359 9465,12460
 ',
          'type' => 'gesperrt'
        },
+       undef,
+       undef,
        {
-         'source_id' => 'IM_002605',
-         'until' => 1144706400,
-         'text' => 'Möllendorffstr. (Lichtenberg) in Richtung Süden, zwischen Am Containerbahnhof und Frankfurter Allee Baustelle, Straße vollständig gesperrt, Radweg womöglich noch nutzbar (bis 10.04.06)',
-         'from' => 1144483509,
-         'data' => 'userdel	q4; 15392,12135 15349,12073
+         'until' => 1147298400,
+         'text' => 'B 096 Hauptstr. OD Baruth Einbau Spundwände Vollsperrung 12.04.2006-10.05.2006 ',
+         'from' => 1144706400,
+         'data' => 'userdel	q4 18307,-38801 18042,-39923
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1144965600,
+         'text' => 'B 320 Birkenhainichener Str. zw. OL Groß Leine und Birkenhainichen Deckenerneuerung Vollsperrung 13.04.2006-13.04.2006 ',
+         'from' => 1144792800,
+         'data' => 'userdel	2 55628,-43569 56193,-44322
+userdel	2 56193,-44322 56510,-44474
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1145743200,
+         'text' => 'K 7220 Potsdamer Str. OL Luckenwalde, zw. Buchtstr. u. Feldstr. Abbrucharbeiten Vollsperrung 18.04.2006-22.04.2006 ',
+         'from' => 1145224800,
+         'data' => 'userdel	q4 -4173,-34910 -4129,-34535
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1146175200,
+         'text' => 'L 030 Tiergartenstr. OL Königs Wusterhausen, Schleusenbrücke Brückenreparatur Vollsperrung 24.04.2006-27.04.2006 ',
+         'from' => 1145743200,
+         'data' => 'userdel	2 27543,-11912 27657,-11741
+',
+         'type' => 'gesperrt'
        }
      
 );

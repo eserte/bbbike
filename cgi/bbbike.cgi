@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.9 2006/03/26 19:09:38 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.10 2006/04/11 20:02:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -694,7 +694,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.10 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -4017,6 +4017,18 @@ EOF
 		$sess->{routestringrep} = $string_rep;
 		$sess->{route} = \@out_route;
 		print "<input type=hidden name=coordssession value=\"$sess->{_session_id}\">";
+		my $sessdir = "/tmp/coordssession";
+		mkdir $sessdir if !-d $sessdir;
+		chmod 0777, $sessdir;
+		if (open(SESS, ">> $sessdir/" . $sess->{_session_id})) {
+		    require Data::Dumper;
+		    print SESS Data::Dumper::Dumper({ date           => scalar(localtime),
+						      time           => time,
+						      routestringrep => $string_rep,
+						      route          => \@out_route,
+						    });
+		    close SESS;
+		}
 		untie %$sess;
  	    } else {
 		print "<input type=hidden name=coords value=\"$string_rep\">";
@@ -6028,7 +6040,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/03/26 19:09:38 $';
+    my $cgi_date = '$Date: 2006/04/11 20:02:19 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

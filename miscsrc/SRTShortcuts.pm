@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: SRTShortcuts.pm,v 1.27 2006/01/31 20:19:27 eserte Exp $
+# $Id: SRTShortcuts.pm,v 1.28 2006/04/11 19:16:20 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
 
 my $bbbike_rootdir;
 if (-e "$FindBin::RealBin/bbbike") {
@@ -295,17 +295,17 @@ sub _vmz_lbvs_columnwidths {
 sub show_vmz_diff {
     my($version) = @_;
     if (defined $version) { $version = ".$version" }
-    show_any_diff("$ENV{HOME}/cache/misc/diffvmz.bbd$version");
+    show_any_diff("$ENV{HOME}/cache/misc/diffvmz.bbd$version", "vmz");
 }
 
 sub show_lbvs_diff {
     my($version) = @_;
     if (defined $version) { $version = ".$version" }
-    show_any_diff("$ENV{HOME}/cache/misc/difflbvs.bbd$version");
+    show_any_diff("$ENV{HOME}/cache/misc/difflbvs.bbd$version", "lbvs");
 }
 
 sub show_any_diff {
-    my $file = shift;
+    my($file, $diff_type) = @_;
     # To pre-generate cache:
     # XXX make sure that only ONE check_bbbike_temp_blockings process
     # runs at a time...
@@ -349,9 +349,38 @@ sub show_any_diff {
     main::choose_ort("str", $abk,
 		     -splitter => \&_vmz_lbvs_splitter,
 		     -columnwidths => [ _vmz_lbvs_columnwidths() ],
+		     # XXX Maybe implement -infocallback (an info
+		     # button in the choose_ort window) some time, but
+		     # not that urgent
+		     (0 && $diff_type eq 'lbvs' ? (-infocallback => sub {
+						       my($w, %args) = @_;
+						       $args{-file} = $file;
+						       _lbvs_info_callback($w, %args);
+						   }) : ()),
 		     -container => $f,
 		     -ondestroy => sub { $t->destroy },
 		    );
+}
+
+sub _lbvs_info_callback {
+    my($w, %args) = @_;
+    my $index = $args{"-index"};
+    my $file = $args{"-file"};
+    my $info_file = $file . "-info";
+    my $token = "lbvsinfo-$file";
+    my $t = main::redisplay_top($main::top, $token, -title => M("Information"));
+    if (!$t) {
+	$t = $main::toplevel{$token};
+	$_->destroy for ($t->children);
+    }
+    my $txt = $t->Scrolled("ROText", -scrollbars => "eos")->pack(qw(-fill both -expand 1));
+
+    require DB_File;
+    my $text = "No info for index $index in info file $info_file available.";
+    if (tie my %info, "DB_File", $info_file, &Fcntl::O_RDONLY) {
+	$text = $info{$index};
+    }
+    $txt->insert("end", $text);
 }
 
 ##XXX del obsoleted by great conversion
