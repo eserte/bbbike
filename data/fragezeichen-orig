@@ -26,7 +26,7 @@ Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 
 #: last_checked: 2005-07-13
 Martin-Luther-Straße (oder die gesamte Straße, wo jetzt schon die Busspur ist?)	? 6468,8109 6467,8187 6465,8326 6470,8464 6471,8639 6470,8681
 Gorkistr.	? 4423,20848 4265,20799 3569,20583 3329,20538 2621,20404 2517,20385 2435,20370 2348,20353 2311,20348
-Vulkanstraße	? 15896,13158 15880,13535 15873,14046 15838,14319
+Vulkanstraße	? 15912,13153 15892,13534 15897,13942 15838,14319
 Frankfurter Allee östlich Alfredstraße (Busspur weiter östlich schon vorhanden)	? 16211,11951 16373,11933
 Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17750,11771 17436,11791 17249,11802
 Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
@@ -51,6 +51,10 @@ Bethaniendamm: vor den Bauarbeiten war hier ein Radstreifen, wird er wieder herg
 #: section ^^^
 #
 #: section Straßen in Planung vvv
+Teil der RR9, wo geht es weiter, Ausschilderung vorhanden?	? 25010,4807 24681,4943 24074,5279
+Teil der RR6	? 10986,16897 10905,16893
+Teil der RR10	? 11562,7393 11601,7362 11615,7284 11606,7260 11593,7237 11607,7145
+Teil der TR5	? 2717,7093 2732,7235 2750,7416 2767,7592
 Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	? 29192,-10630 29088,-10386 28918,-10301 28723,-10326 28485,-10143
 Marienfelder Allee: bis 2006-05-31 durchgängig Radwege	?::inwork 7580,254 7491,61 7423,-86 7189,-469 7168,-509
 Unter den Linden vor der Staatsoper: hier kommt bis voraussichtlich 2006-05-31 eine neue Fußgängerampel hin	?::inwork 9681,12382 9782,12393
@@ -352,7 +356,7 @@ Sandkrug - Neuendorf: Qualität?	? 49981,54421 51183,55005 51506,55009 51873,5507
 Elisenau - Börnicke: Privatgelände, ist die Durchfahrt uneingeschränkt möglich?	? 24360,26503 24427,26841
 Potzlow - Fergitz: Gilt das hier noch immer: schlechtes Kopfsteinpflaster, breite Sandbanketten (von Potzlow aus sah es letztens gut aus!)	? 38475,90762 37937,90365 37674,90025
 Verlängerung der Atzpodienstr.: Qualität? Offen für Radfahrer?	? 16468,12386 16489,12521 16553,12515 16563,12613
-Gotlindestr.: Qualität (laut ADFC-Karte im westlichen Abschnitt mäßig geeignet, im östlichen Abschnitt gut geeignet)?	? 15928,12625 16409,12612 16563,12613 16848,12614 17073,12620 17357,12566
+Gotlindestr.: Qualität (laut ADFC-Karte im westlichen Abschnitt mäßig geeignet, im östlichen Abschnitt gut geeignet)?	? 15947,12626 16409,12612 16563,12613 16848,12614 17073,12620 17357,12566
 Weg zwischen Tierpark und Bahntrasse: Qualität des Weges (Am westlichen Ende Beton, dann Feldweg Q2?), geht es weiter in Richtung Norden/Osten, vielleicht bis zur B1? Schranke am westlichen Ende	? 18690,10016 19641,10476 19734,10690 19713,10880
 Freystadter Weg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 20949,4775 21100,4192
 #XXX laut anonymen Eintrag ist hier nichts, jedenfalls an der Grünauer Str.: Dörpfeldstr. - Grünauer: evtl. lohnende Diagonale, Qualität?	? 21132,4184 21325,3644 21350,3526 21840,3144 21951,3189
@@ -696,8 +700,9 @@ Polizei in der Friesenstr.: genaue Gebäude, genaue Funktion?	F:? 9828,8934 9828,
 Hermsdorfer Str. (Hohen Neuendorf): Qualität?	? 621,29356 625,29868
 (Dorfstr. (Tiefwerder) - Heerstr.): Qualität?	? -2878,12193 -2953,12015 -2918,11678 -2821,11456 -2850,11423
 Försterweg: Qualität (wahrscheinlich ein holpriger Waldweg)?	? -823,20184 -571,19834 -475,19746 -384,19740 -250,19815 -146,19806 6,19817
+Wönnichstr.: Qualität?	? 16585,10650 16697,10984 16777,11216 16848,11421 16887,11545 16917,11642 16969,11750
 #: XXX: zwischen Einbecker Str. und Irenenstr.: teils Asphalt, teils Kopfsteinpflaster Q1?
-Wönnichstr.: Qualität?	? 16585,10650 16697,10984 16777,11216 16848,11421 16917,11642 16958,11778
+Wönnichstr.: Qualität? zur Einbecker Str. Sackgasse, Radfahrer können wahrscheinlich passieren	? 16969,11750 16958,11778
 #: XXX: das erste Stück im Süden sah OK aus (Asphalt oder Beton). Tramstrecke, aber in der Mitte der Straße:
 Gudrunstr.: Qualität?	? 17487,12244 17139,12100 16970,11976 16870,11920
 Frankfurter Allee, Nebenfahrbahn: ist als Sackgasse ausgeschildert, für Radfahrer trotzdem passierbar? Qualität: anscheinend Kopfsteinpflaster, OK	? 16746,11921 16629,11932
@@ -1286,3 +1291,4 @@ Wildau - Zernsdorf/Niederlehme: anscheinend ist hier ein Gehweg/Radweg mit Brück
 Hempelsteig: Qualität?	? -1011,13170 -872,13170 -787,13147 -525,13034 -472,12961
 Krumpuhler Weg: Qualität? Einbahnstraße, auch für Radfahrer?	? 1405,18749 1392,18662
 Schalkauer Str.: Qualität (wahrscheinlich asphaltiert)? Ist das Linksabbiegen in die Landsberger Allee möglich?	? 17343,14906 17377,14678 17389,14599 17398,14490
+Rutnikstr.: Qualität? Einbahnstraße, auch für Radfahrer?	? 15546,12690 15648,12687 15731,12687 15952,12679

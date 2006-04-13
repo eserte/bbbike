@@ -1840,7 +1840,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_77420',
        data  => <<EOF,
-userdel	q4; 15838,14319 15873,14046 15880,13535
+userdel	q4; 15838,14319 15897,13942 15892,13534
 EOF
      },
      { from  => 1114466400, # 2005-04-26 00:00
@@ -2651,7 +2651,7 @@ EOF
        text  => 'Weitlingstraße zwischen Sophienstraße und Frankfurter Allee in beiden Richtungen gesperrt, Veranstaltung, Dauer: 01.09.2005. 06.00 Uhr bis 04.09.2005, 22.00 Uhr ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 16653,11251 16786,11668
+userdel	q4 16653,11251 16723,11470 16786,11668
 userdel	q4 16958,11778 16821,11743
 userdel	q4 16821,11743 16786,11668
 EOF
@@ -2994,7 +2994,7 @@ EOF
        text  => 'Josef-Orlopp-Str. (Lichtenberg) in Richtung Storkower Str. zwischen Siegfriedstr. und Vulkanstr. Fahrbahnerneuerung, Fahrtrichtung gesperrt (bis 23.10.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 16863,13138 15896,13158
+userdel	1 16863,13138 15912,13153
 EOF
      },
      { from  => 1128899379, # 2005-10-10 01:09 (by Tagesspiegel)
@@ -4071,7 +4071,7 @@ EOF
        text  => 'Herzbergstraße, zwischen Siegfriedstraße und Vulkanstraße gesperrt, die Gegenrichtung ist als Einbahnstraße ausgeschildert, Straße am Wasserwerk, zwischen Herzbergstraße und Landsberger Allee gesperrt, Baustelle. Dauer: 07.04.2006 , 18:00 Uhr bis 27.05.2006, 18:00 Uhr. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 16866,13532 15880,13535
+userdel	1 16866,13532 15892,13534
 EOF
      },
      { from  => 1144483509, # 2006-04-08 10:05
@@ -4126,6 +4126,33 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 27543,-11912 27657,-11741
+EOF
+     },
+     { from  => 1144959197, # 2006-04-13 22:13
+       until => 1147557600, # 2006-05-14 00:00
+       text  => 'Jüterborger Str. (Kreuzberg) in Richtung Golßener Str., zwischen Friesenstr. und Heimstr. Baustelle, Fahrtrichtung gesperrt (bis 13.05.06)',
+       type  => 'handicap',
+       source_id => 'IM_002632',
+       data  => <<EOF,
+userdel	q4; 9799,8962 9958,8966
+EOF
+     },
+     { from  => 1145649600, # 2006-04-21 22:00
+       until => 1145844000, # 2006-04-24 04:00
+       text  => '21.04.2006, 22.00 Uhr bis 24.04.2006, 4.00 Uhr Vollsperrung der Ottomar-Geschke-Straße ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 21182,4336 21174,4250
+userdel	2 21100,4192 21174,4250
+EOF
+     },
+     { from  => 1151002800, # 2006-06-22 21:00
+       until => 1151168400, # 2006-06-24 19:00
+       text  => '23.06.2006, 21.00 Uhr bis 24.06.2006, 19.00 Uhr Vollsperrung der Ottomar-Geschke-Straße ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 21182,4336 21174,4250
+userdel	2 21100,4192 21174,4250
 EOF
      },
     );

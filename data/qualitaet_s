@@ -534,7 +534,7 @@ Rialtoring: teilweise Kopfsteinpflaster, sonst Asphalt	Q1 31078,3372 31012,3146
 Biberpelzstr.: teilweise Kopfsteinpflaster	Q1 31441,2744 31546,2768
 (Pelzlake): Waldweg, teilweise matschig oder sandig	Q2 31865,1794 31115,2105
 Am Kleinen Müggelsee: asphaltierter Waldweg	Q0 29964,2422 29899,2399 29738,2467 29532,2556 28862,2916 28783,2916 28748,2963 28723,3098
-Koppelweg: Kopfsteinpflaster	Q2 12173,4350 12288,4378 12543,4386
+Koppelweg: asphaltiert (Fahrbahnmitte)	Q0 12173,4350 12288,4378 12543,4386
 Limastr.: Kopfsteinpflaster	Q2 -1117,3317 -1128,3334 -1195,3503 -1211,3638 -1277,3854 -1354,4005
 Richtung Grunewaldturm: Waldweg, meist OK, einige sandige Abschnitte	Q1 -1638,9152 -1857,8964 -2368,8457 -2386,8282 -2561,8110 -2890,7994 -3212,8024 -3536,7856
 Uferweg am Schlachtensee: Waldweg OK, manchmal etwas sandig	Q1 -3348,3055 -3384,3212 -3324,3382 -3087,3646 -2937,3740 -2813,3775 -2494,3758 -2347,3884 -2080,4228 -1935,4303 -1831,4300 -1531,4159 -1391,4135 -1353,4205 -1278,4239
@@ -548,7 +548,7 @@ Radweg am Müggelsee: Waldweg OK, trotz Schotter	Q1 28829,3295 28723,3283 28695,3
 Rheinsteinstr.: Kopfsteinpflaster	Q2 18998,8784 19173,8857 19316,8933 19510,9035
 Zwieseler Str.: Kopfsteinpflaster	Q2 19510,9035 19629,9094
 Köpenicker Allee: wechselnd: holpriger Fahrweg, mäßiger Asphalt	Q2 19907,8407 20213,7872 20280,7757
-Vulkanstr.: Kopfsteinpflaster, OK	Q1 15880,13535 15873,14046 15838,14319
+Vulkanstr.: Kopfsteinpflaster, OK	Q1 15892,13534 15897,13942 15838,14319
 Sandinostr.: Kopfsteinpflaster	Q2 15883,14606 15830,14647 15685,14757
 Orankeweg: holpriger Feldweg	Q2 14934,15860 15305,15858 15439,15859
 Orankestr.: schlechtes Kopfsteinpflaster	Q3 16331,15486 15665,15765
@@ -708,7 +708,8 @@ Merseburger Str.: Kopfsteinpflaster	Q2 6975,8944 6962,9035 6945,9142
 Kopenhagener Str.: Kopfsteinpflaster	Q2 10080,15858 10374,15894
 Kopenhagener Str.: Kopfsteinpflaster	Q2 10581,15936 10722,15921 10972,15895
 Ystader Str.: Kopfsteinpflaster	Q2 10374,15894 10363,15933
-Esplanade: schlechtes Kopfsteinpflaster	Q3 10986,16897 10905,16893 10655,16904
+Esplanade: asphaltiert	Q3 10986,16897 10905,16893
+Esplanade: schlechtes Kopfsteinpflaster	Q3 10905,16893 10655,16904
 Glinkastr.: mäßiger Asphalt, besonders in südlicher Richtung	Q1 9183,12076 9201,11968 9208,11872 9220,11781
 Ettaler Str.: Kopfsteinpflaster	Q2 5997,10286 5948,10152
 Fasanenplatz, zur Schaperstr.: gutes Kopfsteinpflaster	Q1 5242,10237 5198,10234
@@ -915,7 +916,7 @@ Blumenstr.: gutes Kopfsteinpflaster	Q2 12118,12462 12341,12417
 Fritschestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 3291,11832 3262,12003
 Hebbelstr.: gutes Pflaster	Q1 3117,11852 3262,12003 3278,12021 3304,12053
 Am Comeniusplatz: Kopfsteinpflaster	Q2 13280,11834 13411,11899
-Josef-Orlopp-Str.: Richtung Osten nur mäßiger Asphalt	Q1; 15896,13158 16863,13138
+Josef-Orlopp-Str.: Richtung Osten nur mäßiger Asphalt	Q1; 15912,13153 16863,13138
 Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 16843,14420 17252,14471 17398,14490 17841,14546 18047,14568 18428,14633 18556,14687 18794,14819
 Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 20266,15456 20551,15582 20800,15692 20994,15681 21183,15659 21237,15665 21699,15833
 Kurfürstenweg: fester Waldweg	Q1 -5983,-648 -5863,-426 -5762,-145 -5752,-44 -5658,135 -5567,231 -5539,308 -5376,450 -5295,545 -5155,758 -4974,900
@@ -2060,7 +2061,7 @@ Im Mühlenfelde: Asphalt	Q0 1268,2886 1320,2731 1324,2603
 Schwarzmeerstr.: Beton	Q1 17565,10782 17882,10708
 Prinz-Heinrich-Str.: Asphalt	Q0 9964,-1804 9947,-1919 9947,-2143
 Blohmstr.: Asphalt	Q0 10004,-1919 9947,-1919 9531,-1931 9093,-1712
-Kunzeweg: Kopfsteinpflaster	Q3 15908,12480 15734,12506
+Kunzeweg: Kopfsteinpflaster	Q3 15926,12478 15734,12506
 Johannes-Niemeyer-Weg: Asphalt	Q0 -7928,-2165 -7844,-2260 -7743,-2312
 Salmbacher Str.: Asphalt	Q0 11139,1145 11250,1189 11393,1243 11523,1292 11905,1439 11991,1471
 Geßlerstr.: Asphalt	Q0 8006,8883 7970,8886 7791,8882

@@ -122,7 +122,7 @@ push @temp_blocking,
          'until' => 1146434399,
          'text' => 'Vulkanstr. (Lichtenberg) von Landsberger Allee bis Herzbergstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2006)',
          'from' => 1138319749,
-         'data' => 'userdel	q4; 15838,14319 15873,14046 15880,13535
+         'data' => 'userdel	q4; 15838,14319 15897,13942 15892,13534
 ',
          'type' => 'handicap'
        },
@@ -723,7 +723,7 @@ userdel	2 37154,10022 37670,9871
          'until' => 1148745600,
          'text' => 'Herzbergstraße, zwischen Siegfriedstraße und Vulkanstraße gesperrt, die Gegenrichtung ist als Einbahnstraße ausgeschildert, Straße am Wasserwerk, zwischen Herzbergstraße und Landsberger Allee gesperrt, Baustelle. Dauer: 07.04.2006 , 18:00 Uhr bis 27.05.2006, 18:00 Uhr. ',
          'from' => 1144339200,
-         'data' => 'userdel	1 16866,13532 15880,13535
+         'data' => 'userdel	1 16866,13532 15892,13534
 ',
          'type' => 'gesperrt'
        },
@@ -759,6 +759,33 @@ userdel	2 56193,-44322 56510,-44474
          'text' => 'L 030 Tiergartenstr. OL Königs Wusterhausen, Schleusenbrücke Brückenreparatur Vollsperrung 24.04.2006-27.04.2006 ',
          'from' => 1145743200,
          'data' => 'userdel	2 27543,-11912 27657,-11741
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002632',
+         'until' => 1147557600,
+         'text' => 'Jüterborger Str. (Kreuzberg) in Richtung Golßener Str., zwischen Friesenstr. und Heimstr. Baustelle, Fahrtrichtung gesperrt (bis 13.05.06)',
+         'from' => 1144959197,
+         'data' => 'userdel	q4; 9799,8962 9958,8966
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1145844000,
+         'text' => '21.04.2006, 22.00 Uhr bis 24.04.2006, 4.00 Uhr Vollsperrung der Ottomar-Geschke-Straße ',
+         'from' => 1145649600,
+         'data' => 'userdel	2 21182,4336 21174,4250
+userdel	2 21100,4192 21174,4250
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1151168400,
+         'text' => '23.06.2006, 21.00 Uhr bis 24.06.2006, 19.00 Uhr Vollsperrung der Ottomar-Geschke-Straße ',
+         'from' => 1151002800,
+         'data' => 'userdel	2 21182,4336 21174,4250
+userdel	2 21100,4192 21174,4250
 ',
          'type' => 'gesperrt'
        }
