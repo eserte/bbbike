@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.10 2006/04/11 20:02:19 eserte Exp $
+# $Id: bbbike.cgi,v 8.10 2006/04/11 20:02:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -4026,6 +4026,7 @@ EOF
 						      time           => time,
 						      routestringrep => $string_rep,
 						      route          => \@out_route,
+						      remote_ip      => $ENV{HTTP_X_FORWARDED_FOR} || $ENV{REMOTE_ADDR},
 						    });
 		    close SESS;
 		}

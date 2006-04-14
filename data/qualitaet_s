@@ -720,7 +720,6 @@ Dunckerstr.: Kopfsteinpflaster	Q2 11337,14946 11450,15173 11480,15229 11603,1545
 Raumerstr.: Kopfsteinpflaster	Q2 11450,15173 11334,15248 11236,15312 11119,15385
 Berliner Str. (Pankow): auﬂen Kopfsteinpflaster, innen betoniert	Q2 10846,17992 10829,18083 10755,18231 10680,18380
 Schudomastr.: Kopfsteinpflaster, OK	Q1 13884,7425 13798,7507 13781,7524
-Segelfliegerdamm: Kopfsteinpflaster	Q2 17628,4148 17797,4441 18058,4627
 Wilskistr.: Kopfsteinpflaster, OK	Q1 -240,4091 43,4421 207,4575 442,4689 661,4748 825,4764
 Im Fischtal: Kopfsteinpflaster, OK	Q1 825,4764 744,4567
 Ihnestr.: m‰ﬂiges Kopfsteinpflaster	Q2 1870,4558 1831,4428 1781,4254 1759,4185 1704,3979 1677,3885
@@ -1209,6 +1208,7 @@ Pflugstr.: Asphalt	Q0 8781,14357 8662,14567
 Wˆhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 Eulerstr.: Asphalt	Q0 9268,16228 9494,16455
+Eintrachtstr.: schlechtes Kopfsteinpflaster	Q3 10710,18393 10650,18544
 Hannaweg: Beton	Q0 20923,13960 20938,14066
 Boskoopweg: m‰ﬂiger Asphalt	Q1 20755,15450 20617,15239
 Tiergartenstr. (Biesdorf): fester Sandweg	Q2 21037,7751 21179,7754 21304,7783 21408,7841
@@ -1217,7 +1217,7 @@ Meyerheimstr.: Asphalt	Q0 11849,15760 11905,15878 11961,16002
 Boschweg: Beton	Q0 14784,6169 14788,6261 14760,6319 14564,6496
 Maselakeweg: Verbundsteinpflaster	Q1 -2441,16996 -2391,16607 -2340,16590
 Sellinstr.: m‰ﬂiger Asphalt	Q1 11215,17927 11238,17785
-Riedemannweg: Asphalt	Q0 4248,15647 4408,15297
+Riedemannweg: Asphalt	Q0 4248,15647 4389,15336
 Haﬂfurter Weg: m‰ﬂiger Asphalt	Q1 11847,18338 11812,18484
 Erlenweg: m‰ﬂiger Asphalt	Q1 -3301,17976 -3187,18077
 Zachertstr.: Beton	Q0 17070,11375 17153,11342 17242,11304 17588,11234 17725,11228 17888,11229
@@ -1999,7 +1999,7 @@ Burgemeisterstr.: schlechtes holpriges Kopfsteinpflaster	Q3 9348,5665 9157,5689 
 Knesebeckstr. (Zehlendorf): Kopfsteinpflaster	Q2 1104,2328 1209,2371
 Knesebeckstr. (Zehlendorf): Asphalt	Q0 1209,2371 1320,2418 1392,2606
 Schˆnerlinder Str.: Asphalt	Q0 21799,4319 21640,4368
-Wolfshagener Str.: m‰ﬂiger Beton	Q1 11233,18981 10920,18678 10825,18634 10721,18575 10565,18507 10439,18443
+Wolfshagener Str.: m‰ﬂiger Beton	Q1 11233,18981 10920,18678 10825,18634 10721,18575 10650,18544 10565,18507 10439,18443
 Crusemarkstr.: guter Beton	Q0 10712,18975 10825,18634
 Sophie-Charlotte-Str. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 439,3900 653,3967 821,4108 1039,4179 1275,4283
 Retzdorffpromenade: Kopfsteinpflaster	Q2 4893,6812 4993,6812
@@ -2313,6 +2313,7 @@ Kunigundenstr.: Kopfsteinpflaster	Q2 8943,5428 8865,5468
 Oettingstr.: schlechtes Kopfsteinpflaster	Q3 21828,5623 21907,5517
 Cardinalstr.: schlechtes Kopfsteinpflaster	Q3 21718,5551 21828,5623 21901,5728
 Joachimstr. (Kˆpenick): guter Asphalt	Q0 21802,5437 21907,5517 22009,5593
+Buchholzweg: guter Asphalt	Q0 4535,15530 4466,15350 4389,15336
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934
