@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.27 2006/02/16 21:44:45 eserte Exp $
+# $Id: BBBikeHeavy.pm,v 1.28 2006/04/16 19:08:24 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.27 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.28 $ =~ /(\d+)\.(\d+)/);
 
 package main;
 use strict;
@@ -1084,6 +1084,7 @@ sub BBBikeHeavy::svg_export {
 
 
 # any export via BBBikeDraw
+# Return true on success
 ### AutoLoad Sub
 sub BBBikeHeavy::any_bbbikedraw_export {
     my(%args) = @_;
@@ -1165,7 +1166,9 @@ sub BBBikeHeavy::any_bbbikedraw_export {
     if ($err) {
 	unlink $file;
 	status_message(Mfmt("Die %s-Datei konnte nicht erstellt werden. Grund: %s", $args{-imagetype}, $err), "err");
-	return;
+	return 0;
+    } else {
+	return 1;
     }
 }
 

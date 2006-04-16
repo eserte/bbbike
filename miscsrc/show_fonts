@@ -1,0 +1,33 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: sortbycat,v 2.10 2004/12/28 22:54:59 eserte Exp $
+# Author: Slaven Rezic
+#
+
+# Only to be called within bbbike
+# Run ptksh and type
+#    do "miscsrc/show_fonts"
+
+use strict;
+use vars qw($top %font $top_dpi);
+
+my $t = $top->Toplevel(-title => "Fonts");
+$t->geometry("300x300");
+my $p = $t->Scrolled("Pane", -scrollbars => "ose")->pack(qw(-fill both -expand 1));
+for my $fdef (sort { $a->[0] <=> $b->[0] }
+	        map { my %f = $top->fontMetrics($font{$_});
+		  	  my %a = $top->fontActual($font{$_});
+	              [size2px($a{-size}), $_, \%f, \%a]
+		  }
+              keys %font) {
+    my(undef, $f, $metrics, $actual) = @$fdef;
+    my $size = $actual->{-size};
+    my $px = size2px($size);
+    my $pt = size2pt($size);
+    $p->Label(-text => "$f (${px}px, ${pt}pt, size=$size)",
+              -font => $font{$f})->pack(-anchor => "w");
+}
+
+__END__

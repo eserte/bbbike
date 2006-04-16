@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: GfxConvert.pm,v 1.17 2005/08/25 22:16:51 eserte Exp $
+# $Id: GfxConvert.pm,v 1.18 2006/04/16 19:08:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -263,7 +263,7 @@ my $pdf_error_preamble = "Die PDF-Datei kann nicht erstellt werden. Grund: ";
 sub ps2pdf_check {
     my($infile, $outfile, %args) = @_;
     if (!is_in_path("ps2pdf")) {
-	die $gif_error_preamble .
+	die $pdf_error_preamble .
 	    "ps2pdf aus der Ghostscript-Distribution wird benötigt.\n";
     }
 }

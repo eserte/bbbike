@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.232 2006/04/11 19:17:18 eserte Exp $
+# $Id: bbbike,v 3.233 2006/04/16 19:08:01 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2005 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -15,7 +15,8 @@
 
 package main;
 
-## This is list is not maintained anymore:
+## Additional files for perl2exe.
+## NOTE: This list is not maintained anymore.
 #perl2exe_include Tk/Checkbutton.pm
 
 BEGIN { $Devel::Trace::TRACE = 0 }
@@ -191,6 +192,7 @@ use your qw($Karte::Standard::obj $Karte::Standard::init_scrollregion
 #BEGIN{mymstat("before use BBBikeXS");}
 ## DEBUG_END
 
+# BBBikeXS functions are optional, as there are pure-perl replacements
 eval 'use BBBikeXS 0.09';
 
 ## DEBUG_BEGIN
@@ -202,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.232 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.233 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -222,9 +224,9 @@ $use_clipboard = 1 if $os eq 'win';
 require TkChange;
 
 # compatibility includes
-if ($Tk::VERSION < 402) {
+if ($Tk::VERSION < 800) {
     warn Mfmt("Die Tk-Version ist veraltet (%s). Möglicherweise ist
-BBBike trotzdem benutzbar. Empfohlen wird ein Upgrade auf Version 800.012 oder
+BBBike trotzdem benutzbar. Empfohlen wird ein Upgrade auf Version 800.024 oder
 besser.\n", $Tk::VERSION);
 }
 
@@ -232,8 +234,24 @@ if ($Tk::VERSION <= 402.004) {
     require TkCompat;
 }
 
+my $terminal_encoding;
 if ($os eq 'win') {
     require WinCompat;
+    # XXX This encoding is maybe valid for Win98 (some?) command.com, what about other Windows?
+    # XXX Unfortunately using encoding on STDERR
+    # creates a segfault with ActivePerl Build 811 + Win98, so it's disabled...
+    #$terminal_encoding = "cp850";
+} else {
+    local $^W = undef;
+    if ("$ENV{LANG}$ENV{LC_ALL}" =~ /utf-?8/i) {
+	$terminal_encoding = "utf8";
+    }
+}
+if ($terminal_encoding && $] >= 5.008) {
+    eval '
+	binmode STDOUT, ":encoding($terminal_encoding)";
+	binmode STDERR, ":encoding($terminal_encoding)";
+    '; warn $@ if $@;
 }
 
 # enable DnD
@@ -392,8 +410,8 @@ define_item_attribs();
 generate_plot_functions();
 
 ###################################################################
-$really_no_www = $os eq 'win'; # Trumpet und Win32Sock hängen zu lange, wenn es keine Verbindung gibt
-$no_map = !$devel_host && (!defined $ENV{USER} || $ENV{USER} !~ /^(eserte|rezic|srezic)$/);
+$really_no_www = $os eq 'win'; # Trumpet und Win32Sock hängen zu lange, wenn es keine Verbindung gibt XXX aber moderne Windows nicht mehr, oder?
+$no_map = !$devel_host && (!defined $ENV{USER} || $ENV{USER} !~ /^(eserte|rezic|srezic|slavenr)$/);
 $abbiege_optimierung = 0;
 # Verlust in Metern beim Linksabbiegen ohne Ampel
 # XXXXX und beim Geradeausfahren??????
@@ -430,6 +448,11 @@ $next_is_undo = 0;
 use enum qw(:SRP_ COORD TYPE);
 
 $aufschlag = 1; # XXX ???
+
+# Do as early as possible to avoid warnings:
+if (!$ENV{HOME} || !-d $ENV{HOME}) { # z.B. unter Win32
+    $ENV{HOME} = $FindBin::RealBin;
+}
 
 # Weather variables section
 $wetter_force_update = 1 if !defined $wetter_force_update;
@@ -487,9 +510,6 @@ if ($devel_host) {
     $Karte::cache_root = "/usr/www/berlin";
 }
 
-if (!$ENV{HOME} || !-d $ENV{HOME}) { # z.B. unter Win32
-    $ENV{HOME} = $FindBin::RealBin;
-}
 if ($os eq 'win') {
     require Win32Util;
     my $home = Win32Util::get_user_folder();
@@ -647,9 +667,9 @@ TRY_SPEED_POWER_REFERENCE_STRING: {
 		}
 		$i++;
 	    }
-	    warn "Ignore reference $type $val"; # XXX german
+	    warn "Referenzgeschwidigkeit/-leistung $type $val wird ignoriert";
 	} else {
-	    warn "-reference should be in the form type:value, where type is either speed or power"; # XXX german
+	    warn "Die Option -reference sollte im Format type:value sein, wobei type entweder speed oder power ist und value die entsprechende Geschwindigkeit in km/h oder Leistung in W";
 	}
     }
 }
@@ -714,7 +734,7 @@ if (!defined $top) {
 
     # Es gibt gute Gründe, für CloseMainWin kein Escape zu nehmen
     # (damit können Vorgänge abgebrochen werden). Verwendung von C-q,
-    # weil das mittlerweile quasi-Standard ist.
+    # weil das mittlerweile quasi-Standard (Gtk, Qt/KDE, Windows) ist.
     $top->eventAdd(qw[<<CloseMainWin>> <Control-c> <Control-q>]);
     $top->eventAdd(qw[<<CloseWin>>     <Control-c> <Escape>]);
 
@@ -756,7 +776,7 @@ if (!defined $top) {
 	$top->optionAdd("*$_.cursor", "hand2", "startupFile");
     }
 
-    if (0) { # ... naja, müsste ein Designer ran ... außerdem with -tile nicht mehr unterstützt (?)
+    if (0) { # ... naja, müsste ein Designer ran ... außerdem with -tile nicht mehr unterstützt (?), und mit Windows ging's noch nie
 	my $bg = $top->Photo(-file => Tk::findINC("images/bg.gif"));
 	for (qw(Toplevel Label Button Checkbutton Radiobutton FlatBut
 		FlatCheckbox FlatRadiobutton FireButton Menubutton Frame Pane),
@@ -789,13 +809,10 @@ if ($run_under_kde) {
 # Are we running exceed?
 $exceed = ($top->server =~ /Hummingbird/);
 
-$focus_policy = 'click' if $exceed;
-
 if (!defined $focus_policy) {
-    if ($os eq 'unix') {
-	## XXX Problem: Fenster erscheinen manchmal abgeschnitten wegen
-	## XXX still in 804?
-	## -popover => 'cursor'
+    if ($exceed) {
+	$focus_policy = 'click';
+    } elsif ($os eq 'unix') {
 	#XXX $focus_policy = 'follow';
 	$focus_policy = 'click';
     } else {
@@ -826,6 +843,11 @@ use enum qw(:GEOMETRY_ X Y WIDTH HEIGHT);
 # Geometry
 set_default_geometry();
 geometry_dependent_settings();
+
+# dots per inch und mm, must be called before set_fonts
+$top_dpmm = $top->screenwidth/$top->screenmmwidth;
+$top_dpi  = $top_dpmm*25.4;
+$ps_image_res = int($top_dpi) . "x" . int($top_dpi);
 
 # Zeichensätze
 set_fonts();
@@ -870,11 +892,6 @@ if (@want_extends) {
     }
 }
 
-# dots per inch und mm
-$top_dpmm = $top->screenwidth/$top->screenmmwidth;
-$top_dpi  = $top_dpmm*25.4;
-$ps_image_res = int($top_dpi) . "x" . int($top_dpi);
-
 if (defined $init_scale_massstab) {
     if ($init_scale_massstab =~ m{^1:(\d+)$}) {
 	my $nenner = $1;
@@ -897,8 +914,9 @@ if (defined $init_scale_massstab) {
 
 $srtbike_photo = load_photo($top, 'srtbike_solid.' . $default_img_fmt);
 if ($os eq 'win' || $^O eq 'cygwin') {
-    # XXX should I use 16 too?
-    $srtbike_icon = load_photo($top, 'srtbike32.' . $default_img_fmt);
+    # XXX srtbike32.* looks broken on Win98, so use srtbike16.*
+    #$srtbike_icon = load_photo($top, 'srtbike32.' . $default_img_fmt);
+    $srtbike_icon = load_photo($top, 'srtbike16.' . $default_img_fmt);
     if ($srtbike_icon) {
 #XXX Produces funny colors --- Tk problem?!
 #	$top->iconmask('@' . $FindBin::RealBin . '/images/srtbike32_mask.xbm');
@@ -916,6 +934,7 @@ $top->title("$progname $VERSION");
 
 # In ->Icon wird auch ein ->update durchgeführt:
 # XXX Unter Unix vielleicht darauf verzichten und iconimage stattdessen verwenden?
+# XXX Also set icon according to freedesktop specs.
 $top->Icon(-image => $srtbike_icon) if defined $srtbike_icon;
 if ($splash_screen) {
     $splash_screen->Raise; # raise after the first ->update on $top, otherwise on Windows the splash screen will stay obscured by the main window
@@ -925,10 +944,6 @@ if ($splash_screen) {
 # Exceed-Bug
 $capstyle_round = ($exceed ? "projecting" : "round");
 
-#XXX
-# for(my $i=0; $i <= $#speed; $++) {
-#     $bikepwr_cal_spd[$i] = 0;
-# }
 # erst hier ist die @power-Zuweisung abgeschlossen
 for(my $i=0; $i <= $#power; $i++) {
     $bikepwr_time[$i] = 0;
@@ -1007,7 +1022,7 @@ $top->optionAdd("*default*foreground" => 'yellow4');
 $top->optionAdd("*default*text"       => M"Voreinstellung");
 $top->optionAdd("*cancel*foreground"  => 'red');
 $top->optionAdd("*cancel*text"        => M"Abbrechen");
-#XXX Experiment for Tk804: {my $p=load_photo($top, "cross.".$default_img_fmt, -name => "cross");for(qw(close cancel)) { $top->optionAdd("*$_*compound","left"); $top->optionAdd("*$_*image","cross")}}
+#XXX Experiment for Tk804. Problems too solve: maybe icon too large for small screens/buttons; images should be transparent: {my $p=load_photo($top, "cross.".$default_img_fmt, -name => "cross");for(qw(close cancel)) { $top->optionAdd("*$_*compound","left"); $top->optionAdd("*$_*image","cross")}}
 $top->optionAdd("*close*foreground"   => 'red');
 $top->optionAdd("*close*text"         => M"Schließen");
 $top->optionAdd("*end*foreground"     => 'green4');
@@ -2731,7 +2746,7 @@ sub do_iconframe {
 			  -value => MM_USEREDIT,
 			  -accelerator => "Shift-U",
 			  -command => sub { # XXX don't duplicate code, see <U>
-			      set_cursor('delnet');
+			      set_cursor('delnet', 'X_cursor');
 			  });
 	$bdm->command(-label => M"Standard laden",
 		      -command => sub { load_user_dels() });
@@ -5304,10 +5319,11 @@ sub define_item_attribs {
 				    'nw' => 5, 'sw' => -5};
     # $label_spaceadd not needed here
 
-    # U-Bahnsymbole
-    $xadd_anchor_type->{'u'} = {'w' => 8, 'n' => 0, 'e' => -8, 's' => 0,
+    # U-Bahnsymbole (auch S-Bahn, R-Bahn etc.)
+    # XXX This should be variable depending on the drawn icon (normal, klein, mini)
+    $xadd_anchor_type->{'u'} = {'w' => 9, 'n' => 0, 'e' => -9, 's' => 0,
 				'nw' => 5, 'sw' => 5};
-    $yadd_anchor_type->{'u'} = {'w' => 0, 'n' => 8, 'e' => 0,  's' => -8,
+    $yadd_anchor_type->{'u'} = {'w' => 0, 'n' => 9, 'e' => 0,  's' => -9,
 				'nw' => 5, 'sw' => -5};
     $label_spaceadd{'u'} = "  ";
 
@@ -5869,11 +5885,13 @@ EOF
 		warn "Can't find image $photo (3)";
 	    }
 
-	    if ($abk =~ /^[ubr]$/) {
-		$c->createLine($x-$ubahn_length, $y, $x+$ubahn_length, $y,
+	    if ($abk =~ /^[r]$/) {
+		$c->createLine($x-$rbahn_length, $y, $x+$rbahn_length, $y,
 			       -tags => ["$abk-bg", "$xx,$yy", $pointname]);
 		$c->createText($x, $y,
 			       -tags => ["$abk-fg", "$xx,$yy", $pointname]);
+	    } elsif ($abk =~ /^[ub]$/) {
+		$c->createImage($x, $y, -tags => ["$abk-fg", "$xx,$yy", $pointname]);
 	    } elsif ($abk eq 'lsa') {
 		# keine Verwendung von _coord_as_string
 		$c->createImage
@@ -6083,7 +6101,7 @@ sub set_bindings {
     $c->bind("delnet", "<Any-Enter>" => sub {
 		 if ($map_mode eq MM_USEREDIT) {
 		     $c->{SavedCursor} = $c->get_cursor;
-		     set_cursor("addnet");
+		     set_cursor("addnet", "tcross");
 		 }
 	     });
     $c->bind("delnet", "<Any-Leave>" => \&_restore_cursor);
@@ -6283,7 +6301,7 @@ sub set_bindings {
 	       });
     bind_nomod($top, "<U>" => sub {
 		   $map_mode = MM_USEREDIT;
-		   set_cursor('delnet');
+		   set_cursor('delnet', 'X_cursor');
 	       });
     if ($Tk::platform ne 'MSWin32') { # XXX aber auf der Win98-Maschine von Monika laeuft es gut?!
 	bind_nomod($top, "<X>" => \&layer_editor);
@@ -6357,13 +6375,13 @@ sub set_map_mode {
 	    set_cursor('start');
 	}
     } elsif ($map_mode eq MM_BUTTONPOINT) {
-	set_cursor('xy');
+	set_cursor('xy','crosshair');
     } elsif ($map_mode eq MM_INFO) {
 #XXX	$map_mode_deactivate->() if $map_mode_deactivate;
-	set_cursor('info');
+	set_cursor('info','circle');
 #XXX	undef $map_mode_deactivate;
     } elsif ($map_mode eq MM_DRAG) {
-	set_cursor('movehand');
+	set_cursor('movehand','fleur');
     } elsif (exists $map_mode_callback{$map_mode} &&
 	     ref $map_mode_callback{$map_mode} eq 'CODE') {
 	$map_mode_callback{$map_mode}->();
@@ -8282,7 +8300,7 @@ sub print_function {
 	$tmpfiles{$tmpfile}++;
 	pdf_export(-visiblemap => 1, -file => $tmpfile);
 	close($fh);
-	if (-e $tmpfile) {
+	if (-e $tmpfile && -s $tmpfile) {
 	    view_pdf($tmpfile);
 	}
 	return;
@@ -9437,8 +9455,10 @@ sub plot_symbol {
     my($c, $abk, %args) = @_;
     my $tag_bg = $args{'-tag_bg'} || "$abk-bg";
     my $tag_fg = $args{'-tag_fg'} || "$abk-fg";
-    if ($abk eq 'b' || $abk eq 'r') {
-	my %arg = get_symbol_scale('b');
+    if ($abk eq 'b') {
+	$c->itemconfigure($tag_fg, -image => get_symbol_scale($abk));
+    } elsif ($abk eq 'r') { # XXX contains also old code for S-Bahn
+	my %arg = get_symbol_scale('r');
 	$c->itemconfigure
 	  ($tag_bg, -fill => ($abk eq 'b' ? $category_color{"SC"} : $category_color{"R"}), -capstyle => $capstyle_round,
 	   -width => $arg{-width});
@@ -9449,14 +9469,18 @@ sub plot_symbol {
 	   (defined $arg{-font} ? (-font => $arg{-font}) : ()),
 	  );
     } elsif ($abk eq 'u') {
-	my %arg = get_symbol_scale('u');
-	$c->itemconfigure($tag_bg, -fill => $category_color{'U'},
-			  -width => $arg{-width});
-	$c->itemconfigure
-	  ($tag_fg, -anchor => 'c', -fill => 'white',
-	   -text => (defined $arg{-font} ? 'U' : ''),
-	   (defined $arg{-font} ? (-font => $arg{-font}) : ()),
-	  );
+	if (1) {
+	    $c->itemconfigure($tag_fg, -image => get_symbol_scale($abk));
+	} else { # XXX delete?
+	    my %arg = get_symbol_scale('u');
+	    $c->itemconfigure($tag_bg, -fill => $category_color{'U'},
+			      -width => $arg{-width});
+	    $c->itemconfigure
+	      ($tag_fg, -anchor => 'c', -fill => 'white',
+	       -text => (defined $arg{-font} ? 'U' : ''),
+	       (defined $arg{-font} ? (-font => $arg{-font}) : ()),
+	      );
+	}
     } elsif ($abk =~ /^L\d+/) {
   	eval {
   	    $c->itemconfigure($tag_fg,
@@ -9660,8 +9684,8 @@ sub plot_point {
 	my $anzahl_eindeutig = $bhf->count;
 	$bhf->init;
 	# XXX Duplikat in BBBikeLazy:
-	my $ubahn_length = ($abk eq 'u'
-			    ? do { my(%a) = get_symbol_scale('u');
+	my $rbahn_length = ($abk eq 'r'
+			    ? do { my(%a) = get_symbol_scale('r');
 				   $a{-width}/2 }
 			    : 0);
 	my $name_draw = (exists $args{NameDraw}
@@ -13292,7 +13316,7 @@ sub scale_width {
 	}
     }
 
-    foreach (qw(lsa-X lsa-B lsa-F lsa-Zbr rest kn vf)) {
+    foreach (qw(lsa-X lsa-B lsa-F lsa-Zbr rest kn vf u b)) {
 	$c->itemconfigure($_ . '-fg', -image => get_symbol_scale($_, $scale));
     }
     foreach (qw(e)) {
@@ -13301,29 +13325,32 @@ sub scale_width {
 
     # XXX ... nur ändern, falls sich die Skalierung ändert... (wie oben)
     # XXX arrowshape von sperre1 ändern
-    my %arg = get_symbol_scale('b');
-    $c->itemconfigure('b-bg', -width => $arg{-width});
+    my %arg = get_symbol_scale('r'); 
     $c->itemconfigure('r-bg', -width => $arg{-width});
-    $c->itemconfigure("b-fg",
-		      -text => (defined $arg{-font} ? 'S' : ''),
-		      (defined $arg{-font} ? (-font => $arg{-font}) : ()),
-		     );
     $c->itemconfigure("r-fg",
 		      -text => (defined $arg{-font} ? 'R' : ''),
 		      (defined $arg{-font} ? (-font => $arg{-font}) : ()),
 		     );
-    %arg = get_symbol_scale('u');
-    $c->itemconfigure('u-bg', -width => $arg{-width});
-    $c->itemconfigure("u-fg",
-		      -text => (defined $arg{-font} ? 'U' : ''),
+    if (0) {
+	$c->itemconfigure('b-bg', -width => $arg{-width});
+	$c->itemconfigure("b-fg",
+		      -text => (defined $arg{-font} ? 'S' : ''),
 		      (defined $arg{-font} ? (-font => $arg{-font}) : ()),
 		     );
-    foreach my $tag ($c->find('withtag', 'u-bg')) {
-	my($x1,$y1,$x2,$y2) = $c->coords($tag);
-	# work around 800.0_16-to-be bug
-	if (ref $x1 eq 'ARRAY') { ($x1,$y1,$x2,$y2) = @{ $c->coords($tag) } }
-	my $xm = ($x2-$x1)/2+$x1;
-	$c->coords($tag, $xm-$arg{-width}/2, $y1, $xm+$arg{-width}/2, $y2);
+
+	%arg = get_symbol_scale('u');
+	$c->itemconfigure('u-bg', -width => $arg{-width});
+	$c->itemconfigure("u-fg",
+		          -text => (defined $arg{-font} ? 'U' : ''),
+		          (defined $arg{-font} ? (-font => $arg{-font}) : ()),
+		         );
+	foreach my $tag ($c->find('withtag', 'u-bg')) {
+	    my($x1,$y1,$x2,$y2) = $c->coords($tag);
+	    # work around 800.0_16-to-be bug
+	    if (ref $x1 eq 'ARRAY') { ($x1,$y1,$x2,$y2) = @{ $c->coords($tag) } }
+	    my $xm = ($x2-$x1)/2+$x1;
+	    $c->coords($tag, $xm-$arg{-width}/2, $y1, $xm+$arg{-width}/2, $y2);
+	}
     }
     # rearrange outline_text
     # XXX performance is quite bad (about 0.6s for all U+S-Bahnhöfe)
@@ -13565,7 +13592,7 @@ sub get_symbol_scale {
 	} else {
 	    return undef;
 	}
-    } elsif ($tag eq 'b') {
+    } elsif ($tag eq 'r') {
 	if ($myscale > 4*$mod) {
 	    return (-width => 20, -font => "Helvetica -18");
 	} elsif ($myscale >= 1*$mod) {
@@ -13577,17 +13604,30 @@ sub get_symbol_scale {
 	} else {
 	    return (-width => 3, -font => undef);
 	}
-    } elsif ($tag eq 'u') {
-	if ($myscale > 4*$mod) {
-	    return (-width => 18, -font => "Helvetica -18");
-	} elsif ($myscale >= 1*$mod) {
-	    return (-width => 13, -font => ($os eq 'win' ? "Helvetica -14 bold" : "6x13bold"));
-	} elsif ($scale >= 0.5*$mod) {
-	    return (-width => 9, -font => ($os eq 'win' ? "Helvetica -10 bold" : "5x7"));
-	} elsif ($scale >= 0.2*$mod) {
-	    return (-width => 6, -font => undef);
+    } elsif ($tag eq 'u' || $tag eq 'b') {
+	if (1) {
+	    my $photo;
+	    my $base = $tag eq 'b' ? "sbahn" : "${tag}bahn";
+	    if ($myscale > 2*$mod) {
+		$photo = load_photo($top, $base ."." . $default_img_fmt, -persistent => 1);
+	    } elsif ($myscale >= 0.5*$mod) {
+		$photo = load_photo($top, $base . "_klein." . $default_img_fmt, -persistent => 1);
+	    } elsif ($myscale >= 0.2*$mod) {
+		$photo = load_photo($top, $base . "_mini." . $default_img_fmt, -persistent => 1);
+	    }
+	    return $photo;
 	} else {
-	    return (-width => 3, -font => undef);
+	    if ($myscale > 4*$mod) {
+	        return (-width => 18, -font => "Helvetica -18");
+	    } elsif ($myscale >= 1*$mod) {
+	        return (-width => 13, -font => ($os eq 'win' ? "Helvetica -14 bold" : "6x13bold"));
+	    } elsif ($scale >= 0.5*$mod) {
+	        return (-width => 9, -font => ($os eq 'win' ? "Helvetica -10 bold" : "5x7"));
+	    } elsif ($scale >= 0.2*$mod) {
+	        return (-width => 6, -font => undef);
+	    } else {
+	        return (-width => 3, -font => undef);
+	    }
 	}
     } elsif ($tag eq 'vf') {
 	if ($myscale > 2*$mod) {
@@ -15845,7 +15885,12 @@ sub _restore_cursor {
 }
 
 sub set_cursor {
-    my $type = shift;
+    my($type, $fallback) = @_;
+    if (!defined $fallback && defined $type) {
+	if ($type eq 'ziel') {
+	    $fallback = 'right_ptr';
+	}
+    }
     if (!defined $type) {
 	#$c->configure(-cursor => undef);
 	$c->set_cursor(undef);
@@ -15860,6 +15905,8 @@ sub set_cursor {
 	    #$c->configure(-cursor =>
 	    $c->set_cursor(['@' . $cursor{$type}, 'black']);
 	}
+    } elsif (defined $fallback) {
+	$c->set_cursor($fallback);
     } else {
 	#$c->configure(-cursor => undef);
 	$c->set_cursor(undef);
@@ -17180,15 +17227,6 @@ sub DecBusy {
     }
 }
 
-#XXXX del: ist nicht mehr noetig
-#### AutoLoad Sub
-#sub ResetBusy {
-#   my $top = shift;
-#    return if !Tk::Exists($top);
-#    $top->Unbusy;
-#    $top->{'BusyCount'} = 0;
-#}
-
 ### AutoLoad Sub
 sub redisplay_top {
     my($top, $name, %args) = @_;
@@ -17422,6 +17460,16 @@ sub set_mouse_desc {
     }
 }
 
+sub size2px {
+    my $size = shift;
+    $size <  0 ? -$size : int(0.5 + $size*($top_dpi/72));
+}
+
+sub size2pt {
+    my $size = shift;
+    $size >= 0 ?  $size : int(0.5 - $size/($top_dpi/72));
+}
+
 # Create the fontset for bbbike. Use $std_font as default normal font,
 # or, if not defined, use the system default (e.g. from the option
 # database). The fontset is stored to the global hash %font.
@@ -17501,9 +17549,11 @@ sub set_fonts {
 
         my %normal_attr = $top->fontActual($font{'normal'});
 
-        my $pt = $normal_attr{'-size'}; # points or pixels depending on Tk ver
+        my $size = $normal_attr{'-size'}; # points or pixels depending on Tk ver
+	my $px = size2px($size);
+	my $pt = size2pt($size);
 	my $win_width = @want_extends ? $want_extends[GEOMETRY_WIDTH] : $top->width;
-	if ($win_width <= 800 && abs($pt) >= 10 && !$font_size_from_user) {
+	if ($win_width <= 800 && $pt >= 10 && !$font_size_from_user) {
 ## XXX This is evil: because the fontsize will be from time to time smaller
 ## if the use resizes below the limits and then above the limits.
 ## On the other side, this will result in too big fonts on small
@@ -17529,14 +17579,14 @@ sub set_fonts {
 
 	my $minfs = sub {
 	    my $fs = shift;
-	    $fs = 6 if (abs($fs) < 6);
+	    $fs = 6 if ($fs < 6);
 	    $fs;
 	};
 
 	$top->fontConfigure($font{'bold'},
 			    -size => sprintf("%.f", $minfs->($pt)),
 			    -weight => 'bold');
-	$top->fontConfigure($font{'fix15'},
+	$top->fontConfigure($font{'fix15'}, # exactly 15 pixels height (if not $small_icons in effect)
 			    -size => ($small_icons ? -8 : -15));
 	$top->fontConfigure($font{'tiny'},
 			    -size => sprintf("%.f", $minfs->($pt*8/14)));
@@ -17557,32 +17607,38 @@ sub set_fonts {
 			    -slant => 'roman',
 			    -underline => 0,
 			    -overstrike => 0);
-	if (abs($pt) >= 8) {
-	    my $pt = $pt < 0 ? -$pt : $pt;
-	    $font{'fixed'}
-		= sprintf("-*-$fixed_font_family-medium-r-normal--%d-*-*-*-m-*-iso8859-1", $pt);
+	if ($pt >= 8) {
+#XXX may be deleted
+#	    my $pt = $pt < 0 ? -$pt : $pt;
+#	    $font{'fixed'}
+#		= sprintf("-*-$fixed_font_family-medium-r-normal--%d-*-*-*-m-*-iso8859-1", $pt);
+	    $top->fontConfigure($font{fixed}, -family => $fixed_font_family);
 	} else {
 	    $font{'fixed'} = "5x7"; # XXX really necessary?
 	}
 
-	my %min_sizes =
-	    ('helvetica'	       => [10,8],
-	     'times'		       => [12,10],
-	     'lucida'		       => [9,8],
-	     'new century schoolbook'  => [9,8],
-	     'fixed'		       => [7,7],
+	my %min_px =
+	    ('helvetica'	      => 8,
+	     'times'		      => 10,
+	     'times new roman'        => 10,
+	     'lucida'		      => 8,
+	     'new century schoolbook' => 8,
+	     'fixed'		      => 7,
+	     'arial'		      => 8, # at this size some characters already look somewhat broken (seen on Win98, 800x600 screen)
+	     'courier new'	      => 8,
+	     '__DEFAULT__'	      => 8,
 	    );
 
 	# Resize if necessary, to prevent fonts from being too small.
 	# This is from looking at readable fonts under the iPAQ. I found
 	# that Lucida can produce the smallest readable fonts.
 	while(my($k,$v) = each %font) {
-	    next if $k eq 'fixed'; # This is not a named font, so ignore this.
-	    my $family = $top->fontActual($v, '-family');
-	    my $minsize = $min_sizes{$family};
-	    $minsize = [10,8] if !defined $minsize;
-	    if ($top->fontMetrics($v, "-linespace") < $minsize->[0]) {
-		$top->fontConfigure($v, -size => -$minsize->[1]);
+	    my $family = lc $top->fontActual($v, '-family');
+	    my $min_px = $min_px{$family} || $min_px{__DEFAULT__};
+	    my $current_size = $top->fontActual($v, "-size");
+	    my $current_px = size2px($current_size);
+	    if ($current_px < $min_px) {
+		$top->fontConfigure($v, -size => -$min_px);
 	    }
 	}
     }
@@ -17593,7 +17649,7 @@ sub set_fonts {
     }
 }
 
-# Setzt Bild, falls vorhanden, andernfalls ein Label
+# Set image, if available, otherwise the fallback label
 sub image_or_text {
     my($image, $text) = @_;
     if (defined $image) {
@@ -17635,7 +17691,11 @@ sub image_from_file {
     }
 }
 
-# Lädt ein Bild.
+# Load the image from file $file. Do nothing if $lowmem mode
+# is set. If the -persistent is set, the store the image into the
+# persistent %photo hash for caching. -name can be set
+# for a Tcl-styled image name. In $small_icons mode every
+# image is shrinked to half width/height.
 sub load_photo {
     my($top, $file, %args) = @_;
     return $photo{$file} if exists $photo{$file};
@@ -18037,9 +18097,11 @@ sub export_visible_map {
 }
 
 sub slow_postscript_generation {
+    # XXX Hmmm, seems to be OK on Win98 with Tk800 and Tk804, with quite a number of layers turned on
+    # Where and how did I encounter the problem?
     return $os eq 'win' &&
 	$top->messageBox(-icon => "question",
-			 -message => M"Die PostScript-Erzeugung ist unter Windows langsam. Soll trotzdem fortgesetzt werden?",
+			 -message => M"Die PostScript-Erzeugung könnte unter Windows langsam sein. Soll trotzdem fortgesetzt werden?",
 			 -type => "YesNo") !~ /yes/i;
 }
 

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeLazy.pm,v 1.16 2006/02/06 23:05:53 eserte Exp $
+# $Id: BBBikeLazy.pm,v 1.17 2006/04/16 19:26:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2003 Slaven Rezic. All rights reserved.
@@ -513,8 +513,8 @@ sub BBBikeLazy::plotstr_on_demand {
 	    my $no_overlap_label;
 
 	    # XXX Duplikate in plot_point:
-	    my $ubahn_length = ($abk eq 'u'
-				? do { my(%a) = get_symbol_scale('u');
+	    my $rbahn_length = ($abk eq 'r'
+				? do { my(%a) = get_symbol_scale('r');
 				       $a{-width}/2 }
 				: 0);
 	    # ^^^
