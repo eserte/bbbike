@@ -463,14 +463,7 @@ userdel	q4 55158,-95910 54884,-96292
        },
        undef,
        undef,
-       {
-         'until' => 1144965600,
-         'text' => 'B 101 Trebbiner Str. OL Luckenwalde, zw. Beelitzer Str. u. Potsdamer Str. Anschluß Gewerbehof Vollsperrung; Umleitung 13.03.2006-13.04.2006 ',
-         'from' => 1142118000,
-         'data' => 'userdel	q4 -4355,-35264 -4204,-35072
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1193871599,
@@ -622,15 +615,7 @@ userdel	q4 39715,101866 39574,101863
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1144965600,
-         'text' => 'L 745 Motzen- Gallun zw. OA Motzen und OE Gallun Straßenbau Vollsperrung 30.03.2006-13.04.2006 ',
-         'from' => 1143583200,
-         'data' => 'userdel	2 22476,-19219 22338,-19081
-userdel	2 22476,-19219 22599,-19785
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1148162400,
          'text' => 'B 112 Steinsdorf, Einmündung L45/B112 Herstellung Anbindung L45 Vollsperrung 04.04.2006-20.05.2006 ',
@@ -737,15 +722,7 @@ userdel	2 37154,10022 37670,9871
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1144965600,
-         'text' => 'B 320 Birkenhainichener Str. zw. OL Groß Leine und Birkenhainichen Deckenerneuerung Vollsperrung 13.04.2006-13.04.2006 ',
-         'from' => 1144792800,
-         'data' => 'userdel	2 55628,-43569 56193,-44322
-userdel	2 56193,-44322 56510,-44474
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1145743200,
          'text' => 'K 7220 Potsdamer Str. OL Luckenwalde, zw. Buchtstr. u. Feldstr. Abbrucharbeiten Vollsperrung 18.04.2006-22.04.2006 ',
@@ -786,6 +763,19 @@ userdel	2 21100,4192 21174,4250
          'from' => 1151002800,
          'data' => 'userdel	2 21182,4336 21174,4250
 userdel	2 21100,4192 21174,4250
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002648',
+         'until' => 1145311200,
+         'text' => 'Adamstr. (Spandau) in beiden Richtungen zwischen Wilhelmstr. und Pichelsdorfer Str. Veranstaltung, Straße vollständig gesperrt (bis 17.04.2006)',
+         'from' => 1145209261,
+         'data' => 'userdel	2 -4167,12554 -4223,12631
+userdel	2 -4167,12554 -4069,12558
+userdel	2 -3621,12575 -3738,12572
+userdel	2 -3738,12572 -3876,12567
+userdel	2 -3876,12567 -4069,12558
 ',
          'type' => 'gesperrt'
        }

@@ -4155,4 +4155,17 @@ userdel	2 21182,4336 21174,4250
 userdel	2 21100,4192 21174,4250
 EOF
      },
+     { from  => 1145209261, # 2006-04-16 19:41
+       until => 1145311200, # 2006-04-18 00:00
+       text  => 'Adamstr. (Spandau) in beiden Richtungen zwischen Wilhelmstr. und Pichelsdorfer Str. Veranstaltung, Straße vollständig gesperrt (bis 17.04.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_002648',
+       data  => <<EOF,
+userdel	2 -4167,12554 -4223,12631
+userdel	2 -4167,12554 -4069,12558
+userdel	2 -3621,12575 -3738,12572
+userdel	2 -3738,12572 -3876,12567
+userdel	2 -3876,12567 -4069,12558
+EOF
+     },
     );
