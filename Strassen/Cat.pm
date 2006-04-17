@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Cat.pm,v 1.2 2006/04/17 18:00:55 eserte Exp $
+# $Id: Cat.pm,v 1.3 2006/04/17 21:29:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 use File::Basename qw(basename);
 
@@ -113,10 +113,16 @@ use vars qw(%filetype_to_cat %file_to_cat);
      "wasserumland2"		=> $filetype_to_cat{"wasserstrassen"},
     );
 
-sub get_validity_checker {
+sub _normalize_filename {
     my($filename) = @_;
     $filename =~ s{-orig$}{};
     $filename = basename $filename;
+    $filename;
+}
+
+sub get_validity_checker {
+    my($filename) = @_;
+    $filename = _normalize_filename($filename);
     if (exists $file_to_cat{$filename}) {
 	my %cat;
 	my @code;
@@ -133,6 +139,16 @@ sub get_validity_checker {
     } else {
 	warn "Cannot get validity checker for $filename";
 	undef;
+    }
+}
+
+sub get_static_categories {
+    my($filename) = @_;
+    $filename = _normalize_filename($filename);
+    if (exists $file_to_cat{$filename}) {
+	grep { ref $_ ne 'CODE' } @{ $file_to_cat{$filename} };
+    } else {
+	();
     }
 }
 

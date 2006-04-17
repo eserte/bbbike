@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.94 2006/02/17 00:14:29 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.95 2006/04/17 21:28:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2300,7 +2300,12 @@ EOF
 		   },
 		  )->pack(-side => "left");
 	my $be = $f->BrowseEntry(#-state => "readonly",
-				 -textvariable => \$sel_file)->pack(-side => "left");
+				 -textvariable => \$sel_file,
+				 ($Tk::VERSION >= 804
+				  ? (-autolistwidth => 1)
+				  : ()
+				 )
+				)->pack(-side => "left");
 	$be->Subwidget("slistbox")->configure(-exportselection => 0);
 	$be->insert("end", @files);
     }
@@ -2346,7 +2351,15 @@ sub addnew {
 	     -sticky => "w");
     $e->focus;
     Tk::grid($t->Label(-text => M("Kategorie")),
-	     $be = $t->BrowseEntry(-textvariable => \$cat),
+	     $be = $t->BrowseEntry(-textvariable => \$cat,
+				   ($Tk::VERSION >= 804
+				    ? (-autolistwidth   => 1,
+				       -listheight      => 20,
+				       -autolimitheight => 1,
+				      )
+				    : ()
+				   ),
+				  ),
 	     -sticky => "w");
     Tk::grid($t->Label(-text => M("Koordinaten")),
 	     $t->Entry(-textvariable => \$coords),
@@ -2357,6 +2370,11 @@ sub addnew {
 				-columnspan => 2, -sticky => "ew");
 	$f->Button(Name => "ok",
 		   -command => sub {
+		       # Trim all:
+		       for my $ref (\$name, \$cat, \$coords) {
+			   $$ref =~ s{^\s+}{};
+			   $$ref =~ s{\s+$}{};
+		       }
 		       if ($name eq "") {
 			   main::status_message(M"Kein Name eingetragen","err");
 			   return;
@@ -2402,8 +2420,33 @@ sub addnew {
 		   -command => sub { $t->destroy }
 		  )->pack(-side => "left");
     }
-    $be->insert("end", map { "$_   ".$main::category_attrib{$_}->[0] }
-		       sort keys %main::category_attrib);
+
+    require Strassen::Cat;
+    require BBBikeUtil;
+    my @cat = Strassen::Cat::get_static_categories($file);
+    if (!@cat) {
+	@cat = sort keys %main::category_attrib;
+    }
+    # We have some conflicting categories like 1 (Einbahnstraße OR Ort),
+    # B (Bahnübergang OR Bundesstraße). Therefore disable category label
+    # expansion for some files:
+    if ($file !~ m{\b(ampeln|gesperrt|gesperrt_car)(-orig)?$}) {
+	@cat = map {
+	    my $cat = $_;
+	    (my $cat_label = $cat) =~ s{^F:}{};
+	    if (exists $main::category_attrib{$cat_label}) {
+		$cat_label = $main::category_attrib{$cat_label}->[0];
+	    } else {
+		$cat_label = "";
+	    }
+	    [$cat, $cat_label];
+	} @cat;
+	my $max_cat_length = BBBikeUtil::max(map { length $_->[0] } @cat);
+	$max_cat_length = 4 if $max_cat_length < 4;
+	@cat = map { sprintf "%-${max_cat_length}s   %s", @$_ } @cat;
+    }
+
+    $be->insert("end", @cat);
 }
 
 sub insert_point_from_canvas {

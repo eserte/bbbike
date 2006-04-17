@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.148 2006/04/10 20:39:37 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.149 2006/04/17 21:29:17 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -118,16 +118,22 @@ sub advanced_option_menu {
 		       -command => \&destroy_all_toplevels);
 	$opbm->command(-label => 'Re-call some subs',
 		       -command => sub {
+			   my @errors;
 			   while(my($k,$v) = each %autouse_func) {
 			       (my $module = $k) =~ s{::}{/}g;
 			       $module .= ".pm";
 			       delete $INC{$module};
 			       eval "use autouse $k => qw(" . join(" ", @$v) . ");";
-			       die "Can't autouse $k: $@" if $@;
+			       if ($@) {
+				   push @errors, "Can't autouse $k: $@";
+			       }
 			   }
 			   define_item_attribs();
 			   generate_plot_functions();
 			   set_bindings();
+			   if (@errors) {
+			       die "@errors";
+			   }
 		       });
     }
     $opbm->command(-label => M"Datenverzeichnis ändern ...",

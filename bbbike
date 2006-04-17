@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.233 2006/04/16 19:08:01 eserte Exp $
+# $Id: bbbike,v 3.234 2006/04/17 21:30:45 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.233 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.234 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -5250,6 +5250,7 @@ sub define_item_attribs {
 	 'H'  => [M"Hauptstraße", M"Hauptstraßen", undef],
 	 'N'  => [M"Nebenstraße", M"Nebenstraßen", undef],
 	 'NN' => [M"für Kfz gesperrte Straße", M"für Kfz gesperrte Straßen", undef],
+	 'Pl' => [M"Platz", M"Plätze", undef],
 	 'BAB'=> [M"Autobahn", M"Autobahnen", undef],
 	 'P'  => [M"Park", M"Parks", undef],
 	 'Pabove' => [M"Park", M"Parks", undef],
@@ -5261,7 +5262,6 @@ sub define_item_attribs {
 	 'Sport' => [M"Sportanlage", M"Sportanlagen", undef],
 	 'Industrial' => [M"Industriegebiet", M"Industriegebiete", undef],
 	 'Ae' => [M"Flughafen", M"Flughäfen", undef],
-	 'F'  => [M"Flughafen", M"Flughäfen", undef],
 	 'Q0' => [M"sehr guter Belag", undef, undef,
 		  M"sehr guter Belag (Asphalt)"],
 	 'Q1' => [M"guter Belag", undef, undef,
@@ -5288,6 +5288,31 @@ sub define_item_attribs {
 	 '2'  => [M"Ortskategorie 2", M"Ortskategorie 2", undef],
 	 '1'  => [M"kleiner Ort", M"kleine Orte", undef],
 	 '0'  => [M"Ortsteil", M"Ortsteile", undef],
+	 'Zbr'=> [M"Zugbrücke", M"Zugbrücken", undef],
+	 'Br' => [M"Brücke", M"Brücken", undef],
+	 'Tu' => [M"Tunnel", M"Tunnel", undef],
+	 'CS' => [M"streckenbezogener Kommentar", M"streckenbezogene Kommentare", undef],
+	 'CP' => [M"punktbezogener Kommentar (A-B-C)", M"punktbezogene Kommentare (A-B-C)", undef],
+	 'CP2'=> [M"punktbezogener Kommentar (A-B)", M"punktbezogene Kommentare (A-B)", undef],
+	 'PI' => [M"genaue Wegbeschreibung", undef, undef],
+	 '-2' => [M"relativ sehr ruhiger Kfz-Verkehr", undef, undef],
+	 '-1' => [M"relativ ruhiger Kfz-Verkehr", undef, undef],
+	 '+1' => [M"relativ starker Kfz-Verkehr", undef, undef],
+	 '+2' => [M"relativ sehr starker Kfz-Verkehr", undef, undef],
+	 'St' => [M"Steigung", M"Steigungen", undef],
+	 'Gf' => [M"Gefälle", M"Gefälle", undef],
+	 'Z'  => [M"Grenze", M"Grenzen", undef],
+	 'Q'  => [M"Fähre", M"Fähren", undef],
+	 'green1' => [M"grüner Weg", M"grüne Wege", undef],
+	 'green2' => [M"besonders grüner Weg", M"besonders grüne Wege", undef],
+	 'HNR'=> [M"Hausnummer", M"Hausnummern", undef],
+	 'NL' => [M"unbeleuchtete Straße", M"unbeleuchtete Straßen", undef],
+	 'SW' => [M"Sehenswürdigkeit", M"Sehenswürdigkeiten", undef],
+	 'I'  => [M"Insel", M"Inseln", undef],
+	 'W'  => [M"Gewässer, nicht kategorisiert", undef, undef],
+	 'W0' => [M"unwichtiges Gewässer", undef, undef],
+	 'W1' => [M"Gewässer", undef, undef],
+	 'W2' => [M"größeres Gewässer", undef, undef],
 	 'WR' => [M"Wasserroute", M"Wasserrouten", undef],
 	);
     foreach (@Radwege::category_order) {
