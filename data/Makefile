@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.88 2006/04/03 21:46:01 eserte Exp $
+# $Id: Makefile,v 2.89 2006/04/17 18:19:51 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -104,7 +104,8 @@ targets-clean:
 
 # Useful checks, but normally too slow for a quick build
 # XXX merge with sort-Berlin.coords.data rule below?
-slow-checks:	inaccessible_strassen inaccessible_landstrassen \
+slow-checks:	check-categories \
+		inaccessible_strassen inaccessible_landstrassen \
 		check-line-lengths check-dates \
 		check-coords.data \
 		persistent-tmp
@@ -579,19 +580,24 @@ fragezeichen:	.create_fragezeichen
 #XXX in "-orig" transition: handicap_s-orig and gesperrt-orig always need to have the same base map!
 .create_fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 		.fragezeichen-other-source \
-		${SOURCE_TARGETS:S|^|.fragezeichen-|}
+		${SOURCE_TARGETS:S|^|.fragezeichen-|} \
+		Makefile
 	-@$(WRITEABLE) $@
 	cat fragezeichen-orig |\
 	        ${GREPSTRASSEN} -v -sectionrx "projektierte Radstreifen" |\
 	        ${GREPSTRASSEN} -v -sectionrx "Straßen in Planung" |\
 	        ${GREPSTRASSEN} -v -sectionrx "ignorieren" |\
 	    ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@~
+	@echo "# added from ampeln-orig" >> $@~
 	grep '?' ${DATADIR}/ampeln-orig | \
+	    sed -e 's/	\([^ ]*\)/ (\1)	?/' | \
 	    ${CONVERT2HAFAS} -basefile ${DATADIR}/ampeln-orig -- - >> $@~
+	@echo "# added from handicap_s-orig and gesperrt-orig" >> $@~
 	${MISCSRCDIR}/temporary_streets.pl \
 	    ${DATADIR}/handicap_s-orig ${DATADIR}/gesperrt-orig | \
 	    perl -nle '/(.*\t)(\S+)(.*)/ && !/\b(\d{4}-\d{2}-\d{2}|[0123]?\d\.[01]?\d\.\d{4})\b/ && print "Noch immer? $$1?::inwork$$3"' | \
 	    ${CONVERT2HAFAS} -basefile ${DATADIR}/handicap_s-orig -- - >> $@~
+	@echo "# added from other sources: (${SOURCE_TARGETS})" >> $@~
 	cat .fragezeichen-other-source ${SOURCE_TARGETS:S|^|.fragezeichen-|} >> $@~
 	cmp -s $@~ $@ && rm $@~ || mv $@~ $@
 	touch .create_fragezeichen
@@ -1010,9 +1016,9 @@ check-dates:	.check_dates
 
 .check_dates:	*-orig ${MISCSRCDIR}/check_dates
 	@(echo "Expired today (`date`)": ;\
-	 ${MISCSRCDIR}/check_dates *-orig ;\
+	 ${PERL_UTF8} ${MISCSRCDIR}/check_dates *-orig ;\
 	 echo "Expired in the next two weeks:" ;\
-	 ${MISCSRCDIR}/check_dates -reldays 14 *-orig ) 2>&1 | tee $@~
+	 ${PERL_UTF8} ${MISCSRCDIR}/check_dates -reldays 14 *-orig ) 2>&1 | tee $@~
 	mv $@~ $@
 
 check-crossings:	check-crossings-important \
@@ -1023,6 +1029,22 @@ check-crossings-important:	${PERSISTENTTMPDIR}/crossings.bbd
 check-crossings-less-important:	${PERSISTENTTMPDIR}/crossings_gewaesser.bbd \
 				${PERSISTENTTMPDIR}/crossings_bahn.bbd \
 				${PERSISTENTTMPDIR}/crossings_gewaesser_noignore.bbd
+
+check-categories:	.check_categories
+
+.check_categories:	${TARGET}
+	@echo "Check categories..."
+.for target in ${TARGETS}
+	@echo " ${target}"
+	@$(PERL_UTF8) -I../lib -I.. -MStrassen::Cat -e '\
+	    if ($$ARGV[0] =~ m{^(ampelschaltung|hoehe|gesperrt_[urs]|multi_bez_str|[urs]bahnhof_bg|.*/bbbike-temp-blockings-optimized.pl|kneipen)$$}) {\
+		print "  Skip $$ARGV[0]...\n";\
+		exit 0;\
+	    }\
+	    exit !Strassen::Cat::check_file($$ARGV[0]);\
+	' ${target}
+.endfor
+	touch $@
 
 ${PERSISTENTTMPDIR}/crossings.bbd:	strassen landstrassen landstrassen2 \
 					brunnels

@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: common.pl,v 1.5 2004/12/18 10:44:16 eserte Exp $
+# $Id: common.pl,v 1.6 2006/04/17 12:12:01 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2006 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@
 	     : \&Strassen::Inline::search_c
 	    );
 
-# Scheidemannstr/Entlastungsstr => UdL/Glinkastr.
+# Yitzhak-Rabin/Entlastungsstr => UdL/Glinkastr.
 # check for handicap_s feature
 TEST5:
 {
@@ -78,12 +78,12 @@ TEST6:
 }
 
 # Potsdamer Str. => Heidestr.
-# check for einbahn (Entlastungsstr. XXX will change in future!)
+# formerly check for einbahn
 TEST7:
 {
     require BBBikeRouting;
     my $routing = BBBikeRouting->new->init_context;
-    $routing->Start->Street("Entlastungsstr./Potsdamer");
+    $routing->Start->Street("Ben-Gurion/Potsdamer");
     $routing->resolve_position($routing->Start);
     ok(defined $routing->Start->Coord, "Start coord defined");
     $routing->Goal->Street("Invalidenstr./Heidestr.");
@@ -96,8 +96,30 @@ TEST7:
 
     my $path = $arr[0];
     my @route = $net->route_to_name($path);
-    like($route[0]->[0], qr/Entlastungsstr/, "Expected street");
-    like($route[1]->[0], qr/Bellevueallee/, "Expected street");
+    like($route[0]->[0], qr/Ben-Gurion/, "Expected street");
+    like($route[1]->[0], qr/Entlastungsstr/, "Expected street");
+}
+
+# check for einbahn (Burgherrenstr.)
+TEST8:
+{
+    require BBBikeRouting;
+    my $routing = BBBikeRouting->new->init_context;
+    $routing->Start->Street("Schulenburgring/Burgherren");
+    $routing->resolve_position($routing->Start);
+    ok(defined $routing->Start->Coord, "Start coord defined");
+    $routing->Goal->Street("Burgherrenstr/Dudenstr");
+    $routing->resolve_position($routing->Goal);
+    ok(defined $routing->Goal->Coord, "Goal coord defined");
+
+    my(@arr) = search_c(
+        $net, $routing->Start->Coord, $routing->Goal->Coord,
+    );
+
+    my $path = $arr[0];
+    my @route = $net->route_to_name($path);
+    like($route[0]->[0], qr/Schulenburgring/, "Expected street");
+    like($route[1]->[0], qr/Mussehlstr/, "Expected street");
 }
 
 $algorithm = $algorithm if 0; # peacify -w

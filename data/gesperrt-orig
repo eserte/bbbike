@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.96 2006/03/29 23:28:51 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.97 2006/04/17 18:20:12 eserte Exp $
 #:
 ###################################################################
 #
@@ -659,13 +659,13 @@ Drängelgitter	BNP:5 8810,14373
 Köbisdreieck: Bauarbeiten	2 7160,11225 6853,11336
 #: last_checked: 2005-11-19
 Budapester Str.: Bauarbeiten, Fußgängerüberweg gesperrt	3nocross::inwork 5716,10978 5831,10978 6135,10982
-Hedwigskirchgasse: Bauarbeiten	2::inwork 9743,12239 9756,12139
+Hedwigskirchgasse: Bauarbeiten	2:inwork 9743,12239 9756,12139
 #: last_checked: 2005-08-23
 Monbijoubrücke: die behelfsmäßige Brücke wurde abgerissen, der Neubar ist voraussichtlich 2006-06-01 fertig	2:inwork 9680,12916 9707,12974
 Spreeufer vor dem Monbijoupark: gesperrt wegen Bauarbeiten	2:inwork 10100,12876 9977,12912
 #: by: joern (js):
 Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14903,10403 15059,10289
-Voltairestr. (Arbeiten an "Alexa", voraussichtlich bis 2005-12-31)	2:inwork 11323,12484 11209,12430
+Voltairestr. (Arbeiten an "Alexa", voraussichtlich bis 2006-05-31)	2:inwork 11323,12484 11209,12430
 #: last_checked: 2005-11-17
 Elsenstr.	1:inwork 13760,9188 13657,9063 13504,8882
 #: last_checked: 2005-07
@@ -734,7 +734,7 @@ Mollstr.: Straßenbahn	3nocross 11867,13076 11839,13083 11721,13142
 (Berolinastr.): Tor zum Spielplatz	BNP:10 11863,13053
 (Berolinastr.): Tor zum Spielplatz	BNP:10 11815,13045
 #: temporary:
-Hedwigskirchgasse: wg. Bauarbeiten gesperrt	2::inwork 9743,12239 9756,12139
+Hedwigskirchgasse: wg. Bauarbeiten gesperrt	2:inwork 9743,12239 9756,12139
 (Parkweg Am Karlsbad): tragen (ca. 10 Stufen)	0:40 8190,10960
 Matthäikirchplatz	1 7934,11264 7956,11340 7973,11354
 Matthäikirchplatz	1 7973,11354 7984,11334 7962,11257

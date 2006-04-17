@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.80 2006/04/02 18:14:38 eserte Exp $
+# $Id: Makefile,v 1.81 2006/04/17 18:29:42 eserte Exp eserte $
 #
 
 # Targets:
@@ -33,6 +33,7 @@ LOCAL_HTML_URL?=	${LOCAL_URL}/BBBike
 #XXXDATA_DIR=		data_corrected
 DATA_DIR=		data
 TEMP_BLOCKINGS_DIR=	data/temp_blockings
+BBBIKE_RADZEIT_SSH_HOST?=	${BBBIKE_RADZEIT_HOST}
 
 EXTRA_MISCSRC_FILES=	bbd2esri winter_optimization.pl
 EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html
@@ -84,7 +85,7 @@ SSH_PROG_AND_ARGS?=	ssh -2 -p 5022
 RSYNC_PROG?=	rsync
 RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --exclude-from .rsync.exclude
 RSYNC_ARGS_MS=	${RSYNC_ARGS:S/.rsync.exclude/\/tmp\/mapserver.rsync.exclude/}
-RSYNC_DEST?=	${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_HOST}:${BBBIKE_RADZEIT_APACHE_DIR}
+RSYNC_DEST?=	${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_SSH_HOST}:${BBBIKE_RADZEIT_APACHE_DIR}
 RSYNC_SRCDEST?=	. ${RSYNC_DEST}
 
 # XXX Should be set from mapserver/brb/Makefile:
@@ -194,7 +195,7 @@ check:
 	${RSYNC} --dry-run ${RSYNC_ARGS} ${RSYNC_SRCDEST}
 
 clean-cache-files-on-remote:
-	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
+	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_SSH_HOST} \
 	    rm /tmp/b_de_\*
 
 RSYNC_RULES=		check-rsync-ok \
@@ -219,7 +220,7 @@ rsync-bbbike:
 	false
 
 rsync-mapserver:	check-rsync-ok check-rsync-mapserver /tmp/mapserver.rsync.exclude
-	${RSYNC_PROG} ${RSYNC_ARGS_MS} ${CURDIR}/public/mapserver/ ${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_HOST}:${BBBIKE_RADZEIT_APACHE_DIR}/${HTDOCS}/mapserver/
+	${RSYNC_PROG} ${RSYNC_ARGS_MS} ${CURDIR}/public/mapserver/ ${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_SSH_HOST}:${BBBIKE_RADZEIT_APACHE_DIR}/${HTDOCS}/mapserver/
 
 /tmp/mapserver.rsync.exclude: .rsync.exclude
 	perl -pe 's{^public/mapserver/}{}' $> > $@
@@ -260,7 +261,7 @@ post-rsync-bbbike-data:
 # No winter optimization needed anymore...
 .if 0
 	-@date >> .last/start-post-rsync-bbbike-data
-	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} \
+	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_SSH_HOST} \
 	   "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/miscsrc/winter_optimization.pl -one-instance &"
 	-@date >> .last/post-rsync-bbbike-data
 .endif
@@ -374,7 +375,7 @@ prepare-bbbike-dist-prog-bbbike-images:
 
 prepare-bbbike-dist-prog-bbbike-tmp:
 	chmod 777 ${CURDIR}/BBBike/tmp
-	@echo "Maybe chown ${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/tmp on ${BBBIKE_RADZEIT_HOST} to www"
+	@echo "Maybe chown ${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/tmp on ${BBBIKE_RADZEIT_SSH_HOST} to www"
 
 prepare-bbbike-dist-prog-bbbike-miscsrc:
 	[ -d ${CURDIR}/BBBike/miscsrc ] || \
@@ -450,7 +451,7 @@ prepare-mapserver-local-dist:	prepare-mapserver-dist-pre \
 prepare-mapserver-dist-pre:
 	[ -e ${CURDIR}/cgi-bin/mapserv ] || \
 	    ln -s ${MAPSERVER_EXE} ${CURDIR}/cgi-bin/mapserv
-	@echo "Compile mapserv manually on ${BBBIKE_RADZEIT_HOST}"
+	@echo "Compile mapserv manually on ${BBBIKE_RADZEIT_SSH_HOST}"
 	[ -d ${CURDIR}/$(HTDOCS)/mapserver/brb ] || \
 	    mkdir -p ${CURDIR}/$(HTDOCS)/mapserver/brb
 
@@ -490,7 +491,7 @@ test:	test-on-remote test-from-local
 
 test-on-remote:
 	-@date >> .last/start-test-on-remote
-	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_SSH_HOST} '\
 	cd ${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin \
 	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/${BBBIKECGI} \
@@ -513,7 +514,7 @@ test-from-local:
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_RADZEIT_HOST}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS_FROM_LOCAL}
-	-@date >> .last/test-on-from-local
+	-@date >> .last/test-from-local
 
 # This rule is just for testing the redirects from www.radzeit.de to
 # bbbike.radzeit.de
@@ -526,10 +527,10 @@ test-from-local-compat:
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_OLD_RADZEIT_HOST}/BBBike \
 	    perl -MTest::Harness -e "runtests(@ARGV)" \
 		${TESTS_FROM_LOCAL}
-	-@date >> .last/test-on-from-local-compat
+	-@date >> .last/test-from-local-compat
 
 test-on-remote-and-send-mail:
-	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_SSH_HOST} '\
 	cd ${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/t && \
 	BBBIKE_TEST_CGIDIR=http://${BBBIKE_RADZEIT_HOST}/cgi-bin \
 	BBBIKE_TEST_CGIURL=http://${BBBIKE_RADZEIT_HOST}/cgi-bin/${BBBIKECGI} \
@@ -573,7 +574,7 @@ test-radzeit-old:
 		${TESTS}
 
 server-permissions:
-	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_SSH_HOST} '\
 		chown ${WWW_USER} "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/tmp/berlin_map*"; \
 		chown 644 "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/tmp/berlin_map*"; \
 		chmod 777 "${BBBIKE_RADZEIT_APACHE_DIR}/BBBike/tmp"; \
@@ -582,7 +583,7 @@ server-permissions:
 	'
 
 backup:
-	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_SSH_HOST} '\
 	    cd ${BBBIKE_RADZEIT_APACHE_DIR} && \
 	    tar cfpz /tmp/BBBike-`date +%Y%m%d`-backup.tar.gz \
 	    BBBike \
@@ -600,14 +601,14 @@ backup-local:
 	'
 
 remote-cleanup:
-	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_HOST} '\
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_RADZEIT_USER} ${BBBIKE_RADZEIT_SSH_HOST} '\
 	    cd ${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/mapserver/brb && \
 	    ./cleanup -f -agehours 24 \
 	'
 
 # For quick deployment only:
 fast-rsync-googlemaps:
-	rsync -e "${SSH_PROG_AND_ARGS}" -av $(BBBIKE_ROOT_DIR)/cgi/bbbikegooglemap.cgi ${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_HOST}:/var/www/domains/radzeit.de/www/cgi-bin/
+	rsync -e "${SSH_PROG_AND_ARGS}" -av $(BBBIKE_ROOT_DIR)/cgi/bbbikegooglemap.cgi ${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_SSH_HOST}:/var/www/domains/radzeit.de/www/cgi-bin/
 
 #######################################################################
 ## Preliminary ixls.de rules, not needed anymore?

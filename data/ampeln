@@ -1,5 +1,5 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.52 2006/03/29 23:29:28 eserte Exp eserte $
+#: version: $Id: ampeln-orig,v 4.53 2006/04/17 18:20:53 eserte Exp $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -921,8 +921,8 @@ Wirklich?	? -3755,17090
 	X 127,17176
 	X -344,15200
 	X -248,14518
-	X 1504,14328
-	X 1390,14372
+	X 1479,14343
+	X 1360,14375
 	X 2106,14060
 	X 2902,14006
 	X 3054,13583
@@ -1404,7 +1404,7 @@ nur Richtung O	X 8142,7221
 	X -834,15053
 	X -962,13474
 	X 1488,14952
-	X 1155,14382
+	X 1133,14387
 	X 4556,13219
 	X 5723,13346
 	X 5565,13370
@@ -1786,7 +1786,6 @@ Parkeisenbahn Wuhlheide	B 20561,7229
 	F 1186,10118
 	F 2234,11440
  	F -4648,11560
-(während der Umleitung über Schadowstr., ca. bis 2005-12-31)	X 9028,12307
 	X 10819,11664
  	X -1684,703
  	X -1668,-1709

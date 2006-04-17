@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: hv_impl.t,v 1.18 2004/12/18 10:44:06 eserte Exp $
+# $Id: hv_impl.t,v 1.19 2006/04/17 12:11:38 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2006 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -36,6 +36,7 @@ use lib ($root, "$root/lib", "$root/data");
 use lib @lib::ORIG_INC;
 use Strassen;
 use FindBin;
+use File::Spec;
 use Getopt::Long;
 require Strassen::Inline;
 Inline->init;
@@ -45,9 +46,10 @@ BEGIN {
 	require Devel::Leak;
 	import Devel::Leak;
     };
-    if ($@) {
-	warn "Devel::Leak not found, memory leak tests not activated.\n";
-    }
+    ## The "skip" below is verbose enough
+    #if ($@) {
+    #diag "Devel::Leak not found, memory leak tests not activated.\n";
+    #}
 }
 
 if (!GetOptions("v+" => \$v)) {
@@ -55,6 +57,26 @@ if (!GetOptions("v+" => \$v)) {
 }
 if (defined $v && $v > 0) {
     Strassen::set_verbose(1);
+}
+
+sub quiet_stderr {
+    my($code) = @_;
+    if (!$v) {
+	*OLDERR = *OLDERR; # peacify -w
+	open OLDERR, ">&STDERR" or die $!;
+	open STDERR, "> ". File::Spec->devnull or die $!;
+    }
+    my $ret;
+    eval {
+	$ret = $code->();
+    };
+    my $err = $@;
+    close STDERR;
+    open STDERR, ">&OLDERR" or die $!;
+    if ($err) {
+	die $err;
+    }
+    $ret;
 }
 
 use vars qw($algorithm);
@@ -92,7 +114,10 @@ ok(!(!@arr || ref $arr[0] ne 'ARRAY'), "Path result");
 
 {
     my $handle;
-    Devel::Leak::NoteSV($handle) if $leaktest;
+    my($sv1, $sv2);
+    if ($leaktest) {
+	$sv1 = quiet_stderr(sub { Devel::Leak::NoteSV($handle) });
+    }
     {
 	my @arr = Strassen::Inline::search_c($net, $fixed_start, $fixed_goal);
 	ok(@arr, "Path between $fixed_start and $fixed_goal");
@@ -103,7 +128,18 @@ ok(!(!@arr || ref $arr[0] ne 'ARRAY'), "Path result");
 	}
 
     }
-    Devel::Leak::CheckSV($handle) if $leaktest;
+    if ($leaktest) {
+	$sv2 = quiet_stderr(sub { Devel::Leak::CheckSV($handle) });
+    }
+
+ SKIP: {
+	skip("No Devel::Leak, no leak tests", 1) if !$leaktest;
+	if ($sv2 > $sv1) {
+	    diag "Scalar leakage: before $sv1, after $sv2";
+	}
+	my $leak_scalars_accept = 20;
+	cmp_ok($sv2, "<=", $sv1+$leak_scalars_accept, "Accept at most $leak_scalars_accept leaking scalars");
+    }
 }
 
 $@ = "";

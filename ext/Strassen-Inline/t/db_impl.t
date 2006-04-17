@@ -2,10 +2,10 @@
 # -*- perl -*-
 
 #
-# $Id: db_impl.t,v 1.13 2004/12/18 12:36:31 eserte Exp $
+# $Id: db_impl.t,v 1.14 2006/04/17 12:29:14 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001, 2002, 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001, 2002, 2003, 2006 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,6 +28,7 @@ use Strassen::Build;
 use StrassenNetz::CNetFile;
 use Storable;
 use FindBin;
+use File::Spec;
 use Getopt::Long;
 require Strassen::Inline2;
 Inline->init;
@@ -37,9 +38,10 @@ BEGIN {
 	require Devel::Leak;
 	import Devel::Leak;
     };
-    if ($@) {
-	warn "Devel::Leak not found, memory leak tests not activated.\n";
-    }
+    ## The "skip" below is verbose enough
+    #if ($@) {
+    #diag "Devel::Leak not found, memory leak tests not activated.\n";
+    #}
 }
 
 use vars qw($net $algorithm);
@@ -54,7 +56,7 @@ BEGIN {
 	exit;
     }
 
-    $tests = 24;
+    $tests = 29;
 }
 
 BEGIN { plan tests => $tests }
@@ -64,6 +66,26 @@ if (!GetOptions("v+" => \$v)) {
 }
 if ($v > 0) {
     Strassen::set_verbose(1);
+}
+
+sub quiet_stderr {
+    my($code) = @_;
+    if (!$v) {
+	*OLDERR = *OLDERR; # peacify -w
+	open OLDERR, ">&STDERR" or die $!;
+	open STDERR, "> ". File::Spec->devnull or die $!;
+    }
+    my $ret;
+    eval {
+	$ret = $code->();
+    };
+    my $err = $@;
+    close STDERR;
+    open STDERR, ">&OLDERR" or die $!;
+    if ($err) {
+	die $err;
+    }
+    $ret;
 }
 
 $algorithm = "C-A*-2";
@@ -123,14 +145,27 @@ ok(@arr, "Path between $start_coord and $goal2_coord");
 is(ref $arr[0], 'ARRAY', "Path elements correct");
 
 {
-    my $handle;
-    Devel::Leak::NoteSV($handle) if $leaktest;
+    my($sv1, $sv2);
+    if ($leaktest) {
+	$sv1 = quiet_stderr(sub { Devel::Leak::NoteSV($handle) });
+    }
     {
 	my @arr = Strassen::Inline2::search_c($net, $fixed_start, $fixed_goal);
 	ok(@arr, "Path between $fixed_start and $fixed_goal");
 	is(ref $arr[0], 'ARRAY', "Path elements correct");
     }
-    Devel::Leak::CheckSV($handle) if $leaktest;
+    if ($leaktest) {
+	$sv2 = quiet_stderr(sub { Devel::Leak::CheckSV($handle) });
+    }
+
+ SKIP: {
+	skip("No Devel::Leak, no leak tests", 1) if !$leaktest;
+	if ($sv2 > $sv1) {
+	    diag "Scalar leakage: before $sv1, after $sv2";
+	}
+	my $leak_scalars_accept = 20;
+	cmp_ok($sv2, "<=", $sv1+$leak_scalars_accept, "Accept at most $leak_scalars_accept leaking scalars");
+    }
 }
 
 #use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->Dumpxs([@arr],[]); # XXX

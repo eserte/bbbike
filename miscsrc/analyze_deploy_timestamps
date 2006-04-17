@@ -1,0 +1,72 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# $Id: analyze_deploy_timestamps,v 1.1 2006/04/17 20:31:23 eserte Exp $
+# Author: Slaven Rezic
+#
+# Copyright (C) 2006 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use FindBin;
+use Date::Parse;
+use Date::Language;
+use List::Util qw(max);
+
+my $last_dir = "$FindBin::RealBin/../projects/www.radzeit.de/.last";
+
+for my $pairdef ("test-from-local",
+		 "do-rsync",
+		 "test-on-remote",
+		) {
+    print "\n$pairdef:\n";
+    my(@pair) = map { "$last_dir/$_" } ("start-$pairdef", $pairdef);
+
+    open my $STARTFH, $pair[0] or die "Can't open $pair[0]: $!";
+    open my $STOPFH,  $pair[1] or die "Can't open $pair[1]: $!";
+
+    chomp(my @start = <$STARTFH>);
+    chomp(my @stop  = <$STOPFH>);
+
+    close $STARTFH;
+    close $STOPFH;
+
+    my $dedate = Date::Language->new("German");
+
+    my @new_start;
+    my @new_stop;
+    for my $rundef ([\@start, \@new_start],
+		    [\@stop,  \@new_stop],
+		   ) {
+	my($old, $new) = @$rundef;
+	for my $date_line (@$old) {
+	    my $epoch = $dedate->str2time(substr($date_line, 3));
+	    if (!defined $epoch) {
+		warn "Cannot parse $date_line";
+	    } else {
+		push @$new, [$epoch, $date_line];
+	    }
+	}
+    }
+
+    for my $stop (@new_stop) {
+	my $stop_epoch = $stop->[0];
+	my @l = grep { $_->[0] < $stop_epoch } @new_start;
+	my $start = max @l;
+	if (!defined $start) {
+	    warn "Cannot determin start for stop time @$stop";
+	} else {
+	    my $start_epoch = $start->[0];
+	    my $diff = $stop_epoch - $start_epoch;
+	    print "$stop->[1]: $diff\n";
+	}
+    }
+}
+
+__END__

@@ -139,6 +139,7 @@ Salesman.pm
 Strassen.pm
 Strassen/Build.pm
 Strassen/CDB.pm
+Strassen/Cat.pm
 Strassen/Core.pm
 Strassen/CoreHeavy.pm
 Strassen/DB_File.pm
@@ -1329,3 +1330,4 @@ miscsrc/TransparentCanvas.pm
 miscsrc/FixRemoteAddrHandler.pm
 miscsrc/simplify_streets
 miscsrc/show_fonts
+miscsrc/analyze_deploy_timestamps
