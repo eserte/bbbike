@@ -3710,7 +3710,7 @@ EOF
        text  => 'B 101 Trebbiner Str. OL Luckenwalde, zw. Beelitzer Str. u. Potsdamer Str. Anschluß Gewerbehof Vollsperrung; Umleitung 13.03.2006-13.04.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -4355,-35264 -4204,-35072
+userdel	q4 -4299,-35198 -4204,-35072
 EOF
      },
      { from  => 1142809200, # 2006-03-20 00:00
@@ -3945,9 +3945,9 @@ EOF
 userdel	q4 33787,63026 33254,63446
 EOF
      },
-     { from  => 1143583200, # 2006-03-29 00:00
-       until => 1144965600, # 2006-04-14 00:00
-       text  => 'L 745 Motzen- Gallun zw. OA Motzen und OE Gallun Straßenbau Vollsperrung 30.03.2006-13.04.2006 ',
+     { from  => 1144792800, # 2006-04-12 00:00
+       until => 1157061600, # 2006-09-01 00:00
+       text  => 'L 745 Motzen- Gallun zw. OA Motzen und OE Gallun Straßenbau Vollsperrung 13.04.2006-31.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 22476,-19219 22338,-19081
@@ -4166,6 +4166,22 @@ userdel	2 -4167,12554 -4069,12558
 userdel	2 -3621,12575 -3738,12572
 userdel	2 -3738,12572 -3876,12567
 userdel	2 -3876,12567 -4069,12558
+EOF
+     },
+     { from  => 1145397600, # 2006-04-19 00:00
+       until => 1149112800, # 2006-06-01 00:00
+       text  => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 20.04.2006-31.05.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -89647,59213 -89549,58784
+EOF
+     },
+     { from  => 1145224800, # 2006-04-17 00:00
+       until => 1146866400, # 2006-05-06 00:00
+       text  => 'L 080 Brandenburger Str. OL Luckenwalde, Kreuz. Dessauer Str. Kanalarbeiten Vollsperrung 18.04.2006-05.05.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -5036,-34940 -4888,-34952
 EOF
      },
     );

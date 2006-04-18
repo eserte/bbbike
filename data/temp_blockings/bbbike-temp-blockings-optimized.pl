@@ -615,7 +615,15 @@ userdel	q4 39715,101866 39574,101863
 ',
          'type' => 'handicap'
        },
-       undef,
+       {
+         'until' => 1157061600,
+         'text' => 'L 745 Motzen- Gallun zw. OA Motzen und OE Gallun Straßenbau Vollsperrung 13.04.2006-31.08.2006 ',
+         'from' => 1144792800,
+         'data' => 'userdel	2 22476,-19219 22338,-19081
+userdel	2 22476,-19219 22599,-19785
+',
+         'type' => 'gesperrt'
+       },
        {
          'until' => 1148162400,
          'text' => 'B 112 Steinsdorf, Einmündung L45/B112 Herstellung Anbindung L45 Vollsperrung 04.04.2006-20.05.2006 ',
@@ -766,18 +774,22 @@ userdel	2 21100,4192 21174,4250
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'source_id' => 'IM_002648',
-         'until' => 1145311200,
-         'text' => 'Adamstr. (Spandau) in beiden Richtungen zwischen Wilhelmstr. und Pichelsdorfer Str. Veranstaltung, Straße vollständig gesperrt (bis 17.04.2006)',
-         'from' => 1145209261,
-         'data' => 'userdel	2 -4167,12554 -4223,12631
-userdel	2 -4167,12554 -4069,12558
-userdel	2 -3621,12575 -3738,12572
-userdel	2 -3738,12572 -3876,12567
-userdel	2 -3876,12567 -4069,12558
+         'until' => 1149112800,
+         'text' => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 20.04.2006-31.05.2006 ',
+         'from' => 1145397600,
+         'data' => 'userdel	q4 -89647,59213 -89549,58784
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1146866400,
+         'text' => 'L 080 Brandenburger Str. OL Luckenwalde, Kreuz. Dessauer Str. Kanalarbeiten Vollsperrung 18.04.2006-05.05.2006 ',
+         'from' => 1145224800,
+         'data' => 'userdel	q4 -5121,-35011 -4909,-35011
+',
+         'type' => 'handicap'
        }
      
 );
