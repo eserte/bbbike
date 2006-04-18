@@ -787,7 +787,28 @@ userdel	2 21100,4192 21174,4250
          'until' => 1146866400,
          'text' => 'L 080 Brandenburger Str. OL Luckenwalde, Kreuz. Dessauer Str. Kanalarbeiten Vollsperrung 18.04.2006-05.05.2006 ',
          'from' => 1145224800,
-         'data' => 'userdel	q4 -5121,-35011 -4909,-35011
+         'data' => 'userdel	q4 -5036,-34940 -4888,-34952
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_002650',
+         'until' => 1146348000,
+         'text' => 'Kreuzstr. (Pankow) in beiden Richtungen, zwischen Grabbeallee und Wollankstr. Baustelle, Straße vollständig gesperrt (bis 29.04.2006)',
+         'from' => 1145392820,
+         'data' => 'userdel	2 9902,18180 9909,18333
+userdel	2 9902,18180 9832,17925
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1155679200,
+         'text' => 'L 034 Philipp-Müller-Str./ Wriezener Str. OD Strausberg, Nordkreuzung Kreiselneubau Vollsperrung 19.04.2006-15.08.2006 ',
+         'from' => 1145311200,
+         'data' => 'userdel	q4 43553,20466 43584,20871
+userdel	q4 43584,20871 43498,21028
+userdel	q4 43584,20871 43209,20665
+userdel	q4 43584,20871 44596,21287
 ',
          'type' => 'handicap'
        }

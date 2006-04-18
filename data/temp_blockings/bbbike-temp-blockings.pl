@@ -4184,4 +4184,25 @@ EOF
 userdel	q4 -5036,-34940 -4888,-34952
 EOF
      },
+     { from  => 1145392820, # 2006-04-18 22:40
+       until => 1146348000, # 2006-04-30 00:00
+       text  => 'Kreuzstr. (Pankow) in beiden Richtungen, zwischen Grabbeallee und Wollankstr. Baustelle, Straße vollständig gesperrt (bis 29.04.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_002650',
+       data  => <<EOF,
+userdel	2 9902,18180 9909,18333
+userdel	2 9902,18180 9832,17925
+EOF
+     },
+     { from  => 1145311200, # 2006-04-18 00:00
+       until => 1155679200, # 2006-08-16 00:00
+       text  => 'L 034 Philipp-Müller-Str./ Wriezener Str. OD Strausberg, Nordkreuzung Kreiselneubau Vollsperrung 19.04.2006-15.08.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 43553,20466 43584,20871
+userdel	q4 43584,20871 43498,21028
+userdel	q4 43584,20871 43209,20665
+userdel	q4 43584,20871 44596,21287
+EOF
+     },
     );
