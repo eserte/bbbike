@@ -811,6 +811,34 @@ userdel	q4 43584,20871 43209,20665
 userdel	q4 43584,20871 44596,21287
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1145642400,
+         'text' => 'Karlsruher Straße zwischen Kurfürstendamm und Heilbronner Straße, Baustelle, Straße gesperrt. Dauer: 19.04.2006 bis 21.04.2006 jeweils zwischen 07.00 Uhr und 20.00 Uhr ',
+         'from' => 1145336400,
+         'data' => 'userdel	2 2965,10522 2938,10071
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1145451600,
+         'text' => 'Invalidenstraße, Prenzlauer Berg Richtung Tiergarten Zwischen Kreuzung Gartenstraße und Kreuzung Chausseestraße Baustelle, gesperrt, Dauer: 19.04.2006 09:00 Uhr bis 15:00 Uhr ',
+         'from' => 1145343600,
+         'data' => 'userdel	2 9383,13978 9214,13928
+userdel	2 9171,13914 9214,13928
+userdel	2 9171,13914 9090,13890
+userdel	2 9090,13890 8935,13844
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002644',
+         'until' => 1146866400,
+         'text' => 'Prenzlauer Promenade (Prenzlauer Berg) im Kreuzungsbereich Ostseestr. und Wisbyer Str Baustelle, in Richtung stadteinwärts Straße gesperrt (Radfahrer können möglicherweise den Gehweg benutzen) (bis 05.05.06)',
+         'from' => 1145430358,
+         'data' => 'userdel	q4; 12097,16263 12091,16209
+',
+         'type' => 'handicap'
        }
      
 );
