@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.89 2006/04/17 18:19:51 eserte Exp $
+# $Id: Makefile,v 2.90 2006/04/20 22:20:52 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -644,7 +644,11 @@ ${PERSISTENTTMPDIR}/Potsdam.coords.bbd: Potsdam.coords.data
 	perl -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Potsdam.coords.data > $@
 
 OPENGEODB_REGION=BB MV
+.if ${HOST} == "mom.herceg.de"
+OPENGEODB_ORTE_SOURCE=/amd/vran/root/usr/ports/distfiles/opengeodb/opengeodb-0.2.4a-UTF8-text-orte.txt
+.else
 OPENGEODB_ORTE_SOURCE=/usr/ports/distfiles/opengeodb/opengeodb-0.2.4a-UTF8-text-orte.txt
+.endif
 
 persistent-tmp-from-opengeodb:	${OPENGEODB_REGION:S/^/${PERSISTENTTMPDIR}\/opengeodb-orte-/:S/$/-DE.bbd/}
 

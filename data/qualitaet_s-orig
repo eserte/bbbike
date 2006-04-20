@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.118 2006/03/29 23:29:50 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.119 2006/04/20 22:21:00 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1872,15676
@@ -614,7 +614,7 @@ Hansaufer: Kopfsteinpflaster	Q2 5876,12585 5804,12490 5740,12407
 Unionstr: Kopfsteinpflaster	Q2 5778,14078 5943,14049
 Bremer Str.: Kopfsteinpflaster	Q2 5962,14156 5943,14049
 Bremer Str.: einige Stellen mit Kopfsteinpflaster	Q1 5943,14049 5895,13725 5866,13532
-Zum Langen See: Kopfsteinpflaster	Q2 23333,2082 23408,1707 23520,1194
+Zum Langen See: Kopfsteinpflaster	Q2 23333,2082 23408,1707 23464,1449 23520,1194
 Mügelbergallee: Kopfsteinpflaster	Q2 23195,1662 23408,1707 23669,1759
 (Müggelbergallee - Zum Müggelturm): Waldweg, meist OK	Q1 23669,1759 24528,1949 24628,2062
 Str. 790/791: holpriger Fahrweg	Q2 30546,-3072 30569,-3000 30592,-2827 30640,-2803 30706,-2831 30770,-2885 30740,-3051
@@ -629,7 +629,7 @@ Dornacher Str.: holpriger Fahrweg	Q2 20949,10145 20947,9999 20948,9847
 Buchenhainer Str.: holpriger Fahrweg	Q2 21164,8243 21329,8222
 Nitzwalder Str.: holpriger Fahrweg	Q2 21329,8222 21529,8019 21598,7922
 Kaulsdorfer Str.: mäßiger Asphalt	Q1 22059,7081 22076,6956 22186,6672 22279,6470 22324,6397
-Marksburgstr.: mäßiger Asphalt	Q1 18809,9133 18319,9218
+Marksburgstr.: mäßiger Asphalt	Q1 18809,9133 18586,9172 18319,9218
 Walkürenstr.: Kopfsteinpflaster	Q2 18069,9289 18006,9335 17735,9533
 Tannhäuserstr.: Kopfsteinpflaster	Q2 18095,9665 17898,9593 17735,9533 17549,9529
 (am Schloß Schönhausen): Kopfsteinpflaster	Q1 10308,19297 10350,19182 10390,19069
@@ -1214,6 +1214,9 @@ Hallesches Tor: Beton	Q0 9593,10238 9592,10174
 Bebelplatz: Kopfsteinpflaster, OK	Q1 9801,12245 9875,12254
 Metzer Str.: Kopfsteinpflaster	Q2 10947,14114 11016,14081
 Kollwitzplatz: Kopfsteinpflaster	Q2 11284,14488 11329,14559
+Ekhofplatz: Kopfsteinpflaster	Q2 23343,1454 23382,1429 23360,1390 23325,1418 23343,1454
+Ekhofstr.: Kopfsteinpflaster	Q2 23251,1401 23325,1418
+Ekhofstr.: Kopfsteinpflaster	Q2 23382,1429 23464,1449 23562,1470
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -2909,7 +2912,7 @@ Kaulbachstr. (Lankwitz): gut asphaltiert	Q0 5485,3259 5692,3353
 Kaulbachstr. (Lankwitz): gut asphaltiert	Q0 5692,3353 5854,3425
 Kaulbachstr. (Lankwitz): gut asphaltiert	Q0 5854,3425 6110,3538 6287,3616 6442,3685
 #: XXX: ein anonymer Eintrag meinte hierzu "Asphalt"
-Nicolaistr.: Kopfsteinpflaster	Q2 6171,3400 6110,3538 6042,3689 5959,3875 5879,4058 5780,4271
+Nicolaistr.: Kopfsteinpflaster	Q2 6171,3400 6139,3473 6110,3538 6042,3689 5959,3875 5879,4058 5780,4271
 #: by: ^^^
 (Nicolaistr. - Dillgesstr.): gut geeignet	Q0 6171,3400 6218,3302
 #: by: Marco Schmidt
@@ -3157,8 +3160,8 @@ Joachimstr. (Köpenick): guter Asphalt	Q0 21802,5437 21907,5517 22009,5593
 #: by: Silke (eng):
 Buchholzweg: guter Asphalt	Q0 4535,15530 4466,15350 4389,15336
 #: by: Joern Schulze: vvv
-Lehderstr.: gute Qualität	Q0 12182,16322 12466,16198 12858,16026 13094,15896 13214,15830 13332,15765
-Streustr.: gute Qualität	Q0 12285,16392 12512,16291 12673,16209 12903,16109 13139,15988 13269,15927 13432,15843
+Lehderstr.: asphaltiert	Q0 12182,16322 12466,16198 12858,16026 13094,15896 13214,15830 13332,15765
+Streustr.: asphaltiert	Q0 12285,16392 12512,16291 12673,16209 12903,16109 13139,15988 13269,15927 13432,15843
 #: by: ^^^
 #: by: Manfred Schasler:
 Waldhüterpfad: Kopfsteinpflaster, uneben	Q2 510,4202 377,4442 301,4643
@@ -3168,6 +3171,19 @@ Goldenes Horn: guter Asphalt	Q0 10561,3748 10587,4046 10613,4308
 Aubertstr.: guter Asphalt	Q0 10994,22526 11177,22736 11240,22803 11273,22838
 #: by: ladzik:
 An der Havelspitze: Verbundsteinpflaster	Q1 -2335,16535 -2311,16355 -2259,16344 -2206,16519 -2112,16619 -2121,16689
+#: by: Martina freier:
+Waldmannstr.: mäßiges Kopfsteinpflaster	Q2 6139,3473 5886,3347 5735,3272
+#: by: Gérard Gold: vvv
+Wönnichstr.: Asphalt	Q0 16585,10650 16697,10984
+Wönnichstr.: Kopfsteinpflaster	Q2 16697,10984 16777,11216 16848,11421 16887,11545 16917,11642 16969,11750
+#: by: ^^^
+#: by: Joerg Polzehl: vvv
+Allee der Kosmonauten: Beton, starke Straßenschäden	Q1; 18240,13521 18783,13469 18875,13473 19059,13482
+#: by: ^^^
+#: by: F. Reinhardt:
+Hentigstr.: mäßiges Kopfsteinpflaster	Q2 18514,8773 18548,8942 18586,9172 18621,9404
+#: by: Stefanie Hennicke
+Stolpmünder Weg: mäßiges Kopfsteinpflaster	Q2 -1591,24124 -1012,24375
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

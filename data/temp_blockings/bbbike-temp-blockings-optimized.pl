@@ -676,8 +676,8 @@ userdel	2 41681,15915 42300,15756
          'type' => 'gesperrt'
        },
        {
-         'until' => 1145829600,
-         'text' => 'B 001 zw. Abzw. Hennickendorf und Tasdorf Deckenerneuerung Vollsperrung 22.04.2006-23.04.2006 ',
+         'until' => 1145916000,
+         'text' => 'B 001 zw. Abzw. Hennickendorf und Tasdorf Deckeneinbau Vollsperrung 22.04.2006-24.04.2006 ',
          'from' => 1145570400,
          'data' => 'userdel	2 36874,10046 37154,10022
 userdel	2 37154,10022 37670,9871
@@ -820,23 +820,22 @@ userdel	q4 43584,20871 44596,21287
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1145451600,
-         'text' => 'Invalidenstraße, Prenzlauer Berg Richtung Tiergarten Zwischen Kreuzung Gartenstraße und Kreuzung Chausseestraße Baustelle, gesperrt, Dauer: 19.04.2006 09:00 Uhr bis 15:00 Uhr ',
-         'from' => 1145343600,
-         'data' => 'userdel	2 9383,13978 9214,13928
-userdel	2 9171,13914 9214,13928
-userdel	2 9171,13914 9090,13890
-userdel	2 9090,13890 8935,13844
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_002644',
          'until' => 1146866400,
          'text' => 'Prenzlauer Promenade (Prenzlauer Berg) im Kreuzungsbereich Ostseestr. und Wisbyer Str Baustelle, in Richtung stadteinwärts Straße gesperrt (Radfahrer können möglicherweise den Gehweg benutzen) (bis 05.05.06)',
          'from' => 1145430358,
          'data' => 'userdel	q4; 12097,16263 12091,16209
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_002668',
+         'until' => 1150495200,
+         'text' => 'Ruschstr. (Lichtenberg) in Richtung Süd, in Höhe Normannenstr. Einbahnstraße in Richtung Nord, Einfahrt in Normannenstr. gesperrt (bis 16.06.06)',
+         'from' => 1145562106,
+         'data' => 'userdel	q4; 15904,12340 15863,11992
 ',
          'type' => 'handicap'
        }

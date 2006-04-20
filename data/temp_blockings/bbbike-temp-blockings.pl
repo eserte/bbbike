@@ -999,7 +999,7 @@ EOF
        text  => 'Ruppiner Chaussee (Hennigsdorf) Kreuzung Hennigsdorfer Straße wegen Bauarbeiten gesperrt (bis 17.10.2004)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -1809,24343 -1214,23742
+userdel	q4 -1809,24343 -1591,24124 -1214,23742
 userdel	q4 -1809,24343 -1879,24174
 userdel	q4 -1809,24343 -1912,24442
 EOF
@@ -4014,8 +4014,8 @@ userdel	2 -2086,-9891 -1245,-9999
 EOF
      },
      { from  => 1145570400, # 2006-04-21 00:00
-       until => 1145829600, # 2006-04-24 00:00
-       text  => 'B 001 zw. Abzw. Hennickendorf und Tasdorf Deckenerneuerung Vollsperrung 22.04.2006-23.04.2006 ',
+       until => 1145916000, # 2006-04-25 00:00
+       text  => 'B 001 zw. Abzw. Hennickendorf und Tasdorf Deckeneinbau Vollsperrung 22.04.2006-24.04.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 36874,10046 37154,10022
@@ -4231,6 +4231,15 @@ EOF
        source_id => 'IM_002644',
        data  => <<EOF,
 userdel	q4; 12097,16263 12091,16209
+EOF
+     },
+     { from  => 1145562106, # 2006-04-20 21:41
+       until => 1150495200, # 2006-06-17 00:00
+       text  => 'Ruschstr. (Lichtenberg) in Richtung Süd, in Höhe Normannenstr. Einbahnstraße in Richtung Nord, Einfahrt in Normannenstr. gesperrt (bis 16.06.06)',
+       type  => 'handicap',
+       source_id => 'IM_002668',
+       data  => <<EOF,
+userdel	q4; 15904,12340 15863,11992
 EOF
      },
     );
