@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.149 2006/04/17 21:29:17 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.149 2006/04/17 21:29:17 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1185,6 +1185,7 @@ sub parse_url_for_coords {
 }
 
 sub set_line_coord_interactive {
+    my(%args) = @_;
     if (!defined $coord_output ||
 	!$Karte::map{$coord_output}) {
 	die M"Karte-Objekt nicht definiert... Aus/Eingabe richtig setzen!\n";
@@ -1192,7 +1193,9 @@ sub set_line_coord_interactive {
     }
 
     my $t = redisplay_top($top, 'set_line_coord_interactive',
-			  -title => M"Linienkoordinaten setzen");
+			  -title => M"Linienkoordinaten setzen",
+			  -geometry => $args{-geometry},
+			 );
     return if !defined $t;
 
     my $set_sub = sub {
@@ -1227,8 +1230,11 @@ sub set_line_coord_interactive {
 }
 
 sub coord_to_markers_dialog {
+    my(%args) = @_;
     my $t = redisplay_top($top, 'coord_to_markers_dialog',
-			  -title => M"Koordinaten aus Selection");
+			  -title => M"Koordinaten aus Selection",
+			  -geometry => $args{-geometry},
+			 );
     return if !defined $t;
 
     my @marker_points;

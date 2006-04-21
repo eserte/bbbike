@@ -155,7 +155,7 @@ use vars qw($hs_check $plzmcmd $ampelstatus_label_text
 	    $center_on_str $center_on_coord
 	    $center_loaded_route $zoom_loaded_route
 	    $zoom_new_route $zoom_new_route_chooseort
-	    $set_mode
+	    $set_mode $init_with_edittools
 	    $ps_image_res $point_editor $info_text
 	    $mark_color $initial_plugins $initial_layers
 	    %info_plugins);

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.234 2006/04/17 21:30:45 eserte Exp $
+# $Id: bbbike,v 3.234 2006/04/17 21:30:45 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -4175,9 +4175,18 @@ if ($ENV{BBBIKE_GUI_TEST}) {
     warn $@ if $@;
 }
 
-# XXX workaround for BBBikeLazy bug
-if (defined $set_mode && $set_mode eq 'edit' && $lazy_plot) {
-    $lazy_plot = 0;
+if (defined $set_mode && $set_mode eq 'edit') {
+    # XXX workaround for BBBikeLazy bug
+#     if ($lazy_plot) {
+# 	$lazy_plot = 0;
+#     }
+    if ($init_with_edittools) {
+	require BBBikeAdvanced;
+	set_line_coord_interactive(-geometry => "-0+0");
+	coord_to_markers_dialog(-geometry => "-0+40");
+	require BBBikeEdit;
+	BBBikeEdit::editmenu($top, -geometry => "-0-0");
+    }
 }
 
 $booting = 0;
@@ -4586,6 +4595,11 @@ speicherplatzsparender.",
 	  var => sub {
 	      $set_mode = "edit";
 	  }
+	 ],
+	 ['edittools','!',undef,
+	  label => M"Editierwerkzeuge beim Starten öffnen",
+	  nogui => 1, 	# XXX remove some day?
+	  var => \$init_with_edittools,
 	 ],
 	 ['stderr','!',0,
 	  label => M"Fehlerausgabe auf stderr", var => \$stderr],
@@ -17258,6 +17272,7 @@ sub redisplay_top {
     my $force = delete $args{-force};
     my $deiconify = (exists $args{-deiconify} ? delete $args{-deiconify} : 1);
     my $raise     = (exists $args{-raise}     ? delete $args{-raise}     : 1);
+    my $geometry  = delete $args{-geometry};
     if (!exists $args{-class}) {
 	$args{-class} = "Bbbike Window";
     }
@@ -17278,6 +17293,7 @@ sub redisplay_top {
 	undef;
     } else {
 	$toplevel{$name} = $top->Toplevel(%args);
+	$toplevel{$name}->geometry($geometry) if $geometry;
 	set_as_toolwindow($toplevel{$name});
 	$toplevel{$name}->OnDestroy(sub { delete $toplevel{$name} });
 	$toplevel{$name};

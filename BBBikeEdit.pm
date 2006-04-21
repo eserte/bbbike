@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.95 2006/04/17 21:28:41 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.95 2006/04/17 21:28:41 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -2171,11 +2171,12 @@ use Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n"
 }
 
 sub editmenu {
-    my($top) = @_;
-#XXXdel    my $t = $top->Toplevel(-title => "Edit menu");
-#XXX    $t->transient($top) unless defined $main::transient && !$main::transient;
+    my($top, %args) = @_;
+    my $geometry = delete $args{-geometry};
     my $t = main::redisplay_top($main::top, "edit_menu",
-				-title => M"Editier-Menü");
+				-title => M"Editier-Menü",
+				-geometry => $geometry,
+			       );
     return if !defined $t;
 
     require BBBikeAdvanced;
@@ -2322,10 +2323,12 @@ EOF
 	      -text => "Use F8 to edit element under mouse cursor.\nAlternatively use F2 for insert point.",
 	     )->pack(-anchor => "w");
     $t->update;
-    $t->Popup(-popover => $top,
-	      -popanchor => 'e',
-	      -overanchor => 'e',
-	     );
+    if (!$geometry) {
+	$t->Popup(-popover => $top,
+		  -popanchor => 'e',
+		  -overanchor => 'e',
+		 );
+    }
 }
 
 sub addnew {
@@ -3477,6 +3480,7 @@ sub temp_blockings_editor {
 	(-command => sub {
 	     my $btxt = $real_txt->get("1.0", "end");
 	     $btxt =~ s/^(?:NEW|CHANGED|UNCHANGED|REMOVED)(,\s+\((coords|text)\))?\s*//;
+	     $btxt =~ s/[;,]\s+umleitung//i;
 	     $btxt =~ s/\s*\(\d{1,2}:\d{2}\)\s*$//; # seen in vmz records
 	     $real_txt->delete("1.0","end");
 	     $real_txt->insert("end", $btxt);
