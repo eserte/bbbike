@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: polizei-faxabruf-diff.pl,v 1.8 2005/11/16 01:28:10 eserte Exp eserte $
+# $Id: polizei-faxabruf-diff.pl,v 1.9 2006/04/21 18:33:23 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004, 2005 Slaven Rezic. All rights reserved.
@@ -14,8 +14,13 @@
 #
 
 use strict;
+use Getopt::Long;
 
 use constant SIMILARITY_THRESHOLD => 0.6;
+
+my $html_file;
+GetOptions("htmlfile=s" => \$html_file)
+    or die "usage: $0 [-htmlfile outfile] [oldfile [newfile]]";
 
 my $old_file = shift || "/home/e/eserte/cache/misc/polizei-faxabruf.php~";
 my $new_file = shift || "/home/e/eserte/cache/misc/polizei-faxabruf.php";
@@ -81,10 +86,32 @@ local $Text::Wrap::columns = 60;
 use Text::Tabs;
 local $tabstop = 8;
 
+my $html_fh;
+if ($html_file) {
+    open $html_fh, ">", $html_file
+	or die "Can't write to $html_file: $!";
+    print $html_fh <<EOF;
+<html>
+<head>
+<style type="text/css">
+table, td { border:1px solid black; }
+</style>
+<body>
+EOF
+}
+
 @flat = sort { $b->[0] <=> $a->[0] } @flat;
 my %seen_old;
 my %seen_new;
 print "Changed:\n";
+if ($html_fh) {
+    print $html_fh <<EOF;
+<table>
+<tr>
+ <th>Changed:</th>
+</tr>
+EOF
+}
 for (@flat) {
     my($factor, $index_old, $index_new) = @$_;
     next if $seen_old{$index_old} || $seen_new{$index_new};
@@ -107,25 +134,73 @@ for (@flat) {
 	for my $i (0 .. $#lines_new) {
 	    print "$lines_new[$i]    $lines_old[$i]\n";
 	}
-	print "-"x10, sprintf("Similarity: %.3f", $factor), "\n";
+	my $similarity_info = sprintf("Similarity: %.3f", $factor);
+	print "-"x10, $similarity_info, "\n";
 	print "-"x70, "\n";
+
+	if ($html_fh) {
+	    print $html_fh <<EOF;
+<tr>
+ <td>@lines_new<br>$similarity_info</td>
+ <td>@lines_old</td>
+</tr>
+EOF
+	}
+
     }
     $seen_old{$index_old}++;
     $seen_new{$index_new}++;
 }
 
 print "Added:\n";
+if ($html_fh) {
+    print $html_fh <<EOF
+<tr>
+ <th>Added:</th>
+</tr>
+EOF
+}
 for my $i (0 .. $#events_new) {
     next if $seen_new{$i};
     print wrap("", "", as_string($i, "new")), "\n";
     print "-"x70, "\n";
+    if ($html_fh) {
+	print $html_fh <<EOF;
+<tr>
+ <td>@{[ as_string($i, "new") ]}</td>
+</tr>
+EOF
+    }
 }
 
+
 print "Removed:\n";
+if ($html_fh) {
+    print $html_fh <<EOF
+<tr>
+ <th>Removed:</th>
+</tr>
+EOF
+}
 for my $i (0 .. $#events_old) {
     next if $seen_old{$i};
     print wrap("", "", as_string($i, "old")), "\n";
     print "-"x70, "\n";
+    if ($html_fh) {
+	print $html_fh <<EOF;
+<tr>
+ <td>@{[ as_string($i, "old") ]}</td>
+</tr>
+EOF
+    }
+}
+
+if ($html_fh) {
+    print $html_fh <<EOF;
+</table>
+</body>
+</html>
+EOF
 }
 
 sub as_string {

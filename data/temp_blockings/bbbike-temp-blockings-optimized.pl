@@ -430,7 +430,15 @@ userdel	q4 55158,-95910 54884,-96292
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1145847600,
+         'text' => 'Schlichtallee zwischen Hauptstraße und Lückstraße Baustelle, gesperrt, Dauer: 21.04.2006 09:00 Uhr bis 24.04.2006 05:00 Uhr ',
+         'from' => 1145516400,
+         'data' => 'userdel	2 15751,10582 16032,10842
+userdel	2 15751,10582 15629,10481
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        {
@@ -812,14 +820,7 @@ userdel	q4 43584,20871 44596,21287
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1145642400,
-         'text' => 'Karlsruher Straße zwischen Kurfürstendamm und Heilbronner Straße, Baustelle, Straße gesperrt. Dauer: 19.04.2006 bis 21.04.2006 jeweils zwischen 07.00 Uhr und 20.00 Uhr ',
-         'from' => 1145336400,
-         'data' => 'userdel	2 2965,10522 2938,10071
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_002644',
@@ -838,6 +839,15 @@ userdel	q4 43584,20871 44596,21287
          'data' => 'userdel	q4; 15904,12340 15863,11992
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1146348000,
+         'text' => 'L 090 Eisenbahnstr OL Werder Festumzug 127. Baumblütenfest Vollsperrung 29.04.2006-29.04.2006 ',
+         'from' => 1146175200,
+         'data' => 'userdel	2 -21220,-3831 -21284,-3767
+userdel	2 -21284,-3767 -21266,-3604
+',
+         'type' => 'gesperrt'
        }
      
 );

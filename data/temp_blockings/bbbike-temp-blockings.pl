@@ -3604,11 +3604,10 @@ EOF
 userdel	2 23571,10990 24389,10836
 EOF
      },
-     { from  => undef, # 
-       until => 1139428054, # XXX
-       text  => 'L137 Schlichtallee Hauptstraße Richtung Lückstraße Zwischen Hauptstraße und Lückstraße gesperrt, Wasser auf der Fahrbahn',
+     { from  => 1145516400, # 2006-04-20 09:00
+       until => 1145847600, # 2006-04-24 05:00
+       text  => 'Schlichtallee zwischen Hauptstraße und Lückstraße Baustelle, gesperrt, Dauer: 21.04.2006 09:00 Uhr bis 24.04.2006 05:00 Uhr ',
        type  => 'gesperrt',
-       source_id => 'LMS_1138607956673',
        data  => <<EOF,
 userdel	2 15751,10582 16032,10842
 userdel	2 15751,10582 15629,10481
@@ -4240,6 +4239,15 @@ EOF
        source_id => 'IM_002668',
        data  => <<EOF,
 userdel	q4; 15904,12340 15863,11992
+EOF
+     },
+     { from  => 1146175200, # 2006-04-28 00:00
+       until => 1146348000, # 2006-04-30 00:00
+       text  => 'L 090 Eisenbahnstr OL Werder Festumzug 127. Baumblütenfest Vollsperrung 29.04.2006-29.04.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -21220,-3831 -21284,-3767
+userdel	2 -21284,-3767 -21266,-3604
 EOF
      },
     );

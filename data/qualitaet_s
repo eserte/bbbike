@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.118 2006/03/29 23:29:50 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.119 2006/04/20 22:21:00 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1872,15676
@@ -328,7 +328,7 @@ Döringstr.: Beton	Q1 14394,11254 14357,11148
 Calvinstr.: Kopfsteinpflaster	Q2 6794,12650 6818,12786 6882,13088
 Alt-Pichelsdorf: schlechtes Kopfsteinpflaster	Q3 -3677,11685 -3594,11536 -3423,11460 -3370,11425 -3308,11565
 Glienicker Str.: schlechtes Kopfsteinpflaster	Q3 -7174,343 -7236,300 -7324,276 -7587,312
-Glienicker Str.: mäßiges Kopfsteinpflaster	Q2 -7587,312 -7732,313 -8013,255
+Glienicker Str.: mäßiges Kopfsteinpflaster	Q2 -7587,312 -7639,312 -7732,313 -8013,255
 Schäferstr.: Kopfsteinpflaster	Q2 -7232,445 -7365,371 -7587,312
 Karlsgartenstr.: Kopfsteinpflaster	Q2 11882,8527 11769,8515
 Fontanestr.: unebenes Kopfsteinpflaster	Q2 11632,8302 11645,8212 11665,8130
@@ -2139,7 +2139,7 @@ Woermannkehre: Asphalt	Q0 13601,6258 13732,6314
 Behringstr.: gutes Kopfsteinpflaster	Q1 16262,6913 16416,6741 16474,6675
 Achardstr.: Asphalt	Q0 22325,10707 22826,10614
 Lassaner Str.: Betonplatten, gut verfugt	Q1 22826,10614 22876,10760 22947,11007
-Einbecker Str.: sehr guter Asphalt	Q0 16958,11778 17161,11681 17208,11658 17275,11626 17734,11408
+Einbecker Str.: sehr guter Asphalt	Q0 16958,11778 16977,11769 17161,11681 17208,11658 17275,11626 17734,11408
 Cyanenstr.: schlechter Asphalt	Q2 14159,14495 14124,14227
 Seelower Str.: Kopfsteinpflaster	Q2 10765,16486 10754,16305 10753,16144 10749,16013
 Semliner Str.: Beton	Q0 22180,6977 22274,7378
@@ -2327,10 +2327,14 @@ Aubertstr.: guter Asphalt	Q0 10994,22526 11177,22736 11240,22803 11273,22838
 An der Havelspitze: Verbundsteinpflaster	Q1 -2335,16535 -2311,16355 -2259,16344 -2206,16519 -2112,16619 -2121,16689
 Waldmannstr.: mäßiges Kopfsteinpflaster	Q2 6139,3473 5886,3347 5735,3272
 Wönnichstr.: Asphalt	Q0 16585,10650 16697,10984
-Wönnichstr.: Kopfsteinpflaster	Q2 16697,10984 16777,11216 16848,11421 16887,11545 16917,11642 16969,11750
+Wönnichstr.: Kopfsteinpflaster	Q2 16697,10984 16777,11216 16848,11421 16887,11545 16917,11642 16977,11769
 Allee der Kosmonauten: Beton, starke Straßenschäden	Q1; 18240,13521 18783,13469 18875,13473 19059,13482
 Hentigstr.: mäßiges Kopfsteinpflaster	Q2 18514,8773 18548,8942 18586,9172 18621,9404
 Stolpmünder Weg: mäßiges Kopfsteinpflaster	Q2 -1591,24124 -1012,24375
+Arnold-Knoblauch-Ring: asphaltiert	Q0 -7639,312 -7632,204 -7621,108 -7588,86 -7506,126 -7451,163 -7418,181 -7386,200
+Hempstücken: asphaltiert	Q0 -7506,126 -7542,201 -7632,204
+Stölpchenweg: teils sehr welliger Sandbelag mit extrem vielen Schlaglöchern	Q3 -7324,276 -7386,200 -7419,47 -7476,-65
+Emil-Fischer-Str.: Asphalt	Q0 -5867,1449 -5997,1410
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934
