@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.235 2006/04/21 20:23:52 eserte Exp $
+# $Id: bbbike,v 3.236 2006/04/22 19:35:14 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.235 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.236 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -11882,10 +11882,10 @@ sub show_info {
 
 	for my $def (@mapserver_def) {
 	    my $mapserver_url = $def->[0];
-	    my $url = "$mapserver_url?coords=" . $real_coords;
-	    $url .= ";mapext=" . join("+",@mapext);
+	    my $url = "$mapserver_url/coords=" . $real_coords;
+	    $url .= "/mapext=" . join(",",@mapext);
 	    if (@layers) {
-		$url .= ";" . join(";", map { "layer=$_" } @layers);
+		$url .= "/" . join("/", map { "layer=$_" } @layers);
 	    }
 	    $info_text->insert("end", $def->[1], "link$linkcount");
 	    $show_url->($linkcount, $url);

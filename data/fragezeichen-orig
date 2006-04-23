@@ -9,7 +9,7 @@ Hochstr.	? 8456,15235 8607,15426 8865,15772 8923,15850 9059,16038
 Wiesenstr.	? 8607,15426 8518,15506 8283,15727 8179,15829 8140,15859 7960,15801
 #: next_check: 2005-08-01
 Mollstr.	? 11905,13069 11867,13076 11839,13083 11721,13142 11681,13161 11557,13228 11446,13294
-Stralauer Str.	? 11351,12221 11304,12234 11139,12243 11094,12243 10946,12241 10825,12271 10780,12297 10732,12355
+Stralauer Str.	? 11351,12221 11304,12234 11139,12243 11094,12243 10946,12241 10825,12271 10798,12285 10732,12355
 Alt-Moabit zwischen Kirch- und Paulstraße	? 7192,13036 7000,13067 6882,13088 6757,13112 6661,13130
 Breite Str./Werderscher Markt	? 10499,12044 10375,12184 10267,12305 10170,12261 10109,12238 10084,12228 9959,12180
 #: last_checked: 2005-11-07
@@ -27,7 +27,6 @@ Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 
 Martin-Luther-Straße (oder die gesamte Straße, wo jetzt schon die Busspur ist?)	? 6468,8109 6467,8187 6465,8326 6470,8464 6471,8639 6470,8681
 Gorkistr.	? 4423,20848 4265,20799 3569,20583 3329,20538 2621,20404 2517,20385 2435,20370 2348,20353 2311,20348
 Vulkanstraße	? 15912,13153 15892,13534 15897,13942 15838,14319
-Frankfurter Allee östlich Alfredstraße (Busspur weiter östlich schon vorhanden)	? 16211,11951 16373,11933
 Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17750,11771 17436,11791 17249,11802
 Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
 Saargemünder Straße	? 2005,4772 1934,4788 1744,4812 1495,4850
@@ -80,11 +79,10 @@ Schulzendorfer Str.: laut Tagesspiegel wird in Zukunft hier das Kopfsteinpflaste
 Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
 #: next_check: 2005-08-01
 Uferweg an der Kongreßhalle: laut Tsp im Frühjahr 2005 fertig	?::inwork 7753,12578
-Innenstadtring, Verlängerung der Bernauer zur Invalidenstr. (bereits vorhanden, aber nicht offiziell freigegeben)	?::inwork 9236,14157 9090,13890
 #: last_checked: 2005-11-19
 Autotunnel wird ab Frühjahr 2005 zugeschüttet	?::inwork 5652,11004 5716,10978 5831,10978
 Uferweg - Friedrich-Ebert-Str. an der Nikolaikirche: zurzeit wegen Bauarbeiten kein Durchgang möglich (aber jetzt scheint es eine provisorische Treppe zu geben)	? -12600,-1706 -12719,-1661
-Bernauer Str.: Bauarbeiten, nach den Bauarbeiten kein Kopfsteinpflaster	?::inwork 10351,14981 10333,14983 10176,14896 10094,14847 10011,14810 9805,14717 9621,14624 9472,14478 9400,14400 9267,14202 9236,14157
+Bernauer Str.: Bauarbeiten, nach den Bauarbeiten kein Kopfsteinpflaster und wahrscheinlich mit Radwegen	?::inwork 10351,14981 10333,14983 10176,14896 10094,14847 10011,14810 9805,14717 9621,14624 9472,14478 9400,14400 9267,14202 9224,14169
 #: next_check: 2005-11-25
 Gramzow: nach Abschluss der Bauarbeiten kein Kopfsteinpflaster mehr?	? 50109,89725 49930,89857
 #: next_check: 2005-11-30
@@ -239,7 +237,7 @@ Achenbachpromenade: Parkweg Q1, in die Datenbank aufnehmen? Gilt der Name auch j
 Viktoriapark: 40m Höhe	? 9007,9264
 #: by: Message-ID: <2re0fqF1987v6U1@uni-berlin.de>
 Dann gibt es am Kuhfortdamm den tollen BÜ unter der Eisenbahnbrücke.	? -18148,-1381
-Marie-Elisabeth-von-Humboldt-Str.: Qualität laut ADFC-Karte gut, Eintrag in PLZ-DB fehlt noch	? 20619,18497 20598,18560 20987,19604
+Marie-Elisabeth-von-Humboldt-Str.: Qualität laut ADFC-Karte gut, Eintrag in PLZ-DB fehlt noch	? 20624,18485 20598,18560 20987,19604
 Günter-Litfin-Str.: laut ADFC-Karte gut geeignet, Eintrag in PLZ-DB fehlt	? 13361,17172 13115,17410
 Clémentweg/Dr.-Dorsch-Allee: laut ADFC-Karte gut geeignet, Eintrag in PLZ-DB fehlt	? 11740,22770 10889,23381
 Kalvinistenweg: laut ADFC-Karte gut geeignet	? 11693,22482 11807,22395 11718,21978 11659,21611
@@ -272,13 +270,11 @@ Pankeweg zwischen Chausseestr. und Gerichtstr.: Durchfahrt möglich? Qualität?	??
 Pankeweg zwischen Pankstr. und Wiesenstr.: Qualität (laut ADFC-Karte ungeeignet)?	?? 8179,15601 8140,15859
 Pankeweg durch Wedding: Durchfahrt möglich? Qualität?	?? 8517,16395 8592,16406 8759,16684 8904,17059 8983,17195 9131,17664 9084,17678 9140,17921
 Weg am Tegeler Fließ: Durchfahrt möglich? Qualität, wahrscheinlich Waldweg Q2?	?? 7687,24407 6966,24090 6329,23969 6083,24107 5678,24021 5402,23949 5117,23654 5126,23484 5059,23186 4774,22987 4416,22891 4208,22866 4144,22756 3898,22581 3804,22391 3636,22368 3443,22201 3372,22088 3139,22201 2653,21993 2504,21768 2321,21532 2072,21339 1914,21508
-Landsberger Allee/Dahmeweg/Wiesenburger Weg: Sind die Zugänge vorhanden, Einbahnstraßen?	? 19329,14897 19283,14982 19280,15014 19472,15184
+Landsberger Allee/Wiesenburger Weg: Sind die Zugänge vorhanden (möglicherweise zwischen den beiden Richtungsfahrbahnen), Einbahnstraßen?	? 19280,15014 19472,15184
 Dorfstr./Seenpromenade Groß Glienicke: Durchfahrt möglich? Kopfsteinpflaster?	? -9449,7005 -9741,6106 -9797,5374 -9686,5268 -9678,4913
-Verbindung zwischen Siegfriedstr. und Frankfurter Allee: Durchfahrt möglich? Oder nur für Fußgänger? Treppe?	? 16746,11921 16738,11878
 Templerzeile - Götzstr.: existiert eine Verbindung? Qualität?	? 9665,6029 9708,6493
 Wuhlegartenweg: Durchfahrt unter Blumberger Damm möglich? Qualität?	? 20627,12162 21164,12091 21278,12131
 Lenbachstr. (Kaulsdorf): Qualität OK? Zugang zur Wuhle möglich?	? 21668,9885 21704,10036 21671,10289 21954,10700 22325,10707
-Schwanebeck: Kleist/Goethestr.: gute Umfahrunsgmöglichkeit für Zepernicker Str./Karower Chausee?	?? 17459,24340 17796,24584 17921,24943 17976,25276
 Röntgental, Buchenallee: Qualität?	?? 17689,27853 18418,29246
 Gamengrund: genauere Wegführung, Qualität, teilweise war es sehr sandig!. Geht es von der B 158 aus noch weiter in Richtung Norden?	?? 39337,22638 39383,22801 39165,23131 39033,23202 39114,23766 39180,23776 39266,23984 39241,24116 39089,24279 39063,24400 38997,24431 38880,24568 38824,24812 39002,25304 39221,25518 39205,25655 39124,25812 39089,26036 39241,26229 39282,26391 39378,26508 39561,27382 39602,27382 39678,27600 39535,27808 39561,27996 39657,28154 39988,28352 40231,28753 40135,28824 40267,28951 40282,29022 40236,29621 40206,30002 40302,30617 40331,30763 40546,30881 40750,31012 41300,31862 41200,31900 41003,31612 40820,31236 40562,31025 39783,31398
 Brunow - Gamengrund: Qualität?	? 41624,36648 43362,37337 43825,37262 43922,36623 43637,36362 42975,36212 42748,35962
@@ -316,7 +312,7 @@ Lichterfelde - Teltow über Lippstädter Str., Ahlener Weg., Kantstr.: befahrbar, 
 #: XXX unklarer anonymer Eintrag existiert; was ist hier der Pankeweg: rechts- oder linksseitiger Weg?
 Pankeweg: Qualität? (südliches Teilstück sah OK aus)	? 8179,15829 8278,16043 8340,16154 8389,16214 8543,16364
 Wuhlewanderweg: in Bau, bereits fertig?	? 22611,17126 22314,17916
-Wuhletalstr: laut Radzeit Radstreifen (wo genau?)	? 21906,17419 21799,17456 21542,17465 21133,17510 20901,17603 20754,17672 20474,17809
+Wuhletalstr: laut Radzeit Radstreifen (wo genau?)	? 21906,17419 21799,17456 21542,17465 21133,17510 20901,17603
 Skandinavische Str.: auf der westlichen Seite Suggestivstreifen (laut Radzeit)?	? 17363,11972 17082,11909 16958,11778
 Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 Fähre Liepnitzsee zum Großen Werder: wo genau?	? 16050,38181 16455,37790
@@ -577,7 +573,6 @@ entlang der neuen Wuhle: Qualität laut ADFC-Karte gut, wie ist die Verbindung zu
 Eichhorster Str.: Qualität laut ADFC-Karte gut	? 21451,18415 21543,18571 21662,18621 21853,18700
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23279,14785 23378,14528
-Marchwitzastr. - Langhoffstr.: laut ADFC-Karte gut geeignet, wo führt der Weg genau entlang, Einschränkung wegen Fußgängern?	? 19897,13535 19826,14070 19813,14479
 Beilsteiner Str.: laut ADFC-Karte im südlichen Abschnitt gut geeignet, Einbahnstraße!	? 18749,12413 18875,13473 18859,14048 18998,14089 19025,14037
 Neukirchstr.: laut ADFC-Karte gut geeignet, Zugang zur Prenzlauer Promenade vorhanden?	? 12562,18483 12002,18768
 Bleicheroder Str./Stiftsweg: Qualität laut ADFC-Karte gut, Tram auf Fahrbahn? Einbahnstraße beachten	? 11937,19175 11805,19071 11725,19007 11620,18971 11268,18851 11025,18531
@@ -616,8 +611,6 @@ Clara-Zetkin-Str. (Potsdam): Qualität?	? -14251,-1365 -14246,-1506 -14234,-1646
 Goethestr.: Qualität? laut ADFC-Karte schlecht geeignet	? 9701,-351 9814,-355 9961,-363 10273,-301 10403,-266 10586,-220 10788,-172
 Blohmstr. - Kolonie Birkholz/Diedersdorfer Str.: Qualität? Nachts beleuchtet?	? 9093,-1712 8506,-1418 8073,-1137
 Poleigrund: Qualität? (Laut ADFC-Karte gut geeignet)	? 9557,-779 9155,-902
-#: XXX anonymer Eintrag mit merkwürdigen Angaben:
-Schwarzwurzelstr: Qualität (laut ADFC-Karte gut geeignet)? Radweg vorhanden?	? 20175,18246 20544,18279 21009,18503 21143,18704
 Paplitzer Str.: Qualität? Zwischen Goltzstr. und Kirchbachstr. Einbahnstraße auch für Radfahrer? Verbindung zum Mauerweg vorhanden?	? 11063,-2025 11003,-2434 10942,-2632 10707,-3109 10631,-3215
 #: XXX von anonym eingetragen: Spielstraße:
 Am Irissee: Qualität?	? 11000,3115 11143,3246 11114,3360
@@ -695,9 +688,6 @@ Polizei in der Friesenstr.: genaue Gebäude, genaue Funktion?	F:? 9828,8934 9828,
 Hermsdorfer Str. (Hohen Neuendorf): Qualität?	? 621,29356 625,29868
 (Dorfstr. (Tiefwerder) - Heerstr.): Qualität?	? -2878,12193 -2953,12015 -2918,11678 -2821,11456 -2850,11423
 Försterweg: Qualität (wahrscheinlich ein holpriger Waldweg)?	? -823,20184 -571,19834 -475,19746 -384,19740 -250,19815 -146,19806 6,19817
-#: XXX: das erste Stück im Süden sah OK aus (Asphalt oder Beton). Tramstrecke, aber in der Mitte der Straße:
-Gudrunstr.: Qualität?	? 17487,12244 17139,12100 16970,11976 16870,11920
-Frankfurter Allee, Nebenfahrbahn: ist als Sackgasse ausgeschildert, für Radfahrer trotzdem passierbar? Qualität: anscheinend Kopfsteinpflaster, OK	? 16746,11921 16629,11932
 Um den Laßzinssee: Qualität?	? -6459,20769 -6465,21060 -6099,21157 -6044,20971 -5795,20965
 Uferweg an der Havel: Qualität (laut ADFC-Karte "mäßig geeignet")?	? -2062,18363 -2291,18628 -2349,18744 -2434,18832 -2474,18921 -2516,19186 -2644,19213 -2733,19454 -2854,19552 -2897,19637 -2821,19740
 Berlin - Kopenhagen zwischen Hennigsdorf und Birkenwerder: Qualität? Nur für Radfahrer?	? -2118,26060 -2126,26133 -2029,26221 -1931,26602 -1925,26785 -2346,27455 -2327,27687 -2193,27684 -2080,27830 -2126,27912 -2123,28101 -1937,28217 -1532,28723 -1233,28982 -1547,29405 -1450,29500 -1173,29043 -1017,29606 -959,30066 -1011,30234 -904,30505 -524,30749 164,30849 362,31115 685,31008 728,31188 1045,31014 1112,31032 1322,31297 1365,31450 1429,31501
@@ -1006,7 +996,7 @@ Treskowstr.: Qualität (laut ADFC-Karte mäßig geeignet)?	? 11893,17397 12342,1718
 Max-Lingner-Str. - Maximilianstr.: laut ADFC-Karte Durchfahrt vorhanden, Qualität mäßig	? 11110,17301 10911,17275
 Vesaliusstr.: Qualität (laut ADFC-Karte gut geeignet)?	? 11805,19071 11756,19214 11726,19482
 Leonhard-Frank-Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? 9229,18178 9496,18545
-Leonhard-Frank-Str.: Qualität (laut ADFC-Karte nordöstlich des Heinrich-Mann-Platzes schlecht geeignet)?	? 9556,18630 9658,18768
+Leonhard-Frank-Str.: Qualität (laut ADFC-Karte nordöstlich des Heinrich-Mann-Platzes schlecht geeignet)?	? 9556,18630 9586,18670 9658,18768
 Stille Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10184,18875 10128,19110
 (Am Schloss Schönhausen): Qualität, für Autofahrer befahrbar?	? 10390,19069 10322,19046 10278,19072 10249,19148 10223,19223 10243,19267 10308,19297
 Schloßallee - Blankenburger Str.: Qualität (laut ADFC-Karte gut geeignet)?	? 10661,19307 10481,19344 10393,19587
@@ -1028,7 +1018,6 @@ Schildower Weg - Schildower Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? 8
 Hattenheimer Str. (Tempelhof): Qualität?	? 11590,6026 11655,6189 11625,6248
 Lug - Altdöbern: Qualität? Kategorie (H)?	? 48113,-85526 48562,-85550 49162,-85300 50237,-84450 50962,-84350 52312,-83050 52625,-83050 54112,-83500 54487,-83612 55037,-83500 55162,-83362 55212,-83137 55362,-83125
 Metzer Str.: zwischen Kollwitzstr. und Prenzlauer Allee Kopfsteinpflaster oder Asphalt?	? 11016,14081 11160,14002 11389,13887
-Gudrunstr. - Rhinstr. (über Städtischer Zentralfriedhof und Kolonie Friedrichsfelde Nord): Qualität (laut ADFC-Karte mäßig geeignet)? Ist der Weg überhaupt für Radfahrer (ganztägigganzjährig) geöffnet? Existiert an der Rhinstr. eine Überquerungsmöglichkeit über die Straßenbahntrasse?	? 17487,12244 17848,12266 18217,12237
 Pannwitzstr.: Qualität (laut ADFC-Karte der südliche Teil bis Olbendorfer Str. gut geeignet)?	? 4276,19086 4478,19116 4619,19267 4705,19425 4759,19704 4735,20000
 #: XXX: laut Aktiv Regional gut geeignet
 Rathsdorf - Neureetz: Qualität?	? 57262,39111 58536,40073 59006,40251 60616,41952
@@ -1300,3 +1289,11 @@ Schillerstr. (Potsdam): Qualität? Verbindung zum Uferweg vorhanden?	? -14252,-19
 Stiftstr. (Potsdam): Qualität?	? -14141,-1700 -14143,-1781
 Streustr.: zwischen Behaimstr. und Börnestr. Einbahnstraße? Auch für Radfahrer?	? 13139,15988 13269,15927
 Streust./Berliner Allee: Überqueren der Straßenbahntrasse möglich?	? 13432,15843
+#: last_checked: 2006-04-22
+Bernauer/Gartenstr.: Ampel fertig, aber noch nicht eingeschaltet	? 9224,14169
+Vorfahrt für Degnerstr.?	? 16464,15665 16526,15836 16654,16167
+Barnimer Dörferweg: zu beiden Seiten der Lindenberger Str. Kopfsteinpflaster (Q3, vielleicht nur Q2)	? 18634,20542 18513,20580 18383,20623
+Karower Chaussee - Karower Str.: Qualität? Gibt es einen einfacheren Weg (ohne viel Zick-Zack)?	? 16357,24622 16410,24584 16345,24459 16450,24393 16433,24364 16471,24338 16470,24302 16890,24029 17055,23991
+Goethestr. (Neu-Buch): Qualität? (möglicherweise unbefestigte sandige Straße)	? 17190,24695 17929,25068
+Unterführung Allee der Kosmonauten - Biesdorfer Promenade: Qualität (laut ADFC-Karte gut geeignet)? Existiert auch ein Zugang von der südlichen Fahrbahn der Allee der Kosmonauten?	? 19826,13479 19835,13152 20076,13034
+Kol. Friedrichsfelde Nord: möglicherweise asphaltierter Weg? Ohne KfZ? Laut Luftbild scheint der Zugang zur Rhinstr. ebenerdig zu sein und eine Überquerung der Straßenbahntrasse ist dort möglich.	? 17774,12244 18176,12393 18220,12450

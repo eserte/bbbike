@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.26 2005/12/07 22:26:18 eserte Exp eserte $
+# $Id: DirectGarmin.pm,v 1.27 2006/04/23 18:21:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -519,9 +519,7 @@ sub convert_from_route {
 
 	print STDERR $ident, "\n";
 	$idents{$ident}++;
-	if (!$args{-test}) {
-	    $waypoints{$ident}++;
-	}
+	$waypoints{$ident}++;
 
 	if ($n > 0) {
 	    push @d, [$gps->GRMN_RTE_LINK_DATA, $handler->pack_Rte_link_data];

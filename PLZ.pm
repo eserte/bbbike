@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.63 2006/04/10 20:39:04 eserte Exp $
+# $Id: PLZ.pm,v 1.63 2006/04/10 20:39:04 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -456,6 +456,8 @@ sub look_loop {
     };
     my $strip_hnr = sub {
 	my $str = shift;
+	# This strips input like "Straﬂe 1a" or "Straﬂe 1-2". Maybe
+	# also strip "Straﬂe 1 a"? XXX
 	if ($str =~ m{\s+(?:\d+[a-z]?|\d+\s*[-/]\s*\d+)\s*$}) {
 	    $str =~ s{\s+(?:\d+[a-z]?|\d+\s*[-/]\s*\d+)\s*$}{};
 	    $str;

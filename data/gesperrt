@@ -141,7 +141,7 @@ Weserstr. (Friedrichshain)	1 14416,11815 14471,11782
 Quickborner Str.	1 8022,21476 8170,21304
 Berliner Str. (Blankenfelde)	1 9490,23531 9528,23240
 Revaler Str. (Straßenbahn)	1 13594,11489 13473,11456
-Molkenmarkt - zur Stralauer Str.	1 10780,12297 10675,12280
+Molkenmarkt - zur Stralauer Str.	1 10798,12285 10772,12288 10675,12280
 Herrfurthplatz	1 11647,7940 11659,7982 11695,8005 11732,8001 11757,7965 11753,7930 11717,7895 11670,7911 11647,7940
 Grimmstr.	1 11016,9599 11083,9753 11163,9903
 Grimmstr.	1 11200,9889 11148,9730 11117,9658 11083,9573
@@ -364,6 +364,10 @@ Stephanstr.	1s 6526,4475 6377,4490
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
 Björnsonstr.	1s 10229,16653 10215,16527
+Rhinstr. -> Kolonie Friedrichsfelde Nord: Straßenbahntrasse	3 18215,12132 18216,12262 18180,12262
+Kolonie Friedrichsfelde Nord -> Rhinstr.: Straßenbahntrasse	3 18180,12262 18216,12262 18220,12450
+Langhoffstr. -> Allee der Kosmonauten: Straßenbahntrasse	3 19821,13604 19807,13529 20182,13554
+Allee der Kosmonauten -> Langhoffstr.: Straßenbahntrasse	3 19628,13517 19807,13529 19821,13604
 Andersenstr. -> Bornholmer Str.: Straßenbahntrasse	3 10315,16651 10300,16521 10370,16516
 Bornholmer Str. -> Andersenstr.: Straßenbahntrasse	3 10215,16527 10300,16521 10315,16651
 Karl-Liebknecht-Str. -> Rosenstr.: Straßenbahntrasse	3 10440,12696 10519,12768 10489,12803
@@ -633,6 +637,9 @@ Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3 6815,8691 6912,8617 
 Hauptstr. -> Parkweg Heinrich-Lassen-Park: Mittelstreifen	3 6765,8480 6912,8617 6815,8691
 Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3 18628,10177 18561,10341 18482,10306
 Otto-Schmirgal-Str. -> Am Tierpark: Straßenbahntrasse	3 18482,10306 18561,10341 18446,10620
+tragen (ca. 35 Stufen)	0:30:-108 18180,12262
+tragen (S-Bhf. Marzahn)	0:30:-195 19571,15417
+tragen (S-Bhf. Marzahn)	0:30:-155 19638,15431
 tragen (12 Stufen)	0:30:-200 7942,12879
 tragen (zwei Mal, je fünf Stufen)	0:30:-149 5017,6387
 tragen (Treppen zur U-Bahnbrücke, je drei Stufen)	0:20:-40 2301,4917

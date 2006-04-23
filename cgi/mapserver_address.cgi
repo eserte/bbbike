@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver_address.cgi,v 1.26 2006/04/04 21:29:05 eserte Exp $
+# $Id: mapserver_address.cgi,v 1.27 2006/04/22 19:30:22 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -49,6 +49,8 @@ use lib (defined $BBBIKE_ROOT ? ("$BBBIKE_ROOT",
 	 "/home/e/eserte/src/bbbike/data",
 	 "/home/e/eserte/src/bbbike/miscsrc",
 	); # XXX do not hardcode
+
+pathinfo_to_param();
 
 if (!param("usemap")) {
     param("usemap", "mapserver");
@@ -441,7 +443,7 @@ sub redirect_to_ms {
     $args{-scope} = "all," . $args{-scope};
 
     if (param("mapext")) {
-	my($x1,$y1,$x2,$y2) = split /\s+/, param("mapext");
+	my($x1,$y1,$x2,$y2) = split /\s+|,/, param("mapext");
 	$args{-width} = $x2-$x1;
 	$args{-height} = $y2-$y1;
     } elsif (param("width")) {
@@ -591,6 +593,15 @@ sub file_to_icon {
 	 wasserumland2 => 'wasser',
 	);
     exists $map{$file} ? $map{$file} . ".gif" : undef;
+}
+
+sub pathinfo_to_param {
+    if (path_info() ne "") {
+	for my $pathcomp (split '/', substr(path_info(), 1)) {
+	    my($key,$val) = split /=/, $pathcomp, 2;
+	    param($key, param($key), $val); # couldn't get CGI::append in functional mode working
+	}
+    }
 }
 
 # No __END__ !

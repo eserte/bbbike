@@ -728,7 +728,7 @@ EOF
        text  => 'Gartenstraße zwischen Invalidenstraße und Bernauer Straße gesperrt, Baustelle, Einbahnstraße in südlicher Richtung wird eingerichtet, zudem wird die Ackerstraße zwischen Invalidenstraße und Bernauer Straße gesperrt. Dauer: 01.09.2004, 06.00 Uhr bis 22.10.2004',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 9383,13978 9236,14157
+userdel	1 9383,13978 9224,14169
 userdel	1 9400,14400 9628,14215 9737,14126 9810,14066
 EOF
      },
@@ -4217,10 +4217,10 @@ EOF
        text  => 'Invalidenstraße, Prenzlauer Berg Richtung Tiergarten Zwischen Kreuzung Gartenstraße und Kreuzung Chausseestraße Baustelle, gesperrt, Dauer: 19.04.2006 09:00 Uhr bis 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9383,13978 9214,13928
-userdel	2 9171,13914 9214,13928
-userdel	2 9171,13914 9090,13890
-userdel	2 9090,13890 8935,13844
+userdel	2 9383,13978 9203,13953
+userdel	2 9151,13941 9203,13953
+userdel	2 9151,13941 9076,13915
+userdel	2 9076,13915 8935,13844
 EOF
      },
      { from  => 1145430358, # 2006-04-19 09:05

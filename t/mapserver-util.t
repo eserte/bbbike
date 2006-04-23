@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver-util.t,v 1.2 2005/05/12 22:22:16 eserte Exp $
+# $Id: mapserver-util.t,v 1.3 2006/04/22 19:34:53 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -33,7 +33,7 @@ if (!GetOptions(get_std_opts("cgidir", "xxx"),
     die "usage: $0 [-cgidir url] [-xxx]";
 }
 
-plan tests => 75;
+plan tests => 97;
 
 sub get_agent {
     my $agent = WWW::Mechanize->new;
@@ -55,6 +55,23 @@ sub is_on_mapserver_page {
 	like($agent->ct, qr{^image/}, "... and it's really an image");
 	$agent->back;
     }
+}
+
+
+{
+    my $agent = get_agent();
+    my $url = $cgidir . "/mapserver_address.cgi/coords=19987,12658/mapext=19354,13525,20856,12589/layer=qualitaet/layer=handicap/layer=radwege/layer=fragezeichen/layer=sehenswuerdigkeit/layer=ampeln/layer=blocked";
+    $agent->get($url);
+    ok($agent->success, "$url with pathinfo is ok");
+    is_on_mapserver_page($agent, "pathinfo really works");
+}
+
+{
+    my $agent = get_agent();
+    my $url = $cgidir . "/mapserver_address.cgi?coords=19987,12658;mapext=19354+13525+20856+12589;layer=qualitaet;layer=handicap;layer=radwege;layer=fragezeichen;layer=sehenswuerdigkeit;layer=ampeln;layer=blocked";
+    $agent->get($url);
+    ok($agent->success, "$url with param style is ok");
+    is_on_mapserver_page($agent, "param style really works");
 }
 
 {

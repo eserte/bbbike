@@ -161,7 +161,7 @@ Weserstr. (Friedrichshain)	1 14416,11815 14471,11782
 Quickborner Str.	1 8022,21476 8170,21304
 Berliner Str. (Blankenfelde)	1 9490,23531 9528,23240
 Revaler Str. (Straßenbahn)	1 13594,11489 13473,11456
-Molkenmarkt - zur Stralauer Str.	1 10780,12297 10675,12280
+Molkenmarkt - zur Stralauer Str.	1 10798,12285 10772,12288 10675,12280
 Herrfurthplatz	1 11647,7940 11659,7982 11695,8005 11732,8001 11757,7965 11753,7930 11717,7895 11670,7911 11647,7940
 Grimmstr.	1 11016,9599 11083,9753 11163,9903
 Grimmstr.	1 11200,9889 11148,9730 11117,9658 11083,9573
@@ -413,6 +413,8 @@ Björnsonstr.	1s 10229,16653 10215,16527
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+Rhinstr.: Straßenbahntrasse	3nocross 18215,12132 18216,12262 18220,12450
+Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19807,13529 20182,13554
 Bornhomer Str.: Straßenbahntrasse	3nocross 10765,16486 10699,16492 10635,16497
 Bornhomer Str.: Straßenbahntrasse	3nocross 10635,16497 10533,16505 10445,16511
 Bornhomer Str.: Straßenbahntrasse	3nocross 10445,16511 10370,16516 10300,16521 10215,16527
@@ -510,6 +512,9 @@ Am Tierpark: Straßenbahntrasse	3nocross 18628,10177 18561,10341 18446,10620
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 #
+tragen (ca. 35 Stufen)	0:30 18180,12262
+tragen (S-Bhf. Marzahn)	0:30 19571,15417
+tragen (S-Bhf. Marzahn)	0:30 19638,15431
 tragen (12 Stufen)	0:30 7942,12879
 tragen (zwei Mal, je fünf Stufen)	0:30 5017,6387
 tragen (Treppen zur U-Bahnbrücke, je drei Stufen)	0:20 2301,4917

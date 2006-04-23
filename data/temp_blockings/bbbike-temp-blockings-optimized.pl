@@ -739,14 +739,7 @@ userdel	2 37154,10022 37670,9871
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1145743200,
-         'text' => 'K 7220 Potsdamer Str. OL Luckenwalde, zw. Buchtstr. u. Feldstr. Abbrucharbeiten Vollsperrung 18.04.2006-22.04.2006 ',
-         'from' => 1145224800,
-         'data' => 'userdel	q4 -4173,-34910 -4129,-34535
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1146175200,
          'text' => 'L 030 Tiergartenstr. OL Königs Wusterhausen, Schleusenbrücke Brückenreparatur Vollsperrung 24.04.2006-27.04.2006 ',
