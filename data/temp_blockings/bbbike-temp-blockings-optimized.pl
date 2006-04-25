@@ -430,15 +430,7 @@ userdel	q4 55158,-95910 54884,-96292
        undef,
        undef,
        undef,
-       {
-         'until' => 1145847600,
-         'text' => 'Schlichtallee zwischen Hauptstraße und Lückstraße Baustelle, gesperrt, Dauer: 21.04.2006 09:00 Uhr bis 24.04.2006 05:00 Uhr ',
-         'from' => 1145516400,
-         'data' => 'userdel	2 15751,10582 16032,10842
-userdel	2 15751,10582 15629,10481
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -675,14 +667,7 @@ userdel	2 41681,15915 42300,15756
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1145829600,
-         'text' => 'L 079 Ludwigsfelde-Ahrensdorf zw. Ludwigsfelde und Ahrensdorf Straßenbauarbeiten Vollsperrung 12.04.2006-23.04.2006 ',
-         'from' => 1144706400,
-         'data' => 'userdel	2 -2086,-9891 -1245,-9999
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1145916000,
          'text' => 'B 001 zw. Abzw. Hennickendorf und Tasdorf Deckeneinbau Vollsperrung 22.04.2006-24.04.2006 ',
@@ -757,15 +742,7 @@ userdel	2 37154,10022 37670,9871
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1145844000,
-         'text' => '21.04.2006, 22.00 Uhr bis 24.04.2006, 4.00 Uhr Vollsperrung der Ottomar-Geschke-Straße ',
-         'from' => 1145649600,
-         'data' => 'userdel	2 21182,4336 21174,4250
-userdel	2 21100,4192 21174,4250
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1151168400,
          'text' => '23.06.2006, 21.00 Uhr bis 24.06.2006, 19.00 Uhr Vollsperrung der Ottomar-Geschke-Straße ',
@@ -839,6 +816,14 @@ userdel	q4 43584,20871 44596,21287
          'from' => 1146175200,
          'data' => 'userdel	2 -21220,-3831 -21284,-3767
 userdel	2 -21284,-3767 -21266,-3604
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1146175200,
+         'text' => 'K 6216 Zinsdorf-Beutersitz Brücke über Schwarze Elster bei Neumühl Arbeiten an Wehranlage, Vollsperrung 26.04.2006-27.04.2006 ',
+         'from' => 1145916000,
+         'data' => 'userdel	2 8987,-92875 9450,-92307
 ',
          'type' => 'gesperrt'
        }

@@ -4250,4 +4250,12 @@ userdel	2 -21220,-3831 -21284,-3767
 userdel	2 -21284,-3767 -21266,-3604
 EOF
      },
+     { from  => 1145916000, # 2006-04-25 00:00
+       until => 1146175200, # 2006-04-28 00:00
+       text  => 'K 6216 Zinsdorf-Beutersitz Brücke über Schwarze Elster bei Neumühl Arbeiten an Wehranlage, Vollsperrung 26.04.2006-27.04.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 8987,-92875 9450,-92307
+EOF
+     },
     );

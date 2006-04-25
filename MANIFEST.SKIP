@@ -171,7 +171,7 @@ lib/EasySound.pm$
 lib/Tk/Countdown.pm$
 lib/Tk/FileDialogExt.pm$
 lib/i386-freebsd.*/
-lib/(5\.[6-9]\.[0-9])/(MSWin32-x86|i386-linux|i386-linux-thread-multi|i686-linux|i686-linux-64int-ld|i386-freebsd.*)/
+lib/(5\.[6-9]\.[0-9])/(MSWin32-x86|i[3456]86-linux(-gnu)?(-thread-multi|-64int-ld)?|i386-freebsd.*)/
 lib/BBBikeXS.pm
 lib/.*/auto/BBBikeXS/BBBikeXS.bs$
 lib/.*/auto/BBBikeXS/BBBikeXS.so$

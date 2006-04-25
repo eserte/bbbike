@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.90 2006/04/20 22:20:52 eserte Exp $
+# $Id: Makefile,v 2.91 2006/04/24 20:47:55 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1170,7 +1170,7 @@ GNUmakefile.mapfiles: Makefile.mapfiles $(MISCRSRCDIR)/b2gmake
 	chmod ugo+r GNUmakefile.mapfiles
 .else
 GNUmakefile: Makefile
-	perl -e 'print qq{all:\n\t\@echo "*** Sorry, your make program is not supported."\n\t\@echo "*** Please try pmake from the BSD project."\n\t\@echo "*** You can get it from http://www.sourceforge.net/projects/srezic"\n\t\@echo ""\n\t\@false\n}' > $@
+	perl -e 'print qq{all:\n\t\@echo "*** Sorry, your make program is not supported."\n\t\@echo "*** Please try pmake from the BSD project."\n\t\@echo "*** You can get it from http://www.sourceforge.net/projects/srezic"\n\t\@echo "*** Debian users may install the pmake package."\n\t\@echo ""\n\t\@false\n}' > $@
 .endif
 
 ######################################################################

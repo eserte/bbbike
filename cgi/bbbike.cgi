@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.10 2006/04/11 20:02:19 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.11 2006/04/24 21:40:53 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -694,7 +694,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.10 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.11 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -6041,7 +6041,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/04/11 20:02:19 $';
+    my $cgi_date = '$Date: 2006/04/24 21:40:53 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {
@@ -6075,7 +6075,7 @@ EOF
 	print "HTTP-Server: $ENV{'SERVER_SOFTWARE'}\n";
 	if ($ENV{'SERVER_SOFTWARE'} =~ /apache/i) {
 	    print "<a href=\"http://www.apache.org/\"><img align=right src=\"";
-	    print "http://www.apache.org/images/apache_pb.gif";
+	    print "http://httpd.apache.org/apache_pb.gif";
 	    print "\" border=0></a>";
 	}
 	print "<p>";
@@ -6091,7 +6091,7 @@ EOF
     print <<EOF;
 Verwendete Software:
 <ul>
-<li><a href="$perl_url">perl $]</a><a href="$perl_url"><img border=0 align=right src="$bbbike_images/PoweredByPerl.gif"></a>
+<li><a href="$perl_url">perl $]</a><a href="$perl_url"><img border=0 align=right src="http://www.perlfoundation.org/images/perl_powered.png"></a>
 <li>perl-Module:<a href="$cpan"><img border=0 align=right src="http://theoryx5.uwinnipeg.ca/images/cpan.jpg"></a>
 <ul>
 <li><a href="${scpan}CGI">CGI $CGI::VERSION</a>
