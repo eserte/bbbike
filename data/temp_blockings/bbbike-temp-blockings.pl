@@ -4258,4 +4258,13 @@ EOF
 userdel	2 8987,-92875 9450,-92307
 EOF
      },
+     { from  => 1146434400, # 2006-05-01 00:00
+       until => 1154124000, # 2006-07-29 00:00
+       text  => 'B 168 Fürstenwalde-Müncheberg zw. Beerfelde und Schönfelde Straßenbauarbeiten Vollsperrung 02.05.2006-28.07.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 54428,4464 54602,4910
+userdel	2 54602,4910 54157,5895
+EOF
+     },
     );

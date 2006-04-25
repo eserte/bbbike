@@ -114,9 +114,9 @@ Platz am Wilden Eber	1 2723,7029 2701,7045 2688,7067 2695,7082 2717,7093 2737,70
 # gesperrt wegen Tunnel
 Wexstr.	2 6371,7976 6135,7973 5807,7978 5634,8004
 Wexstr.	1 5634,8004 5824,8035 5928,8052 6229,8086 6409,8026
-Detmolder Str. (Süd)	1 4659,7982 4572,7936 4371,8018 4342,8093 4289,8183
+Detmolder Str. (Süd)	1 4659,7982 4572,7936 4371,8018 4342,8093 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4659,7982
-Detmolder Str. (Nord)	1 4289,8183 4349,8118
+Detmolder Str. (Nord)	1 4280,8188 4349,8118
 Gartenufer (in der Dunkelheit gesperrt)	2 6239,11399 5794,11624
 Steinplatz	1 5166,11343 5122,11300 5088,11322 5053,11343 5091,11406
 Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13867,9864 13829,9905
@@ -236,8 +236,8 @@ Herbststr.	1 8465,18365 8634,18401
 Ruhwaldweg: Schranke gesperrt	2 830,13353 801,13323
 Alt-Reinickendorf	1 7003,18715 6734,18728 6567,18812 6766,18794 7003,18715
 Lauterstr.	1 5817,7223 5810,7337
-# laut Dominik hier keine Einbahnstraße: Friedrich-Wilhelm-Platz	1 5357,7381 5315,7376
-Friedrich-Wilhelm-Platz	1 5315,7376 5310,7325 5324,7205
+# laut Dominik hier keine Einbahnstraße: Friedrich-Wilhelm-Platz	1 5361,7423 5318,7424
+Friedrich-Wilhelm-Platz	1 5318,7424 5310,7325 5324,7205
 Stolbergstr.	1 8850,6421 8834,6639
 Richnowstr.	1 8946,6501 8850,6421
 Menzelstr.	1 6185,6469 6154,6734
@@ -302,7 +302,7 @@ Takustr.	1 3321,5212 3209,5214 3079,5411 2953,5606 2909,5674
 Schönerlinder Str.	1 21799,4319 21640,4368
 Mentzelstr.	1 21579,4579 21535,4457
 Amalienstr.	1 13814,16759 13589,16965
-Cosimaplatz	1 5487,7620 5452,7660 5490,7696 5525,7660 5487,7620
+Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 460,4479 593,4262
 Mendelssohnstr.	1 11613,13570 11537,13617 11538,13683
 Am Bäkequell	1 4593,5235 4656,5101
@@ -413,6 +413,7 @@ Björnsonstr.	1s 10229,16653 10215,16527
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4469,8037 4659,7982 4793,7992
 Rhinstr.: Straßenbahntrasse	3nocross 18215,12132 18216,12262 18220,12450
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19807,13529 20182,13554
 Bornhomer Str.: Straßenbahntrasse	3nocross 10765,16486 10699,16492 10635,16497
@@ -423,7 +424,7 @@ Martin-Luther-Str.: Mittelstreifen	3nocross 6514,9775 6520,9867 6522,9948
 # (in Erwartung auf den mittleren Punkt) Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 11013,16278 10994,16120
 Oberspreestr.: Straßenbahn auf Mittelstreifen	3nocross 21579,4579 21726,4537 21796,4517
 Hermannstr.: Gitter auf Mittelstreifen	3nocross 11892,8372 11920,8252 11933,8198
-Bundesplatztunnel	3nocross 5360,7554 5359,7619 5359,7661 5358,7681 5358,7711 5356,7862
+Bundesplatztunnel	3nocross 5360,7554 5359,7619 5358,7681 5358,7746 5356,7862
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
 Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3906,10035 3930,9919
 Treskowallee: Straßenbahntrasse	3nocross 18628,10177 18690,10016 18698,9996 18737,9901
@@ -794,9 +795,9 @@ Lärchenweg	1 1038,10018 1083,9984 1137,9943 1238,9869
 schieben - einzelne Stufen	0:20 1412,8033
 tragen (4 x 12 Stufen)	0:180 874,8205
 schieben (steile Treppe mit seitlicher Rampe)	0:180 1176,7922
-schieben (steile Treppe mit seitlicher Rampe)	0:180 1310,7417
-Clayallee: Mittlestreifen wg. Leitplanke nicht zu queren	3nocross 1979,7460 1983,7550 1995,7565 2053,7634
-Clayallee: Mittelstreifen schlecht zu queren	3nocross 2129,7728 2098,7688 2053,7634
+schieben (steile Treppe mit seitlicher Rampe)	0:180 1319,7444
+Clayallee: Mittlestreifen wg. Leitplanke nicht zu queren	3nocross 1979,7460 1983,7550 1987,7593 2036,7653
+Clayallee: Mittelstreifen schlecht zu queren	3nocross 2116,7740 2075,7695 2036,7653
 Am Zirkus	1 9226,12909 9192,13032 9145,13020 9118,13070
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12748
 Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10 8565,13580
