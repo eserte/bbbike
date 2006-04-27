@@ -2435,6 +2435,28 @@ Z<>=> maybe the cache build should be done in a separate process. This
 
 =back
 
+=head1 BBBike on the public Server
+
+=over
+
+=item *
+
+Maybe I should create a tiny wrapper around mapserver-3.6.4, and if
+this fails (segfaults) call mapserver-3.6.6. So I will get the nicer
+images of 3.6.4, but the fallback safety of 3.6.6.
+
+=item *
+
+Regularly check the CVS version/latest release of mapserver. Maybe it
+will run my mapfile again...
+
+=item *
+
+Use the --delay-updates option of rsync for deploying, or even the
+atomic-rsync script.
+
+=back
+
 =head1 Documentation
 
 =over 

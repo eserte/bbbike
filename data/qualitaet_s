@@ -1234,6 +1234,7 @@ Pflugstr.: Asphalt	Q0 8781,14357 8662,14567
 Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 Eulerstr.: Asphalt	Q0 9268,16228 9494,16455
+Tangermünder Str.: mäßiger Asphalt	Q1 23866,15638 24113,15658 24148,15637 24226,15121 24232,15060 24253,14888
 Nikolaus-Groß-Weg: guter Asphalt	Q0 2087,14078 2028,13801
 Bansiner Str.: guter Asphalt	Q0 22803,12545 22773,12581 22720,12635 22712,12740 22684,12765 22592,12771 22585,12871 22615,12906 22671,12904 22785,12840 22807,12782 22896,12779
 Bruno-Taut-Ring: mäßiger Asphalt	Q1 13833,3665 13682,3718 13628,3781 13626,3867 13673,3915 13726,3928 13897,3848
@@ -1263,7 +1264,7 @@ Mechthildstr.: mäßiger Asphalt/Kopfsteinpflaster	Q2 23385,8217 23420,8265 23627,
 Am Faulen See: guter Asphalt	Q0 16515,16207 16546,16308 16623,16554 16639,16671 16617,16796 16559,16903 16487,17023
 Badeweg: guter Belag	Q0 -4171,2659 -4292,2762
 Badeweg: guter Belag	Q0 -4292,2762 -4471,2917
-Bröndbystr.: Asphalt	Q0 3500,1587 3261,1272 3315,1179
+Bröndbystr.: Asphalt	Q0 3500,1587 3273,1302 3312,1241 3384,1297
 Petkusser Str.: mäßiges Kopfsteinpflaster	Q2 10484,-2637 10609,-3098
 Kurpromenade: mäßiger Asphalt	Q1 -8890,5888 -8892,5946 -8831,6489 -8851,6736 -8542,6840
 Schriftsetzerweg: Asphalt	Q0 15849,1807 16194,1509
@@ -2031,7 +2032,7 @@ Burgemeisterstr.: schlechtes holpriges Kopfsteinpflaster	Q3 9348,5665 9157,5689 
 Knesebeckstr. (Zehlendorf): Kopfsteinpflaster	Q2 1104,2328 1209,2371
 Knesebeckstr. (Zehlendorf): Asphalt	Q0 1209,2371 1320,2418 1392,2606
 Schönerlinder Str.: Asphalt	Q0 21799,4319 21640,4368
-Wolfshagener Str.: mäßiger Beton	Q1 11233,18981 10920,18678 10825,18634 10721,18575 10650,18544 10565,18507 10439,18443
+Wolfshagener Str.: mäßiger Beton	Q1 11233,18981 10905,18671 10860,18650 10825,18634 10721,18575 10650,18544 10565,18507 10439,18443
 Crusemarkstr.: guter Beton	Q0 10712,18975 10825,18634
 Sophie-Charlotte-Str. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 439,3900 653,3967 821,4108 1039,4179 1275,4283
 Retzdorffpromenade: Kopfsteinpflaster	Q2 4893,6812 4993,6812
@@ -2292,6 +2293,9 @@ Rudower Str. (Niederschöneweide): einige Schlaglöcher	Q1 18702,5060 18641,5260 1
 Paul-Schwenk-Str.: Beton	Q0 19800,14726 19765,14737 19613,14728 19579,14783 19588,14847 19646,14917 19856,14926 19872,14954 19902,14945
 Kattegatstr.: Asphalt	Q0 9475,17557 9331,17658 9197,17762
 Bürgipfad: schlechtes Kopfsteinpflaster	Q3 5484,439 5495,390 5591,240
+Prettauer Pfad: guter Asphalt	Q0 3384,1297 3569,1532
+Prettauer Pfad: guter Asphalt	Q0 3358,1331 3384,1297 3437,1218
+Prettauer Pfad: fester Sandweg	Q1 3437,1218 3476,1169
 Gotlandstr.: mäßiges Kopfsteinpflaster	Q2 10765,16486 10773,16628 10783,16760
 Treseburger Ufer: Kopfsteinpflaster	Q2 12052,5710 12144,5737 12301,5783
 Treseburger Ufer: Kopfsteinpflaster	Q2 12301,5783 12699,5909
@@ -2366,6 +2370,10 @@ Stölpchenweg: Kopfsteinpflaster	Q2 -7075,-406 -7164,-426 -7266,-450
 Emil-Fischer-Str.: Asphalt	Q0 -5867,1449 -5997,1410
 Straße 246: Asphalt	Q0 13597,17363 13818,17201
 Zitadellenweg: guter Asphalt	Q0 -2336,14460 -2254,14598 -1971,14610 -1987,14814
+Amalienpark: mäßiges Kopfsteinpflaster	Q2 10860,18650 10950,18499
+Amalienpark: mäßiges Kopfsteinpflaster	Q2 10950,18499 10905,18671
+Goethestr. (Lichterfelde): mäßiges Kopfsteinpflaster	Q2 4526,2635 4568,2424 4620,2155 4660,2116
+Rinkartstr.: guter Asphalt	Q0 15971,6936 15843,6810 15720,6701 15697,6678
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934

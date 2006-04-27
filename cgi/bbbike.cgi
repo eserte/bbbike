@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.11 2006/04/24 21:40:53 eserte Exp $
+# $Id: bbbike.cgi,v 8.12 2006/04/26 20:20:10 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -694,7 +694,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.11 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.12 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -1583,12 +1583,13 @@ EOF
 <td valign="top">@{[ blind_image(420,1) ]}<br>
 EOF
 	my($bln_str, $all_bln_str, $pdm_str) = (5200, 10000, 180);
+	# XXX Use format number to get a comma in between.
 	if ($lang eq 'en') {
 	    print <<EOF;
 This is a route planner for cyclists in Berlin.
-$bln_str of $all_bln_str streets in Berlin are available for search, also
+Of the $all_bln_str streets in Berlin more than $bln_str are available for searching, also
 $pdm_str streets in Potsdam. If a street is not available, then the
-nearest crossing will be used automatically. There's no support
+nearest crossing will be used automatically. There is no support
 for street numbers.
 EOF
 	} else {
@@ -6041,7 +6042,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/04/24 21:40:53 $';
+    my $cgi_date = '$Date: 2006/04/26 20:20:10 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

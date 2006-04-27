@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.236 2006/04/22 19:35:14 eserte Exp $
+# $Id: bbbike,v 3.236 2006/04/22 19:35:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -6311,6 +6311,7 @@ sub set_bindings {
 		   search_anything();
 	       })
 	for ('<Control-Key-f>', '<Key-slash>');
+    $top->bind('<Key-colon>' => sub { enter_scale() });
 
     $top->bind("<Escape>" => sub { $escape = 1 });
     $top->bind('Busy', '<Escape>' => sub { $escape = 1; });
@@ -11581,6 +11582,7 @@ sub show_info {
     return if !@tags || !defined $tags[0];
     my($base_tag, $is_p);
 
+    my $in_2nd_pass = 0;
     my $recursion_breaker=0;#XXX
     while (1) {
 	if($recursion_breaker++>10){die}#XXX
@@ -11591,10 +11593,16 @@ sub show_info {
 	last unless !exists $p_file{$base_tag} and !$str_file{$base_tag};
 	my($below_item, @below_tags) = find_below($c, qw/s l u b r f w o v/);
 	if (!defined $below_item) {
-	    main::status_message("Es wurde kein Kartenelement an dieser Position gefunden.", "err");
-	    return;
+	    # 2nd pass: check for markers etc.
+	    my($below_item, @below_tags) = find_below($c, qw/show/);
+	    if (!defined $below_item) {
+		main::status_message("Es wurde kein Kartenelement an dieser Position gefunden.", "err");
+		return;
+	    }
+	    $in_2nd_pass = 1;
 	}
 	@tags = @below_tags;
+	last if $in_2nd_pass;
     }
 
     my $index;

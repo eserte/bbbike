@@ -1,15 +1,15 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAlarm.pm,v 1.36 2006/03/25 15:55:24 eserte Exp $
+# $Id: BBBikeAlarm.pm,v 1.36 2006/03/25 15:55:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000, 2006 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: eserte@cs.tu-berlin.de
-# WWW:  http://user.cs.tu-berlin.de/~eserte/
+# Mail: slaven@rezic.de
+# WWW:  http://bbbike.sourceforge.net/
 #
 
 package BBBikeAlarm;
@@ -270,7 +270,13 @@ sub enter_alarm {
 	$f->Button(-text => M"Alarm setzen",
 		   -command => sub {
 		       my $end_zeit = $get_end_zeit->(1);
-		       return if !defined $end_zeit;
+		       if (!defined $end_zeit) {
+			   $t->messageBox(-message => "Die Ankunftszeit ist nicht definiert.",
+					  -icon => "error",
+					  -type => "OK",
+					 );
+			   return;
+		       }
 
 		       tk_leave($end_zeit, -text => $text)
 			   if $use_tk;
@@ -449,7 +455,8 @@ sub palm_leave {
 	} @{ main::get_act_search_route() });
     }
     print F "\n";
-    close F;
+    close F
+	or die "While closing $leave_file: $!";
 
     # pilot-xfer 0.9.3's install-datebook is buggy!!!!
     # use fixed executable XXX
@@ -553,6 +560,10 @@ sub add_ical_entry {
     my $ical_data = "";
     my $uid = 0;
     if (open(F, $file)) {
+	if ($] >= 5.008) {
+	    eval q{binmode F, ':utf8';};
+	    die $@ if $@;
+	}
 	while(<F>) {
 	    $ical_data .= $_;
 	    if (/Uid\s+\[bbbikealarm_(\d+)\]/i) {
@@ -582,8 +593,14 @@ Dates [Single $day/$month/$year End
 ]
 EOF
     open(F, ">$file") or die "Can't write to $file: $!";
-    print F $ical_data;
-    close F;
+    if ($] >= 5.008) {
+	eval q{binmode F, ':utf8';};
+	die $@ if $@;
+    }
+    print F $ical_data
+	or die "Can't print to $file: $!";
+    close F
+	or die "While closing $file: $!";
 }
 
 # called from outer world

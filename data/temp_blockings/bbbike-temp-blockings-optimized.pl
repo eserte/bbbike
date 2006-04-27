@@ -668,15 +668,7 @@ userdel	2 41681,15915 42300,15756
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1145916000,
-         'text' => 'B 001 zw. Abzw. Hennickendorf und Tasdorf Deckeneinbau Vollsperrung 22.04.2006-24.04.2006 ',
-         'from' => 1145570400,
-         'data' => 'userdel	2 36874,10046 37154,10022
-userdel	2 37154,10022 37670,9871
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1146261600,
@@ -824,6 +816,15 @@ userdel	2 -21284,-3767 -21266,-3604
          'text' => 'K 6216 Zinsdorf-Beutersitz Brücke über Schwarze Elster bei Neumühl Arbeiten an Wehranlage, Vollsperrung 26.04.2006-27.04.2006 ',
          'from' => 1145916000,
          'data' => 'userdel	2 8987,-92875 9450,-92307
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1154124000,
+         'text' => 'B 168 Fürstenwalde-Müncheberg zw. Beerfelde und Schönfelde Straßenbauarbeiten Vollsperrung 02.05.2006-28.07.2006 ',
+         'from' => 1146434400,
+         'data' => 'userdel	2 54428,4464 54602,4910
+userdel	2 54602,4910 54157,5895
 ',
          'type' => 'gesperrt'
        }
