@@ -2578,6 +2578,7 @@ sub do_iconframe {
 		      -variable => \$map_mode,
 		      -value => MM_SEARCH,
 		      -command => \&set_map_mode,
+		      -accelerator => "Shift-S",
 		     );
     $sbm->cascade(-label => M('Route löschen'));
     my $sbm_reset_menu_index = $sbm->index("last");
@@ -6331,12 +6332,6 @@ sub set_bindings {
 		   reload_new_modules();
 	       });
     bind_nomod($top, "<S>" => sub {
-#XXX del?
-# 		   if ($BBBikeLazy::mode) {
-# 		       bbbikelazy_clear();
-# 		   } else {
-# 		       bbbikelazy_init();
-# 		   }
 		   set_map_mode(MM_SEARCH);
 	       });
     bind_nomod($top, "<U>" => sub {
@@ -11958,7 +11953,7 @@ sub show_info {
 		}
 	    }
 
-	    $info_text->insert("end", "Google Maps" . ($good_quality ? " (hohe Auflösung)" : " (niedrige/unbekannte Auflösung)"),
+	    $info_text->insert("end", "Google Maps (BBBike)" . ($good_quality ? " (hohe Auflösung)" : " (niedrige/unbekannte Auflösung)"),
 			       "link$linkcount");
 	    $show_url->($linkcount, sub {
 			    require CGI;
@@ -11977,6 +11972,18 @@ sub show_info {
 						zoom => $zoom,
 					      });
 			    my $url = $BBBike::BBBIKE_GOOGLEMAP_URL . "?" . $q2->query_string;
+			    $url;
+			});
+	    $info_text->insert("end", "\n");
+	    $linkcount++;
+	}
+
+	{
+	    $info_text->insert("end", "Google Maps", "link$linkcount");
+	    $show_url->($linkcount, sub {
+			    require CGI;
+			    my $q2 = CGI->new({ ll => "$py,$px" });
+			    my $url = "http://www.google.com/maps?" . $q2->query_string;
 			    $url;
 			});
 	    $info_text->insert("end", "\n");

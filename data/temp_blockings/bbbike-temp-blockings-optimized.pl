@@ -231,14 +231,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1146261599,
-         'text' => 'B 101; (Herzberg-Jüterbog); Brücke über Kremnitzbach u. über Rad-u.Gehweg bei Bernsdorf Brückenbau Vollsperrung 22.08.2005-28.04.2006 ',
-         'from' => 1124575200,
-         'data' => 'userdel	2 -1307,-73252 -1245,-72696
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -670,14 +663,7 @@ userdel	2 41681,15915 42300,15756
        undef,
        undef,
        undef,
-       {
-         'until' => 1146261600,
-         'text' => 'L 216 Gollin-Templin OD Vietmannsdorf, Brücke über Mühlengraben Einbau Decke Vollsperrung 24.04.2006-28.04.2006 ',
-         'from' => 1145743200,
-         'data' => 'userdel	2 17636,72217 17653,71852
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'INKO_82299',
          'until' => 1146434400,
@@ -717,14 +703,7 @@ userdel	2 41681,15915 42300,15756
        },
        undef,
        undef,
-       {
-         'until' => 1146175200,
-         'text' => 'L 030 Tiergartenstr. OL Königs Wusterhausen, Schleusenbrücke Brückenreparatur Vollsperrung 24.04.2006-27.04.2006 ',
-         'from' => 1145743200,
-         'data' => 'userdel	2 27543,-11912 27657,-11741
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_002632',
          'until' => 1147557600,
@@ -811,20 +790,23 @@ userdel	2 -21284,-3767 -21266,-3604
 ',
          'type' => 'gesperrt'
        },
+       undef,
+       undef,
        {
-         'until' => 1146175200,
-         'text' => 'K 6216 Zinsdorf-Beutersitz Brücke über Schwarze Elster bei Neumühl Arbeiten an Wehranlage, Vollsperrung 26.04.2006-27.04.2006 ',
-         'from' => 1145916000,
-         'data' => 'userdel	2 8987,-92875 9450,-92307
+         'until' => 1147471200,
+         'text' => 'L 074 Chausseestraße OL Wünsdorf, Bahnbrücke Brückenbauarbeiten Vollsperrung 12.05.2006-12.05.2006 ',
+         'from' => 1147298400,
+         'data' => 'userdel	2 15682,-26971 15229,-27157
+userdel	2 15682,-26971 15960,-26906
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'until' => 1154124000,
-         'text' => 'B 168 Fürstenwalde-Müncheberg zw. Beerfelde und Schönfelde Straßenbauarbeiten Vollsperrung 02.05.2006-28.07.2006 ',
-         'from' => 1146434400,
-         'data' => 'userdel	2 54428,4464 54602,4910
-userdel	2 54602,4910 54157,5895
+         'until' => 1146348000,
+         'text' => 'Seifenkisten auf dem Mehringdamm, 28.4.2006-29.4.2006',
+         'from' => 1146088800,
+         'data' => 'userdel	1 9248,9350 9235,9111 9235,9051 9227,8890 9222,8787
 ',
          'type' => 'gesperrt'
        }

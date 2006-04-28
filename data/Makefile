@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.91 2006/04/24 20:47:55 eserte Exp $
+# $Id: Makefile,v 2.91 2006/04/24 20:47:55 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -237,12 +237,14 @@ flaechen: flaechen-orig
 
 green:	green-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) $> > $@
+	$(CONVERT2HAFAS) $> > $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 brunnels:	brunnels-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) $> > $@
+	$(CONVERT2HAFAS) $> > $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 landstrassen: landstrassen-orig
@@ -280,12 +282,14 @@ sbahn: sbahn-orig
 .for cat in $(SBAHN_CATEGORIES)
 	$(GREPSTRASSEN) -cat $(cat) /tmp/sbahn | $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/sbahn-$(cat)
 .endfor
-	cat $(SBAHN_CATEGORIES:S/^/\/tmp\/sbahn-/) > sbahn
+	cat $(SBAHN_CATEGORIES:S/^/\/tmp\/sbahn-/) > sbahn~
+	mv sbahn~ sbahn
 	-@$(READONLY) $@
 
 sbahnhof:	sbahnhof-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) sbahnhof-orig > sbahnhof
+	$(CONVERT2HAFAS) sbahnhof-orig > sbahnhof~
+	mv sbahnhof~ sbahnhof
 	-@$(READONLY) $@
 
 ## Execute from bbbike root directory (evtl. mehrmals):
@@ -302,22 +306,26 @@ rbahn: rbahn-orig
 .for cat in $(RBAHN_CATEGORIES)
 	$(GREPSTRASSEN) -cat $(cat) /tmp/rbahn | $(MISCSRCDIR)/merge_overlapping_streets.pl -sep "," - | $(COMBINE_STREETS) - | sort > /tmp/rbahn-$(cat)
 .endfor
-	cat $(RBAHN_CATEGORIES:S/^/\/tmp\/rbahn-/) > rbahn
+	cat $(RBAHN_CATEGORIES:S/^/\/tmp\/rbahn-/) > rbahn~
+	mv rbahn~ rbahn
 	-@$(READONLY) $@
 
 rbahnhof:	rbahnhof-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) rbahnhof-orig > rbahnhof
+	$(CONVERT2HAFAS) rbahnhof-orig > rbahnhof~
+	mv rbahnhof~ rbahnhof
 	-@$(READONLY) $@
 
 ubahn: ubahn-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) ubahn-orig > ubahn
+	$(CONVERT2HAFAS) ubahn-orig > ubahn~
+	mv ubahn~ ubahn
 	-@$(READONLY) $@
 
 ubahnhof:	ubahnhof-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) ubahnhof-orig > ubahnhof
+	$(CONVERT2HAFAS) ubahnhof-orig > ubahnhof~
+	mv ubahnhof~ ubahnhof
 	-@$(READONLY) $@
 
 ## Execute from bbbike root directory (evtl. mehrmals):
@@ -347,73 +355,79 @@ $(i)bahnhof_bg:	$(i)bahnhof-orig
 	        $$new_s->push($$_);\
 	    }\
 	} $$s;\
-	print $$new_s->as_string' $> >> $@
+	print $$new_s->as_string' $> >> $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 .endfor
 
 faehren: faehren-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) faehren-orig > faehren
+	$(CONVERT2HAFAS) faehren-orig > faehren~
+	mv faehren~ faehren
 	-@$(READONLY) $@
 
 hoehe: hoehe-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) hoehe-orig > hoehe
+	$(CONVERT2HAFAS) hoehe-orig > hoehe~
+	mv hoehe~ hoehe
 	-@$(READONLY) $@
 
 orte: orte-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) -unutf8ify orte-orig | $(SORTBYCAT) > orte
+	$(CONVERT2HAFAS) -unutf8ify orte-orig | $(SORTBYCAT) > orte~
+	mv orte~ orte
 	-@$(READONLY) $@
 
 orte2: orte2-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) -unutf8ify orte2-orig | $(SORTBYCAT) > orte2
+	$(CONVERT2HAFAS) -unutf8ify orte2-orig | $(SORTBYCAT) > orte2~
+	mv orte2~ orte2
 	-@$(READONLY) $@
 
 orte_city: orte_city-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) orte_city-orig | $(SORTBYCAT) > orte_city
+	$(CONVERT2HAFAS) orte_city-orig | $(SORTBYCAT) > orte_city~
+	mv orte_city~ orte_city
 	-@$(READONLY) $@
 
 ampeln:	ampeln-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) ampeln-orig > ampeln
+	$(CONVERT2HAFAS) ampeln-orig > ampeln~
+	mv ampeln~ ampeln
 	-@$(READONLY) $@
 
 ampelschaltung:	ampelschaltung-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) -ampelschaltung ampelschaltung-orig > ampelschaltung
+	$(CONVERT2HAFAS) -ampelschaltung ampelschaltung-orig > ampelschaltung~
+	mv ampelschaltung~ ampelschaltung
 	-@$(READONLY) $@
 
 gesperrt:	gesperrt-orig strassen landstrassen landstrassen2 comments_path
 	-@$(WRITEABLE) $@
-	-rm $@~
 	$(CONVERT2HAFAS) -specsperre=strassen,landstrassen,landstrassen2 \
 	    -specsperre-exceptions=comments_path gesperrt-orig > $@~
-	cp $@~ $@
-	rm $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 ${PERSISTENTTMPDIR}/gesperrt-without-nocross:	gesperrt-orig strassen landstrassen landstrassen2
 	-@$(WRITEABLE) $@
-	-rm $@~
 	$(CONVERT2HAFAS) -specsperre=strassen,landstrassen,landstrassen2 \
 	    -nonc gesperrt-orig > $@~
-	cp $@~ $@
-	rm $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 .for i in u s r
 gesperrt_$(i):	gesperrt_$(i)-orig $(i)bahn
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) gesperrt_$(i)-orig | $(MISCSRCDIR)/check_dates -filter > gesperrt_$(i)
+	$(CONVERT2HAFAS) gesperrt_$(i)-orig | $(MISCSRCDIR)/check_dates -filter > $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 .endfor
 
 gesperrt_car:	gesperrt_car-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) gesperrt_car-orig > gesperrt_car
+	$(CONVERT2HAFAS) gesperrt_car-orig > gesperrt_car~
+	mv gesperrt_car~ gesperrt_car
 	-@$(READONLY) $@
 
 plz berlin:	plz-orig
@@ -435,22 +449,26 @@ berlin_ortsteile:	plz-orig
 
 potsdam:	potsdam-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) potsdam-orig > potsdam
+	$(CONVERT2HAFAS) potsdam-orig > potsdam~
+	mv potsdam~ potsdam
 	-@$(READONLY) $@
 
 deutschland:	deutschland-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) deutschland-orig > deutschland
+	$(CONVERT2HAFAS) deutschland-orig > deutschland~
+	mv deutschland~ deutschland
 	-@$(READONLY) $@
 
 sehenswuerdigkeit:	sehenswuerdigkeit-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) sehenswuerdigkeit-orig > sehenswuerdigkeit
+	$(CONVERT2HAFAS) sehenswuerdigkeit-orig > sehenswuerdigkeit~
+	mv sehenswuerdigkeit~ sehenswuerdigkeit
 	-@$(READONLY) $@
 
 obst:	obst-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) obst-orig > obst
+	$(CONVERT2HAFAS) obst-orig > obst~
+	mv obst~ obst
 	-@$(READONLY) $@
 
 radwege:	radwege-orig
@@ -469,32 +487,38 @@ radwege_exact:	radwege-orig
 
 qualitaet_s:	qualitaet_s-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) qualitaet_s-orig > qualitaet_s
+	$(CONVERT2HAFAS) qualitaet_s-orig > qualitaet_s~
+	mv qualitaet_s~ qualitaet_s
 	-@$(READONLY) $@
 
 qualitaet_l:	qualitaet_l-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) qualitaet_l-orig > qualitaet_l
+	$(CONVERT2HAFAS) qualitaet_l-orig > qualitaet_l~
+	mv qualitaet_l~ qualitaet_l
 	-@$(READONLY) $@
 
 handicap_s:	handicap_s-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) handicap_s-orig > handicap_s
+	$(CONVERT2HAFAS) handicap_s-orig > handicap_s~
+	mv handicap_s~ handicap_s
 	-@$(READONLY) $@
 
 handicap_l:	handicap_l-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) handicap_l-orig > handicap_l
+	$(CONVERT2HAFAS) handicap_l-orig > handicap_l~
+	mv handicap_l~ handicap_l
 	-@$(READONLY) $@
 
 label:	label-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) label-orig > label
+	$(CONVERT2HAFAS) label-orig > label~
+	mv label~ label
 	-@$(READONLY) $@
 
 vorfahrt:	vorfahrt-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) vorfahrt-orig > vorfahrt
+	$(CONVERT2HAFAS) vorfahrt-orig > vorfahrt~
+	mv vorfahrt~ vorfahrt
 	-@$(READONLY) $@
 
 .for f in ${COMMENTS_PARTIAL}
@@ -511,32 +535,38 @@ ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross
 
 relation_gps:	relation_gps-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) relation_gps-orig > relation_gps
+	$(CONVERT2HAFAS) relation_gps-orig > relation_gps~
+	mv relation_gps~ relation_gps
 	-@$(READONLY) $@
 
 nolighting:	nolighting-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) nolighting-orig > nolighting
+	$(CONVERT2HAFAS) nolighting-orig > nolighting~
+	mv nolighting~ nolighting
 	-@$(READONLY) $@
 
 housenumbers:	housenumbers-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) housenumbers-orig > housenumbers
+	$(CONVERT2HAFAS) housenumbers-orig > housenumbers~
+	mv housenumbers~ housenumbers
 	-@$(READONLY) $@
 
 mount:	strassen hoehe
 	-@$(WRITEABLE) $@
-	$(STEIGUNG_STAT) -minmount 1.0 -commentscompatible -str strassen -i hoehe -o $@
+	$(STEIGUNG_STAT) -minmount 1.0 -commentscompatible -str strassen -i hoehe -o $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 exits:	exits-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) $> > $@
+	$(CONVERT2HAFAS) $> > $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 kneipen:	kneipen.yml
 	-@$(WRITEABLE) $@
-	$(MISCSRCDIR)/yaml2bbd $> > $@
+	$(MISCSRCDIR)/yaml2bbd $> > $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 ######################################################################
@@ -548,7 +578,8 @@ kneipen:	kneipen.yml
 
 multi_bez_str:	multi_bez_str-orig
 	-@$(WRITEABLE) $@
-	${MISCSRCDIR}/complete_multi_bez_str > $@
+	${MISCSRCDIR}/complete_multi_bez_str > $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 # Makefile in ../misc ausführen
@@ -961,10 +992,11 @@ check-disabled:	.check_label
 		-against strassen -against landstrassen
 	@touch $@
 
-.check_brunnels:	brunnels strassen landstrassen landstrassen2 wasserstrassen wasserumland wasserumland2
+.check_brunnels:	brunnels strassen landstrassen landstrassen2 wasserstrassen wasserumland wasserumland2 fragezeichen
 	$(CHECK_NEIGHBOUR) -type standard -data brunnels \
 	    -against strassen -against landstrassen -against landstrassen2 \
-	    -against wasserstrassen -against wasserumland -against wasserumland2
+	    -against wasserstrassen -against wasserumland -against wasserumland2 \
+	    -against fragezeichen
 	@touch $@
 
 .check_exits:	exits \

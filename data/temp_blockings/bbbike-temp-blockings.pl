@@ -2840,7 +2840,7 @@ EOF
        text  => 'L 75; (Karl-Marx-Str.); OD Großziethen Straßenbauarbeiten Vollsperrung 06.09.2005-30.11.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13225,-681 13090,205 12968,1006
+userdel	2 13225,-681 13090,205 12984,1011
 EOF
      },
      { from  => 1128290400, # 2005-10-03 00:00
@@ -4258,13 +4258,38 @@ EOF
 userdel	2 8987,-92875 9450,-92307
 EOF
      },
-     { from  => 1146434400, # 2006-05-01 00:00
-       until => 1154124000, # 2006-07-29 00:00
+     { from  => 1146251142, # XXX 2006-05-01 00:00
+       until => 1146251563, # XXX 2006-07-29 00:00
        text  => 'B 168 Fürstenwalde-Müncheberg zw. Beerfelde und Schönfelde Straßenbauarbeiten Vollsperrung 02.05.2006-28.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 54428,4464 54602,4910
 userdel	2 54602,4910 54157,5895
+EOF
+     },
+     { from  => 1147298400, # 2006-05-11 00:00
+       until => 1147471200, # 2006-05-13 00:00
+       text  => 'L 074 Chausseestraße OL Wünsdorf, Bahnbrücke Brückenbauarbeiten Vollsperrung 12.05.2006-12.05.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 15682,-26971 15229,-27157
+userdel	2 15682,-26971 15960,-26906
+EOF
+     },
+     { from  => 1145916000, # 2006-04-25 00:00
+       until => 1146175200, # 2006-04-28 00:00
+       text  => 'K 6216 Zinsdorf-Beutersitz Brücke über Schwarze Elster bei Neumühl Arbeiten an Wehranlage Vollsperrung * 26.04.2006-27.04.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 8987,-92875 9450,-92307
+EOF
+     },
+     { from  => 1146088800, # 2006-04-27 00:00
+       until => 1146348000, # 2006-04-30 00:00
+       text  => 'Seifenkisten auf dem Mehringdamm, 28.4.2006-29.4.2006',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 9248,9350 9235,9111 9235,9051 9227,8890 9222,8787
 EOF
      },
     );
