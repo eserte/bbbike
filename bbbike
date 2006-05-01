@@ -15884,7 +15884,7 @@ sub user_edit_street {
     }
     status_message("Can't make net", "die") if !$net;
     my(@click_items) = ($net_type eq 's'
-			? qw(s l)
+			? qw(s l fz)
 			: ($net_type =~ /^(r|us|rus)$/
 			   ? map { $_ eq 's' ? 'b' : $_ } split //, $net_type
 			   : ($net_type eq 'wr'

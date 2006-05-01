@@ -10,7 +10,7 @@ Magdeburg	6 -108962,-31703
 Rostock	5 -79160,185302
 Schwerin	5 -127134,133359
 Wismar	5 -124516,162827
-Schwedt	5 69359,73390
+Schwedt	5 69238,73315
 Greifswald	5 5585,187733
 Stralsund	5 -15329,211585
 Salzgitter	5 -195609,-37318
@@ -265,7 +265,7 @@ Milmersdorf	2 25146,78471
 Mittenwalde|b. Templin	2 26483,86997
 Temmen	2 33290,77277
 Gerswalde	2 32311,85560
-Pinnow|(Uckermark)	2 55594,73546
+Pinnow|(Uckermark)	2 55450,73574
 Wustrow	2 -20726,90673
 Möllenbeck	2 4003,109246
 Karstädt	2 -103780,81363
@@ -402,8 +402,8 @@ Werbig|b. Jüterbog	2 -2603,-52858
 Welsickendorf	2 -6124,-56236
 Altes Lager	2 -16499,-43776
 Bardenitz	2 -19967,-37369
-Casekow	2 63395,90587
-Wartin	2 59916,94943
+Casekow	2 63491,90572
+Wartin	2 59905,94908
 Luckow|(Luckow-Petershagen)	2 63888,93681
 Hohenselchow	2 68362,89958
 Groß Pinnow	2 68212,87748
@@ -441,6 +441,8 @@ Dobberzin	1 52316,69186
 Bruchhagen	1 47872,75827
 Frauenhagen	1 52218,75821
 Landin|(Uckermark)	1 59336,75763
+Heinersdorf|bei Schwedt	1 63281,76620
+Berkholz|(Berkholz-Meyenburg)	1 63939,73695
 Schönermark|(Uckermark)	1 54924,78764
 Schapow	1 29003,106256
 Grünow|(Uckermark)	1 54326,80597
@@ -510,7 +512,7 @@ Ringenwalde|(Uckermark)	1 30268,72844
 Neppermin	1 50393,171375
 Wollin|(Penkun)	1 64241,102111
 Krackow	1 67229,105204
-Glasow|(Rangowbruch)	1 67637,109062
+Glasow|(Randowbruch)	1 67637,109062
 Wollschow	1 61885,112074
 Betzin	1 -33911,38631
 Brunne	1 -36131,39797
@@ -684,12 +686,12 @@ Radeland	1 21448,-38755
 Dornswalde	1 24749,-39659
 Mückendorf	1 17021,-36490
 Hohenfelde	1 68737,82062
-Kunow	1 66925,82537
-Woltersorf|bei Casekow	1 64187,87200
+Kunow	1 66943,82495
+Woltersdorf|bei Casekow	1 64187,87200
 Petershagen|(Luckow-Petershagen)	1 66462,94275
 Blumberg|bei Casekow	1 59648,89982
 Sommersdorf	1 61351,98696
-Grünz	1 58485,98577
+Grünz	1 58479,98546
 Groß Rietz	1 65774,-20483
 Bornow	1 64929,-25152
 Görzig	1 65558,-17515
@@ -761,7 +763,8 @@ Peetzig	0 43778,74590
 Pfingstberg|bei Stegelitz	0 40700,81012
 Ausbau (Afrika)|bei Stegelitz	0 37428,79238
 Henriettenhof	0 54025,69287
-Hohenlandin	0 58561,76772
+Hohenlandin	0 58674,76657
+Meyenburg|(Berkholz-Meyenburg)	0 65840,72257
 Adamswalde	0 -22743,84940
 Kleinzerlang	0 -24423,86440
 Repente	0 -30917,83823
@@ -800,7 +803,7 @@ Schmachtenhagen|(Uckermark)	0 34595,96512
 Zollchow	0 38900,95643
 Neu Zollchow	0 36544,95193
 Fergitz	0 38674,86779
-Melzow	0 41882,85331
+Melzow	0 41910,85359
 Dreesch	0 46093,99430
 Mattheshöhe|(bei Falkenwalde)	0 48318,97450
 Kleinow|(Falkenwalde)	0 50846,97187
@@ -906,6 +909,7 @@ Staakowmühle	0 31912,-40225
 Brand	0 35178,-41015
 Glashütte|(Baruth)	0 23377,-41756
 Kemlitz	0 15912,-43922
+Blumenhagen	0 69400,79825
 Birkholz|bei Beeskow	0 65076,-22519
 Feldgrieben	0 -22112,79937
 Paulshorst	0 -24075,78562

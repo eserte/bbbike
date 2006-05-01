@@ -117,15 +117,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_77420',
-         'until' => 1146434399,
-         'text' => 'Vulkanstr. (Lichtenberg) von Landsberger Allee bis Herzbergstr. Baustelle, Fahrtrichtung gesperrt (bis Ende 04.2006)',
-         'from' => 1138319749,
-         'data' => 'userdel	q4; 15838,14319 15897,13942 15892,13534
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -218,14 +210,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1146434400,
-         'text' => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist passierbar (Swinemünder Brücke). Dauer: bis 30.04.2006 ',
-         'from' => 1135370995,
-         'data' => 'userdel	q4 9494,15998 9583,15851
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -664,15 +649,7 @@ userdel	2 41681,15915 42300,15756
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'INKO_82299',
-         'until' => 1146434400,
-         'text' => 'Brücke über den Nordgraben (Reinickendorf) in beiden Richtungen, in Höhe Schorfheidestr. Baustelle, Straße vollständig gesperrt (bis 30.04.06)',
-         'from' => 1144438665,
-         'data' => 'userdel	2 6281,20369 6289,20468
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_002598',
@@ -740,16 +717,7 @@ userdel	2 21100,4192 21174,4250
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_002650',
-         'until' => 1146348000,
-         'text' => 'Kreuzstr. (Pankow) in beiden Richtungen, zwischen Grabbeallee und Wollankstr. Baustelle, Straße vollständig gesperrt (bis 29.04.2006)',
-         'from' => 1145392820,
-         'data' => 'userdel	2 9902,18180 9909,18333
-userdel	2 9902,18180 9832,17925
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1155679200,
          'text' => 'L 034 Philipp-Müller-Str./ Wriezener Str. OD Strausberg, Nordkreuzung Kreiselneubau Vollsperrung 19.04.2006-15.08.2006 ',
@@ -781,15 +749,7 @@ userdel	q4 43584,20871 44596,21287
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1146348000,
-         'text' => 'L 090 Eisenbahnstr OL Werder Festumzug 127. Baumblütenfest Vollsperrung 29.04.2006-29.04.2006 ',
-         'from' => 1146175200,
-         'data' => 'userdel	2 -21220,-3831 -21284,-3767
-userdel	2 -21284,-3767 -21266,-3604
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -798,15 +758,6 @@ userdel	2 -21284,-3767 -21266,-3604
          'from' => 1147298400,
          'data' => 'userdel	2 15682,-26971 15229,-27157
 userdel	2 15682,-26971 15960,-26906
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       {
-         'until' => 1146348000,
-         'text' => 'Seifenkisten auf dem Mehringdamm, 28.4.2006-29.4.2006',
-         'from' => 1146088800,
-         'data' => 'userdel	1 9248,9350 9235,9111 9235,9051 9227,8890 9222,8787
 ',
          'type' => 'gesperrt'
        }

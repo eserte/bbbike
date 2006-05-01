@@ -81,6 +81,7 @@ Spittastr.: mäßiges Kopfsteinpflaster	Q2 15433,10871 15495,11060 15562,11234
 Geusenstr.: mäßiges Kopfsteinpflaster	Q2 15584,11023 15554,10934 15540,10887
 Türrschmidtstr.: mäßiges Kopfsteinpflaster	Q2 15267,10865 15351,10866 15433,10871 15540,10887 15628,10915 15738,10962
 Giselastr.: mäßiges Kopfsteinpflaster	Q2 16345,11328 16262,11116 16218,10994
+Emanuelstr.: Kopfsteinpflaster	Q2 16316,10755 16349,10860 16374,10946
 Zobtener Str.: teils sandiger und holpriger Fahrweg	Q3 16525,10118 16157,10342 15751,10582
 Zobtener Str.: sandig	Q2 16734,9990 16811,9937
 Wielandstr.: schlechtes Kopfsteinpflaster	Q3 23171,8835 23003,8582
@@ -1241,6 +1242,10 @@ Gudrunstr.: Asphalt mit erheblichen Schäden	Q2 17466,12241 17337,12185
 Gudrunstr.: Asphalt	Q0 17337,12185 17139,12100 17088,12069 16975,12000 16870,11920
 Marzahner Chaussee (bis zur Kurve): mäßiger Asphalt	Q1; 19173,13487 19194,13258
 (Eichhörnchensteig - Wildpfad): enger Waldpfad	Q2 1449,7519 1485,7651 1539,7677
+#: note: vom Zug aus gesehen:
+Röntgentaler Weg (durch den Schloßpark): fester Waldweg	Q1 16166,25767 16532,26174
+#: note: vom Zug aus gesehen:
+Röntgentaler Weg: schlechtes Kopfsteinpflaster, teilweise mit Asphaltflicken	Q3 16532,26174 17385,26962
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -2547,13 +2552,16 @@ Am Breiten Luch: Asphalt	Q0 17531,17802 17650,17605 17751,17437 17907,17161
 Blumenweg: schlechtes Kopfsteinpflaster	Q3 8418,4432 8169,4342
 #: by: ^^^
 #: by: Stefan Fruhner vvv
-Streckfußstr.: Asphalt	Q0 13903,22720 13984,22826 14050,22912 14148,23040 14351,23200 14447,23353 14651,23653
-Liebenstr.: schlechtes Kopfsteinpflaster	Q3 14601,23302 14521,23181
-Liebenstr.: Bitumen	Q0 14521,23181 14345,22912 14231,22731 14201,22631 14184,22528
+Streckfußstr.: Asphalt	Q0 13903,22720 13984,22826 14050,22912 14148,23040 14351,23200 14442,23339 14651,23653
+#: note: bestätigt, vom Zug aus gesehen
+Liebenstr.: schlechtes Kopfsteinpflaster	Q3 14597,23280 14526,23155
+Liebenstr.: Bitumen	Q0 14526,23155 14338,22885 14251,22755 14201,22631
+#: note: korrigiert, vom Zug aus gesehen
+Liebenstr.: sandig	Q2 14201,22631 14184,22528
 #: XXX Widerspruch schlechtes K - 18 km/h:
-Florastr. (Karow): Kopfsteinpflaster	Q2 14931,22868 14521,23181
-Schräger Weg: Asphalt	Q0 14345,22912 14917,22823 15273,22819
-Neustädter Str.: Beton	Q1 14345,22912 14279,22931 14148,23040 14057,23120
+Florastr. (Karow): Kopfsteinpflaster	Q2 14931,22868 14526,23155
+Schräger Weg: Asphalt	Q0 14338,22885 14917,22823 15273,22819
+Neustädter Str.: Beton	Q1 14338,22885 14276,22914 14148,23040 14057,23120
 #: note: auch laut ADFC-Karte nicht geeignet:
 Flaischlenstr.: asphaltiert	Q0 13514,22642 13468,22518
 Flaischlenstr.: schlechtes Kopfsteinpflaster, Ausweichen auf den Fußweg (Rasenflächen mit Trampelpfad) möglich	Q3 13468,22518 13426,22398 13395,22365 13333,22292 13285,22079 13268,22002
