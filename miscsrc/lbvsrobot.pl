@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.31 2006/04/25 06:10:30 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.32 2006/05/02 23:20:59 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
@@ -213,7 +213,7 @@ if ($create_info_file) {
     for my $info (@details) {
 	my $details_text = "";
 	while(my($k,$v) = each %{ $info->{details} }) {
-	    $details_text .= "$k: $v\n";
+	    $details_text .= "$k:\t$v\n";
 	}
 	$info{$index} = $details_text;
 	$index++;
@@ -602,3 +602,6 @@ __END__
 # ./lbvsrobot.pl -old /tmp/oldlbvs.yaml -i /tmp/lbvs.yaml -diffcount || \
 #    (./lbvsrobot.pl -old ~/cache/misc/oldlbvs.yaml -i ~/cache/misc/lbvs.yaml -f -outputas bbd:/tmp/difflbvs.bbd; \
 #     tkmessage -center -font "helvetica 18" -bg red -fg white "New LBVS data available" )
+
+# Beispiel für echtes difffile:
+# ~/src/bbbike/miscsrc/lbvsrobot.pl -old ~/cache/misc/oldlbvs.yaml -i ~/cache/misc/lbvs.yaml -f -markirrelevant -with-info -outputas bbd:/tmp/bla.bbd

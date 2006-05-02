@@ -511,15 +511,7 @@ userdel	q4 12578,14237 12499,14136
        },
        undef,
        undef,
-       {
-         'until' => 1146607200,
-         'text' => 'L 074 Chausseestraße OL Wünsdorf, Bahnbrücke Brückenbauarbeiten Vollsperrung 02.05.2006-02.05.2006 ',
-         'from' => 1146434400,
-         'data' => 'userdel	2 15682,-26971 15229,-27157
-userdel	2 15682,-26971 15960,-26906
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {

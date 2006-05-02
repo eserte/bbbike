@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.98 2006/04/20 22:22:13 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.99 2006/05/01 20:42:18 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -325,6 +325,7 @@ Haßfurter Weg	1 11812,18484 11847,18338
 Kattegatstr.	1 9331,17658 9475,17557
 Waldhüterpfad	1 510,4202 377,4442 301,4643
 Amalienpark	1 10905,18671 10950,18499 10860,18650
+Im Amseltal	1 1962,25214 1983,25097
 #
 # Potsdam
 #
@@ -571,6 +572,8 @@ tragen (Treppe)	0:30 8445,12747
 tragen (Treppe)	0:30 17026,11810
 #: add_fragezeichen: wo sind die Treppen genau?
 tragen (zwei kurze Treppen)	0:30 9453,6415
+#: by: peer.weyrauch, bestätigt durch die neue ADFC-Karte:
+tragen (S-Bhf. Raoul-Wallenberg-Str.)	0:30 20007,16313
 #: by: Katharina Hoffmann: vvv
 tragen (ca. 40 Stufen)	0:59 1659,3226
 tragen (Treppe)	0:30 1715,3257

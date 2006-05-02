@@ -1,8 +1,7 @@
-#!/usr/local/bin/perl
 # -*- perl -*-
 
 #
-# $Id: BikePower.pm,v 2.5.1.16 2003/10/22 21:36:50 eserte Exp eserte $
+# $Id: BikePower.pm,v 2.5.1.19 2006/05/01 20:29:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright: see at bottom of file
@@ -26,7 +25,7 @@ use vars qw($m_s__per__mi_h $m_s__per__km_h $Nt__per__lb $kg__per__Nt
 
 require DynaLoader;
 @ISA     = qw(DynaLoader);
-$VERSION = '0.34_90';
+$VERSION = '0.34_91';
 
 eval {
     bootstrap BikePower $VERSION;
@@ -273,6 +272,18 @@ sub default {
 	$self->{$k} = $v->[1];
     }
     $self;
+}
+
+sub make_valid {
+    my($self) = @_;
+    if ($self->rolling_friction <= 0 ||
+	$self->rolling_friction > 1) {
+	$self->rolling_friction(0.0047);
+    }
+    if ($self->transmission_efficiency <= 0 ||
+	$self->transmission_efficiency > 1) {
+	$self->transmission_efficiency(0.95);
+    }
 }
 
 sub set_values {
@@ -721,6 +732,11 @@ $bpwr->consumption.
 
 Calculate and print a table with the supplied values.
 
+=item make_valid
+
+Make sure the BikePower object's values are valid. This method makes
+sure that there won't any "division by zero" errors.
+
 =back
 
 =head1 INI FILE
@@ -771,7 +787,7 @@ Original program bike_power.c by Ken Roberts
 (roberts@cs.columbia.edu), Dept of Computer Science, Columbia
 University, New York and co-author Mark Grennan (markg@okcforum.org).
 
-Copyright (c) 1997,1998,1999,2000 Slaven Rezic. All rights reserved.
+Copyright (c) 1997,1998,1999,2000,2006 Slaven Rezic. All rights reserved.
 This package is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
 

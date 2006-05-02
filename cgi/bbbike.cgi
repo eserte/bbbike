@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.12 2006/04/26 20:20:10 eserte Exp $
+# $Id: bbbike.cgi,v 8.13 2006/05/01 20:35:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -694,7 +694,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.12 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.13 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -5423,6 +5423,11 @@ sub init_bikepower {
 	require BikePower;
 	require BikePower::HTML;
 	$bp_obj = BikePower::HTML::new_from_cookie($q);
+	if ($bp_obj->can("make_valid")) {
+	    $bp_obj->make_valid;
+	} else {
+	    warn "*** Cannot find make_valid method in BikePower, please consider to upgrade BikePower.pm! ***";
+	}
 	$bp_obj->given('P');
 	BBBikeCalc::init_wind();
     };
@@ -6042,7 +6047,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/04/26 20:20:10 $';
+    my $cgi_date = '$Date: 2006/05/01 20:35:26 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {
