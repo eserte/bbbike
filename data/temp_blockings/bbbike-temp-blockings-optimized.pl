@@ -514,15 +514,7 @@ userdel	q4 12578,14237 12499,14136
        undef,
        undef,
        undef,
-       {
-         'until' => 1146693600,
-         'text' => 'B 096 OD Neuhof BÜ Neuhof Gleisbau Vollsperrung 03.05.2006-03.05.2006 ',
-         'from' => 1146520800,
-         'data' => 'userdel	2 16407,-29400 16379,-29446
-userdel	2 16336,-29511 16379,-29446
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1147471200,
          'text' => 'B 096 OD Neuhof BÜ Neuhof Gleisbau Vollsperrung 05.05.2006-12.05.2006 ',
@@ -750,6 +742,25 @@ userdel	q4 43584,20871 44596,21287
          'from' => 1147298400,
          'data' => 'userdel	2 15682,-26971 15229,-27157
 userdel	2 15682,-26971 15960,-26906
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       {
+         'until' => 1159189200,
+         'text' => 'Schulzendorfer Straße zwischen Ruppiner Chaussee und Blisenkrautstr. in beiden Richtungen Baustelle, gesperrt bis 25.09.2006 15:00 Uhr ',
+         'from' => 1146701340,
+         'data' => 'userdel	2 -862,22946 -596,23009
+userdel	2 -862,22946 -1254,22853
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1146834000,
+         'text' => 'Holtzendorffstr. zwischen Rönnestr. und Gervinusstr. in beiden Richtungen Brückenarbeiten gesperrt bis 05.05.06, 15:00 Uhr ',
+         'from' => 1146701434,
+         'data' => 'userdel	2 3093,10594 3049,10719
 ',
          'type' => 'gesperrt'
        }

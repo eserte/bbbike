@@ -4292,4 +4292,21 @@ EOF
 userdel	1 9248,9350 9235,9111 9235,9051 9227,8890 9222,8787
 EOF
      },
+     { from  => 1146701340, # 2006-05-04 02:09
+       until => 1159189200, # 2006-09-25 15:00
+       text  => 'Schulzendorfer Straße zwischen Ruppiner Chaussee und Blisenkrautstr. in beiden Richtungen Baustelle, gesperrt bis 25.09.2006 15:00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -862,22946 -596,23009
+userdel	2 -862,22946 -1254,22853
+EOF
+     },
+     { from  => 1146701434, # 2006-05-04 02:10
+       until => 1146834000, # 2006-05-05 15:00
+       text  => 'Holtzendorffstr. zwischen Rönnestr. und Gervinusstr. in beiden Richtungen Brückenarbeiten gesperrt bis 05.05.06, 15:00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 3093,10594 3049,10719
+EOF
+     },
     );

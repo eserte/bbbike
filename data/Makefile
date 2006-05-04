@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.92 2006/05/01 20:44:59 eserte Exp $
+# $Id: Makefile,v 2.92 2006/05/01 20:44:59 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1045,8 +1045,9 @@ check-line-lengths:	.check_line_lengths
 	@touch $@
 
 count-streets:
-	@echo -n "Berlin:  "; grep -v "^(" strassen | cut -f1 -d"(" | sort -u | wc -l
-	@echo -n "Potsdam: "; fgrep "(Potsdam)" landstrassen | grep -v "^(" | cut -f1 -d"(" | sort -u | wc -l
+	@echo -n "Berlin:      "; grep -v "^(" strassen | cut -f1 -d"(" | sort -u | wc -l
+	@echo -n "Potsdam:     "; fgrep "(Potsdam)" landstrassen | grep -v "^(" | cut -f1 -d"(" | sort -u | wc -l
+	@echo -n "Landstraﬂen: "; grep -v "^#" landstrassen landstrassen2 | cut -f1 | sort -u | wc -l
 
 check-dates:	.check_dates
 
