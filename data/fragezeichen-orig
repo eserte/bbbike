@@ -29,7 +29,7 @@ Gorkistr.	? 4423,20848 4265,20799 3569,20583 3329,20538 2621,20404 2517,20385 24
 Vulkanstraße	? 15912,13153 15892,13534 15897,13942 15838,14319
 Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17750,11771 17436,11791 17249,11802
 Löhleinstraße	? 2717,5578 2499,5144 2454,5067 2288,4932
-Saargemünder Straße	? 2005,4772 1934,4788 1744,4812 1495,4850
+Saargemünder Straße	? 2005,4772 1934,4788 1744,4812 1479,4853
 Pacelliallee	? 2585,5696 2594,5923 2607,6285 2609,6348 2659,6499 2711,6698 2714,6857 2723,7029
 #: by ^^^
 #: by Tagesspiegel 2004-07-25 (obige waren auch dabei) vvv
@@ -179,6 +179,10 @@ Tempelhofer Veloroutenpläne: hmmm, teilweise gibt es hier gar keine Straßen?	? 9
 #: by: ^^^
 #: XXX Eintrag von Torsten Fleischmann:
 Radweg in Zepernick, beidseitig, auf der südöstlichen Seite: genauer Beginn- und Endpunkt?	? 18292,26726 19364,27415 19475,27877 20017,28297 20472,28570
+#: XXX Eintrag von rolf boje OK, aber keine Verknüpfung zum Netz:
+Flötnerweg: mäßiger beton, Q1	? 5751,19443 5676,19424 5714,19290 5781,19236 5810,19244
+#: XXX anonymer Eintrag OK, aber keine Verknüpfung zum Netz:
+Hagedornstr.: mäßiger Asphalt, Q1	? 17810,5306 17906,5170 18030,5010 18202,4786
 #: XXX Eintrag von Max Janke OK, aber keine Verknüpfung zum Netz:
 Siedlungsring (Karow): sehr guter Asphalt, Q0, schlecht überaschaubar, q1	? 16139,24162 16245,24159 16357,24093 16473,24045 16900,23884 16887,23860 16720,23848 16664,23845 16600,23881 16542,23954 16512,23979 16462,24012
 #: XXX Eintrag von heiko astalosch OK, aber keine Verknüpfung zum Netz:
@@ -319,7 +323,7 @@ Skandinavische Str.: auf der westlichen Seite Suggestivstreifen (laut Radzeit)?	
 Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 Fähre Liepnitzsee zum Großen Werder: wo genau?	? 16050,38181 16455,37790
 Sputendorfer Str.: laut http://home.arcor.de/hoge-online/std_tlw/std_tlw00.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2049,-2165 -1853,-2412 -1834,-3968 -1809,-4235
-Spandau: Kurstr. - Galenstr. - Am Bahnhof Spandau - etc.: sieht als Umfahrung für Altstädter Ring etc. gut aus. Qualität, etc?	? -2834,15655 -2956,15575 -3195,15134 -3231,15096 -3453,14815 -3637,14628 -3723,14512 -3805,14138 -3884,13980 -3904,13944 -3971,13755 -4006,13478 -3996,13414
+Spandau: Kurstr. - Galenstr. - Am Bahnhof Spandau - etc.: sieht als Umfahrung für Altstädter Ring etc. gut aus. Qualität, etc?	? -2834,15655 -2956,15575 -3195,15134 -3231,15096 -3243,15068 -3354,14971 -3453,14815 -3637,14628 -3723,14512 -3805,14138 -3884,13980 -3904,13944 -3971,13755 -4006,13478 -3996,13414
 Tempelhofer Veloroutenpläne: Albulaweg - Hochspannungsweg: genaue Lage, Qualität etc.	? 10123,1996 10473,1900 11099,1758 11321,1936
 Tempelhofer Veloroutenpläne: Muschelkalkweg: genaue Lage, Qualität?	? 11099,1758 11112,1428 10699,1256 10759,1112
 Fortsetzung der Wolziger Zeile bis zur B101: Qualität? Kann die B101 gequert werden?	? 9608,-2642 9522,-2640 9117,-2636 8073,-2475 6651,-1299
@@ -1233,7 +1237,6 @@ Boltonstr. - Motardstr.: Abkürzung über Parkplatz möglich?	? -245,14343 19,14186
 Museumstr.: zur "Bodestr." umbenannt?	? 9943,12642 9884,12712
 #: XXX laut ADFC-Karte mäßiger Radweg Richtung Südosten, wahrscheinlich ein Druckfehler
 Saalburgstr./Cafeastr.: Qualität? Durchfahrt zur Gradestr. für Radfahrer möglich?	? 11114,5780 11365,5508 11576,5450 11533,5343 11661,5180
-Sigmund-Bergmann-Str.: Qualität (vielleicht Verbundsteinpflaster?)? Weg für Radfahrer befahrbar?	? -2121,16689 -2057,16942
 #: XXX: Eintragung von Bernd Honsa: Q0 Asphalt, verkehrsberuhigt RW6
 #: XXX: laut luise-berlin zwischen Walter-Huth-Str. und Wolfgang-Harlan-Straße., laut berliner-stadtplan die eingetragene Wegführung
 #: XXX: obwohl: es gibt auch eine kürzere parallel verlaufende gleichnamige Straße. Wahrscheinlich ist diese die richtige!
@@ -1305,8 +1308,6 @@ Straße 142: Qualität? (laut ADFC-Karte/neu gut geeignet)?	? 17088,16470 17152,16
 Crivitzer Str.: Qualität? (laut ADFC-Karte/neu gut geeigntet)?	? 17807,18267 17670,18435 17580,18548
 Am Gutshof: Qualität? (laut ADFC-Karte/neu gut geeigntet)?	? 17797,18673 17835,18791 17889,18994
 Demminer Str.: Qualität? (laut ADFC-Karte/neu gut geeigntet)?	? 17502,18286 17670,18435 17772,18523 17797,18673
-#: unverified_by: laut ADFC-Karte/neu
-Märkische Allee - Landsberger Allee: existiert hier ein Radweg entlang der TramTrasse?	?; 19670,15435 19582,15221 19496,15113 19280,15014
 Weg am Humboldthain: Qualität? (laut ADFC-Karte/neu schlecht geeignet)	? 8742,15298 8796,15386 8778,15534 8918,15693 9234,15859
 Zitadellenweg, westliches Ende: Qualität? für Radfahrer befahrbar?	? -2588,14543 -2582,14579 -2254,14598
 Zitadellenweg, östliches Ende: Qualität? für Radfahrer befahrbar?	? -1971,14610 -1662,14603 -1567,14494
@@ -1336,8 +1337,6 @@ Sparrstr. - Triftstr.: Durchfahrt für Radfahrer offen?	? 7303,15173 7241,15293
 #: note: unklarer Eintrag von anonymous: "mäßig", "kein Radweg" existiert
 Turmstr. (Potsdam): Qualität?	? -8081,-4396 -8111,-4396 -8259,-4119
 Turmstr. (Potsdam): Qualität?	? -8294,-4022 -8404,-3824 -8510,-3616
-Jochimstr.: Qualität zwischen Waltersdorfer Str. und östlichen Ende?	? 22177,-137 22382,-87 22628,44 22710,98
-#: note: sich widersprechender Eintrag:
-Illigstr.: Fahrradstraße oder verkehrsberuhigter Bereich?	? 9426,-1878 9443,-1626 9445,-1460 9456,-1303 9461,-1268 9379,-935
 #: note: unklarer Beitrag: Verbundstraße Q1, Fußgängerzone (?), q4
 Thomas-Mann-Str.: Qualität?	? 12886,15346 13106,15202 13240,15408
+Kronprinzessinenweg/Havelchaussee - Schlachtensse: existiert ein für Radfahrer befahrbarer Weg? Qualität?	? -3296,3686 -3324,3382

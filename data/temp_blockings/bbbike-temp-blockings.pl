@@ -3210,7 +3210,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002329',
        data  => <<EOF,
-userdel	q4 13300,17726 12856,17825
+userdel	q4 13300,17726 13031,17775 12928,17801 12856,17825
 userdel	q4 12856,17825 12746,17981
 EOF
      },
