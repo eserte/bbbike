@@ -694,8 +694,8 @@ userdel	2 21100,4192 21174,4250
          'type' => 'handicap'
        },
        {
-         'until' => 1146866400,
-         'text' => 'L 080 Brandenburger Str. OL Luckenwalde, Kreuz. Dessauer Str. Kanalarbeiten Vollsperrung 18.04.2006-05.05.2006 ',
+         'until' => 1147557600,
+         'text' => 'L 080 Brandenburger Str. OL Luckenwalde, Kreuz. Dessauer Str. Kanalarbeiten Vollsperrung 18.04.2006-13.05.2006 ',
          'from' => 1145224800,
          'data' => 'userdel	q4 -5036,-34940 -4888,-34952
 ',
@@ -756,11 +756,58 @@ userdel	2 -862,22946 -1254,22853
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'until' => 1146834000,
-         'text' => 'Holtzendorffstr. zwischen Rönnestr. und Gervinusstr. in beiden Richtungen Brückenarbeiten gesperrt bis 05.05.06, 15:00 Uhr ',
-         'from' => 1146701434,
-         'data' => 'userdel	2 3093,10594 3049,10719
+         'source_id' => 'IM_002733',
+         'until' => 1167606000,
+         'text' => 'Weinmeisterstr. (Mitte) in Richtung Alexanderplatz Baustelle, Straße vollständig gesperrt, Einbahnstraßenreglung in Richtung Rosenthaler Str. (bis 31.12.06)',
+         'from' => 1146768809,
+         'data' => 'userdel	1 10331,13397 10528,13243
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1159653600,
+         'text' => 'L 037 Petersdorfer Str. OD Petershagen Kanal- und Straßenbauarbeiten halbseitige Sperrung mit Lichtzeichenanlage; 11.05.2006-30.09.2006 ',
+         'from' => 1147212000,
+         'data' => 'userdel	q4 74092,475 74246,584
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_002743',
+         'until' => undef,
+         'text' => 'Mühlenstr. (Pankow) in Richtung Norden zwischen Florastr und Dolomitenstr. Einbahnstraße in Richtung Süden',
+         'from' => undef,
+         'data' => 'userdel	1 10596,17554 10510,17649 10459,17754
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'LMS_1146113785841',
+         'until' => undef,
+         'text' => 'Reichstagufer (Mitte) zwischen Neustädter Kirchstr. und Friedrichsstr. Gefahr durch Uferunterspühlung, Straße gesperrt.',
+         'from' => undef,
+         'data' => 'userdel	2 9091,12681 9209,12795
+userdel	2 9283,12856 9209,12795
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1147471200,
+         'text' => 'B 158 zw. OL Seefeld, Löhmer Ch. und Bahnübergang Gleis- u. Straßenbauarbeiten Vollsperrung 05.05.2006-12.05.2006 ',
+         'from' => 1146693600,
+         'data' => 'userdel	2 26936,23104 27283,23503
+userdel	2 28323,24341 27608,23776
+userdel	2 27283,23503 27608,23776
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1147471200,
+         'text' => 'L 401 R.-Sorge-/ Bergstr. Bahnübergang Bergstraße Gleisbauarbeiten Zufahrt gesperrt 07.05.2006-12.05.2006 ',
+         'from' => 1146866400,
+         'data' => 'userdel	2 26381,-9962 25700,-9502
 ',
          'type' => 'gesperrt'
        }

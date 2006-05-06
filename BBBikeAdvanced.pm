@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.150 2006/04/21 20:24:30 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.150 2006/04/21 20:24:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2019,6 +2019,7 @@ sub penalty_menu {
 sub _insert_points_and_co ($) {
     my $oper_name = shift;
     my $ret = 0;
+    IncBusy($top);
     eval {
 	require "$FindBin::RealBin/miscsrc/insert_points";
 	my @args = (-operation => $oper_name,
@@ -2047,6 +2048,7 @@ sub _insert_points_and_co ($) {
 	}
     };
     warn $@ if $@;
+    DecBusy($top);
     $ret;
 }
 
@@ -3057,7 +3059,9 @@ sub search_anything {
 		    # in Strassen-Format umwandeln
 		    my @matches;
 		    foreach (@plz_matches) {
-			push @matches, [$_->[&PLZ::LOOK_NAME] . " (".$_->[&PLZ::LOOK_CITYPART].")", [$_->[&PLZ::LOOK_COORD]], "X", []];
+			push @matches, [$_->[&PLZ::LOOK_NAME] . " (".$_->[&PLZ::LOOK_CITYPART] .
+					($_->[&PLZ::LOOK_ZIP] ne "" ? ", $_->[&PLZ::LOOK_ZIP]" : "") .
+					")", [$_->[&PLZ::LOOK_COORD]], "X", []];
 		    }
 		    $found_in{$plz_labels[$i]} = \@matches;
 		}

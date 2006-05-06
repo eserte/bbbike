@@ -161,3 +161,14 @@ a.ms:visited { color:#333333; }
 .unselectedflag {
   padding:4px;
 }
+
+.dottedlink {
+  text-decoration:none;
+  border-bottom: 1px dotted black;
+}
+
+.yellowbox {
+  background-color: #e0e090;
+  border: 1px #d0d040 solid;
+  padding: 2px;
+}

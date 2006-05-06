@@ -41,6 +41,9 @@
         <input id="[% radioid | html %]" style="margin-right:1em;" type="radio" name="[% inputname %]" value="[% val | html %]"
         [%- INCLUDE radio_checked %] /></td>
        <td><label for="[% radioid | html %]">[% IF text %][% text | html_line_break %][% ELSE %][% val | html_line_break %][% END %]</label>
+[% IF helpurl -%]
+        <a class="yellowbox" style="text-decoration:none" target="newstreetform_help" href="[% helpurl | uri %]">?</a>
+[% END -%]
 [% IF entryname %]<input name="[% entryname %]_1" [% INCLUDE text_default inputname=entryname _ "_1" %] />[% END %]
        </td>
       </tr>
@@ -53,7 +56,7 @@
  <title>Neue Straße für BBBike</title>
  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
  <link rev="made" href="mailto:slaven@rezic.de" />
- <link rel="stylesheet" type="text/css" href="bbbike.css" />
+ <link rel="stylesheet" type="text/css" href="bbbike.css?v=1.22" />
  <script>
 function check() {
   if (!check_strname()) return false;
@@ -192,8 +195,8 @@ function init() {
 [% INCLUDE colhead text="Beschreibung:" %]
 [% INCLUDE radiocell cat="Q" type="desc" val="Asphalt" %]
 [% INCLUDE radiocell cat="Q" type="desc" val="Beton" %]
-[% INCLUDE radiocell cat="Q" type="desc" val="Kopfsteinpflaster" %]
-[% INCLUDE radiocell cat="Q" type="desc" val="fester Sandweg" %]
+[% INCLUDE radiocell cat="Q" type="desc" val="Kopfsteinpflaster" helpurl="http://de.wikipedia.org/wiki/Kopfsteinpflaster" %]
+[% INCLUDE radiocell cat="Q" type="desc" val="fester Sandweg" helpurl="http://de.wikipedia.org/wiki/Wassergebundene_Decke" %]
 [% INCLUDE radiocell cat="Q" type="desc" val="loser Sandweg" %]
 [% INCLUDE radiocell cat="Q" type="desc" val="Verbundsteinpflaster" %]
       <tr>
@@ -225,7 +228,7 @@ function init() {
 [% INCLUDE colhead text="Grund:" %]
 [% INCLUDE radiocell cat="qq" type="desc" val="keine Einschränkung" %]
 [% INCLUDE radiocell cat="qq" type="desc" val="viele Fußgänger" %]
-[% INCLUDE radiocell cat="qq" type="desc" val="Fußgängerzone" %]
+[% INCLUDE radiocell cat="qq" type="desc" val="Fußgängerzone" helpurl="http://de.wikipedia.org/wiki/Fußgängerzone" %]
 [% INCLUDE radiocell cat="qq" type="desc" val="kurvenreich" %]
       <tr>
        <td>
@@ -248,11 +251,11 @@ function init() {
     <td>
      <table cellpadding="0" cellspacing="0">
 [% INCLUDE radiocell cat="RW" type="cat" val="RW0" text="keine" %]
-[% INCLUDE radiocell cat="RW" type="cat" val="RW1" text="Radweg" %]
-[% INCLUDE radiocell cat="RW" type="cat" val="RW4" text="Radstreifen" %]
-[% INCLUDE radiocell cat="RW" type="cat" val="RW7" text="Fahrradstraße" %]
-[% INCLUDE radiocell cat="RW" type="cat" val="RW5" text="Busspur" %]
-[% INCLUDE radiocell cat="RW" type="cat" val="RW6" text="Spielstraße" %]
+[% INCLUDE radiocell cat="RW" type="cat" val="RW1" text="Radweg" helpurl="http://de.wikipedia.org/wiki/Radweg" %]
+[% INCLUDE radiocell cat="RW" type="cat" val="RW4" text="Radstreifen" helpurl="http://www.adfc-bremen.de/front_content.php?idcat=105" %]
+[% INCLUDE radiocell cat="RW" type="cat" val="RW7" text="Fahrradstraße" helpurl="http://de.wikipedia.org/wiki/Fahrradstraße" %]
+[% INCLUDE radiocell cat="RW" type="cat" val="RW5" text="Busspur" helpurl="http://de.wikipedia.org/wiki/Busspur" %]
+[% INCLUDE radiocell cat="RW" type="cat" val="RW6" text="Spielstraße" helpurl="http://de.wikipedia.org/wiki/Spielstraße" %]
 [% INCLUDE radiocell cat="RW" type="cat" val="NN" text="Kein Autoverkehr" %]
 [%# INCLUDE radiocell cat="RW" type="cat" val="RW30" text="Tempo-30-Zone" %]
       <tr>
@@ -273,7 +276,7 @@ function init() {
      <table cellpadding="0" cellspacing="0">
 [% INCLUDE radiocell cat="sperre" type="cat" val="" text="offen für Radfahrer" %]
 [% INCLUDE radiocell cat="sperre" type="cat" val="1" text="Einbahnstraße, offen in Richtung" entryname="sperre_oneway" %]
-[% INCLUDE radiocell cat="sperre" type="cat" val="BNP" text="Drängelgitter/Schranke an der Kreuzung" entryname="sperre_BNP" %]
+[% INCLUDE radiocell cat="sperre" type="cat" val="BNP" text="Drängelgitter/Schranke an der Kreuzung" entryname="sperre_BNP" helpurl="http://www.adfc-bergstrasse.de/radverkehrsplanung/umlaufsperren.htm" %]
 [% INCLUDE radiocell cat="sperre" type="cat" val="0" text="Treppe, Rad muss getragen werden" entryname="sperre_carry" %]
 [% INCLUDE radiocell cat="sperre" type="cat" val="2" text="Straße vollkommen gesperrt für Radfahrer" %]
      </table>
