@@ -715,15 +715,7 @@ userdel	q4 43584,20871 44596,21287
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_002644',
-         'until' => 1146866400,
-         'text' => 'Prenzlauer Promenade (Prenzlauer Berg) im Kreuzungsbereich Ostseestr. und Wisbyer Str Baustelle, in Richtung stadteinwärts Straße gesperrt (Radfahrer können möglicherweise den Gehweg benutzen) (bis 05.05.06)',
-         'from' => 1145430358,
-         'data' => 'userdel	q4; 12097,16263 12091,16209
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_002668',
          'until' => 1150495200,
@@ -808,6 +800,27 @@ userdel	2 27283,23503 27608,23776
          'text' => 'L 401 R.-Sorge-/ Bergstr. Bahnübergang Bergstraße Gleisbauarbeiten Zufahrt gesperrt 07.05.2006-12.05.2006 ',
          'from' => 1146866400,
          'data' => 'userdel	2 26381,-9962 25700,-9502
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1147086000,
+         'text' => 'Wilhelmstraße Richtung Pichelsdorf zwischen Einmündung Pichelsdorfer Straße und Einmündung Gatower Straße Baustelle, gesperrt bis 08.05.2006 13:00 Uhr ',
+         'from' => 1146897090,
+         'data' => 'userdel	1 -3791,13357 -3887,13057 -3937,12971 -3974,12914 -4028,12831 -4081,12765 -4150,12689 -4223,12631 -4300,12571 -4335,12465
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1147039140,
+         'text' => ' Sonnenallee Zwischen Kreuzung Wildenbruchstraße und Pannierstraße in beiden Richtungen gesperrt, Veranstaltung, Dauer: 06.05.2006 06:00 Uhr bis 07.05.2006 23:59 Uhr ',
+         'from' => 1146801600,
+         'data' => 'userdel	2 12438,8859 12320,8927
+userdel	2 12438,8859 12483,8834
+userdel	2 12925,8494 12772,8612
+userdel	2 12483,8834 12630,8722
+userdel	2 12742,8635 12630,8722
+userdel	2 12242,8972 12320,8927
 ',
          'type' => 'gesperrt'
        }

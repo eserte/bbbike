@@ -4363,4 +4363,25 @@ EOF
 userdel	2 26381,-9962 25700,-9502
 EOF
      },
+     { from  => 1146897090, # 2006-05-06 08:31
+       until => 1147086000, # 2006-05-08 13:00
+       text  => 'Wilhelmstraße Richtung Pichelsdorf zwischen Einmündung Pichelsdorfer Straße und Einmündung Gatower Straße Baustelle, gesperrt bis 08.05.2006 13:00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	1 -3791,13357 -3887,13057 -3937,12971 -3974,12914 -4028,12831 -4081,12765 -4150,12689 -4223,12631 -4300,12571 -4335,12465
+EOF
+     },
+     { from  => 1146801600, # 2006-05-05 06:00
+       until => 1147039140, # 2006-05-07 23:59
+       text  => ' Sonnenallee Zwischen Kreuzung Wildenbruchstraße und Pannierstraße in beiden Richtungen gesperrt, Veranstaltung, Dauer: 06.05.2006 06:00 Uhr bis 07.05.2006 23:59 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 12438,8859 12320,8927
+userdel	2 12438,8859 12483,8834
+userdel	2 12925,8494 12772,8612
+userdel	2 12483,8834 12630,8722
+userdel	2 12742,8635 12630,8722
+userdel	2 12242,8972 12320,8927
+EOF
+     },
     );

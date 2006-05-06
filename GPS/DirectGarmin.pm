@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.27 2006/04/23 18:21:33 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.27 2006/04/23 18:21:33 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -157,8 +157,7 @@ sub dump {
     %ret;
 }
 
-# XXX del $old_route_info_number
-use vars qw($old_route_info_name $old_route_info_wpt_suffix $old_route_info_wpt_suffix_existing);
+use vars qw($old_route_info_name $old_route_info_number $old_route_info_wpt_suffix $old_route_info_wpt_suffix_existing);
 $old_route_info_wpt_suffix_existing=1;
 
 sub tk_interface {
@@ -167,7 +166,7 @@ sub tk_interface {
     my $top = $args{-top} or die "-top arg is missing";
     my $gps_route_info = $args{-gpsrouteinfo} or die "-gpsrouteinfo arg is missing";
     $gps_route_info->{Name} ||= $old_route_info_name if defined $old_route_info_name;
-#XXX del    $gps_route_info->{Number} ||= $old_route_info_number if defined $old_route_info_number;
+    $gps_route_info->{Number} ||= $old_route_info_number if defined $old_route_info_number;
     $gps_route_info->{WptSuffix} ||= $old_route_info_wpt_suffix if defined $old_route_info_wpt_suffix;
     $gps_route_info->{WptSuffixExisting} ||= $old_route_info_wpt_suffix_existing if defined $old_route_info_wpt_suffix_existing;
     my $t = $top->Toplevel(-title => "GPS");
@@ -178,19 +177,18 @@ sub tk_interface {
 			       -vcmd => sub { length $_[0] <= 13 }),
 	     -sticky => "w");
     $e->focus;
-## Can be deleted, as the routenumber is ignored XXX
-#    my $NumEntry = 'Entry';
-#   my @NumEntryArgs = ();
-#  if (eval { require Tk::NumEntry }) {
-#	$NumEntry = "NumEntry";
-#	@NumEntryArgs = (-minvalue => 1, -maxvalue => 20);
-#    }
-#    Tk::grid($t->Label(-text => M"Routennummer"),
-#	     $t->$NumEntry(-textvariable => \$gps_route_info->{Number},
-#			   @NumEntryArgs,
-#			   -validate => 'all',
-#			   -vcmd => sub { $_[0] =~ /^\d*$/ }),
-#	     -sticky => "w");
+    my $NumEntry = 'Entry';
+    my @NumEntryArgs = ();
+    if (eval { require Tk::NumEntry }) {
+	$NumEntry = "NumEntry";
+	@NumEntryArgs = (-minvalue => 1, -maxvalue => 20);
+    }
+    Tk::grid($t->Label(-text => M"Routennummer"),
+	     $t->$NumEntry(-textvariable => \$gps_route_info->{Number},
+			   @NumEntryArgs,
+			   -validate => 'all',
+			   -vcmd => sub { $_[0] =~ /^\d*$/ }),
+	     -sticky => "w");
     Tk::grid($t->Label(-text => M"Waypoint-Suffix"),
 	     $t->Entry(-textvariable => \$gps_route_info->{WptSuffix}),
 	     -sticky => "w");
@@ -228,7 +226,7 @@ sub tk_interface {
 
     if ($weiter == 1) {
 	$old_route_info_name = $gps_route_info->{Name};
-#XXX del	$old_route_info_number = $gps_route_info->{Number};
+	$old_route_info_number = $gps_route_info->{Number};
 	$old_route_info_wpt_suffix = $gps_route_info->{WptSuffix};
 	$old_route_info_wpt_suffix_existing = $gps_route_info->{WptSuffixExisting};
     }
