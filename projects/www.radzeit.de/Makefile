@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.82 2006/04/17 21:29:57 eserte Exp $
+# $Id: Makefile,v 1.83 2006/05/07 10:33:58 eserte Exp $
 #
 
 # Targets:
@@ -30,7 +30,6 @@ CURDIR=			${.CURDIR}
 LOCAL_URL?=		http://radzeit.herceg.de
 LOCAL_CGI_URL?=		${LOCAL_URL}/cgi-bin
 LOCAL_HTML_URL?=	${LOCAL_URL}/BBBike
-#XXXDATA_DIR=		data_corrected
 DATA_DIR=		data
 TEMP_BLOCKINGS_DIR=	data/temp_blockings
 BBBIKE_RADZEIT_SSH_HOST?=	${BBBIKE_RADZEIT_HOST}
@@ -83,7 +82,7 @@ DEPLOY_LOCAL_DATA_TARGETS=	prepare-bbbike-data \
 
 SSH_PROG_AND_ARGS?=	ssh -2 -p 5022
 RSYNC_PROG?=	rsync
-RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --exclude-from .rsync.exclude
+RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --delay-updates --exclude-from .rsync.exclude
 RSYNC_ARGS_MS=	${RSYNC_ARGS:S/.rsync.exclude/\/tmp\/mapserver.rsync.exclude/}
 RSYNC_DEST?=	${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_SSH_HOST}:${BBBIKE_RADZEIT_APACHE_DIR}
 RSYNC_SRCDEST?=	. ${RSYNC_DEST}

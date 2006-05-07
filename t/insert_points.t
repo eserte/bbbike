@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points.t,v 1.9 2005/04/05 22:53:34 eserte Exp $
+# $Id: insert_points.t,v 1.10 2006/05/07 11:49:39 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -32,7 +32,7 @@ plan tests => 5;
 
 my($logfh,$logfile) = tempfile(SUFFIX => ".log");
 
-my $dudenstr      = "9222,8787";
+my $dudenstr      = "9222,8787"; # ecke Mehringdamm
 my $dudenstr_orig = $dudenstr; # "8796,8817";
 
 BEGIN { $^W = 0 }
@@ -55,6 +55,7 @@ SKIP: {
 	chomp @res;
 	is(join(" ", sort @res),
 	   join(" ", qw(../misc/ampelschaltung-orig.txt
+			/home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
 			ampeln-orig
 			ampelschaltung-orig
 			hoehe-orig
@@ -74,6 +75,7 @@ SKIP: {
 	chomp @res;
 	is(join(" ", sort @res),
 	   join(" ", qw(../misc/ampelschaltung.txt
+			/home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
 			ampeln
 			ampelschaltung
 			hoehe
@@ -92,6 +94,7 @@ SKIP: {
 	chomp @res;
 	is(join(" ", sort @res),
 	   join(" ", qw(../misc/ampelschaltung-orig.txt
+			/home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
 			ampeln-orig
 			ampelschaltung-orig
 			hoehe-orig
@@ -111,6 +114,7 @@ SKIP: {
 	chomp @res;
 	is(join(" ", sort @res),
 	   join(" ", qw(../misc/ampelschaltung.txt
+			/home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
 			ampeln
 			ampelschaltung
 			hoehe

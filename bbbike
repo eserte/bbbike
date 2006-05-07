@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.237 2006/05/01 20:37:34 eserte Exp $
+# $Id: bbbike,v 3.239 2006/05/07 21:11:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.237 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.239 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -5001,7 +5001,8 @@ sub define_item_attribs {
 	$category_font{$_} = $category_font{'P'};
     }
 
-    $pp_color = '#008000';
+    #$pp_color = '#008000';
+    $pp_color = '#800000'; # better constrast with rbahn, enough contrast with Bundesstraße, but worse with fragezeichen
 
     for my $nr (0, 1, 2) {
 	$category_color{'W' . $nr}      = $category_color{'W'};
@@ -8535,6 +8536,8 @@ sub plotstr {
 	    $str = _get_landstr_obj();
 	} elsif ($abk eq 'comm') {
 	    $str = _get_comments_obj();
+	} elsif ($abk eq 'fz') {
+	    $str = _get_fragezeichen_obj();
 	} else {
 	    eval { $str = Strassen->new($filename); };
 	    if ($@ && $filename_maybe) {
@@ -9461,6 +9464,22 @@ sub _get_comments_obj {
 	}; warn $@ if $@;
     }
     MultiStrassen->new(@objs);
+}
+
+# Gibt ein Fragezeichen-Objekt zurück.
+### AutoLoad Sub
+sub _get_fragezeichen_obj {
+    my @files;
+    push @files, get_strassen_file("fragezeichen");
+    my $xxx_file = catfile($FindBin::RealBin, "tmp", "XXX.bbd");
+    if (0 && -r $xxx_file) { # XXX soll ich oder soll ich nicht XXX.bbd mit einbinden?
+	push @files, $xxx_file;
+    }
+    if (@files > 1) {
+	MultiStrassen->new(@files);
+    } else {
+	Strassen->new($files[0]);
+    }
 }
 
 # Zeichnet Punkte auf dem Canvas.
@@ -13969,6 +13988,20 @@ sub show_overview_clean_and_populate {
     show_overview_populate($overview_top);
 }
 
+sub overview_draw_route {
+    if (Tk::Exists($overview_canvas)) {
+	my $transpose = $show_overview_mode eq 'brb' ? \&transpose_small : \&transpose_medium;
+	$overview_canvas->delete("route");
+	$overview_canvas->createLine((map { $transpose->(@$_) } @realcoords), -tags => "route");
+    }
+}
+
+sub overview_del_route {
+    if (Tk::Exists($overview_canvas)) {
+	$overview_canvas->delete("route");
+    }
+}
+
 sub show_overview_populate {
     my $overview_top = shift;
     my $withdraw_sub = sub { $overview_top->withdraw;
@@ -13981,6 +14014,21 @@ sub show_overview_populate {
 	 -yscrollincrement => 15,
 	 -bg => $map_bg,
 	);
+
+    Hooks::get_hooks("new_route")->add
+	    (sub {
+		 overview_draw_route();
+	     }, "bbbike-overviewcanvas");
+    Hooks::get_hooks("del_route")->add
+	    (sub {
+		 overview_del_route();
+	     }, "bbbike-overviewcanvas");
+    $overview_canvas->OnDestroy
+	(sub {
+	     for my $hook ("new_route", "del_route") {
+		 Hooks::get_hooks($hook)->del("bbbike-overviewcanvas");
+	     }
+	 });
 
     my($overview_width, $overview_height);
     if ($coord_system eq 'standard') {
@@ -14197,6 +14245,8 @@ sub show_overview_populate {
 		);
 	}
     }
+
+    overview_draw_route();
 
     $progress->InitGroup;
     for my $abk (qw(g gD)) {
@@ -18243,6 +18293,8 @@ sub get_any_strassen_obj {
 	    $object = _get_landstr_obj();
 	} elsif ($type eq 'comm') {
 	    $object = _get_comments_obj();
+	} elsif ($type eq 'fz') {
+	    $object = _get_fragezeichen_obj();
 	} else {
 	    $object = get_strassen_obj($str_file{$type});
 	}

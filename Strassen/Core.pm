@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.69 2006/02/06 21:59:48 eserte Exp $
+# $Id: Core.pm,v 1.69 2006/02/06 21:59:48 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -192,7 +192,10 @@ sub open_file {
     if ($self->{IsGzipped}) {
 	die "Can't execute zcat $file" if !open(FILE, "gzip -dc $file |");
     } else {
-	die "Can't open $file" if !open(FILE, $file);
+	if (!open(FILE, $file)) {
+	    require Carp;
+	    Carp::confess("Can't open $file");
+	}
     }
     warn "Read Strassen file $file...\n" if ($VERBOSE && $VERBOSE > 1);
     $self->{Modtime} = (stat($file))[STAT_MODTIME];

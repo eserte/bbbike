@@ -155,7 +155,7 @@ sub do_google_search {
     my $google_api_key_file = "$ENV{HOME}/.googleapikey";
     if (open(APIKEY, $google_api_key_file)) {
 	$my_api_key = <APIKEY>;
-	s{[\r\n\s+]}{}g;
+	$my_api_key =~ s{[\r\n\s+]}{}g;
 	close APIKEY;
 	warn "Loaded Google API key from $google_api_key_file...\n" if $DEBUG;
     }

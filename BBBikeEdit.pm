@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.96 2006/04/21 20:24:21 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.97 2006/05/07 21:12:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3130,6 +3130,7 @@ sub edit_gps_track {
     my $basename = shift;
     my $file = find_gpsman_file($basename);
     if (-r $file) {
+	local $main::lazy_plot = 0; # somehow does not work
 	main::IncBusy($main::top);
 	eval {
 	    if ($main::edit_mode) {

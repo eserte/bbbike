@@ -2450,11 +2450,6 @@ images of 3.6.4, but the fallback safety of 3.6.6.
 Regularly check the CVS version/latest release of mapserver. Maybe it
 will run my mapfile again...
 
-=item *
-
-Use the --delay-updates option of rsync for deploying, or even the
-atomic-rsync script.
-
 =back
 
 =head1 Documentation
