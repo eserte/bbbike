@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.99 2006/05/01 20:42:18 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.100 2006/05/09 20:39:34 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -52,7 +52,7 @@ Knoten Märkische Allee	1 19918,11891 19988,11821 20115,11730
 Knoten Märkische Allee	1 20115,11730 20014,11651
 Knoten Märkische Allee	1 20014,11651 20018,11698 19985,11739
 Gensinger Str./Alt-Friedrichsfelde	1 19005,11796 19144,11859 19283,11785
-Altstadt Köpenick	1 22383,4703 22377,4836
+Altstadt Köpenick	1 22383,4703 22381,4752 22377,4836
 Alt-Köpenick	1 22138,4661 22196,4847
 Wuhletalstr.	1 20691,17463 20675,17515 20754,17672 20832,17824 20878,17842
 Knoten Märkische/Landsberger Allee	1 19175,14968 19280,15014 19496,15113 19567,15134 19694,15149 19735,15155
@@ -296,6 +296,12 @@ Waldhüterpfad	1 510,4202 377,4442 301,4643
 Amalienpark	1 10905,18671 10950,18499 10860,18650
 Im Amseltal	1 1962,25214 1983,25097
 Gundelfinger Str.	1 18697,9153 18653,8922 18609,8717
+Dorotheenstr.	1 18653,8922 18778,8895
+Fehmarner Str. 	1 6710,14776 6528,15000
+Alte Späthbrücke	2 14457,5097 14540,5140
+Rutherfordstr.: nicht permanent geöffnet	2 19071,2746 19207,2592
+Katzengraben	1 22445,4758 22449,4712
+Karlstr.	1 22554,4380 22460,4125
 Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12685,-870 -12712,-734 -12730,-627
 Hans-Thoma-Str.	1 -12190,-775 -12262,-612 -12306,-496
@@ -356,7 +362,8 @@ Ahornallee	1s 1589,11483 1574,11379
 Lindenallee	1s 1429,11523 1403,11428
 Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
 Billerbecker Weg	1s 1230,18698 1229,18750
-Alt-Tegel	1s 1529,20131 1668,20156 1753,20191 1907,20265
+Alt-Tegel	1s 1668,20156 1753,20191 1907,20265
+Alt-Tegel	1s 1668,20156 1529,20131 1543,20060 1668,20156
 Am Treptower Park	1s 14529,9141 14390,9291 14242,9448 14179,9515 14089,9610
 Groebenufer	1s 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26243,-12300 26028,-12312
@@ -367,6 +374,8 @@ Stephanstr.	1s 6526,4475 6377,4490
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
 Björnsonstr.	1s 10229,16653 10215,16527
+Rummelsburger Str. -> Wattstr.: wegen Überführung nicht überquerbar	3 17839,7365 17686,7589 17633,7286
+Wattstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3 17633,7286 17686,7589 17527,7812
 Detmolder Str. -> Aachener Str.: Mittelstreifen nicht passierbar	3 4572,7936 4659,7982 4609,8013
 Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3 4609,8013 4659,7982 4793,7992
 Rhinstr. -> Kolonie Friedrichsfelde Nord: Straßenbahntrasse	3 18215,12132 18216,12262 18180,12262
@@ -574,8 +583,8 @@ Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3 20834,17752 20717,1751
 Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3 20878,17842 20834,17752 20912,17678
 Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3 20912,17678 20834,17752 20717,17516
 Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3 20834,17752 20878,17842 20832,17824
-Falkenberger Chaussee -> Grünanlage Egon-Erwin-Kisch-Str.: Linksabbiegen wegen Straßenbahn nicht möglich	3 17412,17800 17703,17990 17678,18171
 Grünanlage Egon-Erwin-Kisch-Str. -> Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3 17678,18171 17703,17990 17843,18078
+Falkenberger Chaussee -> Grünanlage Egon-Erwin-Kisch-Str.: Linksabbiegen wegen Straßenbahn nicht möglich	3 17400,17790 17703,17990 17678,18171
 Warschauer Pl. -> Stralauer Allee: unbequemes Abbiegen	3 13471,10983 13389,10808 13483,10769
 Stralauer Allee -> Naglerstr.: unbequemes Abbiegen	3 13389,10808 13483,10769 13575,10963
 Naglerstr. -> Stralauer Allee: unbequemes Abbiegen	3 13575,10963 13483,10769 13605,10719
@@ -646,6 +655,8 @@ Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3 6815,8691 6912,8617 
 Hauptstr. -> Parkweg Heinrich-Lassen-Park: Mittelstreifen	3 6765,8480 6912,8617 6815,8691
 Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3 18628,10177 18561,10341 18482,10306
 Otto-Schmirgal-Str. -> Am Tierpark: Straßenbahntrasse	3 18482,10306 18561,10341 18446,10620
+tragen (Treppe)	0:30:0 14390,5443
+tragen (Treppe)	0:30:90 14335,5425
 tragen (ca. 35 Stufen)	0:30:-108 18180,12262
 tragen (S-Bhf. Marzahn)	0:30:-195 19571,15417
 tragen (S-Bhf. Marzahn)	0:30:-155 19638,15431
@@ -722,6 +733,7 @@ Schranke (Kopfstr.)	BNP:5:-101 12537,7899
 Drängelgitter (Parkweg)	BNP:5:37 14562,10079
 Drängelgitter (Parkweg)	BNP:5:41 14600,10128
 Drängelgitter (Parkweg)	BNP:5:37 14628,10160
+Drängelgitter (Parkweg)	BNP:5:34 14452,9919
 Drängelgitter (Görlitzer Park)	BNP:5:13 12686,10045
 Drängelgitter (Görlitzer Park)	BNP:5:22 12770,10210
 Drängelgitter (Görlitzer Park)	BNP:5:-153 12904,10141
@@ -770,12 +782,10 @@ Spreeufer vor dem Monbijoupark: gesperrt wegen Bauarbeiten	2:inwork 10100,12876 
 Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14903,10403 15059,10289
 Voltairestr. (Arbeiten an "Alexa", voraussichtlich bis 2006-05-31)	2:inwork 11323,12484 11209,12430
 Elsenstr.	1:inwork 13760,9188 13657,9063 13504,8882
-Pfarrstr.	1:inwork 15339,11123 15267,10865
-Ernst-Ruska-Ufer: noch in Bau	2:inwork 19103,2442 18927,2431
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10173,12492
 Sperrung vor der amerikanischen Botschaft	2 9141,12320 9126,12413 9112,12499 9100,12627
 Alte Naumannstr.: komplett gesperrt, Bauarbeiten am neuen Vorplatz vom Bahnhof Südkreuz	2 7717,7759 7718,7641 7717,7564
-Markgrafenstraße  Richtung Französische Straße zwischen Behrenstraße und Französische Straße, Bauarbeiten als Einbahnstraße eingerichtet, Dauer:  bis 01.07.2006	1:inwork 9636,12126 9626,12227
+Markgrafenstraße Richtung Französische Straße zwischen Behrenstraße und Französische Straße, Bauarbeiten als Einbahnstraße eingerichtet, Dauer:  bis 01.07.2006	1:inwork 9636,12126 9626,12227
 Fußgängerbrücke über den Sachesendamm gesperrt, südliche Rampe ist aber befahrbar	2:inwork 7718,7641 7772,7610
 Brücke über den Torfgraben/Phöben gesperrt, Neubau voraussichtlich bis 2006-12-31	2:inwork -25539,2641 -25453,2418
 Behlertstr.	1 -12362,-370 -12607,-434 -12813,-480 -12868,-493

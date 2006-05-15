@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.121 2006/02/12 23:09:28 eserte Exp $
+# $Id: Makefile.PL,v 1.122 2006/05/09 20:40:20 eserte Exp $
 
 use 5.005;
 
@@ -97,7 +97,7 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
   [qw/List::Permutor	0	all	0	base/,
    'Für das Problem des Handlungsreisenden'],
   [qw/PDF::Create	0.06	all	2	base/,
-   'Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download)'],
+   'Erzeugung der Route als PDF-Dokument --- die neueste Version ist nur auf sourceforge erhältlich! (http://prdownloads.sourceforge.net/perl-pdf/perl-pdf-0.06.1b.tar.gz?download oder direkt: http://heanet.dl.sourceforge.net/sourceforge/perl-pdf/perl-pdf-0.06.1b.tar.gz)'],
   [qw/Font::Metrics::Helvetica	0	all	0	base/,
    'Für die Reparatur der Zeichenbreitentabellen in PDF::Create'],
   #in dist: [qw/BikePower	0	all	0	base/],

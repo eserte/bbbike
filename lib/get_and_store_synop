@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: get_and_store_synop,v 1.12 2006/03/05 10:10:21 eserte Exp $
+# $Id: get_and_store_synop,v 1.13 2006/05/10 21:55:24 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -27,7 +27,25 @@
 
 # Andere Quelle:
 # http://prognose.met.fu-berlin.de/synops.php
+#
+# Neues Format:
+#
+# 10. 5.2006 um 20 Uhr 50 (UTC)
 # 
+#  Station Berlin Tegel (10382)
+# 
+#  10382 32982 00102 10151 20028 30122 40166 51011
+#    333 55300=  
+# 
+# 
+# 
+#  Station Berlin Tempelhof (10384)
+# 
+#  10384 32984 00104 10146 20018 30110 40169 51012
+#    333 55300=  
+#
+# Altes Format (bis ca. 2005-05-05)
+#
 # ZCZC SHDL30 EDZW 142300 SXSX 14230 
 # 
 #  Station Berlin Tegel (10382)
@@ -253,6 +271,33 @@ sub get_last_from_file {
 }
 
 sub get_synop_from_fu {
+    my $ret = {};
+    my %synops;
+    #my $html = `GET file:/tmp/synops.php.html`;
+    my $html = `GET http://prognose.met.fu-berlin.de/synops.php`;
+    my $wmo_header;
+    my $real_time;
+    if ($html =~ m{(\d+)\.\s*(\d+)\.(\d{4})\s+um\s+(\d+)\s+Uhr\s+(\d+)\s+\(UTC\)}) {
+	my($d,$m,$y, $H,$M,$S) = ($1,$2,$3,$4,$5,0);
+	$real_time = sprintf "%04d-%02d-%02d %02d:%02d", $y,$m,$d,$H,$M;
+	$wmo_header = "#dummy";
+    } else {
+	die "Cannot parse wmo header from html <$html>";
+    }
+    while($html =~ m{<font.*?>\s*((\d{5})\s.*?)</font>}gs) {
+	my($synop, $wmo_code) = ($1, $2);
+	$synops{$wmo_code} = $synop;
+    }
+
+    return +{
+	     real_time => $real_time,
+	     synops    => \%synops,
+	     html      => $html,
+	     wmo_header => $wmo_header,
+	    };
+}
+
+sub get_synop_from_fu_old {
     my $ret = {};
     my %synops;
     #my $html = `GET file:/tmp/synops.php.html`;

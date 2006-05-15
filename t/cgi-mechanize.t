@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.28 2006/03/11 14:59:16 eserte Exp eserte $
+# $Id: cgi-mechanize.t,v 1.29 2006/05/08 21:29:17 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -525,7 +525,7 @@ sub get_ct {
     if ($] < 5.008008) {
 	$agent->content;
     } else {
-	get_ct($agent);
+	$agent->response->decoded_content;
     }
 }
 

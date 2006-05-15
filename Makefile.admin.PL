@@ -224,8 +224,11 @@ MANIFEST.withcvs:	MANIFEST MANIFEST.addtocvs
 full-cvs-dist:	MANIFEST.withcvs
 	perl -MExtUtils::Manifest=manicopy,maniread -e 'manicopy(maniread("MANIFEST.withcvs"), "/tmp/BBBike-CVS", "ln")'
 
+# XXX change to use rsync
 nightly-tarball-from-sourceforge:
-	DATE=`date +%Y%m%d`; wget -O $(HOME)/trash/bbbike-cvsroot.$$DATE.tar.bz2 http://cvs.sourceforge.net/cvstarballs/bbbike-cvsroot.tar.bz2
+	@echo "No tarballs anymore, change to rsync"
+	false
+#	DATE=`date +%Y%m%d`; wget -O $(HOME)/trash/bbbike-cvsroot.$$DATE.tar.bz2 http://cvs.sourceforge.net/cvstarballs/bbbike-cvsroot.tar.bz2
 
 # DISTRIBUTIONS ##########################################################
 

@@ -368,11 +368,12 @@ userdel	2 7198,15656 7288,15579
 userdel	2 6790,16018 6914,15908
 EOF
      },
-     { from  => 1084485600, # 2004-05-14 00:00
-       until => 1084741200, # 2004-05-16 23:00
-       file  => 'reichsstr.bbd',
-       text  => 'Reichsstr. (Charlottenburg) in beiden Richtungen, zwischen Theodor-Heuss-Platz und Steubenplatz Veranstaltung, Straße vollständig gesperrt (bis 16.05. 23 Uhr) Reichsstraßenfest',
+     { from  => 1147522145, # 2006-05-13 14:09
+       until => 1147651200, # 2006-05-15 02:00
+       text  => 'Reichsstraße (Charlottenburg) in beiden Richtungen zwischen Theodor-Heuss-Platz und Steubenplatz Veranstaltung, Straße vollständig gesperrt (bis 15.05.2006 02:00 Uhr)',
        type  => 'gesperrt',
+       source_id => 'IM_002775',
+       file  => 'reichsstr.bbd',
      },
      { from  => 1084485600, # 2004-05-14 00:00
        until => 1084741200, # 2004-05-16 23:00
@@ -737,7 +738,7 @@ EOF
        text  => 'Dauer: 01.09.2004 07:00 Uhr bis 03.09.2004 20:00 Uhr. Rudower Chaussee, gesperrt von Agastraße bis Großberliner Damm in Richtung Treptow',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 19732,3340 19581,3184 19495,3110
+userdel	1 19732,3340 19581,3184 19501,3101
 EOF
      },
      { from  => 1094083200, # 2004-09-02 02:00
@@ -1320,7 +1321,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 15573,4122 15608,4175
-userdel	2 15669,4266 15608,4175
+userdel	2 15669,4266 15640,4222 15608,4175
 EOF
      },
      { from  => 1102712612, # 2004-12-10 22:03
@@ -3665,8 +3666,8 @@ userdel	2 9241,1073 9024,906
 EOF
      },
      { from  => 1140303600, # 2006-02-19 00:00
-       until => 1148076000, # 2006-05-20 00:00
-       text  => 'B 246 Trebbin-Beelitz OD Löwendorf, zw. Ahrensdorfer Str. u. Schillerstr. Straßen- und Kanalbau Vollsperrung 20.02.2006-19.05.2006 ',
+       until => 1152309600, # 2006-07-08 00:00
+       text  => 'B 246 Trebbin-Beelitz OD Löwendorf, zw. Ahrensdorfer Str. u. Schillerstr. Straßen- und Kanalbau Vollsperrung 20.02.2006-07.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -2687,-21261 -2815,-20920
@@ -3945,8 +3946,8 @@ userdel	q4 33787,63026 33254,63446
 EOF
      },
      { from  => 1144792800, # 2006-04-12 00:00
-       until => 1157061600, # 2006-09-01 00:00
-       text  => 'L 745 Motzen- Gallun zw. OA Motzen und OE Gallun Straßenbau Vollsperrung 13.04.2006-31.08.2006 ',
+       until => 1147298400, # 2006-05-11 00:00
+       text  => 'L 745 Motzen- Gallun zw. OA Motzen und OE Gallun Straßenbau Vollsperrung 13.04.2006-10.05.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 22476,-19219 22338,-19081
@@ -4318,16 +4319,16 @@ EOF
 userdel	1 10331,13397 10528,13243
 EOF
      },
-     { from  => 1147212000, # 2006-05-10 00:00
+     { from  => 1147557600, # 2006-05-14 00:00
        until => 1159653600, # 2006-10-01 00:00
-       text  => 'L 037 Petersdorfer Str. OD Petershagen Kanal- und Straßenbauarbeiten halbseitige Sperrung mit Lichtzeichenanlage; 11.05.2006-30.09.2006 ',
+       text  => 'L 037 Petersdorfer Str. OD Petershagen Kanal- und Straßenbauarbeiten Vollsperrung 15.05.2006-30.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 74092,475 74246,584
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1147121258, # XXX
        text  => 'Mühlenstr. (Pankow) in Richtung Norden zwischen Florastr und Dolomitenstr. Einbahnstraße in Richtung Süden',
        type  => 'gesperrt',
        source_id => 'IM_002743',
@@ -4336,7 +4337,7 @@ userdel	1 10596,17554 10510,17649 10459,17754
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1147067585, # XXX
        text  => 'Reichstagufer (Mitte) zwischen Neustädter Kirchstr. und Friedrichsstr. Gefahr durch Uferunterspühlung, Straße gesperrt.',
        type  => 'gesperrt',
        source_id => 'LMS_1146113785841',
@@ -4382,6 +4383,56 @@ userdel	2 12925,8494 12772,8612
 userdel	2 12483,8834 12630,8722
 userdel	2 12742,8635 12630,8722
 userdel	2 12242,8972 12320,8927
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Riemenschneiderweg zwischen Vorarlberger Damm und Grazer Platz, Baustelle, in beiden Richtungen gesperrt.',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 6802,6816 6773,7116
+EOF
+     },
+     { from  => 1147816800, # 2006-05-17 00:00
+       until => 1148335200, # 2006-05-23 00:00
+       text  => 'L 030 Friedrichstr. OL Erkner, zw. fürstenwalder Str. u. Beuststr. 14. Heimatfest Vollsperrung 18.05.2006-22.05.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 34443,1951 34250,2546
+EOF
+     },
+     { from  => 1147212000, # 2006-05-10 00:00
+       until => 1147471200, # 2006-05-13 00:00
+       text  => 'K 6503 KG Lubowsee-L211 nördl. Summt Kreuzung Zühlslake Vorber. Kreiselneubau Vollsperrung 11.05.2006-12.05.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 7435,34963 7070,34665
+EOF
+     },
+     { from  => 1147384800, # 2006-05-12 00:00
+       until => 1147557600, # 2006-05-14 00:00
+       text  => 'L 015 Fürstenberger Str. OL Lychen, ab Vogelsangstr. bis Am Markt Einbau Deckschicht Vollsperrung 13.05.2006-13.05.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 2788,89447 2179,89513
+EOF
+     },
+     { from  => 1147522037, # 2006-05-13 14:07
+       until => 1148940000, # 2006-05-30 00:00
+       text  => 'Buschallee (Weißensee) in Richtung Berliner Allee, zwischen Hansastr. und Berliner Allee Baustelle Straße vollständig gesperrt (bis 29.05.06)',
+       type  => 'gesperrt',
+       source_id => 'IM_002776',
+       data  => <<EOF,
+userdel	1 15388,16502 15121,16503 14621,16563
+EOF
+     },
+     { from  => 1147721063, # 2006-05-15 21:24
+       until => 1147816800, # 2006-05-17 00:00
+       text  => 'Linienstr. (Mitte) in Richtung Tucholskystr., ab Oranienburger Str. Straßenarbeiten, Einbahnstr. (bis 16.05.06)',
+       type  => 'handicap',
+       source_id => 'IM_002765',
+       data  => <<EOF,
+userdel	q4; 9607,13507 9281,13374
 EOF
      },
     );

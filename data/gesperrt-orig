@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.99 2006/05/01 20:42:18 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.100 2006/05/09 20:39:34 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -63,8 +63,8 @@ Knoten Märkische Allee	1 19918,11891 19988,11821 20115,11730
 Knoten Märkische Allee	1 20115,11730 20014,11651
 Knoten Märkische Allee	1 20014,11651 20018,11698 19985,11739
 Gensinger Str./Alt-Friedrichsfelde	1 19005,11796 19144,11859 19283,11785
-#Altstadt Köpenick	1 22740,4415 22542,4485 22502,4528 22472,4572 22449,4605 22383,4703
-Altstadt Köpenick	1 22383,4703 22377,4836
+#Altstadt Köpenick	1 22740,4415 22542,4485 22495,4523 22458,4565 22426,4609 22383,4703
+Altstadt Köpenick	1 22383,4703 22381,4752 22377,4836
 Alt-Köpenick	1 22138,4661 22196,4847
 Wuhletalstr.	1 20691,17463 20675,17515 20754,17672 20832,17824 20878,17842
 Knoten Märkische/Landsberger Allee	1 19175,14968 19280,15014 19496,15113 19567,15134 19694,15149 19735,15155
@@ -326,8 +326,13 @@ Kattegatstr.	1 9331,17658 9475,17557
 Waldhüterpfad	1 510,4202 377,4442 301,4643
 Amalienpark	1 10905,18671 10950,18499 10860,18650
 Im Amseltal	1 1962,25214 1983,25097
-#: add_fragezeichen: Einbahnstraße nur für Autofahrer oder auch für Radfahrer?
 Gundelfinger Str.	1 18697,9153 18653,8922 18609,8717
+Dorotheenstr.	1 18653,8922 18778,8895
+Fehmarner Str. 	1 6710,14776 6528,15000
+Alte Späthbrücke	2 14457,5097 14540,5140
+Rutherfordstr.: nicht permanent geöffnet	2 19071,2746 19207,2592
+Katzengraben	1 22445,4758 22449,4712
+Karlstr.	1 22554,4380 22460,4125
 #
 # Potsdam
 #
@@ -393,7 +398,8 @@ Ahornallee	1s 1589,11483 1574,11379
 Lindenallee	1s 1429,11523 1403,11428
 Gramzow (Dorfstr.?)	1s 49779,90206 49841,90479
 Billerbecker Weg	1s 1230,18698 1229,18750
-Alt-Tegel	1s 1529,20131 1668,20156 1753,20191 1907,20265
+Alt-Tegel	1s 1668,20156 1753,20191 1907,20265
+Alt-Tegel	1s 1668,20156 1529,20131 1543,20060 1668,20156
 Am Treptower Park	1s 14529,9141 14390,9291 14242,9448 14179,9515 14089,9610
 Groebenufer	1s 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26243,-12300 26028,-12312
@@ -417,6 +423,7 @@ Björnsonstr.	1s 10229,16653 10215,16527
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments-orig als P0 kommentiert sein)
 #
+Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17527,7812 17686,7589 17839,7365 18003,7144
 Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4469,8037 4659,7982 4793,7992
 Rhinstr.: Straßenbahntrasse	3nocross 18215,12132 18216,12262 18220,12450
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19807,13529 20182,13554
@@ -440,7 +447,7 @@ Grunerstr.: Straßentunnelrampe	3nocross 10878,12560 10954,12635 11057,12715 1113
 Bundesallee: Straßentunnelrampe	3nocross 5505,8832 5510,8709 5513,8588
 Unter den Eichen: Straßentunnelrampe	3nocross 2817,4158 2944,4241 3048,4305
 Bundesallee: Absperrung auf dem Mittelstreifen	3nocross 5510,8709 5513,8588 5481,8506 5444,8406 5421,8337
-Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9189,5184 9185,5271 9182,5332 9171,5397 9147,5534
+Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9213,5187 9185,5271 9182,5332 9171,5397 9147,5534
 Schönhauser Allee: U-Bahnrampe	3nocross 10909,14710 10924,14491 10944,14161
 Schönhauser Allee: U-Bahnviadukt	3nocross 10977,15944 10972,15895 10963,15789
 Schönhauser Allee: U-Bahnviadukt	3 10949,15674 10930,15522 11055,15504
@@ -476,7 +483,7 @@ Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632
 Stromstr.: unpassierbarer Mittelstreifen	3nocross 6201,13058 6185,12968 6177,12920 6168,12846
 #: XXX: wahrscheinlich (ich wurde durch einen anonymen Kommentar bestätigt)
 Märkische Allee: Linksabbiegen verboten	3nocross 20512,17101 20691,17463 20717,17516 20834,17752 20878,17842 21218,18536
-Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17412,17800 17703,17990 17843,18078
+Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17703,17990 17843,18078
 Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13483,10769 13605,10719
 Stralauer Allee: unbequemes Abbiegen	3nocross 13605,10719 13678,10685 13779,10642
 Stralauer Allee: unbequem passierbare Straße	3nocross 14210,10437 14396,10345 14564,10262
@@ -517,6 +524,8 @@ Am Tierpark: Straßenbahntrasse	3nocross 18628,10177 18561,10341 18446,10620
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 #
+tragen (Treppe)	0:30 14390,5443
+tragen (Treppe)	0:30 14335,5425
 tragen (ca. 35 Stufen)	0:30 18180,12262
 tragen (S-Bhf. Marzahn)	0:30 19571,15417
 tragen (S-Bhf. Marzahn)	0:30 19638,15431
@@ -611,6 +620,7 @@ Schranke (Kopfstr.)	BNP:5 12537,7899
 Drängelgitter (Parkweg)	BNP:5 14562,10079
 Drängelgitter (Parkweg)	BNP:5 14600,10128
 Drängelgitter (Parkweg)	BNP:5 14628,10160
+Drängelgitter (Parkweg)	BNP:5 14452,9919
 Drängelgitter (Görlitzer Park)	BNP:5 12686,10045
 Drängelgitter (Görlitzer Park)	BNP:5 12770,10210
 # XXX eins von zwei Gittern fehlt zurzeit
@@ -683,17 +693,13 @@ Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14903,10403 15059,10289
 Voltairestr. (Arbeiten an "Alexa", voraussichtlich bis 2006-05-31)	2:inwork 11323,12484 11209,12430
 #: last_checked: 2005-11-17
 Elsenstr.	1:inwork 13760,9188 13657,9063 13504,8882
-#: last_checked: 2005-07
-#: add_fragezeichen: Ist die Einbahnstraße in der Pfarrstr. aufgehoben worden?
-Pfarrstr.	1:inwork 15339,11123 15267,10865
-Ernst-Ruska-Ufer: noch in Bau	2:inwork 19103,2442 18927,2431
 #XXX del für Radfahrer nicht relevant: Malchower Chaussee (Pankow) Richtung stadteinwärts zwischen Ortnitstr. und Nachtalbenweg Baustelle, veränderte Verkehrsführung. Für die Arbeiten im Abschnitt von Darßer str. bis Nachtalbenweg wird der Verkehr über Darßer Str. - Nachtalbenw. umgeleitet (bis 30.04.2005)	1:inwork 15181,18137 14828,17856
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10173,12492
 Sperrung vor der amerikanischen Botschaft	2 9141,12320 9126,12413 9112,12499 9100,12627
 Alte Naumannstr.: komplett gesperrt, Bauarbeiten am neuen Vorplatz vom Bahnhof Südkreuz	2 7717,7759 7718,7641 7717,7564
 # XXX del??? Goethestr. (Bauarbeiten)	1:inwork 4896,11345 5053,11343
 # als "Mitte 2006" gekennzeichnet
-Markgrafenstraße  Richtung Französische Straße zwischen Behrenstraße und Französische Straße, Bauarbeiten als Einbahnstraße eingerichtet, Dauer:  bis 01.07.2006	1:inwork 9636,12126 9626,12227
+Markgrafenstraße Richtung Französische Straße zwischen Behrenstraße und Französische Straße, Bauarbeiten als Einbahnstraße eingerichtet, Dauer:  bis 01.07.2006	1:inwork 9636,12126 9626,12227
 #: last_checked: 2005-07-31
 Fußgängerbrücke über den Sachesendamm gesperrt, südliche Rampe ist aber befahrbar	2:inwork 7718,7641 7772,7610
 #

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: parse_synop,v 1.13 2006/02/15 23:39:49 eserte Exp $
+# $Id: parse_synop,v 1.13 2006/02/15 23:39:49 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2001 Slaven Rezic. All rights reserved.
@@ -134,6 +134,8 @@ sub doit {
 	SEARCH: {
 		my(@lines) = split /\n/, `tail -10 $file`;
 		for (my $i=$#lines; $i>=0; $i--) {
+		    next if $lines[$i] =~ /^\#\#/; # skip real comments
+		    next if $lines[$i] =~ /^\#dummy/; # skip real comments
 		    if ($lines[$i] =~ /^\#/) {
 			$synop = "";
 			#($date, $time) = get_date_time($lines[$i+1]);
@@ -162,6 +164,8 @@ sub doit {
 	    open(F,$file) or die "Can't open $file: $!";
 	FILE:
 	    while (<F>) {
+		next if /^\#\#/; # skip real comments
+		next if /^\#dummy/; # skip real comments
 		if (/^\#$isodate/) {
 		    ($date, $time) = get_date_time2($_);scalar <F>;
 		    #($date, $time) = get_date_time(scalar <F>); # WMO header
@@ -965,6 +969,8 @@ sub convert_whole_file {	# to something wettermeldung2 compatible
 	open(OUT, ">&STDOUT");
     }
     while (<G>) {
+	next if /^\#\#/; # skip real comments
+	next if /^\#dummy/; # skip real comments
 	chomp;
 	(my $date = $_) =~ s/^.//;
 	next if (defined $since && $since ge $date);

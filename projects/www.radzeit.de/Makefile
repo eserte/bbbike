@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.83 2006/05/07 10:33:58 eserte Exp $
+# $Id: Makefile,v 1.84 2006/05/09 20:40:02 eserte Exp $
 #
 
 # Targets:
@@ -82,7 +82,8 @@ DEPLOY_LOCAL_DATA_TARGETS=	prepare-bbbike-data \
 
 SSH_PROG_AND_ARGS?=	ssh -2 -p 5022
 RSYNC_PROG?=	rsync
-RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --delay-updates --exclude-from .rsync.exclude
+#RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --delay-updates --exclude-from .rsync.exclude
+RSYNC_ARGS=	-e "${SSH_PROG_AND_ARGS}" -Pvz -r -t --links --copy-unsafe-links --exclude-from .rsync.exclude
 RSYNC_ARGS_MS=	${RSYNC_ARGS:S/.rsync.exclude/\/tmp\/mapserver.rsync.exclude/}
 RSYNC_DEST?=	${BBBIKE_RADZEIT_USER}@${BBBIKE_RADZEIT_SSH_HOST}:${BBBIKE_RADZEIT_APACHE_DIR}
 RSYNC_SRCDEST?=	. ${RSYNC_DEST}
@@ -206,8 +207,10 @@ RSYNC_RULES=		check-rsync-ok \
 rsync:	$(RSYNC_RULES)	
 
 check-rsync-ok:
-	[ ! -e ${CURDIR}/.not_rsyncable ] || ( echo "Not rsyncable!"; false )
+.ifndef RSYNC_FORCE
+	[ ! -e ${CURDIR}/.not_rsyncable ] || ( echo "Not rsyncable! (force with RSYNC_FORCE)"; false )
 	[ ! -e ${CURDIR}/.rsync_block ] || ( echo "Not rsyncable because:"; cat ${CURDIR}/.rsync_block; false )
+.endif
 
 do-rsync:
 	-@date >> .last/start-do-rsync

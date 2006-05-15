@@ -423,8 +423,8 @@ userdel	q4 55158,-95910 54884,-96292
        undef,
        undef,
        {
-         'until' => 1148076000,
-         'text' => 'B 246 Trebbin-Beelitz OD Löwendorf, zw. Ahrensdorfer Str. u. Schillerstr. Straßen- und Kanalbau Vollsperrung 20.02.2006-19.05.2006 ',
+         'until' => 1152309600,
+         'text' => 'B 246 Trebbin-Beelitz OD Löwendorf, zw. Ahrensdorfer Str. u. Schillerstr. Straßen- und Kanalbau Vollsperrung 20.02.2006-07.07.2006 ',
          'from' => 1140303600,
          'data' => 'userdel	q4 -2687,-21261 -2815,-20920
 ',
@@ -489,14 +489,7 @@ userdel	q4 -12904,-28790 -12713,-28704
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1147471200,
-         'text' => 'B 087 Beeskow-Lübben OD Ranzig Straßenbauarbeiten Vollsperrung 27.04.2006-12.05.2006 ',
-         'from' => 1146002400,
-         'data' => 'userdel	q4 64853,-30986 65386,-29479
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'source_id' => 'IM_002530',
          'until' => undef,
@@ -515,15 +508,7 @@ userdel	q4 12578,14237 12499,14136
        undef,
        undef,
        undef,
-       {
-         'until' => 1147471200,
-         'text' => 'B 096 OD Neuhof BÜ Neuhof Gleisbau Vollsperrung 05.05.2006-12.05.2006 ',
-         'from' => 1146693600,
-         'data' => 'userdel	2 16407,-29400 16379,-29446
-userdel	2 16336,-29511 16379,-29446
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1149112800,
@@ -535,14 +520,7 @@ userdel	2 16336,-29511 16379,-29446
        },
        undef,
        undef,
-       {
-         'until' => 1147471200,
-         'text' => 'B 087 OL Ranzig Deckenerneuerung Vollsperrung 03.04.2006-12.05.2006 ',
-         'from' => 1143928800,
-         'data' => 'userdel	q4 63609,-34428 64853,-30986
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1157148000,
@@ -577,15 +555,7 @@ userdel	q4 39715,101866 39574,101863
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1157061600,
-         'text' => 'L 745 Motzen- Gallun zw. OA Motzen und OE Gallun Straßenbau Vollsperrung 13.04.2006-31.08.2006 ',
-         'from' => 1144792800,
-         'data' => 'userdel	2 22476,-19219 22338,-19081
-userdel	2 22476,-19219 22599,-19785
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1148162400,
          'text' => 'B 112 Steinsdorf, Einmündung L45/B112 Herstellung Anbindung L45 Vollsperrung 04.04.2006-20.05.2006 ',
@@ -654,26 +624,11 @@ userdel	2 41681,15915 42300,15756
        },
        undef,
        undef,
-       {
-         'until' => 1147298400,
-         'text' => 'B 096 Hauptstr. OD Baruth Einbau Spundwände Vollsperrung 12.04.2006-10.05.2006 ',
-         'from' => 1144706400,
-         'data' => 'userdel	q4 18307,-38801 18042,-39923
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_002632',
-         'until' => 1147557600,
-         'text' => 'Jüterborger Str. (Kreuzberg) in Richtung Golßener Str., zwischen Friesenstr. und Heimstr. Baustelle, Fahrtrichtung gesperrt (bis 13.05.06)',
-         'from' => 1144959197,
-         'data' => 'userdel	q4; 9799,8962 9958,8966
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        {
          'until' => 1151168400,
@@ -693,14 +648,7 @@ userdel	2 21100,4192 21174,4250
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1147557600,
-         'text' => 'L 080 Brandenburger Str. OL Luckenwalde, Kreuz. Dessauer Str. Kanalarbeiten Vollsperrung 18.04.2006-13.05.2006 ',
-         'from' => 1145224800,
-         'data' => 'userdel	q4 -5036,-34940 -4888,-34952
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'until' => 1155679200,
@@ -728,15 +676,7 @@ userdel	q4 43584,20871 44596,21287
        undef,
        undef,
        undef,
-       {
-         'until' => 1147471200,
-         'text' => 'L 074 Chausseestraße OL Wünsdorf, Bahnbrücke Brückenbauarbeiten Vollsperrung 12.05.2006-12.05.2006 ',
-         'from' => 1147298400,
-         'data' => 'userdel	2 15682,-26971 15229,-27157
-userdel	2 15682,-26971 15960,-26906
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -760,69 +700,53 @@ userdel	2 -862,22946 -1254,22853
        },
        {
          'until' => 1159653600,
-         'text' => 'L 037 Petersdorfer Str. OD Petershagen Kanal- und Straßenbauarbeiten halbseitige Sperrung mit Lichtzeichenanlage; 11.05.2006-30.09.2006 ',
-         'from' => 1147212000,
+         'text' => 'L 037 Petersdorfer Str. OD Petershagen Kanal- und Straßenbauarbeiten Vollsperrung 15.05.2006-30.09.2006 ',
+         'from' => 1147557600,
          'data' => 'userdel	q4 74092,475 74246,584
 ',
          'type' => 'handicap'
        },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
-         'source_id' => 'IM_002743',
          'until' => undef,
-         'text' => 'Mühlenstr. (Pankow) in Richtung Norden zwischen Florastr und Dolomitenstr. Einbahnstraße in Richtung Süden',
+         'text' => 'Riemenschneiderweg zwischen Vorarlberger Damm und Grazer Platz, Baustelle, in beiden Richtungen gesperrt.',
          'from' => undef,
-         'data' => 'userdel	1 10596,17554 10510,17649 10459,17754
+         'data' => 'userdel	2 6802,6816 6773,7116
 ',
          'type' => 'gesperrt'
        },
        {
-         'source_id' => 'LMS_1146113785841',
-         'until' => undef,
-         'text' => 'Reichstagufer (Mitte) zwischen Neustädter Kirchstr. und Friedrichsstr. Gefahr durch Uferunterspühlung, Straße gesperrt.',
-         'from' => undef,
-         'data' => 'userdel	2 9091,12681 9209,12795
-userdel	2 9283,12856 9209,12795
+         'until' => 1148335200,
+         'text' => 'L 030 Friedrichstr. OL Erkner, zw. fürstenwalder Str. u. Beuststr. 14. Heimatfest Vollsperrung 18.05.2006-22.05.2006 ',
+         'from' => 1147816800,
+         'data' => 'userdel	2 34443,1951 34250,2546
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       {
+         'source_id' => 'IM_002776',
+         'until' => 1148940000,
+         'text' => 'Buschallee (Weißensee) in Richtung Berliner Allee, zwischen Hansastr. und Berliner Allee Baustelle Straße vollständig gesperrt (bis 29.05.06)',
+         'from' => 1147522037,
+         'data' => 'userdel	1 15388,16502 15121,16503 14621,16563
 ',
          'type' => 'gesperrt'
        },
        {
-         'until' => 1147471200,
-         'text' => 'B 158 zw. OL Seefeld, Löhmer Ch. und Bahnübergang Gleis- u. Straßenbauarbeiten Vollsperrung 05.05.2006-12.05.2006 ',
-         'from' => 1146693600,
-         'data' => 'userdel	2 26936,23104 27283,23503
-userdel	2 28323,24341 27608,23776
-userdel	2 27283,23503 27608,23776
+         'source_id' => 'IM_002765',
+         'until' => 1147816800,
+         'text' => 'Linienstr. (Mitte) in Richtung Tucholskystr., ab Oranienburger Str. Straßenarbeiten, Einbahnstr. (bis 16.05.06)',
+         'from' => 1147721063,
+         'data' => 'userdel	q4; 9607,13507 9281,13374
 ',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1147471200,
-         'text' => 'L 401 R.-Sorge-/ Bergstr. Bahnübergang Bergstraße Gleisbauarbeiten Zufahrt gesperrt 07.05.2006-12.05.2006 ',
-         'from' => 1146866400,
-         'data' => 'userdel	2 26381,-9962 25700,-9502
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1147086000,
-         'text' => 'Wilhelmstraße Richtung Pichelsdorf zwischen Einmündung Pichelsdorfer Straße und Einmündung Gatower Straße Baustelle, gesperrt bis 08.05.2006 13:00 Uhr ',
-         'from' => 1146897090,
-         'data' => 'userdel	1 -3791,13357 -3887,13057 -3937,12971 -3974,12914 -4028,12831 -4081,12765 -4150,12689 -4223,12631 -4300,12571 -4335,12465
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1147039140,
-         'text' => ' Sonnenallee Zwischen Kreuzung Wildenbruchstraße und Pannierstraße in beiden Richtungen gesperrt, Veranstaltung, Dauer: 06.05.2006 06:00 Uhr bis 07.05.2006 23:59 Uhr ',
-         'from' => 1146801600,
-         'data' => 'userdel	2 12438,8859 12320,8927
-userdel	2 12438,8859 12483,8834
-userdel	2 12925,8494 12772,8612
-userdel	2 12483,8834 12630,8722
-userdel	2 12742,8635 12630,8722
-userdel	2 12242,8972 12320,8927
-',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
        }
      
 );

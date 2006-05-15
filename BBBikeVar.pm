@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.48 2006/03/29 23:32:08 eserte Exp eserte $
+# $Id: BBBikeVar.pm,v 1.49 2006/05/15 19:31:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2006 Slaven Rezic. All rights reserved.
@@ -89,7 +89,7 @@ $BBBIKE_MAPSERVER_DIRECT = 'http://bbbike.radzeit.de/mapserver/brb/';
 $BBBIKE_MAPSERVER_INDIRECT = "http://www.bbbike.de/mapserver/brb/";
 
 # CVS
-$BBBIKE_CVS_ANON_REPOSITORY = ":pserver:anonymous\@cvs.sourceforge.net:/cvsroot/bbbike";
+$BBBIKE_CVS_ANON_REPOSITORY = ":pserver:anonymous\@bbbike.cvs.sourceforge.net:/cvsroot/bbbike";
 $BBBIKE_CVS_HTTP = "http://sourceforge.net/cvs/?group_id=" . $SF_BBBIKE_GROUP_ID;
 
 $BBBIKE_GOOGLEMAP_URL = 'http://www.bbbike.de/cgi-bin/bbbikegooglemap.cgi';

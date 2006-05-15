@@ -1,11 +1,11 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.85 2006/05/01 20:42:04 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.86 2006/05/09 20:38:17 eserte Exp eserte $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Stadthausstr., Bahnbrücke: Bauarbeiten	q4::inwork 15628,10915 15657,10846
 Bernauer Str.: kurzes Stück noch nicht freigegeben	q4::inwork; 9192,14145 9224,14169
 Märkisches Ufer: Bauarbeiten, Einbahnstrasse zwischen Am Köllnischen Park und Brückenstr.	q4::inwork; 11328,12040 11251,12071 11155,12071
 Simon-Dach-Str.: Bauarbeiten zwischen Wühlischstr. und Krossener Str., nur Bürgersteigbenutzung möglich	q4::inwork 13981,11746 13954,11647
-Linienstr.: Bauarbeiten, Einbahnstraße Richtung Osten (bis 2006-10-31)	q4::inwork; 9903,13646 9752,13575 9607,13507 9281,13374
 Bendastr.: Bauarbeiten, danach vielleicht asphaltiert?	q4::inwork 12743,6645 12756,6578 12779,6478
 Oberwallstr.: Fahrbahn wegen Bauarbeiten gesperrt, Gehweg benutzen	q4::inwork 9907,12055 9925,11947
 Am Weidendamm: Fahrtrichtung wegen Bauarbeiten gesperrt, schieben	q4::inwork; 9283,12856 9383,12915
@@ -14,7 +14,7 @@ Naumannstraße: zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straß
 Behrenstr./Bebelplatz: Einbahnstraße	q3::inwork; 9626,12227 9700,12234 9743,12239 9801,12245
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
 Am Spreebord: Baustelle	q4::inwork 4135,12715 4314,12659
-Groß-Berliner Damm: ein kurzes Stück ist noch Baustelle, voraussichtlich 2005-12-31 fertig	q4::inwork 18058,4627 18882,3750
+Groß-Berliner Damm: ein kurzes Stück ist noch Baustelle, vielleicht 2006-07-31 fertig?	q4::inwork 18058,4627 18882,3750
 Segelfliegerdamm: letzte Bauarbeiten	q3::inwork 17797,4441 18058,4627
 Columbiadamm: Bauarbeiten, Behinderungen möglich (bis 2006-12-31)	q1::inwork 10213,8665 10598,8563 10796,8498
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
@@ -85,7 +85,7 @@ Böcklerpark: enge Kurven, Fußgänger	q3 10910,10131 10885,10045
 Am Landwehrkanal: Parkweg	q1 10511,10128 10228,10151 10080,10199
 vor dem Kanzleramt: Fußgänger, manchmal gesperrt	q1 8124,12742 8122,12600
 Am Stadtpark: Parkweg mit Fußgängern	q1 15395,12762 15433,12686 15454,12519
-Am Stichkanal: Parkweg	q1 22832,4491 22702,4592 22585,4634 22472,4572
+Am Stichkanal: Parkweg	q1 22832,4491 22702,4592 22585,4634 22458,4565
 Schwedter Str. (Mauerpark): Park, Fußgänger	q2 10333,14983 10238,15316 10186,15463 10122,15647
 (Fußweg am Griesinger-Krankenhaus): Fußgänger	q1 21930,12185 21615,12326 21367,12437 21211,12507
 (Fußgängerbrücke Ostkreuz): Fußgänger	q3 14798,10985 14761,10982 14739,10892 14794,10844
@@ -268,6 +268,10 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14454 19814,14079
 (Kolonie Friedrichsfelde Nord, entlang der Fernwärmeleitung): Fußgänger	q1 17774,12244 18129,12245 18180,12262 18216,12262
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16553,11921 16514,11911
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
+(Treseburger Ufer - Rungiusstr.): nur für Fußgänger erlaubt	q4 12699,5909 13064,5953
+(Bellevuepark): nur für Fußgänger erlaubt	q4 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
+Lintruper Str.: teilweise wegen parkender Autos eng	q1 10307,922 10380,757 10423,636 10506,405 10614,105 10665,-200 10729,-386
+Spandauer Str.: enge Straße	q1 -6442,14186 -6261,14213
 (Parkplatz Kaufland - Am Steinberg): Fußgänger	q2 12981,17557 13011,17470
 Achenbachstr.: nicht so breite Straße	q1 -3354,14971 -3322,14814
 Herrnholzweg: enge Straße	q1 6279,23170 6491,22915

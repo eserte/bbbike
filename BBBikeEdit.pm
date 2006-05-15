@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.97 2006/05/07 21:12:51 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.98 2006/05/10 19:44:55 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3377,6 +3377,10 @@ sub temp_blockings_editor {
 			-value => "gesperrt",
 			-variable => \$blocking_type,
 		       )->pack(-anchor => "w");
+	$f->Radiobutton(-text => M"Einbahnstraße (Richtung manuell korrigieren!)",
+			-value => "oneway",
+			-variable => \$blocking_type,
+		       )->pack(-anchor => "w");
 	$f->Radiobutton(-text => M"handicap",
 			-value => "handicap-q4",
 			-variable => \$blocking_type,
@@ -3406,7 +3410,7 @@ sub temp_blockings_editor {
 			-value => "replace",
 			-variable => \$meta_data_handling,
 		       )->pack(-anchor => "w");
-	$f->Radiobutton(-text => M"Existierenden Eintrag ersetzen, Strecken beibehalten",
+	$f->Radiobutton(-text => M"Existierenden Eintrag ersetzen, alte Strecken beibehalten",
 			-value => "replace_preserve_data",
 			-variable => \$meta_data_handling,
 		       )->pack(-anchor => "w");
@@ -3555,6 +3559,10 @@ sub temp_blockings_editor {
 		  my $blocking_type2 = $blocking_type;
 		  if ($blocking_type =~ /^handicap/) {
 		      $blocking_type = "handicap";
+		  } elsif ($blocking_type eq 'oneway') {
+		      $blocking_type = "gesperrt";
+		  } elsif ($blocking_type ne "gesperrt") {
+		      main::status_message("Unknown blocking type <$blocking_type>", "info");
 		  }
 		  $start_time = "undef" if $start_undef;
 		  $end_time = "undef" if $end_undef;
@@ -3612,6 +3620,8 @@ EOF
 		      main::status_message("Can't parse old contents in file <$pl_file>", "err");
 		      return;
 		  }
+
+		  # XXX Tk::ExecuteCommand verwenden, falls vorhanden!
 
 # XXX Folge von Debuggingstatements, weil ab und zu bbbike hier mit einem X11-Fehler abstürzt
 warn "XXX 1";
@@ -3682,6 +3692,9 @@ sub temp_blockings_editor_preserve_data {
 	if ($stage eq '') {
 	    if ($line =~ /^\s*data/) {
 		$stage = 'in_data';
+		$data_or_file .= $line . "\n";
+	    } elsif ($line =~ /^\s*file/) {
+		# no stage change, just one line
 		$data_or_file .= $line . "\n";
 	    }
 	} elsif ($stage eq 'in_data') {
@@ -4025,7 +4038,10 @@ sub add_cross_road_blockings {
 	}
     }
 
-    $add_userdels;
+    require Strassen::Combine;
+    my $add_userdels_combined = $add_userdels->make_long_streets;
+
+    $add_userdels_combined;
 }
 
 {

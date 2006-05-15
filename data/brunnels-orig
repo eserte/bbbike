@@ -16,7 +16,7 @@ Brücke über den Gosener Kanal	Br 31033,6 31127,-45
 Lange Brücke	Br 21796,4517 22071,4501
 Kietzer Brücke	Br 22279,4484 22342,4476
 Kietzer Str., Brücke	Br 22358,4521 22396,4464
-Landjägerbrücke	Br 22449,4605 22472,4572
+Landjägerbrücke	Br 22426,4609 22458,4565
 Wendenschloßbrücke	Br 22832,4491 22862,4511
 Katzengrabenbrücke	Br 22484,4868 22581,4932
 Salvador-Allende-Brücke	Br 23420,5159 23429,5048
@@ -35,7 +35,7 @@ Köllnische Brücke	Br 21050,5165 21062,5026
 Treskowbrücke	Br 17898,6049 17937,6173 17952,6246
 Stubenrauchbrücke (Schöneweide)	Br 17447,6367 17492,6462
 Neue Grünstraße	Br 10517,11795 10528,11729
-Tunnel unter S-Bahn und Autobahn	Tu 8707,7384 8715,7055
+Boelcketunnel	Tu 8707,7384 8715,7055
 Kiefholzbrücke	Br 16421,6434 16478,6371
 Südostalleebrücke	Br 16034,6108 16107,6076
 Baumschulenbrücke	Br 15584,5946 15628,6009
@@ -145,7 +145,7 @@ Landsberger Allee, S-Bahnbrücke	Br 13862,13688 14011,13750
 Thaerstr., S-Bahnbrücke	Br 14056,13386 14109,13449
 Eldenaer Str., S-Bahnbrücke	Br 14842,12826 15010,12855
 Rhinstr., S-Bahnbrücke	Br 18216,12262 18215,12132
-Falkenberger Chaussee, S-Bahnbrücke	Br 17412,17800 17703,17990
+Falkenberger Chaussee, S-Bahnbrücke	Br 17400,17790 17703,17990
 S-Bahnbrücke Wartenberg	Br 16990,18694 17114,18775
 Gehrenseestr., S-Bahnbrücke	Br 18313,16643 18730,16973
 Gleimtunnel	Tu 9917,15613 10122,15647
@@ -176,7 +176,7 @@ Tegeler Brücke	Br -247,15982 -236,16043 -220,16110
 Spandauer-See-Brücke	Br -2209,16501 -1939,16427
 Wasserstadtbrücke	Br -2066,16918 -1863,16868
 Tiefwerderbrücke	Br -2761,12835 -2770,12861
-Nennhauser Damm, S-Bahnbrücke	Br -7408,14347 -7410,14279
+Nennhauser Damm, S-Bahnbrücke	Br -7445,14392 -7457,14317
 Loerkesteig	Br 2885,24310 2979,24373
 Rendsburger Brücke	Br 2773,19359 3095,19203
 Borsigdammbrücke	Br 1450,19336 1463,19417
@@ -203,9 +203,9 @@ Nördliche Seestraßenbrücke	Br 5440,14840 5618,14981
 Goerdelerdammbrücke	Br 5062,14681 5071,14614
 Ludwig-Hoffmann-Brücke	Br 5071,14614 5129,14470
 Ernst-Keller-Brücke	Br 15573,4122 15608,4175
-Fanny-Zobel-Brücke	Br 15608,4175 15669,4266
+Fanny-Zobel-Brücke	Br 15608,4175 15640,4222 15669,4266
 Massantebrücke	Br 16893,3171 16909,3193 16934,3215
-Hermann-Gladenbeck-Brücke	Br 16934,3215 16981,3255
+Hermann-Gladenbeck-Brücke	Br 16934,3215 16946,3225 16981,3255
 Hobrechtbrücke	Br 12093,9783 12105,9800 12119,9823
 Thielenbrücke	Br 12569,9547 12584,9572 12591,9584
 General-Ganeval-Brücke	Br 2996,15771 3033,15694
@@ -302,7 +302,7 @@ Freybrücke	Br -3308,11565 -3159,11519
 B96a	Br 21668,982 21563,782
 Adlergestell/B96a	Br 21541,1739 21998,1239
 Putlitzbrücke	Br 6242,13928 6242,13953 6248,14185 6255,14310 6314,14659
-Föhrer Brücke	Br 6314,14659 6353,14754
+Föhrer Brücke	Br 6314,14659 6334,14756
 Torfstraßensteg	Br 6835,14821 6866,14726
 Daimlerstr.	Br 8537,2286 8588,2176
 S-Bhf. Wuhlheide	Br 20653,7289 20609,7200
@@ -310,7 +310,7 @@ Lichtensteinufer	Br 6309,11443 6252,11367
 Gertraudenbrücke	Br 10296,11790 10313,11805 10348,11849
 Alte Gertraudenbrücke	Br 10288,11834 10314,11865
 Jungfernbrücke	Br 10201,11995 10213,12003 10227,12013
-Falkenberger Chaussee	Br 17703,17990 17412,17800
+Falkenberger Chaussee	Br 17703,17990 17400,17790
 Kronprinzenbrücke	Br 8417,12846 8503,12895
 Steg am Paul-Löbe-Haus	Br 8415,12742 8551,12746
 Mühlendamm	Br 10567,12135 10621,12207
@@ -320,8 +320,8 @@ Warschauer Brücke	Br 13476,11174 13546,11352
 Brücke am Hafen Mariendorf	Br 7757,4294 7784,4221
 Klingenbergbrücke	Br 16791,9137 16831,9078
 Brücke über Avus	Br -3956,2787 -3758,2678
-Neue Späthbrücke	Br 14320,5437 14370,5453
-Anna-Nemitz-Brücke	Br 14370,5453 14546,5495
+Neue Späthbrücke	Br 14320,5437 14390,5458
+Anna-Nemitz-Brücke	Br 14390,5458 14546,5495
 Fußgängerbrücke (Altglienicke)	Br 21265,334 21159,450
 Neue Brücke	Br -3115,14642 -3110,14698
 Dammbrücke	Br -3029,14656 -3054,14704

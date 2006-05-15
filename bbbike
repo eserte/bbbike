@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.239 2006/05/07 21:11:44 eserte Exp $
+# $Id: bbbike,v 3.240 2006/05/09 20:39:04 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -204,7 +204,7 @@ $^W = 1;
 # $VERSION is the version of the BBBike distribution
 # $PROG_REVISION is the version of the main program
 $VERSION = $BBBike::VERSION;
-$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.239 $ =~ /(\d+)\.(\d+)/);
+$PROG_REVISION = sprintf("%d.%03d", q$Revision: 3.240 $ =~ /(\d+)\.(\d+)/);
 # since version 3.40 => 3.040
 
 # OS related
@@ -13992,7 +13992,12 @@ sub overview_draw_route {
     if (Tk::Exists($overview_canvas)) {
 	my $transpose = $show_overview_mode eq 'brb' ? \&transpose_small : \&transpose_medium;
 	$overview_canvas->delete("route");
-	$overview_canvas->createLine((map { $transpose->(@$_) } @realcoords), -tags => "route");
+	return if !@realcoords;
+	my @coords = map { $transpose->(@$_) } @realcoords;
+	if (@coords == 2) {
+	    push @coords, @coords;
+	}
+	$overview_canvas->createLine(@coords, -tags => "route");
     }
 }
 
