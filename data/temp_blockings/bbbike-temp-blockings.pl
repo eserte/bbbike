@@ -1750,7 +1750,7 @@ EOF
        text  => 'Zimmermannstr. (Marzahn) Richtung Osten zwischen Köpenicker Str. und Lindenstr. Baustelle, Fahrtrichtung gesperrt (bis 30.05.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 21093,9179 21351,9066
+userdel	q4; 21093,9179 21206,9130 21351,9066
 EOF
      },
      { from  => 1123452000, # 2005-08-08 00:00
@@ -3588,10 +3588,10 @@ userdel	2 16407,-29400 16379,-29446
 userdel	2 16336,-29511 16379,-29446
 EOF
      },
-     { from  => 1139094000, # 2006-02-05 00:00
-       until => 1139612400, # 2006-02-11 00:00
-       text  => 'B 112 Frankfurt (O)-Eisenhüttenstadt OD Wiesenau Havarie Gasleitung Vollsperrung 06.02.2006-10.02.2006 ',
-       type  => 'gesperrt',
+     { from  => 1144015200, # 2006-04-03 00:00
+       until => 1150668000, # 2006-06-19 00:00
+       text  => 'B 112 Guben-Frankfurt (O) Kreuz. L 45/B 112/K6702 in Steinsdorf Bau der Kreuzung Vollsperrung 04.04.2006-18.06.2006 ',
+       type  => 'handicap',
        data  => <<EOF,
 userdel	2 91858,-18170 90698,-16886
 EOF
@@ -4433,6 +4433,14 @@ EOF
        source_id => 'IM_002765',
        data  => <<EOF,
 userdel	q4; 9607,13507 9281,13374
+EOF
+     },
+     { from  => 1147989600, # 2006-05-19 00:00
+       until => 1148248800, # 2006-05-22 00:00
+       text  => 'L 079 Ludwigsfelde-Ahrensdorf zw. Ludwigsfelde und Ahrensdorf Straßenbauarbeiten Vollsperrung 20.05.2006-21.05.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -2086,-9891 -1245,-9999 -862,-9933
 EOF
      },
     );

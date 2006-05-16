@@ -84,7 +84,7 @@ Giselastr.: m‰ﬂiges Kopfsteinpflaster	Q2 16345,11328 16262,11116 16218,10994
 Emanuelstr.: Kopfsteinpflaster	Q2 16316,10755 16349,10860 16374,10946
 Zobtener Str.: teils sandiger und holpriger Fahrweg	Q3 16525,10118 16157,10342 15751,10582
 Zobtener Str.: sandig	Q2 16734,9990 16811,9937
-Wielandstr.: schlechtes Kopfsteinpflaster	Q3 23171,8835 23003,8582
+Wielandstr.: schlechtes Kopfsteinpflaster	Q3 23171,8835 23099,8726 23003,8582
 Fischerstr.: Kopfsteinpflaster	Q2 16032,10842 16187,10587
 Wallensteinstr./Neuer Feldweg: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2 17378,9715 17360,9629 17456,9594 17549,9529 18037,9195 18120,9100 18124,9056
 Halker Zeile: schlechtes Kopfsteinpflaster	Q3 9940,559 10063,251 10161,3 10273,-301 10467,-822
@@ -1357,6 +1357,9 @@ Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068
 #: by: Paul (no email):
 Eulerstr.: Asphalt	Q0 9268,16228 9494,16455
 #: by: anonymous vvv
+Heidenauer Str.: guter Asphalt	Q0 24418,14678 24328,14702 24230,14638 24146,14594
+Ferdinandstr. (Lichterfelde): guter Asphalt	Q0 5656,1882 5592,2021 5533,2143 5420,2379 5398,2422
+Rodenbergstr.: m‰ﬂiger Asphalt	Q2 11003,16196 11268,16113 11358,16067 11500,15988
 J‰nschwalder Str.: Asphalt	Q0 25234,14501 25318,14462 25412,14536
 #: add_fragezeichen: Kopfsteinpflaster eher gut oder normal-m‰ﬂig?
 Achenbachstr.: Kopfsteinpflaster	Q2 -3354,14971 -3322,14814
@@ -1393,7 +1396,7 @@ Moorweg: Asphalt	Q0 3190,22049 3114,22010 2903,21918 2717,21616 2652,21511 2429,
 Kaunstr.: Kopfsteinpflaster	Q2 -1077,3206 -1070,2924 -999,2726
 Moselstr. (Friedenau): Asphalt	Q0 5684,6942 5824,6974
 Grenzweg (Lichtenrade): m‰ﬂiger Asphalt	Q1 9780,-1285 9456,-1303
-Mechthildstr.: m‰ﬂiger Asphalt/Kopfsteinpflaster	Q2 23385,8217 23420,8265 23627,8543 23797,8814
+Mechthildstr.: m‰ﬂiger Asphalt/Kopfsteinpflaster	Q2 23385,8217 23420,8265 23542,8429 23627,8543 23797,8814
 Am Faulen See: guter Asphalt	Q0 16515,16207 16546,16308 16623,16554 16639,16671 16617,16796 16559,16903 16487,17023
 Badeweg: guter Belag	Q0 -4171,2659 -4292,2762
 Badeweg: guter Belag	Q0 -4292,2762 -4471,2917
@@ -2190,7 +2193,7 @@ Gaudystr.: Kopfsteinpflaster, schlechtere Qualit‰t	Q2 10949,15674 10759,15622 10
 Greifenhagener Str.: Asphalt	Q0 11093,15771 11140,15859 11162,15903 11190,15950 11232,16037
 #: note: laut Bild im Tagesspiegel, kein Widerspruch von Joern vvv
 Greifenhagener Str.: Kopfsteinpflaster	Q2 11040,15398 11055,15504 11093,15771
-Greifenhagener Str.: Kopfsteinpflaster	Q2 11232,16037 11306,16194 11341,16273 11397,16405
+Greifenhagener Str.: Kopfsteinpflaster	Q2 11232,16037 11268,16113 11306,16194 11341,16273 11397,16405
 #: note: ^^^
 #: XXX: Katha hat hier "Kopfsteinpflaster, schlechte Straﬂe" geschrieben, die ADFC-Karte sagt hier "gut geeignet". 2:1 f¸r Q1
 Zermatter Str.: Kopfsteinpflaster besserer Qualit‰t 	Q1 6653,17696 6761,17741 6859,17753
@@ -2365,7 +2368,7 @@ Taunusstr. (Friedenau): Asphalt	Q0 4785,7438 4909,7436 5070,7436 5239,7437 5272,
 Kastanienstr.: schlechtes grobes Kopfsteinpflaster	Q3 5167,2160 5218,2012
 Brauerstr.: schlechtes Kopfsteinpflaster	Q3 5317,2345 5167,2160 4945,1915 4717,1618
 J‰gerstr.: schlechtes Kopfsteinpflaster	Q3 4945,1915 5145,1982 5218,2012 5382,2080
-J‰gerstr.: schlechtes Kopfsteinpflaster	Q3 5443,2109 5672,2197 5778,2237
+J‰gerstr.: schlechtes Kopfsteinpflaster	Q3 5443,2109 5533,2143 5672,2197 5778,2237
 #: by: ^^^
 #: by: Annette (buehring):
 Parforceheide: Asphalt	Q0 -1737,1904 -1796,2054 -1717,2084 -1654,1954
@@ -2442,7 +2445,7 @@ Borsigstr.: asphaltiert	Q0 9517,13571 9394,13754 9303,13887
 #: by: Reinhard (otto):
 Newtonstr.: asphaltiert	Q0 19314,2932 19162,3087 19075,3178
 #: by: Martin Weber:
-Staakener Str.: asphaltiert	Q0 -4709,14197 -4759,14128 -5874,14242 -6398,14276
+Staakener Str.: asphaltiert	Q0 -4741,14233 -4835,14223 -4891,14169 -5874,14242 -6398,14276
 #: by: J¸rgen Bruhns:
 Isl‰ndische Str.: sehr guter Asphalt	Q0 10033,16232 10281,16263
 #: by: Diana Stark:
@@ -3114,7 +3117,7 @@ Am Schloﬂpark: schlechtes Kopfsteinpflaster	Q3 10712,18975 10625,18831
 Am Schloﬂpark: Asphalt	Q0 10625,18831 10496,18704
 #: by: ^^^
 #: by: Bianca Mettin:
-Birkenallee: Kopfsteinpflaster	Q2 21110,9686 21454,9663
+Birkenallee: Kopfsteinpflaster	Q2 21110,9686 21321,9672 21454,9663
 #: by: Brigitte Schulz:
 Straﬂe 52a: m‰ﬂiger Asphalt	Q1 11276,21034 10119,20731
 #: by: Gerard Gold:
@@ -3312,7 +3315,7 @@ Herrnholzweg: Verbundsteinpflaster	Q1 6279,23170 6491,22915
 Marienfelder Str.: Kopfsteinpflaster	Q2 10853,-1475 10981,-1564 11068,-1574
 #: by: Martin Helmhart:
 #: note: laut ADFC-Karte (alt und neu) m‰ﬂig geeignet, aber Widerspruch von Martin ("uneingeschr‰nkt zu empfehlen")
-Altonaer Str.: guter Asphalt	Q0 -4900,13857 -4742,13839 -4298,13810 -3971,13755 -3701,13719
+Altonaer Str.: guter Asphalt	Q0 -4932,13887 -4776,13869 -4298,13810 -3971,13755 -3701,13719
 #: by: smike:
 Prignitzstr.: guter Asphalt	Q0 20449,14011 20393,13527 20364,13255 20334,12993 20331,12920 20271,12458 20252,12262
 #: by: Andreas Gr¸nky:
@@ -3363,6 +3366,14 @@ Wustrower Str.: guter Beton	Q0 16882,18619 17014,18435 17215,18153 17341,17990 1
 Waldseeweg: m‰ﬂiges Kopfsteinpflaster	Q2 4259,23973 4128,23880 3985,23814
 Waldseeweg: Asphalt	Q0 3985,23814 3860,23767 3791,23730 3698,23657 3621,23548
 #: by: ^^^
+#: by: Volker (vheusing):
+Winklerstr.: Kopfsteinpflaster	Q2 23845,8220 23651,8353 23542,8429 23439,8499 23220,8648 23099,8726 23007,8788 22941,8834
+#: by: Karin Millonig:
+In den G‰rten: Verbundsteinpflaster	Q1 11756,1519 11713,1622
+#: by: Carolin Prager
+Stettiner Str.: Asphalt	Q0 8928,16158 9107,16389 9331,16624
+#: by: Manuela M¸hlhausen:
+Zweiwinkelweg: guter Beton	Q0 -7050,13807 -7050,13749 -7183,13730 -7175,13607 -6919,13557
 #: by: Andreas M¸hlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

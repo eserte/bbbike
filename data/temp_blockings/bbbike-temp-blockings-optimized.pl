@@ -406,7 +406,14 @@ userdel	q4 55158,-95910 54884,-96292
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1150668000,
+         'text' => 'B 112 Guben-Frankfurt (O) Kreuz. L 45/B 112/K6702 in Steinsdorf Bau der Kreuzung Vollsperrung 04.04.2006-18.06.2006 ',
+         'from' => 1144015200,
+         'data' => 'userdel	2 91858,-18170 90698,-16886
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -747,6 +754,14 @@ userdel	2 -862,22946 -1254,22853
          'data' => 'userdel	q4; 9607,13507 9281,13374
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1148248800,
+         'text' => 'L 079 Ludwigsfelde-Ahrensdorf zw. Ludwigsfelde und Ahrensdorf Straßenbauarbeiten Vollsperrung 20.05.2006-21.05.2006 ',
+         'from' => 1147989600,
+         'data' => 'userdel	2 -2086,-9891 -1245,-9999 -862,-9933
+',
+         'type' => 'gesperrt'
        }
      
 );

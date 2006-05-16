@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.99 2006/05/15 20:11:07 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.99 2006/05/15 20:11:07 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3621,8 +3621,17 @@ EOF
 		      return;
 		  }
 
+		  if ($do_delete_blockings) {
+		      main::delete_user_dels(-force => 1);
+		  }
+
+		  if (Tk::Exists($t)) {
+		      $t->destroy;
+		  }
+
 		  my $check_cmd = "$FindBin::RealBin/miscsrc/check_bbbike_temp_blockings";
 		  if (eval { require Tk::ExecuteCommand; 1 }) {
+		      $main::top->update;
 		      my $check_tl = $main::top->Toplevel(-title => "check_bbbike_temp_blockings problems");
 		      $check_tl->withdraw;
 		      my $exec = $check_tl->ExecuteCommand (-command => $check_cmd)->pack(qw(-fill both -expand 1));
@@ -3660,12 +3669,6 @@ EOF
 			  }
 		      }
 		  }
-
-		  if ($do_delete_blockings) {
-		      main::delete_user_dels(-force => 1);
-		  }
-
-		  $t->destroy;
 	      }),
 	     $t->Button
 	      (-text => M"Abbruch",
