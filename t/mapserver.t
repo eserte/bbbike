@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver.t,v 1.3 2005/10/16 15:54:19 eserte Exp $
+# $Id: mapserver.t,v 1.4 2006/05/15 20:52:30 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -16,7 +16,7 @@ BEGIN {
 	use Sys::Hostname qw(hostname);
 	1;
     }) {
-	print "1..0 # skip: no WWW::Mechanize and/or Test::More modules\n";
+	print "1..0 # skip: no WWW::Mechanize, WWW::Mechanize::FormFiller and/or Test::More modules\n";
 	exit;
     }
 }

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: mapserver-util.t,v 1.3 2006/04/22 19:34:53 eserte Exp $
+# $Id: mapserver-util.t,v 1.4 2006/05/15 20:51:16 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -15,7 +15,7 @@ BEGIN {
 	use Test::More;
 	1;
     }) {
-	print "1..0 # skip: no WWW::Mechanize and/or Test::More modules\n";
+	print "1..0 # skip: no WWW::Mechanize, WWW::Mechanize::FormFiller and/or Test::More modules\n";
 	exit;
     }
 }

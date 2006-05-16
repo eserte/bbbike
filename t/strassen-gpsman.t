@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-gpsman.t,v 1.5 2005/12/28 19:04:49 eserte Exp $
+# $Id: strassen-gpsman.t,v 1.6 2006/05/15 21:58:16 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -34,7 +34,8 @@ BEGIN {
     }
 }
 
-my $tests = 4 + 3;
+my $tests_with_data = 4;
+my $tests = $tests_with_data + 3;
 plan tests => $tests + $have_nowarnings;
 
 my $gpsman_dir = "$FindBin::RealBin/../misc/gps_data";
@@ -45,12 +46,12 @@ EOF
 }
 
 SKIP: {
-    skip("No gpsman data directory found", $tests) if !-d $gpsman_dir;
+    skip("No gpsman data directory found", $tests_with_data) if !-d $gpsman_dir;
 
     my @trk = glob("$gpsman_dir/*.trk");
-    skip("No tracks in $gpsman_dir found", $tests) if !@trk;
+    skip("No tracks in $gpsman_dir found", $tests_with_data) if !@trk;
     my @wpt = glob("$gpsman_dir/*.wpt");
-    skip("No waypoint files in $gpsman_dir found", $tests) if !@wpt;
+    skip("No waypoint files in $gpsman_dir found", $tests_with_data) if !@wpt;
     
     my $trk = $trk[rand @trk];
     my $wpt = $wpt[rand @wpt];
@@ -67,6 +68,8 @@ SKIP: {
 }
 
 {
+    require Strassen::Gpsman; # because maybe nobody did it before!
+
     my $trk_sample = <<'EOF';
 % Written by /home/e/eserte/src/bbbike/bbbike Wed Dec 28 19:10:26 2005
 % Edit at your own risk!

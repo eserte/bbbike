@@ -198,8 +198,7 @@ Einträge für BBBike im Startmenü und erzeugt ein Icon auf dem Desktop.
 Wenn Cygwin (L<http://www.cygwin.org/>) installiert ist, können aus einer
 cygwin-Shell heraus die Anweisungen wie bei einer
 L<UNIX-Installation|/Linux, Solaris, andere Unices>
-befolgt werden. Achtung: Tk 804.027 lässt sich (noch) nicht unter
-Cygwin installieren. Stattdessen muss Tk 800.025 verwendet werden.
+befolgt werden.
 
 =head3 Alternative Windows Installation (3)
 
@@ -239,7 +238,7 @@ BBBike-Icon ebenfalls im Startmenü.
 BBBike ist sehr speicher- und CPU-intensiv. Mindestens 16 MB RAM sind
 auf i386-Plattformen notwendig (bei Solaris mindestens 32 MB), besser
 das doppelte davon. Einige Versionen von BBBike wurden unter folgenden
-Plattformen getestet: Solaris-2.5, Solaris 8, FreeBSD-3.5, FreeBSD-4.6, FreeBSD-4.9, Linux Suse 6.4, Linux Suse 7.0, Linux Debian 3.0, Red Hat Linux 8.0, Windows 95, Windows 98, Windows NT 4.0, Windows 2000. Die
+Plattformen getestet: Solaris (Version 8 und 2.5), FreeBSD (Version 4.9, 4.6, 3.5), Linux (Suse 7.0 und 6.4, Debian 3.0, Red Hat 8.0), Windows (2000, NT 4.0, 98, 95), MacOSX 10.4. Die
 Entwicklungsarbeit wird auf einem FreeBSD-Rechner vorgenommen.
 
 =head2 WWW-Version
@@ -251,7 +250,7 @@ L<http://www.bbbike.de>
 eine einfache, stark text-orientierte Version von bbbike. Weitere
 Informationen zu der CGI-Version gibt es unter
 
-L<http://www.radzeit.de/cgi-bin/bbbike.cgi/info=1>
+L<http://bbbike.radzeit.de/cgi-bin/bbbike.cgi/info=1>
 
 
 =head2 Nicht-GUI-Version
@@ -268,17 +267,21 @@ L<http://sourceforge.net/cvs/?group_id=19142>.
 Von der Kommandozeile muss folgendes eingegeben werden:
 
     # login ist nur das erste Mal notwendig, Passwort leer lassen
-    cvs -d :pserver:anonymous@cvs.sourceforge.net:/cvsroot/bbbike login
-    cvs -d :pserver:anonymous@cvs.sourceforge.net:/cvsroot/bbbike co bbbike
+    cvs -d :pserver:anonymous@bbbike.cvs.sourceforge.net:/cvsroot/bbbike login
+    cvs -d :pserver:anonymous@bbbike.cvs.sourceforge.net:/cvsroot/bbbike co bbbike
 
     # Alle weiteren Male nur folgendes verwenden:
     cd bbbike
     cvs -q update -d
 
-Das CVS wird fast täglich aktualisiert und enthält auch die aktuellen Daten.
+Das CVS wird fast täglich aktualisiert und enthält auch die aktuellen
+Daten. B<Achtung>: die Adresse des Repositorys hat sich im Mai 2006
+geändert! Es ist notwendig, ein frisches Checkout (co) zu machen,
+falls das Repository bereits ausgecheckt wurde.
+
 
 Um nur die Daten zu aktualisieren, kann man sich die aktuellen Daten
-als ZIP-Datei von L<http://www.radzeit.de/cgi-bin/bbbike-data.cgi> holen. Die ZIP-Datei
+als ZIP-Datei von L<http://www.bbbike.de/cgi-bin/bbbike-data.cgi> holen. Die ZIP-Datei
 muss im BBBike-Programmverzeichnis (bei Windows unter
 C<C:\Programme\BBBike\bbbike>) ausgepackt werden.
 

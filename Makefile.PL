@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.122 2006/05/09 20:40:20 eserte Exp $
+# $Id: Makefile.PL,v 1.123 2006/05/15 20:33:59 eserte Exp $
 
 use 5.005;
 
@@ -10,10 +10,14 @@ BEGIN {
 use ExtUtils::MakeMaker;
 use ExtUtils::Manifest;
 use File::Basename;
+use Getopt::Long;
 
 use lib ".."; # falls als make_bundle gestartet
 
 use BBBikeVar;
+
+my %opt;
+GetOptions(\%opt, "radzeit!") or die "usage?";
 
 my $author = 'Slaven Rezic (' . $BBBike::EMAIL . ')',
 my $abstract = "BBBike - ein Routenplaner für Radfahrer in Berlin und Brandenburg";
@@ -195,7 +199,7 @@ my $admin_makefile = "./Makefile.admin.PL";
 
 my(%prereq, @prereq);
 {
-    my(@res) = build_prereq($os);
+    my(@res) = build_prereq($os, $opt{radzeit} ? REQ_BBBIKE_RADZEIT : 0);
     %prereq = %{$res[0]};
     @prereq = @{$res[1]};
 }
@@ -231,11 +235,14 @@ while(my($k,$v) = each %$fileref) {
 return 1 if $ENV{PERL_FROM_EXTERNAL};
 
 sub build_prereq {
-    my $os = shift;
+    my($os, $type) = @_;
     my(%prereq, @prereq);
     foreach (@req_table) {
 	my(%for_os) = map { ($_, 1) } split ",", $_->[REQTABLE_OS];
 	if ($for_os{$os} || $for_os{"all"}) {
+	    if ($type != 0) {
+		next if ($_->[REQTABLE_REQ] & $type) == 0;
+	    }
 	    $prereq{$_->[REQTABLE_MODNAME]} = $_->[REQTABLE_VERSION];
 	    push @prereq, $_;
 	}
@@ -323,7 +330,7 @@ sub make_general_pi_osd {
 
     my(%prereq, @prereq);
     {
-	my(@res) = build_prereq($os);
+	my(@res) = build_prereq($os, 0);
 	%prereq = %{$res[0]};
 	@prereq = @{$res[1]};
     }

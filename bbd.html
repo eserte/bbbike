@@ -20,6 +20,10 @@
 <ul>
 <li><a class="POD_NAVLINK" href="#Coordinate_lines_dat">Coordinate lines (data lines)</a>
 <li><a class="POD_NAVLINK" href="#Directive_lines">Directive lines</a>
+<ul>
+<li><a class="POD_NAVLINK" href="#Global_directives">Global directives</a>
+<li><a class="POD_NAVLINK" href="#Line_block_directive">Line/block directives</a>
+</ul>
 <li><a class="POD_NAVLINK" href="#Comment_lines">Comment lines</a>
 </ul>
 <li><a class="POD_NAVLINK" href="#CATEGORIES">CATEGORIES</a>
@@ -154,9 +158,7 @@ times, but at least three times.
 <p class="POD_TEXT">
 An colon (:) after the directive_name is always optional.
 </p>
-<p class="POD_TEXT">
-The following directives are defined:
-</p>
+<h4 class="POD_HEAD3"><a name="Global_directives">Global directives</a></h4>
 <dl class="POD_LIST">
 <dt class="POD_ITEM"><a name="type_bbd_type"><code>type: <i>bbd_type</i></code></a>
 <dd>
@@ -177,12 +179,21 @@ file.
 <dt class="POD_ITEM"><a name="version_RCS_or_CVS_i"><code>version: <i>RCS or CVS identifier string</i></code></a>
 <dd>
 This global directive introduces an RCS/CVS Id string.
+<dt class="POD_ITEM"><a name="encoding_encoding_na"><code>encoding: <i>encoding name</i></code></a>
+<dd>
+Treat this file as encoded in the given encoding (all names accepted
+by Perl/Encode may be used). If not set, then iso-8859-1 is assumed.
+</dl>
+<h4 class="POD_HEAD3"><a name="Line_block_directive">Line/block directives</a></h4>
+<dl class="POD_LIST">
 <dt class="POD_ITEM"><a name="by_source"><code>by: <i>source</i></code></a>
+<dt><a name="according_to_source"><code>according_to: <i>source</i></code></a>
 <dd>
 Denotes that the information in the next block or line was provided by
 <i>source</i>. This may be an email address or full name of an author, an
 URL providing more information, a Message-Id of a mail or posting, a
-date, or a combination of all. An alias for <code>by:</code> is <code>according_to:</code>.
+date, or a combination of all. <code>according_to:</code> is an alias for
+<code>by:</code>.
 <dt class="POD_ITEM"><a name="unverified_by_source"><code>unverified_by: <i>source</i></code></a>
 <dd>
 Same as &quot;by:&quot; for unverified data.
@@ -195,18 +206,27 @@ information is included in the Name field of the data line, preferred
 in a ISO-date similar notation (e.g. YYYY-MM-DD - YYYY-MM-DD for a
 starting and an end date).
 <dt class="POD_ITEM"><a name="unsure_why"><code>unsure: <i>why</i></code></a>
+<dt><a name="XXX_why"><code>XXX: <i>why</i></code></a>
 <dd>
-The next block or line is unsure information. The <i>why</i> text
-specifies an additional comment. An alias for <code>unsure:</code> is <code>XXX</code>.
+The next block or line is unsure or unclear information. The <i>why</i>
+text specifies an additional comment. This note should not appear in
+the processed data. <code>XXX</code> is an alias for <code>unsure:</code>.
 <dt class="POD_ITEM"><a name="alias_name"><code>alias: <i>name</i></code></a>
 <dd>
-Define another known name for the next line. For now, only one alias
-is allowed.
+Define another known name for the next line.
 <dt class="POD_ITEM"><a name="oldname_when_name"><code>oldname: <i>when</i>: <i>name</i></code></a>
 <dd>
 An old name for the next line. <i>when</i> is a time specification (best:
-some kind of ISO dates, but this is not yet specified). Multiple
-oldname directives are allowed for one record.
+some kind of ISO dates, but this is not yet specified). Unknown dates
+in <i>when</i> should be marked with a question mark. Multiple oldname
+directives are allowed for one record.
+<p class="POD_TEXT">
+Examples:
+</p>
+<pre class="POD_VERBATIM">
+    #: oldname: ?-20001001: Oldname street
+    #: oldname: 20001001-2005: Not-so-old-name street
+</pre>
 <dt class="POD_ITEM"><a name="section_section_name"><code>section: <i>section name</i></code></a>
 <dd>
 The next block is part of a named section. Sections may be nested.
@@ -215,13 +235,19 @@ The next block is part of a named section. Sections may be nested.
 Useful for preprocessing bbd data files to add a comment to each
 record in the block.
 <dt class="POD_ITEM"><a name="attributes_attribute"><code>attributes: <i>attribute</i>, ...</code></a>
+<dt><a name="attrs_attribute_"><code>attrs: <i>attribute</i>, ...</code></a>
 <dd>
 Define additional attributes for the following line or block. The
 attributes may be used in a preprocessing script to generate
-additional layers. An alias for <code>attributes</code> is <code>attrs</code>.
+additional layers. <code>attrs</code> is an alias for <code>attributes</code>.
 <dt class="POD_ITEM"><a name="note_string"><code>note: <i>string</i></code></a>
 <dd>
-A free text note, which shouldn't appear in the processed data.
+A free text note, which shouldn't (but may) appear in the processed
+data.
+<dt class="POD_ITEM"><a name="internal_note_string"><code>internal_note: <i>string</i></code></a>
+<dd>
+A free text note, which must not appear in the processed data. It is
+just a note for editors.
 <dt class="POD_ITEM"><a name="see_also_string"><code>see_also: <i>string</i></code></a>
 <dd>
 A free text note, which refers to more information. This should be
@@ -230,9 +256,6 @@ typically a URL.
 <dd>
 Some postprocessing code may add the following line with the
 descriptive text <i>string</i> to the <code>fragezeichen</code> file.
-<dt class="POD_ITEM"><a name="XXX_string"><code>XXX: <i>string</i></code></a>
-<dd>
-A note if something is unclear about the following line.
 </dl>
 <h3 class="POD_HEAD2"><a name="Comment_lines">Comment lines</a></h3>
 <p class="POD_TEXT">
@@ -381,7 +404,13 @@ Regionalbahnen Zone B.
 Regionalbahnen Zone C.
 <dt class="POD_ITEM"><a name="R0"><code>R0</code></a>
 <dd>
-Regionalbahnen au&szlig;er Betrieb oder in Bau.
+Regionalbahnen au&szlig;er Betrieb oder ohne regelm&auml;&szlig;igen Betrieb.
+<dt class="POD_ITEM"><a name="RBau"><code>RBau</code></a>
+<dd>
+Regionalbahnen in Bau.
+<dt class="POD_ITEM"><a name="RG"><code>RG</code></a>
+<dd>
+G&uuml;terbahnen, Verbindungskurven.
 <dt class="POD_ITEM"><a name="S"><code>S</code></a>
 <dd>
 S-Bahnen au&szlig;erhalb des Stadtgebiets.
@@ -396,7 +425,10 @@ S-Bahnen Zone B.
 S-Bahnen Zone C.
 <dt class="POD_ITEM"><a name="S0"><code>S0</code></a>
 <dd>
-S-Bahnen au&szlig;er Betrieb oder in Bau.
+S-Bahnen au&szlig;er Betrieb.
+<dt class="POD_ITEM"><a name="SBau"><code>SBau</code></a>
+<dd>
+S-Bahnlinien in Bau.
 <dt class="POD_ITEM"><a name="U"><code>U</code></a>
 <dd>
 U-Bahnen au&szlig;erhalb des Stadtgebiets.
@@ -411,7 +443,10 @@ U-Bahnen Zone B.
 U-Bahnen Zone C.
 <dt class="POD_ITEM"><a name="U0"><code>U0</code></a>
 <dd>
-U-Bahnen au&szlig;er Betrieb oder in Bau.
+U-Bahnen au&szlig;er Betrieb.
+<dt class="POD_ITEM"><a name="UBau"><code>UBau</code></a>
+<dd>
+U-Bahnlinien in Bau.
 </dl>
 <h3 class="POD_HEAD2"><a name="QUALITY">QUALITY</a></h3>
 <p class="POD_TEXT">
@@ -615,7 +650,7 @@ Slaven Rezic &lt;slaven@rezic.de&gt;
 </p>
 <hr>
 <a class="POD_NAVLINK" href="#Pod_TOP_OF_PAGE">[Top]</a>
-Generated by Marek::Pod::HTML 0.49 on Sun Dec 11 22:36:50 2005
+Generated by Marek::Pod::HTML 0.49 on Mon May 15 21:40:58 2006
 </body>
 </html>
 

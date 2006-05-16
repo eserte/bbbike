@@ -195,8 +195,6 @@ menu and a desktop icon.
 If you have Cygwin (L<http://www.cygwin.org/>) installed, you can start
 a cygwin shell and follow the
 L<UNIX instructions|/Linux, Solaris, other UNIX operating systems>.
-Note that Tk 804.027 does not run under Cygwin (yet). Use Tk 800.025
-instead.
 
 =head3 Alternative Windows Installation (3)
 
@@ -242,7 +240,7 @@ this can be done with
 
 BBBike is a memory and cpu hog. You need at least 16 MB RAM on i386
 platforms (Solaris needs at least 32 MB), but with 32/64 MB it will
-work better. Some versions of BBBike are tested with: Solaris-2.5, Solaris 8, FreeBSD-3.5, FreeBSD-4.6, FreeBSD-4.9, Linux Suse 6.4, Linux Suse 7.0, Linux Debian 3.0, Red Hat Linux 8.0, Windows 95, Windows 98, Windows NT 4.0, Windows 2000. The
+work better. Some versions of BBBike are tested with: Solaris (Version 8 und 2.5), FreeBSD (Version 4.9, 4.6, 3.5), Linux (Suse 7.0 und 6.4, Debian 3.0, Red Hat 8.0), Windows (2000, NT 4.0, 98, 95), MacOSX 10.4. The
 development machine runs with FreeBSD.
 
 =head2 WWW version
@@ -253,7 +251,7 @@ L<http://www.bbbike.de>
 
 More information for the CGI version at:
 
-L<http://www.radzeit.de/cgi-bin/bbbike.cgi/info=1>
+L<http://bbbike.radzeit.de/cgi-bin/bbbike.cgi/info=1>
 
 
 =head2 Non GUI version
@@ -268,17 +266,20 @@ L<http://sourceforge.net/cvs/?group_id=19142> for instructions on how to use CVS
 To use the CVS repository from command line type the following:
 
     # login is necessary only once, leave the password empty
-    cvs -d :pserver:anonymous@cvs.sourceforge.net:/cvsroot/bbbike login
-    cvs -d :pserver:anonymous@cvs.sourceforge.net:/cvsroot/bbbike co bbbike
+    cvs -d :pserver:anonymous@bbbike.cvs.sourceforge.net:/cvsroot/bbbike login
+    cvs -d :pserver:anonymous@bbbike.cvs.sourceforge.net:/cvsroot/bbbike co bbbike
 
     # to update the next time
     cd bbbike
     cvs -q update -d
 
-The CVS repository is always up-to-date and also contains the current data.
+The CVS repository is always up-to-date and also contains the current
+data. B<Warning>: address of the CVS repository changed in May 2006. You
+have to make a fresh checkout (co) if you have an old repository
+checked out.
 
 To update only the data part of BBBike, just download the current data
-as a ZIP file from L<http://www.radzeit.de/cgi-bin/bbbike-data.cgi>. The ZIP file has to be
+as a ZIP file from L<http://www.bbbike.de/cgi-bin/bbbike-data.cgi>. The ZIP file has to be
 extracted in the BBBike program directory (Windows: in
 C<C:\Programme\BBBike\bbbike>).
 

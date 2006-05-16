@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Util.pm,v 1.21 2006/02/17 00:15:41 eserte Exp $
+# $Id: Util.pm,v 1.21 2006/02/17 00:15:41 eserte Exp eserte $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -382,12 +382,7 @@ sub valid_cache {
 sub get_cachefile {
     my($_cachefile) = @_;
     unless ($_cachefile =~ m|^/|) {
-#XXXdel:	my $cachefile = "$cachedir/${cacheprefix}_${_cachefile}";
-#	if (!-w $cachefile) {
-#	    $cachefile =
- "$cachedir/${cacheprefix}_" . $< . "_" . $_cachefile;
-#	}
-#	$cachefile;
+	"$cachedir/${cacheprefix}_" . $< . "_" . $_cachefile;
     } else {
 	$_cachefile;
     }

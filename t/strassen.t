@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen.t,v 1.9 2006/01/30 08:06:46 eserte Exp $
+# $Id: strassen.t,v 1.10 2006/05/16 06:13:07 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -224,8 +224,10 @@ EOF
     }
 }
 
-XXX: {
+SKIP: {
     my $f = "strassen-orig";
+    skip("$f not available", 5)
+	if (!-r "$FindBin::RealBin/../data/$f");
 
     my $s = Strassen->new($f, NoRead => 1);
     my $data = $s->{Data};

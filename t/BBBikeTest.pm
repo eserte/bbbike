@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.15 2006/03/11 14:58:19 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.16 2006/05/15 21:09:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -193,7 +193,10 @@ if (!eval {
 	my($a, $b, $info) = @_;
 
     SKIP: {
+	    $@ = "";
 	    eval {
+		no warnings 'numeric'; # cease Argument "2.121_08" isn't numeric in subroutine entry
+		require Data::Dumper;
 		Data::Dumper->VERSION(2.12); # Sortkeys
 	    };
 	    if ($@) {
