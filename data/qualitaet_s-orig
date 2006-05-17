@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.121 2006/05/09 20:38:08 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.122 2006/05/17 21:33:39 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1872,15676
@@ -1196,7 +1196,7 @@ Avenue Jean Mermoz: asphaltiert	Q0 3333,18034 3160,17756
 Am Friedhof: mäßiger asphaltiert	Q1 6391,17838 6376,17687 6347,17381
 Soldiner Str.: Kopfsteinpflaster	Q2 8466,17194 8561,17198 8677,17154
 Soldiner Str.: Asphalt	Q0 8677,17154 8904,17059 9096,16976
-Soldiner Str.: mäßiges Kopfsteinpflaster	Q2 9096,16976 9317,16882 9604,16760
+Soldiner Str.: mäßiges Kopfsteinpflaster	Q2 9096,16976 9317,16882 9435,16832 9604,16760
 Grüntaler Str. - Esplanade: Asphalt	Q0 9757,16912 9846,16981 9984,16968 10013,16972
 Kolonie: Gehwegplatten	Q1 10198,16929 10229,16653
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11013,16278 11306,16194 11550,16068
@@ -1357,6 +1357,8 @@ Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068
 #: by: Paul (no email):
 Eulerstr.: Asphalt	Q0 9268,16228 9494,16455
 #: by: anonymous vvv
+#: note: war mit "Q1" und "q2" gekennzeichnet --- ich benutze das schlechtere für die Qualität
+Freienwalder Str. (Wedding): Kopfsteinpflaster	Q2 9331,16624 9435,16832 9503,16988
 Heidenauer Str.: guter Asphalt	Q0 24418,14678 24328,14702 24230,14638 24146,14594
 Ferdinandstr. (Lichterfelde): guter Asphalt	Q0 5656,1882 5592,2021 5533,2143 5420,2379 5398,2422
 Rodenbergstr.: mäßiger Asphalt	Q2 11003,16196 11268,16113 11358,16067 11500,15988
@@ -3368,10 +3370,14 @@ Waldseeweg: Asphalt	Q0 3985,23814 3860,23767 3791,23730 3698,23657 3621,23548
 #: by: ^^^
 #: by: Volker (vheusing):
 Winklerstr.: Kopfsteinpflaster	Q2 23845,8220 23651,8353 23542,8429 23439,8499 23220,8648 23099,8726 23007,8788 22941,8834
-#: by: Karin Millonig:
+#: by: Karin Millonig: vvv
 In den Gärten: Verbundsteinpflaster	Q1 11756,1519 11713,1622
+(In den Gärten - Hochspannungsweg): fester Sandweg	Q1 11659,1943 11626,2037
+#: by: ^^^
 #: by: Carolin Prager
 Stettiner Str.: Asphalt	Q0 8928,16158 9107,16389 9331,16624
+#: by: Silke Schwabe:
+Rendtorffstr.: Asphalt	Q0 1304,537 1215,527 1212,559 1046,537
 #: by: Manuela Mühlhausen:
 Zweiwinkelweg: guter Beton	Q0 -7050,13807 -7050,13749 -7183,13730 -7175,13607 -6919,13557
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)

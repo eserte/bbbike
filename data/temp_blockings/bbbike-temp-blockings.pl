@@ -4443,4 +4443,13 @@ EOF
 userdel	2 -2086,-9891 -1245,-9999 -862,-9933
 EOF
      },
+     { from  => 1147845153, # 2006-05-17 07:52
+       until => 1147888800, # 2006-05-17 20:00
+       text  => 'Anklamer Str. (Mitte) in beiden Richtungen, zwischen Ackerstraße und Strelitzer Straße Veranstaltung, Straße vollständig gesperrt (bis 17.5.2006, 20.00 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_002793',
+       data  => <<EOF,
+userdel	2 9628,14215 9801,14288
+EOF
+     },
     );

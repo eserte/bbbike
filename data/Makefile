@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.93 2006/05/10 19:46:05 eserte Exp $
+# $Id: Makefile,v 2.95 2006/05/17 21:37:33 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -551,9 +551,10 @@ housenumbers:	housenumbers-orig
 	mv housenumbers~ housenumbers
 	-@$(READONLY) $@
 
-mount:	strassen hoehe
+mount:	strassen fragezeichen hoehe
 	-@$(WRITEABLE) $@
-	$(STEIGUNG_STAT) -minmount 1.0 -commentscompatible -str strassen -i hoehe -o $@~
+	$(STEIGUNG_STAT) -minmount 1.0 -commentscompatible \
+		-str strassen -str fragezeichen -i hoehe -o $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
@@ -849,8 +850,8 @@ check-disabled:	.check_label
 	fi
 	@touch $@
 
-.check_hoehe:	hoehe .strassen.tmp landstrassen landstrassen2 
-	$(CHECK_POINTS) hoehe .strassen.tmp landstrassen landstrassen2
+.check_hoehe:	hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
+	$(CHECK_POINTS) hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
 	@touch $@
 
 .check_ampeln:	ampeln .strassen.tmp landstrassen landstrassen2 fragezeichen
@@ -1213,6 +1214,7 @@ sort-coords.data:	sort-Berlin.coords.data sort-Potsdam.coords.data
 
 .for city in Berlin Potsdam
 sort-$(city).coords.data:
+	[ "`uname`" = FreeBSD ] && true || (echo "Sorting probably not correct on `uname`"; false)
 	-@$(WRITEABLE) $(city).coords.data~
 	mv $(city).coords.data $(city).coords.data~
 	$(SORT_NO_LOCALE) ${COORDS_DATA_SORT_OPTS} < $(city).coords.data~ > $(city).coords.data

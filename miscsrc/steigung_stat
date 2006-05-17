@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: steigung_stat,v 1.13 2006/04/20 20:25:09 eserte Exp $
+# $Id: steigung_stat,v 1.14 2006/05/17 21:33:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001,2003 Slaven Rezic. All rights reserved.
@@ -19,6 +19,7 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../data",
 	);
 use Strassen;
+use Strassen::MultiStrassen;
 #eval 'use BBBikeXS';
 use strict;
 use Getopt::Long;
@@ -27,7 +28,8 @@ my @steigung;
 my %hoehe;
 my $steigung_schwelle = 0.05; # darüber wird alles schwarz gezeichnet
 my $o = "/tmp/steigungen.bbd";
-my $strfile = "strassen";
+my @strfile;
+my $strfile_default = "strassen";
 my $i = "hoehe";
 my $v = 0;
 my $commentscompatible = 0;
@@ -37,7 +39,7 @@ my $min_mount;
 
 # -orig is obsolete!
 if (!GetOptions("i=s" => \$i,
-		"str=s" => \$strfile,
+		'str=s@' => \@strfile,
 		"o=s" => \$o,
 		"commentscompatible!" => \$commentscompatible,
 		"gefaelle!" => \$gefaelle,
@@ -45,13 +47,17 @@ if (!GetOptions("i=s" => \$i,
 		"minmount=f" => \$min_mount,
 		"v+" => \$v,
 	       )) {
-    die "usage: $0 [-str strassen.bbd] [-i hoehe.bbd] [-o output.bbd]
+    die "usage: $0 [-str strassen.bbd [-str ...]] [-i hoehe.bbd] [-o output.bbd]
                    [-[no]commentscompatible] [-[no]gefaelle] [-[no]orig] [-v]
 
-Default for -str: $strfile
+Default for -str: $strfile_default
 Default for -i: $i
 Default for -o: $o
 ";
+}
+
+if (!@strfile) {
+    push @strfile, $strfile_default;
 }
 
 if ($orig) {
@@ -64,8 +70,9 @@ if ($orig) {
     Karte::preload("Berlinmap1996", "Standard");
     $Karte::Berlinmap1996::obj = $Karte::Berlinmap1996::obj; # peacify -w
     $i = $i . "-orig";
+    @strfile = map { $_ . "-orig" } @strfile;
 }
-my $str = new Strassen ($orig ? "$strfile-orig" : $strfile);
+my $str = MultiStrassen->new(@strfile);
 my $netz = new StrassenNetz $str;
 print STDERR "make net..." if ($v);
 $netz->make_net;

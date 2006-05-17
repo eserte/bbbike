@@ -746,20 +746,21 @@ userdel	2 -862,22946 -1254,22853
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_002765',
-         'until' => 1147816800,
-         'text' => 'Linienstr. (Mitte) in Richtung Tucholskystr., ab Oranienburger Str. Straßenarbeiten, Einbahnstr. (bis 16.05.06)',
-         'from' => 1147721063,
-         'data' => 'userdel	q4; 9607,13507 9281,13374
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1148248800,
          'text' => 'L 079 Ludwigsfelde-Ahrensdorf zw. Ludwigsfelde und Ahrensdorf Straßenbauarbeiten Vollsperrung 20.05.2006-21.05.2006 ',
          'from' => 1147989600,
          'data' => 'userdel	2 -2086,-9891 -1245,-9999 -862,-9933
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002793',
+         'until' => 1147888800,
+         'text' => 'Anklamer Str. (Mitte) in beiden Richtungen, zwischen Ackerstraße und Strelitzer Straße Veranstaltung, Straße vollständig gesperrt (bis 17.5.2006, 20.00 Uhr)',
+         'from' => 1147845153,
+         'data' => 'userdel	2 9628,14215 9801,14288
 ',
          'type' => 'gesperrt'
        }
