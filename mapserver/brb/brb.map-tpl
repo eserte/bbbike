@@ -1865,11 +1865,13 @@ LAYER
 [% PROCESS CLASS_ORT cat=0 size=4 lblsize=8 minscale=10000 maxscale=35000 -%]
 [% PROCESS CLASS_ORT cat=0 size=6 lblsize=10 minscale=undef maxscale=10000 -%]
 
-[% PROCESS CLASS_ORT cat=1 size=4 lblsize=7 minscale=35000 maxscale=300000 -%]
+[% PROCESS CLASS_ORT cat=1 size=2 lblsize=6 minscale=200000 maxscale=300000 -%]
+[% PROCESS CLASS_ORT cat=1 size=4 lblsize=7 minscale=35000 maxscale=200000 -%]
 [% PROCESS CLASS_ORT cat=1 size=6 lblsize=9 minscale=10000 maxscale=35000 -%]
 [% PROCESS CLASS_ORT cat=1 size=8 lblsize=11 minscale=undef maxscale=10000 -%]
 
-[% PROCESS CLASS_ORT cat=2 size=6 lblsize=8 minscale=35000 maxscale=400000 -%]
+[% PROCESS CLASS_ORT cat=2 size=4 lblsize=7 minscale=200000 maxscale=400000 -%]
+[% PROCESS CLASS_ORT cat=2 size=6 lblsize=8 minscale=35000 maxscale=200000 -%]
 [% PROCESS CLASS_ORT cat=2 size=8 lblsize=10 minscale=10000 maxscale=35000 -%]
 [% PROCESS CLASS_ORT cat=2 size=10 lblsize=12 minscale=undef maxscale=10000 -%]
 
