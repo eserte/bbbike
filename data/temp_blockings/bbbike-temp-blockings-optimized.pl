@@ -433,7 +433,7 @@ userdel	q4 55158,-95910 54884,-96292
          'until' => 1152309600,
          'text' => 'B 246 Trebbin-Beelitz OD Löwendorf, zw. Ahrensdorfer Str. u. Schillerstr. Straßen- und Kanalbau Vollsperrung 20.02.2006-07.07.2006 ',
          'from' => 1140303600,
-         'data' => 'userdel	q4 -2687,-21261 -2815,-20920
+         'data' => 'userdel	q4 -2643,-21212 -2815,-20920
 ',
          'type' => 'handicap'
        },
@@ -755,12 +755,36 @@ userdel	2 -862,22946 -1254,22853
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'source_id' => 'IM_002793',
-         'until' => 1147888800,
-         'text' => 'Anklamer Str. (Mitte) in beiden Richtungen, zwischen Ackerstraße und Strelitzer Straße Veranstaltung, Straße vollständig gesperrt (bis 17.5.2006, 20.00 Uhr)',
-         'from' => 1147845153,
-         'data' => 'userdel	2 9628,14215 9801,14288
+         'until' => 1148205600,
+         'text' => 'Straße am Nordbahnhof zwischen Invalidenstraße und Zinnowitzer Veranstaltung, Straße gesperrt. Dauer: 18.05.2006, 06:00 Uhr bis 21.05.2006 12:00 Uhr. ',
+         'from' => 1147838400,
+         'data' => 'userdel	2 9076,13915 9006,14005
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1155938400,
+         'text' => 'L 011 Perleberger Chaussee zw. Weisen, Walhausstr. u. Wittenberge, Kyritzer Str. Straßenausbau Vollsperrung 22.05.2006-18.08.2006 ',
+         'from' => 1148162400,
+         'data' => 'userdel	2 -102390,65175 -102434,66177
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1151704800,
+         'text' => 'L 372 Gubener Str. südl. Eisenhüttenstadt, Kreuzung Schrabisch Mühle Bau Kreisverkehr Vollsperrung 14.11.2005-30.06.2006 ',
+         'from' => 1131836400,
+         'data' => 'userdel	q4 95351,-29486 95494,-29935 95829,-31753
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1148162400,
+         'text' => 'B 246 Trebbin-Beelitz OD Löwendorf, zw. Ahrensdorfer Str. u. Schillerstr. Deckeneinbau Vollsperrung 20.05.2006-20.05.2006 ',
+         'from' => 1147989600,
+         'data' => 'userdel	2 -2643,-21212 -2815,-20920
 ',
          'type' => 'gesperrt'
        }

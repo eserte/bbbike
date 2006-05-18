@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeMapserver.pm,v 1.29 2005/11/19 22:54:57 eserte Exp $
+# $Id: BBBikeMapserver.pm,v 1.30 2006/05/18 22:37:29 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2005 Slaven Rezic. All rights reserved.
@@ -186,6 +186,7 @@ sub start_mapserver {
 	}
     }
     my $scope       = $args{'-scope'};
+    $self->{DEBUG}  = $args{'-debug'} if exists $args{'-debug'};
 
     my $map_path = $self->create_mapfile(%args);
 

@@ -1086,7 +1086,7 @@ EOF
        text  => 'B 101; (Luckenwalder-, Berliner Str.); OD Trebbin Straßenbauarbeiten Vollsperrung 27.10.2004-31.03.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	q4 -1623,-21150 -1887,-21501
+userdel	q4 -1623,-21150 -1902,-21499
 EOF
      },
      { from  => 1097964000, # 2004-10-17 00:00
@@ -1758,7 +1758,7 @@ EOF
        text  => 'B 101; (Berliner Str.); OD Trebbin, zw. Bahnhofstr. u. Luckenwalder Str., Straßenbauarbeiten, Vollsperrung, 09.08.2005-29.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -1887,-21501 -1623,-21150
+userdel	q4 -1902,-21499 -1623,-21150
 EOF
      },
      { from  => 1113688800, # 2005-04-17 00:00
@@ -1824,7 +1824,7 @@ EOF
        text  => 'B 101; (Luckenwalder-, Berliner Str.); OD Trebbin, Knoten Beelitzer Str. Straßenbauarbeiten Vollsperrung 01.04.2005-04.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -1887,-21501 -1992,-21489
+userdel	q4 -1902,-21499 -1969,-21492
 EOF
      },
      { from  => 1114468172, # 2005-04-26 00:29
@@ -3670,7 +3670,7 @@ EOF
        text  => 'B 246 Trebbin-Beelitz OD Löwendorf, zw. Ahrensdorfer Str. u. Schillerstr. Straßen- und Kanalbau Vollsperrung 20.02.2006-07.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -2687,-21261 -2815,-20920
+userdel	q4 -2643,-21212 -2815,-20920
 EOF
      },
      { from  => 1140509431, # 2006-02-21 09:10
@@ -4450,6 +4450,38 @@ EOF
        source_id => 'IM_002793',
        data  => <<EOF,
 userdel	2 9628,14215 9801,14288
+EOF
+     },
+     { from  => 1147838400, # 2006-05-17 06:00
+       until => 1148205600, # 2006-05-21 12:00
+       text  => 'Straße am Nordbahnhof zwischen Invalidenstraße und Zinnowitzer Veranstaltung, Straße gesperrt. Dauer: 18.05.2006, 06:00 Uhr bis 21.05.2006 12:00 Uhr. ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 9076,13915 9006,14005
+EOF
+     },
+     { from  => 1148162400, # 2006-05-21 00:00
+       until => 1155938400, # 2006-08-19 00:00
+       text  => 'L 011 Perleberger Chaussee zw. Weisen, Walhausstr. u. Wittenberge, Kyritzer Str. Straßenausbau Vollsperrung 22.05.2006-18.08.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -102390,65175 -102434,66177
+EOF
+     },
+     { from  => 1131836400, # 2005-11-13 00:00
+       until => 1151704800, # 2006-07-01 00:00
+       text  => 'L 372 Gubener Str. südl. Eisenhüttenstadt, Kreuzung Schrabisch Mühle Bau Kreisverkehr Vollsperrung 14.11.2005-30.06.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 95351,-29486 95494,-29935 95829,-31753
+EOF
+     },
+     { from  => 1147989600, # 2006-05-19 00:00
+       until => 1148162400, # 2006-05-21 00:00
+       text  => 'B 246 Trebbin-Beelitz OD Löwendorf, zw. Ahrensdorfer Str. u. Schillerstr. Deckeneinbau Vollsperrung 20.05.2006-20.05.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -2643,-21212 -2815,-20920
 EOF
      },
     );

@@ -9,7 +9,7 @@
    UNLESS TITLE.defined; TITLE = "Berlin/Brandenburg - BBBike - Mapserver"; END;
    UNLESS HEADLINE_HTML.defined; HEADLINE_HTML = "Berlin/Brandenburg"; END;
    UNLESS MOREINFO_HTML.defined; MOREINFO_HTML = ""; END;
-   UNLESS EXTRA_LAYERS.defined && EXTRA_LAYERS.size > 0; EXTRA_LAYERS = []; END;
+ # XXX This is wrong: an array is never defined?! UNLESS EXTRA_LAYERS.defined && EXTRA_LAYERS.size > 0; EXTRA_LAYERS = []; END;
 -%]
 [% SET style="new" -%]
 <html>
@@ -116,7 +116,7 @@
       <label><input type="checkbox" name="layer" value="fragezeichen" [% t('fragezeichen_check') %]> Fragezeichen</label><br>
       <label><input type="checkbox" name="layer" value="route" [% t('route_check') %]> Route/Markierung</label><br>
 [% FOR layer = EXTRA_LAYERS -%]
-[% SET check_name = layer.name _ 'check' -%]
+[% SET check_name = layer.name _ '_check' -%]
       <label><input type="checkbox" name="layer" value="[% layer.name %]" [% t(check_name) %]> [% layer.label %]</label><br>
 [% END -%]
       </div>

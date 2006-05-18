@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.84 2006/05/09 20:40:02 eserte Exp $
+# $Id: Makefile,v 1.85 2006/05/18 22:37:41 eserte Exp $
 #
 
 # Targets:
@@ -33,6 +33,7 @@ LOCAL_HTML_URL?=	${LOCAL_URL}/BBBike
 DATA_DIR=		data
 TEMP_BLOCKINGS_DIR=	data/temp_blockings
 BBBIKE_RADZEIT_SSH_HOST?=	${BBBIKE_RADZEIT_HOST}
+STERNFAHRT_YEAR?=	2006
 
 EXTRA_MISCSRC_FILES=	bbd2esri winter_optimization.pl
 EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html
@@ -370,10 +371,8 @@ prepare-bbbike-dist-prog-bbbike-htdocs:
 	    ln -s ../BBBike ${CURDIR}/$(HTDOCS)/BBBike
 	@echo "Do 'ln -s ../BBBike ${BBBIKE_RADZEIT_APACHE_DIR}/$(HTDOCS)/BBBike' manually on server"
 
-prepare-bbbike-dist-prog-bbbike-images:
-	cp -pf ${BBBIKE_ROOT_DIR}/images/stern2005_titel.jpg \
-	       ${CURDIR}/BBBike/images/
-	chmod ugo+r ${CURDIR}/BBBike/images/stern2005_titel.jpg
+prepare-bbbike-dist-prog-bbbike-images:	prepare-sternfahrt2005-dist-images \
+					prepare-sternfahrt${STERNFAHRT_YEAR}-dist-images
 
 prepare-bbbike-dist-prog-bbbike-tmp:
 	chmod 777 ${CURDIR}/BBBike/tmp
@@ -488,6 +487,33 @@ prepare-touren-dist:
 prepare-routopedia-dist:
 	cd ${BBBIKE_ROOT_DIR}/routopedia && ${MAKE} distcheck
 	(umask 022; cd ${BBBIKE_ROOT_DIR}/routopedia && perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread(),'${CURDIR}/routopedia', 'best');")
+
+prepare-sternfahrt-dist:	prepare-sternfahrt${STERNFAHRT_YEAR}-dist
+
+prepare-sternfahrt${STERNFAHRT_YEAR}-dist:	prepare-sternfahrt${STERNFAHRT_YEAR}-dist-data \
+						prepare-sternfahrt${STERNFAHRT_YEAR}-dist-images
+
+prepare-sternfahrt2005-dist-images:
+	cp -pf ${BBBIKE_ROOT_DIR}/images/stern2005_titel.jpg \
+	       ${CURDIR}/BBBike/images/
+	chmod ugo+r ${CURDIR}/BBBike/images/stern2005_titel.jpg
+
+prepare-sternfahrt${STERNFAHRT_YEAR}-dist-images:
+	cp -pf ${BBBIKE_ROOT_DIR}/images/stern${STERNFAHRT_YEAR}_titel.jpg \
+	       ${CURDIR}/BBBike/images/
+	chmod ugo+r ${CURDIR}/BBBike/images/stern${STERNFAHRT_YEAR}_titel.jpg
+
+prepare-sternfahrt${STERNFAHRT_YEAR}-dist-data:
+	mkdir -p ${CURDIR}/BBBike/misc/sternfahrt_${STERNFAHRT_YEAR}
+	cp -pf ${BBBIKE_ROOT_DIR}/misc/sternfahrt_${STERNFAHRT_YEAR}/treffpunkte.cgi \
+	       ${CURDIR}/BBBike/misc/sternfahrt_${STERNFAHRT_YEAR}/
+	chmod ugo+r,ugo+x ${CURDIR}/BBBike/misc/sternfahrt_${STERNFAHRT_YEAR}/treffpunkte.cgi
+	cp -pf ${BBBIKE_ROOT_DIR}/misc/sternfahrt_${STERNFAHRT_YEAR}/treffpunkte${STERNFAHRT_YEAR}.bbd \
+	       ${CURDIR}/BBBike/misc/sternfahrt_${STERNFAHRT_YEAR}/
+	chmod ugo+r,ugo+x ${CURDIR}/BBBike/misc/sternfahrt_${STERNFAHRT_YEAR}/treffpunkte${STERNFAHRT_YEAR}.bbd
+	[ -e ${CURDIR}/cgi-bin/sternfahrt${STERNFAHRT_YEAR}-treffpunkte.cgi ] || \
+		ln -s ${BBBIKE_ROOT_DIR}/misc/sternfahrt_${STERNFAHRT_YEAR}/treffpunkte.cgi \
+		      ${CURDIR}/cgi-bin/sternfahrt${STERNFAHRT_YEAR}-treffpunkte.cgi
 
 test:	test-on-remote test-from-local
 

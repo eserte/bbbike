@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike-teaser.pl,v 1.15 2006/01/14 00:07:05 eserte Exp $
+# $Id: bbbike-teaser.pl,v 1.15 2006/01/14 00:07:05 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -33,7 +33,7 @@ sub teaser {
 				#teaser_perltk(),
 				teaser_mapserver(),
 				#teaser_routen(),
-				#teaser_sternfahrt(),
+				teaser_sternfahrt(),
 				#teaser_dobli(),
 			       ];
     $teasers_optional{"en"} = [],
@@ -43,7 +43,7 @@ sub teaser {
 				#teaser_perltk(),
 				teaser_mapserver(),
 				#teaser_routen(),
-				#teaser_sternfahrt(),
+				teaser_sternfahrt(),
 				#teaser_dobli(),
 			       ];
 
@@ -65,7 +65,7 @@ sub teaser {
 
 sub teaser_sternfahrt {
     my $year = (localtime)[5]+1900;
-    my $url = "http://www.radzeit.de/mapserver/brb/sternfahrt${year}_init.html";
+    my $url = "http://bbbike.radzeit.de/mapserver/brb/sternfahrt${year}_init.html";
     <<EOF
 <div class="teaser"><a style="text-decoration:none;" href="$url"><img style="padding:3px 0px 3px 0px; border:0px;" src="$bbbike_images/stern${year}_titel.jpg" border="0"></a><br><a href="$url">Die Routen der Sternfahrt ${year}</a></div>
 EOF
