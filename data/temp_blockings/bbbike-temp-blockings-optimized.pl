@@ -787,6 +787,15 @@ userdel	2 -862,22946 -1254,22853
          'data' => 'userdel	2 -2643,-21212 -2815,-20920
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002798',
+         'until' => 1148248800,
+         'text' => 'Herrmannstr. (Neukölln) in beiden Richtungen zwischen Werbellinstr. und Thomasstr. Veranstaltung, Straße vollständig gesperrt (bis 21.05.2006 24 Uhr)',
+         'from' => 1148113240,
+         'data' => 'userdel	2 11979,8014 11998,7948 12025,7852 12041,7788 12055,7751 12075,7696 12090,7651 12122,7553 12180,7387
+',
+         'type' => 'gesperrt'
        }
      
 );

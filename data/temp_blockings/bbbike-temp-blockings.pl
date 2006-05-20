@@ -4484,4 +4484,13 @@ EOF
 userdel	2 -2643,-21212 -2815,-20920
 EOF
      },
+     { from  => 1148113240, # 2006-05-20 10:20
+       until => 1148248800, # 2006-05-22 00:00
+       text  => 'Herrmannstr. (Neukölln) in beiden Richtungen zwischen Werbellinstr. und Thomasstr. Veranstaltung, Straße vollständig gesperrt (bis 21.05.2006 24 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_002798',
+       data  => <<EOF,
+userdel	2 11979,8014 11998,7948 12025,7852 12041,7788 12055,7751 12075,7696 12090,7651 12122,7553 12180,7387
+EOF
+     },
     );
