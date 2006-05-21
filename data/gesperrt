@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.101 2006/05/17 21:38:00 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.101 2006/05/17 21:38:00 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -116,7 +116,7 @@ Dönhoffstr.	1 18744,8638 18609,8717 18514,8773 18201,8984 18124,9056
 Bersarinplatz	1 13742,12538 13698,12544 13678,12571 13686,12611 13710,12633 13747,12642 13770,12617 13776,12571 13742,12538
 Petersburger Platz	1 13467,12978 13558,12766
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2252,11037
-Schuckertdamm	1 756,14787 1348,14958 1488,14952
+Schuckertdamm	1 746,14817 1109,14911 1343,14972 1488,14952
 Am Kleinen Wannsee	1 -5499,1349 -5485,1274 -5535,1204 -5742,1142
 Oberhofer Platz	1 5495,1964 5469,1949 5437,1941 5382,2080 5411,2098 5443,2109 5495,1964
 Scheelestr.	1 5740,1227 5697,1098 5565,969 5424,882 5337,829
@@ -287,6 +287,7 @@ Saltykowstr.	1 12726,7887 12865,7923
 Barbarastr.	1 6451,3034 6325,2904
 Leipziger Platz	1 8572,11506 8580,11468 8624,11436 8703,11441 8735,11474 8733,11524 8729,11558 8682,11590 8601,11581 8569,11543 8572,11506
 Crusemarkstr.	1 10825,18634 10712,18975
+Kavalierstr.	1 10625,18831 10721,18575
 Brommystr.: Privatstr.	2 12509,11025 12567,11115
 (Hauptstr. - Kynaststr.)	1 15181,10766 15030,10819 14881,10864
 Luitpoldstr., Verlängerung über Schulhof, nicht immer geöffnet!	2 6611,9879 6670,9887
@@ -302,6 +303,8 @@ Alte Späthbrücke	2 14457,5097 14540,5140
 Rutherfordstr.: nicht permanent geöffnet	2 19071,2746 19207,2592
 Katzengraben	1 22445,4758 22449,4712
 Karlstr.	1 22554,4380 22460,4125
+Schwiegersteig	1 1134,14721 1130,14823 1109,14911
+Moränenweg	1 3216,21409 3304,21205
 Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12685,-870 -12712,-734 -12730,-627
 Hans-Thoma-Str.	1 -12190,-775 -12262,-612 -12306,-496
@@ -343,7 +346,6 @@ Walsroder Str.	1s 6396,5125 6295,5132 6203,5138 6089,5145
 Hünensteig	1s 6415,5028 6393,5028 6396,5125
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s 12119,9823 11946,9913 11735,10022 11512,10105
 Vorbergstr.	1s 7022,9211 7137,9216 7315,9156
-Gubener Str.	1s 13411,11899 13362,12002
 Czeminskistr.	1s 7615,8927 7570,8863
 Stallschreiberstr.	1s 10489,11405 10620,11244 10678,11172
 Jahnstr.	1s 11493,9128 11509,9392
@@ -374,6 +376,12 @@ Stephanstr.	1s 6526,4475 6377,4490
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
 Björnsonstr.	1s 10229,16653 10215,16527
+Gropiusstr. -> Badstr.: Gitter auf Mittelstreifen	3 8389,16214 8543,16364 8486,16425
+Gropiusstr. -> Travemünder Str.: Gitter auf Mittelstreifen	3 8389,16214 8543,16364 8592,16406
+Badstr. -> Gropiusstr.: Gitter auf Mittelstreifen	3 8659,16327 8543,16364 8389,16214
+Badstr. -> Travemünder Str.: Gitter auf Mittelstreifen	3 8486,16425 8543,16364 8592,16406
+Travemünder Str. -> Gropiusstr.: Gitter auf Mittelstreifen	3 8592,16406 8543,16364 8389,16214
+Travemünder Str. -> Badstr.: Gitter auf Mittelstreifen	3 8592,16406 8543,16364 8659,16327
 Heidenauer Str. -> Riesaer Str.: Straßenbahntrasse	3 24146,14594 24097,14575 24120,14526
 Riesaer Str. -> Heidenauer Str.: Straßenbahntrasse	3 24020,14737 24097,14575 24146,14594
 Rummelsburger Str. -> Wattstr.: wegen Überführung nicht überquerbar	3 17839,7365 17686,7589 17633,7286
@@ -473,6 +481,8 @@ Wörther Str. -> Schönhauser Allee: U-Bahnrampe	3 11163,14548 10924,14491 10944,1
 Kopenhagener Str. -> Schönhauser Allee: U-Bahnviadukt	3 10722,15921 10972,15895 10977,15944
 Schönhauser Allee -> Kopenhagener Str.: U-Bahnviadukt	3 10963,15789 10972,15895 10722,15921
 Schönhauser Allee: U-Bahnviadukt	3 10949,15674 10930,15522 11055,15504
+Hallandstr. -> Berliner Str.: U-Bahnrampe	3 11285,16879 10999,16830 11042,16605
+Berliner Str. -> Hallandstr.: U-Bahnrampe	3 10986,16897 10999,16830 11285,16879
 Thulestr. -> Berliner Str.: U-Bahnrampe	3 11278,16609 11042,16605 11039,16553
 Berliner Str. -> Thulestr.: U-Bahnrampe	3 10999,16830 11042,16605 11278,16609
 Berliner Str. -> Schonensche Str.: U-Bahnrampe	3 11042,16605 11039,16553 11287,16515
@@ -659,6 +669,8 @@ Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3 6815,8691 6912,8617 
 Hauptstr. -> Parkweg Heinrich-Lassen-Park: Mittelstreifen	3 6765,8480 6912,8617 6815,8691
 Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3 18628,10177 18561,10341 18482,10306
 Otto-Schmirgal-Str. -> Am Tierpark: Straßenbahntrasse	3 18482,10306 18561,10341 18446,10620
+tragen (Treppe)	0:30:-133 4798,3394
+tragen (zwei Treppen, je ca. 10 Stufen)	0:30:-246 8822,16873
 tragen (Treppe)	0:30:0 14390,5443
 tragen (Treppe)	0:30:90 14335,5425
 tragen (ca. 35 Stufen)	0:30:-108 18180,12262
@@ -726,6 +738,7 @@ tragen (Treppe)	0:30:62 3025,13568
 tragen (Treppe, ca. 10 Stufen)	0:30:-12 20933,2390
 tragen (Treppe)	0:30:-43 -633,12739
 tragen (Treppe)	0:30:-118 -7418,181
+Drängelgitter	BNP:5:-153 8776,16718
 Kurzschranke	BNP:5:-45 6739,15307
 Drängelgitter	BNP:5:3 24759,11666
 Drängelgitter	BNP:5:-17 24815,11329
@@ -778,6 +791,8 @@ Schwingtor an der Luiseninsel	BNP:10:-125 7706,11612
 Schwingtor an der Luiseninsel	BNP:10:-126 7742,11639
 Schranke	BNP:5:12 25558,997
 Drängelgitter	BNP:5:-118 8810,14373
+Pankeweg: Bauarbeiten noch nicht abgeschlossen	2:inwork 8904,17059 8836,16867
+Brücke über Panke fehlt noch	2:inwork 8321,15386 8290,15406
 Köbisdreieck: Bauarbeiten	2 7160,11225 6853,11336
 Budapester Str.: Bauarbeiten, Fußgängerüberweg gesperrt	3nocross::inwork 5716,10978 5831,10978 6135,10982
 Hedwigskirchgasse: Bauarbeiten	2:inwork 9743,12239 9756,12139

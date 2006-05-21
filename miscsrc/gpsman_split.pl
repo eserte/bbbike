@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: gpsman_split.pl,v 1.4 2004/03/02 08:37:58 eserte Exp $
+# $Id: gpsman_split.pl,v 1.5 2006/05/21 06:57:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -107,11 +107,12 @@ sub usage {
 	print STDERR "$msg\n";
     }
     die <<EOF;
-usage: $0 [-bydate] [-markasinexact] [-destdir directory] gpsmanfile
+usage: $0 [-bydate] [-markasinexact | -markwithquestion] [-destdir directory] gpsmanfile
 
--markasinexact: add "~" to elevation to mark the point as inexact
--destdir:       use another destination directory than $destdir
--bydate:        split the data by date
+-markasinexact:    add "~" to elevation to mark the point as inexact
+-markwithquestion: add "?" to elevation to mark the point as questionable
+-destdir:          use another destination directory than $destdir
+-bydate:           split the data by date
 EOF
 }
 

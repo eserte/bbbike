@@ -4,7 +4,7 @@
 # -*- perl -*-
 
 #
-# $Id: LogTracker.pm,v 1.20 2006/01/09 00:00:42 eserte Exp $
+# $Id: LogTracker.pm,v 1.21 2006/05/21 19:50:57 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -31,8 +31,9 @@ use vars qw($VERSION $lastcoords
 	    $do_search_route %show
 	    $error_checks $ua $safe
             $remoteuser $remotehost $logfile $ssh_cmd $tracking $tail_pid $bbbike_cgi
-	    $last_parselog_call);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
+	    $last_parselog_call $session_dir_prefix
+	   );
+$VERSION = sprintf("%d.%02d", q$Revision: 1.21 $ =~ /(\d+)\.(\d+)/);
 
 # XXX replace all %layer, %show etc. with @layer, @show...
 use constant ROUTES => 0;
@@ -41,6 +42,7 @@ use constant MAPSERVER => 1;
 use URI::Escape;
 use Strassen::Core;
 use CGI ();
+use Storable qw(thaw);
 
 $bbbike_cgi = "http://localhost/bbbike/cgi/bbbike.cgi"
     if !defined $bbbike_cgi;
@@ -52,13 +54,16 @@ $show{mapserver} = 1
     if !defined $show{mapserver};
 $ssh_cmd = "ssh"
     if !defined $ssh_cmd;
+$session_dir_prefix = "/tmp/bbbike-sessions-1000-"
+    if !defined $session_dir_prefix;
 
 @types = qw(routes mapserver);
 
 sub register {
     my(@plugin_args) = @_;
+    # XXX %switch is a misnomer: it's actually no switch, but takes an argument
     my %switch = map {($_=>1)} qw(logfile remoteuser remotehost bbbike_cgi
-				  error_checks);
+				  error_checks ssh_cmd);
     for(my $i=0; $i<$#plugin_args; $i+=2) {
 	my($k,$v) = @plugin_args[$i..$i+2];
 	if    (exists $switch{$k}) {
@@ -112,7 +117,7 @@ sub add_button {
               [Button => "Set preferences",
                -command => sub {
                    my $t = $main::top->Toplevel(-title => "LogTracker");
-		   $t->gridColumnconfigure($_, -weight => 1) for 0..1;
+		   $t->gridColumnconfigure($_, -weight => 1) for 1; # don't expand col 0
                    require Tk::PathEntry;
 		   my $e;
                    Tk::grid($t->Label(-text => "Logfile"),
@@ -421,17 +426,35 @@ sub _tail_log {
 	exec "tail", "-f", $logfile;
 	die $!;
     } else {
-	my @ssh_cmd;
-	if ($ssh_cmd =~ /\s+/) {
-	    @ssh_cmd = split /\s+/, $ssh_cmd;
-	} else {
-	    @ssh_cmd = $ssh_cmd;
-	}
-	exec @ssh_cmd, "-n", (defined $remoteuser && $remoteuser ne ""
-			      ? ("-l", $remoteuser) : ()
-			     ), $remotehost, "tail", "-f", $logfile;
+	my @ssh_cmd = _get_ssh_cmd();
+	push @ssh_cmd, "tail", "-f", $logfile;
+	exec @ssh_cmd;
 	die $!;
     }
+}
+
+sub _get_coords_session {
+    my($filename) = @_;
+    my @ssh_cmd = _get_ssh_cmd();
+    push @ssh_cmd, "cat", $filename;
+    open my $fh, "-|", @ssh_cmd
+	or die "Can't execute @ssh_cmd: $!";
+    local $/ = undef;
+    my $buf = <$fh>;
+    eval { thaw $buf };
+}
+
+sub _get_ssh_cmd {
+    my @ssh_cmd;
+    if ($ssh_cmd =~ /\s+/) {
+	@ssh_cmd = split /\s+/, $ssh_cmd;
+    } else {
+	@ssh_cmd = $ssh_cmd;
+    }
+    push @ssh_cmd, "-n", (defined $remoteuser && $remoteuser ne ""
+			  ? ("-l", $remoteuser) : ()
+			 ), $remotehost;
+    @ssh_cmd;    
 }
 
 sub _open_any_log {
@@ -528,13 +551,35 @@ sub parse_line {
 	if ($error_checks && $status_code =~ /^[45]/) {
 	    die "Status $status_code $line\n";
 	}
-	if ($query_string =~ m{coords=([^&; ]+)}) {
-	    my $coords = uri_unescape(uri_unescape($1));
-	    my $date = "???";
-	    if ($line =~ m{(\d+/[a-z]+/\d+:\d+:\d+:\d+)}i) {
-		$date = $1;
-	    }
 
+	my $date = "???";
+	my $tz_add;
+	if ($line =~ m{(\d+/[a-z]+/\d+:\d+:\d+:\d+)(\s+(?:[+-])?\d{2}\d{2})}i) {
+	    $date = $1;
+	    $tz_add = $2;
+	}
+
+	my $coords;
+	if ($query_string =~ m{coords=([^&; ]+)}) {
+	    $coords = uri_unescape(uri_unescape($1));
+	} elsif ($query_string =~ m{coordssession=([^&; ]+)}) {
+	    my $coords_session = uri_unescape($1); # XXX twice?
+	    my($sess1,$sess2) = split /_/, $coords_session;
+	    $sess1 =~ s{^:}{};
+	    my $time = apache2epoch("$date$tz_add");
+	    my @l = localtime $time;
+	    $l[4]++;
+	    $l[5]+=1900;
+	    my $session_file = $session_dir_prefix . sprintf("%04d-%02d-%02d", @l[5,4,3]) . "/$sess1";
+	    my $session = _get_coords_session($session_file);
+	    if (!$session) {
+		warn "Cannot get session from $session_file, skipping";
+	    } else {
+		$coords = $session->{routestringrep} || undef;
+	    }
+	}
+
+	if (defined $coords) {
 	    my($startname, $vianame, $zielname);
 	    if ($line =~ m{startname=([^&; ]+)}) {
 		($startname = $1) =~ s/\+/ /g;
@@ -946,6 +991,36 @@ sub worst_routes_of_the_day {
     untie *BW if $is_tied;
 }
 
+# REPO BEGIN
+# REPO NAME apache2epoch /home/e/eserte/work/srezic-repository 
+# REPO MD5 e3d19a71595fe57b8b1200c8fd1cc60d
+
+=head2 apache2epoch($time)
+
+=for category Date
+
+Given an apache accesslog date/time (21/Jul/2003:21:30:19 +0200)
+return a Unix epoch time. Return undef if not parseable.
+
+=cut
+
+sub apache2epoch {
+    my $str = shift;
+    my($d,$m,$y,$H,$M,$S,$tzsig,$tzh,$tzm) = $str =~ m[(\d{1,2})/(...)/(\d{4}):(\d{2}):(\d{2}):(\d{2})\s+([+-])?(\d{2})(\d{2})];
+    if (defined $d) {
+	$m = {qw(Jan 0 Feb 1 Mar 2 Apr 3 May 4 Jun 5
+		 Jul 6 Aug 7 Sep 8 Oct 9 Nov 10 Dec 11)}->{$m};
+	require Time::Local;
+	my $tz_offset = $tzm*60 + $tzh*3600;
+	$tz_offset *= -1 if $tzsig eq '-';
+	my $epoch = Time::Local::timegm($S,$M,$H,$d,$m,$y);
+	$epoch -= $tz_offset;
+	$epoch;
+    } else {
+	undef;
+    }
+}
+# REPO END
 
 END {
     stop_parse_tail_log();

@@ -5,7 +5,7 @@
 Stadthausstr., Bahnbrücke: Bauarbeiten	q4::inwork 15628,10915 15657,10846
 Bernauer Str.: kurzes Stück noch nicht freigegeben	q4::inwork; 9192,14145 9224,14169
 Märkisches Ufer: Bauarbeiten, Einbahnstrasse zwischen Am Köllnischen Park und Brückenstr.	q4::inwork; 11328,12040 11251,12071 11155,12071
-Simon-Dach-Str.: Bauarbeiten zwischen Wühlischstr. und Krossener Str., nur Bürgersteigbenutzung möglich	q4::inwork 13981,11746 13954,11647
+Simon-Dach-Str.: Bauarbeiten an der Wühlischstr. Richtung Revaler Str., nur Bürgersteigbenutzung möglich	q4::inwork 13954,11647 13890,11411
 Bendastr.: Bauarbeiten, danach vielleicht asphaltiert?	q4::inwork 12743,6645 12756,6578 12779,6478
 Oberwallstr.: Fahrbahn wegen Bauarbeiten gesperrt, Gehweg benutzen	q4::inwork 9907,12055 9925,11947
 Am Weidendamm: Fahrtrichtung wegen Bauarbeiten gesperrt, schieben	q4::inwork; 9283,12856 9383,12915
@@ -270,6 +270,9 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14454 19814,14079
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
 (Treseburger Ufer - Rungiusstr.): nur für Fußgänger erlaubt	q4 12699,5909 13064,5953
 (Bellevuepark): nur für Fußgänger erlaubt	q4 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
+Walter-Nicklisch-Promenade: eng und kurvenreich	q2 8273,15311 8321,15386 8290,15406 8310,15449
+Gropiusstr.: Uferweg sehr eng	q2 8389,16214 8543,16364
+Zangengasse: parkende Fahrzeuge	q1 5959,20524 5714,20784 5641,20857 5609,20968
 Lintruper Str.: teilweise wegen parkender Autos eng	q1 10307,922 10380,757 10423,636 10506,405 10614,105 10665,-200 10729,-386
 Spandauer Str.: enge Straße	q1 -6442,14186 -6261,14213
 (Parkplatz Kaufland - Am Steinberg): Fußgänger	q2 12981,17557 13011,17470
@@ -352,7 +355,7 @@ Lefèvrestr.: enge Straße	q1 4987,6902 4993,6812 5034,6745 5137,6651 5215,6643 53
 Robert-von-Ostertag-Str.: Pferde und Reiter	q1 -613,1949 -745,2320
 Hackerstr.: schmale Straße, schlecht einzusehen	q1 5017,6387 5034,6425 5075,6509 5101,6579 5137,6651 5184,6723
 Grafenwalder Weg: schmale Fahrbahn	q1 -3295,16392 -3326,16553
-(Wuhlewanderweg - Teterower Ring): Fußgänger	q1 22168,12931 22315,12984
+(Wuhlewanderweg - Teterower Ring): Fußgänger	q1 22168,12931 22444,12990
 (Dahrendorfzeile - Kurt-Schumacher-Damm): enger Weg, Fußgänger, Bordsteine	q2 2709,14284 2803,14288
 Retzdorffpromenade: Fußgänger	q2 4893,6812 4993,6812
 Lothar-Bucher-Str.: enge Straße	q1 5598,6136 5748,6067 5845,6062 6024,6080

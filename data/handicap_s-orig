@@ -9,8 +9,8 @@ Stadthausstr., Bahnbrücke: Bauarbeiten	q4::inwork 15628,10915 15657,10846
 Bernauer Str.: kurzes Stück noch nicht freigegeben	q4::inwork; 9192,14145 9224,14169
 #: last_checked: 2006-03-29
 Märkisches Ufer: Bauarbeiten, Einbahnstrasse zwischen Am Köllnischen Park und Brückenstr.	q4::inwork; 11328,12040 11251,12071 11155,12071
-#: last_checked: 2006-03-25
-Simon-Dach-Str.: Bauarbeiten zwischen Wühlischstr. und Krossener Str., nur Bürgersteigbenutzung möglich	q4::inwork 13981,11746 13954,11647
+#: last_checked: 2006-05-21
+Simon-Dach-Str.: Bauarbeiten an der Wühlischstr. Richtung Revaler Str., nur Bürgersteigbenutzung möglich	q4::inwork 13954,11647 13890,11411
 #XXX del? Linienstr.: Bauarbeiten, Einbahnstraße Richtung Osten (bis 2006-10-31)	q4::inwork; 9903,13646 9752,13575 9607,13507 9281,13374
 #: last_checked: 2005-07-03
 Bendastr.: Bauarbeiten, danach vielleicht asphaltiert?	q4::inwork 12743,6645 12756,6578 12779,6478
@@ -293,7 +293,11 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14454 19814,14079
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
 (Treseburger Ufer - Rungiusstr.): nur für Fußgänger erlaubt	q4 12699,5909 13064,5953
 (Bellevuepark): nur für Fußgänger erlaubt	q4 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340
+Walter-Nicklisch-Promenade: eng und kurvenreich	q2 8273,15311 8321,15386 8290,15406 8310,15449
+Gropiusstr.: Uferweg sehr eng	q2 8389,16214 8543,16364
 ######################### User Contributions #################################
+#: by: Gerlind Rudolph:
+Zangengasse: parkende Fahrzeuge	q1 5959,20524 5714,20784 5641,20857 5609,20968
 #: Thomas Hallmann:
 Lintruper Str.: teilweise wegen parkender Autos eng	q1 10307,922 10380,757 10423,636 10506,405 10614,105 10665,-200 10729,-386
 #: by: Detlef Hüttemann:
@@ -439,7 +443,7 @@ Hackerstr.: schmale Straße, schlecht einzusehen	q1 5017,6387 5034,6425 5075,6509
 #: by: Jochen LIedtke:
 Grafenwalder Weg: schmale Fahrbahn	q1 -3295,16392 -3326,16553
 #: by: Katrin Kroschk:
-(Wuhlewanderweg - Teterower Ring): Fußgänger	q1 22168,12931 22315,12984
+(Wuhlewanderweg - Teterower Ring): Fußgänger	q1 22168,12931 22444,12990
 #: by: Timo (fetteMa):
 #: note: dasselbe kann man auch für die beiden anderen Zeilen in der Nachbarschaft eintragen:
 (Dahrendorfzeile - Kurt-Schumacher-Damm): enger Weg, Fußgänger, Bordsteine	q2 2709,14284 2803,14288

@@ -3786,7 +3786,7 @@ userdel	q4 64853,-30986 65386,-29479
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1148166908, # XXX nur noch Fahrstreifeneinschränkung...
        text  => 'Bötzowstr. (Prenzlauer Berg) in beiden Richtungen, zwischen Danziger Str. und Hufelandstr. Baustelle, Straße vollständig gesperrt',
        type  => 'handicap',
        source_id => 'IM_002530',
@@ -4386,7 +4386,7 @@ userdel	2 12242,8972 12320,8927
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1148166862, # XXX tritt nirgendwo mehr auf
        text  => 'Riemenschneiderweg zwischen Vorarlberger Damm und Grazer Platz, Baustelle, in beiden Richtungen gesperrt.',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -4427,8 +4427,8 @@ userdel	1 15388,16502 15121,16503 14621,16563
 EOF
      },
      { from  => 1147721063, # 2006-05-15 21:24
-       until => 1147816800, # 2006-05-17 00:00
-       text  => 'Linienstr. (Mitte) in Richtung Tucholskystr., ab Oranienburger Str. Straßenarbeiten, Einbahnstr. (bis 16.05.06)',
+       until => undef, # was 2006-05-17 00:00, but continuing
+       text  => 'Linienstr. (Mitte) in Richtung Tucholskystr., ab Oranienburger Str. Straßenarbeiten, Einbahnstraße',
        type  => 'handicap',
        source_id => 'IM_002765',
        data  => <<EOF,
