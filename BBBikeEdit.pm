@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.100 2006/05/17 21:38:27 eserte Exp $
+# $Id: BBBikeEdit.pm,v 1.100 2006/05/17 21:38:27 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -3347,14 +3347,14 @@ sub temp_blockings_editor {
     my($start_w, $end_w);
     my($start_undef, $end_undef);
     Tk::grid($t->Label(-text => M"Start"),
-	     $start_w = $t->Date,
+	     $start_w = $t->Date(-choices => ["now", "tomorrow"]),
 	     $t->Checkbutton(-text => "undef",
 			     -variable => \$start_undef),
 	     -sticky => "w",
 	    );
 
     Tk::grid($t->Label(-text => M"Ende"),
-	     $end_w = $t->Date,
+	     $end_w = $t->Date(-choices => ["now", "tomorrow"]),
 	     $t->Checkbutton(-text => "undef",
 			     -variable => \$end_undef),
 	     -sticky => "w",
@@ -4040,7 +4040,7 @@ sub add_cross_road_blockings {
     }
 
     require Strassen::Combine;
-    my $add_userdels_combined = $add_userdels->make_long_streets;
+    my $add_userdels_combined = $add_userdels->make_long_streets(-ignorecat => ["3"]);
 
     $add_userdels_combined;
 }

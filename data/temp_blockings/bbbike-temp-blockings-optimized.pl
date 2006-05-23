@@ -1,7 +1,88 @@
 @temp_blocking = ();
-$#temp_blocking = 140;
+$#temp_blocking = 65;
 push @temp_blocking,
 (
+       {
+         'until' => 1150668000,
+         'text' => 'Bergmannstraßenfest, Bergmannstr. zwischen Mehringdamm und Zossener Str. gesperrt, 16.06.2006, 7.00 Uhr bis 18.06.2006, 24.00 Uhr ',
+         'from' => 1150347600,
+         'file' => 'bergmannstr.bbd',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'source_id' => 'INKO_82',
          'until' => 1157061599,
@@ -702,14 +783,7 @@ userdel	2 -862,22946 -1254,22853
        undef,
        undef,
        undef,
-       {
-         'until' => 1148335200,
-         'text' => 'L 030 Friedrichstr. OL Erkner, zw. fürstenwalder Str. u. Beuststr. 14. Heimatfest Vollsperrung 18.05.2006-22.05.2006 ',
-         'from' => 1147816800,
-         'data' => 'userdel	2 34443,1951 34250,2546
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -730,14 +804,7 @@ userdel	2 -862,22946 -1254,22853
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1148248800,
-         'text' => 'L 079 Ludwigsfelde-Ahrensdorf zw. Ludwigsfelde und Ahrensdorf Straßenbauarbeiten Vollsperrung 20.05.2006-21.05.2006 ',
-         'from' => 1147989600,
-         'data' => 'userdel	2 -2086,-9891 -1245,-9999 -862,-9933
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -757,12 +824,42 @@ userdel	2 -862,22946 -1254,22853
          'type' => 'handicap'
        },
        undef,
+       undef,
        {
-         'source_id' => 'IM_002798',
-         'until' => 1148248800,
-         'text' => 'Herrmannstr. (Neukölln) in beiden Richtungen zwischen Werbellinstr. und Thomasstr. Veranstaltung, Straße vollständig gesperrt (bis 21.05.2006 24 Uhr)',
-         'from' => 1148113240,
-         'data' => 'userdel	2 11979,8014 11998,7948 12025,7852 12041,7788 12055,7751 12075,7696 12090,7651 12122,7553 12180,7387
+         'until' => 1153087200,
+         'text' => 'Vom 26.05.2006, 16:00 Uhr bis 16.07.2006 wird die Straße des 17. Juni zwischen Siegessäule und Brandenburger Tor komplett gesperrt. Grund sind die geplante WM-Fanmeile sowie mehrere Festveranstaltungen (u.a. Love Parade).',
+         'from' => 1148565600,
+         'data' => 'userdel	2 8515,12242 8214,12205 8089,12186
+userdel	2 8063,12182 7816,12150 7383,12095 6828,12031
+userdel auto	3 7460,12054 7383,12095 7039,12314
+userdel auto	3 7039,12314 7383,12095 7460,12054
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1148767200,
+         'text' => 'Mögliche Behinderungen wegen eines Flugspektakels am Flughafen Tempelhof, 27.5. von 8 bis 24 Uhr ',
+         'from' => 1148623200,
+         'data' => 'userdel	q4 10213,8665 9801,8683 9571,8706 9395,8726 9364,8640 9321,8607 9224,8584
+userdel	q4 9395,8726 9303,8781 9222,8787 9221,8732 9224,8584 9223,8409 9224,8254 9229,8029 9227,7797 9231,7657 9236,7324 9234,7287 9235,7146
+userdel auto	3 9227,8890 9222,8787 9050,8783
+userdel auto	3 9050,8783 9222,8787 9227,8890
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1150754400,
+         'text' => 'B 179 Spreewaldstr. OD Zeesen, Einmünd. zur K.-Liebknecht-Str. Umbau Knotenpunkt Vollsperrung 29.05.2006-19.06.2006 ',
+         'from' => 1148767200,
+         'data' => 'userdel	q4 26758,-15727 26699,-15709 26583,-15677
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1154383200,
+         'text' => 'L 074 Märkisch Buchholz-Halbe-Teupitz OD Märkisch Buchholz, Schützenst. Straßenbau Vollsperrung 30.05.2006-31.07.2006 ',
+         'from' => 1148853600,
+         'data' => 'userdel	2 35518,-32837 35641,-32578
 ',
          'type' => 'gesperrt'
        }

@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Combine.pm,v 1.3 2006/05/10 21:57:04 eserte Exp $
+# $Id: Combine.pm,v 1.3 2006/05/10 21:57:04 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001,2006 Slaven Rezic. All rights reserved.
@@ -61,8 +61,11 @@ sub make_long_streets {
 
     my $make_closed_polygon = delete $args{'-closedpolygon'} || 0;
     my $v = delete $args{'-v'} || 0;
+    my $ignorecat = delete $args{'-ignorecat'} || [];
 
     die "Unhandled arguments: " . join(" ", %args) if %args;
+
+    my %ignorecat = map { ($_,1) } @$ignorecat;
 
     my @strdata;
     # $strdata: 0: first, 1: last
@@ -102,6 +105,10 @@ sub make_long_streets {
     while (1) {
 	my $r = $self->next;
 	last if !@{ $r->[Strassen::COORDS] };
+	if ($ignorecat{$r->[Strassen::CAT]}) {
+	    CORE::push(@strdata, $r);
+	    next;
+	}
 	if ($v && ++$count%100 == 0) {
 	    print STDERR "$count\r";
 	}

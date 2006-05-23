@@ -1289,7 +1289,7 @@ Schwartzkopffstr.: Asphalt	Q0 8607,14253 8781,14357
 Pflugstr.: Asphalt	Q0 8781,14357 8662,14567
 Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
-Eulerstr.: Asphalt	Q0 9268,16228 9494,16455
+Eulerstr.: Asphalt	Q0 9268,16228 9498,16480
 Tollensestr.: guter Asphalt	Q0 22554,13011 22519,13139 22527,13232 22563,13340 22594,13408
 Freienwalder Str. (Wedding): Kopfsteinpflaster	Q2 9331,16624 9435,16832 9503,16988
 Heidenauer Str.: guter Asphalt	Q0 24418,14678 24328,14702 24230,14638 24146,14594
@@ -1344,7 +1344,6 @@ Berlichingenstr.: Kopfsteinpflaster	Q2 4989,13462 4978,13765 4966,13948
 Rappoltsweilerstr.: grobes Kopfsteinpflaster	Q3 1203,4047 1334,4000 1379,3964 1453,4004
 Beifußweg: mäßiger Beton	Q1 15281,3682 15587,3446 15892,3210
 Egestorffstr.: Asphalt	Q0 9147,-1022 9123,-1321 9093,-1712
-Auf dem Grat: Asphalt	Q0 1644,5397 1812,5365 1842,5342 1965,5337 2062,5314 2075,5075 2081,4940
 Dorotheenstr.: Asphalt	Q0 22643,4058 22814,4064 22967,4144
 Cotheniusstr.: Kopfsteinpflaster	Q2 13228,13615 13430,13733
 Massower Str.: Asphalt	Q0 17734,11408 18178,11504
@@ -1572,7 +1571,7 @@ Eisnerstr.: Asphalt	Q0 9500,-115 9693,-621
 Dörfelweg	Q0 9716,-55 9578,-92 9500,-115
 Eisnerstr. - S.Bhf Buckower Chaussee: asphaltiert, allerdings an einigen Stellen Beschädigungen durch Baumwurzeln	Q0 9500,-115 9178,556
 (Unter dem S-Bhf. Schichauweg): Verbundsteinpflaster	Q1 9693,-621 9518,-668
-Miethepfad: Verbundsteinpflaster	Q1 9518,-668 9557,-779 9585,-859
+Miethepfad: Verbundsteinpflaster	Q1 9518,-668 9547,-754 9585,-859
 Schulzendorfer Str.: schlechtes Kopfsteinpflaster	Q3 -596,23009 -862,22946 -1254,22853 -1484,22799 -1972,22899 -2107,22790 -2207,22741 -2437,22625
 Dielingsgrund: gutes Verbundsteinpflaster	Q1 10573,519 10768,606
 Dielingsgrund: unterschiedlicher Belag mit Schlaglöchern	Q2 10768,606 11073,637
@@ -1758,9 +1757,12 @@ Ludwig-Barnay-Platz: Asphalt	Q0 4352,6813 4482,6866
 Mühlhauser Str.: Kopfsteinpflaster	Q2 11354,14187 11476,14142
 Raabestr.: Kopfsteinpflaster	Q2 11468,14121 11672,14011
 Am Schülerheim: Kopfsteinpflaster	Q1 2142,5649 1985,5698
+Am Schülerheim: asphaltiert	Q0 1985,5698 1824,5744
 Am Schülerheim: Verbundsteine	Q1 1824,5744 1726,5765
 Föhrenweg: Kopfsteinpflaster	Q2 1824,5744 1816,5700 1838,5622 1802,5418
 Im Schwarzen Grund: Kopfsteinpflaster	Q2 2309,5428 2258,5309 2301,5136
+Im Schwarzen Grund: asphaltiert	Q0 2301,5136 2273,5054 2259,5004 2288,4932
+Bachstelzenweg: asphaltiert	Q0 2329,5740 2297,5638 2230,5543
 Bachstelzenweg: Kopfsteinpflaster	Q1 2230,5543 2147,5494 2045,5474 1918,5490
 Gregor-Mendel-Str.: Kopfsteinpflaster	Q2 3684,6525 3650,6665 3675,6806
 Milowstr.: Kopfsteinpflaster	Q2 3826,6656 3650,6665
@@ -2482,8 +2484,12 @@ Schwiegersteig: mäßiger Asphalt	Q1 1109,14911 1130,14823 1134,14721
 (Krahmerstr. - Teltowkanalpromenade): Asphalt	Q0 4779,3376 4787,3342
 Horst-Kohl-Str.: mäßiger Asphalt	Q1 6125,6132 6214,6132 6310,6121 6369,6109 6462,6115 6511,6121
 Moränenweg: guter Asphalt	Q0 3304,21205 3216,21409
-Zweiwinkelweg: guter Beton	Q0 -7050,13807 -7050,13749 -7183,13730 -7175,13607 -6919,13557
 Imhoffweg: guter Asphalt	Q0 8953,-1089 8909,-918
+Cambridger Str.: mäßiger Asphalt	Q1 5866,17419 5778,17436 5691,17404 5556,17254
+Glücksburger Str.: schlechtes Kopfsteinpflaster	Q3 9498,16480 9603,16468
+Propst-Süßmilch-Weg: Verbundsteinpflaster	Q1 856,3188 709,3229 649,3221
+Poleigrund: asphaltiert	Q0 9156,-883 9347,-837 9547,-754
+Zweiwinkelweg: guter Beton	Q0 -7050,13807 -7050,13749 -7183,13730 -7175,13607 -6919,13557
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934
@@ -3277,3 +3283,10 @@ Pritchardstr.: Asphalt	Q0 1102,4978 1080,5066 1017,5163
 Lohrbergweg: Verbundsteine	Q1 1150,5282 1218,5206
 Löwenburgweg: Verbundsteine	Q1 1120,5258 1193,5182
 Wolkenburgweg: Verbundsteine	Q1 1098,5237 1167,5159
+Kuckucksweg: asphaltiert	Q0 2556,5575 2481,5584 2397,5608 2297,5638
+Musäusstr.: asphaltiert	Q0 2397,5608 2369,5506 2341,5464 2309,5428
+Am Anger: asphaltiert	Q0 2301,5136 2458,5212
+Auf dem Grat: Asphalt	Q0 1644,5397 1812,5365 1842,5342 1965,5337 2062,5314 2075,5075 2081,4940
+Auf dem Grat: Asphalt	Q0 1812,5365 1803,5390 1802,5418 1656,5446
+Kehler Weg: asphaltiert	Q0 2005,4772 2025,4935
+Bitscher Str.: asphaltiert	Q0 1934,4788 1939,4949 1969,4978

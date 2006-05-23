@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: temp_blockings_dates.t,v 1.8 2006/01/28 16:30:40 eserte Exp $
+# $Id: temp_blockings_dates.t,v 1.9 2006/05/22 22:20:40 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -29,6 +29,14 @@ my @Today_and_Now = Today_and_Now;
 
 for my $test_data
     (
+     [<<EOF,
+Vom 26. Mai 2006 bis 16. Juli 2006 wird die Straße des 17. Juni zwischen Siegessäule und Brandenburger Tor komplett gesperrt. Grund sind die geplante WM-Fanmeile sowie mehrere Festveranstaltungen (u.a. Love Parade).
+EOF
+      Mktime(2006,5,26,0,0,0),
+      Mktime(2006,7,16+1,0,0,0),
+      undef,
+     ],
+
      [<<EOF,
 NEW	Johannisthaler Chaussee (Neukölln) in Höhe der Ernst-Keller-Brücke Baustelle, Straße vollständig gesperrt wegen Brückenneubau (bis Ende 2004) (10:01) 
 EOF

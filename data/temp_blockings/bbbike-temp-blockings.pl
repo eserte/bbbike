@@ -441,11 +441,11 @@ userdel	2 13082,10634 13178,10623
 userdel	2 13178,10623 13206,10651
 EOF
      },
-     { from  => 1086818400, # 2004-06-10 00:00
-       until => 1087164000, # 2004-06-14 00:00
+     { from  => 1150347600, # 2006-06-15 07:00
+       until => 1150668000, # 2006-06-19 00:00
+       text  => 'Bergmannstraßenfest, Bergmannstr. zwischen Mehringdamm und Zossener Str. gesperrt, 16.06.2006, 7.00 Uhr bis 18.06.2006, 24.00 Uhr ',
+       type  => 'gesperrt',
        file  => 'bergmannstr.bbd',
-       text  => 'Bergmannstraßenfest (Kreuzberg jazzt), Bergmannstr. zwischen Mehringdamm und Zossener Str. gesperrt, 11.06.2004, 7.00 Uhr bis 13.06.2004, 24.00 Uhr',
-       type  => 'handicap',
      },
      { from  => 1087975800, # 2004-06-23 09:30
        until => 1088287200, # 2004-06-27 00:00
@@ -4491,6 +4491,44 @@ EOF
        source_id => 'IM_002798',
        data  => <<EOF,
 userdel	2 11979,8014 11998,7948 12025,7852 12041,7788 12055,7751 12075,7696 12090,7651 12122,7553 12180,7387
+EOF
+     },
+     { from  => 1148565600, # 2006-05-25 16:00
+       until => 1153087200, # 2006-07-17 00:00
+       text  => 'Vom 26.05.2006, 16:00 Uhr bis 16.07.2006 wird die Straße des 17. Juni zwischen Siegessäule und Brandenburger Tor komplett gesperrt. Grund sind die geplante WM-Fanmeile sowie mehrere Festveranstaltungen (u.a. Love Parade).',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 8515,12242 8214,12205 8089,12186
+userdel	2 8063,12182 7816,12150 7383,12095 6828,12031
+userdel auto	3 7460,12054 7383,12095 7039,12314
+userdel auto	3 7039,12314 7383,12095 7460,12054
+EOF
+     },
+     { from  => 1148623200, # 2006-05-26 08:00
+       until => 1148767200, # 2006-05-28 00:00
+       text  => 'Mögliche Behinderungen wegen eines Flugspektakels am Flughafen Tempelhof, 27.5. von 8 bis 24 Uhr ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 10213,8665 9801,8683 9571,8706 9395,8726 9364,8640 9321,8607 9224,8584
+userdel	q4 9395,8726 9303,8781 9222,8787 9221,8732 9224,8584 9223,8409 9224,8254 9229,8029 9227,7797 9231,7657 9236,7324 9234,7287 9235,7146
+userdel auto	3 9227,8890 9222,8787 9050,8783
+userdel auto	3 9050,8783 9222,8787 9227,8890
+EOF
+     },
+     { from  => 1148767200, # 2006-05-28 00:00
+       until => 1150754400, # 2006-06-20 00:00
+       text  => 'B 179 Spreewaldstr. OD Zeesen, Einmünd. zur K.-Liebknecht-Str. Umbau Knotenpunkt Vollsperrung 29.05.2006-19.06.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 26758,-15727 26699,-15709 26583,-15677
+EOF
+     },
+     { from  => 1148853600, # 2006-05-29 00:00
+       until => 1154383200, # 2006-08-01 00:00
+       text  => 'L 074 Märkisch Buchholz-Halbe-Teupitz OD Märkisch Buchholz, Schützenst. Straßenbau Vollsperrung 30.05.2006-31.07.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 35518,-32837 35641,-32578
 EOF
      },
     );

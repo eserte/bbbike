@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.151 2006/05/07 21:12:30 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.151 2006/05/07 21:12:30 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1297,6 +1297,13 @@ sub coord_to_markers_dialog {
 			-command => sub {
 			    @marker_points = ();
 			    $update_marker_points->();
+			},
+		       ),
+	     -columnspan => 2,
+	     -sticky => "w");
+    Tk::grid($t->Button(-text => M"Dump to STDERR",
+			-command => sub {
+			    print STDERR join("\n", map { join(" ", map { join(",", map { int } @$_) } @$_) } @marker_points), "\n";
 			},
 		       ),
 	     -columnspan => 2,
