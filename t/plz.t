@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.25 2006/04/10 21:51:41 eserte Exp $
+# $Id: plz.t,v 1.26 2006/05/23 23:37:07 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -59,7 +59,7 @@ my @approx_tests = (
 		    # Ku'damm => Kurfürstendamm, fails, maybe an extra rule?
 		   );
 		    
-plan tests => 120 + scalar(@approx_tests)*4;
+plan tests => 122 + scalar(@approx_tests)*4;
 
 my $tmpdir = "$FindBin::RealBin/tmp/plz";
 my $create;
@@ -360,10 +360,15 @@ for my $noextern (@extern_order) {
 	   "S-Bahnhof (Grunewald), long form")
 	    or diag $dump->(\@res);
 
-	# A complaint by alh:
+	# A complaint by alh (but obsolete now):
 	@res = $plz->look_loop("lehrter bahnhof",
 			       @standard_look_loop_args);
-	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Lehrter Bahnhof (Hauptbahnhof)' } @{$res[0]}), 1,
+	is(scalar(@{$res[0]}), 0, "No more Lehrter Bahnhof")
+	    or diag $dump->(\@res);
+
+	@res = $plz->look_loop("hauptbahnhof",
+			       @standard_look_loop_args);
+	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Hauptbahnhof' } @{$res[0]}), 1,
 	   "S-Bahnhof")
 	    or diag $dump->(\@res);
 

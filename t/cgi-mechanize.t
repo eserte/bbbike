@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.29 2006/05/08 21:29:17 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.30 2006/05/23 23:32:03 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -367,7 +367,7 @@ for my $browser (@browsers) {
 	}
 	;
 	{
-	    local $^W; $agent->current_form->value('ziel', 's lehrter bahnhof');
+	    local $^W; $agent->current_form->value('ziel', 's hauptbahnhof');
 	}
 	;
 	$agent->submit();
@@ -378,7 +378,7 @@ for my $browser (@browsers) {
 	    like(get_ct($agent), qr/Kleine Parkstr\..*ist nicht bekannt/i, "Street not in database");
 	    like(get_ct($agent), qr{\Qhtml/newstreetform.html?\E.*\Qstrname=Kleine%20Parkstr}i, "newstreetform link");
 	}
-	like(get_ct($agent), qr{Lehrter Bahnhof.*?die nächste Kreuzung}is,  "S-Bhf.");
+	like(get_ct($agent), qr{Hauptbahnhof.*?die nächste Kreuzung}is,  "S-Bhf.");
 	like(get_ct($agent), qr{Invalidenstr.}i,  "S-Bhf., next crossing (Invalidenstr)");
 	like(get_ct($agent), qr{Minna-Cauer-Str.}i,  "S-Bhf., next crossing (Minna-Cauer-Str)");
 

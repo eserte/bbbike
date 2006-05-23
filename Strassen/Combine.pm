@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Combine.pm,v 1.3 2006/05/10 21:57:04 eserte Exp eserte $
+# $Id: Combine.pm,v 1.4 2006/05/23 23:34:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999,2001,2006 Slaven Rezic. All rights reserved.
@@ -54,7 +54,7 @@ package Strassen;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 sub make_long_streets {
     my($self, %args) = @_;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plzlogfile.t,v 1.12 2006/03/26 17:44:17 eserte Exp $
+# $Id: plzlogfile.t,v 1.13 2006/05/23 21:33:37 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -89,6 +89,7 @@ if ($forward) {
     }
 }
 
+my %seen;
 
 my $lastdate;
 {
@@ -110,16 +111,20 @@ my $lastdate;
 	chomp;
 	my $q = CGI->new($1);
 	my($thisdate, $thistime) = $_ =~ m{\[(\d{2}/.{3}/\d{4}):([0-9:]+)};
+	if (!defined $lastdate || $lastdate ne $thisdate) {
+	    print "# $thisdate " . ("#"x60) . "\n";
+	    $lastdate = $thisdate;
+	}
 	for my $param (qw(start via ziel)) {
 	    my $s = $q->param($param);
+	    if (defined $s) {
+		next if $seen{$s};
+		$seen{$s}++;
+	    }
 	    ($s) = Strasse::split_crossing($s);
 	    if (defined $s && ((!$hnr && $s ne "") ||
 			       ( $hnr && $s =~ /\s+\d+\s*$/))) {
 		my @res = lookup($s);
-		if (!defined $lastdate || $lastdate ne $thisdate) {
-		    print "# $thisdate " . ("#"x60) . "\n";
-		    $lastdate = $thisdate;
-		}
 		printf "# %-35s => %2d %-35s",
 		    $s, scalar @{$res[0]},
 			(!@{$res[0]} ? "-"x30 : $res[0]->[0]->[PLZ::LOOK_NAME]);

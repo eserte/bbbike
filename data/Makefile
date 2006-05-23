@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.95 2006/05/17 21:37:33 eserte Exp $
+# $Id: Makefile,v 2.96 2006/05/23 23:31:10 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -906,7 +906,7 @@ check-disabled:	.check_label
 	    $(SORT_NO_LOCALE) -u > /tmp/$(i)bahnhof1
 	grep -i '^$(i)-Bhf' Berlin.coords.data |\
 	    egrep -v 'S-Bhf (Fürstenbrunn)' |\
-	    egrep -v 'U-Bhf (Lehrter Bahnhof|Unter den Linden|Reichstag)' |\
+	    egrep -v 'U-Bhf (Hauptbahnhof|Unter den Linden|Bundestag)' |\
 	    sed -e 's/ *(.*)//' -e 's/S-Bhf //' -e 's/U-Bhf //' -e 's/|.*//' |\
 	    $(SORT_NO_LOCALE) -u > /tmp/$(i)bahnhof2
 	diff /tmp/$(i)bahnhof1 /tmp/$(i)bahnhof2

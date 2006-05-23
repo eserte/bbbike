@@ -6,14 +6,17 @@ Yorckstr.	SA 8280,9528
 Yorckstr. (Großgörschenstr.)	SA 7985,9576
 #: attrs bg
 Anhalter Bhf.	SA 8880,10853
+#: attrs bg
 Potsdamer Platz	SA 8540,11480
 Unter den Linden	SA 8838,12259
 #: attrs bg
 Friedrichstr.	SA 9181,12732
 #: attrs bg
 Oranienburger Str.	SA 9610,13258
-#: XXX wird zur Eröffnung des Fernbahnhofs umbenannt -> Hauptbahnhof
-Lehrter Bahnhof (Hauptbahnhof)	SA 7996,13271
+#: oldname: Lehrter Stadtbahnhof
+#: alias: Lehrter Bahnhof
+#: attrs bg
+Hauptbahnhof	SA 7996,13271
 #: attrs bg
 Nordbahnhof	SA 9264,14032
 Humboldthain	SA 8658,15442
@@ -40,6 +43,8 @@ Frohnau	SB 2412,25061
 Tegel	SB 2471,20090
 Eichborndamm	SB 4365,18997
 Karl-Bonhoeffer-Nervenklinik	SB 5171,19057
+#: XXX wird zu Südkreuz umbenannt:
+#: attrs bg
 Papestr.	SA 7837,7712
 #: attrs bg
 Schöneberg	SA 6954,8114
