@@ -34,7 +34,11 @@ SEARCH_INACCESSIBLE=	${MISCSRCDIR}/search_inaccessible_points
 STEIGUNG_STAT=		${MISCSRCDIR}/steigung_stat
 GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
 # perl5.8.0 has utf8 bugs
+.if ${HOST} == "devpc01.iconmobile.de"
+PERL_UTF8=		perl5.8.7
+.else
 PERL_UTF8=		perl5.8.8
+.endif
 GREPSTRASSEN_UTF8=	${PERL_UTF8} ${MISCSRCDIR}/grepstrassen
 COMBINE_STREETS=	${MISCSRCDIR}/combine_streets.pl
 
@@ -1263,9 +1267,25 @@ $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blocki
 ######################################################################
 # CGPSMAPPER TARGETS
 
+.if exists(/usr/local/bin/cgpsmapper-static)
+CGPSMAPPER?=	/usr/local/bin/cgpsmapper-static
+.else
 CGPSMAPPER?=	/usr/ports/distfiles/cgpsmapper/cgpsmapper0081static
+.endif
+
+.if exists(/usr/local/bin/sendmap17Lstatic)
+SENDMAP?=	/usr/local/bin/sendmap17Lstatic
+.else
 SENDMAP?=	/usr/ports/distfiles/cgpsmapper/sendmap17Lstatic
+.endif
+
+# cuaa0 on *BSD, ttyS0 on Linux
+.if exists(/dev/cuaa0)
 GPSPORT?=	/dev/cuaa0
+.else
+GPSPORT?=	/dev/ttyS0
+.endif
+
 BBD2POLISH?=	${MISCSRCDIR}/bbd2polish
 
 CGPSMAPPER_FILES=	bbbike brb wide fragezeichen
