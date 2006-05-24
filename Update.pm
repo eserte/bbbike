@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Update.pm,v 1.20 2005/12/10 23:46:01 eserte Exp $
+# $Id: Update.pm,v 1.20 2005/12/10 23:46:01 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2003,2005 Slaven Rezic. All rights reserved.
@@ -83,7 +83,7 @@ sub update_http {
 	    die;
 	}
 	$ua = new LWP::UserAgent;
-	$ua->agent("$main::progname/$main::VERSION");
+	$ua->agent("$main::progname/$main::VERSION (LWP::UserAgent/$LWP::VERSION)");
 	$main::progname = $main::progname if 0; # peacify -w
 	if ($main::proxy) {
 	    $ua->proxy(['http', 'ftp'], $main::proxy);
@@ -93,6 +93,8 @@ sub update_http {
 	undef $ua;
 	require Http;
 	Http->VERSION(3.15); # correct handling of Host: ...
+	$Http::user_agent = $Http::user_agent if 0; # peacify -w
+	$Http::user_agent = "$main::progname/$main::VERSION (Http/$Http::VERSION)";
     }
     $main::c = $main::c; # peacify -w
     $main::progress->Init(-dependents => $main::c,

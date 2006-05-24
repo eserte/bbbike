@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: DirectGarmin.pm,v 1.28 2006/05/06 06:39:36 eserte Exp $
+# $Id: DirectGarmin.pm,v 1.29 2006/05/24 19:20:26 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002,2003,2004 Slaven Rezic. All rights reserved.
@@ -408,7 +408,7 @@ sub convert_from_route {
 	    # $prev_street vs. $main_street comparison below does not
 	    # work. The workaround is to remove the (A -) part. This
 	    # would be removed anyway in the short_landstrasse function.
-	    if ($main_street =~ m/\s*\([^\)]+-\)\s*/) { # XXX (... -) ...
+	    if (defined $main_street && $main_street =~ m/\s*\([^\)]+-\)\s*/) { # XXX (... -) ...
 		@cross_streets = $main_street;
 	    }
 
@@ -455,7 +455,7 @@ sub convert_from_route {
 	    my $level = 0;
 	    while($level <= 3) {
 		# XXX the "+" character is not supported by all Garmin devices
-		$short_crossing = join("+", map { s/\s+\(.*\)\s*$//; Strasse::short($_, $level, "nodot") } @cross_streets);
+		$short_crossing = join("+", map { s/\s+\(.*\)\s*$//; Strasse::short($_, $level, "nodot") } grep { defined } @cross_streets);
 		$short_crossing = _eliminate_umlauts($short_crossing);
 		last
 #		    if (length($short_crossing) + length($comment) <= MAX_COMMENT);

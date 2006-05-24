@@ -1910,8 +1910,8 @@ userdel	q4; 17363,11972 17249,11802
 EOF
      },
      { from  => 1116280800, # 2005-05-17 00:00
-       until => 1149112800, # 2006-06-01 00:00
-       text  => 'B 115 Forster Str. OD Döbern grundhafter Straßenausbau Vollsperrung; Umleitung 18.05.2005-31.05.2006 ',
+       until => 1152396000, # 2006-07-09 00:00
+       text  => 'B 115 Forster Str. OD Döbern grundhafter Straßenausbau Vollsperrung 18.05.2005-08.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 93524,-86350 93217,-85769

@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.85 2006/05/18 22:37:41 eserte Exp $
+# $Id: Makefile,v 1.87 2006/05/23 23:51:20 eserte Exp $
 #
 
 # Targets:
@@ -488,6 +488,7 @@ prepare-routopedia-dist:
 	cd ${BBBIKE_ROOT_DIR}/routopedia && ${MAKE} distcheck
 	(umask 022; cd ${BBBIKE_ROOT_DIR}/routopedia && perl "-MExtUtils::Manifest=manicopy,maniread" -e "manicopy(maniread(),'${CURDIR}/routopedia', 'best');")
 
+# Call once sternfahrt files have changed:
 prepare-sternfahrt-dist:	prepare-sternfahrt${STERNFAHRT_YEAR}-dist
 
 prepare-sternfahrt${STERNFAHRT_YEAR}-dist:	prepare-sternfahrt${STERNFAHRT_YEAR}-dist-data \
@@ -512,7 +513,7 @@ prepare-sternfahrt${STERNFAHRT_YEAR}-dist-data:
 	       ${CURDIR}/BBBike/misc/sternfahrt_${STERNFAHRT_YEAR}/
 	chmod ugo+r,ugo+x ${CURDIR}/BBBike/misc/sternfahrt_${STERNFAHRT_YEAR}/treffpunkte${STERNFAHRT_YEAR}.bbd
 	[ -e ${CURDIR}/cgi-bin/sternfahrt${STERNFAHRT_YEAR}-treffpunkte.cgi ] || \
-		ln -s ${BBBIKE_ROOT_DIR}/misc/sternfahrt_${STERNFAHRT_YEAR}/treffpunkte.cgi \
+		ln -s ../BBBike/misc/sternfahrt_${STERNFAHRT_YEAR}/treffpunkte.cgi \
 		      ${CURDIR}/cgi-bin/sternfahrt${STERNFAHRT_YEAR}-treffpunkte.cgi
 
 test:	test-on-remote test-from-local
