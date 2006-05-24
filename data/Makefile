@@ -1279,6 +1279,13 @@ SENDMAP?=	/usr/local/bin/sendmap17Lstatic
 SENDMAP?=	/usr/ports/distfiles/cgpsmapper/sendmap17Lstatic
 .endif
 
+.if ${HOST} == "devpc01.iconmobile.de"
+# for some reason 115200 does not work...
+SENDMAP_ARGS?=	-s57600
+.else
+SENDMAP_ARGS?=
+.endif
+
 # cuaa0 on *BSD, ttyS0 on Linux
 .if exists(/dev/cuaa0)
 GPSPORT?=	/dev/cuaa0
@@ -1297,7 +1304,7 @@ cgpsmapper-output:	${CGPSMAPPER_MP_FILES}
 cgpsmapper-images:	${CGPSMAPPER_IMG_FILES}
 
 cgpsmapper-upload:	cgpsmapper-images
-	-${SENDMAP} ${GPSPORT}  ${CGPSMAPPER_IMG_FILES}
+	-${SENDMAP} ${GPSPORT} ${SENDMAP_ARGS} ${CGPSMAPPER_IMG_FILES}
 
 ${PERSISTENTTMPDIR}/bbbike.mp:	${BBD2POLISH} \
 				strassen wasserstrassen flaechen sbahn ubahn berlin faehren fragezeichen
