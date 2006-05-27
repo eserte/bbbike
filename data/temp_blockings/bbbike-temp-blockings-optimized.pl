@@ -208,8 +208,8 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1149112800,
-         'text' => 'B 115 Forster Str. OD Döbern grundhafter Straßenausbau Vollsperrung; Umleitung 18.05.2005-31.05.2006 ',
+         'until' => 1152396000,
+         'text' => 'B 115 Forster Str. OD Döbern grundhafter Straßenausbau Vollsperrung 18.05.2005-08.07.2006 ',
          'from' => 1116280800,
          'data' => 'userdel	q4 93524,-86350 93217,-85769
 ',
@@ -465,15 +465,7 @@ userdel	q4 55158,-95910 54884,-96292
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_002419',
-         'until' => 1149112799,
-         'text' => 'Voßstr. (Mitte) in Richtung Wilhelmstr. zwischen Ebertstr. und Gertrud-Kolmar-Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2006)',
-         'from' => 1137548634,
-         'data' => 'userdel	q4; 8553,11638 8837,11676
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_002437',
@@ -684,14 +676,7 @@ userdel	2 41681,15915 42300,15756
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1148745600,
-         'text' => 'Herzbergstraße, zwischen Siegfriedstraße und Vulkanstraße gesperrt, die Gegenrichtung ist als Einbahnstraße ausgeschildert, Straße am Wasserwerk, zwischen Herzbergstraße und Landsberger Allee gesperrt, Baustelle. Dauer: 07.04.2006 , 18:00 Uhr bis 27.05.2006, 18:00 Uhr. ',
-         'from' => 1144339200,
-         'data' => 'userdel	1 16866,13532 15892,13534
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -833,6 +818,10 @@ userdel	2 -862,22946 -1254,22853
 userdel	2 8063,12182 7816,12150 7383,12095 6828,12031
 userdel auto	3 7460,12054 7383,12095 7039,12314
 userdel auto	3 7039,12314 7383,12095 7460,12054
+userdel	3 8119,12414 8063,12182 8056,12061
+userdel	3 8056,12061 8063,12182 8119,12414
+userdel	3 8119,12414 8063,12182 8034,12093
+userdel	3 8034,12093 8063,12182 8119,12414
 ',
          'type' => 'gesperrt'
        },
@@ -860,6 +849,15 @@ userdel auto	3 9050,8783 9222,8787 9227,8890
          'text' => 'L 074 Märkisch Buchholz-Halbe-Teupitz OD Märkisch Buchholz, Schützenst. Straßenbau Vollsperrung 30.05.2006-31.07.2006 ',
          'from' => 1148853600,
          'data' => 'userdel	2 35518,-32837 35641,-32578
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002823',
+         'until' => 1153087200,
+         'text' => 'Heinrich-von-Gagern-Str. (Tiergarten) in beiden Richtungen Veranstaltung, Straße vollständig gesperrt (im Zuge der Fußball-WM) (bis 16.07.2006)',
+         'from' => 1148759377,
+         'data' => 'userdel	2 8119,12414 8122,12600
 ',
          'type' => 'gesperrt'
        }

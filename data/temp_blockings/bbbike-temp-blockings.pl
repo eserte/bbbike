@@ -3537,7 +3537,7 @@ userdel	q4 8462,11538 8209,11671 8202,11691
 EOF
      },
      { from  => 1137548634, # 2006-01-18 02:43
-       until => 1149112799, # 2006-05-31 23:59
+       until => 1148759509, # 1149112799 2006-05-31 23:59
        text  => 'Voßstr. (Mitte) in Richtung Wilhelmstr. zwischen Ebertstr. und Gertrud-Kolmar-Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 05.2006)',
        type  => 'handicap',
        source_id => 'IM_002419',
@@ -4502,6 +4502,10 @@ userdel	2 8515,12242 8214,12205 8089,12186
 userdel	2 8063,12182 7816,12150 7383,12095 6828,12031
 userdel auto	3 7460,12054 7383,12095 7039,12314
 userdel auto	3 7039,12314 7383,12095 7460,12054
+userdel	3 8119,12414 8063,12182 8056,12061
+userdel	3 8056,12061 8063,12182 8119,12414
+userdel	3 8119,12414 8063,12182 8034,12093
+userdel	3 8034,12093 8063,12182 8119,12414
 EOF
      },
      { from  => 1148623200, # 2006-05-26 08:00
@@ -4529,6 +4533,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 35518,-32837 35641,-32578
+EOF
+     },
+     { from  => 1148759377, # 2006-05-27 21:49
+       until => 1153087200, # 2006-07-17 00:00
+       text  => 'Heinrich-von-Gagern-Str. (Tiergarten) in beiden Richtungen Veranstaltung, Straße vollständig gesperrt (im Zuge der Fußball-WM) (bis 16.07.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_002823',
+       data  => <<EOF,
+userdel	2 8119,12414 8122,12600
 EOF
      },
     );
