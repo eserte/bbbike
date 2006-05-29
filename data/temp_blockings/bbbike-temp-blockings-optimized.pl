@@ -247,14 +247,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => undef,
-         'text' => 'Rosa-Luxemburg-Str. Richtung Schönhauser Tor wegen Bauarbeiten gesperrt',
-         'from' => undef,
-         'data' => 'userdel	1 10755,13152 10846,13362 10790,13565 10777,13614 10746,13673
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -771,15 +764,7 @@ userdel	2 -862,22946 -1254,22853
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_002776',
-         'until' => 1148940000,
-         'text' => 'Buschallee (Weißensee) in Richtung Berliner Allee, zwischen Hansastr. und Berliner Allee Baustelle Straße vollständig gesperrt (bis 29.05.06)',
-         'from' => 1147522037,
-         'data' => 'userdel	1 15388,16502 15121,16503 14621,16563
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_002765',
          'until' => undef,
@@ -825,17 +810,7 @@ userdel	3 8034,12093 8063,12182 8119,12414
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1148767200,
-         'text' => 'Mögliche Behinderungen wegen eines Flugspektakels am Flughafen Tempelhof, 27.5. von 8 bis 24 Uhr ',
-         'from' => 1148623200,
-         'data' => 'userdel	q4 10213,8665 9801,8683 9571,8706 9395,8726 9364,8640 9321,8607 9224,8584
-userdel	q4 9395,8726 9303,8781 9222,8787 9221,8732 9224,8584 9223,8409 9224,8254 9229,8029 9227,7797 9231,7657 9236,7324 9234,7287 9235,7146
-userdel auto	3 9227,8890 9222,8787 9050,8783
-userdel auto	3 9050,8783 9222,8787 9227,8890
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1150754400,
          'text' => 'B 179 Spreewaldstr. OD Zeesen, Einmünd. zur K.-Liebknecht-Str. Umbau Knotenpunkt Vollsperrung 29.05.2006-19.06.2006 ',
@@ -858,6 +833,15 @@ userdel auto	3 9050,8783 9222,8787 9227,8890
          'text' => 'Heinrich-von-Gagern-Str. (Tiergarten) in beiden Richtungen Veranstaltung, Straße vollständig gesperrt (im Zuge der Fußball-WM) (bis 16.07.2006)',
          'from' => 1148759377,
          'data' => 'userdel	2 8119,12414 8122,12600
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002820',
+         'until' => 1149372000,
+         'text' => 'Jannowitzbrücke (Mitte) in beiden Richtungen vollständig gesperrt (bis 03.06.2006)',
+         'from' => 1148937489,
+         'data' => 'userdel	2 11347,12181 11328,12040
 ',
          'type' => 'gesperrt'
        }

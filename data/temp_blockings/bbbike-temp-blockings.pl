@@ -2203,7 +2203,7 @@ userdel auto	3 7039,12314 7383,12095 7460,12054 7663,11946
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX zuletzt gesehen: 2006-03-19
+       until => 1148937435, # XXX zuletzt gesehen: 2006-03-19, laut http://archiv.tagesspiegel.de/archiv/29.05.2006/2555791.asp vorbei?
        text  => 'Rosa-Luxemburg-Str. Richtung Schönhauser Tor wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -4542,6 +4542,15 @@ EOF
        source_id => 'IM_002823',
        data  => <<EOF,
 userdel	2 8119,12414 8122,12600
+EOF
+     },
+     { from  => 1148937489, # 2006-05-29 23:18
+       until => 1149372000, # 2006-06-04 00:00
+       text  => 'Jannowitzbrücke (Mitte) in beiden Richtungen vollständig gesperrt (bis 03.06.2006)',
+       type  => 'gesperrt',
+       source_id => 'IM_002820',
+       data  => <<EOF,
+userdel	2 11347,12181 11328,12040
 EOF
      },
     );

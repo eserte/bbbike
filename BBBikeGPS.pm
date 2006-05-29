@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGPS.pm,v 1.16 2005/11/17 19:52:33 eserte Exp $
+# $Id: BBBikeGPS.pm,v 1.16 2005/11/17 19:52:33 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003 Slaven Rezic. All rights reserved.
@@ -473,6 +473,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
     $base = File::Basename::basename($file);
 
     my $last_wpt;
+    my $last_accurate_wpt;
     my $is_new_chunk;
 foreach my $chunk (@{ $gps->Chunks }) {
     $is_new_chunk = 1;
@@ -506,7 +507,12 @@ foreach my $chunk (@{ $gps->Chunks }) {
 		    # have any time at all!
 		    if (abs($legtime) < 60*$max_gap && !$is_new_chunk) {
 			my $dist = sqrt(($x0-$last_x0)**2 + ($y0-$last_y0)**2);
-			$whole_dist += $dist;
+			if ($last_accurate_wpt && $acc <= $accuracy_level) {
+			    my(undef,undef,$last_acc_x0,$last_acc_y0) = @$last_wpt;
+			    my $acc_dist = sqrt(($x0-$last_acc_x0)**2 + ($y0-$last_acc_y0)**2);
+			    $whole_dist += $acc_dist;
+			}
+			#$whole_dist += $dist;
 			$whole_time += $legtime;
 			my @l = localtime $time;
 			my $speed;
@@ -583,6 +589,9 @@ foreach my $chunk (@{ $gps->Chunks }) {
 		    }
 		}
 		$last_wpt = [$x,$y,$x0,$y0,$time,$alt,$acc];
+		if ($acc <= $accuracy_level) {
+		    $last_accurate_wpt = [@$last_wpt];
+		}
 	    }
 	}
     } continue {

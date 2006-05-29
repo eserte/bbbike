@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.240 2006/05/09 20:39:04 eserte Exp $
+# $Id: bbbike,v 3.240 2006/05/09 20:39:04 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -1684,9 +1684,10 @@ sub do_iconframe {
 		 [M"Nebenstraßen", 'N'],
 		 [M"für Kfz gesperrte Straßen", 'NN']);
 	foreach (@l) {
+	    my($label,$cat) = @$_;
 	    $skm->checkbutton
-	      (-label => $_->[0],
-	       -variable => \$str_restrict{'s'}->{$_->[1]},
+	      (-label => $label,
+	       -variable => \$str_restrict{'s'}->{$cat},
 	       -command => sub {
 		   pending(1, 'replot-str-s');
 	       },
@@ -2047,8 +2048,9 @@ sub do_iconframe {
 	     [M"in Bau", 'UBau'],
 	     [M"stillgelegt", 'U0'],
 	    ) {
-	$ubcm->checkbutton(-label => $_->[0],
-			   -variable => \$str_restrict{'u'}->{$_->[ATTRIB_PLURAL]},
+	my($label,$cat) = @$_;
+	$ubcm->checkbutton(-label => $label,
+			   -variable => \$str_restrict{'u'}->{$cat},
 			   -command => sub {
 			       $progress->InitGroup;
 			       pending(1, 'replot-str-u');
@@ -2102,8 +2104,9 @@ sub do_iconframe {
 	     [M"in Bau", 'SBau'],
 	     [M"stillgelegt", 'S0'],
 	    ) {
-	$sbcm->checkbutton(-label => $_->[0],
-			   -variable => \$str_restrict{'b'}->{$_->[ATTRIB_PLURAL]},
+	my($label,$cat) = @$_;
+	$sbcm->checkbutton(-label => $label,
+			   -variable => \$str_restrict{'b'}->{$cat},
 			   -command => sub {
 			       $progress->InitGroup;
 			       pending(1, 'replot-str-b');
@@ -2152,8 +2155,9 @@ sub do_iconframe {
 	     [M"in Bau", 'RBau'],
 	     [M"Güterbahnen/Verbindungsstrecken", 'RG'],
 	    ) {
-	$rbcm->checkbutton(-label => $_->[0],
-			   -variable => \$str_restrict{'r'}->{$_->[ATTRIB_PLURAL]},
+	my($label,$cat) = @$_;
+	$rbcm->checkbutton(-label => $label,
+			   -variable => \$str_restrict{'r'}->{$cat},
 			   -command => sub {
 			       $progress->InitGroup;
 			       pending(1, 'replot-str-r');
