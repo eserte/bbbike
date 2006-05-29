@@ -138,7 +138,9 @@ sub BBBikeHeavy::load_plugin {
     my @plugin_args;
     if ($file =~ /^(.*)=(.*)$/) {
 	$file = $1;
-	@plugin_args = split / /, $2;
+	#@plugin_args = split / /, $2;
+	require Text::ParseWords;
+	@plugin_args = Text::ParseWords::shellwords($2);
     }
     $file .= ".pm" if ($file !~ /\.pm$/);
     my($mod) = fileparse($file, '\..*');
