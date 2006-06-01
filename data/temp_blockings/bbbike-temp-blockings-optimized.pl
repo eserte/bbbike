@@ -96,14 +96,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1149026400,
-         'text' => 'L 302 Schöneicher Str. OL Schöneiche, Dorfaue und Rüdersdorfer Str. Kanal- und Straßenbau Vollsperrung 12.04.2005-30.05.2006 ',
-         'from' => 1113170400,
-         'data' => 'userdel	q4 31221,8312 30700,8462
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -284,7 +277,15 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_002360',
+         'until' => 1159653599,
+         'text' => 'Swinemünder Brücke: Baustelle Straße vollständig gesperrt (bis Ende 09.2006) ',
+         'from' => 1149119975,
+         'data' => 'userdel	q4 9494,15998 9583,15851
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -412,15 +413,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1149026400,
-         'text' => 'B 169 OU Senftenberg Bau Ortsumfahrung Vollsperrung 06.11.2003-30.05.2006 ',
-         'from' => 1067986800,
-         'data' => 'userdel	q4 54357,-96691 54884,-96292
-userdel	q4 55158,-95910 54884,-96292
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -553,15 +546,6 @@ userdel	2 22668,12080 22701,12115
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1151704800,
-         'text' => 'K 7219 Zülichendorf-Dobbrikow OD Nettgendorf, zw. OE und Klinkenmühler Str. Kanal- und Straßenbau Vollsperrung 24.03.2006-30.06.2006 ',
-         'from' => 1143068400,
-         'data' => 'userdel	q4 -12904,-28790 -12925,-29046
-userdel	q4 -12904,-28790 -12713,-28704
-',
-         'type' => 'handicap'
-       },
        undef,
        undef,
        undef,
@@ -572,14 +556,8 @@ userdel	q4 -12904,-28790 -12713,-28704
        undef,
        undef,
        undef,
-       {
-         'until' => 1149112800,
-         'text' => 'B 198 OD Kerkow Greiffenbg.Str. Kerkow Neubau Straße Vollsperrung 22.03.2006-31.05.2006 ',
-         'from' => 1142895600,
-         'data' => 'userdel	q4 48929,70947 49007,71214
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -688,14 +666,7 @@ userdel	2 21100,4192 21174,4250
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1149112800,
-         'text' => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 20.04.2006-31.05.2006 ',
-         'from' => 1145397600,
-         'data' => 'userdel	q4 -89647,59213 -89549,58784
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -844,6 +815,15 @@ userdel	3 8034,12093 8063,12182 8119,12414
          'data' => 'userdel	2 11347,12181 11328,12040
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002840',
+         'until' => 1149285600,
+         'text' => 'Ebertstr. (Mitte) in beiden Richtungen zwischen Lenéstr. und Behrenstr. Veranstaltung, Straße vollständig gesperrt (bis 02.06.06. 6 Uhr)',
+         'from' => 1149058136,
+         'data' => 'userdel	q4 8595,12066 8581,11896 8571,11846
+',
+         'type' => 'handicap'
        }
      
 );

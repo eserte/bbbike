@@ -2509,10 +2509,11 @@ EOF
 userdel	2 2996,-10338 1764,-12480
 EOF
      },
-     { from  => 1135370995, # 2005-12-23 21:49
-       until => 1146434400, # 2006-05-01 00:00
-       text  => 'Swinemünder Str. zwischen Behmstr. und Ramlerstr. in beiden Richtungen Straßenarbeiten, gesperrt, Gehweg ist passierbar (Swinemünder Brücke). Dauer: bis 30.04.2006 ',
+     { from  => 1149119975, # 2006-06-01 01:59
+       until => 1159653599, # 2006-09-30 23:59
+       text  => 'Swinemünder Brücke: Baustelle Straße vollständig gesperrt (bis Ende 09.2006) ',
        type  => 'handicap',
+       source_id => 'IM_002360',
        data  => <<EOF,
 userdel	q4 9494,15998 9583,15851
 EOF
@@ -3769,7 +3770,7 @@ userdel	q4; 4391,7258 4618,7231 4743,7212
 EOF
      },
      { from  => 1143068400, # 2006-03-23 00:00
-       until => 1151704800, # 2006-07-01 00:00
+       until => 1149120177, # 1151704800 2006-07-01 00:00
        text  => 'K 7219 Zülichendorf-Dobbrikow OD Nettgendorf, zw. OE und Klinkenmühler Str. Kanal- und Straßenbau Vollsperrung 24.03.2006-30.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -4551,6 +4552,15 @@ EOF
        source_id => 'IM_002820',
        data  => <<EOF,
 userdel	2 11347,12181 11328,12040
+EOF
+     },
+     { from  => 1149058136, # 2006-05-31 08:48
+       until => 1149285600, # 2006-06-03 00:00
+       text  => 'Ebertstr. (Mitte) in beiden Richtungen zwischen Lenéstr. und Behrenstr. Veranstaltung, Straße vollständig gesperrt (bis 02.06.06. 6 Uhr)',
+       type  => 'handicap',
+       source_id => 'IM_002840',
+       data  => <<EOF,
+userdel	q4 8595,12066 8581,11896 8571,11846
 EOF
      },
     );

@@ -93,7 +93,7 @@ Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 Grünau/B179	1 22092,999 22105,888 22075,779 22012,706 21847,794 21894,881 21990,979 22092,999
 Dorfplatz	1 21051,-533 21022,-566 20873,-608 20836,-577 21011,-529 21051,-533
 B96a (Kfz-Straße)	2 20237,-581 20602,-318 20810,-117 21315,454 21563,782 21668,982 21829,1351 21862,1532 21819,1595 21541,1739
-Choriner Str.	1 10502,14070 10480,13945 10466,13855 10445,13752
+Choriner Str.	1 10480,13945 10466,13855 10445,13752
 Olivaer Platz	1 4239,10358 4172,10406 4157,10418
 Platz S (Hundekehlestr.)	1 2277,7705 2206,7637
 Platz S (Hundekehlestr.)	1 2161,7685 2222,7718 2277,7705
@@ -141,7 +141,7 @@ Weserstr. (Friedrichshain)	1 14416,11815 14471,11782
 Quickborner Str.	1 8022,21476 8170,21304
 Berliner Str. (Blankenfelde)	1 9490,23531 9528,23240
 Revaler Str. (Straßenbahn)	1 13594,11489 13473,11456
-Molkenmarkt - zur Stralauer Str.	1 10798,12285 10772,12288 10675,12280
+Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10675,12280
 Herrfurthplatz	1 11647,7940 11659,7982 11695,8005 11732,8001 11757,7965 11753,7930 11717,7895 11670,7911 11647,7940
 Grimmstr.	1 11016,9599 11083,9753 11163,9903
 Grimmstr.	1 11200,9889 11148,9730 11117,9658 11083,9573
@@ -261,7 +261,6 @@ Gustav-Müller-Str.	1 7642,8583 7642,8815
 Gustav-Müller-Platz	1 7642,8583 7712,8560 7641,8534 7577,8558 7642,8583
 Niederlagstr.	1 9959,12180 9926,12368 9918,12411
 Kolk/Behnitz/Möllentordamm	1 -3029,14656 -3010,14612 -2939,14585 -2920,14637 -2992,14667 -3029,14656
-Adolfstr.	1 7796,15590 7817,15418
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12980,7597 13100,7626
 Karl-Marx-Platz	1 13100,7626 12991,7549
@@ -376,6 +375,14 @@ Stephanstr.	1s 6526,4475 6377,4490
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
 Björnsonstr.	1s 10229,16653 10215,16527
+Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3 11462,12384 11333,12437 11343,12300
+Alexanderstr. -> Schillingstr.: umbequemes Überqueren wegen Bordsteinen	3 11323,12484 11333,12437 11462,12384
+Karl-Liebknecht-Str. -> Alexanderpl. [Dircksenstr./zur Karl-Liebknecht-Str.]: Straßenbahntrasse in Bau	3 10920,13139 10781,13002 10844,12935
+Karl-Liebknecht-Str. -> Dircksenstr.: Straßenbahntrasse in Bau	3 10740,12960 10781,13002 10706,13043
+Alexanderpl. [Dircksenstr./zur Karl-Liebknecht-Str.] -> Karl-Liebknecht-Str.: Straßenbahntrasse in Bau	3 10844,12935 10781,13002 10740,12960
+Alexanderpl. [Dircksenstr./zur Karl-Liebknecht-Str.] -> Dircksenstr.: Straßenbahntrasse in Bau	3 10844,12935 10781,13002 10706,13043
+Dircksenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse in Bau	3 10706,13043 10781,13002 10920,13139
+Dircksenstr. -> Alexanderpl. [Dircksenstr./zur Karl-Liebknecht-Str.]: Straßenbahntrasse in Bau	3 10706,13043 10781,13002 10844,12935
 Gropiusstr. -> Badstr.: Gitter auf Mittelstreifen	3 8389,16214 8543,16364 8486,16425
 Gropiusstr. -> Travemünder Str.: Gitter auf Mittelstreifen	3 8389,16214 8543,16364 8592,16406
 Badstr. -> Gropiusstr.: Gitter auf Mittelstreifen	3 8659,16327 8543,16364 8389,16214
@@ -1068,7 +1075,6 @@ Kleine Jägerstr.	2:inwork 9976,11909 10055,11950
 Alte Leipziger Str.	2:inwork 10076,11840 10118,11907
 Jägerstr. (Mitte)	2:inwork 9907,12055 10006,12065
 Kleine Kurstr.	2:inwork 10182,11758 10249,11821
-Spittelmarkt	2:inwork 10182,11758 10274,11805
 Schicklerstr.: Bauarbeiten	2:inwork 11343,12300 11283,12278
 (Verlängerte Französische Str.): Tor kann verschlossen sein	2 8892,12006 9076,12054
 Hollmannstr.	2 9979,10639 9757,10708

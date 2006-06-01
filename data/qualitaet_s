@@ -655,7 +655,8 @@ Tietzenweg: m‰ﬂiges Kopfsteinpflaster	Q2 3643,4232 3768,4045 3867,3925 4132,3552
 Viktoriastr.: schlechtes Kopfsteinpflaster	Q3 3768,4045 3926,4001
 Augustastr.: Kopfsteinpflaster, OK	Q1 4235,3999 4548,4025
 Maxstr.: m‰ﬂiges Kopfsteinpflaster	Q2 7786,15785 7744,15831
-Maxstr.: teilweise gutes Kopfsteinpflaster, teilweise Asphalt	Q1 7744,15831 7631,15937
+Maxstr.: gutes Kopfsteinpflaster	Q1 7744,15831 7673,15897
+Maxstr.: Asphalt	Q0 7673,15897 7631,15937
 Maxstr.: m‰ﬂiges Kopfsteinpflaster	Q2 7631,15937 7543,16016 7491,16072
 Nazarethkirchstr.: einige Straﬂenwellen	Q0 7543,16016 7441,15909 7354,15817 7198,15656
 Genter Str.: m‰ﬂiges Kopfsteinpflaster	Q2 7270,15307 7162,15436 6926,15675 6809,15798 6681,15928
@@ -1042,7 +1043,7 @@ Lˆwestr.: teilweise schlechtes Kopfsteinpflaster	Q3 13279,12639 13362,12462
 Jacobystr.: Beton	Q1 11594,12662 11260,12809 11207,12706
 Parochialstr.: Asphalt mit Schadstellen	Q1 10831,12371 10954,12394 11040,12415
 Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11025,12450 11040,12415 11094,12243
-Propststr.: Kopfsteinpflaster	Q2 10492,12289 10546,12335 10598,12375 10623,12395
+Propststr.: Kopfsteinpflaster	Q2 10492,12289 10553,12333 10611,12378 10639,12394
 (Crellestr. - Julius-Leber-Br¸cke): Verbundsteinpflaster	Q1 7535,9087 7582,9010 7497,8916
 Naumannstr.: Asphalt	Q0 7707,8915 7709,8770
 Inselstr.: Kopfsteinpflaster	Q2 10869,11949 10824,11992
@@ -1176,7 +1177,7 @@ Busseallee: Kopfsteinpflaster	Q2 166,3040 82,3166 -266,3648
 (Hauptstr. - Kynaststr.): schlechtes Kopfsteinpflaster	Q3 15181,10766 15030,10819 14881,10864
 Hallesches Tor: Beton	Q0 9593,10238 9592,10174
 Bebelplatz: Kopfsteinpflaster, OK	Q1 9801,12245 9875,12254
-Metzer Str.: Kopfsteinpflaster	Q2 10947,14114 11016,14081
+Metzer Str.: Kopfsteinpflaster	Q2 10947,14114 11016,14081 11160,14002 11389,13887
 Kollwitzplatz: Kopfsteinpflaster	Q2 11284,14488 11329,14559
 Ekhofplatz: Kopfsteinpflaster	Q2 23343,1454 23382,1429 23360,1390 23325,1418 23343,1454
 Ekhofstr.: Kopfsteinpflaster	Q2 23251,1401 23325,1418
@@ -3204,12 +3205,12 @@ Hegelplatz: Asphalt mit Lˆchern	Q1 9682,12590 9671,12644
 Bauhofstr.: Asphalt mit Lˆchern	Q1 9810,12712 9671,12644
 Friedrichstr. [Zufahrt]: Asphalt	Q0 9384,12448 9394,12351
 Panoramastr.: Asphalt	Q0 10793,12906 10734,12850
-Spandauer Str. [Gehweg]: Gehwegplatten	Q0 10570,12498 10593,12468 10643,12410 10714,12332
-Poststr.: Kopfsteinpflaster	Q2 10476,12432 10520,12368 10546,12335 10565,12310 10596,12268 10629,12293 10659,12259
-Nikolaikirchplatz: Kopfsteinpflaster	Q2 10623,12395 10670,12340 10629,12293 10595,12328 10565,12310
-Eiergasse: Gehwegplatten	Q0 10670,12340 10700,12315
-Am Nuﬂbaum: Verbundsteine	Q1 10593,12468 10573,12454 10571,12409 10598,12375
-(Am Nuﬂbaum): Verbundsteine	Q1 10571,12409 10520,12368
+Spandauer Str. [Gehweg]: Gehwegplatten	Q0 10584,12507 10626,12455 10665,12413 10723,12346
+Poststr.: Kopfsteinpflaster	Q2 10476,12432 10536,12355 10553,12333 10569,12311 10607,12268 10629,12293 10659,12259
+Nikolaikirchplatz: Kopfsteinpflaster	Q2 10639,12394 10671,12356 10625,12315 10595,12328 10569,12311
+Eiergasse: Gehwegplatten	Q0 10671,12356 10700,12315
+Am Nuﬂbaum: Verbundsteine	Q1 10644,12469 10626,12455 10611,12444 10597,12405 10611,12378
+(Am Nuﬂbaum): Verbundsteine	Q1 10597,12405 10536,12355
 J‰gerstr. (Mitte): Asphalt	Q0 9651,12020 9907,12055 10006,12065
 Kleine Kurstr.: Asphalt	Q0 10182,11758 10249,11821 10275,11856
 Kreuzstr.: Asphalt	Q0 10231,11940 10209,11918

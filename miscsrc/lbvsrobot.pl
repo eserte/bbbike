@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: lbvsrobot.pl,v 1.32 2006/05/02 23:20:59 eserte Exp $
+# $Id: lbvsrobot.pl,v 1.33 2006/06/01 00:41:27 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004,2006 Slaven Rezic. All rights reserved.
@@ -195,7 +195,7 @@ if (exists $output_as{'bbd'}) {
 #:
 EOF
     for my $info (@details) {
-	(my $text = $info->{text}) =~ s/[\n\t]+/ /g;
+	my $text = to_one_line($info->{text});
 	$text = state_out($info) . $text;
 	my($x1, $y1) = map { int } $Karte::Polar::obj->map2standard
 	    ($info->{"x"}, $info->{"y"});
@@ -470,16 +470,28 @@ sub get_url {
     $url;
 }
 
-sub diff {
+sub get_detail_id {
+    my($detail) = @_;
     #my $diffcol = "row";
-    my $diffcol = "text";
+    #my $diffcol = "text";
+    #$detail->{$diffcol};
+    #$detail->{details}{Meldenummer};
+    join("#", @{$detail->{details}}{qw(Meldenummer Lage)}); # Beginn ja/nein?
+}
+
+sub get_detail_info {
+    my($detail) = @_;
     my $infocol = "text";
-    my %details     = map {($_->{$diffcol} => $_)} @details;
-    my %old_details = map {($_->{$diffcol} => $_)} @old_details;
+    $detail->{$infocol};
+}
+
+sub diff {
+    my %details     = map {(get_detail_id($_) => $_)} @details;
+    my %old_details = map {(get_detail_id($_) => $_)} @old_details;
     my @diff_details;
     for my $orig_detail (@details) {
 	my $detail = dclone $orig_detail;
-	my $old_detail = $old_details{$detail->{$diffcol}};
+	my $old_detail = $old_details{get_detail_id($detail)};
 	if (!defined $old_detail) {
 	    push @{ $detail->{_state} }, "NEW";
 	} else {
@@ -490,7 +502,7 @@ sub diff {
 	    delete $c2->{"row"};
 	    delete $c2->{"details"};
 	    if (Compare($c1, $c2) == 0) {
-		if ($detail->{$infocol} eq $old_detail->{$infocol}) {
+		if (get_detail_info($detail) eq get_detail_info($old_detail)) {
 		    my($x1,$y1) = $Karte::Polar::obj->map2standard(@{$detail}{qw(x y)});
 		    my($x2,$y2) = $Karte::Polar::obj->map2standard(@{$old_detail}{qw(x y)});
 		    my $dist = int Strassen::Util::strecke([$x1,$y1],[$x2,$y2]);
@@ -506,7 +518,7 @@ sub diff {
 		    # XXX will never happen!!!
 		    push @{ $detail->{_state} },
 			"CHANGED",
-			    "(old text was: $old_detail->{$infocol})";
+			    "(old text was: " . to_one_line(get_detail_info($old_detail)) . ")";
 		}
 	    } else {
 		push @{ $detail->{_state} }, "UNCHANGED";
@@ -516,7 +528,7 @@ sub diff {
     }
     for my $orig_detail (@old_details) {
 	my $detail = dclone $orig_detail;
-	if (!exists $details{$detail->{$diffcol}}) {
+	if (!exists $details{get_detail_id($detail)}) {
 	    push @{ $detail->{_state} }, "REMOVED";
 	    push @diff_details, $detail;
 	}
@@ -570,6 +582,12 @@ sub state_out {
 	$text = join(", ", @{ $detail->{_state} }) . ": ";
     }
     sprintf "%-20s", $text;
+}
+
+sub to_one_line {
+    my($s) = @_;
+    $s =~ s/[\n\t]+/ /g;
+    $s;
 }
 
 sub get_bbd_category {
