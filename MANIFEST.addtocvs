@@ -381,3 +381,13 @@ miscsrc/FixRemoteAddrHandler.pm
 miscsrc/simplify_streets
 miscsrc/show_fonts
 miscsrc/analyze_deploy_timestamps
+c/Makefile
+c/bbbike.h
+c/conv.c
+c/minibbbike.c
+c/mkdata.pl
+c/mkdatapdb.pl
+c/route.c
+tcl/bbbike.tcl
+tcl/strassen.tcl
+miscsrc/strassen-index.pl

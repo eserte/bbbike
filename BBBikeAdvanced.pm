@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.152 2006/05/23 23:34:47 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.153 2006/06/01 22:15:51 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -2379,7 +2379,13 @@ sub buttonpoint {
 		push_ext_selection($s);
 	    } elsif ($tags[0] eq 'o' ||
 		     $tags[0] eq 'fz') {
-		my($cx, $cy) = anti_transpose($c->coords($current));
+		my($cx, $cy);
+		if ($tags[0] eq 'o') {
+		    ($cx, $cy) = split /,/, $tags[1];
+		}
+		if (!defined $cx || !defined $cy) {
+		    ($cx, $cy) = anti_transpose($c->coords($current));
+		}
 		my($x, $y) = $coord_output_sub->($cx, $cy);
 		my $name = ($tags[0] eq 'o'
 			    ? substr(Strassen::strip_bezirk($tag), 0, 40)

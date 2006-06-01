@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: CoreHeavy.pm,v 1.30 2006/04/17 18:21:36 eserte Exp $
+# $Id: CoreHeavy.pm,v 1.31 2006/06/01 23:05:23 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -721,7 +721,10 @@ sub is_current {
 	@dependent_files = $self->file;
     }
     return 1 if !@dependent_files;
-    return 0 if !defined $self->{Modtime};
+    # XXX Hmmm, what's right, what's wrong? Returning 1 helps in
+    # temp_blockings objects, where one subobj is a file-based
+    # Strassen object.
+    return 1 if !defined $self->{Modtime};
     for my $f (@dependent_files) {
 	my $now_modtime = (stat($f))[STAT_MODTIME];
 	return 0 if $self->{Modtime} < $now_modtime;

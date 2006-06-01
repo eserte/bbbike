@@ -398,15 +398,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_002441',
-         'until' => 1149199199,
-         'text' => 'Siemensstr. (Treptow) Richtung Edisonstr. zwischen Wilhelminenhofstr. und Edisonstr. Baustelle, Fahrtrichtung gesperrt (bis Anfang 06.2006)',
-         'from' => 1138319651,
-         'data' => 'userdel	1 17614,6571 17766,6616 17962,6674
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -824,6 +816,15 @@ userdel	3 8034,12093 8063,12182 8119,12414
          'data' => 'userdel	q4 8595,12066 8581,11896 8571,11846
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1149544740,
+         'text' => 'Zossener Straße zwischen Gitschiner Str. und Blücherstr. gesperrt (Karneval der Kulturen), Dauer: 01.06.2006 18:00 Uhr bis 05.06.2006 23:59 Uhr ',
+         'from' => 1149091200,
+         'data' => 'userdel	2 9812,10211 9849,10202 9827,10120 9811,10055
+userdel	2 9849,10202 9851,10219
+',
+         'type' => 'gesperrt'
        }
      
 );

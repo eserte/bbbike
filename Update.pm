@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Update.pm,v 1.20 2005/12/10 23:46:01 eserte Exp eserte $
+# $Id: Update.pm,v 1.21 2006/06/01 23:06:54 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2003,2005 Slaven Rezic. All rights reserved.

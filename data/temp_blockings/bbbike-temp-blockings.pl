@@ -1288,7 +1288,7 @@ EOF
        text  => 'L 912; (Päwesin-Gortz); Brücke über Seeverbindung bei Päwesin Brückenneubau Vollsperrung 26.11.2004-14.12.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -37026,11176 -36427,10861
+userdel	2 -37026,11176 -36669,10926 -36435,10883
 EOF
      },
      { from  => 1102981307, # 2004-12-14 00:41
@@ -4561,6 +4561,15 @@ EOF
        source_id => 'IM_002840',
        data  => <<EOF,
 userdel	q4 8595,12066 8581,11896 8571,11846
+EOF
+     },
+     { from  => 1149091200, # 2006-05-31 18:00
+       until => 1149544740, # 2006-06-05 23:59
+       text  => 'Zossener Straße zwischen Gitschiner Str. und Blücherstr. gesperrt (Karneval der Kulturen), Dauer: 01.06.2006 18:00 Uhr bis 05.06.2006 23:59 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 9812,10211 9849,10202 9827,10120 9811,10055
+userdel	2 9849,10202 9851,10219
 EOF
      },
     );
