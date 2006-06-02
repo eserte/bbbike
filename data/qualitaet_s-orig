@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.123 2006/06/01 21:32:12 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.124 2006/06/02 23:06:21 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1872,15676
@@ -524,7 +524,8 @@ Alt-Britz: schlechtes Kopfsteinpflaster	Q3 12560,4290 12596,4320 12678,4389 1283
 Bendastr.: Kopfsteinpflaster	Q2 12689,6905 12702,6846
 #: by: Gabi Sieber:
 Bendastr.: asphaltiert	Q0 12702,6846 12715,6783 12743,6645
-Bendastr.: Kopfsteinpflaster	Q2 12743,6645 12756,6578 12779,6478
+#: note: laut radzeit 3/2006 sind Teile der Bendastr. asphaltiert worden
+Bendastr.: Kopfsteinpflaster	Q0 12743,6645 12756,6578 12779,6478
 Bendastr.: asphaltiert	Q0 12779,6478 12793,6407 12804,6377
 Ilsestr.: Kopfsteinpflaster	Q2 12645,7087 12632,7137 12613,7236
 Ilsenhof: kleinteiliges Kopfsteinpflaster	Q1 12601,7284 12465,7250
@@ -1309,6 +1310,10 @@ Travemünder Str.: Parkweg	Q1 8592,16406 8659,16494
 Travemünder Str.: Kopfsteinpflaster, Uferweg Parkweg	Q1 8659,16494 8759,16684
 (Pankeweg, teilweise als Walter-Nicklisch-Promenade gekennzeichnet): wechselnder Belag: asphaltiert, Verbundsteinpflaster, Parkweg	Q1 8759,16684 8776,16718 8836,16867 8904,17059 9020,17277 9131,17664 9084,17678 9140,17921
 (Pankeweg): Parkweg	Q1 8804,16881 8866,17075
+#: unverified_by Radzeit 3/2006
+Hohenschönhausener Weg: asphaltiert	Q0 15611,18547 16317,18020
+#: note: laut Bild in Radzeit 3/2006
+Wuhlgartenweg: asphaltiert	Q0 20627,12162 21145,12116 21278,12131
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -1347,7 +1352,7 @@ Renate-Privatstr.: mäßiger Asphalt mit Schlaglöchern	Q1 8686,5536 8710,5735
 #: by: Volker
 Spiekermannstr.: Kopfsteinpflaster	Q2 11673,16456 12054,16517
 #: by: Klaus Feuerstein
-Kirschweg: Beton	Q1 13869,2658 13953,2551 13948,2418 14078,2390
+Kirschweg: Beton	Q1 13869,2658 13931,2579 13953,2551 13948,2418 14078,2390
 #: by: Daniel Küstner (and verified)
 Krachtstr.: Asphalt	Q0 14822,10027 14852,10080 14929,10221
 #: by: Andre Köhler
@@ -3230,6 +3235,7 @@ Fritz-Reuter-Str.: guter Asphalt	Q0 24739,11968 24578,11928
 #: note: laut ADFC-Karte "gut geeignet"
 Tiniusstr.: guter Asphalt	Q0 12570,18351 11984,18650
 #: by: rainer Kühling:
+#: note: laut radzeit 3/2006 ebenfalls asphaltiert worden
 Hannemannstr.: guter Asphalt	Q0 12789,5402 12841,5416 13011,5455 13158,5490 13265,5519 13441,5553 13646,5598
 #: by: Sabine Stock: vvv
 Brombeerweg - Murellenweg: Fußweg gepflastert/geteert	Q0 -1106,12539 -1084,12644

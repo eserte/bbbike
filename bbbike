@@ -5027,6 +5027,7 @@ sub define_item_attribs {
     %p_color =
 	();
 
+    # XXX use klein and klein2 versions, how? array/hash for different scalings?
     %category_image =
 	('bg'  => "behindertengerecht.gif",
 	 'bf'  => "behindertenfreundlich.gif",

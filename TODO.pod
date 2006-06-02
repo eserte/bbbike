@@ -104,6 +104,18 @@ Edit mode, coloring of pp points: use different coloring for
 E<quot>KurvenpunkteE<quot> and crossings, to easier detect errors in
 the street net.
 
+=item * (M4)
+
+Edit mode: automatically put path into selection after drawing, so
+E<quot>Path to selectionE<quot> does not need to be clicked every time
+
+=item * (M4)
+
+Edit mode: if route searching is active and E<quot>insert pointE<quot>
+(or insert multiple points) is active, then it seems that the created
+middle point is broken (off by pixels, and in float). So warn the user
+in this situation to switch route searching off.
+
 =item * (M3)
 
 Bugreport von Andreas Mühlhausen: BS/Del funktioniert nicht zum
@@ -1546,6 +1558,12 @@ L<http://www.adfc-frankfurt-oder.de/radtour/>
 =head2 Datenhandling (make, conversion ...)
 
 =over
+
+=item * (M4)
+
+comments_route should probably be combined, just like sbahn/rbahn.
+Interesting question: what icon should be shown in a combined section?
+both? the first? alternated?
 
 =item * (M3)
 

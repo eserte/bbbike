@@ -18,7 +18,6 @@ Weg am Tegeler Fließ: Durchfahrt möglich? Qualität, wahrscheinlich Waldweg Q2?	?
 Landsberger Allee/Wiesenburger Weg: Sind die Zugänge vorhanden (möglicherweise zwischen den beiden Richtungsfahrbahnen), Einbahnstraßen?	? 19280,15014 19472,15184
 Dorfstr./Seenpromenade Groß Glienicke: Durchfahrt möglich? Kopfsteinpflaster?	? -9449,7005 -9741,6106 -9797,5374 -9686,5268 -9678,4913
 Templerzeile - Götzstr.: existiert eine Verbindung? Qualität?	? 9665,6029 9708,6493
-Wuhlegartenweg: Durchfahrt unter Blumberger Damm möglich? Qualität?	? 20627,12162 21164,12091 21278,12131
 Lenbachstr. (Kaulsdorf): Qualität OK? Zugang zur Wuhle möglich?	? 21668,9885 21704,10036 21671,10289 21954,10700 22325,10707
 Röntgental, Buchenallee: Qualität?	?? 17689,27853 18418,29246
 Gamengrund: genauere Wegführung, Qualität, teilweise war es sehr sandig!. Geht es von der B 158 aus noch weiter in Richtung Norden?	?? 39337,22638 39383,22801 39165,23131 39033,23202 39114,23766 39180,23776 39266,23984 39241,24116 39089,24279 39063,24400 38997,24431 38880,24568 38824,24812 39002,25304 39221,25518 39205,25655 39124,25812 39089,26036 39241,26229 39282,26391 39378,26508 39561,27382 39602,27382 39678,27600 39535,27808 39561,27996 39657,28154 39988,28352 40231,28753 40135,28824 40267,28951 40282,29022 40236,29621 40206,30002 40302,30617 40331,30763 40546,30881 40750,31012 41300,31862 41200,31900 41003,31612 40820,31236 40562,31025 39783,31398
@@ -931,6 +930,15 @@ Dreesch - Damme: weitere Alternative? Qualität?	? 46968,99181 47636,98688 48479,
 U-Bhf. Deutsche Oper: Fußgängerampel in Bau	? 4134,11672
 Alexanderstr./Voltairestr.: Ampel in Bau, wahrscheinlich bis 2006-10-31	? 11209,12430
 Weidendammer Brücke: Baustellenampel, wird diese permanent bleiben?	? 9283,12856
+Bendastr. zwischen Brücke und Silbersteinstr.: noch immer Kopfsteinpflaster?	? 12689,6905 12702,6846
+Paster-Behrens-Str.: Qualität (laut ADFC-Karte südlich der Parchimer gut geeignet)? Existiert ein Durchgang zum Hüsung?	? 13409,4716 13394,4500 13394,4373 13348,4290 13132,4023
+Johannisthaler Chaussee - Gutschmidtstr.: Qualität (laut ADFC-Karte gut geeignet)?	? 13944,2708 13904,2787 13807,2863 13778,2987 13740,3252 13748,3301 13629,3511
+Weg entlang der U-Bahn-Betriebswerkstatt: Qualität (laut ADFC-Karte gut geeignet)?	? 13162,3576 13356,3467 13624,3355 13740,3252
+Britzer Park - Weg entlang der U-Bahn-Betriebswerkstatt: Qualität (laut ADFC-Karte gut geeignet)?	? 13350,3518 13356,3467
+Johannisthaler Chaussee - Lipschitzallee: Qualität (laut ADFC-Karte gut geeignet)?	? 13931,2579 13988,2614 14087,2494 14224,2368 14324,2298 14621,2147
+Maybachufer: laut radzeit 3/2006 hat ein Abschnitt eine asphaltierte Fahrgasse bekommen: wo genau?	? 12093,9783 12257,9703 12416,9625 12569,9547 12785,9443 12841,9368 12870,9366
+Emma-Ihrer-Str.: Qualität?	? 15456,10356 15629,10481
+Straße 270: Qualität? Nur für Radfahrer offen?	? -5870,10847 -4832,11047
 # added from ampeln-orig
 wirklich? (?)	? 9215,3599
 Wirklich? (?)	? -3755,17090
@@ -958,6 +966,7 @@ Nymphenufer: mäßig geeignet (laut ADFC-Karte)	? -4044,1841 -3981,1764 -3806,1644
 Dolomitenstr.: mäßig geeignet (laut ADFC-Karte)	? 10596,17554 10473,17446 10305,17299
 (Orankestr. - Orankesee): gut geeignet (laut ADFC-Karte)	? 15598,15793 15581,15846
 Dillgesstr.: gut geeignet (laut ADFC-Karte)	? 6218,3302 6411,3092 6451,3034 6603,2803
+Hohenschönhausener Weg: asphaltiert (laut Radzeit 3/2006)	? 15611,18547 16317,18020
 (Uferpromenade Spreebogenpark) (hat dieser Weg einen Namen (Ludwig-Erhard-Ufer?))	? 7670,12576 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
 (Weg zur Krampenburg) (ist das ein offizieller Name mit Ausschilderung?)	? 27609,305 27571,262 27171,155 27273,-106 27407,-401 27552,-741 27559,-1365 27357,-1545 27323,-1671
 Schwarzer Weg (Tegel) (ist der Abschnitt südlich vom Restaurant Toulouse auch für Autos geöffnet?)	? 6,19817 23,19677 -38,19605 -116,19576 -244,19494 -487,19210 -570,19070 -566,18984 -570,18865 -593,18795 -707,18630 -792,18564 -820,18524 -884,18325 -994,18204 -1070,18094
@@ -981,6 +990,7 @@ Barthels Pfuhl (oder Barth*o*ls Pfuhl?)	? -23662,80950 -23775,80837 -23675,80725
 Eastgate (genaue Position?)	? 19788,15452
 Müncheberg, Turm (genaue Bezeichnung?)	? 60803,11559
 Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
+Gemeinsamer Rad- und Gehweg parallel zur Straße (Ist der Radweg ein Zweirichtungsradweg? Auf welcher Seite führt der Radweg?)	? 30390,-3443 29780,-3563 28499,-3409 28073,-3255 27906,-3136
 Artemisstr.: kleinteiliges Kopfsteinpflaster (mindestens im Süden:)	? 4387,22222 4293,22365 4140,22623
 Marienhöher Weg: Kopfsteinpflaster (mäßiges oder schlechtes Kopfsteinpflaster?)	? 8353,5188 8185,5209 8009,5000 7913,4996 7861,5029 7851,5125 7929,5250
 Parkstr.: Kopfsteinpflaster (stimmt das?)	? 9029,6360 9143,6415

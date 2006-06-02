@@ -18,7 +18,7 @@ Köpenicker Str. (in Mitte und/oder in Kreuzberg?)	? 11155,11750 11242,11720 1157
 Holzmarktstr.	? 11773,12006 11619,12084 11388,12202 11351,12221
 #: last_checked: 2005-11-04
 Gitschiner Str.	? 9948,10280 10122,10294 10340,10301 10605,10312 10859,10333 10962,10340 11114,10338
-Ostseestr.	? 13098,15592 12911,15708 12743,15811 12554,15925 12384,16029 12091,16209
+Ostseestr.	? 13098,15592 12911,15708 12743,15811
 Storkower Straße zwischen Kniprode- und Greifswalder Straße	? 13453,14678 12722,15105
 Grellstr.	? 12722,15105 12434,15272 12252,15376 11941,15586
 #: last_checked: 2006-01-26
@@ -33,6 +33,7 @@ Saargemünder Straße	? 2005,4772 1934,4788 1744,4812 1479,4853
 Pacelliallee	? 2585,5696 2594,5923 2607,6285 2609,6348 2659,6499 2711,6698 2714,6857 2723,7029
 #: by ^^^
 #: by Tagesspiegel 2004-07-25 (obige waren auch dabei) vvv
+#: XXX: wird es die gesamte Strecke oder nur der Abschnitt der RR3?
 Reichsstr.	? 1403,11428 1308,11506 1220,11583 1133,11664 1033,11754 881,11893 818,11954 738,12025 653,12109 628,12138 481,12319 419,12397 329,12503 269,12576 137,12668 23,12739 -112,12866 -129,12947
 #: by ^^^
 #: by Berliner Kurier: vvv
@@ -51,10 +52,6 @@ Bethaniendamm: vor den Bauarbeiten war hier ein Radstreifen, wird er wieder herg
 #
 #: section Straßen in Planung vvv
 Aalemannkanal: laut ADFC-Karte/neu Brücke geplant	? -2062,18363 -2141,18276
-Teil der RR9, wo geht es weiter, Ausschilderung vorhanden?	? 25010,4807 24681,4943 24074,5279
-Teil der RR6	? 10986,16897 10905,16893
-Teil der RR10	? 11562,7393 11601,7362 11615,7284 11606,7260 11593,7237 11607,7145
-Teil der TR5	? 2717,7093 2732,7235 2750,7416 2767,7592
 Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	? 29192,-10630 29088,-10386 28918,-10301 28723,-10326 28485,-10143
 Marienfelder Allee: bis 2006-05-31 durchgängig Radwege	?::inwork 7580,254 7491,61 7423,-86 7189,-469 7168,-509
 Unter den Linden vor der Staatsoper: hier kommt bis voraussichtlich 2006-05-31 eine neue Fußgängerampel hin	?::inwork 9681,12382 9782,12393
@@ -126,6 +123,8 @@ Spree: ist dieser Spreearm wiederhergestellt worden?	? 43394,-2017 43296,-2181 4
 # erweiterten Suche aufgenommen werden sollen oder dem Benutzer nicht
 # präsentiert werden sollen.
 #
+#: by: radzeit 3/2006
+Radwegrampe am Tierpark: wie hat man sich das vorzustellen?	? 18561,10341 18628,10177
 Ernst-Ruska-Ufer: als Hauptstraße kategorisieren?	? 18927,2431 19103,2442 19592,2403 19919,2384 20100,2373 20201,2392
 (Am Kanal - Adlergestell): genauer Wegverlauf, Koordinaten?	? 20928,2412 20933,2390 20937,2368
 #: by: http://www.berlinonline.de/berliner-zeitung/berlin/486071.html
@@ -278,7 +277,6 @@ Weg am Tegeler Fließ: Durchfahrt möglich? Qualität, wahrscheinlich Waldweg Q2?	?
 Landsberger Allee/Wiesenburger Weg: Sind die Zugänge vorhanden (möglicherweise zwischen den beiden Richtungsfahrbahnen), Einbahnstraßen?	? 19280,15014 19472,15184
 Dorfstr./Seenpromenade Groß Glienicke: Durchfahrt möglich? Kopfsteinpflaster?	? -9449,7005 -9741,6106 -9797,5374 -9686,5268 -9678,4913
 Templerzeile - Götzstr.: existiert eine Verbindung? Qualität?	? 9665,6029 9708,6493
-Wuhlegartenweg: Durchfahrt unter Blumberger Damm möglich? Qualität?	? 20627,12162 21164,12091 21278,12131
 Lenbachstr. (Kaulsdorf): Qualität OK? Zugang zur Wuhle möglich?	? 21668,9885 21704,10036 21671,10289 21954,10700 22325,10707
 Röntgental, Buchenallee: Qualität?	?? 17689,27853 18418,29246
 Gamengrund: genauere Wegführung, Qualität, teilweise war es sehr sandig!. Geht es von der B 158 aus noch weiter in Richtung Norden?	?? 39337,22638 39383,22801 39165,23131 39033,23202 39114,23766 39180,23776 39266,23984 39241,24116 39089,24279 39063,24400 38997,24431 38880,24568 38824,24812 39002,25304 39221,25518 39205,25655 39124,25812 39089,26036 39241,26229 39282,26391 39378,26508 39561,27382 39602,27382 39678,27600 39535,27808 39561,27996 39657,28154 39988,28352 40231,28753 40135,28824 40267,28951 40282,29022 40236,29621 40206,30002 40302,30617 40331,30763 40546,30881 40750,31012 41300,31862 41200,31900 41003,31612 40820,31236 40562,31025 39783,31398
@@ -1373,3 +1371,14 @@ Dreesch - Damme: weitere Alternative? Qualität?	? 46968,99181 47636,98688 48479,
 U-Bhf. Deutsche Oper: Fußgängerampel in Bau	? 4134,11672
 Alexanderstr./Voltairestr.: Ampel in Bau, wahrscheinlich bis 2006-10-31	? 11209,12430
 Weidendammer Brücke: Baustellenampel, wird diese permanent bleiben?	? 9283,12856
+Bendastr. zwischen Brücke und Silbersteinstr.: noch immer Kopfsteinpflaster?	? 12689,6905 12702,6846
+Paster-Behrens-Str.: Qualität (laut ADFC-Karte südlich der Parchimer gut geeignet)? Existiert ein Durchgang zum Hüsung?	? 13409,4716 13394,4500 13394,4373 13348,4290 13132,4023
+Johannisthaler Chaussee - Gutschmidtstr.: Qualität (laut ADFC-Karte gut geeignet)?	? 13944,2708 13904,2787 13807,2863 13778,2987 13740,3252 13748,3301 13629,3511
+Weg entlang der U-Bahn-Betriebswerkstatt: Qualität (laut ADFC-Karte gut geeignet)?	? 13162,3576 13356,3467 13624,3355 13740,3252
+Britzer Park - Weg entlang der U-Bahn-Betriebswerkstatt: Qualität (laut ADFC-Karte gut geeignet)?	? 13350,3518 13356,3467
+Johannisthaler Chaussee - Lipschitzallee: Qualität (laut ADFC-Karte gut geeignet)?	? 13931,2579 13988,2614 14087,2494 14224,2368 14324,2298 14621,2147
+#: XXX wahrscheinlich nur auf dem Teilstück der TR4
+Maybachufer: laut radzeit 3/2006 hat ein Abschnitt eine asphaltierte Fahrgasse bekommen: wo genau?	? 12093,9783 12257,9703 12416,9625 12569,9547 12785,9443 12841,9368 12870,9366
+#: XXX mehr Straßen in der Gegend fehlen: An der Bucht, An den Knabehäusern, Clara-Grunwald-Str., Lina-Morgenstern-Str., Alice-und-Hella-Hirsch-Ring, Paula-Fürst-Str., Medaillonplatz
+Emma-Ihrer-Str.: Qualität?	? 15456,10356 15629,10481
+Straße 270: Qualität? Nur für Radfahrer offen?	? -5870,10847 -4832,11047

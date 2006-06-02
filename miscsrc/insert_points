@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.64 2006/06/01 23:03:47 eserte Exp $
+# $Id: insert_points,v 1.66 2006/06/02 23:05:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -68,7 +68,10 @@ use strict;
 use Getopt::Long;
 
 use FindBin;
-use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib", $FindBin::RealBin);
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib",
+	 $FindBin::RealBin,
+	 "$FindBin::RealBin/miscsrc", # in the case it's required from bbbike
+	);
 use BBBikeUtil;
 use File::Basename;
 use Strassen::Dataset;
@@ -913,7 +916,7 @@ sub process {
 		    chmod 0644, $file;
 		}
 
-		my $indexer = get_indexer(file => $file, type => $type);
+		my $indexer = get_indexer(file => $file, type => $type, uptodatecheck => 0);
 		if ($indexer) {
 		    # By using add_point without a delete_point the
 		    # index is not exact: it could contain more points
@@ -1052,12 +1055,12 @@ sub common_message {
 
 sub get_indexer {
     my(%args) = @_;
-    my $file = $args{file};
-    my $type = $args{type};
+    my $file = delete $args{file};
+    my $type = delete $args{type};
     if (($type == T_NORMAL || $type == T_VORFAHRT)
 	&& $file !~ m{bbbike-temp-blockings\.pl$} # not a real bbd file
 	&& Strassen::Index->can("new")) {
-	return Strassen::Index->new($file);
+	return Strassen::Index->new($file, %args);
     }
     undef;
 }

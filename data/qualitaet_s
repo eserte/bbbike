@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.123 2006/06/01 21:32:12 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.124 2006/06/02 23:06:21 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1872,15676
@@ -510,7 +510,7 @@ Sangerhauser Weg: Verbundsteine	Q1 10748,2412 10933,2606 10934,2670 11025,2766 1
 Alt-Britz: schlechtes Kopfsteinpflaster	Q3 12560,4290 12596,4320 12678,4389 12836,4649 12905,4761 13015,5062
 Bendastr.: Kopfsteinpflaster	Q2 12689,6905 12702,6846
 Bendastr.: asphaltiert	Q0 12702,6846 12715,6783 12743,6645
-Bendastr.: Kopfsteinpflaster	Q2 12743,6645 12756,6578 12779,6478
+Bendastr.: Kopfsteinpflaster	Q0 12743,6645 12756,6578 12779,6478
 Bendastr.: asphaltiert	Q0 12779,6478 12793,6407 12804,6377
 Ilsestr.: Kopfsteinpflaster	Q2 12645,7087 12632,7137 12613,7236
 Ilsenhof: kleinteiliges Kopfsteinpflaster	Q1 12601,7284 12465,7250
@@ -1247,6 +1247,8 @@ Travemünder Str.: Parkweg	Q1 8592,16406 8659,16494
 Travemünder Str.: Kopfsteinpflaster, Uferweg Parkweg	Q1 8659,16494 8759,16684
 (Pankeweg, teilweise als Walter-Nicklisch-Promenade gekennzeichnet): wechselnder Belag: asphaltiert, Verbundsteinpflaster, Parkweg	Q1 8759,16684 8776,16718 8836,16867 8904,17059 9020,17277 9131,17664 9084,17678 9140,17921
 (Pankeweg): Parkweg	Q1 8804,16881 8866,17075
+Hohenschönhausener Weg: asphaltiert	Q0 15611,18547 16317,18020
+Wuhlgartenweg: asphaltiert	Q0 20627,12162 21145,12116 21278,12131
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
 Schützallee: mäßiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfläche	Q2 2230,3823 2151,3834 1952,3864 1918,3868 1815,3876
 Riemeisterstr.: mäßiges Kopfsteinpflaster	Q2 364,4829 319,4906 168,5092 103,5123
@@ -1274,7 +1276,7 @@ Bosestr.: schlechtes Kopfsteinpflaster	Q3 8680,6322 8943,6292
 Borussiastr.: Kopfsteinpflaster	Q2 9241,6791 9706,6802
 Renate-Privatstr.: mäßiger Asphalt mit Schlaglöchern	Q1 8686,5536 8710,5735
 Spiekermannstr.: Kopfsteinpflaster	Q2 11673,16456 12054,16517
-Kirschweg: Beton	Q1 13869,2658 13953,2551 13948,2418 14078,2390
+Kirschweg: Beton	Q1 13869,2658 13931,2579 13953,2551 13948,2418 14078,2390
 Krachtstr.: Asphalt	Q0 14822,10027 14852,10080 14929,10221
 Wittekindstr.: Asphalt	Q0 8353,5429 8350,5505 8365,5779 8371,5896 8375,6036 8388,6322
 Kneippstr.: Kopfsteinpflaster	Q2 2643,23625 2817,23756 3034,23910

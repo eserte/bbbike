@@ -32,6 +32,8 @@ patch\.gz$
 ^Makefile.admin.PL$
 ^HEADER.html.tmpl$
 ^data/.*\.st$
+^data/.*\.inx$
+^data/.*\.inx\d+$
 ^README.admin$
 ^CRASH/
 ^cache\b

@@ -808,21 +808,58 @@ userdel	3 8034,12093 8063,12182 8119,12414
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'source_id' => 'IM_002840',
-         'until' => 1149285600,
-         'text' => 'Ebertstr. (Mitte) in beiden Richtungen zwischen Lenéstr. und Behrenstr. Veranstaltung, Straße vollständig gesperrt (bis 02.06.06. 6 Uhr)',
-         'from' => 1149058136,
-         'data' => 'userdel	q4 8595,12066 8581,11896 8571,11846
+         'source_id' => 'IM_002848',
+         'until' => 1149544800,
+         'text' => 'Blücherstr., Zossnerstr., Waterlooufer rund um den Blücherplatz Veranstaltung, Straßen vollständig gesperrt (bis 05.06.06)',
+         'from' => 1149230977,
+         'data' => 'userdel	2 9522,10017 9444,10000
+userdel	2 9811,10055 9522,10017 9536,10064 9579,10122 9592,10174 9812,10211 9851,10219
+userdel	2 9401,10199 9592,10174
+userdel	2 9579,10122 9689,10124
+userdel	2 9811,10055 9827,10120 9849,10202 9851,10219
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002804',
+         'until' => 1151704800,
+         'text' => 'Hindenburgdamm (Steglitz) in beiden Richtungen, in Höhe Wolfensteindamm Baustelle, Straße vollständig gesperrt (bis 30.06.06)',
+         'from' => 1149229271,
+         'data' => 'userdel	2 4517,4853 4515,4966
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1152914400,
+         'text' => 'B 167 Neustädter Str. OD Neuruppin, zw. Damaschkeweg u. Zufahrt Lidl Straßen-u.Kanalbau,Mittelinsel Vollsperrung 06.06.2006-14.07.2006 ',
+         'from' => 1149458400,
+         'data' => 'userdel	q4 -32062,56731 -33038,55844
 ',
          'type' => 'handicap'
        },
        {
-         'until' => 1149544740,
-         'text' => 'Zossener Straße zwischen Gitschiner Str. und Blücherstr. gesperrt (Karneval der Kulturen), Dauer: 01.06.2006 18:00 Uhr bis 05.06.2006 23:59 Uhr ',
-         'from' => 1149091200,
-         'data' => 'userdel	2 9812,10211 9849,10202 9827,10120 9811,10055
-userdel	2 9849,10202 9851,10219
+         'until' => 1150063200,
+         'text' => 'B 246 Fünfeichen-Grunow OL Bremsdorf, Str. der Jugend Einbau Deckschicht Vollsperrung 08.06.2006-11.06.2006 ',
+         'from' => 1149631200,
+         'data' => 'userdel	2 84903,-28417 83882,-28424
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1164927600,
+         'text' => 'L 338 Rahnsdorfer Str. OD Schöneiche, Brücke über Jägergraben Brückenneubau Vollsperrung 07.06.2006-30.11.2006 ',
+         'from' => 1149544800,
+         'data' => 'userdel	2 30221,7373 30118,8128
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1154124000,
+         'text' => 'L 074 Chausseestraße OL Wünsdorf, zw. Cottbusser/Berliner Str. u. Seestr. Kanalverlegung Vollsperrung 19.06.2006-28.07.2006 ',
+         'from' => 1150581600,
+         'data' => 'userdel	2 15960,-26906 15682,-26971 15229,-27157
 ',
          'type' => 'gesperrt'
        }
