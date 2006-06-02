@@ -38,8 +38,10 @@ proc strassenNew {filename} {
     set i 0
     while {! [eof $B]} {
 	gets $B line
-	lappend strassenData $line
-	incr i
+	if {[string index $line 0] ne "#"} {
+	    lappend strassenData $line
+	    incr i
+	}
 	# debug XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 	#if {$i > 100} break
     }
