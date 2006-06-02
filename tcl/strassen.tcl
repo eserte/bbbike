@@ -14,7 +14,7 @@
 # wie gehen verschachtelte Arrays mit tcl???
 # wie kann man vernünftig mit Objekten umgehen???
 
-set strassenDatadirs { "./data" "/home/e/eserte/src/bbbike/data" }
+set strassenDatadirs { "./data" "../data" "/home/e/eserte/src/bbbike/data" }
 
 proc strassenNew {filename} {
     global strassenData strassenPos
@@ -31,7 +31,7 @@ proc strassenNew {filename} {
     }
 
     if {$B == ""} {
-	error "No file found"
+	error [concat "No strassen file <" $filename "> found, tried in <" $strassenDatadirs ">"]
     }
 
     set strassenData {}
