@@ -239,6 +239,7 @@ for(my $koord_i=0; $koord_i<=$#koord_data; $koord_i++) {
 }
 
 my $outdir = "$FindBin::RealBin/data";
+mkdir $outdir, 0755 if !-d $outdir;
 
 if ($output eq 'data') {
 
