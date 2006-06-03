@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points.t,v 1.10 2006/05/07 11:49:39 eserte Exp $
+# $Id: insert_points.t,v 1.11 2006/06/03 07:59:49 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -10,6 +10,7 @@ use strict;
 use FindBin;
 use IO::Pipe;
 use File::Temp qw(tempfile);
+use Getopt::Long;
 
 BEGIN {
     if (!eval q{
@@ -28,7 +29,11 @@ if (!-x $insert_points[-1]) {
     exit 0;
 }
 
-plan tests => 5;
+my $v;
+GetOptions("v!" => \$v)
+    or die "usage: $0 [-v]";
+
+plan tests => 5 * 2;
 
 my($logfh,$logfile) = tempfile(SUFFIX => ".log");
 
@@ -39,101 +44,110 @@ BEGIN { $^W = 0 }
 my @methfesselstr = qw(8982,8781 9057,8936);
 BEGIN { $^W = 1 }
 
-my @common_args = ("-report", "-useint",
-		   "-datadir", $datadir, "-n",
-		   "-logfile", $logfile,
-		  );
-SKIP: {
-    skip "Workaround utf-8 problem", 4
-	if $] == 5.008 && defined $ENV{LANG} && $ENV{LANG} =~ /utf/i;
+for my $use_indexer (0, 1) {
+    my $indexer_label = ($use_indexer ? "(with indexer)" : "(without indexer)");
 
-    {
-	my @res = IO::Pipe->new->reader(@insert_points,
-					"-operation", "grep",
-					@common_args,
-					$dudenstr_orig)->getlines;
-	chomp @res;
-	is(join(" ", sort @res),
-	   join(" ", qw(../misc/ampelschaltung-orig.txt
-			/home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
-			ampeln-orig
-			ampelschaltung-orig
-			hoehe-orig
-			housenumbers-orig
-			radwege-orig
-			strassen-orig
-		       )),
-	   "orig and grep");
+    my @common_args = ("-report", "-useint",
+		       "-datadir", $datadir, "-n",
+		       "-logfile", $logfile,
+		       ($use_indexer ? "-indexer" : "-noindexer"),
+		      );
+    if ($v) {
+	push @common_args, "-v";
     }
 
-    {
-	my @res = IO::Pipe->new->reader(@insert_points,
-					"-operation", "grep",
-					@common_args,
-					"-noorig", "-coordsys", "H",
-					$dudenstr)->getlines;
-	chomp @res;
-	is(join(" ", sort @res),
-	   join(" ", qw(../misc/ampelschaltung.txt
-			/home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
-			ampeln
-			ampelschaltung
-			hoehe
-			housenumbers
-			radwege_exact
-			strassen
-		       )),
-	   "generated and grep");
-    }
+ SKIP: {
+	skip "Workaround utf-8 problem", 4
+	    if $] == 5.008 && defined $ENV{LANG} && $ENV{LANG} =~ /utf/i;
 
-    {
-	my @res = IO::Pipe->new->reader(@insert_points,
-					"-operation", "change",
-					@common_args,
-					$dudenstr_orig, "0,0")->getlines;
-	chomp @res;
-	is(join(" ", sort @res),
-	   join(" ", qw(../misc/ampelschaltung-orig.txt
-			/home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
-			ampeln-orig
-			ampelschaltung-orig
-			hoehe-orig
-			housenumbers-orig
-			radwege-orig
-			strassen-orig
-		       )),
-	   "orig and change");
-    }
+	{
+	    my @res = IO::Pipe->new->reader(@insert_points,
+					    "-operation", "grep",
+					    @common_args,
+					    $dudenstr_orig)->getlines;
+	    chomp @res;
+	    is(join(" ", sort @res),
+	       join(" ", qw(../misc/ampelschaltung-orig.txt
+			    /home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
+			    ampeln-orig
+			    ampelschaltung-orig
+			    hoehe-orig
+			    housenumbers-orig
+			    radwege-orig
+			    strassen-orig
+			   )),
+	       "orig and grep $indexer_label");
+	}
 
-    {
-	my @res = IO::Pipe->new->reader(@insert_points,
-					"-operation", "change",
-					@common_args,
-					"-noorig", "-coordsys", "H",
-					$dudenstr, "0,0")->getlines;
-	chomp @res;
-	is(join(" ", sort @res),
-	   join(" ", qw(../misc/ampelschaltung.txt
-			/home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
-			ampeln
-			ampelschaltung
-			hoehe
-			housenumbers
-			radwege_exact
-			strassen
-		       )),
-	   "generated and change");
-    }
+	{
+	    my @res = IO::Pipe->new->reader(@insert_points,
+					    "-operation", "grep",
+					    @common_args,
+					    "-noorig", "-coordsys", "H",
+					    $dudenstr)->getlines;
+	    chomp @res;
+	    is(join(" ", sort @res),
+	       join(" ", qw(../misc/ampelschaltung.txt
+			    /home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
+			    ampeln
+			    ampelschaltung
+			    hoehe
+			    housenumbers
+			    radwege_exact
+			    strassen
+			   )),
+	       "generated and grep $indexer_label");
+	}
 
-    {
-	my @res = IO::Pipe->new->reader(@insert_points,
-					"-operation", "changeline",
-					@common_args,
-					@methfesselstr, "0,0")->getlines;
-	chomp @res;
-	is(join(" ", sort @res),
-	   join(" ", qw(qualitaet_s-orig strassen-orig)),
-	   "orig and changeline");
+	{
+	    my @res = IO::Pipe->new->reader(@insert_points,
+					    "-operation", "change",
+					    @common_args,
+					    $dudenstr_orig, "0,0")->getlines;
+	    chomp @res;
+	    is(join(" ", sort @res),
+	       join(" ", qw(../misc/ampelschaltung-orig.txt
+			    /home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
+			    ampeln-orig
+			    ampelschaltung-orig
+			    hoehe-orig
+			    housenumbers-orig
+			    radwege-orig
+			    strassen-orig
+			   )),
+	       "orig and change $indexer_label");
+	}
+
+	{
+	    my @res = IO::Pipe->new->reader(@insert_points,
+					    "-operation", "change",
+					    @common_args,
+					    "-noorig", "-coordsys", "H",
+					    $dudenstr, "0,0")->getlines;
+	    chomp @res;
+	    is(join(" ", sort @res),
+	       join(" ", qw(../misc/ampelschaltung.txt
+			    /home/e/eserte/src/bbbike/t/../data/temp_blockings/bbbike-temp-blockings.pl
+			    ampeln
+			    ampelschaltung
+			    hoehe
+			    housenumbers
+			    radwege_exact
+			    strassen
+			   )),
+	       "generated and change $indexer_label");
+	}
+
+	{
+	    my @res = IO::Pipe->new->reader(@insert_points,
+					    "-operation", "changeline",
+					    @common_args,
+					    @methfesselstr, "0,0")->getlines;
+	    chomp @res;
+	    is(join(" ", sort @res),
+	       join(" ", qw(qualitaet_s-orig strassen-orig)),
+	       "orig and changeline $indexer_label");
+	}
     }
 
 }

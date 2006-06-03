@@ -45,10 +45,10 @@ userdel auto	3 9689,10124 9811,10055 9837,9856
 userdel auto	3 9579,10122 9592,10174 9593,10238
 EOF
      },
-     { from  => Time::Local::timelocal(reverse(2003-1900,6-1,7,0,0,0)),
-       until => Time::Local::timelocal(reverse(2003-1900,6-1,8,22,0,0)),
+     { from  => 1149323010, # 2006-06-03 10:23
+       until => 1149458399, # 2006-06-04 23:59
+       text  => 'Karneval der Kulturen, 04.06.2006, 12.30 bis 21.30 Uhr',
        file  => "karneval-der-kulturen.bbd",
-       text  => "Karneval der Kulturen am 8.6. (Hasenheide - Gneisenaustr. - Yorckstr.)",
      },
      { from  => Time::Local::timelocal(reverse(2003-1900,6-1,19,6,0,0)),
        until => Time::Local::timelocal(reverse(2003-1900,6-1,22,22,0,0)),

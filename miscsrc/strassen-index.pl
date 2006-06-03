@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-index.pl,v 1.4 2006/06/02 23:04:51 eserte Exp $
+# $Id: strassen-index.pl,v 1.5 2006/06/03 08:01:06 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -35,6 +35,7 @@ sub new {
     $index_file .= ($DB_File::db_version eq '' || $DB_File::db_version <= 1 ? '' : int($DB_File::db_version));
     my $self = bless {strassen_file => $strassen_file,
 		      index_file    => $index_file,
+		      verbose       => (delete $opts{verbose} || 0),
 		     }, $class;
     if ((!exists $opts{uptodatecheck} || $opts{uptodatecheck})
 	&& (!-e $index_file || -M $strassen_file < -M $index_file)) {
@@ -68,6 +69,9 @@ sub create_index {
 	0644, $DB_File::DB_HASH
 	    or die "Can't create $index_file: $!";
 
+    if ($self->{verbose}) {
+	print STDERR "Creating <$index_file>... ";
+    }
     $s->init;
     while(1) {
 	my $r = $s->next;
@@ -79,6 +83,10 @@ sub create_index {
     }
 
     unlink "$index_file~";
+
+    if ($self->{verbose}) {
+	print STDERR "done\n";
+    }
 
     $self->{db} = \%db;
 }
