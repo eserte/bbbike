@@ -96,7 +96,10 @@ Milmersdorf: Kopfsteinpflaster	Q1 25146,78471 25175,79103
 Nassenheide: schlechter Weg	Q2 -4008,44851 -4439,44595 -4758,42618
 Schildow: mäßiges Kopfsteinpflaster (bis Ortsgrenze Mühlenbeck)	Q2 8194,25966 8231,26584 8189,26883 8103,27587
 Ortsdurchfahrt Ladeburg: asphaltiert	Q0 22414,33559 22540,33318 22528,32937 22527,32200
-Schönow - Buch bis zur Kurve Hobrechtsfelder Chaussee: schlechtes Kopfsteinpflaster (13 km/h)	Q3 16843,30303 16540,29940 16301,29192 16107,28551 16022,28450 15745,28121 15757,28054
+Schönow - Hobrechtsfelde: schlechtes Kopfsteinpflaster (13 km/h)	Q3 16843,30303 16540,29940
+#: by: Robert (Hinweis auf den Gehweg):
+Hobrechtsfelde: schlechtes Kopfsteinpflaster (13 km/h), Ausweichen auf Gehweg möglich	Q3 16540,29940 16301,29192 16107,28551 16022,28450
+Hobrechtsfelde - Buch bis zur Kurve Hobrechtsfelder Chaussee: schlechtes Kopfsteinpflaster (13 km/h)	Q3 16022,28450 15745,28121 15757,28054
 Bötzow: Kopfsteinpflaster	Q2 -7640,26928 -8182,26706
 Hennigsdorf: Kopfsteinpflaster OK	Q1 -3450,26512 -3306,25887 -3018,25556
 Berliner Str. (Erkner): Kopfsteinpflaster, Radwege OK	Q1 33593,2893 33894,2825 34142,2742
@@ -126,8 +129,10 @@ Groß-Glienicke: Kopfsteinpflaster, OK	Q1 -9215,7517 -9364,7189 -9449,7005
 Werder, Am Bahnhof: Kopfsteinpflaster	Q2 -21462,-2657 -21636,-2101 -22042,-2060
 Golm, Weinmeisterstr.: sandige Straße	Q2 -19578,-674 -19044,-737 -18981,-566
 #: add_fragezeichen: welche Nummer des F-Wegs?
-F XXX: fester Sandweg mit einigen Schlaglöchern	Q1 -21063,-2021 -20937,-1989 -20721,-1935 -20486,-1956 -20295,-1870 -20214,-691 -20208,-586 -20167,-540
+Werder - Golm: relativ glatter Feldweg mit einigen Schlaglöchern	Q1 -21063,-2021 -20937,-1989 -20721,-1935 -20486,-1956
+Werder - Golm: Asphalt	Q0 -20486,-1956 -20295,-1870 -20214,-691 -20208,-586 -20167,-540
 zur Eisenbahnbrücke: Asphalt	Q0 -21636,-2101 -21508,-2080 -21210,-2058
+Kuhfortdamm: kleinteiliges Kopfsteinpflaster, etwas uneben	Q1 -18353,-2017 -18097,-2054 -18077,-1867 -17929,-1654
 Borgsdorf - Summt: schlechtes Kopfsteinpflaster	Q3 7336,31464 7079,31614
 Borgsdorf - Summt: teilweise Kopfsteinpflaster	Q2 7079,31614 6377,31715
 Schöneiche - Rüdersdorf: Asphalt	Q0 34780,7980 34918,7990 35050,8150 35171,8203 35482,8027 35625,8093
@@ -598,7 +603,7 @@ Buchholz - Altlandsberg: Asphalt 	Q0 36193,20450 35131,20000 34568,19778 34249,1
 	Q0 22378,30943 22306,31150 22512,31754 22527,32200
 	Q0 22414,33559 21403,34888 20993,35925 21015,36309 21144,36776 21017,37585 21039,38033 20756,39387 20634,39525 20637,39656 20793,39700 20737,40843 20516,41243 20318,41618 20050,42531 20059,42684 20100,42837 19609,43128 20082,46352 20045,46676 20171,46939 20365,46895 20431,47171 20909,47659 20954,48063 20890,48340 20956,48531 22383,48738
 	Q0 22862,49031 23597,49573 23748,49682 23759,49971
-	Q0 23759,49971 24081,50440 24656,50600 25832,50371 26091,50412
+	Q0 23759,49971 24081,50440 24522,50570 24656,50600 25832,50371 26091,50412
 	Q0 32390,65225 32258,65920 32795,67013 32971,67822 33457,68244
 	Q0 32196,64718 30649,67660 30583,68369 29960,69231 29831,69617 29717,69996 30049,70124 30110,70375 29963,71336 30334,72148 30244,72598 30268,72844 30335,73461 30899,74885 30640,75721 30020,76646
 	Q0 37577,100778 37237,101019 36999,101137 36624,101494 36128,101588 35006,102271 34589,102405
@@ -1196,8 +1201,7 @@ Kleinow: schlechtes Kopfsteinpflaster	Q3 50828,96893 50875,97118
 Kleinow: Asphalt	Q0 50875,97118 50846,97187
 Zimmerstr. (Potsdam): Kopfsteinpflaster	Q2 -14150,-1290 -13884,-1243 -13646,-1168
 Zimmerplatz (Potsdam): Kopfsteinpflaster	Q2 -13884,-1243 -13886,-1295
-#: add_fragezeichen: eventuell Q1?
-Kastanienallee (Potsdam): Kopfsteinpflaster	Q2 -14909,-1818 -14897,-1946 -14859,-2384
+Kastanienallee (Potsdam): Kopfsteinpflaster, Tram auf Fahrbahn	Q2 -14909,-1818 -14897,-1946 -14859,-2384
 bei Zechow: Asphalt	Q0 -26350,70262 -24687,71412 -24162,71612
 dt. Alleenstraße: Asphalt	Q0 -24335,65501 -22567,67134 -21150,67860
 An der Alten Fahrt: Parkweg	Q1 -12600,-1706 -12437,-1506 -12265,-1434 -12114,-1409 -12110,-1379
@@ -1337,7 +1341,25 @@ Friedrich-Ebert-Ring: gutes Kopfsteinpflaster	Q1 -61173,20423 -61227,20636 -6121
 Mützlitz: gutes Kopfsteinpflaster	Q1 -50578,15920 -50493,15837 -50268,15901
 Barnewitz - Gortz: rauher Asphalt	Q0 -43321,16508 -42279,15770 -41751,14811 -41852,14012 -41998,13287 -41718,12885 -41584,12251 -41416,12081 -41419,11950 -41285,11322
 Parkring (Paretz): mäßiges Kopfsteinpflaster, Sandbanketten	Q2 -25213,6477 -25341,6386 -25444,6326 -25470,6372 -25482,6505 -25537,6616
+Menzelstr.: asphaltiert	Q0 -11308,636 -11014,342
+Bettina-von-Suttner-Str.: schlechtes Kopfsteinpflaster	Q3 -12422,-248 -12633,-311
+Hebbelstr.: schlechtes Kopfsteinpflaster	Q3 -12633,-311 -12511,-75
+Eisenhartstr.: asphaltiert	Q0 -12744,-306 -12625,-4
+Russische Kolonie: Asphalt	Q0 -13050,337 -12947,106 -12855,-72
+Russische Kolonie: kleinteiliges Kopfsteinpflaster	Q1 -13091,-8 -13068,-115
+Russische Kolonie: wassergebundene Decke	Q1 -13091,-8 -12947,106 -12812,271
+Mauerstr. (Potsdam): geflickter Asphalt	Q1 -13425,-852 -13500,-640
+Katharinenholzstr.: Asphalt, einige Kopfsteinpflasterabschnitte mit asphaltierten Fahrgassen	Q0 -15577,397 -14969,-50
+Leest - Wublitzbrücke: asphaltiert	Q0 -21038,2554 -21335,2233 -21420,1957
+Leest - Wublitzbrücke: Waldweg	Q2 -21420,1957 -21385,1152 -21580,897 -21681,702
+Zur Wublitzbrücke: Feldweg, teilweise zweispurig	Q2 -21580,897 -21535,774 -21300,767
+Wublitzbrücke: Holzbohlen	Q0 -21221,764 -21300,767
+Nattwerder - Golm: Feldweg, teilweise holprig und matschig, teilweise relativ glatt	Q2 -21221,764 -20167,-540
 ######################### User Contributions #################################
+#: by: Robert J.: vvv
+Zum Schloss Hubertusstock: asphaltiert	Q0 27359,56787 27142,57108 27080,57520
+Schloss Hubertusstock - Joachimsthal: Waldweg	Q2 27080,57520 27472,58075 28062,58011 29644,59192 30784,60950
+#: by: ^^^
 #: by: anonymous:
 Marlene-Dietrich-Allee: guter Asphalt	Q0 -8423,-2038 -8548,-2035 -8721,-2041 -8791,-2071 -8810,-2131 -8802,-2239 -8793,-2315
 #: by: Marko Krostack:

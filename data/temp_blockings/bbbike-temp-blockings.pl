@@ -1783,7 +1783,7 @@ EOF
        text  => 'B 273; (Potsdamer Str.); OD Potsdam, OT Bornim, zw. Florastr. u. Rückertstr. Kanalarbeiten halbseitig gesperrt; Einbahnstraße 06.04.2005-24.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -16640,1304 -15527,795
+userdel	q4 -16640,1304 -15557,809 -15527,795
 userdel	q4 -16640,1304 -16894,1485
 EOF
      },
@@ -2753,7 +2753,7 @@ EOF
        text  => 'B 273; (Potsdamer Str.); OD Bornim, zw. Amundsenstr. u. Lindstedter Weg Kanalarbeiten halbseitig gesperrt; Einbahnstraße 25.07.2005-24.09.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -15527,795 -16640,1304
+userdel	q4 -15527,795 -15557,809 -16640,1304
 EOF
      },
      { from  => 1126994400, # 2005-09-18 00:00
@@ -3620,7 +3620,7 @@ EOF
        text  => 'Berlin-Lübars: Am Freibad in beiden Richtungen Wasser auf der Fahrbahn, gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 5727,23485 5333,23636
+userdel	2 5727,23485 5297,23633
 EOF
      },
      { from  => undef, # 
