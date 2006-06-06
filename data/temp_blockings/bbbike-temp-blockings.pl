@@ -3606,13 +3606,12 @@ EOF
 userdel	2 23571,10990 24389,10836
 EOF
      },
-     { from  => 1145516400, # 2006-04-20 09:00
-       until => 1145847600, # 2006-04-24 05:00
-       text  => 'Schlichtallee zwischen Hauptstraße und Lückstraße Baustelle, gesperrt, Dauer: 21.04.2006 09:00 Uhr bis 24.04.2006 05:00 Uhr ',
+     { from  => 1149579380, # 2006-06-06 09:36
+       until => 1149868800, # 2006-06-09 18:00
+       text  => 'Schlichtallee zwischen Lückstraße und Hauptstraße in beiden Richtungen Baustelle, gesperrt bis 09.06.2006 18:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 15751,10582 16032,10842
-userdel	2 15751,10582 15629,10481
+userdel	2 15629,10481 15751,10582 16032,10842
 EOF
      },
      { from  => undef, # 
@@ -3761,7 +3760,7 @@ userdel	2 23356,-20982 22599,-19785
 EOF
      },
      { from  => 1142424201, # 2006-03-15 13:03
-       until => 1159653599, # 2006-09-30 23:59
+       until => 1149581725, # 1159653599 2006-09-30 23:59
        text  => 'Wiesbadener Str. (Wilmersdorf) in Richtung Bundesallee zwischen Geisenheimer und Südwestkorso Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2006)',
        type  => 'handicap',
        source_id => 'IM_002513',

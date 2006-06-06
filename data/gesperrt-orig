@@ -338,6 +338,7 @@ Moränenweg	1 3216,21409 3304,21205
 #
 # Potsdam
 #
+Mauerstr.	1 -13425,-852 -13500,-640
 Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12685,-870 -12712,-734 -12730,-627
 Hans-Thoma-Str.	1 -12190,-775 -12262,-612 -12306,-496
@@ -612,6 +613,8 @@ tragen (Treppe)	0:30 -7418,181
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+Enges Drängelgitter	BNP:5 7887,24043
+Enges Drängelgitter	BNP:5 2375,21494
 Drängelgitter	BNP:5 8776,16718
 #: by: Charly Huber:
 Kurzschranke	BNP:5 6739,15307

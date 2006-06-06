@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.97 2006/06/01 21:25:46 eserte Exp $
+# $Id: Makefile,v 2.97 2006/06/01 21:25:46 eserte Exp eserte $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -953,9 +953,10 @@ check-disabled:	.check_label
 	$(CHECK_POINTS) label .strassen.tmp landstrassen landstrassen2
 	@touch $@
 
-.check_vorfahrt:	vorfahrt strassen landstrassen landstrassen2
+.check_vorfahrt:	vorfahrt strassen landstrassen landstrassen2 fragezeichen
 	$(CHECK_NEIGHBOUR) -type standard -data vorfahrt \
-		-against strassen -against landstrassen -against landstrassen2
+		-against strassen -against landstrassen -against landstrassen2 \
+		-against fragezeichen
 	$(CHECK_COUNT) -type vorfahrt -data vorfahrt
 	@touch $@
 

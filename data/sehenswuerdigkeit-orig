@@ -1,8 +1,11 @@
 #: title.de: Sehenswürdigkeiten und andere wichtige Gebäude
 #: title.en: Sights and points of interest
-#: version: $Id: sehenswuerdigkeit-orig,v 4.51 2006/06/02 23:09:47 eserte Exp $
+#: version: $Id: sehenswuerdigkeit-orig,v 4.52 2006/06/06 08:45:31 eserte Exp $
 #:
-# Berlin ##################################################
+######################################################################
+#
+#  BERLIN
+#
 Brandenburger Tor	IMG:sehenswuerdigkeit_img/brandenburger_tor.gif|ANCHOR:s 8593,12243
 Akademie der Künste	F:SW 8650,12196 8665,12098 8718,12114 8700,12204
 Russische Botschaft	SW 8973,12240
@@ -317,7 +320,11 @@ Verwaltungsgebäude	F:SW 4336,9089 4425,9088 4428,9171 4393,9211 4397,9216 4387,9
 Senatsverwaltung für Stadtentwicklung	F:SW 4402,9242 4411,9231 4430,9253 4438,9285 4437,9311 4430,9329 4417,9321 4423,9301 4424,9280 4414,9255
 Hotel Adlon	F:SW 8793,12249 8799,12215 8780,12206 8775,12222 8746,12216 8749,12205 8762,12207 8778,12119 8737,12107 8734,12118 8747,12122 8737,12186 8727,12186 8721,12236
 St.-Sebastians-Kirche	SW|IMG:church.gif 8971,14686
-# Potsdam ##################################################
+Lok Borsig 8	SW 2358,21491
+######################################################################
+#
+#  POTSDAM
+#
 Schloß Babelsberg	F:SW -10482,-195 -10488,-242 -10515,-242 -10511,-193
 Neues Palais	SW -15737,-1011
 Schloß Charlottenhof	SW -15071,-1601
@@ -372,7 +379,10 @@ Filmmuseum Potsdam	SW -12775,-1618
 Truman-Villa (Babelsberg)	SW -8490,-1403
 Biosphäre	SW -13484,1093
 Schloß Lindstedt	SW -16106,-16
-# Brandenburg ##################################################
+######################################################################
+#
+#  BRANDENBURG
+#
 Schloß Rheinsberg	SW -25852,76666
 Schloß Diedersdorf	SW 7420,-7598
 Denkmal (?) 	SW|IMG:monument.gif -29249,39712
@@ -420,19 +430,30 @@ Schloss Kossenblatt	SW 57796,-30982
 Eisenbahnmuseum Gramzow	SW 50657,90569
 Cargolifter-Halle Brand (Tropical Island)	SW 34937,-40443
 Schloss Paretz	SW -25365,6328
-# elsewhere ##################################################
+######################################################################
+#
+#  AUSSERHALB BRANDENBURGS
+#
 Brocken	SW -177603,-70746
 Schloß Wernigerode	SW -165459,-67258
 Wesendahler Mühle	SW 39431,21380
 Eisenbahnhubbrücke Karnin	SW 38039,160491
 Schloß Mellenthin	SW 48860,169621
 Mahnmal bei Kamminke	SW 61911,165656
-# Dresden ####################################################
+#: XXX: Lichthöfe fehlen
+Alte Pianofabrik (Hamburg)	F:SW -225919,124330 -225906,124303 -225895,124309 -225874,124276 -225822,124309 -225861,124367
+######################################################################
+#
+#  DRESDEN
+#
 Deutsches Hygienemuseum	SW 37068,-151040
 Frauenkirche	SW|IMG:church.gif 36709,-150153
 Zwinger	SW 36206,-150134
 Zoologischer Garten Dresden	SW 37456,-151803
-##############################################################
+######################################################################
+#
+#  UNSORTIERT
+#
 Stadtbad Wilmersdorf II	SW 3478,8782
 Hort-Dohm-Eisstadion	F:SW 3448,8719 3405,8633 3405,8619 3423,8607 3442,8614 3486,8701 3482,8719 3466,8727
 Stadion Wilmersdorf	F:SW 3537,8692 3494,8606 3494,8592 3512,8580 3531,8587 3575,8674 3571,8692 3555,8700
@@ -503,6 +524,4 @@ Paulinen Krankenhaus	SW|IMG:hospital.gif -1240,11165
 U-Bahn-Museum	SW 85,12232
 Stalin-Villa (Babelsberg)	SW -9392,-611
 Churchill-Villa (Babelsberg)	SW -8947,-882
-#: XXX: Lichthöfe fehlen
-Alte Pianofabrik (Hamburg)	F:SW -225919,124330 -225906,124303 -225895,124309 -225874,124276 -225822,124309 -225861,124367
 Berlinische Galerie	SW 10012,10841

@@ -466,7 +466,14 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'until' => 1149868800,
+         'text' => 'Schlichtallee zwischen Lückstraße und Hauptstraße in beiden Richtungen Baustelle, gesperrt bis 09.06.2006 18:00 Uhr ',
+         'from' => 1149579380,
+         'data' => 'userdel	2 15629,10481 15751,10582 16032,10842
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        {
@@ -529,15 +536,7 @@ userdel	2 22668,12080 22701,12115
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'source_id' => 'IM_002513',
-         'until' => 1159653599,
-         'text' => 'Wiesbadener Str. (Wilmersdorf) in Richtung Bundesallee zwischen Geisenheimer und Südwestkorso Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2006)',
-         'from' => 1142424201,
-         'data' => 'userdel	q4; 4391,7258 4618,7231 4743,7212
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -801,19 +800,7 @@ userdel	3 8034,12093 8063,12182 8119,12414
        },
        undef,
        undef,
-       {
-         'source_id' => 'IM_002848',
-         'until' => 1149544800,
-         'text' => 'Blücherstr., Zossnerstr., Waterlooufer rund um den Blücherplatz Veranstaltung, Straßen vollständig gesperrt (bis 05.06.06)',
-         'from' => 1149230977,
-         'data' => 'userdel	2 9522,10017 9444,10000
-userdel	2 9811,10055 9522,10017 9536,10064 9579,10122 9592,10174 9812,10211 9851,10219
-userdel	2 9401,10199 9592,10174
-userdel	2 9579,10122 9689,10124
-userdel	2 9811,10055 9827,10120 9849,10202 9851,10219
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'source_id' => 'IM_002804',
          'until' => 1151704800,

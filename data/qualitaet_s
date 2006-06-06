@@ -136,8 +136,11 @@ Tiergartenufer: mäßiges Kopfsteinpflaster	Q2 6478,11338 6292,11427
 Tiergarten: Kopfsteinpflaster	Q2 5835,11768 5771,11887
 S-Bahn-Unterführung	Q2 7854,7572 7934,7621 7959,7609
 Garibaldistr.: schlechtes Kopfsteinpflaster	Q3 7366,19920 7376,19989 7427,20022 7498,20021 7726,19952 7864,19891
-Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6737,23290 6779,23392 6819,23549 6744,23695 6879,23816 6992,23814 7111,23873 7185,23749
+Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6737,23290 6779,23392 6819,23549 6744,23695
+Alt-Lübars: Kopfsteinpflaster	Q2 6744,23695 6817,23760
+Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 6817,23760 6879,23816 6992,23814 7111,23873 7185,23749
 Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 7111,23873 7051,23924 6879,23816
+(Schildower Weg): Feldweg, teilweise gemeinsam mit Reitweg	Q2 7874,24035 7675,23968 7615,23884 7185,23749
 Alt-Tegel: Kopfsteinpflaster	Q2 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2 1543,20060 1668,20156
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1 11512,10105 11610,10305 11660,10402
@@ -1258,6 +1261,43 @@ Uferweg am Tegeler Hafen: fester Sandweg	Q1 1259,20303 1523,20412
 Uferweg am Tegeler Hafen: Gehwegplatten	Q0 1523,20412 1572,20412 1617,20393 1675,20392 1756,20405
 (Tegeler Hafen - An der Mühle): Parkweg/glatt gepflastert	Q1 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
 (Karolinenstr. - Waidmannsluster Damm): Waldweg, hügelig und holprig	Q3 1716,20915 1819,21116 1851,21328 1800,21368
+(Tegeler Fließ - Hermsdorfer Damm): Waldweg	Q2 2336,21546 2166,21468 2004,21502 1942,21564
+(Weg am Tegeler Fließ): Waldweg, OK	Q2 3142,22170 2771,21957 2734,21890 2743,21803 2678,21669 2577,21595 2445,21573 2361,21512
+(Egidysteg - Mühlenfeldstr.): Waldweg, OK	Q2 3138,22314 3094,22233 3124,22198
+Mühlenfeldstr.: Betonstraße	Q0 3727,22868 3743,22642 3747,22582 3243,22311 3138,22314 2587,22332
+(Weg am Tegeler Fließ): Waldweg, OK	Q2 3767,22466 3734,22402 3670,22396 3631,22417 3528,22405 3347,22282 3243,22311
+(Tegeler Fließ - Mühlenfeldstr.): Waldweg, OK	Q2 3747,22582 3767,22466
+Götzestr.: gutes Kopfsteinpflaster	Q1 3908,22709 3743,22642
+(Weg am Tegeler Fließ): Waldweg, OK	Q2 4251,22829 4166,22725 4114,22690 4087,22714 4044,22690
+(Weg am Tegeler Fließ): Waldweg, viele matschige Stellen	Q3 5645,23968 5409,23816 5297,23633 5214,23420 5242,23156 5205,23094 5127,23042 5054,23025 4801,22897 4718,22891 4619,22934 4402,22877 4306,22914 4163,22907
+(Weg am Tegeler Fließ): Holzbohlenweg	Q2 5860,24067 5693,24037 5645,23968
+(Weg am Tegeler Fließ): Feldweg, teilweise nur einspurig, matschige Stellen	Q3 5860,24067 5965,24047 6084,24073 6259,23947
+(Tegeler Fließ - Lübars): Feldweg, teilweise nur einspurig, matschige Stellen	Q3 6259,23947 6395,23785
+(Tegeler Fließ - Lübars): sehr sandig	Q3 6395,23785 6585,23904
+(Tegeler Fließ - Lübars): schlechtes Kopfsteinpflaster	Q3 6585,23904 6744,23695
+Schildower Str. (Blankenfelde): Asphalt	Q0 9186,23625 9133,23750
+(Möllersdorfer Weg): glatter Feldweg	Q1 9812,23983 10082,24061 10071,24087 10466,24468
+(Möllersdorfer Weg - Schönerlinder Str.): glatter Feldweg	Q1 10466,24468 10569,24294 10615,24261 10746,24251 10799,24194
+(Möllersdorfer Weg - Schönerlinder Str.): Feldweg	Q2 10799,24194 11070,24462 11514,24284
+(Schönerlinder Str. - Bucher Str.): enger Feldweg, ein- oder zweispurig	Q3 12405,25137 12743,24929
+(Schönerlinder Str. - Bucher Str.): mäßiger Asphalt, Baumwurzeln	Q2 12743,24929 12903,24882
+(Schönerlinder Str. - Bucher Str.): enger Feldweg, ein- oder zweispurig	Q3 12903,24882 13078,24826 13190,25198 14067,24914 14088,24856 14029,24753
+Hubertusdamm: Asphalt	Q0 14632,23257 15130,24012
+Straße 70: guter bis mäßiger Asphalt	Q1 15595,22693 16298,22221
+Straße 70 - Lindenberger Weg: Feldwege	Q2 16298,22221 16528,22074 16390,21828 16502,21751 16576,21165
+Lindenberger Weg - Am Luchgraben, entlang der B2: Trampelpfad	Q3 16779,21152 17064,21350
+(Am Luchgraben - Siedlung Wartenberg): glatter Feldweg	Q1 17078,21321 17281,20834 17946,20889 18083,20782 18061,20715
+(Am Luchgraben - Siedlung Wartenberg): schlechtes Kopfsteinpflaster	Q3 18061,20715 18383,20623 18513,20580
+Straße 2: schlechtes Kopfsteinpflaster	Q3 18513,20580 18869,20479
+Straße 2: Asphalt	Q0 18869,20479 19070,20410 19261,20344
+Straße 3: Asphalt	Q0 18544,19722 18811,19640 19279,19517
+Straße 6: Asphalt	Q0 18811,19640 18945,20042 19070,20410 19154,20673
+Straße 8: Asphalt	Q0 19227,20270 19261,20344 19354,20607
+(Siedlung Wartenberg - Tierheim): mäßiger Feldweg	Q2 19279,19517 19386,19841
+(Siedlung Wartenberg - Tierheim): schlechter Feldweg	Q3 19386,19841 19692,19743 19817,19593
+(Siedlung Wartenberg - Tierheim): mäßiger Feldweg	Q2 19817,19593 19579,18933
+(Grüne Trift): glatter Belag	Q0 19579,18933 19971,18785
+(Dorfstr. - Köthener Str.): Parkweg	Q1 19875,18182 20535,17913
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
 Schützallee: mäßiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfläche	Q2 2230,3823 2151,3834 1952,3864 1918,3868 1815,3876
 Riemeisterstr.: mäßiges Kopfsteinpflaster	Q2 364,4829 319,4906 168,5092 103,5123
@@ -1398,7 +1438,7 @@ Grevesmühlener Str.: Asphalt	Q0 18177,18412 18031,18433 17807,18267 17678,18171
 Husumer Str.: Asphalt	Q0 20726,10291 21015,10284 21263,10276
 Gottschedstr.: Kopfsteinpflaster	Q2 7894,15980 8003,16098 8306,16428
 Maisweg: Asphalt	Q0 20682,12646 20818,12628 20843,12677 20953,12866 20996,13162 21032,13467
-Ingwäonenweg: Asphalt	Q0 16500,22465 16593,22903 16831,23615
+Ingwäonenweg: Asphalt	Q0 16500,22465 16593,22903 16708,23246 16831,23615
 Wulfila-Ufer: Asphalt	Q0 8249,4769 8494,5001 8750,5173
 Schluchseestr.: Asphalt	Q0 5016,22485 5237,22200 5540,22221 5808,22613
 Niedstr.: Asphalt	Q0 5364,7330 5653,7333 5810,7337 5902,7334
@@ -2032,8 +2072,7 @@ Cäsarstr.: etwas sandig	Q2 18665,9693 18655,9576 18621,9404
 (Römerweg - Hönower Weg): sandiger Weg	Q3 18408,9746 18409,9846 18278,9795 18279,9861
 Griembergweg: Asphalt	Q0 11407,113 11072,108 10740,82
 Strömannstr.: Asphalt	Q0 15574,22640 15595,22693 15691,22949 15853,23397 15884,23509 15950,23671
-Straße 70: mäßiger Asphalt mit vielen Schlaglöchern	Q2 15414,22748 15574,22640
-Straße 70: loser Sandweg	Q3 15595,22693 16298,22221
+Straße 70: loser Sandweg	Q3 15414,22748 15574,22640
 Blechenstr.: Asphalt	Q0 14028,16707 13876,16819
 Nunsdorfer Ring: Asphalt	Q0 8853,172 8981,275 9171,166 9280,-127 9159,-171
 Albertinenstr.: gutes Kopfsteinpflaster	Q1 14067,16127 14085,16210
