@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.97 2006/06/01 21:25:46 eserte Exp eserte $
+# $Id: Makefile,v 2.99 2006/06/06 15:01:01 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1108,7 +1108,7 @@ ${PERSISTENTTMPDIR}/crossings_bahn.bbd:	strassen sbahn rbahn brunnels
 ${PERSISTENTTMPDIR}/crossings_gewaesser.bbd:	\
 					strassen wasserstrassen brunnels
 	${MISCSRCDIR}/check_crossings -v \
-	    -ignore "Fasaneriegraben,Packereigraben,Tr‰nkegraben,Teufelsseekanal,(See im Tiergarten),,Luiseninsel,Fennpfuhl,Heidekampgraben,Karpfenteich,Panke,Nordgraben,Tegeler Flieﬂ,Wuhle,Flutgraben,Kreuzgraben,Zingergraben,Iderfenngraben" \
+	    -ignore "Fasaneriegraben,Packereigraben,Tr‰nkegraben,Teufelsseekanal,(See im Tiergarten),,Luiseninsel,Fennpfuhl,Heidekampgraben,Karpfenteich,Panke,Nordgraben,Tegeler Flieﬂ,Hermsdorfer See,Wuhle,Flutgraben,Kreuzgraben,Zingergraben,Iderfenngraben" \
 	    -o $@~ -against brunnels \
 	    strassen wasserstrassen
 	mv $@~ $@

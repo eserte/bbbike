@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-index.pl,v 1.5 2006/06/03 08:01:06 eserte Exp $
+# $Id: strassen-index.pl,v 1.6 2006/06/06 18:46:48 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -38,14 +38,19 @@ sub new {
 		      verbose       => (delete $opts{verbose} || 0),
 		     }, $class;
     if ((!exists $opts{uptodatecheck} || $opts{uptodatecheck})
-	&& (!-e $index_file || -M $strassen_file < -M $index_file)) {
-	my $s = Strassen->new($strassen_file);
-	$self->{strassen_obj} = $s;
+	&& $self->needs_update) {
 	$self->create_index;
     } else {
 	$self->open_index;
     }
     $self;
+}
+
+sub needs_update {
+    my($self) = @_;
+    my $index_file = $self->{index_file};
+    my $strassen_file = $self->{strassen_file};
+    return !-e $index_file || -M $strassen_file < -M $index_file;
 }
 
 sub open_index {
@@ -62,6 +67,10 @@ sub open_index {
 sub create_index {
     my($self) = @_;
     my $s = $self->{strassen_obj};
+    if (!$s) {
+	$s = Strassen->new($self->{strassen_file});
+	$self->{strassen_obj} = $s;
+    }
     my $index_file = $self->{index_file};
 
     rename $index_file, "$index_file~";

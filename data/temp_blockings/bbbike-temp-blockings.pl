@@ -1630,9 +1630,9 @@ EOF
 userdel	q4 8066,25646 8182,25608
 EOF
      },
-     { from  => 1141499463, # 2006-03-04 20:11
-       until => 1167605999, # 2006-12-31 23:59
-       text  => 'Nennhauser Damm (Spandau) stadteinwärts zwischen Heerstr. und Döberitzer Weg Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
+     { from  => 1149623367, # 2006-06-06 21:49
+       until => 1154383199, # 2006-07-31 23:59
+       text  => 'Nennhauser Damm (Spandau) stadteinwärts zwischen Heerstr. und Döberitzer Weg Baustelle, Fahrtrichtung gesperrt (bis Ende 07.2006)',
        type  => 'gesperrt',
        source_id => 'IM_002500',
        data  => <<EOF,
@@ -3236,11 +3236,11 @@ userdel	q4 8595,12066 8737,12098
 userdel	q4 9164,12172 9059,12155
 EOF
      },
-     { from  => 1134171245, # 2005-12-10 00:34
-       until => 1137399489, # 1149112800, # 2006-06-01 00:00 # XXX bereits aufgehoben?
-       text  => 'Siemensstr. (Köpenick) Richtung Karlshorst, zwischen Wattstr. und Deulstr. Baustelle, Fahrtrichtung gesperrt (bis 31.05.2006) ',
-       type  => 'handicap',
-       source_id => 'IM_002352',
+     { from  => undef, # 
+       until => 1149803999, # 2006-06-08 23:59
+       text  => 'Siemensstr. (Treptow-Köpenick) in Richtung Nalepastr. zwischen Edisonstr. Einbahnstraße in Richtung Nalepastr. (bis 08.06.) (17:00) ',
+       type  => 'gesperrt',
+       source_id => 'IM_002866',
        data  => <<EOF,
 userdel	q4; 17766,6616 17962,6674
 EOF
@@ -4614,6 +4614,23 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 15960,-26906 15682,-26971 15229,-27157
+EOF
+     },
+     { from  => 1149623437, # 2006-06-06 21:50
+       until => 1151100000, # 2006-06-24 00:00
+       text  => 'Londoner Str. (Wedding) Richtung Holländerstr. zwischen Müllerstr. und Holländerstr. Baustelle, Fahrtrichtung gesperrt (bis 23.06.2006)',
+       type  => 'gesperrt',
+       source_id => 'INKO_83663',
+       data  => <<EOF,
+userdel	2 5791,16910 6042,17189 6118,17327 6154,17438
+EOF
+     },
+     { from  => 1149976800, # 2006-06-11 00:00
+       until => 1151186400, # 2006-06-25 00:00
+       text  => 'B 156 OL Spremberg, Muskauer Straße OL Spremberg, Muskauer Str., Bahnübergang Sanierung BÜ u. Tiefbau Vollsperrung 12.06.2006-24.06.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 80783,-91972 80236,-92007
 EOF
      },
     );

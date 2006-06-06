@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.124 2006/06/02 23:06:21 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.125 2006/06/06 18:46:20 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1872,15676
@@ -687,7 +687,7 @@ Albrechtstr.: teilweise mäßiger Asphalt	Q1 9106,12795 9046,12933 9001,13039
 Tempelherrenstr.: Kopfsteinpflaster	Q2 10187,9896 10244,9981 10313,10084
 Alt-Hermsdorf: mäßig geeignet	Q2 4347,23205 4405,23149 4445,23128 4582,23035
 (Benekendorffstr - Lübars): mäßig geeignet	Q2 6606,23655 6674,23683 6744,23695
-(Alt-Hermsdorf - Zehntwerderweg): mäßig geeignet	Q2 4582,23035 4619,22934 4679,22766
+(Alt-Hermsdorf - Zehntwerderweg): mäßig geeignet	Q2 4582,23035 4619,22934 4626,22914 4679,22766
 Medebacher Weg: Kopfsteinpflaster	Q2 1753,20191 1825,20047
 Medebacher Weg: Kopfsteinpflaster	Q2 1849,19961 1863,19925 1886,19835
 Brünowplatz: Kopfsteinpflaster	Q2 1825,20047 1806,19991 1849,19961 1866,20013 1825,20047
@@ -1269,7 +1269,8 @@ Mühlenfeldstr.: Betonstraße	Q0 3727,22868 3743,22642 3747,22582 3243,22311 3138,
 (Tegeler Fließ - Mühlenfeldstr.): Waldweg, OK	Q2 3747,22582 3767,22466
 Götzestr.: gutes Kopfsteinpflaster	Q1 3908,22709 3743,22642
 (Weg am Tegeler Fließ): Waldweg, OK	Q2 4251,22829 4166,22725 4114,22690 4087,22714 4044,22690
-(Weg am Tegeler Fließ): Waldweg, viele matschige Stellen	Q3 5645,23968 5409,23816 5297,23633 5214,23420 5242,23156 5205,23094 5127,23042 5054,23025 4801,22897 4718,22891 4619,22934 4402,22877 4306,22914 4163,22907
+(Weg am Tegeler Fließ): Waldweg, viele matschige Stellen	Q3 5645,23968 5409,23816 5297,23633 5214,23420 5242,23156 5205,23094 5127,23042 5054,23025 4801,22897 4718,22891 4626,22914
+(Weg am Tegeler Fließ): Waldweg, viele matschige Stellen	Q3 4619,22934 4402,22877 4306,22914 4163,22907
 (Weg am Tegeler Fließ): Holzbohlenweg	Q2 5860,24067 5693,24037 5645,23968
 (Weg am Tegeler Fließ): Feldweg, teilweise nur einspurig, matschige Stellen	Q3 5860,24067 5965,24047 6084,24073 6259,23947
 (Tegeler Fließ - Lübars): Feldweg, teilweise nur einspurig, matschige Stellen	Q3 6259,23947 6395,23785
@@ -2194,7 +2195,7 @@ Schillerpromenade (Oberschöneweide): Asphalt	Q0 18175,6376 18207,6462 18231,6521
 Kilianistr.: mäßiges Kopfsteinpflaster	Q2 18128,6559 18231,6521 18475,6478
 Beymestr.: mäßiges Kopfsteinpflaster	Q2 5510,4987 5809,4828
 Lützenstr.: Kopfsteinpflaster	Q2 2539,10235 2708,10245
-(Waidmannsluster Damm - Karolinenstr.): Waldweg	Q2 1942,21564 1928,21595 1869,21570 1834,21427 1800,21368 1656,21145
+(Waidmannsluster Damm - Karolinenstr.): Waldweg	Q2 1942,21564 1928,21595 1869,21570 1835,21427 1800,21368 1656,21145
 Dalandweg: Kopfsteinpflaster	Q1 5557,4294 5396,4229 5266,4302 5233,4249 5128,4310
 Klopstockstr.: Kopfsteinpflaster	Q1 -1670,3716 -1609,3741 -1479,3723 -1414,3759 -1277,3854 -1157,4008 -1077,4236
 Lüdenscheider Weg: Beton	Q1 -984,15432 -1334,15269

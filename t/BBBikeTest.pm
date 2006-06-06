@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTest.pm,v 1.16 2006/05/15 21:09:00 eserte Exp $
+# $Id: BBBikeTest.pm,v 1.17 2006/06/06 14:30:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2004 Slaven Rezic. All rights reserved.
@@ -30,7 +30,8 @@ use base qw(Exporter);
 
 use BBBikeUtil qw(is_in_path);
 
-@EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check eq_or_diff),
+@EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check eq_or_diff
+	      is_long_data like_long_data unlike_long_data),
 	   @opt_vars);
 
 # Old logfile
@@ -181,6 +182,59 @@ sub tidy_check {
 		    close DIAG;
 		    Test::More::diag($diag);
 		};
+    }
+}
+
+sub _any_fail {
+    my($got, $expected, $testname) = @_;
+    require File::Temp;
+    require Data::Dumper;
+    my($fh, $filename) = File::Temp::tempfile(SUFFIX => ".bbbike_test");
+    my $dump = Data::Dumper->new([$got, $expected],[qw(got expected)])->Indent(1)->Useqq(0)->Dump;
+    print $fh $dump;
+    close $fh;
+    Test::More::fail("Test <$testname> failed, see <$filename> for more information");
+}
+
+sub is_long_data {
+    my($got, $expected, $testname) = @_;
+    if (!defined $got || !defined $expected) {
+	Test::More::is($got, $expected, $testname);
+    } else {
+	my $eq = $got eq $expected;
+	if ($eq) {
+	    Test::More::pass($testname);
+	} else {
+	    _any_fail($got, $expected, $testname);
+	}
+    }
+}
+
+sub like_long_data {
+    my($got, $expected, $testname) = @_;
+    if (!defined $got || !defined $expected) {
+	Test::More::like($got, $expected, $testname);
+    } else {
+	my $matches = $got =~ $expected;
+	if ($matches) {
+	    Test::More::pass($testname);
+	} else {
+	    _any_fail($got, $expected, $testname);
+	}
+    }
+}
+
+sub unlike_long_data {
+    my($got, $expected, $testname) = @_;
+    if (!defined $got || !defined $expected) {
+	Test::More::unlike($got, $expected, $testname);
+    } else {
+	my $matches = $got !~ $expected;
+	if ($matches) {
+	    Test::More::pass($testname);
+	} else {
+	    _any_fail($got, $expected, $testname);
+	}
     }
 }
 

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd2mapservhtml.pl,v 1.16 2005/11/19 22:54:21 eserte Exp $
+# $Id: bbd2mapservhtml.pl,v 1.17 2006/06/06 15:27:00 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004,2005 Slaven Rezic. All rights reserved.
@@ -38,6 +38,7 @@ my $center_spec;
 my $do_center_nearest;
 my $partialhtml;
 my $do_linklist;
+my $do_headlines;
 my $preferalias;
 
 my $save_cmdline = "$0 @ARGV";
@@ -62,6 +63,7 @@ if (!GetOptions("bbbikeurl=s" => \$bbbike_url,
 		'partialhtml!' => \$partialhtml,
 		'linklist!' => \$do_linklist,
 		'preferalias!' => \$preferalias,
+		'headlines!' => \$do_headlines,
 	       )) {
     require Pod::Usage;
     Pod::Usage::pod2usage(2);
@@ -132,6 +134,7 @@ if ($do_linklist) {
     my @html;
     $s->init;
 
+    my $last_section;
     my $current_display_name;
     my @current_lines;
     while(1) {
@@ -141,6 +144,16 @@ if ($do_linklist) {
 
 	if (!defined $current_display_name) {
 	    $current_display_name = $s->get_directive->{alias}->[0] || $r->[Strassen::NAME];
+	}
+
+	if ($do_headlines) {
+	    my $current_section = $s->get_directive->{section}->[0];
+	    if ($current_section) {
+		if (!defined $last_section || $current_section ne $last_section) {
+		    push @html, "<h2>" . CGI::escapeHTML($current_section) . "</h2>";
+		    $last_section = $current_section;
+		}
+	    }
 	}
 
 	my $next_r = $s->peek;
@@ -351,6 +364,10 @@ option is useful for automatic inclusion into a pre-made html page.
 =item -linklist
 
 Create a link list with one street per line.
+
+=item -headlines
+
+Create headlines from "section" blocks.
 
 =item -preferalias
 

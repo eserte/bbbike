@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi-mechanize.t,v 1.30 2006/05/23 23:32:03 eserte Exp $
+# $Id: cgi-mechanize.t,v 1.31 2006/06/06 14:30:29 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -95,7 +95,7 @@ for my $browser (@browsers) {
 	$get_agent->();
 
 	$agent->get($cgiurl);
-	like(get_ct($agent), qr/BBBike/, "Emulating $browser, Startpage $cgiurl is not empty");
+	like_long_data(get_ct($agent), qr/BBBike/, "Emulating $browser, Startpage $cgiurl is not empty");
 	my_tidy_check($agent);
 
 	$agent->form_number(1) if $agent->forms and scalar @{$agent->forms};
@@ -110,7 +110,7 @@ for my $browser (@browsers) {
 	$agent->submit();
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr/Kreuzung/, "On the crossing page");
+	like_long_data(get_ct($agent), qr/Kreuzung/, "On the crossing page");
 	{
 	    local $^W; $agent->current_form->value('startc', '8982,8781');
 	}
@@ -122,7 +122,7 @@ for my $browser (@browsers) {
 	$agent->submit();
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr/Route/, "On the route result page");
+	like_long_data(get_ct($agent), qr/Route/, "On the route result page");
 
 	my $has_ausweichroute = ($agent->forms)[0]->attr("name") =~ /Ausweichroute/;
 	{
@@ -145,8 +145,8 @@ for my $browser (@browsers) {
 
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr/BBBike/, "On the startpage again ...");
-	like(get_ct($agent), qr/Sonntagstr./, "... with the start street preserved");
+	like_long_data(get_ct($agent), qr/BBBike/, "On the startpage again ...");
+	like_long_data(get_ct($agent), qr/Sonntagstr./, "... with the start street preserved");
 
 	{
 	    local $^W; $agent->current_form->value('via', 'Heerstr');
@@ -159,11 +159,11 @@ for my $browser (@browsers) {
 	$agent->submit();
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr/genaue/i, "expecting multiple matches");
+	like_long_data(get_ct($agent), qr/genaue/i, "expecting multiple matches");
 	$agent->submit();
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr/Kreuzung/, "On the crossing page");
+	like_long_data(get_ct($agent), qr/Kreuzung/, "On the crossing page");
 	{
 	    local $^W; $agent->current_form->value('zielc', '27342,-3023');
 	}
@@ -171,7 +171,7 @@ for my $browser (@browsers) {
 	$agent->submit();
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr/Route/, "On the route result page");
+	like_long_data(get_ct($agent), qr/Route/, "On the route result page");
 	{
 	    my $formnr = (($agent->forms)[0]->attr("name") =~ /Ausweichroute/ ? 3 : 2);
 	    $agent->form_number($formnr);
@@ -189,7 +189,7 @@ for my $browser (@browsers) {
 	$agent->submit();
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr/Route/, "Route in content");
+	like_long_data(get_ct($agent), qr/Route/, "Route in content");
 
 	######################################################################
 	# exact crossings
@@ -200,8 +200,8 @@ for my $browser (@browsers) {
 	$agent->submit;
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr{Einstellungen}, "On the settings page");
-	unlike(get_ct($agent), qr{genaue.*kreuzung}i, "Crossings are exact");
+	like_long_data(get_ct($agent), qr{Einstellungen}, "On the settings page");
+	unlike_long_data(get_ct($agent), qr{genaue.*kreuzung}i, "Crossings are exact");
 
     }
 
@@ -225,8 +225,8 @@ for my $browser (@browsers) {
 	$agent->submit();
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr/genaue.*startstr.*ausw/i, "Start is ambiguous");
-	like(get_ct($agent), qr/genaue.*zielstr.*ausw/i,  "Goal is ambiguous");
+	like_long_data(get_ct($agent), qr/genaue.*startstr.*ausw/i, "Start is ambiguous");
+	like_long_data(get_ct($agent), qr/genaue.*zielstr.*ausw/i,  "Goal is ambiguous");
 
 	$agent->form_name("BBBikeForm");
 
@@ -264,11 +264,11 @@ for my $browser (@browsers) {
 	$agent->submit;
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr{genaue kreuzung}i, "On the crossing page");
-
-	like(get_ct($agent), qr/Kuhfortdamm/, "Expected start crossing")
+	my $ct = get_ct($agent);
+	like_long_data($ct, qr{genaue kreuzung}i, "On the crossing page");
+	like_long_data($ct, qr/Kuhfortdamm/, "Expected start crossing")
 	    or diag $agent->uri;
-	like(get_ct($agent), qr/Mangerstr/, "Expected goal crossing")
+	like_long_data($ct, qr/Mangerstr/, "Expected goal crossing")
 	    or diag $agent->uri;
 
     }
@@ -293,8 +293,8 @@ for my $browser (@browsers) {
 	$agent->submit();
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr/genaue.*kreuzung.*angeben/i, "On the crossing page");
-	like(get_ct($agent), qr/\QAm Neuen Palais (Potsdam)/i,  "Correct start resolution (Neues Palais ...)");
+	like_long_data(get_ct($agent), qr/genaue.*kreuzung.*angeben/i, "On the crossing page");
+	like_long_data(get_ct($agent), qr/\QAm Neuen Palais (Potsdam)/i,  "Correct start resolution (Neues Palais ...)");
 
     }
 
@@ -323,11 +323,11 @@ for my $browser (@browsers) {
 	# $use_exact_streetchooser=1. Actually the correct crossing in this case
 	# should be the end of "Lennestr.", but the find-nearest-crossing code finds
 	# only real crossing, not endpoints of streets.
-	like(get_ct($agent),
+	like_long_data(get_ct($agent),
 	     qr{(\QHans-Sachs-Str. (Potsdam)/Meistersingerstr. (Potsdam)\E
 		|\QCarl-von-Ossietzky-Str. (Potsdam)/Lennéstr. (Potsdam)\E
 	       )}ix,  "Correct goal resolution (Hans-Sachs-Str. ... or Lennestr. ...)");
-	like(get_ct($agent), qr{\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)}i,  "Correct goal resolution (Marquardt ...)");
+	like_long_data(get_ct($agent), qr{\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)}i,  "Correct goal resolution (Marquardt ...)");
                            
     }
 
@@ -347,7 +347,7 @@ for my $browser (@browsers) {
 
     # $agent->submit;
 
-    # like(get_ct($agent), qr{Oberbaumbr.*cke}, "Route contains Oberbaumbrücke");
+    # like_long_data(get_ct($agent), qr{Oberbaumbr.*cke}, "Route contains Oberbaumbrücke");
 
     # $agent->back;
     # $agent->current_form->value(
@@ -375,12 +375,12 @@ for my $browser (@browsers) {
 
     SKIP: {
 	    skip("Street is known now!", 2); # XXX find another unknown street?
-	    like(get_ct($agent), qr/Kleine Parkstr\..*ist nicht bekannt/i, "Street not in database");
-	    like(get_ct($agent), qr{\Qhtml/newstreetform.html?\E.*\Qstrname=Kleine%20Parkstr}i, "newstreetform link");
+	    like_long_data(get_ct($agent), qr/Kleine Parkstr\..*ist nicht bekannt/i, "Street not in database");
+	    like_long_data(get_ct($agent), qr{\Qhtml/newstreetform.html?\E.*\Qstrname=Kleine%20Parkstr}i, "newstreetform link");
 	}
-	like(get_ct($agent), qr{Hauptbahnhof.*?die nächste Kreuzung}is,  "S-Bhf.");
-	like(get_ct($agent), qr{Invalidenstr.}i,  "S-Bhf., next crossing (Invalidenstr)");
-	like(get_ct($agent), qr{Minna-Cauer-Str.}i,  "S-Bhf., next crossing (Minna-Cauer-Str)");
+	like_long_data(get_ct($agent), qr{Hauptbahnhof.*?die nächste Kreuzung}is,  "S-Bhf.");
+	like_long_data(get_ct($agent), qr{Invalidenstr.}i,  "S-Bhf., next crossing (Invalidenstr)");
+	like_long_data(get_ct($agent), qr{Minna-Cauer-Str.}i,  "S-Bhf., next crossing (Minna-Cauer-Str)");
 
     }
 
@@ -403,7 +403,7 @@ for my $browser (@browsers) {
 	$agent->submit();
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr/genaue.*startstr.*ausw/i, "Start is ambiguous");
+	like_long_data(get_ct($agent), qr/genaue.*startstr.*ausw/i, "Start is ambiguous");
 
 	my $form = $agent->current_form;
 	my $input = $form->find_input("start2");
@@ -430,7 +430,7 @@ for my $browser (@browsers) {
 	$agent->submit;
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr/brandenburger tor.*mitte/i, "Mitte alternative selected");
+	like_long_data(get_ct($agent), qr/brandenburger tor.*mitte/i, "Mitte alternative selected");
 
 	$agent->back;
 
@@ -445,7 +445,7 @@ for my $browser (@browsers) {
 	$agent->submit;
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr/brandenburger tor.*potsdam/i, "Potsdam alternative selected");
+	like_long_data(get_ct($agent), qr/brandenburger tor.*potsdam/i, "Potsdam alternative selected");
 
 	$agent->submit;
 	my_tidy_check($agent);
@@ -483,11 +483,11 @@ for my $browser (@browsers) {
 	$agent->follow_link(text_regex => qr/Info/);
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr{Information}, "On the info page");
+	like_long_data(get_ct($agent), qr{Information}, "On the info page");
 	$agent->follow_link(text_regex => qr{dieses Formular});
 	my_tidy_check($agent);
 
-	like(get_ct($agent), qr{Neue Stra.*e f.*r BBBike}, "On the new street form");
+	like_long_data(get_ct($agent), qr{Neue Stra.*e f.*r BBBike}, "On the new street form");
 	my $fragezeichenform_url = $agent->uri;
 	$fragezeichenform_url =~ s{newstreetform}{fragezeichenform};
 
@@ -499,7 +499,7 @@ for my $browser (@browsers) {
 	    $agent->submit;
 	    my_tidy_check($agent);
 
-	    like(get_ct($agent), qr{Danke, die Angaben.*gesendet}, "Sent comment");
+	    like_long_data(get_ct($agent), qr{Danke, die Angaben.*gesendet}, "Sent comment");
 	}
 
 	$agent->get($fragezeichenform_url);
@@ -514,7 +514,7 @@ for my $browser (@browsers) {
 	    $agent->submit;
 	    my_tidy_check($agent);
 
-	    like(get_ct($agent), qr{Danke, die Angaben.*gesendet}, "Sent comment (fragezeichenform)");
+	    like_long_data(get_ct($agent), qr{Danke, die Angaben.*gesendet}, "Sent comment (fragezeichenform)");
 	}
     }
 

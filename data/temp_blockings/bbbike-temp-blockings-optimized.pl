@@ -160,9 +160,9 @@ push @temp_blocking,
        undef,
        {
          'source_id' => 'IM_002500',
-         'until' => 1167605999,
-         'text' => 'Nennhauser Damm (Spandau) stadteinwärts zwischen Heerstr. und Döberitzer Weg Baustelle, Fahrtrichtung gesperrt (bis Ende 2006)',
-         'from' => 1141499463,
+         'until' => 1154383199,
+         'text' => 'Nennhauser Damm (Spandau) stadteinwärts zwischen Heerstr. und Döberitzer Weg Baustelle, Fahrtrichtung gesperrt (bis Ende 07.2006)',
+         'from' => 1149623367,
          'data' => 'userdel	1 -8671,13312 -8643,13383 -8358,13340 -8011,13351
 ',
          'type' => 'gesperrt'
@@ -394,7 +394,15 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'source_id' => 'IM_002866',
+         'until' => 1149803999,
+         'text' => 'Siemensstr. (Treptow-Köpenick) in Richtung Nalepastr. zwischen Edisonstr. Einbahnstraße in Richtung Nalepastr. (bis 08.06.) (17:00) ',
+         'from' => undef,
+         'data' => 'userdel	q4; 17766,6616 17962,6674
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -839,6 +847,23 @@ userdel	3 8034,12093 8063,12182 8119,12414
          'text' => 'L 074 Chausseestraße OL Wünsdorf, zw. Cottbusser/Berliner Str. u. Seestr. Kanalverlegung Vollsperrung 19.06.2006-28.07.2006 ',
          'from' => 1150581600,
          'data' => 'userdel	2 15960,-26906 15682,-26971 15229,-27157
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_83663',
+         'until' => 1151100000,
+         'text' => 'Londoner Str. (Wedding) Richtung Holländerstr. zwischen Müllerstr. und Holländerstr. Baustelle, Fahrtrichtung gesperrt (bis 23.06.2006)',
+         'from' => 1149623437,
+         'data' => 'userdel	2 5791,16910 6042,17189 6118,17327 6154,17438
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1151186400,
+         'text' => 'B 156 OL Spremberg, Muskauer Straße OL Spremberg, Muskauer Str., Bahnübergang Sanierung BÜ u. Tiefbau Vollsperrung 12.06.2006-24.06.2006 ',
+         'from' => 1149976800,
+         'data' => 'userdel	2 80783,-91972 80236,-92007
 ',
          'type' => 'gesperrt'
        }

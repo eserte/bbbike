@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeAdvanced.pm,v 1.153 2006/06/01 22:15:51 eserte Exp $
+# $Id: BBBikeAdvanced.pm,v 1.154 2006/06/06 18:44:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1999-2004 Slaven Rezic. All rights reserved.
@@ -1247,7 +1247,12 @@ sub coord_to_markers_dialog {
 	if ($marker_points_no == 0) {
 	    delete_markers();
 	} else {
-	    mark_street(-coords => [@marker_points],
+	    my @transposed_marker_points;
+	    for (@marker_points) {
+		my($tx,$ty) = transpose($_->[0][0], $_->[0][1]);
+		push @transposed_marker_points, [[$tx,$ty]];
+	    }
+	    mark_street(-coords => \@transposed_marker_points,
 			## I think I prefer centering to the last point
 			#-clever_center => 1,
 		       );
@@ -1273,8 +1278,7 @@ sub coord_to_markers_dialog {
 		 $last_sel = $s;
 		 my $ret = parse_url_for_coords($s, quiet => 1);
 		 if ($ret) {
-		     my($tx,$ty) = transpose($ret->{x_s}, $ret->{y_s});
-		     push @marker_points, [[$tx,$ty]];
+		     push @marker_points, [[$ret->{x_s}, $ret->{y_s}]];
 		     $update_marker_points->();
 		 } else {
 		     warn "Can't parse coords in url <$s>\n";
