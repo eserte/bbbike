@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.13 2006/05/01 20:35:26 eserte Exp $
+# $Id: bbbike.cgi,v 8.13 2006/05/01 20:35:26 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -1582,7 +1582,7 @@ EOF
 	print <<EOF if ($bi->{'can_table'});
 <td valign="top">@{[ blind_image(420,1) ]}<br>
 EOF
-	my($bln_str, $all_bln_str, $pdm_str) = (5200, 10000, 180);
+	my($bln_str, $all_bln_str, $pdm_str) = (5500, 10000, 200);
 	# XXX Use format number to get a comma in between.
 	if ($lang eq 'en') {
 	    print <<EOF;

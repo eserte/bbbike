@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.125 2006/06/06 18:46:20 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.125 2006/06/06 18:46:20 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1872,15676
@@ -1343,6 +1343,11 @@ Pflugstr.: Asphalt	Q0 8781,14357 8662,14567
 Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 Eulerstr.: Asphalt	Q0 9268,16228 9498,16480
+Gustav-Zahnke-Str.: Asphalt	Q0 14424,13587 14408,13513 14331,13537
+Eschengraben: schlechtes Kopfsteinpflaster	Q3 11771,17213 11805,17039 11831,16802 11776,16753 11621,16749 11441,16745 11281,16743 11018,16730
+Wiesenstr. (Rahnsdorf): Asphalt	Q0 29593,4057 29632,3968 29917,3697
+Ruthnerweg: Asphalt	Q0 3640,1959 3577,2000 3430,1998 3290,2007 3240,2007
+Lüderitzstr.: Asphalt	Q0 6003,16521 6231,16328
 Tollensestr.: guter Asphalt	Q0 22554,13011 22519,13139 22527,13232 22563,13340 22594,13408
 Freienwalder Str. (Wedding): Kopfsteinpflaster	Q2 9331,16624 9435,16832 9503,16988
 Heidenauer Str.: guter Asphalt	Q0 24418,14678 24328,14702 24230,14638 24146,14594
@@ -2036,7 +2041,7 @@ Schwarzschildstr.: sehr guter Asphalt	Q0 18725,2656 18712,2756 18690,2943
 Fronhoferstr.: gutes Verbundsteinpflaster	Q1 4515,4966 4656,5101 4783,5223
 Kabelpfuhlweg: schlechtes Kopfsteinpflaster	Q3 11232,4327 11271,4021
 Schulstr. (Pankow): mäßiger Asphalt	Q1 10755,18231 10393,18084
-Trelleborger Str.: kaputter Asphalt, Schlaglöcher	Q1 11243,17421 11272,17139 11278,17015 11285,16879 11278,16609 11287,16515 11289,16423 11253,16296
+Trelleborger Str.: kaputter Asphalt, Schlaglöcher	Q1 11243,17421 11272,17139 11278,17015 11285,16879 11281,16743 11278,16609 11287,16515 11289,16423 11253,16296
 Saalower Str.: schlechtes Kopfsteinpflaster	Q3 10609,-3098 10707,-3109 11115,-3165 11225,-3121
 Nahariyastr.: sehr guter Asphalt	Q0 11717,-1204 11778,-1706 11784,-1809
 Borsigstr.: asphaltiert	Q0 9517,13571 9394,13754 9303,13887
@@ -2517,7 +2522,9 @@ Spandauer Str.: glattes Pflaster	Q0 -6659,14142 -6902,14093
 Spandauer Str.: Asphalt	Q0 -6902,14093 -7280,14029 -7457,13957
 Swakopmunder Str.: guter Asphalt	Q1 5498,17101 5444,17093 5423,17076 5376,17017 5315,16936 5231,16819 5228,16738
 Soorstr.: Kopfsteinpflaster	Q2 1916,12358 1792,11889 1779,11835 1747,11719
-Lintruper Str.: Asphalt	Q0 10614,105 10665,-200
+Lintruper Str.: Asphalt	Q0 10307,922 10380,757 10423,636 10506,405 10614,105
+Lintruper Str.: mäßiges Blaubasaltpflaster	Q2 10614,105 10665,-200
+Lintruper Str.: Kopfsteinpflaster	Q2 10665,-200 10729,-386
 Eisenhammerweg: Kopfsteinpflaster	Q2 1640,19645 1603,19782 1585,19862 1563,19960 1543,20060 1529,20131
 Wustrower Str.: guter Beton	Q0 16882,18619 17014,18435 17215,18153 17341,17990 17289,17952 17356,17856
 Waldseeweg: mäßiges Kopfsteinpflaster	Q2 4259,23973 4128,23880 3985,23814

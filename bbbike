@@ -14795,6 +14795,10 @@ sub search_route {
 	    $show_strlist = 1;
 	    show_route_strname();
 	}
+	if ($edit_mode_flag) {
+	    require BBBikeAdvanced;
+	    path_to_selection();
+	}
 	set_flag('via');
 	set_flag('ziel');
 	restack_delayed();

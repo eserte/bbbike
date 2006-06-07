@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.103 2006/06/06 18:47:54 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.103 2006/06/06 18:47:54 eserte Exp eserte $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -489,10 +489,12 @@ Wörther Str. -> Schönhauser Allee: U-Bahnrampe	3 11163,14548 10924,14491 10944,1
 Kopenhagener Str. -> Schönhauser Allee: U-Bahnviadukt	3 10722,15921 10972,15895 10977,15944
 Schönhauser Allee -> Kopenhagener Str.: U-Bahnviadukt	3 10963,15789 10972,15895 10722,15921
 Schönhauser Allee: U-Bahnviadukt	3 10949,15674 10930,15522 11055,15504
-Hallandstr. -> Berliner Str.: U-Bahnrampe	3 11285,16879 10999,16830 11042,16605
+Hallandstr. -> Berliner Str.: U-Bahnrampe	3 11285,16879 10999,16830 11018,16730
 Berliner Str. -> Hallandstr.: U-Bahnrampe	3 10986,16897 10999,16830 11285,16879
+Eschengraben -> Berliner Str.: U-Bahnrampe	3 11281,16743 11018,16730 11042,16605
+Berliner Str. -> Eschengraben: U-Bahnrampe	3 10999,16830 11018,16730 11281,16743
+Berliner Str. -> Thulestr.: U-Bahnrampe	3 11018,16730 11042,16605 11278,16609
 Thulestr. -> Berliner Str.: U-Bahnrampe	3 11278,16609 11042,16605 11039,16553
-Berliner Str. -> Thulestr.: U-Bahnrampe	3 10999,16830 11042,16605 11278,16609
 Berliner Str. -> Schonensche Str.: U-Bahnrampe	3 11042,16605 11039,16553 11287,16515
 Schonensche Str. -> Berliner Str.: U-Bahnrampe	3 11287,16515 11039,16553 11033,16464
 Wisbyer Str. -> Stahlheimer Str.: Straßenbahn	3 11807,16340 11727,16358 11618,16183
