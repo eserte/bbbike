@@ -866,6 +866,81 @@ userdel	3 8034,12093 8063,12182 8119,12414
          'data' => 'userdel	2 80783,-91972 80236,-92007
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1152913500,
+         'text' => 'Reinhardtstraße - Otto-von-Bismarck-Allee: zwischen Kreuzung Kapelleufer und Kreuzung Willy-Brandt-Straße in beiden Richtungen Veranstaltung, gesperrt, Dauer: 07.05.2006 09:00 Uhr bis 14.07.2006 23:45 Uhr ',
+         'from' => 1146898800,
+         'data' => 'userdel	2 8124,12742 8218,12742 8275,12742 8308,12742 8417,12846 8503,12895
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002870',
+         'until' => 1152914400,
+         'text' => 'Regierungsviertel: im Zuge der Fußball-WM mehrere Straßen gesperrt (bis 14.07.2006)',
+         'from' => 1149703449,
+         'data' => 'userdel	2 8168,12848 8209,12816 8218,12742 8218,12601
+userdel	2 8775,12457 8540,12420 8400,12417 8374,12416 8119,12414
+userdel	2 8032,12817 8124,12840
+userdel	2 8307,12601 8308,12742
+userdel	2 8032,12817 8017,12826
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002839',
+         'until' => 1152914400,
+         'text' => 'John-Foster-Dulles-Allee (Tiergarten) in beiden Richtungen zwischen Yitzhak-Rabin-Str. und Spreeweg Straße vollständig gesperrt, Veranstaltung (im Zuge der WM 2006 bis 14.07.06)',
+         'from' => 1149703543,
+         'data' => 'userdel	2 8119,12414 8017,12359 7875,12363 7437,12368 7215,12295 7039,12314
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1151100000,
+         'text' => 'B 101 OL Luckenwalde, Zinnaer Straße OL Luckenwalde, Zinnaer Str. zw. Mühlenweg u. Am Nuth: Vollsperrung 12.06.2006-23.06.2006 ',
+         'from' => 1149976800,
+         'data' => 'userdel	q4 -4630,-36012 -4603,-35730
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1151791200,
+         'text' => 'L 099 Barnewitz - Marzahne zw. Abzw. Gortz (L911) in OL Barnewitz u. L98 in OL Marzahne Straßenbau Vollsperrung 19.06.2006-01.07.2006 ',
+         'from' => 1150581600,
+         'data' => 'userdel	2 -46651,12935 -45980,13284
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1154124000,
+         'text' => 'L 601 OL Finsterwlalde, Schützenstr. zw. Einm. Leipziger und Tuchmacherstr.: Vollsperrung 12.06.2006-28.07.2006 ',
+         'from' => 1149976800,
+         'data' => 'userdel	q4 32941,-85970 32857,-86291 32478,-86374
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1152482399,
+         'text' => 'Fan-Fest der FIFA im Tiergarten, 7. Juni 2006 - 9. Juli 2006 ',
+         'from' => 1149544800,
+         'data' => 'userdel	2 8021,11636 8006,11766 8172,11679 8129,11735 8056,12061
+userdel	2 7816,12150 7875,12363
+userdel	2 7504,11504 7382,11588 7163,11738 7287,11763 7535,11677 7591,11639 7669,11586 7706,11612 7742,11639 7852,11721 8006,11766
+userdel	2 7669,11586 7711,11558
+userdel	2 8022,12016 8006,11766 7811,11868 7663,11946 7570,11855 7223,11897 7073,11798 7163,11738 6980,11583 6809,11570
+userdel	2 7039,12314 7383,12095
+userdel	2 7073,11798 6778,11742
+userdel	2 8374,12416 8539,12286
+userdel	2 7382,11588 7354,11513
+userdel	2 6809,11979 7073,11798
+userdel	2 8223,11700 8220,11844 8215,12156 8214,12205
+userdel	2 8119,12414 8063,12182 8056,12061
+userdel	2 8063,12182 8034,12093 8006,12074 7999,12049 8022,12016
+userdel	2 8540,12420 8560,12326 8539,12286 8515,12242 8600,12165 8595,12066
+',
+         'type' => 'gesperrt'
        }
      
 );
