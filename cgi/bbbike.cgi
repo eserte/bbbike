@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.13 2006/05/01 20:35:26 eserte Exp eserte $
+# $Id: bbbike.cgi,v 8.14 2006/06/08 21:48:42 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -694,7 +694,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.13 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.14 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -3249,12 +3249,17 @@ sub search_coord {
 	    if (!$comments_points) {
 		$comments_points = {};
 		eval {
+		    my $gesperrt_cat_rx = "^(?:" . join("|", map { quotemeta $_ }
+							(StrassenNetz::BLOCKED_CARRY(),
+							 StrassenNetz::BLOCKED_NARROWPASSAGE(),
+							)) . ")(?::(\\d+))?";
+		    $gesperrt_cat_rx = qr{$gesperrt_cat_rx};
 		    my $s = Strassen->new("gesperrt");
 		    $s->init;
 		    while(1) {
 			my $rec = $s->next;
 			last if !@{ $rec->[Strassen::COORDS] };
-			if ($rec->[Strassen::CAT] =~ /^0(?::(\d+))?/) {
+			if ($rec->[Strassen::CAT] =~ $gesperrt_cat_rx) {
 			    my $name = $rec->[Strassen::NAME];
 			    if (defined $1) {
 				my $verlust = $1;
@@ -6047,7 +6052,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/05/01 20:35:26 $';
+    my $cgi_date = '$Date: 2006/06/08 21:48:42 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

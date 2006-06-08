@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgi.t,v 1.33 2006/03/26 20:31:25 eserte Exp $
+# $Id: cgi.t,v 1.34 2006/06/08 22:44:37 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2000,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -69,7 +69,7 @@ if (!@urls) {
 }
 
 my $ortsuche_tests = 11;
-plan tests => (142 + $ortsuche_tests) * scalar @urls;
+plan tests => (144 + $ortsuche_tests) * scalar @urls;
 
 my $hdrs;
 if (defined &Compress::Zlib::memGunzip) {
@@ -271,7 +271,8 @@ for my $cgiurl (@urls) {
 	    fail("No hash, no route length");
 	}
 
-	# Test comments_points (as part of Bemerkungen)
+    XXX:
+	# Test comments_points (category 0, CARRY) (as part of Bemerkungen)
 	$req = new HTTP::Request
 	    ('GET', "$action?startname=Sonntagstr.&startplz=10245&startc=14798%2C10985&zielname=Markgrafendamm&zielplz=10245&zielc=14794%2C10844&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&scope=");
 	$res = $ua->request($req);
@@ -279,6 +280,15 @@ for my $cgiurl (@urls) {
 
 	$content = uncompr($res);
 	like($content, qr/Sekunden.*Zeitverlust/, "Zeitverlust in text");
+
+	# Test comments_points (category BNP, NARROWPASSAGE) (as part of Bemerkungen)
+	$req = new HTTP::Request
+	    ('GET', "$action?startc=9509%2C10391&startplz=10969&startname=Mehringplatz&zielname=Brachvogelstr.&zielplz=10961&zielc=10059%2C10147&scope=&pref_seen=1&pref_speed=12&pref_cat=N1&pref_quality=Q2&pref_ampel=yes&pref_green=&pref_fragezeichen=yes");
+	$res = $ua->request($req);
+	ok($res->is_success, "Drängelgitter test") or diag $res->as_string;
+
+	$content = uncompr($res);
+	like($content, qr/Dr.*ngelgitter.*Sekunden.*Zeitverlust/, "Zeitverlust in text");
 
 	# This is only correct with use_exact_streetchooser=true
 	$req = new HTTP::Request
@@ -349,7 +359,6 @@ for my $cgiurl (@urls) {
 	    or diag("Can't find Guben in " . $content);
     }
 
- XXX:
     # Klick on "D" in Start A..Z
     $req = new HTTP::Request
 	(GET => "$action?start=&startcharimg.x=107&startcharimg.y=15&startmapimg.x=&startmapimg.y=&via=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=", $hdrs);

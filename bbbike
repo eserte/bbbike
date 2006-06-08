@@ -2392,7 +2392,7 @@ sub do_iconframe {
 		     require BBBikeAdvanced;
 		     plot_additional_layer($linetype, $file, %args);
 		 },
-		 Max => 12,
+		 Max => ($devel_host ? 20 : 12),
 		};
 	    load_last_loaded($last_loaded_layers_obj);
 	}

@@ -941,6 +941,15 @@ userdel	2 8063,12182 8034,12093 8006,12074 7999,12049 8022,12016
 userdel	2 8540,12420 8560,12326 8539,12286 8515,12242 8600,12165 8595,12066
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002880',
+         'until' => undef,
+         'text' => 'Veitstr. (Tegel) in beiden Richtungen zwischen Medebacher Weg und Treskowstr. Wasserrohrbruch, Baustelle, Straße vollständig gesperrt (Dauer: mehrere Tage)',
+         'from' => undef,
+         'data' => 'userdel	2 2064,19874 1886,19835
+',
+         'type' => 'gesperrt'
        }
      
 );
