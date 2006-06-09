@@ -394,15 +394,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_002866',
-         'until' => 1149803999,
-         'text' => 'Siemensstr. (Treptow-Köpenick) in Richtung Nalepastr. zwischen Edisonstr. Einbahnstraße in Richtung Nalepastr. (bis 08.06.) (17:00) ',
-         'from' => undef,
-         'data' => 'userdel	q4; 17766,6616 17962,6674
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -942,12 +934,13 @@ userdel	2 8540,12420 8560,12326 8539,12286 8515,12242 8600,12165 8595,12066
 ',
          'type' => 'gesperrt'
        },
+       undef,
        {
-         'source_id' => 'IM_002880',
-         'until' => undef,
-         'text' => 'Veitstr. (Tegel) in beiden Richtungen zwischen Medebacher Weg und Treskowstr. Wasserrohrbruch, Baustelle, Straße vollständig gesperrt (Dauer: mehrere Tage)',
-         'from' => undef,
-         'data' => 'userdel	2 2064,19874 1886,19835
+         'source_id' => 'IM_002867',
+         'until' => 1150063200,
+         'text' => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Seestr. und Leopoldplatz Veranstaltung, Straße vollständig gesperrt (bis 11.06.06)',
+         'from' => 1149834073,
+         'data' => 'userdel	2 6790,16018 6914,15908 6957,15869 7043,15793 7198,15656 7288,15579
 ',
          'type' => 'gesperrt'
        }

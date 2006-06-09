@@ -4709,12 +4709,21 @@ userdel	2 8540,12420 8560,12326 8539,12286 8515,12242 8600,12165 8595,12066
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1149833870, # XXX undef
        text  => 'Veitstr. (Tegel) in beiden Richtungen zwischen Medebacher Weg und Treskowstr. Wasserrohrbruch, Baustelle, Straße vollständig gesperrt (Dauer: mehrere Tage)',
        type  => 'gesperrt',
        source_id => 'IM_002880',
        data  => <<EOF,
 userdel	2 2064,19874 1886,19835
+EOF
+     },
+     { from  => 1149834073, # 2006-06-09 08:21
+       until => 1150063200, # 2006-06-12 00:00
+       text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Seestr. und Leopoldplatz Veranstaltung, Straße vollständig gesperrt (bis 11.06.06)',
+       type  => 'gesperrt',
+       source_id => 'IM_002867',
+       data  => <<EOF,
+userdel	2 6790,16018 6914,15908 6957,15869 7043,15793 7198,15656 7288,15579
 EOF
      },
     );
