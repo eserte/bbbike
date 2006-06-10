@@ -3760,12 +3760,13 @@ userdel	2 23356,-20982 22599,-19785
 EOF
      },
      { from  => 1142424201, # 2006-03-15 13:03
-       until => 1149581725, # 1159653599 2006-09-30 23:59
-       text  => 'Wiesbadener Str. (Wilmersdorf) in Richtung Bundesallee zwischen Geisenheimer und Südwestkorso Baustelle, Fahrtrichtung gesperrt (bis Ende 09.2006)',
+       until => 1159653599, # 2006-09-30 23:59
+       text  => 'Wiesbadener Str. (Wilmersdorf) in Richtung Bundesallee zwischen Geisenheimer und Südwestkorso Baustelle, Fahrtrichtung gesperrt. Ebenso gesperrt: Geisenheimer Str. Richtung Wiesbadener Str. (bis Ende 09.2006)',
        type  => 'handicap',
        source_id => 'IM_002513',
        data  => <<EOF,
 userdel	q4; 4391,7258 4618,7231 4743,7212
+userdel	q4; 4534,7015 4462,7137 4391,7258
 EOF
      },
      { from  => 1143068400, # 2006-03-23 00:00
@@ -4706,6 +4707,7 @@ userdel	2 8223,11700 8220,11844 8215,12156 8214,12205
 userdel	2 8119,12414 8063,12182 8056,12061
 userdel	2 8063,12182 8034,12093 8006,12074 7999,12049 8022,12016
 userdel	2 8540,12420 8560,12326 8539,12286 8515,12242 8600,12165 8595,12066
+userdel	2 8595,12066 8581,11896 8571,11846
 EOF
      },
      { from  => undef, # 

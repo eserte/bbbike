@@ -466,14 +466,7 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       {
-         'until' => 1149868800,
-         'text' => 'Schlichtallee zwischen Lückstraße und Hauptstraße in beiden Richtungen Baustelle, gesperrt bis 09.06.2006 18:00 Uhr ',
-         'from' => 1149579380,
-         'data' => 'userdel	2 15629,10481 15751,10582 16032,10842
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        {
@@ -536,7 +529,16 @@ userdel	2 22668,12080 22701,12115
          'type' => 'gesperrt'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_002513',
+         'until' => 1159653599,
+         'text' => 'Wiesbadener Str. (Wilmersdorf) in Richtung Bundesallee zwischen Geisenheimer und Südwestkorso Baustelle, Fahrtrichtung gesperrt. Ebenso gesperrt: Geisenheimer Str. Richtung Wiesbadener Str. (bis Ende 09.2006)',
+         'from' => 1142424201,
+         'data' => 'userdel	q4; 4391,7258 4618,7231 4743,7212
+userdel	q4; 4534,7015 4462,7137 4391,7258
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        undef,
@@ -931,6 +933,7 @@ userdel	2 8223,11700 8220,11844 8215,12156 8214,12205
 userdel	2 8119,12414 8063,12182 8056,12061
 userdel	2 8063,12182 8034,12093 8006,12074 7999,12049 8022,12016
 userdel	2 8540,12420 8560,12326 8539,12286 8515,12242 8600,12165 8595,12066
+userdel	2 8595,12066 8581,11896 8571,11846
 ',
          'type' => 'gesperrt'
        },

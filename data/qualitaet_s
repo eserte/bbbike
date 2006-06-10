@@ -168,7 +168,6 @@ Wiesenweg (Lichtenberg): Kopfsteinpflaster	Q2 15452,11330 15227,11429 15043,1151
 Revaler Str.: Kopfsteinpflaster	Q2 14139,11269 14211,11229 14286,11186 14357,11148 14442,11101 14509,11060
 Revaler Str.: Kopfsteinpflaster, Straßenbahn	Q2 13594,11489 13473,11456
 Prenzlauer Berg: Asphalt	Q0 11723,13630 11538,13683 11257,13647
-Bernauer Str.: Kopfsteinpflaster	Q2 9805,14717 10011,14810 10094,14847 10176,14896 10333,14983
 Alte Jakobstr.: Kopfsteinpflaster	Q2 10244,11160 10436,11344
 Ackerstr.: Kopfsteinpflaster	Q2 9400,14400 9375,14419 9312,14471 9246,14518 9048,14681 8953,14758 8741,14928
 Ackerstr.: Kopfsteinpflaster	Q2 9737,14126 9628,14215
@@ -1301,9 +1300,18 @@ Straße 8: Asphalt	Q0 19227,20270 19261,20344 19354,20607
 (Siedlung Wartenberg - Tierheim): mäßiger Feldweg	Q2 19817,19593 19579,18933
 (Grüne Trift): glatter Belag	Q0 19579,18933 19971,18785
 (Dorfstr. - Köthener Str.): Parkweg	Q1 19875,18182 20535,17913
+Innsbrucker Str.: Verbundsteinpflaster	Q1 6244,8597 6274,8447
+Im Dol: Fahrbahn gutes Kopfsteinpflaster, Radwege	Q1 3216,6393 3077,6375
+Im Dol: Asphalt	Q0 1757,5976 1810,5959 1864,5996 1897,6019 2193,6214 2219,6231 2367,6336 2499,6428 2562,6473 2611,6495 2659,6499 2742,6488 2934,6385 3077,6375
+Elvirasteig: Asphalt	Q0 -1530,3323 -1495,3444 -1475,3521 -1414,3759 -1379,3897 -1354,4005 -1278,4239 -1234,4341
+Quermatenweg: Asphalt oder Beton	Q0 -1077,4236 -917,4619 -655,4886 -464,4982 103,5123
+Matterhornstr: überwiegend guter Asphalt	Q0 -1155,3255 -1187,3264 -1360,3314 -1530,3323 -1873,3315 -1981,3353 -2137,3408 -2243,3371 -2359,3300 -2535,3194 -2614,3124 -2904,3033 -3064,2946 -3129,2922 -3131,2888
+Altvaterstr.: schlechtes Kopfsteinpflaster	Q3 -2283,3491 -2437,3435 -2500,3415 -2554,3426 -2917,3222
+Altvaterstr.: Asphalt	Q0 -2917,3222 -3112,3095
+Altvaterstr.: Beton	Q0 -3200,3030 -3207,2898
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
 Schützallee: mäßiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfläche	Q2 2230,3823 2151,3834 1952,3864 1918,3868 1815,3876
-Riemeisterstr.: mäßiges Kopfsteinpflaster	Q2 364,4829 319,4906 168,5092 103,5123
+Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2403,6962 2240,6904 2116,6861 2054,6840 1975,6818
 Wilhelmshöher Str.: guter Asphalt	Q0 4836,7327 4889,7327 5072,7327 5310,7325
 Sarrazinstr.: guter Asphalt	Q0 5361,7423 5422,7461 5452,7493 5492,7543 5606,7651 5635,7660
@@ -2024,7 +2032,8 @@ Lemkestr.: schlechtes Kopfsteinpflaster	Q3 26615,14054 26455,13925 25984,13328 2
 Stirnerstr.: guter Asphalt	Q0 5909,5072 6068,5028
 Hammersteinstr.: schlechtes grobes Kopfsteinpflaster	Q3 2750,7416 2654,7324 2555,7238 2458,7156 2376,7089
 Hackerstr.: guter Asphalt	Q0 5017,6387 5034,6425 5075,6509 5101,6579 5137,6651 5184,6723
-Stewardstr.: mäßiger Asphalt (einige Straßenschäden)	Q1 828,5006 953,4994 1102,4978 1275,4956
+Stewardstr.: Asphalt	Q0 828,5006 936,4996
+Stewardstr.: mäßiger Asphalt (einige Straßenschäden)	Q1 936,4996 1102,4978 1275,4956
 Meisenheimer Str.: guter Asphalt	Q0 28543,675 28781,881 29006,1125
 Hohenbornweg: guter Asphalt	Q0 7846,1718 7675,1885
 Berlinickestr.: Kopfsteinpflaster	Q2 5088,5495 5016,5401 4930,5286 4839,5167
@@ -2985,16 +2994,16 @@ Cuxhavener Str.: Kopfsteinpflaster	Q2 5931,12396 5951,12353 5999,12280
 (Zufahrt Parkplätze Kloppstockstr.): Kopfsteinpflaster	Q2 5930,12076 5884,12085 5880,12100 5999,12280
 (Cuxhavener Str. - Altonaer Str.): fester Sand	Q1 5999,12280 6086,12446
 Hanseatenweg: Kopfsteinpflaster	Q1 6444,12536 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
-Am Waldfriedhof: Asphalt	Q0 942,4900 953,4994
-Am Waldfriedhof: Beton	Q0 953,4994 986,5135 1017,5163 1098,5237 1120,5258 1150,5282 1234,5358
-Taylorstr.: Asphalt	Q0 1535,5155 1557,5187 1567,5228 1556,5327 1575,5433 1540,5475 1461,5475 1279,5406 1234,5358
-Flanaganstr.: Asphalt	Q0 1086,5491 1358,5618 1553,5710 1598,5718 1630,5710 1646,5687 1646,5663 1606,5525 1580,5496 1540,5475
-Flanaganstr.: Asphalt	Q0 1461,5475 1482,5525 1482,5573 1461,5599 1424,5613 1358,5618
+Am Waldfriedhof: Asphalt	Q0 921,4900 936,4996
+Am Waldfriedhof: Beton	Q0 936,4996 964,5141 1000,5184 1081,5260 1102,5280 1131,5304 1217,5370
+Taylorstr.: Asphalt	Q0 1535,5155 1557,5187 1567,5228 1556,5327 1581,5463 1549,5510 1482,5525 1279,5435 1217,5370
+Flanaganstr.: Asphalt	Q0 1086,5491 1358,5618 1553,5710 1598,5718 1630,5710 1646,5687 1646,5663 1607,5542 1549,5510
+Flanaganstr.: Asphalt	Q0 1482,5525 1482,5573 1461,5599 1424,5613 1358,5618
 Sprungschanzenweg: Asphalt	Q0 671,5245 168,5092
 Marshallstr.: Asphalt	Q0 1276,4870 1275,4956 1268,5066 1284,5105 1399,5208
 Hochsitzweg: Kopfsteinpflaster	Q1 319,4906 343,4912 436,4941 528,4970 623,4999 732,5005 828,5006
 Am Hegewinkel: Kopfsteinpflaster	Q1 293,5055 343,5068 436,5097 528,5121 623,5147 716,5174
-Am Hegewinkel: Asphalt	Q0 716,5174 779,5206 986,5135
+Am Hegewinkel: Asphalt	Q0 716,5174 779,5206 964,5141
 Holzungsweg: Asphalt	Q0 716,5174 671,5245 626,5322
 Holzungsweg: Kopfsteinpflaster	Q1 828,5006 734,5145 716,5174
 (Zum Holzungsweg): Asphalt	Q0 890,4899 828,5006
@@ -3339,10 +3348,10 @@ Bernhardstr.: Asphalt	Q0 5570,8005 5570,7939
 Bernhardstr.: Asphalt	Q0 5472,8005 5471,7915 5356,7915
 (Schulstr.): Asphalt	Q0 1506,5169 1493,5258 1437,5282 1368,5235
 Am Petersberg: Kopfsteinpflaster	Q2 990,5581 825,5420
-Pritchardstr.: Asphalt	Q0 1102,4978 1080,5066 1017,5163
-Lohrbergweg: Verbundsteine	Q1 1150,5282 1218,5206
-Löwenburgweg: Verbundsteine	Q1 1120,5258 1193,5182
-Wolkenburgweg: Verbundsteine	Q1 1098,5237 1167,5159
+Pritchardstr.: Asphalt	Q0 1102,4978 1080,5066 1000,5184
+Lohrbergweg: Verbundsteine	Q1 1131,5304 1218,5206
+Löwenburgweg: Verbundsteine	Q1 1102,5280 1193,5182
+Wolkenburgweg: Verbundsteine	Q1 1081,5260 1167,5159
 Kuckucksweg: asphaltiert	Q0 2556,5575 2481,5584 2397,5608 2297,5638
 Musäusstr.: asphaltiert	Q0 2397,5608 2369,5506 2341,5464 2309,5428
 Am Anger: asphaltiert	Q0 2301,5136 2458,5212

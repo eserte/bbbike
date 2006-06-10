@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: cgihead2.t,v 1.12 2005/12/11 08:01:13 eserte Exp $
+# $Id: cgihead2.t,v 1.13 2006/06/10 20:53:37 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -25,7 +25,8 @@ BEGIN {
 }
 
 my @var;
-push @var, (qw($BBBike::HOMEPAGE
+push @var, (qw(
+	       $BBBike::HOMEPAGE
 	       $BBBike::BBBIKE_WWW
 	       @BBBike::BBBIKE_WWW
 	       $BBBike::BBBIKE_DIRECT_WWW
@@ -42,10 +43,20 @@ push @var, (qw($BBBike::HOMEPAGE
 	       $BBBike::BBBIKE_MAPSERVER_ADDRESS_URL
 	       $BBBike::BBBIKE_MAPSERVER_DIRECT
 	       $BBBike::BBBIKE_MAPSERVER_INDIRECT
-	      )
+	       $BBBike::SF_DISTFILE_SOURCE
+	       $BBBike::SF_DISTFILE_WINDOWS
+	       $BBBike::SF_DISTFILE_DEBIAN
+	       $BBBike::DISTFILE_FREEBSD
+	      ),
 	   );
 # Not HEADable:
 #   DISTDIR
+
+my @compat_urls = ('http://www.radzeit.de/BBBike/data/.modified',
+		   'http://www.radzeit.de/cgi-bin/bbbike.cgi',
+		   'http://www.radzeit.de/cgi-bin/wapbbbike.cgi',
+		   'http://bbbike.radzeit.de/cgi-bin/bbbike.cgi',
+		  );
 
 my %url;
 for my $var (@var) {
@@ -57,41 +68,18 @@ for my $var (@var) {
     $url{$var} = \@url;
 }
 
-plan tests => 1 + 3 * scalar(map { @$_ } values %url);
+plan tests => 1 + 3 * (scalar(map { @$_ } values %url) + @compat_urls);
 
 my $ua = LWP::UserAgent->new;
 $ua->agent('BBBike-Test/1.0');
 
+for my $url (@compat_urls) {
+    check_url($url);
+}
+
 for my $var (@var) {
     for my $url (@{ $url{$var} }) {
-	ok(defined $url, "$var -> $url");
-	my $method = "head";
-	if ($url =~ m{user.cs.tu-berlin.de}) {
-	    $method = "get"; # HEAD does not work here
-	}
-	my $req = $ua->$method($url);
-    SKIP: {
-	    my $no_tests = 2;
-	    skip("No internet available", $no_tests)
-		if ($req->code == 500 && $req->message =~ /Bad hostname|No route to host/i);
-	    #warn $req->content;
-	    ok($req->is_success, "Successful request of $url") or diag $req->content;
-	    my $content_type = $req->content_type;
-	    if ($url eq $BBBike::BBBIKE_UPDATE_DATA_CGI ||
-		$url =~ m{\.zip$}) {
-		is($content_type, "application/zip", "Expected type (zip)");
-	    } elsif ($url =~ m{\.tar\.gz$}) {
-		is($content_type, "application/x-gzip", "Expected type (gzip)");
-	    } elsif ($url =~ m{/\.modified$}) {
-		is($content_type, "text/plain", "Expected type (plain text)");
-	    } elsif ($url =~ m{wap}) {
-		is($content_type, "text/vnd.wap.wml", "Expected type (wml)");
-	    } elsif ($url =~ m{\.exe$}) {
-		is($content_type, "application/octet-stream", "Expected type (binary)");
-	    } else {
-		is($content_type, "text/html", "Expected type (html)");
-	    }
-	}
+	check_url($url, $var);
     }
 }
 
@@ -110,6 +98,42 @@ SKIP: {
 	}
     } else {
 	skip "No BSD ports available", $no_tests
+    }
+}
+
+sub check_url {
+    my($url, $var) = @_;
+
+    ok(defined $url, (defined $var ? "$var -> $url" : $url));
+    my $method = "head";
+    if ($url =~ m{user.cs.tu-berlin.de}) {
+	$method = "get";	# HEAD does not work here
+    }
+    my $resp = $ua->$method($url);
+ SKIP: {
+	my $no_tests = 2;
+	skip("No internet available", $no_tests)
+	    if ($resp->code == 500 && $resp->message =~ /Bad hostname|No route to host/i);
+	#warn $resp->content;
+	ok($resp->is_success, "Successful request of $url")
+	    or diag $resp->status_line . " " . $resp->content;
+	my $content_type = $resp->content_type;
+	if ($url eq $BBBike::BBBIKE_UPDATE_DATA_CGI ||
+	    $url =~ m{\.zip$}) {
+	    is($content_type, "application/zip", "Expected type (zip)");
+	} elsif ($url =~ m{\.tar\.gz$}) {
+	    is($content_type, "application/x-gzip", "Expected type (gzip)");
+	} elsif ($url =~ m{/\.modified$}) {
+	    is($content_type, "text/plain", "Expected type (plain text)");
+	} elsif ($url =~ m{wap}) {
+	    is($content_type, "text/vnd.wap.wml", "Expected type (wml)");
+	} elsif ($url =~ m{\.exe$}) {
+	    is($content_type, "application/octet-stream", "Expected type (binary)");
+	} elsif ($url =~ m{(?:\.tar\.bz2|\.tbz)$}) {
+	    is($content_type, "application/octet-stream", "Expected type (binary for bzip2)");
+	} else {
+	    is($content_type, "text/html", "Expected type (html)");
+	}
     }
 }
 

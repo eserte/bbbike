@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeVar.pm,v 1.49 2006/05/15 19:31:19 eserte Exp $
+# $Id: BBBikeVar.pm,v 1.49 2006/05/15 19:31:19 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000-2006 Slaven Rezic. All rights reserved.
@@ -72,7 +72,7 @@ $DISPLAY_BBBIKE_PROJECT_DISTDIR   = 'http://sourceforge.net/project/showfiles.ph
 $SF_DISTDIR	      = 'http://prdownloads.sourceforge.net/bbbike';
 $SF_DISTFILE_SOURCE   = "$SF_DISTDIR/BBBike-$STABLE_VERSION.tar.gz?download";
 $SF_DISTFILE_WINDOWS  = "$SF_DISTDIR/BBBike-$WINDOWS_VERSION-Windows.exe?download";
-$SF_DISTFILE_DEBIAN   = "$SF_DISTDIR/bbbike-${DEBIAN_VERSION}_i386.deb?download";
+$SF_DISTFILE_DEBIAN   = "$SF_DISTDIR/bbbike_${DEBIAN_VERSION}_i386.deb?download";
 $DISTFILE_FREEBSD     = "ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-stable/All/de-BBBike-3.15.tbz";
 
 # URL auf die Diplomarbeit
