@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.26 2006/05/23 23:37:07 eserte Exp $
+# $Id: plz.t,v 1.27 2006/06/11 22:03:19 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -59,7 +59,7 @@ my @approx_tests = (
 		    # Ku'damm => Kurfürstendamm, fails, maybe an extra rule?
 		   );
 		    
-plan tests => 122 + scalar(@approx_tests)*4;
+plan tests => 134 + scalar(@approx_tests)*4;
 
 my $tmpdir = "$FindBin::RealBin/tmp/plz";
 my $create;
@@ -348,6 +348,43 @@ for my $noextern (@extern_order) {
 	   "U-Bahnhof, abbreviated")
 	    or diag $dump->(\@res);
 
+    XXX:
+	@res = $plz->look_loop("s+u wedding",
+			       @standard_look_loop_args);
+	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Wedding' } @{$res[0]}), 1,
+	   "S+U-Bahnhof, abbreviated")
+	    or diag $dump->(\@res);
+
+	@res = $plz->look_loop("u+s friedrichstr.",
+			       @standard_look_loop_args);
+	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Friedrichstr.' } @{$res[0]}), 1,
+	   "U+S-Bahnhof, abbreviated (unusual order)")
+	    or diag $dump->(\@res);
+
+	@res = $plz->look_loop("s+u-bhf alexanderpl",
+			       @standard_look_loop_args);
+	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Alexanderplatz' } @{$res[0]}), 1,
+	   "U+S-Bahnhof, middle form")
+	    or diag $dump->(\@res);
+
+	@res = $plz->look_loop("u+s-bhf zoo",
+			       @standard_look_loop_args);
+	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Zoologischer Garten' } @{$res[0]}), 1,
+	   "U+S-Bahnhof, middle form (unusual order)")
+	    or diag $dump->(\@res);
+
+	@res = $plz->look_loop("s+u-bahnhof friedrichstr.",
+			       @standard_look_loop_args);
+	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Friedrichstr.' } @{$res[0]}), 1,
+	   "U+S-Bahnhof, long form")
+	    or diag $dump->(\@res);
+
+	@res = $plz->look_loop("u+s-bahnhof friedrichstr.",
+			       @standard_look_loop_args);
+	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Friedrichstr.' } @{$res[0]}), 1,
+	   "U+S-Bahnhof, long form (unusual order)")
+	    or diag $dump->(\@res);
+
 	@res = $plz->look_loop("s-bahnhof heerstr",
 			       @standard_look_loop_args);
 	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Heerstr.' } @{$res[0]}), 1,
@@ -407,7 +444,6 @@ for my $noextern (@extern_order) {
 	   "split_street with city, street syntax, street part")
 	    or diag $dump->(\@res);
 
-    XXX:
 	@res = $plz_multi->look("herz", GrepType => "grep-inword");
 	for my $test (
 		      "Alice-Herz-Platz",

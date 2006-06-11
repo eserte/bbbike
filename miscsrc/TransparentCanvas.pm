@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: TransparentCanvas.pm,v 1.4 2006/02/18 01:17:04 eserte Exp $
+# $Id: TransparentCanvas.pm,v 1.6 2006/06/11 18:41:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -19,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 
 use X11::Protocol;
 
@@ -29,6 +29,12 @@ sub register {
     my $top = $main::top;
     $top->bind("<Control-t>" => sub { doit() });
     $top->bind("<Control-T>" => sub { remove() });
+    if (!$main::booting) {
+	$top->messageBox(-title => "Info",
+			 -icon => "info",
+			 -message => "C-t: Make transparent\nS-C-t: Remove transparency\nKey commands may also be used in the header area",
+			);
+    }
 }
 
 sub remove {
