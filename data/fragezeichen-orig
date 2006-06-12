@@ -26,7 +26,7 @@ Storkower Straße zwischen Kniprode- und Greifswalder Straße	? 13453,14678 12722,
 Grellstr.	? 12722,15105 12434,15272 12252,15376 11941,15586
 #: last_checked: 2006-01-26
 Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 12188,14321 12338,14532 12384,14600 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941 12722,15105 12743,15138 12886,15346 12976,15483 13098,15592 13332,15765
-Gorkistr.	? 4423,20848 4265,20799 3569,20583 3329,20538 2621,20404 2517,20385 2435,20370 2348,20353 2311,20348
+Gorkistr.	? 4423,20848 4265,20799 3915,20711 3569,20583 3329,20538 2621,20404 2517,20385 2435,20370 2348,20353 2311,20348
 #: XXX Bald fertig
 Vulkanstraße	? 15912,13153 15892,13534 15897,13942 15838,14319
 Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17750,11771 17436,11791 17249,11802
@@ -192,6 +192,7 @@ Viktoriapark: 40m Höhe	? 9007,9264
 Dann gibt es am Kuhfortdamm den tollen BÜ unter der Eisenbahnbrücke.	? -18148,-1381
 Raddusch: entfällt der Regionalbahnhof?	? 54813,-65044
 Nach den Bauarbeiten in der Naumannstr. sollte hier auch ein -1 bei comments_kfzverkehr stehen	?::inwork 7499,7880 7497,8168 7582,8123
+Eichhorster Str.: Radweg? Laut Eintrag von housemeister ja, laut Luftbild fraglich	? 21451,18415 21543,18571 21662,18621 21853,18700
 ######################################################################
 #
 #  AUFNAHME IN DB FRAGLICH
@@ -212,6 +213,8 @@ Naumannstr. -> Sachsendamm: Überquerung möglich, aber hohe Penalty einplanen	? 7
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat)
 #
+#: XXX Eintrag von rol954 OK, aber keine Verknüpfung zum Netz:
+Greizer Str.: Asphalt, Q0	? 6592,882 6566,798 6579,740 6619,712 6739,691
 #: XXX Eintrag von rolf boje OK, aber keine Verknüpfung zum Netz:
 Flötnerweg: mäßiger beton, Q1	? 5751,19443 5676,19424 5714,19290 5781,19236 5810,19244
 #: XXX anonymer Eintrag OK, aber keine Verknüpfung zum Netz:
@@ -576,7 +579,6 @@ Prötzeler Ring und Trappenfelder Pfad: Qualität laut ADFC-Karte gut	? 21980,1596
 Am Ahrensfelder Berg, westlicher Weg: Qualität laut ADFC-Karte gut	? 22690,16383 22350,16690 22293,16818 22002,17492
 Flämingstr.: Qualität laut ADFC-Karte gut	? 21451,18415 21131,17784
 entlang der neuen Wuhle: Qualität laut ADFC-Karte gut, wie ist die Verbindung zur Märkischen Allee und Wuhletalstr.?	? 22002,17492 21579,17559 21131,17784 20965,17862
-Eichhorster Str.: Qualität laut ADFC-Karte gut	? 21451,18415 21543,18571 21662,18621 21853,18700
 Heinestr./Ahrensfelde: laut ADFC-Karte nur mäßig für Radfahrer geeignet	? 20987,19604 21010,19692 21303,19918
 Cottbusser Platz: laut ADFC-Karte gute Qualität	? 23279,14785 23378,14528
 Beilsteiner Str.: laut ADFC-Karte im südlichen Abschnitt gut geeignet, Einbahnstraße!	? 18749,12413 18875,13473 18859,14048 18998,14089 19025,14037
@@ -1385,3 +1387,4 @@ Achillesstr.: Qualität? Radweg?	? 15344,24315 15490,24198 15667,24088 15793,2376
 Lüderitzstr.: Qualtität der Straße zwischen Transvaalstr. und Seestr.?	? 6231,16328 6503,16068 6681,15928
 Eschengraben: gibt es hier eine Einbahnstraßenregelung und gilt diese auch für Radfahrer?	? 11771,17213 11805,17039 11831,16802 11776,16753 11621,16749 11441,16745 11281,16743 11018,16730
 Altdorfer Str.: besteht wieder eine Verbindung zwischen West- und Ostabschnitt? Qualität?	? 3154,2467 3732,2455
+Baumläuferweg: Qualität der Fahrbahn zwischen Storchenweg und Goldammerstr.?	? 14707,3315 14816,3162 14865,3068 14949,2967

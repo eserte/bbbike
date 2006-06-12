@@ -466,7 +466,15 @@ push @temp_blocking,
          'type' => 'handicap'
        },
        undef,
-       undef,
+       {
+         'source_id' => 'IM_002885',
+         'until' => 1167605999,
+         'text' => 'Schlichtallee (Rummelsburg) in Richtung Nord, auf der südlichen Bahnbrücke Baustelle; Fahrtrichtung gesperrt (bis Ende 12/2006) ',
+         'from' => 1150092737,
+         'data' => 'userdel	q4; 15629,10481 15751,10582 16032,10842
+',
+         'type' => 'handicap'
+       },
        undef,
        undef,
        {
@@ -820,14 +828,7 @@ userdel	3 8034,12093 8063,12182 8119,12414
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1150063200,
-         'text' => 'B 246 Fünfeichen-Grunow OL Bremsdorf, Str. der Jugend Einbau Deckschicht Vollsperrung 08.06.2006-11.06.2006 ',
-         'from' => 1149631200,
-         'data' => 'userdel	2 84903,-28417 83882,-28424
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1164927600,
          'text' => 'L 338 Rahnsdorfer Str. OD Schöneiche, Brücke über Jägergraben Brückenneubau Vollsperrung 07.06.2006-30.11.2006 ',
@@ -934,16 +935,6 @@ userdel	2 8119,12414 8063,12182 8056,12061
 userdel	2 8063,12182 8034,12093 8006,12074 7999,12049 8022,12016
 userdel	2 8540,12420 8560,12326 8539,12286 8515,12242 8600,12165 8595,12066
 userdel	2 8595,12066 8581,11896 8571,11846
-',
-         'type' => 'gesperrt'
-       },
-       undef,
-       {
-         'source_id' => 'IM_002867',
-         'until' => 1150063200,
-         'text' => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Seestr. und Leopoldplatz Veranstaltung, Straße vollständig gesperrt (bis 11.06.06)',
-         'from' => 1149834073,
-         'data' => 'userdel	2 6790,16018 6914,15908 6957,15869 7043,15793 7198,15656 7288,15579
 ',
          'type' => 'gesperrt'
        }

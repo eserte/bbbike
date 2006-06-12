@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 2.99 2006/06/06 15:01:01 eserte Exp $
+# $Id: Makefile,v 2.100 2006/06/12 06:39:36 eserte Exp $
 #
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake"). The source for pmake can be found at
@@ -1132,7 +1132,11 @@ check-$(city).coords.data:	.check_$(city)_coords_data
 .check_$(city)_coords_data:: $(city).coords.data
 	$(SORT_NO_LOCALE) ${COORDS_DATA_SORT_OPTS} -c $(city).coords.data || \
 	    ( $(SORT_NO_LOCALE) ${COORDS_DATA_SORT_OPTS} $(city).coords.data | diff -u - $(city).coords.data; false )
-	perl -nle '@l=split /\|/; if (++$$x{"@l[0..2]"} > 1) { die "@l" } if (@l < 3 || @l > 4) { die "@l" } ' $(city).coords.data
+	perl -nle '@l=split /\|/;\
+	    if (++$$x{"@l[0..2]"} > 1) { die "Duplicate: @l" }\
+	    if (@l < 2 || @l > 4) { die "Too less/many fields: @l" }\
+	    if ($$l[2] !~ /^(|\d{5})$$/) { die "Not a ZIP: @l" }\
+	' $(city).coords.data
 	@touch $@
 .endfor
 

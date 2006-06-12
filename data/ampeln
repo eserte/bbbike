@@ -1,5 +1,5 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
-#: version: $Id: ampeln-orig,v 4.59 2006/06/11 21:47:25 eserte Exp $
+#: version: $Id: ampeln-orig,v 4.59 2006/06/11 21:47:25 eserte Exp eserte $
 #:
 	X 9222,8787
 	X 8982,8781
@@ -1524,7 +1524,7 @@ nur Richtung O	X 8142,7221
 	X 22294,5777
 	X 22675,6510
 	X 18492,6893
-	X 17924,6967
+	F 17924,6967
 	X 17518,4644
 	X 15190,6243
 	X 13659,4489
@@ -1834,3 +1834,4 @@ Industriebahn	B -2223,13690
 nur Museumsbetrieb der Heidekrautbahn	B 8626,23432
 	F 5039,7627
 	X 3805,2196
+	F 14739,2714

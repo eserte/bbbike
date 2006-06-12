@@ -3606,12 +3606,13 @@ EOF
 userdel	2 23571,10990 24389,10836
 EOF
      },
-     { from  => 1149579380, # 2006-06-06 09:36
-       until => 1149868800, # 2006-06-09 18:00
-       text  => 'Schlichtallee zwischen Lückstraße und Hauptstraße in beiden Richtungen Baustelle, gesperrt bis 09.06.2006 18:00 Uhr ',
-       type  => 'gesperrt',
+     { from  => 1150092737, # 2006-06-12 08:12
+       until => 1167605999, # 2006-12-31 23:59
+       text  => 'Schlichtallee (Rummelsburg) in Richtung Nord, auf der südlichen Bahnbrücke Baustelle; Fahrtrichtung gesperrt (bis Ende 12/2006) ',
+       type  => 'handicap',
+       source_id => 'IM_002885',
        data  => <<EOF,
-userdel	2 15629,10481 15751,10582 16032,10842
+userdel	q4; 15629,10481 15751,10582 16032,10842
 EOF
      },
      { from  => undef, # 
