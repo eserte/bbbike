@@ -262,7 +262,14 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1152482400,
+         'text' => 'B 112 OL Guben, Bahnübergang OL Guben, Bahnübergang zw. OT Gr. Breesen u. Bresinchen Arbeiten Deutsche Bahn Vollsperrung 09.07.2006-09.07.2006 ',
+         'from' => 1152309600,
+         'data' => 'userdel	2 99277,-43921 99228,-44346
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -935,6 +942,16 @@ userdel	2 8119,12414 8063,12182 8056,12061
 userdel	2 8063,12182 8034,12093 8006,12074 7999,12049 8022,12016
 userdel	2 8540,12420 8560,12326 8539,12286 8515,12242 8600,12165 8595,12066
 userdel	2 8595,12066 8581,11896 8571,11846
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       undef,
+       {
+         'until' => 1151704800,
+         'text' => 'K 6162 OL Waltersdorf, Siedlung Kienberg, Bau der BAB 113n, Vollsperrung 19.06.2006-30.06.2006 ',
+         'from' => 1150581600,
+         'data' => 'userdel	2 20575,-3680 20265,-3849
 ',
          'type' => 'gesperrt'
        }

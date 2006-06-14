@@ -2384,9 +2384,9 @@ EOF
 userdel	2 99825,-46697 99765,-46542 99702,-46376
 EOF
      },
-     { from  => 1122156000, # 2005-07-24 00:00
-       until => 1122588000, # 2005-07-29 00:00
-       text  => 'B 112; Bahnübergang zw. Groß Breesen u. Bresinchen Gleisinstandsetztungsarb. Vollsp * 25.07.2005-28.07.2005 ',
+     { from  => 1152309600, # 2006-07-08 00:00
+       until => 1152482400, # 2006-07-10 00:00
+       text  => 'B 112 OL Guben, Bahnübergang OL Guben, Bahnübergang zw. OT Gr. Breesen u. Bresinchen Arbeiten Deutsche Bahn Vollsperrung 09.07.2006-09.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 99277,-43921 99228,-44346
@@ -4727,6 +4727,14 @@ EOF
        source_id => 'IM_002867',
        data  => <<EOF,
 userdel	2 6790,16018 6914,15908 6957,15869 7043,15793 7198,15656 7288,15579
+EOF
+     },
+     { from  => 1150581600, # 2006-06-18 00:00
+       until => 1151704800, # 2006-07-01 00:00
+       text  => 'K 6162 OL Waltersdorf, Siedlung Kienberg, Bau der BAB 113n, Vollsperrung 19.06.2006-30.06.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 20575,-3680 20265,-3849
 EOF
      },
     );

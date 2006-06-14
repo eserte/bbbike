@@ -1169,7 +1169,7 @@ Auguste-Hauschner-Str.: asphaltiert	Q0 8436,11766 8473,11634 8505,11544
 Cora-Berliner-Str.: asphaltiert	Q0 8737,12098 8783,11959
 Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8823,11765 8804,11838 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10024,9993 10111,9942
-Dillgesstr.: gut geeignet	Q0 6218,3302 6411,3092 6451,3034 6603,2803
+Dillgesstr.: gut geeignet	Q0 6218,3302 6308,3204 6411,3092 6451,3034 6603,2803
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Beton	Q0 14680,10758 14564,10792 14558,10833
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3 14558,10833 14124,10932 14093,10909 14043,10928
 Mehringplatz: Verbundsteinpflaster	Q0 9590,10262 9508,10320 9509,10391 9569,10427 9644,10404 9662,10345 9646,10301 9590,10262
@@ -1230,7 +1230,7 @@ Wattstr. (Oberschöneweide): sehr schlechtes Kopfsteinpflaster	Q3 17633,7286 1763
 Karl-Elsasser-Str.: Asphalt	Q0 11943,5825 12058,5911 12134,5954
 Andreasberger Str.: Kopfsteinpflaster	Q2 12030,6180 12058,5911
 Ellricher Str.: Kopfsteinpflaster	Q2 12246,6227 12099,6198 12030,6180
-Sangeallee: Asphalt, mit einigen schadhaften Stellen	Q1 18124,9056 18319,9218
+Sangeallee: Asphalt, mit einigen schadhaften Stellen	Q1 18124,9056 18247,9158 18319,9218
 Dorotheastr.: schlechtes Kopfsteinpflaster	Q3 18319,9218 18347,9145 18406,9052 18471,8957 18548,8942 18653,8922 18778,8895
 Tiergartenstr. (Biesdorf): Kopfsteinpflaster	Q2 21037,7751 21179,7754 21304,7783 21418,7821
 Bismarcksfelder Str.: fester Sandweg, holprig	Q2 21435,7798 21496,7815 21561,7867 21598,7922
@@ -2127,7 +2127,7 @@ Torweg: Kopfsteinpflaster	Q2 -7931,14606 -7413,14561
 Torweg: unbefestigter Weg	Q2 -8606,14696 -8264,14642
 Torweg: asphaltiert	Q0 -8264,14642 -8085,14618 -7931,14606
 Torweg: asphaltiert	Q0 -7413,14561 -7154,14532 -6990,14530 -6876,14529 -6442,14535
-Pilgramer Str.: schlechtes Kopfsteinpflaster	Q3 25115,11244 25125,10475 25028,10312 24827,9968 24688,9730 24540,9478
+Pilgramer Str.: schlechtes Kopfsteinpflaster	Q3 25115,11244 25125,10475 25028,10312 24827,9968 24770,9871 24688,9730 24540,9478
 Pilgramer Str.: Asphalt	Q0 24540,9478 24444,9256 24334,9000 24221,8731
 Pilgramer Str.: schlechtes Kopfsteinpflaster	Q3 24221,8731 24165,8375 24043,7718
 Delbrückstr. (Neukölln): Beton	Q0 12468,6592 12743,6645
@@ -2227,6 +2227,7 @@ Zühlsdorfer Str.: Asphalt	Q0 19976,16046 20214,15923 20262,16029 20170,16075
 Berchtesgadener Str.: Asphalt	Q0 6370,8922 6366,9033 6361,9164 6360,9194 6357,9322 6351,9464 6348,9535
 Storchenweg: Beton	Q0 14616,3203 14707,3315 14779,3426
 Baumläuferweg: gutes Kopfsteinpflaster	Q1 14468,3484 14707,3315
+Baumläuferweg: Betonstraße in gutem Zustand	Q0 14707,3315 14816,3162 14865,3068 14949,2967
 Buchfinkweg: gute Betonstraße	Q0 14407,3356 14579,3251 14616,3203 14674,3103 14734,2979 14855,2859
 Im Mühlenfelde: Asphalt	Q0 1268,2886 1320,2731 1324,2603
 Schwarzmeerstr.: Beton	Q1 17565,10782 17882,10708
@@ -2571,6 +2572,11 @@ Helmholtzstr. (Oberschöneweide): gutes Kopfsteinpflaster	Q1 17359,6799 17459,685
 Im Gestell: Kopfsteinpflaster	Q2 601,4594 519,4547 444,4498 371,4453
 Luisenstr. (Köpenick): guter Beton	Q0 22644,4095 22460,4125 22267,4200
 Langerhansstr.: Kopfsteinpflaster	Q2 22154,5659 22200,5776 22234,5921
+Elisabethstr. (Lankwitz): Asphalt	Q0 5763,2795 6022,2901 6224,3112 6308,3204
+Wachsmuthstr.: Kopfsteinpflaster, nur 13km/h	Q3 3762,23362 3939,23345 4021,23330 4213,23394
+Langenbeckstr.: fester Sandweg, nur 13km/h	Q3 24673,9923 24770,9871 25004,9737
+Hattenheimer Str. (Tempelhof): Asphalt	Q0 11590,6026 11655,6189 11625,6248
+Riastr.: schlechtes Kopfsteinpflaster	Q3 18201,8984 18247,9158
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934
