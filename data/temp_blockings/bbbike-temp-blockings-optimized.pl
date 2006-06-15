@@ -954,6 +954,27 @@ userdel	2 8595,12066 8581,11896 8571,11846
          'data' => 'userdel	2 20575,-3680 20265,-3849
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_002922',
+         'until' => 1150754400,
+         'text' => 'Altstadt Köpenick: Köpenicker Sommer, Verkehrsbehinderung erwartet (bis 19.06.2006)',
+         'from' => 1150395890,
+         'data' => 'userdel	q4 22439,4838 22445,4758 22381,4752 22377,4836 22196,4847 22138,4661 22111,4562 22162,4546 22312,4593 22358,4521
+userdel	q4 22111,4562 22093,4499
+userdel	q4 22445,4758 22449,4712 22383,4703 22312,4593 22263,4671 22243,4710 22234,4789
+userdel	q4 22147,4831 22043,4562 22071,4501
+userdel	q4 22381,4752 22383,4703
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1152050400,
+         'text' => 'B 246 OL Bestensee, Hauptstraße OL Bestensee, Hauptstraße, Bahnübergang Bauarbeiten am Gleiskörper Vollsperrung 30.06.2006-04.07.2006 ',
+         'from' => 1151532000,
+         'data' => 'userdel	2 26639,-17861 26752,-17872 26832,-17882
+',
+         'type' => 'gesperrt'
        }
      
 );
