@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Update.pm,v 1.21 2006/06/01 23:06:54 eserte Exp $
+# $Id: Update.pm,v 1.22 2006/06/16 20:54:19 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2001,2003,2005 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2001,2003,2005,2006 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -228,6 +228,8 @@ sub create_modified_devel {
 	die "Probably wrong rootdir: $rootdir from `pwd`";
     }
 
+    require Digest::MD5;
+
     open(MOD, ">$datadir/.modified") or die $!;
     if ($rsync_include) {
 	open(RSYNC, ">$datadir/.rsync_include") or die $!;
@@ -237,8 +239,15 @@ sub create_modified_devel {
 	if (m|^data/(.*)|) {
 	    my $file = $1;
 	    next if $file =~ m|^\.|;
+
+	    my $ctx = Digest::MD5->new;
+	    open(MD5, "$datadir/$file")
+		or die "Can't open $datadir/$file: $!";
+	    $ctx->addfile(\*MD5);
+	    close MD5;
+
 	    my(@stat) = stat("$datadir/$file");
-	    print MOD "data/$file\t$stat[9]\n";
+	    print MOD join("\t", "data/$file", $stat[9], $ctx->hexdigest), "\n";
 	    if ($rsync_include) {
 		print RSYNC "$file\n";
 	    }
@@ -257,6 +266,7 @@ sub create_modified {
     my $datadir = $destdir . "/data";
     my(@files) = @{$args{-files}};
     my(%modified) = %{$args{-modified}};
+    my(%md5) = %{$args{-md5}};
     eval {
 	open(MOD, ">$datadir/.modified~") or die $!;
 	my @errors;
@@ -266,7 +276,8 @@ sub create_modified {
 		push @errors, "$destdir/$file: $!";
 		next;
 	    }
-	    print MOD "$file\t$stat[9]\n" or die $!;
+	    print MOD join("\t", $file, $stat[9], $md5{$file}), "\n"
+		or die $!;
 	}
 	if (@errors) {
 	    main::status_message(M("Die folgenden Dateien haben Fehler erzeugt:\n") . join("\n", @errors),
@@ -351,23 +362,27 @@ sub bbbike_data_update {
     }
 
     # assume http (or "best")
-    my(@files, %modified);
+    my(@files, %modified, %md5);
     if (open(MOD, "$rootdir/data/.modified")) {
 	while(<MOD>) {
 	    chomp;
-	    my($f, $t) = split(/\t/);
+	    my($f, $t, $md5) = split(/\t/);
 	    push @files, $f;
 	    $modified{$f} = $t;
+	    $md5{$f} = $t;
 	}
 	close MOD;
 	update_http(-dest => $rootdir,
 		    -root => $BBBike::BBBIKE_UPDATE_WWW,
 		    -files => \@files,
 		    -modified => \%modified,
+		    -md5 => \%md5,
 		   );
 	create_modified(-dest => $rootdir,
 			-files => \@files,
-			-modified => \%modified);
+			-modified => \%modified,
+			-md5 => \%md5,
+		       );
 	main::reload_all();
     }
 }

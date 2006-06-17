@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.38 2005/12/10 23:24:11 eserte Exp $
+# $Id: BBBikeRouting.pm,v 1.40 2006/06/15 23:10:30 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
@@ -43,6 +43,7 @@ $BBBikeRouting::Context::Members =
      Verbose => "\$",
      MultipleChoices => "\$",
      MultipleChoicesLimit => "\$",
+     ChooseExactCrossing => "\$",
      UseTelbuchDBApprox => "\$",
     };
 struct('BBBikeRouting::Context' => $BBBikeRouting::Context::Members);
@@ -51,10 +52,13 @@ $BBBikeRouting::Members =
     {Context => "BBBikeRouting::Context",
      Start => "BBBikeRouting::Position",
      StartChoices => "\$", # array of BBBikeRouting::Position
+     StartChoicesIsCrossings => "\$",
      Via => "\$", # array of BBBikeRouting::Position
      ViaChoices => "\$", # XXX not used yet
+     ViaChoicesIsCrossings => "\$",
      Goal => "BBBikeRouting::Position",
      GoalChoices => "\$", # array of BBBikeRouting::Position
+     GoalChoicesIsCrossings => "\$",
      Dataset => "\$",
      Streets => "\$", ZIP => "\$",
      ZIPStreets => "\$", Net => "\$",
@@ -62,6 +66,7 @@ $BBBikeRouting::Members =
      Crossings => "\$",
      Path => "\$", RouteInfo => "\$",
      #PenaltyNets => "\$",
+     Ext => "\$", # for subclassing
     };
 struct('BBBikeRouting' => $BBBikeRouting::Members);
 
@@ -113,8 +118,10 @@ sub init_context {
     $self->Context($context);
     $self->Start($self->BBBikeRouting_Position_Class->new);
     $self->StartChoices([]);
+    $self->StartChoicesIsCrossings(0);
     $self->Goal($self->BBBikeRouting_Position_Class->new);
     $self->GoalChoices([]);
+    $self->GoalChoicesIsCrossings(0);
     if ($self->Strassen_Dataset_Class eq 'Strassen::Dataset') {
 	# Just for convenience:
 	require Strassen::Dataset;
@@ -131,6 +138,7 @@ sub init_context {
     $context->RouteInfoKm(1);
     $context->MultipleChoices(1);
     $context->MultipleChoicesLimit(undef);
+    $context->ChooseExactCrossing(0);
     $context->UseTelbuchDBApprox(0);
     $self;
 }
@@ -155,10 +163,12 @@ sub reset {
     $self->RouteInfo(undef);
     $self->Start($self->BBBikeRouting_Position_Class->new);
     $self->StartChoices([]);
+    $self->StartChoicesIsCrossings(0);
     $self->Via([]);
     $self->ViaChoices([]);
     $self->Goal($self->BBBikeRouting_Position_Class->new);
     $self->GoalChoices([]);
+    $self->GoalChoicesIsCrossings(0);
 }
 
 sub dump {
@@ -360,6 +370,7 @@ sub resolve_position {
     my $citypart = shift || $pos_o->Citypart;
     my(%args) = @_;
     my $fixposition = $args{fixposition};
+    my $type = $args{type};
     if (!defined $fixposition) { $fixposition = 1 }
     my $context = $self->Context;
 
@@ -394,7 +405,7 @@ sub resolve_position {
     }
 
     if ($context->UseTelbuchDBApprox) {
-	# XXX experimental
+	# XXX experimental, does not have ChooseExactCrossing implemented
 	my $coord;
 	my $return;
 	eval {
@@ -512,6 +523,20 @@ sub resolve_position {
 	$pos_o->Citypart($from_data->[PLZ::LOOK_CITYPART()]);
 	$pos_o->Coord   ($from_data->[PLZ::LOOK_COORD   ()]);
 	$pos_o->ZIP     ($from_data->[PLZ::LOOK_ZIP     ()]);
+
+	if ($context->ChooseExactCrossing) {
+	    $self->init_str;
+	    my(@r) = $self->Streets->get_by_strname_and_citypart($pos_o->Street, $pos_o->Citypart);
+	    if (!@r) {
+		warn "Found street <" . $pos_o->Street . "> from ZIP file, but not in streets file. Using nevertheless";
+	    } else {
+		$self->create_exact_crossing_choices(\@r, $pos_o, $choices_o, $type);
+		if (@$choices_o > 1) {
+		    return undef;
+		}
+		# else: we have only one position
+	    }
+	}
     } elsif (defined $street) {
 	$self->init_str; # for $self->Streets
 	# rx or not?
@@ -519,9 +544,19 @@ sub resolve_position {
 	if (!$r) {
 	    die "Can't find $street in file @{[ $self->Streets->file ]}";
 	}
-	$pos_o->Street($r->[Strassen::NAME()]);
-	$pos_o->Citypart(undef);
-	$pos_o->Coord($r->[Strassen::COORDS()]->[0]);
+	require Strassen::Strasse;
+	my($strname, $citypart) = Strasse::split_street_citypart($r->[Strassen::NAME()]);
+	$pos_o->Street($strname);
+	$pos_o->Citypart($citypart);
+	if ($context->ChooseExactCrossing) {
+	    $self->create_exact_crossing_choices([$r], $pos_o, $choices_o, $type);
+	    if (@$choices_o > 1) {
+		return undef;
+	    }
+	    # else: we have only one position
+	}
+	my $coords = $r->[Strassen::COORDS()];
+	$pos_o->Coord($coords->[$#$coords/2]); # use middle of street
     }
 
     if ($fixposition) {
@@ -537,6 +572,7 @@ sub get_position {
     my $pos_o = $self->$type();
     my $choices = $type . "Choices";
     my $choices_o = $self->$choices();
+    $args{type} = $type;
     $self->resolve_position($pos_o, $choices_o, undef, undef, %args);
 }
 
@@ -552,6 +588,34 @@ sub fix_position {
 	}
     }
     $pos_o->Coord;
+}
+
+sub create_exact_crossing_choices {
+    my($self, $r_array, $pos_o, $choices_o, $type) = @_;
+
+    require Strassen::Strasse;
+
+    @$choices_o = ();
+    my $crossings = $self->init_crossings;
+    for my $r (@$r_array) {
+	for my $c (@{ $r->[Strassen::COORDS()] }) {
+	    if ($crossings->crossing_exists($c)) {
+		my @crossing_records = grep { (Strasse::split_street_citypart($_->[Strassen::NAME()]))[0] ne $pos_o->Street } @{ $crossings->get_records($c) };
+		next if !@crossing_records;
+		my $catref = $self->init_str->default_cat_stack_mapping;
+		@crossing_records = sort { $catref->{$b->[Strassen::CAT()]} <=> $catref->{$a->[Strassen::CAT()]} } @crossing_records;
+		my @crossing_streets = map { (Strasse::split_street_citypart($_->[Strassen::NAME()]))[0] } @crossing_records;
+		my $new_pos = $self->BBBikeRouting_Position_Class->new;
+		$new_pos->Street(join("/", @crossing_streets));
+		$new_pos->Coord($c);
+		push @$choices_o, $new_pos;
+	    }
+	}
+    }
+    if (@$choices_o > 1) {
+	my $member = $type . "ChoicesIsCrossings";
+	$self->$member(1);
+    }
 }
 
 sub search {
@@ -586,7 +650,7 @@ sub search {
     }
 
     if (!$self->Goal->Coord) {
-	if ($self->StartChoices && @{ $self->StartChoices }) {
+	if ($self->GoalChoices && @{ $self->GoalChoices }) {
 	    warn "Multiple goal choices found: " .
 		join(", ", map { $_->Street . "/" . $_->Citypart } @{ $self->GoalChoices }) .
 		    ", please resolve by using GoalChoices\n";

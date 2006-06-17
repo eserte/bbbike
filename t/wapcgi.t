@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapcgi.t,v 1.19 2005/04/30 10:04:03 eserte Exp $
+# $Id: wapcgi.t,v 1.20 2006/06/17 08:01:55 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -14,7 +14,7 @@ use File::Temp qw(tempfile);
 use URI;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.19 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.20 $ =~ /(\d+)\.(\d+)/);
 
 BEGIN {
     if (!eval q{
@@ -58,7 +58,7 @@ if (!@hdrs) {
 	    );
 }
 
-plan tests => 26 * scalar @wap_url * scalar @hdrs;
+plan tests => 29 * scalar @wap_url * scalar @hdrs;
 
 for my $wapurl (@wap_url) {
     for my $hdr (@hdrs) {
@@ -120,6 +120,12 @@ for my $wapurl (@wap_url) {
 	like($resp->header('Content_Type'), qr|^image/|, $surr_image_url);
 	is(length $resp->content > 0, 1, "Check for content in $surr_image_url");
 	check_image($resp, $surr_image_url);
+
+	$url = $wapurl . "?startname=dudenstr&startbezirk=&zielname=europaplatz&zielbezirk=;form=advanced";
+	$resp = $ua->get($url, @hdr);
+	ok($resp->is_success, "Advanced search ($url)");
+	like($resp->content, qr{genaue kreuzung.*dudenstr.*ecke}i, "Expected multiple start choices");
+	unlike($resp->content, qr{\$zielcoord}, "No multiple goal choices expected");
     }
 }
 

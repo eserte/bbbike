@@ -5,7 +5,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike.cgi,v 8.14 2006/06/08 21:48:42 eserte Exp $
+# $Id: bbbike.cgi,v 8.15 2006/06/16 06:26:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998-2005 Slaven Rezic. All rights reserved.
@@ -694,7 +694,7 @@ sub my_exit {
     exit @_;
 }
 
-$VERSION = sprintf("%d.%02d", q$Revision: 8.14 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 8.15 $ =~ /(\d+)\.(\d+)/);
 
 use vars qw($font $delim);
 $font = 'sans-serif,helvetica,verdana,arial'; # also set in bbbike.css
@@ -891,7 +891,7 @@ if (defined $q->param('movemap')) {
     my($x, $y) = ($q->param('detailmapx'),
 		  $q->param('detailmapy'));
     if    ($move =~ /^nord/i) { $y-- }
-    elsif ($move =~ /^süd/i)  { $y++ }
+    elsif ($move =~ /^s.*d/i) { $y++ }
     if    ($move =~ /west$/i) { $x-- }
     elsif ($move =~ /ost$/i)  { $x++ }
     $q->delete('detailmapx');
@@ -6052,7 +6052,7 @@ EOF
         $os = "\U$Config::Config{'osname'} $Config::Config{'osvers'}\E";
     }
 
-    my $cgi_date = '$Date: 2006/06/08 21:48:42 $';
+    my $cgi_date = '$Date: 2006/06/16 06:26:16 $';
     ($cgi_date) = $cgi_date =~ m{(\d{4}/\d{2}/\d{2})};
     my $data_date;
     for (@Strassen::datadirs) {

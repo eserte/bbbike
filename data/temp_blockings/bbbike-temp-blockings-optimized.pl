@@ -525,24 +525,8 @@ userdel	2 22668,12080 22701,12115
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'IM_002505',
-         'until' => 1150408799,
-         'text' => 'Niedstr. (Friedenau) in beiden Richtungen zwischen Lauterstr. und Handjerystr. Baustelle Straße vollständig gesperrt (bis Mitte 06.2006)',
-         'from' => 1141765672,
-         'data' => 'userdel	2 5810,7337 5653,7333
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'IM_002505',
-         'until' => 1150408799,
-         'text' => 'Niedstr. (Friedenau) von Handjerystr. bis Friedrich-Wilhelmplatz Einbahnstr. (bis Mitte 06.2006)',
-         'from' => 1141765814,
-         'data' => 'userdel	1 5364,7330 5653,7333
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        undef,
        {
          'source_id' => 'IM_002513',

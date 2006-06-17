@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Core.pm,v 1.70 2006/05/10 19:48:23 eserte Exp $
+# $Id: Core.pm,v 1.71 2006/06/15 22:31:06 eserte Exp $
 #
 # Copyright (c) 1995-2003 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -28,7 +28,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $VERSION $can_strassen_storable
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.70 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.71 $ =~ /(\d+)\.(\d+)/);
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -626,6 +626,32 @@ sub get_all_by_name {
 	last if !@{$ret->[COORDS]};
 	push @res, $ret if ((!$rxcmp && $ret->[NAME] eq $name) ||
 			    ( $rxcmp && $ret->[NAME] =~ /$name/));
+    }
+    @res;
+}
+
+# Like get_all_by_name, but specify street name and citypart
+sub get_by_strname_and_citypart {
+    my($self, $strname, $citypart) = @_;
+    require Strassen::Strasse;
+    my @res;
+    $self->init;
+    while(1) {
+	my $ret = $self->next;
+	last if !@{$ret->[COORDS]};
+	my($strname2,@cityparts2) = Strasse::split_street_citypart($ret->[NAME]);
+	if ($strname eq $strname2) {
+	    if (!defined $citypart || !@cityparts2) {
+		push @res, $ret;
+	    } else {
+		for my $citypart2 (@cityparts2) {
+		    if ($citypart eq $citypart2) {
+			push @res, $ret;
+			last;
+		    }
+		}
+	    }
+	}
     }
     @res;
 }

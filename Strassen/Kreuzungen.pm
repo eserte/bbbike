@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Kreuzungen.pm,v 1.15 2004/12/05 21:54:41 eserte Exp $
+# $Id: Kreuzungen.pm,v 1.16 2006/06/15 23:10:40 eserte Exp $
 #
 # Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
@@ -12,7 +12,7 @@
 
 package Strassen::Kreuzungen;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.16 $ =~ /(\d+)\.(\d+)/);
 
 package Kreuzungen;
 use strict;
@@ -147,6 +147,15 @@ sub get {
     } else {
 	die "Coordinate $coord does not exist in Hash. The Hash has @{[ scalar keys %{ $self->{Hash} } ]} entries.";
     }
+}
+
+# Return an array reference of street records of this coord
+# Fails if this object was not constructed with WantPos=>1
+### AutoLoad Sub
+sub get_records {
+    my($self, $coord) = @_;
+    die "get_records does not work with WantPos=>0" if !$self->{IsPos};
+    [ map { $self->{Strassen}->get($_) } @{ $self->{Hash}{$coord} } ];
 }
 
 ### AutoLoad Sub

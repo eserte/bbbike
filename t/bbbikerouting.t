@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbikerouting.t,v 1.27 2006/03/13 06:50:32 eserte Exp $
+# $Id: bbbikerouting.t,v 1.28 2006/06/17 08:01:55 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -32,7 +32,7 @@ BEGIN {
     }
 }
 
-my $num_tests = 63; # basic number of tests
+my $num_tests = 76; # basic number of tests
 
 use vars qw($single $all $common $bench $v $do_xxx);
 
@@ -373,8 +373,6 @@ sub do_tests {
     ok(scalar @{ $routing->Path } > 0, "scope=wideregion test");
     ok(scalar @{ $routing->RouteInfo } > 0);
 
- XXX:
-
     {
 	# (Similar test in cgi.t)
 	# this is critical --- both streets in the neighborhood of Berlin
@@ -429,6 +427,51 @@ sub do_tests {
 	   $start_pos->Coord . " and " . $routing2->Goal->Coord);
 	ok($routing2->Path && scalar @{ $routing2->Path } > 0,
 	   "Non-empty path");
+    }
+
+ XXX:
+
+    {
+	my $routing2 = BBBikeRouting->new;
+	$routing2->init_context;
+	_my_init_context($routing2->Context);
+	$routing2->Context->ChooseExactCrossing(1);
+	$routing2->Context->MultipleChoices(1);
+	$routing2->Start->Street("Heerstr.");
+	$routing2->Goal->Street("Dudenstr.");
+
+	my($start_coord, $goal_coord);
+	my($start_pos, $goal_pos);
+
+	$start_coord = $routing2->get_start_position;
+	ok(!defined $start_coord, "We have probably multiple choices for start");
+	cmp_ok(scalar(@{ $routing2->StartChoices}), ">", 1, "Yes, we have");
+	is($routing2->StartChoicesIsCrossings, 0, "But it is not crossings");
+	($start_pos) = grep { $_->Citypart eq 'Spandau' } @{ $routing2->StartChoices };
+	ok($start_pos, "Choose Spandau");
+
+	$goal_coord = $routing2->get_goal_position;
+	ok(!defined $goal_coord, "We have probably multiple choices for goal");
+	cmp_ok(scalar(@{ $routing2->GoalChoices}), ">", 1, "Yes, we have");
+	is($routing2->GoalChoicesIsCrossings, 1, "And it is crossings");
+	($goal_pos) = grep { $_->Street =~ /Methfessel/ } @{ $routing2->GoalChoices };
+	ok($goal_pos, "Choose Dudenstr/Methfesselstr");
+
+	$routing2->Start($start_pos);
+	$start_coord = $routing2->get_start_position;
+	ok(!defined $start_coord, "Still multiple choices for start");
+	cmp_ok(scalar(@{ $routing2->StartChoices}), ">", 1, "Yes, we have");
+	is($routing2->StartChoicesIsCrossings, 1, "And now it's crossings!");
+	($start_pos) = grep { $_->Street =~ /Gatower/ } @{ $routing2->StartChoices };
+	ok($start_pos, "Choose Heerstr/Gatower")
+	    or diag(Dumper($routing2->StartChoices));
+
+	$routing2->Start($start_pos);
+	$routing2->Goal($goal_pos);
+	eval {
+	    $routing2->search;
+	};
+	is($@, "", "Successful search") or diag("Error while searching: $@, Routing start object is: " . Dumper($routing2->Start) . " and goal object is: " . Dumper($routing2->Goal));
     }
 
 }

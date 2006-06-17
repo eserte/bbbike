@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: wapbbbike.cgi,v 2.20 2006/03/24 06:47:28 eserte Exp $
+# $Id: wapbbbike.cgi,v 2.23 2006/06/15 23:10:08 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2000,2001,2003,2004 Slaven Rezic. All rights reserved.
@@ -70,8 +70,11 @@ sub wap_input {
      <b>Ziel</b><br/>
      Straﬂe: <input type="text" name="zielname" emptyok="false" /><br/>
      Bezirk: <input type="text" name="zielbezirk" emptyok="true"/><br/>
-  <anchor>Route zeigen
+  <anchor>Route suchen
    <go href="@{[ $self->Context->CGI->script_name ]}?startname=\$(startname)&amp;startbezirk=\$(startbezirk)&amp;zielname=\$(zielname)&amp;zielbezirk=\$(zielbezirk)" method="get"/>
+  </anchor><br/>
+  <anchor>Erweiterte Suche
+   <go href="@{[ $self->Context->CGI->script_name ]}?startname=\$(startname)&amp;startbezirk=\$(startbezirk)&amp;zielname=\$(zielname)&amp;zielbezirk=\$(zielbezirk);form=advanced" method="get"/>
   </anchor>
   </p>
 EOF
@@ -93,15 +96,42 @@ sub wap_resolve_street {
  <card id="input" title="BBBike">
 <!--  <p align="center"><big>BBBike</big></p> -->
 EOF
-    my %has_postfields;
-    my %has_known_postfields;
+    my %postfields;
+    if ($self->Ext->{Form} ne 'normal') {
+	$postfields{"form"} = $self->Ext->{Form};
+    }
+
     for my $type (qw(Start Goal)) {
 	my $de_label = $type eq 'Goal' ? 'Ziel' : 'Start';
 	my $cgi_label = lc $de_label;
 	my $choices = $type . "Choices";
-	if ($self->$type() && $self->$type()->Coord) {
-	    $has_known_postfields{$cgi_label}++;
-	} elsif (@{ $self->$choices() } == 0) {
+	if (@{ $self->$choices() } > 1) {
+	    print "<p>";
+	    my $choices_is_crossings = $type . "ChoicesIsCrossings";
+	    if ($self->$choices_is_crossings) {
+		print "Genaue Kreuzung angeben: <b>" . $self->$type->Street . "</b> Ecke<br/>";
+		print "<select name=\"${cgi_label}coord\">\n";
+		for my $option (@{ $self->$choices() }) {
+		    print "<option value=\"" . $option->Coord . "\">" . $option->Street . " " . _def_citypart($option) . "</option>\n";
+		}
+		print "</select>";
+		$postfields{$cgi_label."coord"} = "\$${cgi_label}coord";
+		$postfields{$cgi_label."name"} = wml($self->$type->Street);
+		$postfields{$cgi_label."bezirk"} = wml($self->$type->Citypart);
+	    } else {
+		print "Mehrere <b>${de_label}stra&#223;en</b> gefunden:<br/>";
+		print "<select name=\"${cgi_label}namebezirk\">\n";
+		for my $option (@{ $self->$choices() }) {
+		    print "<option value=\"" . $option->Street."|".$option->Citypart . "\">" . $option->Street . " " . _def_citypart($option) . "</option>\n";
+		}
+		print "</select>";
+		$postfields{$cgi_label."namebezirk"} = "\$${cgi_label}namebezirk";
+	    }
+	    print "</p>";
+	} elsif ($self->$type() && $self->$type()->Coord) {
+	    $postfields{$cgi_label."name"} = wml($self->$type->Street);
+	    $postfields{$cgi_label."bezirk"} = wml($self->$type->Citypart);
+	} else { # if (@{ $self->$choices() } == 0) {
 	    print <<EOF;
 <p>Die ${de_label}stra&#223;e ist nicht in
 der Datenbank enthalten. Andere ${de_label}stra&#223;e:<br/>
@@ -109,38 +139,19 @@ Straﬂe: <input type="text" name="${cgi_label}name" emptyok="false" /><br/>
 Bezirk: <input type="text" name="${cgi_label}bezirk" emptyok="true"/><br/>
 </p>
 EOF
-            $has_postfields{$cgi_label}++;
-	} elsif (@{ $self->$choices() } > 1) {
-	    print "<p>Mehrere <b>${de_label}stra&#223;en</b> gefunden:<br/>";
-	    print "<select name=\"${cgi_label}namebezirk\">\n";
-	    for my $option (@{ $self->$choices() }) {
-		print "<option value=\"" . $option->Street."|".$option->Citypart . "\">" . $option->Street . " (" . $option->Citypart. ")</option>\n";
-	    }
-	    print "</select></p>";
+	    $postfields{$cgi_label."name"} = "\$${cgi_label}name";
+	    $postfields{$cgi_label."bezirk"} = "\$${cgi_label}bezirk";
 	}
     }
     print <<EOF;
   <p>
-  <anchor>Route zeigen
+  <anchor>Route suchen
    <go href="@{[ $self->Context->CGI->script_name ]}" method="get">
 EOF
-    for my $type (qw(start ziel)) {
-	my $member = $type eq 'start' ? 'Start' : 'Goal';
-	if ($has_known_postfields{$type}) {
-	    print <<EOF;
-    <postfield name="${type}name"   value="@{[ $self->$member()->Street ]}" />
-    <postfield name="${type}bezirk" value="@{[ $self->$member()->Citypart ]}" />
+    while(my($k,$v) = each %postfields) {
+	print <<EOF;
+    <postfield name="$k" value="$v" />
 EOF
-	} elsif ($has_postfields{$type}) {
-	    print <<EOF;
-    <postfield name="${type}name"   value="\$${type}name" />
-    <postfield name="${type}bezirk" value="\$${type}bezirk" />
-EOF
-	} else {
-	    print <<EOF;
-	    <postfield name="${type}namebezirk" value="\$${type}namebezirk" />
-EOF
-	}
     }
     print <<EOF;
    </go>
@@ -167,8 +178,10 @@ sub _wap_new_search {
    <go href="@{[ $self->Context->CGI->script_name ]}">
     <setvar name="startname"   value="" />
     <setvar name="startbezirk" value="" />
+    <setvar name="startcoord"  value="" />
     <setvar name="zielname"    value="" />
     <setvar name="zielbezirk"  value="" />
+    <setvar name="zielcoord"   value="" />
    </go>
   </anchor><br/>
 EOF
@@ -176,7 +189,7 @@ EOF
 
 sub _def_citypart {
     my $pos = shift;
-    if (defined $pos->Citypart) {
+    if (defined $pos->Citypart && $pos->Citypart !~ m{^\s*$}) {
 	"(" . $pos->Citypart . ")";
     } else {
 	"";
@@ -205,10 +218,12 @@ EOF
     } else {
 	print <<EOF;
    <anchor>Als Grafik zeigen<go href="@{[ $self->Context->CGI->script_name ]}">
-    <postfield name="startname"    value="@{[$self->Start->Street]}" />
-    <postfield name="startbezirk"  value="@{[$self->Start->Citypart]}" />
-    <postfield name="zielname"   value="@{[$self->Goal->Street]}" />
-    <postfield name="zielbezirk" value="@{[$self->Goal->Citypart]}" />
+    <postfield name="startname"   value="@{[$self->Start->Street]}" />
+    <postfield name="startbezirk" value="@{[$self->Start->Citypart]}" />
+    <postfield name="startcoord"  value="@{[$self->Goal->Coord]}" />
+    <postfield name="zielname"    value="@{[$self->Goal->Street]}" />
+    <postfield name="zielbezirk"  value="@{[$self->Goal->Citypart]}" />
+    <postfield name="zielcoord"   value="@{[$self->Start->Coord]}" />
     <postfield name="output_as" value="imagepage" />
     </go>
    </anchor><br/>
@@ -219,8 +234,10 @@ EOF
    <go href="@{[ $self->Context->CGI->script_name ]}">
     <postfield name="startname"   value="@{[$self->Goal->Street]}" />
     <postfield name="startbezirk" value="@{[$self->Goal->Citypart]}" />
+    <postfield name="startcoord"  value="@{[$self->Goal->Coord]}" />
     <postfield name="zielname"    value="@{[$self->Start->Street]}" />
     <postfield name="zielbezirk"  value="@{[$self->Start->Citypart]}" />
+    <postfield name="zielcoord"   value="@{[$self->Start->Coord]}" />
    </go>
   </anchor><br/>
 EOF
@@ -725,6 +742,7 @@ sub store_session {
 $routing = BBBikeRouting->new->init_context;
 $routing->Context->MultipleChoicesLimit(7);
 bless $routing, 'BBBikeRouting::WAP'; # 5.005 compat
+$routing->Ext({ Form => "normal" });
 $routing->read_conf("$FindBin::RealBin/bbbike.cgi.config");
 
 $BBBikeConf::wapbbbike_use_mapserver = $BBBikeConf::wapbbbike_use_mapserver; # cease -w
@@ -768,8 +786,24 @@ if ($q->param("info")) {
     $routing->Start->Citypart($q->param("startbezirk"));
     $routing->Goal->Citypart ($q->param("zielbezirk"));
 
-    my $has_start = $routing->get_start_position;
-    my $has_goal  = $routing->get_goal_position;
+    if ($q->param("form") && $q->param("form") eq 'advanced') {
+	$routing->Context->ChooseExactCrossing(1);
+	$routing->Ext({ Form => $q->param("form") });
+    }
+
+    my($has_start, $has_goal);
+    if (defined $q->param("startcoord") && $q->param("startcoord") ne "") {
+	$routing->Start->Coord($q->param("startcoord"));
+	$has_start = 1;
+    } else {
+	$has_start = $routing->get_start_position;
+    }
+    if (defined $q->param("zielcoord") && $q->param("zielcoord") ne "") {
+	$routing->Goal->Coord($q->param("zielcoord"));
+	$has_goal = 1;
+    } else {
+	$has_goal = $routing->get_goal_position;
+    }
 
     if (!$has_start || !$has_goal) {
 	$routing->wap_resolve_street;
