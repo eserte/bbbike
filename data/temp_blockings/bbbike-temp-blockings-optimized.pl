@@ -15,7 +15,13 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1150666200,
+         'text' => 'Badstr. (Wedding) in beiden Richtungen, zwischen Pankstr. und Behmstr. Veranstaltung, Straße vollständig gesperrt (bis 18.06.2006 23:30 Uhr) Seifenkistenrennen und Straßenfest in der Badstr.',
+         'from' => undef,
+         'file' => 'badstr.bbd',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -675,15 +681,7 @@ userdel	q4 43584,20871 44596,21287
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_002668',
-         'until' => 1150495200,
-         'text' => 'Ruschstr. (Lichtenberg) in Richtung Süd, in Höhe Normannenstr. Einbahnstraße in Richtung Nord, Einfahrt in Normannenstr. gesperrt (bis 16.06.06)',
-         'from' => 1145562106,
-         'data' => 'userdel	q4; 15904,12340 15863,11992
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,

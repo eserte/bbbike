@@ -11857,7 +11857,7 @@ sub show_info {
 	my @mapserver_def = ([$BBBike::BBBIKE_MAPSERVER_ADDRESS_URL,
 			      "Mapserver"]);
 	if ($devel_host) {
-	    push @mapserver_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/mapserver_address.cgi" : "http://www/~eserte/bbbike/cgi/mapserver_address.cgi", "Lokaler Mapserver"];
+	    push @mapserver_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/mapserver_address.cgi" : "http://www/~eserte/bbbike/cgi/mapserver_address.cgi", "Lokaler Mapserver", "is_local"];
 	}
 
 	my @mapext = $c->get_corners;
@@ -11903,21 +11903,39 @@ sub show_info {
 		}
 	    }
 	}
+	push @layers, "route"; # the "mark" is also in the "route" layer
 
 	# XXX maybe use Karte::trim_accuracy instead of int?
 	my $real_coords = join(",", map { int } anti_transpose($coords[0], $coords[1]));
 
 	for my $def (@mapserver_def) {
-	    my $mapserver_url = $def->[0];
+	    my($mapserver_url, $mapserver_label, $is_local) = @$def;
 	    my $url = "$mapserver_url/coords=" . $real_coords;
 	    $url .= "/mapext=" . join(",",@mapext);
 	    if (@layers) {
 		$url .= "/" . join("/", map { "layer=$_" } @layers);
 	    }
-	    $info_text->insert("end", $def->[1], "link$linkcount");
+	    $info_text->insert("end", $mapserver_label, "link$linkcount");
 	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
+
+	    if ($advanced && !$is_local) {
+		$info_text->insert("end", $mapserver_label . " (kurzer Link)", "link$linkcount");
+		$show_url->($linkcount, sub {
+				if (exists $long_url_to_short_url{$url}) {
+				    return $long_url_to_short_url{$url};
+				}
+				if (!eval { require WWW::Shorten; WWW:Shorten->import(); 1 }) {
+				    status_message("Das Modul WWW::Shorten ist nicht vorhanden.", "die");
+				}
+				my $short_url = makeashorterlink($url);
+				$long_url_to_short_url{$url} = $short_url;
+				$short_url;
+			    });
+		$info_text->insert("end", "\n");
+		$linkcount++;
+	    }
 	}
 
 	my @bbbike_cgi_def = ([$BBBike::BBBIKE_DIRECT_WWW,

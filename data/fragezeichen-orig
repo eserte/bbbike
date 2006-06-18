@@ -26,7 +26,6 @@ Storkower Straße zwischen Kniprode- und Greifswalder Straße	? 13453,14678 12722,
 Grellstr.	? 12722,15105 12434,15272 12252,15376 11941,15586
 #: last_checked: 2006-01-26
 Greifswalder Str.	? 11723,13630 11832,13795 11958,13986 11993,14037 12091,14179 12188,14321 12338,14532 12384,14600 12437,14680 12488,14753 12536,14827 12604,14927 12614,14941 12722,15105 12743,15138 12886,15346 12976,15483 13098,15592 13332,15765
-Gorkistr.	? 4423,20848 4265,20799 3915,20711 3569,20583 3329,20538 2621,20404 2517,20385 2435,20370 2348,20353 2311,20348
 #: XXX Bald fertig
 Vulkanstraße	? 15912,13153 15892,13534 15897,13942 15838,14319
 Alt-Friedrichsfelde (nur nördliche Seite) (wahrscheinlich nur hier, wo bereits eine Lücke ist)	? 18220,11710 17750,11771 17436,11791 17249,11802
@@ -254,7 +253,7 @@ Drenziger Zeile: mäßiger Asphalt, Q1	? 2937,19753 2800,19894
 #: XXX Eintrag von anonymous OK, aber keine Verknüpfung zum Netz:
 Dröpkeweg: Asphalt, Q0	? 13040,1639 13487,1651
 #: XXX Eintrag von anonymous und Holger Kohn OK, aber keine Verknüpfung zum Netz:
-Greulichstr.: mäßiges Kopfsteinpflaster, Q2	? 8156,1100 8528,1846
+Greulichstr.: mäßiges Kopfsteinpflaster, Q2	? 8156,1100 8203,1194 8528,1846
 #: XXX Eintrag von Roland Maier OK, aber keine Verknüpfung zum Netz:
 Straße 59: fester Sandweg, sehr uneben, Q2	? 12484,20996 12537,20856
 #: XXX Eintrag von Malte OK, aber keine Verknüpfung zum Netz:
@@ -688,6 +687,7 @@ Gabelberger Str.: Linksabbiegen in die Frankfurter Allee möglich?	? 14381,12205
 Matternstr.: Linksabbiegen in die Petersburger Str. möglich?	? 13579,12904
 #: unverified_by: Tagesspiegel-Beilage zu Gransee
 Gransee - Meseberg: Qualität?	? -7696,66033 -8112,65637 -8762,65250 -9437,65037 -9912,64300 -10287,64175 -10675,63237 -11088,62914
+#: XXX: laut Eintrag von Carsten (kcdr) fertig und asphaltiert
 Am Heidekampgraben: zurzeit Bauarbeiten (Grünzugumgestaltung, bis Frühjahr 2006 (2006-04-30)), Durchfahrt nicht möglich	? 15053,7966 14969,7580 15162,7281 15342,7013 15563,6683 15577,6518
 Polizei in der Friesenstr.: genaue Gebäude, genaue Funktion?	F:? 9828,8934 9828,8725 10183,8707 10228,8790 10230,8916
 #: XXX laut anonymen Eintrag Radweg; keine Verbindung zum restlichen Netz:
@@ -930,7 +930,7 @@ Gärtnereiring: Ist hier eine Fahrradstraße?	? -6671,12649 -6681,12702 -7108,1284
 Pfarrer-Theile-Str.: ist die Straße Richtung Gärtnereiring eine Sackgasse oder existiert eine Verbindung?	? -7108,12846 -7083,13152
 Blesener Zeile: existiert eine Verbindung zum Weg am Nordgraben?	? 3426,20642 3475,20656
 Leuenburger Zeile: Qualität? Teil einer ausgeschilderten Radroute?	? 2716,19776 2818,19606 2852,19546
-Waidmannsluster Damm - Gorkistr. - Leuenburger Zeile: Teil einer ausgeschilderten Route?	? 2205,20885 2404,20469 2435,20370 2463,20295 2596,20022 2716,19776
+Waidmannsluster Damm - Gorkistr. - Leuenburger Zeile: Teil einer ausgeschilderten Route?	? 2205,20885 2404,20469 2431,20383 2463,20295 2596,20022 2716,19776
 Damme (am Gutshof): Qualität (wahrscheinlich Kopfsteinpflaster)?	? 49971,99565 49795,99704 49737,99646
 #: XXX laut http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0511/nachricht2116.html "Asphaltbauweise mit kiesfarbener Splittoberfläche"
 Schloßpark Buch, an der Panke entlang: führt hier ein Radweg entlang? Qualität?	? 16294,25683 16384,25978 16593,26148
@@ -1292,7 +1292,7 @@ Zitadellenweg, westliches Ende: Qualität? für Radfahrer befahrbar?	? -2588,14543
 Zitadellenweg, östliches Ende: Qualität? für Radfahrer befahrbar?	? -1971,14610 -1662,14603 -1567,14494
 #: by: marcls
 #: note: laut ADFC-Karte wechselnd zwischen schlecht und mäßig, Treppe vor dem Teltower Damm
-Teltowkanalpromenade am Nordufer: Qualität (wechselnd zwischen normalen Parkweg, Trampelfpad und asphaltierten Abschnitten)? Treppen zu überwinden, wo genau?	? 3690,1436 3611,1285 3476,1169 3348,1078 3152,932 2740,546 2452,281 2195,42 2175,71 2126,53 2078,41 2079,-12 1924,-188 1630,-303 1453,-306
+Teltowkanalpromenade am Nordufer: Qualität (wechselnd zwischen normalen Parkweg, Trampelfpad und asphaltierten Abschnitten)? Treppen zu überwinden, wo genau?	? 3690,1436 3611,1285 3476,1169 3348,1078 3152,932 2784,589 2452,281 2195,42 2175,71 2126,53 2078,41 2079,-12 1924,-188 1630,-303 1453,-306
 #: note: vom Zug aus gesehen
 Mürow - Pinnow: Qualität? (zumindest entlang der Bahnlinie asphaltiert)	? 52072,72613 52455,72591 52492,72539 52842,72800 53374,72966 54305,73196 54677,73196 55225,73549 55450,73574
 Hohenlandin - Heinersdorf: Qualität?	? 58674,76657 59271,76828 61331,77132 62781,76706 63287,76613
@@ -1325,8 +1325,6 @@ Fähre Ketzin - Paretz: Qualität des Radwegs? Nur für Radfahrer oder auch für Aut
 Königstr. (Mariendorf): Qualität zwischen Gersdorfstr. und Rathausstr.?	? 8418,4432 8569,4459 8858,4498
 #: note: unklarer Beitrag (anonymous): schlechtes Verbundsteinpflaster Q3
 Rohrwallallee: Qualität?	? 26201,-863 26240,-866 26346,-863 26389,-932 26445,-1037 26656,-1147 26713,-1346 26780,-1468 26707,-1726 26662,-1916
-#: note: unklarer Beitrag (Timon): fester Sandweg Q2, aber lauf Luftbild sieht das eher nach Beton/Asphalt aus
-Am Stichkanal: Qualität? Verbindung zum Teltowkanalweg vorhanden?	? 2515,1131 2535,1102 2739,903 2699,821 2672,725 2740,655 2262,207
 Mentelinstr.: Kopfsteinpflaster: akzeptabel oder nur mäßig?	? 17839,7365 17633,7286 17352,7051 17262,6980
 Ernst-Ruska-Ufer: auch zwischen Wegedornstr. und Albert-Einstein-Str. offen?	? 19103,2442 18927,2431
 #: note: Eintrag von F. Reinhardt (mäßiges Kopfsteinpflaster), aber ich glaube, dass es asphaltiert ist.
@@ -1387,3 +1385,8 @@ Lüderitzstr.: Qualtität der Straße zwischen Transvaalstr. und Seestr.?	? 6231,16
 Eschengraben: gibt es hier eine Einbahnstraßenregelung und gilt diese auch für Radfahrer?	? 11771,17213 11805,17039 11831,16802 11776,16753 11621,16749 11441,16745 11281,16743 11018,16730
 Altdorfer Str.: besteht wieder eine Verbindung zwischen West- und Ostabschnitt? Qualität?	? 3154,2467 3732,2455
 Kienberg: Qualität? Straßenname?	? 19900,-2656 19827,-2688 19698,-2836 19418,-3703 19427,-3762
+#: XXX Angaben von Corinna Orth nicht ganz eindeutig:
+Gorkistr.: Radspur bereits fertig?	? 3216,20531 2995,20487 2615,20421
+Kirchstr. - An der Dorfkirche: Qualität (laut ADFC-Karte gut geeignet)?	? 8263,1061 8182,1026 8115,866 8173,839 8150,728
+An der Heilandsweide: Qualität (Abschnitt zwischen Marienfelder Allee und Kirchstr. laut ADFC-Karte gut geeignet)? Ist der Abschnitt östlich der Kirchstr. für Autofahrer gesperrt?	? 8070,1245 8203,1194 8305,1148 8539,1025 8687,950
+Am Stichkanal - Teltowkanalpromenade: existiert eine Verbindung, wo genau? Qualität?	? 2736,645 2784,589

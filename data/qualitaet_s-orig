@@ -1449,6 +1449,9 @@ Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068
 #: by: Paul (no email):
 Eulerstr.: Asphalt	Q0 9268,16228 9498,16480
 #: by: anonymous vvv
+#: note: laut ADFC-Karte ebenfalls "gut geeignet":
+Kirchstr. (Marienfelde): guter Asphalt	Q0 8263,1061 8305,1148 8383,1311 8482,1502 8578,1692 8626,1812
+Friedrich-Karl-Str.: Asphalt	Q0 5144,17629 5307,17582
 Brunswickenweg: guter Asphalt	Q0 17009,26756 16895,26866 16767,26991
 Gustav-Zahnke-Str.: Asphalt	Q0 14424,13587 14408,13513 14331,13537
 Eschengraben: schlechtes Kopfsteinpflaster	Q3 11771,17213 11805,17039 11831,16802 11776,16753 11621,16749 11441,16745 11281,16743 11018,16730
@@ -1844,7 +1847,7 @@ Roedernstr.: geteert	Q0 16208,15379 15534,15675
 #: by: Christoph Sachsenmaier:
 Ortlerweg: schlechtes Kopfsteinpflaster	Q3 3500,1587 3740,1918 3700,2045
 #: by: W.Oertel:
-Kögelstr.: mäßiges Kopfsteinpflaster	Q2 5221,17921 5367,17876
+Kögelstr.: mäßiges Kopfsteinpflaster	Q2 5211,17920 5367,17876
 #: by: Christian: vvv
 Wielandstr. (Friedenau): sehr guter Asphalt	Q0 6083,7582 6081,7215 6082,6965
 Fregestr.: guter Asphalt	Q0 5897,6799 5957,6889 5957,6970 5958,7220 5955,7406
@@ -2624,8 +2627,8 @@ Obersteiner Weg: Beton	Q0 13431,17380 13525,17304
 #: note: laut ADFC-Karte im westlichen Teil gut, im östlichen Teil mäßig geeignet:
 Thiesstr.: Asphalt	Q0 13023,17379 13115,17410 13251,17525 13290,17570
 #: note: auch laut ADFC-Karte gut geeignet, laut nic (kleene...) Beton, ein weiterer Eintrag meinte ebenfalls "Asphalt":
-Gäblerstr.: Asphalt	Q0 13146,17016 13029,17185
-Gäblerstr.: mäßiger Asphalt	Q1 13029,17185 13023,17379 13011,17470
+Gäblerstr.: Asphalt	Q0 13146,17016 13036,17167
+Gäblerstr.: mäßiger Asphalt	Q1 13036,17167 13033,17211 13023,17379 13011,17470
 #: note: laut ADFC-Karte gut geeignet: vvv
 Neukirchstr.: loser Sandweg	Q2 12896,18317 12752,18387
 Neukirchstr.: Kopfsteinpflaster	Q2 12752,18387 12562,18483
@@ -2643,7 +2646,7 @@ Bredowstr.: mäßiges Kopfsteinpflaster	Q2 6019,13320 6016,13511 6016,13702 6021,1
 #: by: Handan (aktas):
 Heilbronner Str.: Asphalt	Q0 6131,9241 6164,9329 6127,9529 6109,9729
 #: by: Ritter:
-Wigandstaler Str.: Asphalt	Q0 13043,16942 12806,17317
+Wigandstaler Str.: Asphalt	Q0 13043,16942 12923,17133 12806,17317
 #: by: W.E. Coyote: vvv
 Am Espenpfuhl: asphaltiert	Q0 17293,1309 17567,910 17719,683
 Am Espenpfuhl: gutes Kopfsteinpflaster	Q1 17719,683 18075,128
@@ -3063,12 +3066,12 @@ Hieronymusweg: Beton	Q0 2563,21039 2717,21107
 Köpenzeile: mäßiger Beton	Q1 23187,3773 23241,3705 23337,3500 23452,3205 23481,3107 23541,2841 23567,2739 23551,2531
 #: by: Jörn Busch: vvv
 Tile-Brügge-Weg: schlechter Asphalt	Q2 2404,20469 2603,20505 2804,20539 2989,20572 3141,20600 3214,20610 3241,20613 3307,20717 3327,20758
-Eschachstr.: Verbundsteinpflaster	Q1 2404,20469 2435,20370 2463,20295
+Eschachstr.: Verbundsteinpflaster	Q1 2404,20469 2431,20383 2463,20295
 (Waidmannsluster Damm - Eschachstr./Gorkistr.): Verbundsteinpflaster	Q1 2205,20885 2404,20469
 (Eschachstr./Gorkistr. - Leuenberger Zeile): Verbundsteinpflaster	Q1 2463,20295 2596,20022 2716,19776
 Im Erpelgrund: Verbundsteinpflaster	Q1 -1581,22233 -1485,22260 -1288,22210 -918,22105 -827,22039 -583,21960 -385,21921
 Im Erpelgrund: Verbundsteinpflaster	Q1 -354,21997 -540,22053 -735,22103 -918,22105
-(Weg am Nordgraben): mäßiger fester Sandweg	Q2 3569,20583 3475,20656 3327,20758 3062,20898 2916,20870 2580,20805
+(Weg am Nordgraben): mäßiger fester Sandweg	Q2 3563,20589 3475,20656 3327,20758 3062,20898 2916,20870 2580,20805
 #: by: ^^^
 #: by: Peter Störzel: vvv
 Goldregenstr.: asphaltiert	Q0 24448,10098 24340,10138 24154,10188 23726,10308
@@ -3294,7 +3297,7 @@ Lauterberger Str.: Kopfsteinpflaster	Q2 12144,5737 12134,5954 12132,5993 12099,6
 #: by: Sven Voss:
 Waldkraiburger Str.: Asphalt	Q0 12608,5046 12492,4995 12283,4971
 #: by: Verena (kauffmann):
-Illerzeile: mäßiger Asphalt	Q1 2704,20031 2659,20080 2567,20239 2541,20313 2530,20345 2517,20385
+Illerzeile: mäßiger Asphalt	Q1 2704,20031 2659,20080 2567,20239 2541,20313 2530,20345 2515,20399
 #: by: Carsten Jost:
 Herkomerstr.: guter Asphalt	Q0 14563,9106 14446,8983
 #: by: R. Bensmann:
@@ -3546,6 +3549,11 @@ Langenbeckstr.: fester Sandweg, nur 13km/h	Q3 24673,9923 24770,9871 25004,9737
 Hattenheimer Str. (Tempelhof): Asphalt	Q0 11590,6026 11655,6189 11625,6248
 #: by: Volkmar (vloebe):
 Riastr.: schlechtes Kopfsteinpflaster	Q3 18201,8984 18247,9158
+#: by: TCBerlin:
+#: note: widersprüchlicher und unklarer Beitrag von Timon: fester Sandweg Q2
+Am Stichkanal: Asphalt	Q0 2515,1131 2535,1102 2739,903 2699,821 2672,725 2736,645 2262,207
+#: by: Jessica (elgar):
+Holzkircher Str.: Asphalt, viele Schlaglöcher	Q1 12850,17084 12923,17133 13033,17211
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

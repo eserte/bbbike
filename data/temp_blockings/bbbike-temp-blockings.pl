@@ -483,11 +483,11 @@ EOF
        text  => 'Gleimstraße zwischen Schönhauser Allee und Ystarder Straße in beiden Richtungen gesperrt, Bauarbeiten. Dauer: bis voraussichtlich 07.07.2004',
        type  => 'handicap',
      },
-     { from  => 1087509600, # 2004-06-18 00:00
-       until => 1087767000, # 2004-06-20 23:30
-       file  => 'badstr.bbd',
-       text  => 'Badstr. (Wedding) in beiden Richtungen, zwischen Pankstr. und Behmstr. Veranstaltung, Straße vollständig gesperrt (bis 20.06. 23:30 Uhr) Seifenkistenrennen und Straßenfest in der Badstr.',
+     { from  => undef, # 
+       until => 1150666200, # 2006-06-18 23:30
+       text  => 'Badstr. (Wedding) in beiden Richtungen, zwischen Pankstr. und Behmstr. Veranstaltung, Straße vollständig gesperrt (bis 18.06.2006 23:30 Uhr) Seifenkistenrennen und Straßenfest in der Badstr.',
        type  => 'gesperrt',
+       file  => 'badstr.bbd',
      },
      { from  => 1087462800, # 2004-06-17 11:00
        until => 1087765200, # 2004-06-20 23:00

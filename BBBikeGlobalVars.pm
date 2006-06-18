@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeGlobalVars.pm,v 1.36 2006/04/21 20:24:40 eserte Exp $
+# $Id: BBBikeGlobalVars.pm,v 1.36 2006/04/21 20:24:40 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2003,2004 Slaven Rezic. All rights reserved.
@@ -221,7 +221,8 @@ use vars qw(%busy_watch_args);
 use vars qw($pp_color);
 use vars qw($xadd_anchor_type $yadd_anchor_type %label_spaceadd);
 use vars qw(@normal_stack_order @set_stack_order);
-use vars qw(%perlmod_install_advice_seen);
+use vars qw(%perlmod_install_advice_seen
+	    %long_url_to_short_url);
 
 use enum qw/:EXPORT_TXT_ FULL SIMPLIFY_NAME SIMPLIFY_ANGLE SIMPLIFY_NAME_OR_ANGLE SIMPLIFY_AUTO/;
 

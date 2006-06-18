@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.124 2006/05/23 21:12:54 eserte Exp $
+# $Id: Makefile.PL,v 1.124 2006/05/23 21:12:54 eserte Exp eserte $
 
 use 5.005;
 
@@ -131,6 +131,8 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
    'für das Erzeugen von palmdoc-Dateien mit der Routenbeschreibung'],
   [qw/Astro::Sunrise	0	all	0	base/,
    'Anzeige des Sonnenuntergangs/-aufgangs im Info-Fenster'],
+  [qw/WWW::Shorten	0	all	0	base/,
+   'Kürzen der langen Mapserver-Links im Info-Fenster'],
   [qw/File::ReadBackwards 0	all	0	devel/,
    'LogTracker plugin, Edititeren'],
   [qw/Date::Pcalc	0	all	0	devel/,
