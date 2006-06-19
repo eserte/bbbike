@@ -779,7 +779,9 @@ ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd:	fragezeichen ${DATADIR}/strassen $
 # CHECKS
 
 check-forever:
-	nice forever -30 -i make check all; alarm -nicedown; xmessage "check-forever failed"
+	-nice forever -30 -i make check all
+	@-alarm -nicedown
+	xmessage "check-forever failed"
 
 .OPTIONAL: .check_bbbike-temp-blockings-optimized
 

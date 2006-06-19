@@ -1144,7 +1144,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 38264,50086 38035,49183
-userdel	q4 38264,50086 38864,51295
+userdel	q4 38264,50086 38845,51258
 EOF
      },
      { from  => 1101942000, # 2004-12-03 06:00
@@ -1660,7 +1660,7 @@ EOF
        text  => 'L 23; (Joachimsthal-Templin); OD Joachimsthal Neubau Durchlass Vollsperrung 29.03.2005-03.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 32966,64019 33099,63917 33254,63446
+userdel	q4 32966,64019 33080,63939 33254,63446
 EOF
      },
      { from  => 1111532400, # 2005-03-23 00:00
@@ -3419,7 +3419,7 @@ EOF
        text  => 'L 23 Töpferstr. OD Joachimsthal, Kno. Angermünder Str. Ausbau Kreisverkehrsplatz Vollsperrung 01.11.2005-15.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 33099,63917 33254,63446
+userdel	q4 33080,63939 33254,63446
 EOF
      },
      { from  => 1133823600, # 2005-12-06 00:00
@@ -3607,7 +3607,7 @@ userdel	2 23571,10990 24389,10836
 EOF
      },
      { from  => 1150092737, # 2006-06-12 08:12
-       until => 1167605999, # 2006-12-31 23:59
+       until => 1150737175, # 1167605999 2006-12-31 23:59, jetzt nur noch "Engstellensignalisierung"
        text  => 'Schlichtallee (Rummelsburg) in Richtung Nord, auf der südlichen Bahnbrücke Baustelle; Fahrtrichtung gesperrt (bis Ende 12/2006) ',
        type  => 'handicap',
        source_id => 'IM_002885',
