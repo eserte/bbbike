@@ -246,8 +246,6 @@ Indrastr.: Kopfsteinpflaster, Q2	? 12233,18170 12269,18042 12245,17888
 Okarinastr.: Schotter, Mulden in der Straße, Q3	? 11571,20392 11434,20643 11678,20882
 #: XXX Eintrag von Sandy Kusche OK, aber keine Verknüpfung zum Netz, außerdem in Brandenburg:
 Mahlsdorfer Allee (Waldesruh, Hoppegarten): sehr guter Asphalt, Q0	? 25282,9034 25745,9081 25892,9098
-#: XXX anonymer Eintrag OK, aber keine Verknüpfung zum Netz
-Gelsenkircher Str.: Asphalt, Q0, wenig Autoverkehr	? -5562,15187 -5109,15137
 #: XXX Eintrag von Dirk Schmidt OK, aber keine Verknüpfung zum Netz:
 Vietzer Zeile: guter Asphalt, Q0	? 2818,19606 2937,19753
 #: XXX Eintrag von Hans-Peter Ott OK, aber keine Verknüpfung zum Netz:
@@ -285,9 +283,11 @@ Albrechts Teerofen - Stopler Weg (ehem. Autobahnbrücke): offen für Radfahrer? Qu
 Arkenberge: wo genau ist die Durchfahrt für Autos gesperrt	? 10402,26369 10318,26399 10203,26387 10120,26363
 Neuendorf (Nl) wird ab 2002-08-18 geschlossen; neu: 'Cottbus-Willmersdorf Nord' und 'Teichland'. Grund: Umverlegung der Trasse (betr. RE1 und RE18)	?? 80691,-66664 80603,-64961 81213,-63504 82460,-63229
 Hindenburgdamm - Teltowkanal: existiert eine Verbindung durch den Schloßpark Lichterfelde? Qualität?	? 4596,3738 4970,3684
+#: XXX laut Corinna O. an der Koordinate 4483,21174 mit Zäunen verschlossen:
 Entlang der Industriebahn: laut ADFC-Karte befahrbar, Qualität?	? 5138,21358 4717,21199 4412,21154 4208,21159
 #: XXX laut anonymen Eintrag "mäßig":
 Am Packereigraben: laut ADFC-Karte befahrbar, Qualität?	? 4208,21159 3979,21211
+#: XXX laut Corinna O. gut befahrbar, eigene Radspur, fester Sand (Q1). Die gesamte Strecke?
 Waldpark Steinberg: laut ADFC-Karte befahrbar, Qualität?	? 3979,21211 3718,21489 3636,21576 3553,21665 3406,21911 3142,22170
 Weg am Tegeler Fließ: Durchfahrt möglich? Qualität, wahrscheinlich Waldweg Q2?	?? 7687,24407 6966,24090 6259,23947
 #: XXX Das ist ein nicht behindertengerechter Abschnitt des BD. Möglicherweise auch nicht fahrradgerecht.
@@ -321,7 +321,7 @@ Am Oder-Spree-Kanal, Schwarzer Weg nach Schmöckwitz: Qualtität?	? 30546,-3072 29
 Straßenführung und Straßennamen im Wohnpark an der Buga?	? -13820,1095 -13907,1223 -13801,1414 -14016,1563
 westlich des Sacrower Sees - Försterei Zedlitz - zur Straße nach Krampnitz: Qualität? (wahrscheinlich Waldweg, Q2)	? -9342,4943 -9430,4935 -9678,4913 -10147,4870 -10616,4399 -10912,3738 -11571,3187
 Grünanlage Kolonie Bäketal - Bäkepark: befahrbar, Qualität (anscheinend normale Parkwege, unbeleuchtet)?	? 5236,4078 5068,4261 4846,4592 4802,4921
-Spekteweg, Spektewiesen: Qualität?	? -4061,15164 -4481,14808 -4631,14811 -5118,15060 -5651,15103 -5679,14999 -5969,15040 -6176,15176 -6252,15228 -6498,15301 -6824,15274 -6821,15374
+Spekteweg, Spektewiesen: Qualität?	? -4061,15164 -4481,14808 -4631,14811 -5146,15059 -5651,15103 -5679,14999 -5969,15040 -6176,15176 -6252,15228 -6498,15301 -6824,15274 -6821,15374
 Am Spektesee, nördlicher Weg: Qualität?	? -5651,15103 -5709,15109 -5749,15149 -5697,15246 -5728,15307 -5895,15313 -6116,15254
 An der Felgenlake, Spektelake: Qualität?	? -6116,15254 -6550,15383 -6821,15374 -7035,15432 -7147,15551 -7310,15526 -7506,15938
 Spektelake - Finkenkruger Weg: genaue Wegführung? Qualität?	? -7310,15526 -7384,15643
@@ -338,7 +338,8 @@ Spandau: Kurstr. - Galenstr. - Am Bahnhof Spandau - etc.: sieht als Umfahrung fü
 Tempelhofer Veloroutenpläne: Albulaweg - Hochspannungsweg: genaue Lage, Qualität etc.	? 10123,1996 10473,1900 11099,1758 11321,1936
 Tempelhofer Veloroutenpläne: Muschelkalkweg: genaue Lage, Qualität?	? 11099,1758 11112,1428 10699,1256 10759,1112
 Fortsetzung der Wolziger Zeile bis zur B101: Qualität? Kann die B101 gequert werden?	? 9608,-2642 9522,-2640 9117,-2636 8073,-2475 6651,-1299
-Mauerweg zwischen Lichtenrade und Buckow: existiert eine Strecke, wie ist die Qualität? Vielleicht geht es auch weiter Richtung Rudow? (laut "Berliner Umland" witterungsabhängige Strecke)	? 11794,550 12519,794 12984,1011
+#: XXX von anima43 folgende Einträge (aber nicht sicher für diesen Abschnitt): fester Sandweg, Q2, viele Fußgänger, viele Hunde q4 (aber ich würde wahrscheinlich eher q2 nehmen):
+Mauerweg zwischen Drusenheimer Weg und Buckower Damm: existiert eine Strecke, wie ist die Qualität? Vielleicht geht es auch weiter Richtung Rudow? (laut "Berliner Umland" witterungsabhängige Strecke)	? 11794,550 12519,794 12984,1011
 Mauerweg Rudow: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)? Ist tatsächlich ein Umweg am "Dörferblick" notwendig?	? 14996,1564 15252,790 15403,416 15621,-193 15125,-859 16018,-1275 16248,-844
 Mauerweg Rudow: Qualität (laut "Berliner Umland" gut geeigneter Radweg)?	? 16248,-844 17054,-597 17203,-609 18099,-371 18609,375 18668,1021 18610,1077
 Mauerweg Rudow: Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? 18677,1249 18614,1453 18584,1575 18484,1750 18340,1969 18378,2246
@@ -924,8 +925,8 @@ Erschließungsstr. geplant (laut MoPo 15.10.05)	? 1312,9220 1267,9267 1264,9270
 Zerndorfer Weg: Qualität?	? 2520,26115 2641,25981 2912,25790 3273,25516 3439,25316
 Grenzweg (Lichtenrade): laut Googlemaps geht es hinter der Illigstraße weiter (Parkplatz)?	? 9456,-1303 9273,-1297
 Semliner Str.: geht es nördlich der Kleinschewskystr. weiter?	? 22274,7378 22344,7659
-Gärtnereiring: Ist hier eine Fahrradstraße?	? -6671,12649 -6681,12702 -7108,12846 -7192,12874 -7163,13142 -7161,13176
-Pfarrer-Theile-Str.: ist die Straße Richtung Gärtnereiring eine Sackgasse oder existiert eine Verbindung?	? -7108,12846 -7083,13152
+Gärtnereiring: Ist hier eine Fahrradstraße?	? -6675,12632 -6692,12669 -7141,12821 -7237,12848 -7195,13216 -7183,13324
+Pfarrer-Theile-Str.: ist die Straße Richtung Gärtnereiring eine Sackgasse oder existiert eine Verbindung?	? -7141,12821 -7103,13191
 Blesener Zeile: existiert eine Verbindung zum Weg am Nordgraben?	? 3426,20642 3475,20656
 Leuenburger Zeile: Qualität? Teil einer ausgeschilderten Radroute?	? 2716,19776 2818,19606 2852,19546
 Waidmannsluster Damm - Gorkistr. - Leuenburger Zeile: Teil einer ausgeschilderten Route?	? 2205,20885 2404,20469 2431,20383 2463,20295 2596,20022 2716,19776
@@ -1391,3 +1392,4 @@ Nördlich des Grimnitzsees: Qualität?	? 33689,65780 34018,65700 34347,65737 35176
 Neugrimnitz - Ziethen: Qualität?	? 38272,63836 38577,63641 38759,63647 39131,63537 39637,63244 39741,63220 39832,63263
 Neugrimnitz - B198: Qualität?	? 39637,63244 39576,63074 39521,62861 39503,62647 39375,62148 39180,61605 39156,61459 39003,61246
 B2 - Chorin: Qualität?	? 41847,54619 41806,54725 41636,54890 41538,55140 41301,55146 41093,55310 41173,55516
+Rosentreterpromenade: Qualität?	? 4423,20848 4208,21159

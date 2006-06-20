@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: navigon_rte_to_bbd.pl,v 1.3 2006/06/19 19:46:10 eserte Exp $
+# $Id: navigon_rte_to_bbd.pl,v 1.4 2006/06/20 19:45:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -28,7 +28,13 @@ use Karte::Polar;
 
 my($lastx,$lasty);
 while(<>) {
-    my(undef,undef,undef,$plz1,$ort,$plz2,$street,undef,undef,undef,$lon,$lat,undef) = split /\|/;
+    my @row = split /\|/;
+    my($plz1,$ort,$plz2,$street,$lon,$lat);
+    if (@row == 18) {
+	(undef,undef,undef,undef,$plz1,$ort,$plz2,$street,undef,undef,undef,$lon,$lat,undef,undef,undef,undef,undef) = @row;
+    } else { # older format?
+	(undef,undef,undef,$plz1,$ort,$plz2,$street,undef,undef,undef,$lon,$lat,undef) = @row;
+    }
     my $name;
     if ($street ne "-") {
 	$name = "$street ($ort)";

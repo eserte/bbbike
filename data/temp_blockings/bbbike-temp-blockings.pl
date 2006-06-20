@@ -4758,4 +4758,20 @@ EOF
 userdel	2 26639,-17861 26752,-17872 26832,-17882
 EOF
      },
+     { from  => 1150840800, # 2006-06-21 00:00
+       until => 1160949600, # 2006-10-16 00:00
+       text  => 'K 6828 L 164 Altfriesack-Wuthenow OT Seehof, Dorfstr. Kanalarbeiten Vollsperrung 22.06.2006-15.10.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -28368,51517 -28736,52387
+EOF
+     },
+     { from  => 1149631200, # 2006-06-07 00:00
+       until => 1151704800, # 2006-07-01 00:00
+       text  => 'K 7221 Woltersdorf-Liebätz Einmündung zur K7220 (Ruhldorf-Liebätz) Straßen- u. Radwegebau Vollsperrung 08.06.2006-30.06.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -3584,-29888 -3733,-29501
+EOF
+     },
     );
