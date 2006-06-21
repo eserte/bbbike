@@ -14,6 +14,13 @@ Legend:
 
 =over
 
+=item * (M5)
+
+Bug: drawing city streets only -> choosing "Aktive Sperrungen zeichnen und
+beachten" -> drawing also region streets -> now the "Aktive Sperrungen" are
+lost! They have to re-build if the checkbox is set to on and make_net is
+called on something street-like
+
 =item * (H2)
 
 category_* directives in bbd files have side effects: the global
