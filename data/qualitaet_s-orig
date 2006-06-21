@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.126 2006/06/11 21:47:42 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.127 2006/06/21 20:57:20 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1872,15676
@@ -513,8 +513,9 @@ Maienwerderweg: teils Waldweg (OK), teils mäßiger Asphalt	Q1 2239,18225 1549,177
 # XXX laut Thomas Thomas ist der südliche Abschnitt "schmal, kurvig und enthät leider eine tiefsandige Passage" (Q2-Q3?), nördlich des Maienwerder Wegs ist er "breit und zügig befahrbar" (Q1?)
 #: unverified_by ADFC-Karte
 (Der Breite Weg): wahrscheinlich Waldweg	Q2 1464,17373 1549,17718 1687,18141
-#: unverified_by ADFC-Karte
-(Uferweg): wahrscheinlich Waldweg	Q2 -389,17140 -280,17229 -266,17335 -215,17385 -141,17377 61,17495 110,17489 151,17537 187,17663 235,17704 260,17788 258,17880 381,18186 416,18386 448,18476 496,18514 586,18540 680,18631 757,18673 768,18742 970,18919 1006,18972 1122,19036 1189,19018 1200,18969 1369,18958 1457,18969 1490,18950
+#: by: Thomas Heuving
+#: note: laut ADFC-Karte mäßig befahrbar
+(Uferweg): gut befahrbarer Waldweg	Q1 -389,17140 -280,17229 -266,17335 -215,17385 -141,17377 61,17495 110,17489 151,17537 187,17663 235,17704 260,17788 258,17880 381,18186 416,18386 448,18476 496,18514 586,18540 680,18631 757,18673 768,18742 970,18919 1006,18972 1122,19036 1189,19018 1200,18969 1369,18958 1457,18969 1490,18950
 #: unverified_by ADFC-Karte
 (Schwarzer Weg - Jörsstr.): wahrscheinlich Waldweg	Q2 -792,18564 -828,18556 -955,18506 -1033,18504 -1224,18392 -1329,18382
 Sembritzkistr.: mäßiges Kopfsteinpflaster	Q2 6872,4940 6945,5060 7186,5453 7203,5488 7252,5583 7230,5696
@@ -1451,6 +1452,7 @@ Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068
 #: by: Paul (no email):
 Eulerstr.: Asphalt	Q0 9268,16228 9498,16480
 #: by: anonymous vvv
+Boschpoler Str.: guter Asphalt	Q0 20802,13711 20661,13725 20536,13741 20420,13757 20210,13776
 Gelsenkircher Str.: Asphalt	Q0 -5600,15214 -5361,15195 -5251,15185 -5135,15172
 Siegener Str.: guter Asphalt	Q0 -5039,15618 -5115,15348 -5132,15249 -5135,15172 -5146,15059
 Ulrikenstr.: Beton	Q0 -5278,13606 -5254,13542 -5217,13446 -5161,13308 -5137,13248 -5073,13097
@@ -2297,7 +2299,7 @@ Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18703
 #: by: Torsten Fleischmann:
 Zepernicker Str.: Asphalt	Q0 18178,26668 17707,26410 17423,26253 17218,26121
 #: by: Thomas Specht:
-Eckermannstr.: Asphalt	Q0 20473,12212 20503,12432 20546,12815 20561,12925 20598,13219 20633,13497 20692,13984
+Eckermannstr.: Asphalt	Q0 20473,12212 20503,12432 20546,12815 20561,12925 20598,13219 20633,13497 20661,13725 20692,13984
 #: by: Joern (js): vvv
 Gaudystr.: Kopfsteinpflaster, schlechtere Qualität	Q2 10949,15674 10759,15622 10473,15549
 Greifenhagener Str.: Asphalt	Q0 11093,15771 11140,15859 11162,15903 11190,15950 11232,16037
@@ -3436,7 +3438,7 @@ Marienfelder Str.: Kopfsteinpflaster	Q2 10853,-1475 10981,-1564 11068,-1574
 #: note: laut ADFC-Karte (alt und neu) mäßig geeignet, aber Widerspruch von Martin ("uneingeschränkt zu empfehlen")
 Altonaer Str.: guter Asphalt	Q0 -4932,13887 -4776,13869 -4298,13810 -3971,13755 -3701,13719
 #: by: smike:
-Prignitzstr.: guter Asphalt	Q0 20449,14011 20393,13527 20364,13255 20334,12993 20331,12920 20271,12458 20252,12262
+Prignitzstr.: guter Asphalt	Q0 20449,14011 20420,13757 20393,13527 20364,13255 20334,12993 20331,12920 20271,12458 20252,12262
 #: by: Andreas Grünky:
 Nikolaus-Bares-Weg: Verbundsteinpflaster	Q1 7234,1045 7437,1144
 #: by: Bryan (gunder): vvv
@@ -3577,7 +3579,13 @@ Thiloweg: Kopfsteinpflaster	Q2 4591,20342 4622,20292
 #: by: ^^^
 #: by: Corinna Orth: vvv
 Am Rathauspark: grobsteiniges Kopfsteinpflaster	Q2 4879,20427 4718,20341 4622,20292 4492,20214
+#: note: laut anonymen Eintrag "mäßig", laut ADFC-Karte gut geeignet:
+Am Packereigraben: gut befahrbar, eigene Radspur, fester Sand	Q1 4208,21159 3979,21211
+#: note: laut ADFC-Karte mäßig geeignet:
+Waldpark Steinberg: gut befahrbar, eigene Radspur, fester Sand	Q1 3979,21211 3718,21489 3636,21576 3553,21665
 #: by: ^^^
+#: by: Nicole Knaup:
+Rethelstr.: guter Asphalt	Q0 14739,8919 14681,8859 14619,8794
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

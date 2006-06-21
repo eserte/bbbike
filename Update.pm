@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Update.pm,v 1.22 2006/06/16 20:54:19 eserte Exp $
+# $Id: Update.pm,v 1.23 2006/06/21 19:30:43 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2003,2005,2006 Slaven Rezic. All rights reserved.
@@ -74,8 +74,6 @@ sub update_http {
     my(%modified) = %{$args{-modified}};
     my $ua;
     eval {
-	local $SIG{__DIE__};
-	local $SIG{__WARN__};
 	require LWP::UserAgent;
 	$main::public_test = $main::public_test; # peacify -w
 	if ($main::public_test) {
@@ -173,8 +171,6 @@ sub update_http {
 		    print STDERR "\n", $res->as_string;
 		    my $text = $res->error_as_HTML;
 		    eval {
-			local $SIG{__DIE__};
-			local $SIG{__WARN__};
 			require HTML::FormatText;
 			require HTML::TreeBuilder;
 			my $tree = HTML::TreeBuilder->new->parse($text);
@@ -299,16 +295,16 @@ sub bbbike_data_update {
 
     my $rootdir = "$FindBin::RealBin";
 
-    local $SIG{__DIE__} = sub { warn $_[0]; main::status_message($_[0], 'err') };
-    local $SIG{__WARN__} = sub { warn $_[0]; main::status_message($_[0], 'info') };
+    my $my_die = sub { warn $_[0]; main::status_message($_[0], 'die') };
+    my $my_warn = sub { warn $_[0]; main::status_message($_[0], 'info') };
 
     # sichergehen, dass nicht die Originaldateien überschrieben werden...
-    die "FATAL: original directory, do not overwrite"
+    $my_die->("FATAL: original directory, do not overwrite")
 	if (-e "$rootdir/data/.original" ||
 	    -e "$rootdir/data/.archive");
-    die "FATAL: suspicious rootdir: $rootdir"
+    $my_die->("FATAL: suspicious rootdir: $rootdir")
 	if ($rootdir =~ m|/home/e/eserte/src/bbbike|);
-    die "FATAL: RCS in datadir detected"
+    $my_die->("FATAL: RCS in datadir detected")
 	if (-e "$rootdir/data/RCS");
 
  TRY_CVS: {
@@ -319,8 +315,6 @@ sub bbbike_data_update {
 	    require Cwd;
 	    my $old_cwd = Cwd::cwd();
 	    eval {
-		local $SIG{__DIE__};
-		local $SIG{__WARN__};
 		chdir "$rootdir/data"
 		    or main::status_message("Can't chdir to data dir: $!", "die");
 		# XXX Do it in background!
@@ -331,20 +325,18 @@ sub bbbike_data_update {
 		    main::status_message("cvs update erfolgreich durchgelaufen", "info");
 		}
 	    };
-	    chdir $old_cwd or warn $!;
+	    chdir $old_cwd or $my_warn->($!);
 	    main::reload_all();
 	    return;
 	}
     }
 
-    die "FATAL: Makefile in datadir detected"
+    $my_die->("FATAL: Makefile in datadir detected")
 	if (-e "$rootdir/data/Makefile");
 
  TRY_RSYNC: {
 	if ($protocol eq 'rsync') {
 	    eval {
-		local $SIG{__DIE__};
-		local $SIG{__WARN__};
 		$BBBike::BBBIKE_UPDATE_DATA_RSYNC = $BBBike::BBBIKE_UPDATE_DATA_RSYNC; # peacify -w
 		update_rsync(-dest => $rootdir,
 			     -src  => $BBBike::BBBIKE_UPDATE_DATA_RSYNC,
@@ -352,7 +344,7 @@ sub bbbike_data_update {
 	    };
 	    if ($@) {
 		if ($protocol ne 'best') {
-		    die $@;
+		    $my_die->($@);
 		}
 		last TRY_RSYNC;
 	    }

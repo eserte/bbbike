@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: berlinmap2hafas,v 1.56 2006/02/01 23:10:30 eserte Exp $
+# $Id: berlinmap2hafas,v 1.57 2006/06/21 21:04:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2001,2004,2005 Slaven Rezic. All rights reserved.
@@ -352,10 +352,13 @@ LINES: while(defined($_ = nextline())) {
     if (!@coord) {
 	$no_coords++;
 	if ($strict) {
-	    add_error "No coords in line $_";
+	    add_error "Neither cat nor coords in line $_";
 	}
     }
     my $cat = shift @coord;
+    if (!@coord && $strict) {
+	add_error "No coords in line $_";
+    }
 
     if ($cat eq 'St;' && $auto_descent_from_mount) {
 	# Steigungen: automatische Erzeugung der Gegenrichtung

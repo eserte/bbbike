@@ -4296,7 +4296,7 @@ userdel	1 9248,9350 9235,9111 9235,9051 9227,8890 9222,8787
 EOF
      },
      { from  => 1146701340, # 2006-05-04 02:09
-       until => 1159189200, # 2006-09-25 15:00
+       until => 1150916294, # 2006-09-25 15:00 1159189200 (moved)
        text  => 'Schulzendorfer Straße zwischen Ruppiner Chaussee und Blisenkrautstr. in beiden Richtungen Baustelle, gesperrt bis 25.09.2006 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -4780,6 +4780,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -22215,9500 -22510,9372 -23467,9217 -23807,9279 -24319,9296 -24594,9168 -25265,9000 -25456,8850 -25658,8777 -26243,8485 -26774,7951 -27468,7711
+EOF
+     },
+     { from  => 1150916248, # 2006-06-21 20:57
+       until => 1159653599, # 2006-09-30 23:59
+       text  => 'Schulzendorfer Str. (Reinickendorf) in beiden Richtungen zwischen Damkitzstr. und Ruppiner Chaussee Baustelle, Straße vollständig gesperrt (bis Ende 09.2006)',
+       type  => 'gesperrt',
+       source_id => 'INKO_82301_COPY_1',
+       data  => <<EOF,
+userdel	2 -862,22946 -596,23009
 EOF
      },
     );

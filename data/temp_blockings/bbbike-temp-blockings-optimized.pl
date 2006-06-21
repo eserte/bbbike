@@ -586,15 +586,7 @@ userdel	q4 43584,20871 44596,21287
        undef,
        undef,
        undef,
-       {
-         'until' => 1159189200,
-         'text' => 'Schulzendorfer Straße zwischen Ruppiner Chaussee und Blisenkrautstr. in beiden Richtungen Baustelle, gesperrt bis 25.09.2006 15:00 Uhr ',
-         'from' => 1146701340,
-         'data' => 'userdel	2 -862,22946 -596,23009
-userdel	2 -862,22946 -1254,22853
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'source_id' => 'IM_002733',
@@ -858,6 +850,15 @@ userdel	2 8595,12066 8581,11896 8571,11846
          'text' => 'Bis 31.08.2006 Vollsperrung der L 862 zwischen Falkenrehde und Ketzin. ',
          'from' => 1150871204,
          'data' => 'userdel	2 -22215,9500 -22510,9372 -23467,9217 -23807,9279 -24319,9296 -24594,9168 -25265,9000 -25456,8850 -25658,8777 -26243,8485 -26774,7951 -27468,7711
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_82301_COPY_1',
+         'until' => 1159653599,
+         'text' => 'Schulzendorfer Str. (Reinickendorf) in beiden Richtungen zwischen Damkitzstr. und Ruppiner Chaussee Baustelle, Straße vollständig gesperrt (bis Ende 09.2006)',
+         'from' => 1150916248,
+         'data' => 'userdel	2 -862,22946 -596,23009
 ',
          'type' => 'gesperrt'
        }
