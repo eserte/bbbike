@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbr2bbd,v 1.8 2005/06/06 21:32:55 eserte Exp $
+# $Id: bbr2bbd,v 1.9 2006/06/21 22:32:34 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -115,7 +115,7 @@ sub convert_one_file {
 	    ($name) = fileparse($in_file, "\\..+\$");
 	}
 	my $cat = $opt{cat};
-	my $str = Route::as_strassen($in_file, name => $name, fuzzy => 1);
+	my $str = Route::as_strassen($in_file, name => $name, cat => $cat, fuzzy => 1);
 	if (!$str) {
 	    die "Die Datei <$in_file> enthält keine Route."
 	}

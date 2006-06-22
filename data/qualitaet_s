@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.127 2006/06/21 20:57:20 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.127 2006/06/21 20:57:20 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1872,15676
@@ -456,7 +456,7 @@ Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22473,11272 22513,11440 22477,11501 22
 Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22271,11736 22477,11501
 Dorfstr.: Kopfsteinpflaster	Q2 22271,11736 22104,11952 22215,12031
 zwischen Dorfstr. und Bhf. Wuhletal: Asphalt	Q0 22104,11952 21990,11912 21936,12022 22008,12073 21970,12153
-Biesdorfer Promenade: mäßiger Asphalt	Q1 20975,12620 20843,12677 20693,12742 20546,12815 20331,12920 20137,13016 20076,13034
+Biesdorfer Promenade: mäßiger Asphalt	Q1 20975,12620 20843,12677 20693,12742 20546,12815 20435,12869 20331,12920 20137,13016 20076,13034
 Luise-Zietz-Str.: Kopfsteinpflaster	Q2 20079,12479 20137,13016 20143,13082
 Rigaer Str.: Kopfsteinpflaster	Q2 14133,12482 14272,12446 14451,12396 14538,12371 14748,12314 14997,12243 15098,12213 15175,12180
 Thaerstr.: Kopfsteinpflaster	Q2 13773,12694 13844,12900
@@ -1322,7 +1322,7 @@ Friedrich-Wilhelm-Platz: guter Asphalt	Q0 5324,7205 5310,7325 5318,7424 5361,742
 Honnefer Str.: Asphalt	Q0 19316,8933 19209,9125
 Voltastr.: Kopfsteinpflaster	Q2 9041,14896 9206,14987 9361,15066 9571,15178
 Zechliner Str.: Asphalt	Q0 16310,14378 16284,14601 16537,14635 16534,14740
-Buschiner Str.: Asphalt	Q0 20160,13287 20364,13255 20598,13219 20743,13197
+Buschiner Str.: Asphalt	Q0 20160,13287 20364,13255 20480,13237 20598,13219 20743,13197
 Stangeweg: Beton	Q0 21414,16284 21542,16209 21610,16079
 Anemonenstr.: asphaltiert	Q0 23447,4425 23809,4533 23934,4661
 Sella-Hasse-Str.: Asphalt	Q0 20896,16937 20843,16829 20771,16690 20948,16612
@@ -1353,6 +1353,8 @@ Pflugstr.: Asphalt	Q0 8781,14357 8662,14567
 Wöhlertstr.: Asphalt	Q0 8662,14567 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068 6608,16180
 Eulerstr.: Asphalt	Q0 9268,16228 9498,16480
+Wilhelm-von-Siemens-Str.: Asphalt im schlechten Zustand	Q2 9422,2648 9072,2589 8674,2627
+Bühringstr.: guter Asphalt	Q0 12562,17135 12699,16945 12818,16779
 Boschpoler Str.: guter Asphalt	Q0 20802,13711 20661,13725 20536,13741 20420,13757 20210,13776
 Gelsenkircher Str.: Asphalt	Q0 -5600,15214 -5361,15195 -5251,15185 -5135,15172
 Siegener Str.: guter Asphalt	Q0 -5039,15618 -5115,15348 -5132,15249 -5135,15172 -5146,15059
@@ -1394,7 +1396,7 @@ Haßfurter Weg: mäßiger Asphalt	Q1 11847,18338 11812,18484
 Erlenweg: mäßiger Asphalt	Q1 -3301,17976 -3187,18077
 Zachertstr.: Beton	Q0 17070,11375 17153,11342 17242,11304 17588,11234 17725,11228 17888,11229
 Belziger Ring: Asphalt	Q0 22215,17784 22059,17842 21931,17818 21882,17748 21968,17714 21995,17754 22148,17687
-Blesener Zeile: Asphalt	Q0 3241,20613 3426,20642 3475,20656
+Blesener Zeile: Asphalt	Q0 3241,20613 3426,20642
 Moorweg: Asphalt	Q0 3190,22049 3114,22010 2903,21918 2717,21616 2652,21511 2429,21415
 Kaunstr.: Kopfsteinpflaster	Q2 -1077,3206 -1070,2924 -999,2726
 Moselstr. (Friedenau): Asphalt	Q0 5684,6942 5824,6974
@@ -2331,7 +2333,7 @@ Tillmannsweg: kleinteiliges Pflaster	Q1 -4368,1720 -4373,1910 -4287,2079 -4326,2
 (Am Kanal - Adlergestell): loser Beton	Q2 20928,2412 20933,2390 20937,2368
 Titusweg: Beton	Q0 2576,20995 2563,21039 2429,21415
 Hieronymusweg: Beton	Q0 2563,21039 2717,21107
-Köpenzeile: mäßiger Beton	Q1 23187,3773 23241,3705 23337,3500 23452,3205 23481,3107 23541,2841 23567,2739 23551,2531
+Köpenzeile: mäßiger Beton	Q1 23231,3724 23337,3500 23452,3205 23481,3107 23541,2841 23567,2739 23551,2531
 Tile-Brügge-Weg: schlechter Asphalt	Q2 2404,20469 2603,20505 2804,20539 2989,20572 3141,20600 3214,20610 3241,20613 3307,20717 3327,20758
 Eschachstr.: Verbundsteinpflaster	Q1 2404,20469 2431,20383 2463,20295
 (Waidmannsluster Damm - Eschachstr./Gorkistr.): Verbundsteinpflaster	Q1 2205,20885 2404,20469
@@ -2596,6 +2598,12 @@ Am Rathauspark: grobsteiniges Kopfsteinpflaster	Q2 4879,20427 4718,20341 4622,20
 Am Packereigraben: gut befahrbar, eigene Radspur, fester Sand	Q1 4208,21159 3979,21211
 Waldpark Steinberg: gut befahrbar, eigene Radspur, fester Sand	Q1 3979,21211 3718,21489 3636,21576 3553,21665
 Rethelstr.: guter Asphalt	Q0 14739,8919 14681,8859 14619,8794
+Holzmindener Str.: guter Asphalt	Q0 12205,5545 12256,5591 12490,5680 12632,5684 12702,5553 12773,5248
+Heinitzweg: mäßiges Verbundsteinpflaster	Q2 10269,906 10220,1034 10329,1077
+Otto-Nagel-Str.: guter Asphalt	Q0 20364,12216 20387,12445 20414,12663 20435,12869 20446,12941 20480,13237 20509,13513 20536,13741 20567,13998
+Blesener Zeile - Am Nordgraben: fester Sandweg	Q1 3426,20642 3475,20656
+Dammsmühler Str.: mäßiger fester Sandweg	Q2 9613,20968 9379,20903
+Emma-Ihrer-Str.: asphaltiert	Q0 15456,10356 15629,10481
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827
 Zum Langen Jammer: Kopfsteipflaster, Gehweg besser	Q2 14674,12839 14398,12934

@@ -636,14 +636,7 @@ userdel	q4 43584,20871 44596,21287
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1151704800,
-         'text' => 'L 372 Gubener Str. südl. Eisenhüttenstadt, Kreuzung Schrabisch Mühle Bau Kreisverkehr Vollsperrung 14.11.2005-30.06.2006 ',
-         'from' => 1131836400,
-         'data' => 'userdel	q4 95351,-29486 95494,-29935 95829,-31753
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -861,6 +854,57 @@ userdel	2 8595,12066 8581,11896 8571,11846
          'data' => 'userdel	2 -862,22946 -596,23009
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1151618400,
+         'text' => 'B 156 Muskauer Straße Bahnübergang in der OL Spremberg Sanierung BÜ u. Tiefbau Vollsperrung 12.06.2006-29.06.2006 ',
+         'from' => 1149976800,
+         'data' => 'userdel	2 80783,-91972 80236,-92007
+',
+         'type' => 'gesperrt'
+       },
+       undef,
+       {
+         'until' => 1156024800,
+         'text' => 'K 6503 B273-Zühlsdorf-L211 (Summt-Lehnitz) Kreuzung. Summter Chaussee bei Zühlslake Neubau Kreisverkehr Vollsperrung 06.07.2006-19.08.2006 ',
+         'from' => 1152050400,
+         'data' => 'userdel	q4 7346,32257 7435,34963 8115,35387
+userdel	q4 7070,34665 7435,34963 7443,36175
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1151704800,
+         'text' => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 01.06.2006-30.06.2006 ',
+         'from' => 1149026400,
+         'data' => 'userdel	q4 -89549,58784 -89647,59213
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1151704800,
+         'text' => 'L 011 Große Str. OD Bad Wilsnack, Einmünd. zur Havelberger Str. Kanal- und Straßenbau Vollsperrung 21.06.2006-30.06.2006 ',
+         'from' => 1150754400,
+         'data' => 'userdel	q4 -89647,59213 -89606,59341
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_82715',
+         'until' => 1188597599,
+         'text' => 'Askanierring (Spandau) in Richtung Hohenzollernring, zwischen Eckschanze und Fehrbelliner Tor Baustelle, Fahrtrichtung gesperrt (bis Ende 08/2007)',
+         'from' => 1151013248,
+         'data' => 'userdel	1 -3972,15639 -3985,15770 -3735,16205 -3618,16229
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1151704800,
+         'text' => 'L 211 Lehnitzer Str. OD Oanienburg, zw. Lindenring u. Dr.-H.-Byk-Str. Munitionssuche u.-bergung halbseitig gesperrt; Einbahnstraße 22.06.2006-30.06.2006 ',
+         'from' => 1150840800,
+         'data' => 'userdel	q4 -954,38397 -591,37970
+',
+         'type' => 'handicap'
        }
      
 );

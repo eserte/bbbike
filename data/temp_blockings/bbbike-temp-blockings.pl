@@ -4471,7 +4471,7 @@ userdel	2 -102390,65175 -102434,66177
 EOF
      },
      { from  => 1131836400, # 2005-11-13 00:00
-       until => 1151704800, # 2006-07-01 00:00
+       until => 1151012746, # 2006-07-01 00:00 1151704800
        text  => 'L 372 Gubener Str. südl. Eisenhüttenstadt, Kreuzung Schrabisch Mühle Bau Kreisverkehr Vollsperrung 14.11.2005-30.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -4789,6 +4789,64 @@ EOF
        source_id => 'INKO_82301_COPY_1',
        data  => <<EOF,
 userdel	2 -862,22946 -596,23009
+EOF
+     },
+     { from  => 1149976800, # 2006-06-11 00:00
+       until => 1151618400, # 2006-06-30 00:00
+       text  => 'B 156 Muskauer Straße Bahnübergang in der OL Spremberg Sanierung BÜ u. Tiefbau Vollsperrung 12.06.2006-29.06.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 80783,-91972 80236,-92007
+EOF
+     },
+     { from  => 1150840800, # 2006-06-21 00:00
+       until => 1151013600, # 2006-06-23 00:00
+       text  => 'B 158 bei Schiffmühle, Brücke über Alte Oder Rückbauarb., Herstell. M.insel Vollsperrung * 22.06.2006-22.06.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 53350,45087 53293,45400
+EOF
+     },
+     { from  => 1152050400, # 2006-07-05 00:00
+       until => 1156024800, # 2006-08-20 00:00
+       text  => 'K 6503 B273-Zühlsdorf-L211 (Summt-Lehnitz) Kreuzung. Summter Chaussee bei Zühlslake Neubau Kreisverkehr Vollsperrung 06.07.2006-19.08.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 7346,32257 7435,34963 8115,35387
+userdel	q4 7070,34665 7435,34963 7443,36175
+EOF
+     },
+     { from  => 1149026400, # 2006-05-31 00:00
+       until => 1151704800, # 2006-07-01 00:00
+       text  => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 01.06.2006-30.06.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -89549,58784 -89647,59213
+EOF
+     },
+     { from  => 1150754400, # 2006-06-20 00:00
+       until => 1151704800, # 2006-07-01 00:00
+       text  => 'L 011 Große Str. OD Bad Wilsnack, Einmünd. zur Havelberger Str. Kanal- und Straßenbau Vollsperrung 21.06.2006-30.06.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -89647,59213 -89606,59341
+EOF
+     },
+     { from  => 1151013248, # 2006-06-22 23:54
+       until => 1188597599, # 2007-08-31 23:59
+       text  => 'Askanierring (Spandau) in Richtung Hohenzollernring, zwischen Eckschanze und Fehrbelliner Tor Baustelle, Fahrtrichtung gesperrt (bis Ende 08/2007)',
+       type  => 'gesperrt',
+       source_id => 'INKO_82715',
+       data  => <<EOF,
+userdel	1 -3972,15639 -3985,15770 -3735,16205 -3618,16229
+EOF
+     },
+     { from  => 1150840800, # 2006-06-21 00:00
+       until => 1151704800, # 2006-07-01 00:00
+       text  => 'L 211 Lehnitzer Str. OD Oanienburg, zw. Lindenring u. Dr.-H.-Byk-Str. Munitionssuche u.-bergung halbseitig gesperrt; Einbahnstraße 22.06.2006-30.06.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -954,38397 -591,37970
 EOF
      },
     );

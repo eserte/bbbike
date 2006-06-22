@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: PLZ.pm,v 1.65 2006/06/11 17:32:20 eserte Exp $
+# $Id: PLZ.pm,v 1.66 2006/06/22 23:40:12 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004 Slaven Rezic. All rights reserved.
@@ -24,7 +24,7 @@ use locale;
 use BBBikeUtil;
 use Strassen::Strasse;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.65 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.66 $ =~ /(\d+)\.(\d+)/);
 
 use constant FMT_NORMAL  => 0; # /usr/www/soc/plz/Berlin.data
 use constant FMT_REDUCED => 1; # ./data/Berlin.small.data (does not exist anymore)
@@ -491,11 +491,17 @@ sub look_loop {
 	    $str =~ s/^(g)r\.?\s+/$1roße /i;
 	    $replaced++;
 	}
-	if ($str =~ /^\s*str\./i) {
-	    $str =~ s/^\s*(s)tr\./$1traße/i;
+	if ($str =~ /^\s*str\.(\S)?/i) {
+	    if (defined $1) { # add space
+		$str =~ s/^\s*(s)tr\./$1traße /i;
+	    } else {
+		$str =~ s/^\s*(s)tr\./$1traße/i;
+	    }
+	    $replaced++;
 	    $str;
 	} elsif ($str =~ /^\s*strasse/i) {
 	    $str =~ s/^\s*(s)trasse/$1traße/i;
+	    $replaced++;
 	    $str;
 	} elsif ($replaced) {
 	    $str;
@@ -558,17 +564,23 @@ sub look_loop {
 		{
 		    my $str0;
 		    if (!@matchref
-			&& ($str0 = $strip_strasse->($str))
-			&& ($str0 = $strip_hnr->($str0))) {
+			&& ($str0 = $strip_strasse->($str))) {
 			@matchref = $self->look($str0, %args, Agrep => $agrep);
+			if (!@matchref
+			    && ($str0 = $strip_hnr->($str0))) {
+			    @matchref = $self->look($str0, %args, Agrep => $agrep);
+			}
 		    }
 		}
 		{
 		    my $str0;
 		    if (!@matchref
-			&& ($str0 = $expand_strasse->($str))
-			&& ($str0 = $strip_hnr->($str0))) {
+			&& ($str0 = $expand_strasse->($str))) {
 			@matchref = $self->look($str0, %args, Agrep => $agrep);
+			if (!@matchref
+			    && ($str0 = $strip_hnr->($str0))) {
+			    @matchref = $self->look($str0, %args, Agrep => $agrep);
+			}
 		    }
 		}
 		last if @matchref;

@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: plz.t,v 1.27 2006/06/11 22:03:19 eserte Exp $
+# $Id: plz.t,v 1.28 2006/06/22 23:48:01 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2002,2003,2004,2006 Slaven Rezic. All rights reserved.
@@ -59,7 +59,7 @@ my @approx_tests = (
 		    # Ku'damm => Kurfürstendamm, fails, maybe an extra rule?
 		   );
 		    
-plan tests => 134 + scalar(@approx_tests)*4;
+plan tests => 136 + scalar(@approx_tests)*4;
 
 my $tmpdir = "$FindBin::RealBin/tmp/plz";
 my $create;
@@ -257,6 +257,12 @@ for my $noextern (@extern_order) {
 	is(scalar @{$res[0]}, 2, "Hits for Straße des 17. Juni")
 	    or diag $dump->(\@res);
 
+    XXX:
+	@res = $plz->look_loop(PLZ::split_street("str.des 17.Juni"),
+			       @standard_look_loop_args);
+	is(scalar @{$res[0]}, 2, "Hits for Straße des 17. Juni (missing spaces)")
+	    or diag $dump->(\@res);
+
 	@res = $plz->look_loop(PLZ::split_street("  Str. des 17. Juni 153  "),
 			       @standard_look_loop_args);
 	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'Straße des 17. Juni' } @{$res[0]}), 1,
@@ -348,7 +354,6 @@ for my $noextern (@extern_order) {
 	   "U-Bahnhof, abbreviated")
 	    or diag $dump->(\@res);
 
-    XXX:
 	@res = $plz->look_loop("s+u wedding",
 			       @standard_look_loop_args);
 	is(!!(grep { $_->[PLZ::LOOK_NAME] eq 'S-Bhf Wedding' } @{$res[0]}), 1,
