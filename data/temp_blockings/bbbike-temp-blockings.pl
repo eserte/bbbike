@@ -4849,4 +4849,13 @@ EOF
 userdel	q4 -954,38397 -591,37970
 EOF
      },
+     { from  => 1151042079, # 2006-06-23 07:54
+       until => 1151272800, # 2006-06-26 00:00
+       text  => 'Turmstr. zwischen Stromstr. und Waldstr. Veranstaltung, Straße vollständig gesperrt (bis 25.06.06, 24:00 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'IM_002950',
+       data  => <<EOF,
+userdel	2 6247,13304 6113,13313 6019,13320 5964,13324 5844,13334 5723,13346 5565,13370 5388,13398
+EOF
+     },
     );

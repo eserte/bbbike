@@ -98,7 +98,7 @@ Halker Zeile: schlechtes Kopfsteinpflaster	Q3 9940,559 10063,251 10161,3 10273,-
 (Am Bahndamm): sehr guter Asphalt	Q0 18698,9996 19675,10410 19711,10426
 Alemannenstr.: gutes Kopfsteinpflaster	Q1 -3360,2917 -3452,2868 -3509,2817 -3686,2579
 Alemannenstr.: mäßiges Kopfsteinpflaster	Q2 -3686,2579 -3692,2549 -3709,2517 -3725,2475
-Alemannenstr.: asphaltiert	Q0 -3725,2475 -3745,2279 -3818,2101 -3899,2002
+Alemannenstr.: asphaltiert	Q0 -3725,2475 -3745,2279 -3753,2241 -3818,2101 -3899,2002
 Alemannenstr.: gutes Kopfsteinpflaster	Q1 -3899,2002 -4044,1841
 Nymphenufer: teilweise etwas Kopfsteinpflaster, sonst mäßiger Asphalt	Q1 -4165,1969 -4044,1841
 Lyckallee: Asphalt	Q0 368,11051 251,11039 37,11014 -50,11003 -225,10981 -328,10971
@@ -1452,6 +1452,9 @@ Kameruner Str.: Kopfsteinpflaster	Q2 6149,15689 6282,15830 6401,15956 6503,16068
 #: by: Paul (no email):
 Eulerstr.: Asphalt	Q0 9268,16228 9498,16480
 #: by: anonymous vvv
+Trachtenbrodtstr.: Asphalt	Q0 12158,15556 12236,15701 12311,15828
+#: note: laut ADFC-Karte teilweise gut und mäßig
+Marie-Elisabeth-von-Humboldt-Str.: mäßiger Asphalt	Q1 20624,18485 20598,18560 20694,18857 20855,19299 20987,19604
 #: note: laut ADFC-Karte "mäßig geeignet":
 Wilhelm-von-Siemens-Str.: Asphalt im schlechten Zustand	Q2 9422,2648 9072,2589 8674,2627
 #: note: laut ADFC-Karte ebenfalls "gut geeignet":
@@ -2781,7 +2784,7 @@ Brodowiner Ring: Asphalt	Q0 22215,16343 22192,16165 22290,16146 22400,16226 2240
 Parsteiner Ring: Asphalt	Q0 22406,16309 22428,16462 22321,16553 22250,16468 22215,16343
 #: by: ^^^
 #: by: Kasi:
-Bauhüttenweg: Asphalt	Q0 12703,2454 13064,2499 13238,2521 13339,2611
+Bauhüttenweg: Asphalt	Q0 12703,2454 12835,2470 13064,2499 13238,2521 13339,2611
 #: by: o. schumacher:
 Elberfelder Str.: schlechtes Kopfsteinpflaster	Q3 5762,13155 5771,12972 5757,12770 5752,12662
 #: by: Anna Tamborini: vvv
@@ -3593,17 +3596,22 @@ Waldpark Steinberg: gut befahrbar, eigene Radspur, fester Sand	Q1 3979,21211 371
 Rethelstr.: guter Asphalt	Q0 14739,8919 14681,8859 14619,8794
 #: by: Karin Ziebell:
 Holzmindener Str.: guter Asphalt	Q0 12205,5545 12256,5591 12490,5680 12632,5684 12702,5553 12773,5248
-#: by: Zar3:
-#: XXX: Siegfried Heiber widerspricht hier: guter Asphalt, Q0
-Heinitzweg: mäßiges Verbundsteinpflaster	Q2 10269,906 10220,1034 10329,1077
+#: by: Siegfried Heiber
+#: note: Zar3 widerspricht hier: mäßiges Verbundsteinpflaster
+Heinitzweg: guter Asphalt	Q0 10269,906 10220,1034 10329,1077
 #: by: Sina (greg...):
 Otto-Nagel-Str.: guter Asphalt	Q0 20364,12216 20387,12445 20414,12663 20435,12869 20446,12941 20480,13237 20509,13513 20536,13741 20567,13998
 #: by: Thomas (luedtke):
 Blesener Zeile - Am Nordgraben: fester Sandweg	Q1 3426,20642 3475,20656
-#: by: Maciejewski:
+#: by: Maciejewski: vvv
 Dammsmühler Str.: mäßiger fester Sandweg	Q2 9613,20968 9379,20903
+#: note: laut ADFC-Karte östlicher Abschnitt gut geeignet:
+Dammsmühler Str.: asphaltiert, Frostschäden	Q1 10140,21107 9613,20968
+#: by: ^^^
 #: by: Mike Förster:
 Emma-Ihrer-Str.: asphaltiert	Q0 15456,10356 15629,10481
+#: by: Michael Meixner:
+Maurerweg: guter Asphalt	Q0 12864,2191 12835,2470 12825,2573 12810,2751 12807,2958
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

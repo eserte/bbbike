@@ -905,6 +905,15 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'data' => 'userdel	q4 -954,38397 -591,37970
 ',
          'type' => 'handicap'
+       },
+       {
+         'source_id' => 'IM_002950',
+         'until' => 1151272800,
+         'text' => 'Turmstr. zwischen Stromstr. und Waldstr. Veranstaltung, Straße vollständig gesperrt (bis 25.06.06, 24:00 Uhr)',
+         'from' => 1151042079,
+         'data' => 'userdel	2 6247,13304 6113,13313 6019,13320 5964,13324 5844,13334 5723,13346 5565,13370 5388,13398
+',
+         'type' => 'gesperrt'
        }
      
 );
