@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.104 2006/06/21 20:58:47 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.106 2006/06/25 08:57:59 eserte Exp $
 #:
 ###################################################################
 #
@@ -329,7 +329,7 @@ Im Amseltal	1 1962,25214 1983,25097
 Gundelfinger Str.	1 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18778,8895
 Fehmarner Str. 	1 6710,14776 6528,15000
-Alte Späthbrücke	2 14457,5097 14540,5140
+Alte Späthbrücke	2 14437,5080 14540,5140
 Rutherfordstr.: nicht permanent geöffnet	2 19071,2746 19207,2592
 Katzengraben	1 22445,4758 22449,4712
 Karlstr.	1 22554,4380 22460,4125
@@ -535,6 +535,8 @@ Am Tierpark: Straßenbahntrasse	3nocross 18628,10177 18561,10341 18446,10620
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 #
+tragen (Treppe)	0:30 15571,4168
+tragen (steile Treppe)	0:30 15156,6034
 tragen (Treppe)	0:30 4798,3394
 tragen (zwei Treppen, je ca. 10 Stufen)	0:30 8822,16873
 tragen (Treppe)	0:30 14390,5443
@@ -618,6 +620,10 @@ tragen (Treppe)	0:30 -7418,181
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+Drängelgitter	BNP:5 15516,6357
+Drängelgitter	BNP:5 15504,6328
+Drängelgitter	BNP:5 15403,6145
+Drängelgitter	BNP:5 15393,6112
 Enges Drängelgitter	BNP:5 7887,24043
 Enges Drängelgitter	BNP:5 2375,21494
 Drängelgitter	BNP:5 8776,16718
@@ -711,8 +717,7 @@ Spreeufer vor dem Monbijoupark: gesperrt wegen Bauarbeiten	2:inwork 10100,12876 
 #: by: joern (js):
 Uferweg: wegen Bauarbeiten gesperrt	2:inwork 14903,10403 15059,10289
 Voltairestr. (Arbeiten an "Alexa", voraussichtlich bis 2006-05-31)	2:inwork 11323,12484 11209,12430
-#: last_checked: 2005-11-17
-Elsenstr.	1:inwork 13760,9188 13657,9063 13504,8882
+#XXX del Elsenstr.	1:inwork 13760,9188 13657,9063 13504,8882
 #XXX del für Radfahrer nicht relevant: Malchower Chaussee (Pankow) Richtung stadteinwärts zwischen Ortnitstr. und Nachtalbenweg Baustelle, veränderte Verkehrsführung. Für die Arbeiten im Abschnitt von Darßer str. bis Nachtalbenweg wird der Verkehr über Darßer Str. - Nachtalbenw. umgeleitet (bis 30.04.2005)	1:inwork 15181,18137 14828,17856
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10173,12492
 Sperrung vor der amerikanischen Botschaft	2 9141,12320 9126,12413 9112,12499 9100,12627

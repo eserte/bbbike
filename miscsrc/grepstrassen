@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: grepstrassen,v 1.13 2006/02/14 20:09:15 eserte Exp $
+# $Id: grepstrassen,v 1.14 2006/06/23 22:03:57 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -19,7 +19,7 @@ use Strassen::Stat;
 use strict;
 
 use Getopt::Long;
-my($v, $cat, $catrx, $name, $namerx, $section, $sectionrx);
+my($v, $cat, $catrx, $name, $namerx, $section, $sectionrx, @directive_def, @directive, @directiverx);
 my($minarea, $minlength);
 my $preserveglobaldirectives;
 my %special;
@@ -32,6 +32,7 @@ GetOptions("v" => \$v,
 	   "namerx=s" => \$namerx,
 	   "section=s" => \$section,
 	   "sectionrx=s" => \$sectionrx,
+	   "directive=s" => \@directive_def,
 	   "special=s" => sub {
 	       my $type = $_[1];
 	       no strict 'refs';
@@ -48,6 +49,7 @@ GetOptions("v" => \$v,
 usage: $0 [-v] [-cat category] [-catrx regexp]
        [-name name] [-namerx regexp]
        [-section section] [-sectionrx regexp]
+       [-directive key=val|key~val [-directive ...]]
        [-special name] [-minarea ...km²] [-minlength ...km]
        [-preserveglobaldirectives]
 
@@ -61,26 +63,57 @@ $sectionrx = qr{$sectionrx} if $sectionrx;
 $minarea = $minarea*(1000*1000) if defined $minarea;
 $minlength = $minlength*1000 if defined $minlength;
 
+for my $directive_def (@directive_def) {
+    if ($directive_def =~ m{^([^=~]+)([=~])(.*)}) {
+	my($key, $type, $val) = ($1, $2, $3);
+	if ($type eq '=') {
+	    push @directive, [$key, $val];
+	} else {
+	    push @directiverx, [$key, qr{$val}];
+	}
+    } else {
+	die "Cannot parse <$directive_def>, should be key=val or key~val";
+    }
+}
+
 my $datafile = shift || "-";
 
 my $s = Strassen->new($datafile, UseLocalDirectives => 1, PreserveLineInfo => 1);
 my $new_s = Strassen->new;
 $s->init;
-while(1) {
+LOOP_STREETS: while(1) {
     my $r = $s->next;
     if (!$r->[1]) {
 	die "Empty coords array found in line " . $s->line . ", file " . $datafile;
     }
     last if !@{ $r->[1] };
+    # Match NAME
     if (defined $name) { if ($r->[0] eq $name) { next if $v } else { next unless $v } }
     if (defined $namerx) { if ($r->[0] =~ $namerx) { next if $v } else { next unless $v } }
+    # Match CATEGORIY
     if (defined $cat) { if ($r->[2] eq $cat) { next if $v } else { next unless $v } }
     if (defined $catrx) { if ($r->[2] =~ $catrx) { next if $v } else { next unless $v } }
     my $dir = $s->get_directive;
+    # Match SECTION
     if (defined $section) { if (defined $dir->{section} && grep { $_ eq $section } @{ $dir->{section} }) { next if $v } else { next unless $v } }
     if (defined $sectionrx) { if (defined $dir->{section} && grep { /$sectionrx/ } @{ $dir->{section} }) { next if $v } else { next unless $v } }
+    # Match DIRECTIVES
+    if (@directive) {
+	for my $directive (@directive) {
+	    my($key, $val) = @$directive;
+	    if (defined $dir->{$key} && grep { $_ eq $val } @{ $dir->{$key} }) { next LOOP_STREETS if $v } else { next LOOP_STREETS unless $v }
+	}
+    }
+    if (@directiverx) {
+	for my $directiverx (@directiverx) {
+	    my($key, $val) = @$directiverx;
+	    if (defined $dir->{$key} && grep { /$val/ } @{ $dir->{$key} }) { next LOOP_STREETS if $v } else { next LOOP_STREETS unless $v }
+	}
+    }
+    # Match length/area
     if (defined $minarea && $r->[2] =~ /^F:/) { if (Strassen::area($r) >= $minarea) { next if $v } else { next unless $v } }
     if (defined $minlength && $r->[2] !~ /^F:/ && @{$r->[1]} > 1) { if (Strassen::total_len($r) >= $minlength) { next if $v } else { next unless $v } }	
+    # Special matches
     while(my($k,$v) = each %special) {
 	next if !$v->($r, $dir);
     }
@@ -94,10 +127,10 @@ while(my($k,$v) = each %special_end) {
 if ($preserveglobaldirectives) {
     my $global_directives = $s->get_global_directives;
     if ($global_directives && keys %$global_directives) {
-	for my $directive (keys %$global_directives) {
-	    print join("", map { "#: $directive $_\n" } @{ $global_directives->{$directive} });
-	    if ($directive eq 'encoding') {
-		binmode STDOUT, ":encoding(" . $global_directives->{$directive}->[0] . ")";
+	for my $global_directive (keys %$global_directives) {
+	    print join("", map { "#: $global_directive $_\n" } @{ $global_directives->{$global_directive} });
+	    if ($global_directive eq 'encoding') {
+		binmode STDOUT, ":encoding(" . $global_directives->{$global_directive}->[0] . ")";
 	    }
 	}
 	print "#:\n"; # end

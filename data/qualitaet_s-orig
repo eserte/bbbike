@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.127 2006/06/21 20:57:20 eserte Exp eserte $
+#: version: $Id: qualitaet_s-orig,v 4.129 2006/06/25 08:57:37 eserte Exp $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1872,15676
@@ -441,7 +441,7 @@ Mainzer Str.: Kopfsteinpflaster	Q2 14311,11884 14357,12011 14434,12196
 Colbestr.: mäßiger Asphalt mit Schlaglöchern	Q1 14416,11815 14468,11992
 Waldeyerstr.: Kopfsteinpflaster	Q2 15054,12323 14997,12243
 #: by: Carsten (kcdr):
-Am Heidekampgraben: asphaltiert	Q0 15053,7966 14969,7580 15162,7281 15342,7013 15563,6683 15577,6518 15478,6343 15422,6228 15365,6126
+Am Heidekampgraben: asphaltiert	Q0 15053,7966 14984,7594 15042,7513 15062,7458 15127,7402 15176,7315 15163,7245 15242,7177 15318,7052 15361,7014 15606,6639 15595,6564 15578,6471 15516,6357 15504,6328 15496,6314 15437,6227 15403,6145 15396,6125 15393,6112 15358,6022
 An der Güterbahn: Parkweg	Q1 15330,1658 15205,1670 15110,1732 14968,1835 14845,1866 14705,1836 14630,1795
 # XXX wahrscheinlich nicht mehr: Stubenrauchstr.: Kopfsteinpflaster	Q2; 16909,3193 16893,3171 16766,3002
 Falkensteinstr.: etwas besseres Kopfsteinpflaster	Q2 12911,10156 13031,10366 13135,10551
@@ -1273,7 +1273,12 @@ Treseburger Ufer: wassergebundene Decke	Q1 12301,5783 12699,5909
 Delfter Ufer: überwiegend guter Asphalt, einige Stellen mit Baumwurzeln	Q0 13532,5987 13646,6019 13766,6019 13971,5978 14136,5831 14241,5674 14242,5636 14331,5460 14347,5425
 (Delfter Ufer - Späthstr., Rampe): grobes Verbundsteinpflaster	Q2 14347,5425 14233,5402
 (Delfter Ufer - Späthstr., Rampe): grobes Verbundsteinpflaster	Q2 14331,5460 14233,5402
-(Späthstr. - Weg an der Teltowkanalautobahn, Rampe): gutes Pflaster	Q0 14390,5458 14308,5627
+(Späthstr. - Weg an der Teltowkanalautobahn, Rampe): gutes Verbundsteinpflaster	Q0 14390,5458 14308,5627
+(Am Teltowkanal): Asphalt, mit einigen mäßigen Stellen	Q0 14437,5080 14532,5015 14766,4783 15358,4328
+(Am Teltowkanal): fester Sandweg	Q2 15358,4328 15571,4168 15594,4152 15659,4119 15786,4019 15892,3932
+(Am Teltowkanal): Asphalt	Q0 15892,3932 16684,3325 16556,3148
+Fenchelweg: glattes Kopfsteinpflaster	Q1 15573,4122 15670,4056 15874,3892
+(Mauerweg Rudow): Asphalt	Q0 17222,-606 18127,-367
 (Weg an der Teltowkanalautobahn - Johannisthaler Chaussee, Rampe): gutes Pflaster	Q0 15767,4099 15640,4222
 (Weg an der Teltowkanalautobahn): sehr guter Asphalt	Q0 14112,6009 14308,5627 14386,5428 14540,5140 14715,4928 15767,4099 16520,3531
 #: add_fragezeichen: zurzeit (Mai 2006) ab ca. Stubenrauchstr. Richtung Süden noch nicht fertiggestellt:
@@ -1383,6 +1388,11 @@ Matterhornstr: überwiegend guter Asphalt	Q0 -1155,3255 -1187,3264 -1360,3314 -15
 Altvaterstr.: schlechtes Kopfsteinpflaster	Q3 -2283,3491 -2437,3435 -2500,3415 -2554,3426 -2917,3222
 Altvaterstr.: Asphalt	Q0 -2917,3222 -3112,3095
 Altvaterstr.: Beton	Q0 -3200,3030 -3207,2898
+(Am Britzer Verbindungskanal): feiner Schotter, OK	Q1 15358,6022 15166,6019
+(Am Britzer Verbindungskanal): Asphalt	Q0 15143,5936 15099,5978 14319,5993
+#: XXX wird hier noch nachgebessert?
+(Am Britzer Verbindungskanal): holpriger Feldweg	Q3 14319,5993 14212,6000
+(Am Britzer Verbindungskanal): Asphalt	Q0 14212,6000 14112,6009
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -3067,7 +3077,7 @@ Hagenower Ring: Asphalt	Q0 16988,19048 17001,19198 17256,19230 17259,19177 17440
 #: by: Ingo Dietzel:
 Pfarrer-Theile-Str.: Asphalt	Q0 -7141,12821 -7103,13191 -7105,13304
 #: by: Detlef G. Amelung:
-Arabisweg: Beton	Q0 17743,2356 17646,2210
+Arabisweg: Beton	Q0 17728,2333 17646,2210
 #: by: Robert Quint:
 Resselsteig: Asphalt	Q0 5300,1124 5353,1046 5327,1026 5424,882
 #: by: Suse Andersen:

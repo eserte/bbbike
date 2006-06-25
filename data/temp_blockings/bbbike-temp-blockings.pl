@@ -1320,8 +1320,8 @@ EOF
        text  => 'Johannisthaler Chaussee Zwischen Rudower Straße und Königsheideweg beidseitig Brückenarbeiten, gesperrt ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 15573,4122 15608,4175
-userdel	2 15669,4266 15640,4222 15608,4175
+userdel	2 15573,4122 15594,4152 15618,4189
+userdel	2 15669,4266 15640,4222 15618,4189
 EOF
      },
      { from  => 1102712612, # 2004-12-10 22:03
@@ -2397,7 +2397,7 @@ EOF
        text  => 'Rudower Str. (Treptow) Richtung stadteinwärts zwischen Köpenicker Str. und Wegedornstr. Baustelle, Fahrtrichtung gesperrt, Einbahnstraße in Richtung Köpenicker Str. (bis 05.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 19771,1793 19455,1870 19188,1980 18900,2033
+userdel	q4; 19771,1793 19455,1870 19188,1980 18881,2062
 EOF
      },
      { from  => 1122415200, # 2005-07-27 00:00
@@ -4856,6 +4856,24 @@ EOF
        source_id => 'IM_002950',
        data  => <<EOF,
 userdel	2 6247,13304 6113,13313 6019,13320 5964,13324 5844,13334 5723,13346 5565,13370 5388,13398
+EOF
+     },
+     { from  => 1151099435, # 2006-06-23 23:50
+       until => 1151290800, # 2006-06-26 05:00
+       text  => 'Dörpfeldstr., Ottomar-Geschke-Str. (Treptow) in beiden Richtungen,zwischen Waldstr. und Oberspreestr. Baustelle, Straße vollständig gesperrt (bis 26.06.06, 05.00 Uhr)',
+       type  => 'gesperrt',
+       source_id => 'INKO_64281_COPY_1',
+       data  => <<EOF,
+userdel	2 20692,3951 21100,4192 21174,4250 21182,4336 21332,4655
+EOF
+     },
+     { from  => 1151101431, # 2006-06-24 00:23
+       until => 1155679199, # 2006-08-15 23:59
+       text  => 'Corinthstr. - Markgrafendamm: wegen einer Baustelle kann nur der Gehweg genutzt werden (bis Mitte 08.2006)',
+       type  => 'handicap',
+       source_id => 'INKO_77040_COPY_1',
+       data  => <<EOF,
+userdel	q4 14439,10496 14608,10409
 EOF
      },
     );

@@ -552,15 +552,7 @@ userdel	2 41681,15915 42300,15756
        undef,
        undef,
        undef,
-       {
-         'until' => 1151168400,
-         'text' => '23.06.2006, 21.00 Uhr bis 24.06.2006, 19.00 Uhr Vollsperrung der Ottomar-Geschke-Straße ',
-         'from' => 1151002800,
-         'data' => 'userdel	2 21182,4336 21174,4250
-userdel	2 21100,4192 21174,4250
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -710,15 +702,7 @@ userdel	3 8034,12093 8063,12182 8119,12414
 ',
          'type' => 'gesperrt'
        },
-       {
-         'source_id' => 'INKO_83663',
-         'until' => 1151100000,
-         'text' => 'Londoner Str. (Wedding) Richtung Holländerstr. zwischen Müllerstr. und Holländerstr. Baustelle, Fahrtrichtung gesperrt (bis 23.06.2006)',
-         'from' => 1149623437,
-         'data' => 'userdel	2 5791,16910 6042,17189 6118,17327 6154,17438
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1151186400,
          'text' => 'B 156 OL Spremberg, Muskauer Straße OL Spremberg, Muskauer Str., Bahnübergang Sanierung BÜ u. Tiefbau Vollsperrung 12.06.2006-24.06.2006 ',
@@ -757,14 +741,7 @@ userdel	2 8032,12817 8017,12826
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1151100000,
-         'text' => 'B 101 OL Luckenwalde, Zinnaer Straße OL Luckenwalde, Zinnaer Str. zw. Mühlenweg u. Am Nuth: Vollsperrung 12.06.2006-23.06.2006 ',
-         'from' => 1149976800,
-         'data' => 'userdel	q4 -4630,-36012 -4603,-35730
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1151791200,
          'text' => 'L 099 Barnewitz - Marzahne zw. Abzw. Gortz (L911) in OL Barnewitz u. L98 in OL Marzahne Straßenbau Vollsperrung 19.06.2006-01.07.2006 ',
@@ -914,6 +891,24 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'data' => 'userdel	2 6247,13304 6113,13313 6019,13320 5964,13324 5844,13334 5723,13346 5565,13370 5388,13398
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_64281_COPY_1',
+         'until' => 1151290800,
+         'text' => 'Dörpfeldstr., Ottomar-Geschke-Str. (Treptow) in beiden Richtungen,zwischen Waldstr. und Oberspreestr. Baustelle, Straße vollständig gesperrt (bis 26.06.06, 05.00 Uhr)',
+         'from' => 1151099435,
+         'data' => 'userdel	2 20692,3951 21100,4192 21174,4250 21182,4336 21332,4655
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'INKO_77040_COPY_1',
+         'until' => 1155679199,
+         'text' => 'Corinthstr. - Markgrafendamm: wegen einer Baustelle kann nur der Gehweg genutzt werden (bis Mitte 08.2006)',
+         'from' => 1151101431,
+         'data' => 'userdel	q4 14439,10496 14608,10409
+',
+         'type' => 'handicap'
        }
      
 );
