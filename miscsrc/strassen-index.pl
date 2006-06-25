@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-index.pl,v 1.6 2006/06/06 18:46:48 eserte Exp $
+# $Id: strassen-index.pl,v 1.8 2006/06/25 10:23:25 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -26,7 +26,7 @@ if (!caller) {
 
 package Strassen::Index;
 require Strassen;
-require DB_File;
+require DB_File::Lock;
 require Fcntl;
 
 sub new {
@@ -37,12 +37,6 @@ sub new {
 		      index_file    => $index_file,
 		      verbose       => (delete $opts{verbose} || 0),
 		     }, $class;
-    if ((!exists $opts{uptodatecheck} || $opts{uptodatecheck})
-	&& $self->needs_update) {
-	$self->create_index;
-    } else {
-	$self->open_index;
-    }
     $self;
 }
 
@@ -53,12 +47,21 @@ sub needs_update {
     return !-e $index_file || -M $strassen_file < -M $index_file;
 }
 
+sub open_updated_index {
+    my($self) = @_;
+    if ($self->needs_update) {
+	$self->create_index;
+    } else {
+	$self->open_index;
+    }
+}
+
 sub open_index {
     my($self) = @_;
     my $index_file = $self->{index_file};
 
-    tie my %db, 'DB_File', $index_file, Fcntl::O_RDWR(),
-	0644, $DB_File::DB_HASH
+    tie my %db, 'DB_File::Lock', $index_file, Fcntl::O_RDWR(),
+	0644, $DB_File::DB_HASH, "write"
 	    or die "Can't open $index_file: $!";
 
     $self->{db} = \%db;
@@ -74,8 +77,8 @@ sub create_index {
     my $index_file = $self->{index_file};
 
     rename $index_file, "$index_file~";
-    tie my %db, 'DB_File', $index_file, Fcntl::O_RDWR()|Fcntl::O_CREAT(),
-	0644, $DB_File::DB_HASH
+    tie my %db, 'DB_File::Lock', $index_file, Fcntl::O_RDWR()|Fcntl::O_CREAT(),
+	0644, $DB_File::DB_HASH, "write"
 	    or die "Can't create $index_file: $!";
 
     if ($self->{verbose}) {

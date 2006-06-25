@@ -1,5 +1,5 @@
 #: title: Qualität von Straßen in Berlin
-#: version: $Id: qualitaet_s-orig,v 4.129 2006/06/25 08:57:37 eserte Exp $
+#: version: $Id: qualitaet_s-orig,v 4.129 2006/06/25 08:57:37 eserte Exp eserte $
 #:
 Mozartstr.: Kopfsteinpflaster	Q2 10249,-2645 10448,-3214
 Eiswerder (Brücken, Straßen): schlecht, viel Kopfsteinpflaster	Q3 -2710,15495 -2435,15449 -2312,15575 -2104,15703 -2077,15664 -1872,15676
@@ -1393,6 +1393,8 @@ Altvaterstr.: Beton	Q0 -3200,3030 -3207,2898
 #: XXX wird hier noch nachgebessert?
 (Am Britzer Verbindungskanal): holpriger Feldweg	Q3 14319,5993 14212,6000
 (Am Britzer Verbindungskanal): Asphalt	Q0 14212,6000 14112,6009
+#: note: zumindest die westliche Seite sah gut aus, im Gegensatz zum ADFC-Karteneintrag: "mäßig geeignet"
+Gerosteig: Asphalt	Q0 18990,584 19384,492 19485,466
 ######################### User Contributions #################################
 #: by: Dominik Seelow vvv
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
@@ -1689,7 +1691,7 @@ Belforter Str.: mäßiges Kopfsteinpflaster	Q2 11435,14023 11299,14112 11262,14136
 #: by: Heribert Guggenthaler:
 Spielhagenstr. Kopfsteinpflaster	Q2 3419,11756 3540,11771
 #: by: andrea kahnt:
-Wunnibaldstr.: Asphalt	Q0 19396,456 19509,745
+Wunnibaldstr.: Asphalt	Q0 19384,492 19495,774
 #: by: Petra Stobbe:
 Tannenweg: mäßig	Q2 -2993,17856 -3003,17990
 #: by: Harald Widmann:
@@ -1825,7 +1827,7 @@ Buchholzer Str.: Asphalt	Q0 10930,15522 11055,15504 11183,15485
 Gneiststr.: Kopfsteinpflaster	Q2 11119,15385 11040,15398 10917,15418
 #: by: ^^^
 #: by: Diana Sattler:
-Anne-Frank-Str.: Asphalt	Q0 19518,502 19853,350
+Anne-Frank-Str.: Asphalt	Q0 19510,549 19863,425
 #: by: Peer:
 Strelitzer Str.: Kopfsteinpflaster	Q2 9864,14181 9801,14288 9685,14495 9621,14624
 #: by: Horst Schmidt:
@@ -2922,7 +2924,7 @@ Caroline-Michaelis-Str.: Asphalt	Q0 8810,14373 8830,14350 9061,14050 9125,13973
 #: by: Bertil: vvv
 #: XXX: er ist sich nicht sicher, aber wahrscheinlich asphaltiert:
 #: note: auch laut ADFC-Karte gut geeignet:
-Machonstr.: gute Qualität	Q0 9025,4871 9044,4667 9066,4512 9080,4371
+Machonstr.: gute Qualität	Q0 9025,4871 9032,4791 9044,4667 9066,4512 9080,4371
 #: by: ^^^
 #: by: Saatz:
 Jungfernstieg: schlechtes Kopfsteinpflaster	Q3 5564,3032 5503,2922 5516,2873 5324,2553 5226,2390
@@ -3601,6 +3603,7 @@ Am Rathauspark: grobsteiniges Kopfsteinpflaster	Q2 4879,20427 4718,20341 4622,20
 Am Packereigraben: gut befahrbar, eigene Radspur, fester Sand	Q1 4208,21159 3979,21211
 #: note: laut ADFC-Karte mäßig geeignet:
 Waldpark Steinberg: gut befahrbar, eigene Radspur, fester Sand	Q1 3979,21211 3718,21489 3636,21576 3553,21665
+Rosentreterpromenade: sehr grobes Kopfsteinpflaster, der Fußweg ist etwas besser befahrbar	Q2 4423,20848 4208,21159
 #: by: ^^^
 #: by: Nicole Knaup:
 Rethelstr.: guter Asphalt	Q0 14739,8919 14681,8859 14619,8794
@@ -3622,6 +3625,12 @@ Dammsmühler Str.: asphaltiert, Frostschäden	Q1 10140,21107 9613,20968
 Emma-Ihrer-Str.: asphaltiert	Q0 15456,10356 15629,10481
 #: by: Michael Meixner:
 Maurerweg: guter Asphalt	Q0 12864,2191 12835,2470 12825,2573 12810,2751 12807,2958
+#: by: jörg (schalkau):
+Schalkauer Str.: guter Asphalt	Q0 17343,14906 17377,14678 17389,14599 17398,14490
+#: by: peter (ph2607):
+Frobenstr. (Spandau): guter Asphalt	Q0 -3826,15542 -3867,15469 -3861,15333
+#: by: lydiaweitmann:
+Strelitzstr.: guter Asphalt	Q0 9259,4815 9032,4791
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
 Erich-Nehlhans-Str.: Asphalt	Q0 13992,13240 14210,13165
 Richard-Ermisch-Str.: Asphalt	Q0 14250,13281 14210,13165 14096,12827

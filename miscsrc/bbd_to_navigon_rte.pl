@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbd_to_navigon_rte.pl,v 1.2 2006/06/20 19:57:13 eserte Exp $
+# $Id: bbd_to_navigon_rte.pl,v 1.3 2006/06/25 18:05:46 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -28,13 +28,15 @@ use Karte::Polar;
 use Strassen::Core;
 
 sub usage () {
-    die "usage: $0 [-fmt new|old] [-q] bbdfile
+    die "usage: $0 [-fmt new|old] [-includestreetnames] [-q] bbdfile
 ";
 }
 
 my $fmt = "new";
+my $include_streetnames = 0; # unknown or different written street names are not recognized by navigon...
 my $q;
 GetOptions("fmt=s" => \$fmt,
+	   "includestreetnames" => \$include_streetnames,
 	   "q" => \$q,)
     or usage;
 my $file = shift || usage;
@@ -51,7 +53,7 @@ while(1) {
     my $plz1 = undef;
     my $ort = "Berlin"; # should be variable!
     my $plz2 = undef;
-    my $street = $r->[Strassen::NAME];
+    my $street = $include_streetnames ? $r->[Strassen::NAME] : undef;
     my($x,$y) = split /,/, $r->[Strassen::COORDS]->[0];
     my($lon, $lat) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map($x,$y));
     no warnings 'uninitialized';

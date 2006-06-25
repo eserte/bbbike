@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.125 2006/06/21 21:05:11 eserte Exp $
+# $Id: Makefile.PL,v 1.125 2006/06/21 21:05:11 eserte Exp eserte $
 
 use 5.005;
 
@@ -168,6 +168,8 @@ use constant REQ_BBBIKE_RADZEIT => 2; # mandatory for the web package on radzeit
    'Damit Direktiven in Straßen-Daten geordnet bleiben'],
   [qw/CDB_File		0	all	0	base/,
    'Für die alternative A*-Optimierung in XS/C'],
+  [qw/DB_File::Lock	0	all	0	base/,
+   'Same DB_File operations, used in Strassen::Index'],
 
   [qw/Image::Info	0	all	0	test/],
   [qw/Test::More	0	all	0	test/],

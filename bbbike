@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: bbbike,v 3.241 2006/06/21 19:24:03 eserte Exp $
+# $Id: bbbike,v 3.241 2006/06/21 19:24:03 eserte Exp eserte $
 # Author: Slaven Rezic
 #
 # Copyright (c) 1995-2006 Slaven Rezic. All rights reserved.
@@ -5228,6 +5228,7 @@ sub define_item_attribs {
 	 # XXX specific comm types?
 	 'mount' => [M"Steigung", M"Steigungen", 0],
 	 'wr'   => [M"Wasserroute", M"Wasserrouten", undef],
+	 'fz'   => [M"Unbekannte Straße", M"Unbekannte Straßen", 1],
 	);
     %p_attrib =
 	('lsa'  => [M"Ampel",       M"Ampeln",       undef],
@@ -8479,6 +8480,7 @@ sub plotstr {
 	if ($lazy_str{$abk}) {
 	    bbbikelazy_remove_data("str", $abk);
 	}
+	status_message(Mfmt("Layer <%s> entfernt", exists $str_attrib{$abk} ? $str_attrib{$abk}->[ATTRIB_PLURAL] : $abk), "info");
 	return;
     }
 
@@ -8594,6 +8596,7 @@ sub plotstr {
 
     my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
     if ($std && $lazy && $has_filename) {
+	status_message(Mfmt("Layer <%s> gezeichnet", exists $p_attrib{$abk} ? $p_attrib{$abk}->[ATTRIB_PLURAL] : $abk), "info");
 	return bbbikelazy_add_data("str", $abk, $str);
     }
 
@@ -9593,6 +9596,7 @@ sub plot_point {
 	if ($main::lazy_p{$abk}) {
 	    bbbikelazy_remove_data("p", $abk);
 	}
+	status_message(Mfmt("Layer <%s> entfernt", exists $p_attrib{$abk} ? $p_attrib{$abk}->[ATTRIB_PLURAL] : $abk), "info");
 	return;
     }
 
@@ -9609,6 +9613,7 @@ sub plot_point {
 
     my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
     if ($lazy && !$args{FastUpdate}) {
+	status_message(Mfmt("Layer <%s> gezeichnet", exists $p_attrib{$abk} ? $p_attrib{$abk}->[ATTRIB_PLURAL] : $abk), "info");
 	return bbbikelazy_add_data("p", $abk, $filename);
     }
 
@@ -10769,6 +10774,7 @@ sub plotorte {
 
     my $lazy = defined $args{-lazy} ? $args{-lazy} : $lazy_plot;
     if ($std && $lazy) {
+	status_message(Mfmt("Layer <%s> gezeichnet", exists $p_attrib{$type} ? $p_attrib{$type}->[ATTRIB_PLURAL] : $type), "info");
 	return bbbikelazy_add_data("p", $type, $orte);
     }
 
