@@ -703,14 +703,7 @@ userdel	3 8034,12093 8063,12182 8119,12414
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1151186400,
-         'text' => 'B 156 OL Spremberg, Muskauer Straﬂe OL Spremberg, Muskauer Str., Bahn¸bergang Sanierung B‹ u. Tiefbau Vollsperrung 12.06.2006-24.06.2006 ',
-         'from' => 1149976800,
-         'data' => 'userdel	2 80783,-91972 80236,-92007
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1152913500,
          'text' => 'Reinhardtstraﬂe - Otto-von-Bismarck-Allee: zwischen Kreuzung Kapelleufer und Kreuzung Willy-Brandt-Straﬂe in beiden Richtungen Veranstaltung, gesperrt, Dauer: 07.05.2006 09:00 Uhr bis 14.07.2006 23:45 Uhr ',
