@@ -1,11 +1,11 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.92 2006/06/25 08:58:16 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.92 2006/06/25 08:58:16 eserte Exp eserte $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Treptower Str.: Bauarbeiten	q3::inwork 14140,8977 14015,8798
 Stadthausstr., Bahnbrücke: Bauarbeiten	q4::inwork 15628,10915 15657,10846
 Märkisches Ufer: Bauarbeiten, Einbahnstrasse zwischen Am Köllnischen Park und Brückenstr.	q4::inwork; 11328,12040 11251,12071 11155,12071
-Simon-Dach-Str.: Bauarbeiten an der Wühlischstr. Richtung Revaler Str., nur Bürgersteigbenutzung möglich	q4::inwork 13954,11647 13890,11411
+Simon-Dach-Str.: Bauarbeiten an der Wühlischstr. Richtung Revaler Str., nur Bürgersteigbenutzung möglich, bis 2006-09-15	q4::inwork 13954,11647 13890,11411
 Oberwallstr.: Fahrbahn wegen Bauarbeiten gesperrt, Gehweg benutzen	q4::inwork 9907,12055 9925,11947
 Am Weidendamm: Fahrtrichtung wegen Bauarbeiten gesperrt, schieben	q4::inwork; 9283,12856 9383,12915
 Alexanderstr. in Richtung Stralauer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2006) (Radfahrer können wahrscheinlich weiterhin passieren)	q2::inwork; 11134,12793 11207,12706 11323,12484 11333,12437 11343,12300 11351,12221
@@ -293,6 +293,7 @@ Egidysteg: eng, Fußgänger	q3 3124,22198 3142,22170
 Altvaterstr.: Fußgänger, Bordsteine	q2 -3112,3095 -3200,3030
 Im Gestell: Fußgänger	q1 371,4453 261,4420
 Heinitzweg: Fußgänger	q2 10329,1077 10363,1095
+Am Gemeindepark: enge Straße	q1 7172,2343 7215,2442 7209,2528 7199,2559 7030,2582 6751,2708 6697,2706
 Maurerweg: enge Straße	q1 12864,2191 12835,2470 12825,2573 12810,2751 12807,2958
 (Uferweg): kurvenreich, ausreichende Breite	q1 -389,17140 -280,17229 -266,17335 -215,17385 -141,17377 61,17495 110,17489 151,17537 187,17663 235,17704 260,17788 258,17880 381,18186 416,18386 448,18476 496,18514 586,18540 680,18631 757,18673 768,18742 970,18919 1006,18972 1122,19036 1189,19018 1200,18969 1369,18958 1457,18969 1490,18950
 Gustav-Zahnke-Str.: enge Straße	q1 14424,13587 14408,13513 14331,13537
@@ -315,7 +316,7 @@ Am Schloßpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,
 (Karl-Bonhoeffer-Nervenklinik zwischen Hermann-Piper-Str. und U-Bahnhof): Krankenhausgelände	q1 5001,19832 5079,19635 5124,19634 5228,19320 5246,19244 5441,19139
 Poschingerstr.: enge Straße	q1 5697,6276 5754,6238 5824,6240 5875,6262 5925,6311 5971,6343 6106,6361 6261,6391
 Höltermannsteig: Fußgänger	q2 13974,2728 13936,2795 13935,2908 13941,3219 13965,3222 13997,3290
-Eiswaldtstr.: schmale Straße	q1 6733,2433 6834,2449 6937,2417 7052,2353 7154,2341 7282,2386
+Eiswaldtstr.: schmale Straße	q1 6733,2433 6834,2449 6937,2417 7052,2353 7172,2343 7282,2386
 Georg-Lehnig-Str.: enge Straße	q1 14532,13563 14509,13481 14428,13507
 Erich-Kuttner-Str.: enge Straße	q1 14584,13547 14532,13563 14424,13587 14378,13599 14317,13615 14104,13673 14088,13627 14053,13620
 (Königsheideweg - Westweg): Weg durch den Park	q1 17114,4750 17173,4902

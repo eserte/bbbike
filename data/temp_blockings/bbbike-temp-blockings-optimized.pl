@@ -844,16 +844,16 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'type' => 'handicap'
        },
        {
-         'until' => 1151704800,
-         'text' => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 01.06.2006-30.06.2006 ',
+         'until' => 1157061600,
+         'text' => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 01.06.2006-31.08.2006 ',
          'from' => 1149026400,
          'data' => 'userdel	q4 -89549,58784 -89647,59213
 ',
          'type' => 'handicap'
        },
        {
-         'until' => 1151704800,
-         'text' => 'L 011 Große Str. OD Bad Wilsnack, Einmünd. zur Havelberger Str. Kanal- und Straßenbau Vollsperrung 21.06.2006-30.06.2006 ',
+         'until' => 1157061600,
+         'text' => 'L 011 Große Str. OD Bad Wilsnack, Einmünd. zur Havelberger Str. Kanal- und Straßenbau Vollsperrung 21.06.2006-31.08.2006 ',
          'from' => 1150754400,
          'data' => 'userdel	q4 -89647,59213 -89606,59341
 ',
@@ -876,24 +876,8 @@ userdel	q4 7070,34665 7435,34963 7443,36175
 ',
          'type' => 'handicap'
        },
-       {
-         'source_id' => 'IM_002950',
-         'until' => 1151272800,
-         'text' => 'Turmstr. zwischen Stromstr. und Waldstr. Veranstaltung, Straße vollständig gesperrt (bis 25.06.06, 24:00 Uhr)',
-         'from' => 1151042079,
-         'data' => 'userdel	2 6247,13304 6113,13313 6019,13320 5964,13324 5844,13334 5723,13346 5565,13370 5388,13398
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'source_id' => 'INKO_64281_COPY_1',
-         'until' => 1151290800,
-         'text' => 'Dörpfeldstr., Ottomar-Geschke-Str. (Treptow) in beiden Richtungen,zwischen Waldstr. und Oberspreestr. Baustelle, Straße vollständig gesperrt (bis 26.06.06, 05.00 Uhr)',
-         'from' => 1151099435,
-         'data' => 'userdel	2 20692,3951 21100,4192 21174,4250 21182,4336 21332,4655
-',
-         'type' => 'gesperrt'
-       },
+       undef,
+       undef,
        {
          'source_id' => 'INKO_77040_COPY_1',
          'until' => 1155679199,
@@ -902,6 +886,14 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'data' => 'userdel	q4 14439,10496 14608,10409
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1151359200,
+         'text' => 'B 002 Eberswalder Str. Bahnübergang in OL Melchow Umbau Bahnübergang Vollsperrung 21.06.2006-26.06.2006 ',
+         'from' => 1150754400,
+         'data' => 'userdel	2 30143,41500 29468,41438
+',
+         'type' => 'gesperrt'
        }
      
 );

@@ -4817,16 +4817,16 @@ userdel	q4 7070,34665 7435,34963 7443,36175
 EOF
      },
      { from  => 1149026400, # 2006-05-31 00:00
-       until => 1151704800, # 2006-07-01 00:00
-       text  => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 01.06.2006-30.06.2006 ',
+       until => 1157061600, # 2006-09-01 00:00
+       text  => 'L 010 Havelberger Str. OD Bad Wilsnack, vom OE bis An der Trift Kanal- und Straßenbau Vollsperrung 01.06.2006-31.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -89549,58784 -89647,59213
 EOF
      },
      { from  => 1150754400, # 2006-06-20 00:00
-       until => 1151704800, # 2006-07-01 00:00
-       text  => 'L 011 Große Str. OD Bad Wilsnack, Einmünd. zur Havelberger Str. Kanal- und Straßenbau Vollsperrung 21.06.2006-30.06.2006 ',
+       until => 1157061600, # 2006-09-01 00:00
+       text  => 'L 011 Große Str. OD Bad Wilsnack, Einmünd. zur Havelberger Str. Kanal- und Straßenbau Vollsperrung 21.06.2006-31.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -89647,59213 -89606,59341
@@ -4874,6 +4874,14 @@ EOF
        source_id => 'INKO_77040_COPY_1',
        data  => <<EOF,
 userdel	q4 14439,10496 14608,10409
+EOF
+     },
+     { from  => 1150754400, # 2006-06-20 00:00
+       until => 1151359200, # 2006-06-27 00:00
+       text  => 'B 002 Eberswalder Str. Bahnübergang in OL Melchow Umbau Bahnübergang Vollsperrung 21.06.2006-26.06.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 30143,41500 29468,41438
 EOF
      },
     );

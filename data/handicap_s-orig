@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.92 2006/06/25 08:58:16 eserte Exp $
+#: version: $Id: handicap_s-orig,v 4.92 2006/06/25 08:58:16 eserte Exp eserte $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX hier bräuchte man keine zusätzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -9,8 +9,8 @@ Treptower Str.: Bauarbeiten	q3::inwork 14140,8977 14015,8798
 Stadthausstr., Bahnbrücke: Bauarbeiten	q4::inwork 15628,10915 15657,10846
 #: last_checked: 2006-03-29
 Märkisches Ufer: Bauarbeiten, Einbahnstrasse zwischen Am Köllnischen Park und Brückenstr.	q4::inwork; 11328,12040 11251,12071 11155,12071
-#: last_checked: 2006-05-21
-Simon-Dach-Str.: Bauarbeiten an der Wühlischstr. Richtung Revaler Str., nur Bürgersteigbenutzung möglich	q4::inwork 13954,11647 13890,11411
+#: last_checked: 2006-06-24
+Simon-Dach-Str.: Bauarbeiten an der Wühlischstr. Richtung Revaler Str., nur Bürgersteigbenutzung möglich, bis 2006-09-15	q4::inwork 13954,11647 13890,11411
 #XXX del? Linienstr.: Bauarbeiten, Einbahnstraße Richtung Osten (bis 2006-10-31)	q4::inwork; 9903,13646 9752,13575 9607,13507 9281,13374
 # XXX last_checked: 2005-07-03
 # XXX del? möglicherweise fertig: Bendastr.: Bauarbeiten, danach vielleicht asphaltiert?	q4::inwork 12743,6645 12756,6578 12779,6478
@@ -320,6 +320,8 @@ Altvaterstr.: Fußgänger, Bordsteine	q2 -3112,3095 -3200,3030
 Im Gestell: Fußgänger	q1 371,4453 261,4420
 Heinitzweg: Fußgänger	q2 10329,1077 10363,1095
 ######################### User Contributions #################################
+#: by: Christian Marwitz:
+Am Gemeindepark: enge Straße	q1 7172,2343 7215,2442 7209,2528 7199,2559 7030,2582 6751,2708 6697,2706
 #: by: Michael Meixner:
 Maurerweg: enge Straße	q1 12864,2191 12835,2470 12825,2573 12810,2751 12807,2958
 #: by: Thomas Heuving
@@ -366,7 +368,7 @@ Poschingerstr.: enge Straße	q1 5697,6276 5754,6238 5824,6240 5875,6262 5925,6311
 #: by: Manfred Köhnen:
 Höltermannsteig: Fußgänger	q2 13974,2728 13936,2795 13935,2908 13941,3219 13965,3222 13997,3290
 #: by: Regine Bast:
-Eiswaldtstr.: schmale Straße	q1 6733,2433 6834,2449 6937,2417 7052,2353 7154,2341 7282,2386
+Eiswaldtstr.: schmale Straße	q1 6733,2433 6834,2449 6937,2417 7052,2353 7172,2343 7282,2386
 #: by: Stefan Driesner: vvv
 Georg-Lehnig-Str.: enge Straße	q1 14532,13563 14509,13481 14428,13507
 Erich-Kuttner-Str.: enge Straße	q1 14584,13547 14532,13563 14424,13587 14378,13599 14317,13615 14104,13673 14088,13627 14053,13620

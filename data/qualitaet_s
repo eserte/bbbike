@@ -124,7 +124,6 @@ Aachener Str.: Kopfsteinpflaster	Q2 4687,8034 4688,8323 4623,8457
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12870,9366 12912,9367
 Kiefholzstr.: Kopfsteinpflaster	Q2 13601,9572 13457,9701 13251,9829
-Bouchestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 13601,9572 13867,9864
 Hirschberger Str.: Kopfsteinpflaster	Q2 14988,11130 15012,11148 15082,11120
 Krummhübler Str.: Kopfsteinpflaster	Q2 15050,11017 15082,11120
 Marzahner Chaussee: Kopfsteinpflaster	Q2 18559,12105 18390,11775
@@ -1669,6 +1668,7 @@ Herschelstr.: Asphalt	Q0 3222,13252 3262,13406 3276,13481 3307,13593
 Emdener Str.: Kopfsteinpflaster	Q2 5565,13370 5591,13565 5617,13768 5650,14054
 (Königsweg - Benschallee): mäßiger Asphalt	Q1 -1581,1850 -1565,1709
 Fercher Str. (Zehlendorf): Beton	Q1 -910,1733 -910,1471
+Bouchestr.: Asphalt	Q0 13601,9572 13867,9864
 Hosemannstr.: schlechtes Kopfsteinpflaster	Q3 23642,12149 23759,12449 23795,12557
 Togostr.	Q0 6575,15831 6537,15858 6401,15956 6260,16081
 Togostr.	Q0 6260,16081 6119,16203
@@ -2194,6 +2194,7 @@ Sophie-Charlotte-Str. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 439,3900 653
 Retzdorffpromenade: Kopfsteinpflaster	Q2 4893,6812 4993,6812
 Dohlengrund: Asphalt	Q0 20272,10448 20729,10437 21017,10423 21288,10431
 Goldammerstr.: Asphalt	Q0 14739,2714 14768,2763 14855,2859 14949,2967 14977,3039 15099,3031 15159,2985 15235,2938
+Am Gemeindepark: guter Asphalt	Q0 7172,2343 7215,2442 7209,2528 7199,2559 7030,2582 6751,2708 6697,2706
 Brodowiner Ring: Asphalt	Q0 22215,16343 22192,16165 22290,16146 22400,16226 22406,16309
 Parsteiner Ring: Asphalt	Q0 22406,16309 22428,16462 22321,16553 22250,16468 22215,16343
 Bauhüttenweg: Asphalt	Q0 12703,2454 12835,2470 13064,2499 13238,2521 13339,2611
@@ -2418,7 +2419,7 @@ Paul-Wegener-Str.: Beton	Q0 24149,9387 24444,9256 24611,9181 24947,8957 25089,88
 Bohnsdorfer Str.: Waldweg, nur nach starkem Regen schlammig	Q1 21999,2171 21996,1683 22162,1183 22217,1108
 Georg-Lehnig-Str.: mäßiger Asphalt	Q1 14532,13563 14509,13481 14428,13507
 Erich-Kuttner-Str.: mäßiger Asphalt	Q1 14584,13547 14532,13563 14424,13587 14378,13599 14317,13615 14104,13673 14088,13627 14053,13620
-Eiswaldtstr.: Beton	Q0 6733,2433 6834,2449 6937,2417 7052,2353 7154,2341 7282,2386
+Eiswaldtstr.: Beton	Q0 6733,2433 6834,2449 6937,2417 7052,2353 7172,2343 7282,2386
 Scabellstr.: mäßiger Asphalt	Q1 -4290,2304 -4421,2350
 Rieflerstr.: Beton	Q0 9978,-1275 10131,-1273
 Luise-Henriette-Str.: Asphalt	Q0 9235,6481 9134,6467
