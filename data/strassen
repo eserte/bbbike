@@ -1,5 +1,5 @@
 #: title: Strassen-Koordinaten (standard coords)
-#: version: $Id: strassen-orig,v 4.146 2006/06/25 08:56:10 eserte Exp eserte $
+#: version: $Id: strassen-orig,v 4.147 2006/06/27 21:11:10 eserte Exp $
 #: title.de: Straßen und Plätze in Berlin
 #: title.en: Streets and places in Berlin
 #:
@@ -1625,6 +1625,7 @@ Hildburghauser Str.	H 7789,651 7715,684 7599,725 7318,759 7058,844 6977,870 6819
 Hildburghauser Str.	N 4793,1344 4582,1374
 Hildburghauser Str.	NN 4582,1374 4488,1389
 Hildburghauser Str.	N 4488,1389 4375,1414
+Am Pfarracker	N 5056,1321 5074,1445 5048,1651 5045,1675 5035,1723 5028,1783 4980,1870 4964,1890 4945,1915
 Sondershauser Str.	N 6403,569 6358,795 6377,1041 6441,1444 6491,1658
 Resselsteig	N 5300,1124 5353,1046 5327,1026 5424,882
 Schwatlostr.	NN 4375,1414 4341,1406
@@ -4580,9 +4581,10 @@ Gensinger Str.	N 18597,12162 19086,12134 19143,12078 19144,11859 19147,11701 191
 (Alt-Friedrichsfelde - Gensinger Str.)	N 19283,11785 19144,11859
 Müllerstr. (Lichterfelde)	N 3993,1169 3899,1095 4080,798 4201,752
 Fürstenstr. (Lichterfelde)	N 4106,389 4201,752 4238,743 4349,1031
-Holtheimer Weg	N 4106,389 3894,340 3658,278
-Ahlener Weg	N 3707,156 3872,251 3894,340 3872,443
-Lippstädter Str.	N 3872,443 3817,479 3647,739
+Holtheimer Weg	N 4106,389 3912,362 3791,338 3658,278
+Wormbacher Weg	N 3791,338 3782,397 3648,531
+Ahlener Weg	N 3707,156 3872,251 3912,362 3898,466
+Lippstädter Str.	N 3898,466 3834,502 3647,739
 Senftenberger Ring	N 6962,21174 6917,21506 7257,21795 7365,21886 7375,21980 7264,22125 6650,22052 6630,21956 6701,21743 6751,21692 6768,21515 6917,21506
 Calauer Str.	N 6485,21955 6630,21956
 Wesendorfer Str.	N 7394,21593 7257,21795

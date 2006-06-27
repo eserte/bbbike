@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.92 2006/06/25 08:58:16 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.93 2006/06/27 21:10:55 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 Treptower Str.: Bauarbeiten	q3::inwork 14140,8977 14015,8798
@@ -13,7 +13,7 @@ Naumannstraße: zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straß
 Behrenstr./Bebelplatz: Einbahnstraße	q3::inwork; 9626,12227 9700,12234 9743,12239 9801,12245
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
 Am Spreebord: Baustelle	q4::inwork 4135,12715 4314,12659
-Groß-Berliner Damm: ein kurzes Stück ist noch Baustelle, vielleicht 2006-07-31 fertig?	q4::inwork 18058,4627 18882,3750
+Groß-Berliner Damm: ein kurzes Stück ist noch Baustelle, aber Fußgänger/Radfahrer können passieren, vielleicht 2006-07-31 fertig?	q2::inwork 18058,4627 18882,3750
 Segelfliegerdamm: letzte Bauarbeiten	q3::inwork 17797,4441 18058,4627
 Columbiadamm: Bauarbeiten, Behinderungen möglich (bis 2006-12-31)	q1::inwork 10213,8665 10598,8563 10796,8498 10911,8457 11271,8325 11416,8283 11632,8302
 Caroline-Michaelis-Str.: Bordsteine	q3 9125,13973 9151,13941
@@ -347,7 +347,6 @@ Hünensteig: Fußgänger	q2 6396,5125 6406,5223 6108,5253
 (Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Kleingartenanlage, Fußgänger (schieben!), tiefe Steinregenabläufe quer zum Weg	q4 7921,4451 7935,4466 8162,4725
 Mühlenbecker Weg: Fußgänger	q1 20150,15678 20334,16043
 (Nordmannzeile - Vorarlberger Damm): Fußgänger, Kleingartenweg	q1 6807,7262 7231,7394
-Groß-Berliner Damm: teilweise noch Baustelle	q3::inwork 17645,5328 17700,5272 17778,5077 18058,4627
 Herschelstr.: enge Wohnstraße	q1 3222,13252 3262,13406 3276,13481 3307,13593
 Togostr.: Radweg zwischen Fußweg und Spielplatz	q1 6260,16081 6119,16203
 Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8865,5468 8870,5557

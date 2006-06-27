@@ -4774,9 +4774,9 @@ EOF
 userdel	2 -3584,-29888 -3733,-29501
 EOF
      },
-     { from  => 1150871204, # 2006-06-21 08:26
-       until => 1157061600, # 2006-09-01 00:00
-       text  => 'Bis 31.08.2006 Vollsperrung der L 862 zwischen Falkenrehde und Ketzin. ',
+     { from  => 1151430940, # 2006-06-27 19:55
+       until => 1155938400, # 2006-08-19 00:00
+       text  => 'Bis 18.08.2006 Vollsperrung der L 862 zwischen Falkenrehde und Ketzin. ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -22215,9500 -22510,9372 -23467,9217 -23807,9279 -24319,9296 -24594,9168 -25265,9000 -25456,8850 -25658,8777 -26243,8485 -26774,7951 -27468,7711

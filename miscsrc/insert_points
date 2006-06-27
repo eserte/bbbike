@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.69 2006/06/25 10:23:49 eserte Exp $
+# $Id: insert_points,v 1.70 2006/06/27 21:10:44 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -1069,7 +1069,9 @@ sub get_indexer {
 	my $indexer = Strassen::Index->new($file, verbose => $verbose, %args);
 	if ($indexer->needs_update) {
 	    if ($uptodatecheck) {
+		require POSIX;
 		if (fork == 0) {
+		    POSIX::nice(+20);
 		    warn "Create index for $file/$type in background...\n";
 		    $indexer->create_index;
 		    warn "Creation of index for $file/$type completed!\n";

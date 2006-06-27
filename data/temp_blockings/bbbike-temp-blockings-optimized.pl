@@ -809,9 +809,9 @@ userdel	2 8595,12066 8581,11896 8571,11846
          'type' => 'gesperrt'
        },
        {
-         'until' => 1157061600,
-         'text' => 'Bis 31.08.2006 Vollsperrung der L 862 zwischen Falkenrehde und Ketzin. ',
-         'from' => 1150871204,
+         'until' => 1155938400,
+         'text' => 'Bis 18.08.2006 Vollsperrung der L 862 zwischen Falkenrehde und Ketzin. ',
+         'from' => 1151430940,
          'data' => 'userdel	2 -22215,9500 -22510,9372 -23467,9217 -23807,9279 -24319,9296 -24594,9168 -25265,9000 -25456,8850 -25658,8777 -26243,8485 -26774,7951 -27468,7711
 ',
          'type' => 'gesperrt'
@@ -886,14 +886,6 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'data' => 'userdel	q4 14439,10496 14608,10409
 ',
          'type' => 'handicap'
-       },
-       {
-         'until' => 1151359200,
-         'text' => 'B 002 Eberswalder Str. Bahnübergang in OL Melchow Umbau Bahnübergang Vollsperrung 21.06.2006-26.06.2006 ',
-         'from' => 1150754400,
-         'data' => 'userdel	2 30143,41500 29468,41438
-',
-         'type' => 'gesperrt'
        }
      
 );

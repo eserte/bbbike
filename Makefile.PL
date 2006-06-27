@@ -1,5 +1,5 @@
 # -*- perl -*-
-# $Id: Makefile.PL,v 1.125 2006/06/21 21:05:11 eserte Exp eserte $
+# $Id: Makefile.PL,v 1.126 2006/06/27 21:14:32 eserte Exp $
 
 use 5.005;
 
