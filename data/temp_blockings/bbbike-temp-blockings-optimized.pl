@@ -809,9 +809,9 @@ userdel	2 8595,12066 8581,11896 8571,11846
          'type' => 'gesperrt'
        },
        {
-         'until' => 1155938400,
-         'text' => 'Bis 18.08.2006 Vollsperrung der L 862 zwischen Falkenrehde und Ketzin. ',
-         'from' => 1151430940,
+         'until' => 1157061600,
+         'text' => 'Bis 31.08.2006 Vollsperrung der L 862 zwischen Falkenrehde und Ketzin. ',
+         'from' => 1151609302,
          'data' => 'userdel	2 -22215,9500 -22510,9372 -23467,9217 -23807,9279 -24319,9296 -24594,9168 -25265,9000 -25456,8850 -25658,8777 -26243,8485 -26774,7951 -27468,7711
 ',
          'type' => 'gesperrt'
@@ -864,7 +864,7 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'until' => 1188597599,
          'text' => 'Askanierring (Spandau) in Richtung Hohenzollernring, zwischen Eckschanze und Fehrbelliner Tor Baustelle, Fahrtrichtung gesperrt (bis Ende 08/2007)',
          'from' => 1151013248,
-         'data' => 'userdel	1 -3972,15639 -3985,15770 -3735,16205 -3618,16229
+         'data' => 'userdel	1 -3972,15639 -3985,15770 -3735,16205 -3631,16224
 ',
          'type' => 'gesperrt'
        },
@@ -886,6 +886,31 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'data' => 'userdel	q4 14439,10496 14608,10409
 ',
          'type' => 'handicap'
+       },
+       undef,
+       {
+         'until' => 1159653600,
+         'text' => 'L 235 Gielsdorf-Werneuchen Schulstr. in der OL Wegendorf Straßen- u. Durchlassbau Vollsperrung; 06.07.2006-30.09.2006 ',
+         'from' => 1152050400,
+         'data' => 'userdel	q4 34492,22176 34321,22151 34125,22128
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1151964000,
+         'text' => 'B 183 Dresdner Str. OL Bad Liebenwerda, zw. Querspange u. Hainsche Str. Untersuchung Lubwartturm Vollsperrung 03.07.2006-03.07.2006 ',
+         'from' => 1151791200,
+         'data' => 'userdel	2 12194,-98944 12593,-99029
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1152655200,
+         'text' => 'L 711 Buckow-Wahlsdorf zw. Wahlsdorf und Liepe Deckenerneuerung Vollsperrung 06.07.2006-11.07.2006 ',
+         'from' => 1152050400,
+         'data' => 'userdel	2 8810,-50414 6695,-50057
+',
+         'type' => 'gesperrt'
        }
      
 );

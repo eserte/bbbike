@@ -4774,9 +4774,9 @@ EOF
 userdel	2 -3584,-29888 -3733,-29501
 EOF
      },
-     { from  => 1151430940, # 2006-06-27 19:55
-       until => 1155938400, # 2006-08-19 00:00
-       text  => 'Bis 18.08.2006 Vollsperrung der L 862 zwischen Falkenrehde und Ketzin. ',
+     { from  => 1151609302, # 2006-06-29 21:28
+       until => 1157061600, # 2006-09-01 00:00
+       text  => 'Bis 31.08.2006 Vollsperrung der L 862 zwischen Falkenrehde und Ketzin. ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -22215,9500 -22510,9372 -23467,9217 -23807,9279 -24319,9296 -24594,9168 -25265,9000 -25456,8850 -25658,8777 -26243,8485 -26774,7951 -27468,7711
@@ -4838,7 +4838,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_82715',
        data  => <<EOF,
-userdel	1 -3972,15639 -3985,15770 -3735,16205 -3618,16229
+userdel	1 -3972,15639 -3985,15770 -3735,16205 -3631,16224
 EOF
      },
      { from  => 1150840800, # 2006-06-21 00:00
@@ -4882,6 +4882,30 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 30143,41500 29468,41438
+EOF
+     },
+     { from  => 1152050400, # 2006-07-05 00:00
+       until => 1159653600, # 2006-10-01 00:00
+       text  => 'L 235 Gielsdorf-Werneuchen Schulstr. in der OL Wegendorf Straßen- u. Durchlassbau Vollsperrung; 06.07.2006-30.09.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 34492,22176 34321,22151 34125,22128
+EOF
+     },
+     { from  => 1151791200, # 2006-07-02 00:00
+       until => 1151964000, # 2006-07-04 00:00
+       text  => 'B 183 Dresdner Str. OL Bad Liebenwerda, zw. Querspange u. Hainsche Str. Untersuchung Lubwartturm Vollsperrung 03.07.2006-03.07.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 12194,-98944 12593,-99029
+EOF
+     },
+     { from  => 1152050400, # 2006-07-05 00:00
+       until => 1152655200, # 2006-07-12 00:00
+       text  => 'L 711 Buckow-Wahlsdorf zw. Wahlsdorf und Liepe Deckenerneuerung Vollsperrung 06.07.2006-11.07.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 8810,-50414 6695,-50057
 EOF
      },
     );
