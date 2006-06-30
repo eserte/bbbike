@@ -400,8 +400,8 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'until' => 1152309600,
-         'text' => 'B 246 Trebbin-Beelitz OD Löwendorf, zw. Ahrensdorfer Str. u. Schillerstr. Straßen- und Kanalbau Vollsperrung 20.02.2006-07.07.2006 ',
+         'until' => 1154728800,
+         'text' => 'B 246 Trebbin-Beelitz OD Löwendorf, zw. Ahrensdorfer Str. u. Schillerstr. Straßen- und Kanalbau Vollsperrung 20.02.2006-04.08.2006 ',
          'from' => 1140303600,
          'data' => 'userdel	q4 -2643,-21212 -2815,-20920
 ',
@@ -513,12 +513,12 @@ userdel	2 41681,15915 42300,15756
          'type' => 'gesperrt'
        },
        {
-         'until' => 1153087200,
-         'text' => 'L 075 Mahlow-Berlin Karl-Marx-Str. in OD Großziethen zw. Erlenweg und Querweg Straßenbauarbeiten Vollsperrung 03.04.2006-16.07.2006 ',
-         'from' => 1143928800,
+         'until' => 1155938400,
+         'text' => 'L 075 Mahlow-Berlin Karl-Marx-Str., OD Großziethen zw.Erlenweg u.Nibelungenstr.; Straßenbauarbeiten; Vollsperrung; 30.05.2006-18.08.2006 ',
+         'from' => 1148853600,
          'data' => 'userdel	q4 13225,-681 13090,205
 ',
-         'type' => 'handicap'
+         'type' => 'gesperrt'
        },
        {
          'until' => 1155938400,
@@ -825,14 +825,7 @@ userdel	2 8595,12066 8581,11896 8571,11846
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1151618400,
-         'text' => 'B 156 Muskauer Straße Bahnübergang in der OL Spremberg Sanierung BÜ u. Tiefbau Vollsperrung 12.06.2006-29.06.2006 ',
-         'from' => 1149976800,
-         'data' => 'userdel	2 80783,-91972 80236,-92007
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1156024800,
@@ -909,6 +902,22 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'text' => 'L 711 Buckow-Wahlsdorf zw. Wahlsdorf und Liepe Deckenerneuerung Vollsperrung 06.07.2006-11.07.2006 ',
          'from' => 1152050400,
          'data' => 'userdel	2 8810,-50414 6695,-50057
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1153692000,
+         'text' => 'L 060 Marktplatz (Zentrum) OL Uebigau, zw. Elsterstr. u. Kreuzstr. Altstadtfest Vollsperrung 22.07.2006-23.07.2006 ',
+         'from' => 1153432800,
+         'data' => 'userdel	q4 5798,-90075 5358,-90502
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1152050400,
+         'text' => 'L 220 B167 Finowfurt-Joachimsthal zw. Eichhorst und Elsenau Baumfällungen Vollsperrung 04.07.2006-04.07.2006 ',
+         'from' => 1151877600,
+         'data' => 'userdel	2 29884,58862 30384,59443
 ',
          'type' => 'gesperrt'
        }

@@ -3667,8 +3667,8 @@ userdel	2 9241,1073 9024,906
 EOF
      },
      { from  => 1140303600, # 2006-02-19 00:00
-       until => 1152309600, # 2006-07-08 00:00
-       text  => 'B 246 Trebbin-Beelitz OD Löwendorf, zw. Ahrensdorfer Str. u. Schillerstr. Straßen- und Kanalbau Vollsperrung 20.02.2006-07.07.2006 ',
+       until => 1154728800, # 2006-08-05 00:00
+       text  => 'B 246 Trebbin-Beelitz OD Löwendorf, zw. Ahrensdorfer Str. u. Schillerstr. Straßen- und Kanalbau Vollsperrung 20.02.2006-04.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -2643,-21212 -2815,-20920
@@ -3991,10 +3991,10 @@ EOF
 userdel	2 -15961,38892 -16173,38465
 EOF
      },
-     { from  => 1143928800, # 2006-04-02 00:00
-       until => 1153087200, # 2006-07-17 00:00
-       text  => 'L 075 Mahlow-Berlin Karl-Marx-Str. in OD Großziethen zw. Erlenweg und Querweg Straßenbauarbeiten Vollsperrung 03.04.2006-16.07.2006 ',
-       type  => 'handicap',
+     { from  => 1148853600, # 2006-05-29 00:00
+       until => 1155938400, # 2006-08-19 00:00
+       text  => 'L 075 Mahlow-Berlin Karl-Marx-Str., OD Großziethen zw.Erlenweg u.Nibelungenstr.; Straßenbauarbeiten; Vollsperrung; 30.05.2006-18.08.2006 ',
+       type  => 'gesperrt',
        data  => <<EOF,
 userdel	q4 13225,-681 13090,205
 EOF
@@ -4906,6 +4906,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 8810,-50414 6695,-50057
+EOF
+     },
+     { from  => 1153432800, # 2006-07-21 00:00
+       until => 1153692000, # 2006-07-24 00:00
+       text  => 'L 060 Marktplatz (Zentrum) OL Uebigau, zw. Elsterstr. u. Kreuzstr. Altstadtfest Vollsperrung 22.07.2006-23.07.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 5798,-90075 5358,-90502
+EOF
+     },
+     { from  => 1151877600, # 2006-07-03 00:00
+       until => 1152050400, # 2006-07-05 00:00
+       text  => 'L 220 B167 Finowfurt-Joachimsthal zw. Eichhorst und Elsenau Baumfällungen Vollsperrung 04.07.2006-04.07.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 29884,58862 30384,59443
 EOF
      },
     );
