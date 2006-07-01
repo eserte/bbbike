@@ -2275,14 +2275,13 @@ userdel	q4 25240,-29746 25412,-29762
 userdel	q4 25412,-29762 25541,-29875
 EOF
      },
-     { from  => 1120293437, # 2005-07-02 10:37
-       until => 1120424400, # 2005-07-03 23:00
-       text  => 'Pichelsdorfer Straße, zwischen Kreuzung Wilhelmstraße und Kreuzung Betckestraße Straße gesperrt bis 03.07.2005 23:00 Uhr (Sommerfest Wilhelmstadt) ',
+     { from  => 1151745684, # 2006-07-01 11:21
+       until => 1151877600, # 2006-07-03 00:00
+       text  => 'Pichelsdorfer Straße, zwischen Kreuzung Wilhelmstraße und Kreuzung Weißenburger Str. gesperrt bis 02.07.2006 (Sommerfest Wilhelmstadt) ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -3650,12929 -3669,13015 -3764,13270 -3791,13357
 userdel	2 -3650,12929 -3641,12861 -3629,12781
-userdel	2 -3621,12575 -3624,12674 -3629,12781
 EOF
      },
      { from  => 1121032800, # 2005-07-11 00:00
@@ -3992,9 +3991,9 @@ userdel	2 -15961,38892 -16173,38465
 EOF
      },
      { from  => 1148853600, # 2006-05-29 00:00
-       until => 1155938400, # 2006-08-19 00:00
-       text  => 'L 075 Mahlow-Berlin Karl-Marx-Str., OD Großziethen zw.Erlenweg u.Nibelungenstr.; Straßenbauarbeiten; Vollsperrung; 30.05.2006-18.08.2006 ',
-       type  => 'gesperrt',
+       until => 1151877600, # 2006-07-03 00:00
+       text  => 'L 075 Mahlow-Berlin Karl-Marx-Str., OD Großziethen zw.Erlenweg u.Nibelungenstr. Straßenbauarbeiten Vollsperrung 30.05.2006-02.07.2006 ',
+       type  => 'handicap',
        data  => <<EOF,
 userdel	q4 13225,-681 13090,205
 EOF
@@ -4766,9 +4765,9 @@ EOF
 userdel	2 -28368,51517 -28736,52387
 EOF
      },
-     { from  => 1149631200, # 2006-06-07 00:00
-       until => 1151704800, # 2006-07-01 00:00
-       text  => 'K 7221 Woltersdorf-Liebätz Einmündung zur K7220 (Ruhldorf-Liebätz) Straßen- u. Radwegebau Vollsperrung 08.06.2006-30.06.2006 ',
+     { from  => 1151618400, # 2006-06-30 00:00
+       until => 1151877600, # 2006-07-03 00:00
+       text  => 'K 7221 Woltersdorf-Liebätz Einmündung zur K7220 (Ruhldorf-Liebätz) Straßen- u. Radwegebau Vollsperrung 01.07.2006-02.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 -3584,-29888 -3733,-29501
@@ -4922,6 +4921,22 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 29884,58862 30384,59443
+EOF
+     },
+     { from  => 1151618400, # 2006-06-30 00:00
+       until => 1151877600, # 2006-07-03 00:00
+       text  => 'K 7220 Luckenwalde-Liebätz zw. Ruhlsdorf und Liebätz Deckeneinbau Vollsperrung 01.07.2006-02.07.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -3607,-29164 -3733,-29501
+EOF
+     },
+     { from  => 1152050400, # 2006-07-05 00:00
+       until => 1156024800, # 2006-08-20 00:00
+       text  => 'L 079 Ludwigsfelde-Potsdam Höhe Ahrensdorf bis Kreisverk. Nudow Straßenbauarbeiten Vollsperrung 06.07.2006-19.08.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -3618,-9791 -4050,-9464 -4422,-9151 -4649,-8996
 EOF
      },
     );

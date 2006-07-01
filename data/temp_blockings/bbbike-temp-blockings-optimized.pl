@@ -168,7 +168,15 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'until' => 1151877600,
+         'text' => 'Pichelsdorfer Straße, zwischen Kreuzung Wilhelmstraße und Kreuzung Weißenburger Str. gesperrt bis 02.07.2006 (Sommerfest Wilhelmstadt) ',
+         'from' => 1151745684,
+         'data' => 'userdel	2 -3650,12929 -3669,13015 -3764,13270 -3791,13357
+userdel	2 -3650,12929 -3641,12861 -3629,12781
+',
+         'type' => 'gesperrt'
+       },
        undef,
        undef,
        undef,
@@ -259,14 +267,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1151704800,
-         'text' => 'L 382; (Birnbaumsmühle); OD Frankfurt (O), Bereich unter den Brücken DB grundh. Straßenbau Vollsperrung 28.09.2005-30.06.2006 ',
-         'from' => 1127772000,
-         'data' => 'userdel	2 85403,-4497 85666,-3989
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -357,14 +358,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1151704800,
-         'text' => 'B 122 Schloßstr. OD Rheinsberg, zw. Königstr. und Lange Str. Kanalarbeiten halbseitige Sperrung; 02.11.2005-30.06.2006 ',
-         'from' => 1130799600,
-         'data' => 'userdel	q4 -25679,76561 -25764,76324
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -467,22 +461,8 @@ userdel	q4 39715,101866 39574,101863
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1151704800,
-         'text' => 'B 198 bei Schmiedeberg Neubau Brücke Vollsperrung 16.03.2006-30.06.2006 ',
-         'from' => 1142377200,
-         'data' => 'userdel	2 46677,82770 47081,83093
-',
-         'type' => 'gesperrt'
-       },
-       {
-         'until' => 1151704800,
-         'text' => 'K 6422 Ernst-Thälmann-Str. OL Fredersdorf, Kno.. Bollensdorfer Allee u. Kno. Fließstr. Errichtung Lichtsignalanlage Vollsperrung 28.11.2005-30.06.2006 ',
-         'from' => 1133046000,
-         'data' => 'userdel	q4 34139,13113 33644,12458
-',
-         'type' => 'handicap'
-       },
+       undef,
+       undef,
        {
          'until' => 1159653600,
          'text' => 'L 220 OD Joachimsthal Bau Kreisverkehr Vollsperrung 28.03.2006-30.09.2006 ',
@@ -494,16 +474,7 @@ userdel	q4 39715,101866 39574,101863
        undef,
        undef,
        undef,
-       {
-         'until' => 1151704800,
-         'text' => 'K 6419 zw. Rehfelde, R.-Luxemburg-Str. u. OE Strausberg Straßen-,Geh- u. Radwegbau Vollsperrung 04.04.2006-30.06.2006 ',
-         'from' => 1144015200,
-         'data' => 'userdel	2 42996,14793 42578,15750
-userdel	2 42578,15750 42300,15756
-userdel	2 41681,15915 42300,15756
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1152914400,
          'text' => 'L 019 Schloßdamm, Ruppiner Str. OD Kremmen grundhafter Straßenbau Vollsperrung 27.03.2006-14.07.2006 ',
@@ -513,12 +484,12 @@ userdel	2 41681,15915 42300,15756
          'type' => 'gesperrt'
        },
        {
-         'until' => 1155938400,
-         'text' => 'L 075 Mahlow-Berlin Karl-Marx-Str., OD Großziethen zw.Erlenweg u.Nibelungenstr.; Straßenbauarbeiten; Vollsperrung; 30.05.2006-18.08.2006 ',
+         'until' => 1151877600,
+         'text' => 'L 075 Mahlow-Berlin Karl-Marx-Str., OD Großziethen zw.Erlenweg u.Nibelungenstr. Straßenbauarbeiten Vollsperrung 30.05.2006-02.07.2006 ',
          'from' => 1148853600,
          'data' => 'userdel	q4 13225,-681 13090,205
 ',
-         'type' => 'gesperrt'
+         'type' => 'handicap'
        },
        {
          'until' => 1155938400,
@@ -534,15 +505,7 @@ userdel	2 41681,15915 42300,15756
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_002598',
-         'until' => 1151704800,
-         'text' => 'Roelckestr. (Weissensee) in beiden Richtungen zwischen Charlottenburger Str. und Pistoriusstr. Baustelle, Straße bis 30.06.2006 vollständig gesperrt',
-         'from' => 1144438828,
-         'data' => 'userdel	2 13131,16525 13045,16368
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -668,15 +631,7 @@ userdel	3 8034,12093 8063,12182 8119,12414
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_002804',
-         'until' => 1151704800,
-         'text' => 'Hindenburgdamm (Steglitz) in beiden Richtungen, in Höhe Wolfensteindamm Baustelle, Straße vollständig gesperrt (bis 30.06.06)',
-         'from' => 1149229271,
-         'data' => 'userdel	2 4517,4853 4515,4966
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1152914400,
          'text' => 'B 167 Neustädter Str. OD Neuruppin, zw. Damaschkeweg u. Zufahrt Lidl Straßen-u.Kanalbau,Mittelinsel Vollsperrung 06.06.2006-14.07.2006 ',
@@ -775,14 +730,7 @@ userdel	2 8595,12066 8581,11896 8571,11846
        },
        undef,
        undef,
-       {
-         'until' => 1151704800,
-         'text' => 'K 6162 OL Waltersdorf, Siedlung Kienberg, Bau der BAB 113n, Vollsperrung 19.06.2006-30.06.2006 ',
-         'from' => 1150581600,
-         'data' => 'userdel	2 20575,-3680 20265,-3849
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1152050400,
@@ -801,9 +749,9 @@ userdel	2 8595,12066 8581,11896 8571,11846
          'type' => 'gesperrt'
        },
        {
-         'until' => 1151704800,
-         'text' => 'K 7221 Woltersdorf-Liebätz Einmündung zur K7220 (Ruhldorf-Liebätz) Straßen- u. Radwegebau Vollsperrung 08.06.2006-30.06.2006 ',
-         'from' => 1149631200,
+         'until' => 1151877600,
+         'text' => 'K 7221 Woltersdorf-Liebätz Einmündung zur K7220 (Ruhldorf-Liebätz) Straßen- u. Radwegebau Vollsperrung 01.07.2006-02.07.2006 ',
+         'from' => 1151618400,
          'data' => 'userdel	2 -3584,-29888 -3733,-29501
 ',
          'type' => 'gesperrt'
@@ -861,14 +809,7 @@ userdel	q4 7070,34665 7435,34963 7443,36175
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1151704800,
-         'text' => 'L 211 Lehnitzer Str. OD Oanienburg, zw. Lindenring u. Dr.-H.-Byk-Str. Munitionssuche u.-bergung halbseitig gesperrt; Einbahnstraße 22.06.2006-30.06.2006 ',
-         'from' => 1150840800,
-         'data' => 'userdel	q4 -954,38397 -591,37970
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        {
@@ -918,6 +859,22 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'text' => 'L 220 B167 Finowfurt-Joachimsthal zw. Eichhorst und Elsenau Baumfällungen Vollsperrung 04.07.2006-04.07.2006 ',
          'from' => 1151877600,
          'data' => 'userdel	2 29884,58862 30384,59443
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1151877600,
+         'text' => 'K 7220 Luckenwalde-Liebätz zw. Ruhlsdorf und Liebätz Deckeneinbau Vollsperrung 01.07.2006-02.07.2006 ',
+         'from' => 1151618400,
+         'data' => 'userdel	2 -3607,-29164 -3733,-29501
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1156024800,
+         'text' => 'L 079 Ludwigsfelde-Potsdam Höhe Ahrensdorf bis Kreisverk. Nudow Straßenbauarbeiten Vollsperrung 06.07.2006-19.08.2006 ',
+         'from' => 1152050400,
+         'data' => 'userdel	2 -3618,-9791 -4050,-9464 -4422,-9151 -4649,-8996
 ',
          'type' => 'gesperrt'
        }
