@@ -466,7 +466,6 @@ Niederkirchnerstr.: Kopfsteinpflaster	Q2 8739,11228 9162,11286
 Johanniterstr.: Kopfsteinpflaster	Q2 9827,10120 10061,10068 10244,9981
 Wilmsstr.: Kopfsteinpflaster	Q2 10244,9981 10397,9962
 Boppstr.: Kopfsteinpflaster	Q2 11560,9524 11794,9438
-Rufacher Weg: bedingt geeignet	Q2 12255,2058 12582,2129 12738,2162
 Bärenlauchstr.: gut geeignet	Q0 19722,5179 19745,4972 19760,4875
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9355,19789 9266,20048 9174,20316 9142,20411 8915,20605 8714,20907 8526,21110 8321,21258 8277,21257
 Quickborner Str.: Kopfsteinpflaster	Q2 8170,21304 8022,21476
@@ -507,8 +506,9 @@ Clauertstr.: Kopfsteinpflaster	Q2 -1088,2134 -755,1964 -613,1949
 Hanstedter Weg: Kopfsteinpflaster	Q2 6751,4985 6882,5027 6945,5060
 Alboinstr.: Kopfsteinpflaster (auf Fahrbahn)	Q2 8176,6065 8181,6341 8196,6775 8204,6958
 Sredzkistr.: Kopfsteinpflaster	Q2 11445,14741 11526,14693 11642,14625
-Hochspannungsweg: fester feiner Kies bzw. Verbundsteine	Q1 12694,2514 12390,2379 11747,2091
-Alt-Lichtenrade: gutes Kopfsteinpflaster	Q1 11139,-1276 11143,-1335 11068,-1574 11043,-1653 11081,-1939 11119,-1992
+Hochspannungsweg: Asphalt	Q0 12694,2514 12648,2494
+Hochspannungsweg: fester feiner Kies bzw. Verbundsteine	Q1 12648,2494 12390,2379 12363,2367 11747,2091
+Alt-Lichtenrade: gutes Kopfsteinpflaster	Q1 11162,-1273 11162,-1336 11068,-1574 11043,-1653 11081,-1939 11119,-1992
 Pasinger Str.: Kopfsteinpflaster	Q2 12052,-2250 12073,-2296 11996,-2476 11760,-2575 11360,-2648
 Weg am Tempodrom: Parkweg	Q1 8939,10657 8854,10712 8790,10706 8722,10783
 Zum Hundsteinweg: fester Sandweg	Q1 10661,2790 10775,2765
@@ -1318,6 +1318,13 @@ Altvaterstr.: Beton	Q0 -3200,3030 -3207,2898
 (Am Britzer Verbindungskanal): holpriger Feldweg	Q3 14319,5993 14212,6000
 (Am Britzer Verbindungskanal): Asphalt	Q0 14212,6000 14112,6009
 Gerosteig: Asphalt	Q0 18990,584 19384,492 19485,466
+Pätzer Str.: schlechtes Kopfsteinpflaster	Q3 12885,5205 12963,5199 13039,5122
+Haewererweg: Verbundsteinpflaster	Q1 12125,1282 12097,1243
+Wiesbadener Str. (Lichtenrade): Asphalt	Q0 11124,-598 11460,-553 11755,-519
+Taunusstr. (Lichtenrade): Asphalt	Q0 11614,-1215 11537,-952 11460,-553 11456,-498
+Goltzstr.: schlechtes Kopfsteinpflaster	Q3 10639,-2364 10447,-2518 10379,-2571 10382,-2598
+(Beethovenstr. - Mozartstr., Mauerweg): Asphalt, kurze Stücke unbefestigt	Q1 10298,-3193 10448,-3214
+Beethovenstr.: kleinteiliges Kopfsteinpflaster, uneben	Q2 10145,-2729 10298,-3193
 Viktoriastr.: mäßiges Kopfsteinpflaster	Q2 3489,4115 3768,4045
 Schützallee: mäßiges Kopfsteinpflaster und schlechter Asphalt, Radweg mit schlecter Oberfläche	Q2 2230,3823 2151,3834 1952,3864 1918,3868 1815,3876
 Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 364,4829 319,4906 168,5092 103,5123
@@ -1456,7 +1463,6 @@ Mollwitzstr.: mäßiger Asphalt	Q1 2350,12784 2546,12821
 Drei-Linien-Weg: gute Qualität	Q0 16186,23189 15976,22801
 Gudvanger Str.: guter Asphalt	Q0 11581,15831 11684,15997 11758,16111 11905,16318
 Oudenarder Str.: Kopfsteinpflaster	Q2 7231,16418 7303,16350 7439,16350 7754,16364
-Taunusstr. (Lichtenrade): gute Betonstraße	Q0 11578,-1220 11515,-935 11475,-595 11475,-548
 Kaiserswerther Str.: grobes Kopfsteinpflaster	Q3 2762,4713 2673,4651 2545,4565 2461,4556
 Schönstedtstr. (Wedding): gutes Verbundsteinpflaster	Q1 8437,15894 8278,16043
 Büchnerweg: Kopfsteinpflaster	Q2 20207,3115 20835,3496 21048,3628

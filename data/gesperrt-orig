@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.107 2006/06/27 21:14:57 eserte Exp $
+#: version: $Id: gesperrt-orig,v 4.107 2006/06/27 21:14:57 eserte Exp eserte $
 #:
 ###################################################################
 #
@@ -340,6 +340,8 @@ Graacher Str.	1 14672,17085 14533,17084
 Riastr.	1 18247,9158 18201,8984
 #: by: Corinna Orth:
 Karl-Bonhoeffer-Nervenklinik: für Unbefugte nicht befahrbar, Strafvollzug	2 5001,19832 5079,19635 5124,19634 5228,19320 5246,19244 5441,19139
+Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7605,7109 7621,7105 7655,7096 7666,7093
+Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7666,7093 7335,5807
 #
 # Potsdam
 #
@@ -535,6 +537,8 @@ Am Tierpark: Straßenbahntrasse	3nocross 18628,10177 18561,10341 18446,10620
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 #
+tragen (Treppe)	0:30 7621,7105
+tragen (Treppe)	0:30 7655,7096
 tragen (Treppe)	0:30 15571,4168
 tragen (steile Treppe)	0:30 15156,6034
 tragen (Treppe)	0:30 4798,3394
@@ -620,6 +624,7 @@ tragen (Treppe)	0:30 -7418,181
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+Drängelgitter, relativ breite Durchfahrt	BNP:3 12363,2367
 Drängelgitter	BNP:5 15516,6357
 Drängelgitter	BNP:5 15504,6328
 Drängelgitter	BNP:5 15403,6145
@@ -721,12 +726,10 @@ Voltairestr. (Arbeiten an "Alexa", voraussichtlich bis 2006-05-31)	2:inwork 1132
 #XXX del für Radfahrer nicht relevant: Malchower Chaussee (Pankow) Richtung stadteinwärts zwischen Ortnitstr. und Nachtalbenweg Baustelle, veränderte Verkehrsführung. Für die Arbeiten im Abschnitt von Darßer str. bis Nachtalbenweg wird der Verkehr über Darßer Str. - Nachtalbenw. umgeleitet (bis 30.04.2005)	1:inwork 15181,18137 14828,17856
 Schloßplatz (Bauarbeiten am Palast der Republik)	2:inwork 10267,12305 10173,12492
 Sperrung vor der amerikanischen Botschaft	2 9141,12320 9126,12413 9112,12499 9100,12627
-Alte Naumannstr.: komplett gesperrt, Bauarbeiten am neuen Vorplatz vom Bahnhof Südkreuz	2 7717,7759 7718,7641 7717,7564
+# XXX del: Alte Naumannstr.: komplett gesperrt, Bauarbeiten am neuen Vorplatz vom Bahnhof Südkreuz	2 7717,7759 7762,7734 7718,7641 7717,7564
 # XXX del??? Goethestr. (Bauarbeiten)	1:inwork 4896,11345 5053,11343
 # als "Mitte 2006" gekennzeichnet
 Markgrafenstraße Richtung Französische Straße zwischen Behrenstraße und Französische Straße, Bauarbeiten als Einbahnstraße eingerichtet, Dauer:  bis 01.07.2006	1:inwork 9636,12126 9626,12227
-#: last_checked: 2005-07-31
-Fußgängerbrücke über den Sachesendamm gesperrt, südliche Rampe ist aber befahrbar	2:inwork 7718,7641 7772,7610
 #
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv

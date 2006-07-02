@@ -20,8 +20,7 @@ Am Weidendamm: Fahrtrichtung wegen Bauarbeiten gesperrt, schieben	q4::inwork; 92
 #: last_checked: 2006-03-18
 #: note: komplette Eröffnung Herbst 2006, die Fahrbahn Richtungen Norden soll 2006-06-20 freigegeben werden
 Alexanderstr. in Richtung Stralauer Str. Baustelle, Fahrtrichtung gesperrt (bis Ende 10.2006) (Radfahrer können wahrscheinlich weiterhin passieren)	q2::inwork; 11134,12793 11207,12706 11323,12484 11333,12437 11343,12300 11351,12221
-#: last_checked: 2006-03-29
-Naumannstraße: zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße für Autofahrer gesperrt, Radfahrer können passieren	q2::inwork 7716,8048 7717,7759
+#XXX del last_checked: 2006-03-29, 2006-07-01 vom weiten: Naumannstraße: zwischen Torgauer Str. und Tempelhofer Weg Brückenarbeiten, Straße für Autofahrer gesperrt, Radfahrer können passieren	q2::inwork 7716,8048 7717,7759
 Behrenstr./Bebelplatz: Einbahnstraße	q3::inwork; 9626,12227 9700,12234 9743,12239 9801,12245
 Bauarbeiten am Pergamonmuseum, schieben	q4::inwork 9867,12651 9912,12623
 #XXX del? Prenzlauer Promenade, zw. Am Steinberg und Ostseestr. Baustelle, Sperrung stadteinwärts an Elsa-Brandström-Straße. Umleitung: Elsa-Brandström -Straße - Neumannstraße - Wisbyer Straße bis 15.06.2005	q4::inwork; 12012,16752 12046,16568 12054,16517 12097,16263 12091,16209
@@ -261,7 +260,6 @@ Moorlake - Pfaueninsel: Fußgänger, besonders an schönen Tagen	q1 -9606,1389 -964
 Karl-Marx-Allee - Kadiner Str.: Fußgänger	q1 13563,12324 13555,12259
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7948,12863 7904,12803
 (südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7717,7564 7737,7505
-(südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7718,7641 7772,7610
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
 (Gudrunstr. - Lichtenberger Brücke): Gehweg, Bordsteine	q2 16870,11920 16884,11889 16858,11860
 Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22162,4546 22111,4562 22093,4499
@@ -320,6 +318,7 @@ Altvaterstr.: Fußgänger, Bordsteine	q2 -3112,3095 -3200,3030
 #: note: laut Luftbild
 Im Gestell: Fußgänger	q1 371,4453 261,4420
 Heinitzweg: Fußgänger	q2 10329,1077 10363,1095
+Haewererweg: enge Durchfahrt, Bordstein	q1 12125,1282 12097,1243
 ######################### User Contributions #################################
 #: by: Christian Marwitz:
 Am Gemeindepark: enge Straße	q1 7172,2343 7215,2442 7209,2528 7199,2559 7030,2582 6751,2708 6697,2706

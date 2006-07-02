@@ -31,8 +31,8 @@ Potsdamer Str. - Am Karlsbad: auf linken Gehweg wechseln	PI; 7980,11070 7968,110
 Am Karlsbad - Potsdamer Str.: entweder Fußgängerampel am Schöneberger Ufer oder an der Lützowstr. benutzen	PI; 8011,11014 7968,11048 7912,10945
 Otto-Braun-Str. - Wadzeckstr.: bereits am Alexanderplatz die Straßenseite wechseln	PI; 11228,12951 11275,13026 11298,13063 11368,13170 11291,13218
 Wadzeckstr. - Otto-Braun-Str.: zunächst auf linken Gehweg weiter fahren	PI; 11291,13218 11368,13170 11446,13294
-Sachsendamm - Naumannstr.: frühzeitig (z.B. am Vorarlberger Damm) auf den linken Radweg wechseln	PI; 7606,7611 7717,7564 7718,7641
-Naumannstr. - Sachsendamm: auf dem Sachsendamm zunächst den linken Radweg benutzen	PI; 7718,7641 7717,7564 7859,7486
+Sachsendamm - Naumannstr.: frühzeitig (z.B. am Vorarlberger Damm) auf den linken Radweg wechseln	PI; 7606,7611 7717,7564 7757,7682
+Naumannstr. - Sachsendamm: auf dem Sachsendamm zunächst den linken Radweg benutzen	PI; 7757,7682 7717,7564 7859,7486
 Fußgängerampel benutzen	CP; 9944,13665 9918,13733 9792,13681
 Fußgängerampel benutzen	CP; 9944,13665 9918,13733 9810,14066
 Fußgängerampel benutzen	CP; 9810,14066 9918,13733 9944,13665
@@ -214,3 +214,7 @@ Flanaganstr. - Clayallee: Fußweg am McDrive nehmen, bis zur Ampel an der Königin
 Zeppelinstr. - Helmholtzstr.: zum Überqueren der Edisonstr. Fußgängerampel benutzen	CP 17845,6986 17924,6967 18053,6920
 Mariendorfer Damm - Heinitzweg: bereits an der Buckower Chaussee die Straßenseite wechseln	PI; 10411,966 10363,1095 10329,1077
 Heinitzweg - Mariendorfer Damm: zunächst auf dem linken Gehweg/Radweg vorfahren	PI; 10329,1077 10363,1095 10315,1223
+Zum Naturpark Schöneberg: Weg zwischen den Parkhäusern nehmen	CP; 7762,7734 7757,7682 7772,7610
+Hochspannungsweg - Buckower Damm: zunächst zur Fußgängerampel links vorfahren	CP; 12648,2494 12694,2514 12694,2544
+Hochspannungsweg: zur Überquerung des Buckower Damms Fußgängerampel links nehmen	CP; 12648,2494 12694,2514 12825,2573
+Hochspannungsweg: zur Überquerung des Buckower Damms Fußgängerampel rechts nehmen	CP; 12825,2573 12694,2514 12648,2494
