@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strasse.t,v 1.13 2006/01/18 00:44:28 eserte Exp $
+# $Id: strasse.t,v 1.14 2006/07/02 00:43:21 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -119,13 +119,19 @@ my @crossing_tests =
      ['Schönhauser\Bornholmer' => "Schönhauser", "Bornholmer"],
      [undef, ()],
     );
-	    
+
+my @parse_street_type_nr_tests =
+    (
+     ["Berliner Mauer-Radweg", "M", undef, 1],
+    );
+
 my $strip_bezirk_tests = 6;
 plan tests => (scalar(@split_street_citypart) +
 	       scalar(@beautify_landstrasse)*2 +
 	       scalar(@street_type_nr)*2 +
 	       $strip_bezirk_tests +
-	       scalar(@crossing_tests)
+	       scalar(@crossing_tests) +
+	       3*scalar(@parse_street_type_nr_tests)
 	      );
 
 for my $s (@split_street_citypart) {
@@ -170,6 +176,23 @@ for my $s (@street_type_nr) {
     my($got_type, $got_nr) = Strasse::parse_street_type_nr($str);
     is($got_type, $type, "Type for $str");
     is($got_nr, $nr, "Number for $str");
+}
+
+{
+    require Geography::Berlin_DE;
+    my $city_obj = Geography::Berlin_DE->new;
+    for my $def (@parse_street_type_nr_tests) {
+	my($strname, $exp_type, $exp_nr, $exp_do_round) = @$def;
+	my($type,$nr,$do_round);
+	($type,$nr) = Strasse::parse_street_type_nr($strname);
+	# Extra routes in and outer Berlin:
+	if (!defined $type && $city_obj && $city_obj->can("parse_street_type_nr")) {
+	    ($type, $nr, $do_round) = $city_obj->parse_street_type_nr($strname);
+	}
+	is($type, $exp_type, "Type of street");
+	is($nr, $exp_nr, "Number of street");
+	is($do_round, $exp_do_round, "Make round sign");
+    }
 }
 
 for my $def (@crossing_tests) {
