@@ -690,14 +690,7 @@ userdel	2 8032,12817 8017,12826
          'type' => 'gesperrt'
        },
        undef,
-       {
-         'until' => 1151791200,
-         'text' => 'L 099 Barnewitz - Marzahne zw. Abzw. Gortz (L911) in OL Barnewitz u. L98 in OL Marzahne Straßenbau Vollsperrung 19.06.2006-01.07.2006 ',
-         'from' => 1150581600,
-         'data' => 'userdel	2 -46651,12935 -45980,13284
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1154124000,
          'text' => 'L 601 OL Finsterwlalde, Schützenstr. zw. Einm. Leipziger und Tuchmacherstr.: Vollsperrung 12.06.2006-28.07.2006 ',
@@ -875,6 +868,22 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'text' => 'L 079 Ludwigsfelde-Potsdam Höhe Ahrensdorf bis Kreisverk. Nudow Straßenbauarbeiten Vollsperrung 06.07.2006-19.08.2006 ',
          'from' => 1152050400,
          'data' => 'userdel	2 -3618,-9791 -4050,-9464 -4422,-9151 -4649,-8996
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1152061200,
+         'text' => 'Der große Stern wird zu den Halbfinalspielen am 4.7.2006 von 11.00 Uhr bis zum 5.7.2006 03.00 Uhr gesperrt. ',
+         'from' => 1151917200,
+         'data' => 'userdel	2 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1152504000,
+         'text' => 'Der große Stern wird zum Finalspiel am 9.7.2006 von 03.00 Uhr bis zum 10.7.2006 06.00 Uhr gesperrt. ',
+         'from' => 1152320400,
+         'data' => 'userdel	2 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104
 ',
          'type' => 'gesperrt'
        }

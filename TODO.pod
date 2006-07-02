@@ -1833,6 +1833,13 @@ ich jetzt auch...
 
 =over
 
+=item * (H5)
+
+In der Routenliste problematische Kreuzungen anzeigen, zum Beispiel
+eine abknickende Straße mit dem gleichen Straßennamen (das Abbiegen
+wird nirgendwo angezeigt) oder bei Kreuzungen mit abknickender
+Vorfahrt.
+
 =item * (H4)
 
 Neue Kategorie 0 und BNP mit Richtungsabhängigkeit einführen. Z.B.

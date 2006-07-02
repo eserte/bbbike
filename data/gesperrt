@@ -309,6 +309,13 @@ Riastr.	1 18247,9158 18201,8984
 Karl-Bonhoeffer-Nervenklinik: für Unbefugte nicht befahrbar, Strafvollzug	2 5001,19832 5079,19635 5124,19634 5228,19320 5246,19244 5441,19139
 Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7605,7109 7621,7105 7655,7096 7666,7093
 Schöneberger Südgelände: Radfahren verboten, Eintritt 1 Euro	2 7666,7093 7335,5807
+Sophie-Taeuber-Arp-Weg	1 3300,2464 3293,2218
+Prießnitzstr.	1 11549,19258 11407,19186 11351,19169
+Klaustaler Str.	1 11439,18890 11384,19067
+Paracelsusstr.	1 11599,19171 11549,19258 11543,19279 11575,19296 11613,19312 11671,19204
+Wormbacher Weg	1 3791,338 3782,397 3648,531
+Schwelmer Str.	1 3688,292 3569,469 3497,574
+Schöppinger Str.	1 3691,566 3648,531 3569,469
 Mauerstr.	1 -13425,-852 -13500,-640
 Wilhelm-Staab-Str.	1 -13003,-1343 -12992,-1222 -12984,-1110
 Benkertstr.	1 -12685,-870 -12712,-734 -12730,-627
@@ -362,7 +369,7 @@ Neue Schönhauser Str.	1s 10528,13243 10441,13195 10305,13211
 Alte Schönhauser Str.	1s 10718,13625 10746,13673
 Kirchhofstr.	1s 13188,7590 13117,7471 13032,7334
 Niemannstr.	1s 14252,11368 14211,11229
-Björnsonstr	1s 10229,16653 10215,16527
+Björnsonstr	1s 10208,16659 10198,16528
 Eichhornstr.	1s 8232,11414 8258,11254
 Paul-Junius-Str.	1s 15084,12975 15085,13105
 Ahornallee	1s 1589,11483 1574,11379
@@ -380,7 +387,7 @@ Mangerstr. (Potsdam) (Umgehung auf Gehweg oder Uferweg möglich)	1s -12064,-284 -
 Stephanstr.	1s 6526,4475 6377,4490
 Am Poetensteig, Gramzow	1s 50043,90187 50109,89725
 Ringbahnstr.	1s 8717,6965 8447,6964
-Björnsonstr.	1s 10229,16653 10215,16527
+Björnsonstr.	1s 10208,16659 10198,16528
 Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3 11462,12384 11333,12437 11343,12300
 Alexanderstr. -> Schillingstr.: umbequemes Überqueren wegen Bordsteinen	3 11323,12484 11333,12437 11462,12384
 Karl-Liebknecht-Str. -> Alexanderpl. [Dircksenstr./zur Karl-Liebknecht-Str.]: Straßenbahntrasse in Bau	3 10920,13139 10781,13002 10844,12935
@@ -405,10 +412,10 @@ Rhinstr. -> Kolonie Friedrichsfelde Nord: Straßenbahntrasse	3 18215,12132 18216,
 Kolonie Friedrichsfelde Nord -> Rhinstr.: Straßenbahntrasse	3 18180,12262 18216,12262 18220,12450
 Langhoffstr. -> Allee der Kosmonauten: Straßenbahntrasse	3 19821,13604 19807,13529 20182,13554
 Allee der Kosmonauten -> Langhoffstr.: Straßenbahntrasse	3 19628,13517 19807,13529 19821,13604
-Aalesunder Str. -> Bornholmer Str.: Straßenbahntrasse	3 10549,16654 10533,16505 10635,16497
+Aalesunder Str. -> Bornholmer Str.: Straßenbahntrasse	3 10549,16654 10533,16505 10620,16497
 Bornholmer Str. -> Aalesunder Str.: Straßenbahntrasse	3 10445,16511 10533,16505 10549,16654
 Andersenstr. -> Bornholmer Str.: Straßenbahntrasse	3 10315,16651 10300,16521 10370,16516
-Bornholmer Str. -> Andersenstr.: Straßenbahntrasse	3 10215,16527 10300,16521 10315,16651
+Bornholmer Str. -> Andersenstr.: Straßenbahntrasse	3 10198,16528 10300,16521 10315,16651
 Karl-Liebknecht-Str. -> Rosenstr.: Straßenbahntrasse	3 10440,12696 10519,12768 10489,12803
 Rosenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3 10489,12803 10519,12768 10699,12929
 Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen	3 6514,9775 6520,9867 6463,9862
@@ -540,12 +547,12 @@ Lewishamstr. -> Waitzstr.: Straßentunnelrampe	3 3813,10435 3771,10511 3739,10495
 Waitzstr. -> Lewishamstr.: Straßentunnelrampe	3 3739,10495 3771,10511 3739,10576
 Rauchstr. -> Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3 6683,11367 6853,11336 6825,11486
 Klingelhöferstr. -> Rauchstr.: unbequem passierbarer Mittelstreifen	3 6880,11110 6853,11336 6683,11367
+Bornholmer Str. -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3 10198,16528 9998,16547 9982,16527
+Treppe zum Kolonnenweg -> Bornholmer Str.: Straßenbahn auf Mittelstreifen	3 9983,16561 9998,16547 10198,16528
 Treppe zum Kolonnenweg -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3 9983,16561 9998,16547 9982,16527
-Treppe zum Kolonnenweg -> Bornholmer Str.: Straßenbahn auf Mittelstreifen	3 9983,16561 9998,16547 10215,16527
 Treppe zum Kolonnenweg -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3 9982,16527 9998,16547 9983,16561
 Treppe zum Kolonnenweg -> Bornholmer Str.: Straßenbahn auf Mittelstreifen	3 9982,16527 9998,16547 9883,16557
 Bornholmer Str. -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3 9883,16557 9998,16547 9983,16561
-Bornholmer Str. -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen	3 10215,16527 9998,16547 9982,16527
 Kreutzigerstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3 14285,12190 14291,12220 14208,12235
 Frankfurter Allee -> Kreutzigerstr.: unbequem passierbarer Mittelstreifen	3 14381,12205 14291,12220 14285,12190
 Frankfurter Allee -> Gabelsbergerstr.: unbequem passierbarer Mittelstreifen	3 14291,12220 14381,12205 14451,12396
