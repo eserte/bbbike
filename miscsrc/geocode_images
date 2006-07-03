@@ -4,7 +4,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
 
 use File::Spec;
 use File::Basename;
@@ -135,20 +135,15 @@ for my $file (@ARGV) {
 	    ($Karte::Polar::obj->map2standard($long, $lat));
 	my $abs_file = File::Spec->rel2abs($file);
 	my $thumb_file = create_thumbnail($file);
-	my $hm = s2hm($interval);
-	print qq{Image: "$abs_file" ($lat/$long) ($date) ($hm)\tIMG:$thumb_file $x,$y\n};
+	if (defined $thumb_file) {
+	    my $hm = s2hm($interval);
+	    print qq{Image: "$abs_file" ($lat/$long) ($date) ($hm)\tIMG:$thumb_file $x,$y\n};
+	}
     }
 }
 
 sub create_thumbnail {
     my $file = shift;
-    warn "Create thumbnail for $file...\n" if $v;
-    open my $IN, $file or die "Could not open $file: $!";
-    binmode $IN;
-    my $srcImage = GD::Image->new($IN);
-    close $IN;
-
-    my ($thumb,$x,$y) = Image::GD::Thumbnail::create($srcImage,50);
 
     # Save your thumbnail
     my $dest;
@@ -159,12 +154,30 @@ sub create_thumbnail {
     } else {
 	$dest = $thumbnail_dir . "/" . basename($file);
     }
-    open my $OUT, ">", $dest or die "Could not save $dest: $!";
-    binmode $OUT;
-    print $OUT $thumb->jpeg;
-    close $OUT;
 
-    $dest;
+    return $dest if (-r $dest);
+
+    warn "Create thumbnail for $file...\n" if $v;
+
+    my ($thumb,$x,$y);
+    eval {
+	open my $IN, $file or die "Could not open $file: $!";
+	binmode $IN;
+	my $srcImage = GD::Image->new($IN);
+	close $IN;
+	
+	($thumb,$x,$y) = Image::GD::Thumbnail::create($srcImage,50);
+    };
+    if ($@) {
+	warn $@;
+	return undef;
+    } else {
+	open my $OUT, ">", $dest or die "Could not save $dest: $!";
+	binmode $OUT;
+	print $OUT $thumb->jpeg;
+	close $OUT;
+	return $dest;
+    }
 }
 
 __END__
