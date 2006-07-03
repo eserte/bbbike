@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeViewImages.pm,v 1.6 2005/07/26 19:30:43 eserte Exp $
+# $Id: BBBikeViewImages.pm,v 1.7 2006/07/03 12:05:18 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2005 Slaven Rezic. All rights reserved.
@@ -14,7 +14,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $image_viewer_toplevel);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
 
 my $iso_date_rx = qr{(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})};
 
@@ -61,12 +61,13 @@ sub button {
 	$date_a cmp $date_b;
     } grep {
 	my(@tags) = $c->gettags($_);
-	my $name = $tags[1];
-	$name =~ /^Image:/;
+	# Could be tag inx 1 or 2
+	grep { /^Image:/ } @tags;
+	#my $name = $tags[1];
+	#$name =~ /^Image:/;
     } $c->find("overlapping",
 	       $img_x-10, $img_y-10,
 	       $img_x+10, $img_y+10);
-
     show_image_viewer(-canvas    => $c,
 		      -allimages => \@all_image_inx,
 		      -current   => $current_inx,
@@ -80,7 +81,7 @@ sub show_image_viewer {
 						    -current)};
 
     my(@tags) = $c->gettags($current_inx);
-    my $name = $tags[1];
+    my $name = $tags[1]; # XXX should also check for inx=2!
     if ($name =~ /^Image:\s*\"([^\"]+)\"/) {
 	my $abs_file = $1;
 	if (!-e $abs_file) {
