@@ -168,15 +168,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'until' => 1151877600,
-         'text' => 'Pichelsdorfer Straße, zwischen Kreuzung Wilhelmstraße und Kreuzung Weißenburger Str. gesperrt bis 02.07.2006 (Sommerfest Wilhelmstadt) ',
-         'from' => 1151745684,
-         'data' => 'userdel	2 -3650,12929 -3669,13015 -3764,13270 -3791,13357
-userdel	2 -3650,12929 -3641,12861 -3629,12781
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -483,14 +475,7 @@ userdel	q4 39715,101866 39574,101863
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1151877600,
-         'text' => 'L 075 Mahlow-Berlin Karl-Marx-Str., OD Großziethen zw.Erlenweg u.Nibelungenstr. Straßenbauarbeiten Vollsperrung 30.05.2006-02.07.2006 ',
-         'from' => 1148853600,
-         'data' => 'userdel	q4 13225,-681 13090,205
-',
-         'type' => 'handicap'
-       },
+       undef,
        {
          'until' => 1155938400,
          'text' => 'L 077 Lindenstr. OD Stahnsdorf, zw. Streuobsthang u. Ruhlsdorfer Str. Geh- und Radwegbau halbseitig gesperrt; Einbahnstraße 03.04.2006-18.08.2006 ',
@@ -741,14 +726,7 @@ userdel	2 8595,12066 8581,11896 8571,11846
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1151877600,
-         'text' => 'K 7221 Woltersdorf-Liebätz Einmündung zur K7220 (Ruhldorf-Liebätz) Straßen- u. Radwegebau Vollsperrung 01.07.2006-02.07.2006 ',
-         'from' => 1151618400,
-         'data' => 'userdel	2 -3584,-29888 -3733,-29501
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1157061600,
          'text' => 'Bis 31.08.2006 Vollsperrung der L 862 zwischen Falkenrehde und Ketzin. ',
@@ -823,14 +801,7 @@ userdel	q4 7070,34665 7435,34963 7443,36175
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1151964000,
-         'text' => 'B 183 Dresdner Str. OL Bad Liebenwerda, zw. Querspange u. Hainsche Str. Untersuchung Lubwartturm Vollsperrung 03.07.2006-03.07.2006 ',
-         'from' => 1151791200,
-         'data' => 'userdel	2 12194,-98944 12593,-99029
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1152655200,
          'text' => 'L 711 Buckow-Wahlsdorf zw. Wahlsdorf und Liepe Deckenerneuerung Vollsperrung 06.07.2006-11.07.2006 ',
@@ -855,14 +826,7 @@ userdel	q4 7070,34665 7435,34963 7443,36175
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1151877600,
-         'text' => 'K 7220 Luckenwalde-Liebätz zw. Ruhlsdorf und Liebätz Deckeneinbau Vollsperrung 01.07.2006-02.07.2006 ',
-         'from' => 1151618400,
-         'data' => 'userdel	2 -3607,-29164 -3733,-29501
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1156024800,
          'text' => 'L 079 Ludwigsfelde-Potsdam Höhe Ahrensdorf bis Kreisverk. Nudow Straßenbauarbeiten Vollsperrung 06.07.2006-19.08.2006 ',
@@ -884,6 +848,15 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'text' => 'Der große Stern wird zum Finalspiel am 9.7.2006 von 03.00 Uhr bis zum 10.7.2006 06.00 Uhr gesperrt. ',
          'from' => 1152320400,
          'data' => 'userdel	2 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'source_id' => 'IM_003018',
+         'until' => 1153346400,
+         'text' => 'Bäkestr. (Steglitz) in beiden Richtungen, zwischen Ostpreußendamm und Hindenburgdamm Baustelle, Straße vollständig gesperrt (bis 19.07.06)',
+         'from' => 1151965861,
+         'data' => 'userdel	2 4409,3173 4582,3076 4643,3046 4825,2958
 ',
          'type' => 'gesperrt'
        }

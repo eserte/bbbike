@@ -4,7 +4,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
 
 use File::Spec;
 use File::Basename;
@@ -14,7 +14,6 @@ eval 'use Image::ExifTool qw(ImageInfo);';
 eval 'use Digest::MD5 qw(md5_hex);';
 use Time::Local qw(timelocal);
 use GD;
-use Image::GD::Thumbnail;
 use FindBin;
 
 use lib "$FindBin::RealBin/..";
@@ -25,14 +24,85 @@ use BBBikeUtil qw(s2hm);
 
 my $gps_data_dir = "$FindBin::RealBin/../misc/gps_data";
 my $thumbnail_dir = "/tmp/thumbnails";
+my $clock_gps;
+my $clock_camera;
+my $anchor;
+my $thumbnail_size = 50;
+my $converter = "best";
+my $recreate_thumbnails;
 my $v;
 
 GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "thumbnaildir=s" => \$thumbnail_dir,
+	   "clockgps=s" => \$clock_gps,
+	   "clockcamera=s" => \$clock_camera,
+	   "anchor=s" => \$anchor,
+	   "thumbnailsize=i" => \$thumbnail_size,
+	   "converter=s" => \$converter,
+	   "recreatethumbnails" => \$recreate_thumbnails,
 	   "v!" => \$v,
-	  ) or die "usage: $0 [-gpsdatadir directory] [-thumbnaildir directory] [-v] image ...";
+	  ) or die <<EOF;
+usage: $0 [-gpsdatadir directory] [-thumbnaildir directory]
+          [-clockgps HH:MM:SS -clockcamera HH:MM:SS]
+	  [-anchor nw|n|ne|e|se|s|sw] [-thumbnailsize pixels]
+          [-converter Image::GD::Thumbnail|ImageMagick|ImageMagick+exiftool|best|fast]
+	  [-recreatethumbnails]
+          [-v] image ...
+EOF
 
 mkdir $thumbnail_dir if !-d $thumbnail_dir;
+if (!-d $thumbnail_dir) {
+    die "Cannot create thumbnail directory <$thumbnail_dir>: $!";
+}
+
+my $cam_delta = 0;
+if ($clock_gps || $clock_camera) {
+    for my $check ([\$clock_gps,    "-clockgps"],
+		   [\$clock_camera, "-clockcamera"],
+		  ) {
+	my($varref, $opt) = @$check;
+	if ($$varref !~ m{^\d{1,2}:\d{2}(:\d{2})?}) {
+	    die "$opt must be in format HH:MM or HH:MM:SS";
+	}
+    }
+    my($gps_H, $gps_M, $gps_S) = split /:/, $clock_gps;
+    my($cam_H, $cam_M, $cam_S) = split /:/, $clock_camera;
+    my $gps_seconds = $gps_H*60*60 + $gps_M*60 + ($gps_S||0);
+    my $cam_seconds = $cam_H*60*60 + $cam_M*60 + ($cam_S||0);
+    $cam_delta = $cam_seconds - $gps_seconds;
+}
+
+my @converter;
+if ($converter eq 'best') {
+    push @converter, 'ImageMagick', 'ImageMagick+exiftool', 'Image::GD::Thumbnail';
+} elsif ($converter eq 'fast') {
+    push @converter, 'ImageMagick+exiftool', 'ImageMagick', 'Image::GD::Thumbnail';
+} else {
+    @converter = $converter;
+}
+for my $try_converter (@converter) {
+    if ($try_converter eq 'Image::GD::Thumbnail') {
+	if (eval { require Image::GD::Thumbnail; 1 }) {
+	    $converter = $try_converter;
+	    last;
+	}
+    } elsif ($try_converter eq 'ImageMagick') {
+	if (is_in_path("convert")) {
+	    $converter = $try_converter;
+	    last;
+	}
+    } elsif ($try_converter eq 'ImageMagick+exiftool') {
+	if (is_in_path("convert") && is_in_path("exiftool")) {
+	    $converter = $try_converter;
+	    last;
+	}
+    } else {
+	die "Unknown converter <$try_converter>";
+    }
+}
+if (!$converter) {
+    die "Can't use any converter from @converter";
+}
 
 sub get_image_location {
     my $file = shift;
@@ -80,48 +150,69 @@ sub get_image_location {
 
     my $iso_date = sprintf "%04d-%02d-%02dT%02d:%02d:%02d", $y,$m,$d,$H,$M,$S;
     my $epoch = timelocal($S,$M,$H,$d,$m-1,$y-1900);
+    $epoch -= $cam_delta;
 
-    my @filenames = map { $gps_data_dir . "/" . $_ }
-	(sprintf("%04d%02d%02d.trk", $y,$m,$d),
-	 sprintf("%04d-%02d-%02d.trk", $y,$m,$d),
-	);
+    my $isodate1 = sprintf("%04d%02d%02d", $y,$m,$d);
+    my $isodate2 = sprintf("%04d-%02d-%02d", $y,$m,$d);
 
-    for my $filename (@filenames) {
-	warn "Try $filename for date $iso_date...\n"
+    my @filenames = map { $gps_data_dir . "/" . $_ } ("$isodate1.trk", "$isodate2.trk");
+
+    my $filename;
+    for my $check_filename (@filenames) {
+	warn "Try $check_filename for date $iso_date...\n"
 	    if $v;
+	if (-e $check_filename) {
+	    $filename = $check_filename;
+	    last;
+	}
+    }
 
-	if (-e $filename) {
-	    my $gps = GPS::GpsmanData->new;
-	    $gps->load($filename);
-	    my $got_wpt;
-	    my $last_wpt;
-	    my $interval;
-	    for my $wpt (@{ $gps->Track }) {
-		my $wpt_epoch = $wpt->Comment_to_unixtime;
-		if ($wpt_epoch > $epoch) {
-		    if ($last_wpt &&
-			abs($last_wpt->Comment_to_unixtime - $epoch) <
-			abs($wpt_epoch - $epoch)) {
-			$got_wpt = $last_wpt;
-		    } else {
-			$got_wpt = $wpt;
-		    }
-		    last;
+    if (!$filename) {
+	for my $check_filename (glob("$gps_data_dir/*$isodate1*.trk"),
+				glob("$gps_data_dir/*$isodate1*.track*"),
+				glob("$gps_data_dir/*$isodate2*.trk"),
+				glob("$gps_data_dir/*$isodate2*.track*"),
+			       ) {
+	    warn "Try $check_filename (via globbing)...\n"
+		if $v;
+	    if (-e $check_filename) { # should never fail
+		$filename = $check_filename;
+		last;
+	    }
+	}
+    }
+
+    if ($filename) {
+	my $gps = GPS::GpsmanData->new;
+	$gps->load($filename);
+	my $got_wpt;
+	my $last_wpt;
+	my $interval;
+	for my $wpt (@{ $gps->Track }) {
+	    my $wpt_epoch = $wpt->Comment_to_unixtime;
+	    if ($wpt_epoch > $epoch) {
+		if ($last_wpt &&
+		    abs($last_wpt->Comment_to_unixtime - $epoch) <
+		    abs($wpt_epoch - $epoch)) {
+		    $got_wpt = $last_wpt;
+		} else {
+		    $got_wpt = $wpt;
 		}
-		$last_wpt = $wpt;
+		last;
 	    }
-	    if (!$got_wpt) {
-		$got_wpt = $gps->Track->[-1];
-	    }
-	    $interval = abs($got_wpt->Comment_to_unixtime - $epoch);
-	    if ($got_wpt) {
-		return { Latitude  => $got_wpt->Latitude,
-			 Longitude => $got_wpt->Longitude,
-			 Interval  => $interval,
-			 Waypoint  => $got_wpt,
-			 Date      => $iso_date,
-		       };
-	    }
+	    $last_wpt = $wpt;
+	}
+	if (!$got_wpt) {
+	    $got_wpt = $gps->Track->[-1];
+	}
+	$interval = abs($got_wpt->Comment_to_unixtime - $epoch);
+	if ($got_wpt) {
+	    return { Latitude  => $got_wpt->Latitude,
+		     Longitude => $got_wpt->Longitude,
+		     Interval  => $interval,
+		     Waypoint  => $got_wpt,
+		     Date      => $iso_date,
+		   };
 	}
     }
     undef;
@@ -137,7 +228,11 @@ for my $file (@ARGV) {
 	my $thumb_file = create_thumbnail($file);
 	if (defined $thumb_file) {
 	    my $hm = s2hm($interval);
-	    print qq{Image: "$abs_file" ($lat/$long) ($date) ($hm)\tIMG:$thumb_file $x,$y\n};
+	    print qq{Image: "$abs_file" ($lat/$long) ($date) ($hm)\tIMG:$thumb_file};
+	    if ($anchor) {
+		print qq{|ANCHOR:$anchor};
+	    }
+	    print qq{ $x,$y\n};
 	}
     }
 }
@@ -155,10 +250,23 @@ sub create_thumbnail {
 	$dest = $thumbnail_dir . "/" . basename($file);
     }
 
-    return $dest if (-r $dest);
+    return $dest if (-r $dest && !$recreate_thumbnails);
 
     warn "Create thumbnail for $file...\n" if $v;
 
+    if ($converter eq 'Image::GD::Thumbnail') {
+	return create_thumbnail_Image_GD_Thumbnail($file, $dest);
+    } elsif ($converter eq 'ImageMagick') {
+	return create_thumbnail_ImageMagick($file, $dest);
+    } elsif ($converter eq 'ImageMagick+exiftool') {
+	return create_thumbnail_ImageMagick_exiftool($file, $dest);
+    } else {
+	die "Unknown converter $converter";
+    }
+}
+
+sub create_thumbnail_Image_GD_Thumbnail {
+    my($file, $dest) = @_;
     my ($thumb,$x,$y);
     eval {
 	open my $IN, $file or die "Could not open $file: $!";
@@ -166,7 +274,7 @@ sub create_thumbnail {
 	my $srcImage = GD::Image->new($IN);
 	close $IN;
 	
-	($thumb,$x,$y) = Image::GD::Thumbnail::create($srcImage,50);
+	($thumb,$x,$y) = Image::GD::Thumbnail::create($srcImage,$thumbnail_size);
     };
     if ($@) {
 	warn $@;
@@ -179,6 +287,104 @@ sub create_thumbnail {
 	return $dest;
     }
 }
+
+sub create_thumbnail_ImageMagick_exiftool {
+    my($file, $dest) = @_;
+    require File::Temp;
+    my(undef,$smallfile) = File::Temp::tempfile(SUFFIX => ".jpg", UNLINK => 1);
+    my $cmd = "exiftool -ThumbnailImage -b $file > $smallfile";
+    warn "$cmd\n" if $v;
+    system($cmd);
+    if ($? != 0 || -z $smallfile) {
+	my $cmd = "exiftool -PreviewImage -b $file > $smallfile";
+	warn "$cmd\n" if $v;
+	system($cmd);
+	if ($? != 0 || -z $smallfile) {
+	    $smallfile = $file;
+	}
+    }
+    create_thumbnail_ImageMagick($smallfile, $dest);
+}
+
+sub create_thumbnail_ImageMagick {
+    my($file, $dest) = @_;
+    my @cmd = ("convert", "-resize", $thumbnail_size ."x". $thumbnail_size, $file, $dest);
+    warn "@cmd\n" if $v;
+    system @cmd;
+    if ($? != 0 || -z $dest) {
+	warn "@cmd failed: $?";
+	return undef;
+    } else {
+	return $dest;
+    }
+}
+
+# REPO BEGIN
+# REPO NAME is_in_path /home/e/eserte/work/srezic-repository 
+# REPO MD5 81c0124cc2f424c6acc9713c27b9a484
+
+=head2 is_in_path($prog)
+
+=for category File
+
+Return the pathname of $prog, if the program is in the PATH, or undef
+otherwise.
+
+DEPENDENCY: file_name_is_absolute
+
+=cut
+
+sub is_in_path {
+    my($prog) = @_;
+    return $prog if (file_name_is_absolute($prog) and -f $prog and -x $prog);
+    require Config;
+    my $sep = $Config::Config{'path_sep'} || ':';
+    foreach (split(/$sep/o, $ENV{PATH})) {
+	if ($^O eq 'MSWin32') {
+	    # maybe use $ENV{PATHEXT} like maybe_command in ExtUtils/MM_Win32.pm?
+	    return "$_\\$prog"
+		if (-x "$_\\$prog.bat" ||
+		    -x "$_\\$prog.com" ||
+		    -x "$_\\$prog.exe" ||
+		    -x "$_\\$prog.cmd");
+	} else {
+	    return "$_/$prog" if (-x "$_/$prog" && !-d "$_/$prog");
+	}
+    }
+    undef;
+}
+# REPO END
+
+# REPO BEGIN
+# REPO NAME file_name_is_absolute /home/e/eserte/work/srezic-repository 
+# REPO MD5 89d0fdf16d11771f0f6e82c7d0ebf3a8
+
+=head2 file_name_is_absolute($file)
+
+=for category File
+
+Return true, if supplied file name is absolute. This is only necessary
+for older perls where File::Spec is not part of the system.
+
+=cut
+
+BEGIN {
+    if (eval { require File::Spec; defined &File::Spec::file_name_is_absolute }) {
+	*file_name_is_absolute = \&File::Spec::file_name_is_absolute;
+    } else {
+	*file_name_is_absolute = sub {
+	    my $file = shift;
+	    my $r;
+	    if ($^O eq 'MSWin32') {
+		$r = ($file =~ m;^([a-z]:(/|\\)|\\\\|//);i);
+	    } else {
+		$r = ($file =~ m|^/|);
+	    }
+	    $r;
+	};
+    }
+}
+# REPO END
 
 __END__
 
@@ -205,6 +411,18 @@ I<YYYY-MM-DD.trk>.
     find ~/images/scans/Baltikum-02/baltics-bestof/ -name "*.jpg" -print0 | xargs -0 ~/src/bbbike/miscsrc/geocode_images -v -gpsdatadir ~/src/bbbike/misc/gps_data/polen_baltikum/ > /tmp/5.bbd
 
     cd ~/images/from_handy/Fotos/ && find . -name "*.jpg" -print0 | xargs -0 ~/src/bbbike/miscsrc/geocode_images > /tmp/1.bbd
+
+Or put instructions in a makefile:
+
+    geocode-rj1:
+	mkdir -p rj-fotos/.xvpics
+	$(HOME)/src/bbbike/miscsrc/geocode_images \
+	    -gpsdatadir $(HOME)/src/bbbike/misc/gps_data/other \
+	    -thumbnaildir ${.CURDIR}/rj-fotos/.xvpics \
+	    -converter fast \
+	    -clockgps 08:52:02 -clockcamera 08:49:43 \
+	    -v -anchor nw \
+	    rj-fotos/*.jpg > rj-fotos.bbd
 
 =head1 HOWTO
 

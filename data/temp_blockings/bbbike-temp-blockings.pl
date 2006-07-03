@@ -4955,4 +4955,13 @@ EOF
 userdel	2 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104
 EOF
      },
+     { from  => 1151965861, # 2006-07-04 00:31
+       until => 1153346400, # 2006-07-20 00:00
+       text  => 'Bäkestr. (Steglitz) in beiden Richtungen, zwischen Ostpreußendamm und Hindenburgdamm Baustelle, Straße vollständig gesperrt (bis 19.07.06)',
+       type  => 'gesperrt',
+       source_id => 'IM_003018',
+       data  => <<EOF,
+userdel	2 4409,3173 4582,3076 4643,3046 4825,2958
+EOF
+     },
     );
