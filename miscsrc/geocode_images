@@ -4,7 +4,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/);
 
 use File::Spec;
 use File::Basename;
@@ -30,7 +30,7 @@ my $v;
 GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "thumbnaildir=s" => \$thumbnail_dir,
 	   "v!" => \$v,
-	  ) or die "usage!";
+	  ) or die "usage: $0 [-gpsdatadir directory] [-thumbnaildir directory] [-v] image ...";
 
 mkdir $thumbnail_dir if !-d $thumbnail_dir;
 
