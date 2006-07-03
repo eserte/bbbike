@@ -67,7 +67,11 @@ struct('GPS::Gpsman::Waypoint' =>
 
     sub Comment_to_unixtime {
 	my $wpt = shift;
-	if ($wpt->Comment =~ /^(\d{1,2})-([^-]{3})-(\d{4})\s+(\d{1,2}):(\d{2}):(\d{2})/) {
+	if ($wpt->Comment =~ /^(\d{4})-(\d{2})-(\d{2})\s+(\d{1,2}):(\d{2}):(\d{2})/) {
+	    my($y,$m,$d, $H,$M,$S) = ($1,$2,$3,$4,$5,$6);
+	    require Time::Local;
+	    Time::Local::timelocal($S,$M,$H,$d,$m-1,$y-1900);
+	} elsif ($wpt->Comment =~ /^(\d{1,2})-([^-]{3})-(\d{4})\s+(\d{1,2}):(\d{2}):(\d{2})/) {
 	    my($d,$m_name,$y, $H,$M,$S) = ($1,$2,$3,$4,$5,$6);
 	    my $m = GPS::GpsmanData::monthabbrev_number($m_name);
 	    return undef if !defined $m;
