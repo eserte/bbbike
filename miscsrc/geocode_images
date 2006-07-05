@@ -4,7 +4,7 @@
 #
 
 use strict;
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/);
 
 use File::Spec;
 use File::Basename;
@@ -14,6 +14,7 @@ eval 'use Image::ExifTool qw(ImageInfo);';
 eval 'use Digest::MD5 qw(md5_hex);';
 use Time::Local qw(timelocal);
 use GD;
+use DB_File;
 use FindBin;
 
 use lib "$FindBin::RealBin/..";
@@ -30,9 +31,12 @@ my $anchor;
 my $thumbnail_size = 50;
 my $converter = "best";
 my $recreate_thumbnails;
+my $date_index_file;
+my $date_db;
 my $v;
 
 GetOptions("gpsdatadir=s" => \$gps_data_dir,
+	   "dateindex=s" => \$date_index_file,
 	   "thumbnaildir=s" => \$thumbnail_dir,
 	   "clockgps=s" => \$clock_gps,
 	   "clockcamera=s" => \$clock_camera,
@@ -76,7 +80,9 @@ my @converter;
 if ($converter eq 'best') {
     push @converter, 'ImageMagick', 'ImageMagick+exiftool', 'Image::GD::Thumbnail';
 } elsif ($converter eq 'fast') {
-    push @converter, 'ImageMagick+exiftool', 'ImageMagick', 'Image::GD::Thumbnail';
+    push @converter, 'ImageMagick+exiftool', 'Image::GD::Thumbnail', 'ImageMagick';
+} elsif ($converter eq 'veryfast') {
+    push @converter, 'Image::GD::Thumbnail', 'ImageMagick+exiftool', 'ImageMagick';
 } else {
     @converter = $converter;
 }
@@ -148,9 +154,56 @@ sub get_image_location {
 
     return if (!defined $y);
 
-    my $iso_date = sprintf "%04d-%02d-%02dT%02d:%02d:%02d", $y,$m,$d,$H,$M,$S;
     my $epoch = timelocal($S,$M,$H,$d,$m-1,$y-1900);
     $epoch -= $cam_delta;
+    my @l = localtime $epoch;
+    ($S,$M,$H,$d,$m,$y) = @l;
+    $y+=1900;
+    $m++;
+
+    my $iso_date = sprintf "%04d-%02d-%02dT%02d:%02d:%02d", $y,$m,$d,$H,$M,$S;
+    my $iso_date2 = sprintf "%04d-%02d-%02dT%02d%02d%02d", $y,$m,$d,$H,$M,$S;
+
+    if ($date_db) {
+	my($key, $val) = ($iso_date2, "");
+	my $st = $date_db->seq($key, $val, R_CURSOR);
+	my $used;
+	if ($st == 0) {
+	    if (my($fy,$fm,$fd,$fH,$fM,$fS) = $key =~ m{^(\d+)-(\d+)-(\d+)T(\d{2})(\d{2})(\d{2})}) {
+		my $got_epoch = timelocal($fS,$fM,$fH,$fd,$fm-1,$fy-1900);
+		my $interval = abs($got_epoch - $epoch);
+		my(@fields) = split / /, $val;
+		$used = "next";
+
+		# got previous
+		$st = $date_db->seq($key, $val, R_PREV);
+		if ($st == 0) {
+		    if (my($py,$pm,$pd,$pH,$pM,$pS) = $key =~ m{^(\d+)-(\d+)-(\d+)T(\d{2})(\d{2})(\d{2})}) {
+			my $got_prev_epoch = timelocal($pS,$pM,$pH,$pd,$pm-1,$py-1900);
+			my $prev_interval = abs($got_prev_epoch - $epoch);
+			if ($prev_interval < $interval) {
+			    # prefer previous
+			    (@fields) = split / /, $val;
+			    $interval = $prev_interval;
+			    $used = "prev";
+			}
+		    }
+		}
+
+		if ($interval <= 180) {
+		    my $ret = { Longitude => $fields[1],
+				Latitude  => $fields[2],
+				Interval => $interval,
+				Waypoint => undef, # !
+				Date     => $iso_date,
+				Used     => $used,
+			      };
+		    return $ret;
+		}
+	    }
+	}
+	warn "Can't find $iso_date2 in DB, use fallback...\n";
+    }
 
     my $isodate1 = sprintf("%04d%02d%02d", $y,$m,$d);
     my $isodate2 = sprintf("%04d-%02d-%02d", $y,$m,$d);
@@ -216,6 +269,12 @@ sub get_image_location {
 	}
     }
     undef;
+}
+
+if ($date_index_file) {
+    $date_db = tie my %db, 'DB_File', $date_index_file, O_RDONLY, 0644, $DB_BTREE
+	or die "Can't tie $date_index_file: $!";
+    
 }
 
 for my $file (@ARGV) {
@@ -304,11 +363,12 @@ sub create_thumbnail_ImageMagick_exiftool {
 	}
     }
     create_thumbnail_ImageMagick($smallfile, $dest);
+    # XXX TODO: remove EXIF from thumbnail, otherwise it's huge!
 }
 
 sub create_thumbnail_ImageMagick {
     my($file, $dest) = @_;
-    my @cmd = ("convert", "-resize", $thumbnail_size ."x". $thumbnail_size, $file, $dest);
+    my @cmd = ("convert", "-quality", 70, "-resize", $thumbnail_size ."x". $thumbnail_size, $file, $dest);
     warn "@cmd\n" if $v;
     system @cmd;
     if ($? != 0 || -z $dest) {

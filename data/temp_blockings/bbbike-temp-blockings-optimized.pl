@@ -710,14 +710,7 @@ userdel	2 8595,12066 8581,11896 8571,11846
        undef,
        undef,
        undef,
-       {
-         'until' => 1152050400,
-         'text' => 'B 246 OL Bestensee, Hauptstraße OL Bestensee, Hauptstraße, Bahnübergang Bauarbeiten am Gleiskörper Vollsperrung 30.06.2006-04.07.2006 ',
-         'from' => 1151532000,
-         'data' => 'userdel	2 26639,-17861 26752,-17872 26832,-17882
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1160949600,
          'text' => 'K 6828 L 164 Altfriesack-Wuthenow OT Seehof, Dorfstr. Kanalarbeiten Vollsperrung 22.06.2006-15.10.2006 ',
@@ -818,14 +811,7 @@ userdel	q4 7070,34665 7435,34963 7443,36175
 ',
          'type' => 'handicap'
        },
-       {
-         'until' => 1152050400,
-         'text' => 'L 220 B167 Finowfurt-Joachimsthal zw. Eichhorst und Elsenau Baumfällungen Vollsperrung 04.07.2006-04.07.2006 ',
-         'from' => 1151877600,
-         'data' => 'userdel	2 29884,58862 30384,59443
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        undef,
        {
          'until' => 1156024800,
@@ -835,18 +821,11 @@ userdel	q4 7070,34665 7435,34963 7443,36175
 ',
          'type' => 'gesperrt'
        },
-       {
-         'until' => 1152061200,
-         'text' => 'Der große Stern wird zu den Halbfinalspielen am 4.7.2006 von 11.00 Uhr bis zum 5.7.2006 03.00 Uhr gesperrt. ',
-         'from' => 1151917200,
-         'data' => 'userdel	2 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104
-',
-         'type' => 'gesperrt'
-       },
+       undef,
        {
          'until' => 1152504000,
-         'text' => 'Der große Stern wird zum Finalspiel am 9.7.2006 von 03.00 Uhr bis zum 10.7.2006 06.00 Uhr gesperrt. ',
-         'from' => 1152320400,
+         'text' => 'Der große Stern wird zu den Finalspielen am 8.7.2006 von 03.00 Uhr bis zum 10.7.2006 06.00 Uhr gesperrt. ',
+         'from' => 1152234000,
          'data' => 'userdel	2 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104
 ',
          'type' => 'gesperrt'

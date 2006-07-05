@@ -4947,9 +4947,9 @@ EOF
 userdel	2 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104
 EOF
      },
-     { from  => 1152320400, # 2006-07-08 03:00
+     { from  => 1152234000, # 2006-07-07 03:00
        until => 1152504000, # 2006-07-10 06:00
-       text  => 'Der große Stern wird zum Finalspiel am 9.7.2006 von 03.00 Uhr bis zum 10.7.2006 06.00 Uhr gesperrt. ',
+       text  => 'Der große Stern wird zu den Finalspielen am 8.7.2006 von 03.00 Uhr bis zum 10.7.2006 06.00 Uhr gesperrt. ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6799,12083 6754,12108 6725,12113 6690,12104
