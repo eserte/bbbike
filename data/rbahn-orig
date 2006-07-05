@@ -1,5 +1,5 @@
 #: title: Regional- und Fernbahnstrecken
-#: version: $Id: rbahn-orig,v 5.19 2006/07/01 11:28:23 eserte Exp $
+#: version: $Id: rbahn-orig,v 5.19 2006/07/01 11:28:23 eserte Exp eserte $
 #:
 # Werder - Brandenburg
 RE1	R -21828,-2017 -22150,-1894 -23710,-927 -24410,-497 -24963,-335 -28699,320 -29168,273 -31848,-192 -33230,-457 -33740,-484 -35147,-262 -37025,13 -37558,6 -44823,-988 -45418,-1164 -46266,-1576
@@ -154,7 +154,7 @@ RE4	R -25037,22273 -25747,22518 -28054,23880 -30847,25554 -36596,28808 -36876,29
 # Brieselang
 RE4,RB10,RB14	RC -16453,18880 -16944,19074
 # Brieselang - Nauen
-RE4,RB10,RB14	R -16944,19074 -23241,21591 -25037,22273
+RE4,RB10,RB14	R -16944,19074 -19780,20243 -23241,21591 -25037,22273
 # Brieselang (Kreuz): Nauen - Spandau
 RE4,RB10,RB14	RC -16453,18880 -14995,18316
 # Brieselang (Kreuz): Spandau - Hennigsdorf
@@ -164,7 +164,7 @@ RB20,RB21	RC -17293,-1183 -17717,-1398 -18016,-1441 -18529,-1206 -18723,-1036 -1
 # Kreuz Wustermark - Kreuz Brieselang
 RB20	RC -18796,14887 -18757,15396 -18674,15799 -18525,16118 -18270,16500 -16411,18196
 # Kreuz Brieselang: Südwest - Nordwest
-	R0 -16411,18196 -16327,18409 -16330,18664 -16453,18880
+	R0 -16411,18196 -16371,18491 -16330,18664 -16453,18880
 # Brieselang (Kreuz): Nauen - Hennigsdorf
 	R0 -16453,18880 -16153,18839 -15662,18969 -15342,19183
 # Brieselang (Kreuz) - Hennigsdorf (Kreuz)

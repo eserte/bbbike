@@ -4884,8 +4884,8 @@ userdel	2 30143,41500 29468,41438
 EOF
      },
      { from  => 1152050400, # 2006-07-05 00:00
-       until => 1159653600, # 2006-10-01 00:00
-       text  => 'L 235 Gielsdorf-Werneuchen Schulstr. in der OL Wegendorf Straßen- u. Durchlassbau Vollsperrung; 06.07.2006-30.09.2006 ',
+       until => 1156024800, # 2006-08-20 00:00
+       text  => 'L 235 Gielsdorf-Werneuchen Schulstr. in der OL Wegendorf Straßen- u. Durchlassbau Vollsperrung; 06.07.2006-19.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 34492,22176 34321,22151 34125,22128
@@ -4962,6 +4962,14 @@ EOF
        source_id => 'IM_003018',
        data  => <<EOF,
 userdel	2 4409,3173 4582,3076 4643,3046 4825,2958
+EOF
+     },
+     { from  => 1152396000, # 2006-07-09 00:00
+       until => 1156024800, # 2006-08-20 00:00
+       text  => 'L 362 Bergmannstr. OD Müncheberg, zw. Seelower Str. u. Marienfeld Instandsetzung Durchlass Vollsperrung 10.07.2006-19.08.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 61069,13387 61181,12075
 EOF
      },
     );

@@ -794,8 +794,8 @@ userdel	q4 7070,34665 7435,34963 7443,36175
        },
        undef,
        {
-         'until' => 1159653600,
-         'text' => 'L 235 Gielsdorf-Werneuchen Schulstr. in der OL Wegendorf Straßen- u. Durchlassbau Vollsperrung; 06.07.2006-30.09.2006 ',
+         'until' => 1156024800,
+         'text' => 'L 235 Gielsdorf-Werneuchen Schulstr. in der OL Wegendorf Straßen- u. Durchlassbau Vollsperrung; 06.07.2006-19.08.2006 ',
          'from' => 1152050400,
          'data' => 'userdel	q4 34492,22176 34321,22151 34125,22128
 ',
@@ -859,6 +859,14 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'data' => 'userdel	2 4409,3173 4582,3076 4643,3046 4825,2958
 ',
          'type' => 'gesperrt'
+       },
+       {
+         'until' => 1156024800,
+         'text' => 'L 362 Bergmannstr. OD Müncheberg, zw. Seelower Str. u. Marienfeld Instandsetzung Durchlass Vollsperrung 10.07.2006-19.08.2006 ',
+         'from' => 1152396000,
+         'data' => 'userdel	q4 61069,13387 61181,12075
+',
+         'type' => 'handicap'
        }
      
 );
