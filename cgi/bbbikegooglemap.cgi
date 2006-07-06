@@ -348,6 +348,7 @@ sub get_html {
         map.addControl(new GLargeMapControl());
         map.addControl(new GMapTypeControl());
         map.addControl(new GOverviewMapControl ());
+ 	map.setMapType(G_SATELLITE_MAP);
         map.centerAndZoom(new GPoint($centerx, $centery), $zoom);
     } else {
         document.getElementById("map").innerHTML = '<p class="large-error">Sorry, your browser is not supported by <a href="http://maps.google.com/support">Google Maps</a></p>';
