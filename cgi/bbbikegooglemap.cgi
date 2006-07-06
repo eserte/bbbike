@@ -157,8 +157,8 @@ sub get_html {
     <title>BBBike data presented with Googlemap</title>
     <link rel="stylesheet" type="text/css" href="/BBBike/html/bbbike.css"><!-- XXX only for radzeit -->
     <link type="image/gif" rel="shortcut icon" href="/BBBike/images/srtbike16.gif"><!-- XXX only for radzeit -->
-    <!-- This is valid on www.radzeit.de: script src="http://maps.google.com/maps?file=api&v=1&key=ABQIAAAAidl4U46XIm-bi0ECbPGe5hR1DE4tk8nUxq5ddnsWMNnWMRHPuxTzJuNOAmRUyOC19LbqHh-nYAhakg" type="text/javascript"></script -->
-    <script src="http://maps.google.com/maps?file=api&v=1&key=ABQIAAAAidl4U46XIm-bi0ECbPGe5hS6wT240HZyk82lqsABWbmUCmE0QhQkWx8v-NluR6PNjW3O3dGEjh16GA" type="text/javascript"></script>
+    <!-- This is valid on www.radzeit.de: script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAidl4U46XIm-bi0ECbPGe5hR1DE4tk8nUxq5ddnsWMNnWMRHPuxTzJuNOAmRUyOC19LbqHh-nYAhakg" type="text/javascript"></script -->
+    <script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAidl4U46XIm-bi0ECbPGe5hS6wT240HZyk82lqsABWbmUCmE0QhQkWx8v-NluR6PNjW3O3dGEjh16GA" type="text/javascript"></script>
     <script src="/BBBike/html/sprintf.js" type="text/javascript"></script>
   </head>
   <body>
@@ -343,10 +343,15 @@ sub get_html {
 	}
     }
 
-    var map = new GMap(document.getElementById("map"), [G_SATELLITE_TYPE]);
-    map.addControl(new GLargeMapControl());
-    map.addControl(new GMapTypeControl());
-    map.centerAndZoom(new GPoint($centerx, $centery), $zoom);
+    if (GBrowserIsCompatible() ) {
+        var map = new GMap(document.getElementById("map"));
+        map.addControl(new GLargeMapControl());
+        map.addControl(new GMapTypeControl());
+        map.addControl(new GOverviewMapControl ());
+        map.centerAndZoom(new GPoint($centerx, $centery), $zoom);
+    } else {
+        document.getElementById("map").innerHTML = '<p class="large-error">Sorry, your browser is not supported by <a href="http://maps.google.com/support">Google Maps</a></p>';
+    }
 
     GEvent.addListener(map, "moveend", function() {
         var center = map.getCenterLatLng();
@@ -391,6 +396,9 @@ EOF
 
     //]]>
     </script>
+    <noscript>
+        <p>You must enable JavaScript and CSS to run this application!</p>
+    </noscript>
     <div style="font-size:x-small;" id="message"></div>
     <div style="font-size:x-small;" id="permalink"></div>
     <div style="font-size:x-small;" id="addroutetext"></div>
