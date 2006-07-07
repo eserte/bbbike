@@ -685,11 +685,11 @@ EOF
        text  => 'OL Finsterwalde Sängerfest Vollsperrung 27.08.2004-30.08.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 33215,-85288 33412,-85191
-userdel	q4 33215,-85288 33047,-85458
-userdel	q4 33559,-85384 33412,-85191
-userdel	q4 33559,-85384 33488,-85803
-userdel	q4 33089,-85779 33047,-85458
+userdel	q4 33240,-85187 33354,-85304
+userdel	q4 33240,-85187 33060,-85292
+userdel	q4 33481,-85428 33354,-85304
+userdel	q4 33481,-85428 33488,-85803
+userdel	q4 33103,-85731 33060,-85292
 EOF
      },
      { from  => 1096840800, # 2004-10-04 00:00
@@ -4685,7 +4685,7 @@ EOF
        text  => 'L 601 OL Finsterwlalde, Schützenstr. zw. Einm. Leipziger und Tuchmacherstr.: Vollsperrung 12.06.2006-28.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 32941,-85970 32857,-86291 32478,-86374
+userdel	q4 32963,-85912 32865,-86269 32870,-86323 32478,-86374
 EOF
      },
      { from  => 1149544800, # 2006-06-06 00:00

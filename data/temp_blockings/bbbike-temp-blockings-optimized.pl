@@ -672,7 +672,7 @@ userdel	2 8032,12817 8017,12826
          'until' => 1154124000,
          'text' => 'L 601 OL Finsterwlalde, Schützenstr. zw. Einm. Leipziger und Tuchmacherstr.: Vollsperrung 12.06.2006-28.07.2006 ',
          'from' => 1149976800,
-         'data' => 'userdel	q4 32941,-85970 32857,-86291 32478,-86374
+         'data' => 'userdel	q4 32963,-85912 32865,-86269 32870,-86323 32478,-86374
 ',
          'type' => 'handicap'
        },
