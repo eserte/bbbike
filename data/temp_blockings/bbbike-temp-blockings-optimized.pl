@@ -357,15 +357,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'source_id' => 'IM_002437',
-         'until' => undef,
-         'text' => 'Pistoriusstr. (Weißensee) in Richtung Mirbachplatz zwischen Berliner Allee und Parkstr. Baustelle, Fahrtrichtung gesperrt',
-         'from' => undef,
-         'data' => 'userdel	q4; 14067,16127 13797,16237
-',
-         'type' => 'handicap'
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -844,6 +836,47 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'text' => 'L 362 Bergmannstr. OD Müncheberg, zw. Seelower Str. u. Marienfeld Instandsetzung Durchlass Vollsperrung 10.07.2006-19.08.2006 ',
          'from' => 1152396000,
          'data' => 'userdel	q4 61069,13387 61181,12075
+',
+         'type' => 'handicap'
+       },
+       {
+         'source_id' => 'INKO_77721_COPY_1',
+         'until' => 1156975200,
+         'text' => 'Pistoriusstr. (Pankow) in Richtung Berliner Allee, zwischen Roelckstr. und Mirbachplatz Baustelle, Straße vollständig gesperrt (bis 30.08.06)',
+         'from' => 1152221102,
+         'data' => 'userdel	q4; 13131,16525 13386,16408
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1167606000,
+         'text' => 'K 6413 Berliner Str. OL Buckow, zw. Hauptstr. und OA grundhafter Straßenbau Vollsperrung 17.07.2006-31.12.2006 ',
+         'from' => 1153000800,
+         'data' => 'userdel	q4 55988,18385 55623,17923 55217,17672
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1152914400,
+         'text' => 'K 6413 Berliner Str. OL Buckow, zw. Nr. 60 und Waldweg grundhafter Straßenbau Vollsperrung; Umleitung 12.07.2006-14.07.2006 ',
+         'from' => 1152568800,
+         'data' => 'userdel	q4 55988,18385 55623,17923 55217,17672
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1156975200,
+         'text' => 'L 029 Bahnhofstr. Bahnübergang in Biesenthal Umbau Bahnübergang Vollsperrung 12.07.2006-30.08.2006 ',
+         'from' => 1152568800,
+         'data' => 'userdel	2 28993,38709 28262,39100 26237,40190
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1152655200,
+         'text' => 'L 171 Karl-Marx-Str. OD Hohen Neuendorf, Kno.K.-Tucholsky-Str. Straßensanierung halbseitig gesperrt; Einbahnstraße 08.07.2006-11.07.2006 ',
+         'from' => 1152223200,
+         'data' => 'userdel	q4; 1379,29410 1611,29359
 ',
          'type' => 'handicap'
        }
