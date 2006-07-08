@@ -513,8 +513,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 6032,16698 5791,16910
-userdel	2 6032,16698 6129,16611
-userdel	2 6129,16611 6329,16438
+userdel	2 6032,16698 6110,16630
+userdel	2 6110,16630 6329,16438
 EOF
      },
      { from  => 1090533600, # 2004-07-23 00:00
@@ -1001,7 +1001,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4 -1809,24343 -1591,24124 -1214,23742
-userdel	q4 -1809,24343 -1879,24174
+userdel	q4 -1809,24343 -1859,24219 -1879,24174
 userdel	q4 -1809,24343 -1912,24442
 EOF
      },
@@ -2636,7 +2636,7 @@ EOF
        text  => 'Glienicker Straße zwischen Grünauer Straße und Nipkowstraße Richtung Adlergestell wegen Bauarbeiten gesperrt bis 15.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 21823,4210 21690,4057 21498,3837 21442,3774 21325,3644 21247,3536 21236,3496 21156,3452 20982,3325 20844,3159
+userdel	q4; 21823,4210 21690,4057 21498,3837 21442,3774 21316,3662 21227,3549 21198,3522 21136,3482 20967,3343 20818,3182
 EOF
      },
      { from  => 1125351382, # 2005-08-29 23:36
@@ -2671,7 +2671,7 @@ EOF
        text  => 'Wegedornstraße (Adlershof) Richtung Rudow, zwischen Rudower Chaussee und Ernst-Ruska-Ufer Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 18927,2431 18925,2700
+userdel	q4 18929,2454 18925,2700
 EOF
      },
      { from  => 1125957600, # 2005-09-06 00:00
@@ -4093,7 +4093,7 @@ EOF
 userdel	q4 4386,17760 4581,17689
 userdel	q4 4386,17760 4324,17782
 userdel	q4 4581,17689 4695,17648
-userdel	q4 4324,17782 4013,17901
+userdel	q4 4324,17782 4086,17873 4013,17901
 EOF
      },
      { from  => 1144706400, # 2006-04-11 00:00
@@ -5011,6 +5011,54 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4; 1379,29410 1611,29359
+EOF
+     },
+     { from  => 1152828000, # 2006-07-14 00:00
+       until => 1153000800, # 2006-07-16 00:00
+       text  => 'B 102 Große Milower Str. OD Rathenow, zw. Eigendorfstr. u. Grünauer Weg Neub. B188n, Mont. Stahlträger Vollsperrung 15.07.2006-15.07.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -62333,20390 -62269,19881 -62153,19281
+EOF
+     },
+     { from  => 1152396000, # 2006-07-09 00:00
+       until => 1160949600, # 2006-10-16 00:00
+       text  => 'L 019 Ruppiner Chaussee OD Kremmen grundhafter Straßenbau Vollsperrung 10.07.2006-15.10.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 -15770,39361 -15556,39597 -15170,39685 -14871,40028
+EOF
+     },
+     { from  => 1152396000, # 2006-07-09 00:00
+       until => 1153000800, # 2006-07-16 00:00
+       text  => 'L 099 zw. Abzw. Gortz (L911) in OL Barnewitz u. Marzahne Straßenbau Vollsperrung 10.07.2006-15.07.2006 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 -48510,11216 -48001,11540 -47603,12203 -47031,12527 -46651,12935 -45980,13284 -45617,13395 -44599,14084 -44292,14733 -44020,15116 -43321,16508
+EOF
+     },
+     { from  => 1152396000, # 2006-07-09 00:00
+       until => 1155938400, # 2006-08-19 00:00
+       text  => 'L 743 Motzener Str. OD Bestensee, Durchlass Ersatzneubau Durchlass Vollsperrung 10.07.2006-18.08.2006 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4 26639,-17861 26650,-18150 26437,-18650 26343,-18775 25475,-19231
+EOF
+     },
+     { from  => 1152312770, # 2006-07-08 00:52
+       until => 1162335600, # 2006-11-01 00:00
+       text  => 'Neue Bahnhofstr. Richtung Süden ab Oderstr. gesperrt, voraussichtlich bis Oktober 2006',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4; 15091,11596 15043,11511 15008,11436 14912,11252
+EOF
+     },
+     { from  => 1152228595, # 2006-07-07 01:29
+       until => 1167606000, # 2007-01-01 00:00
+       text  => 'Luisenhain ist gesperrt, Umgestaltung bis 2007',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2 22196,4847 22147,4831 22043,4562 22071,4501
 EOF
      },
     );

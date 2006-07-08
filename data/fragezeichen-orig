@@ -62,7 +62,7 @@ Aalemannkanal: laut ADFC-Karte/neu Brücke geplant	? -2062,18363 -2141,18276
 Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	? 29192,-10630 29088,-10386 28918,-10301 28723,-10326 28485,-10143
 Marienfelder Allee: bis 2006-05-31 durchgängig Radwege	?::inwork 7580,254 7491,61 7423,-86 7189,-469 7168,-509
 Unter den Linden vor der Staatsoper: hier kommt bis voraussichtlich 2006-05-31 eine neue Fußgängerampel hin	?::inwork 9681,12382 9782,12393
-Verlängerung der Spindlersfelder Str. bis Glienicker Weg (Ostangente), ca. 2007-12-31 (mit Zweirichtungsradweg auf der Ostseite)	?::inwork 21077,4736 21100,4192 21325,3644
+Verlängerung der Spindlersfelder Str. bis Glienicker Weg (Ostangente), ca. 2007-12-31 (mit Zweirichtungsradweg auf der Ostseite)	?::inwork 21077,4736 21100,4192 21316,3662
 Hier kommt eine neue Fußgängerampel hin	?::inwork 8268,13506 8098,13419
 #: by: http://www.eyth16.de/weblog/2005/11/04/145/
 #: last_checked: 2006-03-29
@@ -70,9 +70,6 @@ Hier kommt eine neue Fußgängerampel hin	?::inwork 8268,13506 8098,13419
 Verlängerung des Tempelhofer Weges: wird zugemacht (2006-03-01)	? 7087,8066 7139,8079 7268,8008
 #: note: siehe auch: http://www.tagesspiegel.de/bilder/berlin/050813_karte_grenze_500x454.jpg
 Mauerweg am Nordbahnhof: wo genau?	?::inwork 9221,13992 8907,14398
-#: note: siehe auch: http://people.freenet.de/andti/bv/k1148_4816.jpg
-#: note: siehe auch: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0312/nachricht1451.html
-Verlängerung Am Nordgraben: wann wird die Straße fertig? Laut Planung mit (Zweirichtungs?)Radweg. Wird eine zweitlich durchgehende Verbindung nach Wilhelmsruh eingerichtet?	?::inwork 6281,20369 6493,20431 7105,20527 7168,20409
 #: by: berliner-stadtplan.com
 #: by: http://www.berlinonline.de/berliner-kurier/archiv/.bin/dump.fcgi/2005/1110/berlin/0033/index.html
 #: next_check: 2009-01-01
@@ -109,6 +106,8 @@ B5: Radweg, RW, Fertig bis 2006-06-30	? -31230,23101 -32007,22836 -34302,23434 -
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
 # und dem CGI-Benutzer auch nicht präsentiert.
 #
+#: by: Andreas Wenzel (aber Lage unklar)
+An der Aussicht/Zur Sonnenhöhe: mäßiger Asphalt Q2 für "An der Aussicht", Lage der Straße unklar	? -1859,24219 -1768,24075 -1515,23807 -1492,23822 -1739,24095
 Wasserstadt Rummelsburg, fehlende Straßen: An der Bucht, An den Knabehäusern, Clara-Grunwald-Str., Lina-Morgenstern-Str., Alice-und-Hella-Hirsch-Ring, Paula-Fürst-Str., Medaillonplatz	? 15310,10542 15377,10624 15699,10396 15551,10266 15310,10542
 #: next_check: 2006-06-01
 Burgwallgraben: neuer Weg wg. Renaturisierung durch DB - fertig Sommer 2006	? -3609,13492 -3632,13304 -3625,13241 -3550,13122 -3403,13024 -3360,13028 -3332,13054
@@ -133,12 +132,9 @@ Umgehungsstraße Michendorf: noch in Bau, genaue Lage, wird sie für Radfahrer ges
 Spree: ist dieser Spreearm wiederhergestellt worden?	? 43394,-2017 43296,-2181 43357,-2501 43220,-2544 43129,-2437 43162,-2242 43053,-2114
 #: by: radzeit 3/2006
 Radwegrampe am Tierpark: wie hat man sich das vorzustellen?	? 18561,10341 18628,10177
-Ernst-Ruska-Ufer: als Hauptstraße kategorisieren?	? 18927,2431 19103,2442 19592,2403 19919,2384 20100,2373 20201,2392
 (Am Kanal - Adlergestell): genauer Wegverlauf, Koordinaten?	? 20928,2412 20933,2390 20937,2368
 #: by: http://www.berlinonline.de/berliner-zeitung/berlin/486071.html
 Straße 13: wird demnächst zur Frank-Zappa-Str. umbenannt	? 18598,14575 18932,14652
-#: by: Message-ID: <Xns97B4B73D6C7044usenet@krickstadt.de>
-Naumannstr.: Umbenennung in Marlene-Dietrich-Str.	? 7717,7759 7762,7734 7757,7682 7717,7564
 #: by: http://morgenpost.berlin1.de/content/2006/05/19/berlin/830131.html
 Hildegard-Knef-Platz: wird am 2006-05-28 benannt	? 7854,7572
 #: by: Andreas Mühlhausen:
@@ -193,7 +189,6 @@ Viktoriapark: 40m Höhe	? 9007,9264
 #: by: Message-ID: <2re0fqF1987v6U1@uni-berlin.de>
 Dann gibt es am Kuhfortdamm den tollen BÜ unter der Eisenbahnbrücke.	? -18148,-1381
 Raddusch: entfällt der Regionalbahnhof?	? 54813,-65044
-Nach den Bauarbeiten in der Naumannstr. sollte hier auch ein -1 bei comments_kfzverkehr stehen	?::inwork 7499,7880 7497,8168 7582,8123
 Eichhorster Str.: Radweg? Laut Eintrag von housemeister ja, laut Luftbild fraglich	? 21451,18415 21543,18571 21662,18621 21853,18700
 ######################################################################
 #
@@ -220,8 +215,6 @@ Am Buddeplatz: gutes Kopfsteinpflaster Q1, Einbahnstraße Richtung Norden	? 2336,
 Erich-Pommer-Str: guter Beton, Q0	? -7464,-4407 -7417,-4323
 #: by: anonymous 
 Delphinstr.: guter Asphalt, Q1	? 14555,6936 14686,7070
-#: by: Jens Zarbian: 
-Brassenpfad: Beton, Q0	? 23641,3342 23452,3613 23343,3750 23316,3778
 #: by: rol954 und anonymous 
 Greizer Str.: Asphalt, Q0	? 6592,882 6566,798 6579,740 6619,712 6739,691
 #: by: rolf boje 
@@ -368,7 +361,7 @@ Verlängerung der Atzpodienstr.: Qualität? Offen für Radfahrer?	? 16468,12386 164
 Gotlindestr.: Qualität (laut ADFC-Karte im westlichen Abschnitt mäßig geeignet, im östlichen Abschnitt gut geeignet)?	? 15947,12626 16409,12612 16563,12613 16848,12614 17073,12620 17357,12566
 Weg zwischen Tierpark und Bahntrasse: Qualität des Weges (Am westlichen Ende Beton, dann Feldweg Q2?), geht es weiter in Richtung Norden/Osten, vielleicht bis zur B1? Schranke am westlichen Ende	? 18690,10016 19641,10476 19734,10690 19713,10880
 Freystadter Weg: Qualität (laut ADFC-Karte mäßig geeignet)?	? 20949,4775 21100,4192
-#XXX laut anonymen Eintrag ist hier nichts, jedenfalls an der Grünauer Str.: Dörpfeldstr. - Grünauer: evtl. lohnende Diagonale, Qualität?	? 21132,4184 21325,3644 21350,3526 21840,3144 21951,3189
+#XXX laut anonymen Eintrag ist hier nichts, jedenfalls an der Grünauer Str.: Dörpfeldstr. - Grünauer: evtl. lohnende Diagonale, Qualität?	? 21132,4184 21316,3662 21350,3526 21840,3144 21951,3189
 Aßmannstr.: Qualität für den abknickenden Teil (möglicherweise asphaltiert?); können Radfahrer gegen die Einbahnstr. fahren?	? 25030,5307 25039,5766
 Charlotte-E-Pauly-Str.: Qualität?	? 25030,5307 25010,4807
 B101 bis Großbeeren: hier auch ein Radweg?	? 5394,-3053 5068,-3719 4842,-4182 4547,-4951 4227,-5721
@@ -897,7 +890,6 @@ Verbindung Stülpnagelstr. - Knobelsdorffstr. vorh.?	? 2185,11701 2154,11762
 Koloniestr.: Qualität (zumindestens in Höhe Soldiner Str. Kopfsteinpflaster)	? 8503,16716 8677,17154 8983,17748
 Malmöstr.: ist auch der Abschnitt zwischen Bornholmer und Finnländische Str. Kopfsteinpflaster?	? 10198,16528 10225,16436
 Greifswalder Str./Lilli-Henoch-Str.: gibt es hier eine Überquerungsmöglichkeit über die Straßenbahntrasse?	? 12614,14941
-Am Invalidenfriedhof - Scharnhorststr.: existiert hier auch eine Verbindung?	? 8114,13921 8216,13987
 Trendelenburgstr.: Qualität (vermutlich Asphalt), Behinderungen?	? 2740,11076 2845,10840
 Lotte-Lenya-Bogen: Qualität, Fußgänger?	? 5242,10918 5264,10921 5348,10960 5373,10981
 #: next_check: 2005-11-01
@@ -912,7 +904,6 @@ Erschließungsstr. geplant (laut MoPo 15.10.05)	? 1714,9572 1677,9588
 Erschließungsstr. geplant (laut MoPo 15.10.05)	? 1312,9220 1267,9267 1264,9270
 Zerndorfer Weg: Qualität?	? 2520,26115 2641,25981 2912,25790 3273,25516 3439,25316
 Grenzweg (Lichtenrade): laut Googlemaps geht es hinter der Illigstraße weiter (Parkplatz)?	? 9456,-1303 9273,-1297
-Semliner Str.: geht es nördlich der Kleinschewskystr. weiter?	? 22274,7378 22344,7659
 Gärtnereiring: Ist hier eine Fahrradstraße?	? -6675,12632 -6692,12669 -7141,12821 -7237,12848 -7195,13216 -7183,13324
 Pfarrer-Theile-Str.: ist die Straße Richtung Gärtnereiring eine Sackgasse oder existiert eine Verbindung?	? -7141,12821 -7103,13191
 Leuenburger Zeile: Qualität? Teil einer ausgeschilderten Radroute?	? 2716,19776 2818,19606 2852,19546
@@ -1308,11 +1299,6 @@ Fähre Ketzin - Paretz: Qualität des Radwegs? Nur für Radfahrer oder auch für Aut
 #: note: unklarer Beitrag (anonymous): schlechtes Verbundsteinpflaster Q3
 Rohrwallallee: Qualität?	? 26201,-863 26240,-866 26346,-863 26389,-932 26445,-1037 26656,-1147 26713,-1346 26780,-1468 26707,-1726 26662,-1916
 Mentelinstr.: Kopfsteinpflaster: akzeptabel oder nur mäßig?	? 17839,7365 17633,7286 17352,7051 17262,6980
-Ernst-Ruska-Ufer: auch zwischen Wegedornstr. und Albert-Einstein-Str. offen?	? 19103,2442 18927,2431
-#: note: Eintrag von F. Reinhardt (mäßiges Kopfsteinpflaster), aber ich glaube, dass es asphaltiert ist.
-Hentigstr.: Qualität (wahrscheinlich asphaltiert)?	? 18514,8773 18548,8942 18586,9172 18621,9404
-Mayschweg: Qualität (laut ADFC-Karte gut geeignet)?	? 23368,3894 23316,3778 23231,3724
-Feldblumenweg: Qualität (laut ADFC-Karte gut geeignet)?	? 23551,2531 23535,2111
 Vulkanstr.: nach Abschluss der Bauarbeiten Radspuren und asphaltiert	?::inwork 15838,14319 15897,13942 15892,13534
 Barnimer Dörferweg in Blankenfelde: Qualität?	? 7956,24083 8132,23896 8521,23876
 Barnimer Dörferweg in Blankenfelde: Qualität (laut ADFC-Karte schlecht geeignet)?	? 8544,23762 8984,24078 9344,24262 9555,23933 9828,24149
@@ -1381,7 +1367,10 @@ Postenweg: Qualität zwischen Rudower Chaussee und B179 (wahrscheinlich guter Bet
 #: XXX: laut anonymen Eintrag Schlaglöcher, Q2, laut ADFC-Karte ist der nördliche Abschnitt "gut geeignet"
 Luchsweg: Qualität?	? -7841,15503 -7747,15842 -7743,15963
 Gerlinger Str. - Mauerweg: Qualität (wahrscheinlich guter fester Sandweg)?	? 12007,877 12017,777 11924,594
-Sophie-Taeuber-Arp-Weg: geht die Straße südlich der Lausanner Str. weiter, evtl bis zur Thuner Str.?	? 3293,2218 3292,2106
 Paracelsusstr.: Qualität?	? 11523,19393 11575,19296 11543,19279 11549,19258 11599,19171
 Paracelsusstr.: Qualität?	? 11634,19187 11725,19007
 Paracelsusstr.: Qualität?	? 11671,19204 11613,19312 11575,19296
+#: by: http://berlinforen.de/viewtopic.php?t=511
+Kirchstr.: Asphalt oder Kopfsteinpflaster?	? 22312,4593 22263,4671 22243,4710 22234,4789 22196,4847
+Luisenhain: werden Radfahrer nach den Bauarbeiten weiterhin durch den Park fahren dürfen?	? 22196,4847 22147,4831 22043,4562 22071,4501
+Bellevuepark: ist ein Weg für Radfahrer offiziell freigegeben?	? 22798,5731 22790,5568 22733,5569 22701,5428 22628,5340

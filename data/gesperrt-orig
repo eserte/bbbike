@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.107 2006/06/27 21:14:57 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.108 2006/07/08 00:39:33 eserte Exp $
 #:
 ###################################################################
 #
@@ -281,7 +281,7 @@ Dickhardtstr.	1 5817,7223 5824,6974 5828,6839 5778,6754 5604,6709 5533,6753
 Schmitzweg	1 5914,19351 5849,19552 5763,19828
 Barbarossaplatz	1 6731,9559 6746,9540 6743,9523 6728,9515 6704,9537 6712,9557 6731,9559
 Otto-von-Simson-Str.	1 2560,5044 2835,5410
-In den neuen Gärten	1 7130,3414 7339,3276 7378,3328 7482,3292
+In den neuen Gärten	1 7130,3414 7339,3276 7378,3328 7472,3308
 Braillestr.	1 4433,5315 4460,5274 4512,5199
 Mudrackzeile	1 7009,17778 7043,17667
 Gustav-Müller-Str.	1 7642,8583 7642,8815
@@ -329,7 +329,7 @@ Im Amseltal	1 1962,25214 1983,25097
 Gundelfinger Str.	1 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18778,8895
 Fehmarner Str. 	1 6710,14776 6528,15000
-Alte Späthbrücke	2 14437,5080 14540,5140
+Alte Späthbrücke	2 14437,5080 14535,5137
 Rutherfordstr.: nicht permanent geöffnet	2 19071,2746 19207,2592
 Katzengraben	1 22445,4758 22449,4712
 Karlstr.	1 22554,4380 22460,4125
@@ -360,7 +360,7 @@ Benkertstr.	1 -12685,-870 -12712,-734 -12730,-627
 Hans-Thoma-Str.	1 -12190,-775 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
 Potsdamer Damm	2 -5736,-3629 -6439,-3969
-Nuthestr.	2 -6439,-3969 -8128,-4073 -9063,-3934 -11144,-2193 -11142,-1675 -11226,-1445 -11356,-1317
+Nuthestr.	2 -6439,-3969 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -9063,-3934 -11144,-2193 -11142,-1675 -11226,-1445 -11356,-1317
 #: XXX ja?
 Nuthestr.	1 -11356,-1317 -11463,-1232 -11549,-1169
 Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12063,-784 -11875,-925 -11613,-1125 -11549,-1169 -11463,-1232 -11356,-1317
@@ -478,7 +478,7 @@ Wisbyer Str.: Straßenbahn	3nocross 11688,16365 11727,16358 11807,16340 11905,163
 Wisbyer Str.: Straßenbahn	3nocross 11397,16405 11632,16373 11688,16365
 Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 17249,11802 17436,11791 17750,11771 18220,11710
 Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 18853,11798 19005,11796 19283,11785 19693,11762 19904,11745 19985,11739 20115,11730 20368,11711
-Alt-Friedrichsfelde: Straßentunnelrampe	3nocross 18220,11710 18529,11722 18853,11798
+Alt-Friedrichsfelde: Straßentunnelrampe	3nocross 18220,11710 18555,11724 18853,11798
 Lewishamstr.: abgesperrter Mittelstreifen	3nocross 3592,10869 3631,10784 3644,10759
 Lewishamstr: Straßentunnelrampe	3nocross 3644,10759 3739,10576 3771,10511 3813,10435
 Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6853,11336 6880,11110
@@ -633,6 +633,7 @@ tragen (Treppe)	0:30 -7418,181
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
+Drängelgitter	BNP:5 20586,10935
 Drängelgitter, relativ breite Durchfahrt	BNP:3 12363,2367
 Drängelgitter	BNP:5 15516,6357
 Drängelgitter	BNP:5 15504,6328
@@ -722,8 +723,7 @@ Brücke über Panke fehlt noch	2:inwork 8321,15386 8290,15406
 #: last_checked: 2005-12-23
 #: XXX: Ist das Passieren nach den Bauarbeiten weiterhin möglich?
 Köbisdreieck: Bauarbeiten	2 7160,11225 6853,11336
-#: last_checked: 2005-11-19
-Budapester Str.: Bauarbeiten, Fußgängerüberweg gesperrt	3nocross:inwork 5716,10978 5831,10978 6135,10982
+#XXX del: #: last_checked: 2005-11-19: Budapester Str.: Bauarbeiten, Fußgängerüberweg gesperrt	3nocross:inwork 5716,10978 5831,10978 6135,10982
 Hedwigskirchgasse: Bauarbeiten	2:inwork 9743,12239 9756,12139
 #: last_checked: 2005-08-23
 Monbijoubrücke: die behelfsmäßige Brücke wurde abgerissen, der Neubar ist voraussichtlich 2006-06-30 fertig	2:inwork 9680,12916 9707,12974

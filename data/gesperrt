@@ -1,5 +1,5 @@
 #: title: Einbahnstraßen und gesperrte Straßen
-#: version: $Id: gesperrt-orig,v 4.107 2006/06/27 21:14:57 eserte Exp eserte $
+#: version: $Id: gesperrt-orig,v 4.108 2006/07/08 00:39:33 eserte Exp $
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9851,10219 9812,10211 9592,10174 9401,10199
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9141,10292 8804,10314 8720,10342 8661,10377 8634,10426 8525,10626 8430,10710
@@ -254,7 +254,7 @@ Dickhardtstr.	1 5817,7223 5824,6974 5828,6839 5778,6754 5604,6709 5533,6753
 Schmitzweg	1 5914,19351 5849,19552 5763,19828
 Barbarossaplatz	1 6731,9559 6746,9540 6743,9523 6728,9515 6704,9537 6712,9557 6731,9559
 Otto-von-Simson-Str.	1 2560,5044 2835,5410
-In den neuen Gärten	1 7130,3414 7339,3276 7378,3328 7482,3292
+In den neuen Gärten	1 7130,3414 7339,3276 7378,3328 7472,3308
 Braillestr.	1 4433,5315 4460,5274 4512,5199
 Mudrackzeile	1 7009,17778 7043,17667
 Gustav-Müller-Str.	1 7642,8583 7642,8815
@@ -298,7 +298,7 @@ Im Amseltal	1 1962,25214 1983,25097
 Gundelfinger Str.	1 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18778,8895
 Fehmarner Str. 	1 6710,14776 6528,15000
-Alte Späthbrücke	2 14437,5080 14540,5140
+Alte Späthbrücke	2 14437,5080 14535,5137
 Rutherfordstr.: nicht permanent geöffnet	2 19071,2746 19207,2592
 Katzengraben	1 22445,4758 22449,4712
 Karlstr.	1 22554,4380 22460,4125
@@ -322,7 +322,7 @@ Benkertstr.	1 -12685,-870 -12712,-734 -12730,-627
 Hans-Thoma-Str.	1 -12190,-775 -12262,-612 -12306,-496
 Behlertstr.	1 -12265,-418 -12194,-490 -12063,-784
 Potsdamer Damm	2 -5736,-3629 -6439,-3969
-Nuthestr.	2 -6439,-3969 -8128,-4073 -9063,-3934 -11144,-2193 -11142,-1675 -11226,-1445 -11356,-1317
+Nuthestr.	2 -6439,-3969 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -9063,-3934 -11144,-2193 -11142,-1675 -11226,-1445 -11356,-1317
 Nuthestr.	1 -11356,-1317 -11463,-1232 -11549,-1169
 Nuthestr. -> Holzmarktstr.: nicht passierbarer Mittelstreifen	3 -11613,-1125 -11875,-925 -11910,-945
 Holzmarktstr. -> Nuthestr.: nicht passierbarer Mittelstreifen	3 -11910,-945 -11875,-925 -12063,-784
@@ -532,8 +532,8 @@ Alt-Biesdorf -> Märkische Allee: nicht passierbarer Mittelstreifen	3 20115,11730
 Alt-Biesdorf -> Märkische Allee: nicht passierbarer Mittelstreifen	3 19985,11739 20115,11730 19988,11821
 Märkische Allee -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3 20014,11651 20115,11730 19985,11739
 Märkische Allee -> Märkische Allee: nicht passierbarer Mittelstreifen	3 20014,11651 20115,11730 19988,11821
-Charlottenstr. -> Alt-Friedrichsfelde: Straßentunnelrampe	3 18526,11640 18529,11722 18220,11710
-Alt-Friedrichsfelde -> Charlottenstr.: Straßentunnelrampe	3 18853,11798 18529,11722 18526,11640
+Charlottenstr. -> Alt-Friedrichsfelde: Straßentunnelrampe	3 18558,11617 18555,11724 18220,11710
+Alt-Friedrichsfelde -> Charlottenstr.: Straßentunnelrampe	3 18853,11798 18555,11724 18558,11617
 Lewishamstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3 3644,10759 3631,10784 3587,10768
 Gervinusstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3 3839,10904 3631,10784 3587,10768
 Lewishamstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3 3592,10869 3631,10784 3839,10904
@@ -764,6 +764,7 @@ tragen (Treppe)	0:30:62 3025,13568
 tragen (Treppe, ca. 10 Stufen)	0:30:-12 20933,2390
 tragen (Treppe)	0:30:-43 -633,12739
 tragen (Treppe)	0:30:-118 -7418,181
+Drängelgitter	BNP:5:-210 20586,10935
 Drängelgitter, relativ breite Durchfahrt	BNP:3:66 12363,2367
 Drängelgitter	BNP:5:28 15516,6357
 Drängelgitter	BNP:5:-48 15504,6328
@@ -827,7 +828,6 @@ Drängelgitter	BNP:5:-118 8810,14373
 Pankeweg: Bauarbeiten noch nicht abgeschlossen	2:inwork 8904,17059 8836,16867
 Brücke über Panke fehlt noch	2:inwork 8321,15386 8290,15406
 Köbisdreieck: Bauarbeiten	2 7160,11225 6853,11336
-Budapester Str.: Bauarbeiten, Fußgängerüberweg gesperrt	3nocross:inwork 5716,10978 5831,10978 6135,10982
 Hedwigskirchgasse: Bauarbeiten	2:inwork 9743,12239 9756,12139
 Monbijoubrücke: die behelfsmäßige Brücke wurde abgerissen, der Neubar ist voraussichtlich 2006-06-30 fertig	2:inwork 9680,12916 9707,12974
 Spreeufer vor dem Monbijoupark: gesperrt wegen Bauarbeiten	2:inwork 10100,12876 9977,12912

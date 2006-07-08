@@ -879,6 +879,54 @@ userdel	q4 7070,34665 7435,34963 7443,36175
          'data' => 'userdel	q4; 1379,29410 1611,29359
 ',
          'type' => 'handicap'
+       },
+       {
+         'until' => 1153000800,
+         'text' => 'B 102 Große Milower Str. OD Rathenow, zw. Eigendorfstr. u. Grünauer Weg Neub. B188n, Mont. Stahlträger Vollsperrung 15.07.2006-15.07.2006 ',
+         'from' => 1152828000,
+         'data' => 'userdel	q4 -62333,20390 -62269,19881 -62153,19281
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1160949600,
+         'text' => 'L 019 Ruppiner Chaussee OD Kremmen grundhafter Straßenbau Vollsperrung 10.07.2006-15.10.2006 ',
+         'from' => 1152396000,
+         'data' => 'userdel	q4 -15770,39361 -15556,39597 -15170,39685 -14871,40028
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1153000800,
+         'text' => 'L 099 zw. Abzw. Gortz (L911) in OL Barnewitz u. Marzahne Straßenbau Vollsperrung 10.07.2006-15.07.2006 ',
+         'from' => 1152396000,
+         'data' => 'userdel	2 -48510,11216 -48001,11540 -47603,12203 -47031,12527 -46651,12935 -45980,13284 -45617,13395 -44599,14084 -44292,14733 -44020,15116 -43321,16508
+',
+         'type' => 'gesperrt'
+       },
+       {
+         'until' => 1155938400,
+         'text' => 'L 743 Motzener Str. OD Bestensee, Durchlass Ersatzneubau Durchlass Vollsperrung 10.07.2006-18.08.2006 ',
+         'from' => 1152396000,
+         'data' => 'userdel	q4 26639,-17861 26650,-18150 26437,-18650 26343,-18775 25475,-19231
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1162335600,
+         'text' => 'Neue Bahnhofstr. Richtung Süden ab Oderstr. gesperrt, voraussichtlich bis Oktober 2006',
+         'from' => 1152312770,
+         'data' => 'userdel	q4; 15091,11596 15043,11511 15008,11436 14912,11252
+',
+         'type' => 'handicap'
+       },
+       {
+         'until' => 1167606000,
+         'text' => 'Luisenhain ist gesperrt, Umgestaltung bis 2007',
+         'from' => 1152228595,
+         'data' => 'userdel	2 22196,4847 22147,4831 22043,4562 22071,4501
+',
+         'type' => 'gesperrt'
        }
      
 );

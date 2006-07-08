@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: insert_points,v 1.71 2006/07/02 08:03:33 eserte Exp $
+# $Id: insert_points,v 1.72 2006/07/08 00:38:33 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 1998,2003,2004 Slaven Rezic. All rights reserved.
@@ -1077,7 +1077,8 @@ sub get_indexer {
 		    $indexer->create_index;
 		    warn "Creation of index for $file/$type completed!\n"
 			if $verbose;
-		    CORE::exit(0);
+		    $indexer->close_index; # for flushing
+		    POSIX::_exit(0); # use this instead of CORE::exit to prevent from swapping everything in
 		}
 		return undef;
 	    } else {

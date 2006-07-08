@@ -1,5 +1,5 @@
 #: title: Sonstige Behinderungen (Berlin)
-#: version: $Id: handicap_s-orig,v 4.93 2006/06/27 21:10:55 eserte Exp eserte $
+#: version: $Id: handicap_s-orig,v 4.94 2006/07/08 00:39:24 eserte Exp $
 #:
 #: temporary vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # XXX hier br‰uchte man keine zus‰tzliche von ... bis-Beschreibung in der Bemerkungen-Spalte von bbbike.cgi:
@@ -52,7 +52,7 @@ Friedrichstr. (am Mehringplatz): Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 
 Gorkistr.: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q3 2049,20292 2116,20314 2295,20358
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5657,10868 5652,11004
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5797,10881 5831,10978
-#: add_fragezeichen: Kann nach Abschluss der Bauarbeiten mit weniger Behinderungen gerechnet werden?
+#: add_fragezeichen: wurde hier ein Radweg oder eine Radspur gebaut?
 Breitscheidplatz/Budapester Str.: Fuﬂg‰ngerverkehr, Veranstaltungen	q3; 5652,11004 5716,10978 5831,10978 6135,10982
 Neue Promenade: Fuﬂg‰ngerzone	q3 10294,13070 10185,12982 10132,12941
 Wilmersdorfer Str.: starker Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q4 3723,11457 3751,11334 3770,11231 3795,11098 3827,10980
@@ -320,6 +320,8 @@ Im Gestell: Fuﬂg‰nger	q1 371,4453 261,4420
 Heinitzweg: Fuﬂg‰nger	q2 10329,1077 10363,1095
 Haewererweg: enge Durchfahrt, Bordstein	q1 12125,1282 12097,1243
 ######################### User Contributions #################################
+#: by: Marek B‰nsch:
+(Am Invalidenfriedhof - Scharnhorststr.): Radfahren verboten, Schieben	q4 8114,13921 8216,13987
 #: by: Christian Marwitz:
 Am Gemeindepark: enge Straﬂe	q1 7172,2343 7215,2442 7209,2528 7199,2559 7030,2582 6751,2708 6697,2706
 #: by: Michael Meixner:

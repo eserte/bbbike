@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-index.pl,v 1.8 2006/06/25 10:23:25 eserte Exp $
+# $Id: strassen-index.pl,v 1.9 2006/07/08 00:38:02 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2006 Slaven Rezic. All rights reserved.
@@ -40,6 +40,11 @@ sub new {
     $self;
 }
 
+sub DESTROY {
+    my($self) = @_;
+    $self->close_index;
+}
+
 sub needs_update {
     my($self) = @_;
     my $index_file = $self->{index_file};
@@ -65,6 +70,15 @@ sub open_index {
 	    or die "Can't open $index_file: $!";
 
     $self->{db} = \%db;
+}
+
+sub close_index {
+    my($self) = @_;
+    if ($self->{db}) {
+	(tied %{ $self->{db} })->sync;
+	untie %{ $self->{db} };
+	delete $self->{db};
+    }
 }
 
 sub create_index {
